@@ -19,23 +19,27 @@ public final class IrodoriMasterStartGalleryReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 level_id = 12;</code>
-     * @return The levelId.
-     */
-    int getLevelId();
-
-    /**
-     * <code>uint32 difficulty = 4;</code>
+     * <code>uint32 difficulty = 15;</code>
      * @return The difficulty.
      */
     int getDifficulty();
+
+    /**
+     * <code>uint32 level_id = 7;</code>
+     * @return The levelId.
+     */
+    int getLevelId();
   }
   /**
    * <pre>
-   * CmdId: 8165
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 8243;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code IrodoriMasterStartGalleryReq}
@@ -82,14 +86,14 @@ public final class IrodoriMasterStartGalleryReqOuterClass {
             case 0:
               done = true;
               break;
-            case 32: {
-
-              difficulty_ = input.readUInt32();
-              break;
-            }
-            case 96: {
+            case 56: {
 
               levelId_ = input.readUInt32();
+              break;
+            }
+            case 120: {
+
+              difficulty_ = input.readUInt32();
               break;
             }
             default: {
@@ -124,26 +128,26 @@ public final class IrodoriMasterStartGalleryReqOuterClass {
               emu.grasscutter.net.proto.IrodoriMasterStartGalleryReqOuterClass.IrodoriMasterStartGalleryReq.class, emu.grasscutter.net.proto.IrodoriMasterStartGalleryReqOuterClass.IrodoriMasterStartGalleryReq.Builder.class);
     }
 
-    public static final int LEVEL_ID_FIELD_NUMBER = 12;
-    private int levelId_;
-    /**
-     * <code>uint32 level_id = 12;</code>
-     * @return The levelId.
-     */
-    @java.lang.Override
-    public int getLevelId() {
-      return levelId_;
-    }
-
-    public static final int DIFFICULTY_FIELD_NUMBER = 4;
+    public static final int DIFFICULTY_FIELD_NUMBER = 15;
     private int difficulty_;
     /**
-     * <code>uint32 difficulty = 4;</code>
+     * <code>uint32 difficulty = 15;</code>
      * @return The difficulty.
      */
     @java.lang.Override
     public int getDifficulty() {
       return difficulty_;
+    }
+
+    public static final int LEVEL_ID_FIELD_NUMBER = 7;
+    private int levelId_;
+    /**
+     * <code>uint32 level_id = 7;</code>
+     * @return The levelId.
+     */
+    @java.lang.Override
+    public int getLevelId() {
+      return levelId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -160,11 +164,11 @@ public final class IrodoriMasterStartGalleryReqOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (difficulty_ != 0) {
-        output.writeUInt32(4, difficulty_);
-      }
       if (levelId_ != 0) {
-        output.writeUInt32(12, levelId_);
+        output.writeUInt32(7, levelId_);
+      }
+      if (difficulty_ != 0) {
+        output.writeUInt32(15, difficulty_);
       }
       unknownFields.writeTo(output);
     }
@@ -175,13 +179,13 @@ public final class IrodoriMasterStartGalleryReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (difficulty_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, difficulty_);
-      }
       if (levelId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, levelId_);
+          .computeUInt32Size(7, levelId_);
+      }
+      if (difficulty_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(15, difficulty_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -198,10 +202,10 @@ public final class IrodoriMasterStartGalleryReqOuterClass {
       }
       emu.grasscutter.net.proto.IrodoriMasterStartGalleryReqOuterClass.IrodoriMasterStartGalleryReq other = (emu.grasscutter.net.proto.IrodoriMasterStartGalleryReqOuterClass.IrodoriMasterStartGalleryReq) obj;
 
-      if (getLevelId()
-          != other.getLevelId()) return false;
       if (getDifficulty()
           != other.getDifficulty()) return false;
+      if (getLevelId()
+          != other.getLevelId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -213,10 +217,10 @@ public final class IrodoriMasterStartGalleryReqOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + LEVEL_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getLevelId();
       hash = (37 * hash) + DIFFICULTY_FIELD_NUMBER;
       hash = (53 * hash) + getDifficulty();
+      hash = (37 * hash) + LEVEL_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getLevelId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -314,10 +318,14 @@ public final class IrodoriMasterStartGalleryReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 8165
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 8243;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code IrodoriMasterStartGalleryReq}
@@ -357,9 +365,9 @@ public final class IrodoriMasterStartGalleryReqOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        levelId_ = 0;
-
         difficulty_ = 0;
+
+        levelId_ = 0;
 
         return this;
       }
@@ -387,8 +395,8 @@ public final class IrodoriMasterStartGalleryReqOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.IrodoriMasterStartGalleryReqOuterClass.IrodoriMasterStartGalleryReq buildPartial() {
         emu.grasscutter.net.proto.IrodoriMasterStartGalleryReqOuterClass.IrodoriMasterStartGalleryReq result = new emu.grasscutter.net.proto.IrodoriMasterStartGalleryReqOuterClass.IrodoriMasterStartGalleryReq(this);
-        result.levelId_ = levelId_;
         result.difficulty_ = difficulty_;
+        result.levelId_ = levelId_;
         onBuilt();
         return result;
       }
@@ -437,11 +445,11 @@ public final class IrodoriMasterStartGalleryReqOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.IrodoriMasterStartGalleryReqOuterClass.IrodoriMasterStartGalleryReq other) {
         if (other == emu.grasscutter.net.proto.IrodoriMasterStartGalleryReqOuterClass.IrodoriMasterStartGalleryReq.getDefaultInstance()) return this;
-        if (other.getLevelId() != 0) {
-          setLevelId(other.getLevelId());
-        }
         if (other.getDifficulty() != 0) {
           setDifficulty(other.getDifficulty());
+        }
+        if (other.getLevelId() != 0) {
+          setLevelId(other.getLevelId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -472,40 +480,9 @@ public final class IrodoriMasterStartGalleryReqOuterClass {
         return this;
       }
 
-      private int levelId_ ;
-      /**
-       * <code>uint32 level_id = 12;</code>
-       * @return The levelId.
-       */
-      @java.lang.Override
-      public int getLevelId() {
-        return levelId_;
-      }
-      /**
-       * <code>uint32 level_id = 12;</code>
-       * @param value The levelId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setLevelId(int value) {
-        
-        levelId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 level_id = 12;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearLevelId() {
-        
-        levelId_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int difficulty_ ;
       /**
-       * <code>uint32 difficulty = 4;</code>
+       * <code>uint32 difficulty = 15;</code>
        * @return The difficulty.
        */
       @java.lang.Override
@@ -513,7 +490,7 @@ public final class IrodoriMasterStartGalleryReqOuterClass {
         return difficulty_;
       }
       /**
-       * <code>uint32 difficulty = 4;</code>
+       * <code>uint32 difficulty = 15;</code>
        * @param value The difficulty to set.
        * @return This builder for chaining.
        */
@@ -524,12 +501,43 @@ public final class IrodoriMasterStartGalleryReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 difficulty = 4;</code>
+       * <code>uint32 difficulty = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearDifficulty() {
         
         difficulty_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int levelId_ ;
+      /**
+       * <code>uint32 level_id = 7;</code>
+       * @return The levelId.
+       */
+      @java.lang.Override
+      public int getLevelId() {
+        return levelId_;
+      }
+      /**
+       * <code>uint32 level_id = 7;</code>
+       * @param value The levelId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setLevelId(int value) {
+        
+        levelId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 level_id = 7;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearLevelId() {
+        
+        levelId_ = 0;
         onChanged();
         return this;
       }
@@ -601,8 +609,8 @@ public final class IrodoriMasterStartGalleryReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\"IrodoriMasterStartGalleryReq.proto\"D\n\034" +
-      "IrodoriMasterStartGalleryReq\022\020\n\010level_id" +
-      "\030\014 \001(\r\022\022\n\ndifficulty\030\004 \001(\rB\033\n\031emu.grassc" +
+      "IrodoriMasterStartGalleryReq\022\022\n\ndifficul" +
+      "ty\030\017 \001(\r\022\020\n\010level_id\030\007 \001(\rB\033\n\031emu.grassc" +
       "utter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -614,7 +622,7 @@ public final class IrodoriMasterStartGalleryReqOuterClass {
     internal_static_IrodoriMasterStartGalleryReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_IrodoriMasterStartGalleryReq_descriptor,
-        new java.lang.String[] { "LevelId", "Difficulty", });
+        new java.lang.String[] { "Difficulty", "LevelId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

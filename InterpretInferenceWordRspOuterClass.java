@@ -19,28 +19,32 @@ public final class InterpretInferenceWordRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 5;</code>
+     * <code>int32 retcode = 15;</code>
      * @return The retcode.
      */
     int getRetcode();
 
     /**
-     * <code>uint32 word_id = 14;</code>
+     * <code>uint32 word_id = 2;</code>
      * @return The wordId.
      */
     int getWordId();
 
     /**
-     * <code>uint32 page_id = 13;</code>
+     * <code>uint32 page_id = 9;</code>
      * @return The pageId.
      */
     int getPageId();
   }
   /**
    * <pre>
-   * CmdId: 461
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 498;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code InterpretInferenceWordRsp}
@@ -87,19 +91,19 @@ public final class InterpretInferenceWordRspOuterClass {
             case 0:
               done = true;
               break;
-            case 40: {
+            case 16: {
 
-              retcode_ = input.readInt32();
+              wordId_ = input.readUInt32();
               break;
             }
-            case 104: {
+            case 72: {
 
               pageId_ = input.readUInt32();
               break;
             }
-            case 112: {
+            case 120: {
 
-              wordId_ = input.readUInt32();
+              retcode_ = input.readInt32();
               break;
             }
             default: {
@@ -134,10 +138,10 @@ public final class InterpretInferenceWordRspOuterClass {
               emu.grasscutter.net.proto.InterpretInferenceWordRspOuterClass.InterpretInferenceWordRsp.class, emu.grasscutter.net.proto.InterpretInferenceWordRspOuterClass.InterpretInferenceWordRsp.Builder.class);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 5;
+    public static final int RETCODE_FIELD_NUMBER = 15;
     private int retcode_;
     /**
-     * <code>int32 retcode = 5;</code>
+     * <code>int32 retcode = 15;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -145,10 +149,10 @@ public final class InterpretInferenceWordRspOuterClass {
       return retcode_;
     }
 
-    public static final int WORD_ID_FIELD_NUMBER = 14;
+    public static final int WORD_ID_FIELD_NUMBER = 2;
     private int wordId_;
     /**
-     * <code>uint32 word_id = 14;</code>
+     * <code>uint32 word_id = 2;</code>
      * @return The wordId.
      */
     @java.lang.Override
@@ -156,10 +160,10 @@ public final class InterpretInferenceWordRspOuterClass {
       return wordId_;
     }
 
-    public static final int PAGE_ID_FIELD_NUMBER = 13;
+    public static final int PAGE_ID_FIELD_NUMBER = 9;
     private int pageId_;
     /**
-     * <code>uint32 page_id = 13;</code>
+     * <code>uint32 page_id = 9;</code>
      * @return The pageId.
      */
     @java.lang.Override
@@ -181,14 +185,14 @@ public final class InterpretInferenceWordRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (retcode_ != 0) {
-        output.writeInt32(5, retcode_);
+      if (wordId_ != 0) {
+        output.writeUInt32(2, wordId_);
       }
       if (pageId_ != 0) {
-        output.writeUInt32(13, pageId_);
+        output.writeUInt32(9, pageId_);
       }
-      if (wordId_ != 0) {
-        output.writeUInt32(14, wordId_);
+      if (retcode_ != 0) {
+        output.writeInt32(15, retcode_);
       }
       unknownFields.writeTo(output);
     }
@@ -199,17 +203,17 @@ public final class InterpretInferenceWordRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (retcode_ != 0) {
+      if (wordId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(5, retcode_);
+          .computeUInt32Size(2, wordId_);
       }
       if (pageId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, pageId_);
+          .computeUInt32Size(9, pageId_);
       }
-      if (wordId_ != 0) {
+      if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, wordId_);
+          .computeInt32Size(15, retcode_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -346,9 +350,13 @@ public final class InterpretInferenceWordRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 461
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 498;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code InterpretInferenceWordRsp}
@@ -511,7 +519,7 @@ public final class InterpretInferenceWordRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 5;</code>
+       * <code>int32 retcode = 15;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -519,7 +527,7 @@ public final class InterpretInferenceWordRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 5;</code>
+       * <code>int32 retcode = 15;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -530,7 +538,7 @@ public final class InterpretInferenceWordRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 5;</code>
+       * <code>int32 retcode = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -542,7 +550,7 @@ public final class InterpretInferenceWordRspOuterClass {
 
       private int wordId_ ;
       /**
-       * <code>uint32 word_id = 14;</code>
+       * <code>uint32 word_id = 2;</code>
        * @return The wordId.
        */
       @java.lang.Override
@@ -550,7 +558,7 @@ public final class InterpretInferenceWordRspOuterClass {
         return wordId_;
       }
       /**
-       * <code>uint32 word_id = 14;</code>
+       * <code>uint32 word_id = 2;</code>
        * @param value The wordId to set.
        * @return This builder for chaining.
        */
@@ -561,7 +569,7 @@ public final class InterpretInferenceWordRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 word_id = 14;</code>
+       * <code>uint32 word_id = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearWordId() {
@@ -573,7 +581,7 @@ public final class InterpretInferenceWordRspOuterClass {
 
       private int pageId_ ;
       /**
-       * <code>uint32 page_id = 13;</code>
+       * <code>uint32 page_id = 9;</code>
        * @return The pageId.
        */
       @java.lang.Override
@@ -581,7 +589,7 @@ public final class InterpretInferenceWordRspOuterClass {
         return pageId_;
       }
       /**
-       * <code>uint32 page_id = 13;</code>
+       * <code>uint32 page_id = 9;</code>
        * @param value The pageId to set.
        * @return This builder for chaining.
        */
@@ -592,7 +600,7 @@ public final class InterpretInferenceWordRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 page_id = 13;</code>
+       * <code>uint32 page_id = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearPageId() {
@@ -669,8 +677,8 @@ public final class InterpretInferenceWordRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\037InterpretInferenceWordRsp.proto\"N\n\031Int" +
-      "erpretInferenceWordRsp\022\017\n\007retcode\030\005 \001(\005\022" +
-      "\017\n\007word_id\030\016 \001(\r\022\017\n\007page_id\030\r \001(\rB\033\n\031emu" +
+      "erpretInferenceWordRsp\022\017\n\007retcode\030\017 \001(\005\022" +
+      "\017\n\007word_id\030\002 \001(\r\022\017\n\007page_id\030\t \001(\rB\033\n\031emu" +
       ".grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

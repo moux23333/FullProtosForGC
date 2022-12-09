@@ -19,40 +19,40 @@ public final class RoguelikeSelectAvatarAndEnterDungeonReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated uint64 onstage_avatar_guid_list = 14;</code>
+     * <code>uint32 stage_id = 1;</code>
+     * @return The stageId.
+     */
+    int getStageId();
+
+    /**
+     * <code>repeated uint64 onstage_avatar_guid_list = 12;</code>
      * @return A list containing the onstageAvatarGuidList.
      */
     java.util.List<java.lang.Long> getOnstageAvatarGuidListList();
     /**
-     * <code>repeated uint64 onstage_avatar_guid_list = 14;</code>
+     * <code>repeated uint64 onstage_avatar_guid_list = 12;</code>
      * @return The count of onstageAvatarGuidList.
      */
     int getOnstageAvatarGuidListCount();
     /**
-     * <code>repeated uint64 onstage_avatar_guid_list = 14;</code>
+     * <code>repeated uint64 onstage_avatar_guid_list = 12;</code>
      * @param index The index of the element to return.
      * @return The onstageAvatarGuidList at the given index.
      */
     long getOnstageAvatarGuidList(int index);
 
     /**
-     * <code>uint32 stage_id = 4;</code>
-     * @return The stageId.
-     */
-    int getStageId();
-
-    /**
-     * <code>repeated uint64 backstage_avatar_guid_list = 11;</code>
+     * <code>repeated uint64 backstage_avatar_guid_list = 4;</code>
      * @return A list containing the backstageAvatarGuidList.
      */
     java.util.List<java.lang.Long> getBackstageAvatarGuidListList();
     /**
-     * <code>repeated uint64 backstage_avatar_guid_list = 11;</code>
+     * <code>repeated uint64 backstage_avatar_guid_list = 4;</code>
      * @return The count of backstageAvatarGuidList.
      */
     int getBackstageAvatarGuidListCount();
     /**
-     * <code>repeated uint64 backstage_avatar_guid_list = 11;</code>
+     * <code>repeated uint64 backstage_avatar_guid_list = 4;</code>
      * @param index The index of the element to return.
      * @return The backstageAvatarGuidList at the given index.
      */
@@ -60,10 +60,14 @@ public final class RoguelikeSelectAvatarAndEnterDungeonReqOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 8457
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 8988;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code RoguelikeSelectAvatarAndEnterDungeonReq}
@@ -113,12 +117,12 @@ public final class RoguelikeSelectAvatarAndEnterDungeonReqOuterClass {
             case 0:
               done = true;
               break;
-            case 32: {
+            case 8: {
 
               stageId_ = input.readUInt32();
               break;
             }
-            case 88: {
+            case 32: {
               if (!((mutable_bitField0_ & 0x00000002) != 0)) {
                 backstageAvatarGuidList_ = newLongList();
                 mutable_bitField0_ |= 0x00000002;
@@ -126,7 +130,7 @@ public final class RoguelikeSelectAvatarAndEnterDungeonReqOuterClass {
               backstageAvatarGuidList_.addLong(input.readUInt64());
               break;
             }
-            case 90: {
+            case 34: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000002) != 0) && input.getBytesUntilLimit() > 0) {
@@ -139,7 +143,7 @@ public final class RoguelikeSelectAvatarAndEnterDungeonReqOuterClass {
               input.popLimit(limit);
               break;
             }
-            case 112: {
+            case 96: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 onstageAvatarGuidList_ = newLongList();
                 mutable_bitField0_ |= 0x00000001;
@@ -147,7 +151,7 @@ public final class RoguelikeSelectAvatarAndEnterDungeonReqOuterClass {
               onstageAvatarGuidList_.addLong(input.readUInt64());
               break;
             }
-            case 114: {
+            case 98: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -198,10 +202,21 @@ public final class RoguelikeSelectAvatarAndEnterDungeonReqOuterClass {
               emu.grasscutter.net.proto.RoguelikeSelectAvatarAndEnterDungeonReqOuterClass.RoguelikeSelectAvatarAndEnterDungeonReq.class, emu.grasscutter.net.proto.RoguelikeSelectAvatarAndEnterDungeonReqOuterClass.RoguelikeSelectAvatarAndEnterDungeonReq.Builder.class);
     }
 
-    public static final int ONSTAGE_AVATAR_GUID_LIST_FIELD_NUMBER = 14;
+    public static final int STAGE_ID_FIELD_NUMBER = 1;
+    private int stageId_;
+    /**
+     * <code>uint32 stage_id = 1;</code>
+     * @return The stageId.
+     */
+    @java.lang.Override
+    public int getStageId() {
+      return stageId_;
+    }
+
+    public static final int ONSTAGE_AVATAR_GUID_LIST_FIELD_NUMBER = 12;
     private com.google.protobuf.Internal.LongList onstageAvatarGuidList_;
     /**
-     * <code>repeated uint64 onstage_avatar_guid_list = 14;</code>
+     * <code>repeated uint64 onstage_avatar_guid_list = 12;</code>
      * @return A list containing the onstageAvatarGuidList.
      */
     @java.lang.Override
@@ -210,14 +225,14 @@ public final class RoguelikeSelectAvatarAndEnterDungeonReqOuterClass {
       return onstageAvatarGuidList_;
     }
     /**
-     * <code>repeated uint64 onstage_avatar_guid_list = 14;</code>
+     * <code>repeated uint64 onstage_avatar_guid_list = 12;</code>
      * @return The count of onstageAvatarGuidList.
      */
     public int getOnstageAvatarGuidListCount() {
       return onstageAvatarGuidList_.size();
     }
     /**
-     * <code>repeated uint64 onstage_avatar_guid_list = 14;</code>
+     * <code>repeated uint64 onstage_avatar_guid_list = 12;</code>
      * @param index The index of the element to return.
      * @return The onstageAvatarGuidList at the given index.
      */
@@ -226,21 +241,10 @@ public final class RoguelikeSelectAvatarAndEnterDungeonReqOuterClass {
     }
     private int onstageAvatarGuidListMemoizedSerializedSize = -1;
 
-    public static final int STAGE_ID_FIELD_NUMBER = 4;
-    private int stageId_;
-    /**
-     * <code>uint32 stage_id = 4;</code>
-     * @return The stageId.
-     */
-    @java.lang.Override
-    public int getStageId() {
-      return stageId_;
-    }
-
-    public static final int BACKSTAGE_AVATAR_GUID_LIST_FIELD_NUMBER = 11;
+    public static final int BACKSTAGE_AVATAR_GUID_LIST_FIELD_NUMBER = 4;
     private com.google.protobuf.Internal.LongList backstageAvatarGuidList_;
     /**
-     * <code>repeated uint64 backstage_avatar_guid_list = 11;</code>
+     * <code>repeated uint64 backstage_avatar_guid_list = 4;</code>
      * @return A list containing the backstageAvatarGuidList.
      */
     @java.lang.Override
@@ -249,14 +253,14 @@ public final class RoguelikeSelectAvatarAndEnterDungeonReqOuterClass {
       return backstageAvatarGuidList_;
     }
     /**
-     * <code>repeated uint64 backstage_avatar_guid_list = 11;</code>
+     * <code>repeated uint64 backstage_avatar_guid_list = 4;</code>
      * @return The count of backstageAvatarGuidList.
      */
     public int getBackstageAvatarGuidListCount() {
       return backstageAvatarGuidList_.size();
     }
     /**
-     * <code>repeated uint64 backstage_avatar_guid_list = 11;</code>
+     * <code>repeated uint64 backstage_avatar_guid_list = 4;</code>
      * @param index The index of the element to return.
      * @return The backstageAvatarGuidList at the given index.
      */
@@ -281,17 +285,17 @@ public final class RoguelikeSelectAvatarAndEnterDungeonReqOuterClass {
                         throws java.io.IOException {
       getSerializedSize();
       if (stageId_ != 0) {
-        output.writeUInt32(4, stageId_);
+        output.writeUInt32(1, stageId_);
       }
       if (getBackstageAvatarGuidListList().size() > 0) {
-        output.writeUInt32NoTag(90);
+        output.writeUInt32NoTag(34);
         output.writeUInt32NoTag(backstageAvatarGuidListMemoizedSerializedSize);
       }
       for (int i = 0; i < backstageAvatarGuidList_.size(); i++) {
         output.writeUInt64NoTag(backstageAvatarGuidList_.getLong(i));
       }
       if (getOnstageAvatarGuidListList().size() > 0) {
-        output.writeUInt32NoTag(114);
+        output.writeUInt32NoTag(98);
         output.writeUInt32NoTag(onstageAvatarGuidListMemoizedSerializedSize);
       }
       for (int i = 0; i < onstageAvatarGuidList_.size(); i++) {
@@ -308,7 +312,7 @@ public final class RoguelikeSelectAvatarAndEnterDungeonReqOuterClass {
       size = 0;
       if (stageId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, stageId_);
+          .computeUInt32Size(1, stageId_);
       }
       {
         int dataSize = 0;
@@ -353,10 +357,10 @@ public final class RoguelikeSelectAvatarAndEnterDungeonReqOuterClass {
       }
       emu.grasscutter.net.proto.RoguelikeSelectAvatarAndEnterDungeonReqOuterClass.RoguelikeSelectAvatarAndEnterDungeonReq other = (emu.grasscutter.net.proto.RoguelikeSelectAvatarAndEnterDungeonReqOuterClass.RoguelikeSelectAvatarAndEnterDungeonReq) obj;
 
-      if (!getOnstageAvatarGuidListList()
-          .equals(other.getOnstageAvatarGuidListList())) return false;
       if (getStageId()
           != other.getStageId()) return false;
+      if (!getOnstageAvatarGuidListList()
+          .equals(other.getOnstageAvatarGuidListList())) return false;
       if (!getBackstageAvatarGuidListList()
           .equals(other.getBackstageAvatarGuidListList())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
@@ -370,12 +374,12 @@ public final class RoguelikeSelectAvatarAndEnterDungeonReqOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + STAGE_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getStageId();
       if (getOnstageAvatarGuidListCount() > 0) {
         hash = (37 * hash) + ONSTAGE_AVATAR_GUID_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getOnstageAvatarGuidListList().hashCode();
       }
-      hash = (37 * hash) + STAGE_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getStageId();
       if (getBackstageAvatarGuidListCount() > 0) {
         hash = (37 * hash) + BACKSTAGE_AVATAR_GUID_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getBackstageAvatarGuidListList().hashCode();
@@ -477,10 +481,14 @@ public final class RoguelikeSelectAvatarAndEnterDungeonReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 8457
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 8988;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code RoguelikeSelectAvatarAndEnterDungeonReq}
@@ -520,10 +528,10 @@ public final class RoguelikeSelectAvatarAndEnterDungeonReqOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        onstageAvatarGuidList_ = emptyLongList();
-        bitField0_ = (bitField0_ & ~0x00000001);
         stageId_ = 0;
 
+        onstageAvatarGuidList_ = emptyLongList();
+        bitField0_ = (bitField0_ & ~0x00000001);
         backstageAvatarGuidList_ = emptyLongList();
         bitField0_ = (bitField0_ & ~0x00000002);
         return this;
@@ -553,12 +561,12 @@ public final class RoguelikeSelectAvatarAndEnterDungeonReqOuterClass {
       public emu.grasscutter.net.proto.RoguelikeSelectAvatarAndEnterDungeonReqOuterClass.RoguelikeSelectAvatarAndEnterDungeonReq buildPartial() {
         emu.grasscutter.net.proto.RoguelikeSelectAvatarAndEnterDungeonReqOuterClass.RoguelikeSelectAvatarAndEnterDungeonReq result = new emu.grasscutter.net.proto.RoguelikeSelectAvatarAndEnterDungeonReqOuterClass.RoguelikeSelectAvatarAndEnterDungeonReq(this);
         int from_bitField0_ = bitField0_;
+        result.stageId_ = stageId_;
         if (((bitField0_ & 0x00000001) != 0)) {
           onstageAvatarGuidList_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000001);
         }
         result.onstageAvatarGuidList_ = onstageAvatarGuidList_;
-        result.stageId_ = stageId_;
         if (((bitField0_ & 0x00000002) != 0)) {
           backstageAvatarGuidList_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000002);
@@ -612,6 +620,9 @@ public final class RoguelikeSelectAvatarAndEnterDungeonReqOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.RoguelikeSelectAvatarAndEnterDungeonReqOuterClass.RoguelikeSelectAvatarAndEnterDungeonReq other) {
         if (other == emu.grasscutter.net.proto.RoguelikeSelectAvatarAndEnterDungeonReqOuterClass.RoguelikeSelectAvatarAndEnterDungeonReq.getDefaultInstance()) return this;
+        if (other.getStageId() != 0) {
+          setStageId(other.getStageId());
+        }
         if (!other.onstageAvatarGuidList_.isEmpty()) {
           if (onstageAvatarGuidList_.isEmpty()) {
             onstageAvatarGuidList_ = other.onstageAvatarGuidList_;
@@ -621,9 +632,6 @@ public final class RoguelikeSelectAvatarAndEnterDungeonReqOuterClass {
             onstageAvatarGuidList_.addAll(other.onstageAvatarGuidList_);
           }
           onChanged();
-        }
-        if (other.getStageId() != 0) {
-          setStageId(other.getStageId());
         }
         if (!other.backstageAvatarGuidList_.isEmpty()) {
           if (backstageAvatarGuidList_.isEmpty()) {
@@ -665,6 +673,37 @@ public final class RoguelikeSelectAvatarAndEnterDungeonReqOuterClass {
       }
       private int bitField0_;
 
+      private int stageId_ ;
+      /**
+       * <code>uint32 stage_id = 1;</code>
+       * @return The stageId.
+       */
+      @java.lang.Override
+      public int getStageId() {
+        return stageId_;
+      }
+      /**
+       * <code>uint32 stage_id = 1;</code>
+       * @param value The stageId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setStageId(int value) {
+        
+        stageId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 stage_id = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearStageId() {
+        
+        stageId_ = 0;
+        onChanged();
+        return this;
+      }
+
       private com.google.protobuf.Internal.LongList onstageAvatarGuidList_ = emptyLongList();
       private void ensureOnstageAvatarGuidListIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
@@ -673,7 +712,7 @@ public final class RoguelikeSelectAvatarAndEnterDungeonReqOuterClass {
          }
       }
       /**
-       * <code>repeated uint64 onstage_avatar_guid_list = 14;</code>
+       * <code>repeated uint64 onstage_avatar_guid_list = 12;</code>
        * @return A list containing the onstageAvatarGuidList.
        */
       public java.util.List<java.lang.Long>
@@ -682,14 +721,14 @@ public final class RoguelikeSelectAvatarAndEnterDungeonReqOuterClass {
                  java.util.Collections.unmodifiableList(onstageAvatarGuidList_) : onstageAvatarGuidList_;
       }
       /**
-       * <code>repeated uint64 onstage_avatar_guid_list = 14;</code>
+       * <code>repeated uint64 onstage_avatar_guid_list = 12;</code>
        * @return The count of onstageAvatarGuidList.
        */
       public int getOnstageAvatarGuidListCount() {
         return onstageAvatarGuidList_.size();
       }
       /**
-       * <code>repeated uint64 onstage_avatar_guid_list = 14;</code>
+       * <code>repeated uint64 onstage_avatar_guid_list = 12;</code>
        * @param index The index of the element to return.
        * @return The onstageAvatarGuidList at the given index.
        */
@@ -697,7 +736,7 @@ public final class RoguelikeSelectAvatarAndEnterDungeonReqOuterClass {
         return onstageAvatarGuidList_.getLong(index);
       }
       /**
-       * <code>repeated uint64 onstage_avatar_guid_list = 14;</code>
+       * <code>repeated uint64 onstage_avatar_guid_list = 12;</code>
        * @param index The index to set the value at.
        * @param value The onstageAvatarGuidList to set.
        * @return This builder for chaining.
@@ -710,7 +749,7 @@ public final class RoguelikeSelectAvatarAndEnterDungeonReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint64 onstage_avatar_guid_list = 14;</code>
+       * <code>repeated uint64 onstage_avatar_guid_list = 12;</code>
        * @param value The onstageAvatarGuidList to add.
        * @return This builder for chaining.
        */
@@ -721,7 +760,7 @@ public final class RoguelikeSelectAvatarAndEnterDungeonReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint64 onstage_avatar_guid_list = 14;</code>
+       * <code>repeated uint64 onstage_avatar_guid_list = 12;</code>
        * @param values The onstageAvatarGuidList to add.
        * @return This builder for chaining.
        */
@@ -734,43 +773,12 @@ public final class RoguelikeSelectAvatarAndEnterDungeonReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint64 onstage_avatar_guid_list = 14;</code>
+       * <code>repeated uint64 onstage_avatar_guid_list = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearOnstageAvatarGuidList() {
         onstageAvatarGuidList_ = emptyLongList();
         bitField0_ = (bitField0_ & ~0x00000001);
-        onChanged();
-        return this;
-      }
-
-      private int stageId_ ;
-      /**
-       * <code>uint32 stage_id = 4;</code>
-       * @return The stageId.
-       */
-      @java.lang.Override
-      public int getStageId() {
-        return stageId_;
-      }
-      /**
-       * <code>uint32 stage_id = 4;</code>
-       * @param value The stageId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setStageId(int value) {
-        
-        stageId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 stage_id = 4;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearStageId() {
-        
-        stageId_ = 0;
         onChanged();
         return this;
       }
@@ -783,7 +791,7 @@ public final class RoguelikeSelectAvatarAndEnterDungeonReqOuterClass {
          }
       }
       /**
-       * <code>repeated uint64 backstage_avatar_guid_list = 11;</code>
+       * <code>repeated uint64 backstage_avatar_guid_list = 4;</code>
        * @return A list containing the backstageAvatarGuidList.
        */
       public java.util.List<java.lang.Long>
@@ -792,14 +800,14 @@ public final class RoguelikeSelectAvatarAndEnterDungeonReqOuterClass {
                  java.util.Collections.unmodifiableList(backstageAvatarGuidList_) : backstageAvatarGuidList_;
       }
       /**
-       * <code>repeated uint64 backstage_avatar_guid_list = 11;</code>
+       * <code>repeated uint64 backstage_avatar_guid_list = 4;</code>
        * @return The count of backstageAvatarGuidList.
        */
       public int getBackstageAvatarGuidListCount() {
         return backstageAvatarGuidList_.size();
       }
       /**
-       * <code>repeated uint64 backstage_avatar_guid_list = 11;</code>
+       * <code>repeated uint64 backstage_avatar_guid_list = 4;</code>
        * @param index The index of the element to return.
        * @return The backstageAvatarGuidList at the given index.
        */
@@ -807,7 +815,7 @@ public final class RoguelikeSelectAvatarAndEnterDungeonReqOuterClass {
         return backstageAvatarGuidList_.getLong(index);
       }
       /**
-       * <code>repeated uint64 backstage_avatar_guid_list = 11;</code>
+       * <code>repeated uint64 backstage_avatar_guid_list = 4;</code>
        * @param index The index to set the value at.
        * @param value The backstageAvatarGuidList to set.
        * @return This builder for chaining.
@@ -820,7 +828,7 @@ public final class RoguelikeSelectAvatarAndEnterDungeonReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint64 backstage_avatar_guid_list = 11;</code>
+       * <code>repeated uint64 backstage_avatar_guid_list = 4;</code>
        * @param value The backstageAvatarGuidList to add.
        * @return This builder for chaining.
        */
@@ -831,7 +839,7 @@ public final class RoguelikeSelectAvatarAndEnterDungeonReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint64 backstage_avatar_guid_list = 11;</code>
+       * <code>repeated uint64 backstage_avatar_guid_list = 4;</code>
        * @param values The backstageAvatarGuidList to add.
        * @return This builder for chaining.
        */
@@ -844,7 +852,7 @@ public final class RoguelikeSelectAvatarAndEnterDungeonReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint64 backstage_avatar_guid_list = 11;</code>
+       * <code>repeated uint64 backstage_avatar_guid_list = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearBackstageAvatarGuidList() {
@@ -922,9 +930,9 @@ public final class RoguelikeSelectAvatarAndEnterDungeonReqOuterClass {
     java.lang.String[] descriptorData = {
       "\n-RoguelikeSelectAvatarAndEnterDungeonRe" +
       "q.proto\"\201\001\n\'RoguelikeSelectAvatarAndEnte" +
-      "rDungeonReq\022 \n\030onstage_avatar_guid_list\030" +
-      "\016 \003(\004\022\020\n\010stage_id\030\004 \001(\r\022\"\n\032backstage_ava" +
-      "tar_guid_list\030\013 \003(\004B\033\n\031emu.grasscutter.n" +
+      "rDungeonReq\022\020\n\010stage_id\030\001 \001(\r\022 \n\030onstage" +
+      "_avatar_guid_list\030\014 \003(\004\022\"\n\032backstage_ava" +
+      "tar_guid_list\030\004 \003(\004B\033\n\031emu.grasscutter.n" +
       "et.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -936,7 +944,7 @@ public final class RoguelikeSelectAvatarAndEnterDungeonReqOuterClass {
     internal_static_RoguelikeSelectAvatarAndEnterDungeonReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_RoguelikeSelectAvatarAndEnterDungeonReq_descriptor,
-        new java.lang.String[] { "OnstageAvatarGuidList", "StageId", "BackstageAvatarGuidList", });
+        new java.lang.String[] { "StageId", "OnstageAvatarGuidList", "BackstageAvatarGuidList", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

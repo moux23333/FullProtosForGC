@@ -19,17 +19,21 @@ public final class GearActivityFinishPlayPictureReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_success = 8;</code>
+     * <code>bool is_success = 12;</code>
      * @return The isSuccess.
      */
     boolean getIsSuccess();
   }
   /**
    * <pre>
-   * CmdId: 21054
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 23793;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code GearActivityFinishPlayPictureReq}
@@ -76,7 +80,7 @@ public final class GearActivityFinishPlayPictureReqOuterClass {
             case 0:
               done = true;
               break;
-            case 64: {
+            case 96: {
 
               isSuccess_ = input.readBool();
               break;
@@ -113,10 +117,10 @@ public final class GearActivityFinishPlayPictureReqOuterClass {
               emu.grasscutter.net.proto.GearActivityFinishPlayPictureReqOuterClass.GearActivityFinishPlayPictureReq.class, emu.grasscutter.net.proto.GearActivityFinishPlayPictureReqOuterClass.GearActivityFinishPlayPictureReq.Builder.class);
     }
 
-    public static final int IS_SUCCESS_FIELD_NUMBER = 8;
+    public static final int IS_SUCCESS_FIELD_NUMBER = 12;
     private boolean isSuccess_;
     /**
-     * <code>bool is_success = 8;</code>
+     * <code>bool is_success = 12;</code>
      * @return The isSuccess.
      */
     @java.lang.Override
@@ -139,7 +143,7 @@ public final class GearActivityFinishPlayPictureReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (isSuccess_ != false) {
-        output.writeBool(8, isSuccess_);
+        output.writeBool(12, isSuccess_);
       }
       unknownFields.writeTo(output);
     }
@@ -152,7 +156,7 @@ public final class GearActivityFinishPlayPictureReqOuterClass {
       size = 0;
       if (isSuccess_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(8, isSuccess_);
+          .computeBoolSize(12, isSuccess_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -282,10 +286,14 @@ public final class GearActivityFinishPlayPictureReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 21054
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 23793;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code GearActivityFinishPlayPictureReq}
@@ -436,7 +444,7 @@ public final class GearActivityFinishPlayPictureReqOuterClass {
 
       private boolean isSuccess_ ;
       /**
-       * <code>bool is_success = 8;</code>
+       * <code>bool is_success = 12;</code>
        * @return The isSuccess.
        */
       @java.lang.Override
@@ -444,7 +452,7 @@ public final class GearActivityFinishPlayPictureReqOuterClass {
         return isSuccess_;
       }
       /**
-       * <code>bool is_success = 8;</code>
+       * <code>bool is_success = 12;</code>
        * @param value The isSuccess to set.
        * @return This builder for chaining.
        */
@@ -455,7 +463,7 @@ public final class GearActivityFinishPlayPictureReqOuterClass {
         return this;
       }
       /**
-       * <code>bool is_success = 8;</code>
+       * <code>bool is_success = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsSuccess() {
@@ -533,7 +541,7 @@ public final class GearActivityFinishPlayPictureReqOuterClass {
     java.lang.String[] descriptorData = {
       "\n&GearActivityFinishPlayPictureReq.proto" +
       "\"6\n GearActivityFinishPlayPictureReq\022\022\n\n" +
-      "is_success\030\010 \001(\010B\033\n\031emu.grasscutter.net." +
+      "is_success\030\014 \001(\010B\033\n\031emu.grasscutter.net." +
       "protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

@@ -19,22 +19,26 @@ public final class RoguelikeTakeStageFirstPassRewardRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 stage_id = 14;</code>
+     * <code>uint32 stage_id = 15;</code>
      * @return The stageId.
      */
     int getStageId();
 
     /**
-     * <code>int32 retcode = 5;</code>
+     * <code>int32 retcode = 10;</code>
      * @return The retcode.
      */
     int getRetcode();
   }
   /**
    * <pre>
-   * CmdId: 8552
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 8182;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code RoguelikeTakeStageFirstPassRewardRsp}
@@ -81,12 +85,12 @@ public final class RoguelikeTakeStageFirstPassRewardRspOuterClass {
             case 0:
               done = true;
               break;
-            case 40: {
+            case 80: {
 
               retcode_ = input.readInt32();
               break;
             }
-            case 112: {
+            case 120: {
 
               stageId_ = input.readUInt32();
               break;
@@ -123,10 +127,10 @@ public final class RoguelikeTakeStageFirstPassRewardRspOuterClass {
               emu.grasscutter.net.proto.RoguelikeTakeStageFirstPassRewardRspOuterClass.RoguelikeTakeStageFirstPassRewardRsp.class, emu.grasscutter.net.proto.RoguelikeTakeStageFirstPassRewardRspOuterClass.RoguelikeTakeStageFirstPassRewardRsp.Builder.class);
     }
 
-    public static final int STAGE_ID_FIELD_NUMBER = 14;
+    public static final int STAGE_ID_FIELD_NUMBER = 15;
     private int stageId_;
     /**
-     * <code>uint32 stage_id = 14;</code>
+     * <code>uint32 stage_id = 15;</code>
      * @return The stageId.
      */
     @java.lang.Override
@@ -134,10 +138,10 @@ public final class RoguelikeTakeStageFirstPassRewardRspOuterClass {
       return stageId_;
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 5;
+    public static final int RETCODE_FIELD_NUMBER = 10;
     private int retcode_;
     /**
-     * <code>int32 retcode = 5;</code>
+     * <code>int32 retcode = 10;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -160,10 +164,10 @@ public final class RoguelikeTakeStageFirstPassRewardRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (retcode_ != 0) {
-        output.writeInt32(5, retcode_);
+        output.writeInt32(10, retcode_);
       }
       if (stageId_ != 0) {
-        output.writeUInt32(14, stageId_);
+        output.writeUInt32(15, stageId_);
       }
       unknownFields.writeTo(output);
     }
@@ -176,11 +180,11 @@ public final class RoguelikeTakeStageFirstPassRewardRspOuterClass {
       size = 0;
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(5, retcode_);
+          .computeInt32Size(10, retcode_);
       }
       if (stageId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, stageId_);
+          .computeUInt32Size(15, stageId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -313,9 +317,13 @@ public final class RoguelikeTakeStageFirstPassRewardRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 8552
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 8182;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code RoguelikeTakeStageFirstPassRewardRsp}
@@ -472,7 +480,7 @@ public final class RoguelikeTakeStageFirstPassRewardRspOuterClass {
 
       private int stageId_ ;
       /**
-       * <code>uint32 stage_id = 14;</code>
+       * <code>uint32 stage_id = 15;</code>
        * @return The stageId.
        */
       @java.lang.Override
@@ -480,7 +488,7 @@ public final class RoguelikeTakeStageFirstPassRewardRspOuterClass {
         return stageId_;
       }
       /**
-       * <code>uint32 stage_id = 14;</code>
+       * <code>uint32 stage_id = 15;</code>
        * @param value The stageId to set.
        * @return This builder for chaining.
        */
@@ -491,7 +499,7 @@ public final class RoguelikeTakeStageFirstPassRewardRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 stage_id = 14;</code>
+       * <code>uint32 stage_id = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearStageId() {
@@ -503,7 +511,7 @@ public final class RoguelikeTakeStageFirstPassRewardRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 5;</code>
+       * <code>int32 retcode = 10;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -511,7 +519,7 @@ public final class RoguelikeTakeStageFirstPassRewardRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 5;</code>
+       * <code>int32 retcode = 10;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -522,7 +530,7 @@ public final class RoguelikeTakeStageFirstPassRewardRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 5;</code>
+       * <code>int32 retcode = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -600,7 +608,7 @@ public final class RoguelikeTakeStageFirstPassRewardRspOuterClass {
     java.lang.String[] descriptorData = {
       "\n*RoguelikeTakeStageFirstPassRewardRsp.p" +
       "roto\"I\n$RoguelikeTakeStageFirstPassRewar" +
-      "dRsp\022\020\n\010stage_id\030\016 \001(\r\022\017\n\007retcode\030\005 \001(\005B" +
+      "dRsp\022\020\n\010stage_id\030\017 \001(\r\022\017\n\007retcode\030\n \001(\005B" +
       "\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

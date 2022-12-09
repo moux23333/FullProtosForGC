@@ -19,22 +19,26 @@ public final class GuestPostEnterSceneNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 scene_id = 5;</code>
-     * @return The sceneId.
-     */
-    int getSceneId();
-
-    /**
-     * <code>uint32 uid = 4;</code>
+     * <code>uint32 uid = 9;</code>
      * @return The uid.
      */
     int getUid();
+
+    /**
+     * <code>uint32 scene_id = 2;</code>
+     * @return The sceneId.
+     */
+    int getSceneId();
   }
   /**
    * <pre>
-   * CmdId: 3144
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 3229;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code GuestPostEnterSceneNotify}
@@ -81,14 +85,14 @@ public final class GuestPostEnterSceneNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 32: {
-
-              uid_ = input.readUInt32();
-              break;
-            }
-            case 40: {
+            case 16: {
 
               sceneId_ = input.readUInt32();
+              break;
+            }
+            case 72: {
+
+              uid_ = input.readUInt32();
               break;
             }
             default: {
@@ -123,26 +127,26 @@ public final class GuestPostEnterSceneNotifyOuterClass {
               emu.grasscutter.net.proto.GuestPostEnterSceneNotifyOuterClass.GuestPostEnterSceneNotify.class, emu.grasscutter.net.proto.GuestPostEnterSceneNotifyOuterClass.GuestPostEnterSceneNotify.Builder.class);
     }
 
-    public static final int SCENE_ID_FIELD_NUMBER = 5;
-    private int sceneId_;
-    /**
-     * <code>uint32 scene_id = 5;</code>
-     * @return The sceneId.
-     */
-    @java.lang.Override
-    public int getSceneId() {
-      return sceneId_;
-    }
-
-    public static final int UID_FIELD_NUMBER = 4;
+    public static final int UID_FIELD_NUMBER = 9;
     private int uid_;
     /**
-     * <code>uint32 uid = 4;</code>
+     * <code>uint32 uid = 9;</code>
      * @return The uid.
      */
     @java.lang.Override
     public int getUid() {
       return uid_;
+    }
+
+    public static final int SCENE_ID_FIELD_NUMBER = 2;
+    private int sceneId_;
+    /**
+     * <code>uint32 scene_id = 2;</code>
+     * @return The sceneId.
+     */
+    @java.lang.Override
+    public int getSceneId() {
+      return sceneId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -159,11 +163,11 @@ public final class GuestPostEnterSceneNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (uid_ != 0) {
-        output.writeUInt32(4, uid_);
-      }
       if (sceneId_ != 0) {
-        output.writeUInt32(5, sceneId_);
+        output.writeUInt32(2, sceneId_);
+      }
+      if (uid_ != 0) {
+        output.writeUInt32(9, uid_);
       }
       unknownFields.writeTo(output);
     }
@@ -174,13 +178,13 @@ public final class GuestPostEnterSceneNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (uid_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, uid_);
-      }
       if (sceneId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, sceneId_);
+          .computeUInt32Size(2, sceneId_);
+      }
+      if (uid_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(9, uid_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -197,10 +201,10 @@ public final class GuestPostEnterSceneNotifyOuterClass {
       }
       emu.grasscutter.net.proto.GuestPostEnterSceneNotifyOuterClass.GuestPostEnterSceneNotify other = (emu.grasscutter.net.proto.GuestPostEnterSceneNotifyOuterClass.GuestPostEnterSceneNotify) obj;
 
-      if (getSceneId()
-          != other.getSceneId()) return false;
       if (getUid()
           != other.getUid()) return false;
+      if (getSceneId()
+          != other.getSceneId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -212,10 +216,10 @@ public final class GuestPostEnterSceneNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + SCENE_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getSceneId();
       hash = (37 * hash) + UID_FIELD_NUMBER;
       hash = (53 * hash) + getUid();
+      hash = (37 * hash) + SCENE_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getSceneId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -313,9 +317,13 @@ public final class GuestPostEnterSceneNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 3144
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 3229;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code GuestPostEnterSceneNotify}
@@ -355,9 +363,9 @@ public final class GuestPostEnterSceneNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        sceneId_ = 0;
-
         uid_ = 0;
+
+        sceneId_ = 0;
 
         return this;
       }
@@ -385,8 +393,8 @@ public final class GuestPostEnterSceneNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.GuestPostEnterSceneNotifyOuterClass.GuestPostEnterSceneNotify buildPartial() {
         emu.grasscutter.net.proto.GuestPostEnterSceneNotifyOuterClass.GuestPostEnterSceneNotify result = new emu.grasscutter.net.proto.GuestPostEnterSceneNotifyOuterClass.GuestPostEnterSceneNotify(this);
-        result.sceneId_ = sceneId_;
         result.uid_ = uid_;
+        result.sceneId_ = sceneId_;
         onBuilt();
         return result;
       }
@@ -435,11 +443,11 @@ public final class GuestPostEnterSceneNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.GuestPostEnterSceneNotifyOuterClass.GuestPostEnterSceneNotify other) {
         if (other == emu.grasscutter.net.proto.GuestPostEnterSceneNotifyOuterClass.GuestPostEnterSceneNotify.getDefaultInstance()) return this;
-        if (other.getSceneId() != 0) {
-          setSceneId(other.getSceneId());
-        }
         if (other.getUid() != 0) {
           setUid(other.getUid());
+        }
+        if (other.getSceneId() != 0) {
+          setSceneId(other.getSceneId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -470,40 +478,9 @@ public final class GuestPostEnterSceneNotifyOuterClass {
         return this;
       }
 
-      private int sceneId_ ;
-      /**
-       * <code>uint32 scene_id = 5;</code>
-       * @return The sceneId.
-       */
-      @java.lang.Override
-      public int getSceneId() {
-        return sceneId_;
-      }
-      /**
-       * <code>uint32 scene_id = 5;</code>
-       * @param value The sceneId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setSceneId(int value) {
-        
-        sceneId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 scene_id = 5;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearSceneId() {
-        
-        sceneId_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int uid_ ;
       /**
-       * <code>uint32 uid = 4;</code>
+       * <code>uint32 uid = 9;</code>
        * @return The uid.
        */
       @java.lang.Override
@@ -511,7 +488,7 @@ public final class GuestPostEnterSceneNotifyOuterClass {
         return uid_;
       }
       /**
-       * <code>uint32 uid = 4;</code>
+       * <code>uint32 uid = 9;</code>
        * @param value The uid to set.
        * @return This builder for chaining.
        */
@@ -522,12 +499,43 @@ public final class GuestPostEnterSceneNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 uid = 4;</code>
+       * <code>uint32 uid = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearUid() {
         
         uid_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int sceneId_ ;
+      /**
+       * <code>uint32 scene_id = 2;</code>
+       * @return The sceneId.
+       */
+      @java.lang.Override
+      public int getSceneId() {
+        return sceneId_;
+      }
+      /**
+       * <code>uint32 scene_id = 2;</code>
+       * @param value The sceneId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setSceneId(int value) {
+        
+        sceneId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 scene_id = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearSceneId() {
+        
+        sceneId_ = 0;
         onChanged();
         return this;
       }
@@ -599,8 +607,8 @@ public final class GuestPostEnterSceneNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\037GuestPostEnterSceneNotify.proto\":\n\031Gue" +
-      "stPostEnterSceneNotify\022\020\n\010scene_id\030\005 \001(\r" +
-      "\022\013\n\003uid\030\004 \001(\rB\033\n\031emu.grasscutter.net.pro" +
+      "stPostEnterSceneNotify\022\013\n\003uid\030\t \001(\r\022\020\n\010s" +
+      "cene_id\030\002 \001(\rB\033\n\031emu.grasscutter.net.pro" +
       "tob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -612,7 +620,7 @@ public final class GuestPostEnterSceneNotifyOuterClass {
     internal_static_GuestPostEnterSceneNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GuestPostEnterSceneNotify_descriptor,
-        new java.lang.String[] { "SceneId", "Uid", });
+        new java.lang.String[] { "Uid", "SceneId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

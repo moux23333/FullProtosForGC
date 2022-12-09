@@ -19,22 +19,26 @@ public final class GCGApplyInviteBattleNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_agree = 14;</code>
+     * <code>bool is_agree = 4;</code>
      * @return The isAgree.
      */
     boolean getIsAgree();
 
     /**
-     * <code>int32 retcode = 6;</code>
+     * <code>int32 retcode = 14;</code>
      * @return The retcode.
      */
     int getRetcode();
   }
   /**
    * <pre>
-   * CmdId: 7820
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 7984;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code GCGApplyInviteBattleNotify}
@@ -81,14 +85,14 @@ public final class GCGApplyInviteBattleNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 48: {
+            case 32: {
 
-              retcode_ = input.readInt32();
+              isAgree_ = input.readBool();
               break;
             }
             case 112: {
 
-              isAgree_ = input.readBool();
+              retcode_ = input.readInt32();
               break;
             }
             default: {
@@ -123,10 +127,10 @@ public final class GCGApplyInviteBattleNotifyOuterClass {
               emu.grasscutter.net.proto.GCGApplyInviteBattleNotifyOuterClass.GCGApplyInviteBattleNotify.class, emu.grasscutter.net.proto.GCGApplyInviteBattleNotifyOuterClass.GCGApplyInviteBattleNotify.Builder.class);
     }
 
-    public static final int IS_AGREE_FIELD_NUMBER = 14;
+    public static final int IS_AGREE_FIELD_NUMBER = 4;
     private boolean isAgree_;
     /**
-     * <code>bool is_agree = 14;</code>
+     * <code>bool is_agree = 4;</code>
      * @return The isAgree.
      */
     @java.lang.Override
@@ -134,10 +138,10 @@ public final class GCGApplyInviteBattleNotifyOuterClass {
       return isAgree_;
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 6;
+    public static final int RETCODE_FIELD_NUMBER = 14;
     private int retcode_;
     /**
-     * <code>int32 retcode = 6;</code>
+     * <code>int32 retcode = 14;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -159,11 +163,11 @@ public final class GCGApplyInviteBattleNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (retcode_ != 0) {
-        output.writeInt32(6, retcode_);
-      }
       if (isAgree_ != false) {
-        output.writeBool(14, isAgree_);
+        output.writeBool(4, isAgree_);
+      }
+      if (retcode_ != 0) {
+        output.writeInt32(14, retcode_);
       }
       unknownFields.writeTo(output);
     }
@@ -174,13 +178,13 @@ public final class GCGApplyInviteBattleNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (retcode_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(6, retcode_);
-      }
       if (isAgree_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(14, isAgree_);
+          .computeBoolSize(4, isAgree_);
+      }
+      if (retcode_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(14, retcode_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -314,9 +318,13 @@ public final class GCGApplyInviteBattleNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 7820
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 7984;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code GCGApplyInviteBattleNotify}
@@ -473,7 +481,7 @@ public final class GCGApplyInviteBattleNotifyOuterClass {
 
       private boolean isAgree_ ;
       /**
-       * <code>bool is_agree = 14;</code>
+       * <code>bool is_agree = 4;</code>
        * @return The isAgree.
        */
       @java.lang.Override
@@ -481,7 +489,7 @@ public final class GCGApplyInviteBattleNotifyOuterClass {
         return isAgree_;
       }
       /**
-       * <code>bool is_agree = 14;</code>
+       * <code>bool is_agree = 4;</code>
        * @param value The isAgree to set.
        * @return This builder for chaining.
        */
@@ -492,7 +500,7 @@ public final class GCGApplyInviteBattleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>bool is_agree = 14;</code>
+       * <code>bool is_agree = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsAgree() {
@@ -504,7 +512,7 @@ public final class GCGApplyInviteBattleNotifyOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 6;</code>
+       * <code>int32 retcode = 14;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -512,7 +520,7 @@ public final class GCGApplyInviteBattleNotifyOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 6;</code>
+       * <code>int32 retcode = 14;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -523,7 +531,7 @@ public final class GCGApplyInviteBattleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 6;</code>
+       * <code>int32 retcode = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -600,8 +608,8 @@ public final class GCGApplyInviteBattleNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n GCGApplyInviteBattleNotify.proto\"?\n\032GC" +
-      "GApplyInviteBattleNotify\022\020\n\010is_agree\030\016 \001" +
-      "(\010\022\017\n\007retcode\030\006 \001(\005B\033\n\031emu.grasscutter.n" +
+      "GApplyInviteBattleNotify\022\020\n\010is_agree\030\004 \001" +
+      "(\010\022\017\n\007retcode\030\016 \001(\005B\033\n\031emu.grasscutter.n" +
       "et.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

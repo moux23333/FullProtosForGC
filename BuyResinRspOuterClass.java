@@ -19,23 +19,27 @@ public final class BuyResinRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 cur_value = 10;</code>
+     * <code>uint32 cur_value = 7;</code>
      * @return The curValue.
      */
     int getCurValue();
 
     /**
-     * <code>int32 retcode = 5;</code>
+     * <code>int32 retcode = 13;</code>
      * @return The retcode.
      */
     int getRetcode();
   }
   /**
    * <pre>
-   * CmdId: 619
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 654;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code BuyResinRsp}
@@ -82,14 +86,14 @@ public final class BuyResinRspOuterClass {
             case 0:
               done = true;
               break;
-            case 40: {
-
-              retcode_ = input.readInt32();
-              break;
-            }
-            case 80: {
+            case 56: {
 
               curValue_ = input.readUInt32();
+              break;
+            }
+            case 104: {
+
+              retcode_ = input.readInt32();
               break;
             }
             default: {
@@ -124,10 +128,10 @@ public final class BuyResinRspOuterClass {
               emu.grasscutter.net.proto.BuyResinRspOuterClass.BuyResinRsp.class, emu.grasscutter.net.proto.BuyResinRspOuterClass.BuyResinRsp.Builder.class);
     }
 
-    public static final int CUR_VALUE_FIELD_NUMBER = 10;
+    public static final int CUR_VALUE_FIELD_NUMBER = 7;
     private int curValue_;
     /**
-     * <code>uint32 cur_value = 10;</code>
+     * <code>uint32 cur_value = 7;</code>
      * @return The curValue.
      */
     @java.lang.Override
@@ -135,10 +139,10 @@ public final class BuyResinRspOuterClass {
       return curValue_;
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 5;
+    public static final int RETCODE_FIELD_NUMBER = 13;
     private int retcode_;
     /**
-     * <code>int32 retcode = 5;</code>
+     * <code>int32 retcode = 13;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -160,11 +164,11 @@ public final class BuyResinRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (retcode_ != 0) {
-        output.writeInt32(5, retcode_);
-      }
       if (curValue_ != 0) {
-        output.writeUInt32(10, curValue_);
+        output.writeUInt32(7, curValue_);
+      }
+      if (retcode_ != 0) {
+        output.writeInt32(13, retcode_);
       }
       unknownFields.writeTo(output);
     }
@@ -175,13 +179,13 @@ public final class BuyResinRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (retcode_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(5, retcode_);
-      }
       if (curValue_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, curValue_);
+          .computeUInt32Size(7, curValue_);
+      }
+      if (retcode_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(13, retcode_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -314,10 +318,14 @@ public final class BuyResinRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 619
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 654;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code BuyResinRsp}
@@ -474,7 +482,7 @@ public final class BuyResinRspOuterClass {
 
       private int curValue_ ;
       /**
-       * <code>uint32 cur_value = 10;</code>
+       * <code>uint32 cur_value = 7;</code>
        * @return The curValue.
        */
       @java.lang.Override
@@ -482,7 +490,7 @@ public final class BuyResinRspOuterClass {
         return curValue_;
       }
       /**
-       * <code>uint32 cur_value = 10;</code>
+       * <code>uint32 cur_value = 7;</code>
        * @param value The curValue to set.
        * @return This builder for chaining.
        */
@@ -493,7 +501,7 @@ public final class BuyResinRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 cur_value = 10;</code>
+       * <code>uint32 cur_value = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearCurValue() {
@@ -505,7 +513,7 @@ public final class BuyResinRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 5;</code>
+       * <code>int32 retcode = 13;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -513,7 +521,7 @@ public final class BuyResinRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 5;</code>
+       * <code>int32 retcode = 13;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -524,7 +532,7 @@ public final class BuyResinRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 5;</code>
+       * <code>int32 retcode = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -601,7 +609,7 @@ public final class BuyResinRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\021BuyResinRsp.proto\"1\n\013BuyResinRsp\022\021\n\tcu" +
-      "r_value\030\n \001(\r\022\017\n\007retcode\030\005 \001(\005B\033\n\031emu.gr" +
+      "r_value\030\007 \001(\r\022\017\n\007retcode\030\r \001(\005B\033\n\031emu.gr" +
       "asscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

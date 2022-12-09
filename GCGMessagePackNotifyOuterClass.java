@@ -19,32 +19,44 @@ public final class GCGMessagePackNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 server_seq = 5;</code>
+     * <code>uint32 server_seq = 2;</code>
      * @return The serverSeq.
      */
     int getServerSeq();
 
     /**
-     * <code>.GCGMessagePack message_pack = 8;</code>
-     * @return Whether the messagePack field is set.
+     * <code>repeated .GCGMessagePack msg_pack_list = 12;</code>
      */
-    boolean hasMessagePack();
+    java.util.List<emu.grasscutter.net.proto.GCGMessagePackOuterClass.GCGMessagePack> 
+        getMsgPackListList();
     /**
-     * <code>.GCGMessagePack message_pack = 8;</code>
-     * @return The messagePack.
+     * <code>repeated .GCGMessagePack msg_pack_list = 12;</code>
      */
-    emu.grasscutter.net.proto.GCGMessagePackOuterClass.GCGMessagePack getMessagePack();
+    emu.grasscutter.net.proto.GCGMessagePackOuterClass.GCGMessagePack getMsgPackList(int index);
     /**
-     * <code>.GCGMessagePack message_pack = 8;</code>
+     * <code>repeated .GCGMessagePack msg_pack_list = 12;</code>
      */
-    emu.grasscutter.net.proto.GCGMessagePackOuterClass.GCGMessagePackOrBuilder getMessagePackOrBuilder();
+    int getMsgPackListCount();
+    /**
+     * <code>repeated .GCGMessagePack msg_pack_list = 12;</code>
+     */
+    java.util.List<? extends emu.grasscutter.net.proto.GCGMessagePackOuterClass.GCGMessagePackOrBuilder> 
+        getMsgPackListOrBuilderList();
+    /**
+     * <code>repeated .GCGMessagePack msg_pack_list = 12;</code>
+     */
+    emu.grasscutter.net.proto.GCGMessagePackOuterClass.GCGMessagePackOrBuilder getMsgPackListOrBuilder(
+        int index);
   }
   /**
    * <pre>
-   * CmdId: 7516
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 7299;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code GCGMessagePackNotify}
@@ -59,6 +71,7 @@ public final class GCGMessagePackNotifyOuterClass {
       super(builder);
     }
     private GCGMessagePackNotify() {
+      msgPackList_ = java.util.Collections.emptyList();
     }
 
     @java.lang.Override
@@ -81,6 +94,7 @@ public final class GCGMessagePackNotifyOuterClass {
       if (extensionRegistry == null) {
         throw new java.lang.NullPointerException();
       }
+      int mutable_bitField0_ = 0;
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
           com.google.protobuf.UnknownFieldSet.newBuilder();
       try {
@@ -91,22 +105,18 @@ public final class GCGMessagePackNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 40: {
+            case 16: {
 
               serverSeq_ = input.readUInt32();
               break;
             }
-            case 66: {
-              emu.grasscutter.net.proto.GCGMessagePackOuterClass.GCGMessagePack.Builder subBuilder = null;
-              if (messagePack_ != null) {
-                subBuilder = messagePack_.toBuilder();
+            case 98: {
+              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+                msgPackList_ = new java.util.ArrayList<emu.grasscutter.net.proto.GCGMessagePackOuterClass.GCGMessagePack>();
+                mutable_bitField0_ |= 0x00000001;
               }
-              messagePack_ = input.readMessage(emu.grasscutter.net.proto.GCGMessagePackOuterClass.GCGMessagePack.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom(messagePack_);
-                messagePack_ = subBuilder.buildPartial();
-              }
-
+              msgPackList_.add(
+                  input.readMessage(emu.grasscutter.net.proto.GCGMessagePackOuterClass.GCGMessagePack.parser(), extensionRegistry));
               break;
             }
             default: {
@@ -124,6 +134,9 @@ public final class GCGMessagePackNotifyOuterClass {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
       } finally {
+        if (((mutable_bitField0_ & 0x00000001) != 0)) {
+          msgPackList_ = java.util.Collections.unmodifiableList(msgPackList_);
+        }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
       }
@@ -141,10 +154,10 @@ public final class GCGMessagePackNotifyOuterClass {
               emu.grasscutter.net.proto.GCGMessagePackNotifyOuterClass.GCGMessagePackNotify.class, emu.grasscutter.net.proto.GCGMessagePackNotifyOuterClass.GCGMessagePackNotify.Builder.class);
     }
 
-    public static final int SERVER_SEQ_FIELD_NUMBER = 5;
+    public static final int SERVER_SEQ_FIELD_NUMBER = 2;
     private int serverSeq_;
     /**
-     * <code>uint32 server_seq = 5;</code>
+     * <code>uint32 server_seq = 2;</code>
      * @return The serverSeq.
      */
     @java.lang.Override
@@ -152,30 +165,44 @@ public final class GCGMessagePackNotifyOuterClass {
       return serverSeq_;
     }
 
-    public static final int MESSAGE_PACK_FIELD_NUMBER = 8;
-    private emu.grasscutter.net.proto.GCGMessagePackOuterClass.GCGMessagePack messagePack_;
+    public static final int MSG_PACK_LIST_FIELD_NUMBER = 12;
+    private java.util.List<emu.grasscutter.net.proto.GCGMessagePackOuterClass.GCGMessagePack> msgPackList_;
     /**
-     * <code>.GCGMessagePack message_pack = 8;</code>
-     * @return Whether the messagePack field is set.
+     * <code>repeated .GCGMessagePack msg_pack_list = 12;</code>
      */
     @java.lang.Override
-    public boolean hasMessagePack() {
-      return messagePack_ != null;
+    public java.util.List<emu.grasscutter.net.proto.GCGMessagePackOuterClass.GCGMessagePack> getMsgPackListList() {
+      return msgPackList_;
     }
     /**
-     * <code>.GCGMessagePack message_pack = 8;</code>
-     * @return The messagePack.
+     * <code>repeated .GCGMessagePack msg_pack_list = 12;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.GCGMessagePackOuterClass.GCGMessagePack getMessagePack() {
-      return messagePack_ == null ? emu.grasscutter.net.proto.GCGMessagePackOuterClass.GCGMessagePack.getDefaultInstance() : messagePack_;
+    public java.util.List<? extends emu.grasscutter.net.proto.GCGMessagePackOuterClass.GCGMessagePackOrBuilder> 
+        getMsgPackListOrBuilderList() {
+      return msgPackList_;
     }
     /**
-     * <code>.GCGMessagePack message_pack = 8;</code>
+     * <code>repeated .GCGMessagePack msg_pack_list = 12;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.GCGMessagePackOuterClass.GCGMessagePackOrBuilder getMessagePackOrBuilder() {
-      return getMessagePack();
+    public int getMsgPackListCount() {
+      return msgPackList_.size();
+    }
+    /**
+     * <code>repeated .GCGMessagePack msg_pack_list = 12;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.GCGMessagePackOuterClass.GCGMessagePack getMsgPackList(int index) {
+      return msgPackList_.get(index);
+    }
+    /**
+     * <code>repeated .GCGMessagePack msg_pack_list = 12;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.GCGMessagePackOuterClass.GCGMessagePackOrBuilder getMsgPackListOrBuilder(
+        int index) {
+      return msgPackList_.get(index);
     }
 
     private byte memoizedIsInitialized = -1;
@@ -193,10 +220,10 @@ public final class GCGMessagePackNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (serverSeq_ != 0) {
-        output.writeUInt32(5, serverSeq_);
+        output.writeUInt32(2, serverSeq_);
       }
-      if (messagePack_ != null) {
-        output.writeMessage(8, getMessagePack());
+      for (int i = 0; i < msgPackList_.size(); i++) {
+        output.writeMessage(12, msgPackList_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -209,11 +236,11 @@ public final class GCGMessagePackNotifyOuterClass {
       size = 0;
       if (serverSeq_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, serverSeq_);
+          .computeUInt32Size(2, serverSeq_);
       }
-      if (messagePack_ != null) {
+      for (int i = 0; i < msgPackList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(8, getMessagePack());
+          .computeMessageSize(12, msgPackList_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -232,11 +259,8 @@ public final class GCGMessagePackNotifyOuterClass {
 
       if (getServerSeq()
           != other.getServerSeq()) return false;
-      if (hasMessagePack() != other.hasMessagePack()) return false;
-      if (hasMessagePack()) {
-        if (!getMessagePack()
-            .equals(other.getMessagePack())) return false;
-      }
+      if (!getMsgPackListList()
+          .equals(other.getMsgPackListList())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -250,9 +274,9 @@ public final class GCGMessagePackNotifyOuterClass {
       hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + SERVER_SEQ_FIELD_NUMBER;
       hash = (53 * hash) + getServerSeq();
-      if (hasMessagePack()) {
-        hash = (37 * hash) + MESSAGE_PACK_FIELD_NUMBER;
-        hash = (53 * hash) + getMessagePack().hashCode();
+      if (getMsgPackListCount() > 0) {
+        hash = (37 * hash) + MSG_PACK_LIST_FIELD_NUMBER;
+        hash = (53 * hash) + getMsgPackListList().hashCode();
       }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
@@ -351,10 +375,13 @@ public final class GCGMessagePackNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 7516
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 7299;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code GCGMessagePackNotify}
@@ -389,6 +416,7 @@ public final class GCGMessagePackNotifyOuterClass {
       private void maybeForceBuilderInitialization() {
         if (com.google.protobuf.GeneratedMessageV3
                 .alwaysUseFieldBuilders) {
+          getMsgPackListFieldBuilder();
         }
       }
       @java.lang.Override
@@ -396,11 +424,11 @@ public final class GCGMessagePackNotifyOuterClass {
         super.clear();
         serverSeq_ = 0;
 
-        if (messagePackBuilder_ == null) {
-          messagePack_ = null;
+        if (msgPackListBuilder_ == null) {
+          msgPackList_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000001);
         } else {
-          messagePack_ = null;
-          messagePackBuilder_ = null;
+          msgPackListBuilder_.clear();
         }
         return this;
       }
@@ -428,11 +456,16 @@ public final class GCGMessagePackNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.GCGMessagePackNotifyOuterClass.GCGMessagePackNotify buildPartial() {
         emu.grasscutter.net.proto.GCGMessagePackNotifyOuterClass.GCGMessagePackNotify result = new emu.grasscutter.net.proto.GCGMessagePackNotifyOuterClass.GCGMessagePackNotify(this);
+        int from_bitField0_ = bitField0_;
         result.serverSeq_ = serverSeq_;
-        if (messagePackBuilder_ == null) {
-          result.messagePack_ = messagePack_;
+        if (msgPackListBuilder_ == null) {
+          if (((bitField0_ & 0x00000001) != 0)) {
+            msgPackList_ = java.util.Collections.unmodifiableList(msgPackList_);
+            bitField0_ = (bitField0_ & ~0x00000001);
+          }
+          result.msgPackList_ = msgPackList_;
         } else {
-          result.messagePack_ = messagePackBuilder_.build();
+          result.msgPackList_ = msgPackListBuilder_.build();
         }
         onBuilt();
         return result;
@@ -485,8 +518,31 @@ public final class GCGMessagePackNotifyOuterClass {
         if (other.getServerSeq() != 0) {
           setServerSeq(other.getServerSeq());
         }
-        if (other.hasMessagePack()) {
-          mergeMessagePack(other.getMessagePack());
+        if (msgPackListBuilder_ == null) {
+          if (!other.msgPackList_.isEmpty()) {
+            if (msgPackList_.isEmpty()) {
+              msgPackList_ = other.msgPackList_;
+              bitField0_ = (bitField0_ & ~0x00000001);
+            } else {
+              ensureMsgPackListIsMutable();
+              msgPackList_.addAll(other.msgPackList_);
+            }
+            onChanged();
+          }
+        } else {
+          if (!other.msgPackList_.isEmpty()) {
+            if (msgPackListBuilder_.isEmpty()) {
+              msgPackListBuilder_.dispose();
+              msgPackListBuilder_ = null;
+              msgPackList_ = other.msgPackList_;
+              bitField0_ = (bitField0_ & ~0x00000001);
+              msgPackListBuilder_ = 
+                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+                   getMsgPackListFieldBuilder() : null;
+            } else {
+              msgPackListBuilder_.addAllMessages(other.msgPackList_);
+            }
+          }
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -516,10 +572,11 @@ public final class GCGMessagePackNotifyOuterClass {
         }
         return this;
       }
+      private int bitField0_;
 
       private int serverSeq_ ;
       /**
-       * <code>uint32 server_seq = 5;</code>
+       * <code>uint32 server_seq = 2;</code>
        * @return The serverSeq.
        */
       @java.lang.Override
@@ -527,7 +584,7 @@ public final class GCGMessagePackNotifyOuterClass {
         return serverSeq_;
       }
       /**
-       * <code>uint32 server_seq = 5;</code>
+       * <code>uint32 server_seq = 2;</code>
        * @param value The serverSeq to set.
        * @return This builder for chaining.
        */
@@ -538,7 +595,7 @@ public final class GCGMessagePackNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 server_seq = 5;</code>
+       * <code>uint32 server_seq = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearServerSeq() {
@@ -548,123 +605,244 @@ public final class GCGMessagePackNotifyOuterClass {
         return this;
       }
 
-      private emu.grasscutter.net.proto.GCGMessagePackOuterClass.GCGMessagePack messagePack_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.GCGMessagePackOuterClass.GCGMessagePack, emu.grasscutter.net.proto.GCGMessagePackOuterClass.GCGMessagePack.Builder, emu.grasscutter.net.proto.GCGMessagePackOuterClass.GCGMessagePackOrBuilder> messagePackBuilder_;
-      /**
-       * <code>.GCGMessagePack message_pack = 8;</code>
-       * @return Whether the messagePack field is set.
-       */
-      public boolean hasMessagePack() {
-        return messagePackBuilder_ != null || messagePack_ != null;
+      private java.util.List<emu.grasscutter.net.proto.GCGMessagePackOuterClass.GCGMessagePack> msgPackList_ =
+        java.util.Collections.emptyList();
+      private void ensureMsgPackListIsMutable() {
+        if (!((bitField0_ & 0x00000001) != 0)) {
+          msgPackList_ = new java.util.ArrayList<emu.grasscutter.net.proto.GCGMessagePackOuterClass.GCGMessagePack>(msgPackList_);
+          bitField0_ |= 0x00000001;
+         }
       }
+
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          emu.grasscutter.net.proto.GCGMessagePackOuterClass.GCGMessagePack, emu.grasscutter.net.proto.GCGMessagePackOuterClass.GCGMessagePack.Builder, emu.grasscutter.net.proto.GCGMessagePackOuterClass.GCGMessagePackOrBuilder> msgPackListBuilder_;
+
       /**
-       * <code>.GCGMessagePack message_pack = 8;</code>
-       * @return The messagePack.
+       * <code>repeated .GCGMessagePack msg_pack_list = 12;</code>
        */
-      public emu.grasscutter.net.proto.GCGMessagePackOuterClass.GCGMessagePack getMessagePack() {
-        if (messagePackBuilder_ == null) {
-          return messagePack_ == null ? emu.grasscutter.net.proto.GCGMessagePackOuterClass.GCGMessagePack.getDefaultInstance() : messagePack_;
+      public java.util.List<emu.grasscutter.net.proto.GCGMessagePackOuterClass.GCGMessagePack> getMsgPackListList() {
+        if (msgPackListBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(msgPackList_);
         } else {
-          return messagePackBuilder_.getMessage();
+          return msgPackListBuilder_.getMessageList();
         }
       }
       /**
-       * <code>.GCGMessagePack message_pack = 8;</code>
+       * <code>repeated .GCGMessagePack msg_pack_list = 12;</code>
        */
-      public Builder setMessagePack(emu.grasscutter.net.proto.GCGMessagePackOuterClass.GCGMessagePack value) {
-        if (messagePackBuilder_ == null) {
+      public int getMsgPackListCount() {
+        if (msgPackListBuilder_ == null) {
+          return msgPackList_.size();
+        } else {
+          return msgPackListBuilder_.getCount();
+        }
+      }
+      /**
+       * <code>repeated .GCGMessagePack msg_pack_list = 12;</code>
+       */
+      public emu.grasscutter.net.proto.GCGMessagePackOuterClass.GCGMessagePack getMsgPackList(int index) {
+        if (msgPackListBuilder_ == null) {
+          return msgPackList_.get(index);
+        } else {
+          return msgPackListBuilder_.getMessage(index);
+        }
+      }
+      /**
+       * <code>repeated .GCGMessagePack msg_pack_list = 12;</code>
+       */
+      public Builder setMsgPackList(
+          int index, emu.grasscutter.net.proto.GCGMessagePackOuterClass.GCGMessagePack value) {
+        if (msgPackListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          messagePack_ = value;
+          ensureMsgPackListIsMutable();
+          msgPackList_.set(index, value);
           onChanged();
         } else {
-          messagePackBuilder_.setMessage(value);
+          msgPackListBuilder_.setMessage(index, value);
         }
-
         return this;
       }
       /**
-       * <code>.GCGMessagePack message_pack = 8;</code>
+       * <code>repeated .GCGMessagePack msg_pack_list = 12;</code>
        */
-      public Builder setMessagePack(
-          emu.grasscutter.net.proto.GCGMessagePackOuterClass.GCGMessagePack.Builder builderForValue) {
-        if (messagePackBuilder_ == null) {
-          messagePack_ = builderForValue.build();
+      public Builder setMsgPackList(
+          int index, emu.grasscutter.net.proto.GCGMessagePackOuterClass.GCGMessagePack.Builder builderForValue) {
+        if (msgPackListBuilder_ == null) {
+          ensureMsgPackListIsMutable();
+          msgPackList_.set(index, builderForValue.build());
           onChanged();
         } else {
-          messagePackBuilder_.setMessage(builderForValue.build());
+          msgPackListBuilder_.setMessage(index, builderForValue.build());
         }
-
         return this;
       }
       /**
-       * <code>.GCGMessagePack message_pack = 8;</code>
+       * <code>repeated .GCGMessagePack msg_pack_list = 12;</code>
        */
-      public Builder mergeMessagePack(emu.grasscutter.net.proto.GCGMessagePackOuterClass.GCGMessagePack value) {
-        if (messagePackBuilder_ == null) {
-          if (messagePack_ != null) {
-            messagePack_ =
-              emu.grasscutter.net.proto.GCGMessagePackOuterClass.GCGMessagePack.newBuilder(messagePack_).mergeFrom(value).buildPartial();
-          } else {
-            messagePack_ = value;
+      public Builder addMsgPackList(emu.grasscutter.net.proto.GCGMessagePackOuterClass.GCGMessagePack value) {
+        if (msgPackListBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
           }
+          ensureMsgPackListIsMutable();
+          msgPackList_.add(value);
           onChanged();
         } else {
-          messagePackBuilder_.mergeFrom(value);
+          msgPackListBuilder_.addMessage(value);
         }
-
         return this;
       }
       /**
-       * <code>.GCGMessagePack message_pack = 8;</code>
+       * <code>repeated .GCGMessagePack msg_pack_list = 12;</code>
        */
-      public Builder clearMessagePack() {
-        if (messagePackBuilder_ == null) {
-          messagePack_ = null;
+      public Builder addMsgPackList(
+          int index, emu.grasscutter.net.proto.GCGMessagePackOuterClass.GCGMessagePack value) {
+        if (msgPackListBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureMsgPackListIsMutable();
+          msgPackList_.add(index, value);
           onChanged();
         } else {
-          messagePack_ = null;
-          messagePackBuilder_ = null;
+          msgPackListBuilder_.addMessage(index, value);
         }
-
         return this;
       }
       /**
-       * <code>.GCGMessagePack message_pack = 8;</code>
+       * <code>repeated .GCGMessagePack msg_pack_list = 12;</code>
        */
-      public emu.grasscutter.net.proto.GCGMessagePackOuterClass.GCGMessagePack.Builder getMessagePackBuilder() {
-        
-        onChanged();
-        return getMessagePackFieldBuilder().getBuilder();
+      public Builder addMsgPackList(
+          emu.grasscutter.net.proto.GCGMessagePackOuterClass.GCGMessagePack.Builder builderForValue) {
+        if (msgPackListBuilder_ == null) {
+          ensureMsgPackListIsMutable();
+          msgPackList_.add(builderForValue.build());
+          onChanged();
+        } else {
+          msgPackListBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
       }
       /**
-       * <code>.GCGMessagePack message_pack = 8;</code>
+       * <code>repeated .GCGMessagePack msg_pack_list = 12;</code>
        */
-      public emu.grasscutter.net.proto.GCGMessagePackOuterClass.GCGMessagePackOrBuilder getMessagePackOrBuilder() {
-        if (messagePackBuilder_ != null) {
-          return messagePackBuilder_.getMessageOrBuilder();
+      public Builder addMsgPackList(
+          int index, emu.grasscutter.net.proto.GCGMessagePackOuterClass.GCGMessagePack.Builder builderForValue) {
+        if (msgPackListBuilder_ == null) {
+          ensureMsgPackListIsMutable();
+          msgPackList_.add(index, builderForValue.build());
+          onChanged();
         } else {
-          return messagePack_ == null ?
-              emu.grasscutter.net.proto.GCGMessagePackOuterClass.GCGMessagePack.getDefaultInstance() : messagePack_;
+          msgPackListBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .GCGMessagePack msg_pack_list = 12;</code>
+       */
+      public Builder addAllMsgPackList(
+          java.lang.Iterable<? extends emu.grasscutter.net.proto.GCGMessagePackOuterClass.GCGMessagePack> values) {
+        if (msgPackListBuilder_ == null) {
+          ensureMsgPackListIsMutable();
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, msgPackList_);
+          onChanged();
+        } else {
+          msgPackListBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .GCGMessagePack msg_pack_list = 12;</code>
+       */
+      public Builder clearMsgPackList() {
+        if (msgPackListBuilder_ == null) {
+          msgPackList_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000001);
+          onChanged();
+        } else {
+          msgPackListBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .GCGMessagePack msg_pack_list = 12;</code>
+       */
+      public Builder removeMsgPackList(int index) {
+        if (msgPackListBuilder_ == null) {
+          ensureMsgPackListIsMutable();
+          msgPackList_.remove(index);
+          onChanged();
+        } else {
+          msgPackListBuilder_.remove(index);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .GCGMessagePack msg_pack_list = 12;</code>
+       */
+      public emu.grasscutter.net.proto.GCGMessagePackOuterClass.GCGMessagePack.Builder getMsgPackListBuilder(
+          int index) {
+        return getMsgPackListFieldBuilder().getBuilder(index);
+      }
+      /**
+       * <code>repeated .GCGMessagePack msg_pack_list = 12;</code>
+       */
+      public emu.grasscutter.net.proto.GCGMessagePackOuterClass.GCGMessagePackOrBuilder getMsgPackListOrBuilder(
+          int index) {
+        if (msgPackListBuilder_ == null) {
+          return msgPackList_.get(index);  } else {
+          return msgPackListBuilder_.getMessageOrBuilder(index);
         }
       }
       /**
-       * <code>.GCGMessagePack message_pack = 8;</code>
+       * <code>repeated .GCGMessagePack msg_pack_list = 12;</code>
        */
-      private com.google.protobuf.SingleFieldBuilderV3<
+      public java.util.List<? extends emu.grasscutter.net.proto.GCGMessagePackOuterClass.GCGMessagePackOrBuilder> 
+           getMsgPackListOrBuilderList() {
+        if (msgPackListBuilder_ != null) {
+          return msgPackListBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(msgPackList_);
+        }
+      }
+      /**
+       * <code>repeated .GCGMessagePack msg_pack_list = 12;</code>
+       */
+      public emu.grasscutter.net.proto.GCGMessagePackOuterClass.GCGMessagePack.Builder addMsgPackListBuilder() {
+        return getMsgPackListFieldBuilder().addBuilder(
+            emu.grasscutter.net.proto.GCGMessagePackOuterClass.GCGMessagePack.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .GCGMessagePack msg_pack_list = 12;</code>
+       */
+      public emu.grasscutter.net.proto.GCGMessagePackOuterClass.GCGMessagePack.Builder addMsgPackListBuilder(
+          int index) {
+        return getMsgPackListFieldBuilder().addBuilder(
+            index, emu.grasscutter.net.proto.GCGMessagePackOuterClass.GCGMessagePack.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .GCGMessagePack msg_pack_list = 12;</code>
+       */
+      public java.util.List<emu.grasscutter.net.proto.GCGMessagePackOuterClass.GCGMessagePack.Builder> 
+           getMsgPackListBuilderList() {
+        return getMsgPackListFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilderV3<
           emu.grasscutter.net.proto.GCGMessagePackOuterClass.GCGMessagePack, emu.grasscutter.net.proto.GCGMessagePackOuterClass.GCGMessagePack.Builder, emu.grasscutter.net.proto.GCGMessagePackOuterClass.GCGMessagePackOrBuilder> 
-          getMessagePackFieldBuilder() {
-        if (messagePackBuilder_ == null) {
-          messagePackBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+          getMsgPackListFieldBuilder() {
+        if (msgPackListBuilder_ == null) {
+          msgPackListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
               emu.grasscutter.net.proto.GCGMessagePackOuterClass.GCGMessagePack, emu.grasscutter.net.proto.GCGMessagePackOuterClass.GCGMessagePack.Builder, emu.grasscutter.net.proto.GCGMessagePackOuterClass.GCGMessagePackOrBuilder>(
-                  getMessagePack(),
+                  msgPackList_,
+                  ((bitField0_ & 0x00000001) != 0),
                   getParentForChildren(),
                   isClean());
-          messagePack_ = null;
+          msgPackList_ = null;
         }
-        return messagePackBuilder_;
+        return msgPackListBuilder_;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -734,10 +912,10 @@ public final class GCGMessagePackNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\032GCGMessagePackNotify.proto\032\024GCGMessage" +
-      "Pack.proto\"Q\n\024GCGMessagePackNotify\022\022\n\nse" +
-      "rver_seq\030\005 \001(\r\022%\n\014message_pack\030\010 \001(\0132\017.G" +
-      "CGMessagePackB\033\n\031emu.grasscutter.net.pro" +
-      "tob\006proto3"
+      "Pack.proto\"R\n\024GCGMessagePackNotify\022\022\n\nse" +
+      "rver_seq\030\002 \001(\r\022&\n\rmsg_pack_list\030\014 \003(\0132\017." +
+      "GCGMessagePackB\033\n\031emu.grasscutter.net.pr" +
+      "otob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -749,7 +927,7 @@ public final class GCGMessagePackNotifyOuterClass {
     internal_static_GCGMessagePackNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GCGMessagePackNotify_descriptor,
-        new java.lang.String[] { "ServerSeq", "MessagePack", });
+        new java.lang.String[] { "ServerSeq", "MsgPackList", });
     emu.grasscutter.net.proto.GCGMessagePackOuterClass.getDescriptor();
   }
 

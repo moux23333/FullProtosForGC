@@ -25,12 +25,6 @@ public final class ActivityCoinInfoNotifyOuterClass {
     int getScheduleId();
 
     /**
-     * <code>uint32 activity_id = 10;</code>
-     * @return The activityId.
-     */
-    int getActivityId();
-
-    /**
      * <code>map&lt;uint32, uint32&gt; activity_coin_map = 2;</code>
      */
     int getActivityCoinMapCount();
@@ -63,12 +57,22 @@ public final class ActivityCoinInfoNotifyOuterClass {
 
     int getActivityCoinMapOrThrow(
         int key);
+
+    /**
+     * <code>uint32 activity_id = 4;</code>
+     * @return The activityId.
+     */
+    int getActivityId();
   }
   /**
    * <pre>
-   * CmdId: 2008
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 2018;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code ActivityCoinInfoNotify}
@@ -129,14 +133,14 @@ public final class ActivityCoinInfoNotifyOuterClass {
                   activityCoinMap__.getKey(), activityCoinMap__.getValue());
               break;
             }
+            case 32: {
+
+              activityId_ = input.readUInt32();
+              break;
+            }
             case 64: {
 
               scheduleId_ = input.readUInt32();
-              break;
-            }
-            case 80: {
-
-              activityId_ = input.readUInt32();
               break;
             }
             default: {
@@ -192,17 +196,6 @@ public final class ActivityCoinInfoNotifyOuterClass {
     @java.lang.Override
     public int getScheduleId() {
       return scheduleId_;
-    }
-
-    public static final int ACTIVITY_ID_FIELD_NUMBER = 10;
-    private int activityId_;
-    /**
-     * <code>uint32 activity_id = 10;</code>
-     * @return The activityId.
-     */
-    @java.lang.Override
-    public int getActivityId() {
-      return activityId_;
     }
 
     public static final int ACTIVITY_COIN_MAP_FIELD_NUMBER = 2;
@@ -286,6 +279,17 @@ public final class ActivityCoinInfoNotifyOuterClass {
       return map.get(key);
     }
 
+    public static final int ACTIVITY_ID_FIELD_NUMBER = 4;
+    private int activityId_;
+    /**
+     * <code>uint32 activity_id = 4;</code>
+     * @return The activityId.
+     */
+    @java.lang.Override
+    public int getActivityId() {
+      return activityId_;
+    }
+
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
     public final boolean isInitialized() {
@@ -306,11 +310,11 @@ public final class ActivityCoinInfoNotifyOuterClass {
           internalGetActivityCoinMap(),
           ActivityCoinMapDefaultEntryHolder.defaultEntry,
           2);
+      if (activityId_ != 0) {
+        output.writeUInt32(4, activityId_);
+      }
       if (scheduleId_ != 0) {
         output.writeUInt32(8, scheduleId_);
-      }
-      if (activityId_ != 0) {
-        output.writeUInt32(10, activityId_);
       }
       unknownFields.writeTo(output);
     }
@@ -331,13 +335,13 @@ public final class ActivityCoinInfoNotifyOuterClass {
         size += com.google.protobuf.CodedOutputStream
             .computeMessageSize(2, activityCoinMap__);
       }
+      if (activityId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(4, activityId_);
+      }
       if (scheduleId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(8, scheduleId_);
-      }
-      if (activityId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, activityId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -356,10 +360,10 @@ public final class ActivityCoinInfoNotifyOuterClass {
 
       if (getScheduleId()
           != other.getScheduleId()) return false;
-      if (getActivityId()
-          != other.getActivityId()) return false;
       if (!internalGetActivityCoinMap().equals(
           other.internalGetActivityCoinMap())) return false;
+      if (getActivityId()
+          != other.getActivityId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -373,12 +377,12 @@ public final class ActivityCoinInfoNotifyOuterClass {
       hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + SCHEDULE_ID_FIELD_NUMBER;
       hash = (53 * hash) + getScheduleId();
-      hash = (37 * hash) + ACTIVITY_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getActivityId();
       if (!internalGetActivityCoinMap().getMap().isEmpty()) {
         hash = (37 * hash) + ACTIVITY_COIN_MAP_FIELD_NUMBER;
         hash = (53 * hash) + internalGetActivityCoinMap().hashCode();
       }
+      hash = (37 * hash) + ACTIVITY_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getActivityId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -476,9 +480,13 @@ public final class ActivityCoinInfoNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 2008
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 2018;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code ActivityCoinInfoNotify}
@@ -542,9 +550,9 @@ public final class ActivityCoinInfoNotifyOuterClass {
         super.clear();
         scheduleId_ = 0;
 
+        internalGetMutableActivityCoinMap().clear();
         activityId_ = 0;
 
-        internalGetMutableActivityCoinMap().clear();
         return this;
       }
 
@@ -573,9 +581,9 @@ public final class ActivityCoinInfoNotifyOuterClass {
         emu.grasscutter.net.proto.ActivityCoinInfoNotifyOuterClass.ActivityCoinInfoNotify result = new emu.grasscutter.net.proto.ActivityCoinInfoNotifyOuterClass.ActivityCoinInfoNotify(this);
         int from_bitField0_ = bitField0_;
         result.scheduleId_ = scheduleId_;
-        result.activityId_ = activityId_;
         result.activityCoinMap_ = internalGetActivityCoinMap();
         result.activityCoinMap_.makeImmutable();
+        result.activityId_ = activityId_;
         onBuilt();
         return result;
       }
@@ -627,11 +635,11 @@ public final class ActivityCoinInfoNotifyOuterClass {
         if (other.getScheduleId() != 0) {
           setScheduleId(other.getScheduleId());
         }
+        internalGetMutableActivityCoinMap().mergeFrom(
+            other.internalGetActivityCoinMap());
         if (other.getActivityId() != 0) {
           setActivityId(other.getActivityId());
         }
-        internalGetMutableActivityCoinMap().mergeFrom(
-            other.internalGetActivityCoinMap());
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
         return this;
@@ -689,37 +697,6 @@ public final class ActivityCoinInfoNotifyOuterClass {
       public Builder clearScheduleId() {
         
         scheduleId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int activityId_ ;
-      /**
-       * <code>uint32 activity_id = 10;</code>
-       * @return The activityId.
-       */
-      @java.lang.Override
-      public int getActivityId() {
-        return activityId_;
-      }
-      /**
-       * <code>uint32 activity_id = 10;</code>
-       * @param value The activityId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setActivityId(int value) {
-        
-        activityId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 activity_id = 10;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearActivityId() {
-        
-        activityId_ = 0;
         onChanged();
         return this;
       }
@@ -851,6 +828,37 @@ public final class ActivityCoinInfoNotifyOuterClass {
             .putAll(values);
         return this;
       }
+
+      private int activityId_ ;
+      /**
+       * <code>uint32 activity_id = 4;</code>
+       * @return The activityId.
+       */
+      @java.lang.Override
+      public int getActivityId() {
+        return activityId_;
+      }
+      /**
+       * <code>uint32 activity_id = 4;</code>
+       * @param value The activityId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setActivityId(int value) {
+        
+        activityId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 activity_id = 4;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearActivityId() {
+        
+        activityId_ = 0;
+        onChanged();
+        return this;
+      }
       @java.lang.Override
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
@@ -924,10 +932,10 @@ public final class ActivityCoinInfoNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\034ActivityCoinInfoNotify.proto\"\303\001\n\026Activ" +
-      "ityCoinInfoNotify\022\023\n\013schedule_id\030\010 \001(\r\022\023" +
-      "\n\013activity_id\030\n \001(\r\022G\n\021activity_coin_map" +
-      "\030\002 \003(\0132,.ActivityCoinInfoNotify.Activity" +
-      "CoinMapEntry\0326\n\024ActivityCoinMapEntry\022\013\n\003" +
+      "ityCoinInfoNotify\022\023\n\013schedule_id\030\010 \001(\r\022G" +
+      "\n\021activity_coin_map\030\002 \003(\0132,.ActivityCoin" +
+      "InfoNotify.ActivityCoinMapEntry\022\023\n\013activ" +
+      "ity_id\030\004 \001(\r\0326\n\024ActivityCoinMapEntry\022\013\n\003" +
       "key\030\001 \001(\r\022\r\n\005value\030\002 \001(\r:\0028\001B\033\n\031emu.gras" +
       "scutter.net.protob\006proto3"
     };
@@ -940,7 +948,7 @@ public final class ActivityCoinInfoNotifyOuterClass {
     internal_static_ActivityCoinInfoNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ActivityCoinInfoNotify_descriptor,
-        new java.lang.String[] { "ScheduleId", "ActivityId", "ActivityCoinMap", });
+        new java.lang.String[] { "ScheduleId", "ActivityCoinMap", "ActivityId", });
     internal_static_ActivityCoinInfoNotify_ActivityCoinMapEntry_descriptor =
       internal_static_ActivityCoinInfoNotify_descriptor.getNestedTypes().get(0);
     internal_static_ActivityCoinInfoNotify_ActivityCoinMapEntry_fieldAccessorTable = new

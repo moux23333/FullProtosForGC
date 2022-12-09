@@ -19,42 +19,42 @@ public final class SumoTeamDataOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated uint32 skill_id_list = 14;</code>
+     * <code>repeated uint32 skill_id_list = 12;</code>
      * @return A list containing the skillIdList.
      */
     java.util.List<java.lang.Integer> getSkillIdListList();
     /**
-     * <code>repeated uint32 skill_id_list = 14;</code>
+     * <code>repeated uint32 skill_id_list = 12;</code>
      * @return The count of skillIdList.
      */
     int getSkillIdListCount();
     /**
-     * <code>repeated uint32 skill_id_list = 14;</code>
+     * <code>repeated uint32 skill_id_list = 12;</code>
      * @param index The index of the element to return.
      * @return The skillIdList at the given index.
      */
     int getSkillIdList(int index);
 
     /**
-     * <code>repeated .SumoAvatarInfo avatar_info_list = 3;</code>
+     * <code>repeated .SumoAvatarInfo avatar_info_list = 4;</code>
      */
     java.util.List<emu.grasscutter.net.proto.SumoAvatarInfoOuterClass.SumoAvatarInfo> 
         getAvatarInfoListList();
     /**
-     * <code>repeated .SumoAvatarInfo avatar_info_list = 3;</code>
+     * <code>repeated .SumoAvatarInfo avatar_info_list = 4;</code>
      */
     emu.grasscutter.net.proto.SumoAvatarInfoOuterClass.SumoAvatarInfo getAvatarInfoList(int index);
     /**
-     * <code>repeated .SumoAvatarInfo avatar_info_list = 3;</code>
+     * <code>repeated .SumoAvatarInfo avatar_info_list = 4;</code>
      */
     int getAvatarInfoListCount();
     /**
-     * <code>repeated .SumoAvatarInfo avatar_info_list = 3;</code>
+     * <code>repeated .SumoAvatarInfo avatar_info_list = 4;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.SumoAvatarInfoOuterClass.SumoAvatarInfoOrBuilder> 
         getAvatarInfoListOrBuilderList();
     /**
-     * <code>repeated .SumoAvatarInfo avatar_info_list = 3;</code>
+     * <code>repeated .SumoAvatarInfo avatar_info_list = 4;</code>
      */
     emu.grasscutter.net.proto.SumoAvatarInfoOuterClass.SumoAvatarInfoOrBuilder getAvatarInfoListOrBuilder(
         int index);
@@ -107,7 +107,7 @@ public final class SumoTeamDataOuterClass {
             case 0:
               done = true;
               break;
-            case 26: {
+            case 34: {
               if (!((mutable_bitField0_ & 0x00000002) != 0)) {
                 avatarInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.SumoAvatarInfoOuterClass.SumoAvatarInfo>();
                 mutable_bitField0_ |= 0x00000002;
@@ -116,7 +116,7 @@ public final class SumoTeamDataOuterClass {
                   input.readMessage(emu.grasscutter.net.proto.SumoAvatarInfoOuterClass.SumoAvatarInfo.parser(), extensionRegistry));
               break;
             }
-            case 112: {
+            case 96: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 skillIdList_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
@@ -124,7 +124,7 @@ public final class SumoTeamDataOuterClass {
               skillIdList_.addInt(input.readUInt32());
               break;
             }
-            case 114: {
+            case 98: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -175,10 +175,10 @@ public final class SumoTeamDataOuterClass {
               emu.grasscutter.net.proto.SumoTeamDataOuterClass.SumoTeamData.class, emu.grasscutter.net.proto.SumoTeamDataOuterClass.SumoTeamData.Builder.class);
     }
 
-    public static final int SKILL_ID_LIST_FIELD_NUMBER = 14;
+    public static final int SKILL_ID_LIST_FIELD_NUMBER = 12;
     private com.google.protobuf.Internal.IntList skillIdList_;
     /**
-     * <code>repeated uint32 skill_id_list = 14;</code>
+     * <code>repeated uint32 skill_id_list = 12;</code>
      * @return A list containing the skillIdList.
      */
     @java.lang.Override
@@ -187,14 +187,14 @@ public final class SumoTeamDataOuterClass {
       return skillIdList_;
     }
     /**
-     * <code>repeated uint32 skill_id_list = 14;</code>
+     * <code>repeated uint32 skill_id_list = 12;</code>
      * @return The count of skillIdList.
      */
     public int getSkillIdListCount() {
       return skillIdList_.size();
     }
     /**
-     * <code>repeated uint32 skill_id_list = 14;</code>
+     * <code>repeated uint32 skill_id_list = 12;</code>
      * @param index The index of the element to return.
      * @return The skillIdList at the given index.
      */
@@ -203,17 +203,17 @@ public final class SumoTeamDataOuterClass {
     }
     private int skillIdListMemoizedSerializedSize = -1;
 
-    public static final int AVATAR_INFO_LIST_FIELD_NUMBER = 3;
+    public static final int AVATAR_INFO_LIST_FIELD_NUMBER = 4;
     private java.util.List<emu.grasscutter.net.proto.SumoAvatarInfoOuterClass.SumoAvatarInfo> avatarInfoList_;
     /**
-     * <code>repeated .SumoAvatarInfo avatar_info_list = 3;</code>
+     * <code>repeated .SumoAvatarInfo avatar_info_list = 4;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.SumoAvatarInfoOuterClass.SumoAvatarInfo> getAvatarInfoListList() {
       return avatarInfoList_;
     }
     /**
-     * <code>repeated .SumoAvatarInfo avatar_info_list = 3;</code>
+     * <code>repeated .SumoAvatarInfo avatar_info_list = 4;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.SumoAvatarInfoOuterClass.SumoAvatarInfoOrBuilder> 
@@ -221,21 +221,21 @@ public final class SumoTeamDataOuterClass {
       return avatarInfoList_;
     }
     /**
-     * <code>repeated .SumoAvatarInfo avatar_info_list = 3;</code>
+     * <code>repeated .SumoAvatarInfo avatar_info_list = 4;</code>
      */
     @java.lang.Override
     public int getAvatarInfoListCount() {
       return avatarInfoList_.size();
     }
     /**
-     * <code>repeated .SumoAvatarInfo avatar_info_list = 3;</code>
+     * <code>repeated .SumoAvatarInfo avatar_info_list = 4;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.SumoAvatarInfoOuterClass.SumoAvatarInfo getAvatarInfoList(int index) {
       return avatarInfoList_.get(index);
     }
     /**
-     * <code>repeated .SumoAvatarInfo avatar_info_list = 3;</code>
+     * <code>repeated .SumoAvatarInfo avatar_info_list = 4;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.SumoAvatarInfoOuterClass.SumoAvatarInfoOrBuilder getAvatarInfoListOrBuilder(
@@ -259,10 +259,10 @@ public final class SumoTeamDataOuterClass {
                         throws java.io.IOException {
       getSerializedSize();
       for (int i = 0; i < avatarInfoList_.size(); i++) {
-        output.writeMessage(3, avatarInfoList_.get(i));
+        output.writeMessage(4, avatarInfoList_.get(i));
       }
       if (getSkillIdListList().size() > 0) {
-        output.writeUInt32NoTag(114);
+        output.writeUInt32NoTag(98);
         output.writeUInt32NoTag(skillIdListMemoizedSerializedSize);
       }
       for (int i = 0; i < skillIdList_.size(); i++) {
@@ -279,7 +279,7 @@ public final class SumoTeamDataOuterClass {
       size = 0;
       for (int i = 0; i < avatarInfoList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(3, avatarInfoList_.get(i));
+          .computeMessageSize(4, avatarInfoList_.get(i));
       }
       {
         int dataSize = 0;
@@ -638,7 +638,7 @@ public final class SumoTeamDataOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 skill_id_list = 14;</code>
+       * <code>repeated uint32 skill_id_list = 12;</code>
        * @return A list containing the skillIdList.
        */
       public java.util.List<java.lang.Integer>
@@ -647,14 +647,14 @@ public final class SumoTeamDataOuterClass {
                  java.util.Collections.unmodifiableList(skillIdList_) : skillIdList_;
       }
       /**
-       * <code>repeated uint32 skill_id_list = 14;</code>
+       * <code>repeated uint32 skill_id_list = 12;</code>
        * @return The count of skillIdList.
        */
       public int getSkillIdListCount() {
         return skillIdList_.size();
       }
       /**
-       * <code>repeated uint32 skill_id_list = 14;</code>
+       * <code>repeated uint32 skill_id_list = 12;</code>
        * @param index The index of the element to return.
        * @return The skillIdList at the given index.
        */
@@ -662,7 +662,7 @@ public final class SumoTeamDataOuterClass {
         return skillIdList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 skill_id_list = 14;</code>
+       * <code>repeated uint32 skill_id_list = 12;</code>
        * @param index The index to set the value at.
        * @param value The skillIdList to set.
        * @return This builder for chaining.
@@ -675,7 +675,7 @@ public final class SumoTeamDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 skill_id_list = 14;</code>
+       * <code>repeated uint32 skill_id_list = 12;</code>
        * @param value The skillIdList to add.
        * @return This builder for chaining.
        */
@@ -686,7 +686,7 @@ public final class SumoTeamDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 skill_id_list = 14;</code>
+       * <code>repeated uint32 skill_id_list = 12;</code>
        * @param values The skillIdList to add.
        * @return This builder for chaining.
        */
@@ -699,7 +699,7 @@ public final class SumoTeamDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 skill_id_list = 14;</code>
+       * <code>repeated uint32 skill_id_list = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearSkillIdList() {
@@ -722,7 +722,7 @@ public final class SumoTeamDataOuterClass {
           emu.grasscutter.net.proto.SumoAvatarInfoOuterClass.SumoAvatarInfo, emu.grasscutter.net.proto.SumoAvatarInfoOuterClass.SumoAvatarInfo.Builder, emu.grasscutter.net.proto.SumoAvatarInfoOuterClass.SumoAvatarInfoOrBuilder> avatarInfoListBuilder_;
 
       /**
-       * <code>repeated .SumoAvatarInfo avatar_info_list = 3;</code>
+       * <code>repeated .SumoAvatarInfo avatar_info_list = 4;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.SumoAvatarInfoOuterClass.SumoAvatarInfo> getAvatarInfoListList() {
         if (avatarInfoListBuilder_ == null) {
@@ -732,7 +732,7 @@ public final class SumoTeamDataOuterClass {
         }
       }
       /**
-       * <code>repeated .SumoAvatarInfo avatar_info_list = 3;</code>
+       * <code>repeated .SumoAvatarInfo avatar_info_list = 4;</code>
        */
       public int getAvatarInfoListCount() {
         if (avatarInfoListBuilder_ == null) {
@@ -742,7 +742,7 @@ public final class SumoTeamDataOuterClass {
         }
       }
       /**
-       * <code>repeated .SumoAvatarInfo avatar_info_list = 3;</code>
+       * <code>repeated .SumoAvatarInfo avatar_info_list = 4;</code>
        */
       public emu.grasscutter.net.proto.SumoAvatarInfoOuterClass.SumoAvatarInfo getAvatarInfoList(int index) {
         if (avatarInfoListBuilder_ == null) {
@@ -752,7 +752,7 @@ public final class SumoTeamDataOuterClass {
         }
       }
       /**
-       * <code>repeated .SumoAvatarInfo avatar_info_list = 3;</code>
+       * <code>repeated .SumoAvatarInfo avatar_info_list = 4;</code>
        */
       public Builder setAvatarInfoList(
           int index, emu.grasscutter.net.proto.SumoAvatarInfoOuterClass.SumoAvatarInfo value) {
@@ -769,7 +769,7 @@ public final class SumoTeamDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated .SumoAvatarInfo avatar_info_list = 3;</code>
+       * <code>repeated .SumoAvatarInfo avatar_info_list = 4;</code>
        */
       public Builder setAvatarInfoList(
           int index, emu.grasscutter.net.proto.SumoAvatarInfoOuterClass.SumoAvatarInfo.Builder builderForValue) {
@@ -783,7 +783,7 @@ public final class SumoTeamDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated .SumoAvatarInfo avatar_info_list = 3;</code>
+       * <code>repeated .SumoAvatarInfo avatar_info_list = 4;</code>
        */
       public Builder addAvatarInfoList(emu.grasscutter.net.proto.SumoAvatarInfoOuterClass.SumoAvatarInfo value) {
         if (avatarInfoListBuilder_ == null) {
@@ -799,7 +799,7 @@ public final class SumoTeamDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated .SumoAvatarInfo avatar_info_list = 3;</code>
+       * <code>repeated .SumoAvatarInfo avatar_info_list = 4;</code>
        */
       public Builder addAvatarInfoList(
           int index, emu.grasscutter.net.proto.SumoAvatarInfoOuterClass.SumoAvatarInfo value) {
@@ -816,7 +816,7 @@ public final class SumoTeamDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated .SumoAvatarInfo avatar_info_list = 3;</code>
+       * <code>repeated .SumoAvatarInfo avatar_info_list = 4;</code>
        */
       public Builder addAvatarInfoList(
           emu.grasscutter.net.proto.SumoAvatarInfoOuterClass.SumoAvatarInfo.Builder builderForValue) {
@@ -830,7 +830,7 @@ public final class SumoTeamDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated .SumoAvatarInfo avatar_info_list = 3;</code>
+       * <code>repeated .SumoAvatarInfo avatar_info_list = 4;</code>
        */
       public Builder addAvatarInfoList(
           int index, emu.grasscutter.net.proto.SumoAvatarInfoOuterClass.SumoAvatarInfo.Builder builderForValue) {
@@ -844,7 +844,7 @@ public final class SumoTeamDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated .SumoAvatarInfo avatar_info_list = 3;</code>
+       * <code>repeated .SumoAvatarInfo avatar_info_list = 4;</code>
        */
       public Builder addAllAvatarInfoList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.SumoAvatarInfoOuterClass.SumoAvatarInfo> values) {
@@ -859,7 +859,7 @@ public final class SumoTeamDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated .SumoAvatarInfo avatar_info_list = 3;</code>
+       * <code>repeated .SumoAvatarInfo avatar_info_list = 4;</code>
        */
       public Builder clearAvatarInfoList() {
         if (avatarInfoListBuilder_ == null) {
@@ -872,7 +872,7 @@ public final class SumoTeamDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated .SumoAvatarInfo avatar_info_list = 3;</code>
+       * <code>repeated .SumoAvatarInfo avatar_info_list = 4;</code>
        */
       public Builder removeAvatarInfoList(int index) {
         if (avatarInfoListBuilder_ == null) {
@@ -885,14 +885,14 @@ public final class SumoTeamDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated .SumoAvatarInfo avatar_info_list = 3;</code>
+       * <code>repeated .SumoAvatarInfo avatar_info_list = 4;</code>
        */
       public emu.grasscutter.net.proto.SumoAvatarInfoOuterClass.SumoAvatarInfo.Builder getAvatarInfoListBuilder(
           int index) {
         return getAvatarInfoListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .SumoAvatarInfo avatar_info_list = 3;</code>
+       * <code>repeated .SumoAvatarInfo avatar_info_list = 4;</code>
        */
       public emu.grasscutter.net.proto.SumoAvatarInfoOuterClass.SumoAvatarInfoOrBuilder getAvatarInfoListOrBuilder(
           int index) {
@@ -902,7 +902,7 @@ public final class SumoTeamDataOuterClass {
         }
       }
       /**
-       * <code>repeated .SumoAvatarInfo avatar_info_list = 3;</code>
+       * <code>repeated .SumoAvatarInfo avatar_info_list = 4;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.SumoAvatarInfoOuterClass.SumoAvatarInfoOrBuilder> 
            getAvatarInfoListOrBuilderList() {
@@ -913,14 +913,14 @@ public final class SumoTeamDataOuterClass {
         }
       }
       /**
-       * <code>repeated .SumoAvatarInfo avatar_info_list = 3;</code>
+       * <code>repeated .SumoAvatarInfo avatar_info_list = 4;</code>
        */
       public emu.grasscutter.net.proto.SumoAvatarInfoOuterClass.SumoAvatarInfo.Builder addAvatarInfoListBuilder() {
         return getAvatarInfoListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.SumoAvatarInfoOuterClass.SumoAvatarInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .SumoAvatarInfo avatar_info_list = 3;</code>
+       * <code>repeated .SumoAvatarInfo avatar_info_list = 4;</code>
        */
       public emu.grasscutter.net.proto.SumoAvatarInfoOuterClass.SumoAvatarInfo.Builder addAvatarInfoListBuilder(
           int index) {
@@ -928,7 +928,7 @@ public final class SumoTeamDataOuterClass {
             index, emu.grasscutter.net.proto.SumoAvatarInfoOuterClass.SumoAvatarInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .SumoAvatarInfo avatar_info_list = 3;</code>
+       * <code>repeated .SumoAvatarInfo avatar_info_list = 4;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.SumoAvatarInfoOuterClass.SumoAvatarInfo.Builder> 
            getAvatarInfoListBuilderList() {
@@ -1016,8 +1016,8 @@ public final class SumoTeamDataOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\022SumoTeamData.proto\032\024SumoAvatarInfo.pro" +
-      "to\"P\n\014SumoTeamData\022\025\n\rskill_id_list\030\016 \003(" +
-      "\r\022)\n\020avatar_info_list\030\003 \003(\0132\017.SumoAvatar" +
+      "to\"P\n\014SumoTeamData\022\025\n\rskill_id_list\030\014 \003(" +
+      "\r\022)\n\020avatar_info_list\030\004 \003(\0132\017.SumoAvatar" +
       "InfoB\033\n\031emu.grasscutter.net.protob\006proto" +
       "3"
     };

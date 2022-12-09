@@ -19,22 +19,22 @@ public final class SceneGalleryInstableSprayBuffInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
+     * <code>uint64 Unk3300_KKDFLBMKGEF = 3;</code>
+     * @return The unk3300KKDFLBMKGEF.
+     */
+    long getUnk3300KKDFLBMKGEF();
+
+    /**
      * <code>uint32 buff_id = 6;</code>
      * @return The buffId.
      */
     int getBuffId();
 
     /**
-     * <code>uint64 buff_end_time = 9;</code>
-     * @return The buffEndTime.
+     * <code>uint64 Unk3300_EPHAABKNLHC = 2;</code>
+     * @return The unk3300EPHAABKNLHC.
      */
-    long getBuffEndTime();
-
-    /**
-     * <code>uint64 buff_max_time = 4;</code>
-     * @return The buffMaxTime.
-     */
-    long getBuffMaxTime();
+    long getUnk3300EPHAABKNLHC();
   }
   /**
    * Protobuf type {@code SceneGalleryInstableSprayBuffInfo}
@@ -81,19 +81,19 @@ public final class SceneGalleryInstableSprayBuffInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 32: {
+            case 16: {
 
-              buffMaxTime_ = input.readUInt64();
+              unk3300EPHAABKNLHC_ = input.readUInt64();
+              break;
+            }
+            case 24: {
+
+              unk3300KKDFLBMKGEF_ = input.readUInt64();
               break;
             }
             case 48: {
 
               buffId_ = input.readUInt32();
-              break;
-            }
-            case 72: {
-
-              buffEndTime_ = input.readUInt64();
               break;
             }
             default: {
@@ -128,6 +128,17 @@ public final class SceneGalleryInstableSprayBuffInfoOuterClass {
               emu.grasscutter.net.proto.SceneGalleryInstableSprayBuffInfoOuterClass.SceneGalleryInstableSprayBuffInfo.class, emu.grasscutter.net.proto.SceneGalleryInstableSprayBuffInfoOuterClass.SceneGalleryInstableSprayBuffInfo.Builder.class);
     }
 
+    public static final int UNK3300_KKDFLBMKGEF_FIELD_NUMBER = 3;
+    private long unk3300KKDFLBMKGEF_;
+    /**
+     * <code>uint64 Unk3300_KKDFLBMKGEF = 3;</code>
+     * @return The unk3300KKDFLBMKGEF.
+     */
+    @java.lang.Override
+    public long getUnk3300KKDFLBMKGEF() {
+      return unk3300KKDFLBMKGEF_;
+    }
+
     public static final int BUFF_ID_FIELD_NUMBER = 6;
     private int buffId_;
     /**
@@ -139,26 +150,15 @@ public final class SceneGalleryInstableSprayBuffInfoOuterClass {
       return buffId_;
     }
 
-    public static final int BUFF_END_TIME_FIELD_NUMBER = 9;
-    private long buffEndTime_;
+    public static final int UNK3300_EPHAABKNLHC_FIELD_NUMBER = 2;
+    private long unk3300EPHAABKNLHC_;
     /**
-     * <code>uint64 buff_end_time = 9;</code>
-     * @return The buffEndTime.
+     * <code>uint64 Unk3300_EPHAABKNLHC = 2;</code>
+     * @return The unk3300EPHAABKNLHC.
      */
     @java.lang.Override
-    public long getBuffEndTime() {
-      return buffEndTime_;
-    }
-
-    public static final int BUFF_MAX_TIME_FIELD_NUMBER = 4;
-    private long buffMaxTime_;
-    /**
-     * <code>uint64 buff_max_time = 4;</code>
-     * @return The buffMaxTime.
-     */
-    @java.lang.Override
-    public long getBuffMaxTime() {
-      return buffMaxTime_;
+    public long getUnk3300EPHAABKNLHC() {
+      return unk3300EPHAABKNLHC_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -175,14 +175,14 @@ public final class SceneGalleryInstableSprayBuffInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (buffMaxTime_ != 0L) {
-        output.writeUInt64(4, buffMaxTime_);
+      if (unk3300EPHAABKNLHC_ != 0L) {
+        output.writeUInt64(2, unk3300EPHAABKNLHC_);
+      }
+      if (unk3300KKDFLBMKGEF_ != 0L) {
+        output.writeUInt64(3, unk3300KKDFLBMKGEF_);
       }
       if (buffId_ != 0) {
         output.writeUInt32(6, buffId_);
-      }
-      if (buffEndTime_ != 0L) {
-        output.writeUInt64(9, buffEndTime_);
       }
       unknownFields.writeTo(output);
     }
@@ -193,17 +193,17 @@ public final class SceneGalleryInstableSprayBuffInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (buffMaxTime_ != 0L) {
+      if (unk3300EPHAABKNLHC_ != 0L) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt64Size(4, buffMaxTime_);
+          .computeUInt64Size(2, unk3300EPHAABKNLHC_);
+      }
+      if (unk3300KKDFLBMKGEF_ != 0L) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt64Size(3, unk3300KKDFLBMKGEF_);
       }
       if (buffId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(6, buffId_);
-      }
-      if (buffEndTime_ != 0L) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt64Size(9, buffEndTime_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -220,12 +220,12 @@ public final class SceneGalleryInstableSprayBuffInfoOuterClass {
       }
       emu.grasscutter.net.proto.SceneGalleryInstableSprayBuffInfoOuterClass.SceneGalleryInstableSprayBuffInfo other = (emu.grasscutter.net.proto.SceneGalleryInstableSprayBuffInfoOuterClass.SceneGalleryInstableSprayBuffInfo) obj;
 
+      if (getUnk3300KKDFLBMKGEF()
+          != other.getUnk3300KKDFLBMKGEF()) return false;
       if (getBuffId()
           != other.getBuffId()) return false;
-      if (getBuffEndTime()
-          != other.getBuffEndTime()) return false;
-      if (getBuffMaxTime()
-          != other.getBuffMaxTime()) return false;
+      if (getUnk3300EPHAABKNLHC()
+          != other.getUnk3300EPHAABKNLHC()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -237,14 +237,14 @@ public final class SceneGalleryInstableSprayBuffInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + UNK3300_KKDFLBMKGEF_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
+          getUnk3300KKDFLBMKGEF());
       hash = (37 * hash) + BUFF_ID_FIELD_NUMBER;
       hash = (53 * hash) + getBuffId();
-      hash = (37 * hash) + BUFF_END_TIME_FIELD_NUMBER;
+      hash = (37 * hash) + UNK3300_EPHAABKNLHC_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-          getBuffEndTime());
-      hash = (37 * hash) + BUFF_MAX_TIME_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-          getBuffMaxTime());
+          getUnk3300EPHAABKNLHC());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -378,11 +378,11 @@ public final class SceneGalleryInstableSprayBuffInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        unk3300KKDFLBMKGEF_ = 0L;
+
         buffId_ = 0;
 
-        buffEndTime_ = 0L;
-
-        buffMaxTime_ = 0L;
+        unk3300EPHAABKNLHC_ = 0L;
 
         return this;
       }
@@ -410,9 +410,9 @@ public final class SceneGalleryInstableSprayBuffInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.SceneGalleryInstableSprayBuffInfoOuterClass.SceneGalleryInstableSprayBuffInfo buildPartial() {
         emu.grasscutter.net.proto.SceneGalleryInstableSprayBuffInfoOuterClass.SceneGalleryInstableSprayBuffInfo result = new emu.grasscutter.net.proto.SceneGalleryInstableSprayBuffInfoOuterClass.SceneGalleryInstableSprayBuffInfo(this);
+        result.unk3300KKDFLBMKGEF_ = unk3300KKDFLBMKGEF_;
         result.buffId_ = buffId_;
-        result.buffEndTime_ = buffEndTime_;
-        result.buffMaxTime_ = buffMaxTime_;
+        result.unk3300EPHAABKNLHC_ = unk3300EPHAABKNLHC_;
         onBuilt();
         return result;
       }
@@ -461,14 +461,14 @@ public final class SceneGalleryInstableSprayBuffInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.SceneGalleryInstableSprayBuffInfoOuterClass.SceneGalleryInstableSprayBuffInfo other) {
         if (other == emu.grasscutter.net.proto.SceneGalleryInstableSprayBuffInfoOuterClass.SceneGalleryInstableSprayBuffInfo.getDefaultInstance()) return this;
+        if (other.getUnk3300KKDFLBMKGEF() != 0L) {
+          setUnk3300KKDFLBMKGEF(other.getUnk3300KKDFLBMKGEF());
+        }
         if (other.getBuffId() != 0) {
           setBuffId(other.getBuffId());
         }
-        if (other.getBuffEndTime() != 0L) {
-          setBuffEndTime(other.getBuffEndTime());
-        }
-        if (other.getBuffMaxTime() != 0L) {
-          setBuffMaxTime(other.getBuffMaxTime());
+        if (other.getUnk3300EPHAABKNLHC() != 0L) {
+          setUnk3300EPHAABKNLHC(other.getUnk3300EPHAABKNLHC());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -496,6 +496,37 @@ public final class SceneGalleryInstableSprayBuffInfoOuterClass {
             mergeFrom(parsedMessage);
           }
         }
+        return this;
+      }
+
+      private long unk3300KKDFLBMKGEF_ ;
+      /**
+       * <code>uint64 Unk3300_KKDFLBMKGEF = 3;</code>
+       * @return The unk3300KKDFLBMKGEF.
+       */
+      @java.lang.Override
+      public long getUnk3300KKDFLBMKGEF() {
+        return unk3300KKDFLBMKGEF_;
+      }
+      /**
+       * <code>uint64 Unk3300_KKDFLBMKGEF = 3;</code>
+       * @param value The unk3300KKDFLBMKGEF to set.
+       * @return This builder for chaining.
+       */
+      public Builder setUnk3300KKDFLBMKGEF(long value) {
+        
+        unk3300KKDFLBMKGEF_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint64 Unk3300_KKDFLBMKGEF = 3;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearUnk3300KKDFLBMKGEF() {
+        
+        unk3300KKDFLBMKGEF_ = 0L;
+        onChanged();
         return this;
       }
 
@@ -530,64 +561,33 @@ public final class SceneGalleryInstableSprayBuffInfoOuterClass {
         return this;
       }
 
-      private long buffEndTime_ ;
+      private long unk3300EPHAABKNLHC_ ;
       /**
-       * <code>uint64 buff_end_time = 9;</code>
-       * @return The buffEndTime.
+       * <code>uint64 Unk3300_EPHAABKNLHC = 2;</code>
+       * @return The unk3300EPHAABKNLHC.
        */
       @java.lang.Override
-      public long getBuffEndTime() {
-        return buffEndTime_;
+      public long getUnk3300EPHAABKNLHC() {
+        return unk3300EPHAABKNLHC_;
       }
       /**
-       * <code>uint64 buff_end_time = 9;</code>
-       * @param value The buffEndTime to set.
+       * <code>uint64 Unk3300_EPHAABKNLHC = 2;</code>
+       * @param value The unk3300EPHAABKNLHC to set.
        * @return This builder for chaining.
        */
-      public Builder setBuffEndTime(long value) {
+      public Builder setUnk3300EPHAABKNLHC(long value) {
         
-        buffEndTime_ = value;
+        unk3300EPHAABKNLHC_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint64 buff_end_time = 9;</code>
+       * <code>uint64 Unk3300_EPHAABKNLHC = 2;</code>
        * @return This builder for chaining.
        */
-      public Builder clearBuffEndTime() {
+      public Builder clearUnk3300EPHAABKNLHC() {
         
-        buffEndTime_ = 0L;
-        onChanged();
-        return this;
-      }
-
-      private long buffMaxTime_ ;
-      /**
-       * <code>uint64 buff_max_time = 4;</code>
-       * @return The buffMaxTime.
-       */
-      @java.lang.Override
-      public long getBuffMaxTime() {
-        return buffMaxTime_;
-      }
-      /**
-       * <code>uint64 buff_max_time = 4;</code>
-       * @param value The buffMaxTime to set.
-       * @return This builder for chaining.
-       */
-      public Builder setBuffMaxTime(long value) {
-        
-        buffMaxTime_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint64 buff_max_time = 4;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearBuffMaxTime() {
-        
-        buffMaxTime_ = 0L;
+        unk3300EPHAABKNLHC_ = 0L;
         onChanged();
         return this;
       }
@@ -659,10 +659,10 @@ public final class SceneGalleryInstableSprayBuffInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\'SceneGalleryInstableSprayBuffInfo.prot" +
-      "o\"b\n!SceneGalleryInstableSprayBuffInfo\022\017" +
-      "\n\007buff_id\030\006 \001(\r\022\025\n\rbuff_end_time\030\t \001(\004\022\025" +
-      "\n\rbuff_max_time\030\004 \001(\004B\033\n\031emu.grasscutter" +
-      ".net.protob\006proto3"
+      "o\"n\n!SceneGalleryInstableSprayBuffInfo\022\033" +
+      "\n\023Unk3300_KKDFLBMKGEF\030\003 \001(\004\022\017\n\007buff_id\030\006" +
+      " \001(\r\022\033\n\023Unk3300_EPHAABKNLHC\030\002 \001(\004B\033\n\031emu" +
+      ".grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -673,7 +673,7 @@ public final class SceneGalleryInstableSprayBuffInfoOuterClass {
     internal_static_SceneGalleryInstableSprayBuffInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SceneGalleryInstableSprayBuffInfo_descriptor,
-        new java.lang.String[] { "BuffId", "BuffEndTime", "BuffMaxTime", });
+        new java.lang.String[] { "Unk3300KKDFLBMKGEF", "BuffId", "Unk3300EPHAABKNLHC", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

@@ -19,51 +19,51 @@ public final class AbilityMixinFireworksLauncherOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 invoke_type = 2;</code>
-     * @return The invokeType.
+     * <code>uint32 Unk3300_FHGLEJNJIHK = 5;</code>
+     * @return The unk3300FHGLEJNJIHK.
      */
-    int getInvokeType();
+    int getUnk3300FHGLEJNJIHK();
 
     /**
-     * <code>uint32 start_count_down_time = 3;</code>
-     * @return The startCountDownTime.
+     * <code>uint32 Unk3300_BFJBDJLAOJL = 4;</code>
+     * @return The unk3300BFJBDJLAOJL.
      */
-    int getStartCountDownTime();
+    int getUnk3300BFJBDJLAOJL();
 
     /**
-     * <code>uint32 fired_bullet_count = 1;</code>
-     * @return The firedBulletCount.
+     * <code>uint32 Unk3300_LPPKOFHKCPH = 7;</code>
+     * @return The unk3300LPPKOFHKCPH.
      */
-    int getFiredBulletCount();
+    int getUnk3300LPPKOFHKCPH();
 
     /**
-     * <code>uint32 phase = 6;</code>
-     * @return The phase.
+     * <code>uint32 Unk3300_BDGCGLGNAIB = 3;</code>
+     * @return The unk3300BDGCGLGNAIB.
      */
-    int getPhase();
+    int getUnk3300BDGCGLGNAIB();
 
     /**
-     * <code>repeated uint32 fireworks_config = 4;</code>
+     * <code>repeated uint32 fireworks_config = 12;</code>
      * @return A list containing the fireworksConfig.
      */
     java.util.List<java.lang.Integer> getFireworksConfigList();
     /**
-     * <code>repeated uint32 fireworks_config = 4;</code>
+     * <code>repeated uint32 fireworks_config = 12;</code>
      * @return The count of fireworksConfig.
      */
     int getFireworksConfigCount();
     /**
-     * <code>repeated uint32 fireworks_config = 4;</code>
+     * <code>repeated uint32 fireworks_config = 12;</code>
      * @param index The index of the element to return.
      * @return The fireworksConfig at the given index.
      */
     int getFireworksConfig(int index);
 
     /**
-     * <code>uint32 turn_index = 7;</code>
-     * @return The turnIndex.
+     * <code>uint32 phase = 1;</code>
+     * @return The phase.
      */
-    int getTurnIndex();
+    int getPhase();
   }
   /**
    * Protobuf type {@code AbilityMixinFireworksLauncher}
@@ -114,20 +114,30 @@ public final class AbilityMixinFireworksLauncherOuterClass {
               break;
             case 8: {
 
-              firedBulletCount_ = input.readUInt32();
-              break;
-            }
-            case 16: {
-
-              invokeType_ = input.readUInt32();
+              phase_ = input.readUInt32();
               break;
             }
             case 24: {
 
-              startCountDownTime_ = input.readUInt32();
+              unk3300BDGCGLGNAIB_ = input.readUInt32();
               break;
             }
             case 32: {
+
+              unk3300BFJBDJLAOJL_ = input.readUInt32();
+              break;
+            }
+            case 40: {
+
+              unk3300FHGLEJNJIHK_ = input.readUInt32();
+              break;
+            }
+            case 56: {
+
+              unk3300LPPKOFHKCPH_ = input.readUInt32();
+              break;
+            }
+            case 96: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 fireworksConfig_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
@@ -135,7 +145,7 @@ public final class AbilityMixinFireworksLauncherOuterClass {
               fireworksConfig_.addInt(input.readUInt32());
               break;
             }
-            case 34: {
+            case 98: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -146,16 +156,6 @@ public final class AbilityMixinFireworksLauncherOuterClass {
                 fireworksConfig_.addInt(input.readUInt32());
               }
               input.popLimit(limit);
-              break;
-            }
-            case 48: {
-
-              phase_ = input.readUInt32();
-              break;
-            }
-            case 56: {
-
-              turnIndex_ = input.readUInt32();
               break;
             }
             default: {
@@ -193,54 +193,54 @@ public final class AbilityMixinFireworksLauncherOuterClass {
               emu.grasscutter.net.proto.AbilityMixinFireworksLauncherOuterClass.AbilityMixinFireworksLauncher.class, emu.grasscutter.net.proto.AbilityMixinFireworksLauncherOuterClass.AbilityMixinFireworksLauncher.Builder.class);
     }
 
-    public static final int INVOKE_TYPE_FIELD_NUMBER = 2;
-    private int invokeType_;
+    public static final int UNK3300_FHGLEJNJIHK_FIELD_NUMBER = 5;
+    private int unk3300FHGLEJNJIHK_;
     /**
-     * <code>uint32 invoke_type = 2;</code>
-     * @return The invokeType.
+     * <code>uint32 Unk3300_FHGLEJNJIHK = 5;</code>
+     * @return The unk3300FHGLEJNJIHK.
      */
     @java.lang.Override
-    public int getInvokeType() {
-      return invokeType_;
+    public int getUnk3300FHGLEJNJIHK() {
+      return unk3300FHGLEJNJIHK_;
     }
 
-    public static final int START_COUNT_DOWN_TIME_FIELD_NUMBER = 3;
-    private int startCountDownTime_;
+    public static final int UNK3300_BFJBDJLAOJL_FIELD_NUMBER = 4;
+    private int unk3300BFJBDJLAOJL_;
     /**
-     * <code>uint32 start_count_down_time = 3;</code>
-     * @return The startCountDownTime.
+     * <code>uint32 Unk3300_BFJBDJLAOJL = 4;</code>
+     * @return The unk3300BFJBDJLAOJL.
      */
     @java.lang.Override
-    public int getStartCountDownTime() {
-      return startCountDownTime_;
+    public int getUnk3300BFJBDJLAOJL() {
+      return unk3300BFJBDJLAOJL_;
     }
 
-    public static final int FIRED_BULLET_COUNT_FIELD_NUMBER = 1;
-    private int firedBulletCount_;
+    public static final int UNK3300_LPPKOFHKCPH_FIELD_NUMBER = 7;
+    private int unk3300LPPKOFHKCPH_;
     /**
-     * <code>uint32 fired_bullet_count = 1;</code>
-     * @return The firedBulletCount.
+     * <code>uint32 Unk3300_LPPKOFHKCPH = 7;</code>
+     * @return The unk3300LPPKOFHKCPH.
      */
     @java.lang.Override
-    public int getFiredBulletCount() {
-      return firedBulletCount_;
+    public int getUnk3300LPPKOFHKCPH() {
+      return unk3300LPPKOFHKCPH_;
     }
 
-    public static final int PHASE_FIELD_NUMBER = 6;
-    private int phase_;
+    public static final int UNK3300_BDGCGLGNAIB_FIELD_NUMBER = 3;
+    private int unk3300BDGCGLGNAIB_;
     /**
-     * <code>uint32 phase = 6;</code>
-     * @return The phase.
+     * <code>uint32 Unk3300_BDGCGLGNAIB = 3;</code>
+     * @return The unk3300BDGCGLGNAIB.
      */
     @java.lang.Override
-    public int getPhase() {
-      return phase_;
+    public int getUnk3300BDGCGLGNAIB() {
+      return unk3300BDGCGLGNAIB_;
     }
 
-    public static final int FIREWORKS_CONFIG_FIELD_NUMBER = 4;
+    public static final int FIREWORKS_CONFIG_FIELD_NUMBER = 12;
     private com.google.protobuf.Internal.IntList fireworksConfig_;
     /**
-     * <code>repeated uint32 fireworks_config = 4;</code>
+     * <code>repeated uint32 fireworks_config = 12;</code>
      * @return A list containing the fireworksConfig.
      */
     @java.lang.Override
@@ -249,14 +249,14 @@ public final class AbilityMixinFireworksLauncherOuterClass {
       return fireworksConfig_;
     }
     /**
-     * <code>repeated uint32 fireworks_config = 4;</code>
+     * <code>repeated uint32 fireworks_config = 12;</code>
      * @return The count of fireworksConfig.
      */
     public int getFireworksConfigCount() {
       return fireworksConfig_.size();
     }
     /**
-     * <code>repeated uint32 fireworks_config = 4;</code>
+     * <code>repeated uint32 fireworks_config = 12;</code>
      * @param index The index of the element to return.
      * @return The fireworksConfig at the given index.
      */
@@ -265,15 +265,15 @@ public final class AbilityMixinFireworksLauncherOuterClass {
     }
     private int fireworksConfigMemoizedSerializedSize = -1;
 
-    public static final int TURN_INDEX_FIELD_NUMBER = 7;
-    private int turnIndex_;
+    public static final int PHASE_FIELD_NUMBER = 1;
+    private int phase_;
     /**
-     * <code>uint32 turn_index = 7;</code>
-     * @return The turnIndex.
+     * <code>uint32 phase = 1;</code>
+     * @return The phase.
      */
     @java.lang.Override
-    public int getTurnIndex() {
-      return turnIndex_;
+    public int getPhase() {
+      return phase_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -291,27 +291,27 @@ public final class AbilityMixinFireworksLauncherOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      if (firedBulletCount_ != 0) {
-        output.writeUInt32(1, firedBulletCount_);
+      if (phase_ != 0) {
+        output.writeUInt32(1, phase_);
       }
-      if (invokeType_ != 0) {
-        output.writeUInt32(2, invokeType_);
+      if (unk3300BDGCGLGNAIB_ != 0) {
+        output.writeUInt32(3, unk3300BDGCGLGNAIB_);
       }
-      if (startCountDownTime_ != 0) {
-        output.writeUInt32(3, startCountDownTime_);
+      if (unk3300BFJBDJLAOJL_ != 0) {
+        output.writeUInt32(4, unk3300BFJBDJLAOJL_);
+      }
+      if (unk3300FHGLEJNJIHK_ != 0) {
+        output.writeUInt32(5, unk3300FHGLEJNJIHK_);
+      }
+      if (unk3300LPPKOFHKCPH_ != 0) {
+        output.writeUInt32(7, unk3300LPPKOFHKCPH_);
       }
       if (getFireworksConfigList().size() > 0) {
-        output.writeUInt32NoTag(34);
+        output.writeUInt32NoTag(98);
         output.writeUInt32NoTag(fireworksConfigMemoizedSerializedSize);
       }
       for (int i = 0; i < fireworksConfig_.size(); i++) {
         output.writeUInt32NoTag(fireworksConfig_.getInt(i));
-      }
-      if (phase_ != 0) {
-        output.writeUInt32(6, phase_);
-      }
-      if (turnIndex_ != 0) {
-        output.writeUInt32(7, turnIndex_);
       }
       unknownFields.writeTo(output);
     }
@@ -322,17 +322,25 @@ public final class AbilityMixinFireworksLauncherOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (firedBulletCount_ != 0) {
+      if (phase_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, firedBulletCount_);
+          .computeUInt32Size(1, phase_);
       }
-      if (invokeType_ != 0) {
+      if (unk3300BDGCGLGNAIB_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, invokeType_);
+          .computeUInt32Size(3, unk3300BDGCGLGNAIB_);
       }
-      if (startCountDownTime_ != 0) {
+      if (unk3300BFJBDJLAOJL_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, startCountDownTime_);
+          .computeUInt32Size(4, unk3300BFJBDJLAOJL_);
+      }
+      if (unk3300FHGLEJNJIHK_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(5, unk3300FHGLEJNJIHK_);
+      }
+      if (unk3300LPPKOFHKCPH_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(7, unk3300LPPKOFHKCPH_);
       }
       {
         int dataSize = 0;
@@ -347,14 +355,6 @@ public final class AbilityMixinFireworksLauncherOuterClass {
               .computeInt32SizeNoTag(dataSize);
         }
         fireworksConfigMemoizedSerializedSize = dataSize;
-      }
-      if (phase_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, phase_);
-      }
-      if (turnIndex_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, turnIndex_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -371,18 +371,18 @@ public final class AbilityMixinFireworksLauncherOuterClass {
       }
       emu.grasscutter.net.proto.AbilityMixinFireworksLauncherOuterClass.AbilityMixinFireworksLauncher other = (emu.grasscutter.net.proto.AbilityMixinFireworksLauncherOuterClass.AbilityMixinFireworksLauncher) obj;
 
-      if (getInvokeType()
-          != other.getInvokeType()) return false;
-      if (getStartCountDownTime()
-          != other.getStartCountDownTime()) return false;
-      if (getFiredBulletCount()
-          != other.getFiredBulletCount()) return false;
-      if (getPhase()
-          != other.getPhase()) return false;
+      if (getUnk3300FHGLEJNJIHK()
+          != other.getUnk3300FHGLEJNJIHK()) return false;
+      if (getUnk3300BFJBDJLAOJL()
+          != other.getUnk3300BFJBDJLAOJL()) return false;
+      if (getUnk3300LPPKOFHKCPH()
+          != other.getUnk3300LPPKOFHKCPH()) return false;
+      if (getUnk3300BDGCGLGNAIB()
+          != other.getUnk3300BDGCGLGNAIB()) return false;
       if (!getFireworksConfigList()
           .equals(other.getFireworksConfigList())) return false;
-      if (getTurnIndex()
-          != other.getTurnIndex()) return false;
+      if (getPhase()
+          != other.getPhase()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -394,20 +394,20 @@ public final class AbilityMixinFireworksLauncherOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + INVOKE_TYPE_FIELD_NUMBER;
-      hash = (53 * hash) + getInvokeType();
-      hash = (37 * hash) + START_COUNT_DOWN_TIME_FIELD_NUMBER;
-      hash = (53 * hash) + getStartCountDownTime();
-      hash = (37 * hash) + FIRED_BULLET_COUNT_FIELD_NUMBER;
-      hash = (53 * hash) + getFiredBulletCount();
-      hash = (37 * hash) + PHASE_FIELD_NUMBER;
-      hash = (53 * hash) + getPhase();
+      hash = (37 * hash) + UNK3300_FHGLEJNJIHK_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300FHGLEJNJIHK();
+      hash = (37 * hash) + UNK3300_BFJBDJLAOJL_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300BFJBDJLAOJL();
+      hash = (37 * hash) + UNK3300_LPPKOFHKCPH_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300LPPKOFHKCPH();
+      hash = (37 * hash) + UNK3300_BDGCGLGNAIB_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300BDGCGLGNAIB();
       if (getFireworksConfigCount() > 0) {
         hash = (37 * hash) + FIREWORKS_CONFIG_FIELD_NUMBER;
         hash = (53 * hash) + getFireworksConfigList().hashCode();
       }
-      hash = (37 * hash) + TURN_INDEX_FIELD_NUMBER;
-      hash = (53 * hash) + getTurnIndex();
+      hash = (37 * hash) + PHASE_FIELD_NUMBER;
+      hash = (53 * hash) + getPhase();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -541,17 +541,17 @@ public final class AbilityMixinFireworksLauncherOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        invokeType_ = 0;
+        unk3300FHGLEJNJIHK_ = 0;
 
-        startCountDownTime_ = 0;
+        unk3300BFJBDJLAOJL_ = 0;
 
-        firedBulletCount_ = 0;
+        unk3300LPPKOFHKCPH_ = 0;
 
-        phase_ = 0;
+        unk3300BDGCGLGNAIB_ = 0;
 
         fireworksConfig_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
-        turnIndex_ = 0;
+        phase_ = 0;
 
         return this;
       }
@@ -580,16 +580,16 @@ public final class AbilityMixinFireworksLauncherOuterClass {
       public emu.grasscutter.net.proto.AbilityMixinFireworksLauncherOuterClass.AbilityMixinFireworksLauncher buildPartial() {
         emu.grasscutter.net.proto.AbilityMixinFireworksLauncherOuterClass.AbilityMixinFireworksLauncher result = new emu.grasscutter.net.proto.AbilityMixinFireworksLauncherOuterClass.AbilityMixinFireworksLauncher(this);
         int from_bitField0_ = bitField0_;
-        result.invokeType_ = invokeType_;
-        result.startCountDownTime_ = startCountDownTime_;
-        result.firedBulletCount_ = firedBulletCount_;
-        result.phase_ = phase_;
+        result.unk3300FHGLEJNJIHK_ = unk3300FHGLEJNJIHK_;
+        result.unk3300BFJBDJLAOJL_ = unk3300BFJBDJLAOJL_;
+        result.unk3300LPPKOFHKCPH_ = unk3300LPPKOFHKCPH_;
+        result.unk3300BDGCGLGNAIB_ = unk3300BDGCGLGNAIB_;
         if (((bitField0_ & 0x00000001) != 0)) {
           fireworksConfig_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000001);
         }
         result.fireworksConfig_ = fireworksConfig_;
-        result.turnIndex_ = turnIndex_;
+        result.phase_ = phase_;
         onBuilt();
         return result;
       }
@@ -638,17 +638,17 @@ public final class AbilityMixinFireworksLauncherOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.AbilityMixinFireworksLauncherOuterClass.AbilityMixinFireworksLauncher other) {
         if (other == emu.grasscutter.net.proto.AbilityMixinFireworksLauncherOuterClass.AbilityMixinFireworksLauncher.getDefaultInstance()) return this;
-        if (other.getInvokeType() != 0) {
-          setInvokeType(other.getInvokeType());
+        if (other.getUnk3300FHGLEJNJIHK() != 0) {
+          setUnk3300FHGLEJNJIHK(other.getUnk3300FHGLEJNJIHK());
         }
-        if (other.getStartCountDownTime() != 0) {
-          setStartCountDownTime(other.getStartCountDownTime());
+        if (other.getUnk3300BFJBDJLAOJL() != 0) {
+          setUnk3300BFJBDJLAOJL(other.getUnk3300BFJBDJLAOJL());
         }
-        if (other.getFiredBulletCount() != 0) {
-          setFiredBulletCount(other.getFiredBulletCount());
+        if (other.getUnk3300LPPKOFHKCPH() != 0) {
+          setUnk3300LPPKOFHKCPH(other.getUnk3300LPPKOFHKCPH());
         }
-        if (other.getPhase() != 0) {
-          setPhase(other.getPhase());
+        if (other.getUnk3300BDGCGLGNAIB() != 0) {
+          setUnk3300BDGCGLGNAIB(other.getUnk3300BDGCGLGNAIB());
         }
         if (!other.fireworksConfig_.isEmpty()) {
           if (fireworksConfig_.isEmpty()) {
@@ -660,8 +660,8 @@ public final class AbilityMixinFireworksLauncherOuterClass {
           }
           onChanged();
         }
-        if (other.getTurnIndex() != 0) {
-          setTurnIndex(other.getTurnIndex());
+        if (other.getPhase() != 0) {
+          setPhase(other.getPhase());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -693,126 +693,126 @@ public final class AbilityMixinFireworksLauncherOuterClass {
       }
       private int bitField0_;
 
-      private int invokeType_ ;
+      private int unk3300FHGLEJNJIHK_ ;
       /**
-       * <code>uint32 invoke_type = 2;</code>
-       * @return The invokeType.
+       * <code>uint32 Unk3300_FHGLEJNJIHK = 5;</code>
+       * @return The unk3300FHGLEJNJIHK.
        */
       @java.lang.Override
-      public int getInvokeType() {
-        return invokeType_;
+      public int getUnk3300FHGLEJNJIHK() {
+        return unk3300FHGLEJNJIHK_;
       }
       /**
-       * <code>uint32 invoke_type = 2;</code>
-       * @param value The invokeType to set.
+       * <code>uint32 Unk3300_FHGLEJNJIHK = 5;</code>
+       * @param value The unk3300FHGLEJNJIHK to set.
        * @return This builder for chaining.
        */
-      public Builder setInvokeType(int value) {
+      public Builder setUnk3300FHGLEJNJIHK(int value) {
         
-        invokeType_ = value;
+        unk3300FHGLEJNJIHK_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 invoke_type = 2;</code>
+       * <code>uint32 Unk3300_FHGLEJNJIHK = 5;</code>
        * @return This builder for chaining.
        */
-      public Builder clearInvokeType() {
+      public Builder clearUnk3300FHGLEJNJIHK() {
         
-        invokeType_ = 0;
+        unk3300FHGLEJNJIHK_ = 0;
         onChanged();
         return this;
       }
 
-      private int startCountDownTime_ ;
+      private int unk3300BFJBDJLAOJL_ ;
       /**
-       * <code>uint32 start_count_down_time = 3;</code>
-       * @return The startCountDownTime.
+       * <code>uint32 Unk3300_BFJBDJLAOJL = 4;</code>
+       * @return The unk3300BFJBDJLAOJL.
        */
       @java.lang.Override
-      public int getStartCountDownTime() {
-        return startCountDownTime_;
+      public int getUnk3300BFJBDJLAOJL() {
+        return unk3300BFJBDJLAOJL_;
       }
       /**
-       * <code>uint32 start_count_down_time = 3;</code>
-       * @param value The startCountDownTime to set.
+       * <code>uint32 Unk3300_BFJBDJLAOJL = 4;</code>
+       * @param value The unk3300BFJBDJLAOJL to set.
        * @return This builder for chaining.
        */
-      public Builder setStartCountDownTime(int value) {
+      public Builder setUnk3300BFJBDJLAOJL(int value) {
         
-        startCountDownTime_ = value;
+        unk3300BFJBDJLAOJL_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 start_count_down_time = 3;</code>
+       * <code>uint32 Unk3300_BFJBDJLAOJL = 4;</code>
        * @return This builder for chaining.
        */
-      public Builder clearStartCountDownTime() {
+      public Builder clearUnk3300BFJBDJLAOJL() {
         
-        startCountDownTime_ = 0;
+        unk3300BFJBDJLAOJL_ = 0;
         onChanged();
         return this;
       }
 
-      private int firedBulletCount_ ;
+      private int unk3300LPPKOFHKCPH_ ;
       /**
-       * <code>uint32 fired_bullet_count = 1;</code>
-       * @return The firedBulletCount.
+       * <code>uint32 Unk3300_LPPKOFHKCPH = 7;</code>
+       * @return The unk3300LPPKOFHKCPH.
        */
       @java.lang.Override
-      public int getFiredBulletCount() {
-        return firedBulletCount_;
+      public int getUnk3300LPPKOFHKCPH() {
+        return unk3300LPPKOFHKCPH_;
       }
       /**
-       * <code>uint32 fired_bullet_count = 1;</code>
-       * @param value The firedBulletCount to set.
+       * <code>uint32 Unk3300_LPPKOFHKCPH = 7;</code>
+       * @param value The unk3300LPPKOFHKCPH to set.
        * @return This builder for chaining.
        */
-      public Builder setFiredBulletCount(int value) {
+      public Builder setUnk3300LPPKOFHKCPH(int value) {
         
-        firedBulletCount_ = value;
+        unk3300LPPKOFHKCPH_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 fired_bullet_count = 1;</code>
+       * <code>uint32 Unk3300_LPPKOFHKCPH = 7;</code>
        * @return This builder for chaining.
        */
-      public Builder clearFiredBulletCount() {
+      public Builder clearUnk3300LPPKOFHKCPH() {
         
-        firedBulletCount_ = 0;
+        unk3300LPPKOFHKCPH_ = 0;
         onChanged();
         return this;
       }
 
-      private int phase_ ;
+      private int unk3300BDGCGLGNAIB_ ;
       /**
-       * <code>uint32 phase = 6;</code>
-       * @return The phase.
+       * <code>uint32 Unk3300_BDGCGLGNAIB = 3;</code>
+       * @return The unk3300BDGCGLGNAIB.
        */
       @java.lang.Override
-      public int getPhase() {
-        return phase_;
+      public int getUnk3300BDGCGLGNAIB() {
+        return unk3300BDGCGLGNAIB_;
       }
       /**
-       * <code>uint32 phase = 6;</code>
-       * @param value The phase to set.
+       * <code>uint32 Unk3300_BDGCGLGNAIB = 3;</code>
+       * @param value The unk3300BDGCGLGNAIB to set.
        * @return This builder for chaining.
        */
-      public Builder setPhase(int value) {
+      public Builder setUnk3300BDGCGLGNAIB(int value) {
         
-        phase_ = value;
+        unk3300BDGCGLGNAIB_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 phase = 6;</code>
+       * <code>uint32 Unk3300_BDGCGLGNAIB = 3;</code>
        * @return This builder for chaining.
        */
-      public Builder clearPhase() {
+      public Builder clearUnk3300BDGCGLGNAIB() {
         
-        phase_ = 0;
+        unk3300BDGCGLGNAIB_ = 0;
         onChanged();
         return this;
       }
@@ -825,7 +825,7 @@ public final class AbilityMixinFireworksLauncherOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 fireworks_config = 4;</code>
+       * <code>repeated uint32 fireworks_config = 12;</code>
        * @return A list containing the fireworksConfig.
        */
       public java.util.List<java.lang.Integer>
@@ -834,14 +834,14 @@ public final class AbilityMixinFireworksLauncherOuterClass {
                  java.util.Collections.unmodifiableList(fireworksConfig_) : fireworksConfig_;
       }
       /**
-       * <code>repeated uint32 fireworks_config = 4;</code>
+       * <code>repeated uint32 fireworks_config = 12;</code>
        * @return The count of fireworksConfig.
        */
       public int getFireworksConfigCount() {
         return fireworksConfig_.size();
       }
       /**
-       * <code>repeated uint32 fireworks_config = 4;</code>
+       * <code>repeated uint32 fireworks_config = 12;</code>
        * @param index The index of the element to return.
        * @return The fireworksConfig at the given index.
        */
@@ -849,7 +849,7 @@ public final class AbilityMixinFireworksLauncherOuterClass {
         return fireworksConfig_.getInt(index);
       }
       /**
-       * <code>repeated uint32 fireworks_config = 4;</code>
+       * <code>repeated uint32 fireworks_config = 12;</code>
        * @param index The index to set the value at.
        * @param value The fireworksConfig to set.
        * @return This builder for chaining.
@@ -862,7 +862,7 @@ public final class AbilityMixinFireworksLauncherOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 fireworks_config = 4;</code>
+       * <code>repeated uint32 fireworks_config = 12;</code>
        * @param value The fireworksConfig to add.
        * @return This builder for chaining.
        */
@@ -873,7 +873,7 @@ public final class AbilityMixinFireworksLauncherOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 fireworks_config = 4;</code>
+       * <code>repeated uint32 fireworks_config = 12;</code>
        * @param values The fireworksConfig to add.
        * @return This builder for chaining.
        */
@@ -886,7 +886,7 @@ public final class AbilityMixinFireworksLauncherOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 fireworks_config = 4;</code>
+       * <code>repeated uint32 fireworks_config = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearFireworksConfig() {
@@ -896,33 +896,33 @@ public final class AbilityMixinFireworksLauncherOuterClass {
         return this;
       }
 
-      private int turnIndex_ ;
+      private int phase_ ;
       /**
-       * <code>uint32 turn_index = 7;</code>
-       * @return The turnIndex.
+       * <code>uint32 phase = 1;</code>
+       * @return The phase.
        */
       @java.lang.Override
-      public int getTurnIndex() {
-        return turnIndex_;
+      public int getPhase() {
+        return phase_;
       }
       /**
-       * <code>uint32 turn_index = 7;</code>
-       * @param value The turnIndex to set.
+       * <code>uint32 phase = 1;</code>
+       * @param value The phase to set.
        * @return This builder for chaining.
        */
-      public Builder setTurnIndex(int value) {
+      public Builder setPhase(int value) {
         
-        turnIndex_ = value;
+        phase_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 turn_index = 7;</code>
+       * <code>uint32 phase = 1;</code>
        * @return This builder for chaining.
        */
-      public Builder clearTurnIndex() {
+      public Builder clearPhase() {
         
-        turnIndex_ = 0;
+        phase_ = 0;
         onChanged();
         return this;
       }
@@ -993,13 +993,13 @@ public final class AbilityMixinFireworksLauncherOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n#AbilityMixinFireworksLauncher.proto\"\254\001" +
-      "\n\035AbilityMixinFireworksLauncher\022\023\n\013invok" +
-      "e_type\030\002 \001(\r\022\035\n\025start_count_down_time\030\003 " +
-      "\001(\r\022\032\n\022fired_bullet_count\030\001 \001(\r\022\r\n\005phase" +
-      "\030\006 \001(\r\022\030\n\020fireworks_config\030\004 \003(\r\022\022\n\nturn" +
-      "_index\030\007 \001(\rB\033\n\031emu.grasscutter.net.prot" +
-      "ob\006proto3"
+      "\n#AbilityMixinFireworksLauncher.proto\"\274\001" +
+      "\n\035AbilityMixinFireworksLauncher\022\033\n\023Unk33" +
+      "00_FHGLEJNJIHK\030\005 \001(\r\022\033\n\023Unk3300_BFJBDJLA" +
+      "OJL\030\004 \001(\r\022\033\n\023Unk3300_LPPKOFHKCPH\030\007 \001(\r\022\033" +
+      "\n\023Unk3300_BDGCGLGNAIB\030\003 \001(\r\022\030\n\020fireworks" +
+      "_config\030\014 \003(\r\022\r\n\005phase\030\001 \001(\rB\033\n\031emu.gras" +
+      "scutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -1010,7 +1010,7 @@ public final class AbilityMixinFireworksLauncherOuterClass {
     internal_static_AbilityMixinFireworksLauncher_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_AbilityMixinFireworksLauncher_descriptor,
-        new java.lang.String[] { "InvokeType", "StartCountDownTime", "FiredBulletCount", "Phase", "FireworksConfig", "TurnIndex", });
+        new java.lang.String[] { "Unk3300FHGLEJNJIHK", "Unk3300BFJBDJLAOJL", "Unk3300LPPKOFHKCPH", "Unk3300BDGCGLGNAIB", "FireworksConfig", "Phase", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

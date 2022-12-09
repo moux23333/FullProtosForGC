@@ -19,23 +19,23 @@ public final class MatchPlayerInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_agreed = 9;</code>
+     * <code>bool is_agreed = 4;</code>
      * @return The isAgreed.
      */
     boolean getIsAgreed();
 
     /**
-     * <code>.OnlinePlayerInfo player_info = 2;</code>
+     * <code>.OnlinePlayerInfo player_info = 15;</code>
      * @return Whether the playerInfo field is set.
      */
     boolean hasPlayerInfo();
     /**
-     * <code>.OnlinePlayerInfo player_info = 2;</code>
+     * <code>.OnlinePlayerInfo player_info = 15;</code>
      * @return The playerInfo.
      */
     emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo getPlayerInfo();
     /**
-     * <code>.OnlinePlayerInfo player_info = 2;</code>
+     * <code>.OnlinePlayerInfo player_info = 15;</code>
      */
     emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfoOrBuilder getPlayerInfoOrBuilder();
   }
@@ -84,7 +84,12 @@ public final class MatchPlayerInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 18: {
+            case 32: {
+
+              isAgreed_ = input.readBool();
+              break;
+            }
+            case 122: {
               emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo.Builder subBuilder = null;
               if (playerInfo_ != null) {
                 subBuilder = playerInfo_.toBuilder();
@@ -95,11 +100,6 @@ public final class MatchPlayerInfoOuterClass {
                 playerInfo_ = subBuilder.buildPartial();
               }
 
-              break;
-            }
-            case 72: {
-
-              isAgreed_ = input.readBool();
               break;
             }
             default: {
@@ -134,10 +134,10 @@ public final class MatchPlayerInfoOuterClass {
               emu.grasscutter.net.proto.MatchPlayerInfoOuterClass.MatchPlayerInfo.class, emu.grasscutter.net.proto.MatchPlayerInfoOuterClass.MatchPlayerInfo.Builder.class);
     }
 
-    public static final int IS_AGREED_FIELD_NUMBER = 9;
+    public static final int IS_AGREED_FIELD_NUMBER = 4;
     private boolean isAgreed_;
     /**
-     * <code>bool is_agreed = 9;</code>
+     * <code>bool is_agreed = 4;</code>
      * @return The isAgreed.
      */
     @java.lang.Override
@@ -145,10 +145,10 @@ public final class MatchPlayerInfoOuterClass {
       return isAgreed_;
     }
 
-    public static final int PLAYER_INFO_FIELD_NUMBER = 2;
+    public static final int PLAYER_INFO_FIELD_NUMBER = 15;
     private emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo playerInfo_;
     /**
-     * <code>.OnlinePlayerInfo player_info = 2;</code>
+     * <code>.OnlinePlayerInfo player_info = 15;</code>
      * @return Whether the playerInfo field is set.
      */
     @java.lang.Override
@@ -156,7 +156,7 @@ public final class MatchPlayerInfoOuterClass {
       return playerInfo_ != null;
     }
     /**
-     * <code>.OnlinePlayerInfo player_info = 2;</code>
+     * <code>.OnlinePlayerInfo player_info = 15;</code>
      * @return The playerInfo.
      */
     @java.lang.Override
@@ -164,7 +164,7 @@ public final class MatchPlayerInfoOuterClass {
       return playerInfo_ == null ? emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo.getDefaultInstance() : playerInfo_;
     }
     /**
-     * <code>.OnlinePlayerInfo player_info = 2;</code>
+     * <code>.OnlinePlayerInfo player_info = 15;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfoOrBuilder getPlayerInfoOrBuilder() {
@@ -185,11 +185,11 @@ public final class MatchPlayerInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (playerInfo_ != null) {
-        output.writeMessage(2, getPlayerInfo());
-      }
       if (isAgreed_ != false) {
-        output.writeBool(9, isAgreed_);
+        output.writeBool(4, isAgreed_);
+      }
+      if (playerInfo_ != null) {
+        output.writeMessage(15, getPlayerInfo());
       }
       unknownFields.writeTo(output);
     }
@@ -200,13 +200,13 @@ public final class MatchPlayerInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (playerInfo_ != null) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(2, getPlayerInfo());
-      }
       if (isAgreed_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(9, isAgreed_);
+          .computeBoolSize(4, isAgreed_);
+      }
+      if (playerInfo_ != null) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(15, getPlayerInfo());
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -506,7 +506,7 @@ public final class MatchPlayerInfoOuterClass {
 
       private boolean isAgreed_ ;
       /**
-       * <code>bool is_agreed = 9;</code>
+       * <code>bool is_agreed = 4;</code>
        * @return The isAgreed.
        */
       @java.lang.Override
@@ -514,7 +514,7 @@ public final class MatchPlayerInfoOuterClass {
         return isAgreed_;
       }
       /**
-       * <code>bool is_agreed = 9;</code>
+       * <code>bool is_agreed = 4;</code>
        * @param value The isAgreed to set.
        * @return This builder for chaining.
        */
@@ -525,7 +525,7 @@ public final class MatchPlayerInfoOuterClass {
         return this;
       }
       /**
-       * <code>bool is_agreed = 9;</code>
+       * <code>bool is_agreed = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsAgreed() {
@@ -539,14 +539,14 @@ public final class MatchPlayerInfoOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo, emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo.Builder, emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfoOrBuilder> playerInfoBuilder_;
       /**
-       * <code>.OnlinePlayerInfo player_info = 2;</code>
+       * <code>.OnlinePlayerInfo player_info = 15;</code>
        * @return Whether the playerInfo field is set.
        */
       public boolean hasPlayerInfo() {
         return playerInfoBuilder_ != null || playerInfo_ != null;
       }
       /**
-       * <code>.OnlinePlayerInfo player_info = 2;</code>
+       * <code>.OnlinePlayerInfo player_info = 15;</code>
        * @return The playerInfo.
        */
       public emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo getPlayerInfo() {
@@ -557,7 +557,7 @@ public final class MatchPlayerInfoOuterClass {
         }
       }
       /**
-       * <code>.OnlinePlayerInfo player_info = 2;</code>
+       * <code>.OnlinePlayerInfo player_info = 15;</code>
        */
       public Builder setPlayerInfo(emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo value) {
         if (playerInfoBuilder_ == null) {
@@ -573,7 +573,7 @@ public final class MatchPlayerInfoOuterClass {
         return this;
       }
       /**
-       * <code>.OnlinePlayerInfo player_info = 2;</code>
+       * <code>.OnlinePlayerInfo player_info = 15;</code>
        */
       public Builder setPlayerInfo(
           emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo.Builder builderForValue) {
@@ -587,7 +587,7 @@ public final class MatchPlayerInfoOuterClass {
         return this;
       }
       /**
-       * <code>.OnlinePlayerInfo player_info = 2;</code>
+       * <code>.OnlinePlayerInfo player_info = 15;</code>
        */
       public Builder mergePlayerInfo(emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo value) {
         if (playerInfoBuilder_ == null) {
@@ -605,7 +605,7 @@ public final class MatchPlayerInfoOuterClass {
         return this;
       }
       /**
-       * <code>.OnlinePlayerInfo player_info = 2;</code>
+       * <code>.OnlinePlayerInfo player_info = 15;</code>
        */
       public Builder clearPlayerInfo() {
         if (playerInfoBuilder_ == null) {
@@ -619,7 +619,7 @@ public final class MatchPlayerInfoOuterClass {
         return this;
       }
       /**
-       * <code>.OnlinePlayerInfo player_info = 2;</code>
+       * <code>.OnlinePlayerInfo player_info = 15;</code>
        */
       public emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo.Builder getPlayerInfoBuilder() {
         
@@ -627,7 +627,7 @@ public final class MatchPlayerInfoOuterClass {
         return getPlayerInfoFieldBuilder().getBuilder();
       }
       /**
-       * <code>.OnlinePlayerInfo player_info = 2;</code>
+       * <code>.OnlinePlayerInfo player_info = 15;</code>
        */
       public emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfoOrBuilder getPlayerInfoOrBuilder() {
         if (playerInfoBuilder_ != null) {
@@ -638,7 +638,7 @@ public final class MatchPlayerInfoOuterClass {
         }
       }
       /**
-       * <code>.OnlinePlayerInfo player_info = 2;</code>
+       * <code>.OnlinePlayerInfo player_info = 15;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo, emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo.Builder, emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfoOrBuilder> 
@@ -722,7 +722,7 @@ public final class MatchPlayerInfoOuterClass {
     java.lang.String[] descriptorData = {
       "\n\025MatchPlayerInfo.proto\032\026OnlinePlayerInf" +
       "o.proto\"L\n\017MatchPlayerInfo\022\021\n\tis_agreed\030" +
-      "\t \001(\010\022&\n\013player_info\030\002 \001(\0132\021.OnlinePlaye" +
+      "\004 \001(\010\022&\n\013player_info\030\017 \001(\0132\021.OnlinePlaye" +
       "rInfoB\033\n\031emu.grasscutter.net.protob\006prot" +
       "o3"
     };

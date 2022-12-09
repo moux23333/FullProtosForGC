@@ -19,40 +19,40 @@ public final class AbilityMixinElementShieldOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>float sub_shield = 10;</code>
-     * @return The subShield.
-     */
-    float getSubShield();
-
-    /**
-     * <code>float shield = 8;</code>
-     * @return The shield.
-     */
-    float getShield();
-
-    /**
-     * <code>uint32 absorb_type = 1;</code>
-     * @return The absorbType.
-     */
-    int getAbsorbType();
-
-    /**
-     * <code>uint32 player_num = 4;</code>
+     * <code>uint32 player_num = 9;</code>
      * @return The playerNum.
      */
     int getPlayerNum();
 
     /**
-     * <code>bool is_shield_broken = 9;</code>
+     * <code>float shield = 5;</code>
+     * @return The shield.
+     */
+    float getShield();
+
+    /**
+     * <code>bool is_shield_broken = 8;</code>
      * @return The isShieldBroken.
      */
     boolean getIsShieldBroken();
 
     /**
-     * <code>float max_shield = 12;</code>
+     * <code>float sub_shield = 4;</code>
+     * @return The subShield.
+     */
+    float getSubShield();
+
+    /**
+     * <code>float max_shield = 13;</code>
      * @return The maxShield.
      */
     float getMaxShield();
+
+    /**
+     * <code>uint32 absorb_type = 10;</code>
+     * @return The absorbType.
+     */
+    int getAbsorbType();
   }
   /**
    * Protobuf type {@code AbilityMixinElementShield}
@@ -99,32 +99,32 @@ public final class AbilityMixinElementShieldOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
-
-              absorbType_ = input.readUInt32();
-              break;
-            }
-            case 32: {
-
-              playerNum_ = input.readUInt32();
-              break;
-            }
-            case 69: {
-
-              shield_ = input.readFloat();
-              break;
-            }
-            case 72: {
-
-              isShieldBroken_ = input.readBool();
-              break;
-            }
-            case 85: {
+            case 37: {
 
               subShield_ = input.readFloat();
               break;
             }
-            case 101: {
+            case 45: {
+
+              shield_ = input.readFloat();
+              break;
+            }
+            case 64: {
+
+              isShieldBroken_ = input.readBool();
+              break;
+            }
+            case 72: {
+
+              playerNum_ = input.readUInt32();
+              break;
+            }
+            case 80: {
+
+              absorbType_ = input.readUInt32();
+              break;
+            }
+            case 109: {
 
               maxShield_ = input.readFloat();
               break;
@@ -161,43 +161,10 @@ public final class AbilityMixinElementShieldOuterClass {
               emu.grasscutter.net.proto.AbilityMixinElementShieldOuterClass.AbilityMixinElementShield.class, emu.grasscutter.net.proto.AbilityMixinElementShieldOuterClass.AbilityMixinElementShield.Builder.class);
     }
 
-    public static final int SUB_SHIELD_FIELD_NUMBER = 10;
-    private float subShield_;
-    /**
-     * <code>float sub_shield = 10;</code>
-     * @return The subShield.
-     */
-    @java.lang.Override
-    public float getSubShield() {
-      return subShield_;
-    }
-
-    public static final int SHIELD_FIELD_NUMBER = 8;
-    private float shield_;
-    /**
-     * <code>float shield = 8;</code>
-     * @return The shield.
-     */
-    @java.lang.Override
-    public float getShield() {
-      return shield_;
-    }
-
-    public static final int ABSORB_TYPE_FIELD_NUMBER = 1;
-    private int absorbType_;
-    /**
-     * <code>uint32 absorb_type = 1;</code>
-     * @return The absorbType.
-     */
-    @java.lang.Override
-    public int getAbsorbType() {
-      return absorbType_;
-    }
-
-    public static final int PLAYER_NUM_FIELD_NUMBER = 4;
+    public static final int PLAYER_NUM_FIELD_NUMBER = 9;
     private int playerNum_;
     /**
-     * <code>uint32 player_num = 4;</code>
+     * <code>uint32 player_num = 9;</code>
      * @return The playerNum.
      */
     @java.lang.Override
@@ -205,10 +172,21 @@ public final class AbilityMixinElementShieldOuterClass {
       return playerNum_;
     }
 
-    public static final int IS_SHIELD_BROKEN_FIELD_NUMBER = 9;
+    public static final int SHIELD_FIELD_NUMBER = 5;
+    private float shield_;
+    /**
+     * <code>float shield = 5;</code>
+     * @return The shield.
+     */
+    @java.lang.Override
+    public float getShield() {
+      return shield_;
+    }
+
+    public static final int IS_SHIELD_BROKEN_FIELD_NUMBER = 8;
     private boolean isShieldBroken_;
     /**
-     * <code>bool is_shield_broken = 9;</code>
+     * <code>bool is_shield_broken = 8;</code>
      * @return The isShieldBroken.
      */
     @java.lang.Override
@@ -216,15 +194,37 @@ public final class AbilityMixinElementShieldOuterClass {
       return isShieldBroken_;
     }
 
-    public static final int MAX_SHIELD_FIELD_NUMBER = 12;
+    public static final int SUB_SHIELD_FIELD_NUMBER = 4;
+    private float subShield_;
+    /**
+     * <code>float sub_shield = 4;</code>
+     * @return The subShield.
+     */
+    @java.lang.Override
+    public float getSubShield() {
+      return subShield_;
+    }
+
+    public static final int MAX_SHIELD_FIELD_NUMBER = 13;
     private float maxShield_;
     /**
-     * <code>float max_shield = 12;</code>
+     * <code>float max_shield = 13;</code>
      * @return The maxShield.
      */
     @java.lang.Override
     public float getMaxShield() {
       return maxShield_;
+    }
+
+    public static final int ABSORB_TYPE_FIELD_NUMBER = 10;
+    private int absorbType_;
+    /**
+     * <code>uint32 absorb_type = 10;</code>
+     * @return The absorbType.
+     */
+    @java.lang.Override
+    public int getAbsorbType() {
+      return absorbType_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -241,23 +241,23 @@ public final class AbilityMixinElementShieldOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (absorbType_ != 0) {
-        output.writeUInt32(1, absorbType_);
-      }
-      if (playerNum_ != 0) {
-        output.writeUInt32(4, playerNum_);
+      if (subShield_ != 0F) {
+        output.writeFloat(4, subShield_);
       }
       if (shield_ != 0F) {
-        output.writeFloat(8, shield_);
+        output.writeFloat(5, shield_);
       }
       if (isShieldBroken_ != false) {
-        output.writeBool(9, isShieldBroken_);
+        output.writeBool(8, isShieldBroken_);
       }
-      if (subShield_ != 0F) {
-        output.writeFloat(10, subShield_);
+      if (playerNum_ != 0) {
+        output.writeUInt32(9, playerNum_);
+      }
+      if (absorbType_ != 0) {
+        output.writeUInt32(10, absorbType_);
       }
       if (maxShield_ != 0F) {
-        output.writeFloat(12, maxShield_);
+        output.writeFloat(13, maxShield_);
       }
       unknownFields.writeTo(output);
     }
@@ -268,29 +268,29 @@ public final class AbilityMixinElementShieldOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (absorbType_ != 0) {
+      if (subShield_ != 0F) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, absorbType_);
-      }
-      if (playerNum_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, playerNum_);
+          .computeFloatSize(4, subShield_);
       }
       if (shield_ != 0F) {
         size += com.google.protobuf.CodedOutputStream
-          .computeFloatSize(8, shield_);
+          .computeFloatSize(5, shield_);
       }
       if (isShieldBroken_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(9, isShieldBroken_);
+          .computeBoolSize(8, isShieldBroken_);
       }
-      if (subShield_ != 0F) {
+      if (playerNum_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeFloatSize(10, subShield_);
+          .computeUInt32Size(9, playerNum_);
+      }
+      if (absorbType_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(10, absorbType_);
       }
       if (maxShield_ != 0F) {
         size += com.google.protobuf.CodedOutputStream
-          .computeFloatSize(12, maxShield_);
+          .computeFloatSize(13, maxShield_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -307,21 +307,21 @@ public final class AbilityMixinElementShieldOuterClass {
       }
       emu.grasscutter.net.proto.AbilityMixinElementShieldOuterClass.AbilityMixinElementShield other = (emu.grasscutter.net.proto.AbilityMixinElementShieldOuterClass.AbilityMixinElementShield) obj;
 
-      if (java.lang.Float.floatToIntBits(getSubShield())
-          != java.lang.Float.floatToIntBits(
-              other.getSubShield())) return false;
+      if (getPlayerNum()
+          != other.getPlayerNum()) return false;
       if (java.lang.Float.floatToIntBits(getShield())
           != java.lang.Float.floatToIntBits(
               other.getShield())) return false;
-      if (getAbsorbType()
-          != other.getAbsorbType()) return false;
-      if (getPlayerNum()
-          != other.getPlayerNum()) return false;
       if (getIsShieldBroken()
           != other.getIsShieldBroken()) return false;
+      if (java.lang.Float.floatToIntBits(getSubShield())
+          != java.lang.Float.floatToIntBits(
+              other.getSubShield())) return false;
       if (java.lang.Float.floatToIntBits(getMaxShield())
           != java.lang.Float.floatToIntBits(
               other.getMaxShield())) return false;
+      if (getAbsorbType()
+          != other.getAbsorbType()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -333,22 +333,22 @@ public final class AbilityMixinElementShieldOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + SUB_SHIELD_FIELD_NUMBER;
-      hash = (53 * hash) + java.lang.Float.floatToIntBits(
-          getSubShield());
+      hash = (37 * hash) + PLAYER_NUM_FIELD_NUMBER;
+      hash = (53 * hash) + getPlayerNum();
       hash = (37 * hash) + SHIELD_FIELD_NUMBER;
       hash = (53 * hash) + java.lang.Float.floatToIntBits(
           getShield());
-      hash = (37 * hash) + ABSORB_TYPE_FIELD_NUMBER;
-      hash = (53 * hash) + getAbsorbType();
-      hash = (37 * hash) + PLAYER_NUM_FIELD_NUMBER;
-      hash = (53 * hash) + getPlayerNum();
       hash = (37 * hash) + IS_SHIELD_BROKEN_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsShieldBroken());
+      hash = (37 * hash) + SUB_SHIELD_FIELD_NUMBER;
+      hash = (53 * hash) + java.lang.Float.floatToIntBits(
+          getSubShield());
       hash = (37 * hash) + MAX_SHIELD_FIELD_NUMBER;
       hash = (53 * hash) + java.lang.Float.floatToIntBits(
           getMaxShield());
+      hash = (37 * hash) + ABSORB_TYPE_FIELD_NUMBER;
+      hash = (53 * hash) + getAbsorbType();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -482,17 +482,17 @@ public final class AbilityMixinElementShieldOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        subShield_ = 0F;
+        playerNum_ = 0;
 
         shield_ = 0F;
 
-        absorbType_ = 0;
-
-        playerNum_ = 0;
-
         isShieldBroken_ = false;
 
+        subShield_ = 0F;
+
         maxShield_ = 0F;
+
+        absorbType_ = 0;
 
         return this;
       }
@@ -520,12 +520,12 @@ public final class AbilityMixinElementShieldOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.AbilityMixinElementShieldOuterClass.AbilityMixinElementShield buildPartial() {
         emu.grasscutter.net.proto.AbilityMixinElementShieldOuterClass.AbilityMixinElementShield result = new emu.grasscutter.net.proto.AbilityMixinElementShieldOuterClass.AbilityMixinElementShield(this);
-        result.subShield_ = subShield_;
-        result.shield_ = shield_;
-        result.absorbType_ = absorbType_;
         result.playerNum_ = playerNum_;
+        result.shield_ = shield_;
         result.isShieldBroken_ = isShieldBroken_;
+        result.subShield_ = subShield_;
         result.maxShield_ = maxShield_;
+        result.absorbType_ = absorbType_;
         onBuilt();
         return result;
       }
@@ -574,23 +574,23 @@ public final class AbilityMixinElementShieldOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.AbilityMixinElementShieldOuterClass.AbilityMixinElementShield other) {
         if (other == emu.grasscutter.net.proto.AbilityMixinElementShieldOuterClass.AbilityMixinElementShield.getDefaultInstance()) return this;
-        if (other.getSubShield() != 0F) {
-          setSubShield(other.getSubShield());
+        if (other.getPlayerNum() != 0) {
+          setPlayerNum(other.getPlayerNum());
         }
         if (other.getShield() != 0F) {
           setShield(other.getShield());
         }
-        if (other.getAbsorbType() != 0) {
-          setAbsorbType(other.getAbsorbType());
-        }
-        if (other.getPlayerNum() != 0) {
-          setPlayerNum(other.getPlayerNum());
-        }
         if (other.getIsShieldBroken() != false) {
           setIsShieldBroken(other.getIsShieldBroken());
         }
+        if (other.getSubShield() != 0F) {
+          setSubShield(other.getSubShield());
+        }
         if (other.getMaxShield() != 0F) {
           setMaxShield(other.getMaxShield());
+        }
+        if (other.getAbsorbType() != 0) {
+          setAbsorbType(other.getAbsorbType());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -621,102 +621,9 @@ public final class AbilityMixinElementShieldOuterClass {
         return this;
       }
 
-      private float subShield_ ;
-      /**
-       * <code>float sub_shield = 10;</code>
-       * @return The subShield.
-       */
-      @java.lang.Override
-      public float getSubShield() {
-        return subShield_;
-      }
-      /**
-       * <code>float sub_shield = 10;</code>
-       * @param value The subShield to set.
-       * @return This builder for chaining.
-       */
-      public Builder setSubShield(float value) {
-        
-        subShield_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>float sub_shield = 10;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearSubShield() {
-        
-        subShield_ = 0F;
-        onChanged();
-        return this;
-      }
-
-      private float shield_ ;
-      /**
-       * <code>float shield = 8;</code>
-       * @return The shield.
-       */
-      @java.lang.Override
-      public float getShield() {
-        return shield_;
-      }
-      /**
-       * <code>float shield = 8;</code>
-       * @param value The shield to set.
-       * @return This builder for chaining.
-       */
-      public Builder setShield(float value) {
-        
-        shield_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>float shield = 8;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearShield() {
-        
-        shield_ = 0F;
-        onChanged();
-        return this;
-      }
-
-      private int absorbType_ ;
-      /**
-       * <code>uint32 absorb_type = 1;</code>
-       * @return The absorbType.
-       */
-      @java.lang.Override
-      public int getAbsorbType() {
-        return absorbType_;
-      }
-      /**
-       * <code>uint32 absorb_type = 1;</code>
-       * @param value The absorbType to set.
-       * @return This builder for chaining.
-       */
-      public Builder setAbsorbType(int value) {
-        
-        absorbType_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 absorb_type = 1;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearAbsorbType() {
-        
-        absorbType_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int playerNum_ ;
       /**
-       * <code>uint32 player_num = 4;</code>
+       * <code>uint32 player_num = 9;</code>
        * @return The playerNum.
        */
       @java.lang.Override
@@ -724,7 +631,7 @@ public final class AbilityMixinElementShieldOuterClass {
         return playerNum_;
       }
       /**
-       * <code>uint32 player_num = 4;</code>
+       * <code>uint32 player_num = 9;</code>
        * @param value The playerNum to set.
        * @return This builder for chaining.
        */
@@ -735,7 +642,7 @@ public final class AbilityMixinElementShieldOuterClass {
         return this;
       }
       /**
-       * <code>uint32 player_num = 4;</code>
+       * <code>uint32 player_num = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearPlayerNum() {
@@ -745,9 +652,40 @@ public final class AbilityMixinElementShieldOuterClass {
         return this;
       }
 
+      private float shield_ ;
+      /**
+       * <code>float shield = 5;</code>
+       * @return The shield.
+       */
+      @java.lang.Override
+      public float getShield() {
+        return shield_;
+      }
+      /**
+       * <code>float shield = 5;</code>
+       * @param value The shield to set.
+       * @return This builder for chaining.
+       */
+      public Builder setShield(float value) {
+        
+        shield_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>float shield = 5;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearShield() {
+        
+        shield_ = 0F;
+        onChanged();
+        return this;
+      }
+
       private boolean isShieldBroken_ ;
       /**
-       * <code>bool is_shield_broken = 9;</code>
+       * <code>bool is_shield_broken = 8;</code>
        * @return The isShieldBroken.
        */
       @java.lang.Override
@@ -755,7 +693,7 @@ public final class AbilityMixinElementShieldOuterClass {
         return isShieldBroken_;
       }
       /**
-       * <code>bool is_shield_broken = 9;</code>
+       * <code>bool is_shield_broken = 8;</code>
        * @param value The isShieldBroken to set.
        * @return This builder for chaining.
        */
@@ -766,7 +704,7 @@ public final class AbilityMixinElementShieldOuterClass {
         return this;
       }
       /**
-       * <code>bool is_shield_broken = 9;</code>
+       * <code>bool is_shield_broken = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsShieldBroken() {
@@ -776,9 +714,40 @@ public final class AbilityMixinElementShieldOuterClass {
         return this;
       }
 
+      private float subShield_ ;
+      /**
+       * <code>float sub_shield = 4;</code>
+       * @return The subShield.
+       */
+      @java.lang.Override
+      public float getSubShield() {
+        return subShield_;
+      }
+      /**
+       * <code>float sub_shield = 4;</code>
+       * @param value The subShield to set.
+       * @return This builder for chaining.
+       */
+      public Builder setSubShield(float value) {
+        
+        subShield_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>float sub_shield = 4;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearSubShield() {
+        
+        subShield_ = 0F;
+        onChanged();
+        return this;
+      }
+
       private float maxShield_ ;
       /**
-       * <code>float max_shield = 12;</code>
+       * <code>float max_shield = 13;</code>
        * @return The maxShield.
        */
       @java.lang.Override
@@ -786,7 +755,7 @@ public final class AbilityMixinElementShieldOuterClass {
         return maxShield_;
       }
       /**
-       * <code>float max_shield = 12;</code>
+       * <code>float max_shield = 13;</code>
        * @param value The maxShield to set.
        * @return This builder for chaining.
        */
@@ -797,12 +766,43 @@ public final class AbilityMixinElementShieldOuterClass {
         return this;
       }
       /**
-       * <code>float max_shield = 12;</code>
+       * <code>float max_shield = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearMaxShield() {
         
         maxShield_ = 0F;
+        onChanged();
+        return this;
+      }
+
+      private int absorbType_ ;
+      /**
+       * <code>uint32 absorb_type = 10;</code>
+       * @return The absorbType.
+       */
+      @java.lang.Override
+      public int getAbsorbType() {
+        return absorbType_;
+      }
+      /**
+       * <code>uint32 absorb_type = 10;</code>
+       * @param value The absorbType to set.
+       * @return This builder for chaining.
+       */
+      public Builder setAbsorbType(int value) {
+        
+        absorbType_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 absorb_type = 10;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearAbsorbType() {
+        
+        absorbType_ = 0;
         onChanged();
         return this;
       }
@@ -874,10 +874,10 @@ public final class AbilityMixinElementShieldOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\037AbilityMixinElementShield.proto\"\226\001\n\031Ab" +
-      "ilityMixinElementShield\022\022\n\nsub_shield\030\n " +
-      "\001(\002\022\016\n\006shield\030\010 \001(\002\022\023\n\013absorb_type\030\001 \001(\r" +
-      "\022\022\n\nplayer_num\030\004 \001(\r\022\030\n\020is_shield_broken" +
-      "\030\t \001(\010\022\022\n\nmax_shield\030\014 \001(\002B\033\n\031emu.grassc" +
+      "ilityMixinElementShield\022\022\n\nplayer_num\030\t " +
+      "\001(\r\022\016\n\006shield\030\005 \001(\002\022\030\n\020is_shield_broken\030" +
+      "\010 \001(\010\022\022\n\nsub_shield\030\004 \001(\002\022\022\n\nmax_shield\030" +
+      "\r \001(\002\022\023\n\013absorb_type\030\n \001(\rB\033\n\031emu.grassc" +
       "utter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -889,7 +889,7 @@ public final class AbilityMixinElementShieldOuterClass {
     internal_static_AbilityMixinElementShield_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_AbilityMixinElementShield_descriptor,
-        new java.lang.String[] { "SubShield", "Shield", "AbsorbType", "PlayerNum", "IsShieldBroken", "MaxShield", });
+        new java.lang.String[] { "PlayerNum", "Shield", "IsShieldBroken", "SubShield", "MaxShield", "AbsorbType", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

@@ -19,7 +19,7 @@ public final class StartBuoyantCombatGalleryRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 gallery_level = 12;</code>
+     * <code>uint32 gallery_level = 6;</code>
      * @return The galleryLevel.
      */
     int getGalleryLevel();
@@ -31,16 +31,20 @@ public final class StartBuoyantCombatGalleryRspOuterClass {
     int getRetcode();
 
     /**
-     * <code>uint32 gallery_id = 8;</code>
+     * <code>uint32 gallery_id = 12;</code>
      * @return The galleryId.
      */
     int getGalleryId();
   }
   /**
    * <pre>
-   * CmdId: 8680
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 8969;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code StartBuoyantCombatGalleryRsp}
@@ -92,14 +96,14 @@ public final class StartBuoyantCombatGalleryRspOuterClass {
               retcode_ = input.readInt32();
               break;
             }
-            case 64: {
+            case 48: {
 
-              galleryId_ = input.readUInt32();
+              galleryLevel_ = input.readUInt32();
               break;
             }
             case 96: {
 
-              galleryLevel_ = input.readUInt32();
+              galleryId_ = input.readUInt32();
               break;
             }
             default: {
@@ -134,10 +138,10 @@ public final class StartBuoyantCombatGalleryRspOuterClass {
               emu.grasscutter.net.proto.StartBuoyantCombatGalleryRspOuterClass.StartBuoyantCombatGalleryRsp.class, emu.grasscutter.net.proto.StartBuoyantCombatGalleryRspOuterClass.StartBuoyantCombatGalleryRsp.Builder.class);
     }
 
-    public static final int GALLERY_LEVEL_FIELD_NUMBER = 12;
+    public static final int GALLERY_LEVEL_FIELD_NUMBER = 6;
     private int galleryLevel_;
     /**
-     * <code>uint32 gallery_level = 12;</code>
+     * <code>uint32 gallery_level = 6;</code>
      * @return The galleryLevel.
      */
     @java.lang.Override
@@ -156,10 +160,10 @@ public final class StartBuoyantCombatGalleryRspOuterClass {
       return retcode_;
     }
 
-    public static final int GALLERY_ID_FIELD_NUMBER = 8;
+    public static final int GALLERY_ID_FIELD_NUMBER = 12;
     private int galleryId_;
     /**
-     * <code>uint32 gallery_id = 8;</code>
+     * <code>uint32 gallery_id = 12;</code>
      * @return The galleryId.
      */
     @java.lang.Override
@@ -184,11 +188,11 @@ public final class StartBuoyantCombatGalleryRspOuterClass {
       if (retcode_ != 0) {
         output.writeInt32(5, retcode_);
       }
-      if (galleryId_ != 0) {
-        output.writeUInt32(8, galleryId_);
-      }
       if (galleryLevel_ != 0) {
-        output.writeUInt32(12, galleryLevel_);
+        output.writeUInt32(6, galleryLevel_);
+      }
+      if (galleryId_ != 0) {
+        output.writeUInt32(12, galleryId_);
       }
       unknownFields.writeTo(output);
     }
@@ -203,13 +207,13 @@ public final class StartBuoyantCombatGalleryRspOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeInt32Size(5, retcode_);
       }
-      if (galleryId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, galleryId_);
-      }
       if (galleryLevel_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, galleryLevel_);
+          .computeUInt32Size(6, galleryLevel_);
+      }
+      if (galleryId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(12, galleryId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -346,9 +350,13 @@ public final class StartBuoyantCombatGalleryRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 8680
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 8969;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code StartBuoyantCombatGalleryRsp}
@@ -511,7 +519,7 @@ public final class StartBuoyantCombatGalleryRspOuterClass {
 
       private int galleryLevel_ ;
       /**
-       * <code>uint32 gallery_level = 12;</code>
+       * <code>uint32 gallery_level = 6;</code>
        * @return The galleryLevel.
        */
       @java.lang.Override
@@ -519,7 +527,7 @@ public final class StartBuoyantCombatGalleryRspOuterClass {
         return galleryLevel_;
       }
       /**
-       * <code>uint32 gallery_level = 12;</code>
+       * <code>uint32 gallery_level = 6;</code>
        * @param value The galleryLevel to set.
        * @return This builder for chaining.
        */
@@ -530,7 +538,7 @@ public final class StartBuoyantCombatGalleryRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 gallery_level = 12;</code>
+       * <code>uint32 gallery_level = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearGalleryLevel() {
@@ -573,7 +581,7 @@ public final class StartBuoyantCombatGalleryRspOuterClass {
 
       private int galleryId_ ;
       /**
-       * <code>uint32 gallery_id = 8;</code>
+       * <code>uint32 gallery_id = 12;</code>
        * @return The galleryId.
        */
       @java.lang.Override
@@ -581,7 +589,7 @@ public final class StartBuoyantCombatGalleryRspOuterClass {
         return galleryId_;
       }
       /**
-       * <code>uint32 gallery_id = 8;</code>
+       * <code>uint32 gallery_id = 12;</code>
        * @param value The galleryId to set.
        * @return This builder for chaining.
        */
@@ -592,7 +600,7 @@ public final class StartBuoyantCombatGalleryRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 gallery_id = 8;</code>
+       * <code>uint32 gallery_id = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearGalleryId() {
@@ -670,8 +678,8 @@ public final class StartBuoyantCombatGalleryRspOuterClass {
     java.lang.String[] descriptorData = {
       "\n\"StartBuoyantCombatGalleryRsp.proto\"Z\n\034" +
       "StartBuoyantCombatGalleryRsp\022\025\n\rgallery_" +
-      "level\030\014 \001(\r\022\017\n\007retcode\030\005 \001(\005\022\022\n\ngallery_" +
-      "id\030\010 \001(\rB\033\n\031emu.grasscutter.net.protob\006p" +
+      "level\030\006 \001(\r\022\017\n\007retcode\030\005 \001(\005\022\022\n\ngallery_" +
+      "id\030\014 \001(\rB\033\n\031emu.grasscutter.net.protob\006p" +
       "roto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

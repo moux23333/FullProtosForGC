@@ -19,7 +19,7 @@ public final class GCGTokenOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 value = 11;</code>
+     * <code>uint32 value = 14;</code>
      * @return The value.
      */
     int getValue();
@@ -80,7 +80,7 @@ public final class GCGTokenOuterClass {
               key_ = input.readUInt32();
               break;
             }
-            case 88: {
+            case 112: {
 
               value_ = input.readUInt32();
               break;
@@ -117,10 +117,10 @@ public final class GCGTokenOuterClass {
               emu.grasscutter.net.proto.GCGTokenOuterClass.GCGToken.class, emu.grasscutter.net.proto.GCGTokenOuterClass.GCGToken.Builder.class);
     }
 
-    public static final int VALUE_FIELD_NUMBER = 11;
+    public static final int VALUE_FIELD_NUMBER = 14;
     private int value_;
     /**
-     * <code>uint32 value = 11;</code>
+     * <code>uint32 value = 14;</code>
      * @return The value.
      */
     @java.lang.Override
@@ -157,7 +157,7 @@ public final class GCGTokenOuterClass {
         output.writeUInt32(4, key_);
       }
       if (value_ != 0) {
-        output.writeUInt32(11, value_);
+        output.writeUInt32(14, value_);
       }
       unknownFields.writeTo(output);
     }
@@ -174,7 +174,7 @@ public final class GCGTokenOuterClass {
       }
       if (value_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, value_);
+          .computeUInt32Size(14, value_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -460,7 +460,7 @@ public final class GCGTokenOuterClass {
 
       private int value_ ;
       /**
-       * <code>uint32 value = 11;</code>
+       * <code>uint32 value = 14;</code>
        * @return The value.
        */
       @java.lang.Override
@@ -468,7 +468,7 @@ public final class GCGTokenOuterClass {
         return value_;
       }
       /**
-       * <code>uint32 value = 11;</code>
+       * <code>uint32 value = 14;</code>
        * @param value The value to set.
        * @return This builder for chaining.
        */
@@ -479,7 +479,7 @@ public final class GCGTokenOuterClass {
         return this;
       }
       /**
-       * <code>uint32 value = 11;</code>
+       * <code>uint32 value = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearValue() {
@@ -586,7 +586,7 @@ public final class GCGTokenOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\016GCGToken.proto\"&\n\010GCGToken\022\r\n\005value\030\013 " +
+      "\n\016GCGToken.proto\"&\n\010GCGToken\022\r\n\005value\030\016 " +
       "\001(\r\022\013\n\003key\030\004 \001(\rB\033\n\031emu.grasscutter.net." +
       "protob\006proto3"
     };

@@ -19,17 +19,21 @@ public final class DelBackupAvatarTeamReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 backup_avatar_team_id = 4;</code>
+     * <code>uint32 backup_avatar_team_id = 10;</code>
      * @return The backupAvatarTeamId.
      */
     int getBackupAvatarTeamId();
   }
   /**
    * <pre>
-   * CmdId: 1731
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 1698;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code DelBackupAvatarTeamReq}
@@ -76,7 +80,7 @@ public final class DelBackupAvatarTeamReqOuterClass {
             case 0:
               done = true;
               break;
-            case 32: {
+            case 80: {
 
               backupAvatarTeamId_ = input.readUInt32();
               break;
@@ -113,10 +117,10 @@ public final class DelBackupAvatarTeamReqOuterClass {
               emu.grasscutter.net.proto.DelBackupAvatarTeamReqOuterClass.DelBackupAvatarTeamReq.class, emu.grasscutter.net.proto.DelBackupAvatarTeamReqOuterClass.DelBackupAvatarTeamReq.Builder.class);
     }
 
-    public static final int BACKUP_AVATAR_TEAM_ID_FIELD_NUMBER = 4;
+    public static final int BACKUP_AVATAR_TEAM_ID_FIELD_NUMBER = 10;
     private int backupAvatarTeamId_;
     /**
-     * <code>uint32 backup_avatar_team_id = 4;</code>
+     * <code>uint32 backup_avatar_team_id = 10;</code>
      * @return The backupAvatarTeamId.
      */
     @java.lang.Override
@@ -139,7 +143,7 @@ public final class DelBackupAvatarTeamReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (backupAvatarTeamId_ != 0) {
-        output.writeUInt32(4, backupAvatarTeamId_);
+        output.writeUInt32(10, backupAvatarTeamId_);
       }
       unknownFields.writeTo(output);
     }
@@ -152,7 +156,7 @@ public final class DelBackupAvatarTeamReqOuterClass {
       size = 0;
       if (backupAvatarTeamId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, backupAvatarTeamId_);
+          .computeUInt32Size(10, backupAvatarTeamId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -281,10 +285,14 @@ public final class DelBackupAvatarTeamReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 1731
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 1698;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code DelBackupAvatarTeamReq}
@@ -435,7 +443,7 @@ public final class DelBackupAvatarTeamReqOuterClass {
 
       private int backupAvatarTeamId_ ;
       /**
-       * <code>uint32 backup_avatar_team_id = 4;</code>
+       * <code>uint32 backup_avatar_team_id = 10;</code>
        * @return The backupAvatarTeamId.
        */
       @java.lang.Override
@@ -443,7 +451,7 @@ public final class DelBackupAvatarTeamReqOuterClass {
         return backupAvatarTeamId_;
       }
       /**
-       * <code>uint32 backup_avatar_team_id = 4;</code>
+       * <code>uint32 backup_avatar_team_id = 10;</code>
        * @param value The backupAvatarTeamId to set.
        * @return This builder for chaining.
        */
@@ -454,7 +462,7 @@ public final class DelBackupAvatarTeamReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 backup_avatar_team_id = 4;</code>
+       * <code>uint32 backup_avatar_team_id = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearBackupAvatarTeamId() {
@@ -532,7 +540,7 @@ public final class DelBackupAvatarTeamReqOuterClass {
     java.lang.String[] descriptorData = {
       "\n\034DelBackupAvatarTeamReq.proto\"7\n\026DelBac" +
       "kupAvatarTeamReq\022\035\n\025backup_avatar_team_i" +
-      "d\030\004 \001(\rB\033\n\031emu.grasscutter.net.protob\006pr" +
+      "d\030\n \001(\rB\033\n\031emu.grasscutter.net.protob\006pr" +
       "oto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

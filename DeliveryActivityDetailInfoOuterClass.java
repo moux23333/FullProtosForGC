@@ -19,13 +19,13 @@ public final class DeliveryActivityDetailInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 day_index = 14;</code>
+     * <code>uint32 day_index = 1;</code>
      * @return The dayIndex.
      */
     int getDayIndex();
 
     /**
-     * <code>bool is_taken_reward = 13;</code>
+     * <code>bool is_taken_reward = 11;</code>
      * @return The isTakenReward.
      */
     boolean getIsTakenReward();
@@ -94,6 +94,11 @@ public final class DeliveryActivityDetailInfoOuterClass {
             case 0:
               done = true;
               break;
+            case 8: {
+
+              dayIndex_ = input.readUInt32();
+              break;
+            }
             case 32: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 finishedDeliveryQuestIndex_ = newIntList();
@@ -115,14 +120,9 @@ public final class DeliveryActivityDetailInfoOuterClass {
               input.popLimit(limit);
               break;
             }
-            case 104: {
+            case 88: {
 
               isTakenReward_ = input.readBool();
-              break;
-            }
-            case 112: {
-
-              dayIndex_ = input.readUInt32();
               break;
             }
             default: {
@@ -160,10 +160,10 @@ public final class DeliveryActivityDetailInfoOuterClass {
               emu.grasscutter.net.proto.DeliveryActivityDetailInfoOuterClass.DeliveryActivityDetailInfo.class, emu.grasscutter.net.proto.DeliveryActivityDetailInfoOuterClass.DeliveryActivityDetailInfo.Builder.class);
     }
 
-    public static final int DAY_INDEX_FIELD_NUMBER = 14;
+    public static final int DAY_INDEX_FIELD_NUMBER = 1;
     private int dayIndex_;
     /**
-     * <code>uint32 day_index = 14;</code>
+     * <code>uint32 day_index = 1;</code>
      * @return The dayIndex.
      */
     @java.lang.Override
@@ -171,10 +171,10 @@ public final class DeliveryActivityDetailInfoOuterClass {
       return dayIndex_;
     }
 
-    public static final int IS_TAKEN_REWARD_FIELD_NUMBER = 13;
+    public static final int IS_TAKEN_REWARD_FIELD_NUMBER = 11;
     private boolean isTakenReward_;
     /**
-     * <code>bool is_taken_reward = 13;</code>
+     * <code>bool is_taken_reward = 11;</code>
      * @return The isTakenReward.
      */
     @java.lang.Override
@@ -225,6 +225,9 @@ public final class DeliveryActivityDetailInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
+      if (dayIndex_ != 0) {
+        output.writeUInt32(1, dayIndex_);
+      }
       if (getFinishedDeliveryQuestIndexList().size() > 0) {
         output.writeUInt32NoTag(34);
         output.writeUInt32NoTag(finishedDeliveryQuestIndexMemoizedSerializedSize);
@@ -233,10 +236,7 @@ public final class DeliveryActivityDetailInfoOuterClass {
         output.writeUInt32NoTag(finishedDeliveryQuestIndex_.getInt(i));
       }
       if (isTakenReward_ != false) {
-        output.writeBool(13, isTakenReward_);
-      }
-      if (dayIndex_ != 0) {
-        output.writeUInt32(14, dayIndex_);
+        output.writeBool(11, isTakenReward_);
       }
       unknownFields.writeTo(output);
     }
@@ -247,6 +247,10 @@ public final class DeliveryActivityDetailInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (dayIndex_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(1, dayIndex_);
+      }
       {
         int dataSize = 0;
         for (int i = 0; i < finishedDeliveryQuestIndex_.size(); i++) {
@@ -263,11 +267,7 @@ public final class DeliveryActivityDetailInfoOuterClass {
       }
       if (isTakenReward_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(13, isTakenReward_);
-      }
-      if (dayIndex_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, dayIndex_);
+          .computeBoolSize(11, isTakenReward_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -579,7 +579,7 @@ public final class DeliveryActivityDetailInfoOuterClass {
 
       private int dayIndex_ ;
       /**
-       * <code>uint32 day_index = 14;</code>
+       * <code>uint32 day_index = 1;</code>
        * @return The dayIndex.
        */
       @java.lang.Override
@@ -587,7 +587,7 @@ public final class DeliveryActivityDetailInfoOuterClass {
         return dayIndex_;
       }
       /**
-       * <code>uint32 day_index = 14;</code>
+       * <code>uint32 day_index = 1;</code>
        * @param value The dayIndex to set.
        * @return This builder for chaining.
        */
@@ -598,7 +598,7 @@ public final class DeliveryActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 day_index = 14;</code>
+       * <code>uint32 day_index = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearDayIndex() {
@@ -610,7 +610,7 @@ public final class DeliveryActivityDetailInfoOuterClass {
 
       private boolean isTakenReward_ ;
       /**
-       * <code>bool is_taken_reward = 13;</code>
+       * <code>bool is_taken_reward = 11;</code>
        * @return The isTakenReward.
        */
       @java.lang.Override
@@ -618,7 +618,7 @@ public final class DeliveryActivityDetailInfoOuterClass {
         return isTakenReward_;
       }
       /**
-       * <code>bool is_taken_reward = 13;</code>
+       * <code>bool is_taken_reward = 11;</code>
        * @param value The isTakenReward to set.
        * @return This builder for chaining.
        */
@@ -629,7 +629,7 @@ public final class DeliveryActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>bool is_taken_reward = 13;</code>
+       * <code>bool is_taken_reward = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsTakenReward() {
@@ -785,8 +785,8 @@ public final class DeliveryActivityDetailInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n DeliveryActivityDetailInfo.proto\"o\n\032De" +
-      "liveryActivityDetailInfo\022\021\n\tday_index\030\016 " +
-      "\001(\r\022\027\n\017is_taken_reward\030\r \001(\010\022%\n\035finished" +
+      "liveryActivityDetailInfo\022\021\n\tday_index\030\001 " +
+      "\001(\r\022\027\n\017is_taken_reward\030\013 \001(\010\022%\n\035finished" +
       "_delivery_quest_index\030\004 \003(\rB\033\n\031emu.grass" +
       "cutter.net.protob\006proto3"
     };

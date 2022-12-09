@@ -19,52 +19,56 @@ public final class GCGTCTavernInfoNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_last_duel_win = 14;</code>
-     * @return The isLastDuelWin.
-     */
-    boolean getIsLastDuelWin();
-
-    /**
-     * <code>uint32 level_id = 11;</code>
+     * <code>uint32 level_id = 5;</code>
      * @return The levelId.
      */
     int getLevelId();
 
     /**
-     * <code>bool is_owner_in_duel = 5;</code>
-     * @return The isOwnerInDuel.
+     * <code>bool Unk3300_IMFJBNFMCHM = 11;</code>
+     * @return The unk3300IMFJBNFMCHM.
      */
-    boolean getIsOwnerInDuel();
+    boolean getUnk3300IMFJBNFMCHM();
 
     /**
-     * <code>uint32 point_id = 3;</code>
+     * <code>bool Unk3300_MBGMHBNBKBK = 8;</code>
+     * @return The unk3300MBGMHBNBKBK.
+     */
+    boolean getUnk3300MBGMHBNBKBK();
+
+    /**
+     * <code>uint32 point_id = 4;</code>
      * @return The pointId.
      */
     int getPointId();
 
     /**
-     * <code>uint32 avatar_id = 12;</code>
+     * <code>uint32 element_type = 6;</code>
+     * @return The elementType.
+     */
+    int getElementType();
+
+    /**
+     * <code>uint32 avatar_id = 9;</code>
      * @return The avatarId.
      */
     int getAvatarId();
 
     /**
-     * <code>uint32 character_id = 7;</code>
+     * <code>uint32 character_id = 12;</code>
      * @return The characterId.
      */
     int getCharacterId();
-
-    /**
-     * <code>uint32 element_type = 10;</code>
-     * @return The elementType.
-     */
-    int getElementType();
   }
   /**
    * <pre>
-   * CmdId: 7011
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 7268;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code GCGTCTavernInfoNotify}
@@ -111,39 +115,39 @@ public final class GCGTCTavernInfoNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 24: {
+            case 32: {
 
               pointId_ = input.readUInt32();
               break;
             }
             case 40: {
 
-              isOwnerInDuel_ = input.readBool();
+              levelId_ = input.readUInt32();
               break;
             }
-            case 56: {
-
-              characterId_ = input.readUInt32();
-              break;
-            }
-            case 80: {
+            case 48: {
 
               elementType_ = input.readUInt32();
               break;
             }
-            case 88: {
+            case 64: {
 
-              levelId_ = input.readUInt32();
+              unk3300MBGMHBNBKBK_ = input.readBool();
               break;
             }
-            case 96: {
+            case 72: {
 
               avatarId_ = input.readUInt32();
               break;
             }
-            case 112: {
+            case 88: {
 
-              isLastDuelWin_ = input.readBool();
+              unk3300IMFJBNFMCHM_ = input.readBool();
+              break;
+            }
+            case 96: {
+
+              characterId_ = input.readUInt32();
               break;
             }
             default: {
@@ -178,21 +182,10 @@ public final class GCGTCTavernInfoNotifyOuterClass {
               emu.grasscutter.net.proto.GCGTCTavernInfoNotifyOuterClass.GCGTCTavernInfoNotify.class, emu.grasscutter.net.proto.GCGTCTavernInfoNotifyOuterClass.GCGTCTavernInfoNotify.Builder.class);
     }
 
-    public static final int IS_LAST_DUEL_WIN_FIELD_NUMBER = 14;
-    private boolean isLastDuelWin_;
-    /**
-     * <code>bool is_last_duel_win = 14;</code>
-     * @return The isLastDuelWin.
-     */
-    @java.lang.Override
-    public boolean getIsLastDuelWin() {
-      return isLastDuelWin_;
-    }
-
-    public static final int LEVEL_ID_FIELD_NUMBER = 11;
+    public static final int LEVEL_ID_FIELD_NUMBER = 5;
     private int levelId_;
     /**
-     * <code>uint32 level_id = 11;</code>
+     * <code>uint32 level_id = 5;</code>
      * @return The levelId.
      */
     @java.lang.Override
@@ -200,21 +193,32 @@ public final class GCGTCTavernInfoNotifyOuterClass {
       return levelId_;
     }
 
-    public static final int IS_OWNER_IN_DUEL_FIELD_NUMBER = 5;
-    private boolean isOwnerInDuel_;
+    public static final int UNK3300_IMFJBNFMCHM_FIELD_NUMBER = 11;
+    private boolean unk3300IMFJBNFMCHM_;
     /**
-     * <code>bool is_owner_in_duel = 5;</code>
-     * @return The isOwnerInDuel.
+     * <code>bool Unk3300_IMFJBNFMCHM = 11;</code>
+     * @return The unk3300IMFJBNFMCHM.
      */
     @java.lang.Override
-    public boolean getIsOwnerInDuel() {
-      return isOwnerInDuel_;
+    public boolean getUnk3300IMFJBNFMCHM() {
+      return unk3300IMFJBNFMCHM_;
     }
 
-    public static final int POINT_ID_FIELD_NUMBER = 3;
+    public static final int UNK3300_MBGMHBNBKBK_FIELD_NUMBER = 8;
+    private boolean unk3300MBGMHBNBKBK_;
+    /**
+     * <code>bool Unk3300_MBGMHBNBKBK = 8;</code>
+     * @return The unk3300MBGMHBNBKBK.
+     */
+    @java.lang.Override
+    public boolean getUnk3300MBGMHBNBKBK() {
+      return unk3300MBGMHBNBKBK_;
+    }
+
+    public static final int POINT_ID_FIELD_NUMBER = 4;
     private int pointId_;
     /**
-     * <code>uint32 point_id = 3;</code>
+     * <code>uint32 point_id = 4;</code>
      * @return The pointId.
      */
     @java.lang.Override
@@ -222,10 +226,21 @@ public final class GCGTCTavernInfoNotifyOuterClass {
       return pointId_;
     }
 
-    public static final int AVATAR_ID_FIELD_NUMBER = 12;
+    public static final int ELEMENT_TYPE_FIELD_NUMBER = 6;
+    private int elementType_;
+    /**
+     * <code>uint32 element_type = 6;</code>
+     * @return The elementType.
+     */
+    @java.lang.Override
+    public int getElementType() {
+      return elementType_;
+    }
+
+    public static final int AVATAR_ID_FIELD_NUMBER = 9;
     private int avatarId_;
     /**
-     * <code>uint32 avatar_id = 12;</code>
+     * <code>uint32 avatar_id = 9;</code>
      * @return The avatarId.
      */
     @java.lang.Override
@@ -233,26 +248,15 @@ public final class GCGTCTavernInfoNotifyOuterClass {
       return avatarId_;
     }
 
-    public static final int CHARACTER_ID_FIELD_NUMBER = 7;
+    public static final int CHARACTER_ID_FIELD_NUMBER = 12;
     private int characterId_;
     /**
-     * <code>uint32 character_id = 7;</code>
+     * <code>uint32 character_id = 12;</code>
      * @return The characterId.
      */
     @java.lang.Override
     public int getCharacterId() {
       return characterId_;
-    }
-
-    public static final int ELEMENT_TYPE_FIELD_NUMBER = 10;
-    private int elementType_;
-    /**
-     * <code>uint32 element_type = 10;</code>
-     * @return The elementType.
-     */
-    @java.lang.Override
-    public int getElementType() {
-      return elementType_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -270,25 +274,25 @@ public final class GCGTCTavernInfoNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (pointId_ != 0) {
-        output.writeUInt32(3, pointId_);
-      }
-      if (isOwnerInDuel_ != false) {
-        output.writeBool(5, isOwnerInDuel_);
-      }
-      if (characterId_ != 0) {
-        output.writeUInt32(7, characterId_);
-      }
-      if (elementType_ != 0) {
-        output.writeUInt32(10, elementType_);
+        output.writeUInt32(4, pointId_);
       }
       if (levelId_ != 0) {
-        output.writeUInt32(11, levelId_);
+        output.writeUInt32(5, levelId_);
+      }
+      if (elementType_ != 0) {
+        output.writeUInt32(6, elementType_);
+      }
+      if (unk3300MBGMHBNBKBK_ != false) {
+        output.writeBool(8, unk3300MBGMHBNBKBK_);
       }
       if (avatarId_ != 0) {
-        output.writeUInt32(12, avatarId_);
+        output.writeUInt32(9, avatarId_);
       }
-      if (isLastDuelWin_ != false) {
-        output.writeBool(14, isLastDuelWin_);
+      if (unk3300IMFJBNFMCHM_ != false) {
+        output.writeBool(11, unk3300IMFJBNFMCHM_);
+      }
+      if (characterId_ != 0) {
+        output.writeUInt32(12, characterId_);
       }
       unknownFields.writeTo(output);
     }
@@ -301,31 +305,31 @@ public final class GCGTCTavernInfoNotifyOuterClass {
       size = 0;
       if (pointId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, pointId_);
-      }
-      if (isOwnerInDuel_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(5, isOwnerInDuel_);
-      }
-      if (characterId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, characterId_);
-      }
-      if (elementType_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, elementType_);
+          .computeUInt32Size(4, pointId_);
       }
       if (levelId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, levelId_);
+          .computeUInt32Size(5, levelId_);
+      }
+      if (elementType_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(6, elementType_);
+      }
+      if (unk3300MBGMHBNBKBK_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(8, unk3300MBGMHBNBKBK_);
       }
       if (avatarId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, avatarId_);
+          .computeUInt32Size(9, avatarId_);
       }
-      if (isLastDuelWin_ != false) {
+      if (unk3300IMFJBNFMCHM_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(14, isLastDuelWin_);
+          .computeBoolSize(11, unk3300IMFJBNFMCHM_);
+      }
+      if (characterId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(12, characterId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -342,20 +346,20 @@ public final class GCGTCTavernInfoNotifyOuterClass {
       }
       emu.grasscutter.net.proto.GCGTCTavernInfoNotifyOuterClass.GCGTCTavernInfoNotify other = (emu.grasscutter.net.proto.GCGTCTavernInfoNotifyOuterClass.GCGTCTavernInfoNotify) obj;
 
-      if (getIsLastDuelWin()
-          != other.getIsLastDuelWin()) return false;
       if (getLevelId()
           != other.getLevelId()) return false;
-      if (getIsOwnerInDuel()
-          != other.getIsOwnerInDuel()) return false;
+      if (getUnk3300IMFJBNFMCHM()
+          != other.getUnk3300IMFJBNFMCHM()) return false;
+      if (getUnk3300MBGMHBNBKBK()
+          != other.getUnk3300MBGMHBNBKBK()) return false;
       if (getPointId()
           != other.getPointId()) return false;
+      if (getElementType()
+          != other.getElementType()) return false;
       if (getAvatarId()
           != other.getAvatarId()) return false;
       if (getCharacterId()
           != other.getCharacterId()) return false;
-      if (getElementType()
-          != other.getElementType()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -367,22 +371,22 @@ public final class GCGTCTavernInfoNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + IS_LAST_DUEL_WIN_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsLastDuelWin());
       hash = (37 * hash) + LEVEL_ID_FIELD_NUMBER;
       hash = (53 * hash) + getLevelId();
-      hash = (37 * hash) + IS_OWNER_IN_DUEL_FIELD_NUMBER;
+      hash = (37 * hash) + UNK3300_IMFJBNFMCHM_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsOwnerInDuel());
+          getUnk3300IMFJBNFMCHM());
+      hash = (37 * hash) + UNK3300_MBGMHBNBKBK_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getUnk3300MBGMHBNBKBK());
       hash = (37 * hash) + POINT_ID_FIELD_NUMBER;
       hash = (53 * hash) + getPointId();
+      hash = (37 * hash) + ELEMENT_TYPE_FIELD_NUMBER;
+      hash = (53 * hash) + getElementType();
       hash = (37 * hash) + AVATAR_ID_FIELD_NUMBER;
       hash = (53 * hash) + getAvatarId();
       hash = (37 * hash) + CHARACTER_ID_FIELD_NUMBER;
       hash = (53 * hash) + getCharacterId();
-      hash = (37 * hash) + ELEMENT_TYPE_FIELD_NUMBER;
-      hash = (53 * hash) + getElementType();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -480,9 +484,13 @@ public final class GCGTCTavernInfoNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 7011
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 7268;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code GCGTCTavernInfoNotify}
@@ -522,19 +530,19 @@ public final class GCGTCTavernInfoNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        isLastDuelWin_ = false;
-
         levelId_ = 0;
 
-        isOwnerInDuel_ = false;
+        unk3300IMFJBNFMCHM_ = false;
+
+        unk3300MBGMHBNBKBK_ = false;
 
         pointId_ = 0;
+
+        elementType_ = 0;
 
         avatarId_ = 0;
 
         characterId_ = 0;
-
-        elementType_ = 0;
 
         return this;
       }
@@ -562,13 +570,13 @@ public final class GCGTCTavernInfoNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.GCGTCTavernInfoNotifyOuterClass.GCGTCTavernInfoNotify buildPartial() {
         emu.grasscutter.net.proto.GCGTCTavernInfoNotifyOuterClass.GCGTCTavernInfoNotify result = new emu.grasscutter.net.proto.GCGTCTavernInfoNotifyOuterClass.GCGTCTavernInfoNotify(this);
-        result.isLastDuelWin_ = isLastDuelWin_;
         result.levelId_ = levelId_;
-        result.isOwnerInDuel_ = isOwnerInDuel_;
+        result.unk3300IMFJBNFMCHM_ = unk3300IMFJBNFMCHM_;
+        result.unk3300MBGMHBNBKBK_ = unk3300MBGMHBNBKBK_;
         result.pointId_ = pointId_;
+        result.elementType_ = elementType_;
         result.avatarId_ = avatarId_;
         result.characterId_ = characterId_;
-        result.elementType_ = elementType_;
         onBuilt();
         return result;
       }
@@ -617,26 +625,26 @@ public final class GCGTCTavernInfoNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.GCGTCTavernInfoNotifyOuterClass.GCGTCTavernInfoNotify other) {
         if (other == emu.grasscutter.net.proto.GCGTCTavernInfoNotifyOuterClass.GCGTCTavernInfoNotify.getDefaultInstance()) return this;
-        if (other.getIsLastDuelWin() != false) {
-          setIsLastDuelWin(other.getIsLastDuelWin());
-        }
         if (other.getLevelId() != 0) {
           setLevelId(other.getLevelId());
         }
-        if (other.getIsOwnerInDuel() != false) {
-          setIsOwnerInDuel(other.getIsOwnerInDuel());
+        if (other.getUnk3300IMFJBNFMCHM() != false) {
+          setUnk3300IMFJBNFMCHM(other.getUnk3300IMFJBNFMCHM());
+        }
+        if (other.getUnk3300MBGMHBNBKBK() != false) {
+          setUnk3300MBGMHBNBKBK(other.getUnk3300MBGMHBNBKBK());
         }
         if (other.getPointId() != 0) {
           setPointId(other.getPointId());
+        }
+        if (other.getElementType() != 0) {
+          setElementType(other.getElementType());
         }
         if (other.getAvatarId() != 0) {
           setAvatarId(other.getAvatarId());
         }
         if (other.getCharacterId() != 0) {
           setCharacterId(other.getCharacterId());
-        }
-        if (other.getElementType() != 0) {
-          setElementType(other.getElementType());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -667,40 +675,9 @@ public final class GCGTCTavernInfoNotifyOuterClass {
         return this;
       }
 
-      private boolean isLastDuelWin_ ;
-      /**
-       * <code>bool is_last_duel_win = 14;</code>
-       * @return The isLastDuelWin.
-       */
-      @java.lang.Override
-      public boolean getIsLastDuelWin() {
-        return isLastDuelWin_;
-      }
-      /**
-       * <code>bool is_last_duel_win = 14;</code>
-       * @param value The isLastDuelWin to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsLastDuelWin(boolean value) {
-        
-        isLastDuelWin_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_last_duel_win = 14;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsLastDuelWin() {
-        
-        isLastDuelWin_ = false;
-        onChanged();
-        return this;
-      }
-
       private int levelId_ ;
       /**
-       * <code>uint32 level_id = 11;</code>
+       * <code>uint32 level_id = 5;</code>
        * @return The levelId.
        */
       @java.lang.Override
@@ -708,7 +685,7 @@ public final class GCGTCTavernInfoNotifyOuterClass {
         return levelId_;
       }
       /**
-       * <code>uint32 level_id = 11;</code>
+       * <code>uint32 level_id = 5;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
        */
@@ -719,7 +696,7 @@ public final class GCGTCTavernInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 level_id = 11;</code>
+       * <code>uint32 level_id = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearLevelId() {
@@ -729,40 +706,71 @@ public final class GCGTCTavernInfoNotifyOuterClass {
         return this;
       }
 
-      private boolean isOwnerInDuel_ ;
+      private boolean unk3300IMFJBNFMCHM_ ;
       /**
-       * <code>bool is_owner_in_duel = 5;</code>
-       * @return The isOwnerInDuel.
+       * <code>bool Unk3300_IMFJBNFMCHM = 11;</code>
+       * @return The unk3300IMFJBNFMCHM.
        */
       @java.lang.Override
-      public boolean getIsOwnerInDuel() {
-        return isOwnerInDuel_;
+      public boolean getUnk3300IMFJBNFMCHM() {
+        return unk3300IMFJBNFMCHM_;
       }
       /**
-       * <code>bool is_owner_in_duel = 5;</code>
-       * @param value The isOwnerInDuel to set.
+       * <code>bool Unk3300_IMFJBNFMCHM = 11;</code>
+       * @param value The unk3300IMFJBNFMCHM to set.
        * @return This builder for chaining.
        */
-      public Builder setIsOwnerInDuel(boolean value) {
+      public Builder setUnk3300IMFJBNFMCHM(boolean value) {
         
-        isOwnerInDuel_ = value;
+        unk3300IMFJBNFMCHM_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>bool is_owner_in_duel = 5;</code>
+       * <code>bool Unk3300_IMFJBNFMCHM = 11;</code>
        * @return This builder for chaining.
        */
-      public Builder clearIsOwnerInDuel() {
+      public Builder clearUnk3300IMFJBNFMCHM() {
         
-        isOwnerInDuel_ = false;
+        unk3300IMFJBNFMCHM_ = false;
+        onChanged();
+        return this;
+      }
+
+      private boolean unk3300MBGMHBNBKBK_ ;
+      /**
+       * <code>bool Unk3300_MBGMHBNBKBK = 8;</code>
+       * @return The unk3300MBGMHBNBKBK.
+       */
+      @java.lang.Override
+      public boolean getUnk3300MBGMHBNBKBK() {
+        return unk3300MBGMHBNBKBK_;
+      }
+      /**
+       * <code>bool Unk3300_MBGMHBNBKBK = 8;</code>
+       * @param value The unk3300MBGMHBNBKBK to set.
+       * @return This builder for chaining.
+       */
+      public Builder setUnk3300MBGMHBNBKBK(boolean value) {
+        
+        unk3300MBGMHBNBKBK_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool Unk3300_MBGMHBNBKBK = 8;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearUnk3300MBGMHBNBKBK() {
+        
+        unk3300MBGMHBNBKBK_ = false;
         onChanged();
         return this;
       }
 
       private int pointId_ ;
       /**
-       * <code>uint32 point_id = 3;</code>
+       * <code>uint32 point_id = 4;</code>
        * @return The pointId.
        */
       @java.lang.Override
@@ -770,7 +778,7 @@ public final class GCGTCTavernInfoNotifyOuterClass {
         return pointId_;
       }
       /**
-       * <code>uint32 point_id = 3;</code>
+       * <code>uint32 point_id = 4;</code>
        * @param value The pointId to set.
        * @return This builder for chaining.
        */
@@ -781,7 +789,7 @@ public final class GCGTCTavernInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 point_id = 3;</code>
+       * <code>uint32 point_id = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearPointId() {
@@ -791,9 +799,40 @@ public final class GCGTCTavernInfoNotifyOuterClass {
         return this;
       }
 
+      private int elementType_ ;
+      /**
+       * <code>uint32 element_type = 6;</code>
+       * @return The elementType.
+       */
+      @java.lang.Override
+      public int getElementType() {
+        return elementType_;
+      }
+      /**
+       * <code>uint32 element_type = 6;</code>
+       * @param value The elementType to set.
+       * @return This builder for chaining.
+       */
+      public Builder setElementType(int value) {
+        
+        elementType_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 element_type = 6;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearElementType() {
+        
+        elementType_ = 0;
+        onChanged();
+        return this;
+      }
+
       private int avatarId_ ;
       /**
-       * <code>uint32 avatar_id = 12;</code>
+       * <code>uint32 avatar_id = 9;</code>
        * @return The avatarId.
        */
       @java.lang.Override
@@ -801,7 +840,7 @@ public final class GCGTCTavernInfoNotifyOuterClass {
         return avatarId_;
       }
       /**
-       * <code>uint32 avatar_id = 12;</code>
+       * <code>uint32 avatar_id = 9;</code>
        * @param value The avatarId to set.
        * @return This builder for chaining.
        */
@@ -812,7 +851,7 @@ public final class GCGTCTavernInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 avatar_id = 12;</code>
+       * <code>uint32 avatar_id = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearAvatarId() {
@@ -824,7 +863,7 @@ public final class GCGTCTavernInfoNotifyOuterClass {
 
       private int characterId_ ;
       /**
-       * <code>uint32 character_id = 7;</code>
+       * <code>uint32 character_id = 12;</code>
        * @return The characterId.
        */
       @java.lang.Override
@@ -832,7 +871,7 @@ public final class GCGTCTavernInfoNotifyOuterClass {
         return characterId_;
       }
       /**
-       * <code>uint32 character_id = 7;</code>
+       * <code>uint32 character_id = 12;</code>
        * @param value The characterId to set.
        * @return This builder for chaining.
        */
@@ -843,43 +882,12 @@ public final class GCGTCTavernInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 character_id = 7;</code>
+       * <code>uint32 character_id = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearCharacterId() {
         
         characterId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int elementType_ ;
-      /**
-       * <code>uint32 element_type = 10;</code>
-       * @return The elementType.
-       */
-      @java.lang.Override
-      public int getElementType() {
-        return elementType_;
-      }
-      /**
-       * <code>uint32 element_type = 10;</code>
-       * @param value The elementType to set.
-       * @return This builder for chaining.
-       */
-      public Builder setElementType(int value) {
-        
-        elementType_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 element_type = 10;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearElementType() {
-        
-        elementType_ = 0;
         onChanged();
         return this;
       }
@@ -950,13 +958,13 @@ public final class GCGTCTavernInfoNotifyOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\033GCGTCTavernInfoNotify.proto\"\256\001\n\025GCGTCT" +
-      "avernInfoNotify\022\030\n\020is_last_duel_win\030\016 \001(" +
-      "\010\022\020\n\010level_id\030\013 \001(\r\022\030\n\020is_owner_in_duel\030" +
-      "\005 \001(\010\022\020\n\010point_id\030\003 \001(\r\022\021\n\tavatar_id\030\014 \001" +
-      "(\r\022\024\n\014character_id\030\007 \001(\r\022\024\n\014element_type" +
-      "\030\n \001(\rB\033\n\031emu.grasscutter.net.protob\006pro" +
-      "to3"
+      "\n\033GCGTCTavernInfoNotify.proto\"\264\001\n\025GCGTCT" +
+      "avernInfoNotify\022\020\n\010level_id\030\005 \001(\r\022\033\n\023Unk" +
+      "3300_IMFJBNFMCHM\030\013 \001(\010\022\033\n\023Unk3300_MBGMHB" +
+      "NBKBK\030\010 \001(\010\022\020\n\010point_id\030\004 \001(\r\022\024\n\014element" +
+      "_type\030\006 \001(\r\022\021\n\tavatar_id\030\t \001(\r\022\024\n\014charac" +
+      "ter_id\030\014 \001(\rB\033\n\031emu.grasscutter.net.prot" +
+      "ob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -967,7 +975,7 @@ public final class GCGTCTavernInfoNotifyOuterClass {
     internal_static_GCGTCTavernInfoNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GCGTCTavernInfoNotify_descriptor,
-        new java.lang.String[] { "IsLastDuelWin", "LevelId", "IsOwnerInDuel", "PointId", "AvatarId", "CharacterId", "ElementType", });
+        new java.lang.String[] { "LevelId", "Unk3300IMFJBNFMCHM", "Unk3300MBGMHBNBKBK", "PointId", "ElementType", "AvatarId", "CharacterId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

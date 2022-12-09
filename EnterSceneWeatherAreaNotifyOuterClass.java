@@ -19,17 +19,21 @@ public final class EnterSceneWeatherAreaNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 weather_gadget_id = 13;</code>
+     * <code>uint32 weather_gadget_id = 1;</code>
      * @return The weatherGadgetId.
      */
     int getWeatherGadgetId();
   }
   /**
    * <pre>
-   * CmdId: 256
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 282;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code EnterSceneWeatherAreaNotify}
@@ -76,7 +80,7 @@ public final class EnterSceneWeatherAreaNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 104: {
+            case 8: {
 
               weatherGadgetId_ = input.readUInt32();
               break;
@@ -113,10 +117,10 @@ public final class EnterSceneWeatherAreaNotifyOuterClass {
               emu.grasscutter.net.proto.EnterSceneWeatherAreaNotifyOuterClass.EnterSceneWeatherAreaNotify.class, emu.grasscutter.net.proto.EnterSceneWeatherAreaNotifyOuterClass.EnterSceneWeatherAreaNotify.Builder.class);
     }
 
-    public static final int WEATHER_GADGET_ID_FIELD_NUMBER = 13;
+    public static final int WEATHER_GADGET_ID_FIELD_NUMBER = 1;
     private int weatherGadgetId_;
     /**
-     * <code>uint32 weather_gadget_id = 13;</code>
+     * <code>uint32 weather_gadget_id = 1;</code>
      * @return The weatherGadgetId.
      */
     @java.lang.Override
@@ -139,7 +143,7 @@ public final class EnterSceneWeatherAreaNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (weatherGadgetId_ != 0) {
-        output.writeUInt32(13, weatherGadgetId_);
+        output.writeUInt32(1, weatherGadgetId_);
       }
       unknownFields.writeTo(output);
     }
@@ -152,7 +156,7 @@ public final class EnterSceneWeatherAreaNotifyOuterClass {
       size = 0;
       if (weatherGadgetId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, weatherGadgetId_);
+          .computeUInt32Size(1, weatherGadgetId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -281,10 +285,14 @@ public final class EnterSceneWeatherAreaNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 256
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 282;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code EnterSceneWeatherAreaNotify}
@@ -435,7 +443,7 @@ public final class EnterSceneWeatherAreaNotifyOuterClass {
 
       private int weatherGadgetId_ ;
       /**
-       * <code>uint32 weather_gadget_id = 13;</code>
+       * <code>uint32 weather_gadget_id = 1;</code>
        * @return The weatherGadgetId.
        */
       @java.lang.Override
@@ -443,7 +451,7 @@ public final class EnterSceneWeatherAreaNotifyOuterClass {
         return weatherGadgetId_;
       }
       /**
-       * <code>uint32 weather_gadget_id = 13;</code>
+       * <code>uint32 weather_gadget_id = 1;</code>
        * @param value The weatherGadgetId to set.
        * @return This builder for chaining.
        */
@@ -454,7 +462,7 @@ public final class EnterSceneWeatherAreaNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 weather_gadget_id = 13;</code>
+       * <code>uint32 weather_gadget_id = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearWeatherGadgetId() {
@@ -532,7 +540,7 @@ public final class EnterSceneWeatherAreaNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n!EnterSceneWeatherAreaNotify.proto\"8\n\033E" +
       "nterSceneWeatherAreaNotify\022\031\n\021weather_ga" +
-      "dget_id\030\r \001(\rB\033\n\031emu.grasscutter.net.pro" +
+      "dget_id\030\001 \001(\rB\033\n\031emu.grasscutter.net.pro" +
       "tob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

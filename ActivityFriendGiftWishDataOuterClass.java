@@ -19,28 +19,44 @@ public final class ActivityFriendGiftWishDataOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>string nickname = 7;</code>
-     * @return The nickname.
+     * <code>map&lt;uint32, uint32&gt; gift_num_map = 5;</code>
      */
-    java.lang.String getNickname();
+    int getGiftNumMapCount();
     /**
-     * <code>string nickname = 7;</code>
-     * @return The bytes for nickname.
+     * <code>map&lt;uint32, uint32&gt; gift_num_map = 5;</code>
      */
-    com.google.protobuf.ByteString
-        getNicknameBytes();
+    boolean containsGiftNumMap(
+        int key);
+    /**
+     * Use {@link #getGiftNumMapMap()} instead.
+     */
+    @java.lang.Deprecated
+    java.util.Map<java.lang.Integer, java.lang.Integer>
+    getGiftNumMap();
+    /**
+     * <code>map&lt;uint32, uint32&gt; gift_num_map = 5;</code>
+     */
+    java.util.Map<java.lang.Integer, java.lang.Integer>
+    getGiftNumMapMap();
+    /**
+     * <code>map&lt;uint32, uint32&gt; gift_num_map = 5;</code>
+     */
+
+    int getGiftNumMapOrDefault(
+        int key,
+        int defaultValue);
+    /**
+     * <code>map&lt;uint32, uint32&gt; gift_num_map = 5;</code>
+     */
+
+    int getGiftNumMapOrThrow(
+        int key);
 
     /**
-     * <code>string remark_name = 3;</code>
-     * @return The remarkName.
+     * <code>uint32 uid = 7;</code>
+     * @return The uid.
      */
-    java.lang.String getRemarkName();
-    /**
-     * <code>string remark_name = 3;</code>
-     * @return The bytes for remarkName.
-     */
-    com.google.protobuf.ByteString
-        getRemarkNameBytes();
+    int getUid();
 
     /**
      * <code>.ProfilePicture profile_picture = 11;</code>
@@ -58,44 +74,28 @@ public final class ActivityFriendGiftWishDataOuterClass {
     emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePictureOrBuilder getProfilePictureOrBuilder();
 
     /**
-     * <code>map&lt;uint32, uint32&gt; gift_num_map = 9;</code>
+     * <code>string remark_name = 12;</code>
+     * @return The remarkName.
      */
-    int getGiftNumMapCount();
+    java.lang.String getRemarkName();
     /**
-     * <code>map&lt;uint32, uint32&gt; gift_num_map = 9;</code>
+     * <code>string remark_name = 12;</code>
+     * @return The bytes for remarkName.
      */
-    boolean containsGiftNumMap(
-        int key);
-    /**
-     * Use {@link #getGiftNumMapMap()} instead.
-     */
-    @java.lang.Deprecated
-    java.util.Map<java.lang.Integer, java.lang.Integer>
-    getGiftNumMap();
-    /**
-     * <code>map&lt;uint32, uint32&gt; gift_num_map = 9;</code>
-     */
-    java.util.Map<java.lang.Integer, java.lang.Integer>
-    getGiftNumMapMap();
-    /**
-     * <code>map&lt;uint32, uint32&gt; gift_num_map = 9;</code>
-     */
-
-    int getGiftNumMapOrDefault(
-        int key,
-        int defaultValue);
-    /**
-     * <code>map&lt;uint32, uint32&gt; gift_num_map = 9;</code>
-     */
-
-    int getGiftNumMapOrThrow(
-        int key);
+    com.google.protobuf.ByteString
+        getRemarkNameBytes();
 
     /**
-     * <code>uint32 uid = 8;</code>
-     * @return The uid.
+     * <code>string nickname = 2;</code>
+     * @return The nickname.
      */
-    int getUid();
+    java.lang.String getNickname();
+    /**
+     * <code>string nickname = 2;</code>
+     * @return The bytes for nickname.
+     */
+    com.google.protobuf.ByteString
+        getNicknameBytes();
   }
   /**
    * Protobuf type {@code ActivityFriendGiftWishData}
@@ -110,8 +110,8 @@ public final class ActivityFriendGiftWishDataOuterClass {
       super(builder);
     }
     private ActivityFriendGiftWishData() {
-      nickname_ = "";
       remarkName_ = "";
+      nickname_ = "";
     }
 
     @java.lang.Override
@@ -145,24 +145,13 @@ public final class ActivityFriendGiftWishDataOuterClass {
             case 0:
               done = true;
               break;
-            case 26: {
-              java.lang.String s = input.readStringRequireUtf8();
-
-              remarkName_ = s;
-              break;
-            }
-            case 58: {
+            case 18: {
               java.lang.String s = input.readStringRequireUtf8();
 
               nickname_ = s;
               break;
             }
-            case 64: {
-
-              uid_ = input.readUInt32();
-              break;
-            }
-            case 74: {
+            case 42: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 giftNumMap_ = com.google.protobuf.MapField.newMapField(
                     GiftNumMapDefaultEntryHolder.defaultEntry);
@@ -173,6 +162,11 @@ public final class ActivityFriendGiftWishDataOuterClass {
                   GiftNumMapDefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
               giftNumMap_.getMutableMap().put(
                   giftNumMap__.getKey(), giftNumMap__.getValue());
+              break;
+            }
+            case 56: {
+
+              uid_ = input.readUInt32();
               break;
             }
             case 90: {
@@ -186,6 +180,12 @@ public final class ActivityFriendGiftWishDataOuterClass {
                 profilePicture_ = subBuilder.buildPartial();
               }
 
+              break;
+            }
+            case 98: {
+              java.lang.String s = input.readStringRequireUtf8();
+
+              remarkName_ = s;
               break;
             }
             default: {
@@ -217,7 +217,7 @@ public final class ActivityFriendGiftWishDataOuterClass {
     protected com.google.protobuf.MapField internalGetMapField(
         int number) {
       switch (number) {
-        case 9:
+        case 5:
           return internalGetGiftNumMap();
         default:
           throw new RuntimeException(
@@ -232,80 +232,96 @@ public final class ActivityFriendGiftWishDataOuterClass {
               emu.grasscutter.net.proto.ActivityFriendGiftWishDataOuterClass.ActivityFriendGiftWishData.class, emu.grasscutter.net.proto.ActivityFriendGiftWishDataOuterClass.ActivityFriendGiftWishData.Builder.class);
     }
 
-    public static final int NICKNAME_FIELD_NUMBER = 7;
-    private volatile java.lang.Object nickname_;
-    /**
-     * <code>string nickname = 7;</code>
-     * @return The nickname.
-     */
-    @java.lang.Override
-    public java.lang.String getNickname() {
-      java.lang.Object ref = nickname_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        nickname_ = s;
-        return s;
-      }
+    public static final int GIFT_NUM_MAP_FIELD_NUMBER = 5;
+    private static final class GiftNumMapDefaultEntryHolder {
+      static final com.google.protobuf.MapEntry<
+          java.lang.Integer, java.lang.Integer> defaultEntry =
+              com.google.protobuf.MapEntry
+              .<java.lang.Integer, java.lang.Integer>newDefaultInstance(
+                  emu.grasscutter.net.proto.ActivityFriendGiftWishDataOuterClass.internal_static_ActivityFriendGiftWishData_GiftNumMapEntry_descriptor, 
+                  com.google.protobuf.WireFormat.FieldType.UINT32,
+                  0,
+                  com.google.protobuf.WireFormat.FieldType.UINT32,
+                  0);
     }
-    /**
-     * <code>string nickname = 7;</code>
-     * @return The bytes for nickname.
-     */
-    @java.lang.Override
-    public com.google.protobuf.ByteString
-        getNicknameBytes() {
-      java.lang.Object ref = nickname_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        nickname_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
+    private com.google.protobuf.MapField<
+        java.lang.Integer, java.lang.Integer> giftNumMap_;
+    private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
+    internalGetGiftNumMap() {
+      if (giftNumMap_ == null) {
+        return com.google.protobuf.MapField.emptyMapField(
+            GiftNumMapDefaultEntryHolder.defaultEntry);
       }
+      return giftNumMap_;
     }
 
-    public static final int REMARK_NAME_FIELD_NUMBER = 3;
-    private volatile java.lang.Object remarkName_;
-    /**
-     * <code>string remark_name = 3;</code>
-     * @return The remarkName.
-     */
-    @java.lang.Override
-    public java.lang.String getRemarkName() {
-      java.lang.Object ref = remarkName_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        remarkName_ = s;
-        return s;
-      }
+    public int getGiftNumMapCount() {
+      return internalGetGiftNumMap().getMap().size();
     }
     /**
-     * <code>string remark_name = 3;</code>
-     * @return The bytes for remarkName.
+     * <code>map&lt;uint32, uint32&gt; gift_num_map = 5;</code>
+     */
+
+    @java.lang.Override
+    public boolean containsGiftNumMap(
+        int key) {
+      
+      return internalGetGiftNumMap().getMap().containsKey(key);
+    }
+    /**
+     * Use {@link #getGiftNumMapMap()} instead.
      */
     @java.lang.Override
-    public com.google.protobuf.ByteString
-        getRemarkNameBytes() {
-      java.lang.Object ref = remarkName_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        remarkName_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
+    @java.lang.Deprecated
+    public java.util.Map<java.lang.Integer, java.lang.Integer> getGiftNumMap() {
+      return getGiftNumMapMap();
+    }
+    /**
+     * <code>map&lt;uint32, uint32&gt; gift_num_map = 5;</code>
+     */
+    @java.lang.Override
+
+    public java.util.Map<java.lang.Integer, java.lang.Integer> getGiftNumMapMap() {
+      return internalGetGiftNumMap().getMap();
+    }
+    /**
+     * <code>map&lt;uint32, uint32&gt; gift_num_map = 5;</code>
+     */
+    @java.lang.Override
+
+    public int getGiftNumMapOrDefault(
+        int key,
+        int defaultValue) {
+      
+      java.util.Map<java.lang.Integer, java.lang.Integer> map =
+          internalGetGiftNumMap().getMap();
+      return map.containsKey(key) ? map.get(key) : defaultValue;
+    }
+    /**
+     * <code>map&lt;uint32, uint32&gt; gift_num_map = 5;</code>
+     */
+    @java.lang.Override
+
+    public int getGiftNumMapOrThrow(
+        int key) {
+      
+      java.util.Map<java.lang.Integer, java.lang.Integer> map =
+          internalGetGiftNumMap().getMap();
+      if (!map.containsKey(key)) {
+        throw new java.lang.IllegalArgumentException();
       }
+      return map.get(key);
+    }
+
+    public static final int UID_FIELD_NUMBER = 7;
+    private int uid_;
+    /**
+     * <code>uint32 uid = 7;</code>
+     * @return The uid.
+     */
+    @java.lang.Override
+    public int getUid() {
+      return uid_;
     }
 
     public static final int PROFILE_PICTURE_FIELD_NUMBER = 11;
@@ -334,96 +350,80 @@ public final class ActivityFriendGiftWishDataOuterClass {
       return getProfilePicture();
     }
 
-    public static final int GIFT_NUM_MAP_FIELD_NUMBER = 9;
-    private static final class GiftNumMapDefaultEntryHolder {
-      static final com.google.protobuf.MapEntry<
-          java.lang.Integer, java.lang.Integer> defaultEntry =
-              com.google.protobuf.MapEntry
-              .<java.lang.Integer, java.lang.Integer>newDefaultInstance(
-                  emu.grasscutter.net.proto.ActivityFriendGiftWishDataOuterClass.internal_static_ActivityFriendGiftWishData_GiftNumMapEntry_descriptor, 
-                  com.google.protobuf.WireFormat.FieldType.UINT32,
-                  0,
-                  com.google.protobuf.WireFormat.FieldType.UINT32,
-                  0);
-    }
-    private com.google.protobuf.MapField<
-        java.lang.Integer, java.lang.Integer> giftNumMap_;
-    private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
-    internalGetGiftNumMap() {
-      if (giftNumMap_ == null) {
-        return com.google.protobuf.MapField.emptyMapField(
-            GiftNumMapDefaultEntryHolder.defaultEntry);
+    public static final int REMARK_NAME_FIELD_NUMBER = 12;
+    private volatile java.lang.Object remarkName_;
+    /**
+     * <code>string remark_name = 12;</code>
+     * @return The remarkName.
+     */
+    @java.lang.Override
+    public java.lang.String getRemarkName() {
+      java.lang.Object ref = remarkName_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        remarkName_ = s;
+        return s;
       }
-      return giftNumMap_;
-    }
-
-    public int getGiftNumMapCount() {
-      return internalGetGiftNumMap().getMap().size();
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; gift_num_map = 9;</code>
-     */
-
-    @java.lang.Override
-    public boolean containsGiftNumMap(
-        int key) {
-      
-      return internalGetGiftNumMap().getMap().containsKey(key);
-    }
-    /**
-     * Use {@link #getGiftNumMapMap()} instead.
+     * <code>string remark_name = 12;</code>
+     * @return The bytes for remarkName.
      */
     @java.lang.Override
-    @java.lang.Deprecated
-    public java.util.Map<java.lang.Integer, java.lang.Integer> getGiftNumMap() {
-      return getGiftNumMapMap();
-    }
-    /**
-     * <code>map&lt;uint32, uint32&gt; gift_num_map = 9;</code>
-     */
-    @java.lang.Override
-
-    public java.util.Map<java.lang.Integer, java.lang.Integer> getGiftNumMapMap() {
-      return internalGetGiftNumMap().getMap();
-    }
-    /**
-     * <code>map&lt;uint32, uint32&gt; gift_num_map = 9;</code>
-     */
-    @java.lang.Override
-
-    public int getGiftNumMapOrDefault(
-        int key,
-        int defaultValue) {
-      
-      java.util.Map<java.lang.Integer, java.lang.Integer> map =
-          internalGetGiftNumMap().getMap();
-      return map.containsKey(key) ? map.get(key) : defaultValue;
-    }
-    /**
-     * <code>map&lt;uint32, uint32&gt; gift_num_map = 9;</code>
-     */
-    @java.lang.Override
-
-    public int getGiftNumMapOrThrow(
-        int key) {
-      
-      java.util.Map<java.lang.Integer, java.lang.Integer> map =
-          internalGetGiftNumMap().getMap();
-      if (!map.containsKey(key)) {
-        throw new java.lang.IllegalArgumentException();
+    public com.google.protobuf.ByteString
+        getRemarkNameBytes() {
+      java.lang.Object ref = remarkName_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        remarkName_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
       }
-      return map.get(key);
     }
 
-    public static final int UID_FIELD_NUMBER = 8;
-    private int uid_;
+    public static final int NICKNAME_FIELD_NUMBER = 2;
+    private volatile java.lang.Object nickname_;
     /**
-     * <code>uint32 uid = 8;</code>
-     * @return The uid.
+     * <code>string nickname = 2;</code>
+     * @return The nickname.
      */
     @java.lang.Override
-    public int getUid() {
-      return uid_;
+    public java.lang.String getNickname() {
+      java.lang.Object ref = nickname_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        nickname_ = s;
+        return s;
+      }
+    }
+    /**
+     * <code>string nickname = 2;</code>
+     * @return The bytes for nickname.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString
+        getNicknameBytes() {
+      java.lang.Object ref = nickname_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        nickname_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
     }
 
     private byte memoizedIsInitialized = -1;
@@ -440,23 +440,23 @@ public final class ActivityFriendGiftWishDataOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(remarkName_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 3, remarkName_);
-      }
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(nickname_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 7, nickname_);
-      }
-      if (uid_ != 0) {
-        output.writeUInt32(8, uid_);
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 2, nickname_);
       }
       com.google.protobuf.GeneratedMessageV3
         .serializeIntegerMapTo(
           output,
           internalGetGiftNumMap(),
           GiftNumMapDefaultEntryHolder.defaultEntry,
-          9);
+          5);
+      if (uid_ != 0) {
+        output.writeUInt32(7, uid_);
+      }
       if (profilePicture_ != null) {
         output.writeMessage(11, getProfilePicture());
+      }
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(remarkName_)) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 12, remarkName_);
       }
       unknownFields.writeTo(output);
     }
@@ -467,15 +467,8 @@ public final class ActivityFriendGiftWishDataOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(remarkName_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, remarkName_);
-      }
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(nickname_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(7, nickname_);
-      }
-      if (uid_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, uid_);
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, nickname_);
       }
       for (java.util.Map.Entry<java.lang.Integer, java.lang.Integer> entry
            : internalGetGiftNumMap().getMap().entrySet()) {
@@ -485,11 +478,18 @@ public final class ActivityFriendGiftWishDataOuterClass {
             .setValue(entry.getValue())
             .build();
         size += com.google.protobuf.CodedOutputStream
-            .computeMessageSize(9, giftNumMap__);
+            .computeMessageSize(5, giftNumMap__);
+      }
+      if (uid_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(7, uid_);
       }
       if (profilePicture_ != null) {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(11, getProfilePicture());
+      }
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(remarkName_)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(12, remarkName_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -506,19 +506,19 @@ public final class ActivityFriendGiftWishDataOuterClass {
       }
       emu.grasscutter.net.proto.ActivityFriendGiftWishDataOuterClass.ActivityFriendGiftWishData other = (emu.grasscutter.net.proto.ActivityFriendGiftWishDataOuterClass.ActivityFriendGiftWishData) obj;
 
-      if (!getNickname()
-          .equals(other.getNickname())) return false;
-      if (!getRemarkName()
-          .equals(other.getRemarkName())) return false;
+      if (!internalGetGiftNumMap().equals(
+          other.internalGetGiftNumMap())) return false;
+      if (getUid()
+          != other.getUid()) return false;
       if (hasProfilePicture() != other.hasProfilePicture()) return false;
       if (hasProfilePicture()) {
         if (!getProfilePicture()
             .equals(other.getProfilePicture())) return false;
       }
-      if (!internalGetGiftNumMap().equals(
-          other.internalGetGiftNumMap())) return false;
-      if (getUid()
-          != other.getUid()) return false;
+      if (!getRemarkName()
+          .equals(other.getRemarkName())) return false;
+      if (!getNickname()
+          .equals(other.getNickname())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -530,20 +530,20 @@ public final class ActivityFriendGiftWishDataOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + NICKNAME_FIELD_NUMBER;
-      hash = (53 * hash) + getNickname().hashCode();
-      hash = (37 * hash) + REMARK_NAME_FIELD_NUMBER;
-      hash = (53 * hash) + getRemarkName().hashCode();
-      if (hasProfilePicture()) {
-        hash = (37 * hash) + PROFILE_PICTURE_FIELD_NUMBER;
-        hash = (53 * hash) + getProfilePicture().hashCode();
-      }
       if (!internalGetGiftNumMap().getMap().isEmpty()) {
         hash = (37 * hash) + GIFT_NUM_MAP_FIELD_NUMBER;
         hash = (53 * hash) + internalGetGiftNumMap().hashCode();
       }
       hash = (37 * hash) + UID_FIELD_NUMBER;
       hash = (53 * hash) + getUid();
+      if (hasProfilePicture()) {
+        hash = (37 * hash) + PROFILE_PICTURE_FIELD_NUMBER;
+        hash = (53 * hash) + getProfilePicture().hashCode();
+      }
+      hash = (37 * hash) + REMARK_NAME_FIELD_NUMBER;
+      hash = (53 * hash) + getRemarkName().hashCode();
+      hash = (37 * hash) + NICKNAME_FIELD_NUMBER;
+      hash = (53 * hash) + getNickname().hashCode();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -655,7 +655,7 @@ public final class ActivityFriendGiftWishDataOuterClass {
       protected com.google.protobuf.MapField internalGetMapField(
           int number) {
         switch (number) {
-          case 9:
+          case 5:
             return internalGetGiftNumMap();
           default:
             throw new RuntimeException(
@@ -666,7 +666,7 @@ public final class ActivityFriendGiftWishDataOuterClass {
       protected com.google.protobuf.MapField internalGetMutableMapField(
           int number) {
         switch (number) {
-          case 9:
+          case 5:
             return internalGetMutableGiftNumMap();
           default:
             throw new RuntimeException(
@@ -699,9 +699,8 @@ public final class ActivityFriendGiftWishDataOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        nickname_ = "";
-
-        remarkName_ = "";
+        internalGetMutableGiftNumMap().clear();
+        uid_ = 0;
 
         if (profilePictureBuilder_ == null) {
           profilePicture_ = null;
@@ -709,8 +708,9 @@ public final class ActivityFriendGiftWishDataOuterClass {
           profilePicture_ = null;
           profilePictureBuilder_ = null;
         }
-        internalGetMutableGiftNumMap().clear();
-        uid_ = 0;
+        remarkName_ = "";
+
+        nickname_ = "";
 
         return this;
       }
@@ -739,16 +739,16 @@ public final class ActivityFriendGiftWishDataOuterClass {
       public emu.grasscutter.net.proto.ActivityFriendGiftWishDataOuterClass.ActivityFriendGiftWishData buildPartial() {
         emu.grasscutter.net.proto.ActivityFriendGiftWishDataOuterClass.ActivityFriendGiftWishData result = new emu.grasscutter.net.proto.ActivityFriendGiftWishDataOuterClass.ActivityFriendGiftWishData(this);
         int from_bitField0_ = bitField0_;
-        result.nickname_ = nickname_;
-        result.remarkName_ = remarkName_;
+        result.giftNumMap_ = internalGetGiftNumMap();
+        result.giftNumMap_.makeImmutable();
+        result.uid_ = uid_;
         if (profilePictureBuilder_ == null) {
           result.profilePicture_ = profilePicture_;
         } else {
           result.profilePicture_ = profilePictureBuilder_.build();
         }
-        result.giftNumMap_ = internalGetGiftNumMap();
-        result.giftNumMap_.makeImmutable();
-        result.uid_ = uid_;
+        result.remarkName_ = remarkName_;
+        result.nickname_ = nickname_;
         onBuilt();
         return result;
       }
@@ -797,21 +797,21 @@ public final class ActivityFriendGiftWishDataOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.ActivityFriendGiftWishDataOuterClass.ActivityFriendGiftWishData other) {
         if (other == emu.grasscutter.net.proto.ActivityFriendGiftWishDataOuterClass.ActivityFriendGiftWishData.getDefaultInstance()) return this;
-        if (!other.getNickname().isEmpty()) {
-          nickname_ = other.nickname_;
-          onChanged();
+        internalGetMutableGiftNumMap().mergeFrom(
+            other.internalGetGiftNumMap());
+        if (other.getUid() != 0) {
+          setUid(other.getUid());
+        }
+        if (other.hasProfilePicture()) {
+          mergeProfilePicture(other.getProfilePicture());
         }
         if (!other.getRemarkName().isEmpty()) {
           remarkName_ = other.remarkName_;
           onChanged();
         }
-        if (other.hasProfilePicture()) {
-          mergeProfilePicture(other.getProfilePicture());
-        }
-        internalGetMutableGiftNumMap().mergeFrom(
-            other.internalGetGiftNumMap());
-        if (other.getUid() != 0) {
-          setUid(other.getUid());
+        if (!other.getNickname().isEmpty()) {
+          nickname_ = other.nickname_;
+          onChanged();
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -843,154 +843,161 @@ public final class ActivityFriendGiftWishDataOuterClass {
       }
       private int bitField0_;
 
-      private java.lang.Object nickname_ = "";
-      /**
-       * <code>string nickname = 7;</code>
-       * @return The nickname.
-       */
-      public java.lang.String getNickname() {
-        java.lang.Object ref = nickname_;
-        if (!(ref instanceof java.lang.String)) {
-          com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
-          nickname_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
+      private com.google.protobuf.MapField<
+          java.lang.Integer, java.lang.Integer> giftNumMap_;
+      private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
+      internalGetGiftNumMap() {
+        if (giftNumMap_ == null) {
+          return com.google.protobuf.MapField.emptyMapField(
+              GiftNumMapDefaultEntryHolder.defaultEntry);
         }
+        return giftNumMap_;
+      }
+      private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
+      internalGetMutableGiftNumMap() {
+        onChanged();;
+        if (giftNumMap_ == null) {
+          giftNumMap_ = com.google.protobuf.MapField.newMapField(
+              GiftNumMapDefaultEntryHolder.defaultEntry);
+        }
+        if (!giftNumMap_.isMutable()) {
+          giftNumMap_ = giftNumMap_.copy();
+        }
+        return giftNumMap_;
+      }
+
+      public int getGiftNumMapCount() {
+        return internalGetGiftNumMap().getMap().size();
       }
       /**
-       * <code>string nickname = 7;</code>
-       * @return The bytes for nickname.
+       * <code>map&lt;uint32, uint32&gt; gift_num_map = 5;</code>
        */
-      public com.google.protobuf.ByteString
-          getNicknameBytes() {
-        java.lang.Object ref = nickname_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          nickname_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
+
+      @java.lang.Override
+      public boolean containsGiftNumMap(
+          int key) {
+        
+        return internalGetGiftNumMap().getMap().containsKey(key);
       }
       /**
-       * <code>string nickname = 7;</code>
-       * @param value The nickname to set.
-       * @return This builder for chaining.
+       * Use {@link #getGiftNumMapMap()} instead.
        */
-      public Builder setNickname(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  
-        nickname_ = value;
-        onChanged();
+      @java.lang.Override
+      @java.lang.Deprecated
+      public java.util.Map<java.lang.Integer, java.lang.Integer> getGiftNumMap() {
+        return getGiftNumMapMap();
+      }
+      /**
+       * <code>map&lt;uint32, uint32&gt; gift_num_map = 5;</code>
+       */
+      @java.lang.Override
+
+      public java.util.Map<java.lang.Integer, java.lang.Integer> getGiftNumMapMap() {
+        return internalGetGiftNumMap().getMap();
+      }
+      /**
+       * <code>map&lt;uint32, uint32&gt; gift_num_map = 5;</code>
+       */
+      @java.lang.Override
+
+      public int getGiftNumMapOrDefault(
+          int key,
+          int defaultValue) {
+        
+        java.util.Map<java.lang.Integer, java.lang.Integer> map =
+            internalGetGiftNumMap().getMap();
+        return map.containsKey(key) ? map.get(key) : defaultValue;
+      }
+      /**
+       * <code>map&lt;uint32, uint32&gt; gift_num_map = 5;</code>
+       */
+      @java.lang.Override
+
+      public int getGiftNumMapOrThrow(
+          int key) {
+        
+        java.util.Map<java.lang.Integer, java.lang.Integer> map =
+            internalGetGiftNumMap().getMap();
+        if (!map.containsKey(key)) {
+          throw new java.lang.IllegalArgumentException();
+        }
+        return map.get(key);
+      }
+
+      public Builder clearGiftNumMap() {
+        internalGetMutableGiftNumMap().getMutableMap()
+            .clear();
         return this;
       }
       /**
-       * <code>string nickname = 7;</code>
-       * @return This builder for chaining.
+       * <code>map&lt;uint32, uint32&gt; gift_num_map = 5;</code>
        */
-      public Builder clearNickname() {
+
+      public Builder removeGiftNumMap(
+          int key) {
         
-        nickname_ = getDefaultInstance().getNickname();
-        onChanged();
+        internalGetMutableGiftNumMap().getMutableMap()
+            .remove(key);
         return this;
       }
       /**
-       * <code>string nickname = 7;</code>
-       * @param value The bytes for nickname to set.
-       * @return This builder for chaining.
+       * Use alternate mutation accessors instead.
        */
-      public Builder setNicknameBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
+      @java.lang.Deprecated
+      public java.util.Map<java.lang.Integer, java.lang.Integer>
+      getMutableGiftNumMap() {
+        return internalGetMutableGiftNumMap().getMutableMap();
+      }
+      /**
+       * <code>map&lt;uint32, uint32&gt; gift_num_map = 5;</code>
+       */
+      public Builder putGiftNumMap(
+          int key,
+          int value) {
         
-        nickname_ = value;
-        onChanged();
+        
+        internalGetMutableGiftNumMap().getMutableMap()
+            .put(key, value);
+        return this;
+      }
+      /**
+       * <code>map&lt;uint32, uint32&gt; gift_num_map = 5;</code>
+       */
+
+      public Builder putAllGiftNumMap(
+          java.util.Map<java.lang.Integer, java.lang.Integer> values) {
+        internalGetMutableGiftNumMap().getMutableMap()
+            .putAll(values);
         return this;
       }
 
-      private java.lang.Object remarkName_ = "";
+      private int uid_ ;
       /**
-       * <code>string remark_name = 3;</code>
-       * @return The remarkName.
+       * <code>uint32 uid = 7;</code>
+       * @return The uid.
        */
-      public java.lang.String getRemarkName() {
-        java.lang.Object ref = remarkName_;
-        if (!(ref instanceof java.lang.String)) {
-          com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
-          remarkName_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
+      @java.lang.Override
+      public int getUid() {
+        return uid_;
       }
       /**
-       * <code>string remark_name = 3;</code>
-       * @return The bytes for remarkName.
-       */
-      public com.google.protobuf.ByteString
-          getRemarkNameBytes() {
-        java.lang.Object ref = remarkName_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          remarkName_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <code>string remark_name = 3;</code>
-       * @param value The remarkName to set.
+       * <code>uint32 uid = 7;</code>
+       * @param value The uid to set.
        * @return This builder for chaining.
        */
-      public Builder setRemarkName(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  
-        remarkName_ = value;
+      public Builder setUid(int value) {
+        
+        uid_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>string remark_name = 3;</code>
+       * <code>uint32 uid = 7;</code>
        * @return This builder for chaining.
        */
-      public Builder clearRemarkName() {
+      public Builder clearUid() {
         
-        remarkName_ = getDefaultInstance().getRemarkName();
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string remark_name = 3;</code>
-       * @param value The bytes for remarkName to set.
-       * @return This builder for chaining.
-       */
-      public Builder setRemarkNameBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-        
-        remarkName_ = value;
+        uid_ = 0;
         onChanged();
         return this;
       }
@@ -1114,161 +1121,154 @@ public final class ActivityFriendGiftWishDataOuterClass {
         return profilePictureBuilder_;
       }
 
-      private com.google.protobuf.MapField<
-          java.lang.Integer, java.lang.Integer> giftNumMap_;
-      private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
-      internalGetGiftNumMap() {
-        if (giftNumMap_ == null) {
-          return com.google.protobuf.MapField.emptyMapField(
-              GiftNumMapDefaultEntryHolder.defaultEntry);
+      private java.lang.Object remarkName_ = "";
+      /**
+       * <code>string remark_name = 12;</code>
+       * @return The remarkName.
+       */
+      public java.lang.String getRemarkName() {
+        java.lang.Object ref = remarkName_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          remarkName_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
         }
-        return giftNumMap_;
       }
-      private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
-      internalGetMutableGiftNumMap() {
-        onChanged();;
-        if (giftNumMap_ == null) {
-          giftNumMap_ = com.google.protobuf.MapField.newMapField(
-              GiftNumMapDefaultEntryHolder.defaultEntry);
+      /**
+       * <code>string remark_name = 12;</code>
+       * @return The bytes for remarkName.
+       */
+      public com.google.protobuf.ByteString
+          getRemarkNameBytes() {
+        java.lang.Object ref = remarkName_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          remarkName_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
         }
-        if (!giftNumMap_.isMutable()) {
-          giftNumMap_ = giftNumMap_.copy();
-        }
-        return giftNumMap_;
-      }
-
-      public int getGiftNumMapCount() {
-        return internalGetGiftNumMap().getMap().size();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; gift_num_map = 9;</code>
-       */
-
-      @java.lang.Override
-      public boolean containsGiftNumMap(
-          int key) {
-        
-        return internalGetGiftNumMap().getMap().containsKey(key);
-      }
-      /**
-       * Use {@link #getGiftNumMapMap()} instead.
-       */
-      @java.lang.Override
-      @java.lang.Deprecated
-      public java.util.Map<java.lang.Integer, java.lang.Integer> getGiftNumMap() {
-        return getGiftNumMapMap();
-      }
-      /**
-       * <code>map&lt;uint32, uint32&gt; gift_num_map = 9;</code>
-       */
-      @java.lang.Override
-
-      public java.util.Map<java.lang.Integer, java.lang.Integer> getGiftNumMapMap() {
-        return internalGetGiftNumMap().getMap();
-      }
-      /**
-       * <code>map&lt;uint32, uint32&gt; gift_num_map = 9;</code>
-       */
-      @java.lang.Override
-
-      public int getGiftNumMapOrDefault(
-          int key,
-          int defaultValue) {
-        
-        java.util.Map<java.lang.Integer, java.lang.Integer> map =
-            internalGetGiftNumMap().getMap();
-        return map.containsKey(key) ? map.get(key) : defaultValue;
-      }
-      /**
-       * <code>map&lt;uint32, uint32&gt; gift_num_map = 9;</code>
-       */
-      @java.lang.Override
-
-      public int getGiftNumMapOrThrow(
-          int key) {
-        
-        java.util.Map<java.lang.Integer, java.lang.Integer> map =
-            internalGetGiftNumMap().getMap();
-        if (!map.containsKey(key)) {
-          throw new java.lang.IllegalArgumentException();
-        }
-        return map.get(key);
-      }
-
-      public Builder clearGiftNumMap() {
-        internalGetMutableGiftNumMap().getMutableMap()
-            .clear();
-        return this;
-      }
-      /**
-       * <code>map&lt;uint32, uint32&gt; gift_num_map = 9;</code>
-       */
-
-      public Builder removeGiftNumMap(
-          int key) {
-        
-        internalGetMutableGiftNumMap().getMutableMap()
-            .remove(key);
-        return this;
-      }
-      /**
-       * Use alternate mutation accessors instead.
-       */
-      @java.lang.Deprecated
-      public java.util.Map<java.lang.Integer, java.lang.Integer>
-      getMutableGiftNumMap() {
-        return internalGetMutableGiftNumMap().getMutableMap();
-      }
-      /**
-       * <code>map&lt;uint32, uint32&gt; gift_num_map = 9;</code>
-       */
-      public Builder putGiftNumMap(
-          int key,
-          int value) {
-        
-        
-        internalGetMutableGiftNumMap().getMutableMap()
-            .put(key, value);
-        return this;
-      }
-      /**
-       * <code>map&lt;uint32, uint32&gt; gift_num_map = 9;</code>
-       */
-
-      public Builder putAllGiftNumMap(
-          java.util.Map<java.lang.Integer, java.lang.Integer> values) {
-        internalGetMutableGiftNumMap().getMutableMap()
-            .putAll(values);
-        return this;
-      }
-
-      private int uid_ ;
-      /**
-       * <code>uint32 uid = 8;</code>
-       * @return The uid.
-       */
-      @java.lang.Override
-      public int getUid() {
-        return uid_;
-      }
-      /**
-       * <code>uint32 uid = 8;</code>
-       * @param value The uid to set.
+       * <code>string remark_name = 12;</code>
+       * @param value The remarkName to set.
        * @return This builder for chaining.
        */
-      public Builder setUid(int value) {
-        
-        uid_ = value;
+      public Builder setRemarkName(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        remarkName_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 uid = 8;</code>
+       * <code>string remark_name = 12;</code>
        * @return This builder for chaining.
        */
-      public Builder clearUid() {
+      public Builder clearRemarkName() {
         
-        uid_ = 0;
+        remarkName_ = getDefaultInstance().getRemarkName();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string remark_name = 12;</code>
+       * @param value The bytes for remarkName to set.
+       * @return This builder for chaining.
+       */
+      public Builder setRemarkNameBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
+        remarkName_ = value;
+        onChanged();
+        return this;
+      }
+
+      private java.lang.Object nickname_ = "";
+      /**
+       * <code>string nickname = 2;</code>
+       * @return The nickname.
+       */
+      public java.lang.String getNickname() {
+        java.lang.Object ref = nickname_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          nickname_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>string nickname = 2;</code>
+       * @return The bytes for nickname.
+       */
+      public com.google.protobuf.ByteString
+          getNicknameBytes() {
+        java.lang.Object ref = nickname_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          nickname_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>string nickname = 2;</code>
+       * @param value The nickname to set.
+       * @return This builder for chaining.
+       */
+      public Builder setNickname(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        nickname_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string nickname = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearNickname() {
+        
+        nickname_ = getDefaultInstance().getNickname();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string nickname = 2;</code>
+       * @param value The bytes for nickname to set.
+       * @return This builder for chaining.
+       */
+      public Builder setNicknameBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
+        nickname_ = value;
         onChanged();
         return this;
       }
@@ -1346,11 +1346,11 @@ public final class ActivityFriendGiftWishDataOuterClass {
     java.lang.String[] descriptorData = {
       "\n ActivityFriendGiftWishData.proto\032\024Prof" +
       "ilePicture.proto\"\360\001\n\032ActivityFriendGiftW" +
-      "ishData\022\020\n\010nickname\030\007 \001(\t\022\023\n\013remark_name" +
-      "\030\003 \001(\t\022(\n\017profile_picture\030\013 \001(\0132\017.Profil" +
-      "ePicture\022A\n\014gift_num_map\030\t \003(\0132+.Activit" +
-      "yFriendGiftWishData.GiftNumMapEntry\022\013\n\003u" +
-      "id\030\010 \001(\r\0321\n\017GiftNumMapEntry\022\013\n\003key\030\001 \001(\r" +
+      "ishData\022A\n\014gift_num_map\030\005 \003(\0132+.Activity" +
+      "FriendGiftWishData.GiftNumMapEntry\022\013\n\003ui" +
+      "d\030\007 \001(\r\022(\n\017profile_picture\030\013 \001(\0132\017.Profi" +
+      "lePicture\022\023\n\013remark_name\030\014 \001(\t\022\020\n\010nickna" +
+      "me\030\002 \001(\t\0321\n\017GiftNumMapEntry\022\013\n\003key\030\001 \001(\r" +
       "\022\r\n\005value\030\002 \001(\r:\0028\001B\033\n\031emu.grasscutter.n" +
       "et.protob\006proto3"
     };
@@ -1364,7 +1364,7 @@ public final class ActivityFriendGiftWishDataOuterClass {
     internal_static_ActivityFriendGiftWishData_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ActivityFriendGiftWishData_descriptor,
-        new java.lang.String[] { "Nickname", "RemarkName", "ProfilePicture", "GiftNumMap", "Uid", });
+        new java.lang.String[] { "GiftNumMap", "Uid", "ProfilePicture", "RemarkName", "Nickname", });
     internal_static_ActivityFriendGiftWishData_GiftNumMapEntry_descriptor =
       internal_static_ActivityFriendGiftWishData_descriptor.getNestedTypes().get(0);
     internal_static_ActivityFriendGiftWishData_GiftNumMapEntry_fieldAccessorTable = new

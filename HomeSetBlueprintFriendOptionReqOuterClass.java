@@ -19,17 +19,21 @@ public final class HomeSetBlueprintFriendOptionReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_allow_friend_copy = 9;</code>
+     * <code>bool is_allow_friend_copy = 8;</code>
      * @return The isAllowFriendCopy.
      */
     boolean getIsAllowFriendCopy();
   }
   /**
    * <pre>
-   * CmdId: 4554
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 4472;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code HomeSetBlueprintFriendOptionReq}
@@ -76,7 +80,7 @@ public final class HomeSetBlueprintFriendOptionReqOuterClass {
             case 0:
               done = true;
               break;
-            case 72: {
+            case 64: {
 
               isAllowFriendCopy_ = input.readBool();
               break;
@@ -113,10 +117,10 @@ public final class HomeSetBlueprintFriendOptionReqOuterClass {
               emu.grasscutter.net.proto.HomeSetBlueprintFriendOptionReqOuterClass.HomeSetBlueprintFriendOptionReq.class, emu.grasscutter.net.proto.HomeSetBlueprintFriendOptionReqOuterClass.HomeSetBlueprintFriendOptionReq.Builder.class);
     }
 
-    public static final int IS_ALLOW_FRIEND_COPY_FIELD_NUMBER = 9;
+    public static final int IS_ALLOW_FRIEND_COPY_FIELD_NUMBER = 8;
     private boolean isAllowFriendCopy_;
     /**
-     * <code>bool is_allow_friend_copy = 9;</code>
+     * <code>bool is_allow_friend_copy = 8;</code>
      * @return The isAllowFriendCopy.
      */
     @java.lang.Override
@@ -139,7 +143,7 @@ public final class HomeSetBlueprintFriendOptionReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (isAllowFriendCopy_ != false) {
-        output.writeBool(9, isAllowFriendCopy_);
+        output.writeBool(8, isAllowFriendCopy_);
       }
       unknownFields.writeTo(output);
     }
@@ -152,7 +156,7 @@ public final class HomeSetBlueprintFriendOptionReqOuterClass {
       size = 0;
       if (isAllowFriendCopy_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(9, isAllowFriendCopy_);
+          .computeBoolSize(8, isAllowFriendCopy_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -282,10 +286,14 @@ public final class HomeSetBlueprintFriendOptionReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 4554
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 4472;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code HomeSetBlueprintFriendOptionReq}
@@ -436,7 +444,7 @@ public final class HomeSetBlueprintFriendOptionReqOuterClass {
 
       private boolean isAllowFriendCopy_ ;
       /**
-       * <code>bool is_allow_friend_copy = 9;</code>
+       * <code>bool is_allow_friend_copy = 8;</code>
        * @return The isAllowFriendCopy.
        */
       @java.lang.Override
@@ -444,7 +452,7 @@ public final class HomeSetBlueprintFriendOptionReqOuterClass {
         return isAllowFriendCopy_;
       }
       /**
-       * <code>bool is_allow_friend_copy = 9;</code>
+       * <code>bool is_allow_friend_copy = 8;</code>
        * @param value The isAllowFriendCopy to set.
        * @return This builder for chaining.
        */
@@ -455,7 +463,7 @@ public final class HomeSetBlueprintFriendOptionReqOuterClass {
         return this;
       }
       /**
-       * <code>bool is_allow_friend_copy = 9;</code>
+       * <code>bool is_allow_friend_copy = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsAllowFriendCopy() {
@@ -533,7 +541,7 @@ public final class HomeSetBlueprintFriendOptionReqOuterClass {
     java.lang.String[] descriptorData = {
       "\n%HomeSetBlueprintFriendOptionReq.proto\"" +
       "?\n\037HomeSetBlueprintFriendOptionReq\022\034\n\024is" +
-      "_allow_friend_copy\030\t \001(\010B\033\n\031emu.grasscut" +
+      "_allow_friend_copy\030\010 \001(\010B\033\n\031emu.grasscut" +
       "ter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

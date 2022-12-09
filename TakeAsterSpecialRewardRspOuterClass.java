@@ -19,22 +19,26 @@ public final class TakeAsterSpecialRewardRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 12;</code>
+     * <code>int32 retcode = 5;</code>
      * @return The retcode.
      */
     int getRetcode();
 
     /**
-     * <code>uint32 schedule_id = 14;</code>
+     * <code>uint32 schedule_id = 1;</code>
      * @return The scheduleId.
      */
     int getScheduleId();
   }
   /**
    * <pre>
-   * CmdId: 2193
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 2132;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code TakeAsterSpecialRewardRsp}
@@ -81,14 +85,14 @@ public final class TakeAsterSpecialRewardRspOuterClass {
             case 0:
               done = true;
               break;
-            case 96: {
-
-              retcode_ = input.readInt32();
-              break;
-            }
-            case 112: {
+            case 8: {
 
               scheduleId_ = input.readUInt32();
+              break;
+            }
+            case 40: {
+
+              retcode_ = input.readInt32();
               break;
             }
             default: {
@@ -123,10 +127,10 @@ public final class TakeAsterSpecialRewardRspOuterClass {
               emu.grasscutter.net.proto.TakeAsterSpecialRewardRspOuterClass.TakeAsterSpecialRewardRsp.class, emu.grasscutter.net.proto.TakeAsterSpecialRewardRspOuterClass.TakeAsterSpecialRewardRsp.Builder.class);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 12;
+    public static final int RETCODE_FIELD_NUMBER = 5;
     private int retcode_;
     /**
-     * <code>int32 retcode = 12;</code>
+     * <code>int32 retcode = 5;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -134,10 +138,10 @@ public final class TakeAsterSpecialRewardRspOuterClass {
       return retcode_;
     }
 
-    public static final int SCHEDULE_ID_FIELD_NUMBER = 14;
+    public static final int SCHEDULE_ID_FIELD_NUMBER = 1;
     private int scheduleId_;
     /**
-     * <code>uint32 schedule_id = 14;</code>
+     * <code>uint32 schedule_id = 1;</code>
      * @return The scheduleId.
      */
     @java.lang.Override
@@ -159,11 +163,11 @@ public final class TakeAsterSpecialRewardRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (retcode_ != 0) {
-        output.writeInt32(12, retcode_);
-      }
       if (scheduleId_ != 0) {
-        output.writeUInt32(14, scheduleId_);
+        output.writeUInt32(1, scheduleId_);
+      }
+      if (retcode_ != 0) {
+        output.writeInt32(5, retcode_);
       }
       unknownFields.writeTo(output);
     }
@@ -174,13 +178,13 @@ public final class TakeAsterSpecialRewardRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (retcode_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(12, retcode_);
-      }
       if (scheduleId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, scheduleId_);
+          .computeUInt32Size(1, scheduleId_);
+      }
+      if (retcode_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(5, retcode_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -313,9 +317,13 @@ public final class TakeAsterSpecialRewardRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 2193
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 2132;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code TakeAsterSpecialRewardRsp}
@@ -472,7 +480,7 @@ public final class TakeAsterSpecialRewardRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 12;</code>
+       * <code>int32 retcode = 5;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -480,7 +488,7 @@ public final class TakeAsterSpecialRewardRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 12;</code>
+       * <code>int32 retcode = 5;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -491,7 +499,7 @@ public final class TakeAsterSpecialRewardRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 12;</code>
+       * <code>int32 retcode = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -503,7 +511,7 @@ public final class TakeAsterSpecialRewardRspOuterClass {
 
       private int scheduleId_ ;
       /**
-       * <code>uint32 schedule_id = 14;</code>
+       * <code>uint32 schedule_id = 1;</code>
        * @return The scheduleId.
        */
       @java.lang.Override
@@ -511,7 +519,7 @@ public final class TakeAsterSpecialRewardRspOuterClass {
         return scheduleId_;
       }
       /**
-       * <code>uint32 schedule_id = 14;</code>
+       * <code>uint32 schedule_id = 1;</code>
        * @param value The scheduleId to set.
        * @return This builder for chaining.
        */
@@ -522,7 +530,7 @@ public final class TakeAsterSpecialRewardRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 schedule_id = 14;</code>
+       * <code>uint32 schedule_id = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearScheduleId() {
@@ -599,8 +607,8 @@ public final class TakeAsterSpecialRewardRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\037TakeAsterSpecialRewardRsp.proto\"A\n\031Tak" +
-      "eAsterSpecialRewardRsp\022\017\n\007retcode\030\014 \001(\005\022" +
-      "\023\n\013schedule_id\030\016 \001(\rB\033\n\031emu.grasscutter." +
+      "eAsterSpecialRewardRsp\022\017\n\007retcode\030\005 \001(\005\022" +
+      "\023\n\013schedule_id\030\001 \001(\rB\033\n\031emu.grasscutter." +
       "net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

@@ -19,31 +19,35 @@ public final class GetSignInRewardRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 1;</code>
-     * @return The retcode.
-     */
-    int getRetcode();
-
-    /**
-     * <code>.SignInInfo sign_in_info = 14;</code>
+     * <code>.SignInInfo sign_in_info = 3;</code>
      * @return Whether the signInInfo field is set.
      */
     boolean hasSignInInfo();
     /**
-     * <code>.SignInInfo sign_in_info = 14;</code>
+     * <code>.SignInInfo sign_in_info = 3;</code>
      * @return The signInInfo.
      */
     emu.grasscutter.net.proto.SignInInfoOuterClass.SignInInfo getSignInInfo();
     /**
-     * <code>.SignInInfo sign_in_info = 14;</code>
+     * <code>.SignInInfo sign_in_info = 3;</code>
      */
     emu.grasscutter.net.proto.SignInInfoOuterClass.SignInInfoOrBuilder getSignInInfoOrBuilder();
+
+    /**
+     * <code>int32 retcode = 1;</code>
+     * @return The retcode.
+     */
+    int getRetcode();
   }
   /**
    * <pre>
-   * CmdId: 2521
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 2543;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code GetSignInRewardRsp}
@@ -95,7 +99,7 @@ public final class GetSignInRewardRspOuterClass {
               retcode_ = input.readInt32();
               break;
             }
-            case 114: {
+            case 26: {
               emu.grasscutter.net.proto.SignInInfoOuterClass.SignInInfo.Builder subBuilder = null;
               if (signInInfo_ != null) {
                 subBuilder = signInInfo_.toBuilder();
@@ -140,6 +144,32 @@ public final class GetSignInRewardRspOuterClass {
               emu.grasscutter.net.proto.GetSignInRewardRspOuterClass.GetSignInRewardRsp.class, emu.grasscutter.net.proto.GetSignInRewardRspOuterClass.GetSignInRewardRsp.Builder.class);
     }
 
+    public static final int SIGN_IN_INFO_FIELD_NUMBER = 3;
+    private emu.grasscutter.net.proto.SignInInfoOuterClass.SignInInfo signInInfo_;
+    /**
+     * <code>.SignInInfo sign_in_info = 3;</code>
+     * @return Whether the signInInfo field is set.
+     */
+    @java.lang.Override
+    public boolean hasSignInInfo() {
+      return signInInfo_ != null;
+    }
+    /**
+     * <code>.SignInInfo sign_in_info = 3;</code>
+     * @return The signInInfo.
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.SignInInfoOuterClass.SignInInfo getSignInInfo() {
+      return signInInfo_ == null ? emu.grasscutter.net.proto.SignInInfoOuterClass.SignInInfo.getDefaultInstance() : signInInfo_;
+    }
+    /**
+     * <code>.SignInInfo sign_in_info = 3;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.SignInInfoOuterClass.SignInInfoOrBuilder getSignInInfoOrBuilder() {
+      return getSignInInfo();
+    }
+
     public static final int RETCODE_FIELD_NUMBER = 1;
     private int retcode_;
     /**
@@ -149,32 +179,6 @@ public final class GetSignInRewardRspOuterClass {
     @java.lang.Override
     public int getRetcode() {
       return retcode_;
-    }
-
-    public static final int SIGN_IN_INFO_FIELD_NUMBER = 14;
-    private emu.grasscutter.net.proto.SignInInfoOuterClass.SignInInfo signInInfo_;
-    /**
-     * <code>.SignInInfo sign_in_info = 14;</code>
-     * @return Whether the signInInfo field is set.
-     */
-    @java.lang.Override
-    public boolean hasSignInInfo() {
-      return signInInfo_ != null;
-    }
-    /**
-     * <code>.SignInInfo sign_in_info = 14;</code>
-     * @return The signInInfo.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.SignInInfoOuterClass.SignInInfo getSignInInfo() {
-      return signInInfo_ == null ? emu.grasscutter.net.proto.SignInInfoOuterClass.SignInInfo.getDefaultInstance() : signInInfo_;
-    }
-    /**
-     * <code>.SignInInfo sign_in_info = 14;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.SignInInfoOuterClass.SignInInfoOrBuilder getSignInInfoOrBuilder() {
-      return getSignInInfo();
     }
 
     private byte memoizedIsInitialized = -1;
@@ -195,7 +199,7 @@ public final class GetSignInRewardRspOuterClass {
         output.writeInt32(1, retcode_);
       }
       if (signInInfo_ != null) {
-        output.writeMessage(14, getSignInInfo());
+        output.writeMessage(3, getSignInInfo());
       }
       unknownFields.writeTo(output);
     }
@@ -212,7 +216,7 @@ public final class GetSignInRewardRspOuterClass {
       }
       if (signInInfo_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(14, getSignInInfo());
+          .computeMessageSize(3, getSignInInfo());
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -229,13 +233,13 @@ public final class GetSignInRewardRspOuterClass {
       }
       emu.grasscutter.net.proto.GetSignInRewardRspOuterClass.GetSignInRewardRsp other = (emu.grasscutter.net.proto.GetSignInRewardRspOuterClass.GetSignInRewardRsp) obj;
 
-      if (getRetcode()
-          != other.getRetcode()) return false;
       if (hasSignInInfo() != other.hasSignInInfo()) return false;
       if (hasSignInInfo()) {
         if (!getSignInInfo()
             .equals(other.getSignInInfo())) return false;
       }
+      if (getRetcode()
+          != other.getRetcode()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -247,12 +251,12 @@ public final class GetSignInRewardRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
-      hash = (53 * hash) + getRetcode();
       if (hasSignInInfo()) {
         hash = (37 * hash) + SIGN_IN_INFO_FIELD_NUMBER;
         hash = (53 * hash) + getSignInInfo().hashCode();
       }
+      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
+      hash = (53 * hash) + getRetcode();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -350,9 +354,13 @@ public final class GetSignInRewardRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 2521
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 2543;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code GetSignInRewardRsp}
@@ -392,14 +400,14 @@ public final class GetSignInRewardRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        retcode_ = 0;
-
         if (signInInfoBuilder_ == null) {
           signInInfo_ = null;
         } else {
           signInInfo_ = null;
           signInInfoBuilder_ = null;
         }
+        retcode_ = 0;
+
         return this;
       }
 
@@ -426,12 +434,12 @@ public final class GetSignInRewardRspOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.GetSignInRewardRspOuterClass.GetSignInRewardRsp buildPartial() {
         emu.grasscutter.net.proto.GetSignInRewardRspOuterClass.GetSignInRewardRsp result = new emu.grasscutter.net.proto.GetSignInRewardRspOuterClass.GetSignInRewardRsp(this);
-        result.retcode_ = retcode_;
         if (signInInfoBuilder_ == null) {
           result.signInInfo_ = signInInfo_;
         } else {
           result.signInInfo_ = signInInfoBuilder_.build();
         }
+        result.retcode_ = retcode_;
         onBuilt();
         return result;
       }
@@ -480,11 +488,11 @@ public final class GetSignInRewardRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.GetSignInRewardRspOuterClass.GetSignInRewardRsp other) {
         if (other == emu.grasscutter.net.proto.GetSignInRewardRspOuterClass.GetSignInRewardRsp.getDefaultInstance()) return this;
-        if (other.getRetcode() != 0) {
-          setRetcode(other.getRetcode());
-        }
         if (other.hasSignInInfo()) {
           mergeSignInInfo(other.getSignInInfo());
+        }
+        if (other.getRetcode() != 0) {
+          setRetcode(other.getRetcode());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -513,6 +521,125 @@ public final class GetSignInRewardRspOuterClass {
           }
         }
         return this;
+      }
+
+      private emu.grasscutter.net.proto.SignInInfoOuterClass.SignInInfo signInInfo_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.SignInInfoOuterClass.SignInInfo, emu.grasscutter.net.proto.SignInInfoOuterClass.SignInInfo.Builder, emu.grasscutter.net.proto.SignInInfoOuterClass.SignInInfoOrBuilder> signInInfoBuilder_;
+      /**
+       * <code>.SignInInfo sign_in_info = 3;</code>
+       * @return Whether the signInInfo field is set.
+       */
+      public boolean hasSignInInfo() {
+        return signInInfoBuilder_ != null || signInInfo_ != null;
+      }
+      /**
+       * <code>.SignInInfo sign_in_info = 3;</code>
+       * @return The signInInfo.
+       */
+      public emu.grasscutter.net.proto.SignInInfoOuterClass.SignInInfo getSignInInfo() {
+        if (signInInfoBuilder_ == null) {
+          return signInInfo_ == null ? emu.grasscutter.net.proto.SignInInfoOuterClass.SignInInfo.getDefaultInstance() : signInInfo_;
+        } else {
+          return signInInfoBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>.SignInInfo sign_in_info = 3;</code>
+       */
+      public Builder setSignInInfo(emu.grasscutter.net.proto.SignInInfoOuterClass.SignInInfo value) {
+        if (signInInfoBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          signInInfo_ = value;
+          onChanged();
+        } else {
+          signInInfoBuilder_.setMessage(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.SignInInfo sign_in_info = 3;</code>
+       */
+      public Builder setSignInInfo(
+          emu.grasscutter.net.proto.SignInInfoOuterClass.SignInInfo.Builder builderForValue) {
+        if (signInInfoBuilder_ == null) {
+          signInInfo_ = builderForValue.build();
+          onChanged();
+        } else {
+          signInInfoBuilder_.setMessage(builderForValue.build());
+        }
+
+        return this;
+      }
+      /**
+       * <code>.SignInInfo sign_in_info = 3;</code>
+       */
+      public Builder mergeSignInInfo(emu.grasscutter.net.proto.SignInInfoOuterClass.SignInInfo value) {
+        if (signInInfoBuilder_ == null) {
+          if (signInInfo_ != null) {
+            signInInfo_ =
+              emu.grasscutter.net.proto.SignInInfoOuterClass.SignInInfo.newBuilder(signInInfo_).mergeFrom(value).buildPartial();
+          } else {
+            signInInfo_ = value;
+          }
+          onChanged();
+        } else {
+          signInInfoBuilder_.mergeFrom(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.SignInInfo sign_in_info = 3;</code>
+       */
+      public Builder clearSignInInfo() {
+        if (signInInfoBuilder_ == null) {
+          signInInfo_ = null;
+          onChanged();
+        } else {
+          signInInfo_ = null;
+          signInInfoBuilder_ = null;
+        }
+
+        return this;
+      }
+      /**
+       * <code>.SignInInfo sign_in_info = 3;</code>
+       */
+      public emu.grasscutter.net.proto.SignInInfoOuterClass.SignInInfo.Builder getSignInInfoBuilder() {
+        
+        onChanged();
+        return getSignInInfoFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.SignInInfo sign_in_info = 3;</code>
+       */
+      public emu.grasscutter.net.proto.SignInInfoOuterClass.SignInInfoOrBuilder getSignInInfoOrBuilder() {
+        if (signInInfoBuilder_ != null) {
+          return signInInfoBuilder_.getMessageOrBuilder();
+        } else {
+          return signInInfo_ == null ?
+              emu.grasscutter.net.proto.SignInInfoOuterClass.SignInInfo.getDefaultInstance() : signInInfo_;
+        }
+      }
+      /**
+       * <code>.SignInInfo sign_in_info = 3;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.SignInInfoOuterClass.SignInInfo, emu.grasscutter.net.proto.SignInInfoOuterClass.SignInInfo.Builder, emu.grasscutter.net.proto.SignInInfoOuterClass.SignInInfoOrBuilder> 
+          getSignInInfoFieldBuilder() {
+        if (signInInfoBuilder_ == null) {
+          signInInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              emu.grasscutter.net.proto.SignInInfoOuterClass.SignInInfo, emu.grasscutter.net.proto.SignInInfoOuterClass.SignInInfo.Builder, emu.grasscutter.net.proto.SignInInfoOuterClass.SignInInfoOrBuilder>(
+                  getSignInInfo(),
+                  getParentForChildren(),
+                  isClean());
+          signInInfo_ = null;
+        }
+        return signInInfoBuilder_;
       }
 
       private int retcode_ ;
@@ -544,125 +671,6 @@ public final class GetSignInRewardRspOuterClass {
         retcode_ = 0;
         onChanged();
         return this;
-      }
-
-      private emu.grasscutter.net.proto.SignInInfoOuterClass.SignInInfo signInInfo_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.SignInInfoOuterClass.SignInInfo, emu.grasscutter.net.proto.SignInInfoOuterClass.SignInInfo.Builder, emu.grasscutter.net.proto.SignInInfoOuterClass.SignInInfoOrBuilder> signInInfoBuilder_;
-      /**
-       * <code>.SignInInfo sign_in_info = 14;</code>
-       * @return Whether the signInInfo field is set.
-       */
-      public boolean hasSignInInfo() {
-        return signInInfoBuilder_ != null || signInInfo_ != null;
-      }
-      /**
-       * <code>.SignInInfo sign_in_info = 14;</code>
-       * @return The signInInfo.
-       */
-      public emu.grasscutter.net.proto.SignInInfoOuterClass.SignInInfo getSignInInfo() {
-        if (signInInfoBuilder_ == null) {
-          return signInInfo_ == null ? emu.grasscutter.net.proto.SignInInfoOuterClass.SignInInfo.getDefaultInstance() : signInInfo_;
-        } else {
-          return signInInfoBuilder_.getMessage();
-        }
-      }
-      /**
-       * <code>.SignInInfo sign_in_info = 14;</code>
-       */
-      public Builder setSignInInfo(emu.grasscutter.net.proto.SignInInfoOuterClass.SignInInfo value) {
-        if (signInInfoBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          signInInfo_ = value;
-          onChanged();
-        } else {
-          signInInfoBuilder_.setMessage(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.SignInInfo sign_in_info = 14;</code>
-       */
-      public Builder setSignInInfo(
-          emu.grasscutter.net.proto.SignInInfoOuterClass.SignInInfo.Builder builderForValue) {
-        if (signInInfoBuilder_ == null) {
-          signInInfo_ = builderForValue.build();
-          onChanged();
-        } else {
-          signInInfoBuilder_.setMessage(builderForValue.build());
-        }
-
-        return this;
-      }
-      /**
-       * <code>.SignInInfo sign_in_info = 14;</code>
-       */
-      public Builder mergeSignInInfo(emu.grasscutter.net.proto.SignInInfoOuterClass.SignInInfo value) {
-        if (signInInfoBuilder_ == null) {
-          if (signInInfo_ != null) {
-            signInInfo_ =
-              emu.grasscutter.net.proto.SignInInfoOuterClass.SignInInfo.newBuilder(signInInfo_).mergeFrom(value).buildPartial();
-          } else {
-            signInInfo_ = value;
-          }
-          onChanged();
-        } else {
-          signInInfoBuilder_.mergeFrom(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.SignInInfo sign_in_info = 14;</code>
-       */
-      public Builder clearSignInInfo() {
-        if (signInInfoBuilder_ == null) {
-          signInInfo_ = null;
-          onChanged();
-        } else {
-          signInInfo_ = null;
-          signInInfoBuilder_ = null;
-        }
-
-        return this;
-      }
-      /**
-       * <code>.SignInInfo sign_in_info = 14;</code>
-       */
-      public emu.grasscutter.net.proto.SignInInfoOuterClass.SignInInfo.Builder getSignInInfoBuilder() {
-        
-        onChanged();
-        return getSignInInfoFieldBuilder().getBuilder();
-      }
-      /**
-       * <code>.SignInInfo sign_in_info = 14;</code>
-       */
-      public emu.grasscutter.net.proto.SignInInfoOuterClass.SignInInfoOrBuilder getSignInInfoOrBuilder() {
-        if (signInInfoBuilder_ != null) {
-          return signInInfoBuilder_.getMessageOrBuilder();
-        } else {
-          return signInInfo_ == null ?
-              emu.grasscutter.net.proto.SignInInfoOuterClass.SignInInfo.getDefaultInstance() : signInInfo_;
-        }
-      }
-      /**
-       * <code>.SignInInfo sign_in_info = 14;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.SignInInfoOuterClass.SignInInfo, emu.grasscutter.net.proto.SignInInfoOuterClass.SignInInfo.Builder, emu.grasscutter.net.proto.SignInInfoOuterClass.SignInInfoOrBuilder> 
-          getSignInInfoFieldBuilder() {
-        if (signInInfoBuilder_ == null) {
-          signInInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.SignInInfoOuterClass.SignInInfo, emu.grasscutter.net.proto.SignInInfoOuterClass.SignInInfo.Builder, emu.grasscutter.net.proto.SignInInfoOuterClass.SignInInfoOrBuilder>(
-                  getSignInInfo(),
-                  getParentForChildren(),
-                  isClean());
-          signInInfo_ = null;
-        }
-        return signInInfoBuilder_;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -732,8 +740,8 @@ public final class GetSignInRewardRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\030GetSignInRewardRsp.proto\032\020SignInInfo.p" +
-      "roto\"H\n\022GetSignInRewardRsp\022\017\n\007retcode\030\001 " +
-      "\001(\005\022!\n\014sign_in_info\030\016 \001(\0132\013.SignInInfoB\033" +
+      "roto\"H\n\022GetSignInRewardRsp\022!\n\014sign_in_in" +
+      "fo\030\003 \001(\0132\013.SignInInfo\022\017\n\007retcode\030\001 \001(\005B\033" +
       "\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -746,7 +754,7 @@ public final class GetSignInRewardRspOuterClass {
     internal_static_GetSignInRewardRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GetSignInRewardRsp_descriptor,
-        new java.lang.String[] { "Retcode", "SignInInfo", });
+        new java.lang.String[] { "SignInInfo", "Retcode", });
     emu.grasscutter.net.proto.SignInInfoOuterClass.getDescriptor();
   }
 

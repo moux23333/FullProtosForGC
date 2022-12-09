@@ -19,22 +19,16 @@ public final class EvtCombatForceSetPosInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 ice_id = 9;</code>
-     * @return The iceId.
+     * <code>uint32 Unk3300_LGGMBNLMGHB = 8;</code>
+     * @return The unk3300LGGMBNLMGHB.
      */
-    int getIceId();
+    int getUnk3300LGGMBNLMGHB();
 
     /**
-     * <code>uint32 collider_entity_id = 10;</code>
-     * @return The colliderEntityId.
+     * <code>uint32 Unk3300_IALIGDPAMFL = 7;</code>
+     * @return The unk3300IALIGDPAMFL.
      */
-    int getColliderEntityId();
-
-    /**
-     * <code>uint32 entity_id = 6;</code>
-     * @return The entityId.
-     */
-    int getEntityId();
+    int getUnk3300IALIGDPAMFL();
 
     /**
      * <code>.Vector target_pos = 1;</code>
@@ -50,6 +44,12 @@ public final class EvtCombatForceSetPosInfoOuterClass {
      * <code>.Vector target_pos = 1;</code>
      */
     emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getTargetPosOrBuilder();
+
+    /**
+     * <code>uint32 entity_id = 10;</code>
+     * @return The entityId.
+     */
+    int getEntityId();
   }
   /**
    * Protobuf type {@code EvtCombatForceSetPosInfo}
@@ -109,19 +109,19 @@ public final class EvtCombatForceSetPosInfoOuterClass {
 
               break;
             }
-            case 48: {
+            case 56: {
 
-              entityId_ = input.readUInt32();
+              unk3300IALIGDPAMFL_ = input.readUInt32();
               break;
             }
-            case 72: {
+            case 64: {
 
-              iceId_ = input.readUInt32();
+              unk3300LGGMBNLMGHB_ = input.readUInt32();
               break;
             }
             case 80: {
 
-              colliderEntityId_ = input.readUInt32();
+              entityId_ = input.readUInt32();
               break;
             }
             default: {
@@ -156,37 +156,26 @@ public final class EvtCombatForceSetPosInfoOuterClass {
               emu.grasscutter.net.proto.EvtCombatForceSetPosInfoOuterClass.EvtCombatForceSetPosInfo.class, emu.grasscutter.net.proto.EvtCombatForceSetPosInfoOuterClass.EvtCombatForceSetPosInfo.Builder.class);
     }
 
-    public static final int ICE_ID_FIELD_NUMBER = 9;
-    private int iceId_;
+    public static final int UNK3300_LGGMBNLMGHB_FIELD_NUMBER = 8;
+    private int unk3300LGGMBNLMGHB_;
     /**
-     * <code>uint32 ice_id = 9;</code>
-     * @return The iceId.
+     * <code>uint32 Unk3300_LGGMBNLMGHB = 8;</code>
+     * @return The unk3300LGGMBNLMGHB.
      */
     @java.lang.Override
-    public int getIceId() {
-      return iceId_;
+    public int getUnk3300LGGMBNLMGHB() {
+      return unk3300LGGMBNLMGHB_;
     }
 
-    public static final int COLLIDER_ENTITY_ID_FIELD_NUMBER = 10;
-    private int colliderEntityId_;
+    public static final int UNK3300_IALIGDPAMFL_FIELD_NUMBER = 7;
+    private int unk3300IALIGDPAMFL_;
     /**
-     * <code>uint32 collider_entity_id = 10;</code>
-     * @return The colliderEntityId.
+     * <code>uint32 Unk3300_IALIGDPAMFL = 7;</code>
+     * @return The unk3300IALIGDPAMFL.
      */
     @java.lang.Override
-    public int getColliderEntityId() {
-      return colliderEntityId_;
-    }
-
-    public static final int ENTITY_ID_FIELD_NUMBER = 6;
-    private int entityId_;
-    /**
-     * <code>uint32 entity_id = 6;</code>
-     * @return The entityId.
-     */
-    @java.lang.Override
-    public int getEntityId() {
-      return entityId_;
+    public int getUnk3300IALIGDPAMFL() {
+      return unk3300IALIGDPAMFL_;
     }
 
     public static final int TARGET_POS_FIELD_NUMBER = 1;
@@ -215,6 +204,17 @@ public final class EvtCombatForceSetPosInfoOuterClass {
       return getTargetPos();
     }
 
+    public static final int ENTITY_ID_FIELD_NUMBER = 10;
+    private int entityId_;
+    /**
+     * <code>uint32 entity_id = 10;</code>
+     * @return The entityId.
+     */
+    @java.lang.Override
+    public int getEntityId() {
+      return entityId_;
+    }
+
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
     public final boolean isInitialized() {
@@ -232,14 +232,14 @@ public final class EvtCombatForceSetPosInfoOuterClass {
       if (targetPos_ != null) {
         output.writeMessage(1, getTargetPos());
       }
+      if (unk3300IALIGDPAMFL_ != 0) {
+        output.writeUInt32(7, unk3300IALIGDPAMFL_);
+      }
+      if (unk3300LGGMBNLMGHB_ != 0) {
+        output.writeUInt32(8, unk3300LGGMBNLMGHB_);
+      }
       if (entityId_ != 0) {
-        output.writeUInt32(6, entityId_);
-      }
-      if (iceId_ != 0) {
-        output.writeUInt32(9, iceId_);
-      }
-      if (colliderEntityId_ != 0) {
-        output.writeUInt32(10, colliderEntityId_);
+        output.writeUInt32(10, entityId_);
       }
       unknownFields.writeTo(output);
     }
@@ -254,17 +254,17 @@ public final class EvtCombatForceSetPosInfoOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(1, getTargetPos());
       }
+      if (unk3300IALIGDPAMFL_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(7, unk3300IALIGDPAMFL_);
+      }
+      if (unk3300LGGMBNLMGHB_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(8, unk3300LGGMBNLMGHB_);
+      }
       if (entityId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, entityId_);
-      }
-      if (iceId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, iceId_);
-      }
-      if (colliderEntityId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, colliderEntityId_);
+          .computeUInt32Size(10, entityId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -281,17 +281,17 @@ public final class EvtCombatForceSetPosInfoOuterClass {
       }
       emu.grasscutter.net.proto.EvtCombatForceSetPosInfoOuterClass.EvtCombatForceSetPosInfo other = (emu.grasscutter.net.proto.EvtCombatForceSetPosInfoOuterClass.EvtCombatForceSetPosInfo) obj;
 
-      if (getIceId()
-          != other.getIceId()) return false;
-      if (getColliderEntityId()
-          != other.getColliderEntityId()) return false;
-      if (getEntityId()
-          != other.getEntityId()) return false;
+      if (getUnk3300LGGMBNLMGHB()
+          != other.getUnk3300LGGMBNLMGHB()) return false;
+      if (getUnk3300IALIGDPAMFL()
+          != other.getUnk3300IALIGDPAMFL()) return false;
       if (hasTargetPos() != other.hasTargetPos()) return false;
       if (hasTargetPos()) {
         if (!getTargetPos()
             .equals(other.getTargetPos())) return false;
       }
+      if (getEntityId()
+          != other.getEntityId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -303,16 +303,16 @@ public final class EvtCombatForceSetPosInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + ICE_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getIceId();
-      hash = (37 * hash) + COLLIDER_ENTITY_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getColliderEntityId();
-      hash = (37 * hash) + ENTITY_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getEntityId();
+      hash = (37 * hash) + UNK3300_LGGMBNLMGHB_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300LGGMBNLMGHB();
+      hash = (37 * hash) + UNK3300_IALIGDPAMFL_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300IALIGDPAMFL();
       if (hasTargetPos()) {
         hash = (37 * hash) + TARGET_POS_FIELD_NUMBER;
         hash = (53 * hash) + getTargetPos().hashCode();
       }
+      hash = (37 * hash) + ENTITY_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getEntityId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -446,11 +446,9 @@ public final class EvtCombatForceSetPosInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        iceId_ = 0;
+        unk3300LGGMBNLMGHB_ = 0;
 
-        colliderEntityId_ = 0;
-
-        entityId_ = 0;
+        unk3300IALIGDPAMFL_ = 0;
 
         if (targetPosBuilder_ == null) {
           targetPos_ = null;
@@ -458,6 +456,8 @@ public final class EvtCombatForceSetPosInfoOuterClass {
           targetPos_ = null;
           targetPosBuilder_ = null;
         }
+        entityId_ = 0;
+
         return this;
       }
 
@@ -484,14 +484,14 @@ public final class EvtCombatForceSetPosInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.EvtCombatForceSetPosInfoOuterClass.EvtCombatForceSetPosInfo buildPartial() {
         emu.grasscutter.net.proto.EvtCombatForceSetPosInfoOuterClass.EvtCombatForceSetPosInfo result = new emu.grasscutter.net.proto.EvtCombatForceSetPosInfoOuterClass.EvtCombatForceSetPosInfo(this);
-        result.iceId_ = iceId_;
-        result.colliderEntityId_ = colliderEntityId_;
-        result.entityId_ = entityId_;
+        result.unk3300LGGMBNLMGHB_ = unk3300LGGMBNLMGHB_;
+        result.unk3300IALIGDPAMFL_ = unk3300IALIGDPAMFL_;
         if (targetPosBuilder_ == null) {
           result.targetPos_ = targetPos_;
         } else {
           result.targetPos_ = targetPosBuilder_.build();
         }
+        result.entityId_ = entityId_;
         onBuilt();
         return result;
       }
@@ -540,17 +540,17 @@ public final class EvtCombatForceSetPosInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.EvtCombatForceSetPosInfoOuterClass.EvtCombatForceSetPosInfo other) {
         if (other == emu.grasscutter.net.proto.EvtCombatForceSetPosInfoOuterClass.EvtCombatForceSetPosInfo.getDefaultInstance()) return this;
-        if (other.getIceId() != 0) {
-          setIceId(other.getIceId());
+        if (other.getUnk3300LGGMBNLMGHB() != 0) {
+          setUnk3300LGGMBNLMGHB(other.getUnk3300LGGMBNLMGHB());
         }
-        if (other.getColliderEntityId() != 0) {
-          setColliderEntityId(other.getColliderEntityId());
-        }
-        if (other.getEntityId() != 0) {
-          setEntityId(other.getEntityId());
+        if (other.getUnk3300IALIGDPAMFL() != 0) {
+          setUnk3300IALIGDPAMFL(other.getUnk3300IALIGDPAMFL());
         }
         if (other.hasTargetPos()) {
           mergeTargetPos(other.getTargetPos());
+        }
+        if (other.getEntityId() != 0) {
+          setEntityId(other.getEntityId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -581,95 +581,64 @@ public final class EvtCombatForceSetPosInfoOuterClass {
         return this;
       }
 
-      private int iceId_ ;
+      private int unk3300LGGMBNLMGHB_ ;
       /**
-       * <code>uint32 ice_id = 9;</code>
-       * @return The iceId.
+       * <code>uint32 Unk3300_LGGMBNLMGHB = 8;</code>
+       * @return The unk3300LGGMBNLMGHB.
        */
       @java.lang.Override
-      public int getIceId() {
-        return iceId_;
+      public int getUnk3300LGGMBNLMGHB() {
+        return unk3300LGGMBNLMGHB_;
       }
       /**
-       * <code>uint32 ice_id = 9;</code>
-       * @param value The iceId to set.
+       * <code>uint32 Unk3300_LGGMBNLMGHB = 8;</code>
+       * @param value The unk3300LGGMBNLMGHB to set.
        * @return This builder for chaining.
        */
-      public Builder setIceId(int value) {
+      public Builder setUnk3300LGGMBNLMGHB(int value) {
         
-        iceId_ = value;
+        unk3300LGGMBNLMGHB_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 ice_id = 9;</code>
+       * <code>uint32 Unk3300_LGGMBNLMGHB = 8;</code>
        * @return This builder for chaining.
        */
-      public Builder clearIceId() {
+      public Builder clearUnk3300LGGMBNLMGHB() {
         
-        iceId_ = 0;
+        unk3300LGGMBNLMGHB_ = 0;
         onChanged();
         return this;
       }
 
-      private int colliderEntityId_ ;
+      private int unk3300IALIGDPAMFL_ ;
       /**
-       * <code>uint32 collider_entity_id = 10;</code>
-       * @return The colliderEntityId.
+       * <code>uint32 Unk3300_IALIGDPAMFL = 7;</code>
+       * @return The unk3300IALIGDPAMFL.
        */
       @java.lang.Override
-      public int getColliderEntityId() {
-        return colliderEntityId_;
+      public int getUnk3300IALIGDPAMFL() {
+        return unk3300IALIGDPAMFL_;
       }
       /**
-       * <code>uint32 collider_entity_id = 10;</code>
-       * @param value The colliderEntityId to set.
+       * <code>uint32 Unk3300_IALIGDPAMFL = 7;</code>
+       * @param value The unk3300IALIGDPAMFL to set.
        * @return This builder for chaining.
        */
-      public Builder setColliderEntityId(int value) {
+      public Builder setUnk3300IALIGDPAMFL(int value) {
         
-        colliderEntityId_ = value;
+        unk3300IALIGDPAMFL_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 collider_entity_id = 10;</code>
+       * <code>uint32 Unk3300_IALIGDPAMFL = 7;</code>
        * @return This builder for chaining.
        */
-      public Builder clearColliderEntityId() {
+      public Builder clearUnk3300IALIGDPAMFL() {
         
-        colliderEntityId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int entityId_ ;
-      /**
-       * <code>uint32 entity_id = 6;</code>
-       * @return The entityId.
-       */
-      @java.lang.Override
-      public int getEntityId() {
-        return entityId_;
-      }
-      /**
-       * <code>uint32 entity_id = 6;</code>
-       * @param value The entityId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setEntityId(int value) {
-        
-        entityId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 entity_id = 6;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearEntityId() {
-        
-        entityId_ = 0;
+        unk3300IALIGDPAMFL_ = 0;
         onChanged();
         return this;
       }
@@ -792,6 +761,37 @@ public final class EvtCombatForceSetPosInfoOuterClass {
         }
         return targetPosBuilder_;
       }
+
+      private int entityId_ ;
+      /**
+       * <code>uint32 entity_id = 10;</code>
+       * @return The entityId.
+       */
+      @java.lang.Override
+      public int getEntityId() {
+        return entityId_;
+      }
+      /**
+       * <code>uint32 entity_id = 10;</code>
+       * @param value The entityId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setEntityId(int value) {
+        
+        entityId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 entity_id = 10;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearEntityId() {
+        
+        entityId_ = 0;
+        onChanged();
+        return this;
+      }
       @java.lang.Override
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
@@ -860,11 +860,11 @@ public final class EvtCombatForceSetPosInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\036EvtCombatForceSetPosInfo.proto\032\014Vector" +
-      ".proto\"v\n\030EvtCombatForceSetPosInfo\022\016\n\006ic" +
-      "e_id\030\t \001(\r\022\032\n\022collider_entity_id\030\n \001(\r\022\021" +
-      "\n\tentity_id\030\006 \001(\r\022\033\n\ntarget_pos\030\001 \001(\0132\007." +
-      "VectorB\033\n\031emu.grasscutter.net.protob\006pro" +
-      "to3"
+      ".proto\"\204\001\n\030EvtCombatForceSetPosInfo\022\033\n\023U" +
+      "nk3300_LGGMBNLMGHB\030\010 \001(\r\022\033\n\023Unk3300_IALI" +
+      "GDPAMFL\030\007 \001(\r\022\033\n\ntarget_pos\030\001 \001(\0132\007.Vect" +
+      "or\022\021\n\tentity_id\030\n \001(\rB\033\n\031emu.grasscutter" +
+      ".net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -876,7 +876,7 @@ public final class EvtCombatForceSetPosInfoOuterClass {
     internal_static_EvtCombatForceSetPosInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_EvtCombatForceSetPosInfo_descriptor,
-        new java.lang.String[] { "IceId", "ColliderEntityId", "EntityId", "TargetPos", });
+        new java.lang.String[] { "Unk3300LGGMBNLMGHB", "Unk3300IALIGDPAMFL", "TargetPos", "EntityId", });
     emu.grasscutter.net.proto.VectorOuterClass.getDescriptor();
   }
 

@@ -19,22 +19,22 @@ public final class OpActivityTagBriefInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 config_id = 2;</code>
-     * @return The configId.
-     */
-    int getConfigId();
-
-    /**
-     * <code>bool has_reward = 3;</code>
+     * <code>bool has_reward = 14;</code>
      * @return The hasReward.
      */
     boolean getHasReward();
 
     /**
-     * <code>uint32 op_activity_type = 11;</code>
+     * <code>uint32 op_activity_type = 2;</code>
      * @return The opActivityType.
      */
     int getOpActivityType();
+
+    /**
+     * <code>uint32 config_id = 13;</code>
+     * @return The configId.
+     */
+    int getConfigId();
   }
   /**
    * Protobuf type {@code OpActivityTagBriefInfo}
@@ -83,17 +83,17 @@ public final class OpActivityTagBriefInfoOuterClass {
               break;
             case 16: {
 
+              opActivityType_ = input.readUInt32();
+              break;
+            }
+            case 104: {
+
               configId_ = input.readUInt32();
               break;
             }
-            case 24: {
+            case 112: {
 
               hasReward_ = input.readBool();
-              break;
-            }
-            case 88: {
-
-              opActivityType_ = input.readUInt32();
               break;
             }
             default: {
@@ -128,21 +128,10 @@ public final class OpActivityTagBriefInfoOuterClass {
               emu.grasscutter.net.proto.OpActivityTagBriefInfoOuterClass.OpActivityTagBriefInfo.class, emu.grasscutter.net.proto.OpActivityTagBriefInfoOuterClass.OpActivityTagBriefInfo.Builder.class);
     }
 
-    public static final int CONFIG_ID_FIELD_NUMBER = 2;
-    private int configId_;
-    /**
-     * <code>uint32 config_id = 2;</code>
-     * @return The configId.
-     */
-    @java.lang.Override
-    public int getConfigId() {
-      return configId_;
-    }
-
-    public static final int HAS_REWARD_FIELD_NUMBER = 3;
+    public static final int HAS_REWARD_FIELD_NUMBER = 14;
     private boolean hasReward_;
     /**
-     * <code>bool has_reward = 3;</code>
+     * <code>bool has_reward = 14;</code>
      * @return The hasReward.
      */
     @java.lang.Override
@@ -150,15 +139,26 @@ public final class OpActivityTagBriefInfoOuterClass {
       return hasReward_;
     }
 
-    public static final int OP_ACTIVITY_TYPE_FIELD_NUMBER = 11;
+    public static final int OP_ACTIVITY_TYPE_FIELD_NUMBER = 2;
     private int opActivityType_;
     /**
-     * <code>uint32 op_activity_type = 11;</code>
+     * <code>uint32 op_activity_type = 2;</code>
      * @return The opActivityType.
      */
     @java.lang.Override
     public int getOpActivityType() {
       return opActivityType_;
+    }
+
+    public static final int CONFIG_ID_FIELD_NUMBER = 13;
+    private int configId_;
+    /**
+     * <code>uint32 config_id = 13;</code>
+     * @return The configId.
+     */
+    @java.lang.Override
+    public int getConfigId() {
+      return configId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -175,14 +175,14 @@ public final class OpActivityTagBriefInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (opActivityType_ != 0) {
+        output.writeUInt32(2, opActivityType_);
+      }
       if (configId_ != 0) {
-        output.writeUInt32(2, configId_);
+        output.writeUInt32(13, configId_);
       }
       if (hasReward_ != false) {
-        output.writeBool(3, hasReward_);
-      }
-      if (opActivityType_ != 0) {
-        output.writeUInt32(11, opActivityType_);
+        output.writeBool(14, hasReward_);
       }
       unknownFields.writeTo(output);
     }
@@ -193,17 +193,17 @@ public final class OpActivityTagBriefInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (opActivityType_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(2, opActivityType_);
+      }
       if (configId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, configId_);
+          .computeUInt32Size(13, configId_);
       }
       if (hasReward_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(3, hasReward_);
-      }
-      if (opActivityType_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, opActivityType_);
+          .computeBoolSize(14, hasReward_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -220,12 +220,12 @@ public final class OpActivityTagBriefInfoOuterClass {
       }
       emu.grasscutter.net.proto.OpActivityTagBriefInfoOuterClass.OpActivityTagBriefInfo other = (emu.grasscutter.net.proto.OpActivityTagBriefInfoOuterClass.OpActivityTagBriefInfo) obj;
 
-      if (getConfigId()
-          != other.getConfigId()) return false;
       if (getHasReward()
           != other.getHasReward()) return false;
       if (getOpActivityType()
           != other.getOpActivityType()) return false;
+      if (getConfigId()
+          != other.getConfigId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -237,13 +237,13 @@ public final class OpActivityTagBriefInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + CONFIG_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getConfigId();
       hash = (37 * hash) + HAS_REWARD_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getHasReward());
       hash = (37 * hash) + OP_ACTIVITY_TYPE_FIELD_NUMBER;
       hash = (53 * hash) + getOpActivityType();
+      hash = (37 * hash) + CONFIG_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getConfigId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -377,11 +377,11 @@ public final class OpActivityTagBriefInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        configId_ = 0;
-
         hasReward_ = false;
 
         opActivityType_ = 0;
+
+        configId_ = 0;
 
         return this;
       }
@@ -409,9 +409,9 @@ public final class OpActivityTagBriefInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.OpActivityTagBriefInfoOuterClass.OpActivityTagBriefInfo buildPartial() {
         emu.grasscutter.net.proto.OpActivityTagBriefInfoOuterClass.OpActivityTagBriefInfo result = new emu.grasscutter.net.proto.OpActivityTagBriefInfoOuterClass.OpActivityTagBriefInfo(this);
-        result.configId_ = configId_;
         result.hasReward_ = hasReward_;
         result.opActivityType_ = opActivityType_;
+        result.configId_ = configId_;
         onBuilt();
         return result;
       }
@@ -460,14 +460,14 @@ public final class OpActivityTagBriefInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.OpActivityTagBriefInfoOuterClass.OpActivityTagBriefInfo other) {
         if (other == emu.grasscutter.net.proto.OpActivityTagBriefInfoOuterClass.OpActivityTagBriefInfo.getDefaultInstance()) return this;
-        if (other.getConfigId() != 0) {
-          setConfigId(other.getConfigId());
-        }
         if (other.getHasReward() != false) {
           setHasReward(other.getHasReward());
         }
         if (other.getOpActivityType() != 0) {
           setOpActivityType(other.getOpActivityType());
+        }
+        if (other.getConfigId() != 0) {
+          setConfigId(other.getConfigId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -498,40 +498,9 @@ public final class OpActivityTagBriefInfoOuterClass {
         return this;
       }
 
-      private int configId_ ;
-      /**
-       * <code>uint32 config_id = 2;</code>
-       * @return The configId.
-       */
-      @java.lang.Override
-      public int getConfigId() {
-        return configId_;
-      }
-      /**
-       * <code>uint32 config_id = 2;</code>
-       * @param value The configId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setConfigId(int value) {
-        
-        configId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 config_id = 2;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearConfigId() {
-        
-        configId_ = 0;
-        onChanged();
-        return this;
-      }
-
       private boolean hasReward_ ;
       /**
-       * <code>bool has_reward = 3;</code>
+       * <code>bool has_reward = 14;</code>
        * @return The hasReward.
        */
       @java.lang.Override
@@ -539,7 +508,7 @@ public final class OpActivityTagBriefInfoOuterClass {
         return hasReward_;
       }
       /**
-       * <code>bool has_reward = 3;</code>
+       * <code>bool has_reward = 14;</code>
        * @param value The hasReward to set.
        * @return This builder for chaining.
        */
@@ -550,7 +519,7 @@ public final class OpActivityTagBriefInfoOuterClass {
         return this;
       }
       /**
-       * <code>bool has_reward = 3;</code>
+       * <code>bool has_reward = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearHasReward() {
@@ -562,7 +531,7 @@ public final class OpActivityTagBriefInfoOuterClass {
 
       private int opActivityType_ ;
       /**
-       * <code>uint32 op_activity_type = 11;</code>
+       * <code>uint32 op_activity_type = 2;</code>
        * @return The opActivityType.
        */
       @java.lang.Override
@@ -570,7 +539,7 @@ public final class OpActivityTagBriefInfoOuterClass {
         return opActivityType_;
       }
       /**
-       * <code>uint32 op_activity_type = 11;</code>
+       * <code>uint32 op_activity_type = 2;</code>
        * @param value The opActivityType to set.
        * @return This builder for chaining.
        */
@@ -581,12 +550,43 @@ public final class OpActivityTagBriefInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 op_activity_type = 11;</code>
+       * <code>uint32 op_activity_type = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearOpActivityType() {
         
         opActivityType_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int configId_ ;
+      /**
+       * <code>uint32 config_id = 13;</code>
+       * @return The configId.
+       */
+      @java.lang.Override
+      public int getConfigId() {
+        return configId_;
+      }
+      /**
+       * <code>uint32 config_id = 13;</code>
+       * @param value The configId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setConfigId(int value) {
+        
+        configId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 config_id = 13;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearConfigId() {
+        
+        configId_ = 0;
         onChanged();
         return this;
       }
@@ -658,8 +658,8 @@ public final class OpActivityTagBriefInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\034OpActivityTagBriefInfo.proto\"Y\n\026OpActi" +
-      "vityTagBriefInfo\022\021\n\tconfig_id\030\002 \001(\r\022\022\n\nh" +
-      "as_reward\030\003 \001(\010\022\030\n\020op_activity_type\030\013 \001(" +
+      "vityTagBriefInfo\022\022\n\nhas_reward\030\016 \001(\010\022\030\n\020" +
+      "op_activity_type\030\002 \001(\r\022\021\n\tconfig_id\030\r \001(" +
       "\rB\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -671,7 +671,7 @@ public final class OpActivityTagBriefInfoOuterClass {
     internal_static_OpActivityTagBriefInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_OpActivityTagBriefInfo_descriptor,
-        new java.lang.String[] { "ConfigId", "HasReward", "OpActivityType", });
+        new java.lang.String[] { "HasReward", "OpActivityType", "ConfigId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

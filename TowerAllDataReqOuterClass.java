@@ -19,17 +19,21 @@ public final class TowerAllDataReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_interact = 2;</code>
+     * <code>bool is_interact = 15;</code>
      * @return The isInteract.
      */
     boolean getIsInteract();
   }
   /**
    * <pre>
-   * CmdId: 2490
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 2447;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code TowerAllDataReq}
@@ -76,7 +80,7 @@ public final class TowerAllDataReqOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
+            case 120: {
 
               isInteract_ = input.readBool();
               break;
@@ -113,10 +117,10 @@ public final class TowerAllDataReqOuterClass {
               emu.grasscutter.net.proto.TowerAllDataReqOuterClass.TowerAllDataReq.class, emu.grasscutter.net.proto.TowerAllDataReqOuterClass.TowerAllDataReq.Builder.class);
     }
 
-    public static final int IS_INTERACT_FIELD_NUMBER = 2;
+    public static final int IS_INTERACT_FIELD_NUMBER = 15;
     private boolean isInteract_;
     /**
-     * <code>bool is_interact = 2;</code>
+     * <code>bool is_interact = 15;</code>
      * @return The isInteract.
      */
     @java.lang.Override
@@ -139,7 +143,7 @@ public final class TowerAllDataReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (isInteract_ != false) {
-        output.writeBool(2, isInteract_);
+        output.writeBool(15, isInteract_);
       }
       unknownFields.writeTo(output);
     }
@@ -152,7 +156,7 @@ public final class TowerAllDataReqOuterClass {
       size = 0;
       if (isInteract_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(2, isInteract_);
+          .computeBoolSize(15, isInteract_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -282,10 +286,14 @@ public final class TowerAllDataReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 2490
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 2447;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code TowerAllDataReq}
@@ -436,7 +444,7 @@ public final class TowerAllDataReqOuterClass {
 
       private boolean isInteract_ ;
       /**
-       * <code>bool is_interact = 2;</code>
+       * <code>bool is_interact = 15;</code>
        * @return The isInteract.
        */
       @java.lang.Override
@@ -444,7 +452,7 @@ public final class TowerAllDataReqOuterClass {
         return isInteract_;
       }
       /**
-       * <code>bool is_interact = 2;</code>
+       * <code>bool is_interact = 15;</code>
        * @param value The isInteract to set.
        * @return This builder for chaining.
        */
@@ -455,7 +463,7 @@ public final class TowerAllDataReqOuterClass {
         return this;
       }
       /**
-       * <code>bool is_interact = 2;</code>
+       * <code>bool is_interact = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsInteract() {
@@ -532,7 +540,7 @@ public final class TowerAllDataReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\025TowerAllDataReq.proto\"&\n\017TowerAllDataR" +
-      "eq\022\023\n\013is_interact\030\002 \001(\010B\033\n\031emu.grasscutt" +
+      "eq\022\023\n\013is_interact\030\017 \001(\010B\033\n\031emu.grasscutt" +
       "er.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

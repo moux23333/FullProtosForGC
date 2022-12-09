@@ -19,17 +19,21 @@ public final class PlayerOfferingReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 offering_id = 6;</code>
+     * <code>uint32 offering_id = 15;</code>
      * @return The offeringId.
      */
     int getOfferingId();
   }
   /**
    * <pre>
-   * CmdId: 2907
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 2915;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code PlayerOfferingReq}
@@ -76,7 +80,7 @@ public final class PlayerOfferingReqOuterClass {
             case 0:
               done = true;
               break;
-            case 48: {
+            case 120: {
 
               offeringId_ = input.readUInt32();
               break;
@@ -113,10 +117,10 @@ public final class PlayerOfferingReqOuterClass {
               emu.grasscutter.net.proto.PlayerOfferingReqOuterClass.PlayerOfferingReq.class, emu.grasscutter.net.proto.PlayerOfferingReqOuterClass.PlayerOfferingReq.Builder.class);
     }
 
-    public static final int OFFERING_ID_FIELD_NUMBER = 6;
+    public static final int OFFERING_ID_FIELD_NUMBER = 15;
     private int offeringId_;
     /**
-     * <code>uint32 offering_id = 6;</code>
+     * <code>uint32 offering_id = 15;</code>
      * @return The offeringId.
      */
     @java.lang.Override
@@ -139,7 +143,7 @@ public final class PlayerOfferingReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (offeringId_ != 0) {
-        output.writeUInt32(6, offeringId_);
+        output.writeUInt32(15, offeringId_);
       }
       unknownFields.writeTo(output);
     }
@@ -152,7 +156,7 @@ public final class PlayerOfferingReqOuterClass {
       size = 0;
       if (offeringId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, offeringId_);
+          .computeUInt32Size(15, offeringId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -281,10 +285,14 @@ public final class PlayerOfferingReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 2907
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 2915;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code PlayerOfferingReq}
@@ -435,7 +443,7 @@ public final class PlayerOfferingReqOuterClass {
 
       private int offeringId_ ;
       /**
-       * <code>uint32 offering_id = 6;</code>
+       * <code>uint32 offering_id = 15;</code>
        * @return The offeringId.
        */
       @java.lang.Override
@@ -443,7 +451,7 @@ public final class PlayerOfferingReqOuterClass {
         return offeringId_;
       }
       /**
-       * <code>uint32 offering_id = 6;</code>
+       * <code>uint32 offering_id = 15;</code>
        * @param value The offeringId to set.
        * @return This builder for chaining.
        */
@@ -454,7 +462,7 @@ public final class PlayerOfferingReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 offering_id = 6;</code>
+       * <code>uint32 offering_id = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearOfferingId() {
@@ -531,7 +539,7 @@ public final class PlayerOfferingReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\027PlayerOfferingReq.proto\"(\n\021PlayerOffer" +
-      "ingReq\022\023\n\013offering_id\030\006 \001(\rB\033\n\031emu.grass" +
+      "ingReq\022\023\n\013offering_id\030\017 \001(\rB\033\n\031emu.grass" +
       "cutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

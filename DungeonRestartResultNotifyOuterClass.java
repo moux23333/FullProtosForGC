@@ -19,17 +19,21 @@ public final class DungeonRestartResultNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_add_accpet = 9;</code>
-     * @return The isAddAccpet.
+     * <code>bool is_add_accept = 9;</code>
+     * @return The isAddAccept.
      */
-    boolean getIsAddAccpet();
+    boolean getIsAddAccept();
   }
   /**
    * <pre>
-   * CmdId: 940
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 985;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code DungeonRestartResultNotify}
@@ -78,7 +82,7 @@ public final class DungeonRestartResultNotifyOuterClass {
               break;
             case 72: {
 
-              isAddAccpet_ = input.readBool();
+              isAddAccept_ = input.readBool();
               break;
             }
             default: {
@@ -113,15 +117,15 @@ public final class DungeonRestartResultNotifyOuterClass {
               emu.grasscutter.net.proto.DungeonRestartResultNotifyOuterClass.DungeonRestartResultNotify.class, emu.grasscutter.net.proto.DungeonRestartResultNotifyOuterClass.DungeonRestartResultNotify.Builder.class);
     }
 
-    public static final int IS_ADD_ACCPET_FIELD_NUMBER = 9;
-    private boolean isAddAccpet_;
+    public static final int IS_ADD_ACCEPT_FIELD_NUMBER = 9;
+    private boolean isAddAccept_;
     /**
-     * <code>bool is_add_accpet = 9;</code>
-     * @return The isAddAccpet.
+     * <code>bool is_add_accept = 9;</code>
+     * @return The isAddAccept.
      */
     @java.lang.Override
-    public boolean getIsAddAccpet() {
-      return isAddAccpet_;
+    public boolean getIsAddAccept() {
+      return isAddAccept_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -138,8 +142,8 @@ public final class DungeonRestartResultNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (isAddAccpet_ != false) {
-        output.writeBool(9, isAddAccpet_);
+      if (isAddAccept_ != false) {
+        output.writeBool(9, isAddAccept_);
       }
       unknownFields.writeTo(output);
     }
@@ -150,9 +154,9 @@ public final class DungeonRestartResultNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (isAddAccpet_ != false) {
+      if (isAddAccept_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(9, isAddAccpet_);
+          .computeBoolSize(9, isAddAccept_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -169,8 +173,8 @@ public final class DungeonRestartResultNotifyOuterClass {
       }
       emu.grasscutter.net.proto.DungeonRestartResultNotifyOuterClass.DungeonRestartResultNotify other = (emu.grasscutter.net.proto.DungeonRestartResultNotifyOuterClass.DungeonRestartResultNotify) obj;
 
-      if (getIsAddAccpet()
-          != other.getIsAddAccpet()) return false;
+      if (getIsAddAccept()
+          != other.getIsAddAccept()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -182,9 +186,9 @@ public final class DungeonRestartResultNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + IS_ADD_ACCPET_FIELD_NUMBER;
+      hash = (37 * hash) + IS_ADD_ACCEPT_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsAddAccpet());
+          getIsAddAccept());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -282,10 +286,14 @@ public final class DungeonRestartResultNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 940
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 985;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code DungeonRestartResultNotify}
@@ -325,7 +333,7 @@ public final class DungeonRestartResultNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        isAddAccpet_ = false;
+        isAddAccept_ = false;
 
         return this;
       }
@@ -353,7 +361,7 @@ public final class DungeonRestartResultNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.DungeonRestartResultNotifyOuterClass.DungeonRestartResultNotify buildPartial() {
         emu.grasscutter.net.proto.DungeonRestartResultNotifyOuterClass.DungeonRestartResultNotify result = new emu.grasscutter.net.proto.DungeonRestartResultNotifyOuterClass.DungeonRestartResultNotify(this);
-        result.isAddAccpet_ = isAddAccpet_;
+        result.isAddAccept_ = isAddAccept_;
         onBuilt();
         return result;
       }
@@ -402,8 +410,8 @@ public final class DungeonRestartResultNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.DungeonRestartResultNotifyOuterClass.DungeonRestartResultNotify other) {
         if (other == emu.grasscutter.net.proto.DungeonRestartResultNotifyOuterClass.DungeonRestartResultNotify.getDefaultInstance()) return this;
-        if (other.getIsAddAccpet() != false) {
-          setIsAddAccpet(other.getIsAddAccpet());
+        if (other.getIsAddAccept() != false) {
+          setIsAddAccept(other.getIsAddAccept());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -434,33 +442,33 @@ public final class DungeonRestartResultNotifyOuterClass {
         return this;
       }
 
-      private boolean isAddAccpet_ ;
+      private boolean isAddAccept_ ;
       /**
-       * <code>bool is_add_accpet = 9;</code>
-       * @return The isAddAccpet.
+       * <code>bool is_add_accept = 9;</code>
+       * @return The isAddAccept.
        */
       @java.lang.Override
-      public boolean getIsAddAccpet() {
-        return isAddAccpet_;
+      public boolean getIsAddAccept() {
+        return isAddAccept_;
       }
       /**
-       * <code>bool is_add_accpet = 9;</code>
-       * @param value The isAddAccpet to set.
+       * <code>bool is_add_accept = 9;</code>
+       * @param value The isAddAccept to set.
        * @return This builder for chaining.
        */
-      public Builder setIsAddAccpet(boolean value) {
+      public Builder setIsAddAccept(boolean value) {
         
-        isAddAccpet_ = value;
+        isAddAccept_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>bool is_add_accpet = 9;</code>
+       * <code>bool is_add_accept = 9;</code>
        * @return This builder for chaining.
        */
-      public Builder clearIsAddAccpet() {
+      public Builder clearIsAddAccept() {
         
-        isAddAccpet_ = false;
+        isAddAccept_ = false;
         onChanged();
         return this;
       }
@@ -532,7 +540,7 @@ public final class DungeonRestartResultNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n DungeonRestartResultNotify.proto\"3\n\032Du" +
-      "ngeonRestartResultNotify\022\025\n\ris_add_accpe" +
+      "ngeonRestartResultNotify\022\025\n\ris_add_accep" +
       "t\030\t \001(\010B\033\n\031emu.grasscutter.net.protob\006pr" +
       "oto3"
     };
@@ -545,7 +553,7 @@ public final class DungeonRestartResultNotifyOuterClass {
     internal_static_DungeonRestartResultNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_DungeonRestartResultNotify_descriptor,
-        new java.lang.String[] { "IsAddAccpet", });
+        new java.lang.String[] { "IsAddAccept", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

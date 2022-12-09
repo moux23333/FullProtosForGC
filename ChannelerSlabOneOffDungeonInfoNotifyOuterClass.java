@@ -19,17 +19,17 @@ public final class ChannelerSlabOneOffDungeonInfoNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated uint32 scheme_buff_id_list = 6;</code>
+     * <code>repeated uint32 scheme_buff_id_list = 8;</code>
      * @return A list containing the schemeBuffIdList.
      */
     java.util.List<java.lang.Integer> getSchemeBuffIdListList();
     /**
-     * <code>repeated uint32 scheme_buff_id_list = 6;</code>
+     * <code>repeated uint32 scheme_buff_id_list = 8;</code>
      * @return The count of schemeBuffIdList.
      */
     int getSchemeBuffIdListCount();
     /**
-     * <code>repeated uint32 scheme_buff_id_list = 6;</code>
+     * <code>repeated uint32 scheme_buff_id_list = 8;</code>
      * @param index The index of the element to return.
      * @return The schemeBuffIdList at the given index.
      */
@@ -37,9 +37,13 @@ public final class ChannelerSlabOneOffDungeonInfoNotifyOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 8729
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 8015;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code ChannelerSlabOneOffDungeonInfoNotify}
@@ -88,7 +92,7 @@ public final class ChannelerSlabOneOffDungeonInfoNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 48: {
+            case 64: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 schemeBuffIdList_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
@@ -96,7 +100,7 @@ public final class ChannelerSlabOneOffDungeonInfoNotifyOuterClass {
               schemeBuffIdList_.addInt(input.readUInt32());
               break;
             }
-            case 50: {
+            case 66: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -144,10 +148,10 @@ public final class ChannelerSlabOneOffDungeonInfoNotifyOuterClass {
               emu.grasscutter.net.proto.ChannelerSlabOneOffDungeonInfoNotifyOuterClass.ChannelerSlabOneOffDungeonInfoNotify.class, emu.grasscutter.net.proto.ChannelerSlabOneOffDungeonInfoNotifyOuterClass.ChannelerSlabOneOffDungeonInfoNotify.Builder.class);
     }
 
-    public static final int SCHEME_BUFF_ID_LIST_FIELD_NUMBER = 6;
+    public static final int SCHEME_BUFF_ID_LIST_FIELD_NUMBER = 8;
     private com.google.protobuf.Internal.IntList schemeBuffIdList_;
     /**
-     * <code>repeated uint32 scheme_buff_id_list = 6;</code>
+     * <code>repeated uint32 scheme_buff_id_list = 8;</code>
      * @return A list containing the schemeBuffIdList.
      */
     @java.lang.Override
@@ -156,14 +160,14 @@ public final class ChannelerSlabOneOffDungeonInfoNotifyOuterClass {
       return schemeBuffIdList_;
     }
     /**
-     * <code>repeated uint32 scheme_buff_id_list = 6;</code>
+     * <code>repeated uint32 scheme_buff_id_list = 8;</code>
      * @return The count of schemeBuffIdList.
      */
     public int getSchemeBuffIdListCount() {
       return schemeBuffIdList_.size();
     }
     /**
-     * <code>repeated uint32 scheme_buff_id_list = 6;</code>
+     * <code>repeated uint32 scheme_buff_id_list = 8;</code>
      * @param index The index of the element to return.
      * @return The schemeBuffIdList at the given index.
      */
@@ -188,7 +192,7 @@ public final class ChannelerSlabOneOffDungeonInfoNotifyOuterClass {
                         throws java.io.IOException {
       getSerializedSize();
       if (getSchemeBuffIdListList().size() > 0) {
-        output.writeUInt32NoTag(50);
+        output.writeUInt32NoTag(66);
         output.writeUInt32NoTag(schemeBuffIdListMemoizedSerializedSize);
       }
       for (int i = 0; i < schemeBuffIdList_.size(); i++) {
@@ -346,9 +350,13 @@ public final class ChannelerSlabOneOffDungeonInfoNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 8729
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 8015;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code ChannelerSlabOneOffDungeonInfoNotify}
@@ -518,7 +526,7 @@ public final class ChannelerSlabOneOffDungeonInfoNotifyOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 scheme_buff_id_list = 6;</code>
+       * <code>repeated uint32 scheme_buff_id_list = 8;</code>
        * @return A list containing the schemeBuffIdList.
        */
       public java.util.List<java.lang.Integer>
@@ -527,14 +535,14 @@ public final class ChannelerSlabOneOffDungeonInfoNotifyOuterClass {
                  java.util.Collections.unmodifiableList(schemeBuffIdList_) : schemeBuffIdList_;
       }
       /**
-       * <code>repeated uint32 scheme_buff_id_list = 6;</code>
+       * <code>repeated uint32 scheme_buff_id_list = 8;</code>
        * @return The count of schemeBuffIdList.
        */
       public int getSchemeBuffIdListCount() {
         return schemeBuffIdList_.size();
       }
       /**
-       * <code>repeated uint32 scheme_buff_id_list = 6;</code>
+       * <code>repeated uint32 scheme_buff_id_list = 8;</code>
        * @param index The index of the element to return.
        * @return The schemeBuffIdList at the given index.
        */
@@ -542,7 +550,7 @@ public final class ChannelerSlabOneOffDungeonInfoNotifyOuterClass {
         return schemeBuffIdList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 scheme_buff_id_list = 6;</code>
+       * <code>repeated uint32 scheme_buff_id_list = 8;</code>
        * @param index The index to set the value at.
        * @param value The schemeBuffIdList to set.
        * @return This builder for chaining.
@@ -555,7 +563,7 @@ public final class ChannelerSlabOneOffDungeonInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 scheme_buff_id_list = 6;</code>
+       * <code>repeated uint32 scheme_buff_id_list = 8;</code>
        * @param value The schemeBuffIdList to add.
        * @return This builder for chaining.
        */
@@ -566,7 +574,7 @@ public final class ChannelerSlabOneOffDungeonInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 scheme_buff_id_list = 6;</code>
+       * <code>repeated uint32 scheme_buff_id_list = 8;</code>
        * @param values The schemeBuffIdList to add.
        * @return This builder for chaining.
        */
@@ -579,7 +587,7 @@ public final class ChannelerSlabOneOffDungeonInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 scheme_buff_id_list = 6;</code>
+       * <code>repeated uint32 scheme_buff_id_list = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearSchemeBuffIdList() {
@@ -657,7 +665,7 @@ public final class ChannelerSlabOneOffDungeonInfoNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n*ChannelerSlabOneOffDungeonInfoNotify.p" +
       "roto\"C\n$ChannelerSlabOneOffDungeonInfoNo" +
-      "tify\022\033\n\023scheme_buff_id_list\030\006 \003(\rB\033\n\031emu" +
+      "tify\022\033\n\023scheme_buff_id_list\030\010 \003(\rB\033\n\031emu" +
       ".grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

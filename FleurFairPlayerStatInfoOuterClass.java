@@ -19,40 +19,22 @@ public final class FleurFairPlayerStatInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>string online_id = 11;</code>
-     * @return The onlineId.
-     */
-    java.lang.String getOnlineId();
-    /**
-     * <code>string online_id = 11;</code>
-     * @return The bytes for onlineId.
-     */
-    com.google.protobuf.ByteString
-        getOnlineIdBytes();
-
-    /**
-     * <code>uint32 uid = 8;</code>
-     * @return The uid.
-     */
-    int getUid();
-
-    /**
-     * <code>.ProfilePicture profile_picture = 1;</code>
+     * <code>.ProfilePicture profile_picture = 5;</code>
      * @return Whether the profilePicture field is set.
      */
     boolean hasProfilePicture();
     /**
-     * <code>.ProfilePicture profile_picture = 1;</code>
+     * <code>.ProfilePicture profile_picture = 5;</code>
      * @return The profilePicture.
      */
     emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture getProfilePicture();
     /**
-     * <code>.ProfilePicture profile_picture = 1;</code>
+     * <code>.ProfilePicture profile_picture = 5;</code>
      */
     emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePictureOrBuilder getProfilePictureOrBuilder();
 
     /**
-     * <code>uint32 stat_id = 3;</code>
+     * <code>uint32 stat_id = 4;</code>
      * @return The statId.
      */
     int getStatId();
@@ -64,22 +46,40 @@ public final class FleurFairPlayerStatInfoOuterClass {
     int getHeadImage();
 
     /**
-     * <code>string nick_name = 15;</code>
+     * <code>int32 param = 8;</code>
+     * @return The param.
+     */
+    int getParam();
+
+    /**
+     * <code>uint32 uid = 9;</code>
+     * @return The uid.
+     */
+    int getUid();
+
+    /**
+     * <code>string nick_name = 2;</code>
      * @return The nickName.
      */
     java.lang.String getNickName();
     /**
-     * <code>string nick_name = 15;</code>
+     * <code>string nick_name = 2;</code>
      * @return The bytes for nickName.
      */
     com.google.protobuf.ByteString
         getNickNameBytes();
 
     /**
-     * <code>int32 param = 5;</code>
-     * @return The param.
+     * <code>string online_id = 11;</code>
+     * @return The onlineId.
      */
-    int getParam();
+    java.lang.String getOnlineId();
+    /**
+     * <code>string online_id = 11;</code>
+     * @return The bytes for onlineId.
+     */
+    com.google.protobuf.ByteString
+        getOnlineIdBytes();
   }
   /**
    * Protobuf type {@code FleurFairPlayerStatInfo}
@@ -94,8 +94,8 @@ public final class FleurFairPlayerStatInfoOuterClass {
       super(builder);
     }
     private FleurFairPlayerStatInfo() {
-      onlineId_ = "";
       nickName_ = "";
+      onlineId_ = "";
     }
 
     @java.lang.Override
@@ -128,7 +128,18 @@ public final class FleurFairPlayerStatInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 10: {
+            case 18: {
+              java.lang.String s = input.readStringRequireUtf8();
+
+              nickName_ = s;
+              break;
+            }
+            case 32: {
+
+              statId_ = input.readUInt32();
+              break;
+            }
+            case 42: {
               emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture.Builder subBuilder = null;
               if (profilePicture_ != null) {
                 subBuilder = profilePicture_.toBuilder();
@@ -141,22 +152,17 @@ public final class FleurFairPlayerStatInfoOuterClass {
 
               break;
             }
-            case 24: {
-
-              statId_ = input.readUInt32();
-              break;
-            }
-            case 40: {
-
-              param_ = input.readInt32();
-              break;
-            }
             case 48: {
 
               headImage_ = input.readUInt32();
               break;
             }
             case 64: {
+
+              param_ = input.readInt32();
+              break;
+            }
+            case 72: {
 
               uid_ = input.readUInt32();
               break;
@@ -165,12 +171,6 @@ public final class FleurFairPlayerStatInfoOuterClass {
               java.lang.String s = input.readStringRequireUtf8();
 
               onlineId_ = s;
-              break;
-            }
-            case 122: {
-              java.lang.String s = input.readStringRequireUtf8();
-
-              nickName_ = s;
               break;
             }
             default: {
@@ -203,6 +203,114 @@ public final class FleurFairPlayerStatInfoOuterClass {
       return emu.grasscutter.net.proto.FleurFairPlayerStatInfoOuterClass.internal_static_FleurFairPlayerStatInfo_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               emu.grasscutter.net.proto.FleurFairPlayerStatInfoOuterClass.FleurFairPlayerStatInfo.class, emu.grasscutter.net.proto.FleurFairPlayerStatInfoOuterClass.FleurFairPlayerStatInfo.Builder.class);
+    }
+
+    public static final int PROFILE_PICTURE_FIELD_NUMBER = 5;
+    private emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture profilePicture_;
+    /**
+     * <code>.ProfilePicture profile_picture = 5;</code>
+     * @return Whether the profilePicture field is set.
+     */
+    @java.lang.Override
+    public boolean hasProfilePicture() {
+      return profilePicture_ != null;
+    }
+    /**
+     * <code>.ProfilePicture profile_picture = 5;</code>
+     * @return The profilePicture.
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture getProfilePicture() {
+      return profilePicture_ == null ? emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture.getDefaultInstance() : profilePicture_;
+    }
+    /**
+     * <code>.ProfilePicture profile_picture = 5;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePictureOrBuilder getProfilePictureOrBuilder() {
+      return getProfilePicture();
+    }
+
+    public static final int STAT_ID_FIELD_NUMBER = 4;
+    private int statId_;
+    /**
+     * <code>uint32 stat_id = 4;</code>
+     * @return The statId.
+     */
+    @java.lang.Override
+    public int getStatId() {
+      return statId_;
+    }
+
+    public static final int HEAD_IMAGE_FIELD_NUMBER = 6;
+    private int headImage_;
+    /**
+     * <code>uint32 head_image = 6;</code>
+     * @return The headImage.
+     */
+    @java.lang.Override
+    public int getHeadImage() {
+      return headImage_;
+    }
+
+    public static final int PARAM_FIELD_NUMBER = 8;
+    private int param_;
+    /**
+     * <code>int32 param = 8;</code>
+     * @return The param.
+     */
+    @java.lang.Override
+    public int getParam() {
+      return param_;
+    }
+
+    public static final int UID_FIELD_NUMBER = 9;
+    private int uid_;
+    /**
+     * <code>uint32 uid = 9;</code>
+     * @return The uid.
+     */
+    @java.lang.Override
+    public int getUid() {
+      return uid_;
+    }
+
+    public static final int NICK_NAME_FIELD_NUMBER = 2;
+    private volatile java.lang.Object nickName_;
+    /**
+     * <code>string nick_name = 2;</code>
+     * @return The nickName.
+     */
+    @java.lang.Override
+    public java.lang.String getNickName() {
+      java.lang.Object ref = nickName_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        nickName_ = s;
+        return s;
+      }
+    }
+    /**
+     * <code>string nick_name = 2;</code>
+     * @return The bytes for nickName.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString
+        getNickNameBytes() {
+      java.lang.Object ref = nickName_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        nickName_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
     }
 
     public static final int ONLINE_ID_FIELD_NUMBER = 11;
@@ -243,114 +351,6 @@ public final class FleurFairPlayerStatInfoOuterClass {
       }
     }
 
-    public static final int UID_FIELD_NUMBER = 8;
-    private int uid_;
-    /**
-     * <code>uint32 uid = 8;</code>
-     * @return The uid.
-     */
-    @java.lang.Override
-    public int getUid() {
-      return uid_;
-    }
-
-    public static final int PROFILE_PICTURE_FIELD_NUMBER = 1;
-    private emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture profilePicture_;
-    /**
-     * <code>.ProfilePicture profile_picture = 1;</code>
-     * @return Whether the profilePicture field is set.
-     */
-    @java.lang.Override
-    public boolean hasProfilePicture() {
-      return profilePicture_ != null;
-    }
-    /**
-     * <code>.ProfilePicture profile_picture = 1;</code>
-     * @return The profilePicture.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture getProfilePicture() {
-      return profilePicture_ == null ? emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture.getDefaultInstance() : profilePicture_;
-    }
-    /**
-     * <code>.ProfilePicture profile_picture = 1;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePictureOrBuilder getProfilePictureOrBuilder() {
-      return getProfilePicture();
-    }
-
-    public static final int STAT_ID_FIELD_NUMBER = 3;
-    private int statId_;
-    /**
-     * <code>uint32 stat_id = 3;</code>
-     * @return The statId.
-     */
-    @java.lang.Override
-    public int getStatId() {
-      return statId_;
-    }
-
-    public static final int HEAD_IMAGE_FIELD_NUMBER = 6;
-    private int headImage_;
-    /**
-     * <code>uint32 head_image = 6;</code>
-     * @return The headImage.
-     */
-    @java.lang.Override
-    public int getHeadImage() {
-      return headImage_;
-    }
-
-    public static final int NICK_NAME_FIELD_NUMBER = 15;
-    private volatile java.lang.Object nickName_;
-    /**
-     * <code>string nick_name = 15;</code>
-     * @return The nickName.
-     */
-    @java.lang.Override
-    public java.lang.String getNickName() {
-      java.lang.Object ref = nickName_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        nickName_ = s;
-        return s;
-      }
-    }
-    /**
-     * <code>string nick_name = 15;</code>
-     * @return The bytes for nickName.
-     */
-    @java.lang.Override
-    public com.google.protobuf.ByteString
-        getNickNameBytes() {
-      java.lang.Object ref = nickName_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        nickName_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
-    public static final int PARAM_FIELD_NUMBER = 5;
-    private int param_;
-    /**
-     * <code>int32 param = 5;</code>
-     * @return The param.
-     */
-    @java.lang.Override
-    public int getParam() {
-      return param_;
-    }
-
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
     public final boolean isInitialized() {
@@ -365,26 +365,26 @@ public final class FleurFairPlayerStatInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (profilePicture_ != null) {
-        output.writeMessage(1, getProfilePicture());
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(nickName_)) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 2, nickName_);
       }
       if (statId_ != 0) {
-        output.writeUInt32(3, statId_);
+        output.writeUInt32(4, statId_);
       }
-      if (param_ != 0) {
-        output.writeInt32(5, param_);
+      if (profilePicture_ != null) {
+        output.writeMessage(5, getProfilePicture());
       }
       if (headImage_ != 0) {
         output.writeUInt32(6, headImage_);
       }
+      if (param_ != 0) {
+        output.writeInt32(8, param_);
+      }
       if (uid_ != 0) {
-        output.writeUInt32(8, uid_);
+        output.writeUInt32(9, uid_);
       }
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(onlineId_)) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 11, onlineId_);
-      }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(nickName_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 15, nickName_);
       }
       unknownFields.writeTo(output);
     }
@@ -395,31 +395,31 @@ public final class FleurFairPlayerStatInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (profilePicture_ != null) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(1, getProfilePicture());
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(nickName_)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, nickName_);
       }
       if (statId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, statId_);
+          .computeUInt32Size(4, statId_);
       }
-      if (param_ != 0) {
+      if (profilePicture_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(5, param_);
+          .computeMessageSize(5, getProfilePicture());
       }
       if (headImage_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(6, headImage_);
       }
+      if (param_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(8, param_);
+      }
       if (uid_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, uid_);
+          .computeUInt32Size(9, uid_);
       }
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(onlineId_)) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(11, onlineId_);
-      }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(nickName_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(15, nickName_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -436,10 +436,6 @@ public final class FleurFairPlayerStatInfoOuterClass {
       }
       emu.grasscutter.net.proto.FleurFairPlayerStatInfoOuterClass.FleurFairPlayerStatInfo other = (emu.grasscutter.net.proto.FleurFairPlayerStatInfoOuterClass.FleurFairPlayerStatInfo) obj;
 
-      if (!getOnlineId()
-          .equals(other.getOnlineId())) return false;
-      if (getUid()
-          != other.getUid()) return false;
       if (hasProfilePicture() != other.hasProfilePicture()) return false;
       if (hasProfilePicture()) {
         if (!getProfilePicture()
@@ -449,10 +445,14 @@ public final class FleurFairPlayerStatInfoOuterClass {
           != other.getStatId()) return false;
       if (getHeadImage()
           != other.getHeadImage()) return false;
-      if (!getNickName()
-          .equals(other.getNickName())) return false;
       if (getParam()
           != other.getParam()) return false;
+      if (getUid()
+          != other.getUid()) return false;
+      if (!getNickName()
+          .equals(other.getNickName())) return false;
+      if (!getOnlineId()
+          .equals(other.getOnlineId())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -464,10 +464,6 @@ public final class FleurFairPlayerStatInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + ONLINE_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getOnlineId().hashCode();
-      hash = (37 * hash) + UID_FIELD_NUMBER;
-      hash = (53 * hash) + getUid();
       if (hasProfilePicture()) {
         hash = (37 * hash) + PROFILE_PICTURE_FIELD_NUMBER;
         hash = (53 * hash) + getProfilePicture().hashCode();
@@ -476,10 +472,14 @@ public final class FleurFairPlayerStatInfoOuterClass {
       hash = (53 * hash) + getStatId();
       hash = (37 * hash) + HEAD_IMAGE_FIELD_NUMBER;
       hash = (53 * hash) + getHeadImage();
-      hash = (37 * hash) + NICK_NAME_FIELD_NUMBER;
-      hash = (53 * hash) + getNickName().hashCode();
       hash = (37 * hash) + PARAM_FIELD_NUMBER;
       hash = (53 * hash) + getParam();
+      hash = (37 * hash) + UID_FIELD_NUMBER;
+      hash = (53 * hash) + getUid();
+      hash = (37 * hash) + NICK_NAME_FIELD_NUMBER;
+      hash = (53 * hash) + getNickName().hashCode();
+      hash = (37 * hash) + ONLINE_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getOnlineId().hashCode();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -613,10 +613,6 @@ public final class FleurFairPlayerStatInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        onlineId_ = "";
-
-        uid_ = 0;
-
         if (profilePictureBuilder_ == null) {
           profilePicture_ = null;
         } else {
@@ -627,9 +623,13 @@ public final class FleurFairPlayerStatInfoOuterClass {
 
         headImage_ = 0;
 
+        param_ = 0;
+
+        uid_ = 0;
+
         nickName_ = "";
 
-        param_ = 0;
+        onlineId_ = "";
 
         return this;
       }
@@ -657,8 +657,6 @@ public final class FleurFairPlayerStatInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.FleurFairPlayerStatInfoOuterClass.FleurFairPlayerStatInfo buildPartial() {
         emu.grasscutter.net.proto.FleurFairPlayerStatInfoOuterClass.FleurFairPlayerStatInfo result = new emu.grasscutter.net.proto.FleurFairPlayerStatInfoOuterClass.FleurFairPlayerStatInfo(this);
-        result.onlineId_ = onlineId_;
-        result.uid_ = uid_;
         if (profilePictureBuilder_ == null) {
           result.profilePicture_ = profilePicture_;
         } else {
@@ -666,8 +664,10 @@ public final class FleurFairPlayerStatInfoOuterClass {
         }
         result.statId_ = statId_;
         result.headImage_ = headImage_;
-        result.nickName_ = nickName_;
         result.param_ = param_;
+        result.uid_ = uid_;
+        result.nickName_ = nickName_;
+        result.onlineId_ = onlineId_;
         onBuilt();
         return result;
       }
@@ -716,13 +716,6 @@ public final class FleurFairPlayerStatInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.FleurFairPlayerStatInfoOuterClass.FleurFairPlayerStatInfo other) {
         if (other == emu.grasscutter.net.proto.FleurFairPlayerStatInfoOuterClass.FleurFairPlayerStatInfo.getDefaultInstance()) return this;
-        if (!other.getOnlineId().isEmpty()) {
-          onlineId_ = other.onlineId_;
-          onChanged();
-        }
-        if (other.getUid() != 0) {
-          setUid(other.getUid());
-        }
         if (other.hasProfilePicture()) {
           mergeProfilePicture(other.getProfilePicture());
         }
@@ -732,12 +725,19 @@ public final class FleurFairPlayerStatInfoOuterClass {
         if (other.getHeadImage() != 0) {
           setHeadImage(other.getHeadImage());
         }
+        if (other.getParam() != 0) {
+          setParam(other.getParam());
+        }
+        if (other.getUid() != 0) {
+          setUid(other.getUid());
+        }
         if (!other.getNickName().isEmpty()) {
           nickName_ = other.nickName_;
           onChanged();
         }
-        if (other.getParam() != 0) {
-          setParam(other.getParam());
+        if (!other.getOnlineId().isEmpty()) {
+          onlineId_ = other.onlineId_;
+          onChanged();
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -765,6 +765,325 @@ public final class FleurFairPlayerStatInfoOuterClass {
             mergeFrom(parsedMessage);
           }
         }
+        return this;
+      }
+
+      private emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture profilePicture_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture, emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture.Builder, emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePictureOrBuilder> profilePictureBuilder_;
+      /**
+       * <code>.ProfilePicture profile_picture = 5;</code>
+       * @return Whether the profilePicture field is set.
+       */
+      public boolean hasProfilePicture() {
+        return profilePictureBuilder_ != null || profilePicture_ != null;
+      }
+      /**
+       * <code>.ProfilePicture profile_picture = 5;</code>
+       * @return The profilePicture.
+       */
+      public emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture getProfilePicture() {
+        if (profilePictureBuilder_ == null) {
+          return profilePicture_ == null ? emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture.getDefaultInstance() : profilePicture_;
+        } else {
+          return profilePictureBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>.ProfilePicture profile_picture = 5;</code>
+       */
+      public Builder setProfilePicture(emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture value) {
+        if (profilePictureBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          profilePicture_ = value;
+          onChanged();
+        } else {
+          profilePictureBuilder_.setMessage(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.ProfilePicture profile_picture = 5;</code>
+       */
+      public Builder setProfilePicture(
+          emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture.Builder builderForValue) {
+        if (profilePictureBuilder_ == null) {
+          profilePicture_ = builderForValue.build();
+          onChanged();
+        } else {
+          profilePictureBuilder_.setMessage(builderForValue.build());
+        }
+
+        return this;
+      }
+      /**
+       * <code>.ProfilePicture profile_picture = 5;</code>
+       */
+      public Builder mergeProfilePicture(emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture value) {
+        if (profilePictureBuilder_ == null) {
+          if (profilePicture_ != null) {
+            profilePicture_ =
+              emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture.newBuilder(profilePicture_).mergeFrom(value).buildPartial();
+          } else {
+            profilePicture_ = value;
+          }
+          onChanged();
+        } else {
+          profilePictureBuilder_.mergeFrom(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.ProfilePicture profile_picture = 5;</code>
+       */
+      public Builder clearProfilePicture() {
+        if (profilePictureBuilder_ == null) {
+          profilePicture_ = null;
+          onChanged();
+        } else {
+          profilePicture_ = null;
+          profilePictureBuilder_ = null;
+        }
+
+        return this;
+      }
+      /**
+       * <code>.ProfilePicture profile_picture = 5;</code>
+       */
+      public emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture.Builder getProfilePictureBuilder() {
+        
+        onChanged();
+        return getProfilePictureFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.ProfilePicture profile_picture = 5;</code>
+       */
+      public emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePictureOrBuilder getProfilePictureOrBuilder() {
+        if (profilePictureBuilder_ != null) {
+          return profilePictureBuilder_.getMessageOrBuilder();
+        } else {
+          return profilePicture_ == null ?
+              emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture.getDefaultInstance() : profilePicture_;
+        }
+      }
+      /**
+       * <code>.ProfilePicture profile_picture = 5;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture, emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture.Builder, emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePictureOrBuilder> 
+          getProfilePictureFieldBuilder() {
+        if (profilePictureBuilder_ == null) {
+          profilePictureBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture, emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture.Builder, emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePictureOrBuilder>(
+                  getProfilePicture(),
+                  getParentForChildren(),
+                  isClean());
+          profilePicture_ = null;
+        }
+        return profilePictureBuilder_;
+      }
+
+      private int statId_ ;
+      /**
+       * <code>uint32 stat_id = 4;</code>
+       * @return The statId.
+       */
+      @java.lang.Override
+      public int getStatId() {
+        return statId_;
+      }
+      /**
+       * <code>uint32 stat_id = 4;</code>
+       * @param value The statId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setStatId(int value) {
+        
+        statId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 stat_id = 4;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearStatId() {
+        
+        statId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int headImage_ ;
+      /**
+       * <code>uint32 head_image = 6;</code>
+       * @return The headImage.
+       */
+      @java.lang.Override
+      public int getHeadImage() {
+        return headImage_;
+      }
+      /**
+       * <code>uint32 head_image = 6;</code>
+       * @param value The headImage to set.
+       * @return This builder for chaining.
+       */
+      public Builder setHeadImage(int value) {
+        
+        headImage_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 head_image = 6;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearHeadImage() {
+        
+        headImage_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int param_ ;
+      /**
+       * <code>int32 param = 8;</code>
+       * @return The param.
+       */
+      @java.lang.Override
+      public int getParam() {
+        return param_;
+      }
+      /**
+       * <code>int32 param = 8;</code>
+       * @param value The param to set.
+       * @return This builder for chaining.
+       */
+      public Builder setParam(int value) {
+        
+        param_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 param = 8;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearParam() {
+        
+        param_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int uid_ ;
+      /**
+       * <code>uint32 uid = 9;</code>
+       * @return The uid.
+       */
+      @java.lang.Override
+      public int getUid() {
+        return uid_;
+      }
+      /**
+       * <code>uint32 uid = 9;</code>
+       * @param value The uid to set.
+       * @return This builder for chaining.
+       */
+      public Builder setUid(int value) {
+        
+        uid_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 uid = 9;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearUid() {
+        
+        uid_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private java.lang.Object nickName_ = "";
+      /**
+       * <code>string nick_name = 2;</code>
+       * @return The nickName.
+       */
+      public java.lang.String getNickName() {
+        java.lang.Object ref = nickName_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          nickName_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>string nick_name = 2;</code>
+       * @return The bytes for nickName.
+       */
+      public com.google.protobuf.ByteString
+          getNickNameBytes() {
+        java.lang.Object ref = nickName_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          nickName_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>string nick_name = 2;</code>
+       * @param value The nickName to set.
+       * @return This builder for chaining.
+       */
+      public Builder setNickName(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        nickName_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string nick_name = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearNickName() {
+        
+        nickName_ = getDefaultInstance().getNickName();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string nick_name = 2;</code>
+       * @param value The bytes for nickName to set.
+       * @return This builder for chaining.
+       */
+      public Builder setNickNameBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
+        nickName_ = value;
+        onChanged();
         return this;
       }
 
@@ -843,325 +1162,6 @@ public final class FleurFairPlayerStatInfoOuterClass {
         onChanged();
         return this;
       }
-
-      private int uid_ ;
-      /**
-       * <code>uint32 uid = 8;</code>
-       * @return The uid.
-       */
-      @java.lang.Override
-      public int getUid() {
-        return uid_;
-      }
-      /**
-       * <code>uint32 uid = 8;</code>
-       * @param value The uid to set.
-       * @return This builder for chaining.
-       */
-      public Builder setUid(int value) {
-        
-        uid_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 uid = 8;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearUid() {
-        
-        uid_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture profilePicture_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture, emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture.Builder, emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePictureOrBuilder> profilePictureBuilder_;
-      /**
-       * <code>.ProfilePicture profile_picture = 1;</code>
-       * @return Whether the profilePicture field is set.
-       */
-      public boolean hasProfilePicture() {
-        return profilePictureBuilder_ != null || profilePicture_ != null;
-      }
-      /**
-       * <code>.ProfilePicture profile_picture = 1;</code>
-       * @return The profilePicture.
-       */
-      public emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture getProfilePicture() {
-        if (profilePictureBuilder_ == null) {
-          return profilePicture_ == null ? emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture.getDefaultInstance() : profilePicture_;
-        } else {
-          return profilePictureBuilder_.getMessage();
-        }
-      }
-      /**
-       * <code>.ProfilePicture profile_picture = 1;</code>
-       */
-      public Builder setProfilePicture(emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture value) {
-        if (profilePictureBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          profilePicture_ = value;
-          onChanged();
-        } else {
-          profilePictureBuilder_.setMessage(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.ProfilePicture profile_picture = 1;</code>
-       */
-      public Builder setProfilePicture(
-          emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture.Builder builderForValue) {
-        if (profilePictureBuilder_ == null) {
-          profilePicture_ = builderForValue.build();
-          onChanged();
-        } else {
-          profilePictureBuilder_.setMessage(builderForValue.build());
-        }
-
-        return this;
-      }
-      /**
-       * <code>.ProfilePicture profile_picture = 1;</code>
-       */
-      public Builder mergeProfilePicture(emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture value) {
-        if (profilePictureBuilder_ == null) {
-          if (profilePicture_ != null) {
-            profilePicture_ =
-              emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture.newBuilder(profilePicture_).mergeFrom(value).buildPartial();
-          } else {
-            profilePicture_ = value;
-          }
-          onChanged();
-        } else {
-          profilePictureBuilder_.mergeFrom(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.ProfilePicture profile_picture = 1;</code>
-       */
-      public Builder clearProfilePicture() {
-        if (profilePictureBuilder_ == null) {
-          profilePicture_ = null;
-          onChanged();
-        } else {
-          profilePicture_ = null;
-          profilePictureBuilder_ = null;
-        }
-
-        return this;
-      }
-      /**
-       * <code>.ProfilePicture profile_picture = 1;</code>
-       */
-      public emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture.Builder getProfilePictureBuilder() {
-        
-        onChanged();
-        return getProfilePictureFieldBuilder().getBuilder();
-      }
-      /**
-       * <code>.ProfilePicture profile_picture = 1;</code>
-       */
-      public emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePictureOrBuilder getProfilePictureOrBuilder() {
-        if (profilePictureBuilder_ != null) {
-          return profilePictureBuilder_.getMessageOrBuilder();
-        } else {
-          return profilePicture_ == null ?
-              emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture.getDefaultInstance() : profilePicture_;
-        }
-      }
-      /**
-       * <code>.ProfilePicture profile_picture = 1;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture, emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture.Builder, emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePictureOrBuilder> 
-          getProfilePictureFieldBuilder() {
-        if (profilePictureBuilder_ == null) {
-          profilePictureBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture, emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture.Builder, emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePictureOrBuilder>(
-                  getProfilePicture(),
-                  getParentForChildren(),
-                  isClean());
-          profilePicture_ = null;
-        }
-        return profilePictureBuilder_;
-      }
-
-      private int statId_ ;
-      /**
-       * <code>uint32 stat_id = 3;</code>
-       * @return The statId.
-       */
-      @java.lang.Override
-      public int getStatId() {
-        return statId_;
-      }
-      /**
-       * <code>uint32 stat_id = 3;</code>
-       * @param value The statId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setStatId(int value) {
-        
-        statId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 stat_id = 3;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearStatId() {
-        
-        statId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int headImage_ ;
-      /**
-       * <code>uint32 head_image = 6;</code>
-       * @return The headImage.
-       */
-      @java.lang.Override
-      public int getHeadImage() {
-        return headImage_;
-      }
-      /**
-       * <code>uint32 head_image = 6;</code>
-       * @param value The headImage to set.
-       * @return This builder for chaining.
-       */
-      public Builder setHeadImage(int value) {
-        
-        headImage_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 head_image = 6;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearHeadImage() {
-        
-        headImage_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private java.lang.Object nickName_ = "";
-      /**
-       * <code>string nick_name = 15;</code>
-       * @return The nickName.
-       */
-      public java.lang.String getNickName() {
-        java.lang.Object ref = nickName_;
-        if (!(ref instanceof java.lang.String)) {
-          com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
-          nickName_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
-      }
-      /**
-       * <code>string nick_name = 15;</code>
-       * @return The bytes for nickName.
-       */
-      public com.google.protobuf.ByteString
-          getNickNameBytes() {
-        java.lang.Object ref = nickName_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          nickName_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <code>string nick_name = 15;</code>
-       * @param value The nickName to set.
-       * @return This builder for chaining.
-       */
-      public Builder setNickName(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  
-        nickName_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string nick_name = 15;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearNickName() {
-        
-        nickName_ = getDefaultInstance().getNickName();
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string nick_name = 15;</code>
-       * @param value The bytes for nickName to set.
-       * @return This builder for chaining.
-       */
-      public Builder setNickNameBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-        
-        nickName_ = value;
-        onChanged();
-        return this;
-      }
-
-      private int param_ ;
-      /**
-       * <code>int32 param = 5;</code>
-       * @return The param.
-       */
-      @java.lang.Override
-      public int getParam() {
-        return param_;
-      }
-      /**
-       * <code>int32 param = 5;</code>
-       * @param value The param to set.
-       * @return This builder for chaining.
-       */
-      public Builder setParam(int value) {
-        
-        param_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>int32 param = 5;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearParam() {
-        
-        param_ = 0;
-        onChanged();
-        return this;
-      }
       @java.lang.Override
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
@@ -1231,10 +1231,10 @@ public final class FleurFairPlayerStatInfoOuterClass {
     java.lang.String[] descriptorData = {
       "\n\035FleurFairPlayerStatInfo.proto\032\024Profile" +
       "Picture.proto\"\252\001\n\027FleurFairPlayerStatInf" +
-      "o\022\021\n\tonline_id\030\013 \001(\t\022\013\n\003uid\030\010 \001(\r\022(\n\017pro" +
-      "file_picture\030\001 \001(\0132\017.ProfilePicture\022\017\n\007s" +
-      "tat_id\030\003 \001(\r\022\022\n\nhead_image\030\006 \001(\r\022\021\n\tnick" +
-      "_name\030\017 \001(\t\022\r\n\005param\030\005 \001(\005B\033\n\031emu.grassc" +
+      "o\022(\n\017profile_picture\030\005 \001(\0132\017.ProfilePict" +
+      "ure\022\017\n\007stat_id\030\004 \001(\r\022\022\n\nhead_image\030\006 \001(\r" +
+      "\022\r\n\005param\030\010 \001(\005\022\013\n\003uid\030\t \001(\r\022\021\n\tnick_nam" +
+      "e\030\002 \001(\t\022\021\n\tonline_id\030\013 \001(\tB\033\n\031emu.grassc" +
       "utter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -1247,7 +1247,7 @@ public final class FleurFairPlayerStatInfoOuterClass {
     internal_static_FleurFairPlayerStatInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_FleurFairPlayerStatInfo_descriptor,
-        new java.lang.String[] { "OnlineId", "Uid", "ProfilePicture", "StatId", "HeadImage", "NickName", "Param", });
+        new java.lang.String[] { "ProfilePicture", "StatId", "HeadImage", "Param", "Uid", "NickName", "OnlineId", });
     emu.grasscutter.net.proto.ProfilePictureOuterClass.getDescriptor();
   }
 

@@ -19,22 +19,26 @@ public final class DungeonWayPointActivateRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 6;</code>
+     * <code>int32 retcode = 1;</code>
      * @return The retcode.
      */
     int getRetcode();
 
     /**
-     * <code>uint32 way_point_id = 7;</code>
+     * <code>uint32 way_point_id = 10;</code>
      * @return The wayPointId.
      */
     int getWayPointId();
   }
   /**
    * <pre>
-   * CmdId: 973
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 978;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code DungeonWayPointActivateRsp}
@@ -81,12 +85,12 @@ public final class DungeonWayPointActivateRspOuterClass {
             case 0:
               done = true;
               break;
-            case 48: {
+            case 8: {
 
               retcode_ = input.readInt32();
               break;
             }
-            case 56: {
+            case 80: {
 
               wayPointId_ = input.readUInt32();
               break;
@@ -123,10 +127,10 @@ public final class DungeonWayPointActivateRspOuterClass {
               emu.grasscutter.net.proto.DungeonWayPointActivateRspOuterClass.DungeonWayPointActivateRsp.class, emu.grasscutter.net.proto.DungeonWayPointActivateRspOuterClass.DungeonWayPointActivateRsp.Builder.class);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 6;
+    public static final int RETCODE_FIELD_NUMBER = 1;
     private int retcode_;
     /**
-     * <code>int32 retcode = 6;</code>
+     * <code>int32 retcode = 1;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -134,10 +138,10 @@ public final class DungeonWayPointActivateRspOuterClass {
       return retcode_;
     }
 
-    public static final int WAY_POINT_ID_FIELD_NUMBER = 7;
+    public static final int WAY_POINT_ID_FIELD_NUMBER = 10;
     private int wayPointId_;
     /**
-     * <code>uint32 way_point_id = 7;</code>
+     * <code>uint32 way_point_id = 10;</code>
      * @return The wayPointId.
      */
     @java.lang.Override
@@ -160,10 +164,10 @@ public final class DungeonWayPointActivateRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (retcode_ != 0) {
-        output.writeInt32(6, retcode_);
+        output.writeInt32(1, retcode_);
       }
       if (wayPointId_ != 0) {
-        output.writeUInt32(7, wayPointId_);
+        output.writeUInt32(10, wayPointId_);
       }
       unknownFields.writeTo(output);
     }
@@ -176,11 +180,11 @@ public final class DungeonWayPointActivateRspOuterClass {
       size = 0;
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(6, retcode_);
+          .computeInt32Size(1, retcode_);
       }
       if (wayPointId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, wayPointId_);
+          .computeUInt32Size(10, wayPointId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -313,9 +317,13 @@ public final class DungeonWayPointActivateRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 973
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 978;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code DungeonWayPointActivateRsp}
@@ -472,7 +480,7 @@ public final class DungeonWayPointActivateRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 6;</code>
+       * <code>int32 retcode = 1;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -480,7 +488,7 @@ public final class DungeonWayPointActivateRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 6;</code>
+       * <code>int32 retcode = 1;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -491,7 +499,7 @@ public final class DungeonWayPointActivateRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 6;</code>
+       * <code>int32 retcode = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -503,7 +511,7 @@ public final class DungeonWayPointActivateRspOuterClass {
 
       private int wayPointId_ ;
       /**
-       * <code>uint32 way_point_id = 7;</code>
+       * <code>uint32 way_point_id = 10;</code>
        * @return The wayPointId.
        */
       @java.lang.Override
@@ -511,7 +519,7 @@ public final class DungeonWayPointActivateRspOuterClass {
         return wayPointId_;
       }
       /**
-       * <code>uint32 way_point_id = 7;</code>
+       * <code>uint32 way_point_id = 10;</code>
        * @param value The wayPointId to set.
        * @return This builder for chaining.
        */
@@ -522,7 +530,7 @@ public final class DungeonWayPointActivateRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 way_point_id = 7;</code>
+       * <code>uint32 way_point_id = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearWayPointId() {
@@ -599,8 +607,8 @@ public final class DungeonWayPointActivateRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n DungeonWayPointActivateRsp.proto\"C\n\032Du" +
-      "ngeonWayPointActivateRsp\022\017\n\007retcode\030\006 \001(" +
-      "\005\022\024\n\014way_point_id\030\007 \001(\rB\033\n\031emu.grasscutt" +
+      "ngeonWayPointActivateRsp\022\017\n\007retcode\030\001 \001(" +
+      "\005\022\024\n\014way_point_id\030\n \001(\rB\033\n\031emu.grasscutt" +
       "er.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

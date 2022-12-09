@@ -19,35 +19,39 @@ public final class SpiceActivityProcessFoodReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .ItemParam normal_food_list = 1;</code>
+     * <code>repeated .ItemParam normal_food_list = 15;</code>
      */
     java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> 
         getNormalFoodListList();
     /**
-     * <code>repeated .ItemParam normal_food_list = 1;</code>
+     * <code>repeated .ItemParam normal_food_list = 15;</code>
      */
     emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam getNormalFoodList(int index);
     /**
-     * <code>repeated .ItemParam normal_food_list = 1;</code>
+     * <code>repeated .ItemParam normal_food_list = 15;</code>
      */
     int getNormalFoodListCount();
     /**
-     * <code>repeated .ItemParam normal_food_list = 1;</code>
+     * <code>repeated .ItemParam normal_food_list = 15;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder> 
         getNormalFoodListOrBuilderList();
     /**
-     * <code>repeated .ItemParam normal_food_list = 1;</code>
+     * <code>repeated .ItemParam normal_food_list = 15;</code>
      */
     emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder getNormalFoodListOrBuilder(
         int index);
   }
   /**
    * <pre>
-   * CmdId: 8216
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 8523;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code SpiceActivityProcessFoodReq}
@@ -96,7 +100,7 @@ public final class SpiceActivityProcessFoodReqOuterClass {
             case 0:
               done = true;
               break;
-            case 10: {
+            case 122: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 normalFoodList_ = new java.util.ArrayList<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam>();
                 mutable_bitField0_ |= 0x00000001;
@@ -140,17 +144,17 @@ public final class SpiceActivityProcessFoodReqOuterClass {
               emu.grasscutter.net.proto.SpiceActivityProcessFoodReqOuterClass.SpiceActivityProcessFoodReq.class, emu.grasscutter.net.proto.SpiceActivityProcessFoodReqOuterClass.SpiceActivityProcessFoodReq.Builder.class);
     }
 
-    public static final int NORMAL_FOOD_LIST_FIELD_NUMBER = 1;
+    public static final int NORMAL_FOOD_LIST_FIELD_NUMBER = 15;
     private java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> normalFoodList_;
     /**
-     * <code>repeated .ItemParam normal_food_list = 1;</code>
+     * <code>repeated .ItemParam normal_food_list = 15;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> getNormalFoodListList() {
       return normalFoodList_;
     }
     /**
-     * <code>repeated .ItemParam normal_food_list = 1;</code>
+     * <code>repeated .ItemParam normal_food_list = 15;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder> 
@@ -158,21 +162,21 @@ public final class SpiceActivityProcessFoodReqOuterClass {
       return normalFoodList_;
     }
     /**
-     * <code>repeated .ItemParam normal_food_list = 1;</code>
+     * <code>repeated .ItemParam normal_food_list = 15;</code>
      */
     @java.lang.Override
     public int getNormalFoodListCount() {
       return normalFoodList_.size();
     }
     /**
-     * <code>repeated .ItemParam normal_food_list = 1;</code>
+     * <code>repeated .ItemParam normal_food_list = 15;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam getNormalFoodList(int index) {
       return normalFoodList_.get(index);
     }
     /**
-     * <code>repeated .ItemParam normal_food_list = 1;</code>
+     * <code>repeated .ItemParam normal_food_list = 15;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder getNormalFoodListOrBuilder(
@@ -195,7 +199,7 @@ public final class SpiceActivityProcessFoodReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       for (int i = 0; i < normalFoodList_.size(); i++) {
-        output.writeMessage(1, normalFoodList_.get(i));
+        output.writeMessage(15, normalFoodList_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -208,7 +212,7 @@ public final class SpiceActivityProcessFoodReqOuterClass {
       size = 0;
       for (int i = 0; i < normalFoodList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(1, normalFoodList_.get(i));
+          .computeMessageSize(15, normalFoodList_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -339,10 +343,14 @@ public final class SpiceActivityProcessFoodReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 8216
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 8523;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code SpiceActivityProcessFoodReq}
@@ -542,7 +550,7 @@ public final class SpiceActivityProcessFoodReqOuterClass {
           emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder> normalFoodListBuilder_;
 
       /**
-       * <code>repeated .ItemParam normal_food_list = 1;</code>
+       * <code>repeated .ItemParam normal_food_list = 15;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> getNormalFoodListList() {
         if (normalFoodListBuilder_ == null) {
@@ -552,7 +560,7 @@ public final class SpiceActivityProcessFoodReqOuterClass {
         }
       }
       /**
-       * <code>repeated .ItemParam normal_food_list = 1;</code>
+       * <code>repeated .ItemParam normal_food_list = 15;</code>
        */
       public int getNormalFoodListCount() {
         if (normalFoodListBuilder_ == null) {
@@ -562,7 +570,7 @@ public final class SpiceActivityProcessFoodReqOuterClass {
         }
       }
       /**
-       * <code>repeated .ItemParam normal_food_list = 1;</code>
+       * <code>repeated .ItemParam normal_food_list = 15;</code>
        */
       public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam getNormalFoodList(int index) {
         if (normalFoodListBuilder_ == null) {
@@ -572,7 +580,7 @@ public final class SpiceActivityProcessFoodReqOuterClass {
         }
       }
       /**
-       * <code>repeated .ItemParam normal_food_list = 1;</code>
+       * <code>repeated .ItemParam normal_food_list = 15;</code>
        */
       public Builder setNormalFoodList(
           int index, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam value) {
@@ -589,7 +597,7 @@ public final class SpiceActivityProcessFoodReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ItemParam normal_food_list = 1;</code>
+       * <code>repeated .ItemParam normal_food_list = 15;</code>
        */
       public Builder setNormalFoodList(
           int index, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder builderForValue) {
@@ -603,7 +611,7 @@ public final class SpiceActivityProcessFoodReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ItemParam normal_food_list = 1;</code>
+       * <code>repeated .ItemParam normal_food_list = 15;</code>
        */
       public Builder addNormalFoodList(emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam value) {
         if (normalFoodListBuilder_ == null) {
@@ -619,7 +627,7 @@ public final class SpiceActivityProcessFoodReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ItemParam normal_food_list = 1;</code>
+       * <code>repeated .ItemParam normal_food_list = 15;</code>
        */
       public Builder addNormalFoodList(
           int index, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam value) {
@@ -636,7 +644,7 @@ public final class SpiceActivityProcessFoodReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ItemParam normal_food_list = 1;</code>
+       * <code>repeated .ItemParam normal_food_list = 15;</code>
        */
       public Builder addNormalFoodList(
           emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder builderForValue) {
@@ -650,7 +658,7 @@ public final class SpiceActivityProcessFoodReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ItemParam normal_food_list = 1;</code>
+       * <code>repeated .ItemParam normal_food_list = 15;</code>
        */
       public Builder addNormalFoodList(
           int index, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder builderForValue) {
@@ -664,7 +672,7 @@ public final class SpiceActivityProcessFoodReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ItemParam normal_food_list = 1;</code>
+       * <code>repeated .ItemParam normal_food_list = 15;</code>
        */
       public Builder addAllNormalFoodList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> values) {
@@ -679,7 +687,7 @@ public final class SpiceActivityProcessFoodReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ItemParam normal_food_list = 1;</code>
+       * <code>repeated .ItemParam normal_food_list = 15;</code>
        */
       public Builder clearNormalFoodList() {
         if (normalFoodListBuilder_ == null) {
@@ -692,7 +700,7 @@ public final class SpiceActivityProcessFoodReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ItemParam normal_food_list = 1;</code>
+       * <code>repeated .ItemParam normal_food_list = 15;</code>
        */
       public Builder removeNormalFoodList(int index) {
         if (normalFoodListBuilder_ == null) {
@@ -705,14 +713,14 @@ public final class SpiceActivityProcessFoodReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ItemParam normal_food_list = 1;</code>
+       * <code>repeated .ItemParam normal_food_list = 15;</code>
        */
       public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder getNormalFoodListBuilder(
           int index) {
         return getNormalFoodListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .ItemParam normal_food_list = 1;</code>
+       * <code>repeated .ItemParam normal_food_list = 15;</code>
        */
       public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder getNormalFoodListOrBuilder(
           int index) {
@@ -722,7 +730,7 @@ public final class SpiceActivityProcessFoodReqOuterClass {
         }
       }
       /**
-       * <code>repeated .ItemParam normal_food_list = 1;</code>
+       * <code>repeated .ItemParam normal_food_list = 15;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder> 
            getNormalFoodListOrBuilderList() {
@@ -733,14 +741,14 @@ public final class SpiceActivityProcessFoodReqOuterClass {
         }
       }
       /**
-       * <code>repeated .ItemParam normal_food_list = 1;</code>
+       * <code>repeated .ItemParam normal_food_list = 15;</code>
        */
       public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder addNormalFoodListBuilder() {
         return getNormalFoodListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.getDefaultInstance());
       }
       /**
-       * <code>repeated .ItemParam normal_food_list = 1;</code>
+       * <code>repeated .ItemParam normal_food_list = 15;</code>
        */
       public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder addNormalFoodListBuilder(
           int index) {
@@ -748,7 +756,7 @@ public final class SpiceActivityProcessFoodReqOuterClass {
             index, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.getDefaultInstance());
       }
       /**
-       * <code>repeated .ItemParam normal_food_list = 1;</code>
+       * <code>repeated .ItemParam normal_food_list = 15;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder> 
            getNormalFoodListBuilderList() {
@@ -837,7 +845,7 @@ public final class SpiceActivityProcessFoodReqOuterClass {
     java.lang.String[] descriptorData = {
       "\n!SpiceActivityProcessFoodReq.proto\032\017Ite" +
       "mParam.proto\"C\n\033SpiceActivityProcessFood" +
-      "Req\022$\n\020normal_food_list\030\001 \003(\0132\n.ItemPara" +
+      "Req\022$\n\020normal_food_list\030\017 \003(\0132\n.ItemPara" +
       "mB\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

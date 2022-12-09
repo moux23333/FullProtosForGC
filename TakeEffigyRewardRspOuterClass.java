@@ -19,22 +19,26 @@ public final class TakeEffigyRewardRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 15;</code>
+     * <code>int32 retcode = 5;</code>
      * @return The retcode.
      */
     int getRetcode();
 
     /**
-     * <code>uint32 reward_index = 7;</code>
+     * <code>uint32 reward_index = 14;</code>
      * @return The rewardIndex.
      */
     int getRewardIndex();
   }
   /**
    * <pre>
-   * CmdId: 2007
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 2099;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code TakeEffigyRewardRsp}
@@ -81,14 +85,14 @@ public final class TakeEffigyRewardRspOuterClass {
             case 0:
               done = true;
               break;
-            case 56: {
-
-              rewardIndex_ = input.readUInt32();
-              break;
-            }
-            case 120: {
+            case 40: {
 
               retcode_ = input.readInt32();
+              break;
+            }
+            case 112: {
+
+              rewardIndex_ = input.readUInt32();
               break;
             }
             default: {
@@ -123,10 +127,10 @@ public final class TakeEffigyRewardRspOuterClass {
               emu.grasscutter.net.proto.TakeEffigyRewardRspOuterClass.TakeEffigyRewardRsp.class, emu.grasscutter.net.proto.TakeEffigyRewardRspOuterClass.TakeEffigyRewardRsp.Builder.class);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 15;
+    public static final int RETCODE_FIELD_NUMBER = 5;
     private int retcode_;
     /**
-     * <code>int32 retcode = 15;</code>
+     * <code>int32 retcode = 5;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -134,10 +138,10 @@ public final class TakeEffigyRewardRspOuterClass {
       return retcode_;
     }
 
-    public static final int REWARD_INDEX_FIELD_NUMBER = 7;
+    public static final int REWARD_INDEX_FIELD_NUMBER = 14;
     private int rewardIndex_;
     /**
-     * <code>uint32 reward_index = 7;</code>
+     * <code>uint32 reward_index = 14;</code>
      * @return The rewardIndex.
      */
     @java.lang.Override
@@ -159,11 +163,11 @@ public final class TakeEffigyRewardRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (rewardIndex_ != 0) {
-        output.writeUInt32(7, rewardIndex_);
-      }
       if (retcode_ != 0) {
-        output.writeInt32(15, retcode_);
+        output.writeInt32(5, retcode_);
+      }
+      if (rewardIndex_ != 0) {
+        output.writeUInt32(14, rewardIndex_);
       }
       unknownFields.writeTo(output);
     }
@@ -174,13 +178,13 @@ public final class TakeEffigyRewardRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (rewardIndex_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, rewardIndex_);
-      }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(15, retcode_);
+          .computeInt32Size(5, retcode_);
+      }
+      if (rewardIndex_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(14, rewardIndex_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -313,9 +317,13 @@ public final class TakeEffigyRewardRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 2007
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 2099;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code TakeEffigyRewardRsp}
@@ -472,7 +480,7 @@ public final class TakeEffigyRewardRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 15;</code>
+       * <code>int32 retcode = 5;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -480,7 +488,7 @@ public final class TakeEffigyRewardRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 15;</code>
+       * <code>int32 retcode = 5;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -491,7 +499,7 @@ public final class TakeEffigyRewardRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 15;</code>
+       * <code>int32 retcode = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -503,7 +511,7 @@ public final class TakeEffigyRewardRspOuterClass {
 
       private int rewardIndex_ ;
       /**
-       * <code>uint32 reward_index = 7;</code>
+       * <code>uint32 reward_index = 14;</code>
        * @return The rewardIndex.
        */
       @java.lang.Override
@@ -511,7 +519,7 @@ public final class TakeEffigyRewardRspOuterClass {
         return rewardIndex_;
       }
       /**
-       * <code>uint32 reward_index = 7;</code>
+       * <code>uint32 reward_index = 14;</code>
        * @param value The rewardIndex to set.
        * @return This builder for chaining.
        */
@@ -522,7 +530,7 @@ public final class TakeEffigyRewardRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 reward_index = 7;</code>
+       * <code>uint32 reward_index = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearRewardIndex() {
@@ -599,8 +607,8 @@ public final class TakeEffigyRewardRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\031TakeEffigyRewardRsp.proto\"<\n\023TakeEffig" +
-      "yRewardRsp\022\017\n\007retcode\030\017 \001(\005\022\024\n\014reward_in" +
-      "dex\030\007 \001(\rB\033\n\031emu.grasscutter.net.protob\006" +
+      "yRewardRsp\022\017\n\007retcode\030\005 \001(\005\022\024\n\014reward_in" +
+      "dex\030\016 \001(\rB\033\n\031emu.grasscutter.net.protob\006" +
       "proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

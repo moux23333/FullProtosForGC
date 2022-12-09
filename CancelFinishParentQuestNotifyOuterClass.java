@@ -19,16 +19,20 @@ public final class CancelFinishParentQuestNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 parent_quest_id = 6;</code>
+     * <code>uint32 parent_quest_id = 14;</code>
      * @return The parentQuestId.
      */
     int getParentQuestId();
   }
   /**
    * <pre>
-   * CmdId: 424
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 422;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code CancelFinishParentQuestNotify}
@@ -75,7 +79,7 @@ public final class CancelFinishParentQuestNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 48: {
+            case 112: {
 
               parentQuestId_ = input.readUInt32();
               break;
@@ -112,10 +116,10 @@ public final class CancelFinishParentQuestNotifyOuterClass {
               emu.grasscutter.net.proto.CancelFinishParentQuestNotifyOuterClass.CancelFinishParentQuestNotify.class, emu.grasscutter.net.proto.CancelFinishParentQuestNotifyOuterClass.CancelFinishParentQuestNotify.Builder.class);
     }
 
-    public static final int PARENT_QUEST_ID_FIELD_NUMBER = 6;
+    public static final int PARENT_QUEST_ID_FIELD_NUMBER = 14;
     private int parentQuestId_;
     /**
-     * <code>uint32 parent_quest_id = 6;</code>
+     * <code>uint32 parent_quest_id = 14;</code>
      * @return The parentQuestId.
      */
     @java.lang.Override
@@ -138,7 +142,7 @@ public final class CancelFinishParentQuestNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (parentQuestId_ != 0) {
-        output.writeUInt32(6, parentQuestId_);
+        output.writeUInt32(14, parentQuestId_);
       }
       unknownFields.writeTo(output);
     }
@@ -151,7 +155,7 @@ public final class CancelFinishParentQuestNotifyOuterClass {
       size = 0;
       if (parentQuestId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, parentQuestId_);
+          .computeUInt32Size(14, parentQuestId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -280,9 +284,13 @@ public final class CancelFinishParentQuestNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 424
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 422;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code CancelFinishParentQuestNotify}
@@ -433,7 +441,7 @@ public final class CancelFinishParentQuestNotifyOuterClass {
 
       private int parentQuestId_ ;
       /**
-       * <code>uint32 parent_quest_id = 6;</code>
+       * <code>uint32 parent_quest_id = 14;</code>
        * @return The parentQuestId.
        */
       @java.lang.Override
@@ -441,7 +449,7 @@ public final class CancelFinishParentQuestNotifyOuterClass {
         return parentQuestId_;
       }
       /**
-       * <code>uint32 parent_quest_id = 6;</code>
+       * <code>uint32 parent_quest_id = 14;</code>
        * @param value The parentQuestId to set.
        * @return This builder for chaining.
        */
@@ -452,7 +460,7 @@ public final class CancelFinishParentQuestNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 parent_quest_id = 6;</code>
+       * <code>uint32 parent_quest_id = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearParentQuestId() {
@@ -530,7 +538,7 @@ public final class CancelFinishParentQuestNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n#CancelFinishParentQuestNotify.proto\"8\n" +
       "\035CancelFinishParentQuestNotify\022\027\n\017parent" +
-      "_quest_id\030\006 \001(\rB\033\n\031emu.grasscutter.net.p" +
+      "_quest_id\030\016 \001(\rB\033\n\031emu.grasscutter.net.p" +
       "rotob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

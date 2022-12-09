@@ -19,25 +19,25 @@ public final class AbilityMixinShieldBarOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 player_num = 14;</code>
-     * @return The playerNum.
-     */
-    int getPlayerNum();
-
-    /**
-     * <code>float max_shield = 15;</code>
+     * <code>float max_shield = 8;</code>
      * @return The maxShield.
      */
     float getMaxShield();
 
     /**
-     * <code>float shield = 12;</code>
+     * <code>float shield = 4;</code>
      * @return The shield.
      */
     float getShield();
 
     /**
-     * <code>uint32 element_type = 13;</code>
+     * <code>uint32 player_num = 3;</code>
+     * @return The playerNum.
+     */
+    int getPlayerNum();
+
+    /**
+     * <code>uint32 element_type = 7;</code>
      * @return The elementType.
      */
     int getElementType();
@@ -87,22 +87,22 @@ public final class AbilityMixinShieldBarOuterClass {
             case 0:
               done = true;
               break;
-            case 101: {
-
-              shield_ = input.readFloat();
-              break;
-            }
-            case 104: {
-
-              elementType_ = input.readUInt32();
-              break;
-            }
-            case 112: {
+            case 24: {
 
               playerNum_ = input.readUInt32();
               break;
             }
-            case 125: {
+            case 37: {
+
+              shield_ = input.readFloat();
+              break;
+            }
+            case 56: {
+
+              elementType_ = input.readUInt32();
+              break;
+            }
+            case 69: {
 
               maxShield_ = input.readFloat();
               break;
@@ -139,21 +139,10 @@ public final class AbilityMixinShieldBarOuterClass {
               emu.grasscutter.net.proto.AbilityMixinShieldBarOuterClass.AbilityMixinShieldBar.class, emu.grasscutter.net.proto.AbilityMixinShieldBarOuterClass.AbilityMixinShieldBar.Builder.class);
     }
 
-    public static final int PLAYER_NUM_FIELD_NUMBER = 14;
-    private int playerNum_;
-    /**
-     * <code>uint32 player_num = 14;</code>
-     * @return The playerNum.
-     */
-    @java.lang.Override
-    public int getPlayerNum() {
-      return playerNum_;
-    }
-
-    public static final int MAX_SHIELD_FIELD_NUMBER = 15;
+    public static final int MAX_SHIELD_FIELD_NUMBER = 8;
     private float maxShield_;
     /**
-     * <code>float max_shield = 15;</code>
+     * <code>float max_shield = 8;</code>
      * @return The maxShield.
      */
     @java.lang.Override
@@ -161,10 +150,10 @@ public final class AbilityMixinShieldBarOuterClass {
       return maxShield_;
     }
 
-    public static final int SHIELD_FIELD_NUMBER = 12;
+    public static final int SHIELD_FIELD_NUMBER = 4;
     private float shield_;
     /**
-     * <code>float shield = 12;</code>
+     * <code>float shield = 4;</code>
      * @return The shield.
      */
     @java.lang.Override
@@ -172,10 +161,21 @@ public final class AbilityMixinShieldBarOuterClass {
       return shield_;
     }
 
-    public static final int ELEMENT_TYPE_FIELD_NUMBER = 13;
+    public static final int PLAYER_NUM_FIELD_NUMBER = 3;
+    private int playerNum_;
+    /**
+     * <code>uint32 player_num = 3;</code>
+     * @return The playerNum.
+     */
+    @java.lang.Override
+    public int getPlayerNum() {
+      return playerNum_;
+    }
+
+    public static final int ELEMENT_TYPE_FIELD_NUMBER = 7;
     private int elementType_;
     /**
-     * <code>uint32 element_type = 13;</code>
+     * <code>uint32 element_type = 7;</code>
      * @return The elementType.
      */
     @java.lang.Override
@@ -197,17 +197,17 @@ public final class AbilityMixinShieldBarOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (playerNum_ != 0) {
+        output.writeUInt32(3, playerNum_);
+      }
       if (shield_ != 0F) {
-        output.writeFloat(12, shield_);
+        output.writeFloat(4, shield_);
       }
       if (elementType_ != 0) {
-        output.writeUInt32(13, elementType_);
-      }
-      if (playerNum_ != 0) {
-        output.writeUInt32(14, playerNum_);
+        output.writeUInt32(7, elementType_);
       }
       if (maxShield_ != 0F) {
-        output.writeFloat(15, maxShield_);
+        output.writeFloat(8, maxShield_);
       }
       unknownFields.writeTo(output);
     }
@@ -218,21 +218,21 @@ public final class AbilityMixinShieldBarOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (playerNum_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(3, playerNum_);
+      }
       if (shield_ != 0F) {
         size += com.google.protobuf.CodedOutputStream
-          .computeFloatSize(12, shield_);
+          .computeFloatSize(4, shield_);
       }
       if (elementType_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, elementType_);
-      }
-      if (playerNum_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, playerNum_);
+          .computeUInt32Size(7, elementType_);
       }
       if (maxShield_ != 0F) {
         size += com.google.protobuf.CodedOutputStream
-          .computeFloatSize(15, maxShield_);
+          .computeFloatSize(8, maxShield_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -249,14 +249,14 @@ public final class AbilityMixinShieldBarOuterClass {
       }
       emu.grasscutter.net.proto.AbilityMixinShieldBarOuterClass.AbilityMixinShieldBar other = (emu.grasscutter.net.proto.AbilityMixinShieldBarOuterClass.AbilityMixinShieldBar) obj;
 
-      if (getPlayerNum()
-          != other.getPlayerNum()) return false;
       if (java.lang.Float.floatToIntBits(getMaxShield())
           != java.lang.Float.floatToIntBits(
               other.getMaxShield())) return false;
       if (java.lang.Float.floatToIntBits(getShield())
           != java.lang.Float.floatToIntBits(
               other.getShield())) return false;
+      if (getPlayerNum()
+          != other.getPlayerNum()) return false;
       if (getElementType()
           != other.getElementType()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
@@ -270,14 +270,14 @@ public final class AbilityMixinShieldBarOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + PLAYER_NUM_FIELD_NUMBER;
-      hash = (53 * hash) + getPlayerNum();
       hash = (37 * hash) + MAX_SHIELD_FIELD_NUMBER;
       hash = (53 * hash) + java.lang.Float.floatToIntBits(
           getMaxShield());
       hash = (37 * hash) + SHIELD_FIELD_NUMBER;
       hash = (53 * hash) + java.lang.Float.floatToIntBits(
           getShield());
+      hash = (37 * hash) + PLAYER_NUM_FIELD_NUMBER;
+      hash = (53 * hash) + getPlayerNum();
       hash = (37 * hash) + ELEMENT_TYPE_FIELD_NUMBER;
       hash = (53 * hash) + getElementType();
       hash = (29 * hash) + unknownFields.hashCode();
@@ -413,11 +413,11 @@ public final class AbilityMixinShieldBarOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        playerNum_ = 0;
-
         maxShield_ = 0F;
 
         shield_ = 0F;
+
+        playerNum_ = 0;
 
         elementType_ = 0;
 
@@ -447,9 +447,9 @@ public final class AbilityMixinShieldBarOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.AbilityMixinShieldBarOuterClass.AbilityMixinShieldBar buildPartial() {
         emu.grasscutter.net.proto.AbilityMixinShieldBarOuterClass.AbilityMixinShieldBar result = new emu.grasscutter.net.proto.AbilityMixinShieldBarOuterClass.AbilityMixinShieldBar(this);
-        result.playerNum_ = playerNum_;
         result.maxShield_ = maxShield_;
         result.shield_ = shield_;
+        result.playerNum_ = playerNum_;
         result.elementType_ = elementType_;
         onBuilt();
         return result;
@@ -499,14 +499,14 @@ public final class AbilityMixinShieldBarOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.AbilityMixinShieldBarOuterClass.AbilityMixinShieldBar other) {
         if (other == emu.grasscutter.net.proto.AbilityMixinShieldBarOuterClass.AbilityMixinShieldBar.getDefaultInstance()) return this;
-        if (other.getPlayerNum() != 0) {
-          setPlayerNum(other.getPlayerNum());
-        }
         if (other.getMaxShield() != 0F) {
           setMaxShield(other.getMaxShield());
         }
         if (other.getShield() != 0F) {
           setShield(other.getShield());
+        }
+        if (other.getPlayerNum() != 0) {
+          setPlayerNum(other.getPlayerNum());
         }
         if (other.getElementType() != 0) {
           setElementType(other.getElementType());
@@ -540,40 +540,9 @@ public final class AbilityMixinShieldBarOuterClass {
         return this;
       }
 
-      private int playerNum_ ;
-      /**
-       * <code>uint32 player_num = 14;</code>
-       * @return The playerNum.
-       */
-      @java.lang.Override
-      public int getPlayerNum() {
-        return playerNum_;
-      }
-      /**
-       * <code>uint32 player_num = 14;</code>
-       * @param value The playerNum to set.
-       * @return This builder for chaining.
-       */
-      public Builder setPlayerNum(int value) {
-        
-        playerNum_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 player_num = 14;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearPlayerNum() {
-        
-        playerNum_ = 0;
-        onChanged();
-        return this;
-      }
-
       private float maxShield_ ;
       /**
-       * <code>float max_shield = 15;</code>
+       * <code>float max_shield = 8;</code>
        * @return The maxShield.
        */
       @java.lang.Override
@@ -581,7 +550,7 @@ public final class AbilityMixinShieldBarOuterClass {
         return maxShield_;
       }
       /**
-       * <code>float max_shield = 15;</code>
+       * <code>float max_shield = 8;</code>
        * @param value The maxShield to set.
        * @return This builder for chaining.
        */
@@ -592,7 +561,7 @@ public final class AbilityMixinShieldBarOuterClass {
         return this;
       }
       /**
-       * <code>float max_shield = 15;</code>
+       * <code>float max_shield = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearMaxShield() {
@@ -604,7 +573,7 @@ public final class AbilityMixinShieldBarOuterClass {
 
       private float shield_ ;
       /**
-       * <code>float shield = 12;</code>
+       * <code>float shield = 4;</code>
        * @return The shield.
        */
       @java.lang.Override
@@ -612,7 +581,7 @@ public final class AbilityMixinShieldBarOuterClass {
         return shield_;
       }
       /**
-       * <code>float shield = 12;</code>
+       * <code>float shield = 4;</code>
        * @param value The shield to set.
        * @return This builder for chaining.
        */
@@ -623,7 +592,7 @@ public final class AbilityMixinShieldBarOuterClass {
         return this;
       }
       /**
-       * <code>float shield = 12;</code>
+       * <code>float shield = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearShield() {
@@ -633,9 +602,40 @@ public final class AbilityMixinShieldBarOuterClass {
         return this;
       }
 
+      private int playerNum_ ;
+      /**
+       * <code>uint32 player_num = 3;</code>
+       * @return The playerNum.
+       */
+      @java.lang.Override
+      public int getPlayerNum() {
+        return playerNum_;
+      }
+      /**
+       * <code>uint32 player_num = 3;</code>
+       * @param value The playerNum to set.
+       * @return This builder for chaining.
+       */
+      public Builder setPlayerNum(int value) {
+        
+        playerNum_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 player_num = 3;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearPlayerNum() {
+        
+        playerNum_ = 0;
+        onChanged();
+        return this;
+      }
+
       private int elementType_ ;
       /**
-       * <code>uint32 element_type = 13;</code>
+       * <code>uint32 element_type = 7;</code>
        * @return The elementType.
        */
       @java.lang.Override
@@ -643,7 +643,7 @@ public final class AbilityMixinShieldBarOuterClass {
         return elementType_;
       }
       /**
-       * <code>uint32 element_type = 13;</code>
+       * <code>uint32 element_type = 7;</code>
        * @param value The elementType to set.
        * @return This builder for chaining.
        */
@@ -654,7 +654,7 @@ public final class AbilityMixinShieldBarOuterClass {
         return this;
       }
       /**
-       * <code>uint32 element_type = 13;</code>
+       * <code>uint32 element_type = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearElementType() {
@@ -731,9 +731,9 @@ public final class AbilityMixinShieldBarOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\033AbilityMixinShieldBar.proto\"e\n\025Ability" +
-      "MixinShieldBar\022\022\n\nplayer_num\030\016 \001(\r\022\022\n\nma" +
-      "x_shield\030\017 \001(\002\022\016\n\006shield\030\014 \001(\002\022\024\n\014elemen" +
-      "t_type\030\r \001(\rB\033\n\031emu.grasscutter.net.prot" +
+      "MixinShieldBar\022\022\n\nmax_shield\030\010 \001(\002\022\016\n\006sh" +
+      "ield\030\004 \001(\002\022\022\n\nplayer_num\030\003 \001(\r\022\024\n\014elemen" +
+      "t_type\030\007 \001(\rB\033\n\031emu.grasscutter.net.prot" +
       "ob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -745,7 +745,7 @@ public final class AbilityMixinShieldBarOuterClass {
     internal_static_AbilityMixinShieldBar_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_AbilityMixinShieldBar_descriptor,
-        new java.lang.String[] { "PlayerNum", "MaxShield", "Shield", "ElementType", });
+        new java.lang.String[] { "MaxShield", "Shield", "PlayerNum", "ElementType", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

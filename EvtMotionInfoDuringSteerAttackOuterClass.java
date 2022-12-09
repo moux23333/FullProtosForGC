@@ -19,55 +19,55 @@ public final class EvtMotionInfoDuringSteerAttackOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.Vector face_dir = 4;</code>
+     * <code>.Vector face_dir = 15;</code>
      * @return Whether the faceDir field is set.
      */
     boolean hasFaceDir();
     /**
-     * <code>.Vector face_dir = 4;</code>
+     * <code>.Vector face_dir = 15;</code>
      * @return The faceDir.
      */
     emu.grasscutter.net.proto.VectorOuterClass.Vector getFaceDir();
     /**
-     * <code>.Vector face_dir = 4;</code>
+     * <code>.Vector face_dir = 15;</code>
      */
     emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getFaceDirOrBuilder();
 
     /**
-     * <code>.Vector velocity = 3;</code>
-     * @return Whether the velocity field is set.
-     */
-    boolean hasVelocity();
-    /**
-     * <code>.Vector velocity = 3;</code>
-     * @return The velocity.
-     */
-    emu.grasscutter.net.proto.VectorOuterClass.Vector getVelocity();
-    /**
-     * <code>.Vector velocity = 3;</code>
-     */
-    emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getVelocityOrBuilder();
-
-    /**
-     * <code>.Vector pos = 1;</code>
+     * <code>.Vector pos = 8;</code>
      * @return Whether the pos field is set.
      */
     boolean hasPos();
     /**
-     * <code>.Vector pos = 1;</code>
+     * <code>.Vector pos = 8;</code>
      * @return The pos.
      */
     emu.grasscutter.net.proto.VectorOuterClass.Vector getPos();
     /**
-     * <code>.Vector pos = 1;</code>
+     * <code>.Vector pos = 8;</code>
      */
     emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getPosOrBuilder();
 
     /**
-     * <code>uint32 entity_id = 6;</code>
+     * <code>uint32 entity_id = 4;</code>
      * @return The entityId.
      */
     int getEntityId();
+
+    /**
+     * <code>.Vector velocity = 14;</code>
+     * @return Whether the velocity field is set.
+     */
+    boolean hasVelocity();
+    /**
+     * <code>.Vector velocity = 14;</code>
+     * @return The velocity.
+     */
+    emu.grasscutter.net.proto.VectorOuterClass.Vector getVelocity();
+    /**
+     * <code>.Vector velocity = 14;</code>
+     */
+    emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getVelocityOrBuilder();
   }
   /**
    * Protobuf type {@code EvtMotionInfoDuringSteerAttack}
@@ -114,7 +114,12 @@ public final class EvtMotionInfoDuringSteerAttackOuterClass {
             case 0:
               done = true;
               break;
-            case 10: {
+            case 32: {
+
+              entityId_ = input.readUInt32();
+              break;
+            }
+            case 66: {
               emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder subBuilder = null;
               if (pos_ != null) {
                 subBuilder = pos_.toBuilder();
@@ -127,7 +132,7 @@ public final class EvtMotionInfoDuringSteerAttackOuterClass {
 
               break;
             }
-            case 26: {
+            case 114: {
               emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder subBuilder = null;
               if (velocity_ != null) {
                 subBuilder = velocity_.toBuilder();
@@ -140,7 +145,7 @@ public final class EvtMotionInfoDuringSteerAttackOuterClass {
 
               break;
             }
-            case 34: {
+            case 122: {
               emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder subBuilder = null;
               if (faceDir_ != null) {
                 subBuilder = faceDir_.toBuilder();
@@ -151,11 +156,6 @@ public final class EvtMotionInfoDuringSteerAttackOuterClass {
                 faceDir_ = subBuilder.buildPartial();
               }
 
-              break;
-            }
-            case 48: {
-
-              entityId_ = input.readUInt32();
               break;
             }
             default: {
@@ -190,10 +190,10 @@ public final class EvtMotionInfoDuringSteerAttackOuterClass {
               emu.grasscutter.net.proto.EvtMotionInfoDuringSteerAttackOuterClass.EvtMotionInfoDuringSteerAttack.class, emu.grasscutter.net.proto.EvtMotionInfoDuringSteerAttackOuterClass.EvtMotionInfoDuringSteerAttack.Builder.class);
     }
 
-    public static final int FACE_DIR_FIELD_NUMBER = 4;
+    public static final int FACE_DIR_FIELD_NUMBER = 15;
     private emu.grasscutter.net.proto.VectorOuterClass.Vector faceDir_;
     /**
-     * <code>.Vector face_dir = 4;</code>
+     * <code>.Vector face_dir = 15;</code>
      * @return Whether the faceDir field is set.
      */
     @java.lang.Override
@@ -201,7 +201,7 @@ public final class EvtMotionInfoDuringSteerAttackOuterClass {
       return faceDir_ != null;
     }
     /**
-     * <code>.Vector face_dir = 4;</code>
+     * <code>.Vector face_dir = 15;</code>
      * @return The faceDir.
      */
     @java.lang.Override
@@ -209,43 +209,17 @@ public final class EvtMotionInfoDuringSteerAttackOuterClass {
       return faceDir_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : faceDir_;
     }
     /**
-     * <code>.Vector face_dir = 4;</code>
+     * <code>.Vector face_dir = 15;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getFaceDirOrBuilder() {
       return getFaceDir();
     }
 
-    public static final int VELOCITY_FIELD_NUMBER = 3;
-    private emu.grasscutter.net.proto.VectorOuterClass.Vector velocity_;
-    /**
-     * <code>.Vector velocity = 3;</code>
-     * @return Whether the velocity field is set.
-     */
-    @java.lang.Override
-    public boolean hasVelocity() {
-      return velocity_ != null;
-    }
-    /**
-     * <code>.Vector velocity = 3;</code>
-     * @return The velocity.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.VectorOuterClass.Vector getVelocity() {
-      return velocity_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : velocity_;
-    }
-    /**
-     * <code>.Vector velocity = 3;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getVelocityOrBuilder() {
-      return getVelocity();
-    }
-
-    public static final int POS_FIELD_NUMBER = 1;
+    public static final int POS_FIELD_NUMBER = 8;
     private emu.grasscutter.net.proto.VectorOuterClass.Vector pos_;
     /**
-     * <code>.Vector pos = 1;</code>
+     * <code>.Vector pos = 8;</code>
      * @return Whether the pos field is set.
      */
     @java.lang.Override
@@ -253,7 +227,7 @@ public final class EvtMotionInfoDuringSteerAttackOuterClass {
       return pos_ != null;
     }
     /**
-     * <code>.Vector pos = 1;</code>
+     * <code>.Vector pos = 8;</code>
      * @return The pos.
      */
     @java.lang.Override
@@ -261,22 +235,48 @@ public final class EvtMotionInfoDuringSteerAttackOuterClass {
       return pos_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : pos_;
     }
     /**
-     * <code>.Vector pos = 1;</code>
+     * <code>.Vector pos = 8;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getPosOrBuilder() {
       return getPos();
     }
 
-    public static final int ENTITY_ID_FIELD_NUMBER = 6;
+    public static final int ENTITY_ID_FIELD_NUMBER = 4;
     private int entityId_;
     /**
-     * <code>uint32 entity_id = 6;</code>
+     * <code>uint32 entity_id = 4;</code>
      * @return The entityId.
      */
     @java.lang.Override
     public int getEntityId() {
       return entityId_;
+    }
+
+    public static final int VELOCITY_FIELD_NUMBER = 14;
+    private emu.grasscutter.net.proto.VectorOuterClass.Vector velocity_;
+    /**
+     * <code>.Vector velocity = 14;</code>
+     * @return Whether the velocity field is set.
+     */
+    @java.lang.Override
+    public boolean hasVelocity() {
+      return velocity_ != null;
+    }
+    /**
+     * <code>.Vector velocity = 14;</code>
+     * @return The velocity.
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.VectorOuterClass.Vector getVelocity() {
+      return velocity_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : velocity_;
+    }
+    /**
+     * <code>.Vector velocity = 14;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getVelocityOrBuilder() {
+      return getVelocity();
     }
 
     private byte memoizedIsInitialized = -1;
@@ -293,17 +293,17 @@ public final class EvtMotionInfoDuringSteerAttackOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (entityId_ != 0) {
+        output.writeUInt32(4, entityId_);
+      }
       if (pos_ != null) {
-        output.writeMessage(1, getPos());
+        output.writeMessage(8, getPos());
       }
       if (velocity_ != null) {
-        output.writeMessage(3, getVelocity());
+        output.writeMessage(14, getVelocity());
       }
       if (faceDir_ != null) {
-        output.writeMessage(4, getFaceDir());
-      }
-      if (entityId_ != 0) {
-        output.writeUInt32(6, entityId_);
+        output.writeMessage(15, getFaceDir());
       }
       unknownFields.writeTo(output);
     }
@@ -314,21 +314,21 @@ public final class EvtMotionInfoDuringSteerAttackOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (entityId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(4, entityId_);
+      }
       if (pos_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(1, getPos());
+          .computeMessageSize(8, getPos());
       }
       if (velocity_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(3, getVelocity());
+          .computeMessageSize(14, getVelocity());
       }
       if (faceDir_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(4, getFaceDir());
-      }
-      if (entityId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, entityId_);
+          .computeMessageSize(15, getFaceDir());
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -350,11 +350,6 @@ public final class EvtMotionInfoDuringSteerAttackOuterClass {
         if (!getFaceDir()
             .equals(other.getFaceDir())) return false;
       }
-      if (hasVelocity() != other.hasVelocity()) return false;
-      if (hasVelocity()) {
-        if (!getVelocity()
-            .equals(other.getVelocity())) return false;
-      }
       if (hasPos() != other.hasPos()) return false;
       if (hasPos()) {
         if (!getPos()
@@ -362,6 +357,11 @@ public final class EvtMotionInfoDuringSteerAttackOuterClass {
       }
       if (getEntityId()
           != other.getEntityId()) return false;
+      if (hasVelocity() != other.hasVelocity()) return false;
+      if (hasVelocity()) {
+        if (!getVelocity()
+            .equals(other.getVelocity())) return false;
+      }
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -377,16 +377,16 @@ public final class EvtMotionInfoDuringSteerAttackOuterClass {
         hash = (37 * hash) + FACE_DIR_FIELD_NUMBER;
         hash = (53 * hash) + getFaceDir().hashCode();
       }
-      if (hasVelocity()) {
-        hash = (37 * hash) + VELOCITY_FIELD_NUMBER;
-        hash = (53 * hash) + getVelocity().hashCode();
-      }
       if (hasPos()) {
         hash = (37 * hash) + POS_FIELD_NUMBER;
         hash = (53 * hash) + getPos().hashCode();
       }
       hash = (37 * hash) + ENTITY_ID_FIELD_NUMBER;
       hash = (53 * hash) + getEntityId();
+      if (hasVelocity()) {
+        hash = (37 * hash) + VELOCITY_FIELD_NUMBER;
+        hash = (53 * hash) + getVelocity().hashCode();
+      }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -526,12 +526,6 @@ public final class EvtMotionInfoDuringSteerAttackOuterClass {
           faceDir_ = null;
           faceDirBuilder_ = null;
         }
-        if (velocityBuilder_ == null) {
-          velocity_ = null;
-        } else {
-          velocity_ = null;
-          velocityBuilder_ = null;
-        }
         if (posBuilder_ == null) {
           pos_ = null;
         } else {
@@ -540,6 +534,12 @@ public final class EvtMotionInfoDuringSteerAttackOuterClass {
         }
         entityId_ = 0;
 
+        if (velocityBuilder_ == null) {
+          velocity_ = null;
+        } else {
+          velocity_ = null;
+          velocityBuilder_ = null;
+        }
         return this;
       }
 
@@ -571,17 +571,17 @@ public final class EvtMotionInfoDuringSteerAttackOuterClass {
         } else {
           result.faceDir_ = faceDirBuilder_.build();
         }
-        if (velocityBuilder_ == null) {
-          result.velocity_ = velocity_;
-        } else {
-          result.velocity_ = velocityBuilder_.build();
-        }
         if (posBuilder_ == null) {
           result.pos_ = pos_;
         } else {
           result.pos_ = posBuilder_.build();
         }
         result.entityId_ = entityId_;
+        if (velocityBuilder_ == null) {
+          result.velocity_ = velocity_;
+        } else {
+          result.velocity_ = velocityBuilder_.build();
+        }
         onBuilt();
         return result;
       }
@@ -633,14 +633,14 @@ public final class EvtMotionInfoDuringSteerAttackOuterClass {
         if (other.hasFaceDir()) {
           mergeFaceDir(other.getFaceDir());
         }
-        if (other.hasVelocity()) {
-          mergeVelocity(other.getVelocity());
-        }
         if (other.hasPos()) {
           mergePos(other.getPos());
         }
         if (other.getEntityId() != 0) {
           setEntityId(other.getEntityId());
+        }
+        if (other.hasVelocity()) {
+          mergeVelocity(other.getVelocity());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -675,14 +675,14 @@ public final class EvtMotionInfoDuringSteerAttackOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> faceDirBuilder_;
       /**
-       * <code>.Vector face_dir = 4;</code>
+       * <code>.Vector face_dir = 15;</code>
        * @return Whether the faceDir field is set.
        */
       public boolean hasFaceDir() {
         return faceDirBuilder_ != null || faceDir_ != null;
       }
       /**
-       * <code>.Vector face_dir = 4;</code>
+       * <code>.Vector face_dir = 15;</code>
        * @return The faceDir.
        */
       public emu.grasscutter.net.proto.VectorOuterClass.Vector getFaceDir() {
@@ -693,7 +693,7 @@ public final class EvtMotionInfoDuringSteerAttackOuterClass {
         }
       }
       /**
-       * <code>.Vector face_dir = 4;</code>
+       * <code>.Vector face_dir = 15;</code>
        */
       public Builder setFaceDir(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
         if (faceDirBuilder_ == null) {
@@ -709,7 +709,7 @@ public final class EvtMotionInfoDuringSteerAttackOuterClass {
         return this;
       }
       /**
-       * <code>.Vector face_dir = 4;</code>
+       * <code>.Vector face_dir = 15;</code>
        */
       public Builder setFaceDir(
           emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder builderForValue) {
@@ -723,7 +723,7 @@ public final class EvtMotionInfoDuringSteerAttackOuterClass {
         return this;
       }
       /**
-       * <code>.Vector face_dir = 4;</code>
+       * <code>.Vector face_dir = 15;</code>
        */
       public Builder mergeFaceDir(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
         if (faceDirBuilder_ == null) {
@@ -741,7 +741,7 @@ public final class EvtMotionInfoDuringSteerAttackOuterClass {
         return this;
       }
       /**
-       * <code>.Vector face_dir = 4;</code>
+       * <code>.Vector face_dir = 15;</code>
        */
       public Builder clearFaceDir() {
         if (faceDirBuilder_ == null) {
@@ -755,7 +755,7 @@ public final class EvtMotionInfoDuringSteerAttackOuterClass {
         return this;
       }
       /**
-       * <code>.Vector face_dir = 4;</code>
+       * <code>.Vector face_dir = 15;</code>
        */
       public emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder getFaceDirBuilder() {
         
@@ -763,7 +763,7 @@ public final class EvtMotionInfoDuringSteerAttackOuterClass {
         return getFaceDirFieldBuilder().getBuilder();
       }
       /**
-       * <code>.Vector face_dir = 4;</code>
+       * <code>.Vector face_dir = 15;</code>
        */
       public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getFaceDirOrBuilder() {
         if (faceDirBuilder_ != null) {
@@ -774,7 +774,7 @@ public final class EvtMotionInfoDuringSteerAttackOuterClass {
         }
       }
       /**
-       * <code>.Vector face_dir = 4;</code>
+       * <code>.Vector face_dir = 15;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> 
@@ -790,137 +790,18 @@ public final class EvtMotionInfoDuringSteerAttackOuterClass {
         return faceDirBuilder_;
       }
 
-      private emu.grasscutter.net.proto.VectorOuterClass.Vector velocity_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> velocityBuilder_;
-      /**
-       * <code>.Vector velocity = 3;</code>
-       * @return Whether the velocity field is set.
-       */
-      public boolean hasVelocity() {
-        return velocityBuilder_ != null || velocity_ != null;
-      }
-      /**
-       * <code>.Vector velocity = 3;</code>
-       * @return The velocity.
-       */
-      public emu.grasscutter.net.proto.VectorOuterClass.Vector getVelocity() {
-        if (velocityBuilder_ == null) {
-          return velocity_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : velocity_;
-        } else {
-          return velocityBuilder_.getMessage();
-        }
-      }
-      /**
-       * <code>.Vector velocity = 3;</code>
-       */
-      public Builder setVelocity(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
-        if (velocityBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          velocity_ = value;
-          onChanged();
-        } else {
-          velocityBuilder_.setMessage(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.Vector velocity = 3;</code>
-       */
-      public Builder setVelocity(
-          emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder builderForValue) {
-        if (velocityBuilder_ == null) {
-          velocity_ = builderForValue.build();
-          onChanged();
-        } else {
-          velocityBuilder_.setMessage(builderForValue.build());
-        }
-
-        return this;
-      }
-      /**
-       * <code>.Vector velocity = 3;</code>
-       */
-      public Builder mergeVelocity(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
-        if (velocityBuilder_ == null) {
-          if (velocity_ != null) {
-            velocity_ =
-              emu.grasscutter.net.proto.VectorOuterClass.Vector.newBuilder(velocity_).mergeFrom(value).buildPartial();
-          } else {
-            velocity_ = value;
-          }
-          onChanged();
-        } else {
-          velocityBuilder_.mergeFrom(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.Vector velocity = 3;</code>
-       */
-      public Builder clearVelocity() {
-        if (velocityBuilder_ == null) {
-          velocity_ = null;
-          onChanged();
-        } else {
-          velocity_ = null;
-          velocityBuilder_ = null;
-        }
-
-        return this;
-      }
-      /**
-       * <code>.Vector velocity = 3;</code>
-       */
-      public emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder getVelocityBuilder() {
-        
-        onChanged();
-        return getVelocityFieldBuilder().getBuilder();
-      }
-      /**
-       * <code>.Vector velocity = 3;</code>
-       */
-      public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getVelocityOrBuilder() {
-        if (velocityBuilder_ != null) {
-          return velocityBuilder_.getMessageOrBuilder();
-        } else {
-          return velocity_ == null ?
-              emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : velocity_;
-        }
-      }
-      /**
-       * <code>.Vector velocity = 3;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> 
-          getVelocityFieldBuilder() {
-        if (velocityBuilder_ == null) {
-          velocityBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder>(
-                  getVelocity(),
-                  getParentForChildren(),
-                  isClean());
-          velocity_ = null;
-        }
-        return velocityBuilder_;
-      }
-
       private emu.grasscutter.net.proto.VectorOuterClass.Vector pos_;
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> posBuilder_;
       /**
-       * <code>.Vector pos = 1;</code>
+       * <code>.Vector pos = 8;</code>
        * @return Whether the pos field is set.
        */
       public boolean hasPos() {
         return posBuilder_ != null || pos_ != null;
       }
       /**
-       * <code>.Vector pos = 1;</code>
+       * <code>.Vector pos = 8;</code>
        * @return The pos.
        */
       public emu.grasscutter.net.proto.VectorOuterClass.Vector getPos() {
@@ -931,7 +812,7 @@ public final class EvtMotionInfoDuringSteerAttackOuterClass {
         }
       }
       /**
-       * <code>.Vector pos = 1;</code>
+       * <code>.Vector pos = 8;</code>
        */
       public Builder setPos(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
         if (posBuilder_ == null) {
@@ -947,7 +828,7 @@ public final class EvtMotionInfoDuringSteerAttackOuterClass {
         return this;
       }
       /**
-       * <code>.Vector pos = 1;</code>
+       * <code>.Vector pos = 8;</code>
        */
       public Builder setPos(
           emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder builderForValue) {
@@ -961,7 +842,7 @@ public final class EvtMotionInfoDuringSteerAttackOuterClass {
         return this;
       }
       /**
-       * <code>.Vector pos = 1;</code>
+       * <code>.Vector pos = 8;</code>
        */
       public Builder mergePos(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
         if (posBuilder_ == null) {
@@ -979,7 +860,7 @@ public final class EvtMotionInfoDuringSteerAttackOuterClass {
         return this;
       }
       /**
-       * <code>.Vector pos = 1;</code>
+       * <code>.Vector pos = 8;</code>
        */
       public Builder clearPos() {
         if (posBuilder_ == null) {
@@ -993,7 +874,7 @@ public final class EvtMotionInfoDuringSteerAttackOuterClass {
         return this;
       }
       /**
-       * <code>.Vector pos = 1;</code>
+       * <code>.Vector pos = 8;</code>
        */
       public emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder getPosBuilder() {
         
@@ -1001,7 +882,7 @@ public final class EvtMotionInfoDuringSteerAttackOuterClass {
         return getPosFieldBuilder().getBuilder();
       }
       /**
-       * <code>.Vector pos = 1;</code>
+       * <code>.Vector pos = 8;</code>
        */
       public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getPosOrBuilder() {
         if (posBuilder_ != null) {
@@ -1012,7 +893,7 @@ public final class EvtMotionInfoDuringSteerAttackOuterClass {
         }
       }
       /**
-       * <code>.Vector pos = 1;</code>
+       * <code>.Vector pos = 8;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> 
@@ -1030,7 +911,7 @@ public final class EvtMotionInfoDuringSteerAttackOuterClass {
 
       private int entityId_ ;
       /**
-       * <code>uint32 entity_id = 6;</code>
+       * <code>uint32 entity_id = 4;</code>
        * @return The entityId.
        */
       @java.lang.Override
@@ -1038,7 +919,7 @@ public final class EvtMotionInfoDuringSteerAttackOuterClass {
         return entityId_;
       }
       /**
-       * <code>uint32 entity_id = 6;</code>
+       * <code>uint32 entity_id = 4;</code>
        * @param value The entityId to set.
        * @return This builder for chaining.
        */
@@ -1049,7 +930,7 @@ public final class EvtMotionInfoDuringSteerAttackOuterClass {
         return this;
       }
       /**
-       * <code>uint32 entity_id = 6;</code>
+       * <code>uint32 entity_id = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearEntityId() {
@@ -1057,6 +938,125 @@ public final class EvtMotionInfoDuringSteerAttackOuterClass {
         entityId_ = 0;
         onChanged();
         return this;
+      }
+
+      private emu.grasscutter.net.proto.VectorOuterClass.Vector velocity_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> velocityBuilder_;
+      /**
+       * <code>.Vector velocity = 14;</code>
+       * @return Whether the velocity field is set.
+       */
+      public boolean hasVelocity() {
+        return velocityBuilder_ != null || velocity_ != null;
+      }
+      /**
+       * <code>.Vector velocity = 14;</code>
+       * @return The velocity.
+       */
+      public emu.grasscutter.net.proto.VectorOuterClass.Vector getVelocity() {
+        if (velocityBuilder_ == null) {
+          return velocity_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : velocity_;
+        } else {
+          return velocityBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>.Vector velocity = 14;</code>
+       */
+      public Builder setVelocity(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
+        if (velocityBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          velocity_ = value;
+          onChanged();
+        } else {
+          velocityBuilder_.setMessage(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.Vector velocity = 14;</code>
+       */
+      public Builder setVelocity(
+          emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder builderForValue) {
+        if (velocityBuilder_ == null) {
+          velocity_ = builderForValue.build();
+          onChanged();
+        } else {
+          velocityBuilder_.setMessage(builderForValue.build());
+        }
+
+        return this;
+      }
+      /**
+       * <code>.Vector velocity = 14;</code>
+       */
+      public Builder mergeVelocity(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
+        if (velocityBuilder_ == null) {
+          if (velocity_ != null) {
+            velocity_ =
+              emu.grasscutter.net.proto.VectorOuterClass.Vector.newBuilder(velocity_).mergeFrom(value).buildPartial();
+          } else {
+            velocity_ = value;
+          }
+          onChanged();
+        } else {
+          velocityBuilder_.mergeFrom(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.Vector velocity = 14;</code>
+       */
+      public Builder clearVelocity() {
+        if (velocityBuilder_ == null) {
+          velocity_ = null;
+          onChanged();
+        } else {
+          velocity_ = null;
+          velocityBuilder_ = null;
+        }
+
+        return this;
+      }
+      /**
+       * <code>.Vector velocity = 14;</code>
+       */
+      public emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder getVelocityBuilder() {
+        
+        onChanged();
+        return getVelocityFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.Vector velocity = 14;</code>
+       */
+      public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getVelocityOrBuilder() {
+        if (velocityBuilder_ != null) {
+          return velocityBuilder_.getMessageOrBuilder();
+        } else {
+          return velocity_ == null ?
+              emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : velocity_;
+        }
+      }
+      /**
+       * <code>.Vector velocity = 14;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> 
+          getVelocityFieldBuilder() {
+        if (velocityBuilder_ == null) {
+          velocityBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder>(
+                  getVelocity(),
+                  getParentForChildren(),
+                  isClean());
+          velocity_ = null;
+        }
+        return velocityBuilder_;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -1127,9 +1127,9 @@ public final class EvtMotionInfoDuringSteerAttackOuterClass {
     java.lang.String[] descriptorData = {
       "\n$EvtMotionInfoDuringSteerAttack.proto\032\014" +
       "Vector.proto\"\177\n\036EvtMotionInfoDuringSteer" +
-      "Attack\022\031\n\010face_dir\030\004 \001(\0132\007.Vector\022\031\n\010vel" +
-      "ocity\030\003 \001(\0132\007.Vector\022\024\n\003pos\030\001 \001(\0132\007.Vect" +
-      "or\022\021\n\tentity_id\030\006 \001(\rB\033\n\031emu.grasscutter" +
+      "Attack\022\031\n\010face_dir\030\017 \001(\0132\007.Vector\022\024\n\003pos" +
+      "\030\010 \001(\0132\007.Vector\022\021\n\tentity_id\030\004 \001(\r\022\031\n\010ve" +
+      "locity\030\016 \001(\0132\007.VectorB\033\n\031emu.grasscutter" +
       ".net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -1142,7 +1142,7 @@ public final class EvtMotionInfoDuringSteerAttackOuterClass {
     internal_static_EvtMotionInfoDuringSteerAttack_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_EvtMotionInfoDuringSteerAttack_descriptor,
-        new java.lang.String[] { "FaceDir", "Velocity", "Pos", "EntityId", });
+        new java.lang.String[] { "FaceDir", "Pos", "EntityId", "Velocity", });
     emu.grasscutter.net.proto.VectorOuterClass.getDescriptor();
   }
 

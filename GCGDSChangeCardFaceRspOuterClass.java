@@ -19,28 +19,32 @@ public final class GCGDSChangeCardFaceRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 face_type = 8;</code>
+     * <code>uint32 face_type = 9;</code>
      * @return The faceType.
      */
     int getFaceType();
 
     /**
-     * <code>uint32 card_id = 4;</code>
-     * @return The cardId.
-     */
-    int getCardId();
-
-    /**
-     * <code>int32 retcode = 9;</code>
+     * <code>int32 retcode = 5;</code>
      * @return The retcode.
      */
     int getRetcode();
+
+    /**
+     * <code>uint32 card_id = 8;</code>
+     * @return The cardId.
+     */
+    int getCardId();
   }
   /**
    * <pre>
-   * CmdId: 7331
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 7549;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code GCGDSChangeCardFaceRsp}
@@ -87,19 +91,19 @@ public final class GCGDSChangeCardFaceRspOuterClass {
             case 0:
               done = true;
               break;
-            case 32: {
+            case 40: {
 
-              cardId_ = input.readUInt32();
+              retcode_ = input.readInt32();
               break;
             }
             case 64: {
 
-              faceType_ = input.readUInt32();
+              cardId_ = input.readUInt32();
               break;
             }
             case 72: {
 
-              retcode_ = input.readInt32();
+              faceType_ = input.readUInt32();
               break;
             }
             default: {
@@ -134,10 +138,10 @@ public final class GCGDSChangeCardFaceRspOuterClass {
               emu.grasscutter.net.proto.GCGDSChangeCardFaceRspOuterClass.GCGDSChangeCardFaceRsp.class, emu.grasscutter.net.proto.GCGDSChangeCardFaceRspOuterClass.GCGDSChangeCardFaceRsp.Builder.class);
     }
 
-    public static final int FACE_TYPE_FIELD_NUMBER = 8;
+    public static final int FACE_TYPE_FIELD_NUMBER = 9;
     private int faceType_;
     /**
-     * <code>uint32 face_type = 8;</code>
+     * <code>uint32 face_type = 9;</code>
      * @return The faceType.
      */
     @java.lang.Override
@@ -145,26 +149,26 @@ public final class GCGDSChangeCardFaceRspOuterClass {
       return faceType_;
     }
 
-    public static final int CARD_ID_FIELD_NUMBER = 4;
-    private int cardId_;
-    /**
-     * <code>uint32 card_id = 4;</code>
-     * @return The cardId.
-     */
-    @java.lang.Override
-    public int getCardId() {
-      return cardId_;
-    }
-
-    public static final int RETCODE_FIELD_NUMBER = 9;
+    public static final int RETCODE_FIELD_NUMBER = 5;
     private int retcode_;
     /**
-     * <code>int32 retcode = 9;</code>
+     * <code>int32 retcode = 5;</code>
      * @return The retcode.
      */
     @java.lang.Override
     public int getRetcode() {
       return retcode_;
+    }
+
+    public static final int CARD_ID_FIELD_NUMBER = 8;
+    private int cardId_;
+    /**
+     * <code>uint32 card_id = 8;</code>
+     * @return The cardId.
+     */
+    @java.lang.Override
+    public int getCardId() {
+      return cardId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -181,14 +185,14 @@ public final class GCGDSChangeCardFaceRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (retcode_ != 0) {
+        output.writeInt32(5, retcode_);
+      }
       if (cardId_ != 0) {
-        output.writeUInt32(4, cardId_);
+        output.writeUInt32(8, cardId_);
       }
       if (faceType_ != 0) {
-        output.writeUInt32(8, faceType_);
-      }
-      if (retcode_ != 0) {
-        output.writeInt32(9, retcode_);
+        output.writeUInt32(9, faceType_);
       }
       unknownFields.writeTo(output);
     }
@@ -199,17 +203,17 @@ public final class GCGDSChangeCardFaceRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (retcode_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(5, retcode_);
+      }
       if (cardId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, cardId_);
+          .computeUInt32Size(8, cardId_);
       }
       if (faceType_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, faceType_);
-      }
-      if (retcode_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(9, retcode_);
+          .computeUInt32Size(9, faceType_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -228,10 +232,10 @@ public final class GCGDSChangeCardFaceRspOuterClass {
 
       if (getFaceType()
           != other.getFaceType()) return false;
-      if (getCardId()
-          != other.getCardId()) return false;
       if (getRetcode()
           != other.getRetcode()) return false;
+      if (getCardId()
+          != other.getCardId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -245,10 +249,10 @@ public final class GCGDSChangeCardFaceRspOuterClass {
       hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + FACE_TYPE_FIELD_NUMBER;
       hash = (53 * hash) + getFaceType();
-      hash = (37 * hash) + CARD_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getCardId();
       hash = (37 * hash) + RETCODE_FIELD_NUMBER;
       hash = (53 * hash) + getRetcode();
+      hash = (37 * hash) + CARD_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getCardId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -346,9 +350,13 @@ public final class GCGDSChangeCardFaceRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 7331
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 7549;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code GCGDSChangeCardFaceRsp}
@@ -390,9 +398,9 @@ public final class GCGDSChangeCardFaceRspOuterClass {
         super.clear();
         faceType_ = 0;
 
-        cardId_ = 0;
-
         retcode_ = 0;
+
+        cardId_ = 0;
 
         return this;
       }
@@ -421,8 +429,8 @@ public final class GCGDSChangeCardFaceRspOuterClass {
       public emu.grasscutter.net.proto.GCGDSChangeCardFaceRspOuterClass.GCGDSChangeCardFaceRsp buildPartial() {
         emu.grasscutter.net.proto.GCGDSChangeCardFaceRspOuterClass.GCGDSChangeCardFaceRsp result = new emu.grasscutter.net.proto.GCGDSChangeCardFaceRspOuterClass.GCGDSChangeCardFaceRsp(this);
         result.faceType_ = faceType_;
-        result.cardId_ = cardId_;
         result.retcode_ = retcode_;
+        result.cardId_ = cardId_;
         onBuilt();
         return result;
       }
@@ -474,11 +482,11 @@ public final class GCGDSChangeCardFaceRspOuterClass {
         if (other.getFaceType() != 0) {
           setFaceType(other.getFaceType());
         }
-        if (other.getCardId() != 0) {
-          setCardId(other.getCardId());
-        }
         if (other.getRetcode() != 0) {
           setRetcode(other.getRetcode());
+        }
+        if (other.getCardId() != 0) {
+          setCardId(other.getCardId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -511,7 +519,7 @@ public final class GCGDSChangeCardFaceRspOuterClass {
 
       private int faceType_ ;
       /**
-       * <code>uint32 face_type = 8;</code>
+       * <code>uint32 face_type = 9;</code>
        * @return The faceType.
        */
       @java.lang.Override
@@ -519,7 +527,7 @@ public final class GCGDSChangeCardFaceRspOuterClass {
         return faceType_;
       }
       /**
-       * <code>uint32 face_type = 8;</code>
+       * <code>uint32 face_type = 9;</code>
        * @param value The faceType to set.
        * @return This builder for chaining.
        */
@@ -530,7 +538,7 @@ public final class GCGDSChangeCardFaceRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 face_type = 8;</code>
+       * <code>uint32 face_type = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearFaceType() {
@@ -540,40 +548,9 @@ public final class GCGDSChangeCardFaceRspOuterClass {
         return this;
       }
 
-      private int cardId_ ;
-      /**
-       * <code>uint32 card_id = 4;</code>
-       * @return The cardId.
-       */
-      @java.lang.Override
-      public int getCardId() {
-        return cardId_;
-      }
-      /**
-       * <code>uint32 card_id = 4;</code>
-       * @param value The cardId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setCardId(int value) {
-        
-        cardId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 card_id = 4;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearCardId() {
-        
-        cardId_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 9;</code>
+       * <code>int32 retcode = 5;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -581,7 +558,7 @@ public final class GCGDSChangeCardFaceRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 9;</code>
+       * <code>int32 retcode = 5;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -592,12 +569,43 @@ public final class GCGDSChangeCardFaceRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 9;</code>
+       * <code>int32 retcode = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
         
         retcode_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int cardId_ ;
+      /**
+       * <code>uint32 card_id = 8;</code>
+       * @return The cardId.
+       */
+      @java.lang.Override
+      public int getCardId() {
+        return cardId_;
+      }
+      /**
+       * <code>uint32 card_id = 8;</code>
+       * @param value The cardId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setCardId(int value) {
+        
+        cardId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 card_id = 8;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearCardId() {
+        
+        cardId_ = 0;
         onChanged();
         return this;
       }
@@ -669,8 +677,8 @@ public final class GCGDSChangeCardFaceRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\034GCGDSChangeCardFaceRsp.proto\"M\n\026GCGDSC" +
-      "hangeCardFaceRsp\022\021\n\tface_type\030\010 \001(\r\022\017\n\007c" +
-      "ard_id\030\004 \001(\r\022\017\n\007retcode\030\t \001(\005B\033\n\031emu.gra" +
+      "hangeCardFaceRsp\022\021\n\tface_type\030\t \001(\r\022\017\n\007r" +
+      "etcode\030\005 \001(\005\022\017\n\007card_id\030\010 \001(\rB\033\n\031emu.gra" +
       "sscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -682,7 +690,7 @@ public final class GCGDSChangeCardFaceRspOuterClass {
     internal_static_GCGDSChangeCardFaceRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GCGDSChangeCardFaceRsp_descriptor,
-        new java.lang.String[] { "FaceType", "CardId", "Retcode", });
+        new java.lang.String[] { "FaceType", "Retcode", "CardId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

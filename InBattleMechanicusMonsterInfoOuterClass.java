@@ -19,19 +19,19 @@ public final class InBattleMechanicusMonsterInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 monster_id = 1;</code>
-     * @return The monsterId.
-     */
-    int getMonsterId();
-
-    /**
-     * <code>uint32 level = 14;</code>
+     * <code>uint32 level = 10;</code>
      * @return The level.
      */
     int getLevel();
 
     /**
-     * <code>uint32 count = 13;</code>
+     * <code>uint32 monster_id = 8;</code>
+     * @return The monsterId.
+     */
+    int getMonsterId();
+
+    /**
+     * <code>uint32 count = 9;</code>
      * @return The count.
      */
     int getCount();
@@ -81,17 +81,17 @@ public final class InBattleMechanicusMonsterInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
+            case 64: {
 
               monsterId_ = input.readUInt32();
               break;
             }
-            case 104: {
+            case 72: {
 
               count_ = input.readUInt32();
               break;
             }
-            case 112: {
+            case 80: {
 
               level_ = input.readUInt32();
               break;
@@ -128,21 +128,10 @@ public final class InBattleMechanicusMonsterInfoOuterClass {
               emu.grasscutter.net.proto.InBattleMechanicusMonsterInfoOuterClass.InBattleMechanicusMonsterInfo.class, emu.grasscutter.net.proto.InBattleMechanicusMonsterInfoOuterClass.InBattleMechanicusMonsterInfo.Builder.class);
     }
 
-    public static final int MONSTER_ID_FIELD_NUMBER = 1;
-    private int monsterId_;
-    /**
-     * <code>uint32 monster_id = 1;</code>
-     * @return The monsterId.
-     */
-    @java.lang.Override
-    public int getMonsterId() {
-      return monsterId_;
-    }
-
-    public static final int LEVEL_FIELD_NUMBER = 14;
+    public static final int LEVEL_FIELD_NUMBER = 10;
     private int level_;
     /**
-     * <code>uint32 level = 14;</code>
+     * <code>uint32 level = 10;</code>
      * @return The level.
      */
     @java.lang.Override
@@ -150,10 +139,21 @@ public final class InBattleMechanicusMonsterInfoOuterClass {
       return level_;
     }
 
-    public static final int COUNT_FIELD_NUMBER = 13;
+    public static final int MONSTER_ID_FIELD_NUMBER = 8;
+    private int monsterId_;
+    /**
+     * <code>uint32 monster_id = 8;</code>
+     * @return The monsterId.
+     */
+    @java.lang.Override
+    public int getMonsterId() {
+      return monsterId_;
+    }
+
+    public static final int COUNT_FIELD_NUMBER = 9;
     private int count_;
     /**
-     * <code>uint32 count = 13;</code>
+     * <code>uint32 count = 9;</code>
      * @return The count.
      */
     @java.lang.Override
@@ -176,13 +176,13 @@ public final class InBattleMechanicusMonsterInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (monsterId_ != 0) {
-        output.writeUInt32(1, monsterId_);
+        output.writeUInt32(8, monsterId_);
       }
       if (count_ != 0) {
-        output.writeUInt32(13, count_);
+        output.writeUInt32(9, count_);
       }
       if (level_ != 0) {
-        output.writeUInt32(14, level_);
+        output.writeUInt32(10, level_);
       }
       unknownFields.writeTo(output);
     }
@@ -195,15 +195,15 @@ public final class InBattleMechanicusMonsterInfoOuterClass {
       size = 0;
       if (monsterId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, monsterId_);
+          .computeUInt32Size(8, monsterId_);
       }
       if (count_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, count_);
+          .computeUInt32Size(9, count_);
       }
       if (level_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, level_);
+          .computeUInt32Size(10, level_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -220,10 +220,10 @@ public final class InBattleMechanicusMonsterInfoOuterClass {
       }
       emu.grasscutter.net.proto.InBattleMechanicusMonsterInfoOuterClass.InBattleMechanicusMonsterInfo other = (emu.grasscutter.net.proto.InBattleMechanicusMonsterInfoOuterClass.InBattleMechanicusMonsterInfo) obj;
 
-      if (getMonsterId()
-          != other.getMonsterId()) return false;
       if (getLevel()
           != other.getLevel()) return false;
+      if (getMonsterId()
+          != other.getMonsterId()) return false;
       if (getCount()
           != other.getCount()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
@@ -237,10 +237,10 @@ public final class InBattleMechanicusMonsterInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + MONSTER_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getMonsterId();
       hash = (37 * hash) + LEVEL_FIELD_NUMBER;
       hash = (53 * hash) + getLevel();
+      hash = (37 * hash) + MONSTER_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getMonsterId();
       hash = (37 * hash) + COUNT_FIELD_NUMBER;
       hash = (53 * hash) + getCount();
       hash = (29 * hash) + unknownFields.hashCode();
@@ -376,9 +376,9 @@ public final class InBattleMechanicusMonsterInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        monsterId_ = 0;
-
         level_ = 0;
+
+        monsterId_ = 0;
 
         count_ = 0;
 
@@ -408,8 +408,8 @@ public final class InBattleMechanicusMonsterInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.InBattleMechanicusMonsterInfoOuterClass.InBattleMechanicusMonsterInfo buildPartial() {
         emu.grasscutter.net.proto.InBattleMechanicusMonsterInfoOuterClass.InBattleMechanicusMonsterInfo result = new emu.grasscutter.net.proto.InBattleMechanicusMonsterInfoOuterClass.InBattleMechanicusMonsterInfo(this);
-        result.monsterId_ = monsterId_;
         result.level_ = level_;
+        result.monsterId_ = monsterId_;
         result.count_ = count_;
         onBuilt();
         return result;
@@ -459,11 +459,11 @@ public final class InBattleMechanicusMonsterInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.InBattleMechanicusMonsterInfoOuterClass.InBattleMechanicusMonsterInfo other) {
         if (other == emu.grasscutter.net.proto.InBattleMechanicusMonsterInfoOuterClass.InBattleMechanicusMonsterInfo.getDefaultInstance()) return this;
-        if (other.getMonsterId() != 0) {
-          setMonsterId(other.getMonsterId());
-        }
         if (other.getLevel() != 0) {
           setLevel(other.getLevel());
+        }
+        if (other.getMonsterId() != 0) {
+          setMonsterId(other.getMonsterId());
         }
         if (other.getCount() != 0) {
           setCount(other.getCount());
@@ -497,40 +497,9 @@ public final class InBattleMechanicusMonsterInfoOuterClass {
         return this;
       }
 
-      private int monsterId_ ;
-      /**
-       * <code>uint32 monster_id = 1;</code>
-       * @return The monsterId.
-       */
-      @java.lang.Override
-      public int getMonsterId() {
-        return monsterId_;
-      }
-      /**
-       * <code>uint32 monster_id = 1;</code>
-       * @param value The monsterId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setMonsterId(int value) {
-        
-        monsterId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 monster_id = 1;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearMonsterId() {
-        
-        monsterId_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int level_ ;
       /**
-       * <code>uint32 level = 14;</code>
+       * <code>uint32 level = 10;</code>
        * @return The level.
        */
       @java.lang.Override
@@ -538,7 +507,7 @@ public final class InBattleMechanicusMonsterInfoOuterClass {
         return level_;
       }
       /**
-       * <code>uint32 level = 14;</code>
+       * <code>uint32 level = 10;</code>
        * @param value The level to set.
        * @return This builder for chaining.
        */
@@ -549,7 +518,7 @@ public final class InBattleMechanicusMonsterInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 level = 14;</code>
+       * <code>uint32 level = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearLevel() {
@@ -559,9 +528,40 @@ public final class InBattleMechanicusMonsterInfoOuterClass {
         return this;
       }
 
+      private int monsterId_ ;
+      /**
+       * <code>uint32 monster_id = 8;</code>
+       * @return The monsterId.
+       */
+      @java.lang.Override
+      public int getMonsterId() {
+        return monsterId_;
+      }
+      /**
+       * <code>uint32 monster_id = 8;</code>
+       * @param value The monsterId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setMonsterId(int value) {
+        
+        monsterId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 monster_id = 8;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearMonsterId() {
+        
+        monsterId_ = 0;
+        onChanged();
+        return this;
+      }
+
       private int count_ ;
       /**
-       * <code>uint32 count = 13;</code>
+       * <code>uint32 count = 9;</code>
        * @return The count.
        */
       @java.lang.Override
@@ -569,7 +569,7 @@ public final class InBattleMechanicusMonsterInfoOuterClass {
         return count_;
       }
       /**
-       * <code>uint32 count = 13;</code>
+       * <code>uint32 count = 9;</code>
        * @param value The count to set.
        * @return This builder for chaining.
        */
@@ -580,7 +580,7 @@ public final class InBattleMechanicusMonsterInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 count = 13;</code>
+       * <code>uint32 count = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearCount() {
@@ -657,8 +657,8 @@ public final class InBattleMechanicusMonsterInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n#InBattleMechanicusMonsterInfo.proto\"Q\n" +
-      "\035InBattleMechanicusMonsterInfo\022\022\n\nmonste" +
-      "r_id\030\001 \001(\r\022\r\n\005level\030\016 \001(\r\022\r\n\005count\030\r \001(\r" +
+      "\035InBattleMechanicusMonsterInfo\022\r\n\005level\030" +
+      "\n \001(\r\022\022\n\nmonster_id\030\010 \001(\r\022\r\n\005count\030\t \001(\r" +
       "B\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -670,7 +670,7 @@ public final class InBattleMechanicusMonsterInfoOuterClass {
     internal_static_InBattleMechanicusMonsterInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_InBattleMechanicusMonsterInfo_descriptor,
-        new java.lang.String[] { "MonsterId", "Level", "Count", });
+        new java.lang.String[] { "Level", "MonsterId", "Count", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

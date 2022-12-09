@@ -19,16 +19,16 @@ public final class GallerySumoKillMonsterNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 kill_normal_mosnter_num = 4;</code>
-     * @return The killNormalMosnterNum.
-     */
-    int getKillNormalMosnterNum();
-
-    /**
-     * <code>uint32 score = 7;</code>
+     * <code>uint32 score = 6;</code>
      * @return The score.
      */
     int getScore();
+
+    /**
+     * <code>uint32 gallery_id = 11;</code>
+     * @return The galleryId.
+     */
+    int getGalleryId();
 
     /**
      * <code>uint32 kill_elite_monster_num = 14;</code>
@@ -37,16 +37,20 @@ public final class GallerySumoKillMonsterNotifyOuterClass {
     int getKillEliteMonsterNum();
 
     /**
-     * <code>uint32 gallery_id = 11;</code>
-     * @return The galleryId.
+     * <code>uint32 kill_normal_monster_num = 4;</code>
+     * @return The killNormalMonsterNum.
      */
-    int getGalleryId();
+    int getKillNormalMonsterNum();
   }
   /**
    * <pre>
-   * CmdId: 5582
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 5590;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code GallerySumoKillMonsterNotify}
@@ -95,10 +99,10 @@ public final class GallerySumoKillMonsterNotifyOuterClass {
               break;
             case 32: {
 
-              killNormalMosnterNum_ = input.readUInt32();
+              killNormalMonsterNum_ = input.readUInt32();
               break;
             }
-            case 56: {
+            case 48: {
 
               score_ = input.readUInt32();
               break;
@@ -145,26 +149,26 @@ public final class GallerySumoKillMonsterNotifyOuterClass {
               emu.grasscutter.net.proto.GallerySumoKillMonsterNotifyOuterClass.GallerySumoKillMonsterNotify.class, emu.grasscutter.net.proto.GallerySumoKillMonsterNotifyOuterClass.GallerySumoKillMonsterNotify.Builder.class);
     }
 
-    public static final int KILL_NORMAL_MOSNTER_NUM_FIELD_NUMBER = 4;
-    private int killNormalMosnterNum_;
-    /**
-     * <code>uint32 kill_normal_mosnter_num = 4;</code>
-     * @return The killNormalMosnterNum.
-     */
-    @java.lang.Override
-    public int getKillNormalMosnterNum() {
-      return killNormalMosnterNum_;
-    }
-
-    public static final int SCORE_FIELD_NUMBER = 7;
+    public static final int SCORE_FIELD_NUMBER = 6;
     private int score_;
     /**
-     * <code>uint32 score = 7;</code>
+     * <code>uint32 score = 6;</code>
      * @return The score.
      */
     @java.lang.Override
     public int getScore() {
       return score_;
+    }
+
+    public static final int GALLERY_ID_FIELD_NUMBER = 11;
+    private int galleryId_;
+    /**
+     * <code>uint32 gallery_id = 11;</code>
+     * @return The galleryId.
+     */
+    @java.lang.Override
+    public int getGalleryId() {
+      return galleryId_;
     }
 
     public static final int KILL_ELITE_MONSTER_NUM_FIELD_NUMBER = 14;
@@ -178,15 +182,15 @@ public final class GallerySumoKillMonsterNotifyOuterClass {
       return killEliteMonsterNum_;
     }
 
-    public static final int GALLERY_ID_FIELD_NUMBER = 11;
-    private int galleryId_;
+    public static final int KILL_NORMAL_MONSTER_NUM_FIELD_NUMBER = 4;
+    private int killNormalMonsterNum_;
     /**
-     * <code>uint32 gallery_id = 11;</code>
-     * @return The galleryId.
+     * <code>uint32 kill_normal_monster_num = 4;</code>
+     * @return The killNormalMonsterNum.
      */
     @java.lang.Override
-    public int getGalleryId() {
-      return galleryId_;
+    public int getKillNormalMonsterNum() {
+      return killNormalMonsterNum_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -203,11 +207,11 @@ public final class GallerySumoKillMonsterNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (killNormalMosnterNum_ != 0) {
-        output.writeUInt32(4, killNormalMosnterNum_);
+      if (killNormalMonsterNum_ != 0) {
+        output.writeUInt32(4, killNormalMonsterNum_);
       }
       if (score_ != 0) {
-        output.writeUInt32(7, score_);
+        output.writeUInt32(6, score_);
       }
       if (galleryId_ != 0) {
         output.writeUInt32(11, galleryId_);
@@ -224,13 +228,13 @@ public final class GallerySumoKillMonsterNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (killNormalMosnterNum_ != 0) {
+      if (killNormalMonsterNum_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, killNormalMosnterNum_);
+          .computeUInt32Size(4, killNormalMonsterNum_);
       }
       if (score_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, score_);
+          .computeUInt32Size(6, score_);
       }
       if (galleryId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
@@ -255,14 +259,14 @@ public final class GallerySumoKillMonsterNotifyOuterClass {
       }
       emu.grasscutter.net.proto.GallerySumoKillMonsterNotifyOuterClass.GallerySumoKillMonsterNotify other = (emu.grasscutter.net.proto.GallerySumoKillMonsterNotifyOuterClass.GallerySumoKillMonsterNotify) obj;
 
-      if (getKillNormalMosnterNum()
-          != other.getKillNormalMosnterNum()) return false;
       if (getScore()
           != other.getScore()) return false;
-      if (getKillEliteMonsterNum()
-          != other.getKillEliteMonsterNum()) return false;
       if (getGalleryId()
           != other.getGalleryId()) return false;
+      if (getKillEliteMonsterNum()
+          != other.getKillEliteMonsterNum()) return false;
+      if (getKillNormalMonsterNum()
+          != other.getKillNormalMonsterNum()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -274,14 +278,14 @@ public final class GallerySumoKillMonsterNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + KILL_NORMAL_MOSNTER_NUM_FIELD_NUMBER;
-      hash = (53 * hash) + getKillNormalMosnterNum();
       hash = (37 * hash) + SCORE_FIELD_NUMBER;
       hash = (53 * hash) + getScore();
-      hash = (37 * hash) + KILL_ELITE_MONSTER_NUM_FIELD_NUMBER;
-      hash = (53 * hash) + getKillEliteMonsterNum();
       hash = (37 * hash) + GALLERY_ID_FIELD_NUMBER;
       hash = (53 * hash) + getGalleryId();
+      hash = (37 * hash) + KILL_ELITE_MONSTER_NUM_FIELD_NUMBER;
+      hash = (53 * hash) + getKillEliteMonsterNum();
+      hash = (37 * hash) + KILL_NORMAL_MONSTER_NUM_FIELD_NUMBER;
+      hash = (53 * hash) + getKillNormalMonsterNum();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -379,9 +383,13 @@ public final class GallerySumoKillMonsterNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 5582
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 5590;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code GallerySumoKillMonsterNotify}
@@ -421,13 +429,13 @@ public final class GallerySumoKillMonsterNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        killNormalMosnterNum_ = 0;
-
         score_ = 0;
+
+        galleryId_ = 0;
 
         killEliteMonsterNum_ = 0;
 
-        galleryId_ = 0;
+        killNormalMonsterNum_ = 0;
 
         return this;
       }
@@ -455,10 +463,10 @@ public final class GallerySumoKillMonsterNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.GallerySumoKillMonsterNotifyOuterClass.GallerySumoKillMonsterNotify buildPartial() {
         emu.grasscutter.net.proto.GallerySumoKillMonsterNotifyOuterClass.GallerySumoKillMonsterNotify result = new emu.grasscutter.net.proto.GallerySumoKillMonsterNotifyOuterClass.GallerySumoKillMonsterNotify(this);
-        result.killNormalMosnterNum_ = killNormalMosnterNum_;
         result.score_ = score_;
-        result.killEliteMonsterNum_ = killEliteMonsterNum_;
         result.galleryId_ = galleryId_;
+        result.killEliteMonsterNum_ = killEliteMonsterNum_;
+        result.killNormalMonsterNum_ = killNormalMonsterNum_;
         onBuilt();
         return result;
       }
@@ -507,17 +515,17 @@ public final class GallerySumoKillMonsterNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.GallerySumoKillMonsterNotifyOuterClass.GallerySumoKillMonsterNotify other) {
         if (other == emu.grasscutter.net.proto.GallerySumoKillMonsterNotifyOuterClass.GallerySumoKillMonsterNotify.getDefaultInstance()) return this;
-        if (other.getKillNormalMosnterNum() != 0) {
-          setKillNormalMosnterNum(other.getKillNormalMosnterNum());
-        }
         if (other.getScore() != 0) {
           setScore(other.getScore());
+        }
+        if (other.getGalleryId() != 0) {
+          setGalleryId(other.getGalleryId());
         }
         if (other.getKillEliteMonsterNum() != 0) {
           setKillEliteMonsterNum(other.getKillEliteMonsterNum());
         }
-        if (other.getGalleryId() != 0) {
-          setGalleryId(other.getGalleryId());
+        if (other.getKillNormalMonsterNum() != 0) {
+          setKillNormalMonsterNum(other.getKillNormalMonsterNum());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -548,40 +556,9 @@ public final class GallerySumoKillMonsterNotifyOuterClass {
         return this;
       }
 
-      private int killNormalMosnterNum_ ;
-      /**
-       * <code>uint32 kill_normal_mosnter_num = 4;</code>
-       * @return The killNormalMosnterNum.
-       */
-      @java.lang.Override
-      public int getKillNormalMosnterNum() {
-        return killNormalMosnterNum_;
-      }
-      /**
-       * <code>uint32 kill_normal_mosnter_num = 4;</code>
-       * @param value The killNormalMosnterNum to set.
-       * @return This builder for chaining.
-       */
-      public Builder setKillNormalMosnterNum(int value) {
-        
-        killNormalMosnterNum_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 kill_normal_mosnter_num = 4;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearKillNormalMosnterNum() {
-        
-        killNormalMosnterNum_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int score_ ;
       /**
-       * <code>uint32 score = 7;</code>
+       * <code>uint32 score = 6;</code>
        * @return The score.
        */
       @java.lang.Override
@@ -589,7 +566,7 @@ public final class GallerySumoKillMonsterNotifyOuterClass {
         return score_;
       }
       /**
-       * <code>uint32 score = 7;</code>
+       * <code>uint32 score = 6;</code>
        * @param value The score to set.
        * @return This builder for chaining.
        */
@@ -600,12 +577,43 @@ public final class GallerySumoKillMonsterNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 score = 7;</code>
+       * <code>uint32 score = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearScore() {
         
         score_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int galleryId_ ;
+      /**
+       * <code>uint32 gallery_id = 11;</code>
+       * @return The galleryId.
+       */
+      @java.lang.Override
+      public int getGalleryId() {
+        return galleryId_;
+      }
+      /**
+       * <code>uint32 gallery_id = 11;</code>
+       * @param value The galleryId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setGalleryId(int value) {
+        
+        galleryId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 gallery_id = 11;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearGalleryId() {
+        
+        galleryId_ = 0;
         onChanged();
         return this;
       }
@@ -641,33 +649,33 @@ public final class GallerySumoKillMonsterNotifyOuterClass {
         return this;
       }
 
-      private int galleryId_ ;
+      private int killNormalMonsterNum_ ;
       /**
-       * <code>uint32 gallery_id = 11;</code>
-       * @return The galleryId.
+       * <code>uint32 kill_normal_monster_num = 4;</code>
+       * @return The killNormalMonsterNum.
        */
       @java.lang.Override
-      public int getGalleryId() {
-        return galleryId_;
+      public int getKillNormalMonsterNum() {
+        return killNormalMonsterNum_;
       }
       /**
-       * <code>uint32 gallery_id = 11;</code>
-       * @param value The galleryId to set.
+       * <code>uint32 kill_normal_monster_num = 4;</code>
+       * @param value The killNormalMonsterNum to set.
        * @return This builder for chaining.
        */
-      public Builder setGalleryId(int value) {
+      public Builder setKillNormalMonsterNum(int value) {
         
-        galleryId_ = value;
+        killNormalMonsterNum_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 gallery_id = 11;</code>
+       * <code>uint32 kill_normal_monster_num = 4;</code>
        * @return This builder for chaining.
        */
-      public Builder clearGalleryId() {
+      public Builder clearKillNormalMonsterNum() {
         
-        galleryId_ = 0;
+        killNormalMonsterNum_ = 0;
         onChanged();
         return this;
       }
@@ -739,10 +747,10 @@ public final class GallerySumoKillMonsterNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\"GallerySumoKillMonsterNotify.proto\"\202\001\n" +
-      "\034GallerySumoKillMonsterNotify\022\037\n\027kill_no" +
-      "rmal_mosnter_num\030\004 \001(\r\022\r\n\005score\030\007 \001(\r\022\036\n" +
-      "\026kill_elite_monster_num\030\016 \001(\r\022\022\n\ngallery" +
-      "_id\030\013 \001(\rB\033\n\031emu.grasscutter.net.protob\006" +
+      "\034GallerySumoKillMonsterNotify\022\r\n\005score\030\006" +
+      " \001(\r\022\022\n\ngallery_id\030\013 \001(\r\022\036\n\026kill_elite_m" +
+      "onster_num\030\016 \001(\r\022\037\n\027kill_normal_monster_" +
+      "num\030\004 \001(\rB\033\n\031emu.grasscutter.net.protob\006" +
       "proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -754,7 +762,7 @@ public final class GallerySumoKillMonsterNotifyOuterClass {
     internal_static_GallerySumoKillMonsterNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GallerySumoKillMonsterNotify_descriptor,
-        new java.lang.String[] { "KillNormalMosnterNum", "Score", "KillEliteMonsterNum", "GalleryId", });
+        new java.lang.String[] { "Score", "GalleryId", "KillEliteMonsterNum", "KillNormalMonsterNum", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

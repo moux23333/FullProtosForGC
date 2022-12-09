@@ -19,17 +19,21 @@ public final class GetQuestLackingResourceReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 quest_id = 4;</code>
+     * <code>uint32 quest_id = 13;</code>
      * @return The questId.
      */
     int getQuestId();
   }
   /**
    * <pre>
-   * CmdId: 467
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 453;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code GetQuestLackingResourceReq}
@@ -76,7 +80,7 @@ public final class GetQuestLackingResourceReqOuterClass {
             case 0:
               done = true;
               break;
-            case 32: {
+            case 104: {
 
               questId_ = input.readUInt32();
               break;
@@ -113,10 +117,10 @@ public final class GetQuestLackingResourceReqOuterClass {
               emu.grasscutter.net.proto.GetQuestLackingResourceReqOuterClass.GetQuestLackingResourceReq.class, emu.grasscutter.net.proto.GetQuestLackingResourceReqOuterClass.GetQuestLackingResourceReq.Builder.class);
     }
 
-    public static final int QUEST_ID_FIELD_NUMBER = 4;
+    public static final int QUEST_ID_FIELD_NUMBER = 13;
     private int questId_;
     /**
-     * <code>uint32 quest_id = 4;</code>
+     * <code>uint32 quest_id = 13;</code>
      * @return The questId.
      */
     @java.lang.Override
@@ -139,7 +143,7 @@ public final class GetQuestLackingResourceReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (questId_ != 0) {
-        output.writeUInt32(4, questId_);
+        output.writeUInt32(13, questId_);
       }
       unknownFields.writeTo(output);
     }
@@ -152,7 +156,7 @@ public final class GetQuestLackingResourceReqOuterClass {
       size = 0;
       if (questId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, questId_);
+          .computeUInt32Size(13, questId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -281,10 +285,14 @@ public final class GetQuestLackingResourceReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 467
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 453;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code GetQuestLackingResourceReq}
@@ -435,7 +443,7 @@ public final class GetQuestLackingResourceReqOuterClass {
 
       private int questId_ ;
       /**
-       * <code>uint32 quest_id = 4;</code>
+       * <code>uint32 quest_id = 13;</code>
        * @return The questId.
        */
       @java.lang.Override
@@ -443,7 +451,7 @@ public final class GetQuestLackingResourceReqOuterClass {
         return questId_;
       }
       /**
-       * <code>uint32 quest_id = 4;</code>
+       * <code>uint32 quest_id = 13;</code>
        * @param value The questId to set.
        * @return This builder for chaining.
        */
@@ -454,7 +462,7 @@ public final class GetQuestLackingResourceReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 quest_id = 4;</code>
+       * <code>uint32 quest_id = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearQuestId() {
@@ -531,7 +539,7 @@ public final class GetQuestLackingResourceReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n GetQuestLackingResourceReq.proto\".\n\032Ge" +
-      "tQuestLackingResourceReq\022\020\n\010quest_id\030\004 \001" +
+      "tQuestLackingResourceReq\022\020\n\010quest_id\030\r \001" +
       "(\rB\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

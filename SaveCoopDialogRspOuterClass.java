@@ -19,28 +19,32 @@ public final class SaveCoopDialogRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 dialog_id = 8;</code>
-     * @return The dialogId.
-     */
-    int getDialogId();
-
-    /**
-     * <code>uint32 main_coop_id = 10;</code>
-     * @return The mainCoopId.
-     */
-    int getMainCoopId();
-
-    /**
-     * <code>int32 retcode = 7;</code>
+     * <code>int32 retcode = 5;</code>
      * @return The retcode.
      */
     int getRetcode();
+
+    /**
+     * <code>uint32 Unk3300_AMKDDJEPAKM = 15;</code>
+     * @return The unk3300AMKDDJEPAKM.
+     */
+    int getUnk3300AMKDDJEPAKM();
+
+    /**
+     * <code>uint32 Unk3300_KMBGNIICNAF = 9;</code>
+     * @return The unk3300KMBGNIICNAF.
+     */
+    int getUnk3300KMBGNIICNAF();
   }
   /**
    * <pre>
-   * CmdId: 1962
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 1960;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code SaveCoopDialogRsp}
@@ -87,19 +91,19 @@ public final class SaveCoopDialogRspOuterClass {
             case 0:
               done = true;
               break;
-            case 56: {
+            case 40: {
 
               retcode_ = input.readInt32();
               break;
             }
-            case 64: {
+            case 72: {
 
-              dialogId_ = input.readUInt32();
+              unk3300KMBGNIICNAF_ = input.readUInt32();
               break;
             }
-            case 80: {
+            case 120: {
 
-              mainCoopId_ = input.readUInt32();
+              unk3300AMKDDJEPAKM_ = input.readUInt32();
               break;
             }
             default: {
@@ -134,37 +138,37 @@ public final class SaveCoopDialogRspOuterClass {
               emu.grasscutter.net.proto.SaveCoopDialogRspOuterClass.SaveCoopDialogRsp.class, emu.grasscutter.net.proto.SaveCoopDialogRspOuterClass.SaveCoopDialogRsp.Builder.class);
     }
 
-    public static final int DIALOG_ID_FIELD_NUMBER = 8;
-    private int dialogId_;
-    /**
-     * <code>uint32 dialog_id = 8;</code>
-     * @return The dialogId.
-     */
-    @java.lang.Override
-    public int getDialogId() {
-      return dialogId_;
-    }
-
-    public static final int MAIN_COOP_ID_FIELD_NUMBER = 10;
-    private int mainCoopId_;
-    /**
-     * <code>uint32 main_coop_id = 10;</code>
-     * @return The mainCoopId.
-     */
-    @java.lang.Override
-    public int getMainCoopId() {
-      return mainCoopId_;
-    }
-
-    public static final int RETCODE_FIELD_NUMBER = 7;
+    public static final int RETCODE_FIELD_NUMBER = 5;
     private int retcode_;
     /**
-     * <code>int32 retcode = 7;</code>
+     * <code>int32 retcode = 5;</code>
      * @return The retcode.
      */
     @java.lang.Override
     public int getRetcode() {
       return retcode_;
+    }
+
+    public static final int UNK3300_AMKDDJEPAKM_FIELD_NUMBER = 15;
+    private int unk3300AMKDDJEPAKM_;
+    /**
+     * <code>uint32 Unk3300_AMKDDJEPAKM = 15;</code>
+     * @return The unk3300AMKDDJEPAKM.
+     */
+    @java.lang.Override
+    public int getUnk3300AMKDDJEPAKM() {
+      return unk3300AMKDDJEPAKM_;
+    }
+
+    public static final int UNK3300_KMBGNIICNAF_FIELD_NUMBER = 9;
+    private int unk3300KMBGNIICNAF_;
+    /**
+     * <code>uint32 Unk3300_KMBGNIICNAF = 9;</code>
+     * @return The unk3300KMBGNIICNAF.
+     */
+    @java.lang.Override
+    public int getUnk3300KMBGNIICNAF() {
+      return unk3300KMBGNIICNAF_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -182,13 +186,13 @@ public final class SaveCoopDialogRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (retcode_ != 0) {
-        output.writeInt32(7, retcode_);
+        output.writeInt32(5, retcode_);
       }
-      if (dialogId_ != 0) {
-        output.writeUInt32(8, dialogId_);
+      if (unk3300KMBGNIICNAF_ != 0) {
+        output.writeUInt32(9, unk3300KMBGNIICNAF_);
       }
-      if (mainCoopId_ != 0) {
-        output.writeUInt32(10, mainCoopId_);
+      if (unk3300AMKDDJEPAKM_ != 0) {
+        output.writeUInt32(15, unk3300AMKDDJEPAKM_);
       }
       unknownFields.writeTo(output);
     }
@@ -201,15 +205,15 @@ public final class SaveCoopDialogRspOuterClass {
       size = 0;
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(7, retcode_);
+          .computeInt32Size(5, retcode_);
       }
-      if (dialogId_ != 0) {
+      if (unk3300KMBGNIICNAF_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, dialogId_);
+          .computeUInt32Size(9, unk3300KMBGNIICNAF_);
       }
-      if (mainCoopId_ != 0) {
+      if (unk3300AMKDDJEPAKM_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, mainCoopId_);
+          .computeUInt32Size(15, unk3300AMKDDJEPAKM_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -226,12 +230,12 @@ public final class SaveCoopDialogRspOuterClass {
       }
       emu.grasscutter.net.proto.SaveCoopDialogRspOuterClass.SaveCoopDialogRsp other = (emu.grasscutter.net.proto.SaveCoopDialogRspOuterClass.SaveCoopDialogRsp) obj;
 
-      if (getDialogId()
-          != other.getDialogId()) return false;
-      if (getMainCoopId()
-          != other.getMainCoopId()) return false;
       if (getRetcode()
           != other.getRetcode()) return false;
+      if (getUnk3300AMKDDJEPAKM()
+          != other.getUnk3300AMKDDJEPAKM()) return false;
+      if (getUnk3300KMBGNIICNAF()
+          != other.getUnk3300KMBGNIICNAF()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -243,12 +247,12 @@ public final class SaveCoopDialogRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + DIALOG_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getDialogId();
-      hash = (37 * hash) + MAIN_COOP_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getMainCoopId();
       hash = (37 * hash) + RETCODE_FIELD_NUMBER;
       hash = (53 * hash) + getRetcode();
+      hash = (37 * hash) + UNK3300_AMKDDJEPAKM_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300AMKDDJEPAKM();
+      hash = (37 * hash) + UNK3300_KMBGNIICNAF_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300KMBGNIICNAF();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -346,9 +350,13 @@ public final class SaveCoopDialogRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 1962
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 1960;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code SaveCoopDialogRsp}
@@ -388,11 +396,11 @@ public final class SaveCoopDialogRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        dialogId_ = 0;
-
-        mainCoopId_ = 0;
-
         retcode_ = 0;
+
+        unk3300AMKDDJEPAKM_ = 0;
+
+        unk3300KMBGNIICNAF_ = 0;
 
         return this;
       }
@@ -420,9 +428,9 @@ public final class SaveCoopDialogRspOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.SaveCoopDialogRspOuterClass.SaveCoopDialogRsp buildPartial() {
         emu.grasscutter.net.proto.SaveCoopDialogRspOuterClass.SaveCoopDialogRsp result = new emu.grasscutter.net.proto.SaveCoopDialogRspOuterClass.SaveCoopDialogRsp(this);
-        result.dialogId_ = dialogId_;
-        result.mainCoopId_ = mainCoopId_;
         result.retcode_ = retcode_;
+        result.unk3300AMKDDJEPAKM_ = unk3300AMKDDJEPAKM_;
+        result.unk3300KMBGNIICNAF_ = unk3300KMBGNIICNAF_;
         onBuilt();
         return result;
       }
@@ -471,14 +479,14 @@ public final class SaveCoopDialogRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.SaveCoopDialogRspOuterClass.SaveCoopDialogRsp other) {
         if (other == emu.grasscutter.net.proto.SaveCoopDialogRspOuterClass.SaveCoopDialogRsp.getDefaultInstance()) return this;
-        if (other.getDialogId() != 0) {
-          setDialogId(other.getDialogId());
-        }
-        if (other.getMainCoopId() != 0) {
-          setMainCoopId(other.getMainCoopId());
-        }
         if (other.getRetcode() != 0) {
           setRetcode(other.getRetcode());
+        }
+        if (other.getUnk3300AMKDDJEPAKM() != 0) {
+          setUnk3300AMKDDJEPAKM(other.getUnk3300AMKDDJEPAKM());
+        }
+        if (other.getUnk3300KMBGNIICNAF() != 0) {
+          setUnk3300KMBGNIICNAF(other.getUnk3300KMBGNIICNAF());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -509,71 +517,9 @@ public final class SaveCoopDialogRspOuterClass {
         return this;
       }
 
-      private int dialogId_ ;
-      /**
-       * <code>uint32 dialog_id = 8;</code>
-       * @return The dialogId.
-       */
-      @java.lang.Override
-      public int getDialogId() {
-        return dialogId_;
-      }
-      /**
-       * <code>uint32 dialog_id = 8;</code>
-       * @param value The dialogId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setDialogId(int value) {
-        
-        dialogId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 dialog_id = 8;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearDialogId() {
-        
-        dialogId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int mainCoopId_ ;
-      /**
-       * <code>uint32 main_coop_id = 10;</code>
-       * @return The mainCoopId.
-       */
-      @java.lang.Override
-      public int getMainCoopId() {
-        return mainCoopId_;
-      }
-      /**
-       * <code>uint32 main_coop_id = 10;</code>
-       * @param value The mainCoopId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setMainCoopId(int value) {
-        
-        mainCoopId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 main_coop_id = 10;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearMainCoopId() {
-        
-        mainCoopId_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 7;</code>
+       * <code>int32 retcode = 5;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -581,7 +527,7 @@ public final class SaveCoopDialogRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 7;</code>
+       * <code>int32 retcode = 5;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -592,12 +538,74 @@ public final class SaveCoopDialogRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 7;</code>
+       * <code>int32 retcode = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
         
         retcode_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int unk3300AMKDDJEPAKM_ ;
+      /**
+       * <code>uint32 Unk3300_AMKDDJEPAKM = 15;</code>
+       * @return The unk3300AMKDDJEPAKM.
+       */
+      @java.lang.Override
+      public int getUnk3300AMKDDJEPAKM() {
+        return unk3300AMKDDJEPAKM_;
+      }
+      /**
+       * <code>uint32 Unk3300_AMKDDJEPAKM = 15;</code>
+       * @param value The unk3300AMKDDJEPAKM to set.
+       * @return This builder for chaining.
+       */
+      public Builder setUnk3300AMKDDJEPAKM(int value) {
+        
+        unk3300AMKDDJEPAKM_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 Unk3300_AMKDDJEPAKM = 15;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearUnk3300AMKDDJEPAKM() {
+        
+        unk3300AMKDDJEPAKM_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int unk3300KMBGNIICNAF_ ;
+      /**
+       * <code>uint32 Unk3300_KMBGNIICNAF = 9;</code>
+       * @return The unk3300KMBGNIICNAF.
+       */
+      @java.lang.Override
+      public int getUnk3300KMBGNIICNAF() {
+        return unk3300KMBGNIICNAF_;
+      }
+      /**
+       * <code>uint32 Unk3300_KMBGNIICNAF = 9;</code>
+       * @param value The unk3300KMBGNIICNAF to set.
+       * @return This builder for chaining.
+       */
+      public Builder setUnk3300KMBGNIICNAF(int value) {
+        
+        unk3300KMBGNIICNAF_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 Unk3300_KMBGNIICNAF = 9;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearUnk3300KMBGNIICNAF() {
+        
+        unk3300KMBGNIICNAF_ = 0;
         onChanged();
         return this;
       }
@@ -668,10 +676,10 @@ public final class SaveCoopDialogRspOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\027SaveCoopDialogRsp.proto\"M\n\021SaveCoopDia" +
-      "logRsp\022\021\n\tdialog_id\030\010 \001(\r\022\024\n\014main_coop_i" +
-      "d\030\n \001(\r\022\017\n\007retcode\030\007 \001(\005B\033\n\031emu.grasscut" +
-      "ter.net.protob\006proto3"
+      "\n\027SaveCoopDialogRsp.proto\"^\n\021SaveCoopDia" +
+      "logRsp\022\017\n\007retcode\030\005 \001(\005\022\033\n\023Unk3300_AMKDD" +
+      "JEPAKM\030\017 \001(\r\022\033\n\023Unk3300_KMBGNIICNAF\030\t \001(" +
+      "\rB\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -682,7 +690,7 @@ public final class SaveCoopDialogRspOuterClass {
     internal_static_SaveCoopDialogRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SaveCoopDialogRsp_descriptor,
-        new java.lang.String[] { "DialogId", "MainCoopId", "Retcode", });
+        new java.lang.String[] { "Retcode", "Unk3300AMKDDJEPAKM", "Unk3300KMBGNIICNAF", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

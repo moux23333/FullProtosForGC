@@ -19,33 +19,33 @@ public final class HomePreviewBlueprintRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.HomeSceneArrangementInfo scene_arrangement_info = 12;</code>
-     * @return Whether the sceneArrangementInfo field is set.
-     */
-    boolean hasSceneArrangementInfo();
-    /**
-     * <code>.HomeSceneArrangementInfo scene_arrangement_info = 12;</code>
-     * @return The sceneArrangementInfo.
-     */
-    emu.grasscutter.net.proto.HomeSceneArrangementInfoOuterClass.HomeSceneArrangementInfo getSceneArrangementInfo();
-    /**
-     * <code>.HomeSceneArrangementInfo scene_arrangement_info = 12;</code>
-     */
-    emu.grasscutter.net.proto.HomeSceneArrangementInfoOuterClass.HomeSceneArrangementInfoOrBuilder getSceneArrangementInfoOrBuilder();
-
-    /**
-     * <code>int32 retcode = 11;</code>
+     * <code>int32 retcode = 13;</code>
      * @return The retcode.
      */
     int getRetcode();
 
     /**
-     * <code>string share_code = 14;</code>
+     * <code>.HomeSceneArrangementInfo scene_arrangement_info = 5;</code>
+     * @return Whether the sceneArrangementInfo field is set.
+     */
+    boolean hasSceneArrangementInfo();
+    /**
+     * <code>.HomeSceneArrangementInfo scene_arrangement_info = 5;</code>
+     * @return The sceneArrangementInfo.
+     */
+    emu.grasscutter.net.proto.HomeSceneArrangementInfoOuterClass.HomeSceneArrangementInfo getSceneArrangementInfo();
+    /**
+     * <code>.HomeSceneArrangementInfo scene_arrangement_info = 5;</code>
+     */
+    emu.grasscutter.net.proto.HomeSceneArrangementInfoOuterClass.HomeSceneArrangementInfoOrBuilder getSceneArrangementInfoOrBuilder();
+
+    /**
+     * <code>string share_code = 9;</code>
      * @return The shareCode.
      */
     java.lang.String getShareCode();
     /**
-     * <code>string share_code = 14;</code>
+     * <code>string share_code = 9;</code>
      * @return The bytes for shareCode.
      */
     com.google.protobuf.ByteString
@@ -53,9 +53,13 @@ public final class HomePreviewBlueprintRspOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 4738
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 4462;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code HomePreviewBlueprintRsp}
@@ -103,12 +107,7 @@ public final class HomePreviewBlueprintRspOuterClass {
             case 0:
               done = true;
               break;
-            case 88: {
-
-              retcode_ = input.readInt32();
-              break;
-            }
-            case 98: {
+            case 42: {
               emu.grasscutter.net.proto.HomeSceneArrangementInfoOuterClass.HomeSceneArrangementInfo.Builder subBuilder = null;
               if (sceneArrangementInfo_ != null) {
                 subBuilder = sceneArrangementInfo_.toBuilder();
@@ -121,10 +120,15 @@ public final class HomePreviewBlueprintRspOuterClass {
 
               break;
             }
-            case 114: {
+            case 74: {
               java.lang.String s = input.readStringRequireUtf8();
 
               shareCode_ = s;
+              break;
+            }
+            case 104: {
+
+              retcode_ = input.readInt32();
               break;
             }
             default: {
@@ -159,36 +163,10 @@ public final class HomePreviewBlueprintRspOuterClass {
               emu.grasscutter.net.proto.HomePreviewBlueprintRspOuterClass.HomePreviewBlueprintRsp.class, emu.grasscutter.net.proto.HomePreviewBlueprintRspOuterClass.HomePreviewBlueprintRsp.Builder.class);
     }
 
-    public static final int SCENE_ARRANGEMENT_INFO_FIELD_NUMBER = 12;
-    private emu.grasscutter.net.proto.HomeSceneArrangementInfoOuterClass.HomeSceneArrangementInfo sceneArrangementInfo_;
-    /**
-     * <code>.HomeSceneArrangementInfo scene_arrangement_info = 12;</code>
-     * @return Whether the sceneArrangementInfo field is set.
-     */
-    @java.lang.Override
-    public boolean hasSceneArrangementInfo() {
-      return sceneArrangementInfo_ != null;
-    }
-    /**
-     * <code>.HomeSceneArrangementInfo scene_arrangement_info = 12;</code>
-     * @return The sceneArrangementInfo.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.HomeSceneArrangementInfoOuterClass.HomeSceneArrangementInfo getSceneArrangementInfo() {
-      return sceneArrangementInfo_ == null ? emu.grasscutter.net.proto.HomeSceneArrangementInfoOuterClass.HomeSceneArrangementInfo.getDefaultInstance() : sceneArrangementInfo_;
-    }
-    /**
-     * <code>.HomeSceneArrangementInfo scene_arrangement_info = 12;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.HomeSceneArrangementInfoOuterClass.HomeSceneArrangementInfoOrBuilder getSceneArrangementInfoOrBuilder() {
-      return getSceneArrangementInfo();
-    }
-
-    public static final int RETCODE_FIELD_NUMBER = 11;
+    public static final int RETCODE_FIELD_NUMBER = 13;
     private int retcode_;
     /**
-     * <code>int32 retcode = 11;</code>
+     * <code>int32 retcode = 13;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -196,10 +174,36 @@ public final class HomePreviewBlueprintRspOuterClass {
       return retcode_;
     }
 
-    public static final int SHARE_CODE_FIELD_NUMBER = 14;
+    public static final int SCENE_ARRANGEMENT_INFO_FIELD_NUMBER = 5;
+    private emu.grasscutter.net.proto.HomeSceneArrangementInfoOuterClass.HomeSceneArrangementInfo sceneArrangementInfo_;
+    /**
+     * <code>.HomeSceneArrangementInfo scene_arrangement_info = 5;</code>
+     * @return Whether the sceneArrangementInfo field is set.
+     */
+    @java.lang.Override
+    public boolean hasSceneArrangementInfo() {
+      return sceneArrangementInfo_ != null;
+    }
+    /**
+     * <code>.HomeSceneArrangementInfo scene_arrangement_info = 5;</code>
+     * @return The sceneArrangementInfo.
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.HomeSceneArrangementInfoOuterClass.HomeSceneArrangementInfo getSceneArrangementInfo() {
+      return sceneArrangementInfo_ == null ? emu.grasscutter.net.proto.HomeSceneArrangementInfoOuterClass.HomeSceneArrangementInfo.getDefaultInstance() : sceneArrangementInfo_;
+    }
+    /**
+     * <code>.HomeSceneArrangementInfo scene_arrangement_info = 5;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.HomeSceneArrangementInfoOuterClass.HomeSceneArrangementInfoOrBuilder getSceneArrangementInfoOrBuilder() {
+      return getSceneArrangementInfo();
+    }
+
+    public static final int SHARE_CODE_FIELD_NUMBER = 9;
     private volatile java.lang.Object shareCode_;
     /**
-     * <code>string share_code = 14;</code>
+     * <code>string share_code = 9;</code>
      * @return The shareCode.
      */
     @java.lang.Override
@@ -216,7 +220,7 @@ public final class HomePreviewBlueprintRspOuterClass {
       }
     }
     /**
-     * <code>string share_code = 14;</code>
+     * <code>string share_code = 9;</code>
      * @return The bytes for shareCode.
      */
     @java.lang.Override
@@ -248,14 +252,14 @@ public final class HomePreviewBlueprintRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (retcode_ != 0) {
-        output.writeInt32(11, retcode_);
-      }
       if (sceneArrangementInfo_ != null) {
-        output.writeMessage(12, getSceneArrangementInfo());
+        output.writeMessage(5, getSceneArrangementInfo());
       }
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(shareCode_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 14, shareCode_);
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 9, shareCode_);
+      }
+      if (retcode_ != 0) {
+        output.writeInt32(13, retcode_);
       }
       unknownFields.writeTo(output);
     }
@@ -266,16 +270,16 @@ public final class HomePreviewBlueprintRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (retcode_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(11, retcode_);
-      }
       if (sceneArrangementInfo_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(12, getSceneArrangementInfo());
+          .computeMessageSize(5, getSceneArrangementInfo());
       }
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(shareCode_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(14, shareCode_);
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(9, shareCode_);
+      }
+      if (retcode_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(13, retcode_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -292,13 +296,13 @@ public final class HomePreviewBlueprintRspOuterClass {
       }
       emu.grasscutter.net.proto.HomePreviewBlueprintRspOuterClass.HomePreviewBlueprintRsp other = (emu.grasscutter.net.proto.HomePreviewBlueprintRspOuterClass.HomePreviewBlueprintRsp) obj;
 
+      if (getRetcode()
+          != other.getRetcode()) return false;
       if (hasSceneArrangementInfo() != other.hasSceneArrangementInfo()) return false;
       if (hasSceneArrangementInfo()) {
         if (!getSceneArrangementInfo()
             .equals(other.getSceneArrangementInfo())) return false;
       }
-      if (getRetcode()
-          != other.getRetcode()) return false;
       if (!getShareCode()
           .equals(other.getShareCode())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
@@ -312,12 +316,12 @@ public final class HomePreviewBlueprintRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
+      hash = (53 * hash) + getRetcode();
       if (hasSceneArrangementInfo()) {
         hash = (37 * hash) + SCENE_ARRANGEMENT_INFO_FIELD_NUMBER;
         hash = (53 * hash) + getSceneArrangementInfo().hashCode();
       }
-      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
-      hash = (53 * hash) + getRetcode();
       hash = (37 * hash) + SHARE_CODE_FIELD_NUMBER;
       hash = (53 * hash) + getShareCode().hashCode();
       hash = (29 * hash) + unknownFields.hashCode();
@@ -417,9 +421,13 @@ public final class HomePreviewBlueprintRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 4738
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 4462;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code HomePreviewBlueprintRsp}
@@ -459,14 +467,14 @@ public final class HomePreviewBlueprintRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        retcode_ = 0;
+
         if (sceneArrangementInfoBuilder_ == null) {
           sceneArrangementInfo_ = null;
         } else {
           sceneArrangementInfo_ = null;
           sceneArrangementInfoBuilder_ = null;
         }
-        retcode_ = 0;
-
         shareCode_ = "";
 
         return this;
@@ -495,12 +503,12 @@ public final class HomePreviewBlueprintRspOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.HomePreviewBlueprintRspOuterClass.HomePreviewBlueprintRsp buildPartial() {
         emu.grasscutter.net.proto.HomePreviewBlueprintRspOuterClass.HomePreviewBlueprintRsp result = new emu.grasscutter.net.proto.HomePreviewBlueprintRspOuterClass.HomePreviewBlueprintRsp(this);
+        result.retcode_ = retcode_;
         if (sceneArrangementInfoBuilder_ == null) {
           result.sceneArrangementInfo_ = sceneArrangementInfo_;
         } else {
           result.sceneArrangementInfo_ = sceneArrangementInfoBuilder_.build();
         }
-        result.retcode_ = retcode_;
         result.shareCode_ = shareCode_;
         onBuilt();
         return result;
@@ -550,11 +558,11 @@ public final class HomePreviewBlueprintRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.HomePreviewBlueprintRspOuterClass.HomePreviewBlueprintRsp other) {
         if (other == emu.grasscutter.net.proto.HomePreviewBlueprintRspOuterClass.HomePreviewBlueprintRsp.getDefaultInstance()) return this;
-        if (other.hasSceneArrangementInfo()) {
-          mergeSceneArrangementInfo(other.getSceneArrangementInfo());
-        }
         if (other.getRetcode() != 0) {
           setRetcode(other.getRetcode());
+        }
+        if (other.hasSceneArrangementInfo()) {
+          mergeSceneArrangementInfo(other.getSceneArrangementInfo());
         }
         if (!other.getShareCode().isEmpty()) {
           shareCode_ = other.shareCode_;
@@ -589,18 +597,49 @@ public final class HomePreviewBlueprintRspOuterClass {
         return this;
       }
 
+      private int retcode_ ;
+      /**
+       * <code>int32 retcode = 13;</code>
+       * @return The retcode.
+       */
+      @java.lang.Override
+      public int getRetcode() {
+        return retcode_;
+      }
+      /**
+       * <code>int32 retcode = 13;</code>
+       * @param value The retcode to set.
+       * @return This builder for chaining.
+       */
+      public Builder setRetcode(int value) {
+        
+        retcode_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 retcode = 13;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearRetcode() {
+        
+        retcode_ = 0;
+        onChanged();
+        return this;
+      }
+
       private emu.grasscutter.net.proto.HomeSceneArrangementInfoOuterClass.HomeSceneArrangementInfo sceneArrangementInfo_;
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.HomeSceneArrangementInfoOuterClass.HomeSceneArrangementInfo, emu.grasscutter.net.proto.HomeSceneArrangementInfoOuterClass.HomeSceneArrangementInfo.Builder, emu.grasscutter.net.proto.HomeSceneArrangementInfoOuterClass.HomeSceneArrangementInfoOrBuilder> sceneArrangementInfoBuilder_;
       /**
-       * <code>.HomeSceneArrangementInfo scene_arrangement_info = 12;</code>
+       * <code>.HomeSceneArrangementInfo scene_arrangement_info = 5;</code>
        * @return Whether the sceneArrangementInfo field is set.
        */
       public boolean hasSceneArrangementInfo() {
         return sceneArrangementInfoBuilder_ != null || sceneArrangementInfo_ != null;
       }
       /**
-       * <code>.HomeSceneArrangementInfo scene_arrangement_info = 12;</code>
+       * <code>.HomeSceneArrangementInfo scene_arrangement_info = 5;</code>
        * @return The sceneArrangementInfo.
        */
       public emu.grasscutter.net.proto.HomeSceneArrangementInfoOuterClass.HomeSceneArrangementInfo getSceneArrangementInfo() {
@@ -611,7 +650,7 @@ public final class HomePreviewBlueprintRspOuterClass {
         }
       }
       /**
-       * <code>.HomeSceneArrangementInfo scene_arrangement_info = 12;</code>
+       * <code>.HomeSceneArrangementInfo scene_arrangement_info = 5;</code>
        */
       public Builder setSceneArrangementInfo(emu.grasscutter.net.proto.HomeSceneArrangementInfoOuterClass.HomeSceneArrangementInfo value) {
         if (sceneArrangementInfoBuilder_ == null) {
@@ -627,7 +666,7 @@ public final class HomePreviewBlueprintRspOuterClass {
         return this;
       }
       /**
-       * <code>.HomeSceneArrangementInfo scene_arrangement_info = 12;</code>
+       * <code>.HomeSceneArrangementInfo scene_arrangement_info = 5;</code>
        */
       public Builder setSceneArrangementInfo(
           emu.grasscutter.net.proto.HomeSceneArrangementInfoOuterClass.HomeSceneArrangementInfo.Builder builderForValue) {
@@ -641,7 +680,7 @@ public final class HomePreviewBlueprintRspOuterClass {
         return this;
       }
       /**
-       * <code>.HomeSceneArrangementInfo scene_arrangement_info = 12;</code>
+       * <code>.HomeSceneArrangementInfo scene_arrangement_info = 5;</code>
        */
       public Builder mergeSceneArrangementInfo(emu.grasscutter.net.proto.HomeSceneArrangementInfoOuterClass.HomeSceneArrangementInfo value) {
         if (sceneArrangementInfoBuilder_ == null) {
@@ -659,7 +698,7 @@ public final class HomePreviewBlueprintRspOuterClass {
         return this;
       }
       /**
-       * <code>.HomeSceneArrangementInfo scene_arrangement_info = 12;</code>
+       * <code>.HomeSceneArrangementInfo scene_arrangement_info = 5;</code>
        */
       public Builder clearSceneArrangementInfo() {
         if (sceneArrangementInfoBuilder_ == null) {
@@ -673,7 +712,7 @@ public final class HomePreviewBlueprintRspOuterClass {
         return this;
       }
       /**
-       * <code>.HomeSceneArrangementInfo scene_arrangement_info = 12;</code>
+       * <code>.HomeSceneArrangementInfo scene_arrangement_info = 5;</code>
        */
       public emu.grasscutter.net.proto.HomeSceneArrangementInfoOuterClass.HomeSceneArrangementInfo.Builder getSceneArrangementInfoBuilder() {
         
@@ -681,7 +720,7 @@ public final class HomePreviewBlueprintRspOuterClass {
         return getSceneArrangementInfoFieldBuilder().getBuilder();
       }
       /**
-       * <code>.HomeSceneArrangementInfo scene_arrangement_info = 12;</code>
+       * <code>.HomeSceneArrangementInfo scene_arrangement_info = 5;</code>
        */
       public emu.grasscutter.net.proto.HomeSceneArrangementInfoOuterClass.HomeSceneArrangementInfoOrBuilder getSceneArrangementInfoOrBuilder() {
         if (sceneArrangementInfoBuilder_ != null) {
@@ -692,7 +731,7 @@ public final class HomePreviewBlueprintRspOuterClass {
         }
       }
       /**
-       * <code>.HomeSceneArrangementInfo scene_arrangement_info = 12;</code>
+       * <code>.HomeSceneArrangementInfo scene_arrangement_info = 5;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.HomeSceneArrangementInfoOuterClass.HomeSceneArrangementInfo, emu.grasscutter.net.proto.HomeSceneArrangementInfoOuterClass.HomeSceneArrangementInfo.Builder, emu.grasscutter.net.proto.HomeSceneArrangementInfoOuterClass.HomeSceneArrangementInfoOrBuilder> 
@@ -708,40 +747,9 @@ public final class HomePreviewBlueprintRspOuterClass {
         return sceneArrangementInfoBuilder_;
       }
 
-      private int retcode_ ;
-      /**
-       * <code>int32 retcode = 11;</code>
-       * @return The retcode.
-       */
-      @java.lang.Override
-      public int getRetcode() {
-        return retcode_;
-      }
-      /**
-       * <code>int32 retcode = 11;</code>
-       * @param value The retcode to set.
-       * @return This builder for chaining.
-       */
-      public Builder setRetcode(int value) {
-        
-        retcode_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>int32 retcode = 11;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearRetcode() {
-        
-        retcode_ = 0;
-        onChanged();
-        return this;
-      }
-
       private java.lang.Object shareCode_ = "";
       /**
-       * <code>string share_code = 14;</code>
+       * <code>string share_code = 9;</code>
        * @return The shareCode.
        */
       public java.lang.String getShareCode() {
@@ -757,7 +765,7 @@ public final class HomePreviewBlueprintRspOuterClass {
         }
       }
       /**
-       * <code>string share_code = 14;</code>
+       * <code>string share_code = 9;</code>
        * @return The bytes for shareCode.
        */
       public com.google.protobuf.ByteString
@@ -774,7 +782,7 @@ public final class HomePreviewBlueprintRspOuterClass {
         }
       }
       /**
-       * <code>string share_code = 14;</code>
+       * <code>string share_code = 9;</code>
        * @param value The shareCode to set.
        * @return This builder for chaining.
        */
@@ -789,7 +797,7 @@ public final class HomePreviewBlueprintRspOuterClass {
         return this;
       }
       /**
-       * <code>string share_code = 14;</code>
+       * <code>string share_code = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearShareCode() {
@@ -799,7 +807,7 @@ public final class HomePreviewBlueprintRspOuterClass {
         return this;
       }
       /**
-       * <code>string share_code = 14;</code>
+       * <code>string share_code = 9;</code>
        * @param value The bytes for shareCode to set.
        * @return This builder for chaining.
        */
@@ -883,9 +891,9 @@ public final class HomePreviewBlueprintRspOuterClass {
     java.lang.String[] descriptorData = {
       "\n\035HomePreviewBlueprintRsp.proto\032\036HomeSce" +
       "neArrangementInfo.proto\"y\n\027HomePreviewBl" +
-      "ueprintRsp\0229\n\026scene_arrangement_info\030\014 \001" +
-      "(\0132\031.HomeSceneArrangementInfo\022\017\n\007retcode" +
-      "\030\013 \001(\005\022\022\n\nshare_code\030\016 \001(\tB\033\n\031emu.grassc" +
+      "ueprintRsp\022\017\n\007retcode\030\r \001(\005\0229\n\026scene_arr" +
+      "angement_info\030\005 \001(\0132\031.HomeSceneArrangeme" +
+      "ntInfo\022\022\n\nshare_code\030\t \001(\tB\033\n\031emu.grassc" +
       "utter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -898,7 +906,7 @@ public final class HomePreviewBlueprintRspOuterClass {
     internal_static_HomePreviewBlueprintRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_HomePreviewBlueprintRsp_descriptor,
-        new java.lang.String[] { "SceneArrangementInfo", "Retcode", "ShareCode", });
+        new java.lang.String[] { "Retcode", "SceneArrangementInfo", "ShareCode", });
     emu.grasscutter.net.proto.HomeSceneArrangementInfoOuterClass.getDescriptor();
   }
 

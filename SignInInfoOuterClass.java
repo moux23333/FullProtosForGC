@@ -19,87 +19,87 @@ public final class SignInInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_cond_satisfied = 7;</code>
+     * <code>bool is_cond_satisfied = 1;</code>
      * @return The isCondSatisfied.
      */
     boolean getIsCondSatisfied();
 
     /**
-     * <code>repeated uint32 reward_day_list = 15;</code>
+     * <code>repeated .SignInData signin_data_list = 10;</code>
+     */
+    java.util.List<emu.grasscutter.net.proto.SignInDataOuterClass.SignInData> 
+        getSigninDataListList();
+    /**
+     * <code>repeated .SignInData signin_data_list = 10;</code>
+     */
+    emu.grasscutter.net.proto.SignInDataOuterClass.SignInData getSigninDataList(int index);
+    /**
+     * <code>repeated .SignInData signin_data_list = 10;</code>
+     */
+    int getSigninDataListCount();
+    /**
+     * <code>repeated .SignInData signin_data_list = 10;</code>
+     */
+    java.util.List<? extends emu.grasscutter.net.proto.SignInDataOuterClass.SignInDataOrBuilder> 
+        getSigninDataListOrBuilderList();
+    /**
+     * <code>repeated .SignInData signin_data_list = 10;</code>
+     */
+    emu.grasscutter.net.proto.SignInDataOuterClass.SignInDataOrBuilder getSigninDataListOrBuilder(
+        int index);
+
+    /**
+     * <code>uint32 Unk3300_MNJELIDKMCF = 5;</code>
+     * @return The unk3300MNJELIDKMCF.
+     */
+    int getUnk3300MNJELIDKMCF();
+
+    /**
+     * <code>uint32 schedule_id = 7;</code>
+     * @return The scheduleId.
+     */
+    int getScheduleId();
+
+    /**
+     * <code>uint32 Unk3300_NFNOKBNBLGE = 3;</code>
+     * @return The unk3300NFNOKBNBLGE.
+     */
+    int getUnk3300NFNOKBNBLGE();
+
+    /**
+     * <code>repeated uint32 reward_day_list = 4;</code>
      * @return A list containing the rewardDayList.
      */
     java.util.List<java.lang.Integer> getRewardDayListList();
     /**
-     * <code>repeated uint32 reward_day_list = 15;</code>
+     * <code>repeated uint32 reward_day_list = 4;</code>
      * @return The count of rewardDayList.
      */
     int getRewardDayListCount();
     /**
-     * <code>repeated uint32 reward_day_list = 15;</code>
+     * <code>repeated uint32 reward_day_list = 4;</code>
      * @param index The index of the element to return.
      * @return The rewardDayList at the given index.
      */
     int getRewardDayList(int index);
 
     /**
-     * <code>repeated .SignInData signin_data_list = 12;</code>
+     * <code>uint32 begin_time = 6;</code>
+     * @return The beginTime.
      */
-    java.util.List<emu.grasscutter.net.proto.SignInDataOuterClass.SignInData> 
-        getSigninDataListList();
-    /**
-     * <code>repeated .SignInData signin_data_list = 12;</code>
-     */
-    emu.grasscutter.net.proto.SignInDataOuterClass.SignInData getSigninDataList(int index);
-    /**
-     * <code>repeated .SignInData signin_data_list = 12;</code>
-     */
-    int getSigninDataListCount();
-    /**
-     * <code>repeated .SignInData signin_data_list = 12;</code>
-     */
-    java.util.List<? extends emu.grasscutter.net.proto.SignInDataOuterClass.SignInDataOrBuilder> 
-        getSigninDataListOrBuilderList();
-    /**
-     * <code>repeated .SignInData signin_data_list = 12;</code>
-     */
-    emu.grasscutter.net.proto.SignInDataOuterClass.SignInDataOrBuilder getSigninDataListOrBuilder(
-        int index);
+    int getBeginTime();
 
     /**
-     * <code>uint32 config_id = 8;</code>
+     * <code>uint32 config_id = 9;</code>
      * @return The configId.
      */
     int getConfigId();
 
     /**
-     * <code>uint32 sign_in_count = 2;</code>
-     * @return The signInCount.
-     */
-    int getSignInCount();
-
-    /**
-     * <code>uint32 schedule_id = 3;</code>
-     * @return The scheduleId.
-     */
-    int getScheduleId();
-
-    /**
-     * <code>uint32 end_time = 13;</code>
+     * <code>uint32 end_time = 8;</code>
      * @return The endTime.
      */
     int getEndTime();
-
-    /**
-     * <code>uint32 last_sign_in_time = 6;</code>
-     * @return The lastSignInTime.
-     */
-    int getLastSignInTime();
-
-    /**
-     * <code>uint32 begin_time = 5;</code>
-     * @return The beginTime.
-     */
-    int getBeginTime();
   }
   /**
    * Protobuf type {@code SignInInfo}
@@ -114,8 +114,8 @@ public final class SignInInfoOuterClass {
       super(builder);
     }
     private SignInInfo() {
-      rewardDayList_ = emptyIntList();
       signinDataList_ = java.util.Collections.emptyList();
+      rewardDayList_ = emptyIntList();
     }
 
     @java.lang.Override
@@ -149,69 +149,69 @@ public final class SignInInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
-
-              signInCount_ = input.readUInt32();
-              break;
-            }
-            case 24: {
-
-              scheduleId_ = input.readUInt32();
-              break;
-            }
-            case 40: {
-
-              beginTime_ = input.readUInt32();
-              break;
-            }
-            case 48: {
-
-              lastSignInTime_ = input.readUInt32();
-              break;
-            }
-            case 56: {
+            case 8: {
 
               isCondSatisfied_ = input.readBool();
               break;
             }
-            case 64: {
+            case 24: {
 
-              configId_ = input.readUInt32();
+              unk3300NFNOKBNBLGE_ = input.readUInt32();
               break;
             }
-            case 98: {
+            case 32: {
               if (!((mutable_bitField0_ & 0x00000002) != 0)) {
-                signinDataList_ = new java.util.ArrayList<emu.grasscutter.net.proto.SignInDataOuterClass.SignInData>();
-                mutable_bitField0_ |= 0x00000002;
-              }
-              signinDataList_.add(
-                  input.readMessage(emu.grasscutter.net.proto.SignInDataOuterClass.SignInData.parser(), extensionRegistry));
-              break;
-            }
-            case 104: {
-
-              endTime_ = input.readUInt32();
-              break;
-            }
-            case 120: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 rewardDayList_ = newIntList();
-                mutable_bitField0_ |= 0x00000001;
+                mutable_bitField0_ |= 0x00000002;
               }
               rewardDayList_.addInt(input.readUInt32());
               break;
             }
-            case 122: {
+            case 34: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
+              if (!((mutable_bitField0_ & 0x00000002) != 0) && input.getBytesUntilLimit() > 0) {
                 rewardDayList_ = newIntList();
-                mutable_bitField0_ |= 0x00000001;
+                mutable_bitField0_ |= 0x00000002;
               }
               while (input.getBytesUntilLimit() > 0) {
                 rewardDayList_.addInt(input.readUInt32());
               }
               input.popLimit(limit);
+              break;
+            }
+            case 40: {
+
+              unk3300MNJELIDKMCF_ = input.readUInt32();
+              break;
+            }
+            case 48: {
+
+              beginTime_ = input.readUInt32();
+              break;
+            }
+            case 56: {
+
+              scheduleId_ = input.readUInt32();
+              break;
+            }
+            case 64: {
+
+              endTime_ = input.readUInt32();
+              break;
+            }
+            case 72: {
+
+              configId_ = input.readUInt32();
+              break;
+            }
+            case 82: {
+              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+                signinDataList_ = new java.util.ArrayList<emu.grasscutter.net.proto.SignInDataOuterClass.SignInData>();
+                mutable_bitField0_ |= 0x00000001;
+              }
+              signinDataList_.add(
+                  input.readMessage(emu.grasscutter.net.proto.SignInDataOuterClass.SignInData.parser(), extensionRegistry));
               break;
             }
             default: {
@@ -230,10 +230,10 @@ public final class SignInInfoOuterClass {
             e).setUnfinishedMessage(this);
       } finally {
         if (((mutable_bitField0_ & 0x00000002) != 0)) {
-          signinDataList_ = java.util.Collections.unmodifiableList(signinDataList_);
+          rewardDayList_.makeImmutable(); // C
         }
         if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          rewardDayList_.makeImmutable(); // C
+          signinDataList_ = java.util.Collections.unmodifiableList(signinDataList_);
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -252,10 +252,10 @@ public final class SignInInfoOuterClass {
               emu.grasscutter.net.proto.SignInInfoOuterClass.SignInInfo.class, emu.grasscutter.net.proto.SignInInfoOuterClass.SignInInfo.Builder.class);
     }
 
-    public static final int IS_COND_SATISFIED_FIELD_NUMBER = 7;
+    public static final int IS_COND_SATISFIED_FIELD_NUMBER = 1;
     private boolean isCondSatisfied_;
     /**
-     * <code>bool is_cond_satisfied = 7;</code>
+     * <code>bool is_cond_satisfied = 1;</code>
      * @return The isCondSatisfied.
      */
     @java.lang.Override
@@ -263,10 +263,83 @@ public final class SignInInfoOuterClass {
       return isCondSatisfied_;
     }
 
-    public static final int REWARD_DAY_LIST_FIELD_NUMBER = 15;
+    public static final int SIGNIN_DATA_LIST_FIELD_NUMBER = 10;
+    private java.util.List<emu.grasscutter.net.proto.SignInDataOuterClass.SignInData> signinDataList_;
+    /**
+     * <code>repeated .SignInData signin_data_list = 10;</code>
+     */
+    @java.lang.Override
+    public java.util.List<emu.grasscutter.net.proto.SignInDataOuterClass.SignInData> getSigninDataListList() {
+      return signinDataList_;
+    }
+    /**
+     * <code>repeated .SignInData signin_data_list = 10;</code>
+     */
+    @java.lang.Override
+    public java.util.List<? extends emu.grasscutter.net.proto.SignInDataOuterClass.SignInDataOrBuilder> 
+        getSigninDataListOrBuilderList() {
+      return signinDataList_;
+    }
+    /**
+     * <code>repeated .SignInData signin_data_list = 10;</code>
+     */
+    @java.lang.Override
+    public int getSigninDataListCount() {
+      return signinDataList_.size();
+    }
+    /**
+     * <code>repeated .SignInData signin_data_list = 10;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.SignInDataOuterClass.SignInData getSigninDataList(int index) {
+      return signinDataList_.get(index);
+    }
+    /**
+     * <code>repeated .SignInData signin_data_list = 10;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.SignInDataOuterClass.SignInDataOrBuilder getSigninDataListOrBuilder(
+        int index) {
+      return signinDataList_.get(index);
+    }
+
+    public static final int UNK3300_MNJELIDKMCF_FIELD_NUMBER = 5;
+    private int unk3300MNJELIDKMCF_;
+    /**
+     * <code>uint32 Unk3300_MNJELIDKMCF = 5;</code>
+     * @return The unk3300MNJELIDKMCF.
+     */
+    @java.lang.Override
+    public int getUnk3300MNJELIDKMCF() {
+      return unk3300MNJELIDKMCF_;
+    }
+
+    public static final int SCHEDULE_ID_FIELD_NUMBER = 7;
+    private int scheduleId_;
+    /**
+     * <code>uint32 schedule_id = 7;</code>
+     * @return The scheduleId.
+     */
+    @java.lang.Override
+    public int getScheduleId() {
+      return scheduleId_;
+    }
+
+    public static final int UNK3300_NFNOKBNBLGE_FIELD_NUMBER = 3;
+    private int unk3300NFNOKBNBLGE_;
+    /**
+     * <code>uint32 Unk3300_NFNOKBNBLGE = 3;</code>
+     * @return The unk3300NFNOKBNBLGE.
+     */
+    @java.lang.Override
+    public int getUnk3300NFNOKBNBLGE() {
+      return unk3300NFNOKBNBLGE_;
+    }
+
+    public static final int REWARD_DAY_LIST_FIELD_NUMBER = 4;
     private com.google.protobuf.Internal.IntList rewardDayList_;
     /**
-     * <code>repeated uint32 reward_day_list = 15;</code>
+     * <code>repeated uint32 reward_day_list = 4;</code>
      * @return A list containing the rewardDayList.
      */
     @java.lang.Override
@@ -275,14 +348,14 @@ public final class SignInInfoOuterClass {
       return rewardDayList_;
     }
     /**
-     * <code>repeated uint32 reward_day_list = 15;</code>
+     * <code>repeated uint32 reward_day_list = 4;</code>
      * @return The count of rewardDayList.
      */
     public int getRewardDayListCount() {
       return rewardDayList_.size();
     }
     /**
-     * <code>repeated uint32 reward_day_list = 15;</code>
+     * <code>repeated uint32 reward_day_list = 4;</code>
      * @param index The index of the element to return.
      * @return The rewardDayList at the given index.
      */
@@ -291,50 +364,21 @@ public final class SignInInfoOuterClass {
     }
     private int rewardDayListMemoizedSerializedSize = -1;
 
-    public static final int SIGNIN_DATA_LIST_FIELD_NUMBER = 12;
-    private java.util.List<emu.grasscutter.net.proto.SignInDataOuterClass.SignInData> signinDataList_;
+    public static final int BEGIN_TIME_FIELD_NUMBER = 6;
+    private int beginTime_;
     /**
-     * <code>repeated .SignInData signin_data_list = 12;</code>
+     * <code>uint32 begin_time = 6;</code>
+     * @return The beginTime.
      */
     @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.SignInDataOuterClass.SignInData> getSigninDataListList() {
-      return signinDataList_;
-    }
-    /**
-     * <code>repeated .SignInData signin_data_list = 12;</code>
-     */
-    @java.lang.Override
-    public java.util.List<? extends emu.grasscutter.net.proto.SignInDataOuterClass.SignInDataOrBuilder> 
-        getSigninDataListOrBuilderList() {
-      return signinDataList_;
-    }
-    /**
-     * <code>repeated .SignInData signin_data_list = 12;</code>
-     */
-    @java.lang.Override
-    public int getSigninDataListCount() {
-      return signinDataList_.size();
-    }
-    /**
-     * <code>repeated .SignInData signin_data_list = 12;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.SignInDataOuterClass.SignInData getSigninDataList(int index) {
-      return signinDataList_.get(index);
-    }
-    /**
-     * <code>repeated .SignInData signin_data_list = 12;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.SignInDataOuterClass.SignInDataOrBuilder getSigninDataListOrBuilder(
-        int index) {
-      return signinDataList_.get(index);
+    public int getBeginTime() {
+      return beginTime_;
     }
 
-    public static final int CONFIG_ID_FIELD_NUMBER = 8;
+    public static final int CONFIG_ID_FIELD_NUMBER = 9;
     private int configId_;
     /**
-     * <code>uint32 config_id = 8;</code>
+     * <code>uint32 config_id = 9;</code>
      * @return The configId.
      */
     @java.lang.Override
@@ -342,59 +386,15 @@ public final class SignInInfoOuterClass {
       return configId_;
     }
 
-    public static final int SIGN_IN_COUNT_FIELD_NUMBER = 2;
-    private int signInCount_;
-    /**
-     * <code>uint32 sign_in_count = 2;</code>
-     * @return The signInCount.
-     */
-    @java.lang.Override
-    public int getSignInCount() {
-      return signInCount_;
-    }
-
-    public static final int SCHEDULE_ID_FIELD_NUMBER = 3;
-    private int scheduleId_;
-    /**
-     * <code>uint32 schedule_id = 3;</code>
-     * @return The scheduleId.
-     */
-    @java.lang.Override
-    public int getScheduleId() {
-      return scheduleId_;
-    }
-
-    public static final int END_TIME_FIELD_NUMBER = 13;
+    public static final int END_TIME_FIELD_NUMBER = 8;
     private int endTime_;
     /**
-     * <code>uint32 end_time = 13;</code>
+     * <code>uint32 end_time = 8;</code>
      * @return The endTime.
      */
     @java.lang.Override
     public int getEndTime() {
       return endTime_;
-    }
-
-    public static final int LAST_SIGN_IN_TIME_FIELD_NUMBER = 6;
-    private int lastSignInTime_;
-    /**
-     * <code>uint32 last_sign_in_time = 6;</code>
-     * @return The lastSignInTime.
-     */
-    @java.lang.Override
-    public int getLastSignInTime() {
-      return lastSignInTime_;
-    }
-
-    public static final int BEGIN_TIME_FIELD_NUMBER = 5;
-    private int beginTime_;
-    /**
-     * <code>uint32 begin_time = 5;</code>
-     * @return The beginTime.
-     */
-    @java.lang.Override
-    public int getBeginTime() {
-      return beginTime_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -412,36 +412,36 @@ public final class SignInInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      if (signInCount_ != 0) {
-        output.writeUInt32(2, signInCount_);
-      }
-      if (scheduleId_ != 0) {
-        output.writeUInt32(3, scheduleId_);
-      }
-      if (beginTime_ != 0) {
-        output.writeUInt32(5, beginTime_);
-      }
-      if (lastSignInTime_ != 0) {
-        output.writeUInt32(6, lastSignInTime_);
-      }
       if (isCondSatisfied_ != false) {
-        output.writeBool(7, isCondSatisfied_);
+        output.writeBool(1, isCondSatisfied_);
       }
-      if (configId_ != 0) {
-        output.writeUInt32(8, configId_);
-      }
-      for (int i = 0; i < signinDataList_.size(); i++) {
-        output.writeMessage(12, signinDataList_.get(i));
-      }
-      if (endTime_ != 0) {
-        output.writeUInt32(13, endTime_);
+      if (unk3300NFNOKBNBLGE_ != 0) {
+        output.writeUInt32(3, unk3300NFNOKBNBLGE_);
       }
       if (getRewardDayListList().size() > 0) {
-        output.writeUInt32NoTag(122);
+        output.writeUInt32NoTag(34);
         output.writeUInt32NoTag(rewardDayListMemoizedSerializedSize);
       }
       for (int i = 0; i < rewardDayList_.size(); i++) {
         output.writeUInt32NoTag(rewardDayList_.getInt(i));
+      }
+      if (unk3300MNJELIDKMCF_ != 0) {
+        output.writeUInt32(5, unk3300MNJELIDKMCF_);
+      }
+      if (beginTime_ != 0) {
+        output.writeUInt32(6, beginTime_);
+      }
+      if (scheduleId_ != 0) {
+        output.writeUInt32(7, scheduleId_);
+      }
+      if (endTime_ != 0) {
+        output.writeUInt32(8, endTime_);
+      }
+      if (configId_ != 0) {
+        output.writeUInt32(9, configId_);
+      }
+      for (int i = 0; i < signinDataList_.size(); i++) {
+        output.writeMessage(10, signinDataList_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -452,37 +452,13 @@ public final class SignInInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (signInCount_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, signInCount_);
-      }
-      if (scheduleId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, scheduleId_);
-      }
-      if (beginTime_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, beginTime_);
-      }
-      if (lastSignInTime_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, lastSignInTime_);
-      }
       if (isCondSatisfied_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(7, isCondSatisfied_);
+          .computeBoolSize(1, isCondSatisfied_);
       }
-      if (configId_ != 0) {
+      if (unk3300NFNOKBNBLGE_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, configId_);
-      }
-      for (int i = 0; i < signinDataList_.size(); i++) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(12, signinDataList_.get(i));
-      }
-      if (endTime_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, endTime_);
+          .computeUInt32Size(3, unk3300NFNOKBNBLGE_);
       }
       {
         int dataSize = 0;
@@ -497,6 +473,30 @@ public final class SignInInfoOuterClass {
               .computeInt32SizeNoTag(dataSize);
         }
         rewardDayListMemoizedSerializedSize = dataSize;
+      }
+      if (unk3300MNJELIDKMCF_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(5, unk3300MNJELIDKMCF_);
+      }
+      if (beginTime_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(6, beginTime_);
+      }
+      if (scheduleId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(7, scheduleId_);
+      }
+      if (endTime_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(8, endTime_);
+      }
+      if (configId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(9, configId_);
+      }
+      for (int i = 0; i < signinDataList_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(10, signinDataList_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -515,22 +515,22 @@ public final class SignInInfoOuterClass {
 
       if (getIsCondSatisfied()
           != other.getIsCondSatisfied()) return false;
-      if (!getRewardDayListList()
-          .equals(other.getRewardDayListList())) return false;
       if (!getSigninDataListList()
           .equals(other.getSigninDataListList())) return false;
-      if (getConfigId()
-          != other.getConfigId()) return false;
-      if (getSignInCount()
-          != other.getSignInCount()) return false;
+      if (getUnk3300MNJELIDKMCF()
+          != other.getUnk3300MNJELIDKMCF()) return false;
       if (getScheduleId()
           != other.getScheduleId()) return false;
-      if (getEndTime()
-          != other.getEndTime()) return false;
-      if (getLastSignInTime()
-          != other.getLastSignInTime()) return false;
+      if (getUnk3300NFNOKBNBLGE()
+          != other.getUnk3300NFNOKBNBLGE()) return false;
+      if (!getRewardDayListList()
+          .equals(other.getRewardDayListList())) return false;
       if (getBeginTime()
           != other.getBeginTime()) return false;
+      if (getConfigId()
+          != other.getConfigId()) return false;
+      if (getEndTime()
+          != other.getEndTime()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -545,26 +545,26 @@ public final class SignInInfoOuterClass {
       hash = (37 * hash) + IS_COND_SATISFIED_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsCondSatisfied());
-      if (getRewardDayListCount() > 0) {
-        hash = (37 * hash) + REWARD_DAY_LIST_FIELD_NUMBER;
-        hash = (53 * hash) + getRewardDayListList().hashCode();
-      }
       if (getSigninDataListCount() > 0) {
         hash = (37 * hash) + SIGNIN_DATA_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getSigninDataListList().hashCode();
       }
-      hash = (37 * hash) + CONFIG_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getConfigId();
-      hash = (37 * hash) + SIGN_IN_COUNT_FIELD_NUMBER;
-      hash = (53 * hash) + getSignInCount();
+      hash = (37 * hash) + UNK3300_MNJELIDKMCF_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300MNJELIDKMCF();
       hash = (37 * hash) + SCHEDULE_ID_FIELD_NUMBER;
       hash = (53 * hash) + getScheduleId();
-      hash = (37 * hash) + END_TIME_FIELD_NUMBER;
-      hash = (53 * hash) + getEndTime();
-      hash = (37 * hash) + LAST_SIGN_IN_TIME_FIELD_NUMBER;
-      hash = (53 * hash) + getLastSignInTime();
+      hash = (37 * hash) + UNK3300_NFNOKBNBLGE_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300NFNOKBNBLGE();
+      if (getRewardDayListCount() > 0) {
+        hash = (37 * hash) + REWARD_DAY_LIST_FIELD_NUMBER;
+        hash = (53 * hash) + getRewardDayListList().hashCode();
+      }
       hash = (37 * hash) + BEGIN_TIME_FIELD_NUMBER;
       hash = (53 * hash) + getBeginTime();
+      hash = (37 * hash) + CONFIG_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getConfigId();
+      hash = (37 * hash) + END_TIME_FIELD_NUMBER;
+      hash = (53 * hash) + getEndTime();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -701,25 +701,25 @@ public final class SignInInfoOuterClass {
         super.clear();
         isCondSatisfied_ = false;
 
-        rewardDayList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000001);
         if (signinDataListBuilder_ == null) {
           signinDataList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000002);
+          bitField0_ = (bitField0_ & ~0x00000001);
         } else {
           signinDataListBuilder_.clear();
         }
-        configId_ = 0;
-
-        signInCount_ = 0;
+        unk3300MNJELIDKMCF_ = 0;
 
         scheduleId_ = 0;
 
-        endTime_ = 0;
+        unk3300NFNOKBNBLGE_ = 0;
 
-        lastSignInTime_ = 0;
-
+        rewardDayList_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000002);
         beginTime_ = 0;
+
+        configId_ = 0;
+
+        endTime_ = 0;
 
         return this;
       }
@@ -749,26 +749,26 @@ public final class SignInInfoOuterClass {
         emu.grasscutter.net.proto.SignInInfoOuterClass.SignInInfo result = new emu.grasscutter.net.proto.SignInInfoOuterClass.SignInInfo(this);
         int from_bitField0_ = bitField0_;
         result.isCondSatisfied_ = isCondSatisfied_;
-        if (((bitField0_ & 0x00000001) != 0)) {
-          rewardDayList_.makeImmutable();
-          bitField0_ = (bitField0_ & ~0x00000001);
-        }
-        result.rewardDayList_ = rewardDayList_;
         if (signinDataListBuilder_ == null) {
-          if (((bitField0_ & 0x00000002) != 0)) {
+          if (((bitField0_ & 0x00000001) != 0)) {
             signinDataList_ = java.util.Collections.unmodifiableList(signinDataList_);
-            bitField0_ = (bitField0_ & ~0x00000002);
+            bitField0_ = (bitField0_ & ~0x00000001);
           }
           result.signinDataList_ = signinDataList_;
         } else {
           result.signinDataList_ = signinDataListBuilder_.build();
         }
-        result.configId_ = configId_;
-        result.signInCount_ = signInCount_;
+        result.unk3300MNJELIDKMCF_ = unk3300MNJELIDKMCF_;
         result.scheduleId_ = scheduleId_;
-        result.endTime_ = endTime_;
-        result.lastSignInTime_ = lastSignInTime_;
+        result.unk3300NFNOKBNBLGE_ = unk3300NFNOKBNBLGE_;
+        if (((bitField0_ & 0x00000002) != 0)) {
+          rewardDayList_.makeImmutable();
+          bitField0_ = (bitField0_ & ~0x00000002);
+        }
+        result.rewardDayList_ = rewardDayList_;
         result.beginTime_ = beginTime_;
+        result.configId_ = configId_;
+        result.endTime_ = endTime_;
         onBuilt();
         return result;
       }
@@ -820,21 +820,11 @@ public final class SignInInfoOuterClass {
         if (other.getIsCondSatisfied() != false) {
           setIsCondSatisfied(other.getIsCondSatisfied());
         }
-        if (!other.rewardDayList_.isEmpty()) {
-          if (rewardDayList_.isEmpty()) {
-            rewardDayList_ = other.rewardDayList_;
-            bitField0_ = (bitField0_ & ~0x00000001);
-          } else {
-            ensureRewardDayListIsMutable();
-            rewardDayList_.addAll(other.rewardDayList_);
-          }
-          onChanged();
-        }
         if (signinDataListBuilder_ == null) {
           if (!other.signinDataList_.isEmpty()) {
             if (signinDataList_.isEmpty()) {
               signinDataList_ = other.signinDataList_;
-              bitField0_ = (bitField0_ & ~0x00000002);
+              bitField0_ = (bitField0_ & ~0x00000001);
             } else {
               ensureSigninDataListIsMutable();
               signinDataList_.addAll(other.signinDataList_);
@@ -847,7 +837,7 @@ public final class SignInInfoOuterClass {
               signinDataListBuilder_.dispose();
               signinDataListBuilder_ = null;
               signinDataList_ = other.signinDataList_;
-              bitField0_ = (bitField0_ & ~0x00000002);
+              bitField0_ = (bitField0_ & ~0x00000001);
               signinDataListBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
                    getSigninDataListFieldBuilder() : null;
@@ -856,23 +846,33 @@ public final class SignInInfoOuterClass {
             }
           }
         }
-        if (other.getConfigId() != 0) {
-          setConfigId(other.getConfigId());
-        }
-        if (other.getSignInCount() != 0) {
-          setSignInCount(other.getSignInCount());
+        if (other.getUnk3300MNJELIDKMCF() != 0) {
+          setUnk3300MNJELIDKMCF(other.getUnk3300MNJELIDKMCF());
         }
         if (other.getScheduleId() != 0) {
           setScheduleId(other.getScheduleId());
         }
-        if (other.getEndTime() != 0) {
-          setEndTime(other.getEndTime());
+        if (other.getUnk3300NFNOKBNBLGE() != 0) {
+          setUnk3300NFNOKBNBLGE(other.getUnk3300NFNOKBNBLGE());
         }
-        if (other.getLastSignInTime() != 0) {
-          setLastSignInTime(other.getLastSignInTime());
+        if (!other.rewardDayList_.isEmpty()) {
+          if (rewardDayList_.isEmpty()) {
+            rewardDayList_ = other.rewardDayList_;
+            bitField0_ = (bitField0_ & ~0x00000002);
+          } else {
+            ensureRewardDayListIsMutable();
+            rewardDayList_.addAll(other.rewardDayList_);
+          }
+          onChanged();
         }
         if (other.getBeginTime() != 0) {
           setBeginTime(other.getBeginTime());
+        }
+        if (other.getConfigId() != 0) {
+          setConfigId(other.getConfigId());
+        }
+        if (other.getEndTime() != 0) {
+          setEndTime(other.getEndTime());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -906,7 +906,7 @@ public final class SignInInfoOuterClass {
 
       private boolean isCondSatisfied_ ;
       /**
-       * <code>bool is_cond_satisfied = 7;</code>
+       * <code>bool is_cond_satisfied = 1;</code>
        * @return The isCondSatisfied.
        */
       @java.lang.Override
@@ -914,7 +914,7 @@ public final class SignInInfoOuterClass {
         return isCondSatisfied_;
       }
       /**
-       * <code>bool is_cond_satisfied = 7;</code>
+       * <code>bool is_cond_satisfied = 1;</code>
        * @param value The isCondSatisfied to set.
        * @return This builder for chaining.
        */
@@ -925,7 +925,7 @@ public final class SignInInfoOuterClass {
         return this;
       }
       /**
-       * <code>bool is_cond_satisfied = 7;</code>
+       * <code>bool is_cond_satisfied = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsCondSatisfied() {
@@ -935,91 +935,12 @@ public final class SignInInfoOuterClass {
         return this;
       }
 
-      private com.google.protobuf.Internal.IntList rewardDayList_ = emptyIntList();
-      private void ensureRewardDayListIsMutable() {
-        if (!((bitField0_ & 0x00000001) != 0)) {
-          rewardDayList_ = mutableCopy(rewardDayList_);
-          bitField0_ |= 0x00000001;
-         }
-      }
-      /**
-       * <code>repeated uint32 reward_day_list = 15;</code>
-       * @return A list containing the rewardDayList.
-       */
-      public java.util.List<java.lang.Integer>
-          getRewardDayListList() {
-        return ((bitField0_ & 0x00000001) != 0) ?
-                 java.util.Collections.unmodifiableList(rewardDayList_) : rewardDayList_;
-      }
-      /**
-       * <code>repeated uint32 reward_day_list = 15;</code>
-       * @return The count of rewardDayList.
-       */
-      public int getRewardDayListCount() {
-        return rewardDayList_.size();
-      }
-      /**
-       * <code>repeated uint32 reward_day_list = 15;</code>
-       * @param index The index of the element to return.
-       * @return The rewardDayList at the given index.
-       */
-      public int getRewardDayList(int index) {
-        return rewardDayList_.getInt(index);
-      }
-      /**
-       * <code>repeated uint32 reward_day_list = 15;</code>
-       * @param index The index to set the value at.
-       * @param value The rewardDayList to set.
-       * @return This builder for chaining.
-       */
-      public Builder setRewardDayList(
-          int index, int value) {
-        ensureRewardDayListIsMutable();
-        rewardDayList_.setInt(index, value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 reward_day_list = 15;</code>
-       * @param value The rewardDayList to add.
-       * @return This builder for chaining.
-       */
-      public Builder addRewardDayList(int value) {
-        ensureRewardDayListIsMutable();
-        rewardDayList_.addInt(value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 reward_day_list = 15;</code>
-       * @param values The rewardDayList to add.
-       * @return This builder for chaining.
-       */
-      public Builder addAllRewardDayList(
-          java.lang.Iterable<? extends java.lang.Integer> values) {
-        ensureRewardDayListIsMutable();
-        com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, rewardDayList_);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 reward_day_list = 15;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearRewardDayList() {
-        rewardDayList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000001);
-        onChanged();
-        return this;
-      }
-
       private java.util.List<emu.grasscutter.net.proto.SignInDataOuterClass.SignInData> signinDataList_ =
         java.util.Collections.emptyList();
       private void ensureSigninDataListIsMutable() {
-        if (!((bitField0_ & 0x00000002) != 0)) {
+        if (!((bitField0_ & 0x00000001) != 0)) {
           signinDataList_ = new java.util.ArrayList<emu.grasscutter.net.proto.SignInDataOuterClass.SignInData>(signinDataList_);
-          bitField0_ |= 0x00000002;
+          bitField0_ |= 0x00000001;
          }
       }
 
@@ -1027,7 +948,7 @@ public final class SignInInfoOuterClass {
           emu.grasscutter.net.proto.SignInDataOuterClass.SignInData, emu.grasscutter.net.proto.SignInDataOuterClass.SignInData.Builder, emu.grasscutter.net.proto.SignInDataOuterClass.SignInDataOrBuilder> signinDataListBuilder_;
 
       /**
-       * <code>repeated .SignInData signin_data_list = 12;</code>
+       * <code>repeated .SignInData signin_data_list = 10;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.SignInDataOuterClass.SignInData> getSigninDataListList() {
         if (signinDataListBuilder_ == null) {
@@ -1037,7 +958,7 @@ public final class SignInInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .SignInData signin_data_list = 12;</code>
+       * <code>repeated .SignInData signin_data_list = 10;</code>
        */
       public int getSigninDataListCount() {
         if (signinDataListBuilder_ == null) {
@@ -1047,7 +968,7 @@ public final class SignInInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .SignInData signin_data_list = 12;</code>
+       * <code>repeated .SignInData signin_data_list = 10;</code>
        */
       public emu.grasscutter.net.proto.SignInDataOuterClass.SignInData getSigninDataList(int index) {
         if (signinDataListBuilder_ == null) {
@@ -1057,7 +978,7 @@ public final class SignInInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .SignInData signin_data_list = 12;</code>
+       * <code>repeated .SignInData signin_data_list = 10;</code>
        */
       public Builder setSigninDataList(
           int index, emu.grasscutter.net.proto.SignInDataOuterClass.SignInData value) {
@@ -1074,7 +995,7 @@ public final class SignInInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .SignInData signin_data_list = 12;</code>
+       * <code>repeated .SignInData signin_data_list = 10;</code>
        */
       public Builder setSigninDataList(
           int index, emu.grasscutter.net.proto.SignInDataOuterClass.SignInData.Builder builderForValue) {
@@ -1088,7 +1009,7 @@ public final class SignInInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .SignInData signin_data_list = 12;</code>
+       * <code>repeated .SignInData signin_data_list = 10;</code>
        */
       public Builder addSigninDataList(emu.grasscutter.net.proto.SignInDataOuterClass.SignInData value) {
         if (signinDataListBuilder_ == null) {
@@ -1104,7 +1025,7 @@ public final class SignInInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .SignInData signin_data_list = 12;</code>
+       * <code>repeated .SignInData signin_data_list = 10;</code>
        */
       public Builder addSigninDataList(
           int index, emu.grasscutter.net.proto.SignInDataOuterClass.SignInData value) {
@@ -1121,7 +1042,7 @@ public final class SignInInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .SignInData signin_data_list = 12;</code>
+       * <code>repeated .SignInData signin_data_list = 10;</code>
        */
       public Builder addSigninDataList(
           emu.grasscutter.net.proto.SignInDataOuterClass.SignInData.Builder builderForValue) {
@@ -1135,7 +1056,7 @@ public final class SignInInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .SignInData signin_data_list = 12;</code>
+       * <code>repeated .SignInData signin_data_list = 10;</code>
        */
       public Builder addSigninDataList(
           int index, emu.grasscutter.net.proto.SignInDataOuterClass.SignInData.Builder builderForValue) {
@@ -1149,7 +1070,7 @@ public final class SignInInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .SignInData signin_data_list = 12;</code>
+       * <code>repeated .SignInData signin_data_list = 10;</code>
        */
       public Builder addAllSigninDataList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.SignInDataOuterClass.SignInData> values) {
@@ -1164,12 +1085,12 @@ public final class SignInInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .SignInData signin_data_list = 12;</code>
+       * <code>repeated .SignInData signin_data_list = 10;</code>
        */
       public Builder clearSigninDataList() {
         if (signinDataListBuilder_ == null) {
           signinDataList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000002);
+          bitField0_ = (bitField0_ & ~0x00000001);
           onChanged();
         } else {
           signinDataListBuilder_.clear();
@@ -1177,7 +1098,7 @@ public final class SignInInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .SignInData signin_data_list = 12;</code>
+       * <code>repeated .SignInData signin_data_list = 10;</code>
        */
       public Builder removeSigninDataList(int index) {
         if (signinDataListBuilder_ == null) {
@@ -1190,14 +1111,14 @@ public final class SignInInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .SignInData signin_data_list = 12;</code>
+       * <code>repeated .SignInData signin_data_list = 10;</code>
        */
       public emu.grasscutter.net.proto.SignInDataOuterClass.SignInData.Builder getSigninDataListBuilder(
           int index) {
         return getSigninDataListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .SignInData signin_data_list = 12;</code>
+       * <code>repeated .SignInData signin_data_list = 10;</code>
        */
       public emu.grasscutter.net.proto.SignInDataOuterClass.SignInDataOrBuilder getSigninDataListOrBuilder(
           int index) {
@@ -1207,7 +1128,7 @@ public final class SignInInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .SignInData signin_data_list = 12;</code>
+       * <code>repeated .SignInData signin_data_list = 10;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.SignInDataOuterClass.SignInDataOrBuilder> 
            getSigninDataListOrBuilderList() {
@@ -1218,14 +1139,14 @@ public final class SignInInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .SignInData signin_data_list = 12;</code>
+       * <code>repeated .SignInData signin_data_list = 10;</code>
        */
       public emu.grasscutter.net.proto.SignInDataOuterClass.SignInData.Builder addSigninDataListBuilder() {
         return getSigninDataListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.SignInDataOuterClass.SignInData.getDefaultInstance());
       }
       /**
-       * <code>repeated .SignInData signin_data_list = 12;</code>
+       * <code>repeated .SignInData signin_data_list = 10;</code>
        */
       public emu.grasscutter.net.proto.SignInDataOuterClass.SignInData.Builder addSigninDataListBuilder(
           int index) {
@@ -1233,7 +1154,7 @@ public final class SignInInfoOuterClass {
             index, emu.grasscutter.net.proto.SignInDataOuterClass.SignInData.getDefaultInstance());
       }
       /**
-       * <code>repeated .SignInData signin_data_list = 12;</code>
+       * <code>repeated .SignInData signin_data_list = 10;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.SignInDataOuterClass.SignInData.Builder> 
            getSigninDataListBuilderList() {
@@ -1246,7 +1167,7 @@ public final class SignInInfoOuterClass {
           signinDataListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
               emu.grasscutter.net.proto.SignInDataOuterClass.SignInData, emu.grasscutter.net.proto.SignInDataOuterClass.SignInData.Builder, emu.grasscutter.net.proto.SignInDataOuterClass.SignInDataOrBuilder>(
                   signinDataList_,
-                  ((bitField0_ & 0x00000002) != 0),
+                  ((bitField0_ & 0x00000001) != 0),
                   getParentForChildren(),
                   isClean());
           signinDataList_ = null;
@@ -1254,71 +1175,40 @@ public final class SignInInfoOuterClass {
         return signinDataListBuilder_;
       }
 
-      private int configId_ ;
+      private int unk3300MNJELIDKMCF_ ;
       /**
-       * <code>uint32 config_id = 8;</code>
-       * @return The configId.
+       * <code>uint32 Unk3300_MNJELIDKMCF = 5;</code>
+       * @return The unk3300MNJELIDKMCF.
        */
       @java.lang.Override
-      public int getConfigId() {
-        return configId_;
+      public int getUnk3300MNJELIDKMCF() {
+        return unk3300MNJELIDKMCF_;
       }
       /**
-       * <code>uint32 config_id = 8;</code>
-       * @param value The configId to set.
+       * <code>uint32 Unk3300_MNJELIDKMCF = 5;</code>
+       * @param value The unk3300MNJELIDKMCF to set.
        * @return This builder for chaining.
        */
-      public Builder setConfigId(int value) {
+      public Builder setUnk3300MNJELIDKMCF(int value) {
         
-        configId_ = value;
+        unk3300MNJELIDKMCF_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 config_id = 8;</code>
+       * <code>uint32 Unk3300_MNJELIDKMCF = 5;</code>
        * @return This builder for chaining.
        */
-      public Builder clearConfigId() {
+      public Builder clearUnk3300MNJELIDKMCF() {
         
-        configId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int signInCount_ ;
-      /**
-       * <code>uint32 sign_in_count = 2;</code>
-       * @return The signInCount.
-       */
-      @java.lang.Override
-      public int getSignInCount() {
-        return signInCount_;
-      }
-      /**
-       * <code>uint32 sign_in_count = 2;</code>
-       * @param value The signInCount to set.
-       * @return This builder for chaining.
-       */
-      public Builder setSignInCount(int value) {
-        
-        signInCount_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 sign_in_count = 2;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearSignInCount() {
-        
-        signInCount_ = 0;
+        unk3300MNJELIDKMCF_ = 0;
         onChanged();
         return this;
       }
 
       private int scheduleId_ ;
       /**
-       * <code>uint32 schedule_id = 3;</code>
+       * <code>uint32 schedule_id = 7;</code>
        * @return The scheduleId.
        */
       @java.lang.Override
@@ -1326,7 +1216,7 @@ public final class SignInInfoOuterClass {
         return scheduleId_;
       }
       /**
-       * <code>uint32 schedule_id = 3;</code>
+       * <code>uint32 schedule_id = 7;</code>
        * @param value The scheduleId to set.
        * @return This builder for chaining.
        */
@@ -1337,7 +1227,7 @@ public final class SignInInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 schedule_id = 3;</code>
+       * <code>uint32 schedule_id = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearScheduleId() {
@@ -1347,71 +1237,119 @@ public final class SignInInfoOuterClass {
         return this;
       }
 
-      private int endTime_ ;
+      private int unk3300NFNOKBNBLGE_ ;
       /**
-       * <code>uint32 end_time = 13;</code>
-       * @return The endTime.
+       * <code>uint32 Unk3300_NFNOKBNBLGE = 3;</code>
+       * @return The unk3300NFNOKBNBLGE.
        */
       @java.lang.Override
-      public int getEndTime() {
-        return endTime_;
+      public int getUnk3300NFNOKBNBLGE() {
+        return unk3300NFNOKBNBLGE_;
       }
       /**
-       * <code>uint32 end_time = 13;</code>
-       * @param value The endTime to set.
+       * <code>uint32 Unk3300_NFNOKBNBLGE = 3;</code>
+       * @param value The unk3300NFNOKBNBLGE to set.
        * @return This builder for chaining.
        */
-      public Builder setEndTime(int value) {
+      public Builder setUnk3300NFNOKBNBLGE(int value) {
         
-        endTime_ = value;
+        unk3300NFNOKBNBLGE_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 end_time = 13;</code>
+       * <code>uint32 Unk3300_NFNOKBNBLGE = 3;</code>
        * @return This builder for chaining.
        */
-      public Builder clearEndTime() {
+      public Builder clearUnk3300NFNOKBNBLGE() {
         
-        endTime_ = 0;
+        unk3300NFNOKBNBLGE_ = 0;
         onChanged();
         return this;
       }
 
-      private int lastSignInTime_ ;
-      /**
-       * <code>uint32 last_sign_in_time = 6;</code>
-       * @return The lastSignInTime.
-       */
-      @java.lang.Override
-      public int getLastSignInTime() {
-        return lastSignInTime_;
+      private com.google.protobuf.Internal.IntList rewardDayList_ = emptyIntList();
+      private void ensureRewardDayListIsMutable() {
+        if (!((bitField0_ & 0x00000002) != 0)) {
+          rewardDayList_ = mutableCopy(rewardDayList_);
+          bitField0_ |= 0x00000002;
+         }
       }
       /**
-       * <code>uint32 last_sign_in_time = 6;</code>
-       * @param value The lastSignInTime to set.
+       * <code>repeated uint32 reward_day_list = 4;</code>
+       * @return A list containing the rewardDayList.
+       */
+      public java.util.List<java.lang.Integer>
+          getRewardDayListList() {
+        return ((bitField0_ & 0x00000002) != 0) ?
+                 java.util.Collections.unmodifiableList(rewardDayList_) : rewardDayList_;
+      }
+      /**
+       * <code>repeated uint32 reward_day_list = 4;</code>
+       * @return The count of rewardDayList.
+       */
+      public int getRewardDayListCount() {
+        return rewardDayList_.size();
+      }
+      /**
+       * <code>repeated uint32 reward_day_list = 4;</code>
+       * @param index The index of the element to return.
+       * @return The rewardDayList at the given index.
+       */
+      public int getRewardDayList(int index) {
+        return rewardDayList_.getInt(index);
+      }
+      /**
+       * <code>repeated uint32 reward_day_list = 4;</code>
+       * @param index The index to set the value at.
+       * @param value The rewardDayList to set.
        * @return This builder for chaining.
        */
-      public Builder setLastSignInTime(int value) {
-        
-        lastSignInTime_ = value;
+      public Builder setRewardDayList(
+          int index, int value) {
+        ensureRewardDayListIsMutable();
+        rewardDayList_.setInt(index, value);
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 last_sign_in_time = 6;</code>
+       * <code>repeated uint32 reward_day_list = 4;</code>
+       * @param value The rewardDayList to add.
        * @return This builder for chaining.
        */
-      public Builder clearLastSignInTime() {
-        
-        lastSignInTime_ = 0;
+      public Builder addRewardDayList(int value) {
+        ensureRewardDayListIsMutable();
+        rewardDayList_.addInt(value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint32 reward_day_list = 4;</code>
+       * @param values The rewardDayList to add.
+       * @return This builder for chaining.
+       */
+      public Builder addAllRewardDayList(
+          java.lang.Iterable<? extends java.lang.Integer> values) {
+        ensureRewardDayListIsMutable();
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, rewardDayList_);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint32 reward_day_list = 4;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearRewardDayList() {
+        rewardDayList_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000002);
         onChanged();
         return this;
       }
 
       private int beginTime_ ;
       /**
-       * <code>uint32 begin_time = 5;</code>
+       * <code>uint32 begin_time = 6;</code>
        * @return The beginTime.
        */
       @java.lang.Override
@@ -1419,7 +1357,7 @@ public final class SignInInfoOuterClass {
         return beginTime_;
       }
       /**
-       * <code>uint32 begin_time = 5;</code>
+       * <code>uint32 begin_time = 6;</code>
        * @param value The beginTime to set.
        * @return This builder for chaining.
        */
@@ -1430,12 +1368,74 @@ public final class SignInInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 begin_time = 5;</code>
+       * <code>uint32 begin_time = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearBeginTime() {
         
         beginTime_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int configId_ ;
+      /**
+       * <code>uint32 config_id = 9;</code>
+       * @return The configId.
+       */
+      @java.lang.Override
+      public int getConfigId() {
+        return configId_;
+      }
+      /**
+       * <code>uint32 config_id = 9;</code>
+       * @param value The configId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setConfigId(int value) {
+        
+        configId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 config_id = 9;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearConfigId() {
+        
+        configId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int endTime_ ;
+      /**
+       * <code>uint32 end_time = 8;</code>
+       * @return The endTime.
+       */
+      @java.lang.Override
+      public int getEndTime() {
+        return endTime_;
+      }
+      /**
+       * <code>uint32 end_time = 8;</code>
+       * @param value The endTime to set.
+       * @return This builder for chaining.
+       */
+      public Builder setEndTime(int value) {
+        
+        endTime_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 end_time = 8;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearEndTime() {
+        
+        endTime_ = 0;
         onChanged();
         return this;
       }
@@ -1506,14 +1506,14 @@ public final class SignInInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\020SignInInfo.proto\032\020SignInData.proto\"\347\001\n" +
-      "\nSignInInfo\022\031\n\021is_cond_satisfied\030\007 \001(\010\022\027" +
-      "\n\017reward_day_list\030\017 \003(\r\022%\n\020signin_data_l" +
-      "ist\030\014 \003(\0132\013.SignInData\022\021\n\tconfig_id\030\010 \001(" +
-      "\r\022\025\n\rsign_in_count\030\002 \001(\r\022\023\n\013schedule_id\030" +
-      "\003 \001(\r\022\020\n\010end_time\030\r \001(\r\022\031\n\021last_sign_in_" +
-      "time\030\006 \001(\r\022\022\n\nbegin_time\030\005 \001(\rB\033\n\031emu.gr" +
-      "asscutter.net.protob\006proto3"
+      "\n\020SignInInfo.proto\032\020SignInData.proto\"\357\001\n" +
+      "\nSignInInfo\022\031\n\021is_cond_satisfied\030\001 \001(\010\022%" +
+      "\n\020signin_data_list\030\n \003(\0132\013.SignInData\022\033\n" +
+      "\023Unk3300_MNJELIDKMCF\030\005 \001(\r\022\023\n\013schedule_i" +
+      "d\030\007 \001(\r\022\033\n\023Unk3300_NFNOKBNBLGE\030\003 \001(\r\022\027\n\017" +
+      "reward_day_list\030\004 \003(\r\022\022\n\nbegin_time\030\006 \001(" +
+      "\r\022\021\n\tconfig_id\030\t \001(\r\022\020\n\010end_time\030\010 \001(\rB\033" +
+      "\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -1525,7 +1525,7 @@ public final class SignInInfoOuterClass {
     internal_static_SignInInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SignInInfo_descriptor,
-        new java.lang.String[] { "IsCondSatisfied", "RewardDayList", "SigninDataList", "ConfigId", "SignInCount", "ScheduleId", "EndTime", "LastSignInTime", "BeginTime", });
+        new java.lang.String[] { "IsCondSatisfied", "SigninDataList", "Unk3300MNJELIDKMCF", "ScheduleId", "Unk3300NFNOKBNBLGE", "RewardDayList", "BeginTime", "ConfigId", "EndTime", });
     emu.grasscutter.net.proto.SignInDataOuterClass.getDescriptor();
   }
 

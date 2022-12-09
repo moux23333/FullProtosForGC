@@ -19,17 +19,21 @@ public final class GetAuthSalesmanInfoReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 schedule_id = 8;</code>
+     * <code>uint32 schedule_id = 14;</code>
      * @return The scheduleId.
      */
     int getScheduleId();
   }
   /**
    * <pre>
-   * CmdId: 2070
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 2049;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code GetAuthSalesmanInfoReq}
@@ -76,7 +80,7 @@ public final class GetAuthSalesmanInfoReqOuterClass {
             case 0:
               done = true;
               break;
-            case 64: {
+            case 112: {
 
               scheduleId_ = input.readUInt32();
               break;
@@ -113,10 +117,10 @@ public final class GetAuthSalesmanInfoReqOuterClass {
               emu.grasscutter.net.proto.GetAuthSalesmanInfoReqOuterClass.GetAuthSalesmanInfoReq.class, emu.grasscutter.net.proto.GetAuthSalesmanInfoReqOuterClass.GetAuthSalesmanInfoReq.Builder.class);
     }
 
-    public static final int SCHEDULE_ID_FIELD_NUMBER = 8;
+    public static final int SCHEDULE_ID_FIELD_NUMBER = 14;
     private int scheduleId_;
     /**
-     * <code>uint32 schedule_id = 8;</code>
+     * <code>uint32 schedule_id = 14;</code>
      * @return The scheduleId.
      */
     @java.lang.Override
@@ -139,7 +143,7 @@ public final class GetAuthSalesmanInfoReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (scheduleId_ != 0) {
-        output.writeUInt32(8, scheduleId_);
+        output.writeUInt32(14, scheduleId_);
       }
       unknownFields.writeTo(output);
     }
@@ -152,7 +156,7 @@ public final class GetAuthSalesmanInfoReqOuterClass {
       size = 0;
       if (scheduleId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, scheduleId_);
+          .computeUInt32Size(14, scheduleId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -281,10 +285,14 @@ public final class GetAuthSalesmanInfoReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 2070
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 2049;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code GetAuthSalesmanInfoReq}
@@ -435,7 +443,7 @@ public final class GetAuthSalesmanInfoReqOuterClass {
 
       private int scheduleId_ ;
       /**
-       * <code>uint32 schedule_id = 8;</code>
+       * <code>uint32 schedule_id = 14;</code>
        * @return The scheduleId.
        */
       @java.lang.Override
@@ -443,7 +451,7 @@ public final class GetAuthSalesmanInfoReqOuterClass {
         return scheduleId_;
       }
       /**
-       * <code>uint32 schedule_id = 8;</code>
+       * <code>uint32 schedule_id = 14;</code>
        * @param value The scheduleId to set.
        * @return This builder for chaining.
        */
@@ -454,7 +462,7 @@ public final class GetAuthSalesmanInfoReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 schedule_id = 8;</code>
+       * <code>uint32 schedule_id = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearScheduleId() {
@@ -531,7 +539,7 @@ public final class GetAuthSalesmanInfoReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\034GetAuthSalesmanInfoReq.proto\"-\n\026GetAut" +
-      "hSalesmanInfoReq\022\023\n\013schedule_id\030\010 \001(\rB\033\n" +
+      "hSalesmanInfoReq\022\023\n\013schedule_id\030\016 \001(\rB\033\n" +
       "\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

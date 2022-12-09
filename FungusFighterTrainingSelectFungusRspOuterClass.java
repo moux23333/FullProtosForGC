@@ -19,16 +19,20 @@ public final class FungusFighterTrainingSelectFungusRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 7;</code>
+     * <code>int32 retcode = 11;</code>
      * @return The retcode.
      */
     int getRetcode();
   }
   /**
    * <pre>
-   * CmdId: 21570
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 23309;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code FungusFighterTrainingSelectFungusRsp}
@@ -75,7 +79,7 @@ public final class FungusFighterTrainingSelectFungusRspOuterClass {
             case 0:
               done = true;
               break;
-            case 56: {
+            case 88: {
 
               retcode_ = input.readInt32();
               break;
@@ -112,10 +116,10 @@ public final class FungusFighterTrainingSelectFungusRspOuterClass {
               emu.grasscutter.net.proto.FungusFighterTrainingSelectFungusRspOuterClass.FungusFighterTrainingSelectFungusRsp.class, emu.grasscutter.net.proto.FungusFighterTrainingSelectFungusRspOuterClass.FungusFighterTrainingSelectFungusRsp.Builder.class);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 7;
+    public static final int RETCODE_FIELD_NUMBER = 11;
     private int retcode_;
     /**
-     * <code>int32 retcode = 7;</code>
+     * <code>int32 retcode = 11;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -138,7 +142,7 @@ public final class FungusFighterTrainingSelectFungusRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (retcode_ != 0) {
-        output.writeInt32(7, retcode_);
+        output.writeInt32(11, retcode_);
       }
       unknownFields.writeTo(output);
     }
@@ -151,7 +155,7 @@ public final class FungusFighterTrainingSelectFungusRspOuterClass {
       size = 0;
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(7, retcode_);
+          .computeInt32Size(11, retcode_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -280,9 +284,13 @@ public final class FungusFighterTrainingSelectFungusRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 21570
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 23309;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code FungusFighterTrainingSelectFungusRsp}
@@ -433,7 +441,7 @@ public final class FungusFighterTrainingSelectFungusRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 7;</code>
+       * <code>int32 retcode = 11;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -441,7 +449,7 @@ public final class FungusFighterTrainingSelectFungusRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 7;</code>
+       * <code>int32 retcode = 11;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -452,7 +460,7 @@ public final class FungusFighterTrainingSelectFungusRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 7;</code>
+       * <code>int32 retcode = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -530,7 +538,7 @@ public final class FungusFighterTrainingSelectFungusRspOuterClass {
     java.lang.String[] descriptorData = {
       "\n*FungusFighterTrainingSelectFungusRsp.p" +
       "roto\"7\n$FungusFighterTrainingSelectFungu" +
-      "sRsp\022\017\n\007retcode\030\007 \001(\005B\033\n\031emu.grasscutter" +
+      "sRsp\022\017\n\007retcode\030\013 \001(\005B\033\n\031emu.grasscutter" +
       ".net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

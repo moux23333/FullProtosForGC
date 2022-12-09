@@ -19,7 +19,7 @@ public final class AbilityMixinFieldEntityCountChangeOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 field_entity_count = 14;</code>
+     * <code>uint32 field_entity_count = 8;</code>
      * @return The fieldEntityCount.
      */
     int getFieldEntityCount();
@@ -69,7 +69,7 @@ public final class AbilityMixinFieldEntityCountChangeOuterClass {
             case 0:
               done = true;
               break;
-            case 112: {
+            case 64: {
 
               fieldEntityCount_ = input.readUInt32();
               break;
@@ -106,10 +106,10 @@ public final class AbilityMixinFieldEntityCountChangeOuterClass {
               emu.grasscutter.net.proto.AbilityMixinFieldEntityCountChangeOuterClass.AbilityMixinFieldEntityCountChange.class, emu.grasscutter.net.proto.AbilityMixinFieldEntityCountChangeOuterClass.AbilityMixinFieldEntityCountChange.Builder.class);
     }
 
-    public static final int FIELD_ENTITY_COUNT_FIELD_NUMBER = 14;
+    public static final int FIELD_ENTITY_COUNT_FIELD_NUMBER = 8;
     private int fieldEntityCount_;
     /**
-     * <code>uint32 field_entity_count = 14;</code>
+     * <code>uint32 field_entity_count = 8;</code>
      * @return The fieldEntityCount.
      */
     @java.lang.Override
@@ -132,7 +132,7 @@ public final class AbilityMixinFieldEntityCountChangeOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (fieldEntityCount_ != 0) {
-        output.writeUInt32(14, fieldEntityCount_);
+        output.writeUInt32(8, fieldEntityCount_);
       }
       unknownFields.writeTo(output);
     }
@@ -145,7 +145,7 @@ public final class AbilityMixinFieldEntityCountChangeOuterClass {
       size = 0;
       if (fieldEntityCount_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, fieldEntityCount_);
+          .computeUInt32Size(8, fieldEntityCount_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -421,7 +421,7 @@ public final class AbilityMixinFieldEntityCountChangeOuterClass {
 
       private int fieldEntityCount_ ;
       /**
-       * <code>uint32 field_entity_count = 14;</code>
+       * <code>uint32 field_entity_count = 8;</code>
        * @return The fieldEntityCount.
        */
       @java.lang.Override
@@ -429,7 +429,7 @@ public final class AbilityMixinFieldEntityCountChangeOuterClass {
         return fieldEntityCount_;
       }
       /**
-       * <code>uint32 field_entity_count = 14;</code>
+       * <code>uint32 field_entity_count = 8;</code>
        * @param value The fieldEntityCount to set.
        * @return This builder for chaining.
        */
@@ -440,7 +440,7 @@ public final class AbilityMixinFieldEntityCountChangeOuterClass {
         return this;
       }
       /**
-       * <code>uint32 field_entity_count = 14;</code>
+       * <code>uint32 field_entity_count = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearFieldEntityCount() {
@@ -518,7 +518,7 @@ public final class AbilityMixinFieldEntityCountChangeOuterClass {
     java.lang.String[] descriptorData = {
       "\n(AbilityMixinFieldEntityCountChange.pro" +
       "to\"@\n\"AbilityMixinFieldEntityCountChange" +
-      "\022\032\n\022field_entity_count\030\016 \001(\rB\033\n\031emu.gras" +
+      "\022\032\n\022field_entity_count\030\010 \001(\rB\033\n\031emu.gras" +
       "scutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

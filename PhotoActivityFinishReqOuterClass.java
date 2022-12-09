@@ -19,29 +19,33 @@ public final class PhotoActivityFinishReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 pos_id = 15;</code>
+     * <code>uint32 pos_id = 8;</code>
      * @return The posId.
      */
     int getPosId();
 
     /**
-     * <code>uint32 check_root_id = 2;</code>
+     * <code>uint32 check_root_id = 11;</code>
      * @return The checkRootId.
      */
     int getCheckRootId();
 
     /**
-     * <code>bool is_succ = 5;</code>
+     * <code>bool is_succ = 15;</code>
      * @return The isSucc.
      */
     boolean getIsSucc();
   }
   /**
    * <pre>
-   * CmdId: 8921
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 8395;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code PhotoActivityFinishReq}
@@ -88,19 +92,19 @@ public final class PhotoActivityFinishReqOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
+            case 64: {
+
+              posId_ = input.readUInt32();
+              break;
+            }
+            case 88: {
 
               checkRootId_ = input.readUInt32();
               break;
             }
-            case 40: {
-
-              isSucc_ = input.readBool();
-              break;
-            }
             case 120: {
 
-              posId_ = input.readUInt32();
+              isSucc_ = input.readBool();
               break;
             }
             default: {
@@ -135,10 +139,10 @@ public final class PhotoActivityFinishReqOuterClass {
               emu.grasscutter.net.proto.PhotoActivityFinishReqOuterClass.PhotoActivityFinishReq.class, emu.grasscutter.net.proto.PhotoActivityFinishReqOuterClass.PhotoActivityFinishReq.Builder.class);
     }
 
-    public static final int POS_ID_FIELD_NUMBER = 15;
+    public static final int POS_ID_FIELD_NUMBER = 8;
     private int posId_;
     /**
-     * <code>uint32 pos_id = 15;</code>
+     * <code>uint32 pos_id = 8;</code>
      * @return The posId.
      */
     @java.lang.Override
@@ -146,10 +150,10 @@ public final class PhotoActivityFinishReqOuterClass {
       return posId_;
     }
 
-    public static final int CHECK_ROOT_ID_FIELD_NUMBER = 2;
+    public static final int CHECK_ROOT_ID_FIELD_NUMBER = 11;
     private int checkRootId_;
     /**
-     * <code>uint32 check_root_id = 2;</code>
+     * <code>uint32 check_root_id = 11;</code>
      * @return The checkRootId.
      */
     @java.lang.Override
@@ -157,10 +161,10 @@ public final class PhotoActivityFinishReqOuterClass {
       return checkRootId_;
     }
 
-    public static final int IS_SUCC_FIELD_NUMBER = 5;
+    public static final int IS_SUCC_FIELD_NUMBER = 15;
     private boolean isSucc_;
     /**
-     * <code>bool is_succ = 5;</code>
+     * <code>bool is_succ = 15;</code>
      * @return The isSucc.
      */
     @java.lang.Override
@@ -182,14 +186,14 @@ public final class PhotoActivityFinishReqOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (posId_ != 0) {
+        output.writeUInt32(8, posId_);
+      }
       if (checkRootId_ != 0) {
-        output.writeUInt32(2, checkRootId_);
+        output.writeUInt32(11, checkRootId_);
       }
       if (isSucc_ != false) {
-        output.writeBool(5, isSucc_);
-      }
-      if (posId_ != 0) {
-        output.writeUInt32(15, posId_);
+        output.writeBool(15, isSucc_);
       }
       unknownFields.writeTo(output);
     }
@@ -200,17 +204,17 @@ public final class PhotoActivityFinishReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (posId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(8, posId_);
+      }
       if (checkRootId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, checkRootId_);
+          .computeUInt32Size(11, checkRootId_);
       }
       if (isSucc_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(5, isSucc_);
-      }
-      if (posId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, posId_);
+          .computeBoolSize(15, isSucc_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -348,10 +352,14 @@ public final class PhotoActivityFinishReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 8921
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 8395;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code PhotoActivityFinishReq}
@@ -514,7 +522,7 @@ public final class PhotoActivityFinishReqOuterClass {
 
       private int posId_ ;
       /**
-       * <code>uint32 pos_id = 15;</code>
+       * <code>uint32 pos_id = 8;</code>
        * @return The posId.
        */
       @java.lang.Override
@@ -522,7 +530,7 @@ public final class PhotoActivityFinishReqOuterClass {
         return posId_;
       }
       /**
-       * <code>uint32 pos_id = 15;</code>
+       * <code>uint32 pos_id = 8;</code>
        * @param value The posId to set.
        * @return This builder for chaining.
        */
@@ -533,7 +541,7 @@ public final class PhotoActivityFinishReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 pos_id = 15;</code>
+       * <code>uint32 pos_id = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearPosId() {
@@ -545,7 +553,7 @@ public final class PhotoActivityFinishReqOuterClass {
 
       private int checkRootId_ ;
       /**
-       * <code>uint32 check_root_id = 2;</code>
+       * <code>uint32 check_root_id = 11;</code>
        * @return The checkRootId.
        */
       @java.lang.Override
@@ -553,7 +561,7 @@ public final class PhotoActivityFinishReqOuterClass {
         return checkRootId_;
       }
       /**
-       * <code>uint32 check_root_id = 2;</code>
+       * <code>uint32 check_root_id = 11;</code>
        * @param value The checkRootId to set.
        * @return This builder for chaining.
        */
@@ -564,7 +572,7 @@ public final class PhotoActivityFinishReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 check_root_id = 2;</code>
+       * <code>uint32 check_root_id = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearCheckRootId() {
@@ -576,7 +584,7 @@ public final class PhotoActivityFinishReqOuterClass {
 
       private boolean isSucc_ ;
       /**
-       * <code>bool is_succ = 5;</code>
+       * <code>bool is_succ = 15;</code>
        * @return The isSucc.
        */
       @java.lang.Override
@@ -584,7 +592,7 @@ public final class PhotoActivityFinishReqOuterClass {
         return isSucc_;
       }
       /**
-       * <code>bool is_succ = 5;</code>
+       * <code>bool is_succ = 15;</code>
        * @param value The isSucc to set.
        * @return This builder for chaining.
        */
@@ -595,7 +603,7 @@ public final class PhotoActivityFinishReqOuterClass {
         return this;
       }
       /**
-       * <code>bool is_succ = 5;</code>
+       * <code>bool is_succ = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsSucc() {
@@ -672,8 +680,8 @@ public final class PhotoActivityFinishReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\034PhotoActivityFinishReq.proto\"P\n\026PhotoA" +
-      "ctivityFinishReq\022\016\n\006pos_id\030\017 \001(\r\022\025\n\rchec" +
-      "k_root_id\030\002 \001(\r\022\017\n\007is_succ\030\005 \001(\010B\033\n\031emu." +
+      "ctivityFinishReq\022\016\n\006pos_id\030\010 \001(\r\022\025\n\rchec" +
+      "k_root_id\030\013 \001(\r\022\017\n\007is_succ\030\017 \001(\010B\033\n\031emu." +
       "grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

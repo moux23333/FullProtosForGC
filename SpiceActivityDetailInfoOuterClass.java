@@ -19,40 +19,40 @@ public final class SpiceActivityDetailInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 current_increase_avatar_fetter_times = 15;</code>
-     * @return The currentIncreaseAvatarFetterTimes.
+     * <code>uint32 Unk3300_CIHIAJEGCBO = 14;</code>
+     * @return The unk3300CIHIAJEGCBO.
      */
-    int getCurrentIncreaseAvatarFetterTimes();
+    int getUnk3300CIHIAJEGCBO();
 
     /**
-     * <code>repeated .SpiceStageData spice_stage_list = 7;</code>
+     * <code>uint32 Unk3300_LAKPMMIPBMI = 8;</code>
+     * @return The unk3300LAKPMMIPBMI.
+     */
+    int getUnk3300LAKPMMIPBMI();
+
+    /**
+     * <code>repeated .SpiceStageData spice_stage_data_list = 6;</code>
      */
     java.util.List<emu.grasscutter.net.proto.SpiceStageDataOuterClass.SpiceStageData> 
-        getSpiceStageListList();
+        getSpiceStageDataListList();
     /**
-     * <code>repeated .SpiceStageData spice_stage_list = 7;</code>
+     * <code>repeated .SpiceStageData spice_stage_data_list = 6;</code>
      */
-    emu.grasscutter.net.proto.SpiceStageDataOuterClass.SpiceStageData getSpiceStageList(int index);
+    emu.grasscutter.net.proto.SpiceStageDataOuterClass.SpiceStageData getSpiceStageDataList(int index);
     /**
-     * <code>repeated .SpiceStageData spice_stage_list = 7;</code>
+     * <code>repeated .SpiceStageData spice_stage_data_list = 6;</code>
      */
-    int getSpiceStageListCount();
+    int getSpiceStageDataListCount();
     /**
-     * <code>repeated .SpiceStageData spice_stage_list = 7;</code>
+     * <code>repeated .SpiceStageData spice_stage_data_list = 6;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.SpiceStageDataOuterClass.SpiceStageDataOrBuilder> 
-        getSpiceStageListOrBuilderList();
+        getSpiceStageDataListOrBuilderList();
     /**
-     * <code>repeated .SpiceStageData spice_stage_list = 7;</code>
+     * <code>repeated .SpiceStageData spice_stage_data_list = 6;</code>
      */
-    emu.grasscutter.net.proto.SpiceStageDataOuterClass.SpiceStageDataOrBuilder getSpiceStageListOrBuilder(
+    emu.grasscutter.net.proto.SpiceStageDataOuterClass.SpiceStageDataOrBuilder getSpiceStageDataListOrBuilder(
         int index);
-
-    /**
-     * <code>uint32 increase_avatar_fetter_limit_times = 13;</code>
-     * @return The increaseAvatarFetterLimitTimes.
-     */
-    int getIncreaseAvatarFetterLimitTimes();
   }
   /**
    * Protobuf type {@code SpiceActivityDetailInfo}
@@ -67,7 +67,7 @@ public final class SpiceActivityDetailInfoOuterClass {
       super(builder);
     }
     private SpiceActivityDetailInfo() {
-      spiceStageList_ = java.util.Collections.emptyList();
+      spiceStageDataList_ = java.util.Collections.emptyList();
     }
 
     @java.lang.Override
@@ -101,23 +101,23 @@ public final class SpiceActivityDetailInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 58: {
+            case 50: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                spiceStageList_ = new java.util.ArrayList<emu.grasscutter.net.proto.SpiceStageDataOuterClass.SpiceStageData>();
+                spiceStageDataList_ = new java.util.ArrayList<emu.grasscutter.net.proto.SpiceStageDataOuterClass.SpiceStageData>();
                 mutable_bitField0_ |= 0x00000001;
               }
-              spiceStageList_.add(
+              spiceStageDataList_.add(
                   input.readMessage(emu.grasscutter.net.proto.SpiceStageDataOuterClass.SpiceStageData.parser(), extensionRegistry));
               break;
             }
-            case 104: {
+            case 64: {
 
-              increaseAvatarFetterLimitTimes_ = input.readUInt32();
+              unk3300LAKPMMIPBMI_ = input.readUInt32();
               break;
             }
-            case 120: {
+            case 112: {
 
-              currentIncreaseAvatarFetterTimes_ = input.readUInt32();
+              unk3300CIHIAJEGCBO_ = input.readUInt32();
               break;
             }
             default: {
@@ -136,7 +136,7 @@ public final class SpiceActivityDetailInfoOuterClass {
             e).setUnfinishedMessage(this);
       } finally {
         if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          spiceStageList_ = java.util.Collections.unmodifiableList(spiceStageList_);
+          spiceStageDataList_ = java.util.Collections.unmodifiableList(spiceStageDataList_);
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -155,66 +155,66 @@ public final class SpiceActivityDetailInfoOuterClass {
               emu.grasscutter.net.proto.SpiceActivityDetailInfoOuterClass.SpiceActivityDetailInfo.class, emu.grasscutter.net.proto.SpiceActivityDetailInfoOuterClass.SpiceActivityDetailInfo.Builder.class);
     }
 
-    public static final int CURRENT_INCREASE_AVATAR_FETTER_TIMES_FIELD_NUMBER = 15;
-    private int currentIncreaseAvatarFetterTimes_;
+    public static final int UNK3300_CIHIAJEGCBO_FIELD_NUMBER = 14;
+    private int unk3300CIHIAJEGCBO_;
     /**
-     * <code>uint32 current_increase_avatar_fetter_times = 15;</code>
-     * @return The currentIncreaseAvatarFetterTimes.
+     * <code>uint32 Unk3300_CIHIAJEGCBO = 14;</code>
+     * @return The unk3300CIHIAJEGCBO.
      */
     @java.lang.Override
-    public int getCurrentIncreaseAvatarFetterTimes() {
-      return currentIncreaseAvatarFetterTimes_;
+    public int getUnk3300CIHIAJEGCBO() {
+      return unk3300CIHIAJEGCBO_;
     }
 
-    public static final int SPICE_STAGE_LIST_FIELD_NUMBER = 7;
-    private java.util.List<emu.grasscutter.net.proto.SpiceStageDataOuterClass.SpiceStageData> spiceStageList_;
+    public static final int UNK3300_LAKPMMIPBMI_FIELD_NUMBER = 8;
+    private int unk3300LAKPMMIPBMI_;
     /**
-     * <code>repeated .SpiceStageData spice_stage_list = 7;</code>
+     * <code>uint32 Unk3300_LAKPMMIPBMI = 8;</code>
+     * @return The unk3300LAKPMMIPBMI.
      */
     @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.SpiceStageDataOuterClass.SpiceStageData> getSpiceStageListList() {
-      return spiceStageList_;
+    public int getUnk3300LAKPMMIPBMI() {
+      return unk3300LAKPMMIPBMI_;
+    }
+
+    public static final int SPICE_STAGE_DATA_LIST_FIELD_NUMBER = 6;
+    private java.util.List<emu.grasscutter.net.proto.SpiceStageDataOuterClass.SpiceStageData> spiceStageDataList_;
+    /**
+     * <code>repeated .SpiceStageData spice_stage_data_list = 6;</code>
+     */
+    @java.lang.Override
+    public java.util.List<emu.grasscutter.net.proto.SpiceStageDataOuterClass.SpiceStageData> getSpiceStageDataListList() {
+      return spiceStageDataList_;
     }
     /**
-     * <code>repeated .SpiceStageData spice_stage_list = 7;</code>
+     * <code>repeated .SpiceStageData spice_stage_data_list = 6;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.SpiceStageDataOuterClass.SpiceStageDataOrBuilder> 
-        getSpiceStageListOrBuilderList() {
-      return spiceStageList_;
+        getSpiceStageDataListOrBuilderList() {
+      return spiceStageDataList_;
     }
     /**
-     * <code>repeated .SpiceStageData spice_stage_list = 7;</code>
+     * <code>repeated .SpiceStageData spice_stage_data_list = 6;</code>
      */
     @java.lang.Override
-    public int getSpiceStageListCount() {
-      return spiceStageList_.size();
+    public int getSpiceStageDataListCount() {
+      return spiceStageDataList_.size();
     }
     /**
-     * <code>repeated .SpiceStageData spice_stage_list = 7;</code>
+     * <code>repeated .SpiceStageData spice_stage_data_list = 6;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.SpiceStageDataOuterClass.SpiceStageData getSpiceStageList(int index) {
-      return spiceStageList_.get(index);
+    public emu.grasscutter.net.proto.SpiceStageDataOuterClass.SpiceStageData getSpiceStageDataList(int index) {
+      return spiceStageDataList_.get(index);
     }
     /**
-     * <code>repeated .SpiceStageData spice_stage_list = 7;</code>
+     * <code>repeated .SpiceStageData spice_stage_data_list = 6;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.SpiceStageDataOuterClass.SpiceStageDataOrBuilder getSpiceStageListOrBuilder(
+    public emu.grasscutter.net.proto.SpiceStageDataOuterClass.SpiceStageDataOrBuilder getSpiceStageDataListOrBuilder(
         int index) {
-      return spiceStageList_.get(index);
-    }
-
-    public static final int INCREASE_AVATAR_FETTER_LIMIT_TIMES_FIELD_NUMBER = 13;
-    private int increaseAvatarFetterLimitTimes_;
-    /**
-     * <code>uint32 increase_avatar_fetter_limit_times = 13;</code>
-     * @return The increaseAvatarFetterLimitTimes.
-     */
-    @java.lang.Override
-    public int getIncreaseAvatarFetterLimitTimes() {
-      return increaseAvatarFetterLimitTimes_;
+      return spiceStageDataList_.get(index);
     }
 
     private byte memoizedIsInitialized = -1;
@@ -231,14 +231,14 @@ public final class SpiceActivityDetailInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      for (int i = 0; i < spiceStageList_.size(); i++) {
-        output.writeMessage(7, spiceStageList_.get(i));
+      for (int i = 0; i < spiceStageDataList_.size(); i++) {
+        output.writeMessage(6, spiceStageDataList_.get(i));
       }
-      if (increaseAvatarFetterLimitTimes_ != 0) {
-        output.writeUInt32(13, increaseAvatarFetterLimitTimes_);
+      if (unk3300LAKPMMIPBMI_ != 0) {
+        output.writeUInt32(8, unk3300LAKPMMIPBMI_);
       }
-      if (currentIncreaseAvatarFetterTimes_ != 0) {
-        output.writeUInt32(15, currentIncreaseAvatarFetterTimes_);
+      if (unk3300CIHIAJEGCBO_ != 0) {
+        output.writeUInt32(14, unk3300CIHIAJEGCBO_);
       }
       unknownFields.writeTo(output);
     }
@@ -249,17 +249,17 @@ public final class SpiceActivityDetailInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      for (int i = 0; i < spiceStageList_.size(); i++) {
+      for (int i = 0; i < spiceStageDataList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(7, spiceStageList_.get(i));
+          .computeMessageSize(6, spiceStageDataList_.get(i));
       }
-      if (increaseAvatarFetterLimitTimes_ != 0) {
+      if (unk3300LAKPMMIPBMI_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, increaseAvatarFetterLimitTimes_);
+          .computeUInt32Size(8, unk3300LAKPMMIPBMI_);
       }
-      if (currentIncreaseAvatarFetterTimes_ != 0) {
+      if (unk3300CIHIAJEGCBO_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, currentIncreaseAvatarFetterTimes_);
+          .computeUInt32Size(14, unk3300CIHIAJEGCBO_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -276,12 +276,12 @@ public final class SpiceActivityDetailInfoOuterClass {
       }
       emu.grasscutter.net.proto.SpiceActivityDetailInfoOuterClass.SpiceActivityDetailInfo other = (emu.grasscutter.net.proto.SpiceActivityDetailInfoOuterClass.SpiceActivityDetailInfo) obj;
 
-      if (getCurrentIncreaseAvatarFetterTimes()
-          != other.getCurrentIncreaseAvatarFetterTimes()) return false;
-      if (!getSpiceStageListList()
-          .equals(other.getSpiceStageListList())) return false;
-      if (getIncreaseAvatarFetterLimitTimes()
-          != other.getIncreaseAvatarFetterLimitTimes()) return false;
+      if (getUnk3300CIHIAJEGCBO()
+          != other.getUnk3300CIHIAJEGCBO()) return false;
+      if (getUnk3300LAKPMMIPBMI()
+          != other.getUnk3300LAKPMMIPBMI()) return false;
+      if (!getSpiceStageDataListList()
+          .equals(other.getSpiceStageDataListList())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -293,14 +293,14 @@ public final class SpiceActivityDetailInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + CURRENT_INCREASE_AVATAR_FETTER_TIMES_FIELD_NUMBER;
-      hash = (53 * hash) + getCurrentIncreaseAvatarFetterTimes();
-      if (getSpiceStageListCount() > 0) {
-        hash = (37 * hash) + SPICE_STAGE_LIST_FIELD_NUMBER;
-        hash = (53 * hash) + getSpiceStageListList().hashCode();
+      hash = (37 * hash) + UNK3300_CIHIAJEGCBO_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300CIHIAJEGCBO();
+      hash = (37 * hash) + UNK3300_LAKPMMIPBMI_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300LAKPMMIPBMI();
+      if (getSpiceStageDataListCount() > 0) {
+        hash = (37 * hash) + SPICE_STAGE_DATA_LIST_FIELD_NUMBER;
+        hash = (53 * hash) + getSpiceStageDataListList().hashCode();
       }
-      hash = (37 * hash) + INCREASE_AVATAR_FETTER_LIMIT_TIMES_FIELD_NUMBER;
-      hash = (53 * hash) + getIncreaseAvatarFetterLimitTimes();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -429,22 +429,22 @@ public final class SpiceActivityDetailInfoOuterClass {
       private void maybeForceBuilderInitialization() {
         if (com.google.protobuf.GeneratedMessageV3
                 .alwaysUseFieldBuilders) {
-          getSpiceStageListFieldBuilder();
+          getSpiceStageDataListFieldBuilder();
         }
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        currentIncreaseAvatarFetterTimes_ = 0;
+        unk3300CIHIAJEGCBO_ = 0;
 
-        if (spiceStageListBuilder_ == null) {
-          spiceStageList_ = java.util.Collections.emptyList();
+        unk3300LAKPMMIPBMI_ = 0;
+
+        if (spiceStageDataListBuilder_ == null) {
+          spiceStageDataList_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000001);
         } else {
-          spiceStageListBuilder_.clear();
+          spiceStageDataListBuilder_.clear();
         }
-        increaseAvatarFetterLimitTimes_ = 0;
-
         return this;
       }
 
@@ -472,17 +472,17 @@ public final class SpiceActivityDetailInfoOuterClass {
       public emu.grasscutter.net.proto.SpiceActivityDetailInfoOuterClass.SpiceActivityDetailInfo buildPartial() {
         emu.grasscutter.net.proto.SpiceActivityDetailInfoOuterClass.SpiceActivityDetailInfo result = new emu.grasscutter.net.proto.SpiceActivityDetailInfoOuterClass.SpiceActivityDetailInfo(this);
         int from_bitField0_ = bitField0_;
-        result.currentIncreaseAvatarFetterTimes_ = currentIncreaseAvatarFetterTimes_;
-        if (spiceStageListBuilder_ == null) {
+        result.unk3300CIHIAJEGCBO_ = unk3300CIHIAJEGCBO_;
+        result.unk3300LAKPMMIPBMI_ = unk3300LAKPMMIPBMI_;
+        if (spiceStageDataListBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0)) {
-            spiceStageList_ = java.util.Collections.unmodifiableList(spiceStageList_);
+            spiceStageDataList_ = java.util.Collections.unmodifiableList(spiceStageDataList_);
             bitField0_ = (bitField0_ & ~0x00000001);
           }
-          result.spiceStageList_ = spiceStageList_;
+          result.spiceStageDataList_ = spiceStageDataList_;
         } else {
-          result.spiceStageList_ = spiceStageListBuilder_.build();
+          result.spiceStageDataList_ = spiceStageDataListBuilder_.build();
         }
-        result.increaseAvatarFetterLimitTimes_ = increaseAvatarFetterLimitTimes_;
         onBuilt();
         return result;
       }
@@ -531,37 +531,37 @@ public final class SpiceActivityDetailInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.SpiceActivityDetailInfoOuterClass.SpiceActivityDetailInfo other) {
         if (other == emu.grasscutter.net.proto.SpiceActivityDetailInfoOuterClass.SpiceActivityDetailInfo.getDefaultInstance()) return this;
-        if (other.getCurrentIncreaseAvatarFetterTimes() != 0) {
-          setCurrentIncreaseAvatarFetterTimes(other.getCurrentIncreaseAvatarFetterTimes());
+        if (other.getUnk3300CIHIAJEGCBO() != 0) {
+          setUnk3300CIHIAJEGCBO(other.getUnk3300CIHIAJEGCBO());
         }
-        if (spiceStageListBuilder_ == null) {
-          if (!other.spiceStageList_.isEmpty()) {
-            if (spiceStageList_.isEmpty()) {
-              spiceStageList_ = other.spiceStageList_;
+        if (other.getUnk3300LAKPMMIPBMI() != 0) {
+          setUnk3300LAKPMMIPBMI(other.getUnk3300LAKPMMIPBMI());
+        }
+        if (spiceStageDataListBuilder_ == null) {
+          if (!other.spiceStageDataList_.isEmpty()) {
+            if (spiceStageDataList_.isEmpty()) {
+              spiceStageDataList_ = other.spiceStageDataList_;
               bitField0_ = (bitField0_ & ~0x00000001);
             } else {
-              ensureSpiceStageListIsMutable();
-              spiceStageList_.addAll(other.spiceStageList_);
+              ensureSpiceStageDataListIsMutable();
+              spiceStageDataList_.addAll(other.spiceStageDataList_);
             }
             onChanged();
           }
         } else {
-          if (!other.spiceStageList_.isEmpty()) {
-            if (spiceStageListBuilder_.isEmpty()) {
-              spiceStageListBuilder_.dispose();
-              spiceStageListBuilder_ = null;
-              spiceStageList_ = other.spiceStageList_;
+          if (!other.spiceStageDataList_.isEmpty()) {
+            if (spiceStageDataListBuilder_.isEmpty()) {
+              spiceStageDataListBuilder_.dispose();
+              spiceStageDataListBuilder_ = null;
+              spiceStageDataList_ = other.spiceStageDataList_;
               bitField0_ = (bitField0_ & ~0x00000001);
-              spiceStageListBuilder_ = 
+              spiceStageDataListBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
-                   getSpiceStageListFieldBuilder() : null;
+                   getSpiceStageDataListFieldBuilder() : null;
             } else {
-              spiceStageListBuilder_.addAllMessages(other.spiceStageList_);
+              spiceStageDataListBuilder_.addAllMessages(other.spiceStageDataList_);
             }
           }
-        }
-        if (other.getIncreaseAvatarFetterLimitTimes() != 0) {
-          setIncreaseAvatarFetterLimitTimes(other.getIncreaseAvatarFetterLimitTimes());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -593,306 +593,306 @@ public final class SpiceActivityDetailInfoOuterClass {
       }
       private int bitField0_;
 
-      private int currentIncreaseAvatarFetterTimes_ ;
+      private int unk3300CIHIAJEGCBO_ ;
       /**
-       * <code>uint32 current_increase_avatar_fetter_times = 15;</code>
-       * @return The currentIncreaseAvatarFetterTimes.
+       * <code>uint32 Unk3300_CIHIAJEGCBO = 14;</code>
+       * @return The unk3300CIHIAJEGCBO.
        */
       @java.lang.Override
-      public int getCurrentIncreaseAvatarFetterTimes() {
-        return currentIncreaseAvatarFetterTimes_;
+      public int getUnk3300CIHIAJEGCBO() {
+        return unk3300CIHIAJEGCBO_;
       }
       /**
-       * <code>uint32 current_increase_avatar_fetter_times = 15;</code>
-       * @param value The currentIncreaseAvatarFetterTimes to set.
+       * <code>uint32 Unk3300_CIHIAJEGCBO = 14;</code>
+       * @param value The unk3300CIHIAJEGCBO to set.
        * @return This builder for chaining.
        */
-      public Builder setCurrentIncreaseAvatarFetterTimes(int value) {
+      public Builder setUnk3300CIHIAJEGCBO(int value) {
         
-        currentIncreaseAvatarFetterTimes_ = value;
+        unk3300CIHIAJEGCBO_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 current_increase_avatar_fetter_times = 15;</code>
+       * <code>uint32 Unk3300_CIHIAJEGCBO = 14;</code>
        * @return This builder for chaining.
        */
-      public Builder clearCurrentIncreaseAvatarFetterTimes() {
+      public Builder clearUnk3300CIHIAJEGCBO() {
         
-        currentIncreaseAvatarFetterTimes_ = 0;
+        unk3300CIHIAJEGCBO_ = 0;
         onChanged();
         return this;
       }
 
-      private java.util.List<emu.grasscutter.net.proto.SpiceStageDataOuterClass.SpiceStageData> spiceStageList_ =
+      private int unk3300LAKPMMIPBMI_ ;
+      /**
+       * <code>uint32 Unk3300_LAKPMMIPBMI = 8;</code>
+       * @return The unk3300LAKPMMIPBMI.
+       */
+      @java.lang.Override
+      public int getUnk3300LAKPMMIPBMI() {
+        return unk3300LAKPMMIPBMI_;
+      }
+      /**
+       * <code>uint32 Unk3300_LAKPMMIPBMI = 8;</code>
+       * @param value The unk3300LAKPMMIPBMI to set.
+       * @return This builder for chaining.
+       */
+      public Builder setUnk3300LAKPMMIPBMI(int value) {
+        
+        unk3300LAKPMMIPBMI_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 Unk3300_LAKPMMIPBMI = 8;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearUnk3300LAKPMMIPBMI() {
+        
+        unk3300LAKPMMIPBMI_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private java.util.List<emu.grasscutter.net.proto.SpiceStageDataOuterClass.SpiceStageData> spiceStageDataList_ =
         java.util.Collections.emptyList();
-      private void ensureSpiceStageListIsMutable() {
+      private void ensureSpiceStageDataListIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          spiceStageList_ = new java.util.ArrayList<emu.grasscutter.net.proto.SpiceStageDataOuterClass.SpiceStageData>(spiceStageList_);
+          spiceStageDataList_ = new java.util.ArrayList<emu.grasscutter.net.proto.SpiceStageDataOuterClass.SpiceStageData>(spiceStageDataList_);
           bitField0_ |= 0x00000001;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.SpiceStageDataOuterClass.SpiceStageData, emu.grasscutter.net.proto.SpiceStageDataOuterClass.SpiceStageData.Builder, emu.grasscutter.net.proto.SpiceStageDataOuterClass.SpiceStageDataOrBuilder> spiceStageListBuilder_;
+          emu.grasscutter.net.proto.SpiceStageDataOuterClass.SpiceStageData, emu.grasscutter.net.proto.SpiceStageDataOuterClass.SpiceStageData.Builder, emu.grasscutter.net.proto.SpiceStageDataOuterClass.SpiceStageDataOrBuilder> spiceStageDataListBuilder_;
 
       /**
-       * <code>repeated .SpiceStageData spice_stage_list = 7;</code>
+       * <code>repeated .SpiceStageData spice_stage_data_list = 6;</code>
        */
-      public java.util.List<emu.grasscutter.net.proto.SpiceStageDataOuterClass.SpiceStageData> getSpiceStageListList() {
-        if (spiceStageListBuilder_ == null) {
-          return java.util.Collections.unmodifiableList(spiceStageList_);
+      public java.util.List<emu.grasscutter.net.proto.SpiceStageDataOuterClass.SpiceStageData> getSpiceStageDataListList() {
+        if (spiceStageDataListBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(spiceStageDataList_);
         } else {
-          return spiceStageListBuilder_.getMessageList();
+          return spiceStageDataListBuilder_.getMessageList();
         }
       }
       /**
-       * <code>repeated .SpiceStageData spice_stage_list = 7;</code>
+       * <code>repeated .SpiceStageData spice_stage_data_list = 6;</code>
        */
-      public int getSpiceStageListCount() {
-        if (spiceStageListBuilder_ == null) {
-          return spiceStageList_.size();
+      public int getSpiceStageDataListCount() {
+        if (spiceStageDataListBuilder_ == null) {
+          return spiceStageDataList_.size();
         } else {
-          return spiceStageListBuilder_.getCount();
+          return spiceStageDataListBuilder_.getCount();
         }
       }
       /**
-       * <code>repeated .SpiceStageData spice_stage_list = 7;</code>
+       * <code>repeated .SpiceStageData spice_stage_data_list = 6;</code>
        */
-      public emu.grasscutter.net.proto.SpiceStageDataOuterClass.SpiceStageData getSpiceStageList(int index) {
-        if (spiceStageListBuilder_ == null) {
-          return spiceStageList_.get(index);
+      public emu.grasscutter.net.proto.SpiceStageDataOuterClass.SpiceStageData getSpiceStageDataList(int index) {
+        if (spiceStageDataListBuilder_ == null) {
+          return spiceStageDataList_.get(index);
         } else {
-          return spiceStageListBuilder_.getMessage(index);
+          return spiceStageDataListBuilder_.getMessage(index);
         }
       }
       /**
-       * <code>repeated .SpiceStageData spice_stage_list = 7;</code>
+       * <code>repeated .SpiceStageData spice_stage_data_list = 6;</code>
        */
-      public Builder setSpiceStageList(
+      public Builder setSpiceStageDataList(
           int index, emu.grasscutter.net.proto.SpiceStageDataOuterClass.SpiceStageData value) {
-        if (spiceStageListBuilder_ == null) {
+        if (spiceStageDataListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureSpiceStageListIsMutable();
-          spiceStageList_.set(index, value);
+          ensureSpiceStageDataListIsMutable();
+          spiceStageDataList_.set(index, value);
           onChanged();
         } else {
-          spiceStageListBuilder_.setMessage(index, value);
+          spiceStageDataListBuilder_.setMessage(index, value);
         }
         return this;
       }
       /**
-       * <code>repeated .SpiceStageData spice_stage_list = 7;</code>
+       * <code>repeated .SpiceStageData spice_stage_data_list = 6;</code>
        */
-      public Builder setSpiceStageList(
+      public Builder setSpiceStageDataList(
           int index, emu.grasscutter.net.proto.SpiceStageDataOuterClass.SpiceStageData.Builder builderForValue) {
-        if (spiceStageListBuilder_ == null) {
-          ensureSpiceStageListIsMutable();
-          spiceStageList_.set(index, builderForValue.build());
+        if (spiceStageDataListBuilder_ == null) {
+          ensureSpiceStageDataListIsMutable();
+          spiceStageDataList_.set(index, builderForValue.build());
           onChanged();
         } else {
-          spiceStageListBuilder_.setMessage(index, builderForValue.build());
+          spiceStageDataListBuilder_.setMessage(index, builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .SpiceStageData spice_stage_list = 7;</code>
+       * <code>repeated .SpiceStageData spice_stage_data_list = 6;</code>
        */
-      public Builder addSpiceStageList(emu.grasscutter.net.proto.SpiceStageDataOuterClass.SpiceStageData value) {
-        if (spiceStageListBuilder_ == null) {
+      public Builder addSpiceStageDataList(emu.grasscutter.net.proto.SpiceStageDataOuterClass.SpiceStageData value) {
+        if (spiceStageDataListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureSpiceStageListIsMutable();
-          spiceStageList_.add(value);
+          ensureSpiceStageDataListIsMutable();
+          spiceStageDataList_.add(value);
           onChanged();
         } else {
-          spiceStageListBuilder_.addMessage(value);
+          spiceStageDataListBuilder_.addMessage(value);
         }
         return this;
       }
       /**
-       * <code>repeated .SpiceStageData spice_stage_list = 7;</code>
+       * <code>repeated .SpiceStageData spice_stage_data_list = 6;</code>
        */
-      public Builder addSpiceStageList(
+      public Builder addSpiceStageDataList(
           int index, emu.grasscutter.net.proto.SpiceStageDataOuterClass.SpiceStageData value) {
-        if (spiceStageListBuilder_ == null) {
+        if (spiceStageDataListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureSpiceStageListIsMutable();
-          spiceStageList_.add(index, value);
+          ensureSpiceStageDataListIsMutable();
+          spiceStageDataList_.add(index, value);
           onChanged();
         } else {
-          spiceStageListBuilder_.addMessage(index, value);
+          spiceStageDataListBuilder_.addMessage(index, value);
         }
         return this;
       }
       /**
-       * <code>repeated .SpiceStageData spice_stage_list = 7;</code>
+       * <code>repeated .SpiceStageData spice_stage_data_list = 6;</code>
        */
-      public Builder addSpiceStageList(
+      public Builder addSpiceStageDataList(
           emu.grasscutter.net.proto.SpiceStageDataOuterClass.SpiceStageData.Builder builderForValue) {
-        if (spiceStageListBuilder_ == null) {
-          ensureSpiceStageListIsMutable();
-          spiceStageList_.add(builderForValue.build());
+        if (spiceStageDataListBuilder_ == null) {
+          ensureSpiceStageDataListIsMutable();
+          spiceStageDataList_.add(builderForValue.build());
           onChanged();
         } else {
-          spiceStageListBuilder_.addMessage(builderForValue.build());
+          spiceStageDataListBuilder_.addMessage(builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .SpiceStageData spice_stage_list = 7;</code>
+       * <code>repeated .SpiceStageData spice_stage_data_list = 6;</code>
        */
-      public Builder addSpiceStageList(
+      public Builder addSpiceStageDataList(
           int index, emu.grasscutter.net.proto.SpiceStageDataOuterClass.SpiceStageData.Builder builderForValue) {
-        if (spiceStageListBuilder_ == null) {
-          ensureSpiceStageListIsMutable();
-          spiceStageList_.add(index, builderForValue.build());
+        if (spiceStageDataListBuilder_ == null) {
+          ensureSpiceStageDataListIsMutable();
+          spiceStageDataList_.add(index, builderForValue.build());
           onChanged();
         } else {
-          spiceStageListBuilder_.addMessage(index, builderForValue.build());
+          spiceStageDataListBuilder_.addMessage(index, builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .SpiceStageData spice_stage_list = 7;</code>
+       * <code>repeated .SpiceStageData spice_stage_data_list = 6;</code>
        */
-      public Builder addAllSpiceStageList(
+      public Builder addAllSpiceStageDataList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.SpiceStageDataOuterClass.SpiceStageData> values) {
-        if (spiceStageListBuilder_ == null) {
-          ensureSpiceStageListIsMutable();
+        if (spiceStageDataListBuilder_ == null) {
+          ensureSpiceStageDataListIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
-              values, spiceStageList_);
+              values, spiceStageDataList_);
           onChanged();
         } else {
-          spiceStageListBuilder_.addAllMessages(values);
+          spiceStageDataListBuilder_.addAllMessages(values);
         }
         return this;
       }
       /**
-       * <code>repeated .SpiceStageData spice_stage_list = 7;</code>
+       * <code>repeated .SpiceStageData spice_stage_data_list = 6;</code>
        */
-      public Builder clearSpiceStageList() {
-        if (spiceStageListBuilder_ == null) {
-          spiceStageList_ = java.util.Collections.emptyList();
+      public Builder clearSpiceStageDataList() {
+        if (spiceStageDataListBuilder_ == null) {
+          spiceStageDataList_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000001);
           onChanged();
         } else {
-          spiceStageListBuilder_.clear();
+          spiceStageDataListBuilder_.clear();
         }
         return this;
       }
       /**
-       * <code>repeated .SpiceStageData spice_stage_list = 7;</code>
+       * <code>repeated .SpiceStageData spice_stage_data_list = 6;</code>
        */
-      public Builder removeSpiceStageList(int index) {
-        if (spiceStageListBuilder_ == null) {
-          ensureSpiceStageListIsMutable();
-          spiceStageList_.remove(index);
+      public Builder removeSpiceStageDataList(int index) {
+        if (spiceStageDataListBuilder_ == null) {
+          ensureSpiceStageDataListIsMutable();
+          spiceStageDataList_.remove(index);
           onChanged();
         } else {
-          spiceStageListBuilder_.remove(index);
+          spiceStageDataListBuilder_.remove(index);
         }
         return this;
       }
       /**
-       * <code>repeated .SpiceStageData spice_stage_list = 7;</code>
+       * <code>repeated .SpiceStageData spice_stage_data_list = 6;</code>
        */
-      public emu.grasscutter.net.proto.SpiceStageDataOuterClass.SpiceStageData.Builder getSpiceStageListBuilder(
+      public emu.grasscutter.net.proto.SpiceStageDataOuterClass.SpiceStageData.Builder getSpiceStageDataListBuilder(
           int index) {
-        return getSpiceStageListFieldBuilder().getBuilder(index);
+        return getSpiceStageDataListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .SpiceStageData spice_stage_list = 7;</code>
+       * <code>repeated .SpiceStageData spice_stage_data_list = 6;</code>
        */
-      public emu.grasscutter.net.proto.SpiceStageDataOuterClass.SpiceStageDataOrBuilder getSpiceStageListOrBuilder(
+      public emu.grasscutter.net.proto.SpiceStageDataOuterClass.SpiceStageDataOrBuilder getSpiceStageDataListOrBuilder(
           int index) {
-        if (spiceStageListBuilder_ == null) {
-          return spiceStageList_.get(index);  } else {
-          return spiceStageListBuilder_.getMessageOrBuilder(index);
+        if (spiceStageDataListBuilder_ == null) {
+          return spiceStageDataList_.get(index);  } else {
+          return spiceStageDataListBuilder_.getMessageOrBuilder(index);
         }
       }
       /**
-       * <code>repeated .SpiceStageData spice_stage_list = 7;</code>
+       * <code>repeated .SpiceStageData spice_stage_data_list = 6;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.SpiceStageDataOuterClass.SpiceStageDataOrBuilder> 
-           getSpiceStageListOrBuilderList() {
-        if (spiceStageListBuilder_ != null) {
-          return spiceStageListBuilder_.getMessageOrBuilderList();
+           getSpiceStageDataListOrBuilderList() {
+        if (spiceStageDataListBuilder_ != null) {
+          return spiceStageDataListBuilder_.getMessageOrBuilderList();
         } else {
-          return java.util.Collections.unmodifiableList(spiceStageList_);
+          return java.util.Collections.unmodifiableList(spiceStageDataList_);
         }
       }
       /**
-       * <code>repeated .SpiceStageData spice_stage_list = 7;</code>
+       * <code>repeated .SpiceStageData spice_stage_data_list = 6;</code>
        */
-      public emu.grasscutter.net.proto.SpiceStageDataOuterClass.SpiceStageData.Builder addSpiceStageListBuilder() {
-        return getSpiceStageListFieldBuilder().addBuilder(
+      public emu.grasscutter.net.proto.SpiceStageDataOuterClass.SpiceStageData.Builder addSpiceStageDataListBuilder() {
+        return getSpiceStageDataListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.SpiceStageDataOuterClass.SpiceStageData.getDefaultInstance());
       }
       /**
-       * <code>repeated .SpiceStageData spice_stage_list = 7;</code>
+       * <code>repeated .SpiceStageData spice_stage_data_list = 6;</code>
        */
-      public emu.grasscutter.net.proto.SpiceStageDataOuterClass.SpiceStageData.Builder addSpiceStageListBuilder(
+      public emu.grasscutter.net.proto.SpiceStageDataOuterClass.SpiceStageData.Builder addSpiceStageDataListBuilder(
           int index) {
-        return getSpiceStageListFieldBuilder().addBuilder(
+        return getSpiceStageDataListFieldBuilder().addBuilder(
             index, emu.grasscutter.net.proto.SpiceStageDataOuterClass.SpiceStageData.getDefaultInstance());
       }
       /**
-       * <code>repeated .SpiceStageData spice_stage_list = 7;</code>
+       * <code>repeated .SpiceStageData spice_stage_data_list = 6;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.SpiceStageDataOuterClass.SpiceStageData.Builder> 
-           getSpiceStageListBuilderList() {
-        return getSpiceStageListFieldBuilder().getBuilderList();
+           getSpiceStageDataListBuilderList() {
+        return getSpiceStageDataListFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilderV3<
           emu.grasscutter.net.proto.SpiceStageDataOuterClass.SpiceStageData, emu.grasscutter.net.proto.SpiceStageDataOuterClass.SpiceStageData.Builder, emu.grasscutter.net.proto.SpiceStageDataOuterClass.SpiceStageDataOrBuilder> 
-          getSpiceStageListFieldBuilder() {
-        if (spiceStageListBuilder_ == null) {
-          spiceStageListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+          getSpiceStageDataListFieldBuilder() {
+        if (spiceStageDataListBuilder_ == null) {
+          spiceStageDataListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
               emu.grasscutter.net.proto.SpiceStageDataOuterClass.SpiceStageData, emu.grasscutter.net.proto.SpiceStageDataOuterClass.SpiceStageData.Builder, emu.grasscutter.net.proto.SpiceStageDataOuterClass.SpiceStageDataOrBuilder>(
-                  spiceStageList_,
+                  spiceStageDataList_,
                   ((bitField0_ & 0x00000001) != 0),
                   getParentForChildren(),
                   isClean());
-          spiceStageList_ = null;
+          spiceStageDataList_ = null;
         }
-        return spiceStageListBuilder_;
-      }
-
-      private int increaseAvatarFetterLimitTimes_ ;
-      /**
-       * <code>uint32 increase_avatar_fetter_limit_times = 13;</code>
-       * @return The increaseAvatarFetterLimitTimes.
-       */
-      @java.lang.Override
-      public int getIncreaseAvatarFetterLimitTimes() {
-        return increaseAvatarFetterLimitTimes_;
-      }
-      /**
-       * <code>uint32 increase_avatar_fetter_limit_times = 13;</code>
-       * @param value The increaseAvatarFetterLimitTimes to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIncreaseAvatarFetterLimitTimes(int value) {
-        
-        increaseAvatarFetterLimitTimes_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 increase_avatar_fetter_limit_times = 13;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIncreaseAvatarFetterLimitTimes() {
-        
-        increaseAvatarFetterLimitTimes_ = 0;
-        onChanged();
-        return this;
+        return spiceStageDataListBuilder_;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -962,12 +962,11 @@ public final class SpiceActivityDetailInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\035SpiceActivityDetailInfo.proto\032\024SpiceSt" +
-      "ageData.proto\"\236\001\n\027SpiceActivityDetailInf" +
-      "o\022,\n$current_increase_avatar_fetter_time" +
-      "s\030\017 \001(\r\022)\n\020spice_stage_list\030\007 \003(\0132\017.Spic" +
-      "eStageData\022*\n\"increase_avatar_fetter_lim" +
-      "it_times\030\r \001(\rB\033\n\031emu.grasscutter.net.pr" +
-      "otob\006proto3"
+      "ageData.proto\"\203\001\n\027SpiceActivityDetailInf" +
+      "o\022\033\n\023Unk3300_CIHIAJEGCBO\030\016 \001(\r\022\033\n\023Unk330" +
+      "0_LAKPMMIPBMI\030\010 \001(\r\022.\n\025spice_stage_data_" +
+      "list\030\006 \003(\0132\017.SpiceStageDataB\033\n\031emu.grass" +
+      "cutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -979,7 +978,7 @@ public final class SpiceActivityDetailInfoOuterClass {
     internal_static_SpiceActivityDetailInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SpiceActivityDetailInfo_descriptor,
-        new java.lang.String[] { "CurrentIncreaseAvatarFetterTimes", "SpiceStageList", "IncreaseAvatarFetterLimitTimes", });
+        new java.lang.String[] { "Unk3300CIHIAJEGCBO", "Unk3300LAKPMMIPBMI", "SpiceStageDataList", });
     emu.grasscutter.net.proto.SpiceStageDataOuterClass.getDescriptor();
   }
 

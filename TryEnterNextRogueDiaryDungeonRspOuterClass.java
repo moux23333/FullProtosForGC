@@ -19,16 +19,20 @@ public final class TryEnterNextRogueDiaryDungeonRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 4;</code>
+     * <code>int32 retcode = 7;</code>
      * @return The retcode.
      */
     int getRetcode();
   }
   /**
    * <pre>
-   * CmdId: 8362
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 8487;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code TryEnterNextRogueDiaryDungeonRsp}
@@ -75,7 +79,7 @@ public final class TryEnterNextRogueDiaryDungeonRspOuterClass {
             case 0:
               done = true;
               break;
-            case 32: {
+            case 56: {
 
               retcode_ = input.readInt32();
               break;
@@ -112,10 +116,10 @@ public final class TryEnterNextRogueDiaryDungeonRspOuterClass {
               emu.grasscutter.net.proto.TryEnterNextRogueDiaryDungeonRspOuterClass.TryEnterNextRogueDiaryDungeonRsp.class, emu.grasscutter.net.proto.TryEnterNextRogueDiaryDungeonRspOuterClass.TryEnterNextRogueDiaryDungeonRsp.Builder.class);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 4;
+    public static final int RETCODE_FIELD_NUMBER = 7;
     private int retcode_;
     /**
-     * <code>int32 retcode = 4;</code>
+     * <code>int32 retcode = 7;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -138,7 +142,7 @@ public final class TryEnterNextRogueDiaryDungeonRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (retcode_ != 0) {
-        output.writeInt32(4, retcode_);
+        output.writeInt32(7, retcode_);
       }
       unknownFields.writeTo(output);
     }
@@ -151,7 +155,7 @@ public final class TryEnterNextRogueDiaryDungeonRspOuterClass {
       size = 0;
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(4, retcode_);
+          .computeInt32Size(7, retcode_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -280,9 +284,13 @@ public final class TryEnterNextRogueDiaryDungeonRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 8362
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 8487;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code TryEnterNextRogueDiaryDungeonRsp}
@@ -433,7 +441,7 @@ public final class TryEnterNextRogueDiaryDungeonRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 4;</code>
+       * <code>int32 retcode = 7;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -441,7 +449,7 @@ public final class TryEnterNextRogueDiaryDungeonRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 4;</code>
+       * <code>int32 retcode = 7;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -452,7 +460,7 @@ public final class TryEnterNextRogueDiaryDungeonRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 4;</code>
+       * <code>int32 retcode = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -530,7 +538,7 @@ public final class TryEnterNextRogueDiaryDungeonRspOuterClass {
     java.lang.String[] descriptorData = {
       "\n&TryEnterNextRogueDiaryDungeonRsp.proto" +
       "\"3\n TryEnterNextRogueDiaryDungeonRsp\022\017\n\007" +
-      "retcode\030\004 \001(\005B\033\n\031emu.grasscutter.net.pro" +
+      "retcode\030\007 \001(\005B\033\n\031emu.grasscutter.net.pro" +
       "tob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

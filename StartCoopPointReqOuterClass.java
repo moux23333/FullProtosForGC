@@ -19,17 +19,21 @@ public final class StartCoopPointReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 coop_point = 7;</code>
+     * <code>uint32 coop_point = 4;</code>
      * @return The coopPoint.
      */
     int getCoopPoint();
   }
   /**
    * <pre>
-   * CmdId: 1992
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 1995;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code StartCoopPointReq}
@@ -76,7 +80,7 @@ public final class StartCoopPointReqOuterClass {
             case 0:
               done = true;
               break;
-            case 56: {
+            case 32: {
 
               coopPoint_ = input.readUInt32();
               break;
@@ -113,10 +117,10 @@ public final class StartCoopPointReqOuterClass {
               emu.grasscutter.net.proto.StartCoopPointReqOuterClass.StartCoopPointReq.class, emu.grasscutter.net.proto.StartCoopPointReqOuterClass.StartCoopPointReq.Builder.class);
     }
 
-    public static final int COOP_POINT_FIELD_NUMBER = 7;
+    public static final int COOP_POINT_FIELD_NUMBER = 4;
     private int coopPoint_;
     /**
-     * <code>uint32 coop_point = 7;</code>
+     * <code>uint32 coop_point = 4;</code>
      * @return The coopPoint.
      */
     @java.lang.Override
@@ -139,7 +143,7 @@ public final class StartCoopPointReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (coopPoint_ != 0) {
-        output.writeUInt32(7, coopPoint_);
+        output.writeUInt32(4, coopPoint_);
       }
       unknownFields.writeTo(output);
     }
@@ -152,7 +156,7 @@ public final class StartCoopPointReqOuterClass {
       size = 0;
       if (coopPoint_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, coopPoint_);
+          .computeUInt32Size(4, coopPoint_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -281,10 +285,14 @@ public final class StartCoopPointReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 1992
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 1995;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code StartCoopPointReq}
@@ -435,7 +443,7 @@ public final class StartCoopPointReqOuterClass {
 
       private int coopPoint_ ;
       /**
-       * <code>uint32 coop_point = 7;</code>
+       * <code>uint32 coop_point = 4;</code>
        * @return The coopPoint.
        */
       @java.lang.Override
@@ -443,7 +451,7 @@ public final class StartCoopPointReqOuterClass {
         return coopPoint_;
       }
       /**
-       * <code>uint32 coop_point = 7;</code>
+       * <code>uint32 coop_point = 4;</code>
        * @param value The coopPoint to set.
        * @return This builder for chaining.
        */
@@ -454,7 +462,7 @@ public final class StartCoopPointReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 coop_point = 7;</code>
+       * <code>uint32 coop_point = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearCoopPoint() {
@@ -531,7 +539,7 @@ public final class StartCoopPointReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\027StartCoopPointReq.proto\"\'\n\021StartCoopPo" +
-      "intReq\022\022\n\ncoop_point\030\007 \001(\rB\033\n\031emu.grassc" +
+      "intReq\022\022\n\ncoop_point\030\004 \001(\rB\033\n\031emu.grassc" +
       "utter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

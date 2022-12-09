@@ -19,38 +19,42 @@ public final class PlantFlowerEditFlowerCombinationReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.CustomGadgetTreeInfo flower_combination_info = 10;</code>
-     * @return Whether the flowerCombinationInfo field is set.
-     */
-    boolean hasFlowerCombinationInfo();
-    /**
-     * <code>.CustomGadgetTreeInfo flower_combination_info = 10;</code>
-     * @return The flowerCombinationInfo.
-     */
-    emu.grasscutter.net.proto.CustomGadgetTreeInfoOuterClass.CustomGadgetTreeInfo getFlowerCombinationInfo();
-    /**
-     * <code>.CustomGadgetTreeInfo flower_combination_info = 10;</code>
-     */
-    emu.grasscutter.net.proto.CustomGadgetTreeInfoOuterClass.CustomGadgetTreeInfoOrBuilder getFlowerCombinationInfoOrBuilder();
-
-    /**
-     * <code>uint32 entity_id = 14;</code>
+     * <code>uint32 entity_id = 3;</code>
      * @return The entityId.
      */
     int getEntityId();
 
     /**
-     * <code>uint32 schedule_id = 9;</code>
+     * <code>.CustomGadgetTreeInfo flower_combination_info = 8;</code>
+     * @return Whether the flowerCombinationInfo field is set.
+     */
+    boolean hasFlowerCombinationInfo();
+    /**
+     * <code>.CustomGadgetTreeInfo flower_combination_info = 8;</code>
+     * @return The flowerCombinationInfo.
+     */
+    emu.grasscutter.net.proto.CustomGadgetTreeInfoOuterClass.CustomGadgetTreeInfo getFlowerCombinationInfo();
+    /**
+     * <code>.CustomGadgetTreeInfo flower_combination_info = 8;</code>
+     */
+    emu.grasscutter.net.proto.CustomGadgetTreeInfoOuterClass.CustomGadgetTreeInfoOrBuilder getFlowerCombinationInfoOrBuilder();
+
+    /**
+     * <code>uint32 schedule_id = 12;</code>
      * @return The scheduleId.
      */
     int getScheduleId();
   }
   /**
    * <pre>
-   * CmdId: 8843
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 8396;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code PlantFlowerEditFlowerCombinationReq}
@@ -97,12 +101,12 @@ public final class PlantFlowerEditFlowerCombinationReqOuterClass {
             case 0:
               done = true;
               break;
-            case 72: {
+            case 24: {
 
-              scheduleId_ = input.readUInt32();
+              entityId_ = input.readUInt32();
               break;
             }
-            case 82: {
+            case 66: {
               emu.grasscutter.net.proto.CustomGadgetTreeInfoOuterClass.CustomGadgetTreeInfo.Builder subBuilder = null;
               if (flowerCombinationInfo_ != null) {
                 subBuilder = flowerCombinationInfo_.toBuilder();
@@ -115,9 +119,9 @@ public final class PlantFlowerEditFlowerCombinationReqOuterClass {
 
               break;
             }
-            case 112: {
+            case 96: {
 
-              entityId_ = input.readUInt32();
+              scheduleId_ = input.readUInt32();
               break;
             }
             default: {
@@ -152,36 +156,10 @@ public final class PlantFlowerEditFlowerCombinationReqOuterClass {
               emu.grasscutter.net.proto.PlantFlowerEditFlowerCombinationReqOuterClass.PlantFlowerEditFlowerCombinationReq.class, emu.grasscutter.net.proto.PlantFlowerEditFlowerCombinationReqOuterClass.PlantFlowerEditFlowerCombinationReq.Builder.class);
     }
 
-    public static final int FLOWER_COMBINATION_INFO_FIELD_NUMBER = 10;
-    private emu.grasscutter.net.proto.CustomGadgetTreeInfoOuterClass.CustomGadgetTreeInfo flowerCombinationInfo_;
-    /**
-     * <code>.CustomGadgetTreeInfo flower_combination_info = 10;</code>
-     * @return Whether the flowerCombinationInfo field is set.
-     */
-    @java.lang.Override
-    public boolean hasFlowerCombinationInfo() {
-      return flowerCombinationInfo_ != null;
-    }
-    /**
-     * <code>.CustomGadgetTreeInfo flower_combination_info = 10;</code>
-     * @return The flowerCombinationInfo.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.CustomGadgetTreeInfoOuterClass.CustomGadgetTreeInfo getFlowerCombinationInfo() {
-      return flowerCombinationInfo_ == null ? emu.grasscutter.net.proto.CustomGadgetTreeInfoOuterClass.CustomGadgetTreeInfo.getDefaultInstance() : flowerCombinationInfo_;
-    }
-    /**
-     * <code>.CustomGadgetTreeInfo flower_combination_info = 10;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.CustomGadgetTreeInfoOuterClass.CustomGadgetTreeInfoOrBuilder getFlowerCombinationInfoOrBuilder() {
-      return getFlowerCombinationInfo();
-    }
-
-    public static final int ENTITY_ID_FIELD_NUMBER = 14;
+    public static final int ENTITY_ID_FIELD_NUMBER = 3;
     private int entityId_;
     /**
-     * <code>uint32 entity_id = 14;</code>
+     * <code>uint32 entity_id = 3;</code>
      * @return The entityId.
      */
     @java.lang.Override
@@ -189,10 +167,36 @@ public final class PlantFlowerEditFlowerCombinationReqOuterClass {
       return entityId_;
     }
 
-    public static final int SCHEDULE_ID_FIELD_NUMBER = 9;
+    public static final int FLOWER_COMBINATION_INFO_FIELD_NUMBER = 8;
+    private emu.grasscutter.net.proto.CustomGadgetTreeInfoOuterClass.CustomGadgetTreeInfo flowerCombinationInfo_;
+    /**
+     * <code>.CustomGadgetTreeInfo flower_combination_info = 8;</code>
+     * @return Whether the flowerCombinationInfo field is set.
+     */
+    @java.lang.Override
+    public boolean hasFlowerCombinationInfo() {
+      return flowerCombinationInfo_ != null;
+    }
+    /**
+     * <code>.CustomGadgetTreeInfo flower_combination_info = 8;</code>
+     * @return The flowerCombinationInfo.
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.CustomGadgetTreeInfoOuterClass.CustomGadgetTreeInfo getFlowerCombinationInfo() {
+      return flowerCombinationInfo_ == null ? emu.grasscutter.net.proto.CustomGadgetTreeInfoOuterClass.CustomGadgetTreeInfo.getDefaultInstance() : flowerCombinationInfo_;
+    }
+    /**
+     * <code>.CustomGadgetTreeInfo flower_combination_info = 8;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.CustomGadgetTreeInfoOuterClass.CustomGadgetTreeInfoOrBuilder getFlowerCombinationInfoOrBuilder() {
+      return getFlowerCombinationInfo();
+    }
+
+    public static final int SCHEDULE_ID_FIELD_NUMBER = 12;
     private int scheduleId_;
     /**
-     * <code>uint32 schedule_id = 9;</code>
+     * <code>uint32 schedule_id = 12;</code>
      * @return The scheduleId.
      */
     @java.lang.Override
@@ -214,14 +218,14 @@ public final class PlantFlowerEditFlowerCombinationReqOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (scheduleId_ != 0) {
-        output.writeUInt32(9, scheduleId_);
+      if (entityId_ != 0) {
+        output.writeUInt32(3, entityId_);
       }
       if (flowerCombinationInfo_ != null) {
-        output.writeMessage(10, getFlowerCombinationInfo());
+        output.writeMessage(8, getFlowerCombinationInfo());
       }
-      if (entityId_ != 0) {
-        output.writeUInt32(14, entityId_);
+      if (scheduleId_ != 0) {
+        output.writeUInt32(12, scheduleId_);
       }
       unknownFields.writeTo(output);
     }
@@ -232,17 +236,17 @@ public final class PlantFlowerEditFlowerCombinationReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (scheduleId_ != 0) {
+      if (entityId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, scheduleId_);
+          .computeUInt32Size(3, entityId_);
       }
       if (flowerCombinationInfo_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(10, getFlowerCombinationInfo());
+          .computeMessageSize(8, getFlowerCombinationInfo());
       }
-      if (entityId_ != 0) {
+      if (scheduleId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, entityId_);
+          .computeUInt32Size(12, scheduleId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -259,13 +263,13 @@ public final class PlantFlowerEditFlowerCombinationReqOuterClass {
       }
       emu.grasscutter.net.proto.PlantFlowerEditFlowerCombinationReqOuterClass.PlantFlowerEditFlowerCombinationReq other = (emu.grasscutter.net.proto.PlantFlowerEditFlowerCombinationReqOuterClass.PlantFlowerEditFlowerCombinationReq) obj;
 
+      if (getEntityId()
+          != other.getEntityId()) return false;
       if (hasFlowerCombinationInfo() != other.hasFlowerCombinationInfo()) return false;
       if (hasFlowerCombinationInfo()) {
         if (!getFlowerCombinationInfo()
             .equals(other.getFlowerCombinationInfo())) return false;
       }
-      if (getEntityId()
-          != other.getEntityId()) return false;
       if (getScheduleId()
           != other.getScheduleId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
@@ -279,12 +283,12 @@ public final class PlantFlowerEditFlowerCombinationReqOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + ENTITY_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getEntityId();
       if (hasFlowerCombinationInfo()) {
         hash = (37 * hash) + FLOWER_COMBINATION_INFO_FIELD_NUMBER;
         hash = (53 * hash) + getFlowerCombinationInfo().hashCode();
       }
-      hash = (37 * hash) + ENTITY_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getEntityId();
       hash = (37 * hash) + SCHEDULE_ID_FIELD_NUMBER;
       hash = (53 * hash) + getScheduleId();
       hash = (29 * hash) + unknownFields.hashCode();
@@ -384,10 +388,14 @@ public final class PlantFlowerEditFlowerCombinationReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 8843
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 8396;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code PlantFlowerEditFlowerCombinationReq}
@@ -427,14 +435,14 @@ public final class PlantFlowerEditFlowerCombinationReqOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        entityId_ = 0;
+
         if (flowerCombinationInfoBuilder_ == null) {
           flowerCombinationInfo_ = null;
         } else {
           flowerCombinationInfo_ = null;
           flowerCombinationInfoBuilder_ = null;
         }
-        entityId_ = 0;
-
         scheduleId_ = 0;
 
         return this;
@@ -463,12 +471,12 @@ public final class PlantFlowerEditFlowerCombinationReqOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.PlantFlowerEditFlowerCombinationReqOuterClass.PlantFlowerEditFlowerCombinationReq buildPartial() {
         emu.grasscutter.net.proto.PlantFlowerEditFlowerCombinationReqOuterClass.PlantFlowerEditFlowerCombinationReq result = new emu.grasscutter.net.proto.PlantFlowerEditFlowerCombinationReqOuterClass.PlantFlowerEditFlowerCombinationReq(this);
+        result.entityId_ = entityId_;
         if (flowerCombinationInfoBuilder_ == null) {
           result.flowerCombinationInfo_ = flowerCombinationInfo_;
         } else {
           result.flowerCombinationInfo_ = flowerCombinationInfoBuilder_.build();
         }
-        result.entityId_ = entityId_;
         result.scheduleId_ = scheduleId_;
         onBuilt();
         return result;
@@ -518,11 +526,11 @@ public final class PlantFlowerEditFlowerCombinationReqOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.PlantFlowerEditFlowerCombinationReqOuterClass.PlantFlowerEditFlowerCombinationReq other) {
         if (other == emu.grasscutter.net.proto.PlantFlowerEditFlowerCombinationReqOuterClass.PlantFlowerEditFlowerCombinationReq.getDefaultInstance()) return this;
-        if (other.hasFlowerCombinationInfo()) {
-          mergeFlowerCombinationInfo(other.getFlowerCombinationInfo());
-        }
         if (other.getEntityId() != 0) {
           setEntityId(other.getEntityId());
+        }
+        if (other.hasFlowerCombinationInfo()) {
+          mergeFlowerCombinationInfo(other.getFlowerCombinationInfo());
         }
         if (other.getScheduleId() != 0) {
           setScheduleId(other.getScheduleId());
@@ -556,18 +564,49 @@ public final class PlantFlowerEditFlowerCombinationReqOuterClass {
         return this;
       }
 
+      private int entityId_ ;
+      /**
+       * <code>uint32 entity_id = 3;</code>
+       * @return The entityId.
+       */
+      @java.lang.Override
+      public int getEntityId() {
+        return entityId_;
+      }
+      /**
+       * <code>uint32 entity_id = 3;</code>
+       * @param value The entityId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setEntityId(int value) {
+        
+        entityId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 entity_id = 3;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearEntityId() {
+        
+        entityId_ = 0;
+        onChanged();
+        return this;
+      }
+
       private emu.grasscutter.net.proto.CustomGadgetTreeInfoOuterClass.CustomGadgetTreeInfo flowerCombinationInfo_;
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.CustomGadgetTreeInfoOuterClass.CustomGadgetTreeInfo, emu.grasscutter.net.proto.CustomGadgetTreeInfoOuterClass.CustomGadgetTreeInfo.Builder, emu.grasscutter.net.proto.CustomGadgetTreeInfoOuterClass.CustomGadgetTreeInfoOrBuilder> flowerCombinationInfoBuilder_;
       /**
-       * <code>.CustomGadgetTreeInfo flower_combination_info = 10;</code>
+       * <code>.CustomGadgetTreeInfo flower_combination_info = 8;</code>
        * @return Whether the flowerCombinationInfo field is set.
        */
       public boolean hasFlowerCombinationInfo() {
         return flowerCombinationInfoBuilder_ != null || flowerCombinationInfo_ != null;
       }
       /**
-       * <code>.CustomGadgetTreeInfo flower_combination_info = 10;</code>
+       * <code>.CustomGadgetTreeInfo flower_combination_info = 8;</code>
        * @return The flowerCombinationInfo.
        */
       public emu.grasscutter.net.proto.CustomGadgetTreeInfoOuterClass.CustomGadgetTreeInfo getFlowerCombinationInfo() {
@@ -578,7 +617,7 @@ public final class PlantFlowerEditFlowerCombinationReqOuterClass {
         }
       }
       /**
-       * <code>.CustomGadgetTreeInfo flower_combination_info = 10;</code>
+       * <code>.CustomGadgetTreeInfo flower_combination_info = 8;</code>
        */
       public Builder setFlowerCombinationInfo(emu.grasscutter.net.proto.CustomGadgetTreeInfoOuterClass.CustomGadgetTreeInfo value) {
         if (flowerCombinationInfoBuilder_ == null) {
@@ -594,7 +633,7 @@ public final class PlantFlowerEditFlowerCombinationReqOuterClass {
         return this;
       }
       /**
-       * <code>.CustomGadgetTreeInfo flower_combination_info = 10;</code>
+       * <code>.CustomGadgetTreeInfo flower_combination_info = 8;</code>
        */
       public Builder setFlowerCombinationInfo(
           emu.grasscutter.net.proto.CustomGadgetTreeInfoOuterClass.CustomGadgetTreeInfo.Builder builderForValue) {
@@ -608,7 +647,7 @@ public final class PlantFlowerEditFlowerCombinationReqOuterClass {
         return this;
       }
       /**
-       * <code>.CustomGadgetTreeInfo flower_combination_info = 10;</code>
+       * <code>.CustomGadgetTreeInfo flower_combination_info = 8;</code>
        */
       public Builder mergeFlowerCombinationInfo(emu.grasscutter.net.proto.CustomGadgetTreeInfoOuterClass.CustomGadgetTreeInfo value) {
         if (flowerCombinationInfoBuilder_ == null) {
@@ -626,7 +665,7 @@ public final class PlantFlowerEditFlowerCombinationReqOuterClass {
         return this;
       }
       /**
-       * <code>.CustomGadgetTreeInfo flower_combination_info = 10;</code>
+       * <code>.CustomGadgetTreeInfo flower_combination_info = 8;</code>
        */
       public Builder clearFlowerCombinationInfo() {
         if (flowerCombinationInfoBuilder_ == null) {
@@ -640,7 +679,7 @@ public final class PlantFlowerEditFlowerCombinationReqOuterClass {
         return this;
       }
       /**
-       * <code>.CustomGadgetTreeInfo flower_combination_info = 10;</code>
+       * <code>.CustomGadgetTreeInfo flower_combination_info = 8;</code>
        */
       public emu.grasscutter.net.proto.CustomGadgetTreeInfoOuterClass.CustomGadgetTreeInfo.Builder getFlowerCombinationInfoBuilder() {
         
@@ -648,7 +687,7 @@ public final class PlantFlowerEditFlowerCombinationReqOuterClass {
         return getFlowerCombinationInfoFieldBuilder().getBuilder();
       }
       /**
-       * <code>.CustomGadgetTreeInfo flower_combination_info = 10;</code>
+       * <code>.CustomGadgetTreeInfo flower_combination_info = 8;</code>
        */
       public emu.grasscutter.net.proto.CustomGadgetTreeInfoOuterClass.CustomGadgetTreeInfoOrBuilder getFlowerCombinationInfoOrBuilder() {
         if (flowerCombinationInfoBuilder_ != null) {
@@ -659,7 +698,7 @@ public final class PlantFlowerEditFlowerCombinationReqOuterClass {
         }
       }
       /**
-       * <code>.CustomGadgetTreeInfo flower_combination_info = 10;</code>
+       * <code>.CustomGadgetTreeInfo flower_combination_info = 8;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.CustomGadgetTreeInfoOuterClass.CustomGadgetTreeInfo, emu.grasscutter.net.proto.CustomGadgetTreeInfoOuterClass.CustomGadgetTreeInfo.Builder, emu.grasscutter.net.proto.CustomGadgetTreeInfoOuterClass.CustomGadgetTreeInfoOrBuilder> 
@@ -675,40 +714,9 @@ public final class PlantFlowerEditFlowerCombinationReqOuterClass {
         return flowerCombinationInfoBuilder_;
       }
 
-      private int entityId_ ;
-      /**
-       * <code>uint32 entity_id = 14;</code>
-       * @return The entityId.
-       */
-      @java.lang.Override
-      public int getEntityId() {
-        return entityId_;
-      }
-      /**
-       * <code>uint32 entity_id = 14;</code>
-       * @param value The entityId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setEntityId(int value) {
-        
-        entityId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 entity_id = 14;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearEntityId() {
-        
-        entityId_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int scheduleId_ ;
       /**
-       * <code>uint32 schedule_id = 9;</code>
+       * <code>uint32 schedule_id = 12;</code>
        * @return The scheduleId.
        */
       @java.lang.Override
@@ -716,7 +724,7 @@ public final class PlantFlowerEditFlowerCombinationReqOuterClass {
         return scheduleId_;
       }
       /**
-       * <code>uint32 schedule_id = 9;</code>
+       * <code>uint32 schedule_id = 12;</code>
        * @param value The scheduleId to set.
        * @return This builder for chaining.
        */
@@ -727,7 +735,7 @@ public final class PlantFlowerEditFlowerCombinationReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 schedule_id = 9;</code>
+       * <code>uint32 schedule_id = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearScheduleId() {
@@ -805,10 +813,10 @@ public final class PlantFlowerEditFlowerCombinationReqOuterClass {
     java.lang.String[] descriptorData = {
       "\n)PlantFlowerEditFlowerCombinationReq.pr" +
       "oto\032\032CustomGadgetTreeInfo.proto\"\205\001\n#Plan" +
-      "tFlowerEditFlowerCombinationReq\0226\n\027flowe" +
-      "r_combination_info\030\n \001(\0132\025.CustomGadgetT" +
-      "reeInfo\022\021\n\tentity_id\030\016 \001(\r\022\023\n\013schedule_i" +
-      "d\030\t \001(\rB\033\n\031emu.grasscutter.net.protob\006pr" +
+      "tFlowerEditFlowerCombinationReq\022\021\n\tentit" +
+      "y_id\030\003 \001(\r\0226\n\027flower_combination_info\030\010 " +
+      "\001(\0132\025.CustomGadgetTreeInfo\022\023\n\013schedule_i" +
+      "d\030\014 \001(\rB\033\n\031emu.grasscutter.net.protob\006pr" +
       "oto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -821,7 +829,7 @@ public final class PlantFlowerEditFlowerCombinationReqOuterClass {
     internal_static_PlantFlowerEditFlowerCombinationReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_PlantFlowerEditFlowerCombinationReq_descriptor,
-        new java.lang.String[] { "FlowerCombinationInfo", "EntityId", "ScheduleId", });
+        new java.lang.String[] { "EntityId", "FlowerCombinationInfo", "ScheduleId", });
     emu.grasscutter.net.proto.CustomGadgetTreeInfoOuterClass.getDescriptor();
   }
 

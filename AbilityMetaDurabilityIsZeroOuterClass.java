@@ -19,7 +19,7 @@ public final class AbilityMetaDurabilityIsZeroOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_zero = 5;</code>
+     * <code>bool is_zero = 6;</code>
      * @return The isZero.
      */
     boolean getIsZero();
@@ -69,7 +69,7 @@ public final class AbilityMetaDurabilityIsZeroOuterClass {
             case 0:
               done = true;
               break;
-            case 40: {
+            case 48: {
 
               isZero_ = input.readBool();
               break;
@@ -106,10 +106,10 @@ public final class AbilityMetaDurabilityIsZeroOuterClass {
               emu.grasscutter.net.proto.AbilityMetaDurabilityIsZeroOuterClass.AbilityMetaDurabilityIsZero.class, emu.grasscutter.net.proto.AbilityMetaDurabilityIsZeroOuterClass.AbilityMetaDurabilityIsZero.Builder.class);
     }
 
-    public static final int IS_ZERO_FIELD_NUMBER = 5;
+    public static final int IS_ZERO_FIELD_NUMBER = 6;
     private boolean isZero_;
     /**
-     * <code>bool is_zero = 5;</code>
+     * <code>bool is_zero = 6;</code>
      * @return The isZero.
      */
     @java.lang.Override
@@ -132,7 +132,7 @@ public final class AbilityMetaDurabilityIsZeroOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (isZero_ != false) {
-        output.writeBool(5, isZero_);
+        output.writeBool(6, isZero_);
       }
       unknownFields.writeTo(output);
     }
@@ -145,7 +145,7 @@ public final class AbilityMetaDurabilityIsZeroOuterClass {
       size = 0;
       if (isZero_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(5, isZero_);
+          .computeBoolSize(6, isZero_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -422,7 +422,7 @@ public final class AbilityMetaDurabilityIsZeroOuterClass {
 
       private boolean isZero_ ;
       /**
-       * <code>bool is_zero = 5;</code>
+       * <code>bool is_zero = 6;</code>
        * @return The isZero.
        */
       @java.lang.Override
@@ -430,7 +430,7 @@ public final class AbilityMetaDurabilityIsZeroOuterClass {
         return isZero_;
       }
       /**
-       * <code>bool is_zero = 5;</code>
+       * <code>bool is_zero = 6;</code>
        * @param value The isZero to set.
        * @return This builder for chaining.
        */
@@ -441,7 +441,7 @@ public final class AbilityMetaDurabilityIsZeroOuterClass {
         return this;
       }
       /**
-       * <code>bool is_zero = 5;</code>
+       * <code>bool is_zero = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsZero() {
@@ -518,7 +518,7 @@ public final class AbilityMetaDurabilityIsZeroOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n!AbilityMetaDurabilityIsZero.proto\".\n\033A" +
-      "bilityMetaDurabilityIsZero\022\017\n\007is_zero\030\005 " +
+      "bilityMetaDurabilityIsZero\022\017\n\007is_zero\030\006 " +
       "\001(\010B\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

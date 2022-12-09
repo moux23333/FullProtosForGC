@@ -19,17 +19,21 @@ public final class ResumeRogueDiaryDungeonReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 stage_id = 2;</code>
+     * <code>uint32 stage_id = 15;</code>
      * @return The stageId.
      */
     int getStageId();
   }
   /**
    * <pre>
-   * CmdId: 8838
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 8704;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code ResumeRogueDiaryDungeonReq}
@@ -76,7 +80,7 @@ public final class ResumeRogueDiaryDungeonReqOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
+            case 120: {
 
               stageId_ = input.readUInt32();
               break;
@@ -113,10 +117,10 @@ public final class ResumeRogueDiaryDungeonReqOuterClass {
               emu.grasscutter.net.proto.ResumeRogueDiaryDungeonReqOuterClass.ResumeRogueDiaryDungeonReq.class, emu.grasscutter.net.proto.ResumeRogueDiaryDungeonReqOuterClass.ResumeRogueDiaryDungeonReq.Builder.class);
     }
 
-    public static final int STAGE_ID_FIELD_NUMBER = 2;
+    public static final int STAGE_ID_FIELD_NUMBER = 15;
     private int stageId_;
     /**
-     * <code>uint32 stage_id = 2;</code>
+     * <code>uint32 stage_id = 15;</code>
      * @return The stageId.
      */
     @java.lang.Override
@@ -139,7 +143,7 @@ public final class ResumeRogueDiaryDungeonReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (stageId_ != 0) {
-        output.writeUInt32(2, stageId_);
+        output.writeUInt32(15, stageId_);
       }
       unknownFields.writeTo(output);
     }
@@ -152,7 +156,7 @@ public final class ResumeRogueDiaryDungeonReqOuterClass {
       size = 0;
       if (stageId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, stageId_);
+          .computeUInt32Size(15, stageId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -281,10 +285,14 @@ public final class ResumeRogueDiaryDungeonReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 8838
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 8704;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code ResumeRogueDiaryDungeonReq}
@@ -435,7 +443,7 @@ public final class ResumeRogueDiaryDungeonReqOuterClass {
 
       private int stageId_ ;
       /**
-       * <code>uint32 stage_id = 2;</code>
+       * <code>uint32 stage_id = 15;</code>
        * @return The stageId.
        */
       @java.lang.Override
@@ -443,7 +451,7 @@ public final class ResumeRogueDiaryDungeonReqOuterClass {
         return stageId_;
       }
       /**
-       * <code>uint32 stage_id = 2;</code>
+       * <code>uint32 stage_id = 15;</code>
        * @param value The stageId to set.
        * @return This builder for chaining.
        */
@@ -454,7 +462,7 @@ public final class ResumeRogueDiaryDungeonReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 stage_id = 2;</code>
+       * <code>uint32 stage_id = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearStageId() {
@@ -531,7 +539,7 @@ public final class ResumeRogueDiaryDungeonReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n ResumeRogueDiaryDungeonReq.proto\".\n\032Re" +
-      "sumeRogueDiaryDungeonReq\022\020\n\010stage_id\030\002 \001" +
+      "sumeRogueDiaryDungeonReq\022\020\n\010stage_id\030\017 \001" +
       "(\rB\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

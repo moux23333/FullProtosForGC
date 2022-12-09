@@ -19,34 +19,38 @@ public final class VintageMarketStartStorePlayRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 prev_round_coin_b = 7;</code>
-     * @return The prevRoundCoinB.
-     */
-    int getPrevRoundCoinB();
-
-    /**
-     * <code>uint32 store_round = 2;</code>
+     * <code>uint32 store_round = 10;</code>
      * @return The storeRound.
      */
     int getStoreRound();
 
     /**
-     * <code>uint32 prev_round_coin_c = 5;</code>
-     * @return The prevRoundCoinC.
+     * <code>uint32 Unk3300_LCCNEKGONFG = 9;</code>
+     * @return The unk3300LCCNEKGONFG.
      */
-    int getPrevRoundCoinC();
+    int getUnk3300LCCNEKGONFG();
 
     /**
-     * <code>int32 retcode = 8;</code>
+     * <code>int32 retcode = 1;</code>
      * @return The retcode.
      */
     int getRetcode();
+
+    /**
+     * <code>uint32 Unk3300_ADJKIIJFNME = 15;</code>
+     * @return The unk3300ADJKIIJFNME.
+     */
+    int getUnk3300ADJKIIJFNME();
   }
   /**
    * <pre>
-   * CmdId: 22130
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 23017;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code VintageMarketStartStorePlayRsp}
@@ -93,24 +97,24 @@ public final class VintageMarketStartStorePlayRspOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
+            case 8: {
+
+              retcode_ = input.readInt32();
+              break;
+            }
+            case 72: {
+
+              unk3300LCCNEKGONFG_ = input.readUInt32();
+              break;
+            }
+            case 80: {
 
               storeRound_ = input.readUInt32();
               break;
             }
-            case 40: {
+            case 120: {
 
-              prevRoundCoinC_ = input.readUInt32();
-              break;
-            }
-            case 56: {
-
-              prevRoundCoinB_ = input.readUInt32();
-              break;
-            }
-            case 64: {
-
-              retcode_ = input.readInt32();
+              unk3300ADJKIIJFNME_ = input.readUInt32();
               break;
             }
             default: {
@@ -145,21 +149,10 @@ public final class VintageMarketStartStorePlayRspOuterClass {
               emu.grasscutter.net.proto.VintageMarketStartStorePlayRspOuterClass.VintageMarketStartStorePlayRsp.class, emu.grasscutter.net.proto.VintageMarketStartStorePlayRspOuterClass.VintageMarketStartStorePlayRsp.Builder.class);
     }
 
-    public static final int PREV_ROUND_COIN_B_FIELD_NUMBER = 7;
-    private int prevRoundCoinB_;
-    /**
-     * <code>uint32 prev_round_coin_b = 7;</code>
-     * @return The prevRoundCoinB.
-     */
-    @java.lang.Override
-    public int getPrevRoundCoinB() {
-      return prevRoundCoinB_;
-    }
-
-    public static final int STORE_ROUND_FIELD_NUMBER = 2;
+    public static final int STORE_ROUND_FIELD_NUMBER = 10;
     private int storeRound_;
     /**
-     * <code>uint32 store_round = 2;</code>
+     * <code>uint32 store_round = 10;</code>
      * @return The storeRound.
      */
     @java.lang.Override
@@ -167,26 +160,37 @@ public final class VintageMarketStartStorePlayRspOuterClass {
       return storeRound_;
     }
 
-    public static final int PREV_ROUND_COIN_C_FIELD_NUMBER = 5;
-    private int prevRoundCoinC_;
+    public static final int UNK3300_LCCNEKGONFG_FIELD_NUMBER = 9;
+    private int unk3300LCCNEKGONFG_;
     /**
-     * <code>uint32 prev_round_coin_c = 5;</code>
-     * @return The prevRoundCoinC.
+     * <code>uint32 Unk3300_LCCNEKGONFG = 9;</code>
+     * @return The unk3300LCCNEKGONFG.
      */
     @java.lang.Override
-    public int getPrevRoundCoinC() {
-      return prevRoundCoinC_;
+    public int getUnk3300LCCNEKGONFG() {
+      return unk3300LCCNEKGONFG_;
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 8;
+    public static final int RETCODE_FIELD_NUMBER = 1;
     private int retcode_;
     /**
-     * <code>int32 retcode = 8;</code>
+     * <code>int32 retcode = 1;</code>
      * @return The retcode.
      */
     @java.lang.Override
     public int getRetcode() {
       return retcode_;
+    }
+
+    public static final int UNK3300_ADJKIIJFNME_FIELD_NUMBER = 15;
+    private int unk3300ADJKIIJFNME_;
+    /**
+     * <code>uint32 Unk3300_ADJKIIJFNME = 15;</code>
+     * @return The unk3300ADJKIIJFNME.
+     */
+    @java.lang.Override
+    public int getUnk3300ADJKIIJFNME() {
+      return unk3300ADJKIIJFNME_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -203,17 +207,17 @@ public final class VintageMarketStartStorePlayRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (storeRound_ != 0) {
-        output.writeUInt32(2, storeRound_);
-      }
-      if (prevRoundCoinC_ != 0) {
-        output.writeUInt32(5, prevRoundCoinC_);
-      }
-      if (prevRoundCoinB_ != 0) {
-        output.writeUInt32(7, prevRoundCoinB_);
-      }
       if (retcode_ != 0) {
-        output.writeInt32(8, retcode_);
+        output.writeInt32(1, retcode_);
+      }
+      if (unk3300LCCNEKGONFG_ != 0) {
+        output.writeUInt32(9, unk3300LCCNEKGONFG_);
+      }
+      if (storeRound_ != 0) {
+        output.writeUInt32(10, storeRound_);
+      }
+      if (unk3300ADJKIIJFNME_ != 0) {
+        output.writeUInt32(15, unk3300ADJKIIJFNME_);
       }
       unknownFields.writeTo(output);
     }
@@ -224,21 +228,21 @@ public final class VintageMarketStartStorePlayRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (storeRound_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, storeRound_);
-      }
-      if (prevRoundCoinC_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, prevRoundCoinC_);
-      }
-      if (prevRoundCoinB_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, prevRoundCoinB_);
-      }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(8, retcode_);
+          .computeInt32Size(1, retcode_);
+      }
+      if (unk3300LCCNEKGONFG_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(9, unk3300LCCNEKGONFG_);
+      }
+      if (storeRound_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(10, storeRound_);
+      }
+      if (unk3300ADJKIIJFNME_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(15, unk3300ADJKIIJFNME_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -255,14 +259,14 @@ public final class VintageMarketStartStorePlayRspOuterClass {
       }
       emu.grasscutter.net.proto.VintageMarketStartStorePlayRspOuterClass.VintageMarketStartStorePlayRsp other = (emu.grasscutter.net.proto.VintageMarketStartStorePlayRspOuterClass.VintageMarketStartStorePlayRsp) obj;
 
-      if (getPrevRoundCoinB()
-          != other.getPrevRoundCoinB()) return false;
       if (getStoreRound()
           != other.getStoreRound()) return false;
-      if (getPrevRoundCoinC()
-          != other.getPrevRoundCoinC()) return false;
+      if (getUnk3300LCCNEKGONFG()
+          != other.getUnk3300LCCNEKGONFG()) return false;
       if (getRetcode()
           != other.getRetcode()) return false;
+      if (getUnk3300ADJKIIJFNME()
+          != other.getUnk3300ADJKIIJFNME()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -274,14 +278,14 @@ public final class VintageMarketStartStorePlayRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + PREV_ROUND_COIN_B_FIELD_NUMBER;
-      hash = (53 * hash) + getPrevRoundCoinB();
       hash = (37 * hash) + STORE_ROUND_FIELD_NUMBER;
       hash = (53 * hash) + getStoreRound();
-      hash = (37 * hash) + PREV_ROUND_COIN_C_FIELD_NUMBER;
-      hash = (53 * hash) + getPrevRoundCoinC();
+      hash = (37 * hash) + UNK3300_LCCNEKGONFG_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300LCCNEKGONFG();
       hash = (37 * hash) + RETCODE_FIELD_NUMBER;
       hash = (53 * hash) + getRetcode();
+      hash = (37 * hash) + UNK3300_ADJKIIJFNME_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300ADJKIIJFNME();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -379,9 +383,13 @@ public final class VintageMarketStartStorePlayRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 22130
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 23017;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code VintageMarketStartStorePlayRsp}
@@ -421,13 +429,13 @@ public final class VintageMarketStartStorePlayRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        prevRoundCoinB_ = 0;
-
         storeRound_ = 0;
 
-        prevRoundCoinC_ = 0;
+        unk3300LCCNEKGONFG_ = 0;
 
         retcode_ = 0;
+
+        unk3300ADJKIIJFNME_ = 0;
 
         return this;
       }
@@ -455,10 +463,10 @@ public final class VintageMarketStartStorePlayRspOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.VintageMarketStartStorePlayRspOuterClass.VintageMarketStartStorePlayRsp buildPartial() {
         emu.grasscutter.net.proto.VintageMarketStartStorePlayRspOuterClass.VintageMarketStartStorePlayRsp result = new emu.grasscutter.net.proto.VintageMarketStartStorePlayRspOuterClass.VintageMarketStartStorePlayRsp(this);
-        result.prevRoundCoinB_ = prevRoundCoinB_;
         result.storeRound_ = storeRound_;
-        result.prevRoundCoinC_ = prevRoundCoinC_;
+        result.unk3300LCCNEKGONFG_ = unk3300LCCNEKGONFG_;
         result.retcode_ = retcode_;
+        result.unk3300ADJKIIJFNME_ = unk3300ADJKIIJFNME_;
         onBuilt();
         return result;
       }
@@ -507,17 +515,17 @@ public final class VintageMarketStartStorePlayRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.VintageMarketStartStorePlayRspOuterClass.VintageMarketStartStorePlayRsp other) {
         if (other == emu.grasscutter.net.proto.VintageMarketStartStorePlayRspOuterClass.VintageMarketStartStorePlayRsp.getDefaultInstance()) return this;
-        if (other.getPrevRoundCoinB() != 0) {
-          setPrevRoundCoinB(other.getPrevRoundCoinB());
-        }
         if (other.getStoreRound() != 0) {
           setStoreRound(other.getStoreRound());
         }
-        if (other.getPrevRoundCoinC() != 0) {
-          setPrevRoundCoinC(other.getPrevRoundCoinC());
+        if (other.getUnk3300LCCNEKGONFG() != 0) {
+          setUnk3300LCCNEKGONFG(other.getUnk3300LCCNEKGONFG());
         }
         if (other.getRetcode() != 0) {
           setRetcode(other.getRetcode());
+        }
+        if (other.getUnk3300ADJKIIJFNME() != 0) {
+          setUnk3300ADJKIIJFNME(other.getUnk3300ADJKIIJFNME());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -548,40 +556,9 @@ public final class VintageMarketStartStorePlayRspOuterClass {
         return this;
       }
 
-      private int prevRoundCoinB_ ;
-      /**
-       * <code>uint32 prev_round_coin_b = 7;</code>
-       * @return The prevRoundCoinB.
-       */
-      @java.lang.Override
-      public int getPrevRoundCoinB() {
-        return prevRoundCoinB_;
-      }
-      /**
-       * <code>uint32 prev_round_coin_b = 7;</code>
-       * @param value The prevRoundCoinB to set.
-       * @return This builder for chaining.
-       */
-      public Builder setPrevRoundCoinB(int value) {
-        
-        prevRoundCoinB_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 prev_round_coin_b = 7;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearPrevRoundCoinB() {
-        
-        prevRoundCoinB_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int storeRound_ ;
       /**
-       * <code>uint32 store_round = 2;</code>
+       * <code>uint32 store_round = 10;</code>
        * @return The storeRound.
        */
       @java.lang.Override
@@ -589,7 +566,7 @@ public final class VintageMarketStartStorePlayRspOuterClass {
         return storeRound_;
       }
       /**
-       * <code>uint32 store_round = 2;</code>
+       * <code>uint32 store_round = 10;</code>
        * @param value The storeRound to set.
        * @return This builder for chaining.
        */
@@ -600,7 +577,7 @@ public final class VintageMarketStartStorePlayRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 store_round = 2;</code>
+       * <code>uint32 store_round = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearStoreRound() {
@@ -610,40 +587,40 @@ public final class VintageMarketStartStorePlayRspOuterClass {
         return this;
       }
 
-      private int prevRoundCoinC_ ;
+      private int unk3300LCCNEKGONFG_ ;
       /**
-       * <code>uint32 prev_round_coin_c = 5;</code>
-       * @return The prevRoundCoinC.
+       * <code>uint32 Unk3300_LCCNEKGONFG = 9;</code>
+       * @return The unk3300LCCNEKGONFG.
        */
       @java.lang.Override
-      public int getPrevRoundCoinC() {
-        return prevRoundCoinC_;
+      public int getUnk3300LCCNEKGONFG() {
+        return unk3300LCCNEKGONFG_;
       }
       /**
-       * <code>uint32 prev_round_coin_c = 5;</code>
-       * @param value The prevRoundCoinC to set.
+       * <code>uint32 Unk3300_LCCNEKGONFG = 9;</code>
+       * @param value The unk3300LCCNEKGONFG to set.
        * @return This builder for chaining.
        */
-      public Builder setPrevRoundCoinC(int value) {
+      public Builder setUnk3300LCCNEKGONFG(int value) {
         
-        prevRoundCoinC_ = value;
+        unk3300LCCNEKGONFG_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 prev_round_coin_c = 5;</code>
+       * <code>uint32 Unk3300_LCCNEKGONFG = 9;</code>
        * @return This builder for chaining.
        */
-      public Builder clearPrevRoundCoinC() {
+      public Builder clearUnk3300LCCNEKGONFG() {
         
-        prevRoundCoinC_ = 0;
+        unk3300LCCNEKGONFG_ = 0;
         onChanged();
         return this;
       }
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 8;</code>
+       * <code>int32 retcode = 1;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -651,7 +628,7 @@ public final class VintageMarketStartStorePlayRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 8;</code>
+       * <code>int32 retcode = 1;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -662,12 +639,43 @@ public final class VintageMarketStartStorePlayRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 8;</code>
+       * <code>int32 retcode = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
         
         retcode_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int unk3300ADJKIIJFNME_ ;
+      /**
+       * <code>uint32 Unk3300_ADJKIIJFNME = 15;</code>
+       * @return The unk3300ADJKIIJFNME.
+       */
+      @java.lang.Override
+      public int getUnk3300ADJKIIJFNME() {
+        return unk3300ADJKIIJFNME_;
+      }
+      /**
+       * <code>uint32 Unk3300_ADJKIIJFNME = 15;</code>
+       * @param value The unk3300ADJKIIJFNME to set.
+       * @return This builder for chaining.
+       */
+      public Builder setUnk3300ADJKIIJFNME(int value) {
+        
+        unk3300ADJKIIJFNME_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 Unk3300_ADJKIIJFNME = 15;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearUnk3300ADJKIIJFNME() {
+        
+        unk3300ADJKIIJFNME_ = 0;
         onChanged();
         return this;
       }
@@ -738,12 +746,12 @@ public final class VintageMarketStartStorePlayRspOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n$VintageMarketStartStorePlayRsp.proto\"|" +
-      "\n\036VintageMarketStartStorePlayRsp\022\031\n\021prev" +
-      "_round_coin_b\030\007 \001(\r\022\023\n\013store_round\030\002 \001(\r" +
-      "\022\031\n\021prev_round_coin_c\030\005 \001(\r\022\017\n\007retcode\030\010" +
-      " \001(\005B\033\n\031emu.grasscutter.net.protob\006proto" +
-      "3"
+      "\n$VintageMarketStartStorePlayRsp.proto\"\200" +
+      "\001\n\036VintageMarketStartStorePlayRsp\022\023\n\013sto" +
+      "re_round\030\n \001(\r\022\033\n\023Unk3300_LCCNEKGONFG\030\t " +
+      "\001(\r\022\017\n\007retcode\030\001 \001(\005\022\033\n\023Unk3300_ADJKIIJF" +
+      "NME\030\017 \001(\rB\033\n\031emu.grasscutter.net.protob\006" +
+      "proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -754,7 +762,7 @@ public final class VintageMarketStartStorePlayRspOuterClass {
     internal_static_VintageMarketStartStorePlayRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_VintageMarketStartStorePlayRsp_descriptor,
-        new java.lang.String[] { "PrevRoundCoinB", "StoreRound", "PrevRoundCoinC", "Retcode", });
+        new java.lang.String[] { "StoreRound", "Unk3300LCCNEKGONFG", "Retcode", "Unk3300ADJKIIJFNME", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

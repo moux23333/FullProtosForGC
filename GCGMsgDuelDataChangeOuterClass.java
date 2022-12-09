@@ -19,7 +19,7 @@ public final class GCGMsgDuelDataChangeOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 round = 14;</code>
+     * <code>uint32 round = 6;</code>
      * @return The round.
      */
     int getRound();
@@ -69,7 +69,7 @@ public final class GCGMsgDuelDataChangeOuterClass {
             case 0:
               done = true;
               break;
-            case 112: {
+            case 48: {
 
               round_ = input.readUInt32();
               break;
@@ -106,10 +106,10 @@ public final class GCGMsgDuelDataChangeOuterClass {
               emu.grasscutter.net.proto.GCGMsgDuelDataChangeOuterClass.GCGMsgDuelDataChange.class, emu.grasscutter.net.proto.GCGMsgDuelDataChangeOuterClass.GCGMsgDuelDataChange.Builder.class);
     }
 
-    public static final int ROUND_FIELD_NUMBER = 14;
+    public static final int ROUND_FIELD_NUMBER = 6;
     private int round_;
     /**
-     * <code>uint32 round = 14;</code>
+     * <code>uint32 round = 6;</code>
      * @return The round.
      */
     @java.lang.Override
@@ -132,7 +132,7 @@ public final class GCGMsgDuelDataChangeOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (round_ != 0) {
-        output.writeUInt32(14, round_);
+        output.writeUInt32(6, round_);
       }
       unknownFields.writeTo(output);
     }
@@ -145,7 +145,7 @@ public final class GCGMsgDuelDataChangeOuterClass {
       size = 0;
       if (round_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, round_);
+          .computeUInt32Size(6, round_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -421,7 +421,7 @@ public final class GCGMsgDuelDataChangeOuterClass {
 
       private int round_ ;
       /**
-       * <code>uint32 round = 14;</code>
+       * <code>uint32 round = 6;</code>
        * @return The round.
        */
       @java.lang.Override
@@ -429,7 +429,7 @@ public final class GCGMsgDuelDataChangeOuterClass {
         return round_;
       }
       /**
-       * <code>uint32 round = 14;</code>
+       * <code>uint32 round = 6;</code>
        * @param value The round to set.
        * @return This builder for chaining.
        */
@@ -440,7 +440,7 @@ public final class GCGMsgDuelDataChangeOuterClass {
         return this;
       }
       /**
-       * <code>uint32 round = 14;</code>
+       * <code>uint32 round = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearRound() {
@@ -517,7 +517,7 @@ public final class GCGMsgDuelDataChangeOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\032GCGMsgDuelDataChange.proto\"%\n\024GCGMsgDu" +
-      "elDataChange\022\r\n\005round\030\016 \001(\rB\033\n\031emu.grass" +
+      "elDataChange\022\r\n\005round\030\006 \001(\rB\033\n\031emu.grass" +
       "cutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

@@ -19,70 +19,70 @@ public final class InBattleMechanicusSettleInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint64 scene_time_ms = 15;</code>
+     * <code>uint64 scene_time_ms = 12;</code>
      * @return The sceneTimeMs.
      */
     long getSceneTimeMs();
 
     /**
-     * <code>uint32 total_token = 4;</code>
-     * @return The totalToken.
-     */
-    int getTotalToken();
-
-    /**
-     * <code>uint32 real_token = 8;</code>
-     * @return The realToken.
-     */
-    int getRealToken();
-
-    /**
-     * <code>repeated .MultistageSettleWatcherInfo watcher_list = 7;</code>
-     */
-    java.util.List<emu.grasscutter.net.proto.MultistageSettleWatcherInfoOuterClass.MultistageSettleWatcherInfo> 
-        getWatcherListList();
-    /**
-     * <code>repeated .MultistageSettleWatcherInfo watcher_list = 7;</code>
-     */
-    emu.grasscutter.net.proto.MultistageSettleWatcherInfoOuterClass.MultistageSettleWatcherInfo getWatcherList(int index);
-    /**
-     * <code>repeated .MultistageSettleWatcherInfo watcher_list = 7;</code>
-     */
-    int getWatcherListCount();
-    /**
-     * <code>repeated .MultistageSettleWatcherInfo watcher_list = 7;</code>
-     */
-    java.util.List<? extends emu.grasscutter.net.proto.MultistageSettleWatcherInfoOuterClass.MultistageSettleWatcherInfoOrBuilder> 
-        getWatcherListOrBuilderList();
-    /**
-     * <code>repeated .MultistageSettleWatcherInfo watcher_list = 7;</code>
-     */
-    emu.grasscutter.net.proto.MultistageSettleWatcherInfoOuterClass.MultistageSettleWatcherInfoOrBuilder getWatcherListOrBuilder(
-        int index);
-
-    /**
-     * <code>bool is_success = 6;</code>
+     * <code>bool is_success = 13;</code>
      * @return The isSuccess.
      */
     boolean getIsSuccess();
 
     /**
-     * <code>uint32 play_index = 3;</code>
+     * <code>uint32 group_id = 10;</code>
+     * @return The groupId.
+     */
+    int getGroupId();
+
+    /**
+     * <code>uint32 Unk3300_EKAIAPLNIPM = 9;</code>
+     * @return The unk3300EKAIAPLNIPM.
+     */
+    int getUnk3300EKAIAPLNIPM();
+
+    /**
+     * <code>uint32 Unk3300_HAEOPAOBBFE = 4;</code>
+     * @return The unk3300HAEOPAOBBFE.
+     */
+    int getUnk3300HAEOPAOBBFE();
+
+    /**
+     * <code>uint32 Unk3300_NAMBBHMJJLN = 11;</code>
+     * @return The unk3300NAMBBHMJJLN.
+     */
+    int getUnk3300NAMBBHMJJLN();
+
+    /**
+     * <code>uint32 play_index = 8;</code>
      * @return The playIndex.
      */
     int getPlayIndex();
 
     /**
-     * <code>uint32 difficulty_percentage = 10;</code>
-     * @return The difficultyPercentage.
+     * <code>repeated .MultistageSettleWatcherInfo watcher_list = 15;</code>
      */
-    int getDifficultyPercentage();
-
+    java.util.List<emu.grasscutter.net.proto.MultistageSettleWatcherInfoOuterClass.MultistageSettleWatcherInfo> 
+        getWatcherListList();
     /**
-     * <code>uint32 group_id = 13;</code>
-     * @return The groupId.
+     * <code>repeated .MultistageSettleWatcherInfo watcher_list = 15;</code>
      */
-    int getGroupId();
+    emu.grasscutter.net.proto.MultistageSettleWatcherInfoOuterClass.MultistageSettleWatcherInfo getWatcherList(int index);
+    /**
+     * <code>repeated .MultistageSettleWatcherInfo watcher_list = 15;</code>
+     */
+    int getWatcherListCount();
+    /**
+     * <code>repeated .MultistageSettleWatcherInfo watcher_list = 15;</code>
+     */
+    java.util.List<? extends emu.grasscutter.net.proto.MultistageSettleWatcherInfoOuterClass.MultistageSettleWatcherInfoOrBuilder> 
+        getWatcherListOrBuilderList();
+    /**
+     * <code>repeated .MultistageSettleWatcherInfo watcher_list = 15;</code>
+     */
+    emu.grasscutter.net.proto.MultistageSettleWatcherInfoOuterClass.MultistageSettleWatcherInfoOrBuilder getWatcherListOrBuilder(
+        int index);
   }
   /**
    * Protobuf type {@code InBattleMechanicusSettleInfo}
@@ -131,48 +131,48 @@ public final class InBattleMechanicusSettleInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 24: {
+            case 32: {
+
+              unk3300HAEOPAOBBFE_ = input.readUInt32();
+              break;
+            }
+            case 64: {
 
               playIndex_ = input.readUInt32();
               break;
             }
-            case 32: {
+            case 72: {
 
-              totalToken_ = input.readUInt32();
+              unk3300EKAIAPLNIPM_ = input.readUInt32();
               break;
             }
-            case 48: {
+            case 80: {
+
+              groupId_ = input.readUInt32();
+              break;
+            }
+            case 88: {
+
+              unk3300NAMBBHMJJLN_ = input.readUInt32();
+              break;
+            }
+            case 96: {
+
+              sceneTimeMs_ = input.readUInt64();
+              break;
+            }
+            case 104: {
 
               isSuccess_ = input.readBool();
               break;
             }
-            case 58: {
+            case 122: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 watcherList_ = new java.util.ArrayList<emu.grasscutter.net.proto.MultistageSettleWatcherInfoOuterClass.MultistageSettleWatcherInfo>();
                 mutable_bitField0_ |= 0x00000001;
               }
               watcherList_.add(
                   input.readMessage(emu.grasscutter.net.proto.MultistageSettleWatcherInfoOuterClass.MultistageSettleWatcherInfo.parser(), extensionRegistry));
-              break;
-            }
-            case 64: {
-
-              realToken_ = input.readUInt32();
-              break;
-            }
-            case 80: {
-
-              difficultyPercentage_ = input.readUInt32();
-              break;
-            }
-            case 104: {
-
-              groupId_ = input.readUInt32();
-              break;
-            }
-            case 120: {
-
-              sceneTimeMs_ = input.readUInt64();
               break;
             }
             default: {
@@ -210,10 +210,10 @@ public final class InBattleMechanicusSettleInfoOuterClass {
               emu.grasscutter.net.proto.InBattleMechanicusSettleInfoOuterClass.InBattleMechanicusSettleInfo.class, emu.grasscutter.net.proto.InBattleMechanicusSettleInfoOuterClass.InBattleMechanicusSettleInfo.Builder.class);
     }
 
-    public static final int SCENE_TIME_MS_FIELD_NUMBER = 15;
+    public static final int SCENE_TIME_MS_FIELD_NUMBER = 12;
     private long sceneTimeMs_;
     /**
-     * <code>uint64 scene_time_ms = 15;</code>
+     * <code>uint64 scene_time_ms = 12;</code>
      * @return The sceneTimeMs.
      */
     @java.lang.Override
@@ -221,72 +221,10 @@ public final class InBattleMechanicusSettleInfoOuterClass {
       return sceneTimeMs_;
     }
 
-    public static final int TOTAL_TOKEN_FIELD_NUMBER = 4;
-    private int totalToken_;
-    /**
-     * <code>uint32 total_token = 4;</code>
-     * @return The totalToken.
-     */
-    @java.lang.Override
-    public int getTotalToken() {
-      return totalToken_;
-    }
-
-    public static final int REAL_TOKEN_FIELD_NUMBER = 8;
-    private int realToken_;
-    /**
-     * <code>uint32 real_token = 8;</code>
-     * @return The realToken.
-     */
-    @java.lang.Override
-    public int getRealToken() {
-      return realToken_;
-    }
-
-    public static final int WATCHER_LIST_FIELD_NUMBER = 7;
-    private java.util.List<emu.grasscutter.net.proto.MultistageSettleWatcherInfoOuterClass.MultistageSettleWatcherInfo> watcherList_;
-    /**
-     * <code>repeated .MultistageSettleWatcherInfo watcher_list = 7;</code>
-     */
-    @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.MultistageSettleWatcherInfoOuterClass.MultistageSettleWatcherInfo> getWatcherListList() {
-      return watcherList_;
-    }
-    /**
-     * <code>repeated .MultistageSettleWatcherInfo watcher_list = 7;</code>
-     */
-    @java.lang.Override
-    public java.util.List<? extends emu.grasscutter.net.proto.MultistageSettleWatcherInfoOuterClass.MultistageSettleWatcherInfoOrBuilder> 
-        getWatcherListOrBuilderList() {
-      return watcherList_;
-    }
-    /**
-     * <code>repeated .MultistageSettleWatcherInfo watcher_list = 7;</code>
-     */
-    @java.lang.Override
-    public int getWatcherListCount() {
-      return watcherList_.size();
-    }
-    /**
-     * <code>repeated .MultistageSettleWatcherInfo watcher_list = 7;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.MultistageSettleWatcherInfoOuterClass.MultistageSettleWatcherInfo getWatcherList(int index) {
-      return watcherList_.get(index);
-    }
-    /**
-     * <code>repeated .MultistageSettleWatcherInfo watcher_list = 7;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.MultistageSettleWatcherInfoOuterClass.MultistageSettleWatcherInfoOrBuilder getWatcherListOrBuilder(
-        int index) {
-      return watcherList_.get(index);
-    }
-
-    public static final int IS_SUCCESS_FIELD_NUMBER = 6;
+    public static final int IS_SUCCESS_FIELD_NUMBER = 13;
     private boolean isSuccess_;
     /**
-     * <code>bool is_success = 6;</code>
+     * <code>bool is_success = 13;</code>
      * @return The isSuccess.
      */
     @java.lang.Override
@@ -294,10 +232,54 @@ public final class InBattleMechanicusSettleInfoOuterClass {
       return isSuccess_;
     }
 
-    public static final int PLAY_INDEX_FIELD_NUMBER = 3;
+    public static final int GROUP_ID_FIELD_NUMBER = 10;
+    private int groupId_;
+    /**
+     * <code>uint32 group_id = 10;</code>
+     * @return The groupId.
+     */
+    @java.lang.Override
+    public int getGroupId() {
+      return groupId_;
+    }
+
+    public static final int UNK3300_EKAIAPLNIPM_FIELD_NUMBER = 9;
+    private int unk3300EKAIAPLNIPM_;
+    /**
+     * <code>uint32 Unk3300_EKAIAPLNIPM = 9;</code>
+     * @return The unk3300EKAIAPLNIPM.
+     */
+    @java.lang.Override
+    public int getUnk3300EKAIAPLNIPM() {
+      return unk3300EKAIAPLNIPM_;
+    }
+
+    public static final int UNK3300_HAEOPAOBBFE_FIELD_NUMBER = 4;
+    private int unk3300HAEOPAOBBFE_;
+    /**
+     * <code>uint32 Unk3300_HAEOPAOBBFE = 4;</code>
+     * @return The unk3300HAEOPAOBBFE.
+     */
+    @java.lang.Override
+    public int getUnk3300HAEOPAOBBFE() {
+      return unk3300HAEOPAOBBFE_;
+    }
+
+    public static final int UNK3300_NAMBBHMJJLN_FIELD_NUMBER = 11;
+    private int unk3300NAMBBHMJJLN_;
+    /**
+     * <code>uint32 Unk3300_NAMBBHMJJLN = 11;</code>
+     * @return The unk3300NAMBBHMJJLN.
+     */
+    @java.lang.Override
+    public int getUnk3300NAMBBHMJJLN() {
+      return unk3300NAMBBHMJJLN_;
+    }
+
+    public static final int PLAY_INDEX_FIELD_NUMBER = 8;
     private int playIndex_;
     /**
-     * <code>uint32 play_index = 3;</code>
+     * <code>uint32 play_index = 8;</code>
      * @return The playIndex.
      */
     @java.lang.Override
@@ -305,26 +287,44 @@ public final class InBattleMechanicusSettleInfoOuterClass {
       return playIndex_;
     }
 
-    public static final int DIFFICULTY_PERCENTAGE_FIELD_NUMBER = 10;
-    private int difficultyPercentage_;
+    public static final int WATCHER_LIST_FIELD_NUMBER = 15;
+    private java.util.List<emu.grasscutter.net.proto.MultistageSettleWatcherInfoOuterClass.MultistageSettleWatcherInfo> watcherList_;
     /**
-     * <code>uint32 difficulty_percentage = 10;</code>
-     * @return The difficultyPercentage.
+     * <code>repeated .MultistageSettleWatcherInfo watcher_list = 15;</code>
      */
     @java.lang.Override
-    public int getDifficultyPercentage() {
-      return difficultyPercentage_;
+    public java.util.List<emu.grasscutter.net.proto.MultistageSettleWatcherInfoOuterClass.MultistageSettleWatcherInfo> getWatcherListList() {
+      return watcherList_;
     }
-
-    public static final int GROUP_ID_FIELD_NUMBER = 13;
-    private int groupId_;
     /**
-     * <code>uint32 group_id = 13;</code>
-     * @return The groupId.
+     * <code>repeated .MultistageSettleWatcherInfo watcher_list = 15;</code>
      */
     @java.lang.Override
-    public int getGroupId() {
-      return groupId_;
+    public java.util.List<? extends emu.grasscutter.net.proto.MultistageSettleWatcherInfoOuterClass.MultistageSettleWatcherInfoOrBuilder> 
+        getWatcherListOrBuilderList() {
+      return watcherList_;
+    }
+    /**
+     * <code>repeated .MultistageSettleWatcherInfo watcher_list = 15;</code>
+     */
+    @java.lang.Override
+    public int getWatcherListCount() {
+      return watcherList_.size();
+    }
+    /**
+     * <code>repeated .MultistageSettleWatcherInfo watcher_list = 15;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.MultistageSettleWatcherInfoOuterClass.MultistageSettleWatcherInfo getWatcherList(int index) {
+      return watcherList_.get(index);
+    }
+    /**
+     * <code>repeated .MultistageSettleWatcherInfo watcher_list = 15;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.MultistageSettleWatcherInfoOuterClass.MultistageSettleWatcherInfoOrBuilder getWatcherListOrBuilder(
+        int index) {
+      return watcherList_.get(index);
     }
 
     private byte memoizedIsInitialized = -1;
@@ -341,29 +341,29 @@ public final class InBattleMechanicusSettleInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (unk3300HAEOPAOBBFE_ != 0) {
+        output.writeUInt32(4, unk3300HAEOPAOBBFE_);
+      }
       if (playIndex_ != 0) {
-        output.writeUInt32(3, playIndex_);
+        output.writeUInt32(8, playIndex_);
       }
-      if (totalToken_ != 0) {
-        output.writeUInt32(4, totalToken_);
-      }
-      if (isSuccess_ != false) {
-        output.writeBool(6, isSuccess_);
-      }
-      for (int i = 0; i < watcherList_.size(); i++) {
-        output.writeMessage(7, watcherList_.get(i));
-      }
-      if (realToken_ != 0) {
-        output.writeUInt32(8, realToken_);
-      }
-      if (difficultyPercentage_ != 0) {
-        output.writeUInt32(10, difficultyPercentage_);
+      if (unk3300EKAIAPLNIPM_ != 0) {
+        output.writeUInt32(9, unk3300EKAIAPLNIPM_);
       }
       if (groupId_ != 0) {
-        output.writeUInt32(13, groupId_);
+        output.writeUInt32(10, groupId_);
+      }
+      if (unk3300NAMBBHMJJLN_ != 0) {
+        output.writeUInt32(11, unk3300NAMBBHMJJLN_);
       }
       if (sceneTimeMs_ != 0L) {
-        output.writeUInt64(15, sceneTimeMs_);
+        output.writeUInt64(12, sceneTimeMs_);
+      }
+      if (isSuccess_ != false) {
+        output.writeBool(13, isSuccess_);
+      }
+      for (int i = 0; i < watcherList_.size(); i++) {
+        output.writeMessage(15, watcherList_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -374,37 +374,37 @@ public final class InBattleMechanicusSettleInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (unk3300HAEOPAOBBFE_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(4, unk3300HAEOPAOBBFE_);
+      }
       if (playIndex_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, playIndex_);
+          .computeUInt32Size(8, playIndex_);
       }
-      if (totalToken_ != 0) {
+      if (unk3300EKAIAPLNIPM_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, totalToken_);
-      }
-      if (isSuccess_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(6, isSuccess_);
-      }
-      for (int i = 0; i < watcherList_.size(); i++) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(7, watcherList_.get(i));
-      }
-      if (realToken_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, realToken_);
-      }
-      if (difficultyPercentage_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, difficultyPercentage_);
+          .computeUInt32Size(9, unk3300EKAIAPLNIPM_);
       }
       if (groupId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, groupId_);
+          .computeUInt32Size(10, groupId_);
+      }
+      if (unk3300NAMBBHMJJLN_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(11, unk3300NAMBBHMJJLN_);
       }
       if (sceneTimeMs_ != 0L) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt64Size(15, sceneTimeMs_);
+          .computeUInt64Size(12, sceneTimeMs_);
+      }
+      if (isSuccess_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(13, isSuccess_);
+      }
+      for (int i = 0; i < watcherList_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(15, watcherList_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -423,20 +423,20 @@ public final class InBattleMechanicusSettleInfoOuterClass {
 
       if (getSceneTimeMs()
           != other.getSceneTimeMs()) return false;
-      if (getTotalToken()
-          != other.getTotalToken()) return false;
-      if (getRealToken()
-          != other.getRealToken()) return false;
-      if (!getWatcherListList()
-          .equals(other.getWatcherListList())) return false;
       if (getIsSuccess()
           != other.getIsSuccess()) return false;
-      if (getPlayIndex()
-          != other.getPlayIndex()) return false;
-      if (getDifficultyPercentage()
-          != other.getDifficultyPercentage()) return false;
       if (getGroupId()
           != other.getGroupId()) return false;
+      if (getUnk3300EKAIAPLNIPM()
+          != other.getUnk3300EKAIAPLNIPM()) return false;
+      if (getUnk3300HAEOPAOBBFE()
+          != other.getUnk3300HAEOPAOBBFE()) return false;
+      if (getUnk3300NAMBBHMJJLN()
+          != other.getUnk3300NAMBBHMJJLN()) return false;
+      if (getPlayIndex()
+          != other.getPlayIndex()) return false;
+      if (!getWatcherListList()
+          .equals(other.getWatcherListList())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -451,23 +451,23 @@ public final class InBattleMechanicusSettleInfoOuterClass {
       hash = (37 * hash) + SCENE_TIME_MS_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
           getSceneTimeMs());
-      hash = (37 * hash) + TOTAL_TOKEN_FIELD_NUMBER;
-      hash = (53 * hash) + getTotalToken();
-      hash = (37 * hash) + REAL_TOKEN_FIELD_NUMBER;
-      hash = (53 * hash) + getRealToken();
+      hash = (37 * hash) + IS_SUCCESS_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getIsSuccess());
+      hash = (37 * hash) + GROUP_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getGroupId();
+      hash = (37 * hash) + UNK3300_EKAIAPLNIPM_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300EKAIAPLNIPM();
+      hash = (37 * hash) + UNK3300_HAEOPAOBBFE_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300HAEOPAOBBFE();
+      hash = (37 * hash) + UNK3300_NAMBBHMJJLN_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300NAMBBHMJJLN();
+      hash = (37 * hash) + PLAY_INDEX_FIELD_NUMBER;
+      hash = (53 * hash) + getPlayIndex();
       if (getWatcherListCount() > 0) {
         hash = (37 * hash) + WATCHER_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getWatcherListList().hashCode();
       }
-      hash = (37 * hash) + IS_SUCCESS_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsSuccess());
-      hash = (37 * hash) + PLAY_INDEX_FIELD_NUMBER;
-      hash = (53 * hash) + getPlayIndex();
-      hash = (37 * hash) + DIFFICULTY_PERCENTAGE_FIELD_NUMBER;
-      hash = (53 * hash) + getDifficultyPercentage();
-      hash = (37 * hash) + GROUP_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getGroupId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -604,9 +604,17 @@ public final class InBattleMechanicusSettleInfoOuterClass {
         super.clear();
         sceneTimeMs_ = 0L;
 
-        totalToken_ = 0;
+        isSuccess_ = false;
 
-        realToken_ = 0;
+        groupId_ = 0;
+
+        unk3300EKAIAPLNIPM_ = 0;
+
+        unk3300HAEOPAOBBFE_ = 0;
+
+        unk3300NAMBBHMJJLN_ = 0;
+
+        playIndex_ = 0;
 
         if (watcherListBuilder_ == null) {
           watcherList_ = java.util.Collections.emptyList();
@@ -614,14 +622,6 @@ public final class InBattleMechanicusSettleInfoOuterClass {
         } else {
           watcherListBuilder_.clear();
         }
-        isSuccess_ = false;
-
-        playIndex_ = 0;
-
-        difficultyPercentage_ = 0;
-
-        groupId_ = 0;
-
         return this;
       }
 
@@ -650,8 +650,12 @@ public final class InBattleMechanicusSettleInfoOuterClass {
         emu.grasscutter.net.proto.InBattleMechanicusSettleInfoOuterClass.InBattleMechanicusSettleInfo result = new emu.grasscutter.net.proto.InBattleMechanicusSettleInfoOuterClass.InBattleMechanicusSettleInfo(this);
         int from_bitField0_ = bitField0_;
         result.sceneTimeMs_ = sceneTimeMs_;
-        result.totalToken_ = totalToken_;
-        result.realToken_ = realToken_;
+        result.isSuccess_ = isSuccess_;
+        result.groupId_ = groupId_;
+        result.unk3300EKAIAPLNIPM_ = unk3300EKAIAPLNIPM_;
+        result.unk3300HAEOPAOBBFE_ = unk3300HAEOPAOBBFE_;
+        result.unk3300NAMBBHMJJLN_ = unk3300NAMBBHMJJLN_;
+        result.playIndex_ = playIndex_;
         if (watcherListBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0)) {
             watcherList_ = java.util.Collections.unmodifiableList(watcherList_);
@@ -661,10 +665,6 @@ public final class InBattleMechanicusSettleInfoOuterClass {
         } else {
           result.watcherList_ = watcherListBuilder_.build();
         }
-        result.isSuccess_ = isSuccess_;
-        result.playIndex_ = playIndex_;
-        result.difficultyPercentage_ = difficultyPercentage_;
-        result.groupId_ = groupId_;
         onBuilt();
         return result;
       }
@@ -716,11 +716,23 @@ public final class InBattleMechanicusSettleInfoOuterClass {
         if (other.getSceneTimeMs() != 0L) {
           setSceneTimeMs(other.getSceneTimeMs());
         }
-        if (other.getTotalToken() != 0) {
-          setTotalToken(other.getTotalToken());
+        if (other.getIsSuccess() != false) {
+          setIsSuccess(other.getIsSuccess());
         }
-        if (other.getRealToken() != 0) {
-          setRealToken(other.getRealToken());
+        if (other.getGroupId() != 0) {
+          setGroupId(other.getGroupId());
+        }
+        if (other.getUnk3300EKAIAPLNIPM() != 0) {
+          setUnk3300EKAIAPLNIPM(other.getUnk3300EKAIAPLNIPM());
+        }
+        if (other.getUnk3300HAEOPAOBBFE() != 0) {
+          setUnk3300HAEOPAOBBFE(other.getUnk3300HAEOPAOBBFE());
+        }
+        if (other.getUnk3300NAMBBHMJJLN() != 0) {
+          setUnk3300NAMBBHMJJLN(other.getUnk3300NAMBBHMJJLN());
+        }
+        if (other.getPlayIndex() != 0) {
+          setPlayIndex(other.getPlayIndex());
         }
         if (watcherListBuilder_ == null) {
           if (!other.watcherList_.isEmpty()) {
@@ -747,18 +759,6 @@ public final class InBattleMechanicusSettleInfoOuterClass {
               watcherListBuilder_.addAllMessages(other.watcherList_);
             }
           }
-        }
-        if (other.getIsSuccess() != false) {
-          setIsSuccess(other.getIsSuccess());
-        }
-        if (other.getPlayIndex() != 0) {
-          setPlayIndex(other.getPlayIndex());
-        }
-        if (other.getDifficultyPercentage() != 0) {
-          setDifficultyPercentage(other.getDifficultyPercentage());
-        }
-        if (other.getGroupId() != 0) {
-          setGroupId(other.getGroupId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -792,7 +792,7 @@ public final class InBattleMechanicusSettleInfoOuterClass {
 
       private long sceneTimeMs_ ;
       /**
-       * <code>uint64 scene_time_ms = 15;</code>
+       * <code>uint64 scene_time_ms = 12;</code>
        * @return The sceneTimeMs.
        */
       @java.lang.Override
@@ -800,7 +800,7 @@ public final class InBattleMechanicusSettleInfoOuterClass {
         return sceneTimeMs_;
       }
       /**
-       * <code>uint64 scene_time_ms = 15;</code>
+       * <code>uint64 scene_time_ms = 12;</code>
        * @param value The sceneTimeMs to set.
        * @return This builder for chaining.
        */
@@ -811,7 +811,7 @@ public final class InBattleMechanicusSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint64 scene_time_ms = 15;</code>
+       * <code>uint64 scene_time_ms = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearSceneTimeMs() {
@@ -821,64 +821,188 @@ public final class InBattleMechanicusSettleInfoOuterClass {
         return this;
       }
 
-      private int totalToken_ ;
+      private boolean isSuccess_ ;
       /**
-       * <code>uint32 total_token = 4;</code>
-       * @return The totalToken.
+       * <code>bool is_success = 13;</code>
+       * @return The isSuccess.
        */
       @java.lang.Override
-      public int getTotalToken() {
-        return totalToken_;
+      public boolean getIsSuccess() {
+        return isSuccess_;
       }
       /**
-       * <code>uint32 total_token = 4;</code>
-       * @param value The totalToken to set.
+       * <code>bool is_success = 13;</code>
+       * @param value The isSuccess to set.
        * @return This builder for chaining.
        */
-      public Builder setTotalToken(int value) {
+      public Builder setIsSuccess(boolean value) {
         
-        totalToken_ = value;
+        isSuccess_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 total_token = 4;</code>
+       * <code>bool is_success = 13;</code>
        * @return This builder for chaining.
        */
-      public Builder clearTotalToken() {
+      public Builder clearIsSuccess() {
         
-        totalToken_ = 0;
+        isSuccess_ = false;
         onChanged();
         return this;
       }
 
-      private int realToken_ ;
+      private int groupId_ ;
       /**
-       * <code>uint32 real_token = 8;</code>
-       * @return The realToken.
+       * <code>uint32 group_id = 10;</code>
+       * @return The groupId.
        */
       @java.lang.Override
-      public int getRealToken() {
-        return realToken_;
+      public int getGroupId() {
+        return groupId_;
       }
       /**
-       * <code>uint32 real_token = 8;</code>
-       * @param value The realToken to set.
+       * <code>uint32 group_id = 10;</code>
+       * @param value The groupId to set.
        * @return This builder for chaining.
        */
-      public Builder setRealToken(int value) {
+      public Builder setGroupId(int value) {
         
-        realToken_ = value;
+        groupId_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 real_token = 8;</code>
+       * <code>uint32 group_id = 10;</code>
        * @return This builder for chaining.
        */
-      public Builder clearRealToken() {
+      public Builder clearGroupId() {
         
-        realToken_ = 0;
+        groupId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int unk3300EKAIAPLNIPM_ ;
+      /**
+       * <code>uint32 Unk3300_EKAIAPLNIPM = 9;</code>
+       * @return The unk3300EKAIAPLNIPM.
+       */
+      @java.lang.Override
+      public int getUnk3300EKAIAPLNIPM() {
+        return unk3300EKAIAPLNIPM_;
+      }
+      /**
+       * <code>uint32 Unk3300_EKAIAPLNIPM = 9;</code>
+       * @param value The unk3300EKAIAPLNIPM to set.
+       * @return This builder for chaining.
+       */
+      public Builder setUnk3300EKAIAPLNIPM(int value) {
+        
+        unk3300EKAIAPLNIPM_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 Unk3300_EKAIAPLNIPM = 9;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearUnk3300EKAIAPLNIPM() {
+        
+        unk3300EKAIAPLNIPM_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int unk3300HAEOPAOBBFE_ ;
+      /**
+       * <code>uint32 Unk3300_HAEOPAOBBFE = 4;</code>
+       * @return The unk3300HAEOPAOBBFE.
+       */
+      @java.lang.Override
+      public int getUnk3300HAEOPAOBBFE() {
+        return unk3300HAEOPAOBBFE_;
+      }
+      /**
+       * <code>uint32 Unk3300_HAEOPAOBBFE = 4;</code>
+       * @param value The unk3300HAEOPAOBBFE to set.
+       * @return This builder for chaining.
+       */
+      public Builder setUnk3300HAEOPAOBBFE(int value) {
+        
+        unk3300HAEOPAOBBFE_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 Unk3300_HAEOPAOBBFE = 4;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearUnk3300HAEOPAOBBFE() {
+        
+        unk3300HAEOPAOBBFE_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int unk3300NAMBBHMJJLN_ ;
+      /**
+       * <code>uint32 Unk3300_NAMBBHMJJLN = 11;</code>
+       * @return The unk3300NAMBBHMJJLN.
+       */
+      @java.lang.Override
+      public int getUnk3300NAMBBHMJJLN() {
+        return unk3300NAMBBHMJJLN_;
+      }
+      /**
+       * <code>uint32 Unk3300_NAMBBHMJJLN = 11;</code>
+       * @param value The unk3300NAMBBHMJJLN to set.
+       * @return This builder for chaining.
+       */
+      public Builder setUnk3300NAMBBHMJJLN(int value) {
+        
+        unk3300NAMBBHMJJLN_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 Unk3300_NAMBBHMJJLN = 11;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearUnk3300NAMBBHMJJLN() {
+        
+        unk3300NAMBBHMJJLN_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int playIndex_ ;
+      /**
+       * <code>uint32 play_index = 8;</code>
+       * @return The playIndex.
+       */
+      @java.lang.Override
+      public int getPlayIndex() {
+        return playIndex_;
+      }
+      /**
+       * <code>uint32 play_index = 8;</code>
+       * @param value The playIndex to set.
+       * @return This builder for chaining.
+       */
+      public Builder setPlayIndex(int value) {
+        
+        playIndex_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 play_index = 8;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearPlayIndex() {
+        
+        playIndex_ = 0;
         onChanged();
         return this;
       }
@@ -896,7 +1020,7 @@ public final class InBattleMechanicusSettleInfoOuterClass {
           emu.grasscutter.net.proto.MultistageSettleWatcherInfoOuterClass.MultistageSettleWatcherInfo, emu.grasscutter.net.proto.MultistageSettleWatcherInfoOuterClass.MultistageSettleWatcherInfo.Builder, emu.grasscutter.net.proto.MultistageSettleWatcherInfoOuterClass.MultistageSettleWatcherInfoOrBuilder> watcherListBuilder_;
 
       /**
-       * <code>repeated .MultistageSettleWatcherInfo watcher_list = 7;</code>
+       * <code>repeated .MultistageSettleWatcherInfo watcher_list = 15;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.MultistageSettleWatcherInfoOuterClass.MultistageSettleWatcherInfo> getWatcherListList() {
         if (watcherListBuilder_ == null) {
@@ -906,7 +1030,7 @@ public final class InBattleMechanicusSettleInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .MultistageSettleWatcherInfo watcher_list = 7;</code>
+       * <code>repeated .MultistageSettleWatcherInfo watcher_list = 15;</code>
        */
       public int getWatcherListCount() {
         if (watcherListBuilder_ == null) {
@@ -916,7 +1040,7 @@ public final class InBattleMechanicusSettleInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .MultistageSettleWatcherInfo watcher_list = 7;</code>
+       * <code>repeated .MultistageSettleWatcherInfo watcher_list = 15;</code>
        */
       public emu.grasscutter.net.proto.MultistageSettleWatcherInfoOuterClass.MultistageSettleWatcherInfo getWatcherList(int index) {
         if (watcherListBuilder_ == null) {
@@ -926,7 +1050,7 @@ public final class InBattleMechanicusSettleInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .MultistageSettleWatcherInfo watcher_list = 7;</code>
+       * <code>repeated .MultistageSettleWatcherInfo watcher_list = 15;</code>
        */
       public Builder setWatcherList(
           int index, emu.grasscutter.net.proto.MultistageSettleWatcherInfoOuterClass.MultistageSettleWatcherInfo value) {
@@ -943,7 +1067,7 @@ public final class InBattleMechanicusSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .MultistageSettleWatcherInfo watcher_list = 7;</code>
+       * <code>repeated .MultistageSettleWatcherInfo watcher_list = 15;</code>
        */
       public Builder setWatcherList(
           int index, emu.grasscutter.net.proto.MultistageSettleWatcherInfoOuterClass.MultistageSettleWatcherInfo.Builder builderForValue) {
@@ -957,7 +1081,7 @@ public final class InBattleMechanicusSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .MultistageSettleWatcherInfo watcher_list = 7;</code>
+       * <code>repeated .MultistageSettleWatcherInfo watcher_list = 15;</code>
        */
       public Builder addWatcherList(emu.grasscutter.net.proto.MultistageSettleWatcherInfoOuterClass.MultistageSettleWatcherInfo value) {
         if (watcherListBuilder_ == null) {
@@ -973,7 +1097,7 @@ public final class InBattleMechanicusSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .MultistageSettleWatcherInfo watcher_list = 7;</code>
+       * <code>repeated .MultistageSettleWatcherInfo watcher_list = 15;</code>
        */
       public Builder addWatcherList(
           int index, emu.grasscutter.net.proto.MultistageSettleWatcherInfoOuterClass.MultistageSettleWatcherInfo value) {
@@ -990,7 +1114,7 @@ public final class InBattleMechanicusSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .MultistageSettleWatcherInfo watcher_list = 7;</code>
+       * <code>repeated .MultistageSettleWatcherInfo watcher_list = 15;</code>
        */
       public Builder addWatcherList(
           emu.grasscutter.net.proto.MultistageSettleWatcherInfoOuterClass.MultistageSettleWatcherInfo.Builder builderForValue) {
@@ -1004,7 +1128,7 @@ public final class InBattleMechanicusSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .MultistageSettleWatcherInfo watcher_list = 7;</code>
+       * <code>repeated .MultistageSettleWatcherInfo watcher_list = 15;</code>
        */
       public Builder addWatcherList(
           int index, emu.grasscutter.net.proto.MultistageSettleWatcherInfoOuterClass.MultistageSettleWatcherInfo.Builder builderForValue) {
@@ -1018,7 +1142,7 @@ public final class InBattleMechanicusSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .MultistageSettleWatcherInfo watcher_list = 7;</code>
+       * <code>repeated .MultistageSettleWatcherInfo watcher_list = 15;</code>
        */
       public Builder addAllWatcherList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.MultistageSettleWatcherInfoOuterClass.MultistageSettleWatcherInfo> values) {
@@ -1033,7 +1157,7 @@ public final class InBattleMechanicusSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .MultistageSettleWatcherInfo watcher_list = 7;</code>
+       * <code>repeated .MultistageSettleWatcherInfo watcher_list = 15;</code>
        */
       public Builder clearWatcherList() {
         if (watcherListBuilder_ == null) {
@@ -1046,7 +1170,7 @@ public final class InBattleMechanicusSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .MultistageSettleWatcherInfo watcher_list = 7;</code>
+       * <code>repeated .MultistageSettleWatcherInfo watcher_list = 15;</code>
        */
       public Builder removeWatcherList(int index) {
         if (watcherListBuilder_ == null) {
@@ -1059,14 +1183,14 @@ public final class InBattleMechanicusSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .MultistageSettleWatcherInfo watcher_list = 7;</code>
+       * <code>repeated .MultistageSettleWatcherInfo watcher_list = 15;</code>
        */
       public emu.grasscutter.net.proto.MultistageSettleWatcherInfoOuterClass.MultistageSettleWatcherInfo.Builder getWatcherListBuilder(
           int index) {
         return getWatcherListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .MultistageSettleWatcherInfo watcher_list = 7;</code>
+       * <code>repeated .MultistageSettleWatcherInfo watcher_list = 15;</code>
        */
       public emu.grasscutter.net.proto.MultistageSettleWatcherInfoOuterClass.MultistageSettleWatcherInfoOrBuilder getWatcherListOrBuilder(
           int index) {
@@ -1076,7 +1200,7 @@ public final class InBattleMechanicusSettleInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .MultistageSettleWatcherInfo watcher_list = 7;</code>
+       * <code>repeated .MultistageSettleWatcherInfo watcher_list = 15;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.MultistageSettleWatcherInfoOuterClass.MultistageSettleWatcherInfoOrBuilder> 
            getWatcherListOrBuilderList() {
@@ -1087,14 +1211,14 @@ public final class InBattleMechanicusSettleInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .MultistageSettleWatcherInfo watcher_list = 7;</code>
+       * <code>repeated .MultistageSettleWatcherInfo watcher_list = 15;</code>
        */
       public emu.grasscutter.net.proto.MultistageSettleWatcherInfoOuterClass.MultistageSettleWatcherInfo.Builder addWatcherListBuilder() {
         return getWatcherListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.MultistageSettleWatcherInfoOuterClass.MultistageSettleWatcherInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .MultistageSettleWatcherInfo watcher_list = 7;</code>
+       * <code>repeated .MultistageSettleWatcherInfo watcher_list = 15;</code>
        */
       public emu.grasscutter.net.proto.MultistageSettleWatcherInfoOuterClass.MultistageSettleWatcherInfo.Builder addWatcherListBuilder(
           int index) {
@@ -1102,7 +1226,7 @@ public final class InBattleMechanicusSettleInfoOuterClass {
             index, emu.grasscutter.net.proto.MultistageSettleWatcherInfoOuterClass.MultistageSettleWatcherInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .MultistageSettleWatcherInfo watcher_list = 7;</code>
+       * <code>repeated .MultistageSettleWatcherInfo watcher_list = 15;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.MultistageSettleWatcherInfoOuterClass.MultistageSettleWatcherInfo.Builder> 
            getWatcherListBuilderList() {
@@ -1121,130 +1245,6 @@ public final class InBattleMechanicusSettleInfoOuterClass {
           watcherList_ = null;
         }
         return watcherListBuilder_;
-      }
-
-      private boolean isSuccess_ ;
-      /**
-       * <code>bool is_success = 6;</code>
-       * @return The isSuccess.
-       */
-      @java.lang.Override
-      public boolean getIsSuccess() {
-        return isSuccess_;
-      }
-      /**
-       * <code>bool is_success = 6;</code>
-       * @param value The isSuccess to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsSuccess(boolean value) {
-        
-        isSuccess_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_success = 6;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsSuccess() {
-        
-        isSuccess_ = false;
-        onChanged();
-        return this;
-      }
-
-      private int playIndex_ ;
-      /**
-       * <code>uint32 play_index = 3;</code>
-       * @return The playIndex.
-       */
-      @java.lang.Override
-      public int getPlayIndex() {
-        return playIndex_;
-      }
-      /**
-       * <code>uint32 play_index = 3;</code>
-       * @param value The playIndex to set.
-       * @return This builder for chaining.
-       */
-      public Builder setPlayIndex(int value) {
-        
-        playIndex_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 play_index = 3;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearPlayIndex() {
-        
-        playIndex_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int difficultyPercentage_ ;
-      /**
-       * <code>uint32 difficulty_percentage = 10;</code>
-       * @return The difficultyPercentage.
-       */
-      @java.lang.Override
-      public int getDifficultyPercentage() {
-        return difficultyPercentage_;
-      }
-      /**
-       * <code>uint32 difficulty_percentage = 10;</code>
-       * @param value The difficultyPercentage to set.
-       * @return This builder for chaining.
-       */
-      public Builder setDifficultyPercentage(int value) {
-        
-        difficultyPercentage_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 difficulty_percentage = 10;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearDifficultyPercentage() {
-        
-        difficultyPercentage_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int groupId_ ;
-      /**
-       * <code>uint32 group_id = 13;</code>
-       * @return The groupId.
-       */
-      @java.lang.Override
-      public int getGroupId() {
-        return groupId_;
-      }
-      /**
-       * <code>uint32 group_id = 13;</code>
-       * @param value The groupId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setGroupId(int value) {
-        
-        groupId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 group_id = 13;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearGroupId() {
-        
-        groupId_ = 0;
-        onChanged();
-        return this;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -1314,14 +1314,15 @@ public final class InBattleMechanicusSettleInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\"InBattleMechanicusSettleInfo.proto\032!Mu" +
-      "ltistageSettleWatcherInfo.proto\"\353\001\n\034InBa" +
+      "ltistageSettleWatcherInfo.proto\"\372\001\n\034InBa" +
       "ttleMechanicusSettleInfo\022\025\n\rscene_time_m" +
-      "s\030\017 \001(\004\022\023\n\013total_token\030\004 \001(\r\022\022\n\nreal_tok" +
-      "en\030\010 \001(\r\0222\n\014watcher_list\030\007 \003(\0132\034.Multist" +
-      "ageSettleWatcherInfo\022\022\n\nis_success\030\006 \001(\010" +
-      "\022\022\n\nplay_index\030\003 \001(\r\022\035\n\025difficulty_perce" +
-      "ntage\030\n \001(\r\022\020\n\010group_id\030\r \001(\rB\033\n\031emu.gra" +
-      "sscutter.net.protob\006proto3"
+      "s\030\014 \001(\004\022\022\n\nis_success\030\r \001(\010\022\020\n\010group_id\030" +
+      "\n \001(\r\022\033\n\023Unk3300_EKAIAPLNIPM\030\t \001(\r\022\033\n\023Un" +
+      "k3300_HAEOPAOBBFE\030\004 \001(\r\022\033\n\023Unk3300_NAMBB" +
+      "HMJJLN\030\013 \001(\r\022\022\n\nplay_index\030\010 \001(\r\0222\n\014watc" +
+      "her_list\030\017 \003(\0132\034.MultistageSettleWatcher" +
+      "InfoB\033\n\031emu.grasscutter.net.protob\006proto" +
+      "3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -1333,7 +1334,7 @@ public final class InBattleMechanicusSettleInfoOuterClass {
     internal_static_InBattleMechanicusSettleInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_InBattleMechanicusSettleInfo_descriptor,
-        new java.lang.String[] { "SceneTimeMs", "TotalToken", "RealToken", "WatcherList", "IsSuccess", "PlayIndex", "DifficultyPercentage", "GroupId", });
+        new java.lang.String[] { "SceneTimeMs", "IsSuccess", "GroupId", "Unk3300EKAIAPLNIPM", "Unk3300HAEOPAOBBFE", "Unk3300NAMBBHMJJLN", "PlayIndex", "WatcherList", });
     emu.grasscutter.net.proto.MultistageSettleWatcherInfoOuterClass.getDescriptor();
   }
 

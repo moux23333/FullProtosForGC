@@ -19,39 +19,43 @@ public final class VintageMarketNpcEventFinishNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated uint32 unlock_strategy_list = 15;</code>
-     * @return A list containing the unlockStrategyList.
+     * <code>uint32 coin_a = 3;</code>
+     * @return The coinA.
      */
-    java.util.List<java.lang.Integer> getUnlockStrategyListList();
-    /**
-     * <code>repeated uint32 unlock_strategy_list = 15;</code>
-     * @return The count of unlockStrategyList.
-     */
-    int getUnlockStrategyListCount();
-    /**
-     * <code>repeated uint32 unlock_strategy_list = 15;</code>
-     * @param index The index of the element to return.
-     * @return The unlockStrategyList at the given index.
-     */
-    int getUnlockStrategyList(int index);
+    int getCoinA();
 
     /**
-     * <code>uint32 coin_c = 12;</code>
+     * <code>uint32 coin_c = 9;</code>
      * @return The coinC.
      */
     int getCoinC();
 
     /**
-     * <code>uint32 coin_a = 4;</code>
-     * @return The coinA.
+     * <code>repeated uint32 unlock_strategy_list = 12;</code>
+     * @return A list containing the unlockStrategyList.
      */
-    int getCoinA();
+    java.util.List<java.lang.Integer> getUnlockStrategyListList();
+    /**
+     * <code>repeated uint32 unlock_strategy_list = 12;</code>
+     * @return The count of unlockStrategyList.
+     */
+    int getUnlockStrategyListCount();
+    /**
+     * <code>repeated uint32 unlock_strategy_list = 12;</code>
+     * @param index The index of the element to return.
+     * @return The unlockStrategyList at the given index.
+     */
+    int getUnlockStrategyList(int index);
   }
   /**
    * <pre>
-   * CmdId: 24201
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 24781;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code VintageMarketNpcEventFinishNotify}
@@ -100,17 +104,17 @@ public final class VintageMarketNpcEventFinishNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 32: {
+            case 24: {
 
               coinA_ = input.readUInt32();
               break;
             }
-            case 96: {
+            case 72: {
 
               coinC_ = input.readUInt32();
               break;
             }
-            case 120: {
+            case 96: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 unlockStrategyList_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
@@ -118,7 +122,7 @@ public final class VintageMarketNpcEventFinishNotifyOuterClass {
               unlockStrategyList_.addInt(input.readUInt32());
               break;
             }
-            case 122: {
+            case 98: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -166,10 +170,32 @@ public final class VintageMarketNpcEventFinishNotifyOuterClass {
               emu.grasscutter.net.proto.VintageMarketNpcEventFinishNotifyOuterClass.VintageMarketNpcEventFinishNotify.class, emu.grasscutter.net.proto.VintageMarketNpcEventFinishNotifyOuterClass.VintageMarketNpcEventFinishNotify.Builder.class);
     }
 
-    public static final int UNLOCK_STRATEGY_LIST_FIELD_NUMBER = 15;
+    public static final int COIN_A_FIELD_NUMBER = 3;
+    private int coinA_;
+    /**
+     * <code>uint32 coin_a = 3;</code>
+     * @return The coinA.
+     */
+    @java.lang.Override
+    public int getCoinA() {
+      return coinA_;
+    }
+
+    public static final int COIN_C_FIELD_NUMBER = 9;
+    private int coinC_;
+    /**
+     * <code>uint32 coin_c = 9;</code>
+     * @return The coinC.
+     */
+    @java.lang.Override
+    public int getCoinC() {
+      return coinC_;
+    }
+
+    public static final int UNLOCK_STRATEGY_LIST_FIELD_NUMBER = 12;
     private com.google.protobuf.Internal.IntList unlockStrategyList_;
     /**
-     * <code>repeated uint32 unlock_strategy_list = 15;</code>
+     * <code>repeated uint32 unlock_strategy_list = 12;</code>
      * @return A list containing the unlockStrategyList.
      */
     @java.lang.Override
@@ -178,14 +204,14 @@ public final class VintageMarketNpcEventFinishNotifyOuterClass {
       return unlockStrategyList_;
     }
     /**
-     * <code>repeated uint32 unlock_strategy_list = 15;</code>
+     * <code>repeated uint32 unlock_strategy_list = 12;</code>
      * @return The count of unlockStrategyList.
      */
     public int getUnlockStrategyListCount() {
       return unlockStrategyList_.size();
     }
     /**
-     * <code>repeated uint32 unlock_strategy_list = 15;</code>
+     * <code>repeated uint32 unlock_strategy_list = 12;</code>
      * @param index The index of the element to return.
      * @return The unlockStrategyList at the given index.
      */
@@ -193,28 +219,6 @@ public final class VintageMarketNpcEventFinishNotifyOuterClass {
       return unlockStrategyList_.getInt(index);
     }
     private int unlockStrategyListMemoizedSerializedSize = -1;
-
-    public static final int COIN_C_FIELD_NUMBER = 12;
-    private int coinC_;
-    /**
-     * <code>uint32 coin_c = 12;</code>
-     * @return The coinC.
-     */
-    @java.lang.Override
-    public int getCoinC() {
-      return coinC_;
-    }
-
-    public static final int COIN_A_FIELD_NUMBER = 4;
-    private int coinA_;
-    /**
-     * <code>uint32 coin_a = 4;</code>
-     * @return The coinA.
-     */
-    @java.lang.Override
-    public int getCoinA() {
-      return coinA_;
-    }
 
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
@@ -232,13 +236,13 @@ public final class VintageMarketNpcEventFinishNotifyOuterClass {
                         throws java.io.IOException {
       getSerializedSize();
       if (coinA_ != 0) {
-        output.writeUInt32(4, coinA_);
+        output.writeUInt32(3, coinA_);
       }
       if (coinC_ != 0) {
-        output.writeUInt32(12, coinC_);
+        output.writeUInt32(9, coinC_);
       }
       if (getUnlockStrategyListList().size() > 0) {
-        output.writeUInt32NoTag(122);
+        output.writeUInt32NoTag(98);
         output.writeUInt32NoTag(unlockStrategyListMemoizedSerializedSize);
       }
       for (int i = 0; i < unlockStrategyList_.size(); i++) {
@@ -255,11 +259,11 @@ public final class VintageMarketNpcEventFinishNotifyOuterClass {
       size = 0;
       if (coinA_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, coinA_);
+          .computeUInt32Size(3, coinA_);
       }
       if (coinC_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, coinC_);
+          .computeUInt32Size(9, coinC_);
       }
       {
         int dataSize = 0;
@@ -290,12 +294,12 @@ public final class VintageMarketNpcEventFinishNotifyOuterClass {
       }
       emu.grasscutter.net.proto.VintageMarketNpcEventFinishNotifyOuterClass.VintageMarketNpcEventFinishNotify other = (emu.grasscutter.net.proto.VintageMarketNpcEventFinishNotifyOuterClass.VintageMarketNpcEventFinishNotify) obj;
 
-      if (!getUnlockStrategyListList()
-          .equals(other.getUnlockStrategyListList())) return false;
-      if (getCoinC()
-          != other.getCoinC()) return false;
       if (getCoinA()
           != other.getCoinA()) return false;
+      if (getCoinC()
+          != other.getCoinC()) return false;
+      if (!getUnlockStrategyListList()
+          .equals(other.getUnlockStrategyListList())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -307,14 +311,14 @@ public final class VintageMarketNpcEventFinishNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + COIN_A_FIELD_NUMBER;
+      hash = (53 * hash) + getCoinA();
+      hash = (37 * hash) + COIN_C_FIELD_NUMBER;
+      hash = (53 * hash) + getCoinC();
       if (getUnlockStrategyListCount() > 0) {
         hash = (37 * hash) + UNLOCK_STRATEGY_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getUnlockStrategyListList().hashCode();
       }
-      hash = (37 * hash) + COIN_C_FIELD_NUMBER;
-      hash = (53 * hash) + getCoinC();
-      hash = (37 * hash) + COIN_A_FIELD_NUMBER;
-      hash = (53 * hash) + getCoinA();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -412,9 +416,13 @@ public final class VintageMarketNpcEventFinishNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 24201
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 24781;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code VintageMarketNpcEventFinishNotify}
@@ -454,12 +462,12 @@ public final class VintageMarketNpcEventFinishNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        unlockStrategyList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000001);
-        coinC_ = 0;
-
         coinA_ = 0;
 
+        coinC_ = 0;
+
+        unlockStrategyList_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000001);
         return this;
       }
 
@@ -487,13 +495,13 @@ public final class VintageMarketNpcEventFinishNotifyOuterClass {
       public emu.grasscutter.net.proto.VintageMarketNpcEventFinishNotifyOuterClass.VintageMarketNpcEventFinishNotify buildPartial() {
         emu.grasscutter.net.proto.VintageMarketNpcEventFinishNotifyOuterClass.VintageMarketNpcEventFinishNotify result = new emu.grasscutter.net.proto.VintageMarketNpcEventFinishNotifyOuterClass.VintageMarketNpcEventFinishNotify(this);
         int from_bitField0_ = bitField0_;
+        result.coinA_ = coinA_;
+        result.coinC_ = coinC_;
         if (((bitField0_ & 0x00000001) != 0)) {
           unlockStrategyList_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000001);
         }
         result.unlockStrategyList_ = unlockStrategyList_;
-        result.coinC_ = coinC_;
-        result.coinA_ = coinA_;
         onBuilt();
         return result;
       }
@@ -542,6 +550,12 @@ public final class VintageMarketNpcEventFinishNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.VintageMarketNpcEventFinishNotifyOuterClass.VintageMarketNpcEventFinishNotify other) {
         if (other == emu.grasscutter.net.proto.VintageMarketNpcEventFinishNotifyOuterClass.VintageMarketNpcEventFinishNotify.getDefaultInstance()) return this;
+        if (other.getCoinA() != 0) {
+          setCoinA(other.getCoinA());
+        }
+        if (other.getCoinC() != 0) {
+          setCoinC(other.getCoinC());
+        }
         if (!other.unlockStrategyList_.isEmpty()) {
           if (unlockStrategyList_.isEmpty()) {
             unlockStrategyList_ = other.unlockStrategyList_;
@@ -551,12 +565,6 @@ public final class VintageMarketNpcEventFinishNotifyOuterClass {
             unlockStrategyList_.addAll(other.unlockStrategyList_);
           }
           onChanged();
-        }
-        if (other.getCoinC() != 0) {
-          setCoinC(other.getCoinC());
-        }
-        if (other.getCoinA() != 0) {
-          setCoinA(other.getCoinA());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -588,6 +596,68 @@ public final class VintageMarketNpcEventFinishNotifyOuterClass {
       }
       private int bitField0_;
 
+      private int coinA_ ;
+      /**
+       * <code>uint32 coin_a = 3;</code>
+       * @return The coinA.
+       */
+      @java.lang.Override
+      public int getCoinA() {
+        return coinA_;
+      }
+      /**
+       * <code>uint32 coin_a = 3;</code>
+       * @param value The coinA to set.
+       * @return This builder for chaining.
+       */
+      public Builder setCoinA(int value) {
+        
+        coinA_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 coin_a = 3;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearCoinA() {
+        
+        coinA_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int coinC_ ;
+      /**
+       * <code>uint32 coin_c = 9;</code>
+       * @return The coinC.
+       */
+      @java.lang.Override
+      public int getCoinC() {
+        return coinC_;
+      }
+      /**
+       * <code>uint32 coin_c = 9;</code>
+       * @param value The coinC to set.
+       * @return This builder for chaining.
+       */
+      public Builder setCoinC(int value) {
+        
+        coinC_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 coin_c = 9;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearCoinC() {
+        
+        coinC_ = 0;
+        onChanged();
+        return this;
+      }
+
       private com.google.protobuf.Internal.IntList unlockStrategyList_ = emptyIntList();
       private void ensureUnlockStrategyListIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
@@ -596,7 +666,7 @@ public final class VintageMarketNpcEventFinishNotifyOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 unlock_strategy_list = 15;</code>
+       * <code>repeated uint32 unlock_strategy_list = 12;</code>
        * @return A list containing the unlockStrategyList.
        */
       public java.util.List<java.lang.Integer>
@@ -605,14 +675,14 @@ public final class VintageMarketNpcEventFinishNotifyOuterClass {
                  java.util.Collections.unmodifiableList(unlockStrategyList_) : unlockStrategyList_;
       }
       /**
-       * <code>repeated uint32 unlock_strategy_list = 15;</code>
+       * <code>repeated uint32 unlock_strategy_list = 12;</code>
        * @return The count of unlockStrategyList.
        */
       public int getUnlockStrategyListCount() {
         return unlockStrategyList_.size();
       }
       /**
-       * <code>repeated uint32 unlock_strategy_list = 15;</code>
+       * <code>repeated uint32 unlock_strategy_list = 12;</code>
        * @param index The index of the element to return.
        * @return The unlockStrategyList at the given index.
        */
@@ -620,7 +690,7 @@ public final class VintageMarketNpcEventFinishNotifyOuterClass {
         return unlockStrategyList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 unlock_strategy_list = 15;</code>
+       * <code>repeated uint32 unlock_strategy_list = 12;</code>
        * @param index The index to set the value at.
        * @param value The unlockStrategyList to set.
        * @return This builder for chaining.
@@ -633,7 +703,7 @@ public final class VintageMarketNpcEventFinishNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 unlock_strategy_list = 15;</code>
+       * <code>repeated uint32 unlock_strategy_list = 12;</code>
        * @param value The unlockStrategyList to add.
        * @return This builder for chaining.
        */
@@ -644,7 +714,7 @@ public final class VintageMarketNpcEventFinishNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 unlock_strategy_list = 15;</code>
+       * <code>repeated uint32 unlock_strategy_list = 12;</code>
        * @param values The unlockStrategyList to add.
        * @return This builder for chaining.
        */
@@ -657,74 +727,12 @@ public final class VintageMarketNpcEventFinishNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 unlock_strategy_list = 15;</code>
+       * <code>repeated uint32 unlock_strategy_list = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearUnlockStrategyList() {
         unlockStrategyList_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
-        onChanged();
-        return this;
-      }
-
-      private int coinC_ ;
-      /**
-       * <code>uint32 coin_c = 12;</code>
-       * @return The coinC.
-       */
-      @java.lang.Override
-      public int getCoinC() {
-        return coinC_;
-      }
-      /**
-       * <code>uint32 coin_c = 12;</code>
-       * @param value The coinC to set.
-       * @return This builder for chaining.
-       */
-      public Builder setCoinC(int value) {
-        
-        coinC_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 coin_c = 12;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearCoinC() {
-        
-        coinC_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int coinA_ ;
-      /**
-       * <code>uint32 coin_a = 4;</code>
-       * @return The coinA.
-       */
-      @java.lang.Override
-      public int getCoinA() {
-        return coinA_;
-      }
-      /**
-       * <code>uint32 coin_a = 4;</code>
-       * @param value The coinA to set.
-       * @return This builder for chaining.
-       */
-      public Builder setCoinA(int value) {
-        
-        coinA_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 coin_a = 4;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearCoinA() {
-        
-        coinA_ = 0;
         onChanged();
         return this;
       }
@@ -796,9 +804,9 @@ public final class VintageMarketNpcEventFinishNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\'VintageMarketNpcEventFinishNotify.prot" +
-      "o\"a\n!VintageMarketNpcEventFinishNotify\022\034" +
-      "\n\024unlock_strategy_list\030\017 \003(\r\022\016\n\006coin_c\030\014" +
-      " \001(\r\022\016\n\006coin_a\030\004 \001(\rB\033\n\031emu.grasscutter." +
+      "o\"a\n!VintageMarketNpcEventFinishNotify\022\016" +
+      "\n\006coin_a\030\003 \001(\r\022\016\n\006coin_c\030\t \001(\r\022\034\n\024unlock" +
+      "_strategy_list\030\014 \003(\rB\033\n\031emu.grasscutter." +
       "net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -810,7 +818,7 @@ public final class VintageMarketNpcEventFinishNotifyOuterClass {
     internal_static_VintageMarketNpcEventFinishNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_VintageMarketNpcEventFinishNotify_descriptor,
-        new java.lang.String[] { "UnlockStrategyList", "CoinC", "CoinA", });
+        new java.lang.String[] { "CoinA", "CoinC", "UnlockStrategyList", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

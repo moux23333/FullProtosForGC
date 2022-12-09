@@ -19,23 +19,27 @@ public final class AvatarBuffDelNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint64 avatar_guid = 10;</code>
-     * @return The avatarGuid.
-     */
-    long getAvatarGuid();
-
-    /**
-     * <code>uint32 buff_id = 12;</code>
+     * <code>uint32 buff_id = 8;</code>
      * @return The buffId.
      */
     int getBuffId();
+
+    /**
+     * <code>uint64 avatar_guid = 5;</code>
+     * @return The avatarGuid.
+     */
+    long getAvatarGuid();
   }
   /**
    * <pre>
-   * CmdId: 326
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 372;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code AvatarBuffDelNotify}
@@ -82,12 +86,12 @@ public final class AvatarBuffDelNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 80: {
+            case 40: {
 
               avatarGuid_ = input.readUInt64();
               break;
             }
-            case 96: {
+            case 64: {
 
               buffId_ = input.readUInt32();
               break;
@@ -124,26 +128,26 @@ public final class AvatarBuffDelNotifyOuterClass {
               emu.grasscutter.net.proto.AvatarBuffDelNotifyOuterClass.AvatarBuffDelNotify.class, emu.grasscutter.net.proto.AvatarBuffDelNotifyOuterClass.AvatarBuffDelNotify.Builder.class);
     }
 
-    public static final int AVATAR_GUID_FIELD_NUMBER = 10;
-    private long avatarGuid_;
-    /**
-     * <code>uint64 avatar_guid = 10;</code>
-     * @return The avatarGuid.
-     */
-    @java.lang.Override
-    public long getAvatarGuid() {
-      return avatarGuid_;
-    }
-
-    public static final int BUFF_ID_FIELD_NUMBER = 12;
+    public static final int BUFF_ID_FIELD_NUMBER = 8;
     private int buffId_;
     /**
-     * <code>uint32 buff_id = 12;</code>
+     * <code>uint32 buff_id = 8;</code>
      * @return The buffId.
      */
     @java.lang.Override
     public int getBuffId() {
       return buffId_;
+    }
+
+    public static final int AVATAR_GUID_FIELD_NUMBER = 5;
+    private long avatarGuid_;
+    /**
+     * <code>uint64 avatar_guid = 5;</code>
+     * @return The avatarGuid.
+     */
+    @java.lang.Override
+    public long getAvatarGuid() {
+      return avatarGuid_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -161,10 +165,10 @@ public final class AvatarBuffDelNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (avatarGuid_ != 0L) {
-        output.writeUInt64(10, avatarGuid_);
+        output.writeUInt64(5, avatarGuid_);
       }
       if (buffId_ != 0) {
-        output.writeUInt32(12, buffId_);
+        output.writeUInt32(8, buffId_);
       }
       unknownFields.writeTo(output);
     }
@@ -177,11 +181,11 @@ public final class AvatarBuffDelNotifyOuterClass {
       size = 0;
       if (avatarGuid_ != 0L) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt64Size(10, avatarGuid_);
+          .computeUInt64Size(5, avatarGuid_);
       }
       if (buffId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, buffId_);
+          .computeUInt32Size(8, buffId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -198,10 +202,10 @@ public final class AvatarBuffDelNotifyOuterClass {
       }
       emu.grasscutter.net.proto.AvatarBuffDelNotifyOuterClass.AvatarBuffDelNotify other = (emu.grasscutter.net.proto.AvatarBuffDelNotifyOuterClass.AvatarBuffDelNotify) obj;
 
-      if (getAvatarGuid()
-          != other.getAvatarGuid()) return false;
       if (getBuffId()
           != other.getBuffId()) return false;
+      if (getAvatarGuid()
+          != other.getAvatarGuid()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -213,11 +217,11 @@ public final class AvatarBuffDelNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + BUFF_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getBuffId();
       hash = (37 * hash) + AVATAR_GUID_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
           getAvatarGuid());
-      hash = (37 * hash) + BUFF_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getBuffId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -315,10 +319,14 @@ public final class AvatarBuffDelNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 326
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 372;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code AvatarBuffDelNotify}
@@ -358,9 +366,9 @@ public final class AvatarBuffDelNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        avatarGuid_ = 0L;
-
         buffId_ = 0;
+
+        avatarGuid_ = 0L;
 
         return this;
       }
@@ -388,8 +396,8 @@ public final class AvatarBuffDelNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.AvatarBuffDelNotifyOuterClass.AvatarBuffDelNotify buildPartial() {
         emu.grasscutter.net.proto.AvatarBuffDelNotifyOuterClass.AvatarBuffDelNotify result = new emu.grasscutter.net.proto.AvatarBuffDelNotifyOuterClass.AvatarBuffDelNotify(this);
-        result.avatarGuid_ = avatarGuid_;
         result.buffId_ = buffId_;
+        result.avatarGuid_ = avatarGuid_;
         onBuilt();
         return result;
       }
@@ -438,11 +446,11 @@ public final class AvatarBuffDelNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.AvatarBuffDelNotifyOuterClass.AvatarBuffDelNotify other) {
         if (other == emu.grasscutter.net.proto.AvatarBuffDelNotifyOuterClass.AvatarBuffDelNotify.getDefaultInstance()) return this;
-        if (other.getAvatarGuid() != 0L) {
-          setAvatarGuid(other.getAvatarGuid());
-        }
         if (other.getBuffId() != 0) {
           setBuffId(other.getBuffId());
+        }
+        if (other.getAvatarGuid() != 0L) {
+          setAvatarGuid(other.getAvatarGuid());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -473,40 +481,9 @@ public final class AvatarBuffDelNotifyOuterClass {
         return this;
       }
 
-      private long avatarGuid_ ;
-      /**
-       * <code>uint64 avatar_guid = 10;</code>
-       * @return The avatarGuid.
-       */
-      @java.lang.Override
-      public long getAvatarGuid() {
-        return avatarGuid_;
-      }
-      /**
-       * <code>uint64 avatar_guid = 10;</code>
-       * @param value The avatarGuid to set.
-       * @return This builder for chaining.
-       */
-      public Builder setAvatarGuid(long value) {
-        
-        avatarGuid_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint64 avatar_guid = 10;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearAvatarGuid() {
-        
-        avatarGuid_ = 0L;
-        onChanged();
-        return this;
-      }
-
       private int buffId_ ;
       /**
-       * <code>uint32 buff_id = 12;</code>
+       * <code>uint32 buff_id = 8;</code>
        * @return The buffId.
        */
       @java.lang.Override
@@ -514,7 +491,7 @@ public final class AvatarBuffDelNotifyOuterClass {
         return buffId_;
       }
       /**
-       * <code>uint32 buff_id = 12;</code>
+       * <code>uint32 buff_id = 8;</code>
        * @param value The buffId to set.
        * @return This builder for chaining.
        */
@@ -525,12 +502,43 @@ public final class AvatarBuffDelNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 buff_id = 12;</code>
+       * <code>uint32 buff_id = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearBuffId() {
         
         buffId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private long avatarGuid_ ;
+      /**
+       * <code>uint64 avatar_guid = 5;</code>
+       * @return The avatarGuid.
+       */
+      @java.lang.Override
+      public long getAvatarGuid() {
+        return avatarGuid_;
+      }
+      /**
+       * <code>uint64 avatar_guid = 5;</code>
+       * @param value The avatarGuid to set.
+       * @return This builder for chaining.
+       */
+      public Builder setAvatarGuid(long value) {
+        
+        avatarGuid_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint64 avatar_guid = 5;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearAvatarGuid() {
+        
+        avatarGuid_ = 0L;
         onChanged();
         return this;
       }
@@ -602,8 +610,8 @@ public final class AvatarBuffDelNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\031AvatarBuffDelNotify.proto\";\n\023AvatarBuf" +
-      "fDelNotify\022\023\n\013avatar_guid\030\n \001(\004\022\017\n\007buff_" +
-      "id\030\014 \001(\rB\033\n\031emu.grasscutter.net.protob\006p" +
+      "fDelNotify\022\017\n\007buff_id\030\010 \001(\r\022\023\n\013avatar_gu" +
+      "id\030\005 \001(\004B\033\n\031emu.grasscutter.net.protob\006p" +
       "roto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -615,7 +623,7 @@ public final class AvatarBuffDelNotifyOuterClass {
     internal_static_AvatarBuffDelNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_AvatarBuffDelNotify_descriptor,
-        new java.lang.String[] { "AvatarGuid", "BuffId", });
+        new java.lang.String[] { "BuffId", "AvatarGuid", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

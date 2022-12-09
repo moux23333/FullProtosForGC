@@ -19,22 +19,26 @@ public final class GalleryBrokenFloorFallNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 fall_count = 3;</code>
+     * <code>uint32 fall_count = 10;</code>
      * @return The fallCount.
      */
     int getFallCount();
 
     /**
-     * <code>uint32 gallery_id = 5;</code>
+     * <code>uint32 gallery_id = 7;</code>
      * @return The galleryId.
      */
     int getGalleryId();
   }
   /**
    * <pre>
-   * CmdId: 5575
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 5539;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code GalleryBrokenFloorFallNotify}
@@ -81,14 +85,14 @@ public final class GalleryBrokenFloorFallNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 24: {
-
-              fallCount_ = input.readUInt32();
-              break;
-            }
-            case 40: {
+            case 56: {
 
               galleryId_ = input.readUInt32();
+              break;
+            }
+            case 80: {
+
+              fallCount_ = input.readUInt32();
               break;
             }
             default: {
@@ -123,10 +127,10 @@ public final class GalleryBrokenFloorFallNotifyOuterClass {
               emu.grasscutter.net.proto.GalleryBrokenFloorFallNotifyOuterClass.GalleryBrokenFloorFallNotify.class, emu.grasscutter.net.proto.GalleryBrokenFloorFallNotifyOuterClass.GalleryBrokenFloorFallNotify.Builder.class);
     }
 
-    public static final int FALL_COUNT_FIELD_NUMBER = 3;
+    public static final int FALL_COUNT_FIELD_NUMBER = 10;
     private int fallCount_;
     /**
-     * <code>uint32 fall_count = 3;</code>
+     * <code>uint32 fall_count = 10;</code>
      * @return The fallCount.
      */
     @java.lang.Override
@@ -134,10 +138,10 @@ public final class GalleryBrokenFloorFallNotifyOuterClass {
       return fallCount_;
     }
 
-    public static final int GALLERY_ID_FIELD_NUMBER = 5;
+    public static final int GALLERY_ID_FIELD_NUMBER = 7;
     private int galleryId_;
     /**
-     * <code>uint32 gallery_id = 5;</code>
+     * <code>uint32 gallery_id = 7;</code>
      * @return The galleryId.
      */
     @java.lang.Override
@@ -159,11 +163,11 @@ public final class GalleryBrokenFloorFallNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (fallCount_ != 0) {
-        output.writeUInt32(3, fallCount_);
-      }
       if (galleryId_ != 0) {
-        output.writeUInt32(5, galleryId_);
+        output.writeUInt32(7, galleryId_);
+      }
+      if (fallCount_ != 0) {
+        output.writeUInt32(10, fallCount_);
       }
       unknownFields.writeTo(output);
     }
@@ -174,13 +178,13 @@ public final class GalleryBrokenFloorFallNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (fallCount_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, fallCount_);
-      }
       if (galleryId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, galleryId_);
+          .computeUInt32Size(7, galleryId_);
+      }
+      if (fallCount_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(10, fallCount_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -313,9 +317,13 @@ public final class GalleryBrokenFloorFallNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 5575
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 5539;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code GalleryBrokenFloorFallNotify}
@@ -472,7 +480,7 @@ public final class GalleryBrokenFloorFallNotifyOuterClass {
 
       private int fallCount_ ;
       /**
-       * <code>uint32 fall_count = 3;</code>
+       * <code>uint32 fall_count = 10;</code>
        * @return The fallCount.
        */
       @java.lang.Override
@@ -480,7 +488,7 @@ public final class GalleryBrokenFloorFallNotifyOuterClass {
         return fallCount_;
       }
       /**
-       * <code>uint32 fall_count = 3;</code>
+       * <code>uint32 fall_count = 10;</code>
        * @param value The fallCount to set.
        * @return This builder for chaining.
        */
@@ -491,7 +499,7 @@ public final class GalleryBrokenFloorFallNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 fall_count = 3;</code>
+       * <code>uint32 fall_count = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearFallCount() {
@@ -503,7 +511,7 @@ public final class GalleryBrokenFloorFallNotifyOuterClass {
 
       private int galleryId_ ;
       /**
-       * <code>uint32 gallery_id = 5;</code>
+       * <code>uint32 gallery_id = 7;</code>
        * @return The galleryId.
        */
       @java.lang.Override
@@ -511,7 +519,7 @@ public final class GalleryBrokenFloorFallNotifyOuterClass {
         return galleryId_;
       }
       /**
-       * <code>uint32 gallery_id = 5;</code>
+       * <code>uint32 gallery_id = 7;</code>
        * @param value The galleryId to set.
        * @return This builder for chaining.
        */
@@ -522,7 +530,7 @@ public final class GalleryBrokenFloorFallNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 gallery_id = 5;</code>
+       * <code>uint32 gallery_id = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearGalleryId() {
@@ -600,7 +608,7 @@ public final class GalleryBrokenFloorFallNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n\"GalleryBrokenFloorFallNotify.proto\"F\n\034" +
       "GalleryBrokenFloorFallNotify\022\022\n\nfall_cou" +
-      "nt\030\003 \001(\r\022\022\n\ngallery_id\030\005 \001(\rB\033\n\031emu.gras" +
+      "nt\030\n \001(\r\022\022\n\ngallery_id\030\007 \001(\rB\033\n\031emu.gras" +
       "scutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

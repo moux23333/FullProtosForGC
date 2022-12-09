@@ -19,28 +19,32 @@ public final class GalleryFlowerCatchNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 cur_score = 12;</code>
+     * <code>uint32 gallery_id = 13;</code>
+     * @return The galleryId.
+     */
+    int getGalleryId();
+
+    /**
+     * <code>uint32 cur_score = 2;</code>
      * @return The curScore.
      */
     int getCurScore();
 
     /**
-     * <code>uint32 add_score = 14;</code>
+     * <code>uint32 add_score = 12;</code>
      * @return The addScore.
      */
     int getAddScore();
-
-    /**
-     * <code>uint32 gallery_id = 5;</code>
-     * @return The galleryId.
-     */
-    int getGalleryId();
   }
   /**
    * <pre>
-   * CmdId: 5573
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 5578;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code GalleryFlowerCatchNotify}
@@ -87,19 +91,19 @@ public final class GalleryFlowerCatchNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 40: {
-
-              galleryId_ = input.readUInt32();
-              break;
-            }
-            case 96: {
+            case 16: {
 
               curScore_ = input.readUInt32();
               break;
             }
-            case 112: {
+            case 96: {
 
               addScore_ = input.readUInt32();
+              break;
+            }
+            case 104: {
+
+              galleryId_ = input.readUInt32();
               break;
             }
             default: {
@@ -134,10 +138,21 @@ public final class GalleryFlowerCatchNotifyOuterClass {
               emu.grasscutter.net.proto.GalleryFlowerCatchNotifyOuterClass.GalleryFlowerCatchNotify.class, emu.grasscutter.net.proto.GalleryFlowerCatchNotifyOuterClass.GalleryFlowerCatchNotify.Builder.class);
     }
 
-    public static final int CUR_SCORE_FIELD_NUMBER = 12;
+    public static final int GALLERY_ID_FIELD_NUMBER = 13;
+    private int galleryId_;
+    /**
+     * <code>uint32 gallery_id = 13;</code>
+     * @return The galleryId.
+     */
+    @java.lang.Override
+    public int getGalleryId() {
+      return galleryId_;
+    }
+
+    public static final int CUR_SCORE_FIELD_NUMBER = 2;
     private int curScore_;
     /**
-     * <code>uint32 cur_score = 12;</code>
+     * <code>uint32 cur_score = 2;</code>
      * @return The curScore.
      */
     @java.lang.Override
@@ -145,26 +160,15 @@ public final class GalleryFlowerCatchNotifyOuterClass {
       return curScore_;
     }
 
-    public static final int ADD_SCORE_FIELD_NUMBER = 14;
+    public static final int ADD_SCORE_FIELD_NUMBER = 12;
     private int addScore_;
     /**
-     * <code>uint32 add_score = 14;</code>
+     * <code>uint32 add_score = 12;</code>
      * @return The addScore.
      */
     @java.lang.Override
     public int getAddScore() {
       return addScore_;
-    }
-
-    public static final int GALLERY_ID_FIELD_NUMBER = 5;
-    private int galleryId_;
-    /**
-     * <code>uint32 gallery_id = 5;</code>
-     * @return The galleryId.
-     */
-    @java.lang.Override
-    public int getGalleryId() {
-      return galleryId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -181,14 +185,14 @@ public final class GalleryFlowerCatchNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (galleryId_ != 0) {
-        output.writeUInt32(5, galleryId_);
-      }
       if (curScore_ != 0) {
-        output.writeUInt32(12, curScore_);
+        output.writeUInt32(2, curScore_);
       }
       if (addScore_ != 0) {
-        output.writeUInt32(14, addScore_);
+        output.writeUInt32(12, addScore_);
+      }
+      if (galleryId_ != 0) {
+        output.writeUInt32(13, galleryId_);
       }
       unknownFields.writeTo(output);
     }
@@ -199,17 +203,17 @@ public final class GalleryFlowerCatchNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (galleryId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, galleryId_);
-      }
       if (curScore_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, curScore_);
+          .computeUInt32Size(2, curScore_);
       }
       if (addScore_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, addScore_);
+          .computeUInt32Size(12, addScore_);
+      }
+      if (galleryId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(13, galleryId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -226,12 +230,12 @@ public final class GalleryFlowerCatchNotifyOuterClass {
       }
       emu.grasscutter.net.proto.GalleryFlowerCatchNotifyOuterClass.GalleryFlowerCatchNotify other = (emu.grasscutter.net.proto.GalleryFlowerCatchNotifyOuterClass.GalleryFlowerCatchNotify) obj;
 
+      if (getGalleryId()
+          != other.getGalleryId()) return false;
       if (getCurScore()
           != other.getCurScore()) return false;
       if (getAddScore()
           != other.getAddScore()) return false;
-      if (getGalleryId()
-          != other.getGalleryId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -243,12 +247,12 @@ public final class GalleryFlowerCatchNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + GALLERY_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getGalleryId();
       hash = (37 * hash) + CUR_SCORE_FIELD_NUMBER;
       hash = (53 * hash) + getCurScore();
       hash = (37 * hash) + ADD_SCORE_FIELD_NUMBER;
       hash = (53 * hash) + getAddScore();
-      hash = (37 * hash) + GALLERY_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getGalleryId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -346,9 +350,13 @@ public final class GalleryFlowerCatchNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 5573
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 5578;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code GalleryFlowerCatchNotify}
@@ -388,11 +396,11 @@ public final class GalleryFlowerCatchNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        galleryId_ = 0;
+
         curScore_ = 0;
 
         addScore_ = 0;
-
-        galleryId_ = 0;
 
         return this;
       }
@@ -420,9 +428,9 @@ public final class GalleryFlowerCatchNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.GalleryFlowerCatchNotifyOuterClass.GalleryFlowerCatchNotify buildPartial() {
         emu.grasscutter.net.proto.GalleryFlowerCatchNotifyOuterClass.GalleryFlowerCatchNotify result = new emu.grasscutter.net.proto.GalleryFlowerCatchNotifyOuterClass.GalleryFlowerCatchNotify(this);
+        result.galleryId_ = galleryId_;
         result.curScore_ = curScore_;
         result.addScore_ = addScore_;
-        result.galleryId_ = galleryId_;
         onBuilt();
         return result;
       }
@@ -471,14 +479,14 @@ public final class GalleryFlowerCatchNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.GalleryFlowerCatchNotifyOuterClass.GalleryFlowerCatchNotify other) {
         if (other == emu.grasscutter.net.proto.GalleryFlowerCatchNotifyOuterClass.GalleryFlowerCatchNotify.getDefaultInstance()) return this;
+        if (other.getGalleryId() != 0) {
+          setGalleryId(other.getGalleryId());
+        }
         if (other.getCurScore() != 0) {
           setCurScore(other.getCurScore());
         }
         if (other.getAddScore() != 0) {
           setAddScore(other.getAddScore());
-        }
-        if (other.getGalleryId() != 0) {
-          setGalleryId(other.getGalleryId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -509,9 +517,40 @@ public final class GalleryFlowerCatchNotifyOuterClass {
         return this;
       }
 
+      private int galleryId_ ;
+      /**
+       * <code>uint32 gallery_id = 13;</code>
+       * @return The galleryId.
+       */
+      @java.lang.Override
+      public int getGalleryId() {
+        return galleryId_;
+      }
+      /**
+       * <code>uint32 gallery_id = 13;</code>
+       * @param value The galleryId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setGalleryId(int value) {
+        
+        galleryId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 gallery_id = 13;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearGalleryId() {
+        
+        galleryId_ = 0;
+        onChanged();
+        return this;
+      }
+
       private int curScore_ ;
       /**
-       * <code>uint32 cur_score = 12;</code>
+       * <code>uint32 cur_score = 2;</code>
        * @return The curScore.
        */
       @java.lang.Override
@@ -519,7 +558,7 @@ public final class GalleryFlowerCatchNotifyOuterClass {
         return curScore_;
       }
       /**
-       * <code>uint32 cur_score = 12;</code>
+       * <code>uint32 cur_score = 2;</code>
        * @param value The curScore to set.
        * @return This builder for chaining.
        */
@@ -530,7 +569,7 @@ public final class GalleryFlowerCatchNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 cur_score = 12;</code>
+       * <code>uint32 cur_score = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearCurScore() {
@@ -542,7 +581,7 @@ public final class GalleryFlowerCatchNotifyOuterClass {
 
       private int addScore_ ;
       /**
-       * <code>uint32 add_score = 14;</code>
+       * <code>uint32 add_score = 12;</code>
        * @return The addScore.
        */
       @java.lang.Override
@@ -550,7 +589,7 @@ public final class GalleryFlowerCatchNotifyOuterClass {
         return addScore_;
       }
       /**
-       * <code>uint32 add_score = 14;</code>
+       * <code>uint32 add_score = 12;</code>
        * @param value The addScore to set.
        * @return This builder for chaining.
        */
@@ -561,43 +600,12 @@ public final class GalleryFlowerCatchNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 add_score = 14;</code>
+       * <code>uint32 add_score = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearAddScore() {
         
         addScore_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int galleryId_ ;
-      /**
-       * <code>uint32 gallery_id = 5;</code>
-       * @return The galleryId.
-       */
-      @java.lang.Override
-      public int getGalleryId() {
-        return galleryId_;
-      }
-      /**
-       * <code>uint32 gallery_id = 5;</code>
-       * @param value The galleryId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setGalleryId(int value) {
-        
-        galleryId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 gallery_id = 5;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearGalleryId() {
-        
-        galleryId_ = 0;
         onChanged();
         return this;
       }
@@ -669,8 +677,8 @@ public final class GalleryFlowerCatchNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\036GalleryFlowerCatchNotify.proto\"T\n\030Gall" +
-      "eryFlowerCatchNotify\022\021\n\tcur_score\030\014 \001(\r\022" +
-      "\021\n\tadd_score\030\016 \001(\r\022\022\n\ngallery_id\030\005 \001(\rB\033" +
+      "eryFlowerCatchNotify\022\022\n\ngallery_id\030\r \001(\r" +
+      "\022\021\n\tcur_score\030\002 \001(\r\022\021\n\tadd_score\030\014 \001(\rB\033" +
       "\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -682,7 +690,7 @@ public final class GalleryFlowerCatchNotifyOuterClass {
     internal_static_GalleryFlowerCatchNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GalleryFlowerCatchNotify_descriptor,
-        new java.lang.String[] { "CurScore", "AddScore", "GalleryId", });
+        new java.lang.String[] { "GalleryId", "CurScore", "AddScore", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

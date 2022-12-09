@@ -19,16 +19,20 @@ public final class SetH5ActivityRedDotTimestampReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 client_red_dot_timestamp = 13;</code>
+     * <code>uint32 client_red_dot_timestamp = 2;</code>
      * @return The clientRedDotTimestamp.
      */
     int getClientRedDotTimestamp();
   }
   /**
    * <pre>
-   * CmdId: 5657
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 5685;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code SetH5ActivityRedDotTimestampReq}
@@ -75,7 +79,7 @@ public final class SetH5ActivityRedDotTimestampReqOuterClass {
             case 0:
               done = true;
               break;
-            case 104: {
+            case 16: {
 
               clientRedDotTimestamp_ = input.readUInt32();
               break;
@@ -112,10 +116,10 @@ public final class SetH5ActivityRedDotTimestampReqOuterClass {
               emu.grasscutter.net.proto.SetH5ActivityRedDotTimestampReqOuterClass.SetH5ActivityRedDotTimestampReq.class, emu.grasscutter.net.proto.SetH5ActivityRedDotTimestampReqOuterClass.SetH5ActivityRedDotTimestampReq.Builder.class);
     }
 
-    public static final int CLIENT_RED_DOT_TIMESTAMP_FIELD_NUMBER = 13;
+    public static final int CLIENT_RED_DOT_TIMESTAMP_FIELD_NUMBER = 2;
     private int clientRedDotTimestamp_;
     /**
-     * <code>uint32 client_red_dot_timestamp = 13;</code>
+     * <code>uint32 client_red_dot_timestamp = 2;</code>
      * @return The clientRedDotTimestamp.
      */
     @java.lang.Override
@@ -138,7 +142,7 @@ public final class SetH5ActivityRedDotTimestampReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (clientRedDotTimestamp_ != 0) {
-        output.writeUInt32(13, clientRedDotTimestamp_);
+        output.writeUInt32(2, clientRedDotTimestamp_);
       }
       unknownFields.writeTo(output);
     }
@@ -151,7 +155,7 @@ public final class SetH5ActivityRedDotTimestampReqOuterClass {
       size = 0;
       if (clientRedDotTimestamp_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, clientRedDotTimestamp_);
+          .computeUInt32Size(2, clientRedDotTimestamp_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -280,9 +284,13 @@ public final class SetH5ActivityRedDotTimestampReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 5657
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 5685;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code SetH5ActivityRedDotTimestampReq}
@@ -433,7 +441,7 @@ public final class SetH5ActivityRedDotTimestampReqOuterClass {
 
       private int clientRedDotTimestamp_ ;
       /**
-       * <code>uint32 client_red_dot_timestamp = 13;</code>
+       * <code>uint32 client_red_dot_timestamp = 2;</code>
        * @return The clientRedDotTimestamp.
        */
       @java.lang.Override
@@ -441,7 +449,7 @@ public final class SetH5ActivityRedDotTimestampReqOuterClass {
         return clientRedDotTimestamp_;
       }
       /**
-       * <code>uint32 client_red_dot_timestamp = 13;</code>
+       * <code>uint32 client_red_dot_timestamp = 2;</code>
        * @param value The clientRedDotTimestamp to set.
        * @return This builder for chaining.
        */
@@ -452,7 +460,7 @@ public final class SetH5ActivityRedDotTimestampReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 client_red_dot_timestamp = 13;</code>
+       * <code>uint32 client_red_dot_timestamp = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearClientRedDotTimestamp() {
@@ -530,7 +538,7 @@ public final class SetH5ActivityRedDotTimestampReqOuterClass {
     java.lang.String[] descriptorData = {
       "\n%SetH5ActivityRedDotTimestampReq.proto\"" +
       "C\n\037SetH5ActivityRedDotTimestampReq\022 \n\030cl" +
-      "ient_red_dot_timestamp\030\r \001(\rB\033\n\031emu.gras" +
+      "ient_red_dot_timestamp\030\002 \001(\rB\033\n\031emu.gras" +
       "scutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

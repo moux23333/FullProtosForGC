@@ -19,17 +19,21 @@ public final class GCGDSDeleteDeckReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 deck_id = 15;</code>
+     * <code>uint32 deck_id = 1;</code>
      * @return The deckId.
      */
     int getDeckId();
   }
   /**
    * <pre>
-   * CmdId: 7988
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 7821;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code GCGDSDeleteDeckReq}
@@ -76,7 +80,7 @@ public final class GCGDSDeleteDeckReqOuterClass {
             case 0:
               done = true;
               break;
-            case 120: {
+            case 8: {
 
               deckId_ = input.readUInt32();
               break;
@@ -113,10 +117,10 @@ public final class GCGDSDeleteDeckReqOuterClass {
               emu.grasscutter.net.proto.GCGDSDeleteDeckReqOuterClass.GCGDSDeleteDeckReq.class, emu.grasscutter.net.proto.GCGDSDeleteDeckReqOuterClass.GCGDSDeleteDeckReq.Builder.class);
     }
 
-    public static final int DECK_ID_FIELD_NUMBER = 15;
+    public static final int DECK_ID_FIELD_NUMBER = 1;
     private int deckId_;
     /**
-     * <code>uint32 deck_id = 15;</code>
+     * <code>uint32 deck_id = 1;</code>
      * @return The deckId.
      */
     @java.lang.Override
@@ -139,7 +143,7 @@ public final class GCGDSDeleteDeckReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (deckId_ != 0) {
-        output.writeUInt32(15, deckId_);
+        output.writeUInt32(1, deckId_);
       }
       unknownFields.writeTo(output);
     }
@@ -152,7 +156,7 @@ public final class GCGDSDeleteDeckReqOuterClass {
       size = 0;
       if (deckId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, deckId_);
+          .computeUInt32Size(1, deckId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -281,10 +285,14 @@ public final class GCGDSDeleteDeckReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 7988
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 7821;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code GCGDSDeleteDeckReq}
@@ -435,7 +443,7 @@ public final class GCGDSDeleteDeckReqOuterClass {
 
       private int deckId_ ;
       /**
-       * <code>uint32 deck_id = 15;</code>
+       * <code>uint32 deck_id = 1;</code>
        * @return The deckId.
        */
       @java.lang.Override
@@ -443,7 +451,7 @@ public final class GCGDSDeleteDeckReqOuterClass {
         return deckId_;
       }
       /**
-       * <code>uint32 deck_id = 15;</code>
+       * <code>uint32 deck_id = 1;</code>
        * @param value The deckId to set.
        * @return This builder for chaining.
        */
@@ -454,7 +462,7 @@ public final class GCGDSDeleteDeckReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 deck_id = 15;</code>
+       * <code>uint32 deck_id = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearDeckId() {
@@ -531,7 +539,7 @@ public final class GCGDSDeleteDeckReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\030GCGDSDeleteDeckReq.proto\"%\n\022GCGDSDelet" +
-      "eDeckReq\022\017\n\007deck_id\030\017 \001(\rB\033\n\031emu.grasscu" +
+      "eDeckReq\022\017\n\007deck_id\030\001 \001(\rB\033\n\031emu.grasscu" +
       "tter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

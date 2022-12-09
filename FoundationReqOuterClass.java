@@ -19,40 +19,44 @@ public final class FoundationReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 gadget_entity_id = 14;</code>
+     * <code>uint32 gadget_entity_id = 1;</code>
      * @return The gadgetEntityId.
      */
     int getGadgetEntityId();
 
     /**
-     * <code>uint32 point_config_id = 12;</code>
-     * @return The pointConfigId.
-     */
-    int getPointConfigId();
-
-    /**
-     * <code>uint32 building_id = 13;</code>
+     * <code>uint32 building_id = 11;</code>
      * @return The buildingId.
      */
     int getBuildingId();
 
     /**
-     * <code>.FoundationOpType op_type = 10;</code>
+     * <code>uint32 point_config_id = 10;</code>
+     * @return The pointConfigId.
+     */
+    int getPointConfigId();
+
+    /**
+     * <code>.FoundationOpType op_type = 6;</code>
      * @return The enum numeric value on the wire for opType.
      */
     int getOpTypeValue();
     /**
-     * <code>.FoundationOpType op_type = 10;</code>
+     * <code>.FoundationOpType op_type = 6;</code>
      * @return The opType.
      */
     emu.grasscutter.net.proto.FoundationOpTypeOuterClass.FoundationOpType getOpType();
   }
   /**
    * <pre>
-   * CmdId: 805
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 842;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code FoundationReq}
@@ -100,25 +104,25 @@ public final class FoundationReqOuterClass {
             case 0:
               done = true;
               break;
-            case 80: {
+            case 8: {
+
+              gadgetEntityId_ = input.readUInt32();
+              break;
+            }
+            case 48: {
               int rawValue = input.readEnum();
 
               opType_ = rawValue;
               break;
             }
-            case 96: {
+            case 80: {
 
               pointConfigId_ = input.readUInt32();
               break;
             }
-            case 104: {
+            case 88: {
 
               buildingId_ = input.readUInt32();
-              break;
-            }
-            case 112: {
-
-              gadgetEntityId_ = input.readUInt32();
               break;
             }
             default: {
@@ -153,10 +157,10 @@ public final class FoundationReqOuterClass {
               emu.grasscutter.net.proto.FoundationReqOuterClass.FoundationReq.class, emu.grasscutter.net.proto.FoundationReqOuterClass.FoundationReq.Builder.class);
     }
 
-    public static final int GADGET_ENTITY_ID_FIELD_NUMBER = 14;
+    public static final int GADGET_ENTITY_ID_FIELD_NUMBER = 1;
     private int gadgetEntityId_;
     /**
-     * <code>uint32 gadget_entity_id = 14;</code>
+     * <code>uint32 gadget_entity_id = 1;</code>
      * @return The gadgetEntityId.
      */
     @java.lang.Override
@@ -164,21 +168,10 @@ public final class FoundationReqOuterClass {
       return gadgetEntityId_;
     }
 
-    public static final int POINT_CONFIG_ID_FIELD_NUMBER = 12;
-    private int pointConfigId_;
-    /**
-     * <code>uint32 point_config_id = 12;</code>
-     * @return The pointConfigId.
-     */
-    @java.lang.Override
-    public int getPointConfigId() {
-      return pointConfigId_;
-    }
-
-    public static final int BUILDING_ID_FIELD_NUMBER = 13;
+    public static final int BUILDING_ID_FIELD_NUMBER = 11;
     private int buildingId_;
     /**
-     * <code>uint32 building_id = 13;</code>
+     * <code>uint32 building_id = 11;</code>
      * @return The buildingId.
      */
     @java.lang.Override
@@ -186,17 +179,28 @@ public final class FoundationReqOuterClass {
       return buildingId_;
     }
 
-    public static final int OP_TYPE_FIELD_NUMBER = 10;
+    public static final int POINT_CONFIG_ID_FIELD_NUMBER = 10;
+    private int pointConfigId_;
+    /**
+     * <code>uint32 point_config_id = 10;</code>
+     * @return The pointConfigId.
+     */
+    @java.lang.Override
+    public int getPointConfigId() {
+      return pointConfigId_;
+    }
+
+    public static final int OP_TYPE_FIELD_NUMBER = 6;
     private int opType_;
     /**
-     * <code>.FoundationOpType op_type = 10;</code>
+     * <code>.FoundationOpType op_type = 6;</code>
      * @return The enum numeric value on the wire for opType.
      */
     @java.lang.Override public int getOpTypeValue() {
       return opType_;
     }
     /**
-     * <code>.FoundationOpType op_type = 10;</code>
+     * <code>.FoundationOpType op_type = 6;</code>
      * @return The opType.
      */
     @java.lang.Override public emu.grasscutter.net.proto.FoundationOpTypeOuterClass.FoundationOpType getOpType() {
@@ -219,17 +223,17 @@ public final class FoundationReqOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (gadgetEntityId_ != 0) {
+        output.writeUInt32(1, gadgetEntityId_);
+      }
       if (opType_ != emu.grasscutter.net.proto.FoundationOpTypeOuterClass.FoundationOpType.FOUNDATION_OP_TYPE_NONE.getNumber()) {
-        output.writeEnum(10, opType_);
+        output.writeEnum(6, opType_);
       }
       if (pointConfigId_ != 0) {
-        output.writeUInt32(12, pointConfigId_);
+        output.writeUInt32(10, pointConfigId_);
       }
       if (buildingId_ != 0) {
-        output.writeUInt32(13, buildingId_);
-      }
-      if (gadgetEntityId_ != 0) {
-        output.writeUInt32(14, gadgetEntityId_);
+        output.writeUInt32(11, buildingId_);
       }
       unknownFields.writeTo(output);
     }
@@ -240,21 +244,21 @@ public final class FoundationReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (gadgetEntityId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(1, gadgetEntityId_);
+      }
       if (opType_ != emu.grasscutter.net.proto.FoundationOpTypeOuterClass.FoundationOpType.FOUNDATION_OP_TYPE_NONE.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(10, opType_);
+          .computeEnumSize(6, opType_);
       }
       if (pointConfigId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, pointConfigId_);
+          .computeUInt32Size(10, pointConfigId_);
       }
       if (buildingId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, buildingId_);
-      }
-      if (gadgetEntityId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, gadgetEntityId_);
+          .computeUInt32Size(11, buildingId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -273,10 +277,10 @@ public final class FoundationReqOuterClass {
 
       if (getGadgetEntityId()
           != other.getGadgetEntityId()) return false;
-      if (getPointConfigId()
-          != other.getPointConfigId()) return false;
       if (getBuildingId()
           != other.getBuildingId()) return false;
+      if (getPointConfigId()
+          != other.getPointConfigId()) return false;
       if (opType_ != other.opType_) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
@@ -291,10 +295,10 @@ public final class FoundationReqOuterClass {
       hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + GADGET_ENTITY_ID_FIELD_NUMBER;
       hash = (53 * hash) + getGadgetEntityId();
-      hash = (37 * hash) + POINT_CONFIG_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getPointConfigId();
       hash = (37 * hash) + BUILDING_ID_FIELD_NUMBER;
       hash = (53 * hash) + getBuildingId();
+      hash = (37 * hash) + POINT_CONFIG_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getPointConfigId();
       hash = (37 * hash) + OP_TYPE_FIELD_NUMBER;
       hash = (53 * hash) + opType_;
       hash = (29 * hash) + unknownFields.hashCode();
@@ -394,10 +398,14 @@ public final class FoundationReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 805
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 842;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code FoundationReq}
@@ -439,9 +447,9 @@ public final class FoundationReqOuterClass {
         super.clear();
         gadgetEntityId_ = 0;
 
-        pointConfigId_ = 0;
-
         buildingId_ = 0;
+
+        pointConfigId_ = 0;
 
         opType_ = 0;
 
@@ -472,8 +480,8 @@ public final class FoundationReqOuterClass {
       public emu.grasscutter.net.proto.FoundationReqOuterClass.FoundationReq buildPartial() {
         emu.grasscutter.net.proto.FoundationReqOuterClass.FoundationReq result = new emu.grasscutter.net.proto.FoundationReqOuterClass.FoundationReq(this);
         result.gadgetEntityId_ = gadgetEntityId_;
-        result.pointConfigId_ = pointConfigId_;
         result.buildingId_ = buildingId_;
+        result.pointConfigId_ = pointConfigId_;
         result.opType_ = opType_;
         onBuilt();
         return result;
@@ -526,11 +534,11 @@ public final class FoundationReqOuterClass {
         if (other.getGadgetEntityId() != 0) {
           setGadgetEntityId(other.getGadgetEntityId());
         }
-        if (other.getPointConfigId() != 0) {
-          setPointConfigId(other.getPointConfigId());
-        }
         if (other.getBuildingId() != 0) {
           setBuildingId(other.getBuildingId());
+        }
+        if (other.getPointConfigId() != 0) {
+          setPointConfigId(other.getPointConfigId());
         }
         if (other.opType_ != 0) {
           setOpTypeValue(other.getOpTypeValue());
@@ -566,7 +574,7 @@ public final class FoundationReqOuterClass {
 
       private int gadgetEntityId_ ;
       /**
-       * <code>uint32 gadget_entity_id = 14;</code>
+       * <code>uint32 gadget_entity_id = 1;</code>
        * @return The gadgetEntityId.
        */
       @java.lang.Override
@@ -574,7 +582,7 @@ public final class FoundationReqOuterClass {
         return gadgetEntityId_;
       }
       /**
-       * <code>uint32 gadget_entity_id = 14;</code>
+       * <code>uint32 gadget_entity_id = 1;</code>
        * @param value The gadgetEntityId to set.
        * @return This builder for chaining.
        */
@@ -585,7 +593,7 @@ public final class FoundationReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 gadget_entity_id = 14;</code>
+       * <code>uint32 gadget_entity_id = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearGadgetEntityId() {
@@ -595,40 +603,9 @@ public final class FoundationReqOuterClass {
         return this;
       }
 
-      private int pointConfigId_ ;
-      /**
-       * <code>uint32 point_config_id = 12;</code>
-       * @return The pointConfigId.
-       */
-      @java.lang.Override
-      public int getPointConfigId() {
-        return pointConfigId_;
-      }
-      /**
-       * <code>uint32 point_config_id = 12;</code>
-       * @param value The pointConfigId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setPointConfigId(int value) {
-        
-        pointConfigId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 point_config_id = 12;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearPointConfigId() {
-        
-        pointConfigId_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int buildingId_ ;
       /**
-       * <code>uint32 building_id = 13;</code>
+       * <code>uint32 building_id = 11;</code>
        * @return The buildingId.
        */
       @java.lang.Override
@@ -636,7 +613,7 @@ public final class FoundationReqOuterClass {
         return buildingId_;
       }
       /**
-       * <code>uint32 building_id = 13;</code>
+       * <code>uint32 building_id = 11;</code>
        * @param value The buildingId to set.
        * @return This builder for chaining.
        */
@@ -647,7 +624,7 @@ public final class FoundationReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 building_id = 13;</code>
+       * <code>uint32 building_id = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearBuildingId() {
@@ -657,16 +634,47 @@ public final class FoundationReqOuterClass {
         return this;
       }
 
+      private int pointConfigId_ ;
+      /**
+       * <code>uint32 point_config_id = 10;</code>
+       * @return The pointConfigId.
+       */
+      @java.lang.Override
+      public int getPointConfigId() {
+        return pointConfigId_;
+      }
+      /**
+       * <code>uint32 point_config_id = 10;</code>
+       * @param value The pointConfigId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setPointConfigId(int value) {
+        
+        pointConfigId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 point_config_id = 10;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearPointConfigId() {
+        
+        pointConfigId_ = 0;
+        onChanged();
+        return this;
+      }
+
       private int opType_ = 0;
       /**
-       * <code>.FoundationOpType op_type = 10;</code>
+       * <code>.FoundationOpType op_type = 6;</code>
        * @return The enum numeric value on the wire for opType.
        */
       @java.lang.Override public int getOpTypeValue() {
         return opType_;
       }
       /**
-       * <code>.FoundationOpType op_type = 10;</code>
+       * <code>.FoundationOpType op_type = 6;</code>
        * @param value The enum numeric value on the wire for opType to set.
        * @return This builder for chaining.
        */
@@ -677,7 +685,7 @@ public final class FoundationReqOuterClass {
         return this;
       }
       /**
-       * <code>.FoundationOpType op_type = 10;</code>
+       * <code>.FoundationOpType op_type = 6;</code>
        * @return The opType.
        */
       @java.lang.Override
@@ -687,7 +695,7 @@ public final class FoundationReqOuterClass {
         return result == null ? emu.grasscutter.net.proto.FoundationOpTypeOuterClass.FoundationOpType.UNRECOGNIZED : result;
       }
       /**
-       * <code>.FoundationOpType op_type = 10;</code>
+       * <code>.FoundationOpType op_type = 6;</code>
        * @param value The opType to set.
        * @return This builder for chaining.
        */
@@ -701,7 +709,7 @@ public final class FoundationReqOuterClass {
         return this;
       }
       /**
-       * <code>.FoundationOpType op_type = 10;</code>
+       * <code>.FoundationOpType op_type = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearOpType() {
@@ -779,8 +787,8 @@ public final class FoundationReqOuterClass {
     java.lang.String[] descriptorData = {
       "\n\023FoundationReq.proto\032\026FoundationOpType." +
       "proto\"{\n\rFoundationReq\022\030\n\020gadget_entity_" +
-      "id\030\016 \001(\r\022\027\n\017point_config_id\030\014 \001(\r\022\023\n\013bui" +
-      "lding_id\030\r \001(\r\022\"\n\007op_type\030\n \001(\0162\021.Founda" +
+      "id\030\001 \001(\r\022\023\n\013building_id\030\013 \001(\r\022\027\n\017point_c" +
+      "onfig_id\030\n \001(\r\022\"\n\007op_type\030\006 \001(\0162\021.Founda" +
       "tionOpTypeB\033\n\031emu.grasscutter.net.protob" +
       "\006proto3"
     };
@@ -794,7 +802,7 @@ public final class FoundationReqOuterClass {
     internal_static_FoundationReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_FoundationReq_descriptor,
-        new java.lang.String[] { "GadgetEntityId", "PointConfigId", "BuildingId", "OpType", });
+        new java.lang.String[] { "GadgetEntityId", "BuildingId", "PointConfigId", "OpType", });
     emu.grasscutter.net.proto.FoundationOpTypeOuterClass.getDescriptor();
   }
 

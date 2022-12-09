@@ -19,31 +19,35 @@ public final class SalvageEscortSettleNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 gallery_id = 14;</code>
-     * @return The galleryId.
-     */
-    int getGalleryId();
-
-    /**
-     * <code>.SalvageEscortSettleInfo settle_info = 15;</code>
+     * <code>.SalvageEscortSettleInfo settle_info = 1;</code>
      * @return Whether the settleInfo field is set.
      */
     boolean hasSettleInfo();
     /**
-     * <code>.SalvageEscortSettleInfo settle_info = 15;</code>
+     * <code>.SalvageEscortSettleInfo settle_info = 1;</code>
      * @return The settleInfo.
      */
     emu.grasscutter.net.proto.SalvageEscortSettleInfoOuterClass.SalvageEscortSettleInfo getSettleInfo();
     /**
-     * <code>.SalvageEscortSettleInfo settle_info = 15;</code>
+     * <code>.SalvageEscortSettleInfo settle_info = 1;</code>
      */
     emu.grasscutter.net.proto.SalvageEscortSettleInfoOuterClass.SalvageEscortSettleInfoOrBuilder getSettleInfoOrBuilder();
+
+    /**
+     * <code>uint32 gallery_id = 6;</code>
+     * @return The galleryId.
+     */
+    int getGalleryId();
   }
   /**
    * <pre>
-   * CmdId: 8499
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 8798;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code SalvageEscortSettleNotify}
@@ -90,12 +94,7 @@ public final class SalvageEscortSettleNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 112: {
-
-              galleryId_ = input.readUInt32();
-              break;
-            }
-            case 122: {
+            case 10: {
               emu.grasscutter.net.proto.SalvageEscortSettleInfoOuterClass.SalvageEscortSettleInfo.Builder subBuilder = null;
               if (settleInfo_ != null) {
                 subBuilder = settleInfo_.toBuilder();
@@ -106,6 +105,11 @@ public final class SalvageEscortSettleNotifyOuterClass {
                 settleInfo_ = subBuilder.buildPartial();
               }
 
+              break;
+            }
+            case 48: {
+
+              galleryId_ = input.readUInt32();
               break;
             }
             default: {
@@ -140,21 +144,10 @@ public final class SalvageEscortSettleNotifyOuterClass {
               emu.grasscutter.net.proto.SalvageEscortSettleNotifyOuterClass.SalvageEscortSettleNotify.class, emu.grasscutter.net.proto.SalvageEscortSettleNotifyOuterClass.SalvageEscortSettleNotify.Builder.class);
     }
 
-    public static final int GALLERY_ID_FIELD_NUMBER = 14;
-    private int galleryId_;
-    /**
-     * <code>uint32 gallery_id = 14;</code>
-     * @return The galleryId.
-     */
-    @java.lang.Override
-    public int getGalleryId() {
-      return galleryId_;
-    }
-
-    public static final int SETTLE_INFO_FIELD_NUMBER = 15;
+    public static final int SETTLE_INFO_FIELD_NUMBER = 1;
     private emu.grasscutter.net.proto.SalvageEscortSettleInfoOuterClass.SalvageEscortSettleInfo settleInfo_;
     /**
-     * <code>.SalvageEscortSettleInfo settle_info = 15;</code>
+     * <code>.SalvageEscortSettleInfo settle_info = 1;</code>
      * @return Whether the settleInfo field is set.
      */
     @java.lang.Override
@@ -162,7 +155,7 @@ public final class SalvageEscortSettleNotifyOuterClass {
       return settleInfo_ != null;
     }
     /**
-     * <code>.SalvageEscortSettleInfo settle_info = 15;</code>
+     * <code>.SalvageEscortSettleInfo settle_info = 1;</code>
      * @return The settleInfo.
      */
     @java.lang.Override
@@ -170,11 +163,22 @@ public final class SalvageEscortSettleNotifyOuterClass {
       return settleInfo_ == null ? emu.grasscutter.net.proto.SalvageEscortSettleInfoOuterClass.SalvageEscortSettleInfo.getDefaultInstance() : settleInfo_;
     }
     /**
-     * <code>.SalvageEscortSettleInfo settle_info = 15;</code>
+     * <code>.SalvageEscortSettleInfo settle_info = 1;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.SalvageEscortSettleInfoOuterClass.SalvageEscortSettleInfoOrBuilder getSettleInfoOrBuilder() {
       return getSettleInfo();
+    }
+
+    public static final int GALLERY_ID_FIELD_NUMBER = 6;
+    private int galleryId_;
+    /**
+     * <code>uint32 gallery_id = 6;</code>
+     * @return The galleryId.
+     */
+    @java.lang.Override
+    public int getGalleryId() {
+      return galleryId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -191,11 +195,11 @@ public final class SalvageEscortSettleNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (galleryId_ != 0) {
-        output.writeUInt32(14, galleryId_);
-      }
       if (settleInfo_ != null) {
-        output.writeMessage(15, getSettleInfo());
+        output.writeMessage(1, getSettleInfo());
+      }
+      if (galleryId_ != 0) {
+        output.writeUInt32(6, galleryId_);
       }
       unknownFields.writeTo(output);
     }
@@ -206,13 +210,13 @@ public final class SalvageEscortSettleNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (galleryId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, galleryId_);
-      }
       if (settleInfo_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(15, getSettleInfo());
+          .computeMessageSize(1, getSettleInfo());
+      }
+      if (galleryId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(6, galleryId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -229,13 +233,13 @@ public final class SalvageEscortSettleNotifyOuterClass {
       }
       emu.grasscutter.net.proto.SalvageEscortSettleNotifyOuterClass.SalvageEscortSettleNotify other = (emu.grasscutter.net.proto.SalvageEscortSettleNotifyOuterClass.SalvageEscortSettleNotify) obj;
 
-      if (getGalleryId()
-          != other.getGalleryId()) return false;
       if (hasSettleInfo() != other.hasSettleInfo()) return false;
       if (hasSettleInfo()) {
         if (!getSettleInfo()
             .equals(other.getSettleInfo())) return false;
       }
+      if (getGalleryId()
+          != other.getGalleryId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -247,12 +251,12 @@ public final class SalvageEscortSettleNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + GALLERY_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getGalleryId();
       if (hasSettleInfo()) {
         hash = (37 * hash) + SETTLE_INFO_FIELD_NUMBER;
         hash = (53 * hash) + getSettleInfo().hashCode();
       }
+      hash = (37 * hash) + GALLERY_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getGalleryId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -350,9 +354,13 @@ public final class SalvageEscortSettleNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 8499
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 8798;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code SalvageEscortSettleNotify}
@@ -392,14 +400,14 @@ public final class SalvageEscortSettleNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        galleryId_ = 0;
-
         if (settleInfoBuilder_ == null) {
           settleInfo_ = null;
         } else {
           settleInfo_ = null;
           settleInfoBuilder_ = null;
         }
+        galleryId_ = 0;
+
         return this;
       }
 
@@ -426,12 +434,12 @@ public final class SalvageEscortSettleNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.SalvageEscortSettleNotifyOuterClass.SalvageEscortSettleNotify buildPartial() {
         emu.grasscutter.net.proto.SalvageEscortSettleNotifyOuterClass.SalvageEscortSettleNotify result = new emu.grasscutter.net.proto.SalvageEscortSettleNotifyOuterClass.SalvageEscortSettleNotify(this);
-        result.galleryId_ = galleryId_;
         if (settleInfoBuilder_ == null) {
           result.settleInfo_ = settleInfo_;
         } else {
           result.settleInfo_ = settleInfoBuilder_.build();
         }
+        result.galleryId_ = galleryId_;
         onBuilt();
         return result;
       }
@@ -480,11 +488,11 @@ public final class SalvageEscortSettleNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.SalvageEscortSettleNotifyOuterClass.SalvageEscortSettleNotify other) {
         if (other == emu.grasscutter.net.proto.SalvageEscortSettleNotifyOuterClass.SalvageEscortSettleNotify.getDefaultInstance()) return this;
-        if (other.getGalleryId() != 0) {
-          setGalleryId(other.getGalleryId());
-        }
         if (other.hasSettleInfo()) {
           mergeSettleInfo(other.getSettleInfo());
+        }
+        if (other.getGalleryId() != 0) {
+          setGalleryId(other.getGalleryId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -515,49 +523,18 @@ public final class SalvageEscortSettleNotifyOuterClass {
         return this;
       }
 
-      private int galleryId_ ;
-      /**
-       * <code>uint32 gallery_id = 14;</code>
-       * @return The galleryId.
-       */
-      @java.lang.Override
-      public int getGalleryId() {
-        return galleryId_;
-      }
-      /**
-       * <code>uint32 gallery_id = 14;</code>
-       * @param value The galleryId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setGalleryId(int value) {
-        
-        galleryId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 gallery_id = 14;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearGalleryId() {
-        
-        galleryId_ = 0;
-        onChanged();
-        return this;
-      }
-
       private emu.grasscutter.net.proto.SalvageEscortSettleInfoOuterClass.SalvageEscortSettleInfo settleInfo_;
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.SalvageEscortSettleInfoOuterClass.SalvageEscortSettleInfo, emu.grasscutter.net.proto.SalvageEscortSettleInfoOuterClass.SalvageEscortSettleInfo.Builder, emu.grasscutter.net.proto.SalvageEscortSettleInfoOuterClass.SalvageEscortSettleInfoOrBuilder> settleInfoBuilder_;
       /**
-       * <code>.SalvageEscortSettleInfo settle_info = 15;</code>
+       * <code>.SalvageEscortSettleInfo settle_info = 1;</code>
        * @return Whether the settleInfo field is set.
        */
       public boolean hasSettleInfo() {
         return settleInfoBuilder_ != null || settleInfo_ != null;
       }
       /**
-       * <code>.SalvageEscortSettleInfo settle_info = 15;</code>
+       * <code>.SalvageEscortSettleInfo settle_info = 1;</code>
        * @return The settleInfo.
        */
       public emu.grasscutter.net.proto.SalvageEscortSettleInfoOuterClass.SalvageEscortSettleInfo getSettleInfo() {
@@ -568,7 +545,7 @@ public final class SalvageEscortSettleNotifyOuterClass {
         }
       }
       /**
-       * <code>.SalvageEscortSettleInfo settle_info = 15;</code>
+       * <code>.SalvageEscortSettleInfo settle_info = 1;</code>
        */
       public Builder setSettleInfo(emu.grasscutter.net.proto.SalvageEscortSettleInfoOuterClass.SalvageEscortSettleInfo value) {
         if (settleInfoBuilder_ == null) {
@@ -584,7 +561,7 @@ public final class SalvageEscortSettleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.SalvageEscortSettleInfo settle_info = 15;</code>
+       * <code>.SalvageEscortSettleInfo settle_info = 1;</code>
        */
       public Builder setSettleInfo(
           emu.grasscutter.net.proto.SalvageEscortSettleInfoOuterClass.SalvageEscortSettleInfo.Builder builderForValue) {
@@ -598,7 +575,7 @@ public final class SalvageEscortSettleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.SalvageEscortSettleInfo settle_info = 15;</code>
+       * <code>.SalvageEscortSettleInfo settle_info = 1;</code>
        */
       public Builder mergeSettleInfo(emu.grasscutter.net.proto.SalvageEscortSettleInfoOuterClass.SalvageEscortSettleInfo value) {
         if (settleInfoBuilder_ == null) {
@@ -616,7 +593,7 @@ public final class SalvageEscortSettleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.SalvageEscortSettleInfo settle_info = 15;</code>
+       * <code>.SalvageEscortSettleInfo settle_info = 1;</code>
        */
       public Builder clearSettleInfo() {
         if (settleInfoBuilder_ == null) {
@@ -630,7 +607,7 @@ public final class SalvageEscortSettleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.SalvageEscortSettleInfo settle_info = 15;</code>
+       * <code>.SalvageEscortSettleInfo settle_info = 1;</code>
        */
       public emu.grasscutter.net.proto.SalvageEscortSettleInfoOuterClass.SalvageEscortSettleInfo.Builder getSettleInfoBuilder() {
         
@@ -638,7 +615,7 @@ public final class SalvageEscortSettleNotifyOuterClass {
         return getSettleInfoFieldBuilder().getBuilder();
       }
       /**
-       * <code>.SalvageEscortSettleInfo settle_info = 15;</code>
+       * <code>.SalvageEscortSettleInfo settle_info = 1;</code>
        */
       public emu.grasscutter.net.proto.SalvageEscortSettleInfoOuterClass.SalvageEscortSettleInfoOrBuilder getSettleInfoOrBuilder() {
         if (settleInfoBuilder_ != null) {
@@ -649,7 +626,7 @@ public final class SalvageEscortSettleNotifyOuterClass {
         }
       }
       /**
-       * <code>.SalvageEscortSettleInfo settle_info = 15;</code>
+       * <code>.SalvageEscortSettleInfo settle_info = 1;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.SalvageEscortSettleInfoOuterClass.SalvageEscortSettleInfo, emu.grasscutter.net.proto.SalvageEscortSettleInfoOuterClass.SalvageEscortSettleInfo.Builder, emu.grasscutter.net.proto.SalvageEscortSettleInfoOuterClass.SalvageEscortSettleInfoOrBuilder> 
@@ -663,6 +640,37 @@ public final class SalvageEscortSettleNotifyOuterClass {
           settleInfo_ = null;
         }
         return settleInfoBuilder_;
+      }
+
+      private int galleryId_ ;
+      /**
+       * <code>uint32 gallery_id = 6;</code>
+       * @return The galleryId.
+       */
+      @java.lang.Override
+      public int getGalleryId() {
+        return galleryId_;
+      }
+      /**
+       * <code>uint32 gallery_id = 6;</code>
+       * @param value The galleryId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setGalleryId(int value) {
+        
+        galleryId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 gallery_id = 6;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearGalleryId() {
+        
+        galleryId_ = 0;
+        onChanged();
+        return this;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -733,8 +741,8 @@ public final class SalvageEscortSettleNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n\037SalvageEscortSettleNotify.proto\032\035Salva" +
       "geEscortSettleInfo.proto\"^\n\031SalvageEscor" +
-      "tSettleNotify\022\022\n\ngallery_id\030\016 \001(\r\022-\n\013set" +
-      "tle_info\030\017 \001(\0132\030.SalvageEscortSettleInfo" +
+      "tSettleNotify\022-\n\013settle_info\030\001 \001(\0132\030.Sal" +
+      "vageEscortSettleInfo\022\022\n\ngallery_id\030\006 \001(\r" +
       "B\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -747,7 +755,7 @@ public final class SalvageEscortSettleNotifyOuterClass {
     internal_static_SalvageEscortSettleNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SalvageEscortSettleNotify_descriptor,
-        new java.lang.String[] { "GalleryId", "SettleInfo", });
+        new java.lang.String[] { "SettleInfo", "GalleryId", });
     emu.grasscutter.net.proto.SalvageEscortSettleInfoOuterClass.getDescriptor();
   }
 

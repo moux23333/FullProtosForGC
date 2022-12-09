@@ -19,16 +19,20 @@ public final class ServerDisconnectClientNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 data = 10;</code>
+     * <code>uint32 data = 4;</code>
      * @return The data.
      */
     int getData();
   }
   /**
    * <pre>
-   * CmdId: 184
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 152;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code ServerDisconnectClientNotify}
@@ -75,7 +79,7 @@ public final class ServerDisconnectClientNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 80: {
+            case 32: {
 
               data_ = input.readUInt32();
               break;
@@ -112,10 +116,10 @@ public final class ServerDisconnectClientNotifyOuterClass {
               emu.grasscutter.net.proto.ServerDisconnectClientNotifyOuterClass.ServerDisconnectClientNotify.class, emu.grasscutter.net.proto.ServerDisconnectClientNotifyOuterClass.ServerDisconnectClientNotify.Builder.class);
     }
 
-    public static final int DATA_FIELD_NUMBER = 10;
+    public static final int DATA_FIELD_NUMBER = 4;
     private int data_;
     /**
-     * <code>uint32 data = 10;</code>
+     * <code>uint32 data = 4;</code>
      * @return The data.
      */
     @java.lang.Override
@@ -138,7 +142,7 @@ public final class ServerDisconnectClientNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (data_ != 0) {
-        output.writeUInt32(10, data_);
+        output.writeUInt32(4, data_);
       }
       unknownFields.writeTo(output);
     }
@@ -151,7 +155,7 @@ public final class ServerDisconnectClientNotifyOuterClass {
       size = 0;
       if (data_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, data_);
+          .computeUInt32Size(4, data_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -280,9 +284,13 @@ public final class ServerDisconnectClientNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 184
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 152;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code ServerDisconnectClientNotify}
@@ -433,7 +441,7 @@ public final class ServerDisconnectClientNotifyOuterClass {
 
       private int data_ ;
       /**
-       * <code>uint32 data = 10;</code>
+       * <code>uint32 data = 4;</code>
        * @return The data.
        */
       @java.lang.Override
@@ -441,7 +449,7 @@ public final class ServerDisconnectClientNotifyOuterClass {
         return data_;
       }
       /**
-       * <code>uint32 data = 10;</code>
+       * <code>uint32 data = 4;</code>
        * @param value The data to set.
        * @return This builder for chaining.
        */
@@ -452,7 +460,7 @@ public final class ServerDisconnectClientNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 data = 10;</code>
+       * <code>uint32 data = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearData() {
@@ -529,7 +537,7 @@ public final class ServerDisconnectClientNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\"ServerDisconnectClientNotify.proto\",\n\034" +
-      "ServerDisconnectClientNotify\022\014\n\004data\030\n \001" +
+      "ServerDisconnectClientNotify\022\014\n\004data\030\004 \001" +
       "(\rB\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

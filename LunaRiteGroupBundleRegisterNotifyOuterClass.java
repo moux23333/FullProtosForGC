@@ -19,17 +19,21 @@ public final class LunaRiteGroupBundleRegisterNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 group_link_bundle_id = 11;</code>
+     * <code>uint32 group_link_bundle_id = 7;</code>
      * @return The groupLinkBundleId.
      */
     int getGroupLinkBundleId();
   }
   /**
    * <pre>
-   * CmdId: 8465
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 8455;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code LunaRiteGroupBundleRegisterNotify}
@@ -76,7 +80,7 @@ public final class LunaRiteGroupBundleRegisterNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 88: {
+            case 56: {
 
               groupLinkBundleId_ = input.readUInt32();
               break;
@@ -113,10 +117,10 @@ public final class LunaRiteGroupBundleRegisterNotifyOuterClass {
               emu.grasscutter.net.proto.LunaRiteGroupBundleRegisterNotifyOuterClass.LunaRiteGroupBundleRegisterNotify.class, emu.grasscutter.net.proto.LunaRiteGroupBundleRegisterNotifyOuterClass.LunaRiteGroupBundleRegisterNotify.Builder.class);
     }
 
-    public static final int GROUP_LINK_BUNDLE_ID_FIELD_NUMBER = 11;
+    public static final int GROUP_LINK_BUNDLE_ID_FIELD_NUMBER = 7;
     private int groupLinkBundleId_;
     /**
-     * <code>uint32 group_link_bundle_id = 11;</code>
+     * <code>uint32 group_link_bundle_id = 7;</code>
      * @return The groupLinkBundleId.
      */
     @java.lang.Override
@@ -139,7 +143,7 @@ public final class LunaRiteGroupBundleRegisterNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (groupLinkBundleId_ != 0) {
-        output.writeUInt32(11, groupLinkBundleId_);
+        output.writeUInt32(7, groupLinkBundleId_);
       }
       unknownFields.writeTo(output);
     }
@@ -152,7 +156,7 @@ public final class LunaRiteGroupBundleRegisterNotifyOuterClass {
       size = 0;
       if (groupLinkBundleId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, groupLinkBundleId_);
+          .computeUInt32Size(7, groupLinkBundleId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -281,10 +285,14 @@ public final class LunaRiteGroupBundleRegisterNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 8465
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 8455;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code LunaRiteGroupBundleRegisterNotify}
@@ -435,7 +443,7 @@ public final class LunaRiteGroupBundleRegisterNotifyOuterClass {
 
       private int groupLinkBundleId_ ;
       /**
-       * <code>uint32 group_link_bundle_id = 11;</code>
+       * <code>uint32 group_link_bundle_id = 7;</code>
        * @return The groupLinkBundleId.
        */
       @java.lang.Override
@@ -443,7 +451,7 @@ public final class LunaRiteGroupBundleRegisterNotifyOuterClass {
         return groupLinkBundleId_;
       }
       /**
-       * <code>uint32 group_link_bundle_id = 11;</code>
+       * <code>uint32 group_link_bundle_id = 7;</code>
        * @param value The groupLinkBundleId to set.
        * @return This builder for chaining.
        */
@@ -454,7 +462,7 @@ public final class LunaRiteGroupBundleRegisterNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 group_link_bundle_id = 11;</code>
+       * <code>uint32 group_link_bundle_id = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearGroupLinkBundleId() {
@@ -532,7 +540,7 @@ public final class LunaRiteGroupBundleRegisterNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n\'LunaRiteGroupBundleRegisterNotify.prot" +
       "o\"A\n!LunaRiteGroupBundleRegisterNotify\022\034" +
-      "\n\024group_link_bundle_id\030\013 \001(\rB\033\n\031emu.gras" +
+      "\n\024group_link_bundle_id\030\007 \001(\rB\033\n\031emu.gras" +
       "scutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

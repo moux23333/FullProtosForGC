@@ -19,23 +19,27 @@ public final class PlayerApplyEnterHomeResultReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 apply_uid = 14;</code>
+     * <code>uint32 apply_uid = 9;</code>
      * @return The applyUid.
      */
     int getApplyUid();
 
     /**
-     * <code>bool is_agreed = 10;</code>
+     * <code>bool is_agreed = 2;</code>
      * @return The isAgreed.
      */
     boolean getIsAgreed();
   }
   /**
    * <pre>
-   * CmdId: 4693
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 4646;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code PlayerApplyEnterHomeResultReq}
@@ -82,12 +86,12 @@ public final class PlayerApplyEnterHomeResultReqOuterClass {
             case 0:
               done = true;
               break;
-            case 80: {
+            case 16: {
 
               isAgreed_ = input.readBool();
               break;
             }
-            case 112: {
+            case 72: {
 
               applyUid_ = input.readUInt32();
               break;
@@ -124,10 +128,10 @@ public final class PlayerApplyEnterHomeResultReqOuterClass {
               emu.grasscutter.net.proto.PlayerApplyEnterHomeResultReqOuterClass.PlayerApplyEnterHomeResultReq.class, emu.grasscutter.net.proto.PlayerApplyEnterHomeResultReqOuterClass.PlayerApplyEnterHomeResultReq.Builder.class);
     }
 
-    public static final int APPLY_UID_FIELD_NUMBER = 14;
+    public static final int APPLY_UID_FIELD_NUMBER = 9;
     private int applyUid_;
     /**
-     * <code>uint32 apply_uid = 14;</code>
+     * <code>uint32 apply_uid = 9;</code>
      * @return The applyUid.
      */
     @java.lang.Override
@@ -135,10 +139,10 @@ public final class PlayerApplyEnterHomeResultReqOuterClass {
       return applyUid_;
     }
 
-    public static final int IS_AGREED_FIELD_NUMBER = 10;
+    public static final int IS_AGREED_FIELD_NUMBER = 2;
     private boolean isAgreed_;
     /**
-     * <code>bool is_agreed = 10;</code>
+     * <code>bool is_agreed = 2;</code>
      * @return The isAgreed.
      */
     @java.lang.Override
@@ -161,10 +165,10 @@ public final class PlayerApplyEnterHomeResultReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (isAgreed_ != false) {
-        output.writeBool(10, isAgreed_);
+        output.writeBool(2, isAgreed_);
       }
       if (applyUid_ != 0) {
-        output.writeUInt32(14, applyUid_);
+        output.writeUInt32(9, applyUid_);
       }
       unknownFields.writeTo(output);
     }
@@ -177,11 +181,11 @@ public final class PlayerApplyEnterHomeResultReqOuterClass {
       size = 0;
       if (isAgreed_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(10, isAgreed_);
+          .computeBoolSize(2, isAgreed_);
       }
       if (applyUid_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, applyUid_);
+          .computeUInt32Size(9, applyUid_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -315,10 +319,14 @@ public final class PlayerApplyEnterHomeResultReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 4693
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 4646;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code PlayerApplyEnterHomeResultReq}
@@ -475,7 +483,7 @@ public final class PlayerApplyEnterHomeResultReqOuterClass {
 
       private int applyUid_ ;
       /**
-       * <code>uint32 apply_uid = 14;</code>
+       * <code>uint32 apply_uid = 9;</code>
        * @return The applyUid.
        */
       @java.lang.Override
@@ -483,7 +491,7 @@ public final class PlayerApplyEnterHomeResultReqOuterClass {
         return applyUid_;
       }
       /**
-       * <code>uint32 apply_uid = 14;</code>
+       * <code>uint32 apply_uid = 9;</code>
        * @param value The applyUid to set.
        * @return This builder for chaining.
        */
@@ -494,7 +502,7 @@ public final class PlayerApplyEnterHomeResultReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 apply_uid = 14;</code>
+       * <code>uint32 apply_uid = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearApplyUid() {
@@ -506,7 +514,7 @@ public final class PlayerApplyEnterHomeResultReqOuterClass {
 
       private boolean isAgreed_ ;
       /**
-       * <code>bool is_agreed = 10;</code>
+       * <code>bool is_agreed = 2;</code>
        * @return The isAgreed.
        */
       @java.lang.Override
@@ -514,7 +522,7 @@ public final class PlayerApplyEnterHomeResultReqOuterClass {
         return isAgreed_;
       }
       /**
-       * <code>bool is_agreed = 10;</code>
+       * <code>bool is_agreed = 2;</code>
        * @param value The isAgreed to set.
        * @return This builder for chaining.
        */
@@ -525,7 +533,7 @@ public final class PlayerApplyEnterHomeResultReqOuterClass {
         return this;
       }
       /**
-       * <code>bool is_agreed = 10;</code>
+       * <code>bool is_agreed = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsAgreed() {
@@ -603,7 +611,7 @@ public final class PlayerApplyEnterHomeResultReqOuterClass {
     java.lang.String[] descriptorData = {
       "\n#PlayerApplyEnterHomeResultReq.proto\"E\n" +
       "\035PlayerApplyEnterHomeResultReq\022\021\n\tapply_" +
-      "uid\030\016 \001(\r\022\021\n\tis_agreed\030\n \001(\010B\033\n\031emu.gras" +
+      "uid\030\t \001(\r\022\021\n\tis_agreed\030\002 \001(\010B\033\n\031emu.gras" +
       "scutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

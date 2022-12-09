@@ -19,16 +19,20 @@ public final class TreasureMapCurrencyNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 currency_num = 8;</code>
+     * <code>uint32 currency_num = 3;</code>
      * @return The currencyNum.
      */
     int getCurrencyNum();
   }
   /**
    * <pre>
-   * CmdId: 2171
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 2032;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code TreasureMapCurrencyNotify}
@@ -75,7 +79,7 @@ public final class TreasureMapCurrencyNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 64: {
+            case 24: {
 
               currencyNum_ = input.readUInt32();
               break;
@@ -112,10 +116,10 @@ public final class TreasureMapCurrencyNotifyOuterClass {
               emu.grasscutter.net.proto.TreasureMapCurrencyNotifyOuterClass.TreasureMapCurrencyNotify.class, emu.grasscutter.net.proto.TreasureMapCurrencyNotifyOuterClass.TreasureMapCurrencyNotify.Builder.class);
     }
 
-    public static final int CURRENCY_NUM_FIELD_NUMBER = 8;
+    public static final int CURRENCY_NUM_FIELD_NUMBER = 3;
     private int currencyNum_;
     /**
-     * <code>uint32 currency_num = 8;</code>
+     * <code>uint32 currency_num = 3;</code>
      * @return The currencyNum.
      */
     @java.lang.Override
@@ -138,7 +142,7 @@ public final class TreasureMapCurrencyNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (currencyNum_ != 0) {
-        output.writeUInt32(8, currencyNum_);
+        output.writeUInt32(3, currencyNum_);
       }
       unknownFields.writeTo(output);
     }
@@ -151,7 +155,7 @@ public final class TreasureMapCurrencyNotifyOuterClass {
       size = 0;
       if (currencyNum_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, currencyNum_);
+          .computeUInt32Size(3, currencyNum_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -280,9 +284,13 @@ public final class TreasureMapCurrencyNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 2171
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 2032;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code TreasureMapCurrencyNotify}
@@ -433,7 +441,7 @@ public final class TreasureMapCurrencyNotifyOuterClass {
 
       private int currencyNum_ ;
       /**
-       * <code>uint32 currency_num = 8;</code>
+       * <code>uint32 currency_num = 3;</code>
        * @return The currencyNum.
        */
       @java.lang.Override
@@ -441,7 +449,7 @@ public final class TreasureMapCurrencyNotifyOuterClass {
         return currencyNum_;
       }
       /**
-       * <code>uint32 currency_num = 8;</code>
+       * <code>uint32 currency_num = 3;</code>
        * @param value The currencyNum to set.
        * @return This builder for chaining.
        */
@@ -452,7 +460,7 @@ public final class TreasureMapCurrencyNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 currency_num = 8;</code>
+       * <code>uint32 currency_num = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearCurrencyNum() {
@@ -529,7 +537,7 @@ public final class TreasureMapCurrencyNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\037TreasureMapCurrencyNotify.proto\"1\n\031Tre" +
-      "asureMapCurrencyNotify\022\024\n\014currency_num\030\010" +
+      "asureMapCurrencyNotify\022\024\n\014currency_num\030\003" +
       " \001(\rB\033\n\031emu.grasscutter.net.protob\006proto" +
       "3"
     };

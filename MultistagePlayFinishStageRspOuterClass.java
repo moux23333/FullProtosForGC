@@ -19,28 +19,32 @@ public final class MultistagePlayFinishStageRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 11;</code>
+     * <code>int32 retcode = 9;</code>
      * @return The retcode.
      */
     int getRetcode();
 
     /**
-     * <code>uint32 group_id = 12;</code>
+     * <code>uint32 group_id = 2;</code>
      * @return The groupId.
      */
     int getGroupId();
 
     /**
-     * <code>uint32 play_index = 6;</code>
+     * <code>uint32 play_index = 3;</code>
      * @return The playIndex.
      */
     int getPlayIndex();
   }
   /**
    * <pre>
-   * CmdId: 5381
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 5325;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code MultistagePlayFinishStageRsp}
@@ -87,19 +91,19 @@ public final class MultistagePlayFinishStageRspOuterClass {
             case 0:
               done = true;
               break;
-            case 48: {
+            case 16: {
+
+              groupId_ = input.readUInt32();
+              break;
+            }
+            case 24: {
 
               playIndex_ = input.readUInt32();
               break;
             }
-            case 88: {
+            case 72: {
 
               retcode_ = input.readInt32();
-              break;
-            }
-            case 96: {
-
-              groupId_ = input.readUInt32();
               break;
             }
             default: {
@@ -134,10 +138,10 @@ public final class MultistagePlayFinishStageRspOuterClass {
               emu.grasscutter.net.proto.MultistagePlayFinishStageRspOuterClass.MultistagePlayFinishStageRsp.class, emu.grasscutter.net.proto.MultistagePlayFinishStageRspOuterClass.MultistagePlayFinishStageRsp.Builder.class);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 11;
+    public static final int RETCODE_FIELD_NUMBER = 9;
     private int retcode_;
     /**
-     * <code>int32 retcode = 11;</code>
+     * <code>int32 retcode = 9;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -145,10 +149,10 @@ public final class MultistagePlayFinishStageRspOuterClass {
       return retcode_;
     }
 
-    public static final int GROUP_ID_FIELD_NUMBER = 12;
+    public static final int GROUP_ID_FIELD_NUMBER = 2;
     private int groupId_;
     /**
-     * <code>uint32 group_id = 12;</code>
+     * <code>uint32 group_id = 2;</code>
      * @return The groupId.
      */
     @java.lang.Override
@@ -156,10 +160,10 @@ public final class MultistagePlayFinishStageRspOuterClass {
       return groupId_;
     }
 
-    public static final int PLAY_INDEX_FIELD_NUMBER = 6;
+    public static final int PLAY_INDEX_FIELD_NUMBER = 3;
     private int playIndex_;
     /**
-     * <code>uint32 play_index = 6;</code>
+     * <code>uint32 play_index = 3;</code>
      * @return The playIndex.
      */
     @java.lang.Override
@@ -181,14 +185,14 @@ public final class MultistagePlayFinishStageRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (groupId_ != 0) {
+        output.writeUInt32(2, groupId_);
+      }
       if (playIndex_ != 0) {
-        output.writeUInt32(6, playIndex_);
+        output.writeUInt32(3, playIndex_);
       }
       if (retcode_ != 0) {
-        output.writeInt32(11, retcode_);
-      }
-      if (groupId_ != 0) {
-        output.writeUInt32(12, groupId_);
+        output.writeInt32(9, retcode_);
       }
       unknownFields.writeTo(output);
     }
@@ -199,17 +203,17 @@ public final class MultistagePlayFinishStageRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (groupId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(2, groupId_);
+      }
       if (playIndex_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, playIndex_);
+          .computeUInt32Size(3, playIndex_);
       }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(11, retcode_);
-      }
-      if (groupId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, groupId_);
+          .computeInt32Size(9, retcode_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -346,9 +350,13 @@ public final class MultistagePlayFinishStageRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 5381
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 5325;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code MultistagePlayFinishStageRsp}
@@ -511,7 +519,7 @@ public final class MultistagePlayFinishStageRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 11;</code>
+       * <code>int32 retcode = 9;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -519,7 +527,7 @@ public final class MultistagePlayFinishStageRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 11;</code>
+       * <code>int32 retcode = 9;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -530,7 +538,7 @@ public final class MultistagePlayFinishStageRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 11;</code>
+       * <code>int32 retcode = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -542,7 +550,7 @@ public final class MultistagePlayFinishStageRspOuterClass {
 
       private int groupId_ ;
       /**
-       * <code>uint32 group_id = 12;</code>
+       * <code>uint32 group_id = 2;</code>
        * @return The groupId.
        */
       @java.lang.Override
@@ -550,7 +558,7 @@ public final class MultistagePlayFinishStageRspOuterClass {
         return groupId_;
       }
       /**
-       * <code>uint32 group_id = 12;</code>
+       * <code>uint32 group_id = 2;</code>
        * @param value The groupId to set.
        * @return This builder for chaining.
        */
@@ -561,7 +569,7 @@ public final class MultistagePlayFinishStageRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 group_id = 12;</code>
+       * <code>uint32 group_id = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearGroupId() {
@@ -573,7 +581,7 @@ public final class MultistagePlayFinishStageRspOuterClass {
 
       private int playIndex_ ;
       /**
-       * <code>uint32 play_index = 6;</code>
+       * <code>uint32 play_index = 3;</code>
        * @return The playIndex.
        */
       @java.lang.Override
@@ -581,7 +589,7 @@ public final class MultistagePlayFinishStageRspOuterClass {
         return playIndex_;
       }
       /**
-       * <code>uint32 play_index = 6;</code>
+       * <code>uint32 play_index = 3;</code>
        * @param value The playIndex to set.
        * @return This builder for chaining.
        */
@@ -592,7 +600,7 @@ public final class MultistagePlayFinishStageRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 play_index = 6;</code>
+       * <code>uint32 play_index = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearPlayIndex() {
@@ -670,7 +678,7 @@ public final class MultistagePlayFinishStageRspOuterClass {
     java.lang.String[] descriptorData = {
       "\n\"MultistagePlayFinishStageRsp.proto\"U\n\034" +
       "MultistagePlayFinishStageRsp\022\017\n\007retcode\030" +
-      "\013 \001(\005\022\020\n\010group_id\030\014 \001(\r\022\022\n\nplay_index\030\006 " +
+      "\t \001(\005\022\020\n\010group_id\030\002 \001(\r\022\022\n\nplay_index\030\003 " +
       "\001(\rB\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

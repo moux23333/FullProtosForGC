@@ -19,16 +19,16 @@ public final class HomeVerifyBlockDataOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 block_id = 10;</code>
+     * <code>uint32 block_id = 11;</code>
      * @return The blockId.
      */
     int getBlockId();
 
     /**
-     * <code>uint32 furnitures = 9;</code>
-     * @return The furnitures.
+     * <code>uint32 furniture_count = 13;</code>
+     * @return The furnitureCount.
      */
-    int getFurnitures();
+    int getFurnitureCount();
   }
   /**
    * Protobuf type {@code HomeVerifyBlockData}
@@ -75,14 +75,14 @@ public final class HomeVerifyBlockDataOuterClass {
             case 0:
               done = true;
               break;
-            case 72: {
-
-              furnitures_ = input.readUInt32();
-              break;
-            }
-            case 80: {
+            case 88: {
 
               blockId_ = input.readUInt32();
+              break;
+            }
+            case 104: {
+
+              furnitureCount_ = input.readUInt32();
               break;
             }
             default: {
@@ -117,10 +117,10 @@ public final class HomeVerifyBlockDataOuterClass {
               emu.grasscutter.net.proto.HomeVerifyBlockDataOuterClass.HomeVerifyBlockData.class, emu.grasscutter.net.proto.HomeVerifyBlockDataOuterClass.HomeVerifyBlockData.Builder.class);
     }
 
-    public static final int BLOCK_ID_FIELD_NUMBER = 10;
+    public static final int BLOCK_ID_FIELD_NUMBER = 11;
     private int blockId_;
     /**
-     * <code>uint32 block_id = 10;</code>
+     * <code>uint32 block_id = 11;</code>
      * @return The blockId.
      */
     @java.lang.Override
@@ -128,15 +128,15 @@ public final class HomeVerifyBlockDataOuterClass {
       return blockId_;
     }
 
-    public static final int FURNITURES_FIELD_NUMBER = 9;
-    private int furnitures_;
+    public static final int FURNITURE_COUNT_FIELD_NUMBER = 13;
+    private int furnitureCount_;
     /**
-     * <code>uint32 furnitures = 9;</code>
-     * @return The furnitures.
+     * <code>uint32 furniture_count = 13;</code>
+     * @return The furnitureCount.
      */
     @java.lang.Override
-    public int getFurnitures() {
-      return furnitures_;
+    public int getFurnitureCount() {
+      return furnitureCount_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -153,11 +153,11 @@ public final class HomeVerifyBlockDataOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (furnitures_ != 0) {
-        output.writeUInt32(9, furnitures_);
-      }
       if (blockId_ != 0) {
-        output.writeUInt32(10, blockId_);
+        output.writeUInt32(11, blockId_);
+      }
+      if (furnitureCount_ != 0) {
+        output.writeUInt32(13, furnitureCount_);
       }
       unknownFields.writeTo(output);
     }
@@ -168,13 +168,13 @@ public final class HomeVerifyBlockDataOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (furnitures_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, furnitures_);
-      }
       if (blockId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, blockId_);
+          .computeUInt32Size(11, blockId_);
+      }
+      if (furnitureCount_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(13, furnitureCount_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -193,8 +193,8 @@ public final class HomeVerifyBlockDataOuterClass {
 
       if (getBlockId()
           != other.getBlockId()) return false;
-      if (getFurnitures()
-          != other.getFurnitures()) return false;
+      if (getFurnitureCount()
+          != other.getFurnitureCount()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -208,8 +208,8 @@ public final class HomeVerifyBlockDataOuterClass {
       hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + BLOCK_ID_FIELD_NUMBER;
       hash = (53 * hash) + getBlockId();
-      hash = (37 * hash) + FURNITURES_FIELD_NUMBER;
-      hash = (53 * hash) + getFurnitures();
+      hash = (37 * hash) + FURNITURE_COUNT_FIELD_NUMBER;
+      hash = (53 * hash) + getFurnitureCount();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -345,7 +345,7 @@ public final class HomeVerifyBlockDataOuterClass {
         super.clear();
         blockId_ = 0;
 
-        furnitures_ = 0;
+        furnitureCount_ = 0;
 
         return this;
       }
@@ -374,7 +374,7 @@ public final class HomeVerifyBlockDataOuterClass {
       public emu.grasscutter.net.proto.HomeVerifyBlockDataOuterClass.HomeVerifyBlockData buildPartial() {
         emu.grasscutter.net.proto.HomeVerifyBlockDataOuterClass.HomeVerifyBlockData result = new emu.grasscutter.net.proto.HomeVerifyBlockDataOuterClass.HomeVerifyBlockData(this);
         result.blockId_ = blockId_;
-        result.furnitures_ = furnitures_;
+        result.furnitureCount_ = furnitureCount_;
         onBuilt();
         return result;
       }
@@ -426,8 +426,8 @@ public final class HomeVerifyBlockDataOuterClass {
         if (other.getBlockId() != 0) {
           setBlockId(other.getBlockId());
         }
-        if (other.getFurnitures() != 0) {
-          setFurnitures(other.getFurnitures());
+        if (other.getFurnitureCount() != 0) {
+          setFurnitureCount(other.getFurnitureCount());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -460,7 +460,7 @@ public final class HomeVerifyBlockDataOuterClass {
 
       private int blockId_ ;
       /**
-       * <code>uint32 block_id = 10;</code>
+       * <code>uint32 block_id = 11;</code>
        * @return The blockId.
        */
       @java.lang.Override
@@ -468,7 +468,7 @@ public final class HomeVerifyBlockDataOuterClass {
         return blockId_;
       }
       /**
-       * <code>uint32 block_id = 10;</code>
+       * <code>uint32 block_id = 11;</code>
        * @param value The blockId to set.
        * @return This builder for chaining.
        */
@@ -479,7 +479,7 @@ public final class HomeVerifyBlockDataOuterClass {
         return this;
       }
       /**
-       * <code>uint32 block_id = 10;</code>
+       * <code>uint32 block_id = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearBlockId() {
@@ -489,33 +489,33 @@ public final class HomeVerifyBlockDataOuterClass {
         return this;
       }
 
-      private int furnitures_ ;
+      private int furnitureCount_ ;
       /**
-       * <code>uint32 furnitures = 9;</code>
-       * @return The furnitures.
+       * <code>uint32 furniture_count = 13;</code>
+       * @return The furnitureCount.
        */
       @java.lang.Override
-      public int getFurnitures() {
-        return furnitures_;
+      public int getFurnitureCount() {
+        return furnitureCount_;
       }
       /**
-       * <code>uint32 furnitures = 9;</code>
-       * @param value The furnitures to set.
+       * <code>uint32 furniture_count = 13;</code>
+       * @param value The furnitureCount to set.
        * @return This builder for chaining.
        */
-      public Builder setFurnitures(int value) {
+      public Builder setFurnitureCount(int value) {
         
-        furnitures_ = value;
+        furnitureCount_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 furnitures = 9;</code>
+       * <code>uint32 furniture_count = 13;</code>
        * @return This builder for chaining.
        */
-      public Builder clearFurnitures() {
+      public Builder clearFurnitureCount() {
         
-        furnitures_ = 0;
+        furnitureCount_ = 0;
         onChanged();
         return this;
       }
@@ -586,10 +586,10 @@ public final class HomeVerifyBlockDataOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\031HomeVerifyBlockData.proto\";\n\023HomeVerif" +
-      "yBlockData\022\020\n\010block_id\030\n \001(\r\022\022\n\nfurnitur" +
-      "es\030\t \001(\rB\033\n\031emu.grasscutter.net.protob\006p" +
-      "roto3"
+      "\n\031HomeVerifyBlockData.proto\"@\n\023HomeVerif" +
+      "yBlockData\022\020\n\010block_id\030\013 \001(\r\022\027\n\017furnitur" +
+      "e_count\030\r \001(\rB\033\n\031emu.grasscutter.net.pro" +
+      "tob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -600,7 +600,7 @@ public final class HomeVerifyBlockDataOuterClass {
     internal_static_HomeVerifyBlockData_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_HomeVerifyBlockData_descriptor,
-        new java.lang.String[] { "BlockId", "Furnitures", });
+        new java.lang.String[] { "BlockId", "FurnitureCount", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

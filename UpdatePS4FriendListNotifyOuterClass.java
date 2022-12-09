@@ -19,24 +19,24 @@ public final class UpdatePS4FriendListNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated string psn_id_list = 15;</code>
+     * <code>repeated string psn_id_list = 14;</code>
      * @return A list containing the psnIdList.
      */
     java.util.List<java.lang.String>
         getPsnIdListList();
     /**
-     * <code>repeated string psn_id_list = 15;</code>
+     * <code>repeated string psn_id_list = 14;</code>
      * @return The count of psnIdList.
      */
     int getPsnIdListCount();
     /**
-     * <code>repeated string psn_id_list = 15;</code>
+     * <code>repeated string psn_id_list = 14;</code>
      * @param index The index of the element to return.
      * @return The psnIdList at the given index.
      */
     java.lang.String getPsnIdList(int index);
     /**
-     * <code>repeated string psn_id_list = 15;</code>
+     * <code>repeated string psn_id_list = 14;</code>
      * @param index The index of the value to return.
      * @return The bytes of the psnIdList at the given index.
      */
@@ -45,10 +45,14 @@ public final class UpdatePS4FriendListNotifyOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 4039
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 4016;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code UpdatePS4FriendListNotify}
@@ -97,7 +101,7 @@ public final class UpdatePS4FriendListNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 122: {
+            case 114: {
               java.lang.String s = input.readStringRequireUtf8();
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 psnIdList_ = new com.google.protobuf.LazyStringArrayList();
@@ -141,10 +145,10 @@ public final class UpdatePS4FriendListNotifyOuterClass {
               emu.grasscutter.net.proto.UpdatePS4FriendListNotifyOuterClass.UpdatePS4FriendListNotify.class, emu.grasscutter.net.proto.UpdatePS4FriendListNotifyOuterClass.UpdatePS4FriendListNotify.Builder.class);
     }
 
-    public static final int PSN_ID_LIST_FIELD_NUMBER = 15;
+    public static final int PSN_ID_LIST_FIELD_NUMBER = 14;
     private com.google.protobuf.LazyStringList psnIdList_;
     /**
-     * <code>repeated string psn_id_list = 15;</code>
+     * <code>repeated string psn_id_list = 14;</code>
      * @return A list containing the psnIdList.
      */
     public com.google.protobuf.ProtocolStringList
@@ -152,14 +156,14 @@ public final class UpdatePS4FriendListNotifyOuterClass {
       return psnIdList_;
     }
     /**
-     * <code>repeated string psn_id_list = 15;</code>
+     * <code>repeated string psn_id_list = 14;</code>
      * @return The count of psnIdList.
      */
     public int getPsnIdListCount() {
       return psnIdList_.size();
     }
     /**
-     * <code>repeated string psn_id_list = 15;</code>
+     * <code>repeated string psn_id_list = 14;</code>
      * @param index The index of the element to return.
      * @return The psnIdList at the given index.
      */
@@ -167,7 +171,7 @@ public final class UpdatePS4FriendListNotifyOuterClass {
       return psnIdList_.get(index);
     }
     /**
-     * <code>repeated string psn_id_list = 15;</code>
+     * <code>repeated string psn_id_list = 14;</code>
      * @param index The index of the value to return.
      * @return The bytes of the psnIdList at the given index.
      */
@@ -191,7 +195,7 @@ public final class UpdatePS4FriendListNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       for (int i = 0; i < psnIdList_.size(); i++) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 15, psnIdList_.getRaw(i));
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 14, psnIdList_.getRaw(i));
       }
       unknownFields.writeTo(output);
     }
@@ -339,10 +343,14 @@ public final class UpdatePS4FriendListNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 4039
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 4016;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code UpdatePS4FriendListNotify}
@@ -512,7 +520,7 @@ public final class UpdatePS4FriendListNotifyOuterClass {
          }
       }
       /**
-       * <code>repeated string psn_id_list = 15;</code>
+       * <code>repeated string psn_id_list = 14;</code>
        * @return A list containing the psnIdList.
        */
       public com.google.protobuf.ProtocolStringList
@@ -520,14 +528,14 @@ public final class UpdatePS4FriendListNotifyOuterClass {
         return psnIdList_.getUnmodifiableView();
       }
       /**
-       * <code>repeated string psn_id_list = 15;</code>
+       * <code>repeated string psn_id_list = 14;</code>
        * @return The count of psnIdList.
        */
       public int getPsnIdListCount() {
         return psnIdList_.size();
       }
       /**
-       * <code>repeated string psn_id_list = 15;</code>
+       * <code>repeated string psn_id_list = 14;</code>
        * @param index The index of the element to return.
        * @return The psnIdList at the given index.
        */
@@ -535,7 +543,7 @@ public final class UpdatePS4FriendListNotifyOuterClass {
         return psnIdList_.get(index);
       }
       /**
-       * <code>repeated string psn_id_list = 15;</code>
+       * <code>repeated string psn_id_list = 14;</code>
        * @param index The index of the value to return.
        * @return The bytes of the psnIdList at the given index.
        */
@@ -544,7 +552,7 @@ public final class UpdatePS4FriendListNotifyOuterClass {
         return psnIdList_.getByteString(index);
       }
       /**
-       * <code>repeated string psn_id_list = 15;</code>
+       * <code>repeated string psn_id_list = 14;</code>
        * @param index The index to set the value at.
        * @param value The psnIdList to set.
        * @return This builder for chaining.
@@ -560,7 +568,7 @@ public final class UpdatePS4FriendListNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated string psn_id_list = 15;</code>
+       * <code>repeated string psn_id_list = 14;</code>
        * @param value The psnIdList to add.
        * @return This builder for chaining.
        */
@@ -575,7 +583,7 @@ public final class UpdatePS4FriendListNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated string psn_id_list = 15;</code>
+       * <code>repeated string psn_id_list = 14;</code>
        * @param values The psnIdList to add.
        * @return This builder for chaining.
        */
@@ -588,7 +596,7 @@ public final class UpdatePS4FriendListNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated string psn_id_list = 15;</code>
+       * <code>repeated string psn_id_list = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearPsnIdList() {
@@ -598,7 +606,7 @@ public final class UpdatePS4FriendListNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated string psn_id_list = 15;</code>
+       * <code>repeated string psn_id_list = 14;</code>
        * @param value The bytes of the psnIdList to add.
        * @return This builder for chaining.
        */
@@ -681,7 +689,7 @@ public final class UpdatePS4FriendListNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\037UpdatePS4FriendListNotify.proto\"0\n\031Upd" +
-      "atePS4FriendListNotify\022\023\n\013psn_id_list\030\017 " +
+      "atePS4FriendListNotify\022\023\n\013psn_id_list\030\016 " +
       "\003(\tB\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

@@ -19,7 +19,7 @@ public final class PotionSaveDungeonResultReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 level_id = 8;</code>
+     * <code>uint32 level_id = 14;</code>
      * @return The levelId.
      */
     int getLevelId();
@@ -32,10 +32,14 @@ public final class PotionSaveDungeonResultReqOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 8192
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 8672;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code PotionSaveDungeonResultReq}
@@ -87,7 +91,7 @@ public final class PotionSaveDungeonResultReqOuterClass {
               stageId_ = input.readUInt32();
               break;
             }
-            case 64: {
+            case 112: {
 
               levelId_ = input.readUInt32();
               break;
@@ -124,10 +128,10 @@ public final class PotionSaveDungeonResultReqOuterClass {
               emu.grasscutter.net.proto.PotionSaveDungeonResultReqOuterClass.PotionSaveDungeonResultReq.class, emu.grasscutter.net.proto.PotionSaveDungeonResultReqOuterClass.PotionSaveDungeonResultReq.Builder.class);
     }
 
-    public static final int LEVEL_ID_FIELD_NUMBER = 8;
+    public static final int LEVEL_ID_FIELD_NUMBER = 14;
     private int levelId_;
     /**
-     * <code>uint32 level_id = 8;</code>
+     * <code>uint32 level_id = 14;</code>
      * @return The levelId.
      */
     @java.lang.Override
@@ -164,7 +168,7 @@ public final class PotionSaveDungeonResultReqOuterClass {
         output.writeUInt32(7, stageId_);
       }
       if (levelId_ != 0) {
-        output.writeUInt32(8, levelId_);
+        output.writeUInt32(14, levelId_);
       }
       unknownFields.writeTo(output);
     }
@@ -181,7 +185,7 @@ public final class PotionSaveDungeonResultReqOuterClass {
       }
       if (levelId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, levelId_);
+          .computeUInt32Size(14, levelId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -314,10 +318,14 @@ public final class PotionSaveDungeonResultReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 8192
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 8672;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code PotionSaveDungeonResultReq}
@@ -474,7 +482,7 @@ public final class PotionSaveDungeonResultReqOuterClass {
 
       private int levelId_ ;
       /**
-       * <code>uint32 level_id = 8;</code>
+       * <code>uint32 level_id = 14;</code>
        * @return The levelId.
        */
       @java.lang.Override
@@ -482,7 +490,7 @@ public final class PotionSaveDungeonResultReqOuterClass {
         return levelId_;
       }
       /**
-       * <code>uint32 level_id = 8;</code>
+       * <code>uint32 level_id = 14;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
        */
@@ -493,7 +501,7 @@ public final class PotionSaveDungeonResultReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 level_id = 8;</code>
+       * <code>uint32 level_id = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearLevelId() {
@@ -601,7 +609,7 @@ public final class PotionSaveDungeonResultReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n PotionSaveDungeonResultReq.proto\"@\n\032Po" +
-      "tionSaveDungeonResultReq\022\020\n\010level_id\030\010 \001" +
+      "tionSaveDungeonResultReq\022\020\n\010level_id\030\016 \001" +
       "(\r\022\020\n\010stage_id\030\007 \001(\rB\033\n\031emu.grasscutter." +
       "net.protob\006proto3"
     };

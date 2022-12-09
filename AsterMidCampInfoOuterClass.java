@@ -34,7 +34,7 @@ public final class AsterMidCampInfoOuterClass {
     emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getPosOrBuilder();
 
     /**
-     * <code>uint32 camp_id = 8;</code>
+     * <code>uint32 camp_id = 15;</code>
      * @return The campId.
      */
     int getCampId();
@@ -97,7 +97,7 @@ public final class AsterMidCampInfoOuterClass {
 
               break;
             }
-            case 64: {
+            case 120: {
 
               campId_ = input.readUInt32();
               break;
@@ -160,10 +160,10 @@ public final class AsterMidCampInfoOuterClass {
       return getPos();
     }
 
-    public static final int CAMP_ID_FIELD_NUMBER = 8;
+    public static final int CAMP_ID_FIELD_NUMBER = 15;
     private int campId_;
     /**
-     * <code>uint32 camp_id = 8;</code>
+     * <code>uint32 camp_id = 15;</code>
      * @return The campId.
      */
     @java.lang.Override
@@ -189,7 +189,7 @@ public final class AsterMidCampInfoOuterClass {
         output.writeMessage(3, getPos());
       }
       if (campId_ != 0) {
-        output.writeUInt32(8, campId_);
+        output.writeUInt32(15, campId_);
       }
       unknownFields.writeTo(output);
     }
@@ -206,7 +206,7 @@ public final class AsterMidCampInfoOuterClass {
       }
       if (campId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, campId_);
+          .computeUInt32Size(15, campId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -624,7 +624,7 @@ public final class AsterMidCampInfoOuterClass {
 
       private int campId_ ;
       /**
-       * <code>uint32 camp_id = 8;</code>
+       * <code>uint32 camp_id = 15;</code>
        * @return The campId.
        */
       @java.lang.Override
@@ -632,7 +632,7 @@ public final class AsterMidCampInfoOuterClass {
         return campId_;
       }
       /**
-       * <code>uint32 camp_id = 8;</code>
+       * <code>uint32 camp_id = 15;</code>
        * @param value The campId to set.
        * @return This builder for chaining.
        */
@@ -643,7 +643,7 @@ public final class AsterMidCampInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 camp_id = 8;</code>
+       * <code>uint32 camp_id = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearCampId() {
@@ -721,7 +721,7 @@ public final class AsterMidCampInfoOuterClass {
     java.lang.String[] descriptorData = {
       "\n\026AsterMidCampInfo.proto\032\014Vector.proto\"9" +
       "\n\020AsterMidCampInfo\022\024\n\003pos\030\003 \001(\0132\007.Vector" +
-      "\022\017\n\007camp_id\030\010 \001(\rB\033\n\031emu.grasscutter.net" +
+      "\022\017\n\007camp_id\030\017 \001(\rB\033\n\031emu.grasscutter.net" +
       ".protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

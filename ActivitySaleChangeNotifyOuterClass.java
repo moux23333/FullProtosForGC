@@ -19,22 +19,26 @@ public final class ActivitySaleChangeNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 sale_id = 5;</code>
-     * @return The saleId.
-     */
-    int getSaleId();
-
-    /**
-     * <code>bool is_close = 1;</code>
+     * <code>bool is_close = 14;</code>
      * @return The isClose.
      */
     boolean getIsClose();
+
+    /**
+     * <code>uint32 sale_id = 8;</code>
+     * @return The saleId.
+     */
+    int getSaleId();
   }
   /**
    * <pre>
-   * CmdId: 2071
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 2012;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code ActivitySaleChangeNotify}
@@ -81,14 +85,14 @@ public final class ActivitySaleChangeNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
-
-              isClose_ = input.readBool();
-              break;
-            }
-            case 40: {
+            case 64: {
 
               saleId_ = input.readUInt32();
+              break;
+            }
+            case 112: {
+
+              isClose_ = input.readBool();
               break;
             }
             default: {
@@ -123,26 +127,26 @@ public final class ActivitySaleChangeNotifyOuterClass {
               emu.grasscutter.net.proto.ActivitySaleChangeNotifyOuterClass.ActivitySaleChangeNotify.class, emu.grasscutter.net.proto.ActivitySaleChangeNotifyOuterClass.ActivitySaleChangeNotify.Builder.class);
     }
 
-    public static final int SALE_ID_FIELD_NUMBER = 5;
-    private int saleId_;
-    /**
-     * <code>uint32 sale_id = 5;</code>
-     * @return The saleId.
-     */
-    @java.lang.Override
-    public int getSaleId() {
-      return saleId_;
-    }
-
-    public static final int IS_CLOSE_FIELD_NUMBER = 1;
+    public static final int IS_CLOSE_FIELD_NUMBER = 14;
     private boolean isClose_;
     /**
-     * <code>bool is_close = 1;</code>
+     * <code>bool is_close = 14;</code>
      * @return The isClose.
      */
     @java.lang.Override
     public boolean getIsClose() {
       return isClose_;
+    }
+
+    public static final int SALE_ID_FIELD_NUMBER = 8;
+    private int saleId_;
+    /**
+     * <code>uint32 sale_id = 8;</code>
+     * @return The saleId.
+     */
+    @java.lang.Override
+    public int getSaleId() {
+      return saleId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -159,11 +163,11 @@ public final class ActivitySaleChangeNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (isClose_ != false) {
-        output.writeBool(1, isClose_);
-      }
       if (saleId_ != 0) {
-        output.writeUInt32(5, saleId_);
+        output.writeUInt32(8, saleId_);
+      }
+      if (isClose_ != false) {
+        output.writeBool(14, isClose_);
       }
       unknownFields.writeTo(output);
     }
@@ -174,13 +178,13 @@ public final class ActivitySaleChangeNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (isClose_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(1, isClose_);
-      }
       if (saleId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, saleId_);
+          .computeUInt32Size(8, saleId_);
+      }
+      if (isClose_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(14, isClose_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -197,10 +201,10 @@ public final class ActivitySaleChangeNotifyOuterClass {
       }
       emu.grasscutter.net.proto.ActivitySaleChangeNotifyOuterClass.ActivitySaleChangeNotify other = (emu.grasscutter.net.proto.ActivitySaleChangeNotifyOuterClass.ActivitySaleChangeNotify) obj;
 
-      if (getSaleId()
-          != other.getSaleId()) return false;
       if (getIsClose()
           != other.getIsClose()) return false;
+      if (getSaleId()
+          != other.getSaleId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -212,11 +216,11 @@ public final class ActivitySaleChangeNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + SALE_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getSaleId();
       hash = (37 * hash) + IS_CLOSE_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsClose());
+      hash = (37 * hash) + SALE_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getSaleId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -314,9 +318,13 @@ public final class ActivitySaleChangeNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 2071
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 2012;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code ActivitySaleChangeNotify}
@@ -356,9 +364,9 @@ public final class ActivitySaleChangeNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        saleId_ = 0;
-
         isClose_ = false;
+
+        saleId_ = 0;
 
         return this;
       }
@@ -386,8 +394,8 @@ public final class ActivitySaleChangeNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.ActivitySaleChangeNotifyOuterClass.ActivitySaleChangeNotify buildPartial() {
         emu.grasscutter.net.proto.ActivitySaleChangeNotifyOuterClass.ActivitySaleChangeNotify result = new emu.grasscutter.net.proto.ActivitySaleChangeNotifyOuterClass.ActivitySaleChangeNotify(this);
-        result.saleId_ = saleId_;
         result.isClose_ = isClose_;
+        result.saleId_ = saleId_;
         onBuilt();
         return result;
       }
@@ -436,11 +444,11 @@ public final class ActivitySaleChangeNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.ActivitySaleChangeNotifyOuterClass.ActivitySaleChangeNotify other) {
         if (other == emu.grasscutter.net.proto.ActivitySaleChangeNotifyOuterClass.ActivitySaleChangeNotify.getDefaultInstance()) return this;
-        if (other.getSaleId() != 0) {
-          setSaleId(other.getSaleId());
-        }
         if (other.getIsClose() != false) {
           setIsClose(other.getIsClose());
+        }
+        if (other.getSaleId() != 0) {
+          setSaleId(other.getSaleId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -471,40 +479,9 @@ public final class ActivitySaleChangeNotifyOuterClass {
         return this;
       }
 
-      private int saleId_ ;
-      /**
-       * <code>uint32 sale_id = 5;</code>
-       * @return The saleId.
-       */
-      @java.lang.Override
-      public int getSaleId() {
-        return saleId_;
-      }
-      /**
-       * <code>uint32 sale_id = 5;</code>
-       * @param value The saleId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setSaleId(int value) {
-        
-        saleId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 sale_id = 5;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearSaleId() {
-        
-        saleId_ = 0;
-        onChanged();
-        return this;
-      }
-
       private boolean isClose_ ;
       /**
-       * <code>bool is_close = 1;</code>
+       * <code>bool is_close = 14;</code>
        * @return The isClose.
        */
       @java.lang.Override
@@ -512,7 +489,7 @@ public final class ActivitySaleChangeNotifyOuterClass {
         return isClose_;
       }
       /**
-       * <code>bool is_close = 1;</code>
+       * <code>bool is_close = 14;</code>
        * @param value The isClose to set.
        * @return This builder for chaining.
        */
@@ -523,12 +500,43 @@ public final class ActivitySaleChangeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>bool is_close = 1;</code>
+       * <code>bool is_close = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsClose() {
         
         isClose_ = false;
+        onChanged();
+        return this;
+      }
+
+      private int saleId_ ;
+      /**
+       * <code>uint32 sale_id = 8;</code>
+       * @return The saleId.
+       */
+      @java.lang.Override
+      public int getSaleId() {
+        return saleId_;
+      }
+      /**
+       * <code>uint32 sale_id = 8;</code>
+       * @param value The saleId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setSaleId(int value) {
+        
+        saleId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 sale_id = 8;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearSaleId() {
+        
+        saleId_ = 0;
         onChanged();
         return this;
       }
@@ -600,8 +608,8 @@ public final class ActivitySaleChangeNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\036ActivitySaleChangeNotify.proto\"=\n\030Acti" +
-      "vitySaleChangeNotify\022\017\n\007sale_id\030\005 \001(\r\022\020\n" +
-      "\010is_close\030\001 \001(\010B\033\n\031emu.grasscutter.net.p" +
+      "vitySaleChangeNotify\022\020\n\010is_close\030\016 \001(\010\022\017" +
+      "\n\007sale_id\030\010 \001(\rB\033\n\031emu.grasscutter.net.p" +
       "rotob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -613,7 +621,7 @@ public final class ActivitySaleChangeNotifyOuterClass {
     internal_static_ActivitySaleChangeNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ActivitySaleChangeNotify_descriptor,
-        new java.lang.String[] { "SaleId", "IsClose", });
+        new java.lang.String[] { "IsClose", "SaleId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

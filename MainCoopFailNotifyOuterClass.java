@@ -31,16 +31,20 @@ public final class MainCoopFailNotifyOuterClass {
         getTextmapIdBytes();
 
     /**
-     * <code>uint32 chapter_id = 15;</code>
+     * <code>uint32 chapter_id = 14;</code>
      * @return The chapterId.
      */
     int getChapterId();
   }
   /**
    * <pre>
-   * CmdId: 1951
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 1956;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code MainCoopFailNotify}
@@ -94,7 +98,7 @@ public final class MainCoopFailNotifyOuterClass {
               textmapId_ = s;
               break;
             }
-            case 120: {
+            case 112: {
 
               chapterId_ = input.readUInt32();
               break;
@@ -169,10 +173,10 @@ public final class MainCoopFailNotifyOuterClass {
       }
     }
 
-    public static final int CHAPTER_ID_FIELD_NUMBER = 15;
+    public static final int CHAPTER_ID_FIELD_NUMBER = 14;
     private int chapterId_;
     /**
-     * <code>uint32 chapter_id = 15;</code>
+     * <code>uint32 chapter_id = 14;</code>
      * @return The chapterId.
      */
     @java.lang.Override
@@ -198,7 +202,7 @@ public final class MainCoopFailNotifyOuterClass {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 7, textmapId_);
       }
       if (chapterId_ != 0) {
-        output.writeUInt32(15, chapterId_);
+        output.writeUInt32(14, chapterId_);
       }
       unknownFields.writeTo(output);
     }
@@ -214,7 +218,7 @@ public final class MainCoopFailNotifyOuterClass {
       }
       if (chapterId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, chapterId_);
+          .computeUInt32Size(14, chapterId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -347,9 +351,13 @@ public final class MainCoopFailNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 1951
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 1956;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code MainCoopFailNotify}
@@ -583,7 +591,7 @@ public final class MainCoopFailNotifyOuterClass {
 
       private int chapterId_ ;
       /**
-       * <code>uint32 chapter_id = 15;</code>
+       * <code>uint32 chapter_id = 14;</code>
        * @return The chapterId.
        */
       @java.lang.Override
@@ -591,7 +599,7 @@ public final class MainCoopFailNotifyOuterClass {
         return chapterId_;
       }
       /**
-       * <code>uint32 chapter_id = 15;</code>
+       * <code>uint32 chapter_id = 14;</code>
        * @param value The chapterId to set.
        * @return This builder for chaining.
        */
@@ -602,7 +610,7 @@ public final class MainCoopFailNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 chapter_id = 15;</code>
+       * <code>uint32 chapter_id = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearChapterId() {
@@ -680,7 +688,7 @@ public final class MainCoopFailNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n\030MainCoopFailNotify.proto\"<\n\022MainCoopFa" +
       "ilNotify\022\022\n\ntextmap_id\030\007 \001(\t\022\022\n\nchapter_" +
-      "id\030\017 \001(\rB\033\n\031emu.grasscutter.net.protob\006p" +
+      "id\030\016 \001(\rB\033\n\031emu.grasscutter.net.protob\006p" +
       "roto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

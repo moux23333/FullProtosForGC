@@ -19,29 +19,29 @@ public final class FungusFighterTrainingSettleInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 used_time = 15;</code>
+     * <code>uint32 used_time = 13;</code>
      * @return The usedTime.
      */
     int getUsedTime();
 
     /**
-     * <code>.GalleryStopReason reason = 3;</code>
+     * <code>.GalleryStopReason reason = 4;</code>
      * @return The enum numeric value on the wire for reason.
      */
     int getReasonValue();
     /**
-     * <code>.GalleryStopReason reason = 3;</code>
+     * <code>.GalleryStopReason reason = 4;</code>
      * @return The reason.
      */
     emu.grasscutter.net.proto.GalleryStopReasonOuterClass.GalleryStopReason getReason();
 
     /**
-     * <code>string transaction = 1;</code>
+     * <code>string transaction = 3;</code>
      * @return The transaction.
      */
     java.lang.String getTransaction();
     /**
-     * <code>string transaction = 1;</code>
+     * <code>string transaction = 3;</code>
      * @return The bytes for transaction.
      */
     com.google.protobuf.ByteString
@@ -94,19 +94,19 @@ public final class FungusFighterTrainingSettleInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 10: {
+            case 26: {
               java.lang.String s = input.readStringRequireUtf8();
 
               transaction_ = s;
               break;
             }
-            case 24: {
+            case 32: {
               int rawValue = input.readEnum();
 
               reason_ = rawValue;
               break;
             }
-            case 120: {
+            case 104: {
 
               usedTime_ = input.readUInt32();
               break;
@@ -143,10 +143,10 @@ public final class FungusFighterTrainingSettleInfoOuterClass {
               emu.grasscutter.net.proto.FungusFighterTrainingSettleInfoOuterClass.FungusFighterTrainingSettleInfo.class, emu.grasscutter.net.proto.FungusFighterTrainingSettleInfoOuterClass.FungusFighterTrainingSettleInfo.Builder.class);
     }
 
-    public static final int USED_TIME_FIELD_NUMBER = 15;
+    public static final int USED_TIME_FIELD_NUMBER = 13;
     private int usedTime_;
     /**
-     * <code>uint32 used_time = 15;</code>
+     * <code>uint32 used_time = 13;</code>
      * @return The usedTime.
      */
     @java.lang.Override
@@ -154,17 +154,17 @@ public final class FungusFighterTrainingSettleInfoOuterClass {
       return usedTime_;
     }
 
-    public static final int REASON_FIELD_NUMBER = 3;
+    public static final int REASON_FIELD_NUMBER = 4;
     private int reason_;
     /**
-     * <code>.GalleryStopReason reason = 3;</code>
+     * <code>.GalleryStopReason reason = 4;</code>
      * @return The enum numeric value on the wire for reason.
      */
     @java.lang.Override public int getReasonValue() {
       return reason_;
     }
     /**
-     * <code>.GalleryStopReason reason = 3;</code>
+     * <code>.GalleryStopReason reason = 4;</code>
      * @return The reason.
      */
     @java.lang.Override public emu.grasscutter.net.proto.GalleryStopReasonOuterClass.GalleryStopReason getReason() {
@@ -173,10 +173,10 @@ public final class FungusFighterTrainingSettleInfoOuterClass {
       return result == null ? emu.grasscutter.net.proto.GalleryStopReasonOuterClass.GalleryStopReason.UNRECOGNIZED : result;
     }
 
-    public static final int TRANSACTION_FIELD_NUMBER = 1;
+    public static final int TRANSACTION_FIELD_NUMBER = 3;
     private volatile java.lang.Object transaction_;
     /**
-     * <code>string transaction = 1;</code>
+     * <code>string transaction = 3;</code>
      * @return The transaction.
      */
     @java.lang.Override
@@ -193,7 +193,7 @@ public final class FungusFighterTrainingSettleInfoOuterClass {
       }
     }
     /**
-     * <code>string transaction = 1;</code>
+     * <code>string transaction = 3;</code>
      * @return The bytes for transaction.
      */
     @java.lang.Override
@@ -226,13 +226,13 @@ public final class FungusFighterTrainingSettleInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(transaction_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 1, transaction_);
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 3, transaction_);
       }
       if (reason_ != emu.grasscutter.net.proto.GalleryStopReasonOuterClass.GalleryStopReason.GALLERY_STOP_REASON_NONE.getNumber()) {
-        output.writeEnum(3, reason_);
+        output.writeEnum(4, reason_);
       }
       if (usedTime_ != 0) {
-        output.writeUInt32(15, usedTime_);
+        output.writeUInt32(13, usedTime_);
       }
       unknownFields.writeTo(output);
     }
@@ -244,15 +244,15 @@ public final class FungusFighterTrainingSettleInfoOuterClass {
 
       size = 0;
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(transaction_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, transaction_);
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, transaction_);
       }
       if (reason_ != emu.grasscutter.net.proto.GalleryStopReasonOuterClass.GalleryStopReason.GALLERY_STOP_REASON_NONE.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(3, reason_);
+          .computeEnumSize(4, reason_);
       }
       if (usedTime_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, usedTime_);
+          .computeUInt32Size(13, usedTime_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -548,7 +548,7 @@ public final class FungusFighterTrainingSettleInfoOuterClass {
 
       private int usedTime_ ;
       /**
-       * <code>uint32 used_time = 15;</code>
+       * <code>uint32 used_time = 13;</code>
        * @return The usedTime.
        */
       @java.lang.Override
@@ -556,7 +556,7 @@ public final class FungusFighterTrainingSettleInfoOuterClass {
         return usedTime_;
       }
       /**
-       * <code>uint32 used_time = 15;</code>
+       * <code>uint32 used_time = 13;</code>
        * @param value The usedTime to set.
        * @return This builder for chaining.
        */
@@ -567,7 +567,7 @@ public final class FungusFighterTrainingSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 used_time = 15;</code>
+       * <code>uint32 used_time = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearUsedTime() {
@@ -579,14 +579,14 @@ public final class FungusFighterTrainingSettleInfoOuterClass {
 
       private int reason_ = 0;
       /**
-       * <code>.GalleryStopReason reason = 3;</code>
+       * <code>.GalleryStopReason reason = 4;</code>
        * @return The enum numeric value on the wire for reason.
        */
       @java.lang.Override public int getReasonValue() {
         return reason_;
       }
       /**
-       * <code>.GalleryStopReason reason = 3;</code>
+       * <code>.GalleryStopReason reason = 4;</code>
        * @param value The enum numeric value on the wire for reason to set.
        * @return This builder for chaining.
        */
@@ -597,7 +597,7 @@ public final class FungusFighterTrainingSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>.GalleryStopReason reason = 3;</code>
+       * <code>.GalleryStopReason reason = 4;</code>
        * @return The reason.
        */
       @java.lang.Override
@@ -607,7 +607,7 @@ public final class FungusFighterTrainingSettleInfoOuterClass {
         return result == null ? emu.grasscutter.net.proto.GalleryStopReasonOuterClass.GalleryStopReason.UNRECOGNIZED : result;
       }
       /**
-       * <code>.GalleryStopReason reason = 3;</code>
+       * <code>.GalleryStopReason reason = 4;</code>
        * @param value The reason to set.
        * @return This builder for chaining.
        */
@@ -621,7 +621,7 @@ public final class FungusFighterTrainingSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>.GalleryStopReason reason = 3;</code>
+       * <code>.GalleryStopReason reason = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearReason() {
@@ -633,7 +633,7 @@ public final class FungusFighterTrainingSettleInfoOuterClass {
 
       private java.lang.Object transaction_ = "";
       /**
-       * <code>string transaction = 1;</code>
+       * <code>string transaction = 3;</code>
        * @return The transaction.
        */
       public java.lang.String getTransaction() {
@@ -649,7 +649,7 @@ public final class FungusFighterTrainingSettleInfoOuterClass {
         }
       }
       /**
-       * <code>string transaction = 1;</code>
+       * <code>string transaction = 3;</code>
        * @return The bytes for transaction.
        */
       public com.google.protobuf.ByteString
@@ -666,7 +666,7 @@ public final class FungusFighterTrainingSettleInfoOuterClass {
         }
       }
       /**
-       * <code>string transaction = 1;</code>
+       * <code>string transaction = 3;</code>
        * @param value The transaction to set.
        * @return This builder for chaining.
        */
@@ -681,7 +681,7 @@ public final class FungusFighterTrainingSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>string transaction = 1;</code>
+       * <code>string transaction = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearTransaction() {
@@ -691,7 +691,7 @@ public final class FungusFighterTrainingSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>string transaction = 1;</code>
+       * <code>string transaction = 3;</code>
        * @param value The bytes for transaction to set.
        * @return This builder for chaining.
        */
@@ -775,9 +775,9 @@ public final class FungusFighterTrainingSettleInfoOuterClass {
     java.lang.String[] descriptorData = {
       "\n%FungusFighterTrainingSettleInfo.proto\032" +
       "\027GalleryStopReason.proto\"m\n\037FungusFighte" +
-      "rTrainingSettleInfo\022\021\n\tused_time\030\017 \001(\r\022\"" +
-      "\n\006reason\030\003 \001(\0162\022.GalleryStopReason\022\023\n\013tr" +
-      "ansaction\030\001 \001(\tB\033\n\031emu.grasscutter.net.p" +
+      "rTrainingSettleInfo\022\021\n\tused_time\030\r \001(\r\022\"" +
+      "\n\006reason\030\004 \001(\0162\022.GalleryStopReason\022\023\n\013tr" +
+      "ansaction\030\003 \001(\tB\033\n\031emu.grasscutter.net.p" +
       "rotob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

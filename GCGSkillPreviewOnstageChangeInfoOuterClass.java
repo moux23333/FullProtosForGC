@@ -19,16 +19,16 @@ public final class GCGSkillPreviewOnstageChangeInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 target_onstage_card_guid = 6;</code>
-     * @return The targetOnstageCardGuid.
+     * <code>uint32 Unk3300_EHHDPPFDIFB = 8;</code>
+     * @return The unk3300EHHDPPFDIFB.
      */
-    int getTargetOnstageCardGuid();
+    int getUnk3300EHHDPPFDIFB();
 
     /**
-     * <code>uint32 source_onstage_card_guid = 15;</code>
-     * @return The sourceOnstageCardGuid.
+     * <code>uint32 Unk3300_BALADGFAPKL = 14;</code>
+     * @return The unk3300BALADGFAPKL.
      */
-    int getSourceOnstageCardGuid();
+    int getUnk3300BALADGFAPKL();
   }
   /**
    * Protobuf type {@code GCGSkillPreviewOnstageChangeInfo}
@@ -75,14 +75,14 @@ public final class GCGSkillPreviewOnstageChangeInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 48: {
+            case 64: {
 
-              targetOnstageCardGuid_ = input.readUInt32();
+              unk3300EHHDPPFDIFB_ = input.readUInt32();
               break;
             }
-            case 120: {
+            case 112: {
 
-              sourceOnstageCardGuid_ = input.readUInt32();
+              unk3300BALADGFAPKL_ = input.readUInt32();
               break;
             }
             default: {
@@ -117,26 +117,26 @@ public final class GCGSkillPreviewOnstageChangeInfoOuterClass {
               emu.grasscutter.net.proto.GCGSkillPreviewOnstageChangeInfoOuterClass.GCGSkillPreviewOnstageChangeInfo.class, emu.grasscutter.net.proto.GCGSkillPreviewOnstageChangeInfoOuterClass.GCGSkillPreviewOnstageChangeInfo.Builder.class);
     }
 
-    public static final int TARGET_ONSTAGE_CARD_GUID_FIELD_NUMBER = 6;
-    private int targetOnstageCardGuid_;
+    public static final int UNK3300_EHHDPPFDIFB_FIELD_NUMBER = 8;
+    private int unk3300EHHDPPFDIFB_;
     /**
-     * <code>uint32 target_onstage_card_guid = 6;</code>
-     * @return The targetOnstageCardGuid.
+     * <code>uint32 Unk3300_EHHDPPFDIFB = 8;</code>
+     * @return The unk3300EHHDPPFDIFB.
      */
     @java.lang.Override
-    public int getTargetOnstageCardGuid() {
-      return targetOnstageCardGuid_;
+    public int getUnk3300EHHDPPFDIFB() {
+      return unk3300EHHDPPFDIFB_;
     }
 
-    public static final int SOURCE_ONSTAGE_CARD_GUID_FIELD_NUMBER = 15;
-    private int sourceOnstageCardGuid_;
+    public static final int UNK3300_BALADGFAPKL_FIELD_NUMBER = 14;
+    private int unk3300BALADGFAPKL_;
     /**
-     * <code>uint32 source_onstage_card_guid = 15;</code>
-     * @return The sourceOnstageCardGuid.
+     * <code>uint32 Unk3300_BALADGFAPKL = 14;</code>
+     * @return The unk3300BALADGFAPKL.
      */
     @java.lang.Override
-    public int getSourceOnstageCardGuid() {
-      return sourceOnstageCardGuid_;
+    public int getUnk3300BALADGFAPKL() {
+      return unk3300BALADGFAPKL_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -153,11 +153,11 @@ public final class GCGSkillPreviewOnstageChangeInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (targetOnstageCardGuid_ != 0) {
-        output.writeUInt32(6, targetOnstageCardGuid_);
+      if (unk3300EHHDPPFDIFB_ != 0) {
+        output.writeUInt32(8, unk3300EHHDPPFDIFB_);
       }
-      if (sourceOnstageCardGuid_ != 0) {
-        output.writeUInt32(15, sourceOnstageCardGuid_);
+      if (unk3300BALADGFAPKL_ != 0) {
+        output.writeUInt32(14, unk3300BALADGFAPKL_);
       }
       unknownFields.writeTo(output);
     }
@@ -168,13 +168,13 @@ public final class GCGSkillPreviewOnstageChangeInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (targetOnstageCardGuid_ != 0) {
+      if (unk3300EHHDPPFDIFB_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, targetOnstageCardGuid_);
+          .computeUInt32Size(8, unk3300EHHDPPFDIFB_);
       }
-      if (sourceOnstageCardGuid_ != 0) {
+      if (unk3300BALADGFAPKL_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, sourceOnstageCardGuid_);
+          .computeUInt32Size(14, unk3300BALADGFAPKL_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -191,10 +191,10 @@ public final class GCGSkillPreviewOnstageChangeInfoOuterClass {
       }
       emu.grasscutter.net.proto.GCGSkillPreviewOnstageChangeInfoOuterClass.GCGSkillPreviewOnstageChangeInfo other = (emu.grasscutter.net.proto.GCGSkillPreviewOnstageChangeInfoOuterClass.GCGSkillPreviewOnstageChangeInfo) obj;
 
-      if (getTargetOnstageCardGuid()
-          != other.getTargetOnstageCardGuid()) return false;
-      if (getSourceOnstageCardGuid()
-          != other.getSourceOnstageCardGuid()) return false;
+      if (getUnk3300EHHDPPFDIFB()
+          != other.getUnk3300EHHDPPFDIFB()) return false;
+      if (getUnk3300BALADGFAPKL()
+          != other.getUnk3300BALADGFAPKL()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -206,10 +206,10 @@ public final class GCGSkillPreviewOnstageChangeInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + TARGET_ONSTAGE_CARD_GUID_FIELD_NUMBER;
-      hash = (53 * hash) + getTargetOnstageCardGuid();
-      hash = (37 * hash) + SOURCE_ONSTAGE_CARD_GUID_FIELD_NUMBER;
-      hash = (53 * hash) + getSourceOnstageCardGuid();
+      hash = (37 * hash) + UNK3300_EHHDPPFDIFB_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300EHHDPPFDIFB();
+      hash = (37 * hash) + UNK3300_BALADGFAPKL_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300BALADGFAPKL();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -343,9 +343,9 @@ public final class GCGSkillPreviewOnstageChangeInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        targetOnstageCardGuid_ = 0;
+        unk3300EHHDPPFDIFB_ = 0;
 
-        sourceOnstageCardGuid_ = 0;
+        unk3300BALADGFAPKL_ = 0;
 
         return this;
       }
@@ -373,8 +373,8 @@ public final class GCGSkillPreviewOnstageChangeInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.GCGSkillPreviewOnstageChangeInfoOuterClass.GCGSkillPreviewOnstageChangeInfo buildPartial() {
         emu.grasscutter.net.proto.GCGSkillPreviewOnstageChangeInfoOuterClass.GCGSkillPreviewOnstageChangeInfo result = new emu.grasscutter.net.proto.GCGSkillPreviewOnstageChangeInfoOuterClass.GCGSkillPreviewOnstageChangeInfo(this);
-        result.targetOnstageCardGuid_ = targetOnstageCardGuid_;
-        result.sourceOnstageCardGuid_ = sourceOnstageCardGuid_;
+        result.unk3300EHHDPPFDIFB_ = unk3300EHHDPPFDIFB_;
+        result.unk3300BALADGFAPKL_ = unk3300BALADGFAPKL_;
         onBuilt();
         return result;
       }
@@ -423,11 +423,11 @@ public final class GCGSkillPreviewOnstageChangeInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.GCGSkillPreviewOnstageChangeInfoOuterClass.GCGSkillPreviewOnstageChangeInfo other) {
         if (other == emu.grasscutter.net.proto.GCGSkillPreviewOnstageChangeInfoOuterClass.GCGSkillPreviewOnstageChangeInfo.getDefaultInstance()) return this;
-        if (other.getTargetOnstageCardGuid() != 0) {
-          setTargetOnstageCardGuid(other.getTargetOnstageCardGuid());
+        if (other.getUnk3300EHHDPPFDIFB() != 0) {
+          setUnk3300EHHDPPFDIFB(other.getUnk3300EHHDPPFDIFB());
         }
-        if (other.getSourceOnstageCardGuid() != 0) {
-          setSourceOnstageCardGuid(other.getSourceOnstageCardGuid());
+        if (other.getUnk3300BALADGFAPKL() != 0) {
+          setUnk3300BALADGFAPKL(other.getUnk3300BALADGFAPKL());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -458,64 +458,64 @@ public final class GCGSkillPreviewOnstageChangeInfoOuterClass {
         return this;
       }
 
-      private int targetOnstageCardGuid_ ;
+      private int unk3300EHHDPPFDIFB_ ;
       /**
-       * <code>uint32 target_onstage_card_guid = 6;</code>
-       * @return The targetOnstageCardGuid.
+       * <code>uint32 Unk3300_EHHDPPFDIFB = 8;</code>
+       * @return The unk3300EHHDPPFDIFB.
        */
       @java.lang.Override
-      public int getTargetOnstageCardGuid() {
-        return targetOnstageCardGuid_;
+      public int getUnk3300EHHDPPFDIFB() {
+        return unk3300EHHDPPFDIFB_;
       }
       /**
-       * <code>uint32 target_onstage_card_guid = 6;</code>
-       * @param value The targetOnstageCardGuid to set.
+       * <code>uint32 Unk3300_EHHDPPFDIFB = 8;</code>
+       * @param value The unk3300EHHDPPFDIFB to set.
        * @return This builder for chaining.
        */
-      public Builder setTargetOnstageCardGuid(int value) {
+      public Builder setUnk3300EHHDPPFDIFB(int value) {
         
-        targetOnstageCardGuid_ = value;
+        unk3300EHHDPPFDIFB_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 target_onstage_card_guid = 6;</code>
+       * <code>uint32 Unk3300_EHHDPPFDIFB = 8;</code>
        * @return This builder for chaining.
        */
-      public Builder clearTargetOnstageCardGuid() {
+      public Builder clearUnk3300EHHDPPFDIFB() {
         
-        targetOnstageCardGuid_ = 0;
+        unk3300EHHDPPFDIFB_ = 0;
         onChanged();
         return this;
       }
 
-      private int sourceOnstageCardGuid_ ;
+      private int unk3300BALADGFAPKL_ ;
       /**
-       * <code>uint32 source_onstage_card_guid = 15;</code>
-       * @return The sourceOnstageCardGuid.
+       * <code>uint32 Unk3300_BALADGFAPKL = 14;</code>
+       * @return The unk3300BALADGFAPKL.
        */
       @java.lang.Override
-      public int getSourceOnstageCardGuid() {
-        return sourceOnstageCardGuid_;
+      public int getUnk3300BALADGFAPKL() {
+        return unk3300BALADGFAPKL_;
       }
       /**
-       * <code>uint32 source_onstage_card_guid = 15;</code>
-       * @param value The sourceOnstageCardGuid to set.
+       * <code>uint32 Unk3300_BALADGFAPKL = 14;</code>
+       * @param value The unk3300BALADGFAPKL to set.
        * @return This builder for chaining.
        */
-      public Builder setSourceOnstageCardGuid(int value) {
+      public Builder setUnk3300BALADGFAPKL(int value) {
         
-        sourceOnstageCardGuid_ = value;
+        unk3300BALADGFAPKL_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 source_onstage_card_guid = 15;</code>
+       * <code>uint32 Unk3300_BALADGFAPKL = 14;</code>
        * @return This builder for chaining.
        */
-      public Builder clearSourceOnstageCardGuid() {
+      public Builder clearUnk3300BALADGFAPKL() {
         
-        sourceOnstageCardGuid_ = 0;
+        unk3300BALADGFAPKL_ = 0;
         onChanged();
         return this;
       }
@@ -587,10 +587,10 @@ public final class GCGSkillPreviewOnstageChangeInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n&GCGSkillPreviewOnstageChangeInfo.proto" +
-      "\"f\n GCGSkillPreviewOnstageChangeInfo\022 \n\030" +
-      "target_onstage_card_guid\030\006 \001(\r\022 \n\030source" +
-      "_onstage_card_guid\030\017 \001(\rB\033\n\031emu.grasscut" +
-      "ter.net.protob\006proto3"
+      "\"\\\n GCGSkillPreviewOnstageChangeInfo\022\033\n\023" +
+      "Unk3300_EHHDPPFDIFB\030\010 \001(\r\022\033\n\023Unk3300_BAL" +
+      "ADGFAPKL\030\016 \001(\rB\033\n\031emu.grasscutter.net.pr" +
+      "otob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -601,7 +601,7 @@ public final class GCGSkillPreviewOnstageChangeInfoOuterClass {
     internal_static_GCGSkillPreviewOnstageChangeInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GCGSkillPreviewOnstageChangeInfo_descriptor,
-        new java.lang.String[] { "TargetOnstageCardGuid", "SourceOnstageCardGuid", });
+        new java.lang.String[] { "Unk3300EHHDPPFDIFB", "Unk3300BALADGFAPKL", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

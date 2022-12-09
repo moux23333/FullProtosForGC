@@ -19,46 +19,46 @@ public final class AbilityMixinGlobalShieldOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
+     * <code>float max_shield = 14;</code>
+     * @return The maxShield.
+     */
+    float getMaxShield();
+
+    /**
      * <code>bool is_create_effect = 4;</code>
      * @return The isCreateEffect.
      */
     boolean getIsCreateEffect();
 
     /**
-     * <code>float sub_shield = 7;</code>
+     * <code>string shield_effect_name = 12;</code>
+     * @return The shieldEffectName.
+     */
+    java.lang.String getShieldEffectName();
+    /**
+     * <code>string shield_effect_name = 12;</code>
+     * @return The bytes for shieldEffectName.
+     */
+    com.google.protobuf.ByteString
+        getShieldEffectNameBytes();
+
+    /**
+     * <code>float sub_shield = 10;</code>
      * @return The subShield.
      */
     float getSubShield();
 
     /**
-     * <code>float height_offset = 5;</code>
-     * @return The heightOffset.
-     */
-    float getHeightOffset();
-
-    /**
-     * <code>uint32 avatar_id = 11;</code>
+     * <code>uint32 avatar_id = 3;</code>
      * @return The avatarId.
      */
     int getAvatarId();
 
     /**
-     * <code>float max_shield = 10;</code>
-     * @return The maxShield.
+     * <code>float height_offset = 1;</code>
+     * @return The heightOffset.
      */
-    float getMaxShield();
-
-    /**
-     * <code>string shield_effect_name = 2;</code>
-     * @return The shieldEffectName.
-     */
-    java.lang.String getShieldEffectName();
-    /**
-     * <code>string shield_effect_name = 2;</code>
-     * @return The bytes for shieldEffectName.
-     */
-    com.google.protobuf.ByteString
-        getShieldEffectNameBytes();
+    float getHeightOffset();
   }
   /**
    * Protobuf type {@code AbilityMixinGlobalShield}
@@ -106,10 +106,14 @@ public final class AbilityMixinGlobalShieldOuterClass {
             case 0:
               done = true;
               break;
-            case 18: {
-              java.lang.String s = input.readStringRequireUtf8();
+            case 13: {
 
-              shieldEffectName_ = s;
+              heightOffset_ = input.readFloat();
+              break;
+            }
+            case 24: {
+
+              avatarId_ = input.readUInt32();
               break;
             }
             case 32: {
@@ -117,24 +121,20 @@ public final class AbilityMixinGlobalShieldOuterClass {
               isCreateEffect_ = input.readBool();
               break;
             }
-            case 45: {
-
-              heightOffset_ = input.readFloat();
-              break;
-            }
-            case 61: {
+            case 85: {
 
               subShield_ = input.readFloat();
               break;
             }
-            case 85: {
+            case 98: {
+              java.lang.String s = input.readStringRequireUtf8();
 
-              maxShield_ = input.readFloat();
+              shieldEffectName_ = s;
               break;
             }
-            case 88: {
+            case 117: {
 
-              avatarId_ = input.readUInt32();
+              maxShield_ = input.readFloat();
               break;
             }
             default: {
@@ -169,6 +169,17 @@ public final class AbilityMixinGlobalShieldOuterClass {
               emu.grasscutter.net.proto.AbilityMixinGlobalShieldOuterClass.AbilityMixinGlobalShield.class, emu.grasscutter.net.proto.AbilityMixinGlobalShieldOuterClass.AbilityMixinGlobalShield.Builder.class);
     }
 
+    public static final int MAX_SHIELD_FIELD_NUMBER = 14;
+    private float maxShield_;
+    /**
+     * <code>float max_shield = 14;</code>
+     * @return The maxShield.
+     */
+    @java.lang.Override
+    public float getMaxShield() {
+      return maxShield_;
+    }
+
     public static final int IS_CREATE_EFFECT_FIELD_NUMBER = 4;
     private boolean isCreateEffect_;
     /**
@@ -180,54 +191,10 @@ public final class AbilityMixinGlobalShieldOuterClass {
       return isCreateEffect_;
     }
 
-    public static final int SUB_SHIELD_FIELD_NUMBER = 7;
-    private float subShield_;
-    /**
-     * <code>float sub_shield = 7;</code>
-     * @return The subShield.
-     */
-    @java.lang.Override
-    public float getSubShield() {
-      return subShield_;
-    }
-
-    public static final int HEIGHT_OFFSET_FIELD_NUMBER = 5;
-    private float heightOffset_;
-    /**
-     * <code>float height_offset = 5;</code>
-     * @return The heightOffset.
-     */
-    @java.lang.Override
-    public float getHeightOffset() {
-      return heightOffset_;
-    }
-
-    public static final int AVATAR_ID_FIELD_NUMBER = 11;
-    private int avatarId_;
-    /**
-     * <code>uint32 avatar_id = 11;</code>
-     * @return The avatarId.
-     */
-    @java.lang.Override
-    public int getAvatarId() {
-      return avatarId_;
-    }
-
-    public static final int MAX_SHIELD_FIELD_NUMBER = 10;
-    private float maxShield_;
-    /**
-     * <code>float max_shield = 10;</code>
-     * @return The maxShield.
-     */
-    @java.lang.Override
-    public float getMaxShield() {
-      return maxShield_;
-    }
-
-    public static final int SHIELD_EFFECT_NAME_FIELD_NUMBER = 2;
+    public static final int SHIELD_EFFECT_NAME_FIELD_NUMBER = 12;
     private volatile java.lang.Object shieldEffectName_;
     /**
-     * <code>string shield_effect_name = 2;</code>
+     * <code>string shield_effect_name = 12;</code>
      * @return The shieldEffectName.
      */
     @java.lang.Override
@@ -244,7 +211,7 @@ public final class AbilityMixinGlobalShieldOuterClass {
       }
     }
     /**
-     * <code>string shield_effect_name = 2;</code>
+     * <code>string shield_effect_name = 12;</code>
      * @return The bytes for shieldEffectName.
      */
     @java.lang.Override
@@ -262,6 +229,39 @@ public final class AbilityMixinGlobalShieldOuterClass {
       }
     }
 
+    public static final int SUB_SHIELD_FIELD_NUMBER = 10;
+    private float subShield_;
+    /**
+     * <code>float sub_shield = 10;</code>
+     * @return The subShield.
+     */
+    @java.lang.Override
+    public float getSubShield() {
+      return subShield_;
+    }
+
+    public static final int AVATAR_ID_FIELD_NUMBER = 3;
+    private int avatarId_;
+    /**
+     * <code>uint32 avatar_id = 3;</code>
+     * @return The avatarId.
+     */
+    @java.lang.Override
+    public int getAvatarId() {
+      return avatarId_;
+    }
+
+    public static final int HEIGHT_OFFSET_FIELD_NUMBER = 1;
+    private float heightOffset_;
+    /**
+     * <code>float height_offset = 1;</code>
+     * @return The heightOffset.
+     */
+    @java.lang.Override
+    public float getHeightOffset() {
+      return heightOffset_;
+    }
+
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
     public final boolean isInitialized() {
@@ -276,23 +276,23 @@ public final class AbilityMixinGlobalShieldOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(shieldEffectName_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 2, shieldEffectName_);
+      if (heightOffset_ != 0F) {
+        output.writeFloat(1, heightOffset_);
+      }
+      if (avatarId_ != 0) {
+        output.writeUInt32(3, avatarId_);
       }
       if (isCreateEffect_ != false) {
         output.writeBool(4, isCreateEffect_);
       }
-      if (heightOffset_ != 0F) {
-        output.writeFloat(5, heightOffset_);
-      }
       if (subShield_ != 0F) {
-        output.writeFloat(7, subShield_);
+        output.writeFloat(10, subShield_);
+      }
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(shieldEffectName_)) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 12, shieldEffectName_);
       }
       if (maxShield_ != 0F) {
-        output.writeFloat(10, maxShield_);
-      }
-      if (avatarId_ != 0) {
-        output.writeUInt32(11, avatarId_);
+        output.writeFloat(14, maxShield_);
       }
       unknownFields.writeTo(output);
     }
@@ -303,28 +303,28 @@ public final class AbilityMixinGlobalShieldOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(shieldEffectName_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, shieldEffectName_);
+      if (heightOffset_ != 0F) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeFloatSize(1, heightOffset_);
+      }
+      if (avatarId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(3, avatarId_);
       }
       if (isCreateEffect_ != false) {
         size += com.google.protobuf.CodedOutputStream
           .computeBoolSize(4, isCreateEffect_);
       }
-      if (heightOffset_ != 0F) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeFloatSize(5, heightOffset_);
-      }
       if (subShield_ != 0F) {
         size += com.google.protobuf.CodedOutputStream
-          .computeFloatSize(7, subShield_);
+          .computeFloatSize(10, subShield_);
+      }
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(shieldEffectName_)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(12, shieldEffectName_);
       }
       if (maxShield_ != 0F) {
         size += com.google.protobuf.CodedOutputStream
-          .computeFloatSize(10, maxShield_);
-      }
-      if (avatarId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, avatarId_);
+          .computeFloatSize(14, maxShield_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -341,21 +341,21 @@ public final class AbilityMixinGlobalShieldOuterClass {
       }
       emu.grasscutter.net.proto.AbilityMixinGlobalShieldOuterClass.AbilityMixinGlobalShield other = (emu.grasscutter.net.proto.AbilityMixinGlobalShieldOuterClass.AbilityMixinGlobalShield) obj;
 
-      if (getIsCreateEffect()
-          != other.getIsCreateEffect()) return false;
-      if (java.lang.Float.floatToIntBits(getSubShield())
-          != java.lang.Float.floatToIntBits(
-              other.getSubShield())) return false;
-      if (java.lang.Float.floatToIntBits(getHeightOffset())
-          != java.lang.Float.floatToIntBits(
-              other.getHeightOffset())) return false;
-      if (getAvatarId()
-          != other.getAvatarId()) return false;
       if (java.lang.Float.floatToIntBits(getMaxShield())
           != java.lang.Float.floatToIntBits(
               other.getMaxShield())) return false;
+      if (getIsCreateEffect()
+          != other.getIsCreateEffect()) return false;
       if (!getShieldEffectName()
           .equals(other.getShieldEffectName())) return false;
+      if (java.lang.Float.floatToIntBits(getSubShield())
+          != java.lang.Float.floatToIntBits(
+              other.getSubShield())) return false;
+      if (getAvatarId()
+          != other.getAvatarId()) return false;
+      if (java.lang.Float.floatToIntBits(getHeightOffset())
+          != java.lang.Float.floatToIntBits(
+              other.getHeightOffset())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -367,22 +367,22 @@ public final class AbilityMixinGlobalShieldOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + IS_CREATE_EFFECT_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsCreateEffect());
-      hash = (37 * hash) + SUB_SHIELD_FIELD_NUMBER;
-      hash = (53 * hash) + java.lang.Float.floatToIntBits(
-          getSubShield());
-      hash = (37 * hash) + HEIGHT_OFFSET_FIELD_NUMBER;
-      hash = (53 * hash) + java.lang.Float.floatToIntBits(
-          getHeightOffset());
-      hash = (37 * hash) + AVATAR_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getAvatarId();
       hash = (37 * hash) + MAX_SHIELD_FIELD_NUMBER;
       hash = (53 * hash) + java.lang.Float.floatToIntBits(
           getMaxShield());
+      hash = (37 * hash) + IS_CREATE_EFFECT_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getIsCreateEffect());
       hash = (37 * hash) + SHIELD_EFFECT_NAME_FIELD_NUMBER;
       hash = (53 * hash) + getShieldEffectName().hashCode();
+      hash = (37 * hash) + SUB_SHIELD_FIELD_NUMBER;
+      hash = (53 * hash) + java.lang.Float.floatToIntBits(
+          getSubShield());
+      hash = (37 * hash) + AVATAR_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getAvatarId();
+      hash = (37 * hash) + HEIGHT_OFFSET_FIELD_NUMBER;
+      hash = (53 * hash) + java.lang.Float.floatToIntBits(
+          getHeightOffset());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -516,17 +516,17 @@ public final class AbilityMixinGlobalShieldOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        maxShield_ = 0F;
+
         isCreateEffect_ = false;
+
+        shieldEffectName_ = "";
 
         subShield_ = 0F;
 
-        heightOffset_ = 0F;
-
         avatarId_ = 0;
 
-        maxShield_ = 0F;
-
-        shieldEffectName_ = "";
+        heightOffset_ = 0F;
 
         return this;
       }
@@ -554,12 +554,12 @@ public final class AbilityMixinGlobalShieldOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.AbilityMixinGlobalShieldOuterClass.AbilityMixinGlobalShield buildPartial() {
         emu.grasscutter.net.proto.AbilityMixinGlobalShieldOuterClass.AbilityMixinGlobalShield result = new emu.grasscutter.net.proto.AbilityMixinGlobalShieldOuterClass.AbilityMixinGlobalShield(this);
-        result.isCreateEffect_ = isCreateEffect_;
-        result.subShield_ = subShield_;
-        result.heightOffset_ = heightOffset_;
-        result.avatarId_ = avatarId_;
         result.maxShield_ = maxShield_;
+        result.isCreateEffect_ = isCreateEffect_;
         result.shieldEffectName_ = shieldEffectName_;
+        result.subShield_ = subShield_;
+        result.avatarId_ = avatarId_;
+        result.heightOffset_ = heightOffset_;
         onBuilt();
         return result;
       }
@@ -608,24 +608,24 @@ public final class AbilityMixinGlobalShieldOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.AbilityMixinGlobalShieldOuterClass.AbilityMixinGlobalShield other) {
         if (other == emu.grasscutter.net.proto.AbilityMixinGlobalShieldOuterClass.AbilityMixinGlobalShield.getDefaultInstance()) return this;
-        if (other.getIsCreateEffect() != false) {
-          setIsCreateEffect(other.getIsCreateEffect());
-        }
-        if (other.getSubShield() != 0F) {
-          setSubShield(other.getSubShield());
-        }
-        if (other.getHeightOffset() != 0F) {
-          setHeightOffset(other.getHeightOffset());
-        }
-        if (other.getAvatarId() != 0) {
-          setAvatarId(other.getAvatarId());
-        }
         if (other.getMaxShield() != 0F) {
           setMaxShield(other.getMaxShield());
+        }
+        if (other.getIsCreateEffect() != false) {
+          setIsCreateEffect(other.getIsCreateEffect());
         }
         if (!other.getShieldEffectName().isEmpty()) {
           shieldEffectName_ = other.shieldEffectName_;
           onChanged();
+        }
+        if (other.getSubShield() != 0F) {
+          setSubShield(other.getSubShield());
+        }
+        if (other.getAvatarId() != 0) {
+          setAvatarId(other.getAvatarId());
+        }
+        if (other.getHeightOffset() != 0F) {
+          setHeightOffset(other.getHeightOffset());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -653,6 +653,37 @@ public final class AbilityMixinGlobalShieldOuterClass {
             mergeFrom(parsedMessage);
           }
         }
+        return this;
+      }
+
+      private float maxShield_ ;
+      /**
+       * <code>float max_shield = 14;</code>
+       * @return The maxShield.
+       */
+      @java.lang.Override
+      public float getMaxShield() {
+        return maxShield_;
+      }
+      /**
+       * <code>float max_shield = 14;</code>
+       * @param value The maxShield to set.
+       * @return This builder for chaining.
+       */
+      public Builder setMaxShield(float value) {
+        
+        maxShield_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>float max_shield = 14;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearMaxShield() {
+        
+        maxShield_ = 0F;
+        onChanged();
         return this;
       }
 
@@ -687,133 +718,9 @@ public final class AbilityMixinGlobalShieldOuterClass {
         return this;
       }
 
-      private float subShield_ ;
-      /**
-       * <code>float sub_shield = 7;</code>
-       * @return The subShield.
-       */
-      @java.lang.Override
-      public float getSubShield() {
-        return subShield_;
-      }
-      /**
-       * <code>float sub_shield = 7;</code>
-       * @param value The subShield to set.
-       * @return This builder for chaining.
-       */
-      public Builder setSubShield(float value) {
-        
-        subShield_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>float sub_shield = 7;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearSubShield() {
-        
-        subShield_ = 0F;
-        onChanged();
-        return this;
-      }
-
-      private float heightOffset_ ;
-      /**
-       * <code>float height_offset = 5;</code>
-       * @return The heightOffset.
-       */
-      @java.lang.Override
-      public float getHeightOffset() {
-        return heightOffset_;
-      }
-      /**
-       * <code>float height_offset = 5;</code>
-       * @param value The heightOffset to set.
-       * @return This builder for chaining.
-       */
-      public Builder setHeightOffset(float value) {
-        
-        heightOffset_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>float height_offset = 5;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearHeightOffset() {
-        
-        heightOffset_ = 0F;
-        onChanged();
-        return this;
-      }
-
-      private int avatarId_ ;
-      /**
-       * <code>uint32 avatar_id = 11;</code>
-       * @return The avatarId.
-       */
-      @java.lang.Override
-      public int getAvatarId() {
-        return avatarId_;
-      }
-      /**
-       * <code>uint32 avatar_id = 11;</code>
-       * @param value The avatarId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setAvatarId(int value) {
-        
-        avatarId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 avatar_id = 11;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearAvatarId() {
-        
-        avatarId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private float maxShield_ ;
-      /**
-       * <code>float max_shield = 10;</code>
-       * @return The maxShield.
-       */
-      @java.lang.Override
-      public float getMaxShield() {
-        return maxShield_;
-      }
-      /**
-       * <code>float max_shield = 10;</code>
-       * @param value The maxShield to set.
-       * @return This builder for chaining.
-       */
-      public Builder setMaxShield(float value) {
-        
-        maxShield_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>float max_shield = 10;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearMaxShield() {
-        
-        maxShield_ = 0F;
-        onChanged();
-        return this;
-      }
-
       private java.lang.Object shieldEffectName_ = "";
       /**
-       * <code>string shield_effect_name = 2;</code>
+       * <code>string shield_effect_name = 12;</code>
        * @return The shieldEffectName.
        */
       public java.lang.String getShieldEffectName() {
@@ -829,7 +736,7 @@ public final class AbilityMixinGlobalShieldOuterClass {
         }
       }
       /**
-       * <code>string shield_effect_name = 2;</code>
+       * <code>string shield_effect_name = 12;</code>
        * @return The bytes for shieldEffectName.
        */
       public com.google.protobuf.ByteString
@@ -846,7 +753,7 @@ public final class AbilityMixinGlobalShieldOuterClass {
         }
       }
       /**
-       * <code>string shield_effect_name = 2;</code>
+       * <code>string shield_effect_name = 12;</code>
        * @param value The shieldEffectName to set.
        * @return This builder for chaining.
        */
@@ -861,7 +768,7 @@ public final class AbilityMixinGlobalShieldOuterClass {
         return this;
       }
       /**
-       * <code>string shield_effect_name = 2;</code>
+       * <code>string shield_effect_name = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearShieldEffectName() {
@@ -871,7 +778,7 @@ public final class AbilityMixinGlobalShieldOuterClass {
         return this;
       }
       /**
-       * <code>string shield_effect_name = 2;</code>
+       * <code>string shield_effect_name = 12;</code>
        * @param value The bytes for shieldEffectName to set.
        * @return This builder for chaining.
        */
@@ -883,6 +790,99 @@ public final class AbilityMixinGlobalShieldOuterClass {
   checkByteStringIsUtf8(value);
         
         shieldEffectName_ = value;
+        onChanged();
+        return this;
+      }
+
+      private float subShield_ ;
+      /**
+       * <code>float sub_shield = 10;</code>
+       * @return The subShield.
+       */
+      @java.lang.Override
+      public float getSubShield() {
+        return subShield_;
+      }
+      /**
+       * <code>float sub_shield = 10;</code>
+       * @param value The subShield to set.
+       * @return This builder for chaining.
+       */
+      public Builder setSubShield(float value) {
+        
+        subShield_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>float sub_shield = 10;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearSubShield() {
+        
+        subShield_ = 0F;
+        onChanged();
+        return this;
+      }
+
+      private int avatarId_ ;
+      /**
+       * <code>uint32 avatar_id = 3;</code>
+       * @return The avatarId.
+       */
+      @java.lang.Override
+      public int getAvatarId() {
+        return avatarId_;
+      }
+      /**
+       * <code>uint32 avatar_id = 3;</code>
+       * @param value The avatarId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setAvatarId(int value) {
+        
+        avatarId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 avatar_id = 3;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearAvatarId() {
+        
+        avatarId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private float heightOffset_ ;
+      /**
+       * <code>float height_offset = 1;</code>
+       * @return The heightOffset.
+       */
+      @java.lang.Override
+      public float getHeightOffset() {
+        return heightOffset_;
+      }
+      /**
+       * <code>float height_offset = 1;</code>
+       * @param value The heightOffset to set.
+       * @return This builder for chaining.
+       */
+      public Builder setHeightOffset(float value) {
+        
+        heightOffset_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>float height_offset = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearHeightOffset() {
+        
+        heightOffset_ = 0F;
         onChanged();
         return this;
       }
@@ -954,10 +954,10 @@ public final class AbilityMixinGlobalShieldOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\036AbilityMixinGlobalShield.proto\"\242\001\n\030Abi" +
-      "lityMixinGlobalShield\022\030\n\020is_create_effec" +
-      "t\030\004 \001(\010\022\022\n\nsub_shield\030\007 \001(\002\022\025\n\rheight_of" +
-      "fset\030\005 \001(\002\022\021\n\tavatar_id\030\013 \001(\r\022\022\n\nmax_shi" +
-      "eld\030\n \001(\002\022\032\n\022shield_effect_name\030\002 \001(\tB\033\n" +
+      "lityMixinGlobalShield\022\022\n\nmax_shield\030\016 \001(" +
+      "\002\022\030\n\020is_create_effect\030\004 \001(\010\022\032\n\022shield_ef" +
+      "fect_name\030\014 \001(\t\022\022\n\nsub_shield\030\n \001(\002\022\021\n\ta" +
+      "vatar_id\030\003 \001(\r\022\025\n\rheight_offset\030\001 \001(\002B\033\n" +
       "\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -969,7 +969,7 @@ public final class AbilityMixinGlobalShieldOuterClass {
     internal_static_AbilityMixinGlobalShield_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_AbilityMixinGlobalShield_descriptor,
-        new java.lang.String[] { "IsCreateEffect", "SubShield", "HeightOffset", "AvatarId", "MaxShield", "ShieldEffectName", });
+        new java.lang.String[] { "MaxShield", "IsCreateEffect", "ShieldEffectName", "SubShield", "AvatarId", "HeightOffset", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

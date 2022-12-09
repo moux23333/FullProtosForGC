@@ -19,22 +19,22 @@ public final class WidgetCaptureAnimalRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 9;</code>
+     * <code>int32 retcode = 4;</code>
      * @return The retcode.
      */
     int getRetcode();
 
     /**
-     * <code>uint32 entity_id = 4;</code>
-     * @return The entityId.
-     */
-    int getEntityId();
-
-    /**
-     * <code>uint32 material_id = 8;</code>
+     * <code>uint32 material_id = 7;</code>
      * @return The materialId.
      */
     int getMaterialId();
+
+    /**
+     * <code>uint32 entity_id = 11;</code>
+     * @return The entityId.
+     */
+    int getEntityId();
 
     /**
      * <code>.Vector pos = 10;</code>
@@ -53,9 +53,13 @@ public final class WidgetCaptureAnimalRspOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 4289
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 4296;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code WidgetCaptureAnimalRsp}
@@ -104,17 +108,12 @@ public final class WidgetCaptureAnimalRspOuterClass {
               break;
             case 32: {
 
-              entityId_ = input.readUInt32();
+              retcode_ = input.readInt32();
               break;
             }
-            case 64: {
+            case 56: {
 
               materialId_ = input.readUInt32();
-              break;
-            }
-            case 72: {
-
-              retcode_ = input.readInt32();
               break;
             }
             case 82: {
@@ -128,6 +127,11 @@ public final class WidgetCaptureAnimalRspOuterClass {
                 pos_ = subBuilder.buildPartial();
               }
 
+              break;
+            }
+            case 88: {
+
+              entityId_ = input.readUInt32();
               break;
             }
             default: {
@@ -162,10 +166,10 @@ public final class WidgetCaptureAnimalRspOuterClass {
               emu.grasscutter.net.proto.WidgetCaptureAnimalRspOuterClass.WidgetCaptureAnimalRsp.class, emu.grasscutter.net.proto.WidgetCaptureAnimalRspOuterClass.WidgetCaptureAnimalRsp.Builder.class);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 9;
+    public static final int RETCODE_FIELD_NUMBER = 4;
     private int retcode_;
     /**
-     * <code>int32 retcode = 9;</code>
+     * <code>int32 retcode = 4;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -173,26 +177,26 @@ public final class WidgetCaptureAnimalRspOuterClass {
       return retcode_;
     }
 
-    public static final int ENTITY_ID_FIELD_NUMBER = 4;
-    private int entityId_;
-    /**
-     * <code>uint32 entity_id = 4;</code>
-     * @return The entityId.
-     */
-    @java.lang.Override
-    public int getEntityId() {
-      return entityId_;
-    }
-
-    public static final int MATERIAL_ID_FIELD_NUMBER = 8;
+    public static final int MATERIAL_ID_FIELD_NUMBER = 7;
     private int materialId_;
     /**
-     * <code>uint32 material_id = 8;</code>
+     * <code>uint32 material_id = 7;</code>
      * @return The materialId.
      */
     @java.lang.Override
     public int getMaterialId() {
       return materialId_;
+    }
+
+    public static final int ENTITY_ID_FIELD_NUMBER = 11;
+    private int entityId_;
+    /**
+     * <code>uint32 entity_id = 11;</code>
+     * @return The entityId.
+     */
+    @java.lang.Override
+    public int getEntityId() {
+      return entityId_;
     }
 
     public static final int POS_FIELD_NUMBER = 10;
@@ -235,17 +239,17 @@ public final class WidgetCaptureAnimalRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (entityId_ != 0) {
-        output.writeUInt32(4, entityId_);
+      if (retcode_ != 0) {
+        output.writeInt32(4, retcode_);
       }
       if (materialId_ != 0) {
-        output.writeUInt32(8, materialId_);
-      }
-      if (retcode_ != 0) {
-        output.writeInt32(9, retcode_);
+        output.writeUInt32(7, materialId_);
       }
       if (pos_ != null) {
         output.writeMessage(10, getPos());
+      }
+      if (entityId_ != 0) {
+        output.writeUInt32(11, entityId_);
       }
       unknownFields.writeTo(output);
     }
@@ -256,21 +260,21 @@ public final class WidgetCaptureAnimalRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (entityId_ != 0) {
+      if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, entityId_);
+          .computeInt32Size(4, retcode_);
       }
       if (materialId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, materialId_);
-      }
-      if (retcode_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(9, retcode_);
+          .computeUInt32Size(7, materialId_);
       }
       if (pos_ != null) {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(10, getPos());
+      }
+      if (entityId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(11, entityId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -289,10 +293,10 @@ public final class WidgetCaptureAnimalRspOuterClass {
 
       if (getRetcode()
           != other.getRetcode()) return false;
-      if (getEntityId()
-          != other.getEntityId()) return false;
       if (getMaterialId()
           != other.getMaterialId()) return false;
+      if (getEntityId()
+          != other.getEntityId()) return false;
       if (hasPos() != other.hasPos()) return false;
       if (hasPos()) {
         if (!getPos()
@@ -311,10 +315,10 @@ public final class WidgetCaptureAnimalRspOuterClass {
       hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + RETCODE_FIELD_NUMBER;
       hash = (53 * hash) + getRetcode();
-      hash = (37 * hash) + ENTITY_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getEntityId();
       hash = (37 * hash) + MATERIAL_ID_FIELD_NUMBER;
       hash = (53 * hash) + getMaterialId();
+      hash = (37 * hash) + ENTITY_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getEntityId();
       if (hasPos()) {
         hash = (37 * hash) + POS_FIELD_NUMBER;
         hash = (53 * hash) + getPos().hashCode();
@@ -416,9 +420,13 @@ public final class WidgetCaptureAnimalRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 4289
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 4296;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code WidgetCaptureAnimalRsp}
@@ -460,9 +468,9 @@ public final class WidgetCaptureAnimalRspOuterClass {
         super.clear();
         retcode_ = 0;
 
-        entityId_ = 0;
-
         materialId_ = 0;
+
+        entityId_ = 0;
 
         if (posBuilder_ == null) {
           pos_ = null;
@@ -497,8 +505,8 @@ public final class WidgetCaptureAnimalRspOuterClass {
       public emu.grasscutter.net.proto.WidgetCaptureAnimalRspOuterClass.WidgetCaptureAnimalRsp buildPartial() {
         emu.grasscutter.net.proto.WidgetCaptureAnimalRspOuterClass.WidgetCaptureAnimalRsp result = new emu.grasscutter.net.proto.WidgetCaptureAnimalRspOuterClass.WidgetCaptureAnimalRsp(this);
         result.retcode_ = retcode_;
-        result.entityId_ = entityId_;
         result.materialId_ = materialId_;
+        result.entityId_ = entityId_;
         if (posBuilder_ == null) {
           result.pos_ = pos_;
         } else {
@@ -555,11 +563,11 @@ public final class WidgetCaptureAnimalRspOuterClass {
         if (other.getRetcode() != 0) {
           setRetcode(other.getRetcode());
         }
-        if (other.getEntityId() != 0) {
-          setEntityId(other.getEntityId());
-        }
         if (other.getMaterialId() != 0) {
           setMaterialId(other.getMaterialId());
+        }
+        if (other.getEntityId() != 0) {
+          setEntityId(other.getEntityId());
         }
         if (other.hasPos()) {
           mergePos(other.getPos());
@@ -595,7 +603,7 @@ public final class WidgetCaptureAnimalRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 9;</code>
+       * <code>int32 retcode = 4;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -603,7 +611,7 @@ public final class WidgetCaptureAnimalRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 9;</code>
+       * <code>int32 retcode = 4;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -614,7 +622,7 @@ public final class WidgetCaptureAnimalRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 9;</code>
+       * <code>int32 retcode = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -624,40 +632,9 @@ public final class WidgetCaptureAnimalRspOuterClass {
         return this;
       }
 
-      private int entityId_ ;
-      /**
-       * <code>uint32 entity_id = 4;</code>
-       * @return The entityId.
-       */
-      @java.lang.Override
-      public int getEntityId() {
-        return entityId_;
-      }
-      /**
-       * <code>uint32 entity_id = 4;</code>
-       * @param value The entityId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setEntityId(int value) {
-        
-        entityId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 entity_id = 4;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearEntityId() {
-        
-        entityId_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int materialId_ ;
       /**
-       * <code>uint32 material_id = 8;</code>
+       * <code>uint32 material_id = 7;</code>
        * @return The materialId.
        */
       @java.lang.Override
@@ -665,7 +642,7 @@ public final class WidgetCaptureAnimalRspOuterClass {
         return materialId_;
       }
       /**
-       * <code>uint32 material_id = 8;</code>
+       * <code>uint32 material_id = 7;</code>
        * @param value The materialId to set.
        * @return This builder for chaining.
        */
@@ -676,12 +653,43 @@ public final class WidgetCaptureAnimalRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 material_id = 8;</code>
+       * <code>uint32 material_id = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearMaterialId() {
         
         materialId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int entityId_ ;
+      /**
+       * <code>uint32 entity_id = 11;</code>
+       * @return The entityId.
+       */
+      @java.lang.Override
+      public int getEntityId() {
+        return entityId_;
+      }
+      /**
+       * <code>uint32 entity_id = 11;</code>
+       * @param value The entityId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setEntityId(int value) {
+        
+        entityId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 entity_id = 11;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearEntityId() {
+        
+        entityId_ = 0;
         onChanged();
         return this;
       }
@@ -873,8 +881,8 @@ public final class WidgetCaptureAnimalRspOuterClass {
     java.lang.String[] descriptorData = {
       "\n\034WidgetCaptureAnimalRsp.proto\032\014Vector.p" +
       "roto\"g\n\026WidgetCaptureAnimalRsp\022\017\n\007retcod" +
-      "e\030\t \001(\005\022\021\n\tentity_id\030\004 \001(\r\022\023\n\013material_i" +
-      "d\030\010 \001(\r\022\024\n\003pos\030\n \001(\0132\007.VectorB\033\n\031emu.gra" +
+      "e\030\004 \001(\005\022\023\n\013material_id\030\007 \001(\r\022\021\n\tentity_i" +
+      "d\030\013 \001(\r\022\024\n\003pos\030\n \001(\0132\007.VectorB\033\n\031emu.gra" +
       "sscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -887,7 +895,7 @@ public final class WidgetCaptureAnimalRspOuterClass {
     internal_static_WidgetCaptureAnimalRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_WidgetCaptureAnimalRsp_descriptor,
-        new java.lang.String[] { "Retcode", "EntityId", "MaterialId", "Pos", });
+        new java.lang.String[] { "Retcode", "MaterialId", "EntityId", "Pos", });
     emu.grasscutter.net.proto.VectorOuterClass.getDescriptor();
   }
 

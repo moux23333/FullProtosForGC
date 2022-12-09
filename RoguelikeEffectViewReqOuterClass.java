@@ -19,45 +19,49 @@ public final class RoguelikeEffectViewReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated uint32 view_curse_list = 10;</code>
-     * @return A list containing the viewCurseList.
+     * <code>repeated uint32 Unk3300_FKGJGIJHKJI = 10;</code>
+     * @return A list containing the unk3300FKGJGIJHKJI.
      */
-    java.util.List<java.lang.Integer> getViewCurseListList();
+    java.util.List<java.lang.Integer> getUnk3300FKGJGIJHKJIList();
     /**
-     * <code>repeated uint32 view_curse_list = 10;</code>
-     * @return The count of viewCurseList.
+     * <code>repeated uint32 Unk3300_FKGJGIJHKJI = 10;</code>
+     * @return The count of unk3300FKGJGIJHKJI.
      */
-    int getViewCurseListCount();
+    int getUnk3300FKGJGIJHKJICount();
     /**
-     * <code>repeated uint32 view_curse_list = 10;</code>
+     * <code>repeated uint32 Unk3300_FKGJGIJHKJI = 10;</code>
      * @param index The index of the element to return.
-     * @return The viewCurseList at the given index.
+     * @return The unk3300FKGJGIJHKJI at the given index.
      */
-    int getViewCurseList(int index);
+    int getUnk3300FKGJGIJHKJI(int index);
 
     /**
-     * <code>repeated uint32 view_card_list = 2;</code>
-     * @return A list containing the viewCardList.
+     * <code>repeated uint32 Unk3300_LMIIAEPBKNB = 15;</code>
+     * @return A list containing the unk3300LMIIAEPBKNB.
      */
-    java.util.List<java.lang.Integer> getViewCardListList();
+    java.util.List<java.lang.Integer> getUnk3300LMIIAEPBKNBList();
     /**
-     * <code>repeated uint32 view_card_list = 2;</code>
-     * @return The count of viewCardList.
+     * <code>repeated uint32 Unk3300_LMIIAEPBKNB = 15;</code>
+     * @return The count of unk3300LMIIAEPBKNB.
      */
-    int getViewCardListCount();
+    int getUnk3300LMIIAEPBKNBCount();
     /**
-     * <code>repeated uint32 view_card_list = 2;</code>
+     * <code>repeated uint32 Unk3300_LMIIAEPBKNB = 15;</code>
      * @param index The index of the element to return.
-     * @return The viewCardList at the given index.
+     * @return The unk3300LMIIAEPBKNB at the given index.
      */
-    int getViewCardList(int index);
+    int getUnk3300LMIIAEPBKNB(int index);
   }
   /**
    * <pre>
-   * CmdId: 8528
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 8605;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code RoguelikeEffectViewReq}
@@ -72,8 +76,8 @@ public final class RoguelikeEffectViewReqOuterClass {
       super(builder);
     }
     private RoguelikeEffectViewReq() {
-      viewCurseList_ = emptyIntList();
-      viewCardList_ = emptyIntList();
+      unk3300FKGJGIJHKJI_ = emptyIntList();
+      unk3300LMIIAEPBKNB_ = emptyIntList();
     }
 
     @java.lang.Override
@@ -107,44 +111,44 @@ public final class RoguelikeEffectViewReqOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
-              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
-                viewCardList_ = newIntList();
-                mutable_bitField0_ |= 0x00000002;
-              }
-              viewCardList_.addInt(input.readUInt32());
-              break;
-            }
-            case 18: {
-              int length = input.readRawVarint32();
-              int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000002) != 0) && input.getBytesUntilLimit() > 0) {
-                viewCardList_ = newIntList();
-                mutable_bitField0_ |= 0x00000002;
-              }
-              while (input.getBytesUntilLimit() > 0) {
-                viewCardList_.addInt(input.readUInt32());
-              }
-              input.popLimit(limit);
-              break;
-            }
             case 80: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                viewCurseList_ = newIntList();
+                unk3300FKGJGIJHKJI_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
               }
-              viewCurseList_.addInt(input.readUInt32());
+              unk3300FKGJGIJHKJI_.addInt(input.readUInt32());
               break;
             }
             case 82: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
-                viewCurseList_ = newIntList();
+                unk3300FKGJGIJHKJI_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
               }
               while (input.getBytesUntilLimit() > 0) {
-                viewCurseList_.addInt(input.readUInt32());
+                unk3300FKGJGIJHKJI_.addInt(input.readUInt32());
+              }
+              input.popLimit(limit);
+              break;
+            }
+            case 120: {
+              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
+                unk3300LMIIAEPBKNB_ = newIntList();
+                mutable_bitField0_ |= 0x00000002;
+              }
+              unk3300LMIIAEPBKNB_.addInt(input.readUInt32());
+              break;
+            }
+            case 122: {
+              int length = input.readRawVarint32();
+              int limit = input.pushLimit(length);
+              if (!((mutable_bitField0_ & 0x00000002) != 0) && input.getBytesUntilLimit() > 0) {
+                unk3300LMIIAEPBKNB_ = newIntList();
+                mutable_bitField0_ |= 0x00000002;
+              }
+              while (input.getBytesUntilLimit() > 0) {
+                unk3300LMIIAEPBKNB_.addInt(input.readUInt32());
               }
               input.popLimit(limit);
               break;
@@ -164,11 +168,11 @@ public final class RoguelikeEffectViewReqOuterClass {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
       } finally {
-        if (((mutable_bitField0_ & 0x00000002) != 0)) {
-          viewCardList_.makeImmutable(); // C
-        }
         if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          viewCurseList_.makeImmutable(); // C
+          unk3300FKGJGIJHKJI_.makeImmutable(); // C
+        }
+        if (((mutable_bitField0_ & 0x00000002) != 0)) {
+          unk3300LMIIAEPBKNB_.makeImmutable(); // C
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -187,61 +191,61 @@ public final class RoguelikeEffectViewReqOuterClass {
               emu.grasscutter.net.proto.RoguelikeEffectViewReqOuterClass.RoguelikeEffectViewReq.class, emu.grasscutter.net.proto.RoguelikeEffectViewReqOuterClass.RoguelikeEffectViewReq.Builder.class);
     }
 
-    public static final int VIEW_CURSE_LIST_FIELD_NUMBER = 10;
-    private com.google.protobuf.Internal.IntList viewCurseList_;
+    public static final int UNK3300_FKGJGIJHKJI_FIELD_NUMBER = 10;
+    private com.google.protobuf.Internal.IntList unk3300FKGJGIJHKJI_;
     /**
-     * <code>repeated uint32 view_curse_list = 10;</code>
-     * @return A list containing the viewCurseList.
+     * <code>repeated uint32 Unk3300_FKGJGIJHKJI = 10;</code>
+     * @return A list containing the unk3300FKGJGIJHKJI.
      */
     @java.lang.Override
     public java.util.List<java.lang.Integer>
-        getViewCurseListList() {
-      return viewCurseList_;
+        getUnk3300FKGJGIJHKJIList() {
+      return unk3300FKGJGIJHKJI_;
     }
     /**
-     * <code>repeated uint32 view_curse_list = 10;</code>
-     * @return The count of viewCurseList.
+     * <code>repeated uint32 Unk3300_FKGJGIJHKJI = 10;</code>
+     * @return The count of unk3300FKGJGIJHKJI.
      */
-    public int getViewCurseListCount() {
-      return viewCurseList_.size();
+    public int getUnk3300FKGJGIJHKJICount() {
+      return unk3300FKGJGIJHKJI_.size();
     }
     /**
-     * <code>repeated uint32 view_curse_list = 10;</code>
+     * <code>repeated uint32 Unk3300_FKGJGIJHKJI = 10;</code>
      * @param index The index of the element to return.
-     * @return The viewCurseList at the given index.
+     * @return The unk3300FKGJGIJHKJI at the given index.
      */
-    public int getViewCurseList(int index) {
-      return viewCurseList_.getInt(index);
+    public int getUnk3300FKGJGIJHKJI(int index) {
+      return unk3300FKGJGIJHKJI_.getInt(index);
     }
-    private int viewCurseListMemoizedSerializedSize = -1;
+    private int unk3300FKGJGIJHKJIMemoizedSerializedSize = -1;
 
-    public static final int VIEW_CARD_LIST_FIELD_NUMBER = 2;
-    private com.google.protobuf.Internal.IntList viewCardList_;
+    public static final int UNK3300_LMIIAEPBKNB_FIELD_NUMBER = 15;
+    private com.google.protobuf.Internal.IntList unk3300LMIIAEPBKNB_;
     /**
-     * <code>repeated uint32 view_card_list = 2;</code>
-     * @return A list containing the viewCardList.
+     * <code>repeated uint32 Unk3300_LMIIAEPBKNB = 15;</code>
+     * @return A list containing the unk3300LMIIAEPBKNB.
      */
     @java.lang.Override
     public java.util.List<java.lang.Integer>
-        getViewCardListList() {
-      return viewCardList_;
+        getUnk3300LMIIAEPBKNBList() {
+      return unk3300LMIIAEPBKNB_;
     }
     /**
-     * <code>repeated uint32 view_card_list = 2;</code>
-     * @return The count of viewCardList.
+     * <code>repeated uint32 Unk3300_LMIIAEPBKNB = 15;</code>
+     * @return The count of unk3300LMIIAEPBKNB.
      */
-    public int getViewCardListCount() {
-      return viewCardList_.size();
+    public int getUnk3300LMIIAEPBKNBCount() {
+      return unk3300LMIIAEPBKNB_.size();
     }
     /**
-     * <code>repeated uint32 view_card_list = 2;</code>
+     * <code>repeated uint32 Unk3300_LMIIAEPBKNB = 15;</code>
      * @param index The index of the element to return.
-     * @return The viewCardList at the given index.
+     * @return The unk3300LMIIAEPBKNB at the given index.
      */
-    public int getViewCardList(int index) {
-      return viewCardList_.getInt(index);
+    public int getUnk3300LMIIAEPBKNB(int index) {
+      return unk3300LMIIAEPBKNB_.getInt(index);
     }
-    private int viewCardListMemoizedSerializedSize = -1;
+    private int unk3300LMIIAEPBKNBMemoizedSerializedSize = -1;
 
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
@@ -258,19 +262,19 @@ public final class RoguelikeEffectViewReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      if (getViewCardListList().size() > 0) {
-        output.writeUInt32NoTag(18);
-        output.writeUInt32NoTag(viewCardListMemoizedSerializedSize);
-      }
-      for (int i = 0; i < viewCardList_.size(); i++) {
-        output.writeUInt32NoTag(viewCardList_.getInt(i));
-      }
-      if (getViewCurseListList().size() > 0) {
+      if (getUnk3300FKGJGIJHKJIList().size() > 0) {
         output.writeUInt32NoTag(82);
-        output.writeUInt32NoTag(viewCurseListMemoizedSerializedSize);
+        output.writeUInt32NoTag(unk3300FKGJGIJHKJIMemoizedSerializedSize);
       }
-      for (int i = 0; i < viewCurseList_.size(); i++) {
-        output.writeUInt32NoTag(viewCurseList_.getInt(i));
+      for (int i = 0; i < unk3300FKGJGIJHKJI_.size(); i++) {
+        output.writeUInt32NoTag(unk3300FKGJGIJHKJI_.getInt(i));
+      }
+      if (getUnk3300LMIIAEPBKNBList().size() > 0) {
+        output.writeUInt32NoTag(122);
+        output.writeUInt32NoTag(unk3300LMIIAEPBKNBMemoizedSerializedSize);
+      }
+      for (int i = 0; i < unk3300LMIIAEPBKNB_.size(); i++) {
+        output.writeUInt32NoTag(unk3300LMIIAEPBKNB_.getInt(i));
       }
       unknownFields.writeTo(output);
     }
@@ -283,31 +287,31 @@ public final class RoguelikeEffectViewReqOuterClass {
       size = 0;
       {
         int dataSize = 0;
-        for (int i = 0; i < viewCardList_.size(); i++) {
+        for (int i = 0; i < unk3300FKGJGIJHKJI_.size(); i++) {
           dataSize += com.google.protobuf.CodedOutputStream
-            .computeUInt32SizeNoTag(viewCardList_.getInt(i));
+            .computeUInt32SizeNoTag(unk3300FKGJGIJHKJI_.getInt(i));
         }
         size += dataSize;
-        if (!getViewCardListList().isEmpty()) {
+        if (!getUnk3300FKGJGIJHKJIList().isEmpty()) {
           size += 1;
           size += com.google.protobuf.CodedOutputStream
               .computeInt32SizeNoTag(dataSize);
         }
-        viewCardListMemoizedSerializedSize = dataSize;
+        unk3300FKGJGIJHKJIMemoizedSerializedSize = dataSize;
       }
       {
         int dataSize = 0;
-        for (int i = 0; i < viewCurseList_.size(); i++) {
+        for (int i = 0; i < unk3300LMIIAEPBKNB_.size(); i++) {
           dataSize += com.google.protobuf.CodedOutputStream
-            .computeUInt32SizeNoTag(viewCurseList_.getInt(i));
+            .computeUInt32SizeNoTag(unk3300LMIIAEPBKNB_.getInt(i));
         }
         size += dataSize;
-        if (!getViewCurseListList().isEmpty()) {
+        if (!getUnk3300LMIIAEPBKNBList().isEmpty()) {
           size += 1;
           size += com.google.protobuf.CodedOutputStream
               .computeInt32SizeNoTag(dataSize);
         }
-        viewCurseListMemoizedSerializedSize = dataSize;
+        unk3300LMIIAEPBKNBMemoizedSerializedSize = dataSize;
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -324,10 +328,10 @@ public final class RoguelikeEffectViewReqOuterClass {
       }
       emu.grasscutter.net.proto.RoguelikeEffectViewReqOuterClass.RoguelikeEffectViewReq other = (emu.grasscutter.net.proto.RoguelikeEffectViewReqOuterClass.RoguelikeEffectViewReq) obj;
 
-      if (!getViewCurseListList()
-          .equals(other.getViewCurseListList())) return false;
-      if (!getViewCardListList()
-          .equals(other.getViewCardListList())) return false;
+      if (!getUnk3300FKGJGIJHKJIList()
+          .equals(other.getUnk3300FKGJGIJHKJIList())) return false;
+      if (!getUnk3300LMIIAEPBKNBList()
+          .equals(other.getUnk3300LMIIAEPBKNBList())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -339,13 +343,13 @@ public final class RoguelikeEffectViewReqOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (getViewCurseListCount() > 0) {
-        hash = (37 * hash) + VIEW_CURSE_LIST_FIELD_NUMBER;
-        hash = (53 * hash) + getViewCurseListList().hashCode();
+      if (getUnk3300FKGJGIJHKJICount() > 0) {
+        hash = (37 * hash) + UNK3300_FKGJGIJHKJI_FIELD_NUMBER;
+        hash = (53 * hash) + getUnk3300FKGJGIJHKJIList().hashCode();
       }
-      if (getViewCardListCount() > 0) {
-        hash = (37 * hash) + VIEW_CARD_LIST_FIELD_NUMBER;
-        hash = (53 * hash) + getViewCardListList().hashCode();
+      if (getUnk3300LMIIAEPBKNBCount() > 0) {
+        hash = (37 * hash) + UNK3300_LMIIAEPBKNB_FIELD_NUMBER;
+        hash = (53 * hash) + getUnk3300LMIIAEPBKNBList().hashCode();
       }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
@@ -444,10 +448,14 @@ public final class RoguelikeEffectViewReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 8528
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 8605;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code RoguelikeEffectViewReq}
@@ -487,9 +495,9 @@ public final class RoguelikeEffectViewReqOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        viewCurseList_ = emptyIntList();
+        unk3300FKGJGIJHKJI_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
-        viewCardList_ = emptyIntList();
+        unk3300LMIIAEPBKNB_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000002);
         return this;
       }
@@ -519,15 +527,15 @@ public final class RoguelikeEffectViewReqOuterClass {
         emu.grasscutter.net.proto.RoguelikeEffectViewReqOuterClass.RoguelikeEffectViewReq result = new emu.grasscutter.net.proto.RoguelikeEffectViewReqOuterClass.RoguelikeEffectViewReq(this);
         int from_bitField0_ = bitField0_;
         if (((bitField0_ & 0x00000001) != 0)) {
-          viewCurseList_.makeImmutable();
+          unk3300FKGJGIJHKJI_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000001);
         }
-        result.viewCurseList_ = viewCurseList_;
+        result.unk3300FKGJGIJHKJI_ = unk3300FKGJGIJHKJI_;
         if (((bitField0_ & 0x00000002) != 0)) {
-          viewCardList_.makeImmutable();
+          unk3300LMIIAEPBKNB_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000002);
         }
-        result.viewCardList_ = viewCardList_;
+        result.unk3300LMIIAEPBKNB_ = unk3300LMIIAEPBKNB_;
         onBuilt();
         return result;
       }
@@ -576,23 +584,23 @@ public final class RoguelikeEffectViewReqOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.RoguelikeEffectViewReqOuterClass.RoguelikeEffectViewReq other) {
         if (other == emu.grasscutter.net.proto.RoguelikeEffectViewReqOuterClass.RoguelikeEffectViewReq.getDefaultInstance()) return this;
-        if (!other.viewCurseList_.isEmpty()) {
-          if (viewCurseList_.isEmpty()) {
-            viewCurseList_ = other.viewCurseList_;
+        if (!other.unk3300FKGJGIJHKJI_.isEmpty()) {
+          if (unk3300FKGJGIJHKJI_.isEmpty()) {
+            unk3300FKGJGIJHKJI_ = other.unk3300FKGJGIJHKJI_;
             bitField0_ = (bitField0_ & ~0x00000001);
           } else {
-            ensureViewCurseListIsMutable();
-            viewCurseList_.addAll(other.viewCurseList_);
+            ensureUnk3300FKGJGIJHKJIIsMutable();
+            unk3300FKGJGIJHKJI_.addAll(other.unk3300FKGJGIJHKJI_);
           }
           onChanged();
         }
-        if (!other.viewCardList_.isEmpty()) {
-          if (viewCardList_.isEmpty()) {
-            viewCardList_ = other.viewCardList_;
+        if (!other.unk3300LMIIAEPBKNB_.isEmpty()) {
+          if (unk3300LMIIAEPBKNB_.isEmpty()) {
+            unk3300LMIIAEPBKNB_ = other.unk3300LMIIAEPBKNB_;
             bitField0_ = (bitField0_ & ~0x00000002);
           } else {
-            ensureViewCardListIsMutable();
-            viewCardList_.addAll(other.viewCardList_);
+            ensureUnk3300LMIIAEPBKNBIsMutable();
+            unk3300LMIIAEPBKNB_.addAll(other.unk3300LMIIAEPBKNB_);
           }
           onChanged();
         }
@@ -626,159 +634,159 @@ public final class RoguelikeEffectViewReqOuterClass {
       }
       private int bitField0_;
 
-      private com.google.protobuf.Internal.IntList viewCurseList_ = emptyIntList();
-      private void ensureViewCurseListIsMutable() {
+      private com.google.protobuf.Internal.IntList unk3300FKGJGIJHKJI_ = emptyIntList();
+      private void ensureUnk3300FKGJGIJHKJIIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          viewCurseList_ = mutableCopy(viewCurseList_);
+          unk3300FKGJGIJHKJI_ = mutableCopy(unk3300FKGJGIJHKJI_);
           bitField0_ |= 0x00000001;
          }
       }
       /**
-       * <code>repeated uint32 view_curse_list = 10;</code>
-       * @return A list containing the viewCurseList.
+       * <code>repeated uint32 Unk3300_FKGJGIJHKJI = 10;</code>
+       * @return A list containing the unk3300FKGJGIJHKJI.
        */
       public java.util.List<java.lang.Integer>
-          getViewCurseListList() {
+          getUnk3300FKGJGIJHKJIList() {
         return ((bitField0_ & 0x00000001) != 0) ?
-                 java.util.Collections.unmodifiableList(viewCurseList_) : viewCurseList_;
+                 java.util.Collections.unmodifiableList(unk3300FKGJGIJHKJI_) : unk3300FKGJGIJHKJI_;
       }
       /**
-       * <code>repeated uint32 view_curse_list = 10;</code>
-       * @return The count of viewCurseList.
+       * <code>repeated uint32 Unk3300_FKGJGIJHKJI = 10;</code>
+       * @return The count of unk3300FKGJGIJHKJI.
        */
-      public int getViewCurseListCount() {
-        return viewCurseList_.size();
+      public int getUnk3300FKGJGIJHKJICount() {
+        return unk3300FKGJGIJHKJI_.size();
       }
       /**
-       * <code>repeated uint32 view_curse_list = 10;</code>
+       * <code>repeated uint32 Unk3300_FKGJGIJHKJI = 10;</code>
        * @param index The index of the element to return.
-       * @return The viewCurseList at the given index.
+       * @return The unk3300FKGJGIJHKJI at the given index.
        */
-      public int getViewCurseList(int index) {
-        return viewCurseList_.getInt(index);
+      public int getUnk3300FKGJGIJHKJI(int index) {
+        return unk3300FKGJGIJHKJI_.getInt(index);
       }
       /**
-       * <code>repeated uint32 view_curse_list = 10;</code>
+       * <code>repeated uint32 Unk3300_FKGJGIJHKJI = 10;</code>
        * @param index The index to set the value at.
-       * @param value The viewCurseList to set.
+       * @param value The unk3300FKGJGIJHKJI to set.
        * @return This builder for chaining.
        */
-      public Builder setViewCurseList(
+      public Builder setUnk3300FKGJGIJHKJI(
           int index, int value) {
-        ensureViewCurseListIsMutable();
-        viewCurseList_.setInt(index, value);
+        ensureUnk3300FKGJGIJHKJIIsMutable();
+        unk3300FKGJGIJHKJI_.setInt(index, value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 view_curse_list = 10;</code>
-       * @param value The viewCurseList to add.
+       * <code>repeated uint32 Unk3300_FKGJGIJHKJI = 10;</code>
+       * @param value The unk3300FKGJGIJHKJI to add.
        * @return This builder for chaining.
        */
-      public Builder addViewCurseList(int value) {
-        ensureViewCurseListIsMutable();
-        viewCurseList_.addInt(value);
+      public Builder addUnk3300FKGJGIJHKJI(int value) {
+        ensureUnk3300FKGJGIJHKJIIsMutable();
+        unk3300FKGJGIJHKJI_.addInt(value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 view_curse_list = 10;</code>
-       * @param values The viewCurseList to add.
+       * <code>repeated uint32 Unk3300_FKGJGIJHKJI = 10;</code>
+       * @param values The unk3300FKGJGIJHKJI to add.
        * @return This builder for chaining.
        */
-      public Builder addAllViewCurseList(
+      public Builder addAllUnk3300FKGJGIJHKJI(
           java.lang.Iterable<? extends java.lang.Integer> values) {
-        ensureViewCurseListIsMutable();
+        ensureUnk3300FKGJGIJHKJIIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, viewCurseList_);
+            values, unk3300FKGJGIJHKJI_);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 view_curse_list = 10;</code>
+       * <code>repeated uint32 Unk3300_FKGJGIJHKJI = 10;</code>
        * @return This builder for chaining.
        */
-      public Builder clearViewCurseList() {
-        viewCurseList_ = emptyIntList();
+      public Builder clearUnk3300FKGJGIJHKJI() {
+        unk3300FKGJGIJHKJI_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
         onChanged();
         return this;
       }
 
-      private com.google.protobuf.Internal.IntList viewCardList_ = emptyIntList();
-      private void ensureViewCardListIsMutable() {
+      private com.google.protobuf.Internal.IntList unk3300LMIIAEPBKNB_ = emptyIntList();
+      private void ensureUnk3300LMIIAEPBKNBIsMutable() {
         if (!((bitField0_ & 0x00000002) != 0)) {
-          viewCardList_ = mutableCopy(viewCardList_);
+          unk3300LMIIAEPBKNB_ = mutableCopy(unk3300LMIIAEPBKNB_);
           bitField0_ |= 0x00000002;
          }
       }
       /**
-       * <code>repeated uint32 view_card_list = 2;</code>
-       * @return A list containing the viewCardList.
+       * <code>repeated uint32 Unk3300_LMIIAEPBKNB = 15;</code>
+       * @return A list containing the unk3300LMIIAEPBKNB.
        */
       public java.util.List<java.lang.Integer>
-          getViewCardListList() {
+          getUnk3300LMIIAEPBKNBList() {
         return ((bitField0_ & 0x00000002) != 0) ?
-                 java.util.Collections.unmodifiableList(viewCardList_) : viewCardList_;
+                 java.util.Collections.unmodifiableList(unk3300LMIIAEPBKNB_) : unk3300LMIIAEPBKNB_;
       }
       /**
-       * <code>repeated uint32 view_card_list = 2;</code>
-       * @return The count of viewCardList.
+       * <code>repeated uint32 Unk3300_LMIIAEPBKNB = 15;</code>
+       * @return The count of unk3300LMIIAEPBKNB.
        */
-      public int getViewCardListCount() {
-        return viewCardList_.size();
+      public int getUnk3300LMIIAEPBKNBCount() {
+        return unk3300LMIIAEPBKNB_.size();
       }
       /**
-       * <code>repeated uint32 view_card_list = 2;</code>
+       * <code>repeated uint32 Unk3300_LMIIAEPBKNB = 15;</code>
        * @param index The index of the element to return.
-       * @return The viewCardList at the given index.
+       * @return The unk3300LMIIAEPBKNB at the given index.
        */
-      public int getViewCardList(int index) {
-        return viewCardList_.getInt(index);
+      public int getUnk3300LMIIAEPBKNB(int index) {
+        return unk3300LMIIAEPBKNB_.getInt(index);
       }
       /**
-       * <code>repeated uint32 view_card_list = 2;</code>
+       * <code>repeated uint32 Unk3300_LMIIAEPBKNB = 15;</code>
        * @param index The index to set the value at.
-       * @param value The viewCardList to set.
+       * @param value The unk3300LMIIAEPBKNB to set.
        * @return This builder for chaining.
        */
-      public Builder setViewCardList(
+      public Builder setUnk3300LMIIAEPBKNB(
           int index, int value) {
-        ensureViewCardListIsMutable();
-        viewCardList_.setInt(index, value);
+        ensureUnk3300LMIIAEPBKNBIsMutable();
+        unk3300LMIIAEPBKNB_.setInt(index, value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 view_card_list = 2;</code>
-       * @param value The viewCardList to add.
+       * <code>repeated uint32 Unk3300_LMIIAEPBKNB = 15;</code>
+       * @param value The unk3300LMIIAEPBKNB to add.
        * @return This builder for chaining.
        */
-      public Builder addViewCardList(int value) {
-        ensureViewCardListIsMutable();
-        viewCardList_.addInt(value);
+      public Builder addUnk3300LMIIAEPBKNB(int value) {
+        ensureUnk3300LMIIAEPBKNBIsMutable();
+        unk3300LMIIAEPBKNB_.addInt(value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 view_card_list = 2;</code>
-       * @param values The viewCardList to add.
+       * <code>repeated uint32 Unk3300_LMIIAEPBKNB = 15;</code>
+       * @param values The unk3300LMIIAEPBKNB to add.
        * @return This builder for chaining.
        */
-      public Builder addAllViewCardList(
+      public Builder addAllUnk3300LMIIAEPBKNB(
           java.lang.Iterable<? extends java.lang.Integer> values) {
-        ensureViewCardListIsMutable();
+        ensureUnk3300LMIIAEPBKNBIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, viewCardList_);
+            values, unk3300LMIIAEPBKNB_);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 view_card_list = 2;</code>
+       * <code>repeated uint32 Unk3300_LMIIAEPBKNB = 15;</code>
        * @return This builder for chaining.
        */
-      public Builder clearViewCardList() {
-        viewCardList_ = emptyIntList();
+      public Builder clearUnk3300LMIIAEPBKNB() {
+        unk3300LMIIAEPBKNB_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000002);
         onChanged();
         return this;
@@ -850,10 +858,10 @@ public final class RoguelikeEffectViewReqOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\034RoguelikeEffectViewReq.proto\"I\n\026Roguel" +
-      "ikeEffectViewReq\022\027\n\017view_curse_list\030\n \003(" +
-      "\r\022\026\n\016view_card_list\030\002 \003(\rB\033\n\031emu.grasscu" +
-      "tter.net.protob\006proto3"
+      "\n\034RoguelikeEffectViewReq.proto\"R\n\026Roguel" +
+      "ikeEffectViewReq\022\033\n\023Unk3300_FKGJGIJHKJI\030" +
+      "\n \003(\r\022\033\n\023Unk3300_LMIIAEPBKNB\030\017 \003(\rB\033\n\031em" +
+      "u.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -864,7 +872,7 @@ public final class RoguelikeEffectViewReqOuterClass {
     internal_static_RoguelikeEffectViewReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_RoguelikeEffectViewReq_descriptor,
-        new java.lang.String[] { "ViewCurseList", "ViewCardList", });
+        new java.lang.String[] { "Unk3300FKGJGIJHKJI", "Unk3300LMIIAEPBKNB", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

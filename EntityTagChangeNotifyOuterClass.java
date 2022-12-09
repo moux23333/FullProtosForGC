@@ -19,34 +19,38 @@ public final class EntityTagChangeNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>string tag = 2;</code>
+     * <code>string tag = 3;</code>
      * @return The tag.
      */
     java.lang.String getTag();
     /**
-     * <code>string tag = 2;</code>
+     * <code>string tag = 3;</code>
      * @return The bytes for tag.
      */
     com.google.protobuf.ByteString
         getTagBytes();
 
     /**
-     * <code>uint32 entity_id = 8;</code>
+     * <code>uint32 entity_id = 11;</code>
      * @return The entityId.
      */
     int getEntityId();
 
     /**
-     * <code>bool is_add = 10;</code>
+     * <code>bool is_add = 2;</code>
      * @return The isAdd.
      */
     boolean getIsAdd();
   }
   /**
    * <pre>
-   * CmdId: 3316
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 3192;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code EntityTagChangeNotify}
@@ -94,20 +98,20 @@ public final class EntityTagChangeNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 18: {
+            case 16: {
+
+              isAdd_ = input.readBool();
+              break;
+            }
+            case 26: {
               java.lang.String s = input.readStringRequireUtf8();
 
               tag_ = s;
               break;
             }
-            case 64: {
+            case 88: {
 
               entityId_ = input.readUInt32();
-              break;
-            }
-            case 80: {
-
-              isAdd_ = input.readBool();
               break;
             }
             default: {
@@ -142,10 +146,10 @@ public final class EntityTagChangeNotifyOuterClass {
               emu.grasscutter.net.proto.EntityTagChangeNotifyOuterClass.EntityTagChangeNotify.class, emu.grasscutter.net.proto.EntityTagChangeNotifyOuterClass.EntityTagChangeNotify.Builder.class);
     }
 
-    public static final int TAG_FIELD_NUMBER = 2;
+    public static final int TAG_FIELD_NUMBER = 3;
     private volatile java.lang.Object tag_;
     /**
-     * <code>string tag = 2;</code>
+     * <code>string tag = 3;</code>
      * @return The tag.
      */
     @java.lang.Override
@@ -162,7 +166,7 @@ public final class EntityTagChangeNotifyOuterClass {
       }
     }
     /**
-     * <code>string tag = 2;</code>
+     * <code>string tag = 3;</code>
      * @return The bytes for tag.
      */
     @java.lang.Override
@@ -180,10 +184,10 @@ public final class EntityTagChangeNotifyOuterClass {
       }
     }
 
-    public static final int ENTITY_ID_FIELD_NUMBER = 8;
+    public static final int ENTITY_ID_FIELD_NUMBER = 11;
     private int entityId_;
     /**
-     * <code>uint32 entity_id = 8;</code>
+     * <code>uint32 entity_id = 11;</code>
      * @return The entityId.
      */
     @java.lang.Override
@@ -191,10 +195,10 @@ public final class EntityTagChangeNotifyOuterClass {
       return entityId_;
     }
 
-    public static final int IS_ADD_FIELD_NUMBER = 10;
+    public static final int IS_ADD_FIELD_NUMBER = 2;
     private boolean isAdd_;
     /**
-     * <code>bool is_add = 10;</code>
+     * <code>bool is_add = 2;</code>
      * @return The isAdd.
      */
     @java.lang.Override
@@ -216,14 +220,14 @@ public final class EntityTagChangeNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (isAdd_ != false) {
+        output.writeBool(2, isAdd_);
+      }
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(tag_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 2, tag_);
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 3, tag_);
       }
       if (entityId_ != 0) {
-        output.writeUInt32(8, entityId_);
-      }
-      if (isAdd_ != false) {
-        output.writeBool(10, isAdd_);
+        output.writeUInt32(11, entityId_);
       }
       unknownFields.writeTo(output);
     }
@@ -234,16 +238,16 @@ public final class EntityTagChangeNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (isAdd_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(2, isAdd_);
+      }
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(tag_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, tag_);
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, tag_);
       }
       if (entityId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, entityId_);
-      }
-      if (isAdd_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(10, isAdd_);
+          .computeUInt32Size(11, entityId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -381,9 +385,13 @@ public final class EntityTagChangeNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 3316
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 3192;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code EntityTagChangeNotify}
@@ -547,7 +555,7 @@ public final class EntityTagChangeNotifyOuterClass {
 
       private java.lang.Object tag_ = "";
       /**
-       * <code>string tag = 2;</code>
+       * <code>string tag = 3;</code>
        * @return The tag.
        */
       public java.lang.String getTag() {
@@ -563,7 +571,7 @@ public final class EntityTagChangeNotifyOuterClass {
         }
       }
       /**
-       * <code>string tag = 2;</code>
+       * <code>string tag = 3;</code>
        * @return The bytes for tag.
        */
       public com.google.protobuf.ByteString
@@ -580,7 +588,7 @@ public final class EntityTagChangeNotifyOuterClass {
         }
       }
       /**
-       * <code>string tag = 2;</code>
+       * <code>string tag = 3;</code>
        * @param value The tag to set.
        * @return This builder for chaining.
        */
@@ -595,7 +603,7 @@ public final class EntityTagChangeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>string tag = 2;</code>
+       * <code>string tag = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearTag() {
@@ -605,7 +613,7 @@ public final class EntityTagChangeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>string tag = 2;</code>
+       * <code>string tag = 3;</code>
        * @param value The bytes for tag to set.
        * @return This builder for chaining.
        */
@@ -623,7 +631,7 @@ public final class EntityTagChangeNotifyOuterClass {
 
       private int entityId_ ;
       /**
-       * <code>uint32 entity_id = 8;</code>
+       * <code>uint32 entity_id = 11;</code>
        * @return The entityId.
        */
       @java.lang.Override
@@ -631,7 +639,7 @@ public final class EntityTagChangeNotifyOuterClass {
         return entityId_;
       }
       /**
-       * <code>uint32 entity_id = 8;</code>
+       * <code>uint32 entity_id = 11;</code>
        * @param value The entityId to set.
        * @return This builder for chaining.
        */
@@ -642,7 +650,7 @@ public final class EntityTagChangeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 entity_id = 8;</code>
+       * <code>uint32 entity_id = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearEntityId() {
@@ -654,7 +662,7 @@ public final class EntityTagChangeNotifyOuterClass {
 
       private boolean isAdd_ ;
       /**
-       * <code>bool is_add = 10;</code>
+       * <code>bool is_add = 2;</code>
        * @return The isAdd.
        */
       @java.lang.Override
@@ -662,7 +670,7 @@ public final class EntityTagChangeNotifyOuterClass {
         return isAdd_;
       }
       /**
-       * <code>bool is_add = 10;</code>
+       * <code>bool is_add = 2;</code>
        * @param value The isAdd to set.
        * @return This builder for chaining.
        */
@@ -673,7 +681,7 @@ public final class EntityTagChangeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>bool is_add = 10;</code>
+       * <code>bool is_add = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsAdd() {
@@ -750,8 +758,8 @@ public final class EntityTagChangeNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\033EntityTagChangeNotify.proto\"G\n\025EntityT" +
-      "agChangeNotify\022\013\n\003tag\030\002 \001(\t\022\021\n\tentity_id" +
-      "\030\010 \001(\r\022\016\n\006is_add\030\n \001(\010B\033\n\031emu.grasscutte" +
+      "agChangeNotify\022\013\n\003tag\030\003 \001(\t\022\021\n\tentity_id" +
+      "\030\013 \001(\r\022\016\n\006is_add\030\002 \001(\010B\033\n\031emu.grasscutte" +
       "r.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

@@ -19,22 +19,22 @@ public final class IrodoriChessPlayerInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 uid = 4;</code>
+     * <code>uint32 settle_score = 11;</code>
+     * @return The settleScore.
+     */
+    int getSettleScore();
+
+    /**
+     * <code>uint32 uid = 10;</code>
      * @return The uid.
      */
     int getUid();
 
     /**
-     * <code>uint32 building_points = 9;</code>
+     * <code>uint32 building_points = 8;</code>
      * @return The buildingPoints.
      */
     int getBuildingPoints();
-
-    /**
-     * <code>uint32 settle_score = 3;</code>
-     * @return The settleScore.
-     */
-    int getSettleScore();
   }
   /**
    * Protobuf type {@code IrodoriChessPlayerInfo}
@@ -81,19 +81,19 @@ public final class IrodoriChessPlayerInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 24: {
+            case 64: {
 
-              settleScore_ = input.readUInt32();
+              buildingPoints_ = input.readUInt32();
               break;
             }
-            case 32: {
+            case 80: {
 
               uid_ = input.readUInt32();
               break;
             }
-            case 72: {
+            case 88: {
 
-              buildingPoints_ = input.readUInt32();
+              settleScore_ = input.readUInt32();
               break;
             }
             default: {
@@ -128,10 +128,21 @@ public final class IrodoriChessPlayerInfoOuterClass {
               emu.grasscutter.net.proto.IrodoriChessPlayerInfoOuterClass.IrodoriChessPlayerInfo.class, emu.grasscutter.net.proto.IrodoriChessPlayerInfoOuterClass.IrodoriChessPlayerInfo.Builder.class);
     }
 
-    public static final int UID_FIELD_NUMBER = 4;
+    public static final int SETTLE_SCORE_FIELD_NUMBER = 11;
+    private int settleScore_;
+    /**
+     * <code>uint32 settle_score = 11;</code>
+     * @return The settleScore.
+     */
+    @java.lang.Override
+    public int getSettleScore() {
+      return settleScore_;
+    }
+
+    public static final int UID_FIELD_NUMBER = 10;
     private int uid_;
     /**
-     * <code>uint32 uid = 4;</code>
+     * <code>uint32 uid = 10;</code>
      * @return The uid.
      */
     @java.lang.Override
@@ -139,26 +150,15 @@ public final class IrodoriChessPlayerInfoOuterClass {
       return uid_;
     }
 
-    public static final int BUILDING_POINTS_FIELD_NUMBER = 9;
+    public static final int BUILDING_POINTS_FIELD_NUMBER = 8;
     private int buildingPoints_;
     /**
-     * <code>uint32 building_points = 9;</code>
+     * <code>uint32 building_points = 8;</code>
      * @return The buildingPoints.
      */
     @java.lang.Override
     public int getBuildingPoints() {
       return buildingPoints_;
-    }
-
-    public static final int SETTLE_SCORE_FIELD_NUMBER = 3;
-    private int settleScore_;
-    /**
-     * <code>uint32 settle_score = 3;</code>
-     * @return The settleScore.
-     */
-    @java.lang.Override
-    public int getSettleScore() {
-      return settleScore_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -175,14 +175,14 @@ public final class IrodoriChessPlayerInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (settleScore_ != 0) {
-        output.writeUInt32(3, settleScore_);
+      if (buildingPoints_ != 0) {
+        output.writeUInt32(8, buildingPoints_);
       }
       if (uid_ != 0) {
-        output.writeUInt32(4, uid_);
+        output.writeUInt32(10, uid_);
       }
-      if (buildingPoints_ != 0) {
-        output.writeUInt32(9, buildingPoints_);
+      if (settleScore_ != 0) {
+        output.writeUInt32(11, settleScore_);
       }
       unknownFields.writeTo(output);
     }
@@ -193,17 +193,17 @@ public final class IrodoriChessPlayerInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (settleScore_ != 0) {
+      if (buildingPoints_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, settleScore_);
+          .computeUInt32Size(8, buildingPoints_);
       }
       if (uid_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, uid_);
+          .computeUInt32Size(10, uid_);
       }
-      if (buildingPoints_ != 0) {
+      if (settleScore_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, buildingPoints_);
+          .computeUInt32Size(11, settleScore_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -220,12 +220,12 @@ public final class IrodoriChessPlayerInfoOuterClass {
       }
       emu.grasscutter.net.proto.IrodoriChessPlayerInfoOuterClass.IrodoriChessPlayerInfo other = (emu.grasscutter.net.proto.IrodoriChessPlayerInfoOuterClass.IrodoriChessPlayerInfo) obj;
 
+      if (getSettleScore()
+          != other.getSettleScore()) return false;
       if (getUid()
           != other.getUid()) return false;
       if (getBuildingPoints()
           != other.getBuildingPoints()) return false;
-      if (getSettleScore()
-          != other.getSettleScore()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -237,12 +237,12 @@ public final class IrodoriChessPlayerInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + SETTLE_SCORE_FIELD_NUMBER;
+      hash = (53 * hash) + getSettleScore();
       hash = (37 * hash) + UID_FIELD_NUMBER;
       hash = (53 * hash) + getUid();
       hash = (37 * hash) + BUILDING_POINTS_FIELD_NUMBER;
       hash = (53 * hash) + getBuildingPoints();
-      hash = (37 * hash) + SETTLE_SCORE_FIELD_NUMBER;
-      hash = (53 * hash) + getSettleScore();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -376,11 +376,11 @@ public final class IrodoriChessPlayerInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        settleScore_ = 0;
+
         uid_ = 0;
 
         buildingPoints_ = 0;
-
-        settleScore_ = 0;
 
         return this;
       }
@@ -408,9 +408,9 @@ public final class IrodoriChessPlayerInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.IrodoriChessPlayerInfoOuterClass.IrodoriChessPlayerInfo buildPartial() {
         emu.grasscutter.net.proto.IrodoriChessPlayerInfoOuterClass.IrodoriChessPlayerInfo result = new emu.grasscutter.net.proto.IrodoriChessPlayerInfoOuterClass.IrodoriChessPlayerInfo(this);
+        result.settleScore_ = settleScore_;
         result.uid_ = uid_;
         result.buildingPoints_ = buildingPoints_;
-        result.settleScore_ = settleScore_;
         onBuilt();
         return result;
       }
@@ -459,14 +459,14 @@ public final class IrodoriChessPlayerInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.IrodoriChessPlayerInfoOuterClass.IrodoriChessPlayerInfo other) {
         if (other == emu.grasscutter.net.proto.IrodoriChessPlayerInfoOuterClass.IrodoriChessPlayerInfo.getDefaultInstance()) return this;
+        if (other.getSettleScore() != 0) {
+          setSettleScore(other.getSettleScore());
+        }
         if (other.getUid() != 0) {
           setUid(other.getUid());
         }
         if (other.getBuildingPoints() != 0) {
           setBuildingPoints(other.getBuildingPoints());
-        }
-        if (other.getSettleScore() != 0) {
-          setSettleScore(other.getSettleScore());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -497,9 +497,40 @@ public final class IrodoriChessPlayerInfoOuterClass {
         return this;
       }
 
+      private int settleScore_ ;
+      /**
+       * <code>uint32 settle_score = 11;</code>
+       * @return The settleScore.
+       */
+      @java.lang.Override
+      public int getSettleScore() {
+        return settleScore_;
+      }
+      /**
+       * <code>uint32 settle_score = 11;</code>
+       * @param value The settleScore to set.
+       * @return This builder for chaining.
+       */
+      public Builder setSettleScore(int value) {
+        
+        settleScore_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 settle_score = 11;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearSettleScore() {
+        
+        settleScore_ = 0;
+        onChanged();
+        return this;
+      }
+
       private int uid_ ;
       /**
-       * <code>uint32 uid = 4;</code>
+       * <code>uint32 uid = 10;</code>
        * @return The uid.
        */
       @java.lang.Override
@@ -507,7 +538,7 @@ public final class IrodoriChessPlayerInfoOuterClass {
         return uid_;
       }
       /**
-       * <code>uint32 uid = 4;</code>
+       * <code>uint32 uid = 10;</code>
        * @param value The uid to set.
        * @return This builder for chaining.
        */
@@ -518,7 +549,7 @@ public final class IrodoriChessPlayerInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 uid = 4;</code>
+       * <code>uint32 uid = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearUid() {
@@ -530,7 +561,7 @@ public final class IrodoriChessPlayerInfoOuterClass {
 
       private int buildingPoints_ ;
       /**
-       * <code>uint32 building_points = 9;</code>
+       * <code>uint32 building_points = 8;</code>
        * @return The buildingPoints.
        */
       @java.lang.Override
@@ -538,7 +569,7 @@ public final class IrodoriChessPlayerInfoOuterClass {
         return buildingPoints_;
       }
       /**
-       * <code>uint32 building_points = 9;</code>
+       * <code>uint32 building_points = 8;</code>
        * @param value The buildingPoints to set.
        * @return This builder for chaining.
        */
@@ -549,43 +580,12 @@ public final class IrodoriChessPlayerInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 building_points = 9;</code>
+       * <code>uint32 building_points = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearBuildingPoints() {
         
         buildingPoints_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int settleScore_ ;
-      /**
-       * <code>uint32 settle_score = 3;</code>
-       * @return The settleScore.
-       */
-      @java.lang.Override
-      public int getSettleScore() {
-        return settleScore_;
-      }
-      /**
-       * <code>uint32 settle_score = 3;</code>
-       * @param value The settleScore to set.
-       * @return This builder for chaining.
-       */
-      public Builder setSettleScore(int value) {
-        
-        settleScore_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 settle_score = 3;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearSettleScore() {
-        
-        settleScore_ = 0;
         onChanged();
         return this;
       }
@@ -657,8 +657,8 @@ public final class IrodoriChessPlayerInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\034IrodoriChessPlayerInfo.proto\"T\n\026Irodor" +
-      "iChessPlayerInfo\022\013\n\003uid\030\004 \001(\r\022\027\n\017buildin" +
-      "g_points\030\t \001(\r\022\024\n\014settle_score\030\003 \001(\rB\033\n\031" +
+      "iChessPlayerInfo\022\024\n\014settle_score\030\013 \001(\r\022\013" +
+      "\n\003uid\030\n \001(\r\022\027\n\017building_points\030\010 \001(\rB\033\n\031" +
       "emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -670,7 +670,7 @@ public final class IrodoriChessPlayerInfoOuterClass {
     internal_static_IrodoriChessPlayerInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_IrodoriChessPlayerInfo_descriptor,
-        new java.lang.String[] { "Uid", "BuildingPoints", "SettleScore", });
+        new java.lang.String[] { "SettleScore", "Uid", "BuildingPoints", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

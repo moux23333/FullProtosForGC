@@ -19,25 +19,25 @@ public final class CustomDungeonSocialOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 win_num = 4;</code>
+     * <code>uint32 win_num = 3;</code>
      * @return The winNum.
      */
     int getWinNum();
 
     /**
-     * <code>uint32 like_num = 12;</code>
-     * @return The likeNum.
-     */
-    int getLikeNum();
-
-    /**
-     * <code>uint32 play_num = 7;</code>
+     * <code>uint32 play_num = 11;</code>
      * @return The playNum.
      */
     int getPlayNum();
 
     /**
-     * <code>uint32 store_num = 2;</code>
+     * <code>uint32 like_num = 15;</code>
+     * @return The likeNum.
+     */
+    int getLikeNum();
+
+    /**
+     * <code>uint32 store_num = 14;</code>
      * @return The storeNum.
      */
     int getStoreNum();
@@ -87,22 +87,22 @@ public final class CustomDungeonSocialOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
-
-              storeNum_ = input.readUInt32();
-              break;
-            }
-            case 32: {
+            case 24: {
 
               winNum_ = input.readUInt32();
               break;
             }
-            case 56: {
+            case 88: {
 
               playNum_ = input.readUInt32();
               break;
             }
-            case 96: {
+            case 112: {
+
+              storeNum_ = input.readUInt32();
+              break;
+            }
+            case 120: {
 
               likeNum_ = input.readUInt32();
               break;
@@ -139,10 +139,10 @@ public final class CustomDungeonSocialOuterClass {
               emu.grasscutter.net.proto.CustomDungeonSocialOuterClass.CustomDungeonSocial.class, emu.grasscutter.net.proto.CustomDungeonSocialOuterClass.CustomDungeonSocial.Builder.class);
     }
 
-    public static final int WIN_NUM_FIELD_NUMBER = 4;
+    public static final int WIN_NUM_FIELD_NUMBER = 3;
     private int winNum_;
     /**
-     * <code>uint32 win_num = 4;</code>
+     * <code>uint32 win_num = 3;</code>
      * @return The winNum.
      */
     @java.lang.Override
@@ -150,21 +150,10 @@ public final class CustomDungeonSocialOuterClass {
       return winNum_;
     }
 
-    public static final int LIKE_NUM_FIELD_NUMBER = 12;
-    private int likeNum_;
-    /**
-     * <code>uint32 like_num = 12;</code>
-     * @return The likeNum.
-     */
-    @java.lang.Override
-    public int getLikeNum() {
-      return likeNum_;
-    }
-
-    public static final int PLAY_NUM_FIELD_NUMBER = 7;
+    public static final int PLAY_NUM_FIELD_NUMBER = 11;
     private int playNum_;
     /**
-     * <code>uint32 play_num = 7;</code>
+     * <code>uint32 play_num = 11;</code>
      * @return The playNum.
      */
     @java.lang.Override
@@ -172,10 +161,21 @@ public final class CustomDungeonSocialOuterClass {
       return playNum_;
     }
 
-    public static final int STORE_NUM_FIELD_NUMBER = 2;
+    public static final int LIKE_NUM_FIELD_NUMBER = 15;
+    private int likeNum_;
+    /**
+     * <code>uint32 like_num = 15;</code>
+     * @return The likeNum.
+     */
+    @java.lang.Override
+    public int getLikeNum() {
+      return likeNum_;
+    }
+
+    public static final int STORE_NUM_FIELD_NUMBER = 14;
     private int storeNum_;
     /**
-     * <code>uint32 store_num = 2;</code>
+     * <code>uint32 store_num = 14;</code>
      * @return The storeNum.
      */
     @java.lang.Override
@@ -197,17 +197,17 @@ public final class CustomDungeonSocialOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (storeNum_ != 0) {
-        output.writeUInt32(2, storeNum_);
-      }
       if (winNum_ != 0) {
-        output.writeUInt32(4, winNum_);
+        output.writeUInt32(3, winNum_);
       }
       if (playNum_ != 0) {
-        output.writeUInt32(7, playNum_);
+        output.writeUInt32(11, playNum_);
+      }
+      if (storeNum_ != 0) {
+        output.writeUInt32(14, storeNum_);
       }
       if (likeNum_ != 0) {
-        output.writeUInt32(12, likeNum_);
+        output.writeUInt32(15, likeNum_);
       }
       unknownFields.writeTo(output);
     }
@@ -218,21 +218,21 @@ public final class CustomDungeonSocialOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (storeNum_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, storeNum_);
-      }
       if (winNum_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, winNum_);
+          .computeUInt32Size(3, winNum_);
       }
       if (playNum_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, playNum_);
+          .computeUInt32Size(11, playNum_);
+      }
+      if (storeNum_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(14, storeNum_);
       }
       if (likeNum_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, likeNum_);
+          .computeUInt32Size(15, likeNum_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -251,10 +251,10 @@ public final class CustomDungeonSocialOuterClass {
 
       if (getWinNum()
           != other.getWinNum()) return false;
-      if (getLikeNum()
-          != other.getLikeNum()) return false;
       if (getPlayNum()
           != other.getPlayNum()) return false;
+      if (getLikeNum()
+          != other.getLikeNum()) return false;
       if (getStoreNum()
           != other.getStoreNum()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
@@ -270,10 +270,10 @@ public final class CustomDungeonSocialOuterClass {
       hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + WIN_NUM_FIELD_NUMBER;
       hash = (53 * hash) + getWinNum();
-      hash = (37 * hash) + LIKE_NUM_FIELD_NUMBER;
-      hash = (53 * hash) + getLikeNum();
       hash = (37 * hash) + PLAY_NUM_FIELD_NUMBER;
       hash = (53 * hash) + getPlayNum();
+      hash = (37 * hash) + LIKE_NUM_FIELD_NUMBER;
+      hash = (53 * hash) + getLikeNum();
       hash = (37 * hash) + STORE_NUM_FIELD_NUMBER;
       hash = (53 * hash) + getStoreNum();
       hash = (29 * hash) + unknownFields.hashCode();
@@ -411,9 +411,9 @@ public final class CustomDungeonSocialOuterClass {
         super.clear();
         winNum_ = 0;
 
-        likeNum_ = 0;
-
         playNum_ = 0;
+
+        likeNum_ = 0;
 
         storeNum_ = 0;
 
@@ -444,8 +444,8 @@ public final class CustomDungeonSocialOuterClass {
       public emu.grasscutter.net.proto.CustomDungeonSocialOuterClass.CustomDungeonSocial buildPartial() {
         emu.grasscutter.net.proto.CustomDungeonSocialOuterClass.CustomDungeonSocial result = new emu.grasscutter.net.proto.CustomDungeonSocialOuterClass.CustomDungeonSocial(this);
         result.winNum_ = winNum_;
-        result.likeNum_ = likeNum_;
         result.playNum_ = playNum_;
+        result.likeNum_ = likeNum_;
         result.storeNum_ = storeNum_;
         onBuilt();
         return result;
@@ -498,11 +498,11 @@ public final class CustomDungeonSocialOuterClass {
         if (other.getWinNum() != 0) {
           setWinNum(other.getWinNum());
         }
-        if (other.getLikeNum() != 0) {
-          setLikeNum(other.getLikeNum());
-        }
         if (other.getPlayNum() != 0) {
           setPlayNum(other.getPlayNum());
+        }
+        if (other.getLikeNum() != 0) {
+          setLikeNum(other.getLikeNum());
         }
         if (other.getStoreNum() != 0) {
           setStoreNum(other.getStoreNum());
@@ -538,7 +538,7 @@ public final class CustomDungeonSocialOuterClass {
 
       private int winNum_ ;
       /**
-       * <code>uint32 win_num = 4;</code>
+       * <code>uint32 win_num = 3;</code>
        * @return The winNum.
        */
       @java.lang.Override
@@ -546,7 +546,7 @@ public final class CustomDungeonSocialOuterClass {
         return winNum_;
       }
       /**
-       * <code>uint32 win_num = 4;</code>
+       * <code>uint32 win_num = 3;</code>
        * @param value The winNum to set.
        * @return This builder for chaining.
        */
@@ -557,7 +557,7 @@ public final class CustomDungeonSocialOuterClass {
         return this;
       }
       /**
-       * <code>uint32 win_num = 4;</code>
+       * <code>uint32 win_num = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearWinNum() {
@@ -567,40 +567,9 @@ public final class CustomDungeonSocialOuterClass {
         return this;
       }
 
-      private int likeNum_ ;
-      /**
-       * <code>uint32 like_num = 12;</code>
-       * @return The likeNum.
-       */
-      @java.lang.Override
-      public int getLikeNum() {
-        return likeNum_;
-      }
-      /**
-       * <code>uint32 like_num = 12;</code>
-       * @param value The likeNum to set.
-       * @return This builder for chaining.
-       */
-      public Builder setLikeNum(int value) {
-        
-        likeNum_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 like_num = 12;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearLikeNum() {
-        
-        likeNum_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int playNum_ ;
       /**
-       * <code>uint32 play_num = 7;</code>
+       * <code>uint32 play_num = 11;</code>
        * @return The playNum.
        */
       @java.lang.Override
@@ -608,7 +577,7 @@ public final class CustomDungeonSocialOuterClass {
         return playNum_;
       }
       /**
-       * <code>uint32 play_num = 7;</code>
+       * <code>uint32 play_num = 11;</code>
        * @param value The playNum to set.
        * @return This builder for chaining.
        */
@@ -619,7 +588,7 @@ public final class CustomDungeonSocialOuterClass {
         return this;
       }
       /**
-       * <code>uint32 play_num = 7;</code>
+       * <code>uint32 play_num = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearPlayNum() {
@@ -629,9 +598,40 @@ public final class CustomDungeonSocialOuterClass {
         return this;
       }
 
+      private int likeNum_ ;
+      /**
+       * <code>uint32 like_num = 15;</code>
+       * @return The likeNum.
+       */
+      @java.lang.Override
+      public int getLikeNum() {
+        return likeNum_;
+      }
+      /**
+       * <code>uint32 like_num = 15;</code>
+       * @param value The likeNum to set.
+       * @return This builder for chaining.
+       */
+      public Builder setLikeNum(int value) {
+        
+        likeNum_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 like_num = 15;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearLikeNum() {
+        
+        likeNum_ = 0;
+        onChanged();
+        return this;
+      }
+
       private int storeNum_ ;
       /**
-       * <code>uint32 store_num = 2;</code>
+       * <code>uint32 store_num = 14;</code>
        * @return The storeNum.
        */
       @java.lang.Override
@@ -639,7 +639,7 @@ public final class CustomDungeonSocialOuterClass {
         return storeNum_;
       }
       /**
-       * <code>uint32 store_num = 2;</code>
+       * <code>uint32 store_num = 14;</code>
        * @param value The storeNum to set.
        * @return This builder for chaining.
        */
@@ -650,7 +650,7 @@ public final class CustomDungeonSocialOuterClass {
         return this;
       }
       /**
-       * <code>uint32 store_num = 2;</code>
+       * <code>uint32 store_num = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearStoreNum() {
@@ -727,8 +727,8 @@ public final class CustomDungeonSocialOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\031CustomDungeonSocial.proto\"]\n\023CustomDun" +
-      "geonSocial\022\017\n\007win_num\030\004 \001(\r\022\020\n\010like_num\030" +
-      "\014 \001(\r\022\020\n\010play_num\030\007 \001(\r\022\021\n\tstore_num\030\002 \001" +
+      "geonSocial\022\017\n\007win_num\030\003 \001(\r\022\020\n\010play_num\030" +
+      "\013 \001(\r\022\020\n\010like_num\030\017 \001(\r\022\021\n\tstore_num\030\016 \001" +
       "(\rB\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -740,7 +740,7 @@ public final class CustomDungeonSocialOuterClass {
     internal_static_CustomDungeonSocial_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_CustomDungeonSocial_descriptor,
-        new java.lang.String[] { "WinNum", "LikeNum", "PlayNum", "StoreNum", });
+        new java.lang.String[] { "WinNum", "PlayNum", "LikeNum", "StoreNum", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

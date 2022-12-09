@@ -19,62 +19,66 @@ public final class GetCityReputationMapInfoRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 11;</code>
+     * <code>int32 retcode = 13;</code>
      * @return The retcode.
      */
     int getRetcode();
 
     /**
-     * <code>bool is_new_hunting = 10;</code>
-     * @return The isNewHunting.
+     * <code>repeated uint32 Unk3300_DAIGHHPJHOO = 4;</code>
+     * @return A list containing the unk3300DAIGHHPJHOO.
      */
-    boolean getIsNewHunting();
-
+    java.util.List<java.lang.Integer> getUnk3300DAIGHHPJHOOList();
     /**
-     * <code>bool is_new_request = 2;</code>
-     * @return The isNewRequest.
+     * <code>repeated uint32 Unk3300_DAIGHHPJHOO = 4;</code>
+     * @return The count of unk3300DAIGHHPJHOO.
      */
-    boolean getIsNewRequest();
-
+    int getUnk3300DAIGHHPJHOOCount();
     /**
-     * <code>repeated uint32 unlock_hunting_city_list = 9;</code>
-     * @return A list containing the unlockHuntingCityList.
-     */
-    java.util.List<java.lang.Integer> getUnlockHuntingCityListList();
-    /**
-     * <code>repeated uint32 unlock_hunting_city_list = 9;</code>
-     * @return The count of unlockHuntingCityList.
-     */
-    int getUnlockHuntingCityListCount();
-    /**
-     * <code>repeated uint32 unlock_hunting_city_list = 9;</code>
+     * <code>repeated uint32 Unk3300_DAIGHHPJHOO = 4;</code>
      * @param index The index of the element to return.
-     * @return The unlockHuntingCityList at the given index.
+     * @return The unk3300DAIGHHPJHOO at the given index.
      */
-    int getUnlockHuntingCityList(int index);
+    int getUnk3300DAIGHHPJHOO(int index);
 
     /**
-     * <code>repeated uint32 reward_city_list = 3;</code>
-     * @return A list containing the rewardCityList.
+     * <code>bool Unk3300_GJFNOPNMFNG = 12;</code>
+     * @return The unk3300GJFNOPNMFNG.
      */
-    java.util.List<java.lang.Integer> getRewardCityListList();
+    boolean getUnk3300GJFNOPNMFNG();
+
     /**
-     * <code>repeated uint32 reward_city_list = 3;</code>
-     * @return The count of rewardCityList.
+     * <code>bool Unk3300_NCMHMODIIKM = 5;</code>
+     * @return The unk3300NCMHMODIIKM.
      */
-    int getRewardCityListCount();
+    boolean getUnk3300NCMHMODIIKM();
+
     /**
-     * <code>repeated uint32 reward_city_list = 3;</code>
+     * <code>repeated uint32 Unk3300_PAPBOHKOMFK = 15;</code>
+     * @return A list containing the unk3300PAPBOHKOMFK.
+     */
+    java.util.List<java.lang.Integer> getUnk3300PAPBOHKOMFKList();
+    /**
+     * <code>repeated uint32 Unk3300_PAPBOHKOMFK = 15;</code>
+     * @return The count of unk3300PAPBOHKOMFK.
+     */
+    int getUnk3300PAPBOHKOMFKCount();
+    /**
+     * <code>repeated uint32 Unk3300_PAPBOHKOMFK = 15;</code>
      * @param index The index of the element to return.
-     * @return The rewardCityList at the given index.
+     * @return The unk3300PAPBOHKOMFK at the given index.
      */
-    int getRewardCityList(int index);
+    int getUnk3300PAPBOHKOMFK(int index);
   }
   /**
    * <pre>
-   * CmdId: 2848
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 2848;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code GetCityReputationMapInfoRsp}
@@ -89,8 +93,8 @@ public final class GetCityReputationMapInfoRspOuterClass {
       super(builder);
     }
     private GetCityReputationMapInfoRsp() {
-      unlockHuntingCityList_ = emptyIntList();
-      rewardCityList_ = emptyIntList();
+      unk3300DAIGHHPJHOO_ = emptyIntList();
+      unk3300PAPBOHKOMFK_ = emptyIntList();
     }
 
     @java.lang.Override
@@ -124,61 +128,61 @@ public final class GetCityReputationMapInfoRspOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
-
-              isNewRequest_ = input.readBool();
-              break;
-            }
-            case 24: {
-              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
-                rewardCityList_ = newIntList();
-                mutable_bitField0_ |= 0x00000002;
-              }
-              rewardCityList_.addInt(input.readUInt32());
-              break;
-            }
-            case 26: {
-              int length = input.readRawVarint32();
-              int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000002) != 0) && input.getBytesUntilLimit() > 0) {
-                rewardCityList_ = newIntList();
-                mutable_bitField0_ |= 0x00000002;
-              }
-              while (input.getBytesUntilLimit() > 0) {
-                rewardCityList_.addInt(input.readUInt32());
-              }
-              input.popLimit(limit);
-              break;
-            }
-            case 72: {
+            case 32: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                unlockHuntingCityList_ = newIntList();
+                unk3300DAIGHHPJHOO_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
               }
-              unlockHuntingCityList_.addInt(input.readUInt32());
+              unk3300DAIGHHPJHOO_.addInt(input.readUInt32());
               break;
             }
-            case 74: {
+            case 34: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
-                unlockHuntingCityList_ = newIntList();
+                unk3300DAIGHHPJHOO_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
               }
               while (input.getBytesUntilLimit() > 0) {
-                unlockHuntingCityList_.addInt(input.readUInt32());
+                unk3300DAIGHHPJHOO_.addInt(input.readUInt32());
               }
               input.popLimit(limit);
               break;
             }
-            case 80: {
+            case 40: {
 
-              isNewHunting_ = input.readBool();
+              unk3300NCMHMODIIKM_ = input.readBool();
               break;
             }
-            case 88: {
+            case 96: {
+
+              unk3300GJFNOPNMFNG_ = input.readBool();
+              break;
+            }
+            case 104: {
 
               retcode_ = input.readInt32();
+              break;
+            }
+            case 120: {
+              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
+                unk3300PAPBOHKOMFK_ = newIntList();
+                mutable_bitField0_ |= 0x00000002;
+              }
+              unk3300PAPBOHKOMFK_.addInt(input.readUInt32());
+              break;
+            }
+            case 122: {
+              int length = input.readRawVarint32();
+              int limit = input.pushLimit(length);
+              if (!((mutable_bitField0_ & 0x00000002) != 0) && input.getBytesUntilLimit() > 0) {
+                unk3300PAPBOHKOMFK_ = newIntList();
+                mutable_bitField0_ |= 0x00000002;
+              }
+              while (input.getBytesUntilLimit() > 0) {
+                unk3300PAPBOHKOMFK_.addInt(input.readUInt32());
+              }
+              input.popLimit(limit);
               break;
             }
             default: {
@@ -196,11 +200,11 @@ public final class GetCityReputationMapInfoRspOuterClass {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
       } finally {
-        if (((mutable_bitField0_ & 0x00000002) != 0)) {
-          rewardCityList_.makeImmutable(); // C
-        }
         if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          unlockHuntingCityList_.makeImmutable(); // C
+          unk3300DAIGHHPJHOO_.makeImmutable(); // C
+        }
+        if (((mutable_bitField0_ & 0x00000002) != 0)) {
+          unk3300PAPBOHKOMFK_.makeImmutable(); // C
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -219,10 +223,10 @@ public final class GetCityReputationMapInfoRspOuterClass {
               emu.grasscutter.net.proto.GetCityReputationMapInfoRspOuterClass.GetCityReputationMapInfoRsp.class, emu.grasscutter.net.proto.GetCityReputationMapInfoRspOuterClass.GetCityReputationMapInfoRsp.Builder.class);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 11;
+    public static final int RETCODE_FIELD_NUMBER = 13;
     private int retcode_;
     /**
-     * <code>int32 retcode = 11;</code>
+     * <code>int32 retcode = 13;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -230,83 +234,83 @@ public final class GetCityReputationMapInfoRspOuterClass {
       return retcode_;
     }
 
-    public static final int IS_NEW_HUNTING_FIELD_NUMBER = 10;
-    private boolean isNewHunting_;
+    public static final int UNK3300_DAIGHHPJHOO_FIELD_NUMBER = 4;
+    private com.google.protobuf.Internal.IntList unk3300DAIGHHPJHOO_;
     /**
-     * <code>bool is_new_hunting = 10;</code>
-     * @return The isNewHunting.
-     */
-    @java.lang.Override
-    public boolean getIsNewHunting() {
-      return isNewHunting_;
-    }
-
-    public static final int IS_NEW_REQUEST_FIELD_NUMBER = 2;
-    private boolean isNewRequest_;
-    /**
-     * <code>bool is_new_request = 2;</code>
-     * @return The isNewRequest.
-     */
-    @java.lang.Override
-    public boolean getIsNewRequest() {
-      return isNewRequest_;
-    }
-
-    public static final int UNLOCK_HUNTING_CITY_LIST_FIELD_NUMBER = 9;
-    private com.google.protobuf.Internal.IntList unlockHuntingCityList_;
-    /**
-     * <code>repeated uint32 unlock_hunting_city_list = 9;</code>
-     * @return A list containing the unlockHuntingCityList.
+     * <code>repeated uint32 Unk3300_DAIGHHPJHOO = 4;</code>
+     * @return A list containing the unk3300DAIGHHPJHOO.
      */
     @java.lang.Override
     public java.util.List<java.lang.Integer>
-        getUnlockHuntingCityListList() {
-      return unlockHuntingCityList_;
+        getUnk3300DAIGHHPJHOOList() {
+      return unk3300DAIGHHPJHOO_;
     }
     /**
-     * <code>repeated uint32 unlock_hunting_city_list = 9;</code>
-     * @return The count of unlockHuntingCityList.
+     * <code>repeated uint32 Unk3300_DAIGHHPJHOO = 4;</code>
+     * @return The count of unk3300DAIGHHPJHOO.
      */
-    public int getUnlockHuntingCityListCount() {
-      return unlockHuntingCityList_.size();
+    public int getUnk3300DAIGHHPJHOOCount() {
+      return unk3300DAIGHHPJHOO_.size();
     }
     /**
-     * <code>repeated uint32 unlock_hunting_city_list = 9;</code>
+     * <code>repeated uint32 Unk3300_DAIGHHPJHOO = 4;</code>
      * @param index The index of the element to return.
-     * @return The unlockHuntingCityList at the given index.
+     * @return The unk3300DAIGHHPJHOO at the given index.
      */
-    public int getUnlockHuntingCityList(int index) {
-      return unlockHuntingCityList_.getInt(index);
+    public int getUnk3300DAIGHHPJHOO(int index) {
+      return unk3300DAIGHHPJHOO_.getInt(index);
     }
-    private int unlockHuntingCityListMemoizedSerializedSize = -1;
+    private int unk3300DAIGHHPJHOOMemoizedSerializedSize = -1;
 
-    public static final int REWARD_CITY_LIST_FIELD_NUMBER = 3;
-    private com.google.protobuf.Internal.IntList rewardCityList_;
+    public static final int UNK3300_GJFNOPNMFNG_FIELD_NUMBER = 12;
+    private boolean unk3300GJFNOPNMFNG_;
     /**
-     * <code>repeated uint32 reward_city_list = 3;</code>
-     * @return A list containing the rewardCityList.
+     * <code>bool Unk3300_GJFNOPNMFNG = 12;</code>
+     * @return The unk3300GJFNOPNMFNG.
+     */
+    @java.lang.Override
+    public boolean getUnk3300GJFNOPNMFNG() {
+      return unk3300GJFNOPNMFNG_;
+    }
+
+    public static final int UNK3300_NCMHMODIIKM_FIELD_NUMBER = 5;
+    private boolean unk3300NCMHMODIIKM_;
+    /**
+     * <code>bool Unk3300_NCMHMODIIKM = 5;</code>
+     * @return The unk3300NCMHMODIIKM.
+     */
+    @java.lang.Override
+    public boolean getUnk3300NCMHMODIIKM() {
+      return unk3300NCMHMODIIKM_;
+    }
+
+    public static final int UNK3300_PAPBOHKOMFK_FIELD_NUMBER = 15;
+    private com.google.protobuf.Internal.IntList unk3300PAPBOHKOMFK_;
+    /**
+     * <code>repeated uint32 Unk3300_PAPBOHKOMFK = 15;</code>
+     * @return A list containing the unk3300PAPBOHKOMFK.
      */
     @java.lang.Override
     public java.util.List<java.lang.Integer>
-        getRewardCityListList() {
-      return rewardCityList_;
+        getUnk3300PAPBOHKOMFKList() {
+      return unk3300PAPBOHKOMFK_;
     }
     /**
-     * <code>repeated uint32 reward_city_list = 3;</code>
-     * @return The count of rewardCityList.
+     * <code>repeated uint32 Unk3300_PAPBOHKOMFK = 15;</code>
+     * @return The count of unk3300PAPBOHKOMFK.
      */
-    public int getRewardCityListCount() {
-      return rewardCityList_.size();
+    public int getUnk3300PAPBOHKOMFKCount() {
+      return unk3300PAPBOHKOMFK_.size();
     }
     /**
-     * <code>repeated uint32 reward_city_list = 3;</code>
+     * <code>repeated uint32 Unk3300_PAPBOHKOMFK = 15;</code>
      * @param index The index of the element to return.
-     * @return The rewardCityList at the given index.
+     * @return The unk3300PAPBOHKOMFK at the given index.
      */
-    public int getRewardCityList(int index) {
-      return rewardCityList_.getInt(index);
+    public int getUnk3300PAPBOHKOMFK(int index) {
+      return unk3300PAPBOHKOMFK_.getInt(index);
     }
-    private int rewardCityListMemoizedSerializedSize = -1;
+    private int unk3300PAPBOHKOMFKMemoizedSerializedSize = -1;
 
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
@@ -323,28 +327,28 @@ public final class GetCityReputationMapInfoRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      if (isNewRequest_ != false) {
-        output.writeBool(2, isNewRequest_);
+      if (getUnk3300DAIGHHPJHOOList().size() > 0) {
+        output.writeUInt32NoTag(34);
+        output.writeUInt32NoTag(unk3300DAIGHHPJHOOMemoizedSerializedSize);
       }
-      if (getRewardCityListList().size() > 0) {
-        output.writeUInt32NoTag(26);
-        output.writeUInt32NoTag(rewardCityListMemoizedSerializedSize);
+      for (int i = 0; i < unk3300DAIGHHPJHOO_.size(); i++) {
+        output.writeUInt32NoTag(unk3300DAIGHHPJHOO_.getInt(i));
       }
-      for (int i = 0; i < rewardCityList_.size(); i++) {
-        output.writeUInt32NoTag(rewardCityList_.getInt(i));
+      if (unk3300NCMHMODIIKM_ != false) {
+        output.writeBool(5, unk3300NCMHMODIIKM_);
       }
-      if (getUnlockHuntingCityListList().size() > 0) {
-        output.writeUInt32NoTag(74);
-        output.writeUInt32NoTag(unlockHuntingCityListMemoizedSerializedSize);
-      }
-      for (int i = 0; i < unlockHuntingCityList_.size(); i++) {
-        output.writeUInt32NoTag(unlockHuntingCityList_.getInt(i));
-      }
-      if (isNewHunting_ != false) {
-        output.writeBool(10, isNewHunting_);
+      if (unk3300GJFNOPNMFNG_ != false) {
+        output.writeBool(12, unk3300GJFNOPNMFNG_);
       }
       if (retcode_ != 0) {
-        output.writeInt32(11, retcode_);
+        output.writeInt32(13, retcode_);
+      }
+      if (getUnk3300PAPBOHKOMFKList().size() > 0) {
+        output.writeUInt32NoTag(122);
+        output.writeUInt32NoTag(unk3300PAPBOHKOMFKMemoizedSerializedSize);
+      }
+      for (int i = 0; i < unk3300PAPBOHKOMFK_.size(); i++) {
+        output.writeUInt32NoTag(unk3300PAPBOHKOMFK_.getInt(i));
       }
       unknownFields.writeTo(output);
     }
@@ -355,45 +359,45 @@ public final class GetCityReputationMapInfoRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (isNewRequest_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(2, isNewRequest_);
-      }
       {
         int dataSize = 0;
-        for (int i = 0; i < rewardCityList_.size(); i++) {
+        for (int i = 0; i < unk3300DAIGHHPJHOO_.size(); i++) {
           dataSize += com.google.protobuf.CodedOutputStream
-            .computeUInt32SizeNoTag(rewardCityList_.getInt(i));
+            .computeUInt32SizeNoTag(unk3300DAIGHHPJHOO_.getInt(i));
         }
         size += dataSize;
-        if (!getRewardCityListList().isEmpty()) {
+        if (!getUnk3300DAIGHHPJHOOList().isEmpty()) {
           size += 1;
           size += com.google.protobuf.CodedOutputStream
               .computeInt32SizeNoTag(dataSize);
         }
-        rewardCityListMemoizedSerializedSize = dataSize;
+        unk3300DAIGHHPJHOOMemoizedSerializedSize = dataSize;
       }
-      {
-        int dataSize = 0;
-        for (int i = 0; i < unlockHuntingCityList_.size(); i++) {
-          dataSize += com.google.protobuf.CodedOutputStream
-            .computeUInt32SizeNoTag(unlockHuntingCityList_.getInt(i));
-        }
-        size += dataSize;
-        if (!getUnlockHuntingCityListList().isEmpty()) {
-          size += 1;
-          size += com.google.protobuf.CodedOutputStream
-              .computeInt32SizeNoTag(dataSize);
-        }
-        unlockHuntingCityListMemoizedSerializedSize = dataSize;
-      }
-      if (isNewHunting_ != false) {
+      if (unk3300NCMHMODIIKM_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(10, isNewHunting_);
+          .computeBoolSize(5, unk3300NCMHMODIIKM_);
+      }
+      if (unk3300GJFNOPNMFNG_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(12, unk3300GJFNOPNMFNG_);
       }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(11, retcode_);
+          .computeInt32Size(13, retcode_);
+      }
+      {
+        int dataSize = 0;
+        for (int i = 0; i < unk3300PAPBOHKOMFK_.size(); i++) {
+          dataSize += com.google.protobuf.CodedOutputStream
+            .computeUInt32SizeNoTag(unk3300PAPBOHKOMFK_.getInt(i));
+        }
+        size += dataSize;
+        if (!getUnk3300PAPBOHKOMFKList().isEmpty()) {
+          size += 1;
+          size += com.google.protobuf.CodedOutputStream
+              .computeInt32SizeNoTag(dataSize);
+        }
+        unk3300PAPBOHKOMFKMemoizedSerializedSize = dataSize;
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -412,14 +416,14 @@ public final class GetCityReputationMapInfoRspOuterClass {
 
       if (getRetcode()
           != other.getRetcode()) return false;
-      if (getIsNewHunting()
-          != other.getIsNewHunting()) return false;
-      if (getIsNewRequest()
-          != other.getIsNewRequest()) return false;
-      if (!getUnlockHuntingCityListList()
-          .equals(other.getUnlockHuntingCityListList())) return false;
-      if (!getRewardCityListList()
-          .equals(other.getRewardCityListList())) return false;
+      if (!getUnk3300DAIGHHPJHOOList()
+          .equals(other.getUnk3300DAIGHHPJHOOList())) return false;
+      if (getUnk3300GJFNOPNMFNG()
+          != other.getUnk3300GJFNOPNMFNG()) return false;
+      if (getUnk3300NCMHMODIIKM()
+          != other.getUnk3300NCMHMODIIKM()) return false;
+      if (!getUnk3300PAPBOHKOMFKList()
+          .equals(other.getUnk3300PAPBOHKOMFKList())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -433,19 +437,19 @@ public final class GetCityReputationMapInfoRspOuterClass {
       hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + RETCODE_FIELD_NUMBER;
       hash = (53 * hash) + getRetcode();
-      hash = (37 * hash) + IS_NEW_HUNTING_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsNewHunting());
-      hash = (37 * hash) + IS_NEW_REQUEST_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsNewRequest());
-      if (getUnlockHuntingCityListCount() > 0) {
-        hash = (37 * hash) + UNLOCK_HUNTING_CITY_LIST_FIELD_NUMBER;
-        hash = (53 * hash) + getUnlockHuntingCityListList().hashCode();
+      if (getUnk3300DAIGHHPJHOOCount() > 0) {
+        hash = (37 * hash) + UNK3300_DAIGHHPJHOO_FIELD_NUMBER;
+        hash = (53 * hash) + getUnk3300DAIGHHPJHOOList().hashCode();
       }
-      if (getRewardCityListCount() > 0) {
-        hash = (37 * hash) + REWARD_CITY_LIST_FIELD_NUMBER;
-        hash = (53 * hash) + getRewardCityListList().hashCode();
+      hash = (37 * hash) + UNK3300_GJFNOPNMFNG_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getUnk3300GJFNOPNMFNG());
+      hash = (37 * hash) + UNK3300_NCMHMODIIKM_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getUnk3300NCMHMODIIKM());
+      if (getUnk3300PAPBOHKOMFKCount() > 0) {
+        hash = (37 * hash) + UNK3300_PAPBOHKOMFK_FIELD_NUMBER;
+        hash = (53 * hash) + getUnk3300PAPBOHKOMFKList().hashCode();
       }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
@@ -544,9 +548,13 @@ public final class GetCityReputationMapInfoRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 2848
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 2848;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code GetCityReputationMapInfoRsp}
@@ -588,13 +596,13 @@ public final class GetCityReputationMapInfoRspOuterClass {
         super.clear();
         retcode_ = 0;
 
-        isNewHunting_ = false;
-
-        isNewRequest_ = false;
-
-        unlockHuntingCityList_ = emptyIntList();
+        unk3300DAIGHHPJHOO_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
-        rewardCityList_ = emptyIntList();
+        unk3300GJFNOPNMFNG_ = false;
+
+        unk3300NCMHMODIIKM_ = false;
+
+        unk3300PAPBOHKOMFK_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000002);
         return this;
       }
@@ -624,18 +632,18 @@ public final class GetCityReputationMapInfoRspOuterClass {
         emu.grasscutter.net.proto.GetCityReputationMapInfoRspOuterClass.GetCityReputationMapInfoRsp result = new emu.grasscutter.net.proto.GetCityReputationMapInfoRspOuterClass.GetCityReputationMapInfoRsp(this);
         int from_bitField0_ = bitField0_;
         result.retcode_ = retcode_;
-        result.isNewHunting_ = isNewHunting_;
-        result.isNewRequest_ = isNewRequest_;
         if (((bitField0_ & 0x00000001) != 0)) {
-          unlockHuntingCityList_.makeImmutable();
+          unk3300DAIGHHPJHOO_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000001);
         }
-        result.unlockHuntingCityList_ = unlockHuntingCityList_;
+        result.unk3300DAIGHHPJHOO_ = unk3300DAIGHHPJHOO_;
+        result.unk3300GJFNOPNMFNG_ = unk3300GJFNOPNMFNG_;
+        result.unk3300NCMHMODIIKM_ = unk3300NCMHMODIIKM_;
         if (((bitField0_ & 0x00000002) != 0)) {
-          rewardCityList_.makeImmutable();
+          unk3300PAPBOHKOMFK_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000002);
         }
-        result.rewardCityList_ = rewardCityList_;
+        result.unk3300PAPBOHKOMFK_ = unk3300PAPBOHKOMFK_;
         onBuilt();
         return result;
       }
@@ -687,29 +695,29 @@ public final class GetCityReputationMapInfoRspOuterClass {
         if (other.getRetcode() != 0) {
           setRetcode(other.getRetcode());
         }
-        if (other.getIsNewHunting() != false) {
-          setIsNewHunting(other.getIsNewHunting());
-        }
-        if (other.getIsNewRequest() != false) {
-          setIsNewRequest(other.getIsNewRequest());
-        }
-        if (!other.unlockHuntingCityList_.isEmpty()) {
-          if (unlockHuntingCityList_.isEmpty()) {
-            unlockHuntingCityList_ = other.unlockHuntingCityList_;
+        if (!other.unk3300DAIGHHPJHOO_.isEmpty()) {
+          if (unk3300DAIGHHPJHOO_.isEmpty()) {
+            unk3300DAIGHHPJHOO_ = other.unk3300DAIGHHPJHOO_;
             bitField0_ = (bitField0_ & ~0x00000001);
           } else {
-            ensureUnlockHuntingCityListIsMutable();
-            unlockHuntingCityList_.addAll(other.unlockHuntingCityList_);
+            ensureUnk3300DAIGHHPJHOOIsMutable();
+            unk3300DAIGHHPJHOO_.addAll(other.unk3300DAIGHHPJHOO_);
           }
           onChanged();
         }
-        if (!other.rewardCityList_.isEmpty()) {
-          if (rewardCityList_.isEmpty()) {
-            rewardCityList_ = other.rewardCityList_;
+        if (other.getUnk3300GJFNOPNMFNG() != false) {
+          setUnk3300GJFNOPNMFNG(other.getUnk3300GJFNOPNMFNG());
+        }
+        if (other.getUnk3300NCMHMODIIKM() != false) {
+          setUnk3300NCMHMODIIKM(other.getUnk3300NCMHMODIIKM());
+        }
+        if (!other.unk3300PAPBOHKOMFK_.isEmpty()) {
+          if (unk3300PAPBOHKOMFK_.isEmpty()) {
+            unk3300PAPBOHKOMFK_ = other.unk3300PAPBOHKOMFK_;
             bitField0_ = (bitField0_ & ~0x00000002);
           } else {
-            ensureRewardCityListIsMutable();
-            rewardCityList_.addAll(other.rewardCityList_);
+            ensureUnk3300PAPBOHKOMFKIsMutable();
+            unk3300PAPBOHKOMFK_.addAll(other.unk3300PAPBOHKOMFK_);
           }
           onChanged();
         }
@@ -745,7 +753,7 @@ public final class GetCityReputationMapInfoRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 11;</code>
+       * <code>int32 retcode = 13;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -753,7 +761,7 @@ public final class GetCityReputationMapInfoRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 11;</code>
+       * <code>int32 retcode = 13;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -764,7 +772,7 @@ public final class GetCityReputationMapInfoRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 11;</code>
+       * <code>int32 retcode = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -774,221 +782,221 @@ public final class GetCityReputationMapInfoRspOuterClass {
         return this;
       }
 
-      private boolean isNewHunting_ ;
-      /**
-       * <code>bool is_new_hunting = 10;</code>
-       * @return The isNewHunting.
-       */
-      @java.lang.Override
-      public boolean getIsNewHunting() {
-        return isNewHunting_;
-      }
-      /**
-       * <code>bool is_new_hunting = 10;</code>
-       * @param value The isNewHunting to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsNewHunting(boolean value) {
-        
-        isNewHunting_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_new_hunting = 10;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsNewHunting() {
-        
-        isNewHunting_ = false;
-        onChanged();
-        return this;
-      }
-
-      private boolean isNewRequest_ ;
-      /**
-       * <code>bool is_new_request = 2;</code>
-       * @return The isNewRequest.
-       */
-      @java.lang.Override
-      public boolean getIsNewRequest() {
-        return isNewRequest_;
-      }
-      /**
-       * <code>bool is_new_request = 2;</code>
-       * @param value The isNewRequest to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsNewRequest(boolean value) {
-        
-        isNewRequest_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_new_request = 2;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsNewRequest() {
-        
-        isNewRequest_ = false;
-        onChanged();
-        return this;
-      }
-
-      private com.google.protobuf.Internal.IntList unlockHuntingCityList_ = emptyIntList();
-      private void ensureUnlockHuntingCityListIsMutable() {
+      private com.google.protobuf.Internal.IntList unk3300DAIGHHPJHOO_ = emptyIntList();
+      private void ensureUnk3300DAIGHHPJHOOIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          unlockHuntingCityList_ = mutableCopy(unlockHuntingCityList_);
+          unk3300DAIGHHPJHOO_ = mutableCopy(unk3300DAIGHHPJHOO_);
           bitField0_ |= 0x00000001;
          }
       }
       /**
-       * <code>repeated uint32 unlock_hunting_city_list = 9;</code>
-       * @return A list containing the unlockHuntingCityList.
+       * <code>repeated uint32 Unk3300_DAIGHHPJHOO = 4;</code>
+       * @return A list containing the unk3300DAIGHHPJHOO.
        */
       public java.util.List<java.lang.Integer>
-          getUnlockHuntingCityListList() {
+          getUnk3300DAIGHHPJHOOList() {
         return ((bitField0_ & 0x00000001) != 0) ?
-                 java.util.Collections.unmodifiableList(unlockHuntingCityList_) : unlockHuntingCityList_;
+                 java.util.Collections.unmodifiableList(unk3300DAIGHHPJHOO_) : unk3300DAIGHHPJHOO_;
       }
       /**
-       * <code>repeated uint32 unlock_hunting_city_list = 9;</code>
-       * @return The count of unlockHuntingCityList.
+       * <code>repeated uint32 Unk3300_DAIGHHPJHOO = 4;</code>
+       * @return The count of unk3300DAIGHHPJHOO.
        */
-      public int getUnlockHuntingCityListCount() {
-        return unlockHuntingCityList_.size();
+      public int getUnk3300DAIGHHPJHOOCount() {
+        return unk3300DAIGHHPJHOO_.size();
       }
       /**
-       * <code>repeated uint32 unlock_hunting_city_list = 9;</code>
+       * <code>repeated uint32 Unk3300_DAIGHHPJHOO = 4;</code>
        * @param index The index of the element to return.
-       * @return The unlockHuntingCityList at the given index.
+       * @return The unk3300DAIGHHPJHOO at the given index.
        */
-      public int getUnlockHuntingCityList(int index) {
-        return unlockHuntingCityList_.getInt(index);
+      public int getUnk3300DAIGHHPJHOO(int index) {
+        return unk3300DAIGHHPJHOO_.getInt(index);
       }
       /**
-       * <code>repeated uint32 unlock_hunting_city_list = 9;</code>
+       * <code>repeated uint32 Unk3300_DAIGHHPJHOO = 4;</code>
        * @param index The index to set the value at.
-       * @param value The unlockHuntingCityList to set.
+       * @param value The unk3300DAIGHHPJHOO to set.
        * @return This builder for chaining.
        */
-      public Builder setUnlockHuntingCityList(
+      public Builder setUnk3300DAIGHHPJHOO(
           int index, int value) {
-        ensureUnlockHuntingCityListIsMutable();
-        unlockHuntingCityList_.setInt(index, value);
+        ensureUnk3300DAIGHHPJHOOIsMutable();
+        unk3300DAIGHHPJHOO_.setInt(index, value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 unlock_hunting_city_list = 9;</code>
-       * @param value The unlockHuntingCityList to add.
+       * <code>repeated uint32 Unk3300_DAIGHHPJHOO = 4;</code>
+       * @param value The unk3300DAIGHHPJHOO to add.
        * @return This builder for chaining.
        */
-      public Builder addUnlockHuntingCityList(int value) {
-        ensureUnlockHuntingCityListIsMutable();
-        unlockHuntingCityList_.addInt(value);
+      public Builder addUnk3300DAIGHHPJHOO(int value) {
+        ensureUnk3300DAIGHHPJHOOIsMutable();
+        unk3300DAIGHHPJHOO_.addInt(value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 unlock_hunting_city_list = 9;</code>
-       * @param values The unlockHuntingCityList to add.
+       * <code>repeated uint32 Unk3300_DAIGHHPJHOO = 4;</code>
+       * @param values The unk3300DAIGHHPJHOO to add.
        * @return This builder for chaining.
        */
-      public Builder addAllUnlockHuntingCityList(
+      public Builder addAllUnk3300DAIGHHPJHOO(
           java.lang.Iterable<? extends java.lang.Integer> values) {
-        ensureUnlockHuntingCityListIsMutable();
+        ensureUnk3300DAIGHHPJHOOIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, unlockHuntingCityList_);
+            values, unk3300DAIGHHPJHOO_);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 unlock_hunting_city_list = 9;</code>
+       * <code>repeated uint32 Unk3300_DAIGHHPJHOO = 4;</code>
        * @return This builder for chaining.
        */
-      public Builder clearUnlockHuntingCityList() {
-        unlockHuntingCityList_ = emptyIntList();
+      public Builder clearUnk3300DAIGHHPJHOO() {
+        unk3300DAIGHHPJHOO_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
         onChanged();
         return this;
       }
 
-      private com.google.protobuf.Internal.IntList rewardCityList_ = emptyIntList();
-      private void ensureRewardCityListIsMutable() {
+      private boolean unk3300GJFNOPNMFNG_ ;
+      /**
+       * <code>bool Unk3300_GJFNOPNMFNG = 12;</code>
+       * @return The unk3300GJFNOPNMFNG.
+       */
+      @java.lang.Override
+      public boolean getUnk3300GJFNOPNMFNG() {
+        return unk3300GJFNOPNMFNG_;
+      }
+      /**
+       * <code>bool Unk3300_GJFNOPNMFNG = 12;</code>
+       * @param value The unk3300GJFNOPNMFNG to set.
+       * @return This builder for chaining.
+       */
+      public Builder setUnk3300GJFNOPNMFNG(boolean value) {
+        
+        unk3300GJFNOPNMFNG_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool Unk3300_GJFNOPNMFNG = 12;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearUnk3300GJFNOPNMFNG() {
+        
+        unk3300GJFNOPNMFNG_ = false;
+        onChanged();
+        return this;
+      }
+
+      private boolean unk3300NCMHMODIIKM_ ;
+      /**
+       * <code>bool Unk3300_NCMHMODIIKM = 5;</code>
+       * @return The unk3300NCMHMODIIKM.
+       */
+      @java.lang.Override
+      public boolean getUnk3300NCMHMODIIKM() {
+        return unk3300NCMHMODIIKM_;
+      }
+      /**
+       * <code>bool Unk3300_NCMHMODIIKM = 5;</code>
+       * @param value The unk3300NCMHMODIIKM to set.
+       * @return This builder for chaining.
+       */
+      public Builder setUnk3300NCMHMODIIKM(boolean value) {
+        
+        unk3300NCMHMODIIKM_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool Unk3300_NCMHMODIIKM = 5;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearUnk3300NCMHMODIIKM() {
+        
+        unk3300NCMHMODIIKM_ = false;
+        onChanged();
+        return this;
+      }
+
+      private com.google.protobuf.Internal.IntList unk3300PAPBOHKOMFK_ = emptyIntList();
+      private void ensureUnk3300PAPBOHKOMFKIsMutable() {
         if (!((bitField0_ & 0x00000002) != 0)) {
-          rewardCityList_ = mutableCopy(rewardCityList_);
+          unk3300PAPBOHKOMFK_ = mutableCopy(unk3300PAPBOHKOMFK_);
           bitField0_ |= 0x00000002;
          }
       }
       /**
-       * <code>repeated uint32 reward_city_list = 3;</code>
-       * @return A list containing the rewardCityList.
+       * <code>repeated uint32 Unk3300_PAPBOHKOMFK = 15;</code>
+       * @return A list containing the unk3300PAPBOHKOMFK.
        */
       public java.util.List<java.lang.Integer>
-          getRewardCityListList() {
+          getUnk3300PAPBOHKOMFKList() {
         return ((bitField0_ & 0x00000002) != 0) ?
-                 java.util.Collections.unmodifiableList(rewardCityList_) : rewardCityList_;
+                 java.util.Collections.unmodifiableList(unk3300PAPBOHKOMFK_) : unk3300PAPBOHKOMFK_;
       }
       /**
-       * <code>repeated uint32 reward_city_list = 3;</code>
-       * @return The count of rewardCityList.
+       * <code>repeated uint32 Unk3300_PAPBOHKOMFK = 15;</code>
+       * @return The count of unk3300PAPBOHKOMFK.
        */
-      public int getRewardCityListCount() {
-        return rewardCityList_.size();
+      public int getUnk3300PAPBOHKOMFKCount() {
+        return unk3300PAPBOHKOMFK_.size();
       }
       /**
-       * <code>repeated uint32 reward_city_list = 3;</code>
+       * <code>repeated uint32 Unk3300_PAPBOHKOMFK = 15;</code>
        * @param index The index of the element to return.
-       * @return The rewardCityList at the given index.
+       * @return The unk3300PAPBOHKOMFK at the given index.
        */
-      public int getRewardCityList(int index) {
-        return rewardCityList_.getInt(index);
+      public int getUnk3300PAPBOHKOMFK(int index) {
+        return unk3300PAPBOHKOMFK_.getInt(index);
       }
       /**
-       * <code>repeated uint32 reward_city_list = 3;</code>
+       * <code>repeated uint32 Unk3300_PAPBOHKOMFK = 15;</code>
        * @param index The index to set the value at.
-       * @param value The rewardCityList to set.
+       * @param value The unk3300PAPBOHKOMFK to set.
        * @return This builder for chaining.
        */
-      public Builder setRewardCityList(
+      public Builder setUnk3300PAPBOHKOMFK(
           int index, int value) {
-        ensureRewardCityListIsMutable();
-        rewardCityList_.setInt(index, value);
+        ensureUnk3300PAPBOHKOMFKIsMutable();
+        unk3300PAPBOHKOMFK_.setInt(index, value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 reward_city_list = 3;</code>
-       * @param value The rewardCityList to add.
+       * <code>repeated uint32 Unk3300_PAPBOHKOMFK = 15;</code>
+       * @param value The unk3300PAPBOHKOMFK to add.
        * @return This builder for chaining.
        */
-      public Builder addRewardCityList(int value) {
-        ensureRewardCityListIsMutable();
-        rewardCityList_.addInt(value);
+      public Builder addUnk3300PAPBOHKOMFK(int value) {
+        ensureUnk3300PAPBOHKOMFKIsMutable();
+        unk3300PAPBOHKOMFK_.addInt(value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 reward_city_list = 3;</code>
-       * @param values The rewardCityList to add.
+       * <code>repeated uint32 Unk3300_PAPBOHKOMFK = 15;</code>
+       * @param values The unk3300PAPBOHKOMFK to add.
        * @return This builder for chaining.
        */
-      public Builder addAllRewardCityList(
+      public Builder addAllUnk3300PAPBOHKOMFK(
           java.lang.Iterable<? extends java.lang.Integer> values) {
-        ensureRewardCityListIsMutable();
+        ensureUnk3300PAPBOHKOMFKIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, rewardCityList_);
+            values, unk3300PAPBOHKOMFK_);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 reward_city_list = 3;</code>
+       * <code>repeated uint32 Unk3300_PAPBOHKOMFK = 15;</code>
        * @return This builder for chaining.
        */
-      public Builder clearRewardCityList() {
-        rewardCityList_ = emptyIntList();
+      public Builder clearUnk3300PAPBOHKOMFK() {
+        unk3300PAPBOHKOMFK_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000002);
         onChanged();
         return this;
@@ -1060,12 +1068,12 @@ public final class GetCityReputationMapInfoRspOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n!GetCityReputationMapInfoRsp.proto\"\232\001\n\033" +
-      "GetCityReputationMapInfoRsp\022\017\n\007retcode\030\013" +
-      " \001(\005\022\026\n\016is_new_hunting\030\n \001(\010\022\026\n\016is_new_r" +
-      "equest\030\002 \001(\010\022 \n\030unlock_hunting_city_list" +
-      "\030\t \003(\r\022\030\n\020reward_city_list\030\003 \003(\rB\033\n\031emu." +
-      "grasscutter.net.protob\006proto3"
+      "\n!GetCityReputationMapInfoRsp.proto\"\242\001\n\033" +
+      "GetCityReputationMapInfoRsp\022\017\n\007retcode\030\r" +
+      " \001(\005\022\033\n\023Unk3300_DAIGHHPJHOO\030\004 \003(\r\022\033\n\023Unk" +
+      "3300_GJFNOPNMFNG\030\014 \001(\010\022\033\n\023Unk3300_NCMHMO" +
+      "DIIKM\030\005 \001(\010\022\033\n\023Unk3300_PAPBOHKOMFK\030\017 \003(\r" +
+      "B\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -1076,7 +1084,7 @@ public final class GetCityReputationMapInfoRspOuterClass {
     internal_static_GetCityReputationMapInfoRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GetCityReputationMapInfoRsp_descriptor,
-        new java.lang.String[] { "Retcode", "IsNewHunting", "IsNewRequest", "UnlockHuntingCityList", "RewardCityList", });
+        new java.lang.String[] { "Retcode", "Unk3300DAIGHHPJHOO", "Unk3300GJFNOPNMFNG", "Unk3300NCMHMODIIKM", "Unk3300PAPBOHKOMFK", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

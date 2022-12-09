@@ -19,53 +19,57 @@ public final class RogueDiaryTiredAvatarNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .RogueDiaryAvatar optianal_tired_avatar_list = 10;</code>
+     * <code>uint32 Unk3300_DMEMBBPEIGK = 1;</code>
+     * @return The unk3300DMEMBBPEIGK.
      */
-    java.util.List<emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatar> 
-        getOptianalTiredAvatarListList();
-    /**
-     * <code>repeated .RogueDiaryAvatar optianal_tired_avatar_list = 10;</code>
-     */
-    emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatar getOptianalTiredAvatarList(int index);
-    /**
-     * <code>repeated .RogueDiaryAvatar optianal_tired_avatar_list = 10;</code>
-     */
-    int getOptianalTiredAvatarListCount();
-    /**
-     * <code>repeated .RogueDiaryAvatar optianal_tired_avatar_list = 10;</code>
-     */
-    java.util.List<? extends emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatarOrBuilder> 
-        getOptianalTiredAvatarListOrBuilderList();
-    /**
-     * <code>repeated .RogueDiaryAvatar optianal_tired_avatar_list = 10;</code>
-     */
-    emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatarOrBuilder getOptianalTiredAvatarListOrBuilder(
-        int index);
+    int getUnk3300DMEMBBPEIGK();
 
     /**
-     * <code>uint32 reserve_avatar_num = 6;</code>
-     * @return The reserveAvatarNum.
+     * <code>uint32 Unk3300_BGEJGLBMFII = 14;</code>
+     * @return The unk3300BGEJGLBMFII.
      */
-    int getReserveAvatarNum();
+    int getUnk3300BGEJGLBMFII();
 
     /**
-     * <code>uint32 tired_type = 8;</code>
-     * @return The tiredType.
-     */
-    int getTiredType();
-
-    /**
-     * <code>bool is_need_show = 7;</code>
+     * <code>bool is_need_show = 11;</code>
      * @return The isNeedShow.
      */
     boolean getIsNeedShow();
+
+    /**
+     * <code>repeated .RogueDiaryAvatar optional_tired_avatar_list = 5;</code>
+     */
+    java.util.List<emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatar> 
+        getOptionalTiredAvatarListList();
+    /**
+     * <code>repeated .RogueDiaryAvatar optional_tired_avatar_list = 5;</code>
+     */
+    emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatar getOptionalTiredAvatarList(int index);
+    /**
+     * <code>repeated .RogueDiaryAvatar optional_tired_avatar_list = 5;</code>
+     */
+    int getOptionalTiredAvatarListCount();
+    /**
+     * <code>repeated .RogueDiaryAvatar optional_tired_avatar_list = 5;</code>
+     */
+    java.util.List<? extends emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatarOrBuilder> 
+        getOptionalTiredAvatarListOrBuilderList();
+    /**
+     * <code>repeated .RogueDiaryAvatar optional_tired_avatar_list = 5;</code>
+     */
+    emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatarOrBuilder getOptionalTiredAvatarListOrBuilder(
+        int index);
   }
   /**
    * <pre>
-   * CmdId: 8514
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 8660;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code RogueDiaryTiredAvatarNotify}
@@ -80,7 +84,7 @@ public final class RogueDiaryTiredAvatarNotifyOuterClass {
       super(builder);
     }
     private RogueDiaryTiredAvatarNotify() {
-      optianalTiredAvatarList_ = java.util.Collections.emptyList();
+      optionalTiredAvatarList_ = java.util.Collections.emptyList();
     }
 
     @java.lang.Override
@@ -114,28 +118,28 @@ public final class RogueDiaryTiredAvatarNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 48: {
+            case 8: {
 
-              reserveAvatarNum_ = input.readUInt32();
+              unk3300DMEMBBPEIGK_ = input.readUInt32();
               break;
             }
-            case 56: {
+            case 42: {
+              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+                optionalTiredAvatarList_ = new java.util.ArrayList<emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatar>();
+                mutable_bitField0_ |= 0x00000001;
+              }
+              optionalTiredAvatarList_.add(
+                  input.readMessage(emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatar.parser(), extensionRegistry));
+              break;
+            }
+            case 88: {
 
               isNeedShow_ = input.readBool();
               break;
             }
-            case 64: {
+            case 112: {
 
-              tiredType_ = input.readUInt32();
-              break;
-            }
-            case 82: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                optianalTiredAvatarList_ = new java.util.ArrayList<emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatar>();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              optianalTiredAvatarList_.add(
-                  input.readMessage(emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatar.parser(), extensionRegistry));
+              unk3300BGEJGLBMFII_ = input.readUInt32();
               break;
             }
             default: {
@@ -154,7 +158,7 @@ public final class RogueDiaryTiredAvatarNotifyOuterClass {
             e).setUnfinishedMessage(this);
       } finally {
         if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          optianalTiredAvatarList_ = java.util.Collections.unmodifiableList(optianalTiredAvatarList_);
+          optionalTiredAvatarList_ = java.util.Collections.unmodifiableList(optionalTiredAvatarList_);
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -173,77 +177,77 @@ public final class RogueDiaryTiredAvatarNotifyOuterClass {
               emu.grasscutter.net.proto.RogueDiaryTiredAvatarNotifyOuterClass.RogueDiaryTiredAvatarNotify.class, emu.grasscutter.net.proto.RogueDiaryTiredAvatarNotifyOuterClass.RogueDiaryTiredAvatarNotify.Builder.class);
     }
 
-    public static final int OPTIANAL_TIRED_AVATAR_LIST_FIELD_NUMBER = 10;
-    private java.util.List<emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatar> optianalTiredAvatarList_;
+    public static final int UNK3300_DMEMBBPEIGK_FIELD_NUMBER = 1;
+    private int unk3300DMEMBBPEIGK_;
     /**
-     * <code>repeated .RogueDiaryAvatar optianal_tired_avatar_list = 10;</code>
+     * <code>uint32 Unk3300_DMEMBBPEIGK = 1;</code>
+     * @return The unk3300DMEMBBPEIGK.
      */
     @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatar> getOptianalTiredAvatarListList() {
-      return optianalTiredAvatarList_;
-    }
-    /**
-     * <code>repeated .RogueDiaryAvatar optianal_tired_avatar_list = 10;</code>
-     */
-    @java.lang.Override
-    public java.util.List<? extends emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatarOrBuilder> 
-        getOptianalTiredAvatarListOrBuilderList() {
-      return optianalTiredAvatarList_;
-    }
-    /**
-     * <code>repeated .RogueDiaryAvatar optianal_tired_avatar_list = 10;</code>
-     */
-    @java.lang.Override
-    public int getOptianalTiredAvatarListCount() {
-      return optianalTiredAvatarList_.size();
-    }
-    /**
-     * <code>repeated .RogueDiaryAvatar optianal_tired_avatar_list = 10;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatar getOptianalTiredAvatarList(int index) {
-      return optianalTiredAvatarList_.get(index);
-    }
-    /**
-     * <code>repeated .RogueDiaryAvatar optianal_tired_avatar_list = 10;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatarOrBuilder getOptianalTiredAvatarListOrBuilder(
-        int index) {
-      return optianalTiredAvatarList_.get(index);
+    public int getUnk3300DMEMBBPEIGK() {
+      return unk3300DMEMBBPEIGK_;
     }
 
-    public static final int RESERVE_AVATAR_NUM_FIELD_NUMBER = 6;
-    private int reserveAvatarNum_;
+    public static final int UNK3300_BGEJGLBMFII_FIELD_NUMBER = 14;
+    private int unk3300BGEJGLBMFII_;
     /**
-     * <code>uint32 reserve_avatar_num = 6;</code>
-     * @return The reserveAvatarNum.
+     * <code>uint32 Unk3300_BGEJGLBMFII = 14;</code>
+     * @return The unk3300BGEJGLBMFII.
      */
     @java.lang.Override
-    public int getReserveAvatarNum() {
-      return reserveAvatarNum_;
+    public int getUnk3300BGEJGLBMFII() {
+      return unk3300BGEJGLBMFII_;
     }
 
-    public static final int TIRED_TYPE_FIELD_NUMBER = 8;
-    private int tiredType_;
-    /**
-     * <code>uint32 tired_type = 8;</code>
-     * @return The tiredType.
-     */
-    @java.lang.Override
-    public int getTiredType() {
-      return tiredType_;
-    }
-
-    public static final int IS_NEED_SHOW_FIELD_NUMBER = 7;
+    public static final int IS_NEED_SHOW_FIELD_NUMBER = 11;
     private boolean isNeedShow_;
     /**
-     * <code>bool is_need_show = 7;</code>
+     * <code>bool is_need_show = 11;</code>
      * @return The isNeedShow.
      */
     @java.lang.Override
     public boolean getIsNeedShow() {
       return isNeedShow_;
+    }
+
+    public static final int OPTIONAL_TIRED_AVATAR_LIST_FIELD_NUMBER = 5;
+    private java.util.List<emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatar> optionalTiredAvatarList_;
+    /**
+     * <code>repeated .RogueDiaryAvatar optional_tired_avatar_list = 5;</code>
+     */
+    @java.lang.Override
+    public java.util.List<emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatar> getOptionalTiredAvatarListList() {
+      return optionalTiredAvatarList_;
+    }
+    /**
+     * <code>repeated .RogueDiaryAvatar optional_tired_avatar_list = 5;</code>
+     */
+    @java.lang.Override
+    public java.util.List<? extends emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatarOrBuilder> 
+        getOptionalTiredAvatarListOrBuilderList() {
+      return optionalTiredAvatarList_;
+    }
+    /**
+     * <code>repeated .RogueDiaryAvatar optional_tired_avatar_list = 5;</code>
+     */
+    @java.lang.Override
+    public int getOptionalTiredAvatarListCount() {
+      return optionalTiredAvatarList_.size();
+    }
+    /**
+     * <code>repeated .RogueDiaryAvatar optional_tired_avatar_list = 5;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatar getOptionalTiredAvatarList(int index) {
+      return optionalTiredAvatarList_.get(index);
+    }
+    /**
+     * <code>repeated .RogueDiaryAvatar optional_tired_avatar_list = 5;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatarOrBuilder getOptionalTiredAvatarListOrBuilder(
+        int index) {
+      return optionalTiredAvatarList_.get(index);
     }
 
     private byte memoizedIsInitialized = -1;
@@ -260,17 +264,17 @@ public final class RogueDiaryTiredAvatarNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (reserveAvatarNum_ != 0) {
-        output.writeUInt32(6, reserveAvatarNum_);
+      if (unk3300DMEMBBPEIGK_ != 0) {
+        output.writeUInt32(1, unk3300DMEMBBPEIGK_);
+      }
+      for (int i = 0; i < optionalTiredAvatarList_.size(); i++) {
+        output.writeMessage(5, optionalTiredAvatarList_.get(i));
       }
       if (isNeedShow_ != false) {
-        output.writeBool(7, isNeedShow_);
+        output.writeBool(11, isNeedShow_);
       }
-      if (tiredType_ != 0) {
-        output.writeUInt32(8, tiredType_);
-      }
-      for (int i = 0; i < optianalTiredAvatarList_.size(); i++) {
-        output.writeMessage(10, optianalTiredAvatarList_.get(i));
+      if (unk3300BGEJGLBMFII_ != 0) {
+        output.writeUInt32(14, unk3300BGEJGLBMFII_);
       }
       unknownFields.writeTo(output);
     }
@@ -281,21 +285,21 @@ public final class RogueDiaryTiredAvatarNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (reserveAvatarNum_ != 0) {
+      if (unk3300DMEMBBPEIGK_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, reserveAvatarNum_);
+          .computeUInt32Size(1, unk3300DMEMBBPEIGK_);
+      }
+      for (int i = 0; i < optionalTiredAvatarList_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(5, optionalTiredAvatarList_.get(i));
       }
       if (isNeedShow_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(7, isNeedShow_);
+          .computeBoolSize(11, isNeedShow_);
       }
-      if (tiredType_ != 0) {
+      if (unk3300BGEJGLBMFII_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, tiredType_);
-      }
-      for (int i = 0; i < optianalTiredAvatarList_.size(); i++) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(10, optianalTiredAvatarList_.get(i));
+          .computeUInt32Size(14, unk3300BGEJGLBMFII_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -312,14 +316,14 @@ public final class RogueDiaryTiredAvatarNotifyOuterClass {
       }
       emu.grasscutter.net.proto.RogueDiaryTiredAvatarNotifyOuterClass.RogueDiaryTiredAvatarNotify other = (emu.grasscutter.net.proto.RogueDiaryTiredAvatarNotifyOuterClass.RogueDiaryTiredAvatarNotify) obj;
 
-      if (!getOptianalTiredAvatarListList()
-          .equals(other.getOptianalTiredAvatarListList())) return false;
-      if (getReserveAvatarNum()
-          != other.getReserveAvatarNum()) return false;
-      if (getTiredType()
-          != other.getTiredType()) return false;
+      if (getUnk3300DMEMBBPEIGK()
+          != other.getUnk3300DMEMBBPEIGK()) return false;
+      if (getUnk3300BGEJGLBMFII()
+          != other.getUnk3300BGEJGLBMFII()) return false;
       if (getIsNeedShow()
           != other.getIsNeedShow()) return false;
+      if (!getOptionalTiredAvatarListList()
+          .equals(other.getOptionalTiredAvatarListList())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -331,17 +335,17 @@ public final class RogueDiaryTiredAvatarNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (getOptianalTiredAvatarListCount() > 0) {
-        hash = (37 * hash) + OPTIANAL_TIRED_AVATAR_LIST_FIELD_NUMBER;
-        hash = (53 * hash) + getOptianalTiredAvatarListList().hashCode();
-      }
-      hash = (37 * hash) + RESERVE_AVATAR_NUM_FIELD_NUMBER;
-      hash = (53 * hash) + getReserveAvatarNum();
-      hash = (37 * hash) + TIRED_TYPE_FIELD_NUMBER;
-      hash = (53 * hash) + getTiredType();
+      hash = (37 * hash) + UNK3300_DMEMBBPEIGK_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300DMEMBBPEIGK();
+      hash = (37 * hash) + UNK3300_BGEJGLBMFII_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300BGEJGLBMFII();
       hash = (37 * hash) + IS_NEED_SHOW_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsNeedShow());
+      if (getOptionalTiredAvatarListCount() > 0) {
+        hash = (37 * hash) + OPTIONAL_TIRED_AVATAR_LIST_FIELD_NUMBER;
+        hash = (53 * hash) + getOptionalTiredAvatarListList().hashCode();
+      }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -439,10 +443,14 @@ public final class RogueDiaryTiredAvatarNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 8514
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 8660;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code RogueDiaryTiredAvatarNotify}
@@ -477,24 +485,24 @@ public final class RogueDiaryTiredAvatarNotifyOuterClass {
       private void maybeForceBuilderInitialization() {
         if (com.google.protobuf.GeneratedMessageV3
                 .alwaysUseFieldBuilders) {
-          getOptianalTiredAvatarListFieldBuilder();
+          getOptionalTiredAvatarListFieldBuilder();
         }
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        if (optianalTiredAvatarListBuilder_ == null) {
-          optianalTiredAvatarList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000001);
-        } else {
-          optianalTiredAvatarListBuilder_.clear();
-        }
-        reserveAvatarNum_ = 0;
+        unk3300DMEMBBPEIGK_ = 0;
 
-        tiredType_ = 0;
+        unk3300BGEJGLBMFII_ = 0;
 
         isNeedShow_ = false;
 
+        if (optionalTiredAvatarListBuilder_ == null) {
+          optionalTiredAvatarList_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000001);
+        } else {
+          optionalTiredAvatarListBuilder_.clear();
+        }
         return this;
       }
 
@@ -522,18 +530,18 @@ public final class RogueDiaryTiredAvatarNotifyOuterClass {
       public emu.grasscutter.net.proto.RogueDiaryTiredAvatarNotifyOuterClass.RogueDiaryTiredAvatarNotify buildPartial() {
         emu.grasscutter.net.proto.RogueDiaryTiredAvatarNotifyOuterClass.RogueDiaryTiredAvatarNotify result = new emu.grasscutter.net.proto.RogueDiaryTiredAvatarNotifyOuterClass.RogueDiaryTiredAvatarNotify(this);
         int from_bitField0_ = bitField0_;
-        if (optianalTiredAvatarListBuilder_ == null) {
+        result.unk3300DMEMBBPEIGK_ = unk3300DMEMBBPEIGK_;
+        result.unk3300BGEJGLBMFII_ = unk3300BGEJGLBMFII_;
+        result.isNeedShow_ = isNeedShow_;
+        if (optionalTiredAvatarListBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0)) {
-            optianalTiredAvatarList_ = java.util.Collections.unmodifiableList(optianalTiredAvatarList_);
+            optionalTiredAvatarList_ = java.util.Collections.unmodifiableList(optionalTiredAvatarList_);
             bitField0_ = (bitField0_ & ~0x00000001);
           }
-          result.optianalTiredAvatarList_ = optianalTiredAvatarList_;
+          result.optionalTiredAvatarList_ = optionalTiredAvatarList_;
         } else {
-          result.optianalTiredAvatarList_ = optianalTiredAvatarListBuilder_.build();
+          result.optionalTiredAvatarList_ = optionalTiredAvatarListBuilder_.build();
         }
-        result.reserveAvatarNum_ = reserveAvatarNum_;
-        result.tiredType_ = tiredType_;
-        result.isNeedShow_ = isNeedShow_;
         onBuilt();
         return result;
       }
@@ -582,40 +590,40 @@ public final class RogueDiaryTiredAvatarNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.RogueDiaryTiredAvatarNotifyOuterClass.RogueDiaryTiredAvatarNotify other) {
         if (other == emu.grasscutter.net.proto.RogueDiaryTiredAvatarNotifyOuterClass.RogueDiaryTiredAvatarNotify.getDefaultInstance()) return this;
-        if (optianalTiredAvatarListBuilder_ == null) {
-          if (!other.optianalTiredAvatarList_.isEmpty()) {
-            if (optianalTiredAvatarList_.isEmpty()) {
-              optianalTiredAvatarList_ = other.optianalTiredAvatarList_;
+        if (other.getUnk3300DMEMBBPEIGK() != 0) {
+          setUnk3300DMEMBBPEIGK(other.getUnk3300DMEMBBPEIGK());
+        }
+        if (other.getUnk3300BGEJGLBMFII() != 0) {
+          setUnk3300BGEJGLBMFII(other.getUnk3300BGEJGLBMFII());
+        }
+        if (other.getIsNeedShow() != false) {
+          setIsNeedShow(other.getIsNeedShow());
+        }
+        if (optionalTiredAvatarListBuilder_ == null) {
+          if (!other.optionalTiredAvatarList_.isEmpty()) {
+            if (optionalTiredAvatarList_.isEmpty()) {
+              optionalTiredAvatarList_ = other.optionalTiredAvatarList_;
               bitField0_ = (bitField0_ & ~0x00000001);
             } else {
-              ensureOptianalTiredAvatarListIsMutable();
-              optianalTiredAvatarList_.addAll(other.optianalTiredAvatarList_);
+              ensureOptionalTiredAvatarListIsMutable();
+              optionalTiredAvatarList_.addAll(other.optionalTiredAvatarList_);
             }
             onChanged();
           }
         } else {
-          if (!other.optianalTiredAvatarList_.isEmpty()) {
-            if (optianalTiredAvatarListBuilder_.isEmpty()) {
-              optianalTiredAvatarListBuilder_.dispose();
-              optianalTiredAvatarListBuilder_ = null;
-              optianalTiredAvatarList_ = other.optianalTiredAvatarList_;
+          if (!other.optionalTiredAvatarList_.isEmpty()) {
+            if (optionalTiredAvatarListBuilder_.isEmpty()) {
+              optionalTiredAvatarListBuilder_.dispose();
+              optionalTiredAvatarListBuilder_ = null;
+              optionalTiredAvatarList_ = other.optionalTiredAvatarList_;
               bitField0_ = (bitField0_ & ~0x00000001);
-              optianalTiredAvatarListBuilder_ = 
+              optionalTiredAvatarListBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
-                   getOptianalTiredAvatarListFieldBuilder() : null;
+                   getOptionalTiredAvatarListFieldBuilder() : null;
             } else {
-              optianalTiredAvatarListBuilder_.addAllMessages(other.optianalTiredAvatarList_);
+              optionalTiredAvatarListBuilder_.addAllMessages(other.optionalTiredAvatarList_);
             }
           }
-        }
-        if (other.getReserveAvatarNum() != 0) {
-          setReserveAvatarNum(other.getReserveAvatarNum());
-        }
-        if (other.getTiredType() != 0) {
-          setTiredType(other.getTiredType());
-        }
-        if (other.getIsNeedShow() != false) {
-          setIsNeedShow(other.getIsNeedShow());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -647,311 +655,71 @@ public final class RogueDiaryTiredAvatarNotifyOuterClass {
       }
       private int bitField0_;
 
-      private java.util.List<emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatar> optianalTiredAvatarList_ =
-        java.util.Collections.emptyList();
-      private void ensureOptianalTiredAvatarListIsMutable() {
-        if (!((bitField0_ & 0x00000001) != 0)) {
-          optianalTiredAvatarList_ = new java.util.ArrayList<emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatar>(optianalTiredAvatarList_);
-          bitField0_ |= 0x00000001;
-         }
-      }
-
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatar, emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatar.Builder, emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatarOrBuilder> optianalTiredAvatarListBuilder_;
-
+      private int unk3300DMEMBBPEIGK_ ;
       /**
-       * <code>repeated .RogueDiaryAvatar optianal_tired_avatar_list = 10;</code>
-       */
-      public java.util.List<emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatar> getOptianalTiredAvatarListList() {
-        if (optianalTiredAvatarListBuilder_ == null) {
-          return java.util.Collections.unmodifiableList(optianalTiredAvatarList_);
-        } else {
-          return optianalTiredAvatarListBuilder_.getMessageList();
-        }
-      }
-      /**
-       * <code>repeated .RogueDiaryAvatar optianal_tired_avatar_list = 10;</code>
-       */
-      public int getOptianalTiredAvatarListCount() {
-        if (optianalTiredAvatarListBuilder_ == null) {
-          return optianalTiredAvatarList_.size();
-        } else {
-          return optianalTiredAvatarListBuilder_.getCount();
-        }
-      }
-      /**
-       * <code>repeated .RogueDiaryAvatar optianal_tired_avatar_list = 10;</code>
-       */
-      public emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatar getOptianalTiredAvatarList(int index) {
-        if (optianalTiredAvatarListBuilder_ == null) {
-          return optianalTiredAvatarList_.get(index);
-        } else {
-          return optianalTiredAvatarListBuilder_.getMessage(index);
-        }
-      }
-      /**
-       * <code>repeated .RogueDiaryAvatar optianal_tired_avatar_list = 10;</code>
-       */
-      public Builder setOptianalTiredAvatarList(
-          int index, emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatar value) {
-        if (optianalTiredAvatarListBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureOptianalTiredAvatarListIsMutable();
-          optianalTiredAvatarList_.set(index, value);
-          onChanged();
-        } else {
-          optianalTiredAvatarListBuilder_.setMessage(index, value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .RogueDiaryAvatar optianal_tired_avatar_list = 10;</code>
-       */
-      public Builder setOptianalTiredAvatarList(
-          int index, emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatar.Builder builderForValue) {
-        if (optianalTiredAvatarListBuilder_ == null) {
-          ensureOptianalTiredAvatarListIsMutable();
-          optianalTiredAvatarList_.set(index, builderForValue.build());
-          onChanged();
-        } else {
-          optianalTiredAvatarListBuilder_.setMessage(index, builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .RogueDiaryAvatar optianal_tired_avatar_list = 10;</code>
-       */
-      public Builder addOptianalTiredAvatarList(emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatar value) {
-        if (optianalTiredAvatarListBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureOptianalTiredAvatarListIsMutable();
-          optianalTiredAvatarList_.add(value);
-          onChanged();
-        } else {
-          optianalTiredAvatarListBuilder_.addMessage(value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .RogueDiaryAvatar optianal_tired_avatar_list = 10;</code>
-       */
-      public Builder addOptianalTiredAvatarList(
-          int index, emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatar value) {
-        if (optianalTiredAvatarListBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureOptianalTiredAvatarListIsMutable();
-          optianalTiredAvatarList_.add(index, value);
-          onChanged();
-        } else {
-          optianalTiredAvatarListBuilder_.addMessage(index, value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .RogueDiaryAvatar optianal_tired_avatar_list = 10;</code>
-       */
-      public Builder addOptianalTiredAvatarList(
-          emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatar.Builder builderForValue) {
-        if (optianalTiredAvatarListBuilder_ == null) {
-          ensureOptianalTiredAvatarListIsMutable();
-          optianalTiredAvatarList_.add(builderForValue.build());
-          onChanged();
-        } else {
-          optianalTiredAvatarListBuilder_.addMessage(builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .RogueDiaryAvatar optianal_tired_avatar_list = 10;</code>
-       */
-      public Builder addOptianalTiredAvatarList(
-          int index, emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatar.Builder builderForValue) {
-        if (optianalTiredAvatarListBuilder_ == null) {
-          ensureOptianalTiredAvatarListIsMutable();
-          optianalTiredAvatarList_.add(index, builderForValue.build());
-          onChanged();
-        } else {
-          optianalTiredAvatarListBuilder_.addMessage(index, builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .RogueDiaryAvatar optianal_tired_avatar_list = 10;</code>
-       */
-      public Builder addAllOptianalTiredAvatarList(
-          java.lang.Iterable<? extends emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatar> values) {
-        if (optianalTiredAvatarListBuilder_ == null) {
-          ensureOptianalTiredAvatarListIsMutable();
-          com.google.protobuf.AbstractMessageLite.Builder.addAll(
-              values, optianalTiredAvatarList_);
-          onChanged();
-        } else {
-          optianalTiredAvatarListBuilder_.addAllMessages(values);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .RogueDiaryAvatar optianal_tired_avatar_list = 10;</code>
-       */
-      public Builder clearOptianalTiredAvatarList() {
-        if (optianalTiredAvatarListBuilder_ == null) {
-          optianalTiredAvatarList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000001);
-          onChanged();
-        } else {
-          optianalTiredAvatarListBuilder_.clear();
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .RogueDiaryAvatar optianal_tired_avatar_list = 10;</code>
-       */
-      public Builder removeOptianalTiredAvatarList(int index) {
-        if (optianalTiredAvatarListBuilder_ == null) {
-          ensureOptianalTiredAvatarListIsMutable();
-          optianalTiredAvatarList_.remove(index);
-          onChanged();
-        } else {
-          optianalTiredAvatarListBuilder_.remove(index);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .RogueDiaryAvatar optianal_tired_avatar_list = 10;</code>
-       */
-      public emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatar.Builder getOptianalTiredAvatarListBuilder(
-          int index) {
-        return getOptianalTiredAvatarListFieldBuilder().getBuilder(index);
-      }
-      /**
-       * <code>repeated .RogueDiaryAvatar optianal_tired_avatar_list = 10;</code>
-       */
-      public emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatarOrBuilder getOptianalTiredAvatarListOrBuilder(
-          int index) {
-        if (optianalTiredAvatarListBuilder_ == null) {
-          return optianalTiredAvatarList_.get(index);  } else {
-          return optianalTiredAvatarListBuilder_.getMessageOrBuilder(index);
-        }
-      }
-      /**
-       * <code>repeated .RogueDiaryAvatar optianal_tired_avatar_list = 10;</code>
-       */
-      public java.util.List<? extends emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatarOrBuilder> 
-           getOptianalTiredAvatarListOrBuilderList() {
-        if (optianalTiredAvatarListBuilder_ != null) {
-          return optianalTiredAvatarListBuilder_.getMessageOrBuilderList();
-        } else {
-          return java.util.Collections.unmodifiableList(optianalTiredAvatarList_);
-        }
-      }
-      /**
-       * <code>repeated .RogueDiaryAvatar optianal_tired_avatar_list = 10;</code>
-       */
-      public emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatar.Builder addOptianalTiredAvatarListBuilder() {
-        return getOptianalTiredAvatarListFieldBuilder().addBuilder(
-            emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatar.getDefaultInstance());
-      }
-      /**
-       * <code>repeated .RogueDiaryAvatar optianal_tired_avatar_list = 10;</code>
-       */
-      public emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatar.Builder addOptianalTiredAvatarListBuilder(
-          int index) {
-        return getOptianalTiredAvatarListFieldBuilder().addBuilder(
-            index, emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatar.getDefaultInstance());
-      }
-      /**
-       * <code>repeated .RogueDiaryAvatar optianal_tired_avatar_list = 10;</code>
-       */
-      public java.util.List<emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatar.Builder> 
-           getOptianalTiredAvatarListBuilderList() {
-        return getOptianalTiredAvatarListFieldBuilder().getBuilderList();
-      }
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatar, emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatar.Builder, emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatarOrBuilder> 
-          getOptianalTiredAvatarListFieldBuilder() {
-        if (optianalTiredAvatarListBuilder_ == null) {
-          optianalTiredAvatarListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatar, emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatar.Builder, emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatarOrBuilder>(
-                  optianalTiredAvatarList_,
-                  ((bitField0_ & 0x00000001) != 0),
-                  getParentForChildren(),
-                  isClean());
-          optianalTiredAvatarList_ = null;
-        }
-        return optianalTiredAvatarListBuilder_;
-      }
-
-      private int reserveAvatarNum_ ;
-      /**
-       * <code>uint32 reserve_avatar_num = 6;</code>
-       * @return The reserveAvatarNum.
+       * <code>uint32 Unk3300_DMEMBBPEIGK = 1;</code>
+       * @return The unk3300DMEMBBPEIGK.
        */
       @java.lang.Override
-      public int getReserveAvatarNum() {
-        return reserveAvatarNum_;
+      public int getUnk3300DMEMBBPEIGK() {
+        return unk3300DMEMBBPEIGK_;
       }
       /**
-       * <code>uint32 reserve_avatar_num = 6;</code>
-       * @param value The reserveAvatarNum to set.
+       * <code>uint32 Unk3300_DMEMBBPEIGK = 1;</code>
+       * @param value The unk3300DMEMBBPEIGK to set.
        * @return This builder for chaining.
        */
-      public Builder setReserveAvatarNum(int value) {
+      public Builder setUnk3300DMEMBBPEIGK(int value) {
         
-        reserveAvatarNum_ = value;
+        unk3300DMEMBBPEIGK_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 reserve_avatar_num = 6;</code>
+       * <code>uint32 Unk3300_DMEMBBPEIGK = 1;</code>
        * @return This builder for chaining.
        */
-      public Builder clearReserveAvatarNum() {
+      public Builder clearUnk3300DMEMBBPEIGK() {
         
-        reserveAvatarNum_ = 0;
+        unk3300DMEMBBPEIGK_ = 0;
         onChanged();
         return this;
       }
 
-      private int tiredType_ ;
+      private int unk3300BGEJGLBMFII_ ;
       /**
-       * <code>uint32 tired_type = 8;</code>
-       * @return The tiredType.
+       * <code>uint32 Unk3300_BGEJGLBMFII = 14;</code>
+       * @return The unk3300BGEJGLBMFII.
        */
       @java.lang.Override
-      public int getTiredType() {
-        return tiredType_;
+      public int getUnk3300BGEJGLBMFII() {
+        return unk3300BGEJGLBMFII_;
       }
       /**
-       * <code>uint32 tired_type = 8;</code>
-       * @param value The tiredType to set.
+       * <code>uint32 Unk3300_BGEJGLBMFII = 14;</code>
+       * @param value The unk3300BGEJGLBMFII to set.
        * @return This builder for chaining.
        */
-      public Builder setTiredType(int value) {
+      public Builder setUnk3300BGEJGLBMFII(int value) {
         
-        tiredType_ = value;
+        unk3300BGEJGLBMFII_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 tired_type = 8;</code>
+       * <code>uint32 Unk3300_BGEJGLBMFII = 14;</code>
        * @return This builder for chaining.
        */
-      public Builder clearTiredType() {
+      public Builder clearUnk3300BGEJGLBMFII() {
         
-        tiredType_ = 0;
+        unk3300BGEJGLBMFII_ = 0;
         onChanged();
         return this;
       }
 
       private boolean isNeedShow_ ;
       /**
-       * <code>bool is_need_show = 7;</code>
+       * <code>bool is_need_show = 11;</code>
        * @return The isNeedShow.
        */
       @java.lang.Override
@@ -959,7 +727,7 @@ public final class RogueDiaryTiredAvatarNotifyOuterClass {
         return isNeedShow_;
       }
       /**
-       * <code>bool is_need_show = 7;</code>
+       * <code>bool is_need_show = 11;</code>
        * @param value The isNeedShow to set.
        * @return This builder for chaining.
        */
@@ -970,7 +738,7 @@ public final class RogueDiaryTiredAvatarNotifyOuterClass {
         return this;
       }
       /**
-       * <code>bool is_need_show = 7;</code>
+       * <code>bool is_need_show = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsNeedShow() {
@@ -978,6 +746,246 @@ public final class RogueDiaryTiredAvatarNotifyOuterClass {
         isNeedShow_ = false;
         onChanged();
         return this;
+      }
+
+      private java.util.List<emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatar> optionalTiredAvatarList_ =
+        java.util.Collections.emptyList();
+      private void ensureOptionalTiredAvatarListIsMutable() {
+        if (!((bitField0_ & 0x00000001) != 0)) {
+          optionalTiredAvatarList_ = new java.util.ArrayList<emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatar>(optionalTiredAvatarList_);
+          bitField0_ |= 0x00000001;
+         }
+      }
+
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatar, emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatar.Builder, emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatarOrBuilder> optionalTiredAvatarListBuilder_;
+
+      /**
+       * <code>repeated .RogueDiaryAvatar optional_tired_avatar_list = 5;</code>
+       */
+      public java.util.List<emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatar> getOptionalTiredAvatarListList() {
+        if (optionalTiredAvatarListBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(optionalTiredAvatarList_);
+        } else {
+          return optionalTiredAvatarListBuilder_.getMessageList();
+        }
+      }
+      /**
+       * <code>repeated .RogueDiaryAvatar optional_tired_avatar_list = 5;</code>
+       */
+      public int getOptionalTiredAvatarListCount() {
+        if (optionalTiredAvatarListBuilder_ == null) {
+          return optionalTiredAvatarList_.size();
+        } else {
+          return optionalTiredAvatarListBuilder_.getCount();
+        }
+      }
+      /**
+       * <code>repeated .RogueDiaryAvatar optional_tired_avatar_list = 5;</code>
+       */
+      public emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatar getOptionalTiredAvatarList(int index) {
+        if (optionalTiredAvatarListBuilder_ == null) {
+          return optionalTiredAvatarList_.get(index);
+        } else {
+          return optionalTiredAvatarListBuilder_.getMessage(index);
+        }
+      }
+      /**
+       * <code>repeated .RogueDiaryAvatar optional_tired_avatar_list = 5;</code>
+       */
+      public Builder setOptionalTiredAvatarList(
+          int index, emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatar value) {
+        if (optionalTiredAvatarListBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureOptionalTiredAvatarListIsMutable();
+          optionalTiredAvatarList_.set(index, value);
+          onChanged();
+        } else {
+          optionalTiredAvatarListBuilder_.setMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .RogueDiaryAvatar optional_tired_avatar_list = 5;</code>
+       */
+      public Builder setOptionalTiredAvatarList(
+          int index, emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatar.Builder builderForValue) {
+        if (optionalTiredAvatarListBuilder_ == null) {
+          ensureOptionalTiredAvatarListIsMutable();
+          optionalTiredAvatarList_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          optionalTiredAvatarListBuilder_.setMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .RogueDiaryAvatar optional_tired_avatar_list = 5;</code>
+       */
+      public Builder addOptionalTiredAvatarList(emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatar value) {
+        if (optionalTiredAvatarListBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureOptionalTiredAvatarListIsMutable();
+          optionalTiredAvatarList_.add(value);
+          onChanged();
+        } else {
+          optionalTiredAvatarListBuilder_.addMessage(value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .RogueDiaryAvatar optional_tired_avatar_list = 5;</code>
+       */
+      public Builder addOptionalTiredAvatarList(
+          int index, emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatar value) {
+        if (optionalTiredAvatarListBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureOptionalTiredAvatarListIsMutable();
+          optionalTiredAvatarList_.add(index, value);
+          onChanged();
+        } else {
+          optionalTiredAvatarListBuilder_.addMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .RogueDiaryAvatar optional_tired_avatar_list = 5;</code>
+       */
+      public Builder addOptionalTiredAvatarList(
+          emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatar.Builder builderForValue) {
+        if (optionalTiredAvatarListBuilder_ == null) {
+          ensureOptionalTiredAvatarListIsMutable();
+          optionalTiredAvatarList_.add(builderForValue.build());
+          onChanged();
+        } else {
+          optionalTiredAvatarListBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .RogueDiaryAvatar optional_tired_avatar_list = 5;</code>
+       */
+      public Builder addOptionalTiredAvatarList(
+          int index, emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatar.Builder builderForValue) {
+        if (optionalTiredAvatarListBuilder_ == null) {
+          ensureOptionalTiredAvatarListIsMutable();
+          optionalTiredAvatarList_.add(index, builderForValue.build());
+          onChanged();
+        } else {
+          optionalTiredAvatarListBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .RogueDiaryAvatar optional_tired_avatar_list = 5;</code>
+       */
+      public Builder addAllOptionalTiredAvatarList(
+          java.lang.Iterable<? extends emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatar> values) {
+        if (optionalTiredAvatarListBuilder_ == null) {
+          ensureOptionalTiredAvatarListIsMutable();
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, optionalTiredAvatarList_);
+          onChanged();
+        } else {
+          optionalTiredAvatarListBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .RogueDiaryAvatar optional_tired_avatar_list = 5;</code>
+       */
+      public Builder clearOptionalTiredAvatarList() {
+        if (optionalTiredAvatarListBuilder_ == null) {
+          optionalTiredAvatarList_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000001);
+          onChanged();
+        } else {
+          optionalTiredAvatarListBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .RogueDiaryAvatar optional_tired_avatar_list = 5;</code>
+       */
+      public Builder removeOptionalTiredAvatarList(int index) {
+        if (optionalTiredAvatarListBuilder_ == null) {
+          ensureOptionalTiredAvatarListIsMutable();
+          optionalTiredAvatarList_.remove(index);
+          onChanged();
+        } else {
+          optionalTiredAvatarListBuilder_.remove(index);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .RogueDiaryAvatar optional_tired_avatar_list = 5;</code>
+       */
+      public emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatar.Builder getOptionalTiredAvatarListBuilder(
+          int index) {
+        return getOptionalTiredAvatarListFieldBuilder().getBuilder(index);
+      }
+      /**
+       * <code>repeated .RogueDiaryAvatar optional_tired_avatar_list = 5;</code>
+       */
+      public emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatarOrBuilder getOptionalTiredAvatarListOrBuilder(
+          int index) {
+        if (optionalTiredAvatarListBuilder_ == null) {
+          return optionalTiredAvatarList_.get(index);  } else {
+          return optionalTiredAvatarListBuilder_.getMessageOrBuilder(index);
+        }
+      }
+      /**
+       * <code>repeated .RogueDiaryAvatar optional_tired_avatar_list = 5;</code>
+       */
+      public java.util.List<? extends emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatarOrBuilder> 
+           getOptionalTiredAvatarListOrBuilderList() {
+        if (optionalTiredAvatarListBuilder_ != null) {
+          return optionalTiredAvatarListBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(optionalTiredAvatarList_);
+        }
+      }
+      /**
+       * <code>repeated .RogueDiaryAvatar optional_tired_avatar_list = 5;</code>
+       */
+      public emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatar.Builder addOptionalTiredAvatarListBuilder() {
+        return getOptionalTiredAvatarListFieldBuilder().addBuilder(
+            emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatar.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .RogueDiaryAvatar optional_tired_avatar_list = 5;</code>
+       */
+      public emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatar.Builder addOptionalTiredAvatarListBuilder(
+          int index) {
+        return getOptionalTiredAvatarListFieldBuilder().addBuilder(
+            index, emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatar.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .RogueDiaryAvatar optional_tired_avatar_list = 5;</code>
+       */
+      public java.util.List<emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatar.Builder> 
+           getOptionalTiredAvatarListBuilderList() {
+        return getOptionalTiredAvatarListFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatar, emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatar.Builder, emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatarOrBuilder> 
+          getOptionalTiredAvatarListFieldBuilder() {
+        if (optionalTiredAvatarListBuilder_ == null) {
+          optionalTiredAvatarListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+              emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatar, emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatar.Builder, emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatarOrBuilder>(
+                  optionalTiredAvatarList_,
+                  ((bitField0_ & 0x00000001) != 0),
+                  getParentForChildren(),
+                  isClean());
+          optionalTiredAvatarList_ = null;
+        }
+        return optionalTiredAvatarListBuilder_;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -1047,12 +1055,12 @@ public final class RogueDiaryTiredAvatarNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n!RogueDiaryTiredAvatarNotify.proto\032\026Rog" +
-      "ueDiaryAvatar.proto\"\232\001\n\033RogueDiaryTiredA" +
-      "vatarNotify\0225\n\032optianal_tired_avatar_lis" +
-      "t\030\n \003(\0132\021.RogueDiaryAvatar\022\032\n\022reserve_av" +
-      "atar_num\030\006 \001(\r\022\022\n\ntired_type\030\010 \001(\r\022\024\n\014is" +
-      "_need_show\030\007 \001(\010B\033\n\031emu.grasscutter.net." +
-      "protob\006proto3"
+      "ueDiaryAvatar.proto\"\244\001\n\033RogueDiaryTiredA" +
+      "vatarNotify\022\033\n\023Unk3300_DMEMBBPEIGK\030\001 \001(\r" +
+      "\022\033\n\023Unk3300_BGEJGLBMFII\030\016 \001(\r\022\024\n\014is_need" +
+      "_show\030\013 \001(\010\0225\n\032optional_tired_avatar_lis" +
+      "t\030\005 \003(\0132\021.RogueDiaryAvatarB\033\n\031emu.grassc" +
+      "utter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -1064,7 +1072,7 @@ public final class RogueDiaryTiredAvatarNotifyOuterClass {
     internal_static_RogueDiaryTiredAvatarNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_RogueDiaryTiredAvatarNotify_descriptor,
-        new java.lang.String[] { "OptianalTiredAvatarList", "ReserveAvatarNum", "TiredType", "IsNeedShow", });
+        new java.lang.String[] { "Unk3300DMEMBBPEIGK", "Unk3300BGEJGLBMFII", "IsNeedShow", "OptionalTiredAvatarList", });
     emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.getDescriptor();
   }
 

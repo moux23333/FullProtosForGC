@@ -19,7 +19,7 @@ public final class AbilityMetaSpecialFloatArgumentOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>float argument_value = 14;</code>
+     * <code>float argument_value = 4;</code>
      * @return The argumentValue.
      */
     float getArgumentValue();
@@ -75,14 +75,14 @@ public final class AbilityMetaSpecialFloatArgumentOuterClass {
             case 0:
               done = true;
               break;
+            case 37: {
+
+              argumentValue_ = input.readFloat();
+              break;
+            }
             case 80: {
 
               isOn_ = input.readBool();
-              break;
-            }
-            case 117: {
-
-              argumentValue_ = input.readFloat();
               break;
             }
             default: {
@@ -117,10 +117,10 @@ public final class AbilityMetaSpecialFloatArgumentOuterClass {
               emu.grasscutter.net.proto.AbilityMetaSpecialFloatArgumentOuterClass.AbilityMetaSpecialFloatArgument.class, emu.grasscutter.net.proto.AbilityMetaSpecialFloatArgumentOuterClass.AbilityMetaSpecialFloatArgument.Builder.class);
     }
 
-    public static final int ARGUMENT_VALUE_FIELD_NUMBER = 14;
+    public static final int ARGUMENT_VALUE_FIELD_NUMBER = 4;
     private float argumentValue_;
     /**
-     * <code>float argument_value = 14;</code>
+     * <code>float argument_value = 4;</code>
      * @return The argumentValue.
      */
     @java.lang.Override
@@ -153,11 +153,11 @@ public final class AbilityMetaSpecialFloatArgumentOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (argumentValue_ != 0F) {
+        output.writeFloat(4, argumentValue_);
+      }
       if (isOn_ != false) {
         output.writeBool(10, isOn_);
-      }
-      if (argumentValue_ != 0F) {
-        output.writeFloat(14, argumentValue_);
       }
       unknownFields.writeTo(output);
     }
@@ -168,13 +168,13 @@ public final class AbilityMetaSpecialFloatArgumentOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (argumentValue_ != 0F) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeFloatSize(4, argumentValue_);
+      }
       if (isOn_ != false) {
         size += com.google.protobuf.CodedOutputStream
           .computeBoolSize(10, isOn_);
-      }
-      if (argumentValue_ != 0F) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeFloatSize(14, argumentValue_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -463,7 +463,7 @@ public final class AbilityMetaSpecialFloatArgumentOuterClass {
 
       private float argumentValue_ ;
       /**
-       * <code>float argument_value = 14;</code>
+       * <code>float argument_value = 4;</code>
        * @return The argumentValue.
        */
       @java.lang.Override
@@ -471,7 +471,7 @@ public final class AbilityMetaSpecialFloatArgumentOuterClass {
         return argumentValue_;
       }
       /**
-       * <code>float argument_value = 14;</code>
+       * <code>float argument_value = 4;</code>
        * @param value The argumentValue to set.
        * @return This builder for chaining.
        */
@@ -482,7 +482,7 @@ public final class AbilityMetaSpecialFloatArgumentOuterClass {
         return this;
       }
       /**
-       * <code>float argument_value = 14;</code>
+       * <code>float argument_value = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearArgumentValue() {
@@ -591,7 +591,7 @@ public final class AbilityMetaSpecialFloatArgumentOuterClass {
     java.lang.String[] descriptorData = {
       "\n%AbilityMetaSpecialFloatArgument.proto\"" +
       "H\n\037AbilityMetaSpecialFloatArgument\022\026\n\016ar" +
-      "gument_value\030\016 \001(\002\022\r\n\005is_on\030\n \001(\010B\033\n\031emu" +
+      "gument_value\030\004 \001(\002\022\r\n\005is_on\030\n \001(\010B\033\n\031emu" +
       ".grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

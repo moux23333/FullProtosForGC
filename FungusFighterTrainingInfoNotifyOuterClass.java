@@ -19,52 +19,56 @@ public final class FungusFighterTrainingInfoNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 buff_start_time = 3;</code>
-     * @return The buffStartTime.
-     */
-    int getBuffStartTime();
-
-    /**
-     * <code>uint32 max_skill_count = 7;</code>
-     * @return The maxSkillCount.
-     */
-    int getMaxSkillCount();
-
-    /**
-     * <code>uint32 max_monster_count = 8;</code>
-     * @return The maxMonsterCount.
-     */
-    int getMaxMonsterCount();
-
-    /**
      * <code>uint32 buff_id = 14;</code>
      * @return The buffId.
      */
     int getBuffId();
 
     /**
-     * <code>uint32 buff_last_time = 4;</code>
-     * @return The buffLastTime.
+     * <code>uint32 Unk3300_IOEELCAMDCK = 10;</code>
+     * @return The unk3300IOEELCAMDCK.
      */
-    int getBuffLastTime();
+    int getUnk3300IOEELCAMDCK();
 
     /**
-     * <code>uint32 rest_skill_count = 6;</code>
-     * @return The restSkillCount.
+     * <code>uint32 Unk3300_HGPGNCMNDJN = 4;</code>
+     * @return The unk3300HGPGNCMNDJN.
      */
-    int getRestSkillCount();
+    int getUnk3300HGPGNCMNDJN();
 
     /**
-     * <code>uint32 killed_monster_count = 15;</code>
-     * @return The killedMonsterCount.
+     * <code>uint32 Unk3300_EDHANEGNMJM = 3;</code>
+     * @return The unk3300EDHANEGNMJM.
      */
-    int getKilledMonsterCount();
+    int getUnk3300EDHANEGNMJM();
+
+    /**
+     * <code>uint32 Unk3300_GMLIPFDMDOG = 6;</code>
+     * @return The unk3300GMLIPFDMDOG.
+     */
+    int getUnk3300GMLIPFDMDOG();
+
+    /**
+     * <code>uint32 Unk3300_EKAMCPNGCGH = 13;</code>
+     * @return The unk3300EKAMCPNGCGH.
+     */
+    int getUnk3300EKAMCPNGCGH();
+
+    /**
+     * <code>uint32 max_monster_count = 9;</code>
+     * @return The maxMonsterCount.
+     */
+    int getMaxMonsterCount();
   }
   /**
    * <pre>
-   * CmdId: 5595
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 5533;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code FungusFighterTrainingInfoNotify}
@@ -113,37 +117,37 @@ public final class FungusFighterTrainingInfoNotifyOuterClass {
               break;
             case 24: {
 
-              buffStartTime_ = input.readUInt32();
+              unk3300EDHANEGNMJM_ = input.readUInt32();
               break;
             }
             case 32: {
 
-              buffLastTime_ = input.readUInt32();
+              unk3300HGPGNCMNDJN_ = input.readUInt32();
               break;
             }
             case 48: {
 
-              restSkillCount_ = input.readUInt32();
+              unk3300GMLIPFDMDOG_ = input.readUInt32();
               break;
             }
-            case 56: {
-
-              maxSkillCount_ = input.readUInt32();
-              break;
-            }
-            case 64: {
+            case 72: {
 
               maxMonsterCount_ = input.readUInt32();
+              break;
+            }
+            case 80: {
+
+              unk3300IOEELCAMDCK_ = input.readUInt32();
+              break;
+            }
+            case 104: {
+
+              unk3300EKAMCPNGCGH_ = input.readUInt32();
               break;
             }
             case 112: {
 
               buffId_ = input.readUInt32();
-              break;
-            }
-            case 120: {
-
-              killedMonsterCount_ = input.readUInt32();
               break;
             }
             default: {
@@ -178,39 +182,6 @@ public final class FungusFighterTrainingInfoNotifyOuterClass {
               emu.grasscutter.net.proto.FungusFighterTrainingInfoNotifyOuterClass.FungusFighterTrainingInfoNotify.class, emu.grasscutter.net.proto.FungusFighterTrainingInfoNotifyOuterClass.FungusFighterTrainingInfoNotify.Builder.class);
     }
 
-    public static final int BUFF_START_TIME_FIELD_NUMBER = 3;
-    private int buffStartTime_;
-    /**
-     * <code>uint32 buff_start_time = 3;</code>
-     * @return The buffStartTime.
-     */
-    @java.lang.Override
-    public int getBuffStartTime() {
-      return buffStartTime_;
-    }
-
-    public static final int MAX_SKILL_COUNT_FIELD_NUMBER = 7;
-    private int maxSkillCount_;
-    /**
-     * <code>uint32 max_skill_count = 7;</code>
-     * @return The maxSkillCount.
-     */
-    @java.lang.Override
-    public int getMaxSkillCount() {
-      return maxSkillCount_;
-    }
-
-    public static final int MAX_MONSTER_COUNT_FIELD_NUMBER = 8;
-    private int maxMonsterCount_;
-    /**
-     * <code>uint32 max_monster_count = 8;</code>
-     * @return The maxMonsterCount.
-     */
-    @java.lang.Override
-    public int getMaxMonsterCount() {
-      return maxMonsterCount_;
-    }
-
     public static final int BUFF_ID_FIELD_NUMBER = 14;
     private int buffId_;
     /**
@@ -222,37 +193,70 @@ public final class FungusFighterTrainingInfoNotifyOuterClass {
       return buffId_;
     }
 
-    public static final int BUFF_LAST_TIME_FIELD_NUMBER = 4;
-    private int buffLastTime_;
+    public static final int UNK3300_IOEELCAMDCK_FIELD_NUMBER = 10;
+    private int unk3300IOEELCAMDCK_;
     /**
-     * <code>uint32 buff_last_time = 4;</code>
-     * @return The buffLastTime.
+     * <code>uint32 Unk3300_IOEELCAMDCK = 10;</code>
+     * @return The unk3300IOEELCAMDCK.
      */
     @java.lang.Override
-    public int getBuffLastTime() {
-      return buffLastTime_;
+    public int getUnk3300IOEELCAMDCK() {
+      return unk3300IOEELCAMDCK_;
     }
 
-    public static final int REST_SKILL_COUNT_FIELD_NUMBER = 6;
-    private int restSkillCount_;
+    public static final int UNK3300_HGPGNCMNDJN_FIELD_NUMBER = 4;
+    private int unk3300HGPGNCMNDJN_;
     /**
-     * <code>uint32 rest_skill_count = 6;</code>
-     * @return The restSkillCount.
+     * <code>uint32 Unk3300_HGPGNCMNDJN = 4;</code>
+     * @return The unk3300HGPGNCMNDJN.
      */
     @java.lang.Override
-    public int getRestSkillCount() {
-      return restSkillCount_;
+    public int getUnk3300HGPGNCMNDJN() {
+      return unk3300HGPGNCMNDJN_;
     }
 
-    public static final int KILLED_MONSTER_COUNT_FIELD_NUMBER = 15;
-    private int killedMonsterCount_;
+    public static final int UNK3300_EDHANEGNMJM_FIELD_NUMBER = 3;
+    private int unk3300EDHANEGNMJM_;
     /**
-     * <code>uint32 killed_monster_count = 15;</code>
-     * @return The killedMonsterCount.
+     * <code>uint32 Unk3300_EDHANEGNMJM = 3;</code>
+     * @return The unk3300EDHANEGNMJM.
      */
     @java.lang.Override
-    public int getKilledMonsterCount() {
-      return killedMonsterCount_;
+    public int getUnk3300EDHANEGNMJM() {
+      return unk3300EDHANEGNMJM_;
+    }
+
+    public static final int UNK3300_GMLIPFDMDOG_FIELD_NUMBER = 6;
+    private int unk3300GMLIPFDMDOG_;
+    /**
+     * <code>uint32 Unk3300_GMLIPFDMDOG = 6;</code>
+     * @return The unk3300GMLIPFDMDOG.
+     */
+    @java.lang.Override
+    public int getUnk3300GMLIPFDMDOG() {
+      return unk3300GMLIPFDMDOG_;
+    }
+
+    public static final int UNK3300_EKAMCPNGCGH_FIELD_NUMBER = 13;
+    private int unk3300EKAMCPNGCGH_;
+    /**
+     * <code>uint32 Unk3300_EKAMCPNGCGH = 13;</code>
+     * @return The unk3300EKAMCPNGCGH.
+     */
+    @java.lang.Override
+    public int getUnk3300EKAMCPNGCGH() {
+      return unk3300EKAMCPNGCGH_;
+    }
+
+    public static final int MAX_MONSTER_COUNT_FIELD_NUMBER = 9;
+    private int maxMonsterCount_;
+    /**
+     * <code>uint32 max_monster_count = 9;</code>
+     * @return The maxMonsterCount.
+     */
+    @java.lang.Override
+    public int getMaxMonsterCount() {
+      return maxMonsterCount_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -269,26 +273,26 @@ public final class FungusFighterTrainingInfoNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (buffStartTime_ != 0) {
-        output.writeUInt32(3, buffStartTime_);
+      if (unk3300EDHANEGNMJM_ != 0) {
+        output.writeUInt32(3, unk3300EDHANEGNMJM_);
       }
-      if (buffLastTime_ != 0) {
-        output.writeUInt32(4, buffLastTime_);
+      if (unk3300HGPGNCMNDJN_ != 0) {
+        output.writeUInt32(4, unk3300HGPGNCMNDJN_);
       }
-      if (restSkillCount_ != 0) {
-        output.writeUInt32(6, restSkillCount_);
-      }
-      if (maxSkillCount_ != 0) {
-        output.writeUInt32(7, maxSkillCount_);
+      if (unk3300GMLIPFDMDOG_ != 0) {
+        output.writeUInt32(6, unk3300GMLIPFDMDOG_);
       }
       if (maxMonsterCount_ != 0) {
-        output.writeUInt32(8, maxMonsterCount_);
+        output.writeUInt32(9, maxMonsterCount_);
+      }
+      if (unk3300IOEELCAMDCK_ != 0) {
+        output.writeUInt32(10, unk3300IOEELCAMDCK_);
+      }
+      if (unk3300EKAMCPNGCGH_ != 0) {
+        output.writeUInt32(13, unk3300EKAMCPNGCGH_);
       }
       if (buffId_ != 0) {
         output.writeUInt32(14, buffId_);
-      }
-      if (killedMonsterCount_ != 0) {
-        output.writeUInt32(15, killedMonsterCount_);
       }
       unknownFields.writeTo(output);
     }
@@ -299,33 +303,33 @@ public final class FungusFighterTrainingInfoNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (buffStartTime_ != 0) {
+      if (unk3300EDHANEGNMJM_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, buffStartTime_);
+          .computeUInt32Size(3, unk3300EDHANEGNMJM_);
       }
-      if (buffLastTime_ != 0) {
+      if (unk3300HGPGNCMNDJN_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, buffLastTime_);
+          .computeUInt32Size(4, unk3300HGPGNCMNDJN_);
       }
-      if (restSkillCount_ != 0) {
+      if (unk3300GMLIPFDMDOG_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, restSkillCount_);
-      }
-      if (maxSkillCount_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, maxSkillCount_);
+          .computeUInt32Size(6, unk3300GMLIPFDMDOG_);
       }
       if (maxMonsterCount_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, maxMonsterCount_);
+          .computeUInt32Size(9, maxMonsterCount_);
+      }
+      if (unk3300IOEELCAMDCK_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(10, unk3300IOEELCAMDCK_);
+      }
+      if (unk3300EKAMCPNGCGH_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(13, unk3300EKAMCPNGCGH_);
       }
       if (buffId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(14, buffId_);
-      }
-      if (killedMonsterCount_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, killedMonsterCount_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -342,20 +346,20 @@ public final class FungusFighterTrainingInfoNotifyOuterClass {
       }
       emu.grasscutter.net.proto.FungusFighterTrainingInfoNotifyOuterClass.FungusFighterTrainingInfoNotify other = (emu.grasscutter.net.proto.FungusFighterTrainingInfoNotifyOuterClass.FungusFighterTrainingInfoNotify) obj;
 
-      if (getBuffStartTime()
-          != other.getBuffStartTime()) return false;
-      if (getMaxSkillCount()
-          != other.getMaxSkillCount()) return false;
-      if (getMaxMonsterCount()
-          != other.getMaxMonsterCount()) return false;
       if (getBuffId()
           != other.getBuffId()) return false;
-      if (getBuffLastTime()
-          != other.getBuffLastTime()) return false;
-      if (getRestSkillCount()
-          != other.getRestSkillCount()) return false;
-      if (getKilledMonsterCount()
-          != other.getKilledMonsterCount()) return false;
+      if (getUnk3300IOEELCAMDCK()
+          != other.getUnk3300IOEELCAMDCK()) return false;
+      if (getUnk3300HGPGNCMNDJN()
+          != other.getUnk3300HGPGNCMNDJN()) return false;
+      if (getUnk3300EDHANEGNMJM()
+          != other.getUnk3300EDHANEGNMJM()) return false;
+      if (getUnk3300GMLIPFDMDOG()
+          != other.getUnk3300GMLIPFDMDOG()) return false;
+      if (getUnk3300EKAMCPNGCGH()
+          != other.getUnk3300EKAMCPNGCGH()) return false;
+      if (getMaxMonsterCount()
+          != other.getMaxMonsterCount()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -367,20 +371,20 @@ public final class FungusFighterTrainingInfoNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + BUFF_START_TIME_FIELD_NUMBER;
-      hash = (53 * hash) + getBuffStartTime();
-      hash = (37 * hash) + MAX_SKILL_COUNT_FIELD_NUMBER;
-      hash = (53 * hash) + getMaxSkillCount();
-      hash = (37 * hash) + MAX_MONSTER_COUNT_FIELD_NUMBER;
-      hash = (53 * hash) + getMaxMonsterCount();
       hash = (37 * hash) + BUFF_ID_FIELD_NUMBER;
       hash = (53 * hash) + getBuffId();
-      hash = (37 * hash) + BUFF_LAST_TIME_FIELD_NUMBER;
-      hash = (53 * hash) + getBuffLastTime();
-      hash = (37 * hash) + REST_SKILL_COUNT_FIELD_NUMBER;
-      hash = (53 * hash) + getRestSkillCount();
-      hash = (37 * hash) + KILLED_MONSTER_COUNT_FIELD_NUMBER;
-      hash = (53 * hash) + getKilledMonsterCount();
+      hash = (37 * hash) + UNK3300_IOEELCAMDCK_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300IOEELCAMDCK();
+      hash = (37 * hash) + UNK3300_HGPGNCMNDJN_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300HGPGNCMNDJN();
+      hash = (37 * hash) + UNK3300_EDHANEGNMJM_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300EDHANEGNMJM();
+      hash = (37 * hash) + UNK3300_GMLIPFDMDOG_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300GMLIPFDMDOG();
+      hash = (37 * hash) + UNK3300_EKAMCPNGCGH_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300EKAMCPNGCGH();
+      hash = (37 * hash) + MAX_MONSTER_COUNT_FIELD_NUMBER;
+      hash = (53 * hash) + getMaxMonsterCount();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -478,9 +482,13 @@ public final class FungusFighterTrainingInfoNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 5595
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 5533;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code FungusFighterTrainingInfoNotify}
@@ -520,19 +528,19 @@ public final class FungusFighterTrainingInfoNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        buffStartTime_ = 0;
-
-        maxSkillCount_ = 0;
-
-        maxMonsterCount_ = 0;
-
         buffId_ = 0;
 
-        buffLastTime_ = 0;
+        unk3300IOEELCAMDCK_ = 0;
 
-        restSkillCount_ = 0;
+        unk3300HGPGNCMNDJN_ = 0;
 
-        killedMonsterCount_ = 0;
+        unk3300EDHANEGNMJM_ = 0;
+
+        unk3300GMLIPFDMDOG_ = 0;
+
+        unk3300EKAMCPNGCGH_ = 0;
+
+        maxMonsterCount_ = 0;
 
         return this;
       }
@@ -560,13 +568,13 @@ public final class FungusFighterTrainingInfoNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.FungusFighterTrainingInfoNotifyOuterClass.FungusFighterTrainingInfoNotify buildPartial() {
         emu.grasscutter.net.proto.FungusFighterTrainingInfoNotifyOuterClass.FungusFighterTrainingInfoNotify result = new emu.grasscutter.net.proto.FungusFighterTrainingInfoNotifyOuterClass.FungusFighterTrainingInfoNotify(this);
-        result.buffStartTime_ = buffStartTime_;
-        result.maxSkillCount_ = maxSkillCount_;
-        result.maxMonsterCount_ = maxMonsterCount_;
         result.buffId_ = buffId_;
-        result.buffLastTime_ = buffLastTime_;
-        result.restSkillCount_ = restSkillCount_;
-        result.killedMonsterCount_ = killedMonsterCount_;
+        result.unk3300IOEELCAMDCK_ = unk3300IOEELCAMDCK_;
+        result.unk3300HGPGNCMNDJN_ = unk3300HGPGNCMNDJN_;
+        result.unk3300EDHANEGNMJM_ = unk3300EDHANEGNMJM_;
+        result.unk3300GMLIPFDMDOG_ = unk3300GMLIPFDMDOG_;
+        result.unk3300EKAMCPNGCGH_ = unk3300EKAMCPNGCGH_;
+        result.maxMonsterCount_ = maxMonsterCount_;
         onBuilt();
         return result;
       }
@@ -615,26 +623,26 @@ public final class FungusFighterTrainingInfoNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.FungusFighterTrainingInfoNotifyOuterClass.FungusFighterTrainingInfoNotify other) {
         if (other == emu.grasscutter.net.proto.FungusFighterTrainingInfoNotifyOuterClass.FungusFighterTrainingInfoNotify.getDefaultInstance()) return this;
-        if (other.getBuffStartTime() != 0) {
-          setBuffStartTime(other.getBuffStartTime());
-        }
-        if (other.getMaxSkillCount() != 0) {
-          setMaxSkillCount(other.getMaxSkillCount());
-        }
-        if (other.getMaxMonsterCount() != 0) {
-          setMaxMonsterCount(other.getMaxMonsterCount());
-        }
         if (other.getBuffId() != 0) {
           setBuffId(other.getBuffId());
         }
-        if (other.getBuffLastTime() != 0) {
-          setBuffLastTime(other.getBuffLastTime());
+        if (other.getUnk3300IOEELCAMDCK() != 0) {
+          setUnk3300IOEELCAMDCK(other.getUnk3300IOEELCAMDCK());
         }
-        if (other.getRestSkillCount() != 0) {
-          setRestSkillCount(other.getRestSkillCount());
+        if (other.getUnk3300HGPGNCMNDJN() != 0) {
+          setUnk3300HGPGNCMNDJN(other.getUnk3300HGPGNCMNDJN());
         }
-        if (other.getKilledMonsterCount() != 0) {
-          setKilledMonsterCount(other.getKilledMonsterCount());
+        if (other.getUnk3300EDHANEGNMJM() != 0) {
+          setUnk3300EDHANEGNMJM(other.getUnk3300EDHANEGNMJM());
+        }
+        if (other.getUnk3300GMLIPFDMDOG() != 0) {
+          setUnk3300GMLIPFDMDOG(other.getUnk3300GMLIPFDMDOG());
+        }
+        if (other.getUnk3300EKAMCPNGCGH() != 0) {
+          setUnk3300EKAMCPNGCGH(other.getUnk3300EKAMCPNGCGH());
+        }
+        if (other.getMaxMonsterCount() != 0) {
+          setMaxMonsterCount(other.getMaxMonsterCount());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -662,99 +670,6 @@ public final class FungusFighterTrainingInfoNotifyOuterClass {
             mergeFrom(parsedMessage);
           }
         }
-        return this;
-      }
-
-      private int buffStartTime_ ;
-      /**
-       * <code>uint32 buff_start_time = 3;</code>
-       * @return The buffStartTime.
-       */
-      @java.lang.Override
-      public int getBuffStartTime() {
-        return buffStartTime_;
-      }
-      /**
-       * <code>uint32 buff_start_time = 3;</code>
-       * @param value The buffStartTime to set.
-       * @return This builder for chaining.
-       */
-      public Builder setBuffStartTime(int value) {
-        
-        buffStartTime_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 buff_start_time = 3;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearBuffStartTime() {
-        
-        buffStartTime_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int maxSkillCount_ ;
-      /**
-       * <code>uint32 max_skill_count = 7;</code>
-       * @return The maxSkillCount.
-       */
-      @java.lang.Override
-      public int getMaxSkillCount() {
-        return maxSkillCount_;
-      }
-      /**
-       * <code>uint32 max_skill_count = 7;</code>
-       * @param value The maxSkillCount to set.
-       * @return This builder for chaining.
-       */
-      public Builder setMaxSkillCount(int value) {
-        
-        maxSkillCount_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 max_skill_count = 7;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearMaxSkillCount() {
-        
-        maxSkillCount_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int maxMonsterCount_ ;
-      /**
-       * <code>uint32 max_monster_count = 8;</code>
-       * @return The maxMonsterCount.
-       */
-      @java.lang.Override
-      public int getMaxMonsterCount() {
-        return maxMonsterCount_;
-      }
-      /**
-       * <code>uint32 max_monster_count = 8;</code>
-       * @param value The maxMonsterCount to set.
-       * @return This builder for chaining.
-       */
-      public Builder setMaxMonsterCount(int value) {
-        
-        maxMonsterCount_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 max_monster_count = 8;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearMaxMonsterCount() {
-        
-        maxMonsterCount_ = 0;
-        onChanged();
         return this;
       }
 
@@ -789,95 +704,188 @@ public final class FungusFighterTrainingInfoNotifyOuterClass {
         return this;
       }
 
-      private int buffLastTime_ ;
+      private int unk3300IOEELCAMDCK_ ;
       /**
-       * <code>uint32 buff_last_time = 4;</code>
-       * @return The buffLastTime.
+       * <code>uint32 Unk3300_IOEELCAMDCK = 10;</code>
+       * @return The unk3300IOEELCAMDCK.
        */
       @java.lang.Override
-      public int getBuffLastTime() {
-        return buffLastTime_;
+      public int getUnk3300IOEELCAMDCK() {
+        return unk3300IOEELCAMDCK_;
       }
       /**
-       * <code>uint32 buff_last_time = 4;</code>
-       * @param value The buffLastTime to set.
+       * <code>uint32 Unk3300_IOEELCAMDCK = 10;</code>
+       * @param value The unk3300IOEELCAMDCK to set.
        * @return This builder for chaining.
        */
-      public Builder setBuffLastTime(int value) {
+      public Builder setUnk3300IOEELCAMDCK(int value) {
         
-        buffLastTime_ = value;
+        unk3300IOEELCAMDCK_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 buff_last_time = 4;</code>
+       * <code>uint32 Unk3300_IOEELCAMDCK = 10;</code>
        * @return This builder for chaining.
        */
-      public Builder clearBuffLastTime() {
+      public Builder clearUnk3300IOEELCAMDCK() {
         
-        buffLastTime_ = 0;
+        unk3300IOEELCAMDCK_ = 0;
         onChanged();
         return this;
       }
 
-      private int restSkillCount_ ;
+      private int unk3300HGPGNCMNDJN_ ;
       /**
-       * <code>uint32 rest_skill_count = 6;</code>
-       * @return The restSkillCount.
+       * <code>uint32 Unk3300_HGPGNCMNDJN = 4;</code>
+       * @return The unk3300HGPGNCMNDJN.
        */
       @java.lang.Override
-      public int getRestSkillCount() {
-        return restSkillCount_;
+      public int getUnk3300HGPGNCMNDJN() {
+        return unk3300HGPGNCMNDJN_;
       }
       /**
-       * <code>uint32 rest_skill_count = 6;</code>
-       * @param value The restSkillCount to set.
+       * <code>uint32 Unk3300_HGPGNCMNDJN = 4;</code>
+       * @param value The unk3300HGPGNCMNDJN to set.
        * @return This builder for chaining.
        */
-      public Builder setRestSkillCount(int value) {
+      public Builder setUnk3300HGPGNCMNDJN(int value) {
         
-        restSkillCount_ = value;
+        unk3300HGPGNCMNDJN_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 rest_skill_count = 6;</code>
+       * <code>uint32 Unk3300_HGPGNCMNDJN = 4;</code>
        * @return This builder for chaining.
        */
-      public Builder clearRestSkillCount() {
+      public Builder clearUnk3300HGPGNCMNDJN() {
         
-        restSkillCount_ = 0;
+        unk3300HGPGNCMNDJN_ = 0;
         onChanged();
         return this;
       }
 
-      private int killedMonsterCount_ ;
+      private int unk3300EDHANEGNMJM_ ;
       /**
-       * <code>uint32 killed_monster_count = 15;</code>
-       * @return The killedMonsterCount.
+       * <code>uint32 Unk3300_EDHANEGNMJM = 3;</code>
+       * @return The unk3300EDHANEGNMJM.
        */
       @java.lang.Override
-      public int getKilledMonsterCount() {
-        return killedMonsterCount_;
+      public int getUnk3300EDHANEGNMJM() {
+        return unk3300EDHANEGNMJM_;
       }
       /**
-       * <code>uint32 killed_monster_count = 15;</code>
-       * @param value The killedMonsterCount to set.
+       * <code>uint32 Unk3300_EDHANEGNMJM = 3;</code>
+       * @param value The unk3300EDHANEGNMJM to set.
        * @return This builder for chaining.
        */
-      public Builder setKilledMonsterCount(int value) {
+      public Builder setUnk3300EDHANEGNMJM(int value) {
         
-        killedMonsterCount_ = value;
+        unk3300EDHANEGNMJM_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 killed_monster_count = 15;</code>
+       * <code>uint32 Unk3300_EDHANEGNMJM = 3;</code>
        * @return This builder for chaining.
        */
-      public Builder clearKilledMonsterCount() {
+      public Builder clearUnk3300EDHANEGNMJM() {
         
-        killedMonsterCount_ = 0;
+        unk3300EDHANEGNMJM_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int unk3300GMLIPFDMDOG_ ;
+      /**
+       * <code>uint32 Unk3300_GMLIPFDMDOG = 6;</code>
+       * @return The unk3300GMLIPFDMDOG.
+       */
+      @java.lang.Override
+      public int getUnk3300GMLIPFDMDOG() {
+        return unk3300GMLIPFDMDOG_;
+      }
+      /**
+       * <code>uint32 Unk3300_GMLIPFDMDOG = 6;</code>
+       * @param value The unk3300GMLIPFDMDOG to set.
+       * @return This builder for chaining.
+       */
+      public Builder setUnk3300GMLIPFDMDOG(int value) {
+        
+        unk3300GMLIPFDMDOG_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 Unk3300_GMLIPFDMDOG = 6;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearUnk3300GMLIPFDMDOG() {
+        
+        unk3300GMLIPFDMDOG_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int unk3300EKAMCPNGCGH_ ;
+      /**
+       * <code>uint32 Unk3300_EKAMCPNGCGH = 13;</code>
+       * @return The unk3300EKAMCPNGCGH.
+       */
+      @java.lang.Override
+      public int getUnk3300EKAMCPNGCGH() {
+        return unk3300EKAMCPNGCGH_;
+      }
+      /**
+       * <code>uint32 Unk3300_EKAMCPNGCGH = 13;</code>
+       * @param value The unk3300EKAMCPNGCGH to set.
+       * @return This builder for chaining.
+       */
+      public Builder setUnk3300EKAMCPNGCGH(int value) {
+        
+        unk3300EKAMCPNGCGH_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 Unk3300_EKAMCPNGCGH = 13;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearUnk3300EKAMCPNGCGH() {
+        
+        unk3300EKAMCPNGCGH_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int maxMonsterCount_ ;
+      /**
+       * <code>uint32 max_monster_count = 9;</code>
+       * @return The maxMonsterCount.
+       */
+      @java.lang.Override
+      public int getMaxMonsterCount() {
+        return maxMonsterCount_;
+      }
+      /**
+       * <code>uint32 max_monster_count = 9;</code>
+       * @param value The maxMonsterCount to set.
+       * @return This builder for chaining.
+       */
+      public Builder setMaxMonsterCount(int value) {
+        
+        maxMonsterCount_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 max_monster_count = 9;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearMaxMonsterCount() {
+        
+        maxMonsterCount_ = 0;
         onChanged();
         return this;
       }
@@ -949,13 +957,13 @@ public final class FungusFighterTrainingInfoNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n%FungusFighterTrainingInfoNotify.proto\"" +
-      "\317\001\n\037FungusFighterTrainingInfoNotify\022\027\n\017b" +
-      "uff_start_time\030\003 \001(\r\022\027\n\017max_skill_count\030" +
-      "\007 \001(\r\022\031\n\021max_monster_count\030\010 \001(\r\022\017\n\007buff" +
-      "_id\030\016 \001(\r\022\026\n\016buff_last_time\030\004 \001(\r\022\030\n\020res" +
-      "t_skill_count\030\006 \001(\r\022\034\n\024killed_monster_co" +
-      "unt\030\017 \001(\rB\033\n\031emu.grasscutter.net.protob\006" +
-      "proto3"
+      "\336\001\n\037FungusFighterTrainingInfoNotify\022\017\n\007b" +
+      "uff_id\030\016 \001(\r\022\033\n\023Unk3300_IOEELCAMDCK\030\n \001(" +
+      "\r\022\033\n\023Unk3300_HGPGNCMNDJN\030\004 \001(\r\022\033\n\023Unk330" +
+      "0_EDHANEGNMJM\030\003 \001(\r\022\033\n\023Unk3300_GMLIPFDMD" +
+      "OG\030\006 \001(\r\022\033\n\023Unk3300_EKAMCPNGCGH\030\r \001(\r\022\031\n" +
+      "\021max_monster_count\030\t \001(\rB\033\n\031emu.grasscut" +
+      "ter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -966,7 +974,7 @@ public final class FungusFighterTrainingInfoNotifyOuterClass {
     internal_static_FungusFighterTrainingInfoNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_FungusFighterTrainingInfoNotify_descriptor,
-        new java.lang.String[] { "BuffStartTime", "MaxSkillCount", "MaxMonsterCount", "BuffId", "BuffLastTime", "RestSkillCount", "KilledMonsterCount", });
+        new java.lang.String[] { "BuffId", "Unk3300IOEELCAMDCK", "Unk3300HGPGNCMNDJN", "Unk3300EDHANEGNMJM", "Unk3300GMLIPFDMDOG", "Unk3300EKAMCPNGCGH", "MaxMonsterCount", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

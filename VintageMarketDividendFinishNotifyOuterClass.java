@@ -19,22 +19,26 @@ public final class VintageMarketDividendFinishNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 coin_a = 5;</code>
+     * <code>uint32 coin_a = 2;</code>
      * @return The coinA.
      */
     int getCoinA();
 
     /**
-     * <code>uint32 coin_c = 11;</code>
+     * <code>uint32 coin_c = 14;</code>
      * @return The coinC.
      */
     int getCoinC();
   }
   /**
    * <pre>
-   * CmdId: 23147
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 22064;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code VintageMarketDividendFinishNotify}
@@ -81,12 +85,12 @@ public final class VintageMarketDividendFinishNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 40: {
+            case 16: {
 
               coinA_ = input.readUInt32();
               break;
             }
-            case 88: {
+            case 112: {
 
               coinC_ = input.readUInt32();
               break;
@@ -123,10 +127,10 @@ public final class VintageMarketDividendFinishNotifyOuterClass {
               emu.grasscutter.net.proto.VintageMarketDividendFinishNotifyOuterClass.VintageMarketDividendFinishNotify.class, emu.grasscutter.net.proto.VintageMarketDividendFinishNotifyOuterClass.VintageMarketDividendFinishNotify.Builder.class);
     }
 
-    public static final int COIN_A_FIELD_NUMBER = 5;
+    public static final int COIN_A_FIELD_NUMBER = 2;
     private int coinA_;
     /**
-     * <code>uint32 coin_a = 5;</code>
+     * <code>uint32 coin_a = 2;</code>
      * @return The coinA.
      */
     @java.lang.Override
@@ -134,10 +138,10 @@ public final class VintageMarketDividendFinishNotifyOuterClass {
       return coinA_;
     }
 
-    public static final int COIN_C_FIELD_NUMBER = 11;
+    public static final int COIN_C_FIELD_NUMBER = 14;
     private int coinC_;
     /**
-     * <code>uint32 coin_c = 11;</code>
+     * <code>uint32 coin_c = 14;</code>
      * @return The coinC.
      */
     @java.lang.Override
@@ -160,10 +164,10 @@ public final class VintageMarketDividendFinishNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (coinA_ != 0) {
-        output.writeUInt32(5, coinA_);
+        output.writeUInt32(2, coinA_);
       }
       if (coinC_ != 0) {
-        output.writeUInt32(11, coinC_);
+        output.writeUInt32(14, coinC_);
       }
       unknownFields.writeTo(output);
     }
@@ -176,11 +180,11 @@ public final class VintageMarketDividendFinishNotifyOuterClass {
       size = 0;
       if (coinA_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, coinA_);
+          .computeUInt32Size(2, coinA_);
       }
       if (coinC_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, coinC_);
+          .computeUInt32Size(14, coinC_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -313,9 +317,13 @@ public final class VintageMarketDividendFinishNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 23147
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 22064;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code VintageMarketDividendFinishNotify}
@@ -472,7 +480,7 @@ public final class VintageMarketDividendFinishNotifyOuterClass {
 
       private int coinA_ ;
       /**
-       * <code>uint32 coin_a = 5;</code>
+       * <code>uint32 coin_a = 2;</code>
        * @return The coinA.
        */
       @java.lang.Override
@@ -480,7 +488,7 @@ public final class VintageMarketDividendFinishNotifyOuterClass {
         return coinA_;
       }
       /**
-       * <code>uint32 coin_a = 5;</code>
+       * <code>uint32 coin_a = 2;</code>
        * @param value The coinA to set.
        * @return This builder for chaining.
        */
@@ -491,7 +499,7 @@ public final class VintageMarketDividendFinishNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 coin_a = 5;</code>
+       * <code>uint32 coin_a = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearCoinA() {
@@ -503,7 +511,7 @@ public final class VintageMarketDividendFinishNotifyOuterClass {
 
       private int coinC_ ;
       /**
-       * <code>uint32 coin_c = 11;</code>
+       * <code>uint32 coin_c = 14;</code>
        * @return The coinC.
        */
       @java.lang.Override
@@ -511,7 +519,7 @@ public final class VintageMarketDividendFinishNotifyOuterClass {
         return coinC_;
       }
       /**
-       * <code>uint32 coin_c = 11;</code>
+       * <code>uint32 coin_c = 14;</code>
        * @param value The coinC to set.
        * @return This builder for chaining.
        */
@@ -522,7 +530,7 @@ public final class VintageMarketDividendFinishNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 coin_c = 11;</code>
+       * <code>uint32 coin_c = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearCoinC() {
@@ -600,7 +608,7 @@ public final class VintageMarketDividendFinishNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n\'VintageMarketDividendFinishNotify.prot" +
       "o\"C\n!VintageMarketDividendFinishNotify\022\016" +
-      "\n\006coin_a\030\005 \001(\r\022\016\n\006coin_c\030\013 \001(\rB\033\n\031emu.gr" +
+      "\n\006coin_a\030\002 \001(\r\022\016\n\006coin_c\030\016 \001(\rB\033\n\031emu.gr" +
       "asscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

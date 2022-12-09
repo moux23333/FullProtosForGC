@@ -136,9 +136,9 @@ public final class ChangeHpReasonOuterClass {
      */
     CHANGE_HP_REASON_ADD_TRIAL_AVATAR_ACTIVITY(108),
     /**
-     * <code>CHANGE_HP_REASON_ADD_ROUGUELIKE_SPRING = 109;</code>
+     * <code>CHANGE_HP_REASON_ADD_ROGUELIKE_SPRING = 109;</code>
      */
-    CHANGE_HP_REASON_ADD_ROUGUELIKE_SPRING(109),
+    CHANGE_HP_REASON_ADD_ROGUELIKE_SPRING(109),
     UNRECOGNIZED(-1),
     ;
 
@@ -259,9 +259,9 @@ public final class ChangeHpReasonOuterClass {
      */
     public static final int CHANGE_HP_REASON_ADD_TRIAL_AVATAR_ACTIVITY_VALUE = 108;
     /**
-     * <code>CHANGE_HP_REASON_ADD_ROUGUELIKE_SPRING = 109;</code>
+     * <code>CHANGE_HP_REASON_ADD_ROGUELIKE_SPRING = 109;</code>
      */
-    public static final int CHANGE_HP_REASON_ADD_ROUGUELIKE_SPRING_VALUE = 109;
+    public static final int CHANGE_HP_REASON_ADD_ROGUELIKE_SPRING_VALUE = 109;
 
 
     public final int getNumber() {
@@ -317,7 +317,7 @@ public final class ChangeHpReasonOuterClass {
         case 106: return CHANGE_HP_REASON_ADD_BACKGROUND;
         case 107: return CHANGE_HP_REASON_ADD_GM;
         case 108: return CHANGE_HP_REASON_ADD_TRIAL_AVATAR_ACTIVITY;
-        case 109: return CHANGE_HP_REASON_ADD_ROUGUELIKE_SPRING;
+        case 109: return CHANGE_HP_REASON_ADD_ROGUELIKE_SPRING;
         default: return null;
       }
     }
@@ -383,7 +383,7 @@ public final class ChangeHpReasonOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\024ChangeHpReason.proto*\247\010\n\016ChangeHpReaso" +
+      "\n\024ChangeHpReason.proto*\246\010\n\016ChangeHpReaso" +
       "n\022\031\n\025CHANGE_HP_REASON_NONE\020\000\022\037\n\033CHANGE_H" +
       "P_REASON_SUB_AVATAR\020\001\022 \n\034CHANGE_HP_REASO" +
       "N_SUB_MONSTER\020\002\022\035\n\031CHANGE_HP_REASON_SUB_" +
@@ -409,9 +409,9 @@ public final class ChangeHpReasonOuterClass {
       "D_STATUE\020i\022#\n\037CHANGE_HP_REASON_ADD_BACKG" +
       "ROUND\020j\022\033\n\027CHANGE_HP_REASON_ADD_GM\020k\022.\n*" +
       "CHANGE_HP_REASON_ADD_TRIAL_AVATAR_ACTIVI" +
-      "TY\020l\022*\n&CHANGE_HP_REASON_ADD_ROUGUELIKE_" +
-      "SPRING\020mB\033\n\031emu.grasscutter.net.protob\006p" +
-      "roto3"
+      "TY\020l\022)\n%CHANGE_HP_REASON_ADD_ROGUELIKE_S" +
+      "PRING\020mB\033\n\031emu.grasscutter.net.protob\006pr" +
+      "oto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

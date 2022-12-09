@@ -19,17 +19,21 @@ public final class DailyTaskFilterCityReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 city_id = 8;</code>
+     * <code>uint32 city_id = 7;</code>
      * @return The cityId.
      */
     int getCityId();
   }
   /**
    * <pre>
-   * CmdId: 111
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 101;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code DailyTaskFilterCityReq}
@@ -76,7 +80,7 @@ public final class DailyTaskFilterCityReqOuterClass {
             case 0:
               done = true;
               break;
-            case 64: {
+            case 56: {
 
               cityId_ = input.readUInt32();
               break;
@@ -113,10 +117,10 @@ public final class DailyTaskFilterCityReqOuterClass {
               emu.grasscutter.net.proto.DailyTaskFilterCityReqOuterClass.DailyTaskFilterCityReq.class, emu.grasscutter.net.proto.DailyTaskFilterCityReqOuterClass.DailyTaskFilterCityReq.Builder.class);
     }
 
-    public static final int CITY_ID_FIELD_NUMBER = 8;
+    public static final int CITY_ID_FIELD_NUMBER = 7;
     private int cityId_;
     /**
-     * <code>uint32 city_id = 8;</code>
+     * <code>uint32 city_id = 7;</code>
      * @return The cityId.
      */
     @java.lang.Override
@@ -139,7 +143,7 @@ public final class DailyTaskFilterCityReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (cityId_ != 0) {
-        output.writeUInt32(8, cityId_);
+        output.writeUInt32(7, cityId_);
       }
       unknownFields.writeTo(output);
     }
@@ -152,7 +156,7 @@ public final class DailyTaskFilterCityReqOuterClass {
       size = 0;
       if (cityId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, cityId_);
+          .computeUInt32Size(7, cityId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -281,10 +285,14 @@ public final class DailyTaskFilterCityReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 111
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 101;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code DailyTaskFilterCityReq}
@@ -435,7 +443,7 @@ public final class DailyTaskFilterCityReqOuterClass {
 
       private int cityId_ ;
       /**
-       * <code>uint32 city_id = 8;</code>
+       * <code>uint32 city_id = 7;</code>
        * @return The cityId.
        */
       @java.lang.Override
@@ -443,7 +451,7 @@ public final class DailyTaskFilterCityReqOuterClass {
         return cityId_;
       }
       /**
-       * <code>uint32 city_id = 8;</code>
+       * <code>uint32 city_id = 7;</code>
        * @param value The cityId to set.
        * @return This builder for chaining.
        */
@@ -454,7 +462,7 @@ public final class DailyTaskFilterCityReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 city_id = 8;</code>
+       * <code>uint32 city_id = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearCityId() {
@@ -531,7 +539,7 @@ public final class DailyTaskFilterCityReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\034DailyTaskFilterCityReq.proto\")\n\026DailyT" +
-      "askFilterCityReq\022\017\n\007city_id\030\010 \001(\rB\033\n\031emu" +
+      "askFilterCityReq\022\017\n\007city_id\030\007 \001(\rB\033\n\031emu" +
       ".grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

@@ -19,16 +19,20 @@ public final class MichiaeMatsuriDarkPressureLevelUpdateNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 dark_pressure_level = 8;</code>
+     * <code>uint32 dark_pressure_level = 9;</code>
      * @return The darkPressureLevel.
      */
     int getDarkPressureLevel();
   }
   /**
    * <pre>
-   * CmdId: 8825
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 8136;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code MichiaeMatsuriDarkPressureLevelUpdateNotify}
@@ -75,7 +79,7 @@ public final class MichiaeMatsuriDarkPressureLevelUpdateNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 64: {
+            case 72: {
 
               darkPressureLevel_ = input.readUInt32();
               break;
@@ -112,10 +116,10 @@ public final class MichiaeMatsuriDarkPressureLevelUpdateNotifyOuterClass {
               emu.grasscutter.net.proto.MichiaeMatsuriDarkPressureLevelUpdateNotifyOuterClass.MichiaeMatsuriDarkPressureLevelUpdateNotify.class, emu.grasscutter.net.proto.MichiaeMatsuriDarkPressureLevelUpdateNotifyOuterClass.MichiaeMatsuriDarkPressureLevelUpdateNotify.Builder.class);
     }
 
-    public static final int DARK_PRESSURE_LEVEL_FIELD_NUMBER = 8;
+    public static final int DARK_PRESSURE_LEVEL_FIELD_NUMBER = 9;
     private int darkPressureLevel_;
     /**
-     * <code>uint32 dark_pressure_level = 8;</code>
+     * <code>uint32 dark_pressure_level = 9;</code>
      * @return The darkPressureLevel.
      */
     @java.lang.Override
@@ -138,7 +142,7 @@ public final class MichiaeMatsuriDarkPressureLevelUpdateNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (darkPressureLevel_ != 0) {
-        output.writeUInt32(8, darkPressureLevel_);
+        output.writeUInt32(9, darkPressureLevel_);
       }
       unknownFields.writeTo(output);
     }
@@ -151,7 +155,7 @@ public final class MichiaeMatsuriDarkPressureLevelUpdateNotifyOuterClass {
       size = 0;
       if (darkPressureLevel_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, darkPressureLevel_);
+          .computeUInt32Size(9, darkPressureLevel_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -280,9 +284,13 @@ public final class MichiaeMatsuriDarkPressureLevelUpdateNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 8825
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 8136;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code MichiaeMatsuriDarkPressureLevelUpdateNotify}
@@ -433,7 +441,7 @@ public final class MichiaeMatsuriDarkPressureLevelUpdateNotifyOuterClass {
 
       private int darkPressureLevel_ ;
       /**
-       * <code>uint32 dark_pressure_level = 8;</code>
+       * <code>uint32 dark_pressure_level = 9;</code>
        * @return The darkPressureLevel.
        */
       @java.lang.Override
@@ -441,7 +449,7 @@ public final class MichiaeMatsuriDarkPressureLevelUpdateNotifyOuterClass {
         return darkPressureLevel_;
       }
       /**
-       * <code>uint32 dark_pressure_level = 8;</code>
+       * <code>uint32 dark_pressure_level = 9;</code>
        * @param value The darkPressureLevel to set.
        * @return This builder for chaining.
        */
@@ -452,7 +460,7 @@ public final class MichiaeMatsuriDarkPressureLevelUpdateNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 dark_pressure_level = 8;</code>
+       * <code>uint32 dark_pressure_level = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearDarkPressureLevel() {
@@ -531,7 +539,7 @@ public final class MichiaeMatsuriDarkPressureLevelUpdateNotifyOuterClass {
       "\n1MichiaeMatsuriDarkPressureLevelUpdateN" +
       "otify.proto\"J\n+MichiaeMatsuriDarkPressur" +
       "eLevelUpdateNotify\022\033\n\023dark_pressure_leve" +
-      "l\030\010 \001(\rB\033\n\031emu.grasscutter.net.protob\006pr" +
+      "l\030\t \001(\rB\033\n\031emu.grasscutter.net.protob\006pr" +
       "oto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

@@ -19,13 +19,13 @@ public final class PlantFlowerAcceptAllGiveFlowerRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 schedule_id = 10;</code>
+     * <code>uint32 schedule_id = 12;</code>
      * @return The scheduleId.
      */
     int getScheduleId();
 
     /**
-     * <code>int32 retcode = 11;</code>
+     * <code>int32 retcode = 6;</code>
      * @return The retcode.
      */
     int getRetcode();
@@ -56,9 +56,13 @@ public final class PlantFlowerAcceptAllGiveFlowerRspOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 8888
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 8313;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code PlantFlowerAcceptAllGiveFlowerRsp}
@@ -107,14 +111,14 @@ public final class PlantFlowerAcceptAllGiveFlowerRspOuterClass {
             case 0:
               done = true;
               break;
-            case 80: {
-
-              scheduleId_ = input.readUInt32();
-              break;
-            }
-            case 88: {
+            case 48: {
 
               retcode_ = input.readInt32();
+              break;
+            }
+            case 96: {
+
+              scheduleId_ = input.readUInt32();
               break;
             }
             case 106: {
@@ -161,10 +165,10 @@ public final class PlantFlowerAcceptAllGiveFlowerRspOuterClass {
               emu.grasscutter.net.proto.PlantFlowerAcceptAllGiveFlowerRspOuterClass.PlantFlowerAcceptAllGiveFlowerRsp.class, emu.grasscutter.net.proto.PlantFlowerAcceptAllGiveFlowerRspOuterClass.PlantFlowerAcceptAllGiveFlowerRsp.Builder.class);
     }
 
-    public static final int SCHEDULE_ID_FIELD_NUMBER = 10;
+    public static final int SCHEDULE_ID_FIELD_NUMBER = 12;
     private int scheduleId_;
     /**
-     * <code>uint32 schedule_id = 10;</code>
+     * <code>uint32 schedule_id = 12;</code>
      * @return The scheduleId.
      */
     @java.lang.Override
@@ -172,10 +176,10 @@ public final class PlantFlowerAcceptAllGiveFlowerRspOuterClass {
       return scheduleId_;
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 11;
+    public static final int RETCODE_FIELD_NUMBER = 6;
     private int retcode_;
     /**
-     * <code>int32 retcode = 11;</code>
+     * <code>int32 retcode = 6;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -237,11 +241,11 @@ public final class PlantFlowerAcceptAllGiveFlowerRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (scheduleId_ != 0) {
-        output.writeUInt32(10, scheduleId_);
-      }
       if (retcode_ != 0) {
-        output.writeInt32(11, retcode_);
+        output.writeInt32(6, retcode_);
+      }
+      if (scheduleId_ != 0) {
+        output.writeUInt32(12, scheduleId_);
       }
       for (int i = 0; i < acceptFlowerResultInfoList_.size(); i++) {
         output.writeMessage(13, acceptFlowerResultInfoList_.get(i));
@@ -255,13 +259,13 @@ public final class PlantFlowerAcceptAllGiveFlowerRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (scheduleId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, scheduleId_);
-      }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(11, retcode_);
+          .computeInt32Size(6, retcode_);
+      }
+      if (scheduleId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(12, scheduleId_);
       }
       for (int i = 0; i < acceptFlowerResultInfoList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
@@ -404,9 +408,13 @@ public final class PlantFlowerAcceptAllGiveFlowerRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 8888
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 8313;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code PlantFlowerAcceptAllGiveFlowerRsp}
@@ -607,7 +615,7 @@ public final class PlantFlowerAcceptAllGiveFlowerRspOuterClass {
 
       private int scheduleId_ ;
       /**
-       * <code>uint32 schedule_id = 10;</code>
+       * <code>uint32 schedule_id = 12;</code>
        * @return The scheduleId.
        */
       @java.lang.Override
@@ -615,7 +623,7 @@ public final class PlantFlowerAcceptAllGiveFlowerRspOuterClass {
         return scheduleId_;
       }
       /**
-       * <code>uint32 schedule_id = 10;</code>
+       * <code>uint32 schedule_id = 12;</code>
        * @param value The scheduleId to set.
        * @return This builder for chaining.
        */
@@ -626,7 +634,7 @@ public final class PlantFlowerAcceptAllGiveFlowerRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 schedule_id = 10;</code>
+       * <code>uint32 schedule_id = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearScheduleId() {
@@ -638,7 +646,7 @@ public final class PlantFlowerAcceptAllGiveFlowerRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 11;</code>
+       * <code>int32 retcode = 6;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -646,7 +654,7 @@ public final class PlantFlowerAcceptAllGiveFlowerRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 11;</code>
+       * <code>int32 retcode = 6;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -657,7 +665,7 @@ public final class PlantFlowerAcceptAllGiveFlowerRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 11;</code>
+       * <code>int32 retcode = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -976,7 +984,7 @@ public final class PlantFlowerAcceptAllGiveFlowerRspOuterClass {
       "\n\'PlantFlowerAcceptAllGiveFlowerRsp.prot" +
       "o\032\'PlantFlowerAcceptFlowerResultInfo.pro" +
       "to\"\225\001\n!PlantFlowerAcceptAllGiveFlowerRsp" +
-      "\022\023\n\013schedule_id\030\n \001(\r\022\017\n\007retcode\030\013 \001(\005\022J" +
+      "\022\023\n\013schedule_id\030\014 \001(\r\022\017\n\007retcode\030\006 \001(\005\022J" +
       "\n\036accept_flower_result_info_list\030\r \003(\0132\"" +
       ".PlantFlowerAcceptFlowerResultInfoB\033\n\031em" +
       "u.grasscutter.net.protob\006proto3"

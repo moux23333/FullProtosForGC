@@ -19,17 +19,17 @@ public final class CoopCgShowNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated uint32 cg_list = 10;</code>
+     * <code>repeated uint32 cg_list = 14;</code>
      * @return A list containing the cgList.
      */
     java.util.List<java.lang.Integer> getCgListList();
     /**
-     * <code>repeated uint32 cg_list = 10;</code>
+     * <code>repeated uint32 cg_list = 14;</code>
      * @return The count of cgList.
      */
     int getCgListCount();
     /**
-     * <code>repeated uint32 cg_list = 10;</code>
+     * <code>repeated uint32 cg_list = 14;</code>
      * @param index The index of the element to return.
      * @return The cgList at the given index.
      */
@@ -37,9 +37,13 @@ public final class CoopCgShowNotifyOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 1983
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 1951;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code CoopCgShowNotify}
@@ -88,7 +92,7 @@ public final class CoopCgShowNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 80: {
+            case 112: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 cgList_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
@@ -96,7 +100,7 @@ public final class CoopCgShowNotifyOuterClass {
               cgList_.addInt(input.readUInt32());
               break;
             }
-            case 82: {
+            case 114: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -144,10 +148,10 @@ public final class CoopCgShowNotifyOuterClass {
               emu.grasscutter.net.proto.CoopCgShowNotifyOuterClass.CoopCgShowNotify.class, emu.grasscutter.net.proto.CoopCgShowNotifyOuterClass.CoopCgShowNotify.Builder.class);
     }
 
-    public static final int CG_LIST_FIELD_NUMBER = 10;
+    public static final int CG_LIST_FIELD_NUMBER = 14;
     private com.google.protobuf.Internal.IntList cgList_;
     /**
-     * <code>repeated uint32 cg_list = 10;</code>
+     * <code>repeated uint32 cg_list = 14;</code>
      * @return A list containing the cgList.
      */
     @java.lang.Override
@@ -156,14 +160,14 @@ public final class CoopCgShowNotifyOuterClass {
       return cgList_;
     }
     /**
-     * <code>repeated uint32 cg_list = 10;</code>
+     * <code>repeated uint32 cg_list = 14;</code>
      * @return The count of cgList.
      */
     public int getCgListCount() {
       return cgList_.size();
     }
     /**
-     * <code>repeated uint32 cg_list = 10;</code>
+     * <code>repeated uint32 cg_list = 14;</code>
      * @param index The index of the element to return.
      * @return The cgList at the given index.
      */
@@ -188,7 +192,7 @@ public final class CoopCgShowNotifyOuterClass {
                         throws java.io.IOException {
       getSerializedSize();
       if (getCgListList().size() > 0) {
-        output.writeUInt32NoTag(82);
+        output.writeUInt32NoTag(114);
         output.writeUInt32NoTag(cgListMemoizedSerializedSize);
       }
       for (int i = 0; i < cgList_.size(); i++) {
@@ -346,9 +350,13 @@ public final class CoopCgShowNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 1983
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 1951;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code CoopCgShowNotify}
@@ -518,7 +526,7 @@ public final class CoopCgShowNotifyOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 cg_list = 10;</code>
+       * <code>repeated uint32 cg_list = 14;</code>
        * @return A list containing the cgList.
        */
       public java.util.List<java.lang.Integer>
@@ -527,14 +535,14 @@ public final class CoopCgShowNotifyOuterClass {
                  java.util.Collections.unmodifiableList(cgList_) : cgList_;
       }
       /**
-       * <code>repeated uint32 cg_list = 10;</code>
+       * <code>repeated uint32 cg_list = 14;</code>
        * @return The count of cgList.
        */
       public int getCgListCount() {
         return cgList_.size();
       }
       /**
-       * <code>repeated uint32 cg_list = 10;</code>
+       * <code>repeated uint32 cg_list = 14;</code>
        * @param index The index of the element to return.
        * @return The cgList at the given index.
        */
@@ -542,7 +550,7 @@ public final class CoopCgShowNotifyOuterClass {
         return cgList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 cg_list = 10;</code>
+       * <code>repeated uint32 cg_list = 14;</code>
        * @param index The index to set the value at.
        * @param value The cgList to set.
        * @return This builder for chaining.
@@ -555,7 +563,7 @@ public final class CoopCgShowNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 cg_list = 10;</code>
+       * <code>repeated uint32 cg_list = 14;</code>
        * @param value The cgList to add.
        * @return This builder for chaining.
        */
@@ -566,7 +574,7 @@ public final class CoopCgShowNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 cg_list = 10;</code>
+       * <code>repeated uint32 cg_list = 14;</code>
        * @param values The cgList to add.
        * @return This builder for chaining.
        */
@@ -579,7 +587,7 @@ public final class CoopCgShowNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 cg_list = 10;</code>
+       * <code>repeated uint32 cg_list = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearCgList() {
@@ -656,7 +664,7 @@ public final class CoopCgShowNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\026CoopCgShowNotify.proto\"#\n\020CoopCgShowNo" +
-      "tify\022\017\n\007cg_list\030\n \003(\rB\033\n\031emu.grasscutter" +
+      "tify\022\017\n\007cg_list\030\016 \003(\rB\033\n\031emu.grasscutter" +
       ".net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

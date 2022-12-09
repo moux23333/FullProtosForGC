@@ -19,38 +19,38 @@ public final class AbilityMetaAddOrGetAbilityAndTriggerOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.AbilityString ability_name = 13;</code>
-     * @return Whether the abilityName field is set.
-     */
-    boolean hasAbilityName();
-    /**
-     * <code>.AbilityString ability_name = 13;</code>
-     * @return The abilityName.
-     */
-    emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString getAbilityName();
-    /**
-     * <code>.AbilityString ability_name = 13;</code>
-     */
-    emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityStringOrBuilder getAbilityNameOrBuilder();
-
-    /**
-     * <code>float trigger_argument = 3;</code>
+     * <code>float trigger_argument = 4;</code>
      * @return The triggerArgument.
      */
     float getTriggerArgument();
 
     /**
-     * <code>.AbilityString ability_override = 8;</code>
+     * <code>.AbilityString ability_name = 12;</code>
+     * @return Whether the abilityName field is set.
+     */
+    boolean hasAbilityName();
+    /**
+     * <code>.AbilityString ability_name = 12;</code>
+     * @return The abilityName.
+     */
+    emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString getAbilityName();
+    /**
+     * <code>.AbilityString ability_name = 12;</code>
+     */
+    emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityStringOrBuilder getAbilityNameOrBuilder();
+
+    /**
+     * <code>.AbilityString ability_override = 13;</code>
      * @return Whether the abilityOverride field is set.
      */
     boolean hasAbilityOverride();
     /**
-     * <code>.AbilityString ability_override = 8;</code>
+     * <code>.AbilityString ability_override = 13;</code>
      * @return The abilityOverride.
      */
     emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString getAbilityOverride();
     /**
-     * <code>.AbilityString ability_override = 8;</code>
+     * <code>.AbilityString ability_override = 13;</code>
      */
     emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityStringOrBuilder getAbilityOverrideOrBuilder();
   }
@@ -99,25 +99,12 @@ public final class AbilityMetaAddOrGetAbilityAndTriggerOuterClass {
             case 0:
               done = true;
               break;
-            case 29: {
+            case 37: {
 
               triggerArgument_ = input.readFloat();
               break;
             }
-            case 66: {
-              emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString.Builder subBuilder = null;
-              if (abilityOverride_ != null) {
-                subBuilder = abilityOverride_.toBuilder();
-              }
-              abilityOverride_ = input.readMessage(emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom(abilityOverride_);
-                abilityOverride_ = subBuilder.buildPartial();
-              }
-
-              break;
-            }
-            case 106: {
+            case 98: {
               emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString.Builder subBuilder = null;
               if (abilityName_ != null) {
                 subBuilder = abilityName_.toBuilder();
@@ -126,6 +113,19 @@ public final class AbilityMetaAddOrGetAbilityAndTriggerOuterClass {
               if (subBuilder != null) {
                 subBuilder.mergeFrom(abilityName_);
                 abilityName_ = subBuilder.buildPartial();
+              }
+
+              break;
+            }
+            case 106: {
+              emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString.Builder subBuilder = null;
+              if (abilityOverride_ != null) {
+                subBuilder = abilityOverride_.toBuilder();
+              }
+              abilityOverride_ = input.readMessage(emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(abilityOverride_);
+                abilityOverride_ = subBuilder.buildPartial();
               }
 
               break;
@@ -162,36 +162,10 @@ public final class AbilityMetaAddOrGetAbilityAndTriggerOuterClass {
               emu.grasscutter.net.proto.AbilityMetaAddOrGetAbilityAndTriggerOuterClass.AbilityMetaAddOrGetAbilityAndTrigger.class, emu.grasscutter.net.proto.AbilityMetaAddOrGetAbilityAndTriggerOuterClass.AbilityMetaAddOrGetAbilityAndTrigger.Builder.class);
     }
 
-    public static final int ABILITY_NAME_FIELD_NUMBER = 13;
-    private emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString abilityName_;
-    /**
-     * <code>.AbilityString ability_name = 13;</code>
-     * @return Whether the abilityName field is set.
-     */
-    @java.lang.Override
-    public boolean hasAbilityName() {
-      return abilityName_ != null;
-    }
-    /**
-     * <code>.AbilityString ability_name = 13;</code>
-     * @return The abilityName.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString getAbilityName() {
-      return abilityName_ == null ? emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString.getDefaultInstance() : abilityName_;
-    }
-    /**
-     * <code>.AbilityString ability_name = 13;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityStringOrBuilder getAbilityNameOrBuilder() {
-      return getAbilityName();
-    }
-
-    public static final int TRIGGER_ARGUMENT_FIELD_NUMBER = 3;
+    public static final int TRIGGER_ARGUMENT_FIELD_NUMBER = 4;
     private float triggerArgument_;
     /**
-     * <code>float trigger_argument = 3;</code>
+     * <code>float trigger_argument = 4;</code>
      * @return The triggerArgument.
      */
     @java.lang.Override
@@ -199,10 +173,36 @@ public final class AbilityMetaAddOrGetAbilityAndTriggerOuterClass {
       return triggerArgument_;
     }
 
-    public static final int ABILITY_OVERRIDE_FIELD_NUMBER = 8;
+    public static final int ABILITY_NAME_FIELD_NUMBER = 12;
+    private emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString abilityName_;
+    /**
+     * <code>.AbilityString ability_name = 12;</code>
+     * @return Whether the abilityName field is set.
+     */
+    @java.lang.Override
+    public boolean hasAbilityName() {
+      return abilityName_ != null;
+    }
+    /**
+     * <code>.AbilityString ability_name = 12;</code>
+     * @return The abilityName.
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString getAbilityName() {
+      return abilityName_ == null ? emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString.getDefaultInstance() : abilityName_;
+    }
+    /**
+     * <code>.AbilityString ability_name = 12;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityStringOrBuilder getAbilityNameOrBuilder() {
+      return getAbilityName();
+    }
+
+    public static final int ABILITY_OVERRIDE_FIELD_NUMBER = 13;
     private emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString abilityOverride_;
     /**
-     * <code>.AbilityString ability_override = 8;</code>
+     * <code>.AbilityString ability_override = 13;</code>
      * @return Whether the abilityOverride field is set.
      */
     @java.lang.Override
@@ -210,7 +210,7 @@ public final class AbilityMetaAddOrGetAbilityAndTriggerOuterClass {
       return abilityOverride_ != null;
     }
     /**
-     * <code>.AbilityString ability_override = 8;</code>
+     * <code>.AbilityString ability_override = 13;</code>
      * @return The abilityOverride.
      */
     @java.lang.Override
@@ -218,7 +218,7 @@ public final class AbilityMetaAddOrGetAbilityAndTriggerOuterClass {
       return abilityOverride_ == null ? emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString.getDefaultInstance() : abilityOverride_;
     }
     /**
-     * <code>.AbilityString ability_override = 8;</code>
+     * <code>.AbilityString ability_override = 13;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityStringOrBuilder getAbilityOverrideOrBuilder() {
@@ -240,13 +240,13 @@ public final class AbilityMetaAddOrGetAbilityAndTriggerOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (triggerArgument_ != 0F) {
-        output.writeFloat(3, triggerArgument_);
-      }
-      if (abilityOverride_ != null) {
-        output.writeMessage(8, getAbilityOverride());
+        output.writeFloat(4, triggerArgument_);
       }
       if (abilityName_ != null) {
-        output.writeMessage(13, getAbilityName());
+        output.writeMessage(12, getAbilityName());
+      }
+      if (abilityOverride_ != null) {
+        output.writeMessage(13, getAbilityOverride());
       }
       unknownFields.writeTo(output);
     }
@@ -259,15 +259,15 @@ public final class AbilityMetaAddOrGetAbilityAndTriggerOuterClass {
       size = 0;
       if (triggerArgument_ != 0F) {
         size += com.google.protobuf.CodedOutputStream
-          .computeFloatSize(3, triggerArgument_);
-      }
-      if (abilityOverride_ != null) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(8, getAbilityOverride());
+          .computeFloatSize(4, triggerArgument_);
       }
       if (abilityName_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(13, getAbilityName());
+          .computeMessageSize(12, getAbilityName());
+      }
+      if (abilityOverride_ != null) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(13, getAbilityOverride());
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -284,14 +284,14 @@ public final class AbilityMetaAddOrGetAbilityAndTriggerOuterClass {
       }
       emu.grasscutter.net.proto.AbilityMetaAddOrGetAbilityAndTriggerOuterClass.AbilityMetaAddOrGetAbilityAndTrigger other = (emu.grasscutter.net.proto.AbilityMetaAddOrGetAbilityAndTriggerOuterClass.AbilityMetaAddOrGetAbilityAndTrigger) obj;
 
+      if (java.lang.Float.floatToIntBits(getTriggerArgument())
+          != java.lang.Float.floatToIntBits(
+              other.getTriggerArgument())) return false;
       if (hasAbilityName() != other.hasAbilityName()) return false;
       if (hasAbilityName()) {
         if (!getAbilityName()
             .equals(other.getAbilityName())) return false;
       }
-      if (java.lang.Float.floatToIntBits(getTriggerArgument())
-          != java.lang.Float.floatToIntBits(
-              other.getTriggerArgument())) return false;
       if (hasAbilityOverride() != other.hasAbilityOverride()) return false;
       if (hasAbilityOverride()) {
         if (!getAbilityOverride()
@@ -308,13 +308,13 @@ public final class AbilityMetaAddOrGetAbilityAndTriggerOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + TRIGGER_ARGUMENT_FIELD_NUMBER;
+      hash = (53 * hash) + java.lang.Float.floatToIntBits(
+          getTriggerArgument());
       if (hasAbilityName()) {
         hash = (37 * hash) + ABILITY_NAME_FIELD_NUMBER;
         hash = (53 * hash) + getAbilityName().hashCode();
       }
-      hash = (37 * hash) + TRIGGER_ARGUMENT_FIELD_NUMBER;
-      hash = (53 * hash) + java.lang.Float.floatToIntBits(
-          getTriggerArgument());
       if (hasAbilityOverride()) {
         hash = (37 * hash) + ABILITY_OVERRIDE_FIELD_NUMBER;
         hash = (53 * hash) + getAbilityOverride().hashCode();
@@ -452,14 +452,14 @@ public final class AbilityMetaAddOrGetAbilityAndTriggerOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        triggerArgument_ = 0F;
+
         if (abilityNameBuilder_ == null) {
           abilityName_ = null;
         } else {
           abilityName_ = null;
           abilityNameBuilder_ = null;
         }
-        triggerArgument_ = 0F;
-
         if (abilityOverrideBuilder_ == null) {
           abilityOverride_ = null;
         } else {
@@ -492,12 +492,12 @@ public final class AbilityMetaAddOrGetAbilityAndTriggerOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.AbilityMetaAddOrGetAbilityAndTriggerOuterClass.AbilityMetaAddOrGetAbilityAndTrigger buildPartial() {
         emu.grasscutter.net.proto.AbilityMetaAddOrGetAbilityAndTriggerOuterClass.AbilityMetaAddOrGetAbilityAndTrigger result = new emu.grasscutter.net.proto.AbilityMetaAddOrGetAbilityAndTriggerOuterClass.AbilityMetaAddOrGetAbilityAndTrigger(this);
+        result.triggerArgument_ = triggerArgument_;
         if (abilityNameBuilder_ == null) {
           result.abilityName_ = abilityName_;
         } else {
           result.abilityName_ = abilityNameBuilder_.build();
         }
-        result.triggerArgument_ = triggerArgument_;
         if (abilityOverrideBuilder_ == null) {
           result.abilityOverride_ = abilityOverride_;
         } else {
@@ -551,11 +551,11 @@ public final class AbilityMetaAddOrGetAbilityAndTriggerOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.AbilityMetaAddOrGetAbilityAndTriggerOuterClass.AbilityMetaAddOrGetAbilityAndTrigger other) {
         if (other == emu.grasscutter.net.proto.AbilityMetaAddOrGetAbilityAndTriggerOuterClass.AbilityMetaAddOrGetAbilityAndTrigger.getDefaultInstance()) return this;
-        if (other.hasAbilityName()) {
-          mergeAbilityName(other.getAbilityName());
-        }
         if (other.getTriggerArgument() != 0F) {
           setTriggerArgument(other.getTriggerArgument());
+        }
+        if (other.hasAbilityName()) {
+          mergeAbilityName(other.getAbilityName());
         }
         if (other.hasAbilityOverride()) {
           mergeAbilityOverride(other.getAbilityOverride());
@@ -589,18 +589,49 @@ public final class AbilityMetaAddOrGetAbilityAndTriggerOuterClass {
         return this;
       }
 
+      private float triggerArgument_ ;
+      /**
+       * <code>float trigger_argument = 4;</code>
+       * @return The triggerArgument.
+       */
+      @java.lang.Override
+      public float getTriggerArgument() {
+        return triggerArgument_;
+      }
+      /**
+       * <code>float trigger_argument = 4;</code>
+       * @param value The triggerArgument to set.
+       * @return This builder for chaining.
+       */
+      public Builder setTriggerArgument(float value) {
+        
+        triggerArgument_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>float trigger_argument = 4;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearTriggerArgument() {
+        
+        triggerArgument_ = 0F;
+        onChanged();
+        return this;
+      }
+
       private emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString abilityName_;
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString, emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString.Builder, emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityStringOrBuilder> abilityNameBuilder_;
       /**
-       * <code>.AbilityString ability_name = 13;</code>
+       * <code>.AbilityString ability_name = 12;</code>
        * @return Whether the abilityName field is set.
        */
       public boolean hasAbilityName() {
         return abilityNameBuilder_ != null || abilityName_ != null;
       }
       /**
-       * <code>.AbilityString ability_name = 13;</code>
+       * <code>.AbilityString ability_name = 12;</code>
        * @return The abilityName.
        */
       public emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString getAbilityName() {
@@ -611,7 +642,7 @@ public final class AbilityMetaAddOrGetAbilityAndTriggerOuterClass {
         }
       }
       /**
-       * <code>.AbilityString ability_name = 13;</code>
+       * <code>.AbilityString ability_name = 12;</code>
        */
       public Builder setAbilityName(emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString value) {
         if (abilityNameBuilder_ == null) {
@@ -627,7 +658,7 @@ public final class AbilityMetaAddOrGetAbilityAndTriggerOuterClass {
         return this;
       }
       /**
-       * <code>.AbilityString ability_name = 13;</code>
+       * <code>.AbilityString ability_name = 12;</code>
        */
       public Builder setAbilityName(
           emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString.Builder builderForValue) {
@@ -641,7 +672,7 @@ public final class AbilityMetaAddOrGetAbilityAndTriggerOuterClass {
         return this;
       }
       /**
-       * <code>.AbilityString ability_name = 13;</code>
+       * <code>.AbilityString ability_name = 12;</code>
        */
       public Builder mergeAbilityName(emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString value) {
         if (abilityNameBuilder_ == null) {
@@ -659,7 +690,7 @@ public final class AbilityMetaAddOrGetAbilityAndTriggerOuterClass {
         return this;
       }
       /**
-       * <code>.AbilityString ability_name = 13;</code>
+       * <code>.AbilityString ability_name = 12;</code>
        */
       public Builder clearAbilityName() {
         if (abilityNameBuilder_ == null) {
@@ -673,7 +704,7 @@ public final class AbilityMetaAddOrGetAbilityAndTriggerOuterClass {
         return this;
       }
       /**
-       * <code>.AbilityString ability_name = 13;</code>
+       * <code>.AbilityString ability_name = 12;</code>
        */
       public emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString.Builder getAbilityNameBuilder() {
         
@@ -681,7 +712,7 @@ public final class AbilityMetaAddOrGetAbilityAndTriggerOuterClass {
         return getAbilityNameFieldBuilder().getBuilder();
       }
       /**
-       * <code>.AbilityString ability_name = 13;</code>
+       * <code>.AbilityString ability_name = 12;</code>
        */
       public emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityStringOrBuilder getAbilityNameOrBuilder() {
         if (abilityNameBuilder_ != null) {
@@ -692,7 +723,7 @@ public final class AbilityMetaAddOrGetAbilityAndTriggerOuterClass {
         }
       }
       /**
-       * <code>.AbilityString ability_name = 13;</code>
+       * <code>.AbilityString ability_name = 12;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString, emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString.Builder, emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityStringOrBuilder> 
@@ -708,49 +739,18 @@ public final class AbilityMetaAddOrGetAbilityAndTriggerOuterClass {
         return abilityNameBuilder_;
       }
 
-      private float triggerArgument_ ;
-      /**
-       * <code>float trigger_argument = 3;</code>
-       * @return The triggerArgument.
-       */
-      @java.lang.Override
-      public float getTriggerArgument() {
-        return triggerArgument_;
-      }
-      /**
-       * <code>float trigger_argument = 3;</code>
-       * @param value The triggerArgument to set.
-       * @return This builder for chaining.
-       */
-      public Builder setTriggerArgument(float value) {
-        
-        triggerArgument_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>float trigger_argument = 3;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearTriggerArgument() {
-        
-        triggerArgument_ = 0F;
-        onChanged();
-        return this;
-      }
-
       private emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString abilityOverride_;
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString, emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString.Builder, emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityStringOrBuilder> abilityOverrideBuilder_;
       /**
-       * <code>.AbilityString ability_override = 8;</code>
+       * <code>.AbilityString ability_override = 13;</code>
        * @return Whether the abilityOverride field is set.
        */
       public boolean hasAbilityOverride() {
         return abilityOverrideBuilder_ != null || abilityOverride_ != null;
       }
       /**
-       * <code>.AbilityString ability_override = 8;</code>
+       * <code>.AbilityString ability_override = 13;</code>
        * @return The abilityOverride.
        */
       public emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString getAbilityOverride() {
@@ -761,7 +761,7 @@ public final class AbilityMetaAddOrGetAbilityAndTriggerOuterClass {
         }
       }
       /**
-       * <code>.AbilityString ability_override = 8;</code>
+       * <code>.AbilityString ability_override = 13;</code>
        */
       public Builder setAbilityOverride(emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString value) {
         if (abilityOverrideBuilder_ == null) {
@@ -777,7 +777,7 @@ public final class AbilityMetaAddOrGetAbilityAndTriggerOuterClass {
         return this;
       }
       /**
-       * <code>.AbilityString ability_override = 8;</code>
+       * <code>.AbilityString ability_override = 13;</code>
        */
       public Builder setAbilityOverride(
           emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString.Builder builderForValue) {
@@ -791,7 +791,7 @@ public final class AbilityMetaAddOrGetAbilityAndTriggerOuterClass {
         return this;
       }
       /**
-       * <code>.AbilityString ability_override = 8;</code>
+       * <code>.AbilityString ability_override = 13;</code>
        */
       public Builder mergeAbilityOverride(emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString value) {
         if (abilityOverrideBuilder_ == null) {
@@ -809,7 +809,7 @@ public final class AbilityMetaAddOrGetAbilityAndTriggerOuterClass {
         return this;
       }
       /**
-       * <code>.AbilityString ability_override = 8;</code>
+       * <code>.AbilityString ability_override = 13;</code>
        */
       public Builder clearAbilityOverride() {
         if (abilityOverrideBuilder_ == null) {
@@ -823,7 +823,7 @@ public final class AbilityMetaAddOrGetAbilityAndTriggerOuterClass {
         return this;
       }
       /**
-       * <code>.AbilityString ability_override = 8;</code>
+       * <code>.AbilityString ability_override = 13;</code>
        */
       public emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString.Builder getAbilityOverrideBuilder() {
         
@@ -831,7 +831,7 @@ public final class AbilityMetaAddOrGetAbilityAndTriggerOuterClass {
         return getAbilityOverrideFieldBuilder().getBuilder();
       }
       /**
-       * <code>.AbilityString ability_override = 8;</code>
+       * <code>.AbilityString ability_override = 13;</code>
        */
       public emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityStringOrBuilder getAbilityOverrideOrBuilder() {
         if (abilityOverrideBuilder_ != null) {
@@ -842,7 +842,7 @@ public final class AbilityMetaAddOrGetAbilityAndTriggerOuterClass {
         }
       }
       /**
-       * <code>.AbilityString ability_override = 8;</code>
+       * <code>.AbilityString ability_override = 13;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString, emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString.Builder, emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityStringOrBuilder> 
@@ -926,9 +926,9 @@ public final class AbilityMetaAddOrGetAbilityAndTriggerOuterClass {
     java.lang.String[] descriptorData = {
       "\n*AbilityMetaAddOrGetAbilityAndTrigger.p" +
       "roto\032\023AbilityString.proto\"\220\001\n$AbilityMet" +
-      "aAddOrGetAbilityAndTrigger\022$\n\014ability_na" +
-      "me\030\r \001(\0132\016.AbilityString\022\030\n\020trigger_argu" +
-      "ment\030\003 \001(\002\022(\n\020ability_override\030\010 \001(\0132\016.A" +
+      "aAddOrGetAbilityAndTrigger\022\030\n\020trigger_ar" +
+      "gument\030\004 \001(\002\022$\n\014ability_name\030\014 \001(\0132\016.Abi" +
+      "lityString\022(\n\020ability_override\030\r \001(\0132\016.A" +
       "bilityStringB\033\n\031emu.grasscutter.net.prot" +
       "ob\006proto3"
     };
@@ -942,7 +942,7 @@ public final class AbilityMetaAddOrGetAbilityAndTriggerOuterClass {
     internal_static_AbilityMetaAddOrGetAbilityAndTrigger_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_AbilityMetaAddOrGetAbilityAndTrigger_descriptor,
-        new java.lang.String[] { "AbilityName", "TriggerArgument", "AbilityOverride", });
+        new java.lang.String[] { "TriggerArgument", "AbilityName", "AbilityOverride", });
     emu.grasscutter.net.proto.AbilityStringOuterClass.getDescriptor();
   }
 

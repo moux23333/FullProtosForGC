@@ -19,40 +19,40 @@ public final class EffigyChallengeV2LevelDataOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 challenge_mode_difficulty_pass = 1;</code>
-     * @return The challengeModeDifficultyPass.
+     * <code>uint32 Unk3300_PPOEMEILBIA = 13;</code>
+     * @return The unk3300PPOEMEILBIA.
      */
-    int getChallengeModeDifficultyPass();
+    int getUnk3300PPOEMEILBIA();
 
     /**
-     * <code>uint32 level_id = 5;</code>
-     * @return The levelId.
-     */
-    int getLevelId();
-
-    /**
-     * <code>uint32 challenge_mode_last_choose_skill_no = 10;</code>
-     * @return The challengeModeLastChooseSkillNo.
-     */
-    int getChallengeModeLastChooseSkillNo();
-
-    /**
-     * <code>uint32 best_cost_time = 12;</code>
-     * @return The bestCostTime.
-     */
-    int getBestCostTime();
-
-    /**
-     * <code>bool is_level_open = 7;</code>
+     * <code>bool is_level_open = 4;</code>
      * @return The isLevelOpen.
      */
     boolean getIsLevelOpen();
 
     /**
-     * <code>uint32 challenge_mode_difficulty_open = 13;</code>
-     * @return The challengeModeDifficultyOpen.
+     * <code>uint32 Unk3300_KJEOADDMJMI = 9;</code>
+     * @return The unk3300KJEOADDMJMI.
      */
-    int getChallengeModeDifficultyOpen();
+    int getUnk3300KJEOADDMJMI();
+
+    /**
+     * <code>uint32 Unk3300_JMGACODMJLG = 2;</code>
+     * @return The unk3300JMGACODMJLG.
+     */
+    int getUnk3300JMGACODMJLG();
+
+    /**
+     * <code>uint32 Unk3300_IJAGOAKOABH = 7;</code>
+     * @return The unk3300IJAGOAKOABH.
+     */
+    int getUnk3300IJAGOAKOABH();
+
+    /**
+     * <code>uint32 level_id = 12;</code>
+     * @return The levelId.
+     */
+    int getLevelId();
   }
   /**
    * Protobuf type {@code EffigyChallengeV2LevelData}
@@ -99,34 +99,34 @@ public final class EffigyChallengeV2LevelDataOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
+            case 16: {
 
-              challengeModeDifficultyPass_ = input.readUInt32();
+              unk3300JMGACODMJLG_ = input.readUInt32();
               break;
             }
-            case 40: {
-
-              levelId_ = input.readUInt32();
-              break;
-            }
-            case 56: {
+            case 32: {
 
               isLevelOpen_ = input.readBool();
               break;
             }
-            case 80: {
+            case 56: {
 
-              challengeModeLastChooseSkillNo_ = input.readUInt32();
+              unk3300IJAGOAKOABH_ = input.readUInt32();
+              break;
+            }
+            case 72: {
+
+              unk3300KJEOADDMJMI_ = input.readUInt32();
               break;
             }
             case 96: {
 
-              bestCostTime_ = input.readUInt32();
+              levelId_ = input.readUInt32();
               break;
             }
             case 104: {
 
-              challengeModeDifficultyOpen_ = input.readUInt32();
+              unk3300PPOEMEILBIA_ = input.readUInt32();
               break;
             }
             default: {
@@ -161,54 +161,21 @@ public final class EffigyChallengeV2LevelDataOuterClass {
               emu.grasscutter.net.proto.EffigyChallengeV2LevelDataOuterClass.EffigyChallengeV2LevelData.class, emu.grasscutter.net.proto.EffigyChallengeV2LevelDataOuterClass.EffigyChallengeV2LevelData.Builder.class);
     }
 
-    public static final int CHALLENGE_MODE_DIFFICULTY_PASS_FIELD_NUMBER = 1;
-    private int challengeModeDifficultyPass_;
+    public static final int UNK3300_PPOEMEILBIA_FIELD_NUMBER = 13;
+    private int unk3300PPOEMEILBIA_;
     /**
-     * <code>uint32 challenge_mode_difficulty_pass = 1;</code>
-     * @return The challengeModeDifficultyPass.
+     * <code>uint32 Unk3300_PPOEMEILBIA = 13;</code>
+     * @return The unk3300PPOEMEILBIA.
      */
     @java.lang.Override
-    public int getChallengeModeDifficultyPass() {
-      return challengeModeDifficultyPass_;
+    public int getUnk3300PPOEMEILBIA() {
+      return unk3300PPOEMEILBIA_;
     }
 
-    public static final int LEVEL_ID_FIELD_NUMBER = 5;
-    private int levelId_;
-    /**
-     * <code>uint32 level_id = 5;</code>
-     * @return The levelId.
-     */
-    @java.lang.Override
-    public int getLevelId() {
-      return levelId_;
-    }
-
-    public static final int CHALLENGE_MODE_LAST_CHOOSE_SKILL_NO_FIELD_NUMBER = 10;
-    private int challengeModeLastChooseSkillNo_;
-    /**
-     * <code>uint32 challenge_mode_last_choose_skill_no = 10;</code>
-     * @return The challengeModeLastChooseSkillNo.
-     */
-    @java.lang.Override
-    public int getChallengeModeLastChooseSkillNo() {
-      return challengeModeLastChooseSkillNo_;
-    }
-
-    public static final int BEST_COST_TIME_FIELD_NUMBER = 12;
-    private int bestCostTime_;
-    /**
-     * <code>uint32 best_cost_time = 12;</code>
-     * @return The bestCostTime.
-     */
-    @java.lang.Override
-    public int getBestCostTime() {
-      return bestCostTime_;
-    }
-
-    public static final int IS_LEVEL_OPEN_FIELD_NUMBER = 7;
+    public static final int IS_LEVEL_OPEN_FIELD_NUMBER = 4;
     private boolean isLevelOpen_;
     /**
-     * <code>bool is_level_open = 7;</code>
+     * <code>bool is_level_open = 4;</code>
      * @return The isLevelOpen.
      */
     @java.lang.Override
@@ -216,15 +183,48 @@ public final class EffigyChallengeV2LevelDataOuterClass {
       return isLevelOpen_;
     }
 
-    public static final int CHALLENGE_MODE_DIFFICULTY_OPEN_FIELD_NUMBER = 13;
-    private int challengeModeDifficultyOpen_;
+    public static final int UNK3300_KJEOADDMJMI_FIELD_NUMBER = 9;
+    private int unk3300KJEOADDMJMI_;
     /**
-     * <code>uint32 challenge_mode_difficulty_open = 13;</code>
-     * @return The challengeModeDifficultyOpen.
+     * <code>uint32 Unk3300_KJEOADDMJMI = 9;</code>
+     * @return The unk3300KJEOADDMJMI.
      */
     @java.lang.Override
-    public int getChallengeModeDifficultyOpen() {
-      return challengeModeDifficultyOpen_;
+    public int getUnk3300KJEOADDMJMI() {
+      return unk3300KJEOADDMJMI_;
+    }
+
+    public static final int UNK3300_JMGACODMJLG_FIELD_NUMBER = 2;
+    private int unk3300JMGACODMJLG_;
+    /**
+     * <code>uint32 Unk3300_JMGACODMJLG = 2;</code>
+     * @return The unk3300JMGACODMJLG.
+     */
+    @java.lang.Override
+    public int getUnk3300JMGACODMJLG() {
+      return unk3300JMGACODMJLG_;
+    }
+
+    public static final int UNK3300_IJAGOAKOABH_FIELD_NUMBER = 7;
+    private int unk3300IJAGOAKOABH_;
+    /**
+     * <code>uint32 Unk3300_IJAGOAKOABH = 7;</code>
+     * @return The unk3300IJAGOAKOABH.
+     */
+    @java.lang.Override
+    public int getUnk3300IJAGOAKOABH() {
+      return unk3300IJAGOAKOABH_;
+    }
+
+    public static final int LEVEL_ID_FIELD_NUMBER = 12;
+    private int levelId_;
+    /**
+     * <code>uint32 level_id = 12;</code>
+     * @return The levelId.
+     */
+    @java.lang.Override
+    public int getLevelId() {
+      return levelId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -241,23 +241,23 @@ public final class EffigyChallengeV2LevelDataOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (challengeModeDifficultyPass_ != 0) {
-        output.writeUInt32(1, challengeModeDifficultyPass_);
-      }
-      if (levelId_ != 0) {
-        output.writeUInt32(5, levelId_);
+      if (unk3300JMGACODMJLG_ != 0) {
+        output.writeUInt32(2, unk3300JMGACODMJLG_);
       }
       if (isLevelOpen_ != false) {
-        output.writeBool(7, isLevelOpen_);
+        output.writeBool(4, isLevelOpen_);
       }
-      if (challengeModeLastChooseSkillNo_ != 0) {
-        output.writeUInt32(10, challengeModeLastChooseSkillNo_);
+      if (unk3300IJAGOAKOABH_ != 0) {
+        output.writeUInt32(7, unk3300IJAGOAKOABH_);
       }
-      if (bestCostTime_ != 0) {
-        output.writeUInt32(12, bestCostTime_);
+      if (unk3300KJEOADDMJMI_ != 0) {
+        output.writeUInt32(9, unk3300KJEOADDMJMI_);
       }
-      if (challengeModeDifficultyOpen_ != 0) {
-        output.writeUInt32(13, challengeModeDifficultyOpen_);
+      if (levelId_ != 0) {
+        output.writeUInt32(12, levelId_);
+      }
+      if (unk3300PPOEMEILBIA_ != 0) {
+        output.writeUInt32(13, unk3300PPOEMEILBIA_);
       }
       unknownFields.writeTo(output);
     }
@@ -268,29 +268,29 @@ public final class EffigyChallengeV2LevelDataOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (challengeModeDifficultyPass_ != 0) {
+      if (unk3300JMGACODMJLG_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, challengeModeDifficultyPass_);
-      }
-      if (levelId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, levelId_);
+          .computeUInt32Size(2, unk3300JMGACODMJLG_);
       }
       if (isLevelOpen_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(7, isLevelOpen_);
+          .computeBoolSize(4, isLevelOpen_);
       }
-      if (challengeModeLastChooseSkillNo_ != 0) {
+      if (unk3300IJAGOAKOABH_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, challengeModeLastChooseSkillNo_);
+          .computeUInt32Size(7, unk3300IJAGOAKOABH_);
       }
-      if (bestCostTime_ != 0) {
+      if (unk3300KJEOADDMJMI_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, bestCostTime_);
+          .computeUInt32Size(9, unk3300KJEOADDMJMI_);
       }
-      if (challengeModeDifficultyOpen_ != 0) {
+      if (levelId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, challengeModeDifficultyOpen_);
+          .computeUInt32Size(12, levelId_);
+      }
+      if (unk3300PPOEMEILBIA_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(13, unk3300PPOEMEILBIA_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -307,18 +307,18 @@ public final class EffigyChallengeV2LevelDataOuterClass {
       }
       emu.grasscutter.net.proto.EffigyChallengeV2LevelDataOuterClass.EffigyChallengeV2LevelData other = (emu.grasscutter.net.proto.EffigyChallengeV2LevelDataOuterClass.EffigyChallengeV2LevelData) obj;
 
-      if (getChallengeModeDifficultyPass()
-          != other.getChallengeModeDifficultyPass()) return false;
-      if (getLevelId()
-          != other.getLevelId()) return false;
-      if (getChallengeModeLastChooseSkillNo()
-          != other.getChallengeModeLastChooseSkillNo()) return false;
-      if (getBestCostTime()
-          != other.getBestCostTime()) return false;
+      if (getUnk3300PPOEMEILBIA()
+          != other.getUnk3300PPOEMEILBIA()) return false;
       if (getIsLevelOpen()
           != other.getIsLevelOpen()) return false;
-      if (getChallengeModeDifficultyOpen()
-          != other.getChallengeModeDifficultyOpen()) return false;
+      if (getUnk3300KJEOADDMJMI()
+          != other.getUnk3300KJEOADDMJMI()) return false;
+      if (getUnk3300JMGACODMJLG()
+          != other.getUnk3300JMGACODMJLG()) return false;
+      if (getUnk3300IJAGOAKOABH()
+          != other.getUnk3300IJAGOAKOABH()) return false;
+      if (getLevelId()
+          != other.getLevelId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -330,19 +330,19 @@ public final class EffigyChallengeV2LevelDataOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + CHALLENGE_MODE_DIFFICULTY_PASS_FIELD_NUMBER;
-      hash = (53 * hash) + getChallengeModeDifficultyPass();
-      hash = (37 * hash) + LEVEL_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getLevelId();
-      hash = (37 * hash) + CHALLENGE_MODE_LAST_CHOOSE_SKILL_NO_FIELD_NUMBER;
-      hash = (53 * hash) + getChallengeModeLastChooseSkillNo();
-      hash = (37 * hash) + BEST_COST_TIME_FIELD_NUMBER;
-      hash = (53 * hash) + getBestCostTime();
+      hash = (37 * hash) + UNK3300_PPOEMEILBIA_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300PPOEMEILBIA();
       hash = (37 * hash) + IS_LEVEL_OPEN_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsLevelOpen());
-      hash = (37 * hash) + CHALLENGE_MODE_DIFFICULTY_OPEN_FIELD_NUMBER;
-      hash = (53 * hash) + getChallengeModeDifficultyOpen();
+      hash = (37 * hash) + UNK3300_KJEOADDMJMI_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300KJEOADDMJMI();
+      hash = (37 * hash) + UNK3300_JMGACODMJLG_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300JMGACODMJLG();
+      hash = (37 * hash) + UNK3300_IJAGOAKOABH_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300IJAGOAKOABH();
+      hash = (37 * hash) + LEVEL_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getLevelId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -476,17 +476,17 @@ public final class EffigyChallengeV2LevelDataOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        challengeModeDifficultyPass_ = 0;
-
-        levelId_ = 0;
-
-        challengeModeLastChooseSkillNo_ = 0;
-
-        bestCostTime_ = 0;
+        unk3300PPOEMEILBIA_ = 0;
 
         isLevelOpen_ = false;
 
-        challengeModeDifficultyOpen_ = 0;
+        unk3300KJEOADDMJMI_ = 0;
+
+        unk3300JMGACODMJLG_ = 0;
+
+        unk3300IJAGOAKOABH_ = 0;
+
+        levelId_ = 0;
 
         return this;
       }
@@ -514,12 +514,12 @@ public final class EffigyChallengeV2LevelDataOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.EffigyChallengeV2LevelDataOuterClass.EffigyChallengeV2LevelData buildPartial() {
         emu.grasscutter.net.proto.EffigyChallengeV2LevelDataOuterClass.EffigyChallengeV2LevelData result = new emu.grasscutter.net.proto.EffigyChallengeV2LevelDataOuterClass.EffigyChallengeV2LevelData(this);
-        result.challengeModeDifficultyPass_ = challengeModeDifficultyPass_;
-        result.levelId_ = levelId_;
-        result.challengeModeLastChooseSkillNo_ = challengeModeLastChooseSkillNo_;
-        result.bestCostTime_ = bestCostTime_;
+        result.unk3300PPOEMEILBIA_ = unk3300PPOEMEILBIA_;
         result.isLevelOpen_ = isLevelOpen_;
-        result.challengeModeDifficultyOpen_ = challengeModeDifficultyOpen_;
+        result.unk3300KJEOADDMJMI_ = unk3300KJEOADDMJMI_;
+        result.unk3300JMGACODMJLG_ = unk3300JMGACODMJLG_;
+        result.unk3300IJAGOAKOABH_ = unk3300IJAGOAKOABH_;
+        result.levelId_ = levelId_;
         onBuilt();
         return result;
       }
@@ -568,23 +568,23 @@ public final class EffigyChallengeV2LevelDataOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.EffigyChallengeV2LevelDataOuterClass.EffigyChallengeV2LevelData other) {
         if (other == emu.grasscutter.net.proto.EffigyChallengeV2LevelDataOuterClass.EffigyChallengeV2LevelData.getDefaultInstance()) return this;
-        if (other.getChallengeModeDifficultyPass() != 0) {
-          setChallengeModeDifficultyPass(other.getChallengeModeDifficultyPass());
-        }
-        if (other.getLevelId() != 0) {
-          setLevelId(other.getLevelId());
-        }
-        if (other.getChallengeModeLastChooseSkillNo() != 0) {
-          setChallengeModeLastChooseSkillNo(other.getChallengeModeLastChooseSkillNo());
-        }
-        if (other.getBestCostTime() != 0) {
-          setBestCostTime(other.getBestCostTime());
+        if (other.getUnk3300PPOEMEILBIA() != 0) {
+          setUnk3300PPOEMEILBIA(other.getUnk3300PPOEMEILBIA());
         }
         if (other.getIsLevelOpen() != false) {
           setIsLevelOpen(other.getIsLevelOpen());
         }
-        if (other.getChallengeModeDifficultyOpen() != 0) {
-          setChallengeModeDifficultyOpen(other.getChallengeModeDifficultyOpen());
+        if (other.getUnk3300KJEOADDMJMI() != 0) {
+          setUnk3300KJEOADDMJMI(other.getUnk3300KJEOADDMJMI());
+        }
+        if (other.getUnk3300JMGACODMJLG() != 0) {
+          setUnk3300JMGACODMJLG(other.getUnk3300JMGACODMJLG());
+        }
+        if (other.getUnk3300IJAGOAKOABH() != 0) {
+          setUnk3300IJAGOAKOABH(other.getUnk3300IJAGOAKOABH());
+        }
+        if (other.getLevelId() != 0) {
+          setLevelId(other.getLevelId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -615,133 +615,40 @@ public final class EffigyChallengeV2LevelDataOuterClass {
         return this;
       }
 
-      private int challengeModeDifficultyPass_ ;
+      private int unk3300PPOEMEILBIA_ ;
       /**
-       * <code>uint32 challenge_mode_difficulty_pass = 1;</code>
-       * @return The challengeModeDifficultyPass.
+       * <code>uint32 Unk3300_PPOEMEILBIA = 13;</code>
+       * @return The unk3300PPOEMEILBIA.
        */
       @java.lang.Override
-      public int getChallengeModeDifficultyPass() {
-        return challengeModeDifficultyPass_;
+      public int getUnk3300PPOEMEILBIA() {
+        return unk3300PPOEMEILBIA_;
       }
       /**
-       * <code>uint32 challenge_mode_difficulty_pass = 1;</code>
-       * @param value The challengeModeDifficultyPass to set.
+       * <code>uint32 Unk3300_PPOEMEILBIA = 13;</code>
+       * @param value The unk3300PPOEMEILBIA to set.
        * @return This builder for chaining.
        */
-      public Builder setChallengeModeDifficultyPass(int value) {
+      public Builder setUnk3300PPOEMEILBIA(int value) {
         
-        challengeModeDifficultyPass_ = value;
+        unk3300PPOEMEILBIA_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 challenge_mode_difficulty_pass = 1;</code>
+       * <code>uint32 Unk3300_PPOEMEILBIA = 13;</code>
        * @return This builder for chaining.
        */
-      public Builder clearChallengeModeDifficultyPass() {
+      public Builder clearUnk3300PPOEMEILBIA() {
         
-        challengeModeDifficultyPass_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int levelId_ ;
-      /**
-       * <code>uint32 level_id = 5;</code>
-       * @return The levelId.
-       */
-      @java.lang.Override
-      public int getLevelId() {
-        return levelId_;
-      }
-      /**
-       * <code>uint32 level_id = 5;</code>
-       * @param value The levelId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setLevelId(int value) {
-        
-        levelId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 level_id = 5;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearLevelId() {
-        
-        levelId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int challengeModeLastChooseSkillNo_ ;
-      /**
-       * <code>uint32 challenge_mode_last_choose_skill_no = 10;</code>
-       * @return The challengeModeLastChooseSkillNo.
-       */
-      @java.lang.Override
-      public int getChallengeModeLastChooseSkillNo() {
-        return challengeModeLastChooseSkillNo_;
-      }
-      /**
-       * <code>uint32 challenge_mode_last_choose_skill_no = 10;</code>
-       * @param value The challengeModeLastChooseSkillNo to set.
-       * @return This builder for chaining.
-       */
-      public Builder setChallengeModeLastChooseSkillNo(int value) {
-        
-        challengeModeLastChooseSkillNo_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 challenge_mode_last_choose_skill_no = 10;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearChallengeModeLastChooseSkillNo() {
-        
-        challengeModeLastChooseSkillNo_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int bestCostTime_ ;
-      /**
-       * <code>uint32 best_cost_time = 12;</code>
-       * @return The bestCostTime.
-       */
-      @java.lang.Override
-      public int getBestCostTime() {
-        return bestCostTime_;
-      }
-      /**
-       * <code>uint32 best_cost_time = 12;</code>
-       * @param value The bestCostTime to set.
-       * @return This builder for chaining.
-       */
-      public Builder setBestCostTime(int value) {
-        
-        bestCostTime_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 best_cost_time = 12;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearBestCostTime() {
-        
-        bestCostTime_ = 0;
+        unk3300PPOEMEILBIA_ = 0;
         onChanged();
         return this;
       }
 
       private boolean isLevelOpen_ ;
       /**
-       * <code>bool is_level_open = 7;</code>
+       * <code>bool is_level_open = 4;</code>
        * @return The isLevelOpen.
        */
       @java.lang.Override
@@ -749,7 +656,7 @@ public final class EffigyChallengeV2LevelDataOuterClass {
         return isLevelOpen_;
       }
       /**
-       * <code>bool is_level_open = 7;</code>
+       * <code>bool is_level_open = 4;</code>
        * @param value The isLevelOpen to set.
        * @return This builder for chaining.
        */
@@ -760,7 +667,7 @@ public final class EffigyChallengeV2LevelDataOuterClass {
         return this;
       }
       /**
-       * <code>bool is_level_open = 7;</code>
+       * <code>bool is_level_open = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsLevelOpen() {
@@ -770,33 +677,126 @@ public final class EffigyChallengeV2LevelDataOuterClass {
         return this;
       }
 
-      private int challengeModeDifficultyOpen_ ;
+      private int unk3300KJEOADDMJMI_ ;
       /**
-       * <code>uint32 challenge_mode_difficulty_open = 13;</code>
-       * @return The challengeModeDifficultyOpen.
+       * <code>uint32 Unk3300_KJEOADDMJMI = 9;</code>
+       * @return The unk3300KJEOADDMJMI.
        */
       @java.lang.Override
-      public int getChallengeModeDifficultyOpen() {
-        return challengeModeDifficultyOpen_;
+      public int getUnk3300KJEOADDMJMI() {
+        return unk3300KJEOADDMJMI_;
       }
       /**
-       * <code>uint32 challenge_mode_difficulty_open = 13;</code>
-       * @param value The challengeModeDifficultyOpen to set.
+       * <code>uint32 Unk3300_KJEOADDMJMI = 9;</code>
+       * @param value The unk3300KJEOADDMJMI to set.
        * @return This builder for chaining.
        */
-      public Builder setChallengeModeDifficultyOpen(int value) {
+      public Builder setUnk3300KJEOADDMJMI(int value) {
         
-        challengeModeDifficultyOpen_ = value;
+        unk3300KJEOADDMJMI_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 challenge_mode_difficulty_open = 13;</code>
+       * <code>uint32 Unk3300_KJEOADDMJMI = 9;</code>
        * @return This builder for chaining.
        */
-      public Builder clearChallengeModeDifficultyOpen() {
+      public Builder clearUnk3300KJEOADDMJMI() {
         
-        challengeModeDifficultyOpen_ = 0;
+        unk3300KJEOADDMJMI_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int unk3300JMGACODMJLG_ ;
+      /**
+       * <code>uint32 Unk3300_JMGACODMJLG = 2;</code>
+       * @return The unk3300JMGACODMJLG.
+       */
+      @java.lang.Override
+      public int getUnk3300JMGACODMJLG() {
+        return unk3300JMGACODMJLG_;
+      }
+      /**
+       * <code>uint32 Unk3300_JMGACODMJLG = 2;</code>
+       * @param value The unk3300JMGACODMJLG to set.
+       * @return This builder for chaining.
+       */
+      public Builder setUnk3300JMGACODMJLG(int value) {
+        
+        unk3300JMGACODMJLG_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 Unk3300_JMGACODMJLG = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearUnk3300JMGACODMJLG() {
+        
+        unk3300JMGACODMJLG_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int unk3300IJAGOAKOABH_ ;
+      /**
+       * <code>uint32 Unk3300_IJAGOAKOABH = 7;</code>
+       * @return The unk3300IJAGOAKOABH.
+       */
+      @java.lang.Override
+      public int getUnk3300IJAGOAKOABH() {
+        return unk3300IJAGOAKOABH_;
+      }
+      /**
+       * <code>uint32 Unk3300_IJAGOAKOABH = 7;</code>
+       * @param value The unk3300IJAGOAKOABH to set.
+       * @return This builder for chaining.
+       */
+      public Builder setUnk3300IJAGOAKOABH(int value) {
+        
+        unk3300IJAGOAKOABH_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 Unk3300_IJAGOAKOABH = 7;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearUnk3300IJAGOAKOABH() {
+        
+        unk3300IJAGOAKOABH_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int levelId_ ;
+      /**
+       * <code>uint32 level_id = 12;</code>
+       * @return The levelId.
+       */
+      @java.lang.Override
+      public int getLevelId() {
+        return levelId_;
+      }
+      /**
+       * <code>uint32 level_id = 12;</code>
+       * @param value The levelId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setLevelId(int value) {
+        
+        levelId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 level_id = 12;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearLevelId() {
+        
+        levelId_ = 0;
         onChanged();
         return this;
       }
@@ -867,14 +867,13 @@ public final class EffigyChallengeV2LevelDataOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n EffigyChallengeV2LevelData.proto\"\332\001\n\032E" +
-      "ffigyChallengeV2LevelData\022&\n\036challenge_m" +
-      "ode_difficulty_pass\030\001 \001(\r\022\020\n\010level_id\030\005 " +
-      "\001(\r\022+\n#challenge_mode_last_choose_skill_" +
-      "no\030\n \001(\r\022\026\n\016best_cost_time\030\014 \001(\r\022\025\n\ris_l" +
-      "evel_open\030\007 \001(\010\022&\n\036challenge_mode_diffic" +
-      "ulty_open\030\r \001(\rB\033\n\031emu.grasscutter.net.p" +
-      "rotob\006proto3"
+      "\n EffigyChallengeV2LevelData.proto\"\271\001\n\032E" +
+      "ffigyChallengeV2LevelData\022\033\n\023Unk3300_PPO" +
+      "EMEILBIA\030\r \001(\r\022\025\n\ris_level_open\030\004 \001(\010\022\033\n" +
+      "\023Unk3300_KJEOADDMJMI\030\t \001(\r\022\033\n\023Unk3300_JM" +
+      "GACODMJLG\030\002 \001(\r\022\033\n\023Unk3300_IJAGOAKOABH\030\007" +
+      " \001(\r\022\020\n\010level_id\030\014 \001(\rB\033\n\031emu.grasscutte" +
+      "r.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -885,7 +884,7 @@ public final class EffigyChallengeV2LevelDataOuterClass {
     internal_static_EffigyChallengeV2LevelData_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_EffigyChallengeV2LevelData_descriptor,
-        new java.lang.String[] { "ChallengeModeDifficultyPass", "LevelId", "ChallengeModeLastChooseSkillNo", "BestCostTime", "IsLevelOpen", "ChallengeModeDifficultyOpen", });
+        new java.lang.String[] { "Unk3300PPOEMEILBIA", "IsLevelOpen", "Unk3300KJEOADDMJMI", "Unk3300JMGACODMJLG", "Unk3300IJAGOAKOABH", "LevelId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

@@ -19,17 +19,21 @@ public final class FungusFighterClearTrainingRuntimeDataReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 dungeon_id = 6;</code>
+     * <code>uint32 dungeon_id = 4;</code>
      * @return The dungeonId.
      */
     int getDungeonId();
   }
   /**
    * <pre>
-   * CmdId: 24137
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 24267;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code FungusFighterClearTrainingRuntimeDataReq}
@@ -76,7 +80,7 @@ public final class FungusFighterClearTrainingRuntimeDataReqOuterClass {
             case 0:
               done = true;
               break;
-            case 48: {
+            case 32: {
 
               dungeonId_ = input.readUInt32();
               break;
@@ -113,10 +117,10 @@ public final class FungusFighterClearTrainingRuntimeDataReqOuterClass {
               emu.grasscutter.net.proto.FungusFighterClearTrainingRuntimeDataReqOuterClass.FungusFighterClearTrainingRuntimeDataReq.class, emu.grasscutter.net.proto.FungusFighterClearTrainingRuntimeDataReqOuterClass.FungusFighterClearTrainingRuntimeDataReq.Builder.class);
     }
 
-    public static final int DUNGEON_ID_FIELD_NUMBER = 6;
+    public static final int DUNGEON_ID_FIELD_NUMBER = 4;
     private int dungeonId_;
     /**
-     * <code>uint32 dungeon_id = 6;</code>
+     * <code>uint32 dungeon_id = 4;</code>
      * @return The dungeonId.
      */
     @java.lang.Override
@@ -139,7 +143,7 @@ public final class FungusFighterClearTrainingRuntimeDataReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (dungeonId_ != 0) {
-        output.writeUInt32(6, dungeonId_);
+        output.writeUInt32(4, dungeonId_);
       }
       unknownFields.writeTo(output);
     }
@@ -152,7 +156,7 @@ public final class FungusFighterClearTrainingRuntimeDataReqOuterClass {
       size = 0;
       if (dungeonId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, dungeonId_);
+          .computeUInt32Size(4, dungeonId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -281,10 +285,14 @@ public final class FungusFighterClearTrainingRuntimeDataReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 24137
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 24267;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code FungusFighterClearTrainingRuntimeDataReq}
@@ -435,7 +443,7 @@ public final class FungusFighterClearTrainingRuntimeDataReqOuterClass {
 
       private int dungeonId_ ;
       /**
-       * <code>uint32 dungeon_id = 6;</code>
+       * <code>uint32 dungeon_id = 4;</code>
        * @return The dungeonId.
        */
       @java.lang.Override
@@ -443,7 +451,7 @@ public final class FungusFighterClearTrainingRuntimeDataReqOuterClass {
         return dungeonId_;
       }
       /**
-       * <code>uint32 dungeon_id = 6;</code>
+       * <code>uint32 dungeon_id = 4;</code>
        * @param value The dungeonId to set.
        * @return This builder for chaining.
        */
@@ -454,7 +462,7 @@ public final class FungusFighterClearTrainingRuntimeDataReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 dungeon_id = 6;</code>
+       * <code>uint32 dungeon_id = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearDungeonId() {
@@ -532,7 +540,7 @@ public final class FungusFighterClearTrainingRuntimeDataReqOuterClass {
     java.lang.String[] descriptorData = {
       "\n.FungusFighterClearTrainingRuntimeDataR" +
       "eq.proto\">\n(FungusFighterClearTrainingRu" +
-      "ntimeDataReq\022\022\n\ndungeon_id\030\006 \001(\rB\033\n\031emu." +
+      "ntimeDataReq\022\022\n\ndungeon_id\030\004 \001(\rB\033\n\031emu." +
       "grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

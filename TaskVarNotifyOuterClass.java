@@ -19,34 +19,38 @@ public final class TaskVarNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .TaskVar task_var_list = 7;</code>
+     * <code>repeated .TaskVar task_var_list = 13;</code>
      */
     java.util.List<emu.grasscutter.net.proto.TaskVarOuterClass.TaskVar> 
         getTaskVarListList();
     /**
-     * <code>repeated .TaskVar task_var_list = 7;</code>
+     * <code>repeated .TaskVar task_var_list = 13;</code>
      */
     emu.grasscutter.net.proto.TaskVarOuterClass.TaskVar getTaskVarList(int index);
     /**
-     * <code>repeated .TaskVar task_var_list = 7;</code>
+     * <code>repeated .TaskVar task_var_list = 13;</code>
      */
     int getTaskVarListCount();
     /**
-     * <code>repeated .TaskVar task_var_list = 7;</code>
+     * <code>repeated .TaskVar task_var_list = 13;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.TaskVarOuterClass.TaskVarOrBuilder> 
         getTaskVarListOrBuilderList();
     /**
-     * <code>repeated .TaskVar task_var_list = 7;</code>
+     * <code>repeated .TaskVar task_var_list = 13;</code>
      */
     emu.grasscutter.net.proto.TaskVarOuterClass.TaskVarOrBuilder getTaskVarListOrBuilder(
         int index);
   }
   /**
    * <pre>
-   * CmdId: 160
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 136;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code TaskVarNotify}
@@ -95,7 +99,7 @@ public final class TaskVarNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 58: {
+            case 106: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 taskVarList_ = new java.util.ArrayList<emu.grasscutter.net.proto.TaskVarOuterClass.TaskVar>();
                 mutable_bitField0_ |= 0x00000001;
@@ -139,17 +143,17 @@ public final class TaskVarNotifyOuterClass {
               emu.grasscutter.net.proto.TaskVarNotifyOuterClass.TaskVarNotify.class, emu.grasscutter.net.proto.TaskVarNotifyOuterClass.TaskVarNotify.Builder.class);
     }
 
-    public static final int TASK_VAR_LIST_FIELD_NUMBER = 7;
+    public static final int TASK_VAR_LIST_FIELD_NUMBER = 13;
     private java.util.List<emu.grasscutter.net.proto.TaskVarOuterClass.TaskVar> taskVarList_;
     /**
-     * <code>repeated .TaskVar task_var_list = 7;</code>
+     * <code>repeated .TaskVar task_var_list = 13;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.TaskVarOuterClass.TaskVar> getTaskVarListList() {
       return taskVarList_;
     }
     /**
-     * <code>repeated .TaskVar task_var_list = 7;</code>
+     * <code>repeated .TaskVar task_var_list = 13;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.TaskVarOuterClass.TaskVarOrBuilder> 
@@ -157,21 +161,21 @@ public final class TaskVarNotifyOuterClass {
       return taskVarList_;
     }
     /**
-     * <code>repeated .TaskVar task_var_list = 7;</code>
+     * <code>repeated .TaskVar task_var_list = 13;</code>
      */
     @java.lang.Override
     public int getTaskVarListCount() {
       return taskVarList_.size();
     }
     /**
-     * <code>repeated .TaskVar task_var_list = 7;</code>
+     * <code>repeated .TaskVar task_var_list = 13;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.TaskVarOuterClass.TaskVar getTaskVarList(int index) {
       return taskVarList_.get(index);
     }
     /**
-     * <code>repeated .TaskVar task_var_list = 7;</code>
+     * <code>repeated .TaskVar task_var_list = 13;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.TaskVarOuterClass.TaskVarOrBuilder getTaskVarListOrBuilder(
@@ -194,7 +198,7 @@ public final class TaskVarNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       for (int i = 0; i < taskVarList_.size(); i++) {
-        output.writeMessage(7, taskVarList_.get(i));
+        output.writeMessage(13, taskVarList_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -207,7 +211,7 @@ public final class TaskVarNotifyOuterClass {
       size = 0;
       for (int i = 0; i < taskVarList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(7, taskVarList_.get(i));
+          .computeMessageSize(13, taskVarList_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -338,9 +342,13 @@ public final class TaskVarNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 160
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 136;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code TaskVarNotify}
@@ -540,7 +548,7 @@ public final class TaskVarNotifyOuterClass {
           emu.grasscutter.net.proto.TaskVarOuterClass.TaskVar, emu.grasscutter.net.proto.TaskVarOuterClass.TaskVar.Builder, emu.grasscutter.net.proto.TaskVarOuterClass.TaskVarOrBuilder> taskVarListBuilder_;
 
       /**
-       * <code>repeated .TaskVar task_var_list = 7;</code>
+       * <code>repeated .TaskVar task_var_list = 13;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.TaskVarOuterClass.TaskVar> getTaskVarListList() {
         if (taskVarListBuilder_ == null) {
@@ -550,7 +558,7 @@ public final class TaskVarNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .TaskVar task_var_list = 7;</code>
+       * <code>repeated .TaskVar task_var_list = 13;</code>
        */
       public int getTaskVarListCount() {
         if (taskVarListBuilder_ == null) {
@@ -560,7 +568,7 @@ public final class TaskVarNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .TaskVar task_var_list = 7;</code>
+       * <code>repeated .TaskVar task_var_list = 13;</code>
        */
       public emu.grasscutter.net.proto.TaskVarOuterClass.TaskVar getTaskVarList(int index) {
         if (taskVarListBuilder_ == null) {
@@ -570,7 +578,7 @@ public final class TaskVarNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .TaskVar task_var_list = 7;</code>
+       * <code>repeated .TaskVar task_var_list = 13;</code>
        */
       public Builder setTaskVarList(
           int index, emu.grasscutter.net.proto.TaskVarOuterClass.TaskVar value) {
@@ -587,7 +595,7 @@ public final class TaskVarNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .TaskVar task_var_list = 7;</code>
+       * <code>repeated .TaskVar task_var_list = 13;</code>
        */
       public Builder setTaskVarList(
           int index, emu.grasscutter.net.proto.TaskVarOuterClass.TaskVar.Builder builderForValue) {
@@ -601,7 +609,7 @@ public final class TaskVarNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .TaskVar task_var_list = 7;</code>
+       * <code>repeated .TaskVar task_var_list = 13;</code>
        */
       public Builder addTaskVarList(emu.grasscutter.net.proto.TaskVarOuterClass.TaskVar value) {
         if (taskVarListBuilder_ == null) {
@@ -617,7 +625,7 @@ public final class TaskVarNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .TaskVar task_var_list = 7;</code>
+       * <code>repeated .TaskVar task_var_list = 13;</code>
        */
       public Builder addTaskVarList(
           int index, emu.grasscutter.net.proto.TaskVarOuterClass.TaskVar value) {
@@ -634,7 +642,7 @@ public final class TaskVarNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .TaskVar task_var_list = 7;</code>
+       * <code>repeated .TaskVar task_var_list = 13;</code>
        */
       public Builder addTaskVarList(
           emu.grasscutter.net.proto.TaskVarOuterClass.TaskVar.Builder builderForValue) {
@@ -648,7 +656,7 @@ public final class TaskVarNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .TaskVar task_var_list = 7;</code>
+       * <code>repeated .TaskVar task_var_list = 13;</code>
        */
       public Builder addTaskVarList(
           int index, emu.grasscutter.net.proto.TaskVarOuterClass.TaskVar.Builder builderForValue) {
@@ -662,7 +670,7 @@ public final class TaskVarNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .TaskVar task_var_list = 7;</code>
+       * <code>repeated .TaskVar task_var_list = 13;</code>
        */
       public Builder addAllTaskVarList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.TaskVarOuterClass.TaskVar> values) {
@@ -677,7 +685,7 @@ public final class TaskVarNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .TaskVar task_var_list = 7;</code>
+       * <code>repeated .TaskVar task_var_list = 13;</code>
        */
       public Builder clearTaskVarList() {
         if (taskVarListBuilder_ == null) {
@@ -690,7 +698,7 @@ public final class TaskVarNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .TaskVar task_var_list = 7;</code>
+       * <code>repeated .TaskVar task_var_list = 13;</code>
        */
       public Builder removeTaskVarList(int index) {
         if (taskVarListBuilder_ == null) {
@@ -703,14 +711,14 @@ public final class TaskVarNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .TaskVar task_var_list = 7;</code>
+       * <code>repeated .TaskVar task_var_list = 13;</code>
        */
       public emu.grasscutter.net.proto.TaskVarOuterClass.TaskVar.Builder getTaskVarListBuilder(
           int index) {
         return getTaskVarListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .TaskVar task_var_list = 7;</code>
+       * <code>repeated .TaskVar task_var_list = 13;</code>
        */
       public emu.grasscutter.net.proto.TaskVarOuterClass.TaskVarOrBuilder getTaskVarListOrBuilder(
           int index) {
@@ -720,7 +728,7 @@ public final class TaskVarNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .TaskVar task_var_list = 7;</code>
+       * <code>repeated .TaskVar task_var_list = 13;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.TaskVarOuterClass.TaskVarOrBuilder> 
            getTaskVarListOrBuilderList() {
@@ -731,14 +739,14 @@ public final class TaskVarNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .TaskVar task_var_list = 7;</code>
+       * <code>repeated .TaskVar task_var_list = 13;</code>
        */
       public emu.grasscutter.net.proto.TaskVarOuterClass.TaskVar.Builder addTaskVarListBuilder() {
         return getTaskVarListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.TaskVarOuterClass.TaskVar.getDefaultInstance());
       }
       /**
-       * <code>repeated .TaskVar task_var_list = 7;</code>
+       * <code>repeated .TaskVar task_var_list = 13;</code>
        */
       public emu.grasscutter.net.proto.TaskVarOuterClass.TaskVar.Builder addTaskVarListBuilder(
           int index) {
@@ -746,7 +754,7 @@ public final class TaskVarNotifyOuterClass {
             index, emu.grasscutter.net.proto.TaskVarOuterClass.TaskVar.getDefaultInstance());
       }
       /**
-       * <code>repeated .TaskVar task_var_list = 7;</code>
+       * <code>repeated .TaskVar task_var_list = 13;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.TaskVarOuterClass.TaskVar.Builder> 
            getTaskVarListBuilderList() {
@@ -834,7 +842,7 @@ public final class TaskVarNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\023TaskVarNotify.proto\032\rTaskVar.proto\"0\n\r" +
-      "TaskVarNotify\022\037\n\rtask_var_list\030\007 \003(\0132\010.T" +
+      "TaskVarNotify\022\037\n\rtask_var_list\030\r \003(\0132\010.T" +
       "askVarB\033\n\031emu.grasscutter.net.protob\006pro" +
       "to3"
     };

@@ -19,7 +19,7 @@ public final class BlitzRushParkourRestartReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 schedule_id = 13;</code>
+     * <code>uint32 schedule_id = 14;</code>
      * @return The scheduleId.
      */
     int getScheduleId();
@@ -32,10 +32,14 @@ public final class BlitzRushParkourRestartReqOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 8653
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 8986;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code BlitzRushParkourRestartReq}
@@ -87,7 +91,7 @@ public final class BlitzRushParkourRestartReqOuterClass {
               groupId_ = input.readUInt32();
               break;
             }
-            case 104: {
+            case 112: {
 
               scheduleId_ = input.readUInt32();
               break;
@@ -124,10 +128,10 @@ public final class BlitzRushParkourRestartReqOuterClass {
               emu.grasscutter.net.proto.BlitzRushParkourRestartReqOuterClass.BlitzRushParkourRestartReq.class, emu.grasscutter.net.proto.BlitzRushParkourRestartReqOuterClass.BlitzRushParkourRestartReq.Builder.class);
     }
 
-    public static final int SCHEDULE_ID_FIELD_NUMBER = 13;
+    public static final int SCHEDULE_ID_FIELD_NUMBER = 14;
     private int scheduleId_;
     /**
-     * <code>uint32 schedule_id = 13;</code>
+     * <code>uint32 schedule_id = 14;</code>
      * @return The scheduleId.
      */
     @java.lang.Override
@@ -164,7 +168,7 @@ public final class BlitzRushParkourRestartReqOuterClass {
         output.writeUInt32(2, groupId_);
       }
       if (scheduleId_ != 0) {
-        output.writeUInt32(13, scheduleId_);
+        output.writeUInt32(14, scheduleId_);
       }
       unknownFields.writeTo(output);
     }
@@ -181,7 +185,7 @@ public final class BlitzRushParkourRestartReqOuterClass {
       }
       if (scheduleId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, scheduleId_);
+          .computeUInt32Size(14, scheduleId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -314,10 +318,14 @@ public final class BlitzRushParkourRestartReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 8653
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 8986;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code BlitzRushParkourRestartReq}
@@ -474,7 +482,7 @@ public final class BlitzRushParkourRestartReqOuterClass {
 
       private int scheduleId_ ;
       /**
-       * <code>uint32 schedule_id = 13;</code>
+       * <code>uint32 schedule_id = 14;</code>
        * @return The scheduleId.
        */
       @java.lang.Override
@@ -482,7 +490,7 @@ public final class BlitzRushParkourRestartReqOuterClass {
         return scheduleId_;
       }
       /**
-       * <code>uint32 schedule_id = 13;</code>
+       * <code>uint32 schedule_id = 14;</code>
        * @param value The scheduleId to set.
        * @return This builder for chaining.
        */
@@ -493,7 +501,7 @@ public final class BlitzRushParkourRestartReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 schedule_id = 13;</code>
+       * <code>uint32 schedule_id = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearScheduleId() {
@@ -602,7 +610,7 @@ public final class BlitzRushParkourRestartReqOuterClass {
     java.lang.String[] descriptorData = {
       "\n BlitzRushParkourRestartReq.proto\"C\n\032Bl" +
       "itzRushParkourRestartReq\022\023\n\013schedule_id\030" +
-      "\r \001(\r\022\020\n\010group_id\030\002 \001(\rB\033\n\031emu.grasscutt" +
+      "\016 \001(\r\022\020\n\010group_id\030\002 \001(\rB\033\n\031emu.grasscutt" +
       "er.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

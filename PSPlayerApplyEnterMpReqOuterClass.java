@@ -19,12 +19,12 @@ public final class PSPlayerApplyEnterMpReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>string target_psn_id = 5;</code>
+     * <code>string target_psn_id = 9;</code>
      * @return The targetPsnId.
      */
     java.lang.String getTargetPsnId();
     /**
-     * <code>string target_psn_id = 5;</code>
+     * <code>string target_psn_id = 9;</code>
      * @return The bytes for targetPsnId.
      */
     com.google.protobuf.ByteString
@@ -32,10 +32,14 @@ public final class PSPlayerApplyEnterMpReqOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 1841
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 1808;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code PSPlayerApplyEnterMpReq}
@@ -83,7 +87,7 @@ public final class PSPlayerApplyEnterMpReqOuterClass {
             case 0:
               done = true;
               break;
-            case 42: {
+            case 74: {
               java.lang.String s = input.readStringRequireUtf8();
 
               targetPsnId_ = s;
@@ -121,10 +125,10 @@ public final class PSPlayerApplyEnterMpReqOuterClass {
               emu.grasscutter.net.proto.PSPlayerApplyEnterMpReqOuterClass.PSPlayerApplyEnterMpReq.class, emu.grasscutter.net.proto.PSPlayerApplyEnterMpReqOuterClass.PSPlayerApplyEnterMpReq.Builder.class);
     }
 
-    public static final int TARGET_PSN_ID_FIELD_NUMBER = 5;
+    public static final int TARGET_PSN_ID_FIELD_NUMBER = 9;
     private volatile java.lang.Object targetPsnId_;
     /**
-     * <code>string target_psn_id = 5;</code>
+     * <code>string target_psn_id = 9;</code>
      * @return The targetPsnId.
      */
     @java.lang.Override
@@ -141,7 +145,7 @@ public final class PSPlayerApplyEnterMpReqOuterClass {
       }
     }
     /**
-     * <code>string target_psn_id = 5;</code>
+     * <code>string target_psn_id = 9;</code>
      * @return The bytes for targetPsnId.
      */
     @java.lang.Override
@@ -174,7 +178,7 @@ public final class PSPlayerApplyEnterMpReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(targetPsnId_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 5, targetPsnId_);
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 9, targetPsnId_);
       }
       unknownFields.writeTo(output);
     }
@@ -186,7 +190,7 @@ public final class PSPlayerApplyEnterMpReqOuterClass {
 
       size = 0;
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(targetPsnId_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(5, targetPsnId_);
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(9, targetPsnId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -315,10 +319,14 @@ public final class PSPlayerApplyEnterMpReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 1841
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 1808;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code PSPlayerApplyEnterMpReq}
@@ -470,7 +478,7 @@ public final class PSPlayerApplyEnterMpReqOuterClass {
 
       private java.lang.Object targetPsnId_ = "";
       /**
-       * <code>string target_psn_id = 5;</code>
+       * <code>string target_psn_id = 9;</code>
        * @return The targetPsnId.
        */
       public java.lang.String getTargetPsnId() {
@@ -486,7 +494,7 @@ public final class PSPlayerApplyEnterMpReqOuterClass {
         }
       }
       /**
-       * <code>string target_psn_id = 5;</code>
+       * <code>string target_psn_id = 9;</code>
        * @return The bytes for targetPsnId.
        */
       public com.google.protobuf.ByteString
@@ -503,7 +511,7 @@ public final class PSPlayerApplyEnterMpReqOuterClass {
         }
       }
       /**
-       * <code>string target_psn_id = 5;</code>
+       * <code>string target_psn_id = 9;</code>
        * @param value The targetPsnId to set.
        * @return This builder for chaining.
        */
@@ -518,7 +526,7 @@ public final class PSPlayerApplyEnterMpReqOuterClass {
         return this;
       }
       /**
-       * <code>string target_psn_id = 5;</code>
+       * <code>string target_psn_id = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearTargetPsnId() {
@@ -528,7 +536,7 @@ public final class PSPlayerApplyEnterMpReqOuterClass {
         return this;
       }
       /**
-       * <code>string target_psn_id = 5;</code>
+       * <code>string target_psn_id = 9;</code>
        * @param value The bytes for targetPsnId to set.
        * @return This builder for chaining.
        */
@@ -611,7 +619,7 @@ public final class PSPlayerApplyEnterMpReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\035PSPlayerApplyEnterMpReq.proto\"0\n\027PSPla" +
-      "yerApplyEnterMpReq\022\025\n\rtarget_psn_id\030\005 \001(" +
+      "yerApplyEnterMpReq\022\025\n\rtarget_psn_id\030\t \001(" +
       "\tB\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

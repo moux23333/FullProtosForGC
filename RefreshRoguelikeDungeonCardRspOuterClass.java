@@ -19,23 +19,23 @@ public final class RefreshRoguelikeDungeonCardRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 3;</code>
+     * <code>int32 retcode = 14;</code>
      * @return The retcode.
      */
     int getRetcode();
 
     /**
-     * <code>repeated uint32 res_card_list = 9;</code>
+     * <code>repeated uint32 res_card_list = 2;</code>
      * @return A list containing the resCardList.
      */
     java.util.List<java.lang.Integer> getResCardListList();
     /**
-     * <code>repeated uint32 res_card_list = 9;</code>
+     * <code>repeated uint32 res_card_list = 2;</code>
      * @return The count of resCardList.
      */
     int getResCardListCount();
     /**
-     * <code>repeated uint32 res_card_list = 9;</code>
+     * <code>repeated uint32 res_card_list = 2;</code>
      * @param index The index of the element to return.
      * @return The resCardList at the given index.
      */
@@ -43,9 +43,13 @@ public final class RefreshRoguelikeDungeonCardRspOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 8349
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 8994;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code RefreshRoguelikeDungeonCardRsp}
@@ -94,12 +98,7 @@ public final class RefreshRoguelikeDungeonCardRspOuterClass {
             case 0:
               done = true;
               break;
-            case 24: {
-
-              retcode_ = input.readInt32();
-              break;
-            }
-            case 72: {
+            case 16: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 resCardList_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
@@ -107,7 +106,7 @@ public final class RefreshRoguelikeDungeonCardRspOuterClass {
               resCardList_.addInt(input.readUInt32());
               break;
             }
-            case 74: {
+            case 18: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -118,6 +117,11 @@ public final class RefreshRoguelikeDungeonCardRspOuterClass {
                 resCardList_.addInt(input.readUInt32());
               }
               input.popLimit(limit);
+              break;
+            }
+            case 112: {
+
+              retcode_ = input.readInt32();
               break;
             }
             default: {
@@ -155,10 +159,10 @@ public final class RefreshRoguelikeDungeonCardRspOuterClass {
               emu.grasscutter.net.proto.RefreshRoguelikeDungeonCardRspOuterClass.RefreshRoguelikeDungeonCardRsp.class, emu.grasscutter.net.proto.RefreshRoguelikeDungeonCardRspOuterClass.RefreshRoguelikeDungeonCardRsp.Builder.class);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 3;
+    public static final int RETCODE_FIELD_NUMBER = 14;
     private int retcode_;
     /**
-     * <code>int32 retcode = 3;</code>
+     * <code>int32 retcode = 14;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -166,10 +170,10 @@ public final class RefreshRoguelikeDungeonCardRspOuterClass {
       return retcode_;
     }
 
-    public static final int RES_CARD_LIST_FIELD_NUMBER = 9;
+    public static final int RES_CARD_LIST_FIELD_NUMBER = 2;
     private com.google.protobuf.Internal.IntList resCardList_;
     /**
-     * <code>repeated uint32 res_card_list = 9;</code>
+     * <code>repeated uint32 res_card_list = 2;</code>
      * @return A list containing the resCardList.
      */
     @java.lang.Override
@@ -178,14 +182,14 @@ public final class RefreshRoguelikeDungeonCardRspOuterClass {
       return resCardList_;
     }
     /**
-     * <code>repeated uint32 res_card_list = 9;</code>
+     * <code>repeated uint32 res_card_list = 2;</code>
      * @return The count of resCardList.
      */
     public int getResCardListCount() {
       return resCardList_.size();
     }
     /**
-     * <code>repeated uint32 res_card_list = 9;</code>
+     * <code>repeated uint32 res_card_list = 2;</code>
      * @param index The index of the element to return.
      * @return The resCardList at the given index.
      */
@@ -209,15 +213,15 @@ public final class RefreshRoguelikeDungeonCardRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      if (retcode_ != 0) {
-        output.writeInt32(3, retcode_);
-      }
       if (getResCardListList().size() > 0) {
-        output.writeUInt32NoTag(74);
+        output.writeUInt32NoTag(18);
         output.writeUInt32NoTag(resCardListMemoizedSerializedSize);
       }
       for (int i = 0; i < resCardList_.size(); i++) {
         output.writeUInt32NoTag(resCardList_.getInt(i));
+      }
+      if (retcode_ != 0) {
+        output.writeInt32(14, retcode_);
       }
       unknownFields.writeTo(output);
     }
@@ -228,10 +232,6 @@ public final class RefreshRoguelikeDungeonCardRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (retcode_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(3, retcode_);
-      }
       {
         int dataSize = 0;
         for (int i = 0; i < resCardList_.size(); i++) {
@@ -245,6 +245,10 @@ public final class RefreshRoguelikeDungeonCardRspOuterClass {
               .computeInt32SizeNoTag(dataSize);
         }
         resCardListMemoizedSerializedSize = dataSize;
+      }
+      if (retcode_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(14, retcode_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -379,9 +383,13 @@ public final class RefreshRoguelikeDungeonCardRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 8349
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 8994;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code RefreshRoguelikeDungeonCardRsp}
@@ -551,7 +559,7 @@ public final class RefreshRoguelikeDungeonCardRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 3;</code>
+       * <code>int32 retcode = 14;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -559,7 +567,7 @@ public final class RefreshRoguelikeDungeonCardRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 3;</code>
+       * <code>int32 retcode = 14;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -570,7 +578,7 @@ public final class RefreshRoguelikeDungeonCardRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 3;</code>
+       * <code>int32 retcode = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -588,7 +596,7 @@ public final class RefreshRoguelikeDungeonCardRspOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 res_card_list = 9;</code>
+       * <code>repeated uint32 res_card_list = 2;</code>
        * @return A list containing the resCardList.
        */
       public java.util.List<java.lang.Integer>
@@ -597,14 +605,14 @@ public final class RefreshRoguelikeDungeonCardRspOuterClass {
                  java.util.Collections.unmodifiableList(resCardList_) : resCardList_;
       }
       /**
-       * <code>repeated uint32 res_card_list = 9;</code>
+       * <code>repeated uint32 res_card_list = 2;</code>
        * @return The count of resCardList.
        */
       public int getResCardListCount() {
         return resCardList_.size();
       }
       /**
-       * <code>repeated uint32 res_card_list = 9;</code>
+       * <code>repeated uint32 res_card_list = 2;</code>
        * @param index The index of the element to return.
        * @return The resCardList at the given index.
        */
@@ -612,7 +620,7 @@ public final class RefreshRoguelikeDungeonCardRspOuterClass {
         return resCardList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 res_card_list = 9;</code>
+       * <code>repeated uint32 res_card_list = 2;</code>
        * @param index The index to set the value at.
        * @param value The resCardList to set.
        * @return This builder for chaining.
@@ -625,7 +633,7 @@ public final class RefreshRoguelikeDungeonCardRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 res_card_list = 9;</code>
+       * <code>repeated uint32 res_card_list = 2;</code>
        * @param value The resCardList to add.
        * @return This builder for chaining.
        */
@@ -636,7 +644,7 @@ public final class RefreshRoguelikeDungeonCardRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 res_card_list = 9;</code>
+       * <code>repeated uint32 res_card_list = 2;</code>
        * @param values The resCardList to add.
        * @return This builder for chaining.
        */
@@ -649,7 +657,7 @@ public final class RefreshRoguelikeDungeonCardRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 res_card_list = 9;</code>
+       * <code>repeated uint32 res_card_list = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearResCardList() {
@@ -727,7 +735,7 @@ public final class RefreshRoguelikeDungeonCardRspOuterClass {
     java.lang.String[] descriptorData = {
       "\n$RefreshRoguelikeDungeonCardRsp.proto\"H" +
       "\n\036RefreshRoguelikeDungeonCardRsp\022\017\n\007retc" +
-      "ode\030\003 \001(\005\022\025\n\rres_card_list\030\t \003(\rB\033\n\031emu." +
+      "ode\030\016 \001(\005\022\025\n\rres_card_list\030\002 \003(\rB\033\n\031emu." +
       "grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

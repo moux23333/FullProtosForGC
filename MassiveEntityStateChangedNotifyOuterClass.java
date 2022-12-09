@@ -19,35 +19,39 @@ public final class MassiveEntityStateChangedNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .MassiveEntityState massive_entity_state_list = 4;</code>
+     * <code>repeated .MassiveEntityState massive_entity_state_list = 14;</code>
      */
     java.util.List<emu.grasscutter.net.proto.MassiveEntityStateOuterClass.MassiveEntityState> 
         getMassiveEntityStateListList();
     /**
-     * <code>repeated .MassiveEntityState massive_entity_state_list = 4;</code>
+     * <code>repeated .MassiveEntityState massive_entity_state_list = 14;</code>
      */
     emu.grasscutter.net.proto.MassiveEntityStateOuterClass.MassiveEntityState getMassiveEntityStateList(int index);
     /**
-     * <code>repeated .MassiveEntityState massive_entity_state_list = 4;</code>
+     * <code>repeated .MassiveEntityState massive_entity_state_list = 14;</code>
      */
     int getMassiveEntityStateListCount();
     /**
-     * <code>repeated .MassiveEntityState massive_entity_state_list = 4;</code>
+     * <code>repeated .MassiveEntityState massive_entity_state_list = 14;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.MassiveEntityStateOuterClass.MassiveEntityStateOrBuilder> 
         getMassiveEntityStateListOrBuilderList();
     /**
-     * <code>repeated .MassiveEntityState massive_entity_state_list = 4;</code>
+     * <code>repeated .MassiveEntityState massive_entity_state_list = 14;</code>
      */
     emu.grasscutter.net.proto.MassiveEntityStateOuterClass.MassiveEntityStateOrBuilder getMassiveEntityStateListOrBuilder(
         int index);
   }
   /**
    * <pre>
-   * CmdId: 370
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 349;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code MassiveEntityStateChangedNotify}
@@ -96,7 +100,7 @@ public final class MassiveEntityStateChangedNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 34: {
+            case 114: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 massiveEntityStateList_ = new java.util.ArrayList<emu.grasscutter.net.proto.MassiveEntityStateOuterClass.MassiveEntityState>();
                 mutable_bitField0_ |= 0x00000001;
@@ -140,17 +144,17 @@ public final class MassiveEntityStateChangedNotifyOuterClass {
               emu.grasscutter.net.proto.MassiveEntityStateChangedNotifyOuterClass.MassiveEntityStateChangedNotify.class, emu.grasscutter.net.proto.MassiveEntityStateChangedNotifyOuterClass.MassiveEntityStateChangedNotify.Builder.class);
     }
 
-    public static final int MASSIVE_ENTITY_STATE_LIST_FIELD_NUMBER = 4;
+    public static final int MASSIVE_ENTITY_STATE_LIST_FIELD_NUMBER = 14;
     private java.util.List<emu.grasscutter.net.proto.MassiveEntityStateOuterClass.MassiveEntityState> massiveEntityStateList_;
     /**
-     * <code>repeated .MassiveEntityState massive_entity_state_list = 4;</code>
+     * <code>repeated .MassiveEntityState massive_entity_state_list = 14;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.MassiveEntityStateOuterClass.MassiveEntityState> getMassiveEntityStateListList() {
       return massiveEntityStateList_;
     }
     /**
-     * <code>repeated .MassiveEntityState massive_entity_state_list = 4;</code>
+     * <code>repeated .MassiveEntityState massive_entity_state_list = 14;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.MassiveEntityStateOuterClass.MassiveEntityStateOrBuilder> 
@@ -158,21 +162,21 @@ public final class MassiveEntityStateChangedNotifyOuterClass {
       return massiveEntityStateList_;
     }
     /**
-     * <code>repeated .MassiveEntityState massive_entity_state_list = 4;</code>
+     * <code>repeated .MassiveEntityState massive_entity_state_list = 14;</code>
      */
     @java.lang.Override
     public int getMassiveEntityStateListCount() {
       return massiveEntityStateList_.size();
     }
     /**
-     * <code>repeated .MassiveEntityState massive_entity_state_list = 4;</code>
+     * <code>repeated .MassiveEntityState massive_entity_state_list = 14;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.MassiveEntityStateOuterClass.MassiveEntityState getMassiveEntityStateList(int index) {
       return massiveEntityStateList_.get(index);
     }
     /**
-     * <code>repeated .MassiveEntityState massive_entity_state_list = 4;</code>
+     * <code>repeated .MassiveEntityState massive_entity_state_list = 14;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.MassiveEntityStateOuterClass.MassiveEntityStateOrBuilder getMassiveEntityStateListOrBuilder(
@@ -195,7 +199,7 @@ public final class MassiveEntityStateChangedNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       for (int i = 0; i < massiveEntityStateList_.size(); i++) {
-        output.writeMessage(4, massiveEntityStateList_.get(i));
+        output.writeMessage(14, massiveEntityStateList_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -208,7 +212,7 @@ public final class MassiveEntityStateChangedNotifyOuterClass {
       size = 0;
       for (int i = 0; i < massiveEntityStateList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(4, massiveEntityStateList_.get(i));
+          .computeMessageSize(14, massiveEntityStateList_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -339,10 +343,14 @@ public final class MassiveEntityStateChangedNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 370
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 349;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code MassiveEntityStateChangedNotify}
@@ -542,7 +550,7 @@ public final class MassiveEntityStateChangedNotifyOuterClass {
           emu.grasscutter.net.proto.MassiveEntityStateOuterClass.MassiveEntityState, emu.grasscutter.net.proto.MassiveEntityStateOuterClass.MassiveEntityState.Builder, emu.grasscutter.net.proto.MassiveEntityStateOuterClass.MassiveEntityStateOrBuilder> massiveEntityStateListBuilder_;
 
       /**
-       * <code>repeated .MassiveEntityState massive_entity_state_list = 4;</code>
+       * <code>repeated .MassiveEntityState massive_entity_state_list = 14;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.MassiveEntityStateOuterClass.MassiveEntityState> getMassiveEntityStateListList() {
         if (massiveEntityStateListBuilder_ == null) {
@@ -552,7 +560,7 @@ public final class MassiveEntityStateChangedNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .MassiveEntityState massive_entity_state_list = 4;</code>
+       * <code>repeated .MassiveEntityState massive_entity_state_list = 14;</code>
        */
       public int getMassiveEntityStateListCount() {
         if (massiveEntityStateListBuilder_ == null) {
@@ -562,7 +570,7 @@ public final class MassiveEntityStateChangedNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .MassiveEntityState massive_entity_state_list = 4;</code>
+       * <code>repeated .MassiveEntityState massive_entity_state_list = 14;</code>
        */
       public emu.grasscutter.net.proto.MassiveEntityStateOuterClass.MassiveEntityState getMassiveEntityStateList(int index) {
         if (massiveEntityStateListBuilder_ == null) {
@@ -572,7 +580,7 @@ public final class MassiveEntityStateChangedNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .MassiveEntityState massive_entity_state_list = 4;</code>
+       * <code>repeated .MassiveEntityState massive_entity_state_list = 14;</code>
        */
       public Builder setMassiveEntityStateList(
           int index, emu.grasscutter.net.proto.MassiveEntityStateOuterClass.MassiveEntityState value) {
@@ -589,7 +597,7 @@ public final class MassiveEntityStateChangedNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .MassiveEntityState massive_entity_state_list = 4;</code>
+       * <code>repeated .MassiveEntityState massive_entity_state_list = 14;</code>
        */
       public Builder setMassiveEntityStateList(
           int index, emu.grasscutter.net.proto.MassiveEntityStateOuterClass.MassiveEntityState.Builder builderForValue) {
@@ -603,7 +611,7 @@ public final class MassiveEntityStateChangedNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .MassiveEntityState massive_entity_state_list = 4;</code>
+       * <code>repeated .MassiveEntityState massive_entity_state_list = 14;</code>
        */
       public Builder addMassiveEntityStateList(emu.grasscutter.net.proto.MassiveEntityStateOuterClass.MassiveEntityState value) {
         if (massiveEntityStateListBuilder_ == null) {
@@ -619,7 +627,7 @@ public final class MassiveEntityStateChangedNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .MassiveEntityState massive_entity_state_list = 4;</code>
+       * <code>repeated .MassiveEntityState massive_entity_state_list = 14;</code>
        */
       public Builder addMassiveEntityStateList(
           int index, emu.grasscutter.net.proto.MassiveEntityStateOuterClass.MassiveEntityState value) {
@@ -636,7 +644,7 @@ public final class MassiveEntityStateChangedNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .MassiveEntityState massive_entity_state_list = 4;</code>
+       * <code>repeated .MassiveEntityState massive_entity_state_list = 14;</code>
        */
       public Builder addMassiveEntityStateList(
           emu.grasscutter.net.proto.MassiveEntityStateOuterClass.MassiveEntityState.Builder builderForValue) {
@@ -650,7 +658,7 @@ public final class MassiveEntityStateChangedNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .MassiveEntityState massive_entity_state_list = 4;</code>
+       * <code>repeated .MassiveEntityState massive_entity_state_list = 14;</code>
        */
       public Builder addMassiveEntityStateList(
           int index, emu.grasscutter.net.proto.MassiveEntityStateOuterClass.MassiveEntityState.Builder builderForValue) {
@@ -664,7 +672,7 @@ public final class MassiveEntityStateChangedNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .MassiveEntityState massive_entity_state_list = 4;</code>
+       * <code>repeated .MassiveEntityState massive_entity_state_list = 14;</code>
        */
       public Builder addAllMassiveEntityStateList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.MassiveEntityStateOuterClass.MassiveEntityState> values) {
@@ -679,7 +687,7 @@ public final class MassiveEntityStateChangedNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .MassiveEntityState massive_entity_state_list = 4;</code>
+       * <code>repeated .MassiveEntityState massive_entity_state_list = 14;</code>
        */
       public Builder clearMassiveEntityStateList() {
         if (massiveEntityStateListBuilder_ == null) {
@@ -692,7 +700,7 @@ public final class MassiveEntityStateChangedNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .MassiveEntityState massive_entity_state_list = 4;</code>
+       * <code>repeated .MassiveEntityState massive_entity_state_list = 14;</code>
        */
       public Builder removeMassiveEntityStateList(int index) {
         if (massiveEntityStateListBuilder_ == null) {
@@ -705,14 +713,14 @@ public final class MassiveEntityStateChangedNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .MassiveEntityState massive_entity_state_list = 4;</code>
+       * <code>repeated .MassiveEntityState massive_entity_state_list = 14;</code>
        */
       public emu.grasscutter.net.proto.MassiveEntityStateOuterClass.MassiveEntityState.Builder getMassiveEntityStateListBuilder(
           int index) {
         return getMassiveEntityStateListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .MassiveEntityState massive_entity_state_list = 4;</code>
+       * <code>repeated .MassiveEntityState massive_entity_state_list = 14;</code>
        */
       public emu.grasscutter.net.proto.MassiveEntityStateOuterClass.MassiveEntityStateOrBuilder getMassiveEntityStateListOrBuilder(
           int index) {
@@ -722,7 +730,7 @@ public final class MassiveEntityStateChangedNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .MassiveEntityState massive_entity_state_list = 4;</code>
+       * <code>repeated .MassiveEntityState massive_entity_state_list = 14;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.MassiveEntityStateOuterClass.MassiveEntityStateOrBuilder> 
            getMassiveEntityStateListOrBuilderList() {
@@ -733,14 +741,14 @@ public final class MassiveEntityStateChangedNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .MassiveEntityState massive_entity_state_list = 4;</code>
+       * <code>repeated .MassiveEntityState massive_entity_state_list = 14;</code>
        */
       public emu.grasscutter.net.proto.MassiveEntityStateOuterClass.MassiveEntityState.Builder addMassiveEntityStateListBuilder() {
         return getMassiveEntityStateListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.MassiveEntityStateOuterClass.MassiveEntityState.getDefaultInstance());
       }
       /**
-       * <code>repeated .MassiveEntityState massive_entity_state_list = 4;</code>
+       * <code>repeated .MassiveEntityState massive_entity_state_list = 14;</code>
        */
       public emu.grasscutter.net.proto.MassiveEntityStateOuterClass.MassiveEntityState.Builder addMassiveEntityStateListBuilder(
           int index) {
@@ -748,7 +756,7 @@ public final class MassiveEntityStateChangedNotifyOuterClass {
             index, emu.grasscutter.net.proto.MassiveEntityStateOuterClass.MassiveEntityState.getDefaultInstance());
       }
       /**
-       * <code>repeated .MassiveEntityState massive_entity_state_list = 4;</code>
+       * <code>repeated .MassiveEntityState massive_entity_state_list = 14;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.MassiveEntityStateOuterClass.MassiveEntityState.Builder> 
            getMassiveEntityStateListBuilderList() {
@@ -838,7 +846,7 @@ public final class MassiveEntityStateChangedNotifyOuterClass {
       "\n%MassiveEntityStateChangedNotify.proto\032" +
       "\030MassiveEntityState.proto\"Y\n\037MassiveEnti" +
       "tyStateChangedNotify\0226\n\031massive_entity_s" +
-      "tate_list\030\004 \003(\0132\023.MassiveEntityStateB\033\n\031" +
+      "tate_list\030\016 \003(\0132\023.MassiveEntityStateB\033\n\031" +
       "emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

@@ -19,16 +19,20 @@ public final class SetLimitOptimizationNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_active = 3;</code>
+     * <code>bool is_active = 10;</code>
      * @return The isActive.
      */
     boolean getIsActive();
   }
   /**
    * <pre>
-   * CmdId: 8851
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 8066;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code SetLimitOptimizationNotify}
@@ -75,7 +79,7 @@ public final class SetLimitOptimizationNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 24: {
+            case 80: {
 
               isActive_ = input.readBool();
               break;
@@ -112,10 +116,10 @@ public final class SetLimitOptimizationNotifyOuterClass {
               emu.grasscutter.net.proto.SetLimitOptimizationNotifyOuterClass.SetLimitOptimizationNotify.class, emu.grasscutter.net.proto.SetLimitOptimizationNotifyOuterClass.SetLimitOptimizationNotify.Builder.class);
     }
 
-    public static final int IS_ACTIVE_FIELD_NUMBER = 3;
+    public static final int IS_ACTIVE_FIELD_NUMBER = 10;
     private boolean isActive_;
     /**
-     * <code>bool is_active = 3;</code>
+     * <code>bool is_active = 10;</code>
      * @return The isActive.
      */
     @java.lang.Override
@@ -138,7 +142,7 @@ public final class SetLimitOptimizationNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (isActive_ != false) {
-        output.writeBool(3, isActive_);
+        output.writeBool(10, isActive_);
       }
       unknownFields.writeTo(output);
     }
@@ -151,7 +155,7 @@ public final class SetLimitOptimizationNotifyOuterClass {
       size = 0;
       if (isActive_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(3, isActive_);
+          .computeBoolSize(10, isActive_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -281,9 +285,13 @@ public final class SetLimitOptimizationNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 8851
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 8066;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code SetLimitOptimizationNotify}
@@ -434,7 +442,7 @@ public final class SetLimitOptimizationNotifyOuterClass {
 
       private boolean isActive_ ;
       /**
-       * <code>bool is_active = 3;</code>
+       * <code>bool is_active = 10;</code>
        * @return The isActive.
        */
       @java.lang.Override
@@ -442,7 +450,7 @@ public final class SetLimitOptimizationNotifyOuterClass {
         return isActive_;
       }
       /**
-       * <code>bool is_active = 3;</code>
+       * <code>bool is_active = 10;</code>
        * @param value The isActive to set.
        * @return This builder for chaining.
        */
@@ -453,7 +461,7 @@ public final class SetLimitOptimizationNotifyOuterClass {
         return this;
       }
       /**
-       * <code>bool is_active = 3;</code>
+       * <code>bool is_active = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsActive() {
@@ -530,7 +538,7 @@ public final class SetLimitOptimizationNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n SetLimitOptimizationNotify.proto\"/\n\032Se" +
-      "tLimitOptimizationNotify\022\021\n\tis_active\030\003 " +
+      "tLimitOptimizationNotify\022\021\n\tis_active\030\n " +
       "\001(\010B\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

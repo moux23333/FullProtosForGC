@@ -19,23 +19,27 @@ public final class IrodoriMasterGalleryCgEndNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 level_id = 15;</code>
+     * <code>uint32 level_id = 11;</code>
      * @return The levelId.
      */
     int getLevelId();
 
     /**
-     * <code>uint32 gallery_id = 4;</code>
+     * <code>uint32 gallery_id = 3;</code>
      * @return The galleryId.
      */
     int getGalleryId();
   }
   /**
    * <pre>
-   * CmdId: 8061
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 8050;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code IrodoriMasterGalleryCgEndNotify}
@@ -82,12 +86,12 @@ public final class IrodoriMasterGalleryCgEndNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 32: {
+            case 24: {
 
               galleryId_ = input.readUInt32();
               break;
             }
-            case 120: {
+            case 88: {
 
               levelId_ = input.readUInt32();
               break;
@@ -124,10 +128,10 @@ public final class IrodoriMasterGalleryCgEndNotifyOuterClass {
               emu.grasscutter.net.proto.IrodoriMasterGalleryCgEndNotifyOuterClass.IrodoriMasterGalleryCgEndNotify.class, emu.grasscutter.net.proto.IrodoriMasterGalleryCgEndNotifyOuterClass.IrodoriMasterGalleryCgEndNotify.Builder.class);
     }
 
-    public static final int LEVEL_ID_FIELD_NUMBER = 15;
+    public static final int LEVEL_ID_FIELD_NUMBER = 11;
     private int levelId_;
     /**
-     * <code>uint32 level_id = 15;</code>
+     * <code>uint32 level_id = 11;</code>
      * @return The levelId.
      */
     @java.lang.Override
@@ -135,10 +139,10 @@ public final class IrodoriMasterGalleryCgEndNotifyOuterClass {
       return levelId_;
     }
 
-    public static final int GALLERY_ID_FIELD_NUMBER = 4;
+    public static final int GALLERY_ID_FIELD_NUMBER = 3;
     private int galleryId_;
     /**
-     * <code>uint32 gallery_id = 4;</code>
+     * <code>uint32 gallery_id = 3;</code>
      * @return The galleryId.
      */
     @java.lang.Override
@@ -161,10 +165,10 @@ public final class IrodoriMasterGalleryCgEndNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (galleryId_ != 0) {
-        output.writeUInt32(4, galleryId_);
+        output.writeUInt32(3, galleryId_);
       }
       if (levelId_ != 0) {
-        output.writeUInt32(15, levelId_);
+        output.writeUInt32(11, levelId_);
       }
       unknownFields.writeTo(output);
     }
@@ -177,11 +181,11 @@ public final class IrodoriMasterGalleryCgEndNotifyOuterClass {
       size = 0;
       if (galleryId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, galleryId_);
+          .computeUInt32Size(3, galleryId_);
       }
       if (levelId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, levelId_);
+          .computeUInt32Size(11, levelId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -314,10 +318,14 @@ public final class IrodoriMasterGalleryCgEndNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 8061
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 8050;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code IrodoriMasterGalleryCgEndNotify}
@@ -474,7 +482,7 @@ public final class IrodoriMasterGalleryCgEndNotifyOuterClass {
 
       private int levelId_ ;
       /**
-       * <code>uint32 level_id = 15;</code>
+       * <code>uint32 level_id = 11;</code>
        * @return The levelId.
        */
       @java.lang.Override
@@ -482,7 +490,7 @@ public final class IrodoriMasterGalleryCgEndNotifyOuterClass {
         return levelId_;
       }
       /**
-       * <code>uint32 level_id = 15;</code>
+       * <code>uint32 level_id = 11;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
        */
@@ -493,7 +501,7 @@ public final class IrodoriMasterGalleryCgEndNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 level_id = 15;</code>
+       * <code>uint32 level_id = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearLevelId() {
@@ -505,7 +513,7 @@ public final class IrodoriMasterGalleryCgEndNotifyOuterClass {
 
       private int galleryId_ ;
       /**
-       * <code>uint32 gallery_id = 4;</code>
+       * <code>uint32 gallery_id = 3;</code>
        * @return The galleryId.
        */
       @java.lang.Override
@@ -513,7 +521,7 @@ public final class IrodoriMasterGalleryCgEndNotifyOuterClass {
         return galleryId_;
       }
       /**
-       * <code>uint32 gallery_id = 4;</code>
+       * <code>uint32 gallery_id = 3;</code>
        * @param value The galleryId to set.
        * @return This builder for chaining.
        */
@@ -524,7 +532,7 @@ public final class IrodoriMasterGalleryCgEndNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 gallery_id = 4;</code>
+       * <code>uint32 gallery_id = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearGalleryId() {
@@ -602,7 +610,7 @@ public final class IrodoriMasterGalleryCgEndNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n%IrodoriMasterGalleryCgEndNotify.proto\"" +
       "G\n\037IrodoriMasterGalleryCgEndNotify\022\020\n\010le" +
-      "vel_id\030\017 \001(\r\022\022\n\ngallery_id\030\004 \001(\rB\033\n\031emu." +
+      "vel_id\030\013 \001(\r\022\022\n\ngallery_id\030\003 \001(\rB\033\n\031emu." +
       "grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

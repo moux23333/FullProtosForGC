@@ -19,22 +19,22 @@ public final class SceneGallerySumoInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 score = 2;</code>
+     * <code>uint32 kill_elite_monster_num = 4;</code>
+     * @return The killEliteMonsterNum.
+     */
+    int getKillEliteMonsterNum();
+
+    /**
+     * <code>uint32 score = 7;</code>
      * @return The score.
      */
     int getScore();
 
     /**
-     * <code>uint32 kill_normal_mosnter_num = 15;</code>
-     * @return The killNormalMosnterNum.
+     * <code>uint32 kill_normal_monster_num = 12;</code>
+     * @return The killNormalMonsterNum.
      */
-    int getKillNormalMosnterNum();
-
-    /**
-     * <code>uint32 kill_elite_monster_num = 14;</code>
-     * @return The killEliteMonsterNum.
-     */
-    int getKillEliteMonsterNum();
+    int getKillNormalMonsterNum();
   }
   /**
    * Protobuf type {@code SceneGallerySumoInfo}
@@ -81,19 +81,19 @@ public final class SceneGallerySumoInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
-
-              score_ = input.readUInt32();
-              break;
-            }
-            case 112: {
+            case 32: {
 
               killEliteMonsterNum_ = input.readUInt32();
               break;
             }
-            case 120: {
+            case 56: {
 
-              killNormalMosnterNum_ = input.readUInt32();
+              score_ = input.readUInt32();
+              break;
+            }
+            case 96: {
+
+              killNormalMonsterNum_ = input.readUInt32();
               break;
             }
             default: {
@@ -128,10 +128,21 @@ public final class SceneGallerySumoInfoOuterClass {
               emu.grasscutter.net.proto.SceneGallerySumoInfoOuterClass.SceneGallerySumoInfo.class, emu.grasscutter.net.proto.SceneGallerySumoInfoOuterClass.SceneGallerySumoInfo.Builder.class);
     }
 
-    public static final int SCORE_FIELD_NUMBER = 2;
+    public static final int KILL_ELITE_MONSTER_NUM_FIELD_NUMBER = 4;
+    private int killEliteMonsterNum_;
+    /**
+     * <code>uint32 kill_elite_monster_num = 4;</code>
+     * @return The killEliteMonsterNum.
+     */
+    @java.lang.Override
+    public int getKillEliteMonsterNum() {
+      return killEliteMonsterNum_;
+    }
+
+    public static final int SCORE_FIELD_NUMBER = 7;
     private int score_;
     /**
-     * <code>uint32 score = 2;</code>
+     * <code>uint32 score = 7;</code>
      * @return The score.
      */
     @java.lang.Override
@@ -139,26 +150,15 @@ public final class SceneGallerySumoInfoOuterClass {
       return score_;
     }
 
-    public static final int KILL_NORMAL_MOSNTER_NUM_FIELD_NUMBER = 15;
-    private int killNormalMosnterNum_;
+    public static final int KILL_NORMAL_MONSTER_NUM_FIELD_NUMBER = 12;
+    private int killNormalMonsterNum_;
     /**
-     * <code>uint32 kill_normal_mosnter_num = 15;</code>
-     * @return The killNormalMosnterNum.
+     * <code>uint32 kill_normal_monster_num = 12;</code>
+     * @return The killNormalMonsterNum.
      */
     @java.lang.Override
-    public int getKillNormalMosnterNum() {
-      return killNormalMosnterNum_;
-    }
-
-    public static final int KILL_ELITE_MONSTER_NUM_FIELD_NUMBER = 14;
-    private int killEliteMonsterNum_;
-    /**
-     * <code>uint32 kill_elite_monster_num = 14;</code>
-     * @return The killEliteMonsterNum.
-     */
-    @java.lang.Override
-    public int getKillEliteMonsterNum() {
-      return killEliteMonsterNum_;
+    public int getKillNormalMonsterNum() {
+      return killNormalMonsterNum_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -175,14 +175,14 @@ public final class SceneGallerySumoInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (score_ != 0) {
-        output.writeUInt32(2, score_);
-      }
       if (killEliteMonsterNum_ != 0) {
-        output.writeUInt32(14, killEliteMonsterNum_);
+        output.writeUInt32(4, killEliteMonsterNum_);
       }
-      if (killNormalMosnterNum_ != 0) {
-        output.writeUInt32(15, killNormalMosnterNum_);
+      if (score_ != 0) {
+        output.writeUInt32(7, score_);
+      }
+      if (killNormalMonsterNum_ != 0) {
+        output.writeUInt32(12, killNormalMonsterNum_);
       }
       unknownFields.writeTo(output);
     }
@@ -193,17 +193,17 @@ public final class SceneGallerySumoInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (score_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, score_);
-      }
       if (killEliteMonsterNum_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, killEliteMonsterNum_);
+          .computeUInt32Size(4, killEliteMonsterNum_);
       }
-      if (killNormalMosnterNum_ != 0) {
+      if (score_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, killNormalMosnterNum_);
+          .computeUInt32Size(7, score_);
+      }
+      if (killNormalMonsterNum_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(12, killNormalMonsterNum_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -220,12 +220,12 @@ public final class SceneGallerySumoInfoOuterClass {
       }
       emu.grasscutter.net.proto.SceneGallerySumoInfoOuterClass.SceneGallerySumoInfo other = (emu.grasscutter.net.proto.SceneGallerySumoInfoOuterClass.SceneGallerySumoInfo) obj;
 
-      if (getScore()
-          != other.getScore()) return false;
-      if (getKillNormalMosnterNum()
-          != other.getKillNormalMosnterNum()) return false;
       if (getKillEliteMonsterNum()
           != other.getKillEliteMonsterNum()) return false;
+      if (getScore()
+          != other.getScore()) return false;
+      if (getKillNormalMonsterNum()
+          != other.getKillNormalMonsterNum()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -237,12 +237,12 @@ public final class SceneGallerySumoInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + SCORE_FIELD_NUMBER;
-      hash = (53 * hash) + getScore();
-      hash = (37 * hash) + KILL_NORMAL_MOSNTER_NUM_FIELD_NUMBER;
-      hash = (53 * hash) + getKillNormalMosnterNum();
       hash = (37 * hash) + KILL_ELITE_MONSTER_NUM_FIELD_NUMBER;
       hash = (53 * hash) + getKillEliteMonsterNum();
+      hash = (37 * hash) + SCORE_FIELD_NUMBER;
+      hash = (53 * hash) + getScore();
+      hash = (37 * hash) + KILL_NORMAL_MONSTER_NUM_FIELD_NUMBER;
+      hash = (53 * hash) + getKillNormalMonsterNum();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -376,11 +376,11 @@ public final class SceneGallerySumoInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        killEliteMonsterNum_ = 0;
+
         score_ = 0;
 
-        killNormalMosnterNum_ = 0;
-
-        killEliteMonsterNum_ = 0;
+        killNormalMonsterNum_ = 0;
 
         return this;
       }
@@ -408,9 +408,9 @@ public final class SceneGallerySumoInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.SceneGallerySumoInfoOuterClass.SceneGallerySumoInfo buildPartial() {
         emu.grasscutter.net.proto.SceneGallerySumoInfoOuterClass.SceneGallerySumoInfo result = new emu.grasscutter.net.proto.SceneGallerySumoInfoOuterClass.SceneGallerySumoInfo(this);
-        result.score_ = score_;
-        result.killNormalMosnterNum_ = killNormalMosnterNum_;
         result.killEliteMonsterNum_ = killEliteMonsterNum_;
+        result.score_ = score_;
+        result.killNormalMonsterNum_ = killNormalMonsterNum_;
         onBuilt();
         return result;
       }
@@ -459,14 +459,14 @@ public final class SceneGallerySumoInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.SceneGallerySumoInfoOuterClass.SceneGallerySumoInfo other) {
         if (other == emu.grasscutter.net.proto.SceneGallerySumoInfoOuterClass.SceneGallerySumoInfo.getDefaultInstance()) return this;
+        if (other.getKillEliteMonsterNum() != 0) {
+          setKillEliteMonsterNum(other.getKillEliteMonsterNum());
+        }
         if (other.getScore() != 0) {
           setScore(other.getScore());
         }
-        if (other.getKillNormalMosnterNum() != 0) {
-          setKillNormalMosnterNum(other.getKillNormalMosnterNum());
-        }
-        if (other.getKillEliteMonsterNum() != 0) {
-          setKillEliteMonsterNum(other.getKillEliteMonsterNum());
+        if (other.getKillNormalMonsterNum() != 0) {
+          setKillNormalMonsterNum(other.getKillNormalMonsterNum());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -497,71 +497,9 @@ public final class SceneGallerySumoInfoOuterClass {
         return this;
       }
 
-      private int score_ ;
-      /**
-       * <code>uint32 score = 2;</code>
-       * @return The score.
-       */
-      @java.lang.Override
-      public int getScore() {
-        return score_;
-      }
-      /**
-       * <code>uint32 score = 2;</code>
-       * @param value The score to set.
-       * @return This builder for chaining.
-       */
-      public Builder setScore(int value) {
-        
-        score_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 score = 2;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearScore() {
-        
-        score_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int killNormalMosnterNum_ ;
-      /**
-       * <code>uint32 kill_normal_mosnter_num = 15;</code>
-       * @return The killNormalMosnterNum.
-       */
-      @java.lang.Override
-      public int getKillNormalMosnterNum() {
-        return killNormalMosnterNum_;
-      }
-      /**
-       * <code>uint32 kill_normal_mosnter_num = 15;</code>
-       * @param value The killNormalMosnterNum to set.
-       * @return This builder for chaining.
-       */
-      public Builder setKillNormalMosnterNum(int value) {
-        
-        killNormalMosnterNum_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 kill_normal_mosnter_num = 15;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearKillNormalMosnterNum() {
-        
-        killNormalMosnterNum_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int killEliteMonsterNum_ ;
       /**
-       * <code>uint32 kill_elite_monster_num = 14;</code>
+       * <code>uint32 kill_elite_monster_num = 4;</code>
        * @return The killEliteMonsterNum.
        */
       @java.lang.Override
@@ -569,7 +507,7 @@ public final class SceneGallerySumoInfoOuterClass {
         return killEliteMonsterNum_;
       }
       /**
-       * <code>uint32 kill_elite_monster_num = 14;</code>
+       * <code>uint32 kill_elite_monster_num = 4;</code>
        * @param value The killEliteMonsterNum to set.
        * @return This builder for chaining.
        */
@@ -580,12 +518,74 @@ public final class SceneGallerySumoInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 kill_elite_monster_num = 14;</code>
+       * <code>uint32 kill_elite_monster_num = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearKillEliteMonsterNum() {
         
         killEliteMonsterNum_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int score_ ;
+      /**
+       * <code>uint32 score = 7;</code>
+       * @return The score.
+       */
+      @java.lang.Override
+      public int getScore() {
+        return score_;
+      }
+      /**
+       * <code>uint32 score = 7;</code>
+       * @param value The score to set.
+       * @return This builder for chaining.
+       */
+      public Builder setScore(int value) {
+        
+        score_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 score = 7;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearScore() {
+        
+        score_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int killNormalMonsterNum_ ;
+      /**
+       * <code>uint32 kill_normal_monster_num = 12;</code>
+       * @return The killNormalMonsterNum.
+       */
+      @java.lang.Override
+      public int getKillNormalMonsterNum() {
+        return killNormalMonsterNum_;
+      }
+      /**
+       * <code>uint32 kill_normal_monster_num = 12;</code>
+       * @param value The killNormalMonsterNum to set.
+       * @return This builder for chaining.
+       */
+      public Builder setKillNormalMonsterNum(int value) {
+        
+        killNormalMonsterNum_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 kill_normal_monster_num = 12;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearKillNormalMonsterNum() {
+        
+        killNormalMonsterNum_ = 0;
         onChanged();
         return this;
       }
@@ -657,9 +657,9 @@ public final class SceneGallerySumoInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\032SceneGallerySumoInfo.proto\"f\n\024SceneGal" +
-      "lerySumoInfo\022\r\n\005score\030\002 \001(\r\022\037\n\027kill_norm" +
-      "al_mosnter_num\030\017 \001(\r\022\036\n\026kill_elite_monst" +
-      "er_num\030\016 \001(\rB\033\n\031emu.grasscutter.net.prot" +
+      "lerySumoInfo\022\036\n\026kill_elite_monster_num\030\004" +
+      " \001(\r\022\r\n\005score\030\007 \001(\r\022\037\n\027kill_normal_monst" +
+      "er_num\030\014 \001(\rB\033\n\031emu.grasscutter.net.prot" +
       "ob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -671,7 +671,7 @@ public final class SceneGallerySumoInfoOuterClass {
     internal_static_SceneGallerySumoInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SceneGallerySumoInfo_descriptor,
-        new java.lang.String[] { "Score", "KillNormalMosnterNum", "KillEliteMonsterNum", });
+        new java.lang.String[] { "KillEliteMonsterNum", "Score", "KillNormalMonsterNum", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

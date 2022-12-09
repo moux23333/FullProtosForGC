@@ -19,23 +19,27 @@ public final class MechanicusUnlockGearReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 mechanicus_id = 7;</code>
-     * @return The mechanicusId.
-     */
-    int getMechanicusId();
-
-    /**
      * <code>uint32 gear_id = 6;</code>
      * @return The gearId.
      */
     int getGearId();
+
+    /**
+     * <code>uint32 mechanicus_id = 10;</code>
+     * @return The mechanicusId.
+     */
+    int getMechanicusId();
   }
   /**
    * <pre>
-   * CmdId: 3903
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 3961;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code MechanicusUnlockGearReq}
@@ -87,7 +91,7 @@ public final class MechanicusUnlockGearReqOuterClass {
               gearId_ = input.readUInt32();
               break;
             }
-            case 56: {
+            case 80: {
 
               mechanicusId_ = input.readUInt32();
               break;
@@ -124,17 +128,6 @@ public final class MechanicusUnlockGearReqOuterClass {
               emu.grasscutter.net.proto.MechanicusUnlockGearReqOuterClass.MechanicusUnlockGearReq.class, emu.grasscutter.net.proto.MechanicusUnlockGearReqOuterClass.MechanicusUnlockGearReq.Builder.class);
     }
 
-    public static final int MECHANICUS_ID_FIELD_NUMBER = 7;
-    private int mechanicusId_;
-    /**
-     * <code>uint32 mechanicus_id = 7;</code>
-     * @return The mechanicusId.
-     */
-    @java.lang.Override
-    public int getMechanicusId() {
-      return mechanicusId_;
-    }
-
     public static final int GEAR_ID_FIELD_NUMBER = 6;
     private int gearId_;
     /**
@@ -144,6 +137,17 @@ public final class MechanicusUnlockGearReqOuterClass {
     @java.lang.Override
     public int getGearId() {
       return gearId_;
+    }
+
+    public static final int MECHANICUS_ID_FIELD_NUMBER = 10;
+    private int mechanicusId_;
+    /**
+     * <code>uint32 mechanicus_id = 10;</code>
+     * @return The mechanicusId.
+     */
+    @java.lang.Override
+    public int getMechanicusId() {
+      return mechanicusId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -164,7 +168,7 @@ public final class MechanicusUnlockGearReqOuterClass {
         output.writeUInt32(6, gearId_);
       }
       if (mechanicusId_ != 0) {
-        output.writeUInt32(7, mechanicusId_);
+        output.writeUInt32(10, mechanicusId_);
       }
       unknownFields.writeTo(output);
     }
@@ -181,7 +185,7 @@ public final class MechanicusUnlockGearReqOuterClass {
       }
       if (mechanicusId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, mechanicusId_);
+          .computeUInt32Size(10, mechanicusId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -198,10 +202,10 @@ public final class MechanicusUnlockGearReqOuterClass {
       }
       emu.grasscutter.net.proto.MechanicusUnlockGearReqOuterClass.MechanicusUnlockGearReq other = (emu.grasscutter.net.proto.MechanicusUnlockGearReqOuterClass.MechanicusUnlockGearReq) obj;
 
-      if (getMechanicusId()
-          != other.getMechanicusId()) return false;
       if (getGearId()
           != other.getGearId()) return false;
+      if (getMechanicusId()
+          != other.getMechanicusId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -213,10 +217,10 @@ public final class MechanicusUnlockGearReqOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + MECHANICUS_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getMechanicusId();
       hash = (37 * hash) + GEAR_ID_FIELD_NUMBER;
       hash = (53 * hash) + getGearId();
+      hash = (37 * hash) + MECHANICUS_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getMechanicusId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -314,10 +318,14 @@ public final class MechanicusUnlockGearReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 3903
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 3961;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code MechanicusUnlockGearReq}
@@ -357,9 +365,9 @@ public final class MechanicusUnlockGearReqOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        mechanicusId_ = 0;
-
         gearId_ = 0;
+
+        mechanicusId_ = 0;
 
         return this;
       }
@@ -387,8 +395,8 @@ public final class MechanicusUnlockGearReqOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.MechanicusUnlockGearReqOuterClass.MechanicusUnlockGearReq buildPartial() {
         emu.grasscutter.net.proto.MechanicusUnlockGearReqOuterClass.MechanicusUnlockGearReq result = new emu.grasscutter.net.proto.MechanicusUnlockGearReqOuterClass.MechanicusUnlockGearReq(this);
-        result.mechanicusId_ = mechanicusId_;
         result.gearId_ = gearId_;
+        result.mechanicusId_ = mechanicusId_;
         onBuilt();
         return result;
       }
@@ -437,11 +445,11 @@ public final class MechanicusUnlockGearReqOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.MechanicusUnlockGearReqOuterClass.MechanicusUnlockGearReq other) {
         if (other == emu.grasscutter.net.proto.MechanicusUnlockGearReqOuterClass.MechanicusUnlockGearReq.getDefaultInstance()) return this;
-        if (other.getMechanicusId() != 0) {
-          setMechanicusId(other.getMechanicusId());
-        }
         if (other.getGearId() != 0) {
           setGearId(other.getGearId());
+        }
+        if (other.getMechanicusId() != 0) {
+          setMechanicusId(other.getMechanicusId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -472,37 +480,6 @@ public final class MechanicusUnlockGearReqOuterClass {
         return this;
       }
 
-      private int mechanicusId_ ;
-      /**
-       * <code>uint32 mechanicus_id = 7;</code>
-       * @return The mechanicusId.
-       */
-      @java.lang.Override
-      public int getMechanicusId() {
-        return mechanicusId_;
-      }
-      /**
-       * <code>uint32 mechanicus_id = 7;</code>
-       * @param value The mechanicusId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setMechanicusId(int value) {
-        
-        mechanicusId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 mechanicus_id = 7;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearMechanicusId() {
-        
-        mechanicusId_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int gearId_ ;
       /**
        * <code>uint32 gear_id = 6;</code>
@@ -530,6 +507,37 @@ public final class MechanicusUnlockGearReqOuterClass {
       public Builder clearGearId() {
         
         gearId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int mechanicusId_ ;
+      /**
+       * <code>uint32 mechanicus_id = 10;</code>
+       * @return The mechanicusId.
+       */
+      @java.lang.Override
+      public int getMechanicusId() {
+        return mechanicusId_;
+      }
+      /**
+       * <code>uint32 mechanicus_id = 10;</code>
+       * @param value The mechanicusId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setMechanicusId(int value) {
+        
+        mechanicusId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 mechanicus_id = 10;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearMechanicusId() {
+        
+        mechanicusId_ = 0;
         onChanged();
         return this;
       }
@@ -601,8 +609,8 @@ public final class MechanicusUnlockGearReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\035MechanicusUnlockGearReq.proto\"A\n\027Mecha" +
-      "nicusUnlockGearReq\022\025\n\rmechanicus_id\030\007 \001(" +
-      "\r\022\017\n\007gear_id\030\006 \001(\rB\033\n\031emu.grasscutter.ne" +
+      "nicusUnlockGearReq\022\017\n\007gear_id\030\006 \001(\r\022\025\n\rm" +
+      "echanicus_id\030\n \001(\rB\033\n\031emu.grasscutter.ne" +
       "t.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -614,7 +622,7 @@ public final class MechanicusUnlockGearReqOuterClass {
     internal_static_MechanicusUnlockGearReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_MechanicusUnlockGearReq_descriptor,
-        new java.lang.String[] { "MechanicusId", "GearId", });
+        new java.lang.String[] { "GearId", "MechanicusId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

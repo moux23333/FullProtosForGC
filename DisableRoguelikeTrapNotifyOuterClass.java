@@ -19,16 +19,20 @@ public final class DisableRoguelikeTrapNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 card_id = 13;</code>
+     * <code>uint32 card_id = 11;</code>
      * @return The cardId.
      */
     int getCardId();
   }
   /**
    * <pre>
-   * CmdId: 8259
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 8839;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code DisableRoguelikeTrapNotify}
@@ -75,7 +79,7 @@ public final class DisableRoguelikeTrapNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 104: {
+            case 88: {
 
               cardId_ = input.readUInt32();
               break;
@@ -112,10 +116,10 @@ public final class DisableRoguelikeTrapNotifyOuterClass {
               emu.grasscutter.net.proto.DisableRoguelikeTrapNotifyOuterClass.DisableRoguelikeTrapNotify.class, emu.grasscutter.net.proto.DisableRoguelikeTrapNotifyOuterClass.DisableRoguelikeTrapNotify.Builder.class);
     }
 
-    public static final int CARD_ID_FIELD_NUMBER = 13;
+    public static final int CARD_ID_FIELD_NUMBER = 11;
     private int cardId_;
     /**
-     * <code>uint32 card_id = 13;</code>
+     * <code>uint32 card_id = 11;</code>
      * @return The cardId.
      */
     @java.lang.Override
@@ -138,7 +142,7 @@ public final class DisableRoguelikeTrapNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (cardId_ != 0) {
-        output.writeUInt32(13, cardId_);
+        output.writeUInt32(11, cardId_);
       }
       unknownFields.writeTo(output);
     }
@@ -151,7 +155,7 @@ public final class DisableRoguelikeTrapNotifyOuterClass {
       size = 0;
       if (cardId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, cardId_);
+          .computeUInt32Size(11, cardId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -280,9 +284,13 @@ public final class DisableRoguelikeTrapNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 8259
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 8839;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code DisableRoguelikeTrapNotify}
@@ -433,7 +441,7 @@ public final class DisableRoguelikeTrapNotifyOuterClass {
 
       private int cardId_ ;
       /**
-       * <code>uint32 card_id = 13;</code>
+       * <code>uint32 card_id = 11;</code>
        * @return The cardId.
        */
       @java.lang.Override
@@ -441,7 +449,7 @@ public final class DisableRoguelikeTrapNotifyOuterClass {
         return cardId_;
       }
       /**
-       * <code>uint32 card_id = 13;</code>
+       * <code>uint32 card_id = 11;</code>
        * @param value The cardId to set.
        * @return This builder for chaining.
        */
@@ -452,7 +460,7 @@ public final class DisableRoguelikeTrapNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 card_id = 13;</code>
+       * <code>uint32 card_id = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearCardId() {
@@ -529,7 +537,7 @@ public final class DisableRoguelikeTrapNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n DisableRoguelikeTrapNotify.proto\"-\n\032Di" +
-      "sableRoguelikeTrapNotify\022\017\n\007card_id\030\r \001(" +
+      "sableRoguelikeTrapNotify\022\017\n\007card_id\030\013 \001(" +
       "\rB\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

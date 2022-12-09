@@ -19,37 +19,41 @@ public final class ReunionBriefInfoRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_activate = 13;</code>
-     * @return The isActivate.
-     */
-    boolean getIsActivate();
-
-    /**
-     * <code>int32 retcode = 14;</code>
+     * <code>int32 retcode = 2;</code>
      * @return The retcode.
      */
     int getRetcode();
 
     /**
-     * <code>.ReunionBriefInfo reunion_brief_info = 5;</code>
+     * <code>.ReunionBriefInfo reunion_brief_info = 13;</code>
      * @return Whether the reunionBriefInfo field is set.
      */
     boolean hasReunionBriefInfo();
     /**
-     * <code>.ReunionBriefInfo reunion_brief_info = 5;</code>
+     * <code>.ReunionBriefInfo reunion_brief_info = 13;</code>
      * @return The reunionBriefInfo.
      */
     emu.grasscutter.net.proto.ReunionBriefInfoOuterClass.ReunionBriefInfo getReunionBriefInfo();
     /**
-     * <code>.ReunionBriefInfo reunion_brief_info = 5;</code>
+     * <code>.ReunionBriefInfo reunion_brief_info = 13;</code>
      */
     emu.grasscutter.net.proto.ReunionBriefInfoOuterClass.ReunionBriefInfoOrBuilder getReunionBriefInfoOrBuilder();
+
+    /**
+     * <code>bool is_activate = 15;</code>
+     * @return The isActivate.
+     */
+    boolean getIsActivate();
   }
   /**
    * <pre>
-   * CmdId: 5068
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 5091;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code ReunionBriefInfoRsp}
@@ -96,7 +100,12 @@ public final class ReunionBriefInfoRspOuterClass {
             case 0:
               done = true;
               break;
-            case 42: {
+            case 16: {
+
+              retcode_ = input.readInt32();
+              break;
+            }
+            case 106: {
               emu.grasscutter.net.proto.ReunionBriefInfoOuterClass.ReunionBriefInfo.Builder subBuilder = null;
               if (reunionBriefInfo_ != null) {
                 subBuilder = reunionBriefInfo_.toBuilder();
@@ -109,14 +118,9 @@ public final class ReunionBriefInfoRspOuterClass {
 
               break;
             }
-            case 104: {
+            case 120: {
 
               isActivate_ = input.readBool();
-              break;
-            }
-            case 112: {
-
-              retcode_ = input.readInt32();
               break;
             }
             default: {
@@ -151,21 +155,10 @@ public final class ReunionBriefInfoRspOuterClass {
               emu.grasscutter.net.proto.ReunionBriefInfoRspOuterClass.ReunionBriefInfoRsp.class, emu.grasscutter.net.proto.ReunionBriefInfoRspOuterClass.ReunionBriefInfoRsp.Builder.class);
     }
 
-    public static final int IS_ACTIVATE_FIELD_NUMBER = 13;
-    private boolean isActivate_;
-    /**
-     * <code>bool is_activate = 13;</code>
-     * @return The isActivate.
-     */
-    @java.lang.Override
-    public boolean getIsActivate() {
-      return isActivate_;
-    }
-
-    public static final int RETCODE_FIELD_NUMBER = 14;
+    public static final int RETCODE_FIELD_NUMBER = 2;
     private int retcode_;
     /**
-     * <code>int32 retcode = 14;</code>
+     * <code>int32 retcode = 2;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -173,10 +166,10 @@ public final class ReunionBriefInfoRspOuterClass {
       return retcode_;
     }
 
-    public static final int REUNION_BRIEF_INFO_FIELD_NUMBER = 5;
+    public static final int REUNION_BRIEF_INFO_FIELD_NUMBER = 13;
     private emu.grasscutter.net.proto.ReunionBriefInfoOuterClass.ReunionBriefInfo reunionBriefInfo_;
     /**
-     * <code>.ReunionBriefInfo reunion_brief_info = 5;</code>
+     * <code>.ReunionBriefInfo reunion_brief_info = 13;</code>
      * @return Whether the reunionBriefInfo field is set.
      */
     @java.lang.Override
@@ -184,7 +177,7 @@ public final class ReunionBriefInfoRspOuterClass {
       return reunionBriefInfo_ != null;
     }
     /**
-     * <code>.ReunionBriefInfo reunion_brief_info = 5;</code>
+     * <code>.ReunionBriefInfo reunion_brief_info = 13;</code>
      * @return The reunionBriefInfo.
      */
     @java.lang.Override
@@ -192,11 +185,22 @@ public final class ReunionBriefInfoRspOuterClass {
       return reunionBriefInfo_ == null ? emu.grasscutter.net.proto.ReunionBriefInfoOuterClass.ReunionBriefInfo.getDefaultInstance() : reunionBriefInfo_;
     }
     /**
-     * <code>.ReunionBriefInfo reunion_brief_info = 5;</code>
+     * <code>.ReunionBriefInfo reunion_brief_info = 13;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.ReunionBriefInfoOuterClass.ReunionBriefInfoOrBuilder getReunionBriefInfoOrBuilder() {
       return getReunionBriefInfo();
+    }
+
+    public static final int IS_ACTIVATE_FIELD_NUMBER = 15;
+    private boolean isActivate_;
+    /**
+     * <code>bool is_activate = 15;</code>
+     * @return The isActivate.
+     */
+    @java.lang.Override
+    public boolean getIsActivate() {
+      return isActivate_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -213,14 +217,14 @@ public final class ReunionBriefInfoRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (retcode_ != 0) {
+        output.writeInt32(2, retcode_);
+      }
       if (reunionBriefInfo_ != null) {
-        output.writeMessage(5, getReunionBriefInfo());
+        output.writeMessage(13, getReunionBriefInfo());
       }
       if (isActivate_ != false) {
-        output.writeBool(13, isActivate_);
-      }
-      if (retcode_ != 0) {
-        output.writeInt32(14, retcode_);
+        output.writeBool(15, isActivate_);
       }
       unknownFields.writeTo(output);
     }
@@ -231,17 +235,17 @@ public final class ReunionBriefInfoRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (retcode_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(2, retcode_);
+      }
       if (reunionBriefInfo_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(5, getReunionBriefInfo());
+          .computeMessageSize(13, getReunionBriefInfo());
       }
       if (isActivate_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(13, isActivate_);
-      }
-      if (retcode_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(14, retcode_);
+          .computeBoolSize(15, isActivate_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -258,8 +262,6 @@ public final class ReunionBriefInfoRspOuterClass {
       }
       emu.grasscutter.net.proto.ReunionBriefInfoRspOuterClass.ReunionBriefInfoRsp other = (emu.grasscutter.net.proto.ReunionBriefInfoRspOuterClass.ReunionBriefInfoRsp) obj;
 
-      if (getIsActivate()
-          != other.getIsActivate()) return false;
       if (getRetcode()
           != other.getRetcode()) return false;
       if (hasReunionBriefInfo() != other.hasReunionBriefInfo()) return false;
@@ -267,6 +269,8 @@ public final class ReunionBriefInfoRspOuterClass {
         if (!getReunionBriefInfo()
             .equals(other.getReunionBriefInfo())) return false;
       }
+      if (getIsActivate()
+          != other.getIsActivate()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -278,15 +282,15 @@ public final class ReunionBriefInfoRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + IS_ACTIVATE_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsActivate());
       hash = (37 * hash) + RETCODE_FIELD_NUMBER;
       hash = (53 * hash) + getRetcode();
       if (hasReunionBriefInfo()) {
         hash = (37 * hash) + REUNION_BRIEF_INFO_FIELD_NUMBER;
         hash = (53 * hash) + getReunionBriefInfo().hashCode();
       }
+      hash = (37 * hash) + IS_ACTIVATE_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getIsActivate());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -384,9 +388,13 @@ public final class ReunionBriefInfoRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 5068
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 5091;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code ReunionBriefInfoRsp}
@@ -426,8 +434,6 @@ public final class ReunionBriefInfoRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        isActivate_ = false;
-
         retcode_ = 0;
 
         if (reunionBriefInfoBuilder_ == null) {
@@ -436,6 +442,8 @@ public final class ReunionBriefInfoRspOuterClass {
           reunionBriefInfo_ = null;
           reunionBriefInfoBuilder_ = null;
         }
+        isActivate_ = false;
+
         return this;
       }
 
@@ -462,13 +470,13 @@ public final class ReunionBriefInfoRspOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.ReunionBriefInfoRspOuterClass.ReunionBriefInfoRsp buildPartial() {
         emu.grasscutter.net.proto.ReunionBriefInfoRspOuterClass.ReunionBriefInfoRsp result = new emu.grasscutter.net.proto.ReunionBriefInfoRspOuterClass.ReunionBriefInfoRsp(this);
-        result.isActivate_ = isActivate_;
         result.retcode_ = retcode_;
         if (reunionBriefInfoBuilder_ == null) {
           result.reunionBriefInfo_ = reunionBriefInfo_;
         } else {
           result.reunionBriefInfo_ = reunionBriefInfoBuilder_.build();
         }
+        result.isActivate_ = isActivate_;
         onBuilt();
         return result;
       }
@@ -517,14 +525,14 @@ public final class ReunionBriefInfoRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.ReunionBriefInfoRspOuterClass.ReunionBriefInfoRsp other) {
         if (other == emu.grasscutter.net.proto.ReunionBriefInfoRspOuterClass.ReunionBriefInfoRsp.getDefaultInstance()) return this;
-        if (other.getIsActivate() != false) {
-          setIsActivate(other.getIsActivate());
-        }
         if (other.getRetcode() != 0) {
           setRetcode(other.getRetcode());
         }
         if (other.hasReunionBriefInfo()) {
           mergeReunionBriefInfo(other.getReunionBriefInfo());
+        }
+        if (other.getIsActivate() != false) {
+          setIsActivate(other.getIsActivate());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -555,40 +563,9 @@ public final class ReunionBriefInfoRspOuterClass {
         return this;
       }
 
-      private boolean isActivate_ ;
-      /**
-       * <code>bool is_activate = 13;</code>
-       * @return The isActivate.
-       */
-      @java.lang.Override
-      public boolean getIsActivate() {
-        return isActivate_;
-      }
-      /**
-       * <code>bool is_activate = 13;</code>
-       * @param value The isActivate to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsActivate(boolean value) {
-        
-        isActivate_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_activate = 13;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsActivate() {
-        
-        isActivate_ = false;
-        onChanged();
-        return this;
-      }
-
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 14;</code>
+       * <code>int32 retcode = 2;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -596,7 +573,7 @@ public final class ReunionBriefInfoRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 14;</code>
+       * <code>int32 retcode = 2;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -607,7 +584,7 @@ public final class ReunionBriefInfoRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 14;</code>
+       * <code>int32 retcode = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -621,14 +598,14 @@ public final class ReunionBriefInfoRspOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.ReunionBriefInfoOuterClass.ReunionBriefInfo, emu.grasscutter.net.proto.ReunionBriefInfoOuterClass.ReunionBriefInfo.Builder, emu.grasscutter.net.proto.ReunionBriefInfoOuterClass.ReunionBriefInfoOrBuilder> reunionBriefInfoBuilder_;
       /**
-       * <code>.ReunionBriefInfo reunion_brief_info = 5;</code>
+       * <code>.ReunionBriefInfo reunion_brief_info = 13;</code>
        * @return Whether the reunionBriefInfo field is set.
        */
       public boolean hasReunionBriefInfo() {
         return reunionBriefInfoBuilder_ != null || reunionBriefInfo_ != null;
       }
       /**
-       * <code>.ReunionBriefInfo reunion_brief_info = 5;</code>
+       * <code>.ReunionBriefInfo reunion_brief_info = 13;</code>
        * @return The reunionBriefInfo.
        */
       public emu.grasscutter.net.proto.ReunionBriefInfoOuterClass.ReunionBriefInfo getReunionBriefInfo() {
@@ -639,7 +616,7 @@ public final class ReunionBriefInfoRspOuterClass {
         }
       }
       /**
-       * <code>.ReunionBriefInfo reunion_brief_info = 5;</code>
+       * <code>.ReunionBriefInfo reunion_brief_info = 13;</code>
        */
       public Builder setReunionBriefInfo(emu.grasscutter.net.proto.ReunionBriefInfoOuterClass.ReunionBriefInfo value) {
         if (reunionBriefInfoBuilder_ == null) {
@@ -655,7 +632,7 @@ public final class ReunionBriefInfoRspOuterClass {
         return this;
       }
       /**
-       * <code>.ReunionBriefInfo reunion_brief_info = 5;</code>
+       * <code>.ReunionBriefInfo reunion_brief_info = 13;</code>
        */
       public Builder setReunionBriefInfo(
           emu.grasscutter.net.proto.ReunionBriefInfoOuterClass.ReunionBriefInfo.Builder builderForValue) {
@@ -669,7 +646,7 @@ public final class ReunionBriefInfoRspOuterClass {
         return this;
       }
       /**
-       * <code>.ReunionBriefInfo reunion_brief_info = 5;</code>
+       * <code>.ReunionBriefInfo reunion_brief_info = 13;</code>
        */
       public Builder mergeReunionBriefInfo(emu.grasscutter.net.proto.ReunionBriefInfoOuterClass.ReunionBriefInfo value) {
         if (reunionBriefInfoBuilder_ == null) {
@@ -687,7 +664,7 @@ public final class ReunionBriefInfoRspOuterClass {
         return this;
       }
       /**
-       * <code>.ReunionBriefInfo reunion_brief_info = 5;</code>
+       * <code>.ReunionBriefInfo reunion_brief_info = 13;</code>
        */
       public Builder clearReunionBriefInfo() {
         if (reunionBriefInfoBuilder_ == null) {
@@ -701,7 +678,7 @@ public final class ReunionBriefInfoRspOuterClass {
         return this;
       }
       /**
-       * <code>.ReunionBriefInfo reunion_brief_info = 5;</code>
+       * <code>.ReunionBriefInfo reunion_brief_info = 13;</code>
        */
       public emu.grasscutter.net.proto.ReunionBriefInfoOuterClass.ReunionBriefInfo.Builder getReunionBriefInfoBuilder() {
         
@@ -709,7 +686,7 @@ public final class ReunionBriefInfoRspOuterClass {
         return getReunionBriefInfoFieldBuilder().getBuilder();
       }
       /**
-       * <code>.ReunionBriefInfo reunion_brief_info = 5;</code>
+       * <code>.ReunionBriefInfo reunion_brief_info = 13;</code>
        */
       public emu.grasscutter.net.proto.ReunionBriefInfoOuterClass.ReunionBriefInfoOrBuilder getReunionBriefInfoOrBuilder() {
         if (reunionBriefInfoBuilder_ != null) {
@@ -720,7 +697,7 @@ public final class ReunionBriefInfoRspOuterClass {
         }
       }
       /**
-       * <code>.ReunionBriefInfo reunion_brief_info = 5;</code>
+       * <code>.ReunionBriefInfo reunion_brief_info = 13;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.ReunionBriefInfoOuterClass.ReunionBriefInfo, emu.grasscutter.net.proto.ReunionBriefInfoOuterClass.ReunionBriefInfo.Builder, emu.grasscutter.net.proto.ReunionBriefInfoOuterClass.ReunionBriefInfoOrBuilder> 
@@ -734,6 +711,37 @@ public final class ReunionBriefInfoRspOuterClass {
           reunionBriefInfo_ = null;
         }
         return reunionBriefInfoBuilder_;
+      }
+
+      private boolean isActivate_ ;
+      /**
+       * <code>bool is_activate = 15;</code>
+       * @return The isActivate.
+       */
+      @java.lang.Override
+      public boolean getIsActivate() {
+        return isActivate_;
+      }
+      /**
+       * <code>bool is_activate = 15;</code>
+       * @param value The isActivate to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIsActivate(boolean value) {
+        
+        isActivate_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool is_activate = 15;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsActivate() {
+        
+        isActivate_ = false;
+        onChanged();
+        return this;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -803,9 +811,9 @@ public final class ReunionBriefInfoRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\031ReunionBriefInfoRsp.proto\032\026ReunionBrie" +
-      "fInfo.proto\"j\n\023ReunionBriefInfoRsp\022\023\n\013is" +
-      "_activate\030\r \001(\010\022\017\n\007retcode\030\016 \001(\005\022-\n\022reun" +
-      "ion_brief_info\030\005 \001(\0132\021.ReunionBriefInfoB" +
+      "fInfo.proto\"j\n\023ReunionBriefInfoRsp\022\017\n\007re" +
+      "tcode\030\002 \001(\005\022-\n\022reunion_brief_info\030\r \001(\0132" +
+      "\021.ReunionBriefInfo\022\023\n\013is_activate\030\017 \001(\010B" +
       "\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -818,7 +826,7 @@ public final class ReunionBriefInfoRspOuterClass {
     internal_static_ReunionBriefInfoRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ReunionBriefInfoRsp_descriptor,
-        new java.lang.String[] { "IsActivate", "Retcode", "ReunionBriefInfo", });
+        new java.lang.String[] { "Retcode", "ReunionBriefInfo", "IsActivate", });
     emu.grasscutter.net.proto.ReunionBriefInfoOuterClass.getDescriptor();
   }
 

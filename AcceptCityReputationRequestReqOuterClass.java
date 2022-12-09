@@ -25,17 +25,21 @@ public final class AcceptCityReputationRequestReqOuterClass {
     int getCityId();
 
     /**
-     * <code>uint32 request_id = 5;</code>
+     * <code>uint32 request_id = 8;</code>
      * @return The requestId.
      */
     int getRequestId();
   }
   /**
    * <pre>
-   * CmdId: 2890
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 2847;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code AcceptCityReputationRequestReq}
@@ -82,7 +86,7 @@ public final class AcceptCityReputationRequestReqOuterClass {
             case 0:
               done = true;
               break;
-            case 40: {
+            case 64: {
 
               requestId_ = input.readUInt32();
               break;
@@ -135,10 +139,10 @@ public final class AcceptCityReputationRequestReqOuterClass {
       return cityId_;
     }
 
-    public static final int REQUEST_ID_FIELD_NUMBER = 5;
+    public static final int REQUEST_ID_FIELD_NUMBER = 8;
     private int requestId_;
     /**
-     * <code>uint32 request_id = 5;</code>
+     * <code>uint32 request_id = 8;</code>
      * @return The requestId.
      */
     @java.lang.Override
@@ -161,7 +165,7 @@ public final class AcceptCityReputationRequestReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (requestId_ != 0) {
-        output.writeUInt32(5, requestId_);
+        output.writeUInt32(8, requestId_);
       }
       if (cityId_ != 0) {
         output.writeUInt32(14, cityId_);
@@ -177,7 +181,7 @@ public final class AcceptCityReputationRequestReqOuterClass {
       size = 0;
       if (requestId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, requestId_);
+          .computeUInt32Size(8, requestId_);
       }
       if (cityId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
@@ -314,10 +318,14 @@ public final class AcceptCityReputationRequestReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 2890
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 2847;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code AcceptCityReputationRequestReq}
@@ -505,7 +513,7 @@ public final class AcceptCityReputationRequestReqOuterClass {
 
       private int requestId_ ;
       /**
-       * <code>uint32 request_id = 5;</code>
+       * <code>uint32 request_id = 8;</code>
        * @return The requestId.
        */
       @java.lang.Override
@@ -513,7 +521,7 @@ public final class AcceptCityReputationRequestReqOuterClass {
         return requestId_;
       }
       /**
-       * <code>uint32 request_id = 5;</code>
+       * <code>uint32 request_id = 8;</code>
        * @param value The requestId to set.
        * @return This builder for chaining.
        */
@@ -524,7 +532,7 @@ public final class AcceptCityReputationRequestReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 request_id = 5;</code>
+       * <code>uint32 request_id = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearRequestId() {
@@ -602,7 +610,7 @@ public final class AcceptCityReputationRequestReqOuterClass {
     java.lang.String[] descriptorData = {
       "\n$AcceptCityReputationRequestReq.proto\"E" +
       "\n\036AcceptCityReputationRequestReq\022\017\n\007city" +
-      "_id\030\016 \001(\r\022\022\n\nrequest_id\030\005 \001(\rB\033\n\031emu.gra" +
+      "_id\030\016 \001(\r\022\022\n\nrequest_id\030\010 \001(\rB\033\n\031emu.gra" +
       "sscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

@@ -19,34 +19,38 @@ public final class StartArenaChallengeLevelRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 arena_challenge_level = 1;</code>
-     * @return The arenaChallengeLevel.
+     * <code>uint32 Unk3300_FDFNFLAKONG = 4;</code>
+     * @return The unk3300FDFNFLAKONG.
      */
-    int getArenaChallengeLevel();
+    int getUnk3300FDFNFLAKONG();
 
     /**
-     * <code>int32 retcode = 9;</code>
+     * <code>int32 retcode = 5;</code>
      * @return The retcode.
      */
     int getRetcode();
 
     /**
-     * <code>uint32 gadget_entity_id = 3;</code>
+     * <code>uint32 Unk3300_DBHAGHMMLAI = 13;</code>
+     * @return The unk3300DBHAGHMMLAI.
+     */
+    int getUnk3300DBHAGHMMLAI();
+
+    /**
+     * <code>uint32 gadget_entity_id = 10;</code>
      * @return The gadgetEntityId.
      */
     int getGadgetEntityId();
-
-    /**
-     * <code>uint32 arena_challenge_id = 6;</code>
-     * @return The arenaChallengeId.
-     */
-    int getArenaChallengeId();
   }
   /**
    * <pre>
-   * CmdId: 2125
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 2171;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code StartArenaChallengeLevelRsp}
@@ -93,24 +97,24 @@ public final class StartArenaChallengeLevelRspOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
+            case 32: {
 
-              arenaChallengeLevel_ = input.readUInt32();
+              unk3300FDFNFLAKONG_ = input.readUInt32();
               break;
             }
-            case 24: {
+            case 40: {
+
+              retcode_ = input.readInt32();
+              break;
+            }
+            case 80: {
 
               gadgetEntityId_ = input.readUInt32();
               break;
             }
-            case 48: {
+            case 104: {
 
-              arenaChallengeId_ = input.readUInt32();
-              break;
-            }
-            case 72: {
-
-              retcode_ = input.readInt32();
+              unk3300DBHAGHMMLAI_ = input.readUInt32();
               break;
             }
             default: {
@@ -145,21 +149,21 @@ public final class StartArenaChallengeLevelRspOuterClass {
               emu.grasscutter.net.proto.StartArenaChallengeLevelRspOuterClass.StartArenaChallengeLevelRsp.class, emu.grasscutter.net.proto.StartArenaChallengeLevelRspOuterClass.StartArenaChallengeLevelRsp.Builder.class);
     }
 
-    public static final int ARENA_CHALLENGE_LEVEL_FIELD_NUMBER = 1;
-    private int arenaChallengeLevel_;
+    public static final int UNK3300_FDFNFLAKONG_FIELD_NUMBER = 4;
+    private int unk3300FDFNFLAKONG_;
     /**
-     * <code>uint32 arena_challenge_level = 1;</code>
-     * @return The arenaChallengeLevel.
+     * <code>uint32 Unk3300_FDFNFLAKONG = 4;</code>
+     * @return The unk3300FDFNFLAKONG.
      */
     @java.lang.Override
-    public int getArenaChallengeLevel() {
-      return arenaChallengeLevel_;
+    public int getUnk3300FDFNFLAKONG() {
+      return unk3300FDFNFLAKONG_;
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 9;
+    public static final int RETCODE_FIELD_NUMBER = 5;
     private int retcode_;
     /**
-     * <code>int32 retcode = 9;</code>
+     * <code>int32 retcode = 5;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -167,26 +171,26 @@ public final class StartArenaChallengeLevelRspOuterClass {
       return retcode_;
     }
 
-    public static final int GADGET_ENTITY_ID_FIELD_NUMBER = 3;
+    public static final int UNK3300_DBHAGHMMLAI_FIELD_NUMBER = 13;
+    private int unk3300DBHAGHMMLAI_;
+    /**
+     * <code>uint32 Unk3300_DBHAGHMMLAI = 13;</code>
+     * @return The unk3300DBHAGHMMLAI.
+     */
+    @java.lang.Override
+    public int getUnk3300DBHAGHMMLAI() {
+      return unk3300DBHAGHMMLAI_;
+    }
+
+    public static final int GADGET_ENTITY_ID_FIELD_NUMBER = 10;
     private int gadgetEntityId_;
     /**
-     * <code>uint32 gadget_entity_id = 3;</code>
+     * <code>uint32 gadget_entity_id = 10;</code>
      * @return The gadgetEntityId.
      */
     @java.lang.Override
     public int getGadgetEntityId() {
       return gadgetEntityId_;
-    }
-
-    public static final int ARENA_CHALLENGE_ID_FIELD_NUMBER = 6;
-    private int arenaChallengeId_;
-    /**
-     * <code>uint32 arena_challenge_id = 6;</code>
-     * @return The arenaChallengeId.
-     */
-    @java.lang.Override
-    public int getArenaChallengeId() {
-      return arenaChallengeId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -203,17 +207,17 @@ public final class StartArenaChallengeLevelRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (arenaChallengeLevel_ != 0) {
-        output.writeUInt32(1, arenaChallengeLevel_);
-      }
-      if (gadgetEntityId_ != 0) {
-        output.writeUInt32(3, gadgetEntityId_);
-      }
-      if (arenaChallengeId_ != 0) {
-        output.writeUInt32(6, arenaChallengeId_);
+      if (unk3300FDFNFLAKONG_ != 0) {
+        output.writeUInt32(4, unk3300FDFNFLAKONG_);
       }
       if (retcode_ != 0) {
-        output.writeInt32(9, retcode_);
+        output.writeInt32(5, retcode_);
+      }
+      if (gadgetEntityId_ != 0) {
+        output.writeUInt32(10, gadgetEntityId_);
+      }
+      if (unk3300DBHAGHMMLAI_ != 0) {
+        output.writeUInt32(13, unk3300DBHAGHMMLAI_);
       }
       unknownFields.writeTo(output);
     }
@@ -224,21 +228,21 @@ public final class StartArenaChallengeLevelRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (arenaChallengeLevel_ != 0) {
+      if (unk3300FDFNFLAKONG_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, arenaChallengeLevel_);
-      }
-      if (gadgetEntityId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, gadgetEntityId_);
-      }
-      if (arenaChallengeId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, arenaChallengeId_);
+          .computeUInt32Size(4, unk3300FDFNFLAKONG_);
       }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(9, retcode_);
+          .computeInt32Size(5, retcode_);
+      }
+      if (gadgetEntityId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(10, gadgetEntityId_);
+      }
+      if (unk3300DBHAGHMMLAI_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(13, unk3300DBHAGHMMLAI_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -255,14 +259,14 @@ public final class StartArenaChallengeLevelRspOuterClass {
       }
       emu.grasscutter.net.proto.StartArenaChallengeLevelRspOuterClass.StartArenaChallengeLevelRsp other = (emu.grasscutter.net.proto.StartArenaChallengeLevelRspOuterClass.StartArenaChallengeLevelRsp) obj;
 
-      if (getArenaChallengeLevel()
-          != other.getArenaChallengeLevel()) return false;
+      if (getUnk3300FDFNFLAKONG()
+          != other.getUnk3300FDFNFLAKONG()) return false;
       if (getRetcode()
           != other.getRetcode()) return false;
+      if (getUnk3300DBHAGHMMLAI()
+          != other.getUnk3300DBHAGHMMLAI()) return false;
       if (getGadgetEntityId()
           != other.getGadgetEntityId()) return false;
-      if (getArenaChallengeId()
-          != other.getArenaChallengeId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -274,14 +278,14 @@ public final class StartArenaChallengeLevelRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + ARENA_CHALLENGE_LEVEL_FIELD_NUMBER;
-      hash = (53 * hash) + getArenaChallengeLevel();
+      hash = (37 * hash) + UNK3300_FDFNFLAKONG_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300FDFNFLAKONG();
       hash = (37 * hash) + RETCODE_FIELD_NUMBER;
       hash = (53 * hash) + getRetcode();
+      hash = (37 * hash) + UNK3300_DBHAGHMMLAI_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300DBHAGHMMLAI();
       hash = (37 * hash) + GADGET_ENTITY_ID_FIELD_NUMBER;
       hash = (53 * hash) + getGadgetEntityId();
-      hash = (37 * hash) + ARENA_CHALLENGE_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getArenaChallengeId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -379,9 +383,13 @@ public final class StartArenaChallengeLevelRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 2125
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 2171;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code StartArenaChallengeLevelRsp}
@@ -421,13 +429,13 @@ public final class StartArenaChallengeLevelRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        arenaChallengeLevel_ = 0;
+        unk3300FDFNFLAKONG_ = 0;
 
         retcode_ = 0;
 
-        gadgetEntityId_ = 0;
+        unk3300DBHAGHMMLAI_ = 0;
 
-        arenaChallengeId_ = 0;
+        gadgetEntityId_ = 0;
 
         return this;
       }
@@ -455,10 +463,10 @@ public final class StartArenaChallengeLevelRspOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.StartArenaChallengeLevelRspOuterClass.StartArenaChallengeLevelRsp buildPartial() {
         emu.grasscutter.net.proto.StartArenaChallengeLevelRspOuterClass.StartArenaChallengeLevelRsp result = new emu.grasscutter.net.proto.StartArenaChallengeLevelRspOuterClass.StartArenaChallengeLevelRsp(this);
-        result.arenaChallengeLevel_ = arenaChallengeLevel_;
+        result.unk3300FDFNFLAKONG_ = unk3300FDFNFLAKONG_;
         result.retcode_ = retcode_;
+        result.unk3300DBHAGHMMLAI_ = unk3300DBHAGHMMLAI_;
         result.gadgetEntityId_ = gadgetEntityId_;
-        result.arenaChallengeId_ = arenaChallengeId_;
         onBuilt();
         return result;
       }
@@ -507,17 +515,17 @@ public final class StartArenaChallengeLevelRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.StartArenaChallengeLevelRspOuterClass.StartArenaChallengeLevelRsp other) {
         if (other == emu.grasscutter.net.proto.StartArenaChallengeLevelRspOuterClass.StartArenaChallengeLevelRsp.getDefaultInstance()) return this;
-        if (other.getArenaChallengeLevel() != 0) {
-          setArenaChallengeLevel(other.getArenaChallengeLevel());
+        if (other.getUnk3300FDFNFLAKONG() != 0) {
+          setUnk3300FDFNFLAKONG(other.getUnk3300FDFNFLAKONG());
         }
         if (other.getRetcode() != 0) {
           setRetcode(other.getRetcode());
         }
+        if (other.getUnk3300DBHAGHMMLAI() != 0) {
+          setUnk3300DBHAGHMMLAI(other.getUnk3300DBHAGHMMLAI());
+        }
         if (other.getGadgetEntityId() != 0) {
           setGadgetEntityId(other.getGadgetEntityId());
-        }
-        if (other.getArenaChallengeId() != 0) {
-          setArenaChallengeId(other.getArenaChallengeId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -548,40 +556,40 @@ public final class StartArenaChallengeLevelRspOuterClass {
         return this;
       }
 
-      private int arenaChallengeLevel_ ;
+      private int unk3300FDFNFLAKONG_ ;
       /**
-       * <code>uint32 arena_challenge_level = 1;</code>
-       * @return The arenaChallengeLevel.
+       * <code>uint32 Unk3300_FDFNFLAKONG = 4;</code>
+       * @return The unk3300FDFNFLAKONG.
        */
       @java.lang.Override
-      public int getArenaChallengeLevel() {
-        return arenaChallengeLevel_;
+      public int getUnk3300FDFNFLAKONG() {
+        return unk3300FDFNFLAKONG_;
       }
       /**
-       * <code>uint32 arena_challenge_level = 1;</code>
-       * @param value The arenaChallengeLevel to set.
+       * <code>uint32 Unk3300_FDFNFLAKONG = 4;</code>
+       * @param value The unk3300FDFNFLAKONG to set.
        * @return This builder for chaining.
        */
-      public Builder setArenaChallengeLevel(int value) {
+      public Builder setUnk3300FDFNFLAKONG(int value) {
         
-        arenaChallengeLevel_ = value;
+        unk3300FDFNFLAKONG_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 arena_challenge_level = 1;</code>
+       * <code>uint32 Unk3300_FDFNFLAKONG = 4;</code>
        * @return This builder for chaining.
        */
-      public Builder clearArenaChallengeLevel() {
+      public Builder clearUnk3300FDFNFLAKONG() {
         
-        arenaChallengeLevel_ = 0;
+        unk3300FDFNFLAKONG_ = 0;
         onChanged();
         return this;
       }
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 9;</code>
+       * <code>int32 retcode = 5;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -589,7 +597,7 @@ public final class StartArenaChallengeLevelRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 9;</code>
+       * <code>int32 retcode = 5;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -600,7 +608,7 @@ public final class StartArenaChallengeLevelRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 9;</code>
+       * <code>int32 retcode = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -610,9 +618,40 @@ public final class StartArenaChallengeLevelRspOuterClass {
         return this;
       }
 
+      private int unk3300DBHAGHMMLAI_ ;
+      /**
+       * <code>uint32 Unk3300_DBHAGHMMLAI = 13;</code>
+       * @return The unk3300DBHAGHMMLAI.
+       */
+      @java.lang.Override
+      public int getUnk3300DBHAGHMMLAI() {
+        return unk3300DBHAGHMMLAI_;
+      }
+      /**
+       * <code>uint32 Unk3300_DBHAGHMMLAI = 13;</code>
+       * @param value The unk3300DBHAGHMMLAI to set.
+       * @return This builder for chaining.
+       */
+      public Builder setUnk3300DBHAGHMMLAI(int value) {
+        
+        unk3300DBHAGHMMLAI_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 Unk3300_DBHAGHMMLAI = 13;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearUnk3300DBHAGHMMLAI() {
+        
+        unk3300DBHAGHMMLAI_ = 0;
+        onChanged();
+        return this;
+      }
+
       private int gadgetEntityId_ ;
       /**
-       * <code>uint32 gadget_entity_id = 3;</code>
+       * <code>uint32 gadget_entity_id = 10;</code>
        * @return The gadgetEntityId.
        */
       @java.lang.Override
@@ -620,7 +659,7 @@ public final class StartArenaChallengeLevelRspOuterClass {
         return gadgetEntityId_;
       }
       /**
-       * <code>uint32 gadget_entity_id = 3;</code>
+       * <code>uint32 gadget_entity_id = 10;</code>
        * @param value The gadgetEntityId to set.
        * @return This builder for chaining.
        */
@@ -631,43 +670,12 @@ public final class StartArenaChallengeLevelRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 gadget_entity_id = 3;</code>
+       * <code>uint32 gadget_entity_id = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearGadgetEntityId() {
         
         gadgetEntityId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int arenaChallengeId_ ;
-      /**
-       * <code>uint32 arena_challenge_id = 6;</code>
-       * @return The arenaChallengeId.
-       */
-      @java.lang.Override
-      public int getArenaChallengeId() {
-        return arenaChallengeId_;
-      }
-      /**
-       * <code>uint32 arena_challenge_id = 6;</code>
-       * @param value The arenaChallengeId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setArenaChallengeId(int value) {
-        
-        arenaChallengeId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 arena_challenge_id = 6;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearArenaChallengeId() {
-        
-        arenaChallengeId_ = 0;
         onChanged();
         return this;
       }
@@ -738,12 +746,12 @@ public final class StartArenaChallengeLevelRspOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n!StartArenaChallengeLevelRsp.proto\"\203\001\n\033" +
-      "StartArenaChallengeLevelRsp\022\035\n\025arena_cha" +
-      "llenge_level\030\001 \001(\r\022\017\n\007retcode\030\t \001(\005\022\030\n\020g" +
-      "adget_entity_id\030\003 \001(\r\022\032\n\022arena_challenge" +
-      "_id\030\006 \001(\rB\033\n\031emu.grasscutter.net.protob\006" +
-      "proto3"
+      "\n!StartArenaChallengeLevelRsp.proto\"\202\001\n\033" +
+      "StartArenaChallengeLevelRsp\022\033\n\023Unk3300_F" +
+      "DFNFLAKONG\030\004 \001(\r\022\017\n\007retcode\030\005 \001(\005\022\033\n\023Unk" +
+      "3300_DBHAGHMMLAI\030\r \001(\r\022\030\n\020gadget_entity_" +
+      "id\030\n \001(\rB\033\n\031emu.grasscutter.net.protob\006p" +
+      "roto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -754,7 +762,7 @@ public final class StartArenaChallengeLevelRspOuterClass {
     internal_static_StartArenaChallengeLevelRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_StartArenaChallengeLevelRsp_descriptor,
-        new java.lang.String[] { "ArenaChallengeLevel", "Retcode", "GadgetEntityId", "ArenaChallengeId", });
+        new java.lang.String[] { "Unk3300FDFNFLAKONG", "Retcode", "Unk3300DBHAGHMMLAI", "GadgetEntityId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

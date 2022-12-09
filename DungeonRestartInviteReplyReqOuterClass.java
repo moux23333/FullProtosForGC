@@ -19,17 +19,21 @@ public final class DungeonRestartInviteReplyReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_accept = 11;</code>
+     * <code>bool is_accept = 2;</code>
      * @return The isAccept.
      */
     boolean getIsAccept();
   }
   /**
    * <pre>
-   * CmdId: 1000
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 904;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code DungeonRestartInviteReplyReq}
@@ -76,7 +80,7 @@ public final class DungeonRestartInviteReplyReqOuterClass {
             case 0:
               done = true;
               break;
-            case 88: {
+            case 16: {
 
               isAccept_ = input.readBool();
               break;
@@ -113,10 +117,10 @@ public final class DungeonRestartInviteReplyReqOuterClass {
               emu.grasscutter.net.proto.DungeonRestartInviteReplyReqOuterClass.DungeonRestartInviteReplyReq.class, emu.grasscutter.net.proto.DungeonRestartInviteReplyReqOuterClass.DungeonRestartInviteReplyReq.Builder.class);
     }
 
-    public static final int IS_ACCEPT_FIELD_NUMBER = 11;
+    public static final int IS_ACCEPT_FIELD_NUMBER = 2;
     private boolean isAccept_;
     /**
-     * <code>bool is_accept = 11;</code>
+     * <code>bool is_accept = 2;</code>
      * @return The isAccept.
      */
     @java.lang.Override
@@ -139,7 +143,7 @@ public final class DungeonRestartInviteReplyReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (isAccept_ != false) {
-        output.writeBool(11, isAccept_);
+        output.writeBool(2, isAccept_);
       }
       unknownFields.writeTo(output);
     }
@@ -152,7 +156,7 @@ public final class DungeonRestartInviteReplyReqOuterClass {
       size = 0;
       if (isAccept_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(11, isAccept_);
+          .computeBoolSize(2, isAccept_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -282,10 +286,14 @@ public final class DungeonRestartInviteReplyReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 1000
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 904;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code DungeonRestartInviteReplyReq}
@@ -436,7 +444,7 @@ public final class DungeonRestartInviteReplyReqOuterClass {
 
       private boolean isAccept_ ;
       /**
-       * <code>bool is_accept = 11;</code>
+       * <code>bool is_accept = 2;</code>
        * @return The isAccept.
        */
       @java.lang.Override
@@ -444,7 +452,7 @@ public final class DungeonRestartInviteReplyReqOuterClass {
         return isAccept_;
       }
       /**
-       * <code>bool is_accept = 11;</code>
+       * <code>bool is_accept = 2;</code>
        * @param value The isAccept to set.
        * @return This builder for chaining.
        */
@@ -455,7 +463,7 @@ public final class DungeonRestartInviteReplyReqOuterClass {
         return this;
       }
       /**
-       * <code>bool is_accept = 11;</code>
+       * <code>bool is_accept = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsAccept() {
@@ -533,7 +541,7 @@ public final class DungeonRestartInviteReplyReqOuterClass {
     java.lang.String[] descriptorData = {
       "\n\"DungeonRestartInviteReplyReq.proto\"1\n\034" +
       "DungeonRestartInviteReplyReq\022\021\n\tis_accep" +
-      "t\030\013 \001(\010B\033\n\031emu.grasscutter.net.protob\006pr" +
+      "t\030\002 \001(\010B\033\n\031emu.grasscutter.net.protob\006pr" +
       "oto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

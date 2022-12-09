@@ -19,16 +19,20 @@ public final class ForceAddPlayerFriendReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 target_uid = 15;</code>
+     * <code>uint32 target_uid = 3;</code>
      * @return The targetUid.
      */
     int getTargetUid();
   }
   /**
    * <pre>
-   * CmdId: 4057
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 4063;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code ForceAddPlayerFriendReq}
@@ -75,7 +79,7 @@ public final class ForceAddPlayerFriendReqOuterClass {
             case 0:
               done = true;
               break;
-            case 120: {
+            case 24: {
 
               targetUid_ = input.readUInt32();
               break;
@@ -112,10 +116,10 @@ public final class ForceAddPlayerFriendReqOuterClass {
               emu.grasscutter.net.proto.ForceAddPlayerFriendReqOuterClass.ForceAddPlayerFriendReq.class, emu.grasscutter.net.proto.ForceAddPlayerFriendReqOuterClass.ForceAddPlayerFriendReq.Builder.class);
     }
 
-    public static final int TARGET_UID_FIELD_NUMBER = 15;
+    public static final int TARGET_UID_FIELD_NUMBER = 3;
     private int targetUid_;
     /**
-     * <code>uint32 target_uid = 15;</code>
+     * <code>uint32 target_uid = 3;</code>
      * @return The targetUid.
      */
     @java.lang.Override
@@ -138,7 +142,7 @@ public final class ForceAddPlayerFriendReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (targetUid_ != 0) {
-        output.writeUInt32(15, targetUid_);
+        output.writeUInt32(3, targetUid_);
       }
       unknownFields.writeTo(output);
     }
@@ -151,7 +155,7 @@ public final class ForceAddPlayerFriendReqOuterClass {
       size = 0;
       if (targetUid_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, targetUid_);
+          .computeUInt32Size(3, targetUid_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -280,9 +284,13 @@ public final class ForceAddPlayerFriendReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 4057
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 4063;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code ForceAddPlayerFriendReq}
@@ -433,7 +441,7 @@ public final class ForceAddPlayerFriendReqOuterClass {
 
       private int targetUid_ ;
       /**
-       * <code>uint32 target_uid = 15;</code>
+       * <code>uint32 target_uid = 3;</code>
        * @return The targetUid.
        */
       @java.lang.Override
@@ -441,7 +449,7 @@ public final class ForceAddPlayerFriendReqOuterClass {
         return targetUid_;
       }
       /**
-       * <code>uint32 target_uid = 15;</code>
+       * <code>uint32 target_uid = 3;</code>
        * @param value The targetUid to set.
        * @return This builder for chaining.
        */
@@ -452,7 +460,7 @@ public final class ForceAddPlayerFriendReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 target_uid = 15;</code>
+       * <code>uint32 target_uid = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearTargetUid() {
@@ -529,7 +537,7 @@ public final class ForceAddPlayerFriendReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\035ForceAddPlayerFriendReq.proto\"-\n\027Force" +
-      "AddPlayerFriendReq\022\022\n\ntarget_uid\030\017 \001(\rB\033" +
+      "AddPlayerFriendReq\022\022\n\ntarget_uid\030\003 \001(\rB\033" +
       "\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

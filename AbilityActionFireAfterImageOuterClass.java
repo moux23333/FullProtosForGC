@@ -19,17 +19,17 @@ public final class AbilityActionFireAfterImageOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.Vector dir = 12;</code>
+     * <code>.Vector dir = 10;</code>
      * @return Whether the dir field is set.
      */
     boolean hasDir();
     /**
-     * <code>.Vector dir = 12;</code>
+     * <code>.Vector dir = 10;</code>
      * @return The dir.
      */
     emu.grasscutter.net.proto.VectorOuterClass.Vector getDir();
     /**
-     * <code>.Vector dir = 12;</code>
+     * <code>.Vector dir = 10;</code>
      */
     emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getDirOrBuilder();
   }
@@ -78,7 +78,7 @@ public final class AbilityActionFireAfterImageOuterClass {
             case 0:
               done = true;
               break;
-            case 98: {
+            case 82: {
               emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder subBuilder = null;
               if (dir_ != null) {
                 subBuilder = dir_.toBuilder();
@@ -123,10 +123,10 @@ public final class AbilityActionFireAfterImageOuterClass {
               emu.grasscutter.net.proto.AbilityActionFireAfterImageOuterClass.AbilityActionFireAfterImage.class, emu.grasscutter.net.proto.AbilityActionFireAfterImageOuterClass.AbilityActionFireAfterImage.Builder.class);
     }
 
-    public static final int DIR_FIELD_NUMBER = 12;
+    public static final int DIR_FIELD_NUMBER = 10;
     private emu.grasscutter.net.proto.VectorOuterClass.Vector dir_;
     /**
-     * <code>.Vector dir = 12;</code>
+     * <code>.Vector dir = 10;</code>
      * @return Whether the dir field is set.
      */
     @java.lang.Override
@@ -134,7 +134,7 @@ public final class AbilityActionFireAfterImageOuterClass {
       return dir_ != null;
     }
     /**
-     * <code>.Vector dir = 12;</code>
+     * <code>.Vector dir = 10;</code>
      * @return The dir.
      */
     @java.lang.Override
@@ -142,7 +142,7 @@ public final class AbilityActionFireAfterImageOuterClass {
       return dir_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : dir_;
     }
     /**
-     * <code>.Vector dir = 12;</code>
+     * <code>.Vector dir = 10;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getDirOrBuilder() {
@@ -164,7 +164,7 @@ public final class AbilityActionFireAfterImageOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (dir_ != null) {
-        output.writeMessage(12, getDir());
+        output.writeMessage(10, getDir());
       }
       unknownFields.writeTo(output);
     }
@@ -177,7 +177,7 @@ public final class AbilityActionFireAfterImageOuterClass {
       size = 0;
       if (dir_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(12, getDir());
+          .computeMessageSize(10, getDir());
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -468,14 +468,14 @@ public final class AbilityActionFireAfterImageOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> dirBuilder_;
       /**
-       * <code>.Vector dir = 12;</code>
+       * <code>.Vector dir = 10;</code>
        * @return Whether the dir field is set.
        */
       public boolean hasDir() {
         return dirBuilder_ != null || dir_ != null;
       }
       /**
-       * <code>.Vector dir = 12;</code>
+       * <code>.Vector dir = 10;</code>
        * @return The dir.
        */
       public emu.grasscutter.net.proto.VectorOuterClass.Vector getDir() {
@@ -486,7 +486,7 @@ public final class AbilityActionFireAfterImageOuterClass {
         }
       }
       /**
-       * <code>.Vector dir = 12;</code>
+       * <code>.Vector dir = 10;</code>
        */
       public Builder setDir(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
         if (dirBuilder_ == null) {
@@ -502,7 +502,7 @@ public final class AbilityActionFireAfterImageOuterClass {
         return this;
       }
       /**
-       * <code>.Vector dir = 12;</code>
+       * <code>.Vector dir = 10;</code>
        */
       public Builder setDir(
           emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder builderForValue) {
@@ -516,7 +516,7 @@ public final class AbilityActionFireAfterImageOuterClass {
         return this;
       }
       /**
-       * <code>.Vector dir = 12;</code>
+       * <code>.Vector dir = 10;</code>
        */
       public Builder mergeDir(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
         if (dirBuilder_ == null) {
@@ -534,7 +534,7 @@ public final class AbilityActionFireAfterImageOuterClass {
         return this;
       }
       /**
-       * <code>.Vector dir = 12;</code>
+       * <code>.Vector dir = 10;</code>
        */
       public Builder clearDir() {
         if (dirBuilder_ == null) {
@@ -548,7 +548,7 @@ public final class AbilityActionFireAfterImageOuterClass {
         return this;
       }
       /**
-       * <code>.Vector dir = 12;</code>
+       * <code>.Vector dir = 10;</code>
        */
       public emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder getDirBuilder() {
         
@@ -556,7 +556,7 @@ public final class AbilityActionFireAfterImageOuterClass {
         return getDirFieldBuilder().getBuilder();
       }
       /**
-       * <code>.Vector dir = 12;</code>
+       * <code>.Vector dir = 10;</code>
        */
       public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getDirOrBuilder() {
         if (dirBuilder_ != null) {
@@ -567,7 +567,7 @@ public final class AbilityActionFireAfterImageOuterClass {
         }
       }
       /**
-       * <code>.Vector dir = 12;</code>
+       * <code>.Vector dir = 10;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> 
@@ -651,7 +651,7 @@ public final class AbilityActionFireAfterImageOuterClass {
     java.lang.String[] descriptorData = {
       "\n!AbilityActionFireAfterImage.proto\032\014Vec" +
       "tor.proto\"3\n\033AbilityActionFireAfterImage" +
-      "\022\024\n\003dir\030\014 \001(\0132\007.VectorB\033\n\031emu.grasscutte" +
+      "\022\024\n\003dir\030\n \001(\0132\007.VectorB\033\n\031emu.grasscutte" +
       "r.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

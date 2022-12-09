@@ -19,13 +19,13 @@ public final class PotionAvatarInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_trial = 6;</code>
+     * <code>bool is_trial = 15;</code>
      * @return The isTrial.
      */
     boolean getIsTrial();
 
     /**
-     * <code>uint64 avatar_id = 8;</code>
+     * <code>uint64 avatar_id = 1;</code>
      * @return The avatarId.
      */
     long getAvatarId();
@@ -75,14 +75,14 @@ public final class PotionAvatarInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 48: {
-
-              isTrial_ = input.readBool();
-              break;
-            }
-            case 64: {
+            case 8: {
 
               avatarId_ = input.readUInt64();
+              break;
+            }
+            case 120: {
+
+              isTrial_ = input.readBool();
               break;
             }
             default: {
@@ -117,10 +117,10 @@ public final class PotionAvatarInfoOuterClass {
               emu.grasscutter.net.proto.PotionAvatarInfoOuterClass.PotionAvatarInfo.class, emu.grasscutter.net.proto.PotionAvatarInfoOuterClass.PotionAvatarInfo.Builder.class);
     }
 
-    public static final int IS_TRIAL_FIELD_NUMBER = 6;
+    public static final int IS_TRIAL_FIELD_NUMBER = 15;
     private boolean isTrial_;
     /**
-     * <code>bool is_trial = 6;</code>
+     * <code>bool is_trial = 15;</code>
      * @return The isTrial.
      */
     @java.lang.Override
@@ -128,10 +128,10 @@ public final class PotionAvatarInfoOuterClass {
       return isTrial_;
     }
 
-    public static final int AVATAR_ID_FIELD_NUMBER = 8;
+    public static final int AVATAR_ID_FIELD_NUMBER = 1;
     private long avatarId_;
     /**
-     * <code>uint64 avatar_id = 8;</code>
+     * <code>uint64 avatar_id = 1;</code>
      * @return The avatarId.
      */
     @java.lang.Override
@@ -153,11 +153,11 @@ public final class PotionAvatarInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (isTrial_ != false) {
-        output.writeBool(6, isTrial_);
-      }
       if (avatarId_ != 0L) {
-        output.writeUInt64(8, avatarId_);
+        output.writeUInt64(1, avatarId_);
+      }
+      if (isTrial_ != false) {
+        output.writeBool(15, isTrial_);
       }
       unknownFields.writeTo(output);
     }
@@ -168,13 +168,13 @@ public final class PotionAvatarInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (isTrial_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(6, isTrial_);
-      }
       if (avatarId_ != 0L) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt64Size(8, avatarId_);
+          .computeUInt64Size(1, avatarId_);
+      }
+      if (isTrial_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(15, isTrial_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -462,7 +462,7 @@ public final class PotionAvatarInfoOuterClass {
 
       private boolean isTrial_ ;
       /**
-       * <code>bool is_trial = 6;</code>
+       * <code>bool is_trial = 15;</code>
        * @return The isTrial.
        */
       @java.lang.Override
@@ -470,7 +470,7 @@ public final class PotionAvatarInfoOuterClass {
         return isTrial_;
       }
       /**
-       * <code>bool is_trial = 6;</code>
+       * <code>bool is_trial = 15;</code>
        * @param value The isTrial to set.
        * @return This builder for chaining.
        */
@@ -481,7 +481,7 @@ public final class PotionAvatarInfoOuterClass {
         return this;
       }
       /**
-       * <code>bool is_trial = 6;</code>
+       * <code>bool is_trial = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsTrial() {
@@ -493,7 +493,7 @@ public final class PotionAvatarInfoOuterClass {
 
       private long avatarId_ ;
       /**
-       * <code>uint64 avatar_id = 8;</code>
+       * <code>uint64 avatar_id = 1;</code>
        * @return The avatarId.
        */
       @java.lang.Override
@@ -501,7 +501,7 @@ public final class PotionAvatarInfoOuterClass {
         return avatarId_;
       }
       /**
-       * <code>uint64 avatar_id = 8;</code>
+       * <code>uint64 avatar_id = 1;</code>
        * @param value The avatarId to set.
        * @return This builder for chaining.
        */
@@ -512,7 +512,7 @@ public final class PotionAvatarInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint64 avatar_id = 8;</code>
+       * <code>uint64 avatar_id = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearAvatarId() {
@@ -589,7 +589,7 @@ public final class PotionAvatarInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\026PotionAvatarInfo.proto\"7\n\020PotionAvatar" +
-      "Info\022\020\n\010is_trial\030\006 \001(\010\022\021\n\tavatar_id\030\010 \001(" +
+      "Info\022\020\n\010is_trial\030\017 \001(\010\022\021\n\tavatar_id\030\001 \001(" +
       "\004B\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

@@ -19,35 +19,39 @@ public final class BartenderLevelProgressNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_new_record = 9;</code>
-     * @return The isNewRecord.
-     */
-    boolean getIsNewRecord();
-
-    /**
-     * <code>bool is_finish = 3;</code>
+     * <code>bool is_finish = 8;</code>
      * @return The isFinish.
      */
     boolean getIsFinish();
 
     /**
-     * <code>uint32 level_id = 15;</code>
+     * <code>bool is_new_record = 6;</code>
+     * @return The isNewRecord.
+     */
+    boolean getIsNewRecord();
+
+    /**
+     * <code>uint32 level_id = 12;</code>
      * @return The levelId.
      */
     int getLevelId();
 
     /**
-     * <code>uint32 score = 8;</code>
+     * <code>uint32 score = 3;</code>
      * @return The score.
      */
     int getScore();
   }
   /**
    * <pre>
-   * CmdId: 8756
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 8415;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code BartenderLevelProgressNotify}
@@ -96,20 +100,20 @@ public final class BartenderLevelProgressNotifyOuterClass {
               break;
             case 24: {
 
-              isFinish_ = input.readBool();
-              break;
-            }
-            case 64: {
-
               score_ = input.readUInt32();
               break;
             }
-            case 72: {
+            case 48: {
 
               isNewRecord_ = input.readBool();
               break;
             }
-            case 120: {
+            case 64: {
+
+              isFinish_ = input.readBool();
+              break;
+            }
+            case 96: {
 
               levelId_ = input.readUInt32();
               break;
@@ -146,21 +150,10 @@ public final class BartenderLevelProgressNotifyOuterClass {
               emu.grasscutter.net.proto.BartenderLevelProgressNotifyOuterClass.BartenderLevelProgressNotify.class, emu.grasscutter.net.proto.BartenderLevelProgressNotifyOuterClass.BartenderLevelProgressNotify.Builder.class);
     }
 
-    public static final int IS_NEW_RECORD_FIELD_NUMBER = 9;
-    private boolean isNewRecord_;
-    /**
-     * <code>bool is_new_record = 9;</code>
-     * @return The isNewRecord.
-     */
-    @java.lang.Override
-    public boolean getIsNewRecord() {
-      return isNewRecord_;
-    }
-
-    public static final int IS_FINISH_FIELD_NUMBER = 3;
+    public static final int IS_FINISH_FIELD_NUMBER = 8;
     private boolean isFinish_;
     /**
-     * <code>bool is_finish = 3;</code>
+     * <code>bool is_finish = 8;</code>
      * @return The isFinish.
      */
     @java.lang.Override
@@ -168,10 +161,21 @@ public final class BartenderLevelProgressNotifyOuterClass {
       return isFinish_;
     }
 
-    public static final int LEVEL_ID_FIELD_NUMBER = 15;
+    public static final int IS_NEW_RECORD_FIELD_NUMBER = 6;
+    private boolean isNewRecord_;
+    /**
+     * <code>bool is_new_record = 6;</code>
+     * @return The isNewRecord.
+     */
+    @java.lang.Override
+    public boolean getIsNewRecord() {
+      return isNewRecord_;
+    }
+
+    public static final int LEVEL_ID_FIELD_NUMBER = 12;
     private int levelId_;
     /**
-     * <code>uint32 level_id = 15;</code>
+     * <code>uint32 level_id = 12;</code>
      * @return The levelId.
      */
     @java.lang.Override
@@ -179,10 +183,10 @@ public final class BartenderLevelProgressNotifyOuterClass {
       return levelId_;
     }
 
-    public static final int SCORE_FIELD_NUMBER = 8;
+    public static final int SCORE_FIELD_NUMBER = 3;
     private int score_;
     /**
-     * <code>uint32 score = 8;</code>
+     * <code>uint32 score = 3;</code>
      * @return The score.
      */
     @java.lang.Override
@@ -204,17 +208,17 @@ public final class BartenderLevelProgressNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (isFinish_ != false) {
-        output.writeBool(3, isFinish_);
-      }
       if (score_ != 0) {
-        output.writeUInt32(8, score_);
+        output.writeUInt32(3, score_);
       }
       if (isNewRecord_ != false) {
-        output.writeBool(9, isNewRecord_);
+        output.writeBool(6, isNewRecord_);
+      }
+      if (isFinish_ != false) {
+        output.writeBool(8, isFinish_);
       }
       if (levelId_ != 0) {
-        output.writeUInt32(15, levelId_);
+        output.writeUInt32(12, levelId_);
       }
       unknownFields.writeTo(output);
     }
@@ -225,21 +229,21 @@ public final class BartenderLevelProgressNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (isFinish_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(3, isFinish_);
-      }
       if (score_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, score_);
+          .computeUInt32Size(3, score_);
       }
       if (isNewRecord_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(9, isNewRecord_);
+          .computeBoolSize(6, isNewRecord_);
+      }
+      if (isFinish_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(8, isFinish_);
       }
       if (levelId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, levelId_);
+          .computeUInt32Size(12, levelId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -256,10 +260,10 @@ public final class BartenderLevelProgressNotifyOuterClass {
       }
       emu.grasscutter.net.proto.BartenderLevelProgressNotifyOuterClass.BartenderLevelProgressNotify other = (emu.grasscutter.net.proto.BartenderLevelProgressNotifyOuterClass.BartenderLevelProgressNotify) obj;
 
-      if (getIsNewRecord()
-          != other.getIsNewRecord()) return false;
       if (getIsFinish()
           != other.getIsFinish()) return false;
+      if (getIsNewRecord()
+          != other.getIsNewRecord()) return false;
       if (getLevelId()
           != other.getLevelId()) return false;
       if (getScore()
@@ -275,12 +279,12 @@ public final class BartenderLevelProgressNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + IS_NEW_RECORD_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsNewRecord());
       hash = (37 * hash) + IS_FINISH_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsFinish());
+      hash = (37 * hash) + IS_NEW_RECORD_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getIsNewRecord());
       hash = (37 * hash) + LEVEL_ID_FIELD_NUMBER;
       hash = (53 * hash) + getLevelId();
       hash = (37 * hash) + SCORE_FIELD_NUMBER;
@@ -382,10 +386,14 @@ public final class BartenderLevelProgressNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 8756
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 8415;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code BartenderLevelProgressNotify}
@@ -425,9 +433,9 @@ public final class BartenderLevelProgressNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        isNewRecord_ = false;
-
         isFinish_ = false;
+
+        isNewRecord_ = false;
 
         levelId_ = 0;
 
@@ -459,8 +467,8 @@ public final class BartenderLevelProgressNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.BartenderLevelProgressNotifyOuterClass.BartenderLevelProgressNotify buildPartial() {
         emu.grasscutter.net.proto.BartenderLevelProgressNotifyOuterClass.BartenderLevelProgressNotify result = new emu.grasscutter.net.proto.BartenderLevelProgressNotifyOuterClass.BartenderLevelProgressNotify(this);
-        result.isNewRecord_ = isNewRecord_;
         result.isFinish_ = isFinish_;
+        result.isNewRecord_ = isNewRecord_;
         result.levelId_ = levelId_;
         result.score_ = score_;
         onBuilt();
@@ -511,11 +519,11 @@ public final class BartenderLevelProgressNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.BartenderLevelProgressNotifyOuterClass.BartenderLevelProgressNotify other) {
         if (other == emu.grasscutter.net.proto.BartenderLevelProgressNotifyOuterClass.BartenderLevelProgressNotify.getDefaultInstance()) return this;
-        if (other.getIsNewRecord() != false) {
-          setIsNewRecord(other.getIsNewRecord());
-        }
         if (other.getIsFinish() != false) {
           setIsFinish(other.getIsFinish());
+        }
+        if (other.getIsNewRecord() != false) {
+          setIsNewRecord(other.getIsNewRecord());
         }
         if (other.getLevelId() != 0) {
           setLevelId(other.getLevelId());
@@ -552,40 +560,9 @@ public final class BartenderLevelProgressNotifyOuterClass {
         return this;
       }
 
-      private boolean isNewRecord_ ;
-      /**
-       * <code>bool is_new_record = 9;</code>
-       * @return The isNewRecord.
-       */
-      @java.lang.Override
-      public boolean getIsNewRecord() {
-        return isNewRecord_;
-      }
-      /**
-       * <code>bool is_new_record = 9;</code>
-       * @param value The isNewRecord to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsNewRecord(boolean value) {
-        
-        isNewRecord_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_new_record = 9;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsNewRecord() {
-        
-        isNewRecord_ = false;
-        onChanged();
-        return this;
-      }
-
       private boolean isFinish_ ;
       /**
-       * <code>bool is_finish = 3;</code>
+       * <code>bool is_finish = 8;</code>
        * @return The isFinish.
        */
       @java.lang.Override
@@ -593,7 +570,7 @@ public final class BartenderLevelProgressNotifyOuterClass {
         return isFinish_;
       }
       /**
-       * <code>bool is_finish = 3;</code>
+       * <code>bool is_finish = 8;</code>
        * @param value The isFinish to set.
        * @return This builder for chaining.
        */
@@ -604,7 +581,7 @@ public final class BartenderLevelProgressNotifyOuterClass {
         return this;
       }
       /**
-       * <code>bool is_finish = 3;</code>
+       * <code>bool is_finish = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsFinish() {
@@ -614,9 +591,40 @@ public final class BartenderLevelProgressNotifyOuterClass {
         return this;
       }
 
+      private boolean isNewRecord_ ;
+      /**
+       * <code>bool is_new_record = 6;</code>
+       * @return The isNewRecord.
+       */
+      @java.lang.Override
+      public boolean getIsNewRecord() {
+        return isNewRecord_;
+      }
+      /**
+       * <code>bool is_new_record = 6;</code>
+       * @param value The isNewRecord to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIsNewRecord(boolean value) {
+        
+        isNewRecord_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool is_new_record = 6;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsNewRecord() {
+        
+        isNewRecord_ = false;
+        onChanged();
+        return this;
+      }
+
       private int levelId_ ;
       /**
-       * <code>uint32 level_id = 15;</code>
+       * <code>uint32 level_id = 12;</code>
        * @return The levelId.
        */
       @java.lang.Override
@@ -624,7 +632,7 @@ public final class BartenderLevelProgressNotifyOuterClass {
         return levelId_;
       }
       /**
-       * <code>uint32 level_id = 15;</code>
+       * <code>uint32 level_id = 12;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
        */
@@ -635,7 +643,7 @@ public final class BartenderLevelProgressNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 level_id = 15;</code>
+       * <code>uint32 level_id = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearLevelId() {
@@ -647,7 +655,7 @@ public final class BartenderLevelProgressNotifyOuterClass {
 
       private int score_ ;
       /**
-       * <code>uint32 score = 8;</code>
+       * <code>uint32 score = 3;</code>
        * @return The score.
        */
       @java.lang.Override
@@ -655,7 +663,7 @@ public final class BartenderLevelProgressNotifyOuterClass {
         return score_;
       }
       /**
-       * <code>uint32 score = 8;</code>
+       * <code>uint32 score = 3;</code>
        * @param value The score to set.
        * @return This builder for chaining.
        */
@@ -666,7 +674,7 @@ public final class BartenderLevelProgressNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 score = 8;</code>
+       * <code>uint32 score = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearScore() {
@@ -743,9 +751,9 @@ public final class BartenderLevelProgressNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\"BartenderLevelProgressNotify.proto\"i\n\034" +
-      "BartenderLevelProgressNotify\022\025\n\ris_new_r" +
-      "ecord\030\t \001(\010\022\021\n\tis_finish\030\003 \001(\010\022\020\n\010level_" +
-      "id\030\017 \001(\r\022\r\n\005score\030\010 \001(\rB\033\n\031emu.grasscutt" +
+      "BartenderLevelProgressNotify\022\021\n\tis_finis" +
+      "h\030\010 \001(\010\022\025\n\ris_new_record\030\006 \001(\010\022\020\n\010level_" +
+      "id\030\014 \001(\r\022\r\n\005score\030\003 \001(\rB\033\n\031emu.grasscutt" +
       "er.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -757,7 +765,7 @@ public final class BartenderLevelProgressNotifyOuterClass {
     internal_static_BartenderLevelProgressNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_BartenderLevelProgressNotify_descriptor,
-        new java.lang.String[] { "IsNewRecord", "IsFinish", "LevelId", "Score", });
+        new java.lang.String[] { "IsFinish", "IsNewRecord", "LevelId", "Score", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

@@ -19,16 +19,20 @@ public final class TrialAvatarInDungeonIndexNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 trial_avatar_index_id = 14;</code>
+     * <code>uint32 trial_avatar_index_id = 9;</code>
      * @return The trialAvatarIndexId.
      */
     int getTrialAvatarIndexId();
   }
   /**
    * <pre>
-   * CmdId: 2186
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 2063;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code TrialAvatarInDungeonIndexNotify}
@@ -75,7 +79,7 @@ public final class TrialAvatarInDungeonIndexNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 112: {
+            case 72: {
 
               trialAvatarIndexId_ = input.readUInt32();
               break;
@@ -112,10 +116,10 @@ public final class TrialAvatarInDungeonIndexNotifyOuterClass {
               emu.grasscutter.net.proto.TrialAvatarInDungeonIndexNotifyOuterClass.TrialAvatarInDungeonIndexNotify.class, emu.grasscutter.net.proto.TrialAvatarInDungeonIndexNotifyOuterClass.TrialAvatarInDungeonIndexNotify.Builder.class);
     }
 
-    public static final int TRIAL_AVATAR_INDEX_ID_FIELD_NUMBER = 14;
+    public static final int TRIAL_AVATAR_INDEX_ID_FIELD_NUMBER = 9;
     private int trialAvatarIndexId_;
     /**
-     * <code>uint32 trial_avatar_index_id = 14;</code>
+     * <code>uint32 trial_avatar_index_id = 9;</code>
      * @return The trialAvatarIndexId.
      */
     @java.lang.Override
@@ -138,7 +142,7 @@ public final class TrialAvatarInDungeonIndexNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (trialAvatarIndexId_ != 0) {
-        output.writeUInt32(14, trialAvatarIndexId_);
+        output.writeUInt32(9, trialAvatarIndexId_);
       }
       unknownFields.writeTo(output);
     }
@@ -151,7 +155,7 @@ public final class TrialAvatarInDungeonIndexNotifyOuterClass {
       size = 0;
       if (trialAvatarIndexId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, trialAvatarIndexId_);
+          .computeUInt32Size(9, trialAvatarIndexId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -280,9 +284,13 @@ public final class TrialAvatarInDungeonIndexNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 2186
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 2063;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code TrialAvatarInDungeonIndexNotify}
@@ -433,7 +441,7 @@ public final class TrialAvatarInDungeonIndexNotifyOuterClass {
 
       private int trialAvatarIndexId_ ;
       /**
-       * <code>uint32 trial_avatar_index_id = 14;</code>
+       * <code>uint32 trial_avatar_index_id = 9;</code>
        * @return The trialAvatarIndexId.
        */
       @java.lang.Override
@@ -441,7 +449,7 @@ public final class TrialAvatarInDungeonIndexNotifyOuterClass {
         return trialAvatarIndexId_;
       }
       /**
-       * <code>uint32 trial_avatar_index_id = 14;</code>
+       * <code>uint32 trial_avatar_index_id = 9;</code>
        * @param value The trialAvatarIndexId to set.
        * @return This builder for chaining.
        */
@@ -452,7 +460,7 @@ public final class TrialAvatarInDungeonIndexNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 trial_avatar_index_id = 14;</code>
+       * <code>uint32 trial_avatar_index_id = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearTrialAvatarIndexId() {
@@ -530,7 +538,7 @@ public final class TrialAvatarInDungeonIndexNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n%TrialAvatarInDungeonIndexNotify.proto\"" +
       "@\n\037TrialAvatarInDungeonIndexNotify\022\035\n\025tr" +
-      "ial_avatar_index_id\030\016 \001(\rB\033\n\031emu.grasscu" +
+      "ial_avatar_index_id\030\t \001(\rB\033\n\031emu.grasscu" +
       "tter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

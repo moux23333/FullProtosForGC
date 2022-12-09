@@ -19,7 +19,7 @@ public final class HomePlantWeedReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 field_guid = 9;</code>
+     * <code>uint32 field_guid = 13;</code>
      * @return The fieldGuid.
      */
     int getFieldGuid();
@@ -32,10 +32,14 @@ public final class HomePlantWeedReqOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 4640
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 4866;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code HomePlantWeedReq}
@@ -87,7 +91,7 @@ public final class HomePlantWeedReqOuterClass {
               index_ = input.readUInt32();
               break;
             }
-            case 72: {
+            case 104: {
 
               fieldGuid_ = input.readUInt32();
               break;
@@ -124,10 +128,10 @@ public final class HomePlantWeedReqOuterClass {
               emu.grasscutter.net.proto.HomePlantWeedReqOuterClass.HomePlantWeedReq.class, emu.grasscutter.net.proto.HomePlantWeedReqOuterClass.HomePlantWeedReq.Builder.class);
     }
 
-    public static final int FIELD_GUID_FIELD_NUMBER = 9;
+    public static final int FIELD_GUID_FIELD_NUMBER = 13;
     private int fieldGuid_;
     /**
-     * <code>uint32 field_guid = 9;</code>
+     * <code>uint32 field_guid = 13;</code>
      * @return The fieldGuid.
      */
     @java.lang.Override
@@ -164,7 +168,7 @@ public final class HomePlantWeedReqOuterClass {
         output.writeUInt32(3, index_);
       }
       if (fieldGuid_ != 0) {
-        output.writeUInt32(9, fieldGuid_);
+        output.writeUInt32(13, fieldGuid_);
       }
       unknownFields.writeTo(output);
     }
@@ -181,7 +185,7 @@ public final class HomePlantWeedReqOuterClass {
       }
       if (fieldGuid_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, fieldGuid_);
+          .computeUInt32Size(13, fieldGuid_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -314,10 +318,14 @@ public final class HomePlantWeedReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 4640
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 4866;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code HomePlantWeedReq}
@@ -474,7 +482,7 @@ public final class HomePlantWeedReqOuterClass {
 
       private int fieldGuid_ ;
       /**
-       * <code>uint32 field_guid = 9;</code>
+       * <code>uint32 field_guid = 13;</code>
        * @return The fieldGuid.
        */
       @java.lang.Override
@@ -482,7 +490,7 @@ public final class HomePlantWeedReqOuterClass {
         return fieldGuid_;
       }
       /**
-       * <code>uint32 field_guid = 9;</code>
+       * <code>uint32 field_guid = 13;</code>
        * @param value The fieldGuid to set.
        * @return This builder for chaining.
        */
@@ -493,7 +501,7 @@ public final class HomePlantWeedReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 field_guid = 9;</code>
+       * <code>uint32 field_guid = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearFieldGuid() {
@@ -601,7 +609,7 @@ public final class HomePlantWeedReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\026HomePlantWeedReq.proto\"5\n\020HomePlantWee" +
-      "dReq\022\022\n\nfield_guid\030\t \001(\r\022\r\n\005index\030\003 \001(\rB" +
+      "dReq\022\022\n\nfield_guid\030\r \001(\r\022\r\n\005index\030\003 \001(\rB" +
       "\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

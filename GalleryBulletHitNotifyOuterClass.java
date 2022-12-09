@@ -19,22 +19,26 @@ public final class GalleryBulletHitNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 hit_count = 14;</code>
-     * @return The hitCount.
-     */
-    int getHitCount();
-
-    /**
-     * <code>uint32 gallery_id = 12;</code>
+     * <code>uint32 gallery_id = 3;</code>
      * @return The galleryId.
      */
     int getGalleryId();
+
+    /**
+     * <code>uint32 hit_count = 7;</code>
+     * @return The hitCount.
+     */
+    int getHitCount();
   }
   /**
    * <pre>
-   * CmdId: 5531
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 5527;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code GalleryBulletHitNotify}
@@ -81,12 +85,12 @@ public final class GalleryBulletHitNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 96: {
+            case 24: {
 
               galleryId_ = input.readUInt32();
               break;
             }
-            case 112: {
+            case 56: {
 
               hitCount_ = input.readUInt32();
               break;
@@ -123,26 +127,26 @@ public final class GalleryBulletHitNotifyOuterClass {
               emu.grasscutter.net.proto.GalleryBulletHitNotifyOuterClass.GalleryBulletHitNotify.class, emu.grasscutter.net.proto.GalleryBulletHitNotifyOuterClass.GalleryBulletHitNotify.Builder.class);
     }
 
-    public static final int HIT_COUNT_FIELD_NUMBER = 14;
-    private int hitCount_;
-    /**
-     * <code>uint32 hit_count = 14;</code>
-     * @return The hitCount.
-     */
-    @java.lang.Override
-    public int getHitCount() {
-      return hitCount_;
-    }
-
-    public static final int GALLERY_ID_FIELD_NUMBER = 12;
+    public static final int GALLERY_ID_FIELD_NUMBER = 3;
     private int galleryId_;
     /**
-     * <code>uint32 gallery_id = 12;</code>
+     * <code>uint32 gallery_id = 3;</code>
      * @return The galleryId.
      */
     @java.lang.Override
     public int getGalleryId() {
       return galleryId_;
+    }
+
+    public static final int HIT_COUNT_FIELD_NUMBER = 7;
+    private int hitCount_;
+    /**
+     * <code>uint32 hit_count = 7;</code>
+     * @return The hitCount.
+     */
+    @java.lang.Override
+    public int getHitCount() {
+      return hitCount_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -160,10 +164,10 @@ public final class GalleryBulletHitNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (galleryId_ != 0) {
-        output.writeUInt32(12, galleryId_);
+        output.writeUInt32(3, galleryId_);
       }
       if (hitCount_ != 0) {
-        output.writeUInt32(14, hitCount_);
+        output.writeUInt32(7, hitCount_);
       }
       unknownFields.writeTo(output);
     }
@@ -176,11 +180,11 @@ public final class GalleryBulletHitNotifyOuterClass {
       size = 0;
       if (galleryId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, galleryId_);
+          .computeUInt32Size(3, galleryId_);
       }
       if (hitCount_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, hitCount_);
+          .computeUInt32Size(7, hitCount_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -197,10 +201,10 @@ public final class GalleryBulletHitNotifyOuterClass {
       }
       emu.grasscutter.net.proto.GalleryBulletHitNotifyOuterClass.GalleryBulletHitNotify other = (emu.grasscutter.net.proto.GalleryBulletHitNotifyOuterClass.GalleryBulletHitNotify) obj;
 
-      if (getHitCount()
-          != other.getHitCount()) return false;
       if (getGalleryId()
           != other.getGalleryId()) return false;
+      if (getHitCount()
+          != other.getHitCount()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -212,10 +216,10 @@ public final class GalleryBulletHitNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + HIT_COUNT_FIELD_NUMBER;
-      hash = (53 * hash) + getHitCount();
       hash = (37 * hash) + GALLERY_ID_FIELD_NUMBER;
       hash = (53 * hash) + getGalleryId();
+      hash = (37 * hash) + HIT_COUNT_FIELD_NUMBER;
+      hash = (53 * hash) + getHitCount();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -313,9 +317,13 @@ public final class GalleryBulletHitNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 5531
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 5527;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code GalleryBulletHitNotify}
@@ -355,9 +363,9 @@ public final class GalleryBulletHitNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        hitCount_ = 0;
-
         galleryId_ = 0;
+
+        hitCount_ = 0;
 
         return this;
       }
@@ -385,8 +393,8 @@ public final class GalleryBulletHitNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.GalleryBulletHitNotifyOuterClass.GalleryBulletHitNotify buildPartial() {
         emu.grasscutter.net.proto.GalleryBulletHitNotifyOuterClass.GalleryBulletHitNotify result = new emu.grasscutter.net.proto.GalleryBulletHitNotifyOuterClass.GalleryBulletHitNotify(this);
-        result.hitCount_ = hitCount_;
         result.galleryId_ = galleryId_;
+        result.hitCount_ = hitCount_;
         onBuilt();
         return result;
       }
@@ -435,11 +443,11 @@ public final class GalleryBulletHitNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.GalleryBulletHitNotifyOuterClass.GalleryBulletHitNotify other) {
         if (other == emu.grasscutter.net.proto.GalleryBulletHitNotifyOuterClass.GalleryBulletHitNotify.getDefaultInstance()) return this;
-        if (other.getHitCount() != 0) {
-          setHitCount(other.getHitCount());
-        }
         if (other.getGalleryId() != 0) {
           setGalleryId(other.getGalleryId());
+        }
+        if (other.getHitCount() != 0) {
+          setHitCount(other.getHitCount());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -470,40 +478,9 @@ public final class GalleryBulletHitNotifyOuterClass {
         return this;
       }
 
-      private int hitCount_ ;
-      /**
-       * <code>uint32 hit_count = 14;</code>
-       * @return The hitCount.
-       */
-      @java.lang.Override
-      public int getHitCount() {
-        return hitCount_;
-      }
-      /**
-       * <code>uint32 hit_count = 14;</code>
-       * @param value The hitCount to set.
-       * @return This builder for chaining.
-       */
-      public Builder setHitCount(int value) {
-        
-        hitCount_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 hit_count = 14;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearHitCount() {
-        
-        hitCount_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int galleryId_ ;
       /**
-       * <code>uint32 gallery_id = 12;</code>
+       * <code>uint32 gallery_id = 3;</code>
        * @return The galleryId.
        */
       @java.lang.Override
@@ -511,7 +488,7 @@ public final class GalleryBulletHitNotifyOuterClass {
         return galleryId_;
       }
       /**
-       * <code>uint32 gallery_id = 12;</code>
+       * <code>uint32 gallery_id = 3;</code>
        * @param value The galleryId to set.
        * @return This builder for chaining.
        */
@@ -522,12 +499,43 @@ public final class GalleryBulletHitNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 gallery_id = 12;</code>
+       * <code>uint32 gallery_id = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearGalleryId() {
         
         galleryId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int hitCount_ ;
+      /**
+       * <code>uint32 hit_count = 7;</code>
+       * @return The hitCount.
+       */
+      @java.lang.Override
+      public int getHitCount() {
+        return hitCount_;
+      }
+      /**
+       * <code>uint32 hit_count = 7;</code>
+       * @param value The hitCount to set.
+       * @return This builder for chaining.
+       */
+      public Builder setHitCount(int value) {
+        
+        hitCount_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 hit_count = 7;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearHitCount() {
+        
+        hitCount_ = 0;
         onChanged();
         return this;
       }
@@ -599,8 +607,8 @@ public final class GalleryBulletHitNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\034GalleryBulletHitNotify.proto\"?\n\026Galler" +
-      "yBulletHitNotify\022\021\n\thit_count\030\016 \001(\r\022\022\n\ng" +
-      "allery_id\030\014 \001(\rB\033\n\031emu.grasscutter.net.p" +
+      "yBulletHitNotify\022\022\n\ngallery_id\030\003 \001(\r\022\021\n\t" +
+      "hit_count\030\007 \001(\rB\033\n\031emu.grasscutter.net.p" +
       "rotob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -612,7 +620,7 @@ public final class GalleryBulletHitNotifyOuterClass {
     internal_static_GalleryBulletHitNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GalleryBulletHitNotify_descriptor,
-        new java.lang.String[] { "HitCount", "GalleryId", });
+        new java.lang.String[] { "GalleryId", "HitCount", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

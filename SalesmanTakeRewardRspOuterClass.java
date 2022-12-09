@@ -19,34 +19,38 @@ public final class SalesmanTakeRewardRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 position = 13;</code>
-     * @return The position.
-     */
-    int getPosition();
-
-    /**
-     * <code>uint32 schedule_id = 7;</code>
-     * @return The scheduleId.
-     */
-    int getScheduleId();
-
-    /**
-     * <code>uint32 reward_id = 9;</code>
+     * <code>uint32 reward_id = 12;</code>
      * @return The rewardId.
      */
     int getRewardId();
 
     /**
-     * <code>int32 retcode = 11;</code>
+     * <code>int32 retcode = 4;</code>
      * @return The retcode.
      */
     int getRetcode();
+
+    /**
+     * <code>uint32 position = 15;</code>
+     * @return The position.
+     */
+    int getPosition();
+
+    /**
+     * <code>uint32 schedule_id = 2;</code>
+     * @return The scheduleId.
+     */
+    int getScheduleId();
   }
   /**
    * <pre>
-   * CmdId: 2110
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 2026;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code SalesmanTakeRewardRsp}
@@ -93,22 +97,22 @@ public final class SalesmanTakeRewardRspOuterClass {
             case 0:
               done = true;
               break;
-            case 56: {
+            case 16: {
 
               scheduleId_ = input.readUInt32();
               break;
             }
-            case 72: {
-
-              rewardId_ = input.readUInt32();
-              break;
-            }
-            case 88: {
+            case 32: {
 
               retcode_ = input.readInt32();
               break;
             }
-            case 104: {
+            case 96: {
+
+              rewardId_ = input.readUInt32();
+              break;
+            }
+            case 120: {
 
               position_ = input.readUInt32();
               break;
@@ -145,32 +149,10 @@ public final class SalesmanTakeRewardRspOuterClass {
               emu.grasscutter.net.proto.SalesmanTakeRewardRspOuterClass.SalesmanTakeRewardRsp.class, emu.grasscutter.net.proto.SalesmanTakeRewardRspOuterClass.SalesmanTakeRewardRsp.Builder.class);
     }
 
-    public static final int POSITION_FIELD_NUMBER = 13;
-    private int position_;
-    /**
-     * <code>uint32 position = 13;</code>
-     * @return The position.
-     */
-    @java.lang.Override
-    public int getPosition() {
-      return position_;
-    }
-
-    public static final int SCHEDULE_ID_FIELD_NUMBER = 7;
-    private int scheduleId_;
-    /**
-     * <code>uint32 schedule_id = 7;</code>
-     * @return The scheduleId.
-     */
-    @java.lang.Override
-    public int getScheduleId() {
-      return scheduleId_;
-    }
-
-    public static final int REWARD_ID_FIELD_NUMBER = 9;
+    public static final int REWARD_ID_FIELD_NUMBER = 12;
     private int rewardId_;
     /**
-     * <code>uint32 reward_id = 9;</code>
+     * <code>uint32 reward_id = 12;</code>
      * @return The rewardId.
      */
     @java.lang.Override
@@ -178,15 +160,37 @@ public final class SalesmanTakeRewardRspOuterClass {
       return rewardId_;
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 11;
+    public static final int RETCODE_FIELD_NUMBER = 4;
     private int retcode_;
     /**
-     * <code>int32 retcode = 11;</code>
+     * <code>int32 retcode = 4;</code>
      * @return The retcode.
      */
     @java.lang.Override
     public int getRetcode() {
       return retcode_;
+    }
+
+    public static final int POSITION_FIELD_NUMBER = 15;
+    private int position_;
+    /**
+     * <code>uint32 position = 15;</code>
+     * @return The position.
+     */
+    @java.lang.Override
+    public int getPosition() {
+      return position_;
+    }
+
+    public static final int SCHEDULE_ID_FIELD_NUMBER = 2;
+    private int scheduleId_;
+    /**
+     * <code>uint32 schedule_id = 2;</code>
+     * @return The scheduleId.
+     */
+    @java.lang.Override
+    public int getScheduleId() {
+      return scheduleId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -204,16 +208,16 @@ public final class SalesmanTakeRewardRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (scheduleId_ != 0) {
-        output.writeUInt32(7, scheduleId_);
-      }
-      if (rewardId_ != 0) {
-        output.writeUInt32(9, rewardId_);
+        output.writeUInt32(2, scheduleId_);
       }
       if (retcode_ != 0) {
-        output.writeInt32(11, retcode_);
+        output.writeInt32(4, retcode_);
+      }
+      if (rewardId_ != 0) {
+        output.writeUInt32(12, rewardId_);
       }
       if (position_ != 0) {
-        output.writeUInt32(13, position_);
+        output.writeUInt32(15, position_);
       }
       unknownFields.writeTo(output);
     }
@@ -226,19 +230,19 @@ public final class SalesmanTakeRewardRspOuterClass {
       size = 0;
       if (scheduleId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, scheduleId_);
-      }
-      if (rewardId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, rewardId_);
+          .computeUInt32Size(2, scheduleId_);
       }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(11, retcode_);
+          .computeInt32Size(4, retcode_);
+      }
+      if (rewardId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(12, rewardId_);
       }
       if (position_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, position_);
+          .computeUInt32Size(15, position_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -255,14 +259,14 @@ public final class SalesmanTakeRewardRspOuterClass {
       }
       emu.grasscutter.net.proto.SalesmanTakeRewardRspOuterClass.SalesmanTakeRewardRsp other = (emu.grasscutter.net.proto.SalesmanTakeRewardRspOuterClass.SalesmanTakeRewardRsp) obj;
 
-      if (getPosition()
-          != other.getPosition()) return false;
-      if (getScheduleId()
-          != other.getScheduleId()) return false;
       if (getRewardId()
           != other.getRewardId()) return false;
       if (getRetcode()
           != other.getRetcode()) return false;
+      if (getPosition()
+          != other.getPosition()) return false;
+      if (getScheduleId()
+          != other.getScheduleId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -274,14 +278,14 @@ public final class SalesmanTakeRewardRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + POSITION_FIELD_NUMBER;
-      hash = (53 * hash) + getPosition();
-      hash = (37 * hash) + SCHEDULE_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getScheduleId();
       hash = (37 * hash) + REWARD_ID_FIELD_NUMBER;
       hash = (53 * hash) + getRewardId();
       hash = (37 * hash) + RETCODE_FIELD_NUMBER;
       hash = (53 * hash) + getRetcode();
+      hash = (37 * hash) + POSITION_FIELD_NUMBER;
+      hash = (53 * hash) + getPosition();
+      hash = (37 * hash) + SCHEDULE_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getScheduleId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -379,9 +383,13 @@ public final class SalesmanTakeRewardRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 2110
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 2026;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code SalesmanTakeRewardRsp}
@@ -421,13 +429,13 @@ public final class SalesmanTakeRewardRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        position_ = 0;
-
-        scheduleId_ = 0;
-
         rewardId_ = 0;
 
         retcode_ = 0;
+
+        position_ = 0;
+
+        scheduleId_ = 0;
 
         return this;
       }
@@ -455,10 +463,10 @@ public final class SalesmanTakeRewardRspOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.SalesmanTakeRewardRspOuterClass.SalesmanTakeRewardRsp buildPartial() {
         emu.grasscutter.net.proto.SalesmanTakeRewardRspOuterClass.SalesmanTakeRewardRsp result = new emu.grasscutter.net.proto.SalesmanTakeRewardRspOuterClass.SalesmanTakeRewardRsp(this);
-        result.position_ = position_;
-        result.scheduleId_ = scheduleId_;
         result.rewardId_ = rewardId_;
         result.retcode_ = retcode_;
+        result.position_ = position_;
+        result.scheduleId_ = scheduleId_;
         onBuilt();
         return result;
       }
@@ -507,17 +515,17 @@ public final class SalesmanTakeRewardRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.SalesmanTakeRewardRspOuterClass.SalesmanTakeRewardRsp other) {
         if (other == emu.grasscutter.net.proto.SalesmanTakeRewardRspOuterClass.SalesmanTakeRewardRsp.getDefaultInstance()) return this;
-        if (other.getPosition() != 0) {
-          setPosition(other.getPosition());
-        }
-        if (other.getScheduleId() != 0) {
-          setScheduleId(other.getScheduleId());
-        }
         if (other.getRewardId() != 0) {
           setRewardId(other.getRewardId());
         }
         if (other.getRetcode() != 0) {
           setRetcode(other.getRetcode());
+        }
+        if (other.getPosition() != 0) {
+          setPosition(other.getPosition());
+        }
+        if (other.getScheduleId() != 0) {
+          setScheduleId(other.getScheduleId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -548,71 +556,9 @@ public final class SalesmanTakeRewardRspOuterClass {
         return this;
       }
 
-      private int position_ ;
-      /**
-       * <code>uint32 position = 13;</code>
-       * @return The position.
-       */
-      @java.lang.Override
-      public int getPosition() {
-        return position_;
-      }
-      /**
-       * <code>uint32 position = 13;</code>
-       * @param value The position to set.
-       * @return This builder for chaining.
-       */
-      public Builder setPosition(int value) {
-        
-        position_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 position = 13;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearPosition() {
-        
-        position_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int scheduleId_ ;
-      /**
-       * <code>uint32 schedule_id = 7;</code>
-       * @return The scheduleId.
-       */
-      @java.lang.Override
-      public int getScheduleId() {
-        return scheduleId_;
-      }
-      /**
-       * <code>uint32 schedule_id = 7;</code>
-       * @param value The scheduleId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setScheduleId(int value) {
-        
-        scheduleId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 schedule_id = 7;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearScheduleId() {
-        
-        scheduleId_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int rewardId_ ;
       /**
-       * <code>uint32 reward_id = 9;</code>
+       * <code>uint32 reward_id = 12;</code>
        * @return The rewardId.
        */
       @java.lang.Override
@@ -620,7 +566,7 @@ public final class SalesmanTakeRewardRspOuterClass {
         return rewardId_;
       }
       /**
-       * <code>uint32 reward_id = 9;</code>
+       * <code>uint32 reward_id = 12;</code>
        * @param value The rewardId to set.
        * @return This builder for chaining.
        */
@@ -631,7 +577,7 @@ public final class SalesmanTakeRewardRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 reward_id = 9;</code>
+       * <code>uint32 reward_id = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearRewardId() {
@@ -643,7 +589,7 @@ public final class SalesmanTakeRewardRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 11;</code>
+       * <code>int32 retcode = 4;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -651,7 +597,7 @@ public final class SalesmanTakeRewardRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 11;</code>
+       * <code>int32 retcode = 4;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -662,12 +608,74 @@ public final class SalesmanTakeRewardRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 11;</code>
+       * <code>int32 retcode = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
         
         retcode_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int position_ ;
+      /**
+       * <code>uint32 position = 15;</code>
+       * @return The position.
+       */
+      @java.lang.Override
+      public int getPosition() {
+        return position_;
+      }
+      /**
+       * <code>uint32 position = 15;</code>
+       * @param value The position to set.
+       * @return This builder for chaining.
+       */
+      public Builder setPosition(int value) {
+        
+        position_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 position = 15;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearPosition() {
+        
+        position_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int scheduleId_ ;
+      /**
+       * <code>uint32 schedule_id = 2;</code>
+       * @return The scheduleId.
+       */
+      @java.lang.Override
+      public int getScheduleId() {
+        return scheduleId_;
+      }
+      /**
+       * <code>uint32 schedule_id = 2;</code>
+       * @param value The scheduleId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setScheduleId(int value) {
+        
+        scheduleId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 schedule_id = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearScheduleId() {
+        
+        scheduleId_ = 0;
         onChanged();
         return this;
       }
@@ -739,9 +747,9 @@ public final class SalesmanTakeRewardRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\033SalesmanTakeRewardRsp.proto\"b\n\025Salesma" +
-      "nTakeRewardRsp\022\020\n\010position\030\r \001(\r\022\023\n\013sche" +
-      "dule_id\030\007 \001(\r\022\021\n\treward_id\030\t \001(\r\022\017\n\007retc" +
-      "ode\030\013 \001(\005B\033\n\031emu.grasscutter.net.protob\006" +
+      "nTakeRewardRsp\022\021\n\treward_id\030\014 \001(\r\022\017\n\007ret" +
+      "code\030\004 \001(\005\022\020\n\010position\030\017 \001(\r\022\023\n\013schedule" +
+      "_id\030\002 \001(\rB\033\n\031emu.grasscutter.net.protob\006" +
       "proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -753,7 +761,7 @@ public final class SalesmanTakeRewardRspOuterClass {
     internal_static_SalesmanTakeRewardRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SalesmanTakeRewardRsp_descriptor,
-        new java.lang.String[] { "Position", "ScheduleId", "RewardId", "Retcode", });
+        new java.lang.String[] { "RewardId", "Retcode", "Position", "ScheduleId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

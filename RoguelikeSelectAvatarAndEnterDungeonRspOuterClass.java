@@ -19,22 +19,26 @@ public final class RoguelikeSelectAvatarAndEnterDungeonRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 stage_id = 15;</code>
-     * @return The stageId.
-     */
-    int getStageId();
-
-    /**
-     * <code>int32 retcode = 1;</code>
+     * <code>int32 retcode = 15;</code>
      * @return The retcode.
      */
     int getRetcode();
+
+    /**
+     * <code>uint32 stage_id = 1;</code>
+     * @return The stageId.
+     */
+    int getStageId();
   }
   /**
    * <pre>
-   * CmdId: 8538
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 8910;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code RoguelikeSelectAvatarAndEnterDungeonRsp}
@@ -83,12 +87,12 @@ public final class RoguelikeSelectAvatarAndEnterDungeonRspOuterClass {
               break;
             case 8: {
 
-              retcode_ = input.readInt32();
+              stageId_ = input.readUInt32();
               break;
             }
             case 120: {
 
-              stageId_ = input.readUInt32();
+              retcode_ = input.readInt32();
               break;
             }
             default: {
@@ -123,26 +127,26 @@ public final class RoguelikeSelectAvatarAndEnterDungeonRspOuterClass {
               emu.grasscutter.net.proto.RoguelikeSelectAvatarAndEnterDungeonRspOuterClass.RoguelikeSelectAvatarAndEnterDungeonRsp.class, emu.grasscutter.net.proto.RoguelikeSelectAvatarAndEnterDungeonRspOuterClass.RoguelikeSelectAvatarAndEnterDungeonRsp.Builder.class);
     }
 
-    public static final int STAGE_ID_FIELD_NUMBER = 15;
-    private int stageId_;
-    /**
-     * <code>uint32 stage_id = 15;</code>
-     * @return The stageId.
-     */
-    @java.lang.Override
-    public int getStageId() {
-      return stageId_;
-    }
-
-    public static final int RETCODE_FIELD_NUMBER = 1;
+    public static final int RETCODE_FIELD_NUMBER = 15;
     private int retcode_;
     /**
-     * <code>int32 retcode = 1;</code>
+     * <code>int32 retcode = 15;</code>
      * @return The retcode.
      */
     @java.lang.Override
     public int getRetcode() {
       return retcode_;
+    }
+
+    public static final int STAGE_ID_FIELD_NUMBER = 1;
+    private int stageId_;
+    /**
+     * <code>uint32 stage_id = 1;</code>
+     * @return The stageId.
+     */
+    @java.lang.Override
+    public int getStageId() {
+      return stageId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -159,11 +163,11 @@ public final class RoguelikeSelectAvatarAndEnterDungeonRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (retcode_ != 0) {
-        output.writeInt32(1, retcode_);
-      }
       if (stageId_ != 0) {
-        output.writeUInt32(15, stageId_);
+        output.writeUInt32(1, stageId_);
+      }
+      if (retcode_ != 0) {
+        output.writeInt32(15, retcode_);
       }
       unknownFields.writeTo(output);
     }
@@ -174,13 +178,13 @@ public final class RoguelikeSelectAvatarAndEnterDungeonRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (retcode_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(1, retcode_);
-      }
       if (stageId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, stageId_);
+          .computeUInt32Size(1, stageId_);
+      }
+      if (retcode_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(15, retcode_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -197,10 +201,10 @@ public final class RoguelikeSelectAvatarAndEnterDungeonRspOuterClass {
       }
       emu.grasscutter.net.proto.RoguelikeSelectAvatarAndEnterDungeonRspOuterClass.RoguelikeSelectAvatarAndEnterDungeonRsp other = (emu.grasscutter.net.proto.RoguelikeSelectAvatarAndEnterDungeonRspOuterClass.RoguelikeSelectAvatarAndEnterDungeonRsp) obj;
 
-      if (getStageId()
-          != other.getStageId()) return false;
       if (getRetcode()
           != other.getRetcode()) return false;
+      if (getStageId()
+          != other.getStageId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -212,10 +216,10 @@ public final class RoguelikeSelectAvatarAndEnterDungeonRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + STAGE_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getStageId();
       hash = (37 * hash) + RETCODE_FIELD_NUMBER;
       hash = (53 * hash) + getRetcode();
+      hash = (37 * hash) + STAGE_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getStageId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -313,9 +317,13 @@ public final class RoguelikeSelectAvatarAndEnterDungeonRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 8538
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 8910;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code RoguelikeSelectAvatarAndEnterDungeonRsp}
@@ -355,9 +363,9 @@ public final class RoguelikeSelectAvatarAndEnterDungeonRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        stageId_ = 0;
-
         retcode_ = 0;
+
+        stageId_ = 0;
 
         return this;
       }
@@ -385,8 +393,8 @@ public final class RoguelikeSelectAvatarAndEnterDungeonRspOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.RoguelikeSelectAvatarAndEnterDungeonRspOuterClass.RoguelikeSelectAvatarAndEnterDungeonRsp buildPartial() {
         emu.grasscutter.net.proto.RoguelikeSelectAvatarAndEnterDungeonRspOuterClass.RoguelikeSelectAvatarAndEnterDungeonRsp result = new emu.grasscutter.net.proto.RoguelikeSelectAvatarAndEnterDungeonRspOuterClass.RoguelikeSelectAvatarAndEnterDungeonRsp(this);
-        result.stageId_ = stageId_;
         result.retcode_ = retcode_;
+        result.stageId_ = stageId_;
         onBuilt();
         return result;
       }
@@ -435,11 +443,11 @@ public final class RoguelikeSelectAvatarAndEnterDungeonRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.RoguelikeSelectAvatarAndEnterDungeonRspOuterClass.RoguelikeSelectAvatarAndEnterDungeonRsp other) {
         if (other == emu.grasscutter.net.proto.RoguelikeSelectAvatarAndEnterDungeonRspOuterClass.RoguelikeSelectAvatarAndEnterDungeonRsp.getDefaultInstance()) return this;
-        if (other.getStageId() != 0) {
-          setStageId(other.getStageId());
-        }
         if (other.getRetcode() != 0) {
           setRetcode(other.getRetcode());
+        }
+        if (other.getStageId() != 0) {
+          setStageId(other.getStageId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -470,40 +478,9 @@ public final class RoguelikeSelectAvatarAndEnterDungeonRspOuterClass {
         return this;
       }
 
-      private int stageId_ ;
-      /**
-       * <code>uint32 stage_id = 15;</code>
-       * @return The stageId.
-       */
-      @java.lang.Override
-      public int getStageId() {
-        return stageId_;
-      }
-      /**
-       * <code>uint32 stage_id = 15;</code>
-       * @param value The stageId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setStageId(int value) {
-        
-        stageId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 stage_id = 15;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearStageId() {
-        
-        stageId_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 1;</code>
+       * <code>int32 retcode = 15;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -511,7 +488,7 @@ public final class RoguelikeSelectAvatarAndEnterDungeonRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 1;</code>
+       * <code>int32 retcode = 15;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -522,12 +499,43 @@ public final class RoguelikeSelectAvatarAndEnterDungeonRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 1;</code>
+       * <code>int32 retcode = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
         
         retcode_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int stageId_ ;
+      /**
+       * <code>uint32 stage_id = 1;</code>
+       * @return The stageId.
+       */
+      @java.lang.Override
+      public int getStageId() {
+        return stageId_;
+      }
+      /**
+       * <code>uint32 stage_id = 1;</code>
+       * @param value The stageId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setStageId(int value) {
+        
+        stageId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 stage_id = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearStageId() {
+        
+        stageId_ = 0;
         onChanged();
         return this;
       }
@@ -600,8 +608,8 @@ public final class RoguelikeSelectAvatarAndEnterDungeonRspOuterClass {
     java.lang.String[] descriptorData = {
       "\n-RoguelikeSelectAvatarAndEnterDungeonRs" +
       "p.proto\"L\n\'RoguelikeSelectAvatarAndEnter" +
-      "DungeonRsp\022\020\n\010stage_id\030\017 \001(\r\022\017\n\007retcode\030" +
-      "\001 \001(\005B\033\n\031emu.grasscutter.net.protob\006prot" +
+      "DungeonRsp\022\017\n\007retcode\030\017 \001(\005\022\020\n\010stage_id\030" +
+      "\001 \001(\rB\033\n\031emu.grasscutter.net.protob\006prot" +
       "o3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -613,7 +621,7 @@ public final class RoguelikeSelectAvatarAndEnterDungeonRspOuterClass {
     internal_static_RoguelikeSelectAvatarAndEnterDungeonRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_RoguelikeSelectAvatarAndEnterDungeonRsp_descriptor,
-        new java.lang.String[] { "StageId", "Retcode", });
+        new java.lang.String[] { "Retcode", "StageId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

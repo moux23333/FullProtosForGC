@@ -19,45 +19,49 @@ public final class FoundationRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.FoundationOpType op_type = 13;</code>
-     * @return The enum numeric value on the wire for opType.
+     * <code>int32 retcode = 15;</code>
+     * @return The retcode.
      */
-    int getOpTypeValue();
-    /**
-     * <code>.FoundationOpType op_type = 13;</code>
-     * @return The opType.
-     */
-    emu.grasscutter.net.proto.FoundationOpTypeOuterClass.FoundationOpType getOpType();
+    int getRetcode();
 
     /**
-     * <code>uint32 gadget_entity_id = 10;</code>
-     * @return The gadgetEntityId.
-     */
-    int getGadgetEntityId();
-
-    /**
-     * <code>uint32 building_id = 11;</code>
+     * <code>uint32 building_id = 10;</code>
      * @return The buildingId.
      */
     int getBuildingId();
 
     /**
-     * <code>uint32 point_config_id = 12;</code>
+     * <code>.FoundationOpType op_type = 14;</code>
+     * @return The enum numeric value on the wire for opType.
+     */
+    int getOpTypeValue();
+    /**
+     * <code>.FoundationOpType op_type = 14;</code>
+     * @return The opType.
+     */
+    emu.grasscutter.net.proto.FoundationOpTypeOuterClass.FoundationOpType getOpType();
+
+    /**
+     * <code>uint32 gadget_entity_id = 2;</code>
+     * @return The gadgetEntityId.
+     */
+    int getGadgetEntityId();
+
+    /**
+     * <code>uint32 point_config_id = 6;</code>
      * @return The pointConfigId.
      */
     int getPointConfigId();
-
-    /**
-     * <code>int32 retcode = 7;</code>
-     * @return The retcode.
-     */
-    int getRetcode();
   }
   /**
    * <pre>
-   * CmdId: 882
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 890;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code FoundationRsp}
@@ -105,30 +109,30 @@ public final class FoundationRspOuterClass {
             case 0:
               done = true;
               break;
-            case 56: {
-
-              retcode_ = input.readInt32();
-              break;
-            }
-            case 80: {
+            case 16: {
 
               gadgetEntityId_ = input.readUInt32();
               break;
             }
-            case 88: {
-
-              buildingId_ = input.readUInt32();
-              break;
-            }
-            case 96: {
+            case 48: {
 
               pointConfigId_ = input.readUInt32();
               break;
             }
-            case 104: {
+            case 80: {
+
+              buildingId_ = input.readUInt32();
+              break;
+            }
+            case 112: {
               int rawValue = input.readEnum();
 
               opType_ = rawValue;
+              break;
+            }
+            case 120: {
+
+              retcode_ = input.readInt32();
               break;
             }
             default: {
@@ -163,17 +167,39 @@ public final class FoundationRspOuterClass {
               emu.grasscutter.net.proto.FoundationRspOuterClass.FoundationRsp.class, emu.grasscutter.net.proto.FoundationRspOuterClass.FoundationRsp.Builder.class);
     }
 
-    public static final int OP_TYPE_FIELD_NUMBER = 13;
+    public static final int RETCODE_FIELD_NUMBER = 15;
+    private int retcode_;
+    /**
+     * <code>int32 retcode = 15;</code>
+     * @return The retcode.
+     */
+    @java.lang.Override
+    public int getRetcode() {
+      return retcode_;
+    }
+
+    public static final int BUILDING_ID_FIELD_NUMBER = 10;
+    private int buildingId_;
+    /**
+     * <code>uint32 building_id = 10;</code>
+     * @return The buildingId.
+     */
+    @java.lang.Override
+    public int getBuildingId() {
+      return buildingId_;
+    }
+
+    public static final int OP_TYPE_FIELD_NUMBER = 14;
     private int opType_;
     /**
-     * <code>.FoundationOpType op_type = 13;</code>
+     * <code>.FoundationOpType op_type = 14;</code>
      * @return The enum numeric value on the wire for opType.
      */
     @java.lang.Override public int getOpTypeValue() {
       return opType_;
     }
     /**
-     * <code>.FoundationOpType op_type = 13;</code>
+     * <code>.FoundationOpType op_type = 14;</code>
      * @return The opType.
      */
     @java.lang.Override public emu.grasscutter.net.proto.FoundationOpTypeOuterClass.FoundationOpType getOpType() {
@@ -182,10 +208,10 @@ public final class FoundationRspOuterClass {
       return result == null ? emu.grasscutter.net.proto.FoundationOpTypeOuterClass.FoundationOpType.UNRECOGNIZED : result;
     }
 
-    public static final int GADGET_ENTITY_ID_FIELD_NUMBER = 10;
+    public static final int GADGET_ENTITY_ID_FIELD_NUMBER = 2;
     private int gadgetEntityId_;
     /**
-     * <code>uint32 gadget_entity_id = 10;</code>
+     * <code>uint32 gadget_entity_id = 2;</code>
      * @return The gadgetEntityId.
      */
     @java.lang.Override
@@ -193,37 +219,15 @@ public final class FoundationRspOuterClass {
       return gadgetEntityId_;
     }
 
-    public static final int BUILDING_ID_FIELD_NUMBER = 11;
-    private int buildingId_;
-    /**
-     * <code>uint32 building_id = 11;</code>
-     * @return The buildingId.
-     */
-    @java.lang.Override
-    public int getBuildingId() {
-      return buildingId_;
-    }
-
-    public static final int POINT_CONFIG_ID_FIELD_NUMBER = 12;
+    public static final int POINT_CONFIG_ID_FIELD_NUMBER = 6;
     private int pointConfigId_;
     /**
-     * <code>uint32 point_config_id = 12;</code>
+     * <code>uint32 point_config_id = 6;</code>
      * @return The pointConfigId.
      */
     @java.lang.Override
     public int getPointConfigId() {
       return pointConfigId_;
-    }
-
-    public static final int RETCODE_FIELD_NUMBER = 7;
-    private int retcode_;
-    /**
-     * <code>int32 retcode = 7;</code>
-     * @return The retcode.
-     */
-    @java.lang.Override
-    public int getRetcode() {
-      return retcode_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -240,20 +244,20 @@ public final class FoundationRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (retcode_ != 0) {
-        output.writeInt32(7, retcode_);
-      }
       if (gadgetEntityId_ != 0) {
-        output.writeUInt32(10, gadgetEntityId_);
-      }
-      if (buildingId_ != 0) {
-        output.writeUInt32(11, buildingId_);
+        output.writeUInt32(2, gadgetEntityId_);
       }
       if (pointConfigId_ != 0) {
-        output.writeUInt32(12, pointConfigId_);
+        output.writeUInt32(6, pointConfigId_);
+      }
+      if (buildingId_ != 0) {
+        output.writeUInt32(10, buildingId_);
       }
       if (opType_ != emu.grasscutter.net.proto.FoundationOpTypeOuterClass.FoundationOpType.FOUNDATION_OP_TYPE_NONE.getNumber()) {
-        output.writeEnum(13, opType_);
+        output.writeEnum(14, opType_);
+      }
+      if (retcode_ != 0) {
+        output.writeInt32(15, retcode_);
       }
       unknownFields.writeTo(output);
     }
@@ -264,25 +268,25 @@ public final class FoundationRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (retcode_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(7, retcode_);
-      }
       if (gadgetEntityId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, gadgetEntityId_);
-      }
-      if (buildingId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, buildingId_);
+          .computeUInt32Size(2, gadgetEntityId_);
       }
       if (pointConfigId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, pointConfigId_);
+          .computeUInt32Size(6, pointConfigId_);
+      }
+      if (buildingId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(10, buildingId_);
       }
       if (opType_ != emu.grasscutter.net.proto.FoundationOpTypeOuterClass.FoundationOpType.FOUNDATION_OP_TYPE_NONE.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(13, opType_);
+          .computeEnumSize(14, opType_);
+      }
+      if (retcode_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(15, retcode_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -299,15 +303,15 @@ public final class FoundationRspOuterClass {
       }
       emu.grasscutter.net.proto.FoundationRspOuterClass.FoundationRsp other = (emu.grasscutter.net.proto.FoundationRspOuterClass.FoundationRsp) obj;
 
+      if (getRetcode()
+          != other.getRetcode()) return false;
+      if (getBuildingId()
+          != other.getBuildingId()) return false;
       if (opType_ != other.opType_) return false;
       if (getGadgetEntityId()
           != other.getGadgetEntityId()) return false;
-      if (getBuildingId()
-          != other.getBuildingId()) return false;
       if (getPointConfigId()
           != other.getPointConfigId()) return false;
-      if (getRetcode()
-          != other.getRetcode()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -319,16 +323,16 @@ public final class FoundationRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
+      hash = (53 * hash) + getRetcode();
+      hash = (37 * hash) + BUILDING_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getBuildingId();
       hash = (37 * hash) + OP_TYPE_FIELD_NUMBER;
       hash = (53 * hash) + opType_;
       hash = (37 * hash) + GADGET_ENTITY_ID_FIELD_NUMBER;
       hash = (53 * hash) + getGadgetEntityId();
-      hash = (37 * hash) + BUILDING_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getBuildingId();
       hash = (37 * hash) + POINT_CONFIG_ID_FIELD_NUMBER;
       hash = (53 * hash) + getPointConfigId();
-      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
-      hash = (53 * hash) + getRetcode();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -426,9 +430,13 @@ public final class FoundationRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 882
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 890;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code FoundationRsp}
@@ -468,15 +476,15 @@ public final class FoundationRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        retcode_ = 0;
+
+        buildingId_ = 0;
+
         opType_ = 0;
 
         gadgetEntityId_ = 0;
 
-        buildingId_ = 0;
-
         pointConfigId_ = 0;
-
-        retcode_ = 0;
 
         return this;
       }
@@ -504,11 +512,11 @@ public final class FoundationRspOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.FoundationRspOuterClass.FoundationRsp buildPartial() {
         emu.grasscutter.net.proto.FoundationRspOuterClass.FoundationRsp result = new emu.grasscutter.net.proto.FoundationRspOuterClass.FoundationRsp(this);
+        result.retcode_ = retcode_;
+        result.buildingId_ = buildingId_;
         result.opType_ = opType_;
         result.gadgetEntityId_ = gadgetEntityId_;
-        result.buildingId_ = buildingId_;
         result.pointConfigId_ = pointConfigId_;
-        result.retcode_ = retcode_;
         onBuilt();
         return result;
       }
@@ -557,20 +565,20 @@ public final class FoundationRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.FoundationRspOuterClass.FoundationRsp other) {
         if (other == emu.grasscutter.net.proto.FoundationRspOuterClass.FoundationRsp.getDefaultInstance()) return this;
+        if (other.getRetcode() != 0) {
+          setRetcode(other.getRetcode());
+        }
+        if (other.getBuildingId() != 0) {
+          setBuildingId(other.getBuildingId());
+        }
         if (other.opType_ != 0) {
           setOpTypeValue(other.getOpTypeValue());
         }
         if (other.getGadgetEntityId() != 0) {
           setGadgetEntityId(other.getGadgetEntityId());
         }
-        if (other.getBuildingId() != 0) {
-          setBuildingId(other.getBuildingId());
-        }
         if (other.getPointConfigId() != 0) {
           setPointConfigId(other.getPointConfigId());
-        }
-        if (other.getRetcode() != 0) {
-          setRetcode(other.getRetcode());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -601,16 +609,78 @@ public final class FoundationRspOuterClass {
         return this;
       }
 
+      private int retcode_ ;
+      /**
+       * <code>int32 retcode = 15;</code>
+       * @return The retcode.
+       */
+      @java.lang.Override
+      public int getRetcode() {
+        return retcode_;
+      }
+      /**
+       * <code>int32 retcode = 15;</code>
+       * @param value The retcode to set.
+       * @return This builder for chaining.
+       */
+      public Builder setRetcode(int value) {
+        
+        retcode_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 retcode = 15;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearRetcode() {
+        
+        retcode_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int buildingId_ ;
+      /**
+       * <code>uint32 building_id = 10;</code>
+       * @return The buildingId.
+       */
+      @java.lang.Override
+      public int getBuildingId() {
+        return buildingId_;
+      }
+      /**
+       * <code>uint32 building_id = 10;</code>
+       * @param value The buildingId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setBuildingId(int value) {
+        
+        buildingId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 building_id = 10;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearBuildingId() {
+        
+        buildingId_ = 0;
+        onChanged();
+        return this;
+      }
+
       private int opType_ = 0;
       /**
-       * <code>.FoundationOpType op_type = 13;</code>
+       * <code>.FoundationOpType op_type = 14;</code>
        * @return The enum numeric value on the wire for opType.
        */
       @java.lang.Override public int getOpTypeValue() {
         return opType_;
       }
       /**
-       * <code>.FoundationOpType op_type = 13;</code>
+       * <code>.FoundationOpType op_type = 14;</code>
        * @param value The enum numeric value on the wire for opType to set.
        * @return This builder for chaining.
        */
@@ -621,7 +691,7 @@ public final class FoundationRspOuterClass {
         return this;
       }
       /**
-       * <code>.FoundationOpType op_type = 13;</code>
+       * <code>.FoundationOpType op_type = 14;</code>
        * @return The opType.
        */
       @java.lang.Override
@@ -631,7 +701,7 @@ public final class FoundationRspOuterClass {
         return result == null ? emu.grasscutter.net.proto.FoundationOpTypeOuterClass.FoundationOpType.UNRECOGNIZED : result;
       }
       /**
-       * <code>.FoundationOpType op_type = 13;</code>
+       * <code>.FoundationOpType op_type = 14;</code>
        * @param value The opType to set.
        * @return This builder for chaining.
        */
@@ -645,7 +715,7 @@ public final class FoundationRspOuterClass {
         return this;
       }
       /**
-       * <code>.FoundationOpType op_type = 13;</code>
+       * <code>.FoundationOpType op_type = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearOpType() {
@@ -657,7 +727,7 @@ public final class FoundationRspOuterClass {
 
       private int gadgetEntityId_ ;
       /**
-       * <code>uint32 gadget_entity_id = 10;</code>
+       * <code>uint32 gadget_entity_id = 2;</code>
        * @return The gadgetEntityId.
        */
       @java.lang.Override
@@ -665,7 +735,7 @@ public final class FoundationRspOuterClass {
         return gadgetEntityId_;
       }
       /**
-       * <code>uint32 gadget_entity_id = 10;</code>
+       * <code>uint32 gadget_entity_id = 2;</code>
        * @param value The gadgetEntityId to set.
        * @return This builder for chaining.
        */
@@ -676,7 +746,7 @@ public final class FoundationRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 gadget_entity_id = 10;</code>
+       * <code>uint32 gadget_entity_id = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearGadgetEntityId() {
@@ -686,40 +756,9 @@ public final class FoundationRspOuterClass {
         return this;
       }
 
-      private int buildingId_ ;
-      /**
-       * <code>uint32 building_id = 11;</code>
-       * @return The buildingId.
-       */
-      @java.lang.Override
-      public int getBuildingId() {
-        return buildingId_;
-      }
-      /**
-       * <code>uint32 building_id = 11;</code>
-       * @param value The buildingId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setBuildingId(int value) {
-        
-        buildingId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 building_id = 11;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearBuildingId() {
-        
-        buildingId_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int pointConfigId_ ;
       /**
-       * <code>uint32 point_config_id = 12;</code>
+       * <code>uint32 point_config_id = 6;</code>
        * @return The pointConfigId.
        */
       @java.lang.Override
@@ -727,7 +766,7 @@ public final class FoundationRspOuterClass {
         return pointConfigId_;
       }
       /**
-       * <code>uint32 point_config_id = 12;</code>
+       * <code>uint32 point_config_id = 6;</code>
        * @param value The pointConfigId to set.
        * @return This builder for chaining.
        */
@@ -738,43 +777,12 @@ public final class FoundationRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 point_config_id = 12;</code>
+       * <code>uint32 point_config_id = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearPointConfigId() {
         
         pointConfigId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int retcode_ ;
-      /**
-       * <code>int32 retcode = 7;</code>
-       * @return The retcode.
-       */
-      @java.lang.Override
-      public int getRetcode() {
-        return retcode_;
-      }
-      /**
-       * <code>int32 retcode = 7;</code>
-       * @param value The retcode to set.
-       * @return This builder for chaining.
-       */
-      public Builder setRetcode(int value) {
-        
-        retcode_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>int32 retcode = 7;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearRetcode() {
-        
-        retcode_ = 0;
         onChanged();
         return this;
       }
@@ -846,10 +854,10 @@ public final class FoundationRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\023FoundationRsp.proto\032\026FoundationOpType." +
-      "proto\"\214\001\n\rFoundationRsp\022\"\n\007op_type\030\r \001(\016" +
-      "2\021.FoundationOpType\022\030\n\020gadget_entity_id\030" +
-      "\n \001(\r\022\023\n\013building_id\030\013 \001(\r\022\027\n\017point_conf" +
-      "ig_id\030\014 \001(\r\022\017\n\007retcode\030\007 \001(\005B\033\n\031emu.gras" +
+      "proto\"\214\001\n\rFoundationRsp\022\017\n\007retcode\030\017 \001(\005" +
+      "\022\023\n\013building_id\030\n \001(\r\022\"\n\007op_type\030\016 \001(\0162\021" +
+      ".FoundationOpType\022\030\n\020gadget_entity_id\030\002 " +
+      "\001(\r\022\027\n\017point_config_id\030\006 \001(\rB\033\n\031emu.gras" +
       "scutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -862,7 +870,7 @@ public final class FoundationRspOuterClass {
     internal_static_FoundationRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_FoundationRsp_descriptor,
-        new java.lang.String[] { "OpType", "GadgetEntityId", "BuildingId", "PointConfigId", "Retcode", });
+        new java.lang.String[] { "Retcode", "BuildingId", "OpType", "GadgetEntityId", "PointConfigId", });
     emu.grasscutter.net.proto.FoundationOpTypeOuterClass.getDescriptor();
   }
 

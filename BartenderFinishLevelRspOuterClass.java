@@ -19,22 +19,26 @@ public final class BartenderFinishLevelRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 6;</code>
-     * @return The retcode.
-     */
-    int getRetcode();
-
-    /**
      * <code>uint32 level_id = 1;</code>
      * @return The levelId.
      */
     int getLevelId();
+
+    /**
+     * <code>int32 retcode = 2;</code>
+     * @return The retcode.
+     */
+    int getRetcode();
   }
   /**
    * <pre>
-   * CmdId: 8093
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 8250;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code BartenderFinishLevelRsp}
@@ -86,7 +90,7 @@ public final class BartenderFinishLevelRspOuterClass {
               levelId_ = input.readUInt32();
               break;
             }
-            case 48: {
+            case 16: {
 
               retcode_ = input.readInt32();
               break;
@@ -123,17 +127,6 @@ public final class BartenderFinishLevelRspOuterClass {
               emu.grasscutter.net.proto.BartenderFinishLevelRspOuterClass.BartenderFinishLevelRsp.class, emu.grasscutter.net.proto.BartenderFinishLevelRspOuterClass.BartenderFinishLevelRsp.Builder.class);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 6;
-    private int retcode_;
-    /**
-     * <code>int32 retcode = 6;</code>
-     * @return The retcode.
-     */
-    @java.lang.Override
-    public int getRetcode() {
-      return retcode_;
-    }
-
     public static final int LEVEL_ID_FIELD_NUMBER = 1;
     private int levelId_;
     /**
@@ -143,6 +136,17 @@ public final class BartenderFinishLevelRspOuterClass {
     @java.lang.Override
     public int getLevelId() {
       return levelId_;
+    }
+
+    public static final int RETCODE_FIELD_NUMBER = 2;
+    private int retcode_;
+    /**
+     * <code>int32 retcode = 2;</code>
+     * @return The retcode.
+     */
+    @java.lang.Override
+    public int getRetcode() {
+      return retcode_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -163,7 +167,7 @@ public final class BartenderFinishLevelRspOuterClass {
         output.writeUInt32(1, levelId_);
       }
       if (retcode_ != 0) {
-        output.writeInt32(6, retcode_);
+        output.writeInt32(2, retcode_);
       }
       unknownFields.writeTo(output);
     }
@@ -180,7 +184,7 @@ public final class BartenderFinishLevelRspOuterClass {
       }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(6, retcode_);
+          .computeInt32Size(2, retcode_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -197,10 +201,10 @@ public final class BartenderFinishLevelRspOuterClass {
       }
       emu.grasscutter.net.proto.BartenderFinishLevelRspOuterClass.BartenderFinishLevelRsp other = (emu.grasscutter.net.proto.BartenderFinishLevelRspOuterClass.BartenderFinishLevelRsp) obj;
 
-      if (getRetcode()
-          != other.getRetcode()) return false;
       if (getLevelId()
           != other.getLevelId()) return false;
+      if (getRetcode()
+          != other.getRetcode()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -212,10 +216,10 @@ public final class BartenderFinishLevelRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
-      hash = (53 * hash) + getRetcode();
       hash = (37 * hash) + LEVEL_ID_FIELD_NUMBER;
       hash = (53 * hash) + getLevelId();
+      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
+      hash = (53 * hash) + getRetcode();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -313,9 +317,13 @@ public final class BartenderFinishLevelRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 8093
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 8250;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code BartenderFinishLevelRsp}
@@ -355,9 +363,9 @@ public final class BartenderFinishLevelRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        retcode_ = 0;
-
         levelId_ = 0;
+
+        retcode_ = 0;
 
         return this;
       }
@@ -385,8 +393,8 @@ public final class BartenderFinishLevelRspOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.BartenderFinishLevelRspOuterClass.BartenderFinishLevelRsp buildPartial() {
         emu.grasscutter.net.proto.BartenderFinishLevelRspOuterClass.BartenderFinishLevelRsp result = new emu.grasscutter.net.proto.BartenderFinishLevelRspOuterClass.BartenderFinishLevelRsp(this);
-        result.retcode_ = retcode_;
         result.levelId_ = levelId_;
+        result.retcode_ = retcode_;
         onBuilt();
         return result;
       }
@@ -435,11 +443,11 @@ public final class BartenderFinishLevelRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.BartenderFinishLevelRspOuterClass.BartenderFinishLevelRsp other) {
         if (other == emu.grasscutter.net.proto.BartenderFinishLevelRspOuterClass.BartenderFinishLevelRsp.getDefaultInstance()) return this;
-        if (other.getRetcode() != 0) {
-          setRetcode(other.getRetcode());
-        }
         if (other.getLevelId() != 0) {
           setLevelId(other.getLevelId());
+        }
+        if (other.getRetcode() != 0) {
+          setRetcode(other.getRetcode());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -470,37 +478,6 @@ public final class BartenderFinishLevelRspOuterClass {
         return this;
       }
 
-      private int retcode_ ;
-      /**
-       * <code>int32 retcode = 6;</code>
-       * @return The retcode.
-       */
-      @java.lang.Override
-      public int getRetcode() {
-        return retcode_;
-      }
-      /**
-       * <code>int32 retcode = 6;</code>
-       * @param value The retcode to set.
-       * @return This builder for chaining.
-       */
-      public Builder setRetcode(int value) {
-        
-        retcode_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>int32 retcode = 6;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearRetcode() {
-        
-        retcode_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int levelId_ ;
       /**
        * <code>uint32 level_id = 1;</code>
@@ -528,6 +505,37 @@ public final class BartenderFinishLevelRspOuterClass {
       public Builder clearLevelId() {
         
         levelId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int retcode_ ;
+      /**
+       * <code>int32 retcode = 2;</code>
+       * @return The retcode.
+       */
+      @java.lang.Override
+      public int getRetcode() {
+        return retcode_;
+      }
+      /**
+       * <code>int32 retcode = 2;</code>
+       * @param value The retcode to set.
+       * @return This builder for chaining.
+       */
+      public Builder setRetcode(int value) {
+        
+        retcode_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 retcode = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearRetcode() {
+        
+        retcode_ = 0;
         onChanged();
         return this;
       }
@@ -599,8 +607,8 @@ public final class BartenderFinishLevelRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\035BartenderFinishLevelRsp.proto\"<\n\027Barte" +
-      "nderFinishLevelRsp\022\017\n\007retcode\030\006 \001(\005\022\020\n\010l" +
-      "evel_id\030\001 \001(\rB\033\n\031emu.grasscutter.net.pro" +
+      "nderFinishLevelRsp\022\020\n\010level_id\030\001 \001(\r\022\017\n\007" +
+      "retcode\030\002 \001(\005B\033\n\031emu.grasscutter.net.pro" +
       "tob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -612,7 +620,7 @@ public final class BartenderFinishLevelRspOuterClass {
     internal_static_BartenderFinishLevelRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_BartenderFinishLevelRsp_descriptor,
-        new java.lang.String[] { "Retcode", "LevelId", });
+        new java.lang.String[] { "LevelId", "Retcode", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

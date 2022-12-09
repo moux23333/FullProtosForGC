@@ -19,34 +19,38 @@ public final class EnterCustomDungeonReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint64 dungeon_guid = 11;</code>
-     * @return The dungeonGuid.
-     */
-    long getDungeonGuid();
-
-    /**
-     * <code>uint32 dungeon_id = 12;</code>
+     * <code>uint32 dungeon_id = 7;</code>
      * @return The dungeonId.
      */
     int getDungeonId();
 
     /**
-     * <code>.EnterCustomDungeonType enter_type = 10;</code>
+     * <code>.EnterCustomDungeonType enter_type = 8;</code>
      * @return The enum numeric value on the wire for enterType.
      */
     int getEnterTypeValue();
     /**
-     * <code>.EnterCustomDungeonType enter_type = 10;</code>
+     * <code>.EnterCustomDungeonType enter_type = 8;</code>
      * @return The enterType.
      */
     emu.grasscutter.net.proto.EnterCustomDungeonTypeOuterClass.EnterCustomDungeonType getEnterType();
+
+    /**
+     * <code>uint64 dungeon_guid = 4;</code>
+     * @return The dungeonGuid.
+     */
+    long getDungeonGuid();
   }
   /**
    * <pre>
-   * CmdId: 6226
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 6242;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code EnterCustomDungeonReq}
@@ -94,20 +98,20 @@ public final class EnterCustomDungeonReqOuterClass {
             case 0:
               done = true;
               break;
-            case 80: {
-              int rawValue = input.readEnum();
-
-              enterType_ = rawValue;
-              break;
-            }
-            case 88: {
+            case 32: {
 
               dungeonGuid_ = input.readUInt64();
               break;
             }
-            case 96: {
+            case 56: {
 
               dungeonId_ = input.readUInt32();
+              break;
+            }
+            case 64: {
+              int rawValue = input.readEnum();
+
+              enterType_ = rawValue;
               break;
             }
             default: {
@@ -142,21 +146,10 @@ public final class EnterCustomDungeonReqOuterClass {
               emu.grasscutter.net.proto.EnterCustomDungeonReqOuterClass.EnterCustomDungeonReq.class, emu.grasscutter.net.proto.EnterCustomDungeonReqOuterClass.EnterCustomDungeonReq.Builder.class);
     }
 
-    public static final int DUNGEON_GUID_FIELD_NUMBER = 11;
-    private long dungeonGuid_;
-    /**
-     * <code>uint64 dungeon_guid = 11;</code>
-     * @return The dungeonGuid.
-     */
-    @java.lang.Override
-    public long getDungeonGuid() {
-      return dungeonGuid_;
-    }
-
-    public static final int DUNGEON_ID_FIELD_NUMBER = 12;
+    public static final int DUNGEON_ID_FIELD_NUMBER = 7;
     private int dungeonId_;
     /**
-     * <code>uint32 dungeon_id = 12;</code>
+     * <code>uint32 dungeon_id = 7;</code>
      * @return The dungeonId.
      */
     @java.lang.Override
@@ -164,23 +157,34 @@ public final class EnterCustomDungeonReqOuterClass {
       return dungeonId_;
     }
 
-    public static final int ENTER_TYPE_FIELD_NUMBER = 10;
+    public static final int ENTER_TYPE_FIELD_NUMBER = 8;
     private int enterType_;
     /**
-     * <code>.EnterCustomDungeonType enter_type = 10;</code>
+     * <code>.EnterCustomDungeonType enter_type = 8;</code>
      * @return The enum numeric value on the wire for enterType.
      */
     @java.lang.Override public int getEnterTypeValue() {
       return enterType_;
     }
     /**
-     * <code>.EnterCustomDungeonType enter_type = 10;</code>
+     * <code>.EnterCustomDungeonType enter_type = 8;</code>
      * @return The enterType.
      */
     @java.lang.Override public emu.grasscutter.net.proto.EnterCustomDungeonTypeOuterClass.EnterCustomDungeonType getEnterType() {
       @SuppressWarnings("deprecation")
       emu.grasscutter.net.proto.EnterCustomDungeonTypeOuterClass.EnterCustomDungeonType result = emu.grasscutter.net.proto.EnterCustomDungeonTypeOuterClass.EnterCustomDungeonType.valueOf(enterType_);
       return result == null ? emu.grasscutter.net.proto.EnterCustomDungeonTypeOuterClass.EnterCustomDungeonType.UNRECOGNIZED : result;
+    }
+
+    public static final int DUNGEON_GUID_FIELD_NUMBER = 4;
+    private long dungeonGuid_;
+    /**
+     * <code>uint64 dungeon_guid = 4;</code>
+     * @return The dungeonGuid.
+     */
+    @java.lang.Override
+    public long getDungeonGuid() {
+      return dungeonGuid_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -197,14 +201,14 @@ public final class EnterCustomDungeonReqOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (enterType_ != emu.grasscutter.net.proto.EnterCustomDungeonTypeOuterClass.EnterCustomDungeonType.ENTER_CUSTOM_DUNGEON_TYPE_NONE.getNumber()) {
-        output.writeEnum(10, enterType_);
-      }
       if (dungeonGuid_ != 0L) {
-        output.writeUInt64(11, dungeonGuid_);
+        output.writeUInt64(4, dungeonGuid_);
       }
       if (dungeonId_ != 0) {
-        output.writeUInt32(12, dungeonId_);
+        output.writeUInt32(7, dungeonId_);
+      }
+      if (enterType_ != emu.grasscutter.net.proto.EnterCustomDungeonTypeOuterClass.EnterCustomDungeonType.ENTER_CUSTOM_DUNGEON_TYPE_NONE.getNumber()) {
+        output.writeEnum(8, enterType_);
       }
       unknownFields.writeTo(output);
     }
@@ -215,17 +219,17 @@ public final class EnterCustomDungeonReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (enterType_ != emu.grasscutter.net.proto.EnterCustomDungeonTypeOuterClass.EnterCustomDungeonType.ENTER_CUSTOM_DUNGEON_TYPE_NONE.getNumber()) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(10, enterType_);
-      }
       if (dungeonGuid_ != 0L) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt64Size(11, dungeonGuid_);
+          .computeUInt64Size(4, dungeonGuid_);
       }
       if (dungeonId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, dungeonId_);
+          .computeUInt32Size(7, dungeonId_);
+      }
+      if (enterType_ != emu.grasscutter.net.proto.EnterCustomDungeonTypeOuterClass.EnterCustomDungeonType.ENTER_CUSTOM_DUNGEON_TYPE_NONE.getNumber()) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeEnumSize(8, enterType_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -242,11 +246,11 @@ public final class EnterCustomDungeonReqOuterClass {
       }
       emu.grasscutter.net.proto.EnterCustomDungeonReqOuterClass.EnterCustomDungeonReq other = (emu.grasscutter.net.proto.EnterCustomDungeonReqOuterClass.EnterCustomDungeonReq) obj;
 
-      if (getDungeonGuid()
-          != other.getDungeonGuid()) return false;
       if (getDungeonId()
           != other.getDungeonId()) return false;
       if (enterType_ != other.enterType_) return false;
+      if (getDungeonGuid()
+          != other.getDungeonGuid()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -258,13 +262,13 @@ public final class EnterCustomDungeonReqOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + DUNGEON_GUID_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-          getDungeonGuid());
       hash = (37 * hash) + DUNGEON_ID_FIELD_NUMBER;
       hash = (53 * hash) + getDungeonId();
       hash = (37 * hash) + ENTER_TYPE_FIELD_NUMBER;
       hash = (53 * hash) + enterType_;
+      hash = (37 * hash) + DUNGEON_GUID_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
+          getDungeonGuid());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -362,10 +366,14 @@ public final class EnterCustomDungeonReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 6226
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 6242;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code EnterCustomDungeonReq}
@@ -405,11 +413,11 @@ public final class EnterCustomDungeonReqOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        dungeonGuid_ = 0L;
-
         dungeonId_ = 0;
 
         enterType_ = 0;
+
+        dungeonGuid_ = 0L;
 
         return this;
       }
@@ -437,9 +445,9 @@ public final class EnterCustomDungeonReqOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.EnterCustomDungeonReqOuterClass.EnterCustomDungeonReq buildPartial() {
         emu.grasscutter.net.proto.EnterCustomDungeonReqOuterClass.EnterCustomDungeonReq result = new emu.grasscutter.net.proto.EnterCustomDungeonReqOuterClass.EnterCustomDungeonReq(this);
-        result.dungeonGuid_ = dungeonGuid_;
         result.dungeonId_ = dungeonId_;
         result.enterType_ = enterType_;
+        result.dungeonGuid_ = dungeonGuid_;
         onBuilt();
         return result;
       }
@@ -488,14 +496,14 @@ public final class EnterCustomDungeonReqOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.EnterCustomDungeonReqOuterClass.EnterCustomDungeonReq other) {
         if (other == emu.grasscutter.net.proto.EnterCustomDungeonReqOuterClass.EnterCustomDungeonReq.getDefaultInstance()) return this;
-        if (other.getDungeonGuid() != 0L) {
-          setDungeonGuid(other.getDungeonGuid());
-        }
         if (other.getDungeonId() != 0) {
           setDungeonId(other.getDungeonId());
         }
         if (other.enterType_ != 0) {
           setEnterTypeValue(other.getEnterTypeValue());
+        }
+        if (other.getDungeonGuid() != 0L) {
+          setDungeonGuid(other.getDungeonGuid());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -526,40 +534,9 @@ public final class EnterCustomDungeonReqOuterClass {
         return this;
       }
 
-      private long dungeonGuid_ ;
-      /**
-       * <code>uint64 dungeon_guid = 11;</code>
-       * @return The dungeonGuid.
-       */
-      @java.lang.Override
-      public long getDungeonGuid() {
-        return dungeonGuid_;
-      }
-      /**
-       * <code>uint64 dungeon_guid = 11;</code>
-       * @param value The dungeonGuid to set.
-       * @return This builder for chaining.
-       */
-      public Builder setDungeonGuid(long value) {
-        
-        dungeonGuid_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint64 dungeon_guid = 11;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearDungeonGuid() {
-        
-        dungeonGuid_ = 0L;
-        onChanged();
-        return this;
-      }
-
       private int dungeonId_ ;
       /**
-       * <code>uint32 dungeon_id = 12;</code>
+       * <code>uint32 dungeon_id = 7;</code>
        * @return The dungeonId.
        */
       @java.lang.Override
@@ -567,7 +544,7 @@ public final class EnterCustomDungeonReqOuterClass {
         return dungeonId_;
       }
       /**
-       * <code>uint32 dungeon_id = 12;</code>
+       * <code>uint32 dungeon_id = 7;</code>
        * @param value The dungeonId to set.
        * @return This builder for chaining.
        */
@@ -578,7 +555,7 @@ public final class EnterCustomDungeonReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 dungeon_id = 12;</code>
+       * <code>uint32 dungeon_id = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearDungeonId() {
@@ -590,14 +567,14 @@ public final class EnterCustomDungeonReqOuterClass {
 
       private int enterType_ = 0;
       /**
-       * <code>.EnterCustomDungeonType enter_type = 10;</code>
+       * <code>.EnterCustomDungeonType enter_type = 8;</code>
        * @return The enum numeric value on the wire for enterType.
        */
       @java.lang.Override public int getEnterTypeValue() {
         return enterType_;
       }
       /**
-       * <code>.EnterCustomDungeonType enter_type = 10;</code>
+       * <code>.EnterCustomDungeonType enter_type = 8;</code>
        * @param value The enum numeric value on the wire for enterType to set.
        * @return This builder for chaining.
        */
@@ -608,7 +585,7 @@ public final class EnterCustomDungeonReqOuterClass {
         return this;
       }
       /**
-       * <code>.EnterCustomDungeonType enter_type = 10;</code>
+       * <code>.EnterCustomDungeonType enter_type = 8;</code>
        * @return The enterType.
        */
       @java.lang.Override
@@ -618,7 +595,7 @@ public final class EnterCustomDungeonReqOuterClass {
         return result == null ? emu.grasscutter.net.proto.EnterCustomDungeonTypeOuterClass.EnterCustomDungeonType.UNRECOGNIZED : result;
       }
       /**
-       * <code>.EnterCustomDungeonType enter_type = 10;</code>
+       * <code>.EnterCustomDungeonType enter_type = 8;</code>
        * @param value The enterType to set.
        * @return This builder for chaining.
        */
@@ -632,12 +609,43 @@ public final class EnterCustomDungeonReqOuterClass {
         return this;
       }
       /**
-       * <code>.EnterCustomDungeonType enter_type = 10;</code>
+       * <code>.EnterCustomDungeonType enter_type = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearEnterType() {
         
         enterType_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private long dungeonGuid_ ;
+      /**
+       * <code>uint64 dungeon_guid = 4;</code>
+       * @return The dungeonGuid.
+       */
+      @java.lang.Override
+      public long getDungeonGuid() {
+        return dungeonGuid_;
+      }
+      /**
+       * <code>uint64 dungeon_guid = 4;</code>
+       * @param value The dungeonGuid to set.
+       * @return This builder for chaining.
+       */
+      public Builder setDungeonGuid(long value) {
+        
+        dungeonGuid_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint64 dungeon_guid = 4;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearDungeonGuid() {
+        
+        dungeonGuid_ = 0L;
         onChanged();
         return this;
       }
@@ -710,9 +718,9 @@ public final class EnterCustomDungeonReqOuterClass {
     java.lang.String[] descriptorData = {
       "\n\033EnterCustomDungeonReq.proto\032\034EnterCust" +
       "omDungeonType.proto\"n\n\025EnterCustomDungeo" +
-      "nReq\022\024\n\014dungeon_guid\030\013 \001(\004\022\022\n\ndungeon_id" +
-      "\030\014 \001(\r\022+\n\nenter_type\030\n \001(\0162\027.EnterCustom" +
-      "DungeonTypeB\033\n\031emu.grasscutter.net.proto" +
+      "nReq\022\022\n\ndungeon_id\030\007 \001(\r\022+\n\nenter_type\030\010" +
+      " \001(\0162\027.EnterCustomDungeonType\022\024\n\014dungeon" +
+      "_guid\030\004 \001(\004B\033\n\031emu.grasscutter.net.proto" +
       "b\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -725,7 +733,7 @@ public final class EnterCustomDungeonReqOuterClass {
     internal_static_EnterCustomDungeonReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_EnterCustomDungeonReq_descriptor,
-        new java.lang.String[] { "DungeonGuid", "DungeonId", "EnterType", });
+        new java.lang.String[] { "DungeonId", "EnterType", "DungeonGuid", });
     emu.grasscutter.net.proto.EnterCustomDungeonTypeOuterClass.getDescriptor();
   }
 

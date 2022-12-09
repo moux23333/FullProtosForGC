@@ -19,44 +19,44 @@ public final class CityReputationQuestInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_open = 2;</code>
+     * <code>repeated uint32 Unk3300_IMLDPDMHJBJ = 12;</code>
+     * @return A list containing the unk3300IMLDPDMHJBJ.
+     */
+    java.util.List<java.lang.Integer> getUnk3300IMLDPDMHJBJList();
+    /**
+     * <code>repeated uint32 Unk3300_IMLDPDMHJBJ = 12;</code>
+     * @return The count of unk3300IMLDPDMHJBJ.
+     */
+    int getUnk3300IMLDPDMHJBJCount();
+    /**
+     * <code>repeated uint32 Unk3300_IMLDPDMHJBJ = 12;</code>
+     * @param index The index of the element to return.
+     * @return The unk3300IMLDPDMHJBJ at the given index.
+     */
+    int getUnk3300IMLDPDMHJBJ(int index);
+
+    /**
+     * <code>repeated uint32 Unk3300_OMGMGDIHDOH = 10;</code>
+     * @return A list containing the unk3300OMGMGDIHDOH.
+     */
+    java.util.List<java.lang.Integer> getUnk3300OMGMGDIHDOHList();
+    /**
+     * <code>repeated uint32 Unk3300_OMGMGDIHDOH = 10;</code>
+     * @return The count of unk3300OMGMGDIHDOH.
+     */
+    int getUnk3300OMGMGDIHDOHCount();
+    /**
+     * <code>repeated uint32 Unk3300_OMGMGDIHDOH = 10;</code>
+     * @param index The index of the element to return.
+     * @return The unk3300OMGMGDIHDOH at the given index.
+     */
+    int getUnk3300OMGMGDIHDOH(int index);
+
+    /**
+     * <code>bool is_open = 4;</code>
      * @return The isOpen.
      */
     boolean getIsOpen();
-
-    /**
-     * <code>repeated uint32 taken_parent_quest_reward_list = 12;</code>
-     * @return A list containing the takenParentQuestRewardList.
-     */
-    java.util.List<java.lang.Integer> getTakenParentQuestRewardListList();
-    /**
-     * <code>repeated uint32 taken_parent_quest_reward_list = 12;</code>
-     * @return The count of takenParentQuestRewardList.
-     */
-    int getTakenParentQuestRewardListCount();
-    /**
-     * <code>repeated uint32 taken_parent_quest_reward_list = 12;</code>
-     * @param index The index of the element to return.
-     * @return The takenParentQuestRewardList at the given index.
-     */
-    int getTakenParentQuestRewardList(int index);
-
-    /**
-     * <code>repeated uint32 finished_parent_quest_list = 7;</code>
-     * @return A list containing the finishedParentQuestList.
-     */
-    java.util.List<java.lang.Integer> getFinishedParentQuestListList();
-    /**
-     * <code>repeated uint32 finished_parent_quest_list = 7;</code>
-     * @return The count of finishedParentQuestList.
-     */
-    int getFinishedParentQuestListCount();
-    /**
-     * <code>repeated uint32 finished_parent_quest_list = 7;</code>
-     * @param index The index of the element to return.
-     * @return The finishedParentQuestList at the given index.
-     */
-    int getFinishedParentQuestList(int index);
   }
   /**
    * Protobuf type {@code CityReputationQuestInfo}
@@ -71,8 +71,8 @@ public final class CityReputationQuestInfoOuterClass {
       super(builder);
     }
     private CityReputationQuestInfo() {
-      takenParentQuestRewardList_ = emptyIntList();
-      finishedParentQuestList_ = emptyIntList();
+      unk3300IMLDPDMHJBJ_ = emptyIntList();
+      unk3300OMGMGDIHDOH_ = emptyIntList();
     }
 
     @java.lang.Override
@@ -106,49 +106,49 @@ public final class CityReputationQuestInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
+            case 32: {
 
               isOpen_ = input.readBool();
               break;
             }
-            case 56: {
+            case 80: {
               if (!((mutable_bitField0_ & 0x00000002) != 0)) {
-                finishedParentQuestList_ = newIntList();
+                unk3300OMGMGDIHDOH_ = newIntList();
                 mutable_bitField0_ |= 0x00000002;
               }
-              finishedParentQuestList_.addInt(input.readUInt32());
+              unk3300OMGMGDIHDOH_.addInt(input.readUInt32());
               break;
             }
-            case 58: {
+            case 82: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000002) != 0) && input.getBytesUntilLimit() > 0) {
-                finishedParentQuestList_ = newIntList();
+                unk3300OMGMGDIHDOH_ = newIntList();
                 mutable_bitField0_ |= 0x00000002;
               }
               while (input.getBytesUntilLimit() > 0) {
-                finishedParentQuestList_.addInt(input.readUInt32());
+                unk3300OMGMGDIHDOH_.addInt(input.readUInt32());
               }
               input.popLimit(limit);
               break;
             }
             case 96: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                takenParentQuestRewardList_ = newIntList();
+                unk3300IMLDPDMHJBJ_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
               }
-              takenParentQuestRewardList_.addInt(input.readUInt32());
+              unk3300IMLDPDMHJBJ_.addInt(input.readUInt32());
               break;
             }
             case 98: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
-                takenParentQuestRewardList_ = newIntList();
+                unk3300IMLDPDMHJBJ_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
               }
               while (input.getBytesUntilLimit() > 0) {
-                takenParentQuestRewardList_.addInt(input.readUInt32());
+                unk3300IMLDPDMHJBJ_.addInt(input.readUInt32());
               }
               input.popLimit(limit);
               break;
@@ -169,10 +169,10 @@ public final class CityReputationQuestInfoOuterClass {
             e).setUnfinishedMessage(this);
       } finally {
         if (((mutable_bitField0_ & 0x00000002) != 0)) {
-          finishedParentQuestList_.makeImmutable(); // C
+          unk3300OMGMGDIHDOH_.makeImmutable(); // C
         }
         if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          takenParentQuestRewardList_.makeImmutable(); // C
+          unk3300IMLDPDMHJBJ_.makeImmutable(); // C
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -191,72 +191,72 @@ public final class CityReputationQuestInfoOuterClass {
               emu.grasscutter.net.proto.CityReputationQuestInfoOuterClass.CityReputationQuestInfo.class, emu.grasscutter.net.proto.CityReputationQuestInfoOuterClass.CityReputationQuestInfo.Builder.class);
     }
 
-    public static final int IS_OPEN_FIELD_NUMBER = 2;
+    public static final int UNK3300_IMLDPDMHJBJ_FIELD_NUMBER = 12;
+    private com.google.protobuf.Internal.IntList unk3300IMLDPDMHJBJ_;
+    /**
+     * <code>repeated uint32 Unk3300_IMLDPDMHJBJ = 12;</code>
+     * @return A list containing the unk3300IMLDPDMHJBJ.
+     */
+    @java.lang.Override
+    public java.util.List<java.lang.Integer>
+        getUnk3300IMLDPDMHJBJList() {
+      return unk3300IMLDPDMHJBJ_;
+    }
+    /**
+     * <code>repeated uint32 Unk3300_IMLDPDMHJBJ = 12;</code>
+     * @return The count of unk3300IMLDPDMHJBJ.
+     */
+    public int getUnk3300IMLDPDMHJBJCount() {
+      return unk3300IMLDPDMHJBJ_.size();
+    }
+    /**
+     * <code>repeated uint32 Unk3300_IMLDPDMHJBJ = 12;</code>
+     * @param index The index of the element to return.
+     * @return The unk3300IMLDPDMHJBJ at the given index.
+     */
+    public int getUnk3300IMLDPDMHJBJ(int index) {
+      return unk3300IMLDPDMHJBJ_.getInt(index);
+    }
+    private int unk3300IMLDPDMHJBJMemoizedSerializedSize = -1;
+
+    public static final int UNK3300_OMGMGDIHDOH_FIELD_NUMBER = 10;
+    private com.google.protobuf.Internal.IntList unk3300OMGMGDIHDOH_;
+    /**
+     * <code>repeated uint32 Unk3300_OMGMGDIHDOH = 10;</code>
+     * @return A list containing the unk3300OMGMGDIHDOH.
+     */
+    @java.lang.Override
+    public java.util.List<java.lang.Integer>
+        getUnk3300OMGMGDIHDOHList() {
+      return unk3300OMGMGDIHDOH_;
+    }
+    /**
+     * <code>repeated uint32 Unk3300_OMGMGDIHDOH = 10;</code>
+     * @return The count of unk3300OMGMGDIHDOH.
+     */
+    public int getUnk3300OMGMGDIHDOHCount() {
+      return unk3300OMGMGDIHDOH_.size();
+    }
+    /**
+     * <code>repeated uint32 Unk3300_OMGMGDIHDOH = 10;</code>
+     * @param index The index of the element to return.
+     * @return The unk3300OMGMGDIHDOH at the given index.
+     */
+    public int getUnk3300OMGMGDIHDOH(int index) {
+      return unk3300OMGMGDIHDOH_.getInt(index);
+    }
+    private int unk3300OMGMGDIHDOHMemoizedSerializedSize = -1;
+
+    public static final int IS_OPEN_FIELD_NUMBER = 4;
     private boolean isOpen_;
     /**
-     * <code>bool is_open = 2;</code>
+     * <code>bool is_open = 4;</code>
      * @return The isOpen.
      */
     @java.lang.Override
     public boolean getIsOpen() {
       return isOpen_;
     }
-
-    public static final int TAKEN_PARENT_QUEST_REWARD_LIST_FIELD_NUMBER = 12;
-    private com.google.protobuf.Internal.IntList takenParentQuestRewardList_;
-    /**
-     * <code>repeated uint32 taken_parent_quest_reward_list = 12;</code>
-     * @return A list containing the takenParentQuestRewardList.
-     */
-    @java.lang.Override
-    public java.util.List<java.lang.Integer>
-        getTakenParentQuestRewardListList() {
-      return takenParentQuestRewardList_;
-    }
-    /**
-     * <code>repeated uint32 taken_parent_quest_reward_list = 12;</code>
-     * @return The count of takenParentQuestRewardList.
-     */
-    public int getTakenParentQuestRewardListCount() {
-      return takenParentQuestRewardList_.size();
-    }
-    /**
-     * <code>repeated uint32 taken_parent_quest_reward_list = 12;</code>
-     * @param index The index of the element to return.
-     * @return The takenParentQuestRewardList at the given index.
-     */
-    public int getTakenParentQuestRewardList(int index) {
-      return takenParentQuestRewardList_.getInt(index);
-    }
-    private int takenParentQuestRewardListMemoizedSerializedSize = -1;
-
-    public static final int FINISHED_PARENT_QUEST_LIST_FIELD_NUMBER = 7;
-    private com.google.protobuf.Internal.IntList finishedParentQuestList_;
-    /**
-     * <code>repeated uint32 finished_parent_quest_list = 7;</code>
-     * @return A list containing the finishedParentQuestList.
-     */
-    @java.lang.Override
-    public java.util.List<java.lang.Integer>
-        getFinishedParentQuestListList() {
-      return finishedParentQuestList_;
-    }
-    /**
-     * <code>repeated uint32 finished_parent_quest_list = 7;</code>
-     * @return The count of finishedParentQuestList.
-     */
-    public int getFinishedParentQuestListCount() {
-      return finishedParentQuestList_.size();
-    }
-    /**
-     * <code>repeated uint32 finished_parent_quest_list = 7;</code>
-     * @param index The index of the element to return.
-     * @return The finishedParentQuestList at the given index.
-     */
-    public int getFinishedParentQuestList(int index) {
-      return finishedParentQuestList_.getInt(index);
-    }
-    private int finishedParentQuestListMemoizedSerializedSize = -1;
 
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
@@ -274,21 +274,21 @@ public final class CityReputationQuestInfoOuterClass {
                         throws java.io.IOException {
       getSerializedSize();
       if (isOpen_ != false) {
-        output.writeBool(2, isOpen_);
+        output.writeBool(4, isOpen_);
       }
-      if (getFinishedParentQuestListList().size() > 0) {
-        output.writeUInt32NoTag(58);
-        output.writeUInt32NoTag(finishedParentQuestListMemoizedSerializedSize);
+      if (getUnk3300OMGMGDIHDOHList().size() > 0) {
+        output.writeUInt32NoTag(82);
+        output.writeUInt32NoTag(unk3300OMGMGDIHDOHMemoizedSerializedSize);
       }
-      for (int i = 0; i < finishedParentQuestList_.size(); i++) {
-        output.writeUInt32NoTag(finishedParentQuestList_.getInt(i));
+      for (int i = 0; i < unk3300OMGMGDIHDOH_.size(); i++) {
+        output.writeUInt32NoTag(unk3300OMGMGDIHDOH_.getInt(i));
       }
-      if (getTakenParentQuestRewardListList().size() > 0) {
+      if (getUnk3300IMLDPDMHJBJList().size() > 0) {
         output.writeUInt32NoTag(98);
-        output.writeUInt32NoTag(takenParentQuestRewardListMemoizedSerializedSize);
+        output.writeUInt32NoTag(unk3300IMLDPDMHJBJMemoizedSerializedSize);
       }
-      for (int i = 0; i < takenParentQuestRewardList_.size(); i++) {
-        output.writeUInt32NoTag(takenParentQuestRewardList_.getInt(i));
+      for (int i = 0; i < unk3300IMLDPDMHJBJ_.size(); i++) {
+        output.writeUInt32NoTag(unk3300IMLDPDMHJBJ_.getInt(i));
       }
       unknownFields.writeTo(output);
     }
@@ -301,35 +301,35 @@ public final class CityReputationQuestInfoOuterClass {
       size = 0;
       if (isOpen_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(2, isOpen_);
+          .computeBoolSize(4, isOpen_);
       }
       {
         int dataSize = 0;
-        for (int i = 0; i < finishedParentQuestList_.size(); i++) {
+        for (int i = 0; i < unk3300OMGMGDIHDOH_.size(); i++) {
           dataSize += com.google.protobuf.CodedOutputStream
-            .computeUInt32SizeNoTag(finishedParentQuestList_.getInt(i));
+            .computeUInt32SizeNoTag(unk3300OMGMGDIHDOH_.getInt(i));
         }
         size += dataSize;
-        if (!getFinishedParentQuestListList().isEmpty()) {
+        if (!getUnk3300OMGMGDIHDOHList().isEmpty()) {
           size += 1;
           size += com.google.protobuf.CodedOutputStream
               .computeInt32SizeNoTag(dataSize);
         }
-        finishedParentQuestListMemoizedSerializedSize = dataSize;
+        unk3300OMGMGDIHDOHMemoizedSerializedSize = dataSize;
       }
       {
         int dataSize = 0;
-        for (int i = 0; i < takenParentQuestRewardList_.size(); i++) {
+        for (int i = 0; i < unk3300IMLDPDMHJBJ_.size(); i++) {
           dataSize += com.google.protobuf.CodedOutputStream
-            .computeUInt32SizeNoTag(takenParentQuestRewardList_.getInt(i));
+            .computeUInt32SizeNoTag(unk3300IMLDPDMHJBJ_.getInt(i));
         }
         size += dataSize;
-        if (!getTakenParentQuestRewardListList().isEmpty()) {
+        if (!getUnk3300IMLDPDMHJBJList().isEmpty()) {
           size += 1;
           size += com.google.protobuf.CodedOutputStream
               .computeInt32SizeNoTag(dataSize);
         }
-        takenParentQuestRewardListMemoizedSerializedSize = dataSize;
+        unk3300IMLDPDMHJBJMemoizedSerializedSize = dataSize;
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -346,12 +346,12 @@ public final class CityReputationQuestInfoOuterClass {
       }
       emu.grasscutter.net.proto.CityReputationQuestInfoOuterClass.CityReputationQuestInfo other = (emu.grasscutter.net.proto.CityReputationQuestInfoOuterClass.CityReputationQuestInfo) obj;
 
+      if (!getUnk3300IMLDPDMHJBJList()
+          .equals(other.getUnk3300IMLDPDMHJBJList())) return false;
+      if (!getUnk3300OMGMGDIHDOHList()
+          .equals(other.getUnk3300OMGMGDIHDOHList())) return false;
       if (getIsOpen()
           != other.getIsOpen()) return false;
-      if (!getTakenParentQuestRewardListList()
-          .equals(other.getTakenParentQuestRewardListList())) return false;
-      if (!getFinishedParentQuestListList()
-          .equals(other.getFinishedParentQuestListList())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -363,17 +363,17 @@ public final class CityReputationQuestInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      if (getUnk3300IMLDPDMHJBJCount() > 0) {
+        hash = (37 * hash) + UNK3300_IMLDPDMHJBJ_FIELD_NUMBER;
+        hash = (53 * hash) + getUnk3300IMLDPDMHJBJList().hashCode();
+      }
+      if (getUnk3300OMGMGDIHDOHCount() > 0) {
+        hash = (37 * hash) + UNK3300_OMGMGDIHDOH_FIELD_NUMBER;
+        hash = (53 * hash) + getUnk3300OMGMGDIHDOHList().hashCode();
+      }
       hash = (37 * hash) + IS_OPEN_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsOpen());
-      if (getTakenParentQuestRewardListCount() > 0) {
-        hash = (37 * hash) + TAKEN_PARENT_QUEST_REWARD_LIST_FIELD_NUMBER;
-        hash = (53 * hash) + getTakenParentQuestRewardListList().hashCode();
-      }
-      if (getFinishedParentQuestListCount() > 0) {
-        hash = (37 * hash) + FINISHED_PARENT_QUEST_LIST_FIELD_NUMBER;
-        hash = (53 * hash) + getFinishedParentQuestListList().hashCode();
-      }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -507,12 +507,12 @@ public final class CityReputationQuestInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        unk3300IMLDPDMHJBJ_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000001);
+        unk3300OMGMGDIHDOH_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000002);
         isOpen_ = false;
 
-        takenParentQuestRewardList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000001);
-        finishedParentQuestList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000002);
         return this;
       }
 
@@ -540,17 +540,17 @@ public final class CityReputationQuestInfoOuterClass {
       public emu.grasscutter.net.proto.CityReputationQuestInfoOuterClass.CityReputationQuestInfo buildPartial() {
         emu.grasscutter.net.proto.CityReputationQuestInfoOuterClass.CityReputationQuestInfo result = new emu.grasscutter.net.proto.CityReputationQuestInfoOuterClass.CityReputationQuestInfo(this);
         int from_bitField0_ = bitField0_;
-        result.isOpen_ = isOpen_;
         if (((bitField0_ & 0x00000001) != 0)) {
-          takenParentQuestRewardList_.makeImmutable();
+          unk3300IMLDPDMHJBJ_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000001);
         }
-        result.takenParentQuestRewardList_ = takenParentQuestRewardList_;
+        result.unk3300IMLDPDMHJBJ_ = unk3300IMLDPDMHJBJ_;
         if (((bitField0_ & 0x00000002) != 0)) {
-          finishedParentQuestList_.makeImmutable();
+          unk3300OMGMGDIHDOH_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000002);
         }
-        result.finishedParentQuestList_ = finishedParentQuestList_;
+        result.unk3300OMGMGDIHDOH_ = unk3300OMGMGDIHDOH_;
+        result.isOpen_ = isOpen_;
         onBuilt();
         return result;
       }
@@ -599,28 +599,28 @@ public final class CityReputationQuestInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.CityReputationQuestInfoOuterClass.CityReputationQuestInfo other) {
         if (other == emu.grasscutter.net.proto.CityReputationQuestInfoOuterClass.CityReputationQuestInfo.getDefaultInstance()) return this;
-        if (other.getIsOpen() != false) {
-          setIsOpen(other.getIsOpen());
-        }
-        if (!other.takenParentQuestRewardList_.isEmpty()) {
-          if (takenParentQuestRewardList_.isEmpty()) {
-            takenParentQuestRewardList_ = other.takenParentQuestRewardList_;
+        if (!other.unk3300IMLDPDMHJBJ_.isEmpty()) {
+          if (unk3300IMLDPDMHJBJ_.isEmpty()) {
+            unk3300IMLDPDMHJBJ_ = other.unk3300IMLDPDMHJBJ_;
             bitField0_ = (bitField0_ & ~0x00000001);
           } else {
-            ensureTakenParentQuestRewardListIsMutable();
-            takenParentQuestRewardList_.addAll(other.takenParentQuestRewardList_);
+            ensureUnk3300IMLDPDMHJBJIsMutable();
+            unk3300IMLDPDMHJBJ_.addAll(other.unk3300IMLDPDMHJBJ_);
           }
           onChanged();
         }
-        if (!other.finishedParentQuestList_.isEmpty()) {
-          if (finishedParentQuestList_.isEmpty()) {
-            finishedParentQuestList_ = other.finishedParentQuestList_;
+        if (!other.unk3300OMGMGDIHDOH_.isEmpty()) {
+          if (unk3300OMGMGDIHDOH_.isEmpty()) {
+            unk3300OMGMGDIHDOH_ = other.unk3300OMGMGDIHDOH_;
             bitField0_ = (bitField0_ & ~0x00000002);
           } else {
-            ensureFinishedParentQuestListIsMutable();
-            finishedParentQuestList_.addAll(other.finishedParentQuestList_);
+            ensureUnk3300OMGMGDIHDOHIsMutable();
+            unk3300OMGMGDIHDOH_.addAll(other.unk3300OMGMGDIHDOH_);
           }
           onChanged();
+        }
+        if (other.getIsOpen() != false) {
+          setIsOpen(other.getIsOpen());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -652,9 +652,167 @@ public final class CityReputationQuestInfoOuterClass {
       }
       private int bitField0_;
 
+      private com.google.protobuf.Internal.IntList unk3300IMLDPDMHJBJ_ = emptyIntList();
+      private void ensureUnk3300IMLDPDMHJBJIsMutable() {
+        if (!((bitField0_ & 0x00000001) != 0)) {
+          unk3300IMLDPDMHJBJ_ = mutableCopy(unk3300IMLDPDMHJBJ_);
+          bitField0_ |= 0x00000001;
+         }
+      }
+      /**
+       * <code>repeated uint32 Unk3300_IMLDPDMHJBJ = 12;</code>
+       * @return A list containing the unk3300IMLDPDMHJBJ.
+       */
+      public java.util.List<java.lang.Integer>
+          getUnk3300IMLDPDMHJBJList() {
+        return ((bitField0_ & 0x00000001) != 0) ?
+                 java.util.Collections.unmodifiableList(unk3300IMLDPDMHJBJ_) : unk3300IMLDPDMHJBJ_;
+      }
+      /**
+       * <code>repeated uint32 Unk3300_IMLDPDMHJBJ = 12;</code>
+       * @return The count of unk3300IMLDPDMHJBJ.
+       */
+      public int getUnk3300IMLDPDMHJBJCount() {
+        return unk3300IMLDPDMHJBJ_.size();
+      }
+      /**
+       * <code>repeated uint32 Unk3300_IMLDPDMHJBJ = 12;</code>
+       * @param index The index of the element to return.
+       * @return The unk3300IMLDPDMHJBJ at the given index.
+       */
+      public int getUnk3300IMLDPDMHJBJ(int index) {
+        return unk3300IMLDPDMHJBJ_.getInt(index);
+      }
+      /**
+       * <code>repeated uint32 Unk3300_IMLDPDMHJBJ = 12;</code>
+       * @param index The index to set the value at.
+       * @param value The unk3300IMLDPDMHJBJ to set.
+       * @return This builder for chaining.
+       */
+      public Builder setUnk3300IMLDPDMHJBJ(
+          int index, int value) {
+        ensureUnk3300IMLDPDMHJBJIsMutable();
+        unk3300IMLDPDMHJBJ_.setInt(index, value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint32 Unk3300_IMLDPDMHJBJ = 12;</code>
+       * @param value The unk3300IMLDPDMHJBJ to add.
+       * @return This builder for chaining.
+       */
+      public Builder addUnk3300IMLDPDMHJBJ(int value) {
+        ensureUnk3300IMLDPDMHJBJIsMutable();
+        unk3300IMLDPDMHJBJ_.addInt(value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint32 Unk3300_IMLDPDMHJBJ = 12;</code>
+       * @param values The unk3300IMLDPDMHJBJ to add.
+       * @return This builder for chaining.
+       */
+      public Builder addAllUnk3300IMLDPDMHJBJ(
+          java.lang.Iterable<? extends java.lang.Integer> values) {
+        ensureUnk3300IMLDPDMHJBJIsMutable();
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, unk3300IMLDPDMHJBJ_);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint32 Unk3300_IMLDPDMHJBJ = 12;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearUnk3300IMLDPDMHJBJ() {
+        unk3300IMLDPDMHJBJ_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000001);
+        onChanged();
+        return this;
+      }
+
+      private com.google.protobuf.Internal.IntList unk3300OMGMGDIHDOH_ = emptyIntList();
+      private void ensureUnk3300OMGMGDIHDOHIsMutable() {
+        if (!((bitField0_ & 0x00000002) != 0)) {
+          unk3300OMGMGDIHDOH_ = mutableCopy(unk3300OMGMGDIHDOH_);
+          bitField0_ |= 0x00000002;
+         }
+      }
+      /**
+       * <code>repeated uint32 Unk3300_OMGMGDIHDOH = 10;</code>
+       * @return A list containing the unk3300OMGMGDIHDOH.
+       */
+      public java.util.List<java.lang.Integer>
+          getUnk3300OMGMGDIHDOHList() {
+        return ((bitField0_ & 0x00000002) != 0) ?
+                 java.util.Collections.unmodifiableList(unk3300OMGMGDIHDOH_) : unk3300OMGMGDIHDOH_;
+      }
+      /**
+       * <code>repeated uint32 Unk3300_OMGMGDIHDOH = 10;</code>
+       * @return The count of unk3300OMGMGDIHDOH.
+       */
+      public int getUnk3300OMGMGDIHDOHCount() {
+        return unk3300OMGMGDIHDOH_.size();
+      }
+      /**
+       * <code>repeated uint32 Unk3300_OMGMGDIHDOH = 10;</code>
+       * @param index The index of the element to return.
+       * @return The unk3300OMGMGDIHDOH at the given index.
+       */
+      public int getUnk3300OMGMGDIHDOH(int index) {
+        return unk3300OMGMGDIHDOH_.getInt(index);
+      }
+      /**
+       * <code>repeated uint32 Unk3300_OMGMGDIHDOH = 10;</code>
+       * @param index The index to set the value at.
+       * @param value The unk3300OMGMGDIHDOH to set.
+       * @return This builder for chaining.
+       */
+      public Builder setUnk3300OMGMGDIHDOH(
+          int index, int value) {
+        ensureUnk3300OMGMGDIHDOHIsMutable();
+        unk3300OMGMGDIHDOH_.setInt(index, value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint32 Unk3300_OMGMGDIHDOH = 10;</code>
+       * @param value The unk3300OMGMGDIHDOH to add.
+       * @return This builder for chaining.
+       */
+      public Builder addUnk3300OMGMGDIHDOH(int value) {
+        ensureUnk3300OMGMGDIHDOHIsMutable();
+        unk3300OMGMGDIHDOH_.addInt(value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint32 Unk3300_OMGMGDIHDOH = 10;</code>
+       * @param values The unk3300OMGMGDIHDOH to add.
+       * @return This builder for chaining.
+       */
+      public Builder addAllUnk3300OMGMGDIHDOH(
+          java.lang.Iterable<? extends java.lang.Integer> values) {
+        ensureUnk3300OMGMGDIHDOHIsMutable();
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, unk3300OMGMGDIHDOH_);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint32 Unk3300_OMGMGDIHDOH = 10;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearUnk3300OMGMGDIHDOH() {
+        unk3300OMGMGDIHDOH_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000002);
+        onChanged();
+        return this;
+      }
+
       private boolean isOpen_ ;
       /**
-       * <code>bool is_open = 2;</code>
+       * <code>bool is_open = 4;</code>
        * @return The isOpen.
        */
       @java.lang.Override
@@ -662,7 +820,7 @@ public final class CityReputationQuestInfoOuterClass {
         return isOpen_;
       }
       /**
-       * <code>bool is_open = 2;</code>
+       * <code>bool is_open = 4;</code>
        * @param value The isOpen to set.
        * @return This builder for chaining.
        */
@@ -673,170 +831,12 @@ public final class CityReputationQuestInfoOuterClass {
         return this;
       }
       /**
-       * <code>bool is_open = 2;</code>
+       * <code>bool is_open = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsOpen() {
         
         isOpen_ = false;
-        onChanged();
-        return this;
-      }
-
-      private com.google.protobuf.Internal.IntList takenParentQuestRewardList_ = emptyIntList();
-      private void ensureTakenParentQuestRewardListIsMutable() {
-        if (!((bitField0_ & 0x00000001) != 0)) {
-          takenParentQuestRewardList_ = mutableCopy(takenParentQuestRewardList_);
-          bitField0_ |= 0x00000001;
-         }
-      }
-      /**
-       * <code>repeated uint32 taken_parent_quest_reward_list = 12;</code>
-       * @return A list containing the takenParentQuestRewardList.
-       */
-      public java.util.List<java.lang.Integer>
-          getTakenParentQuestRewardListList() {
-        return ((bitField0_ & 0x00000001) != 0) ?
-                 java.util.Collections.unmodifiableList(takenParentQuestRewardList_) : takenParentQuestRewardList_;
-      }
-      /**
-       * <code>repeated uint32 taken_parent_quest_reward_list = 12;</code>
-       * @return The count of takenParentQuestRewardList.
-       */
-      public int getTakenParentQuestRewardListCount() {
-        return takenParentQuestRewardList_.size();
-      }
-      /**
-       * <code>repeated uint32 taken_parent_quest_reward_list = 12;</code>
-       * @param index The index of the element to return.
-       * @return The takenParentQuestRewardList at the given index.
-       */
-      public int getTakenParentQuestRewardList(int index) {
-        return takenParentQuestRewardList_.getInt(index);
-      }
-      /**
-       * <code>repeated uint32 taken_parent_quest_reward_list = 12;</code>
-       * @param index The index to set the value at.
-       * @param value The takenParentQuestRewardList to set.
-       * @return This builder for chaining.
-       */
-      public Builder setTakenParentQuestRewardList(
-          int index, int value) {
-        ensureTakenParentQuestRewardListIsMutable();
-        takenParentQuestRewardList_.setInt(index, value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 taken_parent_quest_reward_list = 12;</code>
-       * @param value The takenParentQuestRewardList to add.
-       * @return This builder for chaining.
-       */
-      public Builder addTakenParentQuestRewardList(int value) {
-        ensureTakenParentQuestRewardListIsMutable();
-        takenParentQuestRewardList_.addInt(value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 taken_parent_quest_reward_list = 12;</code>
-       * @param values The takenParentQuestRewardList to add.
-       * @return This builder for chaining.
-       */
-      public Builder addAllTakenParentQuestRewardList(
-          java.lang.Iterable<? extends java.lang.Integer> values) {
-        ensureTakenParentQuestRewardListIsMutable();
-        com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, takenParentQuestRewardList_);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 taken_parent_quest_reward_list = 12;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearTakenParentQuestRewardList() {
-        takenParentQuestRewardList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000001);
-        onChanged();
-        return this;
-      }
-
-      private com.google.protobuf.Internal.IntList finishedParentQuestList_ = emptyIntList();
-      private void ensureFinishedParentQuestListIsMutable() {
-        if (!((bitField0_ & 0x00000002) != 0)) {
-          finishedParentQuestList_ = mutableCopy(finishedParentQuestList_);
-          bitField0_ |= 0x00000002;
-         }
-      }
-      /**
-       * <code>repeated uint32 finished_parent_quest_list = 7;</code>
-       * @return A list containing the finishedParentQuestList.
-       */
-      public java.util.List<java.lang.Integer>
-          getFinishedParentQuestListList() {
-        return ((bitField0_ & 0x00000002) != 0) ?
-                 java.util.Collections.unmodifiableList(finishedParentQuestList_) : finishedParentQuestList_;
-      }
-      /**
-       * <code>repeated uint32 finished_parent_quest_list = 7;</code>
-       * @return The count of finishedParentQuestList.
-       */
-      public int getFinishedParentQuestListCount() {
-        return finishedParentQuestList_.size();
-      }
-      /**
-       * <code>repeated uint32 finished_parent_quest_list = 7;</code>
-       * @param index The index of the element to return.
-       * @return The finishedParentQuestList at the given index.
-       */
-      public int getFinishedParentQuestList(int index) {
-        return finishedParentQuestList_.getInt(index);
-      }
-      /**
-       * <code>repeated uint32 finished_parent_quest_list = 7;</code>
-       * @param index The index to set the value at.
-       * @param value The finishedParentQuestList to set.
-       * @return This builder for chaining.
-       */
-      public Builder setFinishedParentQuestList(
-          int index, int value) {
-        ensureFinishedParentQuestListIsMutable();
-        finishedParentQuestList_.setInt(index, value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 finished_parent_quest_list = 7;</code>
-       * @param value The finishedParentQuestList to add.
-       * @return This builder for chaining.
-       */
-      public Builder addFinishedParentQuestList(int value) {
-        ensureFinishedParentQuestListIsMutable();
-        finishedParentQuestList_.addInt(value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 finished_parent_quest_list = 7;</code>
-       * @param values The finishedParentQuestList to add.
-       * @return This builder for chaining.
-       */
-      public Builder addAllFinishedParentQuestList(
-          java.lang.Iterable<? extends java.lang.Integer> values) {
-        ensureFinishedParentQuestListIsMutable();
-        com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, finishedParentQuestList_);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 finished_parent_quest_list = 7;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearFinishedParentQuestList() {
-        finishedParentQuestList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000002);
         onChanged();
         return this;
       }
@@ -907,11 +907,11 @@ public final class CityReputationQuestInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\035CityReputationQuestInfo.proto\"v\n\027CityR" +
-      "eputationQuestInfo\022\017\n\007is_open\030\002 \001(\010\022&\n\036t" +
-      "aken_parent_quest_reward_list\030\014 \003(\r\022\"\n\032f" +
-      "inished_parent_quest_list\030\007 \003(\rB\033\n\031emu.g" +
-      "rasscutter.net.protob\006proto3"
+      "\n\035CityReputationQuestInfo.proto\"d\n\027CityR" +
+      "eputationQuestInfo\022\033\n\023Unk3300_IMLDPDMHJB" +
+      "J\030\014 \003(\r\022\033\n\023Unk3300_OMGMGDIHDOH\030\n \003(\r\022\017\n\007" +
+      "is_open\030\004 \001(\010B\033\n\031emu.grasscutter.net.pro" +
+      "tob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -922,7 +922,7 @@ public final class CityReputationQuestInfoOuterClass {
     internal_static_CityReputationQuestInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_CityReputationQuestInfo_descriptor,
-        new java.lang.String[] { "IsOpen", "TakenParentQuestRewardList", "FinishedParentQuestList", });
+        new java.lang.String[] { "Unk3300IMLDPDMHJBJ", "Unk3300OMGMGDIHDOH", "IsOpen", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

@@ -19,17 +19,21 @@ public final class GetReunionMissionInfoReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 mission_id = 14;</code>
+     * <code>uint32 mission_id = 3;</code>
      * @return The missionId.
      */
     int getMissionId();
   }
   /**
    * <pre>
-   * CmdId: 5094
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 5062;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code GetReunionMissionInfoReq}
@@ -76,7 +80,7 @@ public final class GetReunionMissionInfoReqOuterClass {
             case 0:
               done = true;
               break;
-            case 112: {
+            case 24: {
 
               missionId_ = input.readUInt32();
               break;
@@ -113,10 +117,10 @@ public final class GetReunionMissionInfoReqOuterClass {
               emu.grasscutter.net.proto.GetReunionMissionInfoReqOuterClass.GetReunionMissionInfoReq.class, emu.grasscutter.net.proto.GetReunionMissionInfoReqOuterClass.GetReunionMissionInfoReq.Builder.class);
     }
 
-    public static final int MISSION_ID_FIELD_NUMBER = 14;
+    public static final int MISSION_ID_FIELD_NUMBER = 3;
     private int missionId_;
     /**
-     * <code>uint32 mission_id = 14;</code>
+     * <code>uint32 mission_id = 3;</code>
      * @return The missionId.
      */
     @java.lang.Override
@@ -139,7 +143,7 @@ public final class GetReunionMissionInfoReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (missionId_ != 0) {
-        output.writeUInt32(14, missionId_);
+        output.writeUInt32(3, missionId_);
       }
       unknownFields.writeTo(output);
     }
@@ -152,7 +156,7 @@ public final class GetReunionMissionInfoReqOuterClass {
       size = 0;
       if (missionId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, missionId_);
+          .computeUInt32Size(3, missionId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -281,10 +285,14 @@ public final class GetReunionMissionInfoReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 5094
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 5062;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code GetReunionMissionInfoReq}
@@ -435,7 +443,7 @@ public final class GetReunionMissionInfoReqOuterClass {
 
       private int missionId_ ;
       /**
-       * <code>uint32 mission_id = 14;</code>
+       * <code>uint32 mission_id = 3;</code>
        * @return The missionId.
        */
       @java.lang.Override
@@ -443,7 +451,7 @@ public final class GetReunionMissionInfoReqOuterClass {
         return missionId_;
       }
       /**
-       * <code>uint32 mission_id = 14;</code>
+       * <code>uint32 mission_id = 3;</code>
        * @param value The missionId to set.
        * @return This builder for chaining.
        */
@@ -454,7 +462,7 @@ public final class GetReunionMissionInfoReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 mission_id = 14;</code>
+       * <code>uint32 mission_id = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearMissionId() {
@@ -531,7 +539,7 @@ public final class GetReunionMissionInfoReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\036GetReunionMissionInfoReq.proto\".\n\030GetR" +
-      "eunionMissionInfoReq\022\022\n\nmission_id\030\016 \001(\r" +
+      "eunionMissionInfoReq\022\022\n\nmission_id\030\003 \001(\r" +
       "B\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

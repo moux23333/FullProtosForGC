@@ -19,17 +19,21 @@ public final class ChannelerSlabLoopDungeonTakeFirstPassRewardReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 dungeon_index = 10;</code>
+     * <code>uint32 dungeon_index = 7;</code>
      * @return The dungeonIndex.
      */
     int getDungeonIndex();
   }
   /**
    * <pre>
-   * CmdId: 8589
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 8498;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code ChannelerSlabLoopDungeonTakeFirstPassRewardReq}
@@ -76,7 +80,7 @@ public final class ChannelerSlabLoopDungeonTakeFirstPassRewardReqOuterClass {
             case 0:
               done = true;
               break;
-            case 80: {
+            case 56: {
 
               dungeonIndex_ = input.readUInt32();
               break;
@@ -113,10 +117,10 @@ public final class ChannelerSlabLoopDungeonTakeFirstPassRewardReqOuterClass {
               emu.grasscutter.net.proto.ChannelerSlabLoopDungeonTakeFirstPassRewardReqOuterClass.ChannelerSlabLoopDungeonTakeFirstPassRewardReq.class, emu.grasscutter.net.proto.ChannelerSlabLoopDungeonTakeFirstPassRewardReqOuterClass.ChannelerSlabLoopDungeonTakeFirstPassRewardReq.Builder.class);
     }
 
-    public static final int DUNGEON_INDEX_FIELD_NUMBER = 10;
+    public static final int DUNGEON_INDEX_FIELD_NUMBER = 7;
     private int dungeonIndex_;
     /**
-     * <code>uint32 dungeon_index = 10;</code>
+     * <code>uint32 dungeon_index = 7;</code>
      * @return The dungeonIndex.
      */
     @java.lang.Override
@@ -139,7 +143,7 @@ public final class ChannelerSlabLoopDungeonTakeFirstPassRewardReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (dungeonIndex_ != 0) {
-        output.writeUInt32(10, dungeonIndex_);
+        output.writeUInt32(7, dungeonIndex_);
       }
       unknownFields.writeTo(output);
     }
@@ -152,7 +156,7 @@ public final class ChannelerSlabLoopDungeonTakeFirstPassRewardReqOuterClass {
       size = 0;
       if (dungeonIndex_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, dungeonIndex_);
+          .computeUInt32Size(7, dungeonIndex_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -281,10 +285,14 @@ public final class ChannelerSlabLoopDungeonTakeFirstPassRewardReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 8589
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 8498;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code ChannelerSlabLoopDungeonTakeFirstPassRewardReq}
@@ -435,7 +443,7 @@ public final class ChannelerSlabLoopDungeonTakeFirstPassRewardReqOuterClass {
 
       private int dungeonIndex_ ;
       /**
-       * <code>uint32 dungeon_index = 10;</code>
+       * <code>uint32 dungeon_index = 7;</code>
        * @return The dungeonIndex.
        */
       @java.lang.Override
@@ -443,7 +451,7 @@ public final class ChannelerSlabLoopDungeonTakeFirstPassRewardReqOuterClass {
         return dungeonIndex_;
       }
       /**
-       * <code>uint32 dungeon_index = 10;</code>
+       * <code>uint32 dungeon_index = 7;</code>
        * @param value The dungeonIndex to set.
        * @return This builder for chaining.
        */
@@ -454,7 +462,7 @@ public final class ChannelerSlabLoopDungeonTakeFirstPassRewardReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 dungeon_index = 10;</code>
+       * <code>uint32 dungeon_index = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearDungeonIndex() {
@@ -533,7 +541,7 @@ public final class ChannelerSlabLoopDungeonTakeFirstPassRewardReqOuterClass {
       "\n4ChannelerSlabLoopDungeonTakeFirstPassR" +
       "ewardReq.proto\"G\n.ChannelerSlabLoopDunge" +
       "onTakeFirstPassRewardReq\022\025\n\rdungeon_inde" +
-      "x\030\n \001(\rB\033\n\031emu.grasscutter.net.protob\006pr" +
+      "x\030\007 \001(\rB\033\n\031emu.grasscutter.net.protob\006pr" +
       "oto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

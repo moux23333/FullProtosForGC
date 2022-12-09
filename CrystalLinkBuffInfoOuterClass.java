@@ -19,16 +19,16 @@ public final class CrystalLinkBuffInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 effect_buff_id = 1;</code>
-     * @return The effectBuffId.
+     * <code>uint32 Unk3300_BGKLAFCBNOA = 6;</code>
+     * @return The unk3300BGKLAFCBNOA.
      */
-    int getEffectBuffId();
+    int getUnk3300BGKLAFCBNOA();
 
     /**
-     * <code>uint32 cond_buff_id = 10;</code>
-     * @return The condBuffId.
+     * <code>uint32 Unk3300_PFLAOCMEFIL = 4;</code>
+     * @return The unk3300PFLAOCMEFIL.
      */
-    int getCondBuffId();
+    int getUnk3300PFLAOCMEFIL();
   }
   /**
    * Protobuf type {@code CrystalLinkBuffInfo}
@@ -75,14 +75,14 @@ public final class CrystalLinkBuffInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
+            case 32: {
 
-              effectBuffId_ = input.readUInt32();
+              unk3300PFLAOCMEFIL_ = input.readUInt32();
               break;
             }
-            case 80: {
+            case 48: {
 
-              condBuffId_ = input.readUInt32();
+              unk3300BGKLAFCBNOA_ = input.readUInt32();
               break;
             }
             default: {
@@ -117,26 +117,26 @@ public final class CrystalLinkBuffInfoOuterClass {
               emu.grasscutter.net.proto.CrystalLinkBuffInfoOuterClass.CrystalLinkBuffInfo.class, emu.grasscutter.net.proto.CrystalLinkBuffInfoOuterClass.CrystalLinkBuffInfo.Builder.class);
     }
 
-    public static final int EFFECT_BUFF_ID_FIELD_NUMBER = 1;
-    private int effectBuffId_;
+    public static final int UNK3300_BGKLAFCBNOA_FIELD_NUMBER = 6;
+    private int unk3300BGKLAFCBNOA_;
     /**
-     * <code>uint32 effect_buff_id = 1;</code>
-     * @return The effectBuffId.
+     * <code>uint32 Unk3300_BGKLAFCBNOA = 6;</code>
+     * @return The unk3300BGKLAFCBNOA.
      */
     @java.lang.Override
-    public int getEffectBuffId() {
-      return effectBuffId_;
+    public int getUnk3300BGKLAFCBNOA() {
+      return unk3300BGKLAFCBNOA_;
     }
 
-    public static final int COND_BUFF_ID_FIELD_NUMBER = 10;
-    private int condBuffId_;
+    public static final int UNK3300_PFLAOCMEFIL_FIELD_NUMBER = 4;
+    private int unk3300PFLAOCMEFIL_;
     /**
-     * <code>uint32 cond_buff_id = 10;</code>
-     * @return The condBuffId.
+     * <code>uint32 Unk3300_PFLAOCMEFIL = 4;</code>
+     * @return The unk3300PFLAOCMEFIL.
      */
     @java.lang.Override
-    public int getCondBuffId() {
-      return condBuffId_;
+    public int getUnk3300PFLAOCMEFIL() {
+      return unk3300PFLAOCMEFIL_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -153,11 +153,11 @@ public final class CrystalLinkBuffInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (effectBuffId_ != 0) {
-        output.writeUInt32(1, effectBuffId_);
+      if (unk3300PFLAOCMEFIL_ != 0) {
+        output.writeUInt32(4, unk3300PFLAOCMEFIL_);
       }
-      if (condBuffId_ != 0) {
-        output.writeUInt32(10, condBuffId_);
+      if (unk3300BGKLAFCBNOA_ != 0) {
+        output.writeUInt32(6, unk3300BGKLAFCBNOA_);
       }
       unknownFields.writeTo(output);
     }
@@ -168,13 +168,13 @@ public final class CrystalLinkBuffInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (effectBuffId_ != 0) {
+      if (unk3300PFLAOCMEFIL_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, effectBuffId_);
+          .computeUInt32Size(4, unk3300PFLAOCMEFIL_);
       }
-      if (condBuffId_ != 0) {
+      if (unk3300BGKLAFCBNOA_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, condBuffId_);
+          .computeUInt32Size(6, unk3300BGKLAFCBNOA_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -191,10 +191,10 @@ public final class CrystalLinkBuffInfoOuterClass {
       }
       emu.grasscutter.net.proto.CrystalLinkBuffInfoOuterClass.CrystalLinkBuffInfo other = (emu.grasscutter.net.proto.CrystalLinkBuffInfoOuterClass.CrystalLinkBuffInfo) obj;
 
-      if (getEffectBuffId()
-          != other.getEffectBuffId()) return false;
-      if (getCondBuffId()
-          != other.getCondBuffId()) return false;
+      if (getUnk3300BGKLAFCBNOA()
+          != other.getUnk3300BGKLAFCBNOA()) return false;
+      if (getUnk3300PFLAOCMEFIL()
+          != other.getUnk3300PFLAOCMEFIL()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -206,10 +206,10 @@ public final class CrystalLinkBuffInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + EFFECT_BUFF_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getEffectBuffId();
-      hash = (37 * hash) + COND_BUFF_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getCondBuffId();
+      hash = (37 * hash) + UNK3300_BGKLAFCBNOA_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300BGKLAFCBNOA();
+      hash = (37 * hash) + UNK3300_PFLAOCMEFIL_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300PFLAOCMEFIL();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -343,9 +343,9 @@ public final class CrystalLinkBuffInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        effectBuffId_ = 0;
+        unk3300BGKLAFCBNOA_ = 0;
 
-        condBuffId_ = 0;
+        unk3300PFLAOCMEFIL_ = 0;
 
         return this;
       }
@@ -373,8 +373,8 @@ public final class CrystalLinkBuffInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.CrystalLinkBuffInfoOuterClass.CrystalLinkBuffInfo buildPartial() {
         emu.grasscutter.net.proto.CrystalLinkBuffInfoOuterClass.CrystalLinkBuffInfo result = new emu.grasscutter.net.proto.CrystalLinkBuffInfoOuterClass.CrystalLinkBuffInfo(this);
-        result.effectBuffId_ = effectBuffId_;
-        result.condBuffId_ = condBuffId_;
+        result.unk3300BGKLAFCBNOA_ = unk3300BGKLAFCBNOA_;
+        result.unk3300PFLAOCMEFIL_ = unk3300PFLAOCMEFIL_;
         onBuilt();
         return result;
       }
@@ -423,11 +423,11 @@ public final class CrystalLinkBuffInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.CrystalLinkBuffInfoOuterClass.CrystalLinkBuffInfo other) {
         if (other == emu.grasscutter.net.proto.CrystalLinkBuffInfoOuterClass.CrystalLinkBuffInfo.getDefaultInstance()) return this;
-        if (other.getEffectBuffId() != 0) {
-          setEffectBuffId(other.getEffectBuffId());
+        if (other.getUnk3300BGKLAFCBNOA() != 0) {
+          setUnk3300BGKLAFCBNOA(other.getUnk3300BGKLAFCBNOA());
         }
-        if (other.getCondBuffId() != 0) {
-          setCondBuffId(other.getCondBuffId());
+        if (other.getUnk3300PFLAOCMEFIL() != 0) {
+          setUnk3300PFLAOCMEFIL(other.getUnk3300PFLAOCMEFIL());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -458,64 +458,64 @@ public final class CrystalLinkBuffInfoOuterClass {
         return this;
       }
 
-      private int effectBuffId_ ;
+      private int unk3300BGKLAFCBNOA_ ;
       /**
-       * <code>uint32 effect_buff_id = 1;</code>
-       * @return The effectBuffId.
+       * <code>uint32 Unk3300_BGKLAFCBNOA = 6;</code>
+       * @return The unk3300BGKLAFCBNOA.
        */
       @java.lang.Override
-      public int getEffectBuffId() {
-        return effectBuffId_;
+      public int getUnk3300BGKLAFCBNOA() {
+        return unk3300BGKLAFCBNOA_;
       }
       /**
-       * <code>uint32 effect_buff_id = 1;</code>
-       * @param value The effectBuffId to set.
+       * <code>uint32 Unk3300_BGKLAFCBNOA = 6;</code>
+       * @param value The unk3300BGKLAFCBNOA to set.
        * @return This builder for chaining.
        */
-      public Builder setEffectBuffId(int value) {
+      public Builder setUnk3300BGKLAFCBNOA(int value) {
         
-        effectBuffId_ = value;
+        unk3300BGKLAFCBNOA_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 effect_buff_id = 1;</code>
+       * <code>uint32 Unk3300_BGKLAFCBNOA = 6;</code>
        * @return This builder for chaining.
        */
-      public Builder clearEffectBuffId() {
+      public Builder clearUnk3300BGKLAFCBNOA() {
         
-        effectBuffId_ = 0;
+        unk3300BGKLAFCBNOA_ = 0;
         onChanged();
         return this;
       }
 
-      private int condBuffId_ ;
+      private int unk3300PFLAOCMEFIL_ ;
       /**
-       * <code>uint32 cond_buff_id = 10;</code>
-       * @return The condBuffId.
+       * <code>uint32 Unk3300_PFLAOCMEFIL = 4;</code>
+       * @return The unk3300PFLAOCMEFIL.
        */
       @java.lang.Override
-      public int getCondBuffId() {
-        return condBuffId_;
+      public int getUnk3300PFLAOCMEFIL() {
+        return unk3300PFLAOCMEFIL_;
       }
       /**
-       * <code>uint32 cond_buff_id = 10;</code>
-       * @param value The condBuffId to set.
+       * <code>uint32 Unk3300_PFLAOCMEFIL = 4;</code>
+       * @param value The unk3300PFLAOCMEFIL to set.
        * @return This builder for chaining.
        */
-      public Builder setCondBuffId(int value) {
+      public Builder setUnk3300PFLAOCMEFIL(int value) {
         
-        condBuffId_ = value;
+        unk3300PFLAOCMEFIL_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 cond_buff_id = 10;</code>
+       * <code>uint32 Unk3300_PFLAOCMEFIL = 4;</code>
        * @return This builder for chaining.
        */
-      public Builder clearCondBuffId() {
+      public Builder clearUnk3300PFLAOCMEFIL() {
         
-        condBuffId_ = 0;
+        unk3300PFLAOCMEFIL_ = 0;
         onChanged();
         return this;
       }
@@ -586,10 +586,10 @@ public final class CrystalLinkBuffInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\031CrystalLinkBuffInfo.proto\"C\n\023CrystalLi" +
-      "nkBuffInfo\022\026\n\016effect_buff_id\030\001 \001(\r\022\024\n\014co" +
-      "nd_buff_id\030\n \001(\rB\033\n\031emu.grasscutter.net." +
-      "protob\006proto3"
+      "\n\031CrystalLinkBuffInfo.proto\"O\n\023CrystalLi" +
+      "nkBuffInfo\022\033\n\023Unk3300_BGKLAFCBNOA\030\006 \001(\r\022" +
+      "\033\n\023Unk3300_PFLAOCMEFIL\030\004 \001(\rB\033\n\031emu.gras" +
+      "scutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -600,7 +600,7 @@ public final class CrystalLinkBuffInfoOuterClass {
     internal_static_CrystalLinkBuffInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_CrystalLinkBuffInfo_descriptor,
-        new java.lang.String[] { "EffectBuffId", "CondBuffId", });
+        new java.lang.String[] { "Unk3300BGKLAFCBNOA", "Unk3300PFLAOCMEFIL", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

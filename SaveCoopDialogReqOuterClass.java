@@ -19,23 +19,27 @@ public final class SaveCoopDialogReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 main_coop_id = 11;</code>
-     * @return The mainCoopId.
+     * <code>uint32 Unk3300_AMKDDJEPAKM = 10;</code>
+     * @return The unk3300AMKDDJEPAKM.
      */
-    int getMainCoopId();
+    int getUnk3300AMKDDJEPAKM();
 
     /**
-     * <code>uint32 dialog_id = 6;</code>
-     * @return The dialogId.
+     * <code>uint32 Unk3300_KMBGNIICNAF = 8;</code>
+     * @return The unk3300KMBGNIICNAF.
      */
-    int getDialogId();
+    int getUnk3300KMBGNIICNAF();
   }
   /**
    * <pre>
-   * CmdId: 2000
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 1954;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code SaveCoopDialogReq}
@@ -82,14 +86,14 @@ public final class SaveCoopDialogReqOuterClass {
             case 0:
               done = true;
               break;
-            case 48: {
+            case 64: {
 
-              dialogId_ = input.readUInt32();
+              unk3300KMBGNIICNAF_ = input.readUInt32();
               break;
             }
-            case 88: {
+            case 80: {
 
-              mainCoopId_ = input.readUInt32();
+              unk3300AMKDDJEPAKM_ = input.readUInt32();
               break;
             }
             default: {
@@ -124,26 +128,26 @@ public final class SaveCoopDialogReqOuterClass {
               emu.grasscutter.net.proto.SaveCoopDialogReqOuterClass.SaveCoopDialogReq.class, emu.grasscutter.net.proto.SaveCoopDialogReqOuterClass.SaveCoopDialogReq.Builder.class);
     }
 
-    public static final int MAIN_COOP_ID_FIELD_NUMBER = 11;
-    private int mainCoopId_;
+    public static final int UNK3300_AMKDDJEPAKM_FIELD_NUMBER = 10;
+    private int unk3300AMKDDJEPAKM_;
     /**
-     * <code>uint32 main_coop_id = 11;</code>
-     * @return The mainCoopId.
+     * <code>uint32 Unk3300_AMKDDJEPAKM = 10;</code>
+     * @return The unk3300AMKDDJEPAKM.
      */
     @java.lang.Override
-    public int getMainCoopId() {
-      return mainCoopId_;
+    public int getUnk3300AMKDDJEPAKM() {
+      return unk3300AMKDDJEPAKM_;
     }
 
-    public static final int DIALOG_ID_FIELD_NUMBER = 6;
-    private int dialogId_;
+    public static final int UNK3300_KMBGNIICNAF_FIELD_NUMBER = 8;
+    private int unk3300KMBGNIICNAF_;
     /**
-     * <code>uint32 dialog_id = 6;</code>
-     * @return The dialogId.
+     * <code>uint32 Unk3300_KMBGNIICNAF = 8;</code>
+     * @return The unk3300KMBGNIICNAF.
      */
     @java.lang.Override
-    public int getDialogId() {
-      return dialogId_;
+    public int getUnk3300KMBGNIICNAF() {
+      return unk3300KMBGNIICNAF_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -160,11 +164,11 @@ public final class SaveCoopDialogReqOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (dialogId_ != 0) {
-        output.writeUInt32(6, dialogId_);
+      if (unk3300KMBGNIICNAF_ != 0) {
+        output.writeUInt32(8, unk3300KMBGNIICNAF_);
       }
-      if (mainCoopId_ != 0) {
-        output.writeUInt32(11, mainCoopId_);
+      if (unk3300AMKDDJEPAKM_ != 0) {
+        output.writeUInt32(10, unk3300AMKDDJEPAKM_);
       }
       unknownFields.writeTo(output);
     }
@@ -175,13 +179,13 @@ public final class SaveCoopDialogReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (dialogId_ != 0) {
+      if (unk3300KMBGNIICNAF_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, dialogId_);
+          .computeUInt32Size(8, unk3300KMBGNIICNAF_);
       }
-      if (mainCoopId_ != 0) {
+      if (unk3300AMKDDJEPAKM_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, mainCoopId_);
+          .computeUInt32Size(10, unk3300AMKDDJEPAKM_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -198,10 +202,10 @@ public final class SaveCoopDialogReqOuterClass {
       }
       emu.grasscutter.net.proto.SaveCoopDialogReqOuterClass.SaveCoopDialogReq other = (emu.grasscutter.net.proto.SaveCoopDialogReqOuterClass.SaveCoopDialogReq) obj;
 
-      if (getMainCoopId()
-          != other.getMainCoopId()) return false;
-      if (getDialogId()
-          != other.getDialogId()) return false;
+      if (getUnk3300AMKDDJEPAKM()
+          != other.getUnk3300AMKDDJEPAKM()) return false;
+      if (getUnk3300KMBGNIICNAF()
+          != other.getUnk3300KMBGNIICNAF()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -213,10 +217,10 @@ public final class SaveCoopDialogReqOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + MAIN_COOP_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getMainCoopId();
-      hash = (37 * hash) + DIALOG_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getDialogId();
+      hash = (37 * hash) + UNK3300_AMKDDJEPAKM_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300AMKDDJEPAKM();
+      hash = (37 * hash) + UNK3300_KMBGNIICNAF_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300KMBGNIICNAF();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -314,10 +318,14 @@ public final class SaveCoopDialogReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 2000
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 1954;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code SaveCoopDialogReq}
@@ -357,9 +365,9 @@ public final class SaveCoopDialogReqOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        mainCoopId_ = 0;
+        unk3300AMKDDJEPAKM_ = 0;
 
-        dialogId_ = 0;
+        unk3300KMBGNIICNAF_ = 0;
 
         return this;
       }
@@ -387,8 +395,8 @@ public final class SaveCoopDialogReqOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.SaveCoopDialogReqOuterClass.SaveCoopDialogReq buildPartial() {
         emu.grasscutter.net.proto.SaveCoopDialogReqOuterClass.SaveCoopDialogReq result = new emu.grasscutter.net.proto.SaveCoopDialogReqOuterClass.SaveCoopDialogReq(this);
-        result.mainCoopId_ = mainCoopId_;
-        result.dialogId_ = dialogId_;
+        result.unk3300AMKDDJEPAKM_ = unk3300AMKDDJEPAKM_;
+        result.unk3300KMBGNIICNAF_ = unk3300KMBGNIICNAF_;
         onBuilt();
         return result;
       }
@@ -437,11 +445,11 @@ public final class SaveCoopDialogReqOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.SaveCoopDialogReqOuterClass.SaveCoopDialogReq other) {
         if (other == emu.grasscutter.net.proto.SaveCoopDialogReqOuterClass.SaveCoopDialogReq.getDefaultInstance()) return this;
-        if (other.getMainCoopId() != 0) {
-          setMainCoopId(other.getMainCoopId());
+        if (other.getUnk3300AMKDDJEPAKM() != 0) {
+          setUnk3300AMKDDJEPAKM(other.getUnk3300AMKDDJEPAKM());
         }
-        if (other.getDialogId() != 0) {
-          setDialogId(other.getDialogId());
+        if (other.getUnk3300KMBGNIICNAF() != 0) {
+          setUnk3300KMBGNIICNAF(other.getUnk3300KMBGNIICNAF());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -472,64 +480,64 @@ public final class SaveCoopDialogReqOuterClass {
         return this;
       }
 
-      private int mainCoopId_ ;
+      private int unk3300AMKDDJEPAKM_ ;
       /**
-       * <code>uint32 main_coop_id = 11;</code>
-       * @return The mainCoopId.
+       * <code>uint32 Unk3300_AMKDDJEPAKM = 10;</code>
+       * @return The unk3300AMKDDJEPAKM.
        */
       @java.lang.Override
-      public int getMainCoopId() {
-        return mainCoopId_;
+      public int getUnk3300AMKDDJEPAKM() {
+        return unk3300AMKDDJEPAKM_;
       }
       /**
-       * <code>uint32 main_coop_id = 11;</code>
-       * @param value The mainCoopId to set.
+       * <code>uint32 Unk3300_AMKDDJEPAKM = 10;</code>
+       * @param value The unk3300AMKDDJEPAKM to set.
        * @return This builder for chaining.
        */
-      public Builder setMainCoopId(int value) {
+      public Builder setUnk3300AMKDDJEPAKM(int value) {
         
-        mainCoopId_ = value;
+        unk3300AMKDDJEPAKM_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 main_coop_id = 11;</code>
+       * <code>uint32 Unk3300_AMKDDJEPAKM = 10;</code>
        * @return This builder for chaining.
        */
-      public Builder clearMainCoopId() {
+      public Builder clearUnk3300AMKDDJEPAKM() {
         
-        mainCoopId_ = 0;
+        unk3300AMKDDJEPAKM_ = 0;
         onChanged();
         return this;
       }
 
-      private int dialogId_ ;
+      private int unk3300KMBGNIICNAF_ ;
       /**
-       * <code>uint32 dialog_id = 6;</code>
-       * @return The dialogId.
+       * <code>uint32 Unk3300_KMBGNIICNAF = 8;</code>
+       * @return The unk3300KMBGNIICNAF.
        */
       @java.lang.Override
-      public int getDialogId() {
-        return dialogId_;
+      public int getUnk3300KMBGNIICNAF() {
+        return unk3300KMBGNIICNAF_;
       }
       /**
-       * <code>uint32 dialog_id = 6;</code>
-       * @param value The dialogId to set.
+       * <code>uint32 Unk3300_KMBGNIICNAF = 8;</code>
+       * @param value The unk3300KMBGNIICNAF to set.
        * @return This builder for chaining.
        */
-      public Builder setDialogId(int value) {
+      public Builder setUnk3300KMBGNIICNAF(int value) {
         
-        dialogId_ = value;
+        unk3300KMBGNIICNAF_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 dialog_id = 6;</code>
+       * <code>uint32 Unk3300_KMBGNIICNAF = 8;</code>
        * @return This builder for chaining.
        */
-      public Builder clearDialogId() {
+      public Builder clearUnk3300KMBGNIICNAF() {
         
-        dialogId_ = 0;
+        unk3300KMBGNIICNAF_ = 0;
         onChanged();
         return this;
       }
@@ -600,10 +608,10 @@ public final class SaveCoopDialogReqOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\027SaveCoopDialogReq.proto\"<\n\021SaveCoopDia" +
-      "logReq\022\024\n\014main_coop_id\030\013 \001(\r\022\021\n\tdialog_i" +
-      "d\030\006 \001(\rB\033\n\031emu.grasscutter.net.protob\006pr" +
-      "oto3"
+      "\n\027SaveCoopDialogReq.proto\"M\n\021SaveCoopDia" +
+      "logReq\022\033\n\023Unk3300_AMKDDJEPAKM\030\n \001(\r\022\033\n\023U" +
+      "nk3300_KMBGNIICNAF\030\010 \001(\rB\033\n\031emu.grasscut" +
+      "ter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -614,7 +622,7 @@ public final class SaveCoopDialogReqOuterClass {
     internal_static_SaveCoopDialogReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SaveCoopDialogReq_descriptor,
-        new java.lang.String[] { "MainCoopId", "DialogId", });
+        new java.lang.String[] { "Unk3300AMKDDJEPAKM", "Unk3300KMBGNIICNAF", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

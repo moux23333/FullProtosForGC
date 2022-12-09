@@ -20,9 +20,13 @@ public final class RoguelikeMistClearNotifyOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 8324
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 8768;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code RoguelikeMistClearNotify}
@@ -247,9 +251,13 @@ public final class RoguelikeMistClearNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 8324
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 8768;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code RoguelikeMistClearNotify}

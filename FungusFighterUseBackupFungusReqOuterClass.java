@@ -19,17 +19,17 @@ public final class FungusFighterUseBackupFungusReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated uint32 backup_fungus_id_list = 1;</code>
+     * <code>repeated uint32 backup_fungus_id_list = 8;</code>
      * @return A list containing the backupFungusIdList.
      */
     java.util.List<java.lang.Integer> getBackupFungusIdListList();
     /**
-     * <code>repeated uint32 backup_fungus_id_list = 1;</code>
+     * <code>repeated uint32 backup_fungus_id_list = 8;</code>
      * @return The count of backupFungusIdList.
      */
     int getBackupFungusIdListCount();
     /**
-     * <code>repeated uint32 backup_fungus_id_list = 1;</code>
+     * <code>repeated uint32 backup_fungus_id_list = 8;</code>
      * @param index The index of the element to return.
      * @return The backupFungusIdList at the given index.
      */
@@ -37,10 +37,14 @@ public final class FungusFighterUseBackupFungusReqOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 21266
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 22075;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code FungusFighterUseBackupFungusReq}
@@ -89,7 +93,7 @@ public final class FungusFighterUseBackupFungusReqOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
+            case 64: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 backupFungusIdList_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
@@ -97,7 +101,7 @@ public final class FungusFighterUseBackupFungusReqOuterClass {
               backupFungusIdList_.addInt(input.readUInt32());
               break;
             }
-            case 10: {
+            case 66: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -145,10 +149,10 @@ public final class FungusFighterUseBackupFungusReqOuterClass {
               emu.grasscutter.net.proto.FungusFighterUseBackupFungusReqOuterClass.FungusFighterUseBackupFungusReq.class, emu.grasscutter.net.proto.FungusFighterUseBackupFungusReqOuterClass.FungusFighterUseBackupFungusReq.Builder.class);
     }
 
-    public static final int BACKUP_FUNGUS_ID_LIST_FIELD_NUMBER = 1;
+    public static final int BACKUP_FUNGUS_ID_LIST_FIELD_NUMBER = 8;
     private com.google.protobuf.Internal.IntList backupFungusIdList_;
     /**
-     * <code>repeated uint32 backup_fungus_id_list = 1;</code>
+     * <code>repeated uint32 backup_fungus_id_list = 8;</code>
      * @return A list containing the backupFungusIdList.
      */
     @java.lang.Override
@@ -157,14 +161,14 @@ public final class FungusFighterUseBackupFungusReqOuterClass {
       return backupFungusIdList_;
     }
     /**
-     * <code>repeated uint32 backup_fungus_id_list = 1;</code>
+     * <code>repeated uint32 backup_fungus_id_list = 8;</code>
      * @return The count of backupFungusIdList.
      */
     public int getBackupFungusIdListCount() {
       return backupFungusIdList_.size();
     }
     /**
-     * <code>repeated uint32 backup_fungus_id_list = 1;</code>
+     * <code>repeated uint32 backup_fungus_id_list = 8;</code>
      * @param index The index of the element to return.
      * @return The backupFungusIdList at the given index.
      */
@@ -189,7 +193,7 @@ public final class FungusFighterUseBackupFungusReqOuterClass {
                         throws java.io.IOException {
       getSerializedSize();
       if (getBackupFungusIdListList().size() > 0) {
-        output.writeUInt32NoTag(10);
+        output.writeUInt32NoTag(66);
         output.writeUInt32NoTag(backupFungusIdListMemoizedSerializedSize);
       }
       for (int i = 0; i < backupFungusIdList_.size(); i++) {
@@ -347,10 +351,14 @@ public final class FungusFighterUseBackupFungusReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 21266
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 22075;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code FungusFighterUseBackupFungusReq}
@@ -520,7 +528,7 @@ public final class FungusFighterUseBackupFungusReqOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 backup_fungus_id_list = 1;</code>
+       * <code>repeated uint32 backup_fungus_id_list = 8;</code>
        * @return A list containing the backupFungusIdList.
        */
       public java.util.List<java.lang.Integer>
@@ -529,14 +537,14 @@ public final class FungusFighterUseBackupFungusReqOuterClass {
                  java.util.Collections.unmodifiableList(backupFungusIdList_) : backupFungusIdList_;
       }
       /**
-       * <code>repeated uint32 backup_fungus_id_list = 1;</code>
+       * <code>repeated uint32 backup_fungus_id_list = 8;</code>
        * @return The count of backupFungusIdList.
        */
       public int getBackupFungusIdListCount() {
         return backupFungusIdList_.size();
       }
       /**
-       * <code>repeated uint32 backup_fungus_id_list = 1;</code>
+       * <code>repeated uint32 backup_fungus_id_list = 8;</code>
        * @param index The index of the element to return.
        * @return The backupFungusIdList at the given index.
        */
@@ -544,7 +552,7 @@ public final class FungusFighterUseBackupFungusReqOuterClass {
         return backupFungusIdList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 backup_fungus_id_list = 1;</code>
+       * <code>repeated uint32 backup_fungus_id_list = 8;</code>
        * @param index The index to set the value at.
        * @param value The backupFungusIdList to set.
        * @return This builder for chaining.
@@ -557,7 +565,7 @@ public final class FungusFighterUseBackupFungusReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 backup_fungus_id_list = 1;</code>
+       * <code>repeated uint32 backup_fungus_id_list = 8;</code>
        * @param value The backupFungusIdList to add.
        * @return This builder for chaining.
        */
@@ -568,7 +576,7 @@ public final class FungusFighterUseBackupFungusReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 backup_fungus_id_list = 1;</code>
+       * <code>repeated uint32 backup_fungus_id_list = 8;</code>
        * @param values The backupFungusIdList to add.
        * @return This builder for chaining.
        */
@@ -581,7 +589,7 @@ public final class FungusFighterUseBackupFungusReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 backup_fungus_id_list = 1;</code>
+       * <code>repeated uint32 backup_fungus_id_list = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearBackupFungusIdList() {
@@ -659,7 +667,7 @@ public final class FungusFighterUseBackupFungusReqOuterClass {
     java.lang.String[] descriptorData = {
       "\n%FungusFighterUseBackupFungusReq.proto\"" +
       "@\n\037FungusFighterUseBackupFungusReq\022\035\n\025ba" +
-      "ckup_fungus_id_list\030\001 \003(\rB\033\n\031emu.grasscu" +
+      "ckup_fungus_id_list\030\010 \003(\rB\033\n\031emu.grasscu" +
       "tter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

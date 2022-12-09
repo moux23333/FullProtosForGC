@@ -19,34 +19,38 @@ public final class CataLogNewFinishedGlobalWatcherNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .CataLogGlobalWatcherFinishedData new_finished_global_watcher_data_list = 2;</code>
+     * <code>repeated .CataLogGlobalWatcherFinishedData new_finished_global_watcher_data_list = 11;</code>
      */
     java.util.List<emu.grasscutter.net.proto.CataLogGlobalWatcherFinishedDataOuterClass.CataLogGlobalWatcherFinishedData> 
         getNewFinishedGlobalWatcherDataListList();
     /**
-     * <code>repeated .CataLogGlobalWatcherFinishedData new_finished_global_watcher_data_list = 2;</code>
+     * <code>repeated .CataLogGlobalWatcherFinishedData new_finished_global_watcher_data_list = 11;</code>
      */
     emu.grasscutter.net.proto.CataLogGlobalWatcherFinishedDataOuterClass.CataLogGlobalWatcherFinishedData getNewFinishedGlobalWatcherDataList(int index);
     /**
-     * <code>repeated .CataLogGlobalWatcherFinishedData new_finished_global_watcher_data_list = 2;</code>
+     * <code>repeated .CataLogGlobalWatcherFinishedData new_finished_global_watcher_data_list = 11;</code>
      */
     int getNewFinishedGlobalWatcherDataListCount();
     /**
-     * <code>repeated .CataLogGlobalWatcherFinishedData new_finished_global_watcher_data_list = 2;</code>
+     * <code>repeated .CataLogGlobalWatcherFinishedData new_finished_global_watcher_data_list = 11;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.CataLogGlobalWatcherFinishedDataOuterClass.CataLogGlobalWatcherFinishedDataOrBuilder> 
         getNewFinishedGlobalWatcherDataListOrBuilderList();
     /**
-     * <code>repeated .CataLogGlobalWatcherFinishedData new_finished_global_watcher_data_list = 2;</code>
+     * <code>repeated .CataLogGlobalWatcherFinishedData new_finished_global_watcher_data_list = 11;</code>
      */
     emu.grasscutter.net.proto.CataLogGlobalWatcherFinishedDataOuterClass.CataLogGlobalWatcherFinishedDataOrBuilder getNewFinishedGlobalWatcherDataListOrBuilder(
         int index);
   }
   /**
    * <pre>
-   * CmdId: 6395
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 6368;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code CataLogNewFinishedGlobalWatcherNotify}
@@ -95,7 +99,7 @@ public final class CataLogNewFinishedGlobalWatcherNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 18: {
+            case 90: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 newFinishedGlobalWatcherDataList_ = new java.util.ArrayList<emu.grasscutter.net.proto.CataLogGlobalWatcherFinishedDataOuterClass.CataLogGlobalWatcherFinishedData>();
                 mutable_bitField0_ |= 0x00000001;
@@ -139,17 +143,17 @@ public final class CataLogNewFinishedGlobalWatcherNotifyOuterClass {
               emu.grasscutter.net.proto.CataLogNewFinishedGlobalWatcherNotifyOuterClass.CataLogNewFinishedGlobalWatcherNotify.class, emu.grasscutter.net.proto.CataLogNewFinishedGlobalWatcherNotifyOuterClass.CataLogNewFinishedGlobalWatcherNotify.Builder.class);
     }
 
-    public static final int NEW_FINISHED_GLOBAL_WATCHER_DATA_LIST_FIELD_NUMBER = 2;
+    public static final int NEW_FINISHED_GLOBAL_WATCHER_DATA_LIST_FIELD_NUMBER = 11;
     private java.util.List<emu.grasscutter.net.proto.CataLogGlobalWatcherFinishedDataOuterClass.CataLogGlobalWatcherFinishedData> newFinishedGlobalWatcherDataList_;
     /**
-     * <code>repeated .CataLogGlobalWatcherFinishedData new_finished_global_watcher_data_list = 2;</code>
+     * <code>repeated .CataLogGlobalWatcherFinishedData new_finished_global_watcher_data_list = 11;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.CataLogGlobalWatcherFinishedDataOuterClass.CataLogGlobalWatcherFinishedData> getNewFinishedGlobalWatcherDataListList() {
       return newFinishedGlobalWatcherDataList_;
     }
     /**
-     * <code>repeated .CataLogGlobalWatcherFinishedData new_finished_global_watcher_data_list = 2;</code>
+     * <code>repeated .CataLogGlobalWatcherFinishedData new_finished_global_watcher_data_list = 11;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.CataLogGlobalWatcherFinishedDataOuterClass.CataLogGlobalWatcherFinishedDataOrBuilder> 
@@ -157,21 +161,21 @@ public final class CataLogNewFinishedGlobalWatcherNotifyOuterClass {
       return newFinishedGlobalWatcherDataList_;
     }
     /**
-     * <code>repeated .CataLogGlobalWatcherFinishedData new_finished_global_watcher_data_list = 2;</code>
+     * <code>repeated .CataLogGlobalWatcherFinishedData new_finished_global_watcher_data_list = 11;</code>
      */
     @java.lang.Override
     public int getNewFinishedGlobalWatcherDataListCount() {
       return newFinishedGlobalWatcherDataList_.size();
     }
     /**
-     * <code>repeated .CataLogGlobalWatcherFinishedData new_finished_global_watcher_data_list = 2;</code>
+     * <code>repeated .CataLogGlobalWatcherFinishedData new_finished_global_watcher_data_list = 11;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.CataLogGlobalWatcherFinishedDataOuterClass.CataLogGlobalWatcherFinishedData getNewFinishedGlobalWatcherDataList(int index) {
       return newFinishedGlobalWatcherDataList_.get(index);
     }
     /**
-     * <code>repeated .CataLogGlobalWatcherFinishedData new_finished_global_watcher_data_list = 2;</code>
+     * <code>repeated .CataLogGlobalWatcherFinishedData new_finished_global_watcher_data_list = 11;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.CataLogGlobalWatcherFinishedDataOuterClass.CataLogGlobalWatcherFinishedDataOrBuilder getNewFinishedGlobalWatcherDataListOrBuilder(
@@ -194,7 +198,7 @@ public final class CataLogNewFinishedGlobalWatcherNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       for (int i = 0; i < newFinishedGlobalWatcherDataList_.size(); i++) {
-        output.writeMessage(2, newFinishedGlobalWatcherDataList_.get(i));
+        output.writeMessage(11, newFinishedGlobalWatcherDataList_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -207,7 +211,7 @@ public final class CataLogNewFinishedGlobalWatcherNotifyOuterClass {
       size = 0;
       for (int i = 0; i < newFinishedGlobalWatcherDataList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(2, newFinishedGlobalWatcherDataList_.get(i));
+          .computeMessageSize(11, newFinishedGlobalWatcherDataList_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -338,9 +342,13 @@ public final class CataLogNewFinishedGlobalWatcherNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 6395
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 6368;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code CataLogNewFinishedGlobalWatcherNotify}
@@ -540,7 +548,7 @@ public final class CataLogNewFinishedGlobalWatcherNotifyOuterClass {
           emu.grasscutter.net.proto.CataLogGlobalWatcherFinishedDataOuterClass.CataLogGlobalWatcherFinishedData, emu.grasscutter.net.proto.CataLogGlobalWatcherFinishedDataOuterClass.CataLogGlobalWatcherFinishedData.Builder, emu.grasscutter.net.proto.CataLogGlobalWatcherFinishedDataOuterClass.CataLogGlobalWatcherFinishedDataOrBuilder> newFinishedGlobalWatcherDataListBuilder_;
 
       /**
-       * <code>repeated .CataLogGlobalWatcherFinishedData new_finished_global_watcher_data_list = 2;</code>
+       * <code>repeated .CataLogGlobalWatcherFinishedData new_finished_global_watcher_data_list = 11;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.CataLogGlobalWatcherFinishedDataOuterClass.CataLogGlobalWatcherFinishedData> getNewFinishedGlobalWatcherDataListList() {
         if (newFinishedGlobalWatcherDataListBuilder_ == null) {
@@ -550,7 +558,7 @@ public final class CataLogNewFinishedGlobalWatcherNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .CataLogGlobalWatcherFinishedData new_finished_global_watcher_data_list = 2;</code>
+       * <code>repeated .CataLogGlobalWatcherFinishedData new_finished_global_watcher_data_list = 11;</code>
        */
       public int getNewFinishedGlobalWatcherDataListCount() {
         if (newFinishedGlobalWatcherDataListBuilder_ == null) {
@@ -560,7 +568,7 @@ public final class CataLogNewFinishedGlobalWatcherNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .CataLogGlobalWatcherFinishedData new_finished_global_watcher_data_list = 2;</code>
+       * <code>repeated .CataLogGlobalWatcherFinishedData new_finished_global_watcher_data_list = 11;</code>
        */
       public emu.grasscutter.net.proto.CataLogGlobalWatcherFinishedDataOuterClass.CataLogGlobalWatcherFinishedData getNewFinishedGlobalWatcherDataList(int index) {
         if (newFinishedGlobalWatcherDataListBuilder_ == null) {
@@ -570,7 +578,7 @@ public final class CataLogNewFinishedGlobalWatcherNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .CataLogGlobalWatcherFinishedData new_finished_global_watcher_data_list = 2;</code>
+       * <code>repeated .CataLogGlobalWatcherFinishedData new_finished_global_watcher_data_list = 11;</code>
        */
       public Builder setNewFinishedGlobalWatcherDataList(
           int index, emu.grasscutter.net.proto.CataLogGlobalWatcherFinishedDataOuterClass.CataLogGlobalWatcherFinishedData value) {
@@ -587,7 +595,7 @@ public final class CataLogNewFinishedGlobalWatcherNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .CataLogGlobalWatcherFinishedData new_finished_global_watcher_data_list = 2;</code>
+       * <code>repeated .CataLogGlobalWatcherFinishedData new_finished_global_watcher_data_list = 11;</code>
        */
       public Builder setNewFinishedGlobalWatcherDataList(
           int index, emu.grasscutter.net.proto.CataLogGlobalWatcherFinishedDataOuterClass.CataLogGlobalWatcherFinishedData.Builder builderForValue) {
@@ -601,7 +609,7 @@ public final class CataLogNewFinishedGlobalWatcherNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .CataLogGlobalWatcherFinishedData new_finished_global_watcher_data_list = 2;</code>
+       * <code>repeated .CataLogGlobalWatcherFinishedData new_finished_global_watcher_data_list = 11;</code>
        */
       public Builder addNewFinishedGlobalWatcherDataList(emu.grasscutter.net.proto.CataLogGlobalWatcherFinishedDataOuterClass.CataLogGlobalWatcherFinishedData value) {
         if (newFinishedGlobalWatcherDataListBuilder_ == null) {
@@ -617,7 +625,7 @@ public final class CataLogNewFinishedGlobalWatcherNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .CataLogGlobalWatcherFinishedData new_finished_global_watcher_data_list = 2;</code>
+       * <code>repeated .CataLogGlobalWatcherFinishedData new_finished_global_watcher_data_list = 11;</code>
        */
       public Builder addNewFinishedGlobalWatcherDataList(
           int index, emu.grasscutter.net.proto.CataLogGlobalWatcherFinishedDataOuterClass.CataLogGlobalWatcherFinishedData value) {
@@ -634,7 +642,7 @@ public final class CataLogNewFinishedGlobalWatcherNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .CataLogGlobalWatcherFinishedData new_finished_global_watcher_data_list = 2;</code>
+       * <code>repeated .CataLogGlobalWatcherFinishedData new_finished_global_watcher_data_list = 11;</code>
        */
       public Builder addNewFinishedGlobalWatcherDataList(
           emu.grasscutter.net.proto.CataLogGlobalWatcherFinishedDataOuterClass.CataLogGlobalWatcherFinishedData.Builder builderForValue) {
@@ -648,7 +656,7 @@ public final class CataLogNewFinishedGlobalWatcherNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .CataLogGlobalWatcherFinishedData new_finished_global_watcher_data_list = 2;</code>
+       * <code>repeated .CataLogGlobalWatcherFinishedData new_finished_global_watcher_data_list = 11;</code>
        */
       public Builder addNewFinishedGlobalWatcherDataList(
           int index, emu.grasscutter.net.proto.CataLogGlobalWatcherFinishedDataOuterClass.CataLogGlobalWatcherFinishedData.Builder builderForValue) {
@@ -662,7 +670,7 @@ public final class CataLogNewFinishedGlobalWatcherNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .CataLogGlobalWatcherFinishedData new_finished_global_watcher_data_list = 2;</code>
+       * <code>repeated .CataLogGlobalWatcherFinishedData new_finished_global_watcher_data_list = 11;</code>
        */
       public Builder addAllNewFinishedGlobalWatcherDataList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.CataLogGlobalWatcherFinishedDataOuterClass.CataLogGlobalWatcherFinishedData> values) {
@@ -677,7 +685,7 @@ public final class CataLogNewFinishedGlobalWatcherNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .CataLogGlobalWatcherFinishedData new_finished_global_watcher_data_list = 2;</code>
+       * <code>repeated .CataLogGlobalWatcherFinishedData new_finished_global_watcher_data_list = 11;</code>
        */
       public Builder clearNewFinishedGlobalWatcherDataList() {
         if (newFinishedGlobalWatcherDataListBuilder_ == null) {
@@ -690,7 +698,7 @@ public final class CataLogNewFinishedGlobalWatcherNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .CataLogGlobalWatcherFinishedData new_finished_global_watcher_data_list = 2;</code>
+       * <code>repeated .CataLogGlobalWatcherFinishedData new_finished_global_watcher_data_list = 11;</code>
        */
       public Builder removeNewFinishedGlobalWatcherDataList(int index) {
         if (newFinishedGlobalWatcherDataListBuilder_ == null) {
@@ -703,14 +711,14 @@ public final class CataLogNewFinishedGlobalWatcherNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .CataLogGlobalWatcherFinishedData new_finished_global_watcher_data_list = 2;</code>
+       * <code>repeated .CataLogGlobalWatcherFinishedData new_finished_global_watcher_data_list = 11;</code>
        */
       public emu.grasscutter.net.proto.CataLogGlobalWatcherFinishedDataOuterClass.CataLogGlobalWatcherFinishedData.Builder getNewFinishedGlobalWatcherDataListBuilder(
           int index) {
         return getNewFinishedGlobalWatcherDataListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .CataLogGlobalWatcherFinishedData new_finished_global_watcher_data_list = 2;</code>
+       * <code>repeated .CataLogGlobalWatcherFinishedData new_finished_global_watcher_data_list = 11;</code>
        */
       public emu.grasscutter.net.proto.CataLogGlobalWatcherFinishedDataOuterClass.CataLogGlobalWatcherFinishedDataOrBuilder getNewFinishedGlobalWatcherDataListOrBuilder(
           int index) {
@@ -720,7 +728,7 @@ public final class CataLogNewFinishedGlobalWatcherNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .CataLogGlobalWatcherFinishedData new_finished_global_watcher_data_list = 2;</code>
+       * <code>repeated .CataLogGlobalWatcherFinishedData new_finished_global_watcher_data_list = 11;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.CataLogGlobalWatcherFinishedDataOuterClass.CataLogGlobalWatcherFinishedDataOrBuilder> 
            getNewFinishedGlobalWatcherDataListOrBuilderList() {
@@ -731,14 +739,14 @@ public final class CataLogNewFinishedGlobalWatcherNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .CataLogGlobalWatcherFinishedData new_finished_global_watcher_data_list = 2;</code>
+       * <code>repeated .CataLogGlobalWatcherFinishedData new_finished_global_watcher_data_list = 11;</code>
        */
       public emu.grasscutter.net.proto.CataLogGlobalWatcherFinishedDataOuterClass.CataLogGlobalWatcherFinishedData.Builder addNewFinishedGlobalWatcherDataListBuilder() {
         return getNewFinishedGlobalWatcherDataListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.CataLogGlobalWatcherFinishedDataOuterClass.CataLogGlobalWatcherFinishedData.getDefaultInstance());
       }
       /**
-       * <code>repeated .CataLogGlobalWatcherFinishedData new_finished_global_watcher_data_list = 2;</code>
+       * <code>repeated .CataLogGlobalWatcherFinishedData new_finished_global_watcher_data_list = 11;</code>
        */
       public emu.grasscutter.net.proto.CataLogGlobalWatcherFinishedDataOuterClass.CataLogGlobalWatcherFinishedData.Builder addNewFinishedGlobalWatcherDataListBuilder(
           int index) {
@@ -746,7 +754,7 @@ public final class CataLogNewFinishedGlobalWatcherNotifyOuterClass {
             index, emu.grasscutter.net.proto.CataLogGlobalWatcherFinishedDataOuterClass.CataLogGlobalWatcherFinishedData.getDefaultInstance());
       }
       /**
-       * <code>repeated .CataLogGlobalWatcherFinishedData new_finished_global_watcher_data_list = 2;</code>
+       * <code>repeated .CataLogGlobalWatcherFinishedData new_finished_global_watcher_data_list = 11;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.CataLogGlobalWatcherFinishedDataOuterClass.CataLogGlobalWatcherFinishedData.Builder> 
            getNewFinishedGlobalWatcherDataListBuilderList() {
@@ -837,7 +845,7 @@ public final class CataLogNewFinishedGlobalWatcherNotifyOuterClass {
       "proto\032&CataLogGlobalWatcherFinishedData." +
       "proto\"y\n%CataLogNewFinishedGlobalWatcher" +
       "Notify\022P\n%new_finished_global_watcher_da" +
-      "ta_list\030\002 \003(\0132!.CataLogGlobalWatcherFini" +
+      "ta_list\030\013 \003(\0132!.CataLogGlobalWatcherFini" +
       "shedDataB\033\n\031emu.grasscutter.net.protob\006p" +
       "roto3"
     };

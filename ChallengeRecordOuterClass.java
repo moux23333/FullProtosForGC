@@ -19,25 +19,25 @@ public final class ChallengeRecordOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 challenge_record_type = 14;</code>
+     * <code>uint32 challenge_record_type = 2;</code>
      * @return The challengeRecordType.
      */
     int getChallengeRecordType();
 
     /**
-     * <code>uint32 challenge_index = 15;</code>
+     * <code>uint32 challenge_index = 3;</code>
      * @return The challengeIndex.
      */
     int getChallengeIndex();
 
     /**
-     * <code>uint32 challenge_id = 1;</code>
+     * <code>uint32 challenge_id = 9;</code>
      * @return The challengeId.
      */
     int getChallengeId();
 
     /**
-     * <code>uint32 best_value = 8;</code>
+     * <code>uint32 best_value = 4;</code>
      * @return The bestValue.
      */
     int getBestValue();
@@ -87,24 +87,24 @@ public final class ChallengeRecordOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
-
-              challengeId_ = input.readUInt32();
-              break;
-            }
-            case 64: {
-
-              bestValue_ = input.readUInt32();
-              break;
-            }
-            case 112: {
+            case 16: {
 
               challengeRecordType_ = input.readUInt32();
               break;
             }
-            case 120: {
+            case 24: {
 
               challengeIndex_ = input.readUInt32();
+              break;
+            }
+            case 32: {
+
+              bestValue_ = input.readUInt32();
+              break;
+            }
+            case 72: {
+
+              challengeId_ = input.readUInt32();
               break;
             }
             default: {
@@ -139,10 +139,10 @@ public final class ChallengeRecordOuterClass {
               emu.grasscutter.net.proto.ChallengeRecordOuterClass.ChallengeRecord.class, emu.grasscutter.net.proto.ChallengeRecordOuterClass.ChallengeRecord.Builder.class);
     }
 
-    public static final int CHALLENGE_RECORD_TYPE_FIELD_NUMBER = 14;
+    public static final int CHALLENGE_RECORD_TYPE_FIELD_NUMBER = 2;
     private int challengeRecordType_;
     /**
-     * <code>uint32 challenge_record_type = 14;</code>
+     * <code>uint32 challenge_record_type = 2;</code>
      * @return The challengeRecordType.
      */
     @java.lang.Override
@@ -150,10 +150,10 @@ public final class ChallengeRecordOuterClass {
       return challengeRecordType_;
     }
 
-    public static final int CHALLENGE_INDEX_FIELD_NUMBER = 15;
+    public static final int CHALLENGE_INDEX_FIELD_NUMBER = 3;
     private int challengeIndex_;
     /**
-     * <code>uint32 challenge_index = 15;</code>
+     * <code>uint32 challenge_index = 3;</code>
      * @return The challengeIndex.
      */
     @java.lang.Override
@@ -161,10 +161,10 @@ public final class ChallengeRecordOuterClass {
       return challengeIndex_;
     }
 
-    public static final int CHALLENGE_ID_FIELD_NUMBER = 1;
+    public static final int CHALLENGE_ID_FIELD_NUMBER = 9;
     private int challengeId_;
     /**
-     * <code>uint32 challenge_id = 1;</code>
+     * <code>uint32 challenge_id = 9;</code>
      * @return The challengeId.
      */
     @java.lang.Override
@@ -172,10 +172,10 @@ public final class ChallengeRecordOuterClass {
       return challengeId_;
     }
 
-    public static final int BEST_VALUE_FIELD_NUMBER = 8;
+    public static final int BEST_VALUE_FIELD_NUMBER = 4;
     private int bestValue_;
     /**
-     * <code>uint32 best_value = 8;</code>
+     * <code>uint32 best_value = 4;</code>
      * @return The bestValue.
      */
     @java.lang.Override
@@ -197,17 +197,17 @@ public final class ChallengeRecordOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (challengeId_ != 0) {
-        output.writeUInt32(1, challengeId_);
-      }
-      if (bestValue_ != 0) {
-        output.writeUInt32(8, bestValue_);
-      }
       if (challengeRecordType_ != 0) {
-        output.writeUInt32(14, challengeRecordType_);
+        output.writeUInt32(2, challengeRecordType_);
       }
       if (challengeIndex_ != 0) {
-        output.writeUInt32(15, challengeIndex_);
+        output.writeUInt32(3, challengeIndex_);
+      }
+      if (bestValue_ != 0) {
+        output.writeUInt32(4, bestValue_);
+      }
+      if (challengeId_ != 0) {
+        output.writeUInt32(9, challengeId_);
       }
       unknownFields.writeTo(output);
     }
@@ -218,21 +218,21 @@ public final class ChallengeRecordOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (challengeId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, challengeId_);
-      }
-      if (bestValue_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, bestValue_);
-      }
       if (challengeRecordType_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, challengeRecordType_);
+          .computeUInt32Size(2, challengeRecordType_);
       }
       if (challengeIndex_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, challengeIndex_);
+          .computeUInt32Size(3, challengeIndex_);
+      }
+      if (bestValue_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(4, bestValue_);
+      }
+      if (challengeId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(9, challengeId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -538,7 +538,7 @@ public final class ChallengeRecordOuterClass {
 
       private int challengeRecordType_ ;
       /**
-       * <code>uint32 challenge_record_type = 14;</code>
+       * <code>uint32 challenge_record_type = 2;</code>
        * @return The challengeRecordType.
        */
       @java.lang.Override
@@ -546,7 +546,7 @@ public final class ChallengeRecordOuterClass {
         return challengeRecordType_;
       }
       /**
-       * <code>uint32 challenge_record_type = 14;</code>
+       * <code>uint32 challenge_record_type = 2;</code>
        * @param value The challengeRecordType to set.
        * @return This builder for chaining.
        */
@@ -557,7 +557,7 @@ public final class ChallengeRecordOuterClass {
         return this;
       }
       /**
-       * <code>uint32 challenge_record_type = 14;</code>
+       * <code>uint32 challenge_record_type = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearChallengeRecordType() {
@@ -569,7 +569,7 @@ public final class ChallengeRecordOuterClass {
 
       private int challengeIndex_ ;
       /**
-       * <code>uint32 challenge_index = 15;</code>
+       * <code>uint32 challenge_index = 3;</code>
        * @return The challengeIndex.
        */
       @java.lang.Override
@@ -577,7 +577,7 @@ public final class ChallengeRecordOuterClass {
         return challengeIndex_;
       }
       /**
-       * <code>uint32 challenge_index = 15;</code>
+       * <code>uint32 challenge_index = 3;</code>
        * @param value The challengeIndex to set.
        * @return This builder for chaining.
        */
@@ -588,7 +588,7 @@ public final class ChallengeRecordOuterClass {
         return this;
       }
       /**
-       * <code>uint32 challenge_index = 15;</code>
+       * <code>uint32 challenge_index = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearChallengeIndex() {
@@ -600,7 +600,7 @@ public final class ChallengeRecordOuterClass {
 
       private int challengeId_ ;
       /**
-       * <code>uint32 challenge_id = 1;</code>
+       * <code>uint32 challenge_id = 9;</code>
        * @return The challengeId.
        */
       @java.lang.Override
@@ -608,7 +608,7 @@ public final class ChallengeRecordOuterClass {
         return challengeId_;
       }
       /**
-       * <code>uint32 challenge_id = 1;</code>
+       * <code>uint32 challenge_id = 9;</code>
        * @param value The challengeId to set.
        * @return This builder for chaining.
        */
@@ -619,7 +619,7 @@ public final class ChallengeRecordOuterClass {
         return this;
       }
       /**
-       * <code>uint32 challenge_id = 1;</code>
+       * <code>uint32 challenge_id = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearChallengeId() {
@@ -631,7 +631,7 @@ public final class ChallengeRecordOuterClass {
 
       private int bestValue_ ;
       /**
-       * <code>uint32 best_value = 8;</code>
+       * <code>uint32 best_value = 4;</code>
        * @return The bestValue.
        */
       @java.lang.Override
@@ -639,7 +639,7 @@ public final class ChallengeRecordOuterClass {
         return bestValue_;
       }
       /**
-       * <code>uint32 best_value = 8;</code>
+       * <code>uint32 best_value = 4;</code>
        * @param value The bestValue to set.
        * @return This builder for chaining.
        */
@@ -650,7 +650,7 @@ public final class ChallengeRecordOuterClass {
         return this;
       }
       /**
-       * <code>uint32 best_value = 8;</code>
+       * <code>uint32 best_value = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearBestValue() {
@@ -727,9 +727,9 @@ public final class ChallengeRecordOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\025ChallengeRecord.proto\"s\n\017ChallengeReco" +
-      "rd\022\035\n\025challenge_record_type\030\016 \001(\r\022\027\n\017cha" +
-      "llenge_index\030\017 \001(\r\022\024\n\014challenge_id\030\001 \001(\r" +
-      "\022\022\n\nbest_value\030\010 \001(\rB\033\n\031emu.grasscutter." +
+      "rd\022\035\n\025challenge_record_type\030\002 \001(\r\022\027\n\017cha" +
+      "llenge_index\030\003 \001(\r\022\024\n\014challenge_id\030\t \001(\r" +
+      "\022\022\n\nbest_value\030\004 \001(\rB\033\n\031emu.grasscutter." +
       "net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

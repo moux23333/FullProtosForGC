@@ -19,73 +19,77 @@ public final class GCGTavernNpcInfoNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .GCGTavernNpcInfo week_npc_list = 1;</code>
+     * <code>repeated .GCGTavernNpcInfo Unk3300_FKAKHMMIEBC = 12;</code>
      */
     java.util.List<emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfo> 
-        getWeekNpcListList();
+        getUnk3300FKAKHMMIEBCList();
     /**
-     * <code>repeated .GCGTavernNpcInfo week_npc_list = 1;</code>
+     * <code>repeated .GCGTavernNpcInfo Unk3300_FKAKHMMIEBC = 12;</code>
      */
-    emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfo getWeekNpcList(int index);
+    emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfo getUnk3300FKAKHMMIEBC(int index);
     /**
-     * <code>repeated .GCGTavernNpcInfo week_npc_list = 1;</code>
+     * <code>repeated .GCGTavernNpcInfo Unk3300_FKAKHMMIEBC = 12;</code>
      */
-    int getWeekNpcListCount();
+    int getUnk3300FKAKHMMIEBCCount();
     /**
-     * <code>repeated .GCGTavernNpcInfo week_npc_list = 1;</code>
+     * <code>repeated .GCGTavernNpcInfo Unk3300_FKAKHMMIEBC = 12;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfoOrBuilder> 
-        getWeekNpcListOrBuilderList();
+        getUnk3300FKAKHMMIEBCOrBuilderList();
     /**
-     * <code>repeated .GCGTavernNpcInfo week_npc_list = 1;</code>
+     * <code>repeated .GCGTavernNpcInfo Unk3300_FKAKHMMIEBC = 12;</code>
      */
-    emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfoOrBuilder getWeekNpcListOrBuilder(
+    emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfoOrBuilder getUnk3300FKAKHMMIEBCOrBuilder(
         int index);
 
     /**
-     * <code>.GCGTavernNpcInfo character_npc = 5;</code>
+     * <code>repeated .GCGTavernNpcInfo Unk3300_BAMLNENDLCM = 2;</code>
+     */
+    java.util.List<emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfo> 
+        getUnk3300BAMLNENDLCMList();
+    /**
+     * <code>repeated .GCGTavernNpcInfo Unk3300_BAMLNENDLCM = 2;</code>
+     */
+    emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfo getUnk3300BAMLNENDLCM(int index);
+    /**
+     * <code>repeated .GCGTavernNpcInfo Unk3300_BAMLNENDLCM = 2;</code>
+     */
+    int getUnk3300BAMLNENDLCMCount();
+    /**
+     * <code>repeated .GCGTavernNpcInfo Unk3300_BAMLNENDLCM = 2;</code>
+     */
+    java.util.List<? extends emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfoOrBuilder> 
+        getUnk3300BAMLNENDLCMOrBuilderList();
+    /**
+     * <code>repeated .GCGTavernNpcInfo Unk3300_BAMLNENDLCM = 2;</code>
+     */
+    emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfoOrBuilder getUnk3300BAMLNENDLCMOrBuilder(
+        int index);
+
+    /**
+     * <code>.GCGTavernNpcInfo character_npc = 11;</code>
      * @return Whether the characterNpc field is set.
      */
     boolean hasCharacterNpc();
     /**
-     * <code>.GCGTavernNpcInfo character_npc = 5;</code>
+     * <code>.GCGTavernNpcInfo character_npc = 11;</code>
      * @return The characterNpc.
      */
     emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfo getCharacterNpc();
     /**
-     * <code>.GCGTavernNpcInfo character_npc = 5;</code>
+     * <code>.GCGTavernNpcInfo character_npc = 11;</code>
      */
     emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfoOrBuilder getCharacterNpcOrBuilder();
-
-    /**
-     * <code>repeated .GCGTavernNpcInfo const_npc_list = 15;</code>
-     */
-    java.util.List<emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfo> 
-        getConstNpcListList();
-    /**
-     * <code>repeated .GCGTavernNpcInfo const_npc_list = 15;</code>
-     */
-    emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfo getConstNpcList(int index);
-    /**
-     * <code>repeated .GCGTavernNpcInfo const_npc_list = 15;</code>
-     */
-    int getConstNpcListCount();
-    /**
-     * <code>repeated .GCGTavernNpcInfo const_npc_list = 15;</code>
-     */
-    java.util.List<? extends emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfoOrBuilder> 
-        getConstNpcListOrBuilderList();
-    /**
-     * <code>repeated .GCGTavernNpcInfo const_npc_list = 15;</code>
-     */
-    emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfoOrBuilder getConstNpcListOrBuilder(
-        int index);
   }
   /**
    * <pre>
-   * CmdId: 7290
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 7267;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code GCGTavernNpcInfoNotify}
@@ -100,8 +104,8 @@ public final class GCGTavernNpcInfoNotifyOuterClass {
       super(builder);
     }
     private GCGTavernNpcInfoNotify() {
-      weekNpcList_ = java.util.Collections.emptyList();
-      constNpcList_ = java.util.Collections.emptyList();
+      unk3300FKAKHMMIEBC_ = java.util.Collections.emptyList();
+      unk3300BAMLNENDLCM_ = java.util.Collections.emptyList();
     }
 
     @java.lang.Override
@@ -135,16 +139,16 @@ public final class GCGTavernNpcInfoNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 10: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                weekNpcList_ = new java.util.ArrayList<emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfo>();
-                mutable_bitField0_ |= 0x00000001;
+            case 18: {
+              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
+                unk3300BAMLNENDLCM_ = new java.util.ArrayList<emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfo>();
+                mutable_bitField0_ |= 0x00000002;
               }
-              weekNpcList_.add(
+              unk3300BAMLNENDLCM_.add(
                   input.readMessage(emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfo.parser(), extensionRegistry));
               break;
             }
-            case 42: {
+            case 90: {
               emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfo.Builder subBuilder = null;
               if (characterNpc_ != null) {
                 subBuilder = characterNpc_.toBuilder();
@@ -157,12 +161,12 @@ public final class GCGTavernNpcInfoNotifyOuterClass {
 
               break;
             }
-            case 122: {
-              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
-                constNpcList_ = new java.util.ArrayList<emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfo>();
-                mutable_bitField0_ |= 0x00000002;
+            case 98: {
+              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+                unk3300FKAKHMMIEBC_ = new java.util.ArrayList<emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfo>();
+                mutable_bitField0_ |= 0x00000001;
               }
-              constNpcList_.add(
+              unk3300FKAKHMMIEBC_.add(
                   input.readMessage(emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfo.parser(), extensionRegistry));
               break;
             }
@@ -181,11 +185,11 @@ public final class GCGTavernNpcInfoNotifyOuterClass {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
       } finally {
-        if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          weekNpcList_ = java.util.Collections.unmodifiableList(weekNpcList_);
-        }
         if (((mutable_bitField0_ & 0x00000002) != 0)) {
-          constNpcList_ = java.util.Collections.unmodifiableList(constNpcList_);
+          unk3300BAMLNENDLCM_ = java.util.Collections.unmodifiableList(unk3300BAMLNENDLCM_);
+        }
+        if (((mutable_bitField0_ & 0x00000001) != 0)) {
+          unk3300FKAKHMMIEBC_ = java.util.Collections.unmodifiableList(unk3300FKAKHMMIEBC_);
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -204,50 +208,90 @@ public final class GCGTavernNpcInfoNotifyOuterClass {
               emu.grasscutter.net.proto.GCGTavernNpcInfoNotifyOuterClass.GCGTavernNpcInfoNotify.class, emu.grasscutter.net.proto.GCGTavernNpcInfoNotifyOuterClass.GCGTavernNpcInfoNotify.Builder.class);
     }
 
-    public static final int WEEK_NPC_LIST_FIELD_NUMBER = 1;
-    private java.util.List<emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfo> weekNpcList_;
+    public static final int UNK3300_FKAKHMMIEBC_FIELD_NUMBER = 12;
+    private java.util.List<emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfo> unk3300FKAKHMMIEBC_;
     /**
-     * <code>repeated .GCGTavernNpcInfo week_npc_list = 1;</code>
+     * <code>repeated .GCGTavernNpcInfo Unk3300_FKAKHMMIEBC = 12;</code>
      */
     @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfo> getWeekNpcListList() {
-      return weekNpcList_;
+    public java.util.List<emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfo> getUnk3300FKAKHMMIEBCList() {
+      return unk3300FKAKHMMIEBC_;
     }
     /**
-     * <code>repeated .GCGTavernNpcInfo week_npc_list = 1;</code>
+     * <code>repeated .GCGTavernNpcInfo Unk3300_FKAKHMMIEBC = 12;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfoOrBuilder> 
-        getWeekNpcListOrBuilderList() {
-      return weekNpcList_;
+        getUnk3300FKAKHMMIEBCOrBuilderList() {
+      return unk3300FKAKHMMIEBC_;
     }
     /**
-     * <code>repeated .GCGTavernNpcInfo week_npc_list = 1;</code>
+     * <code>repeated .GCGTavernNpcInfo Unk3300_FKAKHMMIEBC = 12;</code>
      */
     @java.lang.Override
-    public int getWeekNpcListCount() {
-      return weekNpcList_.size();
+    public int getUnk3300FKAKHMMIEBCCount() {
+      return unk3300FKAKHMMIEBC_.size();
     }
     /**
-     * <code>repeated .GCGTavernNpcInfo week_npc_list = 1;</code>
+     * <code>repeated .GCGTavernNpcInfo Unk3300_FKAKHMMIEBC = 12;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfo getWeekNpcList(int index) {
-      return weekNpcList_.get(index);
+    public emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfo getUnk3300FKAKHMMIEBC(int index) {
+      return unk3300FKAKHMMIEBC_.get(index);
     }
     /**
-     * <code>repeated .GCGTavernNpcInfo week_npc_list = 1;</code>
+     * <code>repeated .GCGTavernNpcInfo Unk3300_FKAKHMMIEBC = 12;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfoOrBuilder getWeekNpcListOrBuilder(
+    public emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfoOrBuilder getUnk3300FKAKHMMIEBCOrBuilder(
         int index) {
-      return weekNpcList_.get(index);
+      return unk3300FKAKHMMIEBC_.get(index);
     }
 
-    public static final int CHARACTER_NPC_FIELD_NUMBER = 5;
+    public static final int UNK3300_BAMLNENDLCM_FIELD_NUMBER = 2;
+    private java.util.List<emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfo> unk3300BAMLNENDLCM_;
+    /**
+     * <code>repeated .GCGTavernNpcInfo Unk3300_BAMLNENDLCM = 2;</code>
+     */
+    @java.lang.Override
+    public java.util.List<emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfo> getUnk3300BAMLNENDLCMList() {
+      return unk3300BAMLNENDLCM_;
+    }
+    /**
+     * <code>repeated .GCGTavernNpcInfo Unk3300_BAMLNENDLCM = 2;</code>
+     */
+    @java.lang.Override
+    public java.util.List<? extends emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfoOrBuilder> 
+        getUnk3300BAMLNENDLCMOrBuilderList() {
+      return unk3300BAMLNENDLCM_;
+    }
+    /**
+     * <code>repeated .GCGTavernNpcInfo Unk3300_BAMLNENDLCM = 2;</code>
+     */
+    @java.lang.Override
+    public int getUnk3300BAMLNENDLCMCount() {
+      return unk3300BAMLNENDLCM_.size();
+    }
+    /**
+     * <code>repeated .GCGTavernNpcInfo Unk3300_BAMLNENDLCM = 2;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfo getUnk3300BAMLNENDLCM(int index) {
+      return unk3300BAMLNENDLCM_.get(index);
+    }
+    /**
+     * <code>repeated .GCGTavernNpcInfo Unk3300_BAMLNENDLCM = 2;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfoOrBuilder getUnk3300BAMLNENDLCMOrBuilder(
+        int index) {
+      return unk3300BAMLNENDLCM_.get(index);
+    }
+
+    public static final int CHARACTER_NPC_FIELD_NUMBER = 11;
     private emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfo characterNpc_;
     /**
-     * <code>.GCGTavernNpcInfo character_npc = 5;</code>
+     * <code>.GCGTavernNpcInfo character_npc = 11;</code>
      * @return Whether the characterNpc field is set.
      */
     @java.lang.Override
@@ -255,7 +299,7 @@ public final class GCGTavernNpcInfoNotifyOuterClass {
       return characterNpc_ != null;
     }
     /**
-     * <code>.GCGTavernNpcInfo character_npc = 5;</code>
+     * <code>.GCGTavernNpcInfo character_npc = 11;</code>
      * @return The characterNpc.
      */
     @java.lang.Override
@@ -263,51 +307,11 @@ public final class GCGTavernNpcInfoNotifyOuterClass {
       return characterNpc_ == null ? emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfo.getDefaultInstance() : characterNpc_;
     }
     /**
-     * <code>.GCGTavernNpcInfo character_npc = 5;</code>
+     * <code>.GCGTavernNpcInfo character_npc = 11;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfoOrBuilder getCharacterNpcOrBuilder() {
       return getCharacterNpc();
-    }
-
-    public static final int CONST_NPC_LIST_FIELD_NUMBER = 15;
-    private java.util.List<emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfo> constNpcList_;
-    /**
-     * <code>repeated .GCGTavernNpcInfo const_npc_list = 15;</code>
-     */
-    @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfo> getConstNpcListList() {
-      return constNpcList_;
-    }
-    /**
-     * <code>repeated .GCGTavernNpcInfo const_npc_list = 15;</code>
-     */
-    @java.lang.Override
-    public java.util.List<? extends emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfoOrBuilder> 
-        getConstNpcListOrBuilderList() {
-      return constNpcList_;
-    }
-    /**
-     * <code>repeated .GCGTavernNpcInfo const_npc_list = 15;</code>
-     */
-    @java.lang.Override
-    public int getConstNpcListCount() {
-      return constNpcList_.size();
-    }
-    /**
-     * <code>repeated .GCGTavernNpcInfo const_npc_list = 15;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfo getConstNpcList(int index) {
-      return constNpcList_.get(index);
-    }
-    /**
-     * <code>repeated .GCGTavernNpcInfo const_npc_list = 15;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfoOrBuilder getConstNpcListOrBuilder(
-        int index) {
-      return constNpcList_.get(index);
     }
 
     private byte memoizedIsInitialized = -1;
@@ -324,14 +328,14 @@ public final class GCGTavernNpcInfoNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      for (int i = 0; i < weekNpcList_.size(); i++) {
-        output.writeMessage(1, weekNpcList_.get(i));
+      for (int i = 0; i < unk3300BAMLNENDLCM_.size(); i++) {
+        output.writeMessage(2, unk3300BAMLNENDLCM_.get(i));
       }
       if (characterNpc_ != null) {
-        output.writeMessage(5, getCharacterNpc());
+        output.writeMessage(11, getCharacterNpc());
       }
-      for (int i = 0; i < constNpcList_.size(); i++) {
-        output.writeMessage(15, constNpcList_.get(i));
+      for (int i = 0; i < unk3300FKAKHMMIEBC_.size(); i++) {
+        output.writeMessage(12, unk3300FKAKHMMIEBC_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -342,17 +346,17 @@ public final class GCGTavernNpcInfoNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      for (int i = 0; i < weekNpcList_.size(); i++) {
+      for (int i = 0; i < unk3300BAMLNENDLCM_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(1, weekNpcList_.get(i));
+          .computeMessageSize(2, unk3300BAMLNENDLCM_.get(i));
       }
       if (characterNpc_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(5, getCharacterNpc());
+          .computeMessageSize(11, getCharacterNpc());
       }
-      for (int i = 0; i < constNpcList_.size(); i++) {
+      for (int i = 0; i < unk3300FKAKHMMIEBC_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(15, constNpcList_.get(i));
+          .computeMessageSize(12, unk3300FKAKHMMIEBC_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -369,15 +373,15 @@ public final class GCGTavernNpcInfoNotifyOuterClass {
       }
       emu.grasscutter.net.proto.GCGTavernNpcInfoNotifyOuterClass.GCGTavernNpcInfoNotify other = (emu.grasscutter.net.proto.GCGTavernNpcInfoNotifyOuterClass.GCGTavernNpcInfoNotify) obj;
 
-      if (!getWeekNpcListList()
-          .equals(other.getWeekNpcListList())) return false;
+      if (!getUnk3300FKAKHMMIEBCList()
+          .equals(other.getUnk3300FKAKHMMIEBCList())) return false;
+      if (!getUnk3300BAMLNENDLCMList()
+          .equals(other.getUnk3300BAMLNENDLCMList())) return false;
       if (hasCharacterNpc() != other.hasCharacterNpc()) return false;
       if (hasCharacterNpc()) {
         if (!getCharacterNpc()
             .equals(other.getCharacterNpc())) return false;
       }
-      if (!getConstNpcListList()
-          .equals(other.getConstNpcListList())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -389,17 +393,17 @@ public final class GCGTavernNpcInfoNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (getWeekNpcListCount() > 0) {
-        hash = (37 * hash) + WEEK_NPC_LIST_FIELD_NUMBER;
-        hash = (53 * hash) + getWeekNpcListList().hashCode();
+      if (getUnk3300FKAKHMMIEBCCount() > 0) {
+        hash = (37 * hash) + UNK3300_FKAKHMMIEBC_FIELD_NUMBER;
+        hash = (53 * hash) + getUnk3300FKAKHMMIEBCList().hashCode();
+      }
+      if (getUnk3300BAMLNENDLCMCount() > 0) {
+        hash = (37 * hash) + UNK3300_BAMLNENDLCM_FIELD_NUMBER;
+        hash = (53 * hash) + getUnk3300BAMLNENDLCMList().hashCode();
       }
       if (hasCharacterNpc()) {
         hash = (37 * hash) + CHARACTER_NPC_FIELD_NUMBER;
         hash = (53 * hash) + getCharacterNpc().hashCode();
-      }
-      if (getConstNpcListCount() > 0) {
-        hash = (37 * hash) + CONST_NPC_LIST_FIELD_NUMBER;
-        hash = (53 * hash) + getConstNpcListList().hashCode();
       }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
@@ -498,9 +502,13 @@ public final class GCGTavernNpcInfoNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 7290
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 7267;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code GCGTavernNpcInfoNotify}
@@ -535,30 +543,30 @@ public final class GCGTavernNpcInfoNotifyOuterClass {
       private void maybeForceBuilderInitialization() {
         if (com.google.protobuf.GeneratedMessageV3
                 .alwaysUseFieldBuilders) {
-          getWeekNpcListFieldBuilder();
-          getConstNpcListFieldBuilder();
+          getUnk3300FKAKHMMIEBCFieldBuilder();
+          getUnk3300BAMLNENDLCMFieldBuilder();
         }
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        if (weekNpcListBuilder_ == null) {
-          weekNpcList_ = java.util.Collections.emptyList();
+        if (unk3300FKAKHMMIEBCBuilder_ == null) {
+          unk3300FKAKHMMIEBC_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000001);
         } else {
-          weekNpcListBuilder_.clear();
+          unk3300FKAKHMMIEBCBuilder_.clear();
+        }
+        if (unk3300BAMLNENDLCMBuilder_ == null) {
+          unk3300BAMLNENDLCM_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000002);
+        } else {
+          unk3300BAMLNENDLCMBuilder_.clear();
         }
         if (characterNpcBuilder_ == null) {
           characterNpc_ = null;
         } else {
           characterNpc_ = null;
           characterNpcBuilder_ = null;
-        }
-        if (constNpcListBuilder_ == null) {
-          constNpcList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000002);
-        } else {
-          constNpcListBuilder_.clear();
         }
         return this;
       }
@@ -587,28 +595,28 @@ public final class GCGTavernNpcInfoNotifyOuterClass {
       public emu.grasscutter.net.proto.GCGTavernNpcInfoNotifyOuterClass.GCGTavernNpcInfoNotify buildPartial() {
         emu.grasscutter.net.proto.GCGTavernNpcInfoNotifyOuterClass.GCGTavernNpcInfoNotify result = new emu.grasscutter.net.proto.GCGTavernNpcInfoNotifyOuterClass.GCGTavernNpcInfoNotify(this);
         int from_bitField0_ = bitField0_;
-        if (weekNpcListBuilder_ == null) {
+        if (unk3300FKAKHMMIEBCBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0)) {
-            weekNpcList_ = java.util.Collections.unmodifiableList(weekNpcList_);
+            unk3300FKAKHMMIEBC_ = java.util.Collections.unmodifiableList(unk3300FKAKHMMIEBC_);
             bitField0_ = (bitField0_ & ~0x00000001);
           }
-          result.weekNpcList_ = weekNpcList_;
+          result.unk3300FKAKHMMIEBC_ = unk3300FKAKHMMIEBC_;
         } else {
-          result.weekNpcList_ = weekNpcListBuilder_.build();
+          result.unk3300FKAKHMMIEBC_ = unk3300FKAKHMMIEBCBuilder_.build();
+        }
+        if (unk3300BAMLNENDLCMBuilder_ == null) {
+          if (((bitField0_ & 0x00000002) != 0)) {
+            unk3300BAMLNENDLCM_ = java.util.Collections.unmodifiableList(unk3300BAMLNENDLCM_);
+            bitField0_ = (bitField0_ & ~0x00000002);
+          }
+          result.unk3300BAMLNENDLCM_ = unk3300BAMLNENDLCM_;
+        } else {
+          result.unk3300BAMLNENDLCM_ = unk3300BAMLNENDLCMBuilder_.build();
         }
         if (characterNpcBuilder_ == null) {
           result.characterNpc_ = characterNpc_;
         } else {
           result.characterNpc_ = characterNpcBuilder_.build();
-        }
-        if (constNpcListBuilder_ == null) {
-          if (((bitField0_ & 0x00000002) != 0)) {
-            constNpcList_ = java.util.Collections.unmodifiableList(constNpcList_);
-            bitField0_ = (bitField0_ & ~0x00000002);
-          }
-          result.constNpcList_ = constNpcList_;
-        } else {
-          result.constNpcList_ = constNpcListBuilder_.build();
         }
         onBuilt();
         return result;
@@ -658,60 +666,60 @@ public final class GCGTavernNpcInfoNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.GCGTavernNpcInfoNotifyOuterClass.GCGTavernNpcInfoNotify other) {
         if (other == emu.grasscutter.net.proto.GCGTavernNpcInfoNotifyOuterClass.GCGTavernNpcInfoNotify.getDefaultInstance()) return this;
-        if (weekNpcListBuilder_ == null) {
-          if (!other.weekNpcList_.isEmpty()) {
-            if (weekNpcList_.isEmpty()) {
-              weekNpcList_ = other.weekNpcList_;
+        if (unk3300FKAKHMMIEBCBuilder_ == null) {
+          if (!other.unk3300FKAKHMMIEBC_.isEmpty()) {
+            if (unk3300FKAKHMMIEBC_.isEmpty()) {
+              unk3300FKAKHMMIEBC_ = other.unk3300FKAKHMMIEBC_;
               bitField0_ = (bitField0_ & ~0x00000001);
             } else {
-              ensureWeekNpcListIsMutable();
-              weekNpcList_.addAll(other.weekNpcList_);
+              ensureUnk3300FKAKHMMIEBCIsMutable();
+              unk3300FKAKHMMIEBC_.addAll(other.unk3300FKAKHMMIEBC_);
             }
             onChanged();
           }
         } else {
-          if (!other.weekNpcList_.isEmpty()) {
-            if (weekNpcListBuilder_.isEmpty()) {
-              weekNpcListBuilder_.dispose();
-              weekNpcListBuilder_ = null;
-              weekNpcList_ = other.weekNpcList_;
+          if (!other.unk3300FKAKHMMIEBC_.isEmpty()) {
+            if (unk3300FKAKHMMIEBCBuilder_.isEmpty()) {
+              unk3300FKAKHMMIEBCBuilder_.dispose();
+              unk3300FKAKHMMIEBCBuilder_ = null;
+              unk3300FKAKHMMIEBC_ = other.unk3300FKAKHMMIEBC_;
               bitField0_ = (bitField0_ & ~0x00000001);
-              weekNpcListBuilder_ = 
+              unk3300FKAKHMMIEBCBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
-                   getWeekNpcListFieldBuilder() : null;
+                   getUnk3300FKAKHMMIEBCFieldBuilder() : null;
             } else {
-              weekNpcListBuilder_.addAllMessages(other.weekNpcList_);
+              unk3300FKAKHMMIEBCBuilder_.addAllMessages(other.unk3300FKAKHMMIEBC_);
+            }
+          }
+        }
+        if (unk3300BAMLNENDLCMBuilder_ == null) {
+          if (!other.unk3300BAMLNENDLCM_.isEmpty()) {
+            if (unk3300BAMLNENDLCM_.isEmpty()) {
+              unk3300BAMLNENDLCM_ = other.unk3300BAMLNENDLCM_;
+              bitField0_ = (bitField0_ & ~0x00000002);
+            } else {
+              ensureUnk3300BAMLNENDLCMIsMutable();
+              unk3300BAMLNENDLCM_.addAll(other.unk3300BAMLNENDLCM_);
+            }
+            onChanged();
+          }
+        } else {
+          if (!other.unk3300BAMLNENDLCM_.isEmpty()) {
+            if (unk3300BAMLNENDLCMBuilder_.isEmpty()) {
+              unk3300BAMLNENDLCMBuilder_.dispose();
+              unk3300BAMLNENDLCMBuilder_ = null;
+              unk3300BAMLNENDLCM_ = other.unk3300BAMLNENDLCM_;
+              bitField0_ = (bitField0_ & ~0x00000002);
+              unk3300BAMLNENDLCMBuilder_ = 
+                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+                   getUnk3300BAMLNENDLCMFieldBuilder() : null;
+            } else {
+              unk3300BAMLNENDLCMBuilder_.addAllMessages(other.unk3300BAMLNENDLCM_);
             }
           }
         }
         if (other.hasCharacterNpc()) {
           mergeCharacterNpc(other.getCharacterNpc());
-        }
-        if (constNpcListBuilder_ == null) {
-          if (!other.constNpcList_.isEmpty()) {
-            if (constNpcList_.isEmpty()) {
-              constNpcList_ = other.constNpcList_;
-              bitField0_ = (bitField0_ & ~0x00000002);
-            } else {
-              ensureConstNpcListIsMutable();
-              constNpcList_.addAll(other.constNpcList_);
-            }
-            onChanged();
-          }
-        } else {
-          if (!other.constNpcList_.isEmpty()) {
-            if (constNpcListBuilder_.isEmpty()) {
-              constNpcListBuilder_.dispose();
-              constNpcListBuilder_ = null;
-              constNpcList_ = other.constNpcList_;
-              bitField0_ = (bitField0_ & ~0x00000002);
-              constNpcListBuilder_ = 
-                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
-                   getConstNpcListFieldBuilder() : null;
-            } else {
-              constNpcListBuilder_.addAllMessages(other.constNpcList_);
-            }
-          }
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -743,258 +751,498 @@ public final class GCGTavernNpcInfoNotifyOuterClass {
       }
       private int bitField0_;
 
-      private java.util.List<emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfo> weekNpcList_ =
+      private java.util.List<emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfo> unk3300FKAKHMMIEBC_ =
         java.util.Collections.emptyList();
-      private void ensureWeekNpcListIsMutable() {
+      private void ensureUnk3300FKAKHMMIEBCIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          weekNpcList_ = new java.util.ArrayList<emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfo>(weekNpcList_);
+          unk3300FKAKHMMIEBC_ = new java.util.ArrayList<emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfo>(unk3300FKAKHMMIEBC_);
           bitField0_ |= 0x00000001;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfo, emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfo.Builder, emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfoOrBuilder> weekNpcListBuilder_;
+          emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfo, emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfo.Builder, emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfoOrBuilder> unk3300FKAKHMMIEBCBuilder_;
 
       /**
-       * <code>repeated .GCGTavernNpcInfo week_npc_list = 1;</code>
+       * <code>repeated .GCGTavernNpcInfo Unk3300_FKAKHMMIEBC = 12;</code>
        */
-      public java.util.List<emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfo> getWeekNpcListList() {
-        if (weekNpcListBuilder_ == null) {
-          return java.util.Collections.unmodifiableList(weekNpcList_);
+      public java.util.List<emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfo> getUnk3300FKAKHMMIEBCList() {
+        if (unk3300FKAKHMMIEBCBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(unk3300FKAKHMMIEBC_);
         } else {
-          return weekNpcListBuilder_.getMessageList();
+          return unk3300FKAKHMMIEBCBuilder_.getMessageList();
         }
       }
       /**
-       * <code>repeated .GCGTavernNpcInfo week_npc_list = 1;</code>
+       * <code>repeated .GCGTavernNpcInfo Unk3300_FKAKHMMIEBC = 12;</code>
        */
-      public int getWeekNpcListCount() {
-        if (weekNpcListBuilder_ == null) {
-          return weekNpcList_.size();
+      public int getUnk3300FKAKHMMIEBCCount() {
+        if (unk3300FKAKHMMIEBCBuilder_ == null) {
+          return unk3300FKAKHMMIEBC_.size();
         } else {
-          return weekNpcListBuilder_.getCount();
+          return unk3300FKAKHMMIEBCBuilder_.getCount();
         }
       }
       /**
-       * <code>repeated .GCGTavernNpcInfo week_npc_list = 1;</code>
+       * <code>repeated .GCGTavernNpcInfo Unk3300_FKAKHMMIEBC = 12;</code>
        */
-      public emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfo getWeekNpcList(int index) {
-        if (weekNpcListBuilder_ == null) {
-          return weekNpcList_.get(index);
+      public emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfo getUnk3300FKAKHMMIEBC(int index) {
+        if (unk3300FKAKHMMIEBCBuilder_ == null) {
+          return unk3300FKAKHMMIEBC_.get(index);
         } else {
-          return weekNpcListBuilder_.getMessage(index);
+          return unk3300FKAKHMMIEBCBuilder_.getMessage(index);
         }
       }
       /**
-       * <code>repeated .GCGTavernNpcInfo week_npc_list = 1;</code>
+       * <code>repeated .GCGTavernNpcInfo Unk3300_FKAKHMMIEBC = 12;</code>
        */
-      public Builder setWeekNpcList(
+      public Builder setUnk3300FKAKHMMIEBC(
           int index, emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfo value) {
-        if (weekNpcListBuilder_ == null) {
+        if (unk3300FKAKHMMIEBCBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureWeekNpcListIsMutable();
-          weekNpcList_.set(index, value);
+          ensureUnk3300FKAKHMMIEBCIsMutable();
+          unk3300FKAKHMMIEBC_.set(index, value);
           onChanged();
         } else {
-          weekNpcListBuilder_.setMessage(index, value);
+          unk3300FKAKHMMIEBCBuilder_.setMessage(index, value);
         }
         return this;
       }
       /**
-       * <code>repeated .GCGTavernNpcInfo week_npc_list = 1;</code>
+       * <code>repeated .GCGTavernNpcInfo Unk3300_FKAKHMMIEBC = 12;</code>
        */
-      public Builder setWeekNpcList(
+      public Builder setUnk3300FKAKHMMIEBC(
           int index, emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfo.Builder builderForValue) {
-        if (weekNpcListBuilder_ == null) {
-          ensureWeekNpcListIsMutable();
-          weekNpcList_.set(index, builderForValue.build());
+        if (unk3300FKAKHMMIEBCBuilder_ == null) {
+          ensureUnk3300FKAKHMMIEBCIsMutable();
+          unk3300FKAKHMMIEBC_.set(index, builderForValue.build());
           onChanged();
         } else {
-          weekNpcListBuilder_.setMessage(index, builderForValue.build());
+          unk3300FKAKHMMIEBCBuilder_.setMessage(index, builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .GCGTavernNpcInfo week_npc_list = 1;</code>
+       * <code>repeated .GCGTavernNpcInfo Unk3300_FKAKHMMIEBC = 12;</code>
        */
-      public Builder addWeekNpcList(emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfo value) {
-        if (weekNpcListBuilder_ == null) {
+      public Builder addUnk3300FKAKHMMIEBC(emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfo value) {
+        if (unk3300FKAKHMMIEBCBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureWeekNpcListIsMutable();
-          weekNpcList_.add(value);
+          ensureUnk3300FKAKHMMIEBCIsMutable();
+          unk3300FKAKHMMIEBC_.add(value);
           onChanged();
         } else {
-          weekNpcListBuilder_.addMessage(value);
+          unk3300FKAKHMMIEBCBuilder_.addMessage(value);
         }
         return this;
       }
       /**
-       * <code>repeated .GCGTavernNpcInfo week_npc_list = 1;</code>
+       * <code>repeated .GCGTavernNpcInfo Unk3300_FKAKHMMIEBC = 12;</code>
        */
-      public Builder addWeekNpcList(
+      public Builder addUnk3300FKAKHMMIEBC(
           int index, emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfo value) {
-        if (weekNpcListBuilder_ == null) {
+        if (unk3300FKAKHMMIEBCBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureWeekNpcListIsMutable();
-          weekNpcList_.add(index, value);
+          ensureUnk3300FKAKHMMIEBCIsMutable();
+          unk3300FKAKHMMIEBC_.add(index, value);
           onChanged();
         } else {
-          weekNpcListBuilder_.addMessage(index, value);
+          unk3300FKAKHMMIEBCBuilder_.addMessage(index, value);
         }
         return this;
       }
       /**
-       * <code>repeated .GCGTavernNpcInfo week_npc_list = 1;</code>
+       * <code>repeated .GCGTavernNpcInfo Unk3300_FKAKHMMIEBC = 12;</code>
        */
-      public Builder addWeekNpcList(
+      public Builder addUnk3300FKAKHMMIEBC(
           emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfo.Builder builderForValue) {
-        if (weekNpcListBuilder_ == null) {
-          ensureWeekNpcListIsMutable();
-          weekNpcList_.add(builderForValue.build());
+        if (unk3300FKAKHMMIEBCBuilder_ == null) {
+          ensureUnk3300FKAKHMMIEBCIsMutable();
+          unk3300FKAKHMMIEBC_.add(builderForValue.build());
           onChanged();
         } else {
-          weekNpcListBuilder_.addMessage(builderForValue.build());
+          unk3300FKAKHMMIEBCBuilder_.addMessage(builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .GCGTavernNpcInfo week_npc_list = 1;</code>
+       * <code>repeated .GCGTavernNpcInfo Unk3300_FKAKHMMIEBC = 12;</code>
        */
-      public Builder addWeekNpcList(
+      public Builder addUnk3300FKAKHMMIEBC(
           int index, emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfo.Builder builderForValue) {
-        if (weekNpcListBuilder_ == null) {
-          ensureWeekNpcListIsMutable();
-          weekNpcList_.add(index, builderForValue.build());
+        if (unk3300FKAKHMMIEBCBuilder_ == null) {
+          ensureUnk3300FKAKHMMIEBCIsMutable();
+          unk3300FKAKHMMIEBC_.add(index, builderForValue.build());
           onChanged();
         } else {
-          weekNpcListBuilder_.addMessage(index, builderForValue.build());
+          unk3300FKAKHMMIEBCBuilder_.addMessage(index, builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .GCGTavernNpcInfo week_npc_list = 1;</code>
+       * <code>repeated .GCGTavernNpcInfo Unk3300_FKAKHMMIEBC = 12;</code>
        */
-      public Builder addAllWeekNpcList(
+      public Builder addAllUnk3300FKAKHMMIEBC(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfo> values) {
-        if (weekNpcListBuilder_ == null) {
-          ensureWeekNpcListIsMutable();
+        if (unk3300FKAKHMMIEBCBuilder_ == null) {
+          ensureUnk3300FKAKHMMIEBCIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
-              values, weekNpcList_);
+              values, unk3300FKAKHMMIEBC_);
           onChanged();
         } else {
-          weekNpcListBuilder_.addAllMessages(values);
+          unk3300FKAKHMMIEBCBuilder_.addAllMessages(values);
         }
         return this;
       }
       /**
-       * <code>repeated .GCGTavernNpcInfo week_npc_list = 1;</code>
+       * <code>repeated .GCGTavernNpcInfo Unk3300_FKAKHMMIEBC = 12;</code>
        */
-      public Builder clearWeekNpcList() {
-        if (weekNpcListBuilder_ == null) {
-          weekNpcList_ = java.util.Collections.emptyList();
+      public Builder clearUnk3300FKAKHMMIEBC() {
+        if (unk3300FKAKHMMIEBCBuilder_ == null) {
+          unk3300FKAKHMMIEBC_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000001);
           onChanged();
         } else {
-          weekNpcListBuilder_.clear();
+          unk3300FKAKHMMIEBCBuilder_.clear();
         }
         return this;
       }
       /**
-       * <code>repeated .GCGTavernNpcInfo week_npc_list = 1;</code>
+       * <code>repeated .GCGTavernNpcInfo Unk3300_FKAKHMMIEBC = 12;</code>
        */
-      public Builder removeWeekNpcList(int index) {
-        if (weekNpcListBuilder_ == null) {
-          ensureWeekNpcListIsMutable();
-          weekNpcList_.remove(index);
+      public Builder removeUnk3300FKAKHMMIEBC(int index) {
+        if (unk3300FKAKHMMIEBCBuilder_ == null) {
+          ensureUnk3300FKAKHMMIEBCIsMutable();
+          unk3300FKAKHMMIEBC_.remove(index);
           onChanged();
         } else {
-          weekNpcListBuilder_.remove(index);
+          unk3300FKAKHMMIEBCBuilder_.remove(index);
         }
         return this;
       }
       /**
-       * <code>repeated .GCGTavernNpcInfo week_npc_list = 1;</code>
+       * <code>repeated .GCGTavernNpcInfo Unk3300_FKAKHMMIEBC = 12;</code>
        */
-      public emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfo.Builder getWeekNpcListBuilder(
+      public emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfo.Builder getUnk3300FKAKHMMIEBCBuilder(
           int index) {
-        return getWeekNpcListFieldBuilder().getBuilder(index);
+        return getUnk3300FKAKHMMIEBCFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .GCGTavernNpcInfo week_npc_list = 1;</code>
+       * <code>repeated .GCGTavernNpcInfo Unk3300_FKAKHMMIEBC = 12;</code>
        */
-      public emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfoOrBuilder getWeekNpcListOrBuilder(
+      public emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfoOrBuilder getUnk3300FKAKHMMIEBCOrBuilder(
           int index) {
-        if (weekNpcListBuilder_ == null) {
-          return weekNpcList_.get(index);  } else {
-          return weekNpcListBuilder_.getMessageOrBuilder(index);
+        if (unk3300FKAKHMMIEBCBuilder_ == null) {
+          return unk3300FKAKHMMIEBC_.get(index);  } else {
+          return unk3300FKAKHMMIEBCBuilder_.getMessageOrBuilder(index);
         }
       }
       /**
-       * <code>repeated .GCGTavernNpcInfo week_npc_list = 1;</code>
+       * <code>repeated .GCGTavernNpcInfo Unk3300_FKAKHMMIEBC = 12;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfoOrBuilder> 
-           getWeekNpcListOrBuilderList() {
-        if (weekNpcListBuilder_ != null) {
-          return weekNpcListBuilder_.getMessageOrBuilderList();
+           getUnk3300FKAKHMMIEBCOrBuilderList() {
+        if (unk3300FKAKHMMIEBCBuilder_ != null) {
+          return unk3300FKAKHMMIEBCBuilder_.getMessageOrBuilderList();
         } else {
-          return java.util.Collections.unmodifiableList(weekNpcList_);
+          return java.util.Collections.unmodifiableList(unk3300FKAKHMMIEBC_);
         }
       }
       /**
-       * <code>repeated .GCGTavernNpcInfo week_npc_list = 1;</code>
+       * <code>repeated .GCGTavernNpcInfo Unk3300_FKAKHMMIEBC = 12;</code>
        */
-      public emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfo.Builder addWeekNpcListBuilder() {
-        return getWeekNpcListFieldBuilder().addBuilder(
+      public emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfo.Builder addUnk3300FKAKHMMIEBCBuilder() {
+        return getUnk3300FKAKHMMIEBCFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .GCGTavernNpcInfo week_npc_list = 1;</code>
+       * <code>repeated .GCGTavernNpcInfo Unk3300_FKAKHMMIEBC = 12;</code>
        */
-      public emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfo.Builder addWeekNpcListBuilder(
+      public emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfo.Builder addUnk3300FKAKHMMIEBCBuilder(
           int index) {
-        return getWeekNpcListFieldBuilder().addBuilder(
+        return getUnk3300FKAKHMMIEBCFieldBuilder().addBuilder(
             index, emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .GCGTavernNpcInfo week_npc_list = 1;</code>
+       * <code>repeated .GCGTavernNpcInfo Unk3300_FKAKHMMIEBC = 12;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfo.Builder> 
-           getWeekNpcListBuilderList() {
-        return getWeekNpcListFieldBuilder().getBuilderList();
+           getUnk3300FKAKHMMIEBCBuilderList() {
+        return getUnk3300FKAKHMMIEBCFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilderV3<
           emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfo, emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfo.Builder, emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfoOrBuilder> 
-          getWeekNpcListFieldBuilder() {
-        if (weekNpcListBuilder_ == null) {
-          weekNpcListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+          getUnk3300FKAKHMMIEBCFieldBuilder() {
+        if (unk3300FKAKHMMIEBCBuilder_ == null) {
+          unk3300FKAKHMMIEBCBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
               emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfo, emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfo.Builder, emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfoOrBuilder>(
-                  weekNpcList_,
+                  unk3300FKAKHMMIEBC_,
                   ((bitField0_ & 0x00000001) != 0),
                   getParentForChildren(),
                   isClean());
-          weekNpcList_ = null;
+          unk3300FKAKHMMIEBC_ = null;
         }
-        return weekNpcListBuilder_;
+        return unk3300FKAKHMMIEBCBuilder_;
+      }
+
+      private java.util.List<emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfo> unk3300BAMLNENDLCM_ =
+        java.util.Collections.emptyList();
+      private void ensureUnk3300BAMLNENDLCMIsMutable() {
+        if (!((bitField0_ & 0x00000002) != 0)) {
+          unk3300BAMLNENDLCM_ = new java.util.ArrayList<emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfo>(unk3300BAMLNENDLCM_);
+          bitField0_ |= 0x00000002;
+         }
+      }
+
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfo, emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfo.Builder, emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfoOrBuilder> unk3300BAMLNENDLCMBuilder_;
+
+      /**
+       * <code>repeated .GCGTavernNpcInfo Unk3300_BAMLNENDLCM = 2;</code>
+       */
+      public java.util.List<emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfo> getUnk3300BAMLNENDLCMList() {
+        if (unk3300BAMLNENDLCMBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(unk3300BAMLNENDLCM_);
+        } else {
+          return unk3300BAMLNENDLCMBuilder_.getMessageList();
+        }
+      }
+      /**
+       * <code>repeated .GCGTavernNpcInfo Unk3300_BAMLNENDLCM = 2;</code>
+       */
+      public int getUnk3300BAMLNENDLCMCount() {
+        if (unk3300BAMLNENDLCMBuilder_ == null) {
+          return unk3300BAMLNENDLCM_.size();
+        } else {
+          return unk3300BAMLNENDLCMBuilder_.getCount();
+        }
+      }
+      /**
+       * <code>repeated .GCGTavernNpcInfo Unk3300_BAMLNENDLCM = 2;</code>
+       */
+      public emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfo getUnk3300BAMLNENDLCM(int index) {
+        if (unk3300BAMLNENDLCMBuilder_ == null) {
+          return unk3300BAMLNENDLCM_.get(index);
+        } else {
+          return unk3300BAMLNENDLCMBuilder_.getMessage(index);
+        }
+      }
+      /**
+       * <code>repeated .GCGTavernNpcInfo Unk3300_BAMLNENDLCM = 2;</code>
+       */
+      public Builder setUnk3300BAMLNENDLCM(
+          int index, emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfo value) {
+        if (unk3300BAMLNENDLCMBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureUnk3300BAMLNENDLCMIsMutable();
+          unk3300BAMLNENDLCM_.set(index, value);
+          onChanged();
+        } else {
+          unk3300BAMLNENDLCMBuilder_.setMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .GCGTavernNpcInfo Unk3300_BAMLNENDLCM = 2;</code>
+       */
+      public Builder setUnk3300BAMLNENDLCM(
+          int index, emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfo.Builder builderForValue) {
+        if (unk3300BAMLNENDLCMBuilder_ == null) {
+          ensureUnk3300BAMLNENDLCMIsMutable();
+          unk3300BAMLNENDLCM_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          unk3300BAMLNENDLCMBuilder_.setMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .GCGTavernNpcInfo Unk3300_BAMLNENDLCM = 2;</code>
+       */
+      public Builder addUnk3300BAMLNENDLCM(emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfo value) {
+        if (unk3300BAMLNENDLCMBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureUnk3300BAMLNENDLCMIsMutable();
+          unk3300BAMLNENDLCM_.add(value);
+          onChanged();
+        } else {
+          unk3300BAMLNENDLCMBuilder_.addMessage(value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .GCGTavernNpcInfo Unk3300_BAMLNENDLCM = 2;</code>
+       */
+      public Builder addUnk3300BAMLNENDLCM(
+          int index, emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfo value) {
+        if (unk3300BAMLNENDLCMBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureUnk3300BAMLNENDLCMIsMutable();
+          unk3300BAMLNENDLCM_.add(index, value);
+          onChanged();
+        } else {
+          unk3300BAMLNENDLCMBuilder_.addMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .GCGTavernNpcInfo Unk3300_BAMLNENDLCM = 2;</code>
+       */
+      public Builder addUnk3300BAMLNENDLCM(
+          emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfo.Builder builderForValue) {
+        if (unk3300BAMLNENDLCMBuilder_ == null) {
+          ensureUnk3300BAMLNENDLCMIsMutable();
+          unk3300BAMLNENDLCM_.add(builderForValue.build());
+          onChanged();
+        } else {
+          unk3300BAMLNENDLCMBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .GCGTavernNpcInfo Unk3300_BAMLNENDLCM = 2;</code>
+       */
+      public Builder addUnk3300BAMLNENDLCM(
+          int index, emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfo.Builder builderForValue) {
+        if (unk3300BAMLNENDLCMBuilder_ == null) {
+          ensureUnk3300BAMLNENDLCMIsMutable();
+          unk3300BAMLNENDLCM_.add(index, builderForValue.build());
+          onChanged();
+        } else {
+          unk3300BAMLNENDLCMBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .GCGTavernNpcInfo Unk3300_BAMLNENDLCM = 2;</code>
+       */
+      public Builder addAllUnk3300BAMLNENDLCM(
+          java.lang.Iterable<? extends emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfo> values) {
+        if (unk3300BAMLNENDLCMBuilder_ == null) {
+          ensureUnk3300BAMLNENDLCMIsMutable();
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, unk3300BAMLNENDLCM_);
+          onChanged();
+        } else {
+          unk3300BAMLNENDLCMBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .GCGTavernNpcInfo Unk3300_BAMLNENDLCM = 2;</code>
+       */
+      public Builder clearUnk3300BAMLNENDLCM() {
+        if (unk3300BAMLNENDLCMBuilder_ == null) {
+          unk3300BAMLNENDLCM_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000002);
+          onChanged();
+        } else {
+          unk3300BAMLNENDLCMBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .GCGTavernNpcInfo Unk3300_BAMLNENDLCM = 2;</code>
+       */
+      public Builder removeUnk3300BAMLNENDLCM(int index) {
+        if (unk3300BAMLNENDLCMBuilder_ == null) {
+          ensureUnk3300BAMLNENDLCMIsMutable();
+          unk3300BAMLNENDLCM_.remove(index);
+          onChanged();
+        } else {
+          unk3300BAMLNENDLCMBuilder_.remove(index);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .GCGTavernNpcInfo Unk3300_BAMLNENDLCM = 2;</code>
+       */
+      public emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfo.Builder getUnk3300BAMLNENDLCMBuilder(
+          int index) {
+        return getUnk3300BAMLNENDLCMFieldBuilder().getBuilder(index);
+      }
+      /**
+       * <code>repeated .GCGTavernNpcInfo Unk3300_BAMLNENDLCM = 2;</code>
+       */
+      public emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfoOrBuilder getUnk3300BAMLNENDLCMOrBuilder(
+          int index) {
+        if (unk3300BAMLNENDLCMBuilder_ == null) {
+          return unk3300BAMLNENDLCM_.get(index);  } else {
+          return unk3300BAMLNENDLCMBuilder_.getMessageOrBuilder(index);
+        }
+      }
+      /**
+       * <code>repeated .GCGTavernNpcInfo Unk3300_BAMLNENDLCM = 2;</code>
+       */
+      public java.util.List<? extends emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfoOrBuilder> 
+           getUnk3300BAMLNENDLCMOrBuilderList() {
+        if (unk3300BAMLNENDLCMBuilder_ != null) {
+          return unk3300BAMLNENDLCMBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(unk3300BAMLNENDLCM_);
+        }
+      }
+      /**
+       * <code>repeated .GCGTavernNpcInfo Unk3300_BAMLNENDLCM = 2;</code>
+       */
+      public emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfo.Builder addUnk3300BAMLNENDLCMBuilder() {
+        return getUnk3300BAMLNENDLCMFieldBuilder().addBuilder(
+            emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfo.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .GCGTavernNpcInfo Unk3300_BAMLNENDLCM = 2;</code>
+       */
+      public emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfo.Builder addUnk3300BAMLNENDLCMBuilder(
+          int index) {
+        return getUnk3300BAMLNENDLCMFieldBuilder().addBuilder(
+            index, emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfo.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .GCGTavernNpcInfo Unk3300_BAMLNENDLCM = 2;</code>
+       */
+      public java.util.List<emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfo.Builder> 
+           getUnk3300BAMLNENDLCMBuilderList() {
+        return getUnk3300BAMLNENDLCMFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfo, emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfo.Builder, emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfoOrBuilder> 
+          getUnk3300BAMLNENDLCMFieldBuilder() {
+        if (unk3300BAMLNENDLCMBuilder_ == null) {
+          unk3300BAMLNENDLCMBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+              emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfo, emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfo.Builder, emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfoOrBuilder>(
+                  unk3300BAMLNENDLCM_,
+                  ((bitField0_ & 0x00000002) != 0),
+                  getParentForChildren(),
+                  isClean());
+          unk3300BAMLNENDLCM_ = null;
+        }
+        return unk3300BAMLNENDLCMBuilder_;
       }
 
       private emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfo characterNpc_;
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfo, emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfo.Builder, emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfoOrBuilder> characterNpcBuilder_;
       /**
-       * <code>.GCGTavernNpcInfo character_npc = 5;</code>
+       * <code>.GCGTavernNpcInfo character_npc = 11;</code>
        * @return Whether the characterNpc field is set.
        */
       public boolean hasCharacterNpc() {
         return characterNpcBuilder_ != null || characterNpc_ != null;
       }
       /**
-       * <code>.GCGTavernNpcInfo character_npc = 5;</code>
+       * <code>.GCGTavernNpcInfo character_npc = 11;</code>
        * @return The characterNpc.
        */
       public emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfo getCharacterNpc() {
@@ -1005,7 +1253,7 @@ public final class GCGTavernNpcInfoNotifyOuterClass {
         }
       }
       /**
-       * <code>.GCGTavernNpcInfo character_npc = 5;</code>
+       * <code>.GCGTavernNpcInfo character_npc = 11;</code>
        */
       public Builder setCharacterNpc(emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfo value) {
         if (characterNpcBuilder_ == null) {
@@ -1021,7 +1269,7 @@ public final class GCGTavernNpcInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.GCGTavernNpcInfo character_npc = 5;</code>
+       * <code>.GCGTavernNpcInfo character_npc = 11;</code>
        */
       public Builder setCharacterNpc(
           emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfo.Builder builderForValue) {
@@ -1035,7 +1283,7 @@ public final class GCGTavernNpcInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.GCGTavernNpcInfo character_npc = 5;</code>
+       * <code>.GCGTavernNpcInfo character_npc = 11;</code>
        */
       public Builder mergeCharacterNpc(emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfo value) {
         if (characterNpcBuilder_ == null) {
@@ -1053,7 +1301,7 @@ public final class GCGTavernNpcInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.GCGTavernNpcInfo character_npc = 5;</code>
+       * <code>.GCGTavernNpcInfo character_npc = 11;</code>
        */
       public Builder clearCharacterNpc() {
         if (characterNpcBuilder_ == null) {
@@ -1067,7 +1315,7 @@ public final class GCGTavernNpcInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.GCGTavernNpcInfo character_npc = 5;</code>
+       * <code>.GCGTavernNpcInfo character_npc = 11;</code>
        */
       public emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfo.Builder getCharacterNpcBuilder() {
         
@@ -1075,7 +1323,7 @@ public final class GCGTavernNpcInfoNotifyOuterClass {
         return getCharacterNpcFieldBuilder().getBuilder();
       }
       /**
-       * <code>.GCGTavernNpcInfo character_npc = 5;</code>
+       * <code>.GCGTavernNpcInfo character_npc = 11;</code>
        */
       public emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfoOrBuilder getCharacterNpcOrBuilder() {
         if (characterNpcBuilder_ != null) {
@@ -1086,7 +1334,7 @@ public final class GCGTavernNpcInfoNotifyOuterClass {
         }
       }
       /**
-       * <code>.GCGTavernNpcInfo character_npc = 5;</code>
+       * <code>.GCGTavernNpcInfo character_npc = 11;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfo, emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfo.Builder, emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfoOrBuilder> 
@@ -1100,246 +1348,6 @@ public final class GCGTavernNpcInfoNotifyOuterClass {
           characterNpc_ = null;
         }
         return characterNpcBuilder_;
-      }
-
-      private java.util.List<emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfo> constNpcList_ =
-        java.util.Collections.emptyList();
-      private void ensureConstNpcListIsMutable() {
-        if (!((bitField0_ & 0x00000002) != 0)) {
-          constNpcList_ = new java.util.ArrayList<emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfo>(constNpcList_);
-          bitField0_ |= 0x00000002;
-         }
-      }
-
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfo, emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfo.Builder, emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfoOrBuilder> constNpcListBuilder_;
-
-      /**
-       * <code>repeated .GCGTavernNpcInfo const_npc_list = 15;</code>
-       */
-      public java.util.List<emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfo> getConstNpcListList() {
-        if (constNpcListBuilder_ == null) {
-          return java.util.Collections.unmodifiableList(constNpcList_);
-        } else {
-          return constNpcListBuilder_.getMessageList();
-        }
-      }
-      /**
-       * <code>repeated .GCGTavernNpcInfo const_npc_list = 15;</code>
-       */
-      public int getConstNpcListCount() {
-        if (constNpcListBuilder_ == null) {
-          return constNpcList_.size();
-        } else {
-          return constNpcListBuilder_.getCount();
-        }
-      }
-      /**
-       * <code>repeated .GCGTavernNpcInfo const_npc_list = 15;</code>
-       */
-      public emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfo getConstNpcList(int index) {
-        if (constNpcListBuilder_ == null) {
-          return constNpcList_.get(index);
-        } else {
-          return constNpcListBuilder_.getMessage(index);
-        }
-      }
-      /**
-       * <code>repeated .GCGTavernNpcInfo const_npc_list = 15;</code>
-       */
-      public Builder setConstNpcList(
-          int index, emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfo value) {
-        if (constNpcListBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureConstNpcListIsMutable();
-          constNpcList_.set(index, value);
-          onChanged();
-        } else {
-          constNpcListBuilder_.setMessage(index, value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .GCGTavernNpcInfo const_npc_list = 15;</code>
-       */
-      public Builder setConstNpcList(
-          int index, emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfo.Builder builderForValue) {
-        if (constNpcListBuilder_ == null) {
-          ensureConstNpcListIsMutable();
-          constNpcList_.set(index, builderForValue.build());
-          onChanged();
-        } else {
-          constNpcListBuilder_.setMessage(index, builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .GCGTavernNpcInfo const_npc_list = 15;</code>
-       */
-      public Builder addConstNpcList(emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfo value) {
-        if (constNpcListBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureConstNpcListIsMutable();
-          constNpcList_.add(value);
-          onChanged();
-        } else {
-          constNpcListBuilder_.addMessage(value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .GCGTavernNpcInfo const_npc_list = 15;</code>
-       */
-      public Builder addConstNpcList(
-          int index, emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfo value) {
-        if (constNpcListBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureConstNpcListIsMutable();
-          constNpcList_.add(index, value);
-          onChanged();
-        } else {
-          constNpcListBuilder_.addMessage(index, value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .GCGTavernNpcInfo const_npc_list = 15;</code>
-       */
-      public Builder addConstNpcList(
-          emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfo.Builder builderForValue) {
-        if (constNpcListBuilder_ == null) {
-          ensureConstNpcListIsMutable();
-          constNpcList_.add(builderForValue.build());
-          onChanged();
-        } else {
-          constNpcListBuilder_.addMessage(builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .GCGTavernNpcInfo const_npc_list = 15;</code>
-       */
-      public Builder addConstNpcList(
-          int index, emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfo.Builder builderForValue) {
-        if (constNpcListBuilder_ == null) {
-          ensureConstNpcListIsMutable();
-          constNpcList_.add(index, builderForValue.build());
-          onChanged();
-        } else {
-          constNpcListBuilder_.addMessage(index, builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .GCGTavernNpcInfo const_npc_list = 15;</code>
-       */
-      public Builder addAllConstNpcList(
-          java.lang.Iterable<? extends emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfo> values) {
-        if (constNpcListBuilder_ == null) {
-          ensureConstNpcListIsMutable();
-          com.google.protobuf.AbstractMessageLite.Builder.addAll(
-              values, constNpcList_);
-          onChanged();
-        } else {
-          constNpcListBuilder_.addAllMessages(values);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .GCGTavernNpcInfo const_npc_list = 15;</code>
-       */
-      public Builder clearConstNpcList() {
-        if (constNpcListBuilder_ == null) {
-          constNpcList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000002);
-          onChanged();
-        } else {
-          constNpcListBuilder_.clear();
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .GCGTavernNpcInfo const_npc_list = 15;</code>
-       */
-      public Builder removeConstNpcList(int index) {
-        if (constNpcListBuilder_ == null) {
-          ensureConstNpcListIsMutable();
-          constNpcList_.remove(index);
-          onChanged();
-        } else {
-          constNpcListBuilder_.remove(index);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .GCGTavernNpcInfo const_npc_list = 15;</code>
-       */
-      public emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfo.Builder getConstNpcListBuilder(
-          int index) {
-        return getConstNpcListFieldBuilder().getBuilder(index);
-      }
-      /**
-       * <code>repeated .GCGTavernNpcInfo const_npc_list = 15;</code>
-       */
-      public emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfoOrBuilder getConstNpcListOrBuilder(
-          int index) {
-        if (constNpcListBuilder_ == null) {
-          return constNpcList_.get(index);  } else {
-          return constNpcListBuilder_.getMessageOrBuilder(index);
-        }
-      }
-      /**
-       * <code>repeated .GCGTavernNpcInfo const_npc_list = 15;</code>
-       */
-      public java.util.List<? extends emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfoOrBuilder> 
-           getConstNpcListOrBuilderList() {
-        if (constNpcListBuilder_ != null) {
-          return constNpcListBuilder_.getMessageOrBuilderList();
-        } else {
-          return java.util.Collections.unmodifiableList(constNpcList_);
-        }
-      }
-      /**
-       * <code>repeated .GCGTavernNpcInfo const_npc_list = 15;</code>
-       */
-      public emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfo.Builder addConstNpcListBuilder() {
-        return getConstNpcListFieldBuilder().addBuilder(
-            emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfo.getDefaultInstance());
-      }
-      /**
-       * <code>repeated .GCGTavernNpcInfo const_npc_list = 15;</code>
-       */
-      public emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfo.Builder addConstNpcListBuilder(
-          int index) {
-        return getConstNpcListFieldBuilder().addBuilder(
-            index, emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfo.getDefaultInstance());
-      }
-      /**
-       * <code>repeated .GCGTavernNpcInfo const_npc_list = 15;</code>
-       */
-      public java.util.List<emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfo.Builder> 
-           getConstNpcListBuilderList() {
-        return getConstNpcListFieldBuilder().getBuilderList();
-      }
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfo, emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfo.Builder, emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfoOrBuilder> 
-          getConstNpcListFieldBuilder() {
-        if (constNpcListBuilder_ == null) {
-          constNpcListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfo, emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfo.Builder, emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfoOrBuilder>(
-                  constNpcList_,
-                  ((bitField0_ & 0x00000002) != 0),
-                  getParentForChildren(),
-                  isClean());
-          constNpcList_ = null;
-        }
-        return constNpcListBuilder_;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -1409,12 +1417,12 @@ public final class GCGTavernNpcInfoNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\034GCGTavernNpcInfoNotify.proto\032\026GCGTaver" +
-      "nNpcInfo.proto\"\227\001\n\026GCGTavernNpcInfoNotif" +
-      "y\022(\n\rweek_npc_list\030\001 \003(\0132\021.GCGTavernNpcI" +
-      "nfo\022(\n\rcharacter_npc\030\005 \001(\0132\021.GCGTavernNp" +
-      "cInfo\022)\n\016const_npc_list\030\017 \003(\0132\021.GCGTaver" +
-      "nNpcInfoB\033\n\031emu.grasscutter.net.protob\006p" +
-      "roto3"
+      "nNpcInfo.proto\"\242\001\n\026GCGTavernNpcInfoNotif" +
+      "y\022.\n\023Unk3300_FKAKHMMIEBC\030\014 \003(\0132\021.GCGTave" +
+      "rnNpcInfo\022.\n\023Unk3300_BAMLNENDLCM\030\002 \003(\0132\021" +
+      ".GCGTavernNpcInfo\022(\n\rcharacter_npc\030\013 \001(\013" +
+      "2\021.GCGTavernNpcInfoB\033\n\031emu.grasscutter.n" +
+      "et.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -1426,7 +1434,7 @@ public final class GCGTavernNpcInfoNotifyOuterClass {
     internal_static_GCGTavernNpcInfoNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GCGTavernNpcInfoNotify_descriptor,
-        new java.lang.String[] { "WeekNpcList", "CharacterNpc", "ConstNpcList", });
+        new java.lang.String[] { "Unk3300FKAKHMMIEBC", "Unk3300BAMLNENDLCM", "CharacterNpc", });
     emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.getDescriptor();
   }
 

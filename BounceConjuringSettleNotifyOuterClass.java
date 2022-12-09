@@ -19,17 +19,23 @@ public final class BounceConjuringSettleNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_new_record = 14;</code>
+     * <code>bool is_new_record = 4;</code>
      * @return The isNewRecord.
      */
     boolean getIsNewRecord();
 
     /**
-     * <code>map&lt;uint32, .BounceConjuringGallerySettleInfo&gt; settle_info_map = 4;</code>
+     * <code>uint32 total_score = 11;</code>
+     * @return The totalScore.
+     */
+    int getTotalScore();
+
+    /**
+     * <code>map&lt;uint32, .BounceConjuringGallerySettleInfo&gt; settle_info_map = 10;</code>
      */
     int getSettleInfoMapCount();
     /**
-     * <code>map&lt;uint32, .BounceConjuringGallerySettleInfo&gt; settle_info_map = 4;</code>
+     * <code>map&lt;uint32, .BounceConjuringGallerySettleInfo&gt; settle_info_map = 10;</code>
      */
     boolean containsSettleInfoMap(
         int key);
@@ -40,41 +46,39 @@ public final class BounceConjuringSettleNotifyOuterClass {
     java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.BounceConjuringGallerySettleInfoOuterClass.BounceConjuringGallerySettleInfo>
     getSettleInfoMap();
     /**
-     * <code>map&lt;uint32, .BounceConjuringGallerySettleInfo&gt; settle_info_map = 4;</code>
+     * <code>map&lt;uint32, .BounceConjuringGallerySettleInfo&gt; settle_info_map = 10;</code>
      */
     java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.BounceConjuringGallerySettleInfoOuterClass.BounceConjuringGallerySettleInfo>
     getSettleInfoMapMap();
     /**
-     * <code>map&lt;uint32, .BounceConjuringGallerySettleInfo&gt; settle_info_map = 4;</code>
+     * <code>map&lt;uint32, .BounceConjuringGallerySettleInfo&gt; settle_info_map = 10;</code>
      */
 
     emu.grasscutter.net.proto.BounceConjuringGallerySettleInfoOuterClass.BounceConjuringGallerySettleInfo getSettleInfoMapOrDefault(
         int key,
         emu.grasscutter.net.proto.BounceConjuringGallerySettleInfoOuterClass.BounceConjuringGallerySettleInfo defaultValue);
     /**
-     * <code>map&lt;uint32, .BounceConjuringGallerySettleInfo&gt; settle_info_map = 4;</code>
+     * <code>map&lt;uint32, .BounceConjuringGallerySettleInfo&gt; settle_info_map = 10;</code>
      */
 
     emu.grasscutter.net.proto.BounceConjuringGallerySettleInfoOuterClass.BounceConjuringGallerySettleInfo getSettleInfoMapOrThrow(
         int key);
 
     /**
-     * <code>uint32 total_score = 2;</code>
-     * @return The totalScore.
-     */
-    int getTotalScore();
-
-    /**
-     * <code>uint32 chapter_id = 13;</code>
+     * <code>uint32 chapter_id = 7;</code>
      * @return The chapterId.
      */
     int getChapterId();
   }
   /**
    * <pre>
-   * CmdId: 8084
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 8653;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code BounceConjuringSettleNotify}
@@ -122,12 +126,17 @@ public final class BounceConjuringSettleNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
+            case 32: {
 
-              totalScore_ = input.readUInt32();
+              isNewRecord_ = input.readBool();
               break;
             }
-            case 34: {
+            case 56: {
+
+              chapterId_ = input.readUInt32();
+              break;
+            }
+            case 82: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 settleInfoMap_ = com.google.protobuf.MapField.newMapField(
                     SettleInfoMapDefaultEntryHolder.defaultEntry);
@@ -140,14 +149,9 @@ public final class BounceConjuringSettleNotifyOuterClass {
                   settleInfoMap__.getKey(), settleInfoMap__.getValue());
               break;
             }
-            case 104: {
+            case 88: {
 
-              chapterId_ = input.readUInt32();
-              break;
-            }
-            case 112: {
-
-              isNewRecord_ = input.readBool();
+              totalScore_ = input.readUInt32();
               break;
             }
             default: {
@@ -179,7 +183,7 @@ public final class BounceConjuringSettleNotifyOuterClass {
     protected com.google.protobuf.MapField internalGetMapField(
         int number) {
       switch (number) {
-        case 4:
+        case 10:
           return internalGetSettleInfoMap();
         default:
           throw new RuntimeException(
@@ -194,10 +198,10 @@ public final class BounceConjuringSettleNotifyOuterClass {
               emu.grasscutter.net.proto.BounceConjuringSettleNotifyOuterClass.BounceConjuringSettleNotify.class, emu.grasscutter.net.proto.BounceConjuringSettleNotifyOuterClass.BounceConjuringSettleNotify.Builder.class);
     }
 
-    public static final int IS_NEW_RECORD_FIELD_NUMBER = 14;
+    public static final int IS_NEW_RECORD_FIELD_NUMBER = 4;
     private boolean isNewRecord_;
     /**
-     * <code>bool is_new_record = 14;</code>
+     * <code>bool is_new_record = 4;</code>
      * @return The isNewRecord.
      */
     @java.lang.Override
@@ -205,7 +209,18 @@ public final class BounceConjuringSettleNotifyOuterClass {
       return isNewRecord_;
     }
 
-    public static final int SETTLE_INFO_MAP_FIELD_NUMBER = 4;
+    public static final int TOTAL_SCORE_FIELD_NUMBER = 11;
+    private int totalScore_;
+    /**
+     * <code>uint32 total_score = 11;</code>
+     * @return The totalScore.
+     */
+    @java.lang.Override
+    public int getTotalScore() {
+      return totalScore_;
+    }
+
+    public static final int SETTLE_INFO_MAP_FIELD_NUMBER = 10;
     private static final class SettleInfoMapDefaultEntryHolder {
       static final com.google.protobuf.MapEntry<
           java.lang.Integer, emu.grasscutter.net.proto.BounceConjuringGallerySettleInfoOuterClass.BounceConjuringGallerySettleInfo> defaultEntry =
@@ -232,7 +247,7 @@ public final class BounceConjuringSettleNotifyOuterClass {
       return internalGetSettleInfoMap().getMap().size();
     }
     /**
-     * <code>map&lt;uint32, .BounceConjuringGallerySettleInfo&gt; settle_info_map = 4;</code>
+     * <code>map&lt;uint32, .BounceConjuringGallerySettleInfo&gt; settle_info_map = 10;</code>
      */
 
     @java.lang.Override
@@ -250,7 +265,7 @@ public final class BounceConjuringSettleNotifyOuterClass {
       return getSettleInfoMapMap();
     }
     /**
-     * <code>map&lt;uint32, .BounceConjuringGallerySettleInfo&gt; settle_info_map = 4;</code>
+     * <code>map&lt;uint32, .BounceConjuringGallerySettleInfo&gt; settle_info_map = 10;</code>
      */
     @java.lang.Override
 
@@ -258,7 +273,7 @@ public final class BounceConjuringSettleNotifyOuterClass {
       return internalGetSettleInfoMap().getMap();
     }
     /**
-     * <code>map&lt;uint32, .BounceConjuringGallerySettleInfo&gt; settle_info_map = 4;</code>
+     * <code>map&lt;uint32, .BounceConjuringGallerySettleInfo&gt; settle_info_map = 10;</code>
      */
     @java.lang.Override
 
@@ -271,7 +286,7 @@ public final class BounceConjuringSettleNotifyOuterClass {
       return map.containsKey(key) ? map.get(key) : defaultValue;
     }
     /**
-     * <code>map&lt;uint32, .BounceConjuringGallerySettleInfo&gt; settle_info_map = 4;</code>
+     * <code>map&lt;uint32, .BounceConjuringGallerySettleInfo&gt; settle_info_map = 10;</code>
      */
     @java.lang.Override
 
@@ -286,21 +301,10 @@ public final class BounceConjuringSettleNotifyOuterClass {
       return map.get(key);
     }
 
-    public static final int TOTAL_SCORE_FIELD_NUMBER = 2;
-    private int totalScore_;
-    /**
-     * <code>uint32 total_score = 2;</code>
-     * @return The totalScore.
-     */
-    @java.lang.Override
-    public int getTotalScore() {
-      return totalScore_;
-    }
-
-    public static final int CHAPTER_ID_FIELD_NUMBER = 13;
+    public static final int CHAPTER_ID_FIELD_NUMBER = 7;
     private int chapterId_;
     /**
-     * <code>uint32 chapter_id = 13;</code>
+     * <code>uint32 chapter_id = 7;</code>
      * @return The chapterId.
      */
     @java.lang.Override
@@ -322,20 +326,20 @@ public final class BounceConjuringSettleNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (totalScore_ != 0) {
-        output.writeUInt32(2, totalScore_);
+      if (isNewRecord_ != false) {
+        output.writeBool(4, isNewRecord_);
+      }
+      if (chapterId_ != 0) {
+        output.writeUInt32(7, chapterId_);
       }
       com.google.protobuf.GeneratedMessageV3
         .serializeIntegerMapTo(
           output,
           internalGetSettleInfoMap(),
           SettleInfoMapDefaultEntryHolder.defaultEntry,
-          4);
-      if (chapterId_ != 0) {
-        output.writeUInt32(13, chapterId_);
-      }
-      if (isNewRecord_ != false) {
-        output.writeBool(14, isNewRecord_);
+          10);
+      if (totalScore_ != 0) {
+        output.writeUInt32(11, totalScore_);
       }
       unknownFields.writeTo(output);
     }
@@ -346,9 +350,13 @@ public final class BounceConjuringSettleNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (totalScore_ != 0) {
+      if (isNewRecord_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, totalScore_);
+          .computeBoolSize(4, isNewRecord_);
+      }
+      if (chapterId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(7, chapterId_);
       }
       for (java.util.Map.Entry<java.lang.Integer, emu.grasscutter.net.proto.BounceConjuringGallerySettleInfoOuterClass.BounceConjuringGallerySettleInfo> entry
            : internalGetSettleInfoMap().getMap().entrySet()) {
@@ -358,15 +366,11 @@ public final class BounceConjuringSettleNotifyOuterClass {
             .setValue(entry.getValue())
             .build();
         size += com.google.protobuf.CodedOutputStream
-            .computeMessageSize(4, settleInfoMap__);
+            .computeMessageSize(10, settleInfoMap__);
       }
-      if (chapterId_ != 0) {
+      if (totalScore_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, chapterId_);
-      }
-      if (isNewRecord_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(14, isNewRecord_);
+          .computeUInt32Size(11, totalScore_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -385,10 +389,10 @@ public final class BounceConjuringSettleNotifyOuterClass {
 
       if (getIsNewRecord()
           != other.getIsNewRecord()) return false;
-      if (!internalGetSettleInfoMap().equals(
-          other.internalGetSettleInfoMap())) return false;
       if (getTotalScore()
           != other.getTotalScore()) return false;
+      if (!internalGetSettleInfoMap().equals(
+          other.internalGetSettleInfoMap())) return false;
       if (getChapterId()
           != other.getChapterId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
@@ -405,12 +409,12 @@ public final class BounceConjuringSettleNotifyOuterClass {
       hash = (37 * hash) + IS_NEW_RECORD_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsNewRecord());
+      hash = (37 * hash) + TOTAL_SCORE_FIELD_NUMBER;
+      hash = (53 * hash) + getTotalScore();
       if (!internalGetSettleInfoMap().getMap().isEmpty()) {
         hash = (37 * hash) + SETTLE_INFO_MAP_FIELD_NUMBER;
         hash = (53 * hash) + internalGetSettleInfoMap().hashCode();
       }
-      hash = (37 * hash) + TOTAL_SCORE_FIELD_NUMBER;
-      hash = (53 * hash) + getTotalScore();
       hash = (37 * hash) + CHAPTER_ID_FIELD_NUMBER;
       hash = (53 * hash) + getChapterId();
       hash = (29 * hash) + unknownFields.hashCode();
@@ -510,9 +514,13 @@ public final class BounceConjuringSettleNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 8084
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 8653;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code BounceConjuringSettleNotify}
@@ -530,7 +538,7 @@ public final class BounceConjuringSettleNotifyOuterClass {
       protected com.google.protobuf.MapField internalGetMapField(
           int number) {
         switch (number) {
-          case 4:
+          case 10:
             return internalGetSettleInfoMap();
           default:
             throw new RuntimeException(
@@ -541,7 +549,7 @@ public final class BounceConjuringSettleNotifyOuterClass {
       protected com.google.protobuf.MapField internalGetMutableMapField(
           int number) {
         switch (number) {
-          case 4:
+          case 10:
             return internalGetMutableSettleInfoMap();
           default:
             throw new RuntimeException(
@@ -576,9 +584,9 @@ public final class BounceConjuringSettleNotifyOuterClass {
         super.clear();
         isNewRecord_ = false;
 
-        internalGetMutableSettleInfoMap().clear();
         totalScore_ = 0;
 
+        internalGetMutableSettleInfoMap().clear();
         chapterId_ = 0;
 
         return this;
@@ -609,9 +617,9 @@ public final class BounceConjuringSettleNotifyOuterClass {
         emu.grasscutter.net.proto.BounceConjuringSettleNotifyOuterClass.BounceConjuringSettleNotify result = new emu.grasscutter.net.proto.BounceConjuringSettleNotifyOuterClass.BounceConjuringSettleNotify(this);
         int from_bitField0_ = bitField0_;
         result.isNewRecord_ = isNewRecord_;
+        result.totalScore_ = totalScore_;
         result.settleInfoMap_ = internalGetSettleInfoMap();
         result.settleInfoMap_.makeImmutable();
-        result.totalScore_ = totalScore_;
         result.chapterId_ = chapterId_;
         onBuilt();
         return result;
@@ -664,11 +672,11 @@ public final class BounceConjuringSettleNotifyOuterClass {
         if (other.getIsNewRecord() != false) {
           setIsNewRecord(other.getIsNewRecord());
         }
-        internalGetMutableSettleInfoMap().mergeFrom(
-            other.internalGetSettleInfoMap());
         if (other.getTotalScore() != 0) {
           setTotalScore(other.getTotalScore());
         }
+        internalGetMutableSettleInfoMap().mergeFrom(
+            other.internalGetSettleInfoMap());
         if (other.getChapterId() != 0) {
           setChapterId(other.getChapterId());
         }
@@ -704,7 +712,7 @@ public final class BounceConjuringSettleNotifyOuterClass {
 
       private boolean isNewRecord_ ;
       /**
-       * <code>bool is_new_record = 14;</code>
+       * <code>bool is_new_record = 4;</code>
        * @return The isNewRecord.
        */
       @java.lang.Override
@@ -712,7 +720,7 @@ public final class BounceConjuringSettleNotifyOuterClass {
         return isNewRecord_;
       }
       /**
-       * <code>bool is_new_record = 14;</code>
+       * <code>bool is_new_record = 4;</code>
        * @param value The isNewRecord to set.
        * @return This builder for chaining.
        */
@@ -723,12 +731,43 @@ public final class BounceConjuringSettleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>bool is_new_record = 14;</code>
+       * <code>bool is_new_record = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsNewRecord() {
         
         isNewRecord_ = false;
+        onChanged();
+        return this;
+      }
+
+      private int totalScore_ ;
+      /**
+       * <code>uint32 total_score = 11;</code>
+       * @return The totalScore.
+       */
+      @java.lang.Override
+      public int getTotalScore() {
+        return totalScore_;
+      }
+      /**
+       * <code>uint32 total_score = 11;</code>
+       * @param value The totalScore to set.
+       * @return This builder for chaining.
+       */
+      public Builder setTotalScore(int value) {
+        
+        totalScore_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 total_score = 11;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearTotalScore() {
+        
+        totalScore_ = 0;
         onChanged();
         return this;
       }
@@ -760,7 +799,7 @@ public final class BounceConjuringSettleNotifyOuterClass {
         return internalGetSettleInfoMap().getMap().size();
       }
       /**
-       * <code>map&lt;uint32, .BounceConjuringGallerySettleInfo&gt; settle_info_map = 4;</code>
+       * <code>map&lt;uint32, .BounceConjuringGallerySettleInfo&gt; settle_info_map = 10;</code>
        */
 
       @java.lang.Override
@@ -778,7 +817,7 @@ public final class BounceConjuringSettleNotifyOuterClass {
         return getSettleInfoMapMap();
       }
       /**
-       * <code>map&lt;uint32, .BounceConjuringGallerySettleInfo&gt; settle_info_map = 4;</code>
+       * <code>map&lt;uint32, .BounceConjuringGallerySettleInfo&gt; settle_info_map = 10;</code>
        */
       @java.lang.Override
 
@@ -786,7 +825,7 @@ public final class BounceConjuringSettleNotifyOuterClass {
         return internalGetSettleInfoMap().getMap();
       }
       /**
-       * <code>map&lt;uint32, .BounceConjuringGallerySettleInfo&gt; settle_info_map = 4;</code>
+       * <code>map&lt;uint32, .BounceConjuringGallerySettleInfo&gt; settle_info_map = 10;</code>
        */
       @java.lang.Override
 
@@ -799,7 +838,7 @@ public final class BounceConjuringSettleNotifyOuterClass {
         return map.containsKey(key) ? map.get(key) : defaultValue;
       }
       /**
-       * <code>map&lt;uint32, .BounceConjuringGallerySettleInfo&gt; settle_info_map = 4;</code>
+       * <code>map&lt;uint32, .BounceConjuringGallerySettleInfo&gt; settle_info_map = 10;</code>
        */
       @java.lang.Override
 
@@ -820,7 +859,7 @@ public final class BounceConjuringSettleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>map&lt;uint32, .BounceConjuringGallerySettleInfo&gt; settle_info_map = 4;</code>
+       * <code>map&lt;uint32, .BounceConjuringGallerySettleInfo&gt; settle_info_map = 10;</code>
        */
 
       public Builder removeSettleInfoMap(
@@ -839,7 +878,7 @@ public final class BounceConjuringSettleNotifyOuterClass {
         return internalGetMutableSettleInfoMap().getMutableMap();
       }
       /**
-       * <code>map&lt;uint32, .BounceConjuringGallerySettleInfo&gt; settle_info_map = 4;</code>
+       * <code>map&lt;uint32, .BounceConjuringGallerySettleInfo&gt; settle_info_map = 10;</code>
        */
       public Builder putSettleInfoMap(
           int key,
@@ -851,7 +890,7 @@ public final class BounceConjuringSettleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>map&lt;uint32, .BounceConjuringGallerySettleInfo&gt; settle_info_map = 4;</code>
+       * <code>map&lt;uint32, .BounceConjuringGallerySettleInfo&gt; settle_info_map = 10;</code>
        */
 
       public Builder putAllSettleInfoMap(
@@ -861,40 +900,9 @@ public final class BounceConjuringSettleNotifyOuterClass {
         return this;
       }
 
-      private int totalScore_ ;
-      /**
-       * <code>uint32 total_score = 2;</code>
-       * @return The totalScore.
-       */
-      @java.lang.Override
-      public int getTotalScore() {
-        return totalScore_;
-      }
-      /**
-       * <code>uint32 total_score = 2;</code>
-       * @param value The totalScore to set.
-       * @return This builder for chaining.
-       */
-      public Builder setTotalScore(int value) {
-        
-        totalScore_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 total_score = 2;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearTotalScore() {
-        
-        totalScore_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int chapterId_ ;
       /**
-       * <code>uint32 chapter_id = 13;</code>
+       * <code>uint32 chapter_id = 7;</code>
        * @return The chapterId.
        */
       @java.lang.Override
@@ -902,7 +910,7 @@ public final class BounceConjuringSettleNotifyOuterClass {
         return chapterId_;
       }
       /**
-       * <code>uint32 chapter_id = 13;</code>
+       * <code>uint32 chapter_id = 7;</code>
        * @param value The chapterId to set.
        * @return This builder for chaining.
        */
@@ -913,7 +921,7 @@ public final class BounceConjuringSettleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 chapter_id = 13;</code>
+       * <code>uint32 chapter_id = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearChapterId() {
@@ -997,10 +1005,10 @@ public final class BounceConjuringSettleNotifyOuterClass {
       "\n!BounceConjuringSettleNotify.proto\032&Bou" +
       "nceConjuringGallerySettleInfo.proto\"\200\002\n\033" +
       "BounceConjuringSettleNotify\022\025\n\ris_new_re" +
-      "cord\030\016 \001(\010\022H\n\017settle_info_map\030\004 \003(\0132/.Bo" +
-      "unceConjuringSettleNotify.SettleInfoMapE" +
-      "ntry\022\023\n\013total_score\030\002 \001(\r\022\022\n\nchapter_id\030" +
-      "\r \001(\r\032W\n\022SettleInfoMapEntry\022\013\n\003key\030\001 \001(\r" +
+      "cord\030\004 \001(\010\022\023\n\013total_score\030\013 \001(\r\022H\n\017settl" +
+      "e_info_map\030\n \003(\0132/.BounceConjuringSettle" +
+      "Notify.SettleInfoMapEntry\022\022\n\nchapter_id\030" +
+      "\007 \001(\r\032W\n\022SettleInfoMapEntry\022\013\n\003key\030\001 \001(\r" +
       "\0220\n\005value\030\002 \001(\0132!.BounceConjuringGallery" +
       "SettleInfo:\0028\001B\033\n\031emu.grasscutter.net.pr" +
       "otob\006proto3"
@@ -1015,7 +1023,7 @@ public final class BounceConjuringSettleNotifyOuterClass {
     internal_static_BounceConjuringSettleNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_BounceConjuringSettleNotify_descriptor,
-        new java.lang.String[] { "IsNewRecord", "SettleInfoMap", "TotalScore", "ChapterId", });
+        new java.lang.String[] { "IsNewRecord", "TotalScore", "SettleInfoMap", "ChapterId", });
     internal_static_BounceConjuringSettleNotify_SettleInfoMapEntry_descriptor =
       internal_static_BounceConjuringSettleNotify_descriptor.getNestedTypes().get(0);
     internal_static_BounceConjuringSettleNotify_SettleInfoMapEntry_fieldAccessorTable = new

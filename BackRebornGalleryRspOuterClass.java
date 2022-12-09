@@ -19,22 +19,26 @@ public final class BackRebornGalleryRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 gallery_id = 9;</code>
+     * <code>uint32 gallery_id = 10;</code>
      * @return The galleryId.
      */
     int getGalleryId();
 
     /**
-     * <code>int32 retcode = 5;</code>
+     * <code>int32 retcode = 11;</code>
      * @return The retcode.
      */
     int getRetcode();
   }
   /**
    * <pre>
-   * CmdId: 5527
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 5517;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code BackRebornGalleryRsp}
@@ -81,14 +85,14 @@ public final class BackRebornGalleryRspOuterClass {
             case 0:
               done = true;
               break;
-            case 40: {
-
-              retcode_ = input.readInt32();
-              break;
-            }
-            case 72: {
+            case 80: {
 
               galleryId_ = input.readUInt32();
+              break;
+            }
+            case 88: {
+
+              retcode_ = input.readInt32();
               break;
             }
             default: {
@@ -123,10 +127,10 @@ public final class BackRebornGalleryRspOuterClass {
               emu.grasscutter.net.proto.BackRebornGalleryRspOuterClass.BackRebornGalleryRsp.class, emu.grasscutter.net.proto.BackRebornGalleryRspOuterClass.BackRebornGalleryRsp.Builder.class);
     }
 
-    public static final int GALLERY_ID_FIELD_NUMBER = 9;
+    public static final int GALLERY_ID_FIELD_NUMBER = 10;
     private int galleryId_;
     /**
-     * <code>uint32 gallery_id = 9;</code>
+     * <code>uint32 gallery_id = 10;</code>
      * @return The galleryId.
      */
     @java.lang.Override
@@ -134,10 +138,10 @@ public final class BackRebornGalleryRspOuterClass {
       return galleryId_;
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 5;
+    public static final int RETCODE_FIELD_NUMBER = 11;
     private int retcode_;
     /**
-     * <code>int32 retcode = 5;</code>
+     * <code>int32 retcode = 11;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -159,11 +163,11 @@ public final class BackRebornGalleryRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (retcode_ != 0) {
-        output.writeInt32(5, retcode_);
-      }
       if (galleryId_ != 0) {
-        output.writeUInt32(9, galleryId_);
+        output.writeUInt32(10, galleryId_);
+      }
+      if (retcode_ != 0) {
+        output.writeInt32(11, retcode_);
       }
       unknownFields.writeTo(output);
     }
@@ -174,13 +178,13 @@ public final class BackRebornGalleryRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (retcode_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(5, retcode_);
-      }
       if (galleryId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, galleryId_);
+          .computeUInt32Size(10, galleryId_);
+      }
+      if (retcode_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(11, retcode_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -313,9 +317,13 @@ public final class BackRebornGalleryRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 5527
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 5517;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code BackRebornGalleryRsp}
@@ -472,7 +480,7 @@ public final class BackRebornGalleryRspOuterClass {
 
       private int galleryId_ ;
       /**
-       * <code>uint32 gallery_id = 9;</code>
+       * <code>uint32 gallery_id = 10;</code>
        * @return The galleryId.
        */
       @java.lang.Override
@@ -480,7 +488,7 @@ public final class BackRebornGalleryRspOuterClass {
         return galleryId_;
       }
       /**
-       * <code>uint32 gallery_id = 9;</code>
+       * <code>uint32 gallery_id = 10;</code>
        * @param value The galleryId to set.
        * @return This builder for chaining.
        */
@@ -491,7 +499,7 @@ public final class BackRebornGalleryRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 gallery_id = 9;</code>
+       * <code>uint32 gallery_id = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearGalleryId() {
@@ -503,7 +511,7 @@ public final class BackRebornGalleryRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 5;</code>
+       * <code>int32 retcode = 11;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -511,7 +519,7 @@ public final class BackRebornGalleryRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 5;</code>
+       * <code>int32 retcode = 11;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -522,7 +530,7 @@ public final class BackRebornGalleryRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 5;</code>
+       * <code>int32 retcode = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -599,8 +607,8 @@ public final class BackRebornGalleryRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\032BackRebornGalleryRsp.proto\";\n\024BackRebo" +
-      "rnGalleryRsp\022\022\n\ngallery_id\030\t \001(\r\022\017\n\007retc" +
-      "ode\030\005 \001(\005B\033\n\031emu.grasscutter.net.protob\006" +
+      "rnGalleryRsp\022\022\n\ngallery_id\030\n \001(\r\022\017\n\007retc" +
+      "ode\030\013 \001(\005B\033\n\031emu.grasscutter.net.protob\006" +
       "proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

@@ -19,7 +19,7 @@ public final class SceneGalleryTreasureSeelieInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 progress = 15;</code>
+     * <code>uint32 progress = 1;</code>
      * @return The progress.
      */
     int getProgress();
@@ -75,14 +75,14 @@ public final class SceneGalleryTreasureSeelieInfoOuterClass {
             case 0:
               done = true;
               break;
+            case 8: {
+
+              progress_ = input.readUInt32();
+              break;
+            }
             case 112: {
 
               goal_ = input.readUInt32();
-              break;
-            }
-            case 120: {
-
-              progress_ = input.readUInt32();
               break;
             }
             default: {
@@ -117,10 +117,10 @@ public final class SceneGalleryTreasureSeelieInfoOuterClass {
               emu.grasscutter.net.proto.SceneGalleryTreasureSeelieInfoOuterClass.SceneGalleryTreasureSeelieInfo.class, emu.grasscutter.net.proto.SceneGalleryTreasureSeelieInfoOuterClass.SceneGalleryTreasureSeelieInfo.Builder.class);
     }
 
-    public static final int PROGRESS_FIELD_NUMBER = 15;
+    public static final int PROGRESS_FIELD_NUMBER = 1;
     private int progress_;
     /**
-     * <code>uint32 progress = 15;</code>
+     * <code>uint32 progress = 1;</code>
      * @return The progress.
      */
     @java.lang.Override
@@ -153,11 +153,11 @@ public final class SceneGalleryTreasureSeelieInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (progress_ != 0) {
+        output.writeUInt32(1, progress_);
+      }
       if (goal_ != 0) {
         output.writeUInt32(14, goal_);
-      }
-      if (progress_ != 0) {
-        output.writeUInt32(15, progress_);
       }
       unknownFields.writeTo(output);
     }
@@ -168,13 +168,13 @@ public final class SceneGalleryTreasureSeelieInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (progress_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(1, progress_);
+      }
       if (goal_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(14, goal_);
-      }
-      if (progress_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, progress_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -460,7 +460,7 @@ public final class SceneGalleryTreasureSeelieInfoOuterClass {
 
       private int progress_ ;
       /**
-       * <code>uint32 progress = 15;</code>
+       * <code>uint32 progress = 1;</code>
        * @return The progress.
        */
       @java.lang.Override
@@ -468,7 +468,7 @@ public final class SceneGalleryTreasureSeelieInfoOuterClass {
         return progress_;
       }
       /**
-       * <code>uint32 progress = 15;</code>
+       * <code>uint32 progress = 1;</code>
        * @param value The progress to set.
        * @return This builder for chaining.
        */
@@ -479,7 +479,7 @@ public final class SceneGalleryTreasureSeelieInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 progress = 15;</code>
+       * <code>uint32 progress = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearProgress() {
@@ -588,7 +588,7 @@ public final class SceneGalleryTreasureSeelieInfoOuterClass {
     java.lang.String[] descriptorData = {
       "\n$SceneGalleryTreasureSeelieInfo.proto\"@" +
       "\n\036SceneGalleryTreasureSeelieInfo\022\020\n\010prog" +
-      "ress\030\017 \001(\r\022\014\n\004goal\030\016 \001(\rB\033\n\031emu.grasscut" +
+      "ress\030\001 \001(\r\022\014\n\004goal\030\016 \001(\rB\033\n\031emu.grasscut" +
       "ter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

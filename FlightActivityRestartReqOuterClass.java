@@ -19,23 +19,27 @@ public final class FlightActivityRestartReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 group_id = 4;</code>
+     * <code>uint32 group_id = 3;</code>
      * @return The groupId.
      */
     int getGroupId();
 
     /**
-     * <code>uint32 schedule_id = 10;</code>
+     * <code>uint32 schedule_id = 7;</code>
      * @return The scheduleId.
      */
     int getScheduleId();
   }
   /**
    * <pre>
-   * CmdId: 2037
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 2152;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code FlightActivityRestartReq}
@@ -82,12 +86,12 @@ public final class FlightActivityRestartReqOuterClass {
             case 0:
               done = true;
               break;
-            case 32: {
+            case 24: {
 
               groupId_ = input.readUInt32();
               break;
             }
-            case 80: {
+            case 56: {
 
               scheduleId_ = input.readUInt32();
               break;
@@ -124,10 +128,10 @@ public final class FlightActivityRestartReqOuterClass {
               emu.grasscutter.net.proto.FlightActivityRestartReqOuterClass.FlightActivityRestartReq.class, emu.grasscutter.net.proto.FlightActivityRestartReqOuterClass.FlightActivityRestartReq.Builder.class);
     }
 
-    public static final int GROUP_ID_FIELD_NUMBER = 4;
+    public static final int GROUP_ID_FIELD_NUMBER = 3;
     private int groupId_;
     /**
-     * <code>uint32 group_id = 4;</code>
+     * <code>uint32 group_id = 3;</code>
      * @return The groupId.
      */
     @java.lang.Override
@@ -135,10 +139,10 @@ public final class FlightActivityRestartReqOuterClass {
       return groupId_;
     }
 
-    public static final int SCHEDULE_ID_FIELD_NUMBER = 10;
+    public static final int SCHEDULE_ID_FIELD_NUMBER = 7;
     private int scheduleId_;
     /**
-     * <code>uint32 schedule_id = 10;</code>
+     * <code>uint32 schedule_id = 7;</code>
      * @return The scheduleId.
      */
     @java.lang.Override
@@ -161,10 +165,10 @@ public final class FlightActivityRestartReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (groupId_ != 0) {
-        output.writeUInt32(4, groupId_);
+        output.writeUInt32(3, groupId_);
       }
       if (scheduleId_ != 0) {
-        output.writeUInt32(10, scheduleId_);
+        output.writeUInt32(7, scheduleId_);
       }
       unknownFields.writeTo(output);
     }
@@ -177,11 +181,11 @@ public final class FlightActivityRestartReqOuterClass {
       size = 0;
       if (groupId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, groupId_);
+          .computeUInt32Size(3, groupId_);
       }
       if (scheduleId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, scheduleId_);
+          .computeUInt32Size(7, scheduleId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -314,10 +318,14 @@ public final class FlightActivityRestartReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 2037
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 2152;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code FlightActivityRestartReq}
@@ -474,7 +482,7 @@ public final class FlightActivityRestartReqOuterClass {
 
       private int groupId_ ;
       /**
-       * <code>uint32 group_id = 4;</code>
+       * <code>uint32 group_id = 3;</code>
        * @return The groupId.
        */
       @java.lang.Override
@@ -482,7 +490,7 @@ public final class FlightActivityRestartReqOuterClass {
         return groupId_;
       }
       /**
-       * <code>uint32 group_id = 4;</code>
+       * <code>uint32 group_id = 3;</code>
        * @param value The groupId to set.
        * @return This builder for chaining.
        */
@@ -493,7 +501,7 @@ public final class FlightActivityRestartReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 group_id = 4;</code>
+       * <code>uint32 group_id = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearGroupId() {
@@ -505,7 +513,7 @@ public final class FlightActivityRestartReqOuterClass {
 
       private int scheduleId_ ;
       /**
-       * <code>uint32 schedule_id = 10;</code>
+       * <code>uint32 schedule_id = 7;</code>
        * @return The scheduleId.
        */
       @java.lang.Override
@@ -513,7 +521,7 @@ public final class FlightActivityRestartReqOuterClass {
         return scheduleId_;
       }
       /**
-       * <code>uint32 schedule_id = 10;</code>
+       * <code>uint32 schedule_id = 7;</code>
        * @param value The scheduleId to set.
        * @return This builder for chaining.
        */
@@ -524,7 +532,7 @@ public final class FlightActivityRestartReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 schedule_id = 10;</code>
+       * <code>uint32 schedule_id = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearScheduleId() {
@@ -601,8 +609,8 @@ public final class FlightActivityRestartReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\036FlightActivityRestartReq.proto\"A\n\030Flig" +
-      "htActivityRestartReq\022\020\n\010group_id\030\004 \001(\r\022\023" +
-      "\n\013schedule_id\030\n \001(\rB\033\n\031emu.grasscutter.n" +
+      "htActivityRestartReq\022\020\n\010group_id\030\003 \001(\r\022\023" +
+      "\n\013schedule_id\030\007 \001(\rB\033\n\031emu.grasscutter.n" +
       "et.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

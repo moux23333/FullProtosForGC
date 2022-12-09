@@ -19,23 +19,27 @@ public final class TakeCityReputationLevelRewardReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 level = 11;</code>
+     * <code>uint32 level = 6;</code>
      * @return The level.
      */
     int getLevel();
 
     /**
-     * <code>uint32 city_id = 1;</code>
+     * <code>uint32 city_id = 12;</code>
      * @return The cityId.
      */
     int getCityId();
   }
   /**
    * <pre>
-   * CmdId: 2812
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 2856;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code TakeCityReputationLevelRewardReq}
@@ -82,14 +86,14 @@ public final class TakeCityReputationLevelRewardReqOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
-
-              cityId_ = input.readUInt32();
-              break;
-            }
-            case 88: {
+            case 48: {
 
               level_ = input.readUInt32();
+              break;
+            }
+            case 96: {
+
+              cityId_ = input.readUInt32();
               break;
             }
             default: {
@@ -124,10 +128,10 @@ public final class TakeCityReputationLevelRewardReqOuterClass {
               emu.grasscutter.net.proto.TakeCityReputationLevelRewardReqOuterClass.TakeCityReputationLevelRewardReq.class, emu.grasscutter.net.proto.TakeCityReputationLevelRewardReqOuterClass.TakeCityReputationLevelRewardReq.Builder.class);
     }
 
-    public static final int LEVEL_FIELD_NUMBER = 11;
+    public static final int LEVEL_FIELD_NUMBER = 6;
     private int level_;
     /**
-     * <code>uint32 level = 11;</code>
+     * <code>uint32 level = 6;</code>
      * @return The level.
      */
     @java.lang.Override
@@ -135,10 +139,10 @@ public final class TakeCityReputationLevelRewardReqOuterClass {
       return level_;
     }
 
-    public static final int CITY_ID_FIELD_NUMBER = 1;
+    public static final int CITY_ID_FIELD_NUMBER = 12;
     private int cityId_;
     /**
-     * <code>uint32 city_id = 1;</code>
+     * <code>uint32 city_id = 12;</code>
      * @return The cityId.
      */
     @java.lang.Override
@@ -160,11 +164,11 @@ public final class TakeCityReputationLevelRewardReqOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (cityId_ != 0) {
-        output.writeUInt32(1, cityId_);
-      }
       if (level_ != 0) {
-        output.writeUInt32(11, level_);
+        output.writeUInt32(6, level_);
+      }
+      if (cityId_ != 0) {
+        output.writeUInt32(12, cityId_);
       }
       unknownFields.writeTo(output);
     }
@@ -175,13 +179,13 @@ public final class TakeCityReputationLevelRewardReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (cityId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, cityId_);
-      }
       if (level_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, level_);
+          .computeUInt32Size(6, level_);
+      }
+      if (cityId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(12, cityId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -314,10 +318,14 @@ public final class TakeCityReputationLevelRewardReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 2812
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 2856;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code TakeCityReputationLevelRewardReq}
@@ -474,7 +482,7 @@ public final class TakeCityReputationLevelRewardReqOuterClass {
 
       private int level_ ;
       /**
-       * <code>uint32 level = 11;</code>
+       * <code>uint32 level = 6;</code>
        * @return The level.
        */
       @java.lang.Override
@@ -482,7 +490,7 @@ public final class TakeCityReputationLevelRewardReqOuterClass {
         return level_;
       }
       /**
-       * <code>uint32 level = 11;</code>
+       * <code>uint32 level = 6;</code>
        * @param value The level to set.
        * @return This builder for chaining.
        */
@@ -493,7 +501,7 @@ public final class TakeCityReputationLevelRewardReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 level = 11;</code>
+       * <code>uint32 level = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearLevel() {
@@ -505,7 +513,7 @@ public final class TakeCityReputationLevelRewardReqOuterClass {
 
       private int cityId_ ;
       /**
-       * <code>uint32 city_id = 1;</code>
+       * <code>uint32 city_id = 12;</code>
        * @return The cityId.
        */
       @java.lang.Override
@@ -513,7 +521,7 @@ public final class TakeCityReputationLevelRewardReqOuterClass {
         return cityId_;
       }
       /**
-       * <code>uint32 city_id = 1;</code>
+       * <code>uint32 city_id = 12;</code>
        * @param value The cityId to set.
        * @return This builder for chaining.
        */
@@ -524,7 +532,7 @@ public final class TakeCityReputationLevelRewardReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 city_id = 1;</code>
+       * <code>uint32 city_id = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearCityId() {
@@ -602,7 +610,7 @@ public final class TakeCityReputationLevelRewardReqOuterClass {
     java.lang.String[] descriptorData = {
       "\n&TakeCityReputationLevelRewardReq.proto" +
       "\"B\n TakeCityReputationLevelRewardReq\022\r\n\005" +
-      "level\030\013 \001(\r\022\017\n\007city_id\030\001 \001(\rB\033\n\031emu.gras" +
+      "level\030\006 \001(\r\022\017\n\007city_id\030\014 \001(\rB\033\n\031emu.gras" +
       "scutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

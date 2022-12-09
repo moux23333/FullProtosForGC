@@ -19,13 +19,13 @@ public final class SumoAvatarInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_trial = 2;</code>
+     * <code>bool is_trial = 9;</code>
      * @return The isTrial.
      */
     boolean getIsTrial();
 
     /**
-     * <code>uint64 avatar_id = 1;</code>
+     * <code>uint64 avatar_id = 13;</code>
      * @return The avatarId.
      */
     long getAvatarId();
@@ -75,14 +75,14 @@ public final class SumoAvatarInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
-
-              avatarId_ = input.readUInt64();
-              break;
-            }
-            case 16: {
+            case 72: {
 
               isTrial_ = input.readBool();
+              break;
+            }
+            case 104: {
+
+              avatarId_ = input.readUInt64();
               break;
             }
             default: {
@@ -117,10 +117,10 @@ public final class SumoAvatarInfoOuterClass {
               emu.grasscutter.net.proto.SumoAvatarInfoOuterClass.SumoAvatarInfo.class, emu.grasscutter.net.proto.SumoAvatarInfoOuterClass.SumoAvatarInfo.Builder.class);
     }
 
-    public static final int IS_TRIAL_FIELD_NUMBER = 2;
+    public static final int IS_TRIAL_FIELD_NUMBER = 9;
     private boolean isTrial_;
     /**
-     * <code>bool is_trial = 2;</code>
+     * <code>bool is_trial = 9;</code>
      * @return The isTrial.
      */
     @java.lang.Override
@@ -128,10 +128,10 @@ public final class SumoAvatarInfoOuterClass {
       return isTrial_;
     }
 
-    public static final int AVATAR_ID_FIELD_NUMBER = 1;
+    public static final int AVATAR_ID_FIELD_NUMBER = 13;
     private long avatarId_;
     /**
-     * <code>uint64 avatar_id = 1;</code>
+     * <code>uint64 avatar_id = 13;</code>
      * @return The avatarId.
      */
     @java.lang.Override
@@ -153,11 +153,11 @@ public final class SumoAvatarInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (avatarId_ != 0L) {
-        output.writeUInt64(1, avatarId_);
-      }
       if (isTrial_ != false) {
-        output.writeBool(2, isTrial_);
+        output.writeBool(9, isTrial_);
+      }
+      if (avatarId_ != 0L) {
+        output.writeUInt64(13, avatarId_);
       }
       unknownFields.writeTo(output);
     }
@@ -168,13 +168,13 @@ public final class SumoAvatarInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (avatarId_ != 0L) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt64Size(1, avatarId_);
-      }
       if (isTrial_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(2, isTrial_);
+          .computeBoolSize(9, isTrial_);
+      }
+      if (avatarId_ != 0L) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt64Size(13, avatarId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -462,7 +462,7 @@ public final class SumoAvatarInfoOuterClass {
 
       private boolean isTrial_ ;
       /**
-       * <code>bool is_trial = 2;</code>
+       * <code>bool is_trial = 9;</code>
        * @return The isTrial.
        */
       @java.lang.Override
@@ -470,7 +470,7 @@ public final class SumoAvatarInfoOuterClass {
         return isTrial_;
       }
       /**
-       * <code>bool is_trial = 2;</code>
+       * <code>bool is_trial = 9;</code>
        * @param value The isTrial to set.
        * @return This builder for chaining.
        */
@@ -481,7 +481,7 @@ public final class SumoAvatarInfoOuterClass {
         return this;
       }
       /**
-       * <code>bool is_trial = 2;</code>
+       * <code>bool is_trial = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsTrial() {
@@ -493,7 +493,7 @@ public final class SumoAvatarInfoOuterClass {
 
       private long avatarId_ ;
       /**
-       * <code>uint64 avatar_id = 1;</code>
+       * <code>uint64 avatar_id = 13;</code>
        * @return The avatarId.
        */
       @java.lang.Override
@@ -501,7 +501,7 @@ public final class SumoAvatarInfoOuterClass {
         return avatarId_;
       }
       /**
-       * <code>uint64 avatar_id = 1;</code>
+       * <code>uint64 avatar_id = 13;</code>
        * @param value The avatarId to set.
        * @return This builder for chaining.
        */
@@ -512,7 +512,7 @@ public final class SumoAvatarInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint64 avatar_id = 1;</code>
+       * <code>uint64 avatar_id = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearAvatarId() {
@@ -589,7 +589,7 @@ public final class SumoAvatarInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\024SumoAvatarInfo.proto\"5\n\016SumoAvatarInfo" +
-      "\022\020\n\010is_trial\030\002 \001(\010\022\021\n\tavatar_id\030\001 \001(\004B\033\n" +
+      "\022\020\n\010is_trial\030\t \001(\010\022\021\n\tavatar_id\030\r \001(\004B\033\n" +
       "\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

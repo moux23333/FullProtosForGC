@@ -19,17 +19,21 @@ public final class WinterCampTriathlonRestartReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 gallery_id = 6;</code>
+     * <code>uint32 gallery_id = 12;</code>
      * @return The galleryId.
      */
     int getGalleryId();
   }
   /**
    * <pre>
-   * CmdId: 8844
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 8524;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code WinterCampTriathlonRestartReq}
@@ -76,7 +80,7 @@ public final class WinterCampTriathlonRestartReqOuterClass {
             case 0:
               done = true;
               break;
-            case 48: {
+            case 96: {
 
               galleryId_ = input.readUInt32();
               break;
@@ -113,10 +117,10 @@ public final class WinterCampTriathlonRestartReqOuterClass {
               emu.grasscutter.net.proto.WinterCampTriathlonRestartReqOuterClass.WinterCampTriathlonRestartReq.class, emu.grasscutter.net.proto.WinterCampTriathlonRestartReqOuterClass.WinterCampTriathlonRestartReq.Builder.class);
     }
 
-    public static final int GALLERY_ID_FIELD_NUMBER = 6;
+    public static final int GALLERY_ID_FIELD_NUMBER = 12;
     private int galleryId_;
     /**
-     * <code>uint32 gallery_id = 6;</code>
+     * <code>uint32 gallery_id = 12;</code>
      * @return The galleryId.
      */
     @java.lang.Override
@@ -139,7 +143,7 @@ public final class WinterCampTriathlonRestartReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (galleryId_ != 0) {
-        output.writeUInt32(6, galleryId_);
+        output.writeUInt32(12, galleryId_);
       }
       unknownFields.writeTo(output);
     }
@@ -152,7 +156,7 @@ public final class WinterCampTriathlonRestartReqOuterClass {
       size = 0;
       if (galleryId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, galleryId_);
+          .computeUInt32Size(12, galleryId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -281,10 +285,14 @@ public final class WinterCampTriathlonRestartReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 8844
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 8524;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code WinterCampTriathlonRestartReq}
@@ -435,7 +443,7 @@ public final class WinterCampTriathlonRestartReqOuterClass {
 
       private int galleryId_ ;
       /**
-       * <code>uint32 gallery_id = 6;</code>
+       * <code>uint32 gallery_id = 12;</code>
        * @return The galleryId.
        */
       @java.lang.Override
@@ -443,7 +451,7 @@ public final class WinterCampTriathlonRestartReqOuterClass {
         return galleryId_;
       }
       /**
-       * <code>uint32 gallery_id = 6;</code>
+       * <code>uint32 gallery_id = 12;</code>
        * @param value The galleryId to set.
        * @return This builder for chaining.
        */
@@ -454,7 +462,7 @@ public final class WinterCampTriathlonRestartReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 gallery_id = 6;</code>
+       * <code>uint32 gallery_id = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearGalleryId() {
@@ -532,7 +540,7 @@ public final class WinterCampTriathlonRestartReqOuterClass {
     java.lang.String[] descriptorData = {
       "\n#WinterCampTriathlonRestartReq.proto\"3\n" +
       "\035WinterCampTriathlonRestartReq\022\022\n\ngaller" +
-      "y_id\030\006 \001(\rB\033\n\031emu.grasscutter.net.protob" +
+      "y_id\030\014 \001(\rB\033\n\031emu.grasscutter.net.protob" +
       "\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

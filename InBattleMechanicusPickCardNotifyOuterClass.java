@@ -19,34 +19,38 @@ public final class InBattleMechanicusPickCardNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 player_uid = 6;</code>
+     * <code>uint32 player_uid = 1;</code>
      * @return The playerUid.
      */
     int getPlayerUid();
 
     /**
-     * <code>uint32 group_id = 7;</code>
+     * <code>uint32 card_id = 11;</code>
+     * @return The cardId.
+     */
+    int getCardId();
+
+    /**
+     * <code>uint32 group_id = 12;</code>
      * @return The groupId.
      */
     int getGroupId();
 
     /**
-     * <code>uint32 play_index = 8;</code>
+     * <code>uint32 play_index = 4;</code>
      * @return The playIndex.
      */
     int getPlayIndex();
-
-    /**
-     * <code>uint32 card_id = 10;</code>
-     * @return The cardId.
-     */
-    int getCardId();
   }
   /**
    * <pre>
-   * CmdId: 5399
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 5357;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code InBattleMechanicusPickCardNotify}
@@ -93,24 +97,24 @@ public final class InBattleMechanicusPickCardNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 48: {
+            case 8: {
 
               playerUid_ = input.readUInt32();
               break;
             }
-            case 56: {
-
-              groupId_ = input.readUInt32();
-              break;
-            }
-            case 64: {
+            case 32: {
 
               playIndex_ = input.readUInt32();
               break;
             }
-            case 80: {
+            case 88: {
 
               cardId_ = input.readUInt32();
+              break;
+            }
+            case 96: {
+
+              groupId_ = input.readUInt32();
               break;
             }
             default: {
@@ -145,10 +149,10 @@ public final class InBattleMechanicusPickCardNotifyOuterClass {
               emu.grasscutter.net.proto.InBattleMechanicusPickCardNotifyOuterClass.InBattleMechanicusPickCardNotify.class, emu.grasscutter.net.proto.InBattleMechanicusPickCardNotifyOuterClass.InBattleMechanicusPickCardNotify.Builder.class);
     }
 
-    public static final int PLAYER_UID_FIELD_NUMBER = 6;
+    public static final int PLAYER_UID_FIELD_NUMBER = 1;
     private int playerUid_;
     /**
-     * <code>uint32 player_uid = 6;</code>
+     * <code>uint32 player_uid = 1;</code>
      * @return The playerUid.
      */
     @java.lang.Override
@@ -156,10 +160,21 @@ public final class InBattleMechanicusPickCardNotifyOuterClass {
       return playerUid_;
     }
 
-    public static final int GROUP_ID_FIELD_NUMBER = 7;
+    public static final int CARD_ID_FIELD_NUMBER = 11;
+    private int cardId_;
+    /**
+     * <code>uint32 card_id = 11;</code>
+     * @return The cardId.
+     */
+    @java.lang.Override
+    public int getCardId() {
+      return cardId_;
+    }
+
+    public static final int GROUP_ID_FIELD_NUMBER = 12;
     private int groupId_;
     /**
-     * <code>uint32 group_id = 7;</code>
+     * <code>uint32 group_id = 12;</code>
      * @return The groupId.
      */
     @java.lang.Override
@@ -167,26 +182,15 @@ public final class InBattleMechanicusPickCardNotifyOuterClass {
       return groupId_;
     }
 
-    public static final int PLAY_INDEX_FIELD_NUMBER = 8;
+    public static final int PLAY_INDEX_FIELD_NUMBER = 4;
     private int playIndex_;
     /**
-     * <code>uint32 play_index = 8;</code>
+     * <code>uint32 play_index = 4;</code>
      * @return The playIndex.
      */
     @java.lang.Override
     public int getPlayIndex() {
       return playIndex_;
-    }
-
-    public static final int CARD_ID_FIELD_NUMBER = 10;
-    private int cardId_;
-    /**
-     * <code>uint32 card_id = 10;</code>
-     * @return The cardId.
-     */
-    @java.lang.Override
-    public int getCardId() {
-      return cardId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -204,16 +208,16 @@ public final class InBattleMechanicusPickCardNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (playerUid_ != 0) {
-        output.writeUInt32(6, playerUid_);
-      }
-      if (groupId_ != 0) {
-        output.writeUInt32(7, groupId_);
+        output.writeUInt32(1, playerUid_);
       }
       if (playIndex_ != 0) {
-        output.writeUInt32(8, playIndex_);
+        output.writeUInt32(4, playIndex_);
       }
       if (cardId_ != 0) {
-        output.writeUInt32(10, cardId_);
+        output.writeUInt32(11, cardId_);
+      }
+      if (groupId_ != 0) {
+        output.writeUInt32(12, groupId_);
       }
       unknownFields.writeTo(output);
     }
@@ -226,19 +230,19 @@ public final class InBattleMechanicusPickCardNotifyOuterClass {
       size = 0;
       if (playerUid_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, playerUid_);
-      }
-      if (groupId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, groupId_);
+          .computeUInt32Size(1, playerUid_);
       }
       if (playIndex_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, playIndex_);
+          .computeUInt32Size(4, playIndex_);
       }
       if (cardId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, cardId_);
+          .computeUInt32Size(11, cardId_);
+      }
+      if (groupId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(12, groupId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -257,12 +261,12 @@ public final class InBattleMechanicusPickCardNotifyOuterClass {
 
       if (getPlayerUid()
           != other.getPlayerUid()) return false;
+      if (getCardId()
+          != other.getCardId()) return false;
       if (getGroupId()
           != other.getGroupId()) return false;
       if (getPlayIndex()
           != other.getPlayIndex()) return false;
-      if (getCardId()
-          != other.getCardId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -276,12 +280,12 @@ public final class InBattleMechanicusPickCardNotifyOuterClass {
       hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + PLAYER_UID_FIELD_NUMBER;
       hash = (53 * hash) + getPlayerUid();
+      hash = (37 * hash) + CARD_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getCardId();
       hash = (37 * hash) + GROUP_ID_FIELD_NUMBER;
       hash = (53 * hash) + getGroupId();
       hash = (37 * hash) + PLAY_INDEX_FIELD_NUMBER;
       hash = (53 * hash) + getPlayIndex();
-      hash = (37 * hash) + CARD_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getCardId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -379,9 +383,13 @@ public final class InBattleMechanicusPickCardNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 5399
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 5357;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code InBattleMechanicusPickCardNotify}
@@ -423,11 +431,11 @@ public final class InBattleMechanicusPickCardNotifyOuterClass {
         super.clear();
         playerUid_ = 0;
 
+        cardId_ = 0;
+
         groupId_ = 0;
 
         playIndex_ = 0;
-
-        cardId_ = 0;
 
         return this;
       }
@@ -456,9 +464,9 @@ public final class InBattleMechanicusPickCardNotifyOuterClass {
       public emu.grasscutter.net.proto.InBattleMechanicusPickCardNotifyOuterClass.InBattleMechanicusPickCardNotify buildPartial() {
         emu.grasscutter.net.proto.InBattleMechanicusPickCardNotifyOuterClass.InBattleMechanicusPickCardNotify result = new emu.grasscutter.net.proto.InBattleMechanicusPickCardNotifyOuterClass.InBattleMechanicusPickCardNotify(this);
         result.playerUid_ = playerUid_;
+        result.cardId_ = cardId_;
         result.groupId_ = groupId_;
         result.playIndex_ = playIndex_;
-        result.cardId_ = cardId_;
         onBuilt();
         return result;
       }
@@ -510,14 +518,14 @@ public final class InBattleMechanicusPickCardNotifyOuterClass {
         if (other.getPlayerUid() != 0) {
           setPlayerUid(other.getPlayerUid());
         }
+        if (other.getCardId() != 0) {
+          setCardId(other.getCardId());
+        }
         if (other.getGroupId() != 0) {
           setGroupId(other.getGroupId());
         }
         if (other.getPlayIndex() != 0) {
           setPlayIndex(other.getPlayIndex());
-        }
-        if (other.getCardId() != 0) {
-          setCardId(other.getCardId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -550,7 +558,7 @@ public final class InBattleMechanicusPickCardNotifyOuterClass {
 
       private int playerUid_ ;
       /**
-       * <code>uint32 player_uid = 6;</code>
+       * <code>uint32 player_uid = 1;</code>
        * @return The playerUid.
        */
       @java.lang.Override
@@ -558,7 +566,7 @@ public final class InBattleMechanicusPickCardNotifyOuterClass {
         return playerUid_;
       }
       /**
-       * <code>uint32 player_uid = 6;</code>
+       * <code>uint32 player_uid = 1;</code>
        * @param value The playerUid to set.
        * @return This builder for chaining.
        */
@@ -569,7 +577,7 @@ public final class InBattleMechanicusPickCardNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 player_uid = 6;</code>
+       * <code>uint32 player_uid = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearPlayerUid() {
@@ -579,9 +587,40 @@ public final class InBattleMechanicusPickCardNotifyOuterClass {
         return this;
       }
 
+      private int cardId_ ;
+      /**
+       * <code>uint32 card_id = 11;</code>
+       * @return The cardId.
+       */
+      @java.lang.Override
+      public int getCardId() {
+        return cardId_;
+      }
+      /**
+       * <code>uint32 card_id = 11;</code>
+       * @param value The cardId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setCardId(int value) {
+        
+        cardId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 card_id = 11;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearCardId() {
+        
+        cardId_ = 0;
+        onChanged();
+        return this;
+      }
+
       private int groupId_ ;
       /**
-       * <code>uint32 group_id = 7;</code>
+       * <code>uint32 group_id = 12;</code>
        * @return The groupId.
        */
       @java.lang.Override
@@ -589,7 +628,7 @@ public final class InBattleMechanicusPickCardNotifyOuterClass {
         return groupId_;
       }
       /**
-       * <code>uint32 group_id = 7;</code>
+       * <code>uint32 group_id = 12;</code>
        * @param value The groupId to set.
        * @return This builder for chaining.
        */
@@ -600,7 +639,7 @@ public final class InBattleMechanicusPickCardNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 group_id = 7;</code>
+       * <code>uint32 group_id = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearGroupId() {
@@ -612,7 +651,7 @@ public final class InBattleMechanicusPickCardNotifyOuterClass {
 
       private int playIndex_ ;
       /**
-       * <code>uint32 play_index = 8;</code>
+       * <code>uint32 play_index = 4;</code>
        * @return The playIndex.
        */
       @java.lang.Override
@@ -620,7 +659,7 @@ public final class InBattleMechanicusPickCardNotifyOuterClass {
         return playIndex_;
       }
       /**
-       * <code>uint32 play_index = 8;</code>
+       * <code>uint32 play_index = 4;</code>
        * @param value The playIndex to set.
        * @return This builder for chaining.
        */
@@ -631,43 +670,12 @@ public final class InBattleMechanicusPickCardNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 play_index = 8;</code>
+       * <code>uint32 play_index = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearPlayIndex() {
         
         playIndex_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int cardId_ ;
-      /**
-       * <code>uint32 card_id = 10;</code>
-       * @return The cardId.
-       */
-      @java.lang.Override
-      public int getCardId() {
-        return cardId_;
-      }
-      /**
-       * <code>uint32 card_id = 10;</code>
-       * @param value The cardId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setCardId(int value) {
-        
-        cardId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 card_id = 10;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearCardId() {
-        
-        cardId_ = 0;
         onChanged();
         return this;
       }
@@ -740,8 +748,8 @@ public final class InBattleMechanicusPickCardNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n&InBattleMechanicusPickCardNotify.proto" +
       "\"m\n InBattleMechanicusPickCardNotify\022\022\n\n" +
-      "player_uid\030\006 \001(\r\022\020\n\010group_id\030\007 \001(\r\022\022\n\npl" +
-      "ay_index\030\010 \001(\r\022\017\n\007card_id\030\n \001(\rB\033\n\031emu.g" +
+      "player_uid\030\001 \001(\r\022\017\n\007card_id\030\013 \001(\r\022\020\n\010gro" +
+      "up_id\030\014 \001(\r\022\022\n\nplay_index\030\004 \001(\rB\033\n\031emu.g" +
       "rasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -753,7 +761,7 @@ public final class InBattleMechanicusPickCardNotifyOuterClass {
     internal_static_InBattleMechanicusPickCardNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_InBattleMechanicusPickCardNotify_descriptor,
-        new java.lang.String[] { "PlayerUid", "GroupId", "PlayIndex", "CardId", });
+        new java.lang.String[] { "PlayerUid", "CardId", "GroupId", "PlayIndex", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

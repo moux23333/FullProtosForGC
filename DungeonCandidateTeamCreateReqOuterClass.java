@@ -19,23 +19,27 @@ public final class DungeonCandidateTeamCreateReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 point_id = 7;</code>
-     * @return The pointId.
-     */
-    int getPointId();
-
-    /**
-     * <code>uint32 dungeon_id = 6;</code>
+     * <code>uint32 dungeon_id = 3;</code>
      * @return The dungeonId.
      */
     int getDungeonId();
+
+    /**
+     * <code>uint32 point_id = 1;</code>
+     * @return The pointId.
+     */
+    int getPointId();
   }
   /**
    * <pre>
-   * CmdId: 995
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 933;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code DungeonCandidateTeamCreateReq}
@@ -82,14 +86,14 @@ public final class DungeonCandidateTeamCreateReqOuterClass {
             case 0:
               done = true;
               break;
-            case 48: {
-
-              dungeonId_ = input.readUInt32();
-              break;
-            }
-            case 56: {
+            case 8: {
 
               pointId_ = input.readUInt32();
+              break;
+            }
+            case 24: {
+
+              dungeonId_ = input.readUInt32();
               break;
             }
             default: {
@@ -124,26 +128,26 @@ public final class DungeonCandidateTeamCreateReqOuterClass {
               emu.grasscutter.net.proto.DungeonCandidateTeamCreateReqOuterClass.DungeonCandidateTeamCreateReq.class, emu.grasscutter.net.proto.DungeonCandidateTeamCreateReqOuterClass.DungeonCandidateTeamCreateReq.Builder.class);
     }
 
-    public static final int POINT_ID_FIELD_NUMBER = 7;
-    private int pointId_;
-    /**
-     * <code>uint32 point_id = 7;</code>
-     * @return The pointId.
-     */
-    @java.lang.Override
-    public int getPointId() {
-      return pointId_;
-    }
-
-    public static final int DUNGEON_ID_FIELD_NUMBER = 6;
+    public static final int DUNGEON_ID_FIELD_NUMBER = 3;
     private int dungeonId_;
     /**
-     * <code>uint32 dungeon_id = 6;</code>
+     * <code>uint32 dungeon_id = 3;</code>
      * @return The dungeonId.
      */
     @java.lang.Override
     public int getDungeonId() {
       return dungeonId_;
+    }
+
+    public static final int POINT_ID_FIELD_NUMBER = 1;
+    private int pointId_;
+    /**
+     * <code>uint32 point_id = 1;</code>
+     * @return The pointId.
+     */
+    @java.lang.Override
+    public int getPointId() {
+      return pointId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -160,11 +164,11 @@ public final class DungeonCandidateTeamCreateReqOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (dungeonId_ != 0) {
-        output.writeUInt32(6, dungeonId_);
-      }
       if (pointId_ != 0) {
-        output.writeUInt32(7, pointId_);
+        output.writeUInt32(1, pointId_);
+      }
+      if (dungeonId_ != 0) {
+        output.writeUInt32(3, dungeonId_);
       }
       unknownFields.writeTo(output);
     }
@@ -175,13 +179,13 @@ public final class DungeonCandidateTeamCreateReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (dungeonId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, dungeonId_);
-      }
       if (pointId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, pointId_);
+          .computeUInt32Size(1, pointId_);
+      }
+      if (dungeonId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(3, dungeonId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -198,10 +202,10 @@ public final class DungeonCandidateTeamCreateReqOuterClass {
       }
       emu.grasscutter.net.proto.DungeonCandidateTeamCreateReqOuterClass.DungeonCandidateTeamCreateReq other = (emu.grasscutter.net.proto.DungeonCandidateTeamCreateReqOuterClass.DungeonCandidateTeamCreateReq) obj;
 
-      if (getPointId()
-          != other.getPointId()) return false;
       if (getDungeonId()
           != other.getDungeonId()) return false;
+      if (getPointId()
+          != other.getPointId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -213,10 +217,10 @@ public final class DungeonCandidateTeamCreateReqOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + POINT_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getPointId();
       hash = (37 * hash) + DUNGEON_ID_FIELD_NUMBER;
       hash = (53 * hash) + getDungeonId();
+      hash = (37 * hash) + POINT_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getPointId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -314,10 +318,14 @@ public final class DungeonCandidateTeamCreateReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 995
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 933;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code DungeonCandidateTeamCreateReq}
@@ -357,9 +365,9 @@ public final class DungeonCandidateTeamCreateReqOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        pointId_ = 0;
-
         dungeonId_ = 0;
+
+        pointId_ = 0;
 
         return this;
       }
@@ -387,8 +395,8 @@ public final class DungeonCandidateTeamCreateReqOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.DungeonCandidateTeamCreateReqOuterClass.DungeonCandidateTeamCreateReq buildPartial() {
         emu.grasscutter.net.proto.DungeonCandidateTeamCreateReqOuterClass.DungeonCandidateTeamCreateReq result = new emu.grasscutter.net.proto.DungeonCandidateTeamCreateReqOuterClass.DungeonCandidateTeamCreateReq(this);
-        result.pointId_ = pointId_;
         result.dungeonId_ = dungeonId_;
+        result.pointId_ = pointId_;
         onBuilt();
         return result;
       }
@@ -437,11 +445,11 @@ public final class DungeonCandidateTeamCreateReqOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.DungeonCandidateTeamCreateReqOuterClass.DungeonCandidateTeamCreateReq other) {
         if (other == emu.grasscutter.net.proto.DungeonCandidateTeamCreateReqOuterClass.DungeonCandidateTeamCreateReq.getDefaultInstance()) return this;
-        if (other.getPointId() != 0) {
-          setPointId(other.getPointId());
-        }
         if (other.getDungeonId() != 0) {
           setDungeonId(other.getDungeonId());
+        }
+        if (other.getPointId() != 0) {
+          setPointId(other.getPointId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -472,40 +480,9 @@ public final class DungeonCandidateTeamCreateReqOuterClass {
         return this;
       }
 
-      private int pointId_ ;
-      /**
-       * <code>uint32 point_id = 7;</code>
-       * @return The pointId.
-       */
-      @java.lang.Override
-      public int getPointId() {
-        return pointId_;
-      }
-      /**
-       * <code>uint32 point_id = 7;</code>
-       * @param value The pointId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setPointId(int value) {
-        
-        pointId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 point_id = 7;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearPointId() {
-        
-        pointId_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int dungeonId_ ;
       /**
-       * <code>uint32 dungeon_id = 6;</code>
+       * <code>uint32 dungeon_id = 3;</code>
        * @return The dungeonId.
        */
       @java.lang.Override
@@ -513,7 +490,7 @@ public final class DungeonCandidateTeamCreateReqOuterClass {
         return dungeonId_;
       }
       /**
-       * <code>uint32 dungeon_id = 6;</code>
+       * <code>uint32 dungeon_id = 3;</code>
        * @param value The dungeonId to set.
        * @return This builder for chaining.
        */
@@ -524,12 +501,43 @@ public final class DungeonCandidateTeamCreateReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 dungeon_id = 6;</code>
+       * <code>uint32 dungeon_id = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearDungeonId() {
         
         dungeonId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int pointId_ ;
+      /**
+       * <code>uint32 point_id = 1;</code>
+       * @return The pointId.
+       */
+      @java.lang.Override
+      public int getPointId() {
+        return pointId_;
+      }
+      /**
+       * <code>uint32 point_id = 1;</code>
+       * @param value The pointId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setPointId(int value) {
+        
+        pointId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 point_id = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearPointId() {
+        
+        pointId_ = 0;
         onChanged();
         return this;
       }
@@ -601,8 +609,8 @@ public final class DungeonCandidateTeamCreateReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n#DungeonCandidateTeamCreateReq.proto\"E\n" +
-      "\035DungeonCandidateTeamCreateReq\022\020\n\010point_" +
-      "id\030\007 \001(\r\022\022\n\ndungeon_id\030\006 \001(\rB\033\n\031emu.gras" +
+      "\035DungeonCandidateTeamCreateReq\022\022\n\ndungeo" +
+      "n_id\030\003 \001(\r\022\020\n\010point_id\030\001 \001(\rB\033\n\031emu.gras" +
       "scutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -614,7 +622,7 @@ public final class DungeonCandidateTeamCreateReqOuterClass {
     internal_static_DungeonCandidateTeamCreateReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_DungeonCandidateTeamCreateReq_descriptor,
-        new java.lang.String[] { "PointId", "DungeonId", });
+        new java.lang.String[] { "DungeonId", "PointId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

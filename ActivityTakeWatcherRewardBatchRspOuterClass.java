@@ -19,63 +19,67 @@ public final class ActivityTakeWatcherRewardBatchRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated uint32 watcher_id_list = 6;</code>
-     * @return A list containing the watcherIdList.
-     */
-    java.util.List<java.lang.Integer> getWatcherIdListList();
-    /**
-     * <code>repeated uint32 watcher_id_list = 6;</code>
-     * @return The count of watcherIdList.
-     */
-    int getWatcherIdListCount();
-    /**
-     * <code>repeated uint32 watcher_id_list = 6;</code>
-     * @param index The index of the element to return.
-     * @return The watcherIdList at the given index.
-     */
-    int getWatcherIdList(int index);
-
-    /**
-     * <code>int32 retcode = 15;</code>
+     * <code>int32 retcode = 11;</code>
      * @return The retcode.
      */
     int getRetcode();
 
     /**
-     * <code>uint32 activity_id = 7;</code>
+     * <code>uint32 activity_id = 10;</code>
      * @return The activityId.
      */
     int getActivityId();
 
     /**
-     * <code>repeated .ItemParam item_list = 1;</code>
+     * <code>repeated .ItemParam item_list = 8;</code>
      */
     java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> 
         getItemListList();
     /**
-     * <code>repeated .ItemParam item_list = 1;</code>
+     * <code>repeated .ItemParam item_list = 8;</code>
      */
     emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam getItemList(int index);
     /**
-     * <code>repeated .ItemParam item_list = 1;</code>
+     * <code>repeated .ItemParam item_list = 8;</code>
      */
     int getItemListCount();
     /**
-     * <code>repeated .ItemParam item_list = 1;</code>
+     * <code>repeated .ItemParam item_list = 8;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder> 
         getItemListOrBuilderList();
     /**
-     * <code>repeated .ItemParam item_list = 1;</code>
+     * <code>repeated .ItemParam item_list = 8;</code>
      */
     emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder getItemListOrBuilder(
         int index);
+
+    /**
+     * <code>repeated uint32 watcher_id_list = 13;</code>
+     * @return A list containing the watcherIdList.
+     */
+    java.util.List<java.lang.Integer> getWatcherIdListList();
+    /**
+     * <code>repeated uint32 watcher_id_list = 13;</code>
+     * @return The count of watcherIdList.
+     */
+    int getWatcherIdListCount();
+    /**
+     * <code>repeated uint32 watcher_id_list = 13;</code>
+     * @param index The index of the element to return.
+     * @return The watcherIdList at the given index.
+     */
+    int getWatcherIdList(int index);
   }
   /**
    * <pre>
-   * CmdId: 2109
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 2090;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code ActivityTakeWatcherRewardBatchRsp}
@@ -90,8 +94,8 @@ public final class ActivityTakeWatcherRewardBatchRspOuterClass {
       super(builder);
     }
     private ActivityTakeWatcherRewardBatchRsp() {
-      watcherIdList_ = emptyIntList();
       itemList_ = java.util.Collections.emptyList();
+      watcherIdList_ = emptyIntList();
     }
 
     @java.lang.Override
@@ -125,44 +129,44 @@ public final class ActivityTakeWatcherRewardBatchRspOuterClass {
             case 0:
               done = true;
               break;
-            case 10: {
-              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
+            case 66: {
+              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 itemList_ = new java.util.ArrayList<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam>();
-                mutable_bitField0_ |= 0x00000002;
+                mutable_bitField0_ |= 0x00000001;
               }
               itemList_.add(
                   input.readMessage(emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.parser(), extensionRegistry));
               break;
             }
-            case 48: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+            case 80: {
+
+              activityId_ = input.readUInt32();
+              break;
+            }
+            case 88: {
+
+              retcode_ = input.readInt32();
+              break;
+            }
+            case 104: {
+              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
                 watcherIdList_ = newIntList();
-                mutable_bitField0_ |= 0x00000001;
+                mutable_bitField0_ |= 0x00000002;
               }
               watcherIdList_.addInt(input.readUInt32());
               break;
             }
-            case 50: {
+            case 106: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
+              if (!((mutable_bitField0_ & 0x00000002) != 0) && input.getBytesUntilLimit() > 0) {
                 watcherIdList_ = newIntList();
-                mutable_bitField0_ |= 0x00000001;
+                mutable_bitField0_ |= 0x00000002;
               }
               while (input.getBytesUntilLimit() > 0) {
                 watcherIdList_.addInt(input.readUInt32());
               }
               input.popLimit(limit);
-              break;
-            }
-            case 56: {
-
-              activityId_ = input.readUInt32();
-              break;
-            }
-            case 120: {
-
-              retcode_ = input.readInt32();
               break;
             }
             default: {
@@ -180,10 +184,10 @@ public final class ActivityTakeWatcherRewardBatchRspOuterClass {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
       } finally {
-        if (((mutable_bitField0_ & 0x00000002) != 0)) {
+        if (((mutable_bitField0_ & 0x00000001) != 0)) {
           itemList_ = java.util.Collections.unmodifiableList(itemList_);
         }
-        if (((mutable_bitField0_ & 0x00000001) != 0)) {
+        if (((mutable_bitField0_ & 0x00000002) != 0)) {
           watcherIdList_.makeImmutable(); // C
         }
         this.unknownFields = unknownFields.build();
@@ -203,10 +207,72 @@ public final class ActivityTakeWatcherRewardBatchRspOuterClass {
               emu.grasscutter.net.proto.ActivityTakeWatcherRewardBatchRspOuterClass.ActivityTakeWatcherRewardBatchRsp.class, emu.grasscutter.net.proto.ActivityTakeWatcherRewardBatchRspOuterClass.ActivityTakeWatcherRewardBatchRsp.Builder.class);
     }
 
-    public static final int WATCHER_ID_LIST_FIELD_NUMBER = 6;
+    public static final int RETCODE_FIELD_NUMBER = 11;
+    private int retcode_;
+    /**
+     * <code>int32 retcode = 11;</code>
+     * @return The retcode.
+     */
+    @java.lang.Override
+    public int getRetcode() {
+      return retcode_;
+    }
+
+    public static final int ACTIVITY_ID_FIELD_NUMBER = 10;
+    private int activityId_;
+    /**
+     * <code>uint32 activity_id = 10;</code>
+     * @return The activityId.
+     */
+    @java.lang.Override
+    public int getActivityId() {
+      return activityId_;
+    }
+
+    public static final int ITEM_LIST_FIELD_NUMBER = 8;
+    private java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> itemList_;
+    /**
+     * <code>repeated .ItemParam item_list = 8;</code>
+     */
+    @java.lang.Override
+    public java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> getItemListList() {
+      return itemList_;
+    }
+    /**
+     * <code>repeated .ItemParam item_list = 8;</code>
+     */
+    @java.lang.Override
+    public java.util.List<? extends emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder> 
+        getItemListOrBuilderList() {
+      return itemList_;
+    }
+    /**
+     * <code>repeated .ItemParam item_list = 8;</code>
+     */
+    @java.lang.Override
+    public int getItemListCount() {
+      return itemList_.size();
+    }
+    /**
+     * <code>repeated .ItemParam item_list = 8;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam getItemList(int index) {
+      return itemList_.get(index);
+    }
+    /**
+     * <code>repeated .ItemParam item_list = 8;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder getItemListOrBuilder(
+        int index) {
+      return itemList_.get(index);
+    }
+
+    public static final int WATCHER_ID_LIST_FIELD_NUMBER = 13;
     private com.google.protobuf.Internal.IntList watcherIdList_;
     /**
-     * <code>repeated uint32 watcher_id_list = 6;</code>
+     * <code>repeated uint32 watcher_id_list = 13;</code>
      * @return A list containing the watcherIdList.
      */
     @java.lang.Override
@@ -215,14 +281,14 @@ public final class ActivityTakeWatcherRewardBatchRspOuterClass {
       return watcherIdList_;
     }
     /**
-     * <code>repeated uint32 watcher_id_list = 6;</code>
+     * <code>repeated uint32 watcher_id_list = 13;</code>
      * @return The count of watcherIdList.
      */
     public int getWatcherIdListCount() {
       return watcherIdList_.size();
     }
     /**
-     * <code>repeated uint32 watcher_id_list = 6;</code>
+     * <code>repeated uint32 watcher_id_list = 13;</code>
      * @param index The index of the element to return.
      * @return The watcherIdList at the given index.
      */
@@ -230,68 +296,6 @@ public final class ActivityTakeWatcherRewardBatchRspOuterClass {
       return watcherIdList_.getInt(index);
     }
     private int watcherIdListMemoizedSerializedSize = -1;
-
-    public static final int RETCODE_FIELD_NUMBER = 15;
-    private int retcode_;
-    /**
-     * <code>int32 retcode = 15;</code>
-     * @return The retcode.
-     */
-    @java.lang.Override
-    public int getRetcode() {
-      return retcode_;
-    }
-
-    public static final int ACTIVITY_ID_FIELD_NUMBER = 7;
-    private int activityId_;
-    /**
-     * <code>uint32 activity_id = 7;</code>
-     * @return The activityId.
-     */
-    @java.lang.Override
-    public int getActivityId() {
-      return activityId_;
-    }
-
-    public static final int ITEM_LIST_FIELD_NUMBER = 1;
-    private java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> itemList_;
-    /**
-     * <code>repeated .ItemParam item_list = 1;</code>
-     */
-    @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> getItemListList() {
-      return itemList_;
-    }
-    /**
-     * <code>repeated .ItemParam item_list = 1;</code>
-     */
-    @java.lang.Override
-    public java.util.List<? extends emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder> 
-        getItemListOrBuilderList() {
-      return itemList_;
-    }
-    /**
-     * <code>repeated .ItemParam item_list = 1;</code>
-     */
-    @java.lang.Override
-    public int getItemListCount() {
-      return itemList_.size();
-    }
-    /**
-     * <code>repeated .ItemParam item_list = 1;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam getItemList(int index) {
-      return itemList_.get(index);
-    }
-    /**
-     * <code>repeated .ItemParam item_list = 1;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder getItemListOrBuilder(
-        int index) {
-      return itemList_.get(index);
-    }
 
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
@@ -309,20 +313,20 @@ public final class ActivityTakeWatcherRewardBatchRspOuterClass {
                         throws java.io.IOException {
       getSerializedSize();
       for (int i = 0; i < itemList_.size(); i++) {
-        output.writeMessage(1, itemList_.get(i));
+        output.writeMessage(8, itemList_.get(i));
+      }
+      if (activityId_ != 0) {
+        output.writeUInt32(10, activityId_);
+      }
+      if (retcode_ != 0) {
+        output.writeInt32(11, retcode_);
       }
       if (getWatcherIdListList().size() > 0) {
-        output.writeUInt32NoTag(50);
+        output.writeUInt32NoTag(106);
         output.writeUInt32NoTag(watcherIdListMemoizedSerializedSize);
       }
       for (int i = 0; i < watcherIdList_.size(); i++) {
         output.writeUInt32NoTag(watcherIdList_.getInt(i));
-      }
-      if (activityId_ != 0) {
-        output.writeUInt32(7, activityId_);
-      }
-      if (retcode_ != 0) {
-        output.writeInt32(15, retcode_);
       }
       unknownFields.writeTo(output);
     }
@@ -335,7 +339,15 @@ public final class ActivityTakeWatcherRewardBatchRspOuterClass {
       size = 0;
       for (int i = 0; i < itemList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(1, itemList_.get(i));
+          .computeMessageSize(8, itemList_.get(i));
+      }
+      if (activityId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(10, activityId_);
+      }
+      if (retcode_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(11, retcode_);
       }
       {
         int dataSize = 0;
@@ -350,14 +362,6 @@ public final class ActivityTakeWatcherRewardBatchRspOuterClass {
               .computeInt32SizeNoTag(dataSize);
         }
         watcherIdListMemoizedSerializedSize = dataSize;
-      }
-      if (activityId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, activityId_);
-      }
-      if (retcode_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(15, retcode_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -374,14 +378,14 @@ public final class ActivityTakeWatcherRewardBatchRspOuterClass {
       }
       emu.grasscutter.net.proto.ActivityTakeWatcherRewardBatchRspOuterClass.ActivityTakeWatcherRewardBatchRsp other = (emu.grasscutter.net.proto.ActivityTakeWatcherRewardBatchRspOuterClass.ActivityTakeWatcherRewardBatchRsp) obj;
 
-      if (!getWatcherIdListList()
-          .equals(other.getWatcherIdListList())) return false;
       if (getRetcode()
           != other.getRetcode()) return false;
       if (getActivityId()
           != other.getActivityId()) return false;
       if (!getItemListList()
           .equals(other.getItemListList())) return false;
+      if (!getWatcherIdListList()
+          .equals(other.getWatcherIdListList())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -393,10 +397,6 @@ public final class ActivityTakeWatcherRewardBatchRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (getWatcherIdListCount() > 0) {
-        hash = (37 * hash) + WATCHER_ID_LIST_FIELD_NUMBER;
-        hash = (53 * hash) + getWatcherIdListList().hashCode();
-      }
       hash = (37 * hash) + RETCODE_FIELD_NUMBER;
       hash = (53 * hash) + getRetcode();
       hash = (37 * hash) + ACTIVITY_ID_FIELD_NUMBER;
@@ -404,6 +404,10 @@ public final class ActivityTakeWatcherRewardBatchRspOuterClass {
       if (getItemListCount() > 0) {
         hash = (37 * hash) + ITEM_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getItemListList().hashCode();
+      }
+      if (getWatcherIdListCount() > 0) {
+        hash = (37 * hash) + WATCHER_ID_LIST_FIELD_NUMBER;
+        hash = (53 * hash) + getWatcherIdListList().hashCode();
       }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
@@ -502,9 +506,13 @@ public final class ActivityTakeWatcherRewardBatchRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 2109
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 2090;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code ActivityTakeWatcherRewardBatchRsp}
@@ -545,18 +553,18 @@ public final class ActivityTakeWatcherRewardBatchRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        watcherIdList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000001);
         retcode_ = 0;
 
         activityId_ = 0;
 
         if (itemListBuilder_ == null) {
           itemList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000002);
+          bitField0_ = (bitField0_ & ~0x00000001);
         } else {
           itemListBuilder_.clear();
         }
+        watcherIdList_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000002);
         return this;
       }
 
@@ -584,22 +592,22 @@ public final class ActivityTakeWatcherRewardBatchRspOuterClass {
       public emu.grasscutter.net.proto.ActivityTakeWatcherRewardBatchRspOuterClass.ActivityTakeWatcherRewardBatchRsp buildPartial() {
         emu.grasscutter.net.proto.ActivityTakeWatcherRewardBatchRspOuterClass.ActivityTakeWatcherRewardBatchRsp result = new emu.grasscutter.net.proto.ActivityTakeWatcherRewardBatchRspOuterClass.ActivityTakeWatcherRewardBatchRsp(this);
         int from_bitField0_ = bitField0_;
-        if (((bitField0_ & 0x00000001) != 0)) {
-          watcherIdList_.makeImmutable();
-          bitField0_ = (bitField0_ & ~0x00000001);
-        }
-        result.watcherIdList_ = watcherIdList_;
         result.retcode_ = retcode_;
         result.activityId_ = activityId_;
         if (itemListBuilder_ == null) {
-          if (((bitField0_ & 0x00000002) != 0)) {
+          if (((bitField0_ & 0x00000001) != 0)) {
             itemList_ = java.util.Collections.unmodifiableList(itemList_);
-            bitField0_ = (bitField0_ & ~0x00000002);
+            bitField0_ = (bitField0_ & ~0x00000001);
           }
           result.itemList_ = itemList_;
         } else {
           result.itemList_ = itemListBuilder_.build();
         }
+        if (((bitField0_ & 0x00000002) != 0)) {
+          watcherIdList_.makeImmutable();
+          bitField0_ = (bitField0_ & ~0x00000002);
+        }
+        result.watcherIdList_ = watcherIdList_;
         onBuilt();
         return result;
       }
@@ -648,16 +656,6 @@ public final class ActivityTakeWatcherRewardBatchRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.ActivityTakeWatcherRewardBatchRspOuterClass.ActivityTakeWatcherRewardBatchRsp other) {
         if (other == emu.grasscutter.net.proto.ActivityTakeWatcherRewardBatchRspOuterClass.ActivityTakeWatcherRewardBatchRsp.getDefaultInstance()) return this;
-        if (!other.watcherIdList_.isEmpty()) {
-          if (watcherIdList_.isEmpty()) {
-            watcherIdList_ = other.watcherIdList_;
-            bitField0_ = (bitField0_ & ~0x00000001);
-          } else {
-            ensureWatcherIdListIsMutable();
-            watcherIdList_.addAll(other.watcherIdList_);
-          }
-          onChanged();
-        }
         if (other.getRetcode() != 0) {
           setRetcode(other.getRetcode());
         }
@@ -668,7 +666,7 @@ public final class ActivityTakeWatcherRewardBatchRspOuterClass {
           if (!other.itemList_.isEmpty()) {
             if (itemList_.isEmpty()) {
               itemList_ = other.itemList_;
-              bitField0_ = (bitField0_ & ~0x00000002);
+              bitField0_ = (bitField0_ & ~0x00000001);
             } else {
               ensureItemListIsMutable();
               itemList_.addAll(other.itemList_);
@@ -681,7 +679,7 @@ public final class ActivityTakeWatcherRewardBatchRspOuterClass {
               itemListBuilder_.dispose();
               itemListBuilder_ = null;
               itemList_ = other.itemList_;
-              bitField0_ = (bitField0_ & ~0x00000002);
+              bitField0_ = (bitField0_ & ~0x00000001);
               itemListBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
                    getItemListFieldBuilder() : null;
@@ -689,6 +687,16 @@ public final class ActivityTakeWatcherRewardBatchRspOuterClass {
               itemListBuilder_.addAllMessages(other.itemList_);
             }
           }
+        }
+        if (!other.watcherIdList_.isEmpty()) {
+          if (watcherIdList_.isEmpty()) {
+            watcherIdList_ = other.watcherIdList_;
+            bitField0_ = (bitField0_ & ~0x00000002);
+          } else {
+            ensureWatcherIdListIsMutable();
+            watcherIdList_.addAll(other.watcherIdList_);
+          }
+          onChanged();
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -720,88 +728,9 @@ public final class ActivityTakeWatcherRewardBatchRspOuterClass {
       }
       private int bitField0_;
 
-      private com.google.protobuf.Internal.IntList watcherIdList_ = emptyIntList();
-      private void ensureWatcherIdListIsMutable() {
-        if (!((bitField0_ & 0x00000001) != 0)) {
-          watcherIdList_ = mutableCopy(watcherIdList_);
-          bitField0_ |= 0x00000001;
-         }
-      }
-      /**
-       * <code>repeated uint32 watcher_id_list = 6;</code>
-       * @return A list containing the watcherIdList.
-       */
-      public java.util.List<java.lang.Integer>
-          getWatcherIdListList() {
-        return ((bitField0_ & 0x00000001) != 0) ?
-                 java.util.Collections.unmodifiableList(watcherIdList_) : watcherIdList_;
-      }
-      /**
-       * <code>repeated uint32 watcher_id_list = 6;</code>
-       * @return The count of watcherIdList.
-       */
-      public int getWatcherIdListCount() {
-        return watcherIdList_.size();
-      }
-      /**
-       * <code>repeated uint32 watcher_id_list = 6;</code>
-       * @param index The index of the element to return.
-       * @return The watcherIdList at the given index.
-       */
-      public int getWatcherIdList(int index) {
-        return watcherIdList_.getInt(index);
-      }
-      /**
-       * <code>repeated uint32 watcher_id_list = 6;</code>
-       * @param index The index to set the value at.
-       * @param value The watcherIdList to set.
-       * @return This builder for chaining.
-       */
-      public Builder setWatcherIdList(
-          int index, int value) {
-        ensureWatcherIdListIsMutable();
-        watcherIdList_.setInt(index, value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 watcher_id_list = 6;</code>
-       * @param value The watcherIdList to add.
-       * @return This builder for chaining.
-       */
-      public Builder addWatcherIdList(int value) {
-        ensureWatcherIdListIsMutable();
-        watcherIdList_.addInt(value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 watcher_id_list = 6;</code>
-       * @param values The watcherIdList to add.
-       * @return This builder for chaining.
-       */
-      public Builder addAllWatcherIdList(
-          java.lang.Iterable<? extends java.lang.Integer> values) {
-        ensureWatcherIdListIsMutable();
-        com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, watcherIdList_);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 watcher_id_list = 6;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearWatcherIdList() {
-        watcherIdList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000001);
-        onChanged();
-        return this;
-      }
-
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 15;</code>
+       * <code>int32 retcode = 11;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -809,7 +738,7 @@ public final class ActivityTakeWatcherRewardBatchRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 15;</code>
+       * <code>int32 retcode = 11;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -820,7 +749,7 @@ public final class ActivityTakeWatcherRewardBatchRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 15;</code>
+       * <code>int32 retcode = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -832,7 +761,7 @@ public final class ActivityTakeWatcherRewardBatchRspOuterClass {
 
       private int activityId_ ;
       /**
-       * <code>uint32 activity_id = 7;</code>
+       * <code>uint32 activity_id = 10;</code>
        * @return The activityId.
        */
       @java.lang.Override
@@ -840,7 +769,7 @@ public final class ActivityTakeWatcherRewardBatchRspOuterClass {
         return activityId_;
       }
       /**
-       * <code>uint32 activity_id = 7;</code>
+       * <code>uint32 activity_id = 10;</code>
        * @param value The activityId to set.
        * @return This builder for chaining.
        */
@@ -851,7 +780,7 @@ public final class ActivityTakeWatcherRewardBatchRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 activity_id = 7;</code>
+       * <code>uint32 activity_id = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearActivityId() {
@@ -864,9 +793,9 @@ public final class ActivityTakeWatcherRewardBatchRspOuterClass {
       private java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> itemList_ =
         java.util.Collections.emptyList();
       private void ensureItemListIsMutable() {
-        if (!((bitField0_ & 0x00000002) != 0)) {
+        if (!((bitField0_ & 0x00000001) != 0)) {
           itemList_ = new java.util.ArrayList<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam>(itemList_);
-          bitField0_ |= 0x00000002;
+          bitField0_ |= 0x00000001;
          }
       }
 
@@ -874,7 +803,7 @@ public final class ActivityTakeWatcherRewardBatchRspOuterClass {
           emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder> itemListBuilder_;
 
       /**
-       * <code>repeated .ItemParam item_list = 1;</code>
+       * <code>repeated .ItemParam item_list = 8;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> getItemListList() {
         if (itemListBuilder_ == null) {
@@ -884,7 +813,7 @@ public final class ActivityTakeWatcherRewardBatchRspOuterClass {
         }
       }
       /**
-       * <code>repeated .ItemParam item_list = 1;</code>
+       * <code>repeated .ItemParam item_list = 8;</code>
        */
       public int getItemListCount() {
         if (itemListBuilder_ == null) {
@@ -894,7 +823,7 @@ public final class ActivityTakeWatcherRewardBatchRspOuterClass {
         }
       }
       /**
-       * <code>repeated .ItemParam item_list = 1;</code>
+       * <code>repeated .ItemParam item_list = 8;</code>
        */
       public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam getItemList(int index) {
         if (itemListBuilder_ == null) {
@@ -904,7 +833,7 @@ public final class ActivityTakeWatcherRewardBatchRspOuterClass {
         }
       }
       /**
-       * <code>repeated .ItemParam item_list = 1;</code>
+       * <code>repeated .ItemParam item_list = 8;</code>
        */
       public Builder setItemList(
           int index, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam value) {
@@ -921,7 +850,7 @@ public final class ActivityTakeWatcherRewardBatchRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ItemParam item_list = 1;</code>
+       * <code>repeated .ItemParam item_list = 8;</code>
        */
       public Builder setItemList(
           int index, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder builderForValue) {
@@ -935,7 +864,7 @@ public final class ActivityTakeWatcherRewardBatchRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ItemParam item_list = 1;</code>
+       * <code>repeated .ItemParam item_list = 8;</code>
        */
       public Builder addItemList(emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam value) {
         if (itemListBuilder_ == null) {
@@ -951,7 +880,7 @@ public final class ActivityTakeWatcherRewardBatchRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ItemParam item_list = 1;</code>
+       * <code>repeated .ItemParam item_list = 8;</code>
        */
       public Builder addItemList(
           int index, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam value) {
@@ -968,7 +897,7 @@ public final class ActivityTakeWatcherRewardBatchRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ItemParam item_list = 1;</code>
+       * <code>repeated .ItemParam item_list = 8;</code>
        */
       public Builder addItemList(
           emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder builderForValue) {
@@ -982,7 +911,7 @@ public final class ActivityTakeWatcherRewardBatchRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ItemParam item_list = 1;</code>
+       * <code>repeated .ItemParam item_list = 8;</code>
        */
       public Builder addItemList(
           int index, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder builderForValue) {
@@ -996,7 +925,7 @@ public final class ActivityTakeWatcherRewardBatchRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ItemParam item_list = 1;</code>
+       * <code>repeated .ItemParam item_list = 8;</code>
        */
       public Builder addAllItemList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> values) {
@@ -1011,12 +940,12 @@ public final class ActivityTakeWatcherRewardBatchRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ItemParam item_list = 1;</code>
+       * <code>repeated .ItemParam item_list = 8;</code>
        */
       public Builder clearItemList() {
         if (itemListBuilder_ == null) {
           itemList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000002);
+          bitField0_ = (bitField0_ & ~0x00000001);
           onChanged();
         } else {
           itemListBuilder_.clear();
@@ -1024,7 +953,7 @@ public final class ActivityTakeWatcherRewardBatchRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ItemParam item_list = 1;</code>
+       * <code>repeated .ItemParam item_list = 8;</code>
        */
       public Builder removeItemList(int index) {
         if (itemListBuilder_ == null) {
@@ -1037,14 +966,14 @@ public final class ActivityTakeWatcherRewardBatchRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ItemParam item_list = 1;</code>
+       * <code>repeated .ItemParam item_list = 8;</code>
        */
       public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder getItemListBuilder(
           int index) {
         return getItemListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .ItemParam item_list = 1;</code>
+       * <code>repeated .ItemParam item_list = 8;</code>
        */
       public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder getItemListOrBuilder(
           int index) {
@@ -1054,7 +983,7 @@ public final class ActivityTakeWatcherRewardBatchRspOuterClass {
         }
       }
       /**
-       * <code>repeated .ItemParam item_list = 1;</code>
+       * <code>repeated .ItemParam item_list = 8;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder> 
            getItemListOrBuilderList() {
@@ -1065,14 +994,14 @@ public final class ActivityTakeWatcherRewardBatchRspOuterClass {
         }
       }
       /**
-       * <code>repeated .ItemParam item_list = 1;</code>
+       * <code>repeated .ItemParam item_list = 8;</code>
        */
       public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder addItemListBuilder() {
         return getItemListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.getDefaultInstance());
       }
       /**
-       * <code>repeated .ItemParam item_list = 1;</code>
+       * <code>repeated .ItemParam item_list = 8;</code>
        */
       public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder addItemListBuilder(
           int index) {
@@ -1080,7 +1009,7 @@ public final class ActivityTakeWatcherRewardBatchRspOuterClass {
             index, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.getDefaultInstance());
       }
       /**
-       * <code>repeated .ItemParam item_list = 1;</code>
+       * <code>repeated .ItemParam item_list = 8;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder> 
            getItemListBuilderList() {
@@ -1093,12 +1022,91 @@ public final class ActivityTakeWatcherRewardBatchRspOuterClass {
           itemListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
               emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder>(
                   itemList_,
-                  ((bitField0_ & 0x00000002) != 0),
+                  ((bitField0_ & 0x00000001) != 0),
                   getParentForChildren(),
                   isClean());
           itemList_ = null;
         }
         return itemListBuilder_;
+      }
+
+      private com.google.protobuf.Internal.IntList watcherIdList_ = emptyIntList();
+      private void ensureWatcherIdListIsMutable() {
+        if (!((bitField0_ & 0x00000002) != 0)) {
+          watcherIdList_ = mutableCopy(watcherIdList_);
+          bitField0_ |= 0x00000002;
+         }
+      }
+      /**
+       * <code>repeated uint32 watcher_id_list = 13;</code>
+       * @return A list containing the watcherIdList.
+       */
+      public java.util.List<java.lang.Integer>
+          getWatcherIdListList() {
+        return ((bitField0_ & 0x00000002) != 0) ?
+                 java.util.Collections.unmodifiableList(watcherIdList_) : watcherIdList_;
+      }
+      /**
+       * <code>repeated uint32 watcher_id_list = 13;</code>
+       * @return The count of watcherIdList.
+       */
+      public int getWatcherIdListCount() {
+        return watcherIdList_.size();
+      }
+      /**
+       * <code>repeated uint32 watcher_id_list = 13;</code>
+       * @param index The index of the element to return.
+       * @return The watcherIdList at the given index.
+       */
+      public int getWatcherIdList(int index) {
+        return watcherIdList_.getInt(index);
+      }
+      /**
+       * <code>repeated uint32 watcher_id_list = 13;</code>
+       * @param index The index to set the value at.
+       * @param value The watcherIdList to set.
+       * @return This builder for chaining.
+       */
+      public Builder setWatcherIdList(
+          int index, int value) {
+        ensureWatcherIdListIsMutable();
+        watcherIdList_.setInt(index, value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint32 watcher_id_list = 13;</code>
+       * @param value The watcherIdList to add.
+       * @return This builder for chaining.
+       */
+      public Builder addWatcherIdList(int value) {
+        ensureWatcherIdListIsMutable();
+        watcherIdList_.addInt(value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint32 watcher_id_list = 13;</code>
+       * @param values The watcherIdList to add.
+       * @return This builder for chaining.
+       */
+      public Builder addAllWatcherIdList(
+          java.lang.Iterable<? extends java.lang.Integer> values) {
+        ensureWatcherIdListIsMutable();
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, watcherIdList_);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint32 watcher_id_list = 13;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearWatcherIdList() {
+        watcherIdList_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000002);
+        onChanged();
+        return this;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -1169,9 +1177,9 @@ public final class ActivityTakeWatcherRewardBatchRspOuterClass {
     java.lang.String[] descriptorData = {
       "\n\'ActivityTakeWatcherRewardBatchRsp.prot" +
       "o\032\017ItemParam.proto\"\201\001\n!ActivityTakeWatch" +
-      "erRewardBatchRsp\022\027\n\017watcher_id_list\030\006 \003(" +
-      "\r\022\017\n\007retcode\030\017 \001(\005\022\023\n\013activity_id\030\007 \001(\r\022" +
-      "\035\n\titem_list\030\001 \003(\0132\n.ItemParamB\033\n\031emu.gr" +
+      "erRewardBatchRsp\022\017\n\007retcode\030\013 \001(\005\022\023\n\013act" +
+      "ivity_id\030\n \001(\r\022\035\n\titem_list\030\010 \003(\0132\n.Item" +
+      "Param\022\027\n\017watcher_id_list\030\r \003(\rB\033\n\031emu.gr" +
       "asscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -1184,7 +1192,7 @@ public final class ActivityTakeWatcherRewardBatchRspOuterClass {
     internal_static_ActivityTakeWatcherRewardBatchRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ActivityTakeWatcherRewardBatchRsp_descriptor,
-        new java.lang.String[] { "WatcherIdList", "Retcode", "ActivityId", "ItemList", });
+        new java.lang.String[] { "Retcode", "ActivityId", "ItemList", "WatcherIdList", });
     emu.grasscutter.net.proto.ItemParamOuterClass.getDescriptor();
   }
 

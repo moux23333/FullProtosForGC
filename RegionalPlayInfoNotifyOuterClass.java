@@ -19,64 +19,68 @@ public final class RegionalPlayInfoNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .RegionalPlayVar var_list = 5;</code>
+     * <code>uint32 play_type = 3;</code>
+     * @return The playType.
+     */
+    int getPlayType();
+
+    /**
+     * <code>repeated .RegionalPlayVar var_list = 13;</code>
      */
     java.util.List<emu.grasscutter.net.proto.RegionalPlayVarOuterClass.RegionalPlayVar> 
         getVarListList();
     /**
-     * <code>repeated .RegionalPlayVar var_list = 5;</code>
+     * <code>repeated .RegionalPlayVar var_list = 13;</code>
      */
     emu.grasscutter.net.proto.RegionalPlayVarOuterClass.RegionalPlayVar getVarList(int index);
     /**
-     * <code>repeated .RegionalPlayVar var_list = 5;</code>
+     * <code>repeated .RegionalPlayVar var_list = 13;</code>
      */
     int getVarListCount();
     /**
-     * <code>repeated .RegionalPlayVar var_list = 5;</code>
+     * <code>repeated .RegionalPlayVar var_list = 13;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.RegionalPlayVarOuterClass.RegionalPlayVarOrBuilder> 
         getVarListOrBuilderList();
     /**
-     * <code>repeated .RegionalPlayVar var_list = 5;</code>
+     * <code>repeated .RegionalPlayVar var_list = 13;</code>
      */
     emu.grasscutter.net.proto.RegionalPlayVarOuterClass.RegionalPlayVarOrBuilder getVarListOrBuilder(
         int index);
 
     /**
-     * <code>string play_name = 9;</code>
+     * <code>string play_name = 5;</code>
      * @return The playName.
      */
     java.lang.String getPlayName();
     /**
-     * <code>string play_name = 9;</code>
+     * <code>string play_name = 5;</code>
      * @return The bytes for playName.
      */
     com.google.protobuf.ByteString
         getPlayNameBytes();
 
     /**
-     * <code>bool is_enabled = 15;</code>
-     * @return The isEnabled.
+     * <code>bool Unk3300_FMEPEBIHNOL = 1;</code>
+     * @return The unk3300FMEPEBIHNOL.
      */
-    boolean getIsEnabled();
+    boolean getUnk3300FMEPEBIHNOL();
 
     /**
-     * <code>uint32 play_type = 7;</code>
-     * @return The playType.
+     * <code>bool Unk3300_MBGOJOBNPNG = 14;</code>
+     * @return The unk3300MBGOJOBNPNG.
      */
-    int getPlayType();
-
-    /**
-     * <code>bool is_in_region = 4;</code>
-     * @return The isInRegion.
-     */
-    boolean getIsInRegion();
+    boolean getUnk3300MBGOJOBNPNG();
   }
   /**
    * <pre>
-   * CmdId: 6276
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 6292;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code RegionalPlayInfoNotify}
@@ -126,12 +130,23 @@ public final class RegionalPlayInfoNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 32: {
+            case 8: {
 
-              isInRegion_ = input.readBool();
+              unk3300FMEPEBIHNOL_ = input.readBool();
+              break;
+            }
+            case 24: {
+
+              playType_ = input.readUInt32();
               break;
             }
             case 42: {
+              java.lang.String s = input.readStringRequireUtf8();
+
+              playName_ = s;
+              break;
+            }
+            case 106: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 varList_ = new java.util.ArrayList<emu.grasscutter.net.proto.RegionalPlayVarOuterClass.RegionalPlayVar>();
                 mutable_bitField0_ |= 0x00000001;
@@ -140,20 +155,9 @@ public final class RegionalPlayInfoNotifyOuterClass {
                   input.readMessage(emu.grasscutter.net.proto.RegionalPlayVarOuterClass.RegionalPlayVar.parser(), extensionRegistry));
               break;
             }
-            case 56: {
+            case 112: {
 
-              playType_ = input.readUInt32();
-              break;
-            }
-            case 74: {
-              java.lang.String s = input.readStringRequireUtf8();
-
-              playName_ = s;
-              break;
-            }
-            case 120: {
-
-              isEnabled_ = input.readBool();
+              unk3300MBGOJOBNPNG_ = input.readBool();
               break;
             }
             default: {
@@ -191,17 +195,28 @@ public final class RegionalPlayInfoNotifyOuterClass {
               emu.grasscutter.net.proto.RegionalPlayInfoNotifyOuterClass.RegionalPlayInfoNotify.class, emu.grasscutter.net.proto.RegionalPlayInfoNotifyOuterClass.RegionalPlayInfoNotify.Builder.class);
     }
 
-    public static final int VAR_LIST_FIELD_NUMBER = 5;
+    public static final int PLAY_TYPE_FIELD_NUMBER = 3;
+    private int playType_;
+    /**
+     * <code>uint32 play_type = 3;</code>
+     * @return The playType.
+     */
+    @java.lang.Override
+    public int getPlayType() {
+      return playType_;
+    }
+
+    public static final int VAR_LIST_FIELD_NUMBER = 13;
     private java.util.List<emu.grasscutter.net.proto.RegionalPlayVarOuterClass.RegionalPlayVar> varList_;
     /**
-     * <code>repeated .RegionalPlayVar var_list = 5;</code>
+     * <code>repeated .RegionalPlayVar var_list = 13;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.RegionalPlayVarOuterClass.RegionalPlayVar> getVarListList() {
       return varList_;
     }
     /**
-     * <code>repeated .RegionalPlayVar var_list = 5;</code>
+     * <code>repeated .RegionalPlayVar var_list = 13;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.RegionalPlayVarOuterClass.RegionalPlayVarOrBuilder> 
@@ -209,21 +224,21 @@ public final class RegionalPlayInfoNotifyOuterClass {
       return varList_;
     }
     /**
-     * <code>repeated .RegionalPlayVar var_list = 5;</code>
+     * <code>repeated .RegionalPlayVar var_list = 13;</code>
      */
     @java.lang.Override
     public int getVarListCount() {
       return varList_.size();
     }
     /**
-     * <code>repeated .RegionalPlayVar var_list = 5;</code>
+     * <code>repeated .RegionalPlayVar var_list = 13;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.RegionalPlayVarOuterClass.RegionalPlayVar getVarList(int index) {
       return varList_.get(index);
     }
     /**
-     * <code>repeated .RegionalPlayVar var_list = 5;</code>
+     * <code>repeated .RegionalPlayVar var_list = 13;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.RegionalPlayVarOuterClass.RegionalPlayVarOrBuilder getVarListOrBuilder(
@@ -231,10 +246,10 @@ public final class RegionalPlayInfoNotifyOuterClass {
       return varList_.get(index);
     }
 
-    public static final int PLAY_NAME_FIELD_NUMBER = 9;
+    public static final int PLAY_NAME_FIELD_NUMBER = 5;
     private volatile java.lang.Object playName_;
     /**
-     * <code>string play_name = 9;</code>
+     * <code>string play_name = 5;</code>
      * @return The playName.
      */
     @java.lang.Override
@@ -251,7 +266,7 @@ public final class RegionalPlayInfoNotifyOuterClass {
       }
     }
     /**
-     * <code>string play_name = 9;</code>
+     * <code>string play_name = 5;</code>
      * @return The bytes for playName.
      */
     @java.lang.Override
@@ -269,37 +284,26 @@ public final class RegionalPlayInfoNotifyOuterClass {
       }
     }
 
-    public static final int IS_ENABLED_FIELD_NUMBER = 15;
-    private boolean isEnabled_;
+    public static final int UNK3300_FMEPEBIHNOL_FIELD_NUMBER = 1;
+    private boolean unk3300FMEPEBIHNOL_;
     /**
-     * <code>bool is_enabled = 15;</code>
-     * @return The isEnabled.
+     * <code>bool Unk3300_FMEPEBIHNOL = 1;</code>
+     * @return The unk3300FMEPEBIHNOL.
      */
     @java.lang.Override
-    public boolean getIsEnabled() {
-      return isEnabled_;
+    public boolean getUnk3300FMEPEBIHNOL() {
+      return unk3300FMEPEBIHNOL_;
     }
 
-    public static final int PLAY_TYPE_FIELD_NUMBER = 7;
-    private int playType_;
+    public static final int UNK3300_MBGOJOBNPNG_FIELD_NUMBER = 14;
+    private boolean unk3300MBGOJOBNPNG_;
     /**
-     * <code>uint32 play_type = 7;</code>
-     * @return The playType.
+     * <code>bool Unk3300_MBGOJOBNPNG = 14;</code>
+     * @return The unk3300MBGOJOBNPNG.
      */
     @java.lang.Override
-    public int getPlayType() {
-      return playType_;
-    }
-
-    public static final int IS_IN_REGION_FIELD_NUMBER = 4;
-    private boolean isInRegion_;
-    /**
-     * <code>bool is_in_region = 4;</code>
-     * @return The isInRegion.
-     */
-    @java.lang.Override
-    public boolean getIsInRegion() {
-      return isInRegion_;
+    public boolean getUnk3300MBGOJOBNPNG() {
+      return unk3300MBGOJOBNPNG_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -316,20 +320,20 @@ public final class RegionalPlayInfoNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (isInRegion_ != false) {
-        output.writeBool(4, isInRegion_);
-      }
-      for (int i = 0; i < varList_.size(); i++) {
-        output.writeMessage(5, varList_.get(i));
+      if (unk3300FMEPEBIHNOL_ != false) {
+        output.writeBool(1, unk3300FMEPEBIHNOL_);
       }
       if (playType_ != 0) {
-        output.writeUInt32(7, playType_);
+        output.writeUInt32(3, playType_);
       }
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(playName_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 9, playName_);
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 5, playName_);
       }
-      if (isEnabled_ != false) {
-        output.writeBool(15, isEnabled_);
+      for (int i = 0; i < varList_.size(); i++) {
+        output.writeMessage(13, varList_.get(i));
+      }
+      if (unk3300MBGOJOBNPNG_ != false) {
+        output.writeBool(14, unk3300MBGOJOBNPNG_);
       }
       unknownFields.writeTo(output);
     }
@@ -340,24 +344,24 @@ public final class RegionalPlayInfoNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (isInRegion_ != false) {
+      if (unk3300FMEPEBIHNOL_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(4, isInRegion_);
-      }
-      for (int i = 0; i < varList_.size(); i++) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(5, varList_.get(i));
+          .computeBoolSize(1, unk3300FMEPEBIHNOL_);
       }
       if (playType_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, playType_);
+          .computeUInt32Size(3, playType_);
       }
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(playName_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(9, playName_);
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(5, playName_);
       }
-      if (isEnabled_ != false) {
+      for (int i = 0; i < varList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(15, isEnabled_);
+          .computeMessageSize(13, varList_.get(i));
+      }
+      if (unk3300MBGOJOBNPNG_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(14, unk3300MBGOJOBNPNG_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -374,16 +378,16 @@ public final class RegionalPlayInfoNotifyOuterClass {
       }
       emu.grasscutter.net.proto.RegionalPlayInfoNotifyOuterClass.RegionalPlayInfoNotify other = (emu.grasscutter.net.proto.RegionalPlayInfoNotifyOuterClass.RegionalPlayInfoNotify) obj;
 
+      if (getPlayType()
+          != other.getPlayType()) return false;
       if (!getVarListList()
           .equals(other.getVarListList())) return false;
       if (!getPlayName()
           .equals(other.getPlayName())) return false;
-      if (getIsEnabled()
-          != other.getIsEnabled()) return false;
-      if (getPlayType()
-          != other.getPlayType()) return false;
-      if (getIsInRegion()
-          != other.getIsInRegion()) return false;
+      if (getUnk3300FMEPEBIHNOL()
+          != other.getUnk3300FMEPEBIHNOL()) return false;
+      if (getUnk3300MBGOJOBNPNG()
+          != other.getUnk3300MBGOJOBNPNG()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -395,20 +399,20 @@ public final class RegionalPlayInfoNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + PLAY_TYPE_FIELD_NUMBER;
+      hash = (53 * hash) + getPlayType();
       if (getVarListCount() > 0) {
         hash = (37 * hash) + VAR_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getVarListList().hashCode();
       }
       hash = (37 * hash) + PLAY_NAME_FIELD_NUMBER;
       hash = (53 * hash) + getPlayName().hashCode();
-      hash = (37 * hash) + IS_ENABLED_FIELD_NUMBER;
+      hash = (37 * hash) + UNK3300_FMEPEBIHNOL_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsEnabled());
-      hash = (37 * hash) + PLAY_TYPE_FIELD_NUMBER;
-      hash = (53 * hash) + getPlayType();
-      hash = (37 * hash) + IS_IN_REGION_FIELD_NUMBER;
+          getUnk3300FMEPEBIHNOL());
+      hash = (37 * hash) + UNK3300_MBGOJOBNPNG_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsInRegion());
+          getUnk3300MBGOJOBNPNG());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -506,9 +510,13 @@ public final class RegionalPlayInfoNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 6276
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 6292;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code RegionalPlayInfoNotify}
@@ -549,6 +557,8 @@ public final class RegionalPlayInfoNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        playType_ = 0;
+
         if (varListBuilder_ == null) {
           varList_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000001);
@@ -557,11 +567,9 @@ public final class RegionalPlayInfoNotifyOuterClass {
         }
         playName_ = "";
 
-        isEnabled_ = false;
+        unk3300FMEPEBIHNOL_ = false;
 
-        playType_ = 0;
-
-        isInRegion_ = false;
+        unk3300MBGOJOBNPNG_ = false;
 
         return this;
       }
@@ -590,6 +598,7 @@ public final class RegionalPlayInfoNotifyOuterClass {
       public emu.grasscutter.net.proto.RegionalPlayInfoNotifyOuterClass.RegionalPlayInfoNotify buildPartial() {
         emu.grasscutter.net.proto.RegionalPlayInfoNotifyOuterClass.RegionalPlayInfoNotify result = new emu.grasscutter.net.proto.RegionalPlayInfoNotifyOuterClass.RegionalPlayInfoNotify(this);
         int from_bitField0_ = bitField0_;
+        result.playType_ = playType_;
         if (varListBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0)) {
             varList_ = java.util.Collections.unmodifiableList(varList_);
@@ -600,9 +609,8 @@ public final class RegionalPlayInfoNotifyOuterClass {
           result.varList_ = varListBuilder_.build();
         }
         result.playName_ = playName_;
-        result.isEnabled_ = isEnabled_;
-        result.playType_ = playType_;
-        result.isInRegion_ = isInRegion_;
+        result.unk3300FMEPEBIHNOL_ = unk3300FMEPEBIHNOL_;
+        result.unk3300MBGOJOBNPNG_ = unk3300MBGOJOBNPNG_;
         onBuilt();
         return result;
       }
@@ -651,6 +659,9 @@ public final class RegionalPlayInfoNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.RegionalPlayInfoNotifyOuterClass.RegionalPlayInfoNotify other) {
         if (other == emu.grasscutter.net.proto.RegionalPlayInfoNotifyOuterClass.RegionalPlayInfoNotify.getDefaultInstance()) return this;
+        if (other.getPlayType() != 0) {
+          setPlayType(other.getPlayType());
+        }
         if (varListBuilder_ == null) {
           if (!other.varList_.isEmpty()) {
             if (varList_.isEmpty()) {
@@ -681,14 +692,11 @@ public final class RegionalPlayInfoNotifyOuterClass {
           playName_ = other.playName_;
           onChanged();
         }
-        if (other.getIsEnabled() != false) {
-          setIsEnabled(other.getIsEnabled());
+        if (other.getUnk3300FMEPEBIHNOL() != false) {
+          setUnk3300FMEPEBIHNOL(other.getUnk3300FMEPEBIHNOL());
         }
-        if (other.getPlayType() != 0) {
-          setPlayType(other.getPlayType());
-        }
-        if (other.getIsInRegion() != false) {
-          setIsInRegion(other.getIsInRegion());
+        if (other.getUnk3300MBGOJOBNPNG() != false) {
+          setUnk3300MBGOJOBNPNG(other.getUnk3300MBGOJOBNPNG());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -720,6 +728,37 @@ public final class RegionalPlayInfoNotifyOuterClass {
       }
       private int bitField0_;
 
+      private int playType_ ;
+      /**
+       * <code>uint32 play_type = 3;</code>
+       * @return The playType.
+       */
+      @java.lang.Override
+      public int getPlayType() {
+        return playType_;
+      }
+      /**
+       * <code>uint32 play_type = 3;</code>
+       * @param value The playType to set.
+       * @return This builder for chaining.
+       */
+      public Builder setPlayType(int value) {
+        
+        playType_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 play_type = 3;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearPlayType() {
+        
+        playType_ = 0;
+        onChanged();
+        return this;
+      }
+
       private java.util.List<emu.grasscutter.net.proto.RegionalPlayVarOuterClass.RegionalPlayVar> varList_ =
         java.util.Collections.emptyList();
       private void ensureVarListIsMutable() {
@@ -733,7 +772,7 @@ public final class RegionalPlayInfoNotifyOuterClass {
           emu.grasscutter.net.proto.RegionalPlayVarOuterClass.RegionalPlayVar, emu.grasscutter.net.proto.RegionalPlayVarOuterClass.RegionalPlayVar.Builder, emu.grasscutter.net.proto.RegionalPlayVarOuterClass.RegionalPlayVarOrBuilder> varListBuilder_;
 
       /**
-       * <code>repeated .RegionalPlayVar var_list = 5;</code>
+       * <code>repeated .RegionalPlayVar var_list = 13;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.RegionalPlayVarOuterClass.RegionalPlayVar> getVarListList() {
         if (varListBuilder_ == null) {
@@ -743,7 +782,7 @@ public final class RegionalPlayInfoNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .RegionalPlayVar var_list = 5;</code>
+       * <code>repeated .RegionalPlayVar var_list = 13;</code>
        */
       public int getVarListCount() {
         if (varListBuilder_ == null) {
@@ -753,7 +792,7 @@ public final class RegionalPlayInfoNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .RegionalPlayVar var_list = 5;</code>
+       * <code>repeated .RegionalPlayVar var_list = 13;</code>
        */
       public emu.grasscutter.net.proto.RegionalPlayVarOuterClass.RegionalPlayVar getVarList(int index) {
         if (varListBuilder_ == null) {
@@ -763,7 +802,7 @@ public final class RegionalPlayInfoNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .RegionalPlayVar var_list = 5;</code>
+       * <code>repeated .RegionalPlayVar var_list = 13;</code>
        */
       public Builder setVarList(
           int index, emu.grasscutter.net.proto.RegionalPlayVarOuterClass.RegionalPlayVar value) {
@@ -780,7 +819,7 @@ public final class RegionalPlayInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .RegionalPlayVar var_list = 5;</code>
+       * <code>repeated .RegionalPlayVar var_list = 13;</code>
        */
       public Builder setVarList(
           int index, emu.grasscutter.net.proto.RegionalPlayVarOuterClass.RegionalPlayVar.Builder builderForValue) {
@@ -794,7 +833,7 @@ public final class RegionalPlayInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .RegionalPlayVar var_list = 5;</code>
+       * <code>repeated .RegionalPlayVar var_list = 13;</code>
        */
       public Builder addVarList(emu.grasscutter.net.proto.RegionalPlayVarOuterClass.RegionalPlayVar value) {
         if (varListBuilder_ == null) {
@@ -810,7 +849,7 @@ public final class RegionalPlayInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .RegionalPlayVar var_list = 5;</code>
+       * <code>repeated .RegionalPlayVar var_list = 13;</code>
        */
       public Builder addVarList(
           int index, emu.grasscutter.net.proto.RegionalPlayVarOuterClass.RegionalPlayVar value) {
@@ -827,7 +866,7 @@ public final class RegionalPlayInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .RegionalPlayVar var_list = 5;</code>
+       * <code>repeated .RegionalPlayVar var_list = 13;</code>
        */
       public Builder addVarList(
           emu.grasscutter.net.proto.RegionalPlayVarOuterClass.RegionalPlayVar.Builder builderForValue) {
@@ -841,7 +880,7 @@ public final class RegionalPlayInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .RegionalPlayVar var_list = 5;</code>
+       * <code>repeated .RegionalPlayVar var_list = 13;</code>
        */
       public Builder addVarList(
           int index, emu.grasscutter.net.proto.RegionalPlayVarOuterClass.RegionalPlayVar.Builder builderForValue) {
@@ -855,7 +894,7 @@ public final class RegionalPlayInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .RegionalPlayVar var_list = 5;</code>
+       * <code>repeated .RegionalPlayVar var_list = 13;</code>
        */
       public Builder addAllVarList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.RegionalPlayVarOuterClass.RegionalPlayVar> values) {
@@ -870,7 +909,7 @@ public final class RegionalPlayInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .RegionalPlayVar var_list = 5;</code>
+       * <code>repeated .RegionalPlayVar var_list = 13;</code>
        */
       public Builder clearVarList() {
         if (varListBuilder_ == null) {
@@ -883,7 +922,7 @@ public final class RegionalPlayInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .RegionalPlayVar var_list = 5;</code>
+       * <code>repeated .RegionalPlayVar var_list = 13;</code>
        */
       public Builder removeVarList(int index) {
         if (varListBuilder_ == null) {
@@ -896,14 +935,14 @@ public final class RegionalPlayInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .RegionalPlayVar var_list = 5;</code>
+       * <code>repeated .RegionalPlayVar var_list = 13;</code>
        */
       public emu.grasscutter.net.proto.RegionalPlayVarOuterClass.RegionalPlayVar.Builder getVarListBuilder(
           int index) {
         return getVarListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .RegionalPlayVar var_list = 5;</code>
+       * <code>repeated .RegionalPlayVar var_list = 13;</code>
        */
       public emu.grasscutter.net.proto.RegionalPlayVarOuterClass.RegionalPlayVarOrBuilder getVarListOrBuilder(
           int index) {
@@ -913,7 +952,7 @@ public final class RegionalPlayInfoNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .RegionalPlayVar var_list = 5;</code>
+       * <code>repeated .RegionalPlayVar var_list = 13;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.RegionalPlayVarOuterClass.RegionalPlayVarOrBuilder> 
            getVarListOrBuilderList() {
@@ -924,14 +963,14 @@ public final class RegionalPlayInfoNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .RegionalPlayVar var_list = 5;</code>
+       * <code>repeated .RegionalPlayVar var_list = 13;</code>
        */
       public emu.grasscutter.net.proto.RegionalPlayVarOuterClass.RegionalPlayVar.Builder addVarListBuilder() {
         return getVarListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.RegionalPlayVarOuterClass.RegionalPlayVar.getDefaultInstance());
       }
       /**
-       * <code>repeated .RegionalPlayVar var_list = 5;</code>
+       * <code>repeated .RegionalPlayVar var_list = 13;</code>
        */
       public emu.grasscutter.net.proto.RegionalPlayVarOuterClass.RegionalPlayVar.Builder addVarListBuilder(
           int index) {
@@ -939,7 +978,7 @@ public final class RegionalPlayInfoNotifyOuterClass {
             index, emu.grasscutter.net.proto.RegionalPlayVarOuterClass.RegionalPlayVar.getDefaultInstance());
       }
       /**
-       * <code>repeated .RegionalPlayVar var_list = 5;</code>
+       * <code>repeated .RegionalPlayVar var_list = 13;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.RegionalPlayVarOuterClass.RegionalPlayVar.Builder> 
            getVarListBuilderList() {
@@ -962,7 +1001,7 @@ public final class RegionalPlayInfoNotifyOuterClass {
 
       private java.lang.Object playName_ = "";
       /**
-       * <code>string play_name = 9;</code>
+       * <code>string play_name = 5;</code>
        * @return The playName.
        */
       public java.lang.String getPlayName() {
@@ -978,7 +1017,7 @@ public final class RegionalPlayInfoNotifyOuterClass {
         }
       }
       /**
-       * <code>string play_name = 9;</code>
+       * <code>string play_name = 5;</code>
        * @return The bytes for playName.
        */
       public com.google.protobuf.ByteString
@@ -995,7 +1034,7 @@ public final class RegionalPlayInfoNotifyOuterClass {
         }
       }
       /**
-       * <code>string play_name = 9;</code>
+       * <code>string play_name = 5;</code>
        * @param value The playName to set.
        * @return This builder for chaining.
        */
@@ -1010,7 +1049,7 @@ public final class RegionalPlayInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>string play_name = 9;</code>
+       * <code>string play_name = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearPlayName() {
@@ -1020,7 +1059,7 @@ public final class RegionalPlayInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>string play_name = 9;</code>
+       * <code>string play_name = 5;</code>
        * @param value The bytes for playName to set.
        * @return This builder for chaining.
        */
@@ -1036,95 +1075,64 @@ public final class RegionalPlayInfoNotifyOuterClass {
         return this;
       }
 
-      private boolean isEnabled_ ;
+      private boolean unk3300FMEPEBIHNOL_ ;
       /**
-       * <code>bool is_enabled = 15;</code>
-       * @return The isEnabled.
+       * <code>bool Unk3300_FMEPEBIHNOL = 1;</code>
+       * @return The unk3300FMEPEBIHNOL.
        */
       @java.lang.Override
-      public boolean getIsEnabled() {
-        return isEnabled_;
+      public boolean getUnk3300FMEPEBIHNOL() {
+        return unk3300FMEPEBIHNOL_;
       }
       /**
-       * <code>bool is_enabled = 15;</code>
-       * @param value The isEnabled to set.
+       * <code>bool Unk3300_FMEPEBIHNOL = 1;</code>
+       * @param value The unk3300FMEPEBIHNOL to set.
        * @return This builder for chaining.
        */
-      public Builder setIsEnabled(boolean value) {
+      public Builder setUnk3300FMEPEBIHNOL(boolean value) {
         
-        isEnabled_ = value;
+        unk3300FMEPEBIHNOL_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>bool is_enabled = 15;</code>
+       * <code>bool Unk3300_FMEPEBIHNOL = 1;</code>
        * @return This builder for chaining.
        */
-      public Builder clearIsEnabled() {
+      public Builder clearUnk3300FMEPEBIHNOL() {
         
-        isEnabled_ = false;
+        unk3300FMEPEBIHNOL_ = false;
         onChanged();
         return this;
       }
 
-      private int playType_ ;
+      private boolean unk3300MBGOJOBNPNG_ ;
       /**
-       * <code>uint32 play_type = 7;</code>
-       * @return The playType.
+       * <code>bool Unk3300_MBGOJOBNPNG = 14;</code>
+       * @return The unk3300MBGOJOBNPNG.
        */
       @java.lang.Override
-      public int getPlayType() {
-        return playType_;
+      public boolean getUnk3300MBGOJOBNPNG() {
+        return unk3300MBGOJOBNPNG_;
       }
       /**
-       * <code>uint32 play_type = 7;</code>
-       * @param value The playType to set.
+       * <code>bool Unk3300_MBGOJOBNPNG = 14;</code>
+       * @param value The unk3300MBGOJOBNPNG to set.
        * @return This builder for chaining.
        */
-      public Builder setPlayType(int value) {
+      public Builder setUnk3300MBGOJOBNPNG(boolean value) {
         
-        playType_ = value;
+        unk3300MBGOJOBNPNG_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 play_type = 7;</code>
+       * <code>bool Unk3300_MBGOJOBNPNG = 14;</code>
        * @return This builder for chaining.
        */
-      public Builder clearPlayType() {
+      public Builder clearUnk3300MBGOJOBNPNG() {
         
-        playType_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private boolean isInRegion_ ;
-      /**
-       * <code>bool is_in_region = 4;</code>
-       * @return The isInRegion.
-       */
-      @java.lang.Override
-      public boolean getIsInRegion() {
-        return isInRegion_;
-      }
-      /**
-       * <code>bool is_in_region = 4;</code>
-       * @param value The isInRegion to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsInRegion(boolean value) {
-        
-        isInRegion_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_in_region = 4;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsInRegion() {
-        
-        isInRegion_ = false;
+        unk3300MBGOJOBNPNG_ = false;
         onChanged();
         return this;
       }
@@ -1196,11 +1204,12 @@ public final class RegionalPlayInfoNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\034RegionalPlayInfoNotify.proto\032\025Regional" +
-      "PlayVar.proto\"\214\001\n\026RegionalPlayInfoNotify" +
-      "\022\"\n\010var_list\030\005 \003(\0132\020.RegionalPlayVar\022\021\n\t" +
-      "play_name\030\t \001(\t\022\022\n\nis_enabled\030\017 \001(\010\022\021\n\tp" +
-      "lay_type\030\007 \001(\r\022\024\n\014is_in_region\030\004 \001(\010B\033\n\031" +
-      "emu.grasscutter.net.protob\006proto3"
+      "PlayVar.proto\"\234\001\n\026RegionalPlayInfoNotify" +
+      "\022\021\n\tplay_type\030\003 \001(\r\022\"\n\010var_list\030\r \003(\0132\020." +
+      "RegionalPlayVar\022\021\n\tplay_name\030\005 \001(\t\022\033\n\023Un" +
+      "k3300_FMEPEBIHNOL\030\001 \001(\010\022\033\n\023Unk3300_MBGOJ" +
+      "OBNPNG\030\016 \001(\010B\033\n\031emu.grasscutter.net.prot" +
+      "ob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -1212,7 +1221,7 @@ public final class RegionalPlayInfoNotifyOuterClass {
     internal_static_RegionalPlayInfoNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_RegionalPlayInfoNotify_descriptor,
-        new java.lang.String[] { "VarList", "PlayName", "IsEnabled", "PlayType", "IsInRegion", });
+        new java.lang.String[] { "PlayType", "VarList", "PlayName", "Unk3300FMEPEBIHNOL", "Unk3300MBGOJOBNPNG", });
     emu.grasscutter.net.proto.RegionalPlayVarOuterClass.getDescriptor();
   }
 

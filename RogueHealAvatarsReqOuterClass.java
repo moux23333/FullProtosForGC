@@ -19,23 +19,27 @@ public final class RogueHealAvatarsReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 dungeon_id = 1;</code>
-     * @return The dungeonId.
-     */
-    int getDungeonId();
-
-    /**
-     * <code>uint32 cell_id = 3;</code>
+     * <code>uint32 cell_id = 2;</code>
      * @return The cellId.
      */
     int getCellId();
+
+    /**
+     * <code>uint32 dungeon_id = 15;</code>
+     * @return The dungeonId.
+     */
+    int getDungeonId();
   }
   /**
    * <pre>
-   * CmdId: 8947
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 8175;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code RogueHealAvatarsReq}
@@ -82,14 +86,14 @@ public final class RogueHealAvatarsReqOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
-
-              dungeonId_ = input.readUInt32();
-              break;
-            }
-            case 24: {
+            case 16: {
 
               cellId_ = input.readUInt32();
+              break;
+            }
+            case 120: {
+
+              dungeonId_ = input.readUInt32();
               break;
             }
             default: {
@@ -124,26 +128,26 @@ public final class RogueHealAvatarsReqOuterClass {
               emu.grasscutter.net.proto.RogueHealAvatarsReqOuterClass.RogueHealAvatarsReq.class, emu.grasscutter.net.proto.RogueHealAvatarsReqOuterClass.RogueHealAvatarsReq.Builder.class);
     }
 
-    public static final int DUNGEON_ID_FIELD_NUMBER = 1;
-    private int dungeonId_;
-    /**
-     * <code>uint32 dungeon_id = 1;</code>
-     * @return The dungeonId.
-     */
-    @java.lang.Override
-    public int getDungeonId() {
-      return dungeonId_;
-    }
-
-    public static final int CELL_ID_FIELD_NUMBER = 3;
+    public static final int CELL_ID_FIELD_NUMBER = 2;
     private int cellId_;
     /**
-     * <code>uint32 cell_id = 3;</code>
+     * <code>uint32 cell_id = 2;</code>
      * @return The cellId.
      */
     @java.lang.Override
     public int getCellId() {
       return cellId_;
+    }
+
+    public static final int DUNGEON_ID_FIELD_NUMBER = 15;
+    private int dungeonId_;
+    /**
+     * <code>uint32 dungeon_id = 15;</code>
+     * @return The dungeonId.
+     */
+    @java.lang.Override
+    public int getDungeonId() {
+      return dungeonId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -160,11 +164,11 @@ public final class RogueHealAvatarsReqOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (dungeonId_ != 0) {
-        output.writeUInt32(1, dungeonId_);
-      }
       if (cellId_ != 0) {
-        output.writeUInt32(3, cellId_);
+        output.writeUInt32(2, cellId_);
+      }
+      if (dungeonId_ != 0) {
+        output.writeUInt32(15, dungeonId_);
       }
       unknownFields.writeTo(output);
     }
@@ -175,13 +179,13 @@ public final class RogueHealAvatarsReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (dungeonId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, dungeonId_);
-      }
       if (cellId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, cellId_);
+          .computeUInt32Size(2, cellId_);
+      }
+      if (dungeonId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(15, dungeonId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -198,10 +202,10 @@ public final class RogueHealAvatarsReqOuterClass {
       }
       emu.grasscutter.net.proto.RogueHealAvatarsReqOuterClass.RogueHealAvatarsReq other = (emu.grasscutter.net.proto.RogueHealAvatarsReqOuterClass.RogueHealAvatarsReq) obj;
 
-      if (getDungeonId()
-          != other.getDungeonId()) return false;
       if (getCellId()
           != other.getCellId()) return false;
+      if (getDungeonId()
+          != other.getDungeonId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -213,10 +217,10 @@ public final class RogueHealAvatarsReqOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + DUNGEON_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getDungeonId();
       hash = (37 * hash) + CELL_ID_FIELD_NUMBER;
       hash = (53 * hash) + getCellId();
+      hash = (37 * hash) + DUNGEON_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getDungeonId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -314,10 +318,14 @@ public final class RogueHealAvatarsReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 8947
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 8175;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code RogueHealAvatarsReq}
@@ -357,9 +365,9 @@ public final class RogueHealAvatarsReqOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        dungeonId_ = 0;
-
         cellId_ = 0;
+
+        dungeonId_ = 0;
 
         return this;
       }
@@ -387,8 +395,8 @@ public final class RogueHealAvatarsReqOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.RogueHealAvatarsReqOuterClass.RogueHealAvatarsReq buildPartial() {
         emu.grasscutter.net.proto.RogueHealAvatarsReqOuterClass.RogueHealAvatarsReq result = new emu.grasscutter.net.proto.RogueHealAvatarsReqOuterClass.RogueHealAvatarsReq(this);
-        result.dungeonId_ = dungeonId_;
         result.cellId_ = cellId_;
+        result.dungeonId_ = dungeonId_;
         onBuilt();
         return result;
       }
@@ -437,11 +445,11 @@ public final class RogueHealAvatarsReqOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.RogueHealAvatarsReqOuterClass.RogueHealAvatarsReq other) {
         if (other == emu.grasscutter.net.proto.RogueHealAvatarsReqOuterClass.RogueHealAvatarsReq.getDefaultInstance()) return this;
-        if (other.getDungeonId() != 0) {
-          setDungeonId(other.getDungeonId());
-        }
         if (other.getCellId() != 0) {
           setCellId(other.getCellId());
+        }
+        if (other.getDungeonId() != 0) {
+          setDungeonId(other.getDungeonId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -472,40 +480,9 @@ public final class RogueHealAvatarsReqOuterClass {
         return this;
       }
 
-      private int dungeonId_ ;
-      /**
-       * <code>uint32 dungeon_id = 1;</code>
-       * @return The dungeonId.
-       */
-      @java.lang.Override
-      public int getDungeonId() {
-        return dungeonId_;
-      }
-      /**
-       * <code>uint32 dungeon_id = 1;</code>
-       * @param value The dungeonId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setDungeonId(int value) {
-        
-        dungeonId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 dungeon_id = 1;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearDungeonId() {
-        
-        dungeonId_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int cellId_ ;
       /**
-       * <code>uint32 cell_id = 3;</code>
+       * <code>uint32 cell_id = 2;</code>
        * @return The cellId.
        */
       @java.lang.Override
@@ -513,7 +490,7 @@ public final class RogueHealAvatarsReqOuterClass {
         return cellId_;
       }
       /**
-       * <code>uint32 cell_id = 3;</code>
+       * <code>uint32 cell_id = 2;</code>
        * @param value The cellId to set.
        * @return This builder for chaining.
        */
@@ -524,12 +501,43 @@ public final class RogueHealAvatarsReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 cell_id = 3;</code>
+       * <code>uint32 cell_id = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearCellId() {
         
         cellId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int dungeonId_ ;
+      /**
+       * <code>uint32 dungeon_id = 15;</code>
+       * @return The dungeonId.
+       */
+      @java.lang.Override
+      public int getDungeonId() {
+        return dungeonId_;
+      }
+      /**
+       * <code>uint32 dungeon_id = 15;</code>
+       * @param value The dungeonId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setDungeonId(int value) {
+        
+        dungeonId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 dungeon_id = 15;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearDungeonId() {
+        
+        dungeonId_ = 0;
         onChanged();
         return this;
       }
@@ -601,8 +609,8 @@ public final class RogueHealAvatarsReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\031RogueHealAvatarsReq.proto\":\n\023RogueHeal" +
-      "AvatarsReq\022\022\n\ndungeon_id\030\001 \001(\r\022\017\n\007cell_i" +
-      "d\030\003 \001(\rB\033\n\031emu.grasscutter.net.protob\006pr" +
+      "AvatarsReq\022\017\n\007cell_id\030\002 \001(\r\022\022\n\ndungeon_i" +
+      "d\030\017 \001(\rB\033\n\031emu.grasscutter.net.protob\006pr" +
       "oto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -614,7 +622,7 @@ public final class RogueHealAvatarsReqOuterClass {
     internal_static_RogueHealAvatarsReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_RogueHealAvatarsReq_descriptor,
-        new java.lang.String[] { "DungeonId", "CellId", });
+        new java.lang.String[] { "CellId", "DungeonId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

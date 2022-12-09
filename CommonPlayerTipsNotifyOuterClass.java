@@ -19,30 +19,30 @@ public final class CommonPlayerTipsNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 notify_type = 3;</code>
+     * <code>uint32 notify_type = 15;</code>
      * @return The notifyType.
      */
     int getNotifyType();
 
     /**
-     * <code>repeated string text_map_id_list = 9;</code>
+     * <code>repeated string text_map_id_list = 8;</code>
      * @return A list containing the textMapIdList.
      */
     java.util.List<java.lang.String>
         getTextMapIdListList();
     /**
-     * <code>repeated string text_map_id_list = 9;</code>
+     * <code>repeated string text_map_id_list = 8;</code>
      * @return The count of textMapIdList.
      */
     int getTextMapIdListCount();
     /**
-     * <code>repeated string text_map_id_list = 9;</code>
+     * <code>repeated string text_map_id_list = 8;</code>
      * @param index The index of the element to return.
      * @return The textMapIdList at the given index.
      */
     java.lang.String getTextMapIdList(int index);
     /**
-     * <code>repeated string text_map_id_list = 9;</code>
+     * <code>repeated string text_map_id_list = 8;</code>
      * @param index The index of the value to return.
      * @return The bytes of the textMapIdList at the given index.
      */
@@ -51,9 +51,13 @@ public final class CommonPlayerTipsNotifyOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 8466
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 8167;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code CommonPlayerTipsNotify}
@@ -102,18 +106,18 @@ public final class CommonPlayerTipsNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 24: {
-
-              notifyType_ = input.readUInt32();
-              break;
-            }
-            case 74: {
+            case 66: {
               java.lang.String s = input.readStringRequireUtf8();
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 textMapIdList_ = new com.google.protobuf.LazyStringArrayList();
                 mutable_bitField0_ |= 0x00000001;
               }
               textMapIdList_.add(s);
+              break;
+            }
+            case 120: {
+
+              notifyType_ = input.readUInt32();
               break;
             }
             default: {
@@ -151,10 +155,10 @@ public final class CommonPlayerTipsNotifyOuterClass {
               emu.grasscutter.net.proto.CommonPlayerTipsNotifyOuterClass.CommonPlayerTipsNotify.class, emu.grasscutter.net.proto.CommonPlayerTipsNotifyOuterClass.CommonPlayerTipsNotify.Builder.class);
     }
 
-    public static final int NOTIFY_TYPE_FIELD_NUMBER = 3;
+    public static final int NOTIFY_TYPE_FIELD_NUMBER = 15;
     private int notifyType_;
     /**
-     * <code>uint32 notify_type = 3;</code>
+     * <code>uint32 notify_type = 15;</code>
      * @return The notifyType.
      */
     @java.lang.Override
@@ -162,10 +166,10 @@ public final class CommonPlayerTipsNotifyOuterClass {
       return notifyType_;
     }
 
-    public static final int TEXT_MAP_ID_LIST_FIELD_NUMBER = 9;
+    public static final int TEXT_MAP_ID_LIST_FIELD_NUMBER = 8;
     private com.google.protobuf.LazyStringList textMapIdList_;
     /**
-     * <code>repeated string text_map_id_list = 9;</code>
+     * <code>repeated string text_map_id_list = 8;</code>
      * @return A list containing the textMapIdList.
      */
     public com.google.protobuf.ProtocolStringList
@@ -173,14 +177,14 @@ public final class CommonPlayerTipsNotifyOuterClass {
       return textMapIdList_;
     }
     /**
-     * <code>repeated string text_map_id_list = 9;</code>
+     * <code>repeated string text_map_id_list = 8;</code>
      * @return The count of textMapIdList.
      */
     public int getTextMapIdListCount() {
       return textMapIdList_.size();
     }
     /**
-     * <code>repeated string text_map_id_list = 9;</code>
+     * <code>repeated string text_map_id_list = 8;</code>
      * @param index The index of the element to return.
      * @return The textMapIdList at the given index.
      */
@@ -188,7 +192,7 @@ public final class CommonPlayerTipsNotifyOuterClass {
       return textMapIdList_.get(index);
     }
     /**
-     * <code>repeated string text_map_id_list = 9;</code>
+     * <code>repeated string text_map_id_list = 8;</code>
      * @param index The index of the value to return.
      * @return The bytes of the textMapIdList at the given index.
      */
@@ -211,11 +215,11 @@ public final class CommonPlayerTipsNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (notifyType_ != 0) {
-        output.writeUInt32(3, notifyType_);
-      }
       for (int i = 0; i < textMapIdList_.size(); i++) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 9, textMapIdList_.getRaw(i));
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 8, textMapIdList_.getRaw(i));
+      }
+      if (notifyType_ != 0) {
+        output.writeUInt32(15, notifyType_);
       }
       unknownFields.writeTo(output);
     }
@@ -226,10 +230,6 @@ public final class CommonPlayerTipsNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (notifyType_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, notifyType_);
-      }
       {
         int dataSize = 0;
         for (int i = 0; i < textMapIdList_.size(); i++) {
@@ -237,6 +237,10 @@ public final class CommonPlayerTipsNotifyOuterClass {
         }
         size += dataSize;
         size += 1 * getTextMapIdListList().size();
+      }
+      if (notifyType_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(15, notifyType_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -371,9 +375,13 @@ public final class CommonPlayerTipsNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 8466
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 8167;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code CommonPlayerTipsNotify}
@@ -543,7 +551,7 @@ public final class CommonPlayerTipsNotifyOuterClass {
 
       private int notifyType_ ;
       /**
-       * <code>uint32 notify_type = 3;</code>
+       * <code>uint32 notify_type = 15;</code>
        * @return The notifyType.
        */
       @java.lang.Override
@@ -551,7 +559,7 @@ public final class CommonPlayerTipsNotifyOuterClass {
         return notifyType_;
       }
       /**
-       * <code>uint32 notify_type = 3;</code>
+       * <code>uint32 notify_type = 15;</code>
        * @param value The notifyType to set.
        * @return This builder for chaining.
        */
@@ -562,7 +570,7 @@ public final class CommonPlayerTipsNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 notify_type = 3;</code>
+       * <code>uint32 notify_type = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearNotifyType() {
@@ -580,7 +588,7 @@ public final class CommonPlayerTipsNotifyOuterClass {
          }
       }
       /**
-       * <code>repeated string text_map_id_list = 9;</code>
+       * <code>repeated string text_map_id_list = 8;</code>
        * @return A list containing the textMapIdList.
        */
       public com.google.protobuf.ProtocolStringList
@@ -588,14 +596,14 @@ public final class CommonPlayerTipsNotifyOuterClass {
         return textMapIdList_.getUnmodifiableView();
       }
       /**
-       * <code>repeated string text_map_id_list = 9;</code>
+       * <code>repeated string text_map_id_list = 8;</code>
        * @return The count of textMapIdList.
        */
       public int getTextMapIdListCount() {
         return textMapIdList_.size();
       }
       /**
-       * <code>repeated string text_map_id_list = 9;</code>
+       * <code>repeated string text_map_id_list = 8;</code>
        * @param index The index of the element to return.
        * @return The textMapIdList at the given index.
        */
@@ -603,7 +611,7 @@ public final class CommonPlayerTipsNotifyOuterClass {
         return textMapIdList_.get(index);
       }
       /**
-       * <code>repeated string text_map_id_list = 9;</code>
+       * <code>repeated string text_map_id_list = 8;</code>
        * @param index The index of the value to return.
        * @return The bytes of the textMapIdList at the given index.
        */
@@ -612,7 +620,7 @@ public final class CommonPlayerTipsNotifyOuterClass {
         return textMapIdList_.getByteString(index);
       }
       /**
-       * <code>repeated string text_map_id_list = 9;</code>
+       * <code>repeated string text_map_id_list = 8;</code>
        * @param index The index to set the value at.
        * @param value The textMapIdList to set.
        * @return This builder for chaining.
@@ -628,7 +636,7 @@ public final class CommonPlayerTipsNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated string text_map_id_list = 9;</code>
+       * <code>repeated string text_map_id_list = 8;</code>
        * @param value The textMapIdList to add.
        * @return This builder for chaining.
        */
@@ -643,7 +651,7 @@ public final class CommonPlayerTipsNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated string text_map_id_list = 9;</code>
+       * <code>repeated string text_map_id_list = 8;</code>
        * @param values The textMapIdList to add.
        * @return This builder for chaining.
        */
@@ -656,7 +664,7 @@ public final class CommonPlayerTipsNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated string text_map_id_list = 9;</code>
+       * <code>repeated string text_map_id_list = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearTextMapIdList() {
@@ -666,7 +674,7 @@ public final class CommonPlayerTipsNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated string text_map_id_list = 9;</code>
+       * <code>repeated string text_map_id_list = 8;</code>
        * @param value The bytes of the textMapIdList to add.
        * @return This builder for chaining.
        */
@@ -749,8 +757,8 @@ public final class CommonPlayerTipsNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\034CommonPlayerTipsNotify.proto\"G\n\026Common" +
-      "PlayerTipsNotify\022\023\n\013notify_type\030\003 \001(\r\022\030\n" +
-      "\020text_map_id_list\030\t \003(\tB\033\n\031emu.grasscutt" +
+      "PlayerTipsNotify\022\023\n\013notify_type\030\017 \001(\r\022\030\n" +
+      "\020text_map_id_list\030\010 \003(\tB\033\n\031emu.grasscutt" +
       "er.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

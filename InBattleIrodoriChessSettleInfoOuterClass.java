@@ -19,40 +19,40 @@ public final class InBattleIrodoriChessSettleInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_new_record = 5;</code>
-     * @return The isNewRecord.
+     * <code>uint32 kill_monster_num = 15;</code>
+     * @return The killMonsterNum.
      */
-    boolean getIsNewRecord();
+    int getKillMonsterNum();
 
     /**
-     * <code>bool is_activity_end = 2;</code>
-     * @return The isActivityEnd.
-     */
-    boolean getIsActivityEnd();
-
-    /**
-     * <code>uint64 scene_time_ms = 1;</code>
+     * <code>uint64 scene_time_ms = 14;</code>
      * @return The sceneTimeMs.
      */
     long getSceneTimeMs();
 
     /**
-     * <code>uint32 settle_score = 3;</code>
-     * @return The settleScore.
-     */
-    int getSettleScore();
-
-    /**
-     * <code>bool is_perfect = 12;</code>
+     * <code>bool is_perfect = 8;</code>
      * @return The isPerfect.
      */
     boolean getIsPerfect();
 
     /**
-     * <code>uint32 kill_monster_num = 7;</code>
-     * @return The killMonsterNum.
+     * <code>bool is_new_record = 7;</code>
+     * @return The isNewRecord.
      */
-    int getKillMonsterNum();
+    boolean getIsNewRecord();
+
+    /**
+     * <code>uint32 settle_score = 10;</code>
+     * @return The settleScore.
+     */
+    int getSettleScore();
+
+    /**
+     * <code>bool is_activity_end = 5;</code>
+     * @return The isActivityEnd.
+     */
+    boolean getIsActivityEnd();
   }
   /**
    * Protobuf type {@code InBattleIrodoriChessSettleInfo}
@@ -99,34 +99,34 @@ public final class InBattleIrodoriChessSettleInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
-
-              sceneTimeMs_ = input.readUInt64();
-              break;
-            }
-            case 16: {
+            case 40: {
 
               isActivityEnd_ = input.readBool();
               break;
             }
-            case 24: {
-
-              settleScore_ = input.readUInt32();
-              break;
-            }
-            case 40: {
+            case 56: {
 
               isNewRecord_ = input.readBool();
               break;
             }
-            case 56: {
-
-              killMonsterNum_ = input.readUInt32();
-              break;
-            }
-            case 96: {
+            case 64: {
 
               isPerfect_ = input.readBool();
+              break;
+            }
+            case 80: {
+
+              settleScore_ = input.readUInt32();
+              break;
+            }
+            case 112: {
+
+              sceneTimeMs_ = input.readUInt64();
+              break;
+            }
+            case 120: {
+
+              killMonsterNum_ = input.readUInt32();
               break;
             }
             default: {
@@ -161,32 +161,21 @@ public final class InBattleIrodoriChessSettleInfoOuterClass {
               emu.grasscutter.net.proto.InBattleIrodoriChessSettleInfoOuterClass.InBattleIrodoriChessSettleInfo.class, emu.grasscutter.net.proto.InBattleIrodoriChessSettleInfoOuterClass.InBattleIrodoriChessSettleInfo.Builder.class);
     }
 
-    public static final int IS_NEW_RECORD_FIELD_NUMBER = 5;
-    private boolean isNewRecord_;
+    public static final int KILL_MONSTER_NUM_FIELD_NUMBER = 15;
+    private int killMonsterNum_;
     /**
-     * <code>bool is_new_record = 5;</code>
-     * @return The isNewRecord.
+     * <code>uint32 kill_monster_num = 15;</code>
+     * @return The killMonsterNum.
      */
     @java.lang.Override
-    public boolean getIsNewRecord() {
-      return isNewRecord_;
+    public int getKillMonsterNum() {
+      return killMonsterNum_;
     }
 
-    public static final int IS_ACTIVITY_END_FIELD_NUMBER = 2;
-    private boolean isActivityEnd_;
-    /**
-     * <code>bool is_activity_end = 2;</code>
-     * @return The isActivityEnd.
-     */
-    @java.lang.Override
-    public boolean getIsActivityEnd() {
-      return isActivityEnd_;
-    }
-
-    public static final int SCENE_TIME_MS_FIELD_NUMBER = 1;
+    public static final int SCENE_TIME_MS_FIELD_NUMBER = 14;
     private long sceneTimeMs_;
     /**
-     * <code>uint64 scene_time_ms = 1;</code>
+     * <code>uint64 scene_time_ms = 14;</code>
      * @return The sceneTimeMs.
      */
     @java.lang.Override
@@ -194,21 +183,10 @@ public final class InBattleIrodoriChessSettleInfoOuterClass {
       return sceneTimeMs_;
     }
 
-    public static final int SETTLE_SCORE_FIELD_NUMBER = 3;
-    private int settleScore_;
-    /**
-     * <code>uint32 settle_score = 3;</code>
-     * @return The settleScore.
-     */
-    @java.lang.Override
-    public int getSettleScore() {
-      return settleScore_;
-    }
-
-    public static final int IS_PERFECT_FIELD_NUMBER = 12;
+    public static final int IS_PERFECT_FIELD_NUMBER = 8;
     private boolean isPerfect_;
     /**
-     * <code>bool is_perfect = 12;</code>
+     * <code>bool is_perfect = 8;</code>
      * @return The isPerfect.
      */
     @java.lang.Override
@@ -216,15 +194,37 @@ public final class InBattleIrodoriChessSettleInfoOuterClass {
       return isPerfect_;
     }
 
-    public static final int KILL_MONSTER_NUM_FIELD_NUMBER = 7;
-    private int killMonsterNum_;
+    public static final int IS_NEW_RECORD_FIELD_NUMBER = 7;
+    private boolean isNewRecord_;
     /**
-     * <code>uint32 kill_monster_num = 7;</code>
-     * @return The killMonsterNum.
+     * <code>bool is_new_record = 7;</code>
+     * @return The isNewRecord.
      */
     @java.lang.Override
-    public int getKillMonsterNum() {
-      return killMonsterNum_;
+    public boolean getIsNewRecord() {
+      return isNewRecord_;
+    }
+
+    public static final int SETTLE_SCORE_FIELD_NUMBER = 10;
+    private int settleScore_;
+    /**
+     * <code>uint32 settle_score = 10;</code>
+     * @return The settleScore.
+     */
+    @java.lang.Override
+    public int getSettleScore() {
+      return settleScore_;
+    }
+
+    public static final int IS_ACTIVITY_END_FIELD_NUMBER = 5;
+    private boolean isActivityEnd_;
+    /**
+     * <code>bool is_activity_end = 5;</code>
+     * @return The isActivityEnd.
+     */
+    @java.lang.Override
+    public boolean getIsActivityEnd() {
+      return isActivityEnd_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -241,23 +241,23 @@ public final class InBattleIrodoriChessSettleInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (sceneTimeMs_ != 0L) {
-        output.writeUInt64(1, sceneTimeMs_);
-      }
       if (isActivityEnd_ != false) {
-        output.writeBool(2, isActivityEnd_);
-      }
-      if (settleScore_ != 0) {
-        output.writeUInt32(3, settleScore_);
+        output.writeBool(5, isActivityEnd_);
       }
       if (isNewRecord_ != false) {
-        output.writeBool(5, isNewRecord_);
-      }
-      if (killMonsterNum_ != 0) {
-        output.writeUInt32(7, killMonsterNum_);
+        output.writeBool(7, isNewRecord_);
       }
       if (isPerfect_ != false) {
-        output.writeBool(12, isPerfect_);
+        output.writeBool(8, isPerfect_);
+      }
+      if (settleScore_ != 0) {
+        output.writeUInt32(10, settleScore_);
+      }
+      if (sceneTimeMs_ != 0L) {
+        output.writeUInt64(14, sceneTimeMs_);
+      }
+      if (killMonsterNum_ != 0) {
+        output.writeUInt32(15, killMonsterNum_);
       }
       unknownFields.writeTo(output);
     }
@@ -268,29 +268,29 @@ public final class InBattleIrodoriChessSettleInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (sceneTimeMs_ != 0L) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt64Size(1, sceneTimeMs_);
-      }
       if (isActivityEnd_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(2, isActivityEnd_);
-      }
-      if (settleScore_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, settleScore_);
+          .computeBoolSize(5, isActivityEnd_);
       }
       if (isNewRecord_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(5, isNewRecord_);
-      }
-      if (killMonsterNum_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, killMonsterNum_);
+          .computeBoolSize(7, isNewRecord_);
       }
       if (isPerfect_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(12, isPerfect_);
+          .computeBoolSize(8, isPerfect_);
+      }
+      if (settleScore_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(10, settleScore_);
+      }
+      if (sceneTimeMs_ != 0L) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt64Size(14, sceneTimeMs_);
+      }
+      if (killMonsterNum_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(15, killMonsterNum_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -307,18 +307,18 @@ public final class InBattleIrodoriChessSettleInfoOuterClass {
       }
       emu.grasscutter.net.proto.InBattleIrodoriChessSettleInfoOuterClass.InBattleIrodoriChessSettleInfo other = (emu.grasscutter.net.proto.InBattleIrodoriChessSettleInfoOuterClass.InBattleIrodoriChessSettleInfo) obj;
 
-      if (getIsNewRecord()
-          != other.getIsNewRecord()) return false;
-      if (getIsActivityEnd()
-          != other.getIsActivityEnd()) return false;
-      if (getSceneTimeMs()
-          != other.getSceneTimeMs()) return false;
-      if (getSettleScore()
-          != other.getSettleScore()) return false;
-      if (getIsPerfect()
-          != other.getIsPerfect()) return false;
       if (getKillMonsterNum()
           != other.getKillMonsterNum()) return false;
+      if (getSceneTimeMs()
+          != other.getSceneTimeMs()) return false;
+      if (getIsPerfect()
+          != other.getIsPerfect()) return false;
+      if (getIsNewRecord()
+          != other.getIsNewRecord()) return false;
+      if (getSettleScore()
+          != other.getSettleScore()) return false;
+      if (getIsActivityEnd()
+          != other.getIsActivityEnd()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -330,22 +330,22 @@ public final class InBattleIrodoriChessSettleInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + IS_NEW_RECORD_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsNewRecord());
-      hash = (37 * hash) + IS_ACTIVITY_END_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsActivityEnd());
+      hash = (37 * hash) + KILL_MONSTER_NUM_FIELD_NUMBER;
+      hash = (53 * hash) + getKillMonsterNum();
       hash = (37 * hash) + SCENE_TIME_MS_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
           getSceneTimeMs());
-      hash = (37 * hash) + SETTLE_SCORE_FIELD_NUMBER;
-      hash = (53 * hash) + getSettleScore();
       hash = (37 * hash) + IS_PERFECT_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsPerfect());
-      hash = (37 * hash) + KILL_MONSTER_NUM_FIELD_NUMBER;
-      hash = (53 * hash) + getKillMonsterNum();
+      hash = (37 * hash) + IS_NEW_RECORD_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getIsNewRecord());
+      hash = (37 * hash) + SETTLE_SCORE_FIELD_NUMBER;
+      hash = (53 * hash) + getSettleScore();
+      hash = (37 * hash) + IS_ACTIVITY_END_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getIsActivityEnd());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -479,17 +479,17 @@ public final class InBattleIrodoriChessSettleInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        isNewRecord_ = false;
-
-        isActivityEnd_ = false;
+        killMonsterNum_ = 0;
 
         sceneTimeMs_ = 0L;
 
-        settleScore_ = 0;
-
         isPerfect_ = false;
 
-        killMonsterNum_ = 0;
+        isNewRecord_ = false;
+
+        settleScore_ = 0;
+
+        isActivityEnd_ = false;
 
         return this;
       }
@@ -517,12 +517,12 @@ public final class InBattleIrodoriChessSettleInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.InBattleIrodoriChessSettleInfoOuterClass.InBattleIrodoriChessSettleInfo buildPartial() {
         emu.grasscutter.net.proto.InBattleIrodoriChessSettleInfoOuterClass.InBattleIrodoriChessSettleInfo result = new emu.grasscutter.net.proto.InBattleIrodoriChessSettleInfoOuterClass.InBattleIrodoriChessSettleInfo(this);
-        result.isNewRecord_ = isNewRecord_;
-        result.isActivityEnd_ = isActivityEnd_;
-        result.sceneTimeMs_ = sceneTimeMs_;
-        result.settleScore_ = settleScore_;
-        result.isPerfect_ = isPerfect_;
         result.killMonsterNum_ = killMonsterNum_;
+        result.sceneTimeMs_ = sceneTimeMs_;
+        result.isPerfect_ = isPerfect_;
+        result.isNewRecord_ = isNewRecord_;
+        result.settleScore_ = settleScore_;
+        result.isActivityEnd_ = isActivityEnd_;
         onBuilt();
         return result;
       }
@@ -571,23 +571,23 @@ public final class InBattleIrodoriChessSettleInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.InBattleIrodoriChessSettleInfoOuterClass.InBattleIrodoriChessSettleInfo other) {
         if (other == emu.grasscutter.net.proto.InBattleIrodoriChessSettleInfoOuterClass.InBattleIrodoriChessSettleInfo.getDefaultInstance()) return this;
-        if (other.getIsNewRecord() != false) {
-          setIsNewRecord(other.getIsNewRecord());
-        }
-        if (other.getIsActivityEnd() != false) {
-          setIsActivityEnd(other.getIsActivityEnd());
+        if (other.getKillMonsterNum() != 0) {
+          setKillMonsterNum(other.getKillMonsterNum());
         }
         if (other.getSceneTimeMs() != 0L) {
           setSceneTimeMs(other.getSceneTimeMs());
         }
-        if (other.getSettleScore() != 0) {
-          setSettleScore(other.getSettleScore());
-        }
         if (other.getIsPerfect() != false) {
           setIsPerfect(other.getIsPerfect());
         }
-        if (other.getKillMonsterNum() != 0) {
-          setKillMonsterNum(other.getKillMonsterNum());
+        if (other.getIsNewRecord() != false) {
+          setIsNewRecord(other.getIsNewRecord());
+        }
+        if (other.getSettleScore() != 0) {
+          setSettleScore(other.getSettleScore());
+        }
+        if (other.getIsActivityEnd() != false) {
+          setIsActivityEnd(other.getIsActivityEnd());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -618,164 +618,9 @@ public final class InBattleIrodoriChessSettleInfoOuterClass {
         return this;
       }
 
-      private boolean isNewRecord_ ;
-      /**
-       * <code>bool is_new_record = 5;</code>
-       * @return The isNewRecord.
-       */
-      @java.lang.Override
-      public boolean getIsNewRecord() {
-        return isNewRecord_;
-      }
-      /**
-       * <code>bool is_new_record = 5;</code>
-       * @param value The isNewRecord to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsNewRecord(boolean value) {
-        
-        isNewRecord_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_new_record = 5;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsNewRecord() {
-        
-        isNewRecord_ = false;
-        onChanged();
-        return this;
-      }
-
-      private boolean isActivityEnd_ ;
-      /**
-       * <code>bool is_activity_end = 2;</code>
-       * @return The isActivityEnd.
-       */
-      @java.lang.Override
-      public boolean getIsActivityEnd() {
-        return isActivityEnd_;
-      }
-      /**
-       * <code>bool is_activity_end = 2;</code>
-       * @param value The isActivityEnd to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsActivityEnd(boolean value) {
-        
-        isActivityEnd_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_activity_end = 2;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsActivityEnd() {
-        
-        isActivityEnd_ = false;
-        onChanged();
-        return this;
-      }
-
-      private long sceneTimeMs_ ;
-      /**
-       * <code>uint64 scene_time_ms = 1;</code>
-       * @return The sceneTimeMs.
-       */
-      @java.lang.Override
-      public long getSceneTimeMs() {
-        return sceneTimeMs_;
-      }
-      /**
-       * <code>uint64 scene_time_ms = 1;</code>
-       * @param value The sceneTimeMs to set.
-       * @return This builder for chaining.
-       */
-      public Builder setSceneTimeMs(long value) {
-        
-        sceneTimeMs_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint64 scene_time_ms = 1;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearSceneTimeMs() {
-        
-        sceneTimeMs_ = 0L;
-        onChanged();
-        return this;
-      }
-
-      private int settleScore_ ;
-      /**
-       * <code>uint32 settle_score = 3;</code>
-       * @return The settleScore.
-       */
-      @java.lang.Override
-      public int getSettleScore() {
-        return settleScore_;
-      }
-      /**
-       * <code>uint32 settle_score = 3;</code>
-       * @param value The settleScore to set.
-       * @return This builder for chaining.
-       */
-      public Builder setSettleScore(int value) {
-        
-        settleScore_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 settle_score = 3;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearSettleScore() {
-        
-        settleScore_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private boolean isPerfect_ ;
-      /**
-       * <code>bool is_perfect = 12;</code>
-       * @return The isPerfect.
-       */
-      @java.lang.Override
-      public boolean getIsPerfect() {
-        return isPerfect_;
-      }
-      /**
-       * <code>bool is_perfect = 12;</code>
-       * @param value The isPerfect to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsPerfect(boolean value) {
-        
-        isPerfect_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_perfect = 12;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsPerfect() {
-        
-        isPerfect_ = false;
-        onChanged();
-        return this;
-      }
-
       private int killMonsterNum_ ;
       /**
-       * <code>uint32 kill_monster_num = 7;</code>
+       * <code>uint32 kill_monster_num = 15;</code>
        * @return The killMonsterNum.
        */
       @java.lang.Override
@@ -783,7 +628,7 @@ public final class InBattleIrodoriChessSettleInfoOuterClass {
         return killMonsterNum_;
       }
       /**
-       * <code>uint32 kill_monster_num = 7;</code>
+       * <code>uint32 kill_monster_num = 15;</code>
        * @param value The killMonsterNum to set.
        * @return This builder for chaining.
        */
@@ -794,12 +639,167 @@ public final class InBattleIrodoriChessSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 kill_monster_num = 7;</code>
+       * <code>uint32 kill_monster_num = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearKillMonsterNum() {
         
         killMonsterNum_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private long sceneTimeMs_ ;
+      /**
+       * <code>uint64 scene_time_ms = 14;</code>
+       * @return The sceneTimeMs.
+       */
+      @java.lang.Override
+      public long getSceneTimeMs() {
+        return sceneTimeMs_;
+      }
+      /**
+       * <code>uint64 scene_time_ms = 14;</code>
+       * @param value The sceneTimeMs to set.
+       * @return This builder for chaining.
+       */
+      public Builder setSceneTimeMs(long value) {
+        
+        sceneTimeMs_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint64 scene_time_ms = 14;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearSceneTimeMs() {
+        
+        sceneTimeMs_ = 0L;
+        onChanged();
+        return this;
+      }
+
+      private boolean isPerfect_ ;
+      /**
+       * <code>bool is_perfect = 8;</code>
+       * @return The isPerfect.
+       */
+      @java.lang.Override
+      public boolean getIsPerfect() {
+        return isPerfect_;
+      }
+      /**
+       * <code>bool is_perfect = 8;</code>
+       * @param value The isPerfect to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIsPerfect(boolean value) {
+        
+        isPerfect_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool is_perfect = 8;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsPerfect() {
+        
+        isPerfect_ = false;
+        onChanged();
+        return this;
+      }
+
+      private boolean isNewRecord_ ;
+      /**
+       * <code>bool is_new_record = 7;</code>
+       * @return The isNewRecord.
+       */
+      @java.lang.Override
+      public boolean getIsNewRecord() {
+        return isNewRecord_;
+      }
+      /**
+       * <code>bool is_new_record = 7;</code>
+       * @param value The isNewRecord to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIsNewRecord(boolean value) {
+        
+        isNewRecord_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool is_new_record = 7;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsNewRecord() {
+        
+        isNewRecord_ = false;
+        onChanged();
+        return this;
+      }
+
+      private int settleScore_ ;
+      /**
+       * <code>uint32 settle_score = 10;</code>
+       * @return The settleScore.
+       */
+      @java.lang.Override
+      public int getSettleScore() {
+        return settleScore_;
+      }
+      /**
+       * <code>uint32 settle_score = 10;</code>
+       * @param value The settleScore to set.
+       * @return This builder for chaining.
+       */
+      public Builder setSettleScore(int value) {
+        
+        settleScore_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 settle_score = 10;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearSettleScore() {
+        
+        settleScore_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private boolean isActivityEnd_ ;
+      /**
+       * <code>bool is_activity_end = 5;</code>
+       * @return The isActivityEnd.
+       */
+      @java.lang.Override
+      public boolean getIsActivityEnd() {
+        return isActivityEnd_;
+      }
+      /**
+       * <code>bool is_activity_end = 5;</code>
+       * @param value The isActivityEnd to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIsActivityEnd(boolean value) {
+        
+        isActivityEnd_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool is_activity_end = 5;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsActivityEnd() {
+        
+        isActivityEnd_ = false;
         onChanged();
         return this;
       }
@@ -871,11 +871,11 @@ public final class InBattleIrodoriChessSettleInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n$InBattleIrodoriChessSettleInfo.proto\"\253" +
-      "\001\n\036InBattleIrodoriChessSettleInfo\022\025\n\ris_" +
-      "new_record\030\005 \001(\010\022\027\n\017is_activity_end\030\002 \001(" +
-      "\010\022\025\n\rscene_time_ms\030\001 \001(\004\022\024\n\014settle_score" +
-      "\030\003 \001(\r\022\022\n\nis_perfect\030\014 \001(\010\022\030\n\020kill_monst" +
-      "er_num\030\007 \001(\rB\033\n\031emu.grasscutter.net.prot" +
+      "\001\n\036InBattleIrodoriChessSettleInfo\022\030\n\020kil" +
+      "l_monster_num\030\017 \001(\r\022\025\n\rscene_time_ms\030\016 \001" +
+      "(\004\022\022\n\nis_perfect\030\010 \001(\010\022\025\n\ris_new_record\030" +
+      "\007 \001(\010\022\024\n\014settle_score\030\n \001(\r\022\027\n\017is_activi" +
+      "ty_end\030\005 \001(\010B\033\n\031emu.grasscutter.net.prot" +
       "ob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -887,7 +887,7 @@ public final class InBattleIrodoriChessSettleInfoOuterClass {
     internal_static_InBattleIrodoriChessSettleInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_InBattleIrodoriChessSettleInfo_descriptor,
-        new java.lang.String[] { "IsNewRecord", "IsActivityEnd", "SceneTimeMs", "SettleScore", "IsPerfect", "KillMonsterNum", });
+        new java.lang.String[] { "KillMonsterNum", "SceneTimeMs", "IsPerfect", "IsNewRecord", "SettleScore", "IsActivityEnd", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

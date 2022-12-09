@@ -19,7 +19,7 @@ public final class SceneGalleryHomeBalloonInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 score = 7;</code>
+     * <code>uint32 score = 11;</code>
      * @return The score.
      */
     int getScore();
@@ -69,7 +69,7 @@ public final class SceneGalleryHomeBalloonInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 56: {
+            case 88: {
 
               score_ = input.readUInt32();
               break;
@@ -106,10 +106,10 @@ public final class SceneGalleryHomeBalloonInfoOuterClass {
               emu.grasscutter.net.proto.SceneGalleryHomeBalloonInfoOuterClass.SceneGalleryHomeBalloonInfo.class, emu.grasscutter.net.proto.SceneGalleryHomeBalloonInfoOuterClass.SceneGalleryHomeBalloonInfo.Builder.class);
     }
 
-    public static final int SCORE_FIELD_NUMBER = 7;
+    public static final int SCORE_FIELD_NUMBER = 11;
     private int score_;
     /**
-     * <code>uint32 score = 7;</code>
+     * <code>uint32 score = 11;</code>
      * @return The score.
      */
     @java.lang.Override
@@ -132,7 +132,7 @@ public final class SceneGalleryHomeBalloonInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (score_ != 0) {
-        output.writeUInt32(7, score_);
+        output.writeUInt32(11, score_);
       }
       unknownFields.writeTo(output);
     }
@@ -145,7 +145,7 @@ public final class SceneGalleryHomeBalloonInfoOuterClass {
       size = 0;
       if (score_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, score_);
+          .computeUInt32Size(11, score_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -421,7 +421,7 @@ public final class SceneGalleryHomeBalloonInfoOuterClass {
 
       private int score_ ;
       /**
-       * <code>uint32 score = 7;</code>
+       * <code>uint32 score = 11;</code>
        * @return The score.
        */
       @java.lang.Override
@@ -429,7 +429,7 @@ public final class SceneGalleryHomeBalloonInfoOuterClass {
         return score_;
       }
       /**
-       * <code>uint32 score = 7;</code>
+       * <code>uint32 score = 11;</code>
        * @param value The score to set.
        * @return This builder for chaining.
        */
@@ -440,7 +440,7 @@ public final class SceneGalleryHomeBalloonInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 score = 7;</code>
+       * <code>uint32 score = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearScore() {
@@ -517,7 +517,7 @@ public final class SceneGalleryHomeBalloonInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n!SceneGalleryHomeBalloonInfo.proto\",\n\033S" +
-      "ceneGalleryHomeBalloonInfo\022\r\n\005score\030\007 \001(" +
+      "ceneGalleryHomeBalloonInfo\022\r\n\005score\030\013 \001(" +
       "\rB\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

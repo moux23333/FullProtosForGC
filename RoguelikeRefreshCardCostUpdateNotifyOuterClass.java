@@ -19,22 +19,26 @@ public final class RoguelikeRefreshCardCostUpdateNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 item_count = 5;</code>
+     * <code>uint32 item_count = 13;</code>
      * @return The itemCount.
      */
     int getItemCount();
 
     /**
-     * <code>uint32 item_id = 1;</code>
+     * <code>uint32 item_id = 15;</code>
      * @return The itemId.
      */
     int getItemId();
   }
   /**
    * <pre>
-   * CmdId: 8927
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 8210;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code RoguelikeRefreshCardCostUpdateNotify}
@@ -81,14 +85,14 @@ public final class RoguelikeRefreshCardCostUpdateNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
-
-              itemId_ = input.readUInt32();
-              break;
-            }
-            case 40: {
+            case 104: {
 
               itemCount_ = input.readUInt32();
+              break;
+            }
+            case 120: {
+
+              itemId_ = input.readUInt32();
               break;
             }
             default: {
@@ -123,10 +127,10 @@ public final class RoguelikeRefreshCardCostUpdateNotifyOuterClass {
               emu.grasscutter.net.proto.RoguelikeRefreshCardCostUpdateNotifyOuterClass.RoguelikeRefreshCardCostUpdateNotify.class, emu.grasscutter.net.proto.RoguelikeRefreshCardCostUpdateNotifyOuterClass.RoguelikeRefreshCardCostUpdateNotify.Builder.class);
     }
 
-    public static final int ITEM_COUNT_FIELD_NUMBER = 5;
+    public static final int ITEM_COUNT_FIELD_NUMBER = 13;
     private int itemCount_;
     /**
-     * <code>uint32 item_count = 5;</code>
+     * <code>uint32 item_count = 13;</code>
      * @return The itemCount.
      */
     @java.lang.Override
@@ -134,10 +138,10 @@ public final class RoguelikeRefreshCardCostUpdateNotifyOuterClass {
       return itemCount_;
     }
 
-    public static final int ITEM_ID_FIELD_NUMBER = 1;
+    public static final int ITEM_ID_FIELD_NUMBER = 15;
     private int itemId_;
     /**
-     * <code>uint32 item_id = 1;</code>
+     * <code>uint32 item_id = 15;</code>
      * @return The itemId.
      */
     @java.lang.Override
@@ -159,11 +163,11 @@ public final class RoguelikeRefreshCardCostUpdateNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (itemId_ != 0) {
-        output.writeUInt32(1, itemId_);
-      }
       if (itemCount_ != 0) {
-        output.writeUInt32(5, itemCount_);
+        output.writeUInt32(13, itemCount_);
+      }
+      if (itemId_ != 0) {
+        output.writeUInt32(15, itemId_);
       }
       unknownFields.writeTo(output);
     }
@@ -174,13 +178,13 @@ public final class RoguelikeRefreshCardCostUpdateNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (itemId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, itemId_);
-      }
       if (itemCount_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, itemCount_);
+          .computeUInt32Size(13, itemCount_);
+      }
+      if (itemId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(15, itemId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -313,9 +317,13 @@ public final class RoguelikeRefreshCardCostUpdateNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 8927
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 8210;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code RoguelikeRefreshCardCostUpdateNotify}
@@ -472,7 +480,7 @@ public final class RoguelikeRefreshCardCostUpdateNotifyOuterClass {
 
       private int itemCount_ ;
       /**
-       * <code>uint32 item_count = 5;</code>
+       * <code>uint32 item_count = 13;</code>
        * @return The itemCount.
        */
       @java.lang.Override
@@ -480,7 +488,7 @@ public final class RoguelikeRefreshCardCostUpdateNotifyOuterClass {
         return itemCount_;
       }
       /**
-       * <code>uint32 item_count = 5;</code>
+       * <code>uint32 item_count = 13;</code>
        * @param value The itemCount to set.
        * @return This builder for chaining.
        */
@@ -491,7 +499,7 @@ public final class RoguelikeRefreshCardCostUpdateNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 item_count = 5;</code>
+       * <code>uint32 item_count = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearItemCount() {
@@ -503,7 +511,7 @@ public final class RoguelikeRefreshCardCostUpdateNotifyOuterClass {
 
       private int itemId_ ;
       /**
-       * <code>uint32 item_id = 1;</code>
+       * <code>uint32 item_id = 15;</code>
        * @return The itemId.
        */
       @java.lang.Override
@@ -511,7 +519,7 @@ public final class RoguelikeRefreshCardCostUpdateNotifyOuterClass {
         return itemId_;
       }
       /**
-       * <code>uint32 item_id = 1;</code>
+       * <code>uint32 item_id = 15;</code>
        * @param value The itemId to set.
        * @return This builder for chaining.
        */
@@ -522,7 +530,7 @@ public final class RoguelikeRefreshCardCostUpdateNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 item_id = 1;</code>
+       * <code>uint32 item_id = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearItemId() {
@@ -600,7 +608,7 @@ public final class RoguelikeRefreshCardCostUpdateNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n*RoguelikeRefreshCardCostUpdateNotify.p" +
       "roto\"K\n$RoguelikeRefreshCardCostUpdateNo" +
-      "tify\022\022\n\nitem_count\030\005 \001(\r\022\017\n\007item_id\030\001 \001(" +
+      "tify\022\022\n\nitem_count\030\r \001(\r\022\017\n\007item_id\030\017 \001(" +
       "\rB\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

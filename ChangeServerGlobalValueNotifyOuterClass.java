@@ -19,17 +19,21 @@ public final class ChangeServerGlobalValueNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 entity_id = 4;</code>
+     * <code>uint32 entity_id = 5;</code>
      * @return The entityId.
      */
     int getEntityId();
   }
   /**
    * <pre>
-   * CmdId: 27
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 17;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code ChangeServerGlobalValueNotify}
@@ -76,7 +80,7 @@ public final class ChangeServerGlobalValueNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 32: {
+            case 40: {
 
               entityId_ = input.readUInt32();
               break;
@@ -113,10 +117,10 @@ public final class ChangeServerGlobalValueNotifyOuterClass {
               emu.grasscutter.net.proto.ChangeServerGlobalValueNotifyOuterClass.ChangeServerGlobalValueNotify.class, emu.grasscutter.net.proto.ChangeServerGlobalValueNotifyOuterClass.ChangeServerGlobalValueNotify.Builder.class);
     }
 
-    public static final int ENTITY_ID_FIELD_NUMBER = 4;
+    public static final int ENTITY_ID_FIELD_NUMBER = 5;
     private int entityId_;
     /**
-     * <code>uint32 entity_id = 4;</code>
+     * <code>uint32 entity_id = 5;</code>
      * @return The entityId.
      */
     @java.lang.Override
@@ -139,7 +143,7 @@ public final class ChangeServerGlobalValueNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (entityId_ != 0) {
-        output.writeUInt32(4, entityId_);
+        output.writeUInt32(5, entityId_);
       }
       unknownFields.writeTo(output);
     }
@@ -152,7 +156,7 @@ public final class ChangeServerGlobalValueNotifyOuterClass {
       size = 0;
       if (entityId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, entityId_);
+          .computeUInt32Size(5, entityId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -281,10 +285,14 @@ public final class ChangeServerGlobalValueNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 27
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 17;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code ChangeServerGlobalValueNotify}
@@ -435,7 +443,7 @@ public final class ChangeServerGlobalValueNotifyOuterClass {
 
       private int entityId_ ;
       /**
-       * <code>uint32 entity_id = 4;</code>
+       * <code>uint32 entity_id = 5;</code>
        * @return The entityId.
        */
       @java.lang.Override
@@ -443,7 +451,7 @@ public final class ChangeServerGlobalValueNotifyOuterClass {
         return entityId_;
       }
       /**
-       * <code>uint32 entity_id = 4;</code>
+       * <code>uint32 entity_id = 5;</code>
        * @param value The entityId to set.
        * @return This builder for chaining.
        */
@@ -454,7 +462,7 @@ public final class ChangeServerGlobalValueNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 entity_id = 4;</code>
+       * <code>uint32 entity_id = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearEntityId() {
@@ -532,7 +540,7 @@ public final class ChangeServerGlobalValueNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n#ChangeServerGlobalValueNotify.proto\"2\n" +
       "\035ChangeServerGlobalValueNotify\022\021\n\tentity" +
-      "_id\030\004 \001(\rB\033\n\031emu.grasscutter.net.protob\006" +
+      "_id\030\005 \001(\rB\033\n\031emu.grasscutter.net.protob\006" +
       "proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

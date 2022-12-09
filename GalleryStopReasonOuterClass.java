@@ -63,6 +63,14 @@ public final class GalleryStopReasonOuterClass {
      * <code>GALLERY_STOP_REASON_FUNGUS_ALL_DIE = 10;</code>
      */
     GALLERY_STOP_REASON_FUNGUS_ALL_DIE(10),
+    /**
+     * <code>GALLERY_STOP_REASON_LIFE_COUNT_ZERO = 11;</code>
+     */
+    GALLERY_STOP_REASON_LIFE_COUNT_ZERO(11),
+    /**
+     * <code>GALLERY_STOP_REASON_Unk3300_DFPLGCGIIDM = 12;</code>
+     */
+    GALLERY_STOP_REASON_Unk3300_DFPLGCGIIDM(12),
     UNRECOGNIZED(-1),
     ;
 
@@ -110,6 +118,14 @@ public final class GalleryStopReasonOuterClass {
      * <code>GALLERY_STOP_REASON_FUNGUS_ALL_DIE = 10;</code>
      */
     public static final int GALLERY_STOP_REASON_FUNGUS_ALL_DIE_VALUE = 10;
+    /**
+     * <code>GALLERY_STOP_REASON_LIFE_COUNT_ZERO = 11;</code>
+     */
+    public static final int GALLERY_STOP_REASON_LIFE_COUNT_ZERO_VALUE = 11;
+    /**
+     * <code>GALLERY_STOP_REASON_Unk3300_DFPLGCGIIDM = 12;</code>
+     */
+    public static final int GALLERY_STOP_REASON_Unk3300_DFPLGCGIIDM_VALUE = 12;
 
 
     public final int getNumber() {
@@ -147,6 +163,8 @@ public final class GalleryStopReasonOuterClass {
         case 8: return GALLERY_STOP_REASON_AVATAR_DIE;
         case 9: return GALLERY_STOP_REASON_FINISHED;
         case 10: return GALLERY_STOP_REASON_FUNGUS_ALL_DIE;
+        case 11: return GALLERY_STOP_REASON_LIFE_COUNT_ZERO;
+        case 12: return GALLERY_STOP_REASON_Unk3300_DFPLGCGIIDM;
         default: return null;
       }
     }
@@ -212,7 +230,7 @@ public final class GalleryStopReasonOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\027GalleryStopReason.proto*\305\003\n\021GallerySto" +
+      "\n\027GalleryStopReason.proto*\233\004\n\021GallerySto" +
       "pReason\022\034\n\030GALLERY_STOP_REASON_NONE\020\000\022\036\n" +
       "\032GALLERY_STOP_REASON_TIMEUP\020\001\022(\n$GALLERY" +
       "_STOP_REASON_CLIENT_INTERRUPT\020\002\022-\n)GALLE" +
@@ -224,7 +242,10 @@ public final class GalleryStopReasonOuterClass {
       "YER_ENTER\020\007\022\"\n\036GALLERY_STOP_REASON_AVATA" +
       "R_DIE\020\010\022 \n\034GALLERY_STOP_REASON_FINISHED\020" +
       "\t\022&\n\"GALLERY_STOP_REASON_FUNGUS_ALL_DIE\020" +
-      "\nB\033\n\031emu.grasscutter.net.protob\006proto3"
+      "\n\022\'\n#GALLERY_STOP_REASON_LIFE_COUNT_ZERO" +
+      "\020\013\022+\n\'GALLERY_STOP_REASON_Unk3300_DFPLGC" +
+      "GIIDM\020\014B\033\n\031emu.grasscutter.net.protob\006pr" +
+      "oto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

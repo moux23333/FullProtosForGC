@@ -19,38 +19,38 @@ public final class AbilityMixinWindZoneOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated uint32 entity_ids = 13;</code>
-     * @return A list containing the entityIds.
+     * <code>repeated uint32 Unk3300_OJPFAIGIBLG = 3;</code>
+     * @return A list containing the unk3300OJPFAIGIBLG.
      */
-    java.util.List<java.lang.Integer> getEntityIdsList();
+    java.util.List<java.lang.Integer> getUnk3300OJPFAIGIBLGList();
     /**
-     * <code>repeated uint32 entity_ids = 13;</code>
-     * @return The count of entityIds.
+     * <code>repeated uint32 Unk3300_OJPFAIGIBLG = 3;</code>
+     * @return The count of unk3300OJPFAIGIBLG.
      */
-    int getEntityIdsCount();
+    int getUnk3300OJPFAIGIBLGCount();
     /**
-     * <code>repeated uint32 entity_ids = 13;</code>
+     * <code>repeated uint32 Unk3300_OJPFAIGIBLG = 3;</code>
      * @param index The index of the element to return.
-     * @return The entityIds at the given index.
+     * @return The unk3300OJPFAIGIBLG at the given index.
      */
-    int getEntityIds(int index);
+    int getUnk3300OJPFAIGIBLG(int index);
 
     /**
-     * <code>repeated uint32 zone_id_list = 10;</code>
-     * @return A list containing the zoneIdList.
+     * <code>repeated uint32 Unk3300_DJELBGDEDBH = 12;</code>
+     * @return A list containing the unk3300DJELBGDEDBH.
      */
-    java.util.List<java.lang.Integer> getZoneIdListList();
+    java.util.List<java.lang.Integer> getUnk3300DJELBGDEDBHList();
     /**
-     * <code>repeated uint32 zone_id_list = 10;</code>
-     * @return The count of zoneIdList.
+     * <code>repeated uint32 Unk3300_DJELBGDEDBH = 12;</code>
+     * @return The count of unk3300DJELBGDEDBH.
      */
-    int getZoneIdListCount();
+    int getUnk3300DJELBGDEDBHCount();
     /**
-     * <code>repeated uint32 zone_id_list = 10;</code>
+     * <code>repeated uint32 Unk3300_DJELBGDEDBH = 12;</code>
      * @param index The index of the element to return.
-     * @return The zoneIdList at the given index.
+     * @return The unk3300DJELBGDEDBH at the given index.
      */
-    int getZoneIdList(int index);
+    int getUnk3300DJELBGDEDBH(int index);
   }
   /**
    * Protobuf type {@code AbilityMixinWindZone}
@@ -65,8 +65,8 @@ public final class AbilityMixinWindZoneOuterClass {
       super(builder);
     }
     private AbilityMixinWindZone() {
-      entityIds_ = emptyIntList();
-      zoneIdList_ = emptyIntList();
+      unk3300OJPFAIGIBLG_ = emptyIntList();
+      unk3300DJELBGDEDBH_ = emptyIntList();
     }
 
     @java.lang.Override
@@ -100,44 +100,44 @@ public final class AbilityMixinWindZoneOuterClass {
             case 0:
               done = true;
               break;
-            case 80: {
-              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
-                zoneIdList_ = newIntList();
-                mutable_bitField0_ |= 0x00000002;
+            case 24: {
+              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+                unk3300OJPFAIGIBLG_ = newIntList();
+                mutable_bitField0_ |= 0x00000001;
               }
-              zoneIdList_.addInt(input.readUInt32());
+              unk3300OJPFAIGIBLG_.addInt(input.readUInt32());
               break;
             }
-            case 82: {
+            case 26: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000002) != 0) && input.getBytesUntilLimit() > 0) {
-                zoneIdList_ = newIntList();
-                mutable_bitField0_ |= 0x00000002;
+              if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
+                unk3300OJPFAIGIBLG_ = newIntList();
+                mutable_bitField0_ |= 0x00000001;
               }
               while (input.getBytesUntilLimit() > 0) {
-                zoneIdList_.addInt(input.readUInt32());
+                unk3300OJPFAIGIBLG_.addInt(input.readUInt32());
               }
               input.popLimit(limit);
               break;
             }
-            case 104: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                entityIds_ = newIntList();
-                mutable_bitField0_ |= 0x00000001;
+            case 96: {
+              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
+                unk3300DJELBGDEDBH_ = newIntList();
+                mutable_bitField0_ |= 0x00000002;
               }
-              entityIds_.addInt(input.readUInt32());
+              unk3300DJELBGDEDBH_.addInt(input.readUInt32());
               break;
             }
-            case 106: {
+            case 98: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
-                entityIds_ = newIntList();
-                mutable_bitField0_ |= 0x00000001;
+              if (!((mutable_bitField0_ & 0x00000002) != 0) && input.getBytesUntilLimit() > 0) {
+                unk3300DJELBGDEDBH_ = newIntList();
+                mutable_bitField0_ |= 0x00000002;
               }
               while (input.getBytesUntilLimit() > 0) {
-                entityIds_.addInt(input.readUInt32());
+                unk3300DJELBGDEDBH_.addInt(input.readUInt32());
               }
               input.popLimit(limit);
               break;
@@ -157,11 +157,11 @@ public final class AbilityMixinWindZoneOuterClass {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
       } finally {
-        if (((mutable_bitField0_ & 0x00000002) != 0)) {
-          zoneIdList_.makeImmutable(); // C
-        }
         if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          entityIds_.makeImmutable(); // C
+          unk3300OJPFAIGIBLG_.makeImmutable(); // C
+        }
+        if (((mutable_bitField0_ & 0x00000002) != 0)) {
+          unk3300DJELBGDEDBH_.makeImmutable(); // C
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -180,61 +180,61 @@ public final class AbilityMixinWindZoneOuterClass {
               emu.grasscutter.net.proto.AbilityMixinWindZoneOuterClass.AbilityMixinWindZone.class, emu.grasscutter.net.proto.AbilityMixinWindZoneOuterClass.AbilityMixinWindZone.Builder.class);
     }
 
-    public static final int ENTITY_IDS_FIELD_NUMBER = 13;
-    private com.google.protobuf.Internal.IntList entityIds_;
+    public static final int UNK3300_OJPFAIGIBLG_FIELD_NUMBER = 3;
+    private com.google.protobuf.Internal.IntList unk3300OJPFAIGIBLG_;
     /**
-     * <code>repeated uint32 entity_ids = 13;</code>
-     * @return A list containing the entityIds.
+     * <code>repeated uint32 Unk3300_OJPFAIGIBLG = 3;</code>
+     * @return A list containing the unk3300OJPFAIGIBLG.
      */
     @java.lang.Override
     public java.util.List<java.lang.Integer>
-        getEntityIdsList() {
-      return entityIds_;
+        getUnk3300OJPFAIGIBLGList() {
+      return unk3300OJPFAIGIBLG_;
     }
     /**
-     * <code>repeated uint32 entity_ids = 13;</code>
-     * @return The count of entityIds.
+     * <code>repeated uint32 Unk3300_OJPFAIGIBLG = 3;</code>
+     * @return The count of unk3300OJPFAIGIBLG.
      */
-    public int getEntityIdsCount() {
-      return entityIds_.size();
+    public int getUnk3300OJPFAIGIBLGCount() {
+      return unk3300OJPFAIGIBLG_.size();
     }
     /**
-     * <code>repeated uint32 entity_ids = 13;</code>
+     * <code>repeated uint32 Unk3300_OJPFAIGIBLG = 3;</code>
      * @param index The index of the element to return.
-     * @return The entityIds at the given index.
+     * @return The unk3300OJPFAIGIBLG at the given index.
      */
-    public int getEntityIds(int index) {
-      return entityIds_.getInt(index);
+    public int getUnk3300OJPFAIGIBLG(int index) {
+      return unk3300OJPFAIGIBLG_.getInt(index);
     }
-    private int entityIdsMemoizedSerializedSize = -1;
+    private int unk3300OJPFAIGIBLGMemoizedSerializedSize = -1;
 
-    public static final int ZONE_ID_LIST_FIELD_NUMBER = 10;
-    private com.google.protobuf.Internal.IntList zoneIdList_;
+    public static final int UNK3300_DJELBGDEDBH_FIELD_NUMBER = 12;
+    private com.google.protobuf.Internal.IntList unk3300DJELBGDEDBH_;
     /**
-     * <code>repeated uint32 zone_id_list = 10;</code>
-     * @return A list containing the zoneIdList.
+     * <code>repeated uint32 Unk3300_DJELBGDEDBH = 12;</code>
+     * @return A list containing the unk3300DJELBGDEDBH.
      */
     @java.lang.Override
     public java.util.List<java.lang.Integer>
-        getZoneIdListList() {
-      return zoneIdList_;
+        getUnk3300DJELBGDEDBHList() {
+      return unk3300DJELBGDEDBH_;
     }
     /**
-     * <code>repeated uint32 zone_id_list = 10;</code>
-     * @return The count of zoneIdList.
+     * <code>repeated uint32 Unk3300_DJELBGDEDBH = 12;</code>
+     * @return The count of unk3300DJELBGDEDBH.
      */
-    public int getZoneIdListCount() {
-      return zoneIdList_.size();
+    public int getUnk3300DJELBGDEDBHCount() {
+      return unk3300DJELBGDEDBH_.size();
     }
     /**
-     * <code>repeated uint32 zone_id_list = 10;</code>
+     * <code>repeated uint32 Unk3300_DJELBGDEDBH = 12;</code>
      * @param index The index of the element to return.
-     * @return The zoneIdList at the given index.
+     * @return The unk3300DJELBGDEDBH at the given index.
      */
-    public int getZoneIdList(int index) {
-      return zoneIdList_.getInt(index);
+    public int getUnk3300DJELBGDEDBH(int index) {
+      return unk3300DJELBGDEDBH_.getInt(index);
     }
-    private int zoneIdListMemoizedSerializedSize = -1;
+    private int unk3300DJELBGDEDBHMemoizedSerializedSize = -1;
 
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
@@ -251,19 +251,19 @@ public final class AbilityMixinWindZoneOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      if (getZoneIdListList().size() > 0) {
-        output.writeUInt32NoTag(82);
-        output.writeUInt32NoTag(zoneIdListMemoizedSerializedSize);
+      if (getUnk3300OJPFAIGIBLGList().size() > 0) {
+        output.writeUInt32NoTag(26);
+        output.writeUInt32NoTag(unk3300OJPFAIGIBLGMemoizedSerializedSize);
       }
-      for (int i = 0; i < zoneIdList_.size(); i++) {
-        output.writeUInt32NoTag(zoneIdList_.getInt(i));
+      for (int i = 0; i < unk3300OJPFAIGIBLG_.size(); i++) {
+        output.writeUInt32NoTag(unk3300OJPFAIGIBLG_.getInt(i));
       }
-      if (getEntityIdsList().size() > 0) {
-        output.writeUInt32NoTag(106);
-        output.writeUInt32NoTag(entityIdsMemoizedSerializedSize);
+      if (getUnk3300DJELBGDEDBHList().size() > 0) {
+        output.writeUInt32NoTag(98);
+        output.writeUInt32NoTag(unk3300DJELBGDEDBHMemoizedSerializedSize);
       }
-      for (int i = 0; i < entityIds_.size(); i++) {
-        output.writeUInt32NoTag(entityIds_.getInt(i));
+      for (int i = 0; i < unk3300DJELBGDEDBH_.size(); i++) {
+        output.writeUInt32NoTag(unk3300DJELBGDEDBH_.getInt(i));
       }
       unknownFields.writeTo(output);
     }
@@ -276,31 +276,31 @@ public final class AbilityMixinWindZoneOuterClass {
       size = 0;
       {
         int dataSize = 0;
-        for (int i = 0; i < zoneIdList_.size(); i++) {
+        for (int i = 0; i < unk3300OJPFAIGIBLG_.size(); i++) {
           dataSize += com.google.protobuf.CodedOutputStream
-            .computeUInt32SizeNoTag(zoneIdList_.getInt(i));
+            .computeUInt32SizeNoTag(unk3300OJPFAIGIBLG_.getInt(i));
         }
         size += dataSize;
-        if (!getZoneIdListList().isEmpty()) {
+        if (!getUnk3300OJPFAIGIBLGList().isEmpty()) {
           size += 1;
           size += com.google.protobuf.CodedOutputStream
               .computeInt32SizeNoTag(dataSize);
         }
-        zoneIdListMemoizedSerializedSize = dataSize;
+        unk3300OJPFAIGIBLGMemoizedSerializedSize = dataSize;
       }
       {
         int dataSize = 0;
-        for (int i = 0; i < entityIds_.size(); i++) {
+        for (int i = 0; i < unk3300DJELBGDEDBH_.size(); i++) {
           dataSize += com.google.protobuf.CodedOutputStream
-            .computeUInt32SizeNoTag(entityIds_.getInt(i));
+            .computeUInt32SizeNoTag(unk3300DJELBGDEDBH_.getInt(i));
         }
         size += dataSize;
-        if (!getEntityIdsList().isEmpty()) {
+        if (!getUnk3300DJELBGDEDBHList().isEmpty()) {
           size += 1;
           size += com.google.protobuf.CodedOutputStream
               .computeInt32SizeNoTag(dataSize);
         }
-        entityIdsMemoizedSerializedSize = dataSize;
+        unk3300DJELBGDEDBHMemoizedSerializedSize = dataSize;
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -317,10 +317,10 @@ public final class AbilityMixinWindZoneOuterClass {
       }
       emu.grasscutter.net.proto.AbilityMixinWindZoneOuterClass.AbilityMixinWindZone other = (emu.grasscutter.net.proto.AbilityMixinWindZoneOuterClass.AbilityMixinWindZone) obj;
 
-      if (!getEntityIdsList()
-          .equals(other.getEntityIdsList())) return false;
-      if (!getZoneIdListList()
-          .equals(other.getZoneIdListList())) return false;
+      if (!getUnk3300OJPFAIGIBLGList()
+          .equals(other.getUnk3300OJPFAIGIBLGList())) return false;
+      if (!getUnk3300DJELBGDEDBHList()
+          .equals(other.getUnk3300DJELBGDEDBHList())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -332,13 +332,13 @@ public final class AbilityMixinWindZoneOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (getEntityIdsCount() > 0) {
-        hash = (37 * hash) + ENTITY_IDS_FIELD_NUMBER;
-        hash = (53 * hash) + getEntityIdsList().hashCode();
+      if (getUnk3300OJPFAIGIBLGCount() > 0) {
+        hash = (37 * hash) + UNK3300_OJPFAIGIBLG_FIELD_NUMBER;
+        hash = (53 * hash) + getUnk3300OJPFAIGIBLGList().hashCode();
       }
-      if (getZoneIdListCount() > 0) {
-        hash = (37 * hash) + ZONE_ID_LIST_FIELD_NUMBER;
-        hash = (53 * hash) + getZoneIdListList().hashCode();
+      if (getUnk3300DJELBGDEDBHCount() > 0) {
+        hash = (37 * hash) + UNK3300_DJELBGDEDBH_FIELD_NUMBER;
+        hash = (53 * hash) + getUnk3300DJELBGDEDBHList().hashCode();
       }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
@@ -473,9 +473,9 @@ public final class AbilityMixinWindZoneOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        entityIds_ = emptyIntList();
+        unk3300OJPFAIGIBLG_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
-        zoneIdList_ = emptyIntList();
+        unk3300DJELBGDEDBH_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000002);
         return this;
       }
@@ -505,15 +505,15 @@ public final class AbilityMixinWindZoneOuterClass {
         emu.grasscutter.net.proto.AbilityMixinWindZoneOuterClass.AbilityMixinWindZone result = new emu.grasscutter.net.proto.AbilityMixinWindZoneOuterClass.AbilityMixinWindZone(this);
         int from_bitField0_ = bitField0_;
         if (((bitField0_ & 0x00000001) != 0)) {
-          entityIds_.makeImmutable();
+          unk3300OJPFAIGIBLG_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000001);
         }
-        result.entityIds_ = entityIds_;
+        result.unk3300OJPFAIGIBLG_ = unk3300OJPFAIGIBLG_;
         if (((bitField0_ & 0x00000002) != 0)) {
-          zoneIdList_.makeImmutable();
+          unk3300DJELBGDEDBH_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000002);
         }
-        result.zoneIdList_ = zoneIdList_;
+        result.unk3300DJELBGDEDBH_ = unk3300DJELBGDEDBH_;
         onBuilt();
         return result;
       }
@@ -562,23 +562,23 @@ public final class AbilityMixinWindZoneOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.AbilityMixinWindZoneOuterClass.AbilityMixinWindZone other) {
         if (other == emu.grasscutter.net.proto.AbilityMixinWindZoneOuterClass.AbilityMixinWindZone.getDefaultInstance()) return this;
-        if (!other.entityIds_.isEmpty()) {
-          if (entityIds_.isEmpty()) {
-            entityIds_ = other.entityIds_;
+        if (!other.unk3300OJPFAIGIBLG_.isEmpty()) {
+          if (unk3300OJPFAIGIBLG_.isEmpty()) {
+            unk3300OJPFAIGIBLG_ = other.unk3300OJPFAIGIBLG_;
             bitField0_ = (bitField0_ & ~0x00000001);
           } else {
-            ensureEntityIdsIsMutable();
-            entityIds_.addAll(other.entityIds_);
+            ensureUnk3300OJPFAIGIBLGIsMutable();
+            unk3300OJPFAIGIBLG_.addAll(other.unk3300OJPFAIGIBLG_);
           }
           onChanged();
         }
-        if (!other.zoneIdList_.isEmpty()) {
-          if (zoneIdList_.isEmpty()) {
-            zoneIdList_ = other.zoneIdList_;
+        if (!other.unk3300DJELBGDEDBH_.isEmpty()) {
+          if (unk3300DJELBGDEDBH_.isEmpty()) {
+            unk3300DJELBGDEDBH_ = other.unk3300DJELBGDEDBH_;
             bitField0_ = (bitField0_ & ~0x00000002);
           } else {
-            ensureZoneIdListIsMutable();
-            zoneIdList_.addAll(other.zoneIdList_);
+            ensureUnk3300DJELBGDEDBHIsMutable();
+            unk3300DJELBGDEDBH_.addAll(other.unk3300DJELBGDEDBH_);
           }
           onChanged();
         }
@@ -612,159 +612,159 @@ public final class AbilityMixinWindZoneOuterClass {
       }
       private int bitField0_;
 
-      private com.google.protobuf.Internal.IntList entityIds_ = emptyIntList();
-      private void ensureEntityIdsIsMutable() {
+      private com.google.protobuf.Internal.IntList unk3300OJPFAIGIBLG_ = emptyIntList();
+      private void ensureUnk3300OJPFAIGIBLGIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          entityIds_ = mutableCopy(entityIds_);
+          unk3300OJPFAIGIBLG_ = mutableCopy(unk3300OJPFAIGIBLG_);
           bitField0_ |= 0x00000001;
          }
       }
       /**
-       * <code>repeated uint32 entity_ids = 13;</code>
-       * @return A list containing the entityIds.
+       * <code>repeated uint32 Unk3300_OJPFAIGIBLG = 3;</code>
+       * @return A list containing the unk3300OJPFAIGIBLG.
        */
       public java.util.List<java.lang.Integer>
-          getEntityIdsList() {
+          getUnk3300OJPFAIGIBLGList() {
         return ((bitField0_ & 0x00000001) != 0) ?
-                 java.util.Collections.unmodifiableList(entityIds_) : entityIds_;
+                 java.util.Collections.unmodifiableList(unk3300OJPFAIGIBLG_) : unk3300OJPFAIGIBLG_;
       }
       /**
-       * <code>repeated uint32 entity_ids = 13;</code>
-       * @return The count of entityIds.
+       * <code>repeated uint32 Unk3300_OJPFAIGIBLG = 3;</code>
+       * @return The count of unk3300OJPFAIGIBLG.
        */
-      public int getEntityIdsCount() {
-        return entityIds_.size();
+      public int getUnk3300OJPFAIGIBLGCount() {
+        return unk3300OJPFAIGIBLG_.size();
       }
       /**
-       * <code>repeated uint32 entity_ids = 13;</code>
+       * <code>repeated uint32 Unk3300_OJPFAIGIBLG = 3;</code>
        * @param index The index of the element to return.
-       * @return The entityIds at the given index.
+       * @return The unk3300OJPFAIGIBLG at the given index.
        */
-      public int getEntityIds(int index) {
-        return entityIds_.getInt(index);
+      public int getUnk3300OJPFAIGIBLG(int index) {
+        return unk3300OJPFAIGIBLG_.getInt(index);
       }
       /**
-       * <code>repeated uint32 entity_ids = 13;</code>
+       * <code>repeated uint32 Unk3300_OJPFAIGIBLG = 3;</code>
        * @param index The index to set the value at.
-       * @param value The entityIds to set.
+       * @param value The unk3300OJPFAIGIBLG to set.
        * @return This builder for chaining.
        */
-      public Builder setEntityIds(
+      public Builder setUnk3300OJPFAIGIBLG(
           int index, int value) {
-        ensureEntityIdsIsMutable();
-        entityIds_.setInt(index, value);
+        ensureUnk3300OJPFAIGIBLGIsMutable();
+        unk3300OJPFAIGIBLG_.setInt(index, value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 entity_ids = 13;</code>
-       * @param value The entityIds to add.
+       * <code>repeated uint32 Unk3300_OJPFAIGIBLG = 3;</code>
+       * @param value The unk3300OJPFAIGIBLG to add.
        * @return This builder for chaining.
        */
-      public Builder addEntityIds(int value) {
-        ensureEntityIdsIsMutable();
-        entityIds_.addInt(value);
+      public Builder addUnk3300OJPFAIGIBLG(int value) {
+        ensureUnk3300OJPFAIGIBLGIsMutable();
+        unk3300OJPFAIGIBLG_.addInt(value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 entity_ids = 13;</code>
-       * @param values The entityIds to add.
+       * <code>repeated uint32 Unk3300_OJPFAIGIBLG = 3;</code>
+       * @param values The unk3300OJPFAIGIBLG to add.
        * @return This builder for chaining.
        */
-      public Builder addAllEntityIds(
+      public Builder addAllUnk3300OJPFAIGIBLG(
           java.lang.Iterable<? extends java.lang.Integer> values) {
-        ensureEntityIdsIsMutable();
+        ensureUnk3300OJPFAIGIBLGIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, entityIds_);
+            values, unk3300OJPFAIGIBLG_);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 entity_ids = 13;</code>
+       * <code>repeated uint32 Unk3300_OJPFAIGIBLG = 3;</code>
        * @return This builder for chaining.
        */
-      public Builder clearEntityIds() {
-        entityIds_ = emptyIntList();
+      public Builder clearUnk3300OJPFAIGIBLG() {
+        unk3300OJPFAIGIBLG_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
         onChanged();
         return this;
       }
 
-      private com.google.protobuf.Internal.IntList zoneIdList_ = emptyIntList();
-      private void ensureZoneIdListIsMutable() {
+      private com.google.protobuf.Internal.IntList unk3300DJELBGDEDBH_ = emptyIntList();
+      private void ensureUnk3300DJELBGDEDBHIsMutable() {
         if (!((bitField0_ & 0x00000002) != 0)) {
-          zoneIdList_ = mutableCopy(zoneIdList_);
+          unk3300DJELBGDEDBH_ = mutableCopy(unk3300DJELBGDEDBH_);
           bitField0_ |= 0x00000002;
          }
       }
       /**
-       * <code>repeated uint32 zone_id_list = 10;</code>
-       * @return A list containing the zoneIdList.
+       * <code>repeated uint32 Unk3300_DJELBGDEDBH = 12;</code>
+       * @return A list containing the unk3300DJELBGDEDBH.
        */
       public java.util.List<java.lang.Integer>
-          getZoneIdListList() {
+          getUnk3300DJELBGDEDBHList() {
         return ((bitField0_ & 0x00000002) != 0) ?
-                 java.util.Collections.unmodifiableList(zoneIdList_) : zoneIdList_;
+                 java.util.Collections.unmodifiableList(unk3300DJELBGDEDBH_) : unk3300DJELBGDEDBH_;
       }
       /**
-       * <code>repeated uint32 zone_id_list = 10;</code>
-       * @return The count of zoneIdList.
+       * <code>repeated uint32 Unk3300_DJELBGDEDBH = 12;</code>
+       * @return The count of unk3300DJELBGDEDBH.
        */
-      public int getZoneIdListCount() {
-        return zoneIdList_.size();
+      public int getUnk3300DJELBGDEDBHCount() {
+        return unk3300DJELBGDEDBH_.size();
       }
       /**
-       * <code>repeated uint32 zone_id_list = 10;</code>
+       * <code>repeated uint32 Unk3300_DJELBGDEDBH = 12;</code>
        * @param index The index of the element to return.
-       * @return The zoneIdList at the given index.
+       * @return The unk3300DJELBGDEDBH at the given index.
        */
-      public int getZoneIdList(int index) {
-        return zoneIdList_.getInt(index);
+      public int getUnk3300DJELBGDEDBH(int index) {
+        return unk3300DJELBGDEDBH_.getInt(index);
       }
       /**
-       * <code>repeated uint32 zone_id_list = 10;</code>
+       * <code>repeated uint32 Unk3300_DJELBGDEDBH = 12;</code>
        * @param index The index to set the value at.
-       * @param value The zoneIdList to set.
+       * @param value The unk3300DJELBGDEDBH to set.
        * @return This builder for chaining.
        */
-      public Builder setZoneIdList(
+      public Builder setUnk3300DJELBGDEDBH(
           int index, int value) {
-        ensureZoneIdListIsMutable();
-        zoneIdList_.setInt(index, value);
+        ensureUnk3300DJELBGDEDBHIsMutable();
+        unk3300DJELBGDEDBH_.setInt(index, value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 zone_id_list = 10;</code>
-       * @param value The zoneIdList to add.
+       * <code>repeated uint32 Unk3300_DJELBGDEDBH = 12;</code>
+       * @param value The unk3300DJELBGDEDBH to add.
        * @return This builder for chaining.
        */
-      public Builder addZoneIdList(int value) {
-        ensureZoneIdListIsMutable();
-        zoneIdList_.addInt(value);
+      public Builder addUnk3300DJELBGDEDBH(int value) {
+        ensureUnk3300DJELBGDEDBHIsMutable();
+        unk3300DJELBGDEDBH_.addInt(value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 zone_id_list = 10;</code>
-       * @param values The zoneIdList to add.
+       * <code>repeated uint32 Unk3300_DJELBGDEDBH = 12;</code>
+       * @param values The unk3300DJELBGDEDBH to add.
        * @return This builder for chaining.
        */
-      public Builder addAllZoneIdList(
+      public Builder addAllUnk3300DJELBGDEDBH(
           java.lang.Iterable<? extends java.lang.Integer> values) {
-        ensureZoneIdListIsMutable();
+        ensureUnk3300DJELBGDEDBHIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, zoneIdList_);
+            values, unk3300DJELBGDEDBH_);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 zone_id_list = 10;</code>
+       * <code>repeated uint32 Unk3300_DJELBGDEDBH = 12;</code>
        * @return This builder for chaining.
        */
-      public Builder clearZoneIdList() {
-        zoneIdList_ = emptyIntList();
+      public Builder clearUnk3300DJELBGDEDBH() {
+        unk3300DJELBGDEDBH_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000002);
         onChanged();
         return this;
@@ -836,10 +836,10 @@ public final class AbilityMixinWindZoneOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\032AbilityMixinWindZone.proto\"@\n\024AbilityM" +
-      "ixinWindZone\022\022\n\nentity_ids\030\r \003(\r\022\024\n\014zone" +
-      "_id_list\030\n \003(\rB\033\n\031emu.grasscutter.net.pr" +
-      "otob\006proto3"
+      "\n\032AbilityMixinWindZone.proto\"P\n\024AbilityM" +
+      "ixinWindZone\022\033\n\023Unk3300_OJPFAIGIBLG\030\003 \003(" +
+      "\r\022\033\n\023Unk3300_DJELBGDEDBH\030\014 \003(\rB\033\n\031emu.gr" +
+      "asscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -850,7 +850,7 @@ public final class AbilityMixinWindZoneOuterClass {
     internal_static_AbilityMixinWindZone_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_AbilityMixinWindZone_descriptor,
-        new java.lang.String[] { "EntityIds", "ZoneIdList", });
+        new java.lang.String[] { "Unk3300OJPFAIGIBLG", "Unk3300DJELBGDEDBH", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

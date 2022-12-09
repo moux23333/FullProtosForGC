@@ -19,17 +19,17 @@ public final class LunaRiteHintPointRemoveNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated uint32 hint_point_index = 14;</code>
+     * <code>repeated uint32 hint_point_index = 12;</code>
      * @return A list containing the hintPointIndex.
      */
     java.util.List<java.lang.Integer> getHintPointIndexList();
     /**
-     * <code>repeated uint32 hint_point_index = 14;</code>
+     * <code>repeated uint32 hint_point_index = 12;</code>
      * @return The count of hintPointIndex.
      */
     int getHintPointIndexCount();
     /**
-     * <code>repeated uint32 hint_point_index = 14;</code>
+     * <code>repeated uint32 hint_point_index = 12;</code>
      * @param index The index of the element to return.
      * @return The hintPointIndex at the given index.
      */
@@ -37,10 +37,14 @@ public final class LunaRiteHintPointRemoveNotifyOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 8787
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 8763;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code LunaRiteHintPointRemoveNotify}
@@ -89,7 +93,7 @@ public final class LunaRiteHintPointRemoveNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 112: {
+            case 96: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 hintPointIndex_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
@@ -97,7 +101,7 @@ public final class LunaRiteHintPointRemoveNotifyOuterClass {
               hintPointIndex_.addInt(input.readUInt32());
               break;
             }
-            case 114: {
+            case 98: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -145,10 +149,10 @@ public final class LunaRiteHintPointRemoveNotifyOuterClass {
               emu.grasscutter.net.proto.LunaRiteHintPointRemoveNotifyOuterClass.LunaRiteHintPointRemoveNotify.class, emu.grasscutter.net.proto.LunaRiteHintPointRemoveNotifyOuterClass.LunaRiteHintPointRemoveNotify.Builder.class);
     }
 
-    public static final int HINT_POINT_INDEX_FIELD_NUMBER = 14;
+    public static final int HINT_POINT_INDEX_FIELD_NUMBER = 12;
     private com.google.protobuf.Internal.IntList hintPointIndex_;
     /**
-     * <code>repeated uint32 hint_point_index = 14;</code>
+     * <code>repeated uint32 hint_point_index = 12;</code>
      * @return A list containing the hintPointIndex.
      */
     @java.lang.Override
@@ -157,14 +161,14 @@ public final class LunaRiteHintPointRemoveNotifyOuterClass {
       return hintPointIndex_;
     }
     /**
-     * <code>repeated uint32 hint_point_index = 14;</code>
+     * <code>repeated uint32 hint_point_index = 12;</code>
      * @return The count of hintPointIndex.
      */
     public int getHintPointIndexCount() {
       return hintPointIndex_.size();
     }
     /**
-     * <code>repeated uint32 hint_point_index = 14;</code>
+     * <code>repeated uint32 hint_point_index = 12;</code>
      * @param index The index of the element to return.
      * @return The hintPointIndex at the given index.
      */
@@ -189,7 +193,7 @@ public final class LunaRiteHintPointRemoveNotifyOuterClass {
                         throws java.io.IOException {
       getSerializedSize();
       if (getHintPointIndexList().size() > 0) {
-        output.writeUInt32NoTag(114);
+        output.writeUInt32NoTag(98);
         output.writeUInt32NoTag(hintPointIndexMemoizedSerializedSize);
       }
       for (int i = 0; i < hintPointIndex_.size(); i++) {
@@ -347,10 +351,14 @@ public final class LunaRiteHintPointRemoveNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 8787
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 8763;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code LunaRiteHintPointRemoveNotify}
@@ -520,7 +528,7 @@ public final class LunaRiteHintPointRemoveNotifyOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 hint_point_index = 14;</code>
+       * <code>repeated uint32 hint_point_index = 12;</code>
        * @return A list containing the hintPointIndex.
        */
       public java.util.List<java.lang.Integer>
@@ -529,14 +537,14 @@ public final class LunaRiteHintPointRemoveNotifyOuterClass {
                  java.util.Collections.unmodifiableList(hintPointIndex_) : hintPointIndex_;
       }
       /**
-       * <code>repeated uint32 hint_point_index = 14;</code>
+       * <code>repeated uint32 hint_point_index = 12;</code>
        * @return The count of hintPointIndex.
        */
       public int getHintPointIndexCount() {
         return hintPointIndex_.size();
       }
       /**
-       * <code>repeated uint32 hint_point_index = 14;</code>
+       * <code>repeated uint32 hint_point_index = 12;</code>
        * @param index The index of the element to return.
        * @return The hintPointIndex at the given index.
        */
@@ -544,7 +552,7 @@ public final class LunaRiteHintPointRemoveNotifyOuterClass {
         return hintPointIndex_.getInt(index);
       }
       /**
-       * <code>repeated uint32 hint_point_index = 14;</code>
+       * <code>repeated uint32 hint_point_index = 12;</code>
        * @param index The index to set the value at.
        * @param value The hintPointIndex to set.
        * @return This builder for chaining.
@@ -557,7 +565,7 @@ public final class LunaRiteHintPointRemoveNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 hint_point_index = 14;</code>
+       * <code>repeated uint32 hint_point_index = 12;</code>
        * @param value The hintPointIndex to add.
        * @return This builder for chaining.
        */
@@ -568,7 +576,7 @@ public final class LunaRiteHintPointRemoveNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 hint_point_index = 14;</code>
+       * <code>repeated uint32 hint_point_index = 12;</code>
        * @param values The hintPointIndex to add.
        * @return This builder for chaining.
        */
@@ -581,7 +589,7 @@ public final class LunaRiteHintPointRemoveNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 hint_point_index = 14;</code>
+       * <code>repeated uint32 hint_point_index = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearHintPointIndex() {
@@ -659,7 +667,7 @@ public final class LunaRiteHintPointRemoveNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n#LunaRiteHintPointRemoveNotify.proto\"9\n" +
       "\035LunaRiteHintPointRemoveNotify\022\030\n\020hint_p" +
-      "oint_index\030\016 \003(\rB\033\n\031emu.grasscutter.net." +
+      "oint_index\030\014 \003(\rB\033\n\031emu.grasscutter.net." +
       "protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

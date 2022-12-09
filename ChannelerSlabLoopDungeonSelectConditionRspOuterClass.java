@@ -19,45 +19,49 @@ public final class ChannelerSlabLoopDungeonSelectConditionRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 9;</code>
-     * @return The retcode.
-     */
-    int getRetcode();
-
-    /**
-     * <code>uint32 dungeon_index = 5;</code>
+     * <code>uint32 dungeon_index = 1;</code>
      * @return The dungeonIndex.
      */
     int getDungeonIndex();
 
     /**
-     * <code>repeated uint32 condition_id_list = 13;</code>
+     * <code>repeated uint32 condition_id_list = 10;</code>
      * @return A list containing the conditionIdList.
      */
     java.util.List<java.lang.Integer> getConditionIdListList();
     /**
-     * <code>repeated uint32 condition_id_list = 13;</code>
+     * <code>repeated uint32 condition_id_list = 10;</code>
      * @return The count of conditionIdList.
      */
     int getConditionIdListCount();
     /**
-     * <code>repeated uint32 condition_id_list = 13;</code>
+     * <code>repeated uint32 condition_id_list = 10;</code>
      * @param index The index of the element to return.
      * @return The conditionIdList at the given index.
      */
     int getConditionIdList(int index);
 
     /**
-     * <code>uint32 difficulty_id = 14;</code>
+     * <code>uint32 difficulty_id = 5;</code>
      * @return The difficultyId.
      */
     int getDifficultyId();
+
+    /**
+     * <code>int32 retcode = 7;</code>
+     * @return The retcode.
+     */
+    int getRetcode();
   }
   /**
    * <pre>
-   * CmdId: 8509
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 8858;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code ChannelerSlabLoopDungeonSelectConditionRsp}
@@ -106,17 +110,22 @@ public final class ChannelerSlabLoopDungeonSelectConditionRspOuterClass {
             case 0:
               done = true;
               break;
-            case 40: {
+            case 8: {
 
               dungeonIndex_ = input.readUInt32();
               break;
             }
-            case 72: {
+            case 40: {
+
+              difficultyId_ = input.readUInt32();
+              break;
+            }
+            case 56: {
 
               retcode_ = input.readInt32();
               break;
             }
-            case 104: {
+            case 80: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 conditionIdList_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
@@ -124,7 +133,7 @@ public final class ChannelerSlabLoopDungeonSelectConditionRspOuterClass {
               conditionIdList_.addInt(input.readUInt32());
               break;
             }
-            case 106: {
+            case 82: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -135,11 +144,6 @@ public final class ChannelerSlabLoopDungeonSelectConditionRspOuterClass {
                 conditionIdList_.addInt(input.readUInt32());
               }
               input.popLimit(limit);
-              break;
-            }
-            case 112: {
-
-              difficultyId_ = input.readUInt32();
               break;
             }
             default: {
@@ -177,21 +181,10 @@ public final class ChannelerSlabLoopDungeonSelectConditionRspOuterClass {
               emu.grasscutter.net.proto.ChannelerSlabLoopDungeonSelectConditionRspOuterClass.ChannelerSlabLoopDungeonSelectConditionRsp.class, emu.grasscutter.net.proto.ChannelerSlabLoopDungeonSelectConditionRspOuterClass.ChannelerSlabLoopDungeonSelectConditionRsp.Builder.class);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 9;
-    private int retcode_;
-    /**
-     * <code>int32 retcode = 9;</code>
-     * @return The retcode.
-     */
-    @java.lang.Override
-    public int getRetcode() {
-      return retcode_;
-    }
-
-    public static final int DUNGEON_INDEX_FIELD_NUMBER = 5;
+    public static final int DUNGEON_INDEX_FIELD_NUMBER = 1;
     private int dungeonIndex_;
     /**
-     * <code>uint32 dungeon_index = 5;</code>
+     * <code>uint32 dungeon_index = 1;</code>
      * @return The dungeonIndex.
      */
     @java.lang.Override
@@ -199,10 +192,10 @@ public final class ChannelerSlabLoopDungeonSelectConditionRspOuterClass {
       return dungeonIndex_;
     }
 
-    public static final int CONDITION_ID_LIST_FIELD_NUMBER = 13;
+    public static final int CONDITION_ID_LIST_FIELD_NUMBER = 10;
     private com.google.protobuf.Internal.IntList conditionIdList_;
     /**
-     * <code>repeated uint32 condition_id_list = 13;</code>
+     * <code>repeated uint32 condition_id_list = 10;</code>
      * @return A list containing the conditionIdList.
      */
     @java.lang.Override
@@ -211,14 +204,14 @@ public final class ChannelerSlabLoopDungeonSelectConditionRspOuterClass {
       return conditionIdList_;
     }
     /**
-     * <code>repeated uint32 condition_id_list = 13;</code>
+     * <code>repeated uint32 condition_id_list = 10;</code>
      * @return The count of conditionIdList.
      */
     public int getConditionIdListCount() {
       return conditionIdList_.size();
     }
     /**
-     * <code>repeated uint32 condition_id_list = 13;</code>
+     * <code>repeated uint32 condition_id_list = 10;</code>
      * @param index The index of the element to return.
      * @return The conditionIdList at the given index.
      */
@@ -227,15 +220,26 @@ public final class ChannelerSlabLoopDungeonSelectConditionRspOuterClass {
     }
     private int conditionIdListMemoizedSerializedSize = -1;
 
-    public static final int DIFFICULTY_ID_FIELD_NUMBER = 14;
+    public static final int DIFFICULTY_ID_FIELD_NUMBER = 5;
     private int difficultyId_;
     /**
-     * <code>uint32 difficulty_id = 14;</code>
+     * <code>uint32 difficulty_id = 5;</code>
      * @return The difficultyId.
      */
     @java.lang.Override
     public int getDifficultyId() {
       return difficultyId_;
+    }
+
+    public static final int RETCODE_FIELD_NUMBER = 7;
+    private int retcode_;
+    /**
+     * <code>int32 retcode = 7;</code>
+     * @return The retcode.
+     */
+    @java.lang.Override
+    public int getRetcode() {
+      return retcode_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -254,20 +258,20 @@ public final class ChannelerSlabLoopDungeonSelectConditionRspOuterClass {
                         throws java.io.IOException {
       getSerializedSize();
       if (dungeonIndex_ != 0) {
-        output.writeUInt32(5, dungeonIndex_);
+        output.writeUInt32(1, dungeonIndex_);
+      }
+      if (difficultyId_ != 0) {
+        output.writeUInt32(5, difficultyId_);
       }
       if (retcode_ != 0) {
-        output.writeInt32(9, retcode_);
+        output.writeInt32(7, retcode_);
       }
       if (getConditionIdListList().size() > 0) {
-        output.writeUInt32NoTag(106);
+        output.writeUInt32NoTag(82);
         output.writeUInt32NoTag(conditionIdListMemoizedSerializedSize);
       }
       for (int i = 0; i < conditionIdList_.size(); i++) {
         output.writeUInt32NoTag(conditionIdList_.getInt(i));
-      }
-      if (difficultyId_ != 0) {
-        output.writeUInt32(14, difficultyId_);
       }
       unknownFields.writeTo(output);
     }
@@ -280,11 +284,15 @@ public final class ChannelerSlabLoopDungeonSelectConditionRspOuterClass {
       size = 0;
       if (dungeonIndex_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, dungeonIndex_);
+          .computeUInt32Size(1, dungeonIndex_);
+      }
+      if (difficultyId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(5, difficultyId_);
       }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(9, retcode_);
+          .computeInt32Size(7, retcode_);
       }
       {
         int dataSize = 0;
@@ -299,10 +307,6 @@ public final class ChannelerSlabLoopDungeonSelectConditionRspOuterClass {
               .computeInt32SizeNoTag(dataSize);
         }
         conditionIdListMemoizedSerializedSize = dataSize;
-      }
-      if (difficultyId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, difficultyId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -319,14 +323,14 @@ public final class ChannelerSlabLoopDungeonSelectConditionRspOuterClass {
       }
       emu.grasscutter.net.proto.ChannelerSlabLoopDungeonSelectConditionRspOuterClass.ChannelerSlabLoopDungeonSelectConditionRsp other = (emu.grasscutter.net.proto.ChannelerSlabLoopDungeonSelectConditionRspOuterClass.ChannelerSlabLoopDungeonSelectConditionRsp) obj;
 
-      if (getRetcode()
-          != other.getRetcode()) return false;
       if (getDungeonIndex()
           != other.getDungeonIndex()) return false;
       if (!getConditionIdListList()
           .equals(other.getConditionIdListList())) return false;
       if (getDifficultyId()
           != other.getDifficultyId()) return false;
+      if (getRetcode()
+          != other.getRetcode()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -338,8 +342,6 @@ public final class ChannelerSlabLoopDungeonSelectConditionRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
-      hash = (53 * hash) + getRetcode();
       hash = (37 * hash) + DUNGEON_INDEX_FIELD_NUMBER;
       hash = (53 * hash) + getDungeonIndex();
       if (getConditionIdListCount() > 0) {
@@ -348,6 +350,8 @@ public final class ChannelerSlabLoopDungeonSelectConditionRspOuterClass {
       }
       hash = (37 * hash) + DIFFICULTY_ID_FIELD_NUMBER;
       hash = (53 * hash) + getDifficultyId();
+      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
+      hash = (53 * hash) + getRetcode();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -445,9 +449,13 @@ public final class ChannelerSlabLoopDungeonSelectConditionRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 8509
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 8858;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code ChannelerSlabLoopDungeonSelectConditionRsp}
@@ -487,13 +495,13 @@ public final class ChannelerSlabLoopDungeonSelectConditionRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        retcode_ = 0;
-
         dungeonIndex_ = 0;
 
         conditionIdList_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
         difficultyId_ = 0;
+
+        retcode_ = 0;
 
         return this;
       }
@@ -522,7 +530,6 @@ public final class ChannelerSlabLoopDungeonSelectConditionRspOuterClass {
       public emu.grasscutter.net.proto.ChannelerSlabLoopDungeonSelectConditionRspOuterClass.ChannelerSlabLoopDungeonSelectConditionRsp buildPartial() {
         emu.grasscutter.net.proto.ChannelerSlabLoopDungeonSelectConditionRspOuterClass.ChannelerSlabLoopDungeonSelectConditionRsp result = new emu.grasscutter.net.proto.ChannelerSlabLoopDungeonSelectConditionRspOuterClass.ChannelerSlabLoopDungeonSelectConditionRsp(this);
         int from_bitField0_ = bitField0_;
-        result.retcode_ = retcode_;
         result.dungeonIndex_ = dungeonIndex_;
         if (((bitField0_ & 0x00000001) != 0)) {
           conditionIdList_.makeImmutable();
@@ -530,6 +537,7 @@ public final class ChannelerSlabLoopDungeonSelectConditionRspOuterClass {
         }
         result.conditionIdList_ = conditionIdList_;
         result.difficultyId_ = difficultyId_;
+        result.retcode_ = retcode_;
         onBuilt();
         return result;
       }
@@ -578,9 +586,6 @@ public final class ChannelerSlabLoopDungeonSelectConditionRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.ChannelerSlabLoopDungeonSelectConditionRspOuterClass.ChannelerSlabLoopDungeonSelectConditionRsp other) {
         if (other == emu.grasscutter.net.proto.ChannelerSlabLoopDungeonSelectConditionRspOuterClass.ChannelerSlabLoopDungeonSelectConditionRsp.getDefaultInstance()) return this;
-        if (other.getRetcode() != 0) {
-          setRetcode(other.getRetcode());
-        }
         if (other.getDungeonIndex() != 0) {
           setDungeonIndex(other.getDungeonIndex());
         }
@@ -596,6 +601,9 @@ public final class ChannelerSlabLoopDungeonSelectConditionRspOuterClass {
         }
         if (other.getDifficultyId() != 0) {
           setDifficultyId(other.getDifficultyId());
+        }
+        if (other.getRetcode() != 0) {
+          setRetcode(other.getRetcode());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -627,40 +635,9 @@ public final class ChannelerSlabLoopDungeonSelectConditionRspOuterClass {
       }
       private int bitField0_;
 
-      private int retcode_ ;
-      /**
-       * <code>int32 retcode = 9;</code>
-       * @return The retcode.
-       */
-      @java.lang.Override
-      public int getRetcode() {
-        return retcode_;
-      }
-      /**
-       * <code>int32 retcode = 9;</code>
-       * @param value The retcode to set.
-       * @return This builder for chaining.
-       */
-      public Builder setRetcode(int value) {
-        
-        retcode_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>int32 retcode = 9;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearRetcode() {
-        
-        retcode_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int dungeonIndex_ ;
       /**
-       * <code>uint32 dungeon_index = 5;</code>
+       * <code>uint32 dungeon_index = 1;</code>
        * @return The dungeonIndex.
        */
       @java.lang.Override
@@ -668,7 +645,7 @@ public final class ChannelerSlabLoopDungeonSelectConditionRspOuterClass {
         return dungeonIndex_;
       }
       /**
-       * <code>uint32 dungeon_index = 5;</code>
+       * <code>uint32 dungeon_index = 1;</code>
        * @param value The dungeonIndex to set.
        * @return This builder for chaining.
        */
@@ -679,7 +656,7 @@ public final class ChannelerSlabLoopDungeonSelectConditionRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 dungeon_index = 5;</code>
+       * <code>uint32 dungeon_index = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearDungeonIndex() {
@@ -697,7 +674,7 @@ public final class ChannelerSlabLoopDungeonSelectConditionRspOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 condition_id_list = 13;</code>
+       * <code>repeated uint32 condition_id_list = 10;</code>
        * @return A list containing the conditionIdList.
        */
       public java.util.List<java.lang.Integer>
@@ -706,14 +683,14 @@ public final class ChannelerSlabLoopDungeonSelectConditionRspOuterClass {
                  java.util.Collections.unmodifiableList(conditionIdList_) : conditionIdList_;
       }
       /**
-       * <code>repeated uint32 condition_id_list = 13;</code>
+       * <code>repeated uint32 condition_id_list = 10;</code>
        * @return The count of conditionIdList.
        */
       public int getConditionIdListCount() {
         return conditionIdList_.size();
       }
       /**
-       * <code>repeated uint32 condition_id_list = 13;</code>
+       * <code>repeated uint32 condition_id_list = 10;</code>
        * @param index The index of the element to return.
        * @return The conditionIdList at the given index.
        */
@@ -721,7 +698,7 @@ public final class ChannelerSlabLoopDungeonSelectConditionRspOuterClass {
         return conditionIdList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 condition_id_list = 13;</code>
+       * <code>repeated uint32 condition_id_list = 10;</code>
        * @param index The index to set the value at.
        * @param value The conditionIdList to set.
        * @return This builder for chaining.
@@ -734,7 +711,7 @@ public final class ChannelerSlabLoopDungeonSelectConditionRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 condition_id_list = 13;</code>
+       * <code>repeated uint32 condition_id_list = 10;</code>
        * @param value The conditionIdList to add.
        * @return This builder for chaining.
        */
@@ -745,7 +722,7 @@ public final class ChannelerSlabLoopDungeonSelectConditionRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 condition_id_list = 13;</code>
+       * <code>repeated uint32 condition_id_list = 10;</code>
        * @param values The conditionIdList to add.
        * @return This builder for chaining.
        */
@@ -758,7 +735,7 @@ public final class ChannelerSlabLoopDungeonSelectConditionRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 condition_id_list = 13;</code>
+       * <code>repeated uint32 condition_id_list = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearConditionIdList() {
@@ -770,7 +747,7 @@ public final class ChannelerSlabLoopDungeonSelectConditionRspOuterClass {
 
       private int difficultyId_ ;
       /**
-       * <code>uint32 difficulty_id = 14;</code>
+       * <code>uint32 difficulty_id = 5;</code>
        * @return The difficultyId.
        */
       @java.lang.Override
@@ -778,7 +755,7 @@ public final class ChannelerSlabLoopDungeonSelectConditionRspOuterClass {
         return difficultyId_;
       }
       /**
-       * <code>uint32 difficulty_id = 14;</code>
+       * <code>uint32 difficulty_id = 5;</code>
        * @param value The difficultyId to set.
        * @return This builder for chaining.
        */
@@ -789,12 +766,43 @@ public final class ChannelerSlabLoopDungeonSelectConditionRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 difficulty_id = 14;</code>
+       * <code>uint32 difficulty_id = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearDifficultyId() {
         
         difficultyId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int retcode_ ;
+      /**
+       * <code>int32 retcode = 7;</code>
+       * @return The retcode.
+       */
+      @java.lang.Override
+      public int getRetcode() {
+        return retcode_;
+      }
+      /**
+       * <code>int32 retcode = 7;</code>
+       * @param value The retcode to set.
+       * @return This builder for chaining.
+       */
+      public Builder setRetcode(int value) {
+        
+        retcode_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 retcode = 7;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearRetcode() {
+        
+        retcode_ = 0;
         onChanged();
         return this;
       }
@@ -867,9 +875,9 @@ public final class ChannelerSlabLoopDungeonSelectConditionRspOuterClass {
     java.lang.String[] descriptorData = {
       "\n0ChannelerSlabLoopDungeonSelectConditio" +
       "nRsp.proto\"\206\001\n*ChannelerSlabLoopDungeonS" +
-      "electConditionRsp\022\017\n\007retcode\030\t \001(\005\022\025\n\rdu" +
-      "ngeon_index\030\005 \001(\r\022\031\n\021condition_id_list\030\r" +
-      " \003(\r\022\025\n\rdifficulty_id\030\016 \001(\rB\033\n\031emu.grass" +
+      "electConditionRsp\022\025\n\rdungeon_index\030\001 \001(\r" +
+      "\022\031\n\021condition_id_list\030\n \003(\r\022\025\n\rdifficult" +
+      "y_id\030\005 \001(\r\022\017\n\007retcode\030\007 \001(\005B\033\n\031emu.grass" +
       "cutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -881,7 +889,7 @@ public final class ChannelerSlabLoopDungeonSelectConditionRspOuterClass {
     internal_static_ChannelerSlabLoopDungeonSelectConditionRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ChannelerSlabLoopDungeonSelectConditionRsp_descriptor,
-        new java.lang.String[] { "Retcode", "DungeonIndex", "ConditionIdList", "DifficultyId", });
+        new java.lang.String[] { "DungeonIndex", "ConditionIdList", "DifficultyId", "Retcode", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

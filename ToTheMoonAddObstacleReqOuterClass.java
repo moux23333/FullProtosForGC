@@ -19,44 +19,48 @@ public final class ToTheMoonAddObstacleReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool use_edge = 12;</code>
+     * <code>bool use_edge = 7;</code>
      * @return The useEdge.
      */
     boolean getUseEdge();
 
     /**
-     * <code>.ToTheMoonObstacleInfo obstacle = 13;</code>
+     * <code>.ToTheMoonObstacleInfo obstacle = 8;</code>
      * @return Whether the obstacle field is set.
      */
     boolean hasObstacle();
     /**
-     * <code>.ToTheMoonObstacleInfo obstacle = 13;</code>
+     * <code>.ToTheMoonObstacleInfo obstacle = 8;</code>
      * @return The obstacle.
      */
     emu.grasscutter.net.proto.ToTheMoonObstacleInfoOuterClass.ToTheMoonObstacleInfo getObstacle();
     /**
-     * <code>.ToTheMoonObstacleInfo obstacle = 13;</code>
+     * <code>.ToTheMoonObstacleInfo obstacle = 8;</code>
      */
     emu.grasscutter.net.proto.ToTheMoonObstacleInfoOuterClass.ToTheMoonObstacleInfoOrBuilder getObstacleOrBuilder();
 
     /**
-     * <code>int32 query_id = 9;</code>
-     * @return The queryId.
-     */
-    int getQueryId();
-
-    /**
-     * <code>uint32 scene_id = 3;</code>
+     * <code>uint32 scene_id = 13;</code>
      * @return The sceneId.
      */
     int getSceneId();
+
+    /**
+     * <code>int32 query_id = 5;</code>
+     * @return The queryId.
+     */
+    int getQueryId();
   }
   /**
    * <pre>
-   * CmdId: 6121
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 6143;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code ToTheMoonAddObstacleReq}
@@ -103,22 +107,17 @@ public final class ToTheMoonAddObstacleReqOuterClass {
             case 0:
               done = true;
               break;
-            case 24: {
-
-              sceneId_ = input.readUInt32();
-              break;
-            }
-            case 72: {
+            case 40: {
 
               queryId_ = input.readInt32();
               break;
             }
-            case 96: {
+            case 56: {
 
               useEdge_ = input.readBool();
               break;
             }
-            case 106: {
+            case 66: {
               emu.grasscutter.net.proto.ToTheMoonObstacleInfoOuterClass.ToTheMoonObstacleInfo.Builder subBuilder = null;
               if (obstacle_ != null) {
                 subBuilder = obstacle_.toBuilder();
@@ -129,6 +128,11 @@ public final class ToTheMoonAddObstacleReqOuterClass {
                 obstacle_ = subBuilder.buildPartial();
               }
 
+              break;
+            }
+            case 104: {
+
+              sceneId_ = input.readUInt32();
               break;
             }
             default: {
@@ -163,10 +167,10 @@ public final class ToTheMoonAddObstacleReqOuterClass {
               emu.grasscutter.net.proto.ToTheMoonAddObstacleReqOuterClass.ToTheMoonAddObstacleReq.class, emu.grasscutter.net.proto.ToTheMoonAddObstacleReqOuterClass.ToTheMoonAddObstacleReq.Builder.class);
     }
 
-    public static final int USE_EDGE_FIELD_NUMBER = 12;
+    public static final int USE_EDGE_FIELD_NUMBER = 7;
     private boolean useEdge_;
     /**
-     * <code>bool use_edge = 12;</code>
+     * <code>bool use_edge = 7;</code>
      * @return The useEdge.
      */
     @java.lang.Override
@@ -174,10 +178,10 @@ public final class ToTheMoonAddObstacleReqOuterClass {
       return useEdge_;
     }
 
-    public static final int OBSTACLE_FIELD_NUMBER = 13;
+    public static final int OBSTACLE_FIELD_NUMBER = 8;
     private emu.grasscutter.net.proto.ToTheMoonObstacleInfoOuterClass.ToTheMoonObstacleInfo obstacle_;
     /**
-     * <code>.ToTheMoonObstacleInfo obstacle = 13;</code>
+     * <code>.ToTheMoonObstacleInfo obstacle = 8;</code>
      * @return Whether the obstacle field is set.
      */
     @java.lang.Override
@@ -185,7 +189,7 @@ public final class ToTheMoonAddObstacleReqOuterClass {
       return obstacle_ != null;
     }
     /**
-     * <code>.ToTheMoonObstacleInfo obstacle = 13;</code>
+     * <code>.ToTheMoonObstacleInfo obstacle = 8;</code>
      * @return The obstacle.
      */
     @java.lang.Override
@@ -193,33 +197,33 @@ public final class ToTheMoonAddObstacleReqOuterClass {
       return obstacle_ == null ? emu.grasscutter.net.proto.ToTheMoonObstacleInfoOuterClass.ToTheMoonObstacleInfo.getDefaultInstance() : obstacle_;
     }
     /**
-     * <code>.ToTheMoonObstacleInfo obstacle = 13;</code>
+     * <code>.ToTheMoonObstacleInfo obstacle = 8;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.ToTheMoonObstacleInfoOuterClass.ToTheMoonObstacleInfoOrBuilder getObstacleOrBuilder() {
       return getObstacle();
     }
 
-    public static final int QUERY_ID_FIELD_NUMBER = 9;
-    private int queryId_;
-    /**
-     * <code>int32 query_id = 9;</code>
-     * @return The queryId.
-     */
-    @java.lang.Override
-    public int getQueryId() {
-      return queryId_;
-    }
-
-    public static final int SCENE_ID_FIELD_NUMBER = 3;
+    public static final int SCENE_ID_FIELD_NUMBER = 13;
     private int sceneId_;
     /**
-     * <code>uint32 scene_id = 3;</code>
+     * <code>uint32 scene_id = 13;</code>
      * @return The sceneId.
      */
     @java.lang.Override
     public int getSceneId() {
       return sceneId_;
+    }
+
+    public static final int QUERY_ID_FIELD_NUMBER = 5;
+    private int queryId_;
+    /**
+     * <code>int32 query_id = 5;</code>
+     * @return The queryId.
+     */
+    @java.lang.Override
+    public int getQueryId() {
+      return queryId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -236,17 +240,17 @@ public final class ToTheMoonAddObstacleReqOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (sceneId_ != 0) {
-        output.writeUInt32(3, sceneId_);
-      }
       if (queryId_ != 0) {
-        output.writeInt32(9, queryId_);
+        output.writeInt32(5, queryId_);
       }
       if (useEdge_ != false) {
-        output.writeBool(12, useEdge_);
+        output.writeBool(7, useEdge_);
       }
       if (obstacle_ != null) {
-        output.writeMessage(13, getObstacle());
+        output.writeMessage(8, getObstacle());
+      }
+      if (sceneId_ != 0) {
+        output.writeUInt32(13, sceneId_);
       }
       unknownFields.writeTo(output);
     }
@@ -257,21 +261,21 @@ public final class ToTheMoonAddObstacleReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (sceneId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, sceneId_);
-      }
       if (queryId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(9, queryId_);
+          .computeInt32Size(5, queryId_);
       }
       if (useEdge_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(12, useEdge_);
+          .computeBoolSize(7, useEdge_);
       }
       if (obstacle_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(13, getObstacle());
+          .computeMessageSize(8, getObstacle());
+      }
+      if (sceneId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(13, sceneId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -295,10 +299,10 @@ public final class ToTheMoonAddObstacleReqOuterClass {
         if (!getObstacle()
             .equals(other.getObstacle())) return false;
       }
-      if (getQueryId()
-          != other.getQueryId()) return false;
       if (getSceneId()
           != other.getSceneId()) return false;
+      if (getQueryId()
+          != other.getQueryId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -317,10 +321,10 @@ public final class ToTheMoonAddObstacleReqOuterClass {
         hash = (37 * hash) + OBSTACLE_FIELD_NUMBER;
         hash = (53 * hash) + getObstacle().hashCode();
       }
-      hash = (37 * hash) + QUERY_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getQueryId();
       hash = (37 * hash) + SCENE_ID_FIELD_NUMBER;
       hash = (53 * hash) + getSceneId();
+      hash = (37 * hash) + QUERY_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getQueryId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -418,10 +422,14 @@ public final class ToTheMoonAddObstacleReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 6121
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 6143;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code ToTheMoonAddObstacleReq}
@@ -469,9 +477,9 @@ public final class ToTheMoonAddObstacleReqOuterClass {
           obstacle_ = null;
           obstacleBuilder_ = null;
         }
-        queryId_ = 0;
-
         sceneId_ = 0;
+
+        queryId_ = 0;
 
         return this;
       }
@@ -505,8 +513,8 @@ public final class ToTheMoonAddObstacleReqOuterClass {
         } else {
           result.obstacle_ = obstacleBuilder_.build();
         }
-        result.queryId_ = queryId_;
         result.sceneId_ = sceneId_;
+        result.queryId_ = queryId_;
         onBuilt();
         return result;
       }
@@ -561,11 +569,11 @@ public final class ToTheMoonAddObstacleReqOuterClass {
         if (other.hasObstacle()) {
           mergeObstacle(other.getObstacle());
         }
-        if (other.getQueryId() != 0) {
-          setQueryId(other.getQueryId());
-        }
         if (other.getSceneId() != 0) {
           setSceneId(other.getSceneId());
+        }
+        if (other.getQueryId() != 0) {
+          setQueryId(other.getQueryId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -598,7 +606,7 @@ public final class ToTheMoonAddObstacleReqOuterClass {
 
       private boolean useEdge_ ;
       /**
-       * <code>bool use_edge = 12;</code>
+       * <code>bool use_edge = 7;</code>
        * @return The useEdge.
        */
       @java.lang.Override
@@ -606,7 +614,7 @@ public final class ToTheMoonAddObstacleReqOuterClass {
         return useEdge_;
       }
       /**
-       * <code>bool use_edge = 12;</code>
+       * <code>bool use_edge = 7;</code>
        * @param value The useEdge to set.
        * @return This builder for chaining.
        */
@@ -617,7 +625,7 @@ public final class ToTheMoonAddObstacleReqOuterClass {
         return this;
       }
       /**
-       * <code>bool use_edge = 12;</code>
+       * <code>bool use_edge = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearUseEdge() {
@@ -631,14 +639,14 @@ public final class ToTheMoonAddObstacleReqOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.ToTheMoonObstacleInfoOuterClass.ToTheMoonObstacleInfo, emu.grasscutter.net.proto.ToTheMoonObstacleInfoOuterClass.ToTheMoonObstacleInfo.Builder, emu.grasscutter.net.proto.ToTheMoonObstacleInfoOuterClass.ToTheMoonObstacleInfoOrBuilder> obstacleBuilder_;
       /**
-       * <code>.ToTheMoonObstacleInfo obstacle = 13;</code>
+       * <code>.ToTheMoonObstacleInfo obstacle = 8;</code>
        * @return Whether the obstacle field is set.
        */
       public boolean hasObstacle() {
         return obstacleBuilder_ != null || obstacle_ != null;
       }
       /**
-       * <code>.ToTheMoonObstacleInfo obstacle = 13;</code>
+       * <code>.ToTheMoonObstacleInfo obstacle = 8;</code>
        * @return The obstacle.
        */
       public emu.grasscutter.net.proto.ToTheMoonObstacleInfoOuterClass.ToTheMoonObstacleInfo getObstacle() {
@@ -649,7 +657,7 @@ public final class ToTheMoonAddObstacleReqOuterClass {
         }
       }
       /**
-       * <code>.ToTheMoonObstacleInfo obstacle = 13;</code>
+       * <code>.ToTheMoonObstacleInfo obstacle = 8;</code>
        */
       public Builder setObstacle(emu.grasscutter.net.proto.ToTheMoonObstacleInfoOuterClass.ToTheMoonObstacleInfo value) {
         if (obstacleBuilder_ == null) {
@@ -665,7 +673,7 @@ public final class ToTheMoonAddObstacleReqOuterClass {
         return this;
       }
       /**
-       * <code>.ToTheMoonObstacleInfo obstacle = 13;</code>
+       * <code>.ToTheMoonObstacleInfo obstacle = 8;</code>
        */
       public Builder setObstacle(
           emu.grasscutter.net.proto.ToTheMoonObstacleInfoOuterClass.ToTheMoonObstacleInfo.Builder builderForValue) {
@@ -679,7 +687,7 @@ public final class ToTheMoonAddObstacleReqOuterClass {
         return this;
       }
       /**
-       * <code>.ToTheMoonObstacleInfo obstacle = 13;</code>
+       * <code>.ToTheMoonObstacleInfo obstacle = 8;</code>
        */
       public Builder mergeObstacle(emu.grasscutter.net.proto.ToTheMoonObstacleInfoOuterClass.ToTheMoonObstacleInfo value) {
         if (obstacleBuilder_ == null) {
@@ -697,7 +705,7 @@ public final class ToTheMoonAddObstacleReqOuterClass {
         return this;
       }
       /**
-       * <code>.ToTheMoonObstacleInfo obstacle = 13;</code>
+       * <code>.ToTheMoonObstacleInfo obstacle = 8;</code>
        */
       public Builder clearObstacle() {
         if (obstacleBuilder_ == null) {
@@ -711,7 +719,7 @@ public final class ToTheMoonAddObstacleReqOuterClass {
         return this;
       }
       /**
-       * <code>.ToTheMoonObstacleInfo obstacle = 13;</code>
+       * <code>.ToTheMoonObstacleInfo obstacle = 8;</code>
        */
       public emu.grasscutter.net.proto.ToTheMoonObstacleInfoOuterClass.ToTheMoonObstacleInfo.Builder getObstacleBuilder() {
         
@@ -719,7 +727,7 @@ public final class ToTheMoonAddObstacleReqOuterClass {
         return getObstacleFieldBuilder().getBuilder();
       }
       /**
-       * <code>.ToTheMoonObstacleInfo obstacle = 13;</code>
+       * <code>.ToTheMoonObstacleInfo obstacle = 8;</code>
        */
       public emu.grasscutter.net.proto.ToTheMoonObstacleInfoOuterClass.ToTheMoonObstacleInfoOrBuilder getObstacleOrBuilder() {
         if (obstacleBuilder_ != null) {
@@ -730,7 +738,7 @@ public final class ToTheMoonAddObstacleReqOuterClass {
         }
       }
       /**
-       * <code>.ToTheMoonObstacleInfo obstacle = 13;</code>
+       * <code>.ToTheMoonObstacleInfo obstacle = 8;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.ToTheMoonObstacleInfoOuterClass.ToTheMoonObstacleInfo, emu.grasscutter.net.proto.ToTheMoonObstacleInfoOuterClass.ToTheMoonObstacleInfo.Builder, emu.grasscutter.net.proto.ToTheMoonObstacleInfoOuterClass.ToTheMoonObstacleInfoOrBuilder> 
@@ -746,40 +754,9 @@ public final class ToTheMoonAddObstacleReqOuterClass {
         return obstacleBuilder_;
       }
 
-      private int queryId_ ;
-      /**
-       * <code>int32 query_id = 9;</code>
-       * @return The queryId.
-       */
-      @java.lang.Override
-      public int getQueryId() {
-        return queryId_;
-      }
-      /**
-       * <code>int32 query_id = 9;</code>
-       * @param value The queryId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setQueryId(int value) {
-        
-        queryId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>int32 query_id = 9;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearQueryId() {
-        
-        queryId_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int sceneId_ ;
       /**
-       * <code>uint32 scene_id = 3;</code>
+       * <code>uint32 scene_id = 13;</code>
        * @return The sceneId.
        */
       @java.lang.Override
@@ -787,7 +764,7 @@ public final class ToTheMoonAddObstacleReqOuterClass {
         return sceneId_;
       }
       /**
-       * <code>uint32 scene_id = 3;</code>
+       * <code>uint32 scene_id = 13;</code>
        * @param value The sceneId to set.
        * @return This builder for chaining.
        */
@@ -798,12 +775,43 @@ public final class ToTheMoonAddObstacleReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 scene_id = 3;</code>
+       * <code>uint32 scene_id = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearSceneId() {
         
         sceneId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int queryId_ ;
+      /**
+       * <code>int32 query_id = 5;</code>
+       * @return The queryId.
+       */
+      @java.lang.Override
+      public int getQueryId() {
+        return queryId_;
+      }
+      /**
+       * <code>int32 query_id = 5;</code>
+       * @param value The queryId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setQueryId(int value) {
+        
+        queryId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 query_id = 5;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearQueryId() {
+        
+        queryId_ = 0;
         onChanged();
         return this;
       }
@@ -876,9 +884,9 @@ public final class ToTheMoonAddObstacleReqOuterClass {
     java.lang.String[] descriptorData = {
       "\n\035ToTheMoonAddObstacleReq.proto\032\033ToTheMo" +
       "onObstacleInfo.proto\"y\n\027ToTheMoonAddObst" +
-      "acleReq\022\020\n\010use_edge\030\014 \001(\010\022(\n\010obstacle\030\r " +
-      "\001(\0132\026.ToTheMoonObstacleInfo\022\020\n\010query_id\030" +
-      "\t \001(\005\022\020\n\010scene_id\030\003 \001(\rB\033\n\031emu.grasscutt" +
+      "acleReq\022\020\n\010use_edge\030\007 \001(\010\022(\n\010obstacle\030\010 " +
+      "\001(\0132\026.ToTheMoonObstacleInfo\022\020\n\010scene_id\030" +
+      "\r \001(\r\022\020\n\010query_id\030\005 \001(\005B\033\n\031emu.grasscutt" +
       "er.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -891,7 +899,7 @@ public final class ToTheMoonAddObstacleReqOuterClass {
     internal_static_ToTheMoonAddObstacleReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ToTheMoonAddObstacleReq_descriptor,
-        new java.lang.String[] { "UseEdge", "Obstacle", "QueryId", "SceneId", });
+        new java.lang.String[] { "UseEdge", "Obstacle", "SceneId", "QueryId", });
     emu.grasscutter.net.proto.ToTheMoonObstacleInfoOuterClass.getDescriptor();
   }
 

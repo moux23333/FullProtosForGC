@@ -19,25 +19,29 @@ public final class TreasureMapDetectorDataNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.TreasureMapDetectorData data = 2;</code>
+     * <code>.TreasureMapDetectorData data = 7;</code>
      * @return Whether the data field is set.
      */
     boolean hasData();
     /**
-     * <code>.TreasureMapDetectorData data = 2;</code>
+     * <code>.TreasureMapDetectorData data = 7;</code>
      * @return The data.
      */
     emu.grasscutter.net.proto.TreasureMapDetectorDataOuterClass.TreasureMapDetectorData getData();
     /**
-     * <code>.TreasureMapDetectorData data = 2;</code>
+     * <code>.TreasureMapDetectorData data = 7;</code>
      */
     emu.grasscutter.net.proto.TreasureMapDetectorDataOuterClass.TreasureMapDetectorDataOrBuilder getDataOrBuilder();
   }
   /**
    * <pre>
-   * CmdId: 4300
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 4254;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code TreasureMapDetectorDataNotify}
@@ -84,7 +88,7 @@ public final class TreasureMapDetectorDataNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 18: {
+            case 58: {
               emu.grasscutter.net.proto.TreasureMapDetectorDataOuterClass.TreasureMapDetectorData.Builder subBuilder = null;
               if (data_ != null) {
                 subBuilder = data_.toBuilder();
@@ -129,10 +133,10 @@ public final class TreasureMapDetectorDataNotifyOuterClass {
               emu.grasscutter.net.proto.TreasureMapDetectorDataNotifyOuterClass.TreasureMapDetectorDataNotify.class, emu.grasscutter.net.proto.TreasureMapDetectorDataNotifyOuterClass.TreasureMapDetectorDataNotify.Builder.class);
     }
 
-    public static final int DATA_FIELD_NUMBER = 2;
+    public static final int DATA_FIELD_NUMBER = 7;
     private emu.grasscutter.net.proto.TreasureMapDetectorDataOuterClass.TreasureMapDetectorData data_;
     /**
-     * <code>.TreasureMapDetectorData data = 2;</code>
+     * <code>.TreasureMapDetectorData data = 7;</code>
      * @return Whether the data field is set.
      */
     @java.lang.Override
@@ -140,7 +144,7 @@ public final class TreasureMapDetectorDataNotifyOuterClass {
       return data_ != null;
     }
     /**
-     * <code>.TreasureMapDetectorData data = 2;</code>
+     * <code>.TreasureMapDetectorData data = 7;</code>
      * @return The data.
      */
     @java.lang.Override
@@ -148,7 +152,7 @@ public final class TreasureMapDetectorDataNotifyOuterClass {
       return data_ == null ? emu.grasscutter.net.proto.TreasureMapDetectorDataOuterClass.TreasureMapDetectorData.getDefaultInstance() : data_;
     }
     /**
-     * <code>.TreasureMapDetectorData data = 2;</code>
+     * <code>.TreasureMapDetectorData data = 7;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.TreasureMapDetectorDataOuterClass.TreasureMapDetectorDataOrBuilder getDataOrBuilder() {
@@ -170,7 +174,7 @@ public final class TreasureMapDetectorDataNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (data_ != null) {
-        output.writeMessage(2, getData());
+        output.writeMessage(7, getData());
       }
       unknownFields.writeTo(output);
     }
@@ -183,7 +187,7 @@ public final class TreasureMapDetectorDataNotifyOuterClass {
       size = 0;
       if (data_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(2, getData());
+          .computeMessageSize(7, getData());
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -317,9 +321,13 @@ public final class TreasureMapDetectorDataNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 4300
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 4254;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code TreasureMapDetectorDataNotify}
@@ -480,14 +488,14 @@ public final class TreasureMapDetectorDataNotifyOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.TreasureMapDetectorDataOuterClass.TreasureMapDetectorData, emu.grasscutter.net.proto.TreasureMapDetectorDataOuterClass.TreasureMapDetectorData.Builder, emu.grasscutter.net.proto.TreasureMapDetectorDataOuterClass.TreasureMapDetectorDataOrBuilder> dataBuilder_;
       /**
-       * <code>.TreasureMapDetectorData data = 2;</code>
+       * <code>.TreasureMapDetectorData data = 7;</code>
        * @return Whether the data field is set.
        */
       public boolean hasData() {
         return dataBuilder_ != null || data_ != null;
       }
       /**
-       * <code>.TreasureMapDetectorData data = 2;</code>
+       * <code>.TreasureMapDetectorData data = 7;</code>
        * @return The data.
        */
       public emu.grasscutter.net.proto.TreasureMapDetectorDataOuterClass.TreasureMapDetectorData getData() {
@@ -498,7 +506,7 @@ public final class TreasureMapDetectorDataNotifyOuterClass {
         }
       }
       /**
-       * <code>.TreasureMapDetectorData data = 2;</code>
+       * <code>.TreasureMapDetectorData data = 7;</code>
        */
       public Builder setData(emu.grasscutter.net.proto.TreasureMapDetectorDataOuterClass.TreasureMapDetectorData value) {
         if (dataBuilder_ == null) {
@@ -514,7 +522,7 @@ public final class TreasureMapDetectorDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.TreasureMapDetectorData data = 2;</code>
+       * <code>.TreasureMapDetectorData data = 7;</code>
        */
       public Builder setData(
           emu.grasscutter.net.proto.TreasureMapDetectorDataOuterClass.TreasureMapDetectorData.Builder builderForValue) {
@@ -528,7 +536,7 @@ public final class TreasureMapDetectorDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.TreasureMapDetectorData data = 2;</code>
+       * <code>.TreasureMapDetectorData data = 7;</code>
        */
       public Builder mergeData(emu.grasscutter.net.proto.TreasureMapDetectorDataOuterClass.TreasureMapDetectorData value) {
         if (dataBuilder_ == null) {
@@ -546,7 +554,7 @@ public final class TreasureMapDetectorDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.TreasureMapDetectorData data = 2;</code>
+       * <code>.TreasureMapDetectorData data = 7;</code>
        */
       public Builder clearData() {
         if (dataBuilder_ == null) {
@@ -560,7 +568,7 @@ public final class TreasureMapDetectorDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.TreasureMapDetectorData data = 2;</code>
+       * <code>.TreasureMapDetectorData data = 7;</code>
        */
       public emu.grasscutter.net.proto.TreasureMapDetectorDataOuterClass.TreasureMapDetectorData.Builder getDataBuilder() {
         
@@ -568,7 +576,7 @@ public final class TreasureMapDetectorDataNotifyOuterClass {
         return getDataFieldBuilder().getBuilder();
       }
       /**
-       * <code>.TreasureMapDetectorData data = 2;</code>
+       * <code>.TreasureMapDetectorData data = 7;</code>
        */
       public emu.grasscutter.net.proto.TreasureMapDetectorDataOuterClass.TreasureMapDetectorDataOrBuilder getDataOrBuilder() {
         if (dataBuilder_ != null) {
@@ -579,7 +587,7 @@ public final class TreasureMapDetectorDataNotifyOuterClass {
         }
       }
       /**
-       * <code>.TreasureMapDetectorData data = 2;</code>
+       * <code>.TreasureMapDetectorData data = 7;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.TreasureMapDetectorDataOuterClass.TreasureMapDetectorData, emu.grasscutter.net.proto.TreasureMapDetectorDataOuterClass.TreasureMapDetectorData.Builder, emu.grasscutter.net.proto.TreasureMapDetectorDataOuterClass.TreasureMapDetectorDataOrBuilder> 
@@ -663,7 +671,7 @@ public final class TreasureMapDetectorDataNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n#TreasureMapDetectorDataNotify.proto\032\035T" +
       "reasureMapDetectorData.proto\"G\n\035Treasure" +
-      "MapDetectorDataNotify\022&\n\004data\030\002 \001(\0132\030.Tr" +
+      "MapDetectorDataNotify\022&\n\004data\030\007 \001(\0132\030.Tr" +
       "easureMapDetectorDataB\033\n\031emu.grasscutter" +
       ".net.protob\006proto3"
     };

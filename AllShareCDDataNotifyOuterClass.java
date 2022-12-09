@@ -19,11 +19,11 @@ public final class AllShareCDDataNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>map&lt;uint32, .ShareCDInfo&gt; share_cd_info_map = 2;</code>
+     * <code>map&lt;uint32, .ShareCDInfo&gt; share_cd_info_map = 13;</code>
      */
     int getShareCdInfoMapCount();
     /**
-     * <code>map&lt;uint32, .ShareCDInfo&gt; share_cd_info_map = 2;</code>
+     * <code>map&lt;uint32, .ShareCDInfo&gt; share_cd_info_map = 13;</code>
      */
     boolean containsShareCdInfoMap(
         int key);
@@ -34,19 +34,19 @@ public final class AllShareCDDataNotifyOuterClass {
     java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.ShareCDInfoOuterClass.ShareCDInfo>
     getShareCdInfoMap();
     /**
-     * <code>map&lt;uint32, .ShareCDInfo&gt; share_cd_info_map = 2;</code>
+     * <code>map&lt;uint32, .ShareCDInfo&gt; share_cd_info_map = 13;</code>
      */
     java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.ShareCDInfoOuterClass.ShareCDInfo>
     getShareCdInfoMapMap();
     /**
-     * <code>map&lt;uint32, .ShareCDInfo&gt; share_cd_info_map = 2;</code>
+     * <code>map&lt;uint32, .ShareCDInfo&gt; share_cd_info_map = 13;</code>
      */
 
     emu.grasscutter.net.proto.ShareCDInfoOuterClass.ShareCDInfo getShareCdInfoMapOrDefault(
         int key,
         emu.grasscutter.net.proto.ShareCDInfoOuterClass.ShareCDInfo defaultValue);
     /**
-     * <code>map&lt;uint32, .ShareCDInfo&gt; share_cd_info_map = 2;</code>
+     * <code>map&lt;uint32, .ShareCDInfo&gt; share_cd_info_map = 13;</code>
      */
 
     emu.grasscutter.net.proto.ShareCDInfoOuterClass.ShareCDInfo getShareCdInfoMapOrThrow(
@@ -54,9 +54,13 @@ public final class AllShareCDDataNotifyOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 9072
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 9079;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code AllShareCDDataNotify}
@@ -104,7 +108,7 @@ public final class AllShareCDDataNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 18: {
+            case 106: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 shareCdInfoMap_ = com.google.protobuf.MapField.newMapField(
                     ShareCdInfoMapDefaultEntryHolder.defaultEntry);
@@ -146,7 +150,7 @@ public final class AllShareCDDataNotifyOuterClass {
     protected com.google.protobuf.MapField internalGetMapField(
         int number) {
       switch (number) {
-        case 2:
+        case 13:
           return internalGetShareCdInfoMap();
         default:
           throw new RuntimeException(
@@ -161,7 +165,7 @@ public final class AllShareCDDataNotifyOuterClass {
               emu.grasscutter.net.proto.AllShareCDDataNotifyOuterClass.AllShareCDDataNotify.class, emu.grasscutter.net.proto.AllShareCDDataNotifyOuterClass.AllShareCDDataNotify.Builder.class);
     }
 
-    public static final int SHARE_CD_INFO_MAP_FIELD_NUMBER = 2;
+    public static final int SHARE_CD_INFO_MAP_FIELD_NUMBER = 13;
     private static final class ShareCdInfoMapDefaultEntryHolder {
       static final com.google.protobuf.MapEntry<
           java.lang.Integer, emu.grasscutter.net.proto.ShareCDInfoOuterClass.ShareCDInfo> defaultEntry =
@@ -188,7 +192,7 @@ public final class AllShareCDDataNotifyOuterClass {
       return internalGetShareCdInfoMap().getMap().size();
     }
     /**
-     * <code>map&lt;uint32, .ShareCDInfo&gt; share_cd_info_map = 2;</code>
+     * <code>map&lt;uint32, .ShareCDInfo&gt; share_cd_info_map = 13;</code>
      */
 
     @java.lang.Override
@@ -206,7 +210,7 @@ public final class AllShareCDDataNotifyOuterClass {
       return getShareCdInfoMapMap();
     }
     /**
-     * <code>map&lt;uint32, .ShareCDInfo&gt; share_cd_info_map = 2;</code>
+     * <code>map&lt;uint32, .ShareCDInfo&gt; share_cd_info_map = 13;</code>
      */
     @java.lang.Override
 
@@ -214,7 +218,7 @@ public final class AllShareCDDataNotifyOuterClass {
       return internalGetShareCdInfoMap().getMap();
     }
     /**
-     * <code>map&lt;uint32, .ShareCDInfo&gt; share_cd_info_map = 2;</code>
+     * <code>map&lt;uint32, .ShareCDInfo&gt; share_cd_info_map = 13;</code>
      */
     @java.lang.Override
 
@@ -227,7 +231,7 @@ public final class AllShareCDDataNotifyOuterClass {
       return map.containsKey(key) ? map.get(key) : defaultValue;
     }
     /**
-     * <code>map&lt;uint32, .ShareCDInfo&gt; share_cd_info_map = 2;</code>
+     * <code>map&lt;uint32, .ShareCDInfo&gt; share_cd_info_map = 13;</code>
      */
     @java.lang.Override
 
@@ -261,7 +265,7 @@ public final class AllShareCDDataNotifyOuterClass {
           output,
           internalGetShareCdInfoMap(),
           ShareCdInfoMapDefaultEntryHolder.defaultEntry,
-          2);
+          13);
       unknownFields.writeTo(output);
     }
 
@@ -279,7 +283,7 @@ public final class AllShareCDDataNotifyOuterClass {
             .setValue(entry.getValue())
             .build();
         size += com.google.protobuf.CodedOutputStream
-            .computeMessageSize(2, shareCdInfoMap__);
+            .computeMessageSize(13, shareCdInfoMap__);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -410,9 +414,13 @@ public final class AllShareCDDataNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 9072
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 9079;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code AllShareCDDataNotify}
@@ -430,7 +438,7 @@ public final class AllShareCDDataNotifyOuterClass {
       protected com.google.protobuf.MapField internalGetMapField(
           int number) {
         switch (number) {
-          case 2:
+          case 13:
             return internalGetShareCdInfoMap();
           default:
             throw new RuntimeException(
@@ -441,7 +449,7 @@ public final class AllShareCDDataNotifyOuterClass {
       protected com.google.protobuf.MapField internalGetMutableMapField(
           int number) {
         switch (number) {
-          case 2:
+          case 13:
             return internalGetMutableShareCdInfoMap();
           default:
             throw new RuntimeException(
@@ -611,7 +619,7 @@ public final class AllShareCDDataNotifyOuterClass {
         return internalGetShareCdInfoMap().getMap().size();
       }
       /**
-       * <code>map&lt;uint32, .ShareCDInfo&gt; share_cd_info_map = 2;</code>
+       * <code>map&lt;uint32, .ShareCDInfo&gt; share_cd_info_map = 13;</code>
        */
 
       @java.lang.Override
@@ -629,7 +637,7 @@ public final class AllShareCDDataNotifyOuterClass {
         return getShareCdInfoMapMap();
       }
       /**
-       * <code>map&lt;uint32, .ShareCDInfo&gt; share_cd_info_map = 2;</code>
+       * <code>map&lt;uint32, .ShareCDInfo&gt; share_cd_info_map = 13;</code>
        */
       @java.lang.Override
 
@@ -637,7 +645,7 @@ public final class AllShareCDDataNotifyOuterClass {
         return internalGetShareCdInfoMap().getMap();
       }
       /**
-       * <code>map&lt;uint32, .ShareCDInfo&gt; share_cd_info_map = 2;</code>
+       * <code>map&lt;uint32, .ShareCDInfo&gt; share_cd_info_map = 13;</code>
        */
       @java.lang.Override
 
@@ -650,7 +658,7 @@ public final class AllShareCDDataNotifyOuterClass {
         return map.containsKey(key) ? map.get(key) : defaultValue;
       }
       /**
-       * <code>map&lt;uint32, .ShareCDInfo&gt; share_cd_info_map = 2;</code>
+       * <code>map&lt;uint32, .ShareCDInfo&gt; share_cd_info_map = 13;</code>
        */
       @java.lang.Override
 
@@ -671,7 +679,7 @@ public final class AllShareCDDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>map&lt;uint32, .ShareCDInfo&gt; share_cd_info_map = 2;</code>
+       * <code>map&lt;uint32, .ShareCDInfo&gt; share_cd_info_map = 13;</code>
        */
 
       public Builder removeShareCdInfoMap(
@@ -690,7 +698,7 @@ public final class AllShareCDDataNotifyOuterClass {
         return internalGetMutableShareCdInfoMap().getMutableMap();
       }
       /**
-       * <code>map&lt;uint32, .ShareCDInfo&gt; share_cd_info_map = 2;</code>
+       * <code>map&lt;uint32, .ShareCDInfo&gt; share_cd_info_map = 13;</code>
        */
       public Builder putShareCdInfoMap(
           int key,
@@ -702,7 +710,7 @@ public final class AllShareCDDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>map&lt;uint32, .ShareCDInfo&gt; share_cd_info_map = 2;</code>
+       * <code>map&lt;uint32, .ShareCDInfo&gt; share_cd_info_map = 13;</code>
        */
 
       public Builder putAllShareCdInfoMap(
@@ -785,7 +793,7 @@ public final class AllShareCDDataNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n\032AllShareCDDataNotify.proto\032\021ShareCDInf" +
       "o.proto\"\241\001\n\024AllShareCDDataNotify\022D\n\021shar" +
-      "e_cd_info_map\030\002 \003(\0132).AllShareCDDataNoti" +
+      "e_cd_info_map\030\r \003(\0132).AllShareCDDataNoti" +
       "fy.ShareCdInfoMapEntry\032C\n\023ShareCdInfoMap" +
       "Entry\022\013\n\003key\030\001 \001(\r\022\033\n\005value\030\002 \001(\0132\014.Shar" +
       "eCDInfo:\0028\001B\033\n\031emu.grasscutter.net.proto" +

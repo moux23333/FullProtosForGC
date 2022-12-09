@@ -19,32 +19,36 @@ public final class TakeHuntingOfferReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.HuntingPair hunting_pair = 14;</code>
+     * <code>uint32 city_id = 1;</code>
+     * @return The cityId.
+     */
+    int getCityId();
+
+    /**
+     * <code>.HuntingPair hunting_pair = 12;</code>
      * @return Whether the huntingPair field is set.
      */
     boolean hasHuntingPair();
     /**
-     * <code>.HuntingPair hunting_pair = 14;</code>
+     * <code>.HuntingPair hunting_pair = 12;</code>
      * @return The huntingPair.
      */
     emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPair getHuntingPair();
     /**
-     * <code>.HuntingPair hunting_pair = 14;</code>
+     * <code>.HuntingPair hunting_pair = 12;</code>
      */
     emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPairOrBuilder getHuntingPairOrBuilder();
-
-    /**
-     * <code>uint32 city_id = 4;</code>
-     * @return The cityId.
-     */
-    int getCityId();
   }
   /**
    * <pre>
-   * CmdId: 4326
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 4342;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code TakeHuntingOfferReq}
@@ -91,12 +95,12 @@ public final class TakeHuntingOfferReqOuterClass {
             case 0:
               done = true;
               break;
-            case 32: {
+            case 8: {
 
               cityId_ = input.readUInt32();
               break;
             }
-            case 114: {
+            case 98: {
               emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPair.Builder subBuilder = null;
               if (huntingPair_ != null) {
                 subBuilder = huntingPair_.toBuilder();
@@ -141,10 +145,21 @@ public final class TakeHuntingOfferReqOuterClass {
               emu.grasscutter.net.proto.TakeHuntingOfferReqOuterClass.TakeHuntingOfferReq.class, emu.grasscutter.net.proto.TakeHuntingOfferReqOuterClass.TakeHuntingOfferReq.Builder.class);
     }
 
-    public static final int HUNTING_PAIR_FIELD_NUMBER = 14;
+    public static final int CITY_ID_FIELD_NUMBER = 1;
+    private int cityId_;
+    /**
+     * <code>uint32 city_id = 1;</code>
+     * @return The cityId.
+     */
+    @java.lang.Override
+    public int getCityId() {
+      return cityId_;
+    }
+
+    public static final int HUNTING_PAIR_FIELD_NUMBER = 12;
     private emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPair huntingPair_;
     /**
-     * <code>.HuntingPair hunting_pair = 14;</code>
+     * <code>.HuntingPair hunting_pair = 12;</code>
      * @return Whether the huntingPair field is set.
      */
     @java.lang.Override
@@ -152,7 +167,7 @@ public final class TakeHuntingOfferReqOuterClass {
       return huntingPair_ != null;
     }
     /**
-     * <code>.HuntingPair hunting_pair = 14;</code>
+     * <code>.HuntingPair hunting_pair = 12;</code>
      * @return The huntingPair.
      */
     @java.lang.Override
@@ -160,22 +175,11 @@ public final class TakeHuntingOfferReqOuterClass {
       return huntingPair_ == null ? emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPair.getDefaultInstance() : huntingPair_;
     }
     /**
-     * <code>.HuntingPair hunting_pair = 14;</code>
+     * <code>.HuntingPair hunting_pair = 12;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPairOrBuilder getHuntingPairOrBuilder() {
       return getHuntingPair();
-    }
-
-    public static final int CITY_ID_FIELD_NUMBER = 4;
-    private int cityId_;
-    /**
-     * <code>uint32 city_id = 4;</code>
-     * @return The cityId.
-     */
-    @java.lang.Override
-    public int getCityId() {
-      return cityId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -193,10 +197,10 @@ public final class TakeHuntingOfferReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (cityId_ != 0) {
-        output.writeUInt32(4, cityId_);
+        output.writeUInt32(1, cityId_);
       }
       if (huntingPair_ != null) {
-        output.writeMessage(14, getHuntingPair());
+        output.writeMessage(12, getHuntingPair());
       }
       unknownFields.writeTo(output);
     }
@@ -209,11 +213,11 @@ public final class TakeHuntingOfferReqOuterClass {
       size = 0;
       if (cityId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, cityId_);
+          .computeUInt32Size(1, cityId_);
       }
       if (huntingPair_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(14, getHuntingPair());
+          .computeMessageSize(12, getHuntingPair());
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -230,13 +234,13 @@ public final class TakeHuntingOfferReqOuterClass {
       }
       emu.grasscutter.net.proto.TakeHuntingOfferReqOuterClass.TakeHuntingOfferReq other = (emu.grasscutter.net.proto.TakeHuntingOfferReqOuterClass.TakeHuntingOfferReq) obj;
 
+      if (getCityId()
+          != other.getCityId()) return false;
       if (hasHuntingPair() != other.hasHuntingPair()) return false;
       if (hasHuntingPair()) {
         if (!getHuntingPair()
             .equals(other.getHuntingPair())) return false;
       }
-      if (getCityId()
-          != other.getCityId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -248,12 +252,12 @@ public final class TakeHuntingOfferReqOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + CITY_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getCityId();
       if (hasHuntingPair()) {
         hash = (37 * hash) + HUNTING_PAIR_FIELD_NUMBER;
         hash = (53 * hash) + getHuntingPair().hashCode();
       }
-      hash = (37 * hash) + CITY_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getCityId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -351,10 +355,14 @@ public final class TakeHuntingOfferReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 4326
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 4342;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code TakeHuntingOfferReq}
@@ -394,14 +402,14 @@ public final class TakeHuntingOfferReqOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        cityId_ = 0;
+
         if (huntingPairBuilder_ == null) {
           huntingPair_ = null;
         } else {
           huntingPair_ = null;
           huntingPairBuilder_ = null;
         }
-        cityId_ = 0;
-
         return this;
       }
 
@@ -428,12 +436,12 @@ public final class TakeHuntingOfferReqOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.TakeHuntingOfferReqOuterClass.TakeHuntingOfferReq buildPartial() {
         emu.grasscutter.net.proto.TakeHuntingOfferReqOuterClass.TakeHuntingOfferReq result = new emu.grasscutter.net.proto.TakeHuntingOfferReqOuterClass.TakeHuntingOfferReq(this);
+        result.cityId_ = cityId_;
         if (huntingPairBuilder_ == null) {
           result.huntingPair_ = huntingPair_;
         } else {
           result.huntingPair_ = huntingPairBuilder_.build();
         }
-        result.cityId_ = cityId_;
         onBuilt();
         return result;
       }
@@ -482,11 +490,11 @@ public final class TakeHuntingOfferReqOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.TakeHuntingOfferReqOuterClass.TakeHuntingOfferReq other) {
         if (other == emu.grasscutter.net.proto.TakeHuntingOfferReqOuterClass.TakeHuntingOfferReq.getDefaultInstance()) return this;
-        if (other.hasHuntingPair()) {
-          mergeHuntingPair(other.getHuntingPair());
-        }
         if (other.getCityId() != 0) {
           setCityId(other.getCityId());
+        }
+        if (other.hasHuntingPair()) {
+          mergeHuntingPair(other.getHuntingPair());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -517,18 +525,49 @@ public final class TakeHuntingOfferReqOuterClass {
         return this;
       }
 
+      private int cityId_ ;
+      /**
+       * <code>uint32 city_id = 1;</code>
+       * @return The cityId.
+       */
+      @java.lang.Override
+      public int getCityId() {
+        return cityId_;
+      }
+      /**
+       * <code>uint32 city_id = 1;</code>
+       * @param value The cityId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setCityId(int value) {
+        
+        cityId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 city_id = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearCityId() {
+        
+        cityId_ = 0;
+        onChanged();
+        return this;
+      }
+
       private emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPair huntingPair_;
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPair, emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPair.Builder, emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPairOrBuilder> huntingPairBuilder_;
       /**
-       * <code>.HuntingPair hunting_pair = 14;</code>
+       * <code>.HuntingPair hunting_pair = 12;</code>
        * @return Whether the huntingPair field is set.
        */
       public boolean hasHuntingPair() {
         return huntingPairBuilder_ != null || huntingPair_ != null;
       }
       /**
-       * <code>.HuntingPair hunting_pair = 14;</code>
+       * <code>.HuntingPair hunting_pair = 12;</code>
        * @return The huntingPair.
        */
       public emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPair getHuntingPair() {
@@ -539,7 +578,7 @@ public final class TakeHuntingOfferReqOuterClass {
         }
       }
       /**
-       * <code>.HuntingPair hunting_pair = 14;</code>
+       * <code>.HuntingPair hunting_pair = 12;</code>
        */
       public Builder setHuntingPair(emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPair value) {
         if (huntingPairBuilder_ == null) {
@@ -555,7 +594,7 @@ public final class TakeHuntingOfferReqOuterClass {
         return this;
       }
       /**
-       * <code>.HuntingPair hunting_pair = 14;</code>
+       * <code>.HuntingPair hunting_pair = 12;</code>
        */
       public Builder setHuntingPair(
           emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPair.Builder builderForValue) {
@@ -569,7 +608,7 @@ public final class TakeHuntingOfferReqOuterClass {
         return this;
       }
       /**
-       * <code>.HuntingPair hunting_pair = 14;</code>
+       * <code>.HuntingPair hunting_pair = 12;</code>
        */
       public Builder mergeHuntingPair(emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPair value) {
         if (huntingPairBuilder_ == null) {
@@ -587,7 +626,7 @@ public final class TakeHuntingOfferReqOuterClass {
         return this;
       }
       /**
-       * <code>.HuntingPair hunting_pair = 14;</code>
+       * <code>.HuntingPair hunting_pair = 12;</code>
        */
       public Builder clearHuntingPair() {
         if (huntingPairBuilder_ == null) {
@@ -601,7 +640,7 @@ public final class TakeHuntingOfferReqOuterClass {
         return this;
       }
       /**
-       * <code>.HuntingPair hunting_pair = 14;</code>
+       * <code>.HuntingPair hunting_pair = 12;</code>
        */
       public emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPair.Builder getHuntingPairBuilder() {
         
@@ -609,7 +648,7 @@ public final class TakeHuntingOfferReqOuterClass {
         return getHuntingPairFieldBuilder().getBuilder();
       }
       /**
-       * <code>.HuntingPair hunting_pair = 14;</code>
+       * <code>.HuntingPair hunting_pair = 12;</code>
        */
       public emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPairOrBuilder getHuntingPairOrBuilder() {
         if (huntingPairBuilder_ != null) {
@@ -620,7 +659,7 @@ public final class TakeHuntingOfferReqOuterClass {
         }
       }
       /**
-       * <code>.HuntingPair hunting_pair = 14;</code>
+       * <code>.HuntingPair hunting_pair = 12;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPair, emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPair.Builder, emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPairOrBuilder> 
@@ -634,37 +673,6 @@ public final class TakeHuntingOfferReqOuterClass {
           huntingPair_ = null;
         }
         return huntingPairBuilder_;
-      }
-
-      private int cityId_ ;
-      /**
-       * <code>uint32 city_id = 4;</code>
-       * @return The cityId.
-       */
-      @java.lang.Override
-      public int getCityId() {
-        return cityId_;
-      }
-      /**
-       * <code>uint32 city_id = 4;</code>
-       * @param value The cityId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setCityId(int value) {
-        
-        cityId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 city_id = 4;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearCityId() {
-        
-        cityId_ = 0;
-        onChanged();
-        return this;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -734,9 +742,9 @@ public final class TakeHuntingOfferReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\031TakeHuntingOfferReq.proto\032\021HuntingPair" +
-      ".proto\"J\n\023TakeHuntingOfferReq\022\"\n\014hunting" +
-      "_pair\030\016 \001(\0132\014.HuntingPair\022\017\n\007city_id\030\004 \001" +
-      "(\rB\033\n\031emu.grasscutter.net.protob\006proto3"
+      ".proto\"J\n\023TakeHuntingOfferReq\022\017\n\007city_id" +
+      "\030\001 \001(\r\022\"\n\014hunting_pair\030\014 \001(\0132\014.HuntingPa" +
+      "irB\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -748,7 +756,7 @@ public final class TakeHuntingOfferReqOuterClass {
     internal_static_TakeHuntingOfferReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_TakeHuntingOfferReq_descriptor,
-        new java.lang.String[] { "HuntingPair", "CityId", });
+        new java.lang.String[] { "CityId", "HuntingPair", });
     emu.grasscutter.net.proto.HuntingPairOuterClass.getDescriptor();
   }
 

@@ -19,22 +19,26 @@ public final class PlantFlowerSetFlowerWishRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 schedule_id = 7;</code>
+     * <code>uint32 schedule_id = 5;</code>
      * @return The scheduleId.
      */
     int getScheduleId();
 
     /**
-     * <code>int32 retcode = 8;</code>
+     * <code>int32 retcode = 12;</code>
      * @return The retcode.
      */
     int getRetcode();
   }
   /**
    * <pre>
-   * CmdId: 8910
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 8324;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code PlantFlowerSetFlowerWishRsp}
@@ -81,12 +85,12 @@ public final class PlantFlowerSetFlowerWishRspOuterClass {
             case 0:
               done = true;
               break;
-            case 56: {
+            case 40: {
 
               scheduleId_ = input.readUInt32();
               break;
             }
-            case 64: {
+            case 96: {
 
               retcode_ = input.readInt32();
               break;
@@ -123,10 +127,10 @@ public final class PlantFlowerSetFlowerWishRspOuterClass {
               emu.grasscutter.net.proto.PlantFlowerSetFlowerWishRspOuterClass.PlantFlowerSetFlowerWishRsp.class, emu.grasscutter.net.proto.PlantFlowerSetFlowerWishRspOuterClass.PlantFlowerSetFlowerWishRsp.Builder.class);
     }
 
-    public static final int SCHEDULE_ID_FIELD_NUMBER = 7;
+    public static final int SCHEDULE_ID_FIELD_NUMBER = 5;
     private int scheduleId_;
     /**
-     * <code>uint32 schedule_id = 7;</code>
+     * <code>uint32 schedule_id = 5;</code>
      * @return The scheduleId.
      */
     @java.lang.Override
@@ -134,10 +138,10 @@ public final class PlantFlowerSetFlowerWishRspOuterClass {
       return scheduleId_;
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 8;
+    public static final int RETCODE_FIELD_NUMBER = 12;
     private int retcode_;
     /**
-     * <code>int32 retcode = 8;</code>
+     * <code>int32 retcode = 12;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -160,10 +164,10 @@ public final class PlantFlowerSetFlowerWishRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (scheduleId_ != 0) {
-        output.writeUInt32(7, scheduleId_);
+        output.writeUInt32(5, scheduleId_);
       }
       if (retcode_ != 0) {
-        output.writeInt32(8, retcode_);
+        output.writeInt32(12, retcode_);
       }
       unknownFields.writeTo(output);
     }
@@ -176,11 +180,11 @@ public final class PlantFlowerSetFlowerWishRspOuterClass {
       size = 0;
       if (scheduleId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, scheduleId_);
+          .computeUInt32Size(5, scheduleId_);
       }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(8, retcode_);
+          .computeInt32Size(12, retcode_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -313,9 +317,13 @@ public final class PlantFlowerSetFlowerWishRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 8910
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 8324;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code PlantFlowerSetFlowerWishRsp}
@@ -472,7 +480,7 @@ public final class PlantFlowerSetFlowerWishRspOuterClass {
 
       private int scheduleId_ ;
       /**
-       * <code>uint32 schedule_id = 7;</code>
+       * <code>uint32 schedule_id = 5;</code>
        * @return The scheduleId.
        */
       @java.lang.Override
@@ -480,7 +488,7 @@ public final class PlantFlowerSetFlowerWishRspOuterClass {
         return scheduleId_;
       }
       /**
-       * <code>uint32 schedule_id = 7;</code>
+       * <code>uint32 schedule_id = 5;</code>
        * @param value The scheduleId to set.
        * @return This builder for chaining.
        */
@@ -491,7 +499,7 @@ public final class PlantFlowerSetFlowerWishRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 schedule_id = 7;</code>
+       * <code>uint32 schedule_id = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearScheduleId() {
@@ -503,7 +511,7 @@ public final class PlantFlowerSetFlowerWishRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 8;</code>
+       * <code>int32 retcode = 12;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -511,7 +519,7 @@ public final class PlantFlowerSetFlowerWishRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 8;</code>
+       * <code>int32 retcode = 12;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -522,7 +530,7 @@ public final class PlantFlowerSetFlowerWishRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 8;</code>
+       * <code>int32 retcode = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -600,7 +608,7 @@ public final class PlantFlowerSetFlowerWishRspOuterClass {
     java.lang.String[] descriptorData = {
       "\n!PlantFlowerSetFlowerWishRsp.proto\"C\n\033P" +
       "lantFlowerSetFlowerWishRsp\022\023\n\013schedule_i" +
-      "d\030\007 \001(\r\022\017\n\007retcode\030\010 \001(\005B\033\n\031emu.grasscut" +
+      "d\030\005 \001(\r\022\017\n\007retcode\030\014 \001(\005B\033\n\031emu.grasscut" +
       "ter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

@@ -19,17 +19,17 @@ public final class DungeonCandidateTeamInviteReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated uint32 player_uids = 5;</code>
+     * <code>repeated uint32 player_uids = 4;</code>
      * @return A list containing the playerUids.
      */
     java.util.List<java.lang.Integer> getPlayerUidsList();
     /**
-     * <code>repeated uint32 player_uids = 5;</code>
+     * <code>repeated uint32 player_uids = 4;</code>
      * @return The count of playerUids.
      */
     int getPlayerUidsCount();
     /**
-     * <code>repeated uint32 player_uids = 5;</code>
+     * <code>repeated uint32 player_uids = 4;</code>
      * @param index The index of the element to return.
      * @return The playerUids at the given index.
      */
@@ -37,10 +37,14 @@ public final class DungeonCandidateTeamInviteReqOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 934
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 980;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code DungeonCandidateTeamInviteReq}
@@ -89,7 +93,7 @@ public final class DungeonCandidateTeamInviteReqOuterClass {
             case 0:
               done = true;
               break;
-            case 40: {
+            case 32: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 playerUids_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
@@ -97,7 +101,7 @@ public final class DungeonCandidateTeamInviteReqOuterClass {
               playerUids_.addInt(input.readUInt32());
               break;
             }
-            case 42: {
+            case 34: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -145,10 +149,10 @@ public final class DungeonCandidateTeamInviteReqOuterClass {
               emu.grasscutter.net.proto.DungeonCandidateTeamInviteReqOuterClass.DungeonCandidateTeamInviteReq.class, emu.grasscutter.net.proto.DungeonCandidateTeamInviteReqOuterClass.DungeonCandidateTeamInviteReq.Builder.class);
     }
 
-    public static final int PLAYER_UIDS_FIELD_NUMBER = 5;
+    public static final int PLAYER_UIDS_FIELD_NUMBER = 4;
     private com.google.protobuf.Internal.IntList playerUids_;
     /**
-     * <code>repeated uint32 player_uids = 5;</code>
+     * <code>repeated uint32 player_uids = 4;</code>
      * @return A list containing the playerUids.
      */
     @java.lang.Override
@@ -157,14 +161,14 @@ public final class DungeonCandidateTeamInviteReqOuterClass {
       return playerUids_;
     }
     /**
-     * <code>repeated uint32 player_uids = 5;</code>
+     * <code>repeated uint32 player_uids = 4;</code>
      * @return The count of playerUids.
      */
     public int getPlayerUidsCount() {
       return playerUids_.size();
     }
     /**
-     * <code>repeated uint32 player_uids = 5;</code>
+     * <code>repeated uint32 player_uids = 4;</code>
      * @param index The index of the element to return.
      * @return The playerUids at the given index.
      */
@@ -189,7 +193,7 @@ public final class DungeonCandidateTeamInviteReqOuterClass {
                         throws java.io.IOException {
       getSerializedSize();
       if (getPlayerUidsList().size() > 0) {
-        output.writeUInt32NoTag(42);
+        output.writeUInt32NoTag(34);
         output.writeUInt32NoTag(playerUidsMemoizedSerializedSize);
       }
       for (int i = 0; i < playerUids_.size(); i++) {
@@ -347,10 +351,14 @@ public final class DungeonCandidateTeamInviteReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 934
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 980;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code DungeonCandidateTeamInviteReq}
@@ -520,7 +528,7 @@ public final class DungeonCandidateTeamInviteReqOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 player_uids = 5;</code>
+       * <code>repeated uint32 player_uids = 4;</code>
        * @return A list containing the playerUids.
        */
       public java.util.List<java.lang.Integer>
@@ -529,14 +537,14 @@ public final class DungeonCandidateTeamInviteReqOuterClass {
                  java.util.Collections.unmodifiableList(playerUids_) : playerUids_;
       }
       /**
-       * <code>repeated uint32 player_uids = 5;</code>
+       * <code>repeated uint32 player_uids = 4;</code>
        * @return The count of playerUids.
        */
       public int getPlayerUidsCount() {
         return playerUids_.size();
       }
       /**
-       * <code>repeated uint32 player_uids = 5;</code>
+       * <code>repeated uint32 player_uids = 4;</code>
        * @param index The index of the element to return.
        * @return The playerUids at the given index.
        */
@@ -544,7 +552,7 @@ public final class DungeonCandidateTeamInviteReqOuterClass {
         return playerUids_.getInt(index);
       }
       /**
-       * <code>repeated uint32 player_uids = 5;</code>
+       * <code>repeated uint32 player_uids = 4;</code>
        * @param index The index to set the value at.
        * @param value The playerUids to set.
        * @return This builder for chaining.
@@ -557,7 +565,7 @@ public final class DungeonCandidateTeamInviteReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 player_uids = 5;</code>
+       * <code>repeated uint32 player_uids = 4;</code>
        * @param value The playerUids to add.
        * @return This builder for chaining.
        */
@@ -568,7 +576,7 @@ public final class DungeonCandidateTeamInviteReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 player_uids = 5;</code>
+       * <code>repeated uint32 player_uids = 4;</code>
        * @param values The playerUids to add.
        * @return This builder for chaining.
        */
@@ -581,7 +589,7 @@ public final class DungeonCandidateTeamInviteReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 player_uids = 5;</code>
+       * <code>repeated uint32 player_uids = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearPlayerUids() {
@@ -659,7 +667,7 @@ public final class DungeonCandidateTeamInviteReqOuterClass {
     java.lang.String[] descriptorData = {
       "\n#DungeonCandidateTeamInviteReq.proto\"4\n" +
       "\035DungeonCandidateTeamInviteReq\022\023\n\013player" +
-      "_uids\030\005 \003(\rB\033\n\031emu.grasscutter.net.proto" +
+      "_uids\030\004 \003(\rB\033\n\031emu.grasscutter.net.proto" +
       "b\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

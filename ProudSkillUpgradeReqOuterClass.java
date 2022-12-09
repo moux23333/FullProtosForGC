@@ -19,29 +19,33 @@ public final class ProudSkillUpgradeReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint64 avatar_guid = 5;</code>
+     * <code>uint64 avatar_guid = 13;</code>
      * @return The avatarGuid.
      */
     long getAvatarGuid();
 
     /**
-     * <code>uint32 old_proud_skill_level = 4;</code>
+     * <code>uint32 old_proud_skill_level = 3;</code>
      * @return The oldProudSkillLevel.
      */
     int getOldProudSkillLevel();
 
     /**
-     * <code>uint32 proud_skill_id = 14;</code>
+     * <code>uint32 proud_skill_id = 2;</code>
      * @return The proudSkillId.
      */
     int getProudSkillId();
   }
   /**
    * <pre>
-   * CmdId: 1073
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 1078;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code ProudSkillUpgradeReq}
@@ -88,19 +92,19 @@ public final class ProudSkillUpgradeReqOuterClass {
             case 0:
               done = true;
               break;
-            case 32: {
+            case 16: {
+
+              proudSkillId_ = input.readUInt32();
+              break;
+            }
+            case 24: {
 
               oldProudSkillLevel_ = input.readUInt32();
               break;
             }
-            case 40: {
+            case 104: {
 
               avatarGuid_ = input.readUInt64();
-              break;
-            }
-            case 112: {
-
-              proudSkillId_ = input.readUInt32();
               break;
             }
             default: {
@@ -135,10 +139,10 @@ public final class ProudSkillUpgradeReqOuterClass {
               emu.grasscutter.net.proto.ProudSkillUpgradeReqOuterClass.ProudSkillUpgradeReq.class, emu.grasscutter.net.proto.ProudSkillUpgradeReqOuterClass.ProudSkillUpgradeReq.Builder.class);
     }
 
-    public static final int AVATAR_GUID_FIELD_NUMBER = 5;
+    public static final int AVATAR_GUID_FIELD_NUMBER = 13;
     private long avatarGuid_;
     /**
-     * <code>uint64 avatar_guid = 5;</code>
+     * <code>uint64 avatar_guid = 13;</code>
      * @return The avatarGuid.
      */
     @java.lang.Override
@@ -146,10 +150,10 @@ public final class ProudSkillUpgradeReqOuterClass {
       return avatarGuid_;
     }
 
-    public static final int OLD_PROUD_SKILL_LEVEL_FIELD_NUMBER = 4;
+    public static final int OLD_PROUD_SKILL_LEVEL_FIELD_NUMBER = 3;
     private int oldProudSkillLevel_;
     /**
-     * <code>uint32 old_proud_skill_level = 4;</code>
+     * <code>uint32 old_proud_skill_level = 3;</code>
      * @return The oldProudSkillLevel.
      */
     @java.lang.Override
@@ -157,10 +161,10 @@ public final class ProudSkillUpgradeReqOuterClass {
       return oldProudSkillLevel_;
     }
 
-    public static final int PROUD_SKILL_ID_FIELD_NUMBER = 14;
+    public static final int PROUD_SKILL_ID_FIELD_NUMBER = 2;
     private int proudSkillId_;
     /**
-     * <code>uint32 proud_skill_id = 14;</code>
+     * <code>uint32 proud_skill_id = 2;</code>
      * @return The proudSkillId.
      */
     @java.lang.Override
@@ -182,14 +186,14 @@ public final class ProudSkillUpgradeReqOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (proudSkillId_ != 0) {
+        output.writeUInt32(2, proudSkillId_);
+      }
       if (oldProudSkillLevel_ != 0) {
-        output.writeUInt32(4, oldProudSkillLevel_);
+        output.writeUInt32(3, oldProudSkillLevel_);
       }
       if (avatarGuid_ != 0L) {
-        output.writeUInt64(5, avatarGuid_);
-      }
-      if (proudSkillId_ != 0) {
-        output.writeUInt32(14, proudSkillId_);
+        output.writeUInt64(13, avatarGuid_);
       }
       unknownFields.writeTo(output);
     }
@@ -200,17 +204,17 @@ public final class ProudSkillUpgradeReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (proudSkillId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(2, proudSkillId_);
+      }
       if (oldProudSkillLevel_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, oldProudSkillLevel_);
+          .computeUInt32Size(3, oldProudSkillLevel_);
       }
       if (avatarGuid_ != 0L) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt64Size(5, avatarGuid_);
-      }
-      if (proudSkillId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, proudSkillId_);
+          .computeUInt64Size(13, avatarGuid_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -348,10 +352,14 @@ public final class ProudSkillUpgradeReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 1073
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 1078;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code ProudSkillUpgradeReq}
@@ -514,7 +522,7 @@ public final class ProudSkillUpgradeReqOuterClass {
 
       private long avatarGuid_ ;
       /**
-       * <code>uint64 avatar_guid = 5;</code>
+       * <code>uint64 avatar_guid = 13;</code>
        * @return The avatarGuid.
        */
       @java.lang.Override
@@ -522,7 +530,7 @@ public final class ProudSkillUpgradeReqOuterClass {
         return avatarGuid_;
       }
       /**
-       * <code>uint64 avatar_guid = 5;</code>
+       * <code>uint64 avatar_guid = 13;</code>
        * @param value The avatarGuid to set.
        * @return This builder for chaining.
        */
@@ -533,7 +541,7 @@ public final class ProudSkillUpgradeReqOuterClass {
         return this;
       }
       /**
-       * <code>uint64 avatar_guid = 5;</code>
+       * <code>uint64 avatar_guid = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearAvatarGuid() {
@@ -545,7 +553,7 @@ public final class ProudSkillUpgradeReqOuterClass {
 
       private int oldProudSkillLevel_ ;
       /**
-       * <code>uint32 old_proud_skill_level = 4;</code>
+       * <code>uint32 old_proud_skill_level = 3;</code>
        * @return The oldProudSkillLevel.
        */
       @java.lang.Override
@@ -553,7 +561,7 @@ public final class ProudSkillUpgradeReqOuterClass {
         return oldProudSkillLevel_;
       }
       /**
-       * <code>uint32 old_proud_skill_level = 4;</code>
+       * <code>uint32 old_proud_skill_level = 3;</code>
        * @param value The oldProudSkillLevel to set.
        * @return This builder for chaining.
        */
@@ -564,7 +572,7 @@ public final class ProudSkillUpgradeReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 old_proud_skill_level = 4;</code>
+       * <code>uint32 old_proud_skill_level = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearOldProudSkillLevel() {
@@ -576,7 +584,7 @@ public final class ProudSkillUpgradeReqOuterClass {
 
       private int proudSkillId_ ;
       /**
-       * <code>uint32 proud_skill_id = 14;</code>
+       * <code>uint32 proud_skill_id = 2;</code>
        * @return The proudSkillId.
        */
       @java.lang.Override
@@ -584,7 +592,7 @@ public final class ProudSkillUpgradeReqOuterClass {
         return proudSkillId_;
       }
       /**
-       * <code>uint32 proud_skill_id = 14;</code>
+       * <code>uint32 proud_skill_id = 2;</code>
        * @param value The proudSkillId to set.
        * @return This builder for chaining.
        */
@@ -595,7 +603,7 @@ public final class ProudSkillUpgradeReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 proud_skill_id = 14;</code>
+       * <code>uint32 proud_skill_id = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearProudSkillId() {
@@ -672,9 +680,9 @@ public final class ProudSkillUpgradeReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\032ProudSkillUpgradeReq.proto\"b\n\024ProudSki" +
-      "llUpgradeReq\022\023\n\013avatar_guid\030\005 \001(\004\022\035\n\025old" +
-      "_proud_skill_level\030\004 \001(\r\022\026\n\016proud_skill_" +
-      "id\030\016 \001(\rB\033\n\031emu.grasscutter.net.protob\006p" +
+      "llUpgradeReq\022\023\n\013avatar_guid\030\r \001(\004\022\035\n\025old" +
+      "_proud_skill_level\030\003 \001(\r\022\026\n\016proud_skill_" +
+      "id\030\002 \001(\rB\033\n\031emu.grasscutter.net.protob\006p" +
       "roto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

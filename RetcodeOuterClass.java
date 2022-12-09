@@ -20,8264 +20,9576 @@ public final class RetcodeOuterClass {
   public enum Retcode
       implements com.google.protobuf.ProtocolMessageEnum {
     /**
-     * <code>RETCODE_RET_SUCC = 0;</code>
+     * <code>RET_SUCC = 0;</code>
      */
-    RETCODE_RET_SUCC(0),
+    RET_SUCC(0),
     /**
-     * <code>RETCODE_RET_FAIL = -1;</code>
+     * <code>RET_FAIL = -1;</code>
      */
-    RETCODE_RET_FAIL(-1),
+    RET_FAIL(-1),
     /**
-     * <code>RETCODE_RET_SVR_ERROR = 1;</code>
+     * <code>RET_SVR_ERROR = 1;</code>
      */
-    RETCODE_RET_SVR_ERROR(1),
+    RET_SVR_ERROR(1),
     /**
-     * <code>RETCODE_RET_UNKNOWN_ERROR = 2;</code>
+     * <code>RET_UNKNOWN_ERROR = 2;</code>
      */
-    RETCODE_RET_UNKNOWN_ERROR(2),
+    RET_UNKNOWN_ERROR(2),
     /**
-     * <code>RETCODE_RET_FREQUENT = 3;</code>
+     * <code>RET_FREQUENT = 3;</code>
      */
-    RETCODE_RET_FREQUENT(3),
+    RET_FREQUENT(3),
     /**
-     * <code>RETCODE_RET_NODE_FORWARD_ERROR = 4;</code>
+     * <code>RET_NODE_FORWARD_ERROR = 4;</code>
      */
-    RETCODE_RET_NODE_FORWARD_ERROR(4),
+    RET_NODE_FORWARD_ERROR(4),
     /**
-     * <code>RETCODE_RET_NOT_FOUND_CONFIG = 5;</code>
+     * <code>RET_NOT_FOUND_CONFIG = 5;</code>
      */
-    RETCODE_RET_NOT_FOUND_CONFIG(5),
+    RET_NOT_FOUND_CONFIG(5),
     /**
-     * <code>RETCODE_RET_SYSTEM_BUSY = 6;</code>
+     * <code>RET_SYSTEM_BUSY = 6;</code>
      */
-    RETCODE_RET_SYSTEM_BUSY(6),
+    RET_SYSTEM_BUSY(6),
     /**
-     * <code>RETCODE_RET_GM_UID_BIND = 7;</code>
+     * <code>RET_GM_UID_BIND = 7;</code>
      */
-    RETCODE_RET_GM_UID_BIND(7),
+    RET_GM_UID_BIND(7),
     /**
-     * <code>RETCODE_RET_FORBIDDEN = 8;</code>
+     * <code>RET_FORBIDDEN = 8;</code>
      */
-    RETCODE_RET_FORBIDDEN(8),
+    RET_FORBIDDEN(8),
     /**
-     * <code>RETCODE_RET_STOP_REGISTER = 10;</code>
+     * <code>RET_STOP_REGISTER = 10;</code>
      */
-    RETCODE_RET_STOP_REGISTER(10),
+    RET_STOP_REGISTER(10),
     /**
-     * <code>RETCODE_RET_STOP_SERVER = 11;</code>
+     * <code>RET_STOP_SERVER = 11;</code>
      */
-    RETCODE_RET_STOP_SERVER(11),
+    RET_STOP_SERVER(11),
     /**
-     * <code>RETCODE_RET_ACCOUNT_VEIRFY_ERROR = 12;</code>
+     * <code>RET_ACCOUNT_VEIRFY_ERROR = 12;</code>
      */
-    RETCODE_RET_ACCOUNT_VEIRFY_ERROR(12),
+    RET_ACCOUNT_VEIRFY_ERROR(12),
     /**
-     * <code>RETCODE_RET_ACCOUNT_FREEZE = 13;</code>
+     * <code>RET_ACCOUNT_FREEZE = 13;</code>
      */
-    RETCODE_RET_ACCOUNT_FREEZE(13),
+    RET_ACCOUNT_FREEZE(13),
     /**
-     * <code>RETCODE_RET_REPEAT_LOGIN = 14;</code>
+     * <code>RET_REPEAT_LOGIN = 14;</code>
      */
-    RETCODE_RET_REPEAT_LOGIN(14),
+    RET_REPEAT_LOGIN(14),
     /**
-     * <code>RETCODE_RET_CLIENT_VERSION_ERROR = 15;</code>
+     * <code>RET_CLIENT_VERSION_ERROR = 15;</code>
      */
-    RETCODE_RET_CLIENT_VERSION_ERROR(15),
+    RET_CLIENT_VERSION_ERROR(15),
     /**
-     * <code>RETCODE_RET_TOKEN_ERROR = 16;</code>
+     * <code>RET_TOKEN_ERROR = 16;</code>
      */
-    RETCODE_RET_TOKEN_ERROR(16),
+    RET_TOKEN_ERROR(16),
     /**
-     * <code>RETCODE_RET_ACCOUNT_NOT_EXIST = 17;</code>
+     * <code>RET_ACCOUNT_NOT_EXIST = 17;</code>
      */
-    RETCODE_RET_ACCOUNT_NOT_EXIST(17),
+    RET_ACCOUNT_NOT_EXIST(17),
     /**
-     * <code>RETCODE_RET_WAIT_OTHER_LOGIN = 18;</code>
+     * <code>RET_WAIT_OTHER_LOGIN = 18;</code>
      */
-    RETCODE_RET_WAIT_OTHER_LOGIN(18),
+    RET_WAIT_OTHER_LOGIN(18),
     /**
-     * <code>RETCODE_RET_ANOTHER_LOGIN = 19;</code>
+     * <code>RET_ANOTHER_LOGIN = 19;</code>
      */
-    RETCODE_RET_ANOTHER_LOGIN(19),
+    RET_ANOTHER_LOGIN(19),
     /**
-     * <code>RETCODE_RET_CLIENT_FORCE_UPDATE = 20;</code>
+     * <code>RET_CLIENT_FORCE_UPDATE = 20;</code>
      */
-    RETCODE_RET_CLIENT_FORCE_UPDATE(20),
+    RET_CLIENT_FORCE_UPDATE(20),
     /**
-     * <code>RETCODE_RET_BLACK_UID = 21;</code>
+     * <code>RET_BLACK_UID = 21;</code>
      */
-    RETCODE_RET_BLACK_UID(21),
+    RET_BLACK_UID(21),
     /**
-     * <code>RETCODE_RET_LOGIN_DB_FAIL = 22;</code>
+     * <code>RET_LOGIN_DB_FAIL = 22;</code>
      */
-    RETCODE_RET_LOGIN_DB_FAIL(22),
+    RET_LOGIN_DB_FAIL(22),
     /**
-     * <code>RETCODE_RET_LOGIN_INIT_FAIL = 23;</code>
+     * <code>RET_LOGIN_INIT_FAIL = 23;</code>
      */
-    RETCODE_RET_LOGIN_INIT_FAIL(23),
+    RET_LOGIN_INIT_FAIL(23),
     /**
-     * <code>RETCODE_RET_MYSQL_DUPLICATE = 24;</code>
+     * <code>RET_MYSQL_DUPLICATE = 24;</code>
      */
-    RETCODE_RET_MYSQL_DUPLICATE(24),
+    RET_MYSQL_DUPLICATE(24),
     /**
-     * <code>RETCODE_RET_MAX_PLAYER = 25;</code>
+     * <code>RET_MAX_PLAYER = 25;</code>
      */
-    RETCODE_RET_MAX_PLAYER(25),
+    RET_MAX_PLAYER(25),
     /**
-     * <code>RETCODE_RET_ANTI_ADDICT = 26;</code>
+     * <code>RET_ANTI_ADDICT = 26;</code>
      */
-    RETCODE_RET_ANTI_ADDICT(26),
+    RET_ANTI_ADDICT(26),
     /**
-     * <code>RETCODE_RET_PS_PLAYER_WITHOUT_ONLINE_ID = 27;</code>
+     * <code>RET_PS_PLAYER_WITHOUT_ONLINE_ID = 27;</code>
      */
-    RETCODE_RET_PS_PLAYER_WITHOUT_ONLINE_ID(27),
+    RET_PS_PLAYER_WITHOUT_ONLINE_ID(27),
     /**
-     * <code>RETCODE_RET_ONLINE_ID_NOT_FOUND = 28;</code>
+     * <code>RET_ONLINE_ID_NOT_FOUND = 28;</code>
      */
-    RETCODE_RET_ONLINE_ID_NOT_FOUND(28),
+    RET_ONLINE_ID_NOT_FOUND(28),
     /**
-     * <code>RETCODE_RET_ONLNE_ID_NOT_MATCH = 29;</code>
+     * <code>RET_ONLNE_ID_NOT_MATCH = 29;</code>
      */
-    RETCODE_RET_ONLNE_ID_NOT_MATCH(29),
+    RET_ONLNE_ID_NOT_MATCH(29),
     /**
-     * <code>RETCODE_RET_REGISTER_IS_FULL = 30;</code>
+     * <code>RET_REGISTER_IS_FULL = 30;</code>
      */
-    RETCODE_RET_REGISTER_IS_FULL(30),
+    RET_REGISTER_IS_FULL(30),
     /**
-     * <code>RETCODE_RET_CHECKSUM_INVALID = 31;</code>
+     * <code>RET_CHECKSUM_INVALID = 31;</code>
      */
-    RETCODE_RET_CHECKSUM_INVALID(31),
+    RET_CHECKSUM_INVALID(31),
     /**
-     * <code>RETCODE_RET_BLACK_REGISTER_IP = 32;</code>
+     * <code>RET_BLACK_REGISTER_IP = 32;</code>
      */
-    RETCODE_RET_BLACK_REGISTER_IP(32),
+    RET_BLACK_REGISTER_IP(32),
     /**
-     * <code>RETCODE_RET_EXCEED_REGISTER_RATE = 33;</code>
+     * <code>RET_EXCEED_REGISTER_RATE = 33;</code>
      */
-    RETCODE_RET_EXCEED_REGISTER_RATE(33),
+    RET_EXCEED_REGISTER_RATE(33),
     /**
-     * <code>RETCODE_RET_UNKNOWN_PLATFORM = 34;</code>
+     * <code>RET_UNKNOWN_PLATFORM = 34;</code>
      */
-    RETCODE_RET_UNKNOWN_PLATFORM(34),
+    RET_UNKNOWN_PLATFORM(34),
     /**
-     * <code>RETCODE_RET_TOKEN_PARAM_ERROR = 35;</code>
+     * <code>RET_TOKEN_PARAM_ERROR = 35;</code>
      */
-    RETCODE_RET_TOKEN_PARAM_ERROR(35),
+    RET_TOKEN_PARAM_ERROR(35),
     /**
-     * <code>RETCODE_RET_ANTI_OFFLINE_ERROR = 36;</code>
+     * <code>RET_ANTI_OFFLINE_ERROR = 36;</code>
      */
-    RETCODE_RET_ANTI_OFFLINE_ERROR(36),
+    RET_ANTI_OFFLINE_ERROR(36),
     /**
-     * <code>RETCODE_RET_BLACK_LOGIN_IP = 37;</code>
+     * <code>RET_BLACK_LOGIN_IP = 37;</code>
      */
-    RETCODE_RET_BLACK_LOGIN_IP(37),
+    RET_BLACK_LOGIN_IP(37),
     /**
-     * <code>RETCODE_RET_GET_TOKEN_SESSION_HAS_UID = 38;</code>
+     * <code>RET_GET_TOKEN_SESSION_HAS_UID = 38;</code>
      */
-    RETCODE_RET_GET_TOKEN_SESSION_HAS_UID(38),
+    RET_GET_TOKEN_SESSION_HAS_UID(38),
     /**
-     * <code>RETCODE_RET_ENVIRONMENT_ERROR = 39;</code>
+     * <code>RET_ENVIRONMENT_ERROR = 39;</code>
      */
-    RETCODE_RET_ENVIRONMENT_ERROR(39),
+    RET_ENVIRONMENT_ERROR(39),
     /**
-     * <code>RETCODE_RET_CHECK_CLIENT_VERSION_HASH_FAIL = 40;</code>
+     * <code>RET_CHECK_CLIENT_VERSION_HASH_FAIL = 40;</code>
      */
-    RETCODE_RET_CHECK_CLIENT_VERSION_HASH_FAIL(40),
+    RET_CHECK_CLIENT_VERSION_HASH_FAIL(40),
     /**
-     * <code>RETCODE_RET_MINOR_REGISTER_FOBIDDEN = 41;</code>
+     * <code>RET_MINOR_REGISTER_FOBIDDEN = 41;</code>
      */
-    RETCODE_RET_MINOR_REGISTER_FOBIDDEN(41),
+    RET_MINOR_REGISTER_FOBIDDEN(41),
     /**
-     * <code>RETCODE_RET_SECURITY_LIBRARY_ERROR = 42;</code>
+     * <code>RET_SECURITY_LIBRARY_ERROR = 42;</code>
      */
-    RETCODE_RET_SECURITY_LIBRARY_ERROR(42),
+    RET_SECURITY_LIBRARY_ERROR(42),
     /**
-     * <code>RETCODE_RET_AVATAR_IN_CD = 101;</code>
+     * <code>RET_AVATAR_IN_CD = 101;</code>
      */
-    RETCODE_RET_AVATAR_IN_CD(101),
+    RET_AVATAR_IN_CD(101),
     /**
-     * <code>RETCODE_RET_AVATAR_NOT_ALIVE = 102;</code>
+     * <code>RET_AVATAR_NOT_ALIVE = 102;</code>
      */
-    RETCODE_RET_AVATAR_NOT_ALIVE(102),
+    RET_AVATAR_NOT_ALIVE(102),
     /**
-     * <code>RETCODE_RET_AVATAR_NOT_ON_SCENE = 103;</code>
+     * <code>RET_AVATAR_NOT_ON_SCENE = 103;</code>
      */
-    RETCODE_RET_AVATAR_NOT_ON_SCENE(103),
+    RET_AVATAR_NOT_ON_SCENE(103),
     /**
-     * <code>RETCODE_RET_CAN_NOT_FIND_AVATAR = 104;</code>
+     * <code>RET_CAN_NOT_FIND_AVATAR = 104;</code>
      */
-    RETCODE_RET_CAN_NOT_FIND_AVATAR(104),
+    RET_CAN_NOT_FIND_AVATAR(104),
     /**
-     * <code>RETCODE_RET_CAN_NOT_DEL_CUR_AVATAR = 105;</code>
+     * <code>RET_CAN_NOT_DEL_CUR_AVATAR = 105;</code>
      */
-    RETCODE_RET_CAN_NOT_DEL_CUR_AVATAR(105),
+    RET_CAN_NOT_DEL_CUR_AVATAR(105),
     /**
-     * <code>RETCODE_RET_DUPLICATE_AVATAR = 106;</code>
+     * <code>RET_DUPLICATE_AVATAR = 106;</code>
      */
-    RETCODE_RET_DUPLICATE_AVATAR(106),
+    RET_DUPLICATE_AVATAR(106),
     /**
-     * <code>RETCODE_RET_AVATAR_IS_SAME_ONE = 107;</code>
+     * <code>RET_AVATAR_IS_SAME_ONE = 107;</code>
      */
-    RETCODE_RET_AVATAR_IS_SAME_ONE(107),
+    RET_AVATAR_IS_SAME_ONE(107),
     /**
-     * <code>RETCODE_RET_AVATAR_LEVEL_LESS_THAN = 108;</code>
+     * <code>RET_AVATAR_LEVEL_LESS_THAN = 108;</code>
      */
-    RETCODE_RET_AVATAR_LEVEL_LESS_THAN(108),
+    RET_AVATAR_LEVEL_LESS_THAN(108),
     /**
-     * <code>RETCODE_RET_AVATAR_CAN_NOT_CHANGE_ELEMENT = 109;</code>
+     * <code>RET_AVATAR_CAN_NOT_CHANGE_ELEMENT = 109;</code>
      */
-    RETCODE_RET_AVATAR_CAN_NOT_CHANGE_ELEMENT(109),
+    RET_AVATAR_CAN_NOT_CHANGE_ELEMENT(109),
     /**
-     * <code>RETCODE_RET_AVATAR_BREAK_LEVEL_LESS_THAN = 110;</code>
+     * <code>RET_AVATAR_BREAK_LEVEL_LESS_THAN = 110;</code>
      */
-    RETCODE_RET_AVATAR_BREAK_LEVEL_LESS_THAN(110),
+    RET_AVATAR_BREAK_LEVEL_LESS_THAN(110),
     /**
-     * <code>RETCODE_RET_AVATAR_ON_MAX_BREAK_LEVEL = 111;</code>
+     * <code>RET_AVATAR_ON_MAX_BREAK_LEVEL = 111;</code>
      */
-    RETCODE_RET_AVATAR_ON_MAX_BREAK_LEVEL(111),
+    RET_AVATAR_ON_MAX_BREAK_LEVEL(111),
     /**
-     * <code>RETCODE_RET_AVATAR_ID_ALREADY_EXIST = 112;</code>
+     * <code>RET_AVATAR_ID_ALREADY_EXIST = 112;</code>
      */
-    RETCODE_RET_AVATAR_ID_ALREADY_EXIST(112),
+    RET_AVATAR_ID_ALREADY_EXIST(112),
     /**
-     * <code>RETCODE_RET_AVATAR_NOT_DEAD = 113;</code>
+     * <code>RET_AVATAR_NOT_DEAD = 113;</code>
      */
-    RETCODE_RET_AVATAR_NOT_DEAD(113),
+    RET_AVATAR_NOT_DEAD(113),
     /**
-     * <code>RETCODE_RET_AVATAR_IS_REVIVING = 114;</code>
+     * <code>RET_AVATAR_IS_REVIVING = 114;</code>
      */
-    RETCODE_RET_AVATAR_IS_REVIVING(114),
+    RET_AVATAR_IS_REVIVING(114),
     /**
-     * <code>RETCODE_RET_AVATAR_ID_ERROR = 115;</code>
+     * <code>RET_AVATAR_ID_ERROR = 115;</code>
      */
-    RETCODE_RET_AVATAR_ID_ERROR(115),
+    RET_AVATAR_ID_ERROR(115),
     /**
-     * <code>RETCODE_RET_REPEAT_SET_PLAYER_BORN_DATA = 116;</code>
+     * <code>RET_REPEAT_SET_PLAYER_BORN_DATA = 116;</code>
      */
-    RETCODE_RET_REPEAT_SET_PLAYER_BORN_DATA(116),
+    RET_REPEAT_SET_PLAYER_BORN_DATA(116),
     /**
-     * <code>RETCODE_RET_PLAYER_LEVEL_LESS_THAN = 117;</code>
+     * <code>RET_PLAYER_LEVEL_LESS_THAN = 117;</code>
      */
-    RETCODE_RET_PLAYER_LEVEL_LESS_THAN(117),
+    RET_PLAYER_LEVEL_LESS_THAN(117),
     /**
-     * <code>RETCODE_RET_AVATAR_LIMIT_LEVEL_ERROR = 118;</code>
+     * <code>RET_AVATAR_LIMIT_LEVEL_ERROR = 118;</code>
      */
-    RETCODE_RET_AVATAR_LIMIT_LEVEL_ERROR(118),
+    RET_AVATAR_LIMIT_LEVEL_ERROR(118),
     /**
-     * <code>RETCODE_RET_CUR_AVATAR_NOT_ALIVE = 119;</code>
+     * <code>RET_CUR_AVATAR_NOT_ALIVE = 119;</code>
      */
-    RETCODE_RET_CUR_AVATAR_NOT_ALIVE(119),
+    RET_CUR_AVATAR_NOT_ALIVE(119),
     /**
-     * <code>RETCODE_RET_CAN_NOT_FIND_TEAM = 120;</code>
+     * <code>RET_CAN_NOT_FIND_TEAM = 120;</code>
      */
-    RETCODE_RET_CAN_NOT_FIND_TEAM(120),
+    RET_CAN_NOT_FIND_TEAM(120),
     /**
-     * <code>RETCODE_RET_CAN_NOT_FIND_CUR_TEAM = 121;</code>
+     * <code>RET_CAN_NOT_FIND_CUR_TEAM = 121;</code>
      */
-    RETCODE_RET_CAN_NOT_FIND_CUR_TEAM(121),
+    RET_CAN_NOT_FIND_CUR_TEAM(121),
     /**
-     * <code>RETCODE_RET_AVATAR_NOT_EXIST_IN_TEAM = 122;</code>
+     * <code>RET_AVATAR_NOT_EXIST_IN_TEAM = 122;</code>
      */
-    RETCODE_RET_AVATAR_NOT_EXIST_IN_TEAM(122),
+    RET_AVATAR_NOT_EXIST_IN_TEAM(122),
     /**
-     * <code>RETCODE_RET_CAN_NOT_REMOVE_CUR_AVATAR_FROM_TEAM = 123;</code>
+     * <code>RET_CAN_NOT_REMOVE_CUR_AVATAR_FROM_TEAM = 123;</code>
      */
-    RETCODE_RET_CAN_NOT_REMOVE_CUR_AVATAR_FROM_TEAM(123),
+    RET_CAN_NOT_REMOVE_CUR_AVATAR_FROM_TEAM(123),
     /**
-     * <code>RETCODE_RET_CAN_NOT_USE_REVIVE_ITEM_FOR_CUR_AVATAR = 124;</code>
+     * <code>RET_CAN_NOT_USE_REVIVE_ITEM_FOR_CUR_AVATAR = 124;</code>
      */
-    RETCODE_RET_CAN_NOT_USE_REVIVE_ITEM_FOR_CUR_AVATAR(124),
+    RET_CAN_NOT_USE_REVIVE_ITEM_FOR_CUR_AVATAR(124),
     /**
-     * <code>RETCODE_RET_TEAM_COST_EXCEED_LIMIT = 125;</code>
+     * <code>RET_TEAM_COST_EXCEED_LIMIT = 125;</code>
      */
-    RETCODE_RET_TEAM_COST_EXCEED_LIMIT(125),
+    RET_TEAM_COST_EXCEED_LIMIT(125),
     /**
-     * <code>RETCODE_RET_TEAM_AVATAR_IN_EXPEDITION = 126;</code>
+     * <code>RET_TEAM_AVATAR_IN_EXPEDITION = 126;</code>
      */
-    RETCODE_RET_TEAM_AVATAR_IN_EXPEDITION(126),
+    RET_TEAM_AVATAR_IN_EXPEDITION(126),
     /**
-     * <code>RETCODE_RET_TEAM_CAN_NOT_CHOSE_REPLACE_USE = 127;</code>
+     * <code>RET_TEAM_CAN_NOT_CHOSE_REPLACE_USE = 127;</code>
      */
-    RETCODE_RET_TEAM_CAN_NOT_CHOSE_REPLACE_USE(127),
+    RET_TEAM_CAN_NOT_CHOSE_REPLACE_USE(127),
     /**
-     * <code>RETCODE_RET_AVATAR_IN_COMBAT = 128;</code>
+     * <code>RET_AVATAR_IN_COMBAT = 128;</code>
      */
-    RETCODE_RET_AVATAR_IN_COMBAT(128),
+    RET_AVATAR_IN_COMBAT(128),
     /**
-     * <code>RETCODE_RET_NICKNAME_UTF8_ERROR = 130;</code>
+     * <code>RET_NICKNAME_UTF8_ERROR = 130;</code>
      */
-    RETCODE_RET_NICKNAME_UTF8_ERROR(130),
+    RET_NICKNAME_UTF8_ERROR(130),
     /**
-     * <code>RETCODE_RET_NICKNAME_TOO_LONG = 131;</code>
+     * <code>RET_NICKNAME_TOO_LONG = 131;</code>
      */
-    RETCODE_RET_NICKNAME_TOO_LONG(131),
+    RET_NICKNAME_TOO_LONG(131),
     /**
-     * <code>RETCODE_RET_NICKNAME_WORD_ILLEGAL = 132;</code>
+     * <code>RET_NICKNAME_WORD_ILLEGAL = 132;</code>
      */
-    RETCODE_RET_NICKNAME_WORD_ILLEGAL(132),
+    RET_NICKNAME_WORD_ILLEGAL(132),
     /**
-     * <code>RETCODE_RET_NICKNAME_TOO_MANY_DIGITS = 133;</code>
+     * <code>RET_NICKNAME_TOO_MANY_DIGITS = 133;</code>
      */
-    RETCODE_RET_NICKNAME_TOO_MANY_DIGITS(133),
+    RET_NICKNAME_TOO_MANY_DIGITS(133),
     /**
-     * <code>RETCODE_RET_NICKNAME_IS_EMPTY = 134;</code>
+     * <code>RET_NICKNAME_IS_EMPTY = 134;</code>
      */
-    RETCODE_RET_NICKNAME_IS_EMPTY(134),
+    RET_NICKNAME_IS_EMPTY(134),
     /**
-     * <code>RETCODE_RET_NICKNAME_MONTHLY_LIMIT = 135;</code>
+     * <code>RET_NICKNAME_MONTHLY_LIMIT = 135;</code>
      */
-    RETCODE_RET_NICKNAME_MONTHLY_LIMIT(135),
+    RET_NICKNAME_MONTHLY_LIMIT(135),
     /**
-     * <code>RETCODE_RET_NICKNAME_NOT_CHANGED = 136;</code>
+     * <code>RET_NICKNAME_NOT_CHANGED = 136;</code>
      */
-    RETCODE_RET_NICKNAME_NOT_CHANGED(136),
+    RET_NICKNAME_NOT_CHANGED(136),
     /**
-     * <code>RETCODE_RET_PLAYER_NOT_ONLINE = 140;</code>
+     * <code>RET_PLAYER_NOT_ONLINE = 140;</code>
      */
-    RETCODE_RET_PLAYER_NOT_ONLINE(140),
+    RET_PLAYER_NOT_ONLINE(140),
     /**
-     * <code>RETCODE_RET_OPEN_STATE_NOT_OPEN = 141;</code>
+     * <code>RET_OPEN_STATE_NOT_OPEN = 141;</code>
      */
-    RETCODE_RET_OPEN_STATE_NOT_OPEN(141),
+    RET_OPEN_STATE_NOT_OPEN(141),
     /**
-     * <code>RETCODE_RET_FEATURE_CLOSED = 142;</code>
+     * <code>RET_FEATURE_CLOSED = 142;</code>
      */
-    RETCODE_RET_FEATURE_CLOSED(142),
+    RET_FEATURE_CLOSED(142),
     /**
-     * <code>RETCODE_RET_AVATAR_EXPEDITION_AVATAR_DIE = 152;</code>
+     * <code>RET_AVATAR_EXPEDITION_AVATAR_DIE = 152;</code>
      */
-    RETCODE_RET_AVATAR_EXPEDITION_AVATAR_DIE(152),
+    RET_AVATAR_EXPEDITION_AVATAR_DIE(152),
     /**
-     * <code>RETCODE_RET_AVATAR_EXPEDITION_COUNT_LIMIT = 153;</code>
+     * <code>RET_AVATAR_EXPEDITION_COUNT_LIMIT = 153;</code>
      */
-    RETCODE_RET_AVATAR_EXPEDITION_COUNT_LIMIT(153),
+    RET_AVATAR_EXPEDITION_COUNT_LIMIT(153),
     /**
-     * <code>RETCODE_RET_AVATAR_EXPEDITION_MAIN_FORBID = 154;</code>
+     * <code>RET_AVATAR_EXPEDITION_MAIN_FORBID = 154;</code>
      */
-    RETCODE_RET_AVATAR_EXPEDITION_MAIN_FORBID(154),
+    RET_AVATAR_EXPEDITION_MAIN_FORBID(154),
     /**
-     * <code>RETCODE_RET_AVATAR_EXPEDITION_TRIAL_FORBID = 155;</code>
+     * <code>RET_AVATAR_EXPEDITION_TRIAL_FORBID = 155;</code>
      */
-    RETCODE_RET_AVATAR_EXPEDITION_TRIAL_FORBID(155),
+    RET_AVATAR_EXPEDITION_TRIAL_FORBID(155),
     /**
-     * <code>RETCODE_RET_TEAM_NAME_ILLEGAL = 156;</code>
+     * <code>RET_TEAM_NAME_ILLEGAL = 156;</code>
      */
-    RETCODE_RET_TEAM_NAME_ILLEGAL(156),
+    RET_TEAM_NAME_ILLEGAL(156),
     /**
-     * <code>RETCODE_RET_IS_NOT_IN_STANDBY = 157;</code>
+     * <code>RET_IS_NOT_IN_STANDBY = 157;</code>
      */
-    RETCODE_RET_IS_NOT_IN_STANDBY(157),
+    RET_IS_NOT_IN_STANDBY(157),
     /**
-     * <code>RETCODE_RET_IS_IN_DUNGEON = 158;</code>
+     * <code>RET_IS_IN_DUNGEON = 158;</code>
      */
-    RETCODE_RET_IS_IN_DUNGEON(158),
+    RET_IS_IN_DUNGEON(158),
     /**
-     * <code>RETCODE_RET_IS_IN_LOCK_AVATAR_QUEST = 159;</code>
+     * <code>RET_IS_IN_LOCK_AVATAR_QUEST = 159;</code>
      */
-    RETCODE_RET_IS_IN_LOCK_AVATAR_QUEST(159),
+    RET_IS_IN_LOCK_AVATAR_QUEST(159),
     /**
-     * <code>RETCODE_RET_IS_USING_TRIAL_AVATAR = 160;</code>
+     * <code>RET_IS_USING_TRIAL_AVATAR = 160;</code>
      */
-    RETCODE_RET_IS_USING_TRIAL_AVATAR(160),
+    RET_IS_USING_TRIAL_AVATAR(160),
     /**
-     * <code>RETCODE_RET_IS_USING_TEMP_AVATAR = 161;</code>
+     * <code>RET_IS_USING_TEMP_AVATAR = 161;</code>
      */
-    RETCODE_RET_IS_USING_TEMP_AVATAR(161),
+    RET_IS_USING_TEMP_AVATAR(161),
     /**
-     * <code>RETCODE_RET_NOT_HAS_FLYCLOAK = 162;</code>
+     * <code>RET_NOT_HAS_FLYCLOAK = 162;</code>
      */
-    RETCODE_RET_NOT_HAS_FLYCLOAK(162),
+    RET_NOT_HAS_FLYCLOAK(162),
     /**
-     * <code>RETCODE_RET_FETTER_REWARD_ALREADY_GOT = 163;</code>
+     * <code>RET_FETTER_REWARD_ALREADY_GOT = 163;</code>
      */
-    RETCODE_RET_FETTER_REWARD_ALREADY_GOT(163),
+    RET_FETTER_REWARD_ALREADY_GOT(163),
     /**
-     * <code>RETCODE_RET_FETTER_REWARD_LEVEL_NOT_ENOUGH = 164;</code>
+     * <code>RET_FETTER_REWARD_LEVEL_NOT_ENOUGH = 164;</code>
      */
-    RETCODE_RET_FETTER_REWARD_LEVEL_NOT_ENOUGH(164),
+    RET_FETTER_REWARD_LEVEL_NOT_ENOUGH(164),
     /**
-     * <code>RETCODE_RET_WORLD_LEVEL_ADJUST_MIN_LEVEL = 165;</code>
+     * <code>RET_WORLD_LEVEL_ADJUST_MIN_LEVEL = 165;</code>
      */
-    RETCODE_RET_WORLD_LEVEL_ADJUST_MIN_LEVEL(165),
+    RET_WORLD_LEVEL_ADJUST_MIN_LEVEL(165),
     /**
-     * <code>RETCODE_RET_WORLD_LEVEL_ADJUST_CD = 166;</code>
+     * <code>RET_WORLD_LEVEL_ADJUST_CD = 166;</code>
      */
-    RETCODE_RET_WORLD_LEVEL_ADJUST_CD(166),
+    RET_WORLD_LEVEL_ADJUST_CD(166),
     /**
-     * <code>RETCODE_RET_NOT_HAS_COSTUME = 167;</code>
+     * <code>RET_NOT_HAS_COSTUME = 167;</code>
      */
-    RETCODE_RET_NOT_HAS_COSTUME(167),
+    RET_NOT_HAS_COSTUME(167),
     /**
-     * <code>RETCODE_RET_COSTUME_AVATAR_ERROR = 168;</code>
+     * <code>RET_COSTUME_AVATAR_ERROR = 168;</code>
      */
-    RETCODE_RET_COSTUME_AVATAR_ERROR(168),
+    RET_COSTUME_AVATAR_ERROR(168),
     /**
-     * <code>RETCODE_RET_FLYCLOAK_PLATFORM_TYPE_ERR = 169;</code>
+     * <code>RET_FLYCLOAK_PLATFORM_TYPE_ERR = 169;</code>
      */
-    RETCODE_RET_FLYCLOAK_PLATFORM_TYPE_ERR(169),
+    RET_FLYCLOAK_PLATFORM_TYPE_ERR(169),
     /**
-     * <code>RETCODE_RET_IN_TRANSFER = 170;</code>
+     * <code>RET_IN_TRANSFER = 170;</code>
      */
-    RETCODE_RET_IN_TRANSFER(170),
+    RET_IN_TRANSFER(170),
     /**
-     * <code>RETCODE_RET_IS_IN_LOCK_AVATAR = 171;</code>
+     * <code>RET_IS_IN_LOCK_AVATAR = 171;</code>
      */
-    RETCODE_RET_IS_IN_LOCK_AVATAR(171),
+    RET_IS_IN_LOCK_AVATAR(171),
     /**
-     * <code>RETCODE_RET_FULL_BACKUP_TEAM = 172;</code>
+     * <code>RET_FULL_BACKUP_TEAM = 172;</code>
      */
-    RETCODE_RET_FULL_BACKUP_TEAM(172),
+    RET_FULL_BACKUP_TEAM(172),
     /**
-     * <code>RETCODE_RET_BACKUP_TEAM_ID_NOT_VALID = 173;</code>
+     * <code>RET_BACKUP_TEAM_ID_NOT_VALID = 173;</code>
      */
-    RETCODE_RET_BACKUP_TEAM_ID_NOT_VALID(173),
+    RET_BACKUP_TEAM_ID_NOT_VALID(173),
     /**
-     * <code>RETCODE_RET_BACKUP_TEAM_IS_CUR_TEAM = 174;</code>
+     * <code>RET_BACKUP_TEAM_IS_CUR_TEAM = 174;</code>
      */
-    RETCODE_RET_BACKUP_TEAM_IS_CUR_TEAM(174),
+    RET_BACKUP_TEAM_IS_CUR_TEAM(174),
     /**
-     * <code>RETCODE_RET_FLOAT_ERROR = 201;</code>
+     * <code>RET_AVATAR_RENAME_IN_CD = 175;</code>
      */
-    RETCODE_RET_FLOAT_ERROR(201),
+    RET_AVATAR_RENAME_IN_CD(175),
     /**
-     * <code>RETCODE_RET_NPC_NOT_EXIST = 301;</code>
+     * <code>RET_AVATAR_RENAME_IN_AUDIT = 176;</code>
      */
-    RETCODE_RET_NPC_NOT_EXIST(301),
+    RET_AVATAR_RENAME_IN_AUDIT(176),
     /**
-     * <code>RETCODE_RET_NPC_TOO_FAR = 302;</code>
+     * <code>RET_AVATAR_RENAME_IN_IP_BLACK_LIST = 177;</code>
      */
-    RETCODE_RET_NPC_TOO_FAR(302),
+    RET_AVATAR_RENAME_IN_IP_BLACK_LIST(177),
     /**
-     * <code>RETCODE_RET_NOT_CURRENT_TALK = 303;</code>
+     * <code>RET_FLOAT_ERROR = 201;</code>
      */
-    RETCODE_RET_NOT_CURRENT_TALK(303),
+    RET_FLOAT_ERROR(201),
     /**
-     * <code>RETCODE_RET_NPC_CREATE_FAIL = 304;</code>
+     * <code>RET_NPC_NOT_EXIST = 301;</code>
      */
-    RETCODE_RET_NPC_CREATE_FAIL(304),
+    RET_NPC_NOT_EXIST(301),
     /**
-     * <code>RETCODE_RET_NPC_MOVE_FAIL = 305;</code>
+     * <code>RET_NPC_TOO_FAR = 302;</code>
      */
-    RETCODE_RET_NPC_MOVE_FAIL(305),
+    RET_NPC_TOO_FAR(302),
     /**
-     * <code>RETCODE_RET_QUEST_NOT_EXIST = 401;</code>
+     * <code>RET_NOT_CURRENT_TALK = 303;</code>
      */
-    RETCODE_RET_QUEST_NOT_EXIST(401),
+    RET_NOT_CURRENT_TALK(303),
     /**
-     * <code>RETCODE_RET_QUEST_IS_FAIL = 402;</code>
+     * <code>RET_NPC_CREATE_FAIL = 304;</code>
      */
-    RETCODE_RET_QUEST_IS_FAIL(402),
+    RET_NPC_CREATE_FAIL(304),
     /**
-     * <code>RETCODE_RET_QUEST_CONTENT_ERROR = 403;</code>
+     * <code>RET_NPC_MOVE_FAIL = 305;</code>
      */
-    RETCODE_RET_QUEST_CONTENT_ERROR(403),
+    RET_NPC_MOVE_FAIL(305),
     /**
-     * <code>RETCODE_RET_BARGAIN_NOT_ACTIVATED = 404;</code>
+     * <code>RET_QUEST_NOT_EXIST = 401;</code>
      */
-    RETCODE_RET_BARGAIN_NOT_ACTIVATED(404),
+    RET_QUEST_NOT_EXIST(401),
     /**
-     * <code>RETCODE_RET_BARGAIN_FINISHED = 405;</code>
+     * <code>RET_QUEST_IS_FAIL = 402;</code>
      */
-    RETCODE_RET_BARGAIN_FINISHED(405),
+    RET_QUEST_IS_FAIL(402),
     /**
-     * <code>RETCODE_RET_INFERENCE_ASSOCIATE_WORD_ERROR = 406;</code>
+     * <code>RET_QUEST_CONTENT_ERROR = 403;</code>
      */
-    RETCODE_RET_INFERENCE_ASSOCIATE_WORD_ERROR(406),
+    RET_QUEST_CONTENT_ERROR(403),
     /**
-     * <code>RETCODE_RET_INFERENCE_SUBMIT_WORD_NO_CONCLUSION = 407;</code>
+     * <code>RET_BARGAIN_NOT_ACTIVATED = 404;</code>
      */
-    RETCODE_RET_INFERENCE_SUBMIT_WORD_NO_CONCLUSION(407),
+    RET_BARGAIN_NOT_ACTIVATED(404),
     /**
-     * <code>RETCODE_RET_POINT_NOT_UNLOCKED = 501;</code>
+     * <code>RET_BARGAIN_FINISHED = 405;</code>
      */
-    RETCODE_RET_POINT_NOT_UNLOCKED(501),
+    RET_BARGAIN_FINISHED(405),
     /**
-     * <code>RETCODE_RET_POINT_TOO_FAR = 502;</code>
+     * <code>RET_INFERENCE_ASSOCIATE_WORD_ERROR = 406;</code>
      */
-    RETCODE_RET_POINT_TOO_FAR(502),
+    RET_INFERENCE_ASSOCIATE_WORD_ERROR(406),
     /**
-     * <code>RETCODE_RET_POINT_ALREAY_UNLOCKED = 503;</code>
+     * <code>RET_INFERENCE_SUBMIT_WORD_NO_CONCLUSION = 407;</code>
      */
-    RETCODE_RET_POINT_ALREAY_UNLOCKED(503),
+    RET_INFERENCE_SUBMIT_WORD_NO_CONCLUSION(407),
     /**
-     * <code>RETCODE_RET_ENTITY_NOT_EXIST = 504;</code>
+     * <code>RET_POINT_NOT_UNLOCKED = 501;</code>
      */
-    RETCODE_RET_ENTITY_NOT_EXIST(504),
+    RET_POINT_NOT_UNLOCKED(501),
     /**
-     * <code>RETCODE_RET_ENTER_SCENE_FAIL = 505;</code>
+     * <code>RET_POINT_TOO_FAR = 502;</code>
      */
-    RETCODE_RET_ENTER_SCENE_FAIL(505),
+    RET_POINT_TOO_FAR(502),
     /**
-     * <code>RETCODE_RET_PLAYER_IS_ENTER_SCENE = 506;</code>
+     * <code>RET_POINT_ALREAY_UNLOCKED = 503;</code>
      */
-    RETCODE_RET_PLAYER_IS_ENTER_SCENE(506),
+    RET_POINT_ALREAY_UNLOCKED(503),
     /**
-     * <code>RETCODE_RET_CITY_MAX_LEVEL = 507;</code>
+     * <code>RET_ENTITY_NOT_EXIST = 504;</code>
      */
-    RETCODE_RET_CITY_MAX_LEVEL(507),
+    RET_ENTITY_NOT_EXIST(504),
     /**
-     * <code>RETCODE_RET_AREA_LOCKED = 508;</code>
+     * <code>RET_ENTER_SCENE_FAIL = 505;</code>
      */
-    RETCODE_RET_AREA_LOCKED(508),
+    RET_ENTER_SCENE_FAIL(505),
     /**
-     * <code>RETCODE_RET_JOIN_OTHER_WAIT = 509;</code>
+     * <code>RET_PLAYER_IS_ENTER_SCENE = 506;</code>
      */
-    RETCODE_RET_JOIN_OTHER_WAIT(509),
+    RET_PLAYER_IS_ENTER_SCENE(506),
     /**
-     * <code>RETCODE_RET_WEATHER_AREA_NOT_FOUND = 510;</code>
+     * <code>RET_CITY_MAX_LEVEL = 507;</code>
      */
-    RETCODE_RET_WEATHER_AREA_NOT_FOUND(510),
+    RET_CITY_MAX_LEVEL(507),
     /**
-     * <code>RETCODE_RET_WEATHER_IS_LOCKED = 511;</code>
+     * <code>RET_AREA_LOCKED = 508;</code>
      */
-    RETCODE_RET_WEATHER_IS_LOCKED(511),
+    RET_AREA_LOCKED(508),
     /**
-     * <code>RETCODE_RET_NOT_IN_SELF_SCENE = 512;</code>
+     * <code>RET_JOIN_OTHER_WAIT = 509;</code>
      */
-    RETCODE_RET_NOT_IN_SELF_SCENE(512),
+    RET_JOIN_OTHER_WAIT(509),
     /**
-     * <code>RETCODE_RET_GROUP_NOT_EXIST = 513;</code>
+     * <code>RET_WEATHER_AREA_NOT_FOUND = 510;</code>
      */
-    RETCODE_RET_GROUP_NOT_EXIST(513),
+    RET_WEATHER_AREA_NOT_FOUND(510),
     /**
-     * <code>RETCODE_RET_MARK_NAME_ILLEGAL = 514;</code>
+     * <code>RET_WEATHER_IS_LOCKED = 511;</code>
      */
-    RETCODE_RET_MARK_NAME_ILLEGAL(514),
+    RET_WEATHER_IS_LOCKED(511),
     /**
-     * <code>RETCODE_RET_MARK_ALREADY_EXISTS = 515;</code>
+     * <code>RET_NOT_IN_SELF_SCENE = 512;</code>
      */
-    RETCODE_RET_MARK_ALREADY_EXISTS(515),
+    RET_NOT_IN_SELF_SCENE(512),
     /**
-     * <code>RETCODE_RET_MARK_OVERFLOW = 516;</code>
+     * <code>RET_GROUP_NOT_EXIST = 513;</code>
      */
-    RETCODE_RET_MARK_OVERFLOW(516),
+    RET_GROUP_NOT_EXIST(513),
     /**
-     * <code>RETCODE_RET_MARK_NOT_EXISTS = 517;</code>
+     * <code>RET_MARK_NAME_ILLEGAL = 514;</code>
      */
-    RETCODE_RET_MARK_NOT_EXISTS(517),
+    RET_MARK_NAME_ILLEGAL(514),
     /**
-     * <code>RETCODE_RET_MARK_UNKNOWN_TYPE = 518;</code>
+     * <code>RET_MARK_ALREADY_EXISTS = 515;</code>
      */
-    RETCODE_RET_MARK_UNKNOWN_TYPE(518),
+    RET_MARK_ALREADY_EXISTS(515),
     /**
-     * <code>RETCODE_RET_MARK_NAME_TOO_LONG = 519;</code>
+     * <code>RET_MARK_OVERFLOW = 516;</code>
      */
-    RETCODE_RET_MARK_NAME_TOO_LONG(519),
+    RET_MARK_OVERFLOW(516),
     /**
-     * <code>RETCODE_RET_DISTANCE_LONG = 520;</code>
+     * <code>RET_MARK_NOT_EXISTS = 517;</code>
      */
-    RETCODE_RET_DISTANCE_LONG(520),
+    RET_MARK_NOT_EXISTS(517),
     /**
-     * <code>RETCODE_RET_ENTER_SCENE_TOKEN_INVALID = 521;</code>
+     * <code>RET_MARK_UNKNOWN_TYPE = 518;</code>
      */
-    RETCODE_RET_ENTER_SCENE_TOKEN_INVALID(521),
+    RET_MARK_UNKNOWN_TYPE(518),
     /**
-     * <code>RETCODE_RET_NOT_IN_WORLD_SCENE = 522;</code>
+     * <code>RET_MARK_NAME_TOO_LONG = 519;</code>
      */
-    RETCODE_RET_NOT_IN_WORLD_SCENE(522),
+    RET_MARK_NAME_TOO_LONG(519),
     /**
-     * <code>RETCODE_RET_ANY_GALLERY_STARTED = 523;</code>
+     * <code>RET_DISTANCE_LONG = 520;</code>
      */
-    RETCODE_RET_ANY_GALLERY_STARTED(523),
+    RET_DISTANCE_LONG(520),
     /**
-     * <code>RETCODE_RET_GALLERY_NOT_START = 524;</code>
+     * <code>RET_ENTER_SCENE_TOKEN_INVALID = 521;</code>
      */
-    RETCODE_RET_GALLERY_NOT_START(524),
+    RET_ENTER_SCENE_TOKEN_INVALID(521),
     /**
-     * <code>RETCODE_RET_GALLERY_INTERRUPT_ONLY_ON_SINGLE_MODE = 525;</code>
+     * <code>RET_NOT_IN_WORLD_SCENE = 522;</code>
      */
-    RETCODE_RET_GALLERY_INTERRUPT_ONLY_ON_SINGLE_MODE(525),
+    RET_NOT_IN_WORLD_SCENE(522),
     /**
-     * <code>RETCODE_RET_GALLERY_CANNOT_INTERRUPT = 526;</code>
+     * <code>RET_ANY_GALLERY_STARTED = 523;</code>
      */
-    RETCODE_RET_GALLERY_CANNOT_INTERRUPT(526),
+    RET_ANY_GALLERY_STARTED(523),
     /**
-     * <code>RETCODE_RET_GALLERY_WORLD_NOT_MEET = 527;</code>
+     * <code>RET_GALLERY_NOT_START = 524;</code>
      */
-    RETCODE_RET_GALLERY_WORLD_NOT_MEET(527),
+    RET_GALLERY_NOT_START(524),
     /**
-     * <code>RETCODE_RET_GALLERY_SCENE_NOT_MEET = 528;</code>
+     * <code>RET_GALLERY_INTERRUPT_ONLY_ON_SINGLE_MODE = 525;</code>
      */
-    RETCODE_RET_GALLERY_SCENE_NOT_MEET(528),
+    RET_GALLERY_INTERRUPT_ONLY_ON_SINGLE_MODE(525),
     /**
-     * <code>RETCODE_RET_CUR_PLAY_CANNOT_TRANSFER = 529;</code>
+     * <code>RET_GALLERY_CANNOT_INTERRUPT = 526;</code>
      */
-    RETCODE_RET_CUR_PLAY_CANNOT_TRANSFER(529),
+    RET_GALLERY_CANNOT_INTERRUPT(526),
     /**
-     * <code>RETCODE_RET_CANT_USE_WIDGET_IN_HOME_SCENE = 530;</code>
+     * <code>RET_GALLERY_WORLD_NOT_MEET = 527;</code>
      */
-    RETCODE_RET_CANT_USE_WIDGET_IN_HOME_SCENE(530),
+    RET_GALLERY_WORLD_NOT_MEET(527),
     /**
-     * <code>RETCODE_RET_SCENE_GROUP_NOT_MATCH = 531;</code>
+     * <code>RET_GALLERY_SCENE_NOT_MEET = 528;</code>
      */
-    RETCODE_RET_SCENE_GROUP_NOT_MATCH(531),
+    RET_GALLERY_SCENE_NOT_MEET(528),
     /**
-     * <code>RETCODE_RET_POS_ROT_INVALID = 551;</code>
+     * <code>RET_CUR_PLAY_CANNOT_TRANSFER = 529;</code>
      */
-    RETCODE_RET_POS_ROT_INVALID(551),
+    RET_CUR_PLAY_CANNOT_TRANSFER(529),
     /**
-     * <code>RETCODE_RET_MARK_INVALID_SCENE_ID = 552;</code>
+     * <code>RET_CANT_USE_WIDGET_IN_HOME_SCENE = 530;</code>
      */
-    RETCODE_RET_MARK_INVALID_SCENE_ID(552),
+    RET_CANT_USE_WIDGET_IN_HOME_SCENE(530),
     /**
-     * <code>RETCODE_RET_INVALID_SCENE_TO_USE_ANCHOR_POINT = 553;</code>
+     * <code>RET_SCENE_GROUP_NOT_MATCH = 531;</code>
      */
-    RETCODE_RET_INVALID_SCENE_TO_USE_ANCHOR_POINT(553),
+    RET_SCENE_GROUP_NOT_MATCH(531),
     /**
-     * <code>RETCODE_RET_ENTER_HOME_SCENE_FAIL = 554;</code>
+     * <code>RET_POS_ROT_INVALID = 551;</code>
      */
-    RETCODE_RET_ENTER_HOME_SCENE_FAIL(554),
+    RET_POS_ROT_INVALID(551),
     /**
-     * <code>RETCODE_RET_CUR_SCENE_IS_NULL = 555;</code>
+     * <code>RET_MARK_INVALID_SCENE_ID = 552;</code>
      */
-    RETCODE_RET_CUR_SCENE_IS_NULL(555),
+    RET_MARK_INVALID_SCENE_ID(552),
     /**
-     * <code>RETCODE_RET_GROUP_ID_ERROR = 556;</code>
+     * <code>RET_INVALID_SCENE_TO_USE_ANCHOR_POINT = 553;</code>
      */
-    RETCODE_RET_GROUP_ID_ERROR(556),
+    RET_INVALID_SCENE_TO_USE_ANCHOR_POINT(553),
     /**
-     * <code>RETCODE_RET_GALLERY_INTERRUPT_NOT_OWNER = 557;</code>
+     * <code>RET_ENTER_HOME_SCENE_FAIL = 554;</code>
      */
-    RETCODE_RET_GALLERY_INTERRUPT_NOT_OWNER(557),
+    RET_ENTER_HOME_SCENE_FAIL(554),
     /**
-     * <code>RETCODE_RET_NO_SPRING_IN_AREA = 558;</code>
+     * <code>RET_CUR_SCENE_IS_NULL = 555;</code>
      */
-    RETCODE_RET_NO_SPRING_IN_AREA(558),
+    RET_CUR_SCENE_IS_NULL(555),
     /**
-     * <code>RETCODE_RET_AREA_NOT_IN_SCENE = 559;</code>
+     * <code>RET_GROUP_ID_ERROR = 556;</code>
      */
-    RETCODE_RET_AREA_NOT_IN_SCENE(559),
+    RET_GROUP_ID_ERROR(556),
     /**
-     * <code>RETCODE_RET_INVALID_CITY_ID = 560;</code>
+     * <code>RET_GALLERY_INTERRUPT_NOT_OWNER = 557;</code>
      */
-    RETCODE_RET_INVALID_CITY_ID(560),
+    RET_GALLERY_INTERRUPT_NOT_OWNER(557),
     /**
-     * <code>RETCODE_RET_INVALID_SCENE_ID = 561;</code>
+     * <code>RET_NO_SPRING_IN_AREA = 558;</code>
      */
-    RETCODE_RET_INVALID_SCENE_ID(561),
+    RET_NO_SPRING_IN_AREA(558),
     /**
-     * <code>RETCODE_RET_DEST_SCENE_IS_NOT_ALLOW = 562;</code>
+     * <code>RET_AREA_NOT_IN_SCENE = 559;</code>
      */
-    RETCODE_RET_DEST_SCENE_IS_NOT_ALLOW(562),
+    RET_AREA_NOT_IN_SCENE(559),
     /**
-     * <code>RETCODE_RET_LEVEL_TAG_SWITCH_IN_CD = 563;</code>
+     * <code>RET_INVALID_CITY_ID = 560;</code>
      */
-    RETCODE_RET_LEVEL_TAG_SWITCH_IN_CD(563),
+    RET_INVALID_CITY_ID(560),
     /**
-     * <code>RETCODE_RET_LEVEL_TAG_ALREADY_EXIST = 564;</code>
+     * <code>RET_INVALID_SCENE_ID = 561;</code>
      */
-    RETCODE_RET_LEVEL_TAG_ALREADY_EXIST(564),
+    RET_INVALID_SCENE_ID(561),
     /**
-     * <code>RETCODE_RET_INVALID_AREA_ID = 565;</code>
+     * <code>RET_DEST_SCENE_IS_NOT_ALLOW = 562;</code>
      */
-    RETCODE_RET_INVALID_AREA_ID(565),
+    RET_DEST_SCENE_IS_NOT_ALLOW(562),
     /**
-     * <code>RETCODE_RET_ITEM_NOT_EXIST = 601;</code>
+     * <code>RET_LEVEL_TAG_SWITCH_IN_CD = 563;</code>
      */
-    RETCODE_RET_ITEM_NOT_EXIST(601),
+    RET_LEVEL_TAG_SWITCH_IN_CD(563),
     /**
-     * <code>RETCODE_RET_PACK_EXCEED_MAX_WEIGHT = 602;</code>
+     * <code>RET_LEVEL_TAG_ALREADY_EXIST = 564;</code>
      */
-    RETCODE_RET_PACK_EXCEED_MAX_WEIGHT(602),
+    RET_LEVEL_TAG_ALREADY_EXIST(564),
     /**
-     * <code>RETCODE_RET_ITEM_NOT_DROPABLE = 603;</code>
+     * <code>RET_INVALID_AREA_ID = 565;</code>
      */
-    RETCODE_RET_ITEM_NOT_DROPABLE(603),
+    RET_INVALID_AREA_ID(565),
     /**
-     * <code>RETCODE_RET_ITEM_NOT_USABLE = 604;</code>
+     * <code>RET_ITEM_NOT_EXIST = 601;</code>
      */
-    RETCODE_RET_ITEM_NOT_USABLE(604),
+    RET_ITEM_NOT_EXIST(601),
     /**
-     * <code>RETCODE_RET_ITEM_INVALID_USE_COUNT = 605;</code>
+     * <code>RET_PACK_EXCEED_MAX_WEIGHT = 602;</code>
      */
-    RETCODE_RET_ITEM_INVALID_USE_COUNT(605),
+    RET_PACK_EXCEED_MAX_WEIGHT(602),
     /**
-     * <code>RETCODE_RET_ITEM_INVALID_DROP_COUNT = 606;</code>
+     * <code>RET_ITEM_NOT_DROPABLE = 603;</code>
      */
-    RETCODE_RET_ITEM_INVALID_DROP_COUNT(606),
+    RET_ITEM_NOT_DROPABLE(603),
     /**
-     * <code>RETCODE_RET_ITEM_ALREADY_EXIST = 607;</code>
+     * <code>RET_ITEM_NOT_USABLE = 604;</code>
      */
-    RETCODE_RET_ITEM_ALREADY_EXIST(607),
+    RET_ITEM_NOT_USABLE(604),
     /**
-     * <code>RETCODE_RET_ITEM_IN_COOLDOWN = 608;</code>
+     * <code>RET_ITEM_INVALID_USE_COUNT = 605;</code>
      */
-    RETCODE_RET_ITEM_IN_COOLDOWN(608),
+    RET_ITEM_INVALID_USE_COUNT(605),
     /**
-     * <code>RETCODE_RET_ITEM_COUNT_NOT_ENOUGH = 609;</code>
+     * <code>RET_ITEM_INVALID_DROP_COUNT = 606;</code>
      */
-    RETCODE_RET_ITEM_COUNT_NOT_ENOUGH(609),
+    RET_ITEM_INVALID_DROP_COUNT(606),
     /**
-     * <code>RETCODE_RET_ITEM_INVALID_TARGET = 610;</code>
+     * <code>RET_ITEM_ALREADY_EXIST = 607;</code>
      */
-    RETCODE_RET_ITEM_INVALID_TARGET(610),
+    RET_ITEM_ALREADY_EXIST(607),
     /**
-     * <code>RETCODE_RET_RECIPE_NOT_EXIST = 611;</code>
+     * <code>RET_ITEM_IN_COOLDOWN = 608;</code>
      */
-    RETCODE_RET_RECIPE_NOT_EXIST(611),
+    RET_ITEM_IN_COOLDOWN(608),
     /**
-     * <code>RETCODE_RET_RECIPE_LOCKED = 612;</code>
+     * <code>RET_ITEM_COUNT_NOT_ENOUGH = 609;</code>
      */
-    RETCODE_RET_RECIPE_LOCKED(612),
+    RET_ITEM_COUNT_NOT_ENOUGH(609),
     /**
-     * <code>RETCODE_RET_RECIPE_UNLOCKED = 613;</code>
+     * <code>RET_ITEM_INVALID_TARGET = 610;</code>
      */
-    RETCODE_RET_RECIPE_UNLOCKED(613),
+    RET_ITEM_INVALID_TARGET(610),
     /**
-     * <code>RETCODE_RET_COMPOUND_QUEUE_FULL = 614;</code>
+     * <code>RET_RECIPE_NOT_EXIST = 611;</code>
      */
-    RETCODE_RET_COMPOUND_QUEUE_FULL(614),
+    RET_RECIPE_NOT_EXIST(611),
     /**
-     * <code>RETCODE_RET_COMPOUND_NOT_FINISH = 615;</code>
+     * <code>RET_RECIPE_LOCKED = 612;</code>
      */
-    RETCODE_RET_COMPOUND_NOT_FINISH(615),
+    RET_RECIPE_LOCKED(612),
     /**
-     * <code>RETCODE_RET_MAIL_ITEM_NOT_GET = 616;</code>
+     * <code>RET_RECIPE_UNLOCKED = 613;</code>
      */
-    RETCODE_RET_MAIL_ITEM_NOT_GET(616),
+    RET_RECIPE_UNLOCKED(613),
     /**
-     * <code>RETCODE_RET_ITEM_EXCEED_LIMIT = 617;</code>
+     * <code>RET_COMPOUND_QUEUE_FULL = 614;</code>
      */
-    RETCODE_RET_ITEM_EXCEED_LIMIT(617),
+    RET_COMPOUND_QUEUE_FULL(614),
     /**
-     * <code>RETCODE_RET_AVATAR_CAN_NOT_USE = 618;</code>
+     * <code>RET_COMPOUND_NOT_FINISH = 615;</code>
      */
-    RETCODE_RET_AVATAR_CAN_NOT_USE(618),
+    RET_COMPOUND_NOT_FINISH(615),
     /**
-     * <code>RETCODE_RET_ITEM_NEED_PLAYER_LEVEL = 619;</code>
+     * <code>RET_MAIL_ITEM_NOT_GET = 616;</code>
      */
-    RETCODE_RET_ITEM_NEED_PLAYER_LEVEL(619),
+    RET_MAIL_ITEM_NOT_GET(616),
     /**
-     * <code>RETCODE_RET_RECIPE_NOT_AUTO_QTE = 620;</code>
+     * <code>RET_ITEM_EXCEED_LIMIT = 617;</code>
      */
-    RETCODE_RET_RECIPE_NOT_AUTO_QTE(620),
+    RET_ITEM_EXCEED_LIMIT(617),
     /**
-     * <code>RETCODE_RET_COMPOUND_BUSY_QUEUE = 621;</code>
+     * <code>RET_AVATAR_CAN_NOT_USE = 618;</code>
      */
-    RETCODE_RET_COMPOUND_BUSY_QUEUE(621),
+    RET_AVATAR_CAN_NOT_USE(618),
     /**
-     * <code>RETCODE_RET_NEED_MORE_SCOIN = 622;</code>
+     * <code>RET_ITEM_NEED_PLAYER_LEVEL = 619;</code>
      */
-    RETCODE_RET_NEED_MORE_SCOIN(622),
+    RET_ITEM_NEED_PLAYER_LEVEL(619),
     /**
-     * <code>RETCODE_RET_SKILL_DEPOT_NOT_FOUND = 623;</code>
+     * <code>RET_RECIPE_NOT_AUTO_QTE = 620;</code>
      */
-    RETCODE_RET_SKILL_DEPOT_NOT_FOUND(623),
+    RET_RECIPE_NOT_AUTO_QTE(620),
     /**
-     * <code>RETCODE_RET_HCOIN_NOT_ENOUGH = 624;</code>
+     * <code>RET_COMPOUND_BUSY_QUEUE = 621;</code>
      */
-    RETCODE_RET_HCOIN_NOT_ENOUGH(624),
+    RET_COMPOUND_BUSY_QUEUE(621),
     /**
-     * <code>RETCODE_RET_SCOIN_NOT_ENOUGH = 625;</code>
+     * <code>RET_NEED_MORE_SCOIN = 622;</code>
      */
-    RETCODE_RET_SCOIN_NOT_ENOUGH(625),
+    RET_NEED_MORE_SCOIN(622),
     /**
-     * <code>RETCODE_RET_HCOIN_EXCEED_LIMIT = 626;</code>
+     * <code>RET_SKILL_DEPOT_NOT_FOUND = 623;</code>
      */
-    RETCODE_RET_HCOIN_EXCEED_LIMIT(626),
+    RET_SKILL_DEPOT_NOT_FOUND(623),
     /**
-     * <code>RETCODE_RET_SCOIN_EXCEED_LIMIT = 627;</code>
+     * <code>RET_HCOIN_NOT_ENOUGH = 624;</code>
      */
-    RETCODE_RET_SCOIN_EXCEED_LIMIT(627),
+    RET_HCOIN_NOT_ENOUGH(624),
     /**
-     * <code>RETCODE_RET_MAIL_EXPIRED = 628;</code>
+     * <code>RET_SCOIN_NOT_ENOUGH = 625;</code>
      */
-    RETCODE_RET_MAIL_EXPIRED(628),
+    RET_SCOIN_NOT_ENOUGH(625),
     /**
-     * <code>RETCODE_RET_REWARD_HAS_TAKEN = 629;</code>
+     * <code>RET_HCOIN_EXCEED_LIMIT = 626;</code>
      */
-    RETCODE_RET_REWARD_HAS_TAKEN(629),
+    RET_HCOIN_EXCEED_LIMIT(626),
     /**
-     * <code>RETCODE_RET_COMBINE_COUNT_TOO_LARGE = 630;</code>
+     * <code>RET_SCOIN_EXCEED_LIMIT = 627;</code>
      */
-    RETCODE_RET_COMBINE_COUNT_TOO_LARGE(630),
+    RET_SCOIN_EXCEED_LIMIT(627),
     /**
-     * <code>RETCODE_RET_GIVING_ITEM_WRONG = 631;</code>
+     * <code>RET_MAIL_EXPIRED = 628;</code>
      */
-    RETCODE_RET_GIVING_ITEM_WRONG(631),
+    RET_MAIL_EXPIRED(628),
     /**
-     * <code>RETCODE_RET_GIVING_IS_FINISHED = 632;</code>
+     * <code>RET_REWARD_HAS_TAKEN = 629;</code>
      */
-    RETCODE_RET_GIVING_IS_FINISHED(632),
+    RET_REWARD_HAS_TAKEN(629),
     /**
-     * <code>RETCODE_RET_GIVING_NOT_ACTIVED = 633;</code>
+     * <code>RET_COMBINE_COUNT_TOO_LARGE = 630;</code>
      */
-    RETCODE_RET_GIVING_NOT_ACTIVED(633),
+    RET_COMBINE_COUNT_TOO_LARGE(630),
     /**
-     * <code>RETCODE_RET_FORGE_QUEUE_FULL = 634;</code>
+     * <code>RET_GIVING_ITEM_WRONG = 631;</code>
      */
-    RETCODE_RET_FORGE_QUEUE_FULL(634),
+    RET_GIVING_ITEM_WRONG(631),
     /**
-     * <code>RETCODE_RET_FORGE_QUEUE_CAPACITY = 635;</code>
+     * <code>RET_GIVING_IS_FINISHED = 632;</code>
      */
-    RETCODE_RET_FORGE_QUEUE_CAPACITY(635),
+    RET_GIVING_IS_FINISHED(632),
     /**
-     * <code>RETCODE_RET_FORGE_QUEUE_NOT_FOUND = 636;</code>
+     * <code>RET_GIVING_NOT_ACTIVED = 633;</code>
      */
-    RETCODE_RET_FORGE_QUEUE_NOT_FOUND(636),
+    RET_GIVING_NOT_ACTIVED(633),
     /**
-     * <code>RETCODE_RET_FORGE_QUEUE_EMPTY = 637;</code>
+     * <code>RET_FORGE_QUEUE_FULL = 634;</code>
      */
-    RETCODE_RET_FORGE_QUEUE_EMPTY(637),
+    RET_FORGE_QUEUE_FULL(634),
     /**
-     * <code>RETCODE_RET_NOT_SUPPORT_ITEM = 638;</code>
+     * <code>RET_FORGE_QUEUE_CAPACITY = 635;</code>
      */
-    RETCODE_RET_NOT_SUPPORT_ITEM(638),
+    RET_FORGE_QUEUE_CAPACITY(635),
     /**
-     * <code>RETCODE_RET_ITEM_EMPTY = 639;</code>
+     * <code>RET_FORGE_QUEUE_NOT_FOUND = 636;</code>
      */
-    RETCODE_RET_ITEM_EMPTY(639),
+    RET_FORGE_QUEUE_NOT_FOUND(636),
     /**
-     * <code>RETCODE_RET_VIRTUAL_EXCEED_LIMIT = 640;</code>
+     * <code>RET_FORGE_QUEUE_EMPTY = 637;</code>
      */
-    RETCODE_RET_VIRTUAL_EXCEED_LIMIT(640),
+    RET_FORGE_QUEUE_EMPTY(637),
     /**
-     * <code>RETCODE_RET_MATERIAL_EXCEED_LIMIT = 641;</code>
+     * <code>RET_NOT_SUPPORT_ITEM = 638;</code>
      */
-    RETCODE_RET_MATERIAL_EXCEED_LIMIT(641),
+    RET_NOT_SUPPORT_ITEM(638),
     /**
-     * <code>RETCODE_RET_EQUIP_EXCEED_LIMIT = 642;</code>
+     * <code>RET_ITEM_EMPTY = 639;</code>
      */
-    RETCODE_RET_EQUIP_EXCEED_LIMIT(642),
+    RET_ITEM_EMPTY(639),
     /**
-     * <code>RETCODE_RET_ITEM_SHOULD_HAVE_NO_LEVEL = 643;</code>
+     * <code>RET_VIRTUAL_EXCEED_LIMIT = 640;</code>
      */
-    RETCODE_RET_ITEM_SHOULD_HAVE_NO_LEVEL(643),
+    RET_VIRTUAL_EXCEED_LIMIT(640),
     /**
-     * <code>RETCODE_RET_WEAPON_PROMOTE_LEVEL_EXCEED_LIMIT = 644;</code>
+     * <code>RET_MATERIAL_EXCEED_LIMIT = 641;</code>
      */
-    RETCODE_RET_WEAPON_PROMOTE_LEVEL_EXCEED_LIMIT(644),
+    RET_MATERIAL_EXCEED_LIMIT(641),
     /**
-     * <code>RETCODE_RET_WEAPON_LEVEL_INVALID = 645;</code>
+     * <code>RET_EQUIP_EXCEED_LIMIT = 642;</code>
      */
-    RETCODE_RET_WEAPON_LEVEL_INVALID(645),
+    RET_EQUIP_EXCEED_LIMIT(642),
     /**
-     * <code>RETCODE_RET_UNKNOW_ITEM_TYPE = 646;</code>
+     * <code>RET_ITEM_SHOULD_HAVE_NO_LEVEL = 643;</code>
      */
-    RETCODE_RET_UNKNOW_ITEM_TYPE(646),
+    RET_ITEM_SHOULD_HAVE_NO_LEVEL(643),
     /**
-     * <code>RETCODE_RET_ITEM_COUNT_IS_ZERO = 647;</code>
+     * <code>RET_WEAPON_PROMOTE_LEVEL_EXCEED_LIMIT = 644;</code>
      */
-    RETCODE_RET_ITEM_COUNT_IS_ZERO(647),
+    RET_WEAPON_PROMOTE_LEVEL_EXCEED_LIMIT(644),
     /**
-     * <code>RETCODE_RET_ITEM_IS_EXPIRED = 648;</code>
+     * <code>RET_WEAPON_LEVEL_INVALID = 645;</code>
      */
-    RETCODE_RET_ITEM_IS_EXPIRED(648),
+    RET_WEAPON_LEVEL_INVALID(645),
     /**
-     * <code>RETCODE_RET_ITEM_EXCEED_OUTPUT_LIMIT = 649;</code>
+     * <code>RET_UNKNOW_ITEM_TYPE = 646;</code>
      */
-    RETCODE_RET_ITEM_EXCEED_OUTPUT_LIMIT(649),
+    RET_UNKNOW_ITEM_TYPE(646),
     /**
-     * <code>RETCODE_RET_EQUIP_LEVEL_HIGHER = 650;</code>
+     * <code>RET_ITEM_COUNT_IS_ZERO = 647;</code>
      */
-    RETCODE_RET_EQUIP_LEVEL_HIGHER(650),
+    RET_ITEM_COUNT_IS_ZERO(647),
     /**
-     * <code>RETCODE_RET_EQUIP_CAN_NOT_WAKE_OFF_WEAPON = 651;</code>
+     * <code>RET_ITEM_IS_EXPIRED = 648;</code>
      */
-    RETCODE_RET_EQUIP_CAN_NOT_WAKE_OFF_WEAPON(651),
+    RET_ITEM_IS_EXPIRED(648),
     /**
-     * <code>RETCODE_RET_EQUIP_HAS_BEEN_WEARED = 652;</code>
+     * <code>RET_ITEM_EXCEED_OUTPUT_LIMIT = 649;</code>
      */
-    RETCODE_RET_EQUIP_HAS_BEEN_WEARED(652),
+    RET_ITEM_EXCEED_OUTPUT_LIMIT(649),
     /**
-     * <code>RETCODE_RET_EQUIP_WEARED_CANNOT_DROP = 653;</code>
+     * <code>RET_EQUIP_LEVEL_HIGHER = 650;</code>
      */
-    RETCODE_RET_EQUIP_WEARED_CANNOT_DROP(653),
+    RET_EQUIP_LEVEL_HIGHER(650),
     /**
-     * <code>RETCODE_RET_AWAKEN_LEVEL_MAX = 654;</code>
+     * <code>RET_EQUIP_CAN_NOT_WAKE_OFF_WEAPON = 651;</code>
      */
-    RETCODE_RET_AWAKEN_LEVEL_MAX(654),
+    RET_EQUIP_CAN_NOT_WAKE_OFF_WEAPON(651),
     /**
-     * <code>RETCODE_RET_MCOIN_NOT_ENOUGH = 655;</code>
+     * <code>RET_EQUIP_HAS_BEEN_WEARED = 652;</code>
      */
-    RETCODE_RET_MCOIN_NOT_ENOUGH(655),
+    RET_EQUIP_HAS_BEEN_WEARED(652),
     /**
-     * <code>RETCODE_RET_MCOIN_EXCEED_LIMIT = 656;</code>
+     * <code>RET_EQUIP_WEARED_CANNOT_DROP = 653;</code>
      */
-    RETCODE_RET_MCOIN_EXCEED_LIMIT(656),
+    RET_EQUIP_WEARED_CANNOT_DROP(653),
     /**
-     * <code>RETCODE_RET_RESIN_NOT_ENOUGH = 660;</code>
+     * <code>RET_AWAKEN_LEVEL_MAX = 654;</code>
      */
-    RETCODE_RET_RESIN_NOT_ENOUGH(660),
+    RET_AWAKEN_LEVEL_MAX(654),
     /**
-     * <code>RETCODE_RET_RESIN_EXCEED_LIMIT = 661;</code>
+     * <code>RET_MCOIN_NOT_ENOUGH = 655;</code>
      */
-    RETCODE_RET_RESIN_EXCEED_LIMIT(661),
+    RET_MCOIN_NOT_ENOUGH(655),
     /**
-     * <code>RETCODE_RET_RESIN_OPENSTATE_OFF = 662;</code>
+     * <code>RET_MCOIN_EXCEED_LIMIT = 656;</code>
      */
-    RETCODE_RET_RESIN_OPENSTATE_OFF(662),
+    RET_MCOIN_EXCEED_LIMIT(656),
     /**
-     * <code>RETCODE_RET_RESIN_BOUGHT_COUNT_EXCEEDED = 663;</code>
+     * <code>RET_RESIN_NOT_ENOUGH = 660;</code>
      */
-    RETCODE_RET_RESIN_BOUGHT_COUNT_EXCEEDED(663),
+    RET_RESIN_NOT_ENOUGH(660),
     /**
-     * <code>RETCODE_RET_RESIN_CARD_DAILY_REWARD_HAS_TAKEN = 664;</code>
+     * <code>RET_RESIN_EXCEED_LIMIT = 661;</code>
      */
-    RETCODE_RET_RESIN_CARD_DAILY_REWARD_HAS_TAKEN(664),
+    RET_RESIN_EXCEED_LIMIT(661),
     /**
-     * <code>RETCODE_RET_RESIN_CARD_EXPIRED = 665;</code>
+     * <code>RET_RESIN_OPENSTATE_OFF = 662;</code>
      */
-    RETCODE_RET_RESIN_CARD_EXPIRED(665),
+    RET_RESIN_OPENSTATE_OFF(662),
     /**
-     * <code>RETCODE_RET_AVATAR_CAN_NOT_COOK = 666;</code>
+     * <code>RET_RESIN_BOUGHT_COUNT_EXCEEDED = 663;</code>
      */
-    RETCODE_RET_AVATAR_CAN_NOT_COOK(666),
+    RET_RESIN_BOUGHT_COUNT_EXCEEDED(663),
     /**
-     * <code>RETCODE_RET_ATTACH_AVATAR_CD = 667;</code>
+     * <code>RET_RESIN_CARD_DAILY_REWARD_HAS_TAKEN = 664;</code>
      */
-    RETCODE_RET_ATTACH_AVATAR_CD(667),
+    RET_RESIN_CARD_DAILY_REWARD_HAS_TAKEN(664),
     /**
-     * <code>RETCODE_RET_AUTO_RECOVER_OPENSTATE_OFF = 668;</code>
+     * <code>RET_RESIN_CARD_EXPIRED = 665;</code>
      */
-    RETCODE_RET_AUTO_RECOVER_OPENSTATE_OFF(668),
+    RET_RESIN_CARD_EXPIRED(665),
     /**
-     * <code>RETCODE_RET_AUTO_RECOVER_BOUGHT_COUNT_EXCEEDED = 669;</code>
+     * <code>RET_AVATAR_CAN_NOT_COOK = 666;</code>
      */
-    RETCODE_RET_AUTO_RECOVER_BOUGHT_COUNT_EXCEEDED(669),
+    RET_AVATAR_CAN_NOT_COOK(666),
     /**
-     * <code>RETCODE_RET_RESIN_GAIN_FAILED = 670;</code>
+     * <code>RET_ATTACH_AVATAR_CD = 667;</code>
      */
-    RETCODE_RET_RESIN_GAIN_FAILED(670),
+    RET_ATTACH_AVATAR_CD(667),
     /**
-     * <code>RETCODE_RET_WIDGET_ORNAMENTS_TYPE_ERROR = 671;</code>
+     * <code>RET_AUTO_RECOVER_OPENSTATE_OFF = 668;</code>
      */
-    RETCODE_RET_WIDGET_ORNAMENTS_TYPE_ERROR(671),
+    RET_AUTO_RECOVER_OPENSTATE_OFF(668),
     /**
-     * <code>RETCODE_RET_ALL_TARGET_SATIATION_FULL = 672;</code>
+     * <code>RET_AUTO_RECOVER_BOUGHT_COUNT_EXCEEDED = 669;</code>
      */
-    RETCODE_RET_ALL_TARGET_SATIATION_FULL(672),
+    RET_AUTO_RECOVER_BOUGHT_COUNT_EXCEEDED(669),
     /**
-     * <code>RETCODE_RET_FORGE_WORLD_LEVEL_NOT_MATCH = 673;</code>
+     * <code>RET_RESIN_GAIN_FAILED = 670;</code>
      */
-    RETCODE_RET_FORGE_WORLD_LEVEL_NOT_MATCH(673),
+    RET_RESIN_GAIN_FAILED(670),
     /**
-     * <code>RETCODE_RET_FORGE_POINT_NOT_ENOUGH = 674;</code>
+     * <code>RET_WIDGET_ORNAMENTS_TYPE_ERROR = 671;</code>
      */
-    RETCODE_RET_FORGE_POINT_NOT_ENOUGH(674),
+    RET_WIDGET_ORNAMENTS_TYPE_ERROR(671),
     /**
-     * <code>RETCODE_RET_WIDGET_ANCHOR_POINT_FULL = 675;</code>
+     * <code>RET_ALL_TARGET_SATIATION_FULL = 672;</code>
      */
-    RETCODE_RET_WIDGET_ANCHOR_POINT_FULL(675),
+    RET_ALL_TARGET_SATIATION_FULL(672),
     /**
-     * <code>RETCODE_RET_WIDGET_ANCHOR_POINT_NOT_FOUND = 676;</code>
+     * <code>RET_FORGE_WORLD_LEVEL_NOT_MATCH = 673;</code>
      */
-    RETCODE_RET_WIDGET_ANCHOR_POINT_NOT_FOUND(676),
+    RET_FORGE_WORLD_LEVEL_NOT_MATCH(673),
     /**
-     * <code>RETCODE_RET_ALL_BONFIRE_EXCEED_MAX_COUNT = 677;</code>
+     * <code>RET_FORGE_POINT_NOT_ENOUGH = 674;</code>
      */
-    RETCODE_RET_ALL_BONFIRE_EXCEED_MAX_COUNT(677),
+    RET_FORGE_POINT_NOT_ENOUGH(674),
     /**
-     * <code>RETCODE_RET_BONFIRE_EXCEED_MAX_COUNT = 678;</code>
+     * <code>RET_WIDGET_ANCHOR_POINT_FULL = 675;</code>
      */
-    RETCODE_RET_BONFIRE_EXCEED_MAX_COUNT(678),
+    RET_WIDGET_ANCHOR_POINT_FULL(675),
     /**
-     * <code>RETCODE_RET_LUNCH_BOX_DATA_ERROR = 679;</code>
+     * <code>RET_WIDGET_ANCHOR_POINT_NOT_FOUND = 676;</code>
      */
-    RETCODE_RET_LUNCH_BOX_DATA_ERROR(679),
+    RET_WIDGET_ANCHOR_POINT_NOT_FOUND(676),
     /**
-     * <code>RETCODE_RET_INVALID_QUICK_USE_WIDGET = 680;</code>
+     * <code>RET_ALL_BONFIRE_EXCEED_MAX_COUNT = 677;</code>
      */
-    RETCODE_RET_INVALID_QUICK_USE_WIDGET(680),
+    RET_ALL_BONFIRE_EXCEED_MAX_COUNT(677),
     /**
-     * <code>RETCODE_RET_INVALID_REPLACE_RESIN_COUNT = 681;</code>
+     * <code>RET_BONFIRE_EXCEED_MAX_COUNT = 678;</code>
      */
-    RETCODE_RET_INVALID_REPLACE_RESIN_COUNT(681),
+    RET_BONFIRE_EXCEED_MAX_COUNT(678),
     /**
-     * <code>RETCODE_RET_PREV_DETECTED_GATHER_NOT_FOUND = 682;</code>
+     * <code>RET_LUNCH_BOX_DATA_ERROR = 679;</code>
      */
-    RETCODE_RET_PREV_DETECTED_GATHER_NOT_FOUND(682),
+    RET_LUNCH_BOX_DATA_ERROR(679),
     /**
-     * <code>RETCODE_RET_GOT_ALL_ONEOFF_GAHTER = 683;</code>
+     * <code>RET_INVALID_QUICK_USE_WIDGET = 680;</code>
      */
-    RETCODE_RET_GOT_ALL_ONEOFF_GAHTER(683),
+    RET_INVALID_QUICK_USE_WIDGET(680),
     /**
-     * <code>RETCODE_RET_INVALID_WIDGET_MATERIAL_ID = 684;</code>
+     * <code>RET_INVALID_REPLACE_RESIN_COUNT = 681;</code>
      */
-    RETCODE_RET_INVALID_WIDGET_MATERIAL_ID(684),
+    RET_INVALID_REPLACE_RESIN_COUNT(681),
     /**
-     * <code>RETCODE_RET_WIDGET_DETECTOR_NO_HINT_TO_CLEAR = 685;</code>
+     * <code>RET_PREV_DETECTED_GATHER_NOT_FOUND = 682;</code>
      */
-    RETCODE_RET_WIDGET_DETECTOR_NO_HINT_TO_CLEAR(685),
+    RET_PREV_DETECTED_GATHER_NOT_FOUND(682),
     /**
-     * <code>RETCODE_RET_WIDGET_ALREADY_WITHIN_NEARBY_RADIUS = 686;</code>
+     * <code>RET_GOT_ALL_ONEOFF_GAHTER = 683;</code>
      */
-    RETCODE_RET_WIDGET_ALREADY_WITHIN_NEARBY_RADIUS(686),
+    RET_GOT_ALL_ONEOFF_GAHTER(683),
     /**
-     * <code>RETCODE_RET_WIDGET_CLIENT_COLLECTOR_NEED_POINTS = 687;</code>
+     * <code>RET_INVALID_WIDGET_MATERIAL_ID = 684;</code>
      */
-    RETCODE_RET_WIDGET_CLIENT_COLLECTOR_NEED_POINTS(687),
+    RET_INVALID_WIDGET_MATERIAL_ID(684),
     /**
-     * <code>RETCODE_RET_WIDGET_IN_COMBAT = 688;</code>
+     * <code>RET_WIDGET_DETECTOR_NO_HINT_TO_CLEAR = 685;</code>
      */
-    RETCODE_RET_WIDGET_IN_COMBAT(688),
+    RET_WIDGET_DETECTOR_NO_HINT_TO_CLEAR(685),
     /**
-     * <code>RETCODE_RET_WIDGET_NOT_SET_QUICK_USE = 689;</code>
+     * <code>RET_WIDGET_ALREADY_WITHIN_NEARBY_RADIUS = 686;</code>
      */
-    RETCODE_RET_WIDGET_NOT_SET_QUICK_USE(689),
+    RET_WIDGET_ALREADY_WITHIN_NEARBY_RADIUS(686),
     /**
-     * <code>RETCODE_RET_ALREADY_ATTACH_WIDGET = 690;</code>
+     * <code>RET_WIDGET_CLIENT_COLLECTOR_NEED_POINTS = 687;</code>
      */
-    RETCODE_RET_ALREADY_ATTACH_WIDGET(690),
+    RET_WIDGET_CLIENT_COLLECTOR_NEED_POINTS(687),
     /**
-     * <code>RETCODE_RET_EQUIP_IS_LOCKED = 691;</code>
+     * <code>RET_WIDGET_IN_COMBAT = 688;</code>
      */
-    RETCODE_RET_EQUIP_IS_LOCKED(691),
+    RET_WIDGET_IN_COMBAT(688),
     /**
-     * <code>RETCODE_RET_FORGE_IS_LOCKED = 692;</code>
+     * <code>RET_WIDGET_NOT_SET_QUICK_USE = 689;</code>
      */
-    RETCODE_RET_FORGE_IS_LOCKED(692),
+    RET_WIDGET_NOT_SET_QUICK_USE(689),
     /**
-     * <code>RETCODE_RET_COMBINE_IS_LOCKED = 693;</code>
+     * <code>RET_ALREADY_ATTACH_WIDGET = 690;</code>
      */
-    RETCODE_RET_COMBINE_IS_LOCKED(693),
+    RET_ALREADY_ATTACH_WIDGET(690),
     /**
-     * <code>RETCODE_RET_FORGE_OUTPUT_STACK_LIMIT = 694;</code>
+     * <code>RET_EQUIP_IS_LOCKED = 691;</code>
      */
-    RETCODE_RET_FORGE_OUTPUT_STACK_LIMIT(694),
+    RET_EQUIP_IS_LOCKED(691),
     /**
-     * <code>RETCODE_RET_ALREADY_DETTACH_WIDGET = 695;</code>
+     * <code>RET_FORGE_IS_LOCKED = 692;</code>
      */
-    RETCODE_RET_ALREADY_DETTACH_WIDGET(695),
+    RET_FORGE_IS_LOCKED(692),
     /**
-     * <code>RETCODE_RET_GADGET_BUILDER_EXCEED_MAX_COUNT = 696;</code>
+     * <code>RET_COMBINE_IS_LOCKED = 693;</code>
      */
-    RETCODE_RET_GADGET_BUILDER_EXCEED_MAX_COUNT(696),
+    RET_COMBINE_IS_LOCKED(693),
     /**
-     * <code>RETCODE_RET_REUNION_PRIVILEGE_RESIN_TYPE_IS_NORMAL = 697;</code>
+     * <code>RET_FORGE_OUTPUT_STACK_LIMIT = 694;</code>
      */
-    RETCODE_RET_REUNION_PRIVILEGE_RESIN_TYPE_IS_NORMAL(697),
+    RET_FORGE_OUTPUT_STACK_LIMIT(694),
     /**
-     * <code>RETCODE_RET_BONUS_COUNT_EXCEED_DOUBLE_LIMIT = 698;</code>
+     * <code>RET_ALREADY_DETTACH_WIDGET = 695;</code>
      */
-    RETCODE_RET_BONUS_COUNT_EXCEED_DOUBLE_LIMIT(698),
+    RET_ALREADY_DETTACH_WIDGET(695),
     /**
-     * <code>RETCODE_RET_RELIQUARY_DECOMPOSE_PARAM_ERROR = 699;</code>
+     * <code>RET_GADGET_BUILDER_EXCEED_MAX_COUNT = 696;</code>
      */
-    RETCODE_RET_RELIQUARY_DECOMPOSE_PARAM_ERROR(699),
+    RET_GADGET_BUILDER_EXCEED_MAX_COUNT(696),
     /**
-     * <code>RETCODE_RET_ITEM_COMBINE_COUNT_NOT_ENOUGH = 700;</code>
+     * <code>RET_REUNION_PRIVILEGE_RESIN_TYPE_IS_NORMAL = 697;</code>
      */
-    RETCODE_RET_ITEM_COMBINE_COUNT_NOT_ENOUGH(700),
+    RET_REUNION_PRIVILEGE_RESIN_TYPE_IS_NORMAL(697),
     /**
-     * <code>RETCODE_RET_GOODS_NOT_EXIST = 701;</code>
+     * <code>RET_BONUS_COUNT_EXCEED_DOUBLE_LIMIT = 698;</code>
      */
-    RETCODE_RET_GOODS_NOT_EXIST(701),
+    RET_BONUS_COUNT_EXCEED_DOUBLE_LIMIT(698),
     /**
-     * <code>RETCODE_RET_GOODS_MATERIAL_NOT_ENOUGH = 702;</code>
+     * <code>RET_RELIQUARY_DECOMPOSE_PARAM_ERROR = 699;</code>
      */
-    RETCODE_RET_GOODS_MATERIAL_NOT_ENOUGH(702),
+    RET_RELIQUARY_DECOMPOSE_PARAM_ERROR(699),
     /**
-     * <code>RETCODE_RET_GOODS_NOT_IN_TIME = 703;</code>
+     * <code>RET_ITEM_COMBINE_COUNT_NOT_ENOUGH = 700;</code>
      */
-    RETCODE_RET_GOODS_NOT_IN_TIME(703),
+    RET_ITEM_COMBINE_COUNT_NOT_ENOUGH(700),
     /**
-     * <code>RETCODE_RET_GOODS_BUY_NUM_NOT_ENOUGH = 704;</code>
+     * <code>RET_GOODS_NOT_EXIST = 701;</code>
      */
-    RETCODE_RET_GOODS_BUY_NUM_NOT_ENOUGH(704),
+    RET_GOODS_NOT_EXIST(701),
     /**
-     * <code>RETCODE_RET_GOODS_BUY_NUM_ERROR = 705;</code>
+     * <code>RET_GOODS_MATERIAL_NOT_ENOUGH = 702;</code>
      */
-    RETCODE_RET_GOODS_BUY_NUM_ERROR(705),
+    RET_GOODS_MATERIAL_NOT_ENOUGH(702),
     /**
-     * <code>RETCODE_RET_SHOP_NOT_OPEN = 706;</code>
+     * <code>RET_GOODS_NOT_IN_TIME = 703;</code>
      */
-    RETCODE_RET_SHOP_NOT_OPEN(706),
+    RET_GOODS_NOT_IN_TIME(703),
     /**
-     * <code>RETCODE_RET_SHOP_CONTENT_NOT_MATCH = 707;</code>
+     * <code>RET_GOODS_BUY_NUM_NOT_ENOUGH = 704;</code>
      */
-    RETCODE_RET_SHOP_CONTENT_NOT_MATCH(707),
+    RET_GOODS_BUY_NUM_NOT_ENOUGH(704),
     /**
-     * <code>RETCODE_RET_CHAT_FORBIDDEN = 798;</code>
+     * <code>RET_GOODS_BUY_NUM_ERROR = 705;</code>
      */
-    RETCODE_RET_CHAT_FORBIDDEN(798),
+    RET_GOODS_BUY_NUM_ERROR(705),
     /**
-     * <code>RETCODE_RET_CHAT_CD = 799;</code>
+     * <code>RET_SHOP_NOT_OPEN = 706;</code>
      */
-    RETCODE_RET_CHAT_CD(799),
+    RET_SHOP_NOT_OPEN(706),
     /**
-     * <code>RETCODE_RET_CHAT_FREQUENTLY = 800;</code>
+     * <code>RET_SHOP_CONTENT_NOT_MATCH = 707;</code>
      */
-    RETCODE_RET_CHAT_FREQUENTLY(800),
+    RET_SHOP_CONTENT_NOT_MATCH(707),
     /**
-     * <code>RETCODE_RET_GADGET_NOT_EXIST = 801;</code>
+     * <code>RET_SHOP_BATCH_BUY_SHOP_LIMIT = 708;</code>
      */
-    RETCODE_RET_GADGET_NOT_EXIST(801),
+    RET_SHOP_BATCH_BUY_SHOP_LIMIT(708),
     /**
-     * <code>RETCODE_RET_GADGET_NOT_INTERACTIVE = 802;</code>
+     * <code>RET_SHOP_BATCH_BUY_COUNT_LIMIT = 709;</code>
      */
-    RETCODE_RET_GADGET_NOT_INTERACTIVE(802),
+    RET_SHOP_BATCH_BUY_COUNT_LIMIT(709),
     /**
-     * <code>RETCODE_RET_GADGET_NOT_GATHERABLE = 803;</code>
+     * <code>RET_CHAT_FORBIDDEN = 798;</code>
      */
-    RETCODE_RET_GADGET_NOT_GATHERABLE(803),
+    RET_CHAT_FORBIDDEN(798),
     /**
-     * <code>RETCODE_RET_CHEST_IS_LOCKED = 804;</code>
+     * <code>RET_CHAT_CD = 799;</code>
      */
-    RETCODE_RET_CHEST_IS_LOCKED(804),
+    RET_CHAT_CD(799),
     /**
-     * <code>RETCODE_RET_GADGET_CREATE_FAIL = 805;</code>
+     * <code>RET_CHAT_FREQUENTLY = 800;</code>
      */
-    RETCODE_RET_GADGET_CREATE_FAIL(805),
+    RET_CHAT_FREQUENTLY(800),
     /**
-     * <code>RETCODE_RET_WORKTOP_OPTION_NOT_EXIST = 806;</code>
+     * <code>RET_GADGET_NOT_EXIST = 801;</code>
      */
-    RETCODE_RET_WORKTOP_OPTION_NOT_EXIST(806),
+    RET_GADGET_NOT_EXIST(801),
     /**
-     * <code>RETCODE_RET_GADGET_STATUE_NOT_ACTIVE = 807;</code>
+     * <code>RET_GADGET_NOT_INTERACTIVE = 802;</code>
      */
-    RETCODE_RET_GADGET_STATUE_NOT_ACTIVE(807),
+    RET_GADGET_NOT_INTERACTIVE(802),
     /**
-     * <code>RETCODE_RET_GADGET_STATUE_OPENED = 808;</code>
+     * <code>RET_GADGET_NOT_GATHERABLE = 803;</code>
      */
-    RETCODE_RET_GADGET_STATUE_OPENED(808),
+    RET_GADGET_NOT_GATHERABLE(803),
     /**
-     * <code>RETCODE_RET_BOSS_CHEST_NO_QUALIFICATION = 809;</code>
+     * <code>RET_CHEST_IS_LOCKED = 804;</code>
      */
-    RETCODE_RET_BOSS_CHEST_NO_QUALIFICATION(809),
+    RET_CHEST_IS_LOCKED(804),
     /**
-     * <code>RETCODE_RET_BOSS_CHEST_LIFE_TIME_OVER = 810;</code>
+     * <code>RET_GADGET_CREATE_FAIL = 805;</code>
      */
-    RETCODE_RET_BOSS_CHEST_LIFE_TIME_OVER(810),
+    RET_GADGET_CREATE_FAIL(805),
     /**
-     * <code>RETCODE_RET_BOSS_CHEST_WEEK_NUM_LIMIT = 811;</code>
+     * <code>RET_WORKTOP_OPTION_NOT_EXIST = 806;</code>
      */
-    RETCODE_RET_BOSS_CHEST_WEEK_NUM_LIMIT(811),
+    RET_WORKTOP_OPTION_NOT_EXIST(806),
     /**
-     * <code>RETCODE_RET_BOSS_CHEST_GUEST_WORLD_LEVEL = 812;</code>
+     * <code>RET_GADGET_STATUE_NOT_ACTIVE = 807;</code>
      */
-    RETCODE_RET_BOSS_CHEST_GUEST_WORLD_LEVEL(812),
+    RET_GADGET_STATUE_NOT_ACTIVE(807),
     /**
-     * <code>RETCODE_RET_BOSS_CHEST_HAS_TAKEN = 813;</code>
+     * <code>RET_GADGET_STATUE_OPENED = 808;</code>
      */
-    RETCODE_RET_BOSS_CHEST_HAS_TAKEN(813),
+    RET_GADGET_STATUE_OPENED(808),
     /**
-     * <code>RETCODE_RET_BLOSSOM_CHEST_NO_QUALIFICATION = 814;</code>
+     * <code>RET_BOSS_CHEST_NO_QUALIFICATION = 809;</code>
      */
-    RETCODE_RET_BLOSSOM_CHEST_NO_QUALIFICATION(814),
+    RET_BOSS_CHEST_NO_QUALIFICATION(809),
     /**
-     * <code>RETCODE_RET_BLOSSOM_CHEST_LIFE_TIME_OVER = 815;</code>
+     * <code>RET_BOSS_CHEST_LIFE_TIME_OVER = 810;</code>
      */
-    RETCODE_RET_BLOSSOM_CHEST_LIFE_TIME_OVER(815),
+    RET_BOSS_CHEST_LIFE_TIME_OVER(810),
     /**
-     * <code>RETCODE_RET_BLOSSOM_CHEST_HAS_TAKEN = 816;</code>
+     * <code>RET_BOSS_CHEST_WEEK_NUM_LIMIT = 811;</code>
      */
-    RETCODE_RET_BLOSSOM_CHEST_HAS_TAKEN(816),
+    RET_BOSS_CHEST_WEEK_NUM_LIMIT(811),
     /**
-     * <code>RETCODE_RET_BLOSSOM_CHEST_GUEST_WORLD_LEVEL = 817;</code>
+     * <code>RET_BOSS_CHEST_GUEST_WORLD_LEVEL = 812;</code>
      */
-    RETCODE_RET_BLOSSOM_CHEST_GUEST_WORLD_LEVEL(817),
+    RET_BOSS_CHEST_GUEST_WORLD_LEVEL(812),
     /**
-     * <code>RETCODE_RET_MP_PLAY_REWARD_NO_QUALIFICATION = 818;</code>
+     * <code>RET_BOSS_CHEST_HAS_TAKEN = 813;</code>
      */
-    RETCODE_RET_MP_PLAY_REWARD_NO_QUALIFICATION(818),
+    RET_BOSS_CHEST_HAS_TAKEN(813),
     /**
-     * <code>RETCODE_RET_MP_PLAY_REWARD_HAS_TAKEN = 819;</code>
+     * <code>RET_BLOSSOM_CHEST_NO_QUALIFICATION = 814;</code>
      */
-    RETCODE_RET_MP_PLAY_REWARD_HAS_TAKEN(819),
+    RET_BLOSSOM_CHEST_NO_QUALIFICATION(814),
     /**
-     * <code>RETCODE_RET_GENERAL_REWARD_NO_QUALIFICATION = 820;</code>
+     * <code>RET_BLOSSOM_CHEST_LIFE_TIME_OVER = 815;</code>
      */
-    RETCODE_RET_GENERAL_REWARD_NO_QUALIFICATION(820),
+    RET_BLOSSOM_CHEST_LIFE_TIME_OVER(815),
     /**
-     * <code>RETCODE_RET_GENERAL_REWARD_LIFE_TIME_OVER = 821;</code>
+     * <code>RET_BLOSSOM_CHEST_HAS_TAKEN = 816;</code>
      */
-    RETCODE_RET_GENERAL_REWARD_LIFE_TIME_OVER(821),
+    RET_BLOSSOM_CHEST_HAS_TAKEN(816),
     /**
-     * <code>RETCODE_RET_GENERAL_REWARD_HAS_TAKEN = 822;</code>
+     * <code>RET_BLOSSOM_CHEST_GUEST_WORLD_LEVEL = 817;</code>
      */
-    RETCODE_RET_GENERAL_REWARD_HAS_TAKEN(822),
+    RET_BLOSSOM_CHEST_GUEST_WORLD_LEVEL(817),
     /**
-     * <code>RETCODE_RET_GADGET_NOT_VEHICLE = 823;</code>
+     * <code>RET_MP_PLAY_REWARD_NO_QUALIFICATION = 818;</code>
      */
-    RETCODE_RET_GADGET_NOT_VEHICLE(823),
+    RET_MP_PLAY_REWARD_NO_QUALIFICATION(818),
     /**
-     * <code>RETCODE_RET_VEHICLE_SLOT_OCCUPIED = 824;</code>
+     * <code>RET_MP_PLAY_REWARD_HAS_TAKEN = 819;</code>
      */
-    RETCODE_RET_VEHICLE_SLOT_OCCUPIED(824),
+    RET_MP_PLAY_REWARD_HAS_TAKEN(819),
     /**
-     * <code>RETCODE_RET_NOT_IN_VEHICLE = 825;</code>
+     * <code>RET_GENERAL_REWARD_NO_QUALIFICATION = 820;</code>
      */
-    RETCODE_RET_NOT_IN_VEHICLE(825),
+    RET_GENERAL_REWARD_NO_QUALIFICATION(820),
     /**
-     * <code>RETCODE_RET_CREATE_VEHICLE_IN_CD = 826;</code>
+     * <code>RET_GENERAL_REWARD_LIFE_TIME_OVER = 821;</code>
      */
-    RETCODE_RET_CREATE_VEHICLE_IN_CD(826),
+    RET_GENERAL_REWARD_LIFE_TIME_OVER(821),
     /**
-     * <code>RETCODE_RET_CREATE_VEHICLE_POS_INVALID = 827;</code>
+     * <code>RET_GENERAL_REWARD_HAS_TAKEN = 822;</code>
      */
-    RETCODE_RET_CREATE_VEHICLE_POS_INVALID(827),
+    RET_GENERAL_REWARD_HAS_TAKEN(822),
     /**
-     * <code>RETCODE_RET_VEHICLE_POINT_NOT_UNLOCK = 828;</code>
+     * <code>RET_GADGET_NOT_VEHICLE = 823;</code>
      */
-    RETCODE_RET_VEHICLE_POINT_NOT_UNLOCK(828),
+    RET_GADGET_NOT_VEHICLE(823),
     /**
-     * <code>RETCODE_RET_GADGET_INTERACT_COND_NOT_MEET = 829;</code>
+     * <code>RET_VEHICLE_SLOT_OCCUPIED = 824;</code>
      */
-    RETCODE_RET_GADGET_INTERACT_COND_NOT_MEET(829),
+    RET_VEHICLE_SLOT_OCCUPIED(824),
     /**
-     * <code>RETCODE_RET_GADGET_INTERACT_PARAM_ERROR = 830;</code>
+     * <code>RET_NOT_IN_VEHICLE = 825;</code>
      */
-    RETCODE_RET_GADGET_INTERACT_PARAM_ERROR(830),
+    RET_NOT_IN_VEHICLE(825),
     /**
-     * <code>RETCODE_RET_GADGET_CUSTOM_COMBINATION_INVALID = 831;</code>
+     * <code>RET_CREATE_VEHICLE_IN_CD = 826;</code>
      */
-    RETCODE_RET_GADGET_CUSTOM_COMBINATION_INVALID(831),
+    RET_CREATE_VEHICLE_IN_CD(826),
     /**
-     * <code>RETCODE_RET_DESHRET_OBELISK_DUPLICATE_INTERACT = 832;</code>
+     * <code>RET_CREATE_VEHICLE_POS_INVALID = 827;</code>
      */
-    RETCODE_RET_DESHRET_OBELISK_DUPLICATE_INTERACT(832),
+    RET_CREATE_VEHICLE_POS_INVALID(827),
     /**
-     * <code>RETCODE_RET_DESHRET_OBELISK_NO_AVAIL_CHEST = 833;</code>
+     * <code>RET_VEHICLE_POINT_NOT_UNLOCK = 828;</code>
      */
-    RETCODE_RET_DESHRET_OBELISK_NO_AVAIL_CHEST(833),
+    RET_VEHICLE_POINT_NOT_UNLOCK(828),
     /**
-     * <code>RETCODE_RET_ACTIVITY_CLOSE = 860;</code>
+     * <code>RET_GADGET_INTERACT_COND_NOT_MEET = 829;</code>
      */
-    RETCODE_RET_ACTIVITY_CLOSE(860),
+    RET_GADGET_INTERACT_COND_NOT_MEET(829),
     /**
-     * <code>RETCODE_RET_ACTIVITY_ITEM_ERROR = 861;</code>
+     * <code>RET_GADGET_INTERACT_PARAM_ERROR = 830;</code>
      */
-    RETCODE_RET_ACTIVITY_ITEM_ERROR(861),
+    RET_GADGET_INTERACT_PARAM_ERROR(830),
     /**
-     * <code>RETCODE_RET_ACTIVITY_CONTRIBUTION_NOT_ENOUGH = 862;</code>
+     * <code>RET_GADGET_CUSTOM_COMBINATION_INVALID = 831;</code>
      */
-    RETCODE_RET_ACTIVITY_CONTRIBUTION_NOT_ENOUGH(862),
+    RET_GADGET_CUSTOM_COMBINATION_INVALID(831),
     /**
-     * <code>RETCODE_RET_SEA_LAMP_PHASE_NOT_FINISH = 863;</code>
+     * <code>RET_DESHRET_OBELISK_DUPLICATE_INTERACT = 832;</code>
      */
-    RETCODE_RET_SEA_LAMP_PHASE_NOT_FINISH(863),
+    RET_DESHRET_OBELISK_DUPLICATE_INTERACT(832),
     /**
-     * <code>RETCODE_RET_SEA_LAMP_FLY_NUM_LIMIT = 864;</code>
+     * <code>RET_DESHRET_OBELISK_NO_AVAIL_CHEST = 833;</code>
      */
-    RETCODE_RET_SEA_LAMP_FLY_NUM_LIMIT(864),
+    RET_DESHRET_OBELISK_NO_AVAIL_CHEST(833),
     /**
-     * <code>RETCODE_RET_SEA_LAMP_FLY_LAMP_WORD_ILLEGAL = 865;</code>
+     * <code>RET_ACTIVITY_CLOSE = 860;</code>
      */
-    RETCODE_RET_SEA_LAMP_FLY_LAMP_WORD_ILLEGAL(865),
+    RET_ACTIVITY_CLOSE(860),
     /**
-     * <code>RETCODE_RET_ACTIVITY_WATCHER_REWARD_TAKEN = 866;</code>
+     * <code>RET_ACTIVITY_ITEM_ERROR = 861;</code>
      */
-    RETCODE_RET_ACTIVITY_WATCHER_REWARD_TAKEN(866),
+    RET_ACTIVITY_ITEM_ERROR(861),
     /**
-     * <code>RETCODE_RET_ACTIVITY_WATCHER_REWARD_NOT_FINISHED = 867;</code>
+     * <code>RET_ACTIVITY_CONTRIBUTION_NOT_ENOUGH = 862;</code>
      */
-    RETCODE_RET_ACTIVITY_WATCHER_REWARD_NOT_FINISHED(867),
+    RET_ACTIVITY_CONTRIBUTION_NOT_ENOUGH(862),
     /**
-     * <code>RETCODE_RET_SALESMAN_ALREADY_DELIVERED = 868;</code>
+     * <code>RET_SEA_LAMP_PHASE_NOT_FINISH = 863;</code>
      */
-    RETCODE_RET_SALESMAN_ALREADY_DELIVERED(868),
+    RET_SEA_LAMP_PHASE_NOT_FINISH(863),
     /**
-     * <code>RETCODE_RET_SALESMAN_REWARD_COUNT_NOT_ENOUGH = 869;</code>
+     * <code>RET_SEA_LAMP_FLY_NUM_LIMIT = 864;</code>
      */
-    RETCODE_RET_SALESMAN_REWARD_COUNT_NOT_ENOUGH(869),
+    RET_SEA_LAMP_FLY_NUM_LIMIT(864),
     /**
-     * <code>RETCODE_RET_SALESMAN_POSITION_INVALID = 870;</code>
+     * <code>RET_SEA_LAMP_FLY_LAMP_WORD_ILLEGAL = 865;</code>
      */
-    RETCODE_RET_SALESMAN_POSITION_INVALID(870),
+    RET_SEA_LAMP_FLY_LAMP_WORD_ILLEGAL(865),
     /**
-     * <code>RETCODE_RET_DELIVER_NOT_FINISH_ALL_QUEST = 871;</code>
+     * <code>RET_ACTIVITY_WATCHER_REWARD_TAKEN = 866;</code>
      */
-    RETCODE_RET_DELIVER_NOT_FINISH_ALL_QUEST(871),
+    RET_ACTIVITY_WATCHER_REWARD_TAKEN(866),
     /**
-     * <code>RETCODE_RET_DELIVER_ALREADY_TAKE_DAILY_REWARD = 872;</code>
+     * <code>RET_ACTIVITY_WATCHER_REWARD_NOT_FINISHED = 867;</code>
      */
-    RETCODE_RET_DELIVER_ALREADY_TAKE_DAILY_REWARD(872),
+    RET_ACTIVITY_WATCHER_REWARD_NOT_FINISHED(867),
     /**
-     * <code>RETCODE_RET_ASTER_PROGRESS_EXCEED_LIMIT = 873;</code>
+     * <code>RET_SALESMAN_ALREADY_DELIVERED = 868;</code>
      */
-    RETCODE_RET_ASTER_PROGRESS_EXCEED_LIMIT(873),
+    RET_SALESMAN_ALREADY_DELIVERED(868),
     /**
-     * <code>RETCODE_RET_ASTER_CREDIT_EXCEED_LIMIT = 874;</code>
+     * <code>RET_SALESMAN_REWARD_COUNT_NOT_ENOUGH = 869;</code>
      */
-    RETCODE_RET_ASTER_CREDIT_EXCEED_LIMIT(874),
+    RET_SALESMAN_REWARD_COUNT_NOT_ENOUGH(869),
     /**
-     * <code>RETCODE_RET_ASTER_TOKEN_EXCEED_LIMIT = 875;</code>
+     * <code>RET_SALESMAN_POSITION_INVALID = 870;</code>
      */
-    RETCODE_RET_ASTER_TOKEN_EXCEED_LIMIT(875),
+    RET_SALESMAN_POSITION_INVALID(870),
     /**
-     * <code>RETCODE_RET_ASTER_CREDIT_NOT_ENOUGH = 876;</code>
+     * <code>RET_DELIVER_NOT_FINISH_ALL_QUEST = 871;</code>
      */
-    RETCODE_RET_ASTER_CREDIT_NOT_ENOUGH(876),
+    RET_DELIVER_NOT_FINISH_ALL_QUEST(871),
     /**
-     * <code>RETCODE_RET_ASTER_TOKEN_NOT_ENOUGH = 877;</code>
+     * <code>RET_DELIVER_ALREADY_TAKE_DAILY_REWARD = 872;</code>
      */
-    RETCODE_RET_ASTER_TOKEN_NOT_ENOUGH(877),
+    RET_DELIVER_ALREADY_TAKE_DAILY_REWARD(872),
     /**
-     * <code>RETCODE_RET_ASTER_SPECIAL_REWARD_HAS_TAKEN = 878;</code>
+     * <code>RET_ASTER_PROGRESS_EXCEED_LIMIT = 873;</code>
      */
-    RETCODE_RET_ASTER_SPECIAL_REWARD_HAS_TAKEN(878),
+    RET_ASTER_PROGRESS_EXCEED_LIMIT(873),
     /**
-     * <code>RETCODE_RET_FLIGHT_GROUP_ACTIVITY_NOT_STARTED = 879;</code>
+     * <code>RET_ASTER_CREDIT_EXCEED_LIMIT = 874;</code>
      */
-    RETCODE_RET_FLIGHT_GROUP_ACTIVITY_NOT_STARTED(879),
+    RET_ASTER_CREDIT_EXCEED_LIMIT(874),
     /**
-     * <code>RETCODE_RET_ASTER_MID_PREVIOUS_BATTLE_NOT_FINISHED = 880;</code>
+     * <code>RET_ASTER_TOKEN_EXCEED_LIMIT = 875;</code>
      */
-    RETCODE_RET_ASTER_MID_PREVIOUS_BATTLE_NOT_FINISHED(880),
+    RET_ASTER_TOKEN_EXCEED_LIMIT(875),
     /**
-     * <code>RETCODE_RET_DRAGON_SPINE_SHIMMERING_ESSENCE_EXCEED_LIMIT = 881;</code>
+     * <code>RET_ASTER_CREDIT_NOT_ENOUGH = 876;</code>
      */
-    RETCODE_RET_DRAGON_SPINE_SHIMMERING_ESSENCE_EXCEED_LIMIT(881),
+    RET_ASTER_CREDIT_NOT_ENOUGH(876),
     /**
-     * <code>RETCODE_RET_DRAGON_SPINE_WARM_ESSENCE_EXCEED_LIMIT = 882;</code>
+     * <code>RET_ASTER_TOKEN_NOT_ENOUGH = 877;</code>
      */
-    RETCODE_RET_DRAGON_SPINE_WARM_ESSENCE_EXCEED_LIMIT(882),
+    RET_ASTER_TOKEN_NOT_ENOUGH(877),
     /**
-     * <code>RETCODE_RET_DRAGON_SPINE_WONDROUS_ESSENCE_EXCEED_LIMIT = 883;</code>
+     * <code>RET_ASTER_SPECIAL_REWARD_HAS_TAKEN = 878;</code>
      */
-    RETCODE_RET_DRAGON_SPINE_WONDROUS_ESSENCE_EXCEED_LIMIT(883),
+    RET_ASTER_SPECIAL_REWARD_HAS_TAKEN(878),
     /**
-     * <code>RETCODE_RET_DRAGON_SPINE_SHIMMERING_ESSENCE_NOT_ENOUGH = 884;</code>
+     * <code>RET_FLIGHT_GROUP_ACTIVITY_NOT_STARTED = 879;</code>
      */
-    RETCODE_RET_DRAGON_SPINE_SHIMMERING_ESSENCE_NOT_ENOUGH(884),
+    RET_FLIGHT_GROUP_ACTIVITY_NOT_STARTED(879),
     /**
-     * <code>RETCODE_RET_DRAGON_SPINE_WARM_ESSENCE_NOT_ENOUGH = 885;</code>
+     * <code>RET_ASTER_MID_PREVIOUS_BATTLE_NOT_FINISHED = 880;</code>
      */
-    RETCODE_RET_DRAGON_SPINE_WARM_ESSENCE_NOT_ENOUGH(885),
+    RET_ASTER_MID_PREVIOUS_BATTLE_NOT_FINISHED(880),
     /**
-     * <code>RETCODE_RET_DRAGON_SPINE_WONDROUS_ESSENCE_NOT_ENOUGH = 886;</code>
+     * <code>RET_DRAGON_SPINE_SHIMMERING_ESSENCE_EXCEED_LIMIT = 881;</code>
      */
-    RETCODE_RET_DRAGON_SPINE_WONDROUS_ESSENCE_NOT_ENOUGH(886),
+    RET_DRAGON_SPINE_SHIMMERING_ESSENCE_EXCEED_LIMIT(881),
     /**
-     * <code>RETCODE_RET_EFFIGY_FIRST_PASS_REWARD_HAS_TAKEN = 891;</code>
+     * <code>RET_DRAGON_SPINE_WARM_ESSENCE_EXCEED_LIMIT = 882;</code>
      */
-    RETCODE_RET_EFFIGY_FIRST_PASS_REWARD_HAS_TAKEN(891),
+    RET_DRAGON_SPINE_WARM_ESSENCE_EXCEED_LIMIT(882),
     /**
-     * <code>RETCODE_RET_EFFIGY_REWARD_HAS_TAKEN = 892;</code>
+     * <code>RET_DRAGON_SPINE_WONDROUS_ESSENCE_EXCEED_LIMIT = 883;</code>
      */
-    RETCODE_RET_EFFIGY_REWARD_HAS_TAKEN(892),
+    RET_DRAGON_SPINE_WONDROUS_ESSENCE_EXCEED_LIMIT(883),
     /**
-     * <code>RETCODE_RET_TREASURE_MAP_ADD_TOKEN_EXCEED_LIMIT = 893;</code>
+     * <code>RET_DRAGON_SPINE_SHIMMERING_ESSENCE_NOT_ENOUGH = 884;</code>
      */
-    RETCODE_RET_TREASURE_MAP_ADD_TOKEN_EXCEED_LIMIT(893),
+    RET_DRAGON_SPINE_SHIMMERING_ESSENCE_NOT_ENOUGH(884),
     /**
-     * <code>RETCODE_RET_TREASURE_MAP_TOKEN_NOT_ENOUGHT = 894;</code>
+     * <code>RET_DRAGON_SPINE_WARM_ESSENCE_NOT_ENOUGH = 885;</code>
      */
-    RETCODE_RET_TREASURE_MAP_TOKEN_NOT_ENOUGHT(894),
+    RET_DRAGON_SPINE_WARM_ESSENCE_NOT_ENOUGH(885),
     /**
-     * <code>RETCODE_RET_SEA_LAMP_COIN_EXCEED_LIMIT = 895;</code>
+     * <code>RET_DRAGON_SPINE_WONDROUS_ESSENCE_NOT_ENOUGH = 886;</code>
      */
-    RETCODE_RET_SEA_LAMP_COIN_EXCEED_LIMIT(895),
+    RET_DRAGON_SPINE_WONDROUS_ESSENCE_NOT_ENOUGH(886),
     /**
-     * <code>RETCODE_RET_SEA_LAMP_COIN_NOT_ENOUGH = 896;</code>
+     * <code>RET_EFFIGY_FIRST_PASS_REWARD_HAS_TAKEN = 891;</code>
      */
-    RETCODE_RET_SEA_LAMP_COIN_NOT_ENOUGH(896),
+    RET_EFFIGY_FIRST_PASS_REWARD_HAS_TAKEN(891),
     /**
-     * <code>RETCODE_RET_SEA_LAMP_POPULARITY_EXCEED_LIMIT = 897;</code>
+     * <code>RET_EFFIGY_REWARD_HAS_TAKEN = 892;</code>
      */
-    RETCODE_RET_SEA_LAMP_POPULARITY_EXCEED_LIMIT(897),
+    RET_EFFIGY_REWARD_HAS_TAKEN(892),
     /**
-     * <code>RETCODE_RET_ACTIVITY_AVATAR_REWARD_NOT_OPEN = 898;</code>
+     * <code>RET_TREASURE_MAP_ADD_TOKEN_EXCEED_LIMIT = 893;</code>
      */
-    RETCODE_RET_ACTIVITY_AVATAR_REWARD_NOT_OPEN(898),
+    RET_TREASURE_MAP_ADD_TOKEN_EXCEED_LIMIT(893),
     /**
-     * <code>RETCODE_RET_ACTIVITY_AVATAR_REWARD_HAS_TAKEN = 899;</code>
+     * <code>RET_TREASURE_MAP_TOKEN_NOT_ENOUGHT = 894;</code>
      */
-    RETCODE_RET_ACTIVITY_AVATAR_REWARD_HAS_TAKEN(899),
+    RET_TREASURE_MAP_TOKEN_NOT_ENOUGHT(894),
     /**
-     * <code>RETCODE_RET_ARENA_ACTIVITY_ALREADY_STARTED = 900;</code>
+     * <code>RET_SEA_LAMP_COIN_EXCEED_LIMIT = 895;</code>
      */
-    RETCODE_RET_ARENA_ACTIVITY_ALREADY_STARTED(900),
+    RET_SEA_LAMP_COIN_EXCEED_LIMIT(895),
     /**
-     * <code>RETCODE_RET_TALENT_ALREAY_UNLOCKED = 901;</code>
+     * <code>RET_SEA_LAMP_COIN_NOT_ENOUGH = 896;</code>
      */
-    RETCODE_RET_TALENT_ALREAY_UNLOCKED(901),
+    RET_SEA_LAMP_COIN_NOT_ENOUGH(896),
     /**
-     * <code>RETCODE_RET_PREV_TALENT_NOT_UNLOCKED = 902;</code>
+     * <code>RET_SEA_LAMP_POPULARITY_EXCEED_LIMIT = 897;</code>
      */
-    RETCODE_RET_PREV_TALENT_NOT_UNLOCKED(902),
+    RET_SEA_LAMP_POPULARITY_EXCEED_LIMIT(897),
     /**
-     * <code>RETCODE_RET_BIG_TALENT_POINT_NOT_ENOUGH = 903;</code>
+     * <code>RET_ACTIVITY_AVATAR_REWARD_NOT_OPEN = 898;</code>
      */
-    RETCODE_RET_BIG_TALENT_POINT_NOT_ENOUGH(903),
+    RET_ACTIVITY_AVATAR_REWARD_NOT_OPEN(898),
     /**
-     * <code>RETCODE_RET_SMALL_TALENT_POINT_NOT_ENOUGH = 904;</code>
+     * <code>RET_ACTIVITY_AVATAR_REWARD_HAS_TAKEN = 899;</code>
      */
-    RETCODE_RET_SMALL_TALENT_POINT_NOT_ENOUGH(904),
+    RET_ACTIVITY_AVATAR_REWARD_HAS_TAKEN(899),
     /**
-     * <code>RETCODE_RET_PROUD_SKILL_ALREADY_GOT = 905;</code>
+     * <code>RET_ARENA_ACTIVITY_ALREADY_STARTED = 900;</code>
      */
-    RETCODE_RET_PROUD_SKILL_ALREADY_GOT(905),
+    RET_ARENA_ACTIVITY_ALREADY_STARTED(900),
     /**
-     * <code>RETCODE_RET_PREV_PROUD_SKILL_NOT_GET = 906;</code>
+     * <code>RET_TALENT_ALREAY_UNLOCKED = 901;</code>
      */
-    RETCODE_RET_PREV_PROUD_SKILL_NOT_GET(906),
+    RET_TALENT_ALREAY_UNLOCKED(901),
     /**
-     * <code>RETCODE_RET_PROUD_SKILL_MAX_LEVEL = 907;</code>
+     * <code>RET_PREV_TALENT_NOT_UNLOCKED = 902;</code>
      */
-    RETCODE_RET_PROUD_SKILL_MAX_LEVEL(907),
+    RET_PREV_TALENT_NOT_UNLOCKED(902),
     /**
-     * <code>RETCODE_RET_CANDIDATE_SKILL_DEPOT_ID_NOT_FIND = 910;</code>
+     * <code>RET_BIG_TALENT_POINT_NOT_ENOUGH = 903;</code>
      */
-    RETCODE_RET_CANDIDATE_SKILL_DEPOT_ID_NOT_FIND(910),
+    RET_BIG_TALENT_POINT_NOT_ENOUGH(903),
     /**
-     * <code>RETCODE_RET_SKILL_DEPOT_IS_THE_SAME = 911;</code>
+     * <code>RET_SMALL_TALENT_POINT_NOT_ENOUGH = 904;</code>
      */
-    RETCODE_RET_SKILL_DEPOT_IS_THE_SAME(911),
+    RET_SMALL_TALENT_POINT_NOT_ENOUGH(904),
     /**
-     * <code>RETCODE_RET_MONSTER_NOT_EXIST = 1001;</code>
+     * <code>RET_PROUD_SKILL_ALREADY_GOT = 905;</code>
      */
-    RETCODE_RET_MONSTER_NOT_EXIST(1001),
+    RET_PROUD_SKILL_ALREADY_GOT(905),
     /**
-     * <code>RETCODE_RET_MONSTER_CREATE_FAIL = 1002;</code>
+     * <code>RET_PREV_PROUD_SKILL_NOT_GET = 906;</code>
      */
-    RETCODE_RET_MONSTER_CREATE_FAIL(1002),
+    RET_PREV_PROUD_SKILL_NOT_GET(906),
     /**
-     * <code>RETCODE_RET_DUNGEON_ENTER_FAIL = 1101;</code>
+     * <code>RET_PROUD_SKILL_MAX_LEVEL = 907;</code>
      */
-    RETCODE_RET_DUNGEON_ENTER_FAIL(1101),
+    RET_PROUD_SKILL_MAX_LEVEL(907),
     /**
-     * <code>RETCODE_RET_DUNGEON_QUIT_FAIL = 1102;</code>
+     * <code>RET_CANDIDATE_SKILL_DEPOT_ID_NOT_FIND = 910;</code>
      */
-    RETCODE_RET_DUNGEON_QUIT_FAIL(1102),
+    RET_CANDIDATE_SKILL_DEPOT_ID_NOT_FIND(910),
     /**
-     * <code>RETCODE_RET_DUNGEON_ENTER_EXCEED_DAY_COUNT = 1103;</code>
+     * <code>RET_SKILL_DEPOT_IS_THE_SAME = 911;</code>
      */
-    RETCODE_RET_DUNGEON_ENTER_EXCEED_DAY_COUNT(1103),
+    RET_SKILL_DEPOT_IS_THE_SAME(911),
     /**
-     * <code>RETCODE_RET_DUNGEON_REVIVE_EXCEED_MAX_COUNT = 1104;</code>
+     * <code>RET_MONSTER_NOT_EXIST = 1001;</code>
      */
-    RETCODE_RET_DUNGEON_REVIVE_EXCEED_MAX_COUNT(1104),
+    RET_MONSTER_NOT_EXIST(1001),
     /**
-     * <code>RETCODE_RET_DUNGEON_REVIVE_FAIL = 1105;</code>
+     * <code>RET_MONSTER_CREATE_FAIL = 1002;</code>
      */
-    RETCODE_RET_DUNGEON_REVIVE_FAIL(1105),
+    RET_MONSTER_CREATE_FAIL(1002),
     /**
-     * <code>RETCODE_RET_DUNGEON_NOT_SUCCEED = 1106;</code>
+     * <code>RET_DUNGEON_ENTER_FAIL = 1101;</code>
      */
-    RETCODE_RET_DUNGEON_NOT_SUCCEED(1106),
+    RET_DUNGEON_ENTER_FAIL(1101),
     /**
-     * <code>RETCODE_RET_DUNGEON_CAN_NOT_CANCEL = 1107;</code>
+     * <code>RET_DUNGEON_QUIT_FAIL = 1102;</code>
      */
-    RETCODE_RET_DUNGEON_CAN_NOT_CANCEL(1107),
+    RET_DUNGEON_QUIT_FAIL(1102),
     /**
-     * <code>RETCODE_RET_DEST_DUNGEON_SETTLED = 1108;</code>
+     * <code>RET_DUNGEON_ENTER_EXCEED_DAY_COUNT = 1103;</code>
      */
-    RETCODE_RET_DEST_DUNGEON_SETTLED(1108),
+    RET_DUNGEON_ENTER_EXCEED_DAY_COUNT(1103),
     /**
-     * <code>RETCODE_RET_DUNGEON_CANDIDATE_TEAM_IS_FULL = 1109;</code>
+     * <code>RET_DUNGEON_REVIVE_EXCEED_MAX_COUNT = 1104;</code>
      */
-    RETCODE_RET_DUNGEON_CANDIDATE_TEAM_IS_FULL(1109),
+    RET_DUNGEON_REVIVE_EXCEED_MAX_COUNT(1104),
     /**
-     * <code>RETCODE_RET_DUNGEON_CANDIDATE_TEAM_IS_DISMISS = 1110;</code>
+     * <code>RET_DUNGEON_REVIVE_FAIL = 1105;</code>
      */
-    RETCODE_RET_DUNGEON_CANDIDATE_TEAM_IS_DISMISS(1110),
+    RET_DUNGEON_REVIVE_FAIL(1105),
     /**
-     * <code>RETCODE_RET_DUNGEON_CANDIDATE_TEAM_NOT_ALL_READY = 1111;</code>
+     * <code>RET_DUNGEON_NOT_SUCCEED = 1106;</code>
      */
-    RETCODE_RET_DUNGEON_CANDIDATE_TEAM_NOT_ALL_READY(1111),
+    RET_DUNGEON_NOT_SUCCEED(1106),
     /**
-     * <code>RETCODE_RET_DUNGEON_CANDIDATE_TEAM_HAS_REPEAT_AVATAR = 1112;</code>
+     * <code>RET_DUNGEON_CAN_NOT_CANCEL = 1107;</code>
      */
-    RETCODE_RET_DUNGEON_CANDIDATE_TEAM_HAS_REPEAT_AVATAR(1112),
+    RET_DUNGEON_CAN_NOT_CANCEL(1107),
     /**
-     * <code>RETCODE_RET_DUNGEON_CANDIDATE_NOT_SINGEL_PASS = 1113;</code>
+     * <code>RET_DEST_DUNGEON_SETTLED = 1108;</code>
      */
-    RETCODE_RET_DUNGEON_CANDIDATE_NOT_SINGEL_PASS(1113),
+    RET_DEST_DUNGEON_SETTLED(1108),
     /**
-     * <code>RETCODE_RET_DUNGEON_REPLAY_NEED_ALL_PLAYER_DIE = 1114;</code>
+     * <code>RET_DUNGEON_CANDIDATE_TEAM_IS_FULL = 1109;</code>
      */
-    RETCODE_RET_DUNGEON_REPLAY_NEED_ALL_PLAYER_DIE(1114),
+    RET_DUNGEON_CANDIDATE_TEAM_IS_FULL(1109),
     /**
-     * <code>RETCODE_RET_DUNGEON_REPLAY_HAS_REVIVE_COUNT = 1115;</code>
+     * <code>RET_DUNGEON_CANDIDATE_TEAM_IS_DISMISS = 1110;</code>
      */
-    RETCODE_RET_DUNGEON_REPLAY_HAS_REVIVE_COUNT(1115),
+    RET_DUNGEON_CANDIDATE_TEAM_IS_DISMISS(1110),
     /**
-     * <code>RETCODE_RET_DUNGEON_OTHERS_LEAVE = 1116;</code>
+     * <code>RET_DUNGEON_CANDIDATE_TEAM_NOT_ALL_READY = 1111;</code>
      */
-    RETCODE_RET_DUNGEON_OTHERS_LEAVE(1116),
+    RET_DUNGEON_CANDIDATE_TEAM_NOT_ALL_READY(1111),
     /**
-     * <code>RETCODE_RET_DUNGEON_ENTER_LEVEL_LIMIT = 1117;</code>
+     * <code>RET_DUNGEON_CANDIDATE_TEAM_HAS_REPEAT_AVATAR = 1112;</code>
      */
-    RETCODE_RET_DUNGEON_ENTER_LEVEL_LIMIT(1117),
+    RET_DUNGEON_CANDIDATE_TEAM_HAS_REPEAT_AVATAR(1112),
     /**
-     * <code>RETCODE_RET_DUNGEON_CANNOT_ENTER_PLOT_IN_MP = 1118;</code>
+     * <code>RET_DUNGEON_CANDIDATE_NOT_SINGEL_PASS = 1113;</code>
      */
-    RETCODE_RET_DUNGEON_CANNOT_ENTER_PLOT_IN_MP(1118),
+    RET_DUNGEON_CANDIDATE_NOT_SINGEL_PASS(1113),
     /**
-     * <code>RETCODE_RET_DUNGEON_DROP_SUBFIELD_LIMIT = 1119;</code>
+     * <code>RET_DUNGEON_REPLAY_NEED_ALL_PLAYER_DIE = 1114;</code>
      */
-    RETCODE_RET_DUNGEON_DROP_SUBFIELD_LIMIT(1119),
+    RET_DUNGEON_REPLAY_NEED_ALL_PLAYER_DIE(1114),
     /**
-     * <code>RETCODE_RET_DUNGEON_BE_INVITE_PLAYER_AVATAR_ALL_DIE = 1120;</code>
+     * <code>RET_DUNGEON_REPLAY_HAS_REVIVE_COUNT = 1115;</code>
      */
-    RETCODE_RET_DUNGEON_BE_INVITE_PLAYER_AVATAR_ALL_DIE(1120),
+    RET_DUNGEON_REPLAY_HAS_REVIVE_COUNT(1115),
     /**
-     * <code>RETCODE_RET_DUNGEON_CANNOT_KICK = 1121;</code>
+     * <code>RET_DUNGEON_OTHERS_LEAVE = 1116;</code>
      */
-    RETCODE_RET_DUNGEON_CANNOT_KICK(1121),
+    RET_DUNGEON_OTHERS_LEAVE(1116),
     /**
-     * <code>RETCODE_RET_DUNGEON_CANDIDATE_TEAM_SOMEONE_LEVEL_LIMIT = 1122;</code>
+     * <code>RET_DUNGEON_ENTER_LEVEL_LIMIT = 1117;</code>
      */
-    RETCODE_RET_DUNGEON_CANDIDATE_TEAM_SOMEONE_LEVEL_LIMIT(1122),
+    RET_DUNGEON_ENTER_LEVEL_LIMIT(1117),
     /**
-     * <code>RETCODE_RET_DUNGEON_IN_FORCE_QUIT = 1123;</code>
+     * <code>RET_DUNGEON_CANNOT_ENTER_PLOT_IN_MP = 1118;</code>
      */
-    RETCODE_RET_DUNGEON_IN_FORCE_QUIT(1123),
+    RET_DUNGEON_CANNOT_ENTER_PLOT_IN_MP(1118),
     /**
-     * <code>RETCODE_RET_DUNGEON_GUEST_QUIT_DUNGEON = 1124;</code>
+     * <code>RET_DUNGEON_DROP_SUBFIELD_LIMIT = 1119;</code>
      */
-    RETCODE_RET_DUNGEON_GUEST_QUIT_DUNGEON(1124),
+    RET_DUNGEON_DROP_SUBFIELD_LIMIT(1119),
     /**
-     * <code>RETCODE_RET_DUNGEON_TICKET_FAIL = 1125;</code>
+     * <code>RET_DUNGEON_BE_INVITE_PLAYER_AVATAR_ALL_DIE = 1120;</code>
      */
-    RETCODE_RET_DUNGEON_TICKET_FAIL(1125),
+    RET_DUNGEON_BE_INVITE_PLAYER_AVATAR_ALL_DIE(1120),
     /**
-     * <code>RETCODE_RET_CUR_DUNGEON_SETTLED = 1126;</code>
+     * <code>RET_DUNGEON_CANNOT_KICK = 1121;</code>
      */
-    RETCODE_RET_CUR_DUNGEON_SETTLED(1126),
+    RET_DUNGEON_CANNOT_KICK(1121),
     /**
-     * <code>RETCODE_RET_MP_NOT_IN_MY_WORLD = 1201;</code>
+     * <code>RET_DUNGEON_CANDIDATE_TEAM_SOMEONE_LEVEL_LIMIT = 1122;</code>
      */
-    RETCODE_RET_MP_NOT_IN_MY_WORLD(1201),
+    RET_DUNGEON_CANDIDATE_TEAM_SOMEONE_LEVEL_LIMIT(1122),
     /**
-     * <code>RETCODE_RET_MP_IN_MP_MODE = 1202;</code>
+     * <code>RET_DUNGEON_IN_FORCE_QUIT = 1123;</code>
      */
-    RETCODE_RET_MP_IN_MP_MODE(1202),
+    RET_DUNGEON_IN_FORCE_QUIT(1123),
     /**
-     * <code>RETCODE_RET_MP_SCENE_IS_FULL = 1203;</code>
+     * <code>RET_DUNGEON_GUEST_QUIT_DUNGEON = 1124;</code>
      */
-    RETCODE_RET_MP_SCENE_IS_FULL(1203),
+    RET_DUNGEON_GUEST_QUIT_DUNGEON(1124),
     /**
-     * <code>RETCODE_RET_MP_MODE_NOT_AVAILABLE = 1204;</code>
+     * <code>RET_DUNGEON_TICKET_FAIL = 1125;</code>
      */
-    RETCODE_RET_MP_MODE_NOT_AVAILABLE(1204),
+    RET_DUNGEON_TICKET_FAIL(1125),
     /**
-     * <code>RETCODE_RET_MP_PLAYER_NOT_ENTERABLE = 1205;</code>
+     * <code>RET_CUR_DUNGEON_SETTLED = 1126;</code>
      */
-    RETCODE_RET_MP_PLAYER_NOT_ENTERABLE(1205),
+    RET_CUR_DUNGEON_SETTLED(1126),
     /**
-     * <code>RETCODE_RET_MP_QUEST_BLOCK_MP = 1206;</code>
+     * <code>RET_MP_NOT_IN_MY_WORLD = 1201;</code>
      */
-    RETCODE_RET_MP_QUEST_BLOCK_MP(1206),
+    RET_MP_NOT_IN_MY_WORLD(1201),
     /**
-     * <code>RETCODE_RET_MP_IN_ROOM_SCENE = 1207;</code>
+     * <code>RET_MP_IN_MP_MODE = 1202;</code>
      */
-    RETCODE_RET_MP_IN_ROOM_SCENE(1207),
+    RET_MP_IN_MP_MODE(1202),
     /**
-     * <code>RETCODE_RET_MP_WORLD_IS_FULL = 1208;</code>
+     * <code>RET_MP_SCENE_IS_FULL = 1203;</code>
      */
-    RETCODE_RET_MP_WORLD_IS_FULL(1208),
+    RET_MP_SCENE_IS_FULL(1203),
     /**
-     * <code>RETCODE_RET_MP_PLAYER_NOT_ALLOW_ENTER = 1209;</code>
+     * <code>RET_MP_MODE_NOT_AVAILABLE = 1204;</code>
      */
-    RETCODE_RET_MP_PLAYER_NOT_ALLOW_ENTER(1209),
+    RET_MP_MODE_NOT_AVAILABLE(1204),
     /**
-     * <code>RETCODE_RET_MP_PLAYER_DISCONNECTED = 1210;</code>
+     * <code>RET_MP_PLAYER_NOT_ENTERABLE = 1205;</code>
      */
-    RETCODE_RET_MP_PLAYER_DISCONNECTED(1210),
+    RET_MP_PLAYER_NOT_ENTERABLE(1205),
     /**
-     * <code>RETCODE_RET_MP_NOT_IN_MP_MODE = 1211;</code>
+     * <code>RET_MP_QUEST_BLOCK_MP = 1206;</code>
      */
-    RETCODE_RET_MP_NOT_IN_MP_MODE(1211),
+    RET_MP_QUEST_BLOCK_MP(1206),
     /**
-     * <code>RETCODE_RET_MP_OWNER_NOT_ENTER = 1212;</code>
+     * <code>RET_MP_IN_ROOM_SCENE = 1207;</code>
      */
-    RETCODE_RET_MP_OWNER_NOT_ENTER(1212),
+    RET_MP_IN_ROOM_SCENE(1207),
     /**
-     * <code>RETCODE_RET_MP_ALLOW_ENTER_PLAYER_FULL = 1213;</code>
+     * <code>RET_MP_WORLD_IS_FULL = 1208;</code>
      */
-    RETCODE_RET_MP_ALLOW_ENTER_PLAYER_FULL(1213),
+    RET_MP_WORLD_IS_FULL(1208),
     /**
-     * <code>RETCODE_RET_MP_TARGET_PLAYER_IN_TRANSFER = 1214;</code>
+     * <code>RET_MP_PLAYER_NOT_ALLOW_ENTER = 1209;</code>
      */
-    RETCODE_RET_MP_TARGET_PLAYER_IN_TRANSFER(1214),
+    RET_MP_PLAYER_NOT_ALLOW_ENTER(1209),
     /**
-     * <code>RETCODE_RET_MP_TARGET_ENTERING_OTHER = 1215;</code>
+     * <code>RET_MP_PLAYER_DISCONNECTED = 1210;</code>
      */
-    RETCODE_RET_MP_TARGET_ENTERING_OTHER(1215),
+    RET_MP_PLAYER_DISCONNECTED(1210),
     /**
-     * <code>RETCODE_RET_MP_OTHER_ENTERING = 1216;</code>
+     * <code>RET_MP_NOT_IN_MP_MODE = 1211;</code>
      */
-    RETCODE_RET_MP_OTHER_ENTERING(1216),
+    RET_MP_NOT_IN_MP_MODE(1211),
     /**
-     * <code>RETCODE_RET_MP_ENTER_MAIN_PLAYER_IN_PLOT = 1217;</code>
+     * <code>RET_MP_OWNER_NOT_ENTER = 1212;</code>
      */
-    RETCODE_RET_MP_ENTER_MAIN_PLAYER_IN_PLOT(1217),
+    RET_MP_OWNER_NOT_ENTER(1212),
     /**
-     * <code>RETCODE_RET_MP_NOT_PS_PLAYER = 1218;</code>
+     * <code>RET_MP_ALLOW_ENTER_PLAYER_FULL = 1213;</code>
      */
-    RETCODE_RET_MP_NOT_PS_PLAYER(1218),
+    RET_MP_ALLOW_ENTER_PLAYER_FULL(1213),
     /**
-     * <code>RETCODE_RET_MP_PLAY_NOT_ACTIVE = 1219;</code>
+     * <code>RET_MP_TARGET_PLAYER_IN_TRANSFER = 1214;</code>
      */
-    RETCODE_RET_MP_PLAY_NOT_ACTIVE(1219),
+    RET_MP_TARGET_PLAYER_IN_TRANSFER(1214),
     /**
-     * <code>RETCODE_RET_MP_PLAY_REMAIN_REWARDS = 1220;</code>
+     * <code>RET_MP_TARGET_ENTERING_OTHER = 1215;</code>
      */
-    RETCODE_RET_MP_PLAY_REMAIN_REWARDS(1220),
+    RET_MP_TARGET_ENTERING_OTHER(1215),
     /**
-     * <code>RETCODE_RET_MP_PLAY_NO_REWARD = 1221;</code>
+     * <code>RET_MP_OTHER_ENTERING = 1216;</code>
      */
-    RETCODE_RET_MP_PLAY_NO_REWARD(1221),
+    RET_MP_OTHER_ENTERING(1216),
     /**
-     * <code>RETCODE_RET_MP_OPEN_STATE_FAIL = 1223;</code>
+     * <code>RET_MP_ENTER_MAIN_PLAYER_IN_PLOT = 1217;</code>
      */
-    RETCODE_RET_MP_OPEN_STATE_FAIL(1223),
+    RET_MP_ENTER_MAIN_PLAYER_IN_PLOT(1217),
     /**
-     * <code>RETCODE_RET_MP_PLAYER_IN_BLACKLIST = 1224;</code>
+     * <code>RET_MP_NOT_PS_PLAYER = 1218;</code>
      */
-    RETCODE_RET_MP_PLAYER_IN_BLACKLIST(1224),
+    RET_MP_NOT_PS_PLAYER(1218),
     /**
-     * <code>RETCODE_RET_MP_REPLY_TIMEOUT = 1225;</code>
+     * <code>RET_MP_PLAY_NOT_ACTIVE = 1219;</code>
      */
-    RETCODE_RET_MP_REPLY_TIMEOUT(1225),
+    RET_MP_PLAY_NOT_ACTIVE(1219),
     /**
-     * <code>RETCODE_RET_MP_IS_BLOCK = 1226;</code>
+     * <code>RET_MP_PLAY_REMAIN_REWARDS = 1220;</code>
      */
-    RETCODE_RET_MP_IS_BLOCK(1226),
+    RET_MP_PLAY_REMAIN_REWARDS(1220),
     /**
-     * <code>RETCODE_RET_MP_ENTER_MAIN_PLAYER_IN_MP_PLAY = 1227;</code>
+     * <code>RET_MP_PLAY_NO_REWARD = 1221;</code>
      */
-    RETCODE_RET_MP_ENTER_MAIN_PLAYER_IN_MP_PLAY(1227),
+    RET_MP_PLAY_NO_REWARD(1221),
     /**
-     * <code>RETCODE_RET_MP_IN_MP_PLAY_BATTLE = 1228;</code>
+     * <code>RET_MP_OPEN_STATE_FAIL = 1223;</code>
      */
-    RETCODE_RET_MP_IN_MP_PLAY_BATTLE(1228),
+    RET_MP_OPEN_STATE_FAIL(1223),
     /**
-     * <code>RETCODE_RET_MP_GUEST_HAS_REWARD_REMAINED = 1229;</code>
+     * <code>RET_MP_PLAYER_IN_BLACKLIST = 1224;</code>
      */
-    RETCODE_RET_MP_GUEST_HAS_REWARD_REMAINED(1229),
+    RET_MP_PLAYER_IN_BLACKLIST(1224),
     /**
-     * <code>RETCODE_RET_MP_QUIT_MP_INVALID = 1230;</code>
+     * <code>RET_MP_REPLY_TIMEOUT = 1225;</code>
      */
-    RETCODE_RET_MP_QUIT_MP_INVALID(1230),
+    RET_MP_REPLY_TIMEOUT(1225),
     /**
-     * <code>RETCODE_RET_MP_OTHER_DATA_VERSION_NOT_LATEST = 1231;</code>
+     * <code>RET_MP_IS_BLOCK = 1226;</code>
      */
-    RETCODE_RET_MP_OTHER_DATA_VERSION_NOT_LATEST(1231),
+    RET_MP_IS_BLOCK(1226),
     /**
-     * <code>RETCODE_RET_MP_DATA_VERSION_NOT_LATEST = 1232;</code>
+     * <code>RET_MP_ENTER_MAIN_PLAYER_IN_MP_PLAY = 1227;</code>
      */
-    RETCODE_RET_MP_DATA_VERSION_NOT_LATEST(1232),
+    RET_MP_ENTER_MAIN_PLAYER_IN_MP_PLAY(1227),
     /**
-     * <code>RETCODE_RET_MP_CUR_WORLD_NOT_ENTERABLE = 1233;</code>
+     * <code>RET_MP_IN_MP_PLAY_BATTLE = 1228;</code>
      */
-    RETCODE_RET_MP_CUR_WORLD_NOT_ENTERABLE(1233),
+    RET_MP_IN_MP_PLAY_BATTLE(1228),
     /**
-     * <code>RETCODE_RET_MP_ANY_GALLERY_STARTED = 1234;</code>
+     * <code>RET_MP_GUEST_HAS_REWARD_REMAINED = 1229;</code>
      */
-    RETCODE_RET_MP_ANY_GALLERY_STARTED(1234),
+    RET_MP_GUEST_HAS_REWARD_REMAINED(1229),
     /**
-     * <code>RETCODE_RET_MP_HAS_ACTIVE_DRAFT = 1235;</code>
+     * <code>RET_MP_QUIT_MP_INVALID = 1230;</code>
      */
-    RETCODE_RET_MP_HAS_ACTIVE_DRAFT(1235),
+    RET_MP_QUIT_MP_INVALID(1230),
     /**
-     * <code>RETCODE_RET_MP_PLAYER_IN_DUNGEON = 1236;</code>
+     * <code>RET_MP_OTHER_DATA_VERSION_NOT_LATEST = 1231;</code>
      */
-    RETCODE_RET_MP_PLAYER_IN_DUNGEON(1236),
+    RET_MP_OTHER_DATA_VERSION_NOT_LATEST(1231),
     /**
-     * <code>RETCODE_RET_MP_MATCH_FULL = 1237;</code>
+     * <code>RET_MP_DATA_VERSION_NOT_LATEST = 1232;</code>
      */
-    RETCODE_RET_MP_MATCH_FULL(1237),
+    RET_MP_DATA_VERSION_NOT_LATEST(1232),
     /**
-     * <code>RETCODE_RET_MP_MATCH_LIMIT = 1238;</code>
+     * <code>RET_MP_CUR_WORLD_NOT_ENTERABLE = 1233;</code>
      */
-    RETCODE_RET_MP_MATCH_LIMIT(1238),
+    RET_MP_CUR_WORLD_NOT_ENTERABLE(1233),
     /**
-     * <code>RETCODE_RET_MP_MATCH_IN_PUNISH = 1239;</code>
+     * <code>RET_MP_ANY_GALLERY_STARTED = 1234;</code>
      */
-    RETCODE_RET_MP_MATCH_IN_PUNISH(1239),
+    RET_MP_ANY_GALLERY_STARTED(1234),
     /**
-     * <code>RETCODE_RET_MP_IS_IN_MULTISTAGE = 1240;</code>
+     * <code>RET_MP_HAS_ACTIVE_DRAFT = 1235;</code>
      */
-    RETCODE_RET_MP_IS_IN_MULTISTAGE(1240),
+    RET_MP_HAS_ACTIVE_DRAFT(1235),
     /**
-     * <code>RETCODE_RET_MP_MATCH_PLAY_NOT_OPEN = 1241;</code>
+     * <code>RET_MP_PLAYER_IN_DUNGEON = 1236;</code>
      */
-    RETCODE_RET_MP_MATCH_PLAY_NOT_OPEN(1241),
+    RET_MP_PLAYER_IN_DUNGEON(1236),
     /**
-     * <code>RETCODE_RET_MP_ONLY_MP_WITH_PS_PLAYER = 1242;</code>
+     * <code>RET_MP_MATCH_FULL = 1237;</code>
      */
-    RETCODE_RET_MP_ONLY_MP_WITH_PS_PLAYER(1242),
+    RET_MP_MATCH_FULL(1237),
     /**
-     * <code>RETCODE_RET_MP_GUEST_LOADING_FIRST_ENTER = 1243;</code>
+     * <code>RET_MP_MATCH_LIMIT = 1238;</code>
      */
-    RETCODE_RET_MP_GUEST_LOADING_FIRST_ENTER(1243),
+    RET_MP_MATCH_LIMIT(1238),
     /**
-     * <code>RETCODE_RET_MP_SUMMER_TIME_SPRINT_BOAT_ONGOING = 1244;</code>
+     * <code>RET_MP_MATCH_IN_PUNISH = 1239;</code>
      */
-    RETCODE_RET_MP_SUMMER_TIME_SPRINT_BOAT_ONGOING(1244),
+    RET_MP_MATCH_IN_PUNISH(1239),
     /**
-     * <code>RETCODE_RET_MP_BLITZ_RUSH_PARKOUR_CHALLENGE_ONGOING = 1245;</code>
+     * <code>RET_MP_IS_IN_MULTISTAGE = 1240;</code>
      */
-    RETCODE_RET_MP_BLITZ_RUSH_PARKOUR_CHALLENGE_ONGOING(1245),
+    RET_MP_IS_IN_MULTISTAGE(1240),
     /**
-     * <code>RETCODE_RET_MP_MUSIC_GAME_ONGOING = 1246;</code>
+     * <code>RET_MP_MATCH_PLAY_NOT_OPEN = 1241;</code>
      */
-    RETCODE_RET_MP_MUSIC_GAME_ONGOING(1246),
+    RET_MP_MATCH_PLAY_NOT_OPEN(1241),
     /**
-     * <code>RETCODE_RET_MP_IN_MPING_MODE = 1247;</code>
+     * <code>RET_MP_ONLY_MP_WITH_PS_PLAYER = 1242;</code>
      */
-    RETCODE_RET_MP_IN_MPING_MODE(1247),
+    RET_MP_ONLY_MP_WITH_PS_PLAYER(1242),
     /**
-     * <code>RETCODE_RET_MP_OWNER_IN_SINGLE_SCENE = 1248;</code>
+     * <code>RET_MP_GUEST_LOADING_FIRST_ENTER = 1243;</code>
      */
-    RETCODE_RET_MP_OWNER_IN_SINGLE_SCENE(1248),
+    RET_MP_GUEST_LOADING_FIRST_ENTER(1243),
     /**
-     * <code>RETCODE_RET_MP_IN_SINGLE_SCENE = 1249;</code>
+     * <code>RET_MP_SUMMER_TIME_SPRINT_BOAT_ONGOING = 1244;</code>
      */
-    RETCODE_RET_MP_IN_SINGLE_SCENE(1249),
+    RET_MP_SUMMER_TIME_SPRINT_BOAT_ONGOING(1244),
     /**
-     * <code>RETCODE_RET_MP_REPLY_NO_VALID_AVATAR = 1250;</code>
+     * <code>RET_MP_BLITZ_RUSH_PARKOUR_CHALLENGE_ONGOING = 1245;</code>
      */
-    RETCODE_RET_MP_REPLY_NO_VALID_AVATAR(1250),
+    RET_MP_BLITZ_RUSH_PARKOUR_CHALLENGE_ONGOING(1245),
     /**
-     * <code>RETCODE_RET_MAIL_PARA_ERR = 1301;</code>
+     * <code>RET_MP_MUSIC_GAME_ONGOING = 1246;</code>
      */
-    RETCODE_RET_MAIL_PARA_ERR(1301),
+    RET_MP_MUSIC_GAME_ONGOING(1246),
     /**
-     * <code>RETCODE_RET_MAIL_MAX_NUM = 1302;</code>
+     * <code>RET_MP_IN_MPING_MODE = 1247;</code>
      */
-    RETCODE_RET_MAIL_MAX_NUM(1302),
+    RET_MP_IN_MPING_MODE(1247),
     /**
-     * <code>RETCODE_RET_MAIL_ITEM_NUM_EXCEED = 1303;</code>
+     * <code>RET_MP_OWNER_IN_SINGLE_SCENE = 1248;</code>
      */
-    RETCODE_RET_MAIL_ITEM_NUM_EXCEED(1303),
+    RET_MP_OWNER_IN_SINGLE_SCENE(1248),
     /**
-     * <code>RETCODE_RET_MAIL_TITLE_LEN_EXCEED = 1304;</code>
+     * <code>RET_MP_IN_SINGLE_SCENE = 1249;</code>
      */
-    RETCODE_RET_MAIL_TITLE_LEN_EXCEED(1304),
+    RET_MP_IN_SINGLE_SCENE(1249),
     /**
-     * <code>RETCODE_RET_MAIL_CONTENT_LEN_EXCEED = 1305;</code>
+     * <code>RET_MP_REPLY_NO_VALID_AVATAR = 1250;</code>
      */
-    RETCODE_RET_MAIL_CONTENT_LEN_EXCEED(1305),
+    RET_MP_REPLY_NO_VALID_AVATAR(1250),
     /**
-     * <code>RETCODE_RET_MAIL_SENDER_LEN_EXCEED = 1306;</code>
+     * <code>RET_MP_IS_NOT_IN_TRANSFER_GUARD = 1251;</code>
      */
-    RETCODE_RET_MAIL_SENDER_LEN_EXCEED(1306),
+    RET_MP_IS_NOT_IN_TRANSFER_GUARD(1251),
     /**
-     * <code>RETCODE_RET_MAIL_PARSE_PACKET_FAIL = 1307;</code>
+     * <code>RET_MAIL_PARA_ERR = 1301;</code>
      */
-    RETCODE_RET_MAIL_PARSE_PACKET_FAIL(1307),
+    RET_MAIL_PARA_ERR(1301),
     /**
-     * <code>RETCODE_RET_OFFLINE_MSG_MAX_NUM = 1308;</code>
+     * <code>RET_MAIL_MAX_NUM = 1302;</code>
      */
-    RETCODE_RET_OFFLINE_MSG_MAX_NUM(1308),
+    RET_MAIL_MAX_NUM(1302),
     /**
-     * <code>RETCODE_RET_OFFLINE_MSG_SAME_TICKET = 1309;</code>
+     * <code>RET_MAIL_ITEM_NUM_EXCEED = 1303;</code>
      */
-    RETCODE_RET_OFFLINE_MSG_SAME_TICKET(1309),
+    RET_MAIL_ITEM_NUM_EXCEED(1303),
     /**
-     * <code>RETCODE_RET_MAIL_EXCEL_MAIL_TYPE_ERROR = 1310;</code>
+     * <code>RET_MAIL_TITLE_LEN_EXCEED = 1304;</code>
      */
-    RETCODE_RET_MAIL_EXCEL_MAIL_TYPE_ERROR(1310),
+    RET_MAIL_TITLE_LEN_EXCEED(1304),
     /**
-     * <code>RETCODE_RET_MAIL_CANNOT_SEND_MCOIN = 1311;</code>
+     * <code>RET_MAIL_CONTENT_LEN_EXCEED = 1305;</code>
      */
-    RETCODE_RET_MAIL_CANNOT_SEND_MCOIN(1311),
+    RET_MAIL_CONTENT_LEN_EXCEED(1305),
     /**
-     * <code>RETCODE_RET_MAIL_HCOIN_EXCEED_LIMIT = 1312;</code>
+     * <code>RET_MAIL_SENDER_LEN_EXCEED = 1306;</code>
      */
-    RETCODE_RET_MAIL_HCOIN_EXCEED_LIMIT(1312),
+    RET_MAIL_SENDER_LEN_EXCEED(1306),
     /**
-     * <code>RETCODE_RET_MAIL_SCOIN_EXCEED_LIMIT = 1313;</code>
+     * <code>RET_MAIL_PARSE_PACKET_FAIL = 1307;</code>
      */
-    RETCODE_RET_MAIL_SCOIN_EXCEED_LIMIT(1313),
+    RET_MAIL_PARSE_PACKET_FAIL(1307),
     /**
-     * <code>RETCODE_RET_MAIL_MATERIAL_ID_INVALID = 1314;</code>
+     * <code>RET_OFFLINE_MSG_MAX_NUM = 1308;</code>
      */
-    RETCODE_RET_MAIL_MATERIAL_ID_INVALID(1314),
+    RET_OFFLINE_MSG_MAX_NUM(1308),
     /**
-     * <code>RETCODE_RET_MAIL_AVATAR_EXCEED_LIMIT = 1315;</code>
+     * <code>RET_OFFLINE_MSG_SAME_TICKET = 1309;</code>
      */
-    RETCODE_RET_MAIL_AVATAR_EXCEED_LIMIT(1315),
+    RET_OFFLINE_MSG_SAME_TICKET(1309),
     /**
-     * <code>RETCODE_RET_MAIL_GACHA_TICKET_ETC_EXCEED_LIMIT = 1316;</code>
+     * <code>RET_MAIL_EXCEL_MAIL_TYPE_ERROR = 1310;</code>
      */
-    RETCODE_RET_MAIL_GACHA_TICKET_ETC_EXCEED_LIMIT(1316),
+    RET_MAIL_EXCEL_MAIL_TYPE_ERROR(1310),
     /**
-     * <code>RETCODE_RET_MAIL_ITEM_EXCEED_CEHUA_LIMIT = 1317;</code>
+     * <code>RET_MAIL_CANNOT_SEND_MCOIN = 1311;</code>
      */
-    RETCODE_RET_MAIL_ITEM_EXCEED_CEHUA_LIMIT(1317),
+    RET_MAIL_CANNOT_SEND_MCOIN(1311),
     /**
-     * <code>RETCODE_RET_MAIL_SPACE_OR_REST_NUM_NOT_ENOUGH = 1318;</code>
+     * <code>RET_MAIL_HCOIN_EXCEED_LIMIT = 1312;</code>
      */
-    RETCODE_RET_MAIL_SPACE_OR_REST_NUM_NOT_ENOUGH(1318),
+    RET_MAIL_HCOIN_EXCEED_LIMIT(1312),
     /**
-     * <code>RETCODE_RET_MAIL_TICKET_IS_EMPTY = 1319;</code>
+     * <code>RET_MAIL_SCOIN_EXCEED_LIMIT = 1313;</code>
      */
-    RETCODE_RET_MAIL_TICKET_IS_EMPTY(1319),
+    RET_MAIL_SCOIN_EXCEED_LIMIT(1313),
     /**
-     * <code>RETCODE_RET_MAIL_TRANSACTION_IS_EMPTY = 1320;</code>
+     * <code>RET_MAIL_MATERIAL_ID_INVALID = 1314;</code>
      */
-    RETCODE_RET_MAIL_TRANSACTION_IS_EMPTY(1320),
+    RET_MAIL_MATERIAL_ID_INVALID(1314),
     /**
-     * <code>RETCODE_RET_MAIL_DELETE_COLLECTED = 1321;</code>
+     * <code>RET_MAIL_AVATAR_EXCEED_LIMIT = 1315;</code>
      */
-    RETCODE_RET_MAIL_DELETE_COLLECTED(1321),
+    RET_MAIL_AVATAR_EXCEED_LIMIT(1315),
     /**
-     * <code>RETCODE_RET_DAILY_TASK_NOT_FINISH = 1330;</code>
+     * <code>RET_MAIL_GACHA_TICKET_ETC_EXCEED_LIMIT = 1316;</code>
      */
-    RETCODE_RET_DAILY_TASK_NOT_FINISH(1330),
+    RET_MAIL_GACHA_TICKET_ETC_EXCEED_LIMIT(1316),
     /**
-     * <code>RETCODE_RET_DAILY_TAKS_HAS_TAKEN = 1331;</code>
+     * <code>RET_MAIL_ITEM_EXCEED_CEHUA_LIMIT = 1317;</code>
      */
-    RETCODE_RET_DAILY_TAKS_HAS_TAKEN(1331),
+    RET_MAIL_ITEM_EXCEED_CEHUA_LIMIT(1317),
     /**
-     * <code>RETCODE_RET_SOCIAL_OFFLINE_MSG_NUM_EXCEED = 1332;</code>
+     * <code>RET_MAIL_SPACE_OR_REST_NUM_NOT_ENOUGH = 1318;</code>
      */
-    RETCODE_RET_SOCIAL_OFFLINE_MSG_NUM_EXCEED(1332),
+    RET_MAIL_SPACE_OR_REST_NUM_NOT_ENOUGH(1318),
     /**
-     * <code>RETCODE_RET_DAILY_TASK_FILTER_CITY_NOT_OPEN = 1333;</code>
+     * <code>RET_MAIL_TICKET_IS_EMPTY = 1319;</code>
      */
-    RETCODE_RET_DAILY_TASK_FILTER_CITY_NOT_OPEN(1333),
+    RET_MAIL_TICKET_IS_EMPTY(1319),
     /**
-     * <code>RETCODE_RET_GACHA_INAVAILABLE = 1401;</code>
+     * <code>RET_MAIL_TRANSACTION_IS_EMPTY = 1320;</code>
      */
-    RETCODE_RET_GACHA_INAVAILABLE(1401),
+    RET_MAIL_TRANSACTION_IS_EMPTY(1320),
     /**
-     * <code>RETCODE_RET_GACHA_RANDOM_NOT_MATCH = 1402;</code>
+     * <code>RET_MAIL_DELETE_COLLECTED = 1321;</code>
      */
-    RETCODE_RET_GACHA_RANDOM_NOT_MATCH(1402),
+    RET_MAIL_DELETE_COLLECTED(1321),
     /**
-     * <code>RETCODE_RET_GACHA_SCHEDULE_NOT_MATCH = 1403;</code>
+     * <code>RET_DAILY_TASK_NOT_FINISH = 1330;</code>
      */
-    RETCODE_RET_GACHA_SCHEDULE_NOT_MATCH(1403),
+    RET_DAILY_TASK_NOT_FINISH(1330),
     /**
-     * <code>RETCODE_RET_GACHA_INVALID_TIMES = 1404;</code>
+     * <code>RET_DAILY_TAKS_HAS_TAKEN = 1331;</code>
      */
-    RETCODE_RET_GACHA_INVALID_TIMES(1404),
+    RET_DAILY_TAKS_HAS_TAKEN(1331),
     /**
-     * <code>RETCODE_RET_GACHA_COST_ITEM_NOT_ENOUGH = 1405;</code>
+     * <code>RET_SOCIAL_OFFLINE_MSG_NUM_EXCEED = 1332;</code>
      */
-    RETCODE_RET_GACHA_COST_ITEM_NOT_ENOUGH(1405),
+    RET_SOCIAL_OFFLINE_MSG_NUM_EXCEED(1332),
     /**
-     * <code>RETCODE_RET_GACHA_TIMES_LIMIT = 1406;</code>
+     * <code>RET_DAILY_TASK_FILTER_CITY_NOT_OPEN = 1333;</code>
      */
-    RETCODE_RET_GACHA_TIMES_LIMIT(1406),
+    RET_DAILY_TASK_FILTER_CITY_NOT_OPEN(1333),
     /**
-     * <code>RETCODE_RET_GACHA_WISH_SAME_ITEM = 1407;</code>
+     * <code>RET_GACHA_INAVAILABLE = 1401;</code>
      */
-    RETCODE_RET_GACHA_WISH_SAME_ITEM(1407),
+    RET_GACHA_INAVAILABLE(1401),
     /**
-     * <code>RETCODE_RET_GACHA_WISH_INVALID_ITEM = 1408;</code>
+     * <code>RET_GACHA_RANDOM_NOT_MATCH = 1402;</code>
      */
-    RETCODE_RET_GACHA_WISH_INVALID_ITEM(1408),
+    RET_GACHA_RANDOM_NOT_MATCH(1402),
     /**
-     * <code>RETCODE_RET_GACHA_MINORS_TIMES_LIMIT = 1409;</code>
+     * <code>RET_GACHA_SCHEDULE_NOT_MATCH = 1403;</code>
      */
-    RETCODE_RET_GACHA_MINORS_TIMES_LIMIT(1409),
+    RET_GACHA_SCHEDULE_NOT_MATCH(1403),
     /**
-     * <code>RETCODE_RET_GACHA_GENERAL_TIMES_LIMIT = 1410;</code>
+     * <code>RET_GACHA_INVALID_TIMES = 1404;</code>
      */
-    RETCODE_RET_GACHA_GENERAL_TIMES_LIMIT(1410),
+    RET_GACHA_INVALID_TIMES(1404),
     /**
-     * <code>RETCODE_RET_INVESTIGAITON_NOT_IN_PROGRESS = 1501;</code>
+     * <code>RET_GACHA_COST_ITEM_NOT_ENOUGH = 1405;</code>
      */
-    RETCODE_RET_INVESTIGAITON_NOT_IN_PROGRESS(1501),
+    RET_GACHA_COST_ITEM_NOT_ENOUGH(1405),
     /**
-     * <code>RETCODE_RET_INVESTIGAITON_UNCOMPLETE = 1502;</code>
+     * <code>RET_GACHA_TIMES_LIMIT = 1406;</code>
      */
-    RETCODE_RET_INVESTIGAITON_UNCOMPLETE(1502),
+    RET_GACHA_TIMES_LIMIT(1406),
     /**
-     * <code>RETCODE_RET_INVESTIGAITON_REWARD_TAKEN = 1503;</code>
+     * <code>RET_GACHA_WISH_SAME_ITEM = 1407;</code>
      */
-    RETCODE_RET_INVESTIGAITON_REWARD_TAKEN(1503),
+    RET_GACHA_WISH_SAME_ITEM(1407),
     /**
-     * <code>RETCODE_RET_INVESTIGAITON_TARGET_STATE_ERROR = 1504;</code>
+     * <code>RET_GACHA_WISH_INVALID_ITEM = 1408;</code>
      */
-    RETCODE_RET_INVESTIGAITON_TARGET_STATE_ERROR(1504),
+    RET_GACHA_WISH_INVALID_ITEM(1408),
     /**
-     * <code>RETCODE_RET_PUSH_TIPS_NOT_FOUND = 1505;</code>
+     * <code>RET_GACHA_MINORS_TIMES_LIMIT = 1409;</code>
      */
-    RETCODE_RET_PUSH_TIPS_NOT_FOUND(1505),
+    RET_GACHA_MINORS_TIMES_LIMIT(1409),
     /**
-     * <code>RETCODE_RET_SIGN_IN_RECORD_NOT_FOUND = 1506;</code>
+     * <code>RET_GACHA_GENERAL_TIMES_LIMIT = 1410;</code>
      */
-    RETCODE_RET_SIGN_IN_RECORD_NOT_FOUND(1506),
+    RET_GACHA_GENERAL_TIMES_LIMIT(1410),
     /**
-     * <code>RETCODE_RET_ALREADY_HAVE_SIGNED_IN = 1507;</code>
+     * <code>RET_INVESTIGAITON_NOT_IN_PROGRESS = 1501;</code>
      */
-    RETCODE_RET_ALREADY_HAVE_SIGNED_IN(1507),
+    RET_INVESTIGAITON_NOT_IN_PROGRESS(1501),
     /**
-     * <code>RETCODE_RET_SIGN_IN_COND_NOT_SATISFIED = 1508;</code>
+     * <code>RET_INVESTIGAITON_UNCOMPLETE = 1502;</code>
      */
-    RETCODE_RET_SIGN_IN_COND_NOT_SATISFIED(1508),
+    RET_INVESTIGAITON_UNCOMPLETE(1502),
     /**
-     * <code>RETCODE_RET_BONUS_ACTIVITY_NOT_UNREWARDED = 1509;</code>
+     * <code>RET_INVESTIGAITON_REWARD_TAKEN = 1503;</code>
      */
-    RETCODE_RET_BONUS_ACTIVITY_NOT_UNREWARDED(1509),
+    RET_INVESTIGAITON_REWARD_TAKEN(1503),
     /**
-     * <code>RETCODE_RET_SIGN_IN_REWARDED = 1510;</code>
+     * <code>RET_INVESTIGAITON_TARGET_STATE_ERROR = 1504;</code>
      */
-    RETCODE_RET_SIGN_IN_REWARDED(1510),
+    RET_INVESTIGAITON_TARGET_STATE_ERROR(1504),
     /**
-     * <code>RETCODE_RET_TOWER_NOT_OPEN = 1521;</code>
+     * <code>RET_PUSH_TIPS_NOT_FOUND = 1505;</code>
      */
-    RETCODE_RET_TOWER_NOT_OPEN(1521),
+    RET_PUSH_TIPS_NOT_FOUND(1505),
     /**
-     * <code>RETCODE_RET_TOWER_HAVE_DAILY_RECORD = 1522;</code>
+     * <code>RET_SIGN_IN_RECORD_NOT_FOUND = 1506;</code>
      */
-    RETCODE_RET_TOWER_HAVE_DAILY_RECORD(1522),
+    RET_SIGN_IN_RECORD_NOT_FOUND(1506),
     /**
-     * <code>RETCODE_RET_TOWER_NOT_RECORD = 1523;</code>
+     * <code>RET_ALREADY_HAVE_SIGNED_IN = 1507;</code>
      */
-    RETCODE_RET_TOWER_NOT_RECORD(1523),
+    RET_ALREADY_HAVE_SIGNED_IN(1507),
     /**
-     * <code>RETCODE_RET_TOWER_HAVE_RECORD = 1524;</code>
+     * <code>RET_SIGN_IN_COND_NOT_SATISFIED = 1508;</code>
      */
-    RETCODE_RET_TOWER_HAVE_RECORD(1524),
+    RET_SIGN_IN_COND_NOT_SATISFIED(1508),
     /**
-     * <code>RETCODE_RET_TOWER_TEAM_NUM_ERROR = 1525;</code>
+     * <code>RET_BONUS_ACTIVITY_NOT_UNREWARDED = 1509;</code>
      */
-    RETCODE_RET_TOWER_TEAM_NUM_ERROR(1525),
+    RET_BONUS_ACTIVITY_NOT_UNREWARDED(1509),
     /**
-     * <code>RETCODE_RET_TOWER_FLOOR_NOT_OPEN = 1526;</code>
+     * <code>RET_SIGN_IN_REWARDED = 1510;</code>
      */
-    RETCODE_RET_TOWER_FLOOR_NOT_OPEN(1526),
+    RET_SIGN_IN_REWARDED(1510),
     /**
-     * <code>RETCODE_RET_TOWER_NO_FLOOR_STAR_RECORD = 1527;</code>
+     * <code>RET_TOWER_NOT_OPEN = 1521;</code>
      */
-    RETCODE_RET_TOWER_NO_FLOOR_STAR_RECORD(1527),
+    RET_TOWER_NOT_OPEN(1521),
     /**
-     * <code>RETCODE_RET_ALREADY_HAS_TOWER_BUFF = 1528;</code>
+     * <code>RET_TOWER_HAVE_DAILY_RECORD = 1522;</code>
      */
-    RETCODE_RET_ALREADY_HAS_TOWER_BUFF(1528),
+    RET_TOWER_HAVE_DAILY_RECORD(1522),
     /**
-     * <code>RETCODE_RET_DUPLICATE_ENTER_LEVEL = 1529;</code>
+     * <code>RET_TOWER_NOT_RECORD = 1523;</code>
      */
-    RETCODE_RET_DUPLICATE_ENTER_LEVEL(1529),
+    RET_TOWER_NOT_RECORD(1523),
     /**
-     * <code>RETCODE_RET_NOT_IN_TOWER_LEVEL = 1530;</code>
+     * <code>RET_TOWER_HAVE_RECORD = 1524;</code>
      */
-    RETCODE_RET_NOT_IN_TOWER_LEVEL(1530),
+    RET_TOWER_HAVE_RECORD(1524),
     /**
-     * <code>RETCODE_RET_IN_TOWER_LEVEL = 1531;</code>
+     * <code>RET_TOWER_TEAM_NUM_ERROR = 1525;</code>
      */
-    RETCODE_RET_IN_TOWER_LEVEL(1531),
+    RET_TOWER_TEAM_NUM_ERROR(1525),
     /**
-     * <code>RETCODE_RET_TOWER_PREV_FLOOR_NOT_FINISH = 1532;</code>
+     * <code>RET_TOWER_FLOOR_NOT_OPEN = 1526;</code>
      */
-    RETCODE_RET_TOWER_PREV_FLOOR_NOT_FINISH(1532),
+    RET_TOWER_FLOOR_NOT_OPEN(1526),
     /**
-     * <code>RETCODE_RET_TOWER_STAR_NOT_ENOUGH = 1533;</code>
+     * <code>RET_TOWER_NO_FLOOR_STAR_RECORD = 1527;</code>
      */
-    RETCODE_RET_TOWER_STAR_NOT_ENOUGH(1533),
+    RET_TOWER_NO_FLOOR_STAR_RECORD(1527),
     /**
-     * <code>RETCODE_RET_BATTLE_PASS_NO_SCHEDULE = 1541;</code>
+     * <code>RET_ALREADY_HAS_TOWER_BUFF = 1528;</code>
      */
-    RETCODE_RET_BATTLE_PASS_NO_SCHEDULE(1541),
+    RET_ALREADY_HAS_TOWER_BUFF(1528),
     /**
-     * <code>RETCODE_RET_BATTLE_PASS_HAS_BUYED = 1542;</code>
+     * <code>RET_DUPLICATE_ENTER_LEVEL = 1529;</code>
      */
-    RETCODE_RET_BATTLE_PASS_HAS_BUYED(1542),
+    RET_DUPLICATE_ENTER_LEVEL(1529),
     /**
-     * <code>RETCODE_RET_BATTLE_PASS_LEVEL_OVERFLOW = 1543;</code>
+     * <code>RET_NOT_IN_TOWER_LEVEL = 1530;</code>
      */
-    RETCODE_RET_BATTLE_PASS_LEVEL_OVERFLOW(1543),
+    RET_NOT_IN_TOWER_LEVEL(1530),
     /**
-     * <code>RETCODE_RET_BATTLE_PASS_PRODUCT_EXPIRED = 1544;</code>
+     * <code>RET_IN_TOWER_LEVEL = 1531;</code>
      */
-    RETCODE_RET_BATTLE_PASS_PRODUCT_EXPIRED(1544),
+    RET_IN_TOWER_LEVEL(1531),
     /**
-     * <code>RETCODE_RET_MATCH_HOST_QUIT = 1561;</code>
+     * <code>RET_TOWER_PREV_FLOOR_NOT_FINISH = 1532;</code>
      */
-    RETCODE_RET_MATCH_HOST_QUIT(1561),
+    RET_TOWER_PREV_FLOOR_NOT_FINISH(1532),
     /**
-     * <code>RETCODE_RET_MATCH_ALREADY_IN_MATCH = 1562;</code>
+     * <code>RET_TOWER_STAR_NOT_ENOUGH = 1533;</code>
      */
-    RETCODE_RET_MATCH_ALREADY_IN_MATCH(1562),
+    RET_TOWER_STAR_NOT_ENOUGH(1533),
     /**
-     * <code>RETCODE_RET_MATCH_NOT_IN_MATCH = 1563;</code>
+     * <code>RET_BATTLE_PASS_NO_SCHEDULE = 1541;</code>
      */
-    RETCODE_RET_MATCH_NOT_IN_MATCH(1563),
+    RET_BATTLE_PASS_NO_SCHEDULE(1541),
     /**
-     * <code>RETCODE_RET_MATCH_APPLYING_ENTER_MP = 1564;</code>
+     * <code>RET_BATTLE_PASS_HAS_BUYED = 1542;</code>
      */
-    RETCODE_RET_MATCH_APPLYING_ENTER_MP(1564),
+    RET_BATTLE_PASS_HAS_BUYED(1542),
     /**
-     * <code>RETCODE_RET_WIDGET_TREASURE_SPOT_NOT_FOUND = 1581;</code>
+     * <code>RET_BATTLE_PASS_LEVEL_OVERFLOW = 1543;</code>
      */
-    RETCODE_RET_WIDGET_TREASURE_SPOT_NOT_FOUND(1581),
+    RET_BATTLE_PASS_LEVEL_OVERFLOW(1543),
     /**
-     * <code>RETCODE_RET_WIDGET_TREASURE_ENTITY_EXISTS = 1582;</code>
+     * <code>RET_BATTLE_PASS_PRODUCT_EXPIRED = 1544;</code>
      */
-    RETCODE_RET_WIDGET_TREASURE_ENTITY_EXISTS(1582),
+    RET_BATTLE_PASS_PRODUCT_EXPIRED(1544),
     /**
-     * <code>RETCODE_RET_WIDGET_TREASURE_SPOT_FAR_AWAY = 1583;</code>
+     * <code>RET_MATCH_HOST_QUIT = 1561;</code>
      */
-    RETCODE_RET_WIDGET_TREASURE_SPOT_FAR_AWAY(1583),
+    RET_MATCH_HOST_QUIT(1561),
     /**
-     * <code>RETCODE_RET_WIDGET_TREASURE_FINISHED_TODAY = 1584;</code>
+     * <code>RET_MATCH_ALREADY_IN_MATCH = 1562;</code>
      */
-    RETCODE_RET_WIDGET_TREASURE_FINISHED_TODAY(1584),
+    RET_MATCH_ALREADY_IN_MATCH(1562),
     /**
-     * <code>RETCODE_RET_WIDGET_QUICK_USE_REQ_PARAM_ERROR = 1585;</code>
+     * <code>RET_MATCH_NOT_IN_MATCH = 1563;</code>
      */
-    RETCODE_RET_WIDGET_QUICK_USE_REQ_PARAM_ERROR(1585),
+    RET_MATCH_NOT_IN_MATCH(1563),
     /**
-     * <code>RETCODE_RET_WIDGET_CAMERA_SCAN_ID_ERROR = 1586;</code>
+     * <code>RET_MATCH_APPLYING_ENTER_MP = 1564;</code>
      */
-    RETCODE_RET_WIDGET_CAMERA_SCAN_ID_ERROR(1586),
+    RET_MATCH_APPLYING_ENTER_MP(1564),
     /**
-     * <code>RETCODE_RET_WIDGET_NOT_ACTIVE = 1587;</code>
+     * <code>RET_MATCH_INCORRECT_SCENE = 1565;</code>
      */
-    RETCODE_RET_WIDGET_NOT_ACTIVE(1587),
+    RET_MATCH_INCORRECT_SCENE(1565),
     /**
-     * <code>RETCODE_RET_WIDGET_FEATHER_NOT_ACTIVE = 1588;</code>
+     * <code>RET_WIDGET_TREASURE_SPOT_NOT_FOUND = 1581;</code>
      */
-    RETCODE_RET_WIDGET_FEATHER_NOT_ACTIVE(1588),
+    RET_WIDGET_TREASURE_SPOT_NOT_FOUND(1581),
     /**
-     * <code>RETCODE_RET_WIDGET_FEATHER_GADGET_TOO_FAR_AWAY = 1589;</code>
+     * <code>RET_WIDGET_TREASURE_ENTITY_EXISTS = 1582;</code>
      */
-    RETCODE_RET_WIDGET_FEATHER_GADGET_TOO_FAR_AWAY(1589),
+    RET_WIDGET_TREASURE_ENTITY_EXISTS(1582),
     /**
-     * <code>RETCODE_RET_WIDGET_CAPTURE_ANIMAL_NOT_EXIST = 1590;</code>
+     * <code>RET_WIDGET_TREASURE_SPOT_FAR_AWAY = 1583;</code>
      */
-    RETCODE_RET_WIDGET_CAPTURE_ANIMAL_NOT_EXIST(1590),
+    RET_WIDGET_TREASURE_SPOT_FAR_AWAY(1583),
     /**
-     * <code>RETCODE_RET_WIDGET_CAPTURE_ANIMAL_DROP_BAG_LIMIT = 1591;</code>
+     * <code>RET_WIDGET_TREASURE_FINISHED_TODAY = 1584;</code>
      */
-    RETCODE_RET_WIDGET_CAPTURE_ANIMAL_DROP_BAG_LIMIT(1591),
+    RET_WIDGET_TREASURE_FINISHED_TODAY(1584),
     /**
-     * <code>RETCODE_RET_WIDGET_CAPTURE_ANIMAL_CAN_NOT_CAPTURE = 1592;</code>
+     * <code>RET_WIDGET_QUICK_USE_REQ_PARAM_ERROR = 1585;</code>
      */
-    RETCODE_RET_WIDGET_CAPTURE_ANIMAL_CAN_NOT_CAPTURE(1592),
+    RET_WIDGET_QUICK_USE_REQ_PARAM_ERROR(1585),
     /**
-     * <code>RETCODE_RET_WIDGET_SKY_CRYSTAL_ALL_COLLECTED = 1593;</code>
+     * <code>RET_WIDGET_CAMERA_SCAN_ID_ERROR = 1586;</code>
      */
-    RETCODE_RET_WIDGET_SKY_CRYSTAL_ALL_COLLECTED(1593),
+    RET_WIDGET_CAMERA_SCAN_ID_ERROR(1586),
     /**
-     * <code>RETCODE_RET_WIDGET_SKY_CRYSTAL_HINT_ALREADY_EXIST = 1594;</code>
+     * <code>RET_WIDGET_NOT_ACTIVE = 1587;</code>
      */
-    RETCODE_RET_WIDGET_SKY_CRYSTAL_HINT_ALREADY_EXIST(1594),
+    RET_WIDGET_NOT_ACTIVE(1587),
     /**
-     * <code>RETCODE_RET_WIDGET_SKY_CRYSTAL_NOT_FOUND = 1595;</code>
+     * <code>RET_WIDGET_FEATHER_NOT_ACTIVE = 1588;</code>
      */
-    RETCODE_RET_WIDGET_SKY_CRYSTAL_NOT_FOUND(1595),
+    RET_WIDGET_FEATHER_NOT_ACTIVE(1588),
     /**
-     * <code>RETCODE_RET_WIDGET_SKY_CRYSTAL_NO_HINT_TO_CLEAR = 1596;</code>
+     * <code>RET_WIDGET_FEATHER_GADGET_TOO_FAR_AWAY = 1589;</code>
      */
-    RETCODE_RET_WIDGET_SKY_CRYSTAL_NO_HINT_TO_CLEAR(1596),
+    RET_WIDGET_FEATHER_GADGET_TOO_FAR_AWAY(1589),
     /**
-     * <code>RETCODE_RET_WIDGET_LIGHT_STONE_ENERGY_NOT_ENOUGH = 1597;</code>
+     * <code>RET_WIDGET_CAPTURE_ANIMAL_NOT_EXIST = 1590;</code>
      */
-    RETCODE_RET_WIDGET_LIGHT_STONE_ENERGY_NOT_ENOUGH(1597),
+    RET_WIDGET_CAPTURE_ANIMAL_NOT_EXIST(1590),
     /**
-     * <code>RETCODE_RET_WIDGET_TOY_CRYSTAL_ENERGY_NOT_ENOUGH = 1598;</code>
+     * <code>RET_WIDGET_CAPTURE_ANIMAL_DROP_BAG_LIMIT = 1591;</code>
      */
-    RETCODE_RET_WIDGET_TOY_CRYSTAL_ENERGY_NOT_ENOUGH(1598),
+    RET_WIDGET_CAPTURE_ANIMAL_DROP_BAG_LIMIT(1591),
     /**
-     * <code>RETCODE_RET_WIDGET_LIGHT_STONE_LEVEL_NOT_ENOUGH = 1599;</code>
+     * <code>RET_WIDGET_CAPTURE_ANIMAL_CAN_NOT_CAPTURE = 1592;</code>
      */
-    RETCODE_RET_WIDGET_LIGHT_STONE_LEVEL_NOT_ENOUGH(1599),
+    RET_WIDGET_CAPTURE_ANIMAL_CAN_NOT_CAPTURE(1592),
     /**
-     * <code>RETCODE_RET_UID_NOT_EXIST = 2001;</code>
+     * <code>RET_WIDGET_SKY_CRYSTAL_ALL_COLLECTED = 1593;</code>
      */
-    RETCODE_RET_UID_NOT_EXIST(2001),
+    RET_WIDGET_SKY_CRYSTAL_ALL_COLLECTED(1593),
     /**
-     * <code>RETCODE_RET_PARSE_BIN_ERROR = 2002;</code>
+     * <code>RET_WIDGET_SKY_CRYSTAL_HINT_ALREADY_EXIST = 1594;</code>
      */
-    RETCODE_RET_PARSE_BIN_ERROR(2002),
+    RET_WIDGET_SKY_CRYSTAL_HINT_ALREADY_EXIST(1594),
     /**
-     * <code>RETCODE_RET_ACCOUNT_INFO_NOT_EXIST = 2003;</code>
+     * <code>RET_WIDGET_SKY_CRYSTAL_NOT_FOUND = 1595;</code>
      */
-    RETCODE_RET_ACCOUNT_INFO_NOT_EXIST(2003),
+    RET_WIDGET_SKY_CRYSTAL_NOT_FOUND(1595),
     /**
-     * <code>RETCODE_RET_ORDER_INFO_NOT_EXIST = 2004;</code>
+     * <code>RET_WIDGET_SKY_CRYSTAL_NO_HINT_TO_CLEAR = 1596;</code>
      */
-    RETCODE_RET_ORDER_INFO_NOT_EXIST(2004),
+    RET_WIDGET_SKY_CRYSTAL_NO_HINT_TO_CLEAR(1596),
     /**
-     * <code>RETCODE_RET_SNAPSHOT_INDEX_ERROR = 2005;</code>
+     * <code>RET_WIDGET_LIGHT_STONE_ENERGY_NOT_ENOUGH = 1597;</code>
      */
-    RETCODE_RET_SNAPSHOT_INDEX_ERROR(2005),
+    RET_WIDGET_LIGHT_STONE_ENERGY_NOT_ENOUGH(1597),
     /**
-     * <code>RETCODE_RET_MAIL_HAS_BEEN_SENT = 2006;</code>
+     * <code>RET_WIDGET_TOY_CRYSTAL_ENERGY_NOT_ENOUGH = 1598;</code>
      */
-    RETCODE_RET_MAIL_HAS_BEEN_SENT(2006),
+    RET_WIDGET_TOY_CRYSTAL_ENERGY_NOT_ENOUGH(1598),
     /**
-     * <code>RETCODE_RET_PRODUCT_NOT_EXIST = 2007;</code>
+     * <code>RET_WIDGET_LIGHT_STONE_LEVEL_NOT_ENOUGH = 1599;</code>
      */
-    RETCODE_RET_PRODUCT_NOT_EXIST(2007),
+    RET_WIDGET_LIGHT_STONE_LEVEL_NOT_ENOUGH(1599),
     /**
-     * <code>RETCODE_RET_UNFINISH_ORDER = 2008;</code>
+     * <code>RET_UID_NOT_EXIST = 2001;</code>
      */
-    RETCODE_RET_UNFINISH_ORDER(2008),
+    RET_UID_NOT_EXIST(2001),
     /**
-     * <code>RETCODE_RET_ID_NOT_EXIST = 2009;</code>
+     * <code>RET_PARSE_BIN_ERROR = 2002;</code>
      */
-    RETCODE_RET_ID_NOT_EXIST(2009),
+    RET_PARSE_BIN_ERROR(2002),
     /**
-     * <code>RETCODE_RET_ORDER_TRADE_EARLY = 2010;</code>
+     * <code>RET_ACCOUNT_INFO_NOT_EXIST = 2003;</code>
      */
-    RETCODE_RET_ORDER_TRADE_EARLY(2010),
+    RET_ACCOUNT_INFO_NOT_EXIST(2003),
     /**
-     * <code>RETCODE_RET_ORDER_FINISHED = 2011;</code>
+     * <code>RET_ORDER_INFO_NOT_EXIST = 2004;</code>
      */
-    RETCODE_RET_ORDER_FINISHED(2011),
+    RET_ORDER_INFO_NOT_EXIST(2004),
     /**
-     * <code>RETCODE_RET_GAMESERVER_VERSION_WRONG = 2012;</code>
+     * <code>RET_SNAPSHOT_INDEX_ERROR = 2005;</code>
      */
-    RETCODE_RET_GAMESERVER_VERSION_WRONG(2012),
+    RET_SNAPSHOT_INDEX_ERROR(2005),
     /**
-     * <code>RETCODE_RET_OFFLINE_OP_FULL_LENGTH = 2013;</code>
+     * <code>RET_MAIL_HAS_BEEN_SENT = 2006;</code>
      */
-    RETCODE_RET_OFFLINE_OP_FULL_LENGTH(2013),
+    RET_MAIL_HAS_BEEN_SENT(2006),
     /**
-     * <code>RETCODE_RET_CONCERT_PRODUCT_OBTAIN_LIMIT = 2014;</code>
+     * <code>RET_PRODUCT_NOT_EXIST = 2007;</code>
      */
-    RETCODE_RET_CONCERT_PRODUCT_OBTAIN_LIMIT(2014),
+    RET_PRODUCT_NOT_EXIST(2007),
     /**
-     * <code>RETCODE_RET_CONCERT_PRODUCT_TICKET_DUPLICATED = 2015;</code>
+     * <code>RET_UNFINISH_ORDER = 2008;</code>
      */
-    RETCODE_RET_CONCERT_PRODUCT_TICKET_DUPLICATED(2015),
+    RET_UNFINISH_ORDER(2008),
     /**
-     * <code>RETCODE_RET_CONCERT_PRODUCT_TICKET_EMPTY = 2016;</code>
+     * <code>RET_ID_NOT_EXIST = 2009;</code>
      */
-    RETCODE_RET_CONCERT_PRODUCT_TICKET_EMPTY(2016),
+    RET_ID_NOT_EXIST(2009),
     /**
-     * <code>RETCODE_RET_REDIS_MODIFIED = 5001;</code>
+     * <code>RET_ORDER_TRADE_EARLY = 2010;</code>
      */
-    RETCODE_RET_REDIS_MODIFIED(5001),
+    RET_ORDER_TRADE_EARLY(2010),
     /**
-     * <code>RETCODE_RET_REDIS_UID_NOT_EXIST = 5002;</code>
+     * <code>RET_ORDER_FINISHED = 2011;</code>
      */
-    RETCODE_RET_REDIS_UID_NOT_EXIST(5002),
+    RET_ORDER_FINISHED(2011),
     /**
-     * <code>RETCODE_RET_PATHFINDING_DATA_NOT_EXIST = 6001;</code>
+     * <code>RET_GAMESERVER_VERSION_WRONG = 2012;</code>
      */
-    RETCODE_RET_PATHFINDING_DATA_NOT_EXIST(6001),
+    RET_GAMESERVER_VERSION_WRONG(2012),
     /**
-     * <code>RETCODE_RET_PATHFINDING_DESTINATION_NOT_EXIST = 6002;</code>
+     * <code>RET_OFFLINE_OP_FULL_LENGTH = 2013;</code>
      */
-    RETCODE_RET_PATHFINDING_DESTINATION_NOT_EXIST(6002),
+    RET_OFFLINE_OP_FULL_LENGTH(2013),
     /**
-     * <code>RETCODE_RET_PATHFINDING_ERROR_SCENE = 6003;</code>
+     * <code>RET_CONCERT_PRODUCT_OBTAIN_LIMIT = 2014;</code>
      */
-    RETCODE_RET_PATHFINDING_ERROR_SCENE(6003),
+    RET_CONCERT_PRODUCT_OBTAIN_LIMIT(2014),
     /**
-     * <code>RETCODE_RET_PATHFINDING_SCENE_DATA_LOADING = 6004;</code>
+     * <code>RET_CONCERT_PRODUCT_TICKET_DUPLICATED = 2015;</code>
      */
-    RETCODE_RET_PATHFINDING_SCENE_DATA_LOADING(6004),
+    RET_CONCERT_PRODUCT_TICKET_DUPLICATED(2015),
     /**
-     * <code>RETCODE_RET_FRIEND_COUNT_EXCEEDED = 7001;</code>
+     * <code>RET_CONCERT_PRODUCT_TICKET_EMPTY = 2016;</code>
      */
-    RETCODE_RET_FRIEND_COUNT_EXCEEDED(7001),
+    RET_CONCERT_PRODUCT_TICKET_EMPTY(2016),
     /**
-     * <code>RETCODE_RET_PLAYER_NOT_EXIST = 7002;</code>
+     * <code>RET_REDIS_MODIFIED = 5001;</code>
      */
-    RETCODE_RET_PLAYER_NOT_EXIST(7002),
+    RET_REDIS_MODIFIED(5001),
     /**
-     * <code>RETCODE_RET_ALREADY_SENT_ADD_REQUEST = 7003;</code>
+     * <code>RET_REDIS_UID_NOT_EXIST = 5002;</code>
      */
-    RETCODE_RET_ALREADY_SENT_ADD_REQUEST(7003),
+    RET_REDIS_UID_NOT_EXIST(5002),
     /**
-     * <code>RETCODE_RET_ASK_FRIEND_LIST_FULL = 7004;</code>
+     * <code>RET_PATHFINDING_DATA_NOT_EXIST = 6001;</code>
      */
-    RETCODE_RET_ASK_FRIEND_LIST_FULL(7004),
+    RET_PATHFINDING_DATA_NOT_EXIST(6001),
     /**
-     * <code>RETCODE_RET_PLAYER_ALREADY_IS_FRIEND = 7005;</code>
+     * <code>RET_PATHFINDING_DESTINATION_NOT_EXIST = 6002;</code>
      */
-    RETCODE_RET_PLAYER_ALREADY_IS_FRIEND(7005),
+    RET_PATHFINDING_DESTINATION_NOT_EXIST(6002),
     /**
-     * <code>RETCODE_RET_PLAYER_NOT_ASK_FRIEND = 7006;</code>
+     * <code>RET_PATHFINDING_ERROR_SCENE = 6003;</code>
      */
-    RETCODE_RET_PLAYER_NOT_ASK_FRIEND(7006),
+    RET_PATHFINDING_ERROR_SCENE(6003),
     /**
-     * <code>RETCODE_RET_TARGET_FRIEND_COUNT_EXCEED = 7007;</code>
+     * <code>RET_PATHFINDING_SCENE_DATA_LOADING = 6004;</code>
      */
-    RETCODE_RET_TARGET_FRIEND_COUNT_EXCEED(7007),
+    RET_PATHFINDING_SCENE_DATA_LOADING(6004),
     /**
-     * <code>RETCODE_RET_NOT_FRIEND = 7008;</code>
+     * <code>RET_FRIEND_COUNT_EXCEEDED = 7001;</code>
      */
-    RETCODE_RET_NOT_FRIEND(7008),
+    RET_FRIEND_COUNT_EXCEEDED(7001),
     /**
-     * <code>RETCODE_RET_BIRTHDAY_CANNOT_BE_SET_TWICE = 7009;</code>
+     * <code>RET_PLAYER_NOT_EXIST = 7002;</code>
      */
-    RETCODE_RET_BIRTHDAY_CANNOT_BE_SET_TWICE(7009),
+    RET_PLAYER_NOT_EXIST(7002),
     /**
-     * <code>RETCODE_RET_CANNOT_ADD_SELF_FRIEND = 7010;</code>
+     * <code>RET_ALREADY_SENT_ADD_REQUEST = 7003;</code>
      */
-    RETCODE_RET_CANNOT_ADD_SELF_FRIEND(7010),
+    RET_ALREADY_SENT_ADD_REQUEST(7003),
     /**
-     * <code>RETCODE_RET_SIGNATURE_ILLEGAL = 7011;</code>
+     * <code>RET_ASK_FRIEND_LIST_FULL = 7004;</code>
      */
-    RETCODE_RET_SIGNATURE_ILLEGAL(7011),
+    RET_ASK_FRIEND_LIST_FULL(7004),
     /**
-     * <code>RETCODE_RET_PS_PLAYER_CANNOT_ADD_FRIENDS = 7012;</code>
+     * <code>RET_PLAYER_ALREADY_IS_FRIEND = 7005;</code>
      */
-    RETCODE_RET_PS_PLAYER_CANNOT_ADD_FRIENDS(7012),
+    RET_PLAYER_ALREADY_IS_FRIEND(7005),
     /**
-     * <code>RETCODE_RET_PS_PLAYER_CANNOT_REMOVE_FRIENDS = 7013;</code>
+     * <code>RET_PLAYER_NOT_ASK_FRIEND = 7006;</code>
      */
-    RETCODE_RET_PS_PLAYER_CANNOT_REMOVE_FRIENDS(7013),
+    RET_PLAYER_NOT_ASK_FRIEND(7006),
     /**
-     * <code>RETCODE_RET_NAME_CARD_NOT_UNLOCKED = 7014;</code>
+     * <code>RET_TARGET_FRIEND_COUNT_EXCEED = 7007;</code>
      */
-    RETCODE_RET_NAME_CARD_NOT_UNLOCKED(7014),
+    RET_TARGET_FRIEND_COUNT_EXCEED(7007),
     /**
-     * <code>RETCODE_RET_ALREADY_IN_BLACKLIST = 7015;</code>
+     * <code>RET_NOT_FRIEND = 7008;</code>
      */
-    RETCODE_RET_ALREADY_IN_BLACKLIST(7015),
+    RET_NOT_FRIEND(7008),
     /**
-     * <code>RETCODE_RET_PS_PALEYRS_CANNOT_ADD_BLACKLIST = 7016;</code>
+     * <code>RET_BIRTHDAY_CANNOT_BE_SET_TWICE = 7009;</code>
      */
-    RETCODE_RET_PS_PALEYRS_CANNOT_ADD_BLACKLIST(7016),
+    RET_BIRTHDAY_CANNOT_BE_SET_TWICE(7009),
     /**
-     * <code>RETCODE_RET_PLAYER_BLACKLIST_FULL = 7017;</code>
+     * <code>RET_CANNOT_ADD_SELF_FRIEND = 7010;</code>
      */
-    RETCODE_RET_PLAYER_BLACKLIST_FULL(7017),
+    RET_CANNOT_ADD_SELF_FRIEND(7010),
     /**
-     * <code>RETCODE_RET_PLAYER_NOT_IN_BLACKLIST = 7018;</code>
+     * <code>RET_SIGNATURE_ILLEGAL = 7011;</code>
      */
-    RETCODE_RET_PLAYER_NOT_IN_BLACKLIST(7018),
+    RET_SIGNATURE_ILLEGAL(7011),
     /**
-     * <code>RETCODE_RET_BLACKLIST_PLAYER_CANNOT_ADD_FRIEND = 7019;</code>
+     * <code>RET_PS_PLAYER_CANNOT_ADD_FRIENDS = 7012;</code>
      */
-    RETCODE_RET_BLACKLIST_PLAYER_CANNOT_ADD_FRIEND(7019),
+    RET_PS_PLAYER_CANNOT_ADD_FRIENDS(7012),
     /**
-     * <code>RETCODE_RET_IN_TARGET_BLACKLIST = 7020;</code>
+     * <code>RET_PS_PLAYER_CANNOT_REMOVE_FRIENDS = 7013;</code>
      */
-    RETCODE_RET_IN_TARGET_BLACKLIST(7020),
+    RET_PS_PLAYER_CANNOT_REMOVE_FRIENDS(7013),
     /**
-     * <code>RETCODE_RET_CANNOT_ADD_TARGET_FRIEND = 7021;</code>
+     * <code>RET_NAME_CARD_NOT_UNLOCKED = 7014;</code>
      */
-    RETCODE_RET_CANNOT_ADD_TARGET_FRIEND(7021),
+    RET_NAME_CARD_NOT_UNLOCKED(7014),
     /**
-     * <code>RETCODE_RET_BIRTHDAY_FORMAT_ERROR = 7022;</code>
+     * <code>RET_ALREADY_IN_BLACKLIST = 7015;</code>
      */
-    RETCODE_RET_BIRTHDAY_FORMAT_ERROR(7022),
+    RET_ALREADY_IN_BLACKLIST(7015),
     /**
-     * <code>RETCODE_RET_ONLINE_ID_NOT_EXISTS = 7023;</code>
+     * <code>RET_PS_PALEYRS_CANNOT_ADD_BLACKLIST = 7016;</code>
      */
-    RETCODE_RET_ONLINE_ID_NOT_EXISTS(7023),
+    RET_PS_PALEYRS_CANNOT_ADD_BLACKLIST(7016),
     /**
-     * <code>RETCODE_RET_FIRST_SHARE_REWARD_HAS_TAKEN = 7024;</code>
+     * <code>RET_PLAYER_BLACKLIST_FULL = 7017;</code>
      */
-    RETCODE_RET_FIRST_SHARE_REWARD_HAS_TAKEN(7024),
+    RET_PLAYER_BLACKLIST_FULL(7017),
     /**
-     * <code>RETCODE_RET_PS_PLAYER_CANNOT_REMOVE_BLACKLIST = 7025;</code>
+     * <code>RET_PLAYER_NOT_IN_BLACKLIST = 7018;</code>
      */
-    RETCODE_RET_PS_PLAYER_CANNOT_REMOVE_BLACKLIST(7025),
+    RET_PLAYER_NOT_IN_BLACKLIST(7018),
     /**
-     * <code>RETCODE_RET_REPORT_CD = 7026;</code>
+     * <code>RET_BLACKLIST_PLAYER_CANNOT_ADD_FRIEND = 7019;</code>
      */
-    RETCODE_RET_REPORT_CD(7026),
+    RET_BLACKLIST_PLAYER_CANNOT_ADD_FRIEND(7019),
     /**
-     * <code>RETCODE_RET_REPORT_CONTENT_ILLEGAL = 7027;</code>
+     * <code>RET_IN_TARGET_BLACKLIST = 7020;</code>
      */
-    RETCODE_RET_REPORT_CONTENT_ILLEGAL(7027),
+    RET_IN_TARGET_BLACKLIST(7020),
     /**
-     * <code>RETCODE_RET_REMARK_WORD_ILLEGAL = 7028;</code>
+     * <code>RET_CANNOT_ADD_TARGET_FRIEND = 7021;</code>
      */
-    RETCODE_RET_REMARK_WORD_ILLEGAL(7028),
+    RET_CANNOT_ADD_TARGET_FRIEND(7021),
     /**
-     * <code>RETCODE_RET_REMARK_TOO_LONG = 7029;</code>
+     * <code>RET_BIRTHDAY_FORMAT_ERROR = 7022;</code>
      */
-    RETCODE_RET_REMARK_TOO_LONG(7029),
+    RET_BIRTHDAY_FORMAT_ERROR(7022),
     /**
-     * <code>RETCODE_RET_REMARK_UTF8_ERROR = 7030;</code>
+     * <code>RET_ONLINE_ID_NOT_EXISTS = 7023;</code>
      */
-    RETCODE_RET_REMARK_UTF8_ERROR(7030),
+    RET_ONLINE_ID_NOT_EXISTS(7023),
     /**
-     * <code>RETCODE_RET_REMARK_IS_EMPTY = 7031;</code>
+     * <code>RET_FIRST_SHARE_REWARD_HAS_TAKEN = 7024;</code>
      */
-    RETCODE_RET_REMARK_IS_EMPTY(7031),
+    RET_FIRST_SHARE_REWARD_HAS_TAKEN(7024),
     /**
-     * <code>RETCODE_RET_ASK_ADD_FRIEND_CD = 7032;</code>
+     * <code>RET_PS_PLAYER_CANNOT_REMOVE_BLACKLIST = 7025;</code>
      */
-    RETCODE_RET_ASK_ADD_FRIEND_CD(7032),
+    RET_PS_PLAYER_CANNOT_REMOVE_BLACKLIST(7025),
     /**
-     * <code>RETCODE_RET_SHOW_AVATAR_INFO_NOT_EXIST = 7033;</code>
+     * <code>RET_REPORT_CD = 7026;</code>
      */
-    RETCODE_RET_SHOW_AVATAR_INFO_NOT_EXIST(7033),
+    RET_REPORT_CD(7026),
     /**
-     * <code>RETCODE_RET_PLAYER_NOT_SHOW_AVATAR = 7034;</code>
+     * <code>RET_REPORT_CONTENT_ILLEGAL = 7027;</code>
      */
-    RETCODE_RET_PLAYER_NOT_SHOW_AVATAR(7034),
+    RET_REPORT_CONTENT_ILLEGAL(7027),
     /**
-     * <code>RETCODE_RET_SOCIAL_UPDATE_SHOW_LIST_REPEAT_ID = 7035;</code>
+     * <code>RET_REMARK_WORD_ILLEGAL = 7028;</code>
      */
-    RETCODE_RET_SOCIAL_UPDATE_SHOW_LIST_REPEAT_ID(7035),
+    RET_REMARK_WORD_ILLEGAL(7028),
     /**
-     * <code>RETCODE_RET_PSN_ID_NOT_FOUND = 7036;</code>
+     * <code>RET_REMARK_TOO_LONG = 7029;</code>
      */
-    RETCODE_RET_PSN_ID_NOT_FOUND(7036),
+    RET_REMARK_TOO_LONG(7029),
     /**
-     * <code>RETCODE_RET_EMOJI_COLLECTION_NUM_EXCEED_LIMIT = 7037;</code>
+     * <code>RET_REMARK_UTF8_ERROR = 7030;</code>
      */
-    RETCODE_RET_EMOJI_COLLECTION_NUM_EXCEED_LIMIT(7037),
+    RET_REMARK_UTF8_ERROR(7030),
     /**
-     * <code>RETCODE_RET_REMARK_EMPTY = 7038;</code>
+     * <code>RET_REMARK_IS_EMPTY = 7031;</code>
      */
-    RETCODE_RET_REMARK_EMPTY(7038),
+    RET_REMARK_IS_EMPTY(7031),
     /**
-     * <code>RETCODE_RET_IN_TARGET_PSN_BLACKLIST = 7039;</code>
+     * <code>RET_ASK_ADD_FRIEND_CD = 7032;</code>
      */
-    RETCODE_RET_IN_TARGET_PSN_BLACKLIST(7039),
+    RET_ASK_ADD_FRIEND_CD(7032),
     /**
-     * <code>RETCODE_RET_SIGNATURE_NOT_CHANGED = 7040;</code>
+     * <code>RET_SHOW_AVATAR_INFO_NOT_EXIST = 7033;</code>
      */
-    RETCODE_RET_SIGNATURE_NOT_CHANGED(7040),
+    RET_SHOW_AVATAR_INFO_NOT_EXIST(7033),
     /**
-     * <code>RETCODE_RET_SIGNATURE_MONTHLY_LIMIT = 7041;</code>
+     * <code>RET_PLAYER_NOT_SHOW_AVATAR = 7034;</code>
      */
-    RETCODE_RET_SIGNATURE_MONTHLY_LIMIT(7041),
+    RET_PLAYER_NOT_SHOW_AVATAR(7034),
     /**
-     * <code>RETCODE_RET_REQ_FRIEND_AVATAR_FREQUENTLY = 7042;</code>
+     * <code>RET_SOCIAL_UPDATE_SHOW_LIST_REPEAT_ID = 7035;</code>
      */
-    RETCODE_RET_REQ_FRIEND_AVATAR_FREQUENTLY(7042),
+    RET_SOCIAL_UPDATE_SHOW_LIST_REPEAT_ID(7035),
     /**
-     * <code>RETCODE_RET_PSN_GET_PLAYER_SOCIAL_DETAIL_FAIL = 7043;</code>
+     * <code>RET_PSN_ID_NOT_FOUND = 7036;</code>
      */
-    RETCODE_RET_PSN_GET_PLAYER_SOCIAL_DETAIL_FAIL(7043),
+    RET_PSN_ID_NOT_FOUND(7036),
     /**
-     * <code>RETCODE_RET_OFFERING_NOT_OPEN = 7081;</code>
+     * <code>RET_EMOJI_COLLECTION_NUM_EXCEED_LIMIT = 7037;</code>
      */
-    RETCODE_RET_OFFERING_NOT_OPEN(7081),
+    RET_EMOJI_COLLECTION_NUM_EXCEED_LIMIT(7037),
     /**
-     * <code>RETCODE_RET_OFFERING_LEVEL_LIMIT = 7082;</code>
+     * <code>RET_REMARK_EMPTY = 7038;</code>
      */
-    RETCODE_RET_OFFERING_LEVEL_LIMIT(7082),
+    RET_REMARK_EMPTY(7038),
     /**
-     * <code>RETCODE_RET_OFFERING_LEVEL_NOT_REACH = 7083;</code>
+     * <code>RET_IN_TARGET_PSN_BLACKLIST = 7039;</code>
      */
-    RETCODE_RET_OFFERING_LEVEL_NOT_REACH(7083),
+    RET_IN_TARGET_PSN_BLACKLIST(7039),
     /**
-     * <code>RETCODE_RET_OFFERING_LEVEL_HAS_TAKEN = 7084;</code>
+     * <code>RET_SIGNATURE_NOT_CHANGED = 7040;</code>
      */
-    RETCODE_RET_OFFERING_LEVEL_HAS_TAKEN(7084),
+    RET_SIGNATURE_NOT_CHANGED(7040),
     /**
-     * <code>RETCODE_RET_CITY_REPUTATION_NOT_OPEN = 7101;</code>
+     * <code>RET_SIGNATURE_MONTHLY_LIMIT = 7041;</code>
      */
-    RETCODE_RET_CITY_REPUTATION_NOT_OPEN(7101),
+    RET_SIGNATURE_MONTHLY_LIMIT(7041),
     /**
-     * <code>RETCODE_RET_CITY_REPUTATION_LEVEL_TAKEN = 7102;</code>
+     * <code>RET_REQ_FRIEND_AVATAR_FREQUENTLY = 7042;</code>
      */
-    RETCODE_RET_CITY_REPUTATION_LEVEL_TAKEN(7102),
+    RET_REQ_FRIEND_AVATAR_FREQUENTLY(7042),
     /**
-     * <code>RETCODE_RET_CITY_REPUTATION_LEVEL_NOT_REACH = 7103;</code>
+     * <code>RET_PSN_GET_PLAYER_SOCIAL_DETAIL_FAIL = 7043;</code>
      */
-    RETCODE_RET_CITY_REPUTATION_LEVEL_NOT_REACH(7103),
+    RET_PSN_GET_PLAYER_SOCIAL_DETAIL_FAIL(7043),
     /**
-     * <code>RETCODE_RET_CITY_REPUTATION_PARENT_QUEST_TAKEN = 7104;</code>
+     * <code>RET_OFFERING_NOT_OPEN = 7081;</code>
      */
-    RETCODE_RET_CITY_REPUTATION_PARENT_QUEST_TAKEN(7104),
+    RET_OFFERING_NOT_OPEN(7081),
     /**
-     * <code>RETCODE_RET_CITY_REPUTATION_PARENT_QUEST_UNFINISH = 7105;</code>
+     * <code>RET_OFFERING_LEVEL_LIMIT = 7082;</code>
      */
-    RETCODE_RET_CITY_REPUTATION_PARENT_QUEST_UNFINISH(7105),
+    RET_OFFERING_LEVEL_LIMIT(7082),
     /**
-     * <code>RETCODE_RET_CITY_REPUTATION_ACCEPT_REQUEST = 7106;</code>
+     * <code>RET_OFFERING_LEVEL_NOT_REACH = 7083;</code>
      */
-    RETCODE_RET_CITY_REPUTATION_ACCEPT_REQUEST(7106),
+    RET_OFFERING_LEVEL_NOT_REACH(7083),
     /**
-     * <code>RETCODE_RET_CITY_REPUTATION_NOT_ACCEPT_REQUEST = 7107;</code>
+     * <code>RET_OFFERING_LEVEL_HAS_TAKEN = 7084;</code>
      */
-    RETCODE_RET_CITY_REPUTATION_NOT_ACCEPT_REQUEST(7107),
+    RET_OFFERING_LEVEL_HAS_TAKEN(7084),
     /**
-     * <code>RETCODE_RET_CITY_REPUTATION_ACCEPT_REQUEST_LIMIT = 7108;</code>
+     * <code>RET_CITY_REPUTATION_NOT_OPEN = 7101;</code>
      */
-    RETCODE_RET_CITY_REPUTATION_ACCEPT_REQUEST_LIMIT(7108),
+    RET_CITY_REPUTATION_NOT_OPEN(7101),
     /**
-     * <code>RETCODE_RET_CITY_REPUTATION_ENTRANCE_NOT_OPEN = 7109;</code>
+     * <code>RET_CITY_REPUTATION_LEVEL_TAKEN = 7102;</code>
      */
-    RETCODE_RET_CITY_REPUTATION_ENTRANCE_NOT_OPEN(7109),
+    RET_CITY_REPUTATION_LEVEL_TAKEN(7102),
     /**
-     * <code>RETCODE_RET_CITY_REPUTATION_TAKEN_REQUEST_REWARD = 7110;</code>
+     * <code>RET_CITY_REPUTATION_LEVEL_NOT_REACH = 7103;</code>
      */
-    RETCODE_RET_CITY_REPUTATION_TAKEN_REQUEST_REWARD(7110),
+    RET_CITY_REPUTATION_LEVEL_NOT_REACH(7103),
     /**
-     * <code>RETCODE_RET_CITY_REPUTATION_SWITCH_CLOSE = 7111;</code>
+     * <code>RET_CITY_REPUTATION_PARENT_QUEST_TAKEN = 7104;</code>
      */
-    RETCODE_RET_CITY_REPUTATION_SWITCH_CLOSE(7111),
+    RET_CITY_REPUTATION_PARENT_QUEST_TAKEN(7104),
     /**
-     * <code>RETCODE_RET_CITY_REPUTATION_ENTRACE_SWITCH_CLOSE = 7112;</code>
+     * <code>RET_CITY_REPUTATION_PARENT_QUEST_UNFINISH = 7105;</code>
      */
-    RETCODE_RET_CITY_REPUTATION_ENTRACE_SWITCH_CLOSE(7112),
+    RET_CITY_REPUTATION_PARENT_QUEST_UNFINISH(7105),
     /**
-     * <code>RETCODE_RET_CITY_REPUTATION_TAKEN_EXPLORE_REWARD = 7113;</code>
+     * <code>RET_CITY_REPUTATION_ACCEPT_REQUEST = 7106;</code>
      */
-    RETCODE_RET_CITY_REPUTATION_TAKEN_EXPLORE_REWARD(7113),
+    RET_CITY_REPUTATION_ACCEPT_REQUEST(7106),
     /**
-     * <code>RETCODE_RET_CITY_REPUTATION_EXPLORE_NOT_REACH = 7114;</code>
+     * <code>RET_CITY_REPUTATION_NOT_ACCEPT_REQUEST = 7107;</code>
      */
-    RETCODE_RET_CITY_REPUTATION_EXPLORE_NOT_REACH(7114),
+    RET_CITY_REPUTATION_NOT_ACCEPT_REQUEST(7107),
     /**
-     * <code>RETCODE_RET_MECHANICUS_NOT_OPEN = 7120;</code>
+     * <code>RET_CITY_REPUTATION_ACCEPT_REQUEST_LIMIT = 7108;</code>
      */
-    RETCODE_RET_MECHANICUS_NOT_OPEN(7120),
+    RET_CITY_REPUTATION_ACCEPT_REQUEST_LIMIT(7108),
     /**
-     * <code>RETCODE_RET_MECHANICUS_GEAR_UNLOCK = 7121;</code>
+     * <code>RET_CITY_REPUTATION_ENTRANCE_NOT_OPEN = 7109;</code>
      */
-    RETCODE_RET_MECHANICUS_GEAR_UNLOCK(7121),
+    RET_CITY_REPUTATION_ENTRANCE_NOT_OPEN(7109),
     /**
-     * <code>RETCODE_RET_MECHANICUS_GEAR_LOCK = 7122;</code>
+     * <code>RET_CITY_REPUTATION_TAKEN_REQUEST_REWARD = 7110;</code>
      */
-    RETCODE_RET_MECHANICUS_GEAR_LOCK(7122),
+    RET_CITY_REPUTATION_TAKEN_REQUEST_REWARD(7110),
     /**
-     * <code>RETCODE_RET_MECHANICUS_GEAR_LEVEL_LIMIT = 7123;</code>
+     * <code>RET_CITY_REPUTATION_SWITCH_CLOSE = 7111;</code>
      */
-    RETCODE_RET_MECHANICUS_GEAR_LEVEL_LIMIT(7123),
+    RET_CITY_REPUTATION_SWITCH_CLOSE(7111),
     /**
-     * <code>RETCODE_RET_MECHANICUS_COIN_NOT_ENOUGH = 7124;</code>
+     * <code>RET_CITY_REPUTATION_ENTRACE_SWITCH_CLOSE = 7112;</code>
      */
-    RETCODE_RET_MECHANICUS_COIN_NOT_ENOUGH(7124),
+    RET_CITY_REPUTATION_ENTRACE_SWITCH_CLOSE(7112),
     /**
-     * <code>RETCODE_RET_MECHANICUS_NO_SEQUENCE = 7125;</code>
+     * <code>RET_CITY_REPUTATION_TAKEN_EXPLORE_REWARD = 7113;</code>
      */
-    RETCODE_RET_MECHANICUS_NO_SEQUENCE(7125),
+    RET_CITY_REPUTATION_TAKEN_EXPLORE_REWARD(7113),
     /**
-     * <code>RETCODE_RET_MECHANICUS_SEQUENCE_LIMIT_LEVEL = 7126;</code>
+     * <code>RET_CITY_REPUTATION_EXPLORE_NOT_REACH = 7114;</code>
      */
-    RETCODE_RET_MECHANICUS_SEQUENCE_LIMIT_LEVEL(7126),
+    RET_CITY_REPUTATION_EXPLORE_NOT_REACH(7114),
     /**
-     * <code>RETCODE_RET_MECHANICUS_SEQUENCE_LIMIT_OPEN = 7127;</code>
+     * <code>RET_MECHANICUS_NOT_OPEN = 7120;</code>
      */
-    RETCODE_RET_MECHANICUS_SEQUENCE_LIMIT_OPEN(7127),
+    RET_MECHANICUS_NOT_OPEN(7120),
     /**
-     * <code>RETCODE_RET_MECHANICUS_DIFFICULT_NOT_SUPPORT = 7128;</code>
+     * <code>RET_MECHANICUS_GEAR_UNLOCK = 7121;</code>
      */
-    RETCODE_RET_MECHANICUS_DIFFICULT_NOT_SUPPORT(7128),
+    RET_MECHANICUS_GEAR_UNLOCK(7121),
     /**
-     * <code>RETCODE_RET_MECHANICUS_TICKET_NOT_ENOUGH = 7129;</code>
+     * <code>RET_MECHANICUS_GEAR_LOCK = 7122;</code>
      */
-    RETCODE_RET_MECHANICUS_TICKET_NOT_ENOUGH(7129),
+    RET_MECHANICUS_GEAR_LOCK(7122),
     /**
-     * <code>RETCODE_RET_MECHANICUS_TEACH_NOT_FINISH = 7130;</code>
+     * <code>RET_MECHANICUS_GEAR_LEVEL_LIMIT = 7123;</code>
      */
-    RETCODE_RET_MECHANICUS_TEACH_NOT_FINISH(7130),
+    RET_MECHANICUS_GEAR_LEVEL_LIMIT(7123),
     /**
-     * <code>RETCODE_RET_MECHANICUS_TEACH_FINISHED = 7131;</code>
+     * <code>RET_MECHANICUS_COIN_NOT_ENOUGH = 7124;</code>
      */
-    RETCODE_RET_MECHANICUS_TEACH_FINISHED(7131),
+    RET_MECHANICUS_COIN_NOT_ENOUGH(7124),
     /**
-     * <code>RETCODE_RET_MECHANICUS_PREV_DIFFICULT_LEVEL_BLOCK = 7132;</code>
+     * <code>RET_MECHANICUS_NO_SEQUENCE = 7125;</code>
      */
-    RETCODE_RET_MECHANICUS_PREV_DIFFICULT_LEVEL_BLOCK(7132),
+    RET_MECHANICUS_NO_SEQUENCE(7125),
     /**
-     * <code>RETCODE_RET_MECHANICUS_PLAYER_LIMIT = 7133;</code>
+     * <code>RET_MECHANICUS_SEQUENCE_LIMIT_LEVEL = 7126;</code>
      */
-    RETCODE_RET_MECHANICUS_PLAYER_LIMIT(7133),
+    RET_MECHANICUS_SEQUENCE_LIMIT_LEVEL(7126),
     /**
-     * <code>RETCODE_RET_MECHANICUS_PUNISH_TIME = 7134;</code>
+     * <code>RET_MECHANICUS_SEQUENCE_LIMIT_OPEN = 7127;</code>
      */
-    RETCODE_RET_MECHANICUS_PUNISH_TIME(7134),
+    RET_MECHANICUS_SEQUENCE_LIMIT_OPEN(7127),
     /**
-     * <code>RETCODE_RET_MECHANICUS_SWITCH_CLOSE = 7135;</code>
+     * <code>RET_MECHANICUS_DIFFICULT_NOT_SUPPORT = 7128;</code>
      */
-    RETCODE_RET_MECHANICUS_SWITCH_CLOSE(7135),
+    RET_MECHANICUS_DIFFICULT_NOT_SUPPORT(7128),
     /**
-     * <code>RETCODE_RET_MECHANICUS_BATTLE_NOT_IN_DUNGEON = 7150;</code>
+     * <code>RET_MECHANICUS_TICKET_NOT_ENOUGH = 7129;</code>
      */
-    RETCODE_RET_MECHANICUS_BATTLE_NOT_IN_DUNGEON(7150),
+    RET_MECHANICUS_TICKET_NOT_ENOUGH(7129),
     /**
-     * <code>RETCODE_RET_MECHANICUS_BATTLE_PLAY_NOT_FOUND = 7151;</code>
+     * <code>RET_MECHANICUS_TEACH_NOT_FINISH = 7130;</code>
      */
-    RETCODE_RET_MECHANICUS_BATTLE_PLAY_NOT_FOUND(7151),
+    RET_MECHANICUS_TEACH_NOT_FINISH(7130),
     /**
-     * <code>RETCODE_RET_MECHANICUS_BATTLE_DUPLICATE_PICK_CARD = 7152;</code>
+     * <code>RET_MECHANICUS_TEACH_FINISHED = 7131;</code>
      */
-    RETCODE_RET_MECHANICUS_BATTLE_DUPLICATE_PICK_CARD(7152),
+    RET_MECHANICUS_TEACH_FINISHED(7131),
     /**
-     * <code>RETCODE_RET_MECHANICUS_BATTLE_PLAYER_NOT_IN_PLAY = 7153;</code>
+     * <code>RET_MECHANICUS_PREV_DIFFICULT_LEVEL_BLOCK = 7132;</code>
      */
-    RETCODE_RET_MECHANICUS_BATTLE_PLAYER_NOT_IN_PLAY(7153),
+    RET_MECHANICUS_PREV_DIFFICULT_LEVEL_BLOCK(7132),
     /**
-     * <code>RETCODE_RET_MECHANICUS_BATTLE_CARD_NOT_AVAILABLE = 7154;</code>
+     * <code>RET_MECHANICUS_PLAYER_LIMIT = 7133;</code>
      */
-    RETCODE_RET_MECHANICUS_BATTLE_CARD_NOT_AVAILABLE(7154),
+    RET_MECHANICUS_PLAYER_LIMIT(7133),
     /**
-     * <code>RETCODE_RET_MECHANICUS_BATTLE_NOT_IN_CARD_STAGE = 7155;</code>
+     * <code>RET_MECHANICUS_PUNISH_TIME = 7134;</code>
      */
-    RETCODE_RET_MECHANICUS_BATTLE_NOT_IN_CARD_STAGE(7155),
+    RET_MECHANICUS_PUNISH_TIME(7134),
     /**
-     * <code>RETCODE_RET_MECHANICUS_BATTLE_CARD_IS_WAITING = 7156;</code>
+     * <code>RET_MECHANICUS_SWITCH_CLOSE = 7135;</code>
      */
-    RETCODE_RET_MECHANICUS_BATTLE_CARD_IS_WAITING(7156),
+    RET_MECHANICUS_SWITCH_CLOSE(7135),
     /**
-     * <code>RETCODE_RET_MECHANICUS_BATTLE_CARD_ALL_CONFIRMED = 7157;</code>
+     * <code>RET_MECHANICUS_BATTLE_NOT_IN_DUNGEON = 7150;</code>
      */
-    RETCODE_RET_MECHANICUS_BATTLE_CARD_ALL_CONFIRMED(7157),
+    RET_MECHANICUS_BATTLE_NOT_IN_DUNGEON(7150),
     /**
-     * <code>RETCODE_RET_MECHANICUS_BATTLE_CARD_ALREADY_CONFIRMED = 7158;</code>
+     * <code>RET_MECHANICUS_BATTLE_PLAY_NOT_FOUND = 7151;</code>
      */
-    RETCODE_RET_MECHANICUS_BATTLE_CARD_ALREADY_CONFIRMED(7158),
+    RET_MECHANICUS_BATTLE_PLAY_NOT_FOUND(7151),
     /**
-     * <code>RETCODE_RET_MECHANICUS_BATTLE_CARD_CONFIRMED_BY_OTHER = 7159;</code>
+     * <code>RET_MECHANICUS_BATTLE_DUPLICATE_PICK_CARD = 7152;</code>
      */
-    RETCODE_RET_MECHANICUS_BATTLE_CARD_CONFIRMED_BY_OTHER(7159),
+    RET_MECHANICUS_BATTLE_DUPLICATE_PICK_CARD(7152),
     /**
-     * <code>RETCODE_RET_MECHANICUS_BATTLE_CARD_NOT_ENOUGH_POINTS = 7160;</code>
+     * <code>RET_MECHANICUS_BATTLE_PLAYER_NOT_IN_PLAY = 7153;</code>
      */
-    RETCODE_RET_MECHANICUS_BATTLE_CARD_NOT_ENOUGH_POINTS(7160),
+    RET_MECHANICUS_BATTLE_PLAYER_NOT_IN_PLAY(7153),
     /**
-     * <code>RETCODE_RET_MECHANICUS_BATTLE_CARD_ALREADY_SKIPPED = 7161;</code>
+     * <code>RET_MECHANICUS_BATTLE_CARD_NOT_AVAILABLE = 7154;</code>
      */
-    RETCODE_RET_MECHANICUS_BATTLE_CARD_ALREADY_SKIPPED(7161),
+    RET_MECHANICUS_BATTLE_CARD_NOT_AVAILABLE(7154),
     /**
-     * <code>RETCODE_RET_LEGENDARY_KEY_NOT_ENOUGH = 8001;</code>
+     * <code>RET_MECHANICUS_BATTLE_NOT_IN_CARD_STAGE = 7155;</code>
      */
-    RETCODE_RET_LEGENDARY_KEY_NOT_ENOUGH(8001),
+    RET_MECHANICUS_BATTLE_NOT_IN_CARD_STAGE(7155),
     /**
-     * <code>RETCODE_RET_LEGENDARY_KEY_EXCEED_LIMIT = 8002;</code>
+     * <code>RET_MECHANICUS_BATTLE_CARD_IS_WAITING = 7156;</code>
      */
-    RETCODE_RET_LEGENDARY_KEY_EXCEED_LIMIT(8002),
+    RET_MECHANICUS_BATTLE_CARD_IS_WAITING(7156),
     /**
-     * <code>RETCODE_RET_DAILY_TASK_NOT_ENOUGH_TO_REDEEM = 8003;</code>
+     * <code>RET_MECHANICUS_BATTLE_CARD_ALL_CONFIRMED = 7157;</code>
      */
-    RETCODE_RET_DAILY_TASK_NOT_ENOUGH_TO_REDEEM(8003),
+    RET_MECHANICUS_BATTLE_CARD_ALL_CONFIRMED(7157),
     /**
-     * <code>RETCODE_RET_PERSONAL_LINE_OPEN_STATE_OFF = 8004;</code>
+     * <code>RET_MECHANICUS_BATTLE_CARD_ALREADY_CONFIRMED = 7158;</code>
      */
-    RETCODE_RET_PERSONAL_LINE_OPEN_STATE_OFF(8004),
+    RET_MECHANICUS_BATTLE_CARD_ALREADY_CONFIRMED(7158),
     /**
-     * <code>RETCODE_RET_PERSONAL_LINE_LEVEL_NOT_ENOUGH = 8005;</code>
+     * <code>RET_MECHANICUS_BATTLE_CARD_CONFIRMED_BY_OTHER = 7159;</code>
      */
-    RETCODE_RET_PERSONAL_LINE_LEVEL_NOT_ENOUGH(8005),
+    RET_MECHANICUS_BATTLE_CARD_CONFIRMED_BY_OTHER(7159),
     /**
-     * <code>RETCODE_RET_PERSONAL_LINE_NOT_OPEN = 8006;</code>
+     * <code>RET_MECHANICUS_BATTLE_CARD_NOT_ENOUGH_POINTS = 7160;</code>
      */
-    RETCODE_RET_PERSONAL_LINE_NOT_OPEN(8006),
+    RET_MECHANICUS_BATTLE_CARD_NOT_ENOUGH_POINTS(7160),
     /**
-     * <code>RETCODE_RET_PERSONAL_LINE_PRE_QUEST_NOT_FINISH = 8007;</code>
+     * <code>RET_MECHANICUS_BATTLE_CARD_ALREADY_SKIPPED = 7161;</code>
      */
-    RETCODE_RET_PERSONAL_LINE_PRE_QUEST_NOT_FINISH(8007),
+    RET_MECHANICUS_BATTLE_CARD_ALREADY_SKIPPED(7161),
     /**
-     * <code>RETCODE_RET_HUNTING_ALREADY_FINISH_OFFER_LIMIT = 8201;</code>
+     * <code>RET_LEGENDARY_KEY_NOT_ENOUGH = 8001;</code>
      */
-    RETCODE_RET_HUNTING_ALREADY_FINISH_OFFER_LIMIT(8201),
+    RET_LEGENDARY_KEY_NOT_ENOUGH(8001),
     /**
-     * <code>RETCODE_RET_HUNTING_HAS_UNFINISHED_OFFER = 8202;</code>
+     * <code>RET_LEGENDARY_KEY_EXCEED_LIMIT = 8002;</code>
      */
-    RETCODE_RET_HUNTING_HAS_UNFINISHED_OFFER(8202),
+    RET_LEGENDARY_KEY_EXCEED_LIMIT(8002),
     /**
-     * <code>RETCODE_RET_HUNTING_FAILED_OFFER_NOT_CD_READY = 8203;</code>
+     * <code>RET_DAILY_TASK_NOT_ENOUGH_TO_REDEEM = 8003;</code>
      */
-    RETCODE_RET_HUNTING_FAILED_OFFER_NOT_CD_READY(8203),
+    RET_DAILY_TASK_NOT_ENOUGH_TO_REDEEM(8003),
     /**
-     * <code>RETCODE_RET_HUNTING_NOT_TAKE_OFFER = 8204;</code>
+     * <code>RET_PERSONAL_LINE_OPEN_STATE_OFF = 8004;</code>
      */
-    RETCODE_RET_HUNTING_NOT_TAKE_OFFER(8204),
+    RET_PERSONAL_LINE_OPEN_STATE_OFF(8004),
     /**
-     * <code>RETCODE_RET_HUNTING_CANNOT_TAKE_TWICE = 8205;</code>
+     * <code>RET_PERSONAL_LINE_LEVEL_NOT_ENOUGH = 8005;</code>
      */
-    RETCODE_RET_HUNTING_CANNOT_TAKE_TWICE(8205),
+    RET_PERSONAL_LINE_LEVEL_NOT_ENOUGH(8005),
     /**
-     * <code>RETCODE_RET_RPIVATE_CHAT_INVALID_CONTENT_TYPE = 8901;</code>
+     * <code>RET_PERSONAL_LINE_NOT_OPEN = 8006;</code>
      */
-    RETCODE_RET_RPIVATE_CHAT_INVALID_CONTENT_TYPE(8901),
+    RET_PERSONAL_LINE_NOT_OPEN(8006),
     /**
-     * <code>RETCODE_RET_PRIVATE_CHAT_TARGET_IS_NOT_FRIEND = 8902;</code>
+     * <code>RET_PERSONAL_LINE_PRE_QUEST_NOT_FINISH = 8007;</code>
      */
-    RETCODE_RET_PRIVATE_CHAT_TARGET_IS_NOT_FRIEND(8902),
+    RET_PERSONAL_LINE_PRE_QUEST_NOT_FINISH(8007),
     /**
-     * <code>RETCODE_RET_PRIVATE_CHAT_CONTENT_NOT_SUPPORTED = 8903;</code>
+     * <code>RET_HUNTING_ALREADY_FINISH_OFFER_LIMIT = 8201;</code>
      */
-    RETCODE_RET_PRIVATE_CHAT_CONTENT_NOT_SUPPORTED(8903),
+    RET_HUNTING_ALREADY_FINISH_OFFER_LIMIT(8201),
     /**
-     * <code>RETCODE_RET_PRIVATE_CHAT_CONTENT_TOO_LONG = 8904;</code>
+     * <code>RET_HUNTING_HAS_UNFINISHED_OFFER = 8202;</code>
      */
-    RETCODE_RET_PRIVATE_CHAT_CONTENT_TOO_LONG(8904),
+    RET_HUNTING_HAS_UNFINISHED_OFFER(8202),
     /**
-     * <code>RETCODE_RET_PRIVATE_CHAT_PULL_TOO_FAST = 8905;</code>
+     * <code>RET_HUNTING_FAILED_OFFER_NOT_CD_READY = 8203;</code>
      */
-    RETCODE_RET_PRIVATE_CHAT_PULL_TOO_FAST(8905),
+    RET_HUNTING_FAILED_OFFER_NOT_CD_READY(8203),
     /**
-     * <code>RETCODE_RET_PRIVATE_CHAT_REPEAT_READ = 8906;</code>
+     * <code>RET_HUNTING_NOT_TAKE_OFFER = 8204;</code>
      */
-    RETCODE_RET_PRIVATE_CHAT_REPEAT_READ(8906),
+    RET_HUNTING_NOT_TAKE_OFFER(8204),
     /**
-     * <code>RETCODE_RET_PRIVATE_CHAT_READ_NOT_FRIEND = 8907;</code>
+     * <code>RET_HUNTING_CANNOT_TAKE_TWICE = 8205;</code>
      */
-    RETCODE_RET_PRIVATE_CHAT_READ_NOT_FRIEND(8907),
+    RET_HUNTING_CANNOT_TAKE_TWICE(8205),
     /**
-     * <code>RETCODE_RET_REUNION_FINISHED = 9001;</code>
+     * <code>RET_RPIVATE_CHAT_INVALID_CONTENT_TYPE = 8901;</code>
      */
-    RETCODE_RET_REUNION_FINISHED(9001),
+    RET_RPIVATE_CHAT_INVALID_CONTENT_TYPE(8901),
     /**
-     * <code>RETCODE_RET_REUNION_NOT_ACTIVATED = 9002;</code>
+     * <code>RET_PRIVATE_CHAT_TARGET_IS_NOT_FRIEND = 8902;</code>
      */
-    RETCODE_RET_REUNION_NOT_ACTIVATED(9002),
+    RET_PRIVATE_CHAT_TARGET_IS_NOT_FRIEND(8902),
     /**
-     * <code>RETCODE_RET_REUNION_ALREADY_TAKE_FIRST_REWARD = 9003;</code>
+     * <code>RET_PRIVATE_CHAT_CONTENT_NOT_SUPPORTED = 8903;</code>
      */
-    RETCODE_RET_REUNION_ALREADY_TAKE_FIRST_REWARD(9003),
+    RET_PRIVATE_CHAT_CONTENT_NOT_SUPPORTED(8903),
     /**
-     * <code>RETCODE_RET_REUNION_SIGN_IN_REWARDED = 9004;</code>
+     * <code>RET_PRIVATE_CHAT_CONTENT_TOO_LONG = 8904;</code>
      */
-    RETCODE_RET_REUNION_SIGN_IN_REWARDED(9004),
+    RET_PRIVATE_CHAT_CONTENT_TOO_LONG(8904),
     /**
-     * <code>RETCODE_RET_REUNION_WATCHER_REWARDED = 9005;</code>
+     * <code>RET_PRIVATE_CHAT_PULL_TOO_FAST = 8905;</code>
      */
-    RETCODE_RET_REUNION_WATCHER_REWARDED(9005),
+    RET_PRIVATE_CHAT_PULL_TOO_FAST(8905),
     /**
-     * <code>RETCODE_RET_REUNION_WATCHER_NOT_FINISH = 9006;</code>
+     * <code>RET_PRIVATE_CHAT_REPEAT_READ = 8906;</code>
      */
-    RETCODE_RET_REUNION_WATCHER_NOT_FINISH(9006),
+    RET_PRIVATE_CHAT_REPEAT_READ(8906),
     /**
-     * <code>RETCODE_RET_REUNION_MISSION_REWARDED = 9007;</code>
+     * <code>RET_PRIVATE_CHAT_READ_NOT_FRIEND = 8907;</code>
      */
-    RETCODE_RET_REUNION_MISSION_REWARDED(9007),
+    RET_PRIVATE_CHAT_READ_NOT_FRIEND(8907),
     /**
-     * <code>RETCODE_RET_REUNION_MISSION_NOT_FINISH = 9008;</code>
+     * <code>RET_REUNION_FINISHED = 9001;</code>
      */
-    RETCODE_RET_REUNION_MISSION_NOT_FINISH(9008),
+    RET_REUNION_FINISHED(9001),
     /**
-     * <code>RETCODE_RET_REUNION_WATCHER_REWARD_NOT_UNLOCKED = 9009;</code>
+     * <code>RET_REUNION_NOT_ACTIVATED = 9002;</code>
      */
-    RETCODE_RET_REUNION_WATCHER_REWARD_NOT_UNLOCKED(9009),
+    RET_REUNION_NOT_ACTIVATED(9002),
     /**
-     * <code>RETCODE_RET_BLESSING_CONTENT_CLOSED = 9101;</code>
+     * <code>RET_REUNION_ALREADY_TAKE_FIRST_REWARD = 9003;</code>
      */
-    RETCODE_RET_BLESSING_CONTENT_CLOSED(9101),
+    RET_REUNION_ALREADY_TAKE_FIRST_REWARD(9003),
     /**
-     * <code>RETCODE_RET_BLESSING_NOT_ACTIVE = 9102;</code>
+     * <code>RET_REUNION_SIGN_IN_REWARDED = 9004;</code>
      */
-    RETCODE_RET_BLESSING_NOT_ACTIVE(9102),
+    RET_REUNION_SIGN_IN_REWARDED(9004),
     /**
-     * <code>RETCODE_RET_BLESSING_NOT_TODAY_ENTITY = 9103;</code>
+     * <code>RET_REUNION_WATCHER_REWARDED = 9005;</code>
      */
-    RETCODE_RET_BLESSING_NOT_TODAY_ENTITY(9103),
+    RET_REUNION_WATCHER_REWARDED(9005),
     /**
-     * <code>RETCODE_RET_BLESSING_ENTITY_EXCEED_SCAN_NUM_LIMIT = 9104;</code>
+     * <code>RET_REUNION_WATCHER_NOT_FINISH = 9006;</code>
      */
-    RETCODE_RET_BLESSING_ENTITY_EXCEED_SCAN_NUM_LIMIT(9104),
+    RET_REUNION_WATCHER_NOT_FINISH(9006),
     /**
-     * <code>RETCODE_RET_BLESSING_DAILY_SCAN_NUM_EXCEED_LIMIT = 9105;</code>
+     * <code>RET_REUNION_MISSION_REWARDED = 9007;</code>
      */
-    RETCODE_RET_BLESSING_DAILY_SCAN_NUM_EXCEED_LIMIT(9105),
+    RET_REUNION_MISSION_REWARDED(9007),
     /**
-     * <code>RETCODE_RET_BLESSING_REDEEM_REWARD_NUM_EXCEED_LIMIT = 9106;</code>
+     * <code>RET_REUNION_MISSION_NOT_FINISH = 9008;</code>
      */
-    RETCODE_RET_BLESSING_REDEEM_REWARD_NUM_EXCEED_LIMIT(9106),
+    RET_REUNION_MISSION_NOT_FINISH(9008),
     /**
-     * <code>RETCODE_RET_BLESSING_REDEEM_PIC_NUM_NOT_ENOUGH = 9107;</code>
+     * <code>RET_REUNION_WATCHER_REWARD_NOT_UNLOCKED = 9009;</code>
      */
-    RETCODE_RET_BLESSING_REDEEM_PIC_NUM_NOT_ENOUGH(9107),
+    RET_REUNION_WATCHER_REWARD_NOT_UNLOCKED(9009),
     /**
-     * <code>RETCODE_RET_BLESSING_PIC_NOT_ENOUGH = 9108;</code>
+     * <code>RET_BLESSING_CONTENT_CLOSED = 9101;</code>
      */
-    RETCODE_RET_BLESSING_PIC_NOT_ENOUGH(9108),
+    RET_BLESSING_CONTENT_CLOSED(9101),
     /**
-     * <code>RETCODE_RET_BLESSING_PIC_HAS_RECEIVED = 9109;</code>
+     * <code>RET_BLESSING_NOT_ACTIVE = 9102;</code>
      */
-    RETCODE_RET_BLESSING_PIC_HAS_RECEIVED(9109),
+    RET_BLESSING_NOT_ACTIVE(9102),
     /**
-     * <code>RETCODE_RET_BLESSING_TARGET_RECV_NUM_EXCEED = 9110;</code>
+     * <code>RET_BLESSING_NOT_TODAY_ENTITY = 9103;</code>
      */
-    RETCODE_RET_BLESSING_TARGET_RECV_NUM_EXCEED(9110),
+    RET_BLESSING_NOT_TODAY_ENTITY(9103),
     /**
-     * <code>RETCODE_RET_FLEUR_FAIR_CREDIT_EXCEED_LIMIT = 9111;</code>
+     * <code>RET_BLESSING_ENTITY_EXCEED_SCAN_NUM_LIMIT = 9104;</code>
      */
-    RETCODE_RET_FLEUR_FAIR_CREDIT_EXCEED_LIMIT(9111),
+    RET_BLESSING_ENTITY_EXCEED_SCAN_NUM_LIMIT(9104),
     /**
-     * <code>RETCODE_RET_FLEUR_FAIR_CREDIT_NOT_ENOUGH = 9112;</code>
+     * <code>RET_BLESSING_DAILY_SCAN_NUM_EXCEED_LIMIT = 9105;</code>
      */
-    RETCODE_RET_FLEUR_FAIR_CREDIT_NOT_ENOUGH(9112),
+    RET_BLESSING_DAILY_SCAN_NUM_EXCEED_LIMIT(9105),
     /**
-     * <code>RETCODE_RET_FLEUR_FAIR_TOKEN_EXCEED_LIMIT = 9113;</code>
+     * <code>RET_BLESSING_REDEEM_REWARD_NUM_EXCEED_LIMIT = 9106;</code>
      */
-    RETCODE_RET_FLEUR_FAIR_TOKEN_EXCEED_LIMIT(9113),
+    RET_BLESSING_REDEEM_REWARD_NUM_EXCEED_LIMIT(9106),
     /**
-     * <code>RETCODE_RET_FLEUR_FAIR_TOKEN_NOT_ENOUGH = 9114;</code>
+     * <code>RET_BLESSING_REDEEM_PIC_NUM_NOT_ENOUGH = 9107;</code>
      */
-    RETCODE_RET_FLEUR_FAIR_TOKEN_NOT_ENOUGH(9114),
+    RET_BLESSING_REDEEM_PIC_NUM_NOT_ENOUGH(9107),
     /**
-     * <code>RETCODE_RET_FLEUR_FAIR_MINIGAME_NOT_OPEN = 9115;</code>
+     * <code>RET_BLESSING_PIC_NOT_ENOUGH = 9108;</code>
      */
-    RETCODE_RET_FLEUR_FAIR_MINIGAME_NOT_OPEN(9115),
+    RET_BLESSING_PIC_NOT_ENOUGH(9108),
     /**
-     * <code>RETCODE_RET_FLEUR_FAIR_MUSIC_GAME_DIFFICULTY_NOT_UNLOCK = 9116;</code>
+     * <code>RET_BLESSING_PIC_HAS_RECEIVED = 9109;</code>
      */
-    RETCODE_RET_FLEUR_FAIR_MUSIC_GAME_DIFFICULTY_NOT_UNLOCK(9116),
+    RET_BLESSING_PIC_HAS_RECEIVED(9109),
     /**
-     * <code>RETCODE_RET_FLEUR_FAIR_DUNGEON_LOCKED = 9117;</code>
+     * <code>RET_BLESSING_TARGET_RECV_NUM_EXCEED = 9110;</code>
      */
-    RETCODE_RET_FLEUR_FAIR_DUNGEON_LOCKED(9117),
+    RET_BLESSING_TARGET_RECV_NUM_EXCEED(9110),
     /**
-     * <code>RETCODE_RET_FLEUR_FAIR_DUNGEON_PUNISH_TIME = 9118;</code>
+     * <code>RET_FLEUR_FAIR_CREDIT_EXCEED_LIMIT = 9111;</code>
      */
-    RETCODE_RET_FLEUR_FAIR_DUNGEON_PUNISH_TIME(9118),
+    RET_FLEUR_FAIR_CREDIT_EXCEED_LIMIT(9111),
     /**
-     * <code>RETCODE_RET_FLEUR_FAIR_ONLY_OWNER_CAN_RESTART_MINIGAM = 9119;</code>
+     * <code>RET_FLEUR_FAIR_CREDIT_NOT_ENOUGH = 9112;</code>
      */
-    RETCODE_RET_FLEUR_FAIR_ONLY_OWNER_CAN_RESTART_MINIGAM(9119),
+    RET_FLEUR_FAIR_CREDIT_NOT_ENOUGH(9112),
     /**
-     * <code>RETCODE_RET_WATER_SPIRIT_COIN_EXCEED_LIMIT = 9120;</code>
+     * <code>RET_FLEUR_FAIR_TOKEN_EXCEED_LIMIT = 9113;</code>
      */
-    RETCODE_RET_WATER_SPIRIT_COIN_EXCEED_LIMIT(9120),
+    RET_FLEUR_FAIR_TOKEN_EXCEED_LIMIT(9113),
     /**
-     * <code>RETCODE_RET_WATER_SPIRIT_COIN_NOT_ENOUGH = 9121;</code>
+     * <code>RET_FLEUR_FAIR_TOKEN_NOT_ENOUGH = 9114;</code>
      */
-    RETCODE_RET_WATER_SPIRIT_COIN_NOT_ENOUGH(9121),
+    RET_FLEUR_FAIR_TOKEN_NOT_ENOUGH(9114),
     /**
-     * <code>RETCODE_RET_REGION_SEARCH_NO_SEARCH = 9122;</code>
+     * <code>RET_FLEUR_FAIR_MINIGAME_NOT_OPEN = 9115;</code>
      */
-    RETCODE_RET_REGION_SEARCH_NO_SEARCH(9122),
+    RET_FLEUR_FAIR_MINIGAME_NOT_OPEN(9115),
     /**
-     * <code>RETCODE_RET_REGION_SEARCH_STATE_ERROR = 9123;</code>
+     * <code>RET_FLEUR_FAIR_MUSIC_GAME_DIFFICULTY_NOT_UNLOCK = 9116;</code>
      */
-    RETCODE_RET_REGION_SEARCH_STATE_ERROR(9123),
+    RET_FLEUR_FAIR_MUSIC_GAME_DIFFICULTY_NOT_UNLOCK(9116),
     /**
-     * <code>RETCODE_RET_CHANNELLER_SLAB_LOOP_DUNGEON_STAGE_NOT_OPEN = 9130;</code>
+     * <code>RET_FLEUR_FAIR_DUNGEON_LOCKED = 9117;</code>
      */
-    RETCODE_RET_CHANNELLER_SLAB_LOOP_DUNGEON_STAGE_NOT_OPEN(9130),
+    RET_FLEUR_FAIR_DUNGEON_LOCKED(9117),
     /**
-     * <code>RETCODE_RET_CHANNELLER_SLAB_LOOP_DUNGEON_NOT_OPEN = 9131;</code>
+     * <code>RET_FLEUR_FAIR_DUNGEON_PUNISH_TIME = 9118;</code>
      */
-    RETCODE_RET_CHANNELLER_SLAB_LOOP_DUNGEON_NOT_OPEN(9131),
+    RET_FLEUR_FAIR_DUNGEON_PUNISH_TIME(9118),
     /**
-     * <code>RETCODE_RET_CHANNELLER_SLAB_LOOP_DUNGEON_FIRST_PASS_REWARD_HAS_TAKEN = 9132;</code>
+     * <code>RET_FLEUR_FAIR_ONLY_OWNER_CAN_RESTART_MINIGAM = 9119;</code>
      */
-    RETCODE_RET_CHANNELLER_SLAB_LOOP_DUNGEON_FIRST_PASS_REWARD_HAS_TAKEN(9132),
+    RET_FLEUR_FAIR_ONLY_OWNER_CAN_RESTART_MINIGAM(9119),
     /**
-     * <code>RETCODE_RET_CHANNELLER_SLAB_LOOP_DUNGEON_SCORE_REWARD_HAS_TAKEN = 9133;</code>
+     * <code>RET_WATER_SPIRIT_COIN_EXCEED_LIMIT = 9120;</code>
      */
-    RETCODE_RET_CHANNELLER_SLAB_LOOP_DUNGEON_SCORE_REWARD_HAS_TAKEN(9133),
+    RET_WATER_SPIRIT_COIN_EXCEED_LIMIT(9120),
     /**
-     * <code>RETCODE_RET_CHANNELLER_SLAB_INVALID_ONE_OFF_DUNGEON = 9134;</code>
+     * <code>RET_WATER_SPIRIT_COIN_NOT_ENOUGH = 9121;</code>
      */
-    RETCODE_RET_CHANNELLER_SLAB_INVALID_ONE_OFF_DUNGEON(9134),
+    RET_WATER_SPIRIT_COIN_NOT_ENOUGH(9121),
     /**
-     * <code>RETCODE_RET_CHANNELLER_SLAB_ONE_OFF_DUNGEON_DONE = 9135;</code>
+     * <code>RET_REGION_SEARCH_NO_SEARCH = 9122;</code>
      */
-    RETCODE_RET_CHANNELLER_SLAB_ONE_OFF_DUNGEON_DONE(9135),
+    RET_REGION_SEARCH_NO_SEARCH(9122),
     /**
-     * <code>RETCODE_RET_CHANNELLER_SLAB_ONE_OFF_DUNGEON_STAGE_NOT_OPEN = 9136;</code>
+     * <code>RET_REGION_SEARCH_STATE_ERROR = 9123;</code>
      */
-    RETCODE_RET_CHANNELLER_SLAB_ONE_OFF_DUNGEON_STAGE_NOT_OPEN(9136),
+    RET_REGION_SEARCH_STATE_ERROR(9123),
     /**
-     * <code>RETCODE_RET_CHANNELLER_SLAB_TOKEN_EXCEED_LIMIT = 9137;</code>
+     * <code>RET_CHANNELLER_SLAB_LOOP_DUNGEON_STAGE_NOT_OPEN = 9130;</code>
      */
-    RETCODE_RET_CHANNELLER_SLAB_TOKEN_EXCEED_LIMIT(9137),
+    RET_CHANNELLER_SLAB_LOOP_DUNGEON_STAGE_NOT_OPEN(9130),
     /**
-     * <code>RETCODE_RET_CHANNELLER_SLAB_TOKEN_NOT_ENOUGH = 9138;</code>
+     * <code>RET_CHANNELLER_SLAB_LOOP_DUNGEON_NOT_OPEN = 9131;</code>
      */
-    RETCODE_RET_CHANNELLER_SLAB_TOKEN_NOT_ENOUGH(9138),
+    RET_CHANNELLER_SLAB_LOOP_DUNGEON_NOT_OPEN(9131),
     /**
-     * <code>RETCODE_RET_CHANNELLER_SLAB_PLAYER_NOT_IN_ONE_OFF_DUNGEON = 9139;</code>
+     * <code>RET_CHANNELLER_SLAB_LOOP_DUNGEON_FIRST_PASS_REWARD_HAS_TAKEN = 9132;</code>
      */
-    RETCODE_RET_CHANNELLER_SLAB_PLAYER_NOT_IN_ONE_OFF_DUNGEON(9139),
+    RET_CHANNELLER_SLAB_LOOP_DUNGEON_FIRST_PASS_REWARD_HAS_TAKEN(9132),
     /**
-     * <code>RETCODE_RET_MIST_TRIAL_SELECT_CHARACTER_NUM_NOT_ENOUGH = 9150;</code>
+     * <code>RET_CHANNELLER_SLAB_LOOP_DUNGEON_SCORE_REWARD_HAS_TAKEN = 9133;</code>
      */
-    RETCODE_RET_MIST_TRIAL_SELECT_CHARACTER_NUM_NOT_ENOUGH(9150),
+    RET_CHANNELLER_SLAB_LOOP_DUNGEON_SCORE_REWARD_HAS_TAKEN(9133),
     /**
-     * <code>RETCODE_RET_HIDE_AND_SEEK_PLAY_NOT_OPEN = 9160;</code>
+     * <code>RET_CHANNELLER_SLAB_INVALID_ONE_OFF_DUNGEON = 9134;</code>
      */
-    RETCODE_RET_HIDE_AND_SEEK_PLAY_NOT_OPEN(9160),
+    RET_CHANNELLER_SLAB_INVALID_ONE_OFF_DUNGEON(9134),
     /**
-     * <code>RETCODE_RET_HIDE_AND_SEEK_PLAY_MAP_NOT_OPEN = 9161;</code>
+     * <code>RET_CHANNELLER_SLAB_ONE_OFF_DUNGEON_DONE = 9135;</code>
      */
-    RETCODE_RET_HIDE_AND_SEEK_PLAY_MAP_NOT_OPEN(9161),
+    RET_CHANNELLER_SLAB_ONE_OFF_DUNGEON_DONE(9135),
     /**
-     * <code>RETCODE_RET_SUMMER_TIME_DRAFT_WOORD_EXCEED_LIMIT = 9170;</code>
+     * <code>RET_CHANNELLER_SLAB_ONE_OFF_DUNGEON_STAGE_NOT_OPEN = 9136;</code>
      */
-    RETCODE_RET_SUMMER_TIME_DRAFT_WOORD_EXCEED_LIMIT(9170),
+    RET_CHANNELLER_SLAB_ONE_OFF_DUNGEON_STAGE_NOT_OPEN(9136),
     /**
-     * <code>RETCODE_RET_SUMMER_TIME_DRAFT_WOORD_NOT_ENOUGH = 9171;</code>
+     * <code>RET_CHANNELLER_SLAB_TOKEN_EXCEED_LIMIT = 9137;</code>
      */
-    RETCODE_RET_SUMMER_TIME_DRAFT_WOORD_NOT_ENOUGH(9171),
+    RET_CHANNELLER_SLAB_TOKEN_EXCEED_LIMIT(9137),
     /**
-     * <code>RETCODE_RET_SUMMER_TIME_MINI_HARPASTUM_EXCEED_LIMIT = 9172;</code>
+     * <code>RET_CHANNELLER_SLAB_TOKEN_NOT_ENOUGH = 9138;</code>
      */
-    RETCODE_RET_SUMMER_TIME_MINI_HARPASTUM_EXCEED_LIMIT(9172),
+    RET_CHANNELLER_SLAB_TOKEN_NOT_ENOUGH(9138),
     /**
-     * <code>RETCODE_RET_SUMMER_TIME_MINI_HARPASTUMNOT_ENOUGH = 9173;</code>
+     * <code>RET_CHANNELLER_SLAB_PLAYER_NOT_IN_ONE_OFF_DUNGEON = 9139;</code>
      */
-    RETCODE_RET_SUMMER_TIME_MINI_HARPASTUMNOT_ENOUGH(9173),
+    RET_CHANNELLER_SLAB_PLAYER_NOT_IN_ONE_OFF_DUNGEON(9139),
     /**
-     * <code>RETCODE_RET_BOUNCE_CONJURING_COIN_EXCEED_LIMIT = 9180;</code>
+     * <code>RET_MIST_TRIAL_SELECT_CHARACTER_NUM_NOT_ENOUGH = 9150;</code>
      */
-    RETCODE_RET_BOUNCE_CONJURING_COIN_EXCEED_LIMIT(9180),
+    RET_MIST_TRIAL_SELECT_CHARACTER_NUM_NOT_ENOUGH(9150),
     /**
-     * <code>RETCODE_RET_BOUNCE_CONJURING_COIN_NOT_ENOUGH = 9181;</code>
+     * <code>RET_MIST_TRIAL_ALREADY_USING_TRIAL_AVATAR = 9151;</code>
      */
-    RETCODE_RET_BOUNCE_CONJURING_COIN_NOT_ENOUGH(9181),
+    RET_MIST_TRIAL_ALREADY_USING_TRIAL_AVATAR(9151),
     /**
-     * <code>RETCODE_RET_CHESS_TEACH_MAP_FINISHED = 9183;</code>
+     * <code>RET_HIDE_AND_SEEK_PLAY_NOT_OPEN = 9160;</code>
      */
-    RETCODE_RET_CHESS_TEACH_MAP_FINISHED(9183),
+    RET_HIDE_AND_SEEK_PLAY_NOT_OPEN(9160),
     /**
-     * <code>RETCODE_RET_CHESS_TEACH_MAP_UNFINISHED = 9184;</code>
+     * <code>RET_HIDE_AND_SEEK_PLAY_MAP_NOT_OPEN = 9161;</code>
      */
-    RETCODE_RET_CHESS_TEACH_MAP_UNFINISHED(9184),
+    RET_HIDE_AND_SEEK_PLAY_MAP_NOT_OPEN(9161),
     /**
-     * <code>RETCODE_RET_CHESS_COIN_EXCEED_LIMIT = 9185;</code>
+     * <code>RET_HIDE_AND_SEEK_PLAY_MAP_NOT_CHOSEN = 9162;</code>
      */
-    RETCODE_RET_CHESS_COIN_EXCEED_LIMIT(9185),
+    RET_HIDE_AND_SEEK_PLAY_MAP_NOT_CHOSEN(9162),
     /**
-     * <code>RETCODE_RET_CHESS_COIN_NOT_ENOUGH = 9186;</code>
+     * <code>RET_SUMMER_TIME_DRAFT_WOORD_EXCEED_LIMIT = 9170;</code>
      */
-    RETCODE_RET_CHESS_COIN_NOT_ENOUGH(9186),
+    RET_SUMMER_TIME_DRAFT_WOORD_EXCEED_LIMIT(9170),
     /**
-     * <code>RETCODE_RET_CHESS_IN_PUNISH_TIME = 9187;</code>
+     * <code>RET_SUMMER_TIME_DRAFT_WOORD_NOT_ENOUGH = 9171;</code>
      */
-    RETCODE_RET_CHESS_IN_PUNISH_TIME(9187),
+    RET_SUMMER_TIME_DRAFT_WOORD_NOT_ENOUGH(9171),
     /**
-     * <code>RETCODE_RET_CHESS_PREV_MAP_UNFINISHED = 9188;</code>
+     * <code>RET_SUMMER_TIME_MINI_HARPASTUM_EXCEED_LIMIT = 9172;</code>
      */
-    RETCODE_RET_CHESS_PREV_MAP_UNFINISHED(9188),
+    RET_SUMMER_TIME_MINI_HARPASTUM_EXCEED_LIMIT(9172),
     /**
-     * <code>RETCODE_RET_CHESS_MAP_LOCKED = 9189;</code>
+     * <code>RET_SUMMER_TIME_MINI_HARPASTUMNOT_ENOUGH = 9173;</code>
      */
-    RETCODE_RET_CHESS_MAP_LOCKED(9189),
+    RET_SUMMER_TIME_MINI_HARPASTUMNOT_ENOUGH(9173),
     /**
-     * <code>RETCODE_RET_BLITZ_RUSH_NOT_OPEN = 9192;</code>
+     * <code>RET_BOUNCE_CONJURING_COIN_EXCEED_LIMIT = 9180;</code>
      */
-    RETCODE_RET_BLITZ_RUSH_NOT_OPEN(9192),
+    RET_BOUNCE_CONJURING_COIN_EXCEED_LIMIT(9180),
     /**
-     * <code>RETCODE_RET_BLITZ_RUSH_DUNGEON_NOT_OPEN = 9193;</code>
+     * <code>RET_BOUNCE_CONJURING_COIN_NOT_ENOUGH = 9181;</code>
      */
-    RETCODE_RET_BLITZ_RUSH_DUNGEON_NOT_OPEN(9193),
+    RET_BOUNCE_CONJURING_COIN_NOT_ENOUGH(9181),
     /**
-     * <code>RETCODE_RET_BLITZ_RUSH_COIN_A_EXCEED_LIMIT = 9194;</code>
+     * <code>RET_CHESS_TEACH_MAP_FINISHED = 9183;</code>
      */
-    RETCODE_RET_BLITZ_RUSH_COIN_A_EXCEED_LIMIT(9194),
+    RET_CHESS_TEACH_MAP_FINISHED(9183),
     /**
-     * <code>RETCODE_RET_BLITZ_RUSH_COIN_B_EXCEED_LIMIT = 9195;</code>
+     * <code>RET_CHESS_TEACH_MAP_UNFINISHED = 9184;</code>
      */
-    RETCODE_RET_BLITZ_RUSH_COIN_B_EXCEED_LIMIT(9195),
+    RET_CHESS_TEACH_MAP_UNFINISHED(9184),
     /**
-     * <code>RETCODE_RET_BLITZ_RUSH_COIN_A_NOT_ENOUGH = 9196;</code>
+     * <code>RET_CHESS_COIN_EXCEED_LIMIT = 9185;</code>
      */
-    RETCODE_RET_BLITZ_RUSH_COIN_A_NOT_ENOUGH(9196),
+    RET_CHESS_COIN_EXCEED_LIMIT(9185),
     /**
-     * <code>RETCODE_RET_BLITZ_RUSH_COIN_B_NOT_ENOUGH = 9197;</code>
+     * <code>RET_CHESS_COIN_NOT_ENOUGH = 9186;</code>
      */
-    RETCODE_RET_BLITZ_RUSH_COIN_B_NOT_ENOUGH(9197),
+    RET_CHESS_COIN_NOT_ENOUGH(9186),
     /**
-     * <code>RETCODE_RET_MIRACLE_RING_VALUE_NOT_ENOUGH = 9201;</code>
+     * <code>RET_CHESS_IN_PUNISH_TIME = 9187;</code>
      */
-    RETCODE_RET_MIRACLE_RING_VALUE_NOT_ENOUGH(9201),
+    RET_CHESS_IN_PUNISH_TIME(9187),
     /**
-     * <code>RETCODE_RET_MIRACLE_RING_CD = 9202;</code>
+     * <code>RET_CHESS_PREV_MAP_UNFINISHED = 9188;</code>
      */
-    RETCODE_RET_MIRACLE_RING_CD(9202),
+    RET_CHESS_PREV_MAP_UNFINISHED(9188),
     /**
-     * <code>RETCODE_RET_MIRACLE_RING_REWARD_NOT_TAKEN = 9203;</code>
+     * <code>RET_CHESS_MAP_LOCKED = 9189;</code>
      */
-    RETCODE_RET_MIRACLE_RING_REWARD_NOT_TAKEN(9203),
+    RET_CHESS_MAP_LOCKED(9189),
     /**
-     * <code>RETCODE_RET_MIRACLE_RING_NOT_DELIVER = 9204;</code>
+     * <code>RET_BLITZ_RUSH_NOT_OPEN = 9192;</code>
      */
-    RETCODE_RET_MIRACLE_RING_NOT_DELIVER(9204),
+    RET_BLITZ_RUSH_NOT_OPEN(9192),
     /**
-     * <code>RETCODE_RET_MIRACLE_RING_DELIVER_EXCEED = 9205;</code>
+     * <code>RET_BLITZ_RUSH_DUNGEON_NOT_OPEN = 9193;</code>
      */
-    RETCODE_RET_MIRACLE_RING_DELIVER_EXCEED(9205),
+    RET_BLITZ_RUSH_DUNGEON_NOT_OPEN(9193),
     /**
-     * <code>RETCODE_RET_MIRACLE_RING_HAS_CREATED = 9206;</code>
+     * <code>RET_BLITZ_RUSH_COIN_A_EXCEED_LIMIT = 9194;</code>
      */
-    RETCODE_RET_MIRACLE_RING_HAS_CREATED(9206),
+    RET_BLITZ_RUSH_COIN_A_EXCEED_LIMIT(9194),
     /**
-     * <code>RETCODE_RET_MIRACLE_RING_HAS_NOT_CREATED = 9207;</code>
+     * <code>RET_BLITZ_RUSH_COIN_B_EXCEED_LIMIT = 9195;</code>
      */
-    RETCODE_RET_MIRACLE_RING_HAS_NOT_CREATED(9207),
+    RET_BLITZ_RUSH_COIN_B_EXCEED_LIMIT(9195),
     /**
-     * <code>RETCODE_RET_MIRACLE_RING_NOT_YOURS = 9208;</code>
+     * <code>RET_BLITZ_RUSH_COIN_A_NOT_ENOUGH = 9196;</code>
      */
-    RETCODE_RET_MIRACLE_RING_NOT_YOURS(9208),
+    RET_BLITZ_RUSH_COIN_A_NOT_ENOUGH(9196),
     /**
-     * <code>RETCODE_RET_GADGET_FOUNDATION_UNAUTHORIZED = 9251;</code>
+     * <code>RET_BLITZ_RUSH_COIN_B_NOT_ENOUGH = 9197;</code>
      */
-    RETCODE_RET_GADGET_FOUNDATION_UNAUTHORIZED(9251),
+    RET_BLITZ_RUSH_COIN_B_NOT_ENOUGH(9197),
     /**
-     * <code>RETCODE_RET_GADGET_FOUNDATION_SCENE_NOT_FOUND = 9252;</code>
+     * <code>RET_MIRACLE_RING_VALUE_NOT_ENOUGH = 9201;</code>
      */
-    RETCODE_RET_GADGET_FOUNDATION_SCENE_NOT_FOUND(9252),
+    RET_MIRACLE_RING_VALUE_NOT_ENOUGH(9201),
     /**
-     * <code>RETCODE_RET_GADGET_FOUNDATION_NOT_IN_INIT_STATE = 9253;</code>
+     * <code>RET_MIRACLE_RING_CD = 9202;</code>
      */
-    RETCODE_RET_GADGET_FOUNDATION_NOT_IN_INIT_STATE(9253),
+    RET_MIRACLE_RING_CD(9202),
     /**
-     * <code>RETCODE_RET_GADGET_FOUNDATION_BILDING_POINT_NOT_ENOUGHT = 9254;</code>
+     * <code>RET_MIRACLE_RING_REWARD_NOT_TAKEN = 9203;</code>
      */
-    RETCODE_RET_GADGET_FOUNDATION_BILDING_POINT_NOT_ENOUGHT(9254),
+    RET_MIRACLE_RING_REWARD_NOT_TAKEN(9203),
     /**
-     * <code>RETCODE_RET_GADGET_FOUNDATION_NOT_IN_BUILT_STATE = 9255;</code>
+     * <code>RET_MIRACLE_RING_NOT_DELIVER = 9204;</code>
      */
-    RETCODE_RET_GADGET_FOUNDATION_NOT_IN_BUILT_STATE(9255),
+    RET_MIRACLE_RING_NOT_DELIVER(9204),
     /**
-     * <code>RETCODE_RET_GADGET_FOUNDATION_OP_NOT_SUPPORTED = 9256;</code>
+     * <code>RET_MIRACLE_RING_DELIVER_EXCEED = 9205;</code>
      */
-    RETCODE_RET_GADGET_FOUNDATION_OP_NOT_SUPPORTED(9256),
+    RET_MIRACLE_RING_DELIVER_EXCEED(9205),
     /**
-     * <code>RETCODE_RET_GADGET_FOUNDATION_REQ_PLAYER_NOT_IN_SCENE = 9257;</code>
+     * <code>RET_MIRACLE_RING_HAS_CREATED = 9206;</code>
      */
-    RETCODE_RET_GADGET_FOUNDATION_REQ_PLAYER_NOT_IN_SCENE(9257),
+    RET_MIRACLE_RING_HAS_CREATED(9206),
     /**
-     * <code>RETCODE_RET_GADGET_FOUNDATION_LOCKED_BY_ANOTHER_PLAYER = 9258;</code>
+     * <code>RET_MIRACLE_RING_HAS_NOT_CREATED = 9207;</code>
      */
-    RETCODE_RET_GADGET_FOUNDATION_LOCKED_BY_ANOTHER_PLAYER(9258),
+    RET_MIRACLE_RING_HAS_NOT_CREATED(9207),
     /**
-     * <code>RETCODE_RET_GADGET_FOUNDATION_NOT_LOCKED = 9259;</code>
+     * <code>RET_MIRACLE_RING_NOT_YOURS = 9208;</code>
      */
-    RETCODE_RET_GADGET_FOUNDATION_NOT_LOCKED(9259),
+    RET_MIRACLE_RING_NOT_YOURS(9208),
     /**
-     * <code>RETCODE_RET_GADGET_FOUNDATION_DUPLICATE_LOCK = 9260;</code>
+     * <code>RET_GADGET_FOUNDATION_UNAUTHORIZED = 9251;</code>
      */
-    RETCODE_RET_GADGET_FOUNDATION_DUPLICATE_LOCK(9260),
+    RET_GADGET_FOUNDATION_UNAUTHORIZED(9251),
     /**
-     * <code>RETCODE_RET_GADGET_FOUNDATION_PLAYER_NOT_FOUND = 9261;</code>
+     * <code>RET_GADGET_FOUNDATION_SCENE_NOT_FOUND = 9252;</code>
      */
-    RETCODE_RET_GADGET_FOUNDATION_PLAYER_NOT_FOUND(9261),
+    RET_GADGET_FOUNDATION_SCENE_NOT_FOUND(9252),
     /**
-     * <code>RETCODE_RET_GADGET_FOUNDATION_PLAYER_GEAR_NOT_FOUND = 9262;</code>
+     * <code>RET_GADGET_FOUNDATION_NOT_IN_INIT_STATE = 9253;</code>
      */
-    RETCODE_RET_GADGET_FOUNDATION_PLAYER_GEAR_NOT_FOUND(9262),
+    RET_GADGET_FOUNDATION_NOT_IN_INIT_STATE(9253),
     /**
-     * <code>RETCODE_RET_GADGET_FOUNDATION_ROTAION_DISABLED = 9263;</code>
+     * <code>RET_GADGET_FOUNDATION_BILDING_POINT_NOT_ENOUGHT = 9254;</code>
      */
-    RETCODE_RET_GADGET_FOUNDATION_ROTAION_DISABLED(9263),
+    RET_GADGET_FOUNDATION_BILDING_POINT_NOT_ENOUGHT(9254),
     /**
-     * <code>RETCODE_RET_GADGET_FOUNDATION_REACH_DUNGEON_GEAR_LIMIT = 9264;</code>
+     * <code>RET_GADGET_FOUNDATION_NOT_IN_BUILT_STATE = 9255;</code>
      */
-    RETCODE_RET_GADGET_FOUNDATION_REACH_DUNGEON_GEAR_LIMIT(9264),
+    RET_GADGET_FOUNDATION_NOT_IN_BUILT_STATE(9255),
     /**
-     * <code>RETCODE_RET_GADGET_FOUNDATION_REACH_SINGLE_GEAR_LIMIT = 9265;</code>
+     * <code>RET_GADGET_FOUNDATION_OP_NOT_SUPPORTED = 9256;</code>
      */
-    RETCODE_RET_GADGET_FOUNDATION_REACH_SINGLE_GEAR_LIMIT(9265),
+    RET_GADGET_FOUNDATION_OP_NOT_SUPPORTED(9256),
     /**
-     * <code>RETCODE_RET_GADGET_FOUNDATION_ROTATION_ON_GOING = 9266;</code>
+     * <code>RET_GADGET_FOUNDATION_REQ_PLAYER_NOT_IN_SCENE = 9257;</code>
      */
-    RETCODE_RET_GADGET_FOUNDATION_ROTATION_ON_GOING(9266),
+    RET_GADGET_FOUNDATION_REQ_PLAYER_NOT_IN_SCENE(9257),
     /**
-     * <code>RETCODE_RET_OP_ACTIVITY_BONUS_NOT_FOUND = 9301;</code>
+     * <code>RET_GADGET_FOUNDATION_LOCKED_BY_ANOTHER_PLAYER = 9258;</code>
      */
-    RETCODE_RET_OP_ACTIVITY_BONUS_NOT_FOUND(9301),
+    RET_GADGET_FOUNDATION_LOCKED_BY_ANOTHER_PLAYER(9258),
     /**
-     * <code>RETCODE_RET_OP_ACTIVITY_NOT_OPEN = 9302;</code>
+     * <code>RET_GADGET_FOUNDATION_NOT_LOCKED = 9259;</code>
      */
-    RETCODE_RET_OP_ACTIVITY_NOT_OPEN(9302),
+    RET_GADGET_FOUNDATION_NOT_LOCKED(9259),
     /**
-     * <code>RETCODE_RET_MULTISTAGE_PLAY_PLAYER_NOT_IN_SCENE = 9501;</code>
+     * <code>RET_GADGET_FOUNDATION_DUPLICATE_LOCK = 9260;</code>
      */
-    RETCODE_RET_MULTISTAGE_PLAY_PLAYER_NOT_IN_SCENE(9501),
+    RET_GADGET_FOUNDATION_DUPLICATE_LOCK(9260),
     /**
-     * <code>RETCODE_RET_MULTISTAGE_PLAY_NOT_FOUND = 9502;</code>
+     * <code>RET_GADGET_FOUNDATION_PLAYER_NOT_FOUND = 9261;</code>
      */
-    RETCODE_RET_MULTISTAGE_PLAY_NOT_FOUND(9502),
+    RET_GADGET_FOUNDATION_PLAYER_NOT_FOUND(9261),
     /**
-     * <code>RETCODE_RET_COOP_CHAPTER_NOT_OPEN = 9601;</code>
+     * <code>RET_GADGET_FOUNDATION_PLAYER_GEAR_NOT_FOUND = 9262;</code>
      */
-    RETCODE_RET_COOP_CHAPTER_NOT_OPEN(9601),
+    RET_GADGET_FOUNDATION_PLAYER_GEAR_NOT_FOUND(9262),
     /**
-     * <code>RETCODE_RET_COOP_COND_NOT_MEET = 9602;</code>
+     * <code>RET_GADGET_FOUNDATION_ROTAION_DISABLED = 9263;</code>
      */
-    RETCODE_RET_COOP_COND_NOT_MEET(9602),
+    RET_GADGET_FOUNDATION_ROTAION_DISABLED(9263),
     /**
-     * <code>RETCODE_RET_COOP_POINT_LOCKED = 9603;</code>
+     * <code>RET_GADGET_FOUNDATION_REACH_DUNGEON_GEAR_LIMIT = 9264;</code>
      */
-    RETCODE_RET_COOP_POINT_LOCKED(9603),
+    RET_GADGET_FOUNDATION_REACH_DUNGEON_GEAR_LIMIT(9264),
     /**
-     * <code>RETCODE_RET_COOP_NOT_HAVE_PROGRESS = 9604;</code>
+     * <code>RET_GADGET_FOUNDATION_REACH_SINGLE_GEAR_LIMIT = 9265;</code>
      */
-    RETCODE_RET_COOP_NOT_HAVE_PROGRESS(9604),
+    RET_GADGET_FOUNDATION_REACH_SINGLE_GEAR_LIMIT(9265),
     /**
-     * <code>RETCODE_RET_COOP_REWARD_HAS_TAKEN = 9605;</code>
+     * <code>RET_GADGET_FOUNDATION_ROTATION_ON_GOING = 9266;</code>
      */
-    RETCODE_RET_COOP_REWARD_HAS_TAKEN(9605),
+    RET_GADGET_FOUNDATION_ROTATION_ON_GOING(9266),
     /**
-     * <code>RETCODE_RET_DRAFT_HAS_ACTIVE_DRAFT = 9651;</code>
+     * <code>RET_OP_ACTIVITY_BONUS_NOT_FOUND = 9301;</code>
      */
-    RETCODE_RET_DRAFT_HAS_ACTIVE_DRAFT(9651),
+    RET_OP_ACTIVITY_BONUS_NOT_FOUND(9301),
     /**
-     * <code>RETCODE_RET_DRAFT_NOT_IN_MY_WORLD = 9652;</code>
+     * <code>RET_OP_ACTIVITY_NOT_OPEN = 9302;</code>
      */
-    RETCODE_RET_DRAFT_NOT_IN_MY_WORLD(9652),
+    RET_OP_ACTIVITY_NOT_OPEN(9302),
     /**
-     * <code>RETCODE_RET_DRAFT_NOT_SUPPORT_MP = 9653;</code>
+     * <code>RET_MULTISTAGE_PLAY_PLAYER_NOT_IN_SCENE = 9501;</code>
      */
-    RETCODE_RET_DRAFT_NOT_SUPPORT_MP(9653),
+    RET_MULTISTAGE_PLAY_PLAYER_NOT_IN_SCENE(9501),
     /**
-     * <code>RETCODE_RET_DRAFT_PLAYER_NOT_ENOUGH = 9654;</code>
+     * <code>RET_MULTISTAGE_PLAY_NOT_FOUND = 9502;</code>
      */
-    RETCODE_RET_DRAFT_PLAYER_NOT_ENOUGH(9654),
+    RET_MULTISTAGE_PLAY_NOT_FOUND(9502),
     /**
-     * <code>RETCODE_RET_DRAFT_INCORRECT_SCENE = 9655;</code>
+     * <code>RET_MULTISTAGE_PLAY_IN_OTHER_STAGE = 9503;</code>
      */
-    RETCODE_RET_DRAFT_INCORRECT_SCENE(9655),
+    RET_MULTISTAGE_PLAY_IN_OTHER_STAGE(9503),
     /**
-     * <code>RETCODE_RET_DRAFT_OTHER_PLAYER_ENTERING = 9656;</code>
+     * <code>RET_COOP_CHAPTER_NOT_OPEN = 9601;</code>
      */
-    RETCODE_RET_DRAFT_OTHER_PLAYER_ENTERING(9656),
+    RET_COOP_CHAPTER_NOT_OPEN(9601),
     /**
-     * <code>RETCODE_RET_DRAFT_GUEST_IS_TRANSFERRING = 9657;</code>
+     * <code>RET_COOP_COND_NOT_MEET = 9602;</code>
      */
-    RETCODE_RET_DRAFT_GUEST_IS_TRANSFERRING(9657),
+    RET_COOP_COND_NOT_MEET(9602),
     /**
-     * <code>RETCODE_RET_DRAFT_GUEST_NOT_IN_DRAFT_SCENE = 9658;</code>
+     * <code>RET_COOP_POINT_LOCKED = 9603;</code>
      */
-    RETCODE_RET_DRAFT_GUEST_NOT_IN_DRAFT_SCENE(9658),
+    RET_COOP_POINT_LOCKED(9603),
     /**
-     * <code>RETCODE_RET_DRAFT_INVITE_OVER_TIME = 9659;</code>
+     * <code>RET_COOP_NOT_HAVE_PROGRESS = 9604;</code>
      */
-    RETCODE_RET_DRAFT_INVITE_OVER_TIME(9659),
+    RET_COOP_NOT_HAVE_PROGRESS(9604),
     /**
-     * <code>RETCODE_RET_DRAFT_TWICE_CONFIRM_OVER_TIMER = 9660;</code>
+     * <code>RET_COOP_REWARD_HAS_TAKEN = 9605;</code>
      */
-    RETCODE_RET_DRAFT_TWICE_CONFIRM_OVER_TIMER(9660),
+    RET_COOP_REWARD_HAS_TAKEN(9605),
     /**
-     * <code>RETCODE_RET_HOME_UNKOWN = 9701;</code>
+     * <code>RET_DRAFT_HAS_ACTIVE_DRAFT = 9651;</code>
      */
-    RETCODE_RET_HOME_UNKOWN(9701),
+    RET_DRAFT_HAS_ACTIVE_DRAFT(9651),
     /**
-     * <code>RETCODE_RET_HOME_INVALID_CLIENT_PARAM = 9702;</code>
+     * <code>RET_DRAFT_NOT_IN_MY_WORLD = 9652;</code>
      */
-    RETCODE_RET_HOME_INVALID_CLIENT_PARAM(9702),
+    RET_DRAFT_NOT_IN_MY_WORLD(9652),
     /**
-     * <code>RETCODE_RET_HOME_TARGE_PLAYER_HAS_NO_HOME = 9703;</code>
+     * <code>RET_DRAFT_NOT_SUPPORT_MP = 9653;</code>
      */
-    RETCODE_RET_HOME_TARGE_PLAYER_HAS_NO_HOME(9703),
+    RET_DRAFT_NOT_SUPPORT_MP(9653),
     /**
-     * <code>RETCODE_RET_HOME_NOT_ONLINE = 9704;</code>
+     * <code>RET_DRAFT_PLAYER_NOT_ENOUGH = 9654;</code>
      */
-    RETCODE_RET_HOME_NOT_ONLINE(9704),
+    RET_DRAFT_PLAYER_NOT_ENOUGH(9654),
     /**
-     * <code>RETCODE_RET_HOME_PLAYER_FULL = 9705;</code>
+     * <code>RET_DRAFT_INCORRECT_SCENE = 9655;</code>
      */
-    RETCODE_RET_HOME_PLAYER_FULL(9705),
+    RET_DRAFT_INCORRECT_SCENE(9655),
     /**
-     * <code>RETCODE_RET_HOME_BLOCKED = 9706;</code>
+     * <code>RET_DRAFT_OTHER_PLAYER_ENTERING = 9656;</code>
      */
-    RETCODE_RET_HOME_BLOCKED(9706),
+    RET_DRAFT_OTHER_PLAYER_ENTERING(9656),
     /**
-     * <code>RETCODE_RET_HOME_ALREADY_IN_TARGET_HOME_WORLD = 9707;</code>
+     * <code>RET_DRAFT_GUEST_IS_TRANSFERRING = 9657;</code>
      */
-    RETCODE_RET_HOME_ALREADY_IN_TARGET_HOME_WORLD(9707),
+    RET_DRAFT_GUEST_IS_TRANSFERRING(9657),
     /**
-     * <code>RETCODE_RET_HOME_IN_EDIT_MODE = 9708;</code>
+     * <code>RET_DRAFT_GUEST_NOT_IN_DRAFT_SCENE = 9658;</code>
      */
-    RETCODE_RET_HOME_IN_EDIT_MODE(9708),
+    RET_DRAFT_GUEST_NOT_IN_DRAFT_SCENE(9658),
     /**
-     * <code>RETCODE_RET_HOME_NOT_IN_EDIT_MODE = 9709;</code>
+     * <code>RET_DRAFT_INVITE_OVER_TIME = 9659;</code>
      */
-    RETCODE_RET_HOME_NOT_IN_EDIT_MODE(9709),
+    RET_DRAFT_INVITE_OVER_TIME(9659),
     /**
-     * <code>RETCODE_RET_HOME_HAS_GUEST = 9710;</code>
+     * <code>RET_DRAFT_TWICE_CONFIRM_OVER_TIMER = 9660;</code>
      */
-    RETCODE_RET_HOME_HAS_GUEST(9710),
+    RET_DRAFT_TWICE_CONFIRM_OVER_TIMER(9660),
     /**
-     * <code>RETCODE_RET_HOME_CANT_ENTER_BY_IN_EDIT_MODE = 9711;</code>
+     * <code>RET_DRAFT_GUEST_NOT_IN_WORLD_SCENE = 9661;</code>
      */
-    RETCODE_RET_HOME_CANT_ENTER_BY_IN_EDIT_MODE(9711),
+    RET_DRAFT_GUEST_NOT_IN_WORLD_SCENE(9661),
     /**
-     * <code>RETCODE_RET_HOME_CLIENT_PARAM_INVALID = 9712;</code>
+     * <code>RET_HOME_UNKOWN = 9701;</code>
      */
-    RETCODE_RET_HOME_CLIENT_PARAM_INVALID(9712),
+    RET_HOME_UNKOWN(9701),
     /**
-     * <code>RETCODE_RET_HOME_PLAYER_NOT_IN_HOME_WORLD = 9713;</code>
+     * <code>RET_HOME_INVALID_CLIENT_PARAM = 9702;</code>
      */
-    RETCODE_RET_HOME_PLAYER_NOT_IN_HOME_WORLD(9713),
+    RET_HOME_INVALID_CLIENT_PARAM(9702),
     /**
-     * <code>RETCODE_RET_HOME_PLAYER_NOT_IN_SELF_HOME_WORLD = 9714;</code>
+     * <code>RET_HOME_TARGE_PLAYER_HAS_NO_HOME = 9703;</code>
      */
-    RETCODE_RET_HOME_PLAYER_NOT_IN_SELF_HOME_WORLD(9714),
+    RET_HOME_TARGE_PLAYER_HAS_NO_HOME(9703),
     /**
-     * <code>RETCODE_RET_HOME_NOT_FOUND_IN_MEM = 9715;</code>
+     * <code>RET_HOME_NOT_ONLINE = 9704;</code>
      */
-    RETCODE_RET_HOME_NOT_FOUND_IN_MEM(9715),
+    RET_HOME_NOT_ONLINE(9704),
     /**
-     * <code>RETCODE_RET_HOME_PLAYER_IN_HOME_ROOM_SCENE = 9716;</code>
+     * <code>RET_HOME_PLAYER_FULL = 9705;</code>
      */
-    RETCODE_RET_HOME_PLAYER_IN_HOME_ROOM_SCENE(9716),
+    RET_HOME_PLAYER_FULL(9705),
     /**
-     * <code>RETCODE_RET_HOME_HOME_REFUSE_GUEST_ENTER = 9717;</code>
+     * <code>RET_HOME_BLOCKED = 9706;</code>
      */
-    RETCODE_RET_HOME_HOME_REFUSE_GUEST_ENTER(9717),
+    RET_HOME_BLOCKED(9706),
     /**
-     * <code>RETCODE_RET_HOME_OWNER_REFUSE_TO_ENTER_HOME = 9718;</code>
+     * <code>RET_HOME_ALREADY_IN_TARGET_HOME_WORLD = 9707;</code>
      */
-    RETCODE_RET_HOME_OWNER_REFUSE_TO_ENTER_HOME(9718),
+    RET_HOME_ALREADY_IN_TARGET_HOME_WORLD(9707),
     /**
-     * <code>RETCODE_RET_HOME_OWNER_OFFLINE = 9719;</code>
+     * <code>RET_HOME_IN_EDIT_MODE = 9708;</code>
      */
-    RETCODE_RET_HOME_OWNER_OFFLINE(9719),
+    RET_HOME_IN_EDIT_MODE(9708),
     /**
-     * <code>RETCODE_RET_HOME_FURNITURE_EXCEED_LIMIT = 9720;</code>
+     * <code>RET_HOME_NOT_IN_EDIT_MODE = 9709;</code>
      */
-    RETCODE_RET_HOME_FURNITURE_EXCEED_LIMIT(9720),
+    RET_HOME_NOT_IN_EDIT_MODE(9709),
     /**
-     * <code>RETCODE_RET_HOME_FURNITURE_COUNT_NOT_ENOUGH = 9721;</code>
+     * <code>RET_HOME_HAS_GUEST = 9710;</code>
      */
-    RETCODE_RET_HOME_FURNITURE_COUNT_NOT_ENOUGH(9721),
+    RET_HOME_HAS_GUEST(9710),
     /**
-     * <code>RETCODE_RET_HOME_IN_TRY_ENTER_PROCESS = 9722;</code>
+     * <code>RET_HOME_CANT_ENTER_BY_IN_EDIT_MODE = 9711;</code>
      */
-    RETCODE_RET_HOME_IN_TRY_ENTER_PROCESS(9722),
+    RET_HOME_CANT_ENTER_BY_IN_EDIT_MODE(9711),
     /**
-     * <code>RETCODE_RET_HOME_ALREADY_IN_TARGET_SCENE = 9723;</code>
+     * <code>RET_HOME_CLIENT_PARAM_INVALID = 9712;</code>
      */
-    RETCODE_RET_HOME_ALREADY_IN_TARGET_SCENE(9723),
+    RET_HOME_CLIENT_PARAM_INVALID(9712),
     /**
-     * <code>RETCODE_RET_HOME_COIN_EXCEED_LIMIT = 9724;</code>
+     * <code>RET_HOME_PLAYER_NOT_IN_HOME_WORLD = 9713;</code>
      */
-    RETCODE_RET_HOME_COIN_EXCEED_LIMIT(9724),
+    RET_HOME_PLAYER_NOT_IN_HOME_WORLD(9713),
     /**
-     * <code>RETCODE_RET_HOME_COIN_NOT_ENOUGH = 9725;</code>
+     * <code>RET_HOME_PLAYER_NOT_IN_SELF_HOME_WORLD = 9714;</code>
      */
-    RETCODE_RET_HOME_COIN_NOT_ENOUGH(9725),
+    RET_HOME_PLAYER_NOT_IN_SELF_HOME_WORLD(9714),
     /**
-     * <code>RETCODE_RET_HOME_MODULE_NOT_UNLOCKED = 9726;</code>
+     * <code>RET_HOME_NOT_FOUND_IN_MEM = 9715;</code>
      */
-    RETCODE_RET_HOME_MODULE_NOT_UNLOCKED(9726),
+    RET_HOME_NOT_FOUND_IN_MEM(9715),
     /**
-     * <code>RETCODE_RET_HOME_CUR_MODULE_CLOSED = 9727;</code>
+     * <code>RET_HOME_PLAYER_IN_HOME_ROOM_SCENE = 9716;</code>
      */
-    RETCODE_RET_HOME_CUR_MODULE_CLOSED(9727),
+    RET_HOME_PLAYER_IN_HOME_ROOM_SCENE(9716),
     /**
-     * <code>RETCODE_RET_HOME_FURNITURE_SUITE_NOT_UNLOCKED = 9728;</code>
+     * <code>RET_HOME_HOME_REFUSE_GUEST_ENTER = 9717;</code>
      */
-    RETCODE_RET_HOME_FURNITURE_SUITE_NOT_UNLOCKED(9728),
+    RET_HOME_HOME_REFUSE_GUEST_ENTER(9717),
     /**
-     * <code>RETCODE_RET_HOME_IN_MATCH = 9729;</code>
+     * <code>RET_HOME_OWNER_REFUSE_TO_ENTER_HOME = 9718;</code>
      */
-    RETCODE_RET_HOME_IN_MATCH(9729),
+    RET_HOME_OWNER_REFUSE_TO_ENTER_HOME(9718),
     /**
-     * <code>RETCODE_RET_HOME_IN_COMBAT = 9730;</code>
+     * <code>RET_HOME_OWNER_OFFLINE = 9719;</code>
      */
-    RETCODE_RET_HOME_IN_COMBAT(9730),
+    RET_HOME_OWNER_OFFLINE(9719),
     /**
-     * <code>RETCODE_RET_HOME_EDIT_MODE_CD = 9731;</code>
+     * <code>RET_HOME_FURNITURE_EXCEED_LIMIT = 9720;</code>
      */
-    RETCODE_RET_HOME_EDIT_MODE_CD(9731),
+    RET_HOME_FURNITURE_EXCEED_LIMIT(9720),
     /**
-     * <code>RETCODE_RET_HOME_UPDATE_FURNITURE_CD = 9732;</code>
+     * <code>RET_HOME_FURNITURE_COUNT_NOT_ENOUGH = 9721;</code>
      */
-    RETCODE_RET_HOME_UPDATE_FURNITURE_CD(9732),
+    RET_HOME_FURNITURE_COUNT_NOT_ENOUGH(9721),
     /**
-     * <code>RETCODE_RET_HOME_BLOCK_FURNITURE_LIMIT = 9733;</code>
+     * <code>RET_HOME_IN_TRY_ENTER_PROCESS = 9722;</code>
      */
-    RETCODE_RET_HOME_BLOCK_FURNITURE_LIMIT(9733),
+    RET_HOME_IN_TRY_ENTER_PROCESS(9722),
     /**
-     * <code>RETCODE_RET_HOME_NOT_SUPPORT = 9734;</code>
+     * <code>RET_HOME_ALREADY_IN_TARGET_SCENE = 9723;</code>
      */
-    RETCODE_RET_HOME_NOT_SUPPORT(9734),
+    RET_HOME_ALREADY_IN_TARGET_SCENE(9723),
     /**
-     * <code>RETCODE_RET_HOME_STATE_NOT_OPEN = 9735;</code>
+     * <code>RET_HOME_COIN_EXCEED_LIMIT = 9724;</code>
      */
-    RETCODE_RET_HOME_STATE_NOT_OPEN(9735),
+    RET_HOME_COIN_EXCEED_LIMIT(9724),
     /**
-     * <code>RETCODE_RET_HOME_TARGET_STATE_NOT_OPEN = 9736;</code>
+     * <code>RET_HOME_COIN_NOT_ENOUGH = 9725;</code>
      */
-    RETCODE_RET_HOME_TARGET_STATE_NOT_OPEN(9736),
+    RET_HOME_COIN_NOT_ENOUGH(9725),
     /**
-     * <code>RETCODE_RET_HOME_APPLY_ENTER_OTHER_HOME_FAIL = 9737;</code>
+     * <code>RET_HOME_MODULE_NOT_UNLOCKED = 9726;</code>
      */
-    RETCODE_RET_HOME_APPLY_ENTER_OTHER_HOME_FAIL(9737),
+    RET_HOME_MODULE_NOT_UNLOCKED(9726),
     /**
-     * <code>RETCODE_RET_HOME_SAVE_NO_MAIN_HOUSE = 9738;</code>
+     * <code>RET_HOME_CUR_MODULE_CLOSED = 9727;</code>
      */
-    RETCODE_RET_HOME_SAVE_NO_MAIN_HOUSE(9738),
+    RET_HOME_CUR_MODULE_CLOSED(9727),
     /**
-     * <code>RETCODE_RET_HOME_IN_DUNGEON = 9739;</code>
+     * <code>RET_HOME_FURNITURE_SUITE_NOT_UNLOCKED = 9728;</code>
      */
-    RETCODE_RET_HOME_IN_DUNGEON(9739),
+    RET_HOME_FURNITURE_SUITE_NOT_UNLOCKED(9728),
     /**
-     * <code>RETCODE_RET_HOME_ANY_GALLERY_STARTED = 9740;</code>
+     * <code>RET_HOME_IN_MATCH = 9729;</code>
      */
-    RETCODE_RET_HOME_ANY_GALLERY_STARTED(9740),
+    RET_HOME_IN_MATCH(9729),
     /**
-     * <code>RETCODE_RET_HOME_QUEST_BLOCK_HOME = 9741;</code>
+     * <code>RET_HOME_IN_COMBAT = 9730;</code>
      */
-    RETCODE_RET_HOME_QUEST_BLOCK_HOME(9741),
+    RET_HOME_IN_COMBAT(9730),
     /**
-     * <code>RETCODE_RET_HOME_WAITING_PRIOR_CHECK = 9742;</code>
+     * <code>RET_HOME_EDIT_MODE_CD = 9731;</code>
      */
-    RETCODE_RET_HOME_WAITING_PRIOR_CHECK(9742),
+    RET_HOME_EDIT_MODE_CD(9731),
     /**
-     * <code>RETCODE_RET_HOME_PERSISTENT_CHECK_FAIL = 9743;</code>
+     * <code>RET_HOME_UPDATE_FURNITURE_CD = 9732;</code>
      */
-    RETCODE_RET_HOME_PERSISTENT_CHECK_FAIL(9743),
+    RET_HOME_UPDATE_FURNITURE_CD(9732),
     /**
-     * <code>RETCODE_RET_HOME_FIND_ONLINE_HOME_FAIL = 9744;</code>
+     * <code>RET_HOME_BLOCK_FURNITURE_LIMIT = 9733;</code>
      */
-    RETCODE_RET_HOME_FIND_ONLINE_HOME_FAIL(9744),
+    RET_HOME_BLOCK_FURNITURE_LIMIT(9733),
     /**
-     * <code>RETCODE_RET_HOME_JOIN_SCENE_FAIL = 9745;</code>
+     * <code>RET_HOME_NOT_SUPPORT = 9734;</code>
      */
-    RETCODE_RET_HOME_JOIN_SCENE_FAIL(9745),
+    RET_HOME_NOT_SUPPORT(9734),
     /**
-     * <code>RETCODE_RET_HOME_MAX_PLAYER = 9746;</code>
+     * <code>RET_HOME_STATE_NOT_OPEN = 9735;</code>
      */
-    RETCODE_RET_HOME_MAX_PLAYER(9746),
+    RET_HOME_STATE_NOT_OPEN(9735),
     /**
-     * <code>RETCODE_RET_HOME_IN_TRANSFER = 9747;</code>
+     * <code>RET_HOME_TARGET_STATE_NOT_OPEN = 9736;</code>
      */
-    RETCODE_RET_HOME_IN_TRANSFER(9747),
+    RET_HOME_TARGET_STATE_NOT_OPEN(9736),
     /**
-     * <code>RETCODE_RET_HOME_ANY_HOME_GALLERY_STARTED = 9748;</code>
+     * <code>RET_HOME_APPLY_ENTER_OTHER_HOME_FAIL = 9737;</code>
      */
-    RETCODE_RET_HOME_ANY_HOME_GALLERY_STARTED(9748),
+    RET_HOME_APPLY_ENTER_OTHER_HOME_FAIL(9737),
     /**
-     * <code>RETCODE_RET_HOME_CAN_NOT_ENTER_IN_AUDIT = 9749;</code>
+     * <code>RET_HOME_SAVE_NO_MAIN_HOUSE = 9738;</code>
      */
-    RETCODE_RET_HOME_CAN_NOT_ENTER_IN_AUDIT(9749),
+    RET_HOME_SAVE_NO_MAIN_HOUSE(9738),
     /**
-     * <code>RETCODE_RET_FURNITURE_MAKE_INDEX_ERROR = 9750;</code>
+     * <code>RET_HOME_IN_DUNGEON = 9739;</code>
      */
-    RETCODE_RET_FURNITURE_MAKE_INDEX_ERROR(9750),
+    RET_HOME_IN_DUNGEON(9739),
     /**
-     * <code>RETCODE_RET_FURNITURE_MAKE_LOCKED = 9751;</code>
+     * <code>RET_HOME_ANY_GALLERY_STARTED = 9740;</code>
      */
-    RETCODE_RET_FURNITURE_MAKE_LOCKED(9751),
+    RET_HOME_ANY_GALLERY_STARTED(9740),
     /**
-     * <code>RETCODE_RET_FURNITURE_MAKE_CONFIG_ERROR = 9752;</code>
+     * <code>RET_HOME_QUEST_BLOCK_HOME = 9741;</code>
      */
-    RETCODE_RET_FURNITURE_MAKE_CONFIG_ERROR(9752),
+    RET_HOME_QUEST_BLOCK_HOME(9741),
     /**
-     * <code>RETCODE_RET_FURNITURE_MAKE_SLOT_FULL = 9753;</code>
+     * <code>RET_HOME_WAITING_PRIOR_CHECK = 9742;</code>
      */
-    RETCODE_RET_FURNITURE_MAKE_SLOT_FULL(9753),
+    RET_HOME_WAITING_PRIOR_CHECK(9742),
     /**
-     * <code>RETCODE_RET_FURNITURE_MAKE_ADD_FURNITURE_FAIL = 9754;</code>
+     * <code>RET_HOME_PERSISTENT_CHECK_FAIL = 9743;</code>
      */
-    RETCODE_RET_FURNITURE_MAKE_ADD_FURNITURE_FAIL(9754),
+    RET_HOME_PERSISTENT_CHECK_FAIL(9743),
     /**
-     * <code>RETCODE_RET_FURNITURE_MAKE_UNFINISH = 9755;</code>
+     * <code>RET_HOME_FIND_ONLINE_HOME_FAIL = 9744;</code>
      */
-    RETCODE_RET_FURNITURE_MAKE_UNFINISH(9755),
+    RET_HOME_FIND_ONLINE_HOME_FAIL(9744),
     /**
-     * <code>RETCODE_RET_FURNITURE_MAKE_IS_FINISH = 9756;</code>
+     * <code>RET_HOME_JOIN_SCENE_FAIL = 9745;</code>
      */
-    RETCODE_RET_FURNITURE_MAKE_IS_FINISH(9756),
+    RET_HOME_JOIN_SCENE_FAIL(9745),
     /**
-     * <code>RETCODE_RET_FURNITURE_MAKE_NOT_IN_CORRECT_HOME = 9757;</code>
+     * <code>RET_HOME_MAX_PLAYER = 9746;</code>
      */
-    RETCODE_RET_FURNITURE_MAKE_NOT_IN_CORRECT_HOME(9757),
+    RET_HOME_MAX_PLAYER(9746),
     /**
-     * <code>RETCODE_RET_FURNITURE_MAKE_NO_COUNT = 9758;</code>
+     * <code>RET_HOME_IN_TRANSFER = 9747;</code>
      */
-    RETCODE_RET_FURNITURE_MAKE_NO_COUNT(9758),
+    RET_HOME_IN_TRANSFER(9747),
     /**
-     * <code>RETCODE_RET_FURNITURE_MAKE_ACCELERATE_LIMIT = 9759;</code>
+     * <code>RET_HOME_ANY_HOME_GALLERY_STARTED = 9748;</code>
      */
-    RETCODE_RET_FURNITURE_MAKE_ACCELERATE_LIMIT(9759),
+    RET_HOME_ANY_HOME_GALLERY_STARTED(9748),
     /**
-     * <code>RETCODE_RET_FURNITURE_MAKE_NO_MAKE_DATA = 9760;</code>
+     * <code>RET_HOME_CAN_NOT_ENTER_IN_AUDIT = 9749;</code>
      */
-    RETCODE_RET_FURNITURE_MAKE_NO_MAKE_DATA(9760),
+    RET_HOME_CAN_NOT_ENTER_IN_AUDIT(9749),
     /**
-     * <code>RETCODE_RET_HOME_LIMITED_SHOP_CLOSE = 9761;</code>
+     * <code>RET_FURNITURE_MAKE_INDEX_ERROR = 9750;</code>
      */
-    RETCODE_RET_HOME_LIMITED_SHOP_CLOSE(9761),
+    RET_FURNITURE_MAKE_INDEX_ERROR(9750),
     /**
-     * <code>RETCODE_RET_HOME_AVATAR_NOT_SHOW = 9762;</code>
+     * <code>RET_FURNITURE_MAKE_LOCKED = 9751;</code>
      */
-    RETCODE_RET_HOME_AVATAR_NOT_SHOW(9762),
+    RET_FURNITURE_MAKE_LOCKED(9751),
     /**
-     * <code>RETCODE_RET_HOME_EVENT_COND_NOT_SATISFIED = 9763;</code>
+     * <code>RET_FURNITURE_MAKE_CONFIG_ERROR = 9752;</code>
      */
-    RETCODE_RET_HOME_EVENT_COND_NOT_SATISFIED(9763),
+    RET_FURNITURE_MAKE_CONFIG_ERROR(9752),
     /**
-     * <code>RETCODE_RET_HOME_INVALID_ARRANGE_ANIMAL_PARAM = 9764;</code>
+     * <code>RET_FURNITURE_MAKE_SLOT_FULL = 9753;</code>
      */
-    RETCODE_RET_HOME_INVALID_ARRANGE_ANIMAL_PARAM(9764),
+    RET_FURNITURE_MAKE_SLOT_FULL(9753),
     /**
-     * <code>RETCODE_RET_HOME_INVALID_ARRANGE_NPC_PARAM = 9765;</code>
+     * <code>RET_FURNITURE_MAKE_ADD_FURNITURE_FAIL = 9754;</code>
      */
-    RETCODE_RET_HOME_INVALID_ARRANGE_NPC_PARAM(9765),
+    RET_FURNITURE_MAKE_ADD_FURNITURE_FAIL(9754),
     /**
-     * <code>RETCODE_RET_HOME_INVALID_ARRANGE_SUITE_PARAM = 9766;</code>
+     * <code>RET_FURNITURE_MAKE_UNFINISH = 9755;</code>
      */
-    RETCODE_RET_HOME_INVALID_ARRANGE_SUITE_PARAM(9766),
+    RET_FURNITURE_MAKE_UNFINISH(9755),
     /**
-     * <code>RETCODE_RET_HOME_INVALID_ARRANGE_MAIN_HOUSE_PARAM = 9767;</code>
+     * <code>RET_FURNITURE_MAKE_IS_FINISH = 9756;</code>
      */
-    RETCODE_RET_HOME_INVALID_ARRANGE_MAIN_HOUSE_PARAM(9767),
+    RET_FURNITURE_MAKE_IS_FINISH(9756),
     /**
-     * <code>RETCODE_RET_HOME_AVATAR_STATE_NOT_OPEN = 9768;</code>
+     * <code>RET_FURNITURE_MAKE_NOT_IN_CORRECT_HOME = 9757;</code>
      */
-    RETCODE_RET_HOME_AVATAR_STATE_NOT_OPEN(9768),
+    RET_FURNITURE_MAKE_NOT_IN_CORRECT_HOME(9757),
     /**
-     * <code>RETCODE_RET_HOME_PLANT_FIELD_NOT_EMPTY = 9769;</code>
+     * <code>RET_FURNITURE_MAKE_NO_COUNT = 9758;</code>
      */
-    RETCODE_RET_HOME_PLANT_FIELD_NOT_EMPTY(9769),
+    RET_FURNITURE_MAKE_NO_COUNT(9758),
     /**
-     * <code>RETCODE_RET_HOME_PLANT_FIELD_EMPTY = 9770;</code>
+     * <code>RET_FURNITURE_MAKE_ACCELERATE_LIMIT = 9759;</code>
      */
-    RETCODE_RET_HOME_PLANT_FIELD_EMPTY(9770),
+    RET_FURNITURE_MAKE_ACCELERATE_LIMIT(9759),
     /**
-     * <code>RETCODE_RET_HOME_PLANT_FIELD_TYPE_ERROR = 9771;</code>
+     * <code>RET_FURNITURE_MAKE_NO_MAKE_DATA = 9760;</code>
      */
-    RETCODE_RET_HOME_PLANT_FIELD_TYPE_ERROR(9771),
+    RET_FURNITURE_MAKE_NO_MAKE_DATA(9760),
     /**
-     * <code>RETCODE_RET_HOME_PLANT_TIME_NOT_ENOUGH = 9772;</code>
+     * <code>RET_HOME_LIMITED_SHOP_CLOSE = 9761;</code>
      */
-    RETCODE_RET_HOME_PLANT_TIME_NOT_ENOUGH(9772),
+    RET_HOME_LIMITED_SHOP_CLOSE(9761),
     /**
-     * <code>RETCODE_RET_HOME_PLANT_SUB_FIELD_NUM_NOT_ENOUGH = 9773;</code>
+     * <code>RET_HOME_AVATAR_NOT_SHOW = 9762;</code>
      */
-    RETCODE_RET_HOME_PLANT_SUB_FIELD_NUM_NOT_ENOUGH(9773),
+    RET_HOME_AVATAR_NOT_SHOW(9762),
     /**
-     * <code>RETCODE_RET_HOME_PLANT_FIELD_PARAM_ERROR = 9774;</code>
+     * <code>RET_HOME_EVENT_COND_NOT_SATISFIED = 9763;</code>
      */
-    RETCODE_RET_HOME_PLANT_FIELD_PARAM_ERROR(9774),
+    RET_HOME_EVENT_COND_NOT_SATISFIED(9763),
     /**
-     * <code>RETCODE_RET_HOME_FURNITURE_GUID_ERROR = 9775;</code>
+     * <code>RET_HOME_INVALID_ARRANGE_ANIMAL_PARAM = 9764;</code>
      */
-    RETCODE_RET_HOME_FURNITURE_GUID_ERROR(9775),
+    RET_HOME_INVALID_ARRANGE_ANIMAL_PARAM(9764),
     /**
-     * <code>RETCODE_RET_HOME_FURNITURE_ARRANGE_LIMIT = 9776;</code>
+     * <code>RET_HOME_INVALID_ARRANGE_NPC_PARAM = 9765;</code>
      */
-    RETCODE_RET_HOME_FURNITURE_ARRANGE_LIMIT(9776),
+    RET_HOME_INVALID_ARRANGE_NPC_PARAM(9765),
     /**
-     * <code>RETCODE_RET_HOME_FISH_FARMING_LIMIT = 9777;</code>
+     * <code>RET_HOME_INVALID_ARRANGE_SUITE_PARAM = 9766;</code>
      */
-    RETCODE_RET_HOME_FISH_FARMING_LIMIT(9777),
+    RET_HOME_INVALID_ARRANGE_SUITE_PARAM(9766),
     /**
-     * <code>RETCODE_RET_HOME_FISH_COUNT_NOT_ENOUGH = 9778;</code>
+     * <code>RET_HOME_INVALID_ARRANGE_MAIN_HOUSE_PARAM = 9767;</code>
      */
-    RETCODE_RET_HOME_FISH_COUNT_NOT_ENOUGH(9778),
+    RET_HOME_INVALID_ARRANGE_MAIN_HOUSE_PARAM(9767),
     /**
-     * <code>RETCODE_RET_HOME_FURNITURE_COST_LIMIT = 9779;</code>
+     * <code>RET_HOME_AVATAR_STATE_NOT_OPEN = 9768;</code>
      */
-    RETCODE_RET_HOME_FURNITURE_COST_LIMIT(9779),
+    RET_HOME_AVATAR_STATE_NOT_OPEN(9768),
     /**
-     * <code>RETCODE_RET_HOME_CUSTOM_FURNITURE_INVALID = 9780;</code>
+     * <code>RET_HOME_PLANT_FIELD_NOT_EMPTY = 9769;</code>
      */
-    RETCODE_RET_HOME_CUSTOM_FURNITURE_INVALID(9780),
+    RET_HOME_PLANT_FIELD_NOT_EMPTY(9769),
     /**
-     * <code>RETCODE_RET_HOME_INVALID_ARRANGE_GROUP_PARAM = 9781;</code>
+     * <code>RET_HOME_PLANT_FIELD_EMPTY = 9770;</code>
      */
-    RETCODE_RET_HOME_INVALID_ARRANGE_GROUP_PARAM(9781),
+    RET_HOME_PLANT_FIELD_EMPTY(9770),
     /**
-     * <code>RETCODE_RET_HOME_FURNITURE_ARRANGE_GROUP_LIMIT = 9782;</code>
+     * <code>RET_HOME_PLANT_FIELD_TYPE_ERROR = 9771;</code>
      */
-    RETCODE_RET_HOME_FURNITURE_ARRANGE_GROUP_LIMIT(9782),
+    RET_HOME_PLANT_FIELD_TYPE_ERROR(9771),
     /**
-     * <code>RETCODE_RET_HOME_PICTURE_FRAME_COOP_CG_GENDER_ERROR = 9783;</code>
+     * <code>RET_HOME_PLANT_TIME_NOT_ENOUGH = 9772;</code>
      */
-    RETCODE_RET_HOME_PICTURE_FRAME_COOP_CG_GENDER_ERROR(9783),
+    RET_HOME_PLANT_TIME_NOT_ENOUGH(9772),
     /**
-     * <code>RETCODE_RET_HOME_PICTURE_FRAME_COOP_CG_NOT_UNLOCK = 9784;</code>
+     * <code>RET_HOME_PLANT_SUB_FIELD_NUM_NOT_ENOUGH = 9773;</code>
      */
-    RETCODE_RET_HOME_PICTURE_FRAME_COOP_CG_NOT_UNLOCK(9784),
+    RET_HOME_PLANT_SUB_FIELD_NUM_NOT_ENOUGH(9773),
     /**
-     * <code>RETCODE_RET_HOME_FURNITURE_CANNOT_ARRANGE = 9785;</code>
+     * <code>RET_HOME_PLANT_FIELD_PARAM_ERROR = 9774;</code>
      */
-    RETCODE_RET_HOME_FURNITURE_CANNOT_ARRANGE(9785),
+    RET_HOME_PLANT_FIELD_PARAM_ERROR(9774),
     /**
-     * <code>RETCODE_RET_HOME_FURNITURE_IN_DUPLICATE_SUITE = 9786;</code>
+     * <code>RET_HOME_FURNITURE_GUID_ERROR = 9775;</code>
      */
-    RETCODE_RET_HOME_FURNITURE_IN_DUPLICATE_SUITE(9786),
+    RET_HOME_FURNITURE_GUID_ERROR(9775),
     /**
-     * <code>RETCODE_RET_HOME_FURNITURE_CUSTOM_SUITE_TOO_SMALL = 9787;</code>
+     * <code>RET_HOME_FURNITURE_ARRANGE_LIMIT = 9776;</code>
      */
-    RETCODE_RET_HOME_FURNITURE_CUSTOM_SUITE_TOO_SMALL(9787),
+    RET_HOME_FURNITURE_ARRANGE_LIMIT(9776),
     /**
-     * <code>RETCODE_RET_HOME_FURNITURE_CUSTOM_SUITE_TOO_BIG = 9788;</code>
+     * <code>RET_HOME_FISH_FARMING_LIMIT = 9777;</code>
      */
-    RETCODE_RET_HOME_FURNITURE_CUSTOM_SUITE_TOO_BIG(9788),
+    RET_HOME_FISH_FARMING_LIMIT(9777),
     /**
-     * <code>RETCODE_RET_HOME_FURNITURE_SUITE_EXCEED_LIMIT = 9789;</code>
+     * <code>RET_HOME_FISH_COUNT_NOT_ENOUGH = 9778;</code>
      */
-    RETCODE_RET_HOME_FURNITURE_SUITE_EXCEED_LIMIT(9789),
+    RET_HOME_FISH_COUNT_NOT_ENOUGH(9778),
     /**
-     * <code>RETCODE_RET_HOME_FURNITURE_CUSTOM_SUITE_EXCEED_LIMIT = 9790;</code>
+     * <code>RET_HOME_FURNITURE_COST_LIMIT = 9779;</code>
      */
-    RETCODE_RET_HOME_FURNITURE_CUSTOM_SUITE_EXCEED_LIMIT(9790),
+    RET_HOME_FURNITURE_COST_LIMIT(9779),
     /**
-     * <code>RETCODE_RET_HOME_FURNITURE_CUSTOM_SUITE_INVALID_SURFACE_TYPE = 9791;</code>
+     * <code>RET_HOME_CUSTOM_FURNITURE_INVALID = 9780;</code>
      */
-    RETCODE_RET_HOME_FURNITURE_CUSTOM_SUITE_INVALID_SURFACE_TYPE(9791),
+    RET_HOME_CUSTOM_FURNITURE_INVALID(9780),
     /**
-     * <code>RETCODE_RET_HOME_BGM_ID_NOT_FOUND = 9792;</code>
+     * <code>RET_HOME_INVALID_ARRANGE_GROUP_PARAM = 9781;</code>
      */
-    RETCODE_RET_HOME_BGM_ID_NOT_FOUND(9792),
+    RET_HOME_INVALID_ARRANGE_GROUP_PARAM(9781),
     /**
-     * <code>RETCODE_RET_HOME_BGM_NOT_UNLOCKED = 9793;</code>
+     * <code>RET_HOME_FURNITURE_ARRANGE_GROUP_LIMIT = 9782;</code>
      */
-    RETCODE_RET_HOME_BGM_NOT_UNLOCKED(9793),
+    RET_HOME_FURNITURE_ARRANGE_GROUP_LIMIT(9782),
     /**
-     * <code>RETCODE_RET_HOME_BGM_FURNITURE_NOT_FOUND = 9794;</code>
+     * <code>RET_HOME_PICTURE_FRAME_COOP_CG_GENDER_ERROR = 9783;</code>
      */
-    RETCODE_RET_HOME_BGM_FURNITURE_NOT_FOUND(9794),
+    RET_HOME_PICTURE_FRAME_COOP_CG_GENDER_ERROR(9783),
     /**
-     * <code>RETCODE_RET_HOME_BGM_NOT_SUPPORT_BY_CUR_SCENE = 9795;</code>
+     * <code>RET_HOME_PICTURE_FRAME_COOP_CG_NOT_UNLOCK = 9784;</code>
      */
-    RETCODE_RET_HOME_BGM_NOT_SUPPORT_BY_CUR_SCENE(9795),
+    RET_HOME_PICTURE_FRAME_COOP_CG_NOT_UNLOCK(9784),
     /**
-     * <code>RETCODE_RET_HOME_LIMITED_SHOP_GOODS_DISABLE = 9796;</code>
+     * <code>RET_HOME_FURNITURE_CANNOT_ARRANGE = 9785;</code>
      */
-    RETCODE_RET_HOME_LIMITED_SHOP_GOODS_DISABLE(9796),
+    RET_HOME_FURNITURE_CANNOT_ARRANGE(9785),
     /**
-     * <code>RETCODE_RET_HOME_WORLD_WOOD_MATERIAL_EMPTY = 9797;</code>
+     * <code>RET_HOME_FURNITURE_IN_DUPLICATE_SUITE = 9786;</code>
      */
-    RETCODE_RET_HOME_WORLD_WOOD_MATERIAL_EMPTY(9797),
+    RET_HOME_FURNITURE_IN_DUPLICATE_SUITE(9786),
     /**
-     * <code>RETCODE_RET_HOME_WORLD_WOOD_MATERIAL_NOT_FOUND = 9798;</code>
+     * <code>RET_HOME_FURNITURE_CUSTOM_SUITE_TOO_SMALL = 9787;</code>
      */
-    RETCODE_RET_HOME_WORLD_WOOD_MATERIAL_NOT_FOUND(9798),
+    RET_HOME_FURNITURE_CUSTOM_SUITE_TOO_SMALL(9787),
     /**
-     * <code>RETCODE_RET_HOME_WORLD_WOOD_MATERIAL_COUNT_INVALID = 9799;</code>
+     * <code>RET_HOME_FURNITURE_CUSTOM_SUITE_TOO_BIG = 9788;</code>
      */
-    RETCODE_RET_HOME_WORLD_WOOD_MATERIAL_COUNT_INVALID(9799),
+    RET_HOME_FURNITURE_CUSTOM_SUITE_TOO_BIG(9788),
     /**
-     * <code>RETCODE_RET_HOME_WORLD_WOOD_EXCHANGE_EXCEED_LIMIT = 9800;</code>
+     * <code>RET_HOME_FURNITURE_SUITE_EXCEED_LIMIT = 9789;</code>
      */
-    RETCODE_RET_HOME_WORLD_WOOD_EXCHANGE_EXCEED_LIMIT(9800),
+    RET_HOME_FURNITURE_SUITE_EXCEED_LIMIT(9789),
     /**
-     * <code>RETCODE_RET_SUMO_ACTIVITY_STAGE_NOT_OPEN = 10000;</code>
+     * <code>RET_HOME_FURNITURE_CUSTOM_SUITE_EXCEED_LIMIT = 9790;</code>
      */
-    RETCODE_RET_SUMO_ACTIVITY_STAGE_NOT_OPEN(10000),
+    RET_HOME_FURNITURE_CUSTOM_SUITE_EXCEED_LIMIT(9790),
     /**
-     * <code>RETCODE_RET_SUMO_ACTIVITY_SWITCH_TEAM_IN_CD = 10001;</code>
+     * <code>RET_HOME_FURNITURE_CUSTOM_SUITE_INVALID_SURFACE_TYPE = 9791;</code>
      */
-    RETCODE_RET_SUMO_ACTIVITY_SWITCH_TEAM_IN_CD(10001),
+    RET_HOME_FURNITURE_CUSTOM_SUITE_INVALID_SURFACE_TYPE(9791),
     /**
-     * <code>RETCODE_RET_SUMO_ACTIVITY_TEAM_NUM_INCORRECT = 10002;</code>
+     * <code>RET_HOME_BGM_ID_NOT_FOUND = 9792;</code>
      */
-    RETCODE_RET_SUMO_ACTIVITY_TEAM_NUM_INCORRECT(10002),
+    RET_HOME_BGM_ID_NOT_FOUND(9792),
     /**
-     * <code>RETCODE_RET_LUNA_RITE_ACTIVITY_AREA_ID_ERROR = 10004;</code>
+     * <code>RET_HOME_BGM_NOT_UNLOCKED = 9793;</code>
      */
-    RETCODE_RET_LUNA_RITE_ACTIVITY_AREA_ID_ERROR(10004),
+    RET_HOME_BGM_NOT_UNLOCKED(9793),
     /**
-     * <code>RETCODE_RET_LUNA_RITE_ACTIVITY_BATTLE_NOT_FINISH = 10005;</code>
+     * <code>RET_HOME_BGM_FURNITURE_NOT_FOUND = 9794;</code>
      */
-    RETCODE_RET_LUNA_RITE_ACTIVITY_BATTLE_NOT_FINISH(10005),
+    RET_HOME_BGM_FURNITURE_NOT_FOUND(9794),
     /**
-     * <code>RETCODE_RET_LUNA_RITE_ACTIVITY_ALREADY_SACRIFICE = 10006;</code>
+     * <code>RET_HOME_BGM_NOT_SUPPORT_BY_CUR_SCENE = 9795;</code>
      */
-    RETCODE_RET_LUNA_RITE_ACTIVITY_ALREADY_SACRIFICE(10006),
+    RET_HOME_BGM_NOT_SUPPORT_BY_CUR_SCENE(9795),
     /**
-     * <code>RETCODE_RET_LUNA_RITE_ACTIVITY_ALREADY_TAKE_REWARD = 10007;</code>
+     * <code>RET_HOME_LIMITED_SHOP_GOODS_DISABLE = 9796;</code>
      */
-    RETCODE_RET_LUNA_RITE_ACTIVITY_ALREADY_TAKE_REWARD(10007),
+    RET_HOME_LIMITED_SHOP_GOODS_DISABLE(9796),
     /**
-     * <code>RETCODE_RET_LUNA_RITE_ACTIVITY_SACRIFICE_NOT_ENOUGH = 10008;</code>
+     * <code>RET_HOME_WORLD_WOOD_MATERIAL_EMPTY = 9797;</code>
      */
-    RETCODE_RET_LUNA_RITE_ACTIVITY_SACRIFICE_NOT_ENOUGH(10008),
+    RET_HOME_WORLD_WOOD_MATERIAL_EMPTY(9797),
     /**
-     * <code>RETCODE_RET_LUNA_RITE_ACTIVITY_SEARCHING_COND_NOT_MEET = 10009;</code>
+     * <code>RET_HOME_WORLD_WOOD_MATERIAL_NOT_FOUND = 9798;</code>
      */
-    RETCODE_RET_LUNA_RITE_ACTIVITY_SEARCHING_COND_NOT_MEET(10009),
+    RET_HOME_WORLD_WOOD_MATERIAL_NOT_FOUND(9798),
     /**
-     * <code>RETCODE_RET_DIG_GADGET_CONFIG_ID_NOT_MATCH = 10015;</code>
+     * <code>RET_HOME_WORLD_WOOD_MATERIAL_COUNT_INVALID = 9799;</code>
      */
-    RETCODE_RET_DIG_GADGET_CONFIG_ID_NOT_MATCH(10015),
+    RET_HOME_WORLD_WOOD_MATERIAL_COUNT_INVALID(9799),
     /**
-     * <code>RETCODE_RET_DIG_FIND_NEAREST_POS_FAIL = 10016;</code>
+     * <code>RET_HOME_WORLD_WOOD_EXCHANGE_EXCEED_LIMIT = 9800;</code>
      */
-    RETCODE_RET_DIG_FIND_NEAREST_POS_FAIL(10016),
+    RET_HOME_WORLD_WOOD_EXCHANGE_EXCEED_LIMIT(9800),
     /**
-     * <code>RETCODE_RET_MUSIC_GAME_LEVEL_NOT_OPEN = 10021;</code>
+     * <code>RET_HOME_BLUEPRINT_SEARCH_SELF = 9801;</code>
      */
-    RETCODE_RET_MUSIC_GAME_LEVEL_NOT_OPEN(10021),
+    RET_HOME_BLUEPRINT_SEARCH_SELF(9801),
     /**
-     * <code>RETCODE_RET_MUSIC_GAME_LEVEL_NOT_UNLOCK = 10022;</code>
+     * <code>RET_HOME_BLUEPRINT_SHARE_CODE_INVALID = 9802;</code>
      */
-    RETCODE_RET_MUSIC_GAME_LEVEL_NOT_UNLOCK(10022),
+    RET_HOME_BLUEPRINT_SHARE_CODE_INVALID(9802),
     /**
-     * <code>RETCODE_RET_MUSIC_GAME_LEVEL_NOT_STARTED = 10023;</code>
+     * <code>RET_HOME_BLUEPRINT_NOT_EXIST = 9803;</code>
      */
-    RETCODE_RET_MUSIC_GAME_LEVEL_NOT_STARTED(10023),
+    RET_HOME_BLUEPRINT_NOT_EXIST(9803),
     /**
-     * <code>RETCODE_RET_MUSIC_GAME_LEVEL_CONFIG_NOT_FOUND = 10024;</code>
+     * <code>RET_HOME_BLUEPRINT_SLOT_HAS_EXIST_SHARE_CODE = 9804;</code>
      */
-    RETCODE_RET_MUSIC_GAME_LEVEL_CONFIG_NOT_FOUND(10024),
+    RET_HOME_BLUEPRINT_SLOT_HAS_EXIST_SHARE_CODE(9804),
     /**
-     * <code>RETCODE_RET_MUSIC_GAME_LEVEL_ID_NOT_MATCH = 10025;</code>
+     * <code>RET_HOME_BLUEPRINT_SLOT_NOT_EXIST_SHARE_CODE = 9805;</code>
      */
-    RETCODE_RET_MUSIC_GAME_LEVEL_ID_NOT_MATCH(10025),
+    RET_HOME_BLUEPRINT_SLOT_NOT_EXIST_SHARE_CODE(9805),
     /**
-     * <code>RETCODE_RET_ROGUELIKE_COIN_A_NOT_ENOUGH = 10031;</code>
+     * <code>RET_HOME_BLUEPRINT_CAN_NOT_CREATE_IN_AUDIT = 9806;</code>
      */
-    RETCODE_RET_ROGUELIKE_COIN_A_NOT_ENOUGH(10031),
+    RET_HOME_BLUEPRINT_CAN_NOT_CREATE_IN_AUDIT(9806),
     /**
-     * <code>RETCODE_RET_ROGUELIKE_COIN_B_NOT_ENOUGH = 10032;</code>
+     * <code>RET_HOME_BLOCK_NOT_UNLOCKED = 9807;</code>
      */
-    RETCODE_RET_ROGUELIKE_COIN_B_NOT_ENOUGH(10032),
+    RET_HOME_BLOCK_NOT_UNLOCKED(9807),
     /**
-     * <code>RETCODE_RET_ROGUELIKE_COIN_C_NOT_ENOUGH = 10033;</code>
+     * <code>RET_HOME_BLUEPRINT_CREATE_CD = 9808;</code>
      */
-    RETCODE_RET_ROGUELIKE_COIN_C_NOT_ENOUGH(10033),
+    RET_HOME_BLUEPRINT_CREATE_CD(9808),
     /**
-     * <code>RETCODE_RET_ROGUELIKE_COIN_A_EXCEED_LIMIT = 10034;</code>
+     * <code>RET_HOME_BLUEPRINT_SET_OPTION_CD = 9809;</code>
      */
-    RETCODE_RET_ROGUELIKE_COIN_A_EXCEED_LIMIT(10034),
+    RET_HOME_BLUEPRINT_SET_OPTION_CD(9809),
     /**
-     * <code>RETCODE_RET_ROGUELIKE_COIN_B_EXCEED_LIMIT = 10035;</code>
+     * <code>RET_HOME_BLUEPRINT_NOT_ALLOW_FRIEND_COPY = 9810;</code>
      */
-    RETCODE_RET_ROGUELIKE_COIN_B_EXCEED_LIMIT(10035),
+    RET_HOME_BLUEPRINT_NOT_ALLOW_FRIEND_COPY(9810),
     /**
-     * <code>RETCODE_RET_ROGUELIKE_COIN_C_EXCEED_LIMIT = 10036;</code>
+     * <code>RET_HOME_FURNITURE_POS_UNDER_DIE_Y = 9811;</code>
      */
-    RETCODE_RET_ROGUELIKE_COIN_C_EXCEED_LIMIT(10036),
+    RET_HOME_FURNITURE_POS_UNDER_DIE_Y(9811),
     /**
-     * <code>RETCODE_RET_ROGUELIKE_RUNE_COUNT_NOT_ENOUGH = 10037;</code>
+     * <code>RET_HOME_BLUEPRINT_GEN_SHARE_CODE_FAIL = 9812;</code>
      */
-    RETCODE_RET_ROGUELIKE_RUNE_COUNT_NOT_ENOUGH(10037),
+    RET_HOME_BLUEPRINT_GEN_SHARE_CODE_FAIL(9812),
     /**
-     * <code>RETCODE_RET_ROGUELIKE_NOT_IN_ROGUE_DUNGEON = 10038;</code>
+     * <code>RET_HOME_BLUEPRINT_SEARCH_CD = 9813;</code>
      */
-    RETCODE_RET_ROGUELIKE_NOT_IN_ROGUE_DUNGEON(10038),
+    RET_HOME_BLUEPRINT_SEARCH_CD(9813),
     /**
-     * <code>RETCODE_RET_ROGUELIKE_CELL_NOT_FOUND = 10039;</code>
+     * <code>RET_HOME_BLUEPRINT_PREVIEW_CD = 9814;</code>
      */
-    RETCODE_RET_ROGUELIKE_CELL_NOT_FOUND(10039),
+    RET_HOME_BLUEPRINT_PREVIEW_CD(9814),
     /**
-     * <code>RETCODE_RET_ROGUELIKE_CELL_TYPE_INCORRECT = 10040;</code>
+     * <code>RET_HOME_BLUEPRINT_PREVIEW_SCENE_NOT_MATCH = 9815;</code>
      */
-    RETCODE_RET_ROGUELIKE_CELL_TYPE_INCORRECT(10040),
+    RET_HOME_BLUEPRINT_PREVIEW_SCENE_NOT_MATCH(9815),
     /**
-     * <code>RETCODE_RET_ROGUELIKE_CELL_ALREADY_FINISHED = 10041;</code>
+     * <code>RET_SUMO_ACTIVITY_STAGE_NOT_OPEN = 10000;</code>
      */
-    RETCODE_RET_ROGUELIKE_CELL_ALREADY_FINISHED(10041),
+    RET_SUMO_ACTIVITY_STAGE_NOT_OPEN(10000),
     /**
-     * <code>RETCODE_RET_ROGUELIKE_DUNGEON_HAVE_UNFINISHED_PROGRESS = 10042;</code>
+     * <code>RET_SUMO_ACTIVITY_SWITCH_TEAM_IN_CD = 10001;</code>
      */
-    RETCODE_RET_ROGUELIKE_DUNGEON_HAVE_UNFINISHED_PROGRESS(10042),
+    RET_SUMO_ACTIVITY_SWITCH_TEAM_IN_CD(10001),
     /**
-     * <code>RETCODE_RET_ROGUELIKE_STAGE_NOT_FINISHED = 10043;</code>
+     * <code>RET_SUMO_ACTIVITY_TEAM_NUM_INCORRECT = 10002;</code>
      */
-    RETCODE_RET_ROGUELIKE_STAGE_NOT_FINISHED(10043),
+    RET_SUMO_ACTIVITY_TEAM_NUM_INCORRECT(10002),
     /**
-     * <code>RETCODE_RET_ROGUELIKE_STAGE_FIRST_PASS_REWARD_HAS_TAKEN = 10045;</code>
+     * <code>RET_LUNA_RITE_ACTIVITY_AREA_ID_ERROR = 10004;</code>
      */
-    RETCODE_RET_ROGUELIKE_STAGE_FIRST_PASS_REWARD_HAS_TAKEN(10045),
+    RET_LUNA_RITE_ACTIVITY_AREA_ID_ERROR(10004),
     /**
-     * <code>RETCODE_RET_ROGUELIKE_ACTIVITY_CONTENT_CLOSED = 10046;</code>
+     * <code>RET_LUNA_RITE_ACTIVITY_BATTLE_NOT_FINISH = 10005;</code>
      */
-    RETCODE_RET_ROGUELIKE_ACTIVITY_CONTENT_CLOSED(10046),
+    RET_LUNA_RITE_ACTIVITY_BATTLE_NOT_FINISH(10005),
     /**
-     * <code>RETCODE_RET_ROGUELIKE_DUNGEON_PRE_QUEST_NOT_FINISHED = 10047;</code>
+     * <code>RET_LUNA_RITE_ACTIVITY_ALREADY_SACRIFICE = 10006;</code>
      */
-    RETCODE_RET_ROGUELIKE_DUNGEON_PRE_QUEST_NOT_FINISHED(10047),
+    RET_LUNA_RITE_ACTIVITY_ALREADY_SACRIFICE(10006),
     /**
-     * <code>RETCODE_RET_ROGUELIKE_DUNGEON_NOT_OPEN = 10048;</code>
+     * <code>RET_LUNA_RITE_ACTIVITY_ALREADY_TAKE_REWARD = 10007;</code>
      */
-    RETCODE_RET_ROGUELIKE_DUNGEON_NOT_OPEN(10048),
+    RET_LUNA_RITE_ACTIVITY_ALREADY_TAKE_REWARD(10007),
     /**
-     * <code>RETCODE_RET_ROGUELIKE_SPRINT_IS_BANNED = 10049;</code>
+     * <code>RET_LUNA_RITE_ACTIVITY_SACRIFICE_NOT_ENOUGH = 10008;</code>
      */
-    RETCODE_RET_ROGUELIKE_SPRINT_IS_BANNED(10049),
+    RET_LUNA_RITE_ACTIVITY_SACRIFICE_NOT_ENOUGH(10008),
     /**
-     * <code>RETCODE_RET_ROGUELIKE_DUNGEON_PRE_STAGE_NOT_FINISHED = 10050;</code>
+     * <code>RET_LUNA_RITE_ACTIVITY_SEARCHING_COND_NOT_MEET = 10009;</code>
      */
-    RETCODE_RET_ROGUELIKE_DUNGEON_PRE_STAGE_NOT_FINISHED(10050),
+    RET_LUNA_RITE_ACTIVITY_SEARCHING_COND_NOT_MEET(10009),
     /**
-     * <code>RETCODE_RET_ROGUELIKE_ALL_AVATAR_DIE_CANNOT_RESUME = 10051;</code>
+     * <code>RET_DIG_GADGET_CONFIG_ID_NOT_MATCH = 10015;</code>
      */
-    RETCODE_RET_ROGUELIKE_ALL_AVATAR_DIE_CANNOT_RESUME(10051),
+    RET_DIG_GADGET_CONFIG_ID_NOT_MATCH(10015),
     /**
-     * <code>RETCODE_RET_PLANT_FLOWER_ALREADY_TAKE_SEED = 10056;</code>
+     * <code>RET_DIG_FIND_NEAREST_POS_FAIL = 10016;</code>
      */
-    RETCODE_RET_PLANT_FLOWER_ALREADY_TAKE_SEED(10056),
+    RET_DIG_FIND_NEAREST_POS_FAIL(10016),
     /**
-     * <code>RETCODE_RET_PLANT_FLOWER_FRIEND_HAVE_FLOWER_LIMIT = 10057;</code>
+     * <code>RET_MUSIC_GAME_LEVEL_NOT_OPEN = 10021;</code>
      */
-    RETCODE_RET_PLANT_FLOWER_FRIEND_HAVE_FLOWER_LIMIT(10057),
+    RET_MUSIC_GAME_LEVEL_NOT_OPEN(10021),
     /**
-     * <code>RETCODE_RET_PLANT_FLOWER_CAN_GIVE_FLOWER_NOT_ENOUGH = 10058;</code>
+     * <code>RET_MUSIC_GAME_LEVEL_NOT_UNLOCK = 10022;</code>
      */
-    RETCODE_RET_PLANT_FLOWER_CAN_GIVE_FLOWER_NOT_ENOUGH(10058),
+    RET_MUSIC_GAME_LEVEL_NOT_UNLOCK(10022),
     /**
-     * <code>RETCODE_RET_PLANT_FLOWER_WISH_FLOWER_KINDS_LIMIT = 10059;</code>
+     * <code>RET_MUSIC_GAME_LEVEL_NOT_STARTED = 10023;</code>
      */
-    RETCODE_RET_PLANT_FLOWER_WISH_FLOWER_KINDS_LIMIT(10059),
+    RET_MUSIC_GAME_LEVEL_NOT_STARTED(10023),
     /**
-     * <code>RETCODE_RET_PLANT_FLOWER_HAVE_FLOWER_NOT_ENOUGH = 10060;</code>
+     * <code>RET_MUSIC_GAME_LEVEL_CONFIG_NOT_FOUND = 10024;</code>
      */
-    RETCODE_RET_PLANT_FLOWER_HAVE_FLOWER_NOT_ENOUGH(10060),
+    RET_MUSIC_GAME_LEVEL_CONFIG_NOT_FOUND(10024),
     /**
-     * <code>RETCODE_RET_PLANT_FLOWER_FLOWER_COMBINATION_INVALID = 10061;</code>
+     * <code>RET_MUSIC_GAME_LEVEL_ID_NOT_MATCH = 10025;</code>
      */
-    RETCODE_RET_PLANT_FLOWER_FLOWER_COMBINATION_INVALID(10061),
+    RET_MUSIC_GAME_LEVEL_ID_NOT_MATCH(10025),
     /**
-     * <code>RETCODE_RET_HACHI_DUNGEON_NOT_VALID = 10052;</code>
+     * <code>RET_ROGUELIKE_COIN_A_NOT_ENOUGH = 10031;</code>
      */
-    RETCODE_RET_HACHI_DUNGEON_NOT_VALID(10052),
+    RET_ROGUELIKE_COIN_A_NOT_ENOUGH(10031),
     /**
-     * <code>RETCODE_RET_HACHI_DUNGEON_STAGE_NOT_OPEN = 10053;</code>
+     * <code>RET_ROGUELIKE_COIN_B_NOT_ENOUGH = 10032;</code>
      */
-    RETCODE_RET_HACHI_DUNGEON_STAGE_NOT_OPEN(10053),
+    RET_ROGUELIKE_COIN_B_NOT_ENOUGH(10032),
     /**
-     * <code>RETCODE_RET_HACHI_DUNGEON_TEAMMATE_NOT_PASS = 10054;</code>
+     * <code>RET_ROGUELIKE_COIN_C_NOT_ENOUGH = 10033;</code>
      */
-    RETCODE_RET_HACHI_DUNGEON_TEAMMATE_NOT_PASS(10054),
+    RET_ROGUELIKE_COIN_C_NOT_ENOUGH(10033),
     /**
-     * <code>RETCODE_RET_WINTER_CAMP_COIN_A_NOT_ENOUGH = 10071;</code>
+     * <code>RET_ROGUELIKE_COIN_A_EXCEED_LIMIT = 10034;</code>
      */
-    RETCODE_RET_WINTER_CAMP_COIN_A_NOT_ENOUGH(10071),
+    RET_ROGUELIKE_COIN_A_EXCEED_LIMIT(10034),
     /**
-     * <code>RETCODE_RET_WINTER_CAMP_COIN_B_NOT_ENOUGH = 10072;</code>
+     * <code>RET_ROGUELIKE_COIN_B_EXCEED_LIMIT = 10035;</code>
      */
-    RETCODE_RET_WINTER_CAMP_COIN_B_NOT_ENOUGH(10072),
+    RET_ROGUELIKE_COIN_B_EXCEED_LIMIT(10035),
     /**
-     * <code>RETCODE_RET_WINTER_CAMP_COIN_A_EXCEED_LIMIT = 10073;</code>
+     * <code>RET_ROGUELIKE_COIN_C_EXCEED_LIMIT = 10036;</code>
      */
-    RETCODE_RET_WINTER_CAMP_COIN_A_EXCEED_LIMIT(10073),
+    RET_ROGUELIKE_COIN_C_EXCEED_LIMIT(10036),
     /**
-     * <code>RETCODE_RET_WINTER_CAMP_COIN_B_EXCEED_LIMIT = 10074;</code>
+     * <code>RET_ROGUELIKE_RUNE_COUNT_NOT_ENOUGH = 10037;</code>
      */
-    RETCODE_RET_WINTER_CAMP_COIN_B_EXCEED_LIMIT(10074),
+    RET_ROGUELIKE_RUNE_COUNT_NOT_ENOUGH(10037),
     /**
-     * <code>RETCODE_RET_WINTER_CAMP_WISH_ID_INVALID = 10075;</code>
+     * <code>RET_ROGUELIKE_NOT_IN_ROGUE_DUNGEON = 10038;</code>
      */
-    RETCODE_RET_WINTER_CAMP_WISH_ID_INVALID(10075),
+    RET_ROGUELIKE_NOT_IN_ROGUE_DUNGEON(10038),
     /**
-     * <code>RETCODE_RET_WINTER_CAMP_NOT_FOUND_RECV_ITEM_DATA = 10076;</code>
+     * <code>RET_ROGUELIKE_CELL_NOT_FOUND = 10039;</code>
      */
-    RETCODE_RET_WINTER_CAMP_NOT_FOUND_RECV_ITEM_DATA(10076),
+    RET_ROGUELIKE_CELL_NOT_FOUND(10039),
     /**
-     * <code>RETCODE_RET_WINTER_CAMP_FRIEND_ITEM_COUNT_OVERFLOW = 10077;</code>
+     * <code>RET_ROGUELIKE_CELL_TYPE_INCORRECT = 10040;</code>
      */
-    RETCODE_RET_WINTER_CAMP_FRIEND_ITEM_COUNT_OVERFLOW(10077),
+    RET_ROGUELIKE_CELL_TYPE_INCORRECT(10040),
     /**
-     * <code>RETCODE_RET_WINTER_CAMP_SELECT_ITEM_DATA_INVALID = 10078;</code>
+     * <code>RET_ROGUELIKE_CELL_ALREADY_FINISHED = 10041;</code>
      */
-    RETCODE_RET_WINTER_CAMP_SELECT_ITEM_DATA_INVALID(10078),
+    RET_ROGUELIKE_CELL_ALREADY_FINISHED(10041),
     /**
-     * <code>RETCODE_RET_WINTER_CAMP_ITEM_LIST_EMPTY = 10079;</code>
+     * <code>RET_ROGUELIKE_DUNGEON_HAVE_UNFINISHED_PROGRESS = 10042;</code>
      */
-    RETCODE_RET_WINTER_CAMP_ITEM_LIST_EMPTY(10079),
+    RET_ROGUELIKE_DUNGEON_HAVE_UNFINISHED_PROGRESS(10042),
     /**
-     * <code>RETCODE_RET_WINTER_CAMP_REWARD_ALREADY_TAKEN = 10080;</code>
+     * <code>RET_ROGUELIKE_STAGE_NOT_FINISHED = 10043;</code>
      */
-    RETCODE_RET_WINTER_CAMP_REWARD_ALREADY_TAKEN(10080),
+    RET_ROGUELIKE_STAGE_NOT_FINISHED(10043),
     /**
-     * <code>RETCODE_RET_WINTER_CAMP_STAGE_NOT_FINISH = 10081;</code>
+     * <code>RET_ROGUELIKE_STAGE_FIRST_PASS_REWARD_HAS_TAKEN = 10045;</code>
      */
-    RETCODE_RET_WINTER_CAMP_STAGE_NOT_FINISH(10081),
+    RET_ROGUELIKE_STAGE_FIRST_PASS_REWARD_HAS_TAKEN(10045),
     /**
-     * <code>RETCODE_RET_WINTER_CAMP_GADGET_INVALID = 10082;</code>
+     * <code>RET_ROGUELIKE_ACTIVITY_CONTENT_CLOSED = 10046;</code>
      */
-    RETCODE_RET_WINTER_CAMP_GADGET_INVALID(10082),
+    RET_ROGUELIKE_ACTIVITY_CONTENT_CLOSED(10046),
     /**
-     * <code>RETCODE_RET_LANTERN_RITE_COIN_A_NOT_ENOUGH = 10090;</code>
+     * <code>RET_ROGUELIKE_DUNGEON_PRE_QUEST_NOT_FINISHED = 10047;</code>
      */
-    RETCODE_RET_LANTERN_RITE_COIN_A_NOT_ENOUGH(10090),
+    RET_ROGUELIKE_DUNGEON_PRE_QUEST_NOT_FINISHED(10047),
     /**
-     * <code>RETCODE_RET_LANTERN_RITE_COIN_B_NOT_ENOUGH = 10091;</code>
+     * <code>RET_ROGUELIKE_DUNGEON_NOT_OPEN = 10048;</code>
      */
-    RETCODE_RET_LANTERN_RITE_COIN_B_NOT_ENOUGH(10091),
+    RET_ROGUELIKE_DUNGEON_NOT_OPEN(10048),
     /**
-     * <code>RETCODE_RET_LANTERN_RITE_COIN_C_NOT_ENOUGH = 10092;</code>
+     * <code>RET_ROGUELIKE_SPRINT_IS_BANNED = 10049;</code>
      */
-    RETCODE_RET_LANTERN_RITE_COIN_C_NOT_ENOUGH(10092),
+    RET_ROGUELIKE_SPRINT_IS_BANNED(10049),
     /**
-     * <code>RETCODE_RET_LANTERN_RITE_COIN_A_EXCEED_LIMIT = 10093;</code>
+     * <code>RET_ROGUELIKE_DUNGEON_PRE_STAGE_NOT_FINISHED = 10050;</code>
      */
-    RETCODE_RET_LANTERN_RITE_COIN_A_EXCEED_LIMIT(10093),
+    RET_ROGUELIKE_DUNGEON_PRE_STAGE_NOT_FINISHED(10050),
     /**
-     * <code>RETCODE_RET_LANTERN_RITE_COIN_B_EXCEED_LIMIT = 10094;</code>
+     * <code>RET_ROGUELIKE_ALL_AVATAR_DIE_CANNOT_RESUME = 10051;</code>
      */
-    RETCODE_RET_LANTERN_RITE_COIN_B_EXCEED_LIMIT(10094),
+    RET_ROGUELIKE_ALL_AVATAR_DIE_CANNOT_RESUME(10051),
     /**
-     * <code>RETCODE_RET_LANTERN_RITE_COIN_C_EXCEED_LIMIT = 10095;</code>
+     * <code>RET_PLANT_FLOWER_ALREADY_TAKE_SEED = 10056;</code>
      */
-    RETCODE_RET_LANTERN_RITE_COIN_C_EXCEED_LIMIT(10095),
+    RET_PLANT_FLOWER_ALREADY_TAKE_SEED(10056),
     /**
-     * <code>RETCODE_RET_LANTERN_RITE_PROJECTION_CONTENT_CLOSED = 10096;</code>
+     * <code>RET_PLANT_FLOWER_FRIEND_HAVE_FLOWER_LIMIT = 10057;</code>
      */
-    RETCODE_RET_LANTERN_RITE_PROJECTION_CONTENT_CLOSED(10096),
+    RET_PLANT_FLOWER_FRIEND_HAVE_FLOWER_LIMIT(10057),
     /**
-     * <code>RETCODE_RET_LANTERN_RITE_PROJECTION_CAN_NOT_START = 10097;</code>
+     * <code>RET_PLANT_FLOWER_CAN_GIVE_FLOWER_NOT_ENOUGH = 10058;</code>
      */
-    RETCODE_RET_LANTERN_RITE_PROJECTION_CAN_NOT_START(10097),
+    RET_PLANT_FLOWER_CAN_GIVE_FLOWER_NOT_ENOUGH(10058),
     /**
-     * <code>RETCODE_RET_LANTERN_RITE_DUNGEON_NOT_OPEN = 10098;</code>
+     * <code>RET_PLANT_FLOWER_WISH_FLOWER_KINDS_LIMIT = 10059;</code>
      */
-    RETCODE_RET_LANTERN_RITE_DUNGEON_NOT_OPEN(10098),
+    RET_PLANT_FLOWER_WISH_FLOWER_KINDS_LIMIT(10059),
     /**
-     * <code>RETCODE_RET_LANTERN_RITE_HAS_TAKEN_SKIN_REWARD = 10099;</code>
+     * <code>RET_PLANT_FLOWER_HAVE_FLOWER_NOT_ENOUGH = 10060;</code>
      */
-    RETCODE_RET_LANTERN_RITE_HAS_TAKEN_SKIN_REWARD(10099),
+    RET_PLANT_FLOWER_HAVE_FLOWER_NOT_ENOUGH(10060),
     /**
-     * <code>RETCODE_RET_LANTERN_RITE_NOT_FINISHED_SKIN_WATCHERS = 10100;</code>
+     * <code>RET_PLANT_FLOWER_FLOWER_COMBINATION_INVALID = 10061;</code>
      */
-    RETCODE_RET_LANTERN_RITE_NOT_FINISHED_SKIN_WATCHERS(10100),
+    RET_PLANT_FLOWER_FLOWER_COMBINATION_INVALID(10061),
     /**
-     * <code>RETCODE_RET_LANTERN_RITE_FIREWORKS_CONTENT_CLOSED = 10101;</code>
+     * <code>RET_HACHI_DUNGEON_NOT_VALID = 10052;</code>
      */
-    RETCODE_RET_LANTERN_RITE_FIREWORKS_CONTENT_CLOSED(10101),
+    RET_HACHI_DUNGEON_NOT_VALID(10052),
     /**
-     * <code>RETCODE_RET_LANTERN_RITE_FIREWORKS_CHALLENGE_NOT_START = 10102;</code>
+     * <code>RET_HACHI_DUNGEON_STAGE_NOT_OPEN = 10053;</code>
      */
-    RETCODE_RET_LANTERN_RITE_FIREWORKS_CHALLENGE_NOT_START(10102),
+    RET_HACHI_DUNGEON_STAGE_NOT_OPEN(10053),
     /**
-     * <code>RETCODE_RET_LANTERN_RITE_FIREWORKS_REFORM_PARAM_ERROR = 10103;</code>
+     * <code>RET_HACHI_DUNGEON_TEAMMATE_NOT_PASS = 10054;</code>
      */
-    RETCODE_RET_LANTERN_RITE_FIREWORKS_REFORM_PARAM_ERROR(10103),
+    RET_HACHI_DUNGEON_TEAMMATE_NOT_PASS(10054),
     /**
-     * <code>RETCODE_RET_LANTERN_RITE_FIREWORKS_REFORM_SKILL_LOCK = 10104;</code>
+     * <code>RET_WINTER_CAMP_COIN_A_NOT_ENOUGH = 10071;</code>
      */
-    RETCODE_RET_LANTERN_RITE_FIREWORKS_REFORM_SKILL_LOCK(10104),
+    RET_WINTER_CAMP_COIN_A_NOT_ENOUGH(10071),
     /**
-     * <code>RETCODE_RET_LANTERN_RITE_FIREWORKS_REFORM_STAMINA_NOT_ENOUGH = 10105;</code>
+     * <code>RET_WINTER_CAMP_COIN_B_NOT_ENOUGH = 10072;</code>
      */
-    RETCODE_RET_LANTERN_RITE_FIREWORKS_REFORM_STAMINA_NOT_ENOUGH(10105),
+    RET_WINTER_CAMP_COIN_B_NOT_ENOUGH(10072),
     /**
-     * <code>RETCODE_RET_POTION_ACTIVITY_STAGE_NOT_OPEN = 10110;</code>
+     * <code>RET_WINTER_CAMP_COIN_A_EXCEED_LIMIT = 10073;</code>
      */
-    RETCODE_RET_POTION_ACTIVITY_STAGE_NOT_OPEN(10110),
+    RET_WINTER_CAMP_COIN_A_EXCEED_LIMIT(10073),
     /**
-     * <code>RETCODE_RET_POTION_ACTIVITY_LEVEL_HAVE_PASS = 10111;</code>
+     * <code>RET_WINTER_CAMP_COIN_B_EXCEED_LIMIT = 10074;</code>
      */
-    RETCODE_RET_POTION_ACTIVITY_LEVEL_HAVE_PASS(10111),
+    RET_WINTER_CAMP_COIN_B_EXCEED_LIMIT(10074),
     /**
-     * <code>RETCODE_RET_POTION_ACTIVITY_TEAM_NUM_INCORRECT = 10112;</code>
+     * <code>RET_WINTER_CAMP_WISH_ID_INVALID = 10075;</code>
      */
-    RETCODE_RET_POTION_ACTIVITY_TEAM_NUM_INCORRECT(10112),
+    RET_WINTER_CAMP_WISH_ID_INVALID(10075),
     /**
-     * <code>RETCODE_RET_POTION_ACTIVITY_AVATAR_IN_CD = 10113;</code>
+     * <code>RET_WINTER_CAMP_NOT_FOUND_RECV_ITEM_DATA = 10076;</code>
      */
-    RETCODE_RET_POTION_ACTIVITY_AVATAR_IN_CD(10113),
+    RET_WINTER_CAMP_NOT_FOUND_RECV_ITEM_DATA(10076),
     /**
-     * <code>RETCODE_RET_POTION_ACTIVITY_BUFF_IN_CD = 10114;</code>
+     * <code>RET_WINTER_CAMP_FRIEND_ITEM_COUNT_OVERFLOW = 10077;</code>
      */
-    RETCODE_RET_POTION_ACTIVITY_BUFF_IN_CD(10114),
+    RET_WINTER_CAMP_FRIEND_ITEM_COUNT_OVERFLOW(10077),
     /**
-     * <code>RETCODE_RET_IRODORI_POETRY_INVALID_LINE_ID = 10120;</code>
+     * <code>RET_WINTER_CAMP_SELECT_ITEM_DATA_INVALID = 10078;</code>
      */
-    RETCODE_RET_IRODORI_POETRY_INVALID_LINE_ID(10120),
+    RET_WINTER_CAMP_SELECT_ITEM_DATA_INVALID(10078),
     /**
-     * <code>RETCODE_RET_IRODORI_POETRY_INVALID_THEME_ID = 10121;</code>
+     * <code>RET_WINTER_CAMP_ITEM_LIST_EMPTY = 10079;</code>
      */
-    RETCODE_RET_IRODORI_POETRY_INVALID_THEME_ID(10121),
+    RET_WINTER_CAMP_ITEM_LIST_EMPTY(10079),
     /**
-     * <code>RETCODE_RET_IRODORI_POETRY_NOT_GET_ALL_INSPIRATION = 10122;</code>
+     * <code>RET_WINTER_CAMP_REWARD_ALREADY_TAKEN = 10080;</code>
      */
-    RETCODE_RET_IRODORI_POETRY_NOT_GET_ALL_INSPIRATION(10122),
+    RET_WINTER_CAMP_REWARD_ALREADY_TAKEN(10080),
     /**
-     * <code>RETCODE_RET_IRODORI_POETRY_INSPIRATION_REACH_LIMIE = 10123;</code>
+     * <code>RET_WINTER_CAMP_STAGE_NOT_FINISH = 10081;</code>
      */
-    RETCODE_RET_IRODORI_POETRY_INSPIRATION_REACH_LIMIE(10123),
+    RET_WINTER_CAMP_STAGE_NOT_FINISH(10081),
     /**
-     * <code>RETCODE_RET_IRODORI_POETRY_ENTITY_ALREADY_SCANNED = 10124;</code>
+     * <code>RET_WINTER_CAMP_GADGET_INVALID = 10082;</code>
      */
-    RETCODE_RET_IRODORI_POETRY_ENTITY_ALREADY_SCANNED(10124),
+    RET_WINTER_CAMP_GADGET_INVALID(10082),
     /**
-     * <code>RETCODE_RET_ACTIVITY_BANNER_ALREADY_CLEARED = 10300;</code>
+     * <code>RET_LANTERN_RITE_COIN_A_NOT_ENOUGH = 10090;</code>
      */
-    RETCODE_RET_ACTIVITY_BANNER_ALREADY_CLEARED(10300),
+    RET_LANTERN_RITE_COIN_A_NOT_ENOUGH(10090),
     /**
-     * <code>RETCODE_RET_IRODORI_CHESS_NOT_OPEN = 10301;</code>
+     * <code>RET_LANTERN_RITE_COIN_B_NOT_ENOUGH = 10091;</code>
      */
-    RETCODE_RET_IRODORI_CHESS_NOT_OPEN(10301),
+    RET_LANTERN_RITE_COIN_B_NOT_ENOUGH(10091),
     /**
-     * <code>RETCODE_RET_IRODORI_CHESS_LEVEL_NOT_OPEN = 10302;</code>
+     * <code>RET_LANTERN_RITE_COIN_C_NOT_ENOUGH = 10092;</code>
      */
-    RETCODE_RET_IRODORI_CHESS_LEVEL_NOT_OPEN(10302),
+    RET_LANTERN_RITE_COIN_C_NOT_ENOUGH(10092),
     /**
-     * <code>RETCODE_RET_IRODORI_CHESS_MAP_NOT_OPEN = 10303;</code>
+     * <code>RET_LANTERN_RITE_COIN_A_EXCEED_LIMIT = 10093;</code>
      */
-    RETCODE_RET_IRODORI_CHESS_MAP_NOT_OPEN(10303),
+    RET_LANTERN_RITE_COIN_A_EXCEED_LIMIT(10093),
     /**
-     * <code>RETCODE_RET_IRODORI_CHESS_MAP_CARD_ALREADY_EQUIPED = 10304;</code>
+     * <code>RET_LANTERN_RITE_COIN_B_EXCEED_LIMIT = 10094;</code>
      */
-    RETCODE_RET_IRODORI_CHESS_MAP_CARD_ALREADY_EQUIPED(10304),
+    RET_LANTERN_RITE_COIN_B_EXCEED_LIMIT(10094),
     /**
-     * <code>RETCODE_RET_IRODORI_CHESS_EQUIP_CARD_EXCEED_LIMIT = 10305;</code>
+     * <code>RET_LANTERN_RITE_COIN_C_EXCEED_LIMIT = 10095;</code>
      */
-    RETCODE_RET_IRODORI_CHESS_EQUIP_CARD_EXCEED_LIMIT(10305),
+    RET_LANTERN_RITE_COIN_C_EXCEED_LIMIT(10095),
     /**
-     * <code>RETCODE_RET_IRODORI_CHESS_MAP_CARD_NOT_EQUIPED = 10306;</code>
+     * <code>RET_LANTERN_RITE_PROJECTION_CONTENT_CLOSED = 10096;</code>
      */
-    RETCODE_RET_IRODORI_CHESS_MAP_CARD_NOT_EQUIPED(10306),
+    RET_LANTERN_RITE_PROJECTION_CONTENT_CLOSED(10096),
     /**
-     * <code>RETCODE_RET_IRODORI_CHESS_ENTER_FAIL_CARD_EXCEED_LIMIT = 10307;</code>
+     * <code>RET_LANTERN_RITE_PROJECTION_CAN_NOT_START = 10097;</code>
      */
-    RETCODE_RET_IRODORI_CHESS_ENTER_FAIL_CARD_EXCEED_LIMIT(10307),
+    RET_LANTERN_RITE_PROJECTION_CAN_NOT_START(10097),
     /**
-     * <code>RETCODE_RET_ACTIVITY_FRIEND_HAVE_GIFT_LIMIT = 10310;</code>
+     * <code>RET_LANTERN_RITE_DUNGEON_NOT_OPEN = 10098;</code>
      */
-    RETCODE_RET_ACTIVITY_FRIEND_HAVE_GIFT_LIMIT(10310),
+    RET_LANTERN_RITE_DUNGEON_NOT_OPEN(10098),
     /**
-     * <code>RETCODE_RET_GACHA_ACTIVITY_HAVE_REWARD_LIMIT = 10315;</code>
+     * <code>RET_LANTERN_RITE_HAS_TAKEN_SKIN_REWARD = 10099;</code>
      */
-    RETCODE_RET_GACHA_ACTIVITY_HAVE_REWARD_LIMIT(10315),
+    RET_LANTERN_RITE_HAS_TAKEN_SKIN_REWARD(10099),
     /**
-     * <code>RETCODE_RET_GACHA_ACTIVITY_HAVE_ROBOT_LIMIT = 10316;</code>
+     * <code>RET_LANTERN_RITE_NOT_FINISHED_SKIN_WATCHERS = 10100;</code>
      */
-    RETCODE_RET_GACHA_ACTIVITY_HAVE_ROBOT_LIMIT(10316),
+    RET_LANTERN_RITE_NOT_FINISHED_SKIN_WATCHERS(10100),
     /**
-     * <code>RETCODE_RET_SUMMER_TIME_V2_COIN_EXCEED_LIMIT = 10317;</code>
+     * <code>RET_LANTERN_RITE_FIREWORKS_CONTENT_CLOSED = 10101;</code>
      */
-    RETCODE_RET_SUMMER_TIME_V2_COIN_EXCEED_LIMIT(10317),
+    RET_LANTERN_RITE_FIREWORKS_CONTENT_CLOSED(10101),
     /**
-     * <code>RETCODE_RET_SUMMER_TIME_V2_COIN_NOT_ENOUGH = 10318;</code>
+     * <code>RET_LANTERN_RITE_FIREWORKS_CHALLENGE_NOT_START = 10102;</code>
      */
-    RETCODE_RET_SUMMER_TIME_V2_COIN_NOT_ENOUGH(10318),
+    RET_LANTERN_RITE_FIREWORKS_CHALLENGE_NOT_START(10102),
     /**
-     * <code>RETCODE_RET_SUMMER_TIME_V2_DUNGEON_STAGE_NOT_OPEN = 10319;</code>
+     * <code>RET_LANTERN_RITE_FIREWORKS_REFORM_PARAM_ERROR = 10103;</code>
      */
-    RETCODE_RET_SUMMER_TIME_V2_DUNGEON_STAGE_NOT_OPEN(10319),
+    RET_LANTERN_RITE_FIREWORKS_REFORM_PARAM_ERROR(10103),
     /**
-     * <code>RETCODE_RET_SUMMER_TIME_V2_PREV_DUNGEON_NOT_COMPLETE = 10320;</code>
+     * <code>RET_LANTERN_RITE_FIREWORKS_REFORM_SKILL_LOCK = 10104;</code>
      */
-    RETCODE_RET_SUMMER_TIME_V2_PREV_DUNGEON_NOT_COMPLETE(10320),
+    RET_LANTERN_RITE_FIREWORKS_REFORM_SKILL_LOCK(10104),
     /**
-     * <code>RETCODE_RET_ROGUE_DIARY_AVATAR_DEATH = 10350;</code>
+     * <code>RET_LANTERN_RITE_FIREWORKS_REFORM_STAMINA_NOT_ENOUGH = 10105;</code>
      */
-    RETCODE_RET_ROGUE_DIARY_AVATAR_DEATH(10350),
+    RET_LANTERN_RITE_FIREWORKS_REFORM_STAMINA_NOT_ENOUGH(10105),
     /**
-     * <code>RETCODE_RET_ROGUE_DIARY_AVATAR_TIRED = 10351;</code>
+     * <code>RET_POTION_ACTIVITY_STAGE_NOT_OPEN = 10110;</code>
      */
-    RETCODE_RET_ROGUE_DIARY_AVATAR_TIRED(10351),
+    RET_POTION_ACTIVITY_STAGE_NOT_OPEN(10110),
     /**
-     * <code>RETCODE_RET_ROGUE_DIARY_AVATAR_DUPLICATED = 10352;</code>
+     * <code>RET_POTION_ACTIVITY_LEVEL_HAVE_PASS = 10111;</code>
      */
-    RETCODE_RET_ROGUE_DIARY_AVATAR_DUPLICATED(10352),
+    RET_POTION_ACTIVITY_LEVEL_HAVE_PASS(10111),
     /**
-     * <code>RETCODE_RET_ROGUE_DIARY_COIN_NOT_ENOUGH = 10353;</code>
+     * <code>RET_POTION_ACTIVITY_TEAM_NUM_INCORRECT = 10112;</code>
      */
-    RETCODE_RET_ROGUE_DIARY_COIN_NOT_ENOUGH(10353),
+    RET_POTION_ACTIVITY_TEAM_NUM_INCORRECT(10112),
     /**
-     * <code>RETCODE_RET_ROGUE_DIARY_VIRTUAL_COIN_EXCEED_LIMIT = 10354;</code>
+     * <code>RET_POTION_ACTIVITY_AVATAR_IN_CD = 10113;</code>
      */
-    RETCODE_RET_ROGUE_DIARY_VIRTUAL_COIN_EXCEED_LIMIT(10354),
+    RET_POTION_ACTIVITY_AVATAR_IN_CD(10113),
     /**
-     * <code>RETCODE_RET_ROGUE_DIARY_VIRTUAL_COIN_NOT_ENOUGH = 10355;</code>
+     * <code>RET_POTION_ACTIVITY_BUFF_IN_CD = 10114;</code>
      */
-    RETCODE_RET_ROGUE_DIARY_VIRTUAL_COIN_NOT_ENOUGH(10355),
+    RET_POTION_ACTIVITY_BUFF_IN_CD(10114),
     /**
-     * <code>RETCODE_RET_ROGUE_DIARY_CONTENT_CLOSED = 10366;</code>
+     * <code>RET_IRODORI_POETRY_INVALID_LINE_ID = 10120;</code>
      */
-    RETCODE_RET_ROGUE_DIARY_CONTENT_CLOSED(10366),
+    RET_IRODORI_POETRY_INVALID_LINE_ID(10120),
     /**
-     * <code>RETCODE_RET_GRAVEN_INNOCENCE_COIN_A_NOT_ENOUGH = 10380;</code>
+     * <code>RET_IRODORI_POETRY_INVALID_THEME_ID = 10121;</code>
      */
-    RETCODE_RET_GRAVEN_INNOCENCE_COIN_A_NOT_ENOUGH(10380),
+    RET_IRODORI_POETRY_INVALID_THEME_ID(10121),
     /**
-     * <code>RETCODE_RET_GRAVEN_INNOCENCE_COIN_B_NOT_ENOUGH = 10381;</code>
+     * <code>RET_IRODORI_POETRY_NOT_GET_ALL_INSPIRATION = 10122;</code>
      */
-    RETCODE_RET_GRAVEN_INNOCENCE_COIN_B_NOT_ENOUGH(10381),
+    RET_IRODORI_POETRY_NOT_GET_ALL_INSPIRATION(10122),
     /**
-     * <code>RETCODE_RET_GRAVEN_INNOCENCE_COIN_A_EXCEED_LIMIT = 10382;</code>
+     * <code>RET_IRODORI_POETRY_INSPIRATION_REACH_LIMIE = 10123;</code>
      */
-    RETCODE_RET_GRAVEN_INNOCENCE_COIN_A_EXCEED_LIMIT(10382),
+    RET_IRODORI_POETRY_INSPIRATION_REACH_LIMIE(10123),
     /**
-     * <code>RETCODE_RET_GRAVEN_INNOCENCE_COIN_B_EXCEED_LIMIT = 10383;</code>
+     * <code>RET_IRODORI_POETRY_ENTITY_ALREADY_SCANNED = 10124;</code>
      */
-    RETCODE_RET_GRAVEN_INNOCENCE_COIN_B_EXCEED_LIMIT(10383),
+    RET_IRODORI_POETRY_ENTITY_ALREADY_SCANNED(10124),
     /**
-     * <code>RETCODE_RET_ISLAND_PARTY_STAGE_NOT_OPEN = 10371;</code>
+     * <code>RET_ACTIVITY_BANNER_ALREADY_CLEARED = 10300;</code>
      */
-    RETCODE_RET_ISLAND_PARTY_STAGE_NOT_OPEN(10371),
+    RET_ACTIVITY_BANNER_ALREADY_CLEARED(10300),
     /**
-     * <code>RETCODE_RET_WIND_FIELD_STAGE_NOT_OPEN = 10390;</code>
+     * <code>RET_IRODORI_CHESS_NOT_OPEN = 10301;</code>
      */
-    RETCODE_RET_WIND_FIELD_STAGE_NOT_OPEN(10390),
+    RET_IRODORI_CHESS_NOT_OPEN(10301),
     /**
-     * <code>RETCODE_RET_VINTAGE_CONTENT_CLOSED = 10396;</code>
+     * <code>RET_IRODORI_CHESS_LEVEL_NOT_OPEN = 10302;</code>
      */
-    RETCODE_RET_VINTAGE_CONTENT_CLOSED(10396),
+    RET_IRODORI_CHESS_LEVEL_NOT_OPEN(10302),
     /**
-     * <code>RETCODE_RET_VINTAGE_STORE_CONTENT_FINISHED = 10397;</code>
+     * <code>RET_IRODORI_CHESS_MAP_NOT_OPEN = 10303;</code>
      */
-    RETCODE_RET_VINTAGE_STORE_CONTENT_FINISHED(10397),
+    RET_IRODORI_CHESS_MAP_NOT_OPEN(10303),
     /**
-     * <code>RETCODE_RET_VINTAGE_STORE_ATTR_TOO_SMALL = 10398;</code>
+     * <code>RET_IRODORI_CHESS_MAP_CARD_ALREADY_EQUIPED = 10304;</code>
      */
-    RETCODE_RET_VINTAGE_STORE_ATTR_TOO_SMALL(10398),
+    RET_IRODORI_CHESS_MAP_CARD_ALREADY_EQUIPED(10304),
     /**
-     * <code>RETCODE_RET_VINTAGE_STORE_ATTR_TOO_LARGE = 10399;</code>
+     * <code>RET_IRODORI_CHESS_EQUIP_CARD_EXCEED_LIMIT = 10305;</code>
      */
-    RETCODE_RET_VINTAGE_STORE_ATTR_TOO_LARGE(10399),
+    RET_IRODORI_CHESS_EQUIP_CARD_EXCEED_LIMIT(10305),
     /**
-     * <code>RETCODE_RET_VINTAGE_STORE_CONTENT_INTERRUPT = 10400;</code>
+     * <code>RET_IRODORI_CHESS_MAP_CARD_NOT_EQUIPED = 10306;</code>
      */
-    RETCODE_RET_VINTAGE_STORE_CONTENT_INTERRUPT(10400),
+    RET_IRODORI_CHESS_MAP_CARD_NOT_EQUIPED(10306),
     /**
-     * <code>RETCODE_RET_VINTAGE_VIRTUAL_COIN_NOT_ENOUGH = 10401;</code>
+     * <code>RET_IRODORI_CHESS_ENTER_FAIL_CARD_EXCEED_LIMIT = 10307;</code>
      */
-    RETCODE_RET_VINTAGE_VIRTUAL_COIN_NOT_ENOUGH(10401),
+    RET_IRODORI_CHESS_ENTER_FAIL_CARD_EXCEED_LIMIT(10307),
     /**
-     * <code>RETCODE_RET_VINTAGE_STORE_ATTR_LESS_THAN_ZERO = 10402;</code>
+     * <code>RET_ACTIVITY_FRIEND_HAVE_GIFT_LIMIT = 10310;</code>
      */
-    RETCODE_RET_VINTAGE_STORE_ATTR_LESS_THAN_ZERO(10402),
+    RET_ACTIVITY_FRIEND_HAVE_GIFT_LIMIT(10310),
     /**
-     * <code>RETCODE_RET_NOT_IN_FISHING = 11001;</code>
+     * <code>RET_GACHA_ACTIVITY_HAVE_REWARD_LIMIT = 10315;</code>
      */
-    RETCODE_RET_NOT_IN_FISHING(11001),
+    RET_GACHA_ACTIVITY_HAVE_REWARD_LIMIT(10315),
     /**
-     * <code>RETCODE_RET_FISH_STATE_ERROR = 11002;</code>
+     * <code>RET_GACHA_ACTIVITY_HAVE_ROBOT_LIMIT = 10316;</code>
      */
-    RETCODE_RET_FISH_STATE_ERROR(11002),
+    RET_GACHA_ACTIVITY_HAVE_ROBOT_LIMIT(10316),
     /**
-     * <code>RETCODE_RET_FISH_BAIT_LIMIT = 11003;</code>
+     * <code>RET_SUMMER_TIME_V2_COIN_EXCEED_LIMIT = 10317;</code>
      */
-    RETCODE_RET_FISH_BAIT_LIMIT(11003),
+    RET_SUMMER_TIME_V2_COIN_EXCEED_LIMIT(10317),
     /**
-     * <code>RETCODE_RET_FISHING_MAX_DISTANCE = 11004;</code>
+     * <code>RET_SUMMER_TIME_V2_COIN_NOT_ENOUGH = 10318;</code>
      */
-    RETCODE_RET_FISHING_MAX_DISTANCE(11004),
+    RET_SUMMER_TIME_V2_COIN_NOT_ENOUGH(10318),
     /**
-     * <code>RETCODE_RET_FISHING_IN_COMBAT = 11005;</code>
+     * <code>RET_SUMMER_TIME_V2_DUNGEON_STAGE_NOT_OPEN = 10319;</code>
      */
-    RETCODE_RET_FISHING_IN_COMBAT(11005),
+    RET_SUMMER_TIME_V2_DUNGEON_STAGE_NOT_OPEN(10319),
     /**
-     * <code>RETCODE_RET_FISHING_BATTLE_TOO_SHORT = 11006;</code>
+     * <code>RET_SUMMER_TIME_V2_PREV_DUNGEON_NOT_COMPLETE = 10320;</code>
      */
-    RETCODE_RET_FISHING_BATTLE_TOO_SHORT(11006),
+    RET_SUMMER_TIME_V2_PREV_DUNGEON_NOT_COMPLETE(10320),
     /**
-     * <code>RETCODE_RET_FISH_GONE_AWAY = 11007;</code>
+     * <code>RET_ROGUE_DIARY_AVATAR_DEATH = 10350;</code>
      */
-    RETCODE_RET_FISH_GONE_AWAY(11007),
+    RET_ROGUE_DIARY_AVATAR_DEATH(10350),
     /**
-     * <code>RETCODE_RET_CAN_NOT_EDIT_OTHER_DUNGEON = 11051;</code>
+     * <code>RET_ROGUE_DIARY_AVATAR_TIRED = 10351;</code>
      */
-    RETCODE_RET_CAN_NOT_EDIT_OTHER_DUNGEON(11051),
+    RET_ROGUE_DIARY_AVATAR_TIRED(10351),
     /**
-     * <code>RETCODE_RET_CUSTOM_DUNGEON_DISMATCH = 11052;</code>
+     * <code>RET_ROGUE_DIARY_AVATAR_DUPLICATED = 10352;</code>
      */
-    RETCODE_RET_CUSTOM_DUNGEON_DISMATCH(11052),
+    RET_ROGUE_DIARY_AVATAR_DUPLICATED(10352),
     /**
-     * <code>RETCODE_RET_NO_CUSTOM_DUNGEON_DATA = 11053;</code>
+     * <code>RET_ROGUE_DIARY_COIN_NOT_ENOUGH = 10353;</code>
      */
-    RETCODE_RET_NO_CUSTOM_DUNGEON_DATA(11053),
+    RET_ROGUE_DIARY_COIN_NOT_ENOUGH(10353),
     /**
-     * <code>RETCODE_RET_BUILD_CUSTOM_DUNGEON_FAIL = 11054;</code>
+     * <code>RET_ROGUE_DIARY_VIRTUAL_COIN_EXCEED_LIMIT = 10354;</code>
      */
-    RETCODE_RET_BUILD_CUSTOM_DUNGEON_FAIL(11054),
+    RET_ROGUE_DIARY_VIRTUAL_COIN_EXCEED_LIMIT(10354),
     /**
-     * <code>RETCODE_RET_CUSTOM_DUNGEON_ROOM_CHECK_FAIL = 11055;</code>
+     * <code>RET_ROGUE_DIARY_VIRTUAL_COIN_NOT_ENOUGH = 10355;</code>
      */
-    RETCODE_RET_CUSTOM_DUNGEON_ROOM_CHECK_FAIL(11055),
+    RET_ROGUE_DIARY_VIRTUAL_COIN_NOT_ENOUGH(10355),
     /**
-     * <code>RETCODE_RET_CUSTOM_DUNGEON_SAVE_MAY_FAIL = 11056;</code>
+     * <code>RET_ROGUE_DIARY_CONTENT_CLOSED = 10366;</code>
      */
-    RETCODE_RET_CUSTOM_DUNGEON_SAVE_MAY_FAIL(11056),
+    RET_ROGUE_DIARY_CONTENT_CLOSED(10366),
     /**
-     * <code>RETCODE_RET_NOT_IN_CUSTOM_DUNGEON = 11057;</code>
+     * <code>RET_GRAVEN_INNOCENCE_COIN_A_NOT_ENOUGH = 10380;</code>
      */
-    RETCODE_RET_NOT_IN_CUSTOM_DUNGEON(11057),
+    RET_GRAVEN_INNOCENCE_COIN_A_NOT_ENOUGH(10380),
     /**
-     * <code>RETCODE_RET_CUSTOM_DUNGEON_INTERNAL_FAIL = 11058;</code>
+     * <code>RET_GRAVEN_INNOCENCE_COIN_B_NOT_ENOUGH = 10381;</code>
      */
-    RETCODE_RET_CUSTOM_DUNGEON_INTERNAL_FAIL(11058),
+    RET_GRAVEN_INNOCENCE_COIN_B_NOT_ENOUGH(10381),
     /**
-     * <code>RETCODE_RET_CUSTOM_DUNGEON_CAN_NOT_TRY = 11059;</code>
+     * <code>RET_GRAVEN_INNOCENCE_COIN_A_EXCEED_LIMIT = 10382;</code>
      */
-    RETCODE_RET_CUSTOM_DUNGEON_CAN_NOT_TRY(11059),
+    RET_GRAVEN_INNOCENCE_COIN_A_EXCEED_LIMIT(10382),
     /**
-     * <code>RETCODE_RET_CUSTOM_DUNGEON_NO_START_ROOM = 11060;</code>
+     * <code>RET_GRAVEN_INNOCENCE_COIN_B_EXCEED_LIMIT = 10383;</code>
      */
-    RETCODE_RET_CUSTOM_DUNGEON_NO_START_ROOM(11060),
+    RET_GRAVEN_INNOCENCE_COIN_B_EXCEED_LIMIT(10383),
     /**
-     * <code>RETCODE_RET_CUSTOM_DUNGEON_NO_ROOM_DATA = 11061;</code>
+     * <code>RET_ISLAND_PARTY_STAGE_NOT_OPEN = 10371;</code>
      */
-    RETCODE_RET_CUSTOM_DUNGEON_NO_ROOM_DATA(11061),
+    RET_ISLAND_PARTY_STAGE_NOT_OPEN(10371),
     /**
-     * <code>RETCODE_RET_CUSTOM_DUNGEON_SAVE_TOO_FREQUENT = 11062;</code>
+     * <code>RET_WIND_FIELD_STAGE_NOT_OPEN = 10390;</code>
      */
-    RETCODE_RET_CUSTOM_DUNGEON_SAVE_TOO_FREQUENT(11062),
+    RET_WIND_FIELD_STAGE_NOT_OPEN(10390),
     /**
-     * <code>RETCODE_RET_CUSTOM_DUNGEON_NOT_SELF_PASS = 11063;</code>
+     * <code>RET_VINTAGE_CONTENT_CLOSED = 10396;</code>
      */
-    RETCODE_RET_CUSTOM_DUNGEON_NOT_SELF_PASS(11063),
+    RET_VINTAGE_CONTENT_CLOSED(10396),
     /**
-     * <code>RETCODE_RET_CUSTOM_DUNGEON_LACK_COIN = 11064;</code>
+     * <code>RET_VINTAGE_STORE_CONTENT_FINISHED = 10397;</code>
      */
-    RETCODE_RET_CUSTOM_DUNGEON_LACK_COIN(11064),
+    RET_VINTAGE_STORE_CONTENT_FINISHED(10397),
     /**
-     * <code>RETCODE_RET_CUSTOM_DUNGEON_NO_FINISH_BRICK = 11065;</code>
+     * <code>RET_VINTAGE_STORE_ATTR_TOO_SMALL = 10398;</code>
      */
-    RETCODE_RET_CUSTOM_DUNGEON_NO_FINISH_BRICK(11065),
+    RET_VINTAGE_STORE_ATTR_TOO_SMALL(10398),
     /**
-     * <code>RETCODE_RET_CUSTOM_DUNGEON_MULTI_FINISH = 11066;</code>
+     * <code>RET_VINTAGE_STORE_ATTR_TOO_LARGE = 10399;</code>
      */
-    RETCODE_RET_CUSTOM_DUNGEON_MULTI_FINISH(11066),
+    RET_VINTAGE_STORE_ATTR_TOO_LARGE(10399),
     /**
-     * <code>RETCODE_RET_CUSTOM_DUNGEON_NOT_PUBLISHED = 11067;</code>
+     * <code>RET_VINTAGE_STORE_CONTENT_INTERRUPT = 10400;</code>
      */
-    RETCODE_RET_CUSTOM_DUNGEON_NOT_PUBLISHED(11067),
+    RET_VINTAGE_STORE_CONTENT_INTERRUPT(10400),
     /**
-     * <code>RETCODE_RET_CUSTOM_DUNGEON_FULL_STORE = 11068;</code>
+     * <code>RET_VINTAGE_VIRTUAL_COIN_NOT_ENOUGH = 10401;</code>
      */
-    RETCODE_RET_CUSTOM_DUNGEON_FULL_STORE(11068),
+    RET_VINTAGE_VIRTUAL_COIN_NOT_ENOUGH(10401),
     /**
-     * <code>RETCODE_RET_CUSTOM_DUNGEON_STORE_REPEAT = 11069;</code>
+     * <code>RET_VINTAGE_STORE_ATTR_LESS_THAN_ZERO = 10402;</code>
      */
-    RETCODE_RET_CUSTOM_DUNGEON_STORE_REPEAT(11069),
+    RET_VINTAGE_STORE_ATTR_LESS_THAN_ZERO(10402),
     /**
-     * <code>RETCODE_RET_CUSTOM_DUNGEON_CAN_NOT_STORE_SELF = 11070;</code>
+     * <code>RET_FUNGUS_FIGHTER_CAPTURE_COIN_NOT_ENOUGH = 10406;</code>
      */
-    RETCODE_RET_CUSTOM_DUNGEON_CAN_NOT_STORE_SELF(11070),
+    RET_FUNGUS_FIGHTER_CAPTURE_COIN_NOT_ENOUGH(10406),
     /**
-     * <code>RETCODE_RET_CUSTOM_DUNGEON_NOT_SAVE_SUCC = 11071;</code>
+     * <code>RET_FUNGUS_FIGHTER_TRAINING_COIN_NOT_ENOUGH = 10407;</code>
      */
-    RETCODE_RET_CUSTOM_DUNGEON_NOT_SAVE_SUCC(11071),
+    RET_FUNGUS_FIGHTER_TRAINING_COIN_NOT_ENOUGH(10407),
     /**
-     * <code>RETCODE_RET_CUSTOM_DUNGEON_CAN_NOT_LIKE_SELF = 11072;</code>
+     * <code>RET_FUNGUS_FIGHTER_CAPTURE_COIN_EXCEED_LIMIT = 10408;</code>
      */
-    RETCODE_RET_CUSTOM_DUNGEON_CAN_NOT_LIKE_SELF(11072),
+    RET_FUNGUS_FIGHTER_CAPTURE_COIN_EXCEED_LIMIT(10408),
     /**
-     * <code>RETCODE_RET_CUSTOM_DUNGEON_NOT_FOUND = 11073;</code>
+     * <code>RET_FUNGUS_FIGHTER_TRAINING_COIN_EXCEED_LIMIT = 10409;</code>
      */
-    RETCODE_RET_CUSTOM_DUNGEON_NOT_FOUND(11073),
+    RET_FUNGUS_FIGHTER_TRAINING_COIN_EXCEED_LIMIT(10409),
     /**
-     * <code>RETCODE_RET_CUSTOM_DUNGEON_INVALID_SETTING = 11074;</code>
+     * <code>RET_FUNGUS_FIGHTER_CONTENT_CLOSED = 10410;</code>
      */
-    RETCODE_RET_CUSTOM_DUNGEON_INVALID_SETTING(11074),
+    RET_FUNGUS_FIGHTER_CONTENT_CLOSED(10410),
     /**
-     * <code>RETCODE_RET_CUSTOM_DUNGEON_NO_FINISH_SETTING = 11075;</code>
+     * <code>RET_FUNGUS_FIGHTER_PLOT_STAGE_NOT_OPEN = 10411;</code>
      */
-    RETCODE_RET_CUSTOM_DUNGEON_NO_FINISH_SETTING(11075),
+    RET_FUNGUS_FIGHTER_PLOT_STAGE_NOT_OPEN(10411),
     /**
-     * <code>RETCODE_RET_CUSTOM_DUNGEON_SAVE_NOTHING = 11076;</code>
+     * <code>RET_FUNGUS_FIGHTER_FUNGUS_ID_CONFIG_NOT_VALID = 10412;</code>
      */
-    RETCODE_RET_CUSTOM_DUNGEON_SAVE_NOTHING(11076),
+    RET_FUNGUS_FIGHTER_FUNGUS_ID_CONFIG_NOT_VALID(10412),
     /**
-     * <code>RETCODE_RET_CUSTOM_DUNGEON_NOT_IN_GROUP = 11077;</code>
+     * <code>RET_FUNGUS_FIGHTER_FUNGUS_NOT_CULTIVATED = 10413;</code>
      */
-    RETCODE_RET_CUSTOM_DUNGEON_NOT_IN_GROUP(11077),
+    RET_FUNGUS_FIGHTER_FUNGUS_NOT_CULTIVATED(10413),
     /**
-     * <code>RETCODE_RET_CUSTOM_DUNGEON_NOT_OFFICIAL = 11078;</code>
+     * <code>RET_FUNGUS_FIGHTER_TRAINING_DUNGEON_NOT_OPEN = 10414;</code>
      */
-    RETCODE_RET_CUSTOM_DUNGEON_NOT_OFFICIAL(11078),
+    RET_FUNGUS_FIGHTER_TRAINING_DUNGEON_NOT_OPEN(10414),
     /**
-     * <code>RETCODE_RET_CUSTOM_DUNGEON_LIFE_NUM_ERROR = 11079;</code>
+     * <code>RET_EFFIGY_CHALLENGE_V2_COIN_NOT_ENOUGH = 10427;</code>
      */
-    RETCODE_RET_CUSTOM_DUNGEON_LIFE_NUM_ERROR(11079),
+    RET_EFFIGY_CHALLENGE_V2_COIN_NOT_ENOUGH(10427),
     /**
-     * <code>RETCODE_RET_CUSTOM_DUNGEON_NO_OPEN_ROOM = 11080;</code>
+     * <code>RET_EFFIGY_CHALLENGE_V2_COIN_EXCEED_LIMIT = 10428;</code>
      */
-    RETCODE_RET_CUSTOM_DUNGEON_NO_OPEN_ROOM(11080),
+    RET_EFFIGY_CHALLENGE_V2_COIN_EXCEED_LIMIT(10428),
     /**
-     * <code>RETCODE_RET_CUSTOM_DUNGEON_BRICK_EXCEED_LIMIT = 11081;</code>
+     * <code>RET_CHAR_AMUSEMENT_STAGE_NOT_OPEN = 10436;</code>
      */
-    RETCODE_RET_CUSTOM_DUNGEON_BRICK_EXCEED_LIMIT(11081),
+    RET_CHAR_AMUSEMENT_STAGE_NOT_OPEN(10436),
     /**
-     * <code>RETCODE_RET_CUSTOM_DUNGEON_OFFICIAL_NOT_UNLOCK = 11082;</code>
+     * <code>RET_COIN_COLLECT_LEVEL_NOT_OPEN = 10446;</code>
      */
-    RETCODE_RET_CUSTOM_DUNGEON_OFFICIAL_NOT_UNLOCK(11082),
+    RET_COIN_COLLECT_LEVEL_NOT_OPEN(10446),
     /**
-     * <code>RETCODE_RET_CAN_NOT_EDIT_OFFICIAL_SETTING = 11083;</code>
+     * <code>RET_COIN_COLLECT_NOT_EQUIP_WIDGET = 10447;</code>
      */
-    RETCODE_RET_CAN_NOT_EDIT_OFFICIAL_SETTING(11083),
+    RET_COIN_COLLECT_NOT_EQUIP_WIDGET(10447),
     /**
-     * <code>RETCODE_RET_CUSTOM_DUNGEON_BAN_PUBLISH = 11084;</code>
+     * <code>RET_COIN_COLLECT_SCENE_NOT_MATCH = 10448;</code>
      */
-    RETCODE_RET_CUSTOM_DUNGEON_BAN_PUBLISH(11084),
+    RET_COIN_COLLECT_SCENE_NOT_MATCH(10448),
     /**
-     * <code>RETCODE_RET_CUSTOM_DUNGEON_CAN_NOT_REPLAY = 11085;</code>
+     * <code>RET_COIN_COLLECT_CANT_ENTER_MP_MODE = 10449;</code>
      */
-    RETCODE_RET_CUSTOM_DUNGEON_CAN_NOT_REPLAY(11085),
+    RET_COIN_COLLECT_CANT_ENTER_MP_MODE(10449),
     /**
-     * <code>RETCODE_RET_CUSTOM_DUNGEON_NOT_OPEN_GROUP = 11086;</code>
+     * <code>RET_COIN_COLLECT_PLAYER_NUM_FAIL = 10450;</code>
      */
-    RETCODE_RET_CUSTOM_DUNGEON_NOT_OPEN_GROUP(11086),
+    RET_COIN_COLLECT_PLAYER_NUM_FAIL(10450),
     /**
-     * <code>RETCODE_RET_CUSTOM_DUNGEON_MAX_EDIT_NUM = 11087;</code>
+     * <code>RET_BRICK_BREAKER_PLAYER_NUM_FAIL = 10456;</code>
      */
-    RETCODE_RET_CUSTOM_DUNGEON_MAX_EDIT_NUM(11087),
+    RET_BRICK_BREAKER_PLAYER_NUM_FAIL(10456),
     /**
-     * <code>RETCODE_RET_CUSTOM_DUNGEON_CAN_NOT_OUT_STUCK = 11088;</code>
+     * <code>RET_BRICK_BREAKER_STAGE_NOT_UNLOCK = 10457;</code>
      */
-    RETCODE_RET_CUSTOM_DUNGEON_CAN_NOT_OUT_STUCK(11088),
+    RET_BRICK_BREAKER_STAGE_NOT_UNLOCK(10457),
     /**
-     * <code>RETCODE_RET_CUSTOM_DUNGEON_MAX_TAG = 11089;</code>
+     * <code>RET_BRICK_BREAKER_NORMAL_LEVEL_NOT_FINISH = 10458;</code>
      */
-    RETCODE_RET_CUSTOM_DUNGEON_MAX_TAG(11089),
+    RET_BRICK_BREAKER_NORMAL_LEVEL_NOT_FINISH(10458),
     /**
-     * <code>RETCODE_RET_CUSTOM_DUNGEON_INVALID_TAG = 11090;</code>
+     * <code>RET_BRICK_BREAKER_PRE_LEVEL_NOT_FINISH = 10459;</code>
      */
-    RETCODE_RET_CUSTOM_DUNGEON_INVALID_TAG(11090),
+    RET_BRICK_BREAKER_PRE_LEVEL_NOT_FINISH(10459),
     /**
-     * <code>RETCODE_RET_CUSTOM_DUNGEON_MAX_COST = 11091;</code>
+     * <code>RET_BRICK_BREAKER_PRE_STAGE_NOT_FINISH = 10460;</code>
      */
-    RETCODE_RET_CUSTOM_DUNGEON_MAX_COST(11091),
+    RET_BRICK_BREAKER_PRE_STAGE_NOT_FINISH(10460),
     /**
-     * <code>RETCODE_RET_CUSTOM_DUNGEON_REQUEST_TOO_FREQUENT = 11092;</code>
+     * <code>RET_BRICK_BREAKER_WORLD_LEVEL_NOT_UNLOCK = 10461;</code>
      */
-    RETCODE_RET_CUSTOM_DUNGEON_REQUEST_TOO_FREQUENT(11092),
+    RET_BRICK_BREAKER_WORLD_LEVEL_NOT_UNLOCK(10461),
     /**
-     * <code>RETCODE_RET_CUSTOM_DUNGEON_NOT_OPEN = 11093;</code>
+     * <code>RET_BRICK_BREAKER_DUNGEON_LEVEL_NOT_UNLOCK = 10462;</code>
      */
-    RETCODE_RET_CUSTOM_DUNGEON_NOT_OPEN(11093),
+    RET_BRICK_BREAKER_DUNGEON_LEVEL_NOT_UNLOCK(10462),
     /**
-     * <code>RETCODE_RET_SHARE_CD_ID_ERROR = 11101;</code>
+     * <code>RET_BRICK_BREAKER_COIN_NOT_ENOUGH = 10463;</code>
      */
-    RETCODE_RET_SHARE_CD_ID_ERROR(11101),
+    RET_BRICK_BREAKER_COIN_NOT_ENOUGH(10463),
     /**
-     * <code>RETCODE_RET_SHARE_CD_INDEX_ERROR = 11102;</code>
+     * <code>RET_BRICK_BREAKER_COIN_EXCEED_LIMIT = 10464;</code>
      */
-    RETCODE_RET_SHARE_CD_INDEX_ERROR(11102),
+    RET_BRICK_BREAKER_COIN_EXCEED_LIMIT(10464),
     /**
-     * <code>RETCODE_RET_SHARE_CD_IN_CD = 11103;</code>
+     * <code>RET_ACTIVITY_CONTENT_CLOSED = 10901;</code>
      */
-    RETCODE_RET_SHARE_CD_IN_CD(11103),
+    RET_ACTIVITY_CONTENT_CLOSED(10901),
     /**
-     * <code>RETCODE_RET_SHARE_CD_TOKEN_NOT_ENOUGH = 11104;</code>
+     * <code>RET_NOT_IN_FISHING = 11001;</code>
      */
-    RETCODE_RET_SHARE_CD_TOKEN_NOT_ENOUGH(11104),
+    RET_NOT_IN_FISHING(11001),
     /**
-     * <code>RETCODE_RET_UGC_DISMATCH = 11151;</code>
+     * <code>RET_FISH_STATE_ERROR = 11002;</code>
      */
-    RETCODE_RET_UGC_DISMATCH(11151),
+    RET_FISH_STATE_ERROR(11002),
     /**
-     * <code>RETCODE_RET_UGC_DATA_NOT_FOUND = 11152;</code>
+     * <code>RET_FISH_BAIT_LIMIT = 11003;</code>
      */
-    RETCODE_RET_UGC_DATA_NOT_FOUND(11152),
+    RET_FISH_BAIT_LIMIT(11003),
     /**
-     * <code>RETCODE_RET_UGC_BRIEF_NOT_FOUND = 11153;</code>
+     * <code>RET_FISHING_MAX_DISTANCE = 11004;</code>
      */
-    RETCODE_RET_UGC_BRIEF_NOT_FOUND(11153),
+    RET_FISHING_MAX_DISTANCE(11004),
     /**
-     * <code>RETCODE_RET_UGC_DISABLED = 11154;</code>
+     * <code>RET_FISHING_IN_COMBAT = 11005;</code>
      */
-    RETCODE_RET_UGC_DISABLED(11154),
+    RET_FISHING_IN_COMBAT(11005),
     /**
-     * <code>RETCODE_RET_UGC_LIMITED = 11155;</code>
+     * <code>RET_FISHING_BATTLE_TOO_SHORT = 11006;</code>
      */
-    RETCODE_RET_UGC_LIMITED(11155),
+    RET_FISHING_BATTLE_TOO_SHORT(11006),
     /**
-     * <code>RETCODE_RET_UGC_LOCKED = 11156;</code>
+     * <code>RET_FISH_GONE_AWAY = 11007;</code>
      */
-    RETCODE_RET_UGC_LOCKED(11156),
+    RET_FISH_GONE_AWAY(11007),
     /**
-     * <code>RETCODE_RET_UGC_NOT_AUTH = 11157;</code>
+     * <code>RET_CAN_NOT_EDIT_OTHER_DUNGEON = 11051;</code>
      */
-    RETCODE_RET_UGC_NOT_AUTH(11157),
+    RET_CAN_NOT_EDIT_OTHER_DUNGEON(11051),
     /**
-     * <code>RETCODE_RET_UGC_NOT_OPEN = 11158;</code>
+     * <code>RET_CUSTOM_DUNGEON_DISMATCH = 11052;</code>
      */
-    RETCODE_RET_UGC_NOT_OPEN(11158),
+    RET_CUSTOM_DUNGEON_DISMATCH(11052),
     /**
-     * <code>RETCODE_RET_UGC_BAN_PUBLISH = 11159;</code>
+     * <code>RET_NO_CUSTOM_DUNGEON_DATA = 11053;</code>
      */
-    RETCODE_RET_UGC_BAN_PUBLISH(11159),
+    RET_NO_CUSTOM_DUNGEON_DATA(11053),
     /**
-     * <code>RETCODE_RET_COMPOUND_BOOST_ITEM_NOT_EXIST = 11201;</code>
+     * <code>RET_BUILD_CUSTOM_DUNGEON_FAIL = 11054;</code>
      */
-    RETCODE_RET_COMPOUND_BOOST_ITEM_NOT_EXIST(11201),
+    RET_BUILD_CUSTOM_DUNGEON_FAIL(11054),
     /**
-     * <code>RETCODE_RET_COMPOUND_BOOST_TARGET_NOT_EXIST = 11202;</code>
+     * <code>RET_CUSTOM_DUNGEON_ROOM_CHECK_FAIL = 11055;</code>
      */
-    RETCODE_RET_COMPOUND_BOOST_TARGET_NOT_EXIST(11202),
+    RET_CUSTOM_DUNGEON_ROOM_CHECK_FAIL(11055),
     /**
-     * <code>RETCODE_RET_QUICK_HIT_TREE_EMPTY_TREES = 11211;</code>
+     * <code>RET_CUSTOM_DUNGEON_SAVE_MAY_FAIL = 11056;</code>
      */
-    RETCODE_RET_QUICK_HIT_TREE_EMPTY_TREES(11211),
+    RET_CUSTOM_DUNGEON_SAVE_MAY_FAIL(11056),
+    /**
+     * <code>RET_NOT_IN_CUSTOM_DUNGEON = 11057;</code>
+     */
+    RET_NOT_IN_CUSTOM_DUNGEON(11057),
+    /**
+     * <code>RET_CUSTOM_DUNGEON_INTERNAL_FAIL = 11058;</code>
+     */
+    RET_CUSTOM_DUNGEON_INTERNAL_FAIL(11058),
+    /**
+     * <code>RET_CUSTOM_DUNGEON_CAN_NOT_TRY = 11059;</code>
+     */
+    RET_CUSTOM_DUNGEON_CAN_NOT_TRY(11059),
+    /**
+     * <code>RET_CUSTOM_DUNGEON_NO_START_ROOM = 11060;</code>
+     */
+    RET_CUSTOM_DUNGEON_NO_START_ROOM(11060),
+    /**
+     * <code>RET_CUSTOM_DUNGEON_NO_ROOM_DATA = 11061;</code>
+     */
+    RET_CUSTOM_DUNGEON_NO_ROOM_DATA(11061),
+    /**
+     * <code>RET_CUSTOM_DUNGEON_SAVE_TOO_FREQUENT = 11062;</code>
+     */
+    RET_CUSTOM_DUNGEON_SAVE_TOO_FREQUENT(11062),
+    /**
+     * <code>RET_CUSTOM_DUNGEON_NOT_SELF_PASS = 11063;</code>
+     */
+    RET_CUSTOM_DUNGEON_NOT_SELF_PASS(11063),
+    /**
+     * <code>RET_CUSTOM_DUNGEON_LACK_COIN = 11064;</code>
+     */
+    RET_CUSTOM_DUNGEON_LACK_COIN(11064),
+    /**
+     * <code>RET_CUSTOM_DUNGEON_NO_FINISH_BRICK = 11065;</code>
+     */
+    RET_CUSTOM_DUNGEON_NO_FINISH_BRICK(11065),
+    /**
+     * <code>RET_CUSTOM_DUNGEON_MULTI_FINISH = 11066;</code>
+     */
+    RET_CUSTOM_DUNGEON_MULTI_FINISH(11066),
+    /**
+     * <code>RET_CUSTOM_DUNGEON_NOT_PUBLISHED = 11067;</code>
+     */
+    RET_CUSTOM_DUNGEON_NOT_PUBLISHED(11067),
+    /**
+     * <code>RET_CUSTOM_DUNGEON_FULL_STORE = 11068;</code>
+     */
+    RET_CUSTOM_DUNGEON_FULL_STORE(11068),
+    /**
+     * <code>RET_CUSTOM_DUNGEON_STORE_REPEAT = 11069;</code>
+     */
+    RET_CUSTOM_DUNGEON_STORE_REPEAT(11069),
+    /**
+     * <code>RET_CUSTOM_DUNGEON_CAN_NOT_STORE_SELF = 11070;</code>
+     */
+    RET_CUSTOM_DUNGEON_CAN_NOT_STORE_SELF(11070),
+    /**
+     * <code>RET_CUSTOM_DUNGEON_NOT_SAVE_SUCC = 11071;</code>
+     */
+    RET_CUSTOM_DUNGEON_NOT_SAVE_SUCC(11071),
+    /**
+     * <code>RET_CUSTOM_DUNGEON_CAN_NOT_LIKE_SELF = 11072;</code>
+     */
+    RET_CUSTOM_DUNGEON_CAN_NOT_LIKE_SELF(11072),
+    /**
+     * <code>RET_CUSTOM_DUNGEON_NOT_FOUND = 11073;</code>
+     */
+    RET_CUSTOM_DUNGEON_NOT_FOUND(11073),
+    /**
+     * <code>RET_CUSTOM_DUNGEON_INVALID_SETTING = 11074;</code>
+     */
+    RET_CUSTOM_DUNGEON_INVALID_SETTING(11074),
+    /**
+     * <code>RET_CUSTOM_DUNGEON_NO_FINISH_SETTING = 11075;</code>
+     */
+    RET_CUSTOM_DUNGEON_NO_FINISH_SETTING(11075),
+    /**
+     * <code>RET_CUSTOM_DUNGEON_SAVE_NOTHING = 11076;</code>
+     */
+    RET_CUSTOM_DUNGEON_SAVE_NOTHING(11076),
+    /**
+     * <code>RET_CUSTOM_DUNGEON_NOT_IN_GROUP = 11077;</code>
+     */
+    RET_CUSTOM_DUNGEON_NOT_IN_GROUP(11077),
+    /**
+     * <code>RET_CUSTOM_DUNGEON_NOT_OFFICIAL = 11078;</code>
+     */
+    RET_CUSTOM_DUNGEON_NOT_OFFICIAL(11078),
+    /**
+     * <code>RET_CUSTOM_DUNGEON_LIFE_NUM_ERROR = 11079;</code>
+     */
+    RET_CUSTOM_DUNGEON_LIFE_NUM_ERROR(11079),
+    /**
+     * <code>RET_CUSTOM_DUNGEON_NO_OPEN_ROOM = 11080;</code>
+     */
+    RET_CUSTOM_DUNGEON_NO_OPEN_ROOM(11080),
+    /**
+     * <code>RET_CUSTOM_DUNGEON_BRICK_EXCEED_LIMIT = 11081;</code>
+     */
+    RET_CUSTOM_DUNGEON_BRICK_EXCEED_LIMIT(11081),
+    /**
+     * <code>RET_CUSTOM_DUNGEON_OFFICIAL_NOT_UNLOCK = 11082;</code>
+     */
+    RET_CUSTOM_DUNGEON_OFFICIAL_NOT_UNLOCK(11082),
+    /**
+     * <code>RET_CAN_NOT_EDIT_OFFICIAL_SETTING = 11083;</code>
+     */
+    RET_CAN_NOT_EDIT_OFFICIAL_SETTING(11083),
+    /**
+     * <code>RET_CUSTOM_DUNGEON_BAN_PUBLISH = 11084;</code>
+     */
+    RET_CUSTOM_DUNGEON_BAN_PUBLISH(11084),
+    /**
+     * <code>RET_CUSTOM_DUNGEON_CAN_NOT_REPLAY = 11085;</code>
+     */
+    RET_CUSTOM_DUNGEON_CAN_NOT_REPLAY(11085),
+    /**
+     * <code>RET_CUSTOM_DUNGEON_NOT_OPEN_GROUP = 11086;</code>
+     */
+    RET_CUSTOM_DUNGEON_NOT_OPEN_GROUP(11086),
+    /**
+     * <code>RET_CUSTOM_DUNGEON_MAX_EDIT_NUM = 11087;</code>
+     */
+    RET_CUSTOM_DUNGEON_MAX_EDIT_NUM(11087),
+    /**
+     * <code>RET_CUSTOM_DUNGEON_CAN_NOT_OUT_STUCK = 11088;</code>
+     */
+    RET_CUSTOM_DUNGEON_CAN_NOT_OUT_STUCK(11088),
+    /**
+     * <code>RET_CUSTOM_DUNGEON_MAX_TAG = 11089;</code>
+     */
+    RET_CUSTOM_DUNGEON_MAX_TAG(11089),
+    /**
+     * <code>RET_CUSTOM_DUNGEON_INVALID_TAG = 11090;</code>
+     */
+    RET_CUSTOM_DUNGEON_INVALID_TAG(11090),
+    /**
+     * <code>RET_CUSTOM_DUNGEON_MAX_COST = 11091;</code>
+     */
+    RET_CUSTOM_DUNGEON_MAX_COST(11091),
+    /**
+     * <code>RET_CUSTOM_DUNGEON_REQUEST_TOO_FREQUENT = 11092;</code>
+     */
+    RET_CUSTOM_DUNGEON_REQUEST_TOO_FREQUENT(11092),
+    /**
+     * <code>RET_CUSTOM_DUNGEON_NOT_OPEN = 11093;</code>
+     */
+    RET_CUSTOM_DUNGEON_NOT_OPEN(11093),
+    /**
+     * <code>RET_SHARE_CD_ID_ERROR = 11101;</code>
+     */
+    RET_SHARE_CD_ID_ERROR(11101),
+    /**
+     * <code>RET_SHARE_CD_INDEX_ERROR = 11102;</code>
+     */
+    RET_SHARE_CD_INDEX_ERROR(11102),
+    /**
+     * <code>RET_SHARE_CD_IN_CD = 11103;</code>
+     */
+    RET_SHARE_CD_IN_CD(11103),
+    /**
+     * <code>RET_SHARE_CD_TOKEN_NOT_ENOUGH = 11104;</code>
+     */
+    RET_SHARE_CD_TOKEN_NOT_ENOUGH(11104),
+    /**
+     * <code>RET_UGC_DISMATCH = 11151;</code>
+     */
+    RET_UGC_DISMATCH(11151),
+    /**
+     * <code>RET_UGC_DATA_NOT_FOUND = 11152;</code>
+     */
+    RET_UGC_DATA_NOT_FOUND(11152),
+    /**
+     * <code>RET_UGC_BRIEF_NOT_FOUND = 11153;</code>
+     */
+    RET_UGC_BRIEF_NOT_FOUND(11153),
+    /**
+     * <code>RET_UGC_DISABLED = 11154;</code>
+     */
+    RET_UGC_DISABLED(11154),
+    /**
+     * <code>RET_UGC_LIMITED = 11155;</code>
+     */
+    RET_UGC_LIMITED(11155),
+    /**
+     * <code>RET_UGC_LOCKED = 11156;</code>
+     */
+    RET_UGC_LOCKED(11156),
+    /**
+     * <code>RET_UGC_NOT_AUTH = 11157;</code>
+     */
+    RET_UGC_NOT_AUTH(11157),
+    /**
+     * <code>RET_UGC_NOT_OPEN = 11158;</code>
+     */
+    RET_UGC_NOT_OPEN(11158),
+    /**
+     * <code>RET_UGC_BAN_PUBLISH = 11159;</code>
+     */
+    RET_UGC_BAN_PUBLISH(11159),
+    /**
+     * <code>RET_COMPOUND_BOOST_ITEM_NOT_EXIST = 11201;</code>
+     */
+    RET_COMPOUND_BOOST_ITEM_NOT_EXIST(11201),
+    /**
+     * <code>RET_COMPOUND_BOOST_TARGET_NOT_EXIST = 11202;</code>
+     */
+    RET_COMPOUND_BOOST_TARGET_NOT_EXIST(11202),
+    /**
+     * <code>RET_QUICK_HIT_TREE_EMPTY_TREES = 11211;</code>
+     */
+    RET_QUICK_HIT_TREE_EMPTY_TREES(11211),
+    /**
+     * <code>RET_GCG_FIND_GAME_MODE_FAIL = 12000;</code>
+     */
+    RET_GCG_FIND_GAME_MODE_FAIL(12000),
+    /**
+     * <code>RET_GCG_OPERATION_PARAM_ERROR = 12001;</code>
+     */
+    RET_GCG_OPERATION_PARAM_ERROR(12001),
+    /**
+     * <code>RET_GCG_GAME_NOT_RUNNING = 12002;</code>
+     */
+    RET_GCG_GAME_NOT_RUNNING(12002),
+    /**
+     * <code>RET_GCG_OP_NOT_ALLOW = 12003;</code>
+     */
+    RET_GCG_OP_NOT_ALLOW(12003),
+    /**
+     * <code>RET_GCG_OP_NOT_MATCH_PHASE = 12004;</code>
+     */
+    RET_GCG_OP_NOT_MATCH_PHASE(12004),
+    /**
+     * <code>RET_GCG_SELECT_HAND_CARD_GUID_ERROR = 12005;</code>
+     */
+    RET_GCG_SELECT_HAND_CARD_GUID_ERROR(12005),
+    /**
+     * <code>RET_GCG_DICE_INDEX_INVALID = 12006;</code>
+     */
+    RET_GCG_DICE_INDEX_INVALID(12006),
+    /**
+     * <code>RET_GCG_CHARACTER_GUID_INVALID = 12007;</code>
+     */
+    RET_GCG_CHARACTER_GUID_INVALID(12007),
+    /**
+     * <code>RET_GCG_CHARACTER_ALREADY_DIE = 12008;</code>
+     */
+    RET_GCG_CHARACTER_ALREADY_DIE(12008),
+    /**
+     * <code>RET_GCG_CHARACTER_ALREADY_ON_STAGE = 12009;</code>
+     */
+    RET_GCG_CHARACTER_ALREADY_ON_STAGE(12009),
+    /**
+     * <code>RET_GCG_CHARACTER_FORBIDDEN_ATTACK = 12010;</code>
+     */
+    RET_GCG_CHARACTER_FORBIDDEN_ATTACK(12010),
+    /**
+     * <code>RET_GCG_SELECT_DICE_NOT_MATCH = 12011;</code>
+     */
+    RET_GCG_SELECT_DICE_NOT_MATCH(12011),
+    /**
+     * <code>RET_GCG_FIND_SKILL_FAIL = 12012;</code>
+     */
+    RET_GCG_FIND_SKILL_FAIL(12012),
+    /**
+     * <code>RET_GCG_SKILL_CAN_NOT_ACTIVE_USE = 12013;</code>
+     */
+    RET_GCG_SKILL_CAN_NOT_ACTIVE_USE(12013),
+    /**
+     * <code>RET_GCG_ENERGY_NOT_ENOUGH = 12014;</code>
+     */
+    RET_GCG_ENERGY_NOT_ENOUGH(12014),
+    /**
+     * <code>RET_GCG_PLAY_CARD_TARGET_NOT_MATCH = 12015;</code>
+     */
+    RET_GCG_PLAY_CARD_TARGET_NOT_MATCH(12015),
+    /**
+     * <code>RET_GCG_PLAY_CARD_ZONE_CANNOT_ADD = 12016;</code>
+     */
+    RET_GCG_PLAY_CARD_ZONE_CANNOT_ADD(12016),
+    /**
+     * <code>RET_GCG_REBOOT_SELECT_DICE_INVALID = 12017;</code>
+     */
+    RET_GCG_REBOOT_SELECT_DICE_INVALID(12017),
+    /**
+     * <code>RET_GCG_REBOOT_SELECT_CARD_INVALID = 12018;</code>
+     */
+    RET_GCG_REBOOT_SELECT_CARD_INVALID(12018),
+    /**
+     * <code>RET_GCG_PLAY_CARD_CONDITION_CHECK_FAIL = 12019;</code>
+     */
+    RET_GCG_PLAY_CARD_CONDITION_CHECK_FAIL(12019),
+    /**
+     * <code>RET_GCG_PLAY_CARD_PARAM_INVALID = 12020;</code>
+     */
+    RET_GCG_PLAY_CARD_PARAM_INVALID(12020),
+    /**
+     * <code>RET_GCG_MAX_GAME = 12021;</code>
+     */
+    RET_GCG_MAX_GAME(12021),
+    /**
+     * <code>RET_GCG_SEND_PACKET_FAIL = 12022;</code>
+     */
+    RET_GCG_SEND_PACKET_FAIL(12022),
+    /**
+     * <code>RET_GCG_ALREADY_SETTLE = 12023;</code>
+     */
+    RET_GCG_ALREADY_SETTLE(12023),
+    /**
+     * <code>RET_GCG_COIN_EXCEED_LIMIT = 12101;</code>
+     */
+    RET_GCG_COIN_EXCEED_LIMIT(12101),
+    /**
+     * <code>RET_GCG_COIN_NOT_ENOUGH = 12102;</code>
+     */
+    RET_GCG_COIN_NOT_ENOUGH(12102),
+    /**
+     * <code>RET_GCG_NOT_IN_SELF_WORLD = 12103;</code>
+     */
+    RET_GCG_NOT_IN_SELF_WORLD(12103),
+    /**
+     * <code>RET_GCG_ALREADY_IN_DUEL = 12104;</code>
+     */
+    RET_GCG_ALREADY_IN_DUEL(12104),
+    /**
+     * <code>RET_GCG_NOT_IN_PLAYER_WORLD = 12105;</code>
+     */
+    RET_GCG_NOT_IN_PLAYER_WORLD(12105),
+    /**
+     * <code>RET_GCG_GALLERY_STARTED = 12106;</code>
+     */
+    RET_GCG_GALLERY_STARTED(12106),
+    /**
+     * <code>RET_GCG_INVITE_TARGET_IS_SELF = 12107;</code>
+     */
+    RET_GCG_INVITE_TARGET_IS_SELF(12107),
+    /**
+     * <code>RET_GCG_INVITE_TARGET_NOT_IN_WORLD = 12108;</code>
+     */
+    RET_GCG_INVITE_TARGET_NOT_IN_WORLD(12108),
+    /**
+     * <code>RET_GCG_APPLY_INVITE_NOT_ALLOW = 12109;</code>
+     */
+    RET_GCG_APPLY_INVITE_NOT_ALLOW(12109),
+    /**
+     * <code>RET_GCG_APPLY_INVITE_TIMEOUT = 12110;</code>
+     */
+    RET_GCG_APPLY_INVITE_TIMEOUT(12110),
+    /**
+     * <code>RET_GCG_CUR_DECK_INVALID = 12111;</code>
+     */
+    RET_GCG_CUR_DECK_INVALID(12111),
+    /**
+     * <code>RET_GCG_NEED_RESOURCE_COMPLETE = 12112;</code>
+     */
+    RET_GCG_NEED_RESOURCE_COMPLETE(12112),
+    /**
+     * <code>RET_GCG_OPPONENT_PLAYER_IS_SELF = 12113;</code>
+     */
+    RET_GCG_OPPONENT_PLAYER_IS_SELF(12113),
+    /**
+     * <code>RET_GCG_GAME_ID_INVALID = 12114;</code>
+     */
+    RET_GCG_GAME_ID_INVALID(12114),
+    /**
+     * <code>RET_GCG_MATCH_IN_PUNISH = 12115;</code>
+     */
+    RET_GCG_MATCH_IN_PUNISH(12115),
+    /**
+     * <code>RET_GCG_SETTLE_STILL_IN_DUEL = 12116;</code>
+     */
+    RET_GCG_SETTLE_STILL_IN_DUEL(12116),
+    /**
+     * <code>RET_GCG_SETTLE_NOT_IN_DUNGEON = 12117;</code>
+     */
+    RET_GCG_SETTLE_NOT_IN_DUNGEON(12117),
+    /**
+     * <code>RET_GCG_UNSUPPORT_SETTLE_OPTION = 12118;</code>
+     */
+    RET_GCG_UNSUPPORT_SETTLE_OPTION(12118),
+    /**
+     * <code>RET_GCG_NOT_IN_GCG_DUNGEON = 12119;</code>
+     */
+    RET_GCG_NOT_IN_GCG_DUNGEON(12119),
+    /**
+     * <code>RET_GCG_WORLD_LEVEL_LOCKED = 12120;</code>
+     */
+    RET_GCG_WORLD_LEVEL_LOCKED(12120),
+    /**
+     * <code>RET_GCG_BOSS_LEVEL_LOCKED = 12121;</code>
+     */
+    RET_GCG_BOSS_LEVEL_LOCKED(12121),
+    /**
+     * <code>RET_GCG_NOT_IN_TAVERN = 12122;</code>
+     */
+    RET_GCG_NOT_IN_TAVERN(12122),
+    /**
+     * <code>RET_GCG_WEEK_NPC_NOT_EXIST = 12123;</code>
+     */
+    RET_GCG_WEEK_NPC_NOT_EXIST(12123),
+    /**
+     * <code>RET_GCG_ENTER_GAME_FREQUENT = 12124;</code>
+     */
+    RET_GCG_ENTER_GAME_FREQUENT(12124),
+    /**
+     * <code>RET_GCG_BREAK_LEVEL_QUEST_NOT_UNFINISHED = 12125;</code>
+     */
+    RET_GCG_BREAK_LEVEL_QUEST_NOT_UNFINISHED(12125),
+    /**
+     * <code>RET_GCG_GUIDE_LEVEL_ALREADY_FINISHED = 12126;</code>
+     */
+    RET_GCG_GUIDE_LEVEL_ALREADY_FINISHED(12126),
+    /**
+     * <code>RET_GCG_LEVEL_CANNOT_RESTART = 12127;</code>
+     */
+    RET_GCG_LEVEL_CANNOT_RESTART(12127),
+    /**
+     * <code>RET_GCG_TARGET_CHECK_ENTER_FAIL = 12128;</code>
+     */
+    RET_GCG_TARGET_CHECK_ENTER_FAIL(12128),
+    /**
+     * <code>RET_GCG_ALREADY_IN_DUNGEON = 12129;</code>
+     */
+    RET_GCG_ALREADY_IN_DUNGEON(12129),
+    /**
+     * <code>RET_GCG_BACK_DUEL_NO_GAME = 12130;</code>
+     */
+    RET_GCG_BACK_DUEL_NO_GAME(12130),
+    /**
+     * <code>RET_GCG_CONST_LEVEL_LOCKED = 12131;</code>
+     */
+    RET_GCG_CONST_LEVEL_LOCKED(12131),
+    /**
+     * <code>RET_GCG_QUEST_ID_ERROR = 12132;</code>
+     */
+    RET_GCG_QUEST_ID_ERROR(12132),
+    /**
+     * <code>RET_GCG_QUEST_NEED_UNFINISHED = 12133;</code>
+     */
+    RET_GCG_QUEST_NEED_UNFINISHED(12133),
+    /**
+     * <code>RET_GCG_IN_MATCH = 12134;</code>
+     */
+    RET_GCG_IN_MATCH(12134),
+    /**
+     * <code>RET_GCG_DATA_VERSION_NOT_LATEST = 12135;</code>
+     */
+    RET_GCG_DATA_VERSION_NOT_LATEST(12135),
+    /**
+     * <code>RET_GCG_INVITE_TARGET_ENTER_GAME_FREQUENT = 12136;</code>
+     */
+    RET_GCG_INVITE_TARGET_ENTER_GAME_FREQUENT(12136),
+    /**
+     * <code>RET_GCG_INVITE_TARGET_NEED_RESOURCE_COMPLETE = 12137;</code>
+     */
+    RET_GCG_INVITE_TARGET_NEED_RESOURCE_COMPLETE(12137),
+    /**
+     * <code>RET_GCG_INVITE_TARGET_SCENE_IS_NULL = 12138;</code>
+     */
+    RET_GCG_INVITE_TARGET_SCENE_IS_NULL(12138),
+    /**
+     * <code>RET_GCG_INVITE_TARGET_IN_TRANSFER = 12139;</code>
+     */
+    RET_GCG_INVITE_TARGET_IN_TRANSFER(12139),
+    /**
+     * <code>RET_GCG_INVITE_TARGET_DATA_VERSION_NOT_LATEST = 12140;</code>
+     */
+    RET_GCG_INVITE_TARGET_DATA_VERSION_NOT_LATEST(12140),
+    /**
+     * <code>RET_GCG_INVITE_TARGET_CUR_DECK_INVALID = 12141;</code>
+     */
+    RET_GCG_INVITE_TARGET_CUR_DECK_INVALID(12141),
+    /**
+     * <code>RET_GCG_CLIENT_DATA_VERSION_NOT_MATCH = 12142;</code>
+     */
+    RET_GCG_CLIENT_DATA_VERSION_NOT_MATCH(12142),
+    /**
+     * <code>RET_GCG_CLIENT_DATA_VERSOIN_FORBID = 12143;</code>
+     */
+    RET_GCG_CLIENT_DATA_VERSOIN_FORBID(12143),
+    /**
+     * <code>RET_GCG_MP_CANT_MATCH = 12144;</code>
+     */
+    RET_GCG_MP_CANT_MATCH(12144),
+    /**
+     * <code>RET_GCG_INVITE_TARGET_STATE_NOT_OPEN = 12145;</code>
+     */
+    RET_GCG_INVITE_TARGET_STATE_NOT_OPEN(12145),
+    /**
+     * <code>RET_GCG_CREATE_TIME_OUT = 12146;</code>
+     */
+    RET_GCG_CREATE_TIME_OUT(12146),
+    /**
+     * <code>RET_GCG_BAN_MATCH = 12147;</code>
+     */
+    RET_GCG_BAN_MATCH(12147),
+    /**
+     * <code>RET_GCG_BAN_INVITE = 12148;</code>
+     */
+    RET_GCG_BAN_INVITE(12148),
+    /**
+     * <code>RET_GCG_TARGET_BAN_INVITE = 12149;</code>
+     */
+    RET_GCG_TARGET_BAN_INVITE(12149),
+    /**
+     * <code>RET_GCG_INVITE_ALREADY_INVITE = 12150;</code>
+     */
+    RET_GCG_INVITE_ALREADY_INVITE(12150),
+    /**
+     * <code>RET_GCG_BACK_DUEL_PS_TO_OTHER = 12153;</code>
+     */
+    RET_GCG_BACK_DUEL_PS_TO_OTHER(12153),
+    /**
+     * <code>RET_GCG_BACK_DUEL_OTHER_TO_PS = 12154;</code>
+     */
+    RET_GCG_BACK_DUEL_OTHER_TO_PS(12154),
+    /**
+     * <code>RET_GCG_DS_DECK_LOCKED = 12201;</code>
+     */
+    RET_GCG_DS_DECK_LOCKED(12201),
+    /**
+     * <code>RET_GCG_DS_DECK_NAME_INVALID = 12202;</code>
+     */
+    RET_GCG_DS_DECK_NAME_INVALID(12202),
+    /**
+     * <code>RET_GCG_DS_DECK_CHAR_CARD_NUM_INVALID = 12204;</code>
+     */
+    RET_GCG_DS_DECK_CHAR_CARD_NUM_INVALID(12204),
+    /**
+     * <code>RET_GCG_DS_DECK_CARD_NUM_INVALID = 12205;</code>
+     */
+    RET_GCG_DS_DECK_CARD_NUM_INVALID(12205),
+    /**
+     * <code>RET_GCG_DS_CARD_NUM_EXCEED_LIMIT = 12206;</code>
+     */
+    RET_GCG_DS_CARD_NUM_EXCEED_LIMIT(12206),
+    /**
+     * <code>RET_GCG_DS_DECK_INVALID = 12207;</code>
+     */
+    RET_GCG_DS_DECK_INVALID(12207),
+    /**
+     * <code>RET_GCG_DS_CARD_ID_INVALID = 12208;</code>
+     */
+    RET_GCG_DS_CARD_ID_INVALID(12208),
+    /**
+     * <code>RET_GCG_DS_CARD_FACE_ALREADY_UNLOCK = 12209;</code>
+     */
+    RET_GCG_DS_CARD_FACE_ALREADY_UNLOCK(12209),
+    /**
+     * <code>RET_GCG_DS_CARD_FACE_IS_LOCK = 12210;</code>
+     */
+    RET_GCG_DS_CARD_FACE_IS_LOCK(12210),
+    /**
+     * <code>RET_GCG_DS_FIELD_LOCK = 12211;</code>
+     */
+    RET_GCG_DS_FIELD_LOCK(12211),
+    /**
+     * <code>RET_GCG_DS_FIELD_ALREADY_UNLOCK = 12212;</code>
+     */
+    RET_GCG_DS_FIELD_ALREADY_UNLOCK(12212),
+    /**
+     * <code>RET_GCG_DS_FIELD_ID_INVALID = 12213;</code>
+     */
+    RET_GCG_DS_FIELD_ID_INVALID(12213),
+    /**
+     * <code>RET_GCG_DS_CARD_BACK_LOCKED = 12214;</code>
+     */
+    RET_GCG_DS_CARD_BACK_LOCKED(12214),
+    /**
+     * <code>RET_GCG_DS_CARD_BACK_ALREADY_UNLOCK = 12215;</code>
+     */
+    RET_GCG_DS_CARD_BACK_ALREADY_UNLOCK(12215),
+    /**
+     * <code>RET_GCG_DS_CARD_BACK_ID_INVALID = 12216;</code>
+     */
+    RET_GCG_DS_CARD_BACK_ID_INVALID(12216),
+    /**
+     * <code>RET_GCG_DS_CARD_FACE_ID_INVALID = 12217;</code>
+     */
+    RET_GCG_DS_CARD_FACE_ID_INVALID(12217),
+    /**
+     * <code>RET_GCG_DS_DECK_NAME_ILLEGAL = 12218;</code>
+     */
+    RET_GCG_DS_DECK_NAME_ILLEGAL(12218),
+    /**
+     * <code>RET_GCG_DS_DECK_SAVE_CD = 12219;</code>
+     */
+    RET_GCG_DS_DECK_SAVE_CD(12219),
+    /**
+     * <code>RET_GCG_DS_DECK_CHANGE_NAME_CD = 12220;</code>
+     */
+    RET_GCG_DS_DECK_CHANGE_NAME_CD(12220),
+    /**
+     * <code>RET_GCG_MATCH_DECK_INVALID = 12221;</code>
+     */
+    RET_GCG_MATCH_DECK_INVALID(12221),
+    /**
+     * <code>RET_GCG_DS_DECK_ALREADY_UNLOCKED = 12222;</code>
+     */
+    RET_GCG_DS_DECK_ALREADY_UNLOCKED(12222),
+    /**
+     * <code>RET_GCG_DS_AT_LEAST_ONE_DECK = 12223;</code>
+     */
+    RET_GCG_DS_AT_LEAST_ONE_DECK(12223),
+    /**
+     * <code>RET_GCG_TC_CHARACTERNOT_MATCH_LEVEL = 12251;</code>
+     */
+    RET_GCG_TC_CHARACTERNOT_MATCH_LEVEL(12251),
+    /**
+     * <code>RET_GCG_TC_MUST_IN_SELF_WORLD = 12252;</code>
+     */
+    RET_GCG_TC_MUST_IN_SELF_WORLD(12252),
+    /**
+     * <code>RET_GCG_TC_MUST_IN_TAVERN = 12253;</code>
+     */
+    RET_GCG_TC_MUST_IN_TAVERN(12253),
+    /**
+     * <code>RET_GCG_TC_ALREADY_IN_GAME = 12254;</code>
+     */
+    RET_GCG_TC_ALREADY_IN_GAME(12254),
+    /**
+     * <code>RET_GCG_TC_ALREADY_IN_MATCH = 12255;</code>
+     */
+    RET_GCG_TC_ALREADY_IN_MATCH(12255),
+    /**
+     * <code>RET_GCG_TC_UNLOCK_CHARACTER_QUEST_NOT_FINISH = 12256;</code>
+     */
+    RET_GCG_TC_UNLOCK_CHARACTER_QUEST_NOT_FINISH(12256),
+    /**
+     * <code>RET_GCG_TC_LEVEL_LOCKED = 12257;</code>
+     */
+    RET_GCG_TC_LEVEL_LOCKED(12257),
+    /**
+     * <code>RET_GCG_TC_NO_INVITE_DATA = 12258;</code>
+     */
+    RET_GCG_TC_NO_INVITE_DATA(12258),
+    /**
+     * <code>RET_GCG_TC_CUR_DECK_INVALID = 12259;</code>
+     */
+    RET_GCG_TC_CUR_DECK_INVALID(12259),
+    /**
+     * <code>RET_GCG_TC_COND_QUEST = 12260;</code>
+     */
+    RET_GCG_TC_COND_QUEST(12260),
+    /**
+     * <code>RET_GCG_LEVEL_REWARD_LEVEL_ERROR = 12301;</code>
+     */
+    RET_GCG_LEVEL_REWARD_LEVEL_ERROR(12301),
+    /**
+     * <code>RET_GCG_LEVEL_REWARD_ALREADY_TAKEN = 12302;</code>
+     */
+    RET_GCG_LEVEL_REWARD_ALREADY_TAKEN(12302),
+    /**
+     * <code>RET_GCG_LEVEL_REWARD_NO_REWARD = 12303;</code>
+     */
+    RET_GCG_LEVEL_REWARD_NO_REWARD(12303),
     UNRECOGNIZED(-1),
     ;
 
     /**
-     * <code>RETCODE_RET_SUCC = 0;</code>
+     * <code>RET_SUCC = 0;</code>
      */
-    public static final int RETCODE_RET_SUCC_VALUE = 0;
+    public static final int RET_SUCC_VALUE = 0;
     /**
-     * <code>RETCODE_RET_FAIL = -1;</code>
+     * <code>RET_FAIL = -1;</code>
      */
-    public static final int RETCODE_RET_FAIL_VALUE = -1;
+    public static final int RET_FAIL_VALUE = -1;
     /**
-     * <code>RETCODE_RET_SVR_ERROR = 1;</code>
+     * <code>RET_SVR_ERROR = 1;</code>
      */
-    public static final int RETCODE_RET_SVR_ERROR_VALUE = 1;
+    public static final int RET_SVR_ERROR_VALUE = 1;
     /**
-     * <code>RETCODE_RET_UNKNOWN_ERROR = 2;</code>
+     * <code>RET_UNKNOWN_ERROR = 2;</code>
      */
-    public static final int RETCODE_RET_UNKNOWN_ERROR_VALUE = 2;
+    public static final int RET_UNKNOWN_ERROR_VALUE = 2;
     /**
-     * <code>RETCODE_RET_FREQUENT = 3;</code>
+     * <code>RET_FREQUENT = 3;</code>
      */
-    public static final int RETCODE_RET_FREQUENT_VALUE = 3;
+    public static final int RET_FREQUENT_VALUE = 3;
     /**
-     * <code>RETCODE_RET_NODE_FORWARD_ERROR = 4;</code>
+     * <code>RET_NODE_FORWARD_ERROR = 4;</code>
      */
-    public static final int RETCODE_RET_NODE_FORWARD_ERROR_VALUE = 4;
+    public static final int RET_NODE_FORWARD_ERROR_VALUE = 4;
     /**
-     * <code>RETCODE_RET_NOT_FOUND_CONFIG = 5;</code>
+     * <code>RET_NOT_FOUND_CONFIG = 5;</code>
      */
-    public static final int RETCODE_RET_NOT_FOUND_CONFIG_VALUE = 5;
+    public static final int RET_NOT_FOUND_CONFIG_VALUE = 5;
     /**
-     * <code>RETCODE_RET_SYSTEM_BUSY = 6;</code>
+     * <code>RET_SYSTEM_BUSY = 6;</code>
      */
-    public static final int RETCODE_RET_SYSTEM_BUSY_VALUE = 6;
+    public static final int RET_SYSTEM_BUSY_VALUE = 6;
     /**
-     * <code>RETCODE_RET_GM_UID_BIND = 7;</code>
+     * <code>RET_GM_UID_BIND = 7;</code>
      */
-    public static final int RETCODE_RET_GM_UID_BIND_VALUE = 7;
+    public static final int RET_GM_UID_BIND_VALUE = 7;
     /**
-     * <code>RETCODE_RET_FORBIDDEN = 8;</code>
+     * <code>RET_FORBIDDEN = 8;</code>
      */
-    public static final int RETCODE_RET_FORBIDDEN_VALUE = 8;
+    public static final int RET_FORBIDDEN_VALUE = 8;
     /**
-     * <code>RETCODE_RET_STOP_REGISTER = 10;</code>
+     * <code>RET_STOP_REGISTER = 10;</code>
      */
-    public static final int RETCODE_RET_STOP_REGISTER_VALUE = 10;
+    public static final int RET_STOP_REGISTER_VALUE = 10;
     /**
-     * <code>RETCODE_RET_STOP_SERVER = 11;</code>
+     * <code>RET_STOP_SERVER = 11;</code>
      */
-    public static final int RETCODE_RET_STOP_SERVER_VALUE = 11;
+    public static final int RET_STOP_SERVER_VALUE = 11;
     /**
-     * <code>RETCODE_RET_ACCOUNT_VEIRFY_ERROR = 12;</code>
+     * <code>RET_ACCOUNT_VEIRFY_ERROR = 12;</code>
      */
-    public static final int RETCODE_RET_ACCOUNT_VEIRFY_ERROR_VALUE = 12;
+    public static final int RET_ACCOUNT_VEIRFY_ERROR_VALUE = 12;
     /**
-     * <code>RETCODE_RET_ACCOUNT_FREEZE = 13;</code>
+     * <code>RET_ACCOUNT_FREEZE = 13;</code>
      */
-    public static final int RETCODE_RET_ACCOUNT_FREEZE_VALUE = 13;
+    public static final int RET_ACCOUNT_FREEZE_VALUE = 13;
     /**
-     * <code>RETCODE_RET_REPEAT_LOGIN = 14;</code>
+     * <code>RET_REPEAT_LOGIN = 14;</code>
      */
-    public static final int RETCODE_RET_REPEAT_LOGIN_VALUE = 14;
+    public static final int RET_REPEAT_LOGIN_VALUE = 14;
     /**
-     * <code>RETCODE_RET_CLIENT_VERSION_ERROR = 15;</code>
+     * <code>RET_CLIENT_VERSION_ERROR = 15;</code>
      */
-    public static final int RETCODE_RET_CLIENT_VERSION_ERROR_VALUE = 15;
+    public static final int RET_CLIENT_VERSION_ERROR_VALUE = 15;
     /**
-     * <code>RETCODE_RET_TOKEN_ERROR = 16;</code>
+     * <code>RET_TOKEN_ERROR = 16;</code>
      */
-    public static final int RETCODE_RET_TOKEN_ERROR_VALUE = 16;
+    public static final int RET_TOKEN_ERROR_VALUE = 16;
     /**
-     * <code>RETCODE_RET_ACCOUNT_NOT_EXIST = 17;</code>
+     * <code>RET_ACCOUNT_NOT_EXIST = 17;</code>
      */
-    public static final int RETCODE_RET_ACCOUNT_NOT_EXIST_VALUE = 17;
+    public static final int RET_ACCOUNT_NOT_EXIST_VALUE = 17;
     /**
-     * <code>RETCODE_RET_WAIT_OTHER_LOGIN = 18;</code>
+     * <code>RET_WAIT_OTHER_LOGIN = 18;</code>
      */
-    public static final int RETCODE_RET_WAIT_OTHER_LOGIN_VALUE = 18;
+    public static final int RET_WAIT_OTHER_LOGIN_VALUE = 18;
     /**
-     * <code>RETCODE_RET_ANOTHER_LOGIN = 19;</code>
+     * <code>RET_ANOTHER_LOGIN = 19;</code>
      */
-    public static final int RETCODE_RET_ANOTHER_LOGIN_VALUE = 19;
+    public static final int RET_ANOTHER_LOGIN_VALUE = 19;
     /**
-     * <code>RETCODE_RET_CLIENT_FORCE_UPDATE = 20;</code>
+     * <code>RET_CLIENT_FORCE_UPDATE = 20;</code>
      */
-    public static final int RETCODE_RET_CLIENT_FORCE_UPDATE_VALUE = 20;
+    public static final int RET_CLIENT_FORCE_UPDATE_VALUE = 20;
     /**
-     * <code>RETCODE_RET_BLACK_UID = 21;</code>
+     * <code>RET_BLACK_UID = 21;</code>
      */
-    public static final int RETCODE_RET_BLACK_UID_VALUE = 21;
+    public static final int RET_BLACK_UID_VALUE = 21;
     /**
-     * <code>RETCODE_RET_LOGIN_DB_FAIL = 22;</code>
+     * <code>RET_LOGIN_DB_FAIL = 22;</code>
      */
-    public static final int RETCODE_RET_LOGIN_DB_FAIL_VALUE = 22;
+    public static final int RET_LOGIN_DB_FAIL_VALUE = 22;
     /**
-     * <code>RETCODE_RET_LOGIN_INIT_FAIL = 23;</code>
+     * <code>RET_LOGIN_INIT_FAIL = 23;</code>
      */
-    public static final int RETCODE_RET_LOGIN_INIT_FAIL_VALUE = 23;
+    public static final int RET_LOGIN_INIT_FAIL_VALUE = 23;
     /**
-     * <code>RETCODE_RET_MYSQL_DUPLICATE = 24;</code>
+     * <code>RET_MYSQL_DUPLICATE = 24;</code>
      */
-    public static final int RETCODE_RET_MYSQL_DUPLICATE_VALUE = 24;
+    public static final int RET_MYSQL_DUPLICATE_VALUE = 24;
     /**
-     * <code>RETCODE_RET_MAX_PLAYER = 25;</code>
+     * <code>RET_MAX_PLAYER = 25;</code>
      */
-    public static final int RETCODE_RET_MAX_PLAYER_VALUE = 25;
+    public static final int RET_MAX_PLAYER_VALUE = 25;
     /**
-     * <code>RETCODE_RET_ANTI_ADDICT = 26;</code>
+     * <code>RET_ANTI_ADDICT = 26;</code>
      */
-    public static final int RETCODE_RET_ANTI_ADDICT_VALUE = 26;
+    public static final int RET_ANTI_ADDICT_VALUE = 26;
     /**
-     * <code>RETCODE_RET_PS_PLAYER_WITHOUT_ONLINE_ID = 27;</code>
+     * <code>RET_PS_PLAYER_WITHOUT_ONLINE_ID = 27;</code>
      */
-    public static final int RETCODE_RET_PS_PLAYER_WITHOUT_ONLINE_ID_VALUE = 27;
+    public static final int RET_PS_PLAYER_WITHOUT_ONLINE_ID_VALUE = 27;
     /**
-     * <code>RETCODE_RET_ONLINE_ID_NOT_FOUND = 28;</code>
+     * <code>RET_ONLINE_ID_NOT_FOUND = 28;</code>
      */
-    public static final int RETCODE_RET_ONLINE_ID_NOT_FOUND_VALUE = 28;
+    public static final int RET_ONLINE_ID_NOT_FOUND_VALUE = 28;
     /**
-     * <code>RETCODE_RET_ONLNE_ID_NOT_MATCH = 29;</code>
+     * <code>RET_ONLNE_ID_NOT_MATCH = 29;</code>
      */
-    public static final int RETCODE_RET_ONLNE_ID_NOT_MATCH_VALUE = 29;
+    public static final int RET_ONLNE_ID_NOT_MATCH_VALUE = 29;
     /**
-     * <code>RETCODE_RET_REGISTER_IS_FULL = 30;</code>
+     * <code>RET_REGISTER_IS_FULL = 30;</code>
      */
-    public static final int RETCODE_RET_REGISTER_IS_FULL_VALUE = 30;
+    public static final int RET_REGISTER_IS_FULL_VALUE = 30;
     /**
-     * <code>RETCODE_RET_CHECKSUM_INVALID = 31;</code>
+     * <code>RET_CHECKSUM_INVALID = 31;</code>
      */
-    public static final int RETCODE_RET_CHECKSUM_INVALID_VALUE = 31;
+    public static final int RET_CHECKSUM_INVALID_VALUE = 31;
     /**
-     * <code>RETCODE_RET_BLACK_REGISTER_IP = 32;</code>
+     * <code>RET_BLACK_REGISTER_IP = 32;</code>
      */
-    public static final int RETCODE_RET_BLACK_REGISTER_IP_VALUE = 32;
+    public static final int RET_BLACK_REGISTER_IP_VALUE = 32;
     /**
-     * <code>RETCODE_RET_EXCEED_REGISTER_RATE = 33;</code>
+     * <code>RET_EXCEED_REGISTER_RATE = 33;</code>
      */
-    public static final int RETCODE_RET_EXCEED_REGISTER_RATE_VALUE = 33;
+    public static final int RET_EXCEED_REGISTER_RATE_VALUE = 33;
     /**
-     * <code>RETCODE_RET_UNKNOWN_PLATFORM = 34;</code>
+     * <code>RET_UNKNOWN_PLATFORM = 34;</code>
      */
-    public static final int RETCODE_RET_UNKNOWN_PLATFORM_VALUE = 34;
+    public static final int RET_UNKNOWN_PLATFORM_VALUE = 34;
     /**
-     * <code>RETCODE_RET_TOKEN_PARAM_ERROR = 35;</code>
+     * <code>RET_TOKEN_PARAM_ERROR = 35;</code>
      */
-    public static final int RETCODE_RET_TOKEN_PARAM_ERROR_VALUE = 35;
+    public static final int RET_TOKEN_PARAM_ERROR_VALUE = 35;
     /**
-     * <code>RETCODE_RET_ANTI_OFFLINE_ERROR = 36;</code>
+     * <code>RET_ANTI_OFFLINE_ERROR = 36;</code>
      */
-    public static final int RETCODE_RET_ANTI_OFFLINE_ERROR_VALUE = 36;
+    public static final int RET_ANTI_OFFLINE_ERROR_VALUE = 36;
     /**
-     * <code>RETCODE_RET_BLACK_LOGIN_IP = 37;</code>
+     * <code>RET_BLACK_LOGIN_IP = 37;</code>
      */
-    public static final int RETCODE_RET_BLACK_LOGIN_IP_VALUE = 37;
+    public static final int RET_BLACK_LOGIN_IP_VALUE = 37;
     /**
-     * <code>RETCODE_RET_GET_TOKEN_SESSION_HAS_UID = 38;</code>
+     * <code>RET_GET_TOKEN_SESSION_HAS_UID = 38;</code>
      */
-    public static final int RETCODE_RET_GET_TOKEN_SESSION_HAS_UID_VALUE = 38;
+    public static final int RET_GET_TOKEN_SESSION_HAS_UID_VALUE = 38;
     /**
-     * <code>RETCODE_RET_ENVIRONMENT_ERROR = 39;</code>
+     * <code>RET_ENVIRONMENT_ERROR = 39;</code>
      */
-    public static final int RETCODE_RET_ENVIRONMENT_ERROR_VALUE = 39;
+    public static final int RET_ENVIRONMENT_ERROR_VALUE = 39;
     /**
-     * <code>RETCODE_RET_CHECK_CLIENT_VERSION_HASH_FAIL = 40;</code>
+     * <code>RET_CHECK_CLIENT_VERSION_HASH_FAIL = 40;</code>
      */
-    public static final int RETCODE_RET_CHECK_CLIENT_VERSION_HASH_FAIL_VALUE = 40;
+    public static final int RET_CHECK_CLIENT_VERSION_HASH_FAIL_VALUE = 40;
     /**
-     * <code>RETCODE_RET_MINOR_REGISTER_FOBIDDEN = 41;</code>
+     * <code>RET_MINOR_REGISTER_FOBIDDEN = 41;</code>
      */
-    public static final int RETCODE_RET_MINOR_REGISTER_FOBIDDEN_VALUE = 41;
+    public static final int RET_MINOR_REGISTER_FOBIDDEN_VALUE = 41;
     /**
-     * <code>RETCODE_RET_SECURITY_LIBRARY_ERROR = 42;</code>
+     * <code>RET_SECURITY_LIBRARY_ERROR = 42;</code>
      */
-    public static final int RETCODE_RET_SECURITY_LIBRARY_ERROR_VALUE = 42;
+    public static final int RET_SECURITY_LIBRARY_ERROR_VALUE = 42;
     /**
-     * <code>RETCODE_RET_AVATAR_IN_CD = 101;</code>
+     * <code>RET_AVATAR_IN_CD = 101;</code>
      */
-    public static final int RETCODE_RET_AVATAR_IN_CD_VALUE = 101;
+    public static final int RET_AVATAR_IN_CD_VALUE = 101;
     /**
-     * <code>RETCODE_RET_AVATAR_NOT_ALIVE = 102;</code>
+     * <code>RET_AVATAR_NOT_ALIVE = 102;</code>
      */
-    public static final int RETCODE_RET_AVATAR_NOT_ALIVE_VALUE = 102;
+    public static final int RET_AVATAR_NOT_ALIVE_VALUE = 102;
     /**
-     * <code>RETCODE_RET_AVATAR_NOT_ON_SCENE = 103;</code>
+     * <code>RET_AVATAR_NOT_ON_SCENE = 103;</code>
      */
-    public static final int RETCODE_RET_AVATAR_NOT_ON_SCENE_VALUE = 103;
+    public static final int RET_AVATAR_NOT_ON_SCENE_VALUE = 103;
     /**
-     * <code>RETCODE_RET_CAN_NOT_FIND_AVATAR = 104;</code>
+     * <code>RET_CAN_NOT_FIND_AVATAR = 104;</code>
      */
-    public static final int RETCODE_RET_CAN_NOT_FIND_AVATAR_VALUE = 104;
+    public static final int RET_CAN_NOT_FIND_AVATAR_VALUE = 104;
     /**
-     * <code>RETCODE_RET_CAN_NOT_DEL_CUR_AVATAR = 105;</code>
+     * <code>RET_CAN_NOT_DEL_CUR_AVATAR = 105;</code>
      */
-    public static final int RETCODE_RET_CAN_NOT_DEL_CUR_AVATAR_VALUE = 105;
+    public static final int RET_CAN_NOT_DEL_CUR_AVATAR_VALUE = 105;
     /**
-     * <code>RETCODE_RET_DUPLICATE_AVATAR = 106;</code>
+     * <code>RET_DUPLICATE_AVATAR = 106;</code>
      */
-    public static final int RETCODE_RET_DUPLICATE_AVATAR_VALUE = 106;
+    public static final int RET_DUPLICATE_AVATAR_VALUE = 106;
     /**
-     * <code>RETCODE_RET_AVATAR_IS_SAME_ONE = 107;</code>
+     * <code>RET_AVATAR_IS_SAME_ONE = 107;</code>
      */
-    public static final int RETCODE_RET_AVATAR_IS_SAME_ONE_VALUE = 107;
+    public static final int RET_AVATAR_IS_SAME_ONE_VALUE = 107;
     /**
-     * <code>RETCODE_RET_AVATAR_LEVEL_LESS_THAN = 108;</code>
+     * <code>RET_AVATAR_LEVEL_LESS_THAN = 108;</code>
      */
-    public static final int RETCODE_RET_AVATAR_LEVEL_LESS_THAN_VALUE = 108;
+    public static final int RET_AVATAR_LEVEL_LESS_THAN_VALUE = 108;
     /**
-     * <code>RETCODE_RET_AVATAR_CAN_NOT_CHANGE_ELEMENT = 109;</code>
+     * <code>RET_AVATAR_CAN_NOT_CHANGE_ELEMENT = 109;</code>
      */
-    public static final int RETCODE_RET_AVATAR_CAN_NOT_CHANGE_ELEMENT_VALUE = 109;
+    public static final int RET_AVATAR_CAN_NOT_CHANGE_ELEMENT_VALUE = 109;
     /**
-     * <code>RETCODE_RET_AVATAR_BREAK_LEVEL_LESS_THAN = 110;</code>
+     * <code>RET_AVATAR_BREAK_LEVEL_LESS_THAN = 110;</code>
      */
-    public static final int RETCODE_RET_AVATAR_BREAK_LEVEL_LESS_THAN_VALUE = 110;
+    public static final int RET_AVATAR_BREAK_LEVEL_LESS_THAN_VALUE = 110;
     /**
-     * <code>RETCODE_RET_AVATAR_ON_MAX_BREAK_LEVEL = 111;</code>
+     * <code>RET_AVATAR_ON_MAX_BREAK_LEVEL = 111;</code>
      */
-    public static final int RETCODE_RET_AVATAR_ON_MAX_BREAK_LEVEL_VALUE = 111;
+    public static final int RET_AVATAR_ON_MAX_BREAK_LEVEL_VALUE = 111;
     /**
-     * <code>RETCODE_RET_AVATAR_ID_ALREADY_EXIST = 112;</code>
+     * <code>RET_AVATAR_ID_ALREADY_EXIST = 112;</code>
      */
-    public static final int RETCODE_RET_AVATAR_ID_ALREADY_EXIST_VALUE = 112;
+    public static final int RET_AVATAR_ID_ALREADY_EXIST_VALUE = 112;
     /**
-     * <code>RETCODE_RET_AVATAR_NOT_DEAD = 113;</code>
+     * <code>RET_AVATAR_NOT_DEAD = 113;</code>
      */
-    public static final int RETCODE_RET_AVATAR_NOT_DEAD_VALUE = 113;
+    public static final int RET_AVATAR_NOT_DEAD_VALUE = 113;
     /**
-     * <code>RETCODE_RET_AVATAR_IS_REVIVING = 114;</code>
+     * <code>RET_AVATAR_IS_REVIVING = 114;</code>
      */
-    public static final int RETCODE_RET_AVATAR_IS_REVIVING_VALUE = 114;
+    public static final int RET_AVATAR_IS_REVIVING_VALUE = 114;
     /**
-     * <code>RETCODE_RET_AVATAR_ID_ERROR = 115;</code>
+     * <code>RET_AVATAR_ID_ERROR = 115;</code>
      */
-    public static final int RETCODE_RET_AVATAR_ID_ERROR_VALUE = 115;
+    public static final int RET_AVATAR_ID_ERROR_VALUE = 115;
     /**
-     * <code>RETCODE_RET_REPEAT_SET_PLAYER_BORN_DATA = 116;</code>
+     * <code>RET_REPEAT_SET_PLAYER_BORN_DATA = 116;</code>
      */
-    public static final int RETCODE_RET_REPEAT_SET_PLAYER_BORN_DATA_VALUE = 116;
+    public static final int RET_REPEAT_SET_PLAYER_BORN_DATA_VALUE = 116;
     /**
-     * <code>RETCODE_RET_PLAYER_LEVEL_LESS_THAN = 117;</code>
+     * <code>RET_PLAYER_LEVEL_LESS_THAN = 117;</code>
      */
-    public static final int RETCODE_RET_PLAYER_LEVEL_LESS_THAN_VALUE = 117;
+    public static final int RET_PLAYER_LEVEL_LESS_THAN_VALUE = 117;
     /**
-     * <code>RETCODE_RET_AVATAR_LIMIT_LEVEL_ERROR = 118;</code>
+     * <code>RET_AVATAR_LIMIT_LEVEL_ERROR = 118;</code>
      */
-    public static final int RETCODE_RET_AVATAR_LIMIT_LEVEL_ERROR_VALUE = 118;
+    public static final int RET_AVATAR_LIMIT_LEVEL_ERROR_VALUE = 118;
     /**
-     * <code>RETCODE_RET_CUR_AVATAR_NOT_ALIVE = 119;</code>
+     * <code>RET_CUR_AVATAR_NOT_ALIVE = 119;</code>
      */
-    public static final int RETCODE_RET_CUR_AVATAR_NOT_ALIVE_VALUE = 119;
+    public static final int RET_CUR_AVATAR_NOT_ALIVE_VALUE = 119;
     /**
-     * <code>RETCODE_RET_CAN_NOT_FIND_TEAM = 120;</code>
+     * <code>RET_CAN_NOT_FIND_TEAM = 120;</code>
      */
-    public static final int RETCODE_RET_CAN_NOT_FIND_TEAM_VALUE = 120;
+    public static final int RET_CAN_NOT_FIND_TEAM_VALUE = 120;
     /**
-     * <code>RETCODE_RET_CAN_NOT_FIND_CUR_TEAM = 121;</code>
+     * <code>RET_CAN_NOT_FIND_CUR_TEAM = 121;</code>
      */
-    public static final int RETCODE_RET_CAN_NOT_FIND_CUR_TEAM_VALUE = 121;
+    public static final int RET_CAN_NOT_FIND_CUR_TEAM_VALUE = 121;
     /**
-     * <code>RETCODE_RET_AVATAR_NOT_EXIST_IN_TEAM = 122;</code>
+     * <code>RET_AVATAR_NOT_EXIST_IN_TEAM = 122;</code>
      */
-    public static final int RETCODE_RET_AVATAR_NOT_EXIST_IN_TEAM_VALUE = 122;
+    public static final int RET_AVATAR_NOT_EXIST_IN_TEAM_VALUE = 122;
     /**
-     * <code>RETCODE_RET_CAN_NOT_REMOVE_CUR_AVATAR_FROM_TEAM = 123;</code>
+     * <code>RET_CAN_NOT_REMOVE_CUR_AVATAR_FROM_TEAM = 123;</code>
      */
-    public static final int RETCODE_RET_CAN_NOT_REMOVE_CUR_AVATAR_FROM_TEAM_VALUE = 123;
+    public static final int RET_CAN_NOT_REMOVE_CUR_AVATAR_FROM_TEAM_VALUE = 123;
     /**
-     * <code>RETCODE_RET_CAN_NOT_USE_REVIVE_ITEM_FOR_CUR_AVATAR = 124;</code>
+     * <code>RET_CAN_NOT_USE_REVIVE_ITEM_FOR_CUR_AVATAR = 124;</code>
      */
-    public static final int RETCODE_RET_CAN_NOT_USE_REVIVE_ITEM_FOR_CUR_AVATAR_VALUE = 124;
+    public static final int RET_CAN_NOT_USE_REVIVE_ITEM_FOR_CUR_AVATAR_VALUE = 124;
     /**
-     * <code>RETCODE_RET_TEAM_COST_EXCEED_LIMIT = 125;</code>
+     * <code>RET_TEAM_COST_EXCEED_LIMIT = 125;</code>
      */
-    public static final int RETCODE_RET_TEAM_COST_EXCEED_LIMIT_VALUE = 125;
+    public static final int RET_TEAM_COST_EXCEED_LIMIT_VALUE = 125;
     /**
-     * <code>RETCODE_RET_TEAM_AVATAR_IN_EXPEDITION = 126;</code>
+     * <code>RET_TEAM_AVATAR_IN_EXPEDITION = 126;</code>
      */
-    public static final int RETCODE_RET_TEAM_AVATAR_IN_EXPEDITION_VALUE = 126;
+    public static final int RET_TEAM_AVATAR_IN_EXPEDITION_VALUE = 126;
     /**
-     * <code>RETCODE_RET_TEAM_CAN_NOT_CHOSE_REPLACE_USE = 127;</code>
+     * <code>RET_TEAM_CAN_NOT_CHOSE_REPLACE_USE = 127;</code>
      */
-    public static final int RETCODE_RET_TEAM_CAN_NOT_CHOSE_REPLACE_USE_VALUE = 127;
+    public static final int RET_TEAM_CAN_NOT_CHOSE_REPLACE_USE_VALUE = 127;
     /**
-     * <code>RETCODE_RET_AVATAR_IN_COMBAT = 128;</code>
+     * <code>RET_AVATAR_IN_COMBAT = 128;</code>
      */
-    public static final int RETCODE_RET_AVATAR_IN_COMBAT_VALUE = 128;
+    public static final int RET_AVATAR_IN_COMBAT_VALUE = 128;
     /**
-     * <code>RETCODE_RET_NICKNAME_UTF8_ERROR = 130;</code>
+     * <code>RET_NICKNAME_UTF8_ERROR = 130;</code>
      */
-    public static final int RETCODE_RET_NICKNAME_UTF8_ERROR_VALUE = 130;
+    public static final int RET_NICKNAME_UTF8_ERROR_VALUE = 130;
     /**
-     * <code>RETCODE_RET_NICKNAME_TOO_LONG = 131;</code>
+     * <code>RET_NICKNAME_TOO_LONG = 131;</code>
      */
-    public static final int RETCODE_RET_NICKNAME_TOO_LONG_VALUE = 131;
+    public static final int RET_NICKNAME_TOO_LONG_VALUE = 131;
     /**
-     * <code>RETCODE_RET_NICKNAME_WORD_ILLEGAL = 132;</code>
+     * <code>RET_NICKNAME_WORD_ILLEGAL = 132;</code>
      */
-    public static final int RETCODE_RET_NICKNAME_WORD_ILLEGAL_VALUE = 132;
+    public static final int RET_NICKNAME_WORD_ILLEGAL_VALUE = 132;
     /**
-     * <code>RETCODE_RET_NICKNAME_TOO_MANY_DIGITS = 133;</code>
+     * <code>RET_NICKNAME_TOO_MANY_DIGITS = 133;</code>
      */
-    public static final int RETCODE_RET_NICKNAME_TOO_MANY_DIGITS_VALUE = 133;
+    public static final int RET_NICKNAME_TOO_MANY_DIGITS_VALUE = 133;
     /**
-     * <code>RETCODE_RET_NICKNAME_IS_EMPTY = 134;</code>
+     * <code>RET_NICKNAME_IS_EMPTY = 134;</code>
      */
-    public static final int RETCODE_RET_NICKNAME_IS_EMPTY_VALUE = 134;
+    public static final int RET_NICKNAME_IS_EMPTY_VALUE = 134;
     /**
-     * <code>RETCODE_RET_NICKNAME_MONTHLY_LIMIT = 135;</code>
+     * <code>RET_NICKNAME_MONTHLY_LIMIT = 135;</code>
      */
-    public static final int RETCODE_RET_NICKNAME_MONTHLY_LIMIT_VALUE = 135;
+    public static final int RET_NICKNAME_MONTHLY_LIMIT_VALUE = 135;
     /**
-     * <code>RETCODE_RET_NICKNAME_NOT_CHANGED = 136;</code>
+     * <code>RET_NICKNAME_NOT_CHANGED = 136;</code>
      */
-    public static final int RETCODE_RET_NICKNAME_NOT_CHANGED_VALUE = 136;
+    public static final int RET_NICKNAME_NOT_CHANGED_VALUE = 136;
     /**
-     * <code>RETCODE_RET_PLAYER_NOT_ONLINE = 140;</code>
+     * <code>RET_PLAYER_NOT_ONLINE = 140;</code>
      */
-    public static final int RETCODE_RET_PLAYER_NOT_ONLINE_VALUE = 140;
+    public static final int RET_PLAYER_NOT_ONLINE_VALUE = 140;
     /**
-     * <code>RETCODE_RET_OPEN_STATE_NOT_OPEN = 141;</code>
+     * <code>RET_OPEN_STATE_NOT_OPEN = 141;</code>
      */
-    public static final int RETCODE_RET_OPEN_STATE_NOT_OPEN_VALUE = 141;
+    public static final int RET_OPEN_STATE_NOT_OPEN_VALUE = 141;
     /**
-     * <code>RETCODE_RET_FEATURE_CLOSED = 142;</code>
+     * <code>RET_FEATURE_CLOSED = 142;</code>
      */
-    public static final int RETCODE_RET_FEATURE_CLOSED_VALUE = 142;
+    public static final int RET_FEATURE_CLOSED_VALUE = 142;
     /**
-     * <code>RETCODE_RET_AVATAR_EXPEDITION_AVATAR_DIE = 152;</code>
+     * <code>RET_AVATAR_EXPEDITION_AVATAR_DIE = 152;</code>
      */
-    public static final int RETCODE_RET_AVATAR_EXPEDITION_AVATAR_DIE_VALUE = 152;
+    public static final int RET_AVATAR_EXPEDITION_AVATAR_DIE_VALUE = 152;
     /**
-     * <code>RETCODE_RET_AVATAR_EXPEDITION_COUNT_LIMIT = 153;</code>
+     * <code>RET_AVATAR_EXPEDITION_COUNT_LIMIT = 153;</code>
      */
-    public static final int RETCODE_RET_AVATAR_EXPEDITION_COUNT_LIMIT_VALUE = 153;
+    public static final int RET_AVATAR_EXPEDITION_COUNT_LIMIT_VALUE = 153;
     /**
-     * <code>RETCODE_RET_AVATAR_EXPEDITION_MAIN_FORBID = 154;</code>
+     * <code>RET_AVATAR_EXPEDITION_MAIN_FORBID = 154;</code>
      */
-    public static final int RETCODE_RET_AVATAR_EXPEDITION_MAIN_FORBID_VALUE = 154;
+    public static final int RET_AVATAR_EXPEDITION_MAIN_FORBID_VALUE = 154;
     /**
-     * <code>RETCODE_RET_AVATAR_EXPEDITION_TRIAL_FORBID = 155;</code>
+     * <code>RET_AVATAR_EXPEDITION_TRIAL_FORBID = 155;</code>
      */
-    public static final int RETCODE_RET_AVATAR_EXPEDITION_TRIAL_FORBID_VALUE = 155;
+    public static final int RET_AVATAR_EXPEDITION_TRIAL_FORBID_VALUE = 155;
     /**
-     * <code>RETCODE_RET_TEAM_NAME_ILLEGAL = 156;</code>
+     * <code>RET_TEAM_NAME_ILLEGAL = 156;</code>
      */
-    public static final int RETCODE_RET_TEAM_NAME_ILLEGAL_VALUE = 156;
+    public static final int RET_TEAM_NAME_ILLEGAL_VALUE = 156;
     /**
-     * <code>RETCODE_RET_IS_NOT_IN_STANDBY = 157;</code>
+     * <code>RET_IS_NOT_IN_STANDBY = 157;</code>
      */
-    public static final int RETCODE_RET_IS_NOT_IN_STANDBY_VALUE = 157;
+    public static final int RET_IS_NOT_IN_STANDBY_VALUE = 157;
     /**
-     * <code>RETCODE_RET_IS_IN_DUNGEON = 158;</code>
+     * <code>RET_IS_IN_DUNGEON = 158;</code>
      */
-    public static final int RETCODE_RET_IS_IN_DUNGEON_VALUE = 158;
+    public static final int RET_IS_IN_DUNGEON_VALUE = 158;
     /**
-     * <code>RETCODE_RET_IS_IN_LOCK_AVATAR_QUEST = 159;</code>
+     * <code>RET_IS_IN_LOCK_AVATAR_QUEST = 159;</code>
      */
-    public static final int RETCODE_RET_IS_IN_LOCK_AVATAR_QUEST_VALUE = 159;
+    public static final int RET_IS_IN_LOCK_AVATAR_QUEST_VALUE = 159;
     /**
-     * <code>RETCODE_RET_IS_USING_TRIAL_AVATAR = 160;</code>
+     * <code>RET_IS_USING_TRIAL_AVATAR = 160;</code>
      */
-    public static final int RETCODE_RET_IS_USING_TRIAL_AVATAR_VALUE = 160;
+    public static final int RET_IS_USING_TRIAL_AVATAR_VALUE = 160;
     /**
-     * <code>RETCODE_RET_IS_USING_TEMP_AVATAR = 161;</code>
+     * <code>RET_IS_USING_TEMP_AVATAR = 161;</code>
      */
-    public static final int RETCODE_RET_IS_USING_TEMP_AVATAR_VALUE = 161;
+    public static final int RET_IS_USING_TEMP_AVATAR_VALUE = 161;
     /**
-     * <code>RETCODE_RET_NOT_HAS_FLYCLOAK = 162;</code>
+     * <code>RET_NOT_HAS_FLYCLOAK = 162;</code>
      */
-    public static final int RETCODE_RET_NOT_HAS_FLYCLOAK_VALUE = 162;
+    public static final int RET_NOT_HAS_FLYCLOAK_VALUE = 162;
     /**
-     * <code>RETCODE_RET_FETTER_REWARD_ALREADY_GOT = 163;</code>
+     * <code>RET_FETTER_REWARD_ALREADY_GOT = 163;</code>
      */
-    public static final int RETCODE_RET_FETTER_REWARD_ALREADY_GOT_VALUE = 163;
+    public static final int RET_FETTER_REWARD_ALREADY_GOT_VALUE = 163;
     /**
-     * <code>RETCODE_RET_FETTER_REWARD_LEVEL_NOT_ENOUGH = 164;</code>
+     * <code>RET_FETTER_REWARD_LEVEL_NOT_ENOUGH = 164;</code>
      */
-    public static final int RETCODE_RET_FETTER_REWARD_LEVEL_NOT_ENOUGH_VALUE = 164;
+    public static final int RET_FETTER_REWARD_LEVEL_NOT_ENOUGH_VALUE = 164;
     /**
-     * <code>RETCODE_RET_WORLD_LEVEL_ADJUST_MIN_LEVEL = 165;</code>
+     * <code>RET_WORLD_LEVEL_ADJUST_MIN_LEVEL = 165;</code>
      */
-    public static final int RETCODE_RET_WORLD_LEVEL_ADJUST_MIN_LEVEL_VALUE = 165;
+    public static final int RET_WORLD_LEVEL_ADJUST_MIN_LEVEL_VALUE = 165;
     /**
-     * <code>RETCODE_RET_WORLD_LEVEL_ADJUST_CD = 166;</code>
+     * <code>RET_WORLD_LEVEL_ADJUST_CD = 166;</code>
      */
-    public static final int RETCODE_RET_WORLD_LEVEL_ADJUST_CD_VALUE = 166;
+    public static final int RET_WORLD_LEVEL_ADJUST_CD_VALUE = 166;
     /**
-     * <code>RETCODE_RET_NOT_HAS_COSTUME = 167;</code>
+     * <code>RET_NOT_HAS_COSTUME = 167;</code>
      */
-    public static final int RETCODE_RET_NOT_HAS_COSTUME_VALUE = 167;
+    public static final int RET_NOT_HAS_COSTUME_VALUE = 167;
     /**
-     * <code>RETCODE_RET_COSTUME_AVATAR_ERROR = 168;</code>
+     * <code>RET_COSTUME_AVATAR_ERROR = 168;</code>
      */
-    public static final int RETCODE_RET_COSTUME_AVATAR_ERROR_VALUE = 168;
+    public static final int RET_COSTUME_AVATAR_ERROR_VALUE = 168;
     /**
-     * <code>RETCODE_RET_FLYCLOAK_PLATFORM_TYPE_ERR = 169;</code>
+     * <code>RET_FLYCLOAK_PLATFORM_TYPE_ERR = 169;</code>
      */
-    public static final int RETCODE_RET_FLYCLOAK_PLATFORM_TYPE_ERR_VALUE = 169;
+    public static final int RET_FLYCLOAK_PLATFORM_TYPE_ERR_VALUE = 169;
     /**
-     * <code>RETCODE_RET_IN_TRANSFER = 170;</code>
+     * <code>RET_IN_TRANSFER = 170;</code>
      */
-    public static final int RETCODE_RET_IN_TRANSFER_VALUE = 170;
+    public static final int RET_IN_TRANSFER_VALUE = 170;
     /**
-     * <code>RETCODE_RET_IS_IN_LOCK_AVATAR = 171;</code>
+     * <code>RET_IS_IN_LOCK_AVATAR = 171;</code>
      */
-    public static final int RETCODE_RET_IS_IN_LOCK_AVATAR_VALUE = 171;
+    public static final int RET_IS_IN_LOCK_AVATAR_VALUE = 171;
     /**
-     * <code>RETCODE_RET_FULL_BACKUP_TEAM = 172;</code>
+     * <code>RET_FULL_BACKUP_TEAM = 172;</code>
      */
-    public static final int RETCODE_RET_FULL_BACKUP_TEAM_VALUE = 172;
+    public static final int RET_FULL_BACKUP_TEAM_VALUE = 172;
     /**
-     * <code>RETCODE_RET_BACKUP_TEAM_ID_NOT_VALID = 173;</code>
+     * <code>RET_BACKUP_TEAM_ID_NOT_VALID = 173;</code>
      */
-    public static final int RETCODE_RET_BACKUP_TEAM_ID_NOT_VALID_VALUE = 173;
+    public static final int RET_BACKUP_TEAM_ID_NOT_VALID_VALUE = 173;
     /**
-     * <code>RETCODE_RET_BACKUP_TEAM_IS_CUR_TEAM = 174;</code>
+     * <code>RET_BACKUP_TEAM_IS_CUR_TEAM = 174;</code>
      */
-    public static final int RETCODE_RET_BACKUP_TEAM_IS_CUR_TEAM_VALUE = 174;
+    public static final int RET_BACKUP_TEAM_IS_CUR_TEAM_VALUE = 174;
     /**
-     * <code>RETCODE_RET_FLOAT_ERROR = 201;</code>
+     * <code>RET_AVATAR_RENAME_IN_CD = 175;</code>
      */
-    public static final int RETCODE_RET_FLOAT_ERROR_VALUE = 201;
+    public static final int RET_AVATAR_RENAME_IN_CD_VALUE = 175;
     /**
-     * <code>RETCODE_RET_NPC_NOT_EXIST = 301;</code>
+     * <code>RET_AVATAR_RENAME_IN_AUDIT = 176;</code>
      */
-    public static final int RETCODE_RET_NPC_NOT_EXIST_VALUE = 301;
+    public static final int RET_AVATAR_RENAME_IN_AUDIT_VALUE = 176;
     /**
-     * <code>RETCODE_RET_NPC_TOO_FAR = 302;</code>
+     * <code>RET_AVATAR_RENAME_IN_IP_BLACK_LIST = 177;</code>
      */
-    public static final int RETCODE_RET_NPC_TOO_FAR_VALUE = 302;
+    public static final int RET_AVATAR_RENAME_IN_IP_BLACK_LIST_VALUE = 177;
     /**
-     * <code>RETCODE_RET_NOT_CURRENT_TALK = 303;</code>
+     * <code>RET_FLOAT_ERROR = 201;</code>
      */
-    public static final int RETCODE_RET_NOT_CURRENT_TALK_VALUE = 303;
+    public static final int RET_FLOAT_ERROR_VALUE = 201;
     /**
-     * <code>RETCODE_RET_NPC_CREATE_FAIL = 304;</code>
+     * <code>RET_NPC_NOT_EXIST = 301;</code>
      */
-    public static final int RETCODE_RET_NPC_CREATE_FAIL_VALUE = 304;
+    public static final int RET_NPC_NOT_EXIST_VALUE = 301;
     /**
-     * <code>RETCODE_RET_NPC_MOVE_FAIL = 305;</code>
+     * <code>RET_NPC_TOO_FAR = 302;</code>
      */
-    public static final int RETCODE_RET_NPC_MOVE_FAIL_VALUE = 305;
+    public static final int RET_NPC_TOO_FAR_VALUE = 302;
     /**
-     * <code>RETCODE_RET_QUEST_NOT_EXIST = 401;</code>
+     * <code>RET_NOT_CURRENT_TALK = 303;</code>
      */
-    public static final int RETCODE_RET_QUEST_NOT_EXIST_VALUE = 401;
+    public static final int RET_NOT_CURRENT_TALK_VALUE = 303;
     /**
-     * <code>RETCODE_RET_QUEST_IS_FAIL = 402;</code>
+     * <code>RET_NPC_CREATE_FAIL = 304;</code>
      */
-    public static final int RETCODE_RET_QUEST_IS_FAIL_VALUE = 402;
+    public static final int RET_NPC_CREATE_FAIL_VALUE = 304;
     /**
-     * <code>RETCODE_RET_QUEST_CONTENT_ERROR = 403;</code>
+     * <code>RET_NPC_MOVE_FAIL = 305;</code>
      */
-    public static final int RETCODE_RET_QUEST_CONTENT_ERROR_VALUE = 403;
+    public static final int RET_NPC_MOVE_FAIL_VALUE = 305;
     /**
-     * <code>RETCODE_RET_BARGAIN_NOT_ACTIVATED = 404;</code>
+     * <code>RET_QUEST_NOT_EXIST = 401;</code>
      */
-    public static final int RETCODE_RET_BARGAIN_NOT_ACTIVATED_VALUE = 404;
+    public static final int RET_QUEST_NOT_EXIST_VALUE = 401;
     /**
-     * <code>RETCODE_RET_BARGAIN_FINISHED = 405;</code>
+     * <code>RET_QUEST_IS_FAIL = 402;</code>
      */
-    public static final int RETCODE_RET_BARGAIN_FINISHED_VALUE = 405;
+    public static final int RET_QUEST_IS_FAIL_VALUE = 402;
     /**
-     * <code>RETCODE_RET_INFERENCE_ASSOCIATE_WORD_ERROR = 406;</code>
+     * <code>RET_QUEST_CONTENT_ERROR = 403;</code>
      */
-    public static final int RETCODE_RET_INFERENCE_ASSOCIATE_WORD_ERROR_VALUE = 406;
+    public static final int RET_QUEST_CONTENT_ERROR_VALUE = 403;
     /**
-     * <code>RETCODE_RET_INFERENCE_SUBMIT_WORD_NO_CONCLUSION = 407;</code>
+     * <code>RET_BARGAIN_NOT_ACTIVATED = 404;</code>
      */
-    public static final int RETCODE_RET_INFERENCE_SUBMIT_WORD_NO_CONCLUSION_VALUE = 407;
+    public static final int RET_BARGAIN_NOT_ACTIVATED_VALUE = 404;
     /**
-     * <code>RETCODE_RET_POINT_NOT_UNLOCKED = 501;</code>
+     * <code>RET_BARGAIN_FINISHED = 405;</code>
      */
-    public static final int RETCODE_RET_POINT_NOT_UNLOCKED_VALUE = 501;
+    public static final int RET_BARGAIN_FINISHED_VALUE = 405;
     /**
-     * <code>RETCODE_RET_POINT_TOO_FAR = 502;</code>
+     * <code>RET_INFERENCE_ASSOCIATE_WORD_ERROR = 406;</code>
      */
-    public static final int RETCODE_RET_POINT_TOO_FAR_VALUE = 502;
+    public static final int RET_INFERENCE_ASSOCIATE_WORD_ERROR_VALUE = 406;
     /**
-     * <code>RETCODE_RET_POINT_ALREAY_UNLOCKED = 503;</code>
+     * <code>RET_INFERENCE_SUBMIT_WORD_NO_CONCLUSION = 407;</code>
      */
-    public static final int RETCODE_RET_POINT_ALREAY_UNLOCKED_VALUE = 503;
+    public static final int RET_INFERENCE_SUBMIT_WORD_NO_CONCLUSION_VALUE = 407;
     /**
-     * <code>RETCODE_RET_ENTITY_NOT_EXIST = 504;</code>
+     * <code>RET_POINT_NOT_UNLOCKED = 501;</code>
      */
-    public static final int RETCODE_RET_ENTITY_NOT_EXIST_VALUE = 504;
+    public static final int RET_POINT_NOT_UNLOCKED_VALUE = 501;
     /**
-     * <code>RETCODE_RET_ENTER_SCENE_FAIL = 505;</code>
+     * <code>RET_POINT_TOO_FAR = 502;</code>
      */
-    public static final int RETCODE_RET_ENTER_SCENE_FAIL_VALUE = 505;
+    public static final int RET_POINT_TOO_FAR_VALUE = 502;
     /**
-     * <code>RETCODE_RET_PLAYER_IS_ENTER_SCENE = 506;</code>
+     * <code>RET_POINT_ALREAY_UNLOCKED = 503;</code>
      */
-    public static final int RETCODE_RET_PLAYER_IS_ENTER_SCENE_VALUE = 506;
+    public static final int RET_POINT_ALREAY_UNLOCKED_VALUE = 503;
     /**
-     * <code>RETCODE_RET_CITY_MAX_LEVEL = 507;</code>
+     * <code>RET_ENTITY_NOT_EXIST = 504;</code>
      */
-    public static final int RETCODE_RET_CITY_MAX_LEVEL_VALUE = 507;
+    public static final int RET_ENTITY_NOT_EXIST_VALUE = 504;
     /**
-     * <code>RETCODE_RET_AREA_LOCKED = 508;</code>
+     * <code>RET_ENTER_SCENE_FAIL = 505;</code>
      */
-    public static final int RETCODE_RET_AREA_LOCKED_VALUE = 508;
+    public static final int RET_ENTER_SCENE_FAIL_VALUE = 505;
     /**
-     * <code>RETCODE_RET_JOIN_OTHER_WAIT = 509;</code>
+     * <code>RET_PLAYER_IS_ENTER_SCENE = 506;</code>
      */
-    public static final int RETCODE_RET_JOIN_OTHER_WAIT_VALUE = 509;
+    public static final int RET_PLAYER_IS_ENTER_SCENE_VALUE = 506;
     /**
-     * <code>RETCODE_RET_WEATHER_AREA_NOT_FOUND = 510;</code>
+     * <code>RET_CITY_MAX_LEVEL = 507;</code>
      */
-    public static final int RETCODE_RET_WEATHER_AREA_NOT_FOUND_VALUE = 510;
+    public static final int RET_CITY_MAX_LEVEL_VALUE = 507;
     /**
-     * <code>RETCODE_RET_WEATHER_IS_LOCKED = 511;</code>
+     * <code>RET_AREA_LOCKED = 508;</code>
      */
-    public static final int RETCODE_RET_WEATHER_IS_LOCKED_VALUE = 511;
+    public static final int RET_AREA_LOCKED_VALUE = 508;
     /**
-     * <code>RETCODE_RET_NOT_IN_SELF_SCENE = 512;</code>
+     * <code>RET_JOIN_OTHER_WAIT = 509;</code>
      */
-    public static final int RETCODE_RET_NOT_IN_SELF_SCENE_VALUE = 512;
+    public static final int RET_JOIN_OTHER_WAIT_VALUE = 509;
     /**
-     * <code>RETCODE_RET_GROUP_NOT_EXIST = 513;</code>
+     * <code>RET_WEATHER_AREA_NOT_FOUND = 510;</code>
      */
-    public static final int RETCODE_RET_GROUP_NOT_EXIST_VALUE = 513;
+    public static final int RET_WEATHER_AREA_NOT_FOUND_VALUE = 510;
     /**
-     * <code>RETCODE_RET_MARK_NAME_ILLEGAL = 514;</code>
+     * <code>RET_WEATHER_IS_LOCKED = 511;</code>
      */
-    public static final int RETCODE_RET_MARK_NAME_ILLEGAL_VALUE = 514;
+    public static final int RET_WEATHER_IS_LOCKED_VALUE = 511;
     /**
-     * <code>RETCODE_RET_MARK_ALREADY_EXISTS = 515;</code>
+     * <code>RET_NOT_IN_SELF_SCENE = 512;</code>
      */
-    public static final int RETCODE_RET_MARK_ALREADY_EXISTS_VALUE = 515;
+    public static final int RET_NOT_IN_SELF_SCENE_VALUE = 512;
     /**
-     * <code>RETCODE_RET_MARK_OVERFLOW = 516;</code>
+     * <code>RET_GROUP_NOT_EXIST = 513;</code>
      */
-    public static final int RETCODE_RET_MARK_OVERFLOW_VALUE = 516;
+    public static final int RET_GROUP_NOT_EXIST_VALUE = 513;
     /**
-     * <code>RETCODE_RET_MARK_NOT_EXISTS = 517;</code>
+     * <code>RET_MARK_NAME_ILLEGAL = 514;</code>
      */
-    public static final int RETCODE_RET_MARK_NOT_EXISTS_VALUE = 517;
+    public static final int RET_MARK_NAME_ILLEGAL_VALUE = 514;
     /**
-     * <code>RETCODE_RET_MARK_UNKNOWN_TYPE = 518;</code>
+     * <code>RET_MARK_ALREADY_EXISTS = 515;</code>
      */
-    public static final int RETCODE_RET_MARK_UNKNOWN_TYPE_VALUE = 518;
+    public static final int RET_MARK_ALREADY_EXISTS_VALUE = 515;
     /**
-     * <code>RETCODE_RET_MARK_NAME_TOO_LONG = 519;</code>
+     * <code>RET_MARK_OVERFLOW = 516;</code>
      */
-    public static final int RETCODE_RET_MARK_NAME_TOO_LONG_VALUE = 519;
+    public static final int RET_MARK_OVERFLOW_VALUE = 516;
     /**
-     * <code>RETCODE_RET_DISTANCE_LONG = 520;</code>
+     * <code>RET_MARK_NOT_EXISTS = 517;</code>
      */
-    public static final int RETCODE_RET_DISTANCE_LONG_VALUE = 520;
+    public static final int RET_MARK_NOT_EXISTS_VALUE = 517;
     /**
-     * <code>RETCODE_RET_ENTER_SCENE_TOKEN_INVALID = 521;</code>
+     * <code>RET_MARK_UNKNOWN_TYPE = 518;</code>
      */
-    public static final int RETCODE_RET_ENTER_SCENE_TOKEN_INVALID_VALUE = 521;
+    public static final int RET_MARK_UNKNOWN_TYPE_VALUE = 518;
     /**
-     * <code>RETCODE_RET_NOT_IN_WORLD_SCENE = 522;</code>
+     * <code>RET_MARK_NAME_TOO_LONG = 519;</code>
      */
-    public static final int RETCODE_RET_NOT_IN_WORLD_SCENE_VALUE = 522;
+    public static final int RET_MARK_NAME_TOO_LONG_VALUE = 519;
     /**
-     * <code>RETCODE_RET_ANY_GALLERY_STARTED = 523;</code>
+     * <code>RET_DISTANCE_LONG = 520;</code>
      */
-    public static final int RETCODE_RET_ANY_GALLERY_STARTED_VALUE = 523;
+    public static final int RET_DISTANCE_LONG_VALUE = 520;
     /**
-     * <code>RETCODE_RET_GALLERY_NOT_START = 524;</code>
+     * <code>RET_ENTER_SCENE_TOKEN_INVALID = 521;</code>
      */
-    public static final int RETCODE_RET_GALLERY_NOT_START_VALUE = 524;
+    public static final int RET_ENTER_SCENE_TOKEN_INVALID_VALUE = 521;
     /**
-     * <code>RETCODE_RET_GALLERY_INTERRUPT_ONLY_ON_SINGLE_MODE = 525;</code>
+     * <code>RET_NOT_IN_WORLD_SCENE = 522;</code>
      */
-    public static final int RETCODE_RET_GALLERY_INTERRUPT_ONLY_ON_SINGLE_MODE_VALUE = 525;
+    public static final int RET_NOT_IN_WORLD_SCENE_VALUE = 522;
     /**
-     * <code>RETCODE_RET_GALLERY_CANNOT_INTERRUPT = 526;</code>
+     * <code>RET_ANY_GALLERY_STARTED = 523;</code>
      */
-    public static final int RETCODE_RET_GALLERY_CANNOT_INTERRUPT_VALUE = 526;
+    public static final int RET_ANY_GALLERY_STARTED_VALUE = 523;
     /**
-     * <code>RETCODE_RET_GALLERY_WORLD_NOT_MEET = 527;</code>
+     * <code>RET_GALLERY_NOT_START = 524;</code>
      */
-    public static final int RETCODE_RET_GALLERY_WORLD_NOT_MEET_VALUE = 527;
+    public static final int RET_GALLERY_NOT_START_VALUE = 524;
     /**
-     * <code>RETCODE_RET_GALLERY_SCENE_NOT_MEET = 528;</code>
+     * <code>RET_GALLERY_INTERRUPT_ONLY_ON_SINGLE_MODE = 525;</code>
      */
-    public static final int RETCODE_RET_GALLERY_SCENE_NOT_MEET_VALUE = 528;
+    public static final int RET_GALLERY_INTERRUPT_ONLY_ON_SINGLE_MODE_VALUE = 525;
     /**
-     * <code>RETCODE_RET_CUR_PLAY_CANNOT_TRANSFER = 529;</code>
+     * <code>RET_GALLERY_CANNOT_INTERRUPT = 526;</code>
      */
-    public static final int RETCODE_RET_CUR_PLAY_CANNOT_TRANSFER_VALUE = 529;
+    public static final int RET_GALLERY_CANNOT_INTERRUPT_VALUE = 526;
     /**
-     * <code>RETCODE_RET_CANT_USE_WIDGET_IN_HOME_SCENE = 530;</code>
+     * <code>RET_GALLERY_WORLD_NOT_MEET = 527;</code>
      */
-    public static final int RETCODE_RET_CANT_USE_WIDGET_IN_HOME_SCENE_VALUE = 530;
+    public static final int RET_GALLERY_WORLD_NOT_MEET_VALUE = 527;
     /**
-     * <code>RETCODE_RET_SCENE_GROUP_NOT_MATCH = 531;</code>
+     * <code>RET_GALLERY_SCENE_NOT_MEET = 528;</code>
      */
-    public static final int RETCODE_RET_SCENE_GROUP_NOT_MATCH_VALUE = 531;
+    public static final int RET_GALLERY_SCENE_NOT_MEET_VALUE = 528;
     /**
-     * <code>RETCODE_RET_POS_ROT_INVALID = 551;</code>
+     * <code>RET_CUR_PLAY_CANNOT_TRANSFER = 529;</code>
      */
-    public static final int RETCODE_RET_POS_ROT_INVALID_VALUE = 551;
+    public static final int RET_CUR_PLAY_CANNOT_TRANSFER_VALUE = 529;
     /**
-     * <code>RETCODE_RET_MARK_INVALID_SCENE_ID = 552;</code>
+     * <code>RET_CANT_USE_WIDGET_IN_HOME_SCENE = 530;</code>
      */
-    public static final int RETCODE_RET_MARK_INVALID_SCENE_ID_VALUE = 552;
+    public static final int RET_CANT_USE_WIDGET_IN_HOME_SCENE_VALUE = 530;
     /**
-     * <code>RETCODE_RET_INVALID_SCENE_TO_USE_ANCHOR_POINT = 553;</code>
+     * <code>RET_SCENE_GROUP_NOT_MATCH = 531;</code>
      */
-    public static final int RETCODE_RET_INVALID_SCENE_TO_USE_ANCHOR_POINT_VALUE = 553;
+    public static final int RET_SCENE_GROUP_NOT_MATCH_VALUE = 531;
     /**
-     * <code>RETCODE_RET_ENTER_HOME_SCENE_FAIL = 554;</code>
+     * <code>RET_POS_ROT_INVALID = 551;</code>
      */
-    public static final int RETCODE_RET_ENTER_HOME_SCENE_FAIL_VALUE = 554;
+    public static final int RET_POS_ROT_INVALID_VALUE = 551;
     /**
-     * <code>RETCODE_RET_CUR_SCENE_IS_NULL = 555;</code>
+     * <code>RET_MARK_INVALID_SCENE_ID = 552;</code>
      */
-    public static final int RETCODE_RET_CUR_SCENE_IS_NULL_VALUE = 555;
+    public static final int RET_MARK_INVALID_SCENE_ID_VALUE = 552;
     /**
-     * <code>RETCODE_RET_GROUP_ID_ERROR = 556;</code>
+     * <code>RET_INVALID_SCENE_TO_USE_ANCHOR_POINT = 553;</code>
      */
-    public static final int RETCODE_RET_GROUP_ID_ERROR_VALUE = 556;
+    public static final int RET_INVALID_SCENE_TO_USE_ANCHOR_POINT_VALUE = 553;
     /**
-     * <code>RETCODE_RET_GALLERY_INTERRUPT_NOT_OWNER = 557;</code>
+     * <code>RET_ENTER_HOME_SCENE_FAIL = 554;</code>
      */
-    public static final int RETCODE_RET_GALLERY_INTERRUPT_NOT_OWNER_VALUE = 557;
+    public static final int RET_ENTER_HOME_SCENE_FAIL_VALUE = 554;
     /**
-     * <code>RETCODE_RET_NO_SPRING_IN_AREA = 558;</code>
+     * <code>RET_CUR_SCENE_IS_NULL = 555;</code>
      */
-    public static final int RETCODE_RET_NO_SPRING_IN_AREA_VALUE = 558;
+    public static final int RET_CUR_SCENE_IS_NULL_VALUE = 555;
     /**
-     * <code>RETCODE_RET_AREA_NOT_IN_SCENE = 559;</code>
+     * <code>RET_GROUP_ID_ERROR = 556;</code>
      */
-    public static final int RETCODE_RET_AREA_NOT_IN_SCENE_VALUE = 559;
+    public static final int RET_GROUP_ID_ERROR_VALUE = 556;
     /**
-     * <code>RETCODE_RET_INVALID_CITY_ID = 560;</code>
+     * <code>RET_GALLERY_INTERRUPT_NOT_OWNER = 557;</code>
      */
-    public static final int RETCODE_RET_INVALID_CITY_ID_VALUE = 560;
+    public static final int RET_GALLERY_INTERRUPT_NOT_OWNER_VALUE = 557;
     /**
-     * <code>RETCODE_RET_INVALID_SCENE_ID = 561;</code>
+     * <code>RET_NO_SPRING_IN_AREA = 558;</code>
      */
-    public static final int RETCODE_RET_INVALID_SCENE_ID_VALUE = 561;
+    public static final int RET_NO_SPRING_IN_AREA_VALUE = 558;
     /**
-     * <code>RETCODE_RET_DEST_SCENE_IS_NOT_ALLOW = 562;</code>
+     * <code>RET_AREA_NOT_IN_SCENE = 559;</code>
      */
-    public static final int RETCODE_RET_DEST_SCENE_IS_NOT_ALLOW_VALUE = 562;
+    public static final int RET_AREA_NOT_IN_SCENE_VALUE = 559;
     /**
-     * <code>RETCODE_RET_LEVEL_TAG_SWITCH_IN_CD = 563;</code>
+     * <code>RET_INVALID_CITY_ID = 560;</code>
      */
-    public static final int RETCODE_RET_LEVEL_TAG_SWITCH_IN_CD_VALUE = 563;
+    public static final int RET_INVALID_CITY_ID_VALUE = 560;
     /**
-     * <code>RETCODE_RET_LEVEL_TAG_ALREADY_EXIST = 564;</code>
+     * <code>RET_INVALID_SCENE_ID = 561;</code>
      */
-    public static final int RETCODE_RET_LEVEL_TAG_ALREADY_EXIST_VALUE = 564;
+    public static final int RET_INVALID_SCENE_ID_VALUE = 561;
     /**
-     * <code>RETCODE_RET_INVALID_AREA_ID = 565;</code>
+     * <code>RET_DEST_SCENE_IS_NOT_ALLOW = 562;</code>
      */
-    public static final int RETCODE_RET_INVALID_AREA_ID_VALUE = 565;
+    public static final int RET_DEST_SCENE_IS_NOT_ALLOW_VALUE = 562;
     /**
-     * <code>RETCODE_RET_ITEM_NOT_EXIST = 601;</code>
+     * <code>RET_LEVEL_TAG_SWITCH_IN_CD = 563;</code>
      */
-    public static final int RETCODE_RET_ITEM_NOT_EXIST_VALUE = 601;
+    public static final int RET_LEVEL_TAG_SWITCH_IN_CD_VALUE = 563;
     /**
-     * <code>RETCODE_RET_PACK_EXCEED_MAX_WEIGHT = 602;</code>
+     * <code>RET_LEVEL_TAG_ALREADY_EXIST = 564;</code>
      */
-    public static final int RETCODE_RET_PACK_EXCEED_MAX_WEIGHT_VALUE = 602;
+    public static final int RET_LEVEL_TAG_ALREADY_EXIST_VALUE = 564;
     /**
-     * <code>RETCODE_RET_ITEM_NOT_DROPABLE = 603;</code>
+     * <code>RET_INVALID_AREA_ID = 565;</code>
      */
-    public static final int RETCODE_RET_ITEM_NOT_DROPABLE_VALUE = 603;
+    public static final int RET_INVALID_AREA_ID_VALUE = 565;
     /**
-     * <code>RETCODE_RET_ITEM_NOT_USABLE = 604;</code>
+     * <code>RET_ITEM_NOT_EXIST = 601;</code>
      */
-    public static final int RETCODE_RET_ITEM_NOT_USABLE_VALUE = 604;
+    public static final int RET_ITEM_NOT_EXIST_VALUE = 601;
     /**
-     * <code>RETCODE_RET_ITEM_INVALID_USE_COUNT = 605;</code>
+     * <code>RET_PACK_EXCEED_MAX_WEIGHT = 602;</code>
      */
-    public static final int RETCODE_RET_ITEM_INVALID_USE_COUNT_VALUE = 605;
+    public static final int RET_PACK_EXCEED_MAX_WEIGHT_VALUE = 602;
     /**
-     * <code>RETCODE_RET_ITEM_INVALID_DROP_COUNT = 606;</code>
+     * <code>RET_ITEM_NOT_DROPABLE = 603;</code>
      */
-    public static final int RETCODE_RET_ITEM_INVALID_DROP_COUNT_VALUE = 606;
+    public static final int RET_ITEM_NOT_DROPABLE_VALUE = 603;
     /**
-     * <code>RETCODE_RET_ITEM_ALREADY_EXIST = 607;</code>
+     * <code>RET_ITEM_NOT_USABLE = 604;</code>
      */
-    public static final int RETCODE_RET_ITEM_ALREADY_EXIST_VALUE = 607;
+    public static final int RET_ITEM_NOT_USABLE_VALUE = 604;
     /**
-     * <code>RETCODE_RET_ITEM_IN_COOLDOWN = 608;</code>
+     * <code>RET_ITEM_INVALID_USE_COUNT = 605;</code>
      */
-    public static final int RETCODE_RET_ITEM_IN_COOLDOWN_VALUE = 608;
+    public static final int RET_ITEM_INVALID_USE_COUNT_VALUE = 605;
     /**
-     * <code>RETCODE_RET_ITEM_COUNT_NOT_ENOUGH = 609;</code>
+     * <code>RET_ITEM_INVALID_DROP_COUNT = 606;</code>
      */
-    public static final int RETCODE_RET_ITEM_COUNT_NOT_ENOUGH_VALUE = 609;
+    public static final int RET_ITEM_INVALID_DROP_COUNT_VALUE = 606;
     /**
-     * <code>RETCODE_RET_ITEM_INVALID_TARGET = 610;</code>
+     * <code>RET_ITEM_ALREADY_EXIST = 607;</code>
      */
-    public static final int RETCODE_RET_ITEM_INVALID_TARGET_VALUE = 610;
+    public static final int RET_ITEM_ALREADY_EXIST_VALUE = 607;
     /**
-     * <code>RETCODE_RET_RECIPE_NOT_EXIST = 611;</code>
+     * <code>RET_ITEM_IN_COOLDOWN = 608;</code>
      */
-    public static final int RETCODE_RET_RECIPE_NOT_EXIST_VALUE = 611;
+    public static final int RET_ITEM_IN_COOLDOWN_VALUE = 608;
     /**
-     * <code>RETCODE_RET_RECIPE_LOCKED = 612;</code>
+     * <code>RET_ITEM_COUNT_NOT_ENOUGH = 609;</code>
      */
-    public static final int RETCODE_RET_RECIPE_LOCKED_VALUE = 612;
+    public static final int RET_ITEM_COUNT_NOT_ENOUGH_VALUE = 609;
     /**
-     * <code>RETCODE_RET_RECIPE_UNLOCKED = 613;</code>
+     * <code>RET_ITEM_INVALID_TARGET = 610;</code>
      */
-    public static final int RETCODE_RET_RECIPE_UNLOCKED_VALUE = 613;
+    public static final int RET_ITEM_INVALID_TARGET_VALUE = 610;
     /**
-     * <code>RETCODE_RET_COMPOUND_QUEUE_FULL = 614;</code>
+     * <code>RET_RECIPE_NOT_EXIST = 611;</code>
      */
-    public static final int RETCODE_RET_COMPOUND_QUEUE_FULL_VALUE = 614;
+    public static final int RET_RECIPE_NOT_EXIST_VALUE = 611;
     /**
-     * <code>RETCODE_RET_COMPOUND_NOT_FINISH = 615;</code>
+     * <code>RET_RECIPE_LOCKED = 612;</code>
      */
-    public static final int RETCODE_RET_COMPOUND_NOT_FINISH_VALUE = 615;
+    public static final int RET_RECIPE_LOCKED_VALUE = 612;
     /**
-     * <code>RETCODE_RET_MAIL_ITEM_NOT_GET = 616;</code>
+     * <code>RET_RECIPE_UNLOCKED = 613;</code>
      */
-    public static final int RETCODE_RET_MAIL_ITEM_NOT_GET_VALUE = 616;
+    public static final int RET_RECIPE_UNLOCKED_VALUE = 613;
     /**
-     * <code>RETCODE_RET_ITEM_EXCEED_LIMIT = 617;</code>
+     * <code>RET_COMPOUND_QUEUE_FULL = 614;</code>
      */
-    public static final int RETCODE_RET_ITEM_EXCEED_LIMIT_VALUE = 617;
+    public static final int RET_COMPOUND_QUEUE_FULL_VALUE = 614;
     /**
-     * <code>RETCODE_RET_AVATAR_CAN_NOT_USE = 618;</code>
+     * <code>RET_COMPOUND_NOT_FINISH = 615;</code>
      */
-    public static final int RETCODE_RET_AVATAR_CAN_NOT_USE_VALUE = 618;
+    public static final int RET_COMPOUND_NOT_FINISH_VALUE = 615;
     /**
-     * <code>RETCODE_RET_ITEM_NEED_PLAYER_LEVEL = 619;</code>
+     * <code>RET_MAIL_ITEM_NOT_GET = 616;</code>
      */
-    public static final int RETCODE_RET_ITEM_NEED_PLAYER_LEVEL_VALUE = 619;
+    public static final int RET_MAIL_ITEM_NOT_GET_VALUE = 616;
     /**
-     * <code>RETCODE_RET_RECIPE_NOT_AUTO_QTE = 620;</code>
+     * <code>RET_ITEM_EXCEED_LIMIT = 617;</code>
      */
-    public static final int RETCODE_RET_RECIPE_NOT_AUTO_QTE_VALUE = 620;
+    public static final int RET_ITEM_EXCEED_LIMIT_VALUE = 617;
     /**
-     * <code>RETCODE_RET_COMPOUND_BUSY_QUEUE = 621;</code>
+     * <code>RET_AVATAR_CAN_NOT_USE = 618;</code>
      */
-    public static final int RETCODE_RET_COMPOUND_BUSY_QUEUE_VALUE = 621;
+    public static final int RET_AVATAR_CAN_NOT_USE_VALUE = 618;
     /**
-     * <code>RETCODE_RET_NEED_MORE_SCOIN = 622;</code>
+     * <code>RET_ITEM_NEED_PLAYER_LEVEL = 619;</code>
      */
-    public static final int RETCODE_RET_NEED_MORE_SCOIN_VALUE = 622;
+    public static final int RET_ITEM_NEED_PLAYER_LEVEL_VALUE = 619;
     /**
-     * <code>RETCODE_RET_SKILL_DEPOT_NOT_FOUND = 623;</code>
+     * <code>RET_RECIPE_NOT_AUTO_QTE = 620;</code>
      */
-    public static final int RETCODE_RET_SKILL_DEPOT_NOT_FOUND_VALUE = 623;
+    public static final int RET_RECIPE_NOT_AUTO_QTE_VALUE = 620;
     /**
-     * <code>RETCODE_RET_HCOIN_NOT_ENOUGH = 624;</code>
+     * <code>RET_COMPOUND_BUSY_QUEUE = 621;</code>
      */
-    public static final int RETCODE_RET_HCOIN_NOT_ENOUGH_VALUE = 624;
+    public static final int RET_COMPOUND_BUSY_QUEUE_VALUE = 621;
     /**
-     * <code>RETCODE_RET_SCOIN_NOT_ENOUGH = 625;</code>
+     * <code>RET_NEED_MORE_SCOIN = 622;</code>
      */
-    public static final int RETCODE_RET_SCOIN_NOT_ENOUGH_VALUE = 625;
+    public static final int RET_NEED_MORE_SCOIN_VALUE = 622;
     /**
-     * <code>RETCODE_RET_HCOIN_EXCEED_LIMIT = 626;</code>
+     * <code>RET_SKILL_DEPOT_NOT_FOUND = 623;</code>
      */
-    public static final int RETCODE_RET_HCOIN_EXCEED_LIMIT_VALUE = 626;
+    public static final int RET_SKILL_DEPOT_NOT_FOUND_VALUE = 623;
     /**
-     * <code>RETCODE_RET_SCOIN_EXCEED_LIMIT = 627;</code>
+     * <code>RET_HCOIN_NOT_ENOUGH = 624;</code>
      */
-    public static final int RETCODE_RET_SCOIN_EXCEED_LIMIT_VALUE = 627;
+    public static final int RET_HCOIN_NOT_ENOUGH_VALUE = 624;
     /**
-     * <code>RETCODE_RET_MAIL_EXPIRED = 628;</code>
+     * <code>RET_SCOIN_NOT_ENOUGH = 625;</code>
      */
-    public static final int RETCODE_RET_MAIL_EXPIRED_VALUE = 628;
+    public static final int RET_SCOIN_NOT_ENOUGH_VALUE = 625;
     /**
-     * <code>RETCODE_RET_REWARD_HAS_TAKEN = 629;</code>
+     * <code>RET_HCOIN_EXCEED_LIMIT = 626;</code>
      */
-    public static final int RETCODE_RET_REWARD_HAS_TAKEN_VALUE = 629;
+    public static final int RET_HCOIN_EXCEED_LIMIT_VALUE = 626;
     /**
-     * <code>RETCODE_RET_COMBINE_COUNT_TOO_LARGE = 630;</code>
+     * <code>RET_SCOIN_EXCEED_LIMIT = 627;</code>
      */
-    public static final int RETCODE_RET_COMBINE_COUNT_TOO_LARGE_VALUE = 630;
+    public static final int RET_SCOIN_EXCEED_LIMIT_VALUE = 627;
     /**
-     * <code>RETCODE_RET_GIVING_ITEM_WRONG = 631;</code>
+     * <code>RET_MAIL_EXPIRED = 628;</code>
      */
-    public static final int RETCODE_RET_GIVING_ITEM_WRONG_VALUE = 631;
+    public static final int RET_MAIL_EXPIRED_VALUE = 628;
     /**
-     * <code>RETCODE_RET_GIVING_IS_FINISHED = 632;</code>
+     * <code>RET_REWARD_HAS_TAKEN = 629;</code>
      */
-    public static final int RETCODE_RET_GIVING_IS_FINISHED_VALUE = 632;
+    public static final int RET_REWARD_HAS_TAKEN_VALUE = 629;
     /**
-     * <code>RETCODE_RET_GIVING_NOT_ACTIVED = 633;</code>
+     * <code>RET_COMBINE_COUNT_TOO_LARGE = 630;</code>
      */
-    public static final int RETCODE_RET_GIVING_NOT_ACTIVED_VALUE = 633;
+    public static final int RET_COMBINE_COUNT_TOO_LARGE_VALUE = 630;
     /**
-     * <code>RETCODE_RET_FORGE_QUEUE_FULL = 634;</code>
+     * <code>RET_GIVING_ITEM_WRONG = 631;</code>
      */
-    public static final int RETCODE_RET_FORGE_QUEUE_FULL_VALUE = 634;
+    public static final int RET_GIVING_ITEM_WRONG_VALUE = 631;
     /**
-     * <code>RETCODE_RET_FORGE_QUEUE_CAPACITY = 635;</code>
+     * <code>RET_GIVING_IS_FINISHED = 632;</code>
      */
-    public static final int RETCODE_RET_FORGE_QUEUE_CAPACITY_VALUE = 635;
+    public static final int RET_GIVING_IS_FINISHED_VALUE = 632;
     /**
-     * <code>RETCODE_RET_FORGE_QUEUE_NOT_FOUND = 636;</code>
+     * <code>RET_GIVING_NOT_ACTIVED = 633;</code>
      */
-    public static final int RETCODE_RET_FORGE_QUEUE_NOT_FOUND_VALUE = 636;
+    public static final int RET_GIVING_NOT_ACTIVED_VALUE = 633;
     /**
-     * <code>RETCODE_RET_FORGE_QUEUE_EMPTY = 637;</code>
+     * <code>RET_FORGE_QUEUE_FULL = 634;</code>
      */
-    public static final int RETCODE_RET_FORGE_QUEUE_EMPTY_VALUE = 637;
+    public static final int RET_FORGE_QUEUE_FULL_VALUE = 634;
     /**
-     * <code>RETCODE_RET_NOT_SUPPORT_ITEM = 638;</code>
+     * <code>RET_FORGE_QUEUE_CAPACITY = 635;</code>
      */
-    public static final int RETCODE_RET_NOT_SUPPORT_ITEM_VALUE = 638;
+    public static final int RET_FORGE_QUEUE_CAPACITY_VALUE = 635;
     /**
-     * <code>RETCODE_RET_ITEM_EMPTY = 639;</code>
+     * <code>RET_FORGE_QUEUE_NOT_FOUND = 636;</code>
      */
-    public static final int RETCODE_RET_ITEM_EMPTY_VALUE = 639;
+    public static final int RET_FORGE_QUEUE_NOT_FOUND_VALUE = 636;
     /**
-     * <code>RETCODE_RET_VIRTUAL_EXCEED_LIMIT = 640;</code>
+     * <code>RET_FORGE_QUEUE_EMPTY = 637;</code>
      */
-    public static final int RETCODE_RET_VIRTUAL_EXCEED_LIMIT_VALUE = 640;
+    public static final int RET_FORGE_QUEUE_EMPTY_VALUE = 637;
     /**
-     * <code>RETCODE_RET_MATERIAL_EXCEED_LIMIT = 641;</code>
+     * <code>RET_NOT_SUPPORT_ITEM = 638;</code>
      */
-    public static final int RETCODE_RET_MATERIAL_EXCEED_LIMIT_VALUE = 641;
+    public static final int RET_NOT_SUPPORT_ITEM_VALUE = 638;
     /**
-     * <code>RETCODE_RET_EQUIP_EXCEED_LIMIT = 642;</code>
+     * <code>RET_ITEM_EMPTY = 639;</code>
      */
-    public static final int RETCODE_RET_EQUIP_EXCEED_LIMIT_VALUE = 642;
+    public static final int RET_ITEM_EMPTY_VALUE = 639;
     /**
-     * <code>RETCODE_RET_ITEM_SHOULD_HAVE_NO_LEVEL = 643;</code>
+     * <code>RET_VIRTUAL_EXCEED_LIMIT = 640;</code>
      */
-    public static final int RETCODE_RET_ITEM_SHOULD_HAVE_NO_LEVEL_VALUE = 643;
+    public static final int RET_VIRTUAL_EXCEED_LIMIT_VALUE = 640;
     /**
-     * <code>RETCODE_RET_WEAPON_PROMOTE_LEVEL_EXCEED_LIMIT = 644;</code>
+     * <code>RET_MATERIAL_EXCEED_LIMIT = 641;</code>
      */
-    public static final int RETCODE_RET_WEAPON_PROMOTE_LEVEL_EXCEED_LIMIT_VALUE = 644;
+    public static final int RET_MATERIAL_EXCEED_LIMIT_VALUE = 641;
     /**
-     * <code>RETCODE_RET_WEAPON_LEVEL_INVALID = 645;</code>
+     * <code>RET_EQUIP_EXCEED_LIMIT = 642;</code>
      */
-    public static final int RETCODE_RET_WEAPON_LEVEL_INVALID_VALUE = 645;
+    public static final int RET_EQUIP_EXCEED_LIMIT_VALUE = 642;
     /**
-     * <code>RETCODE_RET_UNKNOW_ITEM_TYPE = 646;</code>
+     * <code>RET_ITEM_SHOULD_HAVE_NO_LEVEL = 643;</code>
      */
-    public static final int RETCODE_RET_UNKNOW_ITEM_TYPE_VALUE = 646;
+    public static final int RET_ITEM_SHOULD_HAVE_NO_LEVEL_VALUE = 643;
     /**
-     * <code>RETCODE_RET_ITEM_COUNT_IS_ZERO = 647;</code>
+     * <code>RET_WEAPON_PROMOTE_LEVEL_EXCEED_LIMIT = 644;</code>
      */
-    public static final int RETCODE_RET_ITEM_COUNT_IS_ZERO_VALUE = 647;
+    public static final int RET_WEAPON_PROMOTE_LEVEL_EXCEED_LIMIT_VALUE = 644;
     /**
-     * <code>RETCODE_RET_ITEM_IS_EXPIRED = 648;</code>
+     * <code>RET_WEAPON_LEVEL_INVALID = 645;</code>
      */
-    public static final int RETCODE_RET_ITEM_IS_EXPIRED_VALUE = 648;
+    public static final int RET_WEAPON_LEVEL_INVALID_VALUE = 645;
     /**
-     * <code>RETCODE_RET_ITEM_EXCEED_OUTPUT_LIMIT = 649;</code>
+     * <code>RET_UNKNOW_ITEM_TYPE = 646;</code>
      */
-    public static final int RETCODE_RET_ITEM_EXCEED_OUTPUT_LIMIT_VALUE = 649;
+    public static final int RET_UNKNOW_ITEM_TYPE_VALUE = 646;
     /**
-     * <code>RETCODE_RET_EQUIP_LEVEL_HIGHER = 650;</code>
+     * <code>RET_ITEM_COUNT_IS_ZERO = 647;</code>
      */
-    public static final int RETCODE_RET_EQUIP_LEVEL_HIGHER_VALUE = 650;
+    public static final int RET_ITEM_COUNT_IS_ZERO_VALUE = 647;
     /**
-     * <code>RETCODE_RET_EQUIP_CAN_NOT_WAKE_OFF_WEAPON = 651;</code>
+     * <code>RET_ITEM_IS_EXPIRED = 648;</code>
      */
-    public static final int RETCODE_RET_EQUIP_CAN_NOT_WAKE_OFF_WEAPON_VALUE = 651;
+    public static final int RET_ITEM_IS_EXPIRED_VALUE = 648;
     /**
-     * <code>RETCODE_RET_EQUIP_HAS_BEEN_WEARED = 652;</code>
+     * <code>RET_ITEM_EXCEED_OUTPUT_LIMIT = 649;</code>
      */
-    public static final int RETCODE_RET_EQUIP_HAS_BEEN_WEARED_VALUE = 652;
+    public static final int RET_ITEM_EXCEED_OUTPUT_LIMIT_VALUE = 649;
     /**
-     * <code>RETCODE_RET_EQUIP_WEARED_CANNOT_DROP = 653;</code>
+     * <code>RET_EQUIP_LEVEL_HIGHER = 650;</code>
      */
-    public static final int RETCODE_RET_EQUIP_WEARED_CANNOT_DROP_VALUE = 653;
+    public static final int RET_EQUIP_LEVEL_HIGHER_VALUE = 650;
     /**
-     * <code>RETCODE_RET_AWAKEN_LEVEL_MAX = 654;</code>
+     * <code>RET_EQUIP_CAN_NOT_WAKE_OFF_WEAPON = 651;</code>
      */
-    public static final int RETCODE_RET_AWAKEN_LEVEL_MAX_VALUE = 654;
+    public static final int RET_EQUIP_CAN_NOT_WAKE_OFF_WEAPON_VALUE = 651;
     /**
-     * <code>RETCODE_RET_MCOIN_NOT_ENOUGH = 655;</code>
+     * <code>RET_EQUIP_HAS_BEEN_WEARED = 652;</code>
      */
-    public static final int RETCODE_RET_MCOIN_NOT_ENOUGH_VALUE = 655;
+    public static final int RET_EQUIP_HAS_BEEN_WEARED_VALUE = 652;
     /**
-     * <code>RETCODE_RET_MCOIN_EXCEED_LIMIT = 656;</code>
+     * <code>RET_EQUIP_WEARED_CANNOT_DROP = 653;</code>
      */
-    public static final int RETCODE_RET_MCOIN_EXCEED_LIMIT_VALUE = 656;
+    public static final int RET_EQUIP_WEARED_CANNOT_DROP_VALUE = 653;
     /**
-     * <code>RETCODE_RET_RESIN_NOT_ENOUGH = 660;</code>
+     * <code>RET_AWAKEN_LEVEL_MAX = 654;</code>
      */
-    public static final int RETCODE_RET_RESIN_NOT_ENOUGH_VALUE = 660;
+    public static final int RET_AWAKEN_LEVEL_MAX_VALUE = 654;
     /**
-     * <code>RETCODE_RET_RESIN_EXCEED_LIMIT = 661;</code>
+     * <code>RET_MCOIN_NOT_ENOUGH = 655;</code>
      */
-    public static final int RETCODE_RET_RESIN_EXCEED_LIMIT_VALUE = 661;
+    public static final int RET_MCOIN_NOT_ENOUGH_VALUE = 655;
     /**
-     * <code>RETCODE_RET_RESIN_OPENSTATE_OFF = 662;</code>
+     * <code>RET_MCOIN_EXCEED_LIMIT = 656;</code>
      */
-    public static final int RETCODE_RET_RESIN_OPENSTATE_OFF_VALUE = 662;
+    public static final int RET_MCOIN_EXCEED_LIMIT_VALUE = 656;
     /**
-     * <code>RETCODE_RET_RESIN_BOUGHT_COUNT_EXCEEDED = 663;</code>
+     * <code>RET_RESIN_NOT_ENOUGH = 660;</code>
      */
-    public static final int RETCODE_RET_RESIN_BOUGHT_COUNT_EXCEEDED_VALUE = 663;
+    public static final int RET_RESIN_NOT_ENOUGH_VALUE = 660;
     /**
-     * <code>RETCODE_RET_RESIN_CARD_DAILY_REWARD_HAS_TAKEN = 664;</code>
+     * <code>RET_RESIN_EXCEED_LIMIT = 661;</code>
      */
-    public static final int RETCODE_RET_RESIN_CARD_DAILY_REWARD_HAS_TAKEN_VALUE = 664;
+    public static final int RET_RESIN_EXCEED_LIMIT_VALUE = 661;
     /**
-     * <code>RETCODE_RET_RESIN_CARD_EXPIRED = 665;</code>
+     * <code>RET_RESIN_OPENSTATE_OFF = 662;</code>
      */
-    public static final int RETCODE_RET_RESIN_CARD_EXPIRED_VALUE = 665;
+    public static final int RET_RESIN_OPENSTATE_OFF_VALUE = 662;
     /**
-     * <code>RETCODE_RET_AVATAR_CAN_NOT_COOK = 666;</code>
+     * <code>RET_RESIN_BOUGHT_COUNT_EXCEEDED = 663;</code>
      */
-    public static final int RETCODE_RET_AVATAR_CAN_NOT_COOK_VALUE = 666;
+    public static final int RET_RESIN_BOUGHT_COUNT_EXCEEDED_VALUE = 663;
     /**
-     * <code>RETCODE_RET_ATTACH_AVATAR_CD = 667;</code>
+     * <code>RET_RESIN_CARD_DAILY_REWARD_HAS_TAKEN = 664;</code>
      */
-    public static final int RETCODE_RET_ATTACH_AVATAR_CD_VALUE = 667;
+    public static final int RET_RESIN_CARD_DAILY_REWARD_HAS_TAKEN_VALUE = 664;
     /**
-     * <code>RETCODE_RET_AUTO_RECOVER_OPENSTATE_OFF = 668;</code>
+     * <code>RET_RESIN_CARD_EXPIRED = 665;</code>
      */
-    public static final int RETCODE_RET_AUTO_RECOVER_OPENSTATE_OFF_VALUE = 668;
+    public static final int RET_RESIN_CARD_EXPIRED_VALUE = 665;
     /**
-     * <code>RETCODE_RET_AUTO_RECOVER_BOUGHT_COUNT_EXCEEDED = 669;</code>
+     * <code>RET_AVATAR_CAN_NOT_COOK = 666;</code>
      */
-    public static final int RETCODE_RET_AUTO_RECOVER_BOUGHT_COUNT_EXCEEDED_VALUE = 669;
+    public static final int RET_AVATAR_CAN_NOT_COOK_VALUE = 666;
     /**
-     * <code>RETCODE_RET_RESIN_GAIN_FAILED = 670;</code>
+     * <code>RET_ATTACH_AVATAR_CD = 667;</code>
      */
-    public static final int RETCODE_RET_RESIN_GAIN_FAILED_VALUE = 670;
+    public static final int RET_ATTACH_AVATAR_CD_VALUE = 667;
     /**
-     * <code>RETCODE_RET_WIDGET_ORNAMENTS_TYPE_ERROR = 671;</code>
+     * <code>RET_AUTO_RECOVER_OPENSTATE_OFF = 668;</code>
      */
-    public static final int RETCODE_RET_WIDGET_ORNAMENTS_TYPE_ERROR_VALUE = 671;
+    public static final int RET_AUTO_RECOVER_OPENSTATE_OFF_VALUE = 668;
     /**
-     * <code>RETCODE_RET_ALL_TARGET_SATIATION_FULL = 672;</code>
+     * <code>RET_AUTO_RECOVER_BOUGHT_COUNT_EXCEEDED = 669;</code>
      */
-    public static final int RETCODE_RET_ALL_TARGET_SATIATION_FULL_VALUE = 672;
+    public static final int RET_AUTO_RECOVER_BOUGHT_COUNT_EXCEEDED_VALUE = 669;
     /**
-     * <code>RETCODE_RET_FORGE_WORLD_LEVEL_NOT_MATCH = 673;</code>
+     * <code>RET_RESIN_GAIN_FAILED = 670;</code>
      */
-    public static final int RETCODE_RET_FORGE_WORLD_LEVEL_NOT_MATCH_VALUE = 673;
+    public static final int RET_RESIN_GAIN_FAILED_VALUE = 670;
     /**
-     * <code>RETCODE_RET_FORGE_POINT_NOT_ENOUGH = 674;</code>
+     * <code>RET_WIDGET_ORNAMENTS_TYPE_ERROR = 671;</code>
      */
-    public static final int RETCODE_RET_FORGE_POINT_NOT_ENOUGH_VALUE = 674;
+    public static final int RET_WIDGET_ORNAMENTS_TYPE_ERROR_VALUE = 671;
     /**
-     * <code>RETCODE_RET_WIDGET_ANCHOR_POINT_FULL = 675;</code>
+     * <code>RET_ALL_TARGET_SATIATION_FULL = 672;</code>
      */
-    public static final int RETCODE_RET_WIDGET_ANCHOR_POINT_FULL_VALUE = 675;
+    public static final int RET_ALL_TARGET_SATIATION_FULL_VALUE = 672;
     /**
-     * <code>RETCODE_RET_WIDGET_ANCHOR_POINT_NOT_FOUND = 676;</code>
+     * <code>RET_FORGE_WORLD_LEVEL_NOT_MATCH = 673;</code>
      */
-    public static final int RETCODE_RET_WIDGET_ANCHOR_POINT_NOT_FOUND_VALUE = 676;
+    public static final int RET_FORGE_WORLD_LEVEL_NOT_MATCH_VALUE = 673;
     /**
-     * <code>RETCODE_RET_ALL_BONFIRE_EXCEED_MAX_COUNT = 677;</code>
+     * <code>RET_FORGE_POINT_NOT_ENOUGH = 674;</code>
      */
-    public static final int RETCODE_RET_ALL_BONFIRE_EXCEED_MAX_COUNT_VALUE = 677;
+    public static final int RET_FORGE_POINT_NOT_ENOUGH_VALUE = 674;
     /**
-     * <code>RETCODE_RET_BONFIRE_EXCEED_MAX_COUNT = 678;</code>
+     * <code>RET_WIDGET_ANCHOR_POINT_FULL = 675;</code>
      */
-    public static final int RETCODE_RET_BONFIRE_EXCEED_MAX_COUNT_VALUE = 678;
+    public static final int RET_WIDGET_ANCHOR_POINT_FULL_VALUE = 675;
     /**
-     * <code>RETCODE_RET_LUNCH_BOX_DATA_ERROR = 679;</code>
+     * <code>RET_WIDGET_ANCHOR_POINT_NOT_FOUND = 676;</code>
      */
-    public static final int RETCODE_RET_LUNCH_BOX_DATA_ERROR_VALUE = 679;
+    public static final int RET_WIDGET_ANCHOR_POINT_NOT_FOUND_VALUE = 676;
     /**
-     * <code>RETCODE_RET_INVALID_QUICK_USE_WIDGET = 680;</code>
+     * <code>RET_ALL_BONFIRE_EXCEED_MAX_COUNT = 677;</code>
      */
-    public static final int RETCODE_RET_INVALID_QUICK_USE_WIDGET_VALUE = 680;
+    public static final int RET_ALL_BONFIRE_EXCEED_MAX_COUNT_VALUE = 677;
     /**
-     * <code>RETCODE_RET_INVALID_REPLACE_RESIN_COUNT = 681;</code>
+     * <code>RET_BONFIRE_EXCEED_MAX_COUNT = 678;</code>
      */
-    public static final int RETCODE_RET_INVALID_REPLACE_RESIN_COUNT_VALUE = 681;
+    public static final int RET_BONFIRE_EXCEED_MAX_COUNT_VALUE = 678;
     /**
-     * <code>RETCODE_RET_PREV_DETECTED_GATHER_NOT_FOUND = 682;</code>
+     * <code>RET_LUNCH_BOX_DATA_ERROR = 679;</code>
      */
-    public static final int RETCODE_RET_PREV_DETECTED_GATHER_NOT_FOUND_VALUE = 682;
+    public static final int RET_LUNCH_BOX_DATA_ERROR_VALUE = 679;
     /**
-     * <code>RETCODE_RET_GOT_ALL_ONEOFF_GAHTER = 683;</code>
+     * <code>RET_INVALID_QUICK_USE_WIDGET = 680;</code>
      */
-    public static final int RETCODE_RET_GOT_ALL_ONEOFF_GAHTER_VALUE = 683;
+    public static final int RET_INVALID_QUICK_USE_WIDGET_VALUE = 680;
     /**
-     * <code>RETCODE_RET_INVALID_WIDGET_MATERIAL_ID = 684;</code>
+     * <code>RET_INVALID_REPLACE_RESIN_COUNT = 681;</code>
      */
-    public static final int RETCODE_RET_INVALID_WIDGET_MATERIAL_ID_VALUE = 684;
+    public static final int RET_INVALID_REPLACE_RESIN_COUNT_VALUE = 681;
     /**
-     * <code>RETCODE_RET_WIDGET_DETECTOR_NO_HINT_TO_CLEAR = 685;</code>
+     * <code>RET_PREV_DETECTED_GATHER_NOT_FOUND = 682;</code>
      */
-    public static final int RETCODE_RET_WIDGET_DETECTOR_NO_HINT_TO_CLEAR_VALUE = 685;
+    public static final int RET_PREV_DETECTED_GATHER_NOT_FOUND_VALUE = 682;
     /**
-     * <code>RETCODE_RET_WIDGET_ALREADY_WITHIN_NEARBY_RADIUS = 686;</code>
+     * <code>RET_GOT_ALL_ONEOFF_GAHTER = 683;</code>
      */
-    public static final int RETCODE_RET_WIDGET_ALREADY_WITHIN_NEARBY_RADIUS_VALUE = 686;
+    public static final int RET_GOT_ALL_ONEOFF_GAHTER_VALUE = 683;
     /**
-     * <code>RETCODE_RET_WIDGET_CLIENT_COLLECTOR_NEED_POINTS = 687;</code>
+     * <code>RET_INVALID_WIDGET_MATERIAL_ID = 684;</code>
      */
-    public static final int RETCODE_RET_WIDGET_CLIENT_COLLECTOR_NEED_POINTS_VALUE = 687;
+    public static final int RET_INVALID_WIDGET_MATERIAL_ID_VALUE = 684;
     /**
-     * <code>RETCODE_RET_WIDGET_IN_COMBAT = 688;</code>
+     * <code>RET_WIDGET_DETECTOR_NO_HINT_TO_CLEAR = 685;</code>
      */
-    public static final int RETCODE_RET_WIDGET_IN_COMBAT_VALUE = 688;
+    public static final int RET_WIDGET_DETECTOR_NO_HINT_TO_CLEAR_VALUE = 685;
     /**
-     * <code>RETCODE_RET_WIDGET_NOT_SET_QUICK_USE = 689;</code>
+     * <code>RET_WIDGET_ALREADY_WITHIN_NEARBY_RADIUS = 686;</code>
      */
-    public static final int RETCODE_RET_WIDGET_NOT_SET_QUICK_USE_VALUE = 689;
+    public static final int RET_WIDGET_ALREADY_WITHIN_NEARBY_RADIUS_VALUE = 686;
     /**
-     * <code>RETCODE_RET_ALREADY_ATTACH_WIDGET = 690;</code>
+     * <code>RET_WIDGET_CLIENT_COLLECTOR_NEED_POINTS = 687;</code>
      */
-    public static final int RETCODE_RET_ALREADY_ATTACH_WIDGET_VALUE = 690;
+    public static final int RET_WIDGET_CLIENT_COLLECTOR_NEED_POINTS_VALUE = 687;
     /**
-     * <code>RETCODE_RET_EQUIP_IS_LOCKED = 691;</code>
+     * <code>RET_WIDGET_IN_COMBAT = 688;</code>
      */
-    public static final int RETCODE_RET_EQUIP_IS_LOCKED_VALUE = 691;
+    public static final int RET_WIDGET_IN_COMBAT_VALUE = 688;
     /**
-     * <code>RETCODE_RET_FORGE_IS_LOCKED = 692;</code>
+     * <code>RET_WIDGET_NOT_SET_QUICK_USE = 689;</code>
      */
-    public static final int RETCODE_RET_FORGE_IS_LOCKED_VALUE = 692;
+    public static final int RET_WIDGET_NOT_SET_QUICK_USE_VALUE = 689;
     /**
-     * <code>RETCODE_RET_COMBINE_IS_LOCKED = 693;</code>
+     * <code>RET_ALREADY_ATTACH_WIDGET = 690;</code>
      */
-    public static final int RETCODE_RET_COMBINE_IS_LOCKED_VALUE = 693;
+    public static final int RET_ALREADY_ATTACH_WIDGET_VALUE = 690;
     /**
-     * <code>RETCODE_RET_FORGE_OUTPUT_STACK_LIMIT = 694;</code>
+     * <code>RET_EQUIP_IS_LOCKED = 691;</code>
      */
-    public static final int RETCODE_RET_FORGE_OUTPUT_STACK_LIMIT_VALUE = 694;
+    public static final int RET_EQUIP_IS_LOCKED_VALUE = 691;
     /**
-     * <code>RETCODE_RET_ALREADY_DETTACH_WIDGET = 695;</code>
+     * <code>RET_FORGE_IS_LOCKED = 692;</code>
      */
-    public static final int RETCODE_RET_ALREADY_DETTACH_WIDGET_VALUE = 695;
+    public static final int RET_FORGE_IS_LOCKED_VALUE = 692;
     /**
-     * <code>RETCODE_RET_GADGET_BUILDER_EXCEED_MAX_COUNT = 696;</code>
+     * <code>RET_COMBINE_IS_LOCKED = 693;</code>
      */
-    public static final int RETCODE_RET_GADGET_BUILDER_EXCEED_MAX_COUNT_VALUE = 696;
+    public static final int RET_COMBINE_IS_LOCKED_VALUE = 693;
     /**
-     * <code>RETCODE_RET_REUNION_PRIVILEGE_RESIN_TYPE_IS_NORMAL = 697;</code>
+     * <code>RET_FORGE_OUTPUT_STACK_LIMIT = 694;</code>
      */
-    public static final int RETCODE_RET_REUNION_PRIVILEGE_RESIN_TYPE_IS_NORMAL_VALUE = 697;
+    public static final int RET_FORGE_OUTPUT_STACK_LIMIT_VALUE = 694;
     /**
-     * <code>RETCODE_RET_BONUS_COUNT_EXCEED_DOUBLE_LIMIT = 698;</code>
+     * <code>RET_ALREADY_DETTACH_WIDGET = 695;</code>
      */
-    public static final int RETCODE_RET_BONUS_COUNT_EXCEED_DOUBLE_LIMIT_VALUE = 698;
+    public static final int RET_ALREADY_DETTACH_WIDGET_VALUE = 695;
     /**
-     * <code>RETCODE_RET_RELIQUARY_DECOMPOSE_PARAM_ERROR = 699;</code>
+     * <code>RET_GADGET_BUILDER_EXCEED_MAX_COUNT = 696;</code>
      */
-    public static final int RETCODE_RET_RELIQUARY_DECOMPOSE_PARAM_ERROR_VALUE = 699;
+    public static final int RET_GADGET_BUILDER_EXCEED_MAX_COUNT_VALUE = 696;
     /**
-     * <code>RETCODE_RET_ITEM_COMBINE_COUNT_NOT_ENOUGH = 700;</code>
+     * <code>RET_REUNION_PRIVILEGE_RESIN_TYPE_IS_NORMAL = 697;</code>
      */
-    public static final int RETCODE_RET_ITEM_COMBINE_COUNT_NOT_ENOUGH_VALUE = 700;
+    public static final int RET_REUNION_PRIVILEGE_RESIN_TYPE_IS_NORMAL_VALUE = 697;
     /**
-     * <code>RETCODE_RET_GOODS_NOT_EXIST = 701;</code>
+     * <code>RET_BONUS_COUNT_EXCEED_DOUBLE_LIMIT = 698;</code>
      */
-    public static final int RETCODE_RET_GOODS_NOT_EXIST_VALUE = 701;
+    public static final int RET_BONUS_COUNT_EXCEED_DOUBLE_LIMIT_VALUE = 698;
     /**
-     * <code>RETCODE_RET_GOODS_MATERIAL_NOT_ENOUGH = 702;</code>
+     * <code>RET_RELIQUARY_DECOMPOSE_PARAM_ERROR = 699;</code>
      */
-    public static final int RETCODE_RET_GOODS_MATERIAL_NOT_ENOUGH_VALUE = 702;
+    public static final int RET_RELIQUARY_DECOMPOSE_PARAM_ERROR_VALUE = 699;
     /**
-     * <code>RETCODE_RET_GOODS_NOT_IN_TIME = 703;</code>
+     * <code>RET_ITEM_COMBINE_COUNT_NOT_ENOUGH = 700;</code>
      */
-    public static final int RETCODE_RET_GOODS_NOT_IN_TIME_VALUE = 703;
+    public static final int RET_ITEM_COMBINE_COUNT_NOT_ENOUGH_VALUE = 700;
     /**
-     * <code>RETCODE_RET_GOODS_BUY_NUM_NOT_ENOUGH = 704;</code>
+     * <code>RET_GOODS_NOT_EXIST = 701;</code>
      */
-    public static final int RETCODE_RET_GOODS_BUY_NUM_NOT_ENOUGH_VALUE = 704;
+    public static final int RET_GOODS_NOT_EXIST_VALUE = 701;
     /**
-     * <code>RETCODE_RET_GOODS_BUY_NUM_ERROR = 705;</code>
+     * <code>RET_GOODS_MATERIAL_NOT_ENOUGH = 702;</code>
      */
-    public static final int RETCODE_RET_GOODS_BUY_NUM_ERROR_VALUE = 705;
+    public static final int RET_GOODS_MATERIAL_NOT_ENOUGH_VALUE = 702;
     /**
-     * <code>RETCODE_RET_SHOP_NOT_OPEN = 706;</code>
+     * <code>RET_GOODS_NOT_IN_TIME = 703;</code>
      */
-    public static final int RETCODE_RET_SHOP_NOT_OPEN_VALUE = 706;
+    public static final int RET_GOODS_NOT_IN_TIME_VALUE = 703;
     /**
-     * <code>RETCODE_RET_SHOP_CONTENT_NOT_MATCH = 707;</code>
+     * <code>RET_GOODS_BUY_NUM_NOT_ENOUGH = 704;</code>
      */
-    public static final int RETCODE_RET_SHOP_CONTENT_NOT_MATCH_VALUE = 707;
+    public static final int RET_GOODS_BUY_NUM_NOT_ENOUGH_VALUE = 704;
     /**
-     * <code>RETCODE_RET_CHAT_FORBIDDEN = 798;</code>
+     * <code>RET_GOODS_BUY_NUM_ERROR = 705;</code>
      */
-    public static final int RETCODE_RET_CHAT_FORBIDDEN_VALUE = 798;
+    public static final int RET_GOODS_BUY_NUM_ERROR_VALUE = 705;
     /**
-     * <code>RETCODE_RET_CHAT_CD = 799;</code>
+     * <code>RET_SHOP_NOT_OPEN = 706;</code>
      */
-    public static final int RETCODE_RET_CHAT_CD_VALUE = 799;
+    public static final int RET_SHOP_NOT_OPEN_VALUE = 706;
     /**
-     * <code>RETCODE_RET_CHAT_FREQUENTLY = 800;</code>
+     * <code>RET_SHOP_CONTENT_NOT_MATCH = 707;</code>
      */
-    public static final int RETCODE_RET_CHAT_FREQUENTLY_VALUE = 800;
+    public static final int RET_SHOP_CONTENT_NOT_MATCH_VALUE = 707;
     /**
-     * <code>RETCODE_RET_GADGET_NOT_EXIST = 801;</code>
+     * <code>RET_SHOP_BATCH_BUY_SHOP_LIMIT = 708;</code>
      */
-    public static final int RETCODE_RET_GADGET_NOT_EXIST_VALUE = 801;
+    public static final int RET_SHOP_BATCH_BUY_SHOP_LIMIT_VALUE = 708;
     /**
-     * <code>RETCODE_RET_GADGET_NOT_INTERACTIVE = 802;</code>
+     * <code>RET_SHOP_BATCH_BUY_COUNT_LIMIT = 709;</code>
      */
-    public static final int RETCODE_RET_GADGET_NOT_INTERACTIVE_VALUE = 802;
+    public static final int RET_SHOP_BATCH_BUY_COUNT_LIMIT_VALUE = 709;
     /**
-     * <code>RETCODE_RET_GADGET_NOT_GATHERABLE = 803;</code>
+     * <code>RET_CHAT_FORBIDDEN = 798;</code>
      */
-    public static final int RETCODE_RET_GADGET_NOT_GATHERABLE_VALUE = 803;
+    public static final int RET_CHAT_FORBIDDEN_VALUE = 798;
     /**
-     * <code>RETCODE_RET_CHEST_IS_LOCKED = 804;</code>
+     * <code>RET_CHAT_CD = 799;</code>
      */
-    public static final int RETCODE_RET_CHEST_IS_LOCKED_VALUE = 804;
+    public static final int RET_CHAT_CD_VALUE = 799;
     /**
-     * <code>RETCODE_RET_GADGET_CREATE_FAIL = 805;</code>
+     * <code>RET_CHAT_FREQUENTLY = 800;</code>
      */
-    public static final int RETCODE_RET_GADGET_CREATE_FAIL_VALUE = 805;
+    public static final int RET_CHAT_FREQUENTLY_VALUE = 800;
     /**
-     * <code>RETCODE_RET_WORKTOP_OPTION_NOT_EXIST = 806;</code>
+     * <code>RET_GADGET_NOT_EXIST = 801;</code>
      */
-    public static final int RETCODE_RET_WORKTOP_OPTION_NOT_EXIST_VALUE = 806;
+    public static final int RET_GADGET_NOT_EXIST_VALUE = 801;
     /**
-     * <code>RETCODE_RET_GADGET_STATUE_NOT_ACTIVE = 807;</code>
+     * <code>RET_GADGET_NOT_INTERACTIVE = 802;</code>
      */
-    public static final int RETCODE_RET_GADGET_STATUE_NOT_ACTIVE_VALUE = 807;
+    public static final int RET_GADGET_NOT_INTERACTIVE_VALUE = 802;
     /**
-     * <code>RETCODE_RET_GADGET_STATUE_OPENED = 808;</code>
+     * <code>RET_GADGET_NOT_GATHERABLE = 803;</code>
      */
-    public static final int RETCODE_RET_GADGET_STATUE_OPENED_VALUE = 808;
+    public static final int RET_GADGET_NOT_GATHERABLE_VALUE = 803;
     /**
-     * <code>RETCODE_RET_BOSS_CHEST_NO_QUALIFICATION = 809;</code>
+     * <code>RET_CHEST_IS_LOCKED = 804;</code>
      */
-    public static final int RETCODE_RET_BOSS_CHEST_NO_QUALIFICATION_VALUE = 809;
+    public static final int RET_CHEST_IS_LOCKED_VALUE = 804;
     /**
-     * <code>RETCODE_RET_BOSS_CHEST_LIFE_TIME_OVER = 810;</code>
+     * <code>RET_GADGET_CREATE_FAIL = 805;</code>
      */
-    public static final int RETCODE_RET_BOSS_CHEST_LIFE_TIME_OVER_VALUE = 810;
+    public static final int RET_GADGET_CREATE_FAIL_VALUE = 805;
     /**
-     * <code>RETCODE_RET_BOSS_CHEST_WEEK_NUM_LIMIT = 811;</code>
+     * <code>RET_WORKTOP_OPTION_NOT_EXIST = 806;</code>
      */
-    public static final int RETCODE_RET_BOSS_CHEST_WEEK_NUM_LIMIT_VALUE = 811;
+    public static final int RET_WORKTOP_OPTION_NOT_EXIST_VALUE = 806;
     /**
-     * <code>RETCODE_RET_BOSS_CHEST_GUEST_WORLD_LEVEL = 812;</code>
+     * <code>RET_GADGET_STATUE_NOT_ACTIVE = 807;</code>
      */
-    public static final int RETCODE_RET_BOSS_CHEST_GUEST_WORLD_LEVEL_VALUE = 812;
+    public static final int RET_GADGET_STATUE_NOT_ACTIVE_VALUE = 807;
     /**
-     * <code>RETCODE_RET_BOSS_CHEST_HAS_TAKEN = 813;</code>
+     * <code>RET_GADGET_STATUE_OPENED = 808;</code>
      */
-    public static final int RETCODE_RET_BOSS_CHEST_HAS_TAKEN_VALUE = 813;
+    public static final int RET_GADGET_STATUE_OPENED_VALUE = 808;
     /**
-     * <code>RETCODE_RET_BLOSSOM_CHEST_NO_QUALIFICATION = 814;</code>
+     * <code>RET_BOSS_CHEST_NO_QUALIFICATION = 809;</code>
      */
-    public static final int RETCODE_RET_BLOSSOM_CHEST_NO_QUALIFICATION_VALUE = 814;
+    public static final int RET_BOSS_CHEST_NO_QUALIFICATION_VALUE = 809;
     /**
-     * <code>RETCODE_RET_BLOSSOM_CHEST_LIFE_TIME_OVER = 815;</code>
+     * <code>RET_BOSS_CHEST_LIFE_TIME_OVER = 810;</code>
      */
-    public static final int RETCODE_RET_BLOSSOM_CHEST_LIFE_TIME_OVER_VALUE = 815;
+    public static final int RET_BOSS_CHEST_LIFE_TIME_OVER_VALUE = 810;
     /**
-     * <code>RETCODE_RET_BLOSSOM_CHEST_HAS_TAKEN = 816;</code>
+     * <code>RET_BOSS_CHEST_WEEK_NUM_LIMIT = 811;</code>
      */
-    public static final int RETCODE_RET_BLOSSOM_CHEST_HAS_TAKEN_VALUE = 816;
+    public static final int RET_BOSS_CHEST_WEEK_NUM_LIMIT_VALUE = 811;
     /**
-     * <code>RETCODE_RET_BLOSSOM_CHEST_GUEST_WORLD_LEVEL = 817;</code>
+     * <code>RET_BOSS_CHEST_GUEST_WORLD_LEVEL = 812;</code>
      */
-    public static final int RETCODE_RET_BLOSSOM_CHEST_GUEST_WORLD_LEVEL_VALUE = 817;
+    public static final int RET_BOSS_CHEST_GUEST_WORLD_LEVEL_VALUE = 812;
     /**
-     * <code>RETCODE_RET_MP_PLAY_REWARD_NO_QUALIFICATION = 818;</code>
+     * <code>RET_BOSS_CHEST_HAS_TAKEN = 813;</code>
      */
-    public static final int RETCODE_RET_MP_PLAY_REWARD_NO_QUALIFICATION_VALUE = 818;
+    public static final int RET_BOSS_CHEST_HAS_TAKEN_VALUE = 813;
     /**
-     * <code>RETCODE_RET_MP_PLAY_REWARD_HAS_TAKEN = 819;</code>
+     * <code>RET_BLOSSOM_CHEST_NO_QUALIFICATION = 814;</code>
      */
-    public static final int RETCODE_RET_MP_PLAY_REWARD_HAS_TAKEN_VALUE = 819;
+    public static final int RET_BLOSSOM_CHEST_NO_QUALIFICATION_VALUE = 814;
     /**
-     * <code>RETCODE_RET_GENERAL_REWARD_NO_QUALIFICATION = 820;</code>
+     * <code>RET_BLOSSOM_CHEST_LIFE_TIME_OVER = 815;</code>
      */
-    public static final int RETCODE_RET_GENERAL_REWARD_NO_QUALIFICATION_VALUE = 820;
+    public static final int RET_BLOSSOM_CHEST_LIFE_TIME_OVER_VALUE = 815;
     /**
-     * <code>RETCODE_RET_GENERAL_REWARD_LIFE_TIME_OVER = 821;</code>
+     * <code>RET_BLOSSOM_CHEST_HAS_TAKEN = 816;</code>
      */
-    public static final int RETCODE_RET_GENERAL_REWARD_LIFE_TIME_OVER_VALUE = 821;
+    public static final int RET_BLOSSOM_CHEST_HAS_TAKEN_VALUE = 816;
     /**
-     * <code>RETCODE_RET_GENERAL_REWARD_HAS_TAKEN = 822;</code>
+     * <code>RET_BLOSSOM_CHEST_GUEST_WORLD_LEVEL = 817;</code>
      */
-    public static final int RETCODE_RET_GENERAL_REWARD_HAS_TAKEN_VALUE = 822;
+    public static final int RET_BLOSSOM_CHEST_GUEST_WORLD_LEVEL_VALUE = 817;
     /**
-     * <code>RETCODE_RET_GADGET_NOT_VEHICLE = 823;</code>
+     * <code>RET_MP_PLAY_REWARD_NO_QUALIFICATION = 818;</code>
      */
-    public static final int RETCODE_RET_GADGET_NOT_VEHICLE_VALUE = 823;
+    public static final int RET_MP_PLAY_REWARD_NO_QUALIFICATION_VALUE = 818;
     /**
-     * <code>RETCODE_RET_VEHICLE_SLOT_OCCUPIED = 824;</code>
+     * <code>RET_MP_PLAY_REWARD_HAS_TAKEN = 819;</code>
      */
-    public static final int RETCODE_RET_VEHICLE_SLOT_OCCUPIED_VALUE = 824;
+    public static final int RET_MP_PLAY_REWARD_HAS_TAKEN_VALUE = 819;
     /**
-     * <code>RETCODE_RET_NOT_IN_VEHICLE = 825;</code>
+     * <code>RET_GENERAL_REWARD_NO_QUALIFICATION = 820;</code>
      */
-    public static final int RETCODE_RET_NOT_IN_VEHICLE_VALUE = 825;
+    public static final int RET_GENERAL_REWARD_NO_QUALIFICATION_VALUE = 820;
     /**
-     * <code>RETCODE_RET_CREATE_VEHICLE_IN_CD = 826;</code>
+     * <code>RET_GENERAL_REWARD_LIFE_TIME_OVER = 821;</code>
      */
-    public static final int RETCODE_RET_CREATE_VEHICLE_IN_CD_VALUE = 826;
+    public static final int RET_GENERAL_REWARD_LIFE_TIME_OVER_VALUE = 821;
     /**
-     * <code>RETCODE_RET_CREATE_VEHICLE_POS_INVALID = 827;</code>
+     * <code>RET_GENERAL_REWARD_HAS_TAKEN = 822;</code>
      */
-    public static final int RETCODE_RET_CREATE_VEHICLE_POS_INVALID_VALUE = 827;
+    public static final int RET_GENERAL_REWARD_HAS_TAKEN_VALUE = 822;
     /**
-     * <code>RETCODE_RET_VEHICLE_POINT_NOT_UNLOCK = 828;</code>
+     * <code>RET_GADGET_NOT_VEHICLE = 823;</code>
      */
-    public static final int RETCODE_RET_VEHICLE_POINT_NOT_UNLOCK_VALUE = 828;
+    public static final int RET_GADGET_NOT_VEHICLE_VALUE = 823;
     /**
-     * <code>RETCODE_RET_GADGET_INTERACT_COND_NOT_MEET = 829;</code>
+     * <code>RET_VEHICLE_SLOT_OCCUPIED = 824;</code>
      */
-    public static final int RETCODE_RET_GADGET_INTERACT_COND_NOT_MEET_VALUE = 829;
+    public static final int RET_VEHICLE_SLOT_OCCUPIED_VALUE = 824;
     /**
-     * <code>RETCODE_RET_GADGET_INTERACT_PARAM_ERROR = 830;</code>
+     * <code>RET_NOT_IN_VEHICLE = 825;</code>
      */
-    public static final int RETCODE_RET_GADGET_INTERACT_PARAM_ERROR_VALUE = 830;
+    public static final int RET_NOT_IN_VEHICLE_VALUE = 825;
     /**
-     * <code>RETCODE_RET_GADGET_CUSTOM_COMBINATION_INVALID = 831;</code>
+     * <code>RET_CREATE_VEHICLE_IN_CD = 826;</code>
      */
-    public static final int RETCODE_RET_GADGET_CUSTOM_COMBINATION_INVALID_VALUE = 831;
+    public static final int RET_CREATE_VEHICLE_IN_CD_VALUE = 826;
     /**
-     * <code>RETCODE_RET_DESHRET_OBELISK_DUPLICATE_INTERACT = 832;</code>
+     * <code>RET_CREATE_VEHICLE_POS_INVALID = 827;</code>
      */
-    public static final int RETCODE_RET_DESHRET_OBELISK_DUPLICATE_INTERACT_VALUE = 832;
+    public static final int RET_CREATE_VEHICLE_POS_INVALID_VALUE = 827;
     /**
-     * <code>RETCODE_RET_DESHRET_OBELISK_NO_AVAIL_CHEST = 833;</code>
+     * <code>RET_VEHICLE_POINT_NOT_UNLOCK = 828;</code>
      */
-    public static final int RETCODE_RET_DESHRET_OBELISK_NO_AVAIL_CHEST_VALUE = 833;
+    public static final int RET_VEHICLE_POINT_NOT_UNLOCK_VALUE = 828;
     /**
-     * <code>RETCODE_RET_ACTIVITY_CLOSE = 860;</code>
+     * <code>RET_GADGET_INTERACT_COND_NOT_MEET = 829;</code>
      */
-    public static final int RETCODE_RET_ACTIVITY_CLOSE_VALUE = 860;
+    public static final int RET_GADGET_INTERACT_COND_NOT_MEET_VALUE = 829;
     /**
-     * <code>RETCODE_RET_ACTIVITY_ITEM_ERROR = 861;</code>
+     * <code>RET_GADGET_INTERACT_PARAM_ERROR = 830;</code>
      */
-    public static final int RETCODE_RET_ACTIVITY_ITEM_ERROR_VALUE = 861;
+    public static final int RET_GADGET_INTERACT_PARAM_ERROR_VALUE = 830;
     /**
-     * <code>RETCODE_RET_ACTIVITY_CONTRIBUTION_NOT_ENOUGH = 862;</code>
+     * <code>RET_GADGET_CUSTOM_COMBINATION_INVALID = 831;</code>
      */
-    public static final int RETCODE_RET_ACTIVITY_CONTRIBUTION_NOT_ENOUGH_VALUE = 862;
+    public static final int RET_GADGET_CUSTOM_COMBINATION_INVALID_VALUE = 831;
     /**
-     * <code>RETCODE_RET_SEA_LAMP_PHASE_NOT_FINISH = 863;</code>
+     * <code>RET_DESHRET_OBELISK_DUPLICATE_INTERACT = 832;</code>
      */
-    public static final int RETCODE_RET_SEA_LAMP_PHASE_NOT_FINISH_VALUE = 863;
+    public static final int RET_DESHRET_OBELISK_DUPLICATE_INTERACT_VALUE = 832;
     /**
-     * <code>RETCODE_RET_SEA_LAMP_FLY_NUM_LIMIT = 864;</code>
+     * <code>RET_DESHRET_OBELISK_NO_AVAIL_CHEST = 833;</code>
      */
-    public static final int RETCODE_RET_SEA_LAMP_FLY_NUM_LIMIT_VALUE = 864;
+    public static final int RET_DESHRET_OBELISK_NO_AVAIL_CHEST_VALUE = 833;
     /**
-     * <code>RETCODE_RET_SEA_LAMP_FLY_LAMP_WORD_ILLEGAL = 865;</code>
+     * <code>RET_ACTIVITY_CLOSE = 860;</code>
      */
-    public static final int RETCODE_RET_SEA_LAMP_FLY_LAMP_WORD_ILLEGAL_VALUE = 865;
+    public static final int RET_ACTIVITY_CLOSE_VALUE = 860;
     /**
-     * <code>RETCODE_RET_ACTIVITY_WATCHER_REWARD_TAKEN = 866;</code>
+     * <code>RET_ACTIVITY_ITEM_ERROR = 861;</code>
      */
-    public static final int RETCODE_RET_ACTIVITY_WATCHER_REWARD_TAKEN_VALUE = 866;
+    public static final int RET_ACTIVITY_ITEM_ERROR_VALUE = 861;
     /**
-     * <code>RETCODE_RET_ACTIVITY_WATCHER_REWARD_NOT_FINISHED = 867;</code>
+     * <code>RET_ACTIVITY_CONTRIBUTION_NOT_ENOUGH = 862;</code>
      */
-    public static final int RETCODE_RET_ACTIVITY_WATCHER_REWARD_NOT_FINISHED_VALUE = 867;
+    public static final int RET_ACTIVITY_CONTRIBUTION_NOT_ENOUGH_VALUE = 862;
     /**
-     * <code>RETCODE_RET_SALESMAN_ALREADY_DELIVERED = 868;</code>
+     * <code>RET_SEA_LAMP_PHASE_NOT_FINISH = 863;</code>
      */
-    public static final int RETCODE_RET_SALESMAN_ALREADY_DELIVERED_VALUE = 868;
+    public static final int RET_SEA_LAMP_PHASE_NOT_FINISH_VALUE = 863;
     /**
-     * <code>RETCODE_RET_SALESMAN_REWARD_COUNT_NOT_ENOUGH = 869;</code>
+     * <code>RET_SEA_LAMP_FLY_NUM_LIMIT = 864;</code>
      */
-    public static final int RETCODE_RET_SALESMAN_REWARD_COUNT_NOT_ENOUGH_VALUE = 869;
+    public static final int RET_SEA_LAMP_FLY_NUM_LIMIT_VALUE = 864;
     /**
-     * <code>RETCODE_RET_SALESMAN_POSITION_INVALID = 870;</code>
+     * <code>RET_SEA_LAMP_FLY_LAMP_WORD_ILLEGAL = 865;</code>
      */
-    public static final int RETCODE_RET_SALESMAN_POSITION_INVALID_VALUE = 870;
+    public static final int RET_SEA_LAMP_FLY_LAMP_WORD_ILLEGAL_VALUE = 865;
     /**
-     * <code>RETCODE_RET_DELIVER_NOT_FINISH_ALL_QUEST = 871;</code>
+     * <code>RET_ACTIVITY_WATCHER_REWARD_TAKEN = 866;</code>
      */
-    public static final int RETCODE_RET_DELIVER_NOT_FINISH_ALL_QUEST_VALUE = 871;
+    public static final int RET_ACTIVITY_WATCHER_REWARD_TAKEN_VALUE = 866;
     /**
-     * <code>RETCODE_RET_DELIVER_ALREADY_TAKE_DAILY_REWARD = 872;</code>
+     * <code>RET_ACTIVITY_WATCHER_REWARD_NOT_FINISHED = 867;</code>
      */
-    public static final int RETCODE_RET_DELIVER_ALREADY_TAKE_DAILY_REWARD_VALUE = 872;
+    public static final int RET_ACTIVITY_WATCHER_REWARD_NOT_FINISHED_VALUE = 867;
     /**
-     * <code>RETCODE_RET_ASTER_PROGRESS_EXCEED_LIMIT = 873;</code>
+     * <code>RET_SALESMAN_ALREADY_DELIVERED = 868;</code>
      */
-    public static final int RETCODE_RET_ASTER_PROGRESS_EXCEED_LIMIT_VALUE = 873;
+    public static final int RET_SALESMAN_ALREADY_DELIVERED_VALUE = 868;
     /**
-     * <code>RETCODE_RET_ASTER_CREDIT_EXCEED_LIMIT = 874;</code>
+     * <code>RET_SALESMAN_REWARD_COUNT_NOT_ENOUGH = 869;</code>
      */
-    public static final int RETCODE_RET_ASTER_CREDIT_EXCEED_LIMIT_VALUE = 874;
+    public static final int RET_SALESMAN_REWARD_COUNT_NOT_ENOUGH_VALUE = 869;
     /**
-     * <code>RETCODE_RET_ASTER_TOKEN_EXCEED_LIMIT = 875;</code>
+     * <code>RET_SALESMAN_POSITION_INVALID = 870;</code>
      */
-    public static final int RETCODE_RET_ASTER_TOKEN_EXCEED_LIMIT_VALUE = 875;
+    public static final int RET_SALESMAN_POSITION_INVALID_VALUE = 870;
     /**
-     * <code>RETCODE_RET_ASTER_CREDIT_NOT_ENOUGH = 876;</code>
+     * <code>RET_DELIVER_NOT_FINISH_ALL_QUEST = 871;</code>
      */
-    public static final int RETCODE_RET_ASTER_CREDIT_NOT_ENOUGH_VALUE = 876;
+    public static final int RET_DELIVER_NOT_FINISH_ALL_QUEST_VALUE = 871;
     /**
-     * <code>RETCODE_RET_ASTER_TOKEN_NOT_ENOUGH = 877;</code>
+     * <code>RET_DELIVER_ALREADY_TAKE_DAILY_REWARD = 872;</code>
      */
-    public static final int RETCODE_RET_ASTER_TOKEN_NOT_ENOUGH_VALUE = 877;
+    public static final int RET_DELIVER_ALREADY_TAKE_DAILY_REWARD_VALUE = 872;
     /**
-     * <code>RETCODE_RET_ASTER_SPECIAL_REWARD_HAS_TAKEN = 878;</code>
+     * <code>RET_ASTER_PROGRESS_EXCEED_LIMIT = 873;</code>
      */
-    public static final int RETCODE_RET_ASTER_SPECIAL_REWARD_HAS_TAKEN_VALUE = 878;
+    public static final int RET_ASTER_PROGRESS_EXCEED_LIMIT_VALUE = 873;
     /**
-     * <code>RETCODE_RET_FLIGHT_GROUP_ACTIVITY_NOT_STARTED = 879;</code>
+     * <code>RET_ASTER_CREDIT_EXCEED_LIMIT = 874;</code>
      */
-    public static final int RETCODE_RET_FLIGHT_GROUP_ACTIVITY_NOT_STARTED_VALUE = 879;
+    public static final int RET_ASTER_CREDIT_EXCEED_LIMIT_VALUE = 874;
     /**
-     * <code>RETCODE_RET_ASTER_MID_PREVIOUS_BATTLE_NOT_FINISHED = 880;</code>
+     * <code>RET_ASTER_TOKEN_EXCEED_LIMIT = 875;</code>
      */
-    public static final int RETCODE_RET_ASTER_MID_PREVIOUS_BATTLE_NOT_FINISHED_VALUE = 880;
+    public static final int RET_ASTER_TOKEN_EXCEED_LIMIT_VALUE = 875;
     /**
-     * <code>RETCODE_RET_DRAGON_SPINE_SHIMMERING_ESSENCE_EXCEED_LIMIT = 881;</code>
+     * <code>RET_ASTER_CREDIT_NOT_ENOUGH = 876;</code>
      */
-    public static final int RETCODE_RET_DRAGON_SPINE_SHIMMERING_ESSENCE_EXCEED_LIMIT_VALUE = 881;
+    public static final int RET_ASTER_CREDIT_NOT_ENOUGH_VALUE = 876;
     /**
-     * <code>RETCODE_RET_DRAGON_SPINE_WARM_ESSENCE_EXCEED_LIMIT = 882;</code>
+     * <code>RET_ASTER_TOKEN_NOT_ENOUGH = 877;</code>
      */
-    public static final int RETCODE_RET_DRAGON_SPINE_WARM_ESSENCE_EXCEED_LIMIT_VALUE = 882;
+    public static final int RET_ASTER_TOKEN_NOT_ENOUGH_VALUE = 877;
     /**
-     * <code>RETCODE_RET_DRAGON_SPINE_WONDROUS_ESSENCE_EXCEED_LIMIT = 883;</code>
+     * <code>RET_ASTER_SPECIAL_REWARD_HAS_TAKEN = 878;</code>
      */
-    public static final int RETCODE_RET_DRAGON_SPINE_WONDROUS_ESSENCE_EXCEED_LIMIT_VALUE = 883;
+    public static final int RET_ASTER_SPECIAL_REWARD_HAS_TAKEN_VALUE = 878;
     /**
-     * <code>RETCODE_RET_DRAGON_SPINE_SHIMMERING_ESSENCE_NOT_ENOUGH = 884;</code>
+     * <code>RET_FLIGHT_GROUP_ACTIVITY_NOT_STARTED = 879;</code>
      */
-    public static final int RETCODE_RET_DRAGON_SPINE_SHIMMERING_ESSENCE_NOT_ENOUGH_VALUE = 884;
+    public static final int RET_FLIGHT_GROUP_ACTIVITY_NOT_STARTED_VALUE = 879;
     /**
-     * <code>RETCODE_RET_DRAGON_SPINE_WARM_ESSENCE_NOT_ENOUGH = 885;</code>
+     * <code>RET_ASTER_MID_PREVIOUS_BATTLE_NOT_FINISHED = 880;</code>
      */
-    public static final int RETCODE_RET_DRAGON_SPINE_WARM_ESSENCE_NOT_ENOUGH_VALUE = 885;
+    public static final int RET_ASTER_MID_PREVIOUS_BATTLE_NOT_FINISHED_VALUE = 880;
     /**
-     * <code>RETCODE_RET_DRAGON_SPINE_WONDROUS_ESSENCE_NOT_ENOUGH = 886;</code>
+     * <code>RET_DRAGON_SPINE_SHIMMERING_ESSENCE_EXCEED_LIMIT = 881;</code>
      */
-    public static final int RETCODE_RET_DRAGON_SPINE_WONDROUS_ESSENCE_NOT_ENOUGH_VALUE = 886;
+    public static final int RET_DRAGON_SPINE_SHIMMERING_ESSENCE_EXCEED_LIMIT_VALUE = 881;
     /**
-     * <code>RETCODE_RET_EFFIGY_FIRST_PASS_REWARD_HAS_TAKEN = 891;</code>
+     * <code>RET_DRAGON_SPINE_WARM_ESSENCE_EXCEED_LIMIT = 882;</code>
      */
-    public static final int RETCODE_RET_EFFIGY_FIRST_PASS_REWARD_HAS_TAKEN_VALUE = 891;
+    public static final int RET_DRAGON_SPINE_WARM_ESSENCE_EXCEED_LIMIT_VALUE = 882;
     /**
-     * <code>RETCODE_RET_EFFIGY_REWARD_HAS_TAKEN = 892;</code>
+     * <code>RET_DRAGON_SPINE_WONDROUS_ESSENCE_EXCEED_LIMIT = 883;</code>
      */
-    public static final int RETCODE_RET_EFFIGY_REWARD_HAS_TAKEN_VALUE = 892;
+    public static final int RET_DRAGON_SPINE_WONDROUS_ESSENCE_EXCEED_LIMIT_VALUE = 883;
     /**
-     * <code>RETCODE_RET_TREASURE_MAP_ADD_TOKEN_EXCEED_LIMIT = 893;</code>
+     * <code>RET_DRAGON_SPINE_SHIMMERING_ESSENCE_NOT_ENOUGH = 884;</code>
      */
-    public static final int RETCODE_RET_TREASURE_MAP_ADD_TOKEN_EXCEED_LIMIT_VALUE = 893;
+    public static final int RET_DRAGON_SPINE_SHIMMERING_ESSENCE_NOT_ENOUGH_VALUE = 884;
     /**
-     * <code>RETCODE_RET_TREASURE_MAP_TOKEN_NOT_ENOUGHT = 894;</code>
+     * <code>RET_DRAGON_SPINE_WARM_ESSENCE_NOT_ENOUGH = 885;</code>
      */
-    public static final int RETCODE_RET_TREASURE_MAP_TOKEN_NOT_ENOUGHT_VALUE = 894;
+    public static final int RET_DRAGON_SPINE_WARM_ESSENCE_NOT_ENOUGH_VALUE = 885;
     /**
-     * <code>RETCODE_RET_SEA_LAMP_COIN_EXCEED_LIMIT = 895;</code>
+     * <code>RET_DRAGON_SPINE_WONDROUS_ESSENCE_NOT_ENOUGH = 886;</code>
      */
-    public static final int RETCODE_RET_SEA_LAMP_COIN_EXCEED_LIMIT_VALUE = 895;
+    public static final int RET_DRAGON_SPINE_WONDROUS_ESSENCE_NOT_ENOUGH_VALUE = 886;
     /**
-     * <code>RETCODE_RET_SEA_LAMP_COIN_NOT_ENOUGH = 896;</code>
+     * <code>RET_EFFIGY_FIRST_PASS_REWARD_HAS_TAKEN = 891;</code>
      */
-    public static final int RETCODE_RET_SEA_LAMP_COIN_NOT_ENOUGH_VALUE = 896;
+    public static final int RET_EFFIGY_FIRST_PASS_REWARD_HAS_TAKEN_VALUE = 891;
     /**
-     * <code>RETCODE_RET_SEA_LAMP_POPULARITY_EXCEED_LIMIT = 897;</code>
+     * <code>RET_EFFIGY_REWARD_HAS_TAKEN = 892;</code>
      */
-    public static final int RETCODE_RET_SEA_LAMP_POPULARITY_EXCEED_LIMIT_VALUE = 897;
+    public static final int RET_EFFIGY_REWARD_HAS_TAKEN_VALUE = 892;
     /**
-     * <code>RETCODE_RET_ACTIVITY_AVATAR_REWARD_NOT_OPEN = 898;</code>
+     * <code>RET_TREASURE_MAP_ADD_TOKEN_EXCEED_LIMIT = 893;</code>
      */
-    public static final int RETCODE_RET_ACTIVITY_AVATAR_REWARD_NOT_OPEN_VALUE = 898;
+    public static final int RET_TREASURE_MAP_ADD_TOKEN_EXCEED_LIMIT_VALUE = 893;
     /**
-     * <code>RETCODE_RET_ACTIVITY_AVATAR_REWARD_HAS_TAKEN = 899;</code>
+     * <code>RET_TREASURE_MAP_TOKEN_NOT_ENOUGHT = 894;</code>
      */
-    public static final int RETCODE_RET_ACTIVITY_AVATAR_REWARD_HAS_TAKEN_VALUE = 899;
+    public static final int RET_TREASURE_MAP_TOKEN_NOT_ENOUGHT_VALUE = 894;
     /**
-     * <code>RETCODE_RET_ARENA_ACTIVITY_ALREADY_STARTED = 900;</code>
+     * <code>RET_SEA_LAMP_COIN_EXCEED_LIMIT = 895;</code>
      */
-    public static final int RETCODE_RET_ARENA_ACTIVITY_ALREADY_STARTED_VALUE = 900;
+    public static final int RET_SEA_LAMP_COIN_EXCEED_LIMIT_VALUE = 895;
     /**
-     * <code>RETCODE_RET_TALENT_ALREAY_UNLOCKED = 901;</code>
+     * <code>RET_SEA_LAMP_COIN_NOT_ENOUGH = 896;</code>
      */
-    public static final int RETCODE_RET_TALENT_ALREAY_UNLOCKED_VALUE = 901;
+    public static final int RET_SEA_LAMP_COIN_NOT_ENOUGH_VALUE = 896;
     /**
-     * <code>RETCODE_RET_PREV_TALENT_NOT_UNLOCKED = 902;</code>
+     * <code>RET_SEA_LAMP_POPULARITY_EXCEED_LIMIT = 897;</code>
      */
-    public static final int RETCODE_RET_PREV_TALENT_NOT_UNLOCKED_VALUE = 902;
+    public static final int RET_SEA_LAMP_POPULARITY_EXCEED_LIMIT_VALUE = 897;
     /**
-     * <code>RETCODE_RET_BIG_TALENT_POINT_NOT_ENOUGH = 903;</code>
+     * <code>RET_ACTIVITY_AVATAR_REWARD_NOT_OPEN = 898;</code>
      */
-    public static final int RETCODE_RET_BIG_TALENT_POINT_NOT_ENOUGH_VALUE = 903;
+    public static final int RET_ACTIVITY_AVATAR_REWARD_NOT_OPEN_VALUE = 898;
     /**
-     * <code>RETCODE_RET_SMALL_TALENT_POINT_NOT_ENOUGH = 904;</code>
+     * <code>RET_ACTIVITY_AVATAR_REWARD_HAS_TAKEN = 899;</code>
      */
-    public static final int RETCODE_RET_SMALL_TALENT_POINT_NOT_ENOUGH_VALUE = 904;
+    public static final int RET_ACTIVITY_AVATAR_REWARD_HAS_TAKEN_VALUE = 899;
     /**
-     * <code>RETCODE_RET_PROUD_SKILL_ALREADY_GOT = 905;</code>
+     * <code>RET_ARENA_ACTIVITY_ALREADY_STARTED = 900;</code>
      */
-    public static final int RETCODE_RET_PROUD_SKILL_ALREADY_GOT_VALUE = 905;
+    public static final int RET_ARENA_ACTIVITY_ALREADY_STARTED_VALUE = 900;
     /**
-     * <code>RETCODE_RET_PREV_PROUD_SKILL_NOT_GET = 906;</code>
+     * <code>RET_TALENT_ALREAY_UNLOCKED = 901;</code>
      */
-    public static final int RETCODE_RET_PREV_PROUD_SKILL_NOT_GET_VALUE = 906;
+    public static final int RET_TALENT_ALREAY_UNLOCKED_VALUE = 901;
     /**
-     * <code>RETCODE_RET_PROUD_SKILL_MAX_LEVEL = 907;</code>
+     * <code>RET_PREV_TALENT_NOT_UNLOCKED = 902;</code>
      */
-    public static final int RETCODE_RET_PROUD_SKILL_MAX_LEVEL_VALUE = 907;
+    public static final int RET_PREV_TALENT_NOT_UNLOCKED_VALUE = 902;
     /**
-     * <code>RETCODE_RET_CANDIDATE_SKILL_DEPOT_ID_NOT_FIND = 910;</code>
+     * <code>RET_BIG_TALENT_POINT_NOT_ENOUGH = 903;</code>
      */
-    public static final int RETCODE_RET_CANDIDATE_SKILL_DEPOT_ID_NOT_FIND_VALUE = 910;
+    public static final int RET_BIG_TALENT_POINT_NOT_ENOUGH_VALUE = 903;
     /**
-     * <code>RETCODE_RET_SKILL_DEPOT_IS_THE_SAME = 911;</code>
+     * <code>RET_SMALL_TALENT_POINT_NOT_ENOUGH = 904;</code>
      */
-    public static final int RETCODE_RET_SKILL_DEPOT_IS_THE_SAME_VALUE = 911;
+    public static final int RET_SMALL_TALENT_POINT_NOT_ENOUGH_VALUE = 904;
     /**
-     * <code>RETCODE_RET_MONSTER_NOT_EXIST = 1001;</code>
+     * <code>RET_PROUD_SKILL_ALREADY_GOT = 905;</code>
      */
-    public static final int RETCODE_RET_MONSTER_NOT_EXIST_VALUE = 1001;
+    public static final int RET_PROUD_SKILL_ALREADY_GOT_VALUE = 905;
     /**
-     * <code>RETCODE_RET_MONSTER_CREATE_FAIL = 1002;</code>
+     * <code>RET_PREV_PROUD_SKILL_NOT_GET = 906;</code>
      */
-    public static final int RETCODE_RET_MONSTER_CREATE_FAIL_VALUE = 1002;
+    public static final int RET_PREV_PROUD_SKILL_NOT_GET_VALUE = 906;
     /**
-     * <code>RETCODE_RET_DUNGEON_ENTER_FAIL = 1101;</code>
+     * <code>RET_PROUD_SKILL_MAX_LEVEL = 907;</code>
      */
-    public static final int RETCODE_RET_DUNGEON_ENTER_FAIL_VALUE = 1101;
+    public static final int RET_PROUD_SKILL_MAX_LEVEL_VALUE = 907;
     /**
-     * <code>RETCODE_RET_DUNGEON_QUIT_FAIL = 1102;</code>
+     * <code>RET_CANDIDATE_SKILL_DEPOT_ID_NOT_FIND = 910;</code>
      */
-    public static final int RETCODE_RET_DUNGEON_QUIT_FAIL_VALUE = 1102;
+    public static final int RET_CANDIDATE_SKILL_DEPOT_ID_NOT_FIND_VALUE = 910;
     /**
-     * <code>RETCODE_RET_DUNGEON_ENTER_EXCEED_DAY_COUNT = 1103;</code>
+     * <code>RET_SKILL_DEPOT_IS_THE_SAME = 911;</code>
      */
-    public static final int RETCODE_RET_DUNGEON_ENTER_EXCEED_DAY_COUNT_VALUE = 1103;
+    public static final int RET_SKILL_DEPOT_IS_THE_SAME_VALUE = 911;
     /**
-     * <code>RETCODE_RET_DUNGEON_REVIVE_EXCEED_MAX_COUNT = 1104;</code>
+     * <code>RET_MONSTER_NOT_EXIST = 1001;</code>
      */
-    public static final int RETCODE_RET_DUNGEON_REVIVE_EXCEED_MAX_COUNT_VALUE = 1104;
+    public static final int RET_MONSTER_NOT_EXIST_VALUE = 1001;
     /**
-     * <code>RETCODE_RET_DUNGEON_REVIVE_FAIL = 1105;</code>
+     * <code>RET_MONSTER_CREATE_FAIL = 1002;</code>
      */
-    public static final int RETCODE_RET_DUNGEON_REVIVE_FAIL_VALUE = 1105;
+    public static final int RET_MONSTER_CREATE_FAIL_VALUE = 1002;
     /**
-     * <code>RETCODE_RET_DUNGEON_NOT_SUCCEED = 1106;</code>
+     * <code>RET_DUNGEON_ENTER_FAIL = 1101;</code>
      */
-    public static final int RETCODE_RET_DUNGEON_NOT_SUCCEED_VALUE = 1106;
+    public static final int RET_DUNGEON_ENTER_FAIL_VALUE = 1101;
     /**
-     * <code>RETCODE_RET_DUNGEON_CAN_NOT_CANCEL = 1107;</code>
+     * <code>RET_DUNGEON_QUIT_FAIL = 1102;</code>
      */
-    public static final int RETCODE_RET_DUNGEON_CAN_NOT_CANCEL_VALUE = 1107;
+    public static final int RET_DUNGEON_QUIT_FAIL_VALUE = 1102;
     /**
-     * <code>RETCODE_RET_DEST_DUNGEON_SETTLED = 1108;</code>
+     * <code>RET_DUNGEON_ENTER_EXCEED_DAY_COUNT = 1103;</code>
      */
-    public static final int RETCODE_RET_DEST_DUNGEON_SETTLED_VALUE = 1108;
+    public static final int RET_DUNGEON_ENTER_EXCEED_DAY_COUNT_VALUE = 1103;
     /**
-     * <code>RETCODE_RET_DUNGEON_CANDIDATE_TEAM_IS_FULL = 1109;</code>
+     * <code>RET_DUNGEON_REVIVE_EXCEED_MAX_COUNT = 1104;</code>
      */
-    public static final int RETCODE_RET_DUNGEON_CANDIDATE_TEAM_IS_FULL_VALUE = 1109;
+    public static final int RET_DUNGEON_REVIVE_EXCEED_MAX_COUNT_VALUE = 1104;
     /**
-     * <code>RETCODE_RET_DUNGEON_CANDIDATE_TEAM_IS_DISMISS = 1110;</code>
+     * <code>RET_DUNGEON_REVIVE_FAIL = 1105;</code>
      */
-    public static final int RETCODE_RET_DUNGEON_CANDIDATE_TEAM_IS_DISMISS_VALUE = 1110;
+    public static final int RET_DUNGEON_REVIVE_FAIL_VALUE = 1105;
     /**
-     * <code>RETCODE_RET_DUNGEON_CANDIDATE_TEAM_NOT_ALL_READY = 1111;</code>
+     * <code>RET_DUNGEON_NOT_SUCCEED = 1106;</code>
      */
-    public static final int RETCODE_RET_DUNGEON_CANDIDATE_TEAM_NOT_ALL_READY_VALUE = 1111;
+    public static final int RET_DUNGEON_NOT_SUCCEED_VALUE = 1106;
     /**
-     * <code>RETCODE_RET_DUNGEON_CANDIDATE_TEAM_HAS_REPEAT_AVATAR = 1112;</code>
+     * <code>RET_DUNGEON_CAN_NOT_CANCEL = 1107;</code>
      */
-    public static final int RETCODE_RET_DUNGEON_CANDIDATE_TEAM_HAS_REPEAT_AVATAR_VALUE = 1112;
+    public static final int RET_DUNGEON_CAN_NOT_CANCEL_VALUE = 1107;
     /**
-     * <code>RETCODE_RET_DUNGEON_CANDIDATE_NOT_SINGEL_PASS = 1113;</code>
+     * <code>RET_DEST_DUNGEON_SETTLED = 1108;</code>
      */
-    public static final int RETCODE_RET_DUNGEON_CANDIDATE_NOT_SINGEL_PASS_VALUE = 1113;
+    public static final int RET_DEST_DUNGEON_SETTLED_VALUE = 1108;
     /**
-     * <code>RETCODE_RET_DUNGEON_REPLAY_NEED_ALL_PLAYER_DIE = 1114;</code>
+     * <code>RET_DUNGEON_CANDIDATE_TEAM_IS_FULL = 1109;</code>
      */
-    public static final int RETCODE_RET_DUNGEON_REPLAY_NEED_ALL_PLAYER_DIE_VALUE = 1114;
+    public static final int RET_DUNGEON_CANDIDATE_TEAM_IS_FULL_VALUE = 1109;
     /**
-     * <code>RETCODE_RET_DUNGEON_REPLAY_HAS_REVIVE_COUNT = 1115;</code>
+     * <code>RET_DUNGEON_CANDIDATE_TEAM_IS_DISMISS = 1110;</code>
      */
-    public static final int RETCODE_RET_DUNGEON_REPLAY_HAS_REVIVE_COUNT_VALUE = 1115;
+    public static final int RET_DUNGEON_CANDIDATE_TEAM_IS_DISMISS_VALUE = 1110;
     /**
-     * <code>RETCODE_RET_DUNGEON_OTHERS_LEAVE = 1116;</code>
+     * <code>RET_DUNGEON_CANDIDATE_TEAM_NOT_ALL_READY = 1111;</code>
      */
-    public static final int RETCODE_RET_DUNGEON_OTHERS_LEAVE_VALUE = 1116;
+    public static final int RET_DUNGEON_CANDIDATE_TEAM_NOT_ALL_READY_VALUE = 1111;
     /**
-     * <code>RETCODE_RET_DUNGEON_ENTER_LEVEL_LIMIT = 1117;</code>
+     * <code>RET_DUNGEON_CANDIDATE_TEAM_HAS_REPEAT_AVATAR = 1112;</code>
      */
-    public static final int RETCODE_RET_DUNGEON_ENTER_LEVEL_LIMIT_VALUE = 1117;
+    public static final int RET_DUNGEON_CANDIDATE_TEAM_HAS_REPEAT_AVATAR_VALUE = 1112;
     /**
-     * <code>RETCODE_RET_DUNGEON_CANNOT_ENTER_PLOT_IN_MP = 1118;</code>
+     * <code>RET_DUNGEON_CANDIDATE_NOT_SINGEL_PASS = 1113;</code>
      */
-    public static final int RETCODE_RET_DUNGEON_CANNOT_ENTER_PLOT_IN_MP_VALUE = 1118;
+    public static final int RET_DUNGEON_CANDIDATE_NOT_SINGEL_PASS_VALUE = 1113;
     /**
-     * <code>RETCODE_RET_DUNGEON_DROP_SUBFIELD_LIMIT = 1119;</code>
+     * <code>RET_DUNGEON_REPLAY_NEED_ALL_PLAYER_DIE = 1114;</code>
      */
-    public static final int RETCODE_RET_DUNGEON_DROP_SUBFIELD_LIMIT_VALUE = 1119;
+    public static final int RET_DUNGEON_REPLAY_NEED_ALL_PLAYER_DIE_VALUE = 1114;
     /**
-     * <code>RETCODE_RET_DUNGEON_BE_INVITE_PLAYER_AVATAR_ALL_DIE = 1120;</code>
+     * <code>RET_DUNGEON_REPLAY_HAS_REVIVE_COUNT = 1115;</code>
      */
-    public static final int RETCODE_RET_DUNGEON_BE_INVITE_PLAYER_AVATAR_ALL_DIE_VALUE = 1120;
+    public static final int RET_DUNGEON_REPLAY_HAS_REVIVE_COUNT_VALUE = 1115;
     /**
-     * <code>RETCODE_RET_DUNGEON_CANNOT_KICK = 1121;</code>
+     * <code>RET_DUNGEON_OTHERS_LEAVE = 1116;</code>
      */
-    public static final int RETCODE_RET_DUNGEON_CANNOT_KICK_VALUE = 1121;
+    public static final int RET_DUNGEON_OTHERS_LEAVE_VALUE = 1116;
     /**
-     * <code>RETCODE_RET_DUNGEON_CANDIDATE_TEAM_SOMEONE_LEVEL_LIMIT = 1122;</code>
+     * <code>RET_DUNGEON_ENTER_LEVEL_LIMIT = 1117;</code>
      */
-    public static final int RETCODE_RET_DUNGEON_CANDIDATE_TEAM_SOMEONE_LEVEL_LIMIT_VALUE = 1122;
+    public static final int RET_DUNGEON_ENTER_LEVEL_LIMIT_VALUE = 1117;
     /**
-     * <code>RETCODE_RET_DUNGEON_IN_FORCE_QUIT = 1123;</code>
+     * <code>RET_DUNGEON_CANNOT_ENTER_PLOT_IN_MP = 1118;</code>
      */
-    public static final int RETCODE_RET_DUNGEON_IN_FORCE_QUIT_VALUE = 1123;
+    public static final int RET_DUNGEON_CANNOT_ENTER_PLOT_IN_MP_VALUE = 1118;
     /**
-     * <code>RETCODE_RET_DUNGEON_GUEST_QUIT_DUNGEON = 1124;</code>
+     * <code>RET_DUNGEON_DROP_SUBFIELD_LIMIT = 1119;</code>
      */
-    public static final int RETCODE_RET_DUNGEON_GUEST_QUIT_DUNGEON_VALUE = 1124;
+    public static final int RET_DUNGEON_DROP_SUBFIELD_LIMIT_VALUE = 1119;
     /**
-     * <code>RETCODE_RET_DUNGEON_TICKET_FAIL = 1125;</code>
+     * <code>RET_DUNGEON_BE_INVITE_PLAYER_AVATAR_ALL_DIE = 1120;</code>
      */
-    public static final int RETCODE_RET_DUNGEON_TICKET_FAIL_VALUE = 1125;
+    public static final int RET_DUNGEON_BE_INVITE_PLAYER_AVATAR_ALL_DIE_VALUE = 1120;
     /**
-     * <code>RETCODE_RET_CUR_DUNGEON_SETTLED = 1126;</code>
+     * <code>RET_DUNGEON_CANNOT_KICK = 1121;</code>
      */
-    public static final int RETCODE_RET_CUR_DUNGEON_SETTLED_VALUE = 1126;
+    public static final int RET_DUNGEON_CANNOT_KICK_VALUE = 1121;
     /**
-     * <code>RETCODE_RET_MP_NOT_IN_MY_WORLD = 1201;</code>
+     * <code>RET_DUNGEON_CANDIDATE_TEAM_SOMEONE_LEVEL_LIMIT = 1122;</code>
      */
-    public static final int RETCODE_RET_MP_NOT_IN_MY_WORLD_VALUE = 1201;
+    public static final int RET_DUNGEON_CANDIDATE_TEAM_SOMEONE_LEVEL_LIMIT_VALUE = 1122;
     /**
-     * <code>RETCODE_RET_MP_IN_MP_MODE = 1202;</code>
+     * <code>RET_DUNGEON_IN_FORCE_QUIT = 1123;</code>
      */
-    public static final int RETCODE_RET_MP_IN_MP_MODE_VALUE = 1202;
+    public static final int RET_DUNGEON_IN_FORCE_QUIT_VALUE = 1123;
     /**
-     * <code>RETCODE_RET_MP_SCENE_IS_FULL = 1203;</code>
+     * <code>RET_DUNGEON_GUEST_QUIT_DUNGEON = 1124;</code>
      */
-    public static final int RETCODE_RET_MP_SCENE_IS_FULL_VALUE = 1203;
+    public static final int RET_DUNGEON_GUEST_QUIT_DUNGEON_VALUE = 1124;
     /**
-     * <code>RETCODE_RET_MP_MODE_NOT_AVAILABLE = 1204;</code>
+     * <code>RET_DUNGEON_TICKET_FAIL = 1125;</code>
      */
-    public static final int RETCODE_RET_MP_MODE_NOT_AVAILABLE_VALUE = 1204;
+    public static final int RET_DUNGEON_TICKET_FAIL_VALUE = 1125;
     /**
-     * <code>RETCODE_RET_MP_PLAYER_NOT_ENTERABLE = 1205;</code>
+     * <code>RET_CUR_DUNGEON_SETTLED = 1126;</code>
      */
-    public static final int RETCODE_RET_MP_PLAYER_NOT_ENTERABLE_VALUE = 1205;
+    public static final int RET_CUR_DUNGEON_SETTLED_VALUE = 1126;
     /**
-     * <code>RETCODE_RET_MP_QUEST_BLOCK_MP = 1206;</code>
+     * <code>RET_MP_NOT_IN_MY_WORLD = 1201;</code>
      */
-    public static final int RETCODE_RET_MP_QUEST_BLOCK_MP_VALUE = 1206;
+    public static final int RET_MP_NOT_IN_MY_WORLD_VALUE = 1201;
     /**
-     * <code>RETCODE_RET_MP_IN_ROOM_SCENE = 1207;</code>
+     * <code>RET_MP_IN_MP_MODE = 1202;</code>
      */
-    public static final int RETCODE_RET_MP_IN_ROOM_SCENE_VALUE = 1207;
+    public static final int RET_MP_IN_MP_MODE_VALUE = 1202;
     /**
-     * <code>RETCODE_RET_MP_WORLD_IS_FULL = 1208;</code>
+     * <code>RET_MP_SCENE_IS_FULL = 1203;</code>
      */
-    public static final int RETCODE_RET_MP_WORLD_IS_FULL_VALUE = 1208;
+    public static final int RET_MP_SCENE_IS_FULL_VALUE = 1203;
     /**
-     * <code>RETCODE_RET_MP_PLAYER_NOT_ALLOW_ENTER = 1209;</code>
+     * <code>RET_MP_MODE_NOT_AVAILABLE = 1204;</code>
      */
-    public static final int RETCODE_RET_MP_PLAYER_NOT_ALLOW_ENTER_VALUE = 1209;
+    public static final int RET_MP_MODE_NOT_AVAILABLE_VALUE = 1204;
     /**
-     * <code>RETCODE_RET_MP_PLAYER_DISCONNECTED = 1210;</code>
+     * <code>RET_MP_PLAYER_NOT_ENTERABLE = 1205;</code>
      */
-    public static final int RETCODE_RET_MP_PLAYER_DISCONNECTED_VALUE = 1210;
+    public static final int RET_MP_PLAYER_NOT_ENTERABLE_VALUE = 1205;
     /**
-     * <code>RETCODE_RET_MP_NOT_IN_MP_MODE = 1211;</code>
+     * <code>RET_MP_QUEST_BLOCK_MP = 1206;</code>
      */
-    public static final int RETCODE_RET_MP_NOT_IN_MP_MODE_VALUE = 1211;
+    public static final int RET_MP_QUEST_BLOCK_MP_VALUE = 1206;
     /**
-     * <code>RETCODE_RET_MP_OWNER_NOT_ENTER = 1212;</code>
+     * <code>RET_MP_IN_ROOM_SCENE = 1207;</code>
      */
-    public static final int RETCODE_RET_MP_OWNER_NOT_ENTER_VALUE = 1212;
+    public static final int RET_MP_IN_ROOM_SCENE_VALUE = 1207;
     /**
-     * <code>RETCODE_RET_MP_ALLOW_ENTER_PLAYER_FULL = 1213;</code>
+     * <code>RET_MP_WORLD_IS_FULL = 1208;</code>
      */
-    public static final int RETCODE_RET_MP_ALLOW_ENTER_PLAYER_FULL_VALUE = 1213;
+    public static final int RET_MP_WORLD_IS_FULL_VALUE = 1208;
     /**
-     * <code>RETCODE_RET_MP_TARGET_PLAYER_IN_TRANSFER = 1214;</code>
+     * <code>RET_MP_PLAYER_NOT_ALLOW_ENTER = 1209;</code>
      */
-    public static final int RETCODE_RET_MP_TARGET_PLAYER_IN_TRANSFER_VALUE = 1214;
+    public static final int RET_MP_PLAYER_NOT_ALLOW_ENTER_VALUE = 1209;
     /**
-     * <code>RETCODE_RET_MP_TARGET_ENTERING_OTHER = 1215;</code>
+     * <code>RET_MP_PLAYER_DISCONNECTED = 1210;</code>
      */
-    public static final int RETCODE_RET_MP_TARGET_ENTERING_OTHER_VALUE = 1215;
+    public static final int RET_MP_PLAYER_DISCONNECTED_VALUE = 1210;
     /**
-     * <code>RETCODE_RET_MP_OTHER_ENTERING = 1216;</code>
+     * <code>RET_MP_NOT_IN_MP_MODE = 1211;</code>
      */
-    public static final int RETCODE_RET_MP_OTHER_ENTERING_VALUE = 1216;
+    public static final int RET_MP_NOT_IN_MP_MODE_VALUE = 1211;
     /**
-     * <code>RETCODE_RET_MP_ENTER_MAIN_PLAYER_IN_PLOT = 1217;</code>
+     * <code>RET_MP_OWNER_NOT_ENTER = 1212;</code>
      */
-    public static final int RETCODE_RET_MP_ENTER_MAIN_PLAYER_IN_PLOT_VALUE = 1217;
+    public static final int RET_MP_OWNER_NOT_ENTER_VALUE = 1212;
     /**
-     * <code>RETCODE_RET_MP_NOT_PS_PLAYER = 1218;</code>
+     * <code>RET_MP_ALLOW_ENTER_PLAYER_FULL = 1213;</code>
      */
-    public static final int RETCODE_RET_MP_NOT_PS_PLAYER_VALUE = 1218;
+    public static final int RET_MP_ALLOW_ENTER_PLAYER_FULL_VALUE = 1213;
     /**
-     * <code>RETCODE_RET_MP_PLAY_NOT_ACTIVE = 1219;</code>
+     * <code>RET_MP_TARGET_PLAYER_IN_TRANSFER = 1214;</code>
      */
-    public static final int RETCODE_RET_MP_PLAY_NOT_ACTIVE_VALUE = 1219;
+    public static final int RET_MP_TARGET_PLAYER_IN_TRANSFER_VALUE = 1214;
     /**
-     * <code>RETCODE_RET_MP_PLAY_REMAIN_REWARDS = 1220;</code>
+     * <code>RET_MP_TARGET_ENTERING_OTHER = 1215;</code>
      */
-    public static final int RETCODE_RET_MP_PLAY_REMAIN_REWARDS_VALUE = 1220;
+    public static final int RET_MP_TARGET_ENTERING_OTHER_VALUE = 1215;
     /**
-     * <code>RETCODE_RET_MP_PLAY_NO_REWARD = 1221;</code>
+     * <code>RET_MP_OTHER_ENTERING = 1216;</code>
      */
-    public static final int RETCODE_RET_MP_PLAY_NO_REWARD_VALUE = 1221;
+    public static final int RET_MP_OTHER_ENTERING_VALUE = 1216;
     /**
-     * <code>RETCODE_RET_MP_OPEN_STATE_FAIL = 1223;</code>
+     * <code>RET_MP_ENTER_MAIN_PLAYER_IN_PLOT = 1217;</code>
      */
-    public static final int RETCODE_RET_MP_OPEN_STATE_FAIL_VALUE = 1223;
+    public static final int RET_MP_ENTER_MAIN_PLAYER_IN_PLOT_VALUE = 1217;
     /**
-     * <code>RETCODE_RET_MP_PLAYER_IN_BLACKLIST = 1224;</code>
+     * <code>RET_MP_NOT_PS_PLAYER = 1218;</code>
      */
-    public static final int RETCODE_RET_MP_PLAYER_IN_BLACKLIST_VALUE = 1224;
+    public static final int RET_MP_NOT_PS_PLAYER_VALUE = 1218;
     /**
-     * <code>RETCODE_RET_MP_REPLY_TIMEOUT = 1225;</code>
+     * <code>RET_MP_PLAY_NOT_ACTIVE = 1219;</code>
      */
-    public static final int RETCODE_RET_MP_REPLY_TIMEOUT_VALUE = 1225;
+    public static final int RET_MP_PLAY_NOT_ACTIVE_VALUE = 1219;
     /**
-     * <code>RETCODE_RET_MP_IS_BLOCK = 1226;</code>
+     * <code>RET_MP_PLAY_REMAIN_REWARDS = 1220;</code>
      */
-    public static final int RETCODE_RET_MP_IS_BLOCK_VALUE = 1226;
+    public static final int RET_MP_PLAY_REMAIN_REWARDS_VALUE = 1220;
     /**
-     * <code>RETCODE_RET_MP_ENTER_MAIN_PLAYER_IN_MP_PLAY = 1227;</code>
+     * <code>RET_MP_PLAY_NO_REWARD = 1221;</code>
      */
-    public static final int RETCODE_RET_MP_ENTER_MAIN_PLAYER_IN_MP_PLAY_VALUE = 1227;
+    public static final int RET_MP_PLAY_NO_REWARD_VALUE = 1221;
     /**
-     * <code>RETCODE_RET_MP_IN_MP_PLAY_BATTLE = 1228;</code>
+     * <code>RET_MP_OPEN_STATE_FAIL = 1223;</code>
      */
-    public static final int RETCODE_RET_MP_IN_MP_PLAY_BATTLE_VALUE = 1228;
+    public static final int RET_MP_OPEN_STATE_FAIL_VALUE = 1223;
     /**
-     * <code>RETCODE_RET_MP_GUEST_HAS_REWARD_REMAINED = 1229;</code>
+     * <code>RET_MP_PLAYER_IN_BLACKLIST = 1224;</code>
      */
-    public static final int RETCODE_RET_MP_GUEST_HAS_REWARD_REMAINED_VALUE = 1229;
+    public static final int RET_MP_PLAYER_IN_BLACKLIST_VALUE = 1224;
     /**
-     * <code>RETCODE_RET_MP_QUIT_MP_INVALID = 1230;</code>
+     * <code>RET_MP_REPLY_TIMEOUT = 1225;</code>
      */
-    public static final int RETCODE_RET_MP_QUIT_MP_INVALID_VALUE = 1230;
+    public static final int RET_MP_REPLY_TIMEOUT_VALUE = 1225;
     /**
-     * <code>RETCODE_RET_MP_OTHER_DATA_VERSION_NOT_LATEST = 1231;</code>
+     * <code>RET_MP_IS_BLOCK = 1226;</code>
      */
-    public static final int RETCODE_RET_MP_OTHER_DATA_VERSION_NOT_LATEST_VALUE = 1231;
+    public static final int RET_MP_IS_BLOCK_VALUE = 1226;
     /**
-     * <code>RETCODE_RET_MP_DATA_VERSION_NOT_LATEST = 1232;</code>
+     * <code>RET_MP_ENTER_MAIN_PLAYER_IN_MP_PLAY = 1227;</code>
      */
-    public static final int RETCODE_RET_MP_DATA_VERSION_NOT_LATEST_VALUE = 1232;
+    public static final int RET_MP_ENTER_MAIN_PLAYER_IN_MP_PLAY_VALUE = 1227;
     /**
-     * <code>RETCODE_RET_MP_CUR_WORLD_NOT_ENTERABLE = 1233;</code>
+     * <code>RET_MP_IN_MP_PLAY_BATTLE = 1228;</code>
      */
-    public static final int RETCODE_RET_MP_CUR_WORLD_NOT_ENTERABLE_VALUE = 1233;
+    public static final int RET_MP_IN_MP_PLAY_BATTLE_VALUE = 1228;
     /**
-     * <code>RETCODE_RET_MP_ANY_GALLERY_STARTED = 1234;</code>
+     * <code>RET_MP_GUEST_HAS_REWARD_REMAINED = 1229;</code>
      */
-    public static final int RETCODE_RET_MP_ANY_GALLERY_STARTED_VALUE = 1234;
+    public static final int RET_MP_GUEST_HAS_REWARD_REMAINED_VALUE = 1229;
     /**
-     * <code>RETCODE_RET_MP_HAS_ACTIVE_DRAFT = 1235;</code>
+     * <code>RET_MP_QUIT_MP_INVALID = 1230;</code>
      */
-    public static final int RETCODE_RET_MP_HAS_ACTIVE_DRAFT_VALUE = 1235;
+    public static final int RET_MP_QUIT_MP_INVALID_VALUE = 1230;
     /**
-     * <code>RETCODE_RET_MP_PLAYER_IN_DUNGEON = 1236;</code>
+     * <code>RET_MP_OTHER_DATA_VERSION_NOT_LATEST = 1231;</code>
      */
-    public static final int RETCODE_RET_MP_PLAYER_IN_DUNGEON_VALUE = 1236;
+    public static final int RET_MP_OTHER_DATA_VERSION_NOT_LATEST_VALUE = 1231;
     /**
-     * <code>RETCODE_RET_MP_MATCH_FULL = 1237;</code>
+     * <code>RET_MP_DATA_VERSION_NOT_LATEST = 1232;</code>
      */
-    public static final int RETCODE_RET_MP_MATCH_FULL_VALUE = 1237;
+    public static final int RET_MP_DATA_VERSION_NOT_LATEST_VALUE = 1232;
     /**
-     * <code>RETCODE_RET_MP_MATCH_LIMIT = 1238;</code>
+     * <code>RET_MP_CUR_WORLD_NOT_ENTERABLE = 1233;</code>
      */
-    public static final int RETCODE_RET_MP_MATCH_LIMIT_VALUE = 1238;
+    public static final int RET_MP_CUR_WORLD_NOT_ENTERABLE_VALUE = 1233;
     /**
-     * <code>RETCODE_RET_MP_MATCH_IN_PUNISH = 1239;</code>
+     * <code>RET_MP_ANY_GALLERY_STARTED = 1234;</code>
      */
-    public static final int RETCODE_RET_MP_MATCH_IN_PUNISH_VALUE = 1239;
+    public static final int RET_MP_ANY_GALLERY_STARTED_VALUE = 1234;
     /**
-     * <code>RETCODE_RET_MP_IS_IN_MULTISTAGE = 1240;</code>
+     * <code>RET_MP_HAS_ACTIVE_DRAFT = 1235;</code>
      */
-    public static final int RETCODE_RET_MP_IS_IN_MULTISTAGE_VALUE = 1240;
+    public static final int RET_MP_HAS_ACTIVE_DRAFT_VALUE = 1235;
     /**
-     * <code>RETCODE_RET_MP_MATCH_PLAY_NOT_OPEN = 1241;</code>
+     * <code>RET_MP_PLAYER_IN_DUNGEON = 1236;</code>
      */
-    public static final int RETCODE_RET_MP_MATCH_PLAY_NOT_OPEN_VALUE = 1241;
+    public static final int RET_MP_PLAYER_IN_DUNGEON_VALUE = 1236;
     /**
-     * <code>RETCODE_RET_MP_ONLY_MP_WITH_PS_PLAYER = 1242;</code>
+     * <code>RET_MP_MATCH_FULL = 1237;</code>
      */
-    public static final int RETCODE_RET_MP_ONLY_MP_WITH_PS_PLAYER_VALUE = 1242;
+    public static final int RET_MP_MATCH_FULL_VALUE = 1237;
     /**
-     * <code>RETCODE_RET_MP_GUEST_LOADING_FIRST_ENTER = 1243;</code>
+     * <code>RET_MP_MATCH_LIMIT = 1238;</code>
      */
-    public static final int RETCODE_RET_MP_GUEST_LOADING_FIRST_ENTER_VALUE = 1243;
+    public static final int RET_MP_MATCH_LIMIT_VALUE = 1238;
     /**
-     * <code>RETCODE_RET_MP_SUMMER_TIME_SPRINT_BOAT_ONGOING = 1244;</code>
+     * <code>RET_MP_MATCH_IN_PUNISH = 1239;</code>
      */
-    public static final int RETCODE_RET_MP_SUMMER_TIME_SPRINT_BOAT_ONGOING_VALUE = 1244;
+    public static final int RET_MP_MATCH_IN_PUNISH_VALUE = 1239;
     /**
-     * <code>RETCODE_RET_MP_BLITZ_RUSH_PARKOUR_CHALLENGE_ONGOING = 1245;</code>
+     * <code>RET_MP_IS_IN_MULTISTAGE = 1240;</code>
      */
-    public static final int RETCODE_RET_MP_BLITZ_RUSH_PARKOUR_CHALLENGE_ONGOING_VALUE = 1245;
+    public static final int RET_MP_IS_IN_MULTISTAGE_VALUE = 1240;
     /**
-     * <code>RETCODE_RET_MP_MUSIC_GAME_ONGOING = 1246;</code>
+     * <code>RET_MP_MATCH_PLAY_NOT_OPEN = 1241;</code>
      */
-    public static final int RETCODE_RET_MP_MUSIC_GAME_ONGOING_VALUE = 1246;
+    public static final int RET_MP_MATCH_PLAY_NOT_OPEN_VALUE = 1241;
     /**
-     * <code>RETCODE_RET_MP_IN_MPING_MODE = 1247;</code>
+     * <code>RET_MP_ONLY_MP_WITH_PS_PLAYER = 1242;</code>
      */
-    public static final int RETCODE_RET_MP_IN_MPING_MODE_VALUE = 1247;
+    public static final int RET_MP_ONLY_MP_WITH_PS_PLAYER_VALUE = 1242;
     /**
-     * <code>RETCODE_RET_MP_OWNER_IN_SINGLE_SCENE = 1248;</code>
+     * <code>RET_MP_GUEST_LOADING_FIRST_ENTER = 1243;</code>
      */
-    public static final int RETCODE_RET_MP_OWNER_IN_SINGLE_SCENE_VALUE = 1248;
+    public static final int RET_MP_GUEST_LOADING_FIRST_ENTER_VALUE = 1243;
     /**
-     * <code>RETCODE_RET_MP_IN_SINGLE_SCENE = 1249;</code>
+     * <code>RET_MP_SUMMER_TIME_SPRINT_BOAT_ONGOING = 1244;</code>
      */
-    public static final int RETCODE_RET_MP_IN_SINGLE_SCENE_VALUE = 1249;
+    public static final int RET_MP_SUMMER_TIME_SPRINT_BOAT_ONGOING_VALUE = 1244;
     /**
-     * <code>RETCODE_RET_MP_REPLY_NO_VALID_AVATAR = 1250;</code>
+     * <code>RET_MP_BLITZ_RUSH_PARKOUR_CHALLENGE_ONGOING = 1245;</code>
      */
-    public static final int RETCODE_RET_MP_REPLY_NO_VALID_AVATAR_VALUE = 1250;
+    public static final int RET_MP_BLITZ_RUSH_PARKOUR_CHALLENGE_ONGOING_VALUE = 1245;
     /**
-     * <code>RETCODE_RET_MAIL_PARA_ERR = 1301;</code>
+     * <code>RET_MP_MUSIC_GAME_ONGOING = 1246;</code>
      */
-    public static final int RETCODE_RET_MAIL_PARA_ERR_VALUE = 1301;
+    public static final int RET_MP_MUSIC_GAME_ONGOING_VALUE = 1246;
     /**
-     * <code>RETCODE_RET_MAIL_MAX_NUM = 1302;</code>
+     * <code>RET_MP_IN_MPING_MODE = 1247;</code>
      */
-    public static final int RETCODE_RET_MAIL_MAX_NUM_VALUE = 1302;
+    public static final int RET_MP_IN_MPING_MODE_VALUE = 1247;
     /**
-     * <code>RETCODE_RET_MAIL_ITEM_NUM_EXCEED = 1303;</code>
+     * <code>RET_MP_OWNER_IN_SINGLE_SCENE = 1248;</code>
      */
-    public static final int RETCODE_RET_MAIL_ITEM_NUM_EXCEED_VALUE = 1303;
+    public static final int RET_MP_OWNER_IN_SINGLE_SCENE_VALUE = 1248;
     /**
-     * <code>RETCODE_RET_MAIL_TITLE_LEN_EXCEED = 1304;</code>
+     * <code>RET_MP_IN_SINGLE_SCENE = 1249;</code>
      */
-    public static final int RETCODE_RET_MAIL_TITLE_LEN_EXCEED_VALUE = 1304;
+    public static final int RET_MP_IN_SINGLE_SCENE_VALUE = 1249;
     /**
-     * <code>RETCODE_RET_MAIL_CONTENT_LEN_EXCEED = 1305;</code>
+     * <code>RET_MP_REPLY_NO_VALID_AVATAR = 1250;</code>
      */
-    public static final int RETCODE_RET_MAIL_CONTENT_LEN_EXCEED_VALUE = 1305;
+    public static final int RET_MP_REPLY_NO_VALID_AVATAR_VALUE = 1250;
     /**
-     * <code>RETCODE_RET_MAIL_SENDER_LEN_EXCEED = 1306;</code>
+     * <code>RET_MP_IS_NOT_IN_TRANSFER_GUARD = 1251;</code>
      */
-    public static final int RETCODE_RET_MAIL_SENDER_LEN_EXCEED_VALUE = 1306;
+    public static final int RET_MP_IS_NOT_IN_TRANSFER_GUARD_VALUE = 1251;
     /**
-     * <code>RETCODE_RET_MAIL_PARSE_PACKET_FAIL = 1307;</code>
+     * <code>RET_MAIL_PARA_ERR = 1301;</code>
      */
-    public static final int RETCODE_RET_MAIL_PARSE_PACKET_FAIL_VALUE = 1307;
+    public static final int RET_MAIL_PARA_ERR_VALUE = 1301;
     /**
-     * <code>RETCODE_RET_OFFLINE_MSG_MAX_NUM = 1308;</code>
+     * <code>RET_MAIL_MAX_NUM = 1302;</code>
      */
-    public static final int RETCODE_RET_OFFLINE_MSG_MAX_NUM_VALUE = 1308;
+    public static final int RET_MAIL_MAX_NUM_VALUE = 1302;
     /**
-     * <code>RETCODE_RET_OFFLINE_MSG_SAME_TICKET = 1309;</code>
+     * <code>RET_MAIL_ITEM_NUM_EXCEED = 1303;</code>
      */
-    public static final int RETCODE_RET_OFFLINE_MSG_SAME_TICKET_VALUE = 1309;
+    public static final int RET_MAIL_ITEM_NUM_EXCEED_VALUE = 1303;
     /**
-     * <code>RETCODE_RET_MAIL_EXCEL_MAIL_TYPE_ERROR = 1310;</code>
+     * <code>RET_MAIL_TITLE_LEN_EXCEED = 1304;</code>
      */
-    public static final int RETCODE_RET_MAIL_EXCEL_MAIL_TYPE_ERROR_VALUE = 1310;
+    public static final int RET_MAIL_TITLE_LEN_EXCEED_VALUE = 1304;
     /**
-     * <code>RETCODE_RET_MAIL_CANNOT_SEND_MCOIN = 1311;</code>
+     * <code>RET_MAIL_CONTENT_LEN_EXCEED = 1305;</code>
      */
-    public static final int RETCODE_RET_MAIL_CANNOT_SEND_MCOIN_VALUE = 1311;
+    public static final int RET_MAIL_CONTENT_LEN_EXCEED_VALUE = 1305;
     /**
-     * <code>RETCODE_RET_MAIL_HCOIN_EXCEED_LIMIT = 1312;</code>
+     * <code>RET_MAIL_SENDER_LEN_EXCEED = 1306;</code>
      */
-    public static final int RETCODE_RET_MAIL_HCOIN_EXCEED_LIMIT_VALUE = 1312;
+    public static final int RET_MAIL_SENDER_LEN_EXCEED_VALUE = 1306;
     /**
-     * <code>RETCODE_RET_MAIL_SCOIN_EXCEED_LIMIT = 1313;</code>
+     * <code>RET_MAIL_PARSE_PACKET_FAIL = 1307;</code>
      */
-    public static final int RETCODE_RET_MAIL_SCOIN_EXCEED_LIMIT_VALUE = 1313;
+    public static final int RET_MAIL_PARSE_PACKET_FAIL_VALUE = 1307;
     /**
-     * <code>RETCODE_RET_MAIL_MATERIAL_ID_INVALID = 1314;</code>
+     * <code>RET_OFFLINE_MSG_MAX_NUM = 1308;</code>
      */
-    public static final int RETCODE_RET_MAIL_MATERIAL_ID_INVALID_VALUE = 1314;
+    public static final int RET_OFFLINE_MSG_MAX_NUM_VALUE = 1308;
     /**
-     * <code>RETCODE_RET_MAIL_AVATAR_EXCEED_LIMIT = 1315;</code>
+     * <code>RET_OFFLINE_MSG_SAME_TICKET = 1309;</code>
      */
-    public static final int RETCODE_RET_MAIL_AVATAR_EXCEED_LIMIT_VALUE = 1315;
+    public static final int RET_OFFLINE_MSG_SAME_TICKET_VALUE = 1309;
     /**
-     * <code>RETCODE_RET_MAIL_GACHA_TICKET_ETC_EXCEED_LIMIT = 1316;</code>
+     * <code>RET_MAIL_EXCEL_MAIL_TYPE_ERROR = 1310;</code>
      */
-    public static final int RETCODE_RET_MAIL_GACHA_TICKET_ETC_EXCEED_LIMIT_VALUE = 1316;
+    public static final int RET_MAIL_EXCEL_MAIL_TYPE_ERROR_VALUE = 1310;
     /**
-     * <code>RETCODE_RET_MAIL_ITEM_EXCEED_CEHUA_LIMIT = 1317;</code>
+     * <code>RET_MAIL_CANNOT_SEND_MCOIN = 1311;</code>
      */
-    public static final int RETCODE_RET_MAIL_ITEM_EXCEED_CEHUA_LIMIT_VALUE = 1317;
+    public static final int RET_MAIL_CANNOT_SEND_MCOIN_VALUE = 1311;
     /**
-     * <code>RETCODE_RET_MAIL_SPACE_OR_REST_NUM_NOT_ENOUGH = 1318;</code>
+     * <code>RET_MAIL_HCOIN_EXCEED_LIMIT = 1312;</code>
      */
-    public static final int RETCODE_RET_MAIL_SPACE_OR_REST_NUM_NOT_ENOUGH_VALUE = 1318;
+    public static final int RET_MAIL_HCOIN_EXCEED_LIMIT_VALUE = 1312;
     /**
-     * <code>RETCODE_RET_MAIL_TICKET_IS_EMPTY = 1319;</code>
+     * <code>RET_MAIL_SCOIN_EXCEED_LIMIT = 1313;</code>
      */
-    public static final int RETCODE_RET_MAIL_TICKET_IS_EMPTY_VALUE = 1319;
+    public static final int RET_MAIL_SCOIN_EXCEED_LIMIT_VALUE = 1313;
     /**
-     * <code>RETCODE_RET_MAIL_TRANSACTION_IS_EMPTY = 1320;</code>
+     * <code>RET_MAIL_MATERIAL_ID_INVALID = 1314;</code>
      */
-    public static final int RETCODE_RET_MAIL_TRANSACTION_IS_EMPTY_VALUE = 1320;
+    public static final int RET_MAIL_MATERIAL_ID_INVALID_VALUE = 1314;
     /**
-     * <code>RETCODE_RET_MAIL_DELETE_COLLECTED = 1321;</code>
+     * <code>RET_MAIL_AVATAR_EXCEED_LIMIT = 1315;</code>
      */
-    public static final int RETCODE_RET_MAIL_DELETE_COLLECTED_VALUE = 1321;
+    public static final int RET_MAIL_AVATAR_EXCEED_LIMIT_VALUE = 1315;
     /**
-     * <code>RETCODE_RET_DAILY_TASK_NOT_FINISH = 1330;</code>
+     * <code>RET_MAIL_GACHA_TICKET_ETC_EXCEED_LIMIT = 1316;</code>
      */
-    public static final int RETCODE_RET_DAILY_TASK_NOT_FINISH_VALUE = 1330;
+    public static final int RET_MAIL_GACHA_TICKET_ETC_EXCEED_LIMIT_VALUE = 1316;
     /**
-     * <code>RETCODE_RET_DAILY_TAKS_HAS_TAKEN = 1331;</code>
+     * <code>RET_MAIL_ITEM_EXCEED_CEHUA_LIMIT = 1317;</code>
      */
-    public static final int RETCODE_RET_DAILY_TAKS_HAS_TAKEN_VALUE = 1331;
+    public static final int RET_MAIL_ITEM_EXCEED_CEHUA_LIMIT_VALUE = 1317;
     /**
-     * <code>RETCODE_RET_SOCIAL_OFFLINE_MSG_NUM_EXCEED = 1332;</code>
+     * <code>RET_MAIL_SPACE_OR_REST_NUM_NOT_ENOUGH = 1318;</code>
      */
-    public static final int RETCODE_RET_SOCIAL_OFFLINE_MSG_NUM_EXCEED_VALUE = 1332;
+    public static final int RET_MAIL_SPACE_OR_REST_NUM_NOT_ENOUGH_VALUE = 1318;
     /**
-     * <code>RETCODE_RET_DAILY_TASK_FILTER_CITY_NOT_OPEN = 1333;</code>
+     * <code>RET_MAIL_TICKET_IS_EMPTY = 1319;</code>
      */
-    public static final int RETCODE_RET_DAILY_TASK_FILTER_CITY_NOT_OPEN_VALUE = 1333;
+    public static final int RET_MAIL_TICKET_IS_EMPTY_VALUE = 1319;
     /**
-     * <code>RETCODE_RET_GACHA_INAVAILABLE = 1401;</code>
+     * <code>RET_MAIL_TRANSACTION_IS_EMPTY = 1320;</code>
      */
-    public static final int RETCODE_RET_GACHA_INAVAILABLE_VALUE = 1401;
+    public static final int RET_MAIL_TRANSACTION_IS_EMPTY_VALUE = 1320;
     /**
-     * <code>RETCODE_RET_GACHA_RANDOM_NOT_MATCH = 1402;</code>
+     * <code>RET_MAIL_DELETE_COLLECTED = 1321;</code>
      */
-    public static final int RETCODE_RET_GACHA_RANDOM_NOT_MATCH_VALUE = 1402;
+    public static final int RET_MAIL_DELETE_COLLECTED_VALUE = 1321;
     /**
-     * <code>RETCODE_RET_GACHA_SCHEDULE_NOT_MATCH = 1403;</code>
+     * <code>RET_DAILY_TASK_NOT_FINISH = 1330;</code>
      */
-    public static final int RETCODE_RET_GACHA_SCHEDULE_NOT_MATCH_VALUE = 1403;
+    public static final int RET_DAILY_TASK_NOT_FINISH_VALUE = 1330;
     /**
-     * <code>RETCODE_RET_GACHA_INVALID_TIMES = 1404;</code>
+     * <code>RET_DAILY_TAKS_HAS_TAKEN = 1331;</code>
      */
-    public static final int RETCODE_RET_GACHA_INVALID_TIMES_VALUE = 1404;
+    public static final int RET_DAILY_TAKS_HAS_TAKEN_VALUE = 1331;
     /**
-     * <code>RETCODE_RET_GACHA_COST_ITEM_NOT_ENOUGH = 1405;</code>
+     * <code>RET_SOCIAL_OFFLINE_MSG_NUM_EXCEED = 1332;</code>
      */
-    public static final int RETCODE_RET_GACHA_COST_ITEM_NOT_ENOUGH_VALUE = 1405;
+    public static final int RET_SOCIAL_OFFLINE_MSG_NUM_EXCEED_VALUE = 1332;
     /**
-     * <code>RETCODE_RET_GACHA_TIMES_LIMIT = 1406;</code>
+     * <code>RET_DAILY_TASK_FILTER_CITY_NOT_OPEN = 1333;</code>
      */
-    public static final int RETCODE_RET_GACHA_TIMES_LIMIT_VALUE = 1406;
+    public static final int RET_DAILY_TASK_FILTER_CITY_NOT_OPEN_VALUE = 1333;
     /**
-     * <code>RETCODE_RET_GACHA_WISH_SAME_ITEM = 1407;</code>
+     * <code>RET_GACHA_INAVAILABLE = 1401;</code>
      */
-    public static final int RETCODE_RET_GACHA_WISH_SAME_ITEM_VALUE = 1407;
+    public static final int RET_GACHA_INAVAILABLE_VALUE = 1401;
     /**
-     * <code>RETCODE_RET_GACHA_WISH_INVALID_ITEM = 1408;</code>
+     * <code>RET_GACHA_RANDOM_NOT_MATCH = 1402;</code>
      */
-    public static final int RETCODE_RET_GACHA_WISH_INVALID_ITEM_VALUE = 1408;
+    public static final int RET_GACHA_RANDOM_NOT_MATCH_VALUE = 1402;
     /**
-     * <code>RETCODE_RET_GACHA_MINORS_TIMES_LIMIT = 1409;</code>
+     * <code>RET_GACHA_SCHEDULE_NOT_MATCH = 1403;</code>
      */
-    public static final int RETCODE_RET_GACHA_MINORS_TIMES_LIMIT_VALUE = 1409;
+    public static final int RET_GACHA_SCHEDULE_NOT_MATCH_VALUE = 1403;
     /**
-     * <code>RETCODE_RET_GACHA_GENERAL_TIMES_LIMIT = 1410;</code>
+     * <code>RET_GACHA_INVALID_TIMES = 1404;</code>
      */
-    public static final int RETCODE_RET_GACHA_GENERAL_TIMES_LIMIT_VALUE = 1410;
+    public static final int RET_GACHA_INVALID_TIMES_VALUE = 1404;
     /**
-     * <code>RETCODE_RET_INVESTIGAITON_NOT_IN_PROGRESS = 1501;</code>
+     * <code>RET_GACHA_COST_ITEM_NOT_ENOUGH = 1405;</code>
      */
-    public static final int RETCODE_RET_INVESTIGAITON_NOT_IN_PROGRESS_VALUE = 1501;
+    public static final int RET_GACHA_COST_ITEM_NOT_ENOUGH_VALUE = 1405;
     /**
-     * <code>RETCODE_RET_INVESTIGAITON_UNCOMPLETE = 1502;</code>
+     * <code>RET_GACHA_TIMES_LIMIT = 1406;</code>
      */
-    public static final int RETCODE_RET_INVESTIGAITON_UNCOMPLETE_VALUE = 1502;
+    public static final int RET_GACHA_TIMES_LIMIT_VALUE = 1406;
     /**
-     * <code>RETCODE_RET_INVESTIGAITON_REWARD_TAKEN = 1503;</code>
+     * <code>RET_GACHA_WISH_SAME_ITEM = 1407;</code>
      */
-    public static final int RETCODE_RET_INVESTIGAITON_REWARD_TAKEN_VALUE = 1503;
+    public static final int RET_GACHA_WISH_SAME_ITEM_VALUE = 1407;
     /**
-     * <code>RETCODE_RET_INVESTIGAITON_TARGET_STATE_ERROR = 1504;</code>
+     * <code>RET_GACHA_WISH_INVALID_ITEM = 1408;</code>
      */
-    public static final int RETCODE_RET_INVESTIGAITON_TARGET_STATE_ERROR_VALUE = 1504;
+    public static final int RET_GACHA_WISH_INVALID_ITEM_VALUE = 1408;
     /**
-     * <code>RETCODE_RET_PUSH_TIPS_NOT_FOUND = 1505;</code>
+     * <code>RET_GACHA_MINORS_TIMES_LIMIT = 1409;</code>
      */
-    public static final int RETCODE_RET_PUSH_TIPS_NOT_FOUND_VALUE = 1505;
+    public static final int RET_GACHA_MINORS_TIMES_LIMIT_VALUE = 1409;
     /**
-     * <code>RETCODE_RET_SIGN_IN_RECORD_NOT_FOUND = 1506;</code>
+     * <code>RET_GACHA_GENERAL_TIMES_LIMIT = 1410;</code>
      */
-    public static final int RETCODE_RET_SIGN_IN_RECORD_NOT_FOUND_VALUE = 1506;
+    public static final int RET_GACHA_GENERAL_TIMES_LIMIT_VALUE = 1410;
     /**
-     * <code>RETCODE_RET_ALREADY_HAVE_SIGNED_IN = 1507;</code>
+     * <code>RET_INVESTIGAITON_NOT_IN_PROGRESS = 1501;</code>
      */
-    public static final int RETCODE_RET_ALREADY_HAVE_SIGNED_IN_VALUE = 1507;
+    public static final int RET_INVESTIGAITON_NOT_IN_PROGRESS_VALUE = 1501;
     /**
-     * <code>RETCODE_RET_SIGN_IN_COND_NOT_SATISFIED = 1508;</code>
+     * <code>RET_INVESTIGAITON_UNCOMPLETE = 1502;</code>
      */
-    public static final int RETCODE_RET_SIGN_IN_COND_NOT_SATISFIED_VALUE = 1508;
+    public static final int RET_INVESTIGAITON_UNCOMPLETE_VALUE = 1502;
     /**
-     * <code>RETCODE_RET_BONUS_ACTIVITY_NOT_UNREWARDED = 1509;</code>
+     * <code>RET_INVESTIGAITON_REWARD_TAKEN = 1503;</code>
      */
-    public static final int RETCODE_RET_BONUS_ACTIVITY_NOT_UNREWARDED_VALUE = 1509;
+    public static final int RET_INVESTIGAITON_REWARD_TAKEN_VALUE = 1503;
     /**
-     * <code>RETCODE_RET_SIGN_IN_REWARDED = 1510;</code>
+     * <code>RET_INVESTIGAITON_TARGET_STATE_ERROR = 1504;</code>
      */
-    public static final int RETCODE_RET_SIGN_IN_REWARDED_VALUE = 1510;
+    public static final int RET_INVESTIGAITON_TARGET_STATE_ERROR_VALUE = 1504;
     /**
-     * <code>RETCODE_RET_TOWER_NOT_OPEN = 1521;</code>
+     * <code>RET_PUSH_TIPS_NOT_FOUND = 1505;</code>
      */
-    public static final int RETCODE_RET_TOWER_NOT_OPEN_VALUE = 1521;
+    public static final int RET_PUSH_TIPS_NOT_FOUND_VALUE = 1505;
     /**
-     * <code>RETCODE_RET_TOWER_HAVE_DAILY_RECORD = 1522;</code>
+     * <code>RET_SIGN_IN_RECORD_NOT_FOUND = 1506;</code>
      */
-    public static final int RETCODE_RET_TOWER_HAVE_DAILY_RECORD_VALUE = 1522;
+    public static final int RET_SIGN_IN_RECORD_NOT_FOUND_VALUE = 1506;
     /**
-     * <code>RETCODE_RET_TOWER_NOT_RECORD = 1523;</code>
+     * <code>RET_ALREADY_HAVE_SIGNED_IN = 1507;</code>
      */
-    public static final int RETCODE_RET_TOWER_NOT_RECORD_VALUE = 1523;
+    public static final int RET_ALREADY_HAVE_SIGNED_IN_VALUE = 1507;
     /**
-     * <code>RETCODE_RET_TOWER_HAVE_RECORD = 1524;</code>
+     * <code>RET_SIGN_IN_COND_NOT_SATISFIED = 1508;</code>
      */
-    public static final int RETCODE_RET_TOWER_HAVE_RECORD_VALUE = 1524;
+    public static final int RET_SIGN_IN_COND_NOT_SATISFIED_VALUE = 1508;
     /**
-     * <code>RETCODE_RET_TOWER_TEAM_NUM_ERROR = 1525;</code>
+     * <code>RET_BONUS_ACTIVITY_NOT_UNREWARDED = 1509;</code>
      */
-    public static final int RETCODE_RET_TOWER_TEAM_NUM_ERROR_VALUE = 1525;
+    public static final int RET_BONUS_ACTIVITY_NOT_UNREWARDED_VALUE = 1509;
     /**
-     * <code>RETCODE_RET_TOWER_FLOOR_NOT_OPEN = 1526;</code>
+     * <code>RET_SIGN_IN_REWARDED = 1510;</code>
      */
-    public static final int RETCODE_RET_TOWER_FLOOR_NOT_OPEN_VALUE = 1526;
+    public static final int RET_SIGN_IN_REWARDED_VALUE = 1510;
     /**
-     * <code>RETCODE_RET_TOWER_NO_FLOOR_STAR_RECORD = 1527;</code>
+     * <code>RET_TOWER_NOT_OPEN = 1521;</code>
      */
-    public static final int RETCODE_RET_TOWER_NO_FLOOR_STAR_RECORD_VALUE = 1527;
+    public static final int RET_TOWER_NOT_OPEN_VALUE = 1521;
     /**
-     * <code>RETCODE_RET_ALREADY_HAS_TOWER_BUFF = 1528;</code>
+     * <code>RET_TOWER_HAVE_DAILY_RECORD = 1522;</code>
      */
-    public static final int RETCODE_RET_ALREADY_HAS_TOWER_BUFF_VALUE = 1528;
+    public static final int RET_TOWER_HAVE_DAILY_RECORD_VALUE = 1522;
     /**
-     * <code>RETCODE_RET_DUPLICATE_ENTER_LEVEL = 1529;</code>
+     * <code>RET_TOWER_NOT_RECORD = 1523;</code>
      */
-    public static final int RETCODE_RET_DUPLICATE_ENTER_LEVEL_VALUE = 1529;
+    public static final int RET_TOWER_NOT_RECORD_VALUE = 1523;
     /**
-     * <code>RETCODE_RET_NOT_IN_TOWER_LEVEL = 1530;</code>
+     * <code>RET_TOWER_HAVE_RECORD = 1524;</code>
      */
-    public static final int RETCODE_RET_NOT_IN_TOWER_LEVEL_VALUE = 1530;
+    public static final int RET_TOWER_HAVE_RECORD_VALUE = 1524;
     /**
-     * <code>RETCODE_RET_IN_TOWER_LEVEL = 1531;</code>
+     * <code>RET_TOWER_TEAM_NUM_ERROR = 1525;</code>
      */
-    public static final int RETCODE_RET_IN_TOWER_LEVEL_VALUE = 1531;
+    public static final int RET_TOWER_TEAM_NUM_ERROR_VALUE = 1525;
     /**
-     * <code>RETCODE_RET_TOWER_PREV_FLOOR_NOT_FINISH = 1532;</code>
+     * <code>RET_TOWER_FLOOR_NOT_OPEN = 1526;</code>
      */
-    public static final int RETCODE_RET_TOWER_PREV_FLOOR_NOT_FINISH_VALUE = 1532;
+    public static final int RET_TOWER_FLOOR_NOT_OPEN_VALUE = 1526;
     /**
-     * <code>RETCODE_RET_TOWER_STAR_NOT_ENOUGH = 1533;</code>
+     * <code>RET_TOWER_NO_FLOOR_STAR_RECORD = 1527;</code>
      */
-    public static final int RETCODE_RET_TOWER_STAR_NOT_ENOUGH_VALUE = 1533;
+    public static final int RET_TOWER_NO_FLOOR_STAR_RECORD_VALUE = 1527;
     /**
-     * <code>RETCODE_RET_BATTLE_PASS_NO_SCHEDULE = 1541;</code>
+     * <code>RET_ALREADY_HAS_TOWER_BUFF = 1528;</code>
      */
-    public static final int RETCODE_RET_BATTLE_PASS_NO_SCHEDULE_VALUE = 1541;
+    public static final int RET_ALREADY_HAS_TOWER_BUFF_VALUE = 1528;
     /**
-     * <code>RETCODE_RET_BATTLE_PASS_HAS_BUYED = 1542;</code>
+     * <code>RET_DUPLICATE_ENTER_LEVEL = 1529;</code>
      */
-    public static final int RETCODE_RET_BATTLE_PASS_HAS_BUYED_VALUE = 1542;
+    public static final int RET_DUPLICATE_ENTER_LEVEL_VALUE = 1529;
     /**
-     * <code>RETCODE_RET_BATTLE_PASS_LEVEL_OVERFLOW = 1543;</code>
+     * <code>RET_NOT_IN_TOWER_LEVEL = 1530;</code>
      */
-    public static final int RETCODE_RET_BATTLE_PASS_LEVEL_OVERFLOW_VALUE = 1543;
+    public static final int RET_NOT_IN_TOWER_LEVEL_VALUE = 1530;
     /**
-     * <code>RETCODE_RET_BATTLE_PASS_PRODUCT_EXPIRED = 1544;</code>
+     * <code>RET_IN_TOWER_LEVEL = 1531;</code>
      */
-    public static final int RETCODE_RET_BATTLE_PASS_PRODUCT_EXPIRED_VALUE = 1544;
+    public static final int RET_IN_TOWER_LEVEL_VALUE = 1531;
     /**
-     * <code>RETCODE_RET_MATCH_HOST_QUIT = 1561;</code>
+     * <code>RET_TOWER_PREV_FLOOR_NOT_FINISH = 1532;</code>
      */
-    public static final int RETCODE_RET_MATCH_HOST_QUIT_VALUE = 1561;
+    public static final int RET_TOWER_PREV_FLOOR_NOT_FINISH_VALUE = 1532;
     /**
-     * <code>RETCODE_RET_MATCH_ALREADY_IN_MATCH = 1562;</code>
+     * <code>RET_TOWER_STAR_NOT_ENOUGH = 1533;</code>
      */
-    public static final int RETCODE_RET_MATCH_ALREADY_IN_MATCH_VALUE = 1562;
+    public static final int RET_TOWER_STAR_NOT_ENOUGH_VALUE = 1533;
     /**
-     * <code>RETCODE_RET_MATCH_NOT_IN_MATCH = 1563;</code>
+     * <code>RET_BATTLE_PASS_NO_SCHEDULE = 1541;</code>
      */
-    public static final int RETCODE_RET_MATCH_NOT_IN_MATCH_VALUE = 1563;
+    public static final int RET_BATTLE_PASS_NO_SCHEDULE_VALUE = 1541;
     /**
-     * <code>RETCODE_RET_MATCH_APPLYING_ENTER_MP = 1564;</code>
+     * <code>RET_BATTLE_PASS_HAS_BUYED = 1542;</code>
      */
-    public static final int RETCODE_RET_MATCH_APPLYING_ENTER_MP_VALUE = 1564;
+    public static final int RET_BATTLE_PASS_HAS_BUYED_VALUE = 1542;
     /**
-     * <code>RETCODE_RET_WIDGET_TREASURE_SPOT_NOT_FOUND = 1581;</code>
+     * <code>RET_BATTLE_PASS_LEVEL_OVERFLOW = 1543;</code>
      */
-    public static final int RETCODE_RET_WIDGET_TREASURE_SPOT_NOT_FOUND_VALUE = 1581;
+    public static final int RET_BATTLE_PASS_LEVEL_OVERFLOW_VALUE = 1543;
     /**
-     * <code>RETCODE_RET_WIDGET_TREASURE_ENTITY_EXISTS = 1582;</code>
+     * <code>RET_BATTLE_PASS_PRODUCT_EXPIRED = 1544;</code>
      */
-    public static final int RETCODE_RET_WIDGET_TREASURE_ENTITY_EXISTS_VALUE = 1582;
+    public static final int RET_BATTLE_PASS_PRODUCT_EXPIRED_VALUE = 1544;
     /**
-     * <code>RETCODE_RET_WIDGET_TREASURE_SPOT_FAR_AWAY = 1583;</code>
+     * <code>RET_MATCH_HOST_QUIT = 1561;</code>
      */
-    public static final int RETCODE_RET_WIDGET_TREASURE_SPOT_FAR_AWAY_VALUE = 1583;
+    public static final int RET_MATCH_HOST_QUIT_VALUE = 1561;
     /**
-     * <code>RETCODE_RET_WIDGET_TREASURE_FINISHED_TODAY = 1584;</code>
+     * <code>RET_MATCH_ALREADY_IN_MATCH = 1562;</code>
      */
-    public static final int RETCODE_RET_WIDGET_TREASURE_FINISHED_TODAY_VALUE = 1584;
+    public static final int RET_MATCH_ALREADY_IN_MATCH_VALUE = 1562;
     /**
-     * <code>RETCODE_RET_WIDGET_QUICK_USE_REQ_PARAM_ERROR = 1585;</code>
+     * <code>RET_MATCH_NOT_IN_MATCH = 1563;</code>
      */
-    public static final int RETCODE_RET_WIDGET_QUICK_USE_REQ_PARAM_ERROR_VALUE = 1585;
+    public static final int RET_MATCH_NOT_IN_MATCH_VALUE = 1563;
     /**
-     * <code>RETCODE_RET_WIDGET_CAMERA_SCAN_ID_ERROR = 1586;</code>
+     * <code>RET_MATCH_APPLYING_ENTER_MP = 1564;</code>
      */
-    public static final int RETCODE_RET_WIDGET_CAMERA_SCAN_ID_ERROR_VALUE = 1586;
+    public static final int RET_MATCH_APPLYING_ENTER_MP_VALUE = 1564;
     /**
-     * <code>RETCODE_RET_WIDGET_NOT_ACTIVE = 1587;</code>
+     * <code>RET_MATCH_INCORRECT_SCENE = 1565;</code>
      */
-    public static final int RETCODE_RET_WIDGET_NOT_ACTIVE_VALUE = 1587;
+    public static final int RET_MATCH_INCORRECT_SCENE_VALUE = 1565;
     /**
-     * <code>RETCODE_RET_WIDGET_FEATHER_NOT_ACTIVE = 1588;</code>
+     * <code>RET_WIDGET_TREASURE_SPOT_NOT_FOUND = 1581;</code>
      */
-    public static final int RETCODE_RET_WIDGET_FEATHER_NOT_ACTIVE_VALUE = 1588;
+    public static final int RET_WIDGET_TREASURE_SPOT_NOT_FOUND_VALUE = 1581;
     /**
-     * <code>RETCODE_RET_WIDGET_FEATHER_GADGET_TOO_FAR_AWAY = 1589;</code>
+     * <code>RET_WIDGET_TREASURE_ENTITY_EXISTS = 1582;</code>
      */
-    public static final int RETCODE_RET_WIDGET_FEATHER_GADGET_TOO_FAR_AWAY_VALUE = 1589;
+    public static final int RET_WIDGET_TREASURE_ENTITY_EXISTS_VALUE = 1582;
     /**
-     * <code>RETCODE_RET_WIDGET_CAPTURE_ANIMAL_NOT_EXIST = 1590;</code>
+     * <code>RET_WIDGET_TREASURE_SPOT_FAR_AWAY = 1583;</code>
      */
-    public static final int RETCODE_RET_WIDGET_CAPTURE_ANIMAL_NOT_EXIST_VALUE = 1590;
+    public static final int RET_WIDGET_TREASURE_SPOT_FAR_AWAY_VALUE = 1583;
     /**
-     * <code>RETCODE_RET_WIDGET_CAPTURE_ANIMAL_DROP_BAG_LIMIT = 1591;</code>
+     * <code>RET_WIDGET_TREASURE_FINISHED_TODAY = 1584;</code>
      */
-    public static final int RETCODE_RET_WIDGET_CAPTURE_ANIMAL_DROP_BAG_LIMIT_VALUE = 1591;
+    public static final int RET_WIDGET_TREASURE_FINISHED_TODAY_VALUE = 1584;
     /**
-     * <code>RETCODE_RET_WIDGET_CAPTURE_ANIMAL_CAN_NOT_CAPTURE = 1592;</code>
+     * <code>RET_WIDGET_QUICK_USE_REQ_PARAM_ERROR = 1585;</code>
      */
-    public static final int RETCODE_RET_WIDGET_CAPTURE_ANIMAL_CAN_NOT_CAPTURE_VALUE = 1592;
+    public static final int RET_WIDGET_QUICK_USE_REQ_PARAM_ERROR_VALUE = 1585;
     /**
-     * <code>RETCODE_RET_WIDGET_SKY_CRYSTAL_ALL_COLLECTED = 1593;</code>
+     * <code>RET_WIDGET_CAMERA_SCAN_ID_ERROR = 1586;</code>
      */
-    public static final int RETCODE_RET_WIDGET_SKY_CRYSTAL_ALL_COLLECTED_VALUE = 1593;
+    public static final int RET_WIDGET_CAMERA_SCAN_ID_ERROR_VALUE = 1586;
     /**
-     * <code>RETCODE_RET_WIDGET_SKY_CRYSTAL_HINT_ALREADY_EXIST = 1594;</code>
+     * <code>RET_WIDGET_NOT_ACTIVE = 1587;</code>
      */
-    public static final int RETCODE_RET_WIDGET_SKY_CRYSTAL_HINT_ALREADY_EXIST_VALUE = 1594;
+    public static final int RET_WIDGET_NOT_ACTIVE_VALUE = 1587;
     /**
-     * <code>RETCODE_RET_WIDGET_SKY_CRYSTAL_NOT_FOUND = 1595;</code>
+     * <code>RET_WIDGET_FEATHER_NOT_ACTIVE = 1588;</code>
      */
-    public static final int RETCODE_RET_WIDGET_SKY_CRYSTAL_NOT_FOUND_VALUE = 1595;
+    public static final int RET_WIDGET_FEATHER_NOT_ACTIVE_VALUE = 1588;
     /**
-     * <code>RETCODE_RET_WIDGET_SKY_CRYSTAL_NO_HINT_TO_CLEAR = 1596;</code>
+     * <code>RET_WIDGET_FEATHER_GADGET_TOO_FAR_AWAY = 1589;</code>
      */
-    public static final int RETCODE_RET_WIDGET_SKY_CRYSTAL_NO_HINT_TO_CLEAR_VALUE = 1596;
+    public static final int RET_WIDGET_FEATHER_GADGET_TOO_FAR_AWAY_VALUE = 1589;
     /**
-     * <code>RETCODE_RET_WIDGET_LIGHT_STONE_ENERGY_NOT_ENOUGH = 1597;</code>
+     * <code>RET_WIDGET_CAPTURE_ANIMAL_NOT_EXIST = 1590;</code>
      */
-    public static final int RETCODE_RET_WIDGET_LIGHT_STONE_ENERGY_NOT_ENOUGH_VALUE = 1597;
+    public static final int RET_WIDGET_CAPTURE_ANIMAL_NOT_EXIST_VALUE = 1590;
     /**
-     * <code>RETCODE_RET_WIDGET_TOY_CRYSTAL_ENERGY_NOT_ENOUGH = 1598;</code>
+     * <code>RET_WIDGET_CAPTURE_ANIMAL_DROP_BAG_LIMIT = 1591;</code>
      */
-    public static final int RETCODE_RET_WIDGET_TOY_CRYSTAL_ENERGY_NOT_ENOUGH_VALUE = 1598;
+    public static final int RET_WIDGET_CAPTURE_ANIMAL_DROP_BAG_LIMIT_VALUE = 1591;
     /**
-     * <code>RETCODE_RET_WIDGET_LIGHT_STONE_LEVEL_NOT_ENOUGH = 1599;</code>
+     * <code>RET_WIDGET_CAPTURE_ANIMAL_CAN_NOT_CAPTURE = 1592;</code>
      */
-    public static final int RETCODE_RET_WIDGET_LIGHT_STONE_LEVEL_NOT_ENOUGH_VALUE = 1599;
+    public static final int RET_WIDGET_CAPTURE_ANIMAL_CAN_NOT_CAPTURE_VALUE = 1592;
     /**
-     * <code>RETCODE_RET_UID_NOT_EXIST = 2001;</code>
+     * <code>RET_WIDGET_SKY_CRYSTAL_ALL_COLLECTED = 1593;</code>
      */
-    public static final int RETCODE_RET_UID_NOT_EXIST_VALUE = 2001;
+    public static final int RET_WIDGET_SKY_CRYSTAL_ALL_COLLECTED_VALUE = 1593;
     /**
-     * <code>RETCODE_RET_PARSE_BIN_ERROR = 2002;</code>
+     * <code>RET_WIDGET_SKY_CRYSTAL_HINT_ALREADY_EXIST = 1594;</code>
      */
-    public static final int RETCODE_RET_PARSE_BIN_ERROR_VALUE = 2002;
+    public static final int RET_WIDGET_SKY_CRYSTAL_HINT_ALREADY_EXIST_VALUE = 1594;
     /**
-     * <code>RETCODE_RET_ACCOUNT_INFO_NOT_EXIST = 2003;</code>
+     * <code>RET_WIDGET_SKY_CRYSTAL_NOT_FOUND = 1595;</code>
      */
-    public static final int RETCODE_RET_ACCOUNT_INFO_NOT_EXIST_VALUE = 2003;
+    public static final int RET_WIDGET_SKY_CRYSTAL_NOT_FOUND_VALUE = 1595;
     /**
-     * <code>RETCODE_RET_ORDER_INFO_NOT_EXIST = 2004;</code>
+     * <code>RET_WIDGET_SKY_CRYSTAL_NO_HINT_TO_CLEAR = 1596;</code>
      */
-    public static final int RETCODE_RET_ORDER_INFO_NOT_EXIST_VALUE = 2004;
+    public static final int RET_WIDGET_SKY_CRYSTAL_NO_HINT_TO_CLEAR_VALUE = 1596;
     /**
-     * <code>RETCODE_RET_SNAPSHOT_INDEX_ERROR = 2005;</code>
+     * <code>RET_WIDGET_LIGHT_STONE_ENERGY_NOT_ENOUGH = 1597;</code>
      */
-    public static final int RETCODE_RET_SNAPSHOT_INDEX_ERROR_VALUE = 2005;
+    public static final int RET_WIDGET_LIGHT_STONE_ENERGY_NOT_ENOUGH_VALUE = 1597;
     /**
-     * <code>RETCODE_RET_MAIL_HAS_BEEN_SENT = 2006;</code>
+     * <code>RET_WIDGET_TOY_CRYSTAL_ENERGY_NOT_ENOUGH = 1598;</code>
      */
-    public static final int RETCODE_RET_MAIL_HAS_BEEN_SENT_VALUE = 2006;
+    public static final int RET_WIDGET_TOY_CRYSTAL_ENERGY_NOT_ENOUGH_VALUE = 1598;
     /**
-     * <code>RETCODE_RET_PRODUCT_NOT_EXIST = 2007;</code>
+     * <code>RET_WIDGET_LIGHT_STONE_LEVEL_NOT_ENOUGH = 1599;</code>
      */
-    public static final int RETCODE_RET_PRODUCT_NOT_EXIST_VALUE = 2007;
+    public static final int RET_WIDGET_LIGHT_STONE_LEVEL_NOT_ENOUGH_VALUE = 1599;
     /**
-     * <code>RETCODE_RET_UNFINISH_ORDER = 2008;</code>
+     * <code>RET_UID_NOT_EXIST = 2001;</code>
      */
-    public static final int RETCODE_RET_UNFINISH_ORDER_VALUE = 2008;
+    public static final int RET_UID_NOT_EXIST_VALUE = 2001;
     /**
-     * <code>RETCODE_RET_ID_NOT_EXIST = 2009;</code>
+     * <code>RET_PARSE_BIN_ERROR = 2002;</code>
      */
-    public static final int RETCODE_RET_ID_NOT_EXIST_VALUE = 2009;
+    public static final int RET_PARSE_BIN_ERROR_VALUE = 2002;
     /**
-     * <code>RETCODE_RET_ORDER_TRADE_EARLY = 2010;</code>
+     * <code>RET_ACCOUNT_INFO_NOT_EXIST = 2003;</code>
      */
-    public static final int RETCODE_RET_ORDER_TRADE_EARLY_VALUE = 2010;
+    public static final int RET_ACCOUNT_INFO_NOT_EXIST_VALUE = 2003;
     /**
-     * <code>RETCODE_RET_ORDER_FINISHED = 2011;</code>
+     * <code>RET_ORDER_INFO_NOT_EXIST = 2004;</code>
      */
-    public static final int RETCODE_RET_ORDER_FINISHED_VALUE = 2011;
+    public static final int RET_ORDER_INFO_NOT_EXIST_VALUE = 2004;
     /**
-     * <code>RETCODE_RET_GAMESERVER_VERSION_WRONG = 2012;</code>
+     * <code>RET_SNAPSHOT_INDEX_ERROR = 2005;</code>
      */
-    public static final int RETCODE_RET_GAMESERVER_VERSION_WRONG_VALUE = 2012;
+    public static final int RET_SNAPSHOT_INDEX_ERROR_VALUE = 2005;
     /**
-     * <code>RETCODE_RET_OFFLINE_OP_FULL_LENGTH = 2013;</code>
+     * <code>RET_MAIL_HAS_BEEN_SENT = 2006;</code>
      */
-    public static final int RETCODE_RET_OFFLINE_OP_FULL_LENGTH_VALUE = 2013;
+    public static final int RET_MAIL_HAS_BEEN_SENT_VALUE = 2006;
     /**
-     * <code>RETCODE_RET_CONCERT_PRODUCT_OBTAIN_LIMIT = 2014;</code>
+     * <code>RET_PRODUCT_NOT_EXIST = 2007;</code>
      */
-    public static final int RETCODE_RET_CONCERT_PRODUCT_OBTAIN_LIMIT_VALUE = 2014;
+    public static final int RET_PRODUCT_NOT_EXIST_VALUE = 2007;
     /**
-     * <code>RETCODE_RET_CONCERT_PRODUCT_TICKET_DUPLICATED = 2015;</code>
+     * <code>RET_UNFINISH_ORDER = 2008;</code>
      */
-    public static final int RETCODE_RET_CONCERT_PRODUCT_TICKET_DUPLICATED_VALUE = 2015;
+    public static final int RET_UNFINISH_ORDER_VALUE = 2008;
     /**
-     * <code>RETCODE_RET_CONCERT_PRODUCT_TICKET_EMPTY = 2016;</code>
+     * <code>RET_ID_NOT_EXIST = 2009;</code>
      */
-    public static final int RETCODE_RET_CONCERT_PRODUCT_TICKET_EMPTY_VALUE = 2016;
+    public static final int RET_ID_NOT_EXIST_VALUE = 2009;
     /**
-     * <code>RETCODE_RET_REDIS_MODIFIED = 5001;</code>
+     * <code>RET_ORDER_TRADE_EARLY = 2010;</code>
      */
-    public static final int RETCODE_RET_REDIS_MODIFIED_VALUE = 5001;
+    public static final int RET_ORDER_TRADE_EARLY_VALUE = 2010;
     /**
-     * <code>RETCODE_RET_REDIS_UID_NOT_EXIST = 5002;</code>
+     * <code>RET_ORDER_FINISHED = 2011;</code>
      */
-    public static final int RETCODE_RET_REDIS_UID_NOT_EXIST_VALUE = 5002;
+    public static final int RET_ORDER_FINISHED_VALUE = 2011;
     /**
-     * <code>RETCODE_RET_PATHFINDING_DATA_NOT_EXIST = 6001;</code>
+     * <code>RET_GAMESERVER_VERSION_WRONG = 2012;</code>
      */
-    public static final int RETCODE_RET_PATHFINDING_DATA_NOT_EXIST_VALUE = 6001;
+    public static final int RET_GAMESERVER_VERSION_WRONG_VALUE = 2012;
     /**
-     * <code>RETCODE_RET_PATHFINDING_DESTINATION_NOT_EXIST = 6002;</code>
+     * <code>RET_OFFLINE_OP_FULL_LENGTH = 2013;</code>
      */
-    public static final int RETCODE_RET_PATHFINDING_DESTINATION_NOT_EXIST_VALUE = 6002;
+    public static final int RET_OFFLINE_OP_FULL_LENGTH_VALUE = 2013;
     /**
-     * <code>RETCODE_RET_PATHFINDING_ERROR_SCENE = 6003;</code>
+     * <code>RET_CONCERT_PRODUCT_OBTAIN_LIMIT = 2014;</code>
      */
-    public static final int RETCODE_RET_PATHFINDING_ERROR_SCENE_VALUE = 6003;
+    public static final int RET_CONCERT_PRODUCT_OBTAIN_LIMIT_VALUE = 2014;
     /**
-     * <code>RETCODE_RET_PATHFINDING_SCENE_DATA_LOADING = 6004;</code>
+     * <code>RET_CONCERT_PRODUCT_TICKET_DUPLICATED = 2015;</code>
      */
-    public static final int RETCODE_RET_PATHFINDING_SCENE_DATA_LOADING_VALUE = 6004;
+    public static final int RET_CONCERT_PRODUCT_TICKET_DUPLICATED_VALUE = 2015;
     /**
-     * <code>RETCODE_RET_FRIEND_COUNT_EXCEEDED = 7001;</code>
+     * <code>RET_CONCERT_PRODUCT_TICKET_EMPTY = 2016;</code>
      */
-    public static final int RETCODE_RET_FRIEND_COUNT_EXCEEDED_VALUE = 7001;
+    public static final int RET_CONCERT_PRODUCT_TICKET_EMPTY_VALUE = 2016;
     /**
-     * <code>RETCODE_RET_PLAYER_NOT_EXIST = 7002;</code>
+     * <code>RET_REDIS_MODIFIED = 5001;</code>
      */
-    public static final int RETCODE_RET_PLAYER_NOT_EXIST_VALUE = 7002;
+    public static final int RET_REDIS_MODIFIED_VALUE = 5001;
     /**
-     * <code>RETCODE_RET_ALREADY_SENT_ADD_REQUEST = 7003;</code>
+     * <code>RET_REDIS_UID_NOT_EXIST = 5002;</code>
      */
-    public static final int RETCODE_RET_ALREADY_SENT_ADD_REQUEST_VALUE = 7003;
+    public static final int RET_REDIS_UID_NOT_EXIST_VALUE = 5002;
     /**
-     * <code>RETCODE_RET_ASK_FRIEND_LIST_FULL = 7004;</code>
+     * <code>RET_PATHFINDING_DATA_NOT_EXIST = 6001;</code>
      */
-    public static final int RETCODE_RET_ASK_FRIEND_LIST_FULL_VALUE = 7004;
+    public static final int RET_PATHFINDING_DATA_NOT_EXIST_VALUE = 6001;
     /**
-     * <code>RETCODE_RET_PLAYER_ALREADY_IS_FRIEND = 7005;</code>
+     * <code>RET_PATHFINDING_DESTINATION_NOT_EXIST = 6002;</code>
      */
-    public static final int RETCODE_RET_PLAYER_ALREADY_IS_FRIEND_VALUE = 7005;
+    public static final int RET_PATHFINDING_DESTINATION_NOT_EXIST_VALUE = 6002;
     /**
-     * <code>RETCODE_RET_PLAYER_NOT_ASK_FRIEND = 7006;</code>
+     * <code>RET_PATHFINDING_ERROR_SCENE = 6003;</code>
      */
-    public static final int RETCODE_RET_PLAYER_NOT_ASK_FRIEND_VALUE = 7006;
+    public static final int RET_PATHFINDING_ERROR_SCENE_VALUE = 6003;
     /**
-     * <code>RETCODE_RET_TARGET_FRIEND_COUNT_EXCEED = 7007;</code>
+     * <code>RET_PATHFINDING_SCENE_DATA_LOADING = 6004;</code>
      */
-    public static final int RETCODE_RET_TARGET_FRIEND_COUNT_EXCEED_VALUE = 7007;
+    public static final int RET_PATHFINDING_SCENE_DATA_LOADING_VALUE = 6004;
     /**
-     * <code>RETCODE_RET_NOT_FRIEND = 7008;</code>
+     * <code>RET_FRIEND_COUNT_EXCEEDED = 7001;</code>
      */
-    public static final int RETCODE_RET_NOT_FRIEND_VALUE = 7008;
+    public static final int RET_FRIEND_COUNT_EXCEEDED_VALUE = 7001;
     /**
-     * <code>RETCODE_RET_BIRTHDAY_CANNOT_BE_SET_TWICE = 7009;</code>
+     * <code>RET_PLAYER_NOT_EXIST = 7002;</code>
      */
-    public static final int RETCODE_RET_BIRTHDAY_CANNOT_BE_SET_TWICE_VALUE = 7009;
+    public static final int RET_PLAYER_NOT_EXIST_VALUE = 7002;
     /**
-     * <code>RETCODE_RET_CANNOT_ADD_SELF_FRIEND = 7010;</code>
+     * <code>RET_ALREADY_SENT_ADD_REQUEST = 7003;</code>
      */
-    public static final int RETCODE_RET_CANNOT_ADD_SELF_FRIEND_VALUE = 7010;
+    public static final int RET_ALREADY_SENT_ADD_REQUEST_VALUE = 7003;
     /**
-     * <code>RETCODE_RET_SIGNATURE_ILLEGAL = 7011;</code>
+     * <code>RET_ASK_FRIEND_LIST_FULL = 7004;</code>
      */
-    public static final int RETCODE_RET_SIGNATURE_ILLEGAL_VALUE = 7011;
+    public static final int RET_ASK_FRIEND_LIST_FULL_VALUE = 7004;
     /**
-     * <code>RETCODE_RET_PS_PLAYER_CANNOT_ADD_FRIENDS = 7012;</code>
+     * <code>RET_PLAYER_ALREADY_IS_FRIEND = 7005;</code>
      */
-    public static final int RETCODE_RET_PS_PLAYER_CANNOT_ADD_FRIENDS_VALUE = 7012;
+    public static final int RET_PLAYER_ALREADY_IS_FRIEND_VALUE = 7005;
     /**
-     * <code>RETCODE_RET_PS_PLAYER_CANNOT_REMOVE_FRIENDS = 7013;</code>
+     * <code>RET_PLAYER_NOT_ASK_FRIEND = 7006;</code>
      */
-    public static final int RETCODE_RET_PS_PLAYER_CANNOT_REMOVE_FRIENDS_VALUE = 7013;
+    public static final int RET_PLAYER_NOT_ASK_FRIEND_VALUE = 7006;
     /**
-     * <code>RETCODE_RET_NAME_CARD_NOT_UNLOCKED = 7014;</code>
+     * <code>RET_TARGET_FRIEND_COUNT_EXCEED = 7007;</code>
      */
-    public static final int RETCODE_RET_NAME_CARD_NOT_UNLOCKED_VALUE = 7014;
+    public static final int RET_TARGET_FRIEND_COUNT_EXCEED_VALUE = 7007;
     /**
-     * <code>RETCODE_RET_ALREADY_IN_BLACKLIST = 7015;</code>
+     * <code>RET_NOT_FRIEND = 7008;</code>
      */
-    public static final int RETCODE_RET_ALREADY_IN_BLACKLIST_VALUE = 7015;
+    public static final int RET_NOT_FRIEND_VALUE = 7008;
     /**
-     * <code>RETCODE_RET_PS_PALEYRS_CANNOT_ADD_BLACKLIST = 7016;</code>
+     * <code>RET_BIRTHDAY_CANNOT_BE_SET_TWICE = 7009;</code>
      */
-    public static final int RETCODE_RET_PS_PALEYRS_CANNOT_ADD_BLACKLIST_VALUE = 7016;
+    public static final int RET_BIRTHDAY_CANNOT_BE_SET_TWICE_VALUE = 7009;
     /**
-     * <code>RETCODE_RET_PLAYER_BLACKLIST_FULL = 7017;</code>
+     * <code>RET_CANNOT_ADD_SELF_FRIEND = 7010;</code>
      */
-    public static final int RETCODE_RET_PLAYER_BLACKLIST_FULL_VALUE = 7017;
+    public static final int RET_CANNOT_ADD_SELF_FRIEND_VALUE = 7010;
     /**
-     * <code>RETCODE_RET_PLAYER_NOT_IN_BLACKLIST = 7018;</code>
+     * <code>RET_SIGNATURE_ILLEGAL = 7011;</code>
      */
-    public static final int RETCODE_RET_PLAYER_NOT_IN_BLACKLIST_VALUE = 7018;
+    public static final int RET_SIGNATURE_ILLEGAL_VALUE = 7011;
     /**
-     * <code>RETCODE_RET_BLACKLIST_PLAYER_CANNOT_ADD_FRIEND = 7019;</code>
+     * <code>RET_PS_PLAYER_CANNOT_ADD_FRIENDS = 7012;</code>
      */
-    public static final int RETCODE_RET_BLACKLIST_PLAYER_CANNOT_ADD_FRIEND_VALUE = 7019;
+    public static final int RET_PS_PLAYER_CANNOT_ADD_FRIENDS_VALUE = 7012;
     /**
-     * <code>RETCODE_RET_IN_TARGET_BLACKLIST = 7020;</code>
+     * <code>RET_PS_PLAYER_CANNOT_REMOVE_FRIENDS = 7013;</code>
      */
-    public static final int RETCODE_RET_IN_TARGET_BLACKLIST_VALUE = 7020;
+    public static final int RET_PS_PLAYER_CANNOT_REMOVE_FRIENDS_VALUE = 7013;
     /**
-     * <code>RETCODE_RET_CANNOT_ADD_TARGET_FRIEND = 7021;</code>
+     * <code>RET_NAME_CARD_NOT_UNLOCKED = 7014;</code>
      */
-    public static final int RETCODE_RET_CANNOT_ADD_TARGET_FRIEND_VALUE = 7021;
+    public static final int RET_NAME_CARD_NOT_UNLOCKED_VALUE = 7014;
     /**
-     * <code>RETCODE_RET_BIRTHDAY_FORMAT_ERROR = 7022;</code>
+     * <code>RET_ALREADY_IN_BLACKLIST = 7015;</code>
      */
-    public static final int RETCODE_RET_BIRTHDAY_FORMAT_ERROR_VALUE = 7022;
+    public static final int RET_ALREADY_IN_BLACKLIST_VALUE = 7015;
     /**
-     * <code>RETCODE_RET_ONLINE_ID_NOT_EXISTS = 7023;</code>
+     * <code>RET_PS_PALEYRS_CANNOT_ADD_BLACKLIST = 7016;</code>
      */
-    public static final int RETCODE_RET_ONLINE_ID_NOT_EXISTS_VALUE = 7023;
+    public static final int RET_PS_PALEYRS_CANNOT_ADD_BLACKLIST_VALUE = 7016;
     /**
-     * <code>RETCODE_RET_FIRST_SHARE_REWARD_HAS_TAKEN = 7024;</code>
+     * <code>RET_PLAYER_BLACKLIST_FULL = 7017;</code>
      */
-    public static final int RETCODE_RET_FIRST_SHARE_REWARD_HAS_TAKEN_VALUE = 7024;
+    public static final int RET_PLAYER_BLACKLIST_FULL_VALUE = 7017;
     /**
-     * <code>RETCODE_RET_PS_PLAYER_CANNOT_REMOVE_BLACKLIST = 7025;</code>
+     * <code>RET_PLAYER_NOT_IN_BLACKLIST = 7018;</code>
      */
-    public static final int RETCODE_RET_PS_PLAYER_CANNOT_REMOVE_BLACKLIST_VALUE = 7025;
+    public static final int RET_PLAYER_NOT_IN_BLACKLIST_VALUE = 7018;
     /**
-     * <code>RETCODE_RET_REPORT_CD = 7026;</code>
+     * <code>RET_BLACKLIST_PLAYER_CANNOT_ADD_FRIEND = 7019;</code>
      */
-    public static final int RETCODE_RET_REPORT_CD_VALUE = 7026;
+    public static final int RET_BLACKLIST_PLAYER_CANNOT_ADD_FRIEND_VALUE = 7019;
     /**
-     * <code>RETCODE_RET_REPORT_CONTENT_ILLEGAL = 7027;</code>
+     * <code>RET_IN_TARGET_BLACKLIST = 7020;</code>
      */
-    public static final int RETCODE_RET_REPORT_CONTENT_ILLEGAL_VALUE = 7027;
+    public static final int RET_IN_TARGET_BLACKLIST_VALUE = 7020;
     /**
-     * <code>RETCODE_RET_REMARK_WORD_ILLEGAL = 7028;</code>
+     * <code>RET_CANNOT_ADD_TARGET_FRIEND = 7021;</code>
      */
-    public static final int RETCODE_RET_REMARK_WORD_ILLEGAL_VALUE = 7028;
+    public static final int RET_CANNOT_ADD_TARGET_FRIEND_VALUE = 7021;
     /**
-     * <code>RETCODE_RET_REMARK_TOO_LONG = 7029;</code>
+     * <code>RET_BIRTHDAY_FORMAT_ERROR = 7022;</code>
      */
-    public static final int RETCODE_RET_REMARK_TOO_LONG_VALUE = 7029;
+    public static final int RET_BIRTHDAY_FORMAT_ERROR_VALUE = 7022;
     /**
-     * <code>RETCODE_RET_REMARK_UTF8_ERROR = 7030;</code>
+     * <code>RET_ONLINE_ID_NOT_EXISTS = 7023;</code>
      */
-    public static final int RETCODE_RET_REMARK_UTF8_ERROR_VALUE = 7030;
+    public static final int RET_ONLINE_ID_NOT_EXISTS_VALUE = 7023;
     /**
-     * <code>RETCODE_RET_REMARK_IS_EMPTY = 7031;</code>
+     * <code>RET_FIRST_SHARE_REWARD_HAS_TAKEN = 7024;</code>
      */
-    public static final int RETCODE_RET_REMARK_IS_EMPTY_VALUE = 7031;
+    public static final int RET_FIRST_SHARE_REWARD_HAS_TAKEN_VALUE = 7024;
     /**
-     * <code>RETCODE_RET_ASK_ADD_FRIEND_CD = 7032;</code>
+     * <code>RET_PS_PLAYER_CANNOT_REMOVE_BLACKLIST = 7025;</code>
      */
-    public static final int RETCODE_RET_ASK_ADD_FRIEND_CD_VALUE = 7032;
+    public static final int RET_PS_PLAYER_CANNOT_REMOVE_BLACKLIST_VALUE = 7025;
     /**
-     * <code>RETCODE_RET_SHOW_AVATAR_INFO_NOT_EXIST = 7033;</code>
+     * <code>RET_REPORT_CD = 7026;</code>
      */
-    public static final int RETCODE_RET_SHOW_AVATAR_INFO_NOT_EXIST_VALUE = 7033;
+    public static final int RET_REPORT_CD_VALUE = 7026;
     /**
-     * <code>RETCODE_RET_PLAYER_NOT_SHOW_AVATAR = 7034;</code>
+     * <code>RET_REPORT_CONTENT_ILLEGAL = 7027;</code>
      */
-    public static final int RETCODE_RET_PLAYER_NOT_SHOW_AVATAR_VALUE = 7034;
+    public static final int RET_REPORT_CONTENT_ILLEGAL_VALUE = 7027;
     /**
-     * <code>RETCODE_RET_SOCIAL_UPDATE_SHOW_LIST_REPEAT_ID = 7035;</code>
+     * <code>RET_REMARK_WORD_ILLEGAL = 7028;</code>
      */
-    public static final int RETCODE_RET_SOCIAL_UPDATE_SHOW_LIST_REPEAT_ID_VALUE = 7035;
+    public static final int RET_REMARK_WORD_ILLEGAL_VALUE = 7028;
     /**
-     * <code>RETCODE_RET_PSN_ID_NOT_FOUND = 7036;</code>
+     * <code>RET_REMARK_TOO_LONG = 7029;</code>
      */
-    public static final int RETCODE_RET_PSN_ID_NOT_FOUND_VALUE = 7036;
+    public static final int RET_REMARK_TOO_LONG_VALUE = 7029;
     /**
-     * <code>RETCODE_RET_EMOJI_COLLECTION_NUM_EXCEED_LIMIT = 7037;</code>
+     * <code>RET_REMARK_UTF8_ERROR = 7030;</code>
      */
-    public static final int RETCODE_RET_EMOJI_COLLECTION_NUM_EXCEED_LIMIT_VALUE = 7037;
+    public static final int RET_REMARK_UTF8_ERROR_VALUE = 7030;
     /**
-     * <code>RETCODE_RET_REMARK_EMPTY = 7038;</code>
+     * <code>RET_REMARK_IS_EMPTY = 7031;</code>
      */
-    public static final int RETCODE_RET_REMARK_EMPTY_VALUE = 7038;
+    public static final int RET_REMARK_IS_EMPTY_VALUE = 7031;
     /**
-     * <code>RETCODE_RET_IN_TARGET_PSN_BLACKLIST = 7039;</code>
+     * <code>RET_ASK_ADD_FRIEND_CD = 7032;</code>
      */
-    public static final int RETCODE_RET_IN_TARGET_PSN_BLACKLIST_VALUE = 7039;
+    public static final int RET_ASK_ADD_FRIEND_CD_VALUE = 7032;
     /**
-     * <code>RETCODE_RET_SIGNATURE_NOT_CHANGED = 7040;</code>
+     * <code>RET_SHOW_AVATAR_INFO_NOT_EXIST = 7033;</code>
      */
-    public static final int RETCODE_RET_SIGNATURE_NOT_CHANGED_VALUE = 7040;
+    public static final int RET_SHOW_AVATAR_INFO_NOT_EXIST_VALUE = 7033;
     /**
-     * <code>RETCODE_RET_SIGNATURE_MONTHLY_LIMIT = 7041;</code>
+     * <code>RET_PLAYER_NOT_SHOW_AVATAR = 7034;</code>
      */
-    public static final int RETCODE_RET_SIGNATURE_MONTHLY_LIMIT_VALUE = 7041;
+    public static final int RET_PLAYER_NOT_SHOW_AVATAR_VALUE = 7034;
     /**
-     * <code>RETCODE_RET_REQ_FRIEND_AVATAR_FREQUENTLY = 7042;</code>
+     * <code>RET_SOCIAL_UPDATE_SHOW_LIST_REPEAT_ID = 7035;</code>
      */
-    public static final int RETCODE_RET_REQ_FRIEND_AVATAR_FREQUENTLY_VALUE = 7042;
+    public static final int RET_SOCIAL_UPDATE_SHOW_LIST_REPEAT_ID_VALUE = 7035;
     /**
-     * <code>RETCODE_RET_PSN_GET_PLAYER_SOCIAL_DETAIL_FAIL = 7043;</code>
+     * <code>RET_PSN_ID_NOT_FOUND = 7036;</code>
      */
-    public static final int RETCODE_RET_PSN_GET_PLAYER_SOCIAL_DETAIL_FAIL_VALUE = 7043;
+    public static final int RET_PSN_ID_NOT_FOUND_VALUE = 7036;
     /**
-     * <code>RETCODE_RET_OFFERING_NOT_OPEN = 7081;</code>
+     * <code>RET_EMOJI_COLLECTION_NUM_EXCEED_LIMIT = 7037;</code>
      */
-    public static final int RETCODE_RET_OFFERING_NOT_OPEN_VALUE = 7081;
+    public static final int RET_EMOJI_COLLECTION_NUM_EXCEED_LIMIT_VALUE = 7037;
     /**
-     * <code>RETCODE_RET_OFFERING_LEVEL_LIMIT = 7082;</code>
+     * <code>RET_REMARK_EMPTY = 7038;</code>
      */
-    public static final int RETCODE_RET_OFFERING_LEVEL_LIMIT_VALUE = 7082;
+    public static final int RET_REMARK_EMPTY_VALUE = 7038;
     /**
-     * <code>RETCODE_RET_OFFERING_LEVEL_NOT_REACH = 7083;</code>
+     * <code>RET_IN_TARGET_PSN_BLACKLIST = 7039;</code>
      */
-    public static final int RETCODE_RET_OFFERING_LEVEL_NOT_REACH_VALUE = 7083;
+    public static final int RET_IN_TARGET_PSN_BLACKLIST_VALUE = 7039;
     /**
-     * <code>RETCODE_RET_OFFERING_LEVEL_HAS_TAKEN = 7084;</code>
+     * <code>RET_SIGNATURE_NOT_CHANGED = 7040;</code>
      */
-    public static final int RETCODE_RET_OFFERING_LEVEL_HAS_TAKEN_VALUE = 7084;
+    public static final int RET_SIGNATURE_NOT_CHANGED_VALUE = 7040;
     /**
-     * <code>RETCODE_RET_CITY_REPUTATION_NOT_OPEN = 7101;</code>
+     * <code>RET_SIGNATURE_MONTHLY_LIMIT = 7041;</code>
      */
-    public static final int RETCODE_RET_CITY_REPUTATION_NOT_OPEN_VALUE = 7101;
+    public static final int RET_SIGNATURE_MONTHLY_LIMIT_VALUE = 7041;
     /**
-     * <code>RETCODE_RET_CITY_REPUTATION_LEVEL_TAKEN = 7102;</code>
+     * <code>RET_REQ_FRIEND_AVATAR_FREQUENTLY = 7042;</code>
      */
-    public static final int RETCODE_RET_CITY_REPUTATION_LEVEL_TAKEN_VALUE = 7102;
+    public static final int RET_REQ_FRIEND_AVATAR_FREQUENTLY_VALUE = 7042;
     /**
-     * <code>RETCODE_RET_CITY_REPUTATION_LEVEL_NOT_REACH = 7103;</code>
+     * <code>RET_PSN_GET_PLAYER_SOCIAL_DETAIL_FAIL = 7043;</code>
      */
-    public static final int RETCODE_RET_CITY_REPUTATION_LEVEL_NOT_REACH_VALUE = 7103;
+    public static final int RET_PSN_GET_PLAYER_SOCIAL_DETAIL_FAIL_VALUE = 7043;
     /**
-     * <code>RETCODE_RET_CITY_REPUTATION_PARENT_QUEST_TAKEN = 7104;</code>
+     * <code>RET_OFFERING_NOT_OPEN = 7081;</code>
      */
-    public static final int RETCODE_RET_CITY_REPUTATION_PARENT_QUEST_TAKEN_VALUE = 7104;
+    public static final int RET_OFFERING_NOT_OPEN_VALUE = 7081;
     /**
-     * <code>RETCODE_RET_CITY_REPUTATION_PARENT_QUEST_UNFINISH = 7105;</code>
+     * <code>RET_OFFERING_LEVEL_LIMIT = 7082;</code>
      */
-    public static final int RETCODE_RET_CITY_REPUTATION_PARENT_QUEST_UNFINISH_VALUE = 7105;
+    public static final int RET_OFFERING_LEVEL_LIMIT_VALUE = 7082;
     /**
-     * <code>RETCODE_RET_CITY_REPUTATION_ACCEPT_REQUEST = 7106;</code>
+     * <code>RET_OFFERING_LEVEL_NOT_REACH = 7083;</code>
      */
-    public static final int RETCODE_RET_CITY_REPUTATION_ACCEPT_REQUEST_VALUE = 7106;
+    public static final int RET_OFFERING_LEVEL_NOT_REACH_VALUE = 7083;
     /**
-     * <code>RETCODE_RET_CITY_REPUTATION_NOT_ACCEPT_REQUEST = 7107;</code>
+     * <code>RET_OFFERING_LEVEL_HAS_TAKEN = 7084;</code>
      */
-    public static final int RETCODE_RET_CITY_REPUTATION_NOT_ACCEPT_REQUEST_VALUE = 7107;
+    public static final int RET_OFFERING_LEVEL_HAS_TAKEN_VALUE = 7084;
     /**
-     * <code>RETCODE_RET_CITY_REPUTATION_ACCEPT_REQUEST_LIMIT = 7108;</code>
+     * <code>RET_CITY_REPUTATION_NOT_OPEN = 7101;</code>
      */
-    public static final int RETCODE_RET_CITY_REPUTATION_ACCEPT_REQUEST_LIMIT_VALUE = 7108;
+    public static final int RET_CITY_REPUTATION_NOT_OPEN_VALUE = 7101;
     /**
-     * <code>RETCODE_RET_CITY_REPUTATION_ENTRANCE_NOT_OPEN = 7109;</code>
+     * <code>RET_CITY_REPUTATION_LEVEL_TAKEN = 7102;</code>
      */
-    public static final int RETCODE_RET_CITY_REPUTATION_ENTRANCE_NOT_OPEN_VALUE = 7109;
+    public static final int RET_CITY_REPUTATION_LEVEL_TAKEN_VALUE = 7102;
     /**
-     * <code>RETCODE_RET_CITY_REPUTATION_TAKEN_REQUEST_REWARD = 7110;</code>
+     * <code>RET_CITY_REPUTATION_LEVEL_NOT_REACH = 7103;</code>
      */
-    public static final int RETCODE_RET_CITY_REPUTATION_TAKEN_REQUEST_REWARD_VALUE = 7110;
+    public static final int RET_CITY_REPUTATION_LEVEL_NOT_REACH_VALUE = 7103;
     /**
-     * <code>RETCODE_RET_CITY_REPUTATION_SWITCH_CLOSE = 7111;</code>
+     * <code>RET_CITY_REPUTATION_PARENT_QUEST_TAKEN = 7104;</code>
      */
-    public static final int RETCODE_RET_CITY_REPUTATION_SWITCH_CLOSE_VALUE = 7111;
+    public static final int RET_CITY_REPUTATION_PARENT_QUEST_TAKEN_VALUE = 7104;
     /**
-     * <code>RETCODE_RET_CITY_REPUTATION_ENTRACE_SWITCH_CLOSE = 7112;</code>
+     * <code>RET_CITY_REPUTATION_PARENT_QUEST_UNFINISH = 7105;</code>
      */
-    public static final int RETCODE_RET_CITY_REPUTATION_ENTRACE_SWITCH_CLOSE_VALUE = 7112;
+    public static final int RET_CITY_REPUTATION_PARENT_QUEST_UNFINISH_VALUE = 7105;
     /**
-     * <code>RETCODE_RET_CITY_REPUTATION_TAKEN_EXPLORE_REWARD = 7113;</code>
+     * <code>RET_CITY_REPUTATION_ACCEPT_REQUEST = 7106;</code>
      */
-    public static final int RETCODE_RET_CITY_REPUTATION_TAKEN_EXPLORE_REWARD_VALUE = 7113;
+    public static final int RET_CITY_REPUTATION_ACCEPT_REQUEST_VALUE = 7106;
     /**
-     * <code>RETCODE_RET_CITY_REPUTATION_EXPLORE_NOT_REACH = 7114;</code>
+     * <code>RET_CITY_REPUTATION_NOT_ACCEPT_REQUEST = 7107;</code>
      */
-    public static final int RETCODE_RET_CITY_REPUTATION_EXPLORE_NOT_REACH_VALUE = 7114;
+    public static final int RET_CITY_REPUTATION_NOT_ACCEPT_REQUEST_VALUE = 7107;
     /**
-     * <code>RETCODE_RET_MECHANICUS_NOT_OPEN = 7120;</code>
+     * <code>RET_CITY_REPUTATION_ACCEPT_REQUEST_LIMIT = 7108;</code>
      */
-    public static final int RETCODE_RET_MECHANICUS_NOT_OPEN_VALUE = 7120;
+    public static final int RET_CITY_REPUTATION_ACCEPT_REQUEST_LIMIT_VALUE = 7108;
     /**
-     * <code>RETCODE_RET_MECHANICUS_GEAR_UNLOCK = 7121;</code>
+     * <code>RET_CITY_REPUTATION_ENTRANCE_NOT_OPEN = 7109;</code>
      */
-    public static final int RETCODE_RET_MECHANICUS_GEAR_UNLOCK_VALUE = 7121;
+    public static final int RET_CITY_REPUTATION_ENTRANCE_NOT_OPEN_VALUE = 7109;
     /**
-     * <code>RETCODE_RET_MECHANICUS_GEAR_LOCK = 7122;</code>
+     * <code>RET_CITY_REPUTATION_TAKEN_REQUEST_REWARD = 7110;</code>
      */
-    public static final int RETCODE_RET_MECHANICUS_GEAR_LOCK_VALUE = 7122;
+    public static final int RET_CITY_REPUTATION_TAKEN_REQUEST_REWARD_VALUE = 7110;
     /**
-     * <code>RETCODE_RET_MECHANICUS_GEAR_LEVEL_LIMIT = 7123;</code>
+     * <code>RET_CITY_REPUTATION_SWITCH_CLOSE = 7111;</code>
      */
-    public static final int RETCODE_RET_MECHANICUS_GEAR_LEVEL_LIMIT_VALUE = 7123;
+    public static final int RET_CITY_REPUTATION_SWITCH_CLOSE_VALUE = 7111;
     /**
-     * <code>RETCODE_RET_MECHANICUS_COIN_NOT_ENOUGH = 7124;</code>
+     * <code>RET_CITY_REPUTATION_ENTRACE_SWITCH_CLOSE = 7112;</code>
      */
-    public static final int RETCODE_RET_MECHANICUS_COIN_NOT_ENOUGH_VALUE = 7124;
+    public static final int RET_CITY_REPUTATION_ENTRACE_SWITCH_CLOSE_VALUE = 7112;
     /**
-     * <code>RETCODE_RET_MECHANICUS_NO_SEQUENCE = 7125;</code>
+     * <code>RET_CITY_REPUTATION_TAKEN_EXPLORE_REWARD = 7113;</code>
      */
-    public static final int RETCODE_RET_MECHANICUS_NO_SEQUENCE_VALUE = 7125;
+    public static final int RET_CITY_REPUTATION_TAKEN_EXPLORE_REWARD_VALUE = 7113;
     /**
-     * <code>RETCODE_RET_MECHANICUS_SEQUENCE_LIMIT_LEVEL = 7126;</code>
+     * <code>RET_CITY_REPUTATION_EXPLORE_NOT_REACH = 7114;</code>
      */
-    public static final int RETCODE_RET_MECHANICUS_SEQUENCE_LIMIT_LEVEL_VALUE = 7126;
+    public static final int RET_CITY_REPUTATION_EXPLORE_NOT_REACH_VALUE = 7114;
     /**
-     * <code>RETCODE_RET_MECHANICUS_SEQUENCE_LIMIT_OPEN = 7127;</code>
+     * <code>RET_MECHANICUS_NOT_OPEN = 7120;</code>
      */
-    public static final int RETCODE_RET_MECHANICUS_SEQUENCE_LIMIT_OPEN_VALUE = 7127;
+    public static final int RET_MECHANICUS_NOT_OPEN_VALUE = 7120;
     /**
-     * <code>RETCODE_RET_MECHANICUS_DIFFICULT_NOT_SUPPORT = 7128;</code>
+     * <code>RET_MECHANICUS_GEAR_UNLOCK = 7121;</code>
      */
-    public static final int RETCODE_RET_MECHANICUS_DIFFICULT_NOT_SUPPORT_VALUE = 7128;
+    public static final int RET_MECHANICUS_GEAR_UNLOCK_VALUE = 7121;
     /**
-     * <code>RETCODE_RET_MECHANICUS_TICKET_NOT_ENOUGH = 7129;</code>
+     * <code>RET_MECHANICUS_GEAR_LOCK = 7122;</code>
      */
-    public static final int RETCODE_RET_MECHANICUS_TICKET_NOT_ENOUGH_VALUE = 7129;
+    public static final int RET_MECHANICUS_GEAR_LOCK_VALUE = 7122;
     /**
-     * <code>RETCODE_RET_MECHANICUS_TEACH_NOT_FINISH = 7130;</code>
+     * <code>RET_MECHANICUS_GEAR_LEVEL_LIMIT = 7123;</code>
      */
-    public static final int RETCODE_RET_MECHANICUS_TEACH_NOT_FINISH_VALUE = 7130;
+    public static final int RET_MECHANICUS_GEAR_LEVEL_LIMIT_VALUE = 7123;
     /**
-     * <code>RETCODE_RET_MECHANICUS_TEACH_FINISHED = 7131;</code>
+     * <code>RET_MECHANICUS_COIN_NOT_ENOUGH = 7124;</code>
      */
-    public static final int RETCODE_RET_MECHANICUS_TEACH_FINISHED_VALUE = 7131;
+    public static final int RET_MECHANICUS_COIN_NOT_ENOUGH_VALUE = 7124;
     /**
-     * <code>RETCODE_RET_MECHANICUS_PREV_DIFFICULT_LEVEL_BLOCK = 7132;</code>
+     * <code>RET_MECHANICUS_NO_SEQUENCE = 7125;</code>
      */
-    public static final int RETCODE_RET_MECHANICUS_PREV_DIFFICULT_LEVEL_BLOCK_VALUE = 7132;
+    public static final int RET_MECHANICUS_NO_SEQUENCE_VALUE = 7125;
     /**
-     * <code>RETCODE_RET_MECHANICUS_PLAYER_LIMIT = 7133;</code>
+     * <code>RET_MECHANICUS_SEQUENCE_LIMIT_LEVEL = 7126;</code>
      */
-    public static final int RETCODE_RET_MECHANICUS_PLAYER_LIMIT_VALUE = 7133;
+    public static final int RET_MECHANICUS_SEQUENCE_LIMIT_LEVEL_VALUE = 7126;
     /**
-     * <code>RETCODE_RET_MECHANICUS_PUNISH_TIME = 7134;</code>
+     * <code>RET_MECHANICUS_SEQUENCE_LIMIT_OPEN = 7127;</code>
      */
-    public static final int RETCODE_RET_MECHANICUS_PUNISH_TIME_VALUE = 7134;
+    public static final int RET_MECHANICUS_SEQUENCE_LIMIT_OPEN_VALUE = 7127;
     /**
-     * <code>RETCODE_RET_MECHANICUS_SWITCH_CLOSE = 7135;</code>
+     * <code>RET_MECHANICUS_DIFFICULT_NOT_SUPPORT = 7128;</code>
      */
-    public static final int RETCODE_RET_MECHANICUS_SWITCH_CLOSE_VALUE = 7135;
+    public static final int RET_MECHANICUS_DIFFICULT_NOT_SUPPORT_VALUE = 7128;
     /**
-     * <code>RETCODE_RET_MECHANICUS_BATTLE_NOT_IN_DUNGEON = 7150;</code>
+     * <code>RET_MECHANICUS_TICKET_NOT_ENOUGH = 7129;</code>
      */
-    public static final int RETCODE_RET_MECHANICUS_BATTLE_NOT_IN_DUNGEON_VALUE = 7150;
+    public static final int RET_MECHANICUS_TICKET_NOT_ENOUGH_VALUE = 7129;
     /**
-     * <code>RETCODE_RET_MECHANICUS_BATTLE_PLAY_NOT_FOUND = 7151;</code>
+     * <code>RET_MECHANICUS_TEACH_NOT_FINISH = 7130;</code>
      */
-    public static final int RETCODE_RET_MECHANICUS_BATTLE_PLAY_NOT_FOUND_VALUE = 7151;
+    public static final int RET_MECHANICUS_TEACH_NOT_FINISH_VALUE = 7130;
     /**
-     * <code>RETCODE_RET_MECHANICUS_BATTLE_DUPLICATE_PICK_CARD = 7152;</code>
+     * <code>RET_MECHANICUS_TEACH_FINISHED = 7131;</code>
      */
-    public static final int RETCODE_RET_MECHANICUS_BATTLE_DUPLICATE_PICK_CARD_VALUE = 7152;
+    public static final int RET_MECHANICUS_TEACH_FINISHED_VALUE = 7131;
     /**
-     * <code>RETCODE_RET_MECHANICUS_BATTLE_PLAYER_NOT_IN_PLAY = 7153;</code>
+     * <code>RET_MECHANICUS_PREV_DIFFICULT_LEVEL_BLOCK = 7132;</code>
      */
-    public static final int RETCODE_RET_MECHANICUS_BATTLE_PLAYER_NOT_IN_PLAY_VALUE = 7153;
+    public static final int RET_MECHANICUS_PREV_DIFFICULT_LEVEL_BLOCK_VALUE = 7132;
     /**
-     * <code>RETCODE_RET_MECHANICUS_BATTLE_CARD_NOT_AVAILABLE = 7154;</code>
+     * <code>RET_MECHANICUS_PLAYER_LIMIT = 7133;</code>
      */
-    public static final int RETCODE_RET_MECHANICUS_BATTLE_CARD_NOT_AVAILABLE_VALUE = 7154;
+    public static final int RET_MECHANICUS_PLAYER_LIMIT_VALUE = 7133;
     /**
-     * <code>RETCODE_RET_MECHANICUS_BATTLE_NOT_IN_CARD_STAGE = 7155;</code>
+     * <code>RET_MECHANICUS_PUNISH_TIME = 7134;</code>
      */
-    public static final int RETCODE_RET_MECHANICUS_BATTLE_NOT_IN_CARD_STAGE_VALUE = 7155;
+    public static final int RET_MECHANICUS_PUNISH_TIME_VALUE = 7134;
     /**
-     * <code>RETCODE_RET_MECHANICUS_BATTLE_CARD_IS_WAITING = 7156;</code>
+     * <code>RET_MECHANICUS_SWITCH_CLOSE = 7135;</code>
      */
-    public static final int RETCODE_RET_MECHANICUS_BATTLE_CARD_IS_WAITING_VALUE = 7156;
+    public static final int RET_MECHANICUS_SWITCH_CLOSE_VALUE = 7135;
     /**
-     * <code>RETCODE_RET_MECHANICUS_BATTLE_CARD_ALL_CONFIRMED = 7157;</code>
+     * <code>RET_MECHANICUS_BATTLE_NOT_IN_DUNGEON = 7150;</code>
      */
-    public static final int RETCODE_RET_MECHANICUS_BATTLE_CARD_ALL_CONFIRMED_VALUE = 7157;
+    public static final int RET_MECHANICUS_BATTLE_NOT_IN_DUNGEON_VALUE = 7150;
     /**
-     * <code>RETCODE_RET_MECHANICUS_BATTLE_CARD_ALREADY_CONFIRMED = 7158;</code>
+     * <code>RET_MECHANICUS_BATTLE_PLAY_NOT_FOUND = 7151;</code>
      */
-    public static final int RETCODE_RET_MECHANICUS_BATTLE_CARD_ALREADY_CONFIRMED_VALUE = 7158;
+    public static final int RET_MECHANICUS_BATTLE_PLAY_NOT_FOUND_VALUE = 7151;
     /**
-     * <code>RETCODE_RET_MECHANICUS_BATTLE_CARD_CONFIRMED_BY_OTHER = 7159;</code>
+     * <code>RET_MECHANICUS_BATTLE_DUPLICATE_PICK_CARD = 7152;</code>
      */
-    public static final int RETCODE_RET_MECHANICUS_BATTLE_CARD_CONFIRMED_BY_OTHER_VALUE = 7159;
+    public static final int RET_MECHANICUS_BATTLE_DUPLICATE_PICK_CARD_VALUE = 7152;
     /**
-     * <code>RETCODE_RET_MECHANICUS_BATTLE_CARD_NOT_ENOUGH_POINTS = 7160;</code>
+     * <code>RET_MECHANICUS_BATTLE_PLAYER_NOT_IN_PLAY = 7153;</code>
      */
-    public static final int RETCODE_RET_MECHANICUS_BATTLE_CARD_NOT_ENOUGH_POINTS_VALUE = 7160;
+    public static final int RET_MECHANICUS_BATTLE_PLAYER_NOT_IN_PLAY_VALUE = 7153;
     /**
-     * <code>RETCODE_RET_MECHANICUS_BATTLE_CARD_ALREADY_SKIPPED = 7161;</code>
+     * <code>RET_MECHANICUS_BATTLE_CARD_NOT_AVAILABLE = 7154;</code>
      */
-    public static final int RETCODE_RET_MECHANICUS_BATTLE_CARD_ALREADY_SKIPPED_VALUE = 7161;
+    public static final int RET_MECHANICUS_BATTLE_CARD_NOT_AVAILABLE_VALUE = 7154;
     /**
-     * <code>RETCODE_RET_LEGENDARY_KEY_NOT_ENOUGH = 8001;</code>
+     * <code>RET_MECHANICUS_BATTLE_NOT_IN_CARD_STAGE = 7155;</code>
      */
-    public static final int RETCODE_RET_LEGENDARY_KEY_NOT_ENOUGH_VALUE = 8001;
+    public static final int RET_MECHANICUS_BATTLE_NOT_IN_CARD_STAGE_VALUE = 7155;
     /**
-     * <code>RETCODE_RET_LEGENDARY_KEY_EXCEED_LIMIT = 8002;</code>
+     * <code>RET_MECHANICUS_BATTLE_CARD_IS_WAITING = 7156;</code>
      */
-    public static final int RETCODE_RET_LEGENDARY_KEY_EXCEED_LIMIT_VALUE = 8002;
+    public static final int RET_MECHANICUS_BATTLE_CARD_IS_WAITING_VALUE = 7156;
     /**
-     * <code>RETCODE_RET_DAILY_TASK_NOT_ENOUGH_TO_REDEEM = 8003;</code>
+     * <code>RET_MECHANICUS_BATTLE_CARD_ALL_CONFIRMED = 7157;</code>
      */
-    public static final int RETCODE_RET_DAILY_TASK_NOT_ENOUGH_TO_REDEEM_VALUE = 8003;
+    public static final int RET_MECHANICUS_BATTLE_CARD_ALL_CONFIRMED_VALUE = 7157;
     /**
-     * <code>RETCODE_RET_PERSONAL_LINE_OPEN_STATE_OFF = 8004;</code>
+     * <code>RET_MECHANICUS_BATTLE_CARD_ALREADY_CONFIRMED = 7158;</code>
      */
-    public static final int RETCODE_RET_PERSONAL_LINE_OPEN_STATE_OFF_VALUE = 8004;
+    public static final int RET_MECHANICUS_BATTLE_CARD_ALREADY_CONFIRMED_VALUE = 7158;
     /**
-     * <code>RETCODE_RET_PERSONAL_LINE_LEVEL_NOT_ENOUGH = 8005;</code>
+     * <code>RET_MECHANICUS_BATTLE_CARD_CONFIRMED_BY_OTHER = 7159;</code>
      */
-    public static final int RETCODE_RET_PERSONAL_LINE_LEVEL_NOT_ENOUGH_VALUE = 8005;
+    public static final int RET_MECHANICUS_BATTLE_CARD_CONFIRMED_BY_OTHER_VALUE = 7159;
     /**
-     * <code>RETCODE_RET_PERSONAL_LINE_NOT_OPEN = 8006;</code>
+     * <code>RET_MECHANICUS_BATTLE_CARD_NOT_ENOUGH_POINTS = 7160;</code>
      */
-    public static final int RETCODE_RET_PERSONAL_LINE_NOT_OPEN_VALUE = 8006;
+    public static final int RET_MECHANICUS_BATTLE_CARD_NOT_ENOUGH_POINTS_VALUE = 7160;
     /**
-     * <code>RETCODE_RET_PERSONAL_LINE_PRE_QUEST_NOT_FINISH = 8007;</code>
+     * <code>RET_MECHANICUS_BATTLE_CARD_ALREADY_SKIPPED = 7161;</code>
      */
-    public static final int RETCODE_RET_PERSONAL_LINE_PRE_QUEST_NOT_FINISH_VALUE = 8007;
+    public static final int RET_MECHANICUS_BATTLE_CARD_ALREADY_SKIPPED_VALUE = 7161;
     /**
-     * <code>RETCODE_RET_HUNTING_ALREADY_FINISH_OFFER_LIMIT = 8201;</code>
+     * <code>RET_LEGENDARY_KEY_NOT_ENOUGH = 8001;</code>
      */
-    public static final int RETCODE_RET_HUNTING_ALREADY_FINISH_OFFER_LIMIT_VALUE = 8201;
+    public static final int RET_LEGENDARY_KEY_NOT_ENOUGH_VALUE = 8001;
     /**
-     * <code>RETCODE_RET_HUNTING_HAS_UNFINISHED_OFFER = 8202;</code>
+     * <code>RET_LEGENDARY_KEY_EXCEED_LIMIT = 8002;</code>
      */
-    public static final int RETCODE_RET_HUNTING_HAS_UNFINISHED_OFFER_VALUE = 8202;
+    public static final int RET_LEGENDARY_KEY_EXCEED_LIMIT_VALUE = 8002;
     /**
-     * <code>RETCODE_RET_HUNTING_FAILED_OFFER_NOT_CD_READY = 8203;</code>
+     * <code>RET_DAILY_TASK_NOT_ENOUGH_TO_REDEEM = 8003;</code>
      */
-    public static final int RETCODE_RET_HUNTING_FAILED_OFFER_NOT_CD_READY_VALUE = 8203;
+    public static final int RET_DAILY_TASK_NOT_ENOUGH_TO_REDEEM_VALUE = 8003;
     /**
-     * <code>RETCODE_RET_HUNTING_NOT_TAKE_OFFER = 8204;</code>
+     * <code>RET_PERSONAL_LINE_OPEN_STATE_OFF = 8004;</code>
      */
-    public static final int RETCODE_RET_HUNTING_NOT_TAKE_OFFER_VALUE = 8204;
+    public static final int RET_PERSONAL_LINE_OPEN_STATE_OFF_VALUE = 8004;
     /**
-     * <code>RETCODE_RET_HUNTING_CANNOT_TAKE_TWICE = 8205;</code>
+     * <code>RET_PERSONAL_LINE_LEVEL_NOT_ENOUGH = 8005;</code>
      */
-    public static final int RETCODE_RET_HUNTING_CANNOT_TAKE_TWICE_VALUE = 8205;
+    public static final int RET_PERSONAL_LINE_LEVEL_NOT_ENOUGH_VALUE = 8005;
     /**
-     * <code>RETCODE_RET_RPIVATE_CHAT_INVALID_CONTENT_TYPE = 8901;</code>
+     * <code>RET_PERSONAL_LINE_NOT_OPEN = 8006;</code>
      */
-    public static final int RETCODE_RET_RPIVATE_CHAT_INVALID_CONTENT_TYPE_VALUE = 8901;
+    public static final int RET_PERSONAL_LINE_NOT_OPEN_VALUE = 8006;
     /**
-     * <code>RETCODE_RET_PRIVATE_CHAT_TARGET_IS_NOT_FRIEND = 8902;</code>
+     * <code>RET_PERSONAL_LINE_PRE_QUEST_NOT_FINISH = 8007;</code>
      */
-    public static final int RETCODE_RET_PRIVATE_CHAT_TARGET_IS_NOT_FRIEND_VALUE = 8902;
+    public static final int RET_PERSONAL_LINE_PRE_QUEST_NOT_FINISH_VALUE = 8007;
     /**
-     * <code>RETCODE_RET_PRIVATE_CHAT_CONTENT_NOT_SUPPORTED = 8903;</code>
+     * <code>RET_HUNTING_ALREADY_FINISH_OFFER_LIMIT = 8201;</code>
      */
-    public static final int RETCODE_RET_PRIVATE_CHAT_CONTENT_NOT_SUPPORTED_VALUE = 8903;
+    public static final int RET_HUNTING_ALREADY_FINISH_OFFER_LIMIT_VALUE = 8201;
     /**
-     * <code>RETCODE_RET_PRIVATE_CHAT_CONTENT_TOO_LONG = 8904;</code>
+     * <code>RET_HUNTING_HAS_UNFINISHED_OFFER = 8202;</code>
      */
-    public static final int RETCODE_RET_PRIVATE_CHAT_CONTENT_TOO_LONG_VALUE = 8904;
+    public static final int RET_HUNTING_HAS_UNFINISHED_OFFER_VALUE = 8202;
     /**
-     * <code>RETCODE_RET_PRIVATE_CHAT_PULL_TOO_FAST = 8905;</code>
+     * <code>RET_HUNTING_FAILED_OFFER_NOT_CD_READY = 8203;</code>
      */
-    public static final int RETCODE_RET_PRIVATE_CHAT_PULL_TOO_FAST_VALUE = 8905;
+    public static final int RET_HUNTING_FAILED_OFFER_NOT_CD_READY_VALUE = 8203;
     /**
-     * <code>RETCODE_RET_PRIVATE_CHAT_REPEAT_READ = 8906;</code>
+     * <code>RET_HUNTING_NOT_TAKE_OFFER = 8204;</code>
      */
-    public static final int RETCODE_RET_PRIVATE_CHAT_REPEAT_READ_VALUE = 8906;
+    public static final int RET_HUNTING_NOT_TAKE_OFFER_VALUE = 8204;
     /**
-     * <code>RETCODE_RET_PRIVATE_CHAT_READ_NOT_FRIEND = 8907;</code>
+     * <code>RET_HUNTING_CANNOT_TAKE_TWICE = 8205;</code>
      */
-    public static final int RETCODE_RET_PRIVATE_CHAT_READ_NOT_FRIEND_VALUE = 8907;
+    public static final int RET_HUNTING_CANNOT_TAKE_TWICE_VALUE = 8205;
     /**
-     * <code>RETCODE_RET_REUNION_FINISHED = 9001;</code>
+     * <code>RET_RPIVATE_CHAT_INVALID_CONTENT_TYPE = 8901;</code>
      */
-    public static final int RETCODE_RET_REUNION_FINISHED_VALUE = 9001;
+    public static final int RET_RPIVATE_CHAT_INVALID_CONTENT_TYPE_VALUE = 8901;
     /**
-     * <code>RETCODE_RET_REUNION_NOT_ACTIVATED = 9002;</code>
+     * <code>RET_PRIVATE_CHAT_TARGET_IS_NOT_FRIEND = 8902;</code>
      */
-    public static final int RETCODE_RET_REUNION_NOT_ACTIVATED_VALUE = 9002;
+    public static final int RET_PRIVATE_CHAT_TARGET_IS_NOT_FRIEND_VALUE = 8902;
     /**
-     * <code>RETCODE_RET_REUNION_ALREADY_TAKE_FIRST_REWARD = 9003;</code>
+     * <code>RET_PRIVATE_CHAT_CONTENT_NOT_SUPPORTED = 8903;</code>
      */
-    public static final int RETCODE_RET_REUNION_ALREADY_TAKE_FIRST_REWARD_VALUE = 9003;
+    public static final int RET_PRIVATE_CHAT_CONTENT_NOT_SUPPORTED_VALUE = 8903;
     /**
-     * <code>RETCODE_RET_REUNION_SIGN_IN_REWARDED = 9004;</code>
+     * <code>RET_PRIVATE_CHAT_CONTENT_TOO_LONG = 8904;</code>
      */
-    public static final int RETCODE_RET_REUNION_SIGN_IN_REWARDED_VALUE = 9004;
+    public static final int RET_PRIVATE_CHAT_CONTENT_TOO_LONG_VALUE = 8904;
     /**
-     * <code>RETCODE_RET_REUNION_WATCHER_REWARDED = 9005;</code>
+     * <code>RET_PRIVATE_CHAT_PULL_TOO_FAST = 8905;</code>
      */
-    public static final int RETCODE_RET_REUNION_WATCHER_REWARDED_VALUE = 9005;
+    public static final int RET_PRIVATE_CHAT_PULL_TOO_FAST_VALUE = 8905;
     /**
-     * <code>RETCODE_RET_REUNION_WATCHER_NOT_FINISH = 9006;</code>
+     * <code>RET_PRIVATE_CHAT_REPEAT_READ = 8906;</code>
      */
-    public static final int RETCODE_RET_REUNION_WATCHER_NOT_FINISH_VALUE = 9006;
+    public static final int RET_PRIVATE_CHAT_REPEAT_READ_VALUE = 8906;
     /**
-     * <code>RETCODE_RET_REUNION_MISSION_REWARDED = 9007;</code>
+     * <code>RET_PRIVATE_CHAT_READ_NOT_FRIEND = 8907;</code>
      */
-    public static final int RETCODE_RET_REUNION_MISSION_REWARDED_VALUE = 9007;
+    public static final int RET_PRIVATE_CHAT_READ_NOT_FRIEND_VALUE = 8907;
     /**
-     * <code>RETCODE_RET_REUNION_MISSION_NOT_FINISH = 9008;</code>
+     * <code>RET_REUNION_FINISHED = 9001;</code>
      */
-    public static final int RETCODE_RET_REUNION_MISSION_NOT_FINISH_VALUE = 9008;
+    public static final int RET_REUNION_FINISHED_VALUE = 9001;
     /**
-     * <code>RETCODE_RET_REUNION_WATCHER_REWARD_NOT_UNLOCKED = 9009;</code>
+     * <code>RET_REUNION_NOT_ACTIVATED = 9002;</code>
      */
-    public static final int RETCODE_RET_REUNION_WATCHER_REWARD_NOT_UNLOCKED_VALUE = 9009;
+    public static final int RET_REUNION_NOT_ACTIVATED_VALUE = 9002;
     /**
-     * <code>RETCODE_RET_BLESSING_CONTENT_CLOSED = 9101;</code>
+     * <code>RET_REUNION_ALREADY_TAKE_FIRST_REWARD = 9003;</code>
      */
-    public static final int RETCODE_RET_BLESSING_CONTENT_CLOSED_VALUE = 9101;
+    public static final int RET_REUNION_ALREADY_TAKE_FIRST_REWARD_VALUE = 9003;
     /**
-     * <code>RETCODE_RET_BLESSING_NOT_ACTIVE = 9102;</code>
+     * <code>RET_REUNION_SIGN_IN_REWARDED = 9004;</code>
      */
-    public static final int RETCODE_RET_BLESSING_NOT_ACTIVE_VALUE = 9102;
+    public static final int RET_REUNION_SIGN_IN_REWARDED_VALUE = 9004;
     /**
-     * <code>RETCODE_RET_BLESSING_NOT_TODAY_ENTITY = 9103;</code>
+     * <code>RET_REUNION_WATCHER_REWARDED = 9005;</code>
      */
-    public static final int RETCODE_RET_BLESSING_NOT_TODAY_ENTITY_VALUE = 9103;
+    public static final int RET_REUNION_WATCHER_REWARDED_VALUE = 9005;
     /**
-     * <code>RETCODE_RET_BLESSING_ENTITY_EXCEED_SCAN_NUM_LIMIT = 9104;</code>
+     * <code>RET_REUNION_WATCHER_NOT_FINISH = 9006;</code>
      */
-    public static final int RETCODE_RET_BLESSING_ENTITY_EXCEED_SCAN_NUM_LIMIT_VALUE = 9104;
+    public static final int RET_REUNION_WATCHER_NOT_FINISH_VALUE = 9006;
     /**
-     * <code>RETCODE_RET_BLESSING_DAILY_SCAN_NUM_EXCEED_LIMIT = 9105;</code>
+     * <code>RET_REUNION_MISSION_REWARDED = 9007;</code>
      */
-    public static final int RETCODE_RET_BLESSING_DAILY_SCAN_NUM_EXCEED_LIMIT_VALUE = 9105;
+    public static final int RET_REUNION_MISSION_REWARDED_VALUE = 9007;
     /**
-     * <code>RETCODE_RET_BLESSING_REDEEM_REWARD_NUM_EXCEED_LIMIT = 9106;</code>
+     * <code>RET_REUNION_MISSION_NOT_FINISH = 9008;</code>
      */
-    public static final int RETCODE_RET_BLESSING_REDEEM_REWARD_NUM_EXCEED_LIMIT_VALUE = 9106;
+    public static final int RET_REUNION_MISSION_NOT_FINISH_VALUE = 9008;
     /**
-     * <code>RETCODE_RET_BLESSING_REDEEM_PIC_NUM_NOT_ENOUGH = 9107;</code>
+     * <code>RET_REUNION_WATCHER_REWARD_NOT_UNLOCKED = 9009;</code>
      */
-    public static final int RETCODE_RET_BLESSING_REDEEM_PIC_NUM_NOT_ENOUGH_VALUE = 9107;
+    public static final int RET_REUNION_WATCHER_REWARD_NOT_UNLOCKED_VALUE = 9009;
     /**
-     * <code>RETCODE_RET_BLESSING_PIC_NOT_ENOUGH = 9108;</code>
+     * <code>RET_BLESSING_CONTENT_CLOSED = 9101;</code>
      */
-    public static final int RETCODE_RET_BLESSING_PIC_NOT_ENOUGH_VALUE = 9108;
+    public static final int RET_BLESSING_CONTENT_CLOSED_VALUE = 9101;
     /**
-     * <code>RETCODE_RET_BLESSING_PIC_HAS_RECEIVED = 9109;</code>
+     * <code>RET_BLESSING_NOT_ACTIVE = 9102;</code>
      */
-    public static final int RETCODE_RET_BLESSING_PIC_HAS_RECEIVED_VALUE = 9109;
+    public static final int RET_BLESSING_NOT_ACTIVE_VALUE = 9102;
     /**
-     * <code>RETCODE_RET_BLESSING_TARGET_RECV_NUM_EXCEED = 9110;</code>
+     * <code>RET_BLESSING_NOT_TODAY_ENTITY = 9103;</code>
      */
-    public static final int RETCODE_RET_BLESSING_TARGET_RECV_NUM_EXCEED_VALUE = 9110;
+    public static final int RET_BLESSING_NOT_TODAY_ENTITY_VALUE = 9103;
     /**
-     * <code>RETCODE_RET_FLEUR_FAIR_CREDIT_EXCEED_LIMIT = 9111;</code>
+     * <code>RET_BLESSING_ENTITY_EXCEED_SCAN_NUM_LIMIT = 9104;</code>
      */
-    public static final int RETCODE_RET_FLEUR_FAIR_CREDIT_EXCEED_LIMIT_VALUE = 9111;
+    public static final int RET_BLESSING_ENTITY_EXCEED_SCAN_NUM_LIMIT_VALUE = 9104;
     /**
-     * <code>RETCODE_RET_FLEUR_FAIR_CREDIT_NOT_ENOUGH = 9112;</code>
+     * <code>RET_BLESSING_DAILY_SCAN_NUM_EXCEED_LIMIT = 9105;</code>
      */
-    public static final int RETCODE_RET_FLEUR_FAIR_CREDIT_NOT_ENOUGH_VALUE = 9112;
+    public static final int RET_BLESSING_DAILY_SCAN_NUM_EXCEED_LIMIT_VALUE = 9105;
     /**
-     * <code>RETCODE_RET_FLEUR_FAIR_TOKEN_EXCEED_LIMIT = 9113;</code>
+     * <code>RET_BLESSING_REDEEM_REWARD_NUM_EXCEED_LIMIT = 9106;</code>
      */
-    public static final int RETCODE_RET_FLEUR_FAIR_TOKEN_EXCEED_LIMIT_VALUE = 9113;
+    public static final int RET_BLESSING_REDEEM_REWARD_NUM_EXCEED_LIMIT_VALUE = 9106;
     /**
-     * <code>RETCODE_RET_FLEUR_FAIR_TOKEN_NOT_ENOUGH = 9114;</code>
+     * <code>RET_BLESSING_REDEEM_PIC_NUM_NOT_ENOUGH = 9107;</code>
      */
-    public static final int RETCODE_RET_FLEUR_FAIR_TOKEN_NOT_ENOUGH_VALUE = 9114;
+    public static final int RET_BLESSING_REDEEM_PIC_NUM_NOT_ENOUGH_VALUE = 9107;
     /**
-     * <code>RETCODE_RET_FLEUR_FAIR_MINIGAME_NOT_OPEN = 9115;</code>
+     * <code>RET_BLESSING_PIC_NOT_ENOUGH = 9108;</code>
      */
-    public static final int RETCODE_RET_FLEUR_FAIR_MINIGAME_NOT_OPEN_VALUE = 9115;
+    public static final int RET_BLESSING_PIC_NOT_ENOUGH_VALUE = 9108;
     /**
-     * <code>RETCODE_RET_FLEUR_FAIR_MUSIC_GAME_DIFFICULTY_NOT_UNLOCK = 9116;</code>
+     * <code>RET_BLESSING_PIC_HAS_RECEIVED = 9109;</code>
      */
-    public static final int RETCODE_RET_FLEUR_FAIR_MUSIC_GAME_DIFFICULTY_NOT_UNLOCK_VALUE = 9116;
+    public static final int RET_BLESSING_PIC_HAS_RECEIVED_VALUE = 9109;
     /**
-     * <code>RETCODE_RET_FLEUR_FAIR_DUNGEON_LOCKED = 9117;</code>
+     * <code>RET_BLESSING_TARGET_RECV_NUM_EXCEED = 9110;</code>
      */
-    public static final int RETCODE_RET_FLEUR_FAIR_DUNGEON_LOCKED_VALUE = 9117;
+    public static final int RET_BLESSING_TARGET_RECV_NUM_EXCEED_VALUE = 9110;
     /**
-     * <code>RETCODE_RET_FLEUR_FAIR_DUNGEON_PUNISH_TIME = 9118;</code>
+     * <code>RET_FLEUR_FAIR_CREDIT_EXCEED_LIMIT = 9111;</code>
      */
-    public static final int RETCODE_RET_FLEUR_FAIR_DUNGEON_PUNISH_TIME_VALUE = 9118;
+    public static final int RET_FLEUR_FAIR_CREDIT_EXCEED_LIMIT_VALUE = 9111;
     /**
-     * <code>RETCODE_RET_FLEUR_FAIR_ONLY_OWNER_CAN_RESTART_MINIGAM = 9119;</code>
+     * <code>RET_FLEUR_FAIR_CREDIT_NOT_ENOUGH = 9112;</code>
      */
-    public static final int RETCODE_RET_FLEUR_FAIR_ONLY_OWNER_CAN_RESTART_MINIGAM_VALUE = 9119;
+    public static final int RET_FLEUR_FAIR_CREDIT_NOT_ENOUGH_VALUE = 9112;
     /**
-     * <code>RETCODE_RET_WATER_SPIRIT_COIN_EXCEED_LIMIT = 9120;</code>
+     * <code>RET_FLEUR_FAIR_TOKEN_EXCEED_LIMIT = 9113;</code>
      */
-    public static final int RETCODE_RET_WATER_SPIRIT_COIN_EXCEED_LIMIT_VALUE = 9120;
+    public static final int RET_FLEUR_FAIR_TOKEN_EXCEED_LIMIT_VALUE = 9113;
     /**
-     * <code>RETCODE_RET_WATER_SPIRIT_COIN_NOT_ENOUGH = 9121;</code>
+     * <code>RET_FLEUR_FAIR_TOKEN_NOT_ENOUGH = 9114;</code>
      */
-    public static final int RETCODE_RET_WATER_SPIRIT_COIN_NOT_ENOUGH_VALUE = 9121;
+    public static final int RET_FLEUR_FAIR_TOKEN_NOT_ENOUGH_VALUE = 9114;
     /**
-     * <code>RETCODE_RET_REGION_SEARCH_NO_SEARCH = 9122;</code>
+     * <code>RET_FLEUR_FAIR_MINIGAME_NOT_OPEN = 9115;</code>
      */
-    public static final int RETCODE_RET_REGION_SEARCH_NO_SEARCH_VALUE = 9122;
+    public static final int RET_FLEUR_FAIR_MINIGAME_NOT_OPEN_VALUE = 9115;
     /**
-     * <code>RETCODE_RET_REGION_SEARCH_STATE_ERROR = 9123;</code>
+     * <code>RET_FLEUR_FAIR_MUSIC_GAME_DIFFICULTY_NOT_UNLOCK = 9116;</code>
      */
-    public static final int RETCODE_RET_REGION_SEARCH_STATE_ERROR_VALUE = 9123;
+    public static final int RET_FLEUR_FAIR_MUSIC_GAME_DIFFICULTY_NOT_UNLOCK_VALUE = 9116;
     /**
-     * <code>RETCODE_RET_CHANNELLER_SLAB_LOOP_DUNGEON_STAGE_NOT_OPEN = 9130;</code>
+     * <code>RET_FLEUR_FAIR_DUNGEON_LOCKED = 9117;</code>
      */
-    public static final int RETCODE_RET_CHANNELLER_SLAB_LOOP_DUNGEON_STAGE_NOT_OPEN_VALUE = 9130;
+    public static final int RET_FLEUR_FAIR_DUNGEON_LOCKED_VALUE = 9117;
     /**
-     * <code>RETCODE_RET_CHANNELLER_SLAB_LOOP_DUNGEON_NOT_OPEN = 9131;</code>
+     * <code>RET_FLEUR_FAIR_DUNGEON_PUNISH_TIME = 9118;</code>
      */
-    public static final int RETCODE_RET_CHANNELLER_SLAB_LOOP_DUNGEON_NOT_OPEN_VALUE = 9131;
+    public static final int RET_FLEUR_FAIR_DUNGEON_PUNISH_TIME_VALUE = 9118;
     /**
-     * <code>RETCODE_RET_CHANNELLER_SLAB_LOOP_DUNGEON_FIRST_PASS_REWARD_HAS_TAKEN = 9132;</code>
+     * <code>RET_FLEUR_FAIR_ONLY_OWNER_CAN_RESTART_MINIGAM = 9119;</code>
      */
-    public static final int RETCODE_RET_CHANNELLER_SLAB_LOOP_DUNGEON_FIRST_PASS_REWARD_HAS_TAKEN_VALUE = 9132;
+    public static final int RET_FLEUR_FAIR_ONLY_OWNER_CAN_RESTART_MINIGAM_VALUE = 9119;
     /**
-     * <code>RETCODE_RET_CHANNELLER_SLAB_LOOP_DUNGEON_SCORE_REWARD_HAS_TAKEN = 9133;</code>
+     * <code>RET_WATER_SPIRIT_COIN_EXCEED_LIMIT = 9120;</code>
      */
-    public static final int RETCODE_RET_CHANNELLER_SLAB_LOOP_DUNGEON_SCORE_REWARD_HAS_TAKEN_VALUE = 9133;
+    public static final int RET_WATER_SPIRIT_COIN_EXCEED_LIMIT_VALUE = 9120;
     /**
-     * <code>RETCODE_RET_CHANNELLER_SLAB_INVALID_ONE_OFF_DUNGEON = 9134;</code>
+     * <code>RET_WATER_SPIRIT_COIN_NOT_ENOUGH = 9121;</code>
      */
-    public static final int RETCODE_RET_CHANNELLER_SLAB_INVALID_ONE_OFF_DUNGEON_VALUE = 9134;
+    public static final int RET_WATER_SPIRIT_COIN_NOT_ENOUGH_VALUE = 9121;
     /**
-     * <code>RETCODE_RET_CHANNELLER_SLAB_ONE_OFF_DUNGEON_DONE = 9135;</code>
+     * <code>RET_REGION_SEARCH_NO_SEARCH = 9122;</code>
      */
-    public static final int RETCODE_RET_CHANNELLER_SLAB_ONE_OFF_DUNGEON_DONE_VALUE = 9135;
+    public static final int RET_REGION_SEARCH_NO_SEARCH_VALUE = 9122;
     /**
-     * <code>RETCODE_RET_CHANNELLER_SLAB_ONE_OFF_DUNGEON_STAGE_NOT_OPEN = 9136;</code>
+     * <code>RET_REGION_SEARCH_STATE_ERROR = 9123;</code>
      */
-    public static final int RETCODE_RET_CHANNELLER_SLAB_ONE_OFF_DUNGEON_STAGE_NOT_OPEN_VALUE = 9136;
+    public static final int RET_REGION_SEARCH_STATE_ERROR_VALUE = 9123;
     /**
-     * <code>RETCODE_RET_CHANNELLER_SLAB_TOKEN_EXCEED_LIMIT = 9137;</code>
+     * <code>RET_CHANNELLER_SLAB_LOOP_DUNGEON_STAGE_NOT_OPEN = 9130;</code>
      */
-    public static final int RETCODE_RET_CHANNELLER_SLAB_TOKEN_EXCEED_LIMIT_VALUE = 9137;
+    public static final int RET_CHANNELLER_SLAB_LOOP_DUNGEON_STAGE_NOT_OPEN_VALUE = 9130;
     /**
-     * <code>RETCODE_RET_CHANNELLER_SLAB_TOKEN_NOT_ENOUGH = 9138;</code>
+     * <code>RET_CHANNELLER_SLAB_LOOP_DUNGEON_NOT_OPEN = 9131;</code>
      */
-    public static final int RETCODE_RET_CHANNELLER_SLAB_TOKEN_NOT_ENOUGH_VALUE = 9138;
+    public static final int RET_CHANNELLER_SLAB_LOOP_DUNGEON_NOT_OPEN_VALUE = 9131;
     /**
-     * <code>RETCODE_RET_CHANNELLER_SLAB_PLAYER_NOT_IN_ONE_OFF_DUNGEON = 9139;</code>
+     * <code>RET_CHANNELLER_SLAB_LOOP_DUNGEON_FIRST_PASS_REWARD_HAS_TAKEN = 9132;</code>
      */
-    public static final int RETCODE_RET_CHANNELLER_SLAB_PLAYER_NOT_IN_ONE_OFF_DUNGEON_VALUE = 9139;
+    public static final int RET_CHANNELLER_SLAB_LOOP_DUNGEON_FIRST_PASS_REWARD_HAS_TAKEN_VALUE = 9132;
     /**
-     * <code>RETCODE_RET_MIST_TRIAL_SELECT_CHARACTER_NUM_NOT_ENOUGH = 9150;</code>
+     * <code>RET_CHANNELLER_SLAB_LOOP_DUNGEON_SCORE_REWARD_HAS_TAKEN = 9133;</code>
      */
-    public static final int RETCODE_RET_MIST_TRIAL_SELECT_CHARACTER_NUM_NOT_ENOUGH_VALUE = 9150;
+    public static final int RET_CHANNELLER_SLAB_LOOP_DUNGEON_SCORE_REWARD_HAS_TAKEN_VALUE = 9133;
     /**
-     * <code>RETCODE_RET_HIDE_AND_SEEK_PLAY_NOT_OPEN = 9160;</code>
+     * <code>RET_CHANNELLER_SLAB_INVALID_ONE_OFF_DUNGEON = 9134;</code>
      */
-    public static final int RETCODE_RET_HIDE_AND_SEEK_PLAY_NOT_OPEN_VALUE = 9160;
+    public static final int RET_CHANNELLER_SLAB_INVALID_ONE_OFF_DUNGEON_VALUE = 9134;
     /**
-     * <code>RETCODE_RET_HIDE_AND_SEEK_PLAY_MAP_NOT_OPEN = 9161;</code>
+     * <code>RET_CHANNELLER_SLAB_ONE_OFF_DUNGEON_DONE = 9135;</code>
      */
-    public static final int RETCODE_RET_HIDE_AND_SEEK_PLAY_MAP_NOT_OPEN_VALUE = 9161;
+    public static final int RET_CHANNELLER_SLAB_ONE_OFF_DUNGEON_DONE_VALUE = 9135;
     /**
-     * <code>RETCODE_RET_SUMMER_TIME_DRAFT_WOORD_EXCEED_LIMIT = 9170;</code>
+     * <code>RET_CHANNELLER_SLAB_ONE_OFF_DUNGEON_STAGE_NOT_OPEN = 9136;</code>
      */
-    public static final int RETCODE_RET_SUMMER_TIME_DRAFT_WOORD_EXCEED_LIMIT_VALUE = 9170;
+    public static final int RET_CHANNELLER_SLAB_ONE_OFF_DUNGEON_STAGE_NOT_OPEN_VALUE = 9136;
     /**
-     * <code>RETCODE_RET_SUMMER_TIME_DRAFT_WOORD_NOT_ENOUGH = 9171;</code>
+     * <code>RET_CHANNELLER_SLAB_TOKEN_EXCEED_LIMIT = 9137;</code>
      */
-    public static final int RETCODE_RET_SUMMER_TIME_DRAFT_WOORD_NOT_ENOUGH_VALUE = 9171;
+    public static final int RET_CHANNELLER_SLAB_TOKEN_EXCEED_LIMIT_VALUE = 9137;
     /**
-     * <code>RETCODE_RET_SUMMER_TIME_MINI_HARPASTUM_EXCEED_LIMIT = 9172;</code>
+     * <code>RET_CHANNELLER_SLAB_TOKEN_NOT_ENOUGH = 9138;</code>
      */
-    public static final int RETCODE_RET_SUMMER_TIME_MINI_HARPASTUM_EXCEED_LIMIT_VALUE = 9172;
+    public static final int RET_CHANNELLER_SLAB_TOKEN_NOT_ENOUGH_VALUE = 9138;
     /**
-     * <code>RETCODE_RET_SUMMER_TIME_MINI_HARPASTUMNOT_ENOUGH = 9173;</code>
+     * <code>RET_CHANNELLER_SLAB_PLAYER_NOT_IN_ONE_OFF_DUNGEON = 9139;</code>
      */
-    public static final int RETCODE_RET_SUMMER_TIME_MINI_HARPASTUMNOT_ENOUGH_VALUE = 9173;
+    public static final int RET_CHANNELLER_SLAB_PLAYER_NOT_IN_ONE_OFF_DUNGEON_VALUE = 9139;
     /**
-     * <code>RETCODE_RET_BOUNCE_CONJURING_COIN_EXCEED_LIMIT = 9180;</code>
+     * <code>RET_MIST_TRIAL_SELECT_CHARACTER_NUM_NOT_ENOUGH = 9150;</code>
      */
-    public static final int RETCODE_RET_BOUNCE_CONJURING_COIN_EXCEED_LIMIT_VALUE = 9180;
+    public static final int RET_MIST_TRIAL_SELECT_CHARACTER_NUM_NOT_ENOUGH_VALUE = 9150;
     /**
-     * <code>RETCODE_RET_BOUNCE_CONJURING_COIN_NOT_ENOUGH = 9181;</code>
+     * <code>RET_MIST_TRIAL_ALREADY_USING_TRIAL_AVATAR = 9151;</code>
      */
-    public static final int RETCODE_RET_BOUNCE_CONJURING_COIN_NOT_ENOUGH_VALUE = 9181;
+    public static final int RET_MIST_TRIAL_ALREADY_USING_TRIAL_AVATAR_VALUE = 9151;
     /**
-     * <code>RETCODE_RET_CHESS_TEACH_MAP_FINISHED = 9183;</code>
+     * <code>RET_HIDE_AND_SEEK_PLAY_NOT_OPEN = 9160;</code>
      */
-    public static final int RETCODE_RET_CHESS_TEACH_MAP_FINISHED_VALUE = 9183;
+    public static final int RET_HIDE_AND_SEEK_PLAY_NOT_OPEN_VALUE = 9160;
     /**
-     * <code>RETCODE_RET_CHESS_TEACH_MAP_UNFINISHED = 9184;</code>
+     * <code>RET_HIDE_AND_SEEK_PLAY_MAP_NOT_OPEN = 9161;</code>
      */
-    public static final int RETCODE_RET_CHESS_TEACH_MAP_UNFINISHED_VALUE = 9184;
+    public static final int RET_HIDE_AND_SEEK_PLAY_MAP_NOT_OPEN_VALUE = 9161;
     /**
-     * <code>RETCODE_RET_CHESS_COIN_EXCEED_LIMIT = 9185;</code>
+     * <code>RET_HIDE_AND_SEEK_PLAY_MAP_NOT_CHOSEN = 9162;</code>
      */
-    public static final int RETCODE_RET_CHESS_COIN_EXCEED_LIMIT_VALUE = 9185;
+    public static final int RET_HIDE_AND_SEEK_PLAY_MAP_NOT_CHOSEN_VALUE = 9162;
     /**
-     * <code>RETCODE_RET_CHESS_COIN_NOT_ENOUGH = 9186;</code>
+     * <code>RET_SUMMER_TIME_DRAFT_WOORD_EXCEED_LIMIT = 9170;</code>
      */
-    public static final int RETCODE_RET_CHESS_COIN_NOT_ENOUGH_VALUE = 9186;
+    public static final int RET_SUMMER_TIME_DRAFT_WOORD_EXCEED_LIMIT_VALUE = 9170;
     /**
-     * <code>RETCODE_RET_CHESS_IN_PUNISH_TIME = 9187;</code>
+     * <code>RET_SUMMER_TIME_DRAFT_WOORD_NOT_ENOUGH = 9171;</code>
      */
-    public static final int RETCODE_RET_CHESS_IN_PUNISH_TIME_VALUE = 9187;
+    public static final int RET_SUMMER_TIME_DRAFT_WOORD_NOT_ENOUGH_VALUE = 9171;
     /**
-     * <code>RETCODE_RET_CHESS_PREV_MAP_UNFINISHED = 9188;</code>
+     * <code>RET_SUMMER_TIME_MINI_HARPASTUM_EXCEED_LIMIT = 9172;</code>
      */
-    public static final int RETCODE_RET_CHESS_PREV_MAP_UNFINISHED_VALUE = 9188;
+    public static final int RET_SUMMER_TIME_MINI_HARPASTUM_EXCEED_LIMIT_VALUE = 9172;
     /**
-     * <code>RETCODE_RET_CHESS_MAP_LOCKED = 9189;</code>
+     * <code>RET_SUMMER_TIME_MINI_HARPASTUMNOT_ENOUGH = 9173;</code>
      */
-    public static final int RETCODE_RET_CHESS_MAP_LOCKED_VALUE = 9189;
+    public static final int RET_SUMMER_TIME_MINI_HARPASTUMNOT_ENOUGH_VALUE = 9173;
     /**
-     * <code>RETCODE_RET_BLITZ_RUSH_NOT_OPEN = 9192;</code>
+     * <code>RET_BOUNCE_CONJURING_COIN_EXCEED_LIMIT = 9180;</code>
      */
-    public static final int RETCODE_RET_BLITZ_RUSH_NOT_OPEN_VALUE = 9192;
+    public static final int RET_BOUNCE_CONJURING_COIN_EXCEED_LIMIT_VALUE = 9180;
     /**
-     * <code>RETCODE_RET_BLITZ_RUSH_DUNGEON_NOT_OPEN = 9193;</code>
+     * <code>RET_BOUNCE_CONJURING_COIN_NOT_ENOUGH = 9181;</code>
      */
-    public static final int RETCODE_RET_BLITZ_RUSH_DUNGEON_NOT_OPEN_VALUE = 9193;
+    public static final int RET_BOUNCE_CONJURING_COIN_NOT_ENOUGH_VALUE = 9181;
     /**
-     * <code>RETCODE_RET_BLITZ_RUSH_COIN_A_EXCEED_LIMIT = 9194;</code>
+     * <code>RET_CHESS_TEACH_MAP_FINISHED = 9183;</code>
      */
-    public static final int RETCODE_RET_BLITZ_RUSH_COIN_A_EXCEED_LIMIT_VALUE = 9194;
+    public static final int RET_CHESS_TEACH_MAP_FINISHED_VALUE = 9183;
     /**
-     * <code>RETCODE_RET_BLITZ_RUSH_COIN_B_EXCEED_LIMIT = 9195;</code>
+     * <code>RET_CHESS_TEACH_MAP_UNFINISHED = 9184;</code>
      */
-    public static final int RETCODE_RET_BLITZ_RUSH_COIN_B_EXCEED_LIMIT_VALUE = 9195;
+    public static final int RET_CHESS_TEACH_MAP_UNFINISHED_VALUE = 9184;
     /**
-     * <code>RETCODE_RET_BLITZ_RUSH_COIN_A_NOT_ENOUGH = 9196;</code>
+     * <code>RET_CHESS_COIN_EXCEED_LIMIT = 9185;</code>
      */
-    public static final int RETCODE_RET_BLITZ_RUSH_COIN_A_NOT_ENOUGH_VALUE = 9196;
+    public static final int RET_CHESS_COIN_EXCEED_LIMIT_VALUE = 9185;
     /**
-     * <code>RETCODE_RET_BLITZ_RUSH_COIN_B_NOT_ENOUGH = 9197;</code>
+     * <code>RET_CHESS_COIN_NOT_ENOUGH = 9186;</code>
      */
-    public static final int RETCODE_RET_BLITZ_RUSH_COIN_B_NOT_ENOUGH_VALUE = 9197;
+    public static final int RET_CHESS_COIN_NOT_ENOUGH_VALUE = 9186;
     /**
-     * <code>RETCODE_RET_MIRACLE_RING_VALUE_NOT_ENOUGH = 9201;</code>
+     * <code>RET_CHESS_IN_PUNISH_TIME = 9187;</code>
      */
-    public static final int RETCODE_RET_MIRACLE_RING_VALUE_NOT_ENOUGH_VALUE = 9201;
+    public static final int RET_CHESS_IN_PUNISH_TIME_VALUE = 9187;
     /**
-     * <code>RETCODE_RET_MIRACLE_RING_CD = 9202;</code>
+     * <code>RET_CHESS_PREV_MAP_UNFINISHED = 9188;</code>
      */
-    public static final int RETCODE_RET_MIRACLE_RING_CD_VALUE = 9202;
+    public static final int RET_CHESS_PREV_MAP_UNFINISHED_VALUE = 9188;
     /**
-     * <code>RETCODE_RET_MIRACLE_RING_REWARD_NOT_TAKEN = 9203;</code>
+     * <code>RET_CHESS_MAP_LOCKED = 9189;</code>
      */
-    public static final int RETCODE_RET_MIRACLE_RING_REWARD_NOT_TAKEN_VALUE = 9203;
+    public static final int RET_CHESS_MAP_LOCKED_VALUE = 9189;
     /**
-     * <code>RETCODE_RET_MIRACLE_RING_NOT_DELIVER = 9204;</code>
+     * <code>RET_BLITZ_RUSH_NOT_OPEN = 9192;</code>
      */
-    public static final int RETCODE_RET_MIRACLE_RING_NOT_DELIVER_VALUE = 9204;
+    public static final int RET_BLITZ_RUSH_NOT_OPEN_VALUE = 9192;
     /**
-     * <code>RETCODE_RET_MIRACLE_RING_DELIVER_EXCEED = 9205;</code>
+     * <code>RET_BLITZ_RUSH_DUNGEON_NOT_OPEN = 9193;</code>
      */
-    public static final int RETCODE_RET_MIRACLE_RING_DELIVER_EXCEED_VALUE = 9205;
+    public static final int RET_BLITZ_RUSH_DUNGEON_NOT_OPEN_VALUE = 9193;
     /**
-     * <code>RETCODE_RET_MIRACLE_RING_HAS_CREATED = 9206;</code>
+     * <code>RET_BLITZ_RUSH_COIN_A_EXCEED_LIMIT = 9194;</code>
      */
-    public static final int RETCODE_RET_MIRACLE_RING_HAS_CREATED_VALUE = 9206;
+    public static final int RET_BLITZ_RUSH_COIN_A_EXCEED_LIMIT_VALUE = 9194;
     /**
-     * <code>RETCODE_RET_MIRACLE_RING_HAS_NOT_CREATED = 9207;</code>
+     * <code>RET_BLITZ_RUSH_COIN_B_EXCEED_LIMIT = 9195;</code>
      */
-    public static final int RETCODE_RET_MIRACLE_RING_HAS_NOT_CREATED_VALUE = 9207;
+    public static final int RET_BLITZ_RUSH_COIN_B_EXCEED_LIMIT_VALUE = 9195;
     /**
-     * <code>RETCODE_RET_MIRACLE_RING_NOT_YOURS = 9208;</code>
+     * <code>RET_BLITZ_RUSH_COIN_A_NOT_ENOUGH = 9196;</code>
      */
-    public static final int RETCODE_RET_MIRACLE_RING_NOT_YOURS_VALUE = 9208;
+    public static final int RET_BLITZ_RUSH_COIN_A_NOT_ENOUGH_VALUE = 9196;
     /**
-     * <code>RETCODE_RET_GADGET_FOUNDATION_UNAUTHORIZED = 9251;</code>
+     * <code>RET_BLITZ_RUSH_COIN_B_NOT_ENOUGH = 9197;</code>
      */
-    public static final int RETCODE_RET_GADGET_FOUNDATION_UNAUTHORIZED_VALUE = 9251;
+    public static final int RET_BLITZ_RUSH_COIN_B_NOT_ENOUGH_VALUE = 9197;
     /**
-     * <code>RETCODE_RET_GADGET_FOUNDATION_SCENE_NOT_FOUND = 9252;</code>
+     * <code>RET_MIRACLE_RING_VALUE_NOT_ENOUGH = 9201;</code>
      */
-    public static final int RETCODE_RET_GADGET_FOUNDATION_SCENE_NOT_FOUND_VALUE = 9252;
+    public static final int RET_MIRACLE_RING_VALUE_NOT_ENOUGH_VALUE = 9201;
     /**
-     * <code>RETCODE_RET_GADGET_FOUNDATION_NOT_IN_INIT_STATE = 9253;</code>
+     * <code>RET_MIRACLE_RING_CD = 9202;</code>
      */
-    public static final int RETCODE_RET_GADGET_FOUNDATION_NOT_IN_INIT_STATE_VALUE = 9253;
+    public static final int RET_MIRACLE_RING_CD_VALUE = 9202;
     /**
-     * <code>RETCODE_RET_GADGET_FOUNDATION_BILDING_POINT_NOT_ENOUGHT = 9254;</code>
+     * <code>RET_MIRACLE_RING_REWARD_NOT_TAKEN = 9203;</code>
      */
-    public static final int RETCODE_RET_GADGET_FOUNDATION_BILDING_POINT_NOT_ENOUGHT_VALUE = 9254;
+    public static final int RET_MIRACLE_RING_REWARD_NOT_TAKEN_VALUE = 9203;
     /**
-     * <code>RETCODE_RET_GADGET_FOUNDATION_NOT_IN_BUILT_STATE = 9255;</code>
+     * <code>RET_MIRACLE_RING_NOT_DELIVER = 9204;</code>
      */
-    public static final int RETCODE_RET_GADGET_FOUNDATION_NOT_IN_BUILT_STATE_VALUE = 9255;
+    public static final int RET_MIRACLE_RING_NOT_DELIVER_VALUE = 9204;
     /**
-     * <code>RETCODE_RET_GADGET_FOUNDATION_OP_NOT_SUPPORTED = 9256;</code>
+     * <code>RET_MIRACLE_RING_DELIVER_EXCEED = 9205;</code>
      */
-    public static final int RETCODE_RET_GADGET_FOUNDATION_OP_NOT_SUPPORTED_VALUE = 9256;
+    public static final int RET_MIRACLE_RING_DELIVER_EXCEED_VALUE = 9205;
     /**
-     * <code>RETCODE_RET_GADGET_FOUNDATION_REQ_PLAYER_NOT_IN_SCENE = 9257;</code>
+     * <code>RET_MIRACLE_RING_HAS_CREATED = 9206;</code>
      */
-    public static final int RETCODE_RET_GADGET_FOUNDATION_REQ_PLAYER_NOT_IN_SCENE_VALUE = 9257;
+    public static final int RET_MIRACLE_RING_HAS_CREATED_VALUE = 9206;
     /**
-     * <code>RETCODE_RET_GADGET_FOUNDATION_LOCKED_BY_ANOTHER_PLAYER = 9258;</code>
+     * <code>RET_MIRACLE_RING_HAS_NOT_CREATED = 9207;</code>
      */
-    public static final int RETCODE_RET_GADGET_FOUNDATION_LOCKED_BY_ANOTHER_PLAYER_VALUE = 9258;
+    public static final int RET_MIRACLE_RING_HAS_NOT_CREATED_VALUE = 9207;
     /**
-     * <code>RETCODE_RET_GADGET_FOUNDATION_NOT_LOCKED = 9259;</code>
+     * <code>RET_MIRACLE_RING_NOT_YOURS = 9208;</code>
      */
-    public static final int RETCODE_RET_GADGET_FOUNDATION_NOT_LOCKED_VALUE = 9259;
+    public static final int RET_MIRACLE_RING_NOT_YOURS_VALUE = 9208;
     /**
-     * <code>RETCODE_RET_GADGET_FOUNDATION_DUPLICATE_LOCK = 9260;</code>
+     * <code>RET_GADGET_FOUNDATION_UNAUTHORIZED = 9251;</code>
      */
-    public static final int RETCODE_RET_GADGET_FOUNDATION_DUPLICATE_LOCK_VALUE = 9260;
+    public static final int RET_GADGET_FOUNDATION_UNAUTHORIZED_VALUE = 9251;
     /**
-     * <code>RETCODE_RET_GADGET_FOUNDATION_PLAYER_NOT_FOUND = 9261;</code>
+     * <code>RET_GADGET_FOUNDATION_SCENE_NOT_FOUND = 9252;</code>
      */
-    public static final int RETCODE_RET_GADGET_FOUNDATION_PLAYER_NOT_FOUND_VALUE = 9261;
+    public static final int RET_GADGET_FOUNDATION_SCENE_NOT_FOUND_VALUE = 9252;
     /**
-     * <code>RETCODE_RET_GADGET_FOUNDATION_PLAYER_GEAR_NOT_FOUND = 9262;</code>
+     * <code>RET_GADGET_FOUNDATION_NOT_IN_INIT_STATE = 9253;</code>
      */
-    public static final int RETCODE_RET_GADGET_FOUNDATION_PLAYER_GEAR_NOT_FOUND_VALUE = 9262;
+    public static final int RET_GADGET_FOUNDATION_NOT_IN_INIT_STATE_VALUE = 9253;
     /**
-     * <code>RETCODE_RET_GADGET_FOUNDATION_ROTAION_DISABLED = 9263;</code>
+     * <code>RET_GADGET_FOUNDATION_BILDING_POINT_NOT_ENOUGHT = 9254;</code>
      */
-    public static final int RETCODE_RET_GADGET_FOUNDATION_ROTAION_DISABLED_VALUE = 9263;
+    public static final int RET_GADGET_FOUNDATION_BILDING_POINT_NOT_ENOUGHT_VALUE = 9254;
     /**
-     * <code>RETCODE_RET_GADGET_FOUNDATION_REACH_DUNGEON_GEAR_LIMIT = 9264;</code>
+     * <code>RET_GADGET_FOUNDATION_NOT_IN_BUILT_STATE = 9255;</code>
      */
-    public static final int RETCODE_RET_GADGET_FOUNDATION_REACH_DUNGEON_GEAR_LIMIT_VALUE = 9264;
+    public static final int RET_GADGET_FOUNDATION_NOT_IN_BUILT_STATE_VALUE = 9255;
     /**
-     * <code>RETCODE_RET_GADGET_FOUNDATION_REACH_SINGLE_GEAR_LIMIT = 9265;</code>
+     * <code>RET_GADGET_FOUNDATION_OP_NOT_SUPPORTED = 9256;</code>
      */
-    public static final int RETCODE_RET_GADGET_FOUNDATION_REACH_SINGLE_GEAR_LIMIT_VALUE = 9265;
+    public static final int RET_GADGET_FOUNDATION_OP_NOT_SUPPORTED_VALUE = 9256;
     /**
-     * <code>RETCODE_RET_GADGET_FOUNDATION_ROTATION_ON_GOING = 9266;</code>
+     * <code>RET_GADGET_FOUNDATION_REQ_PLAYER_NOT_IN_SCENE = 9257;</code>
      */
-    public static final int RETCODE_RET_GADGET_FOUNDATION_ROTATION_ON_GOING_VALUE = 9266;
+    public static final int RET_GADGET_FOUNDATION_REQ_PLAYER_NOT_IN_SCENE_VALUE = 9257;
     /**
-     * <code>RETCODE_RET_OP_ACTIVITY_BONUS_NOT_FOUND = 9301;</code>
+     * <code>RET_GADGET_FOUNDATION_LOCKED_BY_ANOTHER_PLAYER = 9258;</code>
      */
-    public static final int RETCODE_RET_OP_ACTIVITY_BONUS_NOT_FOUND_VALUE = 9301;
+    public static final int RET_GADGET_FOUNDATION_LOCKED_BY_ANOTHER_PLAYER_VALUE = 9258;
     /**
-     * <code>RETCODE_RET_OP_ACTIVITY_NOT_OPEN = 9302;</code>
+     * <code>RET_GADGET_FOUNDATION_NOT_LOCKED = 9259;</code>
      */
-    public static final int RETCODE_RET_OP_ACTIVITY_NOT_OPEN_VALUE = 9302;
+    public static final int RET_GADGET_FOUNDATION_NOT_LOCKED_VALUE = 9259;
     /**
-     * <code>RETCODE_RET_MULTISTAGE_PLAY_PLAYER_NOT_IN_SCENE = 9501;</code>
+     * <code>RET_GADGET_FOUNDATION_DUPLICATE_LOCK = 9260;</code>
      */
-    public static final int RETCODE_RET_MULTISTAGE_PLAY_PLAYER_NOT_IN_SCENE_VALUE = 9501;
+    public static final int RET_GADGET_FOUNDATION_DUPLICATE_LOCK_VALUE = 9260;
     /**
-     * <code>RETCODE_RET_MULTISTAGE_PLAY_NOT_FOUND = 9502;</code>
+     * <code>RET_GADGET_FOUNDATION_PLAYER_NOT_FOUND = 9261;</code>
      */
-    public static final int RETCODE_RET_MULTISTAGE_PLAY_NOT_FOUND_VALUE = 9502;
+    public static final int RET_GADGET_FOUNDATION_PLAYER_NOT_FOUND_VALUE = 9261;
     /**
-     * <code>RETCODE_RET_COOP_CHAPTER_NOT_OPEN = 9601;</code>
+     * <code>RET_GADGET_FOUNDATION_PLAYER_GEAR_NOT_FOUND = 9262;</code>
      */
-    public static final int RETCODE_RET_COOP_CHAPTER_NOT_OPEN_VALUE = 9601;
+    public static final int RET_GADGET_FOUNDATION_PLAYER_GEAR_NOT_FOUND_VALUE = 9262;
     /**
-     * <code>RETCODE_RET_COOP_COND_NOT_MEET = 9602;</code>
+     * <code>RET_GADGET_FOUNDATION_ROTAION_DISABLED = 9263;</code>
      */
-    public static final int RETCODE_RET_COOP_COND_NOT_MEET_VALUE = 9602;
+    public static final int RET_GADGET_FOUNDATION_ROTAION_DISABLED_VALUE = 9263;
     /**
-     * <code>RETCODE_RET_COOP_POINT_LOCKED = 9603;</code>
+     * <code>RET_GADGET_FOUNDATION_REACH_DUNGEON_GEAR_LIMIT = 9264;</code>
      */
-    public static final int RETCODE_RET_COOP_POINT_LOCKED_VALUE = 9603;
+    public static final int RET_GADGET_FOUNDATION_REACH_DUNGEON_GEAR_LIMIT_VALUE = 9264;
     /**
-     * <code>RETCODE_RET_COOP_NOT_HAVE_PROGRESS = 9604;</code>
+     * <code>RET_GADGET_FOUNDATION_REACH_SINGLE_GEAR_LIMIT = 9265;</code>
      */
-    public static final int RETCODE_RET_COOP_NOT_HAVE_PROGRESS_VALUE = 9604;
+    public static final int RET_GADGET_FOUNDATION_REACH_SINGLE_GEAR_LIMIT_VALUE = 9265;
     /**
-     * <code>RETCODE_RET_COOP_REWARD_HAS_TAKEN = 9605;</code>
+     * <code>RET_GADGET_FOUNDATION_ROTATION_ON_GOING = 9266;</code>
      */
-    public static final int RETCODE_RET_COOP_REWARD_HAS_TAKEN_VALUE = 9605;
+    public static final int RET_GADGET_FOUNDATION_ROTATION_ON_GOING_VALUE = 9266;
     /**
-     * <code>RETCODE_RET_DRAFT_HAS_ACTIVE_DRAFT = 9651;</code>
+     * <code>RET_OP_ACTIVITY_BONUS_NOT_FOUND = 9301;</code>
      */
-    public static final int RETCODE_RET_DRAFT_HAS_ACTIVE_DRAFT_VALUE = 9651;
+    public static final int RET_OP_ACTIVITY_BONUS_NOT_FOUND_VALUE = 9301;
     /**
-     * <code>RETCODE_RET_DRAFT_NOT_IN_MY_WORLD = 9652;</code>
+     * <code>RET_OP_ACTIVITY_NOT_OPEN = 9302;</code>
      */
-    public static final int RETCODE_RET_DRAFT_NOT_IN_MY_WORLD_VALUE = 9652;
+    public static final int RET_OP_ACTIVITY_NOT_OPEN_VALUE = 9302;
     /**
-     * <code>RETCODE_RET_DRAFT_NOT_SUPPORT_MP = 9653;</code>
+     * <code>RET_MULTISTAGE_PLAY_PLAYER_NOT_IN_SCENE = 9501;</code>
      */
-    public static final int RETCODE_RET_DRAFT_NOT_SUPPORT_MP_VALUE = 9653;
+    public static final int RET_MULTISTAGE_PLAY_PLAYER_NOT_IN_SCENE_VALUE = 9501;
     /**
-     * <code>RETCODE_RET_DRAFT_PLAYER_NOT_ENOUGH = 9654;</code>
+     * <code>RET_MULTISTAGE_PLAY_NOT_FOUND = 9502;</code>
      */
-    public static final int RETCODE_RET_DRAFT_PLAYER_NOT_ENOUGH_VALUE = 9654;
+    public static final int RET_MULTISTAGE_PLAY_NOT_FOUND_VALUE = 9502;
     /**
-     * <code>RETCODE_RET_DRAFT_INCORRECT_SCENE = 9655;</code>
+     * <code>RET_MULTISTAGE_PLAY_IN_OTHER_STAGE = 9503;</code>
      */
-    public static final int RETCODE_RET_DRAFT_INCORRECT_SCENE_VALUE = 9655;
+    public static final int RET_MULTISTAGE_PLAY_IN_OTHER_STAGE_VALUE = 9503;
     /**
-     * <code>RETCODE_RET_DRAFT_OTHER_PLAYER_ENTERING = 9656;</code>
+     * <code>RET_COOP_CHAPTER_NOT_OPEN = 9601;</code>
      */
-    public static final int RETCODE_RET_DRAFT_OTHER_PLAYER_ENTERING_VALUE = 9656;
+    public static final int RET_COOP_CHAPTER_NOT_OPEN_VALUE = 9601;
     /**
-     * <code>RETCODE_RET_DRAFT_GUEST_IS_TRANSFERRING = 9657;</code>
+     * <code>RET_COOP_COND_NOT_MEET = 9602;</code>
      */
-    public static final int RETCODE_RET_DRAFT_GUEST_IS_TRANSFERRING_VALUE = 9657;
+    public static final int RET_COOP_COND_NOT_MEET_VALUE = 9602;
     /**
-     * <code>RETCODE_RET_DRAFT_GUEST_NOT_IN_DRAFT_SCENE = 9658;</code>
+     * <code>RET_COOP_POINT_LOCKED = 9603;</code>
      */
-    public static final int RETCODE_RET_DRAFT_GUEST_NOT_IN_DRAFT_SCENE_VALUE = 9658;
+    public static final int RET_COOP_POINT_LOCKED_VALUE = 9603;
     /**
-     * <code>RETCODE_RET_DRAFT_INVITE_OVER_TIME = 9659;</code>
+     * <code>RET_COOP_NOT_HAVE_PROGRESS = 9604;</code>
      */
-    public static final int RETCODE_RET_DRAFT_INVITE_OVER_TIME_VALUE = 9659;
+    public static final int RET_COOP_NOT_HAVE_PROGRESS_VALUE = 9604;
     /**
-     * <code>RETCODE_RET_DRAFT_TWICE_CONFIRM_OVER_TIMER = 9660;</code>
+     * <code>RET_COOP_REWARD_HAS_TAKEN = 9605;</code>
      */
-    public static final int RETCODE_RET_DRAFT_TWICE_CONFIRM_OVER_TIMER_VALUE = 9660;
+    public static final int RET_COOP_REWARD_HAS_TAKEN_VALUE = 9605;
     /**
-     * <code>RETCODE_RET_HOME_UNKOWN = 9701;</code>
+     * <code>RET_DRAFT_HAS_ACTIVE_DRAFT = 9651;</code>
      */
-    public static final int RETCODE_RET_HOME_UNKOWN_VALUE = 9701;
+    public static final int RET_DRAFT_HAS_ACTIVE_DRAFT_VALUE = 9651;
     /**
-     * <code>RETCODE_RET_HOME_INVALID_CLIENT_PARAM = 9702;</code>
+     * <code>RET_DRAFT_NOT_IN_MY_WORLD = 9652;</code>
      */
-    public static final int RETCODE_RET_HOME_INVALID_CLIENT_PARAM_VALUE = 9702;
+    public static final int RET_DRAFT_NOT_IN_MY_WORLD_VALUE = 9652;
     /**
-     * <code>RETCODE_RET_HOME_TARGE_PLAYER_HAS_NO_HOME = 9703;</code>
+     * <code>RET_DRAFT_NOT_SUPPORT_MP = 9653;</code>
      */
-    public static final int RETCODE_RET_HOME_TARGE_PLAYER_HAS_NO_HOME_VALUE = 9703;
+    public static final int RET_DRAFT_NOT_SUPPORT_MP_VALUE = 9653;
     /**
-     * <code>RETCODE_RET_HOME_NOT_ONLINE = 9704;</code>
+     * <code>RET_DRAFT_PLAYER_NOT_ENOUGH = 9654;</code>
      */
-    public static final int RETCODE_RET_HOME_NOT_ONLINE_VALUE = 9704;
+    public static final int RET_DRAFT_PLAYER_NOT_ENOUGH_VALUE = 9654;
     /**
-     * <code>RETCODE_RET_HOME_PLAYER_FULL = 9705;</code>
+     * <code>RET_DRAFT_INCORRECT_SCENE = 9655;</code>
      */
-    public static final int RETCODE_RET_HOME_PLAYER_FULL_VALUE = 9705;
+    public static final int RET_DRAFT_INCORRECT_SCENE_VALUE = 9655;
     /**
-     * <code>RETCODE_RET_HOME_BLOCKED = 9706;</code>
+     * <code>RET_DRAFT_OTHER_PLAYER_ENTERING = 9656;</code>
      */
-    public static final int RETCODE_RET_HOME_BLOCKED_VALUE = 9706;
+    public static final int RET_DRAFT_OTHER_PLAYER_ENTERING_VALUE = 9656;
     /**
-     * <code>RETCODE_RET_HOME_ALREADY_IN_TARGET_HOME_WORLD = 9707;</code>
+     * <code>RET_DRAFT_GUEST_IS_TRANSFERRING = 9657;</code>
      */
-    public static final int RETCODE_RET_HOME_ALREADY_IN_TARGET_HOME_WORLD_VALUE = 9707;
+    public static final int RET_DRAFT_GUEST_IS_TRANSFERRING_VALUE = 9657;
     /**
-     * <code>RETCODE_RET_HOME_IN_EDIT_MODE = 9708;</code>
+     * <code>RET_DRAFT_GUEST_NOT_IN_DRAFT_SCENE = 9658;</code>
      */
-    public static final int RETCODE_RET_HOME_IN_EDIT_MODE_VALUE = 9708;
+    public static final int RET_DRAFT_GUEST_NOT_IN_DRAFT_SCENE_VALUE = 9658;
     /**
-     * <code>RETCODE_RET_HOME_NOT_IN_EDIT_MODE = 9709;</code>
+     * <code>RET_DRAFT_INVITE_OVER_TIME = 9659;</code>
      */
-    public static final int RETCODE_RET_HOME_NOT_IN_EDIT_MODE_VALUE = 9709;
+    public static final int RET_DRAFT_INVITE_OVER_TIME_VALUE = 9659;
     /**
-     * <code>RETCODE_RET_HOME_HAS_GUEST = 9710;</code>
+     * <code>RET_DRAFT_TWICE_CONFIRM_OVER_TIMER = 9660;</code>
      */
-    public static final int RETCODE_RET_HOME_HAS_GUEST_VALUE = 9710;
+    public static final int RET_DRAFT_TWICE_CONFIRM_OVER_TIMER_VALUE = 9660;
     /**
-     * <code>RETCODE_RET_HOME_CANT_ENTER_BY_IN_EDIT_MODE = 9711;</code>
+     * <code>RET_DRAFT_GUEST_NOT_IN_WORLD_SCENE = 9661;</code>
      */
-    public static final int RETCODE_RET_HOME_CANT_ENTER_BY_IN_EDIT_MODE_VALUE = 9711;
+    public static final int RET_DRAFT_GUEST_NOT_IN_WORLD_SCENE_VALUE = 9661;
     /**
-     * <code>RETCODE_RET_HOME_CLIENT_PARAM_INVALID = 9712;</code>
+     * <code>RET_HOME_UNKOWN = 9701;</code>
      */
-    public static final int RETCODE_RET_HOME_CLIENT_PARAM_INVALID_VALUE = 9712;
+    public static final int RET_HOME_UNKOWN_VALUE = 9701;
     /**
-     * <code>RETCODE_RET_HOME_PLAYER_NOT_IN_HOME_WORLD = 9713;</code>
+     * <code>RET_HOME_INVALID_CLIENT_PARAM = 9702;</code>
      */
-    public static final int RETCODE_RET_HOME_PLAYER_NOT_IN_HOME_WORLD_VALUE = 9713;
+    public static final int RET_HOME_INVALID_CLIENT_PARAM_VALUE = 9702;
     /**
-     * <code>RETCODE_RET_HOME_PLAYER_NOT_IN_SELF_HOME_WORLD = 9714;</code>
+     * <code>RET_HOME_TARGE_PLAYER_HAS_NO_HOME = 9703;</code>
      */
-    public static final int RETCODE_RET_HOME_PLAYER_NOT_IN_SELF_HOME_WORLD_VALUE = 9714;
+    public static final int RET_HOME_TARGE_PLAYER_HAS_NO_HOME_VALUE = 9703;
     /**
-     * <code>RETCODE_RET_HOME_NOT_FOUND_IN_MEM = 9715;</code>
+     * <code>RET_HOME_NOT_ONLINE = 9704;</code>
      */
-    public static final int RETCODE_RET_HOME_NOT_FOUND_IN_MEM_VALUE = 9715;
+    public static final int RET_HOME_NOT_ONLINE_VALUE = 9704;
     /**
-     * <code>RETCODE_RET_HOME_PLAYER_IN_HOME_ROOM_SCENE = 9716;</code>
+     * <code>RET_HOME_PLAYER_FULL = 9705;</code>
      */
-    public static final int RETCODE_RET_HOME_PLAYER_IN_HOME_ROOM_SCENE_VALUE = 9716;
+    public static final int RET_HOME_PLAYER_FULL_VALUE = 9705;
     /**
-     * <code>RETCODE_RET_HOME_HOME_REFUSE_GUEST_ENTER = 9717;</code>
+     * <code>RET_HOME_BLOCKED = 9706;</code>
      */
-    public static final int RETCODE_RET_HOME_HOME_REFUSE_GUEST_ENTER_VALUE = 9717;
+    public static final int RET_HOME_BLOCKED_VALUE = 9706;
     /**
-     * <code>RETCODE_RET_HOME_OWNER_REFUSE_TO_ENTER_HOME = 9718;</code>
+     * <code>RET_HOME_ALREADY_IN_TARGET_HOME_WORLD = 9707;</code>
      */
-    public static final int RETCODE_RET_HOME_OWNER_REFUSE_TO_ENTER_HOME_VALUE = 9718;
+    public static final int RET_HOME_ALREADY_IN_TARGET_HOME_WORLD_VALUE = 9707;
     /**
-     * <code>RETCODE_RET_HOME_OWNER_OFFLINE = 9719;</code>
+     * <code>RET_HOME_IN_EDIT_MODE = 9708;</code>
      */
-    public static final int RETCODE_RET_HOME_OWNER_OFFLINE_VALUE = 9719;
+    public static final int RET_HOME_IN_EDIT_MODE_VALUE = 9708;
     /**
-     * <code>RETCODE_RET_HOME_FURNITURE_EXCEED_LIMIT = 9720;</code>
+     * <code>RET_HOME_NOT_IN_EDIT_MODE = 9709;</code>
      */
-    public static final int RETCODE_RET_HOME_FURNITURE_EXCEED_LIMIT_VALUE = 9720;
+    public static final int RET_HOME_NOT_IN_EDIT_MODE_VALUE = 9709;
     /**
-     * <code>RETCODE_RET_HOME_FURNITURE_COUNT_NOT_ENOUGH = 9721;</code>
+     * <code>RET_HOME_HAS_GUEST = 9710;</code>
      */
-    public static final int RETCODE_RET_HOME_FURNITURE_COUNT_NOT_ENOUGH_VALUE = 9721;
+    public static final int RET_HOME_HAS_GUEST_VALUE = 9710;
     /**
-     * <code>RETCODE_RET_HOME_IN_TRY_ENTER_PROCESS = 9722;</code>
+     * <code>RET_HOME_CANT_ENTER_BY_IN_EDIT_MODE = 9711;</code>
      */
-    public static final int RETCODE_RET_HOME_IN_TRY_ENTER_PROCESS_VALUE = 9722;
+    public static final int RET_HOME_CANT_ENTER_BY_IN_EDIT_MODE_VALUE = 9711;
     /**
-     * <code>RETCODE_RET_HOME_ALREADY_IN_TARGET_SCENE = 9723;</code>
+     * <code>RET_HOME_CLIENT_PARAM_INVALID = 9712;</code>
      */
-    public static final int RETCODE_RET_HOME_ALREADY_IN_TARGET_SCENE_VALUE = 9723;
+    public static final int RET_HOME_CLIENT_PARAM_INVALID_VALUE = 9712;
     /**
-     * <code>RETCODE_RET_HOME_COIN_EXCEED_LIMIT = 9724;</code>
+     * <code>RET_HOME_PLAYER_NOT_IN_HOME_WORLD = 9713;</code>
      */
-    public static final int RETCODE_RET_HOME_COIN_EXCEED_LIMIT_VALUE = 9724;
+    public static final int RET_HOME_PLAYER_NOT_IN_HOME_WORLD_VALUE = 9713;
     /**
-     * <code>RETCODE_RET_HOME_COIN_NOT_ENOUGH = 9725;</code>
+     * <code>RET_HOME_PLAYER_NOT_IN_SELF_HOME_WORLD = 9714;</code>
      */
-    public static final int RETCODE_RET_HOME_COIN_NOT_ENOUGH_VALUE = 9725;
+    public static final int RET_HOME_PLAYER_NOT_IN_SELF_HOME_WORLD_VALUE = 9714;
     /**
-     * <code>RETCODE_RET_HOME_MODULE_NOT_UNLOCKED = 9726;</code>
+     * <code>RET_HOME_NOT_FOUND_IN_MEM = 9715;</code>
      */
-    public static final int RETCODE_RET_HOME_MODULE_NOT_UNLOCKED_VALUE = 9726;
+    public static final int RET_HOME_NOT_FOUND_IN_MEM_VALUE = 9715;
     /**
-     * <code>RETCODE_RET_HOME_CUR_MODULE_CLOSED = 9727;</code>
+     * <code>RET_HOME_PLAYER_IN_HOME_ROOM_SCENE = 9716;</code>
      */
-    public static final int RETCODE_RET_HOME_CUR_MODULE_CLOSED_VALUE = 9727;
+    public static final int RET_HOME_PLAYER_IN_HOME_ROOM_SCENE_VALUE = 9716;
     /**
-     * <code>RETCODE_RET_HOME_FURNITURE_SUITE_NOT_UNLOCKED = 9728;</code>
+     * <code>RET_HOME_HOME_REFUSE_GUEST_ENTER = 9717;</code>
      */
-    public static final int RETCODE_RET_HOME_FURNITURE_SUITE_NOT_UNLOCKED_VALUE = 9728;
+    public static final int RET_HOME_HOME_REFUSE_GUEST_ENTER_VALUE = 9717;
     /**
-     * <code>RETCODE_RET_HOME_IN_MATCH = 9729;</code>
+     * <code>RET_HOME_OWNER_REFUSE_TO_ENTER_HOME = 9718;</code>
      */
-    public static final int RETCODE_RET_HOME_IN_MATCH_VALUE = 9729;
+    public static final int RET_HOME_OWNER_REFUSE_TO_ENTER_HOME_VALUE = 9718;
     /**
-     * <code>RETCODE_RET_HOME_IN_COMBAT = 9730;</code>
+     * <code>RET_HOME_OWNER_OFFLINE = 9719;</code>
      */
-    public static final int RETCODE_RET_HOME_IN_COMBAT_VALUE = 9730;
+    public static final int RET_HOME_OWNER_OFFLINE_VALUE = 9719;
     /**
-     * <code>RETCODE_RET_HOME_EDIT_MODE_CD = 9731;</code>
+     * <code>RET_HOME_FURNITURE_EXCEED_LIMIT = 9720;</code>
      */
-    public static final int RETCODE_RET_HOME_EDIT_MODE_CD_VALUE = 9731;
+    public static final int RET_HOME_FURNITURE_EXCEED_LIMIT_VALUE = 9720;
     /**
-     * <code>RETCODE_RET_HOME_UPDATE_FURNITURE_CD = 9732;</code>
+     * <code>RET_HOME_FURNITURE_COUNT_NOT_ENOUGH = 9721;</code>
      */
-    public static final int RETCODE_RET_HOME_UPDATE_FURNITURE_CD_VALUE = 9732;
+    public static final int RET_HOME_FURNITURE_COUNT_NOT_ENOUGH_VALUE = 9721;
     /**
-     * <code>RETCODE_RET_HOME_BLOCK_FURNITURE_LIMIT = 9733;</code>
+     * <code>RET_HOME_IN_TRY_ENTER_PROCESS = 9722;</code>
      */
-    public static final int RETCODE_RET_HOME_BLOCK_FURNITURE_LIMIT_VALUE = 9733;
+    public static final int RET_HOME_IN_TRY_ENTER_PROCESS_VALUE = 9722;
     /**
-     * <code>RETCODE_RET_HOME_NOT_SUPPORT = 9734;</code>
+     * <code>RET_HOME_ALREADY_IN_TARGET_SCENE = 9723;</code>
      */
-    public static final int RETCODE_RET_HOME_NOT_SUPPORT_VALUE = 9734;
+    public static final int RET_HOME_ALREADY_IN_TARGET_SCENE_VALUE = 9723;
     /**
-     * <code>RETCODE_RET_HOME_STATE_NOT_OPEN = 9735;</code>
+     * <code>RET_HOME_COIN_EXCEED_LIMIT = 9724;</code>
      */
-    public static final int RETCODE_RET_HOME_STATE_NOT_OPEN_VALUE = 9735;
+    public static final int RET_HOME_COIN_EXCEED_LIMIT_VALUE = 9724;
     /**
-     * <code>RETCODE_RET_HOME_TARGET_STATE_NOT_OPEN = 9736;</code>
+     * <code>RET_HOME_COIN_NOT_ENOUGH = 9725;</code>
      */
-    public static final int RETCODE_RET_HOME_TARGET_STATE_NOT_OPEN_VALUE = 9736;
+    public static final int RET_HOME_COIN_NOT_ENOUGH_VALUE = 9725;
     /**
-     * <code>RETCODE_RET_HOME_APPLY_ENTER_OTHER_HOME_FAIL = 9737;</code>
+     * <code>RET_HOME_MODULE_NOT_UNLOCKED = 9726;</code>
      */
-    public static final int RETCODE_RET_HOME_APPLY_ENTER_OTHER_HOME_FAIL_VALUE = 9737;
+    public static final int RET_HOME_MODULE_NOT_UNLOCKED_VALUE = 9726;
     /**
-     * <code>RETCODE_RET_HOME_SAVE_NO_MAIN_HOUSE = 9738;</code>
+     * <code>RET_HOME_CUR_MODULE_CLOSED = 9727;</code>
      */
-    public static final int RETCODE_RET_HOME_SAVE_NO_MAIN_HOUSE_VALUE = 9738;
+    public static final int RET_HOME_CUR_MODULE_CLOSED_VALUE = 9727;
     /**
-     * <code>RETCODE_RET_HOME_IN_DUNGEON = 9739;</code>
+     * <code>RET_HOME_FURNITURE_SUITE_NOT_UNLOCKED = 9728;</code>
      */
-    public static final int RETCODE_RET_HOME_IN_DUNGEON_VALUE = 9739;
+    public static final int RET_HOME_FURNITURE_SUITE_NOT_UNLOCKED_VALUE = 9728;
     /**
-     * <code>RETCODE_RET_HOME_ANY_GALLERY_STARTED = 9740;</code>
+     * <code>RET_HOME_IN_MATCH = 9729;</code>
      */
-    public static final int RETCODE_RET_HOME_ANY_GALLERY_STARTED_VALUE = 9740;
+    public static final int RET_HOME_IN_MATCH_VALUE = 9729;
     /**
-     * <code>RETCODE_RET_HOME_QUEST_BLOCK_HOME = 9741;</code>
+     * <code>RET_HOME_IN_COMBAT = 9730;</code>
      */
-    public static final int RETCODE_RET_HOME_QUEST_BLOCK_HOME_VALUE = 9741;
+    public static final int RET_HOME_IN_COMBAT_VALUE = 9730;
     /**
-     * <code>RETCODE_RET_HOME_WAITING_PRIOR_CHECK = 9742;</code>
+     * <code>RET_HOME_EDIT_MODE_CD = 9731;</code>
      */
-    public static final int RETCODE_RET_HOME_WAITING_PRIOR_CHECK_VALUE = 9742;
+    public static final int RET_HOME_EDIT_MODE_CD_VALUE = 9731;
     /**
-     * <code>RETCODE_RET_HOME_PERSISTENT_CHECK_FAIL = 9743;</code>
+     * <code>RET_HOME_UPDATE_FURNITURE_CD = 9732;</code>
      */
-    public static final int RETCODE_RET_HOME_PERSISTENT_CHECK_FAIL_VALUE = 9743;
+    public static final int RET_HOME_UPDATE_FURNITURE_CD_VALUE = 9732;
     /**
-     * <code>RETCODE_RET_HOME_FIND_ONLINE_HOME_FAIL = 9744;</code>
+     * <code>RET_HOME_BLOCK_FURNITURE_LIMIT = 9733;</code>
      */
-    public static final int RETCODE_RET_HOME_FIND_ONLINE_HOME_FAIL_VALUE = 9744;
+    public static final int RET_HOME_BLOCK_FURNITURE_LIMIT_VALUE = 9733;
     /**
-     * <code>RETCODE_RET_HOME_JOIN_SCENE_FAIL = 9745;</code>
+     * <code>RET_HOME_NOT_SUPPORT = 9734;</code>
      */
-    public static final int RETCODE_RET_HOME_JOIN_SCENE_FAIL_VALUE = 9745;
+    public static final int RET_HOME_NOT_SUPPORT_VALUE = 9734;
     /**
-     * <code>RETCODE_RET_HOME_MAX_PLAYER = 9746;</code>
+     * <code>RET_HOME_STATE_NOT_OPEN = 9735;</code>
      */
-    public static final int RETCODE_RET_HOME_MAX_PLAYER_VALUE = 9746;
+    public static final int RET_HOME_STATE_NOT_OPEN_VALUE = 9735;
     /**
-     * <code>RETCODE_RET_HOME_IN_TRANSFER = 9747;</code>
+     * <code>RET_HOME_TARGET_STATE_NOT_OPEN = 9736;</code>
      */
-    public static final int RETCODE_RET_HOME_IN_TRANSFER_VALUE = 9747;
+    public static final int RET_HOME_TARGET_STATE_NOT_OPEN_VALUE = 9736;
     /**
-     * <code>RETCODE_RET_HOME_ANY_HOME_GALLERY_STARTED = 9748;</code>
+     * <code>RET_HOME_APPLY_ENTER_OTHER_HOME_FAIL = 9737;</code>
      */
-    public static final int RETCODE_RET_HOME_ANY_HOME_GALLERY_STARTED_VALUE = 9748;
+    public static final int RET_HOME_APPLY_ENTER_OTHER_HOME_FAIL_VALUE = 9737;
     /**
-     * <code>RETCODE_RET_HOME_CAN_NOT_ENTER_IN_AUDIT = 9749;</code>
+     * <code>RET_HOME_SAVE_NO_MAIN_HOUSE = 9738;</code>
      */
-    public static final int RETCODE_RET_HOME_CAN_NOT_ENTER_IN_AUDIT_VALUE = 9749;
+    public static final int RET_HOME_SAVE_NO_MAIN_HOUSE_VALUE = 9738;
     /**
-     * <code>RETCODE_RET_FURNITURE_MAKE_INDEX_ERROR = 9750;</code>
+     * <code>RET_HOME_IN_DUNGEON = 9739;</code>
      */
-    public static final int RETCODE_RET_FURNITURE_MAKE_INDEX_ERROR_VALUE = 9750;
+    public static final int RET_HOME_IN_DUNGEON_VALUE = 9739;
     /**
-     * <code>RETCODE_RET_FURNITURE_MAKE_LOCKED = 9751;</code>
+     * <code>RET_HOME_ANY_GALLERY_STARTED = 9740;</code>
      */
-    public static final int RETCODE_RET_FURNITURE_MAKE_LOCKED_VALUE = 9751;
+    public static final int RET_HOME_ANY_GALLERY_STARTED_VALUE = 9740;
     /**
-     * <code>RETCODE_RET_FURNITURE_MAKE_CONFIG_ERROR = 9752;</code>
+     * <code>RET_HOME_QUEST_BLOCK_HOME = 9741;</code>
      */
-    public static final int RETCODE_RET_FURNITURE_MAKE_CONFIG_ERROR_VALUE = 9752;
+    public static final int RET_HOME_QUEST_BLOCK_HOME_VALUE = 9741;
     /**
-     * <code>RETCODE_RET_FURNITURE_MAKE_SLOT_FULL = 9753;</code>
+     * <code>RET_HOME_WAITING_PRIOR_CHECK = 9742;</code>
      */
-    public static final int RETCODE_RET_FURNITURE_MAKE_SLOT_FULL_VALUE = 9753;
+    public static final int RET_HOME_WAITING_PRIOR_CHECK_VALUE = 9742;
     /**
-     * <code>RETCODE_RET_FURNITURE_MAKE_ADD_FURNITURE_FAIL = 9754;</code>
+     * <code>RET_HOME_PERSISTENT_CHECK_FAIL = 9743;</code>
      */
-    public static final int RETCODE_RET_FURNITURE_MAKE_ADD_FURNITURE_FAIL_VALUE = 9754;
+    public static final int RET_HOME_PERSISTENT_CHECK_FAIL_VALUE = 9743;
     /**
-     * <code>RETCODE_RET_FURNITURE_MAKE_UNFINISH = 9755;</code>
+     * <code>RET_HOME_FIND_ONLINE_HOME_FAIL = 9744;</code>
      */
-    public static final int RETCODE_RET_FURNITURE_MAKE_UNFINISH_VALUE = 9755;
+    public static final int RET_HOME_FIND_ONLINE_HOME_FAIL_VALUE = 9744;
     /**
-     * <code>RETCODE_RET_FURNITURE_MAKE_IS_FINISH = 9756;</code>
+     * <code>RET_HOME_JOIN_SCENE_FAIL = 9745;</code>
      */
-    public static final int RETCODE_RET_FURNITURE_MAKE_IS_FINISH_VALUE = 9756;
+    public static final int RET_HOME_JOIN_SCENE_FAIL_VALUE = 9745;
     /**
-     * <code>RETCODE_RET_FURNITURE_MAKE_NOT_IN_CORRECT_HOME = 9757;</code>
+     * <code>RET_HOME_MAX_PLAYER = 9746;</code>
      */
-    public static final int RETCODE_RET_FURNITURE_MAKE_NOT_IN_CORRECT_HOME_VALUE = 9757;
+    public static final int RET_HOME_MAX_PLAYER_VALUE = 9746;
     /**
-     * <code>RETCODE_RET_FURNITURE_MAKE_NO_COUNT = 9758;</code>
+     * <code>RET_HOME_IN_TRANSFER = 9747;</code>
      */
-    public static final int RETCODE_RET_FURNITURE_MAKE_NO_COUNT_VALUE = 9758;
+    public static final int RET_HOME_IN_TRANSFER_VALUE = 9747;
     /**
-     * <code>RETCODE_RET_FURNITURE_MAKE_ACCELERATE_LIMIT = 9759;</code>
+     * <code>RET_HOME_ANY_HOME_GALLERY_STARTED = 9748;</code>
      */
-    public static final int RETCODE_RET_FURNITURE_MAKE_ACCELERATE_LIMIT_VALUE = 9759;
+    public static final int RET_HOME_ANY_HOME_GALLERY_STARTED_VALUE = 9748;
     /**
-     * <code>RETCODE_RET_FURNITURE_MAKE_NO_MAKE_DATA = 9760;</code>
+     * <code>RET_HOME_CAN_NOT_ENTER_IN_AUDIT = 9749;</code>
      */
-    public static final int RETCODE_RET_FURNITURE_MAKE_NO_MAKE_DATA_VALUE = 9760;
+    public static final int RET_HOME_CAN_NOT_ENTER_IN_AUDIT_VALUE = 9749;
     /**
-     * <code>RETCODE_RET_HOME_LIMITED_SHOP_CLOSE = 9761;</code>
+     * <code>RET_FURNITURE_MAKE_INDEX_ERROR = 9750;</code>
      */
-    public static final int RETCODE_RET_HOME_LIMITED_SHOP_CLOSE_VALUE = 9761;
+    public static final int RET_FURNITURE_MAKE_INDEX_ERROR_VALUE = 9750;
     /**
-     * <code>RETCODE_RET_HOME_AVATAR_NOT_SHOW = 9762;</code>
+     * <code>RET_FURNITURE_MAKE_LOCKED = 9751;</code>
      */
-    public static final int RETCODE_RET_HOME_AVATAR_NOT_SHOW_VALUE = 9762;
+    public static final int RET_FURNITURE_MAKE_LOCKED_VALUE = 9751;
     /**
-     * <code>RETCODE_RET_HOME_EVENT_COND_NOT_SATISFIED = 9763;</code>
+     * <code>RET_FURNITURE_MAKE_CONFIG_ERROR = 9752;</code>
      */
-    public static final int RETCODE_RET_HOME_EVENT_COND_NOT_SATISFIED_VALUE = 9763;
+    public static final int RET_FURNITURE_MAKE_CONFIG_ERROR_VALUE = 9752;
     /**
-     * <code>RETCODE_RET_HOME_INVALID_ARRANGE_ANIMAL_PARAM = 9764;</code>
+     * <code>RET_FURNITURE_MAKE_SLOT_FULL = 9753;</code>
      */
-    public static final int RETCODE_RET_HOME_INVALID_ARRANGE_ANIMAL_PARAM_VALUE = 9764;
+    public static final int RET_FURNITURE_MAKE_SLOT_FULL_VALUE = 9753;
     /**
-     * <code>RETCODE_RET_HOME_INVALID_ARRANGE_NPC_PARAM = 9765;</code>
+     * <code>RET_FURNITURE_MAKE_ADD_FURNITURE_FAIL = 9754;</code>
      */
-    public static final int RETCODE_RET_HOME_INVALID_ARRANGE_NPC_PARAM_VALUE = 9765;
+    public static final int RET_FURNITURE_MAKE_ADD_FURNITURE_FAIL_VALUE = 9754;
     /**
-     * <code>RETCODE_RET_HOME_INVALID_ARRANGE_SUITE_PARAM = 9766;</code>
+     * <code>RET_FURNITURE_MAKE_UNFINISH = 9755;</code>
      */
-    public static final int RETCODE_RET_HOME_INVALID_ARRANGE_SUITE_PARAM_VALUE = 9766;
+    public static final int RET_FURNITURE_MAKE_UNFINISH_VALUE = 9755;
     /**
-     * <code>RETCODE_RET_HOME_INVALID_ARRANGE_MAIN_HOUSE_PARAM = 9767;</code>
+     * <code>RET_FURNITURE_MAKE_IS_FINISH = 9756;</code>
      */
-    public static final int RETCODE_RET_HOME_INVALID_ARRANGE_MAIN_HOUSE_PARAM_VALUE = 9767;
+    public static final int RET_FURNITURE_MAKE_IS_FINISH_VALUE = 9756;
     /**
-     * <code>RETCODE_RET_HOME_AVATAR_STATE_NOT_OPEN = 9768;</code>
+     * <code>RET_FURNITURE_MAKE_NOT_IN_CORRECT_HOME = 9757;</code>
      */
-    public static final int RETCODE_RET_HOME_AVATAR_STATE_NOT_OPEN_VALUE = 9768;
+    public static final int RET_FURNITURE_MAKE_NOT_IN_CORRECT_HOME_VALUE = 9757;
     /**
-     * <code>RETCODE_RET_HOME_PLANT_FIELD_NOT_EMPTY = 9769;</code>
+     * <code>RET_FURNITURE_MAKE_NO_COUNT = 9758;</code>
      */
-    public static final int RETCODE_RET_HOME_PLANT_FIELD_NOT_EMPTY_VALUE = 9769;
+    public static final int RET_FURNITURE_MAKE_NO_COUNT_VALUE = 9758;
     /**
-     * <code>RETCODE_RET_HOME_PLANT_FIELD_EMPTY = 9770;</code>
+     * <code>RET_FURNITURE_MAKE_ACCELERATE_LIMIT = 9759;</code>
      */
-    public static final int RETCODE_RET_HOME_PLANT_FIELD_EMPTY_VALUE = 9770;
+    public static final int RET_FURNITURE_MAKE_ACCELERATE_LIMIT_VALUE = 9759;
     /**
-     * <code>RETCODE_RET_HOME_PLANT_FIELD_TYPE_ERROR = 9771;</code>
+     * <code>RET_FURNITURE_MAKE_NO_MAKE_DATA = 9760;</code>
      */
-    public static final int RETCODE_RET_HOME_PLANT_FIELD_TYPE_ERROR_VALUE = 9771;
+    public static final int RET_FURNITURE_MAKE_NO_MAKE_DATA_VALUE = 9760;
     /**
-     * <code>RETCODE_RET_HOME_PLANT_TIME_NOT_ENOUGH = 9772;</code>
+     * <code>RET_HOME_LIMITED_SHOP_CLOSE = 9761;</code>
      */
-    public static final int RETCODE_RET_HOME_PLANT_TIME_NOT_ENOUGH_VALUE = 9772;
+    public static final int RET_HOME_LIMITED_SHOP_CLOSE_VALUE = 9761;
     /**
-     * <code>RETCODE_RET_HOME_PLANT_SUB_FIELD_NUM_NOT_ENOUGH = 9773;</code>
+     * <code>RET_HOME_AVATAR_NOT_SHOW = 9762;</code>
      */
-    public static final int RETCODE_RET_HOME_PLANT_SUB_FIELD_NUM_NOT_ENOUGH_VALUE = 9773;
+    public static final int RET_HOME_AVATAR_NOT_SHOW_VALUE = 9762;
     /**
-     * <code>RETCODE_RET_HOME_PLANT_FIELD_PARAM_ERROR = 9774;</code>
+     * <code>RET_HOME_EVENT_COND_NOT_SATISFIED = 9763;</code>
      */
-    public static final int RETCODE_RET_HOME_PLANT_FIELD_PARAM_ERROR_VALUE = 9774;
+    public static final int RET_HOME_EVENT_COND_NOT_SATISFIED_VALUE = 9763;
     /**
-     * <code>RETCODE_RET_HOME_FURNITURE_GUID_ERROR = 9775;</code>
+     * <code>RET_HOME_INVALID_ARRANGE_ANIMAL_PARAM = 9764;</code>
      */
-    public static final int RETCODE_RET_HOME_FURNITURE_GUID_ERROR_VALUE = 9775;
+    public static final int RET_HOME_INVALID_ARRANGE_ANIMAL_PARAM_VALUE = 9764;
     /**
-     * <code>RETCODE_RET_HOME_FURNITURE_ARRANGE_LIMIT = 9776;</code>
+     * <code>RET_HOME_INVALID_ARRANGE_NPC_PARAM = 9765;</code>
      */
-    public static final int RETCODE_RET_HOME_FURNITURE_ARRANGE_LIMIT_VALUE = 9776;
+    public static final int RET_HOME_INVALID_ARRANGE_NPC_PARAM_VALUE = 9765;
     /**
-     * <code>RETCODE_RET_HOME_FISH_FARMING_LIMIT = 9777;</code>
+     * <code>RET_HOME_INVALID_ARRANGE_SUITE_PARAM = 9766;</code>
      */
-    public static final int RETCODE_RET_HOME_FISH_FARMING_LIMIT_VALUE = 9777;
+    public static final int RET_HOME_INVALID_ARRANGE_SUITE_PARAM_VALUE = 9766;
     /**
-     * <code>RETCODE_RET_HOME_FISH_COUNT_NOT_ENOUGH = 9778;</code>
+     * <code>RET_HOME_INVALID_ARRANGE_MAIN_HOUSE_PARAM = 9767;</code>
      */
-    public static final int RETCODE_RET_HOME_FISH_COUNT_NOT_ENOUGH_VALUE = 9778;
+    public static final int RET_HOME_INVALID_ARRANGE_MAIN_HOUSE_PARAM_VALUE = 9767;
     /**
-     * <code>RETCODE_RET_HOME_FURNITURE_COST_LIMIT = 9779;</code>
+     * <code>RET_HOME_AVATAR_STATE_NOT_OPEN = 9768;</code>
      */
-    public static final int RETCODE_RET_HOME_FURNITURE_COST_LIMIT_VALUE = 9779;
+    public static final int RET_HOME_AVATAR_STATE_NOT_OPEN_VALUE = 9768;
     /**
-     * <code>RETCODE_RET_HOME_CUSTOM_FURNITURE_INVALID = 9780;</code>
+     * <code>RET_HOME_PLANT_FIELD_NOT_EMPTY = 9769;</code>
      */
-    public static final int RETCODE_RET_HOME_CUSTOM_FURNITURE_INVALID_VALUE = 9780;
+    public static final int RET_HOME_PLANT_FIELD_NOT_EMPTY_VALUE = 9769;
     /**
-     * <code>RETCODE_RET_HOME_INVALID_ARRANGE_GROUP_PARAM = 9781;</code>
+     * <code>RET_HOME_PLANT_FIELD_EMPTY = 9770;</code>
      */
-    public static final int RETCODE_RET_HOME_INVALID_ARRANGE_GROUP_PARAM_VALUE = 9781;
+    public static final int RET_HOME_PLANT_FIELD_EMPTY_VALUE = 9770;
     /**
-     * <code>RETCODE_RET_HOME_FURNITURE_ARRANGE_GROUP_LIMIT = 9782;</code>
+     * <code>RET_HOME_PLANT_FIELD_TYPE_ERROR = 9771;</code>
      */
-    public static final int RETCODE_RET_HOME_FURNITURE_ARRANGE_GROUP_LIMIT_VALUE = 9782;
+    public static final int RET_HOME_PLANT_FIELD_TYPE_ERROR_VALUE = 9771;
     /**
-     * <code>RETCODE_RET_HOME_PICTURE_FRAME_COOP_CG_GENDER_ERROR = 9783;</code>
+     * <code>RET_HOME_PLANT_TIME_NOT_ENOUGH = 9772;</code>
      */
-    public static final int RETCODE_RET_HOME_PICTURE_FRAME_COOP_CG_GENDER_ERROR_VALUE = 9783;
+    public static final int RET_HOME_PLANT_TIME_NOT_ENOUGH_VALUE = 9772;
     /**
-     * <code>RETCODE_RET_HOME_PICTURE_FRAME_COOP_CG_NOT_UNLOCK = 9784;</code>
+     * <code>RET_HOME_PLANT_SUB_FIELD_NUM_NOT_ENOUGH = 9773;</code>
      */
-    public static final int RETCODE_RET_HOME_PICTURE_FRAME_COOP_CG_NOT_UNLOCK_VALUE = 9784;
+    public static final int RET_HOME_PLANT_SUB_FIELD_NUM_NOT_ENOUGH_VALUE = 9773;
     /**
-     * <code>RETCODE_RET_HOME_FURNITURE_CANNOT_ARRANGE = 9785;</code>
+     * <code>RET_HOME_PLANT_FIELD_PARAM_ERROR = 9774;</code>
      */
-    public static final int RETCODE_RET_HOME_FURNITURE_CANNOT_ARRANGE_VALUE = 9785;
+    public static final int RET_HOME_PLANT_FIELD_PARAM_ERROR_VALUE = 9774;
     /**
-     * <code>RETCODE_RET_HOME_FURNITURE_IN_DUPLICATE_SUITE = 9786;</code>
+     * <code>RET_HOME_FURNITURE_GUID_ERROR = 9775;</code>
      */
-    public static final int RETCODE_RET_HOME_FURNITURE_IN_DUPLICATE_SUITE_VALUE = 9786;
+    public static final int RET_HOME_FURNITURE_GUID_ERROR_VALUE = 9775;
     /**
-     * <code>RETCODE_RET_HOME_FURNITURE_CUSTOM_SUITE_TOO_SMALL = 9787;</code>
+     * <code>RET_HOME_FURNITURE_ARRANGE_LIMIT = 9776;</code>
      */
-    public static final int RETCODE_RET_HOME_FURNITURE_CUSTOM_SUITE_TOO_SMALL_VALUE = 9787;
+    public static final int RET_HOME_FURNITURE_ARRANGE_LIMIT_VALUE = 9776;
     /**
-     * <code>RETCODE_RET_HOME_FURNITURE_CUSTOM_SUITE_TOO_BIG = 9788;</code>
+     * <code>RET_HOME_FISH_FARMING_LIMIT = 9777;</code>
      */
-    public static final int RETCODE_RET_HOME_FURNITURE_CUSTOM_SUITE_TOO_BIG_VALUE = 9788;
+    public static final int RET_HOME_FISH_FARMING_LIMIT_VALUE = 9777;
     /**
-     * <code>RETCODE_RET_HOME_FURNITURE_SUITE_EXCEED_LIMIT = 9789;</code>
+     * <code>RET_HOME_FISH_COUNT_NOT_ENOUGH = 9778;</code>
      */
-    public static final int RETCODE_RET_HOME_FURNITURE_SUITE_EXCEED_LIMIT_VALUE = 9789;
+    public static final int RET_HOME_FISH_COUNT_NOT_ENOUGH_VALUE = 9778;
     /**
-     * <code>RETCODE_RET_HOME_FURNITURE_CUSTOM_SUITE_EXCEED_LIMIT = 9790;</code>
+     * <code>RET_HOME_FURNITURE_COST_LIMIT = 9779;</code>
      */
-    public static final int RETCODE_RET_HOME_FURNITURE_CUSTOM_SUITE_EXCEED_LIMIT_VALUE = 9790;
+    public static final int RET_HOME_FURNITURE_COST_LIMIT_VALUE = 9779;
     /**
-     * <code>RETCODE_RET_HOME_FURNITURE_CUSTOM_SUITE_INVALID_SURFACE_TYPE = 9791;</code>
+     * <code>RET_HOME_CUSTOM_FURNITURE_INVALID = 9780;</code>
      */
-    public static final int RETCODE_RET_HOME_FURNITURE_CUSTOM_SUITE_INVALID_SURFACE_TYPE_VALUE = 9791;
+    public static final int RET_HOME_CUSTOM_FURNITURE_INVALID_VALUE = 9780;
     /**
-     * <code>RETCODE_RET_HOME_BGM_ID_NOT_FOUND = 9792;</code>
+     * <code>RET_HOME_INVALID_ARRANGE_GROUP_PARAM = 9781;</code>
      */
-    public static final int RETCODE_RET_HOME_BGM_ID_NOT_FOUND_VALUE = 9792;
+    public static final int RET_HOME_INVALID_ARRANGE_GROUP_PARAM_VALUE = 9781;
     /**
-     * <code>RETCODE_RET_HOME_BGM_NOT_UNLOCKED = 9793;</code>
+     * <code>RET_HOME_FURNITURE_ARRANGE_GROUP_LIMIT = 9782;</code>
      */
-    public static final int RETCODE_RET_HOME_BGM_NOT_UNLOCKED_VALUE = 9793;
+    public static final int RET_HOME_FURNITURE_ARRANGE_GROUP_LIMIT_VALUE = 9782;
     /**
-     * <code>RETCODE_RET_HOME_BGM_FURNITURE_NOT_FOUND = 9794;</code>
+     * <code>RET_HOME_PICTURE_FRAME_COOP_CG_GENDER_ERROR = 9783;</code>
      */
-    public static final int RETCODE_RET_HOME_BGM_FURNITURE_NOT_FOUND_VALUE = 9794;
+    public static final int RET_HOME_PICTURE_FRAME_COOP_CG_GENDER_ERROR_VALUE = 9783;
     /**
-     * <code>RETCODE_RET_HOME_BGM_NOT_SUPPORT_BY_CUR_SCENE = 9795;</code>
+     * <code>RET_HOME_PICTURE_FRAME_COOP_CG_NOT_UNLOCK = 9784;</code>
      */
-    public static final int RETCODE_RET_HOME_BGM_NOT_SUPPORT_BY_CUR_SCENE_VALUE = 9795;
+    public static final int RET_HOME_PICTURE_FRAME_COOP_CG_NOT_UNLOCK_VALUE = 9784;
     /**
-     * <code>RETCODE_RET_HOME_LIMITED_SHOP_GOODS_DISABLE = 9796;</code>
+     * <code>RET_HOME_FURNITURE_CANNOT_ARRANGE = 9785;</code>
      */
-    public static final int RETCODE_RET_HOME_LIMITED_SHOP_GOODS_DISABLE_VALUE = 9796;
+    public static final int RET_HOME_FURNITURE_CANNOT_ARRANGE_VALUE = 9785;
     /**
-     * <code>RETCODE_RET_HOME_WORLD_WOOD_MATERIAL_EMPTY = 9797;</code>
+     * <code>RET_HOME_FURNITURE_IN_DUPLICATE_SUITE = 9786;</code>
      */
-    public static final int RETCODE_RET_HOME_WORLD_WOOD_MATERIAL_EMPTY_VALUE = 9797;
+    public static final int RET_HOME_FURNITURE_IN_DUPLICATE_SUITE_VALUE = 9786;
     /**
-     * <code>RETCODE_RET_HOME_WORLD_WOOD_MATERIAL_NOT_FOUND = 9798;</code>
+     * <code>RET_HOME_FURNITURE_CUSTOM_SUITE_TOO_SMALL = 9787;</code>
      */
-    public static final int RETCODE_RET_HOME_WORLD_WOOD_MATERIAL_NOT_FOUND_VALUE = 9798;
+    public static final int RET_HOME_FURNITURE_CUSTOM_SUITE_TOO_SMALL_VALUE = 9787;
     /**
-     * <code>RETCODE_RET_HOME_WORLD_WOOD_MATERIAL_COUNT_INVALID = 9799;</code>
+     * <code>RET_HOME_FURNITURE_CUSTOM_SUITE_TOO_BIG = 9788;</code>
      */
-    public static final int RETCODE_RET_HOME_WORLD_WOOD_MATERIAL_COUNT_INVALID_VALUE = 9799;
+    public static final int RET_HOME_FURNITURE_CUSTOM_SUITE_TOO_BIG_VALUE = 9788;
     /**
-     * <code>RETCODE_RET_HOME_WORLD_WOOD_EXCHANGE_EXCEED_LIMIT = 9800;</code>
+     * <code>RET_HOME_FURNITURE_SUITE_EXCEED_LIMIT = 9789;</code>
      */
-    public static final int RETCODE_RET_HOME_WORLD_WOOD_EXCHANGE_EXCEED_LIMIT_VALUE = 9800;
+    public static final int RET_HOME_FURNITURE_SUITE_EXCEED_LIMIT_VALUE = 9789;
     /**
-     * <code>RETCODE_RET_SUMO_ACTIVITY_STAGE_NOT_OPEN = 10000;</code>
+     * <code>RET_HOME_FURNITURE_CUSTOM_SUITE_EXCEED_LIMIT = 9790;</code>
      */
-    public static final int RETCODE_RET_SUMO_ACTIVITY_STAGE_NOT_OPEN_VALUE = 10000;
+    public static final int RET_HOME_FURNITURE_CUSTOM_SUITE_EXCEED_LIMIT_VALUE = 9790;
     /**
-     * <code>RETCODE_RET_SUMO_ACTIVITY_SWITCH_TEAM_IN_CD = 10001;</code>
+     * <code>RET_HOME_FURNITURE_CUSTOM_SUITE_INVALID_SURFACE_TYPE = 9791;</code>
      */
-    public static final int RETCODE_RET_SUMO_ACTIVITY_SWITCH_TEAM_IN_CD_VALUE = 10001;
+    public static final int RET_HOME_FURNITURE_CUSTOM_SUITE_INVALID_SURFACE_TYPE_VALUE = 9791;
     /**
-     * <code>RETCODE_RET_SUMO_ACTIVITY_TEAM_NUM_INCORRECT = 10002;</code>
+     * <code>RET_HOME_BGM_ID_NOT_FOUND = 9792;</code>
      */
-    public static final int RETCODE_RET_SUMO_ACTIVITY_TEAM_NUM_INCORRECT_VALUE = 10002;
+    public static final int RET_HOME_BGM_ID_NOT_FOUND_VALUE = 9792;
     /**
-     * <code>RETCODE_RET_LUNA_RITE_ACTIVITY_AREA_ID_ERROR = 10004;</code>
+     * <code>RET_HOME_BGM_NOT_UNLOCKED = 9793;</code>
      */
-    public static final int RETCODE_RET_LUNA_RITE_ACTIVITY_AREA_ID_ERROR_VALUE = 10004;
+    public static final int RET_HOME_BGM_NOT_UNLOCKED_VALUE = 9793;
     /**
-     * <code>RETCODE_RET_LUNA_RITE_ACTIVITY_BATTLE_NOT_FINISH = 10005;</code>
+     * <code>RET_HOME_BGM_FURNITURE_NOT_FOUND = 9794;</code>
      */
-    public static final int RETCODE_RET_LUNA_RITE_ACTIVITY_BATTLE_NOT_FINISH_VALUE = 10005;
+    public static final int RET_HOME_BGM_FURNITURE_NOT_FOUND_VALUE = 9794;
     /**
-     * <code>RETCODE_RET_LUNA_RITE_ACTIVITY_ALREADY_SACRIFICE = 10006;</code>
+     * <code>RET_HOME_BGM_NOT_SUPPORT_BY_CUR_SCENE = 9795;</code>
      */
-    public static final int RETCODE_RET_LUNA_RITE_ACTIVITY_ALREADY_SACRIFICE_VALUE = 10006;
+    public static final int RET_HOME_BGM_NOT_SUPPORT_BY_CUR_SCENE_VALUE = 9795;
     /**
-     * <code>RETCODE_RET_LUNA_RITE_ACTIVITY_ALREADY_TAKE_REWARD = 10007;</code>
+     * <code>RET_HOME_LIMITED_SHOP_GOODS_DISABLE = 9796;</code>
      */
-    public static final int RETCODE_RET_LUNA_RITE_ACTIVITY_ALREADY_TAKE_REWARD_VALUE = 10007;
+    public static final int RET_HOME_LIMITED_SHOP_GOODS_DISABLE_VALUE = 9796;
     /**
-     * <code>RETCODE_RET_LUNA_RITE_ACTIVITY_SACRIFICE_NOT_ENOUGH = 10008;</code>
+     * <code>RET_HOME_WORLD_WOOD_MATERIAL_EMPTY = 9797;</code>
      */
-    public static final int RETCODE_RET_LUNA_RITE_ACTIVITY_SACRIFICE_NOT_ENOUGH_VALUE = 10008;
+    public static final int RET_HOME_WORLD_WOOD_MATERIAL_EMPTY_VALUE = 9797;
     /**
-     * <code>RETCODE_RET_LUNA_RITE_ACTIVITY_SEARCHING_COND_NOT_MEET = 10009;</code>
+     * <code>RET_HOME_WORLD_WOOD_MATERIAL_NOT_FOUND = 9798;</code>
      */
-    public static final int RETCODE_RET_LUNA_RITE_ACTIVITY_SEARCHING_COND_NOT_MEET_VALUE = 10009;
+    public static final int RET_HOME_WORLD_WOOD_MATERIAL_NOT_FOUND_VALUE = 9798;
     /**
-     * <code>RETCODE_RET_DIG_GADGET_CONFIG_ID_NOT_MATCH = 10015;</code>
+     * <code>RET_HOME_WORLD_WOOD_MATERIAL_COUNT_INVALID = 9799;</code>
      */
-    public static final int RETCODE_RET_DIG_GADGET_CONFIG_ID_NOT_MATCH_VALUE = 10015;
+    public static final int RET_HOME_WORLD_WOOD_MATERIAL_COUNT_INVALID_VALUE = 9799;
     /**
-     * <code>RETCODE_RET_DIG_FIND_NEAREST_POS_FAIL = 10016;</code>
+     * <code>RET_HOME_WORLD_WOOD_EXCHANGE_EXCEED_LIMIT = 9800;</code>
      */
-    public static final int RETCODE_RET_DIG_FIND_NEAREST_POS_FAIL_VALUE = 10016;
+    public static final int RET_HOME_WORLD_WOOD_EXCHANGE_EXCEED_LIMIT_VALUE = 9800;
     /**
-     * <code>RETCODE_RET_MUSIC_GAME_LEVEL_NOT_OPEN = 10021;</code>
+     * <code>RET_HOME_BLUEPRINT_SEARCH_SELF = 9801;</code>
      */
-    public static final int RETCODE_RET_MUSIC_GAME_LEVEL_NOT_OPEN_VALUE = 10021;
+    public static final int RET_HOME_BLUEPRINT_SEARCH_SELF_VALUE = 9801;
     /**
-     * <code>RETCODE_RET_MUSIC_GAME_LEVEL_NOT_UNLOCK = 10022;</code>
+     * <code>RET_HOME_BLUEPRINT_SHARE_CODE_INVALID = 9802;</code>
      */
-    public static final int RETCODE_RET_MUSIC_GAME_LEVEL_NOT_UNLOCK_VALUE = 10022;
+    public static final int RET_HOME_BLUEPRINT_SHARE_CODE_INVALID_VALUE = 9802;
     /**
-     * <code>RETCODE_RET_MUSIC_GAME_LEVEL_NOT_STARTED = 10023;</code>
+     * <code>RET_HOME_BLUEPRINT_NOT_EXIST = 9803;</code>
      */
-    public static final int RETCODE_RET_MUSIC_GAME_LEVEL_NOT_STARTED_VALUE = 10023;
+    public static final int RET_HOME_BLUEPRINT_NOT_EXIST_VALUE = 9803;
     /**
-     * <code>RETCODE_RET_MUSIC_GAME_LEVEL_CONFIG_NOT_FOUND = 10024;</code>
+     * <code>RET_HOME_BLUEPRINT_SLOT_HAS_EXIST_SHARE_CODE = 9804;</code>
      */
-    public static final int RETCODE_RET_MUSIC_GAME_LEVEL_CONFIG_NOT_FOUND_VALUE = 10024;
+    public static final int RET_HOME_BLUEPRINT_SLOT_HAS_EXIST_SHARE_CODE_VALUE = 9804;
     /**
-     * <code>RETCODE_RET_MUSIC_GAME_LEVEL_ID_NOT_MATCH = 10025;</code>
+     * <code>RET_HOME_BLUEPRINT_SLOT_NOT_EXIST_SHARE_CODE = 9805;</code>
      */
-    public static final int RETCODE_RET_MUSIC_GAME_LEVEL_ID_NOT_MATCH_VALUE = 10025;
+    public static final int RET_HOME_BLUEPRINT_SLOT_NOT_EXIST_SHARE_CODE_VALUE = 9805;
     /**
-     * <code>RETCODE_RET_ROGUELIKE_COIN_A_NOT_ENOUGH = 10031;</code>
+     * <code>RET_HOME_BLUEPRINT_CAN_NOT_CREATE_IN_AUDIT = 9806;</code>
      */
-    public static final int RETCODE_RET_ROGUELIKE_COIN_A_NOT_ENOUGH_VALUE = 10031;
+    public static final int RET_HOME_BLUEPRINT_CAN_NOT_CREATE_IN_AUDIT_VALUE = 9806;
     /**
-     * <code>RETCODE_RET_ROGUELIKE_COIN_B_NOT_ENOUGH = 10032;</code>
+     * <code>RET_HOME_BLOCK_NOT_UNLOCKED = 9807;</code>
      */
-    public static final int RETCODE_RET_ROGUELIKE_COIN_B_NOT_ENOUGH_VALUE = 10032;
+    public static final int RET_HOME_BLOCK_NOT_UNLOCKED_VALUE = 9807;
     /**
-     * <code>RETCODE_RET_ROGUELIKE_COIN_C_NOT_ENOUGH = 10033;</code>
+     * <code>RET_HOME_BLUEPRINT_CREATE_CD = 9808;</code>
      */
-    public static final int RETCODE_RET_ROGUELIKE_COIN_C_NOT_ENOUGH_VALUE = 10033;
+    public static final int RET_HOME_BLUEPRINT_CREATE_CD_VALUE = 9808;
     /**
-     * <code>RETCODE_RET_ROGUELIKE_COIN_A_EXCEED_LIMIT = 10034;</code>
+     * <code>RET_HOME_BLUEPRINT_SET_OPTION_CD = 9809;</code>
      */
-    public static final int RETCODE_RET_ROGUELIKE_COIN_A_EXCEED_LIMIT_VALUE = 10034;
+    public static final int RET_HOME_BLUEPRINT_SET_OPTION_CD_VALUE = 9809;
     /**
-     * <code>RETCODE_RET_ROGUELIKE_COIN_B_EXCEED_LIMIT = 10035;</code>
+     * <code>RET_HOME_BLUEPRINT_NOT_ALLOW_FRIEND_COPY = 9810;</code>
      */
-    public static final int RETCODE_RET_ROGUELIKE_COIN_B_EXCEED_LIMIT_VALUE = 10035;
+    public static final int RET_HOME_BLUEPRINT_NOT_ALLOW_FRIEND_COPY_VALUE = 9810;
     /**
-     * <code>RETCODE_RET_ROGUELIKE_COIN_C_EXCEED_LIMIT = 10036;</code>
+     * <code>RET_HOME_FURNITURE_POS_UNDER_DIE_Y = 9811;</code>
      */
-    public static final int RETCODE_RET_ROGUELIKE_COIN_C_EXCEED_LIMIT_VALUE = 10036;
+    public static final int RET_HOME_FURNITURE_POS_UNDER_DIE_Y_VALUE = 9811;
     /**
-     * <code>RETCODE_RET_ROGUELIKE_RUNE_COUNT_NOT_ENOUGH = 10037;</code>
+     * <code>RET_HOME_BLUEPRINT_GEN_SHARE_CODE_FAIL = 9812;</code>
      */
-    public static final int RETCODE_RET_ROGUELIKE_RUNE_COUNT_NOT_ENOUGH_VALUE = 10037;
+    public static final int RET_HOME_BLUEPRINT_GEN_SHARE_CODE_FAIL_VALUE = 9812;
     /**
-     * <code>RETCODE_RET_ROGUELIKE_NOT_IN_ROGUE_DUNGEON = 10038;</code>
+     * <code>RET_HOME_BLUEPRINT_SEARCH_CD = 9813;</code>
      */
-    public static final int RETCODE_RET_ROGUELIKE_NOT_IN_ROGUE_DUNGEON_VALUE = 10038;
+    public static final int RET_HOME_BLUEPRINT_SEARCH_CD_VALUE = 9813;
     /**
-     * <code>RETCODE_RET_ROGUELIKE_CELL_NOT_FOUND = 10039;</code>
+     * <code>RET_HOME_BLUEPRINT_PREVIEW_CD = 9814;</code>
      */
-    public static final int RETCODE_RET_ROGUELIKE_CELL_NOT_FOUND_VALUE = 10039;
+    public static final int RET_HOME_BLUEPRINT_PREVIEW_CD_VALUE = 9814;
     /**
-     * <code>RETCODE_RET_ROGUELIKE_CELL_TYPE_INCORRECT = 10040;</code>
+     * <code>RET_HOME_BLUEPRINT_PREVIEW_SCENE_NOT_MATCH = 9815;</code>
      */
-    public static final int RETCODE_RET_ROGUELIKE_CELL_TYPE_INCORRECT_VALUE = 10040;
+    public static final int RET_HOME_BLUEPRINT_PREVIEW_SCENE_NOT_MATCH_VALUE = 9815;
     /**
-     * <code>RETCODE_RET_ROGUELIKE_CELL_ALREADY_FINISHED = 10041;</code>
+     * <code>RET_SUMO_ACTIVITY_STAGE_NOT_OPEN = 10000;</code>
      */
-    public static final int RETCODE_RET_ROGUELIKE_CELL_ALREADY_FINISHED_VALUE = 10041;
+    public static final int RET_SUMO_ACTIVITY_STAGE_NOT_OPEN_VALUE = 10000;
     /**
-     * <code>RETCODE_RET_ROGUELIKE_DUNGEON_HAVE_UNFINISHED_PROGRESS = 10042;</code>
+     * <code>RET_SUMO_ACTIVITY_SWITCH_TEAM_IN_CD = 10001;</code>
      */
-    public static final int RETCODE_RET_ROGUELIKE_DUNGEON_HAVE_UNFINISHED_PROGRESS_VALUE = 10042;
+    public static final int RET_SUMO_ACTIVITY_SWITCH_TEAM_IN_CD_VALUE = 10001;
     /**
-     * <code>RETCODE_RET_ROGUELIKE_STAGE_NOT_FINISHED = 10043;</code>
+     * <code>RET_SUMO_ACTIVITY_TEAM_NUM_INCORRECT = 10002;</code>
      */
-    public static final int RETCODE_RET_ROGUELIKE_STAGE_NOT_FINISHED_VALUE = 10043;
+    public static final int RET_SUMO_ACTIVITY_TEAM_NUM_INCORRECT_VALUE = 10002;
     /**
-     * <code>RETCODE_RET_ROGUELIKE_STAGE_FIRST_PASS_REWARD_HAS_TAKEN = 10045;</code>
+     * <code>RET_LUNA_RITE_ACTIVITY_AREA_ID_ERROR = 10004;</code>
      */
-    public static final int RETCODE_RET_ROGUELIKE_STAGE_FIRST_PASS_REWARD_HAS_TAKEN_VALUE = 10045;
+    public static final int RET_LUNA_RITE_ACTIVITY_AREA_ID_ERROR_VALUE = 10004;
     /**
-     * <code>RETCODE_RET_ROGUELIKE_ACTIVITY_CONTENT_CLOSED = 10046;</code>
+     * <code>RET_LUNA_RITE_ACTIVITY_BATTLE_NOT_FINISH = 10005;</code>
      */
-    public static final int RETCODE_RET_ROGUELIKE_ACTIVITY_CONTENT_CLOSED_VALUE = 10046;
+    public static final int RET_LUNA_RITE_ACTIVITY_BATTLE_NOT_FINISH_VALUE = 10005;
     /**
-     * <code>RETCODE_RET_ROGUELIKE_DUNGEON_PRE_QUEST_NOT_FINISHED = 10047;</code>
+     * <code>RET_LUNA_RITE_ACTIVITY_ALREADY_SACRIFICE = 10006;</code>
      */
-    public static final int RETCODE_RET_ROGUELIKE_DUNGEON_PRE_QUEST_NOT_FINISHED_VALUE = 10047;
+    public static final int RET_LUNA_RITE_ACTIVITY_ALREADY_SACRIFICE_VALUE = 10006;
     /**
-     * <code>RETCODE_RET_ROGUELIKE_DUNGEON_NOT_OPEN = 10048;</code>
+     * <code>RET_LUNA_RITE_ACTIVITY_ALREADY_TAKE_REWARD = 10007;</code>
      */
-    public static final int RETCODE_RET_ROGUELIKE_DUNGEON_NOT_OPEN_VALUE = 10048;
+    public static final int RET_LUNA_RITE_ACTIVITY_ALREADY_TAKE_REWARD_VALUE = 10007;
     /**
-     * <code>RETCODE_RET_ROGUELIKE_SPRINT_IS_BANNED = 10049;</code>
+     * <code>RET_LUNA_RITE_ACTIVITY_SACRIFICE_NOT_ENOUGH = 10008;</code>
      */
-    public static final int RETCODE_RET_ROGUELIKE_SPRINT_IS_BANNED_VALUE = 10049;
+    public static final int RET_LUNA_RITE_ACTIVITY_SACRIFICE_NOT_ENOUGH_VALUE = 10008;
     /**
-     * <code>RETCODE_RET_ROGUELIKE_DUNGEON_PRE_STAGE_NOT_FINISHED = 10050;</code>
+     * <code>RET_LUNA_RITE_ACTIVITY_SEARCHING_COND_NOT_MEET = 10009;</code>
      */
-    public static final int RETCODE_RET_ROGUELIKE_DUNGEON_PRE_STAGE_NOT_FINISHED_VALUE = 10050;
+    public static final int RET_LUNA_RITE_ACTIVITY_SEARCHING_COND_NOT_MEET_VALUE = 10009;
     /**
-     * <code>RETCODE_RET_ROGUELIKE_ALL_AVATAR_DIE_CANNOT_RESUME = 10051;</code>
+     * <code>RET_DIG_GADGET_CONFIG_ID_NOT_MATCH = 10015;</code>
      */
-    public static final int RETCODE_RET_ROGUELIKE_ALL_AVATAR_DIE_CANNOT_RESUME_VALUE = 10051;
+    public static final int RET_DIG_GADGET_CONFIG_ID_NOT_MATCH_VALUE = 10015;
     /**
-     * <code>RETCODE_RET_PLANT_FLOWER_ALREADY_TAKE_SEED = 10056;</code>
+     * <code>RET_DIG_FIND_NEAREST_POS_FAIL = 10016;</code>
      */
-    public static final int RETCODE_RET_PLANT_FLOWER_ALREADY_TAKE_SEED_VALUE = 10056;
+    public static final int RET_DIG_FIND_NEAREST_POS_FAIL_VALUE = 10016;
     /**
-     * <code>RETCODE_RET_PLANT_FLOWER_FRIEND_HAVE_FLOWER_LIMIT = 10057;</code>
+     * <code>RET_MUSIC_GAME_LEVEL_NOT_OPEN = 10021;</code>
      */
-    public static final int RETCODE_RET_PLANT_FLOWER_FRIEND_HAVE_FLOWER_LIMIT_VALUE = 10057;
+    public static final int RET_MUSIC_GAME_LEVEL_NOT_OPEN_VALUE = 10021;
     /**
-     * <code>RETCODE_RET_PLANT_FLOWER_CAN_GIVE_FLOWER_NOT_ENOUGH = 10058;</code>
+     * <code>RET_MUSIC_GAME_LEVEL_NOT_UNLOCK = 10022;</code>
      */
-    public static final int RETCODE_RET_PLANT_FLOWER_CAN_GIVE_FLOWER_NOT_ENOUGH_VALUE = 10058;
+    public static final int RET_MUSIC_GAME_LEVEL_NOT_UNLOCK_VALUE = 10022;
     /**
-     * <code>RETCODE_RET_PLANT_FLOWER_WISH_FLOWER_KINDS_LIMIT = 10059;</code>
+     * <code>RET_MUSIC_GAME_LEVEL_NOT_STARTED = 10023;</code>
      */
-    public static final int RETCODE_RET_PLANT_FLOWER_WISH_FLOWER_KINDS_LIMIT_VALUE = 10059;
+    public static final int RET_MUSIC_GAME_LEVEL_NOT_STARTED_VALUE = 10023;
     /**
-     * <code>RETCODE_RET_PLANT_FLOWER_HAVE_FLOWER_NOT_ENOUGH = 10060;</code>
+     * <code>RET_MUSIC_GAME_LEVEL_CONFIG_NOT_FOUND = 10024;</code>
      */
-    public static final int RETCODE_RET_PLANT_FLOWER_HAVE_FLOWER_NOT_ENOUGH_VALUE = 10060;
+    public static final int RET_MUSIC_GAME_LEVEL_CONFIG_NOT_FOUND_VALUE = 10024;
     /**
-     * <code>RETCODE_RET_PLANT_FLOWER_FLOWER_COMBINATION_INVALID = 10061;</code>
+     * <code>RET_MUSIC_GAME_LEVEL_ID_NOT_MATCH = 10025;</code>
      */
-    public static final int RETCODE_RET_PLANT_FLOWER_FLOWER_COMBINATION_INVALID_VALUE = 10061;
+    public static final int RET_MUSIC_GAME_LEVEL_ID_NOT_MATCH_VALUE = 10025;
     /**
-     * <code>RETCODE_RET_HACHI_DUNGEON_NOT_VALID = 10052;</code>
+     * <code>RET_ROGUELIKE_COIN_A_NOT_ENOUGH = 10031;</code>
      */
-    public static final int RETCODE_RET_HACHI_DUNGEON_NOT_VALID_VALUE = 10052;
+    public static final int RET_ROGUELIKE_COIN_A_NOT_ENOUGH_VALUE = 10031;
     /**
-     * <code>RETCODE_RET_HACHI_DUNGEON_STAGE_NOT_OPEN = 10053;</code>
+     * <code>RET_ROGUELIKE_COIN_B_NOT_ENOUGH = 10032;</code>
      */
-    public static final int RETCODE_RET_HACHI_DUNGEON_STAGE_NOT_OPEN_VALUE = 10053;
+    public static final int RET_ROGUELIKE_COIN_B_NOT_ENOUGH_VALUE = 10032;
     /**
-     * <code>RETCODE_RET_HACHI_DUNGEON_TEAMMATE_NOT_PASS = 10054;</code>
+     * <code>RET_ROGUELIKE_COIN_C_NOT_ENOUGH = 10033;</code>
      */
-    public static final int RETCODE_RET_HACHI_DUNGEON_TEAMMATE_NOT_PASS_VALUE = 10054;
+    public static final int RET_ROGUELIKE_COIN_C_NOT_ENOUGH_VALUE = 10033;
     /**
-     * <code>RETCODE_RET_WINTER_CAMP_COIN_A_NOT_ENOUGH = 10071;</code>
+     * <code>RET_ROGUELIKE_COIN_A_EXCEED_LIMIT = 10034;</code>
      */
-    public static final int RETCODE_RET_WINTER_CAMP_COIN_A_NOT_ENOUGH_VALUE = 10071;
+    public static final int RET_ROGUELIKE_COIN_A_EXCEED_LIMIT_VALUE = 10034;
     /**
-     * <code>RETCODE_RET_WINTER_CAMP_COIN_B_NOT_ENOUGH = 10072;</code>
+     * <code>RET_ROGUELIKE_COIN_B_EXCEED_LIMIT = 10035;</code>
      */
-    public static final int RETCODE_RET_WINTER_CAMP_COIN_B_NOT_ENOUGH_VALUE = 10072;
+    public static final int RET_ROGUELIKE_COIN_B_EXCEED_LIMIT_VALUE = 10035;
     /**
-     * <code>RETCODE_RET_WINTER_CAMP_COIN_A_EXCEED_LIMIT = 10073;</code>
+     * <code>RET_ROGUELIKE_COIN_C_EXCEED_LIMIT = 10036;</code>
      */
-    public static final int RETCODE_RET_WINTER_CAMP_COIN_A_EXCEED_LIMIT_VALUE = 10073;
+    public static final int RET_ROGUELIKE_COIN_C_EXCEED_LIMIT_VALUE = 10036;
     /**
-     * <code>RETCODE_RET_WINTER_CAMP_COIN_B_EXCEED_LIMIT = 10074;</code>
+     * <code>RET_ROGUELIKE_RUNE_COUNT_NOT_ENOUGH = 10037;</code>
      */
-    public static final int RETCODE_RET_WINTER_CAMP_COIN_B_EXCEED_LIMIT_VALUE = 10074;
+    public static final int RET_ROGUELIKE_RUNE_COUNT_NOT_ENOUGH_VALUE = 10037;
     /**
-     * <code>RETCODE_RET_WINTER_CAMP_WISH_ID_INVALID = 10075;</code>
+     * <code>RET_ROGUELIKE_NOT_IN_ROGUE_DUNGEON = 10038;</code>
      */
-    public static final int RETCODE_RET_WINTER_CAMP_WISH_ID_INVALID_VALUE = 10075;
+    public static final int RET_ROGUELIKE_NOT_IN_ROGUE_DUNGEON_VALUE = 10038;
     /**
-     * <code>RETCODE_RET_WINTER_CAMP_NOT_FOUND_RECV_ITEM_DATA = 10076;</code>
+     * <code>RET_ROGUELIKE_CELL_NOT_FOUND = 10039;</code>
      */
-    public static final int RETCODE_RET_WINTER_CAMP_NOT_FOUND_RECV_ITEM_DATA_VALUE = 10076;
+    public static final int RET_ROGUELIKE_CELL_NOT_FOUND_VALUE = 10039;
     /**
-     * <code>RETCODE_RET_WINTER_CAMP_FRIEND_ITEM_COUNT_OVERFLOW = 10077;</code>
+     * <code>RET_ROGUELIKE_CELL_TYPE_INCORRECT = 10040;</code>
      */
-    public static final int RETCODE_RET_WINTER_CAMP_FRIEND_ITEM_COUNT_OVERFLOW_VALUE = 10077;
+    public static final int RET_ROGUELIKE_CELL_TYPE_INCORRECT_VALUE = 10040;
     /**
-     * <code>RETCODE_RET_WINTER_CAMP_SELECT_ITEM_DATA_INVALID = 10078;</code>
+     * <code>RET_ROGUELIKE_CELL_ALREADY_FINISHED = 10041;</code>
      */
-    public static final int RETCODE_RET_WINTER_CAMP_SELECT_ITEM_DATA_INVALID_VALUE = 10078;
+    public static final int RET_ROGUELIKE_CELL_ALREADY_FINISHED_VALUE = 10041;
     /**
-     * <code>RETCODE_RET_WINTER_CAMP_ITEM_LIST_EMPTY = 10079;</code>
+     * <code>RET_ROGUELIKE_DUNGEON_HAVE_UNFINISHED_PROGRESS = 10042;</code>
      */
-    public static final int RETCODE_RET_WINTER_CAMP_ITEM_LIST_EMPTY_VALUE = 10079;
+    public static final int RET_ROGUELIKE_DUNGEON_HAVE_UNFINISHED_PROGRESS_VALUE = 10042;
     /**
-     * <code>RETCODE_RET_WINTER_CAMP_REWARD_ALREADY_TAKEN = 10080;</code>
+     * <code>RET_ROGUELIKE_STAGE_NOT_FINISHED = 10043;</code>
      */
-    public static final int RETCODE_RET_WINTER_CAMP_REWARD_ALREADY_TAKEN_VALUE = 10080;
+    public static final int RET_ROGUELIKE_STAGE_NOT_FINISHED_VALUE = 10043;
     /**
-     * <code>RETCODE_RET_WINTER_CAMP_STAGE_NOT_FINISH = 10081;</code>
+     * <code>RET_ROGUELIKE_STAGE_FIRST_PASS_REWARD_HAS_TAKEN = 10045;</code>
      */
-    public static final int RETCODE_RET_WINTER_CAMP_STAGE_NOT_FINISH_VALUE = 10081;
+    public static final int RET_ROGUELIKE_STAGE_FIRST_PASS_REWARD_HAS_TAKEN_VALUE = 10045;
     /**
-     * <code>RETCODE_RET_WINTER_CAMP_GADGET_INVALID = 10082;</code>
+     * <code>RET_ROGUELIKE_ACTIVITY_CONTENT_CLOSED = 10046;</code>
      */
-    public static final int RETCODE_RET_WINTER_CAMP_GADGET_INVALID_VALUE = 10082;
+    public static final int RET_ROGUELIKE_ACTIVITY_CONTENT_CLOSED_VALUE = 10046;
     /**
-     * <code>RETCODE_RET_LANTERN_RITE_COIN_A_NOT_ENOUGH = 10090;</code>
+     * <code>RET_ROGUELIKE_DUNGEON_PRE_QUEST_NOT_FINISHED = 10047;</code>
      */
-    public static final int RETCODE_RET_LANTERN_RITE_COIN_A_NOT_ENOUGH_VALUE = 10090;
+    public static final int RET_ROGUELIKE_DUNGEON_PRE_QUEST_NOT_FINISHED_VALUE = 10047;
     /**
-     * <code>RETCODE_RET_LANTERN_RITE_COIN_B_NOT_ENOUGH = 10091;</code>
+     * <code>RET_ROGUELIKE_DUNGEON_NOT_OPEN = 10048;</code>
      */
-    public static final int RETCODE_RET_LANTERN_RITE_COIN_B_NOT_ENOUGH_VALUE = 10091;
+    public static final int RET_ROGUELIKE_DUNGEON_NOT_OPEN_VALUE = 10048;
     /**
-     * <code>RETCODE_RET_LANTERN_RITE_COIN_C_NOT_ENOUGH = 10092;</code>
+     * <code>RET_ROGUELIKE_SPRINT_IS_BANNED = 10049;</code>
      */
-    public static final int RETCODE_RET_LANTERN_RITE_COIN_C_NOT_ENOUGH_VALUE = 10092;
+    public static final int RET_ROGUELIKE_SPRINT_IS_BANNED_VALUE = 10049;
     /**
-     * <code>RETCODE_RET_LANTERN_RITE_COIN_A_EXCEED_LIMIT = 10093;</code>
+     * <code>RET_ROGUELIKE_DUNGEON_PRE_STAGE_NOT_FINISHED = 10050;</code>
      */
-    public static final int RETCODE_RET_LANTERN_RITE_COIN_A_EXCEED_LIMIT_VALUE = 10093;
+    public static final int RET_ROGUELIKE_DUNGEON_PRE_STAGE_NOT_FINISHED_VALUE = 10050;
     /**
-     * <code>RETCODE_RET_LANTERN_RITE_COIN_B_EXCEED_LIMIT = 10094;</code>
+     * <code>RET_ROGUELIKE_ALL_AVATAR_DIE_CANNOT_RESUME = 10051;</code>
      */
-    public static final int RETCODE_RET_LANTERN_RITE_COIN_B_EXCEED_LIMIT_VALUE = 10094;
+    public static final int RET_ROGUELIKE_ALL_AVATAR_DIE_CANNOT_RESUME_VALUE = 10051;
     /**
-     * <code>RETCODE_RET_LANTERN_RITE_COIN_C_EXCEED_LIMIT = 10095;</code>
+     * <code>RET_PLANT_FLOWER_ALREADY_TAKE_SEED = 10056;</code>
      */
-    public static final int RETCODE_RET_LANTERN_RITE_COIN_C_EXCEED_LIMIT_VALUE = 10095;
+    public static final int RET_PLANT_FLOWER_ALREADY_TAKE_SEED_VALUE = 10056;
     /**
-     * <code>RETCODE_RET_LANTERN_RITE_PROJECTION_CONTENT_CLOSED = 10096;</code>
+     * <code>RET_PLANT_FLOWER_FRIEND_HAVE_FLOWER_LIMIT = 10057;</code>
      */
-    public static final int RETCODE_RET_LANTERN_RITE_PROJECTION_CONTENT_CLOSED_VALUE = 10096;
+    public static final int RET_PLANT_FLOWER_FRIEND_HAVE_FLOWER_LIMIT_VALUE = 10057;
     /**
-     * <code>RETCODE_RET_LANTERN_RITE_PROJECTION_CAN_NOT_START = 10097;</code>
+     * <code>RET_PLANT_FLOWER_CAN_GIVE_FLOWER_NOT_ENOUGH = 10058;</code>
      */
-    public static final int RETCODE_RET_LANTERN_RITE_PROJECTION_CAN_NOT_START_VALUE = 10097;
+    public static final int RET_PLANT_FLOWER_CAN_GIVE_FLOWER_NOT_ENOUGH_VALUE = 10058;
     /**
-     * <code>RETCODE_RET_LANTERN_RITE_DUNGEON_NOT_OPEN = 10098;</code>
+     * <code>RET_PLANT_FLOWER_WISH_FLOWER_KINDS_LIMIT = 10059;</code>
      */
-    public static final int RETCODE_RET_LANTERN_RITE_DUNGEON_NOT_OPEN_VALUE = 10098;
+    public static final int RET_PLANT_FLOWER_WISH_FLOWER_KINDS_LIMIT_VALUE = 10059;
     /**
-     * <code>RETCODE_RET_LANTERN_RITE_HAS_TAKEN_SKIN_REWARD = 10099;</code>
+     * <code>RET_PLANT_FLOWER_HAVE_FLOWER_NOT_ENOUGH = 10060;</code>
      */
-    public static final int RETCODE_RET_LANTERN_RITE_HAS_TAKEN_SKIN_REWARD_VALUE = 10099;
+    public static final int RET_PLANT_FLOWER_HAVE_FLOWER_NOT_ENOUGH_VALUE = 10060;
     /**
-     * <code>RETCODE_RET_LANTERN_RITE_NOT_FINISHED_SKIN_WATCHERS = 10100;</code>
+     * <code>RET_PLANT_FLOWER_FLOWER_COMBINATION_INVALID = 10061;</code>
      */
-    public static final int RETCODE_RET_LANTERN_RITE_NOT_FINISHED_SKIN_WATCHERS_VALUE = 10100;
+    public static final int RET_PLANT_FLOWER_FLOWER_COMBINATION_INVALID_VALUE = 10061;
     /**
-     * <code>RETCODE_RET_LANTERN_RITE_FIREWORKS_CONTENT_CLOSED = 10101;</code>
+     * <code>RET_HACHI_DUNGEON_NOT_VALID = 10052;</code>
      */
-    public static final int RETCODE_RET_LANTERN_RITE_FIREWORKS_CONTENT_CLOSED_VALUE = 10101;
+    public static final int RET_HACHI_DUNGEON_NOT_VALID_VALUE = 10052;
     /**
-     * <code>RETCODE_RET_LANTERN_RITE_FIREWORKS_CHALLENGE_NOT_START = 10102;</code>
+     * <code>RET_HACHI_DUNGEON_STAGE_NOT_OPEN = 10053;</code>
      */
-    public static final int RETCODE_RET_LANTERN_RITE_FIREWORKS_CHALLENGE_NOT_START_VALUE = 10102;
+    public static final int RET_HACHI_DUNGEON_STAGE_NOT_OPEN_VALUE = 10053;
     /**
-     * <code>RETCODE_RET_LANTERN_RITE_FIREWORKS_REFORM_PARAM_ERROR = 10103;</code>
+     * <code>RET_HACHI_DUNGEON_TEAMMATE_NOT_PASS = 10054;</code>
      */
-    public static final int RETCODE_RET_LANTERN_RITE_FIREWORKS_REFORM_PARAM_ERROR_VALUE = 10103;
+    public static final int RET_HACHI_DUNGEON_TEAMMATE_NOT_PASS_VALUE = 10054;
     /**
-     * <code>RETCODE_RET_LANTERN_RITE_FIREWORKS_REFORM_SKILL_LOCK = 10104;</code>
+     * <code>RET_WINTER_CAMP_COIN_A_NOT_ENOUGH = 10071;</code>
      */
-    public static final int RETCODE_RET_LANTERN_RITE_FIREWORKS_REFORM_SKILL_LOCK_VALUE = 10104;
+    public static final int RET_WINTER_CAMP_COIN_A_NOT_ENOUGH_VALUE = 10071;
     /**
-     * <code>RETCODE_RET_LANTERN_RITE_FIREWORKS_REFORM_STAMINA_NOT_ENOUGH = 10105;</code>
+     * <code>RET_WINTER_CAMP_COIN_B_NOT_ENOUGH = 10072;</code>
      */
-    public static final int RETCODE_RET_LANTERN_RITE_FIREWORKS_REFORM_STAMINA_NOT_ENOUGH_VALUE = 10105;
+    public static final int RET_WINTER_CAMP_COIN_B_NOT_ENOUGH_VALUE = 10072;
     /**
-     * <code>RETCODE_RET_POTION_ACTIVITY_STAGE_NOT_OPEN = 10110;</code>
+     * <code>RET_WINTER_CAMP_COIN_A_EXCEED_LIMIT = 10073;</code>
      */
-    public static final int RETCODE_RET_POTION_ACTIVITY_STAGE_NOT_OPEN_VALUE = 10110;
+    public static final int RET_WINTER_CAMP_COIN_A_EXCEED_LIMIT_VALUE = 10073;
     /**
-     * <code>RETCODE_RET_POTION_ACTIVITY_LEVEL_HAVE_PASS = 10111;</code>
+     * <code>RET_WINTER_CAMP_COIN_B_EXCEED_LIMIT = 10074;</code>
      */
-    public static final int RETCODE_RET_POTION_ACTIVITY_LEVEL_HAVE_PASS_VALUE = 10111;
+    public static final int RET_WINTER_CAMP_COIN_B_EXCEED_LIMIT_VALUE = 10074;
     /**
-     * <code>RETCODE_RET_POTION_ACTIVITY_TEAM_NUM_INCORRECT = 10112;</code>
+     * <code>RET_WINTER_CAMP_WISH_ID_INVALID = 10075;</code>
      */
-    public static final int RETCODE_RET_POTION_ACTIVITY_TEAM_NUM_INCORRECT_VALUE = 10112;
+    public static final int RET_WINTER_CAMP_WISH_ID_INVALID_VALUE = 10075;
     /**
-     * <code>RETCODE_RET_POTION_ACTIVITY_AVATAR_IN_CD = 10113;</code>
+     * <code>RET_WINTER_CAMP_NOT_FOUND_RECV_ITEM_DATA = 10076;</code>
      */
-    public static final int RETCODE_RET_POTION_ACTIVITY_AVATAR_IN_CD_VALUE = 10113;
+    public static final int RET_WINTER_CAMP_NOT_FOUND_RECV_ITEM_DATA_VALUE = 10076;
     /**
-     * <code>RETCODE_RET_POTION_ACTIVITY_BUFF_IN_CD = 10114;</code>
+     * <code>RET_WINTER_CAMP_FRIEND_ITEM_COUNT_OVERFLOW = 10077;</code>
      */
-    public static final int RETCODE_RET_POTION_ACTIVITY_BUFF_IN_CD_VALUE = 10114;
+    public static final int RET_WINTER_CAMP_FRIEND_ITEM_COUNT_OVERFLOW_VALUE = 10077;
     /**
-     * <code>RETCODE_RET_IRODORI_POETRY_INVALID_LINE_ID = 10120;</code>
+     * <code>RET_WINTER_CAMP_SELECT_ITEM_DATA_INVALID = 10078;</code>
      */
-    public static final int RETCODE_RET_IRODORI_POETRY_INVALID_LINE_ID_VALUE = 10120;
+    public static final int RET_WINTER_CAMP_SELECT_ITEM_DATA_INVALID_VALUE = 10078;
     /**
-     * <code>RETCODE_RET_IRODORI_POETRY_INVALID_THEME_ID = 10121;</code>
+     * <code>RET_WINTER_CAMP_ITEM_LIST_EMPTY = 10079;</code>
      */
-    public static final int RETCODE_RET_IRODORI_POETRY_INVALID_THEME_ID_VALUE = 10121;
+    public static final int RET_WINTER_CAMP_ITEM_LIST_EMPTY_VALUE = 10079;
     /**
-     * <code>RETCODE_RET_IRODORI_POETRY_NOT_GET_ALL_INSPIRATION = 10122;</code>
+     * <code>RET_WINTER_CAMP_REWARD_ALREADY_TAKEN = 10080;</code>
      */
-    public static final int RETCODE_RET_IRODORI_POETRY_NOT_GET_ALL_INSPIRATION_VALUE = 10122;
+    public static final int RET_WINTER_CAMP_REWARD_ALREADY_TAKEN_VALUE = 10080;
     /**
-     * <code>RETCODE_RET_IRODORI_POETRY_INSPIRATION_REACH_LIMIE = 10123;</code>
+     * <code>RET_WINTER_CAMP_STAGE_NOT_FINISH = 10081;</code>
      */
-    public static final int RETCODE_RET_IRODORI_POETRY_INSPIRATION_REACH_LIMIE_VALUE = 10123;
+    public static final int RET_WINTER_CAMP_STAGE_NOT_FINISH_VALUE = 10081;
     /**
-     * <code>RETCODE_RET_IRODORI_POETRY_ENTITY_ALREADY_SCANNED = 10124;</code>
+     * <code>RET_WINTER_CAMP_GADGET_INVALID = 10082;</code>
      */
-    public static final int RETCODE_RET_IRODORI_POETRY_ENTITY_ALREADY_SCANNED_VALUE = 10124;
+    public static final int RET_WINTER_CAMP_GADGET_INVALID_VALUE = 10082;
     /**
-     * <code>RETCODE_RET_ACTIVITY_BANNER_ALREADY_CLEARED = 10300;</code>
+     * <code>RET_LANTERN_RITE_COIN_A_NOT_ENOUGH = 10090;</code>
      */
-    public static final int RETCODE_RET_ACTIVITY_BANNER_ALREADY_CLEARED_VALUE = 10300;
+    public static final int RET_LANTERN_RITE_COIN_A_NOT_ENOUGH_VALUE = 10090;
     /**
-     * <code>RETCODE_RET_IRODORI_CHESS_NOT_OPEN = 10301;</code>
+     * <code>RET_LANTERN_RITE_COIN_B_NOT_ENOUGH = 10091;</code>
      */
-    public static final int RETCODE_RET_IRODORI_CHESS_NOT_OPEN_VALUE = 10301;
+    public static final int RET_LANTERN_RITE_COIN_B_NOT_ENOUGH_VALUE = 10091;
     /**
-     * <code>RETCODE_RET_IRODORI_CHESS_LEVEL_NOT_OPEN = 10302;</code>
+     * <code>RET_LANTERN_RITE_COIN_C_NOT_ENOUGH = 10092;</code>
      */
-    public static final int RETCODE_RET_IRODORI_CHESS_LEVEL_NOT_OPEN_VALUE = 10302;
+    public static final int RET_LANTERN_RITE_COIN_C_NOT_ENOUGH_VALUE = 10092;
     /**
-     * <code>RETCODE_RET_IRODORI_CHESS_MAP_NOT_OPEN = 10303;</code>
+     * <code>RET_LANTERN_RITE_COIN_A_EXCEED_LIMIT = 10093;</code>
      */
-    public static final int RETCODE_RET_IRODORI_CHESS_MAP_NOT_OPEN_VALUE = 10303;
+    public static final int RET_LANTERN_RITE_COIN_A_EXCEED_LIMIT_VALUE = 10093;
     /**
-     * <code>RETCODE_RET_IRODORI_CHESS_MAP_CARD_ALREADY_EQUIPED = 10304;</code>
+     * <code>RET_LANTERN_RITE_COIN_B_EXCEED_LIMIT = 10094;</code>
      */
-    public static final int RETCODE_RET_IRODORI_CHESS_MAP_CARD_ALREADY_EQUIPED_VALUE = 10304;
+    public static final int RET_LANTERN_RITE_COIN_B_EXCEED_LIMIT_VALUE = 10094;
     /**
-     * <code>RETCODE_RET_IRODORI_CHESS_EQUIP_CARD_EXCEED_LIMIT = 10305;</code>
+     * <code>RET_LANTERN_RITE_COIN_C_EXCEED_LIMIT = 10095;</code>
      */
-    public static final int RETCODE_RET_IRODORI_CHESS_EQUIP_CARD_EXCEED_LIMIT_VALUE = 10305;
+    public static final int RET_LANTERN_RITE_COIN_C_EXCEED_LIMIT_VALUE = 10095;
     /**
-     * <code>RETCODE_RET_IRODORI_CHESS_MAP_CARD_NOT_EQUIPED = 10306;</code>
+     * <code>RET_LANTERN_RITE_PROJECTION_CONTENT_CLOSED = 10096;</code>
      */
-    public static final int RETCODE_RET_IRODORI_CHESS_MAP_CARD_NOT_EQUIPED_VALUE = 10306;
+    public static final int RET_LANTERN_RITE_PROJECTION_CONTENT_CLOSED_VALUE = 10096;
     /**
-     * <code>RETCODE_RET_IRODORI_CHESS_ENTER_FAIL_CARD_EXCEED_LIMIT = 10307;</code>
+     * <code>RET_LANTERN_RITE_PROJECTION_CAN_NOT_START = 10097;</code>
      */
-    public static final int RETCODE_RET_IRODORI_CHESS_ENTER_FAIL_CARD_EXCEED_LIMIT_VALUE = 10307;
+    public static final int RET_LANTERN_RITE_PROJECTION_CAN_NOT_START_VALUE = 10097;
     /**
-     * <code>RETCODE_RET_ACTIVITY_FRIEND_HAVE_GIFT_LIMIT = 10310;</code>
+     * <code>RET_LANTERN_RITE_DUNGEON_NOT_OPEN = 10098;</code>
      */
-    public static final int RETCODE_RET_ACTIVITY_FRIEND_HAVE_GIFT_LIMIT_VALUE = 10310;
+    public static final int RET_LANTERN_RITE_DUNGEON_NOT_OPEN_VALUE = 10098;
     /**
-     * <code>RETCODE_RET_GACHA_ACTIVITY_HAVE_REWARD_LIMIT = 10315;</code>
+     * <code>RET_LANTERN_RITE_HAS_TAKEN_SKIN_REWARD = 10099;</code>
      */
-    public static final int RETCODE_RET_GACHA_ACTIVITY_HAVE_REWARD_LIMIT_VALUE = 10315;
+    public static final int RET_LANTERN_RITE_HAS_TAKEN_SKIN_REWARD_VALUE = 10099;
     /**
-     * <code>RETCODE_RET_GACHA_ACTIVITY_HAVE_ROBOT_LIMIT = 10316;</code>
+     * <code>RET_LANTERN_RITE_NOT_FINISHED_SKIN_WATCHERS = 10100;</code>
      */
-    public static final int RETCODE_RET_GACHA_ACTIVITY_HAVE_ROBOT_LIMIT_VALUE = 10316;
+    public static final int RET_LANTERN_RITE_NOT_FINISHED_SKIN_WATCHERS_VALUE = 10100;
     /**
-     * <code>RETCODE_RET_SUMMER_TIME_V2_COIN_EXCEED_LIMIT = 10317;</code>
+     * <code>RET_LANTERN_RITE_FIREWORKS_CONTENT_CLOSED = 10101;</code>
      */
-    public static final int RETCODE_RET_SUMMER_TIME_V2_COIN_EXCEED_LIMIT_VALUE = 10317;
+    public static final int RET_LANTERN_RITE_FIREWORKS_CONTENT_CLOSED_VALUE = 10101;
     /**
-     * <code>RETCODE_RET_SUMMER_TIME_V2_COIN_NOT_ENOUGH = 10318;</code>
+     * <code>RET_LANTERN_RITE_FIREWORKS_CHALLENGE_NOT_START = 10102;</code>
      */
-    public static final int RETCODE_RET_SUMMER_TIME_V2_COIN_NOT_ENOUGH_VALUE = 10318;
+    public static final int RET_LANTERN_RITE_FIREWORKS_CHALLENGE_NOT_START_VALUE = 10102;
     /**
-     * <code>RETCODE_RET_SUMMER_TIME_V2_DUNGEON_STAGE_NOT_OPEN = 10319;</code>
+     * <code>RET_LANTERN_RITE_FIREWORKS_REFORM_PARAM_ERROR = 10103;</code>
      */
-    public static final int RETCODE_RET_SUMMER_TIME_V2_DUNGEON_STAGE_NOT_OPEN_VALUE = 10319;
+    public static final int RET_LANTERN_RITE_FIREWORKS_REFORM_PARAM_ERROR_VALUE = 10103;
     /**
-     * <code>RETCODE_RET_SUMMER_TIME_V2_PREV_DUNGEON_NOT_COMPLETE = 10320;</code>
+     * <code>RET_LANTERN_RITE_FIREWORKS_REFORM_SKILL_LOCK = 10104;</code>
      */
-    public static final int RETCODE_RET_SUMMER_TIME_V2_PREV_DUNGEON_NOT_COMPLETE_VALUE = 10320;
+    public static final int RET_LANTERN_RITE_FIREWORKS_REFORM_SKILL_LOCK_VALUE = 10104;
     /**
-     * <code>RETCODE_RET_ROGUE_DIARY_AVATAR_DEATH = 10350;</code>
+     * <code>RET_LANTERN_RITE_FIREWORKS_REFORM_STAMINA_NOT_ENOUGH = 10105;</code>
      */
-    public static final int RETCODE_RET_ROGUE_DIARY_AVATAR_DEATH_VALUE = 10350;
+    public static final int RET_LANTERN_RITE_FIREWORKS_REFORM_STAMINA_NOT_ENOUGH_VALUE = 10105;
     /**
-     * <code>RETCODE_RET_ROGUE_DIARY_AVATAR_TIRED = 10351;</code>
+     * <code>RET_POTION_ACTIVITY_STAGE_NOT_OPEN = 10110;</code>
      */
-    public static final int RETCODE_RET_ROGUE_DIARY_AVATAR_TIRED_VALUE = 10351;
+    public static final int RET_POTION_ACTIVITY_STAGE_NOT_OPEN_VALUE = 10110;
     /**
-     * <code>RETCODE_RET_ROGUE_DIARY_AVATAR_DUPLICATED = 10352;</code>
+     * <code>RET_POTION_ACTIVITY_LEVEL_HAVE_PASS = 10111;</code>
      */
-    public static final int RETCODE_RET_ROGUE_DIARY_AVATAR_DUPLICATED_VALUE = 10352;
+    public static final int RET_POTION_ACTIVITY_LEVEL_HAVE_PASS_VALUE = 10111;
     /**
-     * <code>RETCODE_RET_ROGUE_DIARY_COIN_NOT_ENOUGH = 10353;</code>
+     * <code>RET_POTION_ACTIVITY_TEAM_NUM_INCORRECT = 10112;</code>
      */
-    public static final int RETCODE_RET_ROGUE_DIARY_COIN_NOT_ENOUGH_VALUE = 10353;
+    public static final int RET_POTION_ACTIVITY_TEAM_NUM_INCORRECT_VALUE = 10112;
     /**
-     * <code>RETCODE_RET_ROGUE_DIARY_VIRTUAL_COIN_EXCEED_LIMIT = 10354;</code>
+     * <code>RET_POTION_ACTIVITY_AVATAR_IN_CD = 10113;</code>
      */
-    public static final int RETCODE_RET_ROGUE_DIARY_VIRTUAL_COIN_EXCEED_LIMIT_VALUE = 10354;
+    public static final int RET_POTION_ACTIVITY_AVATAR_IN_CD_VALUE = 10113;
     /**
-     * <code>RETCODE_RET_ROGUE_DIARY_VIRTUAL_COIN_NOT_ENOUGH = 10355;</code>
+     * <code>RET_POTION_ACTIVITY_BUFF_IN_CD = 10114;</code>
      */
-    public static final int RETCODE_RET_ROGUE_DIARY_VIRTUAL_COIN_NOT_ENOUGH_VALUE = 10355;
+    public static final int RET_POTION_ACTIVITY_BUFF_IN_CD_VALUE = 10114;
     /**
-     * <code>RETCODE_RET_ROGUE_DIARY_CONTENT_CLOSED = 10366;</code>
+     * <code>RET_IRODORI_POETRY_INVALID_LINE_ID = 10120;</code>
      */
-    public static final int RETCODE_RET_ROGUE_DIARY_CONTENT_CLOSED_VALUE = 10366;
+    public static final int RET_IRODORI_POETRY_INVALID_LINE_ID_VALUE = 10120;
     /**
-     * <code>RETCODE_RET_GRAVEN_INNOCENCE_COIN_A_NOT_ENOUGH = 10380;</code>
+     * <code>RET_IRODORI_POETRY_INVALID_THEME_ID = 10121;</code>
      */
-    public static final int RETCODE_RET_GRAVEN_INNOCENCE_COIN_A_NOT_ENOUGH_VALUE = 10380;
+    public static final int RET_IRODORI_POETRY_INVALID_THEME_ID_VALUE = 10121;
     /**
-     * <code>RETCODE_RET_GRAVEN_INNOCENCE_COIN_B_NOT_ENOUGH = 10381;</code>
+     * <code>RET_IRODORI_POETRY_NOT_GET_ALL_INSPIRATION = 10122;</code>
      */
-    public static final int RETCODE_RET_GRAVEN_INNOCENCE_COIN_B_NOT_ENOUGH_VALUE = 10381;
+    public static final int RET_IRODORI_POETRY_NOT_GET_ALL_INSPIRATION_VALUE = 10122;
     /**
-     * <code>RETCODE_RET_GRAVEN_INNOCENCE_COIN_A_EXCEED_LIMIT = 10382;</code>
+     * <code>RET_IRODORI_POETRY_INSPIRATION_REACH_LIMIE = 10123;</code>
      */
-    public static final int RETCODE_RET_GRAVEN_INNOCENCE_COIN_A_EXCEED_LIMIT_VALUE = 10382;
+    public static final int RET_IRODORI_POETRY_INSPIRATION_REACH_LIMIE_VALUE = 10123;
     /**
-     * <code>RETCODE_RET_GRAVEN_INNOCENCE_COIN_B_EXCEED_LIMIT = 10383;</code>
+     * <code>RET_IRODORI_POETRY_ENTITY_ALREADY_SCANNED = 10124;</code>
      */
-    public static final int RETCODE_RET_GRAVEN_INNOCENCE_COIN_B_EXCEED_LIMIT_VALUE = 10383;
+    public static final int RET_IRODORI_POETRY_ENTITY_ALREADY_SCANNED_VALUE = 10124;
     /**
-     * <code>RETCODE_RET_ISLAND_PARTY_STAGE_NOT_OPEN = 10371;</code>
+     * <code>RET_ACTIVITY_BANNER_ALREADY_CLEARED = 10300;</code>
      */
-    public static final int RETCODE_RET_ISLAND_PARTY_STAGE_NOT_OPEN_VALUE = 10371;
+    public static final int RET_ACTIVITY_BANNER_ALREADY_CLEARED_VALUE = 10300;
     /**
-     * <code>RETCODE_RET_WIND_FIELD_STAGE_NOT_OPEN = 10390;</code>
+     * <code>RET_IRODORI_CHESS_NOT_OPEN = 10301;</code>
      */
-    public static final int RETCODE_RET_WIND_FIELD_STAGE_NOT_OPEN_VALUE = 10390;
+    public static final int RET_IRODORI_CHESS_NOT_OPEN_VALUE = 10301;
     /**
-     * <code>RETCODE_RET_VINTAGE_CONTENT_CLOSED = 10396;</code>
+     * <code>RET_IRODORI_CHESS_LEVEL_NOT_OPEN = 10302;</code>
      */
-    public static final int RETCODE_RET_VINTAGE_CONTENT_CLOSED_VALUE = 10396;
+    public static final int RET_IRODORI_CHESS_LEVEL_NOT_OPEN_VALUE = 10302;
     /**
-     * <code>RETCODE_RET_VINTAGE_STORE_CONTENT_FINISHED = 10397;</code>
+     * <code>RET_IRODORI_CHESS_MAP_NOT_OPEN = 10303;</code>
      */
-    public static final int RETCODE_RET_VINTAGE_STORE_CONTENT_FINISHED_VALUE = 10397;
+    public static final int RET_IRODORI_CHESS_MAP_NOT_OPEN_VALUE = 10303;
     /**
-     * <code>RETCODE_RET_VINTAGE_STORE_ATTR_TOO_SMALL = 10398;</code>
+     * <code>RET_IRODORI_CHESS_MAP_CARD_ALREADY_EQUIPED = 10304;</code>
      */
-    public static final int RETCODE_RET_VINTAGE_STORE_ATTR_TOO_SMALL_VALUE = 10398;
+    public static final int RET_IRODORI_CHESS_MAP_CARD_ALREADY_EQUIPED_VALUE = 10304;
     /**
-     * <code>RETCODE_RET_VINTAGE_STORE_ATTR_TOO_LARGE = 10399;</code>
+     * <code>RET_IRODORI_CHESS_EQUIP_CARD_EXCEED_LIMIT = 10305;</code>
      */
-    public static final int RETCODE_RET_VINTAGE_STORE_ATTR_TOO_LARGE_VALUE = 10399;
+    public static final int RET_IRODORI_CHESS_EQUIP_CARD_EXCEED_LIMIT_VALUE = 10305;
     /**
-     * <code>RETCODE_RET_VINTAGE_STORE_CONTENT_INTERRUPT = 10400;</code>
+     * <code>RET_IRODORI_CHESS_MAP_CARD_NOT_EQUIPED = 10306;</code>
      */
-    public static final int RETCODE_RET_VINTAGE_STORE_CONTENT_INTERRUPT_VALUE = 10400;
+    public static final int RET_IRODORI_CHESS_MAP_CARD_NOT_EQUIPED_VALUE = 10306;
     /**
-     * <code>RETCODE_RET_VINTAGE_VIRTUAL_COIN_NOT_ENOUGH = 10401;</code>
+     * <code>RET_IRODORI_CHESS_ENTER_FAIL_CARD_EXCEED_LIMIT = 10307;</code>
      */
-    public static final int RETCODE_RET_VINTAGE_VIRTUAL_COIN_NOT_ENOUGH_VALUE = 10401;
+    public static final int RET_IRODORI_CHESS_ENTER_FAIL_CARD_EXCEED_LIMIT_VALUE = 10307;
     /**
-     * <code>RETCODE_RET_VINTAGE_STORE_ATTR_LESS_THAN_ZERO = 10402;</code>
+     * <code>RET_ACTIVITY_FRIEND_HAVE_GIFT_LIMIT = 10310;</code>
      */
-    public static final int RETCODE_RET_VINTAGE_STORE_ATTR_LESS_THAN_ZERO_VALUE = 10402;
+    public static final int RET_ACTIVITY_FRIEND_HAVE_GIFT_LIMIT_VALUE = 10310;
     /**
-     * <code>RETCODE_RET_NOT_IN_FISHING = 11001;</code>
+     * <code>RET_GACHA_ACTIVITY_HAVE_REWARD_LIMIT = 10315;</code>
      */
-    public static final int RETCODE_RET_NOT_IN_FISHING_VALUE = 11001;
+    public static final int RET_GACHA_ACTIVITY_HAVE_REWARD_LIMIT_VALUE = 10315;
     /**
-     * <code>RETCODE_RET_FISH_STATE_ERROR = 11002;</code>
+     * <code>RET_GACHA_ACTIVITY_HAVE_ROBOT_LIMIT = 10316;</code>
      */
-    public static final int RETCODE_RET_FISH_STATE_ERROR_VALUE = 11002;
+    public static final int RET_GACHA_ACTIVITY_HAVE_ROBOT_LIMIT_VALUE = 10316;
     /**
-     * <code>RETCODE_RET_FISH_BAIT_LIMIT = 11003;</code>
+     * <code>RET_SUMMER_TIME_V2_COIN_EXCEED_LIMIT = 10317;</code>
      */
-    public static final int RETCODE_RET_FISH_BAIT_LIMIT_VALUE = 11003;
+    public static final int RET_SUMMER_TIME_V2_COIN_EXCEED_LIMIT_VALUE = 10317;
     /**
-     * <code>RETCODE_RET_FISHING_MAX_DISTANCE = 11004;</code>
+     * <code>RET_SUMMER_TIME_V2_COIN_NOT_ENOUGH = 10318;</code>
      */
-    public static final int RETCODE_RET_FISHING_MAX_DISTANCE_VALUE = 11004;
+    public static final int RET_SUMMER_TIME_V2_COIN_NOT_ENOUGH_VALUE = 10318;
     /**
-     * <code>RETCODE_RET_FISHING_IN_COMBAT = 11005;</code>
+     * <code>RET_SUMMER_TIME_V2_DUNGEON_STAGE_NOT_OPEN = 10319;</code>
      */
-    public static final int RETCODE_RET_FISHING_IN_COMBAT_VALUE = 11005;
+    public static final int RET_SUMMER_TIME_V2_DUNGEON_STAGE_NOT_OPEN_VALUE = 10319;
     /**
-     * <code>RETCODE_RET_FISHING_BATTLE_TOO_SHORT = 11006;</code>
+     * <code>RET_SUMMER_TIME_V2_PREV_DUNGEON_NOT_COMPLETE = 10320;</code>
      */
-    public static final int RETCODE_RET_FISHING_BATTLE_TOO_SHORT_VALUE = 11006;
+    public static final int RET_SUMMER_TIME_V2_PREV_DUNGEON_NOT_COMPLETE_VALUE = 10320;
     /**
-     * <code>RETCODE_RET_FISH_GONE_AWAY = 11007;</code>
+     * <code>RET_ROGUE_DIARY_AVATAR_DEATH = 10350;</code>
      */
-    public static final int RETCODE_RET_FISH_GONE_AWAY_VALUE = 11007;
+    public static final int RET_ROGUE_DIARY_AVATAR_DEATH_VALUE = 10350;
     /**
-     * <code>RETCODE_RET_CAN_NOT_EDIT_OTHER_DUNGEON = 11051;</code>
+     * <code>RET_ROGUE_DIARY_AVATAR_TIRED = 10351;</code>
      */
-    public static final int RETCODE_RET_CAN_NOT_EDIT_OTHER_DUNGEON_VALUE = 11051;
+    public static final int RET_ROGUE_DIARY_AVATAR_TIRED_VALUE = 10351;
     /**
-     * <code>RETCODE_RET_CUSTOM_DUNGEON_DISMATCH = 11052;</code>
+     * <code>RET_ROGUE_DIARY_AVATAR_DUPLICATED = 10352;</code>
      */
-    public static final int RETCODE_RET_CUSTOM_DUNGEON_DISMATCH_VALUE = 11052;
+    public static final int RET_ROGUE_DIARY_AVATAR_DUPLICATED_VALUE = 10352;
     /**
-     * <code>RETCODE_RET_NO_CUSTOM_DUNGEON_DATA = 11053;</code>
+     * <code>RET_ROGUE_DIARY_COIN_NOT_ENOUGH = 10353;</code>
      */
-    public static final int RETCODE_RET_NO_CUSTOM_DUNGEON_DATA_VALUE = 11053;
+    public static final int RET_ROGUE_DIARY_COIN_NOT_ENOUGH_VALUE = 10353;
     /**
-     * <code>RETCODE_RET_BUILD_CUSTOM_DUNGEON_FAIL = 11054;</code>
+     * <code>RET_ROGUE_DIARY_VIRTUAL_COIN_EXCEED_LIMIT = 10354;</code>
      */
-    public static final int RETCODE_RET_BUILD_CUSTOM_DUNGEON_FAIL_VALUE = 11054;
+    public static final int RET_ROGUE_DIARY_VIRTUAL_COIN_EXCEED_LIMIT_VALUE = 10354;
     /**
-     * <code>RETCODE_RET_CUSTOM_DUNGEON_ROOM_CHECK_FAIL = 11055;</code>
+     * <code>RET_ROGUE_DIARY_VIRTUAL_COIN_NOT_ENOUGH = 10355;</code>
      */
-    public static final int RETCODE_RET_CUSTOM_DUNGEON_ROOM_CHECK_FAIL_VALUE = 11055;
+    public static final int RET_ROGUE_DIARY_VIRTUAL_COIN_NOT_ENOUGH_VALUE = 10355;
     /**
-     * <code>RETCODE_RET_CUSTOM_DUNGEON_SAVE_MAY_FAIL = 11056;</code>
+     * <code>RET_ROGUE_DIARY_CONTENT_CLOSED = 10366;</code>
      */
-    public static final int RETCODE_RET_CUSTOM_DUNGEON_SAVE_MAY_FAIL_VALUE = 11056;
+    public static final int RET_ROGUE_DIARY_CONTENT_CLOSED_VALUE = 10366;
     /**
-     * <code>RETCODE_RET_NOT_IN_CUSTOM_DUNGEON = 11057;</code>
+     * <code>RET_GRAVEN_INNOCENCE_COIN_A_NOT_ENOUGH = 10380;</code>
      */
-    public static final int RETCODE_RET_NOT_IN_CUSTOM_DUNGEON_VALUE = 11057;
+    public static final int RET_GRAVEN_INNOCENCE_COIN_A_NOT_ENOUGH_VALUE = 10380;
     /**
-     * <code>RETCODE_RET_CUSTOM_DUNGEON_INTERNAL_FAIL = 11058;</code>
+     * <code>RET_GRAVEN_INNOCENCE_COIN_B_NOT_ENOUGH = 10381;</code>
      */
-    public static final int RETCODE_RET_CUSTOM_DUNGEON_INTERNAL_FAIL_VALUE = 11058;
+    public static final int RET_GRAVEN_INNOCENCE_COIN_B_NOT_ENOUGH_VALUE = 10381;
     /**
-     * <code>RETCODE_RET_CUSTOM_DUNGEON_CAN_NOT_TRY = 11059;</code>
+     * <code>RET_GRAVEN_INNOCENCE_COIN_A_EXCEED_LIMIT = 10382;</code>
      */
-    public static final int RETCODE_RET_CUSTOM_DUNGEON_CAN_NOT_TRY_VALUE = 11059;
+    public static final int RET_GRAVEN_INNOCENCE_COIN_A_EXCEED_LIMIT_VALUE = 10382;
     /**
-     * <code>RETCODE_RET_CUSTOM_DUNGEON_NO_START_ROOM = 11060;</code>
+     * <code>RET_GRAVEN_INNOCENCE_COIN_B_EXCEED_LIMIT = 10383;</code>
      */
-    public static final int RETCODE_RET_CUSTOM_DUNGEON_NO_START_ROOM_VALUE = 11060;
+    public static final int RET_GRAVEN_INNOCENCE_COIN_B_EXCEED_LIMIT_VALUE = 10383;
     /**
-     * <code>RETCODE_RET_CUSTOM_DUNGEON_NO_ROOM_DATA = 11061;</code>
+     * <code>RET_ISLAND_PARTY_STAGE_NOT_OPEN = 10371;</code>
      */
-    public static final int RETCODE_RET_CUSTOM_DUNGEON_NO_ROOM_DATA_VALUE = 11061;
+    public static final int RET_ISLAND_PARTY_STAGE_NOT_OPEN_VALUE = 10371;
     /**
-     * <code>RETCODE_RET_CUSTOM_DUNGEON_SAVE_TOO_FREQUENT = 11062;</code>
+     * <code>RET_WIND_FIELD_STAGE_NOT_OPEN = 10390;</code>
      */
-    public static final int RETCODE_RET_CUSTOM_DUNGEON_SAVE_TOO_FREQUENT_VALUE = 11062;
+    public static final int RET_WIND_FIELD_STAGE_NOT_OPEN_VALUE = 10390;
     /**
-     * <code>RETCODE_RET_CUSTOM_DUNGEON_NOT_SELF_PASS = 11063;</code>
+     * <code>RET_VINTAGE_CONTENT_CLOSED = 10396;</code>
      */
-    public static final int RETCODE_RET_CUSTOM_DUNGEON_NOT_SELF_PASS_VALUE = 11063;
+    public static final int RET_VINTAGE_CONTENT_CLOSED_VALUE = 10396;
     /**
-     * <code>RETCODE_RET_CUSTOM_DUNGEON_LACK_COIN = 11064;</code>
+     * <code>RET_VINTAGE_STORE_CONTENT_FINISHED = 10397;</code>
      */
-    public static final int RETCODE_RET_CUSTOM_DUNGEON_LACK_COIN_VALUE = 11064;
+    public static final int RET_VINTAGE_STORE_CONTENT_FINISHED_VALUE = 10397;
     /**
-     * <code>RETCODE_RET_CUSTOM_DUNGEON_NO_FINISH_BRICK = 11065;</code>
+     * <code>RET_VINTAGE_STORE_ATTR_TOO_SMALL = 10398;</code>
      */
-    public static final int RETCODE_RET_CUSTOM_DUNGEON_NO_FINISH_BRICK_VALUE = 11065;
+    public static final int RET_VINTAGE_STORE_ATTR_TOO_SMALL_VALUE = 10398;
     /**
-     * <code>RETCODE_RET_CUSTOM_DUNGEON_MULTI_FINISH = 11066;</code>
+     * <code>RET_VINTAGE_STORE_ATTR_TOO_LARGE = 10399;</code>
      */
-    public static final int RETCODE_RET_CUSTOM_DUNGEON_MULTI_FINISH_VALUE = 11066;
+    public static final int RET_VINTAGE_STORE_ATTR_TOO_LARGE_VALUE = 10399;
     /**
-     * <code>RETCODE_RET_CUSTOM_DUNGEON_NOT_PUBLISHED = 11067;</code>
+     * <code>RET_VINTAGE_STORE_CONTENT_INTERRUPT = 10400;</code>
      */
-    public static final int RETCODE_RET_CUSTOM_DUNGEON_NOT_PUBLISHED_VALUE = 11067;
+    public static final int RET_VINTAGE_STORE_CONTENT_INTERRUPT_VALUE = 10400;
     /**
-     * <code>RETCODE_RET_CUSTOM_DUNGEON_FULL_STORE = 11068;</code>
+     * <code>RET_VINTAGE_VIRTUAL_COIN_NOT_ENOUGH = 10401;</code>
      */
-    public static final int RETCODE_RET_CUSTOM_DUNGEON_FULL_STORE_VALUE = 11068;
+    public static final int RET_VINTAGE_VIRTUAL_COIN_NOT_ENOUGH_VALUE = 10401;
     /**
-     * <code>RETCODE_RET_CUSTOM_DUNGEON_STORE_REPEAT = 11069;</code>
+     * <code>RET_VINTAGE_STORE_ATTR_LESS_THAN_ZERO = 10402;</code>
      */
-    public static final int RETCODE_RET_CUSTOM_DUNGEON_STORE_REPEAT_VALUE = 11069;
+    public static final int RET_VINTAGE_STORE_ATTR_LESS_THAN_ZERO_VALUE = 10402;
     /**
-     * <code>RETCODE_RET_CUSTOM_DUNGEON_CAN_NOT_STORE_SELF = 11070;</code>
+     * <code>RET_FUNGUS_FIGHTER_CAPTURE_COIN_NOT_ENOUGH = 10406;</code>
      */
-    public static final int RETCODE_RET_CUSTOM_DUNGEON_CAN_NOT_STORE_SELF_VALUE = 11070;
+    public static final int RET_FUNGUS_FIGHTER_CAPTURE_COIN_NOT_ENOUGH_VALUE = 10406;
     /**
-     * <code>RETCODE_RET_CUSTOM_DUNGEON_NOT_SAVE_SUCC = 11071;</code>
+     * <code>RET_FUNGUS_FIGHTER_TRAINING_COIN_NOT_ENOUGH = 10407;</code>
      */
-    public static final int RETCODE_RET_CUSTOM_DUNGEON_NOT_SAVE_SUCC_VALUE = 11071;
+    public static final int RET_FUNGUS_FIGHTER_TRAINING_COIN_NOT_ENOUGH_VALUE = 10407;
     /**
-     * <code>RETCODE_RET_CUSTOM_DUNGEON_CAN_NOT_LIKE_SELF = 11072;</code>
+     * <code>RET_FUNGUS_FIGHTER_CAPTURE_COIN_EXCEED_LIMIT = 10408;</code>
      */
-    public static final int RETCODE_RET_CUSTOM_DUNGEON_CAN_NOT_LIKE_SELF_VALUE = 11072;
+    public static final int RET_FUNGUS_FIGHTER_CAPTURE_COIN_EXCEED_LIMIT_VALUE = 10408;
     /**
-     * <code>RETCODE_RET_CUSTOM_DUNGEON_NOT_FOUND = 11073;</code>
+     * <code>RET_FUNGUS_FIGHTER_TRAINING_COIN_EXCEED_LIMIT = 10409;</code>
      */
-    public static final int RETCODE_RET_CUSTOM_DUNGEON_NOT_FOUND_VALUE = 11073;
+    public static final int RET_FUNGUS_FIGHTER_TRAINING_COIN_EXCEED_LIMIT_VALUE = 10409;
     /**
-     * <code>RETCODE_RET_CUSTOM_DUNGEON_INVALID_SETTING = 11074;</code>
+     * <code>RET_FUNGUS_FIGHTER_CONTENT_CLOSED = 10410;</code>
      */
-    public static final int RETCODE_RET_CUSTOM_DUNGEON_INVALID_SETTING_VALUE = 11074;
+    public static final int RET_FUNGUS_FIGHTER_CONTENT_CLOSED_VALUE = 10410;
     /**
-     * <code>RETCODE_RET_CUSTOM_DUNGEON_NO_FINISH_SETTING = 11075;</code>
+     * <code>RET_FUNGUS_FIGHTER_PLOT_STAGE_NOT_OPEN = 10411;</code>
      */
-    public static final int RETCODE_RET_CUSTOM_DUNGEON_NO_FINISH_SETTING_VALUE = 11075;
+    public static final int RET_FUNGUS_FIGHTER_PLOT_STAGE_NOT_OPEN_VALUE = 10411;
     /**
-     * <code>RETCODE_RET_CUSTOM_DUNGEON_SAVE_NOTHING = 11076;</code>
+     * <code>RET_FUNGUS_FIGHTER_FUNGUS_ID_CONFIG_NOT_VALID = 10412;</code>
      */
-    public static final int RETCODE_RET_CUSTOM_DUNGEON_SAVE_NOTHING_VALUE = 11076;
+    public static final int RET_FUNGUS_FIGHTER_FUNGUS_ID_CONFIG_NOT_VALID_VALUE = 10412;
     /**
-     * <code>RETCODE_RET_CUSTOM_DUNGEON_NOT_IN_GROUP = 11077;</code>
+     * <code>RET_FUNGUS_FIGHTER_FUNGUS_NOT_CULTIVATED = 10413;</code>
      */
-    public static final int RETCODE_RET_CUSTOM_DUNGEON_NOT_IN_GROUP_VALUE = 11077;
+    public static final int RET_FUNGUS_FIGHTER_FUNGUS_NOT_CULTIVATED_VALUE = 10413;
     /**
-     * <code>RETCODE_RET_CUSTOM_DUNGEON_NOT_OFFICIAL = 11078;</code>
+     * <code>RET_FUNGUS_FIGHTER_TRAINING_DUNGEON_NOT_OPEN = 10414;</code>
      */
-    public static final int RETCODE_RET_CUSTOM_DUNGEON_NOT_OFFICIAL_VALUE = 11078;
+    public static final int RET_FUNGUS_FIGHTER_TRAINING_DUNGEON_NOT_OPEN_VALUE = 10414;
     /**
-     * <code>RETCODE_RET_CUSTOM_DUNGEON_LIFE_NUM_ERROR = 11079;</code>
+     * <code>RET_EFFIGY_CHALLENGE_V2_COIN_NOT_ENOUGH = 10427;</code>
      */
-    public static final int RETCODE_RET_CUSTOM_DUNGEON_LIFE_NUM_ERROR_VALUE = 11079;
+    public static final int RET_EFFIGY_CHALLENGE_V2_COIN_NOT_ENOUGH_VALUE = 10427;
     /**
-     * <code>RETCODE_RET_CUSTOM_DUNGEON_NO_OPEN_ROOM = 11080;</code>
+     * <code>RET_EFFIGY_CHALLENGE_V2_COIN_EXCEED_LIMIT = 10428;</code>
      */
-    public static final int RETCODE_RET_CUSTOM_DUNGEON_NO_OPEN_ROOM_VALUE = 11080;
+    public static final int RET_EFFIGY_CHALLENGE_V2_COIN_EXCEED_LIMIT_VALUE = 10428;
     /**
-     * <code>RETCODE_RET_CUSTOM_DUNGEON_BRICK_EXCEED_LIMIT = 11081;</code>
+     * <code>RET_CHAR_AMUSEMENT_STAGE_NOT_OPEN = 10436;</code>
      */
-    public static final int RETCODE_RET_CUSTOM_DUNGEON_BRICK_EXCEED_LIMIT_VALUE = 11081;
+    public static final int RET_CHAR_AMUSEMENT_STAGE_NOT_OPEN_VALUE = 10436;
     /**
-     * <code>RETCODE_RET_CUSTOM_DUNGEON_OFFICIAL_NOT_UNLOCK = 11082;</code>
+     * <code>RET_COIN_COLLECT_LEVEL_NOT_OPEN = 10446;</code>
      */
-    public static final int RETCODE_RET_CUSTOM_DUNGEON_OFFICIAL_NOT_UNLOCK_VALUE = 11082;
+    public static final int RET_COIN_COLLECT_LEVEL_NOT_OPEN_VALUE = 10446;
     /**
-     * <code>RETCODE_RET_CAN_NOT_EDIT_OFFICIAL_SETTING = 11083;</code>
+     * <code>RET_COIN_COLLECT_NOT_EQUIP_WIDGET = 10447;</code>
      */
-    public static final int RETCODE_RET_CAN_NOT_EDIT_OFFICIAL_SETTING_VALUE = 11083;
+    public static final int RET_COIN_COLLECT_NOT_EQUIP_WIDGET_VALUE = 10447;
     /**
-     * <code>RETCODE_RET_CUSTOM_DUNGEON_BAN_PUBLISH = 11084;</code>
+     * <code>RET_COIN_COLLECT_SCENE_NOT_MATCH = 10448;</code>
      */
-    public static final int RETCODE_RET_CUSTOM_DUNGEON_BAN_PUBLISH_VALUE = 11084;
+    public static final int RET_COIN_COLLECT_SCENE_NOT_MATCH_VALUE = 10448;
     /**
-     * <code>RETCODE_RET_CUSTOM_DUNGEON_CAN_NOT_REPLAY = 11085;</code>
+     * <code>RET_COIN_COLLECT_CANT_ENTER_MP_MODE = 10449;</code>
      */
-    public static final int RETCODE_RET_CUSTOM_DUNGEON_CAN_NOT_REPLAY_VALUE = 11085;
+    public static final int RET_COIN_COLLECT_CANT_ENTER_MP_MODE_VALUE = 10449;
     /**
-     * <code>RETCODE_RET_CUSTOM_DUNGEON_NOT_OPEN_GROUP = 11086;</code>
+     * <code>RET_COIN_COLLECT_PLAYER_NUM_FAIL = 10450;</code>
      */
-    public static final int RETCODE_RET_CUSTOM_DUNGEON_NOT_OPEN_GROUP_VALUE = 11086;
+    public static final int RET_COIN_COLLECT_PLAYER_NUM_FAIL_VALUE = 10450;
     /**
-     * <code>RETCODE_RET_CUSTOM_DUNGEON_MAX_EDIT_NUM = 11087;</code>
+     * <code>RET_BRICK_BREAKER_PLAYER_NUM_FAIL = 10456;</code>
      */
-    public static final int RETCODE_RET_CUSTOM_DUNGEON_MAX_EDIT_NUM_VALUE = 11087;
+    public static final int RET_BRICK_BREAKER_PLAYER_NUM_FAIL_VALUE = 10456;
     /**
-     * <code>RETCODE_RET_CUSTOM_DUNGEON_CAN_NOT_OUT_STUCK = 11088;</code>
+     * <code>RET_BRICK_BREAKER_STAGE_NOT_UNLOCK = 10457;</code>
      */
-    public static final int RETCODE_RET_CUSTOM_DUNGEON_CAN_NOT_OUT_STUCK_VALUE = 11088;
+    public static final int RET_BRICK_BREAKER_STAGE_NOT_UNLOCK_VALUE = 10457;
     /**
-     * <code>RETCODE_RET_CUSTOM_DUNGEON_MAX_TAG = 11089;</code>
+     * <code>RET_BRICK_BREAKER_NORMAL_LEVEL_NOT_FINISH = 10458;</code>
      */
-    public static final int RETCODE_RET_CUSTOM_DUNGEON_MAX_TAG_VALUE = 11089;
+    public static final int RET_BRICK_BREAKER_NORMAL_LEVEL_NOT_FINISH_VALUE = 10458;
     /**
-     * <code>RETCODE_RET_CUSTOM_DUNGEON_INVALID_TAG = 11090;</code>
+     * <code>RET_BRICK_BREAKER_PRE_LEVEL_NOT_FINISH = 10459;</code>
      */
-    public static final int RETCODE_RET_CUSTOM_DUNGEON_INVALID_TAG_VALUE = 11090;
+    public static final int RET_BRICK_BREAKER_PRE_LEVEL_NOT_FINISH_VALUE = 10459;
     /**
-     * <code>RETCODE_RET_CUSTOM_DUNGEON_MAX_COST = 11091;</code>
+     * <code>RET_BRICK_BREAKER_PRE_STAGE_NOT_FINISH = 10460;</code>
      */
-    public static final int RETCODE_RET_CUSTOM_DUNGEON_MAX_COST_VALUE = 11091;
+    public static final int RET_BRICK_BREAKER_PRE_STAGE_NOT_FINISH_VALUE = 10460;
     /**
-     * <code>RETCODE_RET_CUSTOM_DUNGEON_REQUEST_TOO_FREQUENT = 11092;</code>
+     * <code>RET_BRICK_BREAKER_WORLD_LEVEL_NOT_UNLOCK = 10461;</code>
      */
-    public static final int RETCODE_RET_CUSTOM_DUNGEON_REQUEST_TOO_FREQUENT_VALUE = 11092;
+    public static final int RET_BRICK_BREAKER_WORLD_LEVEL_NOT_UNLOCK_VALUE = 10461;
     /**
-     * <code>RETCODE_RET_CUSTOM_DUNGEON_NOT_OPEN = 11093;</code>
+     * <code>RET_BRICK_BREAKER_DUNGEON_LEVEL_NOT_UNLOCK = 10462;</code>
      */
-    public static final int RETCODE_RET_CUSTOM_DUNGEON_NOT_OPEN_VALUE = 11093;
+    public static final int RET_BRICK_BREAKER_DUNGEON_LEVEL_NOT_UNLOCK_VALUE = 10462;
     /**
-     * <code>RETCODE_RET_SHARE_CD_ID_ERROR = 11101;</code>
+     * <code>RET_BRICK_BREAKER_COIN_NOT_ENOUGH = 10463;</code>
      */
-    public static final int RETCODE_RET_SHARE_CD_ID_ERROR_VALUE = 11101;
+    public static final int RET_BRICK_BREAKER_COIN_NOT_ENOUGH_VALUE = 10463;
     /**
-     * <code>RETCODE_RET_SHARE_CD_INDEX_ERROR = 11102;</code>
+     * <code>RET_BRICK_BREAKER_COIN_EXCEED_LIMIT = 10464;</code>
      */
-    public static final int RETCODE_RET_SHARE_CD_INDEX_ERROR_VALUE = 11102;
+    public static final int RET_BRICK_BREAKER_COIN_EXCEED_LIMIT_VALUE = 10464;
     /**
-     * <code>RETCODE_RET_SHARE_CD_IN_CD = 11103;</code>
+     * <code>RET_ACTIVITY_CONTENT_CLOSED = 10901;</code>
      */
-    public static final int RETCODE_RET_SHARE_CD_IN_CD_VALUE = 11103;
+    public static final int RET_ACTIVITY_CONTENT_CLOSED_VALUE = 10901;
     /**
-     * <code>RETCODE_RET_SHARE_CD_TOKEN_NOT_ENOUGH = 11104;</code>
+     * <code>RET_NOT_IN_FISHING = 11001;</code>
      */
-    public static final int RETCODE_RET_SHARE_CD_TOKEN_NOT_ENOUGH_VALUE = 11104;
+    public static final int RET_NOT_IN_FISHING_VALUE = 11001;
     /**
-     * <code>RETCODE_RET_UGC_DISMATCH = 11151;</code>
+     * <code>RET_FISH_STATE_ERROR = 11002;</code>
      */
-    public static final int RETCODE_RET_UGC_DISMATCH_VALUE = 11151;
+    public static final int RET_FISH_STATE_ERROR_VALUE = 11002;
     /**
-     * <code>RETCODE_RET_UGC_DATA_NOT_FOUND = 11152;</code>
+     * <code>RET_FISH_BAIT_LIMIT = 11003;</code>
      */
-    public static final int RETCODE_RET_UGC_DATA_NOT_FOUND_VALUE = 11152;
+    public static final int RET_FISH_BAIT_LIMIT_VALUE = 11003;
     /**
-     * <code>RETCODE_RET_UGC_BRIEF_NOT_FOUND = 11153;</code>
+     * <code>RET_FISHING_MAX_DISTANCE = 11004;</code>
      */
-    public static final int RETCODE_RET_UGC_BRIEF_NOT_FOUND_VALUE = 11153;
+    public static final int RET_FISHING_MAX_DISTANCE_VALUE = 11004;
     /**
-     * <code>RETCODE_RET_UGC_DISABLED = 11154;</code>
+     * <code>RET_FISHING_IN_COMBAT = 11005;</code>
      */
-    public static final int RETCODE_RET_UGC_DISABLED_VALUE = 11154;
+    public static final int RET_FISHING_IN_COMBAT_VALUE = 11005;
     /**
-     * <code>RETCODE_RET_UGC_LIMITED = 11155;</code>
+     * <code>RET_FISHING_BATTLE_TOO_SHORT = 11006;</code>
      */
-    public static final int RETCODE_RET_UGC_LIMITED_VALUE = 11155;
+    public static final int RET_FISHING_BATTLE_TOO_SHORT_VALUE = 11006;
     /**
-     * <code>RETCODE_RET_UGC_LOCKED = 11156;</code>
+     * <code>RET_FISH_GONE_AWAY = 11007;</code>
      */
-    public static final int RETCODE_RET_UGC_LOCKED_VALUE = 11156;
+    public static final int RET_FISH_GONE_AWAY_VALUE = 11007;
     /**
-     * <code>RETCODE_RET_UGC_NOT_AUTH = 11157;</code>
+     * <code>RET_CAN_NOT_EDIT_OTHER_DUNGEON = 11051;</code>
      */
-    public static final int RETCODE_RET_UGC_NOT_AUTH_VALUE = 11157;
+    public static final int RET_CAN_NOT_EDIT_OTHER_DUNGEON_VALUE = 11051;
     /**
-     * <code>RETCODE_RET_UGC_NOT_OPEN = 11158;</code>
+     * <code>RET_CUSTOM_DUNGEON_DISMATCH = 11052;</code>
      */
-    public static final int RETCODE_RET_UGC_NOT_OPEN_VALUE = 11158;
+    public static final int RET_CUSTOM_DUNGEON_DISMATCH_VALUE = 11052;
     /**
-     * <code>RETCODE_RET_UGC_BAN_PUBLISH = 11159;</code>
+     * <code>RET_NO_CUSTOM_DUNGEON_DATA = 11053;</code>
      */
-    public static final int RETCODE_RET_UGC_BAN_PUBLISH_VALUE = 11159;
+    public static final int RET_NO_CUSTOM_DUNGEON_DATA_VALUE = 11053;
     /**
-     * <code>RETCODE_RET_COMPOUND_BOOST_ITEM_NOT_EXIST = 11201;</code>
+     * <code>RET_BUILD_CUSTOM_DUNGEON_FAIL = 11054;</code>
      */
-    public static final int RETCODE_RET_COMPOUND_BOOST_ITEM_NOT_EXIST_VALUE = 11201;
+    public static final int RET_BUILD_CUSTOM_DUNGEON_FAIL_VALUE = 11054;
     /**
-     * <code>RETCODE_RET_COMPOUND_BOOST_TARGET_NOT_EXIST = 11202;</code>
+     * <code>RET_CUSTOM_DUNGEON_ROOM_CHECK_FAIL = 11055;</code>
      */
-    public static final int RETCODE_RET_COMPOUND_BOOST_TARGET_NOT_EXIST_VALUE = 11202;
+    public static final int RET_CUSTOM_DUNGEON_ROOM_CHECK_FAIL_VALUE = 11055;
     /**
-     * <code>RETCODE_RET_QUICK_HIT_TREE_EMPTY_TREES = 11211;</code>
+     * <code>RET_CUSTOM_DUNGEON_SAVE_MAY_FAIL = 11056;</code>
      */
-    public static final int RETCODE_RET_QUICK_HIT_TREE_EMPTY_TREES_VALUE = 11211;
+    public static final int RET_CUSTOM_DUNGEON_SAVE_MAY_FAIL_VALUE = 11056;
+    /**
+     * <code>RET_NOT_IN_CUSTOM_DUNGEON = 11057;</code>
+     */
+    public static final int RET_NOT_IN_CUSTOM_DUNGEON_VALUE = 11057;
+    /**
+     * <code>RET_CUSTOM_DUNGEON_INTERNAL_FAIL = 11058;</code>
+     */
+    public static final int RET_CUSTOM_DUNGEON_INTERNAL_FAIL_VALUE = 11058;
+    /**
+     * <code>RET_CUSTOM_DUNGEON_CAN_NOT_TRY = 11059;</code>
+     */
+    public static final int RET_CUSTOM_DUNGEON_CAN_NOT_TRY_VALUE = 11059;
+    /**
+     * <code>RET_CUSTOM_DUNGEON_NO_START_ROOM = 11060;</code>
+     */
+    public static final int RET_CUSTOM_DUNGEON_NO_START_ROOM_VALUE = 11060;
+    /**
+     * <code>RET_CUSTOM_DUNGEON_NO_ROOM_DATA = 11061;</code>
+     */
+    public static final int RET_CUSTOM_DUNGEON_NO_ROOM_DATA_VALUE = 11061;
+    /**
+     * <code>RET_CUSTOM_DUNGEON_SAVE_TOO_FREQUENT = 11062;</code>
+     */
+    public static final int RET_CUSTOM_DUNGEON_SAVE_TOO_FREQUENT_VALUE = 11062;
+    /**
+     * <code>RET_CUSTOM_DUNGEON_NOT_SELF_PASS = 11063;</code>
+     */
+    public static final int RET_CUSTOM_DUNGEON_NOT_SELF_PASS_VALUE = 11063;
+    /**
+     * <code>RET_CUSTOM_DUNGEON_LACK_COIN = 11064;</code>
+     */
+    public static final int RET_CUSTOM_DUNGEON_LACK_COIN_VALUE = 11064;
+    /**
+     * <code>RET_CUSTOM_DUNGEON_NO_FINISH_BRICK = 11065;</code>
+     */
+    public static final int RET_CUSTOM_DUNGEON_NO_FINISH_BRICK_VALUE = 11065;
+    /**
+     * <code>RET_CUSTOM_DUNGEON_MULTI_FINISH = 11066;</code>
+     */
+    public static final int RET_CUSTOM_DUNGEON_MULTI_FINISH_VALUE = 11066;
+    /**
+     * <code>RET_CUSTOM_DUNGEON_NOT_PUBLISHED = 11067;</code>
+     */
+    public static final int RET_CUSTOM_DUNGEON_NOT_PUBLISHED_VALUE = 11067;
+    /**
+     * <code>RET_CUSTOM_DUNGEON_FULL_STORE = 11068;</code>
+     */
+    public static final int RET_CUSTOM_DUNGEON_FULL_STORE_VALUE = 11068;
+    /**
+     * <code>RET_CUSTOM_DUNGEON_STORE_REPEAT = 11069;</code>
+     */
+    public static final int RET_CUSTOM_DUNGEON_STORE_REPEAT_VALUE = 11069;
+    /**
+     * <code>RET_CUSTOM_DUNGEON_CAN_NOT_STORE_SELF = 11070;</code>
+     */
+    public static final int RET_CUSTOM_DUNGEON_CAN_NOT_STORE_SELF_VALUE = 11070;
+    /**
+     * <code>RET_CUSTOM_DUNGEON_NOT_SAVE_SUCC = 11071;</code>
+     */
+    public static final int RET_CUSTOM_DUNGEON_NOT_SAVE_SUCC_VALUE = 11071;
+    /**
+     * <code>RET_CUSTOM_DUNGEON_CAN_NOT_LIKE_SELF = 11072;</code>
+     */
+    public static final int RET_CUSTOM_DUNGEON_CAN_NOT_LIKE_SELF_VALUE = 11072;
+    /**
+     * <code>RET_CUSTOM_DUNGEON_NOT_FOUND = 11073;</code>
+     */
+    public static final int RET_CUSTOM_DUNGEON_NOT_FOUND_VALUE = 11073;
+    /**
+     * <code>RET_CUSTOM_DUNGEON_INVALID_SETTING = 11074;</code>
+     */
+    public static final int RET_CUSTOM_DUNGEON_INVALID_SETTING_VALUE = 11074;
+    /**
+     * <code>RET_CUSTOM_DUNGEON_NO_FINISH_SETTING = 11075;</code>
+     */
+    public static final int RET_CUSTOM_DUNGEON_NO_FINISH_SETTING_VALUE = 11075;
+    /**
+     * <code>RET_CUSTOM_DUNGEON_SAVE_NOTHING = 11076;</code>
+     */
+    public static final int RET_CUSTOM_DUNGEON_SAVE_NOTHING_VALUE = 11076;
+    /**
+     * <code>RET_CUSTOM_DUNGEON_NOT_IN_GROUP = 11077;</code>
+     */
+    public static final int RET_CUSTOM_DUNGEON_NOT_IN_GROUP_VALUE = 11077;
+    /**
+     * <code>RET_CUSTOM_DUNGEON_NOT_OFFICIAL = 11078;</code>
+     */
+    public static final int RET_CUSTOM_DUNGEON_NOT_OFFICIAL_VALUE = 11078;
+    /**
+     * <code>RET_CUSTOM_DUNGEON_LIFE_NUM_ERROR = 11079;</code>
+     */
+    public static final int RET_CUSTOM_DUNGEON_LIFE_NUM_ERROR_VALUE = 11079;
+    /**
+     * <code>RET_CUSTOM_DUNGEON_NO_OPEN_ROOM = 11080;</code>
+     */
+    public static final int RET_CUSTOM_DUNGEON_NO_OPEN_ROOM_VALUE = 11080;
+    /**
+     * <code>RET_CUSTOM_DUNGEON_BRICK_EXCEED_LIMIT = 11081;</code>
+     */
+    public static final int RET_CUSTOM_DUNGEON_BRICK_EXCEED_LIMIT_VALUE = 11081;
+    /**
+     * <code>RET_CUSTOM_DUNGEON_OFFICIAL_NOT_UNLOCK = 11082;</code>
+     */
+    public static final int RET_CUSTOM_DUNGEON_OFFICIAL_NOT_UNLOCK_VALUE = 11082;
+    /**
+     * <code>RET_CAN_NOT_EDIT_OFFICIAL_SETTING = 11083;</code>
+     */
+    public static final int RET_CAN_NOT_EDIT_OFFICIAL_SETTING_VALUE = 11083;
+    /**
+     * <code>RET_CUSTOM_DUNGEON_BAN_PUBLISH = 11084;</code>
+     */
+    public static final int RET_CUSTOM_DUNGEON_BAN_PUBLISH_VALUE = 11084;
+    /**
+     * <code>RET_CUSTOM_DUNGEON_CAN_NOT_REPLAY = 11085;</code>
+     */
+    public static final int RET_CUSTOM_DUNGEON_CAN_NOT_REPLAY_VALUE = 11085;
+    /**
+     * <code>RET_CUSTOM_DUNGEON_NOT_OPEN_GROUP = 11086;</code>
+     */
+    public static final int RET_CUSTOM_DUNGEON_NOT_OPEN_GROUP_VALUE = 11086;
+    /**
+     * <code>RET_CUSTOM_DUNGEON_MAX_EDIT_NUM = 11087;</code>
+     */
+    public static final int RET_CUSTOM_DUNGEON_MAX_EDIT_NUM_VALUE = 11087;
+    /**
+     * <code>RET_CUSTOM_DUNGEON_CAN_NOT_OUT_STUCK = 11088;</code>
+     */
+    public static final int RET_CUSTOM_DUNGEON_CAN_NOT_OUT_STUCK_VALUE = 11088;
+    /**
+     * <code>RET_CUSTOM_DUNGEON_MAX_TAG = 11089;</code>
+     */
+    public static final int RET_CUSTOM_DUNGEON_MAX_TAG_VALUE = 11089;
+    /**
+     * <code>RET_CUSTOM_DUNGEON_INVALID_TAG = 11090;</code>
+     */
+    public static final int RET_CUSTOM_DUNGEON_INVALID_TAG_VALUE = 11090;
+    /**
+     * <code>RET_CUSTOM_DUNGEON_MAX_COST = 11091;</code>
+     */
+    public static final int RET_CUSTOM_DUNGEON_MAX_COST_VALUE = 11091;
+    /**
+     * <code>RET_CUSTOM_DUNGEON_REQUEST_TOO_FREQUENT = 11092;</code>
+     */
+    public static final int RET_CUSTOM_DUNGEON_REQUEST_TOO_FREQUENT_VALUE = 11092;
+    /**
+     * <code>RET_CUSTOM_DUNGEON_NOT_OPEN = 11093;</code>
+     */
+    public static final int RET_CUSTOM_DUNGEON_NOT_OPEN_VALUE = 11093;
+    /**
+     * <code>RET_SHARE_CD_ID_ERROR = 11101;</code>
+     */
+    public static final int RET_SHARE_CD_ID_ERROR_VALUE = 11101;
+    /**
+     * <code>RET_SHARE_CD_INDEX_ERROR = 11102;</code>
+     */
+    public static final int RET_SHARE_CD_INDEX_ERROR_VALUE = 11102;
+    /**
+     * <code>RET_SHARE_CD_IN_CD = 11103;</code>
+     */
+    public static final int RET_SHARE_CD_IN_CD_VALUE = 11103;
+    /**
+     * <code>RET_SHARE_CD_TOKEN_NOT_ENOUGH = 11104;</code>
+     */
+    public static final int RET_SHARE_CD_TOKEN_NOT_ENOUGH_VALUE = 11104;
+    /**
+     * <code>RET_UGC_DISMATCH = 11151;</code>
+     */
+    public static final int RET_UGC_DISMATCH_VALUE = 11151;
+    /**
+     * <code>RET_UGC_DATA_NOT_FOUND = 11152;</code>
+     */
+    public static final int RET_UGC_DATA_NOT_FOUND_VALUE = 11152;
+    /**
+     * <code>RET_UGC_BRIEF_NOT_FOUND = 11153;</code>
+     */
+    public static final int RET_UGC_BRIEF_NOT_FOUND_VALUE = 11153;
+    /**
+     * <code>RET_UGC_DISABLED = 11154;</code>
+     */
+    public static final int RET_UGC_DISABLED_VALUE = 11154;
+    /**
+     * <code>RET_UGC_LIMITED = 11155;</code>
+     */
+    public static final int RET_UGC_LIMITED_VALUE = 11155;
+    /**
+     * <code>RET_UGC_LOCKED = 11156;</code>
+     */
+    public static final int RET_UGC_LOCKED_VALUE = 11156;
+    /**
+     * <code>RET_UGC_NOT_AUTH = 11157;</code>
+     */
+    public static final int RET_UGC_NOT_AUTH_VALUE = 11157;
+    /**
+     * <code>RET_UGC_NOT_OPEN = 11158;</code>
+     */
+    public static final int RET_UGC_NOT_OPEN_VALUE = 11158;
+    /**
+     * <code>RET_UGC_BAN_PUBLISH = 11159;</code>
+     */
+    public static final int RET_UGC_BAN_PUBLISH_VALUE = 11159;
+    /**
+     * <code>RET_COMPOUND_BOOST_ITEM_NOT_EXIST = 11201;</code>
+     */
+    public static final int RET_COMPOUND_BOOST_ITEM_NOT_EXIST_VALUE = 11201;
+    /**
+     * <code>RET_COMPOUND_BOOST_TARGET_NOT_EXIST = 11202;</code>
+     */
+    public static final int RET_COMPOUND_BOOST_TARGET_NOT_EXIST_VALUE = 11202;
+    /**
+     * <code>RET_QUICK_HIT_TREE_EMPTY_TREES = 11211;</code>
+     */
+    public static final int RET_QUICK_HIT_TREE_EMPTY_TREES_VALUE = 11211;
+    /**
+     * <code>RET_GCG_FIND_GAME_MODE_FAIL = 12000;</code>
+     */
+    public static final int RET_GCG_FIND_GAME_MODE_FAIL_VALUE = 12000;
+    /**
+     * <code>RET_GCG_OPERATION_PARAM_ERROR = 12001;</code>
+     */
+    public static final int RET_GCG_OPERATION_PARAM_ERROR_VALUE = 12001;
+    /**
+     * <code>RET_GCG_GAME_NOT_RUNNING = 12002;</code>
+     */
+    public static final int RET_GCG_GAME_NOT_RUNNING_VALUE = 12002;
+    /**
+     * <code>RET_GCG_OP_NOT_ALLOW = 12003;</code>
+     */
+    public static final int RET_GCG_OP_NOT_ALLOW_VALUE = 12003;
+    /**
+     * <code>RET_GCG_OP_NOT_MATCH_PHASE = 12004;</code>
+     */
+    public static final int RET_GCG_OP_NOT_MATCH_PHASE_VALUE = 12004;
+    /**
+     * <code>RET_GCG_SELECT_HAND_CARD_GUID_ERROR = 12005;</code>
+     */
+    public static final int RET_GCG_SELECT_HAND_CARD_GUID_ERROR_VALUE = 12005;
+    /**
+     * <code>RET_GCG_DICE_INDEX_INVALID = 12006;</code>
+     */
+    public static final int RET_GCG_DICE_INDEX_INVALID_VALUE = 12006;
+    /**
+     * <code>RET_GCG_CHARACTER_GUID_INVALID = 12007;</code>
+     */
+    public static final int RET_GCG_CHARACTER_GUID_INVALID_VALUE = 12007;
+    /**
+     * <code>RET_GCG_CHARACTER_ALREADY_DIE = 12008;</code>
+     */
+    public static final int RET_GCG_CHARACTER_ALREADY_DIE_VALUE = 12008;
+    /**
+     * <code>RET_GCG_CHARACTER_ALREADY_ON_STAGE = 12009;</code>
+     */
+    public static final int RET_GCG_CHARACTER_ALREADY_ON_STAGE_VALUE = 12009;
+    /**
+     * <code>RET_GCG_CHARACTER_FORBIDDEN_ATTACK = 12010;</code>
+     */
+    public static final int RET_GCG_CHARACTER_FORBIDDEN_ATTACK_VALUE = 12010;
+    /**
+     * <code>RET_GCG_SELECT_DICE_NOT_MATCH = 12011;</code>
+     */
+    public static final int RET_GCG_SELECT_DICE_NOT_MATCH_VALUE = 12011;
+    /**
+     * <code>RET_GCG_FIND_SKILL_FAIL = 12012;</code>
+     */
+    public static final int RET_GCG_FIND_SKILL_FAIL_VALUE = 12012;
+    /**
+     * <code>RET_GCG_SKILL_CAN_NOT_ACTIVE_USE = 12013;</code>
+     */
+    public static final int RET_GCG_SKILL_CAN_NOT_ACTIVE_USE_VALUE = 12013;
+    /**
+     * <code>RET_GCG_ENERGY_NOT_ENOUGH = 12014;</code>
+     */
+    public static final int RET_GCG_ENERGY_NOT_ENOUGH_VALUE = 12014;
+    /**
+     * <code>RET_GCG_PLAY_CARD_TARGET_NOT_MATCH = 12015;</code>
+     */
+    public static final int RET_GCG_PLAY_CARD_TARGET_NOT_MATCH_VALUE = 12015;
+    /**
+     * <code>RET_GCG_PLAY_CARD_ZONE_CANNOT_ADD = 12016;</code>
+     */
+    public static final int RET_GCG_PLAY_CARD_ZONE_CANNOT_ADD_VALUE = 12016;
+    /**
+     * <code>RET_GCG_REBOOT_SELECT_DICE_INVALID = 12017;</code>
+     */
+    public static final int RET_GCG_REBOOT_SELECT_DICE_INVALID_VALUE = 12017;
+    /**
+     * <code>RET_GCG_REBOOT_SELECT_CARD_INVALID = 12018;</code>
+     */
+    public static final int RET_GCG_REBOOT_SELECT_CARD_INVALID_VALUE = 12018;
+    /**
+     * <code>RET_GCG_PLAY_CARD_CONDITION_CHECK_FAIL = 12019;</code>
+     */
+    public static final int RET_GCG_PLAY_CARD_CONDITION_CHECK_FAIL_VALUE = 12019;
+    /**
+     * <code>RET_GCG_PLAY_CARD_PARAM_INVALID = 12020;</code>
+     */
+    public static final int RET_GCG_PLAY_CARD_PARAM_INVALID_VALUE = 12020;
+    /**
+     * <code>RET_GCG_MAX_GAME = 12021;</code>
+     */
+    public static final int RET_GCG_MAX_GAME_VALUE = 12021;
+    /**
+     * <code>RET_GCG_SEND_PACKET_FAIL = 12022;</code>
+     */
+    public static final int RET_GCG_SEND_PACKET_FAIL_VALUE = 12022;
+    /**
+     * <code>RET_GCG_ALREADY_SETTLE = 12023;</code>
+     */
+    public static final int RET_GCG_ALREADY_SETTLE_VALUE = 12023;
+    /**
+     * <code>RET_GCG_COIN_EXCEED_LIMIT = 12101;</code>
+     */
+    public static final int RET_GCG_COIN_EXCEED_LIMIT_VALUE = 12101;
+    /**
+     * <code>RET_GCG_COIN_NOT_ENOUGH = 12102;</code>
+     */
+    public static final int RET_GCG_COIN_NOT_ENOUGH_VALUE = 12102;
+    /**
+     * <code>RET_GCG_NOT_IN_SELF_WORLD = 12103;</code>
+     */
+    public static final int RET_GCG_NOT_IN_SELF_WORLD_VALUE = 12103;
+    /**
+     * <code>RET_GCG_ALREADY_IN_DUEL = 12104;</code>
+     */
+    public static final int RET_GCG_ALREADY_IN_DUEL_VALUE = 12104;
+    /**
+     * <code>RET_GCG_NOT_IN_PLAYER_WORLD = 12105;</code>
+     */
+    public static final int RET_GCG_NOT_IN_PLAYER_WORLD_VALUE = 12105;
+    /**
+     * <code>RET_GCG_GALLERY_STARTED = 12106;</code>
+     */
+    public static final int RET_GCG_GALLERY_STARTED_VALUE = 12106;
+    /**
+     * <code>RET_GCG_INVITE_TARGET_IS_SELF = 12107;</code>
+     */
+    public static final int RET_GCG_INVITE_TARGET_IS_SELF_VALUE = 12107;
+    /**
+     * <code>RET_GCG_INVITE_TARGET_NOT_IN_WORLD = 12108;</code>
+     */
+    public static final int RET_GCG_INVITE_TARGET_NOT_IN_WORLD_VALUE = 12108;
+    /**
+     * <code>RET_GCG_APPLY_INVITE_NOT_ALLOW = 12109;</code>
+     */
+    public static final int RET_GCG_APPLY_INVITE_NOT_ALLOW_VALUE = 12109;
+    /**
+     * <code>RET_GCG_APPLY_INVITE_TIMEOUT = 12110;</code>
+     */
+    public static final int RET_GCG_APPLY_INVITE_TIMEOUT_VALUE = 12110;
+    /**
+     * <code>RET_GCG_CUR_DECK_INVALID = 12111;</code>
+     */
+    public static final int RET_GCG_CUR_DECK_INVALID_VALUE = 12111;
+    /**
+     * <code>RET_GCG_NEED_RESOURCE_COMPLETE = 12112;</code>
+     */
+    public static final int RET_GCG_NEED_RESOURCE_COMPLETE_VALUE = 12112;
+    /**
+     * <code>RET_GCG_OPPONENT_PLAYER_IS_SELF = 12113;</code>
+     */
+    public static final int RET_GCG_OPPONENT_PLAYER_IS_SELF_VALUE = 12113;
+    /**
+     * <code>RET_GCG_GAME_ID_INVALID = 12114;</code>
+     */
+    public static final int RET_GCG_GAME_ID_INVALID_VALUE = 12114;
+    /**
+     * <code>RET_GCG_MATCH_IN_PUNISH = 12115;</code>
+     */
+    public static final int RET_GCG_MATCH_IN_PUNISH_VALUE = 12115;
+    /**
+     * <code>RET_GCG_SETTLE_STILL_IN_DUEL = 12116;</code>
+     */
+    public static final int RET_GCG_SETTLE_STILL_IN_DUEL_VALUE = 12116;
+    /**
+     * <code>RET_GCG_SETTLE_NOT_IN_DUNGEON = 12117;</code>
+     */
+    public static final int RET_GCG_SETTLE_NOT_IN_DUNGEON_VALUE = 12117;
+    /**
+     * <code>RET_GCG_UNSUPPORT_SETTLE_OPTION = 12118;</code>
+     */
+    public static final int RET_GCG_UNSUPPORT_SETTLE_OPTION_VALUE = 12118;
+    /**
+     * <code>RET_GCG_NOT_IN_GCG_DUNGEON = 12119;</code>
+     */
+    public static final int RET_GCG_NOT_IN_GCG_DUNGEON_VALUE = 12119;
+    /**
+     * <code>RET_GCG_WORLD_LEVEL_LOCKED = 12120;</code>
+     */
+    public static final int RET_GCG_WORLD_LEVEL_LOCKED_VALUE = 12120;
+    /**
+     * <code>RET_GCG_BOSS_LEVEL_LOCKED = 12121;</code>
+     */
+    public static final int RET_GCG_BOSS_LEVEL_LOCKED_VALUE = 12121;
+    /**
+     * <code>RET_GCG_NOT_IN_TAVERN = 12122;</code>
+     */
+    public static final int RET_GCG_NOT_IN_TAVERN_VALUE = 12122;
+    /**
+     * <code>RET_GCG_WEEK_NPC_NOT_EXIST = 12123;</code>
+     */
+    public static final int RET_GCG_WEEK_NPC_NOT_EXIST_VALUE = 12123;
+    /**
+     * <code>RET_GCG_ENTER_GAME_FREQUENT = 12124;</code>
+     */
+    public static final int RET_GCG_ENTER_GAME_FREQUENT_VALUE = 12124;
+    /**
+     * <code>RET_GCG_BREAK_LEVEL_QUEST_NOT_UNFINISHED = 12125;</code>
+     */
+    public static final int RET_GCG_BREAK_LEVEL_QUEST_NOT_UNFINISHED_VALUE = 12125;
+    /**
+     * <code>RET_GCG_GUIDE_LEVEL_ALREADY_FINISHED = 12126;</code>
+     */
+    public static final int RET_GCG_GUIDE_LEVEL_ALREADY_FINISHED_VALUE = 12126;
+    /**
+     * <code>RET_GCG_LEVEL_CANNOT_RESTART = 12127;</code>
+     */
+    public static final int RET_GCG_LEVEL_CANNOT_RESTART_VALUE = 12127;
+    /**
+     * <code>RET_GCG_TARGET_CHECK_ENTER_FAIL = 12128;</code>
+     */
+    public static final int RET_GCG_TARGET_CHECK_ENTER_FAIL_VALUE = 12128;
+    /**
+     * <code>RET_GCG_ALREADY_IN_DUNGEON = 12129;</code>
+     */
+    public static final int RET_GCG_ALREADY_IN_DUNGEON_VALUE = 12129;
+    /**
+     * <code>RET_GCG_BACK_DUEL_NO_GAME = 12130;</code>
+     */
+    public static final int RET_GCG_BACK_DUEL_NO_GAME_VALUE = 12130;
+    /**
+     * <code>RET_GCG_CONST_LEVEL_LOCKED = 12131;</code>
+     */
+    public static final int RET_GCG_CONST_LEVEL_LOCKED_VALUE = 12131;
+    /**
+     * <code>RET_GCG_QUEST_ID_ERROR = 12132;</code>
+     */
+    public static final int RET_GCG_QUEST_ID_ERROR_VALUE = 12132;
+    /**
+     * <code>RET_GCG_QUEST_NEED_UNFINISHED = 12133;</code>
+     */
+    public static final int RET_GCG_QUEST_NEED_UNFINISHED_VALUE = 12133;
+    /**
+     * <code>RET_GCG_IN_MATCH = 12134;</code>
+     */
+    public static final int RET_GCG_IN_MATCH_VALUE = 12134;
+    /**
+     * <code>RET_GCG_DATA_VERSION_NOT_LATEST = 12135;</code>
+     */
+    public static final int RET_GCG_DATA_VERSION_NOT_LATEST_VALUE = 12135;
+    /**
+     * <code>RET_GCG_INVITE_TARGET_ENTER_GAME_FREQUENT = 12136;</code>
+     */
+    public static final int RET_GCG_INVITE_TARGET_ENTER_GAME_FREQUENT_VALUE = 12136;
+    /**
+     * <code>RET_GCG_INVITE_TARGET_NEED_RESOURCE_COMPLETE = 12137;</code>
+     */
+    public static final int RET_GCG_INVITE_TARGET_NEED_RESOURCE_COMPLETE_VALUE = 12137;
+    /**
+     * <code>RET_GCG_INVITE_TARGET_SCENE_IS_NULL = 12138;</code>
+     */
+    public static final int RET_GCG_INVITE_TARGET_SCENE_IS_NULL_VALUE = 12138;
+    /**
+     * <code>RET_GCG_INVITE_TARGET_IN_TRANSFER = 12139;</code>
+     */
+    public static final int RET_GCG_INVITE_TARGET_IN_TRANSFER_VALUE = 12139;
+    /**
+     * <code>RET_GCG_INVITE_TARGET_DATA_VERSION_NOT_LATEST = 12140;</code>
+     */
+    public static final int RET_GCG_INVITE_TARGET_DATA_VERSION_NOT_LATEST_VALUE = 12140;
+    /**
+     * <code>RET_GCG_INVITE_TARGET_CUR_DECK_INVALID = 12141;</code>
+     */
+    public static final int RET_GCG_INVITE_TARGET_CUR_DECK_INVALID_VALUE = 12141;
+    /**
+     * <code>RET_GCG_CLIENT_DATA_VERSION_NOT_MATCH = 12142;</code>
+     */
+    public static final int RET_GCG_CLIENT_DATA_VERSION_NOT_MATCH_VALUE = 12142;
+    /**
+     * <code>RET_GCG_CLIENT_DATA_VERSOIN_FORBID = 12143;</code>
+     */
+    public static final int RET_GCG_CLIENT_DATA_VERSOIN_FORBID_VALUE = 12143;
+    /**
+     * <code>RET_GCG_MP_CANT_MATCH = 12144;</code>
+     */
+    public static final int RET_GCG_MP_CANT_MATCH_VALUE = 12144;
+    /**
+     * <code>RET_GCG_INVITE_TARGET_STATE_NOT_OPEN = 12145;</code>
+     */
+    public static final int RET_GCG_INVITE_TARGET_STATE_NOT_OPEN_VALUE = 12145;
+    /**
+     * <code>RET_GCG_CREATE_TIME_OUT = 12146;</code>
+     */
+    public static final int RET_GCG_CREATE_TIME_OUT_VALUE = 12146;
+    /**
+     * <code>RET_GCG_BAN_MATCH = 12147;</code>
+     */
+    public static final int RET_GCG_BAN_MATCH_VALUE = 12147;
+    /**
+     * <code>RET_GCG_BAN_INVITE = 12148;</code>
+     */
+    public static final int RET_GCG_BAN_INVITE_VALUE = 12148;
+    /**
+     * <code>RET_GCG_TARGET_BAN_INVITE = 12149;</code>
+     */
+    public static final int RET_GCG_TARGET_BAN_INVITE_VALUE = 12149;
+    /**
+     * <code>RET_GCG_INVITE_ALREADY_INVITE = 12150;</code>
+     */
+    public static final int RET_GCG_INVITE_ALREADY_INVITE_VALUE = 12150;
+    /**
+     * <code>RET_GCG_BACK_DUEL_PS_TO_OTHER = 12153;</code>
+     */
+    public static final int RET_GCG_BACK_DUEL_PS_TO_OTHER_VALUE = 12153;
+    /**
+     * <code>RET_GCG_BACK_DUEL_OTHER_TO_PS = 12154;</code>
+     */
+    public static final int RET_GCG_BACK_DUEL_OTHER_TO_PS_VALUE = 12154;
+    /**
+     * <code>RET_GCG_DS_DECK_LOCKED = 12201;</code>
+     */
+    public static final int RET_GCG_DS_DECK_LOCKED_VALUE = 12201;
+    /**
+     * <code>RET_GCG_DS_DECK_NAME_INVALID = 12202;</code>
+     */
+    public static final int RET_GCG_DS_DECK_NAME_INVALID_VALUE = 12202;
+    /**
+     * <code>RET_GCG_DS_DECK_CHAR_CARD_NUM_INVALID = 12204;</code>
+     */
+    public static final int RET_GCG_DS_DECK_CHAR_CARD_NUM_INVALID_VALUE = 12204;
+    /**
+     * <code>RET_GCG_DS_DECK_CARD_NUM_INVALID = 12205;</code>
+     */
+    public static final int RET_GCG_DS_DECK_CARD_NUM_INVALID_VALUE = 12205;
+    /**
+     * <code>RET_GCG_DS_CARD_NUM_EXCEED_LIMIT = 12206;</code>
+     */
+    public static final int RET_GCG_DS_CARD_NUM_EXCEED_LIMIT_VALUE = 12206;
+    /**
+     * <code>RET_GCG_DS_DECK_INVALID = 12207;</code>
+     */
+    public static final int RET_GCG_DS_DECK_INVALID_VALUE = 12207;
+    /**
+     * <code>RET_GCG_DS_CARD_ID_INVALID = 12208;</code>
+     */
+    public static final int RET_GCG_DS_CARD_ID_INVALID_VALUE = 12208;
+    /**
+     * <code>RET_GCG_DS_CARD_FACE_ALREADY_UNLOCK = 12209;</code>
+     */
+    public static final int RET_GCG_DS_CARD_FACE_ALREADY_UNLOCK_VALUE = 12209;
+    /**
+     * <code>RET_GCG_DS_CARD_FACE_IS_LOCK = 12210;</code>
+     */
+    public static final int RET_GCG_DS_CARD_FACE_IS_LOCK_VALUE = 12210;
+    /**
+     * <code>RET_GCG_DS_FIELD_LOCK = 12211;</code>
+     */
+    public static final int RET_GCG_DS_FIELD_LOCK_VALUE = 12211;
+    /**
+     * <code>RET_GCG_DS_FIELD_ALREADY_UNLOCK = 12212;</code>
+     */
+    public static final int RET_GCG_DS_FIELD_ALREADY_UNLOCK_VALUE = 12212;
+    /**
+     * <code>RET_GCG_DS_FIELD_ID_INVALID = 12213;</code>
+     */
+    public static final int RET_GCG_DS_FIELD_ID_INVALID_VALUE = 12213;
+    /**
+     * <code>RET_GCG_DS_CARD_BACK_LOCKED = 12214;</code>
+     */
+    public static final int RET_GCG_DS_CARD_BACK_LOCKED_VALUE = 12214;
+    /**
+     * <code>RET_GCG_DS_CARD_BACK_ALREADY_UNLOCK = 12215;</code>
+     */
+    public static final int RET_GCG_DS_CARD_BACK_ALREADY_UNLOCK_VALUE = 12215;
+    /**
+     * <code>RET_GCG_DS_CARD_BACK_ID_INVALID = 12216;</code>
+     */
+    public static final int RET_GCG_DS_CARD_BACK_ID_INVALID_VALUE = 12216;
+    /**
+     * <code>RET_GCG_DS_CARD_FACE_ID_INVALID = 12217;</code>
+     */
+    public static final int RET_GCG_DS_CARD_FACE_ID_INVALID_VALUE = 12217;
+    /**
+     * <code>RET_GCG_DS_DECK_NAME_ILLEGAL = 12218;</code>
+     */
+    public static final int RET_GCG_DS_DECK_NAME_ILLEGAL_VALUE = 12218;
+    /**
+     * <code>RET_GCG_DS_DECK_SAVE_CD = 12219;</code>
+     */
+    public static final int RET_GCG_DS_DECK_SAVE_CD_VALUE = 12219;
+    /**
+     * <code>RET_GCG_DS_DECK_CHANGE_NAME_CD = 12220;</code>
+     */
+    public static final int RET_GCG_DS_DECK_CHANGE_NAME_CD_VALUE = 12220;
+    /**
+     * <code>RET_GCG_MATCH_DECK_INVALID = 12221;</code>
+     */
+    public static final int RET_GCG_MATCH_DECK_INVALID_VALUE = 12221;
+    /**
+     * <code>RET_GCG_DS_DECK_ALREADY_UNLOCKED = 12222;</code>
+     */
+    public static final int RET_GCG_DS_DECK_ALREADY_UNLOCKED_VALUE = 12222;
+    /**
+     * <code>RET_GCG_DS_AT_LEAST_ONE_DECK = 12223;</code>
+     */
+    public static final int RET_GCG_DS_AT_LEAST_ONE_DECK_VALUE = 12223;
+    /**
+     * <code>RET_GCG_TC_CHARACTERNOT_MATCH_LEVEL = 12251;</code>
+     */
+    public static final int RET_GCG_TC_CHARACTERNOT_MATCH_LEVEL_VALUE = 12251;
+    /**
+     * <code>RET_GCG_TC_MUST_IN_SELF_WORLD = 12252;</code>
+     */
+    public static final int RET_GCG_TC_MUST_IN_SELF_WORLD_VALUE = 12252;
+    /**
+     * <code>RET_GCG_TC_MUST_IN_TAVERN = 12253;</code>
+     */
+    public static final int RET_GCG_TC_MUST_IN_TAVERN_VALUE = 12253;
+    /**
+     * <code>RET_GCG_TC_ALREADY_IN_GAME = 12254;</code>
+     */
+    public static final int RET_GCG_TC_ALREADY_IN_GAME_VALUE = 12254;
+    /**
+     * <code>RET_GCG_TC_ALREADY_IN_MATCH = 12255;</code>
+     */
+    public static final int RET_GCG_TC_ALREADY_IN_MATCH_VALUE = 12255;
+    /**
+     * <code>RET_GCG_TC_UNLOCK_CHARACTER_QUEST_NOT_FINISH = 12256;</code>
+     */
+    public static final int RET_GCG_TC_UNLOCK_CHARACTER_QUEST_NOT_FINISH_VALUE = 12256;
+    /**
+     * <code>RET_GCG_TC_LEVEL_LOCKED = 12257;</code>
+     */
+    public static final int RET_GCG_TC_LEVEL_LOCKED_VALUE = 12257;
+    /**
+     * <code>RET_GCG_TC_NO_INVITE_DATA = 12258;</code>
+     */
+    public static final int RET_GCG_TC_NO_INVITE_DATA_VALUE = 12258;
+    /**
+     * <code>RET_GCG_TC_CUR_DECK_INVALID = 12259;</code>
+     */
+    public static final int RET_GCG_TC_CUR_DECK_INVALID_VALUE = 12259;
+    /**
+     * <code>RET_GCG_TC_COND_QUEST = 12260;</code>
+     */
+    public static final int RET_GCG_TC_COND_QUEST_VALUE = 12260;
+    /**
+     * <code>RET_GCG_LEVEL_REWARD_LEVEL_ERROR = 12301;</code>
+     */
+    public static final int RET_GCG_LEVEL_REWARD_LEVEL_ERROR_VALUE = 12301;
+    /**
+     * <code>RET_GCG_LEVEL_REWARD_ALREADY_TAKEN = 12302;</code>
+     */
+    public static final int RET_GCG_LEVEL_REWARD_ALREADY_TAKEN_VALUE = 12302;
+    /**
+     * <code>RET_GCG_LEVEL_REWARD_NO_REWARD = 12303;</code>
+     */
+    public static final int RET_GCG_LEVEL_REWARD_NO_REWARD_VALUE = 12303;
 
 
     public final int getNumber() {
@@ -8304,1038 +9616,1202 @@ public final class RetcodeOuterClass {
      */
     public static Retcode forNumber(int value) {
       switch (value) {
-        case 0: return RETCODE_RET_SUCC;
-        case -1: return RETCODE_RET_FAIL;
-        case 1: return RETCODE_RET_SVR_ERROR;
-        case 2: return RETCODE_RET_UNKNOWN_ERROR;
-        case 3: return RETCODE_RET_FREQUENT;
-        case 4: return RETCODE_RET_NODE_FORWARD_ERROR;
-        case 5: return RETCODE_RET_NOT_FOUND_CONFIG;
-        case 6: return RETCODE_RET_SYSTEM_BUSY;
-        case 7: return RETCODE_RET_GM_UID_BIND;
-        case 8: return RETCODE_RET_FORBIDDEN;
-        case 10: return RETCODE_RET_STOP_REGISTER;
-        case 11: return RETCODE_RET_STOP_SERVER;
-        case 12: return RETCODE_RET_ACCOUNT_VEIRFY_ERROR;
-        case 13: return RETCODE_RET_ACCOUNT_FREEZE;
-        case 14: return RETCODE_RET_REPEAT_LOGIN;
-        case 15: return RETCODE_RET_CLIENT_VERSION_ERROR;
-        case 16: return RETCODE_RET_TOKEN_ERROR;
-        case 17: return RETCODE_RET_ACCOUNT_NOT_EXIST;
-        case 18: return RETCODE_RET_WAIT_OTHER_LOGIN;
-        case 19: return RETCODE_RET_ANOTHER_LOGIN;
-        case 20: return RETCODE_RET_CLIENT_FORCE_UPDATE;
-        case 21: return RETCODE_RET_BLACK_UID;
-        case 22: return RETCODE_RET_LOGIN_DB_FAIL;
-        case 23: return RETCODE_RET_LOGIN_INIT_FAIL;
-        case 24: return RETCODE_RET_MYSQL_DUPLICATE;
-        case 25: return RETCODE_RET_MAX_PLAYER;
-        case 26: return RETCODE_RET_ANTI_ADDICT;
-        case 27: return RETCODE_RET_PS_PLAYER_WITHOUT_ONLINE_ID;
-        case 28: return RETCODE_RET_ONLINE_ID_NOT_FOUND;
-        case 29: return RETCODE_RET_ONLNE_ID_NOT_MATCH;
-        case 30: return RETCODE_RET_REGISTER_IS_FULL;
-        case 31: return RETCODE_RET_CHECKSUM_INVALID;
-        case 32: return RETCODE_RET_BLACK_REGISTER_IP;
-        case 33: return RETCODE_RET_EXCEED_REGISTER_RATE;
-        case 34: return RETCODE_RET_UNKNOWN_PLATFORM;
-        case 35: return RETCODE_RET_TOKEN_PARAM_ERROR;
-        case 36: return RETCODE_RET_ANTI_OFFLINE_ERROR;
-        case 37: return RETCODE_RET_BLACK_LOGIN_IP;
-        case 38: return RETCODE_RET_GET_TOKEN_SESSION_HAS_UID;
-        case 39: return RETCODE_RET_ENVIRONMENT_ERROR;
-        case 40: return RETCODE_RET_CHECK_CLIENT_VERSION_HASH_FAIL;
-        case 41: return RETCODE_RET_MINOR_REGISTER_FOBIDDEN;
-        case 42: return RETCODE_RET_SECURITY_LIBRARY_ERROR;
-        case 101: return RETCODE_RET_AVATAR_IN_CD;
-        case 102: return RETCODE_RET_AVATAR_NOT_ALIVE;
-        case 103: return RETCODE_RET_AVATAR_NOT_ON_SCENE;
-        case 104: return RETCODE_RET_CAN_NOT_FIND_AVATAR;
-        case 105: return RETCODE_RET_CAN_NOT_DEL_CUR_AVATAR;
-        case 106: return RETCODE_RET_DUPLICATE_AVATAR;
-        case 107: return RETCODE_RET_AVATAR_IS_SAME_ONE;
-        case 108: return RETCODE_RET_AVATAR_LEVEL_LESS_THAN;
-        case 109: return RETCODE_RET_AVATAR_CAN_NOT_CHANGE_ELEMENT;
-        case 110: return RETCODE_RET_AVATAR_BREAK_LEVEL_LESS_THAN;
-        case 111: return RETCODE_RET_AVATAR_ON_MAX_BREAK_LEVEL;
-        case 112: return RETCODE_RET_AVATAR_ID_ALREADY_EXIST;
-        case 113: return RETCODE_RET_AVATAR_NOT_DEAD;
-        case 114: return RETCODE_RET_AVATAR_IS_REVIVING;
-        case 115: return RETCODE_RET_AVATAR_ID_ERROR;
-        case 116: return RETCODE_RET_REPEAT_SET_PLAYER_BORN_DATA;
-        case 117: return RETCODE_RET_PLAYER_LEVEL_LESS_THAN;
-        case 118: return RETCODE_RET_AVATAR_LIMIT_LEVEL_ERROR;
-        case 119: return RETCODE_RET_CUR_AVATAR_NOT_ALIVE;
-        case 120: return RETCODE_RET_CAN_NOT_FIND_TEAM;
-        case 121: return RETCODE_RET_CAN_NOT_FIND_CUR_TEAM;
-        case 122: return RETCODE_RET_AVATAR_NOT_EXIST_IN_TEAM;
-        case 123: return RETCODE_RET_CAN_NOT_REMOVE_CUR_AVATAR_FROM_TEAM;
-        case 124: return RETCODE_RET_CAN_NOT_USE_REVIVE_ITEM_FOR_CUR_AVATAR;
-        case 125: return RETCODE_RET_TEAM_COST_EXCEED_LIMIT;
-        case 126: return RETCODE_RET_TEAM_AVATAR_IN_EXPEDITION;
-        case 127: return RETCODE_RET_TEAM_CAN_NOT_CHOSE_REPLACE_USE;
-        case 128: return RETCODE_RET_AVATAR_IN_COMBAT;
-        case 130: return RETCODE_RET_NICKNAME_UTF8_ERROR;
-        case 131: return RETCODE_RET_NICKNAME_TOO_LONG;
-        case 132: return RETCODE_RET_NICKNAME_WORD_ILLEGAL;
-        case 133: return RETCODE_RET_NICKNAME_TOO_MANY_DIGITS;
-        case 134: return RETCODE_RET_NICKNAME_IS_EMPTY;
-        case 135: return RETCODE_RET_NICKNAME_MONTHLY_LIMIT;
-        case 136: return RETCODE_RET_NICKNAME_NOT_CHANGED;
-        case 140: return RETCODE_RET_PLAYER_NOT_ONLINE;
-        case 141: return RETCODE_RET_OPEN_STATE_NOT_OPEN;
-        case 142: return RETCODE_RET_FEATURE_CLOSED;
-        case 152: return RETCODE_RET_AVATAR_EXPEDITION_AVATAR_DIE;
-        case 153: return RETCODE_RET_AVATAR_EXPEDITION_COUNT_LIMIT;
-        case 154: return RETCODE_RET_AVATAR_EXPEDITION_MAIN_FORBID;
-        case 155: return RETCODE_RET_AVATAR_EXPEDITION_TRIAL_FORBID;
-        case 156: return RETCODE_RET_TEAM_NAME_ILLEGAL;
-        case 157: return RETCODE_RET_IS_NOT_IN_STANDBY;
-        case 158: return RETCODE_RET_IS_IN_DUNGEON;
-        case 159: return RETCODE_RET_IS_IN_LOCK_AVATAR_QUEST;
-        case 160: return RETCODE_RET_IS_USING_TRIAL_AVATAR;
-        case 161: return RETCODE_RET_IS_USING_TEMP_AVATAR;
-        case 162: return RETCODE_RET_NOT_HAS_FLYCLOAK;
-        case 163: return RETCODE_RET_FETTER_REWARD_ALREADY_GOT;
-        case 164: return RETCODE_RET_FETTER_REWARD_LEVEL_NOT_ENOUGH;
-        case 165: return RETCODE_RET_WORLD_LEVEL_ADJUST_MIN_LEVEL;
-        case 166: return RETCODE_RET_WORLD_LEVEL_ADJUST_CD;
-        case 167: return RETCODE_RET_NOT_HAS_COSTUME;
-        case 168: return RETCODE_RET_COSTUME_AVATAR_ERROR;
-        case 169: return RETCODE_RET_FLYCLOAK_PLATFORM_TYPE_ERR;
-        case 170: return RETCODE_RET_IN_TRANSFER;
-        case 171: return RETCODE_RET_IS_IN_LOCK_AVATAR;
-        case 172: return RETCODE_RET_FULL_BACKUP_TEAM;
-        case 173: return RETCODE_RET_BACKUP_TEAM_ID_NOT_VALID;
-        case 174: return RETCODE_RET_BACKUP_TEAM_IS_CUR_TEAM;
-        case 201: return RETCODE_RET_FLOAT_ERROR;
-        case 301: return RETCODE_RET_NPC_NOT_EXIST;
-        case 302: return RETCODE_RET_NPC_TOO_FAR;
-        case 303: return RETCODE_RET_NOT_CURRENT_TALK;
-        case 304: return RETCODE_RET_NPC_CREATE_FAIL;
-        case 305: return RETCODE_RET_NPC_MOVE_FAIL;
-        case 401: return RETCODE_RET_QUEST_NOT_EXIST;
-        case 402: return RETCODE_RET_QUEST_IS_FAIL;
-        case 403: return RETCODE_RET_QUEST_CONTENT_ERROR;
-        case 404: return RETCODE_RET_BARGAIN_NOT_ACTIVATED;
-        case 405: return RETCODE_RET_BARGAIN_FINISHED;
-        case 406: return RETCODE_RET_INFERENCE_ASSOCIATE_WORD_ERROR;
-        case 407: return RETCODE_RET_INFERENCE_SUBMIT_WORD_NO_CONCLUSION;
-        case 501: return RETCODE_RET_POINT_NOT_UNLOCKED;
-        case 502: return RETCODE_RET_POINT_TOO_FAR;
-        case 503: return RETCODE_RET_POINT_ALREAY_UNLOCKED;
-        case 504: return RETCODE_RET_ENTITY_NOT_EXIST;
-        case 505: return RETCODE_RET_ENTER_SCENE_FAIL;
-        case 506: return RETCODE_RET_PLAYER_IS_ENTER_SCENE;
-        case 507: return RETCODE_RET_CITY_MAX_LEVEL;
-        case 508: return RETCODE_RET_AREA_LOCKED;
-        case 509: return RETCODE_RET_JOIN_OTHER_WAIT;
-        case 510: return RETCODE_RET_WEATHER_AREA_NOT_FOUND;
-        case 511: return RETCODE_RET_WEATHER_IS_LOCKED;
-        case 512: return RETCODE_RET_NOT_IN_SELF_SCENE;
-        case 513: return RETCODE_RET_GROUP_NOT_EXIST;
-        case 514: return RETCODE_RET_MARK_NAME_ILLEGAL;
-        case 515: return RETCODE_RET_MARK_ALREADY_EXISTS;
-        case 516: return RETCODE_RET_MARK_OVERFLOW;
-        case 517: return RETCODE_RET_MARK_NOT_EXISTS;
-        case 518: return RETCODE_RET_MARK_UNKNOWN_TYPE;
-        case 519: return RETCODE_RET_MARK_NAME_TOO_LONG;
-        case 520: return RETCODE_RET_DISTANCE_LONG;
-        case 521: return RETCODE_RET_ENTER_SCENE_TOKEN_INVALID;
-        case 522: return RETCODE_RET_NOT_IN_WORLD_SCENE;
-        case 523: return RETCODE_RET_ANY_GALLERY_STARTED;
-        case 524: return RETCODE_RET_GALLERY_NOT_START;
-        case 525: return RETCODE_RET_GALLERY_INTERRUPT_ONLY_ON_SINGLE_MODE;
-        case 526: return RETCODE_RET_GALLERY_CANNOT_INTERRUPT;
-        case 527: return RETCODE_RET_GALLERY_WORLD_NOT_MEET;
-        case 528: return RETCODE_RET_GALLERY_SCENE_NOT_MEET;
-        case 529: return RETCODE_RET_CUR_PLAY_CANNOT_TRANSFER;
-        case 530: return RETCODE_RET_CANT_USE_WIDGET_IN_HOME_SCENE;
-        case 531: return RETCODE_RET_SCENE_GROUP_NOT_MATCH;
-        case 551: return RETCODE_RET_POS_ROT_INVALID;
-        case 552: return RETCODE_RET_MARK_INVALID_SCENE_ID;
-        case 553: return RETCODE_RET_INVALID_SCENE_TO_USE_ANCHOR_POINT;
-        case 554: return RETCODE_RET_ENTER_HOME_SCENE_FAIL;
-        case 555: return RETCODE_RET_CUR_SCENE_IS_NULL;
-        case 556: return RETCODE_RET_GROUP_ID_ERROR;
-        case 557: return RETCODE_RET_GALLERY_INTERRUPT_NOT_OWNER;
-        case 558: return RETCODE_RET_NO_SPRING_IN_AREA;
-        case 559: return RETCODE_RET_AREA_NOT_IN_SCENE;
-        case 560: return RETCODE_RET_INVALID_CITY_ID;
-        case 561: return RETCODE_RET_INVALID_SCENE_ID;
-        case 562: return RETCODE_RET_DEST_SCENE_IS_NOT_ALLOW;
-        case 563: return RETCODE_RET_LEVEL_TAG_SWITCH_IN_CD;
-        case 564: return RETCODE_RET_LEVEL_TAG_ALREADY_EXIST;
-        case 565: return RETCODE_RET_INVALID_AREA_ID;
-        case 601: return RETCODE_RET_ITEM_NOT_EXIST;
-        case 602: return RETCODE_RET_PACK_EXCEED_MAX_WEIGHT;
-        case 603: return RETCODE_RET_ITEM_NOT_DROPABLE;
-        case 604: return RETCODE_RET_ITEM_NOT_USABLE;
-        case 605: return RETCODE_RET_ITEM_INVALID_USE_COUNT;
-        case 606: return RETCODE_RET_ITEM_INVALID_DROP_COUNT;
-        case 607: return RETCODE_RET_ITEM_ALREADY_EXIST;
-        case 608: return RETCODE_RET_ITEM_IN_COOLDOWN;
-        case 609: return RETCODE_RET_ITEM_COUNT_NOT_ENOUGH;
-        case 610: return RETCODE_RET_ITEM_INVALID_TARGET;
-        case 611: return RETCODE_RET_RECIPE_NOT_EXIST;
-        case 612: return RETCODE_RET_RECIPE_LOCKED;
-        case 613: return RETCODE_RET_RECIPE_UNLOCKED;
-        case 614: return RETCODE_RET_COMPOUND_QUEUE_FULL;
-        case 615: return RETCODE_RET_COMPOUND_NOT_FINISH;
-        case 616: return RETCODE_RET_MAIL_ITEM_NOT_GET;
-        case 617: return RETCODE_RET_ITEM_EXCEED_LIMIT;
-        case 618: return RETCODE_RET_AVATAR_CAN_NOT_USE;
-        case 619: return RETCODE_RET_ITEM_NEED_PLAYER_LEVEL;
-        case 620: return RETCODE_RET_RECIPE_NOT_AUTO_QTE;
-        case 621: return RETCODE_RET_COMPOUND_BUSY_QUEUE;
-        case 622: return RETCODE_RET_NEED_MORE_SCOIN;
-        case 623: return RETCODE_RET_SKILL_DEPOT_NOT_FOUND;
-        case 624: return RETCODE_RET_HCOIN_NOT_ENOUGH;
-        case 625: return RETCODE_RET_SCOIN_NOT_ENOUGH;
-        case 626: return RETCODE_RET_HCOIN_EXCEED_LIMIT;
-        case 627: return RETCODE_RET_SCOIN_EXCEED_LIMIT;
-        case 628: return RETCODE_RET_MAIL_EXPIRED;
-        case 629: return RETCODE_RET_REWARD_HAS_TAKEN;
-        case 630: return RETCODE_RET_COMBINE_COUNT_TOO_LARGE;
-        case 631: return RETCODE_RET_GIVING_ITEM_WRONG;
-        case 632: return RETCODE_RET_GIVING_IS_FINISHED;
-        case 633: return RETCODE_RET_GIVING_NOT_ACTIVED;
-        case 634: return RETCODE_RET_FORGE_QUEUE_FULL;
-        case 635: return RETCODE_RET_FORGE_QUEUE_CAPACITY;
-        case 636: return RETCODE_RET_FORGE_QUEUE_NOT_FOUND;
-        case 637: return RETCODE_RET_FORGE_QUEUE_EMPTY;
-        case 638: return RETCODE_RET_NOT_SUPPORT_ITEM;
-        case 639: return RETCODE_RET_ITEM_EMPTY;
-        case 640: return RETCODE_RET_VIRTUAL_EXCEED_LIMIT;
-        case 641: return RETCODE_RET_MATERIAL_EXCEED_LIMIT;
-        case 642: return RETCODE_RET_EQUIP_EXCEED_LIMIT;
-        case 643: return RETCODE_RET_ITEM_SHOULD_HAVE_NO_LEVEL;
-        case 644: return RETCODE_RET_WEAPON_PROMOTE_LEVEL_EXCEED_LIMIT;
-        case 645: return RETCODE_RET_WEAPON_LEVEL_INVALID;
-        case 646: return RETCODE_RET_UNKNOW_ITEM_TYPE;
-        case 647: return RETCODE_RET_ITEM_COUNT_IS_ZERO;
-        case 648: return RETCODE_RET_ITEM_IS_EXPIRED;
-        case 649: return RETCODE_RET_ITEM_EXCEED_OUTPUT_LIMIT;
-        case 650: return RETCODE_RET_EQUIP_LEVEL_HIGHER;
-        case 651: return RETCODE_RET_EQUIP_CAN_NOT_WAKE_OFF_WEAPON;
-        case 652: return RETCODE_RET_EQUIP_HAS_BEEN_WEARED;
-        case 653: return RETCODE_RET_EQUIP_WEARED_CANNOT_DROP;
-        case 654: return RETCODE_RET_AWAKEN_LEVEL_MAX;
-        case 655: return RETCODE_RET_MCOIN_NOT_ENOUGH;
-        case 656: return RETCODE_RET_MCOIN_EXCEED_LIMIT;
-        case 660: return RETCODE_RET_RESIN_NOT_ENOUGH;
-        case 661: return RETCODE_RET_RESIN_EXCEED_LIMIT;
-        case 662: return RETCODE_RET_RESIN_OPENSTATE_OFF;
-        case 663: return RETCODE_RET_RESIN_BOUGHT_COUNT_EXCEEDED;
-        case 664: return RETCODE_RET_RESIN_CARD_DAILY_REWARD_HAS_TAKEN;
-        case 665: return RETCODE_RET_RESIN_CARD_EXPIRED;
-        case 666: return RETCODE_RET_AVATAR_CAN_NOT_COOK;
-        case 667: return RETCODE_RET_ATTACH_AVATAR_CD;
-        case 668: return RETCODE_RET_AUTO_RECOVER_OPENSTATE_OFF;
-        case 669: return RETCODE_RET_AUTO_RECOVER_BOUGHT_COUNT_EXCEEDED;
-        case 670: return RETCODE_RET_RESIN_GAIN_FAILED;
-        case 671: return RETCODE_RET_WIDGET_ORNAMENTS_TYPE_ERROR;
-        case 672: return RETCODE_RET_ALL_TARGET_SATIATION_FULL;
-        case 673: return RETCODE_RET_FORGE_WORLD_LEVEL_NOT_MATCH;
-        case 674: return RETCODE_RET_FORGE_POINT_NOT_ENOUGH;
-        case 675: return RETCODE_RET_WIDGET_ANCHOR_POINT_FULL;
-        case 676: return RETCODE_RET_WIDGET_ANCHOR_POINT_NOT_FOUND;
-        case 677: return RETCODE_RET_ALL_BONFIRE_EXCEED_MAX_COUNT;
-        case 678: return RETCODE_RET_BONFIRE_EXCEED_MAX_COUNT;
-        case 679: return RETCODE_RET_LUNCH_BOX_DATA_ERROR;
-        case 680: return RETCODE_RET_INVALID_QUICK_USE_WIDGET;
-        case 681: return RETCODE_RET_INVALID_REPLACE_RESIN_COUNT;
-        case 682: return RETCODE_RET_PREV_DETECTED_GATHER_NOT_FOUND;
-        case 683: return RETCODE_RET_GOT_ALL_ONEOFF_GAHTER;
-        case 684: return RETCODE_RET_INVALID_WIDGET_MATERIAL_ID;
-        case 685: return RETCODE_RET_WIDGET_DETECTOR_NO_HINT_TO_CLEAR;
-        case 686: return RETCODE_RET_WIDGET_ALREADY_WITHIN_NEARBY_RADIUS;
-        case 687: return RETCODE_RET_WIDGET_CLIENT_COLLECTOR_NEED_POINTS;
-        case 688: return RETCODE_RET_WIDGET_IN_COMBAT;
-        case 689: return RETCODE_RET_WIDGET_NOT_SET_QUICK_USE;
-        case 690: return RETCODE_RET_ALREADY_ATTACH_WIDGET;
-        case 691: return RETCODE_RET_EQUIP_IS_LOCKED;
-        case 692: return RETCODE_RET_FORGE_IS_LOCKED;
-        case 693: return RETCODE_RET_COMBINE_IS_LOCKED;
-        case 694: return RETCODE_RET_FORGE_OUTPUT_STACK_LIMIT;
-        case 695: return RETCODE_RET_ALREADY_DETTACH_WIDGET;
-        case 696: return RETCODE_RET_GADGET_BUILDER_EXCEED_MAX_COUNT;
-        case 697: return RETCODE_RET_REUNION_PRIVILEGE_RESIN_TYPE_IS_NORMAL;
-        case 698: return RETCODE_RET_BONUS_COUNT_EXCEED_DOUBLE_LIMIT;
-        case 699: return RETCODE_RET_RELIQUARY_DECOMPOSE_PARAM_ERROR;
-        case 700: return RETCODE_RET_ITEM_COMBINE_COUNT_NOT_ENOUGH;
-        case 701: return RETCODE_RET_GOODS_NOT_EXIST;
-        case 702: return RETCODE_RET_GOODS_MATERIAL_NOT_ENOUGH;
-        case 703: return RETCODE_RET_GOODS_NOT_IN_TIME;
-        case 704: return RETCODE_RET_GOODS_BUY_NUM_NOT_ENOUGH;
-        case 705: return RETCODE_RET_GOODS_BUY_NUM_ERROR;
-        case 706: return RETCODE_RET_SHOP_NOT_OPEN;
-        case 707: return RETCODE_RET_SHOP_CONTENT_NOT_MATCH;
-        case 798: return RETCODE_RET_CHAT_FORBIDDEN;
-        case 799: return RETCODE_RET_CHAT_CD;
-        case 800: return RETCODE_RET_CHAT_FREQUENTLY;
-        case 801: return RETCODE_RET_GADGET_NOT_EXIST;
-        case 802: return RETCODE_RET_GADGET_NOT_INTERACTIVE;
-        case 803: return RETCODE_RET_GADGET_NOT_GATHERABLE;
-        case 804: return RETCODE_RET_CHEST_IS_LOCKED;
-        case 805: return RETCODE_RET_GADGET_CREATE_FAIL;
-        case 806: return RETCODE_RET_WORKTOP_OPTION_NOT_EXIST;
-        case 807: return RETCODE_RET_GADGET_STATUE_NOT_ACTIVE;
-        case 808: return RETCODE_RET_GADGET_STATUE_OPENED;
-        case 809: return RETCODE_RET_BOSS_CHEST_NO_QUALIFICATION;
-        case 810: return RETCODE_RET_BOSS_CHEST_LIFE_TIME_OVER;
-        case 811: return RETCODE_RET_BOSS_CHEST_WEEK_NUM_LIMIT;
-        case 812: return RETCODE_RET_BOSS_CHEST_GUEST_WORLD_LEVEL;
-        case 813: return RETCODE_RET_BOSS_CHEST_HAS_TAKEN;
-        case 814: return RETCODE_RET_BLOSSOM_CHEST_NO_QUALIFICATION;
-        case 815: return RETCODE_RET_BLOSSOM_CHEST_LIFE_TIME_OVER;
-        case 816: return RETCODE_RET_BLOSSOM_CHEST_HAS_TAKEN;
-        case 817: return RETCODE_RET_BLOSSOM_CHEST_GUEST_WORLD_LEVEL;
-        case 818: return RETCODE_RET_MP_PLAY_REWARD_NO_QUALIFICATION;
-        case 819: return RETCODE_RET_MP_PLAY_REWARD_HAS_TAKEN;
-        case 820: return RETCODE_RET_GENERAL_REWARD_NO_QUALIFICATION;
-        case 821: return RETCODE_RET_GENERAL_REWARD_LIFE_TIME_OVER;
-        case 822: return RETCODE_RET_GENERAL_REWARD_HAS_TAKEN;
-        case 823: return RETCODE_RET_GADGET_NOT_VEHICLE;
-        case 824: return RETCODE_RET_VEHICLE_SLOT_OCCUPIED;
-        case 825: return RETCODE_RET_NOT_IN_VEHICLE;
-        case 826: return RETCODE_RET_CREATE_VEHICLE_IN_CD;
-        case 827: return RETCODE_RET_CREATE_VEHICLE_POS_INVALID;
-        case 828: return RETCODE_RET_VEHICLE_POINT_NOT_UNLOCK;
-        case 829: return RETCODE_RET_GADGET_INTERACT_COND_NOT_MEET;
-        case 830: return RETCODE_RET_GADGET_INTERACT_PARAM_ERROR;
-        case 831: return RETCODE_RET_GADGET_CUSTOM_COMBINATION_INVALID;
-        case 832: return RETCODE_RET_DESHRET_OBELISK_DUPLICATE_INTERACT;
-        case 833: return RETCODE_RET_DESHRET_OBELISK_NO_AVAIL_CHEST;
-        case 860: return RETCODE_RET_ACTIVITY_CLOSE;
-        case 861: return RETCODE_RET_ACTIVITY_ITEM_ERROR;
-        case 862: return RETCODE_RET_ACTIVITY_CONTRIBUTION_NOT_ENOUGH;
-        case 863: return RETCODE_RET_SEA_LAMP_PHASE_NOT_FINISH;
-        case 864: return RETCODE_RET_SEA_LAMP_FLY_NUM_LIMIT;
-        case 865: return RETCODE_RET_SEA_LAMP_FLY_LAMP_WORD_ILLEGAL;
-        case 866: return RETCODE_RET_ACTIVITY_WATCHER_REWARD_TAKEN;
-        case 867: return RETCODE_RET_ACTIVITY_WATCHER_REWARD_NOT_FINISHED;
-        case 868: return RETCODE_RET_SALESMAN_ALREADY_DELIVERED;
-        case 869: return RETCODE_RET_SALESMAN_REWARD_COUNT_NOT_ENOUGH;
-        case 870: return RETCODE_RET_SALESMAN_POSITION_INVALID;
-        case 871: return RETCODE_RET_DELIVER_NOT_FINISH_ALL_QUEST;
-        case 872: return RETCODE_RET_DELIVER_ALREADY_TAKE_DAILY_REWARD;
-        case 873: return RETCODE_RET_ASTER_PROGRESS_EXCEED_LIMIT;
-        case 874: return RETCODE_RET_ASTER_CREDIT_EXCEED_LIMIT;
-        case 875: return RETCODE_RET_ASTER_TOKEN_EXCEED_LIMIT;
-        case 876: return RETCODE_RET_ASTER_CREDIT_NOT_ENOUGH;
-        case 877: return RETCODE_RET_ASTER_TOKEN_NOT_ENOUGH;
-        case 878: return RETCODE_RET_ASTER_SPECIAL_REWARD_HAS_TAKEN;
-        case 879: return RETCODE_RET_FLIGHT_GROUP_ACTIVITY_NOT_STARTED;
-        case 880: return RETCODE_RET_ASTER_MID_PREVIOUS_BATTLE_NOT_FINISHED;
-        case 881: return RETCODE_RET_DRAGON_SPINE_SHIMMERING_ESSENCE_EXCEED_LIMIT;
-        case 882: return RETCODE_RET_DRAGON_SPINE_WARM_ESSENCE_EXCEED_LIMIT;
-        case 883: return RETCODE_RET_DRAGON_SPINE_WONDROUS_ESSENCE_EXCEED_LIMIT;
-        case 884: return RETCODE_RET_DRAGON_SPINE_SHIMMERING_ESSENCE_NOT_ENOUGH;
-        case 885: return RETCODE_RET_DRAGON_SPINE_WARM_ESSENCE_NOT_ENOUGH;
-        case 886: return RETCODE_RET_DRAGON_SPINE_WONDROUS_ESSENCE_NOT_ENOUGH;
-        case 891: return RETCODE_RET_EFFIGY_FIRST_PASS_REWARD_HAS_TAKEN;
-        case 892: return RETCODE_RET_EFFIGY_REWARD_HAS_TAKEN;
-        case 893: return RETCODE_RET_TREASURE_MAP_ADD_TOKEN_EXCEED_LIMIT;
-        case 894: return RETCODE_RET_TREASURE_MAP_TOKEN_NOT_ENOUGHT;
-        case 895: return RETCODE_RET_SEA_LAMP_COIN_EXCEED_LIMIT;
-        case 896: return RETCODE_RET_SEA_LAMP_COIN_NOT_ENOUGH;
-        case 897: return RETCODE_RET_SEA_LAMP_POPULARITY_EXCEED_LIMIT;
-        case 898: return RETCODE_RET_ACTIVITY_AVATAR_REWARD_NOT_OPEN;
-        case 899: return RETCODE_RET_ACTIVITY_AVATAR_REWARD_HAS_TAKEN;
-        case 900: return RETCODE_RET_ARENA_ACTIVITY_ALREADY_STARTED;
-        case 901: return RETCODE_RET_TALENT_ALREAY_UNLOCKED;
-        case 902: return RETCODE_RET_PREV_TALENT_NOT_UNLOCKED;
-        case 903: return RETCODE_RET_BIG_TALENT_POINT_NOT_ENOUGH;
-        case 904: return RETCODE_RET_SMALL_TALENT_POINT_NOT_ENOUGH;
-        case 905: return RETCODE_RET_PROUD_SKILL_ALREADY_GOT;
-        case 906: return RETCODE_RET_PREV_PROUD_SKILL_NOT_GET;
-        case 907: return RETCODE_RET_PROUD_SKILL_MAX_LEVEL;
-        case 910: return RETCODE_RET_CANDIDATE_SKILL_DEPOT_ID_NOT_FIND;
-        case 911: return RETCODE_RET_SKILL_DEPOT_IS_THE_SAME;
-        case 1001: return RETCODE_RET_MONSTER_NOT_EXIST;
-        case 1002: return RETCODE_RET_MONSTER_CREATE_FAIL;
-        case 1101: return RETCODE_RET_DUNGEON_ENTER_FAIL;
-        case 1102: return RETCODE_RET_DUNGEON_QUIT_FAIL;
-        case 1103: return RETCODE_RET_DUNGEON_ENTER_EXCEED_DAY_COUNT;
-        case 1104: return RETCODE_RET_DUNGEON_REVIVE_EXCEED_MAX_COUNT;
-        case 1105: return RETCODE_RET_DUNGEON_REVIVE_FAIL;
-        case 1106: return RETCODE_RET_DUNGEON_NOT_SUCCEED;
-        case 1107: return RETCODE_RET_DUNGEON_CAN_NOT_CANCEL;
-        case 1108: return RETCODE_RET_DEST_DUNGEON_SETTLED;
-        case 1109: return RETCODE_RET_DUNGEON_CANDIDATE_TEAM_IS_FULL;
-        case 1110: return RETCODE_RET_DUNGEON_CANDIDATE_TEAM_IS_DISMISS;
-        case 1111: return RETCODE_RET_DUNGEON_CANDIDATE_TEAM_NOT_ALL_READY;
-        case 1112: return RETCODE_RET_DUNGEON_CANDIDATE_TEAM_HAS_REPEAT_AVATAR;
-        case 1113: return RETCODE_RET_DUNGEON_CANDIDATE_NOT_SINGEL_PASS;
-        case 1114: return RETCODE_RET_DUNGEON_REPLAY_NEED_ALL_PLAYER_DIE;
-        case 1115: return RETCODE_RET_DUNGEON_REPLAY_HAS_REVIVE_COUNT;
-        case 1116: return RETCODE_RET_DUNGEON_OTHERS_LEAVE;
-        case 1117: return RETCODE_RET_DUNGEON_ENTER_LEVEL_LIMIT;
-        case 1118: return RETCODE_RET_DUNGEON_CANNOT_ENTER_PLOT_IN_MP;
-        case 1119: return RETCODE_RET_DUNGEON_DROP_SUBFIELD_LIMIT;
-        case 1120: return RETCODE_RET_DUNGEON_BE_INVITE_PLAYER_AVATAR_ALL_DIE;
-        case 1121: return RETCODE_RET_DUNGEON_CANNOT_KICK;
-        case 1122: return RETCODE_RET_DUNGEON_CANDIDATE_TEAM_SOMEONE_LEVEL_LIMIT;
-        case 1123: return RETCODE_RET_DUNGEON_IN_FORCE_QUIT;
-        case 1124: return RETCODE_RET_DUNGEON_GUEST_QUIT_DUNGEON;
-        case 1125: return RETCODE_RET_DUNGEON_TICKET_FAIL;
-        case 1126: return RETCODE_RET_CUR_DUNGEON_SETTLED;
-        case 1201: return RETCODE_RET_MP_NOT_IN_MY_WORLD;
-        case 1202: return RETCODE_RET_MP_IN_MP_MODE;
-        case 1203: return RETCODE_RET_MP_SCENE_IS_FULL;
-        case 1204: return RETCODE_RET_MP_MODE_NOT_AVAILABLE;
-        case 1205: return RETCODE_RET_MP_PLAYER_NOT_ENTERABLE;
-        case 1206: return RETCODE_RET_MP_QUEST_BLOCK_MP;
-        case 1207: return RETCODE_RET_MP_IN_ROOM_SCENE;
-        case 1208: return RETCODE_RET_MP_WORLD_IS_FULL;
-        case 1209: return RETCODE_RET_MP_PLAYER_NOT_ALLOW_ENTER;
-        case 1210: return RETCODE_RET_MP_PLAYER_DISCONNECTED;
-        case 1211: return RETCODE_RET_MP_NOT_IN_MP_MODE;
-        case 1212: return RETCODE_RET_MP_OWNER_NOT_ENTER;
-        case 1213: return RETCODE_RET_MP_ALLOW_ENTER_PLAYER_FULL;
-        case 1214: return RETCODE_RET_MP_TARGET_PLAYER_IN_TRANSFER;
-        case 1215: return RETCODE_RET_MP_TARGET_ENTERING_OTHER;
-        case 1216: return RETCODE_RET_MP_OTHER_ENTERING;
-        case 1217: return RETCODE_RET_MP_ENTER_MAIN_PLAYER_IN_PLOT;
-        case 1218: return RETCODE_RET_MP_NOT_PS_PLAYER;
-        case 1219: return RETCODE_RET_MP_PLAY_NOT_ACTIVE;
-        case 1220: return RETCODE_RET_MP_PLAY_REMAIN_REWARDS;
-        case 1221: return RETCODE_RET_MP_PLAY_NO_REWARD;
-        case 1223: return RETCODE_RET_MP_OPEN_STATE_FAIL;
-        case 1224: return RETCODE_RET_MP_PLAYER_IN_BLACKLIST;
-        case 1225: return RETCODE_RET_MP_REPLY_TIMEOUT;
-        case 1226: return RETCODE_RET_MP_IS_BLOCK;
-        case 1227: return RETCODE_RET_MP_ENTER_MAIN_PLAYER_IN_MP_PLAY;
-        case 1228: return RETCODE_RET_MP_IN_MP_PLAY_BATTLE;
-        case 1229: return RETCODE_RET_MP_GUEST_HAS_REWARD_REMAINED;
-        case 1230: return RETCODE_RET_MP_QUIT_MP_INVALID;
-        case 1231: return RETCODE_RET_MP_OTHER_DATA_VERSION_NOT_LATEST;
-        case 1232: return RETCODE_RET_MP_DATA_VERSION_NOT_LATEST;
-        case 1233: return RETCODE_RET_MP_CUR_WORLD_NOT_ENTERABLE;
-        case 1234: return RETCODE_RET_MP_ANY_GALLERY_STARTED;
-        case 1235: return RETCODE_RET_MP_HAS_ACTIVE_DRAFT;
-        case 1236: return RETCODE_RET_MP_PLAYER_IN_DUNGEON;
-        case 1237: return RETCODE_RET_MP_MATCH_FULL;
-        case 1238: return RETCODE_RET_MP_MATCH_LIMIT;
-        case 1239: return RETCODE_RET_MP_MATCH_IN_PUNISH;
-        case 1240: return RETCODE_RET_MP_IS_IN_MULTISTAGE;
-        case 1241: return RETCODE_RET_MP_MATCH_PLAY_NOT_OPEN;
-        case 1242: return RETCODE_RET_MP_ONLY_MP_WITH_PS_PLAYER;
-        case 1243: return RETCODE_RET_MP_GUEST_LOADING_FIRST_ENTER;
-        case 1244: return RETCODE_RET_MP_SUMMER_TIME_SPRINT_BOAT_ONGOING;
-        case 1245: return RETCODE_RET_MP_BLITZ_RUSH_PARKOUR_CHALLENGE_ONGOING;
-        case 1246: return RETCODE_RET_MP_MUSIC_GAME_ONGOING;
-        case 1247: return RETCODE_RET_MP_IN_MPING_MODE;
-        case 1248: return RETCODE_RET_MP_OWNER_IN_SINGLE_SCENE;
-        case 1249: return RETCODE_RET_MP_IN_SINGLE_SCENE;
-        case 1250: return RETCODE_RET_MP_REPLY_NO_VALID_AVATAR;
-        case 1301: return RETCODE_RET_MAIL_PARA_ERR;
-        case 1302: return RETCODE_RET_MAIL_MAX_NUM;
-        case 1303: return RETCODE_RET_MAIL_ITEM_NUM_EXCEED;
-        case 1304: return RETCODE_RET_MAIL_TITLE_LEN_EXCEED;
-        case 1305: return RETCODE_RET_MAIL_CONTENT_LEN_EXCEED;
-        case 1306: return RETCODE_RET_MAIL_SENDER_LEN_EXCEED;
-        case 1307: return RETCODE_RET_MAIL_PARSE_PACKET_FAIL;
-        case 1308: return RETCODE_RET_OFFLINE_MSG_MAX_NUM;
-        case 1309: return RETCODE_RET_OFFLINE_MSG_SAME_TICKET;
-        case 1310: return RETCODE_RET_MAIL_EXCEL_MAIL_TYPE_ERROR;
-        case 1311: return RETCODE_RET_MAIL_CANNOT_SEND_MCOIN;
-        case 1312: return RETCODE_RET_MAIL_HCOIN_EXCEED_LIMIT;
-        case 1313: return RETCODE_RET_MAIL_SCOIN_EXCEED_LIMIT;
-        case 1314: return RETCODE_RET_MAIL_MATERIAL_ID_INVALID;
-        case 1315: return RETCODE_RET_MAIL_AVATAR_EXCEED_LIMIT;
-        case 1316: return RETCODE_RET_MAIL_GACHA_TICKET_ETC_EXCEED_LIMIT;
-        case 1317: return RETCODE_RET_MAIL_ITEM_EXCEED_CEHUA_LIMIT;
-        case 1318: return RETCODE_RET_MAIL_SPACE_OR_REST_NUM_NOT_ENOUGH;
-        case 1319: return RETCODE_RET_MAIL_TICKET_IS_EMPTY;
-        case 1320: return RETCODE_RET_MAIL_TRANSACTION_IS_EMPTY;
-        case 1321: return RETCODE_RET_MAIL_DELETE_COLLECTED;
-        case 1330: return RETCODE_RET_DAILY_TASK_NOT_FINISH;
-        case 1331: return RETCODE_RET_DAILY_TAKS_HAS_TAKEN;
-        case 1332: return RETCODE_RET_SOCIAL_OFFLINE_MSG_NUM_EXCEED;
-        case 1333: return RETCODE_RET_DAILY_TASK_FILTER_CITY_NOT_OPEN;
-        case 1401: return RETCODE_RET_GACHA_INAVAILABLE;
-        case 1402: return RETCODE_RET_GACHA_RANDOM_NOT_MATCH;
-        case 1403: return RETCODE_RET_GACHA_SCHEDULE_NOT_MATCH;
-        case 1404: return RETCODE_RET_GACHA_INVALID_TIMES;
-        case 1405: return RETCODE_RET_GACHA_COST_ITEM_NOT_ENOUGH;
-        case 1406: return RETCODE_RET_GACHA_TIMES_LIMIT;
-        case 1407: return RETCODE_RET_GACHA_WISH_SAME_ITEM;
-        case 1408: return RETCODE_RET_GACHA_WISH_INVALID_ITEM;
-        case 1409: return RETCODE_RET_GACHA_MINORS_TIMES_LIMIT;
-        case 1410: return RETCODE_RET_GACHA_GENERAL_TIMES_LIMIT;
-        case 1501: return RETCODE_RET_INVESTIGAITON_NOT_IN_PROGRESS;
-        case 1502: return RETCODE_RET_INVESTIGAITON_UNCOMPLETE;
-        case 1503: return RETCODE_RET_INVESTIGAITON_REWARD_TAKEN;
-        case 1504: return RETCODE_RET_INVESTIGAITON_TARGET_STATE_ERROR;
-        case 1505: return RETCODE_RET_PUSH_TIPS_NOT_FOUND;
-        case 1506: return RETCODE_RET_SIGN_IN_RECORD_NOT_FOUND;
-        case 1507: return RETCODE_RET_ALREADY_HAVE_SIGNED_IN;
-        case 1508: return RETCODE_RET_SIGN_IN_COND_NOT_SATISFIED;
-        case 1509: return RETCODE_RET_BONUS_ACTIVITY_NOT_UNREWARDED;
-        case 1510: return RETCODE_RET_SIGN_IN_REWARDED;
-        case 1521: return RETCODE_RET_TOWER_NOT_OPEN;
-        case 1522: return RETCODE_RET_TOWER_HAVE_DAILY_RECORD;
-        case 1523: return RETCODE_RET_TOWER_NOT_RECORD;
-        case 1524: return RETCODE_RET_TOWER_HAVE_RECORD;
-        case 1525: return RETCODE_RET_TOWER_TEAM_NUM_ERROR;
-        case 1526: return RETCODE_RET_TOWER_FLOOR_NOT_OPEN;
-        case 1527: return RETCODE_RET_TOWER_NO_FLOOR_STAR_RECORD;
-        case 1528: return RETCODE_RET_ALREADY_HAS_TOWER_BUFF;
-        case 1529: return RETCODE_RET_DUPLICATE_ENTER_LEVEL;
-        case 1530: return RETCODE_RET_NOT_IN_TOWER_LEVEL;
-        case 1531: return RETCODE_RET_IN_TOWER_LEVEL;
-        case 1532: return RETCODE_RET_TOWER_PREV_FLOOR_NOT_FINISH;
-        case 1533: return RETCODE_RET_TOWER_STAR_NOT_ENOUGH;
-        case 1541: return RETCODE_RET_BATTLE_PASS_NO_SCHEDULE;
-        case 1542: return RETCODE_RET_BATTLE_PASS_HAS_BUYED;
-        case 1543: return RETCODE_RET_BATTLE_PASS_LEVEL_OVERFLOW;
-        case 1544: return RETCODE_RET_BATTLE_PASS_PRODUCT_EXPIRED;
-        case 1561: return RETCODE_RET_MATCH_HOST_QUIT;
-        case 1562: return RETCODE_RET_MATCH_ALREADY_IN_MATCH;
-        case 1563: return RETCODE_RET_MATCH_NOT_IN_MATCH;
-        case 1564: return RETCODE_RET_MATCH_APPLYING_ENTER_MP;
-        case 1581: return RETCODE_RET_WIDGET_TREASURE_SPOT_NOT_FOUND;
-        case 1582: return RETCODE_RET_WIDGET_TREASURE_ENTITY_EXISTS;
-        case 1583: return RETCODE_RET_WIDGET_TREASURE_SPOT_FAR_AWAY;
-        case 1584: return RETCODE_RET_WIDGET_TREASURE_FINISHED_TODAY;
-        case 1585: return RETCODE_RET_WIDGET_QUICK_USE_REQ_PARAM_ERROR;
-        case 1586: return RETCODE_RET_WIDGET_CAMERA_SCAN_ID_ERROR;
-        case 1587: return RETCODE_RET_WIDGET_NOT_ACTIVE;
-        case 1588: return RETCODE_RET_WIDGET_FEATHER_NOT_ACTIVE;
-        case 1589: return RETCODE_RET_WIDGET_FEATHER_GADGET_TOO_FAR_AWAY;
-        case 1590: return RETCODE_RET_WIDGET_CAPTURE_ANIMAL_NOT_EXIST;
-        case 1591: return RETCODE_RET_WIDGET_CAPTURE_ANIMAL_DROP_BAG_LIMIT;
-        case 1592: return RETCODE_RET_WIDGET_CAPTURE_ANIMAL_CAN_NOT_CAPTURE;
-        case 1593: return RETCODE_RET_WIDGET_SKY_CRYSTAL_ALL_COLLECTED;
-        case 1594: return RETCODE_RET_WIDGET_SKY_CRYSTAL_HINT_ALREADY_EXIST;
-        case 1595: return RETCODE_RET_WIDGET_SKY_CRYSTAL_NOT_FOUND;
-        case 1596: return RETCODE_RET_WIDGET_SKY_CRYSTAL_NO_HINT_TO_CLEAR;
-        case 1597: return RETCODE_RET_WIDGET_LIGHT_STONE_ENERGY_NOT_ENOUGH;
-        case 1598: return RETCODE_RET_WIDGET_TOY_CRYSTAL_ENERGY_NOT_ENOUGH;
-        case 1599: return RETCODE_RET_WIDGET_LIGHT_STONE_LEVEL_NOT_ENOUGH;
-        case 2001: return RETCODE_RET_UID_NOT_EXIST;
-        case 2002: return RETCODE_RET_PARSE_BIN_ERROR;
-        case 2003: return RETCODE_RET_ACCOUNT_INFO_NOT_EXIST;
-        case 2004: return RETCODE_RET_ORDER_INFO_NOT_EXIST;
-        case 2005: return RETCODE_RET_SNAPSHOT_INDEX_ERROR;
-        case 2006: return RETCODE_RET_MAIL_HAS_BEEN_SENT;
-        case 2007: return RETCODE_RET_PRODUCT_NOT_EXIST;
-        case 2008: return RETCODE_RET_UNFINISH_ORDER;
-        case 2009: return RETCODE_RET_ID_NOT_EXIST;
-        case 2010: return RETCODE_RET_ORDER_TRADE_EARLY;
-        case 2011: return RETCODE_RET_ORDER_FINISHED;
-        case 2012: return RETCODE_RET_GAMESERVER_VERSION_WRONG;
-        case 2013: return RETCODE_RET_OFFLINE_OP_FULL_LENGTH;
-        case 2014: return RETCODE_RET_CONCERT_PRODUCT_OBTAIN_LIMIT;
-        case 2015: return RETCODE_RET_CONCERT_PRODUCT_TICKET_DUPLICATED;
-        case 2016: return RETCODE_RET_CONCERT_PRODUCT_TICKET_EMPTY;
-        case 5001: return RETCODE_RET_REDIS_MODIFIED;
-        case 5002: return RETCODE_RET_REDIS_UID_NOT_EXIST;
-        case 6001: return RETCODE_RET_PATHFINDING_DATA_NOT_EXIST;
-        case 6002: return RETCODE_RET_PATHFINDING_DESTINATION_NOT_EXIST;
-        case 6003: return RETCODE_RET_PATHFINDING_ERROR_SCENE;
-        case 6004: return RETCODE_RET_PATHFINDING_SCENE_DATA_LOADING;
-        case 7001: return RETCODE_RET_FRIEND_COUNT_EXCEEDED;
-        case 7002: return RETCODE_RET_PLAYER_NOT_EXIST;
-        case 7003: return RETCODE_RET_ALREADY_SENT_ADD_REQUEST;
-        case 7004: return RETCODE_RET_ASK_FRIEND_LIST_FULL;
-        case 7005: return RETCODE_RET_PLAYER_ALREADY_IS_FRIEND;
-        case 7006: return RETCODE_RET_PLAYER_NOT_ASK_FRIEND;
-        case 7007: return RETCODE_RET_TARGET_FRIEND_COUNT_EXCEED;
-        case 7008: return RETCODE_RET_NOT_FRIEND;
-        case 7009: return RETCODE_RET_BIRTHDAY_CANNOT_BE_SET_TWICE;
-        case 7010: return RETCODE_RET_CANNOT_ADD_SELF_FRIEND;
-        case 7011: return RETCODE_RET_SIGNATURE_ILLEGAL;
-        case 7012: return RETCODE_RET_PS_PLAYER_CANNOT_ADD_FRIENDS;
-        case 7013: return RETCODE_RET_PS_PLAYER_CANNOT_REMOVE_FRIENDS;
-        case 7014: return RETCODE_RET_NAME_CARD_NOT_UNLOCKED;
-        case 7015: return RETCODE_RET_ALREADY_IN_BLACKLIST;
-        case 7016: return RETCODE_RET_PS_PALEYRS_CANNOT_ADD_BLACKLIST;
-        case 7017: return RETCODE_RET_PLAYER_BLACKLIST_FULL;
-        case 7018: return RETCODE_RET_PLAYER_NOT_IN_BLACKLIST;
-        case 7019: return RETCODE_RET_BLACKLIST_PLAYER_CANNOT_ADD_FRIEND;
-        case 7020: return RETCODE_RET_IN_TARGET_BLACKLIST;
-        case 7021: return RETCODE_RET_CANNOT_ADD_TARGET_FRIEND;
-        case 7022: return RETCODE_RET_BIRTHDAY_FORMAT_ERROR;
-        case 7023: return RETCODE_RET_ONLINE_ID_NOT_EXISTS;
-        case 7024: return RETCODE_RET_FIRST_SHARE_REWARD_HAS_TAKEN;
-        case 7025: return RETCODE_RET_PS_PLAYER_CANNOT_REMOVE_BLACKLIST;
-        case 7026: return RETCODE_RET_REPORT_CD;
-        case 7027: return RETCODE_RET_REPORT_CONTENT_ILLEGAL;
-        case 7028: return RETCODE_RET_REMARK_WORD_ILLEGAL;
-        case 7029: return RETCODE_RET_REMARK_TOO_LONG;
-        case 7030: return RETCODE_RET_REMARK_UTF8_ERROR;
-        case 7031: return RETCODE_RET_REMARK_IS_EMPTY;
-        case 7032: return RETCODE_RET_ASK_ADD_FRIEND_CD;
-        case 7033: return RETCODE_RET_SHOW_AVATAR_INFO_NOT_EXIST;
-        case 7034: return RETCODE_RET_PLAYER_NOT_SHOW_AVATAR;
-        case 7035: return RETCODE_RET_SOCIAL_UPDATE_SHOW_LIST_REPEAT_ID;
-        case 7036: return RETCODE_RET_PSN_ID_NOT_FOUND;
-        case 7037: return RETCODE_RET_EMOJI_COLLECTION_NUM_EXCEED_LIMIT;
-        case 7038: return RETCODE_RET_REMARK_EMPTY;
-        case 7039: return RETCODE_RET_IN_TARGET_PSN_BLACKLIST;
-        case 7040: return RETCODE_RET_SIGNATURE_NOT_CHANGED;
-        case 7041: return RETCODE_RET_SIGNATURE_MONTHLY_LIMIT;
-        case 7042: return RETCODE_RET_REQ_FRIEND_AVATAR_FREQUENTLY;
-        case 7043: return RETCODE_RET_PSN_GET_PLAYER_SOCIAL_DETAIL_FAIL;
-        case 7081: return RETCODE_RET_OFFERING_NOT_OPEN;
-        case 7082: return RETCODE_RET_OFFERING_LEVEL_LIMIT;
-        case 7083: return RETCODE_RET_OFFERING_LEVEL_NOT_REACH;
-        case 7084: return RETCODE_RET_OFFERING_LEVEL_HAS_TAKEN;
-        case 7101: return RETCODE_RET_CITY_REPUTATION_NOT_OPEN;
-        case 7102: return RETCODE_RET_CITY_REPUTATION_LEVEL_TAKEN;
-        case 7103: return RETCODE_RET_CITY_REPUTATION_LEVEL_NOT_REACH;
-        case 7104: return RETCODE_RET_CITY_REPUTATION_PARENT_QUEST_TAKEN;
-        case 7105: return RETCODE_RET_CITY_REPUTATION_PARENT_QUEST_UNFINISH;
-        case 7106: return RETCODE_RET_CITY_REPUTATION_ACCEPT_REQUEST;
-        case 7107: return RETCODE_RET_CITY_REPUTATION_NOT_ACCEPT_REQUEST;
-        case 7108: return RETCODE_RET_CITY_REPUTATION_ACCEPT_REQUEST_LIMIT;
-        case 7109: return RETCODE_RET_CITY_REPUTATION_ENTRANCE_NOT_OPEN;
-        case 7110: return RETCODE_RET_CITY_REPUTATION_TAKEN_REQUEST_REWARD;
-        case 7111: return RETCODE_RET_CITY_REPUTATION_SWITCH_CLOSE;
-        case 7112: return RETCODE_RET_CITY_REPUTATION_ENTRACE_SWITCH_CLOSE;
-        case 7113: return RETCODE_RET_CITY_REPUTATION_TAKEN_EXPLORE_REWARD;
-        case 7114: return RETCODE_RET_CITY_REPUTATION_EXPLORE_NOT_REACH;
-        case 7120: return RETCODE_RET_MECHANICUS_NOT_OPEN;
-        case 7121: return RETCODE_RET_MECHANICUS_GEAR_UNLOCK;
-        case 7122: return RETCODE_RET_MECHANICUS_GEAR_LOCK;
-        case 7123: return RETCODE_RET_MECHANICUS_GEAR_LEVEL_LIMIT;
-        case 7124: return RETCODE_RET_MECHANICUS_COIN_NOT_ENOUGH;
-        case 7125: return RETCODE_RET_MECHANICUS_NO_SEQUENCE;
-        case 7126: return RETCODE_RET_MECHANICUS_SEQUENCE_LIMIT_LEVEL;
-        case 7127: return RETCODE_RET_MECHANICUS_SEQUENCE_LIMIT_OPEN;
-        case 7128: return RETCODE_RET_MECHANICUS_DIFFICULT_NOT_SUPPORT;
-        case 7129: return RETCODE_RET_MECHANICUS_TICKET_NOT_ENOUGH;
-        case 7130: return RETCODE_RET_MECHANICUS_TEACH_NOT_FINISH;
-        case 7131: return RETCODE_RET_MECHANICUS_TEACH_FINISHED;
-        case 7132: return RETCODE_RET_MECHANICUS_PREV_DIFFICULT_LEVEL_BLOCK;
-        case 7133: return RETCODE_RET_MECHANICUS_PLAYER_LIMIT;
-        case 7134: return RETCODE_RET_MECHANICUS_PUNISH_TIME;
-        case 7135: return RETCODE_RET_MECHANICUS_SWITCH_CLOSE;
-        case 7150: return RETCODE_RET_MECHANICUS_BATTLE_NOT_IN_DUNGEON;
-        case 7151: return RETCODE_RET_MECHANICUS_BATTLE_PLAY_NOT_FOUND;
-        case 7152: return RETCODE_RET_MECHANICUS_BATTLE_DUPLICATE_PICK_CARD;
-        case 7153: return RETCODE_RET_MECHANICUS_BATTLE_PLAYER_NOT_IN_PLAY;
-        case 7154: return RETCODE_RET_MECHANICUS_BATTLE_CARD_NOT_AVAILABLE;
-        case 7155: return RETCODE_RET_MECHANICUS_BATTLE_NOT_IN_CARD_STAGE;
-        case 7156: return RETCODE_RET_MECHANICUS_BATTLE_CARD_IS_WAITING;
-        case 7157: return RETCODE_RET_MECHANICUS_BATTLE_CARD_ALL_CONFIRMED;
-        case 7158: return RETCODE_RET_MECHANICUS_BATTLE_CARD_ALREADY_CONFIRMED;
-        case 7159: return RETCODE_RET_MECHANICUS_BATTLE_CARD_CONFIRMED_BY_OTHER;
-        case 7160: return RETCODE_RET_MECHANICUS_BATTLE_CARD_NOT_ENOUGH_POINTS;
-        case 7161: return RETCODE_RET_MECHANICUS_BATTLE_CARD_ALREADY_SKIPPED;
-        case 8001: return RETCODE_RET_LEGENDARY_KEY_NOT_ENOUGH;
-        case 8002: return RETCODE_RET_LEGENDARY_KEY_EXCEED_LIMIT;
-        case 8003: return RETCODE_RET_DAILY_TASK_NOT_ENOUGH_TO_REDEEM;
-        case 8004: return RETCODE_RET_PERSONAL_LINE_OPEN_STATE_OFF;
-        case 8005: return RETCODE_RET_PERSONAL_LINE_LEVEL_NOT_ENOUGH;
-        case 8006: return RETCODE_RET_PERSONAL_LINE_NOT_OPEN;
-        case 8007: return RETCODE_RET_PERSONAL_LINE_PRE_QUEST_NOT_FINISH;
-        case 8201: return RETCODE_RET_HUNTING_ALREADY_FINISH_OFFER_LIMIT;
-        case 8202: return RETCODE_RET_HUNTING_HAS_UNFINISHED_OFFER;
-        case 8203: return RETCODE_RET_HUNTING_FAILED_OFFER_NOT_CD_READY;
-        case 8204: return RETCODE_RET_HUNTING_NOT_TAKE_OFFER;
-        case 8205: return RETCODE_RET_HUNTING_CANNOT_TAKE_TWICE;
-        case 8901: return RETCODE_RET_RPIVATE_CHAT_INVALID_CONTENT_TYPE;
-        case 8902: return RETCODE_RET_PRIVATE_CHAT_TARGET_IS_NOT_FRIEND;
-        case 8903: return RETCODE_RET_PRIVATE_CHAT_CONTENT_NOT_SUPPORTED;
-        case 8904: return RETCODE_RET_PRIVATE_CHAT_CONTENT_TOO_LONG;
-        case 8905: return RETCODE_RET_PRIVATE_CHAT_PULL_TOO_FAST;
-        case 8906: return RETCODE_RET_PRIVATE_CHAT_REPEAT_READ;
-        case 8907: return RETCODE_RET_PRIVATE_CHAT_READ_NOT_FRIEND;
-        case 9001: return RETCODE_RET_REUNION_FINISHED;
-        case 9002: return RETCODE_RET_REUNION_NOT_ACTIVATED;
-        case 9003: return RETCODE_RET_REUNION_ALREADY_TAKE_FIRST_REWARD;
-        case 9004: return RETCODE_RET_REUNION_SIGN_IN_REWARDED;
-        case 9005: return RETCODE_RET_REUNION_WATCHER_REWARDED;
-        case 9006: return RETCODE_RET_REUNION_WATCHER_NOT_FINISH;
-        case 9007: return RETCODE_RET_REUNION_MISSION_REWARDED;
-        case 9008: return RETCODE_RET_REUNION_MISSION_NOT_FINISH;
-        case 9009: return RETCODE_RET_REUNION_WATCHER_REWARD_NOT_UNLOCKED;
-        case 9101: return RETCODE_RET_BLESSING_CONTENT_CLOSED;
-        case 9102: return RETCODE_RET_BLESSING_NOT_ACTIVE;
-        case 9103: return RETCODE_RET_BLESSING_NOT_TODAY_ENTITY;
-        case 9104: return RETCODE_RET_BLESSING_ENTITY_EXCEED_SCAN_NUM_LIMIT;
-        case 9105: return RETCODE_RET_BLESSING_DAILY_SCAN_NUM_EXCEED_LIMIT;
-        case 9106: return RETCODE_RET_BLESSING_REDEEM_REWARD_NUM_EXCEED_LIMIT;
-        case 9107: return RETCODE_RET_BLESSING_REDEEM_PIC_NUM_NOT_ENOUGH;
-        case 9108: return RETCODE_RET_BLESSING_PIC_NOT_ENOUGH;
-        case 9109: return RETCODE_RET_BLESSING_PIC_HAS_RECEIVED;
-        case 9110: return RETCODE_RET_BLESSING_TARGET_RECV_NUM_EXCEED;
-        case 9111: return RETCODE_RET_FLEUR_FAIR_CREDIT_EXCEED_LIMIT;
-        case 9112: return RETCODE_RET_FLEUR_FAIR_CREDIT_NOT_ENOUGH;
-        case 9113: return RETCODE_RET_FLEUR_FAIR_TOKEN_EXCEED_LIMIT;
-        case 9114: return RETCODE_RET_FLEUR_FAIR_TOKEN_NOT_ENOUGH;
-        case 9115: return RETCODE_RET_FLEUR_FAIR_MINIGAME_NOT_OPEN;
-        case 9116: return RETCODE_RET_FLEUR_FAIR_MUSIC_GAME_DIFFICULTY_NOT_UNLOCK;
-        case 9117: return RETCODE_RET_FLEUR_FAIR_DUNGEON_LOCKED;
-        case 9118: return RETCODE_RET_FLEUR_FAIR_DUNGEON_PUNISH_TIME;
-        case 9119: return RETCODE_RET_FLEUR_FAIR_ONLY_OWNER_CAN_RESTART_MINIGAM;
-        case 9120: return RETCODE_RET_WATER_SPIRIT_COIN_EXCEED_LIMIT;
-        case 9121: return RETCODE_RET_WATER_SPIRIT_COIN_NOT_ENOUGH;
-        case 9122: return RETCODE_RET_REGION_SEARCH_NO_SEARCH;
-        case 9123: return RETCODE_RET_REGION_SEARCH_STATE_ERROR;
-        case 9130: return RETCODE_RET_CHANNELLER_SLAB_LOOP_DUNGEON_STAGE_NOT_OPEN;
-        case 9131: return RETCODE_RET_CHANNELLER_SLAB_LOOP_DUNGEON_NOT_OPEN;
-        case 9132: return RETCODE_RET_CHANNELLER_SLAB_LOOP_DUNGEON_FIRST_PASS_REWARD_HAS_TAKEN;
-        case 9133: return RETCODE_RET_CHANNELLER_SLAB_LOOP_DUNGEON_SCORE_REWARD_HAS_TAKEN;
-        case 9134: return RETCODE_RET_CHANNELLER_SLAB_INVALID_ONE_OFF_DUNGEON;
-        case 9135: return RETCODE_RET_CHANNELLER_SLAB_ONE_OFF_DUNGEON_DONE;
-        case 9136: return RETCODE_RET_CHANNELLER_SLAB_ONE_OFF_DUNGEON_STAGE_NOT_OPEN;
-        case 9137: return RETCODE_RET_CHANNELLER_SLAB_TOKEN_EXCEED_LIMIT;
-        case 9138: return RETCODE_RET_CHANNELLER_SLAB_TOKEN_NOT_ENOUGH;
-        case 9139: return RETCODE_RET_CHANNELLER_SLAB_PLAYER_NOT_IN_ONE_OFF_DUNGEON;
-        case 9150: return RETCODE_RET_MIST_TRIAL_SELECT_CHARACTER_NUM_NOT_ENOUGH;
-        case 9160: return RETCODE_RET_HIDE_AND_SEEK_PLAY_NOT_OPEN;
-        case 9161: return RETCODE_RET_HIDE_AND_SEEK_PLAY_MAP_NOT_OPEN;
-        case 9170: return RETCODE_RET_SUMMER_TIME_DRAFT_WOORD_EXCEED_LIMIT;
-        case 9171: return RETCODE_RET_SUMMER_TIME_DRAFT_WOORD_NOT_ENOUGH;
-        case 9172: return RETCODE_RET_SUMMER_TIME_MINI_HARPASTUM_EXCEED_LIMIT;
-        case 9173: return RETCODE_RET_SUMMER_TIME_MINI_HARPASTUMNOT_ENOUGH;
-        case 9180: return RETCODE_RET_BOUNCE_CONJURING_COIN_EXCEED_LIMIT;
-        case 9181: return RETCODE_RET_BOUNCE_CONJURING_COIN_NOT_ENOUGH;
-        case 9183: return RETCODE_RET_CHESS_TEACH_MAP_FINISHED;
-        case 9184: return RETCODE_RET_CHESS_TEACH_MAP_UNFINISHED;
-        case 9185: return RETCODE_RET_CHESS_COIN_EXCEED_LIMIT;
-        case 9186: return RETCODE_RET_CHESS_COIN_NOT_ENOUGH;
-        case 9187: return RETCODE_RET_CHESS_IN_PUNISH_TIME;
-        case 9188: return RETCODE_RET_CHESS_PREV_MAP_UNFINISHED;
-        case 9189: return RETCODE_RET_CHESS_MAP_LOCKED;
-        case 9192: return RETCODE_RET_BLITZ_RUSH_NOT_OPEN;
-        case 9193: return RETCODE_RET_BLITZ_RUSH_DUNGEON_NOT_OPEN;
-        case 9194: return RETCODE_RET_BLITZ_RUSH_COIN_A_EXCEED_LIMIT;
-        case 9195: return RETCODE_RET_BLITZ_RUSH_COIN_B_EXCEED_LIMIT;
-        case 9196: return RETCODE_RET_BLITZ_RUSH_COIN_A_NOT_ENOUGH;
-        case 9197: return RETCODE_RET_BLITZ_RUSH_COIN_B_NOT_ENOUGH;
-        case 9201: return RETCODE_RET_MIRACLE_RING_VALUE_NOT_ENOUGH;
-        case 9202: return RETCODE_RET_MIRACLE_RING_CD;
-        case 9203: return RETCODE_RET_MIRACLE_RING_REWARD_NOT_TAKEN;
-        case 9204: return RETCODE_RET_MIRACLE_RING_NOT_DELIVER;
-        case 9205: return RETCODE_RET_MIRACLE_RING_DELIVER_EXCEED;
-        case 9206: return RETCODE_RET_MIRACLE_RING_HAS_CREATED;
-        case 9207: return RETCODE_RET_MIRACLE_RING_HAS_NOT_CREATED;
-        case 9208: return RETCODE_RET_MIRACLE_RING_NOT_YOURS;
-        case 9251: return RETCODE_RET_GADGET_FOUNDATION_UNAUTHORIZED;
-        case 9252: return RETCODE_RET_GADGET_FOUNDATION_SCENE_NOT_FOUND;
-        case 9253: return RETCODE_RET_GADGET_FOUNDATION_NOT_IN_INIT_STATE;
-        case 9254: return RETCODE_RET_GADGET_FOUNDATION_BILDING_POINT_NOT_ENOUGHT;
-        case 9255: return RETCODE_RET_GADGET_FOUNDATION_NOT_IN_BUILT_STATE;
-        case 9256: return RETCODE_RET_GADGET_FOUNDATION_OP_NOT_SUPPORTED;
-        case 9257: return RETCODE_RET_GADGET_FOUNDATION_REQ_PLAYER_NOT_IN_SCENE;
-        case 9258: return RETCODE_RET_GADGET_FOUNDATION_LOCKED_BY_ANOTHER_PLAYER;
-        case 9259: return RETCODE_RET_GADGET_FOUNDATION_NOT_LOCKED;
-        case 9260: return RETCODE_RET_GADGET_FOUNDATION_DUPLICATE_LOCK;
-        case 9261: return RETCODE_RET_GADGET_FOUNDATION_PLAYER_NOT_FOUND;
-        case 9262: return RETCODE_RET_GADGET_FOUNDATION_PLAYER_GEAR_NOT_FOUND;
-        case 9263: return RETCODE_RET_GADGET_FOUNDATION_ROTAION_DISABLED;
-        case 9264: return RETCODE_RET_GADGET_FOUNDATION_REACH_DUNGEON_GEAR_LIMIT;
-        case 9265: return RETCODE_RET_GADGET_FOUNDATION_REACH_SINGLE_GEAR_LIMIT;
-        case 9266: return RETCODE_RET_GADGET_FOUNDATION_ROTATION_ON_GOING;
-        case 9301: return RETCODE_RET_OP_ACTIVITY_BONUS_NOT_FOUND;
-        case 9302: return RETCODE_RET_OP_ACTIVITY_NOT_OPEN;
-        case 9501: return RETCODE_RET_MULTISTAGE_PLAY_PLAYER_NOT_IN_SCENE;
-        case 9502: return RETCODE_RET_MULTISTAGE_PLAY_NOT_FOUND;
-        case 9601: return RETCODE_RET_COOP_CHAPTER_NOT_OPEN;
-        case 9602: return RETCODE_RET_COOP_COND_NOT_MEET;
-        case 9603: return RETCODE_RET_COOP_POINT_LOCKED;
-        case 9604: return RETCODE_RET_COOP_NOT_HAVE_PROGRESS;
-        case 9605: return RETCODE_RET_COOP_REWARD_HAS_TAKEN;
-        case 9651: return RETCODE_RET_DRAFT_HAS_ACTIVE_DRAFT;
-        case 9652: return RETCODE_RET_DRAFT_NOT_IN_MY_WORLD;
-        case 9653: return RETCODE_RET_DRAFT_NOT_SUPPORT_MP;
-        case 9654: return RETCODE_RET_DRAFT_PLAYER_NOT_ENOUGH;
-        case 9655: return RETCODE_RET_DRAFT_INCORRECT_SCENE;
-        case 9656: return RETCODE_RET_DRAFT_OTHER_PLAYER_ENTERING;
-        case 9657: return RETCODE_RET_DRAFT_GUEST_IS_TRANSFERRING;
-        case 9658: return RETCODE_RET_DRAFT_GUEST_NOT_IN_DRAFT_SCENE;
-        case 9659: return RETCODE_RET_DRAFT_INVITE_OVER_TIME;
-        case 9660: return RETCODE_RET_DRAFT_TWICE_CONFIRM_OVER_TIMER;
-        case 9701: return RETCODE_RET_HOME_UNKOWN;
-        case 9702: return RETCODE_RET_HOME_INVALID_CLIENT_PARAM;
-        case 9703: return RETCODE_RET_HOME_TARGE_PLAYER_HAS_NO_HOME;
-        case 9704: return RETCODE_RET_HOME_NOT_ONLINE;
-        case 9705: return RETCODE_RET_HOME_PLAYER_FULL;
-        case 9706: return RETCODE_RET_HOME_BLOCKED;
-        case 9707: return RETCODE_RET_HOME_ALREADY_IN_TARGET_HOME_WORLD;
-        case 9708: return RETCODE_RET_HOME_IN_EDIT_MODE;
-        case 9709: return RETCODE_RET_HOME_NOT_IN_EDIT_MODE;
-        case 9710: return RETCODE_RET_HOME_HAS_GUEST;
-        case 9711: return RETCODE_RET_HOME_CANT_ENTER_BY_IN_EDIT_MODE;
-        case 9712: return RETCODE_RET_HOME_CLIENT_PARAM_INVALID;
-        case 9713: return RETCODE_RET_HOME_PLAYER_NOT_IN_HOME_WORLD;
-        case 9714: return RETCODE_RET_HOME_PLAYER_NOT_IN_SELF_HOME_WORLD;
-        case 9715: return RETCODE_RET_HOME_NOT_FOUND_IN_MEM;
-        case 9716: return RETCODE_RET_HOME_PLAYER_IN_HOME_ROOM_SCENE;
-        case 9717: return RETCODE_RET_HOME_HOME_REFUSE_GUEST_ENTER;
-        case 9718: return RETCODE_RET_HOME_OWNER_REFUSE_TO_ENTER_HOME;
-        case 9719: return RETCODE_RET_HOME_OWNER_OFFLINE;
-        case 9720: return RETCODE_RET_HOME_FURNITURE_EXCEED_LIMIT;
-        case 9721: return RETCODE_RET_HOME_FURNITURE_COUNT_NOT_ENOUGH;
-        case 9722: return RETCODE_RET_HOME_IN_TRY_ENTER_PROCESS;
-        case 9723: return RETCODE_RET_HOME_ALREADY_IN_TARGET_SCENE;
-        case 9724: return RETCODE_RET_HOME_COIN_EXCEED_LIMIT;
-        case 9725: return RETCODE_RET_HOME_COIN_NOT_ENOUGH;
-        case 9726: return RETCODE_RET_HOME_MODULE_NOT_UNLOCKED;
-        case 9727: return RETCODE_RET_HOME_CUR_MODULE_CLOSED;
-        case 9728: return RETCODE_RET_HOME_FURNITURE_SUITE_NOT_UNLOCKED;
-        case 9729: return RETCODE_RET_HOME_IN_MATCH;
-        case 9730: return RETCODE_RET_HOME_IN_COMBAT;
-        case 9731: return RETCODE_RET_HOME_EDIT_MODE_CD;
-        case 9732: return RETCODE_RET_HOME_UPDATE_FURNITURE_CD;
-        case 9733: return RETCODE_RET_HOME_BLOCK_FURNITURE_LIMIT;
-        case 9734: return RETCODE_RET_HOME_NOT_SUPPORT;
-        case 9735: return RETCODE_RET_HOME_STATE_NOT_OPEN;
-        case 9736: return RETCODE_RET_HOME_TARGET_STATE_NOT_OPEN;
-        case 9737: return RETCODE_RET_HOME_APPLY_ENTER_OTHER_HOME_FAIL;
-        case 9738: return RETCODE_RET_HOME_SAVE_NO_MAIN_HOUSE;
-        case 9739: return RETCODE_RET_HOME_IN_DUNGEON;
-        case 9740: return RETCODE_RET_HOME_ANY_GALLERY_STARTED;
-        case 9741: return RETCODE_RET_HOME_QUEST_BLOCK_HOME;
-        case 9742: return RETCODE_RET_HOME_WAITING_PRIOR_CHECK;
-        case 9743: return RETCODE_RET_HOME_PERSISTENT_CHECK_FAIL;
-        case 9744: return RETCODE_RET_HOME_FIND_ONLINE_HOME_FAIL;
-        case 9745: return RETCODE_RET_HOME_JOIN_SCENE_FAIL;
-        case 9746: return RETCODE_RET_HOME_MAX_PLAYER;
-        case 9747: return RETCODE_RET_HOME_IN_TRANSFER;
-        case 9748: return RETCODE_RET_HOME_ANY_HOME_GALLERY_STARTED;
-        case 9749: return RETCODE_RET_HOME_CAN_NOT_ENTER_IN_AUDIT;
-        case 9750: return RETCODE_RET_FURNITURE_MAKE_INDEX_ERROR;
-        case 9751: return RETCODE_RET_FURNITURE_MAKE_LOCKED;
-        case 9752: return RETCODE_RET_FURNITURE_MAKE_CONFIG_ERROR;
-        case 9753: return RETCODE_RET_FURNITURE_MAKE_SLOT_FULL;
-        case 9754: return RETCODE_RET_FURNITURE_MAKE_ADD_FURNITURE_FAIL;
-        case 9755: return RETCODE_RET_FURNITURE_MAKE_UNFINISH;
-        case 9756: return RETCODE_RET_FURNITURE_MAKE_IS_FINISH;
-        case 9757: return RETCODE_RET_FURNITURE_MAKE_NOT_IN_CORRECT_HOME;
-        case 9758: return RETCODE_RET_FURNITURE_MAKE_NO_COUNT;
-        case 9759: return RETCODE_RET_FURNITURE_MAKE_ACCELERATE_LIMIT;
-        case 9760: return RETCODE_RET_FURNITURE_MAKE_NO_MAKE_DATA;
-        case 9761: return RETCODE_RET_HOME_LIMITED_SHOP_CLOSE;
-        case 9762: return RETCODE_RET_HOME_AVATAR_NOT_SHOW;
-        case 9763: return RETCODE_RET_HOME_EVENT_COND_NOT_SATISFIED;
-        case 9764: return RETCODE_RET_HOME_INVALID_ARRANGE_ANIMAL_PARAM;
-        case 9765: return RETCODE_RET_HOME_INVALID_ARRANGE_NPC_PARAM;
-        case 9766: return RETCODE_RET_HOME_INVALID_ARRANGE_SUITE_PARAM;
-        case 9767: return RETCODE_RET_HOME_INVALID_ARRANGE_MAIN_HOUSE_PARAM;
-        case 9768: return RETCODE_RET_HOME_AVATAR_STATE_NOT_OPEN;
-        case 9769: return RETCODE_RET_HOME_PLANT_FIELD_NOT_EMPTY;
-        case 9770: return RETCODE_RET_HOME_PLANT_FIELD_EMPTY;
-        case 9771: return RETCODE_RET_HOME_PLANT_FIELD_TYPE_ERROR;
-        case 9772: return RETCODE_RET_HOME_PLANT_TIME_NOT_ENOUGH;
-        case 9773: return RETCODE_RET_HOME_PLANT_SUB_FIELD_NUM_NOT_ENOUGH;
-        case 9774: return RETCODE_RET_HOME_PLANT_FIELD_PARAM_ERROR;
-        case 9775: return RETCODE_RET_HOME_FURNITURE_GUID_ERROR;
-        case 9776: return RETCODE_RET_HOME_FURNITURE_ARRANGE_LIMIT;
-        case 9777: return RETCODE_RET_HOME_FISH_FARMING_LIMIT;
-        case 9778: return RETCODE_RET_HOME_FISH_COUNT_NOT_ENOUGH;
-        case 9779: return RETCODE_RET_HOME_FURNITURE_COST_LIMIT;
-        case 9780: return RETCODE_RET_HOME_CUSTOM_FURNITURE_INVALID;
-        case 9781: return RETCODE_RET_HOME_INVALID_ARRANGE_GROUP_PARAM;
-        case 9782: return RETCODE_RET_HOME_FURNITURE_ARRANGE_GROUP_LIMIT;
-        case 9783: return RETCODE_RET_HOME_PICTURE_FRAME_COOP_CG_GENDER_ERROR;
-        case 9784: return RETCODE_RET_HOME_PICTURE_FRAME_COOP_CG_NOT_UNLOCK;
-        case 9785: return RETCODE_RET_HOME_FURNITURE_CANNOT_ARRANGE;
-        case 9786: return RETCODE_RET_HOME_FURNITURE_IN_DUPLICATE_SUITE;
-        case 9787: return RETCODE_RET_HOME_FURNITURE_CUSTOM_SUITE_TOO_SMALL;
-        case 9788: return RETCODE_RET_HOME_FURNITURE_CUSTOM_SUITE_TOO_BIG;
-        case 9789: return RETCODE_RET_HOME_FURNITURE_SUITE_EXCEED_LIMIT;
-        case 9790: return RETCODE_RET_HOME_FURNITURE_CUSTOM_SUITE_EXCEED_LIMIT;
-        case 9791: return RETCODE_RET_HOME_FURNITURE_CUSTOM_SUITE_INVALID_SURFACE_TYPE;
-        case 9792: return RETCODE_RET_HOME_BGM_ID_NOT_FOUND;
-        case 9793: return RETCODE_RET_HOME_BGM_NOT_UNLOCKED;
-        case 9794: return RETCODE_RET_HOME_BGM_FURNITURE_NOT_FOUND;
-        case 9795: return RETCODE_RET_HOME_BGM_NOT_SUPPORT_BY_CUR_SCENE;
-        case 9796: return RETCODE_RET_HOME_LIMITED_SHOP_GOODS_DISABLE;
-        case 9797: return RETCODE_RET_HOME_WORLD_WOOD_MATERIAL_EMPTY;
-        case 9798: return RETCODE_RET_HOME_WORLD_WOOD_MATERIAL_NOT_FOUND;
-        case 9799: return RETCODE_RET_HOME_WORLD_WOOD_MATERIAL_COUNT_INVALID;
-        case 9800: return RETCODE_RET_HOME_WORLD_WOOD_EXCHANGE_EXCEED_LIMIT;
-        case 10000: return RETCODE_RET_SUMO_ACTIVITY_STAGE_NOT_OPEN;
-        case 10001: return RETCODE_RET_SUMO_ACTIVITY_SWITCH_TEAM_IN_CD;
-        case 10002: return RETCODE_RET_SUMO_ACTIVITY_TEAM_NUM_INCORRECT;
-        case 10004: return RETCODE_RET_LUNA_RITE_ACTIVITY_AREA_ID_ERROR;
-        case 10005: return RETCODE_RET_LUNA_RITE_ACTIVITY_BATTLE_NOT_FINISH;
-        case 10006: return RETCODE_RET_LUNA_RITE_ACTIVITY_ALREADY_SACRIFICE;
-        case 10007: return RETCODE_RET_LUNA_RITE_ACTIVITY_ALREADY_TAKE_REWARD;
-        case 10008: return RETCODE_RET_LUNA_RITE_ACTIVITY_SACRIFICE_NOT_ENOUGH;
-        case 10009: return RETCODE_RET_LUNA_RITE_ACTIVITY_SEARCHING_COND_NOT_MEET;
-        case 10015: return RETCODE_RET_DIG_GADGET_CONFIG_ID_NOT_MATCH;
-        case 10016: return RETCODE_RET_DIG_FIND_NEAREST_POS_FAIL;
-        case 10021: return RETCODE_RET_MUSIC_GAME_LEVEL_NOT_OPEN;
-        case 10022: return RETCODE_RET_MUSIC_GAME_LEVEL_NOT_UNLOCK;
-        case 10023: return RETCODE_RET_MUSIC_GAME_LEVEL_NOT_STARTED;
-        case 10024: return RETCODE_RET_MUSIC_GAME_LEVEL_CONFIG_NOT_FOUND;
-        case 10025: return RETCODE_RET_MUSIC_GAME_LEVEL_ID_NOT_MATCH;
-        case 10031: return RETCODE_RET_ROGUELIKE_COIN_A_NOT_ENOUGH;
-        case 10032: return RETCODE_RET_ROGUELIKE_COIN_B_NOT_ENOUGH;
-        case 10033: return RETCODE_RET_ROGUELIKE_COIN_C_NOT_ENOUGH;
-        case 10034: return RETCODE_RET_ROGUELIKE_COIN_A_EXCEED_LIMIT;
-        case 10035: return RETCODE_RET_ROGUELIKE_COIN_B_EXCEED_LIMIT;
-        case 10036: return RETCODE_RET_ROGUELIKE_COIN_C_EXCEED_LIMIT;
-        case 10037: return RETCODE_RET_ROGUELIKE_RUNE_COUNT_NOT_ENOUGH;
-        case 10038: return RETCODE_RET_ROGUELIKE_NOT_IN_ROGUE_DUNGEON;
-        case 10039: return RETCODE_RET_ROGUELIKE_CELL_NOT_FOUND;
-        case 10040: return RETCODE_RET_ROGUELIKE_CELL_TYPE_INCORRECT;
-        case 10041: return RETCODE_RET_ROGUELIKE_CELL_ALREADY_FINISHED;
-        case 10042: return RETCODE_RET_ROGUELIKE_DUNGEON_HAVE_UNFINISHED_PROGRESS;
-        case 10043: return RETCODE_RET_ROGUELIKE_STAGE_NOT_FINISHED;
-        case 10045: return RETCODE_RET_ROGUELIKE_STAGE_FIRST_PASS_REWARD_HAS_TAKEN;
-        case 10046: return RETCODE_RET_ROGUELIKE_ACTIVITY_CONTENT_CLOSED;
-        case 10047: return RETCODE_RET_ROGUELIKE_DUNGEON_PRE_QUEST_NOT_FINISHED;
-        case 10048: return RETCODE_RET_ROGUELIKE_DUNGEON_NOT_OPEN;
-        case 10049: return RETCODE_RET_ROGUELIKE_SPRINT_IS_BANNED;
-        case 10050: return RETCODE_RET_ROGUELIKE_DUNGEON_PRE_STAGE_NOT_FINISHED;
-        case 10051: return RETCODE_RET_ROGUELIKE_ALL_AVATAR_DIE_CANNOT_RESUME;
-        case 10056: return RETCODE_RET_PLANT_FLOWER_ALREADY_TAKE_SEED;
-        case 10057: return RETCODE_RET_PLANT_FLOWER_FRIEND_HAVE_FLOWER_LIMIT;
-        case 10058: return RETCODE_RET_PLANT_FLOWER_CAN_GIVE_FLOWER_NOT_ENOUGH;
-        case 10059: return RETCODE_RET_PLANT_FLOWER_WISH_FLOWER_KINDS_LIMIT;
-        case 10060: return RETCODE_RET_PLANT_FLOWER_HAVE_FLOWER_NOT_ENOUGH;
-        case 10061: return RETCODE_RET_PLANT_FLOWER_FLOWER_COMBINATION_INVALID;
-        case 10052: return RETCODE_RET_HACHI_DUNGEON_NOT_VALID;
-        case 10053: return RETCODE_RET_HACHI_DUNGEON_STAGE_NOT_OPEN;
-        case 10054: return RETCODE_RET_HACHI_DUNGEON_TEAMMATE_NOT_PASS;
-        case 10071: return RETCODE_RET_WINTER_CAMP_COIN_A_NOT_ENOUGH;
-        case 10072: return RETCODE_RET_WINTER_CAMP_COIN_B_NOT_ENOUGH;
-        case 10073: return RETCODE_RET_WINTER_CAMP_COIN_A_EXCEED_LIMIT;
-        case 10074: return RETCODE_RET_WINTER_CAMP_COIN_B_EXCEED_LIMIT;
-        case 10075: return RETCODE_RET_WINTER_CAMP_WISH_ID_INVALID;
-        case 10076: return RETCODE_RET_WINTER_CAMP_NOT_FOUND_RECV_ITEM_DATA;
-        case 10077: return RETCODE_RET_WINTER_CAMP_FRIEND_ITEM_COUNT_OVERFLOW;
-        case 10078: return RETCODE_RET_WINTER_CAMP_SELECT_ITEM_DATA_INVALID;
-        case 10079: return RETCODE_RET_WINTER_CAMP_ITEM_LIST_EMPTY;
-        case 10080: return RETCODE_RET_WINTER_CAMP_REWARD_ALREADY_TAKEN;
-        case 10081: return RETCODE_RET_WINTER_CAMP_STAGE_NOT_FINISH;
-        case 10082: return RETCODE_RET_WINTER_CAMP_GADGET_INVALID;
-        case 10090: return RETCODE_RET_LANTERN_RITE_COIN_A_NOT_ENOUGH;
-        case 10091: return RETCODE_RET_LANTERN_RITE_COIN_B_NOT_ENOUGH;
-        case 10092: return RETCODE_RET_LANTERN_RITE_COIN_C_NOT_ENOUGH;
-        case 10093: return RETCODE_RET_LANTERN_RITE_COIN_A_EXCEED_LIMIT;
-        case 10094: return RETCODE_RET_LANTERN_RITE_COIN_B_EXCEED_LIMIT;
-        case 10095: return RETCODE_RET_LANTERN_RITE_COIN_C_EXCEED_LIMIT;
-        case 10096: return RETCODE_RET_LANTERN_RITE_PROJECTION_CONTENT_CLOSED;
-        case 10097: return RETCODE_RET_LANTERN_RITE_PROJECTION_CAN_NOT_START;
-        case 10098: return RETCODE_RET_LANTERN_RITE_DUNGEON_NOT_OPEN;
-        case 10099: return RETCODE_RET_LANTERN_RITE_HAS_TAKEN_SKIN_REWARD;
-        case 10100: return RETCODE_RET_LANTERN_RITE_NOT_FINISHED_SKIN_WATCHERS;
-        case 10101: return RETCODE_RET_LANTERN_RITE_FIREWORKS_CONTENT_CLOSED;
-        case 10102: return RETCODE_RET_LANTERN_RITE_FIREWORKS_CHALLENGE_NOT_START;
-        case 10103: return RETCODE_RET_LANTERN_RITE_FIREWORKS_REFORM_PARAM_ERROR;
-        case 10104: return RETCODE_RET_LANTERN_RITE_FIREWORKS_REFORM_SKILL_LOCK;
-        case 10105: return RETCODE_RET_LANTERN_RITE_FIREWORKS_REFORM_STAMINA_NOT_ENOUGH;
-        case 10110: return RETCODE_RET_POTION_ACTIVITY_STAGE_NOT_OPEN;
-        case 10111: return RETCODE_RET_POTION_ACTIVITY_LEVEL_HAVE_PASS;
-        case 10112: return RETCODE_RET_POTION_ACTIVITY_TEAM_NUM_INCORRECT;
-        case 10113: return RETCODE_RET_POTION_ACTIVITY_AVATAR_IN_CD;
-        case 10114: return RETCODE_RET_POTION_ACTIVITY_BUFF_IN_CD;
-        case 10120: return RETCODE_RET_IRODORI_POETRY_INVALID_LINE_ID;
-        case 10121: return RETCODE_RET_IRODORI_POETRY_INVALID_THEME_ID;
-        case 10122: return RETCODE_RET_IRODORI_POETRY_NOT_GET_ALL_INSPIRATION;
-        case 10123: return RETCODE_RET_IRODORI_POETRY_INSPIRATION_REACH_LIMIE;
-        case 10124: return RETCODE_RET_IRODORI_POETRY_ENTITY_ALREADY_SCANNED;
-        case 10300: return RETCODE_RET_ACTIVITY_BANNER_ALREADY_CLEARED;
-        case 10301: return RETCODE_RET_IRODORI_CHESS_NOT_OPEN;
-        case 10302: return RETCODE_RET_IRODORI_CHESS_LEVEL_NOT_OPEN;
-        case 10303: return RETCODE_RET_IRODORI_CHESS_MAP_NOT_OPEN;
-        case 10304: return RETCODE_RET_IRODORI_CHESS_MAP_CARD_ALREADY_EQUIPED;
-        case 10305: return RETCODE_RET_IRODORI_CHESS_EQUIP_CARD_EXCEED_LIMIT;
-        case 10306: return RETCODE_RET_IRODORI_CHESS_MAP_CARD_NOT_EQUIPED;
-        case 10307: return RETCODE_RET_IRODORI_CHESS_ENTER_FAIL_CARD_EXCEED_LIMIT;
-        case 10310: return RETCODE_RET_ACTIVITY_FRIEND_HAVE_GIFT_LIMIT;
-        case 10315: return RETCODE_RET_GACHA_ACTIVITY_HAVE_REWARD_LIMIT;
-        case 10316: return RETCODE_RET_GACHA_ACTIVITY_HAVE_ROBOT_LIMIT;
-        case 10317: return RETCODE_RET_SUMMER_TIME_V2_COIN_EXCEED_LIMIT;
-        case 10318: return RETCODE_RET_SUMMER_TIME_V2_COIN_NOT_ENOUGH;
-        case 10319: return RETCODE_RET_SUMMER_TIME_V2_DUNGEON_STAGE_NOT_OPEN;
-        case 10320: return RETCODE_RET_SUMMER_TIME_V2_PREV_DUNGEON_NOT_COMPLETE;
-        case 10350: return RETCODE_RET_ROGUE_DIARY_AVATAR_DEATH;
-        case 10351: return RETCODE_RET_ROGUE_DIARY_AVATAR_TIRED;
-        case 10352: return RETCODE_RET_ROGUE_DIARY_AVATAR_DUPLICATED;
-        case 10353: return RETCODE_RET_ROGUE_DIARY_COIN_NOT_ENOUGH;
-        case 10354: return RETCODE_RET_ROGUE_DIARY_VIRTUAL_COIN_EXCEED_LIMIT;
-        case 10355: return RETCODE_RET_ROGUE_DIARY_VIRTUAL_COIN_NOT_ENOUGH;
-        case 10366: return RETCODE_RET_ROGUE_DIARY_CONTENT_CLOSED;
-        case 10380: return RETCODE_RET_GRAVEN_INNOCENCE_COIN_A_NOT_ENOUGH;
-        case 10381: return RETCODE_RET_GRAVEN_INNOCENCE_COIN_B_NOT_ENOUGH;
-        case 10382: return RETCODE_RET_GRAVEN_INNOCENCE_COIN_A_EXCEED_LIMIT;
-        case 10383: return RETCODE_RET_GRAVEN_INNOCENCE_COIN_B_EXCEED_LIMIT;
-        case 10371: return RETCODE_RET_ISLAND_PARTY_STAGE_NOT_OPEN;
-        case 10390: return RETCODE_RET_WIND_FIELD_STAGE_NOT_OPEN;
-        case 10396: return RETCODE_RET_VINTAGE_CONTENT_CLOSED;
-        case 10397: return RETCODE_RET_VINTAGE_STORE_CONTENT_FINISHED;
-        case 10398: return RETCODE_RET_VINTAGE_STORE_ATTR_TOO_SMALL;
-        case 10399: return RETCODE_RET_VINTAGE_STORE_ATTR_TOO_LARGE;
-        case 10400: return RETCODE_RET_VINTAGE_STORE_CONTENT_INTERRUPT;
-        case 10401: return RETCODE_RET_VINTAGE_VIRTUAL_COIN_NOT_ENOUGH;
-        case 10402: return RETCODE_RET_VINTAGE_STORE_ATTR_LESS_THAN_ZERO;
-        case 11001: return RETCODE_RET_NOT_IN_FISHING;
-        case 11002: return RETCODE_RET_FISH_STATE_ERROR;
-        case 11003: return RETCODE_RET_FISH_BAIT_LIMIT;
-        case 11004: return RETCODE_RET_FISHING_MAX_DISTANCE;
-        case 11005: return RETCODE_RET_FISHING_IN_COMBAT;
-        case 11006: return RETCODE_RET_FISHING_BATTLE_TOO_SHORT;
-        case 11007: return RETCODE_RET_FISH_GONE_AWAY;
-        case 11051: return RETCODE_RET_CAN_NOT_EDIT_OTHER_DUNGEON;
-        case 11052: return RETCODE_RET_CUSTOM_DUNGEON_DISMATCH;
-        case 11053: return RETCODE_RET_NO_CUSTOM_DUNGEON_DATA;
-        case 11054: return RETCODE_RET_BUILD_CUSTOM_DUNGEON_FAIL;
-        case 11055: return RETCODE_RET_CUSTOM_DUNGEON_ROOM_CHECK_FAIL;
-        case 11056: return RETCODE_RET_CUSTOM_DUNGEON_SAVE_MAY_FAIL;
-        case 11057: return RETCODE_RET_NOT_IN_CUSTOM_DUNGEON;
-        case 11058: return RETCODE_RET_CUSTOM_DUNGEON_INTERNAL_FAIL;
-        case 11059: return RETCODE_RET_CUSTOM_DUNGEON_CAN_NOT_TRY;
-        case 11060: return RETCODE_RET_CUSTOM_DUNGEON_NO_START_ROOM;
-        case 11061: return RETCODE_RET_CUSTOM_DUNGEON_NO_ROOM_DATA;
-        case 11062: return RETCODE_RET_CUSTOM_DUNGEON_SAVE_TOO_FREQUENT;
-        case 11063: return RETCODE_RET_CUSTOM_DUNGEON_NOT_SELF_PASS;
-        case 11064: return RETCODE_RET_CUSTOM_DUNGEON_LACK_COIN;
-        case 11065: return RETCODE_RET_CUSTOM_DUNGEON_NO_FINISH_BRICK;
-        case 11066: return RETCODE_RET_CUSTOM_DUNGEON_MULTI_FINISH;
-        case 11067: return RETCODE_RET_CUSTOM_DUNGEON_NOT_PUBLISHED;
-        case 11068: return RETCODE_RET_CUSTOM_DUNGEON_FULL_STORE;
-        case 11069: return RETCODE_RET_CUSTOM_DUNGEON_STORE_REPEAT;
-        case 11070: return RETCODE_RET_CUSTOM_DUNGEON_CAN_NOT_STORE_SELF;
-        case 11071: return RETCODE_RET_CUSTOM_DUNGEON_NOT_SAVE_SUCC;
-        case 11072: return RETCODE_RET_CUSTOM_DUNGEON_CAN_NOT_LIKE_SELF;
-        case 11073: return RETCODE_RET_CUSTOM_DUNGEON_NOT_FOUND;
-        case 11074: return RETCODE_RET_CUSTOM_DUNGEON_INVALID_SETTING;
-        case 11075: return RETCODE_RET_CUSTOM_DUNGEON_NO_FINISH_SETTING;
-        case 11076: return RETCODE_RET_CUSTOM_DUNGEON_SAVE_NOTHING;
-        case 11077: return RETCODE_RET_CUSTOM_DUNGEON_NOT_IN_GROUP;
-        case 11078: return RETCODE_RET_CUSTOM_DUNGEON_NOT_OFFICIAL;
-        case 11079: return RETCODE_RET_CUSTOM_DUNGEON_LIFE_NUM_ERROR;
-        case 11080: return RETCODE_RET_CUSTOM_DUNGEON_NO_OPEN_ROOM;
-        case 11081: return RETCODE_RET_CUSTOM_DUNGEON_BRICK_EXCEED_LIMIT;
-        case 11082: return RETCODE_RET_CUSTOM_DUNGEON_OFFICIAL_NOT_UNLOCK;
-        case 11083: return RETCODE_RET_CAN_NOT_EDIT_OFFICIAL_SETTING;
-        case 11084: return RETCODE_RET_CUSTOM_DUNGEON_BAN_PUBLISH;
-        case 11085: return RETCODE_RET_CUSTOM_DUNGEON_CAN_NOT_REPLAY;
-        case 11086: return RETCODE_RET_CUSTOM_DUNGEON_NOT_OPEN_GROUP;
-        case 11087: return RETCODE_RET_CUSTOM_DUNGEON_MAX_EDIT_NUM;
-        case 11088: return RETCODE_RET_CUSTOM_DUNGEON_CAN_NOT_OUT_STUCK;
-        case 11089: return RETCODE_RET_CUSTOM_DUNGEON_MAX_TAG;
-        case 11090: return RETCODE_RET_CUSTOM_DUNGEON_INVALID_TAG;
-        case 11091: return RETCODE_RET_CUSTOM_DUNGEON_MAX_COST;
-        case 11092: return RETCODE_RET_CUSTOM_DUNGEON_REQUEST_TOO_FREQUENT;
-        case 11093: return RETCODE_RET_CUSTOM_DUNGEON_NOT_OPEN;
-        case 11101: return RETCODE_RET_SHARE_CD_ID_ERROR;
-        case 11102: return RETCODE_RET_SHARE_CD_INDEX_ERROR;
-        case 11103: return RETCODE_RET_SHARE_CD_IN_CD;
-        case 11104: return RETCODE_RET_SHARE_CD_TOKEN_NOT_ENOUGH;
-        case 11151: return RETCODE_RET_UGC_DISMATCH;
-        case 11152: return RETCODE_RET_UGC_DATA_NOT_FOUND;
-        case 11153: return RETCODE_RET_UGC_BRIEF_NOT_FOUND;
-        case 11154: return RETCODE_RET_UGC_DISABLED;
-        case 11155: return RETCODE_RET_UGC_LIMITED;
-        case 11156: return RETCODE_RET_UGC_LOCKED;
-        case 11157: return RETCODE_RET_UGC_NOT_AUTH;
-        case 11158: return RETCODE_RET_UGC_NOT_OPEN;
-        case 11159: return RETCODE_RET_UGC_BAN_PUBLISH;
-        case 11201: return RETCODE_RET_COMPOUND_BOOST_ITEM_NOT_EXIST;
-        case 11202: return RETCODE_RET_COMPOUND_BOOST_TARGET_NOT_EXIST;
-        case 11211: return RETCODE_RET_QUICK_HIT_TREE_EMPTY_TREES;
+        case 0: return RET_SUCC;
+        case -1: return RET_FAIL;
+        case 1: return RET_SVR_ERROR;
+        case 2: return RET_UNKNOWN_ERROR;
+        case 3: return RET_FREQUENT;
+        case 4: return RET_NODE_FORWARD_ERROR;
+        case 5: return RET_NOT_FOUND_CONFIG;
+        case 6: return RET_SYSTEM_BUSY;
+        case 7: return RET_GM_UID_BIND;
+        case 8: return RET_FORBIDDEN;
+        case 10: return RET_STOP_REGISTER;
+        case 11: return RET_STOP_SERVER;
+        case 12: return RET_ACCOUNT_VEIRFY_ERROR;
+        case 13: return RET_ACCOUNT_FREEZE;
+        case 14: return RET_REPEAT_LOGIN;
+        case 15: return RET_CLIENT_VERSION_ERROR;
+        case 16: return RET_TOKEN_ERROR;
+        case 17: return RET_ACCOUNT_NOT_EXIST;
+        case 18: return RET_WAIT_OTHER_LOGIN;
+        case 19: return RET_ANOTHER_LOGIN;
+        case 20: return RET_CLIENT_FORCE_UPDATE;
+        case 21: return RET_BLACK_UID;
+        case 22: return RET_LOGIN_DB_FAIL;
+        case 23: return RET_LOGIN_INIT_FAIL;
+        case 24: return RET_MYSQL_DUPLICATE;
+        case 25: return RET_MAX_PLAYER;
+        case 26: return RET_ANTI_ADDICT;
+        case 27: return RET_PS_PLAYER_WITHOUT_ONLINE_ID;
+        case 28: return RET_ONLINE_ID_NOT_FOUND;
+        case 29: return RET_ONLNE_ID_NOT_MATCH;
+        case 30: return RET_REGISTER_IS_FULL;
+        case 31: return RET_CHECKSUM_INVALID;
+        case 32: return RET_BLACK_REGISTER_IP;
+        case 33: return RET_EXCEED_REGISTER_RATE;
+        case 34: return RET_UNKNOWN_PLATFORM;
+        case 35: return RET_TOKEN_PARAM_ERROR;
+        case 36: return RET_ANTI_OFFLINE_ERROR;
+        case 37: return RET_BLACK_LOGIN_IP;
+        case 38: return RET_GET_TOKEN_SESSION_HAS_UID;
+        case 39: return RET_ENVIRONMENT_ERROR;
+        case 40: return RET_CHECK_CLIENT_VERSION_HASH_FAIL;
+        case 41: return RET_MINOR_REGISTER_FOBIDDEN;
+        case 42: return RET_SECURITY_LIBRARY_ERROR;
+        case 101: return RET_AVATAR_IN_CD;
+        case 102: return RET_AVATAR_NOT_ALIVE;
+        case 103: return RET_AVATAR_NOT_ON_SCENE;
+        case 104: return RET_CAN_NOT_FIND_AVATAR;
+        case 105: return RET_CAN_NOT_DEL_CUR_AVATAR;
+        case 106: return RET_DUPLICATE_AVATAR;
+        case 107: return RET_AVATAR_IS_SAME_ONE;
+        case 108: return RET_AVATAR_LEVEL_LESS_THAN;
+        case 109: return RET_AVATAR_CAN_NOT_CHANGE_ELEMENT;
+        case 110: return RET_AVATAR_BREAK_LEVEL_LESS_THAN;
+        case 111: return RET_AVATAR_ON_MAX_BREAK_LEVEL;
+        case 112: return RET_AVATAR_ID_ALREADY_EXIST;
+        case 113: return RET_AVATAR_NOT_DEAD;
+        case 114: return RET_AVATAR_IS_REVIVING;
+        case 115: return RET_AVATAR_ID_ERROR;
+        case 116: return RET_REPEAT_SET_PLAYER_BORN_DATA;
+        case 117: return RET_PLAYER_LEVEL_LESS_THAN;
+        case 118: return RET_AVATAR_LIMIT_LEVEL_ERROR;
+        case 119: return RET_CUR_AVATAR_NOT_ALIVE;
+        case 120: return RET_CAN_NOT_FIND_TEAM;
+        case 121: return RET_CAN_NOT_FIND_CUR_TEAM;
+        case 122: return RET_AVATAR_NOT_EXIST_IN_TEAM;
+        case 123: return RET_CAN_NOT_REMOVE_CUR_AVATAR_FROM_TEAM;
+        case 124: return RET_CAN_NOT_USE_REVIVE_ITEM_FOR_CUR_AVATAR;
+        case 125: return RET_TEAM_COST_EXCEED_LIMIT;
+        case 126: return RET_TEAM_AVATAR_IN_EXPEDITION;
+        case 127: return RET_TEAM_CAN_NOT_CHOSE_REPLACE_USE;
+        case 128: return RET_AVATAR_IN_COMBAT;
+        case 130: return RET_NICKNAME_UTF8_ERROR;
+        case 131: return RET_NICKNAME_TOO_LONG;
+        case 132: return RET_NICKNAME_WORD_ILLEGAL;
+        case 133: return RET_NICKNAME_TOO_MANY_DIGITS;
+        case 134: return RET_NICKNAME_IS_EMPTY;
+        case 135: return RET_NICKNAME_MONTHLY_LIMIT;
+        case 136: return RET_NICKNAME_NOT_CHANGED;
+        case 140: return RET_PLAYER_NOT_ONLINE;
+        case 141: return RET_OPEN_STATE_NOT_OPEN;
+        case 142: return RET_FEATURE_CLOSED;
+        case 152: return RET_AVATAR_EXPEDITION_AVATAR_DIE;
+        case 153: return RET_AVATAR_EXPEDITION_COUNT_LIMIT;
+        case 154: return RET_AVATAR_EXPEDITION_MAIN_FORBID;
+        case 155: return RET_AVATAR_EXPEDITION_TRIAL_FORBID;
+        case 156: return RET_TEAM_NAME_ILLEGAL;
+        case 157: return RET_IS_NOT_IN_STANDBY;
+        case 158: return RET_IS_IN_DUNGEON;
+        case 159: return RET_IS_IN_LOCK_AVATAR_QUEST;
+        case 160: return RET_IS_USING_TRIAL_AVATAR;
+        case 161: return RET_IS_USING_TEMP_AVATAR;
+        case 162: return RET_NOT_HAS_FLYCLOAK;
+        case 163: return RET_FETTER_REWARD_ALREADY_GOT;
+        case 164: return RET_FETTER_REWARD_LEVEL_NOT_ENOUGH;
+        case 165: return RET_WORLD_LEVEL_ADJUST_MIN_LEVEL;
+        case 166: return RET_WORLD_LEVEL_ADJUST_CD;
+        case 167: return RET_NOT_HAS_COSTUME;
+        case 168: return RET_COSTUME_AVATAR_ERROR;
+        case 169: return RET_FLYCLOAK_PLATFORM_TYPE_ERR;
+        case 170: return RET_IN_TRANSFER;
+        case 171: return RET_IS_IN_LOCK_AVATAR;
+        case 172: return RET_FULL_BACKUP_TEAM;
+        case 173: return RET_BACKUP_TEAM_ID_NOT_VALID;
+        case 174: return RET_BACKUP_TEAM_IS_CUR_TEAM;
+        case 175: return RET_AVATAR_RENAME_IN_CD;
+        case 176: return RET_AVATAR_RENAME_IN_AUDIT;
+        case 177: return RET_AVATAR_RENAME_IN_IP_BLACK_LIST;
+        case 201: return RET_FLOAT_ERROR;
+        case 301: return RET_NPC_NOT_EXIST;
+        case 302: return RET_NPC_TOO_FAR;
+        case 303: return RET_NOT_CURRENT_TALK;
+        case 304: return RET_NPC_CREATE_FAIL;
+        case 305: return RET_NPC_MOVE_FAIL;
+        case 401: return RET_QUEST_NOT_EXIST;
+        case 402: return RET_QUEST_IS_FAIL;
+        case 403: return RET_QUEST_CONTENT_ERROR;
+        case 404: return RET_BARGAIN_NOT_ACTIVATED;
+        case 405: return RET_BARGAIN_FINISHED;
+        case 406: return RET_INFERENCE_ASSOCIATE_WORD_ERROR;
+        case 407: return RET_INFERENCE_SUBMIT_WORD_NO_CONCLUSION;
+        case 501: return RET_POINT_NOT_UNLOCKED;
+        case 502: return RET_POINT_TOO_FAR;
+        case 503: return RET_POINT_ALREAY_UNLOCKED;
+        case 504: return RET_ENTITY_NOT_EXIST;
+        case 505: return RET_ENTER_SCENE_FAIL;
+        case 506: return RET_PLAYER_IS_ENTER_SCENE;
+        case 507: return RET_CITY_MAX_LEVEL;
+        case 508: return RET_AREA_LOCKED;
+        case 509: return RET_JOIN_OTHER_WAIT;
+        case 510: return RET_WEATHER_AREA_NOT_FOUND;
+        case 511: return RET_WEATHER_IS_LOCKED;
+        case 512: return RET_NOT_IN_SELF_SCENE;
+        case 513: return RET_GROUP_NOT_EXIST;
+        case 514: return RET_MARK_NAME_ILLEGAL;
+        case 515: return RET_MARK_ALREADY_EXISTS;
+        case 516: return RET_MARK_OVERFLOW;
+        case 517: return RET_MARK_NOT_EXISTS;
+        case 518: return RET_MARK_UNKNOWN_TYPE;
+        case 519: return RET_MARK_NAME_TOO_LONG;
+        case 520: return RET_DISTANCE_LONG;
+        case 521: return RET_ENTER_SCENE_TOKEN_INVALID;
+        case 522: return RET_NOT_IN_WORLD_SCENE;
+        case 523: return RET_ANY_GALLERY_STARTED;
+        case 524: return RET_GALLERY_NOT_START;
+        case 525: return RET_GALLERY_INTERRUPT_ONLY_ON_SINGLE_MODE;
+        case 526: return RET_GALLERY_CANNOT_INTERRUPT;
+        case 527: return RET_GALLERY_WORLD_NOT_MEET;
+        case 528: return RET_GALLERY_SCENE_NOT_MEET;
+        case 529: return RET_CUR_PLAY_CANNOT_TRANSFER;
+        case 530: return RET_CANT_USE_WIDGET_IN_HOME_SCENE;
+        case 531: return RET_SCENE_GROUP_NOT_MATCH;
+        case 551: return RET_POS_ROT_INVALID;
+        case 552: return RET_MARK_INVALID_SCENE_ID;
+        case 553: return RET_INVALID_SCENE_TO_USE_ANCHOR_POINT;
+        case 554: return RET_ENTER_HOME_SCENE_FAIL;
+        case 555: return RET_CUR_SCENE_IS_NULL;
+        case 556: return RET_GROUP_ID_ERROR;
+        case 557: return RET_GALLERY_INTERRUPT_NOT_OWNER;
+        case 558: return RET_NO_SPRING_IN_AREA;
+        case 559: return RET_AREA_NOT_IN_SCENE;
+        case 560: return RET_INVALID_CITY_ID;
+        case 561: return RET_INVALID_SCENE_ID;
+        case 562: return RET_DEST_SCENE_IS_NOT_ALLOW;
+        case 563: return RET_LEVEL_TAG_SWITCH_IN_CD;
+        case 564: return RET_LEVEL_TAG_ALREADY_EXIST;
+        case 565: return RET_INVALID_AREA_ID;
+        case 601: return RET_ITEM_NOT_EXIST;
+        case 602: return RET_PACK_EXCEED_MAX_WEIGHT;
+        case 603: return RET_ITEM_NOT_DROPABLE;
+        case 604: return RET_ITEM_NOT_USABLE;
+        case 605: return RET_ITEM_INVALID_USE_COUNT;
+        case 606: return RET_ITEM_INVALID_DROP_COUNT;
+        case 607: return RET_ITEM_ALREADY_EXIST;
+        case 608: return RET_ITEM_IN_COOLDOWN;
+        case 609: return RET_ITEM_COUNT_NOT_ENOUGH;
+        case 610: return RET_ITEM_INVALID_TARGET;
+        case 611: return RET_RECIPE_NOT_EXIST;
+        case 612: return RET_RECIPE_LOCKED;
+        case 613: return RET_RECIPE_UNLOCKED;
+        case 614: return RET_COMPOUND_QUEUE_FULL;
+        case 615: return RET_COMPOUND_NOT_FINISH;
+        case 616: return RET_MAIL_ITEM_NOT_GET;
+        case 617: return RET_ITEM_EXCEED_LIMIT;
+        case 618: return RET_AVATAR_CAN_NOT_USE;
+        case 619: return RET_ITEM_NEED_PLAYER_LEVEL;
+        case 620: return RET_RECIPE_NOT_AUTO_QTE;
+        case 621: return RET_COMPOUND_BUSY_QUEUE;
+        case 622: return RET_NEED_MORE_SCOIN;
+        case 623: return RET_SKILL_DEPOT_NOT_FOUND;
+        case 624: return RET_HCOIN_NOT_ENOUGH;
+        case 625: return RET_SCOIN_NOT_ENOUGH;
+        case 626: return RET_HCOIN_EXCEED_LIMIT;
+        case 627: return RET_SCOIN_EXCEED_LIMIT;
+        case 628: return RET_MAIL_EXPIRED;
+        case 629: return RET_REWARD_HAS_TAKEN;
+        case 630: return RET_COMBINE_COUNT_TOO_LARGE;
+        case 631: return RET_GIVING_ITEM_WRONG;
+        case 632: return RET_GIVING_IS_FINISHED;
+        case 633: return RET_GIVING_NOT_ACTIVED;
+        case 634: return RET_FORGE_QUEUE_FULL;
+        case 635: return RET_FORGE_QUEUE_CAPACITY;
+        case 636: return RET_FORGE_QUEUE_NOT_FOUND;
+        case 637: return RET_FORGE_QUEUE_EMPTY;
+        case 638: return RET_NOT_SUPPORT_ITEM;
+        case 639: return RET_ITEM_EMPTY;
+        case 640: return RET_VIRTUAL_EXCEED_LIMIT;
+        case 641: return RET_MATERIAL_EXCEED_LIMIT;
+        case 642: return RET_EQUIP_EXCEED_LIMIT;
+        case 643: return RET_ITEM_SHOULD_HAVE_NO_LEVEL;
+        case 644: return RET_WEAPON_PROMOTE_LEVEL_EXCEED_LIMIT;
+        case 645: return RET_WEAPON_LEVEL_INVALID;
+        case 646: return RET_UNKNOW_ITEM_TYPE;
+        case 647: return RET_ITEM_COUNT_IS_ZERO;
+        case 648: return RET_ITEM_IS_EXPIRED;
+        case 649: return RET_ITEM_EXCEED_OUTPUT_LIMIT;
+        case 650: return RET_EQUIP_LEVEL_HIGHER;
+        case 651: return RET_EQUIP_CAN_NOT_WAKE_OFF_WEAPON;
+        case 652: return RET_EQUIP_HAS_BEEN_WEARED;
+        case 653: return RET_EQUIP_WEARED_CANNOT_DROP;
+        case 654: return RET_AWAKEN_LEVEL_MAX;
+        case 655: return RET_MCOIN_NOT_ENOUGH;
+        case 656: return RET_MCOIN_EXCEED_LIMIT;
+        case 660: return RET_RESIN_NOT_ENOUGH;
+        case 661: return RET_RESIN_EXCEED_LIMIT;
+        case 662: return RET_RESIN_OPENSTATE_OFF;
+        case 663: return RET_RESIN_BOUGHT_COUNT_EXCEEDED;
+        case 664: return RET_RESIN_CARD_DAILY_REWARD_HAS_TAKEN;
+        case 665: return RET_RESIN_CARD_EXPIRED;
+        case 666: return RET_AVATAR_CAN_NOT_COOK;
+        case 667: return RET_ATTACH_AVATAR_CD;
+        case 668: return RET_AUTO_RECOVER_OPENSTATE_OFF;
+        case 669: return RET_AUTO_RECOVER_BOUGHT_COUNT_EXCEEDED;
+        case 670: return RET_RESIN_GAIN_FAILED;
+        case 671: return RET_WIDGET_ORNAMENTS_TYPE_ERROR;
+        case 672: return RET_ALL_TARGET_SATIATION_FULL;
+        case 673: return RET_FORGE_WORLD_LEVEL_NOT_MATCH;
+        case 674: return RET_FORGE_POINT_NOT_ENOUGH;
+        case 675: return RET_WIDGET_ANCHOR_POINT_FULL;
+        case 676: return RET_WIDGET_ANCHOR_POINT_NOT_FOUND;
+        case 677: return RET_ALL_BONFIRE_EXCEED_MAX_COUNT;
+        case 678: return RET_BONFIRE_EXCEED_MAX_COUNT;
+        case 679: return RET_LUNCH_BOX_DATA_ERROR;
+        case 680: return RET_INVALID_QUICK_USE_WIDGET;
+        case 681: return RET_INVALID_REPLACE_RESIN_COUNT;
+        case 682: return RET_PREV_DETECTED_GATHER_NOT_FOUND;
+        case 683: return RET_GOT_ALL_ONEOFF_GAHTER;
+        case 684: return RET_INVALID_WIDGET_MATERIAL_ID;
+        case 685: return RET_WIDGET_DETECTOR_NO_HINT_TO_CLEAR;
+        case 686: return RET_WIDGET_ALREADY_WITHIN_NEARBY_RADIUS;
+        case 687: return RET_WIDGET_CLIENT_COLLECTOR_NEED_POINTS;
+        case 688: return RET_WIDGET_IN_COMBAT;
+        case 689: return RET_WIDGET_NOT_SET_QUICK_USE;
+        case 690: return RET_ALREADY_ATTACH_WIDGET;
+        case 691: return RET_EQUIP_IS_LOCKED;
+        case 692: return RET_FORGE_IS_LOCKED;
+        case 693: return RET_COMBINE_IS_LOCKED;
+        case 694: return RET_FORGE_OUTPUT_STACK_LIMIT;
+        case 695: return RET_ALREADY_DETTACH_WIDGET;
+        case 696: return RET_GADGET_BUILDER_EXCEED_MAX_COUNT;
+        case 697: return RET_REUNION_PRIVILEGE_RESIN_TYPE_IS_NORMAL;
+        case 698: return RET_BONUS_COUNT_EXCEED_DOUBLE_LIMIT;
+        case 699: return RET_RELIQUARY_DECOMPOSE_PARAM_ERROR;
+        case 700: return RET_ITEM_COMBINE_COUNT_NOT_ENOUGH;
+        case 701: return RET_GOODS_NOT_EXIST;
+        case 702: return RET_GOODS_MATERIAL_NOT_ENOUGH;
+        case 703: return RET_GOODS_NOT_IN_TIME;
+        case 704: return RET_GOODS_BUY_NUM_NOT_ENOUGH;
+        case 705: return RET_GOODS_BUY_NUM_ERROR;
+        case 706: return RET_SHOP_NOT_OPEN;
+        case 707: return RET_SHOP_CONTENT_NOT_MATCH;
+        case 708: return RET_SHOP_BATCH_BUY_SHOP_LIMIT;
+        case 709: return RET_SHOP_BATCH_BUY_COUNT_LIMIT;
+        case 798: return RET_CHAT_FORBIDDEN;
+        case 799: return RET_CHAT_CD;
+        case 800: return RET_CHAT_FREQUENTLY;
+        case 801: return RET_GADGET_NOT_EXIST;
+        case 802: return RET_GADGET_NOT_INTERACTIVE;
+        case 803: return RET_GADGET_NOT_GATHERABLE;
+        case 804: return RET_CHEST_IS_LOCKED;
+        case 805: return RET_GADGET_CREATE_FAIL;
+        case 806: return RET_WORKTOP_OPTION_NOT_EXIST;
+        case 807: return RET_GADGET_STATUE_NOT_ACTIVE;
+        case 808: return RET_GADGET_STATUE_OPENED;
+        case 809: return RET_BOSS_CHEST_NO_QUALIFICATION;
+        case 810: return RET_BOSS_CHEST_LIFE_TIME_OVER;
+        case 811: return RET_BOSS_CHEST_WEEK_NUM_LIMIT;
+        case 812: return RET_BOSS_CHEST_GUEST_WORLD_LEVEL;
+        case 813: return RET_BOSS_CHEST_HAS_TAKEN;
+        case 814: return RET_BLOSSOM_CHEST_NO_QUALIFICATION;
+        case 815: return RET_BLOSSOM_CHEST_LIFE_TIME_OVER;
+        case 816: return RET_BLOSSOM_CHEST_HAS_TAKEN;
+        case 817: return RET_BLOSSOM_CHEST_GUEST_WORLD_LEVEL;
+        case 818: return RET_MP_PLAY_REWARD_NO_QUALIFICATION;
+        case 819: return RET_MP_PLAY_REWARD_HAS_TAKEN;
+        case 820: return RET_GENERAL_REWARD_NO_QUALIFICATION;
+        case 821: return RET_GENERAL_REWARD_LIFE_TIME_OVER;
+        case 822: return RET_GENERAL_REWARD_HAS_TAKEN;
+        case 823: return RET_GADGET_NOT_VEHICLE;
+        case 824: return RET_VEHICLE_SLOT_OCCUPIED;
+        case 825: return RET_NOT_IN_VEHICLE;
+        case 826: return RET_CREATE_VEHICLE_IN_CD;
+        case 827: return RET_CREATE_VEHICLE_POS_INVALID;
+        case 828: return RET_VEHICLE_POINT_NOT_UNLOCK;
+        case 829: return RET_GADGET_INTERACT_COND_NOT_MEET;
+        case 830: return RET_GADGET_INTERACT_PARAM_ERROR;
+        case 831: return RET_GADGET_CUSTOM_COMBINATION_INVALID;
+        case 832: return RET_DESHRET_OBELISK_DUPLICATE_INTERACT;
+        case 833: return RET_DESHRET_OBELISK_NO_AVAIL_CHEST;
+        case 860: return RET_ACTIVITY_CLOSE;
+        case 861: return RET_ACTIVITY_ITEM_ERROR;
+        case 862: return RET_ACTIVITY_CONTRIBUTION_NOT_ENOUGH;
+        case 863: return RET_SEA_LAMP_PHASE_NOT_FINISH;
+        case 864: return RET_SEA_LAMP_FLY_NUM_LIMIT;
+        case 865: return RET_SEA_LAMP_FLY_LAMP_WORD_ILLEGAL;
+        case 866: return RET_ACTIVITY_WATCHER_REWARD_TAKEN;
+        case 867: return RET_ACTIVITY_WATCHER_REWARD_NOT_FINISHED;
+        case 868: return RET_SALESMAN_ALREADY_DELIVERED;
+        case 869: return RET_SALESMAN_REWARD_COUNT_NOT_ENOUGH;
+        case 870: return RET_SALESMAN_POSITION_INVALID;
+        case 871: return RET_DELIVER_NOT_FINISH_ALL_QUEST;
+        case 872: return RET_DELIVER_ALREADY_TAKE_DAILY_REWARD;
+        case 873: return RET_ASTER_PROGRESS_EXCEED_LIMIT;
+        case 874: return RET_ASTER_CREDIT_EXCEED_LIMIT;
+        case 875: return RET_ASTER_TOKEN_EXCEED_LIMIT;
+        case 876: return RET_ASTER_CREDIT_NOT_ENOUGH;
+        case 877: return RET_ASTER_TOKEN_NOT_ENOUGH;
+        case 878: return RET_ASTER_SPECIAL_REWARD_HAS_TAKEN;
+        case 879: return RET_FLIGHT_GROUP_ACTIVITY_NOT_STARTED;
+        case 880: return RET_ASTER_MID_PREVIOUS_BATTLE_NOT_FINISHED;
+        case 881: return RET_DRAGON_SPINE_SHIMMERING_ESSENCE_EXCEED_LIMIT;
+        case 882: return RET_DRAGON_SPINE_WARM_ESSENCE_EXCEED_LIMIT;
+        case 883: return RET_DRAGON_SPINE_WONDROUS_ESSENCE_EXCEED_LIMIT;
+        case 884: return RET_DRAGON_SPINE_SHIMMERING_ESSENCE_NOT_ENOUGH;
+        case 885: return RET_DRAGON_SPINE_WARM_ESSENCE_NOT_ENOUGH;
+        case 886: return RET_DRAGON_SPINE_WONDROUS_ESSENCE_NOT_ENOUGH;
+        case 891: return RET_EFFIGY_FIRST_PASS_REWARD_HAS_TAKEN;
+        case 892: return RET_EFFIGY_REWARD_HAS_TAKEN;
+        case 893: return RET_TREASURE_MAP_ADD_TOKEN_EXCEED_LIMIT;
+        case 894: return RET_TREASURE_MAP_TOKEN_NOT_ENOUGHT;
+        case 895: return RET_SEA_LAMP_COIN_EXCEED_LIMIT;
+        case 896: return RET_SEA_LAMP_COIN_NOT_ENOUGH;
+        case 897: return RET_SEA_LAMP_POPULARITY_EXCEED_LIMIT;
+        case 898: return RET_ACTIVITY_AVATAR_REWARD_NOT_OPEN;
+        case 899: return RET_ACTIVITY_AVATAR_REWARD_HAS_TAKEN;
+        case 900: return RET_ARENA_ACTIVITY_ALREADY_STARTED;
+        case 901: return RET_TALENT_ALREAY_UNLOCKED;
+        case 902: return RET_PREV_TALENT_NOT_UNLOCKED;
+        case 903: return RET_BIG_TALENT_POINT_NOT_ENOUGH;
+        case 904: return RET_SMALL_TALENT_POINT_NOT_ENOUGH;
+        case 905: return RET_PROUD_SKILL_ALREADY_GOT;
+        case 906: return RET_PREV_PROUD_SKILL_NOT_GET;
+        case 907: return RET_PROUD_SKILL_MAX_LEVEL;
+        case 910: return RET_CANDIDATE_SKILL_DEPOT_ID_NOT_FIND;
+        case 911: return RET_SKILL_DEPOT_IS_THE_SAME;
+        case 1001: return RET_MONSTER_NOT_EXIST;
+        case 1002: return RET_MONSTER_CREATE_FAIL;
+        case 1101: return RET_DUNGEON_ENTER_FAIL;
+        case 1102: return RET_DUNGEON_QUIT_FAIL;
+        case 1103: return RET_DUNGEON_ENTER_EXCEED_DAY_COUNT;
+        case 1104: return RET_DUNGEON_REVIVE_EXCEED_MAX_COUNT;
+        case 1105: return RET_DUNGEON_REVIVE_FAIL;
+        case 1106: return RET_DUNGEON_NOT_SUCCEED;
+        case 1107: return RET_DUNGEON_CAN_NOT_CANCEL;
+        case 1108: return RET_DEST_DUNGEON_SETTLED;
+        case 1109: return RET_DUNGEON_CANDIDATE_TEAM_IS_FULL;
+        case 1110: return RET_DUNGEON_CANDIDATE_TEAM_IS_DISMISS;
+        case 1111: return RET_DUNGEON_CANDIDATE_TEAM_NOT_ALL_READY;
+        case 1112: return RET_DUNGEON_CANDIDATE_TEAM_HAS_REPEAT_AVATAR;
+        case 1113: return RET_DUNGEON_CANDIDATE_NOT_SINGEL_PASS;
+        case 1114: return RET_DUNGEON_REPLAY_NEED_ALL_PLAYER_DIE;
+        case 1115: return RET_DUNGEON_REPLAY_HAS_REVIVE_COUNT;
+        case 1116: return RET_DUNGEON_OTHERS_LEAVE;
+        case 1117: return RET_DUNGEON_ENTER_LEVEL_LIMIT;
+        case 1118: return RET_DUNGEON_CANNOT_ENTER_PLOT_IN_MP;
+        case 1119: return RET_DUNGEON_DROP_SUBFIELD_LIMIT;
+        case 1120: return RET_DUNGEON_BE_INVITE_PLAYER_AVATAR_ALL_DIE;
+        case 1121: return RET_DUNGEON_CANNOT_KICK;
+        case 1122: return RET_DUNGEON_CANDIDATE_TEAM_SOMEONE_LEVEL_LIMIT;
+        case 1123: return RET_DUNGEON_IN_FORCE_QUIT;
+        case 1124: return RET_DUNGEON_GUEST_QUIT_DUNGEON;
+        case 1125: return RET_DUNGEON_TICKET_FAIL;
+        case 1126: return RET_CUR_DUNGEON_SETTLED;
+        case 1201: return RET_MP_NOT_IN_MY_WORLD;
+        case 1202: return RET_MP_IN_MP_MODE;
+        case 1203: return RET_MP_SCENE_IS_FULL;
+        case 1204: return RET_MP_MODE_NOT_AVAILABLE;
+        case 1205: return RET_MP_PLAYER_NOT_ENTERABLE;
+        case 1206: return RET_MP_QUEST_BLOCK_MP;
+        case 1207: return RET_MP_IN_ROOM_SCENE;
+        case 1208: return RET_MP_WORLD_IS_FULL;
+        case 1209: return RET_MP_PLAYER_NOT_ALLOW_ENTER;
+        case 1210: return RET_MP_PLAYER_DISCONNECTED;
+        case 1211: return RET_MP_NOT_IN_MP_MODE;
+        case 1212: return RET_MP_OWNER_NOT_ENTER;
+        case 1213: return RET_MP_ALLOW_ENTER_PLAYER_FULL;
+        case 1214: return RET_MP_TARGET_PLAYER_IN_TRANSFER;
+        case 1215: return RET_MP_TARGET_ENTERING_OTHER;
+        case 1216: return RET_MP_OTHER_ENTERING;
+        case 1217: return RET_MP_ENTER_MAIN_PLAYER_IN_PLOT;
+        case 1218: return RET_MP_NOT_PS_PLAYER;
+        case 1219: return RET_MP_PLAY_NOT_ACTIVE;
+        case 1220: return RET_MP_PLAY_REMAIN_REWARDS;
+        case 1221: return RET_MP_PLAY_NO_REWARD;
+        case 1223: return RET_MP_OPEN_STATE_FAIL;
+        case 1224: return RET_MP_PLAYER_IN_BLACKLIST;
+        case 1225: return RET_MP_REPLY_TIMEOUT;
+        case 1226: return RET_MP_IS_BLOCK;
+        case 1227: return RET_MP_ENTER_MAIN_PLAYER_IN_MP_PLAY;
+        case 1228: return RET_MP_IN_MP_PLAY_BATTLE;
+        case 1229: return RET_MP_GUEST_HAS_REWARD_REMAINED;
+        case 1230: return RET_MP_QUIT_MP_INVALID;
+        case 1231: return RET_MP_OTHER_DATA_VERSION_NOT_LATEST;
+        case 1232: return RET_MP_DATA_VERSION_NOT_LATEST;
+        case 1233: return RET_MP_CUR_WORLD_NOT_ENTERABLE;
+        case 1234: return RET_MP_ANY_GALLERY_STARTED;
+        case 1235: return RET_MP_HAS_ACTIVE_DRAFT;
+        case 1236: return RET_MP_PLAYER_IN_DUNGEON;
+        case 1237: return RET_MP_MATCH_FULL;
+        case 1238: return RET_MP_MATCH_LIMIT;
+        case 1239: return RET_MP_MATCH_IN_PUNISH;
+        case 1240: return RET_MP_IS_IN_MULTISTAGE;
+        case 1241: return RET_MP_MATCH_PLAY_NOT_OPEN;
+        case 1242: return RET_MP_ONLY_MP_WITH_PS_PLAYER;
+        case 1243: return RET_MP_GUEST_LOADING_FIRST_ENTER;
+        case 1244: return RET_MP_SUMMER_TIME_SPRINT_BOAT_ONGOING;
+        case 1245: return RET_MP_BLITZ_RUSH_PARKOUR_CHALLENGE_ONGOING;
+        case 1246: return RET_MP_MUSIC_GAME_ONGOING;
+        case 1247: return RET_MP_IN_MPING_MODE;
+        case 1248: return RET_MP_OWNER_IN_SINGLE_SCENE;
+        case 1249: return RET_MP_IN_SINGLE_SCENE;
+        case 1250: return RET_MP_REPLY_NO_VALID_AVATAR;
+        case 1251: return RET_MP_IS_NOT_IN_TRANSFER_GUARD;
+        case 1301: return RET_MAIL_PARA_ERR;
+        case 1302: return RET_MAIL_MAX_NUM;
+        case 1303: return RET_MAIL_ITEM_NUM_EXCEED;
+        case 1304: return RET_MAIL_TITLE_LEN_EXCEED;
+        case 1305: return RET_MAIL_CONTENT_LEN_EXCEED;
+        case 1306: return RET_MAIL_SENDER_LEN_EXCEED;
+        case 1307: return RET_MAIL_PARSE_PACKET_FAIL;
+        case 1308: return RET_OFFLINE_MSG_MAX_NUM;
+        case 1309: return RET_OFFLINE_MSG_SAME_TICKET;
+        case 1310: return RET_MAIL_EXCEL_MAIL_TYPE_ERROR;
+        case 1311: return RET_MAIL_CANNOT_SEND_MCOIN;
+        case 1312: return RET_MAIL_HCOIN_EXCEED_LIMIT;
+        case 1313: return RET_MAIL_SCOIN_EXCEED_LIMIT;
+        case 1314: return RET_MAIL_MATERIAL_ID_INVALID;
+        case 1315: return RET_MAIL_AVATAR_EXCEED_LIMIT;
+        case 1316: return RET_MAIL_GACHA_TICKET_ETC_EXCEED_LIMIT;
+        case 1317: return RET_MAIL_ITEM_EXCEED_CEHUA_LIMIT;
+        case 1318: return RET_MAIL_SPACE_OR_REST_NUM_NOT_ENOUGH;
+        case 1319: return RET_MAIL_TICKET_IS_EMPTY;
+        case 1320: return RET_MAIL_TRANSACTION_IS_EMPTY;
+        case 1321: return RET_MAIL_DELETE_COLLECTED;
+        case 1330: return RET_DAILY_TASK_NOT_FINISH;
+        case 1331: return RET_DAILY_TAKS_HAS_TAKEN;
+        case 1332: return RET_SOCIAL_OFFLINE_MSG_NUM_EXCEED;
+        case 1333: return RET_DAILY_TASK_FILTER_CITY_NOT_OPEN;
+        case 1401: return RET_GACHA_INAVAILABLE;
+        case 1402: return RET_GACHA_RANDOM_NOT_MATCH;
+        case 1403: return RET_GACHA_SCHEDULE_NOT_MATCH;
+        case 1404: return RET_GACHA_INVALID_TIMES;
+        case 1405: return RET_GACHA_COST_ITEM_NOT_ENOUGH;
+        case 1406: return RET_GACHA_TIMES_LIMIT;
+        case 1407: return RET_GACHA_WISH_SAME_ITEM;
+        case 1408: return RET_GACHA_WISH_INVALID_ITEM;
+        case 1409: return RET_GACHA_MINORS_TIMES_LIMIT;
+        case 1410: return RET_GACHA_GENERAL_TIMES_LIMIT;
+        case 1501: return RET_INVESTIGAITON_NOT_IN_PROGRESS;
+        case 1502: return RET_INVESTIGAITON_UNCOMPLETE;
+        case 1503: return RET_INVESTIGAITON_REWARD_TAKEN;
+        case 1504: return RET_INVESTIGAITON_TARGET_STATE_ERROR;
+        case 1505: return RET_PUSH_TIPS_NOT_FOUND;
+        case 1506: return RET_SIGN_IN_RECORD_NOT_FOUND;
+        case 1507: return RET_ALREADY_HAVE_SIGNED_IN;
+        case 1508: return RET_SIGN_IN_COND_NOT_SATISFIED;
+        case 1509: return RET_BONUS_ACTIVITY_NOT_UNREWARDED;
+        case 1510: return RET_SIGN_IN_REWARDED;
+        case 1521: return RET_TOWER_NOT_OPEN;
+        case 1522: return RET_TOWER_HAVE_DAILY_RECORD;
+        case 1523: return RET_TOWER_NOT_RECORD;
+        case 1524: return RET_TOWER_HAVE_RECORD;
+        case 1525: return RET_TOWER_TEAM_NUM_ERROR;
+        case 1526: return RET_TOWER_FLOOR_NOT_OPEN;
+        case 1527: return RET_TOWER_NO_FLOOR_STAR_RECORD;
+        case 1528: return RET_ALREADY_HAS_TOWER_BUFF;
+        case 1529: return RET_DUPLICATE_ENTER_LEVEL;
+        case 1530: return RET_NOT_IN_TOWER_LEVEL;
+        case 1531: return RET_IN_TOWER_LEVEL;
+        case 1532: return RET_TOWER_PREV_FLOOR_NOT_FINISH;
+        case 1533: return RET_TOWER_STAR_NOT_ENOUGH;
+        case 1541: return RET_BATTLE_PASS_NO_SCHEDULE;
+        case 1542: return RET_BATTLE_PASS_HAS_BUYED;
+        case 1543: return RET_BATTLE_PASS_LEVEL_OVERFLOW;
+        case 1544: return RET_BATTLE_PASS_PRODUCT_EXPIRED;
+        case 1561: return RET_MATCH_HOST_QUIT;
+        case 1562: return RET_MATCH_ALREADY_IN_MATCH;
+        case 1563: return RET_MATCH_NOT_IN_MATCH;
+        case 1564: return RET_MATCH_APPLYING_ENTER_MP;
+        case 1565: return RET_MATCH_INCORRECT_SCENE;
+        case 1581: return RET_WIDGET_TREASURE_SPOT_NOT_FOUND;
+        case 1582: return RET_WIDGET_TREASURE_ENTITY_EXISTS;
+        case 1583: return RET_WIDGET_TREASURE_SPOT_FAR_AWAY;
+        case 1584: return RET_WIDGET_TREASURE_FINISHED_TODAY;
+        case 1585: return RET_WIDGET_QUICK_USE_REQ_PARAM_ERROR;
+        case 1586: return RET_WIDGET_CAMERA_SCAN_ID_ERROR;
+        case 1587: return RET_WIDGET_NOT_ACTIVE;
+        case 1588: return RET_WIDGET_FEATHER_NOT_ACTIVE;
+        case 1589: return RET_WIDGET_FEATHER_GADGET_TOO_FAR_AWAY;
+        case 1590: return RET_WIDGET_CAPTURE_ANIMAL_NOT_EXIST;
+        case 1591: return RET_WIDGET_CAPTURE_ANIMAL_DROP_BAG_LIMIT;
+        case 1592: return RET_WIDGET_CAPTURE_ANIMAL_CAN_NOT_CAPTURE;
+        case 1593: return RET_WIDGET_SKY_CRYSTAL_ALL_COLLECTED;
+        case 1594: return RET_WIDGET_SKY_CRYSTAL_HINT_ALREADY_EXIST;
+        case 1595: return RET_WIDGET_SKY_CRYSTAL_NOT_FOUND;
+        case 1596: return RET_WIDGET_SKY_CRYSTAL_NO_HINT_TO_CLEAR;
+        case 1597: return RET_WIDGET_LIGHT_STONE_ENERGY_NOT_ENOUGH;
+        case 1598: return RET_WIDGET_TOY_CRYSTAL_ENERGY_NOT_ENOUGH;
+        case 1599: return RET_WIDGET_LIGHT_STONE_LEVEL_NOT_ENOUGH;
+        case 2001: return RET_UID_NOT_EXIST;
+        case 2002: return RET_PARSE_BIN_ERROR;
+        case 2003: return RET_ACCOUNT_INFO_NOT_EXIST;
+        case 2004: return RET_ORDER_INFO_NOT_EXIST;
+        case 2005: return RET_SNAPSHOT_INDEX_ERROR;
+        case 2006: return RET_MAIL_HAS_BEEN_SENT;
+        case 2007: return RET_PRODUCT_NOT_EXIST;
+        case 2008: return RET_UNFINISH_ORDER;
+        case 2009: return RET_ID_NOT_EXIST;
+        case 2010: return RET_ORDER_TRADE_EARLY;
+        case 2011: return RET_ORDER_FINISHED;
+        case 2012: return RET_GAMESERVER_VERSION_WRONG;
+        case 2013: return RET_OFFLINE_OP_FULL_LENGTH;
+        case 2014: return RET_CONCERT_PRODUCT_OBTAIN_LIMIT;
+        case 2015: return RET_CONCERT_PRODUCT_TICKET_DUPLICATED;
+        case 2016: return RET_CONCERT_PRODUCT_TICKET_EMPTY;
+        case 5001: return RET_REDIS_MODIFIED;
+        case 5002: return RET_REDIS_UID_NOT_EXIST;
+        case 6001: return RET_PATHFINDING_DATA_NOT_EXIST;
+        case 6002: return RET_PATHFINDING_DESTINATION_NOT_EXIST;
+        case 6003: return RET_PATHFINDING_ERROR_SCENE;
+        case 6004: return RET_PATHFINDING_SCENE_DATA_LOADING;
+        case 7001: return RET_FRIEND_COUNT_EXCEEDED;
+        case 7002: return RET_PLAYER_NOT_EXIST;
+        case 7003: return RET_ALREADY_SENT_ADD_REQUEST;
+        case 7004: return RET_ASK_FRIEND_LIST_FULL;
+        case 7005: return RET_PLAYER_ALREADY_IS_FRIEND;
+        case 7006: return RET_PLAYER_NOT_ASK_FRIEND;
+        case 7007: return RET_TARGET_FRIEND_COUNT_EXCEED;
+        case 7008: return RET_NOT_FRIEND;
+        case 7009: return RET_BIRTHDAY_CANNOT_BE_SET_TWICE;
+        case 7010: return RET_CANNOT_ADD_SELF_FRIEND;
+        case 7011: return RET_SIGNATURE_ILLEGAL;
+        case 7012: return RET_PS_PLAYER_CANNOT_ADD_FRIENDS;
+        case 7013: return RET_PS_PLAYER_CANNOT_REMOVE_FRIENDS;
+        case 7014: return RET_NAME_CARD_NOT_UNLOCKED;
+        case 7015: return RET_ALREADY_IN_BLACKLIST;
+        case 7016: return RET_PS_PALEYRS_CANNOT_ADD_BLACKLIST;
+        case 7017: return RET_PLAYER_BLACKLIST_FULL;
+        case 7018: return RET_PLAYER_NOT_IN_BLACKLIST;
+        case 7019: return RET_BLACKLIST_PLAYER_CANNOT_ADD_FRIEND;
+        case 7020: return RET_IN_TARGET_BLACKLIST;
+        case 7021: return RET_CANNOT_ADD_TARGET_FRIEND;
+        case 7022: return RET_BIRTHDAY_FORMAT_ERROR;
+        case 7023: return RET_ONLINE_ID_NOT_EXISTS;
+        case 7024: return RET_FIRST_SHARE_REWARD_HAS_TAKEN;
+        case 7025: return RET_PS_PLAYER_CANNOT_REMOVE_BLACKLIST;
+        case 7026: return RET_REPORT_CD;
+        case 7027: return RET_REPORT_CONTENT_ILLEGAL;
+        case 7028: return RET_REMARK_WORD_ILLEGAL;
+        case 7029: return RET_REMARK_TOO_LONG;
+        case 7030: return RET_REMARK_UTF8_ERROR;
+        case 7031: return RET_REMARK_IS_EMPTY;
+        case 7032: return RET_ASK_ADD_FRIEND_CD;
+        case 7033: return RET_SHOW_AVATAR_INFO_NOT_EXIST;
+        case 7034: return RET_PLAYER_NOT_SHOW_AVATAR;
+        case 7035: return RET_SOCIAL_UPDATE_SHOW_LIST_REPEAT_ID;
+        case 7036: return RET_PSN_ID_NOT_FOUND;
+        case 7037: return RET_EMOJI_COLLECTION_NUM_EXCEED_LIMIT;
+        case 7038: return RET_REMARK_EMPTY;
+        case 7039: return RET_IN_TARGET_PSN_BLACKLIST;
+        case 7040: return RET_SIGNATURE_NOT_CHANGED;
+        case 7041: return RET_SIGNATURE_MONTHLY_LIMIT;
+        case 7042: return RET_REQ_FRIEND_AVATAR_FREQUENTLY;
+        case 7043: return RET_PSN_GET_PLAYER_SOCIAL_DETAIL_FAIL;
+        case 7081: return RET_OFFERING_NOT_OPEN;
+        case 7082: return RET_OFFERING_LEVEL_LIMIT;
+        case 7083: return RET_OFFERING_LEVEL_NOT_REACH;
+        case 7084: return RET_OFFERING_LEVEL_HAS_TAKEN;
+        case 7101: return RET_CITY_REPUTATION_NOT_OPEN;
+        case 7102: return RET_CITY_REPUTATION_LEVEL_TAKEN;
+        case 7103: return RET_CITY_REPUTATION_LEVEL_NOT_REACH;
+        case 7104: return RET_CITY_REPUTATION_PARENT_QUEST_TAKEN;
+        case 7105: return RET_CITY_REPUTATION_PARENT_QUEST_UNFINISH;
+        case 7106: return RET_CITY_REPUTATION_ACCEPT_REQUEST;
+        case 7107: return RET_CITY_REPUTATION_NOT_ACCEPT_REQUEST;
+        case 7108: return RET_CITY_REPUTATION_ACCEPT_REQUEST_LIMIT;
+        case 7109: return RET_CITY_REPUTATION_ENTRANCE_NOT_OPEN;
+        case 7110: return RET_CITY_REPUTATION_TAKEN_REQUEST_REWARD;
+        case 7111: return RET_CITY_REPUTATION_SWITCH_CLOSE;
+        case 7112: return RET_CITY_REPUTATION_ENTRACE_SWITCH_CLOSE;
+        case 7113: return RET_CITY_REPUTATION_TAKEN_EXPLORE_REWARD;
+        case 7114: return RET_CITY_REPUTATION_EXPLORE_NOT_REACH;
+        case 7120: return RET_MECHANICUS_NOT_OPEN;
+        case 7121: return RET_MECHANICUS_GEAR_UNLOCK;
+        case 7122: return RET_MECHANICUS_GEAR_LOCK;
+        case 7123: return RET_MECHANICUS_GEAR_LEVEL_LIMIT;
+        case 7124: return RET_MECHANICUS_COIN_NOT_ENOUGH;
+        case 7125: return RET_MECHANICUS_NO_SEQUENCE;
+        case 7126: return RET_MECHANICUS_SEQUENCE_LIMIT_LEVEL;
+        case 7127: return RET_MECHANICUS_SEQUENCE_LIMIT_OPEN;
+        case 7128: return RET_MECHANICUS_DIFFICULT_NOT_SUPPORT;
+        case 7129: return RET_MECHANICUS_TICKET_NOT_ENOUGH;
+        case 7130: return RET_MECHANICUS_TEACH_NOT_FINISH;
+        case 7131: return RET_MECHANICUS_TEACH_FINISHED;
+        case 7132: return RET_MECHANICUS_PREV_DIFFICULT_LEVEL_BLOCK;
+        case 7133: return RET_MECHANICUS_PLAYER_LIMIT;
+        case 7134: return RET_MECHANICUS_PUNISH_TIME;
+        case 7135: return RET_MECHANICUS_SWITCH_CLOSE;
+        case 7150: return RET_MECHANICUS_BATTLE_NOT_IN_DUNGEON;
+        case 7151: return RET_MECHANICUS_BATTLE_PLAY_NOT_FOUND;
+        case 7152: return RET_MECHANICUS_BATTLE_DUPLICATE_PICK_CARD;
+        case 7153: return RET_MECHANICUS_BATTLE_PLAYER_NOT_IN_PLAY;
+        case 7154: return RET_MECHANICUS_BATTLE_CARD_NOT_AVAILABLE;
+        case 7155: return RET_MECHANICUS_BATTLE_NOT_IN_CARD_STAGE;
+        case 7156: return RET_MECHANICUS_BATTLE_CARD_IS_WAITING;
+        case 7157: return RET_MECHANICUS_BATTLE_CARD_ALL_CONFIRMED;
+        case 7158: return RET_MECHANICUS_BATTLE_CARD_ALREADY_CONFIRMED;
+        case 7159: return RET_MECHANICUS_BATTLE_CARD_CONFIRMED_BY_OTHER;
+        case 7160: return RET_MECHANICUS_BATTLE_CARD_NOT_ENOUGH_POINTS;
+        case 7161: return RET_MECHANICUS_BATTLE_CARD_ALREADY_SKIPPED;
+        case 8001: return RET_LEGENDARY_KEY_NOT_ENOUGH;
+        case 8002: return RET_LEGENDARY_KEY_EXCEED_LIMIT;
+        case 8003: return RET_DAILY_TASK_NOT_ENOUGH_TO_REDEEM;
+        case 8004: return RET_PERSONAL_LINE_OPEN_STATE_OFF;
+        case 8005: return RET_PERSONAL_LINE_LEVEL_NOT_ENOUGH;
+        case 8006: return RET_PERSONAL_LINE_NOT_OPEN;
+        case 8007: return RET_PERSONAL_LINE_PRE_QUEST_NOT_FINISH;
+        case 8201: return RET_HUNTING_ALREADY_FINISH_OFFER_LIMIT;
+        case 8202: return RET_HUNTING_HAS_UNFINISHED_OFFER;
+        case 8203: return RET_HUNTING_FAILED_OFFER_NOT_CD_READY;
+        case 8204: return RET_HUNTING_NOT_TAKE_OFFER;
+        case 8205: return RET_HUNTING_CANNOT_TAKE_TWICE;
+        case 8901: return RET_RPIVATE_CHAT_INVALID_CONTENT_TYPE;
+        case 8902: return RET_PRIVATE_CHAT_TARGET_IS_NOT_FRIEND;
+        case 8903: return RET_PRIVATE_CHAT_CONTENT_NOT_SUPPORTED;
+        case 8904: return RET_PRIVATE_CHAT_CONTENT_TOO_LONG;
+        case 8905: return RET_PRIVATE_CHAT_PULL_TOO_FAST;
+        case 8906: return RET_PRIVATE_CHAT_REPEAT_READ;
+        case 8907: return RET_PRIVATE_CHAT_READ_NOT_FRIEND;
+        case 9001: return RET_REUNION_FINISHED;
+        case 9002: return RET_REUNION_NOT_ACTIVATED;
+        case 9003: return RET_REUNION_ALREADY_TAKE_FIRST_REWARD;
+        case 9004: return RET_REUNION_SIGN_IN_REWARDED;
+        case 9005: return RET_REUNION_WATCHER_REWARDED;
+        case 9006: return RET_REUNION_WATCHER_NOT_FINISH;
+        case 9007: return RET_REUNION_MISSION_REWARDED;
+        case 9008: return RET_REUNION_MISSION_NOT_FINISH;
+        case 9009: return RET_REUNION_WATCHER_REWARD_NOT_UNLOCKED;
+        case 9101: return RET_BLESSING_CONTENT_CLOSED;
+        case 9102: return RET_BLESSING_NOT_ACTIVE;
+        case 9103: return RET_BLESSING_NOT_TODAY_ENTITY;
+        case 9104: return RET_BLESSING_ENTITY_EXCEED_SCAN_NUM_LIMIT;
+        case 9105: return RET_BLESSING_DAILY_SCAN_NUM_EXCEED_LIMIT;
+        case 9106: return RET_BLESSING_REDEEM_REWARD_NUM_EXCEED_LIMIT;
+        case 9107: return RET_BLESSING_REDEEM_PIC_NUM_NOT_ENOUGH;
+        case 9108: return RET_BLESSING_PIC_NOT_ENOUGH;
+        case 9109: return RET_BLESSING_PIC_HAS_RECEIVED;
+        case 9110: return RET_BLESSING_TARGET_RECV_NUM_EXCEED;
+        case 9111: return RET_FLEUR_FAIR_CREDIT_EXCEED_LIMIT;
+        case 9112: return RET_FLEUR_FAIR_CREDIT_NOT_ENOUGH;
+        case 9113: return RET_FLEUR_FAIR_TOKEN_EXCEED_LIMIT;
+        case 9114: return RET_FLEUR_FAIR_TOKEN_NOT_ENOUGH;
+        case 9115: return RET_FLEUR_FAIR_MINIGAME_NOT_OPEN;
+        case 9116: return RET_FLEUR_FAIR_MUSIC_GAME_DIFFICULTY_NOT_UNLOCK;
+        case 9117: return RET_FLEUR_FAIR_DUNGEON_LOCKED;
+        case 9118: return RET_FLEUR_FAIR_DUNGEON_PUNISH_TIME;
+        case 9119: return RET_FLEUR_FAIR_ONLY_OWNER_CAN_RESTART_MINIGAM;
+        case 9120: return RET_WATER_SPIRIT_COIN_EXCEED_LIMIT;
+        case 9121: return RET_WATER_SPIRIT_COIN_NOT_ENOUGH;
+        case 9122: return RET_REGION_SEARCH_NO_SEARCH;
+        case 9123: return RET_REGION_SEARCH_STATE_ERROR;
+        case 9130: return RET_CHANNELLER_SLAB_LOOP_DUNGEON_STAGE_NOT_OPEN;
+        case 9131: return RET_CHANNELLER_SLAB_LOOP_DUNGEON_NOT_OPEN;
+        case 9132: return RET_CHANNELLER_SLAB_LOOP_DUNGEON_FIRST_PASS_REWARD_HAS_TAKEN;
+        case 9133: return RET_CHANNELLER_SLAB_LOOP_DUNGEON_SCORE_REWARD_HAS_TAKEN;
+        case 9134: return RET_CHANNELLER_SLAB_INVALID_ONE_OFF_DUNGEON;
+        case 9135: return RET_CHANNELLER_SLAB_ONE_OFF_DUNGEON_DONE;
+        case 9136: return RET_CHANNELLER_SLAB_ONE_OFF_DUNGEON_STAGE_NOT_OPEN;
+        case 9137: return RET_CHANNELLER_SLAB_TOKEN_EXCEED_LIMIT;
+        case 9138: return RET_CHANNELLER_SLAB_TOKEN_NOT_ENOUGH;
+        case 9139: return RET_CHANNELLER_SLAB_PLAYER_NOT_IN_ONE_OFF_DUNGEON;
+        case 9150: return RET_MIST_TRIAL_SELECT_CHARACTER_NUM_NOT_ENOUGH;
+        case 9151: return RET_MIST_TRIAL_ALREADY_USING_TRIAL_AVATAR;
+        case 9160: return RET_HIDE_AND_SEEK_PLAY_NOT_OPEN;
+        case 9161: return RET_HIDE_AND_SEEK_PLAY_MAP_NOT_OPEN;
+        case 9162: return RET_HIDE_AND_SEEK_PLAY_MAP_NOT_CHOSEN;
+        case 9170: return RET_SUMMER_TIME_DRAFT_WOORD_EXCEED_LIMIT;
+        case 9171: return RET_SUMMER_TIME_DRAFT_WOORD_NOT_ENOUGH;
+        case 9172: return RET_SUMMER_TIME_MINI_HARPASTUM_EXCEED_LIMIT;
+        case 9173: return RET_SUMMER_TIME_MINI_HARPASTUMNOT_ENOUGH;
+        case 9180: return RET_BOUNCE_CONJURING_COIN_EXCEED_LIMIT;
+        case 9181: return RET_BOUNCE_CONJURING_COIN_NOT_ENOUGH;
+        case 9183: return RET_CHESS_TEACH_MAP_FINISHED;
+        case 9184: return RET_CHESS_TEACH_MAP_UNFINISHED;
+        case 9185: return RET_CHESS_COIN_EXCEED_LIMIT;
+        case 9186: return RET_CHESS_COIN_NOT_ENOUGH;
+        case 9187: return RET_CHESS_IN_PUNISH_TIME;
+        case 9188: return RET_CHESS_PREV_MAP_UNFINISHED;
+        case 9189: return RET_CHESS_MAP_LOCKED;
+        case 9192: return RET_BLITZ_RUSH_NOT_OPEN;
+        case 9193: return RET_BLITZ_RUSH_DUNGEON_NOT_OPEN;
+        case 9194: return RET_BLITZ_RUSH_COIN_A_EXCEED_LIMIT;
+        case 9195: return RET_BLITZ_RUSH_COIN_B_EXCEED_LIMIT;
+        case 9196: return RET_BLITZ_RUSH_COIN_A_NOT_ENOUGH;
+        case 9197: return RET_BLITZ_RUSH_COIN_B_NOT_ENOUGH;
+        case 9201: return RET_MIRACLE_RING_VALUE_NOT_ENOUGH;
+        case 9202: return RET_MIRACLE_RING_CD;
+        case 9203: return RET_MIRACLE_RING_REWARD_NOT_TAKEN;
+        case 9204: return RET_MIRACLE_RING_NOT_DELIVER;
+        case 9205: return RET_MIRACLE_RING_DELIVER_EXCEED;
+        case 9206: return RET_MIRACLE_RING_HAS_CREATED;
+        case 9207: return RET_MIRACLE_RING_HAS_NOT_CREATED;
+        case 9208: return RET_MIRACLE_RING_NOT_YOURS;
+        case 9251: return RET_GADGET_FOUNDATION_UNAUTHORIZED;
+        case 9252: return RET_GADGET_FOUNDATION_SCENE_NOT_FOUND;
+        case 9253: return RET_GADGET_FOUNDATION_NOT_IN_INIT_STATE;
+        case 9254: return RET_GADGET_FOUNDATION_BILDING_POINT_NOT_ENOUGHT;
+        case 9255: return RET_GADGET_FOUNDATION_NOT_IN_BUILT_STATE;
+        case 9256: return RET_GADGET_FOUNDATION_OP_NOT_SUPPORTED;
+        case 9257: return RET_GADGET_FOUNDATION_REQ_PLAYER_NOT_IN_SCENE;
+        case 9258: return RET_GADGET_FOUNDATION_LOCKED_BY_ANOTHER_PLAYER;
+        case 9259: return RET_GADGET_FOUNDATION_NOT_LOCKED;
+        case 9260: return RET_GADGET_FOUNDATION_DUPLICATE_LOCK;
+        case 9261: return RET_GADGET_FOUNDATION_PLAYER_NOT_FOUND;
+        case 9262: return RET_GADGET_FOUNDATION_PLAYER_GEAR_NOT_FOUND;
+        case 9263: return RET_GADGET_FOUNDATION_ROTAION_DISABLED;
+        case 9264: return RET_GADGET_FOUNDATION_REACH_DUNGEON_GEAR_LIMIT;
+        case 9265: return RET_GADGET_FOUNDATION_REACH_SINGLE_GEAR_LIMIT;
+        case 9266: return RET_GADGET_FOUNDATION_ROTATION_ON_GOING;
+        case 9301: return RET_OP_ACTIVITY_BONUS_NOT_FOUND;
+        case 9302: return RET_OP_ACTIVITY_NOT_OPEN;
+        case 9501: return RET_MULTISTAGE_PLAY_PLAYER_NOT_IN_SCENE;
+        case 9502: return RET_MULTISTAGE_PLAY_NOT_FOUND;
+        case 9503: return RET_MULTISTAGE_PLAY_IN_OTHER_STAGE;
+        case 9601: return RET_COOP_CHAPTER_NOT_OPEN;
+        case 9602: return RET_COOP_COND_NOT_MEET;
+        case 9603: return RET_COOP_POINT_LOCKED;
+        case 9604: return RET_COOP_NOT_HAVE_PROGRESS;
+        case 9605: return RET_COOP_REWARD_HAS_TAKEN;
+        case 9651: return RET_DRAFT_HAS_ACTIVE_DRAFT;
+        case 9652: return RET_DRAFT_NOT_IN_MY_WORLD;
+        case 9653: return RET_DRAFT_NOT_SUPPORT_MP;
+        case 9654: return RET_DRAFT_PLAYER_NOT_ENOUGH;
+        case 9655: return RET_DRAFT_INCORRECT_SCENE;
+        case 9656: return RET_DRAFT_OTHER_PLAYER_ENTERING;
+        case 9657: return RET_DRAFT_GUEST_IS_TRANSFERRING;
+        case 9658: return RET_DRAFT_GUEST_NOT_IN_DRAFT_SCENE;
+        case 9659: return RET_DRAFT_INVITE_OVER_TIME;
+        case 9660: return RET_DRAFT_TWICE_CONFIRM_OVER_TIMER;
+        case 9661: return RET_DRAFT_GUEST_NOT_IN_WORLD_SCENE;
+        case 9701: return RET_HOME_UNKOWN;
+        case 9702: return RET_HOME_INVALID_CLIENT_PARAM;
+        case 9703: return RET_HOME_TARGE_PLAYER_HAS_NO_HOME;
+        case 9704: return RET_HOME_NOT_ONLINE;
+        case 9705: return RET_HOME_PLAYER_FULL;
+        case 9706: return RET_HOME_BLOCKED;
+        case 9707: return RET_HOME_ALREADY_IN_TARGET_HOME_WORLD;
+        case 9708: return RET_HOME_IN_EDIT_MODE;
+        case 9709: return RET_HOME_NOT_IN_EDIT_MODE;
+        case 9710: return RET_HOME_HAS_GUEST;
+        case 9711: return RET_HOME_CANT_ENTER_BY_IN_EDIT_MODE;
+        case 9712: return RET_HOME_CLIENT_PARAM_INVALID;
+        case 9713: return RET_HOME_PLAYER_NOT_IN_HOME_WORLD;
+        case 9714: return RET_HOME_PLAYER_NOT_IN_SELF_HOME_WORLD;
+        case 9715: return RET_HOME_NOT_FOUND_IN_MEM;
+        case 9716: return RET_HOME_PLAYER_IN_HOME_ROOM_SCENE;
+        case 9717: return RET_HOME_HOME_REFUSE_GUEST_ENTER;
+        case 9718: return RET_HOME_OWNER_REFUSE_TO_ENTER_HOME;
+        case 9719: return RET_HOME_OWNER_OFFLINE;
+        case 9720: return RET_HOME_FURNITURE_EXCEED_LIMIT;
+        case 9721: return RET_HOME_FURNITURE_COUNT_NOT_ENOUGH;
+        case 9722: return RET_HOME_IN_TRY_ENTER_PROCESS;
+        case 9723: return RET_HOME_ALREADY_IN_TARGET_SCENE;
+        case 9724: return RET_HOME_COIN_EXCEED_LIMIT;
+        case 9725: return RET_HOME_COIN_NOT_ENOUGH;
+        case 9726: return RET_HOME_MODULE_NOT_UNLOCKED;
+        case 9727: return RET_HOME_CUR_MODULE_CLOSED;
+        case 9728: return RET_HOME_FURNITURE_SUITE_NOT_UNLOCKED;
+        case 9729: return RET_HOME_IN_MATCH;
+        case 9730: return RET_HOME_IN_COMBAT;
+        case 9731: return RET_HOME_EDIT_MODE_CD;
+        case 9732: return RET_HOME_UPDATE_FURNITURE_CD;
+        case 9733: return RET_HOME_BLOCK_FURNITURE_LIMIT;
+        case 9734: return RET_HOME_NOT_SUPPORT;
+        case 9735: return RET_HOME_STATE_NOT_OPEN;
+        case 9736: return RET_HOME_TARGET_STATE_NOT_OPEN;
+        case 9737: return RET_HOME_APPLY_ENTER_OTHER_HOME_FAIL;
+        case 9738: return RET_HOME_SAVE_NO_MAIN_HOUSE;
+        case 9739: return RET_HOME_IN_DUNGEON;
+        case 9740: return RET_HOME_ANY_GALLERY_STARTED;
+        case 9741: return RET_HOME_QUEST_BLOCK_HOME;
+        case 9742: return RET_HOME_WAITING_PRIOR_CHECK;
+        case 9743: return RET_HOME_PERSISTENT_CHECK_FAIL;
+        case 9744: return RET_HOME_FIND_ONLINE_HOME_FAIL;
+        case 9745: return RET_HOME_JOIN_SCENE_FAIL;
+        case 9746: return RET_HOME_MAX_PLAYER;
+        case 9747: return RET_HOME_IN_TRANSFER;
+        case 9748: return RET_HOME_ANY_HOME_GALLERY_STARTED;
+        case 9749: return RET_HOME_CAN_NOT_ENTER_IN_AUDIT;
+        case 9750: return RET_FURNITURE_MAKE_INDEX_ERROR;
+        case 9751: return RET_FURNITURE_MAKE_LOCKED;
+        case 9752: return RET_FURNITURE_MAKE_CONFIG_ERROR;
+        case 9753: return RET_FURNITURE_MAKE_SLOT_FULL;
+        case 9754: return RET_FURNITURE_MAKE_ADD_FURNITURE_FAIL;
+        case 9755: return RET_FURNITURE_MAKE_UNFINISH;
+        case 9756: return RET_FURNITURE_MAKE_IS_FINISH;
+        case 9757: return RET_FURNITURE_MAKE_NOT_IN_CORRECT_HOME;
+        case 9758: return RET_FURNITURE_MAKE_NO_COUNT;
+        case 9759: return RET_FURNITURE_MAKE_ACCELERATE_LIMIT;
+        case 9760: return RET_FURNITURE_MAKE_NO_MAKE_DATA;
+        case 9761: return RET_HOME_LIMITED_SHOP_CLOSE;
+        case 9762: return RET_HOME_AVATAR_NOT_SHOW;
+        case 9763: return RET_HOME_EVENT_COND_NOT_SATISFIED;
+        case 9764: return RET_HOME_INVALID_ARRANGE_ANIMAL_PARAM;
+        case 9765: return RET_HOME_INVALID_ARRANGE_NPC_PARAM;
+        case 9766: return RET_HOME_INVALID_ARRANGE_SUITE_PARAM;
+        case 9767: return RET_HOME_INVALID_ARRANGE_MAIN_HOUSE_PARAM;
+        case 9768: return RET_HOME_AVATAR_STATE_NOT_OPEN;
+        case 9769: return RET_HOME_PLANT_FIELD_NOT_EMPTY;
+        case 9770: return RET_HOME_PLANT_FIELD_EMPTY;
+        case 9771: return RET_HOME_PLANT_FIELD_TYPE_ERROR;
+        case 9772: return RET_HOME_PLANT_TIME_NOT_ENOUGH;
+        case 9773: return RET_HOME_PLANT_SUB_FIELD_NUM_NOT_ENOUGH;
+        case 9774: return RET_HOME_PLANT_FIELD_PARAM_ERROR;
+        case 9775: return RET_HOME_FURNITURE_GUID_ERROR;
+        case 9776: return RET_HOME_FURNITURE_ARRANGE_LIMIT;
+        case 9777: return RET_HOME_FISH_FARMING_LIMIT;
+        case 9778: return RET_HOME_FISH_COUNT_NOT_ENOUGH;
+        case 9779: return RET_HOME_FURNITURE_COST_LIMIT;
+        case 9780: return RET_HOME_CUSTOM_FURNITURE_INVALID;
+        case 9781: return RET_HOME_INVALID_ARRANGE_GROUP_PARAM;
+        case 9782: return RET_HOME_FURNITURE_ARRANGE_GROUP_LIMIT;
+        case 9783: return RET_HOME_PICTURE_FRAME_COOP_CG_GENDER_ERROR;
+        case 9784: return RET_HOME_PICTURE_FRAME_COOP_CG_NOT_UNLOCK;
+        case 9785: return RET_HOME_FURNITURE_CANNOT_ARRANGE;
+        case 9786: return RET_HOME_FURNITURE_IN_DUPLICATE_SUITE;
+        case 9787: return RET_HOME_FURNITURE_CUSTOM_SUITE_TOO_SMALL;
+        case 9788: return RET_HOME_FURNITURE_CUSTOM_SUITE_TOO_BIG;
+        case 9789: return RET_HOME_FURNITURE_SUITE_EXCEED_LIMIT;
+        case 9790: return RET_HOME_FURNITURE_CUSTOM_SUITE_EXCEED_LIMIT;
+        case 9791: return RET_HOME_FURNITURE_CUSTOM_SUITE_INVALID_SURFACE_TYPE;
+        case 9792: return RET_HOME_BGM_ID_NOT_FOUND;
+        case 9793: return RET_HOME_BGM_NOT_UNLOCKED;
+        case 9794: return RET_HOME_BGM_FURNITURE_NOT_FOUND;
+        case 9795: return RET_HOME_BGM_NOT_SUPPORT_BY_CUR_SCENE;
+        case 9796: return RET_HOME_LIMITED_SHOP_GOODS_DISABLE;
+        case 9797: return RET_HOME_WORLD_WOOD_MATERIAL_EMPTY;
+        case 9798: return RET_HOME_WORLD_WOOD_MATERIAL_NOT_FOUND;
+        case 9799: return RET_HOME_WORLD_WOOD_MATERIAL_COUNT_INVALID;
+        case 9800: return RET_HOME_WORLD_WOOD_EXCHANGE_EXCEED_LIMIT;
+        case 9801: return RET_HOME_BLUEPRINT_SEARCH_SELF;
+        case 9802: return RET_HOME_BLUEPRINT_SHARE_CODE_INVALID;
+        case 9803: return RET_HOME_BLUEPRINT_NOT_EXIST;
+        case 9804: return RET_HOME_BLUEPRINT_SLOT_HAS_EXIST_SHARE_CODE;
+        case 9805: return RET_HOME_BLUEPRINT_SLOT_NOT_EXIST_SHARE_CODE;
+        case 9806: return RET_HOME_BLUEPRINT_CAN_NOT_CREATE_IN_AUDIT;
+        case 9807: return RET_HOME_BLOCK_NOT_UNLOCKED;
+        case 9808: return RET_HOME_BLUEPRINT_CREATE_CD;
+        case 9809: return RET_HOME_BLUEPRINT_SET_OPTION_CD;
+        case 9810: return RET_HOME_BLUEPRINT_NOT_ALLOW_FRIEND_COPY;
+        case 9811: return RET_HOME_FURNITURE_POS_UNDER_DIE_Y;
+        case 9812: return RET_HOME_BLUEPRINT_GEN_SHARE_CODE_FAIL;
+        case 9813: return RET_HOME_BLUEPRINT_SEARCH_CD;
+        case 9814: return RET_HOME_BLUEPRINT_PREVIEW_CD;
+        case 9815: return RET_HOME_BLUEPRINT_PREVIEW_SCENE_NOT_MATCH;
+        case 10000: return RET_SUMO_ACTIVITY_STAGE_NOT_OPEN;
+        case 10001: return RET_SUMO_ACTIVITY_SWITCH_TEAM_IN_CD;
+        case 10002: return RET_SUMO_ACTIVITY_TEAM_NUM_INCORRECT;
+        case 10004: return RET_LUNA_RITE_ACTIVITY_AREA_ID_ERROR;
+        case 10005: return RET_LUNA_RITE_ACTIVITY_BATTLE_NOT_FINISH;
+        case 10006: return RET_LUNA_RITE_ACTIVITY_ALREADY_SACRIFICE;
+        case 10007: return RET_LUNA_RITE_ACTIVITY_ALREADY_TAKE_REWARD;
+        case 10008: return RET_LUNA_RITE_ACTIVITY_SACRIFICE_NOT_ENOUGH;
+        case 10009: return RET_LUNA_RITE_ACTIVITY_SEARCHING_COND_NOT_MEET;
+        case 10015: return RET_DIG_GADGET_CONFIG_ID_NOT_MATCH;
+        case 10016: return RET_DIG_FIND_NEAREST_POS_FAIL;
+        case 10021: return RET_MUSIC_GAME_LEVEL_NOT_OPEN;
+        case 10022: return RET_MUSIC_GAME_LEVEL_NOT_UNLOCK;
+        case 10023: return RET_MUSIC_GAME_LEVEL_NOT_STARTED;
+        case 10024: return RET_MUSIC_GAME_LEVEL_CONFIG_NOT_FOUND;
+        case 10025: return RET_MUSIC_GAME_LEVEL_ID_NOT_MATCH;
+        case 10031: return RET_ROGUELIKE_COIN_A_NOT_ENOUGH;
+        case 10032: return RET_ROGUELIKE_COIN_B_NOT_ENOUGH;
+        case 10033: return RET_ROGUELIKE_COIN_C_NOT_ENOUGH;
+        case 10034: return RET_ROGUELIKE_COIN_A_EXCEED_LIMIT;
+        case 10035: return RET_ROGUELIKE_COIN_B_EXCEED_LIMIT;
+        case 10036: return RET_ROGUELIKE_COIN_C_EXCEED_LIMIT;
+        case 10037: return RET_ROGUELIKE_RUNE_COUNT_NOT_ENOUGH;
+        case 10038: return RET_ROGUELIKE_NOT_IN_ROGUE_DUNGEON;
+        case 10039: return RET_ROGUELIKE_CELL_NOT_FOUND;
+        case 10040: return RET_ROGUELIKE_CELL_TYPE_INCORRECT;
+        case 10041: return RET_ROGUELIKE_CELL_ALREADY_FINISHED;
+        case 10042: return RET_ROGUELIKE_DUNGEON_HAVE_UNFINISHED_PROGRESS;
+        case 10043: return RET_ROGUELIKE_STAGE_NOT_FINISHED;
+        case 10045: return RET_ROGUELIKE_STAGE_FIRST_PASS_REWARD_HAS_TAKEN;
+        case 10046: return RET_ROGUELIKE_ACTIVITY_CONTENT_CLOSED;
+        case 10047: return RET_ROGUELIKE_DUNGEON_PRE_QUEST_NOT_FINISHED;
+        case 10048: return RET_ROGUELIKE_DUNGEON_NOT_OPEN;
+        case 10049: return RET_ROGUELIKE_SPRINT_IS_BANNED;
+        case 10050: return RET_ROGUELIKE_DUNGEON_PRE_STAGE_NOT_FINISHED;
+        case 10051: return RET_ROGUELIKE_ALL_AVATAR_DIE_CANNOT_RESUME;
+        case 10056: return RET_PLANT_FLOWER_ALREADY_TAKE_SEED;
+        case 10057: return RET_PLANT_FLOWER_FRIEND_HAVE_FLOWER_LIMIT;
+        case 10058: return RET_PLANT_FLOWER_CAN_GIVE_FLOWER_NOT_ENOUGH;
+        case 10059: return RET_PLANT_FLOWER_WISH_FLOWER_KINDS_LIMIT;
+        case 10060: return RET_PLANT_FLOWER_HAVE_FLOWER_NOT_ENOUGH;
+        case 10061: return RET_PLANT_FLOWER_FLOWER_COMBINATION_INVALID;
+        case 10052: return RET_HACHI_DUNGEON_NOT_VALID;
+        case 10053: return RET_HACHI_DUNGEON_STAGE_NOT_OPEN;
+        case 10054: return RET_HACHI_DUNGEON_TEAMMATE_NOT_PASS;
+        case 10071: return RET_WINTER_CAMP_COIN_A_NOT_ENOUGH;
+        case 10072: return RET_WINTER_CAMP_COIN_B_NOT_ENOUGH;
+        case 10073: return RET_WINTER_CAMP_COIN_A_EXCEED_LIMIT;
+        case 10074: return RET_WINTER_CAMP_COIN_B_EXCEED_LIMIT;
+        case 10075: return RET_WINTER_CAMP_WISH_ID_INVALID;
+        case 10076: return RET_WINTER_CAMP_NOT_FOUND_RECV_ITEM_DATA;
+        case 10077: return RET_WINTER_CAMP_FRIEND_ITEM_COUNT_OVERFLOW;
+        case 10078: return RET_WINTER_CAMP_SELECT_ITEM_DATA_INVALID;
+        case 10079: return RET_WINTER_CAMP_ITEM_LIST_EMPTY;
+        case 10080: return RET_WINTER_CAMP_REWARD_ALREADY_TAKEN;
+        case 10081: return RET_WINTER_CAMP_STAGE_NOT_FINISH;
+        case 10082: return RET_WINTER_CAMP_GADGET_INVALID;
+        case 10090: return RET_LANTERN_RITE_COIN_A_NOT_ENOUGH;
+        case 10091: return RET_LANTERN_RITE_COIN_B_NOT_ENOUGH;
+        case 10092: return RET_LANTERN_RITE_COIN_C_NOT_ENOUGH;
+        case 10093: return RET_LANTERN_RITE_COIN_A_EXCEED_LIMIT;
+        case 10094: return RET_LANTERN_RITE_COIN_B_EXCEED_LIMIT;
+        case 10095: return RET_LANTERN_RITE_COIN_C_EXCEED_LIMIT;
+        case 10096: return RET_LANTERN_RITE_PROJECTION_CONTENT_CLOSED;
+        case 10097: return RET_LANTERN_RITE_PROJECTION_CAN_NOT_START;
+        case 10098: return RET_LANTERN_RITE_DUNGEON_NOT_OPEN;
+        case 10099: return RET_LANTERN_RITE_HAS_TAKEN_SKIN_REWARD;
+        case 10100: return RET_LANTERN_RITE_NOT_FINISHED_SKIN_WATCHERS;
+        case 10101: return RET_LANTERN_RITE_FIREWORKS_CONTENT_CLOSED;
+        case 10102: return RET_LANTERN_RITE_FIREWORKS_CHALLENGE_NOT_START;
+        case 10103: return RET_LANTERN_RITE_FIREWORKS_REFORM_PARAM_ERROR;
+        case 10104: return RET_LANTERN_RITE_FIREWORKS_REFORM_SKILL_LOCK;
+        case 10105: return RET_LANTERN_RITE_FIREWORKS_REFORM_STAMINA_NOT_ENOUGH;
+        case 10110: return RET_POTION_ACTIVITY_STAGE_NOT_OPEN;
+        case 10111: return RET_POTION_ACTIVITY_LEVEL_HAVE_PASS;
+        case 10112: return RET_POTION_ACTIVITY_TEAM_NUM_INCORRECT;
+        case 10113: return RET_POTION_ACTIVITY_AVATAR_IN_CD;
+        case 10114: return RET_POTION_ACTIVITY_BUFF_IN_CD;
+        case 10120: return RET_IRODORI_POETRY_INVALID_LINE_ID;
+        case 10121: return RET_IRODORI_POETRY_INVALID_THEME_ID;
+        case 10122: return RET_IRODORI_POETRY_NOT_GET_ALL_INSPIRATION;
+        case 10123: return RET_IRODORI_POETRY_INSPIRATION_REACH_LIMIE;
+        case 10124: return RET_IRODORI_POETRY_ENTITY_ALREADY_SCANNED;
+        case 10300: return RET_ACTIVITY_BANNER_ALREADY_CLEARED;
+        case 10301: return RET_IRODORI_CHESS_NOT_OPEN;
+        case 10302: return RET_IRODORI_CHESS_LEVEL_NOT_OPEN;
+        case 10303: return RET_IRODORI_CHESS_MAP_NOT_OPEN;
+        case 10304: return RET_IRODORI_CHESS_MAP_CARD_ALREADY_EQUIPED;
+        case 10305: return RET_IRODORI_CHESS_EQUIP_CARD_EXCEED_LIMIT;
+        case 10306: return RET_IRODORI_CHESS_MAP_CARD_NOT_EQUIPED;
+        case 10307: return RET_IRODORI_CHESS_ENTER_FAIL_CARD_EXCEED_LIMIT;
+        case 10310: return RET_ACTIVITY_FRIEND_HAVE_GIFT_LIMIT;
+        case 10315: return RET_GACHA_ACTIVITY_HAVE_REWARD_LIMIT;
+        case 10316: return RET_GACHA_ACTIVITY_HAVE_ROBOT_LIMIT;
+        case 10317: return RET_SUMMER_TIME_V2_COIN_EXCEED_LIMIT;
+        case 10318: return RET_SUMMER_TIME_V2_COIN_NOT_ENOUGH;
+        case 10319: return RET_SUMMER_TIME_V2_DUNGEON_STAGE_NOT_OPEN;
+        case 10320: return RET_SUMMER_TIME_V2_PREV_DUNGEON_NOT_COMPLETE;
+        case 10350: return RET_ROGUE_DIARY_AVATAR_DEATH;
+        case 10351: return RET_ROGUE_DIARY_AVATAR_TIRED;
+        case 10352: return RET_ROGUE_DIARY_AVATAR_DUPLICATED;
+        case 10353: return RET_ROGUE_DIARY_COIN_NOT_ENOUGH;
+        case 10354: return RET_ROGUE_DIARY_VIRTUAL_COIN_EXCEED_LIMIT;
+        case 10355: return RET_ROGUE_DIARY_VIRTUAL_COIN_NOT_ENOUGH;
+        case 10366: return RET_ROGUE_DIARY_CONTENT_CLOSED;
+        case 10380: return RET_GRAVEN_INNOCENCE_COIN_A_NOT_ENOUGH;
+        case 10381: return RET_GRAVEN_INNOCENCE_COIN_B_NOT_ENOUGH;
+        case 10382: return RET_GRAVEN_INNOCENCE_COIN_A_EXCEED_LIMIT;
+        case 10383: return RET_GRAVEN_INNOCENCE_COIN_B_EXCEED_LIMIT;
+        case 10371: return RET_ISLAND_PARTY_STAGE_NOT_OPEN;
+        case 10390: return RET_WIND_FIELD_STAGE_NOT_OPEN;
+        case 10396: return RET_VINTAGE_CONTENT_CLOSED;
+        case 10397: return RET_VINTAGE_STORE_CONTENT_FINISHED;
+        case 10398: return RET_VINTAGE_STORE_ATTR_TOO_SMALL;
+        case 10399: return RET_VINTAGE_STORE_ATTR_TOO_LARGE;
+        case 10400: return RET_VINTAGE_STORE_CONTENT_INTERRUPT;
+        case 10401: return RET_VINTAGE_VIRTUAL_COIN_NOT_ENOUGH;
+        case 10402: return RET_VINTAGE_STORE_ATTR_LESS_THAN_ZERO;
+        case 10406: return RET_FUNGUS_FIGHTER_CAPTURE_COIN_NOT_ENOUGH;
+        case 10407: return RET_FUNGUS_FIGHTER_TRAINING_COIN_NOT_ENOUGH;
+        case 10408: return RET_FUNGUS_FIGHTER_CAPTURE_COIN_EXCEED_LIMIT;
+        case 10409: return RET_FUNGUS_FIGHTER_TRAINING_COIN_EXCEED_LIMIT;
+        case 10410: return RET_FUNGUS_FIGHTER_CONTENT_CLOSED;
+        case 10411: return RET_FUNGUS_FIGHTER_PLOT_STAGE_NOT_OPEN;
+        case 10412: return RET_FUNGUS_FIGHTER_FUNGUS_ID_CONFIG_NOT_VALID;
+        case 10413: return RET_FUNGUS_FIGHTER_FUNGUS_NOT_CULTIVATED;
+        case 10414: return RET_FUNGUS_FIGHTER_TRAINING_DUNGEON_NOT_OPEN;
+        case 10427: return RET_EFFIGY_CHALLENGE_V2_COIN_NOT_ENOUGH;
+        case 10428: return RET_EFFIGY_CHALLENGE_V2_COIN_EXCEED_LIMIT;
+        case 10436: return RET_CHAR_AMUSEMENT_STAGE_NOT_OPEN;
+        case 10446: return RET_COIN_COLLECT_LEVEL_NOT_OPEN;
+        case 10447: return RET_COIN_COLLECT_NOT_EQUIP_WIDGET;
+        case 10448: return RET_COIN_COLLECT_SCENE_NOT_MATCH;
+        case 10449: return RET_COIN_COLLECT_CANT_ENTER_MP_MODE;
+        case 10450: return RET_COIN_COLLECT_PLAYER_NUM_FAIL;
+        case 10456: return RET_BRICK_BREAKER_PLAYER_NUM_FAIL;
+        case 10457: return RET_BRICK_BREAKER_STAGE_NOT_UNLOCK;
+        case 10458: return RET_BRICK_BREAKER_NORMAL_LEVEL_NOT_FINISH;
+        case 10459: return RET_BRICK_BREAKER_PRE_LEVEL_NOT_FINISH;
+        case 10460: return RET_BRICK_BREAKER_PRE_STAGE_NOT_FINISH;
+        case 10461: return RET_BRICK_BREAKER_WORLD_LEVEL_NOT_UNLOCK;
+        case 10462: return RET_BRICK_BREAKER_DUNGEON_LEVEL_NOT_UNLOCK;
+        case 10463: return RET_BRICK_BREAKER_COIN_NOT_ENOUGH;
+        case 10464: return RET_BRICK_BREAKER_COIN_EXCEED_LIMIT;
+        case 10901: return RET_ACTIVITY_CONTENT_CLOSED;
+        case 11001: return RET_NOT_IN_FISHING;
+        case 11002: return RET_FISH_STATE_ERROR;
+        case 11003: return RET_FISH_BAIT_LIMIT;
+        case 11004: return RET_FISHING_MAX_DISTANCE;
+        case 11005: return RET_FISHING_IN_COMBAT;
+        case 11006: return RET_FISHING_BATTLE_TOO_SHORT;
+        case 11007: return RET_FISH_GONE_AWAY;
+        case 11051: return RET_CAN_NOT_EDIT_OTHER_DUNGEON;
+        case 11052: return RET_CUSTOM_DUNGEON_DISMATCH;
+        case 11053: return RET_NO_CUSTOM_DUNGEON_DATA;
+        case 11054: return RET_BUILD_CUSTOM_DUNGEON_FAIL;
+        case 11055: return RET_CUSTOM_DUNGEON_ROOM_CHECK_FAIL;
+        case 11056: return RET_CUSTOM_DUNGEON_SAVE_MAY_FAIL;
+        case 11057: return RET_NOT_IN_CUSTOM_DUNGEON;
+        case 11058: return RET_CUSTOM_DUNGEON_INTERNAL_FAIL;
+        case 11059: return RET_CUSTOM_DUNGEON_CAN_NOT_TRY;
+        case 11060: return RET_CUSTOM_DUNGEON_NO_START_ROOM;
+        case 11061: return RET_CUSTOM_DUNGEON_NO_ROOM_DATA;
+        case 11062: return RET_CUSTOM_DUNGEON_SAVE_TOO_FREQUENT;
+        case 11063: return RET_CUSTOM_DUNGEON_NOT_SELF_PASS;
+        case 11064: return RET_CUSTOM_DUNGEON_LACK_COIN;
+        case 11065: return RET_CUSTOM_DUNGEON_NO_FINISH_BRICK;
+        case 11066: return RET_CUSTOM_DUNGEON_MULTI_FINISH;
+        case 11067: return RET_CUSTOM_DUNGEON_NOT_PUBLISHED;
+        case 11068: return RET_CUSTOM_DUNGEON_FULL_STORE;
+        case 11069: return RET_CUSTOM_DUNGEON_STORE_REPEAT;
+        case 11070: return RET_CUSTOM_DUNGEON_CAN_NOT_STORE_SELF;
+        case 11071: return RET_CUSTOM_DUNGEON_NOT_SAVE_SUCC;
+        case 11072: return RET_CUSTOM_DUNGEON_CAN_NOT_LIKE_SELF;
+        case 11073: return RET_CUSTOM_DUNGEON_NOT_FOUND;
+        case 11074: return RET_CUSTOM_DUNGEON_INVALID_SETTING;
+        case 11075: return RET_CUSTOM_DUNGEON_NO_FINISH_SETTING;
+        case 11076: return RET_CUSTOM_DUNGEON_SAVE_NOTHING;
+        case 11077: return RET_CUSTOM_DUNGEON_NOT_IN_GROUP;
+        case 11078: return RET_CUSTOM_DUNGEON_NOT_OFFICIAL;
+        case 11079: return RET_CUSTOM_DUNGEON_LIFE_NUM_ERROR;
+        case 11080: return RET_CUSTOM_DUNGEON_NO_OPEN_ROOM;
+        case 11081: return RET_CUSTOM_DUNGEON_BRICK_EXCEED_LIMIT;
+        case 11082: return RET_CUSTOM_DUNGEON_OFFICIAL_NOT_UNLOCK;
+        case 11083: return RET_CAN_NOT_EDIT_OFFICIAL_SETTING;
+        case 11084: return RET_CUSTOM_DUNGEON_BAN_PUBLISH;
+        case 11085: return RET_CUSTOM_DUNGEON_CAN_NOT_REPLAY;
+        case 11086: return RET_CUSTOM_DUNGEON_NOT_OPEN_GROUP;
+        case 11087: return RET_CUSTOM_DUNGEON_MAX_EDIT_NUM;
+        case 11088: return RET_CUSTOM_DUNGEON_CAN_NOT_OUT_STUCK;
+        case 11089: return RET_CUSTOM_DUNGEON_MAX_TAG;
+        case 11090: return RET_CUSTOM_DUNGEON_INVALID_TAG;
+        case 11091: return RET_CUSTOM_DUNGEON_MAX_COST;
+        case 11092: return RET_CUSTOM_DUNGEON_REQUEST_TOO_FREQUENT;
+        case 11093: return RET_CUSTOM_DUNGEON_NOT_OPEN;
+        case 11101: return RET_SHARE_CD_ID_ERROR;
+        case 11102: return RET_SHARE_CD_INDEX_ERROR;
+        case 11103: return RET_SHARE_CD_IN_CD;
+        case 11104: return RET_SHARE_CD_TOKEN_NOT_ENOUGH;
+        case 11151: return RET_UGC_DISMATCH;
+        case 11152: return RET_UGC_DATA_NOT_FOUND;
+        case 11153: return RET_UGC_BRIEF_NOT_FOUND;
+        case 11154: return RET_UGC_DISABLED;
+        case 11155: return RET_UGC_LIMITED;
+        case 11156: return RET_UGC_LOCKED;
+        case 11157: return RET_UGC_NOT_AUTH;
+        case 11158: return RET_UGC_NOT_OPEN;
+        case 11159: return RET_UGC_BAN_PUBLISH;
+        case 11201: return RET_COMPOUND_BOOST_ITEM_NOT_EXIST;
+        case 11202: return RET_COMPOUND_BOOST_TARGET_NOT_EXIST;
+        case 11211: return RET_QUICK_HIT_TREE_EMPTY_TREES;
+        case 12000: return RET_GCG_FIND_GAME_MODE_FAIL;
+        case 12001: return RET_GCG_OPERATION_PARAM_ERROR;
+        case 12002: return RET_GCG_GAME_NOT_RUNNING;
+        case 12003: return RET_GCG_OP_NOT_ALLOW;
+        case 12004: return RET_GCG_OP_NOT_MATCH_PHASE;
+        case 12005: return RET_GCG_SELECT_HAND_CARD_GUID_ERROR;
+        case 12006: return RET_GCG_DICE_INDEX_INVALID;
+        case 12007: return RET_GCG_CHARACTER_GUID_INVALID;
+        case 12008: return RET_GCG_CHARACTER_ALREADY_DIE;
+        case 12009: return RET_GCG_CHARACTER_ALREADY_ON_STAGE;
+        case 12010: return RET_GCG_CHARACTER_FORBIDDEN_ATTACK;
+        case 12011: return RET_GCG_SELECT_DICE_NOT_MATCH;
+        case 12012: return RET_GCG_FIND_SKILL_FAIL;
+        case 12013: return RET_GCG_SKILL_CAN_NOT_ACTIVE_USE;
+        case 12014: return RET_GCG_ENERGY_NOT_ENOUGH;
+        case 12015: return RET_GCG_PLAY_CARD_TARGET_NOT_MATCH;
+        case 12016: return RET_GCG_PLAY_CARD_ZONE_CANNOT_ADD;
+        case 12017: return RET_GCG_REBOOT_SELECT_DICE_INVALID;
+        case 12018: return RET_GCG_REBOOT_SELECT_CARD_INVALID;
+        case 12019: return RET_GCG_PLAY_CARD_CONDITION_CHECK_FAIL;
+        case 12020: return RET_GCG_PLAY_CARD_PARAM_INVALID;
+        case 12021: return RET_GCG_MAX_GAME;
+        case 12022: return RET_GCG_SEND_PACKET_FAIL;
+        case 12023: return RET_GCG_ALREADY_SETTLE;
+        case 12101: return RET_GCG_COIN_EXCEED_LIMIT;
+        case 12102: return RET_GCG_COIN_NOT_ENOUGH;
+        case 12103: return RET_GCG_NOT_IN_SELF_WORLD;
+        case 12104: return RET_GCG_ALREADY_IN_DUEL;
+        case 12105: return RET_GCG_NOT_IN_PLAYER_WORLD;
+        case 12106: return RET_GCG_GALLERY_STARTED;
+        case 12107: return RET_GCG_INVITE_TARGET_IS_SELF;
+        case 12108: return RET_GCG_INVITE_TARGET_NOT_IN_WORLD;
+        case 12109: return RET_GCG_APPLY_INVITE_NOT_ALLOW;
+        case 12110: return RET_GCG_APPLY_INVITE_TIMEOUT;
+        case 12111: return RET_GCG_CUR_DECK_INVALID;
+        case 12112: return RET_GCG_NEED_RESOURCE_COMPLETE;
+        case 12113: return RET_GCG_OPPONENT_PLAYER_IS_SELF;
+        case 12114: return RET_GCG_GAME_ID_INVALID;
+        case 12115: return RET_GCG_MATCH_IN_PUNISH;
+        case 12116: return RET_GCG_SETTLE_STILL_IN_DUEL;
+        case 12117: return RET_GCG_SETTLE_NOT_IN_DUNGEON;
+        case 12118: return RET_GCG_UNSUPPORT_SETTLE_OPTION;
+        case 12119: return RET_GCG_NOT_IN_GCG_DUNGEON;
+        case 12120: return RET_GCG_WORLD_LEVEL_LOCKED;
+        case 12121: return RET_GCG_BOSS_LEVEL_LOCKED;
+        case 12122: return RET_GCG_NOT_IN_TAVERN;
+        case 12123: return RET_GCG_WEEK_NPC_NOT_EXIST;
+        case 12124: return RET_GCG_ENTER_GAME_FREQUENT;
+        case 12125: return RET_GCG_BREAK_LEVEL_QUEST_NOT_UNFINISHED;
+        case 12126: return RET_GCG_GUIDE_LEVEL_ALREADY_FINISHED;
+        case 12127: return RET_GCG_LEVEL_CANNOT_RESTART;
+        case 12128: return RET_GCG_TARGET_CHECK_ENTER_FAIL;
+        case 12129: return RET_GCG_ALREADY_IN_DUNGEON;
+        case 12130: return RET_GCG_BACK_DUEL_NO_GAME;
+        case 12131: return RET_GCG_CONST_LEVEL_LOCKED;
+        case 12132: return RET_GCG_QUEST_ID_ERROR;
+        case 12133: return RET_GCG_QUEST_NEED_UNFINISHED;
+        case 12134: return RET_GCG_IN_MATCH;
+        case 12135: return RET_GCG_DATA_VERSION_NOT_LATEST;
+        case 12136: return RET_GCG_INVITE_TARGET_ENTER_GAME_FREQUENT;
+        case 12137: return RET_GCG_INVITE_TARGET_NEED_RESOURCE_COMPLETE;
+        case 12138: return RET_GCG_INVITE_TARGET_SCENE_IS_NULL;
+        case 12139: return RET_GCG_INVITE_TARGET_IN_TRANSFER;
+        case 12140: return RET_GCG_INVITE_TARGET_DATA_VERSION_NOT_LATEST;
+        case 12141: return RET_GCG_INVITE_TARGET_CUR_DECK_INVALID;
+        case 12142: return RET_GCG_CLIENT_DATA_VERSION_NOT_MATCH;
+        case 12143: return RET_GCG_CLIENT_DATA_VERSOIN_FORBID;
+        case 12144: return RET_GCG_MP_CANT_MATCH;
+        case 12145: return RET_GCG_INVITE_TARGET_STATE_NOT_OPEN;
+        case 12146: return RET_GCG_CREATE_TIME_OUT;
+        case 12147: return RET_GCG_BAN_MATCH;
+        case 12148: return RET_GCG_BAN_INVITE;
+        case 12149: return RET_GCG_TARGET_BAN_INVITE;
+        case 12150: return RET_GCG_INVITE_ALREADY_INVITE;
+        case 12153: return RET_GCG_BACK_DUEL_PS_TO_OTHER;
+        case 12154: return RET_GCG_BACK_DUEL_OTHER_TO_PS;
+        case 12201: return RET_GCG_DS_DECK_LOCKED;
+        case 12202: return RET_GCG_DS_DECK_NAME_INVALID;
+        case 12204: return RET_GCG_DS_DECK_CHAR_CARD_NUM_INVALID;
+        case 12205: return RET_GCG_DS_DECK_CARD_NUM_INVALID;
+        case 12206: return RET_GCG_DS_CARD_NUM_EXCEED_LIMIT;
+        case 12207: return RET_GCG_DS_DECK_INVALID;
+        case 12208: return RET_GCG_DS_CARD_ID_INVALID;
+        case 12209: return RET_GCG_DS_CARD_FACE_ALREADY_UNLOCK;
+        case 12210: return RET_GCG_DS_CARD_FACE_IS_LOCK;
+        case 12211: return RET_GCG_DS_FIELD_LOCK;
+        case 12212: return RET_GCG_DS_FIELD_ALREADY_UNLOCK;
+        case 12213: return RET_GCG_DS_FIELD_ID_INVALID;
+        case 12214: return RET_GCG_DS_CARD_BACK_LOCKED;
+        case 12215: return RET_GCG_DS_CARD_BACK_ALREADY_UNLOCK;
+        case 12216: return RET_GCG_DS_CARD_BACK_ID_INVALID;
+        case 12217: return RET_GCG_DS_CARD_FACE_ID_INVALID;
+        case 12218: return RET_GCG_DS_DECK_NAME_ILLEGAL;
+        case 12219: return RET_GCG_DS_DECK_SAVE_CD;
+        case 12220: return RET_GCG_DS_DECK_CHANGE_NAME_CD;
+        case 12221: return RET_GCG_MATCH_DECK_INVALID;
+        case 12222: return RET_GCG_DS_DECK_ALREADY_UNLOCKED;
+        case 12223: return RET_GCG_DS_AT_LEAST_ONE_DECK;
+        case 12251: return RET_GCG_TC_CHARACTERNOT_MATCH_LEVEL;
+        case 12252: return RET_GCG_TC_MUST_IN_SELF_WORLD;
+        case 12253: return RET_GCG_TC_MUST_IN_TAVERN;
+        case 12254: return RET_GCG_TC_ALREADY_IN_GAME;
+        case 12255: return RET_GCG_TC_ALREADY_IN_MATCH;
+        case 12256: return RET_GCG_TC_UNLOCK_CHARACTER_QUEST_NOT_FINISH;
+        case 12257: return RET_GCG_TC_LEVEL_LOCKED;
+        case 12258: return RET_GCG_TC_NO_INVITE_DATA;
+        case 12259: return RET_GCG_TC_CUR_DECK_INVALID;
+        case 12260: return RET_GCG_TC_COND_QUEST;
+        case 12301: return RET_GCG_LEVEL_REWARD_LEVEL_ERROR;
+        case 12302: return RET_GCG_LEVEL_REWARD_ALREADY_TAKEN;
+        case 12303: return RET_GCG_LEVEL_REWARD_NO_REWARD;
         default: return null;
       }
     }
@@ -9401,1143 +10877,1092 @@ public final class RetcodeOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\rRetcode.proto*\356\342\002\n\007Retcode\022\024\n\020RETCODE_" +
-      "RET_SUCC\020\000\022\035\n\020RETCODE_RET_FAIL\020\377\377\377\377\377\377\377\377\377" +
-      "\001\022\031\n\025RETCODE_RET_SVR_ERROR\020\001\022\035\n\031RETCODE_" +
-      "RET_UNKNOWN_ERROR\020\002\022\030\n\024RETCODE_RET_FREQU" +
-      "ENT\020\003\022\"\n\036RETCODE_RET_NODE_FORWARD_ERROR\020" +
-      "\004\022 \n\034RETCODE_RET_NOT_FOUND_CONFIG\020\005\022\033\n\027R" +
-      "ETCODE_RET_SYSTEM_BUSY\020\006\022\033\n\027RETCODE_RET_" +
-      "GM_UID_BIND\020\007\022\031\n\025RETCODE_RET_FORBIDDEN\020\010" +
-      "\022\035\n\031RETCODE_RET_STOP_REGISTER\020\n\022\033\n\027RETCO" +
-      "DE_RET_STOP_SERVER\020\013\022$\n RETCODE_RET_ACCO" +
-      "UNT_VEIRFY_ERROR\020\014\022\036\n\032RETCODE_RET_ACCOUN" +
-      "T_FREEZE\020\r\022\034\n\030RETCODE_RET_REPEAT_LOGIN\020\016" +
-      "\022$\n RETCODE_RET_CLIENT_VERSION_ERROR\020\017\022\033" +
-      "\n\027RETCODE_RET_TOKEN_ERROR\020\020\022!\n\035RETCODE_R" +
-      "ET_ACCOUNT_NOT_EXIST\020\021\022 \n\034RETCODE_RET_WA" +
-      "IT_OTHER_LOGIN\020\022\022\035\n\031RETCODE_RET_ANOTHER_" +
-      "LOGIN\020\023\022#\n\037RETCODE_RET_CLIENT_FORCE_UPDA" +
-      "TE\020\024\022\031\n\025RETCODE_RET_BLACK_UID\020\025\022\035\n\031RETCO" +
-      "DE_RET_LOGIN_DB_FAIL\020\026\022\037\n\033RETCODE_RET_LO" +
-      "GIN_INIT_FAIL\020\027\022\037\n\033RETCODE_RET_MYSQL_DUP" +
-      "LICATE\020\030\022\032\n\026RETCODE_RET_MAX_PLAYER\020\031\022\033\n\027" +
-      "RETCODE_RET_ANTI_ADDICT\020\032\022+\n\'RETCODE_RET" +
-      "_PS_PLAYER_WITHOUT_ONLINE_ID\020\033\022#\n\037RETCOD" +
-      "E_RET_ONLINE_ID_NOT_FOUND\020\034\022\"\n\036RETCODE_R" +
-      "ET_ONLNE_ID_NOT_MATCH\020\035\022 \n\034RETCODE_RET_R" +
-      "EGISTER_IS_FULL\020\036\022 \n\034RETCODE_RET_CHECKSU" +
-      "M_INVALID\020\037\022!\n\035RETCODE_RET_BLACK_REGISTE" +
-      "R_IP\020 \022$\n RETCODE_RET_EXCEED_REGISTER_RA" +
-      "TE\020!\022 \n\034RETCODE_RET_UNKNOWN_PLATFORM\020\"\022!" +
-      "\n\035RETCODE_RET_TOKEN_PARAM_ERROR\020#\022\"\n\036RET" +
-      "CODE_RET_ANTI_OFFLINE_ERROR\020$\022\036\n\032RETCODE" +
-      "_RET_BLACK_LOGIN_IP\020%\022)\n%RETCODE_RET_GET" +
-      "_TOKEN_SESSION_HAS_UID\020&\022!\n\035RETCODE_RET_" +
-      "ENVIRONMENT_ERROR\020\'\022.\n*RETCODE_RET_CHECK" +
-      "_CLIENT_VERSION_HASH_FAIL\020(\022\'\n#RETCODE_R" +
-      "ET_MINOR_REGISTER_FOBIDDEN\020)\022&\n\"RETCODE_" +
-      "RET_SECURITY_LIBRARY_ERROR\020*\022\034\n\030RETCODE_" +
-      "RET_AVATAR_IN_CD\020e\022 \n\034RETCODE_RET_AVATAR" +
-      "_NOT_ALIVE\020f\022#\n\037RETCODE_RET_AVATAR_NOT_O" +
-      "N_SCENE\020g\022#\n\037RETCODE_RET_CAN_NOT_FIND_AV" +
-      "ATAR\020h\022&\n\"RETCODE_RET_CAN_NOT_DEL_CUR_AV" +
-      "ATAR\020i\022 \n\034RETCODE_RET_DUPLICATE_AVATAR\020j" +
-      "\022\"\n\036RETCODE_RET_AVATAR_IS_SAME_ONE\020k\022&\n\"" +
-      "RETCODE_RET_AVATAR_LEVEL_LESS_THAN\020l\022-\n)" +
-      "RETCODE_RET_AVATAR_CAN_NOT_CHANGE_ELEMEN" +
-      "T\020m\022,\n(RETCODE_RET_AVATAR_BREAK_LEVEL_LE" +
-      "SS_THAN\020n\022)\n%RETCODE_RET_AVATAR_ON_MAX_B" +
-      "REAK_LEVEL\020o\022\'\n#RETCODE_RET_AVATAR_ID_AL" +
-      "READY_EXIST\020p\022\037\n\033RETCODE_RET_AVATAR_NOT_" +
-      "DEAD\020q\022\"\n\036RETCODE_RET_AVATAR_IS_REVIVING" +
-      "\020r\022\037\n\033RETCODE_RET_AVATAR_ID_ERROR\020s\022+\n\'R" +
-      "ETCODE_RET_REPEAT_SET_PLAYER_BORN_DATA\020t" +
-      "\022&\n\"RETCODE_RET_PLAYER_LEVEL_LESS_THAN\020u" +
-      "\022(\n$RETCODE_RET_AVATAR_LIMIT_LEVEL_ERROR" +
-      "\020v\022$\n RETCODE_RET_CUR_AVATAR_NOT_ALIVE\020w" +
-      "\022!\n\035RETCODE_RET_CAN_NOT_FIND_TEAM\020x\022%\n!R" +
-      "ETCODE_RET_CAN_NOT_FIND_CUR_TEAM\020y\022(\n$RE" +
-      "TCODE_RET_AVATAR_NOT_EXIST_IN_TEAM\020z\0223\n/" +
-      "RETCODE_RET_CAN_NOT_REMOVE_CUR_AVATAR_FR" +
-      "OM_TEAM\020{\0226\n2RETCODE_RET_CAN_NOT_USE_REV" +
-      "IVE_ITEM_FOR_CUR_AVATAR\020|\022&\n\"RETCODE_RET" +
-      "_TEAM_COST_EXCEED_LIMIT\020}\022)\n%RETCODE_RET" +
-      "_TEAM_AVATAR_IN_EXPEDITION\020~\022.\n*RETCODE_" +
-      "RET_TEAM_CAN_NOT_CHOSE_REPLACE_USE\020\177\022!\n\034" +
-      "RETCODE_RET_AVATAR_IN_COMBAT\020\200\001\022$\n\037RETCO" +
-      "DE_RET_NICKNAME_UTF8_ERROR\020\202\001\022\"\n\035RETCODE" +
-      "_RET_NICKNAME_TOO_LONG\020\203\001\022&\n!RETCODE_RET" +
-      "_NICKNAME_WORD_ILLEGAL\020\204\001\022)\n$RETCODE_RET" +
-      "_NICKNAME_TOO_MANY_DIGITS\020\205\001\022\"\n\035RETCODE_" +
-      "RET_NICKNAME_IS_EMPTY\020\206\001\022\'\n\"RETCODE_RET_" +
-      "NICKNAME_MONTHLY_LIMIT\020\207\001\022%\n RETCODE_RET" +
-      "_NICKNAME_NOT_CHANGED\020\210\001\022\"\n\035RETCODE_RET_" +
-      "PLAYER_NOT_ONLINE\020\214\001\022$\n\037RETCODE_RET_OPEN" +
-      "_STATE_NOT_OPEN\020\215\001\022\037\n\032RETCODE_RET_FEATUR" +
-      "E_CLOSED\020\216\001\022-\n(RETCODE_RET_AVATAR_EXPEDI" +
-      "TION_AVATAR_DIE\020\230\001\022.\n)RETCODE_RET_AVATAR" +
-      "_EXPEDITION_COUNT_LIMIT\020\231\001\022.\n)RETCODE_RE" +
-      "T_AVATAR_EXPEDITION_MAIN_FORBID\020\232\001\022/\n*RE" +
-      "TCODE_RET_AVATAR_EXPEDITION_TRIAL_FORBID" +
-      "\020\233\001\022\"\n\035RETCODE_RET_TEAM_NAME_ILLEGAL\020\234\001\022" +
-      "\"\n\035RETCODE_RET_IS_NOT_IN_STANDBY\020\235\001\022\036\n\031R" +
-      "ETCODE_RET_IS_IN_DUNGEON\020\236\001\022(\n#RETCODE_R" +
-      "ET_IS_IN_LOCK_AVATAR_QUEST\020\237\001\022&\n!RETCODE" +
-      "_RET_IS_USING_TRIAL_AVATAR\020\240\001\022%\n RETCODE" +
-      "_RET_IS_USING_TEMP_AVATAR\020\241\001\022!\n\034RETCODE_" +
-      "RET_NOT_HAS_FLYCLOAK\020\242\001\022*\n%RETCODE_RET_F" +
-      "ETTER_REWARD_ALREADY_GOT\020\243\001\022/\n*RETCODE_R" +
-      "ET_FETTER_REWARD_LEVEL_NOT_ENOUGH\020\244\001\022-\n(" +
-      "RETCODE_RET_WORLD_LEVEL_ADJUST_MIN_LEVEL" +
-      "\020\245\001\022&\n!RETCODE_RET_WORLD_LEVEL_ADJUST_CD" +
-      "\020\246\001\022 \n\033RETCODE_RET_NOT_HAS_COSTUME\020\247\001\022%\n" +
-      " RETCODE_RET_COSTUME_AVATAR_ERROR\020\250\001\022+\n&" +
-      "RETCODE_RET_FLYCLOAK_PLATFORM_TYPE_ERR\020\251" +
-      "\001\022\034\n\027RETCODE_RET_IN_TRANSFER\020\252\001\022\"\n\035RETCO" +
-      "DE_RET_IS_IN_LOCK_AVATAR\020\253\001\022!\n\034RETCODE_R" +
-      "ET_FULL_BACKUP_TEAM\020\254\001\022)\n$RETCODE_RET_BA" +
-      "CKUP_TEAM_ID_NOT_VALID\020\255\001\022(\n#RETCODE_RET" +
-      "_BACKUP_TEAM_IS_CUR_TEAM\020\256\001\022\034\n\027RETCODE_R" +
-      "ET_FLOAT_ERROR\020\311\001\022\036\n\031RETCODE_RET_NPC_NOT" +
-      "_EXIST\020\255\002\022\034\n\027RETCODE_RET_NPC_TOO_FAR\020\256\002\022" +
-      "!\n\034RETCODE_RET_NOT_CURRENT_TALK\020\257\002\022 \n\033RE" +
-      "TCODE_RET_NPC_CREATE_FAIL\020\260\002\022\036\n\031RETCODE_" +
-      "RET_NPC_MOVE_FAIL\020\261\002\022 \n\033RETCODE_RET_QUES" +
-      "T_NOT_EXIST\020\221\003\022\036\n\031RETCODE_RET_QUEST_IS_F" +
-      "AIL\020\222\003\022$\n\037RETCODE_RET_QUEST_CONTENT_ERRO" +
-      "R\020\223\003\022&\n!RETCODE_RET_BARGAIN_NOT_ACTIVATE" +
-      "D\020\224\003\022!\n\034RETCODE_RET_BARGAIN_FINISHED\020\225\003\022" +
-      "/\n*RETCODE_RET_INFERENCE_ASSOCIATE_WORD_" +
-      "ERROR\020\226\003\0224\n/RETCODE_RET_INFERENCE_SUBMIT" +
-      "_WORD_NO_CONCLUSION\020\227\003\022#\n\036RETCODE_RET_PO" +
-      "INT_NOT_UNLOCKED\020\365\003\022\036\n\031RETCODE_RET_POINT" +
-      "_TOO_FAR\020\366\003\022&\n!RETCODE_RET_POINT_ALREAY_" +
-      "UNLOCKED\020\367\003\022!\n\034RETCODE_RET_ENTITY_NOT_EX" +
-      "IST\020\370\003\022!\n\034RETCODE_RET_ENTER_SCENE_FAIL\020\371" +
-      "\003\022&\n!RETCODE_RET_PLAYER_IS_ENTER_SCENE\020\372" +
-      "\003\022\037\n\032RETCODE_RET_CITY_MAX_LEVEL\020\373\003\022\034\n\027RE" +
-      "TCODE_RET_AREA_LOCKED\020\374\003\022 \n\033RETCODE_RET_" +
-      "JOIN_OTHER_WAIT\020\375\003\022\'\n\"RETCODE_RET_WEATHE" +
-      "R_AREA_NOT_FOUND\020\376\003\022\"\n\035RETCODE_RET_WEATH" +
-      "ER_IS_LOCKED\020\377\003\022\"\n\035RETCODE_RET_NOT_IN_SE" +
-      "LF_SCENE\020\200\004\022 \n\033RETCODE_RET_GROUP_NOT_EXI" +
-      "ST\020\201\004\022\"\n\035RETCODE_RET_MARK_NAME_ILLEGAL\020\202" +
-      "\004\022$\n\037RETCODE_RET_MARK_ALREADY_EXISTS\020\203\004\022" +
-      "\036\n\031RETCODE_RET_MARK_OVERFLOW\020\204\004\022 \n\033RETCO" +
-      "DE_RET_MARK_NOT_EXISTS\020\205\004\022\"\n\035RETCODE_RET" +
-      "_MARK_UNKNOWN_TYPE\020\206\004\022#\n\036RETCODE_RET_MAR" +
-      "K_NAME_TOO_LONG\020\207\004\022\036\n\031RETCODE_RET_DISTAN" +
-      "CE_LONG\020\210\004\022*\n%RETCODE_RET_ENTER_SCENE_TO" +
-      "KEN_INVALID\020\211\004\022#\n\036RETCODE_RET_NOT_IN_WOR" +
-      "LD_SCENE\020\212\004\022$\n\037RETCODE_RET_ANY_GALLERY_S" +
-      "TARTED\020\213\004\022\"\n\035RETCODE_RET_GALLERY_NOT_STA" +
-      "RT\020\214\004\0226\n1RETCODE_RET_GALLERY_INTERRUPT_O" +
-      "NLY_ON_SINGLE_MODE\020\215\004\022)\n$RETCODE_RET_GAL" +
-      "LERY_CANNOT_INTERRUPT\020\216\004\022\'\n\"RETCODE_RET_" +
-      "GALLERY_WORLD_NOT_MEET\020\217\004\022\'\n\"RETCODE_RET" +
-      "_GALLERY_SCENE_NOT_MEET\020\220\004\022)\n$RETCODE_RE" +
-      "T_CUR_PLAY_CANNOT_TRANSFER\020\221\004\022.\n)RETCODE" +
-      "_RET_CANT_USE_WIDGET_IN_HOME_SCENE\020\222\004\022&\n" +
-      "!RETCODE_RET_SCENE_GROUP_NOT_MATCH\020\223\004\022 \n" +
-      "\033RETCODE_RET_POS_ROT_INVALID\020\247\004\022&\n!RETCO" +
-      "DE_RET_MARK_INVALID_SCENE_ID\020\250\004\0222\n-RETCO" +
-      "DE_RET_INVALID_SCENE_TO_USE_ANCHOR_POINT" +
-      "\020\251\004\022&\n!RETCODE_RET_ENTER_HOME_SCENE_FAIL" +
-      "\020\252\004\022\"\n\035RETCODE_RET_CUR_SCENE_IS_NULL\020\253\004\022" +
-      "\037\n\032RETCODE_RET_GROUP_ID_ERROR\020\254\004\022,\n\'RETC" +
-      "ODE_RET_GALLERY_INTERRUPT_NOT_OWNER\020\255\004\022\"" +
-      "\n\035RETCODE_RET_NO_SPRING_IN_AREA\020\256\004\022\"\n\035RE" +
-      "TCODE_RET_AREA_NOT_IN_SCENE\020\257\004\022 \n\033RETCOD" +
-      "E_RET_INVALID_CITY_ID\020\260\004\022!\n\034RETCODE_RET_" +
-      "INVALID_SCENE_ID\020\261\004\022(\n#RETCODE_RET_DEST_" +
-      "SCENE_IS_NOT_ALLOW\020\262\004\022\'\n\"RETCODE_RET_LEV" +
-      "EL_TAG_SWITCH_IN_CD\020\263\004\022(\n#RETCODE_RET_LE" +
-      "VEL_TAG_ALREADY_EXIST\020\264\004\022 \n\033RETCODE_RET_" +
-      "INVALID_AREA_ID\020\265\004\022\037\n\032RETCODE_RET_ITEM_N" +
-      "OT_EXIST\020\331\004\022\'\n\"RETCODE_RET_PACK_EXCEED_M" +
-      "AX_WEIGHT\020\332\004\022\"\n\035RETCODE_RET_ITEM_NOT_DRO" +
-      "PABLE\020\333\004\022 \n\033RETCODE_RET_ITEM_NOT_USABLE\020" +
-      "\334\004\022\'\n\"RETCODE_RET_ITEM_INVALID_USE_COUNT" +
-      "\020\335\004\022(\n#RETCODE_RET_ITEM_INVALID_DROP_COU" +
-      "NT\020\336\004\022#\n\036RETCODE_RET_ITEM_ALREADY_EXIST\020" +
-      "\337\004\022!\n\034RETCODE_RET_ITEM_IN_COOLDOWN\020\340\004\022&\n" +
-      "!RETCODE_RET_ITEM_COUNT_NOT_ENOUGH\020\341\004\022$\n" +
-      "\037RETCODE_RET_ITEM_INVALID_TARGET\020\342\004\022!\n\034R" +
-      "ETCODE_RET_RECIPE_NOT_EXIST\020\343\004\022\036\n\031RETCOD" +
-      "E_RET_RECIPE_LOCKED\020\344\004\022 \n\033RETCODE_RET_RE" +
-      "CIPE_UNLOCKED\020\345\004\022$\n\037RETCODE_RET_COMPOUND" +
-      "_QUEUE_FULL\020\346\004\022$\n\037RETCODE_RET_COMPOUND_N" +
-      "OT_FINISH\020\347\004\022\"\n\035RETCODE_RET_MAIL_ITEM_NO" +
-      "T_GET\020\350\004\022\"\n\035RETCODE_RET_ITEM_EXCEED_LIMI" +
-      "T\020\351\004\022#\n\036RETCODE_RET_AVATAR_CAN_NOT_USE\020\352" +
-      "\004\022\'\n\"RETCODE_RET_ITEM_NEED_PLAYER_LEVEL\020" +
-      "\353\004\022$\n\037RETCODE_RET_RECIPE_NOT_AUTO_QTE\020\354\004" +
-      "\022$\n\037RETCODE_RET_COMPOUND_BUSY_QUEUE\020\355\004\022 " +
-      "\n\033RETCODE_RET_NEED_MORE_SCOIN\020\356\004\022&\n!RETC" +
-      "ODE_RET_SKILL_DEPOT_NOT_FOUND\020\357\004\022!\n\034RETC" +
-      "ODE_RET_HCOIN_NOT_ENOUGH\020\360\004\022!\n\034RETCODE_R" +
-      "ET_SCOIN_NOT_ENOUGH\020\361\004\022#\n\036RETCODE_RET_HC" +
-      "OIN_EXCEED_LIMIT\020\362\004\022#\n\036RETCODE_RET_SCOIN" +
-      "_EXCEED_LIMIT\020\363\004\022\035\n\030RETCODE_RET_MAIL_EXP" +
-      "IRED\020\364\004\022!\n\034RETCODE_RET_REWARD_HAS_TAKEN\020" +
-      "\365\004\022(\n#RETCODE_RET_COMBINE_COUNT_TOO_LARG" +
-      "E\020\366\004\022\"\n\035RETCODE_RET_GIVING_ITEM_WRONG\020\367\004" +
-      "\022#\n\036RETCODE_RET_GIVING_IS_FINISHED\020\370\004\022#\n" +
-      "\036RETCODE_RET_GIVING_NOT_ACTIVED\020\371\004\022!\n\034RE" +
-      "TCODE_RET_FORGE_QUEUE_FULL\020\372\004\022%\n RETCODE" +
-      "_RET_FORGE_QUEUE_CAPACITY\020\373\004\022&\n!RETCODE_" +
-      "RET_FORGE_QUEUE_NOT_FOUND\020\374\004\022\"\n\035RETCODE_" +
-      "RET_FORGE_QUEUE_EMPTY\020\375\004\022!\n\034RETCODE_RET_" +
-      "NOT_SUPPORT_ITEM\020\376\004\022\033\n\026RETCODE_RET_ITEM_" +
-      "EMPTY\020\377\004\022%\n RETCODE_RET_VIRTUAL_EXCEED_L" +
-      "IMIT\020\200\005\022&\n!RETCODE_RET_MATERIAL_EXCEED_L" +
-      "IMIT\020\201\005\022#\n\036RETCODE_RET_EQUIP_EXCEED_LIMI" +
-      "T\020\202\005\022*\n%RETCODE_RET_ITEM_SHOULD_HAVE_NO_" +
-      "LEVEL\020\203\005\0222\n-RETCODE_RET_WEAPON_PROMOTE_L" +
-      "EVEL_EXCEED_LIMIT\020\204\005\022%\n RETCODE_RET_WEAP" +
-      "ON_LEVEL_INVALID\020\205\005\022!\n\034RETCODE_RET_UNKNO" +
-      "W_ITEM_TYPE\020\206\005\022#\n\036RETCODE_RET_ITEM_COUNT" +
-      "_IS_ZERO\020\207\005\022 \n\033RETCODE_RET_ITEM_IS_EXPIR" +
-      "ED\020\210\005\022)\n$RETCODE_RET_ITEM_EXCEED_OUTPUT_" +
-      "LIMIT\020\211\005\022#\n\036RETCODE_RET_EQUIP_LEVEL_HIGH" +
-      "ER\020\212\005\022.\n)RETCODE_RET_EQUIP_CAN_NOT_WAKE_" +
-      "OFF_WEAPON\020\213\005\022&\n!RETCODE_RET_EQUIP_HAS_B" +
-      "EEN_WEARED\020\214\005\022)\n$RETCODE_RET_EQUIP_WEARE" +
-      "D_CANNOT_DROP\020\215\005\022!\n\034RETCODE_RET_AWAKEN_L" +
-      "EVEL_MAX\020\216\005\022!\n\034RETCODE_RET_MCOIN_NOT_ENO" +
-      "UGH\020\217\005\022#\n\036RETCODE_RET_MCOIN_EXCEED_LIMIT" +
-      "\020\220\005\022!\n\034RETCODE_RET_RESIN_NOT_ENOUGH\020\224\005\022#" +
-      "\n\036RETCODE_RET_RESIN_EXCEED_LIMIT\020\225\005\022$\n\037R" +
-      "ETCODE_RET_RESIN_OPENSTATE_OFF\020\226\005\022,\n\'RET" +
-      "CODE_RET_RESIN_BOUGHT_COUNT_EXCEEDED\020\227\005\022" +
-      "2\n-RETCODE_RET_RESIN_CARD_DAILY_REWARD_H" +
-      "AS_TAKEN\020\230\005\022#\n\036RETCODE_RET_RESIN_CARD_EX" +
-      "PIRED\020\231\005\022$\n\037RETCODE_RET_AVATAR_CAN_NOT_C" +
-      "OOK\020\232\005\022!\n\034RETCODE_RET_ATTACH_AVATAR_CD\020\233" +
-      "\005\022+\n&RETCODE_RET_AUTO_RECOVER_OPENSTATE_" +
-      "OFF\020\234\005\0223\n.RETCODE_RET_AUTO_RECOVER_BOUGH" +
-      "T_COUNT_EXCEEDED\020\235\005\022\"\n\035RETCODE_RET_RESIN" +
-      "_GAIN_FAILED\020\236\005\022,\n\'RETCODE_RET_WIDGET_OR" +
-      "NAMENTS_TYPE_ERROR\020\237\005\022*\n%RETCODE_RET_ALL" +
-      "_TARGET_SATIATION_FULL\020\240\005\022,\n\'RETCODE_RET" +
-      "_FORGE_WORLD_LEVEL_NOT_MATCH\020\241\005\022\'\n\"RETCO" +
-      "DE_RET_FORGE_POINT_NOT_ENOUGH\020\242\005\022)\n$RETC" +
-      "ODE_RET_WIDGET_ANCHOR_POINT_FULL\020\243\005\022.\n)R" +
-      "ETCODE_RET_WIDGET_ANCHOR_POINT_NOT_FOUND" +
-      "\020\244\005\022-\n(RETCODE_RET_ALL_BONFIRE_EXCEED_MA" +
-      "X_COUNT\020\245\005\022)\n$RETCODE_RET_BONFIRE_EXCEED" +
-      "_MAX_COUNT\020\246\005\022%\n RETCODE_RET_LUNCH_BOX_D" +
-      "ATA_ERROR\020\247\005\022)\n$RETCODE_RET_INVALID_QUIC" +
-      "K_USE_WIDGET\020\250\005\022,\n\'RETCODE_RET_INVALID_R" +
-      "EPLACE_RESIN_COUNT\020\251\005\022/\n*RETCODE_RET_PRE" +
-      "V_DETECTED_GATHER_NOT_FOUND\020\252\005\022&\n!RETCOD" +
-      "E_RET_GOT_ALL_ONEOFF_GAHTER\020\253\005\022+\n&RETCOD" +
-      "E_RET_INVALID_WIDGET_MATERIAL_ID\020\254\005\0221\n,R" +
-      "ETCODE_RET_WIDGET_DETECTOR_NO_HINT_TO_CL" +
-      "EAR\020\255\005\0224\n/RETCODE_RET_WIDGET_ALREADY_WIT" +
-      "HIN_NEARBY_RADIUS\020\256\005\0224\n/RETCODE_RET_WIDG" +
-      "ET_CLIENT_COLLECTOR_NEED_POINTS\020\257\005\022!\n\034RE" +
-      "TCODE_RET_WIDGET_IN_COMBAT\020\260\005\022)\n$RETCODE" +
-      "_RET_WIDGET_NOT_SET_QUICK_USE\020\261\005\022&\n!RETC" +
-      "ODE_RET_ALREADY_ATTACH_WIDGET\020\262\005\022 \n\033RETC" +
-      "ODE_RET_EQUIP_IS_LOCKED\020\263\005\022 \n\033RETCODE_RE" +
-      "T_FORGE_IS_LOCKED\020\264\005\022\"\n\035RETCODE_RET_COMB" +
-      "INE_IS_LOCKED\020\265\005\022)\n$RETCODE_RET_FORGE_OU" +
-      "TPUT_STACK_LIMIT\020\266\005\022\'\n\"RETCODE_RET_ALREA" +
-      "DY_DETTACH_WIDGET\020\267\005\0220\n+RETCODE_RET_GADG" +
-      "ET_BUILDER_EXCEED_MAX_COUNT\020\270\005\0227\n2RETCOD" +
-      "E_RET_REUNION_PRIVILEGE_RESIN_TYPE_IS_NO" +
-      "RMAL\020\271\005\0220\n+RETCODE_RET_BONUS_COUNT_EXCEE" +
-      "D_DOUBLE_LIMIT\020\272\005\0220\n+RETCODE_RET_RELIQUA" +
-      "RY_DECOMPOSE_PARAM_ERROR\020\273\005\022.\n)RETCODE_R" +
-      "ET_ITEM_COMBINE_COUNT_NOT_ENOUGH\020\274\005\022 \n\033R" +
-      "ETCODE_RET_GOODS_NOT_EXIST\020\275\005\022*\n%RETCODE" +
-      "_RET_GOODS_MATERIAL_NOT_ENOUGH\020\276\005\022\"\n\035RET" +
-      "CODE_RET_GOODS_NOT_IN_TIME\020\277\005\022)\n$RETCODE" +
-      "_RET_GOODS_BUY_NUM_NOT_ENOUGH\020\300\005\022$\n\037RETC" +
-      "ODE_RET_GOODS_BUY_NUM_ERROR\020\301\005\022\036\n\031RETCOD" +
-      "E_RET_SHOP_NOT_OPEN\020\302\005\022\'\n\"RETCODE_RET_SH" +
-      "OP_CONTENT_NOT_MATCH\020\303\005\022\037\n\032RETCODE_RET_C" +
-      "HAT_FORBIDDEN\020\236\006\022\030\n\023RETCODE_RET_CHAT_CD\020" +
-      "\237\006\022 \n\033RETCODE_RET_CHAT_FREQUENTLY\020\240\006\022!\n\034" +
-      "RETCODE_RET_GADGET_NOT_EXIST\020\241\006\022\'\n\"RETCO" +
-      "DE_RET_GADGET_NOT_INTERACTIVE\020\242\006\022&\n!RETC" +
-      "ODE_RET_GADGET_NOT_GATHERABLE\020\243\006\022 \n\033RETC" +
-      "ODE_RET_CHEST_IS_LOCKED\020\244\006\022#\n\036RETCODE_RE" +
-      "T_GADGET_CREATE_FAIL\020\245\006\022)\n$RETCODE_RET_W" +
-      "ORKTOP_OPTION_NOT_EXIST\020\246\006\022)\n$RETCODE_RE" +
-      "T_GADGET_STATUE_NOT_ACTIVE\020\247\006\022%\n RETCODE" +
-      "_RET_GADGET_STATUE_OPENED\020\250\006\022,\n\'RETCODE_" +
-      "RET_BOSS_CHEST_NO_QUALIFICATION\020\251\006\022*\n%RE" +
-      "TCODE_RET_BOSS_CHEST_LIFE_TIME_OVER\020\252\006\022*" +
-      "\n%RETCODE_RET_BOSS_CHEST_WEEK_NUM_LIMIT\020" +
-      "\253\006\022-\n(RETCODE_RET_BOSS_CHEST_GUEST_WORLD" +
-      "_LEVEL\020\254\006\022%\n RETCODE_RET_BOSS_CHEST_HAS_" +
-      "TAKEN\020\255\006\022/\n*RETCODE_RET_BLOSSOM_CHEST_NO" +
-      "_QUALIFICATION\020\256\006\022-\n(RETCODE_RET_BLOSSOM" +
-      "_CHEST_LIFE_TIME_OVER\020\257\006\022(\n#RETCODE_RET_" +
-      "BLOSSOM_CHEST_HAS_TAKEN\020\260\006\0220\n+RETCODE_RE" +
-      "T_BLOSSOM_CHEST_GUEST_WORLD_LEVEL\020\261\006\0220\n+" +
-      "RETCODE_RET_MP_PLAY_REWARD_NO_QUALIFICAT" +
-      "ION\020\262\006\022)\n$RETCODE_RET_MP_PLAY_REWARD_HAS" +
-      "_TAKEN\020\263\006\0220\n+RETCODE_RET_GENERAL_REWARD_" +
-      "NO_QUALIFICATION\020\264\006\022.\n)RETCODE_RET_GENER" +
-      "AL_REWARD_LIFE_TIME_OVER\020\265\006\022)\n$RETCODE_R" +
-      "ET_GENERAL_REWARD_HAS_TAKEN\020\266\006\022#\n\036RETCOD" +
-      "E_RET_GADGET_NOT_VEHICLE\020\267\006\022&\n!RETCODE_R" +
-      "ET_VEHICLE_SLOT_OCCUPIED\020\270\006\022\037\n\032RETCODE_R" +
-      "ET_NOT_IN_VEHICLE\020\271\006\022%\n RETCODE_RET_CREA" +
-      "TE_VEHICLE_IN_CD\020\272\006\022+\n&RETCODE_RET_CREAT" +
-      "E_VEHICLE_POS_INVALID\020\273\006\022)\n$RETCODE_RET_" +
-      "VEHICLE_POINT_NOT_UNLOCK\020\274\006\022.\n)RETCODE_R" +
-      "ET_GADGET_INTERACT_COND_NOT_MEET\020\275\006\022,\n\'R" +
-      "ETCODE_RET_GADGET_INTERACT_PARAM_ERROR\020\276" +
-      "\006\0222\n-RETCODE_RET_GADGET_CUSTOM_COMBINATI" +
-      "ON_INVALID\020\277\006\0223\n.RETCODE_RET_DESHRET_OBE" +
-      "LISK_DUPLICATE_INTERACT\020\300\006\022/\n*RETCODE_RE" +
-      "T_DESHRET_OBELISK_NO_AVAIL_CHEST\020\301\006\022\037\n\032R" +
-      "ETCODE_RET_ACTIVITY_CLOSE\020\334\006\022$\n\037RETCODE_" +
-      "RET_ACTIVITY_ITEM_ERROR\020\335\006\0221\n,RETCODE_RE" +
-      "T_ACTIVITY_CONTRIBUTION_NOT_ENOUGH\020\336\006\022*\n" +
-      "%RETCODE_RET_SEA_LAMP_PHASE_NOT_FINISH\020\337" +
-      "\006\022\'\n\"RETCODE_RET_SEA_LAMP_FLY_NUM_LIMIT\020" +
-      "\340\006\022/\n*RETCODE_RET_SEA_LAMP_FLY_LAMP_WORD" +
-      "_ILLEGAL\020\341\006\022.\n)RETCODE_RET_ACTIVITY_WATC" +
-      "HER_REWARD_TAKEN\020\342\006\0225\n0RETCODE_RET_ACTIV" +
-      "ITY_WATCHER_REWARD_NOT_FINISHED\020\343\006\022+\n&RE" +
-      "TCODE_RET_SALESMAN_ALREADY_DELIVERED\020\344\006\022" +
-      "1\n,RETCODE_RET_SALESMAN_REWARD_COUNT_NOT" +
-      "_ENOUGH\020\345\006\022*\n%RETCODE_RET_SALESMAN_POSIT" +
-      "ION_INVALID\020\346\006\022-\n(RETCODE_RET_DELIVER_NO" +
-      "T_FINISH_ALL_QUEST\020\347\006\0222\n-RETCODE_RET_DEL" +
-      "IVER_ALREADY_TAKE_DAILY_REWARD\020\350\006\022,\n\'RET" +
-      "CODE_RET_ASTER_PROGRESS_EXCEED_LIMIT\020\351\006\022" +
-      "*\n%RETCODE_RET_ASTER_CREDIT_EXCEED_LIMIT" +
-      "\020\352\006\022)\n$RETCODE_RET_ASTER_TOKEN_EXCEED_LI" +
-      "MIT\020\353\006\022(\n#RETCODE_RET_ASTER_CREDIT_NOT_E" +
-      "NOUGH\020\354\006\022\'\n\"RETCODE_RET_ASTER_TOKEN_NOT_" +
-      "ENOUGH\020\355\006\022/\n*RETCODE_RET_ASTER_SPECIAL_R" +
-      "EWARD_HAS_TAKEN\020\356\006\0222\n-RETCODE_RET_FLIGHT" +
-      "_GROUP_ACTIVITY_NOT_STARTED\020\357\006\0227\n2RETCOD" +
-      "E_RET_ASTER_MID_PREVIOUS_BATTLE_NOT_FINI" +
-      "SHED\020\360\006\022=\n8RETCODE_RET_DRAGON_SPINE_SHIM" +
-      "MERING_ESSENCE_EXCEED_LIMIT\020\361\006\0227\n2RETCOD" +
-      "E_RET_DRAGON_SPINE_WARM_ESSENCE_EXCEED_L" +
-      "IMIT\020\362\006\022;\n6RETCODE_RET_DRAGON_SPINE_WOND" +
-      "ROUS_ESSENCE_EXCEED_LIMIT\020\363\006\022;\n6RETCODE_" +
-      "RET_DRAGON_SPINE_SHIMMERING_ESSENCE_NOT_" +
-      "ENOUGH\020\364\006\0225\n0RETCODE_RET_DRAGON_SPINE_WA" +
-      "RM_ESSENCE_NOT_ENOUGH\020\365\006\0229\n4RETCODE_RET_" +
-      "DRAGON_SPINE_WONDROUS_ESSENCE_NOT_ENOUGH" +
-      "\020\366\006\0223\n.RETCODE_RET_EFFIGY_FIRST_PASS_REW" +
-      "ARD_HAS_TAKEN\020\373\006\022(\n#RETCODE_RET_EFFIGY_R" +
-      "EWARD_HAS_TAKEN\020\374\006\0224\n/RETCODE_RET_TREASU" +
-      "RE_MAP_ADD_TOKEN_EXCEED_LIMIT\020\375\006\022/\n*RETC" +
-      "ODE_RET_TREASURE_MAP_TOKEN_NOT_ENOUGHT\020\376" +
-      "\006\022+\n&RETCODE_RET_SEA_LAMP_COIN_EXCEED_LI" +
-      "MIT\020\377\006\022)\n$RETCODE_RET_SEA_LAMP_COIN_NOT_" +
-      "ENOUGH\020\200\007\0221\n,RETCODE_RET_SEA_LAMP_POPULA" +
-      "RITY_EXCEED_LIMIT\020\201\007\0220\n+RETCODE_RET_ACTI" +
-      "VITY_AVATAR_REWARD_NOT_OPEN\020\202\007\0221\n,RETCOD" +
-      "E_RET_ACTIVITY_AVATAR_REWARD_HAS_TAKEN\020\203" +
-      "\007\022/\n*RETCODE_RET_ARENA_ACTIVITY_ALREADY_" +
-      "STARTED\020\204\007\022\'\n\"RETCODE_RET_TALENT_ALREAY_" +
-      "UNLOCKED\020\205\007\022)\n$RETCODE_RET_PREV_TALENT_N" +
-      "OT_UNLOCKED\020\206\007\022,\n\'RETCODE_RET_BIG_TALENT" +
-      "_POINT_NOT_ENOUGH\020\207\007\022.\n)RETCODE_RET_SMAL" +
-      "L_TALENT_POINT_NOT_ENOUGH\020\210\007\022(\n#RETCODE_" +
-      "RET_PROUD_SKILL_ALREADY_GOT\020\211\007\022)\n$RETCOD" +
-      "E_RET_PREV_PROUD_SKILL_NOT_GET\020\212\007\022&\n!RET" +
-      "CODE_RET_PROUD_SKILL_MAX_LEVEL\020\213\007\0222\n-RET" +
-      "CODE_RET_CANDIDATE_SKILL_DEPOT_ID_NOT_FI" +
-      "ND\020\216\007\022(\n#RETCODE_RET_SKILL_DEPOT_IS_THE_" +
-      "SAME\020\217\007\022\"\n\035RETCODE_RET_MONSTER_NOT_EXIST" +
-      "\020\351\007\022$\n\037RETCODE_RET_MONSTER_CREATE_FAIL\020\352" +
-      "\007\022#\n\036RETCODE_RET_DUNGEON_ENTER_FAIL\020\315\010\022\"" +
-      "\n\035RETCODE_RET_DUNGEON_QUIT_FAIL\020\316\010\022/\n*RE" +
-      "TCODE_RET_DUNGEON_ENTER_EXCEED_DAY_COUNT" +
-      "\020\317\010\0220\n+RETCODE_RET_DUNGEON_REVIVE_EXCEED" +
-      "_MAX_COUNT\020\320\010\022$\n\037RETCODE_RET_DUNGEON_REV" +
-      "IVE_FAIL\020\321\010\022$\n\037RETCODE_RET_DUNGEON_NOT_S" +
-      "UCCEED\020\322\010\022\'\n\"RETCODE_RET_DUNGEON_CAN_NOT" +
-      "_CANCEL\020\323\010\022%\n RETCODE_RET_DEST_DUNGEON_S" +
-      "ETTLED\020\324\010\022/\n*RETCODE_RET_DUNGEON_CANDIDA" +
-      "TE_TEAM_IS_FULL\020\325\010\0222\n-RETCODE_RET_DUNGEO" +
-      "N_CANDIDATE_TEAM_IS_DISMISS\020\326\010\0225\n0RETCOD" +
-      "E_RET_DUNGEON_CANDIDATE_TEAM_NOT_ALL_REA" +
-      "DY\020\327\010\0229\n4RETCODE_RET_DUNGEON_CANDIDATE_T" +
-      "EAM_HAS_REPEAT_AVATAR\020\330\010\0222\n-RETCODE_RET_" +
-      "DUNGEON_CANDIDATE_NOT_SINGEL_PASS\020\331\010\0223\n." +
-      "RETCODE_RET_DUNGEON_REPLAY_NEED_ALL_PLAY" +
-      "ER_DIE\020\332\010\0220\n+RETCODE_RET_DUNGEON_REPLAY_" +
-      "HAS_REVIVE_COUNT\020\333\010\022%\n RETCODE_RET_DUNGE" +
-      "ON_OTHERS_LEAVE\020\334\010\022*\n%RETCODE_RET_DUNGEO" +
-      "N_ENTER_LEVEL_LIMIT\020\335\010\0220\n+RETCODE_RET_DU" +
-      "NGEON_CANNOT_ENTER_PLOT_IN_MP\020\336\010\022,\n\'RETC" +
-      "ODE_RET_DUNGEON_DROP_SUBFIELD_LIMIT\020\337\010\0228" +
-      "\n3RETCODE_RET_DUNGEON_BE_INVITE_PLAYER_A" +
-      "VATAR_ALL_DIE\020\340\010\022$\n\037RETCODE_RET_DUNGEON_" +
-      "CANNOT_KICK\020\341\010\022;\n6RETCODE_RET_DUNGEON_CA" +
-      "NDIDATE_TEAM_SOMEONE_LEVEL_LIMIT\020\342\010\022&\n!R" +
-      "ETCODE_RET_DUNGEON_IN_FORCE_QUIT\020\343\010\022+\n&R" +
-      "ETCODE_RET_DUNGEON_GUEST_QUIT_DUNGEON\020\344\010" +
-      "\022$\n\037RETCODE_RET_DUNGEON_TICKET_FAIL\020\345\010\022$" +
-      "\n\037RETCODE_RET_CUR_DUNGEON_SETTLED\020\346\010\022#\n\036" +
-      "RETCODE_RET_MP_NOT_IN_MY_WORLD\020\261\t\022\036\n\031RET" +
-      "CODE_RET_MP_IN_MP_MODE\020\262\t\022!\n\034RETCODE_RET" +
-      "_MP_SCENE_IS_FULL\020\263\t\022&\n!RETCODE_RET_MP_M" +
-      "ODE_NOT_AVAILABLE\020\264\t\022(\n#RETCODE_RET_MP_P" +
-      "LAYER_NOT_ENTERABLE\020\265\t\022\"\n\035RETCODE_RET_MP" +
-      "_QUEST_BLOCK_MP\020\266\t\022!\n\034RETCODE_RET_MP_IN_" +
-      "ROOM_SCENE\020\267\t\022!\n\034RETCODE_RET_MP_WORLD_IS" +
-      "_FULL\020\270\t\022*\n%RETCODE_RET_MP_PLAYER_NOT_AL" +
-      "LOW_ENTER\020\271\t\022\'\n\"RETCODE_RET_MP_PLAYER_DI" +
-      "SCONNECTED\020\272\t\022\"\n\035RETCODE_RET_MP_NOT_IN_M" +
-      "P_MODE\020\273\t\022#\n\036RETCODE_RET_MP_OWNER_NOT_EN" +
-      "TER\020\274\t\022+\n&RETCODE_RET_MP_ALLOW_ENTER_PLA" +
-      "YER_FULL\020\275\t\022-\n(RETCODE_RET_MP_TARGET_PLA" +
-      "YER_IN_TRANSFER\020\276\t\022)\n$RETCODE_RET_MP_TAR" +
-      "GET_ENTERING_OTHER\020\277\t\022\"\n\035RETCODE_RET_MP_" +
-      "OTHER_ENTERING\020\300\t\022-\n(RETCODE_RET_MP_ENTE" +
-      "R_MAIN_PLAYER_IN_PLOT\020\301\t\022!\n\034RETCODE_RET_",
-      "MP_NOT_PS_PLAYER\020\302\t\022#\n\036RETCODE_RET_MP_PL" +
-      "AY_NOT_ACTIVE\020\303\t\022\'\n\"RETCODE_RET_MP_PLAY_" +
-      "REMAIN_REWARDS\020\304\t\022\"\n\035RETCODE_RET_MP_PLAY" +
-      "_NO_REWARD\020\305\t\022#\n\036RETCODE_RET_MP_OPEN_STA" +
-      "TE_FAIL\020\307\t\022\'\n\"RETCODE_RET_MP_PLAYER_IN_B" +
-      "LACKLIST\020\310\t\022!\n\034RETCODE_RET_MP_REPLY_TIME" +
-      "OUT\020\311\t\022\034\n\027RETCODE_RET_MP_IS_BLOCK\020\312\t\0220\n+" +
-      "RETCODE_RET_MP_ENTER_MAIN_PLAYER_IN_MP_P" +
-      "LAY\020\313\t\022%\n RETCODE_RET_MP_IN_MP_PLAY_BATT" +
-      "LE\020\314\t\022-\n(RETCODE_RET_MP_GUEST_HAS_REWARD" +
-      "_REMAINED\020\315\t\022#\n\036RETCODE_RET_MP_QUIT_MP_I" +
-      "NVALID\020\316\t\0221\n,RETCODE_RET_MP_OTHER_DATA_V" +
-      "ERSION_NOT_LATEST\020\317\t\022+\n&RETCODE_RET_MP_D" +
-      "ATA_VERSION_NOT_LATEST\020\320\t\022+\n&RETCODE_RET" +
-      "_MP_CUR_WORLD_NOT_ENTERABLE\020\321\t\022\'\n\"RETCOD" +
-      "E_RET_MP_ANY_GALLERY_STARTED\020\322\t\022$\n\037RETCO" +
-      "DE_RET_MP_HAS_ACTIVE_DRAFT\020\323\t\022%\n RETCODE" +
-      "_RET_MP_PLAYER_IN_DUNGEON\020\324\t\022\036\n\031RETCODE_" +
-      "RET_MP_MATCH_FULL\020\325\t\022\037\n\032RETCODE_RET_MP_M" +
-      "ATCH_LIMIT\020\326\t\022#\n\036RETCODE_RET_MP_MATCH_IN" +
-      "_PUNISH\020\327\t\022$\n\037RETCODE_RET_MP_IS_IN_MULTI" +
-      "STAGE\020\330\t\022\'\n\"RETCODE_RET_MP_MATCH_PLAY_NO" +
-      "T_OPEN\020\331\t\022*\n%RETCODE_RET_MP_ONLY_MP_WITH" +
-      "_PS_PLAYER\020\332\t\022-\n(RETCODE_RET_MP_GUEST_LO" +
-      "ADING_FIRST_ENTER\020\333\t\0223\n.RETCODE_RET_MP_S" +
-      "UMMER_TIME_SPRINT_BOAT_ONGOING\020\334\t\0228\n3RET" +
-      "CODE_RET_MP_BLITZ_RUSH_PARKOUR_CHALLENGE" +
-      "_ONGOING\020\335\t\022&\n!RETCODE_RET_MP_MUSIC_GAME" +
-      "_ONGOING\020\336\t\022!\n\034RETCODE_RET_MP_IN_MPING_M" +
-      "ODE\020\337\t\022)\n$RETCODE_RET_MP_OWNER_IN_SINGLE" +
-      "_SCENE\020\340\t\022#\n\036RETCODE_RET_MP_IN_SINGLE_SC" +
-      "ENE\020\341\t\022)\n$RETCODE_RET_MP_REPLY_NO_VALID_" +
-      "AVATAR\020\342\t\022\036\n\031RETCODE_RET_MAIL_PARA_ERR\020\225" +
-      "\n\022\035\n\030RETCODE_RET_MAIL_MAX_NUM\020\226\n\022%\n RETC" +
-      "ODE_RET_MAIL_ITEM_NUM_EXCEED\020\227\n\022&\n!RETCO" +
-      "DE_RET_MAIL_TITLE_LEN_EXCEED\020\230\n\022(\n#RETCO" +
-      "DE_RET_MAIL_CONTENT_LEN_EXCEED\020\231\n\022\'\n\"RET" +
-      "CODE_RET_MAIL_SENDER_LEN_EXCEED\020\232\n\022\'\n\"RE" +
-      "TCODE_RET_MAIL_PARSE_PACKET_FAIL\020\233\n\022$\n\037R" +
-      "ETCODE_RET_OFFLINE_MSG_MAX_NUM\020\234\n\022(\n#RET" +
-      "CODE_RET_OFFLINE_MSG_SAME_TICKET\020\235\n\022+\n&R" +
-      "ETCODE_RET_MAIL_EXCEL_MAIL_TYPE_ERROR\020\236\n" +
-      "\022\'\n\"RETCODE_RET_MAIL_CANNOT_SEND_MCOIN\020\237" +
-      "\n\022(\n#RETCODE_RET_MAIL_HCOIN_EXCEED_LIMIT" +
-      "\020\240\n\022(\n#RETCODE_RET_MAIL_SCOIN_EXCEED_LIM" +
-      "IT\020\241\n\022)\n$RETCODE_RET_MAIL_MATERIAL_ID_IN" +
-      "VALID\020\242\n\022)\n$RETCODE_RET_MAIL_AVATAR_EXCE" +
-      "ED_LIMIT\020\243\n\0223\n.RETCODE_RET_MAIL_GACHA_TI" +
-      "CKET_ETC_EXCEED_LIMIT\020\244\n\022-\n(RETCODE_RET_" +
-      "MAIL_ITEM_EXCEED_CEHUA_LIMIT\020\245\n\0222\n-RETCO" +
-      "DE_RET_MAIL_SPACE_OR_REST_NUM_NOT_ENOUGH" +
-      "\020\246\n\022%\n RETCODE_RET_MAIL_TICKET_IS_EMPTY\020" +
-      "\247\n\022*\n%RETCODE_RET_MAIL_TRANSACTION_IS_EM" +
-      "PTY\020\250\n\022&\n!RETCODE_RET_MAIL_DELETE_COLLEC" +
-      "TED\020\251\n\022&\n!RETCODE_RET_DAILY_TASK_NOT_FIN" +
-      "ISH\020\262\n\022%\n RETCODE_RET_DAILY_TAKS_HAS_TAK" +
-      "EN\020\263\n\022.\n)RETCODE_RET_SOCIAL_OFFLINE_MSG_" +
-      "NUM_EXCEED\020\264\n\0220\n+RETCODE_RET_DAILY_TASK_" +
-      "FILTER_CITY_NOT_OPEN\020\265\n\022\"\n\035RETCODE_RET_G" +
-      "ACHA_INAVAILABLE\020\371\n\022\'\n\"RETCODE_RET_GACHA" +
-      "_RANDOM_NOT_MATCH\020\372\n\022)\n$RETCODE_RET_GACH" +
-      "A_SCHEDULE_NOT_MATCH\020\373\n\022$\n\037RETCODE_RET_G" +
-      "ACHA_INVALID_TIMES\020\374\n\022+\n&RETCODE_RET_GAC" +
-      "HA_COST_ITEM_NOT_ENOUGH\020\375\n\022\"\n\035RETCODE_RE" +
-      "T_GACHA_TIMES_LIMIT\020\376\n\022%\n RETCODE_RET_GA" +
-      "CHA_WISH_SAME_ITEM\020\377\n\022(\n#RETCODE_RET_GAC" +
-      "HA_WISH_INVALID_ITEM\020\200\013\022)\n$RETCODE_RET_G" +
-      "ACHA_MINORS_TIMES_LIMIT\020\201\013\022*\n%RETCODE_RE" +
-      "T_GACHA_GENERAL_TIMES_LIMIT\020\202\013\022.\n)RETCOD" +
-      "E_RET_INVESTIGAITON_NOT_IN_PROGRESS\020\335\013\022)" +
-      "\n$RETCODE_RET_INVESTIGAITON_UNCOMPLETE\020\336" +
-      "\013\022+\n&RETCODE_RET_INVESTIGAITON_REWARD_TA" +
-      "KEN\020\337\013\0221\n,RETCODE_RET_INVESTIGAITON_TARG" +
-      "ET_STATE_ERROR\020\340\013\022$\n\037RETCODE_RET_PUSH_TI" +
-      "PS_NOT_FOUND\020\341\013\022)\n$RETCODE_RET_SIGN_IN_R" +
-      "ECORD_NOT_FOUND\020\342\013\022\'\n\"RETCODE_RET_ALREAD" +
-      "Y_HAVE_SIGNED_IN\020\343\013\022+\n&RETCODE_RET_SIGN_" +
-      "IN_COND_NOT_SATISFIED\020\344\013\022.\n)RETCODE_RET_" +
-      "BONUS_ACTIVITY_NOT_UNREWARDED\020\345\013\022!\n\034RETC" +
-      "ODE_RET_SIGN_IN_REWARDED\020\346\013\022\037\n\032RETCODE_R" +
-      "ET_TOWER_NOT_OPEN\020\361\013\022(\n#RETCODE_RET_TOWE" +
-      "R_HAVE_DAILY_RECORD\020\362\013\022!\n\034RETCODE_RET_TO" +
-      "WER_NOT_RECORD\020\363\013\022\"\n\035RETCODE_RET_TOWER_H" +
-      "AVE_RECORD\020\364\013\022%\n RETCODE_RET_TOWER_TEAM_" +
-      "NUM_ERROR\020\365\013\022%\n RETCODE_RET_TOWER_FLOOR_" +
-      "NOT_OPEN\020\366\013\022+\n&RETCODE_RET_TOWER_NO_FLOO" +
-      "R_STAR_RECORD\020\367\013\022\'\n\"RETCODE_RET_ALREADY_" +
-      "HAS_TOWER_BUFF\020\370\013\022&\n!RETCODE_RET_DUPLICA" +
-      "TE_ENTER_LEVEL\020\371\013\022#\n\036RETCODE_RET_NOT_IN_" +
-      "TOWER_LEVEL\020\372\013\022\037\n\032RETCODE_RET_IN_TOWER_L" +
-      "EVEL\020\373\013\022,\n\'RETCODE_RET_TOWER_PREV_FLOOR_" +
-      "NOT_FINISH\020\374\013\022&\n!RETCODE_RET_TOWER_STAR_" +
-      "NOT_ENOUGH\020\375\013\022(\n#RETCODE_RET_BATTLE_PASS" +
-      "_NO_SCHEDULE\020\205\014\022&\n!RETCODE_RET_BATTLE_PA" +
-      "SS_HAS_BUYED\020\206\014\022+\n&RETCODE_RET_BATTLE_PA" +
-      "SS_LEVEL_OVERFLOW\020\207\014\022,\n\'RETCODE_RET_BATT" +
-      "LE_PASS_PRODUCT_EXPIRED\020\210\014\022 \n\033RETCODE_RE" +
-      "T_MATCH_HOST_QUIT\020\231\014\022\'\n\"RETCODE_RET_MATC" +
-      "H_ALREADY_IN_MATCH\020\232\014\022#\n\036RETCODE_RET_MAT" +
-      "CH_NOT_IN_MATCH\020\233\014\022(\n#RETCODE_RET_MATCH_" +
-      "APPLYING_ENTER_MP\020\234\014\022/\n*RETCODE_RET_WIDG" +
-      "ET_TREASURE_SPOT_NOT_FOUND\020\255\014\022.\n)RETCODE" +
-      "_RET_WIDGET_TREASURE_ENTITY_EXISTS\020\256\014\022.\n" +
-      ")RETCODE_RET_WIDGET_TREASURE_SPOT_FAR_AW" +
-      "AY\020\257\014\022/\n*RETCODE_RET_WIDGET_TREASURE_FIN" +
-      "ISHED_TODAY\020\260\014\0221\n,RETCODE_RET_WIDGET_QUI" +
-      "CK_USE_REQ_PARAM_ERROR\020\261\014\022,\n\'RETCODE_RET" +
-      "_WIDGET_CAMERA_SCAN_ID_ERROR\020\262\014\022\"\n\035RETCO" +
-      "DE_RET_WIDGET_NOT_ACTIVE\020\263\014\022*\n%RETCODE_R" +
-      "ET_WIDGET_FEATHER_NOT_ACTIVE\020\264\014\0223\n.RETCO" +
-      "DE_RET_WIDGET_FEATHER_GADGET_TOO_FAR_AWA" +
-      "Y\020\265\014\0220\n+RETCODE_RET_WIDGET_CAPTURE_ANIMA" +
-      "L_NOT_EXIST\020\266\014\0225\n0RETCODE_RET_WIDGET_CAP" +
-      "TURE_ANIMAL_DROP_BAG_LIMIT\020\267\014\0226\n1RETCODE" +
-      "_RET_WIDGET_CAPTURE_ANIMAL_CAN_NOT_CAPTU" +
-      "RE\020\270\014\0221\n,RETCODE_RET_WIDGET_SKY_CRYSTAL_" +
-      "ALL_COLLECTED\020\271\014\0226\n1RETCODE_RET_WIDGET_S" +
-      "KY_CRYSTAL_HINT_ALREADY_EXIST\020\272\014\022-\n(RETC" +
-      "ODE_RET_WIDGET_SKY_CRYSTAL_NOT_FOUND\020\273\014\022" +
-      "4\n/RETCODE_RET_WIDGET_SKY_CRYSTAL_NO_HIN" +
-      "T_TO_CLEAR\020\274\014\0225\n0RETCODE_RET_WIDGET_LIGH" +
-      "T_STONE_ENERGY_NOT_ENOUGH\020\275\014\0225\n0RETCODE_" +
-      "RET_WIDGET_TOY_CRYSTAL_ENERGY_NOT_ENOUGH" +
-      "\020\276\014\0224\n/RETCODE_RET_WIDGET_LIGHT_STONE_LE" +
-      "VEL_NOT_ENOUGH\020\277\014\022\036\n\031RETCODE_RET_UID_NOT" +
-      "_EXIST\020\321\017\022 \n\033RETCODE_RET_PARSE_BIN_ERROR" +
-      "\020\322\017\022\'\n\"RETCODE_RET_ACCOUNT_INFO_NOT_EXIS" +
-      "T\020\323\017\022%\n RETCODE_RET_ORDER_INFO_NOT_EXIST" +
-      "\020\324\017\022%\n RETCODE_RET_SNAPSHOT_INDEX_ERROR\020" +
-      "\325\017\022#\n\036RETCODE_RET_MAIL_HAS_BEEN_SENT\020\326\017\022" +
-      "\"\n\035RETCODE_RET_PRODUCT_NOT_EXIST\020\327\017\022\037\n\032R" +
-      "ETCODE_RET_UNFINISH_ORDER\020\330\017\022\035\n\030RETCODE_" +
-      "RET_ID_NOT_EXIST\020\331\017\022\"\n\035RETCODE_RET_ORDER" +
-      "_TRADE_EARLY\020\332\017\022\037\n\032RETCODE_RET_ORDER_FIN" +
-      "ISHED\020\333\017\022)\n$RETCODE_RET_GAMESERVER_VERSI" +
-      "ON_WRONG\020\334\017\022\'\n\"RETCODE_RET_OFFLINE_OP_FU" +
-      "LL_LENGTH\020\335\017\022-\n(RETCODE_RET_CONCERT_PROD" +
-      "UCT_OBTAIN_LIMIT\020\336\017\0222\n-RETCODE_RET_CONCE" +
-      "RT_PRODUCT_TICKET_DUPLICATED\020\337\017\022-\n(RETCO" +
-      "DE_RET_CONCERT_PRODUCT_TICKET_EMPTY\020\340\017\022\037" +
-      "\n\032RETCODE_RET_REDIS_MODIFIED\020\211\'\022$\n\037RETCO" +
-      "DE_RET_REDIS_UID_NOT_EXIST\020\212\'\022+\n&RETCODE" +
-      "_RET_PATHFINDING_DATA_NOT_EXIST\020\361.\0222\n-RE" +
-      "TCODE_RET_PATHFINDING_DESTINATION_NOT_EX" +
-      "IST\020\362.\022(\n#RETCODE_RET_PATHFINDING_ERROR_" +
-      "SCENE\020\363.\022/\n*RETCODE_RET_PATHFINDING_SCEN" +
-      "E_DATA_LOADING\020\364.\022&\n!RETCODE_RET_FRIEND_" +
-      "COUNT_EXCEEDED\020\3316\022!\n\034RETCODE_RET_PLAYER_" +
-      "NOT_EXIST\020\3326\022)\n$RETCODE_RET_ALREADY_SENT" +
-      "_ADD_REQUEST\020\3336\022%\n RETCODE_RET_ASK_FRIEN" +
-      "D_LIST_FULL\020\3346\022)\n$RETCODE_RET_PLAYER_ALR" +
-      "EADY_IS_FRIEND\020\3356\022&\n!RETCODE_RET_PLAYER_" +
-      "NOT_ASK_FRIEND\020\3366\022+\n&RETCODE_RET_TARGET_" +
-      "FRIEND_COUNT_EXCEED\020\3376\022\033\n\026RETCODE_RET_NO" +
-      "T_FRIEND\020\3406\022-\n(RETCODE_RET_BIRTHDAY_CANN" +
-      "OT_BE_SET_TWICE\020\3416\022\'\n\"RETCODE_RET_CANNOT" +
-      "_ADD_SELF_FRIEND\020\3426\022\"\n\035RETCODE_RET_SIGNA" +
-      "TURE_ILLEGAL\020\3436\022-\n(RETCODE_RET_PS_PLAYER" +
-      "_CANNOT_ADD_FRIENDS\020\3446\0220\n+RETCODE_RET_PS" +
-      "_PLAYER_CANNOT_REMOVE_FRIENDS\020\3456\022\'\n\"RETC" +
-      "ODE_RET_NAME_CARD_NOT_UNLOCKED\020\3466\022%\n RET" +
-      "CODE_RET_ALREADY_IN_BLACKLIST\020\3476\0220\n+RETC" +
-      "ODE_RET_PS_PALEYRS_CANNOT_ADD_BLACKLIST\020" +
-      "\3506\022&\n!RETCODE_RET_PLAYER_BLACKLIST_FULL\020" +
-      "\3516\022(\n#RETCODE_RET_PLAYER_NOT_IN_BLACKLIS" +
-      "T\020\3526\0223\n.RETCODE_RET_BLACKLIST_PLAYER_CAN" +
-      "NOT_ADD_FRIEND\020\3536\022$\n\037RETCODE_RET_IN_TARG" +
-      "ET_BLACKLIST\020\3546\022)\n$RETCODE_RET_CANNOT_AD" +
-      "D_TARGET_FRIEND\020\3556\022&\n!RETCODE_RET_BIRTHD" +
-      "AY_FORMAT_ERROR\020\3566\022%\n RETCODE_RET_ONLINE" +
-      "_ID_NOT_EXISTS\020\3576\022-\n(RETCODE_RET_FIRST_S" +
-      "HARE_REWARD_HAS_TAKEN\020\3606\0222\n-RETCODE_RET_" +
-      "PS_PLAYER_CANNOT_REMOVE_BLACKLIST\020\3616\022\032\n\025" +
-      "RETCODE_RET_REPORT_CD\020\3626\022\'\n\"RETCODE_RET_" +
-      "REPORT_CONTENT_ILLEGAL\020\3636\022$\n\037RETCODE_RET" +
-      "_REMARK_WORD_ILLEGAL\020\3646\022 \n\033RETCODE_RET_R" +
-      "EMARK_TOO_LONG\020\3656\022\"\n\035RETCODE_RET_REMARK_" +
-      "UTF8_ERROR\020\3666\022 \n\033RETCODE_RET_REMARK_IS_E" +
-      "MPTY\020\3676\022\"\n\035RETCODE_RET_ASK_ADD_FRIEND_CD" +
-      "\020\3706\022+\n&RETCODE_RET_SHOW_AVATAR_INFO_NOT_" +
-      "EXIST\020\3716\022\'\n\"RETCODE_RET_PLAYER_NOT_SHOW_" +
-      "AVATAR\020\3726\0222\n-RETCODE_RET_SOCIAL_UPDATE_S" +
-      "HOW_LIST_REPEAT_ID\020\3736\022!\n\034RETCODE_RET_PSN" +
-      "_ID_NOT_FOUND\020\3746\0222\n-RETCODE_RET_EMOJI_CO" +
-      "LLECTION_NUM_EXCEED_LIMIT\020\3756\022\035\n\030RETCODE_" +
-      "RET_REMARK_EMPTY\020\3766\022(\n#RETCODE_RET_IN_TA" +
-      "RGET_PSN_BLACKLIST\020\3776\022&\n!RETCODE_RET_SIG" +
-      "NATURE_NOT_CHANGED\020\2007\022(\n#RETCODE_RET_SIG" +
-      "NATURE_MONTHLY_LIMIT\020\2017\022-\n(RETCODE_RET_R" +
-      "EQ_FRIEND_AVATAR_FREQUENTLY\020\2027\0222\n-RETCOD" +
-      "E_RET_PSN_GET_PLAYER_SOCIAL_DETAIL_FAIL\020" +
-      "\2037\022\"\n\035RETCODE_RET_OFFERING_NOT_OPEN\020\2517\022%" +
-      "\n RETCODE_RET_OFFERING_LEVEL_LIMIT\020\2527\022)\n" +
-      "$RETCODE_RET_OFFERING_LEVEL_NOT_REACH\020\2537" +
-      "\022)\n$RETCODE_RET_OFFERING_LEVEL_HAS_TAKEN" +
-      "\020\2547\022)\n$RETCODE_RET_CITY_REPUTATION_NOT_O" +
-      "PEN\020\2757\022,\n\'RETCODE_RET_CITY_REPUTATION_LE" +
-      "VEL_TAKEN\020\2767\0220\n+RETCODE_RET_CITY_REPUTAT" +
-      "ION_LEVEL_NOT_REACH\020\2777\0223\n.RETCODE_RET_CI" +
-      "TY_REPUTATION_PARENT_QUEST_TAKEN\020\3007\0226\n1R" +
-      "ETCODE_RET_CITY_REPUTATION_PARENT_QUEST_" +
-      "UNFINISH\020\3017\022/\n*RETCODE_RET_CITY_REPUTATI" +
-      "ON_ACCEPT_REQUEST\020\3027\0223\n.RETCODE_RET_CITY" +
-      "_REPUTATION_NOT_ACCEPT_REQUEST\020\3037\0225\n0RET" +
-      "CODE_RET_CITY_REPUTATION_ACCEPT_REQUEST_" +
-      "LIMIT\020\3047\0222\n-RETCODE_RET_CITY_REPUTATION_" +
-      "ENTRANCE_NOT_OPEN\020\3057\0225\n0RETCODE_RET_CITY" +
-      "_REPUTATION_TAKEN_REQUEST_REWARD\020\3067\022-\n(R" +
-      "ETCODE_RET_CITY_REPUTATION_SWITCH_CLOSE\020" +
-      "\3077\0225\n0RETCODE_RET_CITY_REPUTATION_ENTRAC" +
-      "E_SWITCH_CLOSE\020\3107\0225\n0RETCODE_RET_CITY_RE" +
-      "PUTATION_TAKEN_EXPLORE_REWARD\020\3117\0222\n-RETC" +
-      "ODE_RET_CITY_REPUTATION_EXPLORE_NOT_REAC" +
-      "H\020\3127\022$\n\037RETCODE_RET_MECHANICUS_NOT_OPEN\020" +
-      "\3207\022\'\n\"RETCODE_RET_MECHANICUS_GEAR_UNLOCK" +
-      "\020\3217\022%\n RETCODE_RET_MECHANICUS_GEAR_LOCK\020" +
-      "\3227\022,\n\'RETCODE_RET_MECHANICUS_GEAR_LEVEL_" +
-      "LIMIT\020\3237\022+\n&RETCODE_RET_MECHANICUS_COIN_" +
-      "NOT_ENOUGH\020\3247\022\'\n\"RETCODE_RET_MECHANICUS_" +
-      "NO_SEQUENCE\020\3257\0220\n+RETCODE_RET_MECHANICUS" +
-      "_SEQUENCE_LIMIT_LEVEL\020\3267\022/\n*RETCODE_RET_" +
-      "MECHANICUS_SEQUENCE_LIMIT_OPEN\020\3277\0221\n,RET" +
-      "CODE_RET_MECHANICUS_DIFFICULT_NOT_SUPPOR" +
-      "T\020\3307\022-\n(RETCODE_RET_MECHANICUS_TICKET_NO" +
-      "T_ENOUGH\020\3317\022,\n\'RETCODE_RET_MECHANICUS_TE" +
-      "ACH_NOT_FINISH\020\3327\022*\n%RETCODE_RET_MECHANI" +
-      "CUS_TEACH_FINISHED\020\3337\0226\n1RETCODE_RET_MEC" +
-      "HANICUS_PREV_DIFFICULT_LEVEL_BLOCK\020\3347\022(\n" +
-      "#RETCODE_RET_MECHANICUS_PLAYER_LIMIT\020\3357\022" +
-      "\'\n\"RETCODE_RET_MECHANICUS_PUNISH_TIME\020\3367" +
-      "\022(\n#RETCODE_RET_MECHANICUS_SWITCH_CLOSE\020" +
-      "\3377\0221\n,RETCODE_RET_MECHANICUS_BATTLE_NOT_" +
-      "IN_DUNGEON\020\3567\0221\n,RETCODE_RET_MECHANICUS_" +
-      "BATTLE_PLAY_NOT_FOUND\020\3577\0226\n1RETCODE_RET_" +
-      "MECHANICUS_BATTLE_DUPLICATE_PICK_CARD\020\3607" +
-      "\0225\n0RETCODE_RET_MECHANICUS_BATTLE_PLAYER" +
-      "_NOT_IN_PLAY\020\3617\0225\n0RETCODE_RET_MECHANICU" +
-      "S_BATTLE_CARD_NOT_AVAILABLE\020\3627\0224\n/RETCOD" +
-      "E_RET_MECHANICUS_BATTLE_NOT_IN_CARD_STAG" +
-      "E\020\3637\0222\n-RETCODE_RET_MECHANICUS_BATTLE_CA" +
-      "RD_IS_WAITING\020\3647\0225\n0RETCODE_RET_MECHANIC" +
-      "US_BATTLE_CARD_ALL_CONFIRMED\020\3657\0229\n4RETCO" +
-      "DE_RET_MECHANICUS_BATTLE_CARD_ALREADY_CO" +
-      "NFIRMED\020\3667\022:\n5RETCODE_RET_MECHANICUS_BAT" +
-      "TLE_CARD_CONFIRMED_BY_OTHER\020\3677\0229\n4RETCOD" +
-      "E_RET_MECHANICUS_BATTLE_CARD_NOT_ENOUGH_" +
-      "POINTS\020\3707\0227\n2RETCODE_RET_MECHANICUS_BATT" +
-      "LE_CARD_ALREADY_SKIPPED\020\3717\022)\n$RETCODE_RE" +
-      "T_LEGENDARY_KEY_NOT_ENOUGH\020\301>\022+\n&RETCODE" +
-      "_RET_LEGENDARY_KEY_EXCEED_LIMIT\020\302>\0220\n+RE" +
-      "TCODE_RET_DAILY_TASK_NOT_ENOUGH_TO_REDEE" +
-      "M\020\303>\022-\n(RETCODE_RET_PERSONAL_LINE_OPEN_S" +
-      "TATE_OFF\020\304>\022/\n*RETCODE_RET_PERSONAL_LINE" +
-      "_LEVEL_NOT_ENOUGH\020\305>\022\'\n\"RETCODE_RET_PERS" +
-      "ONAL_LINE_NOT_OPEN\020\306>\0223\n.RETCODE_RET_PER" +
-      "SONAL_LINE_PRE_QUEST_NOT_FINISH\020\307>\0223\n.RE" +
-      "TCODE_RET_HUNTING_ALREADY_FINISH_OFFER_L" +
-      "IMIT\020\211@\022-\n(RETCODE_RET_HUNTING_HAS_UNFIN" +
-      "ISHED_OFFER\020\212@\0222\n-RETCODE_RET_HUNTING_FA" +
-      "ILED_OFFER_NOT_CD_READY\020\213@\022\'\n\"RETCODE_RE" +
-      "T_HUNTING_NOT_TAKE_OFFER\020\214@\022*\n%RETCODE_R" +
-      "ET_HUNTING_CANNOT_TAKE_TWICE\020\215@\0222\n-RETCO" +
-      "DE_RET_RPIVATE_CHAT_INVALID_CONTENT_TYPE" +
-      "\020\305E\0222\n-RETCODE_RET_PRIVATE_CHAT_TARGET_I" +
-      "S_NOT_FRIEND\020\306E\0223\n.RETCODE_RET_PRIVATE_C" +
-      "HAT_CONTENT_NOT_SUPPORTED\020\307E\022.\n)RETCODE_" +
-      "RET_PRIVATE_CHAT_CONTENT_TOO_LONG\020\310E\022+\n&" +
-      "RETCODE_RET_PRIVATE_CHAT_PULL_TOO_FAST\020\311" +
-      "E\022)\n$RETCODE_RET_PRIVATE_CHAT_REPEAT_REA" +
-      "D\020\312E\022-\n(RETCODE_RET_PRIVATE_CHAT_READ_NO" +
-      "T_FRIEND\020\313E\022!\n\034RETCODE_RET_REUNION_FINIS" +
-      "HED\020\251F\022&\n!RETCODE_RET_REUNION_NOT_ACTIVA" +
-      "TED\020\252F\0222\n-RETCODE_RET_REUNION_ALREADY_TA" +
-      "KE_FIRST_REWARD\020\253F\022)\n$RETCODE_RET_REUNIO" +
-      "N_SIGN_IN_REWARDED\020\254F\022)\n$RETCODE_RET_REU" +
-      "NION_WATCHER_REWARDED\020\255F\022+\n&RETCODE_RET_" +
-      "REUNION_WATCHER_NOT_FINISH\020\256F\022)\n$RETCODE" +
-      "_RET_REUNION_MISSION_REWARDED\020\257F\022+\n&RETC" +
-      "ODE_RET_REUNION_MISSION_NOT_FINISH\020\260F\0224\n" +
-      "/RETCODE_RET_REUNION_WATCHER_REWARD_NOT_" +
-      "UNLOCKED\020\261F\022(\n#RETCODE_RET_BLESSING_CONT" +
-      "ENT_CLOSED\020\215G\022$\n\037RETCODE_RET_BLESSING_NO" +
-      "T_ACTIVE\020\216G\022*\n%RETCODE_RET_BLESSING_NOT_" +
-      "TODAY_ENTITY\020\217G\0226\n1RETCODE_RET_BLESSING_" +
-      "ENTITY_EXCEED_SCAN_NUM_LIMIT\020\220G\0225\n0RETCO" +
-      "DE_RET_BLESSING_DAILY_SCAN_NUM_EXCEED_LI" +
-      "MIT\020\221G\0228\n3RETCODE_RET_BLESSING_REDEEM_RE" +
-      "WARD_NUM_EXCEED_LIMIT\020\222G\0223\n.RETCODE_RET_" +
-      "BLESSING_REDEEM_PIC_NUM_NOT_ENOUGH\020\223G\022(\n" +
-      "#RETCODE_RET_BLESSING_PIC_NOT_ENOUGH\020\224G\022" +
-      "*\n%RETCODE_RET_BLESSING_PIC_HAS_RECEIVED" +
-      "\020\225G\0220\n+RETCODE_RET_BLESSING_TARGET_RECV_" +
-      "NUM_EXCEED\020\226G\022/\n*RETCODE_RET_FLEUR_FAIR_" +
-      "CREDIT_EXCEED_LIMIT\020\227G\022-\n(RETCODE_RET_FL" +
-      "EUR_FAIR_CREDIT_NOT_ENOUGH\020\230G\022.\n)RETCODE" +
-      "_RET_FLEUR_FAIR_TOKEN_EXCEED_LIMIT\020\231G\022,\n" +
-      "\'RETCODE_RET_FLEUR_FAIR_TOKEN_NOT_ENOUGH" +
-      "\020\232G\022-\n(RETCODE_RET_FLEUR_FAIR_MINIGAME_N" +
-      "OT_OPEN\020\233G\022<\n7RETCODE_RET_FLEUR_FAIR_MUS" +
-      "IC_GAME_DIFFICULTY_NOT_UNLOCK\020\234G\022*\n%RETC" +
-      "ODE_RET_FLEUR_FAIR_DUNGEON_LOCKED\020\235G\022/\n*" +
-      "RETCODE_RET_FLEUR_FAIR_DUNGEON_PUNISH_TI" +
-      "ME\020\236G\022:\n5RETCODE_RET_FLEUR_FAIR_ONLY_OWN" +
-      "ER_CAN_RESTART_MINIGAM\020\237G\022/\n*RETCODE_RET" +
-      "_WATER_SPIRIT_COIN_EXCEED_LIMIT\020\240G\022-\n(RE" +
-      "TCODE_RET_WATER_SPIRIT_COIN_NOT_ENOUGH\020\241" +
-      "G\022(\n#RETCODE_RET_REGION_SEARCH_NO_SEARCH" +
-      "\020\242G\022*\n%RETCODE_RET_REGION_SEARCH_STATE_E" +
-      "RROR\020\243G\022<\n7RETCODE_RET_CHANNELLER_SLAB_L" +
-      "OOP_DUNGEON_STAGE_NOT_OPEN\020\252G\0226\n1RETCODE" +
-      "_RET_CHANNELLER_SLAB_LOOP_DUNGEON_NOT_OP" +
-      "EN\020\253G\022I\nDRETCODE_RET_CHANNELLER_SLAB_LOO" +
-      "P_DUNGEON_FIRST_PASS_REWARD_HAS_TAKEN\020\254G" +
-      "\022D\n?RETCODE_RET_CHANNELLER_SLAB_LOOP_DUN" +
-      "GEON_SCORE_REWARD_HAS_TAKEN\020\255G\0228\n3RETCOD" +
-      "E_RET_CHANNELLER_SLAB_INVALID_ONE_OFF_DU" +
-      "NGEON\020\256G\0225\n0RETCODE_RET_CHANNELLER_SLAB_" +
-      "ONE_OFF_DUNGEON_DONE\020\257G\022?\n:RETCODE_RET_C" +
-      "HANNELLER_SLAB_ONE_OFF_DUNGEON_STAGE_NOT" +
-      "_OPEN\020\260G\0223\n.RETCODE_RET_CHANNELLER_SLAB_" +
-      "TOKEN_EXCEED_LIMIT\020\261G\0221\n,RETCODE_RET_CHA" +
-      "NNELLER_SLAB_TOKEN_NOT_ENOUGH\020\262G\022>\n9RETC" +
-      "ODE_RET_CHANNELLER_SLAB_PLAYER_NOT_IN_ON" +
-      "E_OFF_DUNGEON\020\263G\022;\n6RETCODE_RET_MIST_TRI" +
-      "AL_SELECT_CHARACTER_NUM_NOT_ENOUGH\020\276G\022,\n" +
-      "\'RETCODE_RET_HIDE_AND_SEEK_PLAY_NOT_OPEN" +
-      "\020\310G\0220\n+RETCODE_RET_HIDE_AND_SEEK_PLAY_MA" +
-      "P_NOT_OPEN\020\311G\0225\n0RETCODE_RET_SUMMER_TIME" +
-      "_DRAFT_WOORD_EXCEED_LIMIT\020\322G\0223\n.RETCODE_" +
-      "RET_SUMMER_TIME_DRAFT_WOORD_NOT_ENOUGH\020\323" +
-      "G\0228\n3RETCODE_RET_SUMMER_TIME_MINI_HARPAS" +
-      "TUM_EXCEED_LIMIT\020\324G\0225\n0RETCODE_RET_SUMME" +
-      "R_TIME_MINI_HARPASTUMNOT_ENOUGH\020\325G\0223\n.RE" +
-      "TCODE_RET_BOUNCE_CONJURING_COIN_EXCEED_L" +
-      "IMIT\020\334G\0221\n,RETCODE_RET_BOUNCE_CONJURING_" +
-      "COIN_NOT_ENOUGH\020\335G\022)\n$RETCODE_RET_CHESS_" +
-      "TEACH_MAP_FINISHED\020\337G\022+\n&RETCODE_RET_CHE" +
-      "SS_TEACH_MAP_UNFINISHED\020\340G\022(\n#RETCODE_RE" +
-      "T_CHESS_COIN_EXCEED_LIMIT\020\341G\022&\n!RETCODE_" +
-      "RET_CHESS_COIN_NOT_ENOUGH\020\342G\022%\n RETCODE_" +
-      "RET_CHESS_IN_PUNISH_TIME\020\343G\022*\n%RETCODE_R" +
-      "ET_CHESS_PREV_MAP_UNFINISHED\020\344G\022!\n\034RETCO" +
-      "DE_RET_CHESS_MAP_LOCKED\020\345G\022$\n\037RETCODE_RE" +
-      "T_BLITZ_RUSH_NOT_OPEN\020\350G\022,\n\'RETCODE_RET_" +
-      "BLITZ_RUSH_DUNGEON_NOT_OPEN\020\351G\022/\n*RETCOD" +
-      "E_RET_BLITZ_RUSH_COIN_A_EXCEED_LIMIT\020\352G\022" +
-      "/\n*RETCODE_RET_BLITZ_RUSH_COIN_B_EXCEED_" +
-      "LIMIT\020\353G\022-\n(RETCODE_RET_BLITZ_RUSH_COIN_" +
-      "A_NOT_ENOUGH\020\354G\022-\n(RETCODE_RET_BLITZ_RUS" +
-      "H_COIN_B_NOT_ENOUGH\020\355G\022.\n)RETCODE_RET_MI" +
-      "RACLE_RING_VALUE_NOT_ENOUGH\020\361G\022 \n\033RETCOD" +
-      "E_RET_MIRACLE_RING_CD\020\362G\022.\n)RETCODE_RET_" +
-      "MIRACLE_RING_REWARD_NOT_TAKEN\020\363G\022)\n$RETC" +
-      "ODE_RET_MIRACLE_RING_NOT_DELIVER\020\364G\022,\n\'R" +
-      "ETCODE_RET_MIRACLE_RING_DELIVER_EXCEED\020\365" +
-      "G\022)\n$RETCODE_RET_MIRACLE_RING_HAS_CREATE" +
-      "D\020\366G\022-\n(RETCODE_RET_MIRACLE_RING_HAS_NOT" +
-      "_CREATED\020\367G\022\'\n\"RETCODE_RET_MIRACLE_RING_" +
-      "NOT_YOURS\020\370G\022/\n*RETCODE_RET_GADGET_FOUND" +
-      "ATION_UNAUTHORIZED\020\243H\0222\n-RETCODE_RET_GAD" +
-      "GET_FOUNDATION_SCENE_NOT_FOUND\020\244H\0224\n/RET" +
-      "CODE_RET_GADGET_FOUNDATION_NOT_IN_INIT_S" +
-      "TATE\020\245H\022<\n7RETCODE_RET_GADGET_FOUNDATION" +
-      "_BILDING_POINT_NOT_ENOUGHT\020\246H\0225\n0RETCODE" +
-      "_RET_GADGET_FOUNDATION_NOT_IN_BUILT_STAT" +
-      "E\020\247H\0223\n.RETCODE_RET_GADGET_FOUNDATION_OP" +
-      "_NOT_SUPPORTED\020\250H\022:\n5RETCODE_RET_GADGET_" +
-      "FOUNDATION_REQ_PLAYER_NOT_IN_SCENE\020\251H\022;\n" +
-      "6RETCODE_RET_GADGET_FOUNDATION_LOCKED_BY" +
-      "_ANOTHER_PLAYER\020\252H\022-\n(RETCODE_RET_GADGET" +
-      "_FOUNDATION_NOT_LOCKED\020\253H\0221\n,RETCODE_RET" +
-      "_GADGET_FOUNDATION_DUPLICATE_LOCK\020\254H\0223\n." +
-      "RETCODE_RET_GADGET_FOUNDATION_PLAYER_NOT" +
-      "_FOUND\020\255H\0228\n3RETCODE_RET_GADGET_FOUNDATI" +
-      "ON_PLAYER_GEAR_NOT_FOUND\020\256H\0223\n.RETCODE_R" +
-      "ET_GADGET_FOUNDATION_ROTAION_DISABLED\020\257H" +
-      "\022;\n6RETCODE_RET_GADGET_FOUNDATION_REACH_" +
-      "DUNGEON_GEAR_LIMIT\020\260H\022:\n5RETCODE_RET_GAD" +
-      "GET_FOUNDATION_REACH_SINGLE_GEAR_LIMIT\020\261" +
-      "H\0224\n/RETCODE_RET_GADGET_FOUNDATION_ROTAT" +
-      "ION_ON_GOING\020\262H\022,\n\'RETCODE_RET_OP_ACTIVI" +
-      "TY_BONUS_NOT_FOUND\020\325H\022%\n RETCODE_RET_OP_" +
-      "ACTIVITY_NOT_OPEN\020\326H\0224\n/RETCODE_RET_MULT" +
-      "ISTAGE_PLAY_PLAYER_NOT_IN_SCENE\020\235J\022*\n%RE" +
-      "TCODE_RET_MULTISTAGE_PLAY_NOT_FOUND\020\236J\022&" +
-      "\n!RETCODE_RET_COOP_CHAPTER_NOT_OPEN\020\201K\022#" +
-      "\n\036RETCODE_RET_COOP_COND_NOT_MEET\020\202K\022\"\n\035R" +
-      "ETCODE_RET_COOP_POINT_LOCKED\020\203K\022\'\n\"RETCO" +
-      "DE_RET_COOP_NOT_HAVE_PROGRESS\020\204K\022&\n!RETC" +
-      "ODE_RET_COOP_REWARD_HAS_TAKEN\020\205K\022\'\n\"RETC" +
-      "ODE_RET_DRAFT_HAS_ACTIVE_DRAFT\020\263K\022&\n!RET" +
-      "CODE_RET_DRAFT_NOT_IN_MY_WORLD\020\264K\022%\n RET" +
-      "CODE_RET_DRAFT_NOT_SUPPORT_MP\020\265K\022(\n#RETC" +
-      "ODE_RET_DRAFT_PLAYER_NOT_ENOUGH\020\266K\022&\n!RE" +
-      "TCODE_RET_DRAFT_INCORRECT_SCENE\020\267K\022,\n\'RE" +
-      "TCODE_RET_DRAFT_OTHER_PLAYER_ENTERING\020\270K" +
-      "\022,\n\'RETCODE_RET_DRAFT_GUEST_IS_TRANSFERR" +
-      "ING\020\271K\022/\n*RETCODE_RET_DRAFT_GUEST_NOT_IN" +
-      "_DRAFT_SCENE\020\272K\022\'\n\"RETCODE_RET_DRAFT_INV" +
-      "ITE_OVER_TIME\020\273K\022/\n*RETCODE_RET_DRAFT_TW",
-      "ICE_CONFIRM_OVER_TIMER\020\274K\022\034\n\027RETCODE_RET" +
-      "_HOME_UNKOWN\020\345K\022*\n%RETCODE_RET_HOME_INVA" +
-      "LID_CLIENT_PARAM\020\346K\022.\n)RETCODE_RET_HOME_" +
-      "TARGE_PLAYER_HAS_NO_HOME\020\347K\022 \n\033RETCODE_R" +
-      "ET_HOME_NOT_ONLINE\020\350K\022!\n\034RETCODE_RET_HOM" +
-      "E_PLAYER_FULL\020\351K\022\035\n\030RETCODE_RET_HOME_BLO" +
-      "CKED\020\352K\0222\n-RETCODE_RET_HOME_ALREADY_IN_T" +
-      "ARGET_HOME_WORLD\020\353K\022\"\n\035RETCODE_RET_HOME_" +
-      "IN_EDIT_MODE\020\354K\022&\n!RETCODE_RET_HOME_NOT_" +
-      "IN_EDIT_MODE\020\355K\022\037\n\032RETCODE_RET_HOME_HAS_" +
-      "GUEST\020\356K\0220\n+RETCODE_RET_HOME_CANT_ENTER_" +
-      "BY_IN_EDIT_MODE\020\357K\022*\n%RETCODE_RET_HOME_C" +
-      "LIENT_PARAM_INVALID\020\360K\022.\n)RETCODE_RET_HO" +
-      "ME_PLAYER_NOT_IN_HOME_WORLD\020\361K\0223\n.RETCOD" +
-      "E_RET_HOME_PLAYER_NOT_IN_SELF_HOME_WORLD" +
-      "\020\362K\022&\n!RETCODE_RET_HOME_NOT_FOUND_IN_MEM" +
-      "\020\363K\022/\n*RETCODE_RET_HOME_PLAYER_IN_HOME_R" +
-      "OOM_SCENE\020\364K\022-\n(RETCODE_RET_HOME_HOME_RE" +
-      "FUSE_GUEST_ENTER\020\365K\0220\n+RETCODE_RET_HOME_" +
-      "OWNER_REFUSE_TO_ENTER_HOME\020\366K\022#\n\036RETCODE" +
-      "_RET_HOME_OWNER_OFFLINE\020\367K\022,\n\'RETCODE_RE" +
-      "T_HOME_FURNITURE_EXCEED_LIMIT\020\370K\0220\n+RETC" +
-      "ODE_RET_HOME_FURNITURE_COUNT_NOT_ENOUGH\020" +
-      "\371K\022*\n%RETCODE_RET_HOME_IN_TRY_ENTER_PROC" +
-      "ESS\020\372K\022-\n(RETCODE_RET_HOME_ALREADY_IN_TA" +
-      "RGET_SCENE\020\373K\022\'\n\"RETCODE_RET_HOME_COIN_E" +
-      "XCEED_LIMIT\020\374K\022%\n RETCODE_RET_HOME_COIN_" +
-      "NOT_ENOUGH\020\375K\022)\n$RETCODE_RET_HOME_MODULE" +
-      "_NOT_UNLOCKED\020\376K\022\'\n\"RETCODE_RET_HOME_CUR" +
-      "_MODULE_CLOSED\020\377K\0222\n-RETCODE_RET_HOME_FU" +
-      "RNITURE_SUITE_NOT_UNLOCKED\020\200L\022\036\n\031RETCODE" +
-      "_RET_HOME_IN_MATCH\020\201L\022\037\n\032RETCODE_RET_HOM" +
-      "E_IN_COMBAT\020\202L\022\"\n\035RETCODE_RET_HOME_EDIT_" +
-      "MODE_CD\020\203L\022)\n$RETCODE_RET_HOME_UPDATE_FU" +
-      "RNITURE_CD\020\204L\022+\n&RETCODE_RET_HOME_BLOCK_" +
-      "FURNITURE_LIMIT\020\205L\022!\n\034RETCODE_RET_HOME_N" +
-      "OT_SUPPORT\020\206L\022$\n\037RETCODE_RET_HOME_STATE_" +
-      "NOT_OPEN\020\207L\022+\n&RETCODE_RET_HOME_TARGET_S" +
-      "TATE_NOT_OPEN\020\210L\0221\n,RETCODE_RET_HOME_APP" +
-      "LY_ENTER_OTHER_HOME_FAIL\020\211L\022(\n#RETCODE_R" +
-      "ET_HOME_SAVE_NO_MAIN_HOUSE\020\212L\022 \n\033RETCODE" +
-      "_RET_HOME_IN_DUNGEON\020\213L\022)\n$RETCODE_RET_H" +
-      "OME_ANY_GALLERY_STARTED\020\214L\022&\n!RETCODE_RE" +
-      "T_HOME_QUEST_BLOCK_HOME\020\215L\022)\n$RETCODE_RE" +
-      "T_HOME_WAITING_PRIOR_CHECK\020\216L\022+\n&RETCODE" +
-      "_RET_HOME_PERSISTENT_CHECK_FAIL\020\217L\022+\n&RE" +
-      "TCODE_RET_HOME_FIND_ONLINE_HOME_FAIL\020\220L\022" +
-      "%\n RETCODE_RET_HOME_JOIN_SCENE_FAIL\020\221L\022 " +
-      "\n\033RETCODE_RET_HOME_MAX_PLAYER\020\222L\022!\n\034RETC" +
-      "ODE_RET_HOME_IN_TRANSFER\020\223L\022.\n)RETCODE_R" +
-      "ET_HOME_ANY_HOME_GALLERY_STARTED\020\224L\022,\n\'R" +
-      "ETCODE_RET_HOME_CAN_NOT_ENTER_IN_AUDIT\020\225" +
-      "L\022+\n&RETCODE_RET_FURNITURE_MAKE_INDEX_ER" +
-      "ROR\020\226L\022&\n!RETCODE_RET_FURNITURE_MAKE_LOC" +
-      "KED\020\227L\022,\n\'RETCODE_RET_FURNITURE_MAKE_CON" +
-      "FIG_ERROR\020\230L\022)\n$RETCODE_RET_FURNITURE_MA" +
-      "KE_SLOT_FULL\020\231L\0222\n-RETCODE_RET_FURNITURE" +
-      "_MAKE_ADD_FURNITURE_FAIL\020\232L\022(\n#RETCODE_R" +
-      "ET_FURNITURE_MAKE_UNFINISH\020\233L\022)\n$RETCODE" +
-      "_RET_FURNITURE_MAKE_IS_FINISH\020\234L\0223\n.RETC" +
-      "ODE_RET_FURNITURE_MAKE_NOT_IN_CORRECT_HO" +
-      "ME\020\235L\022(\n#RETCODE_RET_FURNITURE_MAKE_NO_C" +
-      "OUNT\020\236L\0220\n+RETCODE_RET_FURNITURE_MAKE_AC" +
-      "CELERATE_LIMIT\020\237L\022,\n\'RETCODE_RET_FURNITU" +
-      "RE_MAKE_NO_MAKE_DATA\020\240L\022(\n#RETCODE_RET_H" +
-      "OME_LIMITED_SHOP_CLOSE\020\241L\022%\n RETCODE_RET" +
-      "_HOME_AVATAR_NOT_SHOW\020\242L\022.\n)RETCODE_RET_" +
-      "HOME_EVENT_COND_NOT_SATISFIED\020\243L\0222\n-RETC" +
-      "ODE_RET_HOME_INVALID_ARRANGE_ANIMAL_PARA" +
-      "M\020\244L\022/\n*RETCODE_RET_HOME_INVALID_ARRANGE" +
-      "_NPC_PARAM\020\245L\0221\n,RETCODE_RET_HOME_INVALI" +
-      "D_ARRANGE_SUITE_PARAM\020\246L\0226\n1RETCODE_RET_" +
-      "HOME_INVALID_ARRANGE_MAIN_HOUSE_PARAM\020\247L" +
-      "\022+\n&RETCODE_RET_HOME_AVATAR_STATE_NOT_OP" +
-      "EN\020\250L\022+\n&RETCODE_RET_HOME_PLANT_FIELD_NO" +
-      "T_EMPTY\020\251L\022\'\n\"RETCODE_RET_HOME_PLANT_FIE" +
-      "LD_EMPTY\020\252L\022,\n\'RETCODE_RET_HOME_PLANT_FI" +
-      "ELD_TYPE_ERROR\020\253L\022+\n&RETCODE_RET_HOME_PL" +
-      "ANT_TIME_NOT_ENOUGH\020\254L\0224\n/RETCODE_RET_HO" +
-      "ME_PLANT_SUB_FIELD_NUM_NOT_ENOUGH\020\255L\022-\n(" +
-      "RETCODE_RET_HOME_PLANT_FIELD_PARAM_ERROR" +
-      "\020\256L\022*\n%RETCODE_RET_HOME_FURNITURE_GUID_E" +
-      "RROR\020\257L\022-\n(RETCODE_RET_HOME_FURNITURE_AR" +
-      "RANGE_LIMIT\020\260L\022(\n#RETCODE_RET_HOME_FISH_" +
-      "FARMING_LIMIT\020\261L\022+\n&RETCODE_RET_HOME_FIS" +
-      "H_COUNT_NOT_ENOUGH\020\262L\022*\n%RETCODE_RET_HOM" +
-      "E_FURNITURE_COST_LIMIT\020\263L\022.\n)RETCODE_RET" +
-      "_HOME_CUSTOM_FURNITURE_INVALID\020\264L\0221\n,RET" +
-      "CODE_RET_HOME_INVALID_ARRANGE_GROUP_PARA" +
-      "M\020\265L\0223\n.RETCODE_RET_HOME_FURNITURE_ARRAN" +
-      "GE_GROUP_LIMIT\020\266L\0228\n3RETCODE_RET_HOME_PI" +
-      "CTURE_FRAME_COOP_CG_GENDER_ERROR\020\267L\0226\n1R" +
-      "ETCODE_RET_HOME_PICTURE_FRAME_COOP_CG_NO" +
-      "T_UNLOCK\020\270L\022.\n)RETCODE_RET_HOME_FURNITUR" +
-      "E_CANNOT_ARRANGE\020\271L\0222\n-RETCODE_RET_HOME_" +
-      "FURNITURE_IN_DUPLICATE_SUITE\020\272L\0226\n1RETCO" +
-      "DE_RET_HOME_FURNITURE_CUSTOM_SUITE_TOO_S" +
-      "MALL\020\273L\0224\n/RETCODE_RET_HOME_FURNITURE_CU" +
-      "STOM_SUITE_TOO_BIG\020\274L\0222\n-RETCODE_RET_HOM" +
-      "E_FURNITURE_SUITE_EXCEED_LIMIT\020\275L\0229\n4RET" +
-      "CODE_RET_HOME_FURNITURE_CUSTOM_SUITE_EXC" +
-      "EED_LIMIT\020\276L\022A\n<RETCODE_RET_HOME_FURNITU" +
-      "RE_CUSTOM_SUITE_INVALID_SURFACE_TYPE\020\277L\022" +
-      "&\n!RETCODE_RET_HOME_BGM_ID_NOT_FOUND\020\300L\022" +
-      "&\n!RETCODE_RET_HOME_BGM_NOT_UNLOCKED\020\301L\022" +
-      "-\n(RETCODE_RET_HOME_BGM_FURNITURE_NOT_FO" +
-      "UND\020\302L\0222\n-RETCODE_RET_HOME_BGM_NOT_SUPPO" +
-      "RT_BY_CUR_SCENE\020\303L\0220\n+RETCODE_RET_HOME_L" +
-      "IMITED_SHOP_GOODS_DISABLE\020\304L\022/\n*RETCODE_" +
-      "RET_HOME_WORLD_WOOD_MATERIAL_EMPTY\020\305L\0223\n" +
-      ".RETCODE_RET_HOME_WORLD_WOOD_MATERIAL_NO" +
-      "T_FOUND\020\306L\0227\n2RETCODE_RET_HOME_WORLD_WOO" +
-      "D_MATERIAL_COUNT_INVALID\020\307L\0226\n1RETCODE_R" +
-      "ET_HOME_WORLD_WOOD_EXCHANGE_EXCEED_LIMIT" +
-      "\020\310L\022-\n(RETCODE_RET_SUMO_ACTIVITY_STAGE_N" +
-      "OT_OPEN\020\220N\0220\n+RETCODE_RET_SUMO_ACTIVITY_" +
-      "SWITCH_TEAM_IN_CD\020\221N\0221\n,RETCODE_RET_SUMO" +
-      "_ACTIVITY_TEAM_NUM_INCORRECT\020\222N\0221\n,RETCO" +
-      "DE_RET_LUNA_RITE_ACTIVITY_AREA_ID_ERROR\020" +
-      "\224N\0225\n0RETCODE_RET_LUNA_RITE_ACTIVITY_BAT" +
-      "TLE_NOT_FINISH\020\225N\0225\n0RETCODE_RET_LUNA_RI" +
-      "TE_ACTIVITY_ALREADY_SACRIFICE\020\226N\0227\n2RETC" +
-      "ODE_RET_LUNA_RITE_ACTIVITY_ALREADY_TAKE_" +
-      "REWARD\020\227N\0228\n3RETCODE_RET_LUNA_RITE_ACTIV" +
-      "ITY_SACRIFICE_NOT_ENOUGH\020\230N\022;\n6RETCODE_R" +
-      "ET_LUNA_RITE_ACTIVITY_SEARCHING_COND_NOT" +
-      "_MEET\020\231N\022/\n*RETCODE_RET_DIG_GADGET_CONFI" +
-      "G_ID_NOT_MATCH\020\237N\022*\n%RETCODE_RET_DIG_FIN" +
-      "D_NEAREST_POS_FAIL\020\240N\022*\n%RETCODE_RET_MUS" +
-      "IC_GAME_LEVEL_NOT_OPEN\020\245N\022,\n\'RETCODE_RET" +
-      "_MUSIC_GAME_LEVEL_NOT_UNLOCK\020\246N\022-\n(RETCO" +
-      "DE_RET_MUSIC_GAME_LEVEL_NOT_STARTED\020\247N\0222" +
-      "\n-RETCODE_RET_MUSIC_GAME_LEVEL_CONFIG_NO" +
-      "T_FOUND\020\250N\022.\n)RETCODE_RET_MUSIC_GAME_LEV" +
-      "EL_ID_NOT_MATCH\020\251N\022,\n\'RETCODE_RET_ROGUEL" +
-      "IKE_COIN_A_NOT_ENOUGH\020\257N\022,\n\'RETCODE_RET_" +
-      "ROGUELIKE_COIN_B_NOT_ENOUGH\020\260N\022,\n\'RETCOD" +
-      "E_RET_ROGUELIKE_COIN_C_NOT_ENOUGH\020\261N\022.\n)" +
-      "RETCODE_RET_ROGUELIKE_COIN_A_EXCEED_LIMI" +
-      "T\020\262N\022.\n)RETCODE_RET_ROGUELIKE_COIN_B_EXC" +
-      "EED_LIMIT\020\263N\022.\n)RETCODE_RET_ROGUELIKE_CO" +
-      "IN_C_EXCEED_LIMIT\020\264N\0220\n+RETCODE_RET_ROGU" +
-      "ELIKE_RUNE_COUNT_NOT_ENOUGH\020\265N\022/\n*RETCOD" +
-      "E_RET_ROGUELIKE_NOT_IN_ROGUE_DUNGEON\020\266N\022" +
-      ")\n$RETCODE_RET_ROGUELIKE_CELL_NOT_FOUND\020" +
-      "\267N\022.\n)RETCODE_RET_ROGUELIKE_CELL_TYPE_IN" +
-      "CORRECT\020\270N\0220\n+RETCODE_RET_ROGUELIKE_CELL" +
-      "_ALREADY_FINISHED\020\271N\022;\n6RETCODE_RET_ROGU" +
-      "ELIKE_DUNGEON_HAVE_UNFINISHED_PROGRESS\020\272" +
-      "N\022-\n(RETCODE_RET_ROGUELIKE_STAGE_NOT_FIN" +
-      "ISHED\020\273N\022<\n7RETCODE_RET_ROGUELIKE_STAGE_" +
-      "FIRST_PASS_REWARD_HAS_TAKEN\020\275N\0222\n-RETCOD" +
-      "E_RET_ROGUELIKE_ACTIVITY_CONTENT_CLOSED\020" +
-      "\276N\0229\n4RETCODE_RET_ROGUELIKE_DUNGEON_PRE_" +
-      "QUEST_NOT_FINISHED\020\277N\022+\n&RETCODE_RET_ROG" +
-      "UELIKE_DUNGEON_NOT_OPEN\020\300N\022+\n&RETCODE_RE" +
-      "T_ROGUELIKE_SPRINT_IS_BANNED\020\301N\0229\n4RETCO" +
-      "DE_RET_ROGUELIKE_DUNGEON_PRE_STAGE_NOT_F" +
-      "INISHED\020\302N\0227\n2RETCODE_RET_ROGUELIKE_ALL_" +
-      "AVATAR_DIE_CANNOT_RESUME\020\303N\022/\n*RETCODE_R" +
-      "ET_PLANT_FLOWER_ALREADY_TAKE_SEED\020\310N\0226\n1" +
-      "RETCODE_RET_PLANT_FLOWER_FRIEND_HAVE_FLO" +
-      "WER_LIMIT\020\311N\0228\n3RETCODE_RET_PLANT_FLOWER" +
-      "_CAN_GIVE_FLOWER_NOT_ENOUGH\020\312N\0225\n0RETCOD" +
-      "E_RET_PLANT_FLOWER_WISH_FLOWER_KINDS_LIM" +
-      "IT\020\313N\0224\n/RETCODE_RET_PLANT_FLOWER_HAVE_F" +
-      "LOWER_NOT_ENOUGH\020\314N\0228\n3RETCODE_RET_PLANT" +
-      "_FLOWER_FLOWER_COMBINATION_INVALID\020\315N\022(\n" +
-      "#RETCODE_RET_HACHI_DUNGEON_NOT_VALID\020\304N\022" +
-      "-\n(RETCODE_RET_HACHI_DUNGEON_STAGE_NOT_O" +
-      "PEN\020\305N\0220\n+RETCODE_RET_HACHI_DUNGEON_TEAM" +
-      "MATE_NOT_PASS\020\306N\022.\n)RETCODE_RET_WINTER_C" +
-      "AMP_COIN_A_NOT_ENOUGH\020\327N\022.\n)RETCODE_RET_" +
-      "WINTER_CAMP_COIN_B_NOT_ENOUGH\020\330N\0220\n+RETC" +
-      "ODE_RET_WINTER_CAMP_COIN_A_EXCEED_LIMIT\020" +
-      "\331N\0220\n+RETCODE_RET_WINTER_CAMP_COIN_B_EXC" +
-      "EED_LIMIT\020\332N\022,\n\'RETCODE_RET_WINTER_CAMP_" +
-      "WISH_ID_INVALID\020\333N\0225\n0RETCODE_RET_WINTER" +
-      "_CAMP_NOT_FOUND_RECV_ITEM_DATA\020\334N\0227\n2RET" +
-      "CODE_RET_WINTER_CAMP_FRIEND_ITEM_COUNT_O" +
-      "VERFLOW\020\335N\0225\n0RETCODE_RET_WINTER_CAMP_SE" +
-      "LECT_ITEM_DATA_INVALID\020\336N\022,\n\'RETCODE_RET" +
-      "_WINTER_CAMP_ITEM_LIST_EMPTY\020\337N\0221\n,RETCO" +
-      "DE_RET_WINTER_CAMP_REWARD_ALREADY_TAKEN\020" +
-      "\340N\022-\n(RETCODE_RET_WINTER_CAMP_STAGE_NOT_" +
-      "FINISH\020\341N\022+\n&RETCODE_RET_WINTER_CAMP_GAD" +
-      "GET_INVALID\020\342N\022/\n*RETCODE_RET_LANTERN_RI" +
-      "TE_COIN_A_NOT_ENOUGH\020\352N\022/\n*RETCODE_RET_L" +
-      "ANTERN_RITE_COIN_B_NOT_ENOUGH\020\353N\022/\n*RETC" +
-      "ODE_RET_LANTERN_RITE_COIN_C_NOT_ENOUGH\020\354" +
-      "N\0221\n,RETCODE_RET_LANTERN_RITE_COIN_A_EXC" +
-      "EED_LIMIT\020\355N\0221\n,RETCODE_RET_LANTERN_RITE" +
-      "_COIN_B_EXCEED_LIMIT\020\356N\0221\n,RETCODE_RET_L" +
-      "ANTERN_RITE_COIN_C_EXCEED_LIMIT\020\357N\0227\n2RE" +
-      "TCODE_RET_LANTERN_RITE_PROJECTION_CONTEN" +
-      "T_CLOSED\020\360N\0226\n1RETCODE_RET_LANTERN_RITE_" +
-      "PROJECTION_CAN_NOT_START\020\361N\022.\n)RETCODE_R" +
-      "ET_LANTERN_RITE_DUNGEON_NOT_OPEN\020\362N\0223\n.R" +
-      "ETCODE_RET_LANTERN_RITE_HAS_TAKEN_SKIN_R" +
-      "EWARD\020\363N\0228\n3RETCODE_RET_LANTERN_RITE_NOT" +
-      "_FINISHED_SKIN_WATCHERS\020\364N\0226\n1RETCODE_RE" +
-      "T_LANTERN_RITE_FIREWORKS_CONTENT_CLOSED\020" +
-      "\365N\022;\n6RETCODE_RET_LANTERN_RITE_FIREWORKS" +
-      "_CHALLENGE_NOT_START\020\366N\022:\n5RETCODE_RET_L" +
-      "ANTERN_RITE_FIREWORKS_REFORM_PARAM_ERROR" +
-      "\020\367N\0229\n4RETCODE_RET_LANTERN_RITE_FIREWORK" +
-      "S_REFORM_SKILL_LOCK\020\370N\022A\n<RETCODE_RET_LA" +
-      "NTERN_RITE_FIREWORKS_REFORM_STAMINA_NOT_" +
-      "ENOUGH\020\371N\022/\n*RETCODE_RET_POTION_ACTIVITY" +
-      "_STAGE_NOT_OPEN\020\376N\0220\n+RETCODE_RET_POTION" +
-      "_ACTIVITY_LEVEL_HAVE_PASS\020\377N\0223\n.RETCODE_" +
-      "RET_POTION_ACTIVITY_TEAM_NUM_INCORRECT\020\200" +
-      "O\022-\n(RETCODE_RET_POTION_ACTIVITY_AVATAR_" +
-      "IN_CD\020\201O\022+\n&RETCODE_RET_POTION_ACTIVITY_" +
-      "BUFF_IN_CD\020\202O\022/\n*RETCODE_RET_IRODORI_POE" +
-      "TRY_INVALID_LINE_ID\020\210O\0220\n+RETCODE_RET_IR" +
-      "ODORI_POETRY_INVALID_THEME_ID\020\211O\0227\n2RETC" +
-      "ODE_RET_IRODORI_POETRY_NOT_GET_ALL_INSPI" +
-      "RATION\020\212O\0227\n2RETCODE_RET_IRODORI_POETRY_" +
-      "INSPIRATION_REACH_LIMIE\020\213O\0226\n1RETCODE_RE" +
-      "T_IRODORI_POETRY_ENTITY_ALREADY_SCANNED\020" +
-      "\214O\0220\n+RETCODE_RET_ACTIVITY_BANNER_ALREAD" +
-      "Y_CLEARED\020\274P\022\'\n\"RETCODE_RET_IRODORI_CHES" +
-      "S_NOT_OPEN\020\275P\022-\n(RETCODE_RET_IRODORI_CHE" +
-      "SS_LEVEL_NOT_OPEN\020\276P\022+\n&RETCODE_RET_IROD" +
-      "ORI_CHESS_MAP_NOT_OPEN\020\277P\0227\n2RETCODE_RET" +
-      "_IRODORI_CHESS_MAP_CARD_ALREADY_EQUIPED\020" +
-      "\300P\0226\n1RETCODE_RET_IRODORI_CHESS_EQUIP_CA" +
-      "RD_EXCEED_LIMIT\020\301P\0223\n.RETCODE_RET_IRODOR" +
-      "I_CHESS_MAP_CARD_NOT_EQUIPED\020\302P\022;\n6RETCO" +
-      "DE_RET_IRODORI_CHESS_ENTER_FAIL_CARD_EXC" +
-      "EED_LIMIT\020\303P\0220\n+RETCODE_RET_ACTIVITY_FRI" +
-      "END_HAVE_GIFT_LIMIT\020\306P\0221\n,RETCODE_RET_GA" +
-      "CHA_ACTIVITY_HAVE_REWARD_LIMIT\020\313P\0220\n+RET" +
-      "CODE_RET_GACHA_ACTIVITY_HAVE_ROBOT_LIMIT" +
-      "\020\314P\0221\n,RETCODE_RET_SUMMER_TIME_V2_COIN_E" +
-      "XCEED_LIMIT\020\315P\022/\n*RETCODE_RET_SUMMER_TIM" +
-      "E_V2_COIN_NOT_ENOUGH\020\316P\0226\n1RETCODE_RET_S" +
-      "UMMER_TIME_V2_DUNGEON_STAGE_NOT_OPEN\020\317P\022" +
-      "9\n4RETCODE_RET_SUMMER_TIME_V2_PREV_DUNGE" +
-      "ON_NOT_COMPLETE\020\320P\022)\n$RETCODE_RET_ROGUE_" +
-      "DIARY_AVATAR_DEATH\020\356P\022)\n$RETCODE_RET_ROG" +
-      "UE_DIARY_AVATAR_TIRED\020\357P\022.\n)RETCODE_RET_" +
-      "ROGUE_DIARY_AVATAR_DUPLICATED\020\360P\022,\n\'RETC" +
-      "ODE_RET_ROGUE_DIARY_COIN_NOT_ENOUGH\020\361P\0226" +
-      "\n1RETCODE_RET_ROGUE_DIARY_VIRTUAL_COIN_E" +
-      "XCEED_LIMIT\020\362P\0224\n/RETCODE_RET_ROGUE_DIAR" +
-      "Y_VIRTUAL_COIN_NOT_ENOUGH\020\363P\022+\n&RETCODE_" +
-      "RET_ROGUE_DIARY_CONTENT_CLOSED\020\376P\0223\n.RET" +
-      "CODE_RET_GRAVEN_INNOCENCE_COIN_A_NOT_ENO" +
-      "UGH\020\214Q\0223\n.RETCODE_RET_GRAVEN_INNOCENCE_C" +
-      "OIN_B_NOT_ENOUGH\020\215Q\0225\n0RETCODE_RET_GRAVE" +
-      "N_INNOCENCE_COIN_A_EXCEED_LIMIT\020\216Q\0225\n0RE" +
-      "TCODE_RET_GRAVEN_INNOCENCE_COIN_B_EXCEED" +
-      "_LIMIT\020\217Q\022,\n\'RETCODE_RET_ISLAND_PARTY_ST" +
-      "AGE_NOT_OPEN\020\203Q\022*\n%RETCODE_RET_WIND_FIEL" +
-      "D_STAGE_NOT_OPEN\020\226Q\022\'\n\"RETCODE_RET_VINTA" +
-      "GE_CONTENT_CLOSED\020\234Q\022/\n*RETCODE_RET_VINT" +
-      "AGE_STORE_CONTENT_FINISHED\020\235Q\022-\n(RETCODE" +
-      "_RET_VINTAGE_STORE_ATTR_TOO_SMALL\020\236Q\022-\n(" +
-      "RETCODE_RET_VINTAGE_STORE_ATTR_TOO_LARGE" +
-      "\020\237Q\0220\n+RETCODE_RET_VINTAGE_STORE_CONTENT" +
-      "_INTERRUPT\020\240Q\0220\n+RETCODE_RET_VINTAGE_VIR" +
-      "TUAL_COIN_NOT_ENOUGH\020\241Q\0222\n-RETCODE_RET_V" +
-      "INTAGE_STORE_ATTR_LESS_THAN_ZERO\020\242Q\022\037\n\032R" +
-      "ETCODE_RET_NOT_IN_FISHING\020\371U\022!\n\034RETCODE_" +
-      "RET_FISH_STATE_ERROR\020\372U\022 \n\033RETCODE_RET_F" +
-      "ISH_BAIT_LIMIT\020\373U\022%\n RETCODE_RET_FISHING" +
-      "_MAX_DISTANCE\020\374U\022\"\n\035RETCODE_RET_FISHING_" +
-      "IN_COMBAT\020\375U\022)\n$RETCODE_RET_FISHING_BATT" +
-      "LE_TOO_SHORT\020\376U\022\037\n\032RETCODE_RET_FISH_GONE" +
-      "_AWAY\020\377U\022+\n&RETCODE_RET_CAN_NOT_EDIT_OTH" +
-      "ER_DUNGEON\020\253V\022(\n#RETCODE_RET_CUSTOM_DUNG" +
-      "EON_DISMATCH\020\254V\022\'\n\"RETCODE_RET_NO_CUSTOM" +
-      "_DUNGEON_DATA\020\255V\022*\n%RETCODE_RET_BUILD_CU" +
-      "STOM_DUNGEON_FAIL\020\256V\022/\n*RETCODE_RET_CUST" +
-      "OM_DUNGEON_ROOM_CHECK_FAIL\020\257V\022-\n(RETCODE" +
-      "_RET_CUSTOM_DUNGEON_SAVE_MAY_FAIL\020\260V\022&\n!" +
-      "RETCODE_RET_NOT_IN_CUSTOM_DUNGEON\020\261V\022-\n(" +
-      "RETCODE_RET_CUSTOM_DUNGEON_INTERNAL_FAIL" +
-      "\020\262V\022+\n&RETCODE_RET_CUSTOM_DUNGEON_CAN_NO" +
-      "T_TRY\020\263V\022-\n(RETCODE_RET_CUSTOM_DUNGEON_N" +
-      "O_START_ROOM\020\264V\022,\n\'RETCODE_RET_CUSTOM_DU" +
-      "NGEON_NO_ROOM_DATA\020\265V\0221\n,RETCODE_RET_CUS" +
-      "TOM_DUNGEON_SAVE_TOO_FREQUENT\020\266V\022-\n(RETC" +
-      "ODE_RET_CUSTOM_DUNGEON_NOT_SELF_PASS\020\267V\022" +
-      ")\n$RETCODE_RET_CUSTOM_DUNGEON_LACK_COIN\020" +
-      "\270V\022/\n*RETCODE_RET_CUSTOM_DUNGEON_NO_FINI" +
-      "SH_BRICK\020\271V\022,\n\'RETCODE_RET_CUSTOM_DUNGEO" +
-      "N_MULTI_FINISH\020\272V\022-\n(RETCODE_RET_CUSTOM_" +
-      "DUNGEON_NOT_PUBLISHED\020\273V\022*\n%RETCODE_RET_" +
-      "CUSTOM_DUNGEON_FULL_STORE\020\274V\022,\n\'RETCODE_" +
-      "RET_CUSTOM_DUNGEON_STORE_REPEAT\020\275V\0222\n-RE" +
-      "TCODE_RET_CUSTOM_DUNGEON_CAN_NOT_STORE_S" +
-      "ELF\020\276V\022-\n(RETCODE_RET_CUSTOM_DUNGEON_NOT" +
-      "_SAVE_SUCC\020\277V\0221\n,RETCODE_RET_CUSTOM_DUNG" +
-      "EON_CAN_NOT_LIKE_SELF\020\300V\022)\n$RETCODE_RET_" +
-      "CUSTOM_DUNGEON_NOT_FOUND\020\301V\022/\n*RETCODE_R" +
-      "ET_CUSTOM_DUNGEON_INVALID_SETTING\020\302V\0221\n," +
-      "RETCODE_RET_CUSTOM_DUNGEON_NO_FINISH_SET" +
-      "TING\020\303V\022,\n\'RETCODE_RET_CUSTOM_DUNGEON_SA" +
-      "VE_NOTHING\020\304V\022,\n\'RETCODE_RET_CUSTOM_DUNG" +
-      "EON_NOT_IN_GROUP\020\305V\022,\n\'RETCODE_RET_CUSTO" +
-      "M_DUNGEON_NOT_OFFICIAL\020\306V\022.\n)RETCODE_RET" +
-      "_CUSTOM_DUNGEON_LIFE_NUM_ERROR\020\307V\022,\n\'RET" +
-      "CODE_RET_CUSTOM_DUNGEON_NO_OPEN_ROOM\020\310V\022" +
-      "2\n-RETCODE_RET_CUSTOM_DUNGEON_BRICK_EXCE" +
-      "ED_LIMIT\020\311V\0223\n.RETCODE_RET_CUSTOM_DUNGEO" +
-      "N_OFFICIAL_NOT_UNLOCK\020\312V\022.\n)RETCODE_RET_" +
-      "CAN_NOT_EDIT_OFFICIAL_SETTING\020\313V\022+\n&RETC" +
-      "ODE_RET_CUSTOM_DUNGEON_BAN_PUBLISH\020\314V\022.\n" +
-      ")RETCODE_RET_CUSTOM_DUNGEON_CAN_NOT_REPL" +
-      "AY\020\315V\022.\n)RETCODE_RET_CUSTOM_DUNGEON_NOT_" +
-      "OPEN_GROUP\020\316V\022,\n\'RETCODE_RET_CUSTOM_DUNG" +
-      "EON_MAX_EDIT_NUM\020\317V\0221\n,RETCODE_RET_CUSTO" +
-      "M_DUNGEON_CAN_NOT_OUT_STUCK\020\320V\022\'\n\"RETCOD" +
-      "E_RET_CUSTOM_DUNGEON_MAX_TAG\020\321V\022+\n&RETCO" +
-      "DE_RET_CUSTOM_DUNGEON_INVALID_TAG\020\322V\022(\n#" +
-      "RETCODE_RET_CUSTOM_DUNGEON_MAX_COST\020\323V\0224" +
-      "\n/RETCODE_RET_CUSTOM_DUNGEON_REQUEST_TOO" +
-      "_FREQUENT\020\324V\022(\n#RETCODE_RET_CUSTOM_DUNGE" +
-      "ON_NOT_OPEN\020\325V\022\"\n\035RETCODE_RET_SHARE_CD_I" +
-      "D_ERROR\020\335V\022%\n RETCODE_RET_SHARE_CD_INDEX" +
-      "_ERROR\020\336V\022\037\n\032RETCODE_RET_SHARE_CD_IN_CD\020" +
-      "\337V\022*\n%RETCODE_RET_SHARE_CD_TOKEN_NOT_ENO" +
-      "UGH\020\340V\022\035\n\030RETCODE_RET_UGC_DISMATCH\020\217W\022#\n" +
-      "\036RETCODE_RET_UGC_DATA_NOT_FOUND\020\220W\022$\n\037RE" +
-      "TCODE_RET_UGC_BRIEF_NOT_FOUND\020\221W\022\035\n\030RETC" +
-      "ODE_RET_UGC_DISABLED\020\222W\022\034\n\027RETCODE_RET_U" +
-      "GC_LIMITED\020\223W\022\033\n\026RETCODE_RET_UGC_LOCKED\020" +
-      "\224W\022\035\n\030RETCODE_RET_UGC_NOT_AUTH\020\225W\022\035\n\030RET" +
-      "CODE_RET_UGC_NOT_OPEN\020\226W\022 \n\033RETCODE_RET_" +
-      "UGC_BAN_PUBLISH\020\227W\022.\n)RETCODE_RET_COMPOU" +
-      "ND_BOOST_ITEM_NOT_EXIST\020\301W\0220\n+RETCODE_RE" +
-      "T_COMPOUND_BOOST_TARGET_NOT_EXIST\020\302W\022+\n&" +
-      "RETCODE_RET_QUICK_HIT_TREE_EMPTY_TREES\020\313" +
-      "WB\033\n\031emu.grasscutter.net.protob\006proto3"
+      "\n\rRetcode.proto*\355\322\002\n\007Retcode\022\014\n\010RET_SUCC" +
+      "\020\000\022\025\n\010RET_FAIL\020\377\377\377\377\377\377\377\377\377\001\022\021\n\rRET_SVR_ERR" +
+      "OR\020\001\022\025\n\021RET_UNKNOWN_ERROR\020\002\022\020\n\014RET_FREQU" +
+      "ENT\020\003\022\032\n\026RET_NODE_FORWARD_ERROR\020\004\022\030\n\024RET" +
+      "_NOT_FOUND_CONFIG\020\005\022\023\n\017RET_SYSTEM_BUSY\020\006" +
+      "\022\023\n\017RET_GM_UID_BIND\020\007\022\021\n\rRET_FORBIDDEN\020\010" +
+      "\022\025\n\021RET_STOP_REGISTER\020\n\022\023\n\017RET_STOP_SERV" +
+      "ER\020\013\022\034\n\030RET_ACCOUNT_VEIRFY_ERROR\020\014\022\026\n\022RE" +
+      "T_ACCOUNT_FREEZE\020\r\022\024\n\020RET_REPEAT_LOGIN\020\016" +
+      "\022\034\n\030RET_CLIENT_VERSION_ERROR\020\017\022\023\n\017RET_TO" +
+      "KEN_ERROR\020\020\022\031\n\025RET_ACCOUNT_NOT_EXIST\020\021\022\030" +
+      "\n\024RET_WAIT_OTHER_LOGIN\020\022\022\025\n\021RET_ANOTHER_" +
+      "LOGIN\020\023\022\033\n\027RET_CLIENT_FORCE_UPDATE\020\024\022\021\n\r" +
+      "RET_BLACK_UID\020\025\022\025\n\021RET_LOGIN_DB_FAIL\020\026\022\027" +
+      "\n\023RET_LOGIN_INIT_FAIL\020\027\022\027\n\023RET_MYSQL_DUP" +
+      "LICATE\020\030\022\022\n\016RET_MAX_PLAYER\020\031\022\023\n\017RET_ANTI" +
+      "_ADDICT\020\032\022#\n\037RET_PS_PLAYER_WITHOUT_ONLIN" +
+      "E_ID\020\033\022\033\n\027RET_ONLINE_ID_NOT_FOUND\020\034\022\032\n\026R" +
+      "ET_ONLNE_ID_NOT_MATCH\020\035\022\030\n\024RET_REGISTER_" +
+      "IS_FULL\020\036\022\030\n\024RET_CHECKSUM_INVALID\020\037\022\031\n\025R" +
+      "ET_BLACK_REGISTER_IP\020 \022\034\n\030RET_EXCEED_REG" +
+      "ISTER_RATE\020!\022\030\n\024RET_UNKNOWN_PLATFORM\020\"\022\031" +
+      "\n\025RET_TOKEN_PARAM_ERROR\020#\022\032\n\026RET_ANTI_OF" +
+      "FLINE_ERROR\020$\022\026\n\022RET_BLACK_LOGIN_IP\020%\022!\n" +
+      "\035RET_GET_TOKEN_SESSION_HAS_UID\020&\022\031\n\025RET_" +
+      "ENVIRONMENT_ERROR\020\'\022&\n\"RET_CHECK_CLIENT_" +
+      "VERSION_HASH_FAIL\020(\022\037\n\033RET_MINOR_REGISTE" +
+      "R_FOBIDDEN\020)\022\036\n\032RET_SECURITY_LIBRARY_ERR" +
+      "OR\020*\022\024\n\020RET_AVATAR_IN_CD\020e\022\030\n\024RET_AVATAR" +
+      "_NOT_ALIVE\020f\022\033\n\027RET_AVATAR_NOT_ON_SCENE\020" +
+      "g\022\033\n\027RET_CAN_NOT_FIND_AVATAR\020h\022\036\n\032RET_CA" +
+      "N_NOT_DEL_CUR_AVATAR\020i\022\030\n\024RET_DUPLICATE_" +
+      "AVATAR\020j\022\032\n\026RET_AVATAR_IS_SAME_ONE\020k\022\036\n\032" +
+      "RET_AVATAR_LEVEL_LESS_THAN\020l\022%\n!RET_AVAT" +
+      "AR_CAN_NOT_CHANGE_ELEMENT\020m\022$\n RET_AVATA" +
+      "R_BREAK_LEVEL_LESS_THAN\020n\022!\n\035RET_AVATAR_" +
+      "ON_MAX_BREAK_LEVEL\020o\022\037\n\033RET_AVATAR_ID_AL" +
+      "READY_EXIST\020p\022\027\n\023RET_AVATAR_NOT_DEAD\020q\022\032" +
+      "\n\026RET_AVATAR_IS_REVIVING\020r\022\027\n\023RET_AVATAR" +
+      "_ID_ERROR\020s\022#\n\037RET_REPEAT_SET_PLAYER_BOR" +
+      "N_DATA\020t\022\036\n\032RET_PLAYER_LEVEL_LESS_THAN\020u" +
+      "\022 \n\034RET_AVATAR_LIMIT_LEVEL_ERROR\020v\022\034\n\030RE" +
+      "T_CUR_AVATAR_NOT_ALIVE\020w\022\031\n\025RET_CAN_NOT_" +
+      "FIND_TEAM\020x\022\035\n\031RET_CAN_NOT_FIND_CUR_TEAM" +
+      "\020y\022 \n\034RET_AVATAR_NOT_EXIST_IN_TEAM\020z\022+\n\'" +
+      "RET_CAN_NOT_REMOVE_CUR_AVATAR_FROM_TEAM\020" +
+      "{\022.\n*RET_CAN_NOT_USE_REVIVE_ITEM_FOR_CUR" +
+      "_AVATAR\020|\022\036\n\032RET_TEAM_COST_EXCEED_LIMIT\020" +
+      "}\022!\n\035RET_TEAM_AVATAR_IN_EXPEDITION\020~\022&\n\"" +
+      "RET_TEAM_CAN_NOT_CHOSE_REPLACE_USE\020\177\022\031\n\024" +
+      "RET_AVATAR_IN_COMBAT\020\200\001\022\034\n\027RET_NICKNAME_" +
+      "UTF8_ERROR\020\202\001\022\032\n\025RET_NICKNAME_TOO_LONG\020\203" +
+      "\001\022\036\n\031RET_NICKNAME_WORD_ILLEGAL\020\204\001\022!\n\034RET" +
+      "_NICKNAME_TOO_MANY_DIGITS\020\205\001\022\032\n\025RET_NICK" +
+      "NAME_IS_EMPTY\020\206\001\022\037\n\032RET_NICKNAME_MONTHLY" +
+      "_LIMIT\020\207\001\022\035\n\030RET_NICKNAME_NOT_CHANGED\020\210\001" +
+      "\022\032\n\025RET_PLAYER_NOT_ONLINE\020\214\001\022\034\n\027RET_OPEN" +
+      "_STATE_NOT_OPEN\020\215\001\022\027\n\022RET_FEATURE_CLOSED" +
+      "\020\216\001\022%\n RET_AVATAR_EXPEDITION_AVATAR_DIE\020" +
+      "\230\001\022&\n!RET_AVATAR_EXPEDITION_COUNT_LIMIT\020" +
+      "\231\001\022&\n!RET_AVATAR_EXPEDITION_MAIN_FORBID\020" +
+      "\232\001\022\'\n\"RET_AVATAR_EXPEDITION_TRIAL_FORBID" +
+      "\020\233\001\022\032\n\025RET_TEAM_NAME_ILLEGAL\020\234\001\022\032\n\025RET_I" +
+      "S_NOT_IN_STANDBY\020\235\001\022\026\n\021RET_IS_IN_DUNGEON" +
+      "\020\236\001\022 \n\033RET_IS_IN_LOCK_AVATAR_QUEST\020\237\001\022\036\n" +
+      "\031RET_IS_USING_TRIAL_AVATAR\020\240\001\022\035\n\030RET_IS_" +
+      "USING_TEMP_AVATAR\020\241\001\022\031\n\024RET_NOT_HAS_FLYC" +
+      "LOAK\020\242\001\022\"\n\035RET_FETTER_REWARD_ALREADY_GOT" +
+      "\020\243\001\022\'\n\"RET_FETTER_REWARD_LEVEL_NOT_ENOUG" +
+      "H\020\244\001\022%\n RET_WORLD_LEVEL_ADJUST_MIN_LEVEL" +
+      "\020\245\001\022\036\n\031RET_WORLD_LEVEL_ADJUST_CD\020\246\001\022\030\n\023R" +
+      "ET_NOT_HAS_COSTUME\020\247\001\022\035\n\030RET_COSTUME_AVA" +
+      "TAR_ERROR\020\250\001\022#\n\036RET_FLYCLOAK_PLATFORM_TY" +
+      "PE_ERR\020\251\001\022\024\n\017RET_IN_TRANSFER\020\252\001\022\032\n\025RET_I" +
+      "S_IN_LOCK_AVATAR\020\253\001\022\031\n\024RET_FULL_BACKUP_T" +
+      "EAM\020\254\001\022!\n\034RET_BACKUP_TEAM_ID_NOT_VALID\020\255" +
+      "\001\022 \n\033RET_BACKUP_TEAM_IS_CUR_TEAM\020\256\001\022\034\n\027R" +
+      "ET_AVATAR_RENAME_IN_CD\020\257\001\022\037\n\032RET_AVATAR_" +
+      "RENAME_IN_AUDIT\020\260\001\022\'\n\"RET_AVATAR_RENAME_" +
+      "IN_IP_BLACK_LIST\020\261\001\022\024\n\017RET_FLOAT_ERROR\020\311" +
+      "\001\022\026\n\021RET_NPC_NOT_EXIST\020\255\002\022\024\n\017RET_NPC_TOO" +
+      "_FAR\020\256\002\022\031\n\024RET_NOT_CURRENT_TALK\020\257\002\022\030\n\023RE" +
+      "T_NPC_CREATE_FAIL\020\260\002\022\026\n\021RET_NPC_MOVE_FAI" +
+      "L\020\261\002\022\030\n\023RET_QUEST_NOT_EXIST\020\221\003\022\026\n\021RET_QU" +
+      "EST_IS_FAIL\020\222\003\022\034\n\027RET_QUEST_CONTENT_ERRO" +
+      "R\020\223\003\022\036\n\031RET_BARGAIN_NOT_ACTIVATED\020\224\003\022\031\n\024" +
+      "RET_BARGAIN_FINISHED\020\225\003\022\'\n\"RET_INFERENCE" +
+      "_ASSOCIATE_WORD_ERROR\020\226\003\022,\n\'RET_INFERENC" +
+      "E_SUBMIT_WORD_NO_CONCLUSION\020\227\003\022\033\n\026RET_PO" +
+      "INT_NOT_UNLOCKED\020\365\003\022\026\n\021RET_POINT_TOO_FAR" +
+      "\020\366\003\022\036\n\031RET_POINT_ALREAY_UNLOCKED\020\367\003\022\031\n\024R" +
+      "ET_ENTITY_NOT_EXIST\020\370\003\022\031\n\024RET_ENTER_SCEN" +
+      "E_FAIL\020\371\003\022\036\n\031RET_PLAYER_IS_ENTER_SCENE\020\372" +
+      "\003\022\027\n\022RET_CITY_MAX_LEVEL\020\373\003\022\024\n\017RET_AREA_L" +
+      "OCKED\020\374\003\022\030\n\023RET_JOIN_OTHER_WAIT\020\375\003\022\037\n\032RE" +
+      "T_WEATHER_AREA_NOT_FOUND\020\376\003\022\032\n\025RET_WEATH" +
+      "ER_IS_LOCKED\020\377\003\022\032\n\025RET_NOT_IN_SELF_SCENE" +
+      "\020\200\004\022\030\n\023RET_GROUP_NOT_EXIST\020\201\004\022\032\n\025RET_MAR" +
+      "K_NAME_ILLEGAL\020\202\004\022\034\n\027RET_MARK_ALREADY_EX" +
+      "ISTS\020\203\004\022\026\n\021RET_MARK_OVERFLOW\020\204\004\022\030\n\023RET_M" +
+      "ARK_NOT_EXISTS\020\205\004\022\032\n\025RET_MARK_UNKNOWN_TY" +
+      "PE\020\206\004\022\033\n\026RET_MARK_NAME_TOO_LONG\020\207\004\022\026\n\021RE" +
+      "T_DISTANCE_LONG\020\210\004\022\"\n\035RET_ENTER_SCENE_TO" +
+      "KEN_INVALID\020\211\004\022\033\n\026RET_NOT_IN_WORLD_SCENE" +
+      "\020\212\004\022\034\n\027RET_ANY_GALLERY_STARTED\020\213\004\022\032\n\025RET" +
+      "_GALLERY_NOT_START\020\214\004\022.\n)RET_GALLERY_INT" +
+      "ERRUPT_ONLY_ON_SINGLE_MODE\020\215\004\022!\n\034RET_GAL" +
+      "LERY_CANNOT_INTERRUPT\020\216\004\022\037\n\032RET_GALLERY_" +
+      "WORLD_NOT_MEET\020\217\004\022\037\n\032RET_GALLERY_SCENE_N" +
+      "OT_MEET\020\220\004\022!\n\034RET_CUR_PLAY_CANNOT_TRANSF" +
+      "ER\020\221\004\022&\n!RET_CANT_USE_WIDGET_IN_HOME_SCE" +
+      "NE\020\222\004\022\036\n\031RET_SCENE_GROUP_NOT_MATCH\020\223\004\022\030\n" +
+      "\023RET_POS_ROT_INVALID\020\247\004\022\036\n\031RET_MARK_INVA" +
+      "LID_SCENE_ID\020\250\004\022*\n%RET_INVALID_SCENE_TO_" +
+      "USE_ANCHOR_POINT\020\251\004\022\036\n\031RET_ENTER_HOME_SC" +
+      "ENE_FAIL\020\252\004\022\032\n\025RET_CUR_SCENE_IS_NULL\020\253\004\022" +
+      "\027\n\022RET_GROUP_ID_ERROR\020\254\004\022$\n\037RET_GALLERY_" +
+      "INTERRUPT_NOT_OWNER\020\255\004\022\032\n\025RET_NO_SPRING_" +
+      "IN_AREA\020\256\004\022\032\n\025RET_AREA_NOT_IN_SCENE\020\257\004\022\030" +
+      "\n\023RET_INVALID_CITY_ID\020\260\004\022\031\n\024RET_INVALID_" +
+      "SCENE_ID\020\261\004\022 \n\033RET_DEST_SCENE_IS_NOT_ALL" +
+      "OW\020\262\004\022\037\n\032RET_LEVEL_TAG_SWITCH_IN_CD\020\263\004\022 " +
+      "\n\033RET_LEVEL_TAG_ALREADY_EXIST\020\264\004\022\030\n\023RET_" +
+      "INVALID_AREA_ID\020\265\004\022\027\n\022RET_ITEM_NOT_EXIST" +
+      "\020\331\004\022\037\n\032RET_PACK_EXCEED_MAX_WEIGHT\020\332\004\022\032\n\025" +
+      "RET_ITEM_NOT_DROPABLE\020\333\004\022\030\n\023RET_ITEM_NOT" +
+      "_USABLE\020\334\004\022\037\n\032RET_ITEM_INVALID_USE_COUNT" +
+      "\020\335\004\022 \n\033RET_ITEM_INVALID_DROP_COUNT\020\336\004\022\033\n" +
+      "\026RET_ITEM_ALREADY_EXIST\020\337\004\022\031\n\024RET_ITEM_I" +
+      "N_COOLDOWN\020\340\004\022\036\n\031RET_ITEM_COUNT_NOT_ENOU" +
+      "GH\020\341\004\022\034\n\027RET_ITEM_INVALID_TARGET\020\342\004\022\031\n\024R" +
+      "ET_RECIPE_NOT_EXIST\020\343\004\022\026\n\021RET_RECIPE_LOC" +
+      "KED\020\344\004\022\030\n\023RET_RECIPE_UNLOCKED\020\345\004\022\034\n\027RET_" +
+      "COMPOUND_QUEUE_FULL\020\346\004\022\034\n\027RET_COMPOUND_N" +
+      "OT_FINISH\020\347\004\022\032\n\025RET_MAIL_ITEM_NOT_GET\020\350\004" +
+      "\022\032\n\025RET_ITEM_EXCEED_LIMIT\020\351\004\022\033\n\026RET_AVAT" +
+      "AR_CAN_NOT_USE\020\352\004\022\037\n\032RET_ITEM_NEED_PLAYE" +
+      "R_LEVEL\020\353\004\022\034\n\027RET_RECIPE_NOT_AUTO_QTE\020\354\004" +
+      "\022\034\n\027RET_COMPOUND_BUSY_QUEUE\020\355\004\022\030\n\023RET_NE" +
+      "ED_MORE_SCOIN\020\356\004\022\036\n\031RET_SKILL_DEPOT_NOT_" +
+      "FOUND\020\357\004\022\031\n\024RET_HCOIN_NOT_ENOUGH\020\360\004\022\031\n\024R" +
+      "ET_SCOIN_NOT_ENOUGH\020\361\004\022\033\n\026RET_HCOIN_EXCE" +
+      "ED_LIMIT\020\362\004\022\033\n\026RET_SCOIN_EXCEED_LIMIT\020\363\004" +
+      "\022\025\n\020RET_MAIL_EXPIRED\020\364\004\022\031\n\024RET_REWARD_HA" +
+      "S_TAKEN\020\365\004\022 \n\033RET_COMBINE_COUNT_TOO_LARG" +
+      "E\020\366\004\022\032\n\025RET_GIVING_ITEM_WRONG\020\367\004\022\033\n\026RET_" +
+      "GIVING_IS_FINISHED\020\370\004\022\033\n\026RET_GIVING_NOT_" +
+      "ACTIVED\020\371\004\022\031\n\024RET_FORGE_QUEUE_FULL\020\372\004\022\035\n" +
+      "\030RET_FORGE_QUEUE_CAPACITY\020\373\004\022\036\n\031RET_FORG" +
+      "E_QUEUE_NOT_FOUND\020\374\004\022\032\n\025RET_FORGE_QUEUE_" +
+      "EMPTY\020\375\004\022\031\n\024RET_NOT_SUPPORT_ITEM\020\376\004\022\023\n\016R" +
+      "ET_ITEM_EMPTY\020\377\004\022\035\n\030RET_VIRTUAL_EXCEED_L" +
+      "IMIT\020\200\005\022\036\n\031RET_MATERIAL_EXCEED_LIMIT\020\201\005\022" +
+      "\033\n\026RET_EQUIP_EXCEED_LIMIT\020\202\005\022\"\n\035RET_ITEM" +
+      "_SHOULD_HAVE_NO_LEVEL\020\203\005\022*\n%RET_WEAPON_P" +
+      "ROMOTE_LEVEL_EXCEED_LIMIT\020\204\005\022\035\n\030RET_WEAP" +
+      "ON_LEVEL_INVALID\020\205\005\022\031\n\024RET_UNKNOW_ITEM_T" +
+      "YPE\020\206\005\022\033\n\026RET_ITEM_COUNT_IS_ZERO\020\207\005\022\030\n\023R" +
+      "ET_ITEM_IS_EXPIRED\020\210\005\022!\n\034RET_ITEM_EXCEED" +
+      "_OUTPUT_LIMIT\020\211\005\022\033\n\026RET_EQUIP_LEVEL_HIGH" +
+      "ER\020\212\005\022&\n!RET_EQUIP_CAN_NOT_WAKE_OFF_WEAP" +
+      "ON\020\213\005\022\036\n\031RET_EQUIP_HAS_BEEN_WEARED\020\214\005\022!\n" +
+      "\034RET_EQUIP_WEARED_CANNOT_DROP\020\215\005\022\031\n\024RET_" +
+      "AWAKEN_LEVEL_MAX\020\216\005\022\031\n\024RET_MCOIN_NOT_ENO" +
+      "UGH\020\217\005\022\033\n\026RET_MCOIN_EXCEED_LIMIT\020\220\005\022\031\n\024R" +
+      "ET_RESIN_NOT_ENOUGH\020\224\005\022\033\n\026RET_RESIN_EXCE" +
+      "ED_LIMIT\020\225\005\022\034\n\027RET_RESIN_OPENSTATE_OFF\020\226" +
+      "\005\022$\n\037RET_RESIN_BOUGHT_COUNT_EXCEEDED\020\227\005\022" +
+      "*\n%RET_RESIN_CARD_DAILY_REWARD_HAS_TAKEN" +
+      "\020\230\005\022\033\n\026RET_RESIN_CARD_EXPIRED\020\231\005\022\034\n\027RET_" +
+      "AVATAR_CAN_NOT_COOK\020\232\005\022\031\n\024RET_ATTACH_AVA" +
+      "TAR_CD\020\233\005\022#\n\036RET_AUTO_RECOVER_OPENSTATE_" +
+      "OFF\020\234\005\022+\n&RET_AUTO_RECOVER_BOUGHT_COUNT_" +
+      "EXCEEDED\020\235\005\022\032\n\025RET_RESIN_GAIN_FAILED\020\236\005\022" +
+      "$\n\037RET_WIDGET_ORNAMENTS_TYPE_ERROR\020\237\005\022\"\n" +
+      "\035RET_ALL_TARGET_SATIATION_FULL\020\240\005\022$\n\037RET" +
+      "_FORGE_WORLD_LEVEL_NOT_MATCH\020\241\005\022\037\n\032RET_F" +
+      "ORGE_POINT_NOT_ENOUGH\020\242\005\022!\n\034RET_WIDGET_A" +
+      "NCHOR_POINT_FULL\020\243\005\022&\n!RET_WIDGET_ANCHOR" +
+      "_POINT_NOT_FOUND\020\244\005\022%\n RET_ALL_BONFIRE_E" +
+      "XCEED_MAX_COUNT\020\245\005\022!\n\034RET_BONFIRE_EXCEED" +
+      "_MAX_COUNT\020\246\005\022\035\n\030RET_LUNCH_BOX_DATA_ERRO" +
+      "R\020\247\005\022!\n\034RET_INVALID_QUICK_USE_WIDGET\020\250\005\022" +
+      "$\n\037RET_INVALID_REPLACE_RESIN_COUNT\020\251\005\022\'\n" +
+      "\"RET_PREV_DETECTED_GATHER_NOT_FOUND\020\252\005\022\036" +
+      "\n\031RET_GOT_ALL_ONEOFF_GAHTER\020\253\005\022#\n\036RET_IN" +
+      "VALID_WIDGET_MATERIAL_ID\020\254\005\022)\n$RET_WIDGE" +
+      "T_DETECTOR_NO_HINT_TO_CLEAR\020\255\005\022,\n\'RET_WI" +
+      "DGET_ALREADY_WITHIN_NEARBY_RADIUS\020\256\005\022,\n\'" +
+      "RET_WIDGET_CLIENT_COLLECTOR_NEED_POINTS\020" +
+      "\257\005\022\031\n\024RET_WIDGET_IN_COMBAT\020\260\005\022!\n\034RET_WID" +
+      "GET_NOT_SET_QUICK_USE\020\261\005\022\036\n\031RET_ALREADY_" +
+      "ATTACH_WIDGET\020\262\005\022\030\n\023RET_EQUIP_IS_LOCKED\020" +
+      "\263\005\022\030\n\023RET_FORGE_IS_LOCKED\020\264\005\022\032\n\025RET_COMB" +
+      "INE_IS_LOCKED\020\265\005\022!\n\034RET_FORGE_OUTPUT_STA" +
+      "CK_LIMIT\020\266\005\022\037\n\032RET_ALREADY_DETTACH_WIDGE" +
+      "T\020\267\005\022(\n#RET_GADGET_BUILDER_EXCEED_MAX_CO" +
+      "UNT\020\270\005\022/\n*RET_REUNION_PRIVILEGE_RESIN_TY" +
+      "PE_IS_NORMAL\020\271\005\022(\n#RET_BONUS_COUNT_EXCEE" +
+      "D_DOUBLE_LIMIT\020\272\005\022(\n#RET_RELIQUARY_DECOM" +
+      "POSE_PARAM_ERROR\020\273\005\022&\n!RET_ITEM_COMBINE_" +
+      "COUNT_NOT_ENOUGH\020\274\005\022\030\n\023RET_GOODS_NOT_EXI" +
+      "ST\020\275\005\022\"\n\035RET_GOODS_MATERIAL_NOT_ENOUGH\020\276" +
+      "\005\022\032\n\025RET_GOODS_NOT_IN_TIME\020\277\005\022!\n\034RET_GOO" +
+      "DS_BUY_NUM_NOT_ENOUGH\020\300\005\022\034\n\027RET_GOODS_BU" +
+      "Y_NUM_ERROR\020\301\005\022\026\n\021RET_SHOP_NOT_OPEN\020\302\005\022\037" +
+      "\n\032RET_SHOP_CONTENT_NOT_MATCH\020\303\005\022\"\n\035RET_S" +
+      "HOP_BATCH_BUY_SHOP_LIMIT\020\304\005\022#\n\036RET_SHOP_" +
+      "BATCH_BUY_COUNT_LIMIT\020\305\005\022\027\n\022RET_CHAT_FOR" +
+      "BIDDEN\020\236\006\022\020\n\013RET_CHAT_CD\020\237\006\022\030\n\023RET_CHAT_" +
+      "FREQUENTLY\020\240\006\022\031\n\024RET_GADGET_NOT_EXIST\020\241\006" +
+      "\022\037\n\032RET_GADGET_NOT_INTERACTIVE\020\242\006\022\036\n\031RET" +
+      "_GADGET_NOT_GATHERABLE\020\243\006\022\030\n\023RET_CHEST_I" +
+      "S_LOCKED\020\244\006\022\033\n\026RET_GADGET_CREATE_FAIL\020\245\006" +
+      "\022!\n\034RET_WORKTOP_OPTION_NOT_EXIST\020\246\006\022!\n\034R" +
+      "ET_GADGET_STATUE_NOT_ACTIVE\020\247\006\022\035\n\030RET_GA" +
+      "DGET_STATUE_OPENED\020\250\006\022$\n\037RET_BOSS_CHEST_" +
+      "NO_QUALIFICATION\020\251\006\022\"\n\035RET_BOSS_CHEST_LI" +
+      "FE_TIME_OVER\020\252\006\022\"\n\035RET_BOSS_CHEST_WEEK_N" +
+      "UM_LIMIT\020\253\006\022%\n RET_BOSS_CHEST_GUEST_WORL" +
+      "D_LEVEL\020\254\006\022\035\n\030RET_BOSS_CHEST_HAS_TAKEN\020\255" +
+      "\006\022\'\n\"RET_BLOSSOM_CHEST_NO_QUALIFICATION\020" +
+      "\256\006\022%\n RET_BLOSSOM_CHEST_LIFE_TIME_OVER\020\257" +
+      "\006\022 \n\033RET_BLOSSOM_CHEST_HAS_TAKEN\020\260\006\022(\n#R" +
+      "ET_BLOSSOM_CHEST_GUEST_WORLD_LEVEL\020\261\006\022(\n" +
+      "#RET_MP_PLAY_REWARD_NO_QUALIFICATION\020\262\006\022" +
+      "!\n\034RET_MP_PLAY_REWARD_HAS_TAKEN\020\263\006\022(\n#RE" +
+      "T_GENERAL_REWARD_NO_QUALIFICATION\020\264\006\022&\n!" +
+      "RET_GENERAL_REWARD_LIFE_TIME_OVER\020\265\006\022!\n\034" +
+      "RET_GENERAL_REWARD_HAS_TAKEN\020\266\006\022\033\n\026RET_G" +
+      "ADGET_NOT_VEHICLE\020\267\006\022\036\n\031RET_VEHICLE_SLOT" +
+      "_OCCUPIED\020\270\006\022\027\n\022RET_NOT_IN_VEHICLE\020\271\006\022\035\n" +
+      "\030RET_CREATE_VEHICLE_IN_CD\020\272\006\022#\n\036RET_CREA" +
+      "TE_VEHICLE_POS_INVALID\020\273\006\022!\n\034RET_VEHICLE" +
+      "_POINT_NOT_UNLOCK\020\274\006\022&\n!RET_GADGET_INTER" +
+      "ACT_COND_NOT_MEET\020\275\006\022$\n\037RET_GADGET_INTER" +
+      "ACT_PARAM_ERROR\020\276\006\022*\n%RET_GADGET_CUSTOM_" +
+      "COMBINATION_INVALID\020\277\006\022+\n&RET_DESHRET_OB" +
+      "ELISK_DUPLICATE_INTERACT\020\300\006\022\'\n\"RET_DESHR" +
+      "ET_OBELISK_NO_AVAIL_CHEST\020\301\006\022\027\n\022RET_ACTI" +
+      "VITY_CLOSE\020\334\006\022\034\n\027RET_ACTIVITY_ITEM_ERROR" +
+      "\020\335\006\022)\n$RET_ACTIVITY_CONTRIBUTION_NOT_ENO" +
+      "UGH\020\336\006\022\"\n\035RET_SEA_LAMP_PHASE_NOT_FINISH\020" +
+      "\337\006\022\037\n\032RET_SEA_LAMP_FLY_NUM_LIMIT\020\340\006\022\'\n\"R" +
+      "ET_SEA_LAMP_FLY_LAMP_WORD_ILLEGAL\020\341\006\022&\n!" +
+      "RET_ACTIVITY_WATCHER_REWARD_TAKEN\020\342\006\022-\n(" +
+      "RET_ACTIVITY_WATCHER_REWARD_NOT_FINISHED" +
+      "\020\343\006\022#\n\036RET_SALESMAN_ALREADY_DELIVERED\020\344\006" +
+      "\022)\n$RET_SALESMAN_REWARD_COUNT_NOT_ENOUGH" +
+      "\020\345\006\022\"\n\035RET_SALESMAN_POSITION_INVALID\020\346\006\022" +
+      "%\n RET_DELIVER_NOT_FINISH_ALL_QUEST\020\347\006\022*" +
+      "\n%RET_DELIVER_ALREADY_TAKE_DAILY_REWARD\020" +
+      "\350\006\022$\n\037RET_ASTER_PROGRESS_EXCEED_LIMIT\020\351\006" +
+      "\022\"\n\035RET_ASTER_CREDIT_EXCEED_LIMIT\020\352\006\022!\n\034" +
+      "RET_ASTER_TOKEN_EXCEED_LIMIT\020\353\006\022 \n\033RET_A" +
+      "STER_CREDIT_NOT_ENOUGH\020\354\006\022\037\n\032RET_ASTER_T" +
+      "OKEN_NOT_ENOUGH\020\355\006\022\'\n\"RET_ASTER_SPECIAL_" +
+      "REWARD_HAS_TAKEN\020\356\006\022*\n%RET_FLIGHT_GROUP_" +
+      "ACTIVITY_NOT_STARTED\020\357\006\022/\n*RET_ASTER_MID" +
+      "_PREVIOUS_BATTLE_NOT_FINISHED\020\360\006\0225\n0RET_" +
+      "DRAGON_SPINE_SHIMMERING_ESSENCE_EXCEED_L" +
+      "IMIT\020\361\006\022/\n*RET_DRAGON_SPINE_WARM_ESSENCE" +
+      "_EXCEED_LIMIT\020\362\006\0223\n.RET_DRAGON_SPINE_WON" +
+      "DROUS_ESSENCE_EXCEED_LIMIT\020\363\006\0223\n.RET_DRA" +
+      "GON_SPINE_SHIMMERING_ESSENCE_NOT_ENOUGH\020" +
+      "\364\006\022-\n(RET_DRAGON_SPINE_WARM_ESSENCE_NOT_" +
+      "ENOUGH\020\365\006\0221\n,RET_DRAGON_SPINE_WONDROUS_E" +
+      "SSENCE_NOT_ENOUGH\020\366\006\022+\n&RET_EFFIGY_FIRST" +
+      "_PASS_REWARD_HAS_TAKEN\020\373\006\022 \n\033RET_EFFIGY_" +
+      "REWARD_HAS_TAKEN\020\374\006\022,\n\'RET_TREASURE_MAP_" +
+      "ADD_TOKEN_EXCEED_LIMIT\020\375\006\022\'\n\"RET_TREASUR" +
+      "E_MAP_TOKEN_NOT_ENOUGHT\020\376\006\022#\n\036RET_SEA_LA" +
+      "MP_COIN_EXCEED_LIMIT\020\377\006\022!\n\034RET_SEA_LAMP_" +
+      "COIN_NOT_ENOUGH\020\200\007\022)\n$RET_SEA_LAMP_POPUL" +
+      "ARITY_EXCEED_LIMIT\020\201\007\022(\n#RET_ACTIVITY_AV" +
+      "ATAR_REWARD_NOT_OPEN\020\202\007\022)\n$RET_ACTIVITY_" +
+      "AVATAR_REWARD_HAS_TAKEN\020\203\007\022\'\n\"RET_ARENA_" +
+      "ACTIVITY_ALREADY_STARTED\020\204\007\022\037\n\032RET_TALEN" +
+      "T_ALREAY_UNLOCKED\020\205\007\022!\n\034RET_PREV_TALENT_" +
+      "NOT_UNLOCKED\020\206\007\022$\n\037RET_BIG_TALENT_POINT_" +
+      "NOT_ENOUGH\020\207\007\022&\n!RET_SMALL_TALENT_POINT_" +
+      "NOT_ENOUGH\020\210\007\022 \n\033RET_PROUD_SKILL_ALREADY" +
+      "_GOT\020\211\007\022!\n\034RET_PREV_PROUD_SKILL_NOT_GET\020" +
+      "\212\007\022\036\n\031RET_PROUD_SKILL_MAX_LEVEL\020\213\007\022*\n%RE" +
+      "T_CANDIDATE_SKILL_DEPOT_ID_NOT_FIND\020\216\007\022 " +
+      "\n\033RET_SKILL_DEPOT_IS_THE_SAME\020\217\007\022\032\n\025RET_" +
+      "MONSTER_NOT_EXIST\020\351\007\022\034\n\027RET_MONSTER_CREA" +
+      "TE_FAIL\020\352\007\022\033\n\026RET_DUNGEON_ENTER_FAIL\020\315\010\022" +
+      "\032\n\025RET_DUNGEON_QUIT_FAIL\020\316\010\022\'\n\"RET_DUNGE" +
+      "ON_ENTER_EXCEED_DAY_COUNT\020\317\010\022(\n#RET_DUNG" +
+      "EON_REVIVE_EXCEED_MAX_COUNT\020\320\010\022\034\n\027RET_DU" +
+      "NGEON_REVIVE_FAIL\020\321\010\022\034\n\027RET_DUNGEON_NOT_" +
+      "SUCCEED\020\322\010\022\037\n\032RET_DUNGEON_CAN_NOT_CANCEL" +
+      "\020\323\010\022\035\n\030RET_DEST_DUNGEON_SETTLED\020\324\010\022\'\n\"RE" +
+      "T_DUNGEON_CANDIDATE_TEAM_IS_FULL\020\325\010\022*\n%R" +
+      "ET_DUNGEON_CANDIDATE_TEAM_IS_DISMISS\020\326\010\022" +
+      "-\n(RET_DUNGEON_CANDIDATE_TEAM_NOT_ALL_RE" +
+      "ADY\020\327\010\0221\n,RET_DUNGEON_CANDIDATE_TEAM_HAS" +
+      "_REPEAT_AVATAR\020\330\010\022*\n%RET_DUNGEON_CANDIDA" +
+      "TE_NOT_SINGEL_PASS\020\331\010\022+\n&RET_DUNGEON_REP" +
+      "LAY_NEED_ALL_PLAYER_DIE\020\332\010\022(\n#RET_DUNGEO" +
+      "N_REPLAY_HAS_REVIVE_COUNT\020\333\010\022\035\n\030RET_DUNG" +
+      "EON_OTHERS_LEAVE\020\334\010\022\"\n\035RET_DUNGEON_ENTER" +
+      "_LEVEL_LIMIT\020\335\010\022(\n#RET_DUNGEON_CANNOT_EN" +
+      "TER_PLOT_IN_MP\020\336\010\022$\n\037RET_DUNGEON_DROP_SU" +
+      "BFIELD_LIMIT\020\337\010\0220\n+RET_DUNGEON_BE_INVITE" +
+      "_PLAYER_AVATAR_ALL_DIE\020\340\010\022\034\n\027RET_DUNGEON" +
+      "_CANNOT_KICK\020\341\010\0223\n.RET_DUNGEON_CANDIDATE" +
+      "_TEAM_SOMEONE_LEVEL_LIMIT\020\342\010\022\036\n\031RET_DUNG" +
+      "EON_IN_FORCE_QUIT\020\343\010\022#\n\036RET_DUNGEON_GUES" +
+      "T_QUIT_DUNGEON\020\344\010\022\034\n\027RET_DUNGEON_TICKET_" +
+      "FAIL\020\345\010\022\034\n\027RET_CUR_DUNGEON_SETTLED\020\346\010\022\033\n" +
+      "\026RET_MP_NOT_IN_MY_WORLD\020\261\t\022\026\n\021RET_MP_IN_" +
+      "MP_MODE\020\262\t\022\031\n\024RET_MP_SCENE_IS_FULL\020\263\t\022\036\n" +
+      "\031RET_MP_MODE_NOT_AVAILABLE\020\264\t\022 \n\033RET_MP_" +
+      "PLAYER_NOT_ENTERABLE\020\265\t\022\032\n\025RET_MP_QUEST_" +
+      "BLOCK_MP\020\266\t\022\031\n\024RET_MP_IN_ROOM_SCENE\020\267\t\022\031" +
+      "\n\024RET_MP_WORLD_IS_FULL\020\270\t\022\"\n\035RET_MP_PLAY" +
+      "ER_NOT_ALLOW_ENTER\020\271\t\022\037\n\032RET_MP_PLAYER_D" +
+      "ISCONNECTED\020\272\t\022\032\n\025RET_MP_NOT_IN_MP_MODE\020" +
+      "\273\t\022\033\n\026RET_MP_OWNER_NOT_ENTER\020\274\t\022#\n\036RET_M" +
+      "P_ALLOW_ENTER_PLAYER_FULL\020\275\t\022%\n RET_MP_T" +
+      "ARGET_PLAYER_IN_TRANSFER\020\276\t\022!\n\034RET_MP_TA" +
+      "RGET_ENTERING_OTHER\020\277\t\022\032\n\025RET_MP_OTHER_E" +
+      "NTERING\020\300\t\022%\n RET_MP_ENTER_MAIN_PLAYER_I" +
+      "N_PLOT\020\301\t\022\031\n\024RET_MP_NOT_PS_PLAYER\020\302\t\022\033\n\026" +
+      "RET_MP_PLAY_NOT_ACTIVE\020\303\t\022\037\n\032RET_MP_PLAY" +
+      "_REMAIN_REWARDS\020\304\t\022\032\n\025RET_MP_PLAY_NO_REW" +
+      "ARD\020\305\t\022\033\n\026RET_MP_OPEN_STATE_FAIL\020\307\t\022\037\n\032R" +
+      "ET_MP_PLAYER_IN_BLACKLIST\020\310\t\022\031\n\024RET_MP_R" +
+      "EPLY_TIMEOUT\020\311\t\022\024\n\017RET_MP_IS_BLOCK\020\312\t\022(\n" +
+      "#RET_MP_ENTER_MAIN_PLAYER_IN_MP_PLAY\020\313\t\022" +
+      "\035\n\030RET_MP_IN_MP_PLAY_BATTLE\020\314\t\022%\n RET_MP" +
+      "_GUEST_HAS_REWARD_REMAINED\020\315\t\022\033\n\026RET_MP_" +
+      "QUIT_MP_INVALID\020\316\t\022)\n$RET_MP_OTHER_DATA_" +
+      "VERSION_NOT_LATEST\020\317\t\022#\n\036RET_MP_DATA_VER" +
+      "SION_NOT_LATEST\020\320\t\022#\n\036RET_MP_CUR_WORLD_N" +
+      "OT_ENTERABLE\020\321\t\022\037\n\032RET_MP_ANY_GALLERY_ST" +
+      "ARTED\020\322\t\022\034\n\027RET_MP_HAS_ACTIVE_DRAFT\020\323\t\022\035" +
+      "\n\030RET_MP_PLAYER_IN_DUNGEON\020\324\t\022\026\n\021RET_MP_" +
+      "MATCH_FULL\020\325\t\022\027\n\022RET_MP_MATCH_LIMIT\020\326\t\022\033" +
+      "\n\026RET_MP_MATCH_IN_PUNISH\020\327\t\022\034\n\027RET_MP_IS" +
+      "_IN_MULTISTAGE\020\330\t\022\037\n\032RET_MP_MATCH_PLAY_N" +
+      "OT_OPEN\020\331\t\022\"\n\035RET_MP_ONLY_MP_WITH_PS_PLA" +
+      "YER\020\332\t\022%\n RET_MP_GUEST_LOADING_FIRST_ENT" +
+      "ER\020\333\t\022+\n&RET_MP_SUMMER_TIME_SPRINT_BOAT_" +
+      "ONGOING\020\334\t\0220\n+RET_MP_BLITZ_RUSH_PARKOUR_" +
+      "CHALLENGE_ONGOING\020\335\t\022\036\n\031RET_MP_MUSIC_GAM" +
+      "E_ONGOING\020\336\t\022\031\n\024RET_MP_IN_MPING_MODE\020\337\t\022" +
+      "!\n\034RET_MP_OWNER_IN_SINGLE_SCENE\020\340\t\022\033\n\026RE" +
+      "T_MP_IN_SINGLE_SCENE\020\341\t\022!\n\034RET_MP_REPLY_" +
+      "NO_VALID_AVATAR\020\342\t\022$\n\037RET_MP_IS_NOT_IN_T" +
+      "RANSFER_GUARD\020\343\t\022\026\n\021RET_MAIL_PARA_ERR\020\225\n" +
+      "\022\025\n\020RET_MAIL_MAX_NUM\020\226\n\022\035\n\030RET_MAIL_ITEM" +
+      "_NUM_EXCEED\020\227\n\022\036\n\031RET_MAIL_TITLE_LEN_EXC" +
+      "EED\020\230\n\022 \n\033RET_MAIL_CONTENT_LEN_EXCEED\020\231\n" +
+      "\022\037\n\032RET_MAIL_SENDER_LEN_EXCEED\020\232\n\022\037\n\032RET" +
+      "_MAIL_PARSE_PACKET_FAIL\020\233\n\022\034\n\027RET_OFFLIN" +
+      "E_MSG_MAX_NUM\020\234\n\022 \n\033RET_OFFLINE_MSG_SAME" +
+      "_TICKET\020\235\n\022#\n\036RET_MAIL_EXCEL_MAIL_TYPE_E" +
+      "RROR\020\236\n\022\037\n\032RET_MAIL_CANNOT_SEND_MCOIN\020\237\n" +
+      "\022 \n\033RET_MAIL_HCOIN_EXCEED_LIMIT\020\240\n\022 \n\033RE" +
+      "T_MAIL_SCOIN_EXCEED_LIMIT\020\241\n\022!\n\034RET_MAIL" +
+      "_MATERIAL_ID_INVALID\020\242\n\022!\n\034RET_MAIL_AVAT" +
+      "AR_EXCEED_LIMIT\020\243\n\022+\n&RET_MAIL_GACHA_TIC" +
+      "KET_ETC_EXCEED_LIMIT\020\244\n\022%\n RET_MAIL_ITEM" +
+      "_EXCEED_CEHUA_LIMIT\020\245\n\022*\n%RET_MAIL_SPACE" +
+      "_OR_REST_NUM_NOT_ENOUGH\020\246\n\022\035\n\030RET_MAIL_T" +
+      "ICKET_IS_EMPTY\020\247\n\022\"\n\035RET_MAIL_TRANSACTIO" +
+      "N_IS_EMPTY\020\250\n\022\036\n\031RET_MAIL_DELETE_COLLECT" +
+      "ED\020\251\n\022\036\n\031RET_DAILY_TASK_NOT_FINISH\020\262\n\022\035\n" +
+      "\030RET_DAILY_TAKS_HAS_TAKEN\020\263\n\022&\n!RET_SOCI" +
+      "AL_OFFLINE_MSG_NUM_EXCEED\020\264\n\022(\n#RET_DAIL" +
+      "Y_TASK_FILTER_CITY_NOT_OPEN\020\265\n\022\032\n\025RET_GA" +
+      "CHA_INAVAILABLE\020\371\n\022\037\n\032RET_GACHA_RANDOM_N" +
+      "OT_MATCH\020\372\n\022!\n\034RET_GACHA_SCHEDULE_NOT_MA" +
+      "TCH\020\373\n\022\034\n\027RET_GACHA_INVALID_TIMES\020\374\n\022#\n\036" +
+      "RET_GACHA_COST_ITEM_NOT_ENOUGH\020\375\n\022\032\n\025RET" +
+      "_GACHA_TIMES_LIMIT\020\376\n\022\035\n\030RET_GACHA_WISH_" +
+      "SAME_ITEM\020\377\n\022 \n\033RET_GACHA_WISH_INVALID_I" +
+      "TEM\020\200\013\022!\n\034RET_GACHA_MINORS_TIMES_LIMIT\020\201" +
+      "\013\022\"\n\035RET_GACHA_GENERAL_TIMES_LIMIT\020\202\013\022&\n" +
+      "!RET_INVESTIGAITON_NOT_IN_PROGRESS\020\335\013\022!\n" +
+      "\034RET_INVESTIGAITON_UNCOMPLETE\020\336\013\022#\n\036RET_" +
+      "INVESTIGAITON_REWARD_TAKEN\020\337\013\022)\n$RET_INV" +
+      "ESTIGAITON_TARGET_STATE_ERROR\020\340\013\022\034\n\027RET_" +
+      "PUSH_TIPS_NOT_FOUND\020\341\013\022!\n\034RET_SIGN_IN_RE" +
+      "CORD_NOT_FOUND\020\342\013\022\037\n\032RET_ALREADY_HAVE_SI" +
+      "GNED_IN\020\343\013\022#\n\036RET_SIGN_IN_COND_NOT_SATIS" +
+      "FIED\020\344\013\022&\n!RET_BONUS_ACTIVITY_NOT_UNREWA" +
+      "RDED\020\345\013\022\031\n\024RET_SIGN_IN_REWARDED\020\346\013\022\027\n\022RE" +
+      "T_TOWER_NOT_OPEN\020\361\013\022 \n\033RET_TOWER_HAVE_DA" +
+      "ILY_RECORD\020\362\013\022\031\n\024RET_TOWER_NOT_RECORD\020\363\013" +
+      "\022\032\n\025RET_TOWER_HAVE_RECORD\020\364\013\022\035\n\030RET_TOWE" +
+      "R_TEAM_NUM_ERROR\020\365\013\022\035\n\030RET_TOWER_FLOOR_N" +
+      "OT_OPEN\020\366\013\022#\n\036RET_TOWER_NO_FLOOR_STAR_RE" +
+      "CORD\020\367\013\022\037\n\032RET_ALREADY_HAS_TOWER_BUFF\020\370\013" +
+      "\022\036\n\031RET_DUPLICATE_ENTER_LEVEL\020\371\013\022\033\n\026RET_" +
+      "NOT_IN_TOWER_LEVEL\020\372\013\022\027\n\022RET_IN_TOWER_LE" +
+      "VEL\020\373\013\022$\n\037RET_TOWER_PREV_FLOOR_NOT_FINIS",
+      "H\020\374\013\022\036\n\031RET_TOWER_STAR_NOT_ENOUGH\020\375\013\022 \n\033" +
+      "RET_BATTLE_PASS_NO_SCHEDULE\020\205\014\022\036\n\031RET_BA" +
+      "TTLE_PASS_HAS_BUYED\020\206\014\022#\n\036RET_BATTLE_PAS" +
+      "S_LEVEL_OVERFLOW\020\207\014\022$\n\037RET_BATTLE_PASS_P" +
+      "RODUCT_EXPIRED\020\210\014\022\030\n\023RET_MATCH_HOST_QUIT" +
+      "\020\231\014\022\037\n\032RET_MATCH_ALREADY_IN_MATCH\020\232\014\022\033\n\026" +
+      "RET_MATCH_NOT_IN_MATCH\020\233\014\022 \n\033RET_MATCH_A" +
+      "PPLYING_ENTER_MP\020\234\014\022\036\n\031RET_MATCH_INCORRE" +
+      "CT_SCENE\020\235\014\022\'\n\"RET_WIDGET_TREASURE_SPOT_" +
+      "NOT_FOUND\020\255\014\022&\n!RET_WIDGET_TREASURE_ENTI" +
+      "TY_EXISTS\020\256\014\022&\n!RET_WIDGET_TREASURE_SPOT" +
+      "_FAR_AWAY\020\257\014\022\'\n\"RET_WIDGET_TREASURE_FINI" +
+      "SHED_TODAY\020\260\014\022)\n$RET_WIDGET_QUICK_USE_RE" +
+      "Q_PARAM_ERROR\020\261\014\022$\n\037RET_WIDGET_CAMERA_SC" +
+      "AN_ID_ERROR\020\262\014\022\032\n\025RET_WIDGET_NOT_ACTIVE\020" +
+      "\263\014\022\"\n\035RET_WIDGET_FEATHER_NOT_ACTIVE\020\264\014\022+" +
+      "\n&RET_WIDGET_FEATHER_GADGET_TOO_FAR_AWAY" +
+      "\020\265\014\022(\n#RET_WIDGET_CAPTURE_ANIMAL_NOT_EXI" +
+      "ST\020\266\014\022-\n(RET_WIDGET_CAPTURE_ANIMAL_DROP_" +
+      "BAG_LIMIT\020\267\014\022.\n)RET_WIDGET_CAPTURE_ANIMA" +
+      "L_CAN_NOT_CAPTURE\020\270\014\022)\n$RET_WIDGET_SKY_C" +
+      "RYSTAL_ALL_COLLECTED\020\271\014\022.\n)RET_WIDGET_SK" +
+      "Y_CRYSTAL_HINT_ALREADY_EXIST\020\272\014\022%\n RET_W" +
+      "IDGET_SKY_CRYSTAL_NOT_FOUND\020\273\014\022,\n\'RET_WI" +
+      "DGET_SKY_CRYSTAL_NO_HINT_TO_CLEAR\020\274\014\022-\n(" +
+      "RET_WIDGET_LIGHT_STONE_ENERGY_NOT_ENOUGH" +
+      "\020\275\014\022-\n(RET_WIDGET_TOY_CRYSTAL_ENERGY_NOT" +
+      "_ENOUGH\020\276\014\022,\n\'RET_WIDGET_LIGHT_STONE_LEV" +
+      "EL_NOT_ENOUGH\020\277\014\022\026\n\021RET_UID_NOT_EXIST\020\321\017" +
+      "\022\030\n\023RET_PARSE_BIN_ERROR\020\322\017\022\037\n\032RET_ACCOUN" +
+      "T_INFO_NOT_EXIST\020\323\017\022\035\n\030RET_ORDER_INFO_NO" +
+      "T_EXIST\020\324\017\022\035\n\030RET_SNAPSHOT_INDEX_ERROR\020\325" +
+      "\017\022\033\n\026RET_MAIL_HAS_BEEN_SENT\020\326\017\022\032\n\025RET_PR" +
+      "ODUCT_NOT_EXIST\020\327\017\022\027\n\022RET_UNFINISH_ORDER" +
+      "\020\330\017\022\025\n\020RET_ID_NOT_EXIST\020\331\017\022\032\n\025RET_ORDER_" +
+      "TRADE_EARLY\020\332\017\022\027\n\022RET_ORDER_FINISHED\020\333\017\022" +
+      "!\n\034RET_GAMESERVER_VERSION_WRONG\020\334\017\022\037\n\032RE" +
+      "T_OFFLINE_OP_FULL_LENGTH\020\335\017\022%\n RET_CONCE" +
+      "RT_PRODUCT_OBTAIN_LIMIT\020\336\017\022*\n%RET_CONCER" +
+      "T_PRODUCT_TICKET_DUPLICATED\020\337\017\022%\n RET_CO" +
+      "NCERT_PRODUCT_TICKET_EMPTY\020\340\017\022\027\n\022RET_RED" +
+      "IS_MODIFIED\020\211\'\022\034\n\027RET_REDIS_UID_NOT_EXIS" +
+      "T\020\212\'\022#\n\036RET_PATHFINDING_DATA_NOT_EXIST\020\361" +
+      ".\022*\n%RET_PATHFINDING_DESTINATION_NOT_EXI" +
+      "ST\020\362.\022 \n\033RET_PATHFINDING_ERROR_SCENE\020\363.\022" +
+      "\'\n\"RET_PATHFINDING_SCENE_DATA_LOADING\020\364." +
+      "\022\036\n\031RET_FRIEND_COUNT_EXCEEDED\020\3316\022\031\n\024RET_" +
+      "PLAYER_NOT_EXIST\020\3326\022!\n\034RET_ALREADY_SENT_" +
+      "ADD_REQUEST\020\3336\022\035\n\030RET_ASK_FRIEND_LIST_FU" +
+      "LL\020\3346\022!\n\034RET_PLAYER_ALREADY_IS_FRIEND\020\3356" +
+      "\022\036\n\031RET_PLAYER_NOT_ASK_FRIEND\020\3366\022#\n\036RET_" +
+      "TARGET_FRIEND_COUNT_EXCEED\020\3376\022\023\n\016RET_NOT" +
+      "_FRIEND\020\3406\022%\n RET_BIRTHDAY_CANNOT_BE_SET" +
+      "_TWICE\020\3416\022\037\n\032RET_CANNOT_ADD_SELF_FRIEND\020" +
+      "\3426\022\032\n\025RET_SIGNATURE_ILLEGAL\020\3436\022%\n RET_PS" +
+      "_PLAYER_CANNOT_ADD_FRIENDS\020\3446\022(\n#RET_PS_" +
+      "PLAYER_CANNOT_REMOVE_FRIENDS\020\3456\022\037\n\032RET_N" +
+      "AME_CARD_NOT_UNLOCKED\020\3466\022\035\n\030RET_ALREADY_" +
+      "IN_BLACKLIST\020\3476\022(\n#RET_PS_PALEYRS_CANNOT" +
+      "_ADD_BLACKLIST\020\3506\022\036\n\031RET_PLAYER_BLACKLIS" +
+      "T_FULL\020\3516\022 \n\033RET_PLAYER_NOT_IN_BLACKLIST" +
+      "\020\3526\022+\n&RET_BLACKLIST_PLAYER_CANNOT_ADD_F" +
+      "RIEND\020\3536\022\034\n\027RET_IN_TARGET_BLACKLIST\020\3546\022!" +
+      "\n\034RET_CANNOT_ADD_TARGET_FRIEND\020\3556\022\036\n\031RET" +
+      "_BIRTHDAY_FORMAT_ERROR\020\3566\022\035\n\030RET_ONLINE_" +
+      "ID_NOT_EXISTS\020\3576\022%\n RET_FIRST_SHARE_REWA" +
+      "RD_HAS_TAKEN\020\3606\022*\n%RET_PS_PLAYER_CANNOT_" +
+      "REMOVE_BLACKLIST\020\3616\022\022\n\rRET_REPORT_CD\020\3626\022" +
+      "\037\n\032RET_REPORT_CONTENT_ILLEGAL\020\3636\022\034\n\027RET_" +
+      "REMARK_WORD_ILLEGAL\020\3646\022\030\n\023RET_REMARK_TOO" +
+      "_LONG\020\3656\022\032\n\025RET_REMARK_UTF8_ERROR\020\3666\022\030\n\023" +
+      "RET_REMARK_IS_EMPTY\020\3676\022\032\n\025RET_ASK_ADD_FR" +
+      "IEND_CD\020\3706\022#\n\036RET_SHOW_AVATAR_INFO_NOT_E" +
+      "XIST\020\3716\022\037\n\032RET_PLAYER_NOT_SHOW_AVATAR\020\3726" +
+      "\022*\n%RET_SOCIAL_UPDATE_SHOW_LIST_REPEAT_I" +
+      "D\020\3736\022\031\n\024RET_PSN_ID_NOT_FOUND\020\3746\022*\n%RET_E" +
+      "MOJI_COLLECTION_NUM_EXCEED_LIMIT\020\3756\022\025\n\020R" +
+      "ET_REMARK_EMPTY\020\3766\022 \n\033RET_IN_TARGET_PSN_" +
+      "BLACKLIST\020\3776\022\036\n\031RET_SIGNATURE_NOT_CHANGE" +
+      "D\020\2007\022 \n\033RET_SIGNATURE_MONTHLY_LIMIT\020\2017\022%" +
+      "\n RET_REQ_FRIEND_AVATAR_FREQUENTLY\020\2027\022*\n" +
+      "%RET_PSN_GET_PLAYER_SOCIAL_DETAIL_FAIL\020\203" +
+      "7\022\032\n\025RET_OFFERING_NOT_OPEN\020\2517\022\035\n\030RET_OFF" +
+      "ERING_LEVEL_LIMIT\020\2527\022!\n\034RET_OFFERING_LEV" +
+      "EL_NOT_REACH\020\2537\022!\n\034RET_OFFERING_LEVEL_HA" +
+      "S_TAKEN\020\2547\022!\n\034RET_CITY_REPUTATION_NOT_OP" +
+      "EN\020\2757\022$\n\037RET_CITY_REPUTATION_LEVEL_TAKEN" +
+      "\020\2767\022(\n#RET_CITY_REPUTATION_LEVEL_NOT_REA" +
+      "CH\020\2777\022+\n&RET_CITY_REPUTATION_PARENT_QUES" +
+      "T_TAKEN\020\3007\022.\n)RET_CITY_REPUTATION_PARENT" +
+      "_QUEST_UNFINISH\020\3017\022\'\n\"RET_CITY_REPUTATIO" +
+      "N_ACCEPT_REQUEST\020\3027\022+\n&RET_CITY_REPUTATI" +
+      "ON_NOT_ACCEPT_REQUEST\020\3037\022-\n(RET_CITY_REP" +
+      "UTATION_ACCEPT_REQUEST_LIMIT\020\3047\022*\n%RET_C" +
+      "ITY_REPUTATION_ENTRANCE_NOT_OPEN\020\3057\022-\n(R" +
+      "ET_CITY_REPUTATION_TAKEN_REQUEST_REWARD\020" +
+      "\3067\022%\n RET_CITY_REPUTATION_SWITCH_CLOSE\020\307" +
+      "7\022-\n(RET_CITY_REPUTATION_ENTRACE_SWITCH_" +
+      "CLOSE\020\3107\022-\n(RET_CITY_REPUTATION_TAKEN_EX" +
+      "PLORE_REWARD\020\3117\022*\n%RET_CITY_REPUTATION_E" +
+      "XPLORE_NOT_REACH\020\3127\022\034\n\027RET_MECHANICUS_NO" +
+      "T_OPEN\020\3207\022\037\n\032RET_MECHANICUS_GEAR_UNLOCK\020" +
+      "\3217\022\035\n\030RET_MECHANICUS_GEAR_LOCK\020\3227\022$\n\037RET" +
+      "_MECHANICUS_GEAR_LEVEL_LIMIT\020\3237\022#\n\036RET_M" +
+      "ECHANICUS_COIN_NOT_ENOUGH\020\3247\022\037\n\032RET_MECH" +
+      "ANICUS_NO_SEQUENCE\020\3257\022(\n#RET_MECHANICUS_" +
+      "SEQUENCE_LIMIT_LEVEL\020\3267\022\'\n\"RET_MECHANICU" +
+      "S_SEQUENCE_LIMIT_OPEN\020\3277\022)\n$RET_MECHANIC" +
+      "US_DIFFICULT_NOT_SUPPORT\020\3307\022%\n RET_MECHA" +
+      "NICUS_TICKET_NOT_ENOUGH\020\3317\022$\n\037RET_MECHAN" +
+      "ICUS_TEACH_NOT_FINISH\020\3327\022\"\n\035RET_MECHANIC" +
+      "US_TEACH_FINISHED\020\3337\022.\n)RET_MECHANICUS_P" +
+      "REV_DIFFICULT_LEVEL_BLOCK\020\3347\022 \n\033RET_MECH" +
+      "ANICUS_PLAYER_LIMIT\020\3357\022\037\n\032RET_MECHANICUS" +
+      "_PUNISH_TIME\020\3367\022 \n\033RET_MECHANICUS_SWITCH" +
+      "_CLOSE\020\3377\022)\n$RET_MECHANICUS_BATTLE_NOT_I" +
+      "N_DUNGEON\020\3567\022)\n$RET_MECHANICUS_BATTLE_PL" +
+      "AY_NOT_FOUND\020\3577\022.\n)RET_MECHANICUS_BATTLE" +
+      "_DUPLICATE_PICK_CARD\020\3607\022-\n(RET_MECHANICU" +
+      "S_BATTLE_PLAYER_NOT_IN_PLAY\020\3617\022-\n(RET_ME" +
+      "CHANICUS_BATTLE_CARD_NOT_AVAILABLE\020\3627\022,\n" +
+      "\'RET_MECHANICUS_BATTLE_NOT_IN_CARD_STAGE" +
+      "\020\3637\022*\n%RET_MECHANICUS_BATTLE_CARD_IS_WAI" +
+      "TING\020\3647\022-\n(RET_MECHANICUS_BATTLE_CARD_AL" +
+      "L_CONFIRMED\020\3657\0221\n,RET_MECHANICUS_BATTLE_" +
+      "CARD_ALREADY_CONFIRMED\020\3667\0222\n-RET_MECHANI" +
+      "CUS_BATTLE_CARD_CONFIRMED_BY_OTHER\020\3677\0221\n" +
+      ",RET_MECHANICUS_BATTLE_CARD_NOT_ENOUGH_P" +
+      "OINTS\020\3707\022/\n*RET_MECHANICUS_BATTLE_CARD_A" +
+      "LREADY_SKIPPED\020\3717\022!\n\034RET_LEGENDARY_KEY_N" +
+      "OT_ENOUGH\020\301>\022#\n\036RET_LEGENDARY_KEY_EXCEED" +
+      "_LIMIT\020\302>\022(\n#RET_DAILY_TASK_NOT_ENOUGH_T" +
+      "O_REDEEM\020\303>\022%\n RET_PERSONAL_LINE_OPEN_ST" +
+      "ATE_OFF\020\304>\022\'\n\"RET_PERSONAL_LINE_LEVEL_NO" +
+      "T_ENOUGH\020\305>\022\037\n\032RET_PERSONAL_LINE_NOT_OPE" +
+      "N\020\306>\022+\n&RET_PERSONAL_LINE_PRE_QUEST_NOT_" +
+      "FINISH\020\307>\022+\n&RET_HUNTING_ALREADY_FINISH_" +
+      "OFFER_LIMIT\020\211@\022%\n RET_HUNTING_HAS_UNFINI" +
+      "SHED_OFFER\020\212@\022*\n%RET_HUNTING_FAILED_OFFE" +
+      "R_NOT_CD_READY\020\213@\022\037\n\032RET_HUNTING_NOT_TAK" +
+      "E_OFFER\020\214@\022\"\n\035RET_HUNTING_CANNOT_TAKE_TW" +
+      "ICE\020\215@\022*\n%RET_RPIVATE_CHAT_INVALID_CONTE" +
+      "NT_TYPE\020\305E\022*\n%RET_PRIVATE_CHAT_TARGET_IS" +
+      "_NOT_FRIEND\020\306E\022+\n&RET_PRIVATE_CHAT_CONTE" +
+      "NT_NOT_SUPPORTED\020\307E\022&\n!RET_PRIVATE_CHAT_" +
+      "CONTENT_TOO_LONG\020\310E\022#\n\036RET_PRIVATE_CHAT_" +
+      "PULL_TOO_FAST\020\311E\022!\n\034RET_PRIVATE_CHAT_REP" +
+      "EAT_READ\020\312E\022%\n RET_PRIVATE_CHAT_READ_NOT" +
+      "_FRIEND\020\313E\022\031\n\024RET_REUNION_FINISHED\020\251F\022\036\n" +
+      "\031RET_REUNION_NOT_ACTIVATED\020\252F\022*\n%RET_REU" +
+      "NION_ALREADY_TAKE_FIRST_REWARD\020\253F\022!\n\034RET" +
+      "_REUNION_SIGN_IN_REWARDED\020\254F\022!\n\034RET_REUN" +
+      "ION_WATCHER_REWARDED\020\255F\022#\n\036RET_REUNION_W" +
+      "ATCHER_NOT_FINISH\020\256F\022!\n\034RET_REUNION_MISS" +
+      "ION_REWARDED\020\257F\022#\n\036RET_REUNION_MISSION_N" +
+      "OT_FINISH\020\260F\022,\n\'RET_REUNION_WATCHER_REWA" +
+      "RD_NOT_UNLOCKED\020\261F\022 \n\033RET_BLESSING_CONTE" +
+      "NT_CLOSED\020\215G\022\034\n\027RET_BLESSING_NOT_ACTIVE\020" +
+      "\216G\022\"\n\035RET_BLESSING_NOT_TODAY_ENTITY\020\217G\022." +
+      "\n)RET_BLESSING_ENTITY_EXCEED_SCAN_NUM_LI" +
+      "MIT\020\220G\022-\n(RET_BLESSING_DAILY_SCAN_NUM_EX" +
+      "CEED_LIMIT\020\221G\0220\n+RET_BLESSING_REDEEM_REW" +
+      "ARD_NUM_EXCEED_LIMIT\020\222G\022+\n&RET_BLESSING_" +
+      "REDEEM_PIC_NUM_NOT_ENOUGH\020\223G\022 \n\033RET_BLES" +
+      "SING_PIC_NOT_ENOUGH\020\224G\022\"\n\035RET_BLESSING_P" +
+      "IC_HAS_RECEIVED\020\225G\022(\n#RET_BLESSING_TARGE" +
+      "T_RECV_NUM_EXCEED\020\226G\022\'\n\"RET_FLEUR_FAIR_C" +
+      "REDIT_EXCEED_LIMIT\020\227G\022%\n RET_FLEUR_FAIR_" +
+      "CREDIT_NOT_ENOUGH\020\230G\022&\n!RET_FLEUR_FAIR_T" +
+      "OKEN_EXCEED_LIMIT\020\231G\022$\n\037RET_FLEUR_FAIR_T" +
+      "OKEN_NOT_ENOUGH\020\232G\022%\n RET_FLEUR_FAIR_MIN" +
+      "IGAME_NOT_OPEN\020\233G\0224\n/RET_FLEUR_FAIR_MUSI" +
+      "C_GAME_DIFFICULTY_NOT_UNLOCK\020\234G\022\"\n\035RET_F" +
+      "LEUR_FAIR_DUNGEON_LOCKED\020\235G\022\'\n\"RET_FLEUR" +
+      "_FAIR_DUNGEON_PUNISH_TIME\020\236G\0222\n-RET_FLEU" +
+      "R_FAIR_ONLY_OWNER_CAN_RESTART_MINIGAM\020\237G" +
+      "\022\'\n\"RET_WATER_SPIRIT_COIN_EXCEED_LIMIT\020\240" +
+      "G\022%\n RET_WATER_SPIRIT_COIN_NOT_ENOUGH\020\241G" +
+      "\022 \n\033RET_REGION_SEARCH_NO_SEARCH\020\242G\022\"\n\035RE" +
+      "T_REGION_SEARCH_STATE_ERROR\020\243G\0224\n/RET_CH" +
+      "ANNELLER_SLAB_LOOP_DUNGEON_STAGE_NOT_OPE" +
+      "N\020\252G\022.\n)RET_CHANNELLER_SLAB_LOOP_DUNGEON" +
+      "_NOT_OPEN\020\253G\022A\n<RET_CHANNELLER_SLAB_LOOP" +
+      "_DUNGEON_FIRST_PASS_REWARD_HAS_TAKEN\020\254G\022" +
+      "<\n7RET_CHANNELLER_SLAB_LOOP_DUNGEON_SCOR" +
+      "E_REWARD_HAS_TAKEN\020\255G\0220\n+RET_CHANNELLER_" +
+      "SLAB_INVALID_ONE_OFF_DUNGEON\020\256G\022-\n(RET_C" +
+      "HANNELLER_SLAB_ONE_OFF_DUNGEON_DONE\020\257G\0227" +
+      "\n2RET_CHANNELLER_SLAB_ONE_OFF_DUNGEON_ST" +
+      "AGE_NOT_OPEN\020\260G\022+\n&RET_CHANNELLER_SLAB_T" +
+      "OKEN_EXCEED_LIMIT\020\261G\022)\n$RET_CHANNELLER_S" +
+      "LAB_TOKEN_NOT_ENOUGH\020\262G\0226\n1RET_CHANNELLE" +
+      "R_SLAB_PLAYER_NOT_IN_ONE_OFF_DUNGEON\020\263G\022" +
+      "3\n.RET_MIST_TRIAL_SELECT_CHARACTER_NUM_N" +
+      "OT_ENOUGH\020\276G\022.\n)RET_MIST_TRIAL_ALREADY_U" +
+      "SING_TRIAL_AVATAR\020\277G\022$\n\037RET_HIDE_AND_SEE" +
+      "K_PLAY_NOT_OPEN\020\310G\022(\n#RET_HIDE_AND_SEEK_" +
+      "PLAY_MAP_NOT_OPEN\020\311G\022*\n%RET_HIDE_AND_SEE" +
+      "K_PLAY_MAP_NOT_CHOSEN\020\312G\022-\n(RET_SUMMER_T" +
+      "IME_DRAFT_WOORD_EXCEED_LIMIT\020\322G\022+\n&RET_S" +
+      "UMMER_TIME_DRAFT_WOORD_NOT_ENOUGH\020\323G\0220\n+" +
+      "RET_SUMMER_TIME_MINI_HARPASTUM_EXCEED_LI" +
+      "MIT\020\324G\022-\n(RET_SUMMER_TIME_MINI_HARPASTUM" +
+      "NOT_ENOUGH\020\325G\022+\n&RET_BOUNCE_CONJURING_CO" +
+      "IN_EXCEED_LIMIT\020\334G\022)\n$RET_BOUNCE_CONJURI" +
+      "NG_COIN_NOT_ENOUGH\020\335G\022!\n\034RET_CHESS_TEACH" +
+      "_MAP_FINISHED\020\337G\022#\n\036RET_CHESS_TEACH_MAP_" +
+      "UNFINISHED\020\340G\022 \n\033RET_CHESS_COIN_EXCEED_L" +
+      "IMIT\020\341G\022\036\n\031RET_CHESS_COIN_NOT_ENOUGH\020\342G\022" +
+      "\035\n\030RET_CHESS_IN_PUNISH_TIME\020\343G\022\"\n\035RET_CH" +
+      "ESS_PREV_MAP_UNFINISHED\020\344G\022\031\n\024RET_CHESS_" +
+      "MAP_LOCKED\020\345G\022\034\n\027RET_BLITZ_RUSH_NOT_OPEN" +
+      "\020\350G\022$\n\037RET_BLITZ_RUSH_DUNGEON_NOT_OPEN\020\351" +
+      "G\022\'\n\"RET_BLITZ_RUSH_COIN_A_EXCEED_LIMIT\020" +
+      "\352G\022\'\n\"RET_BLITZ_RUSH_COIN_B_EXCEED_LIMIT" +
+      "\020\353G\022%\n RET_BLITZ_RUSH_COIN_A_NOT_ENOUGH\020" +
+      "\354G\022%\n RET_BLITZ_RUSH_COIN_B_NOT_ENOUGH\020\355" +
+      "G\022&\n!RET_MIRACLE_RING_VALUE_NOT_ENOUGH\020\361" +
+      "G\022\030\n\023RET_MIRACLE_RING_CD\020\362G\022&\n!RET_MIRAC" +
+      "LE_RING_REWARD_NOT_TAKEN\020\363G\022!\n\034RET_MIRAC" +
+      "LE_RING_NOT_DELIVER\020\364G\022$\n\037RET_MIRACLE_RI" +
+      "NG_DELIVER_EXCEED\020\365G\022!\n\034RET_MIRACLE_RING" +
+      "_HAS_CREATED\020\366G\022%\n RET_MIRACLE_RING_HAS_" +
+      "NOT_CREATED\020\367G\022\037\n\032RET_MIRACLE_RING_NOT_Y" +
+      "OURS\020\370G\022\'\n\"RET_GADGET_FOUNDATION_UNAUTHO" +
+      "RIZED\020\243H\022*\n%RET_GADGET_FOUNDATION_SCENE_" +
+      "NOT_FOUND\020\244H\022,\n\'RET_GADGET_FOUNDATION_NO" +
+      "T_IN_INIT_STATE\020\245H\0224\n/RET_GADGET_FOUNDAT" +
+      "ION_BILDING_POINT_NOT_ENOUGHT\020\246H\022-\n(RET_" +
+      "GADGET_FOUNDATION_NOT_IN_BUILT_STATE\020\247H\022" +
+      "+\n&RET_GADGET_FOUNDATION_OP_NOT_SUPPORTE" +
+      "D\020\250H\0222\n-RET_GADGET_FOUNDATION_REQ_PLAYER" +
+      "_NOT_IN_SCENE\020\251H\0223\n.RET_GADGET_FOUNDATIO" +
+      "N_LOCKED_BY_ANOTHER_PLAYER\020\252H\022%\n RET_GAD" +
+      "GET_FOUNDATION_NOT_LOCKED\020\253H\022)\n$RET_GADG" +
+      "ET_FOUNDATION_DUPLICATE_LOCK\020\254H\022+\n&RET_G" +
+      "ADGET_FOUNDATION_PLAYER_NOT_FOUND\020\255H\0220\n+" +
+      "RET_GADGET_FOUNDATION_PLAYER_GEAR_NOT_FO" +
+      "UND\020\256H\022+\n&RET_GADGET_FOUNDATION_ROTAION_" +
+      "DISABLED\020\257H\0223\n.RET_GADGET_FOUNDATION_REA" +
+      "CH_DUNGEON_GEAR_LIMIT\020\260H\0222\n-RET_GADGET_F" +
+      "OUNDATION_REACH_SINGLE_GEAR_LIMIT\020\261H\022,\n\'" +
+      "RET_GADGET_FOUNDATION_ROTATION_ON_GOING\020" +
+      "\262H\022$\n\037RET_OP_ACTIVITY_BONUS_NOT_FOUND\020\325H" +
+      "\022\035\n\030RET_OP_ACTIVITY_NOT_OPEN\020\326H\022,\n\'RET_M" +
+      "ULTISTAGE_PLAY_PLAYER_NOT_IN_SCENE\020\235J\022\"\n" +
+      "\035RET_MULTISTAGE_PLAY_NOT_FOUND\020\236J\022\'\n\"RET" +
+      "_MULTISTAGE_PLAY_IN_OTHER_STAGE\020\237J\022\036\n\031RE" +
+      "T_COOP_CHAPTER_NOT_OPEN\020\201K\022\033\n\026RET_COOP_C" +
+      "OND_NOT_MEET\020\202K\022\032\n\025RET_COOP_POINT_LOCKED" +
+      "\020\203K\022\037\n\032RET_COOP_NOT_HAVE_PROGRESS\020\204K\022\036\n\031" +
+      "RET_COOP_REWARD_HAS_TAKEN\020\205K\022\037\n\032RET_DRAF" +
+      "T_HAS_ACTIVE_DRAFT\020\263K\022\036\n\031RET_DRAFT_NOT_I" +
+      "N_MY_WORLD\020\264K\022\035\n\030RET_DRAFT_NOT_SUPPORT_M" +
+      "P\020\265K\022 \n\033RET_DRAFT_PLAYER_NOT_ENOUGH\020\266K\022\036" +
+      "\n\031RET_DRAFT_INCORRECT_SCENE\020\267K\022$\n\037RET_DR" +
+      "AFT_OTHER_PLAYER_ENTERING\020\270K\022$\n\037RET_DRAF" +
+      "T_GUEST_IS_TRANSFERRING\020\271K\022\'\n\"RET_DRAFT_" +
+      "GUEST_NOT_IN_DRAFT_SCENE\020\272K\022\037\n\032RET_DRAFT" +
+      "_INVITE_OVER_TIME\020\273K\022\'\n\"RET_DRAFT_TWICE_" +
+      "CONFIRM_OVER_TIMER\020\274K\022\'\n\"RET_DRAFT_GUEST" +
+      "_NOT_IN_WORLD_SCENE\020\275K\022\024\n\017RET_HOME_UNKOW" +
+      "N\020\345K\022\"\n\035RET_HOME_INVALID_CLIENT_PARAM\020\346K" +
+      "\022&\n!RET_HOME_TARGE_PLAYER_HAS_NO_HOME\020\347K" +
+      "\022\030\n\023RET_HOME_NOT_ONLINE\020\350K\022\031\n\024RET_HOME_P" +
+      "LAYER_FULL\020\351K\022\025\n\020RET_HOME_BLOCKED\020\352K\022*\n%" +
+      "RET_HOME_ALREADY_IN_TARGET_HOME_WORLD\020\353K" +
+      "\022\032\n\025RET_HOME_IN_EDIT_MODE\020\354K\022\036\n\031RET_HOME" +
+      "_NOT_IN_EDIT_MODE\020\355K\022\027\n\022RET_HOME_HAS_GUE" +
+      "ST\020\356K\022(\n#RET_HOME_CANT_ENTER_BY_IN_EDIT_" +
+      "MODE\020\357K\022\"\n\035RET_HOME_CLIENT_PARAM_INVALID" +
+      "\020\360K\022&\n!RET_HOME_PLAYER_NOT_IN_HOME_WORLD" +
+      "\020\361K\022+\n&RET_HOME_PLAYER_NOT_IN_SELF_HOME_" +
+      "WORLD\020\362K\022\036\n\031RET_HOME_NOT_FOUND_IN_MEM\020\363K" +
+      "\022\'\n\"RET_HOME_PLAYER_IN_HOME_ROOM_SCENE\020\364" +
+      "K\022%\n RET_HOME_HOME_REFUSE_GUEST_ENTER\020\365K" +
+      "\022(\n#RET_HOME_OWNER_REFUSE_TO_ENTER_HOME\020" +
+      "\366K\022\033\n\026RET_HOME_OWNER_OFFLINE\020\367K\022$\n\037RET_H" +
+      "OME_FURNITURE_EXCEED_LIMIT\020\370K\022(\n#RET_HOM" +
+      "E_FURNITURE_COUNT_NOT_ENOUGH\020\371K\022\"\n\035RET_H" +
+      "OME_IN_TRY_ENTER_PROCESS\020\372K\022%\n RET_HOME_" +
+      "ALREADY_IN_TARGET_SCENE\020\373K\022\037\n\032RET_HOME_C" +
+      "OIN_EXCEED_LIMIT\020\374K\022\035\n\030RET_HOME_COIN_NOT" +
+      "_ENOUGH\020\375K\022!\n\034RET_HOME_MODULE_NOT_UNLOCK" +
+      "ED\020\376K\022\037\n\032RET_HOME_CUR_MODULE_CLOSED\020\377K\022*" +
+      "\n%RET_HOME_FURNITURE_SUITE_NOT_UNLOCKED\020" +
+      "\200L\022\026\n\021RET_HOME_IN_MATCH\020\201L\022\027\n\022RET_HOME_I" +
+      "N_COMBAT\020\202L\022\032\n\025RET_HOME_EDIT_MODE_CD\020\203L\022" +
+      "!\n\034RET_HOME_UPDATE_FURNITURE_CD\020\204L\022#\n\036RE" +
+      "T_HOME_BLOCK_FURNITURE_LIMIT\020\205L\022\031\n\024RET_H" +
+      "OME_NOT_SUPPORT\020\206L\022\034\n\027RET_HOME_STATE_NOT" +
+      "_OPEN\020\207L\022#\n\036RET_HOME_TARGET_STATE_NOT_OP" +
+      "EN\020\210L\022)\n$RET_HOME_APPLY_ENTER_OTHER_HOME" +
+      "_FAIL\020\211L\022 \n\033RET_HOME_SAVE_NO_MAIN_HOUSE\020" +
+      "\212L\022\030\n\023RET_HOME_IN_DUNGEON\020\213L\022!\n\034RET_HOME" +
+      "_ANY_GALLERY_STARTED\020\214L\022\036\n\031RET_HOME_QUES" +
+      "T_BLOCK_HOME\020\215L\022!\n\034RET_HOME_WAITING_PRIO" +
+      "R_CHECK\020\216L\022#\n\036RET_HOME_PERSISTENT_CHECK_" +
+      "FAIL\020\217L\022#\n\036RET_HOME_FIND_ONLINE_HOME_FAI" +
+      "L\020\220L\022\035\n\030RET_HOME_JOIN_SCENE_FAIL\020\221L\022\030\n\023R" +
+      "ET_HOME_MAX_PLAYER\020\222L\022\031\n\024RET_HOME_IN_TRA" +
+      "NSFER\020\223L\022&\n!RET_HOME_ANY_HOME_GALLERY_ST" +
+      "ARTED\020\224L\022$\n\037RET_HOME_CAN_NOT_ENTER_IN_AU" +
+      "DIT\020\225L\022#\n\036RET_FURNITURE_MAKE_INDEX_ERROR" +
+      "\020\226L\022\036\n\031RET_FURNITURE_MAKE_LOCKED\020\227L\022$\n\037R" +
+      "ET_FURNITURE_MAKE_CONFIG_ERROR\020\230L\022!\n\034RET" +
+      "_FURNITURE_MAKE_SLOT_FULL\020\231L\022*\n%RET_FURN" +
+      "ITURE_MAKE_ADD_FURNITURE_FAIL\020\232L\022 \n\033RET_" +
+      "FURNITURE_MAKE_UNFINISH\020\233L\022!\n\034RET_FURNIT" +
+      "URE_MAKE_IS_FINISH\020\234L\022+\n&RET_FURNITURE_M" +
+      "AKE_NOT_IN_CORRECT_HOME\020\235L\022 \n\033RET_FURNIT" +
+      "URE_MAKE_NO_COUNT\020\236L\022(\n#RET_FURNITURE_MA" +
+      "KE_ACCELERATE_LIMIT\020\237L\022$\n\037RET_FURNITURE_" +
+      "MAKE_NO_MAKE_DATA\020\240L\022 \n\033RET_HOME_LIMITED" +
+      "_SHOP_CLOSE\020\241L\022\035\n\030RET_HOME_AVATAR_NOT_SH" +
+      "OW\020\242L\022&\n!RET_HOME_EVENT_COND_NOT_SATISFI" +
+      "ED\020\243L\022*\n%RET_HOME_INVALID_ARRANGE_ANIMAL" +
+      "_PARAM\020\244L\022\'\n\"RET_HOME_INVALID_ARRANGE_NP" +
+      "C_PARAM\020\245L\022)\n$RET_HOME_INVALID_ARRANGE_S" +
+      "UITE_PARAM\020\246L\022.\n)RET_HOME_INVALID_ARRANG" +
+      "E_MAIN_HOUSE_PARAM\020\247L\022#\n\036RET_HOME_AVATAR" +
+      "_STATE_NOT_OPEN\020\250L\022#\n\036RET_HOME_PLANT_FIE" +
+      "LD_NOT_EMPTY\020\251L\022\037\n\032RET_HOME_PLANT_FIELD_" +
+      "EMPTY\020\252L\022$\n\037RET_HOME_PLANT_FIELD_TYPE_ER" +
+      "ROR\020\253L\022#\n\036RET_HOME_PLANT_TIME_NOT_ENOUGH" +
+      "\020\254L\022,\n\'RET_HOME_PLANT_SUB_FIELD_NUM_NOT_" +
+      "ENOUGH\020\255L\022%\n RET_HOME_PLANT_FIELD_PARAM_" +
+      "ERROR\020\256L\022\"\n\035RET_HOME_FURNITURE_GUID_ERRO" +
+      "R\020\257L\022%\n RET_HOME_FURNITURE_ARRANGE_LIMIT" +
+      "\020\260L\022 \n\033RET_HOME_FISH_FARMING_LIMIT\020\261L\022#\n" +
+      "\036RET_HOME_FISH_COUNT_NOT_ENOUGH\020\262L\022\"\n\035RE" +
+      "T_HOME_FURNITURE_COST_LIMIT\020\263L\022&\n!RET_HO" +
+      "ME_CUSTOM_FURNITURE_INVALID\020\264L\022)\n$RET_HO" +
+      "ME_INVALID_ARRANGE_GROUP_PARAM\020\265L\022+\n&RET" +
+      "_HOME_FURNITURE_ARRANGE_GROUP_LIMIT\020\266L\0220" +
+      "\n+RET_HOME_PICTURE_FRAME_COOP_CG_GENDER_" +
+      "ERROR\020\267L\022.\n)RET_HOME_PICTURE_FRAME_COOP_" +
+      "CG_NOT_UNLOCK\020\270L\022&\n!RET_HOME_FURNITURE_C" +
+      "ANNOT_ARRANGE\020\271L\022*\n%RET_HOME_FURNITURE_I" +
+      "N_DUPLICATE_SUITE\020\272L\022.\n)RET_HOME_FURNITU" +
+      "RE_CUSTOM_SUITE_TOO_SMALL\020\273L\022,\n\'RET_HOME" +
+      "_FURNITURE_CUSTOM_SUITE_TOO_BIG\020\274L\022*\n%RE" +
+      "T_HOME_FURNITURE_SUITE_EXCEED_LIMIT\020\275L\0221" +
+      "\n,RET_HOME_FURNITURE_CUSTOM_SUITE_EXCEED" +
+      "_LIMIT\020\276L\0229\n4RET_HOME_FURNITURE_CUSTOM_S" +
+      "UITE_INVALID_SURFACE_TYPE\020\277L\022\036\n\031RET_HOME" +
+      "_BGM_ID_NOT_FOUND\020\300L\022\036\n\031RET_HOME_BGM_NOT" +
+      "_UNLOCKED\020\301L\022%\n RET_HOME_BGM_FURNITURE_N" +
+      "OT_FOUND\020\302L\022*\n%RET_HOME_BGM_NOT_SUPPORT_" +
+      "BY_CUR_SCENE\020\303L\022(\n#RET_HOME_LIMITED_SHOP" +
+      "_GOODS_DISABLE\020\304L\022\'\n\"RET_HOME_WORLD_WOOD" +
+      "_MATERIAL_EMPTY\020\305L\022+\n&RET_HOME_WORLD_WOO" +
+      "D_MATERIAL_NOT_FOUND\020\306L\022/\n*RET_HOME_WORL" +
+      "D_WOOD_MATERIAL_COUNT_INVALID\020\307L\022.\n)RET_" +
+      "HOME_WORLD_WOOD_EXCHANGE_EXCEED_LIMIT\020\310L" +
+      "\022#\n\036RET_HOME_BLUEPRINT_SEARCH_SELF\020\311L\022*\n" +
+      "%RET_HOME_BLUEPRINT_SHARE_CODE_INVALID\020\312" +
+      "L\022!\n\034RET_HOME_BLUEPRINT_NOT_EXIST\020\313L\0221\n," +
+      "RET_HOME_BLUEPRINT_SLOT_HAS_EXIST_SHARE_" +
+      "CODE\020\314L\0221\n,RET_HOME_BLUEPRINT_SLOT_NOT_E" +
+      "XIST_SHARE_CODE\020\315L\022/\n*RET_HOME_BLUEPRINT" +
+      "_CAN_NOT_CREATE_IN_AUDIT\020\316L\022 \n\033RET_HOME_" +
+      "BLOCK_NOT_UNLOCKED\020\317L\022!\n\034RET_HOME_BLUEPR" +
+      "INT_CREATE_CD\020\320L\022%\n RET_HOME_BLUEPRINT_S" +
+      "ET_OPTION_CD\020\321L\022-\n(RET_HOME_BLUEPRINT_NO" +
+      "T_ALLOW_FRIEND_COPY\020\322L\022\'\n\"RET_HOME_FURNI" +
+      "TURE_POS_UNDER_DIE_Y\020\323L\022+\n&RET_HOME_BLUE" +
+      "PRINT_GEN_SHARE_CODE_FAIL\020\324L\022!\n\034RET_HOME" +
+      "_BLUEPRINT_SEARCH_CD\020\325L\022\"\n\035RET_HOME_BLUE" +
+      "PRINT_PREVIEW_CD\020\326L\022/\n*RET_HOME_BLUEPRIN" +
+      "T_PREVIEW_SCENE_NOT_MATCH\020\327L\022%\n RET_SUMO" +
+      "_ACTIVITY_STAGE_NOT_OPEN\020\220N\022(\n#RET_SUMO_" +
+      "ACTIVITY_SWITCH_TEAM_IN_CD\020\221N\022)\n$RET_SUM" +
+      "O_ACTIVITY_TEAM_NUM_INCORRECT\020\222N\022)\n$RET_" +
+      "LUNA_RITE_ACTIVITY_AREA_ID_ERROR\020\224N\022-\n(R" +
+      "ET_LUNA_RITE_ACTIVITY_BATTLE_NOT_FINISH\020" +
+      "\225N\022-\n(RET_LUNA_RITE_ACTIVITY_ALREADY_SAC" +
+      "RIFICE\020\226N\022/\n*RET_LUNA_RITE_ACTIVITY_ALRE" +
+      "ADY_TAKE_REWARD\020\227N\0220\n+RET_LUNA_RITE_ACTI" +
+      "VITY_SACRIFICE_NOT_ENOUGH\020\230N\0223\n.RET_LUNA" +
+      "_RITE_ACTIVITY_SEARCHING_COND_NOT_MEET\020\231" +
+      "N\022\'\n\"RET_DIG_GADGET_CONFIG_ID_NOT_MATCH\020" +
+      "\237N\022\"\n\035RET_DIG_FIND_NEAREST_POS_FAIL\020\240N\022\"" +
+      "\n\035RET_MUSIC_GAME_LEVEL_NOT_OPEN\020\245N\022$\n\037RE" +
+      "T_MUSIC_GAME_LEVEL_NOT_UNLOCK\020\246N\022%\n RET_" +
+      "MUSIC_GAME_LEVEL_NOT_STARTED\020\247N\022*\n%RET_M" +
+      "USIC_GAME_LEVEL_CONFIG_NOT_FOUND\020\250N\022&\n!R" +
+      "ET_MUSIC_GAME_LEVEL_ID_NOT_MATCH\020\251N\022$\n\037R" +
+      "ET_ROGUELIKE_COIN_A_NOT_ENOUGH\020\257N\022$\n\037RET" +
+      "_ROGUELIKE_COIN_B_NOT_ENOUGH\020\260N\022$\n\037RET_R" +
+      "OGUELIKE_COIN_C_NOT_ENOUGH\020\261N\022&\n!RET_ROG" +
+      "UELIKE_COIN_A_EXCEED_LIMIT\020\262N\022&\n!RET_ROG" +
+      "UELIKE_COIN_B_EXCEED_LIMIT\020\263N\022&\n!RET_ROG" +
+      "UELIKE_COIN_C_EXCEED_LIMIT\020\264N\022(\n#RET_ROG" +
+      "UELIKE_RUNE_COUNT_NOT_ENOUGH\020\265N\022\'\n\"RET_R" +
+      "OGUELIKE_NOT_IN_ROGUE_DUNGEON\020\266N\022!\n\034RET_" +
+      "ROGUELIKE_CELL_NOT_FOUND\020\267N\022&\n!RET_ROGUE" +
+      "LIKE_CELL_TYPE_INCORRECT\020\270N\022(\n#RET_ROGUE" +
+      "LIKE_CELL_ALREADY_FINISHED\020\271N\0223\n.RET_ROG" +
+      "UELIKE_DUNGEON_HAVE_UNFINISHED_PROGRESS\020",
+      "\272N\022%\n RET_ROGUELIKE_STAGE_NOT_FINISHED\020\273" +
+      "N\0224\n/RET_ROGUELIKE_STAGE_FIRST_PASS_REWA" +
+      "RD_HAS_TAKEN\020\275N\022*\n%RET_ROGUELIKE_ACTIVIT" +
+      "Y_CONTENT_CLOSED\020\276N\0221\n,RET_ROGUELIKE_DUN" +
+      "GEON_PRE_QUEST_NOT_FINISHED\020\277N\022#\n\036RET_RO" +
+      "GUELIKE_DUNGEON_NOT_OPEN\020\300N\022#\n\036RET_ROGUE" +
+      "LIKE_SPRINT_IS_BANNED\020\301N\0221\n,RET_ROGUELIK" +
+      "E_DUNGEON_PRE_STAGE_NOT_FINISHED\020\302N\022/\n*R" +
+      "ET_ROGUELIKE_ALL_AVATAR_DIE_CANNOT_RESUM" +
+      "E\020\303N\022\'\n\"RET_PLANT_FLOWER_ALREADY_TAKE_SE" +
+      "ED\020\310N\022.\n)RET_PLANT_FLOWER_FRIEND_HAVE_FL" +
+      "OWER_LIMIT\020\311N\0220\n+RET_PLANT_FLOWER_CAN_GI" +
+      "VE_FLOWER_NOT_ENOUGH\020\312N\022-\n(RET_PLANT_FLO" +
+      "WER_WISH_FLOWER_KINDS_LIMIT\020\313N\022,\n\'RET_PL" +
+      "ANT_FLOWER_HAVE_FLOWER_NOT_ENOUGH\020\314N\0220\n+" +
+      "RET_PLANT_FLOWER_FLOWER_COMBINATION_INVA" +
+      "LID\020\315N\022 \n\033RET_HACHI_DUNGEON_NOT_VALID\020\304N" +
+      "\022%\n RET_HACHI_DUNGEON_STAGE_NOT_OPEN\020\305N\022" +
+      "(\n#RET_HACHI_DUNGEON_TEAMMATE_NOT_PASS\020\306" +
+      "N\022&\n!RET_WINTER_CAMP_COIN_A_NOT_ENOUGH\020\327" +
+      "N\022&\n!RET_WINTER_CAMP_COIN_B_NOT_ENOUGH\020\330" +
+      "N\022(\n#RET_WINTER_CAMP_COIN_A_EXCEED_LIMIT" +
+      "\020\331N\022(\n#RET_WINTER_CAMP_COIN_B_EXCEED_LIM" +
+      "IT\020\332N\022$\n\037RET_WINTER_CAMP_WISH_ID_INVALID" +
+      "\020\333N\022-\n(RET_WINTER_CAMP_NOT_FOUND_RECV_IT" +
+      "EM_DATA\020\334N\022/\n*RET_WINTER_CAMP_FRIEND_ITE" +
+      "M_COUNT_OVERFLOW\020\335N\022-\n(RET_WINTER_CAMP_S" +
+      "ELECT_ITEM_DATA_INVALID\020\336N\022$\n\037RET_WINTER" +
+      "_CAMP_ITEM_LIST_EMPTY\020\337N\022)\n$RET_WINTER_C" +
+      "AMP_REWARD_ALREADY_TAKEN\020\340N\022%\n RET_WINTE" +
+      "R_CAMP_STAGE_NOT_FINISH\020\341N\022#\n\036RET_WINTER" +
+      "_CAMP_GADGET_INVALID\020\342N\022\'\n\"RET_LANTERN_R" +
+      "ITE_COIN_A_NOT_ENOUGH\020\352N\022\'\n\"RET_LANTERN_" +
+      "RITE_COIN_B_NOT_ENOUGH\020\353N\022\'\n\"RET_LANTERN" +
+      "_RITE_COIN_C_NOT_ENOUGH\020\354N\022)\n$RET_LANTER" +
+      "N_RITE_COIN_A_EXCEED_LIMIT\020\355N\022)\n$RET_LAN" +
+      "TERN_RITE_COIN_B_EXCEED_LIMIT\020\356N\022)\n$RET_" +
+      "LANTERN_RITE_COIN_C_EXCEED_LIMIT\020\357N\022/\n*R" +
+      "ET_LANTERN_RITE_PROJECTION_CONTENT_CLOSE" +
+      "D\020\360N\022.\n)RET_LANTERN_RITE_PROJECTION_CAN_" +
+      "NOT_START\020\361N\022&\n!RET_LANTERN_RITE_DUNGEON" +
+      "_NOT_OPEN\020\362N\022+\n&RET_LANTERN_RITE_HAS_TAK" +
+      "EN_SKIN_REWARD\020\363N\0220\n+RET_LANTERN_RITE_NO" +
+      "T_FINISHED_SKIN_WATCHERS\020\364N\022.\n)RET_LANTE" +
+      "RN_RITE_FIREWORKS_CONTENT_CLOSED\020\365N\0223\n.R" +
+      "ET_LANTERN_RITE_FIREWORKS_CHALLENGE_NOT_" +
+      "START\020\366N\0222\n-RET_LANTERN_RITE_FIREWORKS_R" +
+      "EFORM_PARAM_ERROR\020\367N\0221\n,RET_LANTERN_RITE" +
+      "_FIREWORKS_REFORM_SKILL_LOCK\020\370N\0229\n4RET_L" +
+      "ANTERN_RITE_FIREWORKS_REFORM_STAMINA_NOT" +
+      "_ENOUGH\020\371N\022\'\n\"RET_POTION_ACTIVITY_STAGE_" +
+      "NOT_OPEN\020\376N\022(\n#RET_POTION_ACTIVITY_LEVEL" +
+      "_HAVE_PASS\020\377N\022+\n&RET_POTION_ACTIVITY_TEA" +
+      "M_NUM_INCORRECT\020\200O\022%\n RET_POTION_ACTIVIT" +
+      "Y_AVATAR_IN_CD\020\201O\022#\n\036RET_POTION_ACTIVITY" +
+      "_BUFF_IN_CD\020\202O\022\'\n\"RET_IRODORI_POETRY_INV" +
+      "ALID_LINE_ID\020\210O\022(\n#RET_IRODORI_POETRY_IN" +
+      "VALID_THEME_ID\020\211O\022/\n*RET_IRODORI_POETRY_" +
+      "NOT_GET_ALL_INSPIRATION\020\212O\022/\n*RET_IRODOR" +
+      "I_POETRY_INSPIRATION_REACH_LIMIE\020\213O\022.\n)R" +
+      "ET_IRODORI_POETRY_ENTITY_ALREADY_SCANNED" +
+      "\020\214O\022(\n#RET_ACTIVITY_BANNER_ALREADY_CLEAR" +
+      "ED\020\274P\022\037\n\032RET_IRODORI_CHESS_NOT_OPEN\020\275P\022%" +
+      "\n RET_IRODORI_CHESS_LEVEL_NOT_OPEN\020\276P\022#\n" +
+      "\036RET_IRODORI_CHESS_MAP_NOT_OPEN\020\277P\022/\n*RE" +
+      "T_IRODORI_CHESS_MAP_CARD_ALREADY_EQUIPED" +
+      "\020\300P\022.\n)RET_IRODORI_CHESS_EQUIP_CARD_EXCE" +
+      "ED_LIMIT\020\301P\022+\n&RET_IRODORI_CHESS_MAP_CAR" +
+      "D_NOT_EQUIPED\020\302P\0223\n.RET_IRODORI_CHESS_EN" +
+      "TER_FAIL_CARD_EXCEED_LIMIT\020\303P\022(\n#RET_ACT" +
+      "IVITY_FRIEND_HAVE_GIFT_LIMIT\020\306P\022)\n$RET_G" +
+      "ACHA_ACTIVITY_HAVE_REWARD_LIMIT\020\313P\022(\n#RE" +
+      "T_GACHA_ACTIVITY_HAVE_ROBOT_LIMIT\020\314P\022)\n$" +
+      "RET_SUMMER_TIME_V2_COIN_EXCEED_LIMIT\020\315P\022" +
+      "\'\n\"RET_SUMMER_TIME_V2_COIN_NOT_ENOUGH\020\316P" +
+      "\022.\n)RET_SUMMER_TIME_V2_DUNGEON_STAGE_NOT" +
+      "_OPEN\020\317P\0221\n,RET_SUMMER_TIME_V2_PREV_DUNG" +
+      "EON_NOT_COMPLETE\020\320P\022!\n\034RET_ROGUE_DIARY_A" +
+      "VATAR_DEATH\020\356P\022!\n\034RET_ROGUE_DIARY_AVATAR" +
+      "_TIRED\020\357P\022&\n!RET_ROGUE_DIARY_AVATAR_DUPL" +
+      "ICATED\020\360P\022$\n\037RET_ROGUE_DIARY_COIN_NOT_EN" +
+      "OUGH\020\361P\022.\n)RET_ROGUE_DIARY_VIRTUAL_COIN_" +
+      "EXCEED_LIMIT\020\362P\022,\n\'RET_ROGUE_DIARY_VIRTU" +
+      "AL_COIN_NOT_ENOUGH\020\363P\022#\n\036RET_ROGUE_DIARY" +
+      "_CONTENT_CLOSED\020\376P\022+\n&RET_GRAVEN_INNOCEN" +
+      "CE_COIN_A_NOT_ENOUGH\020\214Q\022+\n&RET_GRAVEN_IN" +
+      "NOCENCE_COIN_B_NOT_ENOUGH\020\215Q\022-\n(RET_GRAV" +
+      "EN_INNOCENCE_COIN_A_EXCEED_LIMIT\020\216Q\022-\n(R" +
+      "ET_GRAVEN_INNOCENCE_COIN_B_EXCEED_LIMIT\020" +
+      "\217Q\022$\n\037RET_ISLAND_PARTY_STAGE_NOT_OPEN\020\203Q" +
+      "\022\"\n\035RET_WIND_FIELD_STAGE_NOT_OPEN\020\226Q\022\037\n\032" +
+      "RET_VINTAGE_CONTENT_CLOSED\020\234Q\022\'\n\"RET_VIN" +
+      "TAGE_STORE_CONTENT_FINISHED\020\235Q\022%\n RET_VI" +
+      "NTAGE_STORE_ATTR_TOO_SMALL\020\236Q\022%\n RET_VIN" +
+      "TAGE_STORE_ATTR_TOO_LARGE\020\237Q\022(\n#RET_VINT" +
+      "AGE_STORE_CONTENT_INTERRUPT\020\240Q\022(\n#RET_VI" +
+      "NTAGE_VIRTUAL_COIN_NOT_ENOUGH\020\241Q\022*\n%RET_" +
+      "VINTAGE_STORE_ATTR_LESS_THAN_ZERO\020\242Q\022/\n*" +
+      "RET_FUNGUS_FIGHTER_CAPTURE_COIN_NOT_ENOU" +
+      "GH\020\246Q\0220\n+RET_FUNGUS_FIGHTER_TRAINING_COI" +
+      "N_NOT_ENOUGH\020\247Q\0221\n,RET_FUNGUS_FIGHTER_CA" +
+      "PTURE_COIN_EXCEED_LIMIT\020\250Q\0222\n-RET_FUNGUS" +
+      "_FIGHTER_TRAINING_COIN_EXCEED_LIMIT\020\251Q\022&" +
+      "\n!RET_FUNGUS_FIGHTER_CONTENT_CLOSED\020\252Q\022+" +
+      "\n&RET_FUNGUS_FIGHTER_PLOT_STAGE_NOT_OPEN" +
+      "\020\253Q\0222\n-RET_FUNGUS_FIGHTER_FUNGUS_ID_CONF" +
+      "IG_NOT_VALID\020\254Q\022-\n(RET_FUNGUS_FIGHTER_FU" +
+      "NGUS_NOT_CULTIVATED\020\255Q\0221\n,RET_FUNGUS_FIG" +
+      "HTER_TRAINING_DUNGEON_NOT_OPEN\020\256Q\022,\n\'RET" +
+      "_EFFIGY_CHALLENGE_V2_COIN_NOT_ENOUGH\020\273Q\022" +
+      ".\n)RET_EFFIGY_CHALLENGE_V2_COIN_EXCEED_L" +
+      "IMIT\020\274Q\022&\n!RET_CHAR_AMUSEMENT_STAGE_NOT_" +
+      "OPEN\020\304Q\022$\n\037RET_COIN_COLLECT_LEVEL_NOT_OP" +
+      "EN\020\316Q\022&\n!RET_COIN_COLLECT_NOT_EQUIP_WIDG" +
+      "ET\020\317Q\022%\n RET_COIN_COLLECT_SCENE_NOT_MATC" +
+      "H\020\320Q\022(\n#RET_COIN_COLLECT_CANT_ENTER_MP_M" +
+      "ODE\020\321Q\022%\n RET_COIN_COLLECT_PLAYER_NUM_FA" +
+      "IL\020\322Q\022&\n!RET_BRICK_BREAKER_PLAYER_NUM_FA" +
+      "IL\020\330Q\022\'\n\"RET_BRICK_BREAKER_STAGE_NOT_UNL" +
+      "OCK\020\331Q\022.\n)RET_BRICK_BREAKER_NORMAL_LEVEL" +
+      "_NOT_FINISH\020\332Q\022+\n&RET_BRICK_BREAKER_PRE_" +
+      "LEVEL_NOT_FINISH\020\333Q\022+\n&RET_BRICK_BREAKER" +
+      "_PRE_STAGE_NOT_FINISH\020\334Q\022-\n(RET_BRICK_BR" +
+      "EAKER_WORLD_LEVEL_NOT_UNLOCK\020\335Q\022/\n*RET_B" +
+      "RICK_BREAKER_DUNGEON_LEVEL_NOT_UNLOCK\020\336Q" +
+      "\022&\n!RET_BRICK_BREAKER_COIN_NOT_ENOUGH\020\337Q" +
+      "\022(\n#RET_BRICK_BREAKER_COIN_EXCEED_LIMIT\020" +
+      "\340Q\022 \n\033RET_ACTIVITY_CONTENT_CLOSED\020\225U\022\027\n\022" +
+      "RET_NOT_IN_FISHING\020\371U\022\031\n\024RET_FISH_STATE_" +
+      "ERROR\020\372U\022\030\n\023RET_FISH_BAIT_LIMIT\020\373U\022\035\n\030RE" +
+      "T_FISHING_MAX_DISTANCE\020\374U\022\032\n\025RET_FISHING" +
+      "_IN_COMBAT\020\375U\022!\n\034RET_FISHING_BATTLE_TOO_" +
+      "SHORT\020\376U\022\027\n\022RET_FISH_GONE_AWAY\020\377U\022#\n\036RET" +
+      "_CAN_NOT_EDIT_OTHER_DUNGEON\020\253V\022 \n\033RET_CU" +
+      "STOM_DUNGEON_DISMATCH\020\254V\022\037\n\032RET_NO_CUSTO" +
+      "M_DUNGEON_DATA\020\255V\022\"\n\035RET_BUILD_CUSTOM_DU" +
+      "NGEON_FAIL\020\256V\022\'\n\"RET_CUSTOM_DUNGEON_ROOM" +
+      "_CHECK_FAIL\020\257V\022%\n RET_CUSTOM_DUNGEON_SAV" +
+      "E_MAY_FAIL\020\260V\022\036\n\031RET_NOT_IN_CUSTOM_DUNGE" +
+      "ON\020\261V\022%\n RET_CUSTOM_DUNGEON_INTERNAL_FAI" +
+      "L\020\262V\022#\n\036RET_CUSTOM_DUNGEON_CAN_NOT_TRY\020\263" +
+      "V\022%\n RET_CUSTOM_DUNGEON_NO_START_ROOM\020\264V" +
+      "\022$\n\037RET_CUSTOM_DUNGEON_NO_ROOM_DATA\020\265V\022)" +
+      "\n$RET_CUSTOM_DUNGEON_SAVE_TOO_FREQUENT\020\266" +
+      "V\022%\n RET_CUSTOM_DUNGEON_NOT_SELF_PASS\020\267V" +
+      "\022!\n\034RET_CUSTOM_DUNGEON_LACK_COIN\020\270V\022\'\n\"R" +
+      "ET_CUSTOM_DUNGEON_NO_FINISH_BRICK\020\271V\022$\n\037" +
+      "RET_CUSTOM_DUNGEON_MULTI_FINISH\020\272V\022%\n RE" +
+      "T_CUSTOM_DUNGEON_NOT_PUBLISHED\020\273V\022\"\n\035RET" +
+      "_CUSTOM_DUNGEON_FULL_STORE\020\274V\022$\n\037RET_CUS" +
+      "TOM_DUNGEON_STORE_REPEAT\020\275V\022*\n%RET_CUSTO" +
+      "M_DUNGEON_CAN_NOT_STORE_SELF\020\276V\022%\n RET_C" +
+      "USTOM_DUNGEON_NOT_SAVE_SUCC\020\277V\022)\n$RET_CU" +
+      "STOM_DUNGEON_CAN_NOT_LIKE_SELF\020\300V\022!\n\034RET" +
+      "_CUSTOM_DUNGEON_NOT_FOUND\020\301V\022\'\n\"RET_CUST" +
+      "OM_DUNGEON_INVALID_SETTING\020\302V\022)\n$RET_CUS" +
+      "TOM_DUNGEON_NO_FINISH_SETTING\020\303V\022$\n\037RET_" +
+      "CUSTOM_DUNGEON_SAVE_NOTHING\020\304V\022$\n\037RET_CU" +
+      "STOM_DUNGEON_NOT_IN_GROUP\020\305V\022$\n\037RET_CUST" +
+      "OM_DUNGEON_NOT_OFFICIAL\020\306V\022&\n!RET_CUSTOM" +
+      "_DUNGEON_LIFE_NUM_ERROR\020\307V\022$\n\037RET_CUSTOM" +
+      "_DUNGEON_NO_OPEN_ROOM\020\310V\022*\n%RET_CUSTOM_D" +
+      "UNGEON_BRICK_EXCEED_LIMIT\020\311V\022+\n&RET_CUST" +
+      "OM_DUNGEON_OFFICIAL_NOT_UNLOCK\020\312V\022&\n!RET" +
+      "_CAN_NOT_EDIT_OFFICIAL_SETTING\020\313V\022#\n\036RET" +
+      "_CUSTOM_DUNGEON_BAN_PUBLISH\020\314V\022&\n!RET_CU" +
+      "STOM_DUNGEON_CAN_NOT_REPLAY\020\315V\022&\n!RET_CU" +
+      "STOM_DUNGEON_NOT_OPEN_GROUP\020\316V\022$\n\037RET_CU" +
+      "STOM_DUNGEON_MAX_EDIT_NUM\020\317V\022)\n$RET_CUST" +
+      "OM_DUNGEON_CAN_NOT_OUT_STUCK\020\320V\022\037\n\032RET_C" +
+      "USTOM_DUNGEON_MAX_TAG\020\321V\022#\n\036RET_CUSTOM_D" +
+      "UNGEON_INVALID_TAG\020\322V\022 \n\033RET_CUSTOM_DUNG" +
+      "EON_MAX_COST\020\323V\022,\n\'RET_CUSTOM_DUNGEON_RE" +
+      "QUEST_TOO_FREQUENT\020\324V\022 \n\033RET_CUSTOM_DUNG" +
+      "EON_NOT_OPEN\020\325V\022\032\n\025RET_SHARE_CD_ID_ERROR" +
+      "\020\335V\022\035\n\030RET_SHARE_CD_INDEX_ERROR\020\336V\022\027\n\022RE" +
+      "T_SHARE_CD_IN_CD\020\337V\022\"\n\035RET_SHARE_CD_TOKE" +
+      "N_NOT_ENOUGH\020\340V\022\025\n\020RET_UGC_DISMATCH\020\217W\022\033" +
+      "\n\026RET_UGC_DATA_NOT_FOUND\020\220W\022\034\n\027RET_UGC_B" +
+      "RIEF_NOT_FOUND\020\221W\022\025\n\020RET_UGC_DISABLED\020\222W" +
+      "\022\024\n\017RET_UGC_LIMITED\020\223W\022\023\n\016RET_UGC_LOCKED" +
+      "\020\224W\022\025\n\020RET_UGC_NOT_AUTH\020\225W\022\025\n\020RET_UGC_NO" +
+      "T_OPEN\020\226W\022\030\n\023RET_UGC_BAN_PUBLISH\020\227W\022&\n!R" +
+      "ET_COMPOUND_BOOST_ITEM_NOT_EXIST\020\301W\022(\n#R" +
+      "ET_COMPOUND_BOOST_TARGET_NOT_EXIST\020\302W\022#\n" +
+      "\036RET_QUICK_HIT_TREE_EMPTY_TREES\020\313W\022 \n\033RE" +
+      "T_GCG_FIND_GAME_MODE_FAIL\020\340]\022\"\n\035RET_GCG_" +
+      "OPERATION_PARAM_ERROR\020\341]\022\035\n\030RET_GCG_GAME" +
+      "_NOT_RUNNING\020\342]\022\031\n\024RET_GCG_OP_NOT_ALLOW\020" +
+      "\343]\022\037\n\032RET_GCG_OP_NOT_MATCH_PHASE\020\344]\022(\n#R" +
+      "ET_GCG_SELECT_HAND_CARD_GUID_ERROR\020\345]\022\037\n" +
+      "\032RET_GCG_DICE_INDEX_INVALID\020\346]\022#\n\036RET_GC" +
+      "G_CHARACTER_GUID_INVALID\020\347]\022\"\n\035RET_GCG_C" +
+      "HARACTER_ALREADY_DIE\020\350]\022\'\n\"RET_GCG_CHARA" +
+      "CTER_ALREADY_ON_STAGE\020\351]\022\'\n\"RET_GCG_CHAR" +
+      "ACTER_FORBIDDEN_ATTACK\020\352]\022\"\n\035RET_GCG_SEL" +
+      "ECT_DICE_NOT_MATCH\020\353]\022\034\n\027RET_GCG_FIND_SK" +
+      "ILL_FAIL\020\354]\022%\n RET_GCG_SKILL_CAN_NOT_ACT" +
+      "IVE_USE\020\355]\022\036\n\031RET_GCG_ENERGY_NOT_ENOUGH\020" +
+      "\356]\022\'\n\"RET_GCG_PLAY_CARD_TARGET_NOT_MATCH" +
+      "\020\357]\022&\n!RET_GCG_PLAY_CARD_ZONE_CANNOT_ADD" +
+      "\020\360]\022\'\n\"RET_GCG_REBOOT_SELECT_DICE_INVALI" +
+      "D\020\361]\022\'\n\"RET_GCG_REBOOT_SELECT_CARD_INVAL" +
+      "ID\020\362]\022+\n&RET_GCG_PLAY_CARD_CONDITION_CHE" +
+      "CK_FAIL\020\363]\022$\n\037RET_GCG_PLAY_CARD_PARAM_IN" +
+      "VALID\020\364]\022\025\n\020RET_GCG_MAX_GAME\020\365]\022\035\n\030RET_G" +
+      "CG_SEND_PACKET_FAIL\020\366]\022\033\n\026RET_GCG_ALREAD" +
+      "Y_SETTLE\020\367]\022\036\n\031RET_GCG_COIN_EXCEED_LIMIT" +
+      "\020\305^\022\034\n\027RET_GCG_COIN_NOT_ENOUGH\020\306^\022\036\n\031RET" +
+      "_GCG_NOT_IN_SELF_WORLD\020\307^\022\034\n\027RET_GCG_ALR" +
+      "EADY_IN_DUEL\020\310^\022 \n\033RET_GCG_NOT_IN_PLAYER" +
+      "_WORLD\020\311^\022\034\n\027RET_GCG_GALLERY_STARTED\020\312^\022" +
+      "\"\n\035RET_GCG_INVITE_TARGET_IS_SELF\020\313^\022\'\n\"R" +
+      "ET_GCG_INVITE_TARGET_NOT_IN_WORLD\020\314^\022#\n\036" +
+      "RET_GCG_APPLY_INVITE_NOT_ALLOW\020\315^\022!\n\034RET" +
+      "_GCG_APPLY_INVITE_TIMEOUT\020\316^\022\035\n\030RET_GCG_" +
+      "CUR_DECK_INVALID\020\317^\022#\n\036RET_GCG_NEED_RESO" +
+      "URCE_COMPLETE\020\320^\022$\n\037RET_GCG_OPPONENT_PLA" +
+      "YER_IS_SELF\020\321^\022\034\n\027RET_GCG_GAME_ID_INVALI" +
+      "D\020\322^\022\034\n\027RET_GCG_MATCH_IN_PUNISH\020\323^\022!\n\034RE" +
+      "T_GCG_SETTLE_STILL_IN_DUEL\020\324^\022\"\n\035RET_GCG" +
+      "_SETTLE_NOT_IN_DUNGEON\020\325^\022$\n\037RET_GCG_UNS" +
+      "UPPORT_SETTLE_OPTION\020\326^\022\037\n\032RET_GCG_NOT_I" +
+      "N_GCG_DUNGEON\020\327^\022\037\n\032RET_GCG_WORLD_LEVEL_" +
+      "LOCKED\020\330^\022\036\n\031RET_GCG_BOSS_LEVEL_LOCKED\020\331" +
+      "^\022\032\n\025RET_GCG_NOT_IN_TAVERN\020\332^\022\037\n\032RET_GCG" +
+      "_WEEK_NPC_NOT_EXIST\020\333^\022 \n\033RET_GCG_ENTER_" +
+      "GAME_FREQUENT\020\334^\022-\n(RET_GCG_BREAK_LEVEL_" +
+      "QUEST_NOT_UNFINISHED\020\335^\022)\n$RET_GCG_GUIDE" +
+      "_LEVEL_ALREADY_FINISHED\020\336^\022!\n\034RET_GCG_LE" +
+      "VEL_CANNOT_RESTART\020\337^\022$\n\037RET_GCG_TARGET_" +
+      "CHECK_ENTER_FAIL\020\340^\022\037\n\032RET_GCG_ALREADY_I" +
+      "N_DUNGEON\020\341^\022\036\n\031RET_GCG_BACK_DUEL_NO_GAM" +
+      "E\020\342^\022\037\n\032RET_GCG_CONST_LEVEL_LOCKED\020\343^\022\033\n" +
+      "\026RET_GCG_QUEST_ID_ERROR\020\344^\022\"\n\035RET_GCG_QU" +
+      "EST_NEED_UNFINISHED\020\345^\022\025\n\020RET_GCG_IN_MAT" +
+      "CH\020\346^\022$\n\037RET_GCG_DATA_VERSION_NOT_LATEST" +
+      "\020\347^\022.\n)RET_GCG_INVITE_TARGET_ENTER_GAME_" +
+      "FREQUENT\020\350^\0221\n,RET_GCG_INVITE_TARGET_NEE" +
+      "D_RESOURCE_COMPLETE\020\351^\022(\n#RET_GCG_INVITE" +
+      "_TARGET_SCENE_IS_NULL\020\352^\022&\n!RET_GCG_INVI" +
+      "TE_TARGET_IN_TRANSFER\020\353^\0222\n-RET_GCG_INVI" +
+      "TE_TARGET_DATA_VERSION_NOT_LATEST\020\354^\022+\n&" +
+      "RET_GCG_INVITE_TARGET_CUR_DECK_INVALID\020\355" +
+      "^\022*\n%RET_GCG_CLIENT_DATA_VERSION_NOT_MAT" +
+      "CH\020\356^\022\'\n\"RET_GCG_CLIENT_DATA_VERSOIN_FOR" +
+      "BID\020\357^\022\032\n\025RET_GCG_MP_CANT_MATCH\020\360^\022)\n$RE" +
+      "T_GCG_INVITE_TARGET_STATE_NOT_OPEN\020\361^\022\034\n" +
+      "\027RET_GCG_CREATE_TIME_OUT\020\362^\022\026\n\021RET_GCG_B" +
+      "AN_MATCH\020\363^\022\027\n\022RET_GCG_BAN_INVITE\020\364^\022\036\n\031" +
+      "RET_GCG_TARGET_BAN_INVITE\020\365^\022\"\n\035RET_GCG_" +
+      "INVITE_ALREADY_INVITE\020\366^\022\"\n\035RET_GCG_BACK" +
+      "_DUEL_PS_TO_OTHER\020\371^\022\"\n\035RET_GCG_BACK_DUE" +
+      "L_OTHER_TO_PS\020\372^\022\033\n\026RET_GCG_DS_DECK_LOCK" +
+      "ED\020\251_\022!\n\034RET_GCG_DS_DECK_NAME_INVALID\020\252_" +
+      "\022*\n%RET_GCG_DS_DECK_CHAR_CARD_NUM_INVALI" +
+      "D\020\254_\022%\n RET_GCG_DS_DECK_CARD_NUM_INVALID" +
+      "\020\255_\022%\n RET_GCG_DS_CARD_NUM_EXCEED_LIMIT\020" +
+      "\256_\022\034\n\027RET_GCG_DS_DECK_INVALID\020\257_\022\037\n\032RET_" +
+      "GCG_DS_CARD_ID_INVALID\020\260_\022(\n#RET_GCG_DS_" +
+      "CARD_FACE_ALREADY_UNLOCK\020\261_\022!\n\034RET_GCG_D" +
+      "S_CARD_FACE_IS_LOCK\020\262_\022\032\n\025RET_GCG_DS_FIE" +
+      "LD_LOCK\020\263_\022$\n\037RET_GCG_DS_FIELD_ALREADY_U" +
+      "NLOCK\020\264_\022 \n\033RET_GCG_DS_FIELD_ID_INVALID\020" +
+      "\265_\022 \n\033RET_GCG_DS_CARD_BACK_LOCKED\020\266_\022(\n#" +
+      "RET_GCG_DS_CARD_BACK_ALREADY_UNLOCK\020\267_\022$" +
+      "\n\037RET_GCG_DS_CARD_BACK_ID_INVALID\020\270_\022$\n\037" +
+      "RET_GCG_DS_CARD_FACE_ID_INVALID\020\271_\022!\n\034RE" +
+      "T_GCG_DS_DECK_NAME_ILLEGAL\020\272_\022\034\n\027RET_GCG" +
+      "_DS_DECK_SAVE_CD\020\273_\022#\n\036RET_GCG_DS_DECK_C" +
+      "HANGE_NAME_CD\020\274_\022\037\n\032RET_GCG_MATCH_DECK_I" +
+      "NVALID\020\275_\022%\n RET_GCG_DS_DECK_ALREADY_UNL" +
+      "OCKED\020\276_\022!\n\034RET_GCG_DS_AT_LEAST_ONE_DECK" +
+      "\020\277_\022(\n#RET_GCG_TC_CHARACTERNOT_MATCH_LEV" +
+      "EL\020\333_\022\"\n\035RET_GCG_TC_MUST_IN_SELF_WORLD\020\334" +
+      "_\022\036\n\031RET_GCG_TC_MUST_IN_TAVERN\020\335_\022\037\n\032RET" +
+      "_GCG_TC_ALREADY_IN_GAME\020\336_\022 \n\033RET_GCG_TC" +
+      "_ALREADY_IN_MATCH\020\337_\0221\n,RET_GCG_TC_UNLOC" +
+      "K_CHARACTER_QUEST_NOT_FINISH\020\340_\022\034\n\027RET_G" +
+      "CG_TC_LEVEL_LOCKED\020\341_\022\036\n\031RET_GCG_TC_NO_I" +
+      "NVITE_DATA\020\342_\022 \n\033RET_GCG_TC_CUR_DECK_INV" +
+      "ALID\020\343_\022\032\n\025RET_GCG_TC_COND_QUEST\020\344_\022%\n R" +
+      "ET_GCG_LEVEL_REWARD_LEVEL_ERROR\020\215`\022\'\n\"RE" +
+      "T_GCG_LEVEL_REWARD_ALREADY_TAKEN\020\216`\022#\n\036R" +
+      "ET_GCG_LEVEL_REWARD_NO_REWARD\020\217`B\033\n\031emu." +
+      "grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

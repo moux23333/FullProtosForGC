@@ -19,96 +19,96 @@ public final class PlantFlowerActivityDetailInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_content_closed = 3;</code>
-     * @return The isContentClosed.
-     */
-    boolean getIsContentClosed();
-
-    /**
-     * <code>map&lt;uint32, uint32&gt; wish_flower_num_map = 10;</code>
-     */
-    int getWishFlowerNumMapCount();
-    /**
-     * <code>map&lt;uint32, uint32&gt; wish_flower_num_map = 10;</code>
-     */
-    boolean containsWishFlowerNumMap(
-        int key);
-    /**
-     * Use {@link #getWishFlowerNumMapMap()} instead.
-     */
-    @java.lang.Deprecated
-    java.util.Map<java.lang.Integer, java.lang.Integer>
-    getWishFlowerNumMap();
-    /**
-     * <code>map&lt;uint32, uint32&gt; wish_flower_num_map = 10;</code>
-     */
-    java.util.Map<java.lang.Integer, java.lang.Integer>
-    getWishFlowerNumMapMap();
-    /**
-     * <code>map&lt;uint32, uint32&gt; wish_flower_num_map = 10;</code>
-     */
-
-    int getWishFlowerNumMapOrDefault(
-        int key,
-        int defaultValue);
-    /**
-     * <code>map&lt;uint32, uint32&gt; wish_flower_num_map = 10;</code>
-     */
-
-    int getWishFlowerNumMapOrThrow(
-        int key);
-
-    /**
-     * <code>uint32 today_seed_reward_id = 11;</code>
-     * @return The todaySeedRewardId.
-     */
-    int getTodaySeedRewardId();
-
-    /**
      * <code>uint32 day_index = 1;</code>
      * @return The dayIndex.
      */
     int getDayIndex();
 
     /**
-     * <code>bool is_today_has_awarded = 13;</code>
-     * @return The isTodayHasAwarded.
+     * <code>uint32 today_seed_reward_id = 15;</code>
+     * @return The todaySeedRewardId.
      */
-    boolean getIsTodayHasAwarded();
+    int getTodaySeedRewardId();
 
     /**
-     * <code>map&lt;uint32, uint32&gt; used_flower_num_map = 7;</code>
+     * <code>bool is_content_closed = 3;</code>
+     * @return The isContentClosed.
      */
-    int getUsedFlowerNumMapCount();
+    boolean getIsContentClosed();
+
     /**
-     * <code>map&lt;uint32, uint32&gt; used_flower_num_map = 7;</code>
+     * <code>map&lt;uint32, uint32&gt; Unk3300_EPMKDFOBLFK = 9;</code>
      */
-    boolean containsUsedFlowerNumMap(
+    int getUnk3300EPMKDFOBLFKCount();
+    /**
+     * <code>map&lt;uint32, uint32&gt; Unk3300_EPMKDFOBLFK = 9;</code>
+     */
+    boolean containsUnk3300EPMKDFOBLFK(
         int key);
     /**
-     * Use {@link #getUsedFlowerNumMapMap()} instead.
+     * Use {@link #getUnk3300EPMKDFOBLFKMap()} instead.
      */
     @java.lang.Deprecated
     java.util.Map<java.lang.Integer, java.lang.Integer>
-    getUsedFlowerNumMap();
+    getUnk3300EPMKDFOBLFK();
     /**
-     * <code>map&lt;uint32, uint32&gt; used_flower_num_map = 7;</code>
+     * <code>map&lt;uint32, uint32&gt; Unk3300_EPMKDFOBLFK = 9;</code>
      */
     java.util.Map<java.lang.Integer, java.lang.Integer>
-    getUsedFlowerNumMapMap();
+    getUnk3300EPMKDFOBLFKMap();
     /**
-     * <code>map&lt;uint32, uint32&gt; used_flower_num_map = 7;</code>
+     * <code>map&lt;uint32, uint32&gt; Unk3300_EPMKDFOBLFK = 9;</code>
      */
 
-    int getUsedFlowerNumMapOrDefault(
+    int getUnk3300EPMKDFOBLFKOrDefault(
         int key,
         int defaultValue);
     /**
-     * <code>map&lt;uint32, uint32&gt; used_flower_num_map = 7;</code>
+     * <code>map&lt;uint32, uint32&gt; Unk3300_EPMKDFOBLFK = 9;</code>
      */
 
-    int getUsedFlowerNumMapOrThrow(
+    int getUnk3300EPMKDFOBLFKOrThrow(
         int key);
+
+    /**
+     * <code>map&lt;uint32, uint32&gt; Unk3300_ELAIBMDIBFJ = 5;</code>
+     */
+    int getUnk3300ELAIBMDIBFJCount();
+    /**
+     * <code>map&lt;uint32, uint32&gt; Unk3300_ELAIBMDIBFJ = 5;</code>
+     */
+    boolean containsUnk3300ELAIBMDIBFJ(
+        int key);
+    /**
+     * Use {@link #getUnk3300ELAIBMDIBFJMap()} instead.
+     */
+    @java.lang.Deprecated
+    java.util.Map<java.lang.Integer, java.lang.Integer>
+    getUnk3300ELAIBMDIBFJ();
+    /**
+     * <code>map&lt;uint32, uint32&gt; Unk3300_ELAIBMDIBFJ = 5;</code>
+     */
+    java.util.Map<java.lang.Integer, java.lang.Integer>
+    getUnk3300ELAIBMDIBFJMap();
+    /**
+     * <code>map&lt;uint32, uint32&gt; Unk3300_ELAIBMDIBFJ = 5;</code>
+     */
+
+    int getUnk3300ELAIBMDIBFJOrDefault(
+        int key,
+        int defaultValue);
+    /**
+     * <code>map&lt;uint32, uint32&gt; Unk3300_ELAIBMDIBFJ = 5;</code>
+     */
+
+    int getUnk3300ELAIBMDIBFJOrThrow(
+        int key);
+
+    /**
+     * <code>bool is_today_has_awarded = 8;</code>
+     * @return The isTodayHasAwarded.
+     */
+    boolean getIsTodayHasAwarded();
   }
   /**
    * Protobuf type {@code PlantFlowerActivityDetailInfo}
@@ -166,40 +166,40 @@ public final class PlantFlowerActivityDetailInfoOuterClass {
               isContentClosed_ = input.readBool();
               break;
             }
-            case 58: {
+            case 42: {
               if (!((mutable_bitField0_ & 0x00000002) != 0)) {
-                usedFlowerNumMap_ = com.google.protobuf.MapField.newMapField(
-                    UsedFlowerNumMapDefaultEntryHolder.defaultEntry);
+                unk3300ELAIBMDIBFJ_ = com.google.protobuf.MapField.newMapField(
+                    Unk3300ELAIBMDIBFJDefaultEntryHolder.defaultEntry);
                 mutable_bitField0_ |= 0x00000002;
               }
               com.google.protobuf.MapEntry<java.lang.Integer, java.lang.Integer>
-              usedFlowerNumMap__ = input.readMessage(
-                  UsedFlowerNumMapDefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
-              usedFlowerNumMap_.getMutableMap().put(
-                  usedFlowerNumMap__.getKey(), usedFlowerNumMap__.getValue());
+              unk3300ELAIBMDIBFJ__ = input.readMessage(
+                  Unk3300ELAIBMDIBFJDefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
+              unk3300ELAIBMDIBFJ_.getMutableMap().put(
+                  unk3300ELAIBMDIBFJ__.getKey(), unk3300ELAIBMDIBFJ__.getValue());
               break;
             }
-            case 82: {
+            case 64: {
+
+              isTodayHasAwarded_ = input.readBool();
+              break;
+            }
+            case 74: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                wishFlowerNumMap_ = com.google.protobuf.MapField.newMapField(
-                    WishFlowerNumMapDefaultEntryHolder.defaultEntry);
+                unk3300EPMKDFOBLFK_ = com.google.protobuf.MapField.newMapField(
+                    Unk3300EPMKDFOBLFKDefaultEntryHolder.defaultEntry);
                 mutable_bitField0_ |= 0x00000001;
               }
               com.google.protobuf.MapEntry<java.lang.Integer, java.lang.Integer>
-              wishFlowerNumMap__ = input.readMessage(
-                  WishFlowerNumMapDefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
-              wishFlowerNumMap_.getMutableMap().put(
-                  wishFlowerNumMap__.getKey(), wishFlowerNumMap__.getValue());
+              unk3300EPMKDFOBLFK__ = input.readMessage(
+                  Unk3300EPMKDFOBLFKDefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
+              unk3300EPMKDFOBLFK_.getMutableMap().put(
+                  unk3300EPMKDFOBLFK__.getKey(), unk3300EPMKDFOBLFK__.getValue());
               break;
             }
-            case 88: {
+            case 120: {
 
               todaySeedRewardId_ = input.readUInt32();
-              break;
-            }
-            case 104: {
-
-              isTodayHasAwarded_ = input.readBool();
               break;
             }
             default: {
@@ -231,10 +231,10 @@ public final class PlantFlowerActivityDetailInfoOuterClass {
     protected com.google.protobuf.MapField internalGetMapField(
         int number) {
       switch (number) {
-        case 10:
-          return internalGetWishFlowerNumMap();
-        case 7:
-          return internalGetUsedFlowerNumMap();
+        case 9:
+          return internalGetUnk3300EPMKDFOBLFK();
+        case 5:
+          return internalGetUnk3300ELAIBMDIBFJ();
         default:
           throw new RuntimeException(
               "Invalid map field number: " + number);
@@ -248,109 +248,6 @@ public final class PlantFlowerActivityDetailInfoOuterClass {
               emu.grasscutter.net.proto.PlantFlowerActivityDetailInfoOuterClass.PlantFlowerActivityDetailInfo.class, emu.grasscutter.net.proto.PlantFlowerActivityDetailInfoOuterClass.PlantFlowerActivityDetailInfo.Builder.class);
     }
 
-    public static final int IS_CONTENT_CLOSED_FIELD_NUMBER = 3;
-    private boolean isContentClosed_;
-    /**
-     * <code>bool is_content_closed = 3;</code>
-     * @return The isContentClosed.
-     */
-    @java.lang.Override
-    public boolean getIsContentClosed() {
-      return isContentClosed_;
-    }
-
-    public static final int WISH_FLOWER_NUM_MAP_FIELD_NUMBER = 10;
-    private static final class WishFlowerNumMapDefaultEntryHolder {
-      static final com.google.protobuf.MapEntry<
-          java.lang.Integer, java.lang.Integer> defaultEntry =
-              com.google.protobuf.MapEntry
-              .<java.lang.Integer, java.lang.Integer>newDefaultInstance(
-                  emu.grasscutter.net.proto.PlantFlowerActivityDetailInfoOuterClass.internal_static_PlantFlowerActivityDetailInfo_WishFlowerNumMapEntry_descriptor, 
-                  com.google.protobuf.WireFormat.FieldType.UINT32,
-                  0,
-                  com.google.protobuf.WireFormat.FieldType.UINT32,
-                  0);
-    }
-    private com.google.protobuf.MapField<
-        java.lang.Integer, java.lang.Integer> wishFlowerNumMap_;
-    private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
-    internalGetWishFlowerNumMap() {
-      if (wishFlowerNumMap_ == null) {
-        return com.google.protobuf.MapField.emptyMapField(
-            WishFlowerNumMapDefaultEntryHolder.defaultEntry);
-      }
-      return wishFlowerNumMap_;
-    }
-
-    public int getWishFlowerNumMapCount() {
-      return internalGetWishFlowerNumMap().getMap().size();
-    }
-    /**
-     * <code>map&lt;uint32, uint32&gt; wish_flower_num_map = 10;</code>
-     */
-
-    @java.lang.Override
-    public boolean containsWishFlowerNumMap(
-        int key) {
-      
-      return internalGetWishFlowerNumMap().getMap().containsKey(key);
-    }
-    /**
-     * Use {@link #getWishFlowerNumMapMap()} instead.
-     */
-    @java.lang.Override
-    @java.lang.Deprecated
-    public java.util.Map<java.lang.Integer, java.lang.Integer> getWishFlowerNumMap() {
-      return getWishFlowerNumMapMap();
-    }
-    /**
-     * <code>map&lt;uint32, uint32&gt; wish_flower_num_map = 10;</code>
-     */
-    @java.lang.Override
-
-    public java.util.Map<java.lang.Integer, java.lang.Integer> getWishFlowerNumMapMap() {
-      return internalGetWishFlowerNumMap().getMap();
-    }
-    /**
-     * <code>map&lt;uint32, uint32&gt; wish_flower_num_map = 10;</code>
-     */
-    @java.lang.Override
-
-    public int getWishFlowerNumMapOrDefault(
-        int key,
-        int defaultValue) {
-      
-      java.util.Map<java.lang.Integer, java.lang.Integer> map =
-          internalGetWishFlowerNumMap().getMap();
-      return map.containsKey(key) ? map.get(key) : defaultValue;
-    }
-    /**
-     * <code>map&lt;uint32, uint32&gt; wish_flower_num_map = 10;</code>
-     */
-    @java.lang.Override
-
-    public int getWishFlowerNumMapOrThrow(
-        int key) {
-      
-      java.util.Map<java.lang.Integer, java.lang.Integer> map =
-          internalGetWishFlowerNumMap().getMap();
-      if (!map.containsKey(key)) {
-        throw new java.lang.IllegalArgumentException();
-      }
-      return map.get(key);
-    }
-
-    public static final int TODAY_SEED_REWARD_ID_FIELD_NUMBER = 11;
-    private int todaySeedRewardId_;
-    /**
-     * <code>uint32 today_seed_reward_id = 11;</code>
-     * @return The todaySeedRewardId.
-     */
-    @java.lang.Override
-    public int getTodaySeedRewardId() {
-      return todaySeedRewardId_;
-    }
-
     public static final int DAY_INDEX_FIELD_NUMBER = 1;
     private int dayIndex_;
     /**
@@ -362,96 +259,199 @@ public final class PlantFlowerActivityDetailInfoOuterClass {
       return dayIndex_;
     }
 
-    public static final int IS_TODAY_HAS_AWARDED_FIELD_NUMBER = 13;
-    private boolean isTodayHasAwarded_;
+    public static final int TODAY_SEED_REWARD_ID_FIELD_NUMBER = 15;
+    private int todaySeedRewardId_;
     /**
-     * <code>bool is_today_has_awarded = 13;</code>
-     * @return The isTodayHasAwarded.
+     * <code>uint32 today_seed_reward_id = 15;</code>
+     * @return The todaySeedRewardId.
      */
     @java.lang.Override
-    public boolean getIsTodayHasAwarded() {
-      return isTodayHasAwarded_;
+    public int getTodaySeedRewardId() {
+      return todaySeedRewardId_;
     }
 
-    public static final int USED_FLOWER_NUM_MAP_FIELD_NUMBER = 7;
-    private static final class UsedFlowerNumMapDefaultEntryHolder {
+    public static final int IS_CONTENT_CLOSED_FIELD_NUMBER = 3;
+    private boolean isContentClosed_;
+    /**
+     * <code>bool is_content_closed = 3;</code>
+     * @return The isContentClosed.
+     */
+    @java.lang.Override
+    public boolean getIsContentClosed() {
+      return isContentClosed_;
+    }
+
+    public static final int UNK3300_EPMKDFOBLFK_FIELD_NUMBER = 9;
+    private static final class Unk3300EPMKDFOBLFKDefaultEntryHolder {
       static final com.google.protobuf.MapEntry<
           java.lang.Integer, java.lang.Integer> defaultEntry =
               com.google.protobuf.MapEntry
               .<java.lang.Integer, java.lang.Integer>newDefaultInstance(
-                  emu.grasscutter.net.proto.PlantFlowerActivityDetailInfoOuterClass.internal_static_PlantFlowerActivityDetailInfo_UsedFlowerNumMapEntry_descriptor, 
+                  emu.grasscutter.net.proto.PlantFlowerActivityDetailInfoOuterClass.internal_static_PlantFlowerActivityDetailInfo_Unk3300EPMKDFOBLFKEntry_descriptor, 
                   com.google.protobuf.WireFormat.FieldType.UINT32,
                   0,
                   com.google.protobuf.WireFormat.FieldType.UINT32,
                   0);
     }
     private com.google.protobuf.MapField<
-        java.lang.Integer, java.lang.Integer> usedFlowerNumMap_;
+        java.lang.Integer, java.lang.Integer> unk3300EPMKDFOBLFK_;
     private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
-    internalGetUsedFlowerNumMap() {
-      if (usedFlowerNumMap_ == null) {
+    internalGetUnk3300EPMKDFOBLFK() {
+      if (unk3300EPMKDFOBLFK_ == null) {
         return com.google.protobuf.MapField.emptyMapField(
-            UsedFlowerNumMapDefaultEntryHolder.defaultEntry);
+            Unk3300EPMKDFOBLFKDefaultEntryHolder.defaultEntry);
       }
-      return usedFlowerNumMap_;
+      return unk3300EPMKDFOBLFK_;
     }
 
-    public int getUsedFlowerNumMapCount() {
-      return internalGetUsedFlowerNumMap().getMap().size();
+    public int getUnk3300EPMKDFOBLFKCount() {
+      return internalGetUnk3300EPMKDFOBLFK().getMap().size();
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; used_flower_num_map = 7;</code>
+     * <code>map&lt;uint32, uint32&gt; Unk3300_EPMKDFOBLFK = 9;</code>
      */
 
     @java.lang.Override
-    public boolean containsUsedFlowerNumMap(
+    public boolean containsUnk3300EPMKDFOBLFK(
         int key) {
       
-      return internalGetUsedFlowerNumMap().getMap().containsKey(key);
+      return internalGetUnk3300EPMKDFOBLFK().getMap().containsKey(key);
     }
     /**
-     * Use {@link #getUsedFlowerNumMapMap()} instead.
+     * Use {@link #getUnk3300EPMKDFOBLFKMap()} instead.
      */
     @java.lang.Override
     @java.lang.Deprecated
-    public java.util.Map<java.lang.Integer, java.lang.Integer> getUsedFlowerNumMap() {
-      return getUsedFlowerNumMapMap();
+    public java.util.Map<java.lang.Integer, java.lang.Integer> getUnk3300EPMKDFOBLFK() {
+      return getUnk3300EPMKDFOBLFKMap();
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; used_flower_num_map = 7;</code>
+     * <code>map&lt;uint32, uint32&gt; Unk3300_EPMKDFOBLFK = 9;</code>
      */
     @java.lang.Override
 
-    public java.util.Map<java.lang.Integer, java.lang.Integer> getUsedFlowerNumMapMap() {
-      return internalGetUsedFlowerNumMap().getMap();
+    public java.util.Map<java.lang.Integer, java.lang.Integer> getUnk3300EPMKDFOBLFKMap() {
+      return internalGetUnk3300EPMKDFOBLFK().getMap();
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; used_flower_num_map = 7;</code>
+     * <code>map&lt;uint32, uint32&gt; Unk3300_EPMKDFOBLFK = 9;</code>
      */
     @java.lang.Override
 
-    public int getUsedFlowerNumMapOrDefault(
+    public int getUnk3300EPMKDFOBLFKOrDefault(
         int key,
         int defaultValue) {
       
       java.util.Map<java.lang.Integer, java.lang.Integer> map =
-          internalGetUsedFlowerNumMap().getMap();
+          internalGetUnk3300EPMKDFOBLFK().getMap();
       return map.containsKey(key) ? map.get(key) : defaultValue;
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; used_flower_num_map = 7;</code>
+     * <code>map&lt;uint32, uint32&gt; Unk3300_EPMKDFOBLFK = 9;</code>
      */
     @java.lang.Override
 
-    public int getUsedFlowerNumMapOrThrow(
+    public int getUnk3300EPMKDFOBLFKOrThrow(
         int key) {
       
       java.util.Map<java.lang.Integer, java.lang.Integer> map =
-          internalGetUsedFlowerNumMap().getMap();
+          internalGetUnk3300EPMKDFOBLFK().getMap();
       if (!map.containsKey(key)) {
         throw new java.lang.IllegalArgumentException();
       }
       return map.get(key);
+    }
+
+    public static final int UNK3300_ELAIBMDIBFJ_FIELD_NUMBER = 5;
+    private static final class Unk3300ELAIBMDIBFJDefaultEntryHolder {
+      static final com.google.protobuf.MapEntry<
+          java.lang.Integer, java.lang.Integer> defaultEntry =
+              com.google.protobuf.MapEntry
+              .<java.lang.Integer, java.lang.Integer>newDefaultInstance(
+                  emu.grasscutter.net.proto.PlantFlowerActivityDetailInfoOuterClass.internal_static_PlantFlowerActivityDetailInfo_Unk3300ELAIBMDIBFJEntry_descriptor, 
+                  com.google.protobuf.WireFormat.FieldType.UINT32,
+                  0,
+                  com.google.protobuf.WireFormat.FieldType.UINT32,
+                  0);
+    }
+    private com.google.protobuf.MapField<
+        java.lang.Integer, java.lang.Integer> unk3300ELAIBMDIBFJ_;
+    private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
+    internalGetUnk3300ELAIBMDIBFJ() {
+      if (unk3300ELAIBMDIBFJ_ == null) {
+        return com.google.protobuf.MapField.emptyMapField(
+            Unk3300ELAIBMDIBFJDefaultEntryHolder.defaultEntry);
+      }
+      return unk3300ELAIBMDIBFJ_;
+    }
+
+    public int getUnk3300ELAIBMDIBFJCount() {
+      return internalGetUnk3300ELAIBMDIBFJ().getMap().size();
+    }
+    /**
+     * <code>map&lt;uint32, uint32&gt; Unk3300_ELAIBMDIBFJ = 5;</code>
+     */
+
+    @java.lang.Override
+    public boolean containsUnk3300ELAIBMDIBFJ(
+        int key) {
+      
+      return internalGetUnk3300ELAIBMDIBFJ().getMap().containsKey(key);
+    }
+    /**
+     * Use {@link #getUnk3300ELAIBMDIBFJMap()} instead.
+     */
+    @java.lang.Override
+    @java.lang.Deprecated
+    public java.util.Map<java.lang.Integer, java.lang.Integer> getUnk3300ELAIBMDIBFJ() {
+      return getUnk3300ELAIBMDIBFJMap();
+    }
+    /**
+     * <code>map&lt;uint32, uint32&gt; Unk3300_ELAIBMDIBFJ = 5;</code>
+     */
+    @java.lang.Override
+
+    public java.util.Map<java.lang.Integer, java.lang.Integer> getUnk3300ELAIBMDIBFJMap() {
+      return internalGetUnk3300ELAIBMDIBFJ().getMap();
+    }
+    /**
+     * <code>map&lt;uint32, uint32&gt; Unk3300_ELAIBMDIBFJ = 5;</code>
+     */
+    @java.lang.Override
+
+    public int getUnk3300ELAIBMDIBFJOrDefault(
+        int key,
+        int defaultValue) {
+      
+      java.util.Map<java.lang.Integer, java.lang.Integer> map =
+          internalGetUnk3300ELAIBMDIBFJ().getMap();
+      return map.containsKey(key) ? map.get(key) : defaultValue;
+    }
+    /**
+     * <code>map&lt;uint32, uint32&gt; Unk3300_ELAIBMDIBFJ = 5;</code>
+     */
+    @java.lang.Override
+
+    public int getUnk3300ELAIBMDIBFJOrThrow(
+        int key) {
+      
+      java.util.Map<java.lang.Integer, java.lang.Integer> map =
+          internalGetUnk3300ELAIBMDIBFJ().getMap();
+      if (!map.containsKey(key)) {
+        throw new java.lang.IllegalArgumentException();
+      }
+      return map.get(key);
+    }
+
+    public static final int IS_TODAY_HAS_AWARDED_FIELD_NUMBER = 8;
+    private boolean isTodayHasAwarded_;
+    /**
+     * <code>bool is_today_has_awarded = 8;</code>
+     * @return The isTodayHasAwarded.
+     */
+    @java.lang.Override
+    public boolean getIsTodayHasAwarded() {
+      return isTodayHasAwarded_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -477,20 +477,20 @@ public final class PlantFlowerActivityDetailInfoOuterClass {
       com.google.protobuf.GeneratedMessageV3
         .serializeIntegerMapTo(
           output,
-          internalGetUsedFlowerNumMap(),
-          UsedFlowerNumMapDefaultEntryHolder.defaultEntry,
-          7);
+          internalGetUnk3300ELAIBMDIBFJ(),
+          Unk3300ELAIBMDIBFJDefaultEntryHolder.defaultEntry,
+          5);
+      if (isTodayHasAwarded_ != false) {
+        output.writeBool(8, isTodayHasAwarded_);
+      }
       com.google.protobuf.GeneratedMessageV3
         .serializeIntegerMapTo(
           output,
-          internalGetWishFlowerNumMap(),
-          WishFlowerNumMapDefaultEntryHolder.defaultEntry,
-          10);
+          internalGetUnk3300EPMKDFOBLFK(),
+          Unk3300EPMKDFOBLFKDefaultEntryHolder.defaultEntry,
+          9);
       if (todaySeedRewardId_ != 0) {
-        output.writeUInt32(11, todaySeedRewardId_);
-      }
-      if (isTodayHasAwarded_ != false) {
-        output.writeBool(13, isTodayHasAwarded_);
+        output.writeUInt32(15, todaySeedRewardId_);
       }
       unknownFields.writeTo(output);
     }
@@ -510,32 +510,32 @@ public final class PlantFlowerActivityDetailInfoOuterClass {
           .computeBoolSize(3, isContentClosed_);
       }
       for (java.util.Map.Entry<java.lang.Integer, java.lang.Integer> entry
-           : internalGetUsedFlowerNumMap().getMap().entrySet()) {
+           : internalGetUnk3300ELAIBMDIBFJ().getMap().entrySet()) {
         com.google.protobuf.MapEntry<java.lang.Integer, java.lang.Integer>
-        usedFlowerNumMap__ = UsedFlowerNumMapDefaultEntryHolder.defaultEntry.newBuilderForType()
+        unk3300ELAIBMDIBFJ__ = Unk3300ELAIBMDIBFJDefaultEntryHolder.defaultEntry.newBuilderForType()
             .setKey(entry.getKey())
             .setValue(entry.getValue())
             .build();
         size += com.google.protobuf.CodedOutputStream
-            .computeMessageSize(7, usedFlowerNumMap__);
-      }
-      for (java.util.Map.Entry<java.lang.Integer, java.lang.Integer> entry
-           : internalGetWishFlowerNumMap().getMap().entrySet()) {
-        com.google.protobuf.MapEntry<java.lang.Integer, java.lang.Integer>
-        wishFlowerNumMap__ = WishFlowerNumMapDefaultEntryHolder.defaultEntry.newBuilderForType()
-            .setKey(entry.getKey())
-            .setValue(entry.getValue())
-            .build();
-        size += com.google.protobuf.CodedOutputStream
-            .computeMessageSize(10, wishFlowerNumMap__);
-      }
-      if (todaySeedRewardId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, todaySeedRewardId_);
+            .computeMessageSize(5, unk3300ELAIBMDIBFJ__);
       }
       if (isTodayHasAwarded_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(13, isTodayHasAwarded_);
+          .computeBoolSize(8, isTodayHasAwarded_);
+      }
+      for (java.util.Map.Entry<java.lang.Integer, java.lang.Integer> entry
+           : internalGetUnk3300EPMKDFOBLFK().getMap().entrySet()) {
+        com.google.protobuf.MapEntry<java.lang.Integer, java.lang.Integer>
+        unk3300EPMKDFOBLFK__ = Unk3300EPMKDFOBLFKDefaultEntryHolder.defaultEntry.newBuilderForType()
+            .setKey(entry.getKey())
+            .setValue(entry.getValue())
+            .build();
+        size += com.google.protobuf.CodedOutputStream
+            .computeMessageSize(9, unk3300EPMKDFOBLFK__);
+      }
+      if (todaySeedRewardId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(15, todaySeedRewardId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -552,18 +552,18 @@ public final class PlantFlowerActivityDetailInfoOuterClass {
       }
       emu.grasscutter.net.proto.PlantFlowerActivityDetailInfoOuterClass.PlantFlowerActivityDetailInfo other = (emu.grasscutter.net.proto.PlantFlowerActivityDetailInfoOuterClass.PlantFlowerActivityDetailInfo) obj;
 
-      if (getIsContentClosed()
-          != other.getIsContentClosed()) return false;
-      if (!internalGetWishFlowerNumMap().equals(
-          other.internalGetWishFlowerNumMap())) return false;
-      if (getTodaySeedRewardId()
-          != other.getTodaySeedRewardId()) return false;
       if (getDayIndex()
           != other.getDayIndex()) return false;
+      if (getTodaySeedRewardId()
+          != other.getTodaySeedRewardId()) return false;
+      if (getIsContentClosed()
+          != other.getIsContentClosed()) return false;
+      if (!internalGetUnk3300EPMKDFOBLFK().equals(
+          other.internalGetUnk3300EPMKDFOBLFK())) return false;
+      if (!internalGetUnk3300ELAIBMDIBFJ().equals(
+          other.internalGetUnk3300ELAIBMDIBFJ())) return false;
       if (getIsTodayHasAwarded()
           != other.getIsTodayHasAwarded()) return false;
-      if (!internalGetUsedFlowerNumMap().equals(
-          other.internalGetUsedFlowerNumMap())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -575,24 +575,24 @@ public final class PlantFlowerActivityDetailInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + DAY_INDEX_FIELD_NUMBER;
+      hash = (53 * hash) + getDayIndex();
+      hash = (37 * hash) + TODAY_SEED_REWARD_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getTodaySeedRewardId();
       hash = (37 * hash) + IS_CONTENT_CLOSED_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsContentClosed());
-      if (!internalGetWishFlowerNumMap().getMap().isEmpty()) {
-        hash = (37 * hash) + WISH_FLOWER_NUM_MAP_FIELD_NUMBER;
-        hash = (53 * hash) + internalGetWishFlowerNumMap().hashCode();
+      if (!internalGetUnk3300EPMKDFOBLFK().getMap().isEmpty()) {
+        hash = (37 * hash) + UNK3300_EPMKDFOBLFK_FIELD_NUMBER;
+        hash = (53 * hash) + internalGetUnk3300EPMKDFOBLFK().hashCode();
       }
-      hash = (37 * hash) + TODAY_SEED_REWARD_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getTodaySeedRewardId();
-      hash = (37 * hash) + DAY_INDEX_FIELD_NUMBER;
-      hash = (53 * hash) + getDayIndex();
+      if (!internalGetUnk3300ELAIBMDIBFJ().getMap().isEmpty()) {
+        hash = (37 * hash) + UNK3300_ELAIBMDIBFJ_FIELD_NUMBER;
+        hash = (53 * hash) + internalGetUnk3300ELAIBMDIBFJ().hashCode();
+      }
       hash = (37 * hash) + IS_TODAY_HAS_AWARDED_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsTodayHasAwarded());
-      if (!internalGetUsedFlowerNumMap().getMap().isEmpty()) {
-        hash = (37 * hash) + USED_FLOWER_NUM_MAP_FIELD_NUMBER;
-        hash = (53 * hash) + internalGetUsedFlowerNumMap().hashCode();
-      }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -704,10 +704,10 @@ public final class PlantFlowerActivityDetailInfoOuterClass {
       protected com.google.protobuf.MapField internalGetMapField(
           int number) {
         switch (number) {
-          case 10:
-            return internalGetWishFlowerNumMap();
-          case 7:
-            return internalGetUsedFlowerNumMap();
+          case 9:
+            return internalGetUnk3300EPMKDFOBLFK();
+          case 5:
+            return internalGetUnk3300ELAIBMDIBFJ();
           default:
             throw new RuntimeException(
                 "Invalid map field number: " + number);
@@ -717,10 +717,10 @@ public final class PlantFlowerActivityDetailInfoOuterClass {
       protected com.google.protobuf.MapField internalGetMutableMapField(
           int number) {
         switch (number) {
-          case 10:
-            return internalGetMutableWishFlowerNumMap();
-          case 7:
-            return internalGetMutableUsedFlowerNumMap();
+          case 9:
+            return internalGetMutableUnk3300EPMKDFOBLFK();
+          case 5:
+            return internalGetMutableUnk3300ELAIBMDIBFJ();
           default:
             throw new RuntimeException(
                 "Invalid map field number: " + number);
@@ -752,16 +752,16 @@ public final class PlantFlowerActivityDetailInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        isContentClosed_ = false;
-
-        internalGetMutableWishFlowerNumMap().clear();
-        todaySeedRewardId_ = 0;
-
         dayIndex_ = 0;
 
+        todaySeedRewardId_ = 0;
+
+        isContentClosed_ = false;
+
+        internalGetMutableUnk3300EPMKDFOBLFK().clear();
+        internalGetMutableUnk3300ELAIBMDIBFJ().clear();
         isTodayHasAwarded_ = false;
 
-        internalGetMutableUsedFlowerNumMap().clear();
         return this;
       }
 
@@ -789,14 +789,14 @@ public final class PlantFlowerActivityDetailInfoOuterClass {
       public emu.grasscutter.net.proto.PlantFlowerActivityDetailInfoOuterClass.PlantFlowerActivityDetailInfo buildPartial() {
         emu.grasscutter.net.proto.PlantFlowerActivityDetailInfoOuterClass.PlantFlowerActivityDetailInfo result = new emu.grasscutter.net.proto.PlantFlowerActivityDetailInfoOuterClass.PlantFlowerActivityDetailInfo(this);
         int from_bitField0_ = bitField0_;
-        result.isContentClosed_ = isContentClosed_;
-        result.wishFlowerNumMap_ = internalGetWishFlowerNumMap();
-        result.wishFlowerNumMap_.makeImmutable();
-        result.todaySeedRewardId_ = todaySeedRewardId_;
         result.dayIndex_ = dayIndex_;
+        result.todaySeedRewardId_ = todaySeedRewardId_;
+        result.isContentClosed_ = isContentClosed_;
+        result.unk3300EPMKDFOBLFK_ = internalGetUnk3300EPMKDFOBLFK();
+        result.unk3300EPMKDFOBLFK_.makeImmutable();
+        result.unk3300ELAIBMDIBFJ_ = internalGetUnk3300ELAIBMDIBFJ();
+        result.unk3300ELAIBMDIBFJ_.makeImmutable();
         result.isTodayHasAwarded_ = isTodayHasAwarded_;
-        result.usedFlowerNumMap_ = internalGetUsedFlowerNumMap();
-        result.usedFlowerNumMap_.makeImmutable();
         onBuilt();
         return result;
       }
@@ -845,22 +845,22 @@ public final class PlantFlowerActivityDetailInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.PlantFlowerActivityDetailInfoOuterClass.PlantFlowerActivityDetailInfo other) {
         if (other == emu.grasscutter.net.proto.PlantFlowerActivityDetailInfoOuterClass.PlantFlowerActivityDetailInfo.getDefaultInstance()) return this;
-        if (other.getIsContentClosed() != false) {
-          setIsContentClosed(other.getIsContentClosed());
-        }
-        internalGetMutableWishFlowerNumMap().mergeFrom(
-            other.internalGetWishFlowerNumMap());
-        if (other.getTodaySeedRewardId() != 0) {
-          setTodaySeedRewardId(other.getTodaySeedRewardId());
-        }
         if (other.getDayIndex() != 0) {
           setDayIndex(other.getDayIndex());
         }
+        if (other.getTodaySeedRewardId() != 0) {
+          setTodaySeedRewardId(other.getTodaySeedRewardId());
+        }
+        if (other.getIsContentClosed() != false) {
+          setIsContentClosed(other.getIsContentClosed());
+        }
+        internalGetMutableUnk3300EPMKDFOBLFK().mergeFrom(
+            other.internalGetUnk3300EPMKDFOBLFK());
+        internalGetMutableUnk3300ELAIBMDIBFJ().mergeFrom(
+            other.internalGetUnk3300ELAIBMDIBFJ());
         if (other.getIsTodayHasAwarded() != false) {
           setIsTodayHasAwarded(other.getIsTodayHasAwarded());
         }
-        internalGetMutableUsedFlowerNumMap().mergeFrom(
-            other.internalGetUsedFlowerNumMap());
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
         return this;
@@ -890,6 +890,68 @@ public final class PlantFlowerActivityDetailInfoOuterClass {
         return this;
       }
       private int bitField0_;
+
+      private int dayIndex_ ;
+      /**
+       * <code>uint32 day_index = 1;</code>
+       * @return The dayIndex.
+       */
+      @java.lang.Override
+      public int getDayIndex() {
+        return dayIndex_;
+      }
+      /**
+       * <code>uint32 day_index = 1;</code>
+       * @param value The dayIndex to set.
+       * @return This builder for chaining.
+       */
+      public Builder setDayIndex(int value) {
+        
+        dayIndex_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 day_index = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearDayIndex() {
+        
+        dayIndex_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int todaySeedRewardId_ ;
+      /**
+       * <code>uint32 today_seed_reward_id = 15;</code>
+       * @return The todaySeedRewardId.
+       */
+      @java.lang.Override
+      public int getTodaySeedRewardId() {
+        return todaySeedRewardId_;
+      }
+      /**
+       * <code>uint32 today_seed_reward_id = 15;</code>
+       * @param value The todaySeedRewardId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setTodaySeedRewardId(int value) {
+        
+        todaySeedRewardId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 today_seed_reward_id = 15;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearTodaySeedRewardId() {
+        
+        todaySeedRewardId_ = 0;
+        onChanged();
+        return this;
+      }
 
       private boolean isContentClosed_ ;
       /**
@@ -923,99 +985,99 @@ public final class PlantFlowerActivityDetailInfoOuterClass {
       }
 
       private com.google.protobuf.MapField<
-          java.lang.Integer, java.lang.Integer> wishFlowerNumMap_;
+          java.lang.Integer, java.lang.Integer> unk3300EPMKDFOBLFK_;
       private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
-      internalGetWishFlowerNumMap() {
-        if (wishFlowerNumMap_ == null) {
+      internalGetUnk3300EPMKDFOBLFK() {
+        if (unk3300EPMKDFOBLFK_ == null) {
           return com.google.protobuf.MapField.emptyMapField(
-              WishFlowerNumMapDefaultEntryHolder.defaultEntry);
+              Unk3300EPMKDFOBLFKDefaultEntryHolder.defaultEntry);
         }
-        return wishFlowerNumMap_;
+        return unk3300EPMKDFOBLFK_;
       }
       private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
-      internalGetMutableWishFlowerNumMap() {
+      internalGetMutableUnk3300EPMKDFOBLFK() {
         onChanged();;
-        if (wishFlowerNumMap_ == null) {
-          wishFlowerNumMap_ = com.google.protobuf.MapField.newMapField(
-              WishFlowerNumMapDefaultEntryHolder.defaultEntry);
+        if (unk3300EPMKDFOBLFK_ == null) {
+          unk3300EPMKDFOBLFK_ = com.google.protobuf.MapField.newMapField(
+              Unk3300EPMKDFOBLFKDefaultEntryHolder.defaultEntry);
         }
-        if (!wishFlowerNumMap_.isMutable()) {
-          wishFlowerNumMap_ = wishFlowerNumMap_.copy();
+        if (!unk3300EPMKDFOBLFK_.isMutable()) {
+          unk3300EPMKDFOBLFK_ = unk3300EPMKDFOBLFK_.copy();
         }
-        return wishFlowerNumMap_;
+        return unk3300EPMKDFOBLFK_;
       }
 
-      public int getWishFlowerNumMapCount() {
-        return internalGetWishFlowerNumMap().getMap().size();
+      public int getUnk3300EPMKDFOBLFKCount() {
+        return internalGetUnk3300EPMKDFOBLFK().getMap().size();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; wish_flower_num_map = 10;</code>
+       * <code>map&lt;uint32, uint32&gt; Unk3300_EPMKDFOBLFK = 9;</code>
        */
 
       @java.lang.Override
-      public boolean containsWishFlowerNumMap(
+      public boolean containsUnk3300EPMKDFOBLFK(
           int key) {
         
-        return internalGetWishFlowerNumMap().getMap().containsKey(key);
+        return internalGetUnk3300EPMKDFOBLFK().getMap().containsKey(key);
       }
       /**
-       * Use {@link #getWishFlowerNumMapMap()} instead.
+       * Use {@link #getUnk3300EPMKDFOBLFKMap()} instead.
        */
       @java.lang.Override
       @java.lang.Deprecated
-      public java.util.Map<java.lang.Integer, java.lang.Integer> getWishFlowerNumMap() {
-        return getWishFlowerNumMapMap();
+      public java.util.Map<java.lang.Integer, java.lang.Integer> getUnk3300EPMKDFOBLFK() {
+        return getUnk3300EPMKDFOBLFKMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; wish_flower_num_map = 10;</code>
+       * <code>map&lt;uint32, uint32&gt; Unk3300_EPMKDFOBLFK = 9;</code>
        */
       @java.lang.Override
 
-      public java.util.Map<java.lang.Integer, java.lang.Integer> getWishFlowerNumMapMap() {
-        return internalGetWishFlowerNumMap().getMap();
+      public java.util.Map<java.lang.Integer, java.lang.Integer> getUnk3300EPMKDFOBLFKMap() {
+        return internalGetUnk3300EPMKDFOBLFK().getMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; wish_flower_num_map = 10;</code>
+       * <code>map&lt;uint32, uint32&gt; Unk3300_EPMKDFOBLFK = 9;</code>
        */
       @java.lang.Override
 
-      public int getWishFlowerNumMapOrDefault(
+      public int getUnk3300EPMKDFOBLFKOrDefault(
           int key,
           int defaultValue) {
         
         java.util.Map<java.lang.Integer, java.lang.Integer> map =
-            internalGetWishFlowerNumMap().getMap();
+            internalGetUnk3300EPMKDFOBLFK().getMap();
         return map.containsKey(key) ? map.get(key) : defaultValue;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; wish_flower_num_map = 10;</code>
+       * <code>map&lt;uint32, uint32&gt; Unk3300_EPMKDFOBLFK = 9;</code>
        */
       @java.lang.Override
 
-      public int getWishFlowerNumMapOrThrow(
+      public int getUnk3300EPMKDFOBLFKOrThrow(
           int key) {
         
         java.util.Map<java.lang.Integer, java.lang.Integer> map =
-            internalGetWishFlowerNumMap().getMap();
+            internalGetUnk3300EPMKDFOBLFK().getMap();
         if (!map.containsKey(key)) {
           throw new java.lang.IllegalArgumentException();
         }
         return map.get(key);
       }
 
-      public Builder clearWishFlowerNumMap() {
-        internalGetMutableWishFlowerNumMap().getMutableMap()
+      public Builder clearUnk3300EPMKDFOBLFK() {
+        internalGetMutableUnk3300EPMKDFOBLFK().getMutableMap()
             .clear();
         return this;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; wish_flower_num_map = 10;</code>
+       * <code>map&lt;uint32, uint32&gt; Unk3300_EPMKDFOBLFK = 9;</code>
        */
 
-      public Builder removeWishFlowerNumMap(
+      public Builder removeUnk3300EPMKDFOBLFK(
           int key) {
         
-        internalGetMutableWishFlowerNumMap().getMutableMap()
+        internalGetMutableUnk3300EPMKDFOBLFK().getMutableMap()
             .remove(key);
         return this;
       }
@@ -1024,97 +1086,163 @@ public final class PlantFlowerActivityDetailInfoOuterClass {
        */
       @java.lang.Deprecated
       public java.util.Map<java.lang.Integer, java.lang.Integer>
-      getMutableWishFlowerNumMap() {
-        return internalGetMutableWishFlowerNumMap().getMutableMap();
+      getMutableUnk3300EPMKDFOBLFK() {
+        return internalGetMutableUnk3300EPMKDFOBLFK().getMutableMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; wish_flower_num_map = 10;</code>
+       * <code>map&lt;uint32, uint32&gt; Unk3300_EPMKDFOBLFK = 9;</code>
        */
-      public Builder putWishFlowerNumMap(
+      public Builder putUnk3300EPMKDFOBLFK(
           int key,
           int value) {
         
         
-        internalGetMutableWishFlowerNumMap().getMutableMap()
+        internalGetMutableUnk3300EPMKDFOBLFK().getMutableMap()
             .put(key, value);
         return this;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; wish_flower_num_map = 10;</code>
+       * <code>map&lt;uint32, uint32&gt; Unk3300_EPMKDFOBLFK = 9;</code>
        */
 
-      public Builder putAllWishFlowerNumMap(
+      public Builder putAllUnk3300EPMKDFOBLFK(
           java.util.Map<java.lang.Integer, java.lang.Integer> values) {
-        internalGetMutableWishFlowerNumMap().getMutableMap()
+        internalGetMutableUnk3300EPMKDFOBLFK().getMutableMap()
             .putAll(values);
         return this;
       }
 
-      private int todaySeedRewardId_ ;
-      /**
-       * <code>uint32 today_seed_reward_id = 11;</code>
-       * @return The todaySeedRewardId.
-       */
-      @java.lang.Override
-      public int getTodaySeedRewardId() {
-        return todaySeedRewardId_;
+      private com.google.protobuf.MapField<
+          java.lang.Integer, java.lang.Integer> unk3300ELAIBMDIBFJ_;
+      private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
+      internalGetUnk3300ELAIBMDIBFJ() {
+        if (unk3300ELAIBMDIBFJ_ == null) {
+          return com.google.protobuf.MapField.emptyMapField(
+              Unk3300ELAIBMDIBFJDefaultEntryHolder.defaultEntry);
+        }
+        return unk3300ELAIBMDIBFJ_;
       }
-      /**
-       * <code>uint32 today_seed_reward_id = 11;</code>
-       * @param value The todaySeedRewardId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setTodaySeedRewardId(int value) {
-        
-        todaySeedRewardId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 today_seed_reward_id = 11;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearTodaySeedRewardId() {
-        
-        todaySeedRewardId_ = 0;
-        onChanged();
-        return this;
+      private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
+      internalGetMutableUnk3300ELAIBMDIBFJ() {
+        onChanged();;
+        if (unk3300ELAIBMDIBFJ_ == null) {
+          unk3300ELAIBMDIBFJ_ = com.google.protobuf.MapField.newMapField(
+              Unk3300ELAIBMDIBFJDefaultEntryHolder.defaultEntry);
+        }
+        if (!unk3300ELAIBMDIBFJ_.isMutable()) {
+          unk3300ELAIBMDIBFJ_ = unk3300ELAIBMDIBFJ_.copy();
+        }
+        return unk3300ELAIBMDIBFJ_;
       }
 
-      private int dayIndex_ ;
-      /**
-       * <code>uint32 day_index = 1;</code>
-       * @return The dayIndex.
-       */
-      @java.lang.Override
-      public int getDayIndex() {
-        return dayIndex_;
+      public int getUnk3300ELAIBMDIBFJCount() {
+        return internalGetUnk3300ELAIBMDIBFJ().getMap().size();
       }
       /**
-       * <code>uint32 day_index = 1;</code>
-       * @param value The dayIndex to set.
-       * @return This builder for chaining.
+       * <code>map&lt;uint32, uint32&gt; Unk3300_ELAIBMDIBFJ = 5;</code>
        */
-      public Builder setDayIndex(int value) {
+
+      @java.lang.Override
+      public boolean containsUnk3300ELAIBMDIBFJ(
+          int key) {
         
-        dayIndex_ = value;
-        onChanged();
+        return internalGetUnk3300ELAIBMDIBFJ().getMap().containsKey(key);
+      }
+      /**
+       * Use {@link #getUnk3300ELAIBMDIBFJMap()} instead.
+       */
+      @java.lang.Override
+      @java.lang.Deprecated
+      public java.util.Map<java.lang.Integer, java.lang.Integer> getUnk3300ELAIBMDIBFJ() {
+        return getUnk3300ELAIBMDIBFJMap();
+      }
+      /**
+       * <code>map&lt;uint32, uint32&gt; Unk3300_ELAIBMDIBFJ = 5;</code>
+       */
+      @java.lang.Override
+
+      public java.util.Map<java.lang.Integer, java.lang.Integer> getUnk3300ELAIBMDIBFJMap() {
+        return internalGetUnk3300ELAIBMDIBFJ().getMap();
+      }
+      /**
+       * <code>map&lt;uint32, uint32&gt; Unk3300_ELAIBMDIBFJ = 5;</code>
+       */
+      @java.lang.Override
+
+      public int getUnk3300ELAIBMDIBFJOrDefault(
+          int key,
+          int defaultValue) {
+        
+        java.util.Map<java.lang.Integer, java.lang.Integer> map =
+            internalGetUnk3300ELAIBMDIBFJ().getMap();
+        return map.containsKey(key) ? map.get(key) : defaultValue;
+      }
+      /**
+       * <code>map&lt;uint32, uint32&gt; Unk3300_ELAIBMDIBFJ = 5;</code>
+       */
+      @java.lang.Override
+
+      public int getUnk3300ELAIBMDIBFJOrThrow(
+          int key) {
+        
+        java.util.Map<java.lang.Integer, java.lang.Integer> map =
+            internalGetUnk3300ELAIBMDIBFJ().getMap();
+        if (!map.containsKey(key)) {
+          throw new java.lang.IllegalArgumentException();
+        }
+        return map.get(key);
+      }
+
+      public Builder clearUnk3300ELAIBMDIBFJ() {
+        internalGetMutableUnk3300ELAIBMDIBFJ().getMutableMap()
+            .clear();
         return this;
       }
       /**
-       * <code>uint32 day_index = 1;</code>
-       * @return This builder for chaining.
+       * <code>map&lt;uint32, uint32&gt; Unk3300_ELAIBMDIBFJ = 5;</code>
        */
-      public Builder clearDayIndex() {
+
+      public Builder removeUnk3300ELAIBMDIBFJ(
+          int key) {
         
-        dayIndex_ = 0;
-        onChanged();
+        internalGetMutableUnk3300ELAIBMDIBFJ().getMutableMap()
+            .remove(key);
+        return this;
+      }
+      /**
+       * Use alternate mutation accessors instead.
+       */
+      @java.lang.Deprecated
+      public java.util.Map<java.lang.Integer, java.lang.Integer>
+      getMutableUnk3300ELAIBMDIBFJ() {
+        return internalGetMutableUnk3300ELAIBMDIBFJ().getMutableMap();
+      }
+      /**
+       * <code>map&lt;uint32, uint32&gt; Unk3300_ELAIBMDIBFJ = 5;</code>
+       */
+      public Builder putUnk3300ELAIBMDIBFJ(
+          int key,
+          int value) {
+        
+        
+        internalGetMutableUnk3300ELAIBMDIBFJ().getMutableMap()
+            .put(key, value);
+        return this;
+      }
+      /**
+       * <code>map&lt;uint32, uint32&gt; Unk3300_ELAIBMDIBFJ = 5;</code>
+       */
+
+      public Builder putAllUnk3300ELAIBMDIBFJ(
+          java.util.Map<java.lang.Integer, java.lang.Integer> values) {
+        internalGetMutableUnk3300ELAIBMDIBFJ().getMutableMap()
+            .putAll(values);
         return this;
       }
 
       private boolean isTodayHasAwarded_ ;
       /**
-       * <code>bool is_today_has_awarded = 13;</code>
+       * <code>bool is_today_has_awarded = 8;</code>
        * @return The isTodayHasAwarded.
        */
       @java.lang.Override
@@ -1122,7 +1250,7 @@ public final class PlantFlowerActivityDetailInfoOuterClass {
         return isTodayHasAwarded_;
       }
       /**
-       * <code>bool is_today_has_awarded = 13;</code>
+       * <code>bool is_today_has_awarded = 8;</code>
        * @param value The isTodayHasAwarded to set.
        * @return This builder for chaining.
        */
@@ -1133,141 +1261,13 @@ public final class PlantFlowerActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>bool is_today_has_awarded = 13;</code>
+       * <code>bool is_today_has_awarded = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsTodayHasAwarded() {
         
         isTodayHasAwarded_ = false;
         onChanged();
-        return this;
-      }
-
-      private com.google.protobuf.MapField<
-          java.lang.Integer, java.lang.Integer> usedFlowerNumMap_;
-      private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
-      internalGetUsedFlowerNumMap() {
-        if (usedFlowerNumMap_ == null) {
-          return com.google.protobuf.MapField.emptyMapField(
-              UsedFlowerNumMapDefaultEntryHolder.defaultEntry);
-        }
-        return usedFlowerNumMap_;
-      }
-      private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
-      internalGetMutableUsedFlowerNumMap() {
-        onChanged();;
-        if (usedFlowerNumMap_ == null) {
-          usedFlowerNumMap_ = com.google.protobuf.MapField.newMapField(
-              UsedFlowerNumMapDefaultEntryHolder.defaultEntry);
-        }
-        if (!usedFlowerNumMap_.isMutable()) {
-          usedFlowerNumMap_ = usedFlowerNumMap_.copy();
-        }
-        return usedFlowerNumMap_;
-      }
-
-      public int getUsedFlowerNumMapCount() {
-        return internalGetUsedFlowerNumMap().getMap().size();
-      }
-      /**
-       * <code>map&lt;uint32, uint32&gt; used_flower_num_map = 7;</code>
-       */
-
-      @java.lang.Override
-      public boolean containsUsedFlowerNumMap(
-          int key) {
-        
-        return internalGetUsedFlowerNumMap().getMap().containsKey(key);
-      }
-      /**
-       * Use {@link #getUsedFlowerNumMapMap()} instead.
-       */
-      @java.lang.Override
-      @java.lang.Deprecated
-      public java.util.Map<java.lang.Integer, java.lang.Integer> getUsedFlowerNumMap() {
-        return getUsedFlowerNumMapMap();
-      }
-      /**
-       * <code>map&lt;uint32, uint32&gt; used_flower_num_map = 7;</code>
-       */
-      @java.lang.Override
-
-      public java.util.Map<java.lang.Integer, java.lang.Integer> getUsedFlowerNumMapMap() {
-        return internalGetUsedFlowerNumMap().getMap();
-      }
-      /**
-       * <code>map&lt;uint32, uint32&gt; used_flower_num_map = 7;</code>
-       */
-      @java.lang.Override
-
-      public int getUsedFlowerNumMapOrDefault(
-          int key,
-          int defaultValue) {
-        
-        java.util.Map<java.lang.Integer, java.lang.Integer> map =
-            internalGetUsedFlowerNumMap().getMap();
-        return map.containsKey(key) ? map.get(key) : defaultValue;
-      }
-      /**
-       * <code>map&lt;uint32, uint32&gt; used_flower_num_map = 7;</code>
-       */
-      @java.lang.Override
-
-      public int getUsedFlowerNumMapOrThrow(
-          int key) {
-        
-        java.util.Map<java.lang.Integer, java.lang.Integer> map =
-            internalGetUsedFlowerNumMap().getMap();
-        if (!map.containsKey(key)) {
-          throw new java.lang.IllegalArgumentException();
-        }
-        return map.get(key);
-      }
-
-      public Builder clearUsedFlowerNumMap() {
-        internalGetMutableUsedFlowerNumMap().getMutableMap()
-            .clear();
-        return this;
-      }
-      /**
-       * <code>map&lt;uint32, uint32&gt; used_flower_num_map = 7;</code>
-       */
-
-      public Builder removeUsedFlowerNumMap(
-          int key) {
-        
-        internalGetMutableUsedFlowerNumMap().getMutableMap()
-            .remove(key);
-        return this;
-      }
-      /**
-       * Use alternate mutation accessors instead.
-       */
-      @java.lang.Deprecated
-      public java.util.Map<java.lang.Integer, java.lang.Integer>
-      getMutableUsedFlowerNumMap() {
-        return internalGetMutableUsedFlowerNumMap().getMutableMap();
-      }
-      /**
-       * <code>map&lt;uint32, uint32&gt; used_flower_num_map = 7;</code>
-       */
-      public Builder putUsedFlowerNumMap(
-          int key,
-          int value) {
-        
-        
-        internalGetMutableUsedFlowerNumMap().getMutableMap()
-            .put(key, value);
-        return this;
-      }
-      /**
-       * <code>map&lt;uint32, uint32&gt; used_flower_num_map = 7;</code>
-       */
-
-      public Builder putAllUsedFlowerNumMap(
-          java.util.Map<java.lang.Integer, java.lang.Integer> values) {
-        internalGetMutableUsedFlowerNumMap().getMutableMap()
-            .putAll(values);
         return this;
       }
       @java.lang.Override
@@ -1329,15 +1329,15 @@ public final class PlantFlowerActivityDetailInfoOuterClass {
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_PlantFlowerActivityDetailInfo_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_PlantFlowerActivityDetailInfo_WishFlowerNumMapEntry_descriptor;
+    internal_static_PlantFlowerActivityDetailInfo_Unk3300EPMKDFOBLFKEntry_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_PlantFlowerActivityDetailInfo_WishFlowerNumMapEntry_fieldAccessorTable;
+      internal_static_PlantFlowerActivityDetailInfo_Unk3300EPMKDFOBLFKEntry_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_PlantFlowerActivityDetailInfo_UsedFlowerNumMapEntry_descriptor;
+    internal_static_PlantFlowerActivityDetailInfo_Unk3300ELAIBMDIBFJEntry_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_PlantFlowerActivityDetailInfo_UsedFlowerNumMapEntry_fieldAccessorTable;
+      internal_static_PlantFlowerActivityDetailInfo_Unk3300ELAIBMDIBFJEntry_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -1347,19 +1347,19 @@ public final class PlantFlowerActivityDetailInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n#PlantFlowerActivityDetailInfo.proto\"\241\003" +
-      "\n\035PlantFlowerActivityDetailInfo\022\031\n\021is_co" +
-      "ntent_closed\030\003 \001(\010\022Q\n\023wish_flower_num_ma" +
-      "p\030\n \003(\01324.PlantFlowerActivityDetailInfo." +
-      "WishFlowerNumMapEntry\022\034\n\024today_seed_rewa" +
-      "rd_id\030\013 \001(\r\022\021\n\tday_index\030\001 \001(\r\022\034\n\024is_tod" +
-      "ay_has_awarded\030\r \001(\010\022Q\n\023used_flower_num_" +
-      "map\030\007 \003(\01324.PlantFlowerActivityDetailInf" +
-      "o.UsedFlowerNumMapEntry\0327\n\025WishFlowerNum" +
-      "MapEntry\022\013\n\003key\030\001 \001(\r\022\r\n\005value\030\002 \001(\r:\0028\001" +
-      "\0327\n\025UsedFlowerNumMapEntry\022\013\n\003key\030\001 \001(\r\022\r" +
-      "\n\005value\030\002 \001(\r:\0028\001B\033\n\031emu.grasscutter.net" +
-      ".protob\006proto3"
+      "\n#PlantFlowerActivityDetailInfo.proto\"\251\003" +
+      "\n\035PlantFlowerActivityDetailInfo\022\021\n\tday_i" +
+      "ndex\030\001 \001(\r\022\034\n\024today_seed_reward_id\030\017 \001(\r" +
+      "\022\031\n\021is_content_closed\030\003 \001(\010\022S\n\023Unk3300_E" +
+      "PMKDFOBLFK\030\t \003(\01326.PlantFlowerActivityDe" +
+      "tailInfo.Unk3300EPMKDFOBLFKEntry\022S\n\023Unk3" +
+      "300_ELAIBMDIBFJ\030\005 \003(\01326.PlantFlowerActiv" +
+      "ityDetailInfo.Unk3300ELAIBMDIBFJEntry\022\034\n" +
+      "\024is_today_has_awarded\030\010 \001(\010\0329\n\027Unk3300EP" +
+      "MKDFOBLFKEntry\022\013\n\003key\030\001 \001(\r\022\r\n\005value\030\002 \001" +
+      "(\r:\0028\001\0329\n\027Unk3300ELAIBMDIBFJEntry\022\013\n\003key" +
+      "\030\001 \001(\r\022\r\n\005value\030\002 \001(\r:\0028\001B\033\n\031emu.grasscu" +
+      "tter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -1370,18 +1370,18 @@ public final class PlantFlowerActivityDetailInfoOuterClass {
     internal_static_PlantFlowerActivityDetailInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_PlantFlowerActivityDetailInfo_descriptor,
-        new java.lang.String[] { "IsContentClosed", "WishFlowerNumMap", "TodaySeedRewardId", "DayIndex", "IsTodayHasAwarded", "UsedFlowerNumMap", });
-    internal_static_PlantFlowerActivityDetailInfo_WishFlowerNumMapEntry_descriptor =
+        new java.lang.String[] { "DayIndex", "TodaySeedRewardId", "IsContentClosed", "Unk3300EPMKDFOBLFK", "Unk3300ELAIBMDIBFJ", "IsTodayHasAwarded", });
+    internal_static_PlantFlowerActivityDetailInfo_Unk3300EPMKDFOBLFKEntry_descriptor =
       internal_static_PlantFlowerActivityDetailInfo_descriptor.getNestedTypes().get(0);
-    internal_static_PlantFlowerActivityDetailInfo_WishFlowerNumMapEntry_fieldAccessorTable = new
+    internal_static_PlantFlowerActivityDetailInfo_Unk3300EPMKDFOBLFKEntry_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_PlantFlowerActivityDetailInfo_WishFlowerNumMapEntry_descriptor,
+        internal_static_PlantFlowerActivityDetailInfo_Unk3300EPMKDFOBLFKEntry_descriptor,
         new java.lang.String[] { "Key", "Value", });
-    internal_static_PlantFlowerActivityDetailInfo_UsedFlowerNumMapEntry_descriptor =
+    internal_static_PlantFlowerActivityDetailInfo_Unk3300ELAIBMDIBFJEntry_descriptor =
       internal_static_PlantFlowerActivityDetailInfo_descriptor.getNestedTypes().get(1);
-    internal_static_PlantFlowerActivityDetailInfo_UsedFlowerNumMapEntry_fieldAccessorTable = new
+    internal_static_PlantFlowerActivityDetailInfo_Unk3300ELAIBMDIBFJEntry_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_PlantFlowerActivityDetailInfo_UsedFlowerNumMapEntry_descriptor,
+        internal_static_PlantFlowerActivityDetailInfo_Unk3300ELAIBMDIBFJEntry_descriptor,
         new java.lang.String[] { "Key", "Value", });
   }
 

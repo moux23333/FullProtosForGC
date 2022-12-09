@@ -19,80 +19,40 @@ public final class VintageMarketFinishStorePlayRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated uint32 trigger_env_event_list = 8;</code>
-     * @return A list containing the triggerEnvEventList.
-     */
-    java.util.List<java.lang.Integer> getTriggerEnvEventListList();
-    /**
-     * <code>repeated uint32 trigger_env_event_list = 8;</code>
-     * @return The count of triggerEnvEventList.
-     */
-    int getTriggerEnvEventListCount();
-    /**
-     * <code>repeated uint32 trigger_env_event_list = 8;</code>
-     * @param index The index of the element to return.
-     * @return The triggerEnvEventList at the given index.
-     */
-    int getTriggerEnvEventList(int index);
-
-    /**
-     * <code>uint32 store_round = 12;</code>
+     * <code>uint32 store_round = 10;</code>
      * @return The storeRound.
      */
     int getStoreRound();
 
     /**
-     * <code>repeated uint32 trigger_npc_event_list = 10;</code>
-     * @return A list containing the triggerNpcEventList.
+     * <code>repeated uint32 Unk3300_HJIHIOIGAPP = 15;</code>
+     * @return A list containing the unk3300HJIHIOIGAPP.
      */
-    java.util.List<java.lang.Integer> getTriggerNpcEventListList();
+    java.util.List<java.lang.Integer> getUnk3300HJIHIOIGAPPList();
     /**
-     * <code>repeated uint32 trigger_npc_event_list = 10;</code>
-     * @return The count of triggerNpcEventList.
+     * <code>repeated uint32 Unk3300_HJIHIOIGAPP = 15;</code>
+     * @return The count of unk3300HJIHIOIGAPP.
      */
-    int getTriggerNpcEventListCount();
+    int getUnk3300HJIHIOIGAPPCount();
     /**
-     * <code>repeated uint32 trigger_npc_event_list = 10;</code>
+     * <code>repeated uint32 Unk3300_HJIHIOIGAPP = 15;</code>
      * @param index The index of the element to return.
-     * @return The triggerNpcEventList at the given index.
+     * @return The unk3300HJIHIOIGAPP at the given index.
      */
-    int getTriggerNpcEventList(int index);
+    int getUnk3300HJIHIOIGAPP(int index);
 
     /**
-     * <code>repeated uint32 low_attr_store_list = 11;</code>
-     * @return A list containing the lowAttrStoreList.
+     * <code>int32 retcode = 9;</code>
+     * @return The retcode.
      */
-    java.util.List<java.lang.Integer> getLowAttrStoreListList();
-    /**
-     * <code>repeated uint32 low_attr_store_list = 11;</code>
-     * @return The count of lowAttrStoreList.
-     */
-    int getLowAttrStoreListCount();
-    /**
-     * <code>repeated uint32 low_attr_store_list = 11;</code>
-     * @param index The index of the element to return.
-     * @return The lowAttrStoreList at the given index.
-     */
-    int getLowAttrStoreList(int index);
+    int getRetcode();
 
     /**
-     * <code>uint32 round_coin_b_income = 9;</code>
-     * @return The roundCoinBIncome.
-     */
-    int getRoundCoinBIncome();
-
-    /**
-     * <code>uint32 round_delta_coin_c = 1;</code>
-     * @return The roundDeltaCoinC.
-     */
-    int getRoundDeltaCoinC();
-
-    /**
-     * <code>map&lt;uint32, uint32&gt; store_income_map = 3;</code>
+     * <code>map&lt;uint32, uint32&gt; store_income_map = 2;</code>
      */
     int getStoreIncomeMapCount();
     /**
-     * <code>map&lt;uint32, uint32&gt; store_income_map = 3;</code>
+     * <code>map&lt;uint32, uint32&gt; store_income_map = 2;</code>
      */
     boolean containsStoreIncomeMap(
         int key);
@@ -103,47 +63,91 @@ public final class VintageMarketFinishStorePlayRspOuterClass {
     java.util.Map<java.lang.Integer, java.lang.Integer>
     getStoreIncomeMap();
     /**
-     * <code>map&lt;uint32, uint32&gt; store_income_map = 3;</code>
+     * <code>map&lt;uint32, uint32&gt; store_income_map = 2;</code>
      */
     java.util.Map<java.lang.Integer, java.lang.Integer>
     getStoreIncomeMapMap();
     /**
-     * <code>map&lt;uint32, uint32&gt; store_income_map = 3;</code>
+     * <code>map&lt;uint32, uint32&gt; store_income_map = 2;</code>
      */
 
     int getStoreIncomeMapOrDefault(
         int key,
         int defaultValue);
     /**
-     * <code>map&lt;uint32, uint32&gt; store_income_map = 3;</code>
+     * <code>map&lt;uint32, uint32&gt; store_income_map = 2;</code>
      */
 
     int getStoreIncomeMapOrThrow(
         int key);
 
     /**
-     * <code>int32 retcode = 7;</code>
-     * @return The retcode.
+     * <code>uint32 Unk3300_DJILELFHFHJ = 6;</code>
+     * @return The unk3300DJILELFHFHJ.
      */
-    int getRetcode();
+    int getUnk3300DJILELFHFHJ();
 
     /**
-     * <code>uint32 round_total_income = 14;</code>
-     * @return The roundTotalIncome.
+     * <code>repeated uint32 Unk3300_OCIMKEPJOOL = 3;</code>
+     * @return A list containing the unk3300OCIMKEPJOOL.
      */
-    int getRoundTotalIncome();
+    java.util.List<java.lang.Integer> getUnk3300OCIMKEPJOOLList();
+    /**
+     * <code>repeated uint32 Unk3300_OCIMKEPJOOL = 3;</code>
+     * @return The count of unk3300OCIMKEPJOOL.
+     */
+    int getUnk3300OCIMKEPJOOLCount();
+    /**
+     * <code>repeated uint32 Unk3300_OCIMKEPJOOL = 3;</code>
+     * @param index The index of the element to return.
+     * @return The unk3300OCIMKEPJOOL at the given index.
+     */
+    int getUnk3300OCIMKEPJOOL(int index);
 
     /**
-     * <code>uint32 display_return_coin_b = 15;</code>
-     * @return The displayReturnCoinB.
+     * <code>uint32 Unk3300_GCDNOPJEIBG = 4;</code>
+     * @return The unk3300GCDNOPJEIBG.
      */
-    int getDisplayReturnCoinB();
+    int getUnk3300GCDNOPJEIBG();
+
+    /**
+     * <code>repeated uint32 Unk3300_BDAIONEPKIK = 1;</code>
+     * @return A list containing the unk3300BDAIONEPKIK.
+     */
+    java.util.List<java.lang.Integer> getUnk3300BDAIONEPKIKList();
+    /**
+     * <code>repeated uint32 Unk3300_BDAIONEPKIK = 1;</code>
+     * @return The count of unk3300BDAIONEPKIK.
+     */
+    int getUnk3300BDAIONEPKIKCount();
+    /**
+     * <code>repeated uint32 Unk3300_BDAIONEPKIK = 1;</code>
+     * @param index The index of the element to return.
+     * @return The unk3300BDAIONEPKIK at the given index.
+     */
+    int getUnk3300BDAIONEPKIK(int index);
+
+    /**
+     * <code>uint32 Unk3300_DGECJOKMDGN = 11;</code>
+     * @return The unk3300DGECJOKMDGN.
+     */
+    int getUnk3300DGECJOKMDGN();
+
+    /**
+     * <code>uint32 Unk3300_DLNFCBPDBBH = 14;</code>
+     * @return The unk3300DLNFCBPDBBH.
+     */
+    int getUnk3300DLNFCBPDBBH();
   }
   /**
    * <pre>
-   * CmdId: 23462
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 20941;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code VintageMarketFinishStorePlayRsp}
@@ -158,9 +162,9 @@ public final class VintageMarketFinishStorePlayRspOuterClass {
       super(builder);
     }
     private VintageMarketFinishStorePlayRsp() {
-      triggerEnvEventList_ = emptyIntList();
-      triggerNpcEventList_ = emptyIntList();
-      lowAttrStoreList_ = emptyIntList();
+      unk3300HJIHIOIGAPP_ = emptyIntList();
+      unk3300OCIMKEPJOOL_ = emptyIntList();
+      unk3300BDAIONEPKIK_ = emptyIntList();
     }
 
     @java.lang.Override
@@ -195,15 +199,31 @@ public final class VintageMarketFinishStorePlayRspOuterClass {
               done = true;
               break;
             case 8: {
-
-              roundDeltaCoinC_ = input.readUInt32();
+              if (!((mutable_bitField0_ & 0x00000008) != 0)) {
+                unk3300BDAIONEPKIK_ = newIntList();
+                mutable_bitField0_ |= 0x00000008;
+              }
+              unk3300BDAIONEPKIK_.addInt(input.readUInt32());
               break;
             }
-            case 26: {
-              if (!((mutable_bitField0_ & 0x00000008) != 0)) {
+            case 10: {
+              int length = input.readRawVarint32();
+              int limit = input.pushLimit(length);
+              if (!((mutable_bitField0_ & 0x00000008) != 0) && input.getBytesUntilLimit() > 0) {
+                unk3300BDAIONEPKIK_ = newIntList();
+                mutable_bitField0_ |= 0x00000008;
+              }
+              while (input.getBytesUntilLimit() > 0) {
+                unk3300BDAIONEPKIK_.addInt(input.readUInt32());
+              }
+              input.popLimit(limit);
+              break;
+            }
+            case 18: {
+              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
                 storeIncomeMap_ = com.google.protobuf.MapField.newMapField(
                     StoreIncomeMapDefaultEntryHolder.defaultEntry);
-                mutable_bitField0_ |= 0x00000008;
+                mutable_bitField0_ |= 0x00000002;
               }
               com.google.protobuf.MapEntry<java.lang.Integer, java.lang.Integer>
               storeIncomeMap__ = input.readMessage(
@@ -212,92 +232,76 @@ public final class VintageMarketFinishStorePlayRspOuterClass {
                   storeIncomeMap__.getKey(), storeIncomeMap__.getValue());
               break;
             }
-            case 56: {
-
-              retcode_ = input.readInt32();
-              break;
-            }
-            case 64: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                triggerEnvEventList_ = newIntList();
-                mutable_bitField0_ |= 0x00000001;
+            case 24: {
+              if (!((mutable_bitField0_ & 0x00000004) != 0)) {
+                unk3300OCIMKEPJOOL_ = newIntList();
+                mutable_bitField0_ |= 0x00000004;
               }
-              triggerEnvEventList_.addInt(input.readUInt32());
+              unk3300OCIMKEPJOOL_.addInt(input.readUInt32());
               break;
             }
-            case 66: {
+            case 26: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
-                triggerEnvEventList_ = newIntList();
-                mutable_bitField0_ |= 0x00000001;
+              if (!((mutable_bitField0_ & 0x00000004) != 0) && input.getBytesUntilLimit() > 0) {
+                unk3300OCIMKEPJOOL_ = newIntList();
+                mutable_bitField0_ |= 0x00000004;
               }
               while (input.getBytesUntilLimit() > 0) {
-                triggerEnvEventList_.addInt(input.readUInt32());
+                unk3300OCIMKEPJOOL_.addInt(input.readUInt32());
               }
               input.popLimit(limit);
+              break;
+            }
+            case 32: {
+
+              unk3300GCDNOPJEIBG_ = input.readUInt32();
+              break;
+            }
+            case 48: {
+
+              unk3300DJILELFHFHJ_ = input.readUInt32();
               break;
             }
             case 72: {
 
-              roundCoinBIncome_ = input.readUInt32();
+              retcode_ = input.readInt32();
               break;
             }
             case 80: {
-              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
-                triggerNpcEventList_ = newIntList();
-                mutable_bitField0_ |= 0x00000002;
-              }
-              triggerNpcEventList_.addInt(input.readUInt32());
-              break;
-            }
-            case 82: {
-              int length = input.readRawVarint32();
-              int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000002) != 0) && input.getBytesUntilLimit() > 0) {
-                triggerNpcEventList_ = newIntList();
-                mutable_bitField0_ |= 0x00000002;
-              }
-              while (input.getBytesUntilLimit() > 0) {
-                triggerNpcEventList_.addInt(input.readUInt32());
-              }
-              input.popLimit(limit);
-              break;
-            }
-            case 88: {
-              if (!((mutable_bitField0_ & 0x00000004) != 0)) {
-                lowAttrStoreList_ = newIntList();
-                mutable_bitField0_ |= 0x00000004;
-              }
-              lowAttrStoreList_.addInt(input.readUInt32());
-              break;
-            }
-            case 90: {
-              int length = input.readRawVarint32();
-              int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000004) != 0) && input.getBytesUntilLimit() > 0) {
-                lowAttrStoreList_ = newIntList();
-                mutable_bitField0_ |= 0x00000004;
-              }
-              while (input.getBytesUntilLimit() > 0) {
-                lowAttrStoreList_.addInt(input.readUInt32());
-              }
-              input.popLimit(limit);
-              break;
-            }
-            case 96: {
 
               storeRound_ = input.readUInt32();
               break;
             }
+            case 88: {
+
+              unk3300DGECJOKMDGN_ = input.readUInt32();
+              break;
+            }
             case 112: {
 
-              roundTotalIncome_ = input.readUInt32();
+              unk3300DLNFCBPDBBH_ = input.readUInt32();
               break;
             }
             case 120: {
-
-              displayReturnCoinB_ = input.readUInt32();
+              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+                unk3300HJIHIOIGAPP_ = newIntList();
+                mutable_bitField0_ |= 0x00000001;
+              }
+              unk3300HJIHIOIGAPP_.addInt(input.readUInt32());
+              break;
+            }
+            case 122: {
+              int length = input.readRawVarint32();
+              int limit = input.pushLimit(length);
+              if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
+                unk3300HJIHIOIGAPP_ = newIntList();
+                mutable_bitField0_ |= 0x00000001;
+              }
+              while (input.getBytesUntilLimit() > 0) {
+                unk3300HJIHIOIGAPP_.addInt(input.readUInt32());
+              }
+              input.popLimit(limit);
               break;
             }
             default: {
@@ -315,14 +319,14 @@ public final class VintageMarketFinishStorePlayRspOuterClass {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
       } finally {
-        if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          triggerEnvEventList_.makeImmutable(); // C
-        }
-        if (((mutable_bitField0_ & 0x00000002) != 0)) {
-          triggerNpcEventList_.makeImmutable(); // C
+        if (((mutable_bitField0_ & 0x00000008) != 0)) {
+          unk3300BDAIONEPKIK_.makeImmutable(); // C
         }
         if (((mutable_bitField0_ & 0x00000004) != 0)) {
-          lowAttrStoreList_.makeImmutable(); // C
+          unk3300OCIMKEPJOOL_.makeImmutable(); // C
+        }
+        if (((mutable_bitField0_ & 0x00000001) != 0)) {
+          unk3300HJIHIOIGAPP_.makeImmutable(); // C
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -338,7 +342,7 @@ public final class VintageMarketFinishStorePlayRspOuterClass {
     protected com.google.protobuf.MapField internalGetMapField(
         int number) {
       switch (number) {
-        case 3:
+        case 2:
           return internalGetStoreIncomeMap();
         default:
           throw new RuntimeException(
@@ -353,38 +357,10 @@ public final class VintageMarketFinishStorePlayRspOuterClass {
               emu.grasscutter.net.proto.VintageMarketFinishStorePlayRspOuterClass.VintageMarketFinishStorePlayRsp.class, emu.grasscutter.net.proto.VintageMarketFinishStorePlayRspOuterClass.VintageMarketFinishStorePlayRsp.Builder.class);
     }
 
-    public static final int TRIGGER_ENV_EVENT_LIST_FIELD_NUMBER = 8;
-    private com.google.protobuf.Internal.IntList triggerEnvEventList_;
-    /**
-     * <code>repeated uint32 trigger_env_event_list = 8;</code>
-     * @return A list containing the triggerEnvEventList.
-     */
-    @java.lang.Override
-    public java.util.List<java.lang.Integer>
-        getTriggerEnvEventListList() {
-      return triggerEnvEventList_;
-    }
-    /**
-     * <code>repeated uint32 trigger_env_event_list = 8;</code>
-     * @return The count of triggerEnvEventList.
-     */
-    public int getTriggerEnvEventListCount() {
-      return triggerEnvEventList_.size();
-    }
-    /**
-     * <code>repeated uint32 trigger_env_event_list = 8;</code>
-     * @param index The index of the element to return.
-     * @return The triggerEnvEventList at the given index.
-     */
-    public int getTriggerEnvEventList(int index) {
-      return triggerEnvEventList_.getInt(index);
-    }
-    private int triggerEnvEventListMemoizedSerializedSize = -1;
-
-    public static final int STORE_ROUND_FIELD_NUMBER = 12;
+    public static final int STORE_ROUND_FIELD_NUMBER = 10;
     private int storeRound_;
     /**
-     * <code>uint32 store_round = 12;</code>
+     * <code>uint32 store_round = 10;</code>
      * @return The storeRound.
      */
     @java.lang.Override
@@ -392,85 +368,46 @@ public final class VintageMarketFinishStorePlayRspOuterClass {
       return storeRound_;
     }
 
-    public static final int TRIGGER_NPC_EVENT_LIST_FIELD_NUMBER = 10;
-    private com.google.protobuf.Internal.IntList triggerNpcEventList_;
+    public static final int UNK3300_HJIHIOIGAPP_FIELD_NUMBER = 15;
+    private com.google.protobuf.Internal.IntList unk3300HJIHIOIGAPP_;
     /**
-     * <code>repeated uint32 trigger_npc_event_list = 10;</code>
-     * @return A list containing the triggerNpcEventList.
+     * <code>repeated uint32 Unk3300_HJIHIOIGAPP = 15;</code>
+     * @return A list containing the unk3300HJIHIOIGAPP.
      */
     @java.lang.Override
     public java.util.List<java.lang.Integer>
-        getTriggerNpcEventListList() {
-      return triggerNpcEventList_;
+        getUnk3300HJIHIOIGAPPList() {
+      return unk3300HJIHIOIGAPP_;
     }
     /**
-     * <code>repeated uint32 trigger_npc_event_list = 10;</code>
-     * @return The count of triggerNpcEventList.
+     * <code>repeated uint32 Unk3300_HJIHIOIGAPP = 15;</code>
+     * @return The count of unk3300HJIHIOIGAPP.
      */
-    public int getTriggerNpcEventListCount() {
-      return triggerNpcEventList_.size();
+    public int getUnk3300HJIHIOIGAPPCount() {
+      return unk3300HJIHIOIGAPP_.size();
     }
     /**
-     * <code>repeated uint32 trigger_npc_event_list = 10;</code>
+     * <code>repeated uint32 Unk3300_HJIHIOIGAPP = 15;</code>
      * @param index The index of the element to return.
-     * @return The triggerNpcEventList at the given index.
+     * @return The unk3300HJIHIOIGAPP at the given index.
      */
-    public int getTriggerNpcEventList(int index) {
-      return triggerNpcEventList_.getInt(index);
+    public int getUnk3300HJIHIOIGAPP(int index) {
+      return unk3300HJIHIOIGAPP_.getInt(index);
     }
-    private int triggerNpcEventListMemoizedSerializedSize = -1;
+    private int unk3300HJIHIOIGAPPMemoizedSerializedSize = -1;
 
-    public static final int LOW_ATTR_STORE_LIST_FIELD_NUMBER = 11;
-    private com.google.protobuf.Internal.IntList lowAttrStoreList_;
+    public static final int RETCODE_FIELD_NUMBER = 9;
+    private int retcode_;
     /**
-     * <code>repeated uint32 low_attr_store_list = 11;</code>
-     * @return A list containing the lowAttrStoreList.
+     * <code>int32 retcode = 9;</code>
+     * @return The retcode.
      */
     @java.lang.Override
-    public java.util.List<java.lang.Integer>
-        getLowAttrStoreListList() {
-      return lowAttrStoreList_;
-    }
-    /**
-     * <code>repeated uint32 low_attr_store_list = 11;</code>
-     * @return The count of lowAttrStoreList.
-     */
-    public int getLowAttrStoreListCount() {
-      return lowAttrStoreList_.size();
-    }
-    /**
-     * <code>repeated uint32 low_attr_store_list = 11;</code>
-     * @param index The index of the element to return.
-     * @return The lowAttrStoreList at the given index.
-     */
-    public int getLowAttrStoreList(int index) {
-      return lowAttrStoreList_.getInt(index);
-    }
-    private int lowAttrStoreListMemoizedSerializedSize = -1;
-
-    public static final int ROUND_COIN_B_INCOME_FIELD_NUMBER = 9;
-    private int roundCoinBIncome_;
-    /**
-     * <code>uint32 round_coin_b_income = 9;</code>
-     * @return The roundCoinBIncome.
-     */
-    @java.lang.Override
-    public int getRoundCoinBIncome() {
-      return roundCoinBIncome_;
+    public int getRetcode() {
+      return retcode_;
     }
 
-    public static final int ROUND_DELTA_COIN_C_FIELD_NUMBER = 1;
-    private int roundDeltaCoinC_;
-    /**
-     * <code>uint32 round_delta_coin_c = 1;</code>
-     * @return The roundDeltaCoinC.
-     */
-    @java.lang.Override
-    public int getRoundDeltaCoinC() {
-      return roundDeltaCoinC_;
-    }
-
-    public static final int STORE_INCOME_MAP_FIELD_NUMBER = 3;
+    public static final int STORE_INCOME_MAP_FIELD_NUMBER = 2;
     private static final class StoreIncomeMapDefaultEntryHolder {
       static final com.google.protobuf.MapEntry<
           java.lang.Integer, java.lang.Integer> defaultEntry =
@@ -497,7 +434,7 @@ public final class VintageMarketFinishStorePlayRspOuterClass {
       return internalGetStoreIncomeMap().getMap().size();
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; store_income_map = 3;</code>
+     * <code>map&lt;uint32, uint32&gt; store_income_map = 2;</code>
      */
 
     @java.lang.Override
@@ -515,7 +452,7 @@ public final class VintageMarketFinishStorePlayRspOuterClass {
       return getStoreIncomeMapMap();
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; store_income_map = 3;</code>
+     * <code>map&lt;uint32, uint32&gt; store_income_map = 2;</code>
      */
     @java.lang.Override
 
@@ -523,7 +460,7 @@ public final class VintageMarketFinishStorePlayRspOuterClass {
       return internalGetStoreIncomeMap().getMap();
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; store_income_map = 3;</code>
+     * <code>map&lt;uint32, uint32&gt; store_income_map = 2;</code>
      */
     @java.lang.Override
 
@@ -536,7 +473,7 @@ public final class VintageMarketFinishStorePlayRspOuterClass {
       return map.containsKey(key) ? map.get(key) : defaultValue;
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; store_income_map = 3;</code>
+     * <code>map&lt;uint32, uint32&gt; store_income_map = 2;</code>
      */
     @java.lang.Override
 
@@ -551,37 +488,104 @@ public final class VintageMarketFinishStorePlayRspOuterClass {
       return map.get(key);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 7;
-    private int retcode_;
+    public static final int UNK3300_DJILELFHFHJ_FIELD_NUMBER = 6;
+    private int unk3300DJILELFHFHJ_;
     /**
-     * <code>int32 retcode = 7;</code>
-     * @return The retcode.
+     * <code>uint32 Unk3300_DJILELFHFHJ = 6;</code>
+     * @return The unk3300DJILELFHFHJ.
      */
     @java.lang.Override
-    public int getRetcode() {
-      return retcode_;
+    public int getUnk3300DJILELFHFHJ() {
+      return unk3300DJILELFHFHJ_;
     }
 
-    public static final int ROUND_TOTAL_INCOME_FIELD_NUMBER = 14;
-    private int roundTotalIncome_;
+    public static final int UNK3300_OCIMKEPJOOL_FIELD_NUMBER = 3;
+    private com.google.protobuf.Internal.IntList unk3300OCIMKEPJOOL_;
     /**
-     * <code>uint32 round_total_income = 14;</code>
-     * @return The roundTotalIncome.
+     * <code>repeated uint32 Unk3300_OCIMKEPJOOL = 3;</code>
+     * @return A list containing the unk3300OCIMKEPJOOL.
      */
     @java.lang.Override
-    public int getRoundTotalIncome() {
-      return roundTotalIncome_;
+    public java.util.List<java.lang.Integer>
+        getUnk3300OCIMKEPJOOLList() {
+      return unk3300OCIMKEPJOOL_;
+    }
+    /**
+     * <code>repeated uint32 Unk3300_OCIMKEPJOOL = 3;</code>
+     * @return The count of unk3300OCIMKEPJOOL.
+     */
+    public int getUnk3300OCIMKEPJOOLCount() {
+      return unk3300OCIMKEPJOOL_.size();
+    }
+    /**
+     * <code>repeated uint32 Unk3300_OCIMKEPJOOL = 3;</code>
+     * @param index The index of the element to return.
+     * @return The unk3300OCIMKEPJOOL at the given index.
+     */
+    public int getUnk3300OCIMKEPJOOL(int index) {
+      return unk3300OCIMKEPJOOL_.getInt(index);
+    }
+    private int unk3300OCIMKEPJOOLMemoizedSerializedSize = -1;
+
+    public static final int UNK3300_GCDNOPJEIBG_FIELD_NUMBER = 4;
+    private int unk3300GCDNOPJEIBG_;
+    /**
+     * <code>uint32 Unk3300_GCDNOPJEIBG = 4;</code>
+     * @return The unk3300GCDNOPJEIBG.
+     */
+    @java.lang.Override
+    public int getUnk3300GCDNOPJEIBG() {
+      return unk3300GCDNOPJEIBG_;
     }
 
-    public static final int DISPLAY_RETURN_COIN_B_FIELD_NUMBER = 15;
-    private int displayReturnCoinB_;
+    public static final int UNK3300_BDAIONEPKIK_FIELD_NUMBER = 1;
+    private com.google.protobuf.Internal.IntList unk3300BDAIONEPKIK_;
     /**
-     * <code>uint32 display_return_coin_b = 15;</code>
-     * @return The displayReturnCoinB.
+     * <code>repeated uint32 Unk3300_BDAIONEPKIK = 1;</code>
+     * @return A list containing the unk3300BDAIONEPKIK.
      */
     @java.lang.Override
-    public int getDisplayReturnCoinB() {
-      return displayReturnCoinB_;
+    public java.util.List<java.lang.Integer>
+        getUnk3300BDAIONEPKIKList() {
+      return unk3300BDAIONEPKIK_;
+    }
+    /**
+     * <code>repeated uint32 Unk3300_BDAIONEPKIK = 1;</code>
+     * @return The count of unk3300BDAIONEPKIK.
+     */
+    public int getUnk3300BDAIONEPKIKCount() {
+      return unk3300BDAIONEPKIK_.size();
+    }
+    /**
+     * <code>repeated uint32 Unk3300_BDAIONEPKIK = 1;</code>
+     * @param index The index of the element to return.
+     * @return The unk3300BDAIONEPKIK at the given index.
+     */
+    public int getUnk3300BDAIONEPKIK(int index) {
+      return unk3300BDAIONEPKIK_.getInt(index);
+    }
+    private int unk3300BDAIONEPKIKMemoizedSerializedSize = -1;
+
+    public static final int UNK3300_DGECJOKMDGN_FIELD_NUMBER = 11;
+    private int unk3300DGECJOKMDGN_;
+    /**
+     * <code>uint32 Unk3300_DGECJOKMDGN = 11;</code>
+     * @return The unk3300DGECJOKMDGN.
+     */
+    @java.lang.Override
+    public int getUnk3300DGECJOKMDGN() {
+      return unk3300DGECJOKMDGN_;
+    }
+
+    public static final int UNK3300_DLNFCBPDBBH_FIELD_NUMBER = 14;
+    private int unk3300DLNFCBPDBBH_;
+    /**
+     * <code>uint32 Unk3300_DLNFCBPDBBH = 14;</code>
+     * @return The unk3300DLNFCBPDBBH.
+     */
+    @java.lang.Override
+    public int getUnk3300DLNFCBPDBBH() {
+      return unk3300DLNFCBPDBBH_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -599,50 +603,50 @@ public final class VintageMarketFinishStorePlayRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      if (roundDeltaCoinC_ != 0) {
-        output.writeUInt32(1, roundDeltaCoinC_);
+      if (getUnk3300BDAIONEPKIKList().size() > 0) {
+        output.writeUInt32NoTag(10);
+        output.writeUInt32NoTag(unk3300BDAIONEPKIKMemoizedSerializedSize);
+      }
+      for (int i = 0; i < unk3300BDAIONEPKIK_.size(); i++) {
+        output.writeUInt32NoTag(unk3300BDAIONEPKIK_.getInt(i));
       }
       com.google.protobuf.GeneratedMessageV3
         .serializeIntegerMapTo(
           output,
           internalGetStoreIncomeMap(),
           StoreIncomeMapDefaultEntryHolder.defaultEntry,
-          3);
+          2);
+      if (getUnk3300OCIMKEPJOOLList().size() > 0) {
+        output.writeUInt32NoTag(26);
+        output.writeUInt32NoTag(unk3300OCIMKEPJOOLMemoizedSerializedSize);
+      }
+      for (int i = 0; i < unk3300OCIMKEPJOOL_.size(); i++) {
+        output.writeUInt32NoTag(unk3300OCIMKEPJOOL_.getInt(i));
+      }
+      if (unk3300GCDNOPJEIBG_ != 0) {
+        output.writeUInt32(4, unk3300GCDNOPJEIBG_);
+      }
+      if (unk3300DJILELFHFHJ_ != 0) {
+        output.writeUInt32(6, unk3300DJILELFHFHJ_);
+      }
       if (retcode_ != 0) {
-        output.writeInt32(7, retcode_);
-      }
-      if (getTriggerEnvEventListList().size() > 0) {
-        output.writeUInt32NoTag(66);
-        output.writeUInt32NoTag(triggerEnvEventListMemoizedSerializedSize);
-      }
-      for (int i = 0; i < triggerEnvEventList_.size(); i++) {
-        output.writeUInt32NoTag(triggerEnvEventList_.getInt(i));
-      }
-      if (roundCoinBIncome_ != 0) {
-        output.writeUInt32(9, roundCoinBIncome_);
-      }
-      if (getTriggerNpcEventListList().size() > 0) {
-        output.writeUInt32NoTag(82);
-        output.writeUInt32NoTag(triggerNpcEventListMemoizedSerializedSize);
-      }
-      for (int i = 0; i < triggerNpcEventList_.size(); i++) {
-        output.writeUInt32NoTag(triggerNpcEventList_.getInt(i));
-      }
-      if (getLowAttrStoreListList().size() > 0) {
-        output.writeUInt32NoTag(90);
-        output.writeUInt32NoTag(lowAttrStoreListMemoizedSerializedSize);
-      }
-      for (int i = 0; i < lowAttrStoreList_.size(); i++) {
-        output.writeUInt32NoTag(lowAttrStoreList_.getInt(i));
+        output.writeInt32(9, retcode_);
       }
       if (storeRound_ != 0) {
-        output.writeUInt32(12, storeRound_);
+        output.writeUInt32(10, storeRound_);
       }
-      if (roundTotalIncome_ != 0) {
-        output.writeUInt32(14, roundTotalIncome_);
+      if (unk3300DGECJOKMDGN_ != 0) {
+        output.writeUInt32(11, unk3300DGECJOKMDGN_);
       }
-      if (displayReturnCoinB_ != 0) {
-        output.writeUInt32(15, displayReturnCoinB_);
+      if (unk3300DLNFCBPDBBH_ != 0) {
+        output.writeUInt32(14, unk3300DLNFCBPDBBH_);
+      }
+      if (getUnk3300HJIHIOIGAPPList().size() > 0) {
+        output.writeUInt32NoTag(122);
+        output.writeUInt32NoTag(unk3300HJIHIOIGAPPMemoizedSerializedSize);
+      }
+      for (int i = 0; i < unk3300HJIHIOIGAPP_.size(); i++) {
+        output.writeUInt32NoTag(unk3300HJIHIOIGAPP_.getInt(i));
       }
       unknownFields.writeTo(output);
     }
@@ -653,9 +657,19 @@ public final class VintageMarketFinishStorePlayRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (roundDeltaCoinC_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, roundDeltaCoinC_);
+      {
+        int dataSize = 0;
+        for (int i = 0; i < unk3300BDAIONEPKIK_.size(); i++) {
+          dataSize += com.google.protobuf.CodedOutputStream
+            .computeUInt32SizeNoTag(unk3300BDAIONEPKIK_.getInt(i));
+        }
+        size += dataSize;
+        if (!getUnk3300BDAIONEPKIKList().isEmpty()) {
+          size += 1;
+          size += com.google.protobuf.CodedOutputStream
+              .computeInt32SizeNoTag(dataSize);
+        }
+        unk3300BDAIONEPKIKMemoizedSerializedSize = dataSize;
       }
       for (java.util.Map.Entry<java.lang.Integer, java.lang.Integer> entry
            : internalGetStoreIncomeMap().getMap().entrySet()) {
@@ -665,69 +679,59 @@ public final class VintageMarketFinishStorePlayRspOuterClass {
             .setValue(entry.getValue())
             .build();
         size += com.google.protobuf.CodedOutputStream
-            .computeMessageSize(3, storeIncomeMap__);
+            .computeMessageSize(2, storeIncomeMap__);
+      }
+      {
+        int dataSize = 0;
+        for (int i = 0; i < unk3300OCIMKEPJOOL_.size(); i++) {
+          dataSize += com.google.protobuf.CodedOutputStream
+            .computeUInt32SizeNoTag(unk3300OCIMKEPJOOL_.getInt(i));
+        }
+        size += dataSize;
+        if (!getUnk3300OCIMKEPJOOLList().isEmpty()) {
+          size += 1;
+          size += com.google.protobuf.CodedOutputStream
+              .computeInt32SizeNoTag(dataSize);
+        }
+        unk3300OCIMKEPJOOLMemoizedSerializedSize = dataSize;
+      }
+      if (unk3300GCDNOPJEIBG_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(4, unk3300GCDNOPJEIBG_);
+      }
+      if (unk3300DJILELFHFHJ_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(6, unk3300DJILELFHFHJ_);
       }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(7, retcode_);
-      }
-      {
-        int dataSize = 0;
-        for (int i = 0; i < triggerEnvEventList_.size(); i++) {
-          dataSize += com.google.protobuf.CodedOutputStream
-            .computeUInt32SizeNoTag(triggerEnvEventList_.getInt(i));
-        }
-        size += dataSize;
-        if (!getTriggerEnvEventListList().isEmpty()) {
-          size += 1;
-          size += com.google.protobuf.CodedOutputStream
-              .computeInt32SizeNoTag(dataSize);
-        }
-        triggerEnvEventListMemoizedSerializedSize = dataSize;
-      }
-      if (roundCoinBIncome_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, roundCoinBIncome_);
-      }
-      {
-        int dataSize = 0;
-        for (int i = 0; i < triggerNpcEventList_.size(); i++) {
-          dataSize += com.google.protobuf.CodedOutputStream
-            .computeUInt32SizeNoTag(triggerNpcEventList_.getInt(i));
-        }
-        size += dataSize;
-        if (!getTriggerNpcEventListList().isEmpty()) {
-          size += 1;
-          size += com.google.protobuf.CodedOutputStream
-              .computeInt32SizeNoTag(dataSize);
-        }
-        triggerNpcEventListMemoizedSerializedSize = dataSize;
-      }
-      {
-        int dataSize = 0;
-        for (int i = 0; i < lowAttrStoreList_.size(); i++) {
-          dataSize += com.google.protobuf.CodedOutputStream
-            .computeUInt32SizeNoTag(lowAttrStoreList_.getInt(i));
-        }
-        size += dataSize;
-        if (!getLowAttrStoreListList().isEmpty()) {
-          size += 1;
-          size += com.google.protobuf.CodedOutputStream
-              .computeInt32SizeNoTag(dataSize);
-        }
-        lowAttrStoreListMemoizedSerializedSize = dataSize;
+          .computeInt32Size(9, retcode_);
       }
       if (storeRound_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, storeRound_);
+          .computeUInt32Size(10, storeRound_);
       }
-      if (roundTotalIncome_ != 0) {
+      if (unk3300DGECJOKMDGN_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, roundTotalIncome_);
+          .computeUInt32Size(11, unk3300DGECJOKMDGN_);
       }
-      if (displayReturnCoinB_ != 0) {
+      if (unk3300DLNFCBPDBBH_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, displayReturnCoinB_);
+          .computeUInt32Size(14, unk3300DLNFCBPDBBH_);
+      }
+      {
+        int dataSize = 0;
+        for (int i = 0; i < unk3300HJIHIOIGAPP_.size(); i++) {
+          dataSize += com.google.protobuf.CodedOutputStream
+            .computeUInt32SizeNoTag(unk3300HJIHIOIGAPP_.getInt(i));
+        }
+        size += dataSize;
+        if (!getUnk3300HJIHIOIGAPPList().isEmpty()) {
+          size += 1;
+          size += com.google.protobuf.CodedOutputStream
+              .computeInt32SizeNoTag(dataSize);
+        }
+        unk3300HJIHIOIGAPPMemoizedSerializedSize = dataSize;
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -744,26 +748,26 @@ public final class VintageMarketFinishStorePlayRspOuterClass {
       }
       emu.grasscutter.net.proto.VintageMarketFinishStorePlayRspOuterClass.VintageMarketFinishStorePlayRsp other = (emu.grasscutter.net.proto.VintageMarketFinishStorePlayRspOuterClass.VintageMarketFinishStorePlayRsp) obj;
 
-      if (!getTriggerEnvEventListList()
-          .equals(other.getTriggerEnvEventListList())) return false;
       if (getStoreRound()
           != other.getStoreRound()) return false;
-      if (!getTriggerNpcEventListList()
-          .equals(other.getTriggerNpcEventListList())) return false;
-      if (!getLowAttrStoreListList()
-          .equals(other.getLowAttrStoreListList())) return false;
-      if (getRoundCoinBIncome()
-          != other.getRoundCoinBIncome()) return false;
-      if (getRoundDeltaCoinC()
-          != other.getRoundDeltaCoinC()) return false;
-      if (!internalGetStoreIncomeMap().equals(
-          other.internalGetStoreIncomeMap())) return false;
+      if (!getUnk3300HJIHIOIGAPPList()
+          .equals(other.getUnk3300HJIHIOIGAPPList())) return false;
       if (getRetcode()
           != other.getRetcode()) return false;
-      if (getRoundTotalIncome()
-          != other.getRoundTotalIncome()) return false;
-      if (getDisplayReturnCoinB()
-          != other.getDisplayReturnCoinB()) return false;
+      if (!internalGetStoreIncomeMap().equals(
+          other.internalGetStoreIncomeMap())) return false;
+      if (getUnk3300DJILELFHFHJ()
+          != other.getUnk3300DJILELFHFHJ()) return false;
+      if (!getUnk3300OCIMKEPJOOLList()
+          .equals(other.getUnk3300OCIMKEPJOOLList())) return false;
+      if (getUnk3300GCDNOPJEIBG()
+          != other.getUnk3300GCDNOPJEIBG()) return false;
+      if (!getUnk3300BDAIONEPKIKList()
+          .equals(other.getUnk3300BDAIONEPKIKList())) return false;
+      if (getUnk3300DGECJOKMDGN()
+          != other.getUnk3300DGECJOKMDGN()) return false;
+      if (getUnk3300DLNFCBPDBBH()
+          != other.getUnk3300DLNFCBPDBBH()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -775,34 +779,34 @@ public final class VintageMarketFinishStorePlayRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (getTriggerEnvEventListCount() > 0) {
-        hash = (37 * hash) + TRIGGER_ENV_EVENT_LIST_FIELD_NUMBER;
-        hash = (53 * hash) + getTriggerEnvEventListList().hashCode();
-      }
       hash = (37 * hash) + STORE_ROUND_FIELD_NUMBER;
       hash = (53 * hash) + getStoreRound();
-      if (getTriggerNpcEventListCount() > 0) {
-        hash = (37 * hash) + TRIGGER_NPC_EVENT_LIST_FIELD_NUMBER;
-        hash = (53 * hash) + getTriggerNpcEventListList().hashCode();
+      if (getUnk3300HJIHIOIGAPPCount() > 0) {
+        hash = (37 * hash) + UNK3300_HJIHIOIGAPP_FIELD_NUMBER;
+        hash = (53 * hash) + getUnk3300HJIHIOIGAPPList().hashCode();
       }
-      if (getLowAttrStoreListCount() > 0) {
-        hash = (37 * hash) + LOW_ATTR_STORE_LIST_FIELD_NUMBER;
-        hash = (53 * hash) + getLowAttrStoreListList().hashCode();
-      }
-      hash = (37 * hash) + ROUND_COIN_B_INCOME_FIELD_NUMBER;
-      hash = (53 * hash) + getRoundCoinBIncome();
-      hash = (37 * hash) + ROUND_DELTA_COIN_C_FIELD_NUMBER;
-      hash = (53 * hash) + getRoundDeltaCoinC();
+      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
+      hash = (53 * hash) + getRetcode();
       if (!internalGetStoreIncomeMap().getMap().isEmpty()) {
         hash = (37 * hash) + STORE_INCOME_MAP_FIELD_NUMBER;
         hash = (53 * hash) + internalGetStoreIncomeMap().hashCode();
       }
-      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
-      hash = (53 * hash) + getRetcode();
-      hash = (37 * hash) + ROUND_TOTAL_INCOME_FIELD_NUMBER;
-      hash = (53 * hash) + getRoundTotalIncome();
-      hash = (37 * hash) + DISPLAY_RETURN_COIN_B_FIELD_NUMBER;
-      hash = (53 * hash) + getDisplayReturnCoinB();
+      hash = (37 * hash) + UNK3300_DJILELFHFHJ_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300DJILELFHFHJ();
+      if (getUnk3300OCIMKEPJOOLCount() > 0) {
+        hash = (37 * hash) + UNK3300_OCIMKEPJOOL_FIELD_NUMBER;
+        hash = (53 * hash) + getUnk3300OCIMKEPJOOLList().hashCode();
+      }
+      hash = (37 * hash) + UNK3300_GCDNOPJEIBG_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300GCDNOPJEIBG();
+      if (getUnk3300BDAIONEPKIKCount() > 0) {
+        hash = (37 * hash) + UNK3300_BDAIONEPKIK_FIELD_NUMBER;
+        hash = (53 * hash) + getUnk3300BDAIONEPKIKList().hashCode();
+      }
+      hash = (37 * hash) + UNK3300_DGECJOKMDGN_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300DGECJOKMDGN();
+      hash = (37 * hash) + UNK3300_DLNFCBPDBBH_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300DLNFCBPDBBH();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -900,9 +904,13 @@ public final class VintageMarketFinishStorePlayRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 23462
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 20941;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code VintageMarketFinishStorePlayRsp}
@@ -920,7 +928,7 @@ public final class VintageMarketFinishStorePlayRspOuterClass {
       protected com.google.protobuf.MapField internalGetMapField(
           int number) {
         switch (number) {
-          case 3:
+          case 2:
             return internalGetStoreIncomeMap();
           default:
             throw new RuntimeException(
@@ -931,7 +939,7 @@ public final class VintageMarketFinishStorePlayRspOuterClass {
       protected com.google.protobuf.MapField internalGetMutableMapField(
           int number) {
         switch (number) {
-          case 3:
+          case 2:
             return internalGetMutableStoreIncomeMap();
           default:
             throw new RuntimeException(
@@ -964,24 +972,24 @@ public final class VintageMarketFinishStorePlayRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        triggerEnvEventList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000001);
         storeRound_ = 0;
 
-        triggerNpcEventList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000002);
-        lowAttrStoreList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000004);
-        roundCoinBIncome_ = 0;
-
-        roundDeltaCoinC_ = 0;
-
-        internalGetMutableStoreIncomeMap().clear();
+        unk3300HJIHIOIGAPP_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000001);
         retcode_ = 0;
 
-        roundTotalIncome_ = 0;
+        internalGetMutableStoreIncomeMap().clear();
+        unk3300DJILELFHFHJ_ = 0;
 
-        displayReturnCoinB_ = 0;
+        unk3300OCIMKEPJOOL_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000004);
+        unk3300GCDNOPJEIBG_ = 0;
+
+        unk3300BDAIONEPKIK_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000008);
+        unk3300DGECJOKMDGN_ = 0;
+
+        unk3300DLNFCBPDBBH_ = 0;
 
         return this;
       }
@@ -1010,29 +1018,29 @@ public final class VintageMarketFinishStorePlayRspOuterClass {
       public emu.grasscutter.net.proto.VintageMarketFinishStorePlayRspOuterClass.VintageMarketFinishStorePlayRsp buildPartial() {
         emu.grasscutter.net.proto.VintageMarketFinishStorePlayRspOuterClass.VintageMarketFinishStorePlayRsp result = new emu.grasscutter.net.proto.VintageMarketFinishStorePlayRspOuterClass.VintageMarketFinishStorePlayRsp(this);
         int from_bitField0_ = bitField0_;
+        result.storeRound_ = storeRound_;
         if (((bitField0_ & 0x00000001) != 0)) {
-          triggerEnvEventList_.makeImmutable();
+          unk3300HJIHIOIGAPP_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000001);
         }
-        result.triggerEnvEventList_ = triggerEnvEventList_;
-        result.storeRound_ = storeRound_;
-        if (((bitField0_ & 0x00000002) != 0)) {
-          triggerNpcEventList_.makeImmutable();
-          bitField0_ = (bitField0_ & ~0x00000002);
-        }
-        result.triggerNpcEventList_ = triggerNpcEventList_;
-        if (((bitField0_ & 0x00000004) != 0)) {
-          lowAttrStoreList_.makeImmutable();
-          bitField0_ = (bitField0_ & ~0x00000004);
-        }
-        result.lowAttrStoreList_ = lowAttrStoreList_;
-        result.roundCoinBIncome_ = roundCoinBIncome_;
-        result.roundDeltaCoinC_ = roundDeltaCoinC_;
+        result.unk3300HJIHIOIGAPP_ = unk3300HJIHIOIGAPP_;
+        result.retcode_ = retcode_;
         result.storeIncomeMap_ = internalGetStoreIncomeMap();
         result.storeIncomeMap_.makeImmutable();
-        result.retcode_ = retcode_;
-        result.roundTotalIncome_ = roundTotalIncome_;
-        result.displayReturnCoinB_ = displayReturnCoinB_;
+        result.unk3300DJILELFHFHJ_ = unk3300DJILELFHFHJ_;
+        if (((bitField0_ & 0x00000004) != 0)) {
+          unk3300OCIMKEPJOOL_.makeImmutable();
+          bitField0_ = (bitField0_ & ~0x00000004);
+        }
+        result.unk3300OCIMKEPJOOL_ = unk3300OCIMKEPJOOL_;
+        result.unk3300GCDNOPJEIBG_ = unk3300GCDNOPJEIBG_;
+        if (((bitField0_ & 0x00000008) != 0)) {
+          unk3300BDAIONEPKIK_.makeImmutable();
+          bitField0_ = (bitField0_ & ~0x00000008);
+        }
+        result.unk3300BDAIONEPKIK_ = unk3300BDAIONEPKIK_;
+        result.unk3300DGECJOKMDGN_ = unk3300DGECJOKMDGN_;
+        result.unk3300DLNFCBPDBBH_ = unk3300DLNFCBPDBBH_;
         onBuilt();
         return result;
       }
@@ -1081,55 +1089,55 @@ public final class VintageMarketFinishStorePlayRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.VintageMarketFinishStorePlayRspOuterClass.VintageMarketFinishStorePlayRsp other) {
         if (other == emu.grasscutter.net.proto.VintageMarketFinishStorePlayRspOuterClass.VintageMarketFinishStorePlayRsp.getDefaultInstance()) return this;
-        if (!other.triggerEnvEventList_.isEmpty()) {
-          if (triggerEnvEventList_.isEmpty()) {
-            triggerEnvEventList_ = other.triggerEnvEventList_;
-            bitField0_ = (bitField0_ & ~0x00000001);
-          } else {
-            ensureTriggerEnvEventListIsMutable();
-            triggerEnvEventList_.addAll(other.triggerEnvEventList_);
-          }
-          onChanged();
-        }
         if (other.getStoreRound() != 0) {
           setStoreRound(other.getStoreRound());
         }
-        if (!other.triggerNpcEventList_.isEmpty()) {
-          if (triggerNpcEventList_.isEmpty()) {
-            triggerNpcEventList_ = other.triggerNpcEventList_;
-            bitField0_ = (bitField0_ & ~0x00000002);
+        if (!other.unk3300HJIHIOIGAPP_.isEmpty()) {
+          if (unk3300HJIHIOIGAPP_.isEmpty()) {
+            unk3300HJIHIOIGAPP_ = other.unk3300HJIHIOIGAPP_;
+            bitField0_ = (bitField0_ & ~0x00000001);
           } else {
-            ensureTriggerNpcEventListIsMutable();
-            triggerNpcEventList_.addAll(other.triggerNpcEventList_);
+            ensureUnk3300HJIHIOIGAPPIsMutable();
+            unk3300HJIHIOIGAPP_.addAll(other.unk3300HJIHIOIGAPP_);
           }
           onChanged();
         }
-        if (!other.lowAttrStoreList_.isEmpty()) {
-          if (lowAttrStoreList_.isEmpty()) {
-            lowAttrStoreList_ = other.lowAttrStoreList_;
-            bitField0_ = (bitField0_ & ~0x00000004);
-          } else {
-            ensureLowAttrStoreListIsMutable();
-            lowAttrStoreList_.addAll(other.lowAttrStoreList_);
-          }
-          onChanged();
-        }
-        if (other.getRoundCoinBIncome() != 0) {
-          setRoundCoinBIncome(other.getRoundCoinBIncome());
-        }
-        if (other.getRoundDeltaCoinC() != 0) {
-          setRoundDeltaCoinC(other.getRoundDeltaCoinC());
-        }
-        internalGetMutableStoreIncomeMap().mergeFrom(
-            other.internalGetStoreIncomeMap());
         if (other.getRetcode() != 0) {
           setRetcode(other.getRetcode());
         }
-        if (other.getRoundTotalIncome() != 0) {
-          setRoundTotalIncome(other.getRoundTotalIncome());
+        internalGetMutableStoreIncomeMap().mergeFrom(
+            other.internalGetStoreIncomeMap());
+        if (other.getUnk3300DJILELFHFHJ() != 0) {
+          setUnk3300DJILELFHFHJ(other.getUnk3300DJILELFHFHJ());
         }
-        if (other.getDisplayReturnCoinB() != 0) {
-          setDisplayReturnCoinB(other.getDisplayReturnCoinB());
+        if (!other.unk3300OCIMKEPJOOL_.isEmpty()) {
+          if (unk3300OCIMKEPJOOL_.isEmpty()) {
+            unk3300OCIMKEPJOOL_ = other.unk3300OCIMKEPJOOL_;
+            bitField0_ = (bitField0_ & ~0x00000004);
+          } else {
+            ensureUnk3300OCIMKEPJOOLIsMutable();
+            unk3300OCIMKEPJOOL_.addAll(other.unk3300OCIMKEPJOOL_);
+          }
+          onChanged();
+        }
+        if (other.getUnk3300GCDNOPJEIBG() != 0) {
+          setUnk3300GCDNOPJEIBG(other.getUnk3300GCDNOPJEIBG());
+        }
+        if (!other.unk3300BDAIONEPKIK_.isEmpty()) {
+          if (unk3300BDAIONEPKIK_.isEmpty()) {
+            unk3300BDAIONEPKIK_ = other.unk3300BDAIONEPKIK_;
+            bitField0_ = (bitField0_ & ~0x00000008);
+          } else {
+            ensureUnk3300BDAIONEPKIKIsMutable();
+            unk3300BDAIONEPKIK_.addAll(other.unk3300BDAIONEPKIK_);
+          }
+          onChanged();
+        }
+        if (other.getUnk3300DGECJOKMDGN() != 0) {
+          setUnk3300DGECJOKMDGN(other.getUnk3300DGECJOKMDGN());
+        }
+        if (other.getUnk3300DLNFCBPDBBH() != 0) {
+          setUnk3300DLNFCBPDBBH(other.getUnk3300DLNFCBPDBBH());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -1161,88 +1169,9 @@ public final class VintageMarketFinishStorePlayRspOuterClass {
       }
       private int bitField0_;
 
-      private com.google.protobuf.Internal.IntList triggerEnvEventList_ = emptyIntList();
-      private void ensureTriggerEnvEventListIsMutable() {
-        if (!((bitField0_ & 0x00000001) != 0)) {
-          triggerEnvEventList_ = mutableCopy(triggerEnvEventList_);
-          bitField0_ |= 0x00000001;
-         }
-      }
-      /**
-       * <code>repeated uint32 trigger_env_event_list = 8;</code>
-       * @return A list containing the triggerEnvEventList.
-       */
-      public java.util.List<java.lang.Integer>
-          getTriggerEnvEventListList() {
-        return ((bitField0_ & 0x00000001) != 0) ?
-                 java.util.Collections.unmodifiableList(triggerEnvEventList_) : triggerEnvEventList_;
-      }
-      /**
-       * <code>repeated uint32 trigger_env_event_list = 8;</code>
-       * @return The count of triggerEnvEventList.
-       */
-      public int getTriggerEnvEventListCount() {
-        return triggerEnvEventList_.size();
-      }
-      /**
-       * <code>repeated uint32 trigger_env_event_list = 8;</code>
-       * @param index The index of the element to return.
-       * @return The triggerEnvEventList at the given index.
-       */
-      public int getTriggerEnvEventList(int index) {
-        return triggerEnvEventList_.getInt(index);
-      }
-      /**
-       * <code>repeated uint32 trigger_env_event_list = 8;</code>
-       * @param index The index to set the value at.
-       * @param value The triggerEnvEventList to set.
-       * @return This builder for chaining.
-       */
-      public Builder setTriggerEnvEventList(
-          int index, int value) {
-        ensureTriggerEnvEventListIsMutable();
-        triggerEnvEventList_.setInt(index, value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 trigger_env_event_list = 8;</code>
-       * @param value The triggerEnvEventList to add.
-       * @return This builder for chaining.
-       */
-      public Builder addTriggerEnvEventList(int value) {
-        ensureTriggerEnvEventListIsMutable();
-        triggerEnvEventList_.addInt(value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 trigger_env_event_list = 8;</code>
-       * @param values The triggerEnvEventList to add.
-       * @return This builder for chaining.
-       */
-      public Builder addAllTriggerEnvEventList(
-          java.lang.Iterable<? extends java.lang.Integer> values) {
-        ensureTriggerEnvEventListIsMutable();
-        com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, triggerEnvEventList_);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 trigger_env_event_list = 8;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearTriggerEnvEventList() {
-        triggerEnvEventList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000001);
-        onChanged();
-        return this;
-      }
-
       private int storeRound_ ;
       /**
-       * <code>uint32 store_round = 12;</code>
+       * <code>uint32 store_round = 10;</code>
        * @return The storeRound.
        */
       @java.lang.Override
@@ -1250,7 +1179,7 @@ public final class VintageMarketFinishStorePlayRspOuterClass {
         return storeRound_;
       }
       /**
-       * <code>uint32 store_round = 12;</code>
+       * <code>uint32 store_round = 10;</code>
        * @param value The storeRound to set.
        * @return This builder for chaining.
        */
@@ -1261,7 +1190,7 @@ public final class VintageMarketFinishStorePlayRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 store_round = 12;</code>
+       * <code>uint32 store_round = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearStoreRound() {
@@ -1271,222 +1200,112 @@ public final class VintageMarketFinishStorePlayRspOuterClass {
         return this;
       }
 
-      private com.google.protobuf.Internal.IntList triggerNpcEventList_ = emptyIntList();
-      private void ensureTriggerNpcEventListIsMutable() {
-        if (!((bitField0_ & 0x00000002) != 0)) {
-          triggerNpcEventList_ = mutableCopy(triggerNpcEventList_);
-          bitField0_ |= 0x00000002;
+      private com.google.protobuf.Internal.IntList unk3300HJIHIOIGAPP_ = emptyIntList();
+      private void ensureUnk3300HJIHIOIGAPPIsMutable() {
+        if (!((bitField0_ & 0x00000001) != 0)) {
+          unk3300HJIHIOIGAPP_ = mutableCopy(unk3300HJIHIOIGAPP_);
+          bitField0_ |= 0x00000001;
          }
       }
       /**
-       * <code>repeated uint32 trigger_npc_event_list = 10;</code>
-       * @return A list containing the triggerNpcEventList.
+       * <code>repeated uint32 Unk3300_HJIHIOIGAPP = 15;</code>
+       * @return A list containing the unk3300HJIHIOIGAPP.
        */
       public java.util.List<java.lang.Integer>
-          getTriggerNpcEventListList() {
-        return ((bitField0_ & 0x00000002) != 0) ?
-                 java.util.Collections.unmodifiableList(triggerNpcEventList_) : triggerNpcEventList_;
+          getUnk3300HJIHIOIGAPPList() {
+        return ((bitField0_ & 0x00000001) != 0) ?
+                 java.util.Collections.unmodifiableList(unk3300HJIHIOIGAPP_) : unk3300HJIHIOIGAPP_;
       }
       /**
-       * <code>repeated uint32 trigger_npc_event_list = 10;</code>
-       * @return The count of triggerNpcEventList.
+       * <code>repeated uint32 Unk3300_HJIHIOIGAPP = 15;</code>
+       * @return The count of unk3300HJIHIOIGAPP.
        */
-      public int getTriggerNpcEventListCount() {
-        return triggerNpcEventList_.size();
+      public int getUnk3300HJIHIOIGAPPCount() {
+        return unk3300HJIHIOIGAPP_.size();
       }
       /**
-       * <code>repeated uint32 trigger_npc_event_list = 10;</code>
+       * <code>repeated uint32 Unk3300_HJIHIOIGAPP = 15;</code>
        * @param index The index of the element to return.
-       * @return The triggerNpcEventList at the given index.
+       * @return The unk3300HJIHIOIGAPP at the given index.
        */
-      public int getTriggerNpcEventList(int index) {
-        return triggerNpcEventList_.getInt(index);
+      public int getUnk3300HJIHIOIGAPP(int index) {
+        return unk3300HJIHIOIGAPP_.getInt(index);
       }
       /**
-       * <code>repeated uint32 trigger_npc_event_list = 10;</code>
+       * <code>repeated uint32 Unk3300_HJIHIOIGAPP = 15;</code>
        * @param index The index to set the value at.
-       * @param value The triggerNpcEventList to set.
+       * @param value The unk3300HJIHIOIGAPP to set.
        * @return This builder for chaining.
        */
-      public Builder setTriggerNpcEventList(
+      public Builder setUnk3300HJIHIOIGAPP(
           int index, int value) {
-        ensureTriggerNpcEventListIsMutable();
-        triggerNpcEventList_.setInt(index, value);
+        ensureUnk3300HJIHIOIGAPPIsMutable();
+        unk3300HJIHIOIGAPP_.setInt(index, value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 trigger_npc_event_list = 10;</code>
-       * @param value The triggerNpcEventList to add.
+       * <code>repeated uint32 Unk3300_HJIHIOIGAPP = 15;</code>
+       * @param value The unk3300HJIHIOIGAPP to add.
        * @return This builder for chaining.
        */
-      public Builder addTriggerNpcEventList(int value) {
-        ensureTriggerNpcEventListIsMutable();
-        triggerNpcEventList_.addInt(value);
+      public Builder addUnk3300HJIHIOIGAPP(int value) {
+        ensureUnk3300HJIHIOIGAPPIsMutable();
+        unk3300HJIHIOIGAPP_.addInt(value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 trigger_npc_event_list = 10;</code>
-       * @param values The triggerNpcEventList to add.
+       * <code>repeated uint32 Unk3300_HJIHIOIGAPP = 15;</code>
+       * @param values The unk3300HJIHIOIGAPP to add.
        * @return This builder for chaining.
        */
-      public Builder addAllTriggerNpcEventList(
+      public Builder addAllUnk3300HJIHIOIGAPP(
           java.lang.Iterable<? extends java.lang.Integer> values) {
-        ensureTriggerNpcEventListIsMutable();
+        ensureUnk3300HJIHIOIGAPPIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, triggerNpcEventList_);
+            values, unk3300HJIHIOIGAPP_);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 trigger_npc_event_list = 10;</code>
+       * <code>repeated uint32 Unk3300_HJIHIOIGAPP = 15;</code>
        * @return This builder for chaining.
        */
-      public Builder clearTriggerNpcEventList() {
-        triggerNpcEventList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000002);
+      public Builder clearUnk3300HJIHIOIGAPP() {
+        unk3300HJIHIOIGAPP_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000001);
         onChanged();
         return this;
       }
 
-      private com.google.protobuf.Internal.IntList lowAttrStoreList_ = emptyIntList();
-      private void ensureLowAttrStoreListIsMutable() {
-        if (!((bitField0_ & 0x00000004) != 0)) {
-          lowAttrStoreList_ = mutableCopy(lowAttrStoreList_);
-          bitField0_ |= 0x00000004;
-         }
-      }
+      private int retcode_ ;
       /**
-       * <code>repeated uint32 low_attr_store_list = 11;</code>
-       * @return A list containing the lowAttrStoreList.
-       */
-      public java.util.List<java.lang.Integer>
-          getLowAttrStoreListList() {
-        return ((bitField0_ & 0x00000004) != 0) ?
-                 java.util.Collections.unmodifiableList(lowAttrStoreList_) : lowAttrStoreList_;
-      }
-      /**
-       * <code>repeated uint32 low_attr_store_list = 11;</code>
-       * @return The count of lowAttrStoreList.
-       */
-      public int getLowAttrStoreListCount() {
-        return lowAttrStoreList_.size();
-      }
-      /**
-       * <code>repeated uint32 low_attr_store_list = 11;</code>
-       * @param index The index of the element to return.
-       * @return The lowAttrStoreList at the given index.
-       */
-      public int getLowAttrStoreList(int index) {
-        return lowAttrStoreList_.getInt(index);
-      }
-      /**
-       * <code>repeated uint32 low_attr_store_list = 11;</code>
-       * @param index The index to set the value at.
-       * @param value The lowAttrStoreList to set.
-       * @return This builder for chaining.
-       */
-      public Builder setLowAttrStoreList(
-          int index, int value) {
-        ensureLowAttrStoreListIsMutable();
-        lowAttrStoreList_.setInt(index, value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 low_attr_store_list = 11;</code>
-       * @param value The lowAttrStoreList to add.
-       * @return This builder for chaining.
-       */
-      public Builder addLowAttrStoreList(int value) {
-        ensureLowAttrStoreListIsMutable();
-        lowAttrStoreList_.addInt(value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 low_attr_store_list = 11;</code>
-       * @param values The lowAttrStoreList to add.
-       * @return This builder for chaining.
-       */
-      public Builder addAllLowAttrStoreList(
-          java.lang.Iterable<? extends java.lang.Integer> values) {
-        ensureLowAttrStoreListIsMutable();
-        com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, lowAttrStoreList_);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 low_attr_store_list = 11;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearLowAttrStoreList() {
-        lowAttrStoreList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000004);
-        onChanged();
-        return this;
-      }
-
-      private int roundCoinBIncome_ ;
-      /**
-       * <code>uint32 round_coin_b_income = 9;</code>
-       * @return The roundCoinBIncome.
+       * <code>int32 retcode = 9;</code>
+       * @return The retcode.
        */
       @java.lang.Override
-      public int getRoundCoinBIncome() {
-        return roundCoinBIncome_;
+      public int getRetcode() {
+        return retcode_;
       }
       /**
-       * <code>uint32 round_coin_b_income = 9;</code>
-       * @param value The roundCoinBIncome to set.
+       * <code>int32 retcode = 9;</code>
+       * @param value The retcode to set.
        * @return This builder for chaining.
        */
-      public Builder setRoundCoinBIncome(int value) {
+      public Builder setRetcode(int value) {
         
-        roundCoinBIncome_ = value;
+        retcode_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 round_coin_b_income = 9;</code>
+       * <code>int32 retcode = 9;</code>
        * @return This builder for chaining.
        */
-      public Builder clearRoundCoinBIncome() {
+      public Builder clearRetcode() {
         
-        roundCoinBIncome_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int roundDeltaCoinC_ ;
-      /**
-       * <code>uint32 round_delta_coin_c = 1;</code>
-       * @return The roundDeltaCoinC.
-       */
-      @java.lang.Override
-      public int getRoundDeltaCoinC() {
-        return roundDeltaCoinC_;
-      }
-      /**
-       * <code>uint32 round_delta_coin_c = 1;</code>
-       * @param value The roundDeltaCoinC to set.
-       * @return This builder for chaining.
-       */
-      public Builder setRoundDeltaCoinC(int value) {
-        
-        roundDeltaCoinC_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 round_delta_coin_c = 1;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearRoundDeltaCoinC() {
-        
-        roundDeltaCoinC_ = 0;
+        retcode_ = 0;
         onChanged();
         return this;
       }
@@ -1518,7 +1337,7 @@ public final class VintageMarketFinishStorePlayRspOuterClass {
         return internalGetStoreIncomeMap().getMap().size();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; store_income_map = 3;</code>
+       * <code>map&lt;uint32, uint32&gt; store_income_map = 2;</code>
        */
 
       @java.lang.Override
@@ -1536,7 +1355,7 @@ public final class VintageMarketFinishStorePlayRspOuterClass {
         return getStoreIncomeMapMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; store_income_map = 3;</code>
+       * <code>map&lt;uint32, uint32&gt; store_income_map = 2;</code>
        */
       @java.lang.Override
 
@@ -1544,7 +1363,7 @@ public final class VintageMarketFinishStorePlayRspOuterClass {
         return internalGetStoreIncomeMap().getMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; store_income_map = 3;</code>
+       * <code>map&lt;uint32, uint32&gt; store_income_map = 2;</code>
        */
       @java.lang.Override
 
@@ -1557,7 +1376,7 @@ public final class VintageMarketFinishStorePlayRspOuterClass {
         return map.containsKey(key) ? map.get(key) : defaultValue;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; store_income_map = 3;</code>
+       * <code>map&lt;uint32, uint32&gt; store_income_map = 2;</code>
        */
       @java.lang.Override
 
@@ -1578,7 +1397,7 @@ public final class VintageMarketFinishStorePlayRspOuterClass {
         return this;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; store_income_map = 3;</code>
+       * <code>map&lt;uint32, uint32&gt; store_income_map = 2;</code>
        */
 
       public Builder removeStoreIncomeMap(
@@ -1597,7 +1416,7 @@ public final class VintageMarketFinishStorePlayRspOuterClass {
         return internalGetMutableStoreIncomeMap().getMutableMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; store_income_map = 3;</code>
+       * <code>map&lt;uint32, uint32&gt; store_income_map = 2;</code>
        */
       public Builder putStoreIncomeMap(
           int key,
@@ -1609,7 +1428,7 @@ public final class VintageMarketFinishStorePlayRspOuterClass {
         return this;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; store_income_map = 3;</code>
+       * <code>map&lt;uint32, uint32&gt; store_income_map = 2;</code>
        */
 
       public Builder putAllStoreIncomeMap(
@@ -1619,95 +1438,284 @@ public final class VintageMarketFinishStorePlayRspOuterClass {
         return this;
       }
 
-      private int retcode_ ;
+      private int unk3300DJILELFHFHJ_ ;
       /**
-       * <code>int32 retcode = 7;</code>
-       * @return The retcode.
+       * <code>uint32 Unk3300_DJILELFHFHJ = 6;</code>
+       * @return The unk3300DJILELFHFHJ.
        */
       @java.lang.Override
-      public int getRetcode() {
-        return retcode_;
+      public int getUnk3300DJILELFHFHJ() {
+        return unk3300DJILELFHFHJ_;
       }
       /**
-       * <code>int32 retcode = 7;</code>
-       * @param value The retcode to set.
+       * <code>uint32 Unk3300_DJILELFHFHJ = 6;</code>
+       * @param value The unk3300DJILELFHFHJ to set.
        * @return This builder for chaining.
        */
-      public Builder setRetcode(int value) {
+      public Builder setUnk3300DJILELFHFHJ(int value) {
         
-        retcode_ = value;
+        unk3300DJILELFHFHJ_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>int32 retcode = 7;</code>
+       * <code>uint32 Unk3300_DJILELFHFHJ = 6;</code>
        * @return This builder for chaining.
        */
-      public Builder clearRetcode() {
+      public Builder clearUnk3300DJILELFHFHJ() {
         
-        retcode_ = 0;
+        unk3300DJILELFHFHJ_ = 0;
         onChanged();
         return this;
       }
 
-      private int roundTotalIncome_ ;
-      /**
-       * <code>uint32 round_total_income = 14;</code>
-       * @return The roundTotalIncome.
-       */
-      @java.lang.Override
-      public int getRoundTotalIncome() {
-        return roundTotalIncome_;
+      private com.google.protobuf.Internal.IntList unk3300OCIMKEPJOOL_ = emptyIntList();
+      private void ensureUnk3300OCIMKEPJOOLIsMutable() {
+        if (!((bitField0_ & 0x00000004) != 0)) {
+          unk3300OCIMKEPJOOL_ = mutableCopy(unk3300OCIMKEPJOOL_);
+          bitField0_ |= 0x00000004;
+         }
       }
       /**
-       * <code>uint32 round_total_income = 14;</code>
-       * @param value The roundTotalIncome to set.
+       * <code>repeated uint32 Unk3300_OCIMKEPJOOL = 3;</code>
+       * @return A list containing the unk3300OCIMKEPJOOL.
+       */
+      public java.util.List<java.lang.Integer>
+          getUnk3300OCIMKEPJOOLList() {
+        return ((bitField0_ & 0x00000004) != 0) ?
+                 java.util.Collections.unmodifiableList(unk3300OCIMKEPJOOL_) : unk3300OCIMKEPJOOL_;
+      }
+      /**
+       * <code>repeated uint32 Unk3300_OCIMKEPJOOL = 3;</code>
+       * @return The count of unk3300OCIMKEPJOOL.
+       */
+      public int getUnk3300OCIMKEPJOOLCount() {
+        return unk3300OCIMKEPJOOL_.size();
+      }
+      /**
+       * <code>repeated uint32 Unk3300_OCIMKEPJOOL = 3;</code>
+       * @param index The index of the element to return.
+       * @return The unk3300OCIMKEPJOOL at the given index.
+       */
+      public int getUnk3300OCIMKEPJOOL(int index) {
+        return unk3300OCIMKEPJOOL_.getInt(index);
+      }
+      /**
+       * <code>repeated uint32 Unk3300_OCIMKEPJOOL = 3;</code>
+       * @param index The index to set the value at.
+       * @param value The unk3300OCIMKEPJOOL to set.
        * @return This builder for chaining.
        */
-      public Builder setRoundTotalIncome(int value) {
-        
-        roundTotalIncome_ = value;
+      public Builder setUnk3300OCIMKEPJOOL(
+          int index, int value) {
+        ensureUnk3300OCIMKEPJOOLIsMutable();
+        unk3300OCIMKEPJOOL_.setInt(index, value);
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 round_total_income = 14;</code>
+       * <code>repeated uint32 Unk3300_OCIMKEPJOOL = 3;</code>
+       * @param value The unk3300OCIMKEPJOOL to add.
        * @return This builder for chaining.
        */
-      public Builder clearRoundTotalIncome() {
-        
-        roundTotalIncome_ = 0;
+      public Builder addUnk3300OCIMKEPJOOL(int value) {
+        ensureUnk3300OCIMKEPJOOLIsMutable();
+        unk3300OCIMKEPJOOL_.addInt(value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint32 Unk3300_OCIMKEPJOOL = 3;</code>
+       * @param values The unk3300OCIMKEPJOOL to add.
+       * @return This builder for chaining.
+       */
+      public Builder addAllUnk3300OCIMKEPJOOL(
+          java.lang.Iterable<? extends java.lang.Integer> values) {
+        ensureUnk3300OCIMKEPJOOLIsMutable();
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, unk3300OCIMKEPJOOL_);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint32 Unk3300_OCIMKEPJOOL = 3;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearUnk3300OCIMKEPJOOL() {
+        unk3300OCIMKEPJOOL_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000004);
         onChanged();
         return this;
       }
 
-      private int displayReturnCoinB_ ;
+      private int unk3300GCDNOPJEIBG_ ;
       /**
-       * <code>uint32 display_return_coin_b = 15;</code>
-       * @return The displayReturnCoinB.
+       * <code>uint32 Unk3300_GCDNOPJEIBG = 4;</code>
+       * @return The unk3300GCDNOPJEIBG.
        */
       @java.lang.Override
-      public int getDisplayReturnCoinB() {
-        return displayReturnCoinB_;
+      public int getUnk3300GCDNOPJEIBG() {
+        return unk3300GCDNOPJEIBG_;
       }
       /**
-       * <code>uint32 display_return_coin_b = 15;</code>
-       * @param value The displayReturnCoinB to set.
+       * <code>uint32 Unk3300_GCDNOPJEIBG = 4;</code>
+       * @param value The unk3300GCDNOPJEIBG to set.
        * @return This builder for chaining.
        */
-      public Builder setDisplayReturnCoinB(int value) {
+      public Builder setUnk3300GCDNOPJEIBG(int value) {
         
-        displayReturnCoinB_ = value;
+        unk3300GCDNOPJEIBG_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 display_return_coin_b = 15;</code>
+       * <code>uint32 Unk3300_GCDNOPJEIBG = 4;</code>
        * @return This builder for chaining.
        */
-      public Builder clearDisplayReturnCoinB() {
+      public Builder clearUnk3300GCDNOPJEIBG() {
         
-        displayReturnCoinB_ = 0;
+        unk3300GCDNOPJEIBG_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private com.google.protobuf.Internal.IntList unk3300BDAIONEPKIK_ = emptyIntList();
+      private void ensureUnk3300BDAIONEPKIKIsMutable() {
+        if (!((bitField0_ & 0x00000008) != 0)) {
+          unk3300BDAIONEPKIK_ = mutableCopy(unk3300BDAIONEPKIK_);
+          bitField0_ |= 0x00000008;
+         }
+      }
+      /**
+       * <code>repeated uint32 Unk3300_BDAIONEPKIK = 1;</code>
+       * @return A list containing the unk3300BDAIONEPKIK.
+       */
+      public java.util.List<java.lang.Integer>
+          getUnk3300BDAIONEPKIKList() {
+        return ((bitField0_ & 0x00000008) != 0) ?
+                 java.util.Collections.unmodifiableList(unk3300BDAIONEPKIK_) : unk3300BDAIONEPKIK_;
+      }
+      /**
+       * <code>repeated uint32 Unk3300_BDAIONEPKIK = 1;</code>
+       * @return The count of unk3300BDAIONEPKIK.
+       */
+      public int getUnk3300BDAIONEPKIKCount() {
+        return unk3300BDAIONEPKIK_.size();
+      }
+      /**
+       * <code>repeated uint32 Unk3300_BDAIONEPKIK = 1;</code>
+       * @param index The index of the element to return.
+       * @return The unk3300BDAIONEPKIK at the given index.
+       */
+      public int getUnk3300BDAIONEPKIK(int index) {
+        return unk3300BDAIONEPKIK_.getInt(index);
+      }
+      /**
+       * <code>repeated uint32 Unk3300_BDAIONEPKIK = 1;</code>
+       * @param index The index to set the value at.
+       * @param value The unk3300BDAIONEPKIK to set.
+       * @return This builder for chaining.
+       */
+      public Builder setUnk3300BDAIONEPKIK(
+          int index, int value) {
+        ensureUnk3300BDAIONEPKIKIsMutable();
+        unk3300BDAIONEPKIK_.setInt(index, value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint32 Unk3300_BDAIONEPKIK = 1;</code>
+       * @param value The unk3300BDAIONEPKIK to add.
+       * @return This builder for chaining.
+       */
+      public Builder addUnk3300BDAIONEPKIK(int value) {
+        ensureUnk3300BDAIONEPKIKIsMutable();
+        unk3300BDAIONEPKIK_.addInt(value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint32 Unk3300_BDAIONEPKIK = 1;</code>
+       * @param values The unk3300BDAIONEPKIK to add.
+       * @return This builder for chaining.
+       */
+      public Builder addAllUnk3300BDAIONEPKIK(
+          java.lang.Iterable<? extends java.lang.Integer> values) {
+        ensureUnk3300BDAIONEPKIKIsMutable();
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, unk3300BDAIONEPKIK_);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint32 Unk3300_BDAIONEPKIK = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearUnk3300BDAIONEPKIK() {
+        unk3300BDAIONEPKIK_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000008);
+        onChanged();
+        return this;
+      }
+
+      private int unk3300DGECJOKMDGN_ ;
+      /**
+       * <code>uint32 Unk3300_DGECJOKMDGN = 11;</code>
+       * @return The unk3300DGECJOKMDGN.
+       */
+      @java.lang.Override
+      public int getUnk3300DGECJOKMDGN() {
+        return unk3300DGECJOKMDGN_;
+      }
+      /**
+       * <code>uint32 Unk3300_DGECJOKMDGN = 11;</code>
+       * @param value The unk3300DGECJOKMDGN to set.
+       * @return This builder for chaining.
+       */
+      public Builder setUnk3300DGECJOKMDGN(int value) {
+        
+        unk3300DGECJOKMDGN_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 Unk3300_DGECJOKMDGN = 11;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearUnk3300DGECJOKMDGN() {
+        
+        unk3300DGECJOKMDGN_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int unk3300DLNFCBPDBBH_ ;
+      /**
+       * <code>uint32 Unk3300_DLNFCBPDBBH = 14;</code>
+       * @return The unk3300DLNFCBPDBBH.
+       */
+      @java.lang.Override
+      public int getUnk3300DLNFCBPDBBH() {
+        return unk3300DLNFCBPDBBH_;
+      }
+      /**
+       * <code>uint32 Unk3300_DLNFCBPDBBH = 14;</code>
+       * @param value The unk3300DLNFCBPDBBH to set.
+       * @return This builder for chaining.
+       */
+      public Builder setUnk3300DLNFCBPDBBH(int value) {
+        
+        unk3300DLNFCBPDBBH_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 Unk3300_DLNFCBPDBBH = 14;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearUnk3300DLNFCBPDBBH() {
+        
+        unk3300DLNFCBPDBBH_ = 0;
         onChanged();
         return this;
       }
@@ -1784,18 +1792,18 @@ public final class VintageMarketFinishStorePlayRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n%VintageMarketFinishStorePlayRsp.proto\"" +
-      "\237\003\n\037VintageMarketFinishStorePlayRsp\022\036\n\026t" +
-      "rigger_env_event_list\030\010 \003(\r\022\023\n\013store_rou" +
-      "nd\030\014 \001(\r\022\036\n\026trigger_npc_event_list\030\n \003(\r" +
-      "\022\033\n\023low_attr_store_list\030\013 \003(\r\022\033\n\023round_c" +
-      "oin_b_income\030\t \001(\r\022\032\n\022round_delta_coin_c" +
-      "\030\001 \001(\r\022N\n\020store_income_map\030\003 \003(\01324.Vinta" +
-      "geMarketFinishStorePlayRsp.StoreIncomeMa" +
-      "pEntry\022\017\n\007retcode\030\007 \001(\005\022\032\n\022round_total_i" +
-      "ncome\030\016 \001(\r\022\035\n\025display_return_coin_b\030\017 \001" +
-      "(\r\0325\n\023StoreIncomeMapEntry\022\013\n\003key\030\001 \001(\r\022\r" +
-      "\n\005value\030\002 \001(\r:\0028\001B\033\n\031emu.grasscutter.net" +
-      ".protob\006proto3"
+      "\231\003\n\037VintageMarketFinishStorePlayRsp\022\023\n\013s" +
+      "tore_round\030\n \001(\r\022\033\n\023Unk3300_HJIHIOIGAPP\030" +
+      "\017 \003(\r\022\017\n\007retcode\030\t \001(\005\022N\n\020store_income_m" +
+      "ap\030\002 \003(\01324.VintageMarketFinishStorePlayR" +
+      "sp.StoreIncomeMapEntry\022\033\n\023Unk3300_DJILEL" +
+      "FHFHJ\030\006 \001(\r\022\033\n\023Unk3300_OCIMKEPJOOL\030\003 \003(\r" +
+      "\022\033\n\023Unk3300_GCDNOPJEIBG\030\004 \001(\r\022\033\n\023Unk3300" +
+      "_BDAIONEPKIK\030\001 \003(\r\022\033\n\023Unk3300_DGECJOKMDG" +
+      "N\030\013 \001(\r\022\033\n\023Unk3300_DLNFCBPDBBH\030\016 \001(\r\0325\n\023" +
+      "StoreIncomeMapEntry\022\013\n\003key\030\001 \001(\r\022\r\n\005valu" +
+      "e\030\002 \001(\r:\0028\001B\033\n\031emu.grasscutter.net.proto" +
+      "b\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -1806,7 +1814,7 @@ public final class VintageMarketFinishStorePlayRspOuterClass {
     internal_static_VintageMarketFinishStorePlayRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_VintageMarketFinishStorePlayRsp_descriptor,
-        new java.lang.String[] { "TriggerEnvEventList", "StoreRound", "TriggerNpcEventList", "LowAttrStoreList", "RoundCoinBIncome", "RoundDeltaCoinC", "StoreIncomeMap", "Retcode", "RoundTotalIncome", "DisplayReturnCoinB", });
+        new java.lang.String[] { "StoreRound", "Unk3300HJIHIOIGAPP", "Retcode", "StoreIncomeMap", "Unk3300DJILELFHFHJ", "Unk3300OCIMKEPJOOL", "Unk3300GCDNOPJEIBG", "Unk3300BDAIONEPKIK", "Unk3300DGECJOKMDGN", "Unk3300DLNFCBPDBBH", });
     internal_static_VintageMarketFinishStorePlayRsp_StoreIncomeMapEntry_descriptor =
       internal_static_VintageMarketFinishStorePlayRsp_descriptor.getNestedTypes().get(0);
     internal_static_VintageMarketFinishStorePlayRsp_StoreIncomeMapEntry_fieldAccessorTable = new

@@ -19,28 +19,28 @@ public final class LanternRiteFireworksReformSkillInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 skill_id = 2;</code>
-     * @return The skillId.
-     */
-    int getSkillId();
-
-    /**
-     * <code>bool is_unlock = 11;</code>
+     * <code>bool is_unlock = 9;</code>
      * @return The isUnlock.
      */
     boolean getIsUnlock();
 
     /**
-     * <code>uint32 unlock_challenge_time = 1;</code>
-     * @return The unlockChallengeTime.
+     * <code>uint32 skill_id = 1;</code>
+     * @return The skillId.
      */
-    int getUnlockChallengeTime();
+    int getSkillId();
 
     /**
-     * <code>uint32 unlock_challenge_id = 14;</code>
-     * @return The unlockChallengeId.
+     * <code>uint32 Unk3300_IEPBAPJHLEI = 15;</code>
+     * @return The unk3300IEPBAPJHLEI.
      */
-    int getUnlockChallengeId();
+    int getUnk3300IEPBAPJHLEI();
+
+    /**
+     * <code>uint32 Unk3300_EDPPFFFLFGG = 10;</code>
+     * @return The unk3300EDPPFFFLFGG.
+     */
+    int getUnk3300EDPPFFFLFGG();
   }
   /**
    * Protobuf type {@code LanternRiteFireworksReformSkillInfo}
@@ -89,22 +89,22 @@ public final class LanternRiteFireworksReformSkillInfoOuterClass {
               break;
             case 8: {
 
-              unlockChallengeTime_ = input.readUInt32();
-              break;
-            }
-            case 16: {
-
               skillId_ = input.readUInt32();
               break;
             }
-            case 88: {
+            case 72: {
 
               isUnlock_ = input.readBool();
               break;
             }
-            case 112: {
+            case 80: {
 
-              unlockChallengeId_ = input.readUInt32();
+              unk3300EDPPFFFLFGG_ = input.readUInt32();
+              break;
+            }
+            case 120: {
+
+              unk3300IEPBAPJHLEI_ = input.readUInt32();
               break;
             }
             default: {
@@ -139,21 +139,10 @@ public final class LanternRiteFireworksReformSkillInfoOuterClass {
               emu.grasscutter.net.proto.LanternRiteFireworksReformSkillInfoOuterClass.LanternRiteFireworksReformSkillInfo.class, emu.grasscutter.net.proto.LanternRiteFireworksReformSkillInfoOuterClass.LanternRiteFireworksReformSkillInfo.Builder.class);
     }
 
-    public static final int SKILL_ID_FIELD_NUMBER = 2;
-    private int skillId_;
-    /**
-     * <code>uint32 skill_id = 2;</code>
-     * @return The skillId.
-     */
-    @java.lang.Override
-    public int getSkillId() {
-      return skillId_;
-    }
-
-    public static final int IS_UNLOCK_FIELD_NUMBER = 11;
+    public static final int IS_UNLOCK_FIELD_NUMBER = 9;
     private boolean isUnlock_;
     /**
-     * <code>bool is_unlock = 11;</code>
+     * <code>bool is_unlock = 9;</code>
      * @return The isUnlock.
      */
     @java.lang.Override
@@ -161,26 +150,37 @@ public final class LanternRiteFireworksReformSkillInfoOuterClass {
       return isUnlock_;
     }
 
-    public static final int UNLOCK_CHALLENGE_TIME_FIELD_NUMBER = 1;
-    private int unlockChallengeTime_;
+    public static final int SKILL_ID_FIELD_NUMBER = 1;
+    private int skillId_;
     /**
-     * <code>uint32 unlock_challenge_time = 1;</code>
-     * @return The unlockChallengeTime.
+     * <code>uint32 skill_id = 1;</code>
+     * @return The skillId.
      */
     @java.lang.Override
-    public int getUnlockChallengeTime() {
-      return unlockChallengeTime_;
+    public int getSkillId() {
+      return skillId_;
     }
 
-    public static final int UNLOCK_CHALLENGE_ID_FIELD_NUMBER = 14;
-    private int unlockChallengeId_;
+    public static final int UNK3300_IEPBAPJHLEI_FIELD_NUMBER = 15;
+    private int unk3300IEPBAPJHLEI_;
     /**
-     * <code>uint32 unlock_challenge_id = 14;</code>
-     * @return The unlockChallengeId.
+     * <code>uint32 Unk3300_IEPBAPJHLEI = 15;</code>
+     * @return The unk3300IEPBAPJHLEI.
      */
     @java.lang.Override
-    public int getUnlockChallengeId() {
-      return unlockChallengeId_;
+    public int getUnk3300IEPBAPJHLEI() {
+      return unk3300IEPBAPJHLEI_;
+    }
+
+    public static final int UNK3300_EDPPFFFLFGG_FIELD_NUMBER = 10;
+    private int unk3300EDPPFFFLFGG_;
+    /**
+     * <code>uint32 Unk3300_EDPPFFFLFGG = 10;</code>
+     * @return The unk3300EDPPFFFLFGG.
+     */
+    @java.lang.Override
+    public int getUnk3300EDPPFFFLFGG() {
+      return unk3300EDPPFFFLFGG_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -197,17 +197,17 @@ public final class LanternRiteFireworksReformSkillInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (unlockChallengeTime_ != 0) {
-        output.writeUInt32(1, unlockChallengeTime_);
-      }
       if (skillId_ != 0) {
-        output.writeUInt32(2, skillId_);
+        output.writeUInt32(1, skillId_);
       }
       if (isUnlock_ != false) {
-        output.writeBool(11, isUnlock_);
+        output.writeBool(9, isUnlock_);
       }
-      if (unlockChallengeId_ != 0) {
-        output.writeUInt32(14, unlockChallengeId_);
+      if (unk3300EDPPFFFLFGG_ != 0) {
+        output.writeUInt32(10, unk3300EDPPFFFLFGG_);
+      }
+      if (unk3300IEPBAPJHLEI_ != 0) {
+        output.writeUInt32(15, unk3300IEPBAPJHLEI_);
       }
       unknownFields.writeTo(output);
     }
@@ -218,21 +218,21 @@ public final class LanternRiteFireworksReformSkillInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (unlockChallengeTime_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, unlockChallengeTime_);
-      }
       if (skillId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, skillId_);
+          .computeUInt32Size(1, skillId_);
       }
       if (isUnlock_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(11, isUnlock_);
+          .computeBoolSize(9, isUnlock_);
       }
-      if (unlockChallengeId_ != 0) {
+      if (unk3300EDPPFFFLFGG_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, unlockChallengeId_);
+          .computeUInt32Size(10, unk3300EDPPFFFLFGG_);
+      }
+      if (unk3300IEPBAPJHLEI_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(15, unk3300IEPBAPJHLEI_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -249,14 +249,14 @@ public final class LanternRiteFireworksReformSkillInfoOuterClass {
       }
       emu.grasscutter.net.proto.LanternRiteFireworksReformSkillInfoOuterClass.LanternRiteFireworksReformSkillInfo other = (emu.grasscutter.net.proto.LanternRiteFireworksReformSkillInfoOuterClass.LanternRiteFireworksReformSkillInfo) obj;
 
-      if (getSkillId()
-          != other.getSkillId()) return false;
       if (getIsUnlock()
           != other.getIsUnlock()) return false;
-      if (getUnlockChallengeTime()
-          != other.getUnlockChallengeTime()) return false;
-      if (getUnlockChallengeId()
-          != other.getUnlockChallengeId()) return false;
+      if (getSkillId()
+          != other.getSkillId()) return false;
+      if (getUnk3300IEPBAPJHLEI()
+          != other.getUnk3300IEPBAPJHLEI()) return false;
+      if (getUnk3300EDPPFFFLFGG()
+          != other.getUnk3300EDPPFFFLFGG()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -268,15 +268,15 @@ public final class LanternRiteFireworksReformSkillInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + SKILL_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getSkillId();
       hash = (37 * hash) + IS_UNLOCK_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsUnlock());
-      hash = (37 * hash) + UNLOCK_CHALLENGE_TIME_FIELD_NUMBER;
-      hash = (53 * hash) + getUnlockChallengeTime();
-      hash = (37 * hash) + UNLOCK_CHALLENGE_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getUnlockChallengeId();
+      hash = (37 * hash) + SKILL_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getSkillId();
+      hash = (37 * hash) + UNK3300_IEPBAPJHLEI_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300IEPBAPJHLEI();
+      hash = (37 * hash) + UNK3300_EDPPFFFLFGG_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300EDPPFFFLFGG();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -410,13 +410,13 @@ public final class LanternRiteFireworksReformSkillInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        skillId_ = 0;
-
         isUnlock_ = false;
 
-        unlockChallengeTime_ = 0;
+        skillId_ = 0;
 
-        unlockChallengeId_ = 0;
+        unk3300IEPBAPJHLEI_ = 0;
+
+        unk3300EDPPFFFLFGG_ = 0;
 
         return this;
       }
@@ -444,10 +444,10 @@ public final class LanternRiteFireworksReformSkillInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.LanternRiteFireworksReformSkillInfoOuterClass.LanternRiteFireworksReformSkillInfo buildPartial() {
         emu.grasscutter.net.proto.LanternRiteFireworksReformSkillInfoOuterClass.LanternRiteFireworksReformSkillInfo result = new emu.grasscutter.net.proto.LanternRiteFireworksReformSkillInfoOuterClass.LanternRiteFireworksReformSkillInfo(this);
-        result.skillId_ = skillId_;
         result.isUnlock_ = isUnlock_;
-        result.unlockChallengeTime_ = unlockChallengeTime_;
-        result.unlockChallengeId_ = unlockChallengeId_;
+        result.skillId_ = skillId_;
+        result.unk3300IEPBAPJHLEI_ = unk3300IEPBAPJHLEI_;
+        result.unk3300EDPPFFFLFGG_ = unk3300EDPPFFFLFGG_;
         onBuilt();
         return result;
       }
@@ -496,17 +496,17 @@ public final class LanternRiteFireworksReformSkillInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.LanternRiteFireworksReformSkillInfoOuterClass.LanternRiteFireworksReformSkillInfo other) {
         if (other == emu.grasscutter.net.proto.LanternRiteFireworksReformSkillInfoOuterClass.LanternRiteFireworksReformSkillInfo.getDefaultInstance()) return this;
-        if (other.getSkillId() != 0) {
-          setSkillId(other.getSkillId());
-        }
         if (other.getIsUnlock() != false) {
           setIsUnlock(other.getIsUnlock());
         }
-        if (other.getUnlockChallengeTime() != 0) {
-          setUnlockChallengeTime(other.getUnlockChallengeTime());
+        if (other.getSkillId() != 0) {
+          setSkillId(other.getSkillId());
         }
-        if (other.getUnlockChallengeId() != 0) {
-          setUnlockChallengeId(other.getUnlockChallengeId());
+        if (other.getUnk3300IEPBAPJHLEI() != 0) {
+          setUnk3300IEPBAPJHLEI(other.getUnk3300IEPBAPJHLEI());
+        }
+        if (other.getUnk3300EDPPFFFLFGG() != 0) {
+          setUnk3300EDPPFFFLFGG(other.getUnk3300EDPPFFFLFGG());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -537,40 +537,9 @@ public final class LanternRiteFireworksReformSkillInfoOuterClass {
         return this;
       }
 
-      private int skillId_ ;
-      /**
-       * <code>uint32 skill_id = 2;</code>
-       * @return The skillId.
-       */
-      @java.lang.Override
-      public int getSkillId() {
-        return skillId_;
-      }
-      /**
-       * <code>uint32 skill_id = 2;</code>
-       * @param value The skillId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setSkillId(int value) {
-        
-        skillId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 skill_id = 2;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearSkillId() {
-        
-        skillId_ = 0;
-        onChanged();
-        return this;
-      }
-
       private boolean isUnlock_ ;
       /**
-       * <code>bool is_unlock = 11;</code>
+       * <code>bool is_unlock = 9;</code>
        * @return The isUnlock.
        */
       @java.lang.Override
@@ -578,7 +547,7 @@ public final class LanternRiteFireworksReformSkillInfoOuterClass {
         return isUnlock_;
       }
       /**
-       * <code>bool is_unlock = 11;</code>
+       * <code>bool is_unlock = 9;</code>
        * @param value The isUnlock to set.
        * @return This builder for chaining.
        */
@@ -589,7 +558,7 @@ public final class LanternRiteFireworksReformSkillInfoOuterClass {
         return this;
       }
       /**
-       * <code>bool is_unlock = 11;</code>
+       * <code>bool is_unlock = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsUnlock() {
@@ -599,64 +568,95 @@ public final class LanternRiteFireworksReformSkillInfoOuterClass {
         return this;
       }
 
-      private int unlockChallengeTime_ ;
+      private int skillId_ ;
       /**
-       * <code>uint32 unlock_challenge_time = 1;</code>
-       * @return The unlockChallengeTime.
+       * <code>uint32 skill_id = 1;</code>
+       * @return The skillId.
        */
       @java.lang.Override
-      public int getUnlockChallengeTime() {
-        return unlockChallengeTime_;
+      public int getSkillId() {
+        return skillId_;
       }
       /**
-       * <code>uint32 unlock_challenge_time = 1;</code>
-       * @param value The unlockChallengeTime to set.
+       * <code>uint32 skill_id = 1;</code>
+       * @param value The skillId to set.
        * @return This builder for chaining.
        */
-      public Builder setUnlockChallengeTime(int value) {
+      public Builder setSkillId(int value) {
         
-        unlockChallengeTime_ = value;
+        skillId_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 unlock_challenge_time = 1;</code>
+       * <code>uint32 skill_id = 1;</code>
        * @return This builder for chaining.
        */
-      public Builder clearUnlockChallengeTime() {
+      public Builder clearSkillId() {
         
-        unlockChallengeTime_ = 0;
+        skillId_ = 0;
         onChanged();
         return this;
       }
 
-      private int unlockChallengeId_ ;
+      private int unk3300IEPBAPJHLEI_ ;
       /**
-       * <code>uint32 unlock_challenge_id = 14;</code>
-       * @return The unlockChallengeId.
+       * <code>uint32 Unk3300_IEPBAPJHLEI = 15;</code>
+       * @return The unk3300IEPBAPJHLEI.
        */
       @java.lang.Override
-      public int getUnlockChallengeId() {
-        return unlockChallengeId_;
+      public int getUnk3300IEPBAPJHLEI() {
+        return unk3300IEPBAPJHLEI_;
       }
       /**
-       * <code>uint32 unlock_challenge_id = 14;</code>
-       * @param value The unlockChallengeId to set.
+       * <code>uint32 Unk3300_IEPBAPJHLEI = 15;</code>
+       * @param value The unk3300IEPBAPJHLEI to set.
        * @return This builder for chaining.
        */
-      public Builder setUnlockChallengeId(int value) {
+      public Builder setUnk3300IEPBAPJHLEI(int value) {
         
-        unlockChallengeId_ = value;
+        unk3300IEPBAPJHLEI_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 unlock_challenge_id = 14;</code>
+       * <code>uint32 Unk3300_IEPBAPJHLEI = 15;</code>
        * @return This builder for chaining.
        */
-      public Builder clearUnlockChallengeId() {
+      public Builder clearUnk3300IEPBAPJHLEI() {
         
-        unlockChallengeId_ = 0;
+        unk3300IEPBAPJHLEI_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int unk3300EDPPFFFLFGG_ ;
+      /**
+       * <code>uint32 Unk3300_EDPPFFFLFGG = 10;</code>
+       * @return The unk3300EDPPFFFLFGG.
+       */
+      @java.lang.Override
+      public int getUnk3300EDPPFFFLFGG() {
+        return unk3300EDPPFFFLFGG_;
+      }
+      /**
+       * <code>uint32 Unk3300_EDPPFFFLFGG = 10;</code>
+       * @param value The unk3300EDPPFFFLFGG to set.
+       * @return This builder for chaining.
+       */
+      public Builder setUnk3300EDPPFFFLFGG(int value) {
+        
+        unk3300EDPPFFFLFGG_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 Unk3300_EDPPFFFLFGG = 10;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearUnk3300EDPPFFFLFGG() {
+        
+        unk3300EDPPFFFLFGG_ = 0;
         onChanged();
         return this;
       }
@@ -728,11 +728,11 @@ public final class LanternRiteFireworksReformSkillInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n)LanternRiteFireworksReformSkillInfo.pr" +
-      "oto\"\206\001\n#LanternRiteFireworksReformSkillI" +
-      "nfo\022\020\n\010skill_id\030\002 \001(\r\022\021\n\tis_unlock\030\013 \001(\010" +
-      "\022\035\n\025unlock_challenge_time\030\001 \001(\r\022\033\n\023unloc" +
-      "k_challenge_id\030\016 \001(\rB\033\n\031emu.grasscutter." +
-      "net.protob\006proto3"
+      "oto\"\204\001\n#LanternRiteFireworksReformSkillI" +
+      "nfo\022\021\n\tis_unlock\030\t \001(\010\022\020\n\010skill_id\030\001 \001(\r" +
+      "\022\033\n\023Unk3300_IEPBAPJHLEI\030\017 \001(\r\022\033\n\023Unk3300" +
+      "_EDPPFFFLFGG\030\n \001(\rB\033\n\031emu.grasscutter.ne" +
+      "t.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -743,7 +743,7 @@ public final class LanternRiteFireworksReformSkillInfoOuterClass {
     internal_static_LanternRiteFireworksReformSkillInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_LanternRiteFireworksReformSkillInfo_descriptor,
-        new java.lang.String[] { "SkillId", "IsUnlock", "UnlockChallengeTime", "UnlockChallengeId", });
+        new java.lang.String[] { "IsUnlock", "SkillId", "Unk3300IEPBAPJHLEI", "Unk3300EDPPFFFLFGG", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

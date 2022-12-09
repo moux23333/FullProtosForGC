@@ -19,29 +19,29 @@ public final class RoguelikeGiveUpRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 4;</code>
+     * <code>int32 retcode = 6;</code>
      * @return The retcode.
      */
     int getRetcode();
 
     /**
-     * <code>uint32 stage_id = 7;</code>
+     * <code>uint32 stage_id = 14;</code>
      * @return The stageId.
      */
     int getStageId();
 
     /**
-     * <code>.RoguelikeDungeonSettleInfo settle_info = 8;</code>
+     * <code>.RoguelikeDungeonSettleInfo settle_info = 2;</code>
      * @return Whether the settleInfo field is set.
      */
     boolean hasSettleInfo();
     /**
-     * <code>.RoguelikeDungeonSettleInfo settle_info = 8;</code>
+     * <code>.RoguelikeDungeonSettleInfo settle_info = 2;</code>
      * @return The settleInfo.
      */
     emu.grasscutter.net.proto.RoguelikeDungeonSettleInfoOuterClass.RoguelikeDungeonSettleInfo getSettleInfo();
     /**
-     * <code>.RoguelikeDungeonSettleInfo settle_info = 8;</code>
+     * <code>.RoguelikeDungeonSettleInfo settle_info = 2;</code>
      */
     emu.grasscutter.net.proto.RoguelikeDungeonSettleInfoOuterClass.RoguelikeDungeonSettleInfoOrBuilder getSettleInfoOrBuilder();
 
@@ -49,9 +49,13 @@ public final class RoguelikeGiveUpRspOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 8139
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 8905;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code RoguelikeGiveUpRsp}
@@ -98,19 +102,9 @@ public final class RoguelikeGiveUpRspOuterClass {
             case 0:
               done = true;
               break;
-            case 32: {
-
-              retcode_ = input.readInt32();
-              break;
-            }
-            case 56: {
-
-              stageId_ = input.readUInt32();
-              break;
-            }
-            case 66: {
+            case 18: {
               emu.grasscutter.net.proto.RoguelikeDungeonSettleInfoOuterClass.RoguelikeDungeonSettleInfo.Builder subBuilder = null;
-              if (infoCase_ == 8) {
+              if (infoCase_ == 2) {
                 subBuilder = ((emu.grasscutter.net.proto.RoguelikeDungeonSettleInfoOuterClass.RoguelikeDungeonSettleInfo) info_).toBuilder();
               }
               info_ =
@@ -119,7 +113,17 @@ public final class RoguelikeGiveUpRspOuterClass {
                 subBuilder.mergeFrom((emu.grasscutter.net.proto.RoguelikeDungeonSettleInfoOuterClass.RoguelikeDungeonSettleInfo) info_);
                 info_ = subBuilder.buildPartial();
               }
-              infoCase_ = 8;
+              infoCase_ = 2;
+              break;
+            }
+            case 48: {
+
+              retcode_ = input.readInt32();
+              break;
+            }
+            case 112: {
+
+              stageId_ = input.readUInt32();
               break;
             }
             default: {
@@ -159,7 +163,7 @@ public final class RoguelikeGiveUpRspOuterClass {
     public enum InfoCase
         implements com.google.protobuf.Internal.EnumLite,
             com.google.protobuf.AbstractMessage.InternalOneOfEnum {
-      SETTLE_INFO(8),
+      SETTLE_INFO(2),
       INFO_NOT_SET(0);
       private final int value;
       private InfoCase(int value) {
@@ -177,7 +181,7 @@ public final class RoguelikeGiveUpRspOuterClass {
 
       public static InfoCase forNumber(int value) {
         switch (value) {
-          case 8: return SETTLE_INFO;
+          case 2: return SETTLE_INFO;
           case 0: return INFO_NOT_SET;
           default: return null;
         }
@@ -193,10 +197,10 @@ public final class RoguelikeGiveUpRspOuterClass {
           infoCase_);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 4;
+    public static final int RETCODE_FIELD_NUMBER = 6;
     private int retcode_;
     /**
-     * <code>int32 retcode = 4;</code>
+     * <code>int32 retcode = 6;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -204,10 +208,10 @@ public final class RoguelikeGiveUpRspOuterClass {
       return retcode_;
     }
 
-    public static final int STAGE_ID_FIELD_NUMBER = 7;
+    public static final int STAGE_ID_FIELD_NUMBER = 14;
     private int stageId_;
     /**
-     * <code>uint32 stage_id = 7;</code>
+     * <code>uint32 stage_id = 14;</code>
      * @return The stageId.
      */
     @java.lang.Override
@@ -215,32 +219,32 @@ public final class RoguelikeGiveUpRspOuterClass {
       return stageId_;
     }
 
-    public static final int SETTLE_INFO_FIELD_NUMBER = 8;
+    public static final int SETTLE_INFO_FIELD_NUMBER = 2;
     /**
-     * <code>.RoguelikeDungeonSettleInfo settle_info = 8;</code>
+     * <code>.RoguelikeDungeonSettleInfo settle_info = 2;</code>
      * @return Whether the settleInfo field is set.
      */
     @java.lang.Override
     public boolean hasSettleInfo() {
-      return infoCase_ == 8;
+      return infoCase_ == 2;
     }
     /**
-     * <code>.RoguelikeDungeonSettleInfo settle_info = 8;</code>
+     * <code>.RoguelikeDungeonSettleInfo settle_info = 2;</code>
      * @return The settleInfo.
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.RoguelikeDungeonSettleInfoOuterClass.RoguelikeDungeonSettleInfo getSettleInfo() {
-      if (infoCase_ == 8) {
+      if (infoCase_ == 2) {
          return (emu.grasscutter.net.proto.RoguelikeDungeonSettleInfoOuterClass.RoguelikeDungeonSettleInfo) info_;
       }
       return emu.grasscutter.net.proto.RoguelikeDungeonSettleInfoOuterClass.RoguelikeDungeonSettleInfo.getDefaultInstance();
     }
     /**
-     * <code>.RoguelikeDungeonSettleInfo settle_info = 8;</code>
+     * <code>.RoguelikeDungeonSettleInfo settle_info = 2;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.RoguelikeDungeonSettleInfoOuterClass.RoguelikeDungeonSettleInfoOrBuilder getSettleInfoOrBuilder() {
-      if (infoCase_ == 8) {
+      if (infoCase_ == 2) {
          return (emu.grasscutter.net.proto.RoguelikeDungeonSettleInfoOuterClass.RoguelikeDungeonSettleInfo) info_;
       }
       return emu.grasscutter.net.proto.RoguelikeDungeonSettleInfoOuterClass.RoguelikeDungeonSettleInfo.getDefaultInstance();
@@ -260,14 +264,14 @@ public final class RoguelikeGiveUpRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (infoCase_ == 2) {
+        output.writeMessage(2, (emu.grasscutter.net.proto.RoguelikeDungeonSettleInfoOuterClass.RoguelikeDungeonSettleInfo) info_);
+      }
       if (retcode_ != 0) {
-        output.writeInt32(4, retcode_);
+        output.writeInt32(6, retcode_);
       }
       if (stageId_ != 0) {
-        output.writeUInt32(7, stageId_);
-      }
-      if (infoCase_ == 8) {
-        output.writeMessage(8, (emu.grasscutter.net.proto.RoguelikeDungeonSettleInfoOuterClass.RoguelikeDungeonSettleInfo) info_);
+        output.writeUInt32(14, stageId_);
       }
       unknownFields.writeTo(output);
     }
@@ -278,17 +282,17 @@ public final class RoguelikeGiveUpRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (infoCase_ == 2) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(2, (emu.grasscutter.net.proto.RoguelikeDungeonSettleInfoOuterClass.RoguelikeDungeonSettleInfo) info_);
+      }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(4, retcode_);
+          .computeInt32Size(6, retcode_);
       }
       if (stageId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, stageId_);
-      }
-      if (infoCase_ == 8) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(8, (emu.grasscutter.net.proto.RoguelikeDungeonSettleInfoOuterClass.RoguelikeDungeonSettleInfo) info_);
+          .computeUInt32Size(14, stageId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -311,7 +315,7 @@ public final class RoguelikeGiveUpRspOuterClass {
           != other.getStageId()) return false;
       if (!getInfoCase().equals(other.getInfoCase())) return false;
       switch (infoCase_) {
-        case 8:
+        case 2:
           if (!getSettleInfo()
               .equals(other.getSettleInfo())) return false;
           break;
@@ -334,7 +338,7 @@ public final class RoguelikeGiveUpRspOuterClass {
       hash = (37 * hash) + STAGE_ID_FIELD_NUMBER;
       hash = (53 * hash) + getStageId();
       switch (infoCase_) {
-        case 8:
+        case 2:
           hash = (37 * hash) + SETTLE_INFO_FIELD_NUMBER;
           hash = (53 * hash) + getSettleInfo().hashCode();
           break;
@@ -438,9 +442,13 @@ public final class RoguelikeGiveUpRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 8139
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 8905;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code RoguelikeGiveUpRsp}
@@ -514,7 +522,7 @@ public final class RoguelikeGiveUpRspOuterClass {
         emu.grasscutter.net.proto.RoguelikeGiveUpRspOuterClass.RoguelikeGiveUpRsp result = new emu.grasscutter.net.proto.RoguelikeGiveUpRspOuterClass.RoguelikeGiveUpRsp(this);
         result.retcode_ = retcode_;
         result.stageId_ = stageId_;
-        if (infoCase_ == 8) {
+        if (infoCase_ == 2) {
           if (settleInfoBuilder_ == null) {
             result.info_ = info_;
           } else {
@@ -631,7 +639,7 @@ public final class RoguelikeGiveUpRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 4;</code>
+       * <code>int32 retcode = 6;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -639,7 +647,7 @@ public final class RoguelikeGiveUpRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 4;</code>
+       * <code>int32 retcode = 6;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -650,7 +658,7 @@ public final class RoguelikeGiveUpRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 4;</code>
+       * <code>int32 retcode = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -662,7 +670,7 @@ public final class RoguelikeGiveUpRspOuterClass {
 
       private int stageId_ ;
       /**
-       * <code>uint32 stage_id = 7;</code>
+       * <code>uint32 stage_id = 14;</code>
        * @return The stageId.
        */
       @java.lang.Override
@@ -670,7 +678,7 @@ public final class RoguelikeGiveUpRspOuterClass {
         return stageId_;
       }
       /**
-       * <code>uint32 stage_id = 7;</code>
+       * <code>uint32 stage_id = 14;</code>
        * @param value The stageId to set.
        * @return This builder for chaining.
        */
@@ -681,7 +689,7 @@ public final class RoguelikeGiveUpRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 stage_id = 7;</code>
+       * <code>uint32 stage_id = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearStageId() {
@@ -694,33 +702,33 @@ public final class RoguelikeGiveUpRspOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.RoguelikeDungeonSettleInfoOuterClass.RoguelikeDungeonSettleInfo, emu.grasscutter.net.proto.RoguelikeDungeonSettleInfoOuterClass.RoguelikeDungeonSettleInfo.Builder, emu.grasscutter.net.proto.RoguelikeDungeonSettleInfoOuterClass.RoguelikeDungeonSettleInfoOrBuilder> settleInfoBuilder_;
       /**
-       * <code>.RoguelikeDungeonSettleInfo settle_info = 8;</code>
+       * <code>.RoguelikeDungeonSettleInfo settle_info = 2;</code>
        * @return Whether the settleInfo field is set.
        */
       @java.lang.Override
       public boolean hasSettleInfo() {
-        return infoCase_ == 8;
+        return infoCase_ == 2;
       }
       /**
-       * <code>.RoguelikeDungeonSettleInfo settle_info = 8;</code>
+       * <code>.RoguelikeDungeonSettleInfo settle_info = 2;</code>
        * @return The settleInfo.
        */
       @java.lang.Override
       public emu.grasscutter.net.proto.RoguelikeDungeonSettleInfoOuterClass.RoguelikeDungeonSettleInfo getSettleInfo() {
         if (settleInfoBuilder_ == null) {
-          if (infoCase_ == 8) {
+          if (infoCase_ == 2) {
             return (emu.grasscutter.net.proto.RoguelikeDungeonSettleInfoOuterClass.RoguelikeDungeonSettleInfo) info_;
           }
           return emu.grasscutter.net.proto.RoguelikeDungeonSettleInfoOuterClass.RoguelikeDungeonSettleInfo.getDefaultInstance();
         } else {
-          if (infoCase_ == 8) {
+          if (infoCase_ == 2) {
             return settleInfoBuilder_.getMessage();
           }
           return emu.grasscutter.net.proto.RoguelikeDungeonSettleInfoOuterClass.RoguelikeDungeonSettleInfo.getDefaultInstance();
         }
       }
       /**
-       * <code>.RoguelikeDungeonSettleInfo settle_info = 8;</code>
+       * <code>.RoguelikeDungeonSettleInfo settle_info = 2;</code>
        */
       public Builder setSettleInfo(emu.grasscutter.net.proto.RoguelikeDungeonSettleInfoOuterClass.RoguelikeDungeonSettleInfo value) {
         if (settleInfoBuilder_ == null) {
@@ -732,11 +740,11 @@ public final class RoguelikeGiveUpRspOuterClass {
         } else {
           settleInfoBuilder_.setMessage(value);
         }
-        infoCase_ = 8;
+        infoCase_ = 2;
         return this;
       }
       /**
-       * <code>.RoguelikeDungeonSettleInfo settle_info = 8;</code>
+       * <code>.RoguelikeDungeonSettleInfo settle_info = 2;</code>
        */
       public Builder setSettleInfo(
           emu.grasscutter.net.proto.RoguelikeDungeonSettleInfoOuterClass.RoguelikeDungeonSettleInfo.Builder builderForValue) {
@@ -746,15 +754,15 @@ public final class RoguelikeGiveUpRspOuterClass {
         } else {
           settleInfoBuilder_.setMessage(builderForValue.build());
         }
-        infoCase_ = 8;
+        infoCase_ = 2;
         return this;
       }
       /**
-       * <code>.RoguelikeDungeonSettleInfo settle_info = 8;</code>
+       * <code>.RoguelikeDungeonSettleInfo settle_info = 2;</code>
        */
       public Builder mergeSettleInfo(emu.grasscutter.net.proto.RoguelikeDungeonSettleInfoOuterClass.RoguelikeDungeonSettleInfo value) {
         if (settleInfoBuilder_ == null) {
-          if (infoCase_ == 8 &&
+          if (infoCase_ == 2 &&
               info_ != emu.grasscutter.net.proto.RoguelikeDungeonSettleInfoOuterClass.RoguelikeDungeonSettleInfo.getDefaultInstance()) {
             info_ = emu.grasscutter.net.proto.RoguelikeDungeonSettleInfoOuterClass.RoguelikeDungeonSettleInfo.newBuilder((emu.grasscutter.net.proto.RoguelikeDungeonSettleInfoOuterClass.RoguelikeDungeonSettleInfo) info_)
                 .mergeFrom(value).buildPartial();
@@ -763,26 +771,26 @@ public final class RoguelikeGiveUpRspOuterClass {
           }
           onChanged();
         } else {
-          if (infoCase_ == 8) {
+          if (infoCase_ == 2) {
             settleInfoBuilder_.mergeFrom(value);
           }
           settleInfoBuilder_.setMessage(value);
         }
-        infoCase_ = 8;
+        infoCase_ = 2;
         return this;
       }
       /**
-       * <code>.RoguelikeDungeonSettleInfo settle_info = 8;</code>
+       * <code>.RoguelikeDungeonSettleInfo settle_info = 2;</code>
        */
       public Builder clearSettleInfo() {
         if (settleInfoBuilder_ == null) {
-          if (infoCase_ == 8) {
+          if (infoCase_ == 2) {
             infoCase_ = 0;
             info_ = null;
             onChanged();
           }
         } else {
-          if (infoCase_ == 8) {
+          if (infoCase_ == 2) {
             infoCase_ = 0;
             info_ = null;
           }
@@ -791,33 +799,33 @@ public final class RoguelikeGiveUpRspOuterClass {
         return this;
       }
       /**
-       * <code>.RoguelikeDungeonSettleInfo settle_info = 8;</code>
+       * <code>.RoguelikeDungeonSettleInfo settle_info = 2;</code>
        */
       public emu.grasscutter.net.proto.RoguelikeDungeonSettleInfoOuterClass.RoguelikeDungeonSettleInfo.Builder getSettleInfoBuilder() {
         return getSettleInfoFieldBuilder().getBuilder();
       }
       /**
-       * <code>.RoguelikeDungeonSettleInfo settle_info = 8;</code>
+       * <code>.RoguelikeDungeonSettleInfo settle_info = 2;</code>
        */
       @java.lang.Override
       public emu.grasscutter.net.proto.RoguelikeDungeonSettleInfoOuterClass.RoguelikeDungeonSettleInfoOrBuilder getSettleInfoOrBuilder() {
-        if ((infoCase_ == 8) && (settleInfoBuilder_ != null)) {
+        if ((infoCase_ == 2) && (settleInfoBuilder_ != null)) {
           return settleInfoBuilder_.getMessageOrBuilder();
         } else {
-          if (infoCase_ == 8) {
+          if (infoCase_ == 2) {
             return (emu.grasscutter.net.proto.RoguelikeDungeonSettleInfoOuterClass.RoguelikeDungeonSettleInfo) info_;
           }
           return emu.grasscutter.net.proto.RoguelikeDungeonSettleInfoOuterClass.RoguelikeDungeonSettleInfo.getDefaultInstance();
         }
       }
       /**
-       * <code>.RoguelikeDungeonSettleInfo settle_info = 8;</code>
+       * <code>.RoguelikeDungeonSettleInfo settle_info = 2;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.RoguelikeDungeonSettleInfoOuterClass.RoguelikeDungeonSettleInfo, emu.grasscutter.net.proto.RoguelikeDungeonSettleInfoOuterClass.RoguelikeDungeonSettleInfo.Builder, emu.grasscutter.net.proto.RoguelikeDungeonSettleInfoOuterClass.RoguelikeDungeonSettleInfoOrBuilder> 
           getSettleInfoFieldBuilder() {
         if (settleInfoBuilder_ == null) {
-          if (!(infoCase_ == 8)) {
+          if (!(infoCase_ == 2)) {
             info_ = emu.grasscutter.net.proto.RoguelikeDungeonSettleInfoOuterClass.RoguelikeDungeonSettleInfo.getDefaultInstance();
           }
           settleInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
@@ -827,7 +835,7 @@ public final class RoguelikeGiveUpRspOuterClass {
                   isClean());
           info_ = null;
         }
-        infoCase_ = 8;
+        infoCase_ = 2;
         onChanged();;
         return settleInfoBuilder_;
       }
@@ -900,8 +908,8 @@ public final class RoguelikeGiveUpRspOuterClass {
     java.lang.String[] descriptorData = {
       "\n\030RoguelikeGiveUpRsp.proto\032 RoguelikeDun" +
       "geonSettleInfo.proto\"s\n\022RoguelikeGiveUpR" +
-      "sp\022\017\n\007retcode\030\004 \001(\005\022\020\n\010stage_id\030\007 \001(\r\0222\n" +
-      "\013settle_info\030\010 \001(\0132\033.RoguelikeDungeonSet" +
+      "sp\022\017\n\007retcode\030\006 \001(\005\022\020\n\010stage_id\030\016 \001(\r\0222\n" +
+      "\013settle_info\030\002 \001(\0132\033.RoguelikeDungeonSet" +
       "tleInfoH\000B\006\n\004infoB\033\n\031emu.grasscutter.net" +
       ".protob\006proto3"
     };

@@ -19,23 +19,27 @@ public final class CustomDungeonBattleRecordNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 min_cost_time = 13;</code>
-     * @return The minCostTime.
-     */
-    int getMinCostTime();
-
-    /**
-     * <code>uint64 dungeon_guid = 12;</code>
+     * <code>uint64 dungeon_guid = 1;</code>
      * @return The dungeonGuid.
      */
     long getDungeonGuid();
+
+    /**
+     * <code>uint32 min_cost_time = 12;</code>
+     * @return The minCostTime.
+     */
+    int getMinCostTime();
   }
   /**
    * <pre>
-   * CmdId: 6236
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 6225;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code CustomDungeonBattleRecordNotify}
@@ -82,12 +86,12 @@ public final class CustomDungeonBattleRecordNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 96: {
+            case 8: {
 
               dungeonGuid_ = input.readUInt64();
               break;
             }
-            case 104: {
+            case 96: {
 
               minCostTime_ = input.readUInt32();
               break;
@@ -124,26 +128,26 @@ public final class CustomDungeonBattleRecordNotifyOuterClass {
               emu.grasscutter.net.proto.CustomDungeonBattleRecordNotifyOuterClass.CustomDungeonBattleRecordNotify.class, emu.grasscutter.net.proto.CustomDungeonBattleRecordNotifyOuterClass.CustomDungeonBattleRecordNotify.Builder.class);
     }
 
-    public static final int MIN_COST_TIME_FIELD_NUMBER = 13;
-    private int minCostTime_;
-    /**
-     * <code>uint32 min_cost_time = 13;</code>
-     * @return The minCostTime.
-     */
-    @java.lang.Override
-    public int getMinCostTime() {
-      return minCostTime_;
-    }
-
-    public static final int DUNGEON_GUID_FIELD_NUMBER = 12;
+    public static final int DUNGEON_GUID_FIELD_NUMBER = 1;
     private long dungeonGuid_;
     /**
-     * <code>uint64 dungeon_guid = 12;</code>
+     * <code>uint64 dungeon_guid = 1;</code>
      * @return The dungeonGuid.
      */
     @java.lang.Override
     public long getDungeonGuid() {
       return dungeonGuid_;
+    }
+
+    public static final int MIN_COST_TIME_FIELD_NUMBER = 12;
+    private int minCostTime_;
+    /**
+     * <code>uint32 min_cost_time = 12;</code>
+     * @return The minCostTime.
+     */
+    @java.lang.Override
+    public int getMinCostTime() {
+      return minCostTime_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -161,10 +165,10 @@ public final class CustomDungeonBattleRecordNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (dungeonGuid_ != 0L) {
-        output.writeUInt64(12, dungeonGuid_);
+        output.writeUInt64(1, dungeonGuid_);
       }
       if (minCostTime_ != 0) {
-        output.writeUInt32(13, minCostTime_);
+        output.writeUInt32(12, minCostTime_);
       }
       unknownFields.writeTo(output);
     }
@@ -177,11 +181,11 @@ public final class CustomDungeonBattleRecordNotifyOuterClass {
       size = 0;
       if (dungeonGuid_ != 0L) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt64Size(12, dungeonGuid_);
+          .computeUInt64Size(1, dungeonGuid_);
       }
       if (minCostTime_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, minCostTime_);
+          .computeUInt32Size(12, minCostTime_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -198,10 +202,10 @@ public final class CustomDungeonBattleRecordNotifyOuterClass {
       }
       emu.grasscutter.net.proto.CustomDungeonBattleRecordNotifyOuterClass.CustomDungeonBattleRecordNotify other = (emu.grasscutter.net.proto.CustomDungeonBattleRecordNotifyOuterClass.CustomDungeonBattleRecordNotify) obj;
 
-      if (getMinCostTime()
-          != other.getMinCostTime()) return false;
       if (getDungeonGuid()
           != other.getDungeonGuid()) return false;
+      if (getMinCostTime()
+          != other.getMinCostTime()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -213,11 +217,11 @@ public final class CustomDungeonBattleRecordNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + MIN_COST_TIME_FIELD_NUMBER;
-      hash = (53 * hash) + getMinCostTime();
       hash = (37 * hash) + DUNGEON_GUID_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
           getDungeonGuid());
+      hash = (37 * hash) + MIN_COST_TIME_FIELD_NUMBER;
+      hash = (53 * hash) + getMinCostTime();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -315,10 +319,14 @@ public final class CustomDungeonBattleRecordNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 6236
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 6225;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code CustomDungeonBattleRecordNotify}
@@ -358,9 +366,9 @@ public final class CustomDungeonBattleRecordNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        minCostTime_ = 0;
-
         dungeonGuid_ = 0L;
+
+        minCostTime_ = 0;
 
         return this;
       }
@@ -388,8 +396,8 @@ public final class CustomDungeonBattleRecordNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.CustomDungeonBattleRecordNotifyOuterClass.CustomDungeonBattleRecordNotify buildPartial() {
         emu.grasscutter.net.proto.CustomDungeonBattleRecordNotifyOuterClass.CustomDungeonBattleRecordNotify result = new emu.grasscutter.net.proto.CustomDungeonBattleRecordNotifyOuterClass.CustomDungeonBattleRecordNotify(this);
-        result.minCostTime_ = minCostTime_;
         result.dungeonGuid_ = dungeonGuid_;
+        result.minCostTime_ = minCostTime_;
         onBuilt();
         return result;
       }
@@ -438,11 +446,11 @@ public final class CustomDungeonBattleRecordNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.CustomDungeonBattleRecordNotifyOuterClass.CustomDungeonBattleRecordNotify other) {
         if (other == emu.grasscutter.net.proto.CustomDungeonBattleRecordNotifyOuterClass.CustomDungeonBattleRecordNotify.getDefaultInstance()) return this;
-        if (other.getMinCostTime() != 0) {
-          setMinCostTime(other.getMinCostTime());
-        }
         if (other.getDungeonGuid() != 0L) {
           setDungeonGuid(other.getDungeonGuid());
+        }
+        if (other.getMinCostTime() != 0) {
+          setMinCostTime(other.getMinCostTime());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -473,40 +481,9 @@ public final class CustomDungeonBattleRecordNotifyOuterClass {
         return this;
       }
 
-      private int minCostTime_ ;
-      /**
-       * <code>uint32 min_cost_time = 13;</code>
-       * @return The minCostTime.
-       */
-      @java.lang.Override
-      public int getMinCostTime() {
-        return minCostTime_;
-      }
-      /**
-       * <code>uint32 min_cost_time = 13;</code>
-       * @param value The minCostTime to set.
-       * @return This builder for chaining.
-       */
-      public Builder setMinCostTime(int value) {
-        
-        minCostTime_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 min_cost_time = 13;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearMinCostTime() {
-        
-        minCostTime_ = 0;
-        onChanged();
-        return this;
-      }
-
       private long dungeonGuid_ ;
       /**
-       * <code>uint64 dungeon_guid = 12;</code>
+       * <code>uint64 dungeon_guid = 1;</code>
        * @return The dungeonGuid.
        */
       @java.lang.Override
@@ -514,7 +491,7 @@ public final class CustomDungeonBattleRecordNotifyOuterClass {
         return dungeonGuid_;
       }
       /**
-       * <code>uint64 dungeon_guid = 12;</code>
+       * <code>uint64 dungeon_guid = 1;</code>
        * @param value The dungeonGuid to set.
        * @return This builder for chaining.
        */
@@ -525,12 +502,43 @@ public final class CustomDungeonBattleRecordNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint64 dungeon_guid = 12;</code>
+       * <code>uint64 dungeon_guid = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearDungeonGuid() {
         
         dungeonGuid_ = 0L;
+        onChanged();
+        return this;
+      }
+
+      private int minCostTime_ ;
+      /**
+       * <code>uint32 min_cost_time = 12;</code>
+       * @return The minCostTime.
+       */
+      @java.lang.Override
+      public int getMinCostTime() {
+        return minCostTime_;
+      }
+      /**
+       * <code>uint32 min_cost_time = 12;</code>
+       * @param value The minCostTime to set.
+       * @return This builder for chaining.
+       */
+      public Builder setMinCostTime(int value) {
+        
+        minCostTime_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 min_cost_time = 12;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearMinCostTime() {
+        
+        minCostTime_ = 0;
         onChanged();
         return this;
       }
@@ -602,8 +610,8 @@ public final class CustomDungeonBattleRecordNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n%CustomDungeonBattleRecordNotify.proto\"" +
-      "N\n\037CustomDungeonBattleRecordNotify\022\025\n\rmi" +
-      "n_cost_time\030\r \001(\r\022\024\n\014dungeon_guid\030\014 \001(\004B" +
+      "N\n\037CustomDungeonBattleRecordNotify\022\024\n\014du" +
+      "ngeon_guid\030\001 \001(\004\022\025\n\rmin_cost_time\030\014 \001(\rB" +
       "\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -615,7 +623,7 @@ public final class CustomDungeonBattleRecordNotifyOuterClass {
     internal_static_CustomDungeonBattleRecordNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_CustomDungeonBattleRecordNotify_descriptor,
-        new java.lang.String[] { "MinCostTime", "DungeonGuid", });
+        new java.lang.String[] { "DungeonGuid", "MinCostTime", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

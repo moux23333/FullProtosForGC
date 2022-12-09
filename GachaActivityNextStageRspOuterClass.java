@@ -19,22 +19,26 @@ public final class GachaActivityNextStageRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 stage_id = 13;</code>
+     * <code>uint32 stage_id = 11;</code>
      * @return The stageId.
      */
     int getStageId();
 
     /**
-     * <code>int32 retcode = 15;</code>
+     * <code>int32 retcode = 5;</code>
      * @return The retcode.
      */
     int getRetcode();
   }
   /**
    * <pre>
-   * CmdId: 8918
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 8914;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code GachaActivityNextStageRsp}
@@ -81,14 +85,14 @@ public final class GachaActivityNextStageRspOuterClass {
             case 0:
               done = true;
               break;
-            case 104: {
-
-              stageId_ = input.readUInt32();
-              break;
-            }
-            case 120: {
+            case 40: {
 
               retcode_ = input.readInt32();
+              break;
+            }
+            case 88: {
+
+              stageId_ = input.readUInt32();
               break;
             }
             default: {
@@ -123,10 +127,10 @@ public final class GachaActivityNextStageRspOuterClass {
               emu.grasscutter.net.proto.GachaActivityNextStageRspOuterClass.GachaActivityNextStageRsp.class, emu.grasscutter.net.proto.GachaActivityNextStageRspOuterClass.GachaActivityNextStageRsp.Builder.class);
     }
 
-    public static final int STAGE_ID_FIELD_NUMBER = 13;
+    public static final int STAGE_ID_FIELD_NUMBER = 11;
     private int stageId_;
     /**
-     * <code>uint32 stage_id = 13;</code>
+     * <code>uint32 stage_id = 11;</code>
      * @return The stageId.
      */
     @java.lang.Override
@@ -134,10 +138,10 @@ public final class GachaActivityNextStageRspOuterClass {
       return stageId_;
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 15;
+    public static final int RETCODE_FIELD_NUMBER = 5;
     private int retcode_;
     /**
-     * <code>int32 retcode = 15;</code>
+     * <code>int32 retcode = 5;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -159,11 +163,11 @@ public final class GachaActivityNextStageRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (stageId_ != 0) {
-        output.writeUInt32(13, stageId_);
-      }
       if (retcode_ != 0) {
-        output.writeInt32(15, retcode_);
+        output.writeInt32(5, retcode_);
+      }
+      if (stageId_ != 0) {
+        output.writeUInt32(11, stageId_);
       }
       unknownFields.writeTo(output);
     }
@@ -174,13 +178,13 @@ public final class GachaActivityNextStageRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (stageId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, stageId_);
-      }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(15, retcode_);
+          .computeInt32Size(5, retcode_);
+      }
+      if (stageId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(11, stageId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -313,9 +317,13 @@ public final class GachaActivityNextStageRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 8918
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 8914;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code GachaActivityNextStageRsp}
@@ -472,7 +480,7 @@ public final class GachaActivityNextStageRspOuterClass {
 
       private int stageId_ ;
       /**
-       * <code>uint32 stage_id = 13;</code>
+       * <code>uint32 stage_id = 11;</code>
        * @return The stageId.
        */
       @java.lang.Override
@@ -480,7 +488,7 @@ public final class GachaActivityNextStageRspOuterClass {
         return stageId_;
       }
       /**
-       * <code>uint32 stage_id = 13;</code>
+       * <code>uint32 stage_id = 11;</code>
        * @param value The stageId to set.
        * @return This builder for chaining.
        */
@@ -491,7 +499,7 @@ public final class GachaActivityNextStageRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 stage_id = 13;</code>
+       * <code>uint32 stage_id = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearStageId() {
@@ -503,7 +511,7 @@ public final class GachaActivityNextStageRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 15;</code>
+       * <code>int32 retcode = 5;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -511,7 +519,7 @@ public final class GachaActivityNextStageRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 15;</code>
+       * <code>int32 retcode = 5;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -522,7 +530,7 @@ public final class GachaActivityNextStageRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 15;</code>
+       * <code>int32 retcode = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -599,8 +607,8 @@ public final class GachaActivityNextStageRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\037GachaActivityNextStageRsp.proto\">\n\031Gac" +
-      "haActivityNextStageRsp\022\020\n\010stage_id\030\r \001(\r" +
-      "\022\017\n\007retcode\030\017 \001(\005B\033\n\031emu.grasscutter.net" +
+      "haActivityNextStageRsp\022\020\n\010stage_id\030\013 \001(\r" +
+      "\022\017\n\007retcode\030\005 \001(\005B\033\n\031emu.grasscutter.net" +
       ".protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

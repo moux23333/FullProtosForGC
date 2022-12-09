@@ -19,28 +19,32 @@ public final class SpiceActivityFinishMakeSpiceRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 stage_id = 13;</code>
+     * <code>uint32 stage_id = 8;</code>
      * @return The stageId.
      */
     int getStageId();
 
     /**
-     * <code>int32 retcode = 14;</code>
+     * <code>int32 retcode = 10;</code>
      * @return The retcode.
      */
     int getRetcode();
 
     /**
-     * <code>bool is_success = 3;</code>
+     * <code>bool is_success = 9;</code>
      * @return The isSuccess.
      */
     boolean getIsSuccess();
   }
   /**
    * <pre>
-   * CmdId: 8481
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 8946;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code SpiceActivityFinishMakeSpiceRsp}
@@ -87,17 +91,17 @@ public final class SpiceActivityFinishMakeSpiceRspOuterClass {
             case 0:
               done = true;
               break;
-            case 24: {
-
-              isSuccess_ = input.readBool();
-              break;
-            }
-            case 104: {
+            case 64: {
 
               stageId_ = input.readUInt32();
               break;
             }
-            case 112: {
+            case 72: {
+
+              isSuccess_ = input.readBool();
+              break;
+            }
+            case 80: {
 
               retcode_ = input.readInt32();
               break;
@@ -134,10 +138,10 @@ public final class SpiceActivityFinishMakeSpiceRspOuterClass {
               emu.grasscutter.net.proto.SpiceActivityFinishMakeSpiceRspOuterClass.SpiceActivityFinishMakeSpiceRsp.class, emu.grasscutter.net.proto.SpiceActivityFinishMakeSpiceRspOuterClass.SpiceActivityFinishMakeSpiceRsp.Builder.class);
     }
 
-    public static final int STAGE_ID_FIELD_NUMBER = 13;
+    public static final int STAGE_ID_FIELD_NUMBER = 8;
     private int stageId_;
     /**
-     * <code>uint32 stage_id = 13;</code>
+     * <code>uint32 stage_id = 8;</code>
      * @return The stageId.
      */
     @java.lang.Override
@@ -145,10 +149,10 @@ public final class SpiceActivityFinishMakeSpiceRspOuterClass {
       return stageId_;
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 14;
+    public static final int RETCODE_FIELD_NUMBER = 10;
     private int retcode_;
     /**
-     * <code>int32 retcode = 14;</code>
+     * <code>int32 retcode = 10;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -156,10 +160,10 @@ public final class SpiceActivityFinishMakeSpiceRspOuterClass {
       return retcode_;
     }
 
-    public static final int IS_SUCCESS_FIELD_NUMBER = 3;
+    public static final int IS_SUCCESS_FIELD_NUMBER = 9;
     private boolean isSuccess_;
     /**
-     * <code>bool is_success = 3;</code>
+     * <code>bool is_success = 9;</code>
      * @return The isSuccess.
      */
     @java.lang.Override
@@ -181,14 +185,14 @@ public final class SpiceActivityFinishMakeSpiceRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (isSuccess_ != false) {
-        output.writeBool(3, isSuccess_);
-      }
       if (stageId_ != 0) {
-        output.writeUInt32(13, stageId_);
+        output.writeUInt32(8, stageId_);
+      }
+      if (isSuccess_ != false) {
+        output.writeBool(9, isSuccess_);
       }
       if (retcode_ != 0) {
-        output.writeInt32(14, retcode_);
+        output.writeInt32(10, retcode_);
       }
       unknownFields.writeTo(output);
     }
@@ -199,17 +203,17 @@ public final class SpiceActivityFinishMakeSpiceRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (isSuccess_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(3, isSuccess_);
-      }
       if (stageId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, stageId_);
+          .computeUInt32Size(8, stageId_);
+      }
+      if (isSuccess_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(9, isSuccess_);
       }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(14, retcode_);
+          .computeInt32Size(10, retcode_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -347,9 +351,13 @@ public final class SpiceActivityFinishMakeSpiceRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 8481
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 8946;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code SpiceActivityFinishMakeSpiceRsp}
@@ -512,7 +520,7 @@ public final class SpiceActivityFinishMakeSpiceRspOuterClass {
 
       private int stageId_ ;
       /**
-       * <code>uint32 stage_id = 13;</code>
+       * <code>uint32 stage_id = 8;</code>
        * @return The stageId.
        */
       @java.lang.Override
@@ -520,7 +528,7 @@ public final class SpiceActivityFinishMakeSpiceRspOuterClass {
         return stageId_;
       }
       /**
-       * <code>uint32 stage_id = 13;</code>
+       * <code>uint32 stage_id = 8;</code>
        * @param value The stageId to set.
        * @return This builder for chaining.
        */
@@ -531,7 +539,7 @@ public final class SpiceActivityFinishMakeSpiceRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 stage_id = 13;</code>
+       * <code>uint32 stage_id = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearStageId() {
@@ -543,7 +551,7 @@ public final class SpiceActivityFinishMakeSpiceRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 14;</code>
+       * <code>int32 retcode = 10;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -551,7 +559,7 @@ public final class SpiceActivityFinishMakeSpiceRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 14;</code>
+       * <code>int32 retcode = 10;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -562,7 +570,7 @@ public final class SpiceActivityFinishMakeSpiceRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 14;</code>
+       * <code>int32 retcode = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -574,7 +582,7 @@ public final class SpiceActivityFinishMakeSpiceRspOuterClass {
 
       private boolean isSuccess_ ;
       /**
-       * <code>bool is_success = 3;</code>
+       * <code>bool is_success = 9;</code>
        * @return The isSuccess.
        */
       @java.lang.Override
@@ -582,7 +590,7 @@ public final class SpiceActivityFinishMakeSpiceRspOuterClass {
         return isSuccess_;
       }
       /**
-       * <code>bool is_success = 3;</code>
+       * <code>bool is_success = 9;</code>
        * @param value The isSuccess to set.
        * @return This builder for chaining.
        */
@@ -593,7 +601,7 @@ public final class SpiceActivityFinishMakeSpiceRspOuterClass {
         return this;
       }
       /**
-       * <code>bool is_success = 3;</code>
+       * <code>bool is_success = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsSuccess() {
@@ -671,8 +679,8 @@ public final class SpiceActivityFinishMakeSpiceRspOuterClass {
     java.lang.String[] descriptorData = {
       "\n%SpiceActivityFinishMakeSpiceRsp.proto\"" +
       "X\n\037SpiceActivityFinishMakeSpiceRsp\022\020\n\010st" +
-      "age_id\030\r \001(\r\022\017\n\007retcode\030\016 \001(\005\022\022\n\nis_succ" +
-      "ess\030\003 \001(\010B\033\n\031emu.grasscutter.net.protob\006" +
+      "age_id\030\010 \001(\r\022\017\n\007retcode\030\n \001(\005\022\022\n\nis_succ" +
+      "ess\030\t \001(\010B\033\n\031emu.grasscutter.net.protob\006" +
       "proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

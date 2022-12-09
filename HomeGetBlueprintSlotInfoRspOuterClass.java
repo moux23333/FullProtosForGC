@@ -19,57 +19,61 @@ public final class HomeGetBlueprintSlotInfoRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated uint32 delete_slot_id_list = 6;</code>
+     * <code>repeated uint32 delete_slot_id_list = 1;</code>
      * @return A list containing the deleteSlotIdList.
      */
     java.util.List<java.lang.Integer> getDeleteSlotIdListList();
     /**
-     * <code>repeated uint32 delete_slot_id_list = 6;</code>
+     * <code>repeated uint32 delete_slot_id_list = 1;</code>
      * @return The count of deleteSlotIdList.
      */
     int getDeleteSlotIdListCount();
     /**
-     * <code>repeated uint32 delete_slot_id_list = 6;</code>
+     * <code>repeated uint32 delete_slot_id_list = 1;</code>
      * @param index The index of the element to return.
      * @return The deleteSlotIdList at the given index.
      */
     int getDeleteSlotIdList(int index);
 
     /**
-     * <code>repeated .HomeBlueprintSlotInfo slot_info_list = 3;</code>
+     * <code>repeated .HomeBlueprintSlotInfo slot_info_list = 15;</code>
      */
     java.util.List<emu.grasscutter.net.proto.HomeBlueprintSlotInfoOuterClass.HomeBlueprintSlotInfo> 
         getSlotInfoListList();
     /**
-     * <code>repeated .HomeBlueprintSlotInfo slot_info_list = 3;</code>
+     * <code>repeated .HomeBlueprintSlotInfo slot_info_list = 15;</code>
      */
     emu.grasscutter.net.proto.HomeBlueprintSlotInfoOuterClass.HomeBlueprintSlotInfo getSlotInfoList(int index);
     /**
-     * <code>repeated .HomeBlueprintSlotInfo slot_info_list = 3;</code>
+     * <code>repeated .HomeBlueprintSlotInfo slot_info_list = 15;</code>
      */
     int getSlotInfoListCount();
     /**
-     * <code>repeated .HomeBlueprintSlotInfo slot_info_list = 3;</code>
+     * <code>repeated .HomeBlueprintSlotInfo slot_info_list = 15;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.HomeBlueprintSlotInfoOuterClass.HomeBlueprintSlotInfoOrBuilder> 
         getSlotInfoListOrBuilderList();
     /**
-     * <code>repeated .HomeBlueprintSlotInfo slot_info_list = 3;</code>
+     * <code>repeated .HomeBlueprintSlotInfo slot_info_list = 15;</code>
      */
     emu.grasscutter.net.proto.HomeBlueprintSlotInfoOuterClass.HomeBlueprintSlotInfoOrBuilder getSlotInfoListOrBuilder(
         int index);
 
     /**
-     * <code>int32 retcode = 15;</code>
+     * <code>int32 retcode = 7;</code>
      * @return The retcode.
      */
     int getRetcode();
   }
   /**
    * <pre>
-   * CmdId: 4662
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 4498;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code HomeGetBlueprintSlotInfoRsp}
@@ -119,16 +123,7 @@ public final class HomeGetBlueprintSlotInfoRspOuterClass {
             case 0:
               done = true;
               break;
-            case 26: {
-              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
-                slotInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.HomeBlueprintSlotInfoOuterClass.HomeBlueprintSlotInfo>();
-                mutable_bitField0_ |= 0x00000002;
-              }
-              slotInfoList_.add(
-                  input.readMessage(emu.grasscutter.net.proto.HomeBlueprintSlotInfoOuterClass.HomeBlueprintSlotInfo.parser(), extensionRegistry));
-              break;
-            }
-            case 48: {
+            case 8: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 deleteSlotIdList_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
@@ -136,7 +131,7 @@ public final class HomeGetBlueprintSlotInfoRspOuterClass {
               deleteSlotIdList_.addInt(input.readUInt32());
               break;
             }
-            case 50: {
+            case 10: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -149,9 +144,18 @@ public final class HomeGetBlueprintSlotInfoRspOuterClass {
               input.popLimit(limit);
               break;
             }
-            case 120: {
+            case 56: {
 
               retcode_ = input.readInt32();
+              break;
+            }
+            case 122: {
+              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
+                slotInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.HomeBlueprintSlotInfoOuterClass.HomeBlueprintSlotInfo>();
+                mutable_bitField0_ |= 0x00000002;
+              }
+              slotInfoList_.add(
+                  input.readMessage(emu.grasscutter.net.proto.HomeBlueprintSlotInfoOuterClass.HomeBlueprintSlotInfo.parser(), extensionRegistry));
               break;
             }
             default: {
@@ -169,11 +173,11 @@ public final class HomeGetBlueprintSlotInfoRspOuterClass {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
       } finally {
-        if (((mutable_bitField0_ & 0x00000002) != 0)) {
-          slotInfoList_ = java.util.Collections.unmodifiableList(slotInfoList_);
-        }
         if (((mutable_bitField0_ & 0x00000001) != 0)) {
           deleteSlotIdList_.makeImmutable(); // C
+        }
+        if (((mutable_bitField0_ & 0x00000002) != 0)) {
+          slotInfoList_ = java.util.Collections.unmodifiableList(slotInfoList_);
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -192,10 +196,10 @@ public final class HomeGetBlueprintSlotInfoRspOuterClass {
               emu.grasscutter.net.proto.HomeGetBlueprintSlotInfoRspOuterClass.HomeGetBlueprintSlotInfoRsp.class, emu.grasscutter.net.proto.HomeGetBlueprintSlotInfoRspOuterClass.HomeGetBlueprintSlotInfoRsp.Builder.class);
     }
 
-    public static final int DELETE_SLOT_ID_LIST_FIELD_NUMBER = 6;
+    public static final int DELETE_SLOT_ID_LIST_FIELD_NUMBER = 1;
     private com.google.protobuf.Internal.IntList deleteSlotIdList_;
     /**
-     * <code>repeated uint32 delete_slot_id_list = 6;</code>
+     * <code>repeated uint32 delete_slot_id_list = 1;</code>
      * @return A list containing the deleteSlotIdList.
      */
     @java.lang.Override
@@ -204,14 +208,14 @@ public final class HomeGetBlueprintSlotInfoRspOuterClass {
       return deleteSlotIdList_;
     }
     /**
-     * <code>repeated uint32 delete_slot_id_list = 6;</code>
+     * <code>repeated uint32 delete_slot_id_list = 1;</code>
      * @return The count of deleteSlotIdList.
      */
     public int getDeleteSlotIdListCount() {
       return deleteSlotIdList_.size();
     }
     /**
-     * <code>repeated uint32 delete_slot_id_list = 6;</code>
+     * <code>repeated uint32 delete_slot_id_list = 1;</code>
      * @param index The index of the element to return.
      * @return The deleteSlotIdList at the given index.
      */
@@ -220,17 +224,17 @@ public final class HomeGetBlueprintSlotInfoRspOuterClass {
     }
     private int deleteSlotIdListMemoizedSerializedSize = -1;
 
-    public static final int SLOT_INFO_LIST_FIELD_NUMBER = 3;
+    public static final int SLOT_INFO_LIST_FIELD_NUMBER = 15;
     private java.util.List<emu.grasscutter.net.proto.HomeBlueprintSlotInfoOuterClass.HomeBlueprintSlotInfo> slotInfoList_;
     /**
-     * <code>repeated .HomeBlueprintSlotInfo slot_info_list = 3;</code>
+     * <code>repeated .HomeBlueprintSlotInfo slot_info_list = 15;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.HomeBlueprintSlotInfoOuterClass.HomeBlueprintSlotInfo> getSlotInfoListList() {
       return slotInfoList_;
     }
     /**
-     * <code>repeated .HomeBlueprintSlotInfo slot_info_list = 3;</code>
+     * <code>repeated .HomeBlueprintSlotInfo slot_info_list = 15;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.HomeBlueprintSlotInfoOuterClass.HomeBlueprintSlotInfoOrBuilder> 
@@ -238,21 +242,21 @@ public final class HomeGetBlueprintSlotInfoRspOuterClass {
       return slotInfoList_;
     }
     /**
-     * <code>repeated .HomeBlueprintSlotInfo slot_info_list = 3;</code>
+     * <code>repeated .HomeBlueprintSlotInfo slot_info_list = 15;</code>
      */
     @java.lang.Override
     public int getSlotInfoListCount() {
       return slotInfoList_.size();
     }
     /**
-     * <code>repeated .HomeBlueprintSlotInfo slot_info_list = 3;</code>
+     * <code>repeated .HomeBlueprintSlotInfo slot_info_list = 15;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.HomeBlueprintSlotInfoOuterClass.HomeBlueprintSlotInfo getSlotInfoList(int index) {
       return slotInfoList_.get(index);
     }
     /**
-     * <code>repeated .HomeBlueprintSlotInfo slot_info_list = 3;</code>
+     * <code>repeated .HomeBlueprintSlotInfo slot_info_list = 15;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.HomeBlueprintSlotInfoOuterClass.HomeBlueprintSlotInfoOrBuilder getSlotInfoListOrBuilder(
@@ -260,10 +264,10 @@ public final class HomeGetBlueprintSlotInfoRspOuterClass {
       return slotInfoList_.get(index);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 15;
+    public static final int RETCODE_FIELD_NUMBER = 7;
     private int retcode_;
     /**
-     * <code>int32 retcode = 15;</code>
+     * <code>int32 retcode = 7;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -286,18 +290,18 @@ public final class HomeGetBlueprintSlotInfoRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      for (int i = 0; i < slotInfoList_.size(); i++) {
-        output.writeMessage(3, slotInfoList_.get(i));
-      }
       if (getDeleteSlotIdListList().size() > 0) {
-        output.writeUInt32NoTag(50);
+        output.writeUInt32NoTag(10);
         output.writeUInt32NoTag(deleteSlotIdListMemoizedSerializedSize);
       }
       for (int i = 0; i < deleteSlotIdList_.size(); i++) {
         output.writeUInt32NoTag(deleteSlotIdList_.getInt(i));
       }
       if (retcode_ != 0) {
-        output.writeInt32(15, retcode_);
+        output.writeInt32(7, retcode_);
+      }
+      for (int i = 0; i < slotInfoList_.size(); i++) {
+        output.writeMessage(15, slotInfoList_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -308,10 +312,6 @@ public final class HomeGetBlueprintSlotInfoRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      for (int i = 0; i < slotInfoList_.size(); i++) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(3, slotInfoList_.get(i));
-      }
       {
         int dataSize = 0;
         for (int i = 0; i < deleteSlotIdList_.size(); i++) {
@@ -328,7 +328,11 @@ public final class HomeGetBlueprintSlotInfoRspOuterClass {
       }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(15, retcode_);
+          .computeInt32Size(7, retcode_);
+      }
+      for (int i = 0; i < slotInfoList_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(15, slotInfoList_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -469,9 +473,13 @@ public final class HomeGetBlueprintSlotInfoRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 4662
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 4498;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code HomeGetBlueprintSlotInfoRsp}
@@ -689,7 +697,7 @@ public final class HomeGetBlueprintSlotInfoRspOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 delete_slot_id_list = 6;</code>
+       * <code>repeated uint32 delete_slot_id_list = 1;</code>
        * @return A list containing the deleteSlotIdList.
        */
       public java.util.List<java.lang.Integer>
@@ -698,14 +706,14 @@ public final class HomeGetBlueprintSlotInfoRspOuterClass {
                  java.util.Collections.unmodifiableList(deleteSlotIdList_) : deleteSlotIdList_;
       }
       /**
-       * <code>repeated uint32 delete_slot_id_list = 6;</code>
+       * <code>repeated uint32 delete_slot_id_list = 1;</code>
        * @return The count of deleteSlotIdList.
        */
       public int getDeleteSlotIdListCount() {
         return deleteSlotIdList_.size();
       }
       /**
-       * <code>repeated uint32 delete_slot_id_list = 6;</code>
+       * <code>repeated uint32 delete_slot_id_list = 1;</code>
        * @param index The index of the element to return.
        * @return The deleteSlotIdList at the given index.
        */
@@ -713,7 +721,7 @@ public final class HomeGetBlueprintSlotInfoRspOuterClass {
         return deleteSlotIdList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 delete_slot_id_list = 6;</code>
+       * <code>repeated uint32 delete_slot_id_list = 1;</code>
        * @param index The index to set the value at.
        * @param value The deleteSlotIdList to set.
        * @return This builder for chaining.
@@ -726,7 +734,7 @@ public final class HomeGetBlueprintSlotInfoRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 delete_slot_id_list = 6;</code>
+       * <code>repeated uint32 delete_slot_id_list = 1;</code>
        * @param value The deleteSlotIdList to add.
        * @return This builder for chaining.
        */
@@ -737,7 +745,7 @@ public final class HomeGetBlueprintSlotInfoRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 delete_slot_id_list = 6;</code>
+       * <code>repeated uint32 delete_slot_id_list = 1;</code>
        * @param values The deleteSlotIdList to add.
        * @return This builder for chaining.
        */
@@ -750,7 +758,7 @@ public final class HomeGetBlueprintSlotInfoRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 delete_slot_id_list = 6;</code>
+       * <code>repeated uint32 delete_slot_id_list = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearDeleteSlotIdList() {
@@ -773,7 +781,7 @@ public final class HomeGetBlueprintSlotInfoRspOuterClass {
           emu.grasscutter.net.proto.HomeBlueprintSlotInfoOuterClass.HomeBlueprintSlotInfo, emu.grasscutter.net.proto.HomeBlueprintSlotInfoOuterClass.HomeBlueprintSlotInfo.Builder, emu.grasscutter.net.proto.HomeBlueprintSlotInfoOuterClass.HomeBlueprintSlotInfoOrBuilder> slotInfoListBuilder_;
 
       /**
-       * <code>repeated .HomeBlueprintSlotInfo slot_info_list = 3;</code>
+       * <code>repeated .HomeBlueprintSlotInfo slot_info_list = 15;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.HomeBlueprintSlotInfoOuterClass.HomeBlueprintSlotInfo> getSlotInfoListList() {
         if (slotInfoListBuilder_ == null) {
@@ -783,7 +791,7 @@ public final class HomeGetBlueprintSlotInfoRspOuterClass {
         }
       }
       /**
-       * <code>repeated .HomeBlueprintSlotInfo slot_info_list = 3;</code>
+       * <code>repeated .HomeBlueprintSlotInfo slot_info_list = 15;</code>
        */
       public int getSlotInfoListCount() {
         if (slotInfoListBuilder_ == null) {
@@ -793,7 +801,7 @@ public final class HomeGetBlueprintSlotInfoRspOuterClass {
         }
       }
       /**
-       * <code>repeated .HomeBlueprintSlotInfo slot_info_list = 3;</code>
+       * <code>repeated .HomeBlueprintSlotInfo slot_info_list = 15;</code>
        */
       public emu.grasscutter.net.proto.HomeBlueprintSlotInfoOuterClass.HomeBlueprintSlotInfo getSlotInfoList(int index) {
         if (slotInfoListBuilder_ == null) {
@@ -803,7 +811,7 @@ public final class HomeGetBlueprintSlotInfoRspOuterClass {
         }
       }
       /**
-       * <code>repeated .HomeBlueprintSlotInfo slot_info_list = 3;</code>
+       * <code>repeated .HomeBlueprintSlotInfo slot_info_list = 15;</code>
        */
       public Builder setSlotInfoList(
           int index, emu.grasscutter.net.proto.HomeBlueprintSlotInfoOuterClass.HomeBlueprintSlotInfo value) {
@@ -820,7 +828,7 @@ public final class HomeGetBlueprintSlotInfoRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .HomeBlueprintSlotInfo slot_info_list = 3;</code>
+       * <code>repeated .HomeBlueprintSlotInfo slot_info_list = 15;</code>
        */
       public Builder setSlotInfoList(
           int index, emu.grasscutter.net.proto.HomeBlueprintSlotInfoOuterClass.HomeBlueprintSlotInfo.Builder builderForValue) {
@@ -834,7 +842,7 @@ public final class HomeGetBlueprintSlotInfoRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .HomeBlueprintSlotInfo slot_info_list = 3;</code>
+       * <code>repeated .HomeBlueprintSlotInfo slot_info_list = 15;</code>
        */
       public Builder addSlotInfoList(emu.grasscutter.net.proto.HomeBlueprintSlotInfoOuterClass.HomeBlueprintSlotInfo value) {
         if (slotInfoListBuilder_ == null) {
@@ -850,7 +858,7 @@ public final class HomeGetBlueprintSlotInfoRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .HomeBlueprintSlotInfo slot_info_list = 3;</code>
+       * <code>repeated .HomeBlueprintSlotInfo slot_info_list = 15;</code>
        */
       public Builder addSlotInfoList(
           int index, emu.grasscutter.net.proto.HomeBlueprintSlotInfoOuterClass.HomeBlueprintSlotInfo value) {
@@ -867,7 +875,7 @@ public final class HomeGetBlueprintSlotInfoRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .HomeBlueprintSlotInfo slot_info_list = 3;</code>
+       * <code>repeated .HomeBlueprintSlotInfo slot_info_list = 15;</code>
        */
       public Builder addSlotInfoList(
           emu.grasscutter.net.proto.HomeBlueprintSlotInfoOuterClass.HomeBlueprintSlotInfo.Builder builderForValue) {
@@ -881,7 +889,7 @@ public final class HomeGetBlueprintSlotInfoRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .HomeBlueprintSlotInfo slot_info_list = 3;</code>
+       * <code>repeated .HomeBlueprintSlotInfo slot_info_list = 15;</code>
        */
       public Builder addSlotInfoList(
           int index, emu.grasscutter.net.proto.HomeBlueprintSlotInfoOuterClass.HomeBlueprintSlotInfo.Builder builderForValue) {
@@ -895,7 +903,7 @@ public final class HomeGetBlueprintSlotInfoRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .HomeBlueprintSlotInfo slot_info_list = 3;</code>
+       * <code>repeated .HomeBlueprintSlotInfo slot_info_list = 15;</code>
        */
       public Builder addAllSlotInfoList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.HomeBlueprintSlotInfoOuterClass.HomeBlueprintSlotInfo> values) {
@@ -910,7 +918,7 @@ public final class HomeGetBlueprintSlotInfoRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .HomeBlueprintSlotInfo slot_info_list = 3;</code>
+       * <code>repeated .HomeBlueprintSlotInfo slot_info_list = 15;</code>
        */
       public Builder clearSlotInfoList() {
         if (slotInfoListBuilder_ == null) {
@@ -923,7 +931,7 @@ public final class HomeGetBlueprintSlotInfoRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .HomeBlueprintSlotInfo slot_info_list = 3;</code>
+       * <code>repeated .HomeBlueprintSlotInfo slot_info_list = 15;</code>
        */
       public Builder removeSlotInfoList(int index) {
         if (slotInfoListBuilder_ == null) {
@@ -936,14 +944,14 @@ public final class HomeGetBlueprintSlotInfoRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .HomeBlueprintSlotInfo slot_info_list = 3;</code>
+       * <code>repeated .HomeBlueprintSlotInfo slot_info_list = 15;</code>
        */
       public emu.grasscutter.net.proto.HomeBlueprintSlotInfoOuterClass.HomeBlueprintSlotInfo.Builder getSlotInfoListBuilder(
           int index) {
         return getSlotInfoListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .HomeBlueprintSlotInfo slot_info_list = 3;</code>
+       * <code>repeated .HomeBlueprintSlotInfo slot_info_list = 15;</code>
        */
       public emu.grasscutter.net.proto.HomeBlueprintSlotInfoOuterClass.HomeBlueprintSlotInfoOrBuilder getSlotInfoListOrBuilder(
           int index) {
@@ -953,7 +961,7 @@ public final class HomeGetBlueprintSlotInfoRspOuterClass {
         }
       }
       /**
-       * <code>repeated .HomeBlueprintSlotInfo slot_info_list = 3;</code>
+       * <code>repeated .HomeBlueprintSlotInfo slot_info_list = 15;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.HomeBlueprintSlotInfoOuterClass.HomeBlueprintSlotInfoOrBuilder> 
            getSlotInfoListOrBuilderList() {
@@ -964,14 +972,14 @@ public final class HomeGetBlueprintSlotInfoRspOuterClass {
         }
       }
       /**
-       * <code>repeated .HomeBlueprintSlotInfo slot_info_list = 3;</code>
+       * <code>repeated .HomeBlueprintSlotInfo slot_info_list = 15;</code>
        */
       public emu.grasscutter.net.proto.HomeBlueprintSlotInfoOuterClass.HomeBlueprintSlotInfo.Builder addSlotInfoListBuilder() {
         return getSlotInfoListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.HomeBlueprintSlotInfoOuterClass.HomeBlueprintSlotInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .HomeBlueprintSlotInfo slot_info_list = 3;</code>
+       * <code>repeated .HomeBlueprintSlotInfo slot_info_list = 15;</code>
        */
       public emu.grasscutter.net.proto.HomeBlueprintSlotInfoOuterClass.HomeBlueprintSlotInfo.Builder addSlotInfoListBuilder(
           int index) {
@@ -979,7 +987,7 @@ public final class HomeGetBlueprintSlotInfoRspOuterClass {
             index, emu.grasscutter.net.proto.HomeBlueprintSlotInfoOuterClass.HomeBlueprintSlotInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .HomeBlueprintSlotInfo slot_info_list = 3;</code>
+       * <code>repeated .HomeBlueprintSlotInfo slot_info_list = 15;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.HomeBlueprintSlotInfoOuterClass.HomeBlueprintSlotInfo.Builder> 
            getSlotInfoListBuilderList() {
@@ -1002,7 +1010,7 @@ public final class HomeGetBlueprintSlotInfoRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 15;</code>
+       * <code>int32 retcode = 7;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -1010,7 +1018,7 @@ public final class HomeGetBlueprintSlotInfoRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 15;</code>
+       * <code>int32 retcode = 7;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -1021,7 +1029,7 @@ public final class HomeGetBlueprintSlotInfoRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 15;</code>
+       * <code>int32 retcode = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -1099,9 +1107,9 @@ public final class HomeGetBlueprintSlotInfoRspOuterClass {
     java.lang.String[] descriptorData = {
       "\n!HomeGetBlueprintSlotInfoRsp.proto\032\033Hom" +
       "eBlueprintSlotInfo.proto\"{\n\033HomeGetBluep" +
-      "rintSlotInfoRsp\022\033\n\023delete_slot_id_list\030\006" +
-      " \003(\r\022.\n\016slot_info_list\030\003 \003(\0132\026.HomeBluep" +
-      "rintSlotInfo\022\017\n\007retcode\030\017 \001(\005B\033\n\031emu.gra" +
+      "rintSlotInfoRsp\022\033\n\023delete_slot_id_list\030\001" +
+      " \003(\r\022.\n\016slot_info_list\030\017 \003(\0132\026.HomeBluep" +
+      "rintSlotInfo\022\017\n\007retcode\030\007 \001(\005B\033\n\031emu.gra" +
       "sscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

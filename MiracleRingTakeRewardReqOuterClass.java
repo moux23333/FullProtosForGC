@@ -19,23 +19,27 @@ public final class MiracleRingTakeRewardReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 gadget_id = 11;</code>
-     * @return The gadgetId.
-     */
-    int getGadgetId();
-
-    /**
-     * <code>uint32 gadget_entity_id = 7;</code>
+     * <code>uint32 gadget_entity_id = 14;</code>
      * @return The gadgetEntityId.
      */
     int getGadgetEntityId();
+
+    /**
+     * <code>uint32 gadget_id = 9;</code>
+     * @return The gadgetId.
+     */
+    int getGadgetId();
   }
   /**
    * <pre>
-   * CmdId: 5207
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 5235;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code MiracleRingTakeRewardReq}
@@ -82,14 +86,14 @@ public final class MiracleRingTakeRewardReqOuterClass {
             case 0:
               done = true;
               break;
-            case 56: {
-
-              gadgetEntityId_ = input.readUInt32();
-              break;
-            }
-            case 88: {
+            case 72: {
 
               gadgetId_ = input.readUInt32();
+              break;
+            }
+            case 112: {
+
+              gadgetEntityId_ = input.readUInt32();
               break;
             }
             default: {
@@ -124,26 +128,26 @@ public final class MiracleRingTakeRewardReqOuterClass {
               emu.grasscutter.net.proto.MiracleRingTakeRewardReqOuterClass.MiracleRingTakeRewardReq.class, emu.grasscutter.net.proto.MiracleRingTakeRewardReqOuterClass.MiracleRingTakeRewardReq.Builder.class);
     }
 
-    public static final int GADGET_ID_FIELD_NUMBER = 11;
-    private int gadgetId_;
-    /**
-     * <code>uint32 gadget_id = 11;</code>
-     * @return The gadgetId.
-     */
-    @java.lang.Override
-    public int getGadgetId() {
-      return gadgetId_;
-    }
-
-    public static final int GADGET_ENTITY_ID_FIELD_NUMBER = 7;
+    public static final int GADGET_ENTITY_ID_FIELD_NUMBER = 14;
     private int gadgetEntityId_;
     /**
-     * <code>uint32 gadget_entity_id = 7;</code>
+     * <code>uint32 gadget_entity_id = 14;</code>
      * @return The gadgetEntityId.
      */
     @java.lang.Override
     public int getGadgetEntityId() {
       return gadgetEntityId_;
+    }
+
+    public static final int GADGET_ID_FIELD_NUMBER = 9;
+    private int gadgetId_;
+    /**
+     * <code>uint32 gadget_id = 9;</code>
+     * @return The gadgetId.
+     */
+    @java.lang.Override
+    public int getGadgetId() {
+      return gadgetId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -160,11 +164,11 @@ public final class MiracleRingTakeRewardReqOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (gadgetEntityId_ != 0) {
-        output.writeUInt32(7, gadgetEntityId_);
-      }
       if (gadgetId_ != 0) {
-        output.writeUInt32(11, gadgetId_);
+        output.writeUInt32(9, gadgetId_);
+      }
+      if (gadgetEntityId_ != 0) {
+        output.writeUInt32(14, gadgetEntityId_);
       }
       unknownFields.writeTo(output);
     }
@@ -175,13 +179,13 @@ public final class MiracleRingTakeRewardReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (gadgetEntityId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, gadgetEntityId_);
-      }
       if (gadgetId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, gadgetId_);
+          .computeUInt32Size(9, gadgetId_);
+      }
+      if (gadgetEntityId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(14, gadgetEntityId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -198,10 +202,10 @@ public final class MiracleRingTakeRewardReqOuterClass {
       }
       emu.grasscutter.net.proto.MiracleRingTakeRewardReqOuterClass.MiracleRingTakeRewardReq other = (emu.grasscutter.net.proto.MiracleRingTakeRewardReqOuterClass.MiracleRingTakeRewardReq) obj;
 
-      if (getGadgetId()
-          != other.getGadgetId()) return false;
       if (getGadgetEntityId()
           != other.getGadgetEntityId()) return false;
+      if (getGadgetId()
+          != other.getGadgetId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -213,10 +217,10 @@ public final class MiracleRingTakeRewardReqOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + GADGET_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getGadgetId();
       hash = (37 * hash) + GADGET_ENTITY_ID_FIELD_NUMBER;
       hash = (53 * hash) + getGadgetEntityId();
+      hash = (37 * hash) + GADGET_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getGadgetId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -314,10 +318,14 @@ public final class MiracleRingTakeRewardReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 5207
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 5235;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code MiracleRingTakeRewardReq}
@@ -357,9 +365,9 @@ public final class MiracleRingTakeRewardReqOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        gadgetId_ = 0;
-
         gadgetEntityId_ = 0;
+
+        gadgetId_ = 0;
 
         return this;
       }
@@ -387,8 +395,8 @@ public final class MiracleRingTakeRewardReqOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.MiracleRingTakeRewardReqOuterClass.MiracleRingTakeRewardReq buildPartial() {
         emu.grasscutter.net.proto.MiracleRingTakeRewardReqOuterClass.MiracleRingTakeRewardReq result = new emu.grasscutter.net.proto.MiracleRingTakeRewardReqOuterClass.MiracleRingTakeRewardReq(this);
-        result.gadgetId_ = gadgetId_;
         result.gadgetEntityId_ = gadgetEntityId_;
+        result.gadgetId_ = gadgetId_;
         onBuilt();
         return result;
       }
@@ -437,11 +445,11 @@ public final class MiracleRingTakeRewardReqOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.MiracleRingTakeRewardReqOuterClass.MiracleRingTakeRewardReq other) {
         if (other == emu.grasscutter.net.proto.MiracleRingTakeRewardReqOuterClass.MiracleRingTakeRewardReq.getDefaultInstance()) return this;
-        if (other.getGadgetId() != 0) {
-          setGadgetId(other.getGadgetId());
-        }
         if (other.getGadgetEntityId() != 0) {
           setGadgetEntityId(other.getGadgetEntityId());
+        }
+        if (other.getGadgetId() != 0) {
+          setGadgetId(other.getGadgetId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -472,40 +480,9 @@ public final class MiracleRingTakeRewardReqOuterClass {
         return this;
       }
 
-      private int gadgetId_ ;
-      /**
-       * <code>uint32 gadget_id = 11;</code>
-       * @return The gadgetId.
-       */
-      @java.lang.Override
-      public int getGadgetId() {
-        return gadgetId_;
-      }
-      /**
-       * <code>uint32 gadget_id = 11;</code>
-       * @param value The gadgetId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setGadgetId(int value) {
-        
-        gadgetId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 gadget_id = 11;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearGadgetId() {
-        
-        gadgetId_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int gadgetEntityId_ ;
       /**
-       * <code>uint32 gadget_entity_id = 7;</code>
+       * <code>uint32 gadget_entity_id = 14;</code>
        * @return The gadgetEntityId.
        */
       @java.lang.Override
@@ -513,7 +490,7 @@ public final class MiracleRingTakeRewardReqOuterClass {
         return gadgetEntityId_;
       }
       /**
-       * <code>uint32 gadget_entity_id = 7;</code>
+       * <code>uint32 gadget_entity_id = 14;</code>
        * @param value The gadgetEntityId to set.
        * @return This builder for chaining.
        */
@@ -524,12 +501,43 @@ public final class MiracleRingTakeRewardReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 gadget_entity_id = 7;</code>
+       * <code>uint32 gadget_entity_id = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearGadgetEntityId() {
         
         gadgetEntityId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int gadgetId_ ;
+      /**
+       * <code>uint32 gadget_id = 9;</code>
+       * @return The gadgetId.
+       */
+      @java.lang.Override
+      public int getGadgetId() {
+        return gadgetId_;
+      }
+      /**
+       * <code>uint32 gadget_id = 9;</code>
+       * @param value The gadgetId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setGadgetId(int value) {
+        
+        gadgetId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 gadget_id = 9;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearGadgetId() {
+        
+        gadgetId_ = 0;
         onChanged();
         return this;
       }
@@ -601,8 +609,8 @@ public final class MiracleRingTakeRewardReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\036MiracleRingTakeRewardReq.proto\"G\n\030Mira" +
-      "cleRingTakeRewardReq\022\021\n\tgadget_id\030\013 \001(\r\022" +
-      "\030\n\020gadget_entity_id\030\007 \001(\rB\033\n\031emu.grasscu" +
+      "cleRingTakeRewardReq\022\030\n\020gadget_entity_id" +
+      "\030\016 \001(\r\022\021\n\tgadget_id\030\t \001(\rB\033\n\031emu.grasscu" +
       "tter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -614,7 +622,7 @@ public final class MiracleRingTakeRewardReqOuterClass {
     internal_static_MiracleRingTakeRewardReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_MiracleRingTakeRewardReq_descriptor,
-        new java.lang.String[] { "GadgetId", "GadgetEntityId", });
+        new java.lang.String[] { "GadgetEntityId", "GadgetId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

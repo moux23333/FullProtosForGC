@@ -19,28 +19,32 @@ public final class ViewLanternProjectionTipsReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_input_tips = 9;</code>
-     * @return The isInputTips.
-     */
-    boolean getIsInputTips();
-
-    /**
-     * <code>.ClientInputType input_type = 10;</code>
+     * <code>.ClientInputType input_type = 14;</code>
      * @return The enum numeric value on the wire for inputType.
      */
     int getInputTypeValue();
     /**
-     * <code>.ClientInputType input_type = 10;</code>
+     * <code>.ClientInputType input_type = 14;</code>
      * @return The inputType.
      */
     emu.grasscutter.net.proto.ClientInputTypeOuterClass.ClientInputType getInputType();
+
+    /**
+     * <code>bool is_input_tips = 7;</code>
+     * @return The isInputTips.
+     */
+    boolean getIsInputTips();
   }
   /**
    * <pre>
-   * CmdId: 8218
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 8560;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code ViewLanternProjectionTipsReq}
@@ -88,12 +92,12 @@ public final class ViewLanternProjectionTipsReqOuterClass {
             case 0:
               done = true;
               break;
-            case 72: {
+            case 56: {
 
               isInputTips_ = input.readBool();
               break;
             }
-            case 80: {
+            case 112: {
               int rawValue = input.readEnum();
 
               inputType_ = rawValue;
@@ -131,34 +135,34 @@ public final class ViewLanternProjectionTipsReqOuterClass {
               emu.grasscutter.net.proto.ViewLanternProjectionTipsReqOuterClass.ViewLanternProjectionTipsReq.class, emu.grasscutter.net.proto.ViewLanternProjectionTipsReqOuterClass.ViewLanternProjectionTipsReq.Builder.class);
     }
 
-    public static final int IS_INPUT_TIPS_FIELD_NUMBER = 9;
-    private boolean isInputTips_;
-    /**
-     * <code>bool is_input_tips = 9;</code>
-     * @return The isInputTips.
-     */
-    @java.lang.Override
-    public boolean getIsInputTips() {
-      return isInputTips_;
-    }
-
-    public static final int INPUT_TYPE_FIELD_NUMBER = 10;
+    public static final int INPUT_TYPE_FIELD_NUMBER = 14;
     private int inputType_;
     /**
-     * <code>.ClientInputType input_type = 10;</code>
+     * <code>.ClientInputType input_type = 14;</code>
      * @return The enum numeric value on the wire for inputType.
      */
     @java.lang.Override public int getInputTypeValue() {
       return inputType_;
     }
     /**
-     * <code>.ClientInputType input_type = 10;</code>
+     * <code>.ClientInputType input_type = 14;</code>
      * @return The inputType.
      */
     @java.lang.Override public emu.grasscutter.net.proto.ClientInputTypeOuterClass.ClientInputType getInputType() {
       @SuppressWarnings("deprecation")
       emu.grasscutter.net.proto.ClientInputTypeOuterClass.ClientInputType result = emu.grasscutter.net.proto.ClientInputTypeOuterClass.ClientInputType.valueOf(inputType_);
       return result == null ? emu.grasscutter.net.proto.ClientInputTypeOuterClass.ClientInputType.UNRECOGNIZED : result;
+    }
+
+    public static final int IS_INPUT_TIPS_FIELD_NUMBER = 7;
+    private boolean isInputTips_;
+    /**
+     * <code>bool is_input_tips = 7;</code>
+     * @return The isInputTips.
+     */
+    @java.lang.Override
+    public boolean getIsInputTips() {
+      return isInputTips_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -176,10 +180,10 @@ public final class ViewLanternProjectionTipsReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (isInputTips_ != false) {
-        output.writeBool(9, isInputTips_);
+        output.writeBool(7, isInputTips_);
       }
       if (inputType_ != emu.grasscutter.net.proto.ClientInputTypeOuterClass.ClientInputType.CLIENT_INPUT_TYPE_NONE.getNumber()) {
-        output.writeEnum(10, inputType_);
+        output.writeEnum(14, inputType_);
       }
       unknownFields.writeTo(output);
     }
@@ -192,11 +196,11 @@ public final class ViewLanternProjectionTipsReqOuterClass {
       size = 0;
       if (isInputTips_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(9, isInputTips_);
+          .computeBoolSize(7, isInputTips_);
       }
       if (inputType_ != emu.grasscutter.net.proto.ClientInputTypeOuterClass.ClientInputType.CLIENT_INPUT_TYPE_NONE.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(10, inputType_);
+          .computeEnumSize(14, inputType_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -213,9 +217,9 @@ public final class ViewLanternProjectionTipsReqOuterClass {
       }
       emu.grasscutter.net.proto.ViewLanternProjectionTipsReqOuterClass.ViewLanternProjectionTipsReq other = (emu.grasscutter.net.proto.ViewLanternProjectionTipsReqOuterClass.ViewLanternProjectionTipsReq) obj;
 
+      if (inputType_ != other.inputType_) return false;
       if (getIsInputTips()
           != other.getIsInputTips()) return false;
-      if (inputType_ != other.inputType_) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -227,11 +231,11 @@ public final class ViewLanternProjectionTipsReqOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + INPUT_TYPE_FIELD_NUMBER;
+      hash = (53 * hash) + inputType_;
       hash = (37 * hash) + IS_INPUT_TIPS_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsInputTips());
-      hash = (37 * hash) + INPUT_TYPE_FIELD_NUMBER;
-      hash = (53 * hash) + inputType_;
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -329,10 +333,14 @@ public final class ViewLanternProjectionTipsReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 8218
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 8560;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code ViewLanternProjectionTipsReq}
@@ -372,9 +380,9 @@ public final class ViewLanternProjectionTipsReqOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        isInputTips_ = false;
-
         inputType_ = 0;
+
+        isInputTips_ = false;
 
         return this;
       }
@@ -402,8 +410,8 @@ public final class ViewLanternProjectionTipsReqOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.ViewLanternProjectionTipsReqOuterClass.ViewLanternProjectionTipsReq buildPartial() {
         emu.grasscutter.net.proto.ViewLanternProjectionTipsReqOuterClass.ViewLanternProjectionTipsReq result = new emu.grasscutter.net.proto.ViewLanternProjectionTipsReqOuterClass.ViewLanternProjectionTipsReq(this);
-        result.isInputTips_ = isInputTips_;
         result.inputType_ = inputType_;
+        result.isInputTips_ = isInputTips_;
         onBuilt();
         return result;
       }
@@ -452,11 +460,11 @@ public final class ViewLanternProjectionTipsReqOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.ViewLanternProjectionTipsReqOuterClass.ViewLanternProjectionTipsReq other) {
         if (other == emu.grasscutter.net.proto.ViewLanternProjectionTipsReqOuterClass.ViewLanternProjectionTipsReq.getDefaultInstance()) return this;
-        if (other.getIsInputTips() != false) {
-          setIsInputTips(other.getIsInputTips());
-        }
         if (other.inputType_ != 0) {
           setInputTypeValue(other.getInputTypeValue());
+        }
+        if (other.getIsInputTips() != false) {
+          setIsInputTips(other.getIsInputTips());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -487,47 +495,16 @@ public final class ViewLanternProjectionTipsReqOuterClass {
         return this;
       }
 
-      private boolean isInputTips_ ;
-      /**
-       * <code>bool is_input_tips = 9;</code>
-       * @return The isInputTips.
-       */
-      @java.lang.Override
-      public boolean getIsInputTips() {
-        return isInputTips_;
-      }
-      /**
-       * <code>bool is_input_tips = 9;</code>
-       * @param value The isInputTips to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsInputTips(boolean value) {
-        
-        isInputTips_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_input_tips = 9;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsInputTips() {
-        
-        isInputTips_ = false;
-        onChanged();
-        return this;
-      }
-
       private int inputType_ = 0;
       /**
-       * <code>.ClientInputType input_type = 10;</code>
+       * <code>.ClientInputType input_type = 14;</code>
        * @return The enum numeric value on the wire for inputType.
        */
       @java.lang.Override public int getInputTypeValue() {
         return inputType_;
       }
       /**
-       * <code>.ClientInputType input_type = 10;</code>
+       * <code>.ClientInputType input_type = 14;</code>
        * @param value The enum numeric value on the wire for inputType to set.
        * @return This builder for chaining.
        */
@@ -538,7 +515,7 @@ public final class ViewLanternProjectionTipsReqOuterClass {
         return this;
       }
       /**
-       * <code>.ClientInputType input_type = 10;</code>
+       * <code>.ClientInputType input_type = 14;</code>
        * @return The inputType.
        */
       @java.lang.Override
@@ -548,7 +525,7 @@ public final class ViewLanternProjectionTipsReqOuterClass {
         return result == null ? emu.grasscutter.net.proto.ClientInputTypeOuterClass.ClientInputType.UNRECOGNIZED : result;
       }
       /**
-       * <code>.ClientInputType input_type = 10;</code>
+       * <code>.ClientInputType input_type = 14;</code>
        * @param value The inputType to set.
        * @return This builder for chaining.
        */
@@ -562,12 +539,43 @@ public final class ViewLanternProjectionTipsReqOuterClass {
         return this;
       }
       /**
-       * <code>.ClientInputType input_type = 10;</code>
+       * <code>.ClientInputType input_type = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearInputType() {
         
         inputType_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private boolean isInputTips_ ;
+      /**
+       * <code>bool is_input_tips = 7;</code>
+       * @return The isInputTips.
+       */
+      @java.lang.Override
+      public boolean getIsInputTips() {
+        return isInputTips_;
+      }
+      /**
+       * <code>bool is_input_tips = 7;</code>
+       * @param value The isInputTips to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIsInputTips(boolean value) {
+        
+        isInputTips_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool is_input_tips = 7;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsInputTips() {
+        
+        isInputTips_ = false;
         onChanged();
         return this;
       }
@@ -640,8 +648,8 @@ public final class ViewLanternProjectionTipsReqOuterClass {
     java.lang.String[] descriptorData = {
       "\n\"ViewLanternProjectionTipsReq.proto\032\025Cl" +
       "ientInputType.proto\"[\n\034ViewLanternProjec" +
-      "tionTipsReq\022\025\n\ris_input_tips\030\t \001(\010\022$\n\nin" +
-      "put_type\030\n \001(\0162\020.ClientInputTypeB\033\n\031emu." +
+      "tionTipsReq\022$\n\ninput_type\030\016 \001(\0162\020.Client" +
+      "InputType\022\025\n\ris_input_tips\030\007 \001(\010B\033\n\031emu." +
       "grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -654,7 +662,7 @@ public final class ViewLanternProjectionTipsReqOuterClass {
     internal_static_ViewLanternProjectionTipsReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ViewLanternProjectionTipsReq_descriptor,
-        new java.lang.String[] { "IsInputTips", "InputType", });
+        new java.lang.String[] { "InputType", "IsInputTips", });
     emu.grasscutter.net.proto.ClientInputTypeOuterClass.getDescriptor();
   }
 

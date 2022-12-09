@@ -19,17 +19,21 @@ public final class PlayerSetOnlyMPWithPSPlayerReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_only = 13;</code>
+     * <code>bool is_only = 10;</code>
      * @return The isOnly.
      */
     boolean getIsOnly();
   }
   /**
    * <pre>
-   * CmdId: 1820
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 1815;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code PlayerSetOnlyMPWithPSPlayerReq}
@@ -76,7 +80,7 @@ public final class PlayerSetOnlyMPWithPSPlayerReqOuterClass {
             case 0:
               done = true;
               break;
-            case 104: {
+            case 80: {
 
               isOnly_ = input.readBool();
               break;
@@ -113,10 +117,10 @@ public final class PlayerSetOnlyMPWithPSPlayerReqOuterClass {
               emu.grasscutter.net.proto.PlayerSetOnlyMPWithPSPlayerReqOuterClass.PlayerSetOnlyMPWithPSPlayerReq.class, emu.grasscutter.net.proto.PlayerSetOnlyMPWithPSPlayerReqOuterClass.PlayerSetOnlyMPWithPSPlayerReq.Builder.class);
     }
 
-    public static final int IS_ONLY_FIELD_NUMBER = 13;
+    public static final int IS_ONLY_FIELD_NUMBER = 10;
     private boolean isOnly_;
     /**
-     * <code>bool is_only = 13;</code>
+     * <code>bool is_only = 10;</code>
      * @return The isOnly.
      */
     @java.lang.Override
@@ -139,7 +143,7 @@ public final class PlayerSetOnlyMPWithPSPlayerReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (isOnly_ != false) {
-        output.writeBool(13, isOnly_);
+        output.writeBool(10, isOnly_);
       }
       unknownFields.writeTo(output);
     }
@@ -152,7 +156,7 @@ public final class PlayerSetOnlyMPWithPSPlayerReqOuterClass {
       size = 0;
       if (isOnly_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(13, isOnly_);
+          .computeBoolSize(10, isOnly_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -282,10 +286,14 @@ public final class PlayerSetOnlyMPWithPSPlayerReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 1820
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 1815;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code PlayerSetOnlyMPWithPSPlayerReq}
@@ -436,7 +444,7 @@ public final class PlayerSetOnlyMPWithPSPlayerReqOuterClass {
 
       private boolean isOnly_ ;
       /**
-       * <code>bool is_only = 13;</code>
+       * <code>bool is_only = 10;</code>
        * @return The isOnly.
        */
       @java.lang.Override
@@ -444,7 +452,7 @@ public final class PlayerSetOnlyMPWithPSPlayerReqOuterClass {
         return isOnly_;
       }
       /**
-       * <code>bool is_only = 13;</code>
+       * <code>bool is_only = 10;</code>
        * @param value The isOnly to set.
        * @return This builder for chaining.
        */
@@ -455,7 +463,7 @@ public final class PlayerSetOnlyMPWithPSPlayerReqOuterClass {
         return this;
       }
       /**
-       * <code>bool is_only = 13;</code>
+       * <code>bool is_only = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsOnly() {
@@ -533,7 +541,7 @@ public final class PlayerSetOnlyMPWithPSPlayerReqOuterClass {
     java.lang.String[] descriptorData = {
       "\n$PlayerSetOnlyMPWithPSPlayerReq.proto\"1" +
       "\n\036PlayerSetOnlyMPWithPSPlayerReq\022\017\n\007is_o" +
-      "nly\030\r \001(\010B\033\n\031emu.grasscutter.net.protob\006" +
+      "nly\030\n \001(\010B\033\n\031emu.grasscutter.net.protob\006" +
       "proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

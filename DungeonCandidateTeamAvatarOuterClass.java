@@ -19,12 +19,6 @@ public final class DungeonCandidateTeamAvatarOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 player_uid = 2;</code>
-     * @return The playerUid.
-     */
-    int getPlayerUid();
-
-    /**
      * <code>.AvatarInfo avatar_info = 6;</code>
      * @return Whether the avatarInfo field is set.
      */
@@ -38,6 +32,12 @@ public final class DungeonCandidateTeamAvatarOuterClass {
      * <code>.AvatarInfo avatar_info = 6;</code>
      */
     emu.grasscutter.net.proto.AvatarInfoOuterClass.AvatarInfoOrBuilder getAvatarInfoOrBuilder();
+
+    /**
+     * <code>uint32 player_uid = 7;</code>
+     * @return The playerUid.
+     */
+    int getPlayerUid();
   }
   /**
    * Protobuf type {@code DungeonCandidateTeamAvatar}
@@ -84,11 +84,6 @@ public final class DungeonCandidateTeamAvatarOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
-
-              playerUid_ = input.readUInt32();
-              break;
-            }
             case 50: {
               emu.grasscutter.net.proto.AvatarInfoOuterClass.AvatarInfo.Builder subBuilder = null;
               if (avatarInfo_ != null) {
@@ -100,6 +95,11 @@ public final class DungeonCandidateTeamAvatarOuterClass {
                 avatarInfo_ = subBuilder.buildPartial();
               }
 
+              break;
+            }
+            case 56: {
+
+              playerUid_ = input.readUInt32();
               break;
             }
             default: {
@@ -134,17 +134,6 @@ public final class DungeonCandidateTeamAvatarOuterClass {
               emu.grasscutter.net.proto.DungeonCandidateTeamAvatarOuterClass.DungeonCandidateTeamAvatar.class, emu.grasscutter.net.proto.DungeonCandidateTeamAvatarOuterClass.DungeonCandidateTeamAvatar.Builder.class);
     }
 
-    public static final int PLAYER_UID_FIELD_NUMBER = 2;
-    private int playerUid_;
-    /**
-     * <code>uint32 player_uid = 2;</code>
-     * @return The playerUid.
-     */
-    @java.lang.Override
-    public int getPlayerUid() {
-      return playerUid_;
-    }
-
     public static final int AVATAR_INFO_FIELD_NUMBER = 6;
     private emu.grasscutter.net.proto.AvatarInfoOuterClass.AvatarInfo avatarInfo_;
     /**
@@ -171,6 +160,17 @@ public final class DungeonCandidateTeamAvatarOuterClass {
       return getAvatarInfo();
     }
 
+    public static final int PLAYER_UID_FIELD_NUMBER = 7;
+    private int playerUid_;
+    /**
+     * <code>uint32 player_uid = 7;</code>
+     * @return The playerUid.
+     */
+    @java.lang.Override
+    public int getPlayerUid() {
+      return playerUid_;
+    }
+
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
     public final boolean isInitialized() {
@@ -185,11 +185,11 @@ public final class DungeonCandidateTeamAvatarOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (playerUid_ != 0) {
-        output.writeUInt32(2, playerUid_);
-      }
       if (avatarInfo_ != null) {
         output.writeMessage(6, getAvatarInfo());
+      }
+      if (playerUid_ != 0) {
+        output.writeUInt32(7, playerUid_);
       }
       unknownFields.writeTo(output);
     }
@@ -200,13 +200,13 @@ public final class DungeonCandidateTeamAvatarOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (playerUid_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, playerUid_);
-      }
       if (avatarInfo_ != null) {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(6, getAvatarInfo());
+      }
+      if (playerUid_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(7, playerUid_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -223,13 +223,13 @@ public final class DungeonCandidateTeamAvatarOuterClass {
       }
       emu.grasscutter.net.proto.DungeonCandidateTeamAvatarOuterClass.DungeonCandidateTeamAvatar other = (emu.grasscutter.net.proto.DungeonCandidateTeamAvatarOuterClass.DungeonCandidateTeamAvatar) obj;
 
-      if (getPlayerUid()
-          != other.getPlayerUid()) return false;
       if (hasAvatarInfo() != other.hasAvatarInfo()) return false;
       if (hasAvatarInfo()) {
         if (!getAvatarInfo()
             .equals(other.getAvatarInfo())) return false;
       }
+      if (getPlayerUid()
+          != other.getPlayerUid()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -241,12 +241,12 @@ public final class DungeonCandidateTeamAvatarOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + PLAYER_UID_FIELD_NUMBER;
-      hash = (53 * hash) + getPlayerUid();
       if (hasAvatarInfo()) {
         hash = (37 * hash) + AVATAR_INFO_FIELD_NUMBER;
         hash = (53 * hash) + getAvatarInfo().hashCode();
       }
+      hash = (37 * hash) + PLAYER_UID_FIELD_NUMBER;
+      hash = (53 * hash) + getPlayerUid();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -380,14 +380,14 @@ public final class DungeonCandidateTeamAvatarOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        playerUid_ = 0;
-
         if (avatarInfoBuilder_ == null) {
           avatarInfo_ = null;
         } else {
           avatarInfo_ = null;
           avatarInfoBuilder_ = null;
         }
+        playerUid_ = 0;
+
         return this;
       }
 
@@ -414,12 +414,12 @@ public final class DungeonCandidateTeamAvatarOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.DungeonCandidateTeamAvatarOuterClass.DungeonCandidateTeamAvatar buildPartial() {
         emu.grasscutter.net.proto.DungeonCandidateTeamAvatarOuterClass.DungeonCandidateTeamAvatar result = new emu.grasscutter.net.proto.DungeonCandidateTeamAvatarOuterClass.DungeonCandidateTeamAvatar(this);
-        result.playerUid_ = playerUid_;
         if (avatarInfoBuilder_ == null) {
           result.avatarInfo_ = avatarInfo_;
         } else {
           result.avatarInfo_ = avatarInfoBuilder_.build();
         }
+        result.playerUid_ = playerUid_;
         onBuilt();
         return result;
       }
@@ -468,11 +468,11 @@ public final class DungeonCandidateTeamAvatarOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.DungeonCandidateTeamAvatarOuterClass.DungeonCandidateTeamAvatar other) {
         if (other == emu.grasscutter.net.proto.DungeonCandidateTeamAvatarOuterClass.DungeonCandidateTeamAvatar.getDefaultInstance()) return this;
-        if (other.getPlayerUid() != 0) {
-          setPlayerUid(other.getPlayerUid());
-        }
         if (other.hasAvatarInfo()) {
           mergeAvatarInfo(other.getAvatarInfo());
+        }
+        if (other.getPlayerUid() != 0) {
+          setPlayerUid(other.getPlayerUid());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -500,37 +500,6 @@ public final class DungeonCandidateTeamAvatarOuterClass {
             mergeFrom(parsedMessage);
           }
         }
-        return this;
-      }
-
-      private int playerUid_ ;
-      /**
-       * <code>uint32 player_uid = 2;</code>
-       * @return The playerUid.
-       */
-      @java.lang.Override
-      public int getPlayerUid() {
-        return playerUid_;
-      }
-      /**
-       * <code>uint32 player_uid = 2;</code>
-       * @param value The playerUid to set.
-       * @return This builder for chaining.
-       */
-      public Builder setPlayerUid(int value) {
-        
-        playerUid_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 player_uid = 2;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearPlayerUid() {
-        
-        playerUid_ = 0;
-        onChanged();
         return this;
       }
 
@@ -652,6 +621,37 @@ public final class DungeonCandidateTeamAvatarOuterClass {
         }
         return avatarInfoBuilder_;
       }
+
+      private int playerUid_ ;
+      /**
+       * <code>uint32 player_uid = 7;</code>
+       * @return The playerUid.
+       */
+      @java.lang.Override
+      public int getPlayerUid() {
+        return playerUid_;
+      }
+      /**
+       * <code>uint32 player_uid = 7;</code>
+       * @param value The playerUid to set.
+       * @return This builder for chaining.
+       */
+      public Builder setPlayerUid(int value) {
+        
+        playerUid_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 player_uid = 7;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearPlayerUid() {
+        
+        playerUid_ = 0;
+        onChanged();
+        return this;
+      }
       @java.lang.Override
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
@@ -721,8 +721,8 @@ public final class DungeonCandidateTeamAvatarOuterClass {
     java.lang.String[] descriptorData = {
       "\n DungeonCandidateTeamAvatar.proto\032\020Avat" +
       "arInfo.proto\"R\n\032DungeonCandidateTeamAvat" +
-      "ar\022\022\n\nplayer_uid\030\002 \001(\r\022 \n\013avatar_info\030\006 " +
-      "\001(\0132\013.AvatarInfoB\033\n\031emu.grasscutter.net." +
+      "ar\022 \n\013avatar_info\030\006 \001(\0132\013.AvatarInfo\022\022\n\n" +
+      "player_uid\030\007 \001(\rB\033\n\031emu.grasscutter.net." +
       "protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -735,7 +735,7 @@ public final class DungeonCandidateTeamAvatarOuterClass {
     internal_static_DungeonCandidateTeamAvatar_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_DungeonCandidateTeamAvatar_descriptor,
-        new java.lang.String[] { "PlayerUid", "AvatarInfo", });
+        new java.lang.String[] { "AvatarInfo", "PlayerUid", });
     emu.grasscutter.net.proto.AvatarInfoOuterClass.getDescriptor();
   }
 

@@ -19,23 +19,27 @@ public final class DoRoguelikeDungeonCardGachaReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 dungeon_id = 13;</code>
-     * @return The dungeonId.
-     */
-    int getDungeonId();
-
-    /**
-     * <code>uint32 cell_id = 6;</code>
+     * <code>uint32 cell_id = 5;</code>
      * @return The cellId.
      */
     int getCellId();
+
+    /**
+     * <code>uint32 dungeon_id = 8;</code>
+     * @return The dungeonId.
+     */
+    int getDungeonId();
   }
   /**
    * <pre>
-   * CmdId: 8148
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 8740;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code DoRoguelikeDungeonCardGachaReq}
@@ -82,12 +86,12 @@ public final class DoRoguelikeDungeonCardGachaReqOuterClass {
             case 0:
               done = true;
               break;
-            case 48: {
+            case 40: {
 
               cellId_ = input.readUInt32();
               break;
             }
-            case 104: {
+            case 64: {
 
               dungeonId_ = input.readUInt32();
               break;
@@ -124,26 +128,26 @@ public final class DoRoguelikeDungeonCardGachaReqOuterClass {
               emu.grasscutter.net.proto.DoRoguelikeDungeonCardGachaReqOuterClass.DoRoguelikeDungeonCardGachaReq.class, emu.grasscutter.net.proto.DoRoguelikeDungeonCardGachaReqOuterClass.DoRoguelikeDungeonCardGachaReq.Builder.class);
     }
 
-    public static final int DUNGEON_ID_FIELD_NUMBER = 13;
-    private int dungeonId_;
-    /**
-     * <code>uint32 dungeon_id = 13;</code>
-     * @return The dungeonId.
-     */
-    @java.lang.Override
-    public int getDungeonId() {
-      return dungeonId_;
-    }
-
-    public static final int CELL_ID_FIELD_NUMBER = 6;
+    public static final int CELL_ID_FIELD_NUMBER = 5;
     private int cellId_;
     /**
-     * <code>uint32 cell_id = 6;</code>
+     * <code>uint32 cell_id = 5;</code>
      * @return The cellId.
      */
     @java.lang.Override
     public int getCellId() {
       return cellId_;
+    }
+
+    public static final int DUNGEON_ID_FIELD_NUMBER = 8;
+    private int dungeonId_;
+    /**
+     * <code>uint32 dungeon_id = 8;</code>
+     * @return The dungeonId.
+     */
+    @java.lang.Override
+    public int getDungeonId() {
+      return dungeonId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -161,10 +165,10 @@ public final class DoRoguelikeDungeonCardGachaReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (cellId_ != 0) {
-        output.writeUInt32(6, cellId_);
+        output.writeUInt32(5, cellId_);
       }
       if (dungeonId_ != 0) {
-        output.writeUInt32(13, dungeonId_);
+        output.writeUInt32(8, dungeonId_);
       }
       unknownFields.writeTo(output);
     }
@@ -177,11 +181,11 @@ public final class DoRoguelikeDungeonCardGachaReqOuterClass {
       size = 0;
       if (cellId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, cellId_);
+          .computeUInt32Size(5, cellId_);
       }
       if (dungeonId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, dungeonId_);
+          .computeUInt32Size(8, dungeonId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -198,10 +202,10 @@ public final class DoRoguelikeDungeonCardGachaReqOuterClass {
       }
       emu.grasscutter.net.proto.DoRoguelikeDungeonCardGachaReqOuterClass.DoRoguelikeDungeonCardGachaReq other = (emu.grasscutter.net.proto.DoRoguelikeDungeonCardGachaReqOuterClass.DoRoguelikeDungeonCardGachaReq) obj;
 
-      if (getDungeonId()
-          != other.getDungeonId()) return false;
       if (getCellId()
           != other.getCellId()) return false;
+      if (getDungeonId()
+          != other.getDungeonId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -213,10 +217,10 @@ public final class DoRoguelikeDungeonCardGachaReqOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + DUNGEON_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getDungeonId();
       hash = (37 * hash) + CELL_ID_FIELD_NUMBER;
       hash = (53 * hash) + getCellId();
+      hash = (37 * hash) + DUNGEON_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getDungeonId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -314,10 +318,14 @@ public final class DoRoguelikeDungeonCardGachaReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 8148
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 8740;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code DoRoguelikeDungeonCardGachaReq}
@@ -357,9 +365,9 @@ public final class DoRoguelikeDungeonCardGachaReqOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        dungeonId_ = 0;
-
         cellId_ = 0;
+
+        dungeonId_ = 0;
 
         return this;
       }
@@ -387,8 +395,8 @@ public final class DoRoguelikeDungeonCardGachaReqOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.DoRoguelikeDungeonCardGachaReqOuterClass.DoRoguelikeDungeonCardGachaReq buildPartial() {
         emu.grasscutter.net.proto.DoRoguelikeDungeonCardGachaReqOuterClass.DoRoguelikeDungeonCardGachaReq result = new emu.grasscutter.net.proto.DoRoguelikeDungeonCardGachaReqOuterClass.DoRoguelikeDungeonCardGachaReq(this);
-        result.dungeonId_ = dungeonId_;
         result.cellId_ = cellId_;
+        result.dungeonId_ = dungeonId_;
         onBuilt();
         return result;
       }
@@ -437,11 +445,11 @@ public final class DoRoguelikeDungeonCardGachaReqOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.DoRoguelikeDungeonCardGachaReqOuterClass.DoRoguelikeDungeonCardGachaReq other) {
         if (other == emu.grasscutter.net.proto.DoRoguelikeDungeonCardGachaReqOuterClass.DoRoguelikeDungeonCardGachaReq.getDefaultInstance()) return this;
-        if (other.getDungeonId() != 0) {
-          setDungeonId(other.getDungeonId());
-        }
         if (other.getCellId() != 0) {
           setCellId(other.getCellId());
+        }
+        if (other.getDungeonId() != 0) {
+          setDungeonId(other.getDungeonId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -472,40 +480,9 @@ public final class DoRoguelikeDungeonCardGachaReqOuterClass {
         return this;
       }
 
-      private int dungeonId_ ;
-      /**
-       * <code>uint32 dungeon_id = 13;</code>
-       * @return The dungeonId.
-       */
-      @java.lang.Override
-      public int getDungeonId() {
-        return dungeonId_;
-      }
-      /**
-       * <code>uint32 dungeon_id = 13;</code>
-       * @param value The dungeonId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setDungeonId(int value) {
-        
-        dungeonId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 dungeon_id = 13;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearDungeonId() {
-        
-        dungeonId_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int cellId_ ;
       /**
-       * <code>uint32 cell_id = 6;</code>
+       * <code>uint32 cell_id = 5;</code>
        * @return The cellId.
        */
       @java.lang.Override
@@ -513,7 +490,7 @@ public final class DoRoguelikeDungeonCardGachaReqOuterClass {
         return cellId_;
       }
       /**
-       * <code>uint32 cell_id = 6;</code>
+       * <code>uint32 cell_id = 5;</code>
        * @param value The cellId to set.
        * @return This builder for chaining.
        */
@@ -524,12 +501,43 @@ public final class DoRoguelikeDungeonCardGachaReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 cell_id = 6;</code>
+       * <code>uint32 cell_id = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearCellId() {
         
         cellId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int dungeonId_ ;
+      /**
+       * <code>uint32 dungeon_id = 8;</code>
+       * @return The dungeonId.
+       */
+      @java.lang.Override
+      public int getDungeonId() {
+        return dungeonId_;
+      }
+      /**
+       * <code>uint32 dungeon_id = 8;</code>
+       * @param value The dungeonId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setDungeonId(int value) {
+        
+        dungeonId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 dungeon_id = 8;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearDungeonId() {
+        
+        dungeonId_ = 0;
         onChanged();
         return this;
       }
@@ -601,8 +609,8 @@ public final class DoRoguelikeDungeonCardGachaReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n$DoRoguelikeDungeonCardGachaReq.proto\"E" +
-      "\n\036DoRoguelikeDungeonCardGachaReq\022\022\n\ndung" +
-      "eon_id\030\r \001(\r\022\017\n\007cell_id\030\006 \001(\rB\033\n\031emu.gra" +
+      "\n\036DoRoguelikeDungeonCardGachaReq\022\017\n\007cell" +
+      "_id\030\005 \001(\r\022\022\n\ndungeon_id\030\010 \001(\rB\033\n\031emu.gra" +
       "sscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -614,7 +622,7 @@ public final class DoRoguelikeDungeonCardGachaReqOuterClass {
     internal_static_DoRoguelikeDungeonCardGachaReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_DoRoguelikeDungeonCardGachaReq_descriptor,
-        new java.lang.String[] { "DungeonId", "CellId", });
+        new java.lang.String[] { "CellId", "DungeonId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

@@ -19,12 +19,12 @@ public final class DungeonDieOptionReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.PlayerDieOption die_option = 11;</code>
+     * <code>.PlayerDieOption die_option = 5;</code>
      * @return The enum numeric value on the wire for dieOption.
      */
     int getDieOptionValue();
     /**
-     * <code>.PlayerDieOption die_option = 11;</code>
+     * <code>.PlayerDieOption die_option = 5;</code>
      * @return The dieOption.
      */
     emu.grasscutter.net.proto.PlayerDieOptionOuterClass.PlayerDieOption getDieOption();
@@ -37,10 +37,14 @@ public final class DungeonDieOptionReqOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 975
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 939;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code DungeonDieOptionReq}
@@ -88,7 +92,7 @@ public final class DungeonDieOptionReqOuterClass {
             case 0:
               done = true;
               break;
-            case 88: {
+            case 40: {
               int rawValue = input.readEnum();
 
               dieOption_ = rawValue;
@@ -131,17 +135,17 @@ public final class DungeonDieOptionReqOuterClass {
               emu.grasscutter.net.proto.DungeonDieOptionReqOuterClass.DungeonDieOptionReq.class, emu.grasscutter.net.proto.DungeonDieOptionReqOuterClass.DungeonDieOptionReq.Builder.class);
     }
 
-    public static final int DIE_OPTION_FIELD_NUMBER = 11;
+    public static final int DIE_OPTION_FIELD_NUMBER = 5;
     private int dieOption_;
     /**
-     * <code>.PlayerDieOption die_option = 11;</code>
+     * <code>.PlayerDieOption die_option = 5;</code>
      * @return The enum numeric value on the wire for dieOption.
      */
     @java.lang.Override public int getDieOptionValue() {
       return dieOption_;
     }
     /**
-     * <code>.PlayerDieOption die_option = 11;</code>
+     * <code>.PlayerDieOption die_option = 5;</code>
      * @return The dieOption.
      */
     @java.lang.Override public emu.grasscutter.net.proto.PlayerDieOptionOuterClass.PlayerDieOption getDieOption() {
@@ -176,7 +180,7 @@ public final class DungeonDieOptionReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (dieOption_ != emu.grasscutter.net.proto.PlayerDieOptionOuterClass.PlayerDieOption.PLAYER_DIE_OPTION_OPT_NONE.getNumber()) {
-        output.writeEnum(11, dieOption_);
+        output.writeEnum(5, dieOption_);
       }
       if (isQuitImmediately_ != false) {
         output.writeBool(14, isQuitImmediately_);
@@ -192,7 +196,7 @@ public final class DungeonDieOptionReqOuterClass {
       size = 0;
       if (dieOption_ != emu.grasscutter.net.proto.PlayerDieOptionOuterClass.PlayerDieOption.PLAYER_DIE_OPTION_OPT_NONE.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(11, dieOption_);
+          .computeEnumSize(5, dieOption_);
       }
       if (isQuitImmediately_ != false) {
         size += com.google.protobuf.CodedOutputStream
@@ -329,10 +333,14 @@ public final class DungeonDieOptionReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 975
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 939;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code DungeonDieOptionReq}
@@ -489,14 +497,14 @@ public final class DungeonDieOptionReqOuterClass {
 
       private int dieOption_ = 0;
       /**
-       * <code>.PlayerDieOption die_option = 11;</code>
+       * <code>.PlayerDieOption die_option = 5;</code>
        * @return The enum numeric value on the wire for dieOption.
        */
       @java.lang.Override public int getDieOptionValue() {
         return dieOption_;
       }
       /**
-       * <code>.PlayerDieOption die_option = 11;</code>
+       * <code>.PlayerDieOption die_option = 5;</code>
        * @param value The enum numeric value on the wire for dieOption to set.
        * @return This builder for chaining.
        */
@@ -507,7 +515,7 @@ public final class DungeonDieOptionReqOuterClass {
         return this;
       }
       /**
-       * <code>.PlayerDieOption die_option = 11;</code>
+       * <code>.PlayerDieOption die_option = 5;</code>
        * @return The dieOption.
        */
       @java.lang.Override
@@ -517,7 +525,7 @@ public final class DungeonDieOptionReqOuterClass {
         return result == null ? emu.grasscutter.net.proto.PlayerDieOptionOuterClass.PlayerDieOption.UNRECOGNIZED : result;
       }
       /**
-       * <code>.PlayerDieOption die_option = 11;</code>
+       * <code>.PlayerDieOption die_option = 5;</code>
        * @param value The dieOption to set.
        * @return This builder for chaining.
        */
@@ -531,7 +539,7 @@ public final class DungeonDieOptionReqOuterClass {
         return this;
       }
       /**
-       * <code>.PlayerDieOption die_option = 11;</code>
+       * <code>.PlayerDieOption die_option = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearDieOption() {
@@ -640,7 +648,7 @@ public final class DungeonDieOptionReqOuterClass {
     java.lang.String[] descriptorData = {
       "\n\031DungeonDieOptionReq.proto\032\025PlayerDieOp" +
       "tion.proto\"X\n\023DungeonDieOptionReq\022$\n\ndie" +
-      "_option\030\013 \001(\0162\020.PlayerDieOption\022\033\n\023is_qu" +
+      "_option\030\005 \001(\0162\020.PlayerDieOption\022\033\n\023is_qu" +
       "it_immediately\030\016 \001(\010B\033\n\031emu.grasscutter." +
       "net.protob\006proto3"
     };

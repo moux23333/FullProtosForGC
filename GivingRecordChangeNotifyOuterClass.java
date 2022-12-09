@@ -19,7 +19,7 @@ public final class GivingRecordChangeNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_deactive = 11;</code>
+     * <code>bool is_deactive = 14;</code>
      * @return The isDeactive.
      */
     boolean getIsDeactive();
@@ -41,9 +41,13 @@ public final class GivingRecordChangeNotifyOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 187
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 187;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code GivingRecordChangeNotify}
@@ -90,7 +94,7 @@ public final class GivingRecordChangeNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 88: {
+            case 112: {
 
               isDeactive_ = input.readBool();
               break;
@@ -140,10 +144,10 @@ public final class GivingRecordChangeNotifyOuterClass {
               emu.grasscutter.net.proto.GivingRecordChangeNotifyOuterClass.GivingRecordChangeNotify.class, emu.grasscutter.net.proto.GivingRecordChangeNotifyOuterClass.GivingRecordChangeNotify.Builder.class);
     }
 
-    public static final int IS_DEACTIVE_FIELD_NUMBER = 11;
+    public static final int IS_DEACTIVE_FIELD_NUMBER = 14;
     private boolean isDeactive_;
     /**
-     * <code>bool is_deactive = 11;</code>
+     * <code>bool is_deactive = 14;</code>
      * @return The isDeactive.
      */
     @java.lang.Override
@@ -192,7 +196,7 @@ public final class GivingRecordChangeNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (isDeactive_ != false) {
-        output.writeBool(11, isDeactive_);
+        output.writeBool(14, isDeactive_);
       }
       if (givingRecord_ != null) {
         output.writeMessage(15, getGivingRecord());
@@ -208,7 +212,7 @@ public final class GivingRecordChangeNotifyOuterClass {
       size = 0;
       if (isDeactive_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(11, isDeactive_);
+          .computeBoolSize(14, isDeactive_);
       }
       if (givingRecord_ != null) {
         size += com.google.protobuf.CodedOutputStream
@@ -351,9 +355,13 @@ public final class GivingRecordChangeNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 187
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 187;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code GivingRecordChangeNotify}
@@ -518,7 +526,7 @@ public final class GivingRecordChangeNotifyOuterClass {
 
       private boolean isDeactive_ ;
       /**
-       * <code>bool is_deactive = 11;</code>
+       * <code>bool is_deactive = 14;</code>
        * @return The isDeactive.
        */
       @java.lang.Override
@@ -526,7 +534,7 @@ public final class GivingRecordChangeNotifyOuterClass {
         return isDeactive_;
       }
       /**
-       * <code>bool is_deactive = 11;</code>
+       * <code>bool is_deactive = 14;</code>
        * @param value The isDeactive to set.
        * @return This builder for chaining.
        */
@@ -537,7 +545,7 @@ public final class GivingRecordChangeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>bool is_deactive = 11;</code>
+       * <code>bool is_deactive = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsDeactive() {
@@ -734,7 +742,7 @@ public final class GivingRecordChangeNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n\036GivingRecordChangeNotify.proto\032\022Giving" +
       "Record.proto\"U\n\030GivingRecordChangeNotify" +
-      "\022\023\n\013is_deactive\030\013 \001(\010\022$\n\rgiving_record\030\017" +
+      "\022\023\n\013is_deactive\030\016 \001(\010\022$\n\rgiving_record\030\017" +
       " \001(\0132\r.GivingRecordB\033\n\031emu.grasscutter.n" +
       "et.protob\006proto3"
     };

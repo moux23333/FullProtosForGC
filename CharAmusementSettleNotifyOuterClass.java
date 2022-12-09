@@ -19,28 +19,32 @@ public final class CharAmusementSettleNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_succ = 3;</code>
-     * @return The isSucc.
+     * <code>bool is_new_record = 10;</code>
+     * @return The isNewRecord.
      */
-    boolean getIsSucc();
+    boolean getIsNewRecord();
 
     /**
-     * <code>uint32 finish_time = 14;</code>
+     * <code>uint32 finish_time = 2;</code>
      * @return The finishTime.
      */
     int getFinishTime();
 
     /**
-     * <code>bool is_new_record = 2;</code>
-     * @return The isNewRecord.
+     * <code>bool is_succ = 12;</code>
+     * @return The isSucc.
      */
-    boolean getIsNewRecord();
+    boolean getIsSucc();
   }
   /**
    * <pre>
-   * CmdId: 23133
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 23128;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code CharAmusementSettleNotify}
@@ -89,17 +93,17 @@ public final class CharAmusementSettleNotifyOuterClass {
               break;
             case 16: {
 
+              finishTime_ = input.readUInt32();
+              break;
+            }
+            case 80: {
+
               isNewRecord_ = input.readBool();
               break;
             }
-            case 24: {
+            case 96: {
 
               isSucc_ = input.readBool();
-              break;
-            }
-            case 112: {
-
-              finishTime_ = input.readUInt32();
               break;
             }
             default: {
@@ -134,21 +138,21 @@ public final class CharAmusementSettleNotifyOuterClass {
               emu.grasscutter.net.proto.CharAmusementSettleNotifyOuterClass.CharAmusementSettleNotify.class, emu.grasscutter.net.proto.CharAmusementSettleNotifyOuterClass.CharAmusementSettleNotify.Builder.class);
     }
 
-    public static final int IS_SUCC_FIELD_NUMBER = 3;
-    private boolean isSucc_;
+    public static final int IS_NEW_RECORD_FIELD_NUMBER = 10;
+    private boolean isNewRecord_;
     /**
-     * <code>bool is_succ = 3;</code>
-     * @return The isSucc.
+     * <code>bool is_new_record = 10;</code>
+     * @return The isNewRecord.
      */
     @java.lang.Override
-    public boolean getIsSucc() {
-      return isSucc_;
+    public boolean getIsNewRecord() {
+      return isNewRecord_;
     }
 
-    public static final int FINISH_TIME_FIELD_NUMBER = 14;
+    public static final int FINISH_TIME_FIELD_NUMBER = 2;
     private int finishTime_;
     /**
-     * <code>uint32 finish_time = 14;</code>
+     * <code>uint32 finish_time = 2;</code>
      * @return The finishTime.
      */
     @java.lang.Override
@@ -156,15 +160,15 @@ public final class CharAmusementSettleNotifyOuterClass {
       return finishTime_;
     }
 
-    public static final int IS_NEW_RECORD_FIELD_NUMBER = 2;
-    private boolean isNewRecord_;
+    public static final int IS_SUCC_FIELD_NUMBER = 12;
+    private boolean isSucc_;
     /**
-     * <code>bool is_new_record = 2;</code>
-     * @return The isNewRecord.
+     * <code>bool is_succ = 12;</code>
+     * @return The isSucc.
      */
     @java.lang.Override
-    public boolean getIsNewRecord() {
-      return isNewRecord_;
+    public boolean getIsSucc() {
+      return isSucc_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -181,14 +185,14 @@ public final class CharAmusementSettleNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (finishTime_ != 0) {
+        output.writeUInt32(2, finishTime_);
+      }
       if (isNewRecord_ != false) {
-        output.writeBool(2, isNewRecord_);
+        output.writeBool(10, isNewRecord_);
       }
       if (isSucc_ != false) {
-        output.writeBool(3, isSucc_);
-      }
-      if (finishTime_ != 0) {
-        output.writeUInt32(14, finishTime_);
+        output.writeBool(12, isSucc_);
       }
       unknownFields.writeTo(output);
     }
@@ -199,17 +203,17 @@ public final class CharAmusementSettleNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (finishTime_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(2, finishTime_);
+      }
       if (isNewRecord_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(2, isNewRecord_);
+          .computeBoolSize(10, isNewRecord_);
       }
       if (isSucc_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(3, isSucc_);
-      }
-      if (finishTime_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, finishTime_);
+          .computeBoolSize(12, isSucc_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -226,12 +230,12 @@ public final class CharAmusementSettleNotifyOuterClass {
       }
       emu.grasscutter.net.proto.CharAmusementSettleNotifyOuterClass.CharAmusementSettleNotify other = (emu.grasscutter.net.proto.CharAmusementSettleNotifyOuterClass.CharAmusementSettleNotify) obj;
 
-      if (getIsSucc()
-          != other.getIsSucc()) return false;
-      if (getFinishTime()
-          != other.getFinishTime()) return false;
       if (getIsNewRecord()
           != other.getIsNewRecord()) return false;
+      if (getFinishTime()
+          != other.getFinishTime()) return false;
+      if (getIsSucc()
+          != other.getIsSucc()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -243,14 +247,14 @@ public final class CharAmusementSettleNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + IS_SUCC_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsSucc());
-      hash = (37 * hash) + FINISH_TIME_FIELD_NUMBER;
-      hash = (53 * hash) + getFinishTime();
       hash = (37 * hash) + IS_NEW_RECORD_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsNewRecord());
+      hash = (37 * hash) + FINISH_TIME_FIELD_NUMBER;
+      hash = (53 * hash) + getFinishTime();
+      hash = (37 * hash) + IS_SUCC_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getIsSucc());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -348,9 +352,13 @@ public final class CharAmusementSettleNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 23133
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 23128;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code CharAmusementSettleNotify}
@@ -390,11 +398,11 @@ public final class CharAmusementSettleNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        isSucc_ = false;
+        isNewRecord_ = false;
 
         finishTime_ = 0;
 
-        isNewRecord_ = false;
+        isSucc_ = false;
 
         return this;
       }
@@ -422,9 +430,9 @@ public final class CharAmusementSettleNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.CharAmusementSettleNotifyOuterClass.CharAmusementSettleNotify buildPartial() {
         emu.grasscutter.net.proto.CharAmusementSettleNotifyOuterClass.CharAmusementSettleNotify result = new emu.grasscutter.net.proto.CharAmusementSettleNotifyOuterClass.CharAmusementSettleNotify(this);
-        result.isSucc_ = isSucc_;
-        result.finishTime_ = finishTime_;
         result.isNewRecord_ = isNewRecord_;
+        result.finishTime_ = finishTime_;
+        result.isSucc_ = isSucc_;
         onBuilt();
         return result;
       }
@@ -473,14 +481,14 @@ public final class CharAmusementSettleNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.CharAmusementSettleNotifyOuterClass.CharAmusementSettleNotify other) {
         if (other == emu.grasscutter.net.proto.CharAmusementSettleNotifyOuterClass.CharAmusementSettleNotify.getDefaultInstance()) return this;
-        if (other.getIsSucc() != false) {
-          setIsSucc(other.getIsSucc());
+        if (other.getIsNewRecord() != false) {
+          setIsNewRecord(other.getIsNewRecord());
         }
         if (other.getFinishTime() != 0) {
           setFinishTime(other.getFinishTime());
         }
-        if (other.getIsNewRecord() != false) {
-          setIsNewRecord(other.getIsNewRecord());
+        if (other.getIsSucc() != false) {
+          setIsSucc(other.getIsSucc());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -511,71 +519,9 @@ public final class CharAmusementSettleNotifyOuterClass {
         return this;
       }
 
-      private boolean isSucc_ ;
-      /**
-       * <code>bool is_succ = 3;</code>
-       * @return The isSucc.
-       */
-      @java.lang.Override
-      public boolean getIsSucc() {
-        return isSucc_;
-      }
-      /**
-       * <code>bool is_succ = 3;</code>
-       * @param value The isSucc to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsSucc(boolean value) {
-        
-        isSucc_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_succ = 3;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsSucc() {
-        
-        isSucc_ = false;
-        onChanged();
-        return this;
-      }
-
-      private int finishTime_ ;
-      /**
-       * <code>uint32 finish_time = 14;</code>
-       * @return The finishTime.
-       */
-      @java.lang.Override
-      public int getFinishTime() {
-        return finishTime_;
-      }
-      /**
-       * <code>uint32 finish_time = 14;</code>
-       * @param value The finishTime to set.
-       * @return This builder for chaining.
-       */
-      public Builder setFinishTime(int value) {
-        
-        finishTime_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 finish_time = 14;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearFinishTime() {
-        
-        finishTime_ = 0;
-        onChanged();
-        return this;
-      }
-
       private boolean isNewRecord_ ;
       /**
-       * <code>bool is_new_record = 2;</code>
+       * <code>bool is_new_record = 10;</code>
        * @return The isNewRecord.
        */
       @java.lang.Override
@@ -583,7 +529,7 @@ public final class CharAmusementSettleNotifyOuterClass {
         return isNewRecord_;
       }
       /**
-       * <code>bool is_new_record = 2;</code>
+       * <code>bool is_new_record = 10;</code>
        * @param value The isNewRecord to set.
        * @return This builder for chaining.
        */
@@ -594,12 +540,74 @@ public final class CharAmusementSettleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>bool is_new_record = 2;</code>
+       * <code>bool is_new_record = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsNewRecord() {
         
         isNewRecord_ = false;
+        onChanged();
+        return this;
+      }
+
+      private int finishTime_ ;
+      /**
+       * <code>uint32 finish_time = 2;</code>
+       * @return The finishTime.
+       */
+      @java.lang.Override
+      public int getFinishTime() {
+        return finishTime_;
+      }
+      /**
+       * <code>uint32 finish_time = 2;</code>
+       * @param value The finishTime to set.
+       * @return This builder for chaining.
+       */
+      public Builder setFinishTime(int value) {
+        
+        finishTime_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 finish_time = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearFinishTime() {
+        
+        finishTime_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private boolean isSucc_ ;
+      /**
+       * <code>bool is_succ = 12;</code>
+       * @return The isSucc.
+       */
+      @java.lang.Override
+      public boolean getIsSucc() {
+        return isSucc_;
+      }
+      /**
+       * <code>bool is_succ = 12;</code>
+       * @param value The isSucc to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIsSucc(boolean value) {
+        
+        isSucc_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool is_succ = 12;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsSucc() {
+        
+        isSucc_ = false;
         onChanged();
         return this;
       }
@@ -671,8 +679,8 @@ public final class CharAmusementSettleNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\037CharAmusementSettleNotify.proto\"X\n\031Cha" +
-      "rAmusementSettleNotify\022\017\n\007is_succ\030\003 \001(\010\022" +
-      "\023\n\013finish_time\030\016 \001(\r\022\025\n\ris_new_record\030\002 " +
+      "rAmusementSettleNotify\022\025\n\ris_new_record\030" +
+      "\n \001(\010\022\023\n\013finish_time\030\002 \001(\r\022\017\n\007is_succ\030\014 " +
       "\001(\010B\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -684,7 +692,7 @@ public final class CharAmusementSettleNotifyOuterClass {
     internal_static_CharAmusementSettleNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_CharAmusementSettleNotify_descriptor,
-        new java.lang.String[] { "IsSucc", "FinishTime", "IsNewRecord", });
+        new java.lang.String[] { "IsNewRecord", "FinishTime", "IsSucc", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

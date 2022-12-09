@@ -19,52 +19,56 @@ public final class HuntingRevealClueNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 finish_clue_count = 5;</code>
+     * <code>.HuntingPair hunting_pair = 3;</code>
+     * @return Whether the huntingPair field is set.
+     */
+    boolean hasHuntingPair();
+    /**
+     * <code>.HuntingPair hunting_pair = 3;</code>
+     * @return The huntingPair.
+     */
+    emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPair getHuntingPair();
+    /**
+     * <code>.HuntingPair hunting_pair = 3;</code>
+     */
+    emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPairOrBuilder getHuntingPairOrBuilder();
+
+    /**
+     * <code>uint32 finished_group_id = 6;</code>
+     * @return The finishedGroupId.
+     */
+    int getFinishedGroupId();
+
+    /**
+     * <code>uint32 finish_clue_count = 14;</code>
      * @return The finishClueCount.
      */
     int getFinishClueCount();
 
     /**
-     * <code>.Vector clue_position = 4;</code>
+     * <code>.Vector clue_position = 2;</code>
      * @return Whether the cluePosition field is set.
      */
     boolean hasCluePosition();
     /**
-     * <code>.Vector clue_position = 4;</code>
+     * <code>.Vector clue_position = 2;</code>
      * @return The cluePosition.
      */
     emu.grasscutter.net.proto.VectorOuterClass.Vector getCluePosition();
     /**
-     * <code>.Vector clue_position = 4;</code>
+     * <code>.Vector clue_position = 2;</code>
      */
     emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getCluePositionOrBuilder();
-
-    /**
-     * <code>.HuntingPair hunting_pair = 12;</code>
-     * @return Whether the huntingPair field is set.
-     */
-    boolean hasHuntingPair();
-    /**
-     * <code>.HuntingPair hunting_pair = 12;</code>
-     * @return The huntingPair.
-     */
-    emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPair getHuntingPair();
-    /**
-     * <code>.HuntingPair hunting_pair = 12;</code>
-     */
-    emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPairOrBuilder getHuntingPairOrBuilder();
-
-    /**
-     * <code>uint32 finished_group_id = 7;</code>
-     * @return The finishedGroupId.
-     */
-    int getFinishedGroupId();
   }
   /**
    * <pre>
-   * CmdId: 4322
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 4317;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code HuntingRevealClueNotify}
@@ -111,7 +115,7 @@ public final class HuntingRevealClueNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 34: {
+            case 18: {
               emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder subBuilder = null;
               if (cluePosition_ != null) {
                 subBuilder = cluePosition_.toBuilder();
@@ -124,17 +128,7 @@ public final class HuntingRevealClueNotifyOuterClass {
 
               break;
             }
-            case 40: {
-
-              finishClueCount_ = input.readUInt32();
-              break;
-            }
-            case 56: {
-
-              finishedGroupId_ = input.readUInt32();
-              break;
-            }
-            case 98: {
+            case 26: {
               emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPair.Builder subBuilder = null;
               if (huntingPair_ != null) {
                 subBuilder = huntingPair_.toBuilder();
@@ -145,6 +139,16 @@ public final class HuntingRevealClueNotifyOuterClass {
                 huntingPair_ = subBuilder.buildPartial();
               }
 
+              break;
+            }
+            case 48: {
+
+              finishedGroupId_ = input.readUInt32();
+              break;
+            }
+            case 112: {
+
+              finishClueCount_ = input.readUInt32();
               break;
             }
             default: {
@@ -179,47 +183,10 @@ public final class HuntingRevealClueNotifyOuterClass {
               emu.grasscutter.net.proto.HuntingRevealClueNotifyOuterClass.HuntingRevealClueNotify.class, emu.grasscutter.net.proto.HuntingRevealClueNotifyOuterClass.HuntingRevealClueNotify.Builder.class);
     }
 
-    public static final int FINISH_CLUE_COUNT_FIELD_NUMBER = 5;
-    private int finishClueCount_;
-    /**
-     * <code>uint32 finish_clue_count = 5;</code>
-     * @return The finishClueCount.
-     */
-    @java.lang.Override
-    public int getFinishClueCount() {
-      return finishClueCount_;
-    }
-
-    public static final int CLUE_POSITION_FIELD_NUMBER = 4;
-    private emu.grasscutter.net.proto.VectorOuterClass.Vector cluePosition_;
-    /**
-     * <code>.Vector clue_position = 4;</code>
-     * @return Whether the cluePosition field is set.
-     */
-    @java.lang.Override
-    public boolean hasCluePosition() {
-      return cluePosition_ != null;
-    }
-    /**
-     * <code>.Vector clue_position = 4;</code>
-     * @return The cluePosition.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.VectorOuterClass.Vector getCluePosition() {
-      return cluePosition_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : cluePosition_;
-    }
-    /**
-     * <code>.Vector clue_position = 4;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getCluePositionOrBuilder() {
-      return getCluePosition();
-    }
-
-    public static final int HUNTING_PAIR_FIELD_NUMBER = 12;
+    public static final int HUNTING_PAIR_FIELD_NUMBER = 3;
     private emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPair huntingPair_;
     /**
-     * <code>.HuntingPair hunting_pair = 12;</code>
+     * <code>.HuntingPair hunting_pair = 3;</code>
      * @return Whether the huntingPair field is set.
      */
     @java.lang.Override
@@ -227,7 +194,7 @@ public final class HuntingRevealClueNotifyOuterClass {
       return huntingPair_ != null;
     }
     /**
-     * <code>.HuntingPair hunting_pair = 12;</code>
+     * <code>.HuntingPair hunting_pair = 3;</code>
      * @return The huntingPair.
      */
     @java.lang.Override
@@ -235,22 +202,59 @@ public final class HuntingRevealClueNotifyOuterClass {
       return huntingPair_ == null ? emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPair.getDefaultInstance() : huntingPair_;
     }
     /**
-     * <code>.HuntingPair hunting_pair = 12;</code>
+     * <code>.HuntingPair hunting_pair = 3;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPairOrBuilder getHuntingPairOrBuilder() {
       return getHuntingPair();
     }
 
-    public static final int FINISHED_GROUP_ID_FIELD_NUMBER = 7;
+    public static final int FINISHED_GROUP_ID_FIELD_NUMBER = 6;
     private int finishedGroupId_;
     /**
-     * <code>uint32 finished_group_id = 7;</code>
+     * <code>uint32 finished_group_id = 6;</code>
      * @return The finishedGroupId.
      */
     @java.lang.Override
     public int getFinishedGroupId() {
       return finishedGroupId_;
+    }
+
+    public static final int FINISH_CLUE_COUNT_FIELD_NUMBER = 14;
+    private int finishClueCount_;
+    /**
+     * <code>uint32 finish_clue_count = 14;</code>
+     * @return The finishClueCount.
+     */
+    @java.lang.Override
+    public int getFinishClueCount() {
+      return finishClueCount_;
+    }
+
+    public static final int CLUE_POSITION_FIELD_NUMBER = 2;
+    private emu.grasscutter.net.proto.VectorOuterClass.Vector cluePosition_;
+    /**
+     * <code>.Vector clue_position = 2;</code>
+     * @return Whether the cluePosition field is set.
+     */
+    @java.lang.Override
+    public boolean hasCluePosition() {
+      return cluePosition_ != null;
+    }
+    /**
+     * <code>.Vector clue_position = 2;</code>
+     * @return The cluePosition.
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.VectorOuterClass.Vector getCluePosition() {
+      return cluePosition_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : cluePosition_;
+    }
+    /**
+     * <code>.Vector clue_position = 2;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getCluePositionOrBuilder() {
+      return getCluePosition();
     }
 
     private byte memoizedIsInitialized = -1;
@@ -268,16 +272,16 @@ public final class HuntingRevealClueNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (cluePosition_ != null) {
-        output.writeMessage(4, getCluePosition());
-      }
-      if (finishClueCount_ != 0) {
-        output.writeUInt32(5, finishClueCount_);
-      }
-      if (finishedGroupId_ != 0) {
-        output.writeUInt32(7, finishedGroupId_);
+        output.writeMessage(2, getCluePosition());
       }
       if (huntingPair_ != null) {
-        output.writeMessage(12, getHuntingPair());
+        output.writeMessage(3, getHuntingPair());
+      }
+      if (finishedGroupId_ != 0) {
+        output.writeUInt32(6, finishedGroupId_);
+      }
+      if (finishClueCount_ != 0) {
+        output.writeUInt32(14, finishClueCount_);
       }
       unknownFields.writeTo(output);
     }
@@ -290,19 +294,19 @@ public final class HuntingRevealClueNotifyOuterClass {
       size = 0;
       if (cluePosition_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(4, getCluePosition());
-      }
-      if (finishClueCount_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, finishClueCount_);
-      }
-      if (finishedGroupId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, finishedGroupId_);
+          .computeMessageSize(2, getCluePosition());
       }
       if (huntingPair_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(12, getHuntingPair());
+          .computeMessageSize(3, getHuntingPair());
+      }
+      if (finishedGroupId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(6, finishedGroupId_);
+      }
+      if (finishClueCount_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(14, finishClueCount_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -319,13 +323,6 @@ public final class HuntingRevealClueNotifyOuterClass {
       }
       emu.grasscutter.net.proto.HuntingRevealClueNotifyOuterClass.HuntingRevealClueNotify other = (emu.grasscutter.net.proto.HuntingRevealClueNotifyOuterClass.HuntingRevealClueNotify) obj;
 
-      if (getFinishClueCount()
-          != other.getFinishClueCount()) return false;
-      if (hasCluePosition() != other.hasCluePosition()) return false;
-      if (hasCluePosition()) {
-        if (!getCluePosition()
-            .equals(other.getCluePosition())) return false;
-      }
       if (hasHuntingPair() != other.hasHuntingPair()) return false;
       if (hasHuntingPair()) {
         if (!getHuntingPair()
@@ -333,6 +330,13 @@ public final class HuntingRevealClueNotifyOuterClass {
       }
       if (getFinishedGroupId()
           != other.getFinishedGroupId()) return false;
+      if (getFinishClueCount()
+          != other.getFinishClueCount()) return false;
+      if (hasCluePosition() != other.hasCluePosition()) return false;
+      if (hasCluePosition()) {
+        if (!getCluePosition()
+            .equals(other.getCluePosition())) return false;
+      }
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -344,18 +348,18 @@ public final class HuntingRevealClueNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + FINISH_CLUE_COUNT_FIELD_NUMBER;
-      hash = (53 * hash) + getFinishClueCount();
-      if (hasCluePosition()) {
-        hash = (37 * hash) + CLUE_POSITION_FIELD_NUMBER;
-        hash = (53 * hash) + getCluePosition().hashCode();
-      }
       if (hasHuntingPair()) {
         hash = (37 * hash) + HUNTING_PAIR_FIELD_NUMBER;
         hash = (53 * hash) + getHuntingPair().hashCode();
       }
       hash = (37 * hash) + FINISHED_GROUP_ID_FIELD_NUMBER;
       hash = (53 * hash) + getFinishedGroupId();
+      hash = (37 * hash) + FINISH_CLUE_COUNT_FIELD_NUMBER;
+      hash = (53 * hash) + getFinishClueCount();
+      if (hasCluePosition()) {
+        hash = (37 * hash) + CLUE_POSITION_FIELD_NUMBER;
+        hash = (53 * hash) + getCluePosition().hashCode();
+      }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -453,9 +457,13 @@ public final class HuntingRevealClueNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 4322
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 4317;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code HuntingRevealClueNotify}
@@ -495,14 +503,6 @@ public final class HuntingRevealClueNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        finishClueCount_ = 0;
-
-        if (cluePositionBuilder_ == null) {
-          cluePosition_ = null;
-        } else {
-          cluePosition_ = null;
-          cluePositionBuilder_ = null;
-        }
         if (huntingPairBuilder_ == null) {
           huntingPair_ = null;
         } else {
@@ -511,6 +511,14 @@ public final class HuntingRevealClueNotifyOuterClass {
         }
         finishedGroupId_ = 0;
 
+        finishClueCount_ = 0;
+
+        if (cluePositionBuilder_ == null) {
+          cluePosition_ = null;
+        } else {
+          cluePosition_ = null;
+          cluePositionBuilder_ = null;
+        }
         return this;
       }
 
@@ -537,18 +545,18 @@ public final class HuntingRevealClueNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.HuntingRevealClueNotifyOuterClass.HuntingRevealClueNotify buildPartial() {
         emu.grasscutter.net.proto.HuntingRevealClueNotifyOuterClass.HuntingRevealClueNotify result = new emu.grasscutter.net.proto.HuntingRevealClueNotifyOuterClass.HuntingRevealClueNotify(this);
-        result.finishClueCount_ = finishClueCount_;
-        if (cluePositionBuilder_ == null) {
-          result.cluePosition_ = cluePosition_;
-        } else {
-          result.cluePosition_ = cluePositionBuilder_.build();
-        }
         if (huntingPairBuilder_ == null) {
           result.huntingPair_ = huntingPair_;
         } else {
           result.huntingPair_ = huntingPairBuilder_.build();
         }
         result.finishedGroupId_ = finishedGroupId_;
+        result.finishClueCount_ = finishClueCount_;
+        if (cluePositionBuilder_ == null) {
+          result.cluePosition_ = cluePosition_;
+        } else {
+          result.cluePosition_ = cluePositionBuilder_.build();
+        }
         onBuilt();
         return result;
       }
@@ -597,17 +605,17 @@ public final class HuntingRevealClueNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.HuntingRevealClueNotifyOuterClass.HuntingRevealClueNotify other) {
         if (other == emu.grasscutter.net.proto.HuntingRevealClueNotifyOuterClass.HuntingRevealClueNotify.getDefaultInstance()) return this;
-        if (other.getFinishClueCount() != 0) {
-          setFinishClueCount(other.getFinishClueCount());
-        }
-        if (other.hasCluePosition()) {
-          mergeCluePosition(other.getCluePosition());
-        }
         if (other.hasHuntingPair()) {
           mergeHuntingPair(other.getHuntingPair());
         }
         if (other.getFinishedGroupId() != 0) {
           setFinishedGroupId(other.getFinishedGroupId());
+        }
+        if (other.getFinishClueCount() != 0) {
+          setFinishClueCount(other.getFinishClueCount());
+        }
+        if (other.hasCluePosition()) {
+          mergeCluePosition(other.getCluePosition());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -638,168 +646,18 @@ public final class HuntingRevealClueNotifyOuterClass {
         return this;
       }
 
-      private int finishClueCount_ ;
-      /**
-       * <code>uint32 finish_clue_count = 5;</code>
-       * @return The finishClueCount.
-       */
-      @java.lang.Override
-      public int getFinishClueCount() {
-        return finishClueCount_;
-      }
-      /**
-       * <code>uint32 finish_clue_count = 5;</code>
-       * @param value The finishClueCount to set.
-       * @return This builder for chaining.
-       */
-      public Builder setFinishClueCount(int value) {
-        
-        finishClueCount_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 finish_clue_count = 5;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearFinishClueCount() {
-        
-        finishClueCount_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private emu.grasscutter.net.proto.VectorOuterClass.Vector cluePosition_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> cluePositionBuilder_;
-      /**
-       * <code>.Vector clue_position = 4;</code>
-       * @return Whether the cluePosition field is set.
-       */
-      public boolean hasCluePosition() {
-        return cluePositionBuilder_ != null || cluePosition_ != null;
-      }
-      /**
-       * <code>.Vector clue_position = 4;</code>
-       * @return The cluePosition.
-       */
-      public emu.grasscutter.net.proto.VectorOuterClass.Vector getCluePosition() {
-        if (cluePositionBuilder_ == null) {
-          return cluePosition_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : cluePosition_;
-        } else {
-          return cluePositionBuilder_.getMessage();
-        }
-      }
-      /**
-       * <code>.Vector clue_position = 4;</code>
-       */
-      public Builder setCluePosition(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
-        if (cluePositionBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          cluePosition_ = value;
-          onChanged();
-        } else {
-          cluePositionBuilder_.setMessage(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.Vector clue_position = 4;</code>
-       */
-      public Builder setCluePosition(
-          emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder builderForValue) {
-        if (cluePositionBuilder_ == null) {
-          cluePosition_ = builderForValue.build();
-          onChanged();
-        } else {
-          cluePositionBuilder_.setMessage(builderForValue.build());
-        }
-
-        return this;
-      }
-      /**
-       * <code>.Vector clue_position = 4;</code>
-       */
-      public Builder mergeCluePosition(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
-        if (cluePositionBuilder_ == null) {
-          if (cluePosition_ != null) {
-            cluePosition_ =
-              emu.grasscutter.net.proto.VectorOuterClass.Vector.newBuilder(cluePosition_).mergeFrom(value).buildPartial();
-          } else {
-            cluePosition_ = value;
-          }
-          onChanged();
-        } else {
-          cluePositionBuilder_.mergeFrom(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.Vector clue_position = 4;</code>
-       */
-      public Builder clearCluePosition() {
-        if (cluePositionBuilder_ == null) {
-          cluePosition_ = null;
-          onChanged();
-        } else {
-          cluePosition_ = null;
-          cluePositionBuilder_ = null;
-        }
-
-        return this;
-      }
-      /**
-       * <code>.Vector clue_position = 4;</code>
-       */
-      public emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder getCluePositionBuilder() {
-        
-        onChanged();
-        return getCluePositionFieldBuilder().getBuilder();
-      }
-      /**
-       * <code>.Vector clue_position = 4;</code>
-       */
-      public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getCluePositionOrBuilder() {
-        if (cluePositionBuilder_ != null) {
-          return cluePositionBuilder_.getMessageOrBuilder();
-        } else {
-          return cluePosition_ == null ?
-              emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : cluePosition_;
-        }
-      }
-      /**
-       * <code>.Vector clue_position = 4;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> 
-          getCluePositionFieldBuilder() {
-        if (cluePositionBuilder_ == null) {
-          cluePositionBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder>(
-                  getCluePosition(),
-                  getParentForChildren(),
-                  isClean());
-          cluePosition_ = null;
-        }
-        return cluePositionBuilder_;
-      }
-
       private emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPair huntingPair_;
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPair, emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPair.Builder, emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPairOrBuilder> huntingPairBuilder_;
       /**
-       * <code>.HuntingPair hunting_pair = 12;</code>
+       * <code>.HuntingPair hunting_pair = 3;</code>
        * @return Whether the huntingPair field is set.
        */
       public boolean hasHuntingPair() {
         return huntingPairBuilder_ != null || huntingPair_ != null;
       }
       /**
-       * <code>.HuntingPair hunting_pair = 12;</code>
+       * <code>.HuntingPair hunting_pair = 3;</code>
        * @return The huntingPair.
        */
       public emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPair getHuntingPair() {
@@ -810,7 +668,7 @@ public final class HuntingRevealClueNotifyOuterClass {
         }
       }
       /**
-       * <code>.HuntingPair hunting_pair = 12;</code>
+       * <code>.HuntingPair hunting_pair = 3;</code>
        */
       public Builder setHuntingPair(emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPair value) {
         if (huntingPairBuilder_ == null) {
@@ -826,7 +684,7 @@ public final class HuntingRevealClueNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.HuntingPair hunting_pair = 12;</code>
+       * <code>.HuntingPair hunting_pair = 3;</code>
        */
       public Builder setHuntingPair(
           emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPair.Builder builderForValue) {
@@ -840,7 +698,7 @@ public final class HuntingRevealClueNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.HuntingPair hunting_pair = 12;</code>
+       * <code>.HuntingPair hunting_pair = 3;</code>
        */
       public Builder mergeHuntingPair(emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPair value) {
         if (huntingPairBuilder_ == null) {
@@ -858,7 +716,7 @@ public final class HuntingRevealClueNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.HuntingPair hunting_pair = 12;</code>
+       * <code>.HuntingPair hunting_pair = 3;</code>
        */
       public Builder clearHuntingPair() {
         if (huntingPairBuilder_ == null) {
@@ -872,7 +730,7 @@ public final class HuntingRevealClueNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.HuntingPair hunting_pair = 12;</code>
+       * <code>.HuntingPair hunting_pair = 3;</code>
        */
       public emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPair.Builder getHuntingPairBuilder() {
         
@@ -880,7 +738,7 @@ public final class HuntingRevealClueNotifyOuterClass {
         return getHuntingPairFieldBuilder().getBuilder();
       }
       /**
-       * <code>.HuntingPair hunting_pair = 12;</code>
+       * <code>.HuntingPair hunting_pair = 3;</code>
        */
       public emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPairOrBuilder getHuntingPairOrBuilder() {
         if (huntingPairBuilder_ != null) {
@@ -891,7 +749,7 @@ public final class HuntingRevealClueNotifyOuterClass {
         }
       }
       /**
-       * <code>.HuntingPair hunting_pair = 12;</code>
+       * <code>.HuntingPair hunting_pair = 3;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPair, emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPair.Builder, emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPairOrBuilder> 
@@ -909,7 +767,7 @@ public final class HuntingRevealClueNotifyOuterClass {
 
       private int finishedGroupId_ ;
       /**
-       * <code>uint32 finished_group_id = 7;</code>
+       * <code>uint32 finished_group_id = 6;</code>
        * @return The finishedGroupId.
        */
       @java.lang.Override
@@ -917,7 +775,7 @@ public final class HuntingRevealClueNotifyOuterClass {
         return finishedGroupId_;
       }
       /**
-       * <code>uint32 finished_group_id = 7;</code>
+       * <code>uint32 finished_group_id = 6;</code>
        * @param value The finishedGroupId to set.
        * @return This builder for chaining.
        */
@@ -928,7 +786,7 @@ public final class HuntingRevealClueNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 finished_group_id = 7;</code>
+       * <code>uint32 finished_group_id = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearFinishedGroupId() {
@@ -936,6 +794,156 @@ public final class HuntingRevealClueNotifyOuterClass {
         finishedGroupId_ = 0;
         onChanged();
         return this;
+      }
+
+      private int finishClueCount_ ;
+      /**
+       * <code>uint32 finish_clue_count = 14;</code>
+       * @return The finishClueCount.
+       */
+      @java.lang.Override
+      public int getFinishClueCount() {
+        return finishClueCount_;
+      }
+      /**
+       * <code>uint32 finish_clue_count = 14;</code>
+       * @param value The finishClueCount to set.
+       * @return This builder for chaining.
+       */
+      public Builder setFinishClueCount(int value) {
+        
+        finishClueCount_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 finish_clue_count = 14;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearFinishClueCount() {
+        
+        finishClueCount_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private emu.grasscutter.net.proto.VectorOuterClass.Vector cluePosition_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> cluePositionBuilder_;
+      /**
+       * <code>.Vector clue_position = 2;</code>
+       * @return Whether the cluePosition field is set.
+       */
+      public boolean hasCluePosition() {
+        return cluePositionBuilder_ != null || cluePosition_ != null;
+      }
+      /**
+       * <code>.Vector clue_position = 2;</code>
+       * @return The cluePosition.
+       */
+      public emu.grasscutter.net.proto.VectorOuterClass.Vector getCluePosition() {
+        if (cluePositionBuilder_ == null) {
+          return cluePosition_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : cluePosition_;
+        } else {
+          return cluePositionBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>.Vector clue_position = 2;</code>
+       */
+      public Builder setCluePosition(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
+        if (cluePositionBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          cluePosition_ = value;
+          onChanged();
+        } else {
+          cluePositionBuilder_.setMessage(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.Vector clue_position = 2;</code>
+       */
+      public Builder setCluePosition(
+          emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder builderForValue) {
+        if (cluePositionBuilder_ == null) {
+          cluePosition_ = builderForValue.build();
+          onChanged();
+        } else {
+          cluePositionBuilder_.setMessage(builderForValue.build());
+        }
+
+        return this;
+      }
+      /**
+       * <code>.Vector clue_position = 2;</code>
+       */
+      public Builder mergeCluePosition(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
+        if (cluePositionBuilder_ == null) {
+          if (cluePosition_ != null) {
+            cluePosition_ =
+              emu.grasscutter.net.proto.VectorOuterClass.Vector.newBuilder(cluePosition_).mergeFrom(value).buildPartial();
+          } else {
+            cluePosition_ = value;
+          }
+          onChanged();
+        } else {
+          cluePositionBuilder_.mergeFrom(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.Vector clue_position = 2;</code>
+       */
+      public Builder clearCluePosition() {
+        if (cluePositionBuilder_ == null) {
+          cluePosition_ = null;
+          onChanged();
+        } else {
+          cluePosition_ = null;
+          cluePositionBuilder_ = null;
+        }
+
+        return this;
+      }
+      /**
+       * <code>.Vector clue_position = 2;</code>
+       */
+      public emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder getCluePositionBuilder() {
+        
+        onChanged();
+        return getCluePositionFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.Vector clue_position = 2;</code>
+       */
+      public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getCluePositionOrBuilder() {
+        if (cluePositionBuilder_ != null) {
+          return cluePositionBuilder_.getMessageOrBuilder();
+        } else {
+          return cluePosition_ == null ?
+              emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : cluePosition_;
+        }
+      }
+      /**
+       * <code>.Vector clue_position = 2;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> 
+          getCluePositionFieldBuilder() {
+        if (cluePositionBuilder_ == null) {
+          cluePositionBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder>(
+                  getCluePosition(),
+                  getParentForChildren(),
+                  isClean());
+          cluePosition_ = null;
+        }
+        return cluePositionBuilder_;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -1006,10 +1014,10 @@ public final class HuntingRevealClueNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n\035HuntingRevealClueNotify.proto\032\021Hunting" +
       "Pair.proto\032\014Vector.proto\"\223\001\n\027HuntingReve" +
-      "alClueNotify\022\031\n\021finish_clue_count\030\005 \001(\r\022" +
-      "\036\n\rclue_position\030\004 \001(\0132\007.Vector\022\"\n\014hunti" +
-      "ng_pair\030\014 \001(\0132\014.HuntingPair\022\031\n\021finished_" +
-      "group_id\030\007 \001(\rB\033\n\031emu.grasscutter.net.pr" +
+      "alClueNotify\022\"\n\014hunting_pair\030\003 \001(\0132\014.Hun" +
+      "tingPair\022\031\n\021finished_group_id\030\006 \001(\r\022\031\n\021f" +
+      "inish_clue_count\030\016 \001(\r\022\036\n\rclue_position\030" +
+      "\002 \001(\0132\007.VectorB\033\n\031emu.grasscutter.net.pr" +
       "otob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -1023,7 +1031,7 @@ public final class HuntingRevealClueNotifyOuterClass {
     internal_static_HuntingRevealClueNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_HuntingRevealClueNotify_descriptor,
-        new java.lang.String[] { "FinishClueCount", "CluePosition", "HuntingPair", "FinishedGroupId", });
+        new java.lang.String[] { "HuntingPair", "FinishedGroupId", "FinishClueCount", "CluePosition", });
     emu.grasscutter.net.proto.HuntingPairOuterClass.getDescriptor();
     emu.grasscutter.net.proto.VectorOuterClass.getDescriptor();
   }

@@ -19,7 +19,7 @@ public final class AbilityActionHitEffectOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 trigger_id = 3;</code>
+     * <code>uint32 trigger_id = 13;</code>
      * @return The triggerId.
      */
     int getTriggerId();
@@ -69,7 +69,7 @@ public final class AbilityActionHitEffectOuterClass {
             case 0:
               done = true;
               break;
-            case 24: {
+            case 104: {
 
               triggerId_ = input.readUInt32();
               break;
@@ -106,10 +106,10 @@ public final class AbilityActionHitEffectOuterClass {
               emu.grasscutter.net.proto.AbilityActionHitEffectOuterClass.AbilityActionHitEffect.class, emu.grasscutter.net.proto.AbilityActionHitEffectOuterClass.AbilityActionHitEffect.Builder.class);
     }
 
-    public static final int TRIGGER_ID_FIELD_NUMBER = 3;
+    public static final int TRIGGER_ID_FIELD_NUMBER = 13;
     private int triggerId_;
     /**
-     * <code>uint32 trigger_id = 3;</code>
+     * <code>uint32 trigger_id = 13;</code>
      * @return The triggerId.
      */
     @java.lang.Override
@@ -132,7 +132,7 @@ public final class AbilityActionHitEffectOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (triggerId_ != 0) {
-        output.writeUInt32(3, triggerId_);
+        output.writeUInt32(13, triggerId_);
       }
       unknownFields.writeTo(output);
     }
@@ -145,7 +145,7 @@ public final class AbilityActionHitEffectOuterClass {
       size = 0;
       if (triggerId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, triggerId_);
+          .computeUInt32Size(13, triggerId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -421,7 +421,7 @@ public final class AbilityActionHitEffectOuterClass {
 
       private int triggerId_ ;
       /**
-       * <code>uint32 trigger_id = 3;</code>
+       * <code>uint32 trigger_id = 13;</code>
        * @return The triggerId.
        */
       @java.lang.Override
@@ -429,7 +429,7 @@ public final class AbilityActionHitEffectOuterClass {
         return triggerId_;
       }
       /**
-       * <code>uint32 trigger_id = 3;</code>
+       * <code>uint32 trigger_id = 13;</code>
        * @param value The triggerId to set.
        * @return This builder for chaining.
        */
@@ -440,7 +440,7 @@ public final class AbilityActionHitEffectOuterClass {
         return this;
       }
       /**
-       * <code>uint32 trigger_id = 3;</code>
+       * <code>uint32 trigger_id = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearTriggerId() {
@@ -517,7 +517,7 @@ public final class AbilityActionHitEffectOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\034AbilityActionHitEffect.proto\",\n\026Abilit" +
-      "yActionHitEffect\022\022\n\ntrigger_id\030\003 \001(\rB\033\n\031" +
+      "yActionHitEffect\022\022\n\ntrigger_id\030\r \001(\rB\033\n\031" +
       "emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

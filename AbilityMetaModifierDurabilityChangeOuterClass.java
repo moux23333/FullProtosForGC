@@ -19,16 +19,16 @@ public final class AbilityMetaModifierDurabilityChangeOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>float reduce_durability = 6;</code>
-     * @return The reduceDurability.
+     * <code>float Unk3300_LDHNFNOGOGF = 13;</code>
+     * @return The unk3300LDHNFNOGOGF.
      */
-    float getReduceDurability();
+    float getUnk3300LDHNFNOGOGF();
 
     /**
-     * <code>float remain_durability = 15;</code>
-     * @return The remainDurability.
+     * <code>float Unk3300_IFHFHEHDOIO = 1;</code>
+     * @return The unk3300IFHFHEHDOIO.
      */
-    float getRemainDurability();
+    float getUnk3300IFHFHEHDOIO();
   }
   /**
    * Protobuf type {@code AbilityMetaModifierDurabilityChange}
@@ -75,14 +75,14 @@ public final class AbilityMetaModifierDurabilityChangeOuterClass {
             case 0:
               done = true;
               break;
-            case 53: {
+            case 13: {
 
-              reduceDurability_ = input.readFloat();
+              unk3300IFHFHEHDOIO_ = input.readFloat();
               break;
             }
-            case 125: {
+            case 109: {
 
-              remainDurability_ = input.readFloat();
+              unk3300LDHNFNOGOGF_ = input.readFloat();
               break;
             }
             default: {
@@ -117,26 +117,26 @@ public final class AbilityMetaModifierDurabilityChangeOuterClass {
               emu.grasscutter.net.proto.AbilityMetaModifierDurabilityChangeOuterClass.AbilityMetaModifierDurabilityChange.class, emu.grasscutter.net.proto.AbilityMetaModifierDurabilityChangeOuterClass.AbilityMetaModifierDurabilityChange.Builder.class);
     }
 
-    public static final int REDUCE_DURABILITY_FIELD_NUMBER = 6;
-    private float reduceDurability_;
+    public static final int UNK3300_LDHNFNOGOGF_FIELD_NUMBER = 13;
+    private float unk3300LDHNFNOGOGF_;
     /**
-     * <code>float reduce_durability = 6;</code>
-     * @return The reduceDurability.
+     * <code>float Unk3300_LDHNFNOGOGF = 13;</code>
+     * @return The unk3300LDHNFNOGOGF.
      */
     @java.lang.Override
-    public float getReduceDurability() {
-      return reduceDurability_;
+    public float getUnk3300LDHNFNOGOGF() {
+      return unk3300LDHNFNOGOGF_;
     }
 
-    public static final int REMAIN_DURABILITY_FIELD_NUMBER = 15;
-    private float remainDurability_;
+    public static final int UNK3300_IFHFHEHDOIO_FIELD_NUMBER = 1;
+    private float unk3300IFHFHEHDOIO_;
     /**
-     * <code>float remain_durability = 15;</code>
-     * @return The remainDurability.
+     * <code>float Unk3300_IFHFHEHDOIO = 1;</code>
+     * @return The unk3300IFHFHEHDOIO.
      */
     @java.lang.Override
-    public float getRemainDurability() {
-      return remainDurability_;
+    public float getUnk3300IFHFHEHDOIO() {
+      return unk3300IFHFHEHDOIO_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -153,11 +153,11 @@ public final class AbilityMetaModifierDurabilityChangeOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (reduceDurability_ != 0F) {
-        output.writeFloat(6, reduceDurability_);
+      if (unk3300IFHFHEHDOIO_ != 0F) {
+        output.writeFloat(1, unk3300IFHFHEHDOIO_);
       }
-      if (remainDurability_ != 0F) {
-        output.writeFloat(15, remainDurability_);
+      if (unk3300LDHNFNOGOGF_ != 0F) {
+        output.writeFloat(13, unk3300LDHNFNOGOGF_);
       }
       unknownFields.writeTo(output);
     }
@@ -168,13 +168,13 @@ public final class AbilityMetaModifierDurabilityChangeOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (reduceDurability_ != 0F) {
+      if (unk3300IFHFHEHDOIO_ != 0F) {
         size += com.google.protobuf.CodedOutputStream
-          .computeFloatSize(6, reduceDurability_);
+          .computeFloatSize(1, unk3300IFHFHEHDOIO_);
       }
-      if (remainDurability_ != 0F) {
+      if (unk3300LDHNFNOGOGF_ != 0F) {
         size += com.google.protobuf.CodedOutputStream
-          .computeFloatSize(15, remainDurability_);
+          .computeFloatSize(13, unk3300LDHNFNOGOGF_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -191,12 +191,12 @@ public final class AbilityMetaModifierDurabilityChangeOuterClass {
       }
       emu.grasscutter.net.proto.AbilityMetaModifierDurabilityChangeOuterClass.AbilityMetaModifierDurabilityChange other = (emu.grasscutter.net.proto.AbilityMetaModifierDurabilityChangeOuterClass.AbilityMetaModifierDurabilityChange) obj;
 
-      if (java.lang.Float.floatToIntBits(getReduceDurability())
+      if (java.lang.Float.floatToIntBits(getUnk3300LDHNFNOGOGF())
           != java.lang.Float.floatToIntBits(
-              other.getReduceDurability())) return false;
-      if (java.lang.Float.floatToIntBits(getRemainDurability())
+              other.getUnk3300LDHNFNOGOGF())) return false;
+      if (java.lang.Float.floatToIntBits(getUnk3300IFHFHEHDOIO())
           != java.lang.Float.floatToIntBits(
-              other.getRemainDurability())) return false;
+              other.getUnk3300IFHFHEHDOIO())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -208,12 +208,12 @@ public final class AbilityMetaModifierDurabilityChangeOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + REDUCE_DURABILITY_FIELD_NUMBER;
+      hash = (37 * hash) + UNK3300_LDHNFNOGOGF_FIELD_NUMBER;
       hash = (53 * hash) + java.lang.Float.floatToIntBits(
-          getReduceDurability());
-      hash = (37 * hash) + REMAIN_DURABILITY_FIELD_NUMBER;
+          getUnk3300LDHNFNOGOGF());
+      hash = (37 * hash) + UNK3300_IFHFHEHDOIO_FIELD_NUMBER;
       hash = (53 * hash) + java.lang.Float.floatToIntBits(
-          getRemainDurability());
+          getUnk3300IFHFHEHDOIO());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -347,9 +347,9 @@ public final class AbilityMetaModifierDurabilityChangeOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        reduceDurability_ = 0F;
+        unk3300LDHNFNOGOGF_ = 0F;
 
-        remainDurability_ = 0F;
+        unk3300IFHFHEHDOIO_ = 0F;
 
         return this;
       }
@@ -377,8 +377,8 @@ public final class AbilityMetaModifierDurabilityChangeOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.AbilityMetaModifierDurabilityChangeOuterClass.AbilityMetaModifierDurabilityChange buildPartial() {
         emu.grasscutter.net.proto.AbilityMetaModifierDurabilityChangeOuterClass.AbilityMetaModifierDurabilityChange result = new emu.grasscutter.net.proto.AbilityMetaModifierDurabilityChangeOuterClass.AbilityMetaModifierDurabilityChange(this);
-        result.reduceDurability_ = reduceDurability_;
-        result.remainDurability_ = remainDurability_;
+        result.unk3300LDHNFNOGOGF_ = unk3300LDHNFNOGOGF_;
+        result.unk3300IFHFHEHDOIO_ = unk3300IFHFHEHDOIO_;
         onBuilt();
         return result;
       }
@@ -427,11 +427,11 @@ public final class AbilityMetaModifierDurabilityChangeOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.AbilityMetaModifierDurabilityChangeOuterClass.AbilityMetaModifierDurabilityChange other) {
         if (other == emu.grasscutter.net.proto.AbilityMetaModifierDurabilityChangeOuterClass.AbilityMetaModifierDurabilityChange.getDefaultInstance()) return this;
-        if (other.getReduceDurability() != 0F) {
-          setReduceDurability(other.getReduceDurability());
+        if (other.getUnk3300LDHNFNOGOGF() != 0F) {
+          setUnk3300LDHNFNOGOGF(other.getUnk3300LDHNFNOGOGF());
         }
-        if (other.getRemainDurability() != 0F) {
-          setRemainDurability(other.getRemainDurability());
+        if (other.getUnk3300IFHFHEHDOIO() != 0F) {
+          setUnk3300IFHFHEHDOIO(other.getUnk3300IFHFHEHDOIO());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -462,64 +462,64 @@ public final class AbilityMetaModifierDurabilityChangeOuterClass {
         return this;
       }
 
-      private float reduceDurability_ ;
+      private float unk3300LDHNFNOGOGF_ ;
       /**
-       * <code>float reduce_durability = 6;</code>
-       * @return The reduceDurability.
+       * <code>float Unk3300_LDHNFNOGOGF = 13;</code>
+       * @return The unk3300LDHNFNOGOGF.
        */
       @java.lang.Override
-      public float getReduceDurability() {
-        return reduceDurability_;
+      public float getUnk3300LDHNFNOGOGF() {
+        return unk3300LDHNFNOGOGF_;
       }
       /**
-       * <code>float reduce_durability = 6;</code>
-       * @param value The reduceDurability to set.
+       * <code>float Unk3300_LDHNFNOGOGF = 13;</code>
+       * @param value The unk3300LDHNFNOGOGF to set.
        * @return This builder for chaining.
        */
-      public Builder setReduceDurability(float value) {
+      public Builder setUnk3300LDHNFNOGOGF(float value) {
         
-        reduceDurability_ = value;
+        unk3300LDHNFNOGOGF_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>float reduce_durability = 6;</code>
+       * <code>float Unk3300_LDHNFNOGOGF = 13;</code>
        * @return This builder for chaining.
        */
-      public Builder clearReduceDurability() {
+      public Builder clearUnk3300LDHNFNOGOGF() {
         
-        reduceDurability_ = 0F;
+        unk3300LDHNFNOGOGF_ = 0F;
         onChanged();
         return this;
       }
 
-      private float remainDurability_ ;
+      private float unk3300IFHFHEHDOIO_ ;
       /**
-       * <code>float remain_durability = 15;</code>
-       * @return The remainDurability.
+       * <code>float Unk3300_IFHFHEHDOIO = 1;</code>
+       * @return The unk3300IFHFHEHDOIO.
        */
       @java.lang.Override
-      public float getRemainDurability() {
-        return remainDurability_;
+      public float getUnk3300IFHFHEHDOIO() {
+        return unk3300IFHFHEHDOIO_;
       }
       /**
-       * <code>float remain_durability = 15;</code>
-       * @param value The remainDurability to set.
+       * <code>float Unk3300_IFHFHEHDOIO = 1;</code>
+       * @param value The unk3300IFHFHEHDOIO to set.
        * @return This builder for chaining.
        */
-      public Builder setRemainDurability(float value) {
+      public Builder setUnk3300IFHFHEHDOIO(float value) {
         
-        remainDurability_ = value;
+        unk3300IFHFHEHDOIO_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>float remain_durability = 15;</code>
+       * <code>float Unk3300_IFHFHEHDOIO = 1;</code>
        * @return This builder for chaining.
        */
-      public Builder clearRemainDurability() {
+      public Builder clearUnk3300IFHFHEHDOIO() {
         
-        remainDurability_ = 0F;
+        unk3300IFHFHEHDOIO_ = 0F;
         onChanged();
         return this;
       }
@@ -591,10 +591,10 @@ public final class AbilityMetaModifierDurabilityChangeOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n)AbilityMetaModifierDurabilityChange.pr" +
-      "oto\"[\n#AbilityMetaModifierDurabilityChan" +
-      "ge\022\031\n\021reduce_durability\030\006 \001(\002\022\031\n\021remain_" +
-      "durability\030\017 \001(\002B\033\n\031emu.grasscutter.net." +
-      "protob\006proto3"
+      "oto\"_\n#AbilityMetaModifierDurabilityChan" +
+      "ge\022\033\n\023Unk3300_LDHNFNOGOGF\030\r \001(\002\022\033\n\023Unk33" +
+      "00_IFHFHEHDOIO\030\001 \001(\002B\033\n\031emu.grasscutter." +
+      "net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -605,7 +605,7 @@ public final class AbilityMetaModifierDurabilityChangeOuterClass {
     internal_static_AbilityMetaModifierDurabilityChange_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_AbilityMetaModifierDurabilityChange_descriptor,
-        new java.lang.String[] { "ReduceDurability", "RemainDurability", });
+        new java.lang.String[] { "Unk3300LDHNFNOGOGF", "Unk3300IFHFHEHDOIO", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

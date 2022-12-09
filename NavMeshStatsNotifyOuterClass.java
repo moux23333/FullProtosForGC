@@ -19,35 +19,39 @@ public final class NavMeshStatsNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .PbNavMeshStatsInfo infos = 4;</code>
+     * <code>repeated .PbNavMeshStatsInfo infos = 3;</code>
      */
     java.util.List<emu.grasscutter.net.proto.PbNavMeshStatsInfoOuterClass.PbNavMeshStatsInfo> 
         getInfosList();
     /**
-     * <code>repeated .PbNavMeshStatsInfo infos = 4;</code>
+     * <code>repeated .PbNavMeshStatsInfo infos = 3;</code>
      */
     emu.grasscutter.net.proto.PbNavMeshStatsInfoOuterClass.PbNavMeshStatsInfo getInfos(int index);
     /**
-     * <code>repeated .PbNavMeshStatsInfo infos = 4;</code>
+     * <code>repeated .PbNavMeshStatsInfo infos = 3;</code>
      */
     int getInfosCount();
     /**
-     * <code>repeated .PbNavMeshStatsInfo infos = 4;</code>
+     * <code>repeated .PbNavMeshStatsInfo infos = 3;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.PbNavMeshStatsInfoOuterClass.PbNavMeshStatsInfoOrBuilder> 
         getInfosOrBuilderList();
     /**
-     * <code>repeated .PbNavMeshStatsInfo infos = 4;</code>
+     * <code>repeated .PbNavMeshStatsInfo infos = 3;</code>
      */
     emu.grasscutter.net.proto.PbNavMeshStatsInfoOuterClass.PbNavMeshStatsInfoOrBuilder getInfosOrBuilder(
         int index);
   }
   /**
    * <pre>
-   * CmdId: 2316
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 2323;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code NavMeshStatsNotify}
@@ -96,7 +100,7 @@ public final class NavMeshStatsNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 34: {
+            case 26: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 infos_ = new java.util.ArrayList<emu.grasscutter.net.proto.PbNavMeshStatsInfoOuterClass.PbNavMeshStatsInfo>();
                 mutable_bitField0_ |= 0x00000001;
@@ -140,17 +144,17 @@ public final class NavMeshStatsNotifyOuterClass {
               emu.grasscutter.net.proto.NavMeshStatsNotifyOuterClass.NavMeshStatsNotify.class, emu.grasscutter.net.proto.NavMeshStatsNotifyOuterClass.NavMeshStatsNotify.Builder.class);
     }
 
-    public static final int INFOS_FIELD_NUMBER = 4;
+    public static final int INFOS_FIELD_NUMBER = 3;
     private java.util.List<emu.grasscutter.net.proto.PbNavMeshStatsInfoOuterClass.PbNavMeshStatsInfo> infos_;
     /**
-     * <code>repeated .PbNavMeshStatsInfo infos = 4;</code>
+     * <code>repeated .PbNavMeshStatsInfo infos = 3;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.PbNavMeshStatsInfoOuterClass.PbNavMeshStatsInfo> getInfosList() {
       return infos_;
     }
     /**
-     * <code>repeated .PbNavMeshStatsInfo infos = 4;</code>
+     * <code>repeated .PbNavMeshStatsInfo infos = 3;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.PbNavMeshStatsInfoOuterClass.PbNavMeshStatsInfoOrBuilder> 
@@ -158,21 +162,21 @@ public final class NavMeshStatsNotifyOuterClass {
       return infos_;
     }
     /**
-     * <code>repeated .PbNavMeshStatsInfo infos = 4;</code>
+     * <code>repeated .PbNavMeshStatsInfo infos = 3;</code>
      */
     @java.lang.Override
     public int getInfosCount() {
       return infos_.size();
     }
     /**
-     * <code>repeated .PbNavMeshStatsInfo infos = 4;</code>
+     * <code>repeated .PbNavMeshStatsInfo infos = 3;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.PbNavMeshStatsInfoOuterClass.PbNavMeshStatsInfo getInfos(int index) {
       return infos_.get(index);
     }
     /**
-     * <code>repeated .PbNavMeshStatsInfo infos = 4;</code>
+     * <code>repeated .PbNavMeshStatsInfo infos = 3;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.PbNavMeshStatsInfoOuterClass.PbNavMeshStatsInfoOrBuilder getInfosOrBuilder(
@@ -195,7 +199,7 @@ public final class NavMeshStatsNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       for (int i = 0; i < infos_.size(); i++) {
-        output.writeMessage(4, infos_.get(i));
+        output.writeMessage(3, infos_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -208,7 +212,7 @@ public final class NavMeshStatsNotifyOuterClass {
       size = 0;
       for (int i = 0; i < infos_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(4, infos_.get(i));
+          .computeMessageSize(3, infos_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -339,10 +343,14 @@ public final class NavMeshStatsNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 2316
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 2323;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code NavMeshStatsNotify}
@@ -542,7 +550,7 @@ public final class NavMeshStatsNotifyOuterClass {
           emu.grasscutter.net.proto.PbNavMeshStatsInfoOuterClass.PbNavMeshStatsInfo, emu.grasscutter.net.proto.PbNavMeshStatsInfoOuterClass.PbNavMeshStatsInfo.Builder, emu.grasscutter.net.proto.PbNavMeshStatsInfoOuterClass.PbNavMeshStatsInfoOrBuilder> infosBuilder_;
 
       /**
-       * <code>repeated .PbNavMeshStatsInfo infos = 4;</code>
+       * <code>repeated .PbNavMeshStatsInfo infos = 3;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.PbNavMeshStatsInfoOuterClass.PbNavMeshStatsInfo> getInfosList() {
         if (infosBuilder_ == null) {
@@ -552,7 +560,7 @@ public final class NavMeshStatsNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .PbNavMeshStatsInfo infos = 4;</code>
+       * <code>repeated .PbNavMeshStatsInfo infos = 3;</code>
        */
       public int getInfosCount() {
         if (infosBuilder_ == null) {
@@ -562,7 +570,7 @@ public final class NavMeshStatsNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .PbNavMeshStatsInfo infos = 4;</code>
+       * <code>repeated .PbNavMeshStatsInfo infos = 3;</code>
        */
       public emu.grasscutter.net.proto.PbNavMeshStatsInfoOuterClass.PbNavMeshStatsInfo getInfos(int index) {
         if (infosBuilder_ == null) {
@@ -572,7 +580,7 @@ public final class NavMeshStatsNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .PbNavMeshStatsInfo infos = 4;</code>
+       * <code>repeated .PbNavMeshStatsInfo infos = 3;</code>
        */
       public Builder setInfos(
           int index, emu.grasscutter.net.proto.PbNavMeshStatsInfoOuterClass.PbNavMeshStatsInfo value) {
@@ -589,7 +597,7 @@ public final class NavMeshStatsNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .PbNavMeshStatsInfo infos = 4;</code>
+       * <code>repeated .PbNavMeshStatsInfo infos = 3;</code>
        */
       public Builder setInfos(
           int index, emu.grasscutter.net.proto.PbNavMeshStatsInfoOuterClass.PbNavMeshStatsInfo.Builder builderForValue) {
@@ -603,7 +611,7 @@ public final class NavMeshStatsNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .PbNavMeshStatsInfo infos = 4;</code>
+       * <code>repeated .PbNavMeshStatsInfo infos = 3;</code>
        */
       public Builder addInfos(emu.grasscutter.net.proto.PbNavMeshStatsInfoOuterClass.PbNavMeshStatsInfo value) {
         if (infosBuilder_ == null) {
@@ -619,7 +627,7 @@ public final class NavMeshStatsNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .PbNavMeshStatsInfo infos = 4;</code>
+       * <code>repeated .PbNavMeshStatsInfo infos = 3;</code>
        */
       public Builder addInfos(
           int index, emu.grasscutter.net.proto.PbNavMeshStatsInfoOuterClass.PbNavMeshStatsInfo value) {
@@ -636,7 +644,7 @@ public final class NavMeshStatsNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .PbNavMeshStatsInfo infos = 4;</code>
+       * <code>repeated .PbNavMeshStatsInfo infos = 3;</code>
        */
       public Builder addInfos(
           emu.grasscutter.net.proto.PbNavMeshStatsInfoOuterClass.PbNavMeshStatsInfo.Builder builderForValue) {
@@ -650,7 +658,7 @@ public final class NavMeshStatsNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .PbNavMeshStatsInfo infos = 4;</code>
+       * <code>repeated .PbNavMeshStatsInfo infos = 3;</code>
        */
       public Builder addInfos(
           int index, emu.grasscutter.net.proto.PbNavMeshStatsInfoOuterClass.PbNavMeshStatsInfo.Builder builderForValue) {
@@ -664,7 +672,7 @@ public final class NavMeshStatsNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .PbNavMeshStatsInfo infos = 4;</code>
+       * <code>repeated .PbNavMeshStatsInfo infos = 3;</code>
        */
       public Builder addAllInfos(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.PbNavMeshStatsInfoOuterClass.PbNavMeshStatsInfo> values) {
@@ -679,7 +687,7 @@ public final class NavMeshStatsNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .PbNavMeshStatsInfo infos = 4;</code>
+       * <code>repeated .PbNavMeshStatsInfo infos = 3;</code>
        */
       public Builder clearInfos() {
         if (infosBuilder_ == null) {
@@ -692,7 +700,7 @@ public final class NavMeshStatsNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .PbNavMeshStatsInfo infos = 4;</code>
+       * <code>repeated .PbNavMeshStatsInfo infos = 3;</code>
        */
       public Builder removeInfos(int index) {
         if (infosBuilder_ == null) {
@@ -705,14 +713,14 @@ public final class NavMeshStatsNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .PbNavMeshStatsInfo infos = 4;</code>
+       * <code>repeated .PbNavMeshStatsInfo infos = 3;</code>
        */
       public emu.grasscutter.net.proto.PbNavMeshStatsInfoOuterClass.PbNavMeshStatsInfo.Builder getInfosBuilder(
           int index) {
         return getInfosFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .PbNavMeshStatsInfo infos = 4;</code>
+       * <code>repeated .PbNavMeshStatsInfo infos = 3;</code>
        */
       public emu.grasscutter.net.proto.PbNavMeshStatsInfoOuterClass.PbNavMeshStatsInfoOrBuilder getInfosOrBuilder(
           int index) {
@@ -722,7 +730,7 @@ public final class NavMeshStatsNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .PbNavMeshStatsInfo infos = 4;</code>
+       * <code>repeated .PbNavMeshStatsInfo infos = 3;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.PbNavMeshStatsInfoOuterClass.PbNavMeshStatsInfoOrBuilder> 
            getInfosOrBuilderList() {
@@ -733,14 +741,14 @@ public final class NavMeshStatsNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .PbNavMeshStatsInfo infos = 4;</code>
+       * <code>repeated .PbNavMeshStatsInfo infos = 3;</code>
        */
       public emu.grasscutter.net.proto.PbNavMeshStatsInfoOuterClass.PbNavMeshStatsInfo.Builder addInfosBuilder() {
         return getInfosFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.PbNavMeshStatsInfoOuterClass.PbNavMeshStatsInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .PbNavMeshStatsInfo infos = 4;</code>
+       * <code>repeated .PbNavMeshStatsInfo infos = 3;</code>
        */
       public emu.grasscutter.net.proto.PbNavMeshStatsInfoOuterClass.PbNavMeshStatsInfo.Builder addInfosBuilder(
           int index) {
@@ -748,7 +756,7 @@ public final class NavMeshStatsNotifyOuterClass {
             index, emu.grasscutter.net.proto.PbNavMeshStatsInfoOuterClass.PbNavMeshStatsInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .PbNavMeshStatsInfo infos = 4;</code>
+       * <code>repeated .PbNavMeshStatsInfo infos = 3;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.PbNavMeshStatsInfoOuterClass.PbNavMeshStatsInfo.Builder> 
            getInfosBuilderList() {
@@ -837,7 +845,7 @@ public final class NavMeshStatsNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n\030NavMeshStatsNotify.proto\032\030PbNavMeshSta" +
       "tsInfo.proto\"8\n\022NavMeshStatsNotify\022\"\n\005in" +
-      "fos\030\004 \003(\0132\023.PbNavMeshStatsInfoB\033\n\031emu.gr" +
+      "fos\030\003 \003(\0132\023.PbNavMeshStatsInfoB\033\n\031emu.gr" +
       "asscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

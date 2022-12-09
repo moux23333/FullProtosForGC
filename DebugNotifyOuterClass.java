@@ -49,10 +49,14 @@ public final class DebugNotifyOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 101
-   * TargetService: 101
-   * EnetChannelId: 2
-   * EnetIsReliable: true
+   * enum Enum {
+   *   option allow_alias = true;
+   *   ZREO = 0;
+   *   CMD_ID = 101;
+   *   TARGET_SERVICE = 101;
+   *   ENET_CHANNEL_ID = 2;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code DebugNotify}
@@ -156,24 +160,24 @@ public final class DebugNotifyOuterClass {
     public enum Retcode
         implements com.google.protobuf.ProtocolMessageEnum {
       /**
-       * <code>RETCODE_SUCC = 0;</code>
+       * <code>SUCC = 0;</code>
        */
-      RETCODE_SUCC(0),
+      SUCC(0),
       /**
-       * <code>RETCODE_FAIL = 1;</code>
+       * <code>FAIL = 1;</code>
        */
-      RETCODE_FAIL(1),
+      FAIL(1),
       UNRECOGNIZED(-1),
       ;
 
       /**
-       * <code>RETCODE_SUCC = 0;</code>
+       * <code>SUCC = 0;</code>
        */
-      public static final int RETCODE_SUCC_VALUE = 0;
+      public static final int SUCC_VALUE = 0;
       /**
-       * <code>RETCODE_FAIL = 1;</code>
+       * <code>FAIL = 1;</code>
        */
-      public static final int RETCODE_FAIL_VALUE = 1;
+      public static final int FAIL_VALUE = 1;
 
 
       public final int getNumber() {
@@ -200,8 +204,8 @@ public final class DebugNotifyOuterClass {
        */
       public static Retcode forNumber(int value) {
         switch (value) {
-          case 0: return RETCODE_SUCC;
-          case 1: return RETCODE_FAIL;
+          case 0: return SUCC;
+          case 1: return FAIL;
           default: return null;
         }
       }
@@ -346,7 +350,7 @@ public final class DebugNotifyOuterClass {
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(name_)) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 2, name_);
       }
-      if (retcode_ != emu.grasscutter.net.proto.DebugNotifyOuterClass.DebugNotify.Retcode.RETCODE_SUCC.getNumber()) {
+      if (retcode_ != emu.grasscutter.net.proto.DebugNotifyOuterClass.DebugNotify.Retcode.SUCC.getNumber()) {
         output.writeEnum(3, retcode_);
       }
       unknownFields.writeTo(output);
@@ -365,7 +369,7 @@ public final class DebugNotifyOuterClass {
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(name_)) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, name_);
       }
-      if (retcode_ != emu.grasscutter.net.proto.DebugNotifyOuterClass.DebugNotify.Retcode.RETCODE_SUCC.getNumber()) {
+      if (retcode_ != emu.grasscutter.net.proto.DebugNotifyOuterClass.DebugNotify.Retcode.SUCC.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
           .computeEnumSize(3, retcode_);
       }
@@ -503,10 +507,14 @@ public final class DebugNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 101
-     * TargetService: 101
-     * EnetChannelId: 2
-     * EnetIsReliable: true
+     * enum Enum {
+     *   option allow_alias = true;
+     *   ZREO = 0;
+     *   CMD_ID = 101;
+     *   TARGET_SERVICE = 101;
+     *   ENET_CHANNEL_ID = 2;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code DebugNotify}
@@ -895,11 +903,11 @@ public final class DebugNotifyOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\021DebugNotify.proto\"}\n\013DebugNotify\022\n\n\002id" +
+      "\n\021DebugNotify.proto\"m\n\013DebugNotify\022\n\n\002id" +
       "\030\001 \001(\r\022\014\n\004name\030\002 \001(\t\022%\n\007retcode\030\003 \001(\0162\024." +
-      "DebugNotify.Retcode\"-\n\007Retcode\022\020\n\014RETCOD" +
-      "E_SUCC\020\000\022\020\n\014RETCODE_FAIL\020\001B\033\n\031emu.grassc" +
-      "utter.net.protob\006proto3"
+      "DebugNotify.Retcode\"\035\n\007Retcode\022\010\n\004SUCC\020\000" +
+      "\022\010\n\004FAIL\020\001B\033\n\031emu.grasscutter.net.protob" +
+      "\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

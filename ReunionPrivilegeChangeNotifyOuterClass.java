@@ -19,25 +19,29 @@ public final class ReunionPrivilegeChangeNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.ReunionPrivilegeInfo privilege_info = 13;</code>
+     * <code>.ReunionPrivilegeInfo privilege_info = 10;</code>
      * @return Whether the privilegeInfo field is set.
      */
     boolean hasPrivilegeInfo();
     /**
-     * <code>.ReunionPrivilegeInfo privilege_info = 13;</code>
+     * <code>.ReunionPrivilegeInfo privilege_info = 10;</code>
      * @return The privilegeInfo.
      */
     emu.grasscutter.net.proto.ReunionPrivilegeInfoOuterClass.ReunionPrivilegeInfo getPrivilegeInfo();
     /**
-     * <code>.ReunionPrivilegeInfo privilege_info = 13;</code>
+     * <code>.ReunionPrivilegeInfo privilege_info = 10;</code>
      */
     emu.grasscutter.net.proto.ReunionPrivilegeInfoOuterClass.ReunionPrivilegeInfoOrBuilder getPrivilegeInfoOrBuilder();
   }
   /**
    * <pre>
-   * CmdId: 5098
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 5087;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code ReunionPrivilegeChangeNotify}
@@ -84,7 +88,7 @@ public final class ReunionPrivilegeChangeNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 106: {
+            case 82: {
               emu.grasscutter.net.proto.ReunionPrivilegeInfoOuterClass.ReunionPrivilegeInfo.Builder subBuilder = null;
               if (privilegeInfo_ != null) {
                 subBuilder = privilegeInfo_.toBuilder();
@@ -129,10 +133,10 @@ public final class ReunionPrivilegeChangeNotifyOuterClass {
               emu.grasscutter.net.proto.ReunionPrivilegeChangeNotifyOuterClass.ReunionPrivilegeChangeNotify.class, emu.grasscutter.net.proto.ReunionPrivilegeChangeNotifyOuterClass.ReunionPrivilegeChangeNotify.Builder.class);
     }
 
-    public static final int PRIVILEGE_INFO_FIELD_NUMBER = 13;
+    public static final int PRIVILEGE_INFO_FIELD_NUMBER = 10;
     private emu.grasscutter.net.proto.ReunionPrivilegeInfoOuterClass.ReunionPrivilegeInfo privilegeInfo_;
     /**
-     * <code>.ReunionPrivilegeInfo privilege_info = 13;</code>
+     * <code>.ReunionPrivilegeInfo privilege_info = 10;</code>
      * @return Whether the privilegeInfo field is set.
      */
     @java.lang.Override
@@ -140,7 +144,7 @@ public final class ReunionPrivilegeChangeNotifyOuterClass {
       return privilegeInfo_ != null;
     }
     /**
-     * <code>.ReunionPrivilegeInfo privilege_info = 13;</code>
+     * <code>.ReunionPrivilegeInfo privilege_info = 10;</code>
      * @return The privilegeInfo.
      */
     @java.lang.Override
@@ -148,7 +152,7 @@ public final class ReunionPrivilegeChangeNotifyOuterClass {
       return privilegeInfo_ == null ? emu.grasscutter.net.proto.ReunionPrivilegeInfoOuterClass.ReunionPrivilegeInfo.getDefaultInstance() : privilegeInfo_;
     }
     /**
-     * <code>.ReunionPrivilegeInfo privilege_info = 13;</code>
+     * <code>.ReunionPrivilegeInfo privilege_info = 10;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.ReunionPrivilegeInfoOuterClass.ReunionPrivilegeInfoOrBuilder getPrivilegeInfoOrBuilder() {
@@ -170,7 +174,7 @@ public final class ReunionPrivilegeChangeNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (privilegeInfo_ != null) {
-        output.writeMessage(13, getPrivilegeInfo());
+        output.writeMessage(10, getPrivilegeInfo());
       }
       unknownFields.writeTo(output);
     }
@@ -183,7 +187,7 @@ public final class ReunionPrivilegeChangeNotifyOuterClass {
       size = 0;
       if (privilegeInfo_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(13, getPrivilegeInfo());
+          .computeMessageSize(10, getPrivilegeInfo());
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -317,9 +321,13 @@ public final class ReunionPrivilegeChangeNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 5098
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 5087;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code ReunionPrivilegeChangeNotify}
@@ -480,14 +488,14 @@ public final class ReunionPrivilegeChangeNotifyOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.ReunionPrivilegeInfoOuterClass.ReunionPrivilegeInfo, emu.grasscutter.net.proto.ReunionPrivilegeInfoOuterClass.ReunionPrivilegeInfo.Builder, emu.grasscutter.net.proto.ReunionPrivilegeInfoOuterClass.ReunionPrivilegeInfoOrBuilder> privilegeInfoBuilder_;
       /**
-       * <code>.ReunionPrivilegeInfo privilege_info = 13;</code>
+       * <code>.ReunionPrivilegeInfo privilege_info = 10;</code>
        * @return Whether the privilegeInfo field is set.
        */
       public boolean hasPrivilegeInfo() {
         return privilegeInfoBuilder_ != null || privilegeInfo_ != null;
       }
       /**
-       * <code>.ReunionPrivilegeInfo privilege_info = 13;</code>
+       * <code>.ReunionPrivilegeInfo privilege_info = 10;</code>
        * @return The privilegeInfo.
        */
       public emu.grasscutter.net.proto.ReunionPrivilegeInfoOuterClass.ReunionPrivilegeInfo getPrivilegeInfo() {
@@ -498,7 +506,7 @@ public final class ReunionPrivilegeChangeNotifyOuterClass {
         }
       }
       /**
-       * <code>.ReunionPrivilegeInfo privilege_info = 13;</code>
+       * <code>.ReunionPrivilegeInfo privilege_info = 10;</code>
        */
       public Builder setPrivilegeInfo(emu.grasscutter.net.proto.ReunionPrivilegeInfoOuterClass.ReunionPrivilegeInfo value) {
         if (privilegeInfoBuilder_ == null) {
@@ -514,7 +522,7 @@ public final class ReunionPrivilegeChangeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.ReunionPrivilegeInfo privilege_info = 13;</code>
+       * <code>.ReunionPrivilegeInfo privilege_info = 10;</code>
        */
       public Builder setPrivilegeInfo(
           emu.grasscutter.net.proto.ReunionPrivilegeInfoOuterClass.ReunionPrivilegeInfo.Builder builderForValue) {
@@ -528,7 +536,7 @@ public final class ReunionPrivilegeChangeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.ReunionPrivilegeInfo privilege_info = 13;</code>
+       * <code>.ReunionPrivilegeInfo privilege_info = 10;</code>
        */
       public Builder mergePrivilegeInfo(emu.grasscutter.net.proto.ReunionPrivilegeInfoOuterClass.ReunionPrivilegeInfo value) {
         if (privilegeInfoBuilder_ == null) {
@@ -546,7 +554,7 @@ public final class ReunionPrivilegeChangeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.ReunionPrivilegeInfo privilege_info = 13;</code>
+       * <code>.ReunionPrivilegeInfo privilege_info = 10;</code>
        */
       public Builder clearPrivilegeInfo() {
         if (privilegeInfoBuilder_ == null) {
@@ -560,7 +568,7 @@ public final class ReunionPrivilegeChangeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.ReunionPrivilegeInfo privilege_info = 13;</code>
+       * <code>.ReunionPrivilegeInfo privilege_info = 10;</code>
        */
       public emu.grasscutter.net.proto.ReunionPrivilegeInfoOuterClass.ReunionPrivilegeInfo.Builder getPrivilegeInfoBuilder() {
         
@@ -568,7 +576,7 @@ public final class ReunionPrivilegeChangeNotifyOuterClass {
         return getPrivilegeInfoFieldBuilder().getBuilder();
       }
       /**
-       * <code>.ReunionPrivilegeInfo privilege_info = 13;</code>
+       * <code>.ReunionPrivilegeInfo privilege_info = 10;</code>
        */
       public emu.grasscutter.net.proto.ReunionPrivilegeInfoOuterClass.ReunionPrivilegeInfoOrBuilder getPrivilegeInfoOrBuilder() {
         if (privilegeInfoBuilder_ != null) {
@@ -579,7 +587,7 @@ public final class ReunionPrivilegeChangeNotifyOuterClass {
         }
       }
       /**
-       * <code>.ReunionPrivilegeInfo privilege_info = 13;</code>
+       * <code>.ReunionPrivilegeInfo privilege_info = 10;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.ReunionPrivilegeInfoOuterClass.ReunionPrivilegeInfo, emu.grasscutter.net.proto.ReunionPrivilegeInfoOuterClass.ReunionPrivilegeInfo.Builder, emu.grasscutter.net.proto.ReunionPrivilegeInfoOuterClass.ReunionPrivilegeInfoOrBuilder> 
@@ -663,7 +671,7 @@ public final class ReunionPrivilegeChangeNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n\"ReunionPrivilegeChangeNotify.proto\032\032Re" +
       "unionPrivilegeInfo.proto\"M\n\034ReunionPrivi" +
-      "legeChangeNotify\022-\n\016privilege_info\030\r \001(\013" +
+      "legeChangeNotify\022-\n\016privilege_info\030\n \001(\013" +
       "2\025.ReunionPrivilegeInfoB\033\n\031emu.grasscutt" +
       "er.net.protob\006proto3"
     };

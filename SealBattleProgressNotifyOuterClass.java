@@ -19,40 +19,44 @@ public final class SealBattleProgressNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 seal_entity_id = 9;</code>
-     * @return The sealEntityId.
+     * <code>uint32 end_time = 5;</code>
+     * @return The endTime.
      */
-    int getSealEntityId();
+    int getEndTime();
 
     /**
-     * <code>uint32 max_progress = 10;</code>
-     * @return The maxProgress.
-     */
-    int getMaxProgress();
-
-    /**
-     * <code>uint32 seal_radius = 4;</code>
+     * <code>uint32 seal_radius = 1;</code>
      * @return The sealRadius.
      */
     int getSealRadius();
 
     /**
-     * <code>uint32 progress = 5;</code>
+     * <code>uint32 max_progress = 9;</code>
+     * @return The maxProgress.
+     */
+    int getMaxProgress();
+
+    /**
+     * <code>uint32 seal_entity_id = 6;</code>
+     * @return The sealEntityId.
+     */
+    int getSealEntityId();
+
+    /**
+     * <code>uint32 progress = 4;</code>
      * @return The progress.
      */
     int getProgress();
-
-    /**
-     * <code>uint32 end_time = 2;</code>
-     * @return The endTime.
-     */
-    int getEndTime();
   }
   /**
    * <pre>
-   * CmdId: 232
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 265;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code SealBattleProgressNotify}
@@ -99,27 +103,27 @@ public final class SealBattleProgressNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
-
-              endTime_ = input.readUInt32();
-              break;
-            }
-            case 32: {
+            case 8: {
 
               sealRadius_ = input.readUInt32();
               break;
             }
-            case 40: {
+            case 32: {
 
               progress_ = input.readUInt32();
               break;
             }
-            case 72: {
+            case 40: {
+
+              endTime_ = input.readUInt32();
+              break;
+            }
+            case 48: {
 
               sealEntityId_ = input.readUInt32();
               break;
             }
-            case 80: {
+            case 72: {
 
               maxProgress_ = input.readUInt32();
               break;
@@ -156,32 +160,21 @@ public final class SealBattleProgressNotifyOuterClass {
               emu.grasscutter.net.proto.SealBattleProgressNotifyOuterClass.SealBattleProgressNotify.class, emu.grasscutter.net.proto.SealBattleProgressNotifyOuterClass.SealBattleProgressNotify.Builder.class);
     }
 
-    public static final int SEAL_ENTITY_ID_FIELD_NUMBER = 9;
-    private int sealEntityId_;
+    public static final int END_TIME_FIELD_NUMBER = 5;
+    private int endTime_;
     /**
-     * <code>uint32 seal_entity_id = 9;</code>
-     * @return The sealEntityId.
+     * <code>uint32 end_time = 5;</code>
+     * @return The endTime.
      */
     @java.lang.Override
-    public int getSealEntityId() {
-      return sealEntityId_;
+    public int getEndTime() {
+      return endTime_;
     }
 
-    public static final int MAX_PROGRESS_FIELD_NUMBER = 10;
-    private int maxProgress_;
-    /**
-     * <code>uint32 max_progress = 10;</code>
-     * @return The maxProgress.
-     */
-    @java.lang.Override
-    public int getMaxProgress() {
-      return maxProgress_;
-    }
-
-    public static final int SEAL_RADIUS_FIELD_NUMBER = 4;
+    public static final int SEAL_RADIUS_FIELD_NUMBER = 1;
     private int sealRadius_;
     /**
-     * <code>uint32 seal_radius = 4;</code>
+     * <code>uint32 seal_radius = 1;</code>
      * @return The sealRadius.
      */
     @java.lang.Override
@@ -189,26 +182,37 @@ public final class SealBattleProgressNotifyOuterClass {
       return sealRadius_;
     }
 
-    public static final int PROGRESS_FIELD_NUMBER = 5;
+    public static final int MAX_PROGRESS_FIELD_NUMBER = 9;
+    private int maxProgress_;
+    /**
+     * <code>uint32 max_progress = 9;</code>
+     * @return The maxProgress.
+     */
+    @java.lang.Override
+    public int getMaxProgress() {
+      return maxProgress_;
+    }
+
+    public static final int SEAL_ENTITY_ID_FIELD_NUMBER = 6;
+    private int sealEntityId_;
+    /**
+     * <code>uint32 seal_entity_id = 6;</code>
+     * @return The sealEntityId.
+     */
+    @java.lang.Override
+    public int getSealEntityId() {
+      return sealEntityId_;
+    }
+
+    public static final int PROGRESS_FIELD_NUMBER = 4;
     private int progress_;
     /**
-     * <code>uint32 progress = 5;</code>
+     * <code>uint32 progress = 4;</code>
      * @return The progress.
      */
     @java.lang.Override
     public int getProgress() {
       return progress_;
-    }
-
-    public static final int END_TIME_FIELD_NUMBER = 2;
-    private int endTime_;
-    /**
-     * <code>uint32 end_time = 2;</code>
-     * @return The endTime.
-     */
-    @java.lang.Override
-    public int getEndTime() {
-      return endTime_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -225,20 +229,20 @@ public final class SealBattleProgressNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (endTime_ != 0) {
-        output.writeUInt32(2, endTime_);
-      }
       if (sealRadius_ != 0) {
-        output.writeUInt32(4, sealRadius_);
+        output.writeUInt32(1, sealRadius_);
       }
       if (progress_ != 0) {
-        output.writeUInt32(5, progress_);
+        output.writeUInt32(4, progress_);
+      }
+      if (endTime_ != 0) {
+        output.writeUInt32(5, endTime_);
       }
       if (sealEntityId_ != 0) {
-        output.writeUInt32(9, sealEntityId_);
+        output.writeUInt32(6, sealEntityId_);
       }
       if (maxProgress_ != 0) {
-        output.writeUInt32(10, maxProgress_);
+        output.writeUInt32(9, maxProgress_);
       }
       unknownFields.writeTo(output);
     }
@@ -249,25 +253,25 @@ public final class SealBattleProgressNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (endTime_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, endTime_);
-      }
       if (sealRadius_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, sealRadius_);
+          .computeUInt32Size(1, sealRadius_);
       }
       if (progress_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, progress_);
+          .computeUInt32Size(4, progress_);
+      }
+      if (endTime_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(5, endTime_);
       }
       if (sealEntityId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, sealEntityId_);
+          .computeUInt32Size(6, sealEntityId_);
       }
       if (maxProgress_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, maxProgress_);
+          .computeUInt32Size(9, maxProgress_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -284,16 +288,16 @@ public final class SealBattleProgressNotifyOuterClass {
       }
       emu.grasscutter.net.proto.SealBattleProgressNotifyOuterClass.SealBattleProgressNotify other = (emu.grasscutter.net.proto.SealBattleProgressNotifyOuterClass.SealBattleProgressNotify) obj;
 
-      if (getSealEntityId()
-          != other.getSealEntityId()) return false;
-      if (getMaxProgress()
-          != other.getMaxProgress()) return false;
-      if (getSealRadius()
-          != other.getSealRadius()) return false;
-      if (getProgress()
-          != other.getProgress()) return false;
       if (getEndTime()
           != other.getEndTime()) return false;
+      if (getSealRadius()
+          != other.getSealRadius()) return false;
+      if (getMaxProgress()
+          != other.getMaxProgress()) return false;
+      if (getSealEntityId()
+          != other.getSealEntityId()) return false;
+      if (getProgress()
+          != other.getProgress()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -305,16 +309,16 @@ public final class SealBattleProgressNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + SEAL_ENTITY_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getSealEntityId();
-      hash = (37 * hash) + MAX_PROGRESS_FIELD_NUMBER;
-      hash = (53 * hash) + getMaxProgress();
-      hash = (37 * hash) + SEAL_RADIUS_FIELD_NUMBER;
-      hash = (53 * hash) + getSealRadius();
-      hash = (37 * hash) + PROGRESS_FIELD_NUMBER;
-      hash = (53 * hash) + getProgress();
       hash = (37 * hash) + END_TIME_FIELD_NUMBER;
       hash = (53 * hash) + getEndTime();
+      hash = (37 * hash) + SEAL_RADIUS_FIELD_NUMBER;
+      hash = (53 * hash) + getSealRadius();
+      hash = (37 * hash) + MAX_PROGRESS_FIELD_NUMBER;
+      hash = (53 * hash) + getMaxProgress();
+      hash = (37 * hash) + SEAL_ENTITY_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getSealEntityId();
+      hash = (37 * hash) + PROGRESS_FIELD_NUMBER;
+      hash = (53 * hash) + getProgress();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -412,9 +416,13 @@ public final class SealBattleProgressNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 232
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 265;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code SealBattleProgressNotify}
@@ -454,15 +462,15 @@ public final class SealBattleProgressNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        sealEntityId_ = 0;
-
-        maxProgress_ = 0;
+        endTime_ = 0;
 
         sealRadius_ = 0;
 
-        progress_ = 0;
+        maxProgress_ = 0;
 
-        endTime_ = 0;
+        sealEntityId_ = 0;
+
+        progress_ = 0;
 
         return this;
       }
@@ -490,11 +498,11 @@ public final class SealBattleProgressNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.SealBattleProgressNotifyOuterClass.SealBattleProgressNotify buildPartial() {
         emu.grasscutter.net.proto.SealBattleProgressNotifyOuterClass.SealBattleProgressNotify result = new emu.grasscutter.net.proto.SealBattleProgressNotifyOuterClass.SealBattleProgressNotify(this);
-        result.sealEntityId_ = sealEntityId_;
-        result.maxProgress_ = maxProgress_;
-        result.sealRadius_ = sealRadius_;
-        result.progress_ = progress_;
         result.endTime_ = endTime_;
+        result.sealRadius_ = sealRadius_;
+        result.maxProgress_ = maxProgress_;
+        result.sealEntityId_ = sealEntityId_;
+        result.progress_ = progress_;
         onBuilt();
         return result;
       }
@@ -543,20 +551,20 @@ public final class SealBattleProgressNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.SealBattleProgressNotifyOuterClass.SealBattleProgressNotify other) {
         if (other == emu.grasscutter.net.proto.SealBattleProgressNotifyOuterClass.SealBattleProgressNotify.getDefaultInstance()) return this;
-        if (other.getSealEntityId() != 0) {
-          setSealEntityId(other.getSealEntityId());
-        }
-        if (other.getMaxProgress() != 0) {
-          setMaxProgress(other.getMaxProgress());
+        if (other.getEndTime() != 0) {
+          setEndTime(other.getEndTime());
         }
         if (other.getSealRadius() != 0) {
           setSealRadius(other.getSealRadius());
         }
+        if (other.getMaxProgress() != 0) {
+          setMaxProgress(other.getMaxProgress());
+        }
+        if (other.getSealEntityId() != 0) {
+          setSealEntityId(other.getSealEntityId());
+        }
         if (other.getProgress() != 0) {
           setProgress(other.getProgress());
-        }
-        if (other.getEndTime() != 0) {
-          setEndTime(other.getEndTime());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -587,133 +595,9 @@ public final class SealBattleProgressNotifyOuterClass {
         return this;
       }
 
-      private int sealEntityId_ ;
-      /**
-       * <code>uint32 seal_entity_id = 9;</code>
-       * @return The sealEntityId.
-       */
-      @java.lang.Override
-      public int getSealEntityId() {
-        return sealEntityId_;
-      }
-      /**
-       * <code>uint32 seal_entity_id = 9;</code>
-       * @param value The sealEntityId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setSealEntityId(int value) {
-        
-        sealEntityId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 seal_entity_id = 9;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearSealEntityId() {
-        
-        sealEntityId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int maxProgress_ ;
-      /**
-       * <code>uint32 max_progress = 10;</code>
-       * @return The maxProgress.
-       */
-      @java.lang.Override
-      public int getMaxProgress() {
-        return maxProgress_;
-      }
-      /**
-       * <code>uint32 max_progress = 10;</code>
-       * @param value The maxProgress to set.
-       * @return This builder for chaining.
-       */
-      public Builder setMaxProgress(int value) {
-        
-        maxProgress_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 max_progress = 10;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearMaxProgress() {
-        
-        maxProgress_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int sealRadius_ ;
-      /**
-       * <code>uint32 seal_radius = 4;</code>
-       * @return The sealRadius.
-       */
-      @java.lang.Override
-      public int getSealRadius() {
-        return sealRadius_;
-      }
-      /**
-       * <code>uint32 seal_radius = 4;</code>
-       * @param value The sealRadius to set.
-       * @return This builder for chaining.
-       */
-      public Builder setSealRadius(int value) {
-        
-        sealRadius_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 seal_radius = 4;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearSealRadius() {
-        
-        sealRadius_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int progress_ ;
-      /**
-       * <code>uint32 progress = 5;</code>
-       * @return The progress.
-       */
-      @java.lang.Override
-      public int getProgress() {
-        return progress_;
-      }
-      /**
-       * <code>uint32 progress = 5;</code>
-       * @param value The progress to set.
-       * @return This builder for chaining.
-       */
-      public Builder setProgress(int value) {
-        
-        progress_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 progress = 5;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearProgress() {
-        
-        progress_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int endTime_ ;
       /**
-       * <code>uint32 end_time = 2;</code>
+       * <code>uint32 end_time = 5;</code>
        * @return The endTime.
        */
       @java.lang.Override
@@ -721,7 +605,7 @@ public final class SealBattleProgressNotifyOuterClass {
         return endTime_;
       }
       /**
-       * <code>uint32 end_time = 2;</code>
+       * <code>uint32 end_time = 5;</code>
        * @param value The endTime to set.
        * @return This builder for chaining.
        */
@@ -732,12 +616,136 @@ public final class SealBattleProgressNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 end_time = 2;</code>
+       * <code>uint32 end_time = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearEndTime() {
         
         endTime_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int sealRadius_ ;
+      /**
+       * <code>uint32 seal_radius = 1;</code>
+       * @return The sealRadius.
+       */
+      @java.lang.Override
+      public int getSealRadius() {
+        return sealRadius_;
+      }
+      /**
+       * <code>uint32 seal_radius = 1;</code>
+       * @param value The sealRadius to set.
+       * @return This builder for chaining.
+       */
+      public Builder setSealRadius(int value) {
+        
+        sealRadius_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 seal_radius = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearSealRadius() {
+        
+        sealRadius_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int maxProgress_ ;
+      /**
+       * <code>uint32 max_progress = 9;</code>
+       * @return The maxProgress.
+       */
+      @java.lang.Override
+      public int getMaxProgress() {
+        return maxProgress_;
+      }
+      /**
+       * <code>uint32 max_progress = 9;</code>
+       * @param value The maxProgress to set.
+       * @return This builder for chaining.
+       */
+      public Builder setMaxProgress(int value) {
+        
+        maxProgress_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 max_progress = 9;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearMaxProgress() {
+        
+        maxProgress_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int sealEntityId_ ;
+      /**
+       * <code>uint32 seal_entity_id = 6;</code>
+       * @return The sealEntityId.
+       */
+      @java.lang.Override
+      public int getSealEntityId() {
+        return sealEntityId_;
+      }
+      /**
+       * <code>uint32 seal_entity_id = 6;</code>
+       * @param value The sealEntityId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setSealEntityId(int value) {
+        
+        sealEntityId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 seal_entity_id = 6;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearSealEntityId() {
+        
+        sealEntityId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int progress_ ;
+      /**
+       * <code>uint32 progress = 4;</code>
+       * @return The progress.
+       */
+      @java.lang.Override
+      public int getProgress() {
+        return progress_;
+      }
+      /**
+       * <code>uint32 progress = 4;</code>
+       * @param value The progress to set.
+       * @return This builder for chaining.
+       */
+      public Builder setProgress(int value) {
+        
+        progress_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 progress = 4;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearProgress() {
+        
+        progress_ = 0;
         onChanged();
         return this;
       }
@@ -809,9 +817,9 @@ public final class SealBattleProgressNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\036SealBattleProgressNotify.proto\"\201\001\n\030Sea" +
-      "lBattleProgressNotify\022\026\n\016seal_entity_id\030" +
-      "\t \001(\r\022\024\n\014max_progress\030\n \001(\r\022\023\n\013seal_radi" +
-      "us\030\004 \001(\r\022\020\n\010progress\030\005 \001(\r\022\020\n\010end_time\030\002" +
+      "lBattleProgressNotify\022\020\n\010end_time\030\005 \001(\r\022" +
+      "\023\n\013seal_radius\030\001 \001(\r\022\024\n\014max_progress\030\t \001" +
+      "(\r\022\026\n\016seal_entity_id\030\006 \001(\r\022\020\n\010progress\030\004" +
       " \001(\rB\033\n\031emu.grasscutter.net.protob\006proto" +
       "3"
     };
@@ -824,7 +832,7 @@ public final class SealBattleProgressNotifyOuterClass {
     internal_static_SealBattleProgressNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SealBattleProgressNotify_descriptor,
-        new java.lang.String[] { "SealEntityId", "MaxProgress", "SealRadius", "Progress", "EndTime", });
+        new java.lang.String[] { "EndTime", "SealRadius", "MaxProgress", "SealEntityId", "Progress", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

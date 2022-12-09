@@ -19,16 +19,20 @@ public final class MiracleRingDestroyNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 entity_id = 7;</code>
+     * <code>uint32 entity_id = 8;</code>
      * @return The entityId.
      */
     int getEntityId();
   }
   /**
    * <pre>
-   * CmdId: 5244
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 5212;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code MiracleRingDestroyNotify}
@@ -75,7 +79,7 @@ public final class MiracleRingDestroyNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 56: {
+            case 64: {
 
               entityId_ = input.readUInt32();
               break;
@@ -112,10 +116,10 @@ public final class MiracleRingDestroyNotifyOuterClass {
               emu.grasscutter.net.proto.MiracleRingDestroyNotifyOuterClass.MiracleRingDestroyNotify.class, emu.grasscutter.net.proto.MiracleRingDestroyNotifyOuterClass.MiracleRingDestroyNotify.Builder.class);
     }
 
-    public static final int ENTITY_ID_FIELD_NUMBER = 7;
+    public static final int ENTITY_ID_FIELD_NUMBER = 8;
     private int entityId_;
     /**
-     * <code>uint32 entity_id = 7;</code>
+     * <code>uint32 entity_id = 8;</code>
      * @return The entityId.
      */
     @java.lang.Override
@@ -138,7 +142,7 @@ public final class MiracleRingDestroyNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (entityId_ != 0) {
-        output.writeUInt32(7, entityId_);
+        output.writeUInt32(8, entityId_);
       }
       unknownFields.writeTo(output);
     }
@@ -151,7 +155,7 @@ public final class MiracleRingDestroyNotifyOuterClass {
       size = 0;
       if (entityId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, entityId_);
+          .computeUInt32Size(8, entityId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -280,9 +284,13 @@ public final class MiracleRingDestroyNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 5244
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 5212;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code MiracleRingDestroyNotify}
@@ -433,7 +441,7 @@ public final class MiracleRingDestroyNotifyOuterClass {
 
       private int entityId_ ;
       /**
-       * <code>uint32 entity_id = 7;</code>
+       * <code>uint32 entity_id = 8;</code>
        * @return The entityId.
        */
       @java.lang.Override
@@ -441,7 +449,7 @@ public final class MiracleRingDestroyNotifyOuterClass {
         return entityId_;
       }
       /**
-       * <code>uint32 entity_id = 7;</code>
+       * <code>uint32 entity_id = 8;</code>
        * @param value The entityId to set.
        * @return This builder for chaining.
        */
@@ -452,7 +460,7 @@ public final class MiracleRingDestroyNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 entity_id = 7;</code>
+       * <code>uint32 entity_id = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearEntityId() {
@@ -529,7 +537,7 @@ public final class MiracleRingDestroyNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\036MiracleRingDestroyNotify.proto\"-\n\030Mira" +
-      "cleRingDestroyNotify\022\021\n\tentity_id\030\007 \001(\rB" +
+      "cleRingDestroyNotify\022\021\n\tentity_id\030\010 \001(\rB" +
       "\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

@@ -19,17 +19,21 @@ public final class HomeChangeModuleReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 target_module_id = 5;</code>
+     * <code>uint32 target_module_id = 6;</code>
      * @return The targetModuleId.
      */
     int getTargetModuleId();
   }
   /**
    * <pre>
-   * CmdId: 4809
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 4559;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code HomeChangeModuleReq}
@@ -76,7 +80,7 @@ public final class HomeChangeModuleReqOuterClass {
             case 0:
               done = true;
               break;
-            case 40: {
+            case 48: {
 
               targetModuleId_ = input.readUInt32();
               break;
@@ -113,10 +117,10 @@ public final class HomeChangeModuleReqOuterClass {
               emu.grasscutter.net.proto.HomeChangeModuleReqOuterClass.HomeChangeModuleReq.class, emu.grasscutter.net.proto.HomeChangeModuleReqOuterClass.HomeChangeModuleReq.Builder.class);
     }
 
-    public static final int TARGET_MODULE_ID_FIELD_NUMBER = 5;
+    public static final int TARGET_MODULE_ID_FIELD_NUMBER = 6;
     private int targetModuleId_;
     /**
-     * <code>uint32 target_module_id = 5;</code>
+     * <code>uint32 target_module_id = 6;</code>
      * @return The targetModuleId.
      */
     @java.lang.Override
@@ -139,7 +143,7 @@ public final class HomeChangeModuleReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (targetModuleId_ != 0) {
-        output.writeUInt32(5, targetModuleId_);
+        output.writeUInt32(6, targetModuleId_);
       }
       unknownFields.writeTo(output);
     }
@@ -152,7 +156,7 @@ public final class HomeChangeModuleReqOuterClass {
       size = 0;
       if (targetModuleId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, targetModuleId_);
+          .computeUInt32Size(6, targetModuleId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -281,10 +285,14 @@ public final class HomeChangeModuleReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 4809
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 4559;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code HomeChangeModuleReq}
@@ -435,7 +443,7 @@ public final class HomeChangeModuleReqOuterClass {
 
       private int targetModuleId_ ;
       /**
-       * <code>uint32 target_module_id = 5;</code>
+       * <code>uint32 target_module_id = 6;</code>
        * @return The targetModuleId.
        */
       @java.lang.Override
@@ -443,7 +451,7 @@ public final class HomeChangeModuleReqOuterClass {
         return targetModuleId_;
       }
       /**
-       * <code>uint32 target_module_id = 5;</code>
+       * <code>uint32 target_module_id = 6;</code>
        * @param value The targetModuleId to set.
        * @return This builder for chaining.
        */
@@ -454,7 +462,7 @@ public final class HomeChangeModuleReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 target_module_id = 5;</code>
+       * <code>uint32 target_module_id = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearTargetModuleId() {
@@ -531,7 +539,7 @@ public final class HomeChangeModuleReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\031HomeChangeModuleReq.proto\"/\n\023HomeChang" +
-      "eModuleReq\022\030\n\020target_module_id\030\005 \001(\rB\033\n\031" +
+      "eModuleReq\022\030\n\020target_module_id\030\006 \001(\rB\033\n\031" +
       "emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

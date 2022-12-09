@@ -19,16 +19,20 @@ public final class ClientHashDebugNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 job_id = 12;</code>
+     * <code>uint32 job_id = 15;</code>
      * @return The jobId.
      */
     int getJobId();
   }
   /**
    * <pre>
-   * CmdId: 3086
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 3287;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code ClientHashDebugNotify}
@@ -75,7 +79,7 @@ public final class ClientHashDebugNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 96: {
+            case 120: {
 
               jobId_ = input.readUInt32();
               break;
@@ -112,10 +116,10 @@ public final class ClientHashDebugNotifyOuterClass {
               emu.grasscutter.net.proto.ClientHashDebugNotifyOuterClass.ClientHashDebugNotify.class, emu.grasscutter.net.proto.ClientHashDebugNotifyOuterClass.ClientHashDebugNotify.Builder.class);
     }
 
-    public static final int JOB_ID_FIELD_NUMBER = 12;
+    public static final int JOB_ID_FIELD_NUMBER = 15;
     private int jobId_;
     /**
-     * <code>uint32 job_id = 12;</code>
+     * <code>uint32 job_id = 15;</code>
      * @return The jobId.
      */
     @java.lang.Override
@@ -138,7 +142,7 @@ public final class ClientHashDebugNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (jobId_ != 0) {
-        output.writeUInt32(12, jobId_);
+        output.writeUInt32(15, jobId_);
       }
       unknownFields.writeTo(output);
     }
@@ -151,7 +155,7 @@ public final class ClientHashDebugNotifyOuterClass {
       size = 0;
       if (jobId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, jobId_);
+          .computeUInt32Size(15, jobId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -280,9 +284,13 @@ public final class ClientHashDebugNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 3086
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 3287;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code ClientHashDebugNotify}
@@ -433,7 +441,7 @@ public final class ClientHashDebugNotifyOuterClass {
 
       private int jobId_ ;
       /**
-       * <code>uint32 job_id = 12;</code>
+       * <code>uint32 job_id = 15;</code>
        * @return The jobId.
        */
       @java.lang.Override
@@ -441,7 +449,7 @@ public final class ClientHashDebugNotifyOuterClass {
         return jobId_;
       }
       /**
-       * <code>uint32 job_id = 12;</code>
+       * <code>uint32 job_id = 15;</code>
        * @param value The jobId to set.
        * @return This builder for chaining.
        */
@@ -452,7 +460,7 @@ public final class ClientHashDebugNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 job_id = 12;</code>
+       * <code>uint32 job_id = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearJobId() {
@@ -529,7 +537,7 @@ public final class ClientHashDebugNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\033ClientHashDebugNotify.proto\"\'\n\025ClientH" +
-      "ashDebugNotify\022\016\n\006job_id\030\014 \001(\rB\033\n\031emu.gr" +
+      "ashDebugNotify\022\016\n\006job_id\030\017 \001(\rB\033\n\031emu.gr" +
       "asscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

@@ -19,22 +19,26 @@ public final class PlayerInjectFixNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 id = 13;</code>
+     * <code>uint32 id = 11;</code>
      * @return The id.
      */
     int getId();
 
     /**
-     * <code>bytes inject_fix = 10;</code>
+     * <code>bytes inject_fix = 12;</code>
      * @return The injectFix.
      */
     com.google.protobuf.ByteString getInjectFix();
   }
   /**
    * <pre>
-   * CmdId: 132
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 165;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code PlayerInjectFixNotify}
@@ -82,14 +86,14 @@ public final class PlayerInjectFixNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 82: {
-
-              injectFix_ = input.readBytes();
-              break;
-            }
-            case 104: {
+            case 88: {
 
               id_ = input.readUInt32();
+              break;
+            }
+            case 98: {
+
+              injectFix_ = input.readBytes();
               break;
             }
             default: {
@@ -124,10 +128,10 @@ public final class PlayerInjectFixNotifyOuterClass {
               emu.grasscutter.net.proto.PlayerInjectFixNotifyOuterClass.PlayerInjectFixNotify.class, emu.grasscutter.net.proto.PlayerInjectFixNotifyOuterClass.PlayerInjectFixNotify.Builder.class);
     }
 
-    public static final int ID_FIELD_NUMBER = 13;
+    public static final int ID_FIELD_NUMBER = 11;
     private int id_;
     /**
-     * <code>uint32 id = 13;</code>
+     * <code>uint32 id = 11;</code>
      * @return The id.
      */
     @java.lang.Override
@@ -135,10 +139,10 @@ public final class PlayerInjectFixNotifyOuterClass {
       return id_;
     }
 
-    public static final int INJECT_FIX_FIELD_NUMBER = 10;
+    public static final int INJECT_FIX_FIELD_NUMBER = 12;
     private com.google.protobuf.ByteString injectFix_;
     /**
-     * <code>bytes inject_fix = 10;</code>
+     * <code>bytes inject_fix = 12;</code>
      * @return The injectFix.
      */
     @java.lang.Override
@@ -160,11 +164,11 @@ public final class PlayerInjectFixNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (!injectFix_.isEmpty()) {
-        output.writeBytes(10, injectFix_);
-      }
       if (id_ != 0) {
-        output.writeUInt32(13, id_);
+        output.writeUInt32(11, id_);
+      }
+      if (!injectFix_.isEmpty()) {
+        output.writeBytes(12, injectFix_);
       }
       unknownFields.writeTo(output);
     }
@@ -175,13 +179,13 @@ public final class PlayerInjectFixNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (!injectFix_.isEmpty()) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBytesSize(10, injectFix_);
-      }
       if (id_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, id_);
+          .computeUInt32Size(11, id_);
+      }
+      if (!injectFix_.isEmpty()) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBytesSize(12, injectFix_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -314,9 +318,13 @@ public final class PlayerInjectFixNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 132
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 165;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code PlayerInjectFixNotify}
@@ -473,7 +481,7 @@ public final class PlayerInjectFixNotifyOuterClass {
 
       private int id_ ;
       /**
-       * <code>uint32 id = 13;</code>
+       * <code>uint32 id = 11;</code>
        * @return The id.
        */
       @java.lang.Override
@@ -481,7 +489,7 @@ public final class PlayerInjectFixNotifyOuterClass {
         return id_;
       }
       /**
-       * <code>uint32 id = 13;</code>
+       * <code>uint32 id = 11;</code>
        * @param value The id to set.
        * @return This builder for chaining.
        */
@@ -492,7 +500,7 @@ public final class PlayerInjectFixNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 id = 13;</code>
+       * <code>uint32 id = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearId() {
@@ -504,7 +512,7 @@ public final class PlayerInjectFixNotifyOuterClass {
 
       private com.google.protobuf.ByteString injectFix_ = com.google.protobuf.ByteString.EMPTY;
       /**
-       * <code>bytes inject_fix = 10;</code>
+       * <code>bytes inject_fix = 12;</code>
        * @return The injectFix.
        */
       @java.lang.Override
@@ -512,7 +520,7 @@ public final class PlayerInjectFixNotifyOuterClass {
         return injectFix_;
       }
       /**
-       * <code>bytes inject_fix = 10;</code>
+       * <code>bytes inject_fix = 12;</code>
        * @param value The injectFix to set.
        * @return This builder for chaining.
        */
@@ -526,7 +534,7 @@ public final class PlayerInjectFixNotifyOuterClass {
         return this;
       }
       /**
-       * <code>bytes inject_fix = 10;</code>
+       * <code>bytes inject_fix = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearInjectFix() {
@@ -603,8 +611,8 @@ public final class PlayerInjectFixNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\033PlayerInjectFixNotify.proto\"7\n\025PlayerI" +
-      "njectFixNotify\022\n\n\002id\030\r \001(\r\022\022\n\ninject_fix" +
-      "\030\n \001(\014B\033\n\031emu.grasscutter.net.protob\006pro" +
+      "njectFixNotify\022\n\n\002id\030\013 \001(\r\022\022\n\ninject_fix" +
+      "\030\014 \001(\014B\033\n\031emu.grasscutter.net.protob\006pro" +
       "to3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

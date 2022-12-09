@@ -19,17 +19,21 @@ public final class DungeonCandidateTeamKickReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 player_uid = 9;</code>
+     * <code>uint32 player_uid = 7;</code>
      * @return The playerUid.
      */
     int getPlayerUid();
   }
   /**
    * <pre>
-   * CmdId: 943
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 975;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code DungeonCandidateTeamKickReq}
@@ -76,7 +80,7 @@ public final class DungeonCandidateTeamKickReqOuterClass {
             case 0:
               done = true;
               break;
-            case 72: {
+            case 56: {
 
               playerUid_ = input.readUInt32();
               break;
@@ -113,10 +117,10 @@ public final class DungeonCandidateTeamKickReqOuterClass {
               emu.grasscutter.net.proto.DungeonCandidateTeamKickReqOuterClass.DungeonCandidateTeamKickReq.class, emu.grasscutter.net.proto.DungeonCandidateTeamKickReqOuterClass.DungeonCandidateTeamKickReq.Builder.class);
     }
 
-    public static final int PLAYER_UID_FIELD_NUMBER = 9;
+    public static final int PLAYER_UID_FIELD_NUMBER = 7;
     private int playerUid_;
     /**
-     * <code>uint32 player_uid = 9;</code>
+     * <code>uint32 player_uid = 7;</code>
      * @return The playerUid.
      */
     @java.lang.Override
@@ -139,7 +143,7 @@ public final class DungeonCandidateTeamKickReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (playerUid_ != 0) {
-        output.writeUInt32(9, playerUid_);
+        output.writeUInt32(7, playerUid_);
       }
       unknownFields.writeTo(output);
     }
@@ -152,7 +156,7 @@ public final class DungeonCandidateTeamKickReqOuterClass {
       size = 0;
       if (playerUid_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, playerUid_);
+          .computeUInt32Size(7, playerUid_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -281,10 +285,14 @@ public final class DungeonCandidateTeamKickReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 943
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 975;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code DungeonCandidateTeamKickReq}
@@ -435,7 +443,7 @@ public final class DungeonCandidateTeamKickReqOuterClass {
 
       private int playerUid_ ;
       /**
-       * <code>uint32 player_uid = 9;</code>
+       * <code>uint32 player_uid = 7;</code>
        * @return The playerUid.
        */
       @java.lang.Override
@@ -443,7 +451,7 @@ public final class DungeonCandidateTeamKickReqOuterClass {
         return playerUid_;
       }
       /**
-       * <code>uint32 player_uid = 9;</code>
+       * <code>uint32 player_uid = 7;</code>
        * @param value The playerUid to set.
        * @return This builder for chaining.
        */
@@ -454,7 +462,7 @@ public final class DungeonCandidateTeamKickReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 player_uid = 9;</code>
+       * <code>uint32 player_uid = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearPlayerUid() {
@@ -532,7 +540,7 @@ public final class DungeonCandidateTeamKickReqOuterClass {
     java.lang.String[] descriptorData = {
       "\n!DungeonCandidateTeamKickReq.proto\"1\n\033D" +
       "ungeonCandidateTeamKickReq\022\022\n\nplayer_uid" +
-      "\030\t \001(\rB\033\n\031emu.grasscutter.net.protob\006pro" +
+      "\030\007 \001(\rB\033\n\031emu.grasscutter.net.protob\006pro" +
       "to3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

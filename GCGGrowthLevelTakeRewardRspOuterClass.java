@@ -19,22 +19,26 @@ public final class GCGGrowthLevelTakeRewardRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 level = 1;</code>
-     * @return The level.
-     */
-    int getLevel();
-
-    /**
-     * <code>int32 retcode = 13;</code>
+     * <code>int32 retcode = 4;</code>
      * @return The retcode.
      */
     int getRetcode();
+
+    /**
+     * <code>uint32 level = 11;</code>
+     * @return The level.
+     */
+    int getLevel();
   }
   /**
    * <pre>
-   * CmdId: 7670
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 7602;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code GCGGrowthLevelTakeRewardRsp}
@@ -81,14 +85,14 @@ public final class GCGGrowthLevelTakeRewardRspOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
-
-              level_ = input.readUInt32();
-              break;
-            }
-            case 104: {
+            case 32: {
 
               retcode_ = input.readInt32();
+              break;
+            }
+            case 88: {
+
+              level_ = input.readUInt32();
               break;
             }
             default: {
@@ -123,26 +127,26 @@ public final class GCGGrowthLevelTakeRewardRspOuterClass {
               emu.grasscutter.net.proto.GCGGrowthLevelTakeRewardRspOuterClass.GCGGrowthLevelTakeRewardRsp.class, emu.grasscutter.net.proto.GCGGrowthLevelTakeRewardRspOuterClass.GCGGrowthLevelTakeRewardRsp.Builder.class);
     }
 
-    public static final int LEVEL_FIELD_NUMBER = 1;
-    private int level_;
-    /**
-     * <code>uint32 level = 1;</code>
-     * @return The level.
-     */
-    @java.lang.Override
-    public int getLevel() {
-      return level_;
-    }
-
-    public static final int RETCODE_FIELD_NUMBER = 13;
+    public static final int RETCODE_FIELD_NUMBER = 4;
     private int retcode_;
     /**
-     * <code>int32 retcode = 13;</code>
+     * <code>int32 retcode = 4;</code>
      * @return The retcode.
      */
     @java.lang.Override
     public int getRetcode() {
       return retcode_;
+    }
+
+    public static final int LEVEL_FIELD_NUMBER = 11;
+    private int level_;
+    /**
+     * <code>uint32 level = 11;</code>
+     * @return The level.
+     */
+    @java.lang.Override
+    public int getLevel() {
+      return level_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -159,11 +163,11 @@ public final class GCGGrowthLevelTakeRewardRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (level_ != 0) {
-        output.writeUInt32(1, level_);
-      }
       if (retcode_ != 0) {
-        output.writeInt32(13, retcode_);
+        output.writeInt32(4, retcode_);
+      }
+      if (level_ != 0) {
+        output.writeUInt32(11, level_);
       }
       unknownFields.writeTo(output);
     }
@@ -174,13 +178,13 @@ public final class GCGGrowthLevelTakeRewardRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (level_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, level_);
-      }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(13, retcode_);
+          .computeInt32Size(4, retcode_);
+      }
+      if (level_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(11, level_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -197,10 +201,10 @@ public final class GCGGrowthLevelTakeRewardRspOuterClass {
       }
       emu.grasscutter.net.proto.GCGGrowthLevelTakeRewardRspOuterClass.GCGGrowthLevelTakeRewardRsp other = (emu.grasscutter.net.proto.GCGGrowthLevelTakeRewardRspOuterClass.GCGGrowthLevelTakeRewardRsp) obj;
 
-      if (getLevel()
-          != other.getLevel()) return false;
       if (getRetcode()
           != other.getRetcode()) return false;
+      if (getLevel()
+          != other.getLevel()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -212,10 +216,10 @@ public final class GCGGrowthLevelTakeRewardRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + LEVEL_FIELD_NUMBER;
-      hash = (53 * hash) + getLevel();
       hash = (37 * hash) + RETCODE_FIELD_NUMBER;
       hash = (53 * hash) + getRetcode();
+      hash = (37 * hash) + LEVEL_FIELD_NUMBER;
+      hash = (53 * hash) + getLevel();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -313,9 +317,13 @@ public final class GCGGrowthLevelTakeRewardRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 7670
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 7602;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code GCGGrowthLevelTakeRewardRsp}
@@ -355,9 +363,9 @@ public final class GCGGrowthLevelTakeRewardRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        level_ = 0;
-
         retcode_ = 0;
+
+        level_ = 0;
 
         return this;
       }
@@ -385,8 +393,8 @@ public final class GCGGrowthLevelTakeRewardRspOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.GCGGrowthLevelTakeRewardRspOuterClass.GCGGrowthLevelTakeRewardRsp buildPartial() {
         emu.grasscutter.net.proto.GCGGrowthLevelTakeRewardRspOuterClass.GCGGrowthLevelTakeRewardRsp result = new emu.grasscutter.net.proto.GCGGrowthLevelTakeRewardRspOuterClass.GCGGrowthLevelTakeRewardRsp(this);
-        result.level_ = level_;
         result.retcode_ = retcode_;
+        result.level_ = level_;
         onBuilt();
         return result;
       }
@@ -435,11 +443,11 @@ public final class GCGGrowthLevelTakeRewardRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.GCGGrowthLevelTakeRewardRspOuterClass.GCGGrowthLevelTakeRewardRsp other) {
         if (other == emu.grasscutter.net.proto.GCGGrowthLevelTakeRewardRspOuterClass.GCGGrowthLevelTakeRewardRsp.getDefaultInstance()) return this;
-        if (other.getLevel() != 0) {
-          setLevel(other.getLevel());
-        }
         if (other.getRetcode() != 0) {
           setRetcode(other.getRetcode());
+        }
+        if (other.getLevel() != 0) {
+          setLevel(other.getLevel());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -470,40 +478,9 @@ public final class GCGGrowthLevelTakeRewardRspOuterClass {
         return this;
       }
 
-      private int level_ ;
-      /**
-       * <code>uint32 level = 1;</code>
-       * @return The level.
-       */
-      @java.lang.Override
-      public int getLevel() {
-        return level_;
-      }
-      /**
-       * <code>uint32 level = 1;</code>
-       * @param value The level to set.
-       * @return This builder for chaining.
-       */
-      public Builder setLevel(int value) {
-        
-        level_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 level = 1;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearLevel() {
-        
-        level_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 13;</code>
+       * <code>int32 retcode = 4;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -511,7 +488,7 @@ public final class GCGGrowthLevelTakeRewardRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 13;</code>
+       * <code>int32 retcode = 4;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -522,12 +499,43 @@ public final class GCGGrowthLevelTakeRewardRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 13;</code>
+       * <code>int32 retcode = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
         
         retcode_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int level_ ;
+      /**
+       * <code>uint32 level = 11;</code>
+       * @return The level.
+       */
+      @java.lang.Override
+      public int getLevel() {
+        return level_;
+      }
+      /**
+       * <code>uint32 level = 11;</code>
+       * @param value The level to set.
+       * @return This builder for chaining.
+       */
+      public Builder setLevel(int value) {
+        
+        level_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 level = 11;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearLevel() {
+        
+        level_ = 0;
         onChanged();
         return this;
       }
@@ -599,8 +607,8 @@ public final class GCGGrowthLevelTakeRewardRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n!GCGGrowthLevelTakeRewardRsp.proto\"=\n\033G" +
-      "CGGrowthLevelTakeRewardRsp\022\r\n\005level\030\001 \001(" +
-      "\r\022\017\n\007retcode\030\r \001(\005B\033\n\031emu.grasscutter.ne" +
+      "CGGrowthLevelTakeRewardRsp\022\017\n\007retcode\030\004 " +
+      "\001(\005\022\r\n\005level\030\013 \001(\rB\033\n\031emu.grasscutter.ne" +
       "t.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -612,7 +620,7 @@ public final class GCGGrowthLevelTakeRewardRspOuterClass {
     internal_static_GCGGrowthLevelTakeRewardRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GCGGrowthLevelTakeRewardRsp_descriptor,
-        new java.lang.String[] { "Level", "Retcode", });
+        new java.lang.String[] { "Retcode", "Level", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

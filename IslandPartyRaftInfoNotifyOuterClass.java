@@ -19,34 +19,38 @@ public final class IslandPartyRaftInfoNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 point_id = 7;</code>
+     * <code>uint32 Unk3300_HNECEGNMKNK = 4;</code>
+     * @return The unk3300HNECEGNMKNK.
+     */
+    int getUnk3300HNECEGNMKNK();
+
+    /**
+     * <code>uint32 Unk3300_FBACMOFGPGJ = 1;</code>
+     * @return The unk3300FBACMOFGPGJ.
+     */
+    int getUnk3300FBACMOFGPGJ();
+
+    /**
+     * <code>uint32 point_id = 8;</code>
      * @return The pointId.
      */
     int getPointId();
 
     /**
-     * <code>uint32 coin = 15;</code>
+     * <code>uint32 coin = 14;</code>
      * @return The coin.
      */
     int getCoin();
-
-    /**
-     * <code>uint32 fuel = 3;</code>
-     * @return The fuel.
-     */
-    int getFuel();
-
-    /**
-     * <code>uint32 component = 13;</code>
-     * @return The component.
-     */
-    int getComponent();
   }
   /**
    * <pre>
-   * CmdId: 5565
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 5589;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code IslandPartyRaftInfoNotify}
@@ -93,22 +97,22 @@ public final class IslandPartyRaftInfoNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 24: {
+            case 8: {
 
-              fuel_ = input.readUInt32();
+              unk3300FBACMOFGPGJ_ = input.readUInt32();
               break;
             }
-            case 56: {
+            case 32: {
+
+              unk3300HNECEGNMKNK_ = input.readUInt32();
+              break;
+            }
+            case 64: {
 
               pointId_ = input.readUInt32();
               break;
             }
-            case 104: {
-
-              component_ = input.readUInt32();
-              break;
-            }
-            case 120: {
+            case 112: {
 
               coin_ = input.readUInt32();
               break;
@@ -145,10 +149,32 @@ public final class IslandPartyRaftInfoNotifyOuterClass {
               emu.grasscutter.net.proto.IslandPartyRaftInfoNotifyOuterClass.IslandPartyRaftInfoNotify.class, emu.grasscutter.net.proto.IslandPartyRaftInfoNotifyOuterClass.IslandPartyRaftInfoNotify.Builder.class);
     }
 
-    public static final int POINT_ID_FIELD_NUMBER = 7;
+    public static final int UNK3300_HNECEGNMKNK_FIELD_NUMBER = 4;
+    private int unk3300HNECEGNMKNK_;
+    /**
+     * <code>uint32 Unk3300_HNECEGNMKNK = 4;</code>
+     * @return The unk3300HNECEGNMKNK.
+     */
+    @java.lang.Override
+    public int getUnk3300HNECEGNMKNK() {
+      return unk3300HNECEGNMKNK_;
+    }
+
+    public static final int UNK3300_FBACMOFGPGJ_FIELD_NUMBER = 1;
+    private int unk3300FBACMOFGPGJ_;
+    /**
+     * <code>uint32 Unk3300_FBACMOFGPGJ = 1;</code>
+     * @return The unk3300FBACMOFGPGJ.
+     */
+    @java.lang.Override
+    public int getUnk3300FBACMOFGPGJ() {
+      return unk3300FBACMOFGPGJ_;
+    }
+
+    public static final int POINT_ID_FIELD_NUMBER = 8;
     private int pointId_;
     /**
-     * <code>uint32 point_id = 7;</code>
+     * <code>uint32 point_id = 8;</code>
      * @return The pointId.
      */
     @java.lang.Override
@@ -156,37 +182,15 @@ public final class IslandPartyRaftInfoNotifyOuterClass {
       return pointId_;
     }
 
-    public static final int COIN_FIELD_NUMBER = 15;
+    public static final int COIN_FIELD_NUMBER = 14;
     private int coin_;
     /**
-     * <code>uint32 coin = 15;</code>
+     * <code>uint32 coin = 14;</code>
      * @return The coin.
      */
     @java.lang.Override
     public int getCoin() {
       return coin_;
-    }
-
-    public static final int FUEL_FIELD_NUMBER = 3;
-    private int fuel_;
-    /**
-     * <code>uint32 fuel = 3;</code>
-     * @return The fuel.
-     */
-    @java.lang.Override
-    public int getFuel() {
-      return fuel_;
-    }
-
-    public static final int COMPONENT_FIELD_NUMBER = 13;
-    private int component_;
-    /**
-     * <code>uint32 component = 13;</code>
-     * @return The component.
-     */
-    @java.lang.Override
-    public int getComponent() {
-      return component_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -203,17 +207,17 @@ public final class IslandPartyRaftInfoNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (fuel_ != 0) {
-        output.writeUInt32(3, fuel_);
+      if (unk3300FBACMOFGPGJ_ != 0) {
+        output.writeUInt32(1, unk3300FBACMOFGPGJ_);
+      }
+      if (unk3300HNECEGNMKNK_ != 0) {
+        output.writeUInt32(4, unk3300HNECEGNMKNK_);
       }
       if (pointId_ != 0) {
-        output.writeUInt32(7, pointId_);
-      }
-      if (component_ != 0) {
-        output.writeUInt32(13, component_);
+        output.writeUInt32(8, pointId_);
       }
       if (coin_ != 0) {
-        output.writeUInt32(15, coin_);
+        output.writeUInt32(14, coin_);
       }
       unknownFields.writeTo(output);
     }
@@ -224,21 +228,21 @@ public final class IslandPartyRaftInfoNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (fuel_ != 0) {
+      if (unk3300FBACMOFGPGJ_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, fuel_);
+          .computeUInt32Size(1, unk3300FBACMOFGPGJ_);
+      }
+      if (unk3300HNECEGNMKNK_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(4, unk3300HNECEGNMKNK_);
       }
       if (pointId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, pointId_);
-      }
-      if (component_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, component_);
+          .computeUInt32Size(8, pointId_);
       }
       if (coin_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, coin_);
+          .computeUInt32Size(14, coin_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -255,14 +259,14 @@ public final class IslandPartyRaftInfoNotifyOuterClass {
       }
       emu.grasscutter.net.proto.IslandPartyRaftInfoNotifyOuterClass.IslandPartyRaftInfoNotify other = (emu.grasscutter.net.proto.IslandPartyRaftInfoNotifyOuterClass.IslandPartyRaftInfoNotify) obj;
 
+      if (getUnk3300HNECEGNMKNK()
+          != other.getUnk3300HNECEGNMKNK()) return false;
+      if (getUnk3300FBACMOFGPGJ()
+          != other.getUnk3300FBACMOFGPGJ()) return false;
       if (getPointId()
           != other.getPointId()) return false;
       if (getCoin()
           != other.getCoin()) return false;
-      if (getFuel()
-          != other.getFuel()) return false;
-      if (getComponent()
-          != other.getComponent()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -274,14 +278,14 @@ public final class IslandPartyRaftInfoNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + UNK3300_HNECEGNMKNK_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300HNECEGNMKNK();
+      hash = (37 * hash) + UNK3300_FBACMOFGPGJ_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300FBACMOFGPGJ();
       hash = (37 * hash) + POINT_ID_FIELD_NUMBER;
       hash = (53 * hash) + getPointId();
       hash = (37 * hash) + COIN_FIELD_NUMBER;
       hash = (53 * hash) + getCoin();
-      hash = (37 * hash) + FUEL_FIELD_NUMBER;
-      hash = (53 * hash) + getFuel();
-      hash = (37 * hash) + COMPONENT_FIELD_NUMBER;
-      hash = (53 * hash) + getComponent();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -379,9 +383,13 @@ public final class IslandPartyRaftInfoNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 5565
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 5589;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code IslandPartyRaftInfoNotify}
@@ -421,13 +429,13 @@ public final class IslandPartyRaftInfoNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        unk3300HNECEGNMKNK_ = 0;
+
+        unk3300FBACMOFGPGJ_ = 0;
+
         pointId_ = 0;
 
         coin_ = 0;
-
-        fuel_ = 0;
-
-        component_ = 0;
 
         return this;
       }
@@ -455,10 +463,10 @@ public final class IslandPartyRaftInfoNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.IslandPartyRaftInfoNotifyOuterClass.IslandPartyRaftInfoNotify buildPartial() {
         emu.grasscutter.net.proto.IslandPartyRaftInfoNotifyOuterClass.IslandPartyRaftInfoNotify result = new emu.grasscutter.net.proto.IslandPartyRaftInfoNotifyOuterClass.IslandPartyRaftInfoNotify(this);
+        result.unk3300HNECEGNMKNK_ = unk3300HNECEGNMKNK_;
+        result.unk3300FBACMOFGPGJ_ = unk3300FBACMOFGPGJ_;
         result.pointId_ = pointId_;
         result.coin_ = coin_;
-        result.fuel_ = fuel_;
-        result.component_ = component_;
         onBuilt();
         return result;
       }
@@ -507,17 +515,17 @@ public final class IslandPartyRaftInfoNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.IslandPartyRaftInfoNotifyOuterClass.IslandPartyRaftInfoNotify other) {
         if (other == emu.grasscutter.net.proto.IslandPartyRaftInfoNotifyOuterClass.IslandPartyRaftInfoNotify.getDefaultInstance()) return this;
+        if (other.getUnk3300HNECEGNMKNK() != 0) {
+          setUnk3300HNECEGNMKNK(other.getUnk3300HNECEGNMKNK());
+        }
+        if (other.getUnk3300FBACMOFGPGJ() != 0) {
+          setUnk3300FBACMOFGPGJ(other.getUnk3300FBACMOFGPGJ());
+        }
         if (other.getPointId() != 0) {
           setPointId(other.getPointId());
         }
         if (other.getCoin() != 0) {
           setCoin(other.getCoin());
-        }
-        if (other.getFuel() != 0) {
-          setFuel(other.getFuel());
-        }
-        if (other.getComponent() != 0) {
-          setComponent(other.getComponent());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -548,9 +556,71 @@ public final class IslandPartyRaftInfoNotifyOuterClass {
         return this;
       }
 
+      private int unk3300HNECEGNMKNK_ ;
+      /**
+       * <code>uint32 Unk3300_HNECEGNMKNK = 4;</code>
+       * @return The unk3300HNECEGNMKNK.
+       */
+      @java.lang.Override
+      public int getUnk3300HNECEGNMKNK() {
+        return unk3300HNECEGNMKNK_;
+      }
+      /**
+       * <code>uint32 Unk3300_HNECEGNMKNK = 4;</code>
+       * @param value The unk3300HNECEGNMKNK to set.
+       * @return This builder for chaining.
+       */
+      public Builder setUnk3300HNECEGNMKNK(int value) {
+        
+        unk3300HNECEGNMKNK_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 Unk3300_HNECEGNMKNK = 4;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearUnk3300HNECEGNMKNK() {
+        
+        unk3300HNECEGNMKNK_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int unk3300FBACMOFGPGJ_ ;
+      /**
+       * <code>uint32 Unk3300_FBACMOFGPGJ = 1;</code>
+       * @return The unk3300FBACMOFGPGJ.
+       */
+      @java.lang.Override
+      public int getUnk3300FBACMOFGPGJ() {
+        return unk3300FBACMOFGPGJ_;
+      }
+      /**
+       * <code>uint32 Unk3300_FBACMOFGPGJ = 1;</code>
+       * @param value The unk3300FBACMOFGPGJ to set.
+       * @return This builder for chaining.
+       */
+      public Builder setUnk3300FBACMOFGPGJ(int value) {
+        
+        unk3300FBACMOFGPGJ_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 Unk3300_FBACMOFGPGJ = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearUnk3300FBACMOFGPGJ() {
+        
+        unk3300FBACMOFGPGJ_ = 0;
+        onChanged();
+        return this;
+      }
+
       private int pointId_ ;
       /**
-       * <code>uint32 point_id = 7;</code>
+       * <code>uint32 point_id = 8;</code>
        * @return The pointId.
        */
       @java.lang.Override
@@ -558,7 +628,7 @@ public final class IslandPartyRaftInfoNotifyOuterClass {
         return pointId_;
       }
       /**
-       * <code>uint32 point_id = 7;</code>
+       * <code>uint32 point_id = 8;</code>
        * @param value The pointId to set.
        * @return This builder for chaining.
        */
@@ -569,7 +639,7 @@ public final class IslandPartyRaftInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 point_id = 7;</code>
+       * <code>uint32 point_id = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearPointId() {
@@ -581,7 +651,7 @@ public final class IslandPartyRaftInfoNotifyOuterClass {
 
       private int coin_ ;
       /**
-       * <code>uint32 coin = 15;</code>
+       * <code>uint32 coin = 14;</code>
        * @return The coin.
        */
       @java.lang.Override
@@ -589,7 +659,7 @@ public final class IslandPartyRaftInfoNotifyOuterClass {
         return coin_;
       }
       /**
-       * <code>uint32 coin = 15;</code>
+       * <code>uint32 coin = 14;</code>
        * @param value The coin to set.
        * @return This builder for chaining.
        */
@@ -600,74 +670,12 @@ public final class IslandPartyRaftInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 coin = 15;</code>
+       * <code>uint32 coin = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearCoin() {
         
         coin_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int fuel_ ;
-      /**
-       * <code>uint32 fuel = 3;</code>
-       * @return The fuel.
-       */
-      @java.lang.Override
-      public int getFuel() {
-        return fuel_;
-      }
-      /**
-       * <code>uint32 fuel = 3;</code>
-       * @param value The fuel to set.
-       * @return This builder for chaining.
-       */
-      public Builder setFuel(int value) {
-        
-        fuel_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 fuel = 3;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearFuel() {
-        
-        fuel_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int component_ ;
-      /**
-       * <code>uint32 component = 13;</code>
-       * @return The component.
-       */
-      @java.lang.Override
-      public int getComponent() {
-        return component_;
-      }
-      /**
-       * <code>uint32 component = 13;</code>
-       * @param value The component to set.
-       * @return This builder for chaining.
-       */
-      public Builder setComponent(int value) {
-        
-        component_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 component = 13;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearComponent() {
-        
-        component_ = 0;
         onChanged();
         return this;
       }
@@ -738,11 +746,11 @@ public final class IslandPartyRaftInfoNotifyOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\037IslandPartyRaftInfoNotify.proto\"\\\n\031Isl" +
-      "andPartyRaftInfoNotify\022\020\n\010point_id\030\007 \001(\r" +
-      "\022\014\n\004coin\030\017 \001(\r\022\014\n\004fuel\030\003 \001(\r\022\021\n\tcomponen" +
-      "t\030\r \001(\rB\033\n\031emu.grasscutter.net.protob\006pr" +
-      "oto3"
+      "\n\037IslandPartyRaftInfoNotify.proto\"u\n\031Isl" +
+      "andPartyRaftInfoNotify\022\033\n\023Unk3300_HNECEG" +
+      "NMKNK\030\004 \001(\r\022\033\n\023Unk3300_FBACMOFGPGJ\030\001 \001(\r" +
+      "\022\020\n\010point_id\030\010 \001(\r\022\014\n\004coin\030\016 \001(\rB\033\n\031emu." +
+      "grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -753,7 +761,7 @@ public final class IslandPartyRaftInfoNotifyOuterClass {
     internal_static_IslandPartyRaftInfoNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_IslandPartyRaftInfoNotify_descriptor,
-        new java.lang.String[] { "PointId", "Coin", "Fuel", "Component", });
+        new java.lang.String[] { "Unk3300HNECEGNMKNK", "Unk3300FBACMOFGPGJ", "PointId", "Coin", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

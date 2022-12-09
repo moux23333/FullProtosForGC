@@ -19,23 +19,27 @@ public final class StartBuoyantCombatGalleryReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 gallery_id = 15;</code>
-     * @return The galleryId.
-     */
-    int getGalleryId();
-
-    /**
-     * <code>uint32 gallery_level = 13;</code>
+     * <code>uint32 gallery_level = 4;</code>
      * @return The galleryLevel.
      */
     int getGalleryLevel();
+
+    /**
+     * <code>uint32 gallery_id = 12;</code>
+     * @return The galleryId.
+     */
+    int getGalleryId();
   }
   /**
    * <pre>
-   * CmdId: 8732
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 8427;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code StartBuoyantCombatGalleryReq}
@@ -82,12 +86,12 @@ public final class StartBuoyantCombatGalleryReqOuterClass {
             case 0:
               done = true;
               break;
-            case 104: {
+            case 32: {
 
               galleryLevel_ = input.readUInt32();
               break;
             }
-            case 120: {
+            case 96: {
 
               galleryId_ = input.readUInt32();
               break;
@@ -124,26 +128,26 @@ public final class StartBuoyantCombatGalleryReqOuterClass {
               emu.grasscutter.net.proto.StartBuoyantCombatGalleryReqOuterClass.StartBuoyantCombatGalleryReq.class, emu.grasscutter.net.proto.StartBuoyantCombatGalleryReqOuterClass.StartBuoyantCombatGalleryReq.Builder.class);
     }
 
-    public static final int GALLERY_ID_FIELD_NUMBER = 15;
-    private int galleryId_;
-    /**
-     * <code>uint32 gallery_id = 15;</code>
-     * @return The galleryId.
-     */
-    @java.lang.Override
-    public int getGalleryId() {
-      return galleryId_;
-    }
-
-    public static final int GALLERY_LEVEL_FIELD_NUMBER = 13;
+    public static final int GALLERY_LEVEL_FIELD_NUMBER = 4;
     private int galleryLevel_;
     /**
-     * <code>uint32 gallery_level = 13;</code>
+     * <code>uint32 gallery_level = 4;</code>
      * @return The galleryLevel.
      */
     @java.lang.Override
     public int getGalleryLevel() {
       return galleryLevel_;
+    }
+
+    public static final int GALLERY_ID_FIELD_NUMBER = 12;
+    private int galleryId_;
+    /**
+     * <code>uint32 gallery_id = 12;</code>
+     * @return The galleryId.
+     */
+    @java.lang.Override
+    public int getGalleryId() {
+      return galleryId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -161,10 +165,10 @@ public final class StartBuoyantCombatGalleryReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (galleryLevel_ != 0) {
-        output.writeUInt32(13, galleryLevel_);
+        output.writeUInt32(4, galleryLevel_);
       }
       if (galleryId_ != 0) {
-        output.writeUInt32(15, galleryId_);
+        output.writeUInt32(12, galleryId_);
       }
       unknownFields.writeTo(output);
     }
@@ -177,11 +181,11 @@ public final class StartBuoyantCombatGalleryReqOuterClass {
       size = 0;
       if (galleryLevel_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, galleryLevel_);
+          .computeUInt32Size(4, galleryLevel_);
       }
       if (galleryId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, galleryId_);
+          .computeUInt32Size(12, galleryId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -198,10 +202,10 @@ public final class StartBuoyantCombatGalleryReqOuterClass {
       }
       emu.grasscutter.net.proto.StartBuoyantCombatGalleryReqOuterClass.StartBuoyantCombatGalleryReq other = (emu.grasscutter.net.proto.StartBuoyantCombatGalleryReqOuterClass.StartBuoyantCombatGalleryReq) obj;
 
-      if (getGalleryId()
-          != other.getGalleryId()) return false;
       if (getGalleryLevel()
           != other.getGalleryLevel()) return false;
+      if (getGalleryId()
+          != other.getGalleryId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -213,10 +217,10 @@ public final class StartBuoyantCombatGalleryReqOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + GALLERY_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getGalleryId();
       hash = (37 * hash) + GALLERY_LEVEL_FIELD_NUMBER;
       hash = (53 * hash) + getGalleryLevel();
+      hash = (37 * hash) + GALLERY_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getGalleryId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -314,10 +318,14 @@ public final class StartBuoyantCombatGalleryReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 8732
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 8427;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code StartBuoyantCombatGalleryReq}
@@ -357,9 +365,9 @@ public final class StartBuoyantCombatGalleryReqOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        galleryId_ = 0;
-
         galleryLevel_ = 0;
+
+        galleryId_ = 0;
 
         return this;
       }
@@ -387,8 +395,8 @@ public final class StartBuoyantCombatGalleryReqOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.StartBuoyantCombatGalleryReqOuterClass.StartBuoyantCombatGalleryReq buildPartial() {
         emu.grasscutter.net.proto.StartBuoyantCombatGalleryReqOuterClass.StartBuoyantCombatGalleryReq result = new emu.grasscutter.net.proto.StartBuoyantCombatGalleryReqOuterClass.StartBuoyantCombatGalleryReq(this);
-        result.galleryId_ = galleryId_;
         result.galleryLevel_ = galleryLevel_;
+        result.galleryId_ = galleryId_;
         onBuilt();
         return result;
       }
@@ -437,11 +445,11 @@ public final class StartBuoyantCombatGalleryReqOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.StartBuoyantCombatGalleryReqOuterClass.StartBuoyantCombatGalleryReq other) {
         if (other == emu.grasscutter.net.proto.StartBuoyantCombatGalleryReqOuterClass.StartBuoyantCombatGalleryReq.getDefaultInstance()) return this;
-        if (other.getGalleryId() != 0) {
-          setGalleryId(other.getGalleryId());
-        }
         if (other.getGalleryLevel() != 0) {
           setGalleryLevel(other.getGalleryLevel());
+        }
+        if (other.getGalleryId() != 0) {
+          setGalleryId(other.getGalleryId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -472,40 +480,9 @@ public final class StartBuoyantCombatGalleryReqOuterClass {
         return this;
       }
 
-      private int galleryId_ ;
-      /**
-       * <code>uint32 gallery_id = 15;</code>
-       * @return The galleryId.
-       */
-      @java.lang.Override
-      public int getGalleryId() {
-        return galleryId_;
-      }
-      /**
-       * <code>uint32 gallery_id = 15;</code>
-       * @param value The galleryId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setGalleryId(int value) {
-        
-        galleryId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 gallery_id = 15;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearGalleryId() {
-        
-        galleryId_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int galleryLevel_ ;
       /**
-       * <code>uint32 gallery_level = 13;</code>
+       * <code>uint32 gallery_level = 4;</code>
        * @return The galleryLevel.
        */
       @java.lang.Override
@@ -513,7 +490,7 @@ public final class StartBuoyantCombatGalleryReqOuterClass {
         return galleryLevel_;
       }
       /**
-       * <code>uint32 gallery_level = 13;</code>
+       * <code>uint32 gallery_level = 4;</code>
        * @param value The galleryLevel to set.
        * @return This builder for chaining.
        */
@@ -524,12 +501,43 @@ public final class StartBuoyantCombatGalleryReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 gallery_level = 13;</code>
+       * <code>uint32 gallery_level = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearGalleryLevel() {
         
         galleryLevel_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int galleryId_ ;
+      /**
+       * <code>uint32 gallery_id = 12;</code>
+       * @return The galleryId.
+       */
+      @java.lang.Override
+      public int getGalleryId() {
+        return galleryId_;
+      }
+      /**
+       * <code>uint32 gallery_id = 12;</code>
+       * @param value The galleryId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setGalleryId(int value) {
+        
+        galleryId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 gallery_id = 12;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearGalleryId() {
+        
+        galleryId_ = 0;
         onChanged();
         return this;
       }
@@ -601,8 +609,8 @@ public final class StartBuoyantCombatGalleryReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\"StartBuoyantCombatGalleryReq.proto\"I\n\034" +
-      "StartBuoyantCombatGalleryReq\022\022\n\ngallery_" +
-      "id\030\017 \001(\r\022\025\n\rgallery_level\030\r \001(\rB\033\n\031emu.g" +
+      "StartBuoyantCombatGalleryReq\022\025\n\rgallery_" +
+      "level\030\004 \001(\r\022\022\n\ngallery_id\030\014 \001(\rB\033\n\031emu.g" +
       "rasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -614,7 +622,7 @@ public final class StartBuoyantCombatGalleryReqOuterClass {
     internal_static_StartBuoyantCombatGalleryReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_StartBuoyantCombatGalleryReq_descriptor,
-        new java.lang.String[] { "GalleryId", "GalleryLevel", });
+        new java.lang.String[] { "GalleryLevel", "GalleryId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

@@ -19,25 +19,29 @@ public final class GrantRewardNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.Reward reward = 6;</code>
+     * <code>.Reward reward = 1;</code>
      * @return Whether the reward field is set.
      */
     boolean hasReward();
     /**
-     * <code>.Reward reward = 6;</code>
+     * <code>.Reward reward = 1;</code>
      * @return The reward.
      */
     emu.grasscutter.net.proto.RewardOuterClass.Reward getReward();
     /**
-     * <code>.Reward reward = 6;</code>
+     * <code>.Reward reward = 1;</code>
      */
     emu.grasscutter.net.proto.RewardOuterClass.RewardOrBuilder getRewardOrBuilder();
   }
   /**
    * <pre>
-   * CmdId: 663
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 603;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code GrantRewardNotify}
@@ -84,7 +88,7 @@ public final class GrantRewardNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 50: {
+            case 10: {
               emu.grasscutter.net.proto.RewardOuterClass.Reward.Builder subBuilder = null;
               if (reward_ != null) {
                 subBuilder = reward_.toBuilder();
@@ -129,10 +133,10 @@ public final class GrantRewardNotifyOuterClass {
               emu.grasscutter.net.proto.GrantRewardNotifyOuterClass.GrantRewardNotify.class, emu.grasscutter.net.proto.GrantRewardNotifyOuterClass.GrantRewardNotify.Builder.class);
     }
 
-    public static final int REWARD_FIELD_NUMBER = 6;
+    public static final int REWARD_FIELD_NUMBER = 1;
     private emu.grasscutter.net.proto.RewardOuterClass.Reward reward_;
     /**
-     * <code>.Reward reward = 6;</code>
+     * <code>.Reward reward = 1;</code>
      * @return Whether the reward field is set.
      */
     @java.lang.Override
@@ -140,7 +144,7 @@ public final class GrantRewardNotifyOuterClass {
       return reward_ != null;
     }
     /**
-     * <code>.Reward reward = 6;</code>
+     * <code>.Reward reward = 1;</code>
      * @return The reward.
      */
     @java.lang.Override
@@ -148,7 +152,7 @@ public final class GrantRewardNotifyOuterClass {
       return reward_ == null ? emu.grasscutter.net.proto.RewardOuterClass.Reward.getDefaultInstance() : reward_;
     }
     /**
-     * <code>.Reward reward = 6;</code>
+     * <code>.Reward reward = 1;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.RewardOuterClass.RewardOrBuilder getRewardOrBuilder() {
@@ -170,7 +174,7 @@ public final class GrantRewardNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (reward_ != null) {
-        output.writeMessage(6, getReward());
+        output.writeMessage(1, getReward());
       }
       unknownFields.writeTo(output);
     }
@@ -183,7 +187,7 @@ public final class GrantRewardNotifyOuterClass {
       size = 0;
       if (reward_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(6, getReward());
+          .computeMessageSize(1, getReward());
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -317,9 +321,13 @@ public final class GrantRewardNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 663
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 603;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code GrantRewardNotify}
@@ -480,14 +488,14 @@ public final class GrantRewardNotifyOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.RewardOuterClass.Reward, emu.grasscutter.net.proto.RewardOuterClass.Reward.Builder, emu.grasscutter.net.proto.RewardOuterClass.RewardOrBuilder> rewardBuilder_;
       /**
-       * <code>.Reward reward = 6;</code>
+       * <code>.Reward reward = 1;</code>
        * @return Whether the reward field is set.
        */
       public boolean hasReward() {
         return rewardBuilder_ != null || reward_ != null;
       }
       /**
-       * <code>.Reward reward = 6;</code>
+       * <code>.Reward reward = 1;</code>
        * @return The reward.
        */
       public emu.grasscutter.net.proto.RewardOuterClass.Reward getReward() {
@@ -498,7 +506,7 @@ public final class GrantRewardNotifyOuterClass {
         }
       }
       /**
-       * <code>.Reward reward = 6;</code>
+       * <code>.Reward reward = 1;</code>
        */
       public Builder setReward(emu.grasscutter.net.proto.RewardOuterClass.Reward value) {
         if (rewardBuilder_ == null) {
@@ -514,7 +522,7 @@ public final class GrantRewardNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.Reward reward = 6;</code>
+       * <code>.Reward reward = 1;</code>
        */
       public Builder setReward(
           emu.grasscutter.net.proto.RewardOuterClass.Reward.Builder builderForValue) {
@@ -528,7 +536,7 @@ public final class GrantRewardNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.Reward reward = 6;</code>
+       * <code>.Reward reward = 1;</code>
        */
       public Builder mergeReward(emu.grasscutter.net.proto.RewardOuterClass.Reward value) {
         if (rewardBuilder_ == null) {
@@ -546,7 +554,7 @@ public final class GrantRewardNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.Reward reward = 6;</code>
+       * <code>.Reward reward = 1;</code>
        */
       public Builder clearReward() {
         if (rewardBuilder_ == null) {
@@ -560,7 +568,7 @@ public final class GrantRewardNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.Reward reward = 6;</code>
+       * <code>.Reward reward = 1;</code>
        */
       public emu.grasscutter.net.proto.RewardOuterClass.Reward.Builder getRewardBuilder() {
         
@@ -568,7 +576,7 @@ public final class GrantRewardNotifyOuterClass {
         return getRewardFieldBuilder().getBuilder();
       }
       /**
-       * <code>.Reward reward = 6;</code>
+       * <code>.Reward reward = 1;</code>
        */
       public emu.grasscutter.net.proto.RewardOuterClass.RewardOrBuilder getRewardOrBuilder() {
         if (rewardBuilder_ != null) {
@@ -579,7 +587,7 @@ public final class GrantRewardNotifyOuterClass {
         }
       }
       /**
-       * <code>.Reward reward = 6;</code>
+       * <code>.Reward reward = 1;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.RewardOuterClass.Reward, emu.grasscutter.net.proto.RewardOuterClass.Reward.Builder, emu.grasscutter.net.proto.RewardOuterClass.RewardOrBuilder> 
@@ -662,7 +670,7 @@ public final class GrantRewardNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\027GrantRewardNotify.proto\032\014Reward.proto\"" +
-      ",\n\021GrantRewardNotify\022\027\n\006reward\030\006 \001(\0132\007.R" +
+      ",\n\021GrantRewardNotify\022\027\n\006reward\030\001 \001(\0132\007.R" +
       "ewardB\033\n\031emu.grasscutter.net.protob\006prot" +
       "o3"
     };

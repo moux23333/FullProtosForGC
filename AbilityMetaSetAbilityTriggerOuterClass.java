@@ -19,7 +19,7 @@ public final class AbilityMetaSetAbilityTriggerOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 trigger_ability_entity_id = 11;</code>
+     * <code>uint32 trigger_ability_entity_id = 1;</code>
      * @return The triggerAbilityEntityId.
      */
     int getTriggerAbilityEntityId();
@@ -69,7 +69,7 @@ public final class AbilityMetaSetAbilityTriggerOuterClass {
             case 0:
               done = true;
               break;
-            case 88: {
+            case 8: {
 
               triggerAbilityEntityId_ = input.readUInt32();
               break;
@@ -106,10 +106,10 @@ public final class AbilityMetaSetAbilityTriggerOuterClass {
               emu.grasscutter.net.proto.AbilityMetaSetAbilityTriggerOuterClass.AbilityMetaSetAbilityTrigger.class, emu.grasscutter.net.proto.AbilityMetaSetAbilityTriggerOuterClass.AbilityMetaSetAbilityTrigger.Builder.class);
     }
 
-    public static final int TRIGGER_ABILITY_ENTITY_ID_FIELD_NUMBER = 11;
+    public static final int TRIGGER_ABILITY_ENTITY_ID_FIELD_NUMBER = 1;
     private int triggerAbilityEntityId_;
     /**
-     * <code>uint32 trigger_ability_entity_id = 11;</code>
+     * <code>uint32 trigger_ability_entity_id = 1;</code>
      * @return The triggerAbilityEntityId.
      */
     @java.lang.Override
@@ -132,7 +132,7 @@ public final class AbilityMetaSetAbilityTriggerOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (triggerAbilityEntityId_ != 0) {
-        output.writeUInt32(11, triggerAbilityEntityId_);
+        output.writeUInt32(1, triggerAbilityEntityId_);
       }
       unknownFields.writeTo(output);
     }
@@ -145,7 +145,7 @@ public final class AbilityMetaSetAbilityTriggerOuterClass {
       size = 0;
       if (triggerAbilityEntityId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, triggerAbilityEntityId_);
+          .computeUInt32Size(1, triggerAbilityEntityId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -421,7 +421,7 @@ public final class AbilityMetaSetAbilityTriggerOuterClass {
 
       private int triggerAbilityEntityId_ ;
       /**
-       * <code>uint32 trigger_ability_entity_id = 11;</code>
+       * <code>uint32 trigger_ability_entity_id = 1;</code>
        * @return The triggerAbilityEntityId.
        */
       @java.lang.Override
@@ -429,7 +429,7 @@ public final class AbilityMetaSetAbilityTriggerOuterClass {
         return triggerAbilityEntityId_;
       }
       /**
-       * <code>uint32 trigger_ability_entity_id = 11;</code>
+       * <code>uint32 trigger_ability_entity_id = 1;</code>
        * @param value The triggerAbilityEntityId to set.
        * @return This builder for chaining.
        */
@@ -440,7 +440,7 @@ public final class AbilityMetaSetAbilityTriggerOuterClass {
         return this;
       }
       /**
-       * <code>uint32 trigger_ability_entity_id = 11;</code>
+       * <code>uint32 trigger_ability_entity_id = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearTriggerAbilityEntityId() {
@@ -518,7 +518,7 @@ public final class AbilityMetaSetAbilityTriggerOuterClass {
     java.lang.String[] descriptorData = {
       "\n\"AbilityMetaSetAbilityTrigger.proto\"A\n\034" +
       "AbilityMetaSetAbilityTrigger\022!\n\031trigger_" +
-      "ability_entity_id\030\013 \001(\rB\033\n\031emu.grasscutt" +
+      "ability_entity_id\030\001 \001(\rB\033\n\031emu.grasscutt" +
       "er.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

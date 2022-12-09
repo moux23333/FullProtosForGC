@@ -19,34 +19,38 @@ public final class AllCoopInfoNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .MainCoop main_coop_list = 14;</code>
+     * <code>repeated .MainCoop main_coop_list = 10;</code>
      */
     java.util.List<emu.grasscutter.net.proto.MainCoopOuterClass.MainCoop> 
         getMainCoopListList();
     /**
-     * <code>repeated .MainCoop main_coop_list = 14;</code>
+     * <code>repeated .MainCoop main_coop_list = 10;</code>
      */
     emu.grasscutter.net.proto.MainCoopOuterClass.MainCoop getMainCoopList(int index);
     /**
-     * <code>repeated .MainCoop main_coop_list = 14;</code>
+     * <code>repeated .MainCoop main_coop_list = 10;</code>
      */
     int getMainCoopListCount();
     /**
-     * <code>repeated .MainCoop main_coop_list = 14;</code>
+     * <code>repeated .MainCoop main_coop_list = 10;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.MainCoopOuterClass.MainCoopOrBuilder> 
         getMainCoopListOrBuilderList();
     /**
-     * <code>repeated .MainCoop main_coop_list = 14;</code>
+     * <code>repeated .MainCoop main_coop_list = 10;</code>
      */
     emu.grasscutter.net.proto.MainCoopOuterClass.MainCoopOrBuilder getMainCoopListOrBuilder(
         int index);
   }
   /**
    * <pre>
-   * CmdId: 1976
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 1992;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code AllCoopInfoNotify}
@@ -95,7 +99,7 @@ public final class AllCoopInfoNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 114: {
+            case 82: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 mainCoopList_ = new java.util.ArrayList<emu.grasscutter.net.proto.MainCoopOuterClass.MainCoop>();
                 mutable_bitField0_ |= 0x00000001;
@@ -139,17 +143,17 @@ public final class AllCoopInfoNotifyOuterClass {
               emu.grasscutter.net.proto.AllCoopInfoNotifyOuterClass.AllCoopInfoNotify.class, emu.grasscutter.net.proto.AllCoopInfoNotifyOuterClass.AllCoopInfoNotify.Builder.class);
     }
 
-    public static final int MAIN_COOP_LIST_FIELD_NUMBER = 14;
+    public static final int MAIN_COOP_LIST_FIELD_NUMBER = 10;
     private java.util.List<emu.grasscutter.net.proto.MainCoopOuterClass.MainCoop> mainCoopList_;
     /**
-     * <code>repeated .MainCoop main_coop_list = 14;</code>
+     * <code>repeated .MainCoop main_coop_list = 10;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.MainCoopOuterClass.MainCoop> getMainCoopListList() {
       return mainCoopList_;
     }
     /**
-     * <code>repeated .MainCoop main_coop_list = 14;</code>
+     * <code>repeated .MainCoop main_coop_list = 10;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.MainCoopOuterClass.MainCoopOrBuilder> 
@@ -157,21 +161,21 @@ public final class AllCoopInfoNotifyOuterClass {
       return mainCoopList_;
     }
     /**
-     * <code>repeated .MainCoop main_coop_list = 14;</code>
+     * <code>repeated .MainCoop main_coop_list = 10;</code>
      */
     @java.lang.Override
     public int getMainCoopListCount() {
       return mainCoopList_.size();
     }
     /**
-     * <code>repeated .MainCoop main_coop_list = 14;</code>
+     * <code>repeated .MainCoop main_coop_list = 10;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.MainCoopOuterClass.MainCoop getMainCoopList(int index) {
       return mainCoopList_.get(index);
     }
     /**
-     * <code>repeated .MainCoop main_coop_list = 14;</code>
+     * <code>repeated .MainCoop main_coop_list = 10;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.MainCoopOuterClass.MainCoopOrBuilder getMainCoopListOrBuilder(
@@ -194,7 +198,7 @@ public final class AllCoopInfoNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       for (int i = 0; i < mainCoopList_.size(); i++) {
-        output.writeMessage(14, mainCoopList_.get(i));
+        output.writeMessage(10, mainCoopList_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -207,7 +211,7 @@ public final class AllCoopInfoNotifyOuterClass {
       size = 0;
       for (int i = 0; i < mainCoopList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(14, mainCoopList_.get(i));
+          .computeMessageSize(10, mainCoopList_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -338,9 +342,13 @@ public final class AllCoopInfoNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 1976
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 1992;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code AllCoopInfoNotify}
@@ -540,7 +548,7 @@ public final class AllCoopInfoNotifyOuterClass {
           emu.grasscutter.net.proto.MainCoopOuterClass.MainCoop, emu.grasscutter.net.proto.MainCoopOuterClass.MainCoop.Builder, emu.grasscutter.net.proto.MainCoopOuterClass.MainCoopOrBuilder> mainCoopListBuilder_;
 
       /**
-       * <code>repeated .MainCoop main_coop_list = 14;</code>
+       * <code>repeated .MainCoop main_coop_list = 10;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.MainCoopOuterClass.MainCoop> getMainCoopListList() {
         if (mainCoopListBuilder_ == null) {
@@ -550,7 +558,7 @@ public final class AllCoopInfoNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .MainCoop main_coop_list = 14;</code>
+       * <code>repeated .MainCoop main_coop_list = 10;</code>
        */
       public int getMainCoopListCount() {
         if (mainCoopListBuilder_ == null) {
@@ -560,7 +568,7 @@ public final class AllCoopInfoNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .MainCoop main_coop_list = 14;</code>
+       * <code>repeated .MainCoop main_coop_list = 10;</code>
        */
       public emu.grasscutter.net.proto.MainCoopOuterClass.MainCoop getMainCoopList(int index) {
         if (mainCoopListBuilder_ == null) {
@@ -570,7 +578,7 @@ public final class AllCoopInfoNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .MainCoop main_coop_list = 14;</code>
+       * <code>repeated .MainCoop main_coop_list = 10;</code>
        */
       public Builder setMainCoopList(
           int index, emu.grasscutter.net.proto.MainCoopOuterClass.MainCoop value) {
@@ -587,7 +595,7 @@ public final class AllCoopInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .MainCoop main_coop_list = 14;</code>
+       * <code>repeated .MainCoop main_coop_list = 10;</code>
        */
       public Builder setMainCoopList(
           int index, emu.grasscutter.net.proto.MainCoopOuterClass.MainCoop.Builder builderForValue) {
@@ -601,7 +609,7 @@ public final class AllCoopInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .MainCoop main_coop_list = 14;</code>
+       * <code>repeated .MainCoop main_coop_list = 10;</code>
        */
       public Builder addMainCoopList(emu.grasscutter.net.proto.MainCoopOuterClass.MainCoop value) {
         if (mainCoopListBuilder_ == null) {
@@ -617,7 +625,7 @@ public final class AllCoopInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .MainCoop main_coop_list = 14;</code>
+       * <code>repeated .MainCoop main_coop_list = 10;</code>
        */
       public Builder addMainCoopList(
           int index, emu.grasscutter.net.proto.MainCoopOuterClass.MainCoop value) {
@@ -634,7 +642,7 @@ public final class AllCoopInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .MainCoop main_coop_list = 14;</code>
+       * <code>repeated .MainCoop main_coop_list = 10;</code>
        */
       public Builder addMainCoopList(
           emu.grasscutter.net.proto.MainCoopOuterClass.MainCoop.Builder builderForValue) {
@@ -648,7 +656,7 @@ public final class AllCoopInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .MainCoop main_coop_list = 14;</code>
+       * <code>repeated .MainCoop main_coop_list = 10;</code>
        */
       public Builder addMainCoopList(
           int index, emu.grasscutter.net.proto.MainCoopOuterClass.MainCoop.Builder builderForValue) {
@@ -662,7 +670,7 @@ public final class AllCoopInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .MainCoop main_coop_list = 14;</code>
+       * <code>repeated .MainCoop main_coop_list = 10;</code>
        */
       public Builder addAllMainCoopList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.MainCoopOuterClass.MainCoop> values) {
@@ -677,7 +685,7 @@ public final class AllCoopInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .MainCoop main_coop_list = 14;</code>
+       * <code>repeated .MainCoop main_coop_list = 10;</code>
        */
       public Builder clearMainCoopList() {
         if (mainCoopListBuilder_ == null) {
@@ -690,7 +698,7 @@ public final class AllCoopInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .MainCoop main_coop_list = 14;</code>
+       * <code>repeated .MainCoop main_coop_list = 10;</code>
        */
       public Builder removeMainCoopList(int index) {
         if (mainCoopListBuilder_ == null) {
@@ -703,14 +711,14 @@ public final class AllCoopInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .MainCoop main_coop_list = 14;</code>
+       * <code>repeated .MainCoop main_coop_list = 10;</code>
        */
       public emu.grasscutter.net.proto.MainCoopOuterClass.MainCoop.Builder getMainCoopListBuilder(
           int index) {
         return getMainCoopListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .MainCoop main_coop_list = 14;</code>
+       * <code>repeated .MainCoop main_coop_list = 10;</code>
        */
       public emu.grasscutter.net.proto.MainCoopOuterClass.MainCoopOrBuilder getMainCoopListOrBuilder(
           int index) {
@@ -720,7 +728,7 @@ public final class AllCoopInfoNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .MainCoop main_coop_list = 14;</code>
+       * <code>repeated .MainCoop main_coop_list = 10;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.MainCoopOuterClass.MainCoopOrBuilder> 
            getMainCoopListOrBuilderList() {
@@ -731,14 +739,14 @@ public final class AllCoopInfoNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .MainCoop main_coop_list = 14;</code>
+       * <code>repeated .MainCoop main_coop_list = 10;</code>
        */
       public emu.grasscutter.net.proto.MainCoopOuterClass.MainCoop.Builder addMainCoopListBuilder() {
         return getMainCoopListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.MainCoopOuterClass.MainCoop.getDefaultInstance());
       }
       /**
-       * <code>repeated .MainCoop main_coop_list = 14;</code>
+       * <code>repeated .MainCoop main_coop_list = 10;</code>
        */
       public emu.grasscutter.net.proto.MainCoopOuterClass.MainCoop.Builder addMainCoopListBuilder(
           int index) {
@@ -746,7 +754,7 @@ public final class AllCoopInfoNotifyOuterClass {
             index, emu.grasscutter.net.proto.MainCoopOuterClass.MainCoop.getDefaultInstance());
       }
       /**
-       * <code>repeated .MainCoop main_coop_list = 14;</code>
+       * <code>repeated .MainCoop main_coop_list = 10;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.MainCoopOuterClass.MainCoop.Builder> 
            getMainCoopListBuilderList() {
@@ -835,7 +843,7 @@ public final class AllCoopInfoNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n\027AllCoopInfoNotify.proto\032\016MainCoop.prot" +
       "o\"6\n\021AllCoopInfoNotify\022!\n\016main_coop_list" +
-      "\030\016 \003(\0132\t.MainCoopB\033\n\031emu.grasscutter.net" +
+      "\030\n \003(\0132\t.MainCoopB\033\n\031emu.grasscutter.net" +
       ".protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

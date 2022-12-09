@@ -19,28 +19,32 @@ public final class SummerTimeSprintBoatRestartRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 10;</code>
-     * @return The retcode.
-     */
-    int getRetcode();
-
-    /**
-     * <code>uint32 schedule_id = 5;</code>
+     * <code>uint32 schedule_id = 13;</code>
      * @return The scheduleId.
      */
     int getScheduleId();
 
     /**
-     * <code>uint32 group_id = 4;</code>
+     * <code>uint32 group_id = 11;</code>
      * @return The groupId.
      */
     int getGroupId();
+
+    /**
+     * <code>int32 retcode = 3;</code>
+     * @return The retcode.
+     */
+    int getRetcode();
   }
   /**
    * <pre>
-   * CmdId: 8356
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 8466;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code SummerTimeSprintBoatRestartRsp}
@@ -87,19 +91,19 @@ public final class SummerTimeSprintBoatRestartRspOuterClass {
             case 0:
               done = true;
               break;
-            case 32: {
+            case 24: {
+
+              retcode_ = input.readInt32();
+              break;
+            }
+            case 88: {
 
               groupId_ = input.readUInt32();
               break;
             }
-            case 40: {
+            case 104: {
 
               scheduleId_ = input.readUInt32();
-              break;
-            }
-            case 80: {
-
-              retcode_ = input.readInt32();
               break;
             }
             default: {
@@ -134,21 +138,10 @@ public final class SummerTimeSprintBoatRestartRspOuterClass {
               emu.grasscutter.net.proto.SummerTimeSprintBoatRestartRspOuterClass.SummerTimeSprintBoatRestartRsp.class, emu.grasscutter.net.proto.SummerTimeSprintBoatRestartRspOuterClass.SummerTimeSprintBoatRestartRsp.Builder.class);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 10;
-    private int retcode_;
-    /**
-     * <code>int32 retcode = 10;</code>
-     * @return The retcode.
-     */
-    @java.lang.Override
-    public int getRetcode() {
-      return retcode_;
-    }
-
-    public static final int SCHEDULE_ID_FIELD_NUMBER = 5;
+    public static final int SCHEDULE_ID_FIELD_NUMBER = 13;
     private int scheduleId_;
     /**
-     * <code>uint32 schedule_id = 5;</code>
+     * <code>uint32 schedule_id = 13;</code>
      * @return The scheduleId.
      */
     @java.lang.Override
@@ -156,15 +149,26 @@ public final class SummerTimeSprintBoatRestartRspOuterClass {
       return scheduleId_;
     }
 
-    public static final int GROUP_ID_FIELD_NUMBER = 4;
+    public static final int GROUP_ID_FIELD_NUMBER = 11;
     private int groupId_;
     /**
-     * <code>uint32 group_id = 4;</code>
+     * <code>uint32 group_id = 11;</code>
      * @return The groupId.
      */
     @java.lang.Override
     public int getGroupId() {
       return groupId_;
+    }
+
+    public static final int RETCODE_FIELD_NUMBER = 3;
+    private int retcode_;
+    /**
+     * <code>int32 retcode = 3;</code>
+     * @return The retcode.
+     */
+    @java.lang.Override
+    public int getRetcode() {
+      return retcode_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -181,14 +185,14 @@ public final class SummerTimeSprintBoatRestartRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (retcode_ != 0) {
+        output.writeInt32(3, retcode_);
+      }
       if (groupId_ != 0) {
-        output.writeUInt32(4, groupId_);
+        output.writeUInt32(11, groupId_);
       }
       if (scheduleId_ != 0) {
-        output.writeUInt32(5, scheduleId_);
-      }
-      if (retcode_ != 0) {
-        output.writeInt32(10, retcode_);
+        output.writeUInt32(13, scheduleId_);
       }
       unknownFields.writeTo(output);
     }
@@ -199,17 +203,17 @@ public final class SummerTimeSprintBoatRestartRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (retcode_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(3, retcode_);
+      }
       if (groupId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, groupId_);
+          .computeUInt32Size(11, groupId_);
       }
       if (scheduleId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, scheduleId_);
-      }
-      if (retcode_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(10, retcode_);
+          .computeUInt32Size(13, scheduleId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -226,12 +230,12 @@ public final class SummerTimeSprintBoatRestartRspOuterClass {
       }
       emu.grasscutter.net.proto.SummerTimeSprintBoatRestartRspOuterClass.SummerTimeSprintBoatRestartRsp other = (emu.grasscutter.net.proto.SummerTimeSprintBoatRestartRspOuterClass.SummerTimeSprintBoatRestartRsp) obj;
 
-      if (getRetcode()
-          != other.getRetcode()) return false;
       if (getScheduleId()
           != other.getScheduleId()) return false;
       if (getGroupId()
           != other.getGroupId()) return false;
+      if (getRetcode()
+          != other.getRetcode()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -243,12 +247,12 @@ public final class SummerTimeSprintBoatRestartRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
-      hash = (53 * hash) + getRetcode();
       hash = (37 * hash) + SCHEDULE_ID_FIELD_NUMBER;
       hash = (53 * hash) + getScheduleId();
       hash = (37 * hash) + GROUP_ID_FIELD_NUMBER;
       hash = (53 * hash) + getGroupId();
+      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
+      hash = (53 * hash) + getRetcode();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -346,9 +350,13 @@ public final class SummerTimeSprintBoatRestartRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 8356
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 8466;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code SummerTimeSprintBoatRestartRsp}
@@ -388,11 +396,11 @@ public final class SummerTimeSprintBoatRestartRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        retcode_ = 0;
-
         scheduleId_ = 0;
 
         groupId_ = 0;
+
+        retcode_ = 0;
 
         return this;
       }
@@ -420,9 +428,9 @@ public final class SummerTimeSprintBoatRestartRspOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.SummerTimeSprintBoatRestartRspOuterClass.SummerTimeSprintBoatRestartRsp buildPartial() {
         emu.grasscutter.net.proto.SummerTimeSprintBoatRestartRspOuterClass.SummerTimeSprintBoatRestartRsp result = new emu.grasscutter.net.proto.SummerTimeSprintBoatRestartRspOuterClass.SummerTimeSprintBoatRestartRsp(this);
-        result.retcode_ = retcode_;
         result.scheduleId_ = scheduleId_;
         result.groupId_ = groupId_;
+        result.retcode_ = retcode_;
         onBuilt();
         return result;
       }
@@ -471,14 +479,14 @@ public final class SummerTimeSprintBoatRestartRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.SummerTimeSprintBoatRestartRspOuterClass.SummerTimeSprintBoatRestartRsp other) {
         if (other == emu.grasscutter.net.proto.SummerTimeSprintBoatRestartRspOuterClass.SummerTimeSprintBoatRestartRsp.getDefaultInstance()) return this;
-        if (other.getRetcode() != 0) {
-          setRetcode(other.getRetcode());
-        }
         if (other.getScheduleId() != 0) {
           setScheduleId(other.getScheduleId());
         }
         if (other.getGroupId() != 0) {
           setGroupId(other.getGroupId());
+        }
+        if (other.getRetcode() != 0) {
+          setRetcode(other.getRetcode());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -509,40 +517,9 @@ public final class SummerTimeSprintBoatRestartRspOuterClass {
         return this;
       }
 
-      private int retcode_ ;
-      /**
-       * <code>int32 retcode = 10;</code>
-       * @return The retcode.
-       */
-      @java.lang.Override
-      public int getRetcode() {
-        return retcode_;
-      }
-      /**
-       * <code>int32 retcode = 10;</code>
-       * @param value The retcode to set.
-       * @return This builder for chaining.
-       */
-      public Builder setRetcode(int value) {
-        
-        retcode_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>int32 retcode = 10;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearRetcode() {
-        
-        retcode_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int scheduleId_ ;
       /**
-       * <code>uint32 schedule_id = 5;</code>
+       * <code>uint32 schedule_id = 13;</code>
        * @return The scheduleId.
        */
       @java.lang.Override
@@ -550,7 +527,7 @@ public final class SummerTimeSprintBoatRestartRspOuterClass {
         return scheduleId_;
       }
       /**
-       * <code>uint32 schedule_id = 5;</code>
+       * <code>uint32 schedule_id = 13;</code>
        * @param value The scheduleId to set.
        * @return This builder for chaining.
        */
@@ -561,7 +538,7 @@ public final class SummerTimeSprintBoatRestartRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 schedule_id = 5;</code>
+       * <code>uint32 schedule_id = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearScheduleId() {
@@ -573,7 +550,7 @@ public final class SummerTimeSprintBoatRestartRspOuterClass {
 
       private int groupId_ ;
       /**
-       * <code>uint32 group_id = 4;</code>
+       * <code>uint32 group_id = 11;</code>
        * @return The groupId.
        */
       @java.lang.Override
@@ -581,7 +558,7 @@ public final class SummerTimeSprintBoatRestartRspOuterClass {
         return groupId_;
       }
       /**
-       * <code>uint32 group_id = 4;</code>
+       * <code>uint32 group_id = 11;</code>
        * @param value The groupId to set.
        * @return This builder for chaining.
        */
@@ -592,12 +569,43 @@ public final class SummerTimeSprintBoatRestartRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 group_id = 4;</code>
+       * <code>uint32 group_id = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearGroupId() {
         
         groupId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int retcode_ ;
+      /**
+       * <code>int32 retcode = 3;</code>
+       * @return The retcode.
+       */
+      @java.lang.Override
+      public int getRetcode() {
+        return retcode_;
+      }
+      /**
+       * <code>int32 retcode = 3;</code>
+       * @param value The retcode to set.
+       * @return This builder for chaining.
+       */
+      public Builder setRetcode(int value) {
+        
+        retcode_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 retcode = 3;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearRetcode() {
+        
+        retcode_ = 0;
         onChanged();
         return this;
       }
@@ -669,9 +677,9 @@ public final class SummerTimeSprintBoatRestartRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n$SummerTimeSprintBoatRestartRsp.proto\"X" +
-      "\n\036SummerTimeSprintBoatRestartRsp\022\017\n\007retc" +
-      "ode\030\n \001(\005\022\023\n\013schedule_id\030\005 \001(\r\022\020\n\010group_" +
-      "id\030\004 \001(\rB\033\n\031emu.grasscutter.net.protob\006p" +
+      "\n\036SummerTimeSprintBoatRestartRsp\022\023\n\013sche" +
+      "dule_id\030\r \001(\r\022\020\n\010group_id\030\013 \001(\r\022\017\n\007retco" +
+      "de\030\003 \001(\005B\033\n\031emu.grasscutter.net.protob\006p" +
       "roto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -683,7 +691,7 @@ public final class SummerTimeSprintBoatRestartRspOuterClass {
     internal_static_SummerTimeSprintBoatRestartRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SummerTimeSprintBoatRestartRsp_descriptor,
-        new java.lang.String[] { "Retcode", "ScheduleId", "GroupId", });
+        new java.lang.String[] { "ScheduleId", "GroupId", "Retcode", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

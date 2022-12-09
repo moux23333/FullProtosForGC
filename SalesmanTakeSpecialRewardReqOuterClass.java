@@ -19,17 +19,21 @@ public final class SalesmanTakeSpecialRewardReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 schedule_id = 13;</code>
+     * <code>uint32 schedule_id = 11;</code>
      * @return The scheduleId.
      */
     int getScheduleId();
   }
   /**
    * <pre>
-   * CmdId: 2145
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 2067;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code SalesmanTakeSpecialRewardReq}
@@ -76,7 +80,7 @@ public final class SalesmanTakeSpecialRewardReqOuterClass {
             case 0:
               done = true;
               break;
-            case 104: {
+            case 88: {
 
               scheduleId_ = input.readUInt32();
               break;
@@ -113,10 +117,10 @@ public final class SalesmanTakeSpecialRewardReqOuterClass {
               emu.grasscutter.net.proto.SalesmanTakeSpecialRewardReqOuterClass.SalesmanTakeSpecialRewardReq.class, emu.grasscutter.net.proto.SalesmanTakeSpecialRewardReqOuterClass.SalesmanTakeSpecialRewardReq.Builder.class);
     }
 
-    public static final int SCHEDULE_ID_FIELD_NUMBER = 13;
+    public static final int SCHEDULE_ID_FIELD_NUMBER = 11;
     private int scheduleId_;
     /**
-     * <code>uint32 schedule_id = 13;</code>
+     * <code>uint32 schedule_id = 11;</code>
      * @return The scheduleId.
      */
     @java.lang.Override
@@ -139,7 +143,7 @@ public final class SalesmanTakeSpecialRewardReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (scheduleId_ != 0) {
-        output.writeUInt32(13, scheduleId_);
+        output.writeUInt32(11, scheduleId_);
       }
       unknownFields.writeTo(output);
     }
@@ -152,7 +156,7 @@ public final class SalesmanTakeSpecialRewardReqOuterClass {
       size = 0;
       if (scheduleId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, scheduleId_);
+          .computeUInt32Size(11, scheduleId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -281,10 +285,14 @@ public final class SalesmanTakeSpecialRewardReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 2145
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 2067;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code SalesmanTakeSpecialRewardReq}
@@ -435,7 +443,7 @@ public final class SalesmanTakeSpecialRewardReqOuterClass {
 
       private int scheduleId_ ;
       /**
-       * <code>uint32 schedule_id = 13;</code>
+       * <code>uint32 schedule_id = 11;</code>
        * @return The scheduleId.
        */
       @java.lang.Override
@@ -443,7 +451,7 @@ public final class SalesmanTakeSpecialRewardReqOuterClass {
         return scheduleId_;
       }
       /**
-       * <code>uint32 schedule_id = 13;</code>
+       * <code>uint32 schedule_id = 11;</code>
        * @param value The scheduleId to set.
        * @return This builder for chaining.
        */
@@ -454,7 +462,7 @@ public final class SalesmanTakeSpecialRewardReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 schedule_id = 13;</code>
+       * <code>uint32 schedule_id = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearScheduleId() {
@@ -532,7 +540,7 @@ public final class SalesmanTakeSpecialRewardReqOuterClass {
     java.lang.String[] descriptorData = {
       "\n\"SalesmanTakeSpecialRewardReq.proto\"3\n\034" +
       "SalesmanTakeSpecialRewardReq\022\023\n\013schedule" +
-      "_id\030\r \001(\rB\033\n\031emu.grasscutter.net.protob\006" +
+      "_id\030\013 \001(\rB\033\n\031emu.grasscutter.net.protob\006" +
       "proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

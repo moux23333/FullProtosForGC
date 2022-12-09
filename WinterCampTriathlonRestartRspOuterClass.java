@@ -19,22 +19,26 @@ public final class WinterCampTriathlonRestartRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
+     * <code>uint32 gallery_id = 9;</code>
+     * @return The galleryId.
+     */
+    int getGalleryId();
+
+    /**
      * <code>int32 retcode = 10;</code>
      * @return The retcode.
      */
     int getRetcode();
-
-    /**
-     * <code>uint32 gallery_id = 14;</code>
-     * @return The galleryId.
-     */
-    int getGalleryId();
   }
   /**
    * <pre>
-   * CmdId: 8569
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 8468;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code WinterCampTriathlonRestartRsp}
@@ -81,14 +85,14 @@ public final class WinterCampTriathlonRestartRspOuterClass {
             case 0:
               done = true;
               break;
+            case 72: {
+
+              galleryId_ = input.readUInt32();
+              break;
+            }
             case 80: {
 
               retcode_ = input.readInt32();
-              break;
-            }
-            case 112: {
-
-              galleryId_ = input.readUInt32();
               break;
             }
             default: {
@@ -123,6 +127,17 @@ public final class WinterCampTriathlonRestartRspOuterClass {
               emu.grasscutter.net.proto.WinterCampTriathlonRestartRspOuterClass.WinterCampTriathlonRestartRsp.class, emu.grasscutter.net.proto.WinterCampTriathlonRestartRspOuterClass.WinterCampTriathlonRestartRsp.Builder.class);
     }
 
+    public static final int GALLERY_ID_FIELD_NUMBER = 9;
+    private int galleryId_;
+    /**
+     * <code>uint32 gallery_id = 9;</code>
+     * @return The galleryId.
+     */
+    @java.lang.Override
+    public int getGalleryId() {
+      return galleryId_;
+    }
+
     public static final int RETCODE_FIELD_NUMBER = 10;
     private int retcode_;
     /**
@@ -132,17 +147,6 @@ public final class WinterCampTriathlonRestartRspOuterClass {
     @java.lang.Override
     public int getRetcode() {
       return retcode_;
-    }
-
-    public static final int GALLERY_ID_FIELD_NUMBER = 14;
-    private int galleryId_;
-    /**
-     * <code>uint32 gallery_id = 14;</code>
-     * @return The galleryId.
-     */
-    @java.lang.Override
-    public int getGalleryId() {
-      return galleryId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -159,11 +163,11 @@ public final class WinterCampTriathlonRestartRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (galleryId_ != 0) {
+        output.writeUInt32(9, galleryId_);
+      }
       if (retcode_ != 0) {
         output.writeInt32(10, retcode_);
-      }
-      if (galleryId_ != 0) {
-        output.writeUInt32(14, galleryId_);
       }
       unknownFields.writeTo(output);
     }
@@ -174,13 +178,13 @@ public final class WinterCampTriathlonRestartRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (galleryId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(9, galleryId_);
+      }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeInt32Size(10, retcode_);
-      }
-      if (galleryId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, galleryId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -197,10 +201,10 @@ public final class WinterCampTriathlonRestartRspOuterClass {
       }
       emu.grasscutter.net.proto.WinterCampTriathlonRestartRspOuterClass.WinterCampTriathlonRestartRsp other = (emu.grasscutter.net.proto.WinterCampTriathlonRestartRspOuterClass.WinterCampTriathlonRestartRsp) obj;
 
-      if (getRetcode()
-          != other.getRetcode()) return false;
       if (getGalleryId()
           != other.getGalleryId()) return false;
+      if (getRetcode()
+          != other.getRetcode()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -212,10 +216,10 @@ public final class WinterCampTriathlonRestartRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
-      hash = (53 * hash) + getRetcode();
       hash = (37 * hash) + GALLERY_ID_FIELD_NUMBER;
       hash = (53 * hash) + getGalleryId();
+      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
+      hash = (53 * hash) + getRetcode();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -313,9 +317,13 @@ public final class WinterCampTriathlonRestartRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 8569
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 8468;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code WinterCampTriathlonRestartRsp}
@@ -355,9 +363,9 @@ public final class WinterCampTriathlonRestartRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        retcode_ = 0;
-
         galleryId_ = 0;
+
+        retcode_ = 0;
 
         return this;
       }
@@ -385,8 +393,8 @@ public final class WinterCampTriathlonRestartRspOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.WinterCampTriathlonRestartRspOuterClass.WinterCampTriathlonRestartRsp buildPartial() {
         emu.grasscutter.net.proto.WinterCampTriathlonRestartRspOuterClass.WinterCampTriathlonRestartRsp result = new emu.grasscutter.net.proto.WinterCampTriathlonRestartRspOuterClass.WinterCampTriathlonRestartRsp(this);
-        result.retcode_ = retcode_;
         result.galleryId_ = galleryId_;
+        result.retcode_ = retcode_;
         onBuilt();
         return result;
       }
@@ -435,11 +443,11 @@ public final class WinterCampTriathlonRestartRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.WinterCampTriathlonRestartRspOuterClass.WinterCampTriathlonRestartRsp other) {
         if (other == emu.grasscutter.net.proto.WinterCampTriathlonRestartRspOuterClass.WinterCampTriathlonRestartRsp.getDefaultInstance()) return this;
-        if (other.getRetcode() != 0) {
-          setRetcode(other.getRetcode());
-        }
         if (other.getGalleryId() != 0) {
           setGalleryId(other.getGalleryId());
+        }
+        if (other.getRetcode() != 0) {
+          setRetcode(other.getRetcode());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -470,6 +478,37 @@ public final class WinterCampTriathlonRestartRspOuterClass {
         return this;
       }
 
+      private int galleryId_ ;
+      /**
+       * <code>uint32 gallery_id = 9;</code>
+       * @return The galleryId.
+       */
+      @java.lang.Override
+      public int getGalleryId() {
+        return galleryId_;
+      }
+      /**
+       * <code>uint32 gallery_id = 9;</code>
+       * @param value The galleryId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setGalleryId(int value) {
+        
+        galleryId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 gallery_id = 9;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearGalleryId() {
+        
+        galleryId_ = 0;
+        onChanged();
+        return this;
+      }
+
       private int retcode_ ;
       /**
        * <code>int32 retcode = 10;</code>
@@ -497,37 +536,6 @@ public final class WinterCampTriathlonRestartRspOuterClass {
       public Builder clearRetcode() {
         
         retcode_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int galleryId_ ;
-      /**
-       * <code>uint32 gallery_id = 14;</code>
-       * @return The galleryId.
-       */
-      @java.lang.Override
-      public int getGalleryId() {
-        return galleryId_;
-      }
-      /**
-       * <code>uint32 gallery_id = 14;</code>
-       * @param value The galleryId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setGalleryId(int value) {
-        
-        galleryId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 gallery_id = 14;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearGalleryId() {
-        
-        galleryId_ = 0;
         onChanged();
         return this;
       }
@@ -599,8 +607,8 @@ public final class WinterCampTriathlonRestartRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n#WinterCampTriathlonRestartRsp.proto\"D\n" +
-      "\035WinterCampTriathlonRestartRsp\022\017\n\007retcod" +
-      "e\030\n \001(\005\022\022\n\ngallery_id\030\016 \001(\rB\033\n\031emu.grass" +
+      "\035WinterCampTriathlonRestartRsp\022\022\n\ngaller" +
+      "y_id\030\t \001(\r\022\017\n\007retcode\030\n \001(\005B\033\n\031emu.grass" +
       "cutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -612,7 +620,7 @@ public final class WinterCampTriathlonRestartRspOuterClass {
     internal_static_WinterCampTriathlonRestartRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_WinterCampTriathlonRestartRsp_descriptor,
-        new java.lang.String[] { "Retcode", "GalleryId", });
+        new java.lang.String[] { "GalleryId", "Retcode", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

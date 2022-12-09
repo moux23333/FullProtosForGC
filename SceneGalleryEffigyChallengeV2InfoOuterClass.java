@@ -19,34 +19,34 @@ public final class SceneGalleryEffigyChallengeV2InfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 killed_monster_cnt = 10;</code>
-     * @return The killedMonsterCnt.
+     * <code>uint32 Unk3300_MICPCKIOEJA = 1;</code>
+     * @return The unk3300MICPCKIOEJA.
      */
-    int getKilledMonsterCnt();
+    int getUnk3300MICPCKIOEJA();
 
     /**
-     * <code>uint32 total_target_kill_cnt = 15;</code>
-     * @return The totalTargetKillCnt.
+     * <code>uint32 Unk3300_BMPCKGJAGPE = 8;</code>
+     * @return The unk3300BMPCKGJAGPE.
      */
-    int getTotalTargetKillCnt();
+    int getUnk3300BMPCKGJAGPE();
 
     /**
-     * <code>uint32 scene_start_time = 14;</code>
-     * @return The sceneStartTime.
+     * <code>uint32 Unk3300_EOGAPBOFHOP = 2;</code>
+     * @return The unk3300EOGAPBOFHOP.
      */
-    int getSceneStartTime();
+    int getUnk3300EOGAPBOFHOP();
 
     /**
-     * <code>uint32 t_remain_use_time = 6;</code>
-     * @return The tRemainUseTime.
+     * <code>uint32 Unk3300_MBHBNIPEPNJ = 7;</code>
+     * @return The unk3300MBHBNIPEPNJ.
      */
-    int getTRemainUseTime();
+    int getUnk3300MBHBNIPEPNJ();
 
     /**
-     * <code>uint32 boss_violent_level = 9;</code>
-     * @return The bossViolentLevel.
+     * <code>uint32 Unk3300_AIEEGIBMOFH = 11;</code>
+     * @return The unk3300AIEEGIBMOFH.
      */
-    int getBossViolentLevel();
+    int getUnk3300AIEEGIBMOFH();
   }
   /**
    * Protobuf type {@code SceneGalleryEffigyChallengeV2Info}
@@ -93,29 +93,29 @@ public final class SceneGalleryEffigyChallengeV2InfoOuterClass {
             case 0:
               done = true;
               break;
-            case 48: {
+            case 8: {
 
-              tRemainUseTime_ = input.readUInt32();
+              unk3300MICPCKIOEJA_ = input.readUInt32();
               break;
             }
-            case 72: {
+            case 16: {
 
-              bossViolentLevel_ = input.readUInt32();
+              unk3300EOGAPBOFHOP_ = input.readUInt32();
               break;
             }
-            case 80: {
+            case 56: {
 
-              killedMonsterCnt_ = input.readUInt32();
+              unk3300MBHBNIPEPNJ_ = input.readUInt32();
               break;
             }
-            case 112: {
+            case 64: {
 
-              sceneStartTime_ = input.readUInt32();
+              unk3300BMPCKGJAGPE_ = input.readUInt32();
               break;
             }
-            case 120: {
+            case 88: {
 
-              totalTargetKillCnt_ = input.readUInt32();
+              unk3300AIEEGIBMOFH_ = input.readUInt32();
               break;
             }
             default: {
@@ -150,59 +150,59 @@ public final class SceneGalleryEffigyChallengeV2InfoOuterClass {
               emu.grasscutter.net.proto.SceneGalleryEffigyChallengeV2InfoOuterClass.SceneGalleryEffigyChallengeV2Info.class, emu.grasscutter.net.proto.SceneGalleryEffigyChallengeV2InfoOuterClass.SceneGalleryEffigyChallengeV2Info.Builder.class);
     }
 
-    public static final int KILLED_MONSTER_CNT_FIELD_NUMBER = 10;
-    private int killedMonsterCnt_;
+    public static final int UNK3300_MICPCKIOEJA_FIELD_NUMBER = 1;
+    private int unk3300MICPCKIOEJA_;
     /**
-     * <code>uint32 killed_monster_cnt = 10;</code>
-     * @return The killedMonsterCnt.
+     * <code>uint32 Unk3300_MICPCKIOEJA = 1;</code>
+     * @return The unk3300MICPCKIOEJA.
      */
     @java.lang.Override
-    public int getKilledMonsterCnt() {
-      return killedMonsterCnt_;
+    public int getUnk3300MICPCKIOEJA() {
+      return unk3300MICPCKIOEJA_;
     }
 
-    public static final int TOTAL_TARGET_KILL_CNT_FIELD_NUMBER = 15;
-    private int totalTargetKillCnt_;
+    public static final int UNK3300_BMPCKGJAGPE_FIELD_NUMBER = 8;
+    private int unk3300BMPCKGJAGPE_;
     /**
-     * <code>uint32 total_target_kill_cnt = 15;</code>
-     * @return The totalTargetKillCnt.
+     * <code>uint32 Unk3300_BMPCKGJAGPE = 8;</code>
+     * @return The unk3300BMPCKGJAGPE.
      */
     @java.lang.Override
-    public int getTotalTargetKillCnt() {
-      return totalTargetKillCnt_;
+    public int getUnk3300BMPCKGJAGPE() {
+      return unk3300BMPCKGJAGPE_;
     }
 
-    public static final int SCENE_START_TIME_FIELD_NUMBER = 14;
-    private int sceneStartTime_;
+    public static final int UNK3300_EOGAPBOFHOP_FIELD_NUMBER = 2;
+    private int unk3300EOGAPBOFHOP_;
     /**
-     * <code>uint32 scene_start_time = 14;</code>
-     * @return The sceneStartTime.
+     * <code>uint32 Unk3300_EOGAPBOFHOP = 2;</code>
+     * @return The unk3300EOGAPBOFHOP.
      */
     @java.lang.Override
-    public int getSceneStartTime() {
-      return sceneStartTime_;
+    public int getUnk3300EOGAPBOFHOP() {
+      return unk3300EOGAPBOFHOP_;
     }
 
-    public static final int T_REMAIN_USE_TIME_FIELD_NUMBER = 6;
-    private int tRemainUseTime_;
+    public static final int UNK3300_MBHBNIPEPNJ_FIELD_NUMBER = 7;
+    private int unk3300MBHBNIPEPNJ_;
     /**
-     * <code>uint32 t_remain_use_time = 6;</code>
-     * @return The tRemainUseTime.
+     * <code>uint32 Unk3300_MBHBNIPEPNJ = 7;</code>
+     * @return The unk3300MBHBNIPEPNJ.
      */
     @java.lang.Override
-    public int getTRemainUseTime() {
-      return tRemainUseTime_;
+    public int getUnk3300MBHBNIPEPNJ() {
+      return unk3300MBHBNIPEPNJ_;
     }
 
-    public static final int BOSS_VIOLENT_LEVEL_FIELD_NUMBER = 9;
-    private int bossViolentLevel_;
+    public static final int UNK3300_AIEEGIBMOFH_FIELD_NUMBER = 11;
+    private int unk3300AIEEGIBMOFH_;
     /**
-     * <code>uint32 boss_violent_level = 9;</code>
-     * @return The bossViolentLevel.
+     * <code>uint32 Unk3300_AIEEGIBMOFH = 11;</code>
+     * @return The unk3300AIEEGIBMOFH.
      */
     @java.lang.Override
-    public int getBossViolentLevel() {
-      return bossViolentLevel_;
+    public int getUnk3300AIEEGIBMOFH() {
+      return unk3300AIEEGIBMOFH_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -219,20 +219,20 @@ public final class SceneGalleryEffigyChallengeV2InfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (tRemainUseTime_ != 0) {
-        output.writeUInt32(6, tRemainUseTime_);
+      if (unk3300MICPCKIOEJA_ != 0) {
+        output.writeUInt32(1, unk3300MICPCKIOEJA_);
       }
-      if (bossViolentLevel_ != 0) {
-        output.writeUInt32(9, bossViolentLevel_);
+      if (unk3300EOGAPBOFHOP_ != 0) {
+        output.writeUInt32(2, unk3300EOGAPBOFHOP_);
       }
-      if (killedMonsterCnt_ != 0) {
-        output.writeUInt32(10, killedMonsterCnt_);
+      if (unk3300MBHBNIPEPNJ_ != 0) {
+        output.writeUInt32(7, unk3300MBHBNIPEPNJ_);
       }
-      if (sceneStartTime_ != 0) {
-        output.writeUInt32(14, sceneStartTime_);
+      if (unk3300BMPCKGJAGPE_ != 0) {
+        output.writeUInt32(8, unk3300BMPCKGJAGPE_);
       }
-      if (totalTargetKillCnt_ != 0) {
-        output.writeUInt32(15, totalTargetKillCnt_);
+      if (unk3300AIEEGIBMOFH_ != 0) {
+        output.writeUInt32(11, unk3300AIEEGIBMOFH_);
       }
       unknownFields.writeTo(output);
     }
@@ -243,25 +243,25 @@ public final class SceneGalleryEffigyChallengeV2InfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (tRemainUseTime_ != 0) {
+      if (unk3300MICPCKIOEJA_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, tRemainUseTime_);
+          .computeUInt32Size(1, unk3300MICPCKIOEJA_);
       }
-      if (bossViolentLevel_ != 0) {
+      if (unk3300EOGAPBOFHOP_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, bossViolentLevel_);
+          .computeUInt32Size(2, unk3300EOGAPBOFHOP_);
       }
-      if (killedMonsterCnt_ != 0) {
+      if (unk3300MBHBNIPEPNJ_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, killedMonsterCnt_);
+          .computeUInt32Size(7, unk3300MBHBNIPEPNJ_);
       }
-      if (sceneStartTime_ != 0) {
+      if (unk3300BMPCKGJAGPE_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, sceneStartTime_);
+          .computeUInt32Size(8, unk3300BMPCKGJAGPE_);
       }
-      if (totalTargetKillCnt_ != 0) {
+      if (unk3300AIEEGIBMOFH_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, totalTargetKillCnt_);
+          .computeUInt32Size(11, unk3300AIEEGIBMOFH_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -278,16 +278,16 @@ public final class SceneGalleryEffigyChallengeV2InfoOuterClass {
       }
       emu.grasscutter.net.proto.SceneGalleryEffigyChallengeV2InfoOuterClass.SceneGalleryEffigyChallengeV2Info other = (emu.grasscutter.net.proto.SceneGalleryEffigyChallengeV2InfoOuterClass.SceneGalleryEffigyChallengeV2Info) obj;
 
-      if (getKilledMonsterCnt()
-          != other.getKilledMonsterCnt()) return false;
-      if (getTotalTargetKillCnt()
-          != other.getTotalTargetKillCnt()) return false;
-      if (getSceneStartTime()
-          != other.getSceneStartTime()) return false;
-      if (getTRemainUseTime()
-          != other.getTRemainUseTime()) return false;
-      if (getBossViolentLevel()
-          != other.getBossViolentLevel()) return false;
+      if (getUnk3300MICPCKIOEJA()
+          != other.getUnk3300MICPCKIOEJA()) return false;
+      if (getUnk3300BMPCKGJAGPE()
+          != other.getUnk3300BMPCKGJAGPE()) return false;
+      if (getUnk3300EOGAPBOFHOP()
+          != other.getUnk3300EOGAPBOFHOP()) return false;
+      if (getUnk3300MBHBNIPEPNJ()
+          != other.getUnk3300MBHBNIPEPNJ()) return false;
+      if (getUnk3300AIEEGIBMOFH()
+          != other.getUnk3300AIEEGIBMOFH()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -299,16 +299,16 @@ public final class SceneGalleryEffigyChallengeV2InfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + KILLED_MONSTER_CNT_FIELD_NUMBER;
-      hash = (53 * hash) + getKilledMonsterCnt();
-      hash = (37 * hash) + TOTAL_TARGET_KILL_CNT_FIELD_NUMBER;
-      hash = (53 * hash) + getTotalTargetKillCnt();
-      hash = (37 * hash) + SCENE_START_TIME_FIELD_NUMBER;
-      hash = (53 * hash) + getSceneStartTime();
-      hash = (37 * hash) + T_REMAIN_USE_TIME_FIELD_NUMBER;
-      hash = (53 * hash) + getTRemainUseTime();
-      hash = (37 * hash) + BOSS_VIOLENT_LEVEL_FIELD_NUMBER;
-      hash = (53 * hash) + getBossViolentLevel();
+      hash = (37 * hash) + UNK3300_MICPCKIOEJA_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300MICPCKIOEJA();
+      hash = (37 * hash) + UNK3300_BMPCKGJAGPE_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300BMPCKGJAGPE();
+      hash = (37 * hash) + UNK3300_EOGAPBOFHOP_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300EOGAPBOFHOP();
+      hash = (37 * hash) + UNK3300_MBHBNIPEPNJ_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300MBHBNIPEPNJ();
+      hash = (37 * hash) + UNK3300_AIEEGIBMOFH_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300AIEEGIBMOFH();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -442,15 +442,15 @@ public final class SceneGalleryEffigyChallengeV2InfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        killedMonsterCnt_ = 0;
+        unk3300MICPCKIOEJA_ = 0;
 
-        totalTargetKillCnt_ = 0;
+        unk3300BMPCKGJAGPE_ = 0;
 
-        sceneStartTime_ = 0;
+        unk3300EOGAPBOFHOP_ = 0;
 
-        tRemainUseTime_ = 0;
+        unk3300MBHBNIPEPNJ_ = 0;
 
-        bossViolentLevel_ = 0;
+        unk3300AIEEGIBMOFH_ = 0;
 
         return this;
       }
@@ -478,11 +478,11 @@ public final class SceneGalleryEffigyChallengeV2InfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.SceneGalleryEffigyChallengeV2InfoOuterClass.SceneGalleryEffigyChallengeV2Info buildPartial() {
         emu.grasscutter.net.proto.SceneGalleryEffigyChallengeV2InfoOuterClass.SceneGalleryEffigyChallengeV2Info result = new emu.grasscutter.net.proto.SceneGalleryEffigyChallengeV2InfoOuterClass.SceneGalleryEffigyChallengeV2Info(this);
-        result.killedMonsterCnt_ = killedMonsterCnt_;
-        result.totalTargetKillCnt_ = totalTargetKillCnt_;
-        result.sceneStartTime_ = sceneStartTime_;
-        result.tRemainUseTime_ = tRemainUseTime_;
-        result.bossViolentLevel_ = bossViolentLevel_;
+        result.unk3300MICPCKIOEJA_ = unk3300MICPCKIOEJA_;
+        result.unk3300BMPCKGJAGPE_ = unk3300BMPCKGJAGPE_;
+        result.unk3300EOGAPBOFHOP_ = unk3300EOGAPBOFHOP_;
+        result.unk3300MBHBNIPEPNJ_ = unk3300MBHBNIPEPNJ_;
+        result.unk3300AIEEGIBMOFH_ = unk3300AIEEGIBMOFH_;
         onBuilt();
         return result;
       }
@@ -531,20 +531,20 @@ public final class SceneGalleryEffigyChallengeV2InfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.SceneGalleryEffigyChallengeV2InfoOuterClass.SceneGalleryEffigyChallengeV2Info other) {
         if (other == emu.grasscutter.net.proto.SceneGalleryEffigyChallengeV2InfoOuterClass.SceneGalleryEffigyChallengeV2Info.getDefaultInstance()) return this;
-        if (other.getKilledMonsterCnt() != 0) {
-          setKilledMonsterCnt(other.getKilledMonsterCnt());
+        if (other.getUnk3300MICPCKIOEJA() != 0) {
+          setUnk3300MICPCKIOEJA(other.getUnk3300MICPCKIOEJA());
         }
-        if (other.getTotalTargetKillCnt() != 0) {
-          setTotalTargetKillCnt(other.getTotalTargetKillCnt());
+        if (other.getUnk3300BMPCKGJAGPE() != 0) {
+          setUnk3300BMPCKGJAGPE(other.getUnk3300BMPCKGJAGPE());
         }
-        if (other.getSceneStartTime() != 0) {
-          setSceneStartTime(other.getSceneStartTime());
+        if (other.getUnk3300EOGAPBOFHOP() != 0) {
+          setUnk3300EOGAPBOFHOP(other.getUnk3300EOGAPBOFHOP());
         }
-        if (other.getTRemainUseTime() != 0) {
-          setTRemainUseTime(other.getTRemainUseTime());
+        if (other.getUnk3300MBHBNIPEPNJ() != 0) {
+          setUnk3300MBHBNIPEPNJ(other.getUnk3300MBHBNIPEPNJ());
         }
-        if (other.getBossViolentLevel() != 0) {
-          setBossViolentLevel(other.getBossViolentLevel());
+        if (other.getUnk3300AIEEGIBMOFH() != 0) {
+          setUnk3300AIEEGIBMOFH(other.getUnk3300AIEEGIBMOFH());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -575,157 +575,157 @@ public final class SceneGalleryEffigyChallengeV2InfoOuterClass {
         return this;
       }
 
-      private int killedMonsterCnt_ ;
+      private int unk3300MICPCKIOEJA_ ;
       /**
-       * <code>uint32 killed_monster_cnt = 10;</code>
-       * @return The killedMonsterCnt.
+       * <code>uint32 Unk3300_MICPCKIOEJA = 1;</code>
+       * @return The unk3300MICPCKIOEJA.
        */
       @java.lang.Override
-      public int getKilledMonsterCnt() {
-        return killedMonsterCnt_;
+      public int getUnk3300MICPCKIOEJA() {
+        return unk3300MICPCKIOEJA_;
       }
       /**
-       * <code>uint32 killed_monster_cnt = 10;</code>
-       * @param value The killedMonsterCnt to set.
+       * <code>uint32 Unk3300_MICPCKIOEJA = 1;</code>
+       * @param value The unk3300MICPCKIOEJA to set.
        * @return This builder for chaining.
        */
-      public Builder setKilledMonsterCnt(int value) {
+      public Builder setUnk3300MICPCKIOEJA(int value) {
         
-        killedMonsterCnt_ = value;
+        unk3300MICPCKIOEJA_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 killed_monster_cnt = 10;</code>
+       * <code>uint32 Unk3300_MICPCKIOEJA = 1;</code>
        * @return This builder for chaining.
        */
-      public Builder clearKilledMonsterCnt() {
+      public Builder clearUnk3300MICPCKIOEJA() {
         
-        killedMonsterCnt_ = 0;
+        unk3300MICPCKIOEJA_ = 0;
         onChanged();
         return this;
       }
 
-      private int totalTargetKillCnt_ ;
+      private int unk3300BMPCKGJAGPE_ ;
       /**
-       * <code>uint32 total_target_kill_cnt = 15;</code>
-       * @return The totalTargetKillCnt.
+       * <code>uint32 Unk3300_BMPCKGJAGPE = 8;</code>
+       * @return The unk3300BMPCKGJAGPE.
        */
       @java.lang.Override
-      public int getTotalTargetKillCnt() {
-        return totalTargetKillCnt_;
+      public int getUnk3300BMPCKGJAGPE() {
+        return unk3300BMPCKGJAGPE_;
       }
       /**
-       * <code>uint32 total_target_kill_cnt = 15;</code>
-       * @param value The totalTargetKillCnt to set.
+       * <code>uint32 Unk3300_BMPCKGJAGPE = 8;</code>
+       * @param value The unk3300BMPCKGJAGPE to set.
        * @return This builder for chaining.
        */
-      public Builder setTotalTargetKillCnt(int value) {
+      public Builder setUnk3300BMPCKGJAGPE(int value) {
         
-        totalTargetKillCnt_ = value;
+        unk3300BMPCKGJAGPE_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 total_target_kill_cnt = 15;</code>
+       * <code>uint32 Unk3300_BMPCKGJAGPE = 8;</code>
        * @return This builder for chaining.
        */
-      public Builder clearTotalTargetKillCnt() {
+      public Builder clearUnk3300BMPCKGJAGPE() {
         
-        totalTargetKillCnt_ = 0;
+        unk3300BMPCKGJAGPE_ = 0;
         onChanged();
         return this;
       }
 
-      private int sceneStartTime_ ;
+      private int unk3300EOGAPBOFHOP_ ;
       /**
-       * <code>uint32 scene_start_time = 14;</code>
-       * @return The sceneStartTime.
+       * <code>uint32 Unk3300_EOGAPBOFHOP = 2;</code>
+       * @return The unk3300EOGAPBOFHOP.
        */
       @java.lang.Override
-      public int getSceneStartTime() {
-        return sceneStartTime_;
+      public int getUnk3300EOGAPBOFHOP() {
+        return unk3300EOGAPBOFHOP_;
       }
       /**
-       * <code>uint32 scene_start_time = 14;</code>
-       * @param value The sceneStartTime to set.
+       * <code>uint32 Unk3300_EOGAPBOFHOP = 2;</code>
+       * @param value The unk3300EOGAPBOFHOP to set.
        * @return This builder for chaining.
        */
-      public Builder setSceneStartTime(int value) {
+      public Builder setUnk3300EOGAPBOFHOP(int value) {
         
-        sceneStartTime_ = value;
+        unk3300EOGAPBOFHOP_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 scene_start_time = 14;</code>
+       * <code>uint32 Unk3300_EOGAPBOFHOP = 2;</code>
        * @return This builder for chaining.
        */
-      public Builder clearSceneStartTime() {
+      public Builder clearUnk3300EOGAPBOFHOP() {
         
-        sceneStartTime_ = 0;
+        unk3300EOGAPBOFHOP_ = 0;
         onChanged();
         return this;
       }
 
-      private int tRemainUseTime_ ;
+      private int unk3300MBHBNIPEPNJ_ ;
       /**
-       * <code>uint32 t_remain_use_time = 6;</code>
-       * @return The tRemainUseTime.
+       * <code>uint32 Unk3300_MBHBNIPEPNJ = 7;</code>
+       * @return The unk3300MBHBNIPEPNJ.
        */
       @java.lang.Override
-      public int getTRemainUseTime() {
-        return tRemainUseTime_;
+      public int getUnk3300MBHBNIPEPNJ() {
+        return unk3300MBHBNIPEPNJ_;
       }
       /**
-       * <code>uint32 t_remain_use_time = 6;</code>
-       * @param value The tRemainUseTime to set.
+       * <code>uint32 Unk3300_MBHBNIPEPNJ = 7;</code>
+       * @param value The unk3300MBHBNIPEPNJ to set.
        * @return This builder for chaining.
        */
-      public Builder setTRemainUseTime(int value) {
+      public Builder setUnk3300MBHBNIPEPNJ(int value) {
         
-        tRemainUseTime_ = value;
+        unk3300MBHBNIPEPNJ_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 t_remain_use_time = 6;</code>
+       * <code>uint32 Unk3300_MBHBNIPEPNJ = 7;</code>
        * @return This builder for chaining.
        */
-      public Builder clearTRemainUseTime() {
+      public Builder clearUnk3300MBHBNIPEPNJ() {
         
-        tRemainUseTime_ = 0;
+        unk3300MBHBNIPEPNJ_ = 0;
         onChanged();
         return this;
       }
 
-      private int bossViolentLevel_ ;
+      private int unk3300AIEEGIBMOFH_ ;
       /**
-       * <code>uint32 boss_violent_level = 9;</code>
-       * @return The bossViolentLevel.
+       * <code>uint32 Unk3300_AIEEGIBMOFH = 11;</code>
+       * @return The unk3300AIEEGIBMOFH.
        */
       @java.lang.Override
-      public int getBossViolentLevel() {
-        return bossViolentLevel_;
+      public int getUnk3300AIEEGIBMOFH() {
+        return unk3300AIEEGIBMOFH_;
       }
       /**
-       * <code>uint32 boss_violent_level = 9;</code>
-       * @param value The bossViolentLevel to set.
+       * <code>uint32 Unk3300_AIEEGIBMOFH = 11;</code>
+       * @param value The unk3300AIEEGIBMOFH to set.
        * @return This builder for chaining.
        */
-      public Builder setBossViolentLevel(int value) {
+      public Builder setUnk3300AIEEGIBMOFH(int value) {
         
-        bossViolentLevel_ = value;
+        unk3300AIEEGIBMOFH_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 boss_violent_level = 9;</code>
+       * <code>uint32 Unk3300_AIEEGIBMOFH = 11;</code>
        * @return This builder for chaining.
        */
-      public Builder clearBossViolentLevel() {
+      public Builder clearUnk3300AIEEGIBMOFH() {
         
-        bossViolentLevel_ = 0;
+        unk3300AIEEGIBMOFH_ = 0;
         onChanged();
         return this;
       }
@@ -797,12 +797,12 @@ public final class SceneGalleryEffigyChallengeV2InfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\'SceneGalleryEffigyChallengeV2Info.prot" +
-      "o\"\257\001\n!SceneGalleryEffigyChallengeV2Info\022" +
-      "\032\n\022killed_monster_cnt\030\n \001(\r\022\035\n\025total_tar" +
-      "get_kill_cnt\030\017 \001(\r\022\030\n\020scene_start_time\030\016" +
-      " \001(\r\022\031\n\021t_remain_use_time\030\006 \001(\r\022\032\n\022boss_" +
-      "violent_level\030\t \001(\rB\033\n\031emu.grasscutter.n" +
-      "et.protob\006proto3"
+      "o\"\264\001\n!SceneGalleryEffigyChallengeV2Info\022" +
+      "\033\n\023Unk3300_MICPCKIOEJA\030\001 \001(\r\022\033\n\023Unk3300_" +
+      "BMPCKGJAGPE\030\010 \001(\r\022\033\n\023Unk3300_EOGAPBOFHOP" +
+      "\030\002 \001(\r\022\033\n\023Unk3300_MBHBNIPEPNJ\030\007 \001(\r\022\033\n\023U" +
+      "nk3300_AIEEGIBMOFH\030\013 \001(\rB\033\n\031emu.grasscut" +
+      "ter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -813,7 +813,7 @@ public final class SceneGalleryEffigyChallengeV2InfoOuterClass {
     internal_static_SceneGalleryEffigyChallengeV2Info_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SceneGalleryEffigyChallengeV2Info_descriptor,
-        new java.lang.String[] { "KilledMonsterCnt", "TotalTargetKillCnt", "SceneStartTime", "TRemainUseTime", "BossViolentLevel", });
+        new java.lang.String[] { "Unk3300MICPCKIOEJA", "Unk3300BMPCKGJAGPE", "Unk3300EOGAPBOFHOP", "Unk3300MBHBNIPEPNJ", "Unk3300AIEEGIBMOFH", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

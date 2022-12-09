@@ -19,18 +19,18 @@ public final class GetOnlinePlayerInfoReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_online_id = 15;</code>
+     * <code>bool is_online_id = 8;</code>
      * @return The isOnlineId.
      */
     boolean getIsOnlineId();
 
     /**
-     * <code>uint32 target_uid = 9;</code>
+     * <code>uint32 target_uid = 1;</code>
      * @return Whether the targetUid field is set.
      */
     boolean hasTargetUid();
     /**
-     * <code>uint32 target_uid = 9;</code>
+     * <code>uint32 target_uid = 1;</code>
      * @return The targetUid.
      */
     int getTargetUid();
@@ -53,17 +53,17 @@ public final class GetOnlinePlayerInfoReqOuterClass {
         getOnlineIdBytes();
 
     /**
-     * <code>string psn_id = 2;</code>
+     * <code>string psn_id = 4;</code>
      * @return Whether the psnId field is set.
      */
     boolean hasPsnId();
     /**
-     * <code>string psn_id = 2;</code>
+     * <code>string psn_id = 4;</code>
      * @return The psnId.
      */
     java.lang.String getPsnId();
     /**
-     * <code>string psn_id = 2;</code>
+     * <code>string psn_id = 4;</code>
      * @return The bytes for psnId.
      */
     com.google.protobuf.ByteString
@@ -73,10 +73,14 @@ public final class GetOnlinePlayerInfoReqOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 82
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 90;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code GetOnlinePlayerInfoReq}
@@ -123,9 +127,14 @@ public final class GetOnlinePlayerInfoReqOuterClass {
             case 0:
               done = true;
               break;
-            case 18: {
+            case 8: {
+              playerIdCase_ = 1;
+              playerId_ = input.readUInt32();
+              break;
+            }
+            case 34: {
               java.lang.String s = input.readStringRequireUtf8();
-              playerIdCase_ = 2;
+              playerIdCase_ = 4;
               playerId_ = s;
               break;
             }
@@ -135,12 +144,7 @@ public final class GetOnlinePlayerInfoReqOuterClass {
               playerId_ = s;
               break;
             }
-            case 72: {
-              playerIdCase_ = 9;
-              playerId_ = input.readUInt32();
-              break;
-            }
-            case 120: {
+            case 64: {
 
               isOnlineId_ = input.readBool();
               break;
@@ -182,9 +186,9 @@ public final class GetOnlinePlayerInfoReqOuterClass {
     public enum PlayerIdCase
         implements com.google.protobuf.Internal.EnumLite,
             com.google.protobuf.AbstractMessage.InternalOneOfEnum {
-      TARGET_UID(9),
+      TARGET_UID(1),
       ONLINE_ID(7),
-      PSN_ID(2),
+      PSN_ID(4),
       PLAYERID_NOT_SET(0);
       private final int value;
       private PlayerIdCase(int value) {
@@ -202,9 +206,9 @@ public final class GetOnlinePlayerInfoReqOuterClass {
 
       public static PlayerIdCase forNumber(int value) {
         switch (value) {
-          case 9: return TARGET_UID;
+          case 1: return TARGET_UID;
           case 7: return ONLINE_ID;
-          case 2: return PSN_ID;
+          case 4: return PSN_ID;
           case 0: return PLAYERID_NOT_SET;
           default: return null;
         }
@@ -220,10 +224,10 @@ public final class GetOnlinePlayerInfoReqOuterClass {
           playerIdCase_);
     }
 
-    public static final int IS_ONLINE_ID_FIELD_NUMBER = 15;
+    public static final int IS_ONLINE_ID_FIELD_NUMBER = 8;
     private boolean isOnlineId_;
     /**
-     * <code>bool is_online_id = 15;</code>
+     * <code>bool is_online_id = 8;</code>
      * @return The isOnlineId.
      */
     @java.lang.Override
@@ -231,22 +235,22 @@ public final class GetOnlinePlayerInfoReqOuterClass {
       return isOnlineId_;
     }
 
-    public static final int TARGET_UID_FIELD_NUMBER = 9;
+    public static final int TARGET_UID_FIELD_NUMBER = 1;
     /**
-     * <code>uint32 target_uid = 9;</code>
+     * <code>uint32 target_uid = 1;</code>
      * @return Whether the targetUid field is set.
      */
     @java.lang.Override
     public boolean hasTargetUid() {
-      return playerIdCase_ == 9;
+      return playerIdCase_ == 1;
     }
     /**
-     * <code>uint32 target_uid = 9;</code>
+     * <code>uint32 target_uid = 1;</code>
      * @return The targetUid.
      */
     @java.lang.Override
     public int getTargetUid() {
-      if (playerIdCase_ == 9) {
+      if (playerIdCase_ == 1) {
         return (java.lang.Integer) playerId_;
       }
       return 0;
@@ -304,21 +308,21 @@ public final class GetOnlinePlayerInfoReqOuterClass {
       }
     }
 
-    public static final int PSN_ID_FIELD_NUMBER = 2;
+    public static final int PSN_ID_FIELD_NUMBER = 4;
     /**
-     * <code>string psn_id = 2;</code>
+     * <code>string psn_id = 4;</code>
      * @return Whether the psnId field is set.
      */
     public boolean hasPsnId() {
-      return playerIdCase_ == 2;
+      return playerIdCase_ == 4;
     }
     /**
-     * <code>string psn_id = 2;</code>
+     * <code>string psn_id = 4;</code>
      * @return The psnId.
      */
     public java.lang.String getPsnId() {
       java.lang.Object ref = "";
-      if (playerIdCase_ == 2) {
+      if (playerIdCase_ == 4) {
         ref = playerId_;
       }
       if (ref instanceof java.lang.String) {
@@ -327,27 +331,27 @@ public final class GetOnlinePlayerInfoReqOuterClass {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
-        if (playerIdCase_ == 2) {
+        if (playerIdCase_ == 4) {
           playerId_ = s;
         }
         return s;
       }
     }
     /**
-     * <code>string psn_id = 2;</code>
+     * <code>string psn_id = 4;</code>
      * @return The bytes for psnId.
      */
     public com.google.protobuf.ByteString
         getPsnIdBytes() {
       java.lang.Object ref = "";
-      if (playerIdCase_ == 2) {
+      if (playerIdCase_ == 4) {
         ref = playerId_;
       }
       if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
-        if (playerIdCase_ == 2) {
+        if (playerIdCase_ == 4) {
           playerId_ = b;
         }
         return b;
@@ -370,18 +374,18 @@ public final class GetOnlinePlayerInfoReqOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (playerIdCase_ == 2) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 2, playerId_);
+      if (playerIdCase_ == 1) {
+        output.writeUInt32(
+            1, (int)((java.lang.Integer) playerId_));
+      }
+      if (playerIdCase_ == 4) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 4, playerId_);
       }
       if (playerIdCase_ == 7) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 7, playerId_);
       }
-      if (playerIdCase_ == 9) {
-        output.writeUInt32(
-            9, (int)((java.lang.Integer) playerId_));
-      }
       if (isOnlineId_ != false) {
-        output.writeBool(15, isOnlineId_);
+        output.writeBool(8, isOnlineId_);
       }
       unknownFields.writeTo(output);
     }
@@ -392,20 +396,20 @@ public final class GetOnlinePlayerInfoReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (playerIdCase_ == 2) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, playerId_);
+      if (playerIdCase_ == 1) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(
+              1, (int)((java.lang.Integer) playerId_));
+      }
+      if (playerIdCase_ == 4) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(4, playerId_);
       }
       if (playerIdCase_ == 7) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(7, playerId_);
       }
-      if (playerIdCase_ == 9) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(
-              9, (int)((java.lang.Integer) playerId_));
-      }
       if (isOnlineId_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(15, isOnlineId_);
+          .computeBoolSize(8, isOnlineId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -426,7 +430,7 @@ public final class GetOnlinePlayerInfoReqOuterClass {
           != other.getIsOnlineId()) return false;
       if (!getPlayerIdCase().equals(other.getPlayerIdCase())) return false;
       switch (playerIdCase_) {
-        case 9:
+        case 1:
           if (getTargetUid()
               != other.getTargetUid()) return false;
           break;
@@ -434,7 +438,7 @@ public final class GetOnlinePlayerInfoReqOuterClass {
           if (!getOnlineId()
               .equals(other.getOnlineId())) return false;
           break;
-        case 2:
+        case 4:
           if (!getPsnId()
               .equals(other.getPsnId())) return false;
           break;
@@ -456,7 +460,7 @@ public final class GetOnlinePlayerInfoReqOuterClass {
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsOnlineId());
       switch (playerIdCase_) {
-        case 9:
+        case 1:
           hash = (37 * hash) + TARGET_UID_FIELD_NUMBER;
           hash = (53 * hash) + getTargetUid();
           break;
@@ -464,7 +468,7 @@ public final class GetOnlinePlayerInfoReqOuterClass {
           hash = (37 * hash) + ONLINE_ID_FIELD_NUMBER;
           hash = (53 * hash) + getOnlineId().hashCode();
           break;
-        case 2:
+        case 4:
           hash = (37 * hash) + PSN_ID_FIELD_NUMBER;
           hash = (53 * hash) + getPsnId().hashCode();
           break;
@@ -568,10 +572,14 @@ public final class GetOnlinePlayerInfoReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 82
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 90;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code GetOnlinePlayerInfoReq}
@@ -642,13 +650,13 @@ public final class GetOnlinePlayerInfoReqOuterClass {
       public emu.grasscutter.net.proto.GetOnlinePlayerInfoReqOuterClass.GetOnlinePlayerInfoReq buildPartial() {
         emu.grasscutter.net.proto.GetOnlinePlayerInfoReqOuterClass.GetOnlinePlayerInfoReq result = new emu.grasscutter.net.proto.GetOnlinePlayerInfoReqOuterClass.GetOnlinePlayerInfoReq(this);
         result.isOnlineId_ = isOnlineId_;
-        if (playerIdCase_ == 9) {
+        if (playerIdCase_ == 1) {
           result.playerId_ = playerId_;
         }
         if (playerIdCase_ == 7) {
           result.playerId_ = playerId_;
         }
-        if (playerIdCase_ == 2) {
+        if (playerIdCase_ == 4) {
           result.playerId_ = playerId_;
         }
         result.playerIdCase_ = playerIdCase_;
@@ -715,7 +723,7 @@ public final class GetOnlinePlayerInfoReqOuterClass {
             break;
           }
           case PSN_ID: {
-            playerIdCase_ = 2;
+            playerIdCase_ = 4;
             playerId_ = other.playerId_;
             onChanged();
             break;
@@ -770,7 +778,7 @@ public final class GetOnlinePlayerInfoReqOuterClass {
 
       private boolean isOnlineId_ ;
       /**
-       * <code>bool is_online_id = 15;</code>
+       * <code>bool is_online_id = 8;</code>
        * @return The isOnlineId.
        */
       @java.lang.Override
@@ -778,7 +786,7 @@ public final class GetOnlinePlayerInfoReqOuterClass {
         return isOnlineId_;
       }
       /**
-       * <code>bool is_online_id = 15;</code>
+       * <code>bool is_online_id = 8;</code>
        * @param value The isOnlineId to set.
        * @return This builder for chaining.
        */
@@ -789,7 +797,7 @@ public final class GetOnlinePlayerInfoReqOuterClass {
         return this;
       }
       /**
-       * <code>bool is_online_id = 15;</code>
+       * <code>bool is_online_id = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsOnlineId() {
@@ -800,39 +808,39 @@ public final class GetOnlinePlayerInfoReqOuterClass {
       }
 
       /**
-       * <code>uint32 target_uid = 9;</code>
+       * <code>uint32 target_uid = 1;</code>
        * @return Whether the targetUid field is set.
        */
       public boolean hasTargetUid() {
-        return playerIdCase_ == 9;
+        return playerIdCase_ == 1;
       }
       /**
-       * <code>uint32 target_uid = 9;</code>
+       * <code>uint32 target_uid = 1;</code>
        * @return The targetUid.
        */
       public int getTargetUid() {
-        if (playerIdCase_ == 9) {
+        if (playerIdCase_ == 1) {
           return (java.lang.Integer) playerId_;
         }
         return 0;
       }
       /**
-       * <code>uint32 target_uid = 9;</code>
+       * <code>uint32 target_uid = 1;</code>
        * @param value The targetUid to set.
        * @return This builder for chaining.
        */
       public Builder setTargetUid(int value) {
-        playerIdCase_ = 9;
+        playerIdCase_ = 1;
         playerId_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 target_uid = 9;</code>
+       * <code>uint32 target_uid = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearTargetUid() {
-        if (playerIdCase_ == 9) {
+        if (playerIdCase_ == 1) {
           playerIdCase_ = 0;
           playerId_ = null;
           onChanged();
@@ -938,28 +946,28 @@ public final class GetOnlinePlayerInfoReqOuterClass {
       }
 
       /**
-       * <code>string psn_id = 2;</code>
+       * <code>string psn_id = 4;</code>
        * @return Whether the psnId field is set.
        */
       @java.lang.Override
       public boolean hasPsnId() {
-        return playerIdCase_ == 2;
+        return playerIdCase_ == 4;
       }
       /**
-       * <code>string psn_id = 2;</code>
+       * <code>string psn_id = 4;</code>
        * @return The psnId.
        */
       @java.lang.Override
       public java.lang.String getPsnId() {
         java.lang.Object ref = "";
-        if (playerIdCase_ == 2) {
+        if (playerIdCase_ == 4) {
           ref = playerId_;
         }
         if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
           java.lang.String s = bs.toStringUtf8();
-          if (playerIdCase_ == 2) {
+          if (playerIdCase_ == 4) {
             playerId_ = s;
           }
           return s;
@@ -968,21 +976,21 @@ public final class GetOnlinePlayerInfoReqOuterClass {
         }
       }
       /**
-       * <code>string psn_id = 2;</code>
+       * <code>string psn_id = 4;</code>
        * @return The bytes for psnId.
        */
       @java.lang.Override
       public com.google.protobuf.ByteString
           getPsnIdBytes() {
         java.lang.Object ref = "";
-        if (playerIdCase_ == 2) {
+        if (playerIdCase_ == 4) {
           ref = playerId_;
         }
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
                   (java.lang.String) ref);
-          if (playerIdCase_ == 2) {
+          if (playerIdCase_ == 4) {
             playerId_ = b;
           }
           return b;
@@ -991,7 +999,7 @@ public final class GetOnlinePlayerInfoReqOuterClass {
         }
       }
       /**
-       * <code>string psn_id = 2;</code>
+       * <code>string psn_id = 4;</code>
        * @param value The psnId to set.
        * @return This builder for chaining.
        */
@@ -1000,17 +1008,17 @@ public final class GetOnlinePlayerInfoReqOuterClass {
         if (value == null) {
     throw new NullPointerException();
   }
-  playerIdCase_ = 2;
+  playerIdCase_ = 4;
         playerId_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>string psn_id = 2;</code>
+       * <code>string psn_id = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearPsnId() {
-        if (playerIdCase_ == 2) {
+        if (playerIdCase_ == 4) {
           playerIdCase_ = 0;
           playerId_ = null;
           onChanged();
@@ -1018,7 +1026,7 @@ public final class GetOnlinePlayerInfoReqOuterClass {
         return this;
       }
       /**
-       * <code>string psn_id = 2;</code>
+       * <code>string psn_id = 4;</code>
        * @param value The bytes for psnId to set.
        * @return This builder for chaining.
        */
@@ -1028,7 +1036,7 @@ public final class GetOnlinePlayerInfoReqOuterClass {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
-        playerIdCase_ = 2;
+        playerIdCase_ = 4;
         playerId_ = value;
         onChanged();
         return this;
@@ -1101,9 +1109,9 @@ public final class GetOnlinePlayerInfoReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\034GetOnlinePlayerInfoReq.proto\"x\n\026GetOnl" +
-      "inePlayerInfoReq\022\024\n\014is_online_id\030\017 \001(\010\022\024" +
-      "\n\ntarget_uid\030\t \001(\rH\000\022\023\n\tonline_id\030\007 \001(\tH" +
-      "\000\022\020\n\006psn_id\030\002 \001(\tH\000B\013\n\tplayer_idB\033\n\031emu." +
+      "inePlayerInfoReq\022\024\n\014is_online_id\030\010 \001(\010\022\024" +
+      "\n\ntarget_uid\030\001 \001(\rH\000\022\023\n\tonline_id\030\007 \001(\tH" +
+      "\000\022\020\n\006psn_id\030\004 \001(\tH\000B\013\n\tplayer_idB\033\n\031emu." +
       "grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

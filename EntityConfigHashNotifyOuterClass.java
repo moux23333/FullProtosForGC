@@ -19,83 +19,87 @@ public final class EntityConfigHashNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .EntityConfigHashEntry ability_entry_list = 3;</code>
+     * <code>repeated .EntityConfigHashEntry Unk3300_NAMDIKJILAI = 1;</code>
      */
     java.util.List<emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntry> 
-        getAbilityEntryListList();
+        getUnk3300NAMDIKJILAIList();
     /**
-     * <code>repeated .EntityConfigHashEntry ability_entry_list = 3;</code>
+     * <code>repeated .EntityConfigHashEntry Unk3300_NAMDIKJILAI = 1;</code>
      */
-    emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntry getAbilityEntryList(int index);
+    emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntry getUnk3300NAMDIKJILAI(int index);
     /**
-     * <code>repeated .EntityConfigHashEntry ability_entry_list = 3;</code>
+     * <code>repeated .EntityConfigHashEntry Unk3300_NAMDIKJILAI = 1;</code>
      */
-    int getAbilityEntryListCount();
+    int getUnk3300NAMDIKJILAICount();
     /**
-     * <code>repeated .EntityConfigHashEntry ability_entry_list = 3;</code>
+     * <code>repeated .EntityConfigHashEntry Unk3300_NAMDIKJILAI = 1;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntryOrBuilder> 
-        getAbilityEntryListOrBuilderList();
+        getUnk3300NAMDIKJILAIOrBuilderList();
     /**
-     * <code>repeated .EntityConfigHashEntry ability_entry_list = 3;</code>
+     * <code>repeated .EntityConfigHashEntry Unk3300_NAMDIKJILAI = 1;</code>
      */
-    emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntryOrBuilder getAbilityEntryListOrBuilder(
+    emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntryOrBuilder getUnk3300NAMDIKJILAIOrBuilder(
         int index);
 
     /**
-     * <code>repeated .EntityConfigHashEntry avatar_entry_list = 15;</code>
+     * <code>repeated .EntityConfigHashEntry Unk3300_BLBEKMDGCMB = 2;</code>
      */
     java.util.List<emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntry> 
-        getAvatarEntryListList();
+        getUnk3300BLBEKMDGCMBList();
     /**
-     * <code>repeated .EntityConfigHashEntry avatar_entry_list = 15;</code>
+     * <code>repeated .EntityConfigHashEntry Unk3300_BLBEKMDGCMB = 2;</code>
      */
-    emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntry getAvatarEntryList(int index);
+    emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntry getUnk3300BLBEKMDGCMB(int index);
     /**
-     * <code>repeated .EntityConfigHashEntry avatar_entry_list = 15;</code>
+     * <code>repeated .EntityConfigHashEntry Unk3300_BLBEKMDGCMB = 2;</code>
      */
-    int getAvatarEntryListCount();
+    int getUnk3300BLBEKMDGCMBCount();
     /**
-     * <code>repeated .EntityConfigHashEntry avatar_entry_list = 15;</code>
+     * <code>repeated .EntityConfigHashEntry Unk3300_BLBEKMDGCMB = 2;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntryOrBuilder> 
-        getAvatarEntryListOrBuilderList();
+        getUnk3300BLBEKMDGCMBOrBuilderList();
     /**
-     * <code>repeated .EntityConfigHashEntry avatar_entry_list = 15;</code>
+     * <code>repeated .EntityConfigHashEntry Unk3300_BLBEKMDGCMB = 2;</code>
      */
-    emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntryOrBuilder getAvatarEntryListOrBuilder(
+    emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntryOrBuilder getUnk3300BLBEKMDGCMBOrBuilder(
         int index);
 
     /**
-     * <code>repeated .EntityConfigHashEntry combat_entry_list = 8;</code>
+     * <code>repeated .EntityConfigHashEntry Unk3300_NLMPHBGMOEN = 9;</code>
      */
     java.util.List<emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntry> 
-        getCombatEntryListList();
+        getUnk3300NLMPHBGMOENList();
     /**
-     * <code>repeated .EntityConfigHashEntry combat_entry_list = 8;</code>
+     * <code>repeated .EntityConfigHashEntry Unk3300_NLMPHBGMOEN = 9;</code>
      */
-    emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntry getCombatEntryList(int index);
+    emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntry getUnk3300NLMPHBGMOEN(int index);
     /**
-     * <code>repeated .EntityConfigHashEntry combat_entry_list = 8;</code>
+     * <code>repeated .EntityConfigHashEntry Unk3300_NLMPHBGMOEN = 9;</code>
      */
-    int getCombatEntryListCount();
+    int getUnk3300NLMPHBGMOENCount();
     /**
-     * <code>repeated .EntityConfigHashEntry combat_entry_list = 8;</code>
+     * <code>repeated .EntityConfigHashEntry Unk3300_NLMPHBGMOEN = 9;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntryOrBuilder> 
-        getCombatEntryListOrBuilderList();
+        getUnk3300NLMPHBGMOENOrBuilderList();
     /**
-     * <code>repeated .EntityConfigHashEntry combat_entry_list = 8;</code>
+     * <code>repeated .EntityConfigHashEntry Unk3300_NLMPHBGMOEN = 9;</code>
      */
-    emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntryOrBuilder getCombatEntryListOrBuilder(
+    emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntryOrBuilder getUnk3300NLMPHBGMOENOrBuilder(
         int index);
   }
   /**
    * <pre>
-   * CmdId: 3189
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 3332;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code EntityConfigHashNotify}
@@ -110,9 +114,9 @@ public final class EntityConfigHashNotifyOuterClass {
       super(builder);
     }
     private EntityConfigHashNotify() {
-      abilityEntryList_ = java.util.Collections.emptyList();
-      avatarEntryList_ = java.util.Collections.emptyList();
-      combatEntryList_ = java.util.Collections.emptyList();
+      unk3300NAMDIKJILAI_ = java.util.Collections.emptyList();
+      unk3300BLBEKMDGCMB_ = java.util.Collections.emptyList();
+      unk3300NLMPHBGMOEN_ = java.util.Collections.emptyList();
     }
 
     @java.lang.Override
@@ -146,30 +150,30 @@ public final class EntityConfigHashNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 26: {
+            case 10: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                abilityEntryList_ = new java.util.ArrayList<emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntry>();
+                unk3300NAMDIKJILAI_ = new java.util.ArrayList<emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntry>();
                 mutable_bitField0_ |= 0x00000001;
               }
-              abilityEntryList_.add(
+              unk3300NAMDIKJILAI_.add(
                   input.readMessage(emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntry.parser(), extensionRegistry));
               break;
             }
-            case 66: {
-              if (!((mutable_bitField0_ & 0x00000004) != 0)) {
-                combatEntryList_ = new java.util.ArrayList<emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntry>();
-                mutable_bitField0_ |= 0x00000004;
-              }
-              combatEntryList_.add(
-                  input.readMessage(emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntry.parser(), extensionRegistry));
-              break;
-            }
-            case 122: {
+            case 18: {
               if (!((mutable_bitField0_ & 0x00000002) != 0)) {
-                avatarEntryList_ = new java.util.ArrayList<emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntry>();
+                unk3300BLBEKMDGCMB_ = new java.util.ArrayList<emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntry>();
                 mutable_bitField0_ |= 0x00000002;
               }
-              avatarEntryList_.add(
+              unk3300BLBEKMDGCMB_.add(
+                  input.readMessage(emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntry.parser(), extensionRegistry));
+              break;
+            }
+            case 74: {
+              if (!((mutable_bitField0_ & 0x00000004) != 0)) {
+                unk3300NLMPHBGMOEN_ = new java.util.ArrayList<emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntry>();
+                mutable_bitField0_ |= 0x00000004;
+              }
+              unk3300NLMPHBGMOEN_.add(
                   input.readMessage(emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntry.parser(), extensionRegistry));
               break;
             }
@@ -189,13 +193,13 @@ public final class EntityConfigHashNotifyOuterClass {
             e).setUnfinishedMessage(this);
       } finally {
         if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          abilityEntryList_ = java.util.Collections.unmodifiableList(abilityEntryList_);
-        }
-        if (((mutable_bitField0_ & 0x00000004) != 0)) {
-          combatEntryList_ = java.util.Collections.unmodifiableList(combatEntryList_);
+          unk3300NAMDIKJILAI_ = java.util.Collections.unmodifiableList(unk3300NAMDIKJILAI_);
         }
         if (((mutable_bitField0_ & 0x00000002) != 0)) {
-          avatarEntryList_ = java.util.Collections.unmodifiableList(avatarEntryList_);
+          unk3300BLBEKMDGCMB_ = java.util.Collections.unmodifiableList(unk3300BLBEKMDGCMB_);
+        }
+        if (((mutable_bitField0_ & 0x00000004) != 0)) {
+          unk3300NLMPHBGMOEN_ = java.util.Collections.unmodifiableList(unk3300NLMPHBGMOEN_);
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -214,124 +218,124 @@ public final class EntityConfigHashNotifyOuterClass {
               emu.grasscutter.net.proto.EntityConfigHashNotifyOuterClass.EntityConfigHashNotify.class, emu.grasscutter.net.proto.EntityConfigHashNotifyOuterClass.EntityConfigHashNotify.Builder.class);
     }
 
-    public static final int ABILITY_ENTRY_LIST_FIELD_NUMBER = 3;
-    private java.util.List<emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntry> abilityEntryList_;
+    public static final int UNK3300_NAMDIKJILAI_FIELD_NUMBER = 1;
+    private java.util.List<emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntry> unk3300NAMDIKJILAI_;
     /**
-     * <code>repeated .EntityConfigHashEntry ability_entry_list = 3;</code>
+     * <code>repeated .EntityConfigHashEntry Unk3300_NAMDIKJILAI = 1;</code>
      */
     @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntry> getAbilityEntryListList() {
-      return abilityEntryList_;
+    public java.util.List<emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntry> getUnk3300NAMDIKJILAIList() {
+      return unk3300NAMDIKJILAI_;
     }
     /**
-     * <code>repeated .EntityConfigHashEntry ability_entry_list = 3;</code>
+     * <code>repeated .EntityConfigHashEntry Unk3300_NAMDIKJILAI = 1;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntryOrBuilder> 
-        getAbilityEntryListOrBuilderList() {
-      return abilityEntryList_;
+        getUnk3300NAMDIKJILAIOrBuilderList() {
+      return unk3300NAMDIKJILAI_;
     }
     /**
-     * <code>repeated .EntityConfigHashEntry ability_entry_list = 3;</code>
+     * <code>repeated .EntityConfigHashEntry Unk3300_NAMDIKJILAI = 1;</code>
      */
     @java.lang.Override
-    public int getAbilityEntryListCount() {
-      return abilityEntryList_.size();
+    public int getUnk3300NAMDIKJILAICount() {
+      return unk3300NAMDIKJILAI_.size();
     }
     /**
-     * <code>repeated .EntityConfigHashEntry ability_entry_list = 3;</code>
+     * <code>repeated .EntityConfigHashEntry Unk3300_NAMDIKJILAI = 1;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntry getAbilityEntryList(int index) {
-      return abilityEntryList_.get(index);
+    public emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntry getUnk3300NAMDIKJILAI(int index) {
+      return unk3300NAMDIKJILAI_.get(index);
     }
     /**
-     * <code>repeated .EntityConfigHashEntry ability_entry_list = 3;</code>
+     * <code>repeated .EntityConfigHashEntry Unk3300_NAMDIKJILAI = 1;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntryOrBuilder getAbilityEntryListOrBuilder(
+    public emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntryOrBuilder getUnk3300NAMDIKJILAIOrBuilder(
         int index) {
-      return abilityEntryList_.get(index);
+      return unk3300NAMDIKJILAI_.get(index);
     }
 
-    public static final int AVATAR_ENTRY_LIST_FIELD_NUMBER = 15;
-    private java.util.List<emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntry> avatarEntryList_;
+    public static final int UNK3300_BLBEKMDGCMB_FIELD_NUMBER = 2;
+    private java.util.List<emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntry> unk3300BLBEKMDGCMB_;
     /**
-     * <code>repeated .EntityConfigHashEntry avatar_entry_list = 15;</code>
+     * <code>repeated .EntityConfigHashEntry Unk3300_BLBEKMDGCMB = 2;</code>
      */
     @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntry> getAvatarEntryListList() {
-      return avatarEntryList_;
+    public java.util.List<emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntry> getUnk3300BLBEKMDGCMBList() {
+      return unk3300BLBEKMDGCMB_;
     }
     /**
-     * <code>repeated .EntityConfigHashEntry avatar_entry_list = 15;</code>
+     * <code>repeated .EntityConfigHashEntry Unk3300_BLBEKMDGCMB = 2;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntryOrBuilder> 
-        getAvatarEntryListOrBuilderList() {
-      return avatarEntryList_;
+        getUnk3300BLBEKMDGCMBOrBuilderList() {
+      return unk3300BLBEKMDGCMB_;
     }
     /**
-     * <code>repeated .EntityConfigHashEntry avatar_entry_list = 15;</code>
+     * <code>repeated .EntityConfigHashEntry Unk3300_BLBEKMDGCMB = 2;</code>
      */
     @java.lang.Override
-    public int getAvatarEntryListCount() {
-      return avatarEntryList_.size();
+    public int getUnk3300BLBEKMDGCMBCount() {
+      return unk3300BLBEKMDGCMB_.size();
     }
     /**
-     * <code>repeated .EntityConfigHashEntry avatar_entry_list = 15;</code>
+     * <code>repeated .EntityConfigHashEntry Unk3300_BLBEKMDGCMB = 2;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntry getAvatarEntryList(int index) {
-      return avatarEntryList_.get(index);
+    public emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntry getUnk3300BLBEKMDGCMB(int index) {
+      return unk3300BLBEKMDGCMB_.get(index);
     }
     /**
-     * <code>repeated .EntityConfigHashEntry avatar_entry_list = 15;</code>
+     * <code>repeated .EntityConfigHashEntry Unk3300_BLBEKMDGCMB = 2;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntryOrBuilder getAvatarEntryListOrBuilder(
+    public emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntryOrBuilder getUnk3300BLBEKMDGCMBOrBuilder(
         int index) {
-      return avatarEntryList_.get(index);
+      return unk3300BLBEKMDGCMB_.get(index);
     }
 
-    public static final int COMBAT_ENTRY_LIST_FIELD_NUMBER = 8;
-    private java.util.List<emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntry> combatEntryList_;
+    public static final int UNK3300_NLMPHBGMOEN_FIELD_NUMBER = 9;
+    private java.util.List<emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntry> unk3300NLMPHBGMOEN_;
     /**
-     * <code>repeated .EntityConfigHashEntry combat_entry_list = 8;</code>
+     * <code>repeated .EntityConfigHashEntry Unk3300_NLMPHBGMOEN = 9;</code>
      */
     @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntry> getCombatEntryListList() {
-      return combatEntryList_;
+    public java.util.List<emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntry> getUnk3300NLMPHBGMOENList() {
+      return unk3300NLMPHBGMOEN_;
     }
     /**
-     * <code>repeated .EntityConfigHashEntry combat_entry_list = 8;</code>
+     * <code>repeated .EntityConfigHashEntry Unk3300_NLMPHBGMOEN = 9;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntryOrBuilder> 
-        getCombatEntryListOrBuilderList() {
-      return combatEntryList_;
+        getUnk3300NLMPHBGMOENOrBuilderList() {
+      return unk3300NLMPHBGMOEN_;
     }
     /**
-     * <code>repeated .EntityConfigHashEntry combat_entry_list = 8;</code>
+     * <code>repeated .EntityConfigHashEntry Unk3300_NLMPHBGMOEN = 9;</code>
      */
     @java.lang.Override
-    public int getCombatEntryListCount() {
-      return combatEntryList_.size();
+    public int getUnk3300NLMPHBGMOENCount() {
+      return unk3300NLMPHBGMOEN_.size();
     }
     /**
-     * <code>repeated .EntityConfigHashEntry combat_entry_list = 8;</code>
+     * <code>repeated .EntityConfigHashEntry Unk3300_NLMPHBGMOEN = 9;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntry getCombatEntryList(int index) {
-      return combatEntryList_.get(index);
+    public emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntry getUnk3300NLMPHBGMOEN(int index) {
+      return unk3300NLMPHBGMOEN_.get(index);
     }
     /**
-     * <code>repeated .EntityConfigHashEntry combat_entry_list = 8;</code>
+     * <code>repeated .EntityConfigHashEntry Unk3300_NLMPHBGMOEN = 9;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntryOrBuilder getCombatEntryListOrBuilder(
+    public emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntryOrBuilder getUnk3300NLMPHBGMOENOrBuilder(
         int index) {
-      return combatEntryList_.get(index);
+      return unk3300NLMPHBGMOEN_.get(index);
     }
 
     private byte memoizedIsInitialized = -1;
@@ -348,14 +352,14 @@ public final class EntityConfigHashNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      for (int i = 0; i < abilityEntryList_.size(); i++) {
-        output.writeMessage(3, abilityEntryList_.get(i));
+      for (int i = 0; i < unk3300NAMDIKJILAI_.size(); i++) {
+        output.writeMessage(1, unk3300NAMDIKJILAI_.get(i));
       }
-      for (int i = 0; i < combatEntryList_.size(); i++) {
-        output.writeMessage(8, combatEntryList_.get(i));
+      for (int i = 0; i < unk3300BLBEKMDGCMB_.size(); i++) {
+        output.writeMessage(2, unk3300BLBEKMDGCMB_.get(i));
       }
-      for (int i = 0; i < avatarEntryList_.size(); i++) {
-        output.writeMessage(15, avatarEntryList_.get(i));
+      for (int i = 0; i < unk3300NLMPHBGMOEN_.size(); i++) {
+        output.writeMessage(9, unk3300NLMPHBGMOEN_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -366,17 +370,17 @@ public final class EntityConfigHashNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      for (int i = 0; i < abilityEntryList_.size(); i++) {
+      for (int i = 0; i < unk3300NAMDIKJILAI_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(3, abilityEntryList_.get(i));
+          .computeMessageSize(1, unk3300NAMDIKJILAI_.get(i));
       }
-      for (int i = 0; i < combatEntryList_.size(); i++) {
+      for (int i = 0; i < unk3300BLBEKMDGCMB_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(8, combatEntryList_.get(i));
+          .computeMessageSize(2, unk3300BLBEKMDGCMB_.get(i));
       }
-      for (int i = 0; i < avatarEntryList_.size(); i++) {
+      for (int i = 0; i < unk3300NLMPHBGMOEN_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(15, avatarEntryList_.get(i));
+          .computeMessageSize(9, unk3300NLMPHBGMOEN_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -393,12 +397,12 @@ public final class EntityConfigHashNotifyOuterClass {
       }
       emu.grasscutter.net.proto.EntityConfigHashNotifyOuterClass.EntityConfigHashNotify other = (emu.grasscutter.net.proto.EntityConfigHashNotifyOuterClass.EntityConfigHashNotify) obj;
 
-      if (!getAbilityEntryListList()
-          .equals(other.getAbilityEntryListList())) return false;
-      if (!getAvatarEntryListList()
-          .equals(other.getAvatarEntryListList())) return false;
-      if (!getCombatEntryListList()
-          .equals(other.getCombatEntryListList())) return false;
+      if (!getUnk3300NAMDIKJILAIList()
+          .equals(other.getUnk3300NAMDIKJILAIList())) return false;
+      if (!getUnk3300BLBEKMDGCMBList()
+          .equals(other.getUnk3300BLBEKMDGCMBList())) return false;
+      if (!getUnk3300NLMPHBGMOENList()
+          .equals(other.getUnk3300NLMPHBGMOENList())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -410,17 +414,17 @@ public final class EntityConfigHashNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (getAbilityEntryListCount() > 0) {
-        hash = (37 * hash) + ABILITY_ENTRY_LIST_FIELD_NUMBER;
-        hash = (53 * hash) + getAbilityEntryListList().hashCode();
+      if (getUnk3300NAMDIKJILAICount() > 0) {
+        hash = (37 * hash) + UNK3300_NAMDIKJILAI_FIELD_NUMBER;
+        hash = (53 * hash) + getUnk3300NAMDIKJILAIList().hashCode();
       }
-      if (getAvatarEntryListCount() > 0) {
-        hash = (37 * hash) + AVATAR_ENTRY_LIST_FIELD_NUMBER;
-        hash = (53 * hash) + getAvatarEntryListList().hashCode();
+      if (getUnk3300BLBEKMDGCMBCount() > 0) {
+        hash = (37 * hash) + UNK3300_BLBEKMDGCMB_FIELD_NUMBER;
+        hash = (53 * hash) + getUnk3300BLBEKMDGCMBList().hashCode();
       }
-      if (getCombatEntryListCount() > 0) {
-        hash = (37 * hash) + COMBAT_ENTRY_LIST_FIELD_NUMBER;
-        hash = (53 * hash) + getCombatEntryListList().hashCode();
+      if (getUnk3300NLMPHBGMOENCount() > 0) {
+        hash = (37 * hash) + UNK3300_NLMPHBGMOEN_FIELD_NUMBER;
+        hash = (53 * hash) + getUnk3300NLMPHBGMOENList().hashCode();
       }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
@@ -519,10 +523,14 @@ public final class EntityConfigHashNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 3189
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 3332;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code EntityConfigHashNotify}
@@ -557,31 +565,31 @@ public final class EntityConfigHashNotifyOuterClass {
       private void maybeForceBuilderInitialization() {
         if (com.google.protobuf.GeneratedMessageV3
                 .alwaysUseFieldBuilders) {
-          getAbilityEntryListFieldBuilder();
-          getAvatarEntryListFieldBuilder();
-          getCombatEntryListFieldBuilder();
+          getUnk3300NAMDIKJILAIFieldBuilder();
+          getUnk3300BLBEKMDGCMBFieldBuilder();
+          getUnk3300NLMPHBGMOENFieldBuilder();
         }
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        if (abilityEntryListBuilder_ == null) {
-          abilityEntryList_ = java.util.Collections.emptyList();
+        if (unk3300NAMDIKJILAIBuilder_ == null) {
+          unk3300NAMDIKJILAI_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000001);
         } else {
-          abilityEntryListBuilder_.clear();
+          unk3300NAMDIKJILAIBuilder_.clear();
         }
-        if (avatarEntryListBuilder_ == null) {
-          avatarEntryList_ = java.util.Collections.emptyList();
+        if (unk3300BLBEKMDGCMBBuilder_ == null) {
+          unk3300BLBEKMDGCMB_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000002);
         } else {
-          avatarEntryListBuilder_.clear();
+          unk3300BLBEKMDGCMBBuilder_.clear();
         }
-        if (combatEntryListBuilder_ == null) {
-          combatEntryList_ = java.util.Collections.emptyList();
+        if (unk3300NLMPHBGMOENBuilder_ == null) {
+          unk3300NLMPHBGMOEN_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000004);
         } else {
-          combatEntryListBuilder_.clear();
+          unk3300NLMPHBGMOENBuilder_.clear();
         }
         return this;
       }
@@ -610,32 +618,32 @@ public final class EntityConfigHashNotifyOuterClass {
       public emu.grasscutter.net.proto.EntityConfigHashNotifyOuterClass.EntityConfigHashNotify buildPartial() {
         emu.grasscutter.net.proto.EntityConfigHashNotifyOuterClass.EntityConfigHashNotify result = new emu.grasscutter.net.proto.EntityConfigHashNotifyOuterClass.EntityConfigHashNotify(this);
         int from_bitField0_ = bitField0_;
-        if (abilityEntryListBuilder_ == null) {
+        if (unk3300NAMDIKJILAIBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0)) {
-            abilityEntryList_ = java.util.Collections.unmodifiableList(abilityEntryList_);
+            unk3300NAMDIKJILAI_ = java.util.Collections.unmodifiableList(unk3300NAMDIKJILAI_);
             bitField0_ = (bitField0_ & ~0x00000001);
           }
-          result.abilityEntryList_ = abilityEntryList_;
+          result.unk3300NAMDIKJILAI_ = unk3300NAMDIKJILAI_;
         } else {
-          result.abilityEntryList_ = abilityEntryListBuilder_.build();
+          result.unk3300NAMDIKJILAI_ = unk3300NAMDIKJILAIBuilder_.build();
         }
-        if (avatarEntryListBuilder_ == null) {
+        if (unk3300BLBEKMDGCMBBuilder_ == null) {
           if (((bitField0_ & 0x00000002) != 0)) {
-            avatarEntryList_ = java.util.Collections.unmodifiableList(avatarEntryList_);
+            unk3300BLBEKMDGCMB_ = java.util.Collections.unmodifiableList(unk3300BLBEKMDGCMB_);
             bitField0_ = (bitField0_ & ~0x00000002);
           }
-          result.avatarEntryList_ = avatarEntryList_;
+          result.unk3300BLBEKMDGCMB_ = unk3300BLBEKMDGCMB_;
         } else {
-          result.avatarEntryList_ = avatarEntryListBuilder_.build();
+          result.unk3300BLBEKMDGCMB_ = unk3300BLBEKMDGCMBBuilder_.build();
         }
-        if (combatEntryListBuilder_ == null) {
+        if (unk3300NLMPHBGMOENBuilder_ == null) {
           if (((bitField0_ & 0x00000004) != 0)) {
-            combatEntryList_ = java.util.Collections.unmodifiableList(combatEntryList_);
+            unk3300NLMPHBGMOEN_ = java.util.Collections.unmodifiableList(unk3300NLMPHBGMOEN_);
             bitField0_ = (bitField0_ & ~0x00000004);
           }
-          result.combatEntryList_ = combatEntryList_;
+          result.unk3300NLMPHBGMOEN_ = unk3300NLMPHBGMOEN_;
         } else {
-          result.combatEntryList_ = combatEntryListBuilder_.build();
+          result.unk3300NLMPHBGMOEN_ = unk3300NLMPHBGMOENBuilder_.build();
         }
         onBuilt();
         return result;
@@ -685,81 +693,81 @@ public final class EntityConfigHashNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.EntityConfigHashNotifyOuterClass.EntityConfigHashNotify other) {
         if (other == emu.grasscutter.net.proto.EntityConfigHashNotifyOuterClass.EntityConfigHashNotify.getDefaultInstance()) return this;
-        if (abilityEntryListBuilder_ == null) {
-          if (!other.abilityEntryList_.isEmpty()) {
-            if (abilityEntryList_.isEmpty()) {
-              abilityEntryList_ = other.abilityEntryList_;
+        if (unk3300NAMDIKJILAIBuilder_ == null) {
+          if (!other.unk3300NAMDIKJILAI_.isEmpty()) {
+            if (unk3300NAMDIKJILAI_.isEmpty()) {
+              unk3300NAMDIKJILAI_ = other.unk3300NAMDIKJILAI_;
               bitField0_ = (bitField0_ & ~0x00000001);
             } else {
-              ensureAbilityEntryListIsMutable();
-              abilityEntryList_.addAll(other.abilityEntryList_);
+              ensureUnk3300NAMDIKJILAIIsMutable();
+              unk3300NAMDIKJILAI_.addAll(other.unk3300NAMDIKJILAI_);
             }
             onChanged();
           }
         } else {
-          if (!other.abilityEntryList_.isEmpty()) {
-            if (abilityEntryListBuilder_.isEmpty()) {
-              abilityEntryListBuilder_.dispose();
-              abilityEntryListBuilder_ = null;
-              abilityEntryList_ = other.abilityEntryList_;
+          if (!other.unk3300NAMDIKJILAI_.isEmpty()) {
+            if (unk3300NAMDIKJILAIBuilder_.isEmpty()) {
+              unk3300NAMDIKJILAIBuilder_.dispose();
+              unk3300NAMDIKJILAIBuilder_ = null;
+              unk3300NAMDIKJILAI_ = other.unk3300NAMDIKJILAI_;
               bitField0_ = (bitField0_ & ~0x00000001);
-              abilityEntryListBuilder_ = 
+              unk3300NAMDIKJILAIBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
-                   getAbilityEntryListFieldBuilder() : null;
+                   getUnk3300NAMDIKJILAIFieldBuilder() : null;
             } else {
-              abilityEntryListBuilder_.addAllMessages(other.abilityEntryList_);
+              unk3300NAMDIKJILAIBuilder_.addAllMessages(other.unk3300NAMDIKJILAI_);
             }
           }
         }
-        if (avatarEntryListBuilder_ == null) {
-          if (!other.avatarEntryList_.isEmpty()) {
-            if (avatarEntryList_.isEmpty()) {
-              avatarEntryList_ = other.avatarEntryList_;
+        if (unk3300BLBEKMDGCMBBuilder_ == null) {
+          if (!other.unk3300BLBEKMDGCMB_.isEmpty()) {
+            if (unk3300BLBEKMDGCMB_.isEmpty()) {
+              unk3300BLBEKMDGCMB_ = other.unk3300BLBEKMDGCMB_;
               bitField0_ = (bitField0_ & ~0x00000002);
             } else {
-              ensureAvatarEntryListIsMutable();
-              avatarEntryList_.addAll(other.avatarEntryList_);
+              ensureUnk3300BLBEKMDGCMBIsMutable();
+              unk3300BLBEKMDGCMB_.addAll(other.unk3300BLBEKMDGCMB_);
             }
             onChanged();
           }
         } else {
-          if (!other.avatarEntryList_.isEmpty()) {
-            if (avatarEntryListBuilder_.isEmpty()) {
-              avatarEntryListBuilder_.dispose();
-              avatarEntryListBuilder_ = null;
-              avatarEntryList_ = other.avatarEntryList_;
+          if (!other.unk3300BLBEKMDGCMB_.isEmpty()) {
+            if (unk3300BLBEKMDGCMBBuilder_.isEmpty()) {
+              unk3300BLBEKMDGCMBBuilder_.dispose();
+              unk3300BLBEKMDGCMBBuilder_ = null;
+              unk3300BLBEKMDGCMB_ = other.unk3300BLBEKMDGCMB_;
               bitField0_ = (bitField0_ & ~0x00000002);
-              avatarEntryListBuilder_ = 
+              unk3300BLBEKMDGCMBBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
-                   getAvatarEntryListFieldBuilder() : null;
+                   getUnk3300BLBEKMDGCMBFieldBuilder() : null;
             } else {
-              avatarEntryListBuilder_.addAllMessages(other.avatarEntryList_);
+              unk3300BLBEKMDGCMBBuilder_.addAllMessages(other.unk3300BLBEKMDGCMB_);
             }
           }
         }
-        if (combatEntryListBuilder_ == null) {
-          if (!other.combatEntryList_.isEmpty()) {
-            if (combatEntryList_.isEmpty()) {
-              combatEntryList_ = other.combatEntryList_;
+        if (unk3300NLMPHBGMOENBuilder_ == null) {
+          if (!other.unk3300NLMPHBGMOEN_.isEmpty()) {
+            if (unk3300NLMPHBGMOEN_.isEmpty()) {
+              unk3300NLMPHBGMOEN_ = other.unk3300NLMPHBGMOEN_;
               bitField0_ = (bitField0_ & ~0x00000004);
             } else {
-              ensureCombatEntryListIsMutable();
-              combatEntryList_.addAll(other.combatEntryList_);
+              ensureUnk3300NLMPHBGMOENIsMutable();
+              unk3300NLMPHBGMOEN_.addAll(other.unk3300NLMPHBGMOEN_);
             }
             onChanged();
           }
         } else {
-          if (!other.combatEntryList_.isEmpty()) {
-            if (combatEntryListBuilder_.isEmpty()) {
-              combatEntryListBuilder_.dispose();
-              combatEntryListBuilder_ = null;
-              combatEntryList_ = other.combatEntryList_;
+          if (!other.unk3300NLMPHBGMOEN_.isEmpty()) {
+            if (unk3300NLMPHBGMOENBuilder_.isEmpty()) {
+              unk3300NLMPHBGMOENBuilder_.dispose();
+              unk3300NLMPHBGMOENBuilder_ = null;
+              unk3300NLMPHBGMOEN_ = other.unk3300NLMPHBGMOEN_;
               bitField0_ = (bitField0_ & ~0x00000004);
-              combatEntryListBuilder_ = 
+              unk3300NLMPHBGMOENBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
-                   getCombatEntryListFieldBuilder() : null;
+                   getUnk3300NLMPHBGMOENFieldBuilder() : null;
             } else {
-              combatEntryListBuilder_.addAllMessages(other.combatEntryList_);
+              unk3300NLMPHBGMOENBuilder_.addAllMessages(other.unk3300NLMPHBGMOEN_);
             }
           }
         }
@@ -793,724 +801,724 @@ public final class EntityConfigHashNotifyOuterClass {
       }
       private int bitField0_;
 
-      private java.util.List<emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntry> abilityEntryList_ =
+      private java.util.List<emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntry> unk3300NAMDIKJILAI_ =
         java.util.Collections.emptyList();
-      private void ensureAbilityEntryListIsMutable() {
+      private void ensureUnk3300NAMDIKJILAIIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          abilityEntryList_ = new java.util.ArrayList<emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntry>(abilityEntryList_);
+          unk3300NAMDIKJILAI_ = new java.util.ArrayList<emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntry>(unk3300NAMDIKJILAI_);
           bitField0_ |= 0x00000001;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntry, emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntry.Builder, emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntryOrBuilder> abilityEntryListBuilder_;
+          emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntry, emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntry.Builder, emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntryOrBuilder> unk3300NAMDIKJILAIBuilder_;
 
       /**
-       * <code>repeated .EntityConfigHashEntry ability_entry_list = 3;</code>
+       * <code>repeated .EntityConfigHashEntry Unk3300_NAMDIKJILAI = 1;</code>
        */
-      public java.util.List<emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntry> getAbilityEntryListList() {
-        if (abilityEntryListBuilder_ == null) {
-          return java.util.Collections.unmodifiableList(abilityEntryList_);
+      public java.util.List<emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntry> getUnk3300NAMDIKJILAIList() {
+        if (unk3300NAMDIKJILAIBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(unk3300NAMDIKJILAI_);
         } else {
-          return abilityEntryListBuilder_.getMessageList();
+          return unk3300NAMDIKJILAIBuilder_.getMessageList();
         }
       }
       /**
-       * <code>repeated .EntityConfigHashEntry ability_entry_list = 3;</code>
+       * <code>repeated .EntityConfigHashEntry Unk3300_NAMDIKJILAI = 1;</code>
        */
-      public int getAbilityEntryListCount() {
-        if (abilityEntryListBuilder_ == null) {
-          return abilityEntryList_.size();
+      public int getUnk3300NAMDIKJILAICount() {
+        if (unk3300NAMDIKJILAIBuilder_ == null) {
+          return unk3300NAMDIKJILAI_.size();
         } else {
-          return abilityEntryListBuilder_.getCount();
+          return unk3300NAMDIKJILAIBuilder_.getCount();
         }
       }
       /**
-       * <code>repeated .EntityConfigHashEntry ability_entry_list = 3;</code>
+       * <code>repeated .EntityConfigHashEntry Unk3300_NAMDIKJILAI = 1;</code>
        */
-      public emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntry getAbilityEntryList(int index) {
-        if (abilityEntryListBuilder_ == null) {
-          return abilityEntryList_.get(index);
+      public emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntry getUnk3300NAMDIKJILAI(int index) {
+        if (unk3300NAMDIKJILAIBuilder_ == null) {
+          return unk3300NAMDIKJILAI_.get(index);
         } else {
-          return abilityEntryListBuilder_.getMessage(index);
+          return unk3300NAMDIKJILAIBuilder_.getMessage(index);
         }
       }
       /**
-       * <code>repeated .EntityConfigHashEntry ability_entry_list = 3;</code>
+       * <code>repeated .EntityConfigHashEntry Unk3300_NAMDIKJILAI = 1;</code>
        */
-      public Builder setAbilityEntryList(
+      public Builder setUnk3300NAMDIKJILAI(
           int index, emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntry value) {
-        if (abilityEntryListBuilder_ == null) {
+        if (unk3300NAMDIKJILAIBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureAbilityEntryListIsMutable();
-          abilityEntryList_.set(index, value);
+          ensureUnk3300NAMDIKJILAIIsMutable();
+          unk3300NAMDIKJILAI_.set(index, value);
           onChanged();
         } else {
-          abilityEntryListBuilder_.setMessage(index, value);
+          unk3300NAMDIKJILAIBuilder_.setMessage(index, value);
         }
         return this;
       }
       /**
-       * <code>repeated .EntityConfigHashEntry ability_entry_list = 3;</code>
+       * <code>repeated .EntityConfigHashEntry Unk3300_NAMDIKJILAI = 1;</code>
        */
-      public Builder setAbilityEntryList(
+      public Builder setUnk3300NAMDIKJILAI(
           int index, emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntry.Builder builderForValue) {
-        if (abilityEntryListBuilder_ == null) {
-          ensureAbilityEntryListIsMutable();
-          abilityEntryList_.set(index, builderForValue.build());
+        if (unk3300NAMDIKJILAIBuilder_ == null) {
+          ensureUnk3300NAMDIKJILAIIsMutable();
+          unk3300NAMDIKJILAI_.set(index, builderForValue.build());
           onChanged();
         } else {
-          abilityEntryListBuilder_.setMessage(index, builderForValue.build());
+          unk3300NAMDIKJILAIBuilder_.setMessage(index, builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .EntityConfigHashEntry ability_entry_list = 3;</code>
+       * <code>repeated .EntityConfigHashEntry Unk3300_NAMDIKJILAI = 1;</code>
        */
-      public Builder addAbilityEntryList(emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntry value) {
-        if (abilityEntryListBuilder_ == null) {
+      public Builder addUnk3300NAMDIKJILAI(emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntry value) {
+        if (unk3300NAMDIKJILAIBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureAbilityEntryListIsMutable();
-          abilityEntryList_.add(value);
+          ensureUnk3300NAMDIKJILAIIsMutable();
+          unk3300NAMDIKJILAI_.add(value);
           onChanged();
         } else {
-          abilityEntryListBuilder_.addMessage(value);
+          unk3300NAMDIKJILAIBuilder_.addMessage(value);
         }
         return this;
       }
       /**
-       * <code>repeated .EntityConfigHashEntry ability_entry_list = 3;</code>
+       * <code>repeated .EntityConfigHashEntry Unk3300_NAMDIKJILAI = 1;</code>
        */
-      public Builder addAbilityEntryList(
+      public Builder addUnk3300NAMDIKJILAI(
           int index, emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntry value) {
-        if (abilityEntryListBuilder_ == null) {
+        if (unk3300NAMDIKJILAIBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureAbilityEntryListIsMutable();
-          abilityEntryList_.add(index, value);
+          ensureUnk3300NAMDIKJILAIIsMutable();
+          unk3300NAMDIKJILAI_.add(index, value);
           onChanged();
         } else {
-          abilityEntryListBuilder_.addMessage(index, value);
+          unk3300NAMDIKJILAIBuilder_.addMessage(index, value);
         }
         return this;
       }
       /**
-       * <code>repeated .EntityConfigHashEntry ability_entry_list = 3;</code>
+       * <code>repeated .EntityConfigHashEntry Unk3300_NAMDIKJILAI = 1;</code>
        */
-      public Builder addAbilityEntryList(
+      public Builder addUnk3300NAMDIKJILAI(
           emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntry.Builder builderForValue) {
-        if (abilityEntryListBuilder_ == null) {
-          ensureAbilityEntryListIsMutable();
-          abilityEntryList_.add(builderForValue.build());
+        if (unk3300NAMDIKJILAIBuilder_ == null) {
+          ensureUnk3300NAMDIKJILAIIsMutable();
+          unk3300NAMDIKJILAI_.add(builderForValue.build());
           onChanged();
         } else {
-          abilityEntryListBuilder_.addMessage(builderForValue.build());
+          unk3300NAMDIKJILAIBuilder_.addMessage(builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .EntityConfigHashEntry ability_entry_list = 3;</code>
+       * <code>repeated .EntityConfigHashEntry Unk3300_NAMDIKJILAI = 1;</code>
        */
-      public Builder addAbilityEntryList(
+      public Builder addUnk3300NAMDIKJILAI(
           int index, emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntry.Builder builderForValue) {
-        if (abilityEntryListBuilder_ == null) {
-          ensureAbilityEntryListIsMutable();
-          abilityEntryList_.add(index, builderForValue.build());
+        if (unk3300NAMDIKJILAIBuilder_ == null) {
+          ensureUnk3300NAMDIKJILAIIsMutable();
+          unk3300NAMDIKJILAI_.add(index, builderForValue.build());
           onChanged();
         } else {
-          abilityEntryListBuilder_.addMessage(index, builderForValue.build());
+          unk3300NAMDIKJILAIBuilder_.addMessage(index, builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .EntityConfigHashEntry ability_entry_list = 3;</code>
+       * <code>repeated .EntityConfigHashEntry Unk3300_NAMDIKJILAI = 1;</code>
        */
-      public Builder addAllAbilityEntryList(
+      public Builder addAllUnk3300NAMDIKJILAI(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntry> values) {
-        if (abilityEntryListBuilder_ == null) {
-          ensureAbilityEntryListIsMutable();
+        if (unk3300NAMDIKJILAIBuilder_ == null) {
+          ensureUnk3300NAMDIKJILAIIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
-              values, abilityEntryList_);
+              values, unk3300NAMDIKJILAI_);
           onChanged();
         } else {
-          abilityEntryListBuilder_.addAllMessages(values);
+          unk3300NAMDIKJILAIBuilder_.addAllMessages(values);
         }
         return this;
       }
       /**
-       * <code>repeated .EntityConfigHashEntry ability_entry_list = 3;</code>
+       * <code>repeated .EntityConfigHashEntry Unk3300_NAMDIKJILAI = 1;</code>
        */
-      public Builder clearAbilityEntryList() {
-        if (abilityEntryListBuilder_ == null) {
-          abilityEntryList_ = java.util.Collections.emptyList();
+      public Builder clearUnk3300NAMDIKJILAI() {
+        if (unk3300NAMDIKJILAIBuilder_ == null) {
+          unk3300NAMDIKJILAI_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000001);
           onChanged();
         } else {
-          abilityEntryListBuilder_.clear();
+          unk3300NAMDIKJILAIBuilder_.clear();
         }
         return this;
       }
       /**
-       * <code>repeated .EntityConfigHashEntry ability_entry_list = 3;</code>
+       * <code>repeated .EntityConfigHashEntry Unk3300_NAMDIKJILAI = 1;</code>
        */
-      public Builder removeAbilityEntryList(int index) {
-        if (abilityEntryListBuilder_ == null) {
-          ensureAbilityEntryListIsMutable();
-          abilityEntryList_.remove(index);
+      public Builder removeUnk3300NAMDIKJILAI(int index) {
+        if (unk3300NAMDIKJILAIBuilder_ == null) {
+          ensureUnk3300NAMDIKJILAIIsMutable();
+          unk3300NAMDIKJILAI_.remove(index);
           onChanged();
         } else {
-          abilityEntryListBuilder_.remove(index);
+          unk3300NAMDIKJILAIBuilder_.remove(index);
         }
         return this;
       }
       /**
-       * <code>repeated .EntityConfigHashEntry ability_entry_list = 3;</code>
+       * <code>repeated .EntityConfigHashEntry Unk3300_NAMDIKJILAI = 1;</code>
        */
-      public emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntry.Builder getAbilityEntryListBuilder(
+      public emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntry.Builder getUnk3300NAMDIKJILAIBuilder(
           int index) {
-        return getAbilityEntryListFieldBuilder().getBuilder(index);
+        return getUnk3300NAMDIKJILAIFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .EntityConfigHashEntry ability_entry_list = 3;</code>
+       * <code>repeated .EntityConfigHashEntry Unk3300_NAMDIKJILAI = 1;</code>
        */
-      public emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntryOrBuilder getAbilityEntryListOrBuilder(
+      public emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntryOrBuilder getUnk3300NAMDIKJILAIOrBuilder(
           int index) {
-        if (abilityEntryListBuilder_ == null) {
-          return abilityEntryList_.get(index);  } else {
-          return abilityEntryListBuilder_.getMessageOrBuilder(index);
+        if (unk3300NAMDIKJILAIBuilder_ == null) {
+          return unk3300NAMDIKJILAI_.get(index);  } else {
+          return unk3300NAMDIKJILAIBuilder_.getMessageOrBuilder(index);
         }
       }
       /**
-       * <code>repeated .EntityConfigHashEntry ability_entry_list = 3;</code>
+       * <code>repeated .EntityConfigHashEntry Unk3300_NAMDIKJILAI = 1;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntryOrBuilder> 
-           getAbilityEntryListOrBuilderList() {
-        if (abilityEntryListBuilder_ != null) {
-          return abilityEntryListBuilder_.getMessageOrBuilderList();
+           getUnk3300NAMDIKJILAIOrBuilderList() {
+        if (unk3300NAMDIKJILAIBuilder_ != null) {
+          return unk3300NAMDIKJILAIBuilder_.getMessageOrBuilderList();
         } else {
-          return java.util.Collections.unmodifiableList(abilityEntryList_);
+          return java.util.Collections.unmodifiableList(unk3300NAMDIKJILAI_);
         }
       }
       /**
-       * <code>repeated .EntityConfigHashEntry ability_entry_list = 3;</code>
+       * <code>repeated .EntityConfigHashEntry Unk3300_NAMDIKJILAI = 1;</code>
        */
-      public emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntry.Builder addAbilityEntryListBuilder() {
-        return getAbilityEntryListFieldBuilder().addBuilder(
+      public emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntry.Builder addUnk3300NAMDIKJILAIBuilder() {
+        return getUnk3300NAMDIKJILAIFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntry.getDefaultInstance());
       }
       /**
-       * <code>repeated .EntityConfigHashEntry ability_entry_list = 3;</code>
+       * <code>repeated .EntityConfigHashEntry Unk3300_NAMDIKJILAI = 1;</code>
        */
-      public emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntry.Builder addAbilityEntryListBuilder(
+      public emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntry.Builder addUnk3300NAMDIKJILAIBuilder(
           int index) {
-        return getAbilityEntryListFieldBuilder().addBuilder(
+        return getUnk3300NAMDIKJILAIFieldBuilder().addBuilder(
             index, emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntry.getDefaultInstance());
       }
       /**
-       * <code>repeated .EntityConfigHashEntry ability_entry_list = 3;</code>
+       * <code>repeated .EntityConfigHashEntry Unk3300_NAMDIKJILAI = 1;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntry.Builder> 
-           getAbilityEntryListBuilderList() {
-        return getAbilityEntryListFieldBuilder().getBuilderList();
+           getUnk3300NAMDIKJILAIBuilderList() {
+        return getUnk3300NAMDIKJILAIFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilderV3<
           emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntry, emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntry.Builder, emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntryOrBuilder> 
-          getAbilityEntryListFieldBuilder() {
-        if (abilityEntryListBuilder_ == null) {
-          abilityEntryListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+          getUnk3300NAMDIKJILAIFieldBuilder() {
+        if (unk3300NAMDIKJILAIBuilder_ == null) {
+          unk3300NAMDIKJILAIBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
               emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntry, emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntry.Builder, emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntryOrBuilder>(
-                  abilityEntryList_,
+                  unk3300NAMDIKJILAI_,
                   ((bitField0_ & 0x00000001) != 0),
                   getParentForChildren(),
                   isClean());
-          abilityEntryList_ = null;
+          unk3300NAMDIKJILAI_ = null;
         }
-        return abilityEntryListBuilder_;
+        return unk3300NAMDIKJILAIBuilder_;
       }
 
-      private java.util.List<emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntry> avatarEntryList_ =
+      private java.util.List<emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntry> unk3300BLBEKMDGCMB_ =
         java.util.Collections.emptyList();
-      private void ensureAvatarEntryListIsMutable() {
+      private void ensureUnk3300BLBEKMDGCMBIsMutable() {
         if (!((bitField0_ & 0x00000002) != 0)) {
-          avatarEntryList_ = new java.util.ArrayList<emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntry>(avatarEntryList_);
+          unk3300BLBEKMDGCMB_ = new java.util.ArrayList<emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntry>(unk3300BLBEKMDGCMB_);
           bitField0_ |= 0x00000002;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntry, emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntry.Builder, emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntryOrBuilder> avatarEntryListBuilder_;
+          emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntry, emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntry.Builder, emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntryOrBuilder> unk3300BLBEKMDGCMBBuilder_;
 
       /**
-       * <code>repeated .EntityConfigHashEntry avatar_entry_list = 15;</code>
+       * <code>repeated .EntityConfigHashEntry Unk3300_BLBEKMDGCMB = 2;</code>
        */
-      public java.util.List<emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntry> getAvatarEntryListList() {
-        if (avatarEntryListBuilder_ == null) {
-          return java.util.Collections.unmodifiableList(avatarEntryList_);
+      public java.util.List<emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntry> getUnk3300BLBEKMDGCMBList() {
+        if (unk3300BLBEKMDGCMBBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(unk3300BLBEKMDGCMB_);
         } else {
-          return avatarEntryListBuilder_.getMessageList();
+          return unk3300BLBEKMDGCMBBuilder_.getMessageList();
         }
       }
       /**
-       * <code>repeated .EntityConfigHashEntry avatar_entry_list = 15;</code>
+       * <code>repeated .EntityConfigHashEntry Unk3300_BLBEKMDGCMB = 2;</code>
        */
-      public int getAvatarEntryListCount() {
-        if (avatarEntryListBuilder_ == null) {
-          return avatarEntryList_.size();
+      public int getUnk3300BLBEKMDGCMBCount() {
+        if (unk3300BLBEKMDGCMBBuilder_ == null) {
+          return unk3300BLBEKMDGCMB_.size();
         } else {
-          return avatarEntryListBuilder_.getCount();
+          return unk3300BLBEKMDGCMBBuilder_.getCount();
         }
       }
       /**
-       * <code>repeated .EntityConfigHashEntry avatar_entry_list = 15;</code>
+       * <code>repeated .EntityConfigHashEntry Unk3300_BLBEKMDGCMB = 2;</code>
        */
-      public emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntry getAvatarEntryList(int index) {
-        if (avatarEntryListBuilder_ == null) {
-          return avatarEntryList_.get(index);
+      public emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntry getUnk3300BLBEKMDGCMB(int index) {
+        if (unk3300BLBEKMDGCMBBuilder_ == null) {
+          return unk3300BLBEKMDGCMB_.get(index);
         } else {
-          return avatarEntryListBuilder_.getMessage(index);
+          return unk3300BLBEKMDGCMBBuilder_.getMessage(index);
         }
       }
       /**
-       * <code>repeated .EntityConfigHashEntry avatar_entry_list = 15;</code>
+       * <code>repeated .EntityConfigHashEntry Unk3300_BLBEKMDGCMB = 2;</code>
        */
-      public Builder setAvatarEntryList(
+      public Builder setUnk3300BLBEKMDGCMB(
           int index, emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntry value) {
-        if (avatarEntryListBuilder_ == null) {
+        if (unk3300BLBEKMDGCMBBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureAvatarEntryListIsMutable();
-          avatarEntryList_.set(index, value);
+          ensureUnk3300BLBEKMDGCMBIsMutable();
+          unk3300BLBEKMDGCMB_.set(index, value);
           onChanged();
         } else {
-          avatarEntryListBuilder_.setMessage(index, value);
+          unk3300BLBEKMDGCMBBuilder_.setMessage(index, value);
         }
         return this;
       }
       /**
-       * <code>repeated .EntityConfigHashEntry avatar_entry_list = 15;</code>
+       * <code>repeated .EntityConfigHashEntry Unk3300_BLBEKMDGCMB = 2;</code>
        */
-      public Builder setAvatarEntryList(
+      public Builder setUnk3300BLBEKMDGCMB(
           int index, emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntry.Builder builderForValue) {
-        if (avatarEntryListBuilder_ == null) {
-          ensureAvatarEntryListIsMutable();
-          avatarEntryList_.set(index, builderForValue.build());
+        if (unk3300BLBEKMDGCMBBuilder_ == null) {
+          ensureUnk3300BLBEKMDGCMBIsMutable();
+          unk3300BLBEKMDGCMB_.set(index, builderForValue.build());
           onChanged();
         } else {
-          avatarEntryListBuilder_.setMessage(index, builderForValue.build());
+          unk3300BLBEKMDGCMBBuilder_.setMessage(index, builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .EntityConfigHashEntry avatar_entry_list = 15;</code>
+       * <code>repeated .EntityConfigHashEntry Unk3300_BLBEKMDGCMB = 2;</code>
        */
-      public Builder addAvatarEntryList(emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntry value) {
-        if (avatarEntryListBuilder_ == null) {
+      public Builder addUnk3300BLBEKMDGCMB(emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntry value) {
+        if (unk3300BLBEKMDGCMBBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureAvatarEntryListIsMutable();
-          avatarEntryList_.add(value);
+          ensureUnk3300BLBEKMDGCMBIsMutable();
+          unk3300BLBEKMDGCMB_.add(value);
           onChanged();
         } else {
-          avatarEntryListBuilder_.addMessage(value);
+          unk3300BLBEKMDGCMBBuilder_.addMessage(value);
         }
         return this;
       }
       /**
-       * <code>repeated .EntityConfigHashEntry avatar_entry_list = 15;</code>
+       * <code>repeated .EntityConfigHashEntry Unk3300_BLBEKMDGCMB = 2;</code>
        */
-      public Builder addAvatarEntryList(
+      public Builder addUnk3300BLBEKMDGCMB(
           int index, emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntry value) {
-        if (avatarEntryListBuilder_ == null) {
+        if (unk3300BLBEKMDGCMBBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureAvatarEntryListIsMutable();
-          avatarEntryList_.add(index, value);
+          ensureUnk3300BLBEKMDGCMBIsMutable();
+          unk3300BLBEKMDGCMB_.add(index, value);
           onChanged();
         } else {
-          avatarEntryListBuilder_.addMessage(index, value);
+          unk3300BLBEKMDGCMBBuilder_.addMessage(index, value);
         }
         return this;
       }
       /**
-       * <code>repeated .EntityConfigHashEntry avatar_entry_list = 15;</code>
+       * <code>repeated .EntityConfigHashEntry Unk3300_BLBEKMDGCMB = 2;</code>
        */
-      public Builder addAvatarEntryList(
+      public Builder addUnk3300BLBEKMDGCMB(
           emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntry.Builder builderForValue) {
-        if (avatarEntryListBuilder_ == null) {
-          ensureAvatarEntryListIsMutable();
-          avatarEntryList_.add(builderForValue.build());
+        if (unk3300BLBEKMDGCMBBuilder_ == null) {
+          ensureUnk3300BLBEKMDGCMBIsMutable();
+          unk3300BLBEKMDGCMB_.add(builderForValue.build());
           onChanged();
         } else {
-          avatarEntryListBuilder_.addMessage(builderForValue.build());
+          unk3300BLBEKMDGCMBBuilder_.addMessage(builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .EntityConfigHashEntry avatar_entry_list = 15;</code>
+       * <code>repeated .EntityConfigHashEntry Unk3300_BLBEKMDGCMB = 2;</code>
        */
-      public Builder addAvatarEntryList(
+      public Builder addUnk3300BLBEKMDGCMB(
           int index, emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntry.Builder builderForValue) {
-        if (avatarEntryListBuilder_ == null) {
-          ensureAvatarEntryListIsMutable();
-          avatarEntryList_.add(index, builderForValue.build());
+        if (unk3300BLBEKMDGCMBBuilder_ == null) {
+          ensureUnk3300BLBEKMDGCMBIsMutable();
+          unk3300BLBEKMDGCMB_.add(index, builderForValue.build());
           onChanged();
         } else {
-          avatarEntryListBuilder_.addMessage(index, builderForValue.build());
+          unk3300BLBEKMDGCMBBuilder_.addMessage(index, builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .EntityConfigHashEntry avatar_entry_list = 15;</code>
+       * <code>repeated .EntityConfigHashEntry Unk3300_BLBEKMDGCMB = 2;</code>
        */
-      public Builder addAllAvatarEntryList(
+      public Builder addAllUnk3300BLBEKMDGCMB(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntry> values) {
-        if (avatarEntryListBuilder_ == null) {
-          ensureAvatarEntryListIsMutable();
+        if (unk3300BLBEKMDGCMBBuilder_ == null) {
+          ensureUnk3300BLBEKMDGCMBIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
-              values, avatarEntryList_);
+              values, unk3300BLBEKMDGCMB_);
           onChanged();
         } else {
-          avatarEntryListBuilder_.addAllMessages(values);
+          unk3300BLBEKMDGCMBBuilder_.addAllMessages(values);
         }
         return this;
       }
       /**
-       * <code>repeated .EntityConfigHashEntry avatar_entry_list = 15;</code>
+       * <code>repeated .EntityConfigHashEntry Unk3300_BLBEKMDGCMB = 2;</code>
        */
-      public Builder clearAvatarEntryList() {
-        if (avatarEntryListBuilder_ == null) {
-          avatarEntryList_ = java.util.Collections.emptyList();
+      public Builder clearUnk3300BLBEKMDGCMB() {
+        if (unk3300BLBEKMDGCMBBuilder_ == null) {
+          unk3300BLBEKMDGCMB_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000002);
           onChanged();
         } else {
-          avatarEntryListBuilder_.clear();
+          unk3300BLBEKMDGCMBBuilder_.clear();
         }
         return this;
       }
       /**
-       * <code>repeated .EntityConfigHashEntry avatar_entry_list = 15;</code>
+       * <code>repeated .EntityConfigHashEntry Unk3300_BLBEKMDGCMB = 2;</code>
        */
-      public Builder removeAvatarEntryList(int index) {
-        if (avatarEntryListBuilder_ == null) {
-          ensureAvatarEntryListIsMutable();
-          avatarEntryList_.remove(index);
+      public Builder removeUnk3300BLBEKMDGCMB(int index) {
+        if (unk3300BLBEKMDGCMBBuilder_ == null) {
+          ensureUnk3300BLBEKMDGCMBIsMutable();
+          unk3300BLBEKMDGCMB_.remove(index);
           onChanged();
         } else {
-          avatarEntryListBuilder_.remove(index);
+          unk3300BLBEKMDGCMBBuilder_.remove(index);
         }
         return this;
       }
       /**
-       * <code>repeated .EntityConfigHashEntry avatar_entry_list = 15;</code>
+       * <code>repeated .EntityConfigHashEntry Unk3300_BLBEKMDGCMB = 2;</code>
        */
-      public emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntry.Builder getAvatarEntryListBuilder(
+      public emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntry.Builder getUnk3300BLBEKMDGCMBBuilder(
           int index) {
-        return getAvatarEntryListFieldBuilder().getBuilder(index);
+        return getUnk3300BLBEKMDGCMBFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .EntityConfigHashEntry avatar_entry_list = 15;</code>
+       * <code>repeated .EntityConfigHashEntry Unk3300_BLBEKMDGCMB = 2;</code>
        */
-      public emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntryOrBuilder getAvatarEntryListOrBuilder(
+      public emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntryOrBuilder getUnk3300BLBEKMDGCMBOrBuilder(
           int index) {
-        if (avatarEntryListBuilder_ == null) {
-          return avatarEntryList_.get(index);  } else {
-          return avatarEntryListBuilder_.getMessageOrBuilder(index);
+        if (unk3300BLBEKMDGCMBBuilder_ == null) {
+          return unk3300BLBEKMDGCMB_.get(index);  } else {
+          return unk3300BLBEKMDGCMBBuilder_.getMessageOrBuilder(index);
         }
       }
       /**
-       * <code>repeated .EntityConfigHashEntry avatar_entry_list = 15;</code>
+       * <code>repeated .EntityConfigHashEntry Unk3300_BLBEKMDGCMB = 2;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntryOrBuilder> 
-           getAvatarEntryListOrBuilderList() {
-        if (avatarEntryListBuilder_ != null) {
-          return avatarEntryListBuilder_.getMessageOrBuilderList();
+           getUnk3300BLBEKMDGCMBOrBuilderList() {
+        if (unk3300BLBEKMDGCMBBuilder_ != null) {
+          return unk3300BLBEKMDGCMBBuilder_.getMessageOrBuilderList();
         } else {
-          return java.util.Collections.unmodifiableList(avatarEntryList_);
+          return java.util.Collections.unmodifiableList(unk3300BLBEKMDGCMB_);
         }
       }
       /**
-       * <code>repeated .EntityConfigHashEntry avatar_entry_list = 15;</code>
+       * <code>repeated .EntityConfigHashEntry Unk3300_BLBEKMDGCMB = 2;</code>
        */
-      public emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntry.Builder addAvatarEntryListBuilder() {
-        return getAvatarEntryListFieldBuilder().addBuilder(
+      public emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntry.Builder addUnk3300BLBEKMDGCMBBuilder() {
+        return getUnk3300BLBEKMDGCMBFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntry.getDefaultInstance());
       }
       /**
-       * <code>repeated .EntityConfigHashEntry avatar_entry_list = 15;</code>
+       * <code>repeated .EntityConfigHashEntry Unk3300_BLBEKMDGCMB = 2;</code>
        */
-      public emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntry.Builder addAvatarEntryListBuilder(
+      public emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntry.Builder addUnk3300BLBEKMDGCMBBuilder(
           int index) {
-        return getAvatarEntryListFieldBuilder().addBuilder(
+        return getUnk3300BLBEKMDGCMBFieldBuilder().addBuilder(
             index, emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntry.getDefaultInstance());
       }
       /**
-       * <code>repeated .EntityConfigHashEntry avatar_entry_list = 15;</code>
+       * <code>repeated .EntityConfigHashEntry Unk3300_BLBEKMDGCMB = 2;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntry.Builder> 
-           getAvatarEntryListBuilderList() {
-        return getAvatarEntryListFieldBuilder().getBuilderList();
+           getUnk3300BLBEKMDGCMBBuilderList() {
+        return getUnk3300BLBEKMDGCMBFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilderV3<
           emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntry, emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntry.Builder, emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntryOrBuilder> 
-          getAvatarEntryListFieldBuilder() {
-        if (avatarEntryListBuilder_ == null) {
-          avatarEntryListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+          getUnk3300BLBEKMDGCMBFieldBuilder() {
+        if (unk3300BLBEKMDGCMBBuilder_ == null) {
+          unk3300BLBEKMDGCMBBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
               emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntry, emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntry.Builder, emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntryOrBuilder>(
-                  avatarEntryList_,
+                  unk3300BLBEKMDGCMB_,
                   ((bitField0_ & 0x00000002) != 0),
                   getParentForChildren(),
                   isClean());
-          avatarEntryList_ = null;
+          unk3300BLBEKMDGCMB_ = null;
         }
-        return avatarEntryListBuilder_;
+        return unk3300BLBEKMDGCMBBuilder_;
       }
 
-      private java.util.List<emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntry> combatEntryList_ =
+      private java.util.List<emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntry> unk3300NLMPHBGMOEN_ =
         java.util.Collections.emptyList();
-      private void ensureCombatEntryListIsMutable() {
+      private void ensureUnk3300NLMPHBGMOENIsMutable() {
         if (!((bitField0_ & 0x00000004) != 0)) {
-          combatEntryList_ = new java.util.ArrayList<emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntry>(combatEntryList_);
+          unk3300NLMPHBGMOEN_ = new java.util.ArrayList<emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntry>(unk3300NLMPHBGMOEN_);
           bitField0_ |= 0x00000004;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntry, emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntry.Builder, emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntryOrBuilder> combatEntryListBuilder_;
+          emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntry, emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntry.Builder, emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntryOrBuilder> unk3300NLMPHBGMOENBuilder_;
 
       /**
-       * <code>repeated .EntityConfigHashEntry combat_entry_list = 8;</code>
+       * <code>repeated .EntityConfigHashEntry Unk3300_NLMPHBGMOEN = 9;</code>
        */
-      public java.util.List<emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntry> getCombatEntryListList() {
-        if (combatEntryListBuilder_ == null) {
-          return java.util.Collections.unmodifiableList(combatEntryList_);
+      public java.util.List<emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntry> getUnk3300NLMPHBGMOENList() {
+        if (unk3300NLMPHBGMOENBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(unk3300NLMPHBGMOEN_);
         } else {
-          return combatEntryListBuilder_.getMessageList();
+          return unk3300NLMPHBGMOENBuilder_.getMessageList();
         }
       }
       /**
-       * <code>repeated .EntityConfigHashEntry combat_entry_list = 8;</code>
+       * <code>repeated .EntityConfigHashEntry Unk3300_NLMPHBGMOEN = 9;</code>
        */
-      public int getCombatEntryListCount() {
-        if (combatEntryListBuilder_ == null) {
-          return combatEntryList_.size();
+      public int getUnk3300NLMPHBGMOENCount() {
+        if (unk3300NLMPHBGMOENBuilder_ == null) {
+          return unk3300NLMPHBGMOEN_.size();
         } else {
-          return combatEntryListBuilder_.getCount();
+          return unk3300NLMPHBGMOENBuilder_.getCount();
         }
       }
       /**
-       * <code>repeated .EntityConfigHashEntry combat_entry_list = 8;</code>
+       * <code>repeated .EntityConfigHashEntry Unk3300_NLMPHBGMOEN = 9;</code>
        */
-      public emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntry getCombatEntryList(int index) {
-        if (combatEntryListBuilder_ == null) {
-          return combatEntryList_.get(index);
+      public emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntry getUnk3300NLMPHBGMOEN(int index) {
+        if (unk3300NLMPHBGMOENBuilder_ == null) {
+          return unk3300NLMPHBGMOEN_.get(index);
         } else {
-          return combatEntryListBuilder_.getMessage(index);
+          return unk3300NLMPHBGMOENBuilder_.getMessage(index);
         }
       }
       /**
-       * <code>repeated .EntityConfigHashEntry combat_entry_list = 8;</code>
+       * <code>repeated .EntityConfigHashEntry Unk3300_NLMPHBGMOEN = 9;</code>
        */
-      public Builder setCombatEntryList(
+      public Builder setUnk3300NLMPHBGMOEN(
           int index, emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntry value) {
-        if (combatEntryListBuilder_ == null) {
+        if (unk3300NLMPHBGMOENBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureCombatEntryListIsMutable();
-          combatEntryList_.set(index, value);
+          ensureUnk3300NLMPHBGMOENIsMutable();
+          unk3300NLMPHBGMOEN_.set(index, value);
           onChanged();
         } else {
-          combatEntryListBuilder_.setMessage(index, value);
+          unk3300NLMPHBGMOENBuilder_.setMessage(index, value);
         }
         return this;
       }
       /**
-       * <code>repeated .EntityConfigHashEntry combat_entry_list = 8;</code>
+       * <code>repeated .EntityConfigHashEntry Unk3300_NLMPHBGMOEN = 9;</code>
        */
-      public Builder setCombatEntryList(
+      public Builder setUnk3300NLMPHBGMOEN(
           int index, emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntry.Builder builderForValue) {
-        if (combatEntryListBuilder_ == null) {
-          ensureCombatEntryListIsMutable();
-          combatEntryList_.set(index, builderForValue.build());
+        if (unk3300NLMPHBGMOENBuilder_ == null) {
+          ensureUnk3300NLMPHBGMOENIsMutable();
+          unk3300NLMPHBGMOEN_.set(index, builderForValue.build());
           onChanged();
         } else {
-          combatEntryListBuilder_.setMessage(index, builderForValue.build());
+          unk3300NLMPHBGMOENBuilder_.setMessage(index, builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .EntityConfigHashEntry combat_entry_list = 8;</code>
+       * <code>repeated .EntityConfigHashEntry Unk3300_NLMPHBGMOEN = 9;</code>
        */
-      public Builder addCombatEntryList(emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntry value) {
-        if (combatEntryListBuilder_ == null) {
+      public Builder addUnk3300NLMPHBGMOEN(emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntry value) {
+        if (unk3300NLMPHBGMOENBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureCombatEntryListIsMutable();
-          combatEntryList_.add(value);
+          ensureUnk3300NLMPHBGMOENIsMutable();
+          unk3300NLMPHBGMOEN_.add(value);
           onChanged();
         } else {
-          combatEntryListBuilder_.addMessage(value);
+          unk3300NLMPHBGMOENBuilder_.addMessage(value);
         }
         return this;
       }
       /**
-       * <code>repeated .EntityConfigHashEntry combat_entry_list = 8;</code>
+       * <code>repeated .EntityConfigHashEntry Unk3300_NLMPHBGMOEN = 9;</code>
        */
-      public Builder addCombatEntryList(
+      public Builder addUnk3300NLMPHBGMOEN(
           int index, emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntry value) {
-        if (combatEntryListBuilder_ == null) {
+        if (unk3300NLMPHBGMOENBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureCombatEntryListIsMutable();
-          combatEntryList_.add(index, value);
+          ensureUnk3300NLMPHBGMOENIsMutable();
+          unk3300NLMPHBGMOEN_.add(index, value);
           onChanged();
         } else {
-          combatEntryListBuilder_.addMessage(index, value);
+          unk3300NLMPHBGMOENBuilder_.addMessage(index, value);
         }
         return this;
       }
       /**
-       * <code>repeated .EntityConfigHashEntry combat_entry_list = 8;</code>
+       * <code>repeated .EntityConfigHashEntry Unk3300_NLMPHBGMOEN = 9;</code>
        */
-      public Builder addCombatEntryList(
+      public Builder addUnk3300NLMPHBGMOEN(
           emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntry.Builder builderForValue) {
-        if (combatEntryListBuilder_ == null) {
-          ensureCombatEntryListIsMutable();
-          combatEntryList_.add(builderForValue.build());
+        if (unk3300NLMPHBGMOENBuilder_ == null) {
+          ensureUnk3300NLMPHBGMOENIsMutable();
+          unk3300NLMPHBGMOEN_.add(builderForValue.build());
           onChanged();
         } else {
-          combatEntryListBuilder_.addMessage(builderForValue.build());
+          unk3300NLMPHBGMOENBuilder_.addMessage(builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .EntityConfigHashEntry combat_entry_list = 8;</code>
+       * <code>repeated .EntityConfigHashEntry Unk3300_NLMPHBGMOEN = 9;</code>
        */
-      public Builder addCombatEntryList(
+      public Builder addUnk3300NLMPHBGMOEN(
           int index, emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntry.Builder builderForValue) {
-        if (combatEntryListBuilder_ == null) {
-          ensureCombatEntryListIsMutable();
-          combatEntryList_.add(index, builderForValue.build());
+        if (unk3300NLMPHBGMOENBuilder_ == null) {
+          ensureUnk3300NLMPHBGMOENIsMutable();
+          unk3300NLMPHBGMOEN_.add(index, builderForValue.build());
           onChanged();
         } else {
-          combatEntryListBuilder_.addMessage(index, builderForValue.build());
+          unk3300NLMPHBGMOENBuilder_.addMessage(index, builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .EntityConfigHashEntry combat_entry_list = 8;</code>
+       * <code>repeated .EntityConfigHashEntry Unk3300_NLMPHBGMOEN = 9;</code>
        */
-      public Builder addAllCombatEntryList(
+      public Builder addAllUnk3300NLMPHBGMOEN(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntry> values) {
-        if (combatEntryListBuilder_ == null) {
-          ensureCombatEntryListIsMutable();
+        if (unk3300NLMPHBGMOENBuilder_ == null) {
+          ensureUnk3300NLMPHBGMOENIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
-              values, combatEntryList_);
+              values, unk3300NLMPHBGMOEN_);
           onChanged();
         } else {
-          combatEntryListBuilder_.addAllMessages(values);
+          unk3300NLMPHBGMOENBuilder_.addAllMessages(values);
         }
         return this;
       }
       /**
-       * <code>repeated .EntityConfigHashEntry combat_entry_list = 8;</code>
+       * <code>repeated .EntityConfigHashEntry Unk3300_NLMPHBGMOEN = 9;</code>
        */
-      public Builder clearCombatEntryList() {
-        if (combatEntryListBuilder_ == null) {
-          combatEntryList_ = java.util.Collections.emptyList();
+      public Builder clearUnk3300NLMPHBGMOEN() {
+        if (unk3300NLMPHBGMOENBuilder_ == null) {
+          unk3300NLMPHBGMOEN_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000004);
           onChanged();
         } else {
-          combatEntryListBuilder_.clear();
+          unk3300NLMPHBGMOENBuilder_.clear();
         }
         return this;
       }
       /**
-       * <code>repeated .EntityConfigHashEntry combat_entry_list = 8;</code>
+       * <code>repeated .EntityConfigHashEntry Unk3300_NLMPHBGMOEN = 9;</code>
        */
-      public Builder removeCombatEntryList(int index) {
-        if (combatEntryListBuilder_ == null) {
-          ensureCombatEntryListIsMutable();
-          combatEntryList_.remove(index);
+      public Builder removeUnk3300NLMPHBGMOEN(int index) {
+        if (unk3300NLMPHBGMOENBuilder_ == null) {
+          ensureUnk3300NLMPHBGMOENIsMutable();
+          unk3300NLMPHBGMOEN_.remove(index);
           onChanged();
         } else {
-          combatEntryListBuilder_.remove(index);
+          unk3300NLMPHBGMOENBuilder_.remove(index);
         }
         return this;
       }
       /**
-       * <code>repeated .EntityConfigHashEntry combat_entry_list = 8;</code>
+       * <code>repeated .EntityConfigHashEntry Unk3300_NLMPHBGMOEN = 9;</code>
        */
-      public emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntry.Builder getCombatEntryListBuilder(
+      public emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntry.Builder getUnk3300NLMPHBGMOENBuilder(
           int index) {
-        return getCombatEntryListFieldBuilder().getBuilder(index);
+        return getUnk3300NLMPHBGMOENFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .EntityConfigHashEntry combat_entry_list = 8;</code>
+       * <code>repeated .EntityConfigHashEntry Unk3300_NLMPHBGMOEN = 9;</code>
        */
-      public emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntryOrBuilder getCombatEntryListOrBuilder(
+      public emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntryOrBuilder getUnk3300NLMPHBGMOENOrBuilder(
           int index) {
-        if (combatEntryListBuilder_ == null) {
-          return combatEntryList_.get(index);  } else {
-          return combatEntryListBuilder_.getMessageOrBuilder(index);
+        if (unk3300NLMPHBGMOENBuilder_ == null) {
+          return unk3300NLMPHBGMOEN_.get(index);  } else {
+          return unk3300NLMPHBGMOENBuilder_.getMessageOrBuilder(index);
         }
       }
       /**
-       * <code>repeated .EntityConfigHashEntry combat_entry_list = 8;</code>
+       * <code>repeated .EntityConfigHashEntry Unk3300_NLMPHBGMOEN = 9;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntryOrBuilder> 
-           getCombatEntryListOrBuilderList() {
-        if (combatEntryListBuilder_ != null) {
-          return combatEntryListBuilder_.getMessageOrBuilderList();
+           getUnk3300NLMPHBGMOENOrBuilderList() {
+        if (unk3300NLMPHBGMOENBuilder_ != null) {
+          return unk3300NLMPHBGMOENBuilder_.getMessageOrBuilderList();
         } else {
-          return java.util.Collections.unmodifiableList(combatEntryList_);
+          return java.util.Collections.unmodifiableList(unk3300NLMPHBGMOEN_);
         }
       }
       /**
-       * <code>repeated .EntityConfigHashEntry combat_entry_list = 8;</code>
+       * <code>repeated .EntityConfigHashEntry Unk3300_NLMPHBGMOEN = 9;</code>
        */
-      public emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntry.Builder addCombatEntryListBuilder() {
-        return getCombatEntryListFieldBuilder().addBuilder(
+      public emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntry.Builder addUnk3300NLMPHBGMOENBuilder() {
+        return getUnk3300NLMPHBGMOENFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntry.getDefaultInstance());
       }
       /**
-       * <code>repeated .EntityConfigHashEntry combat_entry_list = 8;</code>
+       * <code>repeated .EntityConfigHashEntry Unk3300_NLMPHBGMOEN = 9;</code>
        */
-      public emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntry.Builder addCombatEntryListBuilder(
+      public emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntry.Builder addUnk3300NLMPHBGMOENBuilder(
           int index) {
-        return getCombatEntryListFieldBuilder().addBuilder(
+        return getUnk3300NLMPHBGMOENFieldBuilder().addBuilder(
             index, emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntry.getDefaultInstance());
       }
       /**
-       * <code>repeated .EntityConfigHashEntry combat_entry_list = 8;</code>
+       * <code>repeated .EntityConfigHashEntry Unk3300_NLMPHBGMOEN = 9;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntry.Builder> 
-           getCombatEntryListBuilderList() {
-        return getCombatEntryListFieldBuilder().getBuilderList();
+           getUnk3300NLMPHBGMOENBuilderList() {
+        return getUnk3300NLMPHBGMOENFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilderV3<
           emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntry, emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntry.Builder, emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntryOrBuilder> 
-          getCombatEntryListFieldBuilder() {
-        if (combatEntryListBuilder_ == null) {
-          combatEntryListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+          getUnk3300NLMPHBGMOENFieldBuilder() {
+        if (unk3300NLMPHBGMOENBuilder_ == null) {
+          unk3300NLMPHBGMOENBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
               emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntry, emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntry.Builder, emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntryOrBuilder>(
-                  combatEntryList_,
+                  unk3300NLMPHBGMOEN_,
                   ((bitField0_ & 0x00000004) != 0),
                   getParentForChildren(),
                   isClean());
-          combatEntryList_ = null;
+          unk3300NLMPHBGMOEN_ = null;
         }
-        return combatEntryListBuilder_;
+        return unk3300NLMPHBGMOENBuilder_;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -1580,12 +1588,13 @@ public final class EntityConfigHashNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\034EntityConfigHashNotify.proto\032\033EntityCo" +
-      "nfigHashEntry.proto\"\262\001\n\026EntityConfigHash" +
-      "Notify\0222\n\022ability_entry_list\030\003 \003(\0132\026.Ent" +
-      "ityConfigHashEntry\0221\n\021avatar_entry_list\030" +
-      "\017 \003(\0132\026.EntityConfigHashEntry\0221\n\021combat_" +
-      "entry_list\030\010 \003(\0132\026.EntityConfigHashEntry" +
-      "B\033\n\031emu.grasscutter.net.protob\006proto3"
+      "nfigHashEntry.proto\"\267\001\n\026EntityConfigHash" +
+      "Notify\0223\n\023Unk3300_NAMDIKJILAI\030\001 \003(\0132\026.En" +
+      "tityConfigHashEntry\0223\n\023Unk3300_BLBEKMDGC" +
+      "MB\030\002 \003(\0132\026.EntityConfigHashEntry\0223\n\023Unk3" +
+      "300_NLMPHBGMOEN\030\t \003(\0132\026.EntityConfigHash" +
+      "EntryB\033\n\031emu.grasscutter.net.protob\006prot" +
+      "o3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -1597,7 +1606,7 @@ public final class EntityConfigHashNotifyOuterClass {
     internal_static_EntityConfigHashNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_EntityConfigHashNotify_descriptor,
-        new java.lang.String[] { "AbilityEntryList", "AvatarEntryList", "CombatEntryList", });
+        new java.lang.String[] { "Unk3300NAMDIKJILAI", "Unk3300BLBEKMDGCMB", "Unk3300NLMPHBGMOEN", });
     emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.getDescriptor();
   }
 

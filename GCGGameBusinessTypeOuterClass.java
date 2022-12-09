@@ -55,6 +55,18 @@ public final class GCGGameBusinessTypeOuterClass {
      * <code>GCG_GAME_BUSINESS_TYPE_WEEK_CHALLENGE = 8;</code>
      */
     GCG_GAME_BUSINESS_TYPE_WEEK_CHALLENGE(8),
+    /**
+     * <code>GCG_GAME_BUSINESS_TYPE_BREAK_CHALLENGE = 9;</code>
+     */
+    GCG_GAME_BUSINESS_TYPE_BREAK_CHALLENGE(9),
+    /**
+     * <code>GCG_GAME_BUSINESS_TYPE_QUEST = 10;</code>
+     */
+    GCG_GAME_BUSINESS_TYPE_QUEST(10),
+    /**
+     * <code>GCG_GAME_BUSINESS_TYPE_GUIDE_GROUP = 11;</code>
+     */
+    GCG_GAME_BUSINESS_TYPE_GUIDE_GROUP(11),
     UNRECOGNIZED(-1),
     ;
 
@@ -94,6 +106,18 @@ public final class GCGGameBusinessTypeOuterClass {
      * <code>GCG_GAME_BUSINESS_TYPE_WEEK_CHALLENGE = 8;</code>
      */
     public static final int GCG_GAME_BUSINESS_TYPE_WEEK_CHALLENGE_VALUE = 8;
+    /**
+     * <code>GCG_GAME_BUSINESS_TYPE_BREAK_CHALLENGE = 9;</code>
+     */
+    public static final int GCG_GAME_BUSINESS_TYPE_BREAK_CHALLENGE_VALUE = 9;
+    /**
+     * <code>GCG_GAME_BUSINESS_TYPE_QUEST = 10;</code>
+     */
+    public static final int GCG_GAME_BUSINESS_TYPE_QUEST_VALUE = 10;
+    /**
+     * <code>GCG_GAME_BUSINESS_TYPE_GUIDE_GROUP = 11;</code>
+     */
+    public static final int GCG_GAME_BUSINESS_TYPE_GUIDE_GROUP_VALUE = 11;
 
 
     public final int getNumber() {
@@ -129,6 +153,9 @@ public final class GCGGameBusinessTypeOuterClass {
         case 6: return GCG_GAME_BUSINESS_TYPE_WORLD_CHALLENGE;
         case 7: return GCG_GAME_BUSINESS_TYPE_BOSS_CHALLENGE;
         case 8: return GCG_GAME_BUSINESS_TYPE_WEEK_CHALLENGE;
+        case 9: return GCG_GAME_BUSINESS_TYPE_BREAK_CHALLENGE;
+        case 10: return GCG_GAME_BUSINESS_TYPE_QUEST;
+        case 11: return GCG_GAME_BUSINESS_TYPE_GUIDE_GROUP;
         default: return null;
       }
     }
@@ -194,7 +221,7 @@ public final class GCGGameBusinessTypeOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\031GCGGameBusinessType.proto*\362\002\n\023GCGGameB" +
+      "\n\031GCGGameBusinessType.proto*\350\003\n\023GCGGameB" +
       "usinessType\022\037\n\033GCG_GAME_BUSINESS_TYPE_NO" +
       "NE\020\000\022\035\n\031GCG_GAME_BUSINESS_TYPE_GM\020\001\022 \n\034G" +
       "CG_GAME_BUSINESS_TYPE_MATCH\020\002\022\036\n\032GCG_GAM" +
@@ -204,7 +231,10 @@ public final class GCGGameBusinessTypeOuterClass {
       "ME_BUSINESS_TYPE_WORLD_CHALLENGE\020\006\022)\n%GC" +
       "G_GAME_BUSINESS_TYPE_BOSS_CHALLENGE\020\007\022)\n" +
       "%GCG_GAME_BUSINESS_TYPE_WEEK_CHALLENGE\020\010" +
-      "B\033\n\031emu.grasscutter.net.protob\006proto3"
+      "\022*\n&GCG_GAME_BUSINESS_TYPE_BREAK_CHALLEN" +
+      "GE\020\t\022 \n\034GCG_GAME_BUSINESS_TYPE_QUEST\020\n\022&" +
+      "\n\"GCG_GAME_BUSINESS_TYPE_GUIDE_GROUP\020\013B\033" +
+      "\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

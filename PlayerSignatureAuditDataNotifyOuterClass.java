@@ -19,25 +19,29 @@ public final class PlayerSignatureAuditDataNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.ContentAuditInfo info = 14;</code>
+     * <code>.ContentAuditInfo info = 11;</code>
      * @return Whether the info field is set.
      */
     boolean hasInfo();
     /**
-     * <code>.ContentAuditInfo info = 14;</code>
+     * <code>.ContentAuditInfo info = 11;</code>
      * @return The info.
      */
     emu.grasscutter.net.proto.ContentAuditInfoOuterClass.ContentAuditInfo getInfo();
     /**
-     * <code>.ContentAuditInfo info = 14;</code>
+     * <code>.ContentAuditInfo info = 11;</code>
      */
     emu.grasscutter.net.proto.ContentAuditInfoOuterClass.ContentAuditInfoOrBuilder getInfoOrBuilder();
   }
   /**
    * <pre>
-   * CmdId: 4060
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 4036;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code PlayerSignatureAuditDataNotify}
@@ -84,7 +88,7 @@ public final class PlayerSignatureAuditDataNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 114: {
+            case 90: {
               emu.grasscutter.net.proto.ContentAuditInfoOuterClass.ContentAuditInfo.Builder subBuilder = null;
               if (info_ != null) {
                 subBuilder = info_.toBuilder();
@@ -129,10 +133,10 @@ public final class PlayerSignatureAuditDataNotifyOuterClass {
               emu.grasscutter.net.proto.PlayerSignatureAuditDataNotifyOuterClass.PlayerSignatureAuditDataNotify.class, emu.grasscutter.net.proto.PlayerSignatureAuditDataNotifyOuterClass.PlayerSignatureAuditDataNotify.Builder.class);
     }
 
-    public static final int INFO_FIELD_NUMBER = 14;
+    public static final int INFO_FIELD_NUMBER = 11;
     private emu.grasscutter.net.proto.ContentAuditInfoOuterClass.ContentAuditInfo info_;
     /**
-     * <code>.ContentAuditInfo info = 14;</code>
+     * <code>.ContentAuditInfo info = 11;</code>
      * @return Whether the info field is set.
      */
     @java.lang.Override
@@ -140,7 +144,7 @@ public final class PlayerSignatureAuditDataNotifyOuterClass {
       return info_ != null;
     }
     /**
-     * <code>.ContentAuditInfo info = 14;</code>
+     * <code>.ContentAuditInfo info = 11;</code>
      * @return The info.
      */
     @java.lang.Override
@@ -148,7 +152,7 @@ public final class PlayerSignatureAuditDataNotifyOuterClass {
       return info_ == null ? emu.grasscutter.net.proto.ContentAuditInfoOuterClass.ContentAuditInfo.getDefaultInstance() : info_;
     }
     /**
-     * <code>.ContentAuditInfo info = 14;</code>
+     * <code>.ContentAuditInfo info = 11;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.ContentAuditInfoOuterClass.ContentAuditInfoOrBuilder getInfoOrBuilder() {
@@ -170,7 +174,7 @@ public final class PlayerSignatureAuditDataNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (info_ != null) {
-        output.writeMessage(14, getInfo());
+        output.writeMessage(11, getInfo());
       }
       unknownFields.writeTo(output);
     }
@@ -183,7 +187,7 @@ public final class PlayerSignatureAuditDataNotifyOuterClass {
       size = 0;
       if (info_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(14, getInfo());
+          .computeMessageSize(11, getInfo());
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -317,9 +321,13 @@ public final class PlayerSignatureAuditDataNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 4060
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 4036;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code PlayerSignatureAuditDataNotify}
@@ -480,14 +488,14 @@ public final class PlayerSignatureAuditDataNotifyOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.ContentAuditInfoOuterClass.ContentAuditInfo, emu.grasscutter.net.proto.ContentAuditInfoOuterClass.ContentAuditInfo.Builder, emu.grasscutter.net.proto.ContentAuditInfoOuterClass.ContentAuditInfoOrBuilder> infoBuilder_;
       /**
-       * <code>.ContentAuditInfo info = 14;</code>
+       * <code>.ContentAuditInfo info = 11;</code>
        * @return Whether the info field is set.
        */
       public boolean hasInfo() {
         return infoBuilder_ != null || info_ != null;
       }
       /**
-       * <code>.ContentAuditInfo info = 14;</code>
+       * <code>.ContentAuditInfo info = 11;</code>
        * @return The info.
        */
       public emu.grasscutter.net.proto.ContentAuditInfoOuterClass.ContentAuditInfo getInfo() {
@@ -498,7 +506,7 @@ public final class PlayerSignatureAuditDataNotifyOuterClass {
         }
       }
       /**
-       * <code>.ContentAuditInfo info = 14;</code>
+       * <code>.ContentAuditInfo info = 11;</code>
        */
       public Builder setInfo(emu.grasscutter.net.proto.ContentAuditInfoOuterClass.ContentAuditInfo value) {
         if (infoBuilder_ == null) {
@@ -514,7 +522,7 @@ public final class PlayerSignatureAuditDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.ContentAuditInfo info = 14;</code>
+       * <code>.ContentAuditInfo info = 11;</code>
        */
       public Builder setInfo(
           emu.grasscutter.net.proto.ContentAuditInfoOuterClass.ContentAuditInfo.Builder builderForValue) {
@@ -528,7 +536,7 @@ public final class PlayerSignatureAuditDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.ContentAuditInfo info = 14;</code>
+       * <code>.ContentAuditInfo info = 11;</code>
        */
       public Builder mergeInfo(emu.grasscutter.net.proto.ContentAuditInfoOuterClass.ContentAuditInfo value) {
         if (infoBuilder_ == null) {
@@ -546,7 +554,7 @@ public final class PlayerSignatureAuditDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.ContentAuditInfo info = 14;</code>
+       * <code>.ContentAuditInfo info = 11;</code>
        */
       public Builder clearInfo() {
         if (infoBuilder_ == null) {
@@ -560,7 +568,7 @@ public final class PlayerSignatureAuditDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.ContentAuditInfo info = 14;</code>
+       * <code>.ContentAuditInfo info = 11;</code>
        */
       public emu.grasscutter.net.proto.ContentAuditInfoOuterClass.ContentAuditInfo.Builder getInfoBuilder() {
         
@@ -568,7 +576,7 @@ public final class PlayerSignatureAuditDataNotifyOuterClass {
         return getInfoFieldBuilder().getBuilder();
       }
       /**
-       * <code>.ContentAuditInfo info = 14;</code>
+       * <code>.ContentAuditInfo info = 11;</code>
        */
       public emu.grasscutter.net.proto.ContentAuditInfoOuterClass.ContentAuditInfoOrBuilder getInfoOrBuilder() {
         if (infoBuilder_ != null) {
@@ -579,7 +587,7 @@ public final class PlayerSignatureAuditDataNotifyOuterClass {
         }
       }
       /**
-       * <code>.ContentAuditInfo info = 14;</code>
+       * <code>.ContentAuditInfo info = 11;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.ContentAuditInfoOuterClass.ContentAuditInfo, emu.grasscutter.net.proto.ContentAuditInfoOuterClass.ContentAuditInfo.Builder, emu.grasscutter.net.proto.ContentAuditInfoOuterClass.ContentAuditInfoOrBuilder> 
@@ -663,7 +671,7 @@ public final class PlayerSignatureAuditDataNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n$PlayerSignatureAuditDataNotify.proto\032\026" +
       "ContentAuditInfo.proto\"A\n\036PlayerSignatur" +
-      "eAuditDataNotify\022\037\n\004info\030\016 \001(\0132\021.Content" +
+      "eAuditDataNotify\022\037\n\004info\030\013 \001(\0132\021.Content" +
       "AuditInfoB\033\n\031emu.grasscutter.net.protob\006" +
       "proto3"
     };

@@ -19,28 +19,32 @@ public final class UpdateSalvageBundleMarkRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 challenge_type = 1;</code>
-     * @return The challengeType.
-     */
-    int getChallengeType();
-
-    /**
-     * <code>int32 retcode = 4;</code>
+     * <code>int32 retcode = 2;</code>
      * @return The retcode.
      */
     int getRetcode();
 
     /**
-     * <code>uint32 stage_id = 7;</code>
+     * <code>uint32 stage_id = 4;</code>
      * @return The stageId.
      */
     int getStageId();
+
+    /**
+     * <code>uint32 challenge_type = 5;</code>
+     * @return The challengeType.
+     */
+    int getChallengeType();
   }
   /**
    * <pre>
-   * CmdId: 8459
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 8620;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code UpdateSalvageBundleMarkRsp}
@@ -87,19 +91,19 @@ public final class UpdateSalvageBundleMarkRspOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
-
-              challengeType_ = input.readUInt32();
-              break;
-            }
-            case 32: {
+            case 16: {
 
               retcode_ = input.readInt32();
               break;
             }
-            case 56: {
+            case 32: {
 
               stageId_ = input.readUInt32();
+              break;
+            }
+            case 40: {
+
+              challengeType_ = input.readUInt32();
               break;
             }
             default: {
@@ -134,21 +138,10 @@ public final class UpdateSalvageBundleMarkRspOuterClass {
               emu.grasscutter.net.proto.UpdateSalvageBundleMarkRspOuterClass.UpdateSalvageBundleMarkRsp.class, emu.grasscutter.net.proto.UpdateSalvageBundleMarkRspOuterClass.UpdateSalvageBundleMarkRsp.Builder.class);
     }
 
-    public static final int CHALLENGE_TYPE_FIELD_NUMBER = 1;
-    private int challengeType_;
-    /**
-     * <code>uint32 challenge_type = 1;</code>
-     * @return The challengeType.
-     */
-    @java.lang.Override
-    public int getChallengeType() {
-      return challengeType_;
-    }
-
-    public static final int RETCODE_FIELD_NUMBER = 4;
+    public static final int RETCODE_FIELD_NUMBER = 2;
     private int retcode_;
     /**
-     * <code>int32 retcode = 4;</code>
+     * <code>int32 retcode = 2;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -156,15 +149,26 @@ public final class UpdateSalvageBundleMarkRspOuterClass {
       return retcode_;
     }
 
-    public static final int STAGE_ID_FIELD_NUMBER = 7;
+    public static final int STAGE_ID_FIELD_NUMBER = 4;
     private int stageId_;
     /**
-     * <code>uint32 stage_id = 7;</code>
+     * <code>uint32 stage_id = 4;</code>
      * @return The stageId.
      */
     @java.lang.Override
     public int getStageId() {
       return stageId_;
+    }
+
+    public static final int CHALLENGE_TYPE_FIELD_NUMBER = 5;
+    private int challengeType_;
+    /**
+     * <code>uint32 challenge_type = 5;</code>
+     * @return The challengeType.
+     */
+    @java.lang.Override
+    public int getChallengeType() {
+      return challengeType_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -181,14 +185,14 @@ public final class UpdateSalvageBundleMarkRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (challengeType_ != 0) {
-        output.writeUInt32(1, challengeType_);
-      }
       if (retcode_ != 0) {
-        output.writeInt32(4, retcode_);
+        output.writeInt32(2, retcode_);
       }
       if (stageId_ != 0) {
-        output.writeUInt32(7, stageId_);
+        output.writeUInt32(4, stageId_);
+      }
+      if (challengeType_ != 0) {
+        output.writeUInt32(5, challengeType_);
       }
       unknownFields.writeTo(output);
     }
@@ -199,17 +203,17 @@ public final class UpdateSalvageBundleMarkRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (challengeType_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, challengeType_);
-      }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(4, retcode_);
+          .computeInt32Size(2, retcode_);
       }
       if (stageId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, stageId_);
+          .computeUInt32Size(4, stageId_);
+      }
+      if (challengeType_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(5, challengeType_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -226,12 +230,12 @@ public final class UpdateSalvageBundleMarkRspOuterClass {
       }
       emu.grasscutter.net.proto.UpdateSalvageBundleMarkRspOuterClass.UpdateSalvageBundleMarkRsp other = (emu.grasscutter.net.proto.UpdateSalvageBundleMarkRspOuterClass.UpdateSalvageBundleMarkRsp) obj;
 
-      if (getChallengeType()
-          != other.getChallengeType()) return false;
       if (getRetcode()
           != other.getRetcode()) return false;
       if (getStageId()
           != other.getStageId()) return false;
+      if (getChallengeType()
+          != other.getChallengeType()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -243,12 +247,12 @@ public final class UpdateSalvageBundleMarkRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + CHALLENGE_TYPE_FIELD_NUMBER;
-      hash = (53 * hash) + getChallengeType();
       hash = (37 * hash) + RETCODE_FIELD_NUMBER;
       hash = (53 * hash) + getRetcode();
       hash = (37 * hash) + STAGE_ID_FIELD_NUMBER;
       hash = (53 * hash) + getStageId();
+      hash = (37 * hash) + CHALLENGE_TYPE_FIELD_NUMBER;
+      hash = (53 * hash) + getChallengeType();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -346,9 +350,13 @@ public final class UpdateSalvageBundleMarkRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 8459
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 8620;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code UpdateSalvageBundleMarkRsp}
@@ -388,11 +396,11 @@ public final class UpdateSalvageBundleMarkRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        challengeType_ = 0;
-
         retcode_ = 0;
 
         stageId_ = 0;
+
+        challengeType_ = 0;
 
         return this;
       }
@@ -420,9 +428,9 @@ public final class UpdateSalvageBundleMarkRspOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.UpdateSalvageBundleMarkRspOuterClass.UpdateSalvageBundleMarkRsp buildPartial() {
         emu.grasscutter.net.proto.UpdateSalvageBundleMarkRspOuterClass.UpdateSalvageBundleMarkRsp result = new emu.grasscutter.net.proto.UpdateSalvageBundleMarkRspOuterClass.UpdateSalvageBundleMarkRsp(this);
-        result.challengeType_ = challengeType_;
         result.retcode_ = retcode_;
         result.stageId_ = stageId_;
+        result.challengeType_ = challengeType_;
         onBuilt();
         return result;
       }
@@ -471,14 +479,14 @@ public final class UpdateSalvageBundleMarkRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.UpdateSalvageBundleMarkRspOuterClass.UpdateSalvageBundleMarkRsp other) {
         if (other == emu.grasscutter.net.proto.UpdateSalvageBundleMarkRspOuterClass.UpdateSalvageBundleMarkRsp.getDefaultInstance()) return this;
-        if (other.getChallengeType() != 0) {
-          setChallengeType(other.getChallengeType());
-        }
         if (other.getRetcode() != 0) {
           setRetcode(other.getRetcode());
         }
         if (other.getStageId() != 0) {
           setStageId(other.getStageId());
+        }
+        if (other.getChallengeType() != 0) {
+          setChallengeType(other.getChallengeType());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -509,40 +517,9 @@ public final class UpdateSalvageBundleMarkRspOuterClass {
         return this;
       }
 
-      private int challengeType_ ;
-      /**
-       * <code>uint32 challenge_type = 1;</code>
-       * @return The challengeType.
-       */
-      @java.lang.Override
-      public int getChallengeType() {
-        return challengeType_;
-      }
-      /**
-       * <code>uint32 challenge_type = 1;</code>
-       * @param value The challengeType to set.
-       * @return This builder for chaining.
-       */
-      public Builder setChallengeType(int value) {
-        
-        challengeType_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 challenge_type = 1;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearChallengeType() {
-        
-        challengeType_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 4;</code>
+       * <code>int32 retcode = 2;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -550,7 +527,7 @@ public final class UpdateSalvageBundleMarkRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 4;</code>
+       * <code>int32 retcode = 2;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -561,7 +538,7 @@ public final class UpdateSalvageBundleMarkRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 4;</code>
+       * <code>int32 retcode = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -573,7 +550,7 @@ public final class UpdateSalvageBundleMarkRspOuterClass {
 
       private int stageId_ ;
       /**
-       * <code>uint32 stage_id = 7;</code>
+       * <code>uint32 stage_id = 4;</code>
        * @return The stageId.
        */
       @java.lang.Override
@@ -581,7 +558,7 @@ public final class UpdateSalvageBundleMarkRspOuterClass {
         return stageId_;
       }
       /**
-       * <code>uint32 stage_id = 7;</code>
+       * <code>uint32 stage_id = 4;</code>
        * @param value The stageId to set.
        * @return This builder for chaining.
        */
@@ -592,12 +569,43 @@ public final class UpdateSalvageBundleMarkRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 stage_id = 7;</code>
+       * <code>uint32 stage_id = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearStageId() {
         
         stageId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int challengeType_ ;
+      /**
+       * <code>uint32 challenge_type = 5;</code>
+       * @return The challengeType.
+       */
+      @java.lang.Override
+      public int getChallengeType() {
+        return challengeType_;
+      }
+      /**
+       * <code>uint32 challenge_type = 5;</code>
+       * @param value The challengeType to set.
+       * @return This builder for chaining.
+       */
+      public Builder setChallengeType(int value) {
+        
+        challengeType_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 challenge_type = 5;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearChallengeType() {
+        
+        challengeType_ = 0;
         onChanged();
         return this;
       }
@@ -669,8 +677,8 @@ public final class UpdateSalvageBundleMarkRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n UpdateSalvageBundleMarkRsp.proto\"W\n\032Up" +
-      "dateSalvageBundleMarkRsp\022\026\n\016challenge_ty" +
-      "pe\030\001 \001(\r\022\017\n\007retcode\030\004 \001(\005\022\020\n\010stage_id\030\007 " +
+      "dateSalvageBundleMarkRsp\022\017\n\007retcode\030\002 \001(" +
+      "\005\022\020\n\010stage_id\030\004 \001(\r\022\026\n\016challenge_type\030\005 " +
       "\001(\rB\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -682,7 +690,7 @@ public final class UpdateSalvageBundleMarkRspOuterClass {
     internal_static_UpdateSalvageBundleMarkRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_UpdateSalvageBundleMarkRsp_descriptor,
-        new java.lang.String[] { "ChallengeType", "Retcode", "StageId", });
+        new java.lang.String[] { "Retcode", "StageId", "ChallengeType", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

@@ -19,24 +19,30 @@ public final class GCGDSChangeDeckNameRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 deck_id = 13;</code>
-     * @return The deckId.
+     * <code>bool Unk3300_OIPMFIIBPHB = 5;</code>
+     * @return The unk3300OIPMFIIBPHB.
      */
-    int getDeckId();
+    boolean getUnk3300OIPMFIIBPHB();
 
     /**
-     * <code>int32 retcode = 14;</code>
+     * <code>int32 retcode = 15;</code>
      * @return The retcode.
      */
     int getRetcode();
 
     /**
-     * <code>string name = 1;</code>
+     * <code>uint32 deck_id = 10;</code>
+     * @return The deckId.
+     */
+    int getDeckId();
+
+    /**
+     * <code>string name = 7;</code>
      * @return The name.
      */
     java.lang.String getName();
     /**
-     * <code>string name = 1;</code>
+     * <code>string name = 7;</code>
      * @return The bytes for name.
      */
     com.google.protobuf.ByteString
@@ -44,9 +50,13 @@ public final class GCGDSChangeDeckNameRspOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 7916
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 7617;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code GCGDSChangeDeckNameRsp}
@@ -94,18 +104,23 @@ public final class GCGDSChangeDeckNameRspOuterClass {
             case 0:
               done = true;
               break;
-            case 10: {
+            case 40: {
+
+              unk3300OIPMFIIBPHB_ = input.readBool();
+              break;
+            }
+            case 58: {
               java.lang.String s = input.readStringRequireUtf8();
 
               name_ = s;
               break;
             }
-            case 104: {
+            case 80: {
 
               deckId_ = input.readUInt32();
               break;
             }
-            case 112: {
+            case 120: {
 
               retcode_ = input.readInt32();
               break;
@@ -142,21 +157,21 @@ public final class GCGDSChangeDeckNameRspOuterClass {
               emu.grasscutter.net.proto.GCGDSChangeDeckNameRspOuterClass.GCGDSChangeDeckNameRsp.class, emu.grasscutter.net.proto.GCGDSChangeDeckNameRspOuterClass.GCGDSChangeDeckNameRsp.Builder.class);
     }
 
-    public static final int DECK_ID_FIELD_NUMBER = 13;
-    private int deckId_;
+    public static final int UNK3300_OIPMFIIBPHB_FIELD_NUMBER = 5;
+    private boolean unk3300OIPMFIIBPHB_;
     /**
-     * <code>uint32 deck_id = 13;</code>
-     * @return The deckId.
+     * <code>bool Unk3300_OIPMFIIBPHB = 5;</code>
+     * @return The unk3300OIPMFIIBPHB.
      */
     @java.lang.Override
-    public int getDeckId() {
-      return deckId_;
+    public boolean getUnk3300OIPMFIIBPHB() {
+      return unk3300OIPMFIIBPHB_;
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 14;
+    public static final int RETCODE_FIELD_NUMBER = 15;
     private int retcode_;
     /**
-     * <code>int32 retcode = 14;</code>
+     * <code>int32 retcode = 15;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -164,10 +179,21 @@ public final class GCGDSChangeDeckNameRspOuterClass {
       return retcode_;
     }
 
-    public static final int NAME_FIELD_NUMBER = 1;
+    public static final int DECK_ID_FIELD_NUMBER = 10;
+    private int deckId_;
+    /**
+     * <code>uint32 deck_id = 10;</code>
+     * @return The deckId.
+     */
+    @java.lang.Override
+    public int getDeckId() {
+      return deckId_;
+    }
+
+    public static final int NAME_FIELD_NUMBER = 7;
     private volatile java.lang.Object name_;
     /**
-     * <code>string name = 1;</code>
+     * <code>string name = 7;</code>
      * @return The name.
      */
     @java.lang.Override
@@ -184,7 +210,7 @@ public final class GCGDSChangeDeckNameRspOuterClass {
       }
     }
     /**
-     * <code>string name = 1;</code>
+     * <code>string name = 7;</code>
      * @return The bytes for name.
      */
     @java.lang.Override
@@ -216,14 +242,17 @@ public final class GCGDSChangeDeckNameRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (unk3300OIPMFIIBPHB_ != false) {
+        output.writeBool(5, unk3300OIPMFIIBPHB_);
+      }
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(name_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 1, name_);
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 7, name_);
       }
       if (deckId_ != 0) {
-        output.writeUInt32(13, deckId_);
+        output.writeUInt32(10, deckId_);
       }
       if (retcode_ != 0) {
-        output.writeInt32(14, retcode_);
+        output.writeInt32(15, retcode_);
       }
       unknownFields.writeTo(output);
     }
@@ -234,16 +263,20 @@ public final class GCGDSChangeDeckNameRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (unk3300OIPMFIIBPHB_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(5, unk3300OIPMFIIBPHB_);
+      }
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(name_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, name_);
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(7, name_);
       }
       if (deckId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, deckId_);
+          .computeUInt32Size(10, deckId_);
       }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(14, retcode_);
+          .computeInt32Size(15, retcode_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -260,10 +293,12 @@ public final class GCGDSChangeDeckNameRspOuterClass {
       }
       emu.grasscutter.net.proto.GCGDSChangeDeckNameRspOuterClass.GCGDSChangeDeckNameRsp other = (emu.grasscutter.net.proto.GCGDSChangeDeckNameRspOuterClass.GCGDSChangeDeckNameRsp) obj;
 
-      if (getDeckId()
-          != other.getDeckId()) return false;
+      if (getUnk3300OIPMFIIBPHB()
+          != other.getUnk3300OIPMFIIBPHB()) return false;
       if (getRetcode()
           != other.getRetcode()) return false;
+      if (getDeckId()
+          != other.getDeckId()) return false;
       if (!getName()
           .equals(other.getName())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
@@ -277,10 +312,13 @@ public final class GCGDSChangeDeckNameRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + DECK_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getDeckId();
+      hash = (37 * hash) + UNK3300_OIPMFIIBPHB_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getUnk3300OIPMFIIBPHB());
       hash = (37 * hash) + RETCODE_FIELD_NUMBER;
       hash = (53 * hash) + getRetcode();
+      hash = (37 * hash) + DECK_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getDeckId();
       hash = (37 * hash) + NAME_FIELD_NUMBER;
       hash = (53 * hash) + getName().hashCode();
       hash = (29 * hash) + unknownFields.hashCode();
@@ -380,9 +418,13 @@ public final class GCGDSChangeDeckNameRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 7916
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 7617;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code GCGDSChangeDeckNameRsp}
@@ -422,9 +464,11 @@ public final class GCGDSChangeDeckNameRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        deckId_ = 0;
+        unk3300OIPMFIIBPHB_ = false;
 
         retcode_ = 0;
+
+        deckId_ = 0;
 
         name_ = "";
 
@@ -454,8 +498,9 @@ public final class GCGDSChangeDeckNameRspOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.GCGDSChangeDeckNameRspOuterClass.GCGDSChangeDeckNameRsp buildPartial() {
         emu.grasscutter.net.proto.GCGDSChangeDeckNameRspOuterClass.GCGDSChangeDeckNameRsp result = new emu.grasscutter.net.proto.GCGDSChangeDeckNameRspOuterClass.GCGDSChangeDeckNameRsp(this);
-        result.deckId_ = deckId_;
+        result.unk3300OIPMFIIBPHB_ = unk3300OIPMFIIBPHB_;
         result.retcode_ = retcode_;
+        result.deckId_ = deckId_;
         result.name_ = name_;
         onBuilt();
         return result;
@@ -505,11 +550,14 @@ public final class GCGDSChangeDeckNameRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.GCGDSChangeDeckNameRspOuterClass.GCGDSChangeDeckNameRsp other) {
         if (other == emu.grasscutter.net.proto.GCGDSChangeDeckNameRspOuterClass.GCGDSChangeDeckNameRsp.getDefaultInstance()) return this;
-        if (other.getDeckId() != 0) {
-          setDeckId(other.getDeckId());
+        if (other.getUnk3300OIPMFIIBPHB() != false) {
+          setUnk3300OIPMFIIBPHB(other.getUnk3300OIPMFIIBPHB());
         }
         if (other.getRetcode() != 0) {
           setRetcode(other.getRetcode());
+        }
+        if (other.getDeckId() != 0) {
+          setDeckId(other.getDeckId());
         }
         if (!other.getName().isEmpty()) {
           name_ = other.name_;
@@ -544,40 +592,40 @@ public final class GCGDSChangeDeckNameRspOuterClass {
         return this;
       }
 
-      private int deckId_ ;
+      private boolean unk3300OIPMFIIBPHB_ ;
       /**
-       * <code>uint32 deck_id = 13;</code>
-       * @return The deckId.
+       * <code>bool Unk3300_OIPMFIIBPHB = 5;</code>
+       * @return The unk3300OIPMFIIBPHB.
        */
       @java.lang.Override
-      public int getDeckId() {
-        return deckId_;
+      public boolean getUnk3300OIPMFIIBPHB() {
+        return unk3300OIPMFIIBPHB_;
       }
       /**
-       * <code>uint32 deck_id = 13;</code>
-       * @param value The deckId to set.
+       * <code>bool Unk3300_OIPMFIIBPHB = 5;</code>
+       * @param value The unk3300OIPMFIIBPHB to set.
        * @return This builder for chaining.
        */
-      public Builder setDeckId(int value) {
+      public Builder setUnk3300OIPMFIIBPHB(boolean value) {
         
-        deckId_ = value;
+        unk3300OIPMFIIBPHB_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 deck_id = 13;</code>
+       * <code>bool Unk3300_OIPMFIIBPHB = 5;</code>
        * @return This builder for chaining.
        */
-      public Builder clearDeckId() {
+      public Builder clearUnk3300OIPMFIIBPHB() {
         
-        deckId_ = 0;
+        unk3300OIPMFIIBPHB_ = false;
         onChanged();
         return this;
       }
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 14;</code>
+       * <code>int32 retcode = 15;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -585,7 +633,7 @@ public final class GCGDSChangeDeckNameRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 14;</code>
+       * <code>int32 retcode = 15;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -596,7 +644,7 @@ public final class GCGDSChangeDeckNameRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 14;</code>
+       * <code>int32 retcode = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -606,9 +654,40 @@ public final class GCGDSChangeDeckNameRspOuterClass {
         return this;
       }
 
+      private int deckId_ ;
+      /**
+       * <code>uint32 deck_id = 10;</code>
+       * @return The deckId.
+       */
+      @java.lang.Override
+      public int getDeckId() {
+        return deckId_;
+      }
+      /**
+       * <code>uint32 deck_id = 10;</code>
+       * @param value The deckId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setDeckId(int value) {
+        
+        deckId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 deck_id = 10;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearDeckId() {
+        
+        deckId_ = 0;
+        onChanged();
+        return this;
+      }
+
       private java.lang.Object name_ = "";
       /**
-       * <code>string name = 1;</code>
+       * <code>string name = 7;</code>
        * @return The name.
        */
       public java.lang.String getName() {
@@ -624,7 +703,7 @@ public final class GCGDSChangeDeckNameRspOuterClass {
         }
       }
       /**
-       * <code>string name = 1;</code>
+       * <code>string name = 7;</code>
        * @return The bytes for name.
        */
       public com.google.protobuf.ByteString
@@ -641,7 +720,7 @@ public final class GCGDSChangeDeckNameRspOuterClass {
         }
       }
       /**
-       * <code>string name = 1;</code>
+       * <code>string name = 7;</code>
        * @param value The name to set.
        * @return This builder for chaining.
        */
@@ -656,7 +735,7 @@ public final class GCGDSChangeDeckNameRspOuterClass {
         return this;
       }
       /**
-       * <code>string name = 1;</code>
+       * <code>string name = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearName() {
@@ -666,7 +745,7 @@ public final class GCGDSChangeDeckNameRspOuterClass {
         return this;
       }
       /**
-       * <code>string name = 1;</code>
+       * <code>string name = 7;</code>
        * @param value The bytes for name to set.
        * @return This builder for chaining.
        */
@@ -748,10 +827,11 @@ public final class GCGDSChangeDeckNameRspOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\034GCGDSChangeDeckNameRsp.proto\"H\n\026GCGDSC" +
-      "hangeDeckNameRsp\022\017\n\007deck_id\030\r \001(\r\022\017\n\007ret" +
-      "code\030\016 \001(\005\022\014\n\004name\030\001 \001(\tB\033\n\031emu.grasscut" +
-      "ter.net.protob\006proto3"
+      "\n\034GCGDSChangeDeckNameRsp.proto\"e\n\026GCGDSC" +
+      "hangeDeckNameRsp\022\033\n\023Unk3300_OIPMFIIBPHB\030" +
+      "\005 \001(\010\022\017\n\007retcode\030\017 \001(\005\022\017\n\007deck_id\030\n \001(\r\022" +
+      "\014\n\004name\030\007 \001(\tB\033\n\031emu.grasscutter.net.pro" +
+      "tob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -762,7 +842,7 @@ public final class GCGDSChangeDeckNameRspOuterClass {
     internal_static_GCGDSChangeDeckNameRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GCGDSChangeDeckNameRsp_descriptor,
-        new java.lang.String[] { "DeckId", "Retcode", "Name", });
+        new java.lang.String[] { "Unk3300OIPMFIIBPHB", "Retcode", "DeckId", "Name", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

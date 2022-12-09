@@ -19,28 +19,32 @@ public final class HomeKickPlayerRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 target_uid = 4;</code>
-     * @return The targetUid.
+     * <code>bool is_kick_all = 2;</code>
+     * @return The isKickAll.
      */
-    int getTargetUid();
+    boolean getIsKickAll();
 
     /**
-     * <code>int32 retcode = 8;</code>
+     * <code>int32 retcode = 14;</code>
      * @return The retcode.
      */
     int getRetcode();
 
     /**
-     * <code>bool is_kick_all = 10;</code>
-     * @return The isKickAll.
+     * <code>uint32 target_uid = 7;</code>
+     * @return The targetUid.
      */
-    boolean getIsKickAll();
+    int getTargetUid();
   }
   /**
    * <pre>
-   * CmdId: 4691
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 4657;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code HomeKickPlayerRsp}
@@ -87,19 +91,19 @@ public final class HomeKickPlayerRspOuterClass {
             case 0:
               done = true;
               break;
-            case 32: {
+            case 16: {
+
+              isKickAll_ = input.readBool();
+              break;
+            }
+            case 56: {
 
               targetUid_ = input.readUInt32();
               break;
             }
-            case 64: {
+            case 112: {
 
               retcode_ = input.readInt32();
-              break;
-            }
-            case 80: {
-
-              isKickAll_ = input.readBool();
               break;
             }
             default: {
@@ -134,21 +138,21 @@ public final class HomeKickPlayerRspOuterClass {
               emu.grasscutter.net.proto.HomeKickPlayerRspOuterClass.HomeKickPlayerRsp.class, emu.grasscutter.net.proto.HomeKickPlayerRspOuterClass.HomeKickPlayerRsp.Builder.class);
     }
 
-    public static final int TARGET_UID_FIELD_NUMBER = 4;
-    private int targetUid_;
+    public static final int IS_KICK_ALL_FIELD_NUMBER = 2;
+    private boolean isKickAll_;
     /**
-     * <code>uint32 target_uid = 4;</code>
-     * @return The targetUid.
+     * <code>bool is_kick_all = 2;</code>
+     * @return The isKickAll.
      */
     @java.lang.Override
-    public int getTargetUid() {
-      return targetUid_;
+    public boolean getIsKickAll() {
+      return isKickAll_;
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 8;
+    public static final int RETCODE_FIELD_NUMBER = 14;
     private int retcode_;
     /**
-     * <code>int32 retcode = 8;</code>
+     * <code>int32 retcode = 14;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -156,15 +160,15 @@ public final class HomeKickPlayerRspOuterClass {
       return retcode_;
     }
 
-    public static final int IS_KICK_ALL_FIELD_NUMBER = 10;
-    private boolean isKickAll_;
+    public static final int TARGET_UID_FIELD_NUMBER = 7;
+    private int targetUid_;
     /**
-     * <code>bool is_kick_all = 10;</code>
-     * @return The isKickAll.
+     * <code>uint32 target_uid = 7;</code>
+     * @return The targetUid.
      */
     @java.lang.Override
-    public boolean getIsKickAll() {
-      return isKickAll_;
+    public int getTargetUid() {
+      return targetUid_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -181,14 +185,14 @@ public final class HomeKickPlayerRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (isKickAll_ != false) {
+        output.writeBool(2, isKickAll_);
+      }
       if (targetUid_ != 0) {
-        output.writeUInt32(4, targetUid_);
+        output.writeUInt32(7, targetUid_);
       }
       if (retcode_ != 0) {
-        output.writeInt32(8, retcode_);
-      }
-      if (isKickAll_ != false) {
-        output.writeBool(10, isKickAll_);
+        output.writeInt32(14, retcode_);
       }
       unknownFields.writeTo(output);
     }
@@ -199,17 +203,17 @@ public final class HomeKickPlayerRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (isKickAll_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(2, isKickAll_);
+      }
       if (targetUid_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, targetUid_);
+          .computeUInt32Size(7, targetUid_);
       }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(8, retcode_);
-      }
-      if (isKickAll_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(10, isKickAll_);
+          .computeInt32Size(14, retcode_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -226,12 +230,12 @@ public final class HomeKickPlayerRspOuterClass {
       }
       emu.grasscutter.net.proto.HomeKickPlayerRspOuterClass.HomeKickPlayerRsp other = (emu.grasscutter.net.proto.HomeKickPlayerRspOuterClass.HomeKickPlayerRsp) obj;
 
-      if (getTargetUid()
-          != other.getTargetUid()) return false;
-      if (getRetcode()
-          != other.getRetcode()) return false;
       if (getIsKickAll()
           != other.getIsKickAll()) return false;
+      if (getRetcode()
+          != other.getRetcode()) return false;
+      if (getTargetUid()
+          != other.getTargetUid()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -243,13 +247,13 @@ public final class HomeKickPlayerRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + TARGET_UID_FIELD_NUMBER;
-      hash = (53 * hash) + getTargetUid();
-      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
-      hash = (53 * hash) + getRetcode();
       hash = (37 * hash) + IS_KICK_ALL_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsKickAll());
+      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
+      hash = (53 * hash) + getRetcode();
+      hash = (37 * hash) + TARGET_UID_FIELD_NUMBER;
+      hash = (53 * hash) + getTargetUid();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -347,9 +351,13 @@ public final class HomeKickPlayerRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 4691
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 4657;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code HomeKickPlayerRsp}
@@ -389,11 +397,11 @@ public final class HomeKickPlayerRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        targetUid_ = 0;
+        isKickAll_ = false;
 
         retcode_ = 0;
 
-        isKickAll_ = false;
+        targetUid_ = 0;
 
         return this;
       }
@@ -421,9 +429,9 @@ public final class HomeKickPlayerRspOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.HomeKickPlayerRspOuterClass.HomeKickPlayerRsp buildPartial() {
         emu.grasscutter.net.proto.HomeKickPlayerRspOuterClass.HomeKickPlayerRsp result = new emu.grasscutter.net.proto.HomeKickPlayerRspOuterClass.HomeKickPlayerRsp(this);
-        result.targetUid_ = targetUid_;
-        result.retcode_ = retcode_;
         result.isKickAll_ = isKickAll_;
+        result.retcode_ = retcode_;
+        result.targetUid_ = targetUid_;
         onBuilt();
         return result;
       }
@@ -472,14 +480,14 @@ public final class HomeKickPlayerRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.HomeKickPlayerRspOuterClass.HomeKickPlayerRsp other) {
         if (other == emu.grasscutter.net.proto.HomeKickPlayerRspOuterClass.HomeKickPlayerRsp.getDefaultInstance()) return this;
-        if (other.getTargetUid() != 0) {
-          setTargetUid(other.getTargetUid());
+        if (other.getIsKickAll() != false) {
+          setIsKickAll(other.getIsKickAll());
         }
         if (other.getRetcode() != 0) {
           setRetcode(other.getRetcode());
         }
-        if (other.getIsKickAll() != false) {
-          setIsKickAll(other.getIsKickAll());
+        if (other.getTargetUid() != 0) {
+          setTargetUid(other.getTargetUid());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -510,71 +518,9 @@ public final class HomeKickPlayerRspOuterClass {
         return this;
       }
 
-      private int targetUid_ ;
-      /**
-       * <code>uint32 target_uid = 4;</code>
-       * @return The targetUid.
-       */
-      @java.lang.Override
-      public int getTargetUid() {
-        return targetUid_;
-      }
-      /**
-       * <code>uint32 target_uid = 4;</code>
-       * @param value The targetUid to set.
-       * @return This builder for chaining.
-       */
-      public Builder setTargetUid(int value) {
-        
-        targetUid_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 target_uid = 4;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearTargetUid() {
-        
-        targetUid_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int retcode_ ;
-      /**
-       * <code>int32 retcode = 8;</code>
-       * @return The retcode.
-       */
-      @java.lang.Override
-      public int getRetcode() {
-        return retcode_;
-      }
-      /**
-       * <code>int32 retcode = 8;</code>
-       * @param value The retcode to set.
-       * @return This builder for chaining.
-       */
-      public Builder setRetcode(int value) {
-        
-        retcode_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>int32 retcode = 8;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearRetcode() {
-        
-        retcode_ = 0;
-        onChanged();
-        return this;
-      }
-
       private boolean isKickAll_ ;
       /**
-       * <code>bool is_kick_all = 10;</code>
+       * <code>bool is_kick_all = 2;</code>
        * @return The isKickAll.
        */
       @java.lang.Override
@@ -582,7 +528,7 @@ public final class HomeKickPlayerRspOuterClass {
         return isKickAll_;
       }
       /**
-       * <code>bool is_kick_all = 10;</code>
+       * <code>bool is_kick_all = 2;</code>
        * @param value The isKickAll to set.
        * @return This builder for chaining.
        */
@@ -593,12 +539,74 @@ public final class HomeKickPlayerRspOuterClass {
         return this;
       }
       /**
-       * <code>bool is_kick_all = 10;</code>
+       * <code>bool is_kick_all = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsKickAll() {
         
         isKickAll_ = false;
+        onChanged();
+        return this;
+      }
+
+      private int retcode_ ;
+      /**
+       * <code>int32 retcode = 14;</code>
+       * @return The retcode.
+       */
+      @java.lang.Override
+      public int getRetcode() {
+        return retcode_;
+      }
+      /**
+       * <code>int32 retcode = 14;</code>
+       * @param value The retcode to set.
+       * @return This builder for chaining.
+       */
+      public Builder setRetcode(int value) {
+        
+        retcode_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 retcode = 14;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearRetcode() {
+        
+        retcode_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int targetUid_ ;
+      /**
+       * <code>uint32 target_uid = 7;</code>
+       * @return The targetUid.
+       */
+      @java.lang.Override
+      public int getTargetUid() {
+        return targetUid_;
+      }
+      /**
+       * <code>uint32 target_uid = 7;</code>
+       * @param value The targetUid to set.
+       * @return This builder for chaining.
+       */
+      public Builder setTargetUid(int value) {
+        
+        targetUid_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 target_uid = 7;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearTargetUid() {
+        
+        targetUid_ = 0;
         onChanged();
         return this;
       }
@@ -670,8 +678,8 @@ public final class HomeKickPlayerRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\027HomeKickPlayerRsp.proto\"M\n\021HomeKickPla" +
-      "yerRsp\022\022\n\ntarget_uid\030\004 \001(\r\022\017\n\007retcode\030\010 " +
-      "\001(\005\022\023\n\013is_kick_all\030\n \001(\010B\033\n\031emu.grasscut" +
+      "yerRsp\022\023\n\013is_kick_all\030\002 \001(\010\022\017\n\007retcode\030\016" +
+      " \001(\005\022\022\n\ntarget_uid\030\007 \001(\rB\033\n\031emu.grasscut" +
       "ter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -683,7 +691,7 @@ public final class HomeKickPlayerRspOuterClass {
     internal_static_HomeKickPlayerRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_HomeKickPlayerRsp_descriptor,
-        new java.lang.String[] { "TargetUid", "Retcode", "IsKickAll", });
+        new java.lang.String[] { "IsKickAll", "Retcode", "TargetUid", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

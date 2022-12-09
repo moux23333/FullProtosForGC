@@ -19,34 +19,38 @@ public final class PSNBlackListNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .FriendBrief psn_blacklist = 11;</code>
+     * <code>repeated .FriendBrief psn_blacklist = 13;</code>
      */
     java.util.List<emu.grasscutter.net.proto.FriendBriefOuterClass.FriendBrief> 
         getPsnBlacklistList();
     /**
-     * <code>repeated .FriendBrief psn_blacklist = 11;</code>
+     * <code>repeated .FriendBrief psn_blacklist = 13;</code>
      */
     emu.grasscutter.net.proto.FriendBriefOuterClass.FriendBrief getPsnBlacklist(int index);
     /**
-     * <code>repeated .FriendBrief psn_blacklist = 11;</code>
+     * <code>repeated .FriendBrief psn_blacklist = 13;</code>
      */
     int getPsnBlacklistCount();
     /**
-     * <code>repeated .FriendBrief psn_blacklist = 11;</code>
+     * <code>repeated .FriendBrief psn_blacklist = 13;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.FriendBriefOuterClass.FriendBriefOrBuilder> 
         getPsnBlacklistOrBuilderList();
     /**
-     * <code>repeated .FriendBrief psn_blacklist = 11;</code>
+     * <code>repeated .FriendBrief psn_blacklist = 13;</code>
      */
     emu.grasscutter.net.proto.FriendBriefOuterClass.FriendBriefOrBuilder getPsnBlacklistOrBuilder(
         int index);
   }
   /**
    * <pre>
-   * CmdId: 4040
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 4085;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code PSNBlackListNotify}
@@ -95,7 +99,7 @@ public final class PSNBlackListNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 90: {
+            case 106: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 psnBlacklist_ = new java.util.ArrayList<emu.grasscutter.net.proto.FriendBriefOuterClass.FriendBrief>();
                 mutable_bitField0_ |= 0x00000001;
@@ -139,17 +143,17 @@ public final class PSNBlackListNotifyOuterClass {
               emu.grasscutter.net.proto.PSNBlackListNotifyOuterClass.PSNBlackListNotify.class, emu.grasscutter.net.proto.PSNBlackListNotifyOuterClass.PSNBlackListNotify.Builder.class);
     }
 
-    public static final int PSN_BLACKLIST_FIELD_NUMBER = 11;
+    public static final int PSN_BLACKLIST_FIELD_NUMBER = 13;
     private java.util.List<emu.grasscutter.net.proto.FriendBriefOuterClass.FriendBrief> psnBlacklist_;
     /**
-     * <code>repeated .FriendBrief psn_blacklist = 11;</code>
+     * <code>repeated .FriendBrief psn_blacklist = 13;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.FriendBriefOuterClass.FriendBrief> getPsnBlacklistList() {
       return psnBlacklist_;
     }
     /**
-     * <code>repeated .FriendBrief psn_blacklist = 11;</code>
+     * <code>repeated .FriendBrief psn_blacklist = 13;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.FriendBriefOuterClass.FriendBriefOrBuilder> 
@@ -157,21 +161,21 @@ public final class PSNBlackListNotifyOuterClass {
       return psnBlacklist_;
     }
     /**
-     * <code>repeated .FriendBrief psn_blacklist = 11;</code>
+     * <code>repeated .FriendBrief psn_blacklist = 13;</code>
      */
     @java.lang.Override
     public int getPsnBlacklistCount() {
       return psnBlacklist_.size();
     }
     /**
-     * <code>repeated .FriendBrief psn_blacklist = 11;</code>
+     * <code>repeated .FriendBrief psn_blacklist = 13;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.FriendBriefOuterClass.FriendBrief getPsnBlacklist(int index) {
       return psnBlacklist_.get(index);
     }
     /**
-     * <code>repeated .FriendBrief psn_blacklist = 11;</code>
+     * <code>repeated .FriendBrief psn_blacklist = 13;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.FriendBriefOuterClass.FriendBriefOrBuilder getPsnBlacklistOrBuilder(
@@ -194,7 +198,7 @@ public final class PSNBlackListNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       for (int i = 0; i < psnBlacklist_.size(); i++) {
-        output.writeMessage(11, psnBlacklist_.get(i));
+        output.writeMessage(13, psnBlacklist_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -207,7 +211,7 @@ public final class PSNBlackListNotifyOuterClass {
       size = 0;
       for (int i = 0; i < psnBlacklist_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(11, psnBlacklist_.get(i));
+          .computeMessageSize(13, psnBlacklist_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -338,9 +342,13 @@ public final class PSNBlackListNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 4040
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 4085;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code PSNBlackListNotify}
@@ -540,7 +548,7 @@ public final class PSNBlackListNotifyOuterClass {
           emu.grasscutter.net.proto.FriendBriefOuterClass.FriendBrief, emu.grasscutter.net.proto.FriendBriefOuterClass.FriendBrief.Builder, emu.grasscutter.net.proto.FriendBriefOuterClass.FriendBriefOrBuilder> psnBlacklistBuilder_;
 
       /**
-       * <code>repeated .FriendBrief psn_blacklist = 11;</code>
+       * <code>repeated .FriendBrief psn_blacklist = 13;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.FriendBriefOuterClass.FriendBrief> getPsnBlacklistList() {
         if (psnBlacklistBuilder_ == null) {
@@ -550,7 +558,7 @@ public final class PSNBlackListNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .FriendBrief psn_blacklist = 11;</code>
+       * <code>repeated .FriendBrief psn_blacklist = 13;</code>
        */
       public int getPsnBlacklistCount() {
         if (psnBlacklistBuilder_ == null) {
@@ -560,7 +568,7 @@ public final class PSNBlackListNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .FriendBrief psn_blacklist = 11;</code>
+       * <code>repeated .FriendBrief psn_blacklist = 13;</code>
        */
       public emu.grasscutter.net.proto.FriendBriefOuterClass.FriendBrief getPsnBlacklist(int index) {
         if (psnBlacklistBuilder_ == null) {
@@ -570,7 +578,7 @@ public final class PSNBlackListNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .FriendBrief psn_blacklist = 11;</code>
+       * <code>repeated .FriendBrief psn_blacklist = 13;</code>
        */
       public Builder setPsnBlacklist(
           int index, emu.grasscutter.net.proto.FriendBriefOuterClass.FriendBrief value) {
@@ -587,7 +595,7 @@ public final class PSNBlackListNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .FriendBrief psn_blacklist = 11;</code>
+       * <code>repeated .FriendBrief psn_blacklist = 13;</code>
        */
       public Builder setPsnBlacklist(
           int index, emu.grasscutter.net.proto.FriendBriefOuterClass.FriendBrief.Builder builderForValue) {
@@ -601,7 +609,7 @@ public final class PSNBlackListNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .FriendBrief psn_blacklist = 11;</code>
+       * <code>repeated .FriendBrief psn_blacklist = 13;</code>
        */
       public Builder addPsnBlacklist(emu.grasscutter.net.proto.FriendBriefOuterClass.FriendBrief value) {
         if (psnBlacklistBuilder_ == null) {
@@ -617,7 +625,7 @@ public final class PSNBlackListNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .FriendBrief psn_blacklist = 11;</code>
+       * <code>repeated .FriendBrief psn_blacklist = 13;</code>
        */
       public Builder addPsnBlacklist(
           int index, emu.grasscutter.net.proto.FriendBriefOuterClass.FriendBrief value) {
@@ -634,7 +642,7 @@ public final class PSNBlackListNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .FriendBrief psn_blacklist = 11;</code>
+       * <code>repeated .FriendBrief psn_blacklist = 13;</code>
        */
       public Builder addPsnBlacklist(
           emu.grasscutter.net.proto.FriendBriefOuterClass.FriendBrief.Builder builderForValue) {
@@ -648,7 +656,7 @@ public final class PSNBlackListNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .FriendBrief psn_blacklist = 11;</code>
+       * <code>repeated .FriendBrief psn_blacklist = 13;</code>
        */
       public Builder addPsnBlacklist(
           int index, emu.grasscutter.net.proto.FriendBriefOuterClass.FriendBrief.Builder builderForValue) {
@@ -662,7 +670,7 @@ public final class PSNBlackListNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .FriendBrief psn_blacklist = 11;</code>
+       * <code>repeated .FriendBrief psn_blacklist = 13;</code>
        */
       public Builder addAllPsnBlacklist(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.FriendBriefOuterClass.FriendBrief> values) {
@@ -677,7 +685,7 @@ public final class PSNBlackListNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .FriendBrief psn_blacklist = 11;</code>
+       * <code>repeated .FriendBrief psn_blacklist = 13;</code>
        */
       public Builder clearPsnBlacklist() {
         if (psnBlacklistBuilder_ == null) {
@@ -690,7 +698,7 @@ public final class PSNBlackListNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .FriendBrief psn_blacklist = 11;</code>
+       * <code>repeated .FriendBrief psn_blacklist = 13;</code>
        */
       public Builder removePsnBlacklist(int index) {
         if (psnBlacklistBuilder_ == null) {
@@ -703,14 +711,14 @@ public final class PSNBlackListNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .FriendBrief psn_blacklist = 11;</code>
+       * <code>repeated .FriendBrief psn_blacklist = 13;</code>
        */
       public emu.grasscutter.net.proto.FriendBriefOuterClass.FriendBrief.Builder getPsnBlacklistBuilder(
           int index) {
         return getPsnBlacklistFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .FriendBrief psn_blacklist = 11;</code>
+       * <code>repeated .FriendBrief psn_blacklist = 13;</code>
        */
       public emu.grasscutter.net.proto.FriendBriefOuterClass.FriendBriefOrBuilder getPsnBlacklistOrBuilder(
           int index) {
@@ -720,7 +728,7 @@ public final class PSNBlackListNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .FriendBrief psn_blacklist = 11;</code>
+       * <code>repeated .FriendBrief psn_blacklist = 13;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.FriendBriefOuterClass.FriendBriefOrBuilder> 
            getPsnBlacklistOrBuilderList() {
@@ -731,14 +739,14 @@ public final class PSNBlackListNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .FriendBrief psn_blacklist = 11;</code>
+       * <code>repeated .FriendBrief psn_blacklist = 13;</code>
        */
       public emu.grasscutter.net.proto.FriendBriefOuterClass.FriendBrief.Builder addPsnBlacklistBuilder() {
         return getPsnBlacklistFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.FriendBriefOuterClass.FriendBrief.getDefaultInstance());
       }
       /**
-       * <code>repeated .FriendBrief psn_blacklist = 11;</code>
+       * <code>repeated .FriendBrief psn_blacklist = 13;</code>
        */
       public emu.grasscutter.net.proto.FriendBriefOuterClass.FriendBrief.Builder addPsnBlacklistBuilder(
           int index) {
@@ -746,7 +754,7 @@ public final class PSNBlackListNotifyOuterClass {
             index, emu.grasscutter.net.proto.FriendBriefOuterClass.FriendBrief.getDefaultInstance());
       }
       /**
-       * <code>repeated .FriendBrief psn_blacklist = 11;</code>
+       * <code>repeated .FriendBrief psn_blacklist = 13;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.FriendBriefOuterClass.FriendBrief.Builder> 
            getPsnBlacklistBuilderList() {
@@ -835,7 +843,7 @@ public final class PSNBlackListNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n\030PSNBlackListNotify.proto\032\021FriendBrief." +
       "proto\"9\n\022PSNBlackListNotify\022#\n\rpsn_black" +
-      "list\030\013 \003(\0132\014.FriendBriefB\033\n\031emu.grasscut" +
+      "list\030\r \003(\0132\014.FriendBriefB\033\n\031emu.grasscut" +
       "ter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

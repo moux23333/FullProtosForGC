@@ -19,37 +19,13 @@ public final class ExecuteGroupTriggerReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>string source_name = 15;</code>
-     * @return The sourceName.
-     */
-    java.lang.String getSourceName();
-    /**
-     * <code>string source_name = 15;</code>
-     * @return The bytes for sourceName.
-     */
-    com.google.protobuf.ByteString
-        getSourceNameBytes();
-
-    /**
-     * <code>uint32 target_entity_id = 12;</code>
-     * @return The targetEntityId.
-     */
-    int getTargetEntityId();
-
-    /**
-     * <code>int32 param2 = 8;</code>
-     * @return The param2.
-     */
-    int getParam2();
-
-    /**
-     * <code>uint32 source_entity_id = 4;</code>
+     * <code>uint32 source_entity_id = 7;</code>
      * @return The sourceEntityId.
      */
     int getSourceEntityId();
 
     /**
-     * <code>int32 param3 = 10;</code>
+     * <code>int32 param3 = 6;</code>
      * @return The param3.
      */
     int getParam3();
@@ -59,13 +35,41 @@ public final class ExecuteGroupTriggerReqOuterClass {
      * @return The param1.
      */
     int getParam1();
+
+    /**
+     * <code>string source_name = 8;</code>
+     * @return The sourceName.
+     */
+    java.lang.String getSourceName();
+    /**
+     * <code>string source_name = 8;</code>
+     * @return The bytes for sourceName.
+     */
+    com.google.protobuf.ByteString
+        getSourceNameBytes();
+
+    /**
+     * <code>uint32 target_entity_id = 15;</code>
+     * @return The targetEntityId.
+     */
+    int getTargetEntityId();
+
+    /**
+     * <code>int32 param2 = 4;</code>
+     * @return The param2.
+     */
+    int getParam2();
   }
   /**
    * <pre>
-   * CmdId: 257
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 263;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code ExecuteGroupTriggerReq}
@@ -115,12 +119,23 @@ public final class ExecuteGroupTriggerReqOuterClass {
               break;
             case 32: {
 
+              param2_ = input.readInt32();
+              break;
+            }
+            case 48: {
+
+              param3_ = input.readInt32();
+              break;
+            }
+            case 56: {
+
               sourceEntityId_ = input.readUInt32();
               break;
             }
-            case 64: {
+            case 66: {
+              java.lang.String s = input.readStringRequireUtf8();
 
-              param2_ = input.readInt32();
+              sourceName_ = s;
               break;
             }
             case 72: {
@@ -128,20 +143,9 @@ public final class ExecuteGroupTriggerReqOuterClass {
               param1_ = input.readInt32();
               break;
             }
-            case 80: {
-
-              param3_ = input.readInt32();
-              break;
-            }
-            case 96: {
+            case 120: {
 
               targetEntityId_ = input.readUInt32();
-              break;
-            }
-            case 122: {
-              java.lang.String s = input.readStringRequireUtf8();
-
-              sourceName_ = s;
               break;
             }
             default: {
@@ -176,70 +180,10 @@ public final class ExecuteGroupTriggerReqOuterClass {
               emu.grasscutter.net.proto.ExecuteGroupTriggerReqOuterClass.ExecuteGroupTriggerReq.class, emu.grasscutter.net.proto.ExecuteGroupTriggerReqOuterClass.ExecuteGroupTriggerReq.Builder.class);
     }
 
-    public static final int SOURCE_NAME_FIELD_NUMBER = 15;
-    private volatile java.lang.Object sourceName_;
-    /**
-     * <code>string source_name = 15;</code>
-     * @return The sourceName.
-     */
-    @java.lang.Override
-    public java.lang.String getSourceName() {
-      java.lang.Object ref = sourceName_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        sourceName_ = s;
-        return s;
-      }
-    }
-    /**
-     * <code>string source_name = 15;</code>
-     * @return The bytes for sourceName.
-     */
-    @java.lang.Override
-    public com.google.protobuf.ByteString
-        getSourceNameBytes() {
-      java.lang.Object ref = sourceName_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        sourceName_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
-    public static final int TARGET_ENTITY_ID_FIELD_NUMBER = 12;
-    private int targetEntityId_;
-    /**
-     * <code>uint32 target_entity_id = 12;</code>
-     * @return The targetEntityId.
-     */
-    @java.lang.Override
-    public int getTargetEntityId() {
-      return targetEntityId_;
-    }
-
-    public static final int PARAM2_FIELD_NUMBER = 8;
-    private int param2_;
-    /**
-     * <code>int32 param2 = 8;</code>
-     * @return The param2.
-     */
-    @java.lang.Override
-    public int getParam2() {
-      return param2_;
-    }
-
-    public static final int SOURCE_ENTITY_ID_FIELD_NUMBER = 4;
+    public static final int SOURCE_ENTITY_ID_FIELD_NUMBER = 7;
     private int sourceEntityId_;
     /**
-     * <code>uint32 source_entity_id = 4;</code>
+     * <code>uint32 source_entity_id = 7;</code>
      * @return The sourceEntityId.
      */
     @java.lang.Override
@@ -247,10 +191,10 @@ public final class ExecuteGroupTriggerReqOuterClass {
       return sourceEntityId_;
     }
 
-    public static final int PARAM3_FIELD_NUMBER = 10;
+    public static final int PARAM3_FIELD_NUMBER = 6;
     private int param3_;
     /**
-     * <code>int32 param3 = 10;</code>
+     * <code>int32 param3 = 6;</code>
      * @return The param3.
      */
     @java.lang.Override
@@ -269,6 +213,66 @@ public final class ExecuteGroupTriggerReqOuterClass {
       return param1_;
     }
 
+    public static final int SOURCE_NAME_FIELD_NUMBER = 8;
+    private volatile java.lang.Object sourceName_;
+    /**
+     * <code>string source_name = 8;</code>
+     * @return The sourceName.
+     */
+    @java.lang.Override
+    public java.lang.String getSourceName() {
+      java.lang.Object ref = sourceName_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        sourceName_ = s;
+        return s;
+      }
+    }
+    /**
+     * <code>string source_name = 8;</code>
+     * @return The bytes for sourceName.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString
+        getSourceNameBytes() {
+      java.lang.Object ref = sourceName_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        sourceName_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    public static final int TARGET_ENTITY_ID_FIELD_NUMBER = 15;
+    private int targetEntityId_;
+    /**
+     * <code>uint32 target_entity_id = 15;</code>
+     * @return The targetEntityId.
+     */
+    @java.lang.Override
+    public int getTargetEntityId() {
+      return targetEntityId_;
+    }
+
+    public static final int PARAM2_FIELD_NUMBER = 4;
+    private int param2_;
+    /**
+     * <code>int32 param2 = 4;</code>
+     * @return The param2.
+     */
+    @java.lang.Override
+    public int getParam2() {
+      return param2_;
+    }
+
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
     public final boolean isInitialized() {
@@ -283,23 +287,23 @@ public final class ExecuteGroupTriggerReqOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (sourceEntityId_ != 0) {
-        output.writeUInt32(4, sourceEntityId_);
-      }
       if (param2_ != 0) {
-        output.writeInt32(8, param2_);
+        output.writeInt32(4, param2_);
+      }
+      if (param3_ != 0) {
+        output.writeInt32(6, param3_);
+      }
+      if (sourceEntityId_ != 0) {
+        output.writeUInt32(7, sourceEntityId_);
+      }
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(sourceName_)) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 8, sourceName_);
       }
       if (param1_ != 0) {
         output.writeInt32(9, param1_);
       }
-      if (param3_ != 0) {
-        output.writeInt32(10, param3_);
-      }
       if (targetEntityId_ != 0) {
-        output.writeUInt32(12, targetEntityId_);
-      }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(sourceName_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 15, sourceName_);
+        output.writeUInt32(15, targetEntityId_);
       }
       unknownFields.writeTo(output);
     }
@@ -310,28 +314,28 @@ public final class ExecuteGroupTriggerReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (sourceEntityId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, sourceEntityId_);
-      }
       if (param2_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(8, param2_);
+          .computeInt32Size(4, param2_);
+      }
+      if (param3_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(6, param3_);
+      }
+      if (sourceEntityId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(7, sourceEntityId_);
+      }
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(sourceName_)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(8, sourceName_);
       }
       if (param1_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeInt32Size(9, param1_);
       }
-      if (param3_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(10, param3_);
-      }
       if (targetEntityId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, targetEntityId_);
-      }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(sourceName_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(15, sourceName_);
+          .computeUInt32Size(15, targetEntityId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -348,18 +352,18 @@ public final class ExecuteGroupTriggerReqOuterClass {
       }
       emu.grasscutter.net.proto.ExecuteGroupTriggerReqOuterClass.ExecuteGroupTriggerReq other = (emu.grasscutter.net.proto.ExecuteGroupTriggerReqOuterClass.ExecuteGroupTriggerReq) obj;
 
-      if (!getSourceName()
-          .equals(other.getSourceName())) return false;
-      if (getTargetEntityId()
-          != other.getTargetEntityId()) return false;
-      if (getParam2()
-          != other.getParam2()) return false;
       if (getSourceEntityId()
           != other.getSourceEntityId()) return false;
       if (getParam3()
           != other.getParam3()) return false;
       if (getParam1()
           != other.getParam1()) return false;
+      if (!getSourceName()
+          .equals(other.getSourceName())) return false;
+      if (getTargetEntityId()
+          != other.getTargetEntityId()) return false;
+      if (getParam2()
+          != other.getParam2()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -371,18 +375,18 @@ public final class ExecuteGroupTriggerReqOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + SOURCE_NAME_FIELD_NUMBER;
-      hash = (53 * hash) + getSourceName().hashCode();
-      hash = (37 * hash) + TARGET_ENTITY_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getTargetEntityId();
-      hash = (37 * hash) + PARAM2_FIELD_NUMBER;
-      hash = (53 * hash) + getParam2();
       hash = (37 * hash) + SOURCE_ENTITY_ID_FIELD_NUMBER;
       hash = (53 * hash) + getSourceEntityId();
       hash = (37 * hash) + PARAM3_FIELD_NUMBER;
       hash = (53 * hash) + getParam3();
       hash = (37 * hash) + PARAM1_FIELD_NUMBER;
       hash = (53 * hash) + getParam1();
+      hash = (37 * hash) + SOURCE_NAME_FIELD_NUMBER;
+      hash = (53 * hash) + getSourceName().hashCode();
+      hash = (37 * hash) + TARGET_ENTITY_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getTargetEntityId();
+      hash = (37 * hash) + PARAM2_FIELD_NUMBER;
+      hash = (53 * hash) + getParam2();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -480,10 +484,14 @@ public final class ExecuteGroupTriggerReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 257
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 263;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code ExecuteGroupTriggerReq}
@@ -523,17 +531,17 @@ public final class ExecuteGroupTriggerReqOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        sourceName_ = "";
-
-        targetEntityId_ = 0;
-
-        param2_ = 0;
-
         sourceEntityId_ = 0;
 
         param3_ = 0;
 
         param1_ = 0;
+
+        sourceName_ = "";
+
+        targetEntityId_ = 0;
+
+        param2_ = 0;
 
         return this;
       }
@@ -561,12 +569,12 @@ public final class ExecuteGroupTriggerReqOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.ExecuteGroupTriggerReqOuterClass.ExecuteGroupTriggerReq buildPartial() {
         emu.grasscutter.net.proto.ExecuteGroupTriggerReqOuterClass.ExecuteGroupTriggerReq result = new emu.grasscutter.net.proto.ExecuteGroupTriggerReqOuterClass.ExecuteGroupTriggerReq(this);
-        result.sourceName_ = sourceName_;
-        result.targetEntityId_ = targetEntityId_;
-        result.param2_ = param2_;
         result.sourceEntityId_ = sourceEntityId_;
         result.param3_ = param3_;
         result.param1_ = param1_;
+        result.sourceName_ = sourceName_;
+        result.targetEntityId_ = targetEntityId_;
+        result.param2_ = param2_;
         onBuilt();
         return result;
       }
@@ -615,6 +623,15 @@ public final class ExecuteGroupTriggerReqOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.ExecuteGroupTriggerReqOuterClass.ExecuteGroupTriggerReq other) {
         if (other == emu.grasscutter.net.proto.ExecuteGroupTriggerReqOuterClass.ExecuteGroupTriggerReq.getDefaultInstance()) return this;
+        if (other.getSourceEntityId() != 0) {
+          setSourceEntityId(other.getSourceEntityId());
+        }
+        if (other.getParam3() != 0) {
+          setParam3(other.getParam3());
+        }
+        if (other.getParam1() != 0) {
+          setParam1(other.getParam1());
+        }
         if (!other.getSourceName().isEmpty()) {
           sourceName_ = other.sourceName_;
           onChanged();
@@ -624,15 +641,6 @@ public final class ExecuteGroupTriggerReqOuterClass {
         }
         if (other.getParam2() != 0) {
           setParam2(other.getParam2());
-        }
-        if (other.getSourceEntityId() != 0) {
-          setSourceEntityId(other.getSourceEntityId());
-        }
-        if (other.getParam3() != 0) {
-          setParam3(other.getParam3());
-        }
-        if (other.getParam1() != 0) {
-          setParam1(other.getParam1());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -663,147 +671,9 @@ public final class ExecuteGroupTriggerReqOuterClass {
         return this;
       }
 
-      private java.lang.Object sourceName_ = "";
-      /**
-       * <code>string source_name = 15;</code>
-       * @return The sourceName.
-       */
-      public java.lang.String getSourceName() {
-        java.lang.Object ref = sourceName_;
-        if (!(ref instanceof java.lang.String)) {
-          com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
-          sourceName_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
-      }
-      /**
-       * <code>string source_name = 15;</code>
-       * @return The bytes for sourceName.
-       */
-      public com.google.protobuf.ByteString
-          getSourceNameBytes() {
-        java.lang.Object ref = sourceName_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          sourceName_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <code>string source_name = 15;</code>
-       * @param value The sourceName to set.
-       * @return This builder for chaining.
-       */
-      public Builder setSourceName(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  
-        sourceName_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string source_name = 15;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearSourceName() {
-        
-        sourceName_ = getDefaultInstance().getSourceName();
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string source_name = 15;</code>
-       * @param value The bytes for sourceName to set.
-       * @return This builder for chaining.
-       */
-      public Builder setSourceNameBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-        
-        sourceName_ = value;
-        onChanged();
-        return this;
-      }
-
-      private int targetEntityId_ ;
-      /**
-       * <code>uint32 target_entity_id = 12;</code>
-       * @return The targetEntityId.
-       */
-      @java.lang.Override
-      public int getTargetEntityId() {
-        return targetEntityId_;
-      }
-      /**
-       * <code>uint32 target_entity_id = 12;</code>
-       * @param value The targetEntityId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setTargetEntityId(int value) {
-        
-        targetEntityId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 target_entity_id = 12;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearTargetEntityId() {
-        
-        targetEntityId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int param2_ ;
-      /**
-       * <code>int32 param2 = 8;</code>
-       * @return The param2.
-       */
-      @java.lang.Override
-      public int getParam2() {
-        return param2_;
-      }
-      /**
-       * <code>int32 param2 = 8;</code>
-       * @param value The param2 to set.
-       * @return This builder for chaining.
-       */
-      public Builder setParam2(int value) {
-        
-        param2_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>int32 param2 = 8;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearParam2() {
-        
-        param2_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int sourceEntityId_ ;
       /**
-       * <code>uint32 source_entity_id = 4;</code>
+       * <code>uint32 source_entity_id = 7;</code>
        * @return The sourceEntityId.
        */
       @java.lang.Override
@@ -811,7 +681,7 @@ public final class ExecuteGroupTriggerReqOuterClass {
         return sourceEntityId_;
       }
       /**
-       * <code>uint32 source_entity_id = 4;</code>
+       * <code>uint32 source_entity_id = 7;</code>
        * @param value The sourceEntityId to set.
        * @return This builder for chaining.
        */
@@ -822,7 +692,7 @@ public final class ExecuteGroupTriggerReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 source_entity_id = 4;</code>
+       * <code>uint32 source_entity_id = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearSourceEntityId() {
@@ -834,7 +704,7 @@ public final class ExecuteGroupTriggerReqOuterClass {
 
       private int param3_ ;
       /**
-       * <code>int32 param3 = 10;</code>
+       * <code>int32 param3 = 6;</code>
        * @return The param3.
        */
       @java.lang.Override
@@ -842,7 +712,7 @@ public final class ExecuteGroupTriggerReqOuterClass {
         return param3_;
       }
       /**
-       * <code>int32 param3 = 10;</code>
+       * <code>int32 param3 = 6;</code>
        * @param value The param3 to set.
        * @return This builder for chaining.
        */
@@ -853,7 +723,7 @@ public final class ExecuteGroupTriggerReqOuterClass {
         return this;
       }
       /**
-       * <code>int32 param3 = 10;</code>
+       * <code>int32 param3 = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearParam3() {
@@ -890,6 +760,144 @@ public final class ExecuteGroupTriggerReqOuterClass {
       public Builder clearParam1() {
         
         param1_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private java.lang.Object sourceName_ = "";
+      /**
+       * <code>string source_name = 8;</code>
+       * @return The sourceName.
+       */
+      public java.lang.String getSourceName() {
+        java.lang.Object ref = sourceName_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          sourceName_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>string source_name = 8;</code>
+       * @return The bytes for sourceName.
+       */
+      public com.google.protobuf.ByteString
+          getSourceNameBytes() {
+        java.lang.Object ref = sourceName_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          sourceName_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>string source_name = 8;</code>
+       * @param value The sourceName to set.
+       * @return This builder for chaining.
+       */
+      public Builder setSourceName(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        sourceName_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string source_name = 8;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearSourceName() {
+        
+        sourceName_ = getDefaultInstance().getSourceName();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string source_name = 8;</code>
+       * @param value The bytes for sourceName to set.
+       * @return This builder for chaining.
+       */
+      public Builder setSourceNameBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
+        sourceName_ = value;
+        onChanged();
+        return this;
+      }
+
+      private int targetEntityId_ ;
+      /**
+       * <code>uint32 target_entity_id = 15;</code>
+       * @return The targetEntityId.
+       */
+      @java.lang.Override
+      public int getTargetEntityId() {
+        return targetEntityId_;
+      }
+      /**
+       * <code>uint32 target_entity_id = 15;</code>
+       * @param value The targetEntityId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setTargetEntityId(int value) {
+        
+        targetEntityId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 target_entity_id = 15;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearTargetEntityId() {
+        
+        targetEntityId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int param2_ ;
+      /**
+       * <code>int32 param2 = 4;</code>
+       * @return The param2.
+       */
+      @java.lang.Override
+      public int getParam2() {
+        return param2_;
+      }
+      /**
+       * <code>int32 param2 = 4;</code>
+       * @param value The param2 to set.
+       * @return This builder for chaining.
+       */
+      public Builder setParam2(int value) {
+        
+        param2_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 param2 = 4;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearParam2() {
+        
+        param2_ = 0;
         onChanged();
         return this;
       }
@@ -961,10 +969,10 @@ public final class ExecuteGroupTriggerReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\034ExecuteGroupTriggerReq.proto\"\221\001\n\026Execu" +
-      "teGroupTriggerReq\022\023\n\013source_name\030\017 \001(\t\022\030" +
-      "\n\020target_entity_id\030\014 \001(\r\022\016\n\006param2\030\010 \001(\005" +
-      "\022\030\n\020source_entity_id\030\004 \001(\r\022\016\n\006param3\030\n \001" +
-      "(\005\022\016\n\006param1\030\t \001(\005B\033\n\031emu.grasscutter.ne" +
+      "teGroupTriggerReq\022\030\n\020source_entity_id\030\007 " +
+      "\001(\r\022\016\n\006param3\030\006 \001(\005\022\016\n\006param1\030\t \001(\005\022\023\n\013s" +
+      "ource_name\030\010 \001(\t\022\030\n\020target_entity_id\030\017 \001" +
+      "(\r\022\016\n\006param2\030\004 \001(\005B\033\n\031emu.grasscutter.ne" +
       "t.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -976,7 +984,7 @@ public final class ExecuteGroupTriggerReqOuterClass {
     internal_static_ExecuteGroupTriggerReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ExecuteGroupTriggerReq_descriptor,
-        new java.lang.String[] { "SourceName", "TargetEntityId", "Param2", "SourceEntityId", "Param3", "Param1", });
+        new java.lang.String[] { "SourceEntityId", "Param3", "Param1", "SourceName", "TargetEntityId", "Param2", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

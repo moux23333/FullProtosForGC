@@ -19,16 +19,20 @@ public final class SeaLampPopularityNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 popularity = 4;</code>
+     * <code>uint32 popularity = 6;</code>
      * @return The popularity.
      */
     int getPopularity();
   }
   /**
    * <pre>
-   * CmdId: 2032
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 2135;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code SeaLampPopularityNotify}
@@ -75,7 +79,7 @@ public final class SeaLampPopularityNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 32: {
+            case 48: {
 
               popularity_ = input.readUInt32();
               break;
@@ -112,10 +116,10 @@ public final class SeaLampPopularityNotifyOuterClass {
               emu.grasscutter.net.proto.SeaLampPopularityNotifyOuterClass.SeaLampPopularityNotify.class, emu.grasscutter.net.proto.SeaLampPopularityNotifyOuterClass.SeaLampPopularityNotify.Builder.class);
     }
 
-    public static final int POPULARITY_FIELD_NUMBER = 4;
+    public static final int POPULARITY_FIELD_NUMBER = 6;
     private int popularity_;
     /**
-     * <code>uint32 popularity = 4;</code>
+     * <code>uint32 popularity = 6;</code>
      * @return The popularity.
      */
     @java.lang.Override
@@ -138,7 +142,7 @@ public final class SeaLampPopularityNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (popularity_ != 0) {
-        output.writeUInt32(4, popularity_);
+        output.writeUInt32(6, popularity_);
       }
       unknownFields.writeTo(output);
     }
@@ -151,7 +155,7 @@ public final class SeaLampPopularityNotifyOuterClass {
       size = 0;
       if (popularity_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, popularity_);
+          .computeUInt32Size(6, popularity_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -280,9 +284,13 @@ public final class SeaLampPopularityNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 2032
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 2135;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code SeaLampPopularityNotify}
@@ -433,7 +441,7 @@ public final class SeaLampPopularityNotifyOuterClass {
 
       private int popularity_ ;
       /**
-       * <code>uint32 popularity = 4;</code>
+       * <code>uint32 popularity = 6;</code>
        * @return The popularity.
        */
       @java.lang.Override
@@ -441,7 +449,7 @@ public final class SeaLampPopularityNotifyOuterClass {
         return popularity_;
       }
       /**
-       * <code>uint32 popularity = 4;</code>
+       * <code>uint32 popularity = 6;</code>
        * @param value The popularity to set.
        * @return This builder for chaining.
        */
@@ -452,7 +460,7 @@ public final class SeaLampPopularityNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 popularity = 4;</code>
+       * <code>uint32 popularity = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearPopularity() {
@@ -529,7 +537,7 @@ public final class SeaLampPopularityNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\035SeaLampPopularityNotify.proto\"-\n\027SeaLa" +
-      "mpPopularityNotify\022\022\n\npopularity\030\004 \001(\rB\033" +
+      "mpPopularityNotify\022\022\n\npopularity\030\006 \001(\rB\033" +
       "\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

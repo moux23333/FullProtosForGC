@@ -19,23 +19,27 @@ public final class DraftGuestReplyTwiceConfirmReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_agree = 15;</code>
+     * <code>bool is_agree = 8;</code>
      * @return The isAgree.
      */
     boolean getIsAgree();
 
     /**
-     * <code>uint32 draft_id = 14;</code>
+     * <code>uint32 draft_id = 13;</code>
      * @return The draftId.
      */
     int getDraftId();
   }
   /**
    * <pre>
-   * CmdId: 5431
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 5427;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code DraftGuestReplyTwiceConfirmReq}
@@ -82,14 +86,14 @@ public final class DraftGuestReplyTwiceConfirmReqOuterClass {
             case 0:
               done = true;
               break;
-            case 112: {
-
-              draftId_ = input.readUInt32();
-              break;
-            }
-            case 120: {
+            case 64: {
 
               isAgree_ = input.readBool();
+              break;
+            }
+            case 104: {
+
+              draftId_ = input.readUInt32();
               break;
             }
             default: {
@@ -124,10 +128,10 @@ public final class DraftGuestReplyTwiceConfirmReqOuterClass {
               emu.grasscutter.net.proto.DraftGuestReplyTwiceConfirmReqOuterClass.DraftGuestReplyTwiceConfirmReq.class, emu.grasscutter.net.proto.DraftGuestReplyTwiceConfirmReqOuterClass.DraftGuestReplyTwiceConfirmReq.Builder.class);
     }
 
-    public static final int IS_AGREE_FIELD_NUMBER = 15;
+    public static final int IS_AGREE_FIELD_NUMBER = 8;
     private boolean isAgree_;
     /**
-     * <code>bool is_agree = 15;</code>
+     * <code>bool is_agree = 8;</code>
      * @return The isAgree.
      */
     @java.lang.Override
@@ -135,10 +139,10 @@ public final class DraftGuestReplyTwiceConfirmReqOuterClass {
       return isAgree_;
     }
 
-    public static final int DRAFT_ID_FIELD_NUMBER = 14;
+    public static final int DRAFT_ID_FIELD_NUMBER = 13;
     private int draftId_;
     /**
-     * <code>uint32 draft_id = 14;</code>
+     * <code>uint32 draft_id = 13;</code>
      * @return The draftId.
      */
     @java.lang.Override
@@ -160,11 +164,11 @@ public final class DraftGuestReplyTwiceConfirmReqOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (draftId_ != 0) {
-        output.writeUInt32(14, draftId_);
-      }
       if (isAgree_ != false) {
-        output.writeBool(15, isAgree_);
+        output.writeBool(8, isAgree_);
+      }
+      if (draftId_ != 0) {
+        output.writeUInt32(13, draftId_);
       }
       unknownFields.writeTo(output);
     }
@@ -175,13 +179,13 @@ public final class DraftGuestReplyTwiceConfirmReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (draftId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, draftId_);
-      }
       if (isAgree_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(15, isAgree_);
+          .computeBoolSize(8, isAgree_);
+      }
+      if (draftId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(13, draftId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -315,10 +319,14 @@ public final class DraftGuestReplyTwiceConfirmReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 5431
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 5427;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code DraftGuestReplyTwiceConfirmReq}
@@ -475,7 +483,7 @@ public final class DraftGuestReplyTwiceConfirmReqOuterClass {
 
       private boolean isAgree_ ;
       /**
-       * <code>bool is_agree = 15;</code>
+       * <code>bool is_agree = 8;</code>
        * @return The isAgree.
        */
       @java.lang.Override
@@ -483,7 +491,7 @@ public final class DraftGuestReplyTwiceConfirmReqOuterClass {
         return isAgree_;
       }
       /**
-       * <code>bool is_agree = 15;</code>
+       * <code>bool is_agree = 8;</code>
        * @param value The isAgree to set.
        * @return This builder for chaining.
        */
@@ -494,7 +502,7 @@ public final class DraftGuestReplyTwiceConfirmReqOuterClass {
         return this;
       }
       /**
-       * <code>bool is_agree = 15;</code>
+       * <code>bool is_agree = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsAgree() {
@@ -506,7 +514,7 @@ public final class DraftGuestReplyTwiceConfirmReqOuterClass {
 
       private int draftId_ ;
       /**
-       * <code>uint32 draft_id = 14;</code>
+       * <code>uint32 draft_id = 13;</code>
        * @return The draftId.
        */
       @java.lang.Override
@@ -514,7 +522,7 @@ public final class DraftGuestReplyTwiceConfirmReqOuterClass {
         return draftId_;
       }
       /**
-       * <code>uint32 draft_id = 14;</code>
+       * <code>uint32 draft_id = 13;</code>
        * @param value The draftId to set.
        * @return This builder for chaining.
        */
@@ -525,7 +533,7 @@ public final class DraftGuestReplyTwiceConfirmReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 draft_id = 14;</code>
+       * <code>uint32 draft_id = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearDraftId() {
@@ -603,7 +611,7 @@ public final class DraftGuestReplyTwiceConfirmReqOuterClass {
     java.lang.String[] descriptorData = {
       "\n$DraftGuestReplyTwiceConfirmReq.proto\"D" +
       "\n\036DraftGuestReplyTwiceConfirmReq\022\020\n\010is_a" +
-      "gree\030\017 \001(\010\022\020\n\010draft_id\030\016 \001(\rB\033\n\031emu.gras" +
+      "gree\030\010 \001(\010\022\020\n\010draft_id\030\r \001(\rB\033\n\031emu.gras" +
       "scutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

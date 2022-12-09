@@ -19,23 +19,27 @@ public final class GCGDSChangeFieldReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 field_id = 6;</code>
+     * <code>uint32 field_id = 3;</code>
      * @return The fieldId.
      */
     int getFieldId();
 
     /**
-     * <code>uint32 deck_id = 11;</code>
+     * <code>uint32 deck_id = 13;</code>
      * @return The deckId.
      */
     int getDeckId();
   }
   /**
    * <pre>
-   * CmdId: 7541
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 7788;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code GCGDSChangeFieldReq}
@@ -82,12 +86,12 @@ public final class GCGDSChangeFieldReqOuterClass {
             case 0:
               done = true;
               break;
-            case 48: {
+            case 24: {
 
               fieldId_ = input.readUInt32();
               break;
             }
-            case 88: {
+            case 104: {
 
               deckId_ = input.readUInt32();
               break;
@@ -124,10 +128,10 @@ public final class GCGDSChangeFieldReqOuterClass {
               emu.grasscutter.net.proto.GCGDSChangeFieldReqOuterClass.GCGDSChangeFieldReq.class, emu.grasscutter.net.proto.GCGDSChangeFieldReqOuterClass.GCGDSChangeFieldReq.Builder.class);
     }
 
-    public static final int FIELD_ID_FIELD_NUMBER = 6;
+    public static final int FIELD_ID_FIELD_NUMBER = 3;
     private int fieldId_;
     /**
-     * <code>uint32 field_id = 6;</code>
+     * <code>uint32 field_id = 3;</code>
      * @return The fieldId.
      */
     @java.lang.Override
@@ -135,10 +139,10 @@ public final class GCGDSChangeFieldReqOuterClass {
       return fieldId_;
     }
 
-    public static final int DECK_ID_FIELD_NUMBER = 11;
+    public static final int DECK_ID_FIELD_NUMBER = 13;
     private int deckId_;
     /**
-     * <code>uint32 deck_id = 11;</code>
+     * <code>uint32 deck_id = 13;</code>
      * @return The deckId.
      */
     @java.lang.Override
@@ -161,10 +165,10 @@ public final class GCGDSChangeFieldReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (fieldId_ != 0) {
-        output.writeUInt32(6, fieldId_);
+        output.writeUInt32(3, fieldId_);
       }
       if (deckId_ != 0) {
-        output.writeUInt32(11, deckId_);
+        output.writeUInt32(13, deckId_);
       }
       unknownFields.writeTo(output);
     }
@@ -177,11 +181,11 @@ public final class GCGDSChangeFieldReqOuterClass {
       size = 0;
       if (fieldId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, fieldId_);
+          .computeUInt32Size(3, fieldId_);
       }
       if (deckId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, deckId_);
+          .computeUInt32Size(13, deckId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -314,10 +318,14 @@ public final class GCGDSChangeFieldReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 7541
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 7788;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code GCGDSChangeFieldReq}
@@ -474,7 +482,7 @@ public final class GCGDSChangeFieldReqOuterClass {
 
       private int fieldId_ ;
       /**
-       * <code>uint32 field_id = 6;</code>
+       * <code>uint32 field_id = 3;</code>
        * @return The fieldId.
        */
       @java.lang.Override
@@ -482,7 +490,7 @@ public final class GCGDSChangeFieldReqOuterClass {
         return fieldId_;
       }
       /**
-       * <code>uint32 field_id = 6;</code>
+       * <code>uint32 field_id = 3;</code>
        * @param value The fieldId to set.
        * @return This builder for chaining.
        */
@@ -493,7 +501,7 @@ public final class GCGDSChangeFieldReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 field_id = 6;</code>
+       * <code>uint32 field_id = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearFieldId() {
@@ -505,7 +513,7 @@ public final class GCGDSChangeFieldReqOuterClass {
 
       private int deckId_ ;
       /**
-       * <code>uint32 deck_id = 11;</code>
+       * <code>uint32 deck_id = 13;</code>
        * @return The deckId.
        */
       @java.lang.Override
@@ -513,7 +521,7 @@ public final class GCGDSChangeFieldReqOuterClass {
         return deckId_;
       }
       /**
-       * <code>uint32 deck_id = 11;</code>
+       * <code>uint32 deck_id = 13;</code>
        * @param value The deckId to set.
        * @return This builder for chaining.
        */
@@ -524,7 +532,7 @@ public final class GCGDSChangeFieldReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 deck_id = 11;</code>
+       * <code>uint32 deck_id = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearDeckId() {
@@ -601,8 +609,8 @@ public final class GCGDSChangeFieldReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\031GCGDSChangeFieldReq.proto\"8\n\023GCGDSChan" +
-      "geFieldReq\022\020\n\010field_id\030\006 \001(\r\022\017\n\007deck_id\030" +
-      "\013 \001(\rB\033\n\031emu.grasscutter.net.protob\006prot" +
+      "geFieldReq\022\020\n\010field_id\030\003 \001(\r\022\017\n\007deck_id\030" +
+      "\r \001(\rB\033\n\031emu.grasscutter.net.protob\006prot" +
       "o3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

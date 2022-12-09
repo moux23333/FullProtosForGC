@@ -19,22 +19,26 @@ public final class GravenInnocenceRaceRestartRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 8;</code>
+     * <code>int32 retcode = 2;</code>
      * @return The retcode.
      */
     int getRetcode();
 
     /**
-     * <code>uint32 gallery_id = 6;</code>
+     * <code>uint32 gallery_id = 3;</code>
      * @return The galleryId.
      */
     int getGalleryId();
   }
   /**
    * <pre>
-   * CmdId: 21880
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 20056;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code GravenInnocenceRaceRestartRsp}
@@ -81,14 +85,14 @@ public final class GravenInnocenceRaceRestartRspOuterClass {
             case 0:
               done = true;
               break;
-            case 48: {
-
-              galleryId_ = input.readUInt32();
-              break;
-            }
-            case 64: {
+            case 16: {
 
               retcode_ = input.readInt32();
+              break;
+            }
+            case 24: {
+
+              galleryId_ = input.readUInt32();
               break;
             }
             default: {
@@ -123,10 +127,10 @@ public final class GravenInnocenceRaceRestartRspOuterClass {
               emu.grasscutter.net.proto.GravenInnocenceRaceRestartRspOuterClass.GravenInnocenceRaceRestartRsp.class, emu.grasscutter.net.proto.GravenInnocenceRaceRestartRspOuterClass.GravenInnocenceRaceRestartRsp.Builder.class);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 8;
+    public static final int RETCODE_FIELD_NUMBER = 2;
     private int retcode_;
     /**
-     * <code>int32 retcode = 8;</code>
+     * <code>int32 retcode = 2;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -134,10 +138,10 @@ public final class GravenInnocenceRaceRestartRspOuterClass {
       return retcode_;
     }
 
-    public static final int GALLERY_ID_FIELD_NUMBER = 6;
+    public static final int GALLERY_ID_FIELD_NUMBER = 3;
     private int galleryId_;
     /**
-     * <code>uint32 gallery_id = 6;</code>
+     * <code>uint32 gallery_id = 3;</code>
      * @return The galleryId.
      */
     @java.lang.Override
@@ -159,11 +163,11 @@ public final class GravenInnocenceRaceRestartRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (galleryId_ != 0) {
-        output.writeUInt32(6, galleryId_);
-      }
       if (retcode_ != 0) {
-        output.writeInt32(8, retcode_);
+        output.writeInt32(2, retcode_);
+      }
+      if (galleryId_ != 0) {
+        output.writeUInt32(3, galleryId_);
       }
       unknownFields.writeTo(output);
     }
@@ -174,13 +178,13 @@ public final class GravenInnocenceRaceRestartRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (galleryId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, galleryId_);
-      }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(8, retcode_);
+          .computeInt32Size(2, retcode_);
+      }
+      if (galleryId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(3, galleryId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -313,9 +317,13 @@ public final class GravenInnocenceRaceRestartRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 21880
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 20056;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code GravenInnocenceRaceRestartRsp}
@@ -472,7 +480,7 @@ public final class GravenInnocenceRaceRestartRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 8;</code>
+       * <code>int32 retcode = 2;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -480,7 +488,7 @@ public final class GravenInnocenceRaceRestartRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 8;</code>
+       * <code>int32 retcode = 2;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -491,7 +499,7 @@ public final class GravenInnocenceRaceRestartRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 8;</code>
+       * <code>int32 retcode = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -503,7 +511,7 @@ public final class GravenInnocenceRaceRestartRspOuterClass {
 
       private int galleryId_ ;
       /**
-       * <code>uint32 gallery_id = 6;</code>
+       * <code>uint32 gallery_id = 3;</code>
        * @return The galleryId.
        */
       @java.lang.Override
@@ -511,7 +519,7 @@ public final class GravenInnocenceRaceRestartRspOuterClass {
         return galleryId_;
       }
       /**
-       * <code>uint32 gallery_id = 6;</code>
+       * <code>uint32 gallery_id = 3;</code>
        * @param value The galleryId to set.
        * @return This builder for chaining.
        */
@@ -522,7 +530,7 @@ public final class GravenInnocenceRaceRestartRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 gallery_id = 6;</code>
+       * <code>uint32 gallery_id = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearGalleryId() {
@@ -600,7 +608,7 @@ public final class GravenInnocenceRaceRestartRspOuterClass {
     java.lang.String[] descriptorData = {
       "\n#GravenInnocenceRaceRestartRsp.proto\"D\n" +
       "\035GravenInnocenceRaceRestartRsp\022\017\n\007retcod" +
-      "e\030\010 \001(\005\022\022\n\ngallery_id\030\006 \001(\rB\033\n\031emu.grass" +
+      "e\030\002 \001(\005\022\022\n\ngallery_id\030\003 \001(\rB\033\n\031emu.grass" +
       "cutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

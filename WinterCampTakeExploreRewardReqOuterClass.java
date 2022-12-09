@@ -19,17 +19,21 @@ public final class WinterCampTakeExploreRewardReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 id = 8;</code>
+     * <code>uint32 id = 11;</code>
      * @return The id.
      */
     int getId();
   }
   /**
    * <pre>
-   * CmdId: 8607
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 8014;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code WinterCampTakeExploreRewardReq}
@@ -76,7 +80,7 @@ public final class WinterCampTakeExploreRewardReqOuterClass {
             case 0:
               done = true;
               break;
-            case 64: {
+            case 88: {
 
               id_ = input.readUInt32();
               break;
@@ -113,10 +117,10 @@ public final class WinterCampTakeExploreRewardReqOuterClass {
               emu.grasscutter.net.proto.WinterCampTakeExploreRewardReqOuterClass.WinterCampTakeExploreRewardReq.class, emu.grasscutter.net.proto.WinterCampTakeExploreRewardReqOuterClass.WinterCampTakeExploreRewardReq.Builder.class);
     }
 
-    public static final int ID_FIELD_NUMBER = 8;
+    public static final int ID_FIELD_NUMBER = 11;
     private int id_;
     /**
-     * <code>uint32 id = 8;</code>
+     * <code>uint32 id = 11;</code>
      * @return The id.
      */
     @java.lang.Override
@@ -139,7 +143,7 @@ public final class WinterCampTakeExploreRewardReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (id_ != 0) {
-        output.writeUInt32(8, id_);
+        output.writeUInt32(11, id_);
       }
       unknownFields.writeTo(output);
     }
@@ -152,7 +156,7 @@ public final class WinterCampTakeExploreRewardReqOuterClass {
       size = 0;
       if (id_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, id_);
+          .computeUInt32Size(11, id_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -281,10 +285,14 @@ public final class WinterCampTakeExploreRewardReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 8607
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 8014;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code WinterCampTakeExploreRewardReq}
@@ -435,7 +443,7 @@ public final class WinterCampTakeExploreRewardReqOuterClass {
 
       private int id_ ;
       /**
-       * <code>uint32 id = 8;</code>
+       * <code>uint32 id = 11;</code>
        * @return The id.
        */
       @java.lang.Override
@@ -443,7 +451,7 @@ public final class WinterCampTakeExploreRewardReqOuterClass {
         return id_;
       }
       /**
-       * <code>uint32 id = 8;</code>
+       * <code>uint32 id = 11;</code>
        * @param value The id to set.
        * @return This builder for chaining.
        */
@@ -454,7 +462,7 @@ public final class WinterCampTakeExploreRewardReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 id = 8;</code>
+       * <code>uint32 id = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearId() {
@@ -531,7 +539,7 @@ public final class WinterCampTakeExploreRewardReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n$WinterCampTakeExploreRewardReq.proto\"," +
-      "\n\036WinterCampTakeExploreRewardReq\022\n\n\002id\030\010" +
+      "\n\036WinterCampTakeExploreRewardReq\022\n\n\002id\030\013" +
       " \001(\rB\033\n\031emu.grasscutter.net.protob\006proto" +
       "3"
     };

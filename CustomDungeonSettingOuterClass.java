@@ -19,57 +19,57 @@ public final class CustomDungeonSettingOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated uint32 open_room_list = 1;</code>
-     * @return A list containing the openRoomList.
-     */
-    java.util.List<java.lang.Integer> getOpenRoomListList();
-    /**
-     * <code>repeated uint32 open_room_list = 1;</code>
-     * @return The count of openRoomList.
-     */
-    int getOpenRoomListCount();
-    /**
-     * <code>repeated uint32 open_room_list = 1;</code>
-     * @param index The index of the element to return.
-     * @return The openRoomList at the given index.
-     */
-    int getOpenRoomList(int index);
-
-    /**
-     * <code>bool is_arrive_finish = 14;</code>
-     * @return The isArriveFinish.
-     */
-    boolean getIsArriveFinish();
-
-    /**
-     * <code>uint32 life_num = 6;</code>
-     * @return The lifeNum.
-     */
-    int getLifeNum();
-
-    /**
-     * <code>uint32 start_room_id = 4;</code>
+     * <code>uint32 start_room_id = 3;</code>
      * @return The startRoomId.
      */
     int getStartRoomId();
-
-    /**
-     * <code>bool is_forbid_skill = 3;</code>
-     * @return The isForbidSkill.
-     */
-    boolean getIsForbidSkill();
-
-    /**
-     * <code>uint32 coin_limit = 10;</code>
-     * @return The coinLimit.
-     */
-    int getCoinLimit();
 
     /**
      * <code>uint32 time_limit = 9;</code>
      * @return The timeLimit.
      */
     int getTimeLimit();
+
+    /**
+     * <code>repeated uint32 open_room_list = 14;</code>
+     * @return A list containing the openRoomList.
+     */
+    java.util.List<java.lang.Integer> getOpenRoomListList();
+    /**
+     * <code>repeated uint32 open_room_list = 14;</code>
+     * @return The count of openRoomList.
+     */
+    int getOpenRoomListCount();
+    /**
+     * <code>repeated uint32 open_room_list = 14;</code>
+     * @param index The index of the element to return.
+     * @return The openRoomList at the given index.
+     */
+    int getOpenRoomList(int index);
+
+    /**
+     * <code>uint32 coin_limit = 5;</code>
+     * @return The coinLimit.
+     */
+    int getCoinLimit();
+
+    /**
+     * <code>bool is_forbid_skill = 7;</code>
+     * @return The isForbidSkill.
+     */
+    boolean getIsForbidSkill();
+
+    /**
+     * <code>bool is_arrive_finish = 6;</code>
+     * @return The isArriveFinish.
+     */
+    boolean getIsArriveFinish();
+
+    /**
+     * <code>uint32 life_num = 8;</code>
+     * @return The lifeNum.
+     */
+    int getLifeNum();
   }
   /**
    * Protobuf type {@code CustomDungeonSetting}
@@ -118,7 +118,37 @@ public final class CustomDungeonSettingOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
+            case 24: {
+
+              startRoomId_ = input.readUInt32();
+              break;
+            }
+            case 40: {
+
+              coinLimit_ = input.readUInt32();
+              break;
+            }
+            case 48: {
+
+              isArriveFinish_ = input.readBool();
+              break;
+            }
+            case 56: {
+
+              isForbidSkill_ = input.readBool();
+              break;
+            }
+            case 64: {
+
+              lifeNum_ = input.readUInt32();
+              break;
+            }
+            case 72: {
+
+              timeLimit_ = input.readUInt32();
+              break;
+            }
+            case 112: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 openRoomList_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
@@ -126,7 +156,7 @@ public final class CustomDungeonSettingOuterClass {
               openRoomList_.addInt(input.readUInt32());
               break;
             }
-            case 10: {
+            case 114: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -137,36 +167,6 @@ public final class CustomDungeonSettingOuterClass {
                 openRoomList_.addInt(input.readUInt32());
               }
               input.popLimit(limit);
-              break;
-            }
-            case 24: {
-
-              isForbidSkill_ = input.readBool();
-              break;
-            }
-            case 32: {
-
-              startRoomId_ = input.readUInt32();
-              break;
-            }
-            case 48: {
-
-              lifeNum_ = input.readUInt32();
-              break;
-            }
-            case 72: {
-
-              timeLimit_ = input.readUInt32();
-              break;
-            }
-            case 80: {
-
-              coinLimit_ = input.readUInt32();
-              break;
-            }
-            case 112: {
-
-              isArriveFinish_ = input.readBool();
               break;
             }
             default: {
@@ -204,87 +204,15 @@ public final class CustomDungeonSettingOuterClass {
               emu.grasscutter.net.proto.CustomDungeonSettingOuterClass.CustomDungeonSetting.class, emu.grasscutter.net.proto.CustomDungeonSettingOuterClass.CustomDungeonSetting.Builder.class);
     }
 
-    public static final int OPEN_ROOM_LIST_FIELD_NUMBER = 1;
-    private com.google.protobuf.Internal.IntList openRoomList_;
-    /**
-     * <code>repeated uint32 open_room_list = 1;</code>
-     * @return A list containing the openRoomList.
-     */
-    @java.lang.Override
-    public java.util.List<java.lang.Integer>
-        getOpenRoomListList() {
-      return openRoomList_;
-    }
-    /**
-     * <code>repeated uint32 open_room_list = 1;</code>
-     * @return The count of openRoomList.
-     */
-    public int getOpenRoomListCount() {
-      return openRoomList_.size();
-    }
-    /**
-     * <code>repeated uint32 open_room_list = 1;</code>
-     * @param index The index of the element to return.
-     * @return The openRoomList at the given index.
-     */
-    public int getOpenRoomList(int index) {
-      return openRoomList_.getInt(index);
-    }
-    private int openRoomListMemoizedSerializedSize = -1;
-
-    public static final int IS_ARRIVE_FINISH_FIELD_NUMBER = 14;
-    private boolean isArriveFinish_;
-    /**
-     * <code>bool is_arrive_finish = 14;</code>
-     * @return The isArriveFinish.
-     */
-    @java.lang.Override
-    public boolean getIsArriveFinish() {
-      return isArriveFinish_;
-    }
-
-    public static final int LIFE_NUM_FIELD_NUMBER = 6;
-    private int lifeNum_;
-    /**
-     * <code>uint32 life_num = 6;</code>
-     * @return The lifeNum.
-     */
-    @java.lang.Override
-    public int getLifeNum() {
-      return lifeNum_;
-    }
-
-    public static final int START_ROOM_ID_FIELD_NUMBER = 4;
+    public static final int START_ROOM_ID_FIELD_NUMBER = 3;
     private int startRoomId_;
     /**
-     * <code>uint32 start_room_id = 4;</code>
+     * <code>uint32 start_room_id = 3;</code>
      * @return The startRoomId.
      */
     @java.lang.Override
     public int getStartRoomId() {
       return startRoomId_;
-    }
-
-    public static final int IS_FORBID_SKILL_FIELD_NUMBER = 3;
-    private boolean isForbidSkill_;
-    /**
-     * <code>bool is_forbid_skill = 3;</code>
-     * @return The isForbidSkill.
-     */
-    @java.lang.Override
-    public boolean getIsForbidSkill() {
-      return isForbidSkill_;
-    }
-
-    public static final int COIN_LIMIT_FIELD_NUMBER = 10;
-    private int coinLimit_;
-    /**
-     * <code>uint32 coin_limit = 10;</code>
-     * @return The coinLimit.
-     */
-    @java.lang.Override
-    public int getCoinLimit() {
-      return coinLimit_;
     }
 
     public static final int TIME_LIMIT_FIELD_NUMBER = 9;
@@ -296,6 +224,78 @@ public final class CustomDungeonSettingOuterClass {
     @java.lang.Override
     public int getTimeLimit() {
       return timeLimit_;
+    }
+
+    public static final int OPEN_ROOM_LIST_FIELD_NUMBER = 14;
+    private com.google.protobuf.Internal.IntList openRoomList_;
+    /**
+     * <code>repeated uint32 open_room_list = 14;</code>
+     * @return A list containing the openRoomList.
+     */
+    @java.lang.Override
+    public java.util.List<java.lang.Integer>
+        getOpenRoomListList() {
+      return openRoomList_;
+    }
+    /**
+     * <code>repeated uint32 open_room_list = 14;</code>
+     * @return The count of openRoomList.
+     */
+    public int getOpenRoomListCount() {
+      return openRoomList_.size();
+    }
+    /**
+     * <code>repeated uint32 open_room_list = 14;</code>
+     * @param index The index of the element to return.
+     * @return The openRoomList at the given index.
+     */
+    public int getOpenRoomList(int index) {
+      return openRoomList_.getInt(index);
+    }
+    private int openRoomListMemoizedSerializedSize = -1;
+
+    public static final int COIN_LIMIT_FIELD_NUMBER = 5;
+    private int coinLimit_;
+    /**
+     * <code>uint32 coin_limit = 5;</code>
+     * @return The coinLimit.
+     */
+    @java.lang.Override
+    public int getCoinLimit() {
+      return coinLimit_;
+    }
+
+    public static final int IS_FORBID_SKILL_FIELD_NUMBER = 7;
+    private boolean isForbidSkill_;
+    /**
+     * <code>bool is_forbid_skill = 7;</code>
+     * @return The isForbidSkill.
+     */
+    @java.lang.Override
+    public boolean getIsForbidSkill() {
+      return isForbidSkill_;
+    }
+
+    public static final int IS_ARRIVE_FINISH_FIELD_NUMBER = 6;
+    private boolean isArriveFinish_;
+    /**
+     * <code>bool is_arrive_finish = 6;</code>
+     * @return The isArriveFinish.
+     */
+    @java.lang.Override
+    public boolean getIsArriveFinish() {
+      return isArriveFinish_;
+    }
+
+    public static final int LIFE_NUM_FIELD_NUMBER = 8;
+    private int lifeNum_;
+    /**
+     * <code>uint32 life_num = 8;</code>
+     * @return The lifeNum.
+     */
+    @java.lang.Override
+    public int getLifeNum() {
+      return lifeNum_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -313,30 +313,30 @@ public final class CustomDungeonSettingOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      if (getOpenRoomListList().size() > 0) {
-        output.writeUInt32NoTag(10);
-        output.writeUInt32NoTag(openRoomListMemoizedSerializedSize);
+      if (startRoomId_ != 0) {
+        output.writeUInt32(3, startRoomId_);
       }
-      for (int i = 0; i < openRoomList_.size(); i++) {
-        output.writeUInt32NoTag(openRoomList_.getInt(i));
+      if (coinLimit_ != 0) {
+        output.writeUInt32(5, coinLimit_);
+      }
+      if (isArriveFinish_ != false) {
+        output.writeBool(6, isArriveFinish_);
       }
       if (isForbidSkill_ != false) {
-        output.writeBool(3, isForbidSkill_);
-      }
-      if (startRoomId_ != 0) {
-        output.writeUInt32(4, startRoomId_);
+        output.writeBool(7, isForbidSkill_);
       }
       if (lifeNum_ != 0) {
-        output.writeUInt32(6, lifeNum_);
+        output.writeUInt32(8, lifeNum_);
       }
       if (timeLimit_ != 0) {
         output.writeUInt32(9, timeLimit_);
       }
-      if (coinLimit_ != 0) {
-        output.writeUInt32(10, coinLimit_);
+      if (getOpenRoomListList().size() > 0) {
+        output.writeUInt32NoTag(114);
+        output.writeUInt32NoTag(openRoomListMemoizedSerializedSize);
       }
-      if (isArriveFinish_ != false) {
-        output.writeBool(14, isArriveFinish_);
+      for (int i = 0; i < openRoomList_.size(); i++) {
+        output.writeUInt32NoTag(openRoomList_.getInt(i));
       }
       unknownFields.writeTo(output);
     }
@@ -347,6 +347,30 @@ public final class CustomDungeonSettingOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (startRoomId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(3, startRoomId_);
+      }
+      if (coinLimit_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(5, coinLimit_);
+      }
+      if (isArriveFinish_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(6, isArriveFinish_);
+      }
+      if (isForbidSkill_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(7, isForbidSkill_);
+      }
+      if (lifeNum_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(8, lifeNum_);
+      }
+      if (timeLimit_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(9, timeLimit_);
+      }
       {
         int dataSize = 0;
         for (int i = 0; i < openRoomList_.size(); i++) {
@@ -360,30 +384,6 @@ public final class CustomDungeonSettingOuterClass {
               .computeInt32SizeNoTag(dataSize);
         }
         openRoomListMemoizedSerializedSize = dataSize;
-      }
-      if (isForbidSkill_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(3, isForbidSkill_);
-      }
-      if (startRoomId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, startRoomId_);
-      }
-      if (lifeNum_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, lifeNum_);
-      }
-      if (timeLimit_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, timeLimit_);
-      }
-      if (coinLimit_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, coinLimit_);
-      }
-      if (isArriveFinish_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(14, isArriveFinish_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -400,20 +400,20 @@ public final class CustomDungeonSettingOuterClass {
       }
       emu.grasscutter.net.proto.CustomDungeonSettingOuterClass.CustomDungeonSetting other = (emu.grasscutter.net.proto.CustomDungeonSettingOuterClass.CustomDungeonSetting) obj;
 
+      if (getStartRoomId()
+          != other.getStartRoomId()) return false;
+      if (getTimeLimit()
+          != other.getTimeLimit()) return false;
       if (!getOpenRoomListList()
           .equals(other.getOpenRoomListList())) return false;
+      if (getCoinLimit()
+          != other.getCoinLimit()) return false;
+      if (getIsForbidSkill()
+          != other.getIsForbidSkill()) return false;
       if (getIsArriveFinish()
           != other.getIsArriveFinish()) return false;
       if (getLifeNum()
           != other.getLifeNum()) return false;
-      if (getStartRoomId()
-          != other.getStartRoomId()) return false;
-      if (getIsForbidSkill()
-          != other.getIsForbidSkill()) return false;
-      if (getCoinLimit()
-          != other.getCoinLimit()) return false;
-      if (getTimeLimit()
-          != other.getTimeLimit()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -425,24 +425,24 @@ public final class CustomDungeonSettingOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + START_ROOM_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getStartRoomId();
+      hash = (37 * hash) + TIME_LIMIT_FIELD_NUMBER;
+      hash = (53 * hash) + getTimeLimit();
       if (getOpenRoomListCount() > 0) {
         hash = (37 * hash) + OPEN_ROOM_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getOpenRoomListList().hashCode();
       }
+      hash = (37 * hash) + COIN_LIMIT_FIELD_NUMBER;
+      hash = (53 * hash) + getCoinLimit();
+      hash = (37 * hash) + IS_FORBID_SKILL_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getIsForbidSkill());
       hash = (37 * hash) + IS_ARRIVE_FINISH_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsArriveFinish());
       hash = (37 * hash) + LIFE_NUM_FIELD_NUMBER;
       hash = (53 * hash) + getLifeNum();
-      hash = (37 * hash) + START_ROOM_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getStartRoomId();
-      hash = (37 * hash) + IS_FORBID_SKILL_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsForbidSkill());
-      hash = (37 * hash) + COIN_LIMIT_FIELD_NUMBER;
-      hash = (53 * hash) + getCoinLimit();
-      hash = (37 * hash) + TIME_LIMIT_FIELD_NUMBER;
-      hash = (53 * hash) + getTimeLimit();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -576,19 +576,19 @@ public final class CustomDungeonSettingOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        startRoomId_ = 0;
+
+        timeLimit_ = 0;
+
         openRoomList_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
-        isArriveFinish_ = false;
-
-        lifeNum_ = 0;
-
-        startRoomId_ = 0;
+        coinLimit_ = 0;
 
         isForbidSkill_ = false;
 
-        coinLimit_ = 0;
+        isArriveFinish_ = false;
 
-        timeLimit_ = 0;
+        lifeNum_ = 0;
 
         return this;
       }
@@ -617,17 +617,17 @@ public final class CustomDungeonSettingOuterClass {
       public emu.grasscutter.net.proto.CustomDungeonSettingOuterClass.CustomDungeonSetting buildPartial() {
         emu.grasscutter.net.proto.CustomDungeonSettingOuterClass.CustomDungeonSetting result = new emu.grasscutter.net.proto.CustomDungeonSettingOuterClass.CustomDungeonSetting(this);
         int from_bitField0_ = bitField0_;
+        result.startRoomId_ = startRoomId_;
+        result.timeLimit_ = timeLimit_;
         if (((bitField0_ & 0x00000001) != 0)) {
           openRoomList_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000001);
         }
         result.openRoomList_ = openRoomList_;
+        result.coinLimit_ = coinLimit_;
+        result.isForbidSkill_ = isForbidSkill_;
         result.isArriveFinish_ = isArriveFinish_;
         result.lifeNum_ = lifeNum_;
-        result.startRoomId_ = startRoomId_;
-        result.isForbidSkill_ = isForbidSkill_;
-        result.coinLimit_ = coinLimit_;
-        result.timeLimit_ = timeLimit_;
         onBuilt();
         return result;
       }
@@ -676,6 +676,12 @@ public final class CustomDungeonSettingOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.CustomDungeonSettingOuterClass.CustomDungeonSetting other) {
         if (other == emu.grasscutter.net.proto.CustomDungeonSettingOuterClass.CustomDungeonSetting.getDefaultInstance()) return this;
+        if (other.getStartRoomId() != 0) {
+          setStartRoomId(other.getStartRoomId());
+        }
+        if (other.getTimeLimit() != 0) {
+          setTimeLimit(other.getTimeLimit());
+        }
         if (!other.openRoomList_.isEmpty()) {
           if (openRoomList_.isEmpty()) {
             openRoomList_ = other.openRoomList_;
@@ -686,23 +692,17 @@ public final class CustomDungeonSettingOuterClass {
           }
           onChanged();
         }
+        if (other.getCoinLimit() != 0) {
+          setCoinLimit(other.getCoinLimit());
+        }
+        if (other.getIsForbidSkill() != false) {
+          setIsForbidSkill(other.getIsForbidSkill());
+        }
         if (other.getIsArriveFinish() != false) {
           setIsArriveFinish(other.getIsArriveFinish());
         }
         if (other.getLifeNum() != 0) {
           setLifeNum(other.getLifeNum());
-        }
-        if (other.getStartRoomId() != 0) {
-          setStartRoomId(other.getStartRoomId());
-        }
-        if (other.getIsForbidSkill() != false) {
-          setIsForbidSkill(other.getIsForbidSkill());
-        }
-        if (other.getCoinLimit() != 0) {
-          setCoinLimit(other.getCoinLimit());
-        }
-        if (other.getTimeLimit() != 0) {
-          setTimeLimit(other.getTimeLimit());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -734,150 +734,9 @@ public final class CustomDungeonSettingOuterClass {
       }
       private int bitField0_;
 
-      private com.google.protobuf.Internal.IntList openRoomList_ = emptyIntList();
-      private void ensureOpenRoomListIsMutable() {
-        if (!((bitField0_ & 0x00000001) != 0)) {
-          openRoomList_ = mutableCopy(openRoomList_);
-          bitField0_ |= 0x00000001;
-         }
-      }
-      /**
-       * <code>repeated uint32 open_room_list = 1;</code>
-       * @return A list containing the openRoomList.
-       */
-      public java.util.List<java.lang.Integer>
-          getOpenRoomListList() {
-        return ((bitField0_ & 0x00000001) != 0) ?
-                 java.util.Collections.unmodifiableList(openRoomList_) : openRoomList_;
-      }
-      /**
-       * <code>repeated uint32 open_room_list = 1;</code>
-       * @return The count of openRoomList.
-       */
-      public int getOpenRoomListCount() {
-        return openRoomList_.size();
-      }
-      /**
-       * <code>repeated uint32 open_room_list = 1;</code>
-       * @param index The index of the element to return.
-       * @return The openRoomList at the given index.
-       */
-      public int getOpenRoomList(int index) {
-        return openRoomList_.getInt(index);
-      }
-      /**
-       * <code>repeated uint32 open_room_list = 1;</code>
-       * @param index The index to set the value at.
-       * @param value The openRoomList to set.
-       * @return This builder for chaining.
-       */
-      public Builder setOpenRoomList(
-          int index, int value) {
-        ensureOpenRoomListIsMutable();
-        openRoomList_.setInt(index, value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 open_room_list = 1;</code>
-       * @param value The openRoomList to add.
-       * @return This builder for chaining.
-       */
-      public Builder addOpenRoomList(int value) {
-        ensureOpenRoomListIsMutable();
-        openRoomList_.addInt(value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 open_room_list = 1;</code>
-       * @param values The openRoomList to add.
-       * @return This builder for chaining.
-       */
-      public Builder addAllOpenRoomList(
-          java.lang.Iterable<? extends java.lang.Integer> values) {
-        ensureOpenRoomListIsMutable();
-        com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, openRoomList_);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 open_room_list = 1;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearOpenRoomList() {
-        openRoomList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000001);
-        onChanged();
-        return this;
-      }
-
-      private boolean isArriveFinish_ ;
-      /**
-       * <code>bool is_arrive_finish = 14;</code>
-       * @return The isArriveFinish.
-       */
-      @java.lang.Override
-      public boolean getIsArriveFinish() {
-        return isArriveFinish_;
-      }
-      /**
-       * <code>bool is_arrive_finish = 14;</code>
-       * @param value The isArriveFinish to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsArriveFinish(boolean value) {
-        
-        isArriveFinish_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_arrive_finish = 14;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsArriveFinish() {
-        
-        isArriveFinish_ = false;
-        onChanged();
-        return this;
-      }
-
-      private int lifeNum_ ;
-      /**
-       * <code>uint32 life_num = 6;</code>
-       * @return The lifeNum.
-       */
-      @java.lang.Override
-      public int getLifeNum() {
-        return lifeNum_;
-      }
-      /**
-       * <code>uint32 life_num = 6;</code>
-       * @param value The lifeNum to set.
-       * @return This builder for chaining.
-       */
-      public Builder setLifeNum(int value) {
-        
-        lifeNum_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 life_num = 6;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearLifeNum() {
-        
-        lifeNum_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int startRoomId_ ;
       /**
-       * <code>uint32 start_room_id = 4;</code>
+       * <code>uint32 start_room_id = 3;</code>
        * @return The startRoomId.
        */
       @java.lang.Override
@@ -885,7 +744,7 @@ public final class CustomDungeonSettingOuterClass {
         return startRoomId_;
       }
       /**
-       * <code>uint32 start_room_id = 4;</code>
+       * <code>uint32 start_room_id = 3;</code>
        * @param value The startRoomId to set.
        * @return This builder for chaining.
        */
@@ -896,74 +755,12 @@ public final class CustomDungeonSettingOuterClass {
         return this;
       }
       /**
-       * <code>uint32 start_room_id = 4;</code>
+       * <code>uint32 start_room_id = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearStartRoomId() {
         
         startRoomId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private boolean isForbidSkill_ ;
-      /**
-       * <code>bool is_forbid_skill = 3;</code>
-       * @return The isForbidSkill.
-       */
-      @java.lang.Override
-      public boolean getIsForbidSkill() {
-        return isForbidSkill_;
-      }
-      /**
-       * <code>bool is_forbid_skill = 3;</code>
-       * @param value The isForbidSkill to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsForbidSkill(boolean value) {
-        
-        isForbidSkill_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_forbid_skill = 3;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsForbidSkill() {
-        
-        isForbidSkill_ = false;
-        onChanged();
-        return this;
-      }
-
-      private int coinLimit_ ;
-      /**
-       * <code>uint32 coin_limit = 10;</code>
-       * @return The coinLimit.
-       */
-      @java.lang.Override
-      public int getCoinLimit() {
-        return coinLimit_;
-      }
-      /**
-       * <code>uint32 coin_limit = 10;</code>
-       * @param value The coinLimit to set.
-       * @return This builder for chaining.
-       */
-      public Builder setCoinLimit(int value) {
-        
-        coinLimit_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 coin_limit = 10;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearCoinLimit() {
-        
-        coinLimit_ = 0;
         onChanged();
         return this;
       }
@@ -995,6 +792,209 @@ public final class CustomDungeonSettingOuterClass {
       public Builder clearTimeLimit() {
         
         timeLimit_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private com.google.protobuf.Internal.IntList openRoomList_ = emptyIntList();
+      private void ensureOpenRoomListIsMutable() {
+        if (!((bitField0_ & 0x00000001) != 0)) {
+          openRoomList_ = mutableCopy(openRoomList_);
+          bitField0_ |= 0x00000001;
+         }
+      }
+      /**
+       * <code>repeated uint32 open_room_list = 14;</code>
+       * @return A list containing the openRoomList.
+       */
+      public java.util.List<java.lang.Integer>
+          getOpenRoomListList() {
+        return ((bitField0_ & 0x00000001) != 0) ?
+                 java.util.Collections.unmodifiableList(openRoomList_) : openRoomList_;
+      }
+      /**
+       * <code>repeated uint32 open_room_list = 14;</code>
+       * @return The count of openRoomList.
+       */
+      public int getOpenRoomListCount() {
+        return openRoomList_.size();
+      }
+      /**
+       * <code>repeated uint32 open_room_list = 14;</code>
+       * @param index The index of the element to return.
+       * @return The openRoomList at the given index.
+       */
+      public int getOpenRoomList(int index) {
+        return openRoomList_.getInt(index);
+      }
+      /**
+       * <code>repeated uint32 open_room_list = 14;</code>
+       * @param index The index to set the value at.
+       * @param value The openRoomList to set.
+       * @return This builder for chaining.
+       */
+      public Builder setOpenRoomList(
+          int index, int value) {
+        ensureOpenRoomListIsMutable();
+        openRoomList_.setInt(index, value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint32 open_room_list = 14;</code>
+       * @param value The openRoomList to add.
+       * @return This builder for chaining.
+       */
+      public Builder addOpenRoomList(int value) {
+        ensureOpenRoomListIsMutable();
+        openRoomList_.addInt(value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint32 open_room_list = 14;</code>
+       * @param values The openRoomList to add.
+       * @return This builder for chaining.
+       */
+      public Builder addAllOpenRoomList(
+          java.lang.Iterable<? extends java.lang.Integer> values) {
+        ensureOpenRoomListIsMutable();
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, openRoomList_);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint32 open_room_list = 14;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearOpenRoomList() {
+        openRoomList_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000001);
+        onChanged();
+        return this;
+      }
+
+      private int coinLimit_ ;
+      /**
+       * <code>uint32 coin_limit = 5;</code>
+       * @return The coinLimit.
+       */
+      @java.lang.Override
+      public int getCoinLimit() {
+        return coinLimit_;
+      }
+      /**
+       * <code>uint32 coin_limit = 5;</code>
+       * @param value The coinLimit to set.
+       * @return This builder for chaining.
+       */
+      public Builder setCoinLimit(int value) {
+        
+        coinLimit_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 coin_limit = 5;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearCoinLimit() {
+        
+        coinLimit_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private boolean isForbidSkill_ ;
+      /**
+       * <code>bool is_forbid_skill = 7;</code>
+       * @return The isForbidSkill.
+       */
+      @java.lang.Override
+      public boolean getIsForbidSkill() {
+        return isForbidSkill_;
+      }
+      /**
+       * <code>bool is_forbid_skill = 7;</code>
+       * @param value The isForbidSkill to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIsForbidSkill(boolean value) {
+        
+        isForbidSkill_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool is_forbid_skill = 7;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsForbidSkill() {
+        
+        isForbidSkill_ = false;
+        onChanged();
+        return this;
+      }
+
+      private boolean isArriveFinish_ ;
+      /**
+       * <code>bool is_arrive_finish = 6;</code>
+       * @return The isArriveFinish.
+       */
+      @java.lang.Override
+      public boolean getIsArriveFinish() {
+        return isArriveFinish_;
+      }
+      /**
+       * <code>bool is_arrive_finish = 6;</code>
+       * @param value The isArriveFinish to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIsArriveFinish(boolean value) {
+        
+        isArriveFinish_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool is_arrive_finish = 6;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsArriveFinish() {
+        
+        isArriveFinish_ = false;
+        onChanged();
+        return this;
+      }
+
+      private int lifeNum_ ;
+      /**
+       * <code>uint32 life_num = 8;</code>
+       * @return The lifeNum.
+       */
+      @java.lang.Override
+      public int getLifeNum() {
+        return lifeNum_;
+      }
+      /**
+       * <code>uint32 life_num = 8;</code>
+       * @param value The lifeNum to set.
+       * @return This builder for chaining.
+       */
+      public Builder setLifeNum(int value) {
+        
+        lifeNum_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 life_num = 8;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearLifeNum() {
+        
+        lifeNum_ = 0;
         onChanged();
         return this;
       }
@@ -1066,11 +1066,11 @@ public final class CustomDungeonSettingOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\032CustomDungeonSetting.proto\"\262\001\n\024CustomD" +
-      "ungeonSetting\022\026\n\016open_room_list\030\001 \003(\r\022\030\n" +
-      "\020is_arrive_finish\030\016 \001(\010\022\020\n\010life_num\030\006 \001(" +
-      "\r\022\025\n\rstart_room_id\030\004 \001(\r\022\027\n\017is_forbid_sk" +
-      "ill\030\003 \001(\010\022\022\n\ncoin_limit\030\n \001(\r\022\022\n\ntime_li" +
-      "mit\030\t \001(\rB\033\n\031emu.grasscutter.net.protob\006" +
+      "ungeonSetting\022\025\n\rstart_room_id\030\003 \001(\r\022\022\n\n" +
+      "time_limit\030\t \001(\r\022\026\n\016open_room_list\030\016 \003(\r" +
+      "\022\022\n\ncoin_limit\030\005 \001(\r\022\027\n\017is_forbid_skill\030" +
+      "\007 \001(\010\022\030\n\020is_arrive_finish\030\006 \001(\010\022\020\n\010life_" +
+      "num\030\010 \001(\rB\033\n\031emu.grasscutter.net.protob\006" +
       "proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -1082,7 +1082,7 @@ public final class CustomDungeonSettingOuterClass {
     internal_static_CustomDungeonSetting_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_CustomDungeonSetting_descriptor,
-        new java.lang.String[] { "OpenRoomList", "IsArriveFinish", "LifeNum", "StartRoomId", "IsForbidSkill", "CoinLimit", "TimeLimit", });
+        new java.lang.String[] { "StartRoomId", "TimeLimit", "OpenRoomList", "CoinLimit", "IsForbidSkill", "IsArriveFinish", "LifeNum", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

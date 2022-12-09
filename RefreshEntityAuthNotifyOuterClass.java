@@ -19,17 +19,17 @@ public final class RefreshEntityAuthNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated uint32 entity_id_list = 7;</code>
+     * <code>repeated uint32 entity_id_list = 4;</code>
      * @return A list containing the entityIdList.
      */
     java.util.List<java.lang.Integer> getEntityIdListList();
     /**
-     * <code>repeated uint32 entity_id_list = 7;</code>
+     * <code>repeated uint32 entity_id_list = 4;</code>
      * @return The count of entityIdList.
      */
     int getEntityIdListCount();
     /**
-     * <code>repeated uint32 entity_id_list = 7;</code>
+     * <code>repeated uint32 entity_id_list = 4;</code>
      * @param index The index of the element to return.
      * @return The entityIdList at the given index.
      */
@@ -37,10 +37,14 @@ public final class RefreshEntityAuthNotifyOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 3259
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 3099;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code RefreshEntityAuthNotify}
@@ -89,7 +93,7 @@ public final class RefreshEntityAuthNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 56: {
+            case 32: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 entityIdList_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
@@ -97,7 +101,7 @@ public final class RefreshEntityAuthNotifyOuterClass {
               entityIdList_.addInt(input.readUInt32());
               break;
             }
-            case 58: {
+            case 34: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -145,10 +149,10 @@ public final class RefreshEntityAuthNotifyOuterClass {
               emu.grasscutter.net.proto.RefreshEntityAuthNotifyOuterClass.RefreshEntityAuthNotify.class, emu.grasscutter.net.proto.RefreshEntityAuthNotifyOuterClass.RefreshEntityAuthNotify.Builder.class);
     }
 
-    public static final int ENTITY_ID_LIST_FIELD_NUMBER = 7;
+    public static final int ENTITY_ID_LIST_FIELD_NUMBER = 4;
     private com.google.protobuf.Internal.IntList entityIdList_;
     /**
-     * <code>repeated uint32 entity_id_list = 7;</code>
+     * <code>repeated uint32 entity_id_list = 4;</code>
      * @return A list containing the entityIdList.
      */
     @java.lang.Override
@@ -157,14 +161,14 @@ public final class RefreshEntityAuthNotifyOuterClass {
       return entityIdList_;
     }
     /**
-     * <code>repeated uint32 entity_id_list = 7;</code>
+     * <code>repeated uint32 entity_id_list = 4;</code>
      * @return The count of entityIdList.
      */
     public int getEntityIdListCount() {
       return entityIdList_.size();
     }
     /**
-     * <code>repeated uint32 entity_id_list = 7;</code>
+     * <code>repeated uint32 entity_id_list = 4;</code>
      * @param index The index of the element to return.
      * @return The entityIdList at the given index.
      */
@@ -189,7 +193,7 @@ public final class RefreshEntityAuthNotifyOuterClass {
                         throws java.io.IOException {
       getSerializedSize();
       if (getEntityIdListList().size() > 0) {
-        output.writeUInt32NoTag(58);
+        output.writeUInt32NoTag(34);
         output.writeUInt32NoTag(entityIdListMemoizedSerializedSize);
       }
       for (int i = 0; i < entityIdList_.size(); i++) {
@@ -347,10 +351,14 @@ public final class RefreshEntityAuthNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 3259
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 3099;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code RefreshEntityAuthNotify}
@@ -520,7 +528,7 @@ public final class RefreshEntityAuthNotifyOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 entity_id_list = 7;</code>
+       * <code>repeated uint32 entity_id_list = 4;</code>
        * @return A list containing the entityIdList.
        */
       public java.util.List<java.lang.Integer>
@@ -529,14 +537,14 @@ public final class RefreshEntityAuthNotifyOuterClass {
                  java.util.Collections.unmodifiableList(entityIdList_) : entityIdList_;
       }
       /**
-       * <code>repeated uint32 entity_id_list = 7;</code>
+       * <code>repeated uint32 entity_id_list = 4;</code>
        * @return The count of entityIdList.
        */
       public int getEntityIdListCount() {
         return entityIdList_.size();
       }
       /**
-       * <code>repeated uint32 entity_id_list = 7;</code>
+       * <code>repeated uint32 entity_id_list = 4;</code>
        * @param index The index of the element to return.
        * @return The entityIdList at the given index.
        */
@@ -544,7 +552,7 @@ public final class RefreshEntityAuthNotifyOuterClass {
         return entityIdList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 entity_id_list = 7;</code>
+       * <code>repeated uint32 entity_id_list = 4;</code>
        * @param index The index to set the value at.
        * @param value The entityIdList to set.
        * @return This builder for chaining.
@@ -557,7 +565,7 @@ public final class RefreshEntityAuthNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 entity_id_list = 7;</code>
+       * <code>repeated uint32 entity_id_list = 4;</code>
        * @param value The entityIdList to add.
        * @return This builder for chaining.
        */
@@ -568,7 +576,7 @@ public final class RefreshEntityAuthNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 entity_id_list = 7;</code>
+       * <code>repeated uint32 entity_id_list = 4;</code>
        * @param values The entityIdList to add.
        * @return This builder for chaining.
        */
@@ -581,7 +589,7 @@ public final class RefreshEntityAuthNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 entity_id_list = 7;</code>
+       * <code>repeated uint32 entity_id_list = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearEntityIdList() {
@@ -658,7 +666,7 @@ public final class RefreshEntityAuthNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\035RefreshEntityAuthNotify.proto\"1\n\027Refre" +
-      "shEntityAuthNotify\022\026\n\016entity_id_list\030\007 \003" +
+      "shEntityAuthNotify\022\026\n\016entity_id_list\030\004 \003" +
       "(\rB\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

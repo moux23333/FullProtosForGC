@@ -19,16 +19,20 @@ public final class GCGDSCardBackUnlockNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 card_back_id = 6;</code>
+     * <code>uint32 card_back_id = 13;</code>
      * @return The cardBackId.
      */
     int getCardBackId();
   }
   /**
    * <pre>
-   * CmdId: 7265
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 7078;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code GCGDSCardBackUnlockNotify}
@@ -75,7 +79,7 @@ public final class GCGDSCardBackUnlockNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 48: {
+            case 104: {
 
               cardBackId_ = input.readUInt32();
               break;
@@ -112,10 +116,10 @@ public final class GCGDSCardBackUnlockNotifyOuterClass {
               emu.grasscutter.net.proto.GCGDSCardBackUnlockNotifyOuterClass.GCGDSCardBackUnlockNotify.class, emu.grasscutter.net.proto.GCGDSCardBackUnlockNotifyOuterClass.GCGDSCardBackUnlockNotify.Builder.class);
     }
 
-    public static final int CARD_BACK_ID_FIELD_NUMBER = 6;
+    public static final int CARD_BACK_ID_FIELD_NUMBER = 13;
     private int cardBackId_;
     /**
-     * <code>uint32 card_back_id = 6;</code>
+     * <code>uint32 card_back_id = 13;</code>
      * @return The cardBackId.
      */
     @java.lang.Override
@@ -138,7 +142,7 @@ public final class GCGDSCardBackUnlockNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (cardBackId_ != 0) {
-        output.writeUInt32(6, cardBackId_);
+        output.writeUInt32(13, cardBackId_);
       }
       unknownFields.writeTo(output);
     }
@@ -151,7 +155,7 @@ public final class GCGDSCardBackUnlockNotifyOuterClass {
       size = 0;
       if (cardBackId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, cardBackId_);
+          .computeUInt32Size(13, cardBackId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -280,9 +284,13 @@ public final class GCGDSCardBackUnlockNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 7265
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 7078;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code GCGDSCardBackUnlockNotify}
@@ -433,7 +441,7 @@ public final class GCGDSCardBackUnlockNotifyOuterClass {
 
       private int cardBackId_ ;
       /**
-       * <code>uint32 card_back_id = 6;</code>
+       * <code>uint32 card_back_id = 13;</code>
        * @return The cardBackId.
        */
       @java.lang.Override
@@ -441,7 +449,7 @@ public final class GCGDSCardBackUnlockNotifyOuterClass {
         return cardBackId_;
       }
       /**
-       * <code>uint32 card_back_id = 6;</code>
+       * <code>uint32 card_back_id = 13;</code>
        * @param value The cardBackId to set.
        * @return This builder for chaining.
        */
@@ -452,7 +460,7 @@ public final class GCGDSCardBackUnlockNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 card_back_id = 6;</code>
+       * <code>uint32 card_back_id = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearCardBackId() {
@@ -529,7 +537,7 @@ public final class GCGDSCardBackUnlockNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\037GCGDSCardBackUnlockNotify.proto\"1\n\031GCG" +
-      "DSCardBackUnlockNotify\022\024\n\014card_back_id\030\006" +
+      "DSCardBackUnlockNotify\022\024\n\014card_back_id\030\r" +
       " \001(\rB\033\n\031emu.grasscutter.net.protob\006proto" +
       "3"
     };

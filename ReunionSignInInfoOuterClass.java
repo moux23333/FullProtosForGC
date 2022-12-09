@@ -19,39 +19,39 @@ public final class ReunionSignInInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 sign_in_count = 6;</code>
-     * @return The signInCount.
+     * <code>uint32 Unk3300_MNJELIDKMCF = 3;</code>
+     * @return The unk3300MNJELIDKMCF.
      */
-    int getSignInCount();
+    int getUnk3300MNJELIDKMCF();
 
     /**
-     * <code>repeated uint32 reward_day_list = 8;</code>
+     * <code>repeated uint32 reward_day_list = 12;</code>
      * @return A list containing the rewardDayList.
      */
     java.util.List<java.lang.Integer> getRewardDayListList();
     /**
-     * <code>repeated uint32 reward_day_list = 8;</code>
+     * <code>repeated uint32 reward_day_list = 12;</code>
      * @return The count of rewardDayList.
      */
     int getRewardDayListCount();
     /**
-     * <code>repeated uint32 reward_day_list = 8;</code>
+     * <code>repeated uint32 reward_day_list = 12;</code>
      * @param index The index of the element to return.
      * @return The rewardDayList at the given index.
      */
     int getRewardDayList(int index);
 
     /**
-     * <code>uint32 config_id = 12;</code>
+     * <code>uint32 config_id = 8;</code>
      * @return The configId.
      */
     int getConfigId();
 
     /**
-     * <code>uint32 last_sign_in_time = 11;</code>
-     * @return The lastSignInTime.
+     * <code>uint32 Unk3300_NFNOKBNBLGE = 10;</code>
+     * @return The unk3300NFNOKBNBLGE.
      */
-    int getLastSignInTime();
+    int getUnk3300NFNOKBNBLGE();
   }
   /**
    * Protobuf type {@code ReunionSignInInfo}
@@ -100,12 +100,22 @@ public final class ReunionSignInInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 48: {
+            case 24: {
 
-              signInCount_ = input.readUInt32();
+              unk3300MNJELIDKMCF_ = input.readUInt32();
               break;
             }
             case 64: {
+
+              configId_ = input.readUInt32();
+              break;
+            }
+            case 80: {
+
+              unk3300NFNOKBNBLGE_ = input.readUInt32();
+              break;
+            }
+            case 96: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 rewardDayList_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
@@ -113,7 +123,7 @@ public final class ReunionSignInInfoOuterClass {
               rewardDayList_.addInt(input.readUInt32());
               break;
             }
-            case 66: {
+            case 98: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -124,16 +134,6 @@ public final class ReunionSignInInfoOuterClass {
                 rewardDayList_.addInt(input.readUInt32());
               }
               input.popLimit(limit);
-              break;
-            }
-            case 88: {
-
-              lastSignInTime_ = input.readUInt32();
-              break;
-            }
-            case 96: {
-
-              configId_ = input.readUInt32();
               break;
             }
             default: {
@@ -171,21 +171,21 @@ public final class ReunionSignInInfoOuterClass {
               emu.grasscutter.net.proto.ReunionSignInInfoOuterClass.ReunionSignInInfo.class, emu.grasscutter.net.proto.ReunionSignInInfoOuterClass.ReunionSignInInfo.Builder.class);
     }
 
-    public static final int SIGN_IN_COUNT_FIELD_NUMBER = 6;
-    private int signInCount_;
+    public static final int UNK3300_MNJELIDKMCF_FIELD_NUMBER = 3;
+    private int unk3300MNJELIDKMCF_;
     /**
-     * <code>uint32 sign_in_count = 6;</code>
-     * @return The signInCount.
+     * <code>uint32 Unk3300_MNJELIDKMCF = 3;</code>
+     * @return The unk3300MNJELIDKMCF.
      */
     @java.lang.Override
-    public int getSignInCount() {
-      return signInCount_;
+    public int getUnk3300MNJELIDKMCF() {
+      return unk3300MNJELIDKMCF_;
     }
 
-    public static final int REWARD_DAY_LIST_FIELD_NUMBER = 8;
+    public static final int REWARD_DAY_LIST_FIELD_NUMBER = 12;
     private com.google.protobuf.Internal.IntList rewardDayList_;
     /**
-     * <code>repeated uint32 reward_day_list = 8;</code>
+     * <code>repeated uint32 reward_day_list = 12;</code>
      * @return A list containing the rewardDayList.
      */
     @java.lang.Override
@@ -194,14 +194,14 @@ public final class ReunionSignInInfoOuterClass {
       return rewardDayList_;
     }
     /**
-     * <code>repeated uint32 reward_day_list = 8;</code>
+     * <code>repeated uint32 reward_day_list = 12;</code>
      * @return The count of rewardDayList.
      */
     public int getRewardDayListCount() {
       return rewardDayList_.size();
     }
     /**
-     * <code>repeated uint32 reward_day_list = 8;</code>
+     * <code>repeated uint32 reward_day_list = 12;</code>
      * @param index The index of the element to return.
      * @return The rewardDayList at the given index.
      */
@@ -210,10 +210,10 @@ public final class ReunionSignInInfoOuterClass {
     }
     private int rewardDayListMemoizedSerializedSize = -1;
 
-    public static final int CONFIG_ID_FIELD_NUMBER = 12;
+    public static final int CONFIG_ID_FIELD_NUMBER = 8;
     private int configId_;
     /**
-     * <code>uint32 config_id = 12;</code>
+     * <code>uint32 config_id = 8;</code>
      * @return The configId.
      */
     @java.lang.Override
@@ -221,15 +221,15 @@ public final class ReunionSignInInfoOuterClass {
       return configId_;
     }
 
-    public static final int LAST_SIGN_IN_TIME_FIELD_NUMBER = 11;
-    private int lastSignInTime_;
+    public static final int UNK3300_NFNOKBNBLGE_FIELD_NUMBER = 10;
+    private int unk3300NFNOKBNBLGE_;
     /**
-     * <code>uint32 last_sign_in_time = 11;</code>
-     * @return The lastSignInTime.
+     * <code>uint32 Unk3300_NFNOKBNBLGE = 10;</code>
+     * @return The unk3300NFNOKBNBLGE.
      */
     @java.lang.Override
-    public int getLastSignInTime() {
-      return lastSignInTime_;
+    public int getUnk3300NFNOKBNBLGE() {
+      return unk3300NFNOKBNBLGE_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -247,21 +247,21 @@ public final class ReunionSignInInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      if (signInCount_ != 0) {
-        output.writeUInt32(6, signInCount_);
+      if (unk3300MNJELIDKMCF_ != 0) {
+        output.writeUInt32(3, unk3300MNJELIDKMCF_);
+      }
+      if (configId_ != 0) {
+        output.writeUInt32(8, configId_);
+      }
+      if (unk3300NFNOKBNBLGE_ != 0) {
+        output.writeUInt32(10, unk3300NFNOKBNBLGE_);
       }
       if (getRewardDayListList().size() > 0) {
-        output.writeUInt32NoTag(66);
+        output.writeUInt32NoTag(98);
         output.writeUInt32NoTag(rewardDayListMemoizedSerializedSize);
       }
       for (int i = 0; i < rewardDayList_.size(); i++) {
         output.writeUInt32NoTag(rewardDayList_.getInt(i));
-      }
-      if (lastSignInTime_ != 0) {
-        output.writeUInt32(11, lastSignInTime_);
-      }
-      if (configId_ != 0) {
-        output.writeUInt32(12, configId_);
       }
       unknownFields.writeTo(output);
     }
@@ -272,9 +272,17 @@ public final class ReunionSignInInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (signInCount_ != 0) {
+      if (unk3300MNJELIDKMCF_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, signInCount_);
+          .computeUInt32Size(3, unk3300MNJELIDKMCF_);
+      }
+      if (configId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(8, configId_);
+      }
+      if (unk3300NFNOKBNBLGE_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(10, unk3300NFNOKBNBLGE_);
       }
       {
         int dataSize = 0;
@@ -289,14 +297,6 @@ public final class ReunionSignInInfoOuterClass {
               .computeInt32SizeNoTag(dataSize);
         }
         rewardDayListMemoizedSerializedSize = dataSize;
-      }
-      if (lastSignInTime_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, lastSignInTime_);
-      }
-      if (configId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, configId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -313,14 +313,14 @@ public final class ReunionSignInInfoOuterClass {
       }
       emu.grasscutter.net.proto.ReunionSignInInfoOuterClass.ReunionSignInInfo other = (emu.grasscutter.net.proto.ReunionSignInInfoOuterClass.ReunionSignInInfo) obj;
 
-      if (getSignInCount()
-          != other.getSignInCount()) return false;
+      if (getUnk3300MNJELIDKMCF()
+          != other.getUnk3300MNJELIDKMCF()) return false;
       if (!getRewardDayListList()
           .equals(other.getRewardDayListList())) return false;
       if (getConfigId()
           != other.getConfigId()) return false;
-      if (getLastSignInTime()
-          != other.getLastSignInTime()) return false;
+      if (getUnk3300NFNOKBNBLGE()
+          != other.getUnk3300NFNOKBNBLGE()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -332,16 +332,16 @@ public final class ReunionSignInInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + SIGN_IN_COUNT_FIELD_NUMBER;
-      hash = (53 * hash) + getSignInCount();
+      hash = (37 * hash) + UNK3300_MNJELIDKMCF_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300MNJELIDKMCF();
       if (getRewardDayListCount() > 0) {
         hash = (37 * hash) + REWARD_DAY_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getRewardDayListList().hashCode();
       }
       hash = (37 * hash) + CONFIG_ID_FIELD_NUMBER;
       hash = (53 * hash) + getConfigId();
-      hash = (37 * hash) + LAST_SIGN_IN_TIME_FIELD_NUMBER;
-      hash = (53 * hash) + getLastSignInTime();
+      hash = (37 * hash) + UNK3300_NFNOKBNBLGE_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300NFNOKBNBLGE();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -475,13 +475,13 @@ public final class ReunionSignInInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        signInCount_ = 0;
+        unk3300MNJELIDKMCF_ = 0;
 
         rewardDayList_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
         configId_ = 0;
 
-        lastSignInTime_ = 0;
+        unk3300NFNOKBNBLGE_ = 0;
 
         return this;
       }
@@ -510,14 +510,14 @@ public final class ReunionSignInInfoOuterClass {
       public emu.grasscutter.net.proto.ReunionSignInInfoOuterClass.ReunionSignInInfo buildPartial() {
         emu.grasscutter.net.proto.ReunionSignInInfoOuterClass.ReunionSignInInfo result = new emu.grasscutter.net.proto.ReunionSignInInfoOuterClass.ReunionSignInInfo(this);
         int from_bitField0_ = bitField0_;
-        result.signInCount_ = signInCount_;
+        result.unk3300MNJELIDKMCF_ = unk3300MNJELIDKMCF_;
         if (((bitField0_ & 0x00000001) != 0)) {
           rewardDayList_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000001);
         }
         result.rewardDayList_ = rewardDayList_;
         result.configId_ = configId_;
-        result.lastSignInTime_ = lastSignInTime_;
+        result.unk3300NFNOKBNBLGE_ = unk3300NFNOKBNBLGE_;
         onBuilt();
         return result;
       }
@@ -566,8 +566,8 @@ public final class ReunionSignInInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.ReunionSignInInfoOuterClass.ReunionSignInInfo other) {
         if (other == emu.grasscutter.net.proto.ReunionSignInInfoOuterClass.ReunionSignInInfo.getDefaultInstance()) return this;
-        if (other.getSignInCount() != 0) {
-          setSignInCount(other.getSignInCount());
+        if (other.getUnk3300MNJELIDKMCF() != 0) {
+          setUnk3300MNJELIDKMCF(other.getUnk3300MNJELIDKMCF());
         }
         if (!other.rewardDayList_.isEmpty()) {
           if (rewardDayList_.isEmpty()) {
@@ -582,8 +582,8 @@ public final class ReunionSignInInfoOuterClass {
         if (other.getConfigId() != 0) {
           setConfigId(other.getConfigId());
         }
-        if (other.getLastSignInTime() != 0) {
-          setLastSignInTime(other.getLastSignInTime());
+        if (other.getUnk3300NFNOKBNBLGE() != 0) {
+          setUnk3300NFNOKBNBLGE(other.getUnk3300NFNOKBNBLGE());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -615,33 +615,33 @@ public final class ReunionSignInInfoOuterClass {
       }
       private int bitField0_;
 
-      private int signInCount_ ;
+      private int unk3300MNJELIDKMCF_ ;
       /**
-       * <code>uint32 sign_in_count = 6;</code>
-       * @return The signInCount.
+       * <code>uint32 Unk3300_MNJELIDKMCF = 3;</code>
+       * @return The unk3300MNJELIDKMCF.
        */
       @java.lang.Override
-      public int getSignInCount() {
-        return signInCount_;
+      public int getUnk3300MNJELIDKMCF() {
+        return unk3300MNJELIDKMCF_;
       }
       /**
-       * <code>uint32 sign_in_count = 6;</code>
-       * @param value The signInCount to set.
+       * <code>uint32 Unk3300_MNJELIDKMCF = 3;</code>
+       * @param value The unk3300MNJELIDKMCF to set.
        * @return This builder for chaining.
        */
-      public Builder setSignInCount(int value) {
+      public Builder setUnk3300MNJELIDKMCF(int value) {
         
-        signInCount_ = value;
+        unk3300MNJELIDKMCF_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 sign_in_count = 6;</code>
+       * <code>uint32 Unk3300_MNJELIDKMCF = 3;</code>
        * @return This builder for chaining.
        */
-      public Builder clearSignInCount() {
+      public Builder clearUnk3300MNJELIDKMCF() {
         
-        signInCount_ = 0;
+        unk3300MNJELIDKMCF_ = 0;
         onChanged();
         return this;
       }
@@ -654,7 +654,7 @@ public final class ReunionSignInInfoOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 reward_day_list = 8;</code>
+       * <code>repeated uint32 reward_day_list = 12;</code>
        * @return A list containing the rewardDayList.
        */
       public java.util.List<java.lang.Integer>
@@ -663,14 +663,14 @@ public final class ReunionSignInInfoOuterClass {
                  java.util.Collections.unmodifiableList(rewardDayList_) : rewardDayList_;
       }
       /**
-       * <code>repeated uint32 reward_day_list = 8;</code>
+       * <code>repeated uint32 reward_day_list = 12;</code>
        * @return The count of rewardDayList.
        */
       public int getRewardDayListCount() {
         return rewardDayList_.size();
       }
       /**
-       * <code>repeated uint32 reward_day_list = 8;</code>
+       * <code>repeated uint32 reward_day_list = 12;</code>
        * @param index The index of the element to return.
        * @return The rewardDayList at the given index.
        */
@@ -678,7 +678,7 @@ public final class ReunionSignInInfoOuterClass {
         return rewardDayList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 reward_day_list = 8;</code>
+       * <code>repeated uint32 reward_day_list = 12;</code>
        * @param index The index to set the value at.
        * @param value The rewardDayList to set.
        * @return This builder for chaining.
@@ -691,7 +691,7 @@ public final class ReunionSignInInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 reward_day_list = 8;</code>
+       * <code>repeated uint32 reward_day_list = 12;</code>
        * @param value The rewardDayList to add.
        * @return This builder for chaining.
        */
@@ -702,7 +702,7 @@ public final class ReunionSignInInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 reward_day_list = 8;</code>
+       * <code>repeated uint32 reward_day_list = 12;</code>
        * @param values The rewardDayList to add.
        * @return This builder for chaining.
        */
@@ -715,7 +715,7 @@ public final class ReunionSignInInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 reward_day_list = 8;</code>
+       * <code>repeated uint32 reward_day_list = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearRewardDayList() {
@@ -727,7 +727,7 @@ public final class ReunionSignInInfoOuterClass {
 
       private int configId_ ;
       /**
-       * <code>uint32 config_id = 12;</code>
+       * <code>uint32 config_id = 8;</code>
        * @return The configId.
        */
       @java.lang.Override
@@ -735,7 +735,7 @@ public final class ReunionSignInInfoOuterClass {
         return configId_;
       }
       /**
-       * <code>uint32 config_id = 12;</code>
+       * <code>uint32 config_id = 8;</code>
        * @param value The configId to set.
        * @return This builder for chaining.
        */
@@ -746,7 +746,7 @@ public final class ReunionSignInInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 config_id = 12;</code>
+       * <code>uint32 config_id = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearConfigId() {
@@ -756,33 +756,33 @@ public final class ReunionSignInInfoOuterClass {
         return this;
       }
 
-      private int lastSignInTime_ ;
+      private int unk3300NFNOKBNBLGE_ ;
       /**
-       * <code>uint32 last_sign_in_time = 11;</code>
-       * @return The lastSignInTime.
+       * <code>uint32 Unk3300_NFNOKBNBLGE = 10;</code>
+       * @return The unk3300NFNOKBNBLGE.
        */
       @java.lang.Override
-      public int getLastSignInTime() {
-        return lastSignInTime_;
+      public int getUnk3300NFNOKBNBLGE() {
+        return unk3300NFNOKBNBLGE_;
       }
       /**
-       * <code>uint32 last_sign_in_time = 11;</code>
-       * @param value The lastSignInTime to set.
+       * <code>uint32 Unk3300_NFNOKBNBLGE = 10;</code>
+       * @param value The unk3300NFNOKBNBLGE to set.
        * @return This builder for chaining.
        */
-      public Builder setLastSignInTime(int value) {
+      public Builder setUnk3300NFNOKBNBLGE(int value) {
         
-        lastSignInTime_ = value;
+        unk3300NFNOKBNBLGE_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 last_sign_in_time = 11;</code>
+       * <code>uint32 Unk3300_NFNOKBNBLGE = 10;</code>
        * @return This builder for chaining.
        */
-      public Builder clearLastSignInTime() {
+      public Builder clearUnk3300NFNOKBNBLGE() {
         
-        lastSignInTime_ = 0;
+        unk3300NFNOKBNBLGE_ = 0;
         onChanged();
         return this;
       }
@@ -853,11 +853,11 @@ public final class ReunionSignInInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\027ReunionSignInInfo.proto\"q\n\021ReunionSign" +
-      "InInfo\022\025\n\rsign_in_count\030\006 \001(\r\022\027\n\017reward_" +
-      "day_list\030\010 \003(\r\022\021\n\tconfig_id\030\014 \001(\r\022\031\n\021las" +
-      "t_sign_in_time\030\013 \001(\rB\033\n\031emu.grasscutter." +
-      "net.protob\006proto3"
+      "\n\027ReunionSignInInfo.proto\"y\n\021ReunionSign" +
+      "InInfo\022\033\n\023Unk3300_MNJELIDKMCF\030\003 \001(\r\022\027\n\017r" +
+      "eward_day_list\030\014 \003(\r\022\021\n\tconfig_id\030\010 \001(\r\022" +
+      "\033\n\023Unk3300_NFNOKBNBLGE\030\n \001(\rB\033\n\031emu.gras" +
+      "scutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -868,7 +868,7 @@ public final class ReunionSignInInfoOuterClass {
     internal_static_ReunionSignInInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ReunionSignInInfo_descriptor,
-        new java.lang.String[] { "SignInCount", "RewardDayList", "ConfigId", "LastSignInTime", });
+        new java.lang.String[] { "Unk3300MNJELIDKMCF", "RewardDayList", "ConfigId", "Unk3300NFNOKBNBLGE", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

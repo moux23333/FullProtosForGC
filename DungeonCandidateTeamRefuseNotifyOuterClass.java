@@ -19,16 +19,20 @@ public final class DungeonCandidateTeamRefuseNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 player_uid = 3;</code>
+     * <code>uint32 player_uid = 8;</code>
      * @return The playerUid.
      */
     int getPlayerUid();
   }
   /**
    * <pre>
-   * CmdId: 988
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 994;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code DungeonCandidateTeamRefuseNotify}
@@ -75,7 +79,7 @@ public final class DungeonCandidateTeamRefuseNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 24: {
+            case 64: {
 
               playerUid_ = input.readUInt32();
               break;
@@ -112,10 +116,10 @@ public final class DungeonCandidateTeamRefuseNotifyOuterClass {
               emu.grasscutter.net.proto.DungeonCandidateTeamRefuseNotifyOuterClass.DungeonCandidateTeamRefuseNotify.class, emu.grasscutter.net.proto.DungeonCandidateTeamRefuseNotifyOuterClass.DungeonCandidateTeamRefuseNotify.Builder.class);
     }
 
-    public static final int PLAYER_UID_FIELD_NUMBER = 3;
+    public static final int PLAYER_UID_FIELD_NUMBER = 8;
     private int playerUid_;
     /**
-     * <code>uint32 player_uid = 3;</code>
+     * <code>uint32 player_uid = 8;</code>
      * @return The playerUid.
      */
     @java.lang.Override
@@ -138,7 +142,7 @@ public final class DungeonCandidateTeamRefuseNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (playerUid_ != 0) {
-        output.writeUInt32(3, playerUid_);
+        output.writeUInt32(8, playerUid_);
       }
       unknownFields.writeTo(output);
     }
@@ -151,7 +155,7 @@ public final class DungeonCandidateTeamRefuseNotifyOuterClass {
       size = 0;
       if (playerUid_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, playerUid_);
+          .computeUInt32Size(8, playerUid_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -280,9 +284,13 @@ public final class DungeonCandidateTeamRefuseNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 988
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 994;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code DungeonCandidateTeamRefuseNotify}
@@ -433,7 +441,7 @@ public final class DungeonCandidateTeamRefuseNotifyOuterClass {
 
       private int playerUid_ ;
       /**
-       * <code>uint32 player_uid = 3;</code>
+       * <code>uint32 player_uid = 8;</code>
        * @return The playerUid.
        */
       @java.lang.Override
@@ -441,7 +449,7 @@ public final class DungeonCandidateTeamRefuseNotifyOuterClass {
         return playerUid_;
       }
       /**
-       * <code>uint32 player_uid = 3;</code>
+       * <code>uint32 player_uid = 8;</code>
        * @param value The playerUid to set.
        * @return This builder for chaining.
        */
@@ -452,7 +460,7 @@ public final class DungeonCandidateTeamRefuseNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 player_uid = 3;</code>
+       * <code>uint32 player_uid = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearPlayerUid() {
@@ -530,7 +538,7 @@ public final class DungeonCandidateTeamRefuseNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n&DungeonCandidateTeamRefuseNotify.proto" +
       "\"6\n DungeonCandidateTeamRefuseNotify\022\022\n\n" +
-      "player_uid\030\003 \001(\rB\033\n\031emu.grasscutter.net." +
+      "player_uid\030\010 \001(\rB\033\n\031emu.grasscutter.net." +
       "protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

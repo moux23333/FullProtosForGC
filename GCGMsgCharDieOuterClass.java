@@ -19,13 +19,13 @@ public final class GCGMsgCharDieOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 controller_id = 5;</code>
+     * <code>uint32 controller_id = 13;</code>
      * @return The controllerId.
      */
     int getControllerId();
 
     /**
-     * <code>uint32 card_guid = 11;</code>
+     * <code>uint32 card_guid = 7;</code>
      * @return The cardGuid.
      */
     int getCardGuid();
@@ -75,14 +75,14 @@ public final class GCGMsgCharDieOuterClass {
             case 0:
               done = true;
               break;
-            case 40: {
-
-              controllerId_ = input.readUInt32();
-              break;
-            }
-            case 88: {
+            case 56: {
 
               cardGuid_ = input.readUInt32();
+              break;
+            }
+            case 104: {
+
+              controllerId_ = input.readUInt32();
               break;
             }
             default: {
@@ -117,10 +117,10 @@ public final class GCGMsgCharDieOuterClass {
               emu.grasscutter.net.proto.GCGMsgCharDieOuterClass.GCGMsgCharDie.class, emu.grasscutter.net.proto.GCGMsgCharDieOuterClass.GCGMsgCharDie.Builder.class);
     }
 
-    public static final int CONTROLLER_ID_FIELD_NUMBER = 5;
+    public static final int CONTROLLER_ID_FIELD_NUMBER = 13;
     private int controllerId_;
     /**
-     * <code>uint32 controller_id = 5;</code>
+     * <code>uint32 controller_id = 13;</code>
      * @return The controllerId.
      */
     @java.lang.Override
@@ -128,10 +128,10 @@ public final class GCGMsgCharDieOuterClass {
       return controllerId_;
     }
 
-    public static final int CARD_GUID_FIELD_NUMBER = 11;
+    public static final int CARD_GUID_FIELD_NUMBER = 7;
     private int cardGuid_;
     /**
-     * <code>uint32 card_guid = 11;</code>
+     * <code>uint32 card_guid = 7;</code>
      * @return The cardGuid.
      */
     @java.lang.Override
@@ -153,11 +153,11 @@ public final class GCGMsgCharDieOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (controllerId_ != 0) {
-        output.writeUInt32(5, controllerId_);
-      }
       if (cardGuid_ != 0) {
-        output.writeUInt32(11, cardGuid_);
+        output.writeUInt32(7, cardGuid_);
+      }
+      if (controllerId_ != 0) {
+        output.writeUInt32(13, controllerId_);
       }
       unknownFields.writeTo(output);
     }
@@ -168,13 +168,13 @@ public final class GCGMsgCharDieOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (controllerId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, controllerId_);
-      }
       if (cardGuid_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, cardGuid_);
+          .computeUInt32Size(7, cardGuid_);
+      }
+      if (controllerId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(13, controllerId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -460,7 +460,7 @@ public final class GCGMsgCharDieOuterClass {
 
       private int controllerId_ ;
       /**
-       * <code>uint32 controller_id = 5;</code>
+       * <code>uint32 controller_id = 13;</code>
        * @return The controllerId.
        */
       @java.lang.Override
@@ -468,7 +468,7 @@ public final class GCGMsgCharDieOuterClass {
         return controllerId_;
       }
       /**
-       * <code>uint32 controller_id = 5;</code>
+       * <code>uint32 controller_id = 13;</code>
        * @param value The controllerId to set.
        * @return This builder for chaining.
        */
@@ -479,7 +479,7 @@ public final class GCGMsgCharDieOuterClass {
         return this;
       }
       /**
-       * <code>uint32 controller_id = 5;</code>
+       * <code>uint32 controller_id = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearControllerId() {
@@ -491,7 +491,7 @@ public final class GCGMsgCharDieOuterClass {
 
       private int cardGuid_ ;
       /**
-       * <code>uint32 card_guid = 11;</code>
+       * <code>uint32 card_guid = 7;</code>
        * @return The cardGuid.
        */
       @java.lang.Override
@@ -499,7 +499,7 @@ public final class GCGMsgCharDieOuterClass {
         return cardGuid_;
       }
       /**
-       * <code>uint32 card_guid = 11;</code>
+       * <code>uint32 card_guid = 7;</code>
        * @param value The cardGuid to set.
        * @return This builder for chaining.
        */
@@ -510,7 +510,7 @@ public final class GCGMsgCharDieOuterClass {
         return this;
       }
       /**
-       * <code>uint32 card_guid = 11;</code>
+       * <code>uint32 card_guid = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearCardGuid() {
@@ -587,7 +587,7 @@ public final class GCGMsgCharDieOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\023GCGMsgCharDie.proto\"9\n\rGCGMsgCharDie\022\025" +
-      "\n\rcontroller_id\030\005 \001(\r\022\021\n\tcard_guid\030\013 \001(\r" +
+      "\n\rcontroller_id\030\r \001(\r\022\021\n\tcard_guid\030\007 \001(\r" +
       "B\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

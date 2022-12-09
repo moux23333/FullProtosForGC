@@ -19,23 +19,27 @@ public final class TakeOfferingLevelRewardReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 level = 6;</code>
+     * <code>uint32 level = 14;</code>
      * @return The level.
      */
     int getLevel();
 
     /**
-     * <code>uint32 offering_id = 11;</code>
+     * <code>uint32 offering_id = 12;</code>
      * @return The offeringId.
      */
     int getOfferingId();
   }
   /**
    * <pre>
-   * CmdId: 2919
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 2901;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code TakeOfferingLevelRewardReq}
@@ -82,14 +86,14 @@ public final class TakeOfferingLevelRewardReqOuterClass {
             case 0:
               done = true;
               break;
-            case 48: {
-
-              level_ = input.readUInt32();
-              break;
-            }
-            case 88: {
+            case 96: {
 
               offeringId_ = input.readUInt32();
+              break;
+            }
+            case 112: {
+
+              level_ = input.readUInt32();
               break;
             }
             default: {
@@ -124,10 +128,10 @@ public final class TakeOfferingLevelRewardReqOuterClass {
               emu.grasscutter.net.proto.TakeOfferingLevelRewardReqOuterClass.TakeOfferingLevelRewardReq.class, emu.grasscutter.net.proto.TakeOfferingLevelRewardReqOuterClass.TakeOfferingLevelRewardReq.Builder.class);
     }
 
-    public static final int LEVEL_FIELD_NUMBER = 6;
+    public static final int LEVEL_FIELD_NUMBER = 14;
     private int level_;
     /**
-     * <code>uint32 level = 6;</code>
+     * <code>uint32 level = 14;</code>
      * @return The level.
      */
     @java.lang.Override
@@ -135,10 +139,10 @@ public final class TakeOfferingLevelRewardReqOuterClass {
       return level_;
     }
 
-    public static final int OFFERING_ID_FIELD_NUMBER = 11;
+    public static final int OFFERING_ID_FIELD_NUMBER = 12;
     private int offeringId_;
     /**
-     * <code>uint32 offering_id = 11;</code>
+     * <code>uint32 offering_id = 12;</code>
      * @return The offeringId.
      */
     @java.lang.Override
@@ -160,11 +164,11 @@ public final class TakeOfferingLevelRewardReqOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (level_ != 0) {
-        output.writeUInt32(6, level_);
-      }
       if (offeringId_ != 0) {
-        output.writeUInt32(11, offeringId_);
+        output.writeUInt32(12, offeringId_);
+      }
+      if (level_ != 0) {
+        output.writeUInt32(14, level_);
       }
       unknownFields.writeTo(output);
     }
@@ -175,13 +179,13 @@ public final class TakeOfferingLevelRewardReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (level_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, level_);
-      }
       if (offeringId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, offeringId_);
+          .computeUInt32Size(12, offeringId_);
+      }
+      if (level_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(14, level_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -314,10 +318,14 @@ public final class TakeOfferingLevelRewardReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 2919
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 2901;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code TakeOfferingLevelRewardReq}
@@ -474,7 +482,7 @@ public final class TakeOfferingLevelRewardReqOuterClass {
 
       private int level_ ;
       /**
-       * <code>uint32 level = 6;</code>
+       * <code>uint32 level = 14;</code>
        * @return The level.
        */
       @java.lang.Override
@@ -482,7 +490,7 @@ public final class TakeOfferingLevelRewardReqOuterClass {
         return level_;
       }
       /**
-       * <code>uint32 level = 6;</code>
+       * <code>uint32 level = 14;</code>
        * @param value The level to set.
        * @return This builder for chaining.
        */
@@ -493,7 +501,7 @@ public final class TakeOfferingLevelRewardReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 level = 6;</code>
+       * <code>uint32 level = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearLevel() {
@@ -505,7 +513,7 @@ public final class TakeOfferingLevelRewardReqOuterClass {
 
       private int offeringId_ ;
       /**
-       * <code>uint32 offering_id = 11;</code>
+       * <code>uint32 offering_id = 12;</code>
        * @return The offeringId.
        */
       @java.lang.Override
@@ -513,7 +521,7 @@ public final class TakeOfferingLevelRewardReqOuterClass {
         return offeringId_;
       }
       /**
-       * <code>uint32 offering_id = 11;</code>
+       * <code>uint32 offering_id = 12;</code>
        * @param value The offeringId to set.
        * @return This builder for chaining.
        */
@@ -524,7 +532,7 @@ public final class TakeOfferingLevelRewardReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 offering_id = 11;</code>
+       * <code>uint32 offering_id = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearOfferingId() {
@@ -601,8 +609,8 @@ public final class TakeOfferingLevelRewardReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n TakeOfferingLevelRewardReq.proto\"@\n\032Ta" +
-      "keOfferingLevelRewardReq\022\r\n\005level\030\006 \001(\r\022" +
-      "\023\n\013offering_id\030\013 \001(\rB\033\n\031emu.grasscutter." +
+      "keOfferingLevelRewardReq\022\r\n\005level\030\016 \001(\r\022" +
+      "\023\n\013offering_id\030\014 \001(\rB\033\n\031emu.grasscutter." +
       "net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

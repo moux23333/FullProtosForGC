@@ -19,17 +19,21 @@ public final class GetBargainDataReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 bargain_id = 12;</code>
+     * <code>uint32 bargain_id = 8;</code>
      * @return The bargainId.
      */
     int getBargainId();
   }
   /**
    * <pre>
-   * CmdId: 488
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 494;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code GetBargainDataReq}
@@ -76,7 +80,7 @@ public final class GetBargainDataReqOuterClass {
             case 0:
               done = true;
               break;
-            case 96: {
+            case 64: {
 
               bargainId_ = input.readUInt32();
               break;
@@ -113,10 +117,10 @@ public final class GetBargainDataReqOuterClass {
               emu.grasscutter.net.proto.GetBargainDataReqOuterClass.GetBargainDataReq.class, emu.grasscutter.net.proto.GetBargainDataReqOuterClass.GetBargainDataReq.Builder.class);
     }
 
-    public static final int BARGAIN_ID_FIELD_NUMBER = 12;
+    public static final int BARGAIN_ID_FIELD_NUMBER = 8;
     private int bargainId_;
     /**
-     * <code>uint32 bargain_id = 12;</code>
+     * <code>uint32 bargain_id = 8;</code>
      * @return The bargainId.
      */
     @java.lang.Override
@@ -139,7 +143,7 @@ public final class GetBargainDataReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (bargainId_ != 0) {
-        output.writeUInt32(12, bargainId_);
+        output.writeUInt32(8, bargainId_);
       }
       unknownFields.writeTo(output);
     }
@@ -152,7 +156,7 @@ public final class GetBargainDataReqOuterClass {
       size = 0;
       if (bargainId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, bargainId_);
+          .computeUInt32Size(8, bargainId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -281,10 +285,14 @@ public final class GetBargainDataReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 488
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 494;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code GetBargainDataReq}
@@ -435,7 +443,7 @@ public final class GetBargainDataReqOuterClass {
 
       private int bargainId_ ;
       /**
-       * <code>uint32 bargain_id = 12;</code>
+       * <code>uint32 bargain_id = 8;</code>
        * @return The bargainId.
        */
       @java.lang.Override
@@ -443,7 +451,7 @@ public final class GetBargainDataReqOuterClass {
         return bargainId_;
       }
       /**
-       * <code>uint32 bargain_id = 12;</code>
+       * <code>uint32 bargain_id = 8;</code>
        * @param value The bargainId to set.
        * @return This builder for chaining.
        */
@@ -454,7 +462,7 @@ public final class GetBargainDataReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 bargain_id = 12;</code>
+       * <code>uint32 bargain_id = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearBargainId() {
@@ -531,7 +539,7 @@ public final class GetBargainDataReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\027GetBargainDataReq.proto\"\'\n\021GetBargainD" +
-      "ataReq\022\022\n\nbargain_id\030\014 \001(\rB\033\n\031emu.grassc" +
+      "ataReq\022\022\n\nbargain_id\030\010 \001(\rB\033\n\031emu.grassc" +
       "utter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

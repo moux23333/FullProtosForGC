@@ -19,28 +19,32 @@ public final class DungeonCandidateTeamInviteNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 player_uid = 5;</code>
+     * <code>uint32 valid_deadline_time_sec = 11;</code>
+     * @return The validDeadlineTimeSec.
+     */
+    int getValidDeadlineTimeSec();
+
+    /**
+     * <code>uint32 player_uid = 4;</code>
      * @return The playerUid.
      */
     int getPlayerUid();
 
     /**
-     * <code>uint32 vaild_deadline_time_sec = 9;</code>
-     * @return The vaildDeadlineTimeSec.
-     */
-    int getVaildDeadlineTimeSec();
-
-    /**
-     * <code>uint32 dungeon_id = 6;</code>
+     * <code>uint32 dungeon_id = 13;</code>
      * @return The dungeonId.
      */
     int getDungeonId();
   }
   /**
    * <pre>
-   * CmdId: 994
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 905;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code DungeonCandidateTeamInviteNotify}
@@ -87,19 +91,19 @@ public final class DungeonCandidateTeamInviteNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 40: {
+            case 32: {
 
               playerUid_ = input.readUInt32();
               break;
             }
-            case 48: {
+            case 88: {
 
-              dungeonId_ = input.readUInt32();
+              validDeadlineTimeSec_ = input.readUInt32();
               break;
             }
-            case 72: {
+            case 104: {
 
-              vaildDeadlineTimeSec_ = input.readUInt32();
+              dungeonId_ = input.readUInt32();
               break;
             }
             default: {
@@ -134,10 +138,21 @@ public final class DungeonCandidateTeamInviteNotifyOuterClass {
               emu.grasscutter.net.proto.DungeonCandidateTeamInviteNotifyOuterClass.DungeonCandidateTeamInviteNotify.class, emu.grasscutter.net.proto.DungeonCandidateTeamInviteNotifyOuterClass.DungeonCandidateTeamInviteNotify.Builder.class);
     }
 
-    public static final int PLAYER_UID_FIELD_NUMBER = 5;
+    public static final int VALID_DEADLINE_TIME_SEC_FIELD_NUMBER = 11;
+    private int validDeadlineTimeSec_;
+    /**
+     * <code>uint32 valid_deadline_time_sec = 11;</code>
+     * @return The validDeadlineTimeSec.
+     */
+    @java.lang.Override
+    public int getValidDeadlineTimeSec() {
+      return validDeadlineTimeSec_;
+    }
+
+    public static final int PLAYER_UID_FIELD_NUMBER = 4;
     private int playerUid_;
     /**
-     * <code>uint32 player_uid = 5;</code>
+     * <code>uint32 player_uid = 4;</code>
      * @return The playerUid.
      */
     @java.lang.Override
@@ -145,21 +160,10 @@ public final class DungeonCandidateTeamInviteNotifyOuterClass {
       return playerUid_;
     }
 
-    public static final int VAILD_DEADLINE_TIME_SEC_FIELD_NUMBER = 9;
-    private int vaildDeadlineTimeSec_;
-    /**
-     * <code>uint32 vaild_deadline_time_sec = 9;</code>
-     * @return The vaildDeadlineTimeSec.
-     */
-    @java.lang.Override
-    public int getVaildDeadlineTimeSec() {
-      return vaildDeadlineTimeSec_;
-    }
-
-    public static final int DUNGEON_ID_FIELD_NUMBER = 6;
+    public static final int DUNGEON_ID_FIELD_NUMBER = 13;
     private int dungeonId_;
     /**
-     * <code>uint32 dungeon_id = 6;</code>
+     * <code>uint32 dungeon_id = 13;</code>
      * @return The dungeonId.
      */
     @java.lang.Override
@@ -182,13 +186,13 @@ public final class DungeonCandidateTeamInviteNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (playerUid_ != 0) {
-        output.writeUInt32(5, playerUid_);
+        output.writeUInt32(4, playerUid_);
+      }
+      if (validDeadlineTimeSec_ != 0) {
+        output.writeUInt32(11, validDeadlineTimeSec_);
       }
       if (dungeonId_ != 0) {
-        output.writeUInt32(6, dungeonId_);
-      }
-      if (vaildDeadlineTimeSec_ != 0) {
-        output.writeUInt32(9, vaildDeadlineTimeSec_);
+        output.writeUInt32(13, dungeonId_);
       }
       unknownFields.writeTo(output);
     }
@@ -201,15 +205,15 @@ public final class DungeonCandidateTeamInviteNotifyOuterClass {
       size = 0;
       if (playerUid_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, playerUid_);
+          .computeUInt32Size(4, playerUid_);
+      }
+      if (validDeadlineTimeSec_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(11, validDeadlineTimeSec_);
       }
       if (dungeonId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, dungeonId_);
-      }
-      if (vaildDeadlineTimeSec_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, vaildDeadlineTimeSec_);
+          .computeUInt32Size(13, dungeonId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -226,10 +230,10 @@ public final class DungeonCandidateTeamInviteNotifyOuterClass {
       }
       emu.grasscutter.net.proto.DungeonCandidateTeamInviteNotifyOuterClass.DungeonCandidateTeamInviteNotify other = (emu.grasscutter.net.proto.DungeonCandidateTeamInviteNotifyOuterClass.DungeonCandidateTeamInviteNotify) obj;
 
+      if (getValidDeadlineTimeSec()
+          != other.getValidDeadlineTimeSec()) return false;
       if (getPlayerUid()
           != other.getPlayerUid()) return false;
-      if (getVaildDeadlineTimeSec()
-          != other.getVaildDeadlineTimeSec()) return false;
       if (getDungeonId()
           != other.getDungeonId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
@@ -243,10 +247,10 @@ public final class DungeonCandidateTeamInviteNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + VALID_DEADLINE_TIME_SEC_FIELD_NUMBER;
+      hash = (53 * hash) + getValidDeadlineTimeSec();
       hash = (37 * hash) + PLAYER_UID_FIELD_NUMBER;
       hash = (53 * hash) + getPlayerUid();
-      hash = (37 * hash) + VAILD_DEADLINE_TIME_SEC_FIELD_NUMBER;
-      hash = (53 * hash) + getVaildDeadlineTimeSec();
       hash = (37 * hash) + DUNGEON_ID_FIELD_NUMBER;
       hash = (53 * hash) + getDungeonId();
       hash = (29 * hash) + unknownFields.hashCode();
@@ -346,9 +350,13 @@ public final class DungeonCandidateTeamInviteNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 994
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 905;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code DungeonCandidateTeamInviteNotify}
@@ -388,9 +396,9 @@ public final class DungeonCandidateTeamInviteNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        playerUid_ = 0;
+        validDeadlineTimeSec_ = 0;
 
-        vaildDeadlineTimeSec_ = 0;
+        playerUid_ = 0;
 
         dungeonId_ = 0;
 
@@ -420,8 +428,8 @@ public final class DungeonCandidateTeamInviteNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.DungeonCandidateTeamInviteNotifyOuterClass.DungeonCandidateTeamInviteNotify buildPartial() {
         emu.grasscutter.net.proto.DungeonCandidateTeamInviteNotifyOuterClass.DungeonCandidateTeamInviteNotify result = new emu.grasscutter.net.proto.DungeonCandidateTeamInviteNotifyOuterClass.DungeonCandidateTeamInviteNotify(this);
+        result.validDeadlineTimeSec_ = validDeadlineTimeSec_;
         result.playerUid_ = playerUid_;
-        result.vaildDeadlineTimeSec_ = vaildDeadlineTimeSec_;
         result.dungeonId_ = dungeonId_;
         onBuilt();
         return result;
@@ -471,11 +479,11 @@ public final class DungeonCandidateTeamInviteNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.DungeonCandidateTeamInviteNotifyOuterClass.DungeonCandidateTeamInviteNotify other) {
         if (other == emu.grasscutter.net.proto.DungeonCandidateTeamInviteNotifyOuterClass.DungeonCandidateTeamInviteNotify.getDefaultInstance()) return this;
+        if (other.getValidDeadlineTimeSec() != 0) {
+          setValidDeadlineTimeSec(other.getValidDeadlineTimeSec());
+        }
         if (other.getPlayerUid() != 0) {
           setPlayerUid(other.getPlayerUid());
-        }
-        if (other.getVaildDeadlineTimeSec() != 0) {
-          setVaildDeadlineTimeSec(other.getVaildDeadlineTimeSec());
         }
         if (other.getDungeonId() != 0) {
           setDungeonId(other.getDungeonId());
@@ -509,9 +517,40 @@ public final class DungeonCandidateTeamInviteNotifyOuterClass {
         return this;
       }
 
+      private int validDeadlineTimeSec_ ;
+      /**
+       * <code>uint32 valid_deadline_time_sec = 11;</code>
+       * @return The validDeadlineTimeSec.
+       */
+      @java.lang.Override
+      public int getValidDeadlineTimeSec() {
+        return validDeadlineTimeSec_;
+      }
+      /**
+       * <code>uint32 valid_deadline_time_sec = 11;</code>
+       * @param value The validDeadlineTimeSec to set.
+       * @return This builder for chaining.
+       */
+      public Builder setValidDeadlineTimeSec(int value) {
+        
+        validDeadlineTimeSec_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 valid_deadline_time_sec = 11;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearValidDeadlineTimeSec() {
+        
+        validDeadlineTimeSec_ = 0;
+        onChanged();
+        return this;
+      }
+
       private int playerUid_ ;
       /**
-       * <code>uint32 player_uid = 5;</code>
+       * <code>uint32 player_uid = 4;</code>
        * @return The playerUid.
        */
       @java.lang.Override
@@ -519,7 +558,7 @@ public final class DungeonCandidateTeamInviteNotifyOuterClass {
         return playerUid_;
       }
       /**
-       * <code>uint32 player_uid = 5;</code>
+       * <code>uint32 player_uid = 4;</code>
        * @param value The playerUid to set.
        * @return This builder for chaining.
        */
@@ -530,7 +569,7 @@ public final class DungeonCandidateTeamInviteNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 player_uid = 5;</code>
+       * <code>uint32 player_uid = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearPlayerUid() {
@@ -540,40 +579,9 @@ public final class DungeonCandidateTeamInviteNotifyOuterClass {
         return this;
       }
 
-      private int vaildDeadlineTimeSec_ ;
-      /**
-       * <code>uint32 vaild_deadline_time_sec = 9;</code>
-       * @return The vaildDeadlineTimeSec.
-       */
-      @java.lang.Override
-      public int getVaildDeadlineTimeSec() {
-        return vaildDeadlineTimeSec_;
-      }
-      /**
-       * <code>uint32 vaild_deadline_time_sec = 9;</code>
-       * @param value The vaildDeadlineTimeSec to set.
-       * @return This builder for chaining.
-       */
-      public Builder setVaildDeadlineTimeSec(int value) {
-        
-        vaildDeadlineTimeSec_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 vaild_deadline_time_sec = 9;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearVaildDeadlineTimeSec() {
-        
-        vaildDeadlineTimeSec_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int dungeonId_ ;
       /**
-       * <code>uint32 dungeon_id = 6;</code>
+       * <code>uint32 dungeon_id = 13;</code>
        * @return The dungeonId.
        */
       @java.lang.Override
@@ -581,7 +589,7 @@ public final class DungeonCandidateTeamInviteNotifyOuterClass {
         return dungeonId_;
       }
       /**
-       * <code>uint32 dungeon_id = 6;</code>
+       * <code>uint32 dungeon_id = 13;</code>
        * @param value The dungeonId to set.
        * @return This builder for chaining.
        */
@@ -592,7 +600,7 @@ public final class DungeonCandidateTeamInviteNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 dungeon_id = 6;</code>
+       * <code>uint32 dungeon_id = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearDungeonId() {
@@ -669,9 +677,9 @@ public final class DungeonCandidateTeamInviteNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n&DungeonCandidateTeamInviteNotify.proto" +
-      "\"k\n DungeonCandidateTeamInviteNotify\022\022\n\n" +
-      "player_uid\030\005 \001(\r\022\037\n\027vaild_deadline_time_" +
-      "sec\030\t \001(\r\022\022\n\ndungeon_id\030\006 \001(\rB\033\n\031emu.gra" +
+      "\"k\n DungeonCandidateTeamInviteNotify\022\037\n\027" +
+      "valid_deadline_time_sec\030\013 \001(\r\022\022\n\nplayer_" +
+      "uid\030\004 \001(\r\022\022\n\ndungeon_id\030\r \001(\rB\033\n\031emu.gra" +
       "sscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -683,7 +691,7 @@ public final class DungeonCandidateTeamInviteNotifyOuterClass {
     internal_static_DungeonCandidateTeamInviteNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_DungeonCandidateTeamInviteNotify_descriptor,
-        new java.lang.String[] { "PlayerUid", "VaildDeadlineTimeSec", "DungeonId", });
+        new java.lang.String[] { "ValidDeadlineTimeSec", "PlayerUid", "DungeonId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

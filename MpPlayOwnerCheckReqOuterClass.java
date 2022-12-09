@@ -19,23 +19,27 @@ public final class MpPlayOwnerCheckReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 mp_play_id = 9;</code>
+     * <code>uint32 mp_play_id = 13;</code>
      * @return The mpPlayId.
      */
     int getMpPlayId();
 
     /**
-     * <code>bool is_skip_match = 3;</code>
+     * <code>bool is_skip_match = 7;</code>
      * @return The isSkipMatch.
      */
     boolean getIsSkipMatch();
   }
   /**
    * <pre>
-   * CmdId: 1814
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 1802;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code MpPlayOwnerCheckReq}
@@ -82,12 +86,12 @@ public final class MpPlayOwnerCheckReqOuterClass {
             case 0:
               done = true;
               break;
-            case 24: {
+            case 56: {
 
               isSkipMatch_ = input.readBool();
               break;
             }
-            case 72: {
+            case 104: {
 
               mpPlayId_ = input.readUInt32();
               break;
@@ -124,10 +128,10 @@ public final class MpPlayOwnerCheckReqOuterClass {
               emu.grasscutter.net.proto.MpPlayOwnerCheckReqOuterClass.MpPlayOwnerCheckReq.class, emu.grasscutter.net.proto.MpPlayOwnerCheckReqOuterClass.MpPlayOwnerCheckReq.Builder.class);
     }
 
-    public static final int MP_PLAY_ID_FIELD_NUMBER = 9;
+    public static final int MP_PLAY_ID_FIELD_NUMBER = 13;
     private int mpPlayId_;
     /**
-     * <code>uint32 mp_play_id = 9;</code>
+     * <code>uint32 mp_play_id = 13;</code>
      * @return The mpPlayId.
      */
     @java.lang.Override
@@ -135,10 +139,10 @@ public final class MpPlayOwnerCheckReqOuterClass {
       return mpPlayId_;
     }
 
-    public static final int IS_SKIP_MATCH_FIELD_NUMBER = 3;
+    public static final int IS_SKIP_MATCH_FIELD_NUMBER = 7;
     private boolean isSkipMatch_;
     /**
-     * <code>bool is_skip_match = 3;</code>
+     * <code>bool is_skip_match = 7;</code>
      * @return The isSkipMatch.
      */
     @java.lang.Override
@@ -161,10 +165,10 @@ public final class MpPlayOwnerCheckReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (isSkipMatch_ != false) {
-        output.writeBool(3, isSkipMatch_);
+        output.writeBool(7, isSkipMatch_);
       }
       if (mpPlayId_ != 0) {
-        output.writeUInt32(9, mpPlayId_);
+        output.writeUInt32(13, mpPlayId_);
       }
       unknownFields.writeTo(output);
     }
@@ -177,11 +181,11 @@ public final class MpPlayOwnerCheckReqOuterClass {
       size = 0;
       if (isSkipMatch_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(3, isSkipMatch_);
+          .computeBoolSize(7, isSkipMatch_);
       }
       if (mpPlayId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, mpPlayId_);
+          .computeUInt32Size(13, mpPlayId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -315,10 +319,14 @@ public final class MpPlayOwnerCheckReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 1814
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 1802;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code MpPlayOwnerCheckReq}
@@ -475,7 +483,7 @@ public final class MpPlayOwnerCheckReqOuterClass {
 
       private int mpPlayId_ ;
       /**
-       * <code>uint32 mp_play_id = 9;</code>
+       * <code>uint32 mp_play_id = 13;</code>
        * @return The mpPlayId.
        */
       @java.lang.Override
@@ -483,7 +491,7 @@ public final class MpPlayOwnerCheckReqOuterClass {
         return mpPlayId_;
       }
       /**
-       * <code>uint32 mp_play_id = 9;</code>
+       * <code>uint32 mp_play_id = 13;</code>
        * @param value The mpPlayId to set.
        * @return This builder for chaining.
        */
@@ -494,7 +502,7 @@ public final class MpPlayOwnerCheckReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 mp_play_id = 9;</code>
+       * <code>uint32 mp_play_id = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearMpPlayId() {
@@ -506,7 +514,7 @@ public final class MpPlayOwnerCheckReqOuterClass {
 
       private boolean isSkipMatch_ ;
       /**
-       * <code>bool is_skip_match = 3;</code>
+       * <code>bool is_skip_match = 7;</code>
        * @return The isSkipMatch.
        */
       @java.lang.Override
@@ -514,7 +522,7 @@ public final class MpPlayOwnerCheckReqOuterClass {
         return isSkipMatch_;
       }
       /**
-       * <code>bool is_skip_match = 3;</code>
+       * <code>bool is_skip_match = 7;</code>
        * @param value The isSkipMatch to set.
        * @return This builder for chaining.
        */
@@ -525,7 +533,7 @@ public final class MpPlayOwnerCheckReqOuterClass {
         return this;
       }
       /**
-       * <code>bool is_skip_match = 3;</code>
+       * <code>bool is_skip_match = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsSkipMatch() {
@@ -602,8 +610,8 @@ public final class MpPlayOwnerCheckReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\031MpPlayOwnerCheckReq.proto\"@\n\023MpPlayOwn" +
-      "erCheckReq\022\022\n\nmp_play_id\030\t \001(\r\022\025\n\ris_ski" +
-      "p_match\030\003 \001(\010B\033\n\031emu.grasscutter.net.pro" +
+      "erCheckReq\022\022\n\nmp_play_id\030\r \001(\r\022\025\n\ris_ski" +
+      "p_match\030\007 \001(\010B\033\n\031emu.grasscutter.net.pro" +
       "tob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

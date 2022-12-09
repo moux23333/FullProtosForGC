@@ -19,37 +19,37 @@ public final class CustomDungeonVerifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint64 dungeon_guid = 3;</code>
-     * @return The dungeonGuid.
-     */
-    long getDungeonGuid();
-
-    /**
-     * <code>uint32 uid = 15;</code>
+     * <code>uint32 uid = 3;</code>
      * @return The uid.
      */
     int getUid();
 
     /**
-     * <code>uint32 timestamp = 4;</code>
-     * @return The timestamp.
-     */
-    int getTimestamp();
-
-    /**
-     * <code>string region = 11;</code>
+     * <code>string region = 13;</code>
      * @return The region.
      */
     java.lang.String getRegion();
     /**
-     * <code>string region = 11;</code>
+     * <code>string region = 13;</code>
      * @return The bytes for region.
      */
     com.google.protobuf.ByteString
         getRegionBytes();
 
     /**
-     * <code>uint32 lang = 13;</code>
+     * <code>uint32 timestamp = 5;</code>
+     * @return The timestamp.
+     */
+    int getTimestamp();
+
+    /**
+     * <code>uint64 dungeon_guid = 1;</code>
+     * @return The dungeonGuid.
+     */
+    long getDungeonGuid();
+
+    /**
+     * <code>uint32 lang = 6;</code>
      * @return The lang.
      */
     int getLang();
@@ -100,30 +100,30 @@ public final class CustomDungeonVerifyOuterClass {
             case 0:
               done = true;
               break;
-            case 24: {
+            case 8: {
 
               dungeonGuid_ = input.readUInt64();
               break;
             }
-            case 32: {
+            case 24: {
+
+              uid_ = input.readUInt32();
+              break;
+            }
+            case 40: {
 
               timestamp_ = input.readUInt32();
               break;
             }
-            case 90: {
-              java.lang.String s = input.readStringRequireUtf8();
-
-              region_ = s;
-              break;
-            }
-            case 104: {
+            case 48: {
 
               lang_ = input.readUInt32();
               break;
             }
-            case 120: {
+            case 106: {
+              java.lang.String s = input.readStringRequireUtf8();
 
-              uid_ = input.readUInt32();
+              region_ = s;
               break;
             }
             default: {
@@ -158,21 +158,10 @@ public final class CustomDungeonVerifyOuterClass {
               emu.grasscutter.net.proto.CustomDungeonVerifyOuterClass.CustomDungeonVerify.class, emu.grasscutter.net.proto.CustomDungeonVerifyOuterClass.CustomDungeonVerify.Builder.class);
     }
 
-    public static final int DUNGEON_GUID_FIELD_NUMBER = 3;
-    private long dungeonGuid_;
-    /**
-     * <code>uint64 dungeon_guid = 3;</code>
-     * @return The dungeonGuid.
-     */
-    @java.lang.Override
-    public long getDungeonGuid() {
-      return dungeonGuid_;
-    }
-
-    public static final int UID_FIELD_NUMBER = 15;
+    public static final int UID_FIELD_NUMBER = 3;
     private int uid_;
     /**
-     * <code>uint32 uid = 15;</code>
+     * <code>uint32 uid = 3;</code>
      * @return The uid.
      */
     @java.lang.Override
@@ -180,21 +169,10 @@ public final class CustomDungeonVerifyOuterClass {
       return uid_;
     }
 
-    public static final int TIMESTAMP_FIELD_NUMBER = 4;
-    private int timestamp_;
-    /**
-     * <code>uint32 timestamp = 4;</code>
-     * @return The timestamp.
-     */
-    @java.lang.Override
-    public int getTimestamp() {
-      return timestamp_;
-    }
-
-    public static final int REGION_FIELD_NUMBER = 11;
+    public static final int REGION_FIELD_NUMBER = 13;
     private volatile java.lang.Object region_;
     /**
-     * <code>string region = 11;</code>
+     * <code>string region = 13;</code>
      * @return The region.
      */
     @java.lang.Override
@@ -211,7 +189,7 @@ public final class CustomDungeonVerifyOuterClass {
       }
     }
     /**
-     * <code>string region = 11;</code>
+     * <code>string region = 13;</code>
      * @return The bytes for region.
      */
     @java.lang.Override
@@ -229,10 +207,32 @@ public final class CustomDungeonVerifyOuterClass {
       }
     }
 
-    public static final int LANG_FIELD_NUMBER = 13;
+    public static final int TIMESTAMP_FIELD_NUMBER = 5;
+    private int timestamp_;
+    /**
+     * <code>uint32 timestamp = 5;</code>
+     * @return The timestamp.
+     */
+    @java.lang.Override
+    public int getTimestamp() {
+      return timestamp_;
+    }
+
+    public static final int DUNGEON_GUID_FIELD_NUMBER = 1;
+    private long dungeonGuid_;
+    /**
+     * <code>uint64 dungeon_guid = 1;</code>
+     * @return The dungeonGuid.
+     */
+    @java.lang.Override
+    public long getDungeonGuid() {
+      return dungeonGuid_;
+    }
+
+    public static final int LANG_FIELD_NUMBER = 6;
     private int lang_;
     /**
-     * <code>uint32 lang = 13;</code>
+     * <code>uint32 lang = 6;</code>
      * @return The lang.
      */
     @java.lang.Override
@@ -255,19 +255,19 @@ public final class CustomDungeonVerifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (dungeonGuid_ != 0L) {
-        output.writeUInt64(3, dungeonGuid_);
-      }
-      if (timestamp_ != 0) {
-        output.writeUInt32(4, timestamp_);
-      }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(region_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 11, region_);
-      }
-      if (lang_ != 0) {
-        output.writeUInt32(13, lang_);
+        output.writeUInt64(1, dungeonGuid_);
       }
       if (uid_ != 0) {
-        output.writeUInt32(15, uid_);
+        output.writeUInt32(3, uid_);
+      }
+      if (timestamp_ != 0) {
+        output.writeUInt32(5, timestamp_);
+      }
+      if (lang_ != 0) {
+        output.writeUInt32(6, lang_);
+      }
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(region_)) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 13, region_);
       }
       unknownFields.writeTo(output);
     }
@@ -280,22 +280,22 @@ public final class CustomDungeonVerifyOuterClass {
       size = 0;
       if (dungeonGuid_ != 0L) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt64Size(3, dungeonGuid_);
-      }
-      if (timestamp_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, timestamp_);
-      }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(region_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(11, region_);
-      }
-      if (lang_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, lang_);
+          .computeUInt64Size(1, dungeonGuid_);
       }
       if (uid_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, uid_);
+          .computeUInt32Size(3, uid_);
+      }
+      if (timestamp_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(5, timestamp_);
+      }
+      if (lang_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(6, lang_);
+      }
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(region_)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(13, region_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -312,14 +312,14 @@ public final class CustomDungeonVerifyOuterClass {
       }
       emu.grasscutter.net.proto.CustomDungeonVerifyOuterClass.CustomDungeonVerify other = (emu.grasscutter.net.proto.CustomDungeonVerifyOuterClass.CustomDungeonVerify) obj;
 
-      if (getDungeonGuid()
-          != other.getDungeonGuid()) return false;
       if (getUid()
           != other.getUid()) return false;
-      if (getTimestamp()
-          != other.getTimestamp()) return false;
       if (!getRegion()
           .equals(other.getRegion())) return false;
+      if (getTimestamp()
+          != other.getTimestamp()) return false;
+      if (getDungeonGuid()
+          != other.getDungeonGuid()) return false;
       if (getLang()
           != other.getLang()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
@@ -333,15 +333,15 @@ public final class CustomDungeonVerifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + UID_FIELD_NUMBER;
+      hash = (53 * hash) + getUid();
+      hash = (37 * hash) + REGION_FIELD_NUMBER;
+      hash = (53 * hash) + getRegion().hashCode();
+      hash = (37 * hash) + TIMESTAMP_FIELD_NUMBER;
+      hash = (53 * hash) + getTimestamp();
       hash = (37 * hash) + DUNGEON_GUID_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
           getDungeonGuid());
-      hash = (37 * hash) + UID_FIELD_NUMBER;
-      hash = (53 * hash) + getUid();
-      hash = (37 * hash) + TIMESTAMP_FIELD_NUMBER;
-      hash = (53 * hash) + getTimestamp();
-      hash = (37 * hash) + REGION_FIELD_NUMBER;
-      hash = (53 * hash) + getRegion().hashCode();
       hash = (37 * hash) + LANG_FIELD_NUMBER;
       hash = (53 * hash) + getLang();
       hash = (29 * hash) + unknownFields.hashCode();
@@ -477,13 +477,13 @@ public final class CustomDungeonVerifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        dungeonGuid_ = 0L;
-
         uid_ = 0;
+
+        region_ = "";
 
         timestamp_ = 0;
 
-        region_ = "";
+        dungeonGuid_ = 0L;
 
         lang_ = 0;
 
@@ -513,10 +513,10 @@ public final class CustomDungeonVerifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.CustomDungeonVerifyOuterClass.CustomDungeonVerify buildPartial() {
         emu.grasscutter.net.proto.CustomDungeonVerifyOuterClass.CustomDungeonVerify result = new emu.grasscutter.net.proto.CustomDungeonVerifyOuterClass.CustomDungeonVerify(this);
-        result.dungeonGuid_ = dungeonGuid_;
         result.uid_ = uid_;
-        result.timestamp_ = timestamp_;
         result.region_ = region_;
+        result.timestamp_ = timestamp_;
+        result.dungeonGuid_ = dungeonGuid_;
         result.lang_ = lang_;
         onBuilt();
         return result;
@@ -566,18 +566,18 @@ public final class CustomDungeonVerifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.CustomDungeonVerifyOuterClass.CustomDungeonVerify other) {
         if (other == emu.grasscutter.net.proto.CustomDungeonVerifyOuterClass.CustomDungeonVerify.getDefaultInstance()) return this;
-        if (other.getDungeonGuid() != 0L) {
-          setDungeonGuid(other.getDungeonGuid());
-        }
         if (other.getUid() != 0) {
           setUid(other.getUid());
-        }
-        if (other.getTimestamp() != 0) {
-          setTimestamp(other.getTimestamp());
         }
         if (!other.getRegion().isEmpty()) {
           region_ = other.region_;
           onChanged();
+        }
+        if (other.getTimestamp() != 0) {
+          setTimestamp(other.getTimestamp());
+        }
+        if (other.getDungeonGuid() != 0L) {
+          setDungeonGuid(other.getDungeonGuid());
         }
         if (other.getLang() != 0) {
           setLang(other.getLang());
@@ -611,40 +611,9 @@ public final class CustomDungeonVerifyOuterClass {
         return this;
       }
 
-      private long dungeonGuid_ ;
-      /**
-       * <code>uint64 dungeon_guid = 3;</code>
-       * @return The dungeonGuid.
-       */
-      @java.lang.Override
-      public long getDungeonGuid() {
-        return dungeonGuid_;
-      }
-      /**
-       * <code>uint64 dungeon_guid = 3;</code>
-       * @param value The dungeonGuid to set.
-       * @return This builder for chaining.
-       */
-      public Builder setDungeonGuid(long value) {
-        
-        dungeonGuid_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint64 dungeon_guid = 3;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearDungeonGuid() {
-        
-        dungeonGuid_ = 0L;
-        onChanged();
-        return this;
-      }
-
       private int uid_ ;
       /**
-       * <code>uint32 uid = 15;</code>
+       * <code>uint32 uid = 3;</code>
        * @return The uid.
        */
       @java.lang.Override
@@ -652,7 +621,7 @@ public final class CustomDungeonVerifyOuterClass {
         return uid_;
       }
       /**
-       * <code>uint32 uid = 15;</code>
+       * <code>uint32 uid = 3;</code>
        * @param value The uid to set.
        * @return This builder for chaining.
        */
@@ -663,7 +632,7 @@ public final class CustomDungeonVerifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 uid = 15;</code>
+       * <code>uint32 uid = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearUid() {
@@ -673,40 +642,9 @@ public final class CustomDungeonVerifyOuterClass {
         return this;
       }
 
-      private int timestamp_ ;
-      /**
-       * <code>uint32 timestamp = 4;</code>
-       * @return The timestamp.
-       */
-      @java.lang.Override
-      public int getTimestamp() {
-        return timestamp_;
-      }
-      /**
-       * <code>uint32 timestamp = 4;</code>
-       * @param value The timestamp to set.
-       * @return This builder for chaining.
-       */
-      public Builder setTimestamp(int value) {
-        
-        timestamp_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 timestamp = 4;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearTimestamp() {
-        
-        timestamp_ = 0;
-        onChanged();
-        return this;
-      }
-
       private java.lang.Object region_ = "";
       /**
-       * <code>string region = 11;</code>
+       * <code>string region = 13;</code>
        * @return The region.
        */
       public java.lang.String getRegion() {
@@ -722,7 +660,7 @@ public final class CustomDungeonVerifyOuterClass {
         }
       }
       /**
-       * <code>string region = 11;</code>
+       * <code>string region = 13;</code>
        * @return The bytes for region.
        */
       public com.google.protobuf.ByteString
@@ -739,7 +677,7 @@ public final class CustomDungeonVerifyOuterClass {
         }
       }
       /**
-       * <code>string region = 11;</code>
+       * <code>string region = 13;</code>
        * @param value The region to set.
        * @return This builder for chaining.
        */
@@ -754,7 +692,7 @@ public final class CustomDungeonVerifyOuterClass {
         return this;
       }
       /**
-       * <code>string region = 11;</code>
+       * <code>string region = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearRegion() {
@@ -764,7 +702,7 @@ public final class CustomDungeonVerifyOuterClass {
         return this;
       }
       /**
-       * <code>string region = 11;</code>
+       * <code>string region = 13;</code>
        * @param value The bytes for region to set.
        * @return This builder for chaining.
        */
@@ -780,9 +718,71 @@ public final class CustomDungeonVerifyOuterClass {
         return this;
       }
 
+      private int timestamp_ ;
+      /**
+       * <code>uint32 timestamp = 5;</code>
+       * @return The timestamp.
+       */
+      @java.lang.Override
+      public int getTimestamp() {
+        return timestamp_;
+      }
+      /**
+       * <code>uint32 timestamp = 5;</code>
+       * @param value The timestamp to set.
+       * @return This builder for chaining.
+       */
+      public Builder setTimestamp(int value) {
+        
+        timestamp_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 timestamp = 5;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearTimestamp() {
+        
+        timestamp_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private long dungeonGuid_ ;
+      /**
+       * <code>uint64 dungeon_guid = 1;</code>
+       * @return The dungeonGuid.
+       */
+      @java.lang.Override
+      public long getDungeonGuid() {
+        return dungeonGuid_;
+      }
+      /**
+       * <code>uint64 dungeon_guid = 1;</code>
+       * @param value The dungeonGuid to set.
+       * @return This builder for chaining.
+       */
+      public Builder setDungeonGuid(long value) {
+        
+        dungeonGuid_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint64 dungeon_guid = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearDungeonGuid() {
+        
+        dungeonGuid_ = 0L;
+        onChanged();
+        return this;
+      }
+
       private int lang_ ;
       /**
-       * <code>uint32 lang = 13;</code>
+       * <code>uint32 lang = 6;</code>
        * @return The lang.
        */
       @java.lang.Override
@@ -790,7 +790,7 @@ public final class CustomDungeonVerifyOuterClass {
         return lang_;
       }
       /**
-       * <code>uint32 lang = 13;</code>
+       * <code>uint32 lang = 6;</code>
        * @param value The lang to set.
        * @return This builder for chaining.
        */
@@ -801,7 +801,7 @@ public final class CustomDungeonVerifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 lang = 13;</code>
+       * <code>uint32 lang = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearLang() {
@@ -878,9 +878,9 @@ public final class CustomDungeonVerifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\031CustomDungeonVerify.proto\"i\n\023CustomDun" +
-      "geonVerify\022\024\n\014dungeon_guid\030\003 \001(\004\022\013\n\003uid\030" +
-      "\017 \001(\r\022\021\n\ttimestamp\030\004 \001(\r\022\016\n\006region\030\013 \001(\t" +
-      "\022\014\n\004lang\030\r \001(\rB\033\n\031emu.grasscutter.net.pr" +
+      "geonVerify\022\013\n\003uid\030\003 \001(\r\022\016\n\006region\030\r \001(\t\022" +
+      "\021\n\ttimestamp\030\005 \001(\r\022\024\n\014dungeon_guid\030\001 \001(\004" +
+      "\022\014\n\004lang\030\006 \001(\rB\033\n\031emu.grasscutter.net.pr" +
       "otob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -892,7 +892,7 @@ public final class CustomDungeonVerifyOuterClass {
     internal_static_CustomDungeonVerify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_CustomDungeonVerify_descriptor,
-        new java.lang.String[] { "DungeonGuid", "Uid", "Timestamp", "Region", "Lang", });
+        new java.lang.String[] { "Uid", "Region", "Timestamp", "DungeonGuid", "Lang", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

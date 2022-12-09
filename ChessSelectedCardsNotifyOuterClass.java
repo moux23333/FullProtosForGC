@@ -19,34 +19,38 @@ public final class ChessSelectedCardsNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .ChessCardInfo selected_card_info_list = 4;</code>
+     * <code>repeated .ChessCardInfo selected_card_info_list = 9;</code>
      */
     java.util.List<emu.grasscutter.net.proto.ChessCardInfoOuterClass.ChessCardInfo> 
         getSelectedCardInfoListList();
     /**
-     * <code>repeated .ChessCardInfo selected_card_info_list = 4;</code>
+     * <code>repeated .ChessCardInfo selected_card_info_list = 9;</code>
      */
     emu.grasscutter.net.proto.ChessCardInfoOuterClass.ChessCardInfo getSelectedCardInfoList(int index);
     /**
-     * <code>repeated .ChessCardInfo selected_card_info_list = 4;</code>
+     * <code>repeated .ChessCardInfo selected_card_info_list = 9;</code>
      */
     int getSelectedCardInfoListCount();
     /**
-     * <code>repeated .ChessCardInfo selected_card_info_list = 4;</code>
+     * <code>repeated .ChessCardInfo selected_card_info_list = 9;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.ChessCardInfoOuterClass.ChessCardInfoOrBuilder> 
         getSelectedCardInfoListOrBuilderList();
     /**
-     * <code>repeated .ChessCardInfo selected_card_info_list = 4;</code>
+     * <code>repeated .ChessCardInfo selected_card_info_list = 9;</code>
      */
     emu.grasscutter.net.proto.ChessCardInfoOuterClass.ChessCardInfoOrBuilder getSelectedCardInfoListOrBuilder(
         int index);
   }
   /**
    * <pre>
-   * CmdId: 5392
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 5397;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code ChessSelectedCardsNotify}
@@ -95,7 +99,7 @@ public final class ChessSelectedCardsNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 34: {
+            case 74: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 selectedCardInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.ChessCardInfoOuterClass.ChessCardInfo>();
                 mutable_bitField0_ |= 0x00000001;
@@ -139,17 +143,17 @@ public final class ChessSelectedCardsNotifyOuterClass {
               emu.grasscutter.net.proto.ChessSelectedCardsNotifyOuterClass.ChessSelectedCardsNotify.class, emu.grasscutter.net.proto.ChessSelectedCardsNotifyOuterClass.ChessSelectedCardsNotify.Builder.class);
     }
 
-    public static final int SELECTED_CARD_INFO_LIST_FIELD_NUMBER = 4;
+    public static final int SELECTED_CARD_INFO_LIST_FIELD_NUMBER = 9;
     private java.util.List<emu.grasscutter.net.proto.ChessCardInfoOuterClass.ChessCardInfo> selectedCardInfoList_;
     /**
-     * <code>repeated .ChessCardInfo selected_card_info_list = 4;</code>
+     * <code>repeated .ChessCardInfo selected_card_info_list = 9;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.ChessCardInfoOuterClass.ChessCardInfo> getSelectedCardInfoListList() {
       return selectedCardInfoList_;
     }
     /**
-     * <code>repeated .ChessCardInfo selected_card_info_list = 4;</code>
+     * <code>repeated .ChessCardInfo selected_card_info_list = 9;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.ChessCardInfoOuterClass.ChessCardInfoOrBuilder> 
@@ -157,21 +161,21 @@ public final class ChessSelectedCardsNotifyOuterClass {
       return selectedCardInfoList_;
     }
     /**
-     * <code>repeated .ChessCardInfo selected_card_info_list = 4;</code>
+     * <code>repeated .ChessCardInfo selected_card_info_list = 9;</code>
      */
     @java.lang.Override
     public int getSelectedCardInfoListCount() {
       return selectedCardInfoList_.size();
     }
     /**
-     * <code>repeated .ChessCardInfo selected_card_info_list = 4;</code>
+     * <code>repeated .ChessCardInfo selected_card_info_list = 9;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.ChessCardInfoOuterClass.ChessCardInfo getSelectedCardInfoList(int index) {
       return selectedCardInfoList_.get(index);
     }
     /**
-     * <code>repeated .ChessCardInfo selected_card_info_list = 4;</code>
+     * <code>repeated .ChessCardInfo selected_card_info_list = 9;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.ChessCardInfoOuterClass.ChessCardInfoOrBuilder getSelectedCardInfoListOrBuilder(
@@ -194,7 +198,7 @@ public final class ChessSelectedCardsNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       for (int i = 0; i < selectedCardInfoList_.size(); i++) {
-        output.writeMessage(4, selectedCardInfoList_.get(i));
+        output.writeMessage(9, selectedCardInfoList_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -207,7 +211,7 @@ public final class ChessSelectedCardsNotifyOuterClass {
       size = 0;
       for (int i = 0; i < selectedCardInfoList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(4, selectedCardInfoList_.get(i));
+          .computeMessageSize(9, selectedCardInfoList_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -338,9 +342,13 @@ public final class ChessSelectedCardsNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 5392
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 5397;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code ChessSelectedCardsNotify}
@@ -540,7 +548,7 @@ public final class ChessSelectedCardsNotifyOuterClass {
           emu.grasscutter.net.proto.ChessCardInfoOuterClass.ChessCardInfo, emu.grasscutter.net.proto.ChessCardInfoOuterClass.ChessCardInfo.Builder, emu.grasscutter.net.proto.ChessCardInfoOuterClass.ChessCardInfoOrBuilder> selectedCardInfoListBuilder_;
 
       /**
-       * <code>repeated .ChessCardInfo selected_card_info_list = 4;</code>
+       * <code>repeated .ChessCardInfo selected_card_info_list = 9;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.ChessCardInfoOuterClass.ChessCardInfo> getSelectedCardInfoListList() {
         if (selectedCardInfoListBuilder_ == null) {
@@ -550,7 +558,7 @@ public final class ChessSelectedCardsNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .ChessCardInfo selected_card_info_list = 4;</code>
+       * <code>repeated .ChessCardInfo selected_card_info_list = 9;</code>
        */
       public int getSelectedCardInfoListCount() {
         if (selectedCardInfoListBuilder_ == null) {
@@ -560,7 +568,7 @@ public final class ChessSelectedCardsNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .ChessCardInfo selected_card_info_list = 4;</code>
+       * <code>repeated .ChessCardInfo selected_card_info_list = 9;</code>
        */
       public emu.grasscutter.net.proto.ChessCardInfoOuterClass.ChessCardInfo getSelectedCardInfoList(int index) {
         if (selectedCardInfoListBuilder_ == null) {
@@ -570,7 +578,7 @@ public final class ChessSelectedCardsNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .ChessCardInfo selected_card_info_list = 4;</code>
+       * <code>repeated .ChessCardInfo selected_card_info_list = 9;</code>
        */
       public Builder setSelectedCardInfoList(
           int index, emu.grasscutter.net.proto.ChessCardInfoOuterClass.ChessCardInfo value) {
@@ -587,7 +595,7 @@ public final class ChessSelectedCardsNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ChessCardInfo selected_card_info_list = 4;</code>
+       * <code>repeated .ChessCardInfo selected_card_info_list = 9;</code>
        */
       public Builder setSelectedCardInfoList(
           int index, emu.grasscutter.net.proto.ChessCardInfoOuterClass.ChessCardInfo.Builder builderForValue) {
@@ -601,7 +609,7 @@ public final class ChessSelectedCardsNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ChessCardInfo selected_card_info_list = 4;</code>
+       * <code>repeated .ChessCardInfo selected_card_info_list = 9;</code>
        */
       public Builder addSelectedCardInfoList(emu.grasscutter.net.proto.ChessCardInfoOuterClass.ChessCardInfo value) {
         if (selectedCardInfoListBuilder_ == null) {
@@ -617,7 +625,7 @@ public final class ChessSelectedCardsNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ChessCardInfo selected_card_info_list = 4;</code>
+       * <code>repeated .ChessCardInfo selected_card_info_list = 9;</code>
        */
       public Builder addSelectedCardInfoList(
           int index, emu.grasscutter.net.proto.ChessCardInfoOuterClass.ChessCardInfo value) {
@@ -634,7 +642,7 @@ public final class ChessSelectedCardsNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ChessCardInfo selected_card_info_list = 4;</code>
+       * <code>repeated .ChessCardInfo selected_card_info_list = 9;</code>
        */
       public Builder addSelectedCardInfoList(
           emu.grasscutter.net.proto.ChessCardInfoOuterClass.ChessCardInfo.Builder builderForValue) {
@@ -648,7 +656,7 @@ public final class ChessSelectedCardsNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ChessCardInfo selected_card_info_list = 4;</code>
+       * <code>repeated .ChessCardInfo selected_card_info_list = 9;</code>
        */
       public Builder addSelectedCardInfoList(
           int index, emu.grasscutter.net.proto.ChessCardInfoOuterClass.ChessCardInfo.Builder builderForValue) {
@@ -662,7 +670,7 @@ public final class ChessSelectedCardsNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ChessCardInfo selected_card_info_list = 4;</code>
+       * <code>repeated .ChessCardInfo selected_card_info_list = 9;</code>
        */
       public Builder addAllSelectedCardInfoList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.ChessCardInfoOuterClass.ChessCardInfo> values) {
@@ -677,7 +685,7 @@ public final class ChessSelectedCardsNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ChessCardInfo selected_card_info_list = 4;</code>
+       * <code>repeated .ChessCardInfo selected_card_info_list = 9;</code>
        */
       public Builder clearSelectedCardInfoList() {
         if (selectedCardInfoListBuilder_ == null) {
@@ -690,7 +698,7 @@ public final class ChessSelectedCardsNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ChessCardInfo selected_card_info_list = 4;</code>
+       * <code>repeated .ChessCardInfo selected_card_info_list = 9;</code>
        */
       public Builder removeSelectedCardInfoList(int index) {
         if (selectedCardInfoListBuilder_ == null) {
@@ -703,14 +711,14 @@ public final class ChessSelectedCardsNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ChessCardInfo selected_card_info_list = 4;</code>
+       * <code>repeated .ChessCardInfo selected_card_info_list = 9;</code>
        */
       public emu.grasscutter.net.proto.ChessCardInfoOuterClass.ChessCardInfo.Builder getSelectedCardInfoListBuilder(
           int index) {
         return getSelectedCardInfoListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .ChessCardInfo selected_card_info_list = 4;</code>
+       * <code>repeated .ChessCardInfo selected_card_info_list = 9;</code>
        */
       public emu.grasscutter.net.proto.ChessCardInfoOuterClass.ChessCardInfoOrBuilder getSelectedCardInfoListOrBuilder(
           int index) {
@@ -720,7 +728,7 @@ public final class ChessSelectedCardsNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .ChessCardInfo selected_card_info_list = 4;</code>
+       * <code>repeated .ChessCardInfo selected_card_info_list = 9;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.ChessCardInfoOuterClass.ChessCardInfoOrBuilder> 
            getSelectedCardInfoListOrBuilderList() {
@@ -731,14 +739,14 @@ public final class ChessSelectedCardsNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .ChessCardInfo selected_card_info_list = 4;</code>
+       * <code>repeated .ChessCardInfo selected_card_info_list = 9;</code>
        */
       public emu.grasscutter.net.proto.ChessCardInfoOuterClass.ChessCardInfo.Builder addSelectedCardInfoListBuilder() {
         return getSelectedCardInfoListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.ChessCardInfoOuterClass.ChessCardInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .ChessCardInfo selected_card_info_list = 4;</code>
+       * <code>repeated .ChessCardInfo selected_card_info_list = 9;</code>
        */
       public emu.grasscutter.net.proto.ChessCardInfoOuterClass.ChessCardInfo.Builder addSelectedCardInfoListBuilder(
           int index) {
@@ -746,7 +754,7 @@ public final class ChessSelectedCardsNotifyOuterClass {
             index, emu.grasscutter.net.proto.ChessCardInfoOuterClass.ChessCardInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .ChessCardInfo selected_card_info_list = 4;</code>
+       * <code>repeated .ChessCardInfo selected_card_info_list = 9;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.ChessCardInfoOuterClass.ChessCardInfo.Builder> 
            getSelectedCardInfoListBuilderList() {
@@ -835,7 +843,7 @@ public final class ChessSelectedCardsNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n\036ChessSelectedCardsNotify.proto\032\023ChessC" +
       "ardInfo.proto\"K\n\030ChessSelectedCardsNotif" +
-      "y\022/\n\027selected_card_info_list\030\004 \003(\0132\016.Che" +
+      "y\022/\n\027selected_card_info_list\030\t \003(\0132\016.Che" +
       "ssCardInfoB\033\n\031emu.grasscutter.net.protob" +
       "\006proto3"
     };

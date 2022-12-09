@@ -19,47 +19,51 @@ public final class UseMiracleRingReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 miracle_ring_op_type = 13;</code>
-     * @return The miracleRingOpType.
-     */
-    int getMiracleRingOpType();
-
-    /**
-     * <code>.Vector pos = 8;</code>
-     * @return Whether the pos field is set.
-     */
-    boolean hasPos();
-    /**
-     * <code>.Vector pos = 8;</code>
-     * @return The pos.
-     */
-    emu.grasscutter.net.proto.VectorOuterClass.Vector getPos();
-    /**
-     * <code>.Vector pos = 8;</code>
-     */
-    emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getPosOrBuilder();
-
-    /**
-     * <code>.Vector rot = 7;</code>
+     * <code>.Vector rot = 14;</code>
      * @return Whether the rot field is set.
      */
     boolean hasRot();
     /**
-     * <code>.Vector rot = 7;</code>
+     * <code>.Vector rot = 14;</code>
      * @return The rot.
      */
     emu.grasscutter.net.proto.VectorOuterClass.Vector getRot();
     /**
-     * <code>.Vector rot = 7;</code>
+     * <code>.Vector rot = 14;</code>
      */
     emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getRotOrBuilder();
+
+    /**
+     * <code>.Vector pos = 13;</code>
+     * @return Whether the pos field is set.
+     */
+    boolean hasPos();
+    /**
+     * <code>.Vector pos = 13;</code>
+     * @return The pos.
+     */
+    emu.grasscutter.net.proto.VectorOuterClass.Vector getPos();
+    /**
+     * <code>.Vector pos = 13;</code>
+     */
+    emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getPosOrBuilder();
+
+    /**
+     * <code>uint32 miracle_ring_op_type = 5;</code>
+     * @return The miracleRingOpType.
+     */
+    int getMiracleRingOpType();
   }
   /**
    * <pre>
-   * CmdId: 5226
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 5242;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code UseMiracleRingReq}
@@ -106,20 +110,12 @@ public final class UseMiracleRingReqOuterClass {
             case 0:
               done = true;
               break;
-            case 58: {
-              emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder subBuilder = null;
-              if (rot_ != null) {
-                subBuilder = rot_.toBuilder();
-              }
-              rot_ = input.readMessage(emu.grasscutter.net.proto.VectorOuterClass.Vector.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom(rot_);
-                rot_ = subBuilder.buildPartial();
-              }
+            case 40: {
 
+              miracleRingOpType_ = input.readUInt32();
               break;
             }
-            case 66: {
+            case 106: {
               emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder subBuilder = null;
               if (pos_ != null) {
                 subBuilder = pos_.toBuilder();
@@ -132,9 +128,17 @@ public final class UseMiracleRingReqOuterClass {
 
               break;
             }
-            case 104: {
+            case 114: {
+              emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder subBuilder = null;
+              if (rot_ != null) {
+                subBuilder = rot_.toBuilder();
+              }
+              rot_ = input.readMessage(emu.grasscutter.net.proto.VectorOuterClass.Vector.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(rot_);
+                rot_ = subBuilder.buildPartial();
+              }
 
-              miracleRingOpType_ = input.readUInt32();
               break;
             }
             default: {
@@ -286,47 +290,10 @@ public final class UseMiracleRingReqOuterClass {
       // @@protoc_insertion_point(enum_scope:UseMiracleRingReq.MiracleRingOpType)
     }
 
-    public static final int MIRACLE_RING_OP_TYPE_FIELD_NUMBER = 13;
-    private int miracleRingOpType_;
-    /**
-     * <code>uint32 miracle_ring_op_type = 13;</code>
-     * @return The miracleRingOpType.
-     */
-    @java.lang.Override
-    public int getMiracleRingOpType() {
-      return miracleRingOpType_;
-    }
-
-    public static final int POS_FIELD_NUMBER = 8;
-    private emu.grasscutter.net.proto.VectorOuterClass.Vector pos_;
-    /**
-     * <code>.Vector pos = 8;</code>
-     * @return Whether the pos field is set.
-     */
-    @java.lang.Override
-    public boolean hasPos() {
-      return pos_ != null;
-    }
-    /**
-     * <code>.Vector pos = 8;</code>
-     * @return The pos.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.VectorOuterClass.Vector getPos() {
-      return pos_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : pos_;
-    }
-    /**
-     * <code>.Vector pos = 8;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getPosOrBuilder() {
-      return getPos();
-    }
-
-    public static final int ROT_FIELD_NUMBER = 7;
+    public static final int ROT_FIELD_NUMBER = 14;
     private emu.grasscutter.net.proto.VectorOuterClass.Vector rot_;
     /**
-     * <code>.Vector rot = 7;</code>
+     * <code>.Vector rot = 14;</code>
      * @return Whether the rot field is set.
      */
     @java.lang.Override
@@ -334,7 +301,7 @@ public final class UseMiracleRingReqOuterClass {
       return rot_ != null;
     }
     /**
-     * <code>.Vector rot = 7;</code>
+     * <code>.Vector rot = 14;</code>
      * @return The rot.
      */
     @java.lang.Override
@@ -342,11 +309,48 @@ public final class UseMiracleRingReqOuterClass {
       return rot_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : rot_;
     }
     /**
-     * <code>.Vector rot = 7;</code>
+     * <code>.Vector rot = 14;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getRotOrBuilder() {
       return getRot();
+    }
+
+    public static final int POS_FIELD_NUMBER = 13;
+    private emu.grasscutter.net.proto.VectorOuterClass.Vector pos_;
+    /**
+     * <code>.Vector pos = 13;</code>
+     * @return Whether the pos field is set.
+     */
+    @java.lang.Override
+    public boolean hasPos() {
+      return pos_ != null;
+    }
+    /**
+     * <code>.Vector pos = 13;</code>
+     * @return The pos.
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.VectorOuterClass.Vector getPos() {
+      return pos_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : pos_;
+    }
+    /**
+     * <code>.Vector pos = 13;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getPosOrBuilder() {
+      return getPos();
+    }
+
+    public static final int MIRACLE_RING_OP_TYPE_FIELD_NUMBER = 5;
+    private int miracleRingOpType_;
+    /**
+     * <code>uint32 miracle_ring_op_type = 5;</code>
+     * @return The miracleRingOpType.
+     */
+    @java.lang.Override
+    public int getMiracleRingOpType() {
+      return miracleRingOpType_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -363,14 +367,14 @@ public final class UseMiracleRingReqOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (rot_ != null) {
-        output.writeMessage(7, getRot());
+      if (miracleRingOpType_ != 0) {
+        output.writeUInt32(5, miracleRingOpType_);
       }
       if (pos_ != null) {
-        output.writeMessage(8, getPos());
+        output.writeMessage(13, getPos());
       }
-      if (miracleRingOpType_ != 0) {
-        output.writeUInt32(13, miracleRingOpType_);
+      if (rot_ != null) {
+        output.writeMessage(14, getRot());
       }
       unknownFields.writeTo(output);
     }
@@ -381,17 +385,17 @@ public final class UseMiracleRingReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (rot_ != null) {
+      if (miracleRingOpType_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(7, getRot());
+          .computeUInt32Size(5, miracleRingOpType_);
       }
       if (pos_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(8, getPos());
+          .computeMessageSize(13, getPos());
       }
-      if (miracleRingOpType_ != 0) {
+      if (rot_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, miracleRingOpType_);
+          .computeMessageSize(14, getRot());
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -408,18 +412,18 @@ public final class UseMiracleRingReqOuterClass {
       }
       emu.grasscutter.net.proto.UseMiracleRingReqOuterClass.UseMiracleRingReq other = (emu.grasscutter.net.proto.UseMiracleRingReqOuterClass.UseMiracleRingReq) obj;
 
-      if (getMiracleRingOpType()
-          != other.getMiracleRingOpType()) return false;
-      if (hasPos() != other.hasPos()) return false;
-      if (hasPos()) {
-        if (!getPos()
-            .equals(other.getPos())) return false;
-      }
       if (hasRot() != other.hasRot()) return false;
       if (hasRot()) {
         if (!getRot()
             .equals(other.getRot())) return false;
       }
+      if (hasPos() != other.hasPos()) return false;
+      if (hasPos()) {
+        if (!getPos()
+            .equals(other.getPos())) return false;
+      }
+      if (getMiracleRingOpType()
+          != other.getMiracleRingOpType()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -431,16 +435,16 @@ public final class UseMiracleRingReqOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + MIRACLE_RING_OP_TYPE_FIELD_NUMBER;
-      hash = (53 * hash) + getMiracleRingOpType();
-      if (hasPos()) {
-        hash = (37 * hash) + POS_FIELD_NUMBER;
-        hash = (53 * hash) + getPos().hashCode();
-      }
       if (hasRot()) {
         hash = (37 * hash) + ROT_FIELD_NUMBER;
         hash = (53 * hash) + getRot().hashCode();
       }
+      if (hasPos()) {
+        hash = (37 * hash) + POS_FIELD_NUMBER;
+        hash = (53 * hash) + getPos().hashCode();
+      }
+      hash = (37 * hash) + MIRACLE_RING_OP_TYPE_FIELD_NUMBER;
+      hash = (53 * hash) + getMiracleRingOpType();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -538,10 +542,14 @@ public final class UseMiracleRingReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 5226
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 5242;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code UseMiracleRingReq}
@@ -581,20 +589,20 @@ public final class UseMiracleRingReqOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        miracleRingOpType_ = 0;
-
-        if (posBuilder_ == null) {
-          pos_ = null;
-        } else {
-          pos_ = null;
-          posBuilder_ = null;
-        }
         if (rotBuilder_ == null) {
           rot_ = null;
         } else {
           rot_ = null;
           rotBuilder_ = null;
         }
+        if (posBuilder_ == null) {
+          pos_ = null;
+        } else {
+          pos_ = null;
+          posBuilder_ = null;
+        }
+        miracleRingOpType_ = 0;
+
         return this;
       }
 
@@ -621,17 +629,17 @@ public final class UseMiracleRingReqOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.UseMiracleRingReqOuterClass.UseMiracleRingReq buildPartial() {
         emu.grasscutter.net.proto.UseMiracleRingReqOuterClass.UseMiracleRingReq result = new emu.grasscutter.net.proto.UseMiracleRingReqOuterClass.UseMiracleRingReq(this);
-        result.miracleRingOpType_ = miracleRingOpType_;
-        if (posBuilder_ == null) {
-          result.pos_ = pos_;
-        } else {
-          result.pos_ = posBuilder_.build();
-        }
         if (rotBuilder_ == null) {
           result.rot_ = rot_;
         } else {
           result.rot_ = rotBuilder_.build();
         }
+        if (posBuilder_ == null) {
+          result.pos_ = pos_;
+        } else {
+          result.pos_ = posBuilder_.build();
+        }
+        result.miracleRingOpType_ = miracleRingOpType_;
         onBuilt();
         return result;
       }
@@ -680,14 +688,14 @@ public final class UseMiracleRingReqOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.UseMiracleRingReqOuterClass.UseMiracleRingReq other) {
         if (other == emu.grasscutter.net.proto.UseMiracleRingReqOuterClass.UseMiracleRingReq.getDefaultInstance()) return this;
-        if (other.getMiracleRingOpType() != 0) {
-          setMiracleRingOpType(other.getMiracleRingOpType());
+        if (other.hasRot()) {
+          mergeRot(other.getRot());
         }
         if (other.hasPos()) {
           mergePos(other.getPos());
         }
-        if (other.hasRot()) {
-          mergeRot(other.getRot());
+        if (other.getMiracleRingOpType() != 0) {
+          setMiracleRingOpType(other.getMiracleRingOpType());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -718,168 +726,18 @@ public final class UseMiracleRingReqOuterClass {
         return this;
       }
 
-      private int miracleRingOpType_ ;
-      /**
-       * <code>uint32 miracle_ring_op_type = 13;</code>
-       * @return The miracleRingOpType.
-       */
-      @java.lang.Override
-      public int getMiracleRingOpType() {
-        return miracleRingOpType_;
-      }
-      /**
-       * <code>uint32 miracle_ring_op_type = 13;</code>
-       * @param value The miracleRingOpType to set.
-       * @return This builder for chaining.
-       */
-      public Builder setMiracleRingOpType(int value) {
-        
-        miracleRingOpType_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 miracle_ring_op_type = 13;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearMiracleRingOpType() {
-        
-        miracleRingOpType_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private emu.grasscutter.net.proto.VectorOuterClass.Vector pos_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> posBuilder_;
-      /**
-       * <code>.Vector pos = 8;</code>
-       * @return Whether the pos field is set.
-       */
-      public boolean hasPos() {
-        return posBuilder_ != null || pos_ != null;
-      }
-      /**
-       * <code>.Vector pos = 8;</code>
-       * @return The pos.
-       */
-      public emu.grasscutter.net.proto.VectorOuterClass.Vector getPos() {
-        if (posBuilder_ == null) {
-          return pos_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : pos_;
-        } else {
-          return posBuilder_.getMessage();
-        }
-      }
-      /**
-       * <code>.Vector pos = 8;</code>
-       */
-      public Builder setPos(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
-        if (posBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          pos_ = value;
-          onChanged();
-        } else {
-          posBuilder_.setMessage(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.Vector pos = 8;</code>
-       */
-      public Builder setPos(
-          emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder builderForValue) {
-        if (posBuilder_ == null) {
-          pos_ = builderForValue.build();
-          onChanged();
-        } else {
-          posBuilder_.setMessage(builderForValue.build());
-        }
-
-        return this;
-      }
-      /**
-       * <code>.Vector pos = 8;</code>
-       */
-      public Builder mergePos(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
-        if (posBuilder_ == null) {
-          if (pos_ != null) {
-            pos_ =
-              emu.grasscutter.net.proto.VectorOuterClass.Vector.newBuilder(pos_).mergeFrom(value).buildPartial();
-          } else {
-            pos_ = value;
-          }
-          onChanged();
-        } else {
-          posBuilder_.mergeFrom(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.Vector pos = 8;</code>
-       */
-      public Builder clearPos() {
-        if (posBuilder_ == null) {
-          pos_ = null;
-          onChanged();
-        } else {
-          pos_ = null;
-          posBuilder_ = null;
-        }
-
-        return this;
-      }
-      /**
-       * <code>.Vector pos = 8;</code>
-       */
-      public emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder getPosBuilder() {
-        
-        onChanged();
-        return getPosFieldBuilder().getBuilder();
-      }
-      /**
-       * <code>.Vector pos = 8;</code>
-       */
-      public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getPosOrBuilder() {
-        if (posBuilder_ != null) {
-          return posBuilder_.getMessageOrBuilder();
-        } else {
-          return pos_ == null ?
-              emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : pos_;
-        }
-      }
-      /**
-       * <code>.Vector pos = 8;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> 
-          getPosFieldBuilder() {
-        if (posBuilder_ == null) {
-          posBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder>(
-                  getPos(),
-                  getParentForChildren(),
-                  isClean());
-          pos_ = null;
-        }
-        return posBuilder_;
-      }
-
       private emu.grasscutter.net.proto.VectorOuterClass.Vector rot_;
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> rotBuilder_;
       /**
-       * <code>.Vector rot = 7;</code>
+       * <code>.Vector rot = 14;</code>
        * @return Whether the rot field is set.
        */
       public boolean hasRot() {
         return rotBuilder_ != null || rot_ != null;
       }
       /**
-       * <code>.Vector rot = 7;</code>
+       * <code>.Vector rot = 14;</code>
        * @return The rot.
        */
       public emu.grasscutter.net.proto.VectorOuterClass.Vector getRot() {
@@ -890,7 +748,7 @@ public final class UseMiracleRingReqOuterClass {
         }
       }
       /**
-       * <code>.Vector rot = 7;</code>
+       * <code>.Vector rot = 14;</code>
        */
       public Builder setRot(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
         if (rotBuilder_ == null) {
@@ -906,7 +764,7 @@ public final class UseMiracleRingReqOuterClass {
         return this;
       }
       /**
-       * <code>.Vector rot = 7;</code>
+       * <code>.Vector rot = 14;</code>
        */
       public Builder setRot(
           emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder builderForValue) {
@@ -920,7 +778,7 @@ public final class UseMiracleRingReqOuterClass {
         return this;
       }
       /**
-       * <code>.Vector rot = 7;</code>
+       * <code>.Vector rot = 14;</code>
        */
       public Builder mergeRot(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
         if (rotBuilder_ == null) {
@@ -938,7 +796,7 @@ public final class UseMiracleRingReqOuterClass {
         return this;
       }
       /**
-       * <code>.Vector rot = 7;</code>
+       * <code>.Vector rot = 14;</code>
        */
       public Builder clearRot() {
         if (rotBuilder_ == null) {
@@ -952,7 +810,7 @@ public final class UseMiracleRingReqOuterClass {
         return this;
       }
       /**
-       * <code>.Vector rot = 7;</code>
+       * <code>.Vector rot = 14;</code>
        */
       public emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder getRotBuilder() {
         
@@ -960,7 +818,7 @@ public final class UseMiracleRingReqOuterClass {
         return getRotFieldBuilder().getBuilder();
       }
       /**
-       * <code>.Vector rot = 7;</code>
+       * <code>.Vector rot = 14;</code>
        */
       public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getRotOrBuilder() {
         if (rotBuilder_ != null) {
@@ -971,7 +829,7 @@ public final class UseMiracleRingReqOuterClass {
         }
       }
       /**
-       * <code>.Vector rot = 7;</code>
+       * <code>.Vector rot = 14;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> 
@@ -985,6 +843,156 @@ public final class UseMiracleRingReqOuterClass {
           rot_ = null;
         }
         return rotBuilder_;
+      }
+
+      private emu.grasscutter.net.proto.VectorOuterClass.Vector pos_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> posBuilder_;
+      /**
+       * <code>.Vector pos = 13;</code>
+       * @return Whether the pos field is set.
+       */
+      public boolean hasPos() {
+        return posBuilder_ != null || pos_ != null;
+      }
+      /**
+       * <code>.Vector pos = 13;</code>
+       * @return The pos.
+       */
+      public emu.grasscutter.net.proto.VectorOuterClass.Vector getPos() {
+        if (posBuilder_ == null) {
+          return pos_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : pos_;
+        } else {
+          return posBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>.Vector pos = 13;</code>
+       */
+      public Builder setPos(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
+        if (posBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          pos_ = value;
+          onChanged();
+        } else {
+          posBuilder_.setMessage(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.Vector pos = 13;</code>
+       */
+      public Builder setPos(
+          emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder builderForValue) {
+        if (posBuilder_ == null) {
+          pos_ = builderForValue.build();
+          onChanged();
+        } else {
+          posBuilder_.setMessage(builderForValue.build());
+        }
+
+        return this;
+      }
+      /**
+       * <code>.Vector pos = 13;</code>
+       */
+      public Builder mergePos(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
+        if (posBuilder_ == null) {
+          if (pos_ != null) {
+            pos_ =
+              emu.grasscutter.net.proto.VectorOuterClass.Vector.newBuilder(pos_).mergeFrom(value).buildPartial();
+          } else {
+            pos_ = value;
+          }
+          onChanged();
+        } else {
+          posBuilder_.mergeFrom(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.Vector pos = 13;</code>
+       */
+      public Builder clearPos() {
+        if (posBuilder_ == null) {
+          pos_ = null;
+          onChanged();
+        } else {
+          pos_ = null;
+          posBuilder_ = null;
+        }
+
+        return this;
+      }
+      /**
+       * <code>.Vector pos = 13;</code>
+       */
+      public emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder getPosBuilder() {
+        
+        onChanged();
+        return getPosFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.Vector pos = 13;</code>
+       */
+      public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getPosOrBuilder() {
+        if (posBuilder_ != null) {
+          return posBuilder_.getMessageOrBuilder();
+        } else {
+          return pos_ == null ?
+              emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : pos_;
+        }
+      }
+      /**
+       * <code>.Vector pos = 13;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> 
+          getPosFieldBuilder() {
+        if (posBuilder_ == null) {
+          posBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder>(
+                  getPos(),
+                  getParentForChildren(),
+                  isClean());
+          pos_ = null;
+        }
+        return posBuilder_;
+      }
+
+      private int miracleRingOpType_ ;
+      /**
+       * <code>uint32 miracle_ring_op_type = 5;</code>
+       * @return The miracleRingOpType.
+       */
+      @java.lang.Override
+      public int getMiracleRingOpType() {
+        return miracleRingOpType_;
+      }
+      /**
+       * <code>uint32 miracle_ring_op_type = 5;</code>
+       * @param value The miracleRingOpType to set.
+       * @return This builder for chaining.
+       */
+      public Builder setMiracleRingOpType(int value) {
+        
+        miracleRingOpType_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 miracle_ring_op_type = 5;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearMiracleRingOpType() {
+        
+        miracleRingOpType_ = 0;
+        onChanged();
+        return this;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -1054,9 +1062,9 @@ public final class UseMiracleRingReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\027UseMiracleRingReq.proto\032\014Vector.proto\"" +
-      "\323\001\n\021UseMiracleRingReq\022\034\n\024miracle_ring_op" +
-      "_type\030\r \001(\r\022\024\n\003pos\030\010 \001(\0132\007.Vector\022\024\n\003rot" +
-      "\030\007 \001(\0132\007.Vector\"t\n\021MiracleRingOpType\022\035\n\031" +
+      "\323\001\n\021UseMiracleRingReq\022\024\n\003rot\030\016 \001(\0132\007.Vec" +
+      "tor\022\024\n\003pos\030\r \001(\0132\007.Vector\022\034\n\024miracle_rin" +
+      "g_op_type\030\005 \001(\r\"t\n\021MiracleRingOpType\022\035\n\031" +
       "MIRACLE_RING_OP_TYPE_NONE\020\000\022\036\n\032MIRACLE_R" +
       "ING_OP_TYPE_PLACE\020\001\022 \n\034MIRACLE_RING_OP_T" +
       "YPE_RETRACT\020\002B\033\n\031emu.grasscutter.net.pro" +
@@ -1072,7 +1080,7 @@ public final class UseMiracleRingReqOuterClass {
     internal_static_UseMiracleRingReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_UseMiracleRingReq_descriptor,
-        new java.lang.String[] { "MiracleRingOpType", "Pos", "Rot", });
+        new java.lang.String[] { "Rot", "Pos", "MiracleRingOpType", });
     emu.grasscutter.net.proto.VectorOuterClass.getDescriptor();
   }
 

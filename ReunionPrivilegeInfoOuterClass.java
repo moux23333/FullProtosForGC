@@ -19,22 +19,22 @@ public final class ReunionPrivilegeInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 cur_day_count = 7;</code>
-     * @return The curDayCount.
+     * <code>uint32 Unk3300_GJBEAFPMFAA = 14;</code>
+     * @return The unk3300GJBEAFPMFAA.
      */
-    int getCurDayCount();
+    int getUnk3300GJBEAFPMFAA();
 
     /**
-     * <code>uint32 total_count = 10;</code>
-     * @return The totalCount.
-     */
-    int getTotalCount();
-
-    /**
-     * <code>uint32 privilege_id = 4;</code>
+     * <code>uint32 privilege_id = 2;</code>
      * @return The privilegeId.
      */
     int getPrivilegeId();
+
+    /**
+     * <code>uint32 Unk3300_ALOLACFGMHI = 1;</code>
+     * @return The unk3300ALOLACFGMHI.
+     */
+    int getUnk3300ALOLACFGMHI();
   }
   /**
    * Protobuf type {@code ReunionPrivilegeInfo}
@@ -81,19 +81,19 @@ public final class ReunionPrivilegeInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 32: {
+            case 8: {
+
+              unk3300ALOLACFGMHI_ = input.readUInt32();
+              break;
+            }
+            case 16: {
 
               privilegeId_ = input.readUInt32();
               break;
             }
-            case 56: {
+            case 112: {
 
-              curDayCount_ = input.readUInt32();
-              break;
-            }
-            case 80: {
-
-              totalCount_ = input.readUInt32();
+              unk3300GJBEAFPMFAA_ = input.readUInt32();
               break;
             }
             default: {
@@ -128,37 +128,37 @@ public final class ReunionPrivilegeInfoOuterClass {
               emu.grasscutter.net.proto.ReunionPrivilegeInfoOuterClass.ReunionPrivilegeInfo.class, emu.grasscutter.net.proto.ReunionPrivilegeInfoOuterClass.ReunionPrivilegeInfo.Builder.class);
     }
 
-    public static final int CUR_DAY_COUNT_FIELD_NUMBER = 7;
-    private int curDayCount_;
+    public static final int UNK3300_GJBEAFPMFAA_FIELD_NUMBER = 14;
+    private int unk3300GJBEAFPMFAA_;
     /**
-     * <code>uint32 cur_day_count = 7;</code>
-     * @return The curDayCount.
+     * <code>uint32 Unk3300_GJBEAFPMFAA = 14;</code>
+     * @return The unk3300GJBEAFPMFAA.
      */
     @java.lang.Override
-    public int getCurDayCount() {
-      return curDayCount_;
+    public int getUnk3300GJBEAFPMFAA() {
+      return unk3300GJBEAFPMFAA_;
     }
 
-    public static final int TOTAL_COUNT_FIELD_NUMBER = 10;
-    private int totalCount_;
-    /**
-     * <code>uint32 total_count = 10;</code>
-     * @return The totalCount.
-     */
-    @java.lang.Override
-    public int getTotalCount() {
-      return totalCount_;
-    }
-
-    public static final int PRIVILEGE_ID_FIELD_NUMBER = 4;
+    public static final int PRIVILEGE_ID_FIELD_NUMBER = 2;
     private int privilegeId_;
     /**
-     * <code>uint32 privilege_id = 4;</code>
+     * <code>uint32 privilege_id = 2;</code>
      * @return The privilegeId.
      */
     @java.lang.Override
     public int getPrivilegeId() {
       return privilegeId_;
+    }
+
+    public static final int UNK3300_ALOLACFGMHI_FIELD_NUMBER = 1;
+    private int unk3300ALOLACFGMHI_;
+    /**
+     * <code>uint32 Unk3300_ALOLACFGMHI = 1;</code>
+     * @return The unk3300ALOLACFGMHI.
+     */
+    @java.lang.Override
+    public int getUnk3300ALOLACFGMHI() {
+      return unk3300ALOLACFGMHI_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -175,14 +175,14 @@ public final class ReunionPrivilegeInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (unk3300ALOLACFGMHI_ != 0) {
+        output.writeUInt32(1, unk3300ALOLACFGMHI_);
+      }
       if (privilegeId_ != 0) {
-        output.writeUInt32(4, privilegeId_);
+        output.writeUInt32(2, privilegeId_);
       }
-      if (curDayCount_ != 0) {
-        output.writeUInt32(7, curDayCount_);
-      }
-      if (totalCount_ != 0) {
-        output.writeUInt32(10, totalCount_);
+      if (unk3300GJBEAFPMFAA_ != 0) {
+        output.writeUInt32(14, unk3300GJBEAFPMFAA_);
       }
       unknownFields.writeTo(output);
     }
@@ -193,17 +193,17 @@ public final class ReunionPrivilegeInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (unk3300ALOLACFGMHI_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(1, unk3300ALOLACFGMHI_);
+      }
       if (privilegeId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, privilegeId_);
+          .computeUInt32Size(2, privilegeId_);
       }
-      if (curDayCount_ != 0) {
+      if (unk3300GJBEAFPMFAA_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, curDayCount_);
-      }
-      if (totalCount_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, totalCount_);
+          .computeUInt32Size(14, unk3300GJBEAFPMFAA_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -220,12 +220,12 @@ public final class ReunionPrivilegeInfoOuterClass {
       }
       emu.grasscutter.net.proto.ReunionPrivilegeInfoOuterClass.ReunionPrivilegeInfo other = (emu.grasscutter.net.proto.ReunionPrivilegeInfoOuterClass.ReunionPrivilegeInfo) obj;
 
-      if (getCurDayCount()
-          != other.getCurDayCount()) return false;
-      if (getTotalCount()
-          != other.getTotalCount()) return false;
+      if (getUnk3300GJBEAFPMFAA()
+          != other.getUnk3300GJBEAFPMFAA()) return false;
       if (getPrivilegeId()
           != other.getPrivilegeId()) return false;
+      if (getUnk3300ALOLACFGMHI()
+          != other.getUnk3300ALOLACFGMHI()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -237,12 +237,12 @@ public final class ReunionPrivilegeInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + CUR_DAY_COUNT_FIELD_NUMBER;
-      hash = (53 * hash) + getCurDayCount();
-      hash = (37 * hash) + TOTAL_COUNT_FIELD_NUMBER;
-      hash = (53 * hash) + getTotalCount();
+      hash = (37 * hash) + UNK3300_GJBEAFPMFAA_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300GJBEAFPMFAA();
       hash = (37 * hash) + PRIVILEGE_ID_FIELD_NUMBER;
       hash = (53 * hash) + getPrivilegeId();
+      hash = (37 * hash) + UNK3300_ALOLACFGMHI_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300ALOLACFGMHI();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -376,11 +376,11 @@ public final class ReunionPrivilegeInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        curDayCount_ = 0;
-
-        totalCount_ = 0;
+        unk3300GJBEAFPMFAA_ = 0;
 
         privilegeId_ = 0;
+
+        unk3300ALOLACFGMHI_ = 0;
 
         return this;
       }
@@ -408,9 +408,9 @@ public final class ReunionPrivilegeInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.ReunionPrivilegeInfoOuterClass.ReunionPrivilegeInfo buildPartial() {
         emu.grasscutter.net.proto.ReunionPrivilegeInfoOuterClass.ReunionPrivilegeInfo result = new emu.grasscutter.net.proto.ReunionPrivilegeInfoOuterClass.ReunionPrivilegeInfo(this);
-        result.curDayCount_ = curDayCount_;
-        result.totalCount_ = totalCount_;
+        result.unk3300GJBEAFPMFAA_ = unk3300GJBEAFPMFAA_;
         result.privilegeId_ = privilegeId_;
+        result.unk3300ALOLACFGMHI_ = unk3300ALOLACFGMHI_;
         onBuilt();
         return result;
       }
@@ -459,14 +459,14 @@ public final class ReunionPrivilegeInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.ReunionPrivilegeInfoOuterClass.ReunionPrivilegeInfo other) {
         if (other == emu.grasscutter.net.proto.ReunionPrivilegeInfoOuterClass.ReunionPrivilegeInfo.getDefaultInstance()) return this;
-        if (other.getCurDayCount() != 0) {
-          setCurDayCount(other.getCurDayCount());
-        }
-        if (other.getTotalCount() != 0) {
-          setTotalCount(other.getTotalCount());
+        if (other.getUnk3300GJBEAFPMFAA() != 0) {
+          setUnk3300GJBEAFPMFAA(other.getUnk3300GJBEAFPMFAA());
         }
         if (other.getPrivilegeId() != 0) {
           setPrivilegeId(other.getPrivilegeId());
+        }
+        if (other.getUnk3300ALOLACFGMHI() != 0) {
+          setUnk3300ALOLACFGMHI(other.getUnk3300ALOLACFGMHI());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -497,71 +497,40 @@ public final class ReunionPrivilegeInfoOuterClass {
         return this;
       }
 
-      private int curDayCount_ ;
+      private int unk3300GJBEAFPMFAA_ ;
       /**
-       * <code>uint32 cur_day_count = 7;</code>
-       * @return The curDayCount.
+       * <code>uint32 Unk3300_GJBEAFPMFAA = 14;</code>
+       * @return The unk3300GJBEAFPMFAA.
        */
       @java.lang.Override
-      public int getCurDayCount() {
-        return curDayCount_;
+      public int getUnk3300GJBEAFPMFAA() {
+        return unk3300GJBEAFPMFAA_;
       }
       /**
-       * <code>uint32 cur_day_count = 7;</code>
-       * @param value The curDayCount to set.
+       * <code>uint32 Unk3300_GJBEAFPMFAA = 14;</code>
+       * @param value The unk3300GJBEAFPMFAA to set.
        * @return This builder for chaining.
        */
-      public Builder setCurDayCount(int value) {
+      public Builder setUnk3300GJBEAFPMFAA(int value) {
         
-        curDayCount_ = value;
+        unk3300GJBEAFPMFAA_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 cur_day_count = 7;</code>
+       * <code>uint32 Unk3300_GJBEAFPMFAA = 14;</code>
        * @return This builder for chaining.
        */
-      public Builder clearCurDayCount() {
+      public Builder clearUnk3300GJBEAFPMFAA() {
         
-        curDayCount_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int totalCount_ ;
-      /**
-       * <code>uint32 total_count = 10;</code>
-       * @return The totalCount.
-       */
-      @java.lang.Override
-      public int getTotalCount() {
-        return totalCount_;
-      }
-      /**
-       * <code>uint32 total_count = 10;</code>
-       * @param value The totalCount to set.
-       * @return This builder for chaining.
-       */
-      public Builder setTotalCount(int value) {
-        
-        totalCount_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 total_count = 10;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearTotalCount() {
-        
-        totalCount_ = 0;
+        unk3300GJBEAFPMFAA_ = 0;
         onChanged();
         return this;
       }
 
       private int privilegeId_ ;
       /**
-       * <code>uint32 privilege_id = 4;</code>
+       * <code>uint32 privilege_id = 2;</code>
        * @return The privilegeId.
        */
       @java.lang.Override
@@ -569,7 +538,7 @@ public final class ReunionPrivilegeInfoOuterClass {
         return privilegeId_;
       }
       /**
-       * <code>uint32 privilege_id = 4;</code>
+       * <code>uint32 privilege_id = 2;</code>
        * @param value The privilegeId to set.
        * @return This builder for chaining.
        */
@@ -580,12 +549,43 @@ public final class ReunionPrivilegeInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 privilege_id = 4;</code>
+       * <code>uint32 privilege_id = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearPrivilegeId() {
         
         privilegeId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int unk3300ALOLACFGMHI_ ;
+      /**
+       * <code>uint32 Unk3300_ALOLACFGMHI = 1;</code>
+       * @return The unk3300ALOLACFGMHI.
+       */
+      @java.lang.Override
+      public int getUnk3300ALOLACFGMHI() {
+        return unk3300ALOLACFGMHI_;
+      }
+      /**
+       * <code>uint32 Unk3300_ALOLACFGMHI = 1;</code>
+       * @param value The unk3300ALOLACFGMHI to set.
+       * @return This builder for chaining.
+       */
+      public Builder setUnk3300ALOLACFGMHI(int value) {
+        
+        unk3300ALOLACFGMHI_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 Unk3300_ALOLACFGMHI = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearUnk3300ALOLACFGMHI() {
+        
+        unk3300ALOLACFGMHI_ = 0;
         onChanged();
         return this;
       }
@@ -656,10 +656,11 @@ public final class ReunionPrivilegeInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\032ReunionPrivilegeInfo.proto\"X\n\024ReunionP" +
-      "rivilegeInfo\022\025\n\rcur_day_count\030\007 \001(\r\022\023\n\013t" +
-      "otal_count\030\n \001(\r\022\024\n\014privilege_id\030\004 \001(\rB\033" +
-      "\n\031emu.grasscutter.net.protob\006proto3"
+      "\n\032ReunionPrivilegeInfo.proto\"f\n\024ReunionP" +
+      "rivilegeInfo\022\033\n\023Unk3300_GJBEAFPMFAA\030\016 \001(" +
+      "\r\022\024\n\014privilege_id\030\002 \001(\r\022\033\n\023Unk3300_ALOLA" +
+      "CFGMHI\030\001 \001(\rB\033\n\031emu.grasscutter.net.prot" +
+      "ob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -670,7 +671,7 @@ public final class ReunionPrivilegeInfoOuterClass {
     internal_static_ReunionPrivilegeInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ReunionPrivilegeInfo_descriptor,
-        new java.lang.String[] { "CurDayCount", "TotalCount", "PrivilegeId", });
+        new java.lang.String[] { "Unk3300GJBEAFPMFAA", "PrivilegeId", "Unk3300ALOLACFGMHI", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

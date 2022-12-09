@@ -19,17 +19,21 @@ public final class DungeonCandidateTeamSetChangingAvatarReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_changing_avatar = 12;</code>
+     * <code>bool is_changing_avatar = 11;</code>
      * @return The isChangingAvatar.
      */
     boolean getIsChangingAvatar();
   }
   /**
    * <pre>
-   * CmdId: 918
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 908;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code DungeonCandidateTeamSetChangingAvatarReq}
@@ -76,7 +80,7 @@ public final class DungeonCandidateTeamSetChangingAvatarReqOuterClass {
             case 0:
               done = true;
               break;
-            case 96: {
+            case 88: {
 
               isChangingAvatar_ = input.readBool();
               break;
@@ -113,10 +117,10 @@ public final class DungeonCandidateTeamSetChangingAvatarReqOuterClass {
               emu.grasscutter.net.proto.DungeonCandidateTeamSetChangingAvatarReqOuterClass.DungeonCandidateTeamSetChangingAvatarReq.class, emu.grasscutter.net.proto.DungeonCandidateTeamSetChangingAvatarReqOuterClass.DungeonCandidateTeamSetChangingAvatarReq.Builder.class);
     }
 
-    public static final int IS_CHANGING_AVATAR_FIELD_NUMBER = 12;
+    public static final int IS_CHANGING_AVATAR_FIELD_NUMBER = 11;
     private boolean isChangingAvatar_;
     /**
-     * <code>bool is_changing_avatar = 12;</code>
+     * <code>bool is_changing_avatar = 11;</code>
      * @return The isChangingAvatar.
      */
     @java.lang.Override
@@ -139,7 +143,7 @@ public final class DungeonCandidateTeamSetChangingAvatarReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (isChangingAvatar_ != false) {
-        output.writeBool(12, isChangingAvatar_);
+        output.writeBool(11, isChangingAvatar_);
       }
       unknownFields.writeTo(output);
     }
@@ -152,7 +156,7 @@ public final class DungeonCandidateTeamSetChangingAvatarReqOuterClass {
       size = 0;
       if (isChangingAvatar_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(12, isChangingAvatar_);
+          .computeBoolSize(11, isChangingAvatar_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -282,10 +286,14 @@ public final class DungeonCandidateTeamSetChangingAvatarReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 918
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 908;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code DungeonCandidateTeamSetChangingAvatarReq}
@@ -436,7 +444,7 @@ public final class DungeonCandidateTeamSetChangingAvatarReqOuterClass {
 
       private boolean isChangingAvatar_ ;
       /**
-       * <code>bool is_changing_avatar = 12;</code>
+       * <code>bool is_changing_avatar = 11;</code>
        * @return The isChangingAvatar.
        */
       @java.lang.Override
@@ -444,7 +452,7 @@ public final class DungeonCandidateTeamSetChangingAvatarReqOuterClass {
         return isChangingAvatar_;
       }
       /**
-       * <code>bool is_changing_avatar = 12;</code>
+       * <code>bool is_changing_avatar = 11;</code>
        * @param value The isChangingAvatar to set.
        * @return This builder for chaining.
        */
@@ -455,7 +463,7 @@ public final class DungeonCandidateTeamSetChangingAvatarReqOuterClass {
         return this;
       }
       /**
-       * <code>bool is_changing_avatar = 12;</code>
+       * <code>bool is_changing_avatar = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsChangingAvatar() {
@@ -533,7 +541,7 @@ public final class DungeonCandidateTeamSetChangingAvatarReqOuterClass {
     java.lang.String[] descriptorData = {
       "\n.DungeonCandidateTeamSetChangingAvatarR" +
       "eq.proto\"F\n(DungeonCandidateTeamSetChang" +
-      "ingAvatarReq\022\032\n\022is_changing_avatar\030\014 \001(\010" +
+      "ingAvatarReq\022\032\n\022is_changing_avatar\030\013 \001(\010" +
       "B\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

@@ -19,64 +19,68 @@ public final class LanternRiteEndFireworksReformRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_full_score = 10;</code>
-     * @return The isFullScore.
+     * <code>bool Unk3300_CGJNBGAKFAD = 11;</code>
+     * @return The unk3300CGJNBGAKFAD.
      */
-    boolean getIsFullScore();
+    boolean getUnk3300CGJNBGAKFAD();
 
     /**
-     * <code>int32 retcode = 1;</code>
+     * <code>bool Unk3300_FPEFIADFBNI = 1;</code>
+     * @return The unk3300FPEFIADFBNI.
+     */
+    boolean getUnk3300FPEFIADFBNI();
+
+    /**
+     * <code>int32 retcode = 9;</code>
      * @return The retcode.
      */
     int getRetcode();
 
     /**
-     * <code>bool is_unlock_fireworks = 6;</code>
-     * @return The isUnlockFireworks.
-     */
-    boolean getIsUnlockFireworks();
-
-    /**
-     * <code>uint32 stage_id = 15;</code>
+     * <code>uint32 stage_id = 13;</code>
      * @return The stageId.
      */
     int getStageId();
 
     /**
-     * <code>bool is_unlock_new_skill = 12;</code>
-     * @return The isUnlockNewSkill.
-     */
-    boolean getIsUnlockNewSkill();
-
-    /**
-     * <code>bool is_stamina_up = 4;</code>
-     * @return The isStaminaUp.
-     */
-    boolean getIsStaminaUp();
-
-    /**
-     * <code>uint32 final_score = 13;</code>
+     * <code>uint32 final_score = 15;</code>
      * @return The finalScore.
      */
     int getFinalScore();
 
     /**
-     * <code>uint32 challenge_id = 5;</code>
+     * <code>bool Unk3300_ALMNEGCIILA = 6;</code>
+     * @return The unk3300ALMNEGCIILA.
+     */
+    boolean getUnk3300ALMNEGCIILA();
+
+    /**
+     * <code>bool is_new_record = 10;</code>
+     * @return The isNewRecord.
+     */
+    boolean getIsNewRecord();
+
+    /**
+     * <code>uint32 challenge_id = 4;</code>
      * @return The challengeId.
      */
     int getChallengeId();
 
     /**
-     * <code>bool is_new_record = 9;</code>
-     * @return The isNewRecord.
+     * <code>bool is_full_score = 7;</code>
+     * @return The isFullScore.
      */
-    boolean getIsNewRecord();
+    boolean getIsFullScore();
   }
   /**
    * <pre>
-   * CmdId: 8933
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 8414;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code LanternRiteEndFireworksReformRsp}
@@ -125,47 +129,47 @@ public final class LanternRiteEndFireworksReformRspOuterClass {
               break;
             case 8: {
 
-              retcode_ = input.readInt32();
+              unk3300FPEFIADFBNI_ = input.readBool();
               break;
             }
             case 32: {
-
-              isStaminaUp_ = input.readBool();
-              break;
-            }
-            case 40: {
 
               challengeId_ = input.readUInt32();
               break;
             }
             case 48: {
 
-              isUnlockFireworks_ = input.readBool();
+              unk3300ALMNEGCIILA_ = input.readBool();
               break;
             }
-            case 72: {
-
-              isNewRecord_ = input.readBool();
-              break;
-            }
-            case 80: {
+            case 56: {
 
               isFullScore_ = input.readBool();
               break;
             }
-            case 96: {
+            case 72: {
 
-              isUnlockNewSkill_ = input.readBool();
+              retcode_ = input.readInt32();
+              break;
+            }
+            case 80: {
+
+              isNewRecord_ = input.readBool();
+              break;
+            }
+            case 88: {
+
+              unk3300CGJNBGAKFAD_ = input.readBool();
               break;
             }
             case 104: {
 
-              finalScore_ = input.readUInt32();
+              stageId_ = input.readUInt32();
               break;
             }
             case 120: {
 
-              stageId_ = input.readUInt32();
+              finalScore_ = input.readUInt32();
               break;
             }
             default: {
@@ -200,21 +204,32 @@ public final class LanternRiteEndFireworksReformRspOuterClass {
               emu.grasscutter.net.proto.LanternRiteEndFireworksReformRspOuterClass.LanternRiteEndFireworksReformRsp.class, emu.grasscutter.net.proto.LanternRiteEndFireworksReformRspOuterClass.LanternRiteEndFireworksReformRsp.Builder.class);
     }
 
-    public static final int IS_FULL_SCORE_FIELD_NUMBER = 10;
-    private boolean isFullScore_;
+    public static final int UNK3300_CGJNBGAKFAD_FIELD_NUMBER = 11;
+    private boolean unk3300CGJNBGAKFAD_;
     /**
-     * <code>bool is_full_score = 10;</code>
-     * @return The isFullScore.
+     * <code>bool Unk3300_CGJNBGAKFAD = 11;</code>
+     * @return The unk3300CGJNBGAKFAD.
      */
     @java.lang.Override
-    public boolean getIsFullScore() {
-      return isFullScore_;
+    public boolean getUnk3300CGJNBGAKFAD() {
+      return unk3300CGJNBGAKFAD_;
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 1;
+    public static final int UNK3300_FPEFIADFBNI_FIELD_NUMBER = 1;
+    private boolean unk3300FPEFIADFBNI_;
+    /**
+     * <code>bool Unk3300_FPEFIADFBNI = 1;</code>
+     * @return The unk3300FPEFIADFBNI.
+     */
+    @java.lang.Override
+    public boolean getUnk3300FPEFIADFBNI() {
+      return unk3300FPEFIADFBNI_;
+    }
+
+    public static final int RETCODE_FIELD_NUMBER = 9;
     private int retcode_;
     /**
-     * <code>int32 retcode = 1;</code>
+     * <code>int32 retcode = 9;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -222,21 +237,10 @@ public final class LanternRiteEndFireworksReformRspOuterClass {
       return retcode_;
     }
 
-    public static final int IS_UNLOCK_FIREWORKS_FIELD_NUMBER = 6;
-    private boolean isUnlockFireworks_;
-    /**
-     * <code>bool is_unlock_fireworks = 6;</code>
-     * @return The isUnlockFireworks.
-     */
-    @java.lang.Override
-    public boolean getIsUnlockFireworks() {
-      return isUnlockFireworks_;
-    }
-
-    public static final int STAGE_ID_FIELD_NUMBER = 15;
+    public static final int STAGE_ID_FIELD_NUMBER = 13;
     private int stageId_;
     /**
-     * <code>uint32 stage_id = 15;</code>
+     * <code>uint32 stage_id = 13;</code>
      * @return The stageId.
      */
     @java.lang.Override
@@ -244,32 +248,10 @@ public final class LanternRiteEndFireworksReformRspOuterClass {
       return stageId_;
     }
 
-    public static final int IS_UNLOCK_NEW_SKILL_FIELD_NUMBER = 12;
-    private boolean isUnlockNewSkill_;
-    /**
-     * <code>bool is_unlock_new_skill = 12;</code>
-     * @return The isUnlockNewSkill.
-     */
-    @java.lang.Override
-    public boolean getIsUnlockNewSkill() {
-      return isUnlockNewSkill_;
-    }
-
-    public static final int IS_STAMINA_UP_FIELD_NUMBER = 4;
-    private boolean isStaminaUp_;
-    /**
-     * <code>bool is_stamina_up = 4;</code>
-     * @return The isStaminaUp.
-     */
-    @java.lang.Override
-    public boolean getIsStaminaUp() {
-      return isStaminaUp_;
-    }
-
-    public static final int FINAL_SCORE_FIELD_NUMBER = 13;
+    public static final int FINAL_SCORE_FIELD_NUMBER = 15;
     private int finalScore_;
     /**
-     * <code>uint32 final_score = 13;</code>
+     * <code>uint32 final_score = 15;</code>
      * @return The finalScore.
      */
     @java.lang.Override
@@ -277,10 +259,32 @@ public final class LanternRiteEndFireworksReformRspOuterClass {
       return finalScore_;
     }
 
-    public static final int CHALLENGE_ID_FIELD_NUMBER = 5;
+    public static final int UNK3300_ALMNEGCIILA_FIELD_NUMBER = 6;
+    private boolean unk3300ALMNEGCIILA_;
+    /**
+     * <code>bool Unk3300_ALMNEGCIILA = 6;</code>
+     * @return The unk3300ALMNEGCIILA.
+     */
+    @java.lang.Override
+    public boolean getUnk3300ALMNEGCIILA() {
+      return unk3300ALMNEGCIILA_;
+    }
+
+    public static final int IS_NEW_RECORD_FIELD_NUMBER = 10;
+    private boolean isNewRecord_;
+    /**
+     * <code>bool is_new_record = 10;</code>
+     * @return The isNewRecord.
+     */
+    @java.lang.Override
+    public boolean getIsNewRecord() {
+      return isNewRecord_;
+    }
+
+    public static final int CHALLENGE_ID_FIELD_NUMBER = 4;
     private int challengeId_;
     /**
-     * <code>uint32 challenge_id = 5;</code>
+     * <code>uint32 challenge_id = 4;</code>
      * @return The challengeId.
      */
     @java.lang.Override
@@ -288,15 +292,15 @@ public final class LanternRiteEndFireworksReformRspOuterClass {
       return challengeId_;
     }
 
-    public static final int IS_NEW_RECORD_FIELD_NUMBER = 9;
-    private boolean isNewRecord_;
+    public static final int IS_FULL_SCORE_FIELD_NUMBER = 7;
+    private boolean isFullScore_;
     /**
-     * <code>bool is_new_record = 9;</code>
-     * @return The isNewRecord.
+     * <code>bool is_full_score = 7;</code>
+     * @return The isFullScore.
      */
     @java.lang.Override
-    public boolean getIsNewRecord() {
-      return isNewRecord_;
+    public boolean getIsFullScore() {
+      return isFullScore_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -313,32 +317,32 @@ public final class LanternRiteEndFireworksReformRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (retcode_ != 0) {
-        output.writeInt32(1, retcode_);
-      }
-      if (isStaminaUp_ != false) {
-        output.writeBool(4, isStaminaUp_);
+      if (unk3300FPEFIADFBNI_ != false) {
+        output.writeBool(1, unk3300FPEFIADFBNI_);
       }
       if (challengeId_ != 0) {
-        output.writeUInt32(5, challengeId_);
+        output.writeUInt32(4, challengeId_);
       }
-      if (isUnlockFireworks_ != false) {
-        output.writeBool(6, isUnlockFireworks_);
-      }
-      if (isNewRecord_ != false) {
-        output.writeBool(9, isNewRecord_);
+      if (unk3300ALMNEGCIILA_ != false) {
+        output.writeBool(6, unk3300ALMNEGCIILA_);
       }
       if (isFullScore_ != false) {
-        output.writeBool(10, isFullScore_);
+        output.writeBool(7, isFullScore_);
       }
-      if (isUnlockNewSkill_ != false) {
-        output.writeBool(12, isUnlockNewSkill_);
+      if (retcode_ != 0) {
+        output.writeInt32(9, retcode_);
       }
-      if (finalScore_ != 0) {
-        output.writeUInt32(13, finalScore_);
+      if (isNewRecord_ != false) {
+        output.writeBool(10, isNewRecord_);
+      }
+      if (unk3300CGJNBGAKFAD_ != false) {
+        output.writeBool(11, unk3300CGJNBGAKFAD_);
       }
       if (stageId_ != 0) {
-        output.writeUInt32(15, stageId_);
+        output.writeUInt32(13, stageId_);
+      }
+      if (finalScore_ != 0) {
+        output.writeUInt32(15, finalScore_);
       }
       unknownFields.writeTo(output);
     }
@@ -349,41 +353,41 @@ public final class LanternRiteEndFireworksReformRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (retcode_ != 0) {
+      if (unk3300FPEFIADFBNI_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(1, retcode_);
-      }
-      if (isStaminaUp_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(4, isStaminaUp_);
+          .computeBoolSize(1, unk3300FPEFIADFBNI_);
       }
       if (challengeId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, challengeId_);
+          .computeUInt32Size(4, challengeId_);
       }
-      if (isUnlockFireworks_ != false) {
+      if (unk3300ALMNEGCIILA_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(6, isUnlockFireworks_);
-      }
-      if (isNewRecord_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(9, isNewRecord_);
+          .computeBoolSize(6, unk3300ALMNEGCIILA_);
       }
       if (isFullScore_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(10, isFullScore_);
+          .computeBoolSize(7, isFullScore_);
       }
-      if (isUnlockNewSkill_ != false) {
+      if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(12, isUnlockNewSkill_);
+          .computeInt32Size(9, retcode_);
       }
-      if (finalScore_ != 0) {
+      if (isNewRecord_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, finalScore_);
+          .computeBoolSize(10, isNewRecord_);
+      }
+      if (unk3300CGJNBGAKFAD_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(11, unk3300CGJNBGAKFAD_);
       }
       if (stageId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, stageId_);
+          .computeUInt32Size(13, stageId_);
+      }
+      if (finalScore_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(15, finalScore_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -400,24 +404,24 @@ public final class LanternRiteEndFireworksReformRspOuterClass {
       }
       emu.grasscutter.net.proto.LanternRiteEndFireworksReformRspOuterClass.LanternRiteEndFireworksReformRsp other = (emu.grasscutter.net.proto.LanternRiteEndFireworksReformRspOuterClass.LanternRiteEndFireworksReformRsp) obj;
 
-      if (getIsFullScore()
-          != other.getIsFullScore()) return false;
+      if (getUnk3300CGJNBGAKFAD()
+          != other.getUnk3300CGJNBGAKFAD()) return false;
+      if (getUnk3300FPEFIADFBNI()
+          != other.getUnk3300FPEFIADFBNI()) return false;
       if (getRetcode()
           != other.getRetcode()) return false;
-      if (getIsUnlockFireworks()
-          != other.getIsUnlockFireworks()) return false;
       if (getStageId()
           != other.getStageId()) return false;
-      if (getIsUnlockNewSkill()
-          != other.getIsUnlockNewSkill()) return false;
-      if (getIsStaminaUp()
-          != other.getIsStaminaUp()) return false;
       if (getFinalScore()
           != other.getFinalScore()) return false;
-      if (getChallengeId()
-          != other.getChallengeId()) return false;
+      if (getUnk3300ALMNEGCIILA()
+          != other.getUnk3300ALMNEGCIILA()) return false;
       if (getIsNewRecord()
           != other.getIsNewRecord()) return false;
+      if (getChallengeId()
+          != other.getChallengeId()) return false;
+      if (getIsFullScore()
+          != other.getIsFullScore()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -429,29 +433,29 @@ public final class LanternRiteEndFireworksReformRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + IS_FULL_SCORE_FIELD_NUMBER;
+      hash = (37 * hash) + UNK3300_CGJNBGAKFAD_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsFullScore());
+          getUnk3300CGJNBGAKFAD());
+      hash = (37 * hash) + UNK3300_FPEFIADFBNI_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getUnk3300FPEFIADFBNI());
       hash = (37 * hash) + RETCODE_FIELD_NUMBER;
       hash = (53 * hash) + getRetcode();
-      hash = (37 * hash) + IS_UNLOCK_FIREWORKS_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsUnlockFireworks());
       hash = (37 * hash) + STAGE_ID_FIELD_NUMBER;
       hash = (53 * hash) + getStageId();
-      hash = (37 * hash) + IS_UNLOCK_NEW_SKILL_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsUnlockNewSkill());
-      hash = (37 * hash) + IS_STAMINA_UP_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsStaminaUp());
       hash = (37 * hash) + FINAL_SCORE_FIELD_NUMBER;
       hash = (53 * hash) + getFinalScore();
-      hash = (37 * hash) + CHALLENGE_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getChallengeId();
+      hash = (37 * hash) + UNK3300_ALMNEGCIILA_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getUnk3300ALMNEGCIILA());
       hash = (37 * hash) + IS_NEW_RECORD_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsNewRecord());
+      hash = (37 * hash) + CHALLENGE_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getChallengeId();
+      hash = (37 * hash) + IS_FULL_SCORE_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getIsFullScore());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -549,9 +553,13 @@ public final class LanternRiteEndFireworksReformRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 8933
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 8414;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code LanternRiteEndFireworksReformRsp}
@@ -591,23 +599,23 @@ public final class LanternRiteEndFireworksReformRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        isFullScore_ = false;
+        unk3300CGJNBGAKFAD_ = false;
+
+        unk3300FPEFIADFBNI_ = false;
 
         retcode_ = 0;
 
-        isUnlockFireworks_ = false;
-
         stageId_ = 0;
-
-        isUnlockNewSkill_ = false;
-
-        isStaminaUp_ = false;
 
         finalScore_ = 0;
 
-        challengeId_ = 0;
+        unk3300ALMNEGCIILA_ = false;
 
         isNewRecord_ = false;
+
+        challengeId_ = 0;
+
+        isFullScore_ = false;
 
         return this;
       }
@@ -635,15 +643,15 @@ public final class LanternRiteEndFireworksReformRspOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.LanternRiteEndFireworksReformRspOuterClass.LanternRiteEndFireworksReformRsp buildPartial() {
         emu.grasscutter.net.proto.LanternRiteEndFireworksReformRspOuterClass.LanternRiteEndFireworksReformRsp result = new emu.grasscutter.net.proto.LanternRiteEndFireworksReformRspOuterClass.LanternRiteEndFireworksReformRsp(this);
-        result.isFullScore_ = isFullScore_;
+        result.unk3300CGJNBGAKFAD_ = unk3300CGJNBGAKFAD_;
+        result.unk3300FPEFIADFBNI_ = unk3300FPEFIADFBNI_;
         result.retcode_ = retcode_;
-        result.isUnlockFireworks_ = isUnlockFireworks_;
         result.stageId_ = stageId_;
-        result.isUnlockNewSkill_ = isUnlockNewSkill_;
-        result.isStaminaUp_ = isStaminaUp_;
         result.finalScore_ = finalScore_;
-        result.challengeId_ = challengeId_;
+        result.unk3300ALMNEGCIILA_ = unk3300ALMNEGCIILA_;
         result.isNewRecord_ = isNewRecord_;
+        result.challengeId_ = challengeId_;
+        result.isFullScore_ = isFullScore_;
         onBuilt();
         return result;
       }
@@ -692,32 +700,32 @@ public final class LanternRiteEndFireworksReformRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.LanternRiteEndFireworksReformRspOuterClass.LanternRiteEndFireworksReformRsp other) {
         if (other == emu.grasscutter.net.proto.LanternRiteEndFireworksReformRspOuterClass.LanternRiteEndFireworksReformRsp.getDefaultInstance()) return this;
-        if (other.getIsFullScore() != false) {
-          setIsFullScore(other.getIsFullScore());
+        if (other.getUnk3300CGJNBGAKFAD() != false) {
+          setUnk3300CGJNBGAKFAD(other.getUnk3300CGJNBGAKFAD());
+        }
+        if (other.getUnk3300FPEFIADFBNI() != false) {
+          setUnk3300FPEFIADFBNI(other.getUnk3300FPEFIADFBNI());
         }
         if (other.getRetcode() != 0) {
           setRetcode(other.getRetcode());
         }
-        if (other.getIsUnlockFireworks() != false) {
-          setIsUnlockFireworks(other.getIsUnlockFireworks());
-        }
         if (other.getStageId() != 0) {
           setStageId(other.getStageId());
-        }
-        if (other.getIsUnlockNewSkill() != false) {
-          setIsUnlockNewSkill(other.getIsUnlockNewSkill());
-        }
-        if (other.getIsStaminaUp() != false) {
-          setIsStaminaUp(other.getIsStaminaUp());
         }
         if (other.getFinalScore() != 0) {
           setFinalScore(other.getFinalScore());
         }
-        if (other.getChallengeId() != 0) {
-          setChallengeId(other.getChallengeId());
+        if (other.getUnk3300ALMNEGCIILA() != false) {
+          setUnk3300ALMNEGCIILA(other.getUnk3300ALMNEGCIILA());
         }
         if (other.getIsNewRecord() != false) {
           setIsNewRecord(other.getIsNewRecord());
+        }
+        if (other.getChallengeId() != 0) {
+          setChallengeId(other.getChallengeId());
+        }
+        if (other.getIsFullScore() != false) {
+          setIsFullScore(other.getIsFullScore());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -748,40 +756,71 @@ public final class LanternRiteEndFireworksReformRspOuterClass {
         return this;
       }
 
-      private boolean isFullScore_ ;
+      private boolean unk3300CGJNBGAKFAD_ ;
       /**
-       * <code>bool is_full_score = 10;</code>
-       * @return The isFullScore.
+       * <code>bool Unk3300_CGJNBGAKFAD = 11;</code>
+       * @return The unk3300CGJNBGAKFAD.
        */
       @java.lang.Override
-      public boolean getIsFullScore() {
-        return isFullScore_;
+      public boolean getUnk3300CGJNBGAKFAD() {
+        return unk3300CGJNBGAKFAD_;
       }
       /**
-       * <code>bool is_full_score = 10;</code>
-       * @param value The isFullScore to set.
+       * <code>bool Unk3300_CGJNBGAKFAD = 11;</code>
+       * @param value The unk3300CGJNBGAKFAD to set.
        * @return This builder for chaining.
        */
-      public Builder setIsFullScore(boolean value) {
+      public Builder setUnk3300CGJNBGAKFAD(boolean value) {
         
-        isFullScore_ = value;
+        unk3300CGJNBGAKFAD_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>bool is_full_score = 10;</code>
+       * <code>bool Unk3300_CGJNBGAKFAD = 11;</code>
        * @return This builder for chaining.
        */
-      public Builder clearIsFullScore() {
+      public Builder clearUnk3300CGJNBGAKFAD() {
         
-        isFullScore_ = false;
+        unk3300CGJNBGAKFAD_ = false;
+        onChanged();
+        return this;
+      }
+
+      private boolean unk3300FPEFIADFBNI_ ;
+      /**
+       * <code>bool Unk3300_FPEFIADFBNI = 1;</code>
+       * @return The unk3300FPEFIADFBNI.
+       */
+      @java.lang.Override
+      public boolean getUnk3300FPEFIADFBNI() {
+        return unk3300FPEFIADFBNI_;
+      }
+      /**
+       * <code>bool Unk3300_FPEFIADFBNI = 1;</code>
+       * @param value The unk3300FPEFIADFBNI to set.
+       * @return This builder for chaining.
+       */
+      public Builder setUnk3300FPEFIADFBNI(boolean value) {
+        
+        unk3300FPEFIADFBNI_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool Unk3300_FPEFIADFBNI = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearUnk3300FPEFIADFBNI() {
+        
+        unk3300FPEFIADFBNI_ = false;
         onChanged();
         return this;
       }
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 1;</code>
+       * <code>int32 retcode = 9;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -789,7 +828,7 @@ public final class LanternRiteEndFireworksReformRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 1;</code>
+       * <code>int32 retcode = 9;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -800,7 +839,7 @@ public final class LanternRiteEndFireworksReformRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 1;</code>
+       * <code>int32 retcode = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -810,40 +849,9 @@ public final class LanternRiteEndFireworksReformRspOuterClass {
         return this;
       }
 
-      private boolean isUnlockFireworks_ ;
-      /**
-       * <code>bool is_unlock_fireworks = 6;</code>
-       * @return The isUnlockFireworks.
-       */
-      @java.lang.Override
-      public boolean getIsUnlockFireworks() {
-        return isUnlockFireworks_;
-      }
-      /**
-       * <code>bool is_unlock_fireworks = 6;</code>
-       * @param value The isUnlockFireworks to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsUnlockFireworks(boolean value) {
-        
-        isUnlockFireworks_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_unlock_fireworks = 6;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsUnlockFireworks() {
-        
-        isUnlockFireworks_ = false;
-        onChanged();
-        return this;
-      }
-
       private int stageId_ ;
       /**
-       * <code>uint32 stage_id = 15;</code>
+       * <code>uint32 stage_id = 13;</code>
        * @return The stageId.
        */
       @java.lang.Override
@@ -851,7 +859,7 @@ public final class LanternRiteEndFireworksReformRspOuterClass {
         return stageId_;
       }
       /**
-       * <code>uint32 stage_id = 15;</code>
+       * <code>uint32 stage_id = 13;</code>
        * @param value The stageId to set.
        * @return This builder for chaining.
        */
@@ -862,7 +870,7 @@ public final class LanternRiteEndFireworksReformRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 stage_id = 15;</code>
+       * <code>uint32 stage_id = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearStageId() {
@@ -872,71 +880,9 @@ public final class LanternRiteEndFireworksReformRspOuterClass {
         return this;
       }
 
-      private boolean isUnlockNewSkill_ ;
-      /**
-       * <code>bool is_unlock_new_skill = 12;</code>
-       * @return The isUnlockNewSkill.
-       */
-      @java.lang.Override
-      public boolean getIsUnlockNewSkill() {
-        return isUnlockNewSkill_;
-      }
-      /**
-       * <code>bool is_unlock_new_skill = 12;</code>
-       * @param value The isUnlockNewSkill to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsUnlockNewSkill(boolean value) {
-        
-        isUnlockNewSkill_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_unlock_new_skill = 12;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsUnlockNewSkill() {
-        
-        isUnlockNewSkill_ = false;
-        onChanged();
-        return this;
-      }
-
-      private boolean isStaminaUp_ ;
-      /**
-       * <code>bool is_stamina_up = 4;</code>
-       * @return The isStaminaUp.
-       */
-      @java.lang.Override
-      public boolean getIsStaminaUp() {
-        return isStaminaUp_;
-      }
-      /**
-       * <code>bool is_stamina_up = 4;</code>
-       * @param value The isStaminaUp to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsStaminaUp(boolean value) {
-        
-        isStaminaUp_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_stamina_up = 4;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsStaminaUp() {
-        
-        isStaminaUp_ = false;
-        onChanged();
-        return this;
-      }
-
       private int finalScore_ ;
       /**
-       * <code>uint32 final_score = 13;</code>
+       * <code>uint32 final_score = 15;</code>
        * @return The finalScore.
        */
       @java.lang.Override
@@ -944,7 +890,7 @@ public final class LanternRiteEndFireworksReformRspOuterClass {
         return finalScore_;
       }
       /**
-       * <code>uint32 final_score = 13;</code>
+       * <code>uint32 final_score = 15;</code>
        * @param value The finalScore to set.
        * @return This builder for chaining.
        */
@@ -955,7 +901,7 @@ public final class LanternRiteEndFireworksReformRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 final_score = 13;</code>
+       * <code>uint32 final_score = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearFinalScore() {
@@ -965,40 +911,40 @@ public final class LanternRiteEndFireworksReformRspOuterClass {
         return this;
       }
 
-      private int challengeId_ ;
+      private boolean unk3300ALMNEGCIILA_ ;
       /**
-       * <code>uint32 challenge_id = 5;</code>
-       * @return The challengeId.
+       * <code>bool Unk3300_ALMNEGCIILA = 6;</code>
+       * @return The unk3300ALMNEGCIILA.
        */
       @java.lang.Override
-      public int getChallengeId() {
-        return challengeId_;
+      public boolean getUnk3300ALMNEGCIILA() {
+        return unk3300ALMNEGCIILA_;
       }
       /**
-       * <code>uint32 challenge_id = 5;</code>
-       * @param value The challengeId to set.
+       * <code>bool Unk3300_ALMNEGCIILA = 6;</code>
+       * @param value The unk3300ALMNEGCIILA to set.
        * @return This builder for chaining.
        */
-      public Builder setChallengeId(int value) {
+      public Builder setUnk3300ALMNEGCIILA(boolean value) {
         
-        challengeId_ = value;
+        unk3300ALMNEGCIILA_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 challenge_id = 5;</code>
+       * <code>bool Unk3300_ALMNEGCIILA = 6;</code>
        * @return This builder for chaining.
        */
-      public Builder clearChallengeId() {
+      public Builder clearUnk3300ALMNEGCIILA() {
         
-        challengeId_ = 0;
+        unk3300ALMNEGCIILA_ = false;
         onChanged();
         return this;
       }
 
       private boolean isNewRecord_ ;
       /**
-       * <code>bool is_new_record = 9;</code>
+       * <code>bool is_new_record = 10;</code>
        * @return The isNewRecord.
        */
       @java.lang.Override
@@ -1006,7 +952,7 @@ public final class LanternRiteEndFireworksReformRspOuterClass {
         return isNewRecord_;
       }
       /**
-       * <code>bool is_new_record = 9;</code>
+       * <code>bool is_new_record = 10;</code>
        * @param value The isNewRecord to set.
        * @return This builder for chaining.
        */
@@ -1017,12 +963,74 @@ public final class LanternRiteEndFireworksReformRspOuterClass {
         return this;
       }
       /**
-       * <code>bool is_new_record = 9;</code>
+       * <code>bool is_new_record = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsNewRecord() {
         
         isNewRecord_ = false;
+        onChanged();
+        return this;
+      }
+
+      private int challengeId_ ;
+      /**
+       * <code>uint32 challenge_id = 4;</code>
+       * @return The challengeId.
+       */
+      @java.lang.Override
+      public int getChallengeId() {
+        return challengeId_;
+      }
+      /**
+       * <code>uint32 challenge_id = 4;</code>
+       * @param value The challengeId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setChallengeId(int value) {
+        
+        challengeId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 challenge_id = 4;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearChallengeId() {
+        
+        challengeId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private boolean isFullScore_ ;
+      /**
+       * <code>bool is_full_score = 7;</code>
+       * @return The isFullScore.
+       */
+      @java.lang.Override
+      public boolean getIsFullScore() {
+        return isFullScore_;
+      }
+      /**
+       * <code>bool is_full_score = 7;</code>
+       * @param value The isFullScore to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIsFullScore(boolean value) {
+        
+        isFullScore_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool is_full_score = 7;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsFullScore() {
+        
+        isFullScore_ = false;
         onChanged();
         return this;
       }
@@ -1094,13 +1102,14 @@ public final class LanternRiteEndFireworksReformRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n&LanternRiteEndFireworksReformRsp.proto" +
-      "\"\357\001\n LanternRiteEndFireworksReformRsp\022\025\n" +
-      "\ris_full_score\030\n \001(\010\022\017\n\007retcode\030\001 \001(\005\022\033\n" +
-      "\023is_unlock_fireworks\030\006 \001(\010\022\020\n\010stage_id\030\017" +
-      " \001(\r\022\033\n\023is_unlock_new_skill\030\014 \001(\010\022\025\n\ris_" +
-      "stamina_up\030\004 \001(\010\022\023\n\013final_score\030\r \001(\r\022\024\n" +
-      "\014challenge_id\030\005 \001(\r\022\025\n\ris_new_record\030\t \001" +
-      "(\010B\033\n\031emu.grasscutter.net.protob\006proto3"
+      "\"\365\001\n LanternRiteEndFireworksReformRsp\022\033\n" +
+      "\023Unk3300_CGJNBGAKFAD\030\013 \001(\010\022\033\n\023Unk3300_FP" +
+      "EFIADFBNI\030\001 \001(\010\022\017\n\007retcode\030\t \001(\005\022\020\n\010stag" +
+      "e_id\030\r \001(\r\022\023\n\013final_score\030\017 \001(\r\022\033\n\023Unk33" +
+      "00_ALMNEGCIILA\030\006 \001(\010\022\025\n\ris_new_record\030\n " +
+      "\001(\010\022\024\n\014challenge_id\030\004 \001(\r\022\025\n\ris_full_sco" +
+      "re\030\007 \001(\010B\033\n\031emu.grasscutter.net.protob\006p" +
+      "roto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -1111,7 +1120,7 @@ public final class LanternRiteEndFireworksReformRspOuterClass {
     internal_static_LanternRiteEndFireworksReformRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_LanternRiteEndFireworksReformRsp_descriptor,
-        new java.lang.String[] { "IsFullScore", "Retcode", "IsUnlockFireworks", "StageId", "IsUnlockNewSkill", "IsStaminaUp", "FinalScore", "ChallengeId", "IsNewRecord", });
+        new java.lang.String[] { "Unk3300CGJNBGAKFAD", "Unk3300FPEFIADFBNI", "Retcode", "StageId", "FinalScore", "Unk3300ALMNEGCIILA", "IsNewRecord", "ChallengeId", "IsFullScore", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

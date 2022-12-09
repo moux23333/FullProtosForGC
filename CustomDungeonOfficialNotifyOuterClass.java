@@ -19,49 +19,53 @@ public final class CustomDungeonOfficialNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.TryCustomDungeonType try_type = 9;</code>
+     * <code>.TryCustomDungeonType try_type = 2;</code>
      * @return The enum numeric value on the wire for tryType.
      */
     int getTryTypeValue();
     /**
-     * <code>.TryCustomDungeonType try_type = 9;</code>
+     * <code>.TryCustomDungeonType try_type = 2;</code>
      * @return The tryType.
      */
     emu.grasscutter.net.proto.TryCustomDungeonTypeOuterClass.TryCustomDungeonType getTryType();
 
     /**
-     * <code>repeated uint32 official_black_coin_list = 14;</code>
-     * @return A list containing the officialBlackCoinList.
-     */
-    java.util.List<java.lang.Integer> getOfficialBlackCoinListList();
-    /**
-     * <code>repeated uint32 official_black_coin_list = 14;</code>
-     * @return The count of officialBlackCoinList.
-     */
-    int getOfficialBlackCoinListCount();
-    /**
-     * <code>repeated uint32 official_black_coin_list = 14;</code>
-     * @param index The index of the element to return.
-     * @return The officialBlackCoinList at the given index.
-     */
-    int getOfficialBlackCoinList(int index);
-
-    /**
-     * <code>.EnterCustomDungeonType enter_type = 15;</code>
+     * <code>.EnterCustomDungeonType enter_type = 1;</code>
      * @return The enum numeric value on the wire for enterType.
      */
     int getEnterTypeValue();
     /**
-     * <code>.EnterCustomDungeonType enter_type = 15;</code>
+     * <code>.EnterCustomDungeonType enter_type = 1;</code>
      * @return The enterType.
      */
     emu.grasscutter.net.proto.EnterCustomDungeonTypeOuterClass.EnterCustomDungeonType getEnterType();
+
+    /**
+     * <code>repeated uint32 official_black_coin_list = 5;</code>
+     * @return A list containing the officialBlackCoinList.
+     */
+    java.util.List<java.lang.Integer> getOfficialBlackCoinListList();
+    /**
+     * <code>repeated uint32 official_black_coin_list = 5;</code>
+     * @return The count of officialBlackCoinList.
+     */
+    int getOfficialBlackCoinListCount();
+    /**
+     * <code>repeated uint32 official_black_coin_list = 5;</code>
+     * @param index The index of the element to return.
+     * @return The officialBlackCoinList at the given index.
+     */
+    int getOfficialBlackCoinList(int index);
   }
   /**
    * <pre>
-   * CmdId: 6221
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 6236;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code CustomDungeonOfficialNotify}
@@ -77,8 +81,8 @@ public final class CustomDungeonOfficialNotifyOuterClass {
     }
     private CustomDungeonOfficialNotify() {
       tryType_ = 0;
-      officialBlackCoinList_ = emptyIntList();
       enterType_ = 0;
+      officialBlackCoinList_ = emptyIntList();
     }
 
     @java.lang.Override
@@ -112,13 +116,19 @@ public final class CustomDungeonOfficialNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 72: {
+            case 8: {
+              int rawValue = input.readEnum();
+
+              enterType_ = rawValue;
+              break;
+            }
+            case 16: {
               int rawValue = input.readEnum();
 
               tryType_ = rawValue;
               break;
             }
-            case 112: {
+            case 40: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 officialBlackCoinList_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
@@ -126,7 +136,7 @@ public final class CustomDungeonOfficialNotifyOuterClass {
               officialBlackCoinList_.addInt(input.readUInt32());
               break;
             }
-            case 114: {
+            case 42: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -137,12 +147,6 @@ public final class CustomDungeonOfficialNotifyOuterClass {
                 officialBlackCoinList_.addInt(input.readUInt32());
               }
               input.popLimit(limit);
-              break;
-            }
-            case 120: {
-              int rawValue = input.readEnum();
-
-              enterType_ = rawValue;
               break;
             }
             default: {
@@ -180,17 +184,17 @@ public final class CustomDungeonOfficialNotifyOuterClass {
               emu.grasscutter.net.proto.CustomDungeonOfficialNotifyOuterClass.CustomDungeonOfficialNotify.class, emu.grasscutter.net.proto.CustomDungeonOfficialNotifyOuterClass.CustomDungeonOfficialNotify.Builder.class);
     }
 
-    public static final int TRY_TYPE_FIELD_NUMBER = 9;
+    public static final int TRY_TYPE_FIELD_NUMBER = 2;
     private int tryType_;
     /**
-     * <code>.TryCustomDungeonType try_type = 9;</code>
+     * <code>.TryCustomDungeonType try_type = 2;</code>
      * @return The enum numeric value on the wire for tryType.
      */
     @java.lang.Override public int getTryTypeValue() {
       return tryType_;
     }
     /**
-     * <code>.TryCustomDungeonType try_type = 9;</code>
+     * <code>.TryCustomDungeonType try_type = 2;</code>
      * @return The tryType.
      */
     @java.lang.Override public emu.grasscutter.net.proto.TryCustomDungeonTypeOuterClass.TryCustomDungeonType getTryType() {
@@ -199,10 +203,29 @@ public final class CustomDungeonOfficialNotifyOuterClass {
       return result == null ? emu.grasscutter.net.proto.TryCustomDungeonTypeOuterClass.TryCustomDungeonType.UNRECOGNIZED : result;
     }
 
-    public static final int OFFICIAL_BLACK_COIN_LIST_FIELD_NUMBER = 14;
+    public static final int ENTER_TYPE_FIELD_NUMBER = 1;
+    private int enterType_;
+    /**
+     * <code>.EnterCustomDungeonType enter_type = 1;</code>
+     * @return The enum numeric value on the wire for enterType.
+     */
+    @java.lang.Override public int getEnterTypeValue() {
+      return enterType_;
+    }
+    /**
+     * <code>.EnterCustomDungeonType enter_type = 1;</code>
+     * @return The enterType.
+     */
+    @java.lang.Override public emu.grasscutter.net.proto.EnterCustomDungeonTypeOuterClass.EnterCustomDungeonType getEnterType() {
+      @SuppressWarnings("deprecation")
+      emu.grasscutter.net.proto.EnterCustomDungeonTypeOuterClass.EnterCustomDungeonType result = emu.grasscutter.net.proto.EnterCustomDungeonTypeOuterClass.EnterCustomDungeonType.valueOf(enterType_);
+      return result == null ? emu.grasscutter.net.proto.EnterCustomDungeonTypeOuterClass.EnterCustomDungeonType.UNRECOGNIZED : result;
+    }
+
+    public static final int OFFICIAL_BLACK_COIN_LIST_FIELD_NUMBER = 5;
     private com.google.protobuf.Internal.IntList officialBlackCoinList_;
     /**
-     * <code>repeated uint32 official_black_coin_list = 14;</code>
+     * <code>repeated uint32 official_black_coin_list = 5;</code>
      * @return A list containing the officialBlackCoinList.
      */
     @java.lang.Override
@@ -211,14 +234,14 @@ public final class CustomDungeonOfficialNotifyOuterClass {
       return officialBlackCoinList_;
     }
     /**
-     * <code>repeated uint32 official_black_coin_list = 14;</code>
+     * <code>repeated uint32 official_black_coin_list = 5;</code>
      * @return The count of officialBlackCoinList.
      */
     public int getOfficialBlackCoinListCount() {
       return officialBlackCoinList_.size();
     }
     /**
-     * <code>repeated uint32 official_black_coin_list = 14;</code>
+     * <code>repeated uint32 official_black_coin_list = 5;</code>
      * @param index The index of the element to return.
      * @return The officialBlackCoinList at the given index.
      */
@@ -226,25 +249,6 @@ public final class CustomDungeonOfficialNotifyOuterClass {
       return officialBlackCoinList_.getInt(index);
     }
     private int officialBlackCoinListMemoizedSerializedSize = -1;
-
-    public static final int ENTER_TYPE_FIELD_NUMBER = 15;
-    private int enterType_;
-    /**
-     * <code>.EnterCustomDungeonType enter_type = 15;</code>
-     * @return The enum numeric value on the wire for enterType.
-     */
-    @java.lang.Override public int getEnterTypeValue() {
-      return enterType_;
-    }
-    /**
-     * <code>.EnterCustomDungeonType enter_type = 15;</code>
-     * @return The enterType.
-     */
-    @java.lang.Override public emu.grasscutter.net.proto.EnterCustomDungeonTypeOuterClass.EnterCustomDungeonType getEnterType() {
-      @SuppressWarnings("deprecation")
-      emu.grasscutter.net.proto.EnterCustomDungeonTypeOuterClass.EnterCustomDungeonType result = emu.grasscutter.net.proto.EnterCustomDungeonTypeOuterClass.EnterCustomDungeonType.valueOf(enterType_);
-      return result == null ? emu.grasscutter.net.proto.EnterCustomDungeonTypeOuterClass.EnterCustomDungeonType.UNRECOGNIZED : result;
-    }
 
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
@@ -261,18 +265,18 @@ public final class CustomDungeonOfficialNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
+      if (enterType_ != emu.grasscutter.net.proto.EnterCustomDungeonTypeOuterClass.EnterCustomDungeonType.ENTER_CUSTOM_DUNGEON_TYPE_NONE.getNumber()) {
+        output.writeEnum(1, enterType_);
+      }
       if (tryType_ != emu.grasscutter.net.proto.TryCustomDungeonTypeOuterClass.TryCustomDungeonType.TRY_CUSTOM_DUNGEON_TYPE_NONE.getNumber()) {
-        output.writeEnum(9, tryType_);
+        output.writeEnum(2, tryType_);
       }
       if (getOfficialBlackCoinListList().size() > 0) {
-        output.writeUInt32NoTag(114);
+        output.writeUInt32NoTag(42);
         output.writeUInt32NoTag(officialBlackCoinListMemoizedSerializedSize);
       }
       for (int i = 0; i < officialBlackCoinList_.size(); i++) {
         output.writeUInt32NoTag(officialBlackCoinList_.getInt(i));
-      }
-      if (enterType_ != emu.grasscutter.net.proto.EnterCustomDungeonTypeOuterClass.EnterCustomDungeonType.ENTER_CUSTOM_DUNGEON_TYPE_NONE.getNumber()) {
-        output.writeEnum(15, enterType_);
       }
       unknownFields.writeTo(output);
     }
@@ -283,9 +287,13 @@ public final class CustomDungeonOfficialNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (enterType_ != emu.grasscutter.net.proto.EnterCustomDungeonTypeOuterClass.EnterCustomDungeonType.ENTER_CUSTOM_DUNGEON_TYPE_NONE.getNumber()) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeEnumSize(1, enterType_);
+      }
       if (tryType_ != emu.grasscutter.net.proto.TryCustomDungeonTypeOuterClass.TryCustomDungeonType.TRY_CUSTOM_DUNGEON_TYPE_NONE.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(9, tryType_);
+          .computeEnumSize(2, tryType_);
       }
       {
         int dataSize = 0;
@@ -300,10 +308,6 @@ public final class CustomDungeonOfficialNotifyOuterClass {
               .computeInt32SizeNoTag(dataSize);
         }
         officialBlackCoinListMemoizedSerializedSize = dataSize;
-      }
-      if (enterType_ != emu.grasscutter.net.proto.EnterCustomDungeonTypeOuterClass.EnterCustomDungeonType.ENTER_CUSTOM_DUNGEON_TYPE_NONE.getNumber()) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(15, enterType_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -321,9 +325,9 @@ public final class CustomDungeonOfficialNotifyOuterClass {
       emu.grasscutter.net.proto.CustomDungeonOfficialNotifyOuterClass.CustomDungeonOfficialNotify other = (emu.grasscutter.net.proto.CustomDungeonOfficialNotifyOuterClass.CustomDungeonOfficialNotify) obj;
 
       if (tryType_ != other.tryType_) return false;
+      if (enterType_ != other.enterType_) return false;
       if (!getOfficialBlackCoinListList()
           .equals(other.getOfficialBlackCoinListList())) return false;
-      if (enterType_ != other.enterType_) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -337,12 +341,12 @@ public final class CustomDungeonOfficialNotifyOuterClass {
       hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + TRY_TYPE_FIELD_NUMBER;
       hash = (53 * hash) + tryType_;
+      hash = (37 * hash) + ENTER_TYPE_FIELD_NUMBER;
+      hash = (53 * hash) + enterType_;
       if (getOfficialBlackCoinListCount() > 0) {
         hash = (37 * hash) + OFFICIAL_BLACK_COIN_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getOfficialBlackCoinListList().hashCode();
       }
-      hash = (37 * hash) + ENTER_TYPE_FIELD_NUMBER;
-      hash = (53 * hash) + enterType_;
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -440,9 +444,13 @@ public final class CustomDungeonOfficialNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 6221
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 6236;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code CustomDungeonOfficialNotify}
@@ -484,10 +492,10 @@ public final class CustomDungeonOfficialNotifyOuterClass {
         super.clear();
         tryType_ = 0;
 
-        officialBlackCoinList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000001);
         enterType_ = 0;
 
+        officialBlackCoinList_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000001);
         return this;
       }
 
@@ -516,12 +524,12 @@ public final class CustomDungeonOfficialNotifyOuterClass {
         emu.grasscutter.net.proto.CustomDungeonOfficialNotifyOuterClass.CustomDungeonOfficialNotify result = new emu.grasscutter.net.proto.CustomDungeonOfficialNotifyOuterClass.CustomDungeonOfficialNotify(this);
         int from_bitField0_ = bitField0_;
         result.tryType_ = tryType_;
+        result.enterType_ = enterType_;
         if (((bitField0_ & 0x00000001) != 0)) {
           officialBlackCoinList_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000001);
         }
         result.officialBlackCoinList_ = officialBlackCoinList_;
-        result.enterType_ = enterType_;
         onBuilt();
         return result;
       }
@@ -573,6 +581,9 @@ public final class CustomDungeonOfficialNotifyOuterClass {
         if (other.tryType_ != 0) {
           setTryTypeValue(other.getTryTypeValue());
         }
+        if (other.enterType_ != 0) {
+          setEnterTypeValue(other.getEnterTypeValue());
+        }
         if (!other.officialBlackCoinList_.isEmpty()) {
           if (officialBlackCoinList_.isEmpty()) {
             officialBlackCoinList_ = other.officialBlackCoinList_;
@@ -582,9 +593,6 @@ public final class CustomDungeonOfficialNotifyOuterClass {
             officialBlackCoinList_.addAll(other.officialBlackCoinList_);
           }
           onChanged();
-        }
-        if (other.enterType_ != 0) {
-          setEnterTypeValue(other.getEnterTypeValue());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -618,14 +626,14 @@ public final class CustomDungeonOfficialNotifyOuterClass {
 
       private int tryType_ = 0;
       /**
-       * <code>.TryCustomDungeonType try_type = 9;</code>
+       * <code>.TryCustomDungeonType try_type = 2;</code>
        * @return The enum numeric value on the wire for tryType.
        */
       @java.lang.Override public int getTryTypeValue() {
         return tryType_;
       }
       /**
-       * <code>.TryCustomDungeonType try_type = 9;</code>
+       * <code>.TryCustomDungeonType try_type = 2;</code>
        * @param value The enum numeric value on the wire for tryType to set.
        * @return This builder for chaining.
        */
@@ -636,7 +644,7 @@ public final class CustomDungeonOfficialNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.TryCustomDungeonType try_type = 9;</code>
+       * <code>.TryCustomDungeonType try_type = 2;</code>
        * @return The tryType.
        */
       @java.lang.Override
@@ -646,7 +654,7 @@ public final class CustomDungeonOfficialNotifyOuterClass {
         return result == null ? emu.grasscutter.net.proto.TryCustomDungeonTypeOuterClass.TryCustomDungeonType.UNRECOGNIZED : result;
       }
       /**
-       * <code>.TryCustomDungeonType try_type = 9;</code>
+       * <code>.TryCustomDungeonType try_type = 2;</code>
        * @param value The tryType to set.
        * @return This builder for chaining.
        */
@@ -660,7 +668,7 @@ public final class CustomDungeonOfficialNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.TryCustomDungeonType try_type = 9;</code>
+       * <code>.TryCustomDungeonType try_type = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearTryType() {
@@ -670,95 +678,16 @@ public final class CustomDungeonOfficialNotifyOuterClass {
         return this;
       }
 
-      private com.google.protobuf.Internal.IntList officialBlackCoinList_ = emptyIntList();
-      private void ensureOfficialBlackCoinListIsMutable() {
-        if (!((bitField0_ & 0x00000001) != 0)) {
-          officialBlackCoinList_ = mutableCopy(officialBlackCoinList_);
-          bitField0_ |= 0x00000001;
-         }
-      }
-      /**
-       * <code>repeated uint32 official_black_coin_list = 14;</code>
-       * @return A list containing the officialBlackCoinList.
-       */
-      public java.util.List<java.lang.Integer>
-          getOfficialBlackCoinListList() {
-        return ((bitField0_ & 0x00000001) != 0) ?
-                 java.util.Collections.unmodifiableList(officialBlackCoinList_) : officialBlackCoinList_;
-      }
-      /**
-       * <code>repeated uint32 official_black_coin_list = 14;</code>
-       * @return The count of officialBlackCoinList.
-       */
-      public int getOfficialBlackCoinListCount() {
-        return officialBlackCoinList_.size();
-      }
-      /**
-       * <code>repeated uint32 official_black_coin_list = 14;</code>
-       * @param index The index of the element to return.
-       * @return The officialBlackCoinList at the given index.
-       */
-      public int getOfficialBlackCoinList(int index) {
-        return officialBlackCoinList_.getInt(index);
-      }
-      /**
-       * <code>repeated uint32 official_black_coin_list = 14;</code>
-       * @param index The index to set the value at.
-       * @param value The officialBlackCoinList to set.
-       * @return This builder for chaining.
-       */
-      public Builder setOfficialBlackCoinList(
-          int index, int value) {
-        ensureOfficialBlackCoinListIsMutable();
-        officialBlackCoinList_.setInt(index, value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 official_black_coin_list = 14;</code>
-       * @param value The officialBlackCoinList to add.
-       * @return This builder for chaining.
-       */
-      public Builder addOfficialBlackCoinList(int value) {
-        ensureOfficialBlackCoinListIsMutable();
-        officialBlackCoinList_.addInt(value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 official_black_coin_list = 14;</code>
-       * @param values The officialBlackCoinList to add.
-       * @return This builder for chaining.
-       */
-      public Builder addAllOfficialBlackCoinList(
-          java.lang.Iterable<? extends java.lang.Integer> values) {
-        ensureOfficialBlackCoinListIsMutable();
-        com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, officialBlackCoinList_);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 official_black_coin_list = 14;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearOfficialBlackCoinList() {
-        officialBlackCoinList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000001);
-        onChanged();
-        return this;
-      }
-
       private int enterType_ = 0;
       /**
-       * <code>.EnterCustomDungeonType enter_type = 15;</code>
+       * <code>.EnterCustomDungeonType enter_type = 1;</code>
        * @return The enum numeric value on the wire for enterType.
        */
       @java.lang.Override public int getEnterTypeValue() {
         return enterType_;
       }
       /**
-       * <code>.EnterCustomDungeonType enter_type = 15;</code>
+       * <code>.EnterCustomDungeonType enter_type = 1;</code>
        * @param value The enum numeric value on the wire for enterType to set.
        * @return This builder for chaining.
        */
@@ -769,7 +698,7 @@ public final class CustomDungeonOfficialNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.EnterCustomDungeonType enter_type = 15;</code>
+       * <code>.EnterCustomDungeonType enter_type = 1;</code>
        * @return The enterType.
        */
       @java.lang.Override
@@ -779,7 +708,7 @@ public final class CustomDungeonOfficialNotifyOuterClass {
         return result == null ? emu.grasscutter.net.proto.EnterCustomDungeonTypeOuterClass.EnterCustomDungeonType.UNRECOGNIZED : result;
       }
       /**
-       * <code>.EnterCustomDungeonType enter_type = 15;</code>
+       * <code>.EnterCustomDungeonType enter_type = 1;</code>
        * @param value The enterType to set.
        * @return This builder for chaining.
        */
@@ -793,12 +722,91 @@ public final class CustomDungeonOfficialNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.EnterCustomDungeonType enter_type = 15;</code>
+       * <code>.EnterCustomDungeonType enter_type = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearEnterType() {
         
         enterType_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private com.google.protobuf.Internal.IntList officialBlackCoinList_ = emptyIntList();
+      private void ensureOfficialBlackCoinListIsMutable() {
+        if (!((bitField0_ & 0x00000001) != 0)) {
+          officialBlackCoinList_ = mutableCopy(officialBlackCoinList_);
+          bitField0_ |= 0x00000001;
+         }
+      }
+      /**
+       * <code>repeated uint32 official_black_coin_list = 5;</code>
+       * @return A list containing the officialBlackCoinList.
+       */
+      public java.util.List<java.lang.Integer>
+          getOfficialBlackCoinListList() {
+        return ((bitField0_ & 0x00000001) != 0) ?
+                 java.util.Collections.unmodifiableList(officialBlackCoinList_) : officialBlackCoinList_;
+      }
+      /**
+       * <code>repeated uint32 official_black_coin_list = 5;</code>
+       * @return The count of officialBlackCoinList.
+       */
+      public int getOfficialBlackCoinListCount() {
+        return officialBlackCoinList_.size();
+      }
+      /**
+       * <code>repeated uint32 official_black_coin_list = 5;</code>
+       * @param index The index of the element to return.
+       * @return The officialBlackCoinList at the given index.
+       */
+      public int getOfficialBlackCoinList(int index) {
+        return officialBlackCoinList_.getInt(index);
+      }
+      /**
+       * <code>repeated uint32 official_black_coin_list = 5;</code>
+       * @param index The index to set the value at.
+       * @param value The officialBlackCoinList to set.
+       * @return This builder for chaining.
+       */
+      public Builder setOfficialBlackCoinList(
+          int index, int value) {
+        ensureOfficialBlackCoinListIsMutable();
+        officialBlackCoinList_.setInt(index, value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint32 official_black_coin_list = 5;</code>
+       * @param value The officialBlackCoinList to add.
+       * @return This builder for chaining.
+       */
+      public Builder addOfficialBlackCoinList(int value) {
+        ensureOfficialBlackCoinListIsMutable();
+        officialBlackCoinList_.addInt(value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint32 official_black_coin_list = 5;</code>
+       * @param values The officialBlackCoinList to add.
+       * @return This builder for chaining.
+       */
+      public Builder addAllOfficialBlackCoinList(
+          java.lang.Iterable<? extends java.lang.Integer> values) {
+        ensureOfficialBlackCoinListIsMutable();
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, officialBlackCoinList_);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint32 official_black_coin_list = 5;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearOfficialBlackCoinList() {
+        officialBlackCoinList_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000001);
         onChanged();
         return this;
       }
@@ -872,10 +880,10 @@ public final class CustomDungeonOfficialNotifyOuterClass {
       "\n!CustomDungeonOfficialNotify.proto\032\034Ent" +
       "erCustomDungeonType.proto\032\032TryCustomDung" +
       "eonType.proto\"\225\001\n\033CustomDungeonOfficialN" +
-      "otify\022\'\n\010try_type\030\t \001(\0162\025.TryCustomDunge" +
-      "onType\022 \n\030official_black_coin_list\030\016 \003(\r" +
-      "\022+\n\nenter_type\030\017 \001(\0162\027.EnterCustomDungeo" +
-      "nTypeB\033\n\031emu.grasscutter.net.protob\006prot" +
+      "otify\022\'\n\010try_type\030\002 \001(\0162\025.TryCustomDunge" +
+      "onType\022+\n\nenter_type\030\001 \001(\0162\027.EnterCustom" +
+      "DungeonType\022 \n\030official_black_coin_list\030" +
+      "\005 \003(\rB\033\n\031emu.grasscutter.net.protob\006prot" +
       "o3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -889,7 +897,7 @@ public final class CustomDungeonOfficialNotifyOuterClass {
     internal_static_CustomDungeonOfficialNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_CustomDungeonOfficialNotify_descriptor,
-        new java.lang.String[] { "TryType", "OfficialBlackCoinList", "EnterType", });
+        new java.lang.String[] { "TryType", "EnterType", "OfficialBlackCoinList", });
     emu.grasscutter.net.proto.EnterCustomDungeonTypeOuterClass.getDescriptor();
     emu.grasscutter.net.proto.TryCustomDungeonTypeOuterClass.getDescriptor();
   }

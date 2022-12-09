@@ -19,10 +19,28 @@ public final class SceneGalleryIslandPartyRaftInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 coin = 6;</code>
+     * <code>uint32 coin = 12;</code>
      * @return The coin.
      */
     int getCoin();
+
+    /**
+     * <code>uint32 Unk3300_FBACMOFGPGJ = 6;</code>
+     * @return The unk3300FBACMOFGPGJ.
+     */
+    int getUnk3300FBACMOFGPGJ();
+
+    /**
+     * <code>uint32 point_id = 10;</code>
+     * @return The pointId.
+     */
+    int getPointId();
+
+    /**
+     * <code>uint32 Unk3300_HHEKIPECDAK = 14;</code>
+     * @return The unk3300HHEKIPECDAK.
+     */
+    int getUnk3300HHEKIPECDAK();
 
     /**
      * <code>.GalleryStartSource start_source = 7;</code>
@@ -36,28 +54,10 @@ public final class SceneGalleryIslandPartyRaftInfoOuterClass {
     emu.grasscutter.net.proto.GalleryStartSourceOuterClass.GalleryStartSource getStartSource();
 
     /**
-     * <code>uint32 component = 1;</code>
-     * @return The component.
+     * <code>uint32 Unk3300_HNECEGNMKNK = 13;</code>
+     * @return The unk3300HNECEGNMKNK.
      */
-    int getComponent();
-
-    /**
-     * <code>uint32 fuel = 15;</code>
-     * @return The fuel.
-     */
-    int getFuel();
-
-    /**
-     * <code>uint32 point_id = 12;</code>
-     * @return The pointId.
-     */
-    int getPointId();
-
-    /**
-     * <code>uint32 raft_entity_id = 4;</code>
-     * @return The raftEntityId.
-     */
-    int getRaftEntityId();
+    int getUnk3300HNECEGNMKNK();
   }
   /**
    * Protobuf type {@code SceneGalleryIslandPartyRaftInfo}
@@ -105,19 +105,9 @@ public final class SceneGalleryIslandPartyRaftInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
-
-              component_ = input.readUInt32();
-              break;
-            }
-            case 32: {
-
-              raftEntityId_ = input.readUInt32();
-              break;
-            }
             case 48: {
 
-              coin_ = input.readUInt32();
+              unk3300FBACMOFGPGJ_ = input.readUInt32();
               break;
             }
             case 56: {
@@ -126,14 +116,24 @@ public final class SceneGalleryIslandPartyRaftInfoOuterClass {
               startSource_ = rawValue;
               break;
             }
-            case 96: {
+            case 80: {
 
               pointId_ = input.readUInt32();
               break;
             }
-            case 120: {
+            case 96: {
 
-              fuel_ = input.readUInt32();
+              coin_ = input.readUInt32();
+              break;
+            }
+            case 104: {
+
+              unk3300HNECEGNMKNK_ = input.readUInt32();
+              break;
+            }
+            case 112: {
+
+              unk3300HHEKIPECDAK_ = input.readUInt32();
               break;
             }
             default: {
@@ -168,15 +168,48 @@ public final class SceneGalleryIslandPartyRaftInfoOuterClass {
               emu.grasscutter.net.proto.SceneGalleryIslandPartyRaftInfoOuterClass.SceneGalleryIslandPartyRaftInfo.class, emu.grasscutter.net.proto.SceneGalleryIslandPartyRaftInfoOuterClass.SceneGalleryIslandPartyRaftInfo.Builder.class);
     }
 
-    public static final int COIN_FIELD_NUMBER = 6;
+    public static final int COIN_FIELD_NUMBER = 12;
     private int coin_;
     /**
-     * <code>uint32 coin = 6;</code>
+     * <code>uint32 coin = 12;</code>
      * @return The coin.
      */
     @java.lang.Override
     public int getCoin() {
       return coin_;
+    }
+
+    public static final int UNK3300_FBACMOFGPGJ_FIELD_NUMBER = 6;
+    private int unk3300FBACMOFGPGJ_;
+    /**
+     * <code>uint32 Unk3300_FBACMOFGPGJ = 6;</code>
+     * @return The unk3300FBACMOFGPGJ.
+     */
+    @java.lang.Override
+    public int getUnk3300FBACMOFGPGJ() {
+      return unk3300FBACMOFGPGJ_;
+    }
+
+    public static final int POINT_ID_FIELD_NUMBER = 10;
+    private int pointId_;
+    /**
+     * <code>uint32 point_id = 10;</code>
+     * @return The pointId.
+     */
+    @java.lang.Override
+    public int getPointId() {
+      return pointId_;
+    }
+
+    public static final int UNK3300_HHEKIPECDAK_FIELD_NUMBER = 14;
+    private int unk3300HHEKIPECDAK_;
+    /**
+     * <code>uint32 Unk3300_HHEKIPECDAK = 14;</code>
+     * @return The unk3300HHEKIPECDAK.
+     */
+    @java.lang.Override
+    public int getUnk3300HHEKIPECDAK() {
+      return unk3300HHEKIPECDAK_;
     }
 
     public static final int START_SOURCE_FIELD_NUMBER = 7;
@@ -198,48 +231,15 @@ public final class SceneGalleryIslandPartyRaftInfoOuterClass {
       return result == null ? emu.grasscutter.net.proto.GalleryStartSourceOuterClass.GalleryStartSource.UNRECOGNIZED : result;
     }
 
-    public static final int COMPONENT_FIELD_NUMBER = 1;
-    private int component_;
+    public static final int UNK3300_HNECEGNMKNK_FIELD_NUMBER = 13;
+    private int unk3300HNECEGNMKNK_;
     /**
-     * <code>uint32 component = 1;</code>
-     * @return The component.
+     * <code>uint32 Unk3300_HNECEGNMKNK = 13;</code>
+     * @return The unk3300HNECEGNMKNK.
      */
     @java.lang.Override
-    public int getComponent() {
-      return component_;
-    }
-
-    public static final int FUEL_FIELD_NUMBER = 15;
-    private int fuel_;
-    /**
-     * <code>uint32 fuel = 15;</code>
-     * @return The fuel.
-     */
-    @java.lang.Override
-    public int getFuel() {
-      return fuel_;
-    }
-
-    public static final int POINT_ID_FIELD_NUMBER = 12;
-    private int pointId_;
-    /**
-     * <code>uint32 point_id = 12;</code>
-     * @return The pointId.
-     */
-    @java.lang.Override
-    public int getPointId() {
-      return pointId_;
-    }
-
-    public static final int RAFT_ENTITY_ID_FIELD_NUMBER = 4;
-    private int raftEntityId_;
-    /**
-     * <code>uint32 raft_entity_id = 4;</code>
-     * @return The raftEntityId.
-     */
-    @java.lang.Override
-    public int getRaftEntityId() {
-      return raftEntityId_;
+    public int getUnk3300HNECEGNMKNK() {
+      return unk3300HNECEGNMKNK_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -256,23 +256,23 @@ public final class SceneGalleryIslandPartyRaftInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (component_ != 0) {
-        output.writeUInt32(1, component_);
-      }
-      if (raftEntityId_ != 0) {
-        output.writeUInt32(4, raftEntityId_);
-      }
-      if (coin_ != 0) {
-        output.writeUInt32(6, coin_);
+      if (unk3300FBACMOFGPGJ_ != 0) {
+        output.writeUInt32(6, unk3300FBACMOFGPGJ_);
       }
       if (startSource_ != emu.grasscutter.net.proto.GalleryStartSourceOuterClass.GalleryStartSource.GALLERY_START_SOURCE_BY_NONE.getNumber()) {
         output.writeEnum(7, startSource_);
       }
       if (pointId_ != 0) {
-        output.writeUInt32(12, pointId_);
+        output.writeUInt32(10, pointId_);
       }
-      if (fuel_ != 0) {
-        output.writeUInt32(15, fuel_);
+      if (coin_ != 0) {
+        output.writeUInt32(12, coin_);
+      }
+      if (unk3300HNECEGNMKNK_ != 0) {
+        output.writeUInt32(13, unk3300HNECEGNMKNK_);
+      }
+      if (unk3300HHEKIPECDAK_ != 0) {
+        output.writeUInt32(14, unk3300HHEKIPECDAK_);
       }
       unknownFields.writeTo(output);
     }
@@ -283,17 +283,9 @@ public final class SceneGalleryIslandPartyRaftInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (component_ != 0) {
+      if (unk3300FBACMOFGPGJ_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, component_);
-      }
-      if (raftEntityId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, raftEntityId_);
-      }
-      if (coin_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, coin_);
+          .computeUInt32Size(6, unk3300FBACMOFGPGJ_);
       }
       if (startSource_ != emu.grasscutter.net.proto.GalleryStartSourceOuterClass.GalleryStartSource.GALLERY_START_SOURCE_BY_NONE.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
@@ -301,11 +293,19 @@ public final class SceneGalleryIslandPartyRaftInfoOuterClass {
       }
       if (pointId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, pointId_);
+          .computeUInt32Size(10, pointId_);
       }
-      if (fuel_ != 0) {
+      if (coin_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, fuel_);
+          .computeUInt32Size(12, coin_);
+      }
+      if (unk3300HNECEGNMKNK_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(13, unk3300HNECEGNMKNK_);
+      }
+      if (unk3300HHEKIPECDAK_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(14, unk3300HHEKIPECDAK_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -324,15 +324,15 @@ public final class SceneGalleryIslandPartyRaftInfoOuterClass {
 
       if (getCoin()
           != other.getCoin()) return false;
-      if (startSource_ != other.startSource_) return false;
-      if (getComponent()
-          != other.getComponent()) return false;
-      if (getFuel()
-          != other.getFuel()) return false;
+      if (getUnk3300FBACMOFGPGJ()
+          != other.getUnk3300FBACMOFGPGJ()) return false;
       if (getPointId()
           != other.getPointId()) return false;
-      if (getRaftEntityId()
-          != other.getRaftEntityId()) return false;
+      if (getUnk3300HHEKIPECDAK()
+          != other.getUnk3300HHEKIPECDAK()) return false;
+      if (startSource_ != other.startSource_) return false;
+      if (getUnk3300HNECEGNMKNK()
+          != other.getUnk3300HNECEGNMKNK()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -346,16 +346,16 @@ public final class SceneGalleryIslandPartyRaftInfoOuterClass {
       hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + COIN_FIELD_NUMBER;
       hash = (53 * hash) + getCoin();
-      hash = (37 * hash) + START_SOURCE_FIELD_NUMBER;
-      hash = (53 * hash) + startSource_;
-      hash = (37 * hash) + COMPONENT_FIELD_NUMBER;
-      hash = (53 * hash) + getComponent();
-      hash = (37 * hash) + FUEL_FIELD_NUMBER;
-      hash = (53 * hash) + getFuel();
+      hash = (37 * hash) + UNK3300_FBACMOFGPGJ_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300FBACMOFGPGJ();
       hash = (37 * hash) + POINT_ID_FIELD_NUMBER;
       hash = (53 * hash) + getPointId();
-      hash = (37 * hash) + RAFT_ENTITY_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getRaftEntityId();
+      hash = (37 * hash) + UNK3300_HHEKIPECDAK_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300HHEKIPECDAK();
+      hash = (37 * hash) + START_SOURCE_FIELD_NUMBER;
+      hash = (53 * hash) + startSource_;
+      hash = (37 * hash) + UNK3300_HNECEGNMKNK_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300HNECEGNMKNK();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -491,15 +491,15 @@ public final class SceneGalleryIslandPartyRaftInfoOuterClass {
         super.clear();
         coin_ = 0;
 
-        startSource_ = 0;
-
-        component_ = 0;
-
-        fuel_ = 0;
+        unk3300FBACMOFGPGJ_ = 0;
 
         pointId_ = 0;
 
-        raftEntityId_ = 0;
+        unk3300HHEKIPECDAK_ = 0;
+
+        startSource_ = 0;
+
+        unk3300HNECEGNMKNK_ = 0;
 
         return this;
       }
@@ -528,11 +528,11 @@ public final class SceneGalleryIslandPartyRaftInfoOuterClass {
       public emu.grasscutter.net.proto.SceneGalleryIslandPartyRaftInfoOuterClass.SceneGalleryIslandPartyRaftInfo buildPartial() {
         emu.grasscutter.net.proto.SceneGalleryIslandPartyRaftInfoOuterClass.SceneGalleryIslandPartyRaftInfo result = new emu.grasscutter.net.proto.SceneGalleryIslandPartyRaftInfoOuterClass.SceneGalleryIslandPartyRaftInfo(this);
         result.coin_ = coin_;
-        result.startSource_ = startSource_;
-        result.component_ = component_;
-        result.fuel_ = fuel_;
+        result.unk3300FBACMOFGPGJ_ = unk3300FBACMOFGPGJ_;
         result.pointId_ = pointId_;
-        result.raftEntityId_ = raftEntityId_;
+        result.unk3300HHEKIPECDAK_ = unk3300HHEKIPECDAK_;
+        result.startSource_ = startSource_;
+        result.unk3300HNECEGNMKNK_ = unk3300HNECEGNMKNK_;
         onBuilt();
         return result;
       }
@@ -584,20 +584,20 @@ public final class SceneGalleryIslandPartyRaftInfoOuterClass {
         if (other.getCoin() != 0) {
           setCoin(other.getCoin());
         }
-        if (other.startSource_ != 0) {
-          setStartSourceValue(other.getStartSourceValue());
-        }
-        if (other.getComponent() != 0) {
-          setComponent(other.getComponent());
-        }
-        if (other.getFuel() != 0) {
-          setFuel(other.getFuel());
+        if (other.getUnk3300FBACMOFGPGJ() != 0) {
+          setUnk3300FBACMOFGPGJ(other.getUnk3300FBACMOFGPGJ());
         }
         if (other.getPointId() != 0) {
           setPointId(other.getPointId());
         }
-        if (other.getRaftEntityId() != 0) {
-          setRaftEntityId(other.getRaftEntityId());
+        if (other.getUnk3300HHEKIPECDAK() != 0) {
+          setUnk3300HHEKIPECDAK(other.getUnk3300HHEKIPECDAK());
+        }
+        if (other.startSource_ != 0) {
+          setStartSourceValue(other.getStartSourceValue());
+        }
+        if (other.getUnk3300HNECEGNMKNK() != 0) {
+          setUnk3300HNECEGNMKNK(other.getUnk3300HNECEGNMKNK());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -630,7 +630,7 @@ public final class SceneGalleryIslandPartyRaftInfoOuterClass {
 
       private int coin_ ;
       /**
-       * <code>uint32 coin = 6;</code>
+       * <code>uint32 coin = 12;</code>
        * @return The coin.
        */
       @java.lang.Override
@@ -638,7 +638,7 @@ public final class SceneGalleryIslandPartyRaftInfoOuterClass {
         return coin_;
       }
       /**
-       * <code>uint32 coin = 6;</code>
+       * <code>uint32 coin = 12;</code>
        * @param value The coin to set.
        * @return This builder for chaining.
        */
@@ -649,12 +649,105 @@ public final class SceneGalleryIslandPartyRaftInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 coin = 6;</code>
+       * <code>uint32 coin = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearCoin() {
         
         coin_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int unk3300FBACMOFGPGJ_ ;
+      /**
+       * <code>uint32 Unk3300_FBACMOFGPGJ = 6;</code>
+       * @return The unk3300FBACMOFGPGJ.
+       */
+      @java.lang.Override
+      public int getUnk3300FBACMOFGPGJ() {
+        return unk3300FBACMOFGPGJ_;
+      }
+      /**
+       * <code>uint32 Unk3300_FBACMOFGPGJ = 6;</code>
+       * @param value The unk3300FBACMOFGPGJ to set.
+       * @return This builder for chaining.
+       */
+      public Builder setUnk3300FBACMOFGPGJ(int value) {
+        
+        unk3300FBACMOFGPGJ_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 Unk3300_FBACMOFGPGJ = 6;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearUnk3300FBACMOFGPGJ() {
+        
+        unk3300FBACMOFGPGJ_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int pointId_ ;
+      /**
+       * <code>uint32 point_id = 10;</code>
+       * @return The pointId.
+       */
+      @java.lang.Override
+      public int getPointId() {
+        return pointId_;
+      }
+      /**
+       * <code>uint32 point_id = 10;</code>
+       * @param value The pointId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setPointId(int value) {
+        
+        pointId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 point_id = 10;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearPointId() {
+        
+        pointId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int unk3300HHEKIPECDAK_ ;
+      /**
+       * <code>uint32 Unk3300_HHEKIPECDAK = 14;</code>
+       * @return The unk3300HHEKIPECDAK.
+       */
+      @java.lang.Override
+      public int getUnk3300HHEKIPECDAK() {
+        return unk3300HHEKIPECDAK_;
+      }
+      /**
+       * <code>uint32 Unk3300_HHEKIPECDAK = 14;</code>
+       * @param value The unk3300HHEKIPECDAK to set.
+       * @return This builder for chaining.
+       */
+      public Builder setUnk3300HHEKIPECDAK(int value) {
+        
+        unk3300HHEKIPECDAK_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 Unk3300_HHEKIPECDAK = 14;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearUnk3300HHEKIPECDAK() {
+        
+        unk3300HHEKIPECDAK_ = 0;
         onChanged();
         return this;
       }
@@ -713,126 +806,33 @@ public final class SceneGalleryIslandPartyRaftInfoOuterClass {
         return this;
       }
 
-      private int component_ ;
+      private int unk3300HNECEGNMKNK_ ;
       /**
-       * <code>uint32 component = 1;</code>
-       * @return The component.
+       * <code>uint32 Unk3300_HNECEGNMKNK = 13;</code>
+       * @return The unk3300HNECEGNMKNK.
        */
       @java.lang.Override
-      public int getComponent() {
-        return component_;
+      public int getUnk3300HNECEGNMKNK() {
+        return unk3300HNECEGNMKNK_;
       }
       /**
-       * <code>uint32 component = 1;</code>
-       * @param value The component to set.
+       * <code>uint32 Unk3300_HNECEGNMKNK = 13;</code>
+       * @param value The unk3300HNECEGNMKNK to set.
        * @return This builder for chaining.
        */
-      public Builder setComponent(int value) {
+      public Builder setUnk3300HNECEGNMKNK(int value) {
         
-        component_ = value;
+        unk3300HNECEGNMKNK_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 component = 1;</code>
+       * <code>uint32 Unk3300_HNECEGNMKNK = 13;</code>
        * @return This builder for chaining.
        */
-      public Builder clearComponent() {
+      public Builder clearUnk3300HNECEGNMKNK() {
         
-        component_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int fuel_ ;
-      /**
-       * <code>uint32 fuel = 15;</code>
-       * @return The fuel.
-       */
-      @java.lang.Override
-      public int getFuel() {
-        return fuel_;
-      }
-      /**
-       * <code>uint32 fuel = 15;</code>
-       * @param value The fuel to set.
-       * @return This builder for chaining.
-       */
-      public Builder setFuel(int value) {
-        
-        fuel_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 fuel = 15;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearFuel() {
-        
-        fuel_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int pointId_ ;
-      /**
-       * <code>uint32 point_id = 12;</code>
-       * @return The pointId.
-       */
-      @java.lang.Override
-      public int getPointId() {
-        return pointId_;
-      }
-      /**
-       * <code>uint32 point_id = 12;</code>
-       * @param value The pointId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setPointId(int value) {
-        
-        pointId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 point_id = 12;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearPointId() {
-        
-        pointId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int raftEntityId_ ;
-      /**
-       * <code>uint32 raft_entity_id = 4;</code>
-       * @return The raftEntityId.
-       */
-      @java.lang.Override
-      public int getRaftEntityId() {
-        return raftEntityId_;
-      }
-      /**
-       * <code>uint32 raft_entity_id = 4;</code>
-       * @param value The raftEntityId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setRaftEntityId(int value) {
-        
-        raftEntityId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 raft_entity_id = 4;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearRaftEntityId() {
-        
-        raftEntityId_ = 0;
+        unk3300HNECEGNMKNK_ = 0;
         onChanged();
         return this;
       }
@@ -904,12 +904,13 @@ public final class SceneGalleryIslandPartyRaftInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n%SceneGalleryIslandPartyRaftInfo.proto\032" +
-      "\030GalleryStartSource.proto\"\245\001\n\037SceneGalle" +
-      "ryIslandPartyRaftInfo\022\014\n\004coin\030\006 \001(\r\022)\n\014s" +
-      "tart_source\030\007 \001(\0162\023.GalleryStartSource\022\021" +
-      "\n\tcomponent\030\001 \001(\r\022\014\n\004fuel\030\017 \001(\r\022\020\n\010point" +
-      "_id\030\014 \001(\r\022\026\n\016raft_entity_id\030\004 \001(\rB\033\n\031emu" +
-      ".grasscutter.net.protob\006proto3"
+      "\030GalleryStartSource.proto\"\303\001\n\037SceneGalle" +
+      "ryIslandPartyRaftInfo\022\014\n\004coin\030\014 \001(\r\022\033\n\023U" +
+      "nk3300_FBACMOFGPGJ\030\006 \001(\r\022\020\n\010point_id\030\n \001" +
+      "(\r\022\033\n\023Unk3300_HHEKIPECDAK\030\016 \001(\r\022)\n\014start" +
+      "_source\030\007 \001(\0162\023.GalleryStartSource\022\033\n\023Un" +
+      "k3300_HNECEGNMKNK\030\r \001(\rB\033\n\031emu.grasscutt" +
+      "er.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -921,7 +922,7 @@ public final class SceneGalleryIslandPartyRaftInfoOuterClass {
     internal_static_SceneGalleryIslandPartyRaftInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SceneGalleryIslandPartyRaftInfo_descriptor,
-        new java.lang.String[] { "Coin", "StartSource", "Component", "Fuel", "PointId", "RaftEntityId", });
+        new java.lang.String[] { "Coin", "Unk3300FBACMOFGPGJ", "PointId", "Unk3300HHEKIPECDAK", "StartSource", "Unk3300HNECEGNMKNK", });
     emu.grasscutter.net.proto.GalleryStartSourceOuterClass.getDescriptor();
   }
 

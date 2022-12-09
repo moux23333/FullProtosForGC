@@ -19,40 +19,6 @@ public final class FishingGallerySettleInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>map&lt;uint32, .FishInfo&gt; fish_map = 11;</code>
-     */
-    int getFishMapCount();
-    /**
-     * <code>map&lt;uint32, .FishInfo&gt; fish_map = 11;</code>
-     */
-    boolean containsFishMap(
-        int key);
-    /**
-     * Use {@link #getFishMapMap()} instead.
-     */
-    @java.lang.Deprecated
-    java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.FishInfoOuterClass.FishInfo>
-    getFishMap();
-    /**
-     * <code>map&lt;uint32, .FishInfo&gt; fish_map = 11;</code>
-     */
-    java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.FishInfoOuterClass.FishInfo>
-    getFishMapMap();
-    /**
-     * <code>map&lt;uint32, .FishInfo&gt; fish_map = 11;</code>
-     */
-
-    emu.grasscutter.net.proto.FishInfoOuterClass.FishInfo getFishMapOrDefault(
-        int key,
-        emu.grasscutter.net.proto.FishInfoOuterClass.FishInfo defaultValue);
-    /**
-     * <code>map&lt;uint32, .FishInfo&gt; fish_map = 11;</code>
-     */
-
-    emu.grasscutter.net.proto.FishInfoOuterClass.FishInfo getFishMapOrThrow(
-        int key);
-
-    /**
      * <code>repeated .FishingScore fishing_score_list = 15;</code>
      */
     java.util.List<emu.grasscutter.net.proto.FishingScoreOuterClass.FishingScore> 
@@ -75,6 +41,40 @@ public final class FishingGallerySettleInfoOuterClass {
      */
     emu.grasscutter.net.proto.FishingScoreOuterClass.FishingScoreOrBuilder getFishingScoreListOrBuilder(
         int index);
+
+    /**
+     * <code>map&lt;uint32, .FishInfo&gt; fish_map = 10;</code>
+     */
+    int getFishMapCount();
+    /**
+     * <code>map&lt;uint32, .FishInfo&gt; fish_map = 10;</code>
+     */
+    boolean containsFishMap(
+        int key);
+    /**
+     * Use {@link #getFishMapMap()} instead.
+     */
+    @java.lang.Deprecated
+    java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.FishInfoOuterClass.FishInfo>
+    getFishMap();
+    /**
+     * <code>map&lt;uint32, .FishInfo&gt; fish_map = 10;</code>
+     */
+    java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.FishInfoOuterClass.FishInfo>
+    getFishMapMap();
+    /**
+     * <code>map&lt;uint32, .FishInfo&gt; fish_map = 10;</code>
+     */
+
+    emu.grasscutter.net.proto.FishInfoOuterClass.FishInfo getFishMapOrDefault(
+        int key,
+        emu.grasscutter.net.proto.FishInfoOuterClass.FishInfo defaultValue);
+    /**
+     * <code>map&lt;uint32, .FishInfo&gt; fish_map = 10;</code>
+     */
+
+    emu.grasscutter.net.proto.FishInfoOuterClass.FishInfo getFishMapOrThrow(
+        int key);
   }
   /**
    * Protobuf type {@code FishingGallerySettleInfo}
@@ -123,11 +123,11 @@ public final class FishingGallerySettleInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 90: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+            case 82: {
+              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
                 fishMap_ = com.google.protobuf.MapField.newMapField(
                     FishMapDefaultEntryHolder.defaultEntry);
-                mutable_bitField0_ |= 0x00000001;
+                mutable_bitField0_ |= 0x00000002;
               }
               com.google.protobuf.MapEntry<java.lang.Integer, emu.grasscutter.net.proto.FishInfoOuterClass.FishInfo>
               fishMap__ = input.readMessage(
@@ -137,9 +137,9 @@ public final class FishingGallerySettleInfoOuterClass {
               break;
             }
             case 122: {
-              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
+              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 fishingScoreList_ = new java.util.ArrayList<emu.grasscutter.net.proto.FishingScoreOuterClass.FishingScore>();
-                mutable_bitField0_ |= 0x00000002;
+                mutable_bitField0_ |= 0x00000001;
               }
               fishingScoreList_.add(
                   input.readMessage(emu.grasscutter.net.proto.FishingScoreOuterClass.FishingScore.parser(), extensionRegistry));
@@ -160,7 +160,7 @@ public final class FishingGallerySettleInfoOuterClass {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
       } finally {
-        if (((mutable_bitField0_ & 0x00000002) != 0)) {
+        if (((mutable_bitField0_ & 0x00000001) != 0)) {
           fishingScoreList_ = java.util.Collections.unmodifiableList(fishingScoreList_);
         }
         this.unknownFields = unknownFields.build();
@@ -177,7 +177,7 @@ public final class FishingGallerySettleInfoOuterClass {
     protected com.google.protobuf.MapField internalGetMapField(
         int number) {
       switch (number) {
-        case 11:
+        case 10:
           return internalGetFishMap();
         default:
           throw new RuntimeException(
@@ -190,87 +190,6 @@ public final class FishingGallerySettleInfoOuterClass {
       return emu.grasscutter.net.proto.FishingGallerySettleInfoOuterClass.internal_static_FishingGallerySettleInfo_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               emu.grasscutter.net.proto.FishingGallerySettleInfoOuterClass.FishingGallerySettleInfo.class, emu.grasscutter.net.proto.FishingGallerySettleInfoOuterClass.FishingGallerySettleInfo.Builder.class);
-    }
-
-    public static final int FISH_MAP_FIELD_NUMBER = 11;
-    private static final class FishMapDefaultEntryHolder {
-      static final com.google.protobuf.MapEntry<
-          java.lang.Integer, emu.grasscutter.net.proto.FishInfoOuterClass.FishInfo> defaultEntry =
-              com.google.protobuf.MapEntry
-              .<java.lang.Integer, emu.grasscutter.net.proto.FishInfoOuterClass.FishInfo>newDefaultInstance(
-                  emu.grasscutter.net.proto.FishingGallerySettleInfoOuterClass.internal_static_FishingGallerySettleInfo_FishMapEntry_descriptor, 
-                  com.google.protobuf.WireFormat.FieldType.UINT32,
-                  0,
-                  com.google.protobuf.WireFormat.FieldType.MESSAGE,
-                  emu.grasscutter.net.proto.FishInfoOuterClass.FishInfo.getDefaultInstance());
-    }
-    private com.google.protobuf.MapField<
-        java.lang.Integer, emu.grasscutter.net.proto.FishInfoOuterClass.FishInfo> fishMap_;
-    private com.google.protobuf.MapField<java.lang.Integer, emu.grasscutter.net.proto.FishInfoOuterClass.FishInfo>
-    internalGetFishMap() {
-      if (fishMap_ == null) {
-        return com.google.protobuf.MapField.emptyMapField(
-            FishMapDefaultEntryHolder.defaultEntry);
-      }
-      return fishMap_;
-    }
-
-    public int getFishMapCount() {
-      return internalGetFishMap().getMap().size();
-    }
-    /**
-     * <code>map&lt;uint32, .FishInfo&gt; fish_map = 11;</code>
-     */
-
-    @java.lang.Override
-    public boolean containsFishMap(
-        int key) {
-      
-      return internalGetFishMap().getMap().containsKey(key);
-    }
-    /**
-     * Use {@link #getFishMapMap()} instead.
-     */
-    @java.lang.Override
-    @java.lang.Deprecated
-    public java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.FishInfoOuterClass.FishInfo> getFishMap() {
-      return getFishMapMap();
-    }
-    /**
-     * <code>map&lt;uint32, .FishInfo&gt; fish_map = 11;</code>
-     */
-    @java.lang.Override
-
-    public java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.FishInfoOuterClass.FishInfo> getFishMapMap() {
-      return internalGetFishMap().getMap();
-    }
-    /**
-     * <code>map&lt;uint32, .FishInfo&gt; fish_map = 11;</code>
-     */
-    @java.lang.Override
-
-    public emu.grasscutter.net.proto.FishInfoOuterClass.FishInfo getFishMapOrDefault(
-        int key,
-        emu.grasscutter.net.proto.FishInfoOuterClass.FishInfo defaultValue) {
-      
-      java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.FishInfoOuterClass.FishInfo> map =
-          internalGetFishMap().getMap();
-      return map.containsKey(key) ? map.get(key) : defaultValue;
-    }
-    /**
-     * <code>map&lt;uint32, .FishInfo&gt; fish_map = 11;</code>
-     */
-    @java.lang.Override
-
-    public emu.grasscutter.net.proto.FishInfoOuterClass.FishInfo getFishMapOrThrow(
-        int key) {
-      
-      java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.FishInfoOuterClass.FishInfo> map =
-          internalGetFishMap().getMap();
-      if (!map.containsKey(key)) {
-        throw new java.lang.IllegalArgumentException();
-      }
-      return map.get(key);
     }
 
     public static final int FISHING_SCORE_LIST_FIELD_NUMBER = 15;
@@ -313,6 +232,87 @@ public final class FishingGallerySettleInfoOuterClass {
       return fishingScoreList_.get(index);
     }
 
+    public static final int FISH_MAP_FIELD_NUMBER = 10;
+    private static final class FishMapDefaultEntryHolder {
+      static final com.google.protobuf.MapEntry<
+          java.lang.Integer, emu.grasscutter.net.proto.FishInfoOuterClass.FishInfo> defaultEntry =
+              com.google.protobuf.MapEntry
+              .<java.lang.Integer, emu.grasscutter.net.proto.FishInfoOuterClass.FishInfo>newDefaultInstance(
+                  emu.grasscutter.net.proto.FishingGallerySettleInfoOuterClass.internal_static_FishingGallerySettleInfo_FishMapEntry_descriptor, 
+                  com.google.protobuf.WireFormat.FieldType.UINT32,
+                  0,
+                  com.google.protobuf.WireFormat.FieldType.MESSAGE,
+                  emu.grasscutter.net.proto.FishInfoOuterClass.FishInfo.getDefaultInstance());
+    }
+    private com.google.protobuf.MapField<
+        java.lang.Integer, emu.grasscutter.net.proto.FishInfoOuterClass.FishInfo> fishMap_;
+    private com.google.protobuf.MapField<java.lang.Integer, emu.grasscutter.net.proto.FishInfoOuterClass.FishInfo>
+    internalGetFishMap() {
+      if (fishMap_ == null) {
+        return com.google.protobuf.MapField.emptyMapField(
+            FishMapDefaultEntryHolder.defaultEntry);
+      }
+      return fishMap_;
+    }
+
+    public int getFishMapCount() {
+      return internalGetFishMap().getMap().size();
+    }
+    /**
+     * <code>map&lt;uint32, .FishInfo&gt; fish_map = 10;</code>
+     */
+
+    @java.lang.Override
+    public boolean containsFishMap(
+        int key) {
+      
+      return internalGetFishMap().getMap().containsKey(key);
+    }
+    /**
+     * Use {@link #getFishMapMap()} instead.
+     */
+    @java.lang.Override
+    @java.lang.Deprecated
+    public java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.FishInfoOuterClass.FishInfo> getFishMap() {
+      return getFishMapMap();
+    }
+    /**
+     * <code>map&lt;uint32, .FishInfo&gt; fish_map = 10;</code>
+     */
+    @java.lang.Override
+
+    public java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.FishInfoOuterClass.FishInfo> getFishMapMap() {
+      return internalGetFishMap().getMap();
+    }
+    /**
+     * <code>map&lt;uint32, .FishInfo&gt; fish_map = 10;</code>
+     */
+    @java.lang.Override
+
+    public emu.grasscutter.net.proto.FishInfoOuterClass.FishInfo getFishMapOrDefault(
+        int key,
+        emu.grasscutter.net.proto.FishInfoOuterClass.FishInfo defaultValue) {
+      
+      java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.FishInfoOuterClass.FishInfo> map =
+          internalGetFishMap().getMap();
+      return map.containsKey(key) ? map.get(key) : defaultValue;
+    }
+    /**
+     * <code>map&lt;uint32, .FishInfo&gt; fish_map = 10;</code>
+     */
+    @java.lang.Override
+
+    public emu.grasscutter.net.proto.FishInfoOuterClass.FishInfo getFishMapOrThrow(
+        int key) {
+      
+      java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.FishInfoOuterClass.FishInfo> map =
+          internalGetFishMap().getMap();
+      if (!map.containsKey(key)) {
+        throw new java.lang.IllegalArgumentException();
+      }
+      return map.get(key);
+    }
+
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
     public final boolean isInitialized() {
@@ -332,7 +332,7 @@ public final class FishingGallerySettleInfoOuterClass {
           output,
           internalGetFishMap(),
           FishMapDefaultEntryHolder.defaultEntry,
-          11);
+          10);
       for (int i = 0; i < fishingScoreList_.size(); i++) {
         output.writeMessage(15, fishingScoreList_.get(i));
       }
@@ -353,7 +353,7 @@ public final class FishingGallerySettleInfoOuterClass {
             .setValue(entry.getValue())
             .build();
         size += com.google.protobuf.CodedOutputStream
-            .computeMessageSize(11, fishMap__);
+            .computeMessageSize(10, fishMap__);
       }
       for (int i = 0; i < fishingScoreList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
@@ -374,10 +374,10 @@ public final class FishingGallerySettleInfoOuterClass {
       }
       emu.grasscutter.net.proto.FishingGallerySettleInfoOuterClass.FishingGallerySettleInfo other = (emu.grasscutter.net.proto.FishingGallerySettleInfoOuterClass.FishingGallerySettleInfo) obj;
 
-      if (!internalGetFishMap().equals(
-          other.internalGetFishMap())) return false;
       if (!getFishingScoreListList()
           .equals(other.getFishingScoreListList())) return false;
+      if (!internalGetFishMap().equals(
+          other.internalGetFishMap())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -389,13 +389,13 @@ public final class FishingGallerySettleInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (!internalGetFishMap().getMap().isEmpty()) {
-        hash = (37 * hash) + FISH_MAP_FIELD_NUMBER;
-        hash = (53 * hash) + internalGetFishMap().hashCode();
-      }
       if (getFishingScoreListCount() > 0) {
         hash = (37 * hash) + FISHING_SCORE_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getFishingScoreListList().hashCode();
+      }
+      if (!internalGetFishMap().getMap().isEmpty()) {
+        hash = (37 * hash) + FISH_MAP_FIELD_NUMBER;
+        hash = (53 * hash) + internalGetFishMap().hashCode();
       }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
@@ -508,7 +508,7 @@ public final class FishingGallerySettleInfoOuterClass {
       protected com.google.protobuf.MapField internalGetMapField(
           int number) {
         switch (number) {
-          case 11:
+          case 10:
             return internalGetFishMap();
           default:
             throw new RuntimeException(
@@ -519,7 +519,7 @@ public final class FishingGallerySettleInfoOuterClass {
       protected com.google.protobuf.MapField internalGetMutableMapField(
           int number) {
         switch (number) {
-          case 11:
+          case 10:
             return internalGetMutableFishMap();
           default:
             throw new RuntimeException(
@@ -553,13 +553,13 @@ public final class FishingGallerySettleInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        internalGetMutableFishMap().clear();
         if (fishingScoreListBuilder_ == null) {
           fishingScoreList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000002);
+          bitField0_ = (bitField0_ & ~0x00000001);
         } else {
           fishingScoreListBuilder_.clear();
         }
+        internalGetMutableFishMap().clear();
         return this;
       }
 
@@ -587,17 +587,17 @@ public final class FishingGallerySettleInfoOuterClass {
       public emu.grasscutter.net.proto.FishingGallerySettleInfoOuterClass.FishingGallerySettleInfo buildPartial() {
         emu.grasscutter.net.proto.FishingGallerySettleInfoOuterClass.FishingGallerySettleInfo result = new emu.grasscutter.net.proto.FishingGallerySettleInfoOuterClass.FishingGallerySettleInfo(this);
         int from_bitField0_ = bitField0_;
-        result.fishMap_ = internalGetFishMap();
-        result.fishMap_.makeImmutable();
         if (fishingScoreListBuilder_ == null) {
-          if (((bitField0_ & 0x00000002) != 0)) {
+          if (((bitField0_ & 0x00000001) != 0)) {
             fishingScoreList_ = java.util.Collections.unmodifiableList(fishingScoreList_);
-            bitField0_ = (bitField0_ & ~0x00000002);
+            bitField0_ = (bitField0_ & ~0x00000001);
           }
           result.fishingScoreList_ = fishingScoreList_;
         } else {
           result.fishingScoreList_ = fishingScoreListBuilder_.build();
         }
+        result.fishMap_ = internalGetFishMap();
+        result.fishMap_.makeImmutable();
         onBuilt();
         return result;
       }
@@ -646,13 +646,11 @@ public final class FishingGallerySettleInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.FishingGallerySettleInfoOuterClass.FishingGallerySettleInfo other) {
         if (other == emu.grasscutter.net.proto.FishingGallerySettleInfoOuterClass.FishingGallerySettleInfo.getDefaultInstance()) return this;
-        internalGetMutableFishMap().mergeFrom(
-            other.internalGetFishMap());
         if (fishingScoreListBuilder_ == null) {
           if (!other.fishingScoreList_.isEmpty()) {
             if (fishingScoreList_.isEmpty()) {
               fishingScoreList_ = other.fishingScoreList_;
-              bitField0_ = (bitField0_ & ~0x00000002);
+              bitField0_ = (bitField0_ & ~0x00000001);
             } else {
               ensureFishingScoreListIsMutable();
               fishingScoreList_.addAll(other.fishingScoreList_);
@@ -665,7 +663,7 @@ public final class FishingGallerySettleInfoOuterClass {
               fishingScoreListBuilder_.dispose();
               fishingScoreListBuilder_ = null;
               fishingScoreList_ = other.fishingScoreList_;
-              bitField0_ = (bitField0_ & ~0x00000002);
+              bitField0_ = (bitField0_ & ~0x00000001);
               fishingScoreListBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
                    getFishingScoreListFieldBuilder() : null;
@@ -674,6 +672,8 @@ public final class FishingGallerySettleInfoOuterClass {
             }
           }
         }
+        internalGetMutableFishMap().mergeFrom(
+            other.internalGetFishMap());
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
         return this;
@@ -704,140 +704,12 @@ public final class FishingGallerySettleInfoOuterClass {
       }
       private int bitField0_;
 
-      private com.google.protobuf.MapField<
-          java.lang.Integer, emu.grasscutter.net.proto.FishInfoOuterClass.FishInfo> fishMap_;
-      private com.google.protobuf.MapField<java.lang.Integer, emu.grasscutter.net.proto.FishInfoOuterClass.FishInfo>
-      internalGetFishMap() {
-        if (fishMap_ == null) {
-          return com.google.protobuf.MapField.emptyMapField(
-              FishMapDefaultEntryHolder.defaultEntry);
-        }
-        return fishMap_;
-      }
-      private com.google.protobuf.MapField<java.lang.Integer, emu.grasscutter.net.proto.FishInfoOuterClass.FishInfo>
-      internalGetMutableFishMap() {
-        onChanged();;
-        if (fishMap_ == null) {
-          fishMap_ = com.google.protobuf.MapField.newMapField(
-              FishMapDefaultEntryHolder.defaultEntry);
-        }
-        if (!fishMap_.isMutable()) {
-          fishMap_ = fishMap_.copy();
-        }
-        return fishMap_;
-      }
-
-      public int getFishMapCount() {
-        return internalGetFishMap().getMap().size();
-      }
-      /**
-       * <code>map&lt;uint32, .FishInfo&gt; fish_map = 11;</code>
-       */
-
-      @java.lang.Override
-      public boolean containsFishMap(
-          int key) {
-        
-        return internalGetFishMap().getMap().containsKey(key);
-      }
-      /**
-       * Use {@link #getFishMapMap()} instead.
-       */
-      @java.lang.Override
-      @java.lang.Deprecated
-      public java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.FishInfoOuterClass.FishInfo> getFishMap() {
-        return getFishMapMap();
-      }
-      /**
-       * <code>map&lt;uint32, .FishInfo&gt; fish_map = 11;</code>
-       */
-      @java.lang.Override
-
-      public java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.FishInfoOuterClass.FishInfo> getFishMapMap() {
-        return internalGetFishMap().getMap();
-      }
-      /**
-       * <code>map&lt;uint32, .FishInfo&gt; fish_map = 11;</code>
-       */
-      @java.lang.Override
-
-      public emu.grasscutter.net.proto.FishInfoOuterClass.FishInfo getFishMapOrDefault(
-          int key,
-          emu.grasscutter.net.proto.FishInfoOuterClass.FishInfo defaultValue) {
-        
-        java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.FishInfoOuterClass.FishInfo> map =
-            internalGetFishMap().getMap();
-        return map.containsKey(key) ? map.get(key) : defaultValue;
-      }
-      /**
-       * <code>map&lt;uint32, .FishInfo&gt; fish_map = 11;</code>
-       */
-      @java.lang.Override
-
-      public emu.grasscutter.net.proto.FishInfoOuterClass.FishInfo getFishMapOrThrow(
-          int key) {
-        
-        java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.FishInfoOuterClass.FishInfo> map =
-            internalGetFishMap().getMap();
-        if (!map.containsKey(key)) {
-          throw new java.lang.IllegalArgumentException();
-        }
-        return map.get(key);
-      }
-
-      public Builder clearFishMap() {
-        internalGetMutableFishMap().getMutableMap()
-            .clear();
-        return this;
-      }
-      /**
-       * <code>map&lt;uint32, .FishInfo&gt; fish_map = 11;</code>
-       */
-
-      public Builder removeFishMap(
-          int key) {
-        
-        internalGetMutableFishMap().getMutableMap()
-            .remove(key);
-        return this;
-      }
-      /**
-       * Use alternate mutation accessors instead.
-       */
-      @java.lang.Deprecated
-      public java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.FishInfoOuterClass.FishInfo>
-      getMutableFishMap() {
-        return internalGetMutableFishMap().getMutableMap();
-      }
-      /**
-       * <code>map&lt;uint32, .FishInfo&gt; fish_map = 11;</code>
-       */
-      public Builder putFishMap(
-          int key,
-          emu.grasscutter.net.proto.FishInfoOuterClass.FishInfo value) {
-        
-        if (value == null) { throw new java.lang.NullPointerException(); }
-        internalGetMutableFishMap().getMutableMap()
-            .put(key, value);
-        return this;
-      }
-      /**
-       * <code>map&lt;uint32, .FishInfo&gt; fish_map = 11;</code>
-       */
-
-      public Builder putAllFishMap(
-          java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.FishInfoOuterClass.FishInfo> values) {
-        internalGetMutableFishMap().getMutableMap()
-            .putAll(values);
-        return this;
-      }
-
       private java.util.List<emu.grasscutter.net.proto.FishingScoreOuterClass.FishingScore> fishingScoreList_ =
         java.util.Collections.emptyList();
       private void ensureFishingScoreListIsMutable() {
-        if (!((bitField0_ & 0x00000002) != 0)) {
+        if (!((bitField0_ & 0x00000001) != 0)) {
           fishingScoreList_ = new java.util.ArrayList<emu.grasscutter.net.proto.FishingScoreOuterClass.FishingScore>(fishingScoreList_);
-          bitField0_ |= 0x00000002;
+          bitField0_ |= 0x00000001;
          }
       }
 
@@ -987,7 +859,7 @@ public final class FishingGallerySettleInfoOuterClass {
       public Builder clearFishingScoreList() {
         if (fishingScoreListBuilder_ == null) {
           fishingScoreList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000002);
+          bitField0_ = (bitField0_ & ~0x00000001);
           onChanged();
         } else {
           fishingScoreListBuilder_.clear();
@@ -1064,12 +936,140 @@ public final class FishingGallerySettleInfoOuterClass {
           fishingScoreListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
               emu.grasscutter.net.proto.FishingScoreOuterClass.FishingScore, emu.grasscutter.net.proto.FishingScoreOuterClass.FishingScore.Builder, emu.grasscutter.net.proto.FishingScoreOuterClass.FishingScoreOrBuilder>(
                   fishingScoreList_,
-                  ((bitField0_ & 0x00000002) != 0),
+                  ((bitField0_ & 0x00000001) != 0),
                   getParentForChildren(),
                   isClean());
           fishingScoreList_ = null;
         }
         return fishingScoreListBuilder_;
+      }
+
+      private com.google.protobuf.MapField<
+          java.lang.Integer, emu.grasscutter.net.proto.FishInfoOuterClass.FishInfo> fishMap_;
+      private com.google.protobuf.MapField<java.lang.Integer, emu.grasscutter.net.proto.FishInfoOuterClass.FishInfo>
+      internalGetFishMap() {
+        if (fishMap_ == null) {
+          return com.google.protobuf.MapField.emptyMapField(
+              FishMapDefaultEntryHolder.defaultEntry);
+        }
+        return fishMap_;
+      }
+      private com.google.protobuf.MapField<java.lang.Integer, emu.grasscutter.net.proto.FishInfoOuterClass.FishInfo>
+      internalGetMutableFishMap() {
+        onChanged();;
+        if (fishMap_ == null) {
+          fishMap_ = com.google.protobuf.MapField.newMapField(
+              FishMapDefaultEntryHolder.defaultEntry);
+        }
+        if (!fishMap_.isMutable()) {
+          fishMap_ = fishMap_.copy();
+        }
+        return fishMap_;
+      }
+
+      public int getFishMapCount() {
+        return internalGetFishMap().getMap().size();
+      }
+      /**
+       * <code>map&lt;uint32, .FishInfo&gt; fish_map = 10;</code>
+       */
+
+      @java.lang.Override
+      public boolean containsFishMap(
+          int key) {
+        
+        return internalGetFishMap().getMap().containsKey(key);
+      }
+      /**
+       * Use {@link #getFishMapMap()} instead.
+       */
+      @java.lang.Override
+      @java.lang.Deprecated
+      public java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.FishInfoOuterClass.FishInfo> getFishMap() {
+        return getFishMapMap();
+      }
+      /**
+       * <code>map&lt;uint32, .FishInfo&gt; fish_map = 10;</code>
+       */
+      @java.lang.Override
+
+      public java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.FishInfoOuterClass.FishInfo> getFishMapMap() {
+        return internalGetFishMap().getMap();
+      }
+      /**
+       * <code>map&lt;uint32, .FishInfo&gt; fish_map = 10;</code>
+       */
+      @java.lang.Override
+
+      public emu.grasscutter.net.proto.FishInfoOuterClass.FishInfo getFishMapOrDefault(
+          int key,
+          emu.grasscutter.net.proto.FishInfoOuterClass.FishInfo defaultValue) {
+        
+        java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.FishInfoOuterClass.FishInfo> map =
+            internalGetFishMap().getMap();
+        return map.containsKey(key) ? map.get(key) : defaultValue;
+      }
+      /**
+       * <code>map&lt;uint32, .FishInfo&gt; fish_map = 10;</code>
+       */
+      @java.lang.Override
+
+      public emu.grasscutter.net.proto.FishInfoOuterClass.FishInfo getFishMapOrThrow(
+          int key) {
+        
+        java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.FishInfoOuterClass.FishInfo> map =
+            internalGetFishMap().getMap();
+        if (!map.containsKey(key)) {
+          throw new java.lang.IllegalArgumentException();
+        }
+        return map.get(key);
+      }
+
+      public Builder clearFishMap() {
+        internalGetMutableFishMap().getMutableMap()
+            .clear();
+        return this;
+      }
+      /**
+       * <code>map&lt;uint32, .FishInfo&gt; fish_map = 10;</code>
+       */
+
+      public Builder removeFishMap(
+          int key) {
+        
+        internalGetMutableFishMap().getMutableMap()
+            .remove(key);
+        return this;
+      }
+      /**
+       * Use alternate mutation accessors instead.
+       */
+      @java.lang.Deprecated
+      public java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.FishInfoOuterClass.FishInfo>
+      getMutableFishMap() {
+        return internalGetMutableFishMap().getMutableMap();
+      }
+      /**
+       * <code>map&lt;uint32, .FishInfo&gt; fish_map = 10;</code>
+       */
+      public Builder putFishMap(
+          int key,
+          emu.grasscutter.net.proto.FishInfoOuterClass.FishInfo value) {
+        
+        if (value == null) { throw new java.lang.NullPointerException(); }
+        internalGetMutableFishMap().getMutableMap()
+            .put(key, value);
+        return this;
+      }
+      /**
+       * <code>map&lt;uint32, .FishInfo&gt; fish_map = 10;</code>
+       */
+
+      public Builder putAllFishMap(
+          java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.FishInfoOuterClass.FishInfo> values) {
+        internalGetMutableFishMap().getMutableMap()
+            .putAll(values);
+        return this;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -1145,9 +1145,9 @@ public final class FishingGallerySettleInfoOuterClass {
     java.lang.String[] descriptorData = {
       "\n\036FishingGallerySettleInfo.proto\032\016FishIn" +
       "fo.proto\032\022FishingScore.proto\"\272\001\n\030Fishing" +
-      "GallerySettleInfo\0228\n\010fish_map\030\013 \003(\0132&.Fi" +
-      "shingGallerySettleInfo.FishMapEntry\022)\n\022f" +
-      "ishing_score_list\030\017 \003(\0132\r.FishingScore\0329" +
+      "GallerySettleInfo\022)\n\022fishing_score_list\030" +
+      "\017 \003(\0132\r.FishingScore\0228\n\010fish_map\030\n \003(\0132&" +
+      ".FishingGallerySettleInfo.FishMapEntry\0329" +
       "\n\014FishMapEntry\022\013\n\003key\030\001 \001(\r\022\030\n\005value\030\002 \001" +
       "(\0132\t.FishInfo:\0028\001B\033\n\031emu.grasscutter.net" +
       ".protob\006proto3"
@@ -1163,7 +1163,7 @@ public final class FishingGallerySettleInfoOuterClass {
     internal_static_FishingGallerySettleInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_FishingGallerySettleInfo_descriptor,
-        new java.lang.String[] { "FishMap", "FishingScoreList", });
+        new java.lang.String[] { "FishingScoreList", "FishMap", });
     internal_static_FishingGallerySettleInfo_FishMapEntry_descriptor =
       internal_static_FishingGallerySettleInfo_descriptor.getNestedTypes().get(0);
     internal_static_FishingGallerySettleInfo_FishMapEntry_fieldAccessorTable = new

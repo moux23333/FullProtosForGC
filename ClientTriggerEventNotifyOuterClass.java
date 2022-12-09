@@ -19,28 +19,32 @@ public final class ClientTriggerEventNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 force_id = 3;</code>
+     * <code>uint32 force_id = 10;</code>
      * @return The forceId.
      */
     int getForceId();
 
     /**
-     * <code>.EventTriggerType event_type = 2;</code>
+     * <code>.EventTriggerType event_type = 15;</code>
      * @return The enum numeric value on the wire for eventType.
      */
     int getEventTypeValue();
     /**
-     * <code>.EventTriggerType event_type = 2;</code>
+     * <code>.EventTriggerType event_type = 15;</code>
      * @return The eventType.
      */
     emu.grasscutter.net.proto.EventTriggerTypeOuterClass.EventTriggerType getEventType();
   }
   /**
    * <pre>
-   * CmdId: 148
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 148;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code ClientTriggerEventNotify}
@@ -88,15 +92,15 @@ public final class ClientTriggerEventNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
+            case 80: {
+
+              forceId_ = input.readUInt32();
+              break;
+            }
+            case 120: {
               int rawValue = input.readEnum();
 
               eventType_ = rawValue;
-              break;
-            }
-            case 24: {
-
-              forceId_ = input.readUInt32();
               break;
             }
             default: {
@@ -131,10 +135,10 @@ public final class ClientTriggerEventNotifyOuterClass {
               emu.grasscutter.net.proto.ClientTriggerEventNotifyOuterClass.ClientTriggerEventNotify.class, emu.grasscutter.net.proto.ClientTriggerEventNotifyOuterClass.ClientTriggerEventNotify.Builder.class);
     }
 
-    public static final int FORCE_ID_FIELD_NUMBER = 3;
+    public static final int FORCE_ID_FIELD_NUMBER = 10;
     private int forceId_;
     /**
-     * <code>uint32 force_id = 3;</code>
+     * <code>uint32 force_id = 10;</code>
      * @return The forceId.
      */
     @java.lang.Override
@@ -142,17 +146,17 @@ public final class ClientTriggerEventNotifyOuterClass {
       return forceId_;
     }
 
-    public static final int EVENT_TYPE_FIELD_NUMBER = 2;
+    public static final int EVENT_TYPE_FIELD_NUMBER = 15;
     private int eventType_;
     /**
-     * <code>.EventTriggerType event_type = 2;</code>
+     * <code>.EventTriggerType event_type = 15;</code>
      * @return The enum numeric value on the wire for eventType.
      */
     @java.lang.Override public int getEventTypeValue() {
       return eventType_;
     }
     /**
-     * <code>.EventTriggerType event_type = 2;</code>
+     * <code>.EventTriggerType event_type = 15;</code>
      * @return The eventType.
      */
     @java.lang.Override public emu.grasscutter.net.proto.EventTriggerTypeOuterClass.EventTriggerType getEventType() {
@@ -175,11 +179,11 @@ public final class ClientTriggerEventNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (eventType_ != emu.grasscutter.net.proto.EventTriggerTypeOuterClass.EventTriggerType.EVENT_TRIGGER_TYPE_NONE.getNumber()) {
-        output.writeEnum(2, eventType_);
-      }
       if (forceId_ != 0) {
-        output.writeUInt32(3, forceId_);
+        output.writeUInt32(10, forceId_);
+      }
+      if (eventType_ != emu.grasscutter.net.proto.EventTriggerTypeOuterClass.EventTriggerType.EVENT_TRIGGER_TYPE_NONE.getNumber()) {
+        output.writeEnum(15, eventType_);
       }
       unknownFields.writeTo(output);
     }
@@ -190,13 +194,13 @@ public final class ClientTriggerEventNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (eventType_ != emu.grasscutter.net.proto.EventTriggerTypeOuterClass.EventTriggerType.EVENT_TRIGGER_TYPE_NONE.getNumber()) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(2, eventType_);
-      }
       if (forceId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, forceId_);
+          .computeUInt32Size(10, forceId_);
+      }
+      if (eventType_ != emu.grasscutter.net.proto.EventTriggerTypeOuterClass.EventTriggerType.EVENT_TRIGGER_TYPE_NONE.getNumber()) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeEnumSize(15, eventType_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -328,10 +332,14 @@ public final class ClientTriggerEventNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 148
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 148;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code ClientTriggerEventNotify}
@@ -488,7 +496,7 @@ public final class ClientTriggerEventNotifyOuterClass {
 
       private int forceId_ ;
       /**
-       * <code>uint32 force_id = 3;</code>
+       * <code>uint32 force_id = 10;</code>
        * @return The forceId.
        */
       @java.lang.Override
@@ -496,7 +504,7 @@ public final class ClientTriggerEventNotifyOuterClass {
         return forceId_;
       }
       /**
-       * <code>uint32 force_id = 3;</code>
+       * <code>uint32 force_id = 10;</code>
        * @param value The forceId to set.
        * @return This builder for chaining.
        */
@@ -507,7 +515,7 @@ public final class ClientTriggerEventNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 force_id = 3;</code>
+       * <code>uint32 force_id = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearForceId() {
@@ -519,14 +527,14 @@ public final class ClientTriggerEventNotifyOuterClass {
 
       private int eventType_ = 0;
       /**
-       * <code>.EventTriggerType event_type = 2;</code>
+       * <code>.EventTriggerType event_type = 15;</code>
        * @return The enum numeric value on the wire for eventType.
        */
       @java.lang.Override public int getEventTypeValue() {
         return eventType_;
       }
       /**
-       * <code>.EventTriggerType event_type = 2;</code>
+       * <code>.EventTriggerType event_type = 15;</code>
        * @param value The enum numeric value on the wire for eventType to set.
        * @return This builder for chaining.
        */
@@ -537,7 +545,7 @@ public final class ClientTriggerEventNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.EventTriggerType event_type = 2;</code>
+       * <code>.EventTriggerType event_type = 15;</code>
        * @return The eventType.
        */
       @java.lang.Override
@@ -547,7 +555,7 @@ public final class ClientTriggerEventNotifyOuterClass {
         return result == null ? emu.grasscutter.net.proto.EventTriggerTypeOuterClass.EventTriggerType.UNRECOGNIZED : result;
       }
       /**
-       * <code>.EventTriggerType event_type = 2;</code>
+       * <code>.EventTriggerType event_type = 15;</code>
        * @param value The eventType to set.
        * @return This builder for chaining.
        */
@@ -561,7 +569,7 @@ public final class ClientTriggerEventNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.EventTriggerType event_type = 2;</code>
+       * <code>.EventTriggerType event_type = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearEventType() {
@@ -639,7 +647,7 @@ public final class ClientTriggerEventNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n\036ClientTriggerEventNotify.proto\032\026EventT" +
       "riggerType.proto\"S\n\030ClientTriggerEventNo" +
-      "tify\022\020\n\010force_id\030\003 \001(\r\022%\n\nevent_type\030\002 \001" +
+      "tify\022\020\n\010force_id\030\n \001(\r\022%\n\nevent_type\030\017 \001" +
       "(\0162\021.EventTriggerTypeB\033\n\031emu.grasscutter" +
       ".net.protob\006proto3"
     };

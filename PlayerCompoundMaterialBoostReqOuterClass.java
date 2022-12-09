@@ -19,35 +19,39 @@ public final class PlayerCompoundMaterialBoostReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_boost_all = 8;</code>
+     * <code>bool is_boost_all = 13;</code>
      * @return The isBoostAll.
      */
     boolean getIsBoostAll();
 
     /**
-     * <code>uint32 target_compound_group_id = 14;</code>
-     * @return The targetCompoundGroupId.
+     * <code>uint32 Unk3300_PPDDLODBIKG = 8;</code>
+     * @return The unk3300PPDDLODBIKG.
      */
-    int getTargetCompoundGroupId();
+    int getUnk3300PPDDLODBIKG();
 
     /**
-     * <code>uint32 consume_material_id = 9;</code>
-     * @return The consumeMaterialId.
+     * <code>uint32 Unk3300_BGHFBCLHCIG = 5;</code>
+     * @return The unk3300BGHFBCLHCIG.
      */
-    int getConsumeMaterialId();
+    int getUnk3300BGHFBCLHCIG();
 
     /**
-     * <code>uint32 consume_material_count = 1;</code>
-     * @return The consumeMaterialCount.
+     * <code>uint32 Unk3300_FEGPHHFLFLM = 11;</code>
+     * @return The unk3300FEGPHHFLFLM.
      */
-    int getConsumeMaterialCount();
+    int getUnk3300FEGPHHFLFLM();
   }
   /**
    * <pre>
-   * CmdId: 185
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 159;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code PlayerCompoundMaterialBoostReq}
@@ -94,24 +98,24 @@ public final class PlayerCompoundMaterialBoostReqOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
+            case 40: {
 
-              consumeMaterialCount_ = input.readUInt32();
+              unk3300BGHFBCLHCIG_ = input.readUInt32();
               break;
             }
             case 64: {
 
+              unk3300PPDDLODBIKG_ = input.readUInt32();
+              break;
+            }
+            case 88: {
+
+              unk3300FEGPHHFLFLM_ = input.readUInt32();
+              break;
+            }
+            case 104: {
+
               isBoostAll_ = input.readBool();
-              break;
-            }
-            case 72: {
-
-              consumeMaterialId_ = input.readUInt32();
-              break;
-            }
-            case 112: {
-
-              targetCompoundGroupId_ = input.readUInt32();
               break;
             }
             default: {
@@ -146,10 +150,10 @@ public final class PlayerCompoundMaterialBoostReqOuterClass {
               emu.grasscutter.net.proto.PlayerCompoundMaterialBoostReqOuterClass.PlayerCompoundMaterialBoostReq.class, emu.grasscutter.net.proto.PlayerCompoundMaterialBoostReqOuterClass.PlayerCompoundMaterialBoostReq.Builder.class);
     }
 
-    public static final int IS_BOOST_ALL_FIELD_NUMBER = 8;
+    public static final int IS_BOOST_ALL_FIELD_NUMBER = 13;
     private boolean isBoostAll_;
     /**
-     * <code>bool is_boost_all = 8;</code>
+     * <code>bool is_boost_all = 13;</code>
      * @return The isBoostAll.
      */
     @java.lang.Override
@@ -157,37 +161,37 @@ public final class PlayerCompoundMaterialBoostReqOuterClass {
       return isBoostAll_;
     }
 
-    public static final int TARGET_COMPOUND_GROUP_ID_FIELD_NUMBER = 14;
-    private int targetCompoundGroupId_;
+    public static final int UNK3300_PPDDLODBIKG_FIELD_NUMBER = 8;
+    private int unk3300PPDDLODBIKG_;
     /**
-     * <code>uint32 target_compound_group_id = 14;</code>
-     * @return The targetCompoundGroupId.
+     * <code>uint32 Unk3300_PPDDLODBIKG = 8;</code>
+     * @return The unk3300PPDDLODBIKG.
      */
     @java.lang.Override
-    public int getTargetCompoundGroupId() {
-      return targetCompoundGroupId_;
+    public int getUnk3300PPDDLODBIKG() {
+      return unk3300PPDDLODBIKG_;
     }
 
-    public static final int CONSUME_MATERIAL_ID_FIELD_NUMBER = 9;
-    private int consumeMaterialId_;
+    public static final int UNK3300_BGHFBCLHCIG_FIELD_NUMBER = 5;
+    private int unk3300BGHFBCLHCIG_;
     /**
-     * <code>uint32 consume_material_id = 9;</code>
-     * @return The consumeMaterialId.
+     * <code>uint32 Unk3300_BGHFBCLHCIG = 5;</code>
+     * @return The unk3300BGHFBCLHCIG.
      */
     @java.lang.Override
-    public int getConsumeMaterialId() {
-      return consumeMaterialId_;
+    public int getUnk3300BGHFBCLHCIG() {
+      return unk3300BGHFBCLHCIG_;
     }
 
-    public static final int CONSUME_MATERIAL_COUNT_FIELD_NUMBER = 1;
-    private int consumeMaterialCount_;
+    public static final int UNK3300_FEGPHHFLFLM_FIELD_NUMBER = 11;
+    private int unk3300FEGPHHFLFLM_;
     /**
-     * <code>uint32 consume_material_count = 1;</code>
-     * @return The consumeMaterialCount.
+     * <code>uint32 Unk3300_FEGPHHFLFLM = 11;</code>
+     * @return The unk3300FEGPHHFLFLM.
      */
     @java.lang.Override
-    public int getConsumeMaterialCount() {
-      return consumeMaterialCount_;
+    public int getUnk3300FEGPHHFLFLM() {
+      return unk3300FEGPHHFLFLM_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -204,17 +208,17 @@ public final class PlayerCompoundMaterialBoostReqOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (consumeMaterialCount_ != 0) {
-        output.writeUInt32(1, consumeMaterialCount_);
+      if (unk3300BGHFBCLHCIG_ != 0) {
+        output.writeUInt32(5, unk3300BGHFBCLHCIG_);
+      }
+      if (unk3300PPDDLODBIKG_ != 0) {
+        output.writeUInt32(8, unk3300PPDDLODBIKG_);
+      }
+      if (unk3300FEGPHHFLFLM_ != 0) {
+        output.writeUInt32(11, unk3300FEGPHHFLFLM_);
       }
       if (isBoostAll_ != false) {
-        output.writeBool(8, isBoostAll_);
-      }
-      if (consumeMaterialId_ != 0) {
-        output.writeUInt32(9, consumeMaterialId_);
-      }
-      if (targetCompoundGroupId_ != 0) {
-        output.writeUInt32(14, targetCompoundGroupId_);
+        output.writeBool(13, isBoostAll_);
       }
       unknownFields.writeTo(output);
     }
@@ -225,21 +229,21 @@ public final class PlayerCompoundMaterialBoostReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (consumeMaterialCount_ != 0) {
+      if (unk3300BGHFBCLHCIG_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, consumeMaterialCount_);
+          .computeUInt32Size(5, unk3300BGHFBCLHCIG_);
+      }
+      if (unk3300PPDDLODBIKG_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(8, unk3300PPDDLODBIKG_);
+      }
+      if (unk3300FEGPHHFLFLM_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(11, unk3300FEGPHHFLFLM_);
       }
       if (isBoostAll_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(8, isBoostAll_);
-      }
-      if (consumeMaterialId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, consumeMaterialId_);
-      }
-      if (targetCompoundGroupId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, targetCompoundGroupId_);
+          .computeBoolSize(13, isBoostAll_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -258,12 +262,12 @@ public final class PlayerCompoundMaterialBoostReqOuterClass {
 
       if (getIsBoostAll()
           != other.getIsBoostAll()) return false;
-      if (getTargetCompoundGroupId()
-          != other.getTargetCompoundGroupId()) return false;
-      if (getConsumeMaterialId()
-          != other.getConsumeMaterialId()) return false;
-      if (getConsumeMaterialCount()
-          != other.getConsumeMaterialCount()) return false;
+      if (getUnk3300PPDDLODBIKG()
+          != other.getUnk3300PPDDLODBIKG()) return false;
+      if (getUnk3300BGHFBCLHCIG()
+          != other.getUnk3300BGHFBCLHCIG()) return false;
+      if (getUnk3300FEGPHHFLFLM()
+          != other.getUnk3300FEGPHHFLFLM()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -278,12 +282,12 @@ public final class PlayerCompoundMaterialBoostReqOuterClass {
       hash = (37 * hash) + IS_BOOST_ALL_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsBoostAll());
-      hash = (37 * hash) + TARGET_COMPOUND_GROUP_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getTargetCompoundGroupId();
-      hash = (37 * hash) + CONSUME_MATERIAL_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getConsumeMaterialId();
-      hash = (37 * hash) + CONSUME_MATERIAL_COUNT_FIELD_NUMBER;
-      hash = (53 * hash) + getConsumeMaterialCount();
+      hash = (37 * hash) + UNK3300_PPDDLODBIKG_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300PPDDLODBIKG();
+      hash = (37 * hash) + UNK3300_BGHFBCLHCIG_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300BGHFBCLHCIG();
+      hash = (37 * hash) + UNK3300_FEGPHHFLFLM_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300FEGPHHFLFLM();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -381,10 +385,14 @@ public final class PlayerCompoundMaterialBoostReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 185
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 159;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code PlayerCompoundMaterialBoostReq}
@@ -426,11 +434,11 @@ public final class PlayerCompoundMaterialBoostReqOuterClass {
         super.clear();
         isBoostAll_ = false;
 
-        targetCompoundGroupId_ = 0;
+        unk3300PPDDLODBIKG_ = 0;
 
-        consumeMaterialId_ = 0;
+        unk3300BGHFBCLHCIG_ = 0;
 
-        consumeMaterialCount_ = 0;
+        unk3300FEGPHHFLFLM_ = 0;
 
         return this;
       }
@@ -459,9 +467,9 @@ public final class PlayerCompoundMaterialBoostReqOuterClass {
       public emu.grasscutter.net.proto.PlayerCompoundMaterialBoostReqOuterClass.PlayerCompoundMaterialBoostReq buildPartial() {
         emu.grasscutter.net.proto.PlayerCompoundMaterialBoostReqOuterClass.PlayerCompoundMaterialBoostReq result = new emu.grasscutter.net.proto.PlayerCompoundMaterialBoostReqOuterClass.PlayerCompoundMaterialBoostReq(this);
         result.isBoostAll_ = isBoostAll_;
-        result.targetCompoundGroupId_ = targetCompoundGroupId_;
-        result.consumeMaterialId_ = consumeMaterialId_;
-        result.consumeMaterialCount_ = consumeMaterialCount_;
+        result.unk3300PPDDLODBIKG_ = unk3300PPDDLODBIKG_;
+        result.unk3300BGHFBCLHCIG_ = unk3300BGHFBCLHCIG_;
+        result.unk3300FEGPHHFLFLM_ = unk3300FEGPHHFLFLM_;
         onBuilt();
         return result;
       }
@@ -513,14 +521,14 @@ public final class PlayerCompoundMaterialBoostReqOuterClass {
         if (other.getIsBoostAll() != false) {
           setIsBoostAll(other.getIsBoostAll());
         }
-        if (other.getTargetCompoundGroupId() != 0) {
-          setTargetCompoundGroupId(other.getTargetCompoundGroupId());
+        if (other.getUnk3300PPDDLODBIKG() != 0) {
+          setUnk3300PPDDLODBIKG(other.getUnk3300PPDDLODBIKG());
         }
-        if (other.getConsumeMaterialId() != 0) {
-          setConsumeMaterialId(other.getConsumeMaterialId());
+        if (other.getUnk3300BGHFBCLHCIG() != 0) {
+          setUnk3300BGHFBCLHCIG(other.getUnk3300BGHFBCLHCIG());
         }
-        if (other.getConsumeMaterialCount() != 0) {
-          setConsumeMaterialCount(other.getConsumeMaterialCount());
+        if (other.getUnk3300FEGPHHFLFLM() != 0) {
+          setUnk3300FEGPHHFLFLM(other.getUnk3300FEGPHHFLFLM());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -553,7 +561,7 @@ public final class PlayerCompoundMaterialBoostReqOuterClass {
 
       private boolean isBoostAll_ ;
       /**
-       * <code>bool is_boost_all = 8;</code>
+       * <code>bool is_boost_all = 13;</code>
        * @return The isBoostAll.
        */
       @java.lang.Override
@@ -561,7 +569,7 @@ public final class PlayerCompoundMaterialBoostReqOuterClass {
         return isBoostAll_;
       }
       /**
-       * <code>bool is_boost_all = 8;</code>
+       * <code>bool is_boost_all = 13;</code>
        * @param value The isBoostAll to set.
        * @return This builder for chaining.
        */
@@ -572,7 +580,7 @@ public final class PlayerCompoundMaterialBoostReqOuterClass {
         return this;
       }
       /**
-       * <code>bool is_boost_all = 8;</code>
+       * <code>bool is_boost_all = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsBoostAll() {
@@ -582,95 +590,95 @@ public final class PlayerCompoundMaterialBoostReqOuterClass {
         return this;
       }
 
-      private int targetCompoundGroupId_ ;
+      private int unk3300PPDDLODBIKG_ ;
       /**
-       * <code>uint32 target_compound_group_id = 14;</code>
-       * @return The targetCompoundGroupId.
+       * <code>uint32 Unk3300_PPDDLODBIKG = 8;</code>
+       * @return The unk3300PPDDLODBIKG.
        */
       @java.lang.Override
-      public int getTargetCompoundGroupId() {
-        return targetCompoundGroupId_;
+      public int getUnk3300PPDDLODBIKG() {
+        return unk3300PPDDLODBIKG_;
       }
       /**
-       * <code>uint32 target_compound_group_id = 14;</code>
-       * @param value The targetCompoundGroupId to set.
+       * <code>uint32 Unk3300_PPDDLODBIKG = 8;</code>
+       * @param value The unk3300PPDDLODBIKG to set.
        * @return This builder for chaining.
        */
-      public Builder setTargetCompoundGroupId(int value) {
+      public Builder setUnk3300PPDDLODBIKG(int value) {
         
-        targetCompoundGroupId_ = value;
+        unk3300PPDDLODBIKG_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 target_compound_group_id = 14;</code>
+       * <code>uint32 Unk3300_PPDDLODBIKG = 8;</code>
        * @return This builder for chaining.
        */
-      public Builder clearTargetCompoundGroupId() {
+      public Builder clearUnk3300PPDDLODBIKG() {
         
-        targetCompoundGroupId_ = 0;
+        unk3300PPDDLODBIKG_ = 0;
         onChanged();
         return this;
       }
 
-      private int consumeMaterialId_ ;
+      private int unk3300BGHFBCLHCIG_ ;
       /**
-       * <code>uint32 consume_material_id = 9;</code>
-       * @return The consumeMaterialId.
+       * <code>uint32 Unk3300_BGHFBCLHCIG = 5;</code>
+       * @return The unk3300BGHFBCLHCIG.
        */
       @java.lang.Override
-      public int getConsumeMaterialId() {
-        return consumeMaterialId_;
+      public int getUnk3300BGHFBCLHCIG() {
+        return unk3300BGHFBCLHCIG_;
       }
       /**
-       * <code>uint32 consume_material_id = 9;</code>
-       * @param value The consumeMaterialId to set.
+       * <code>uint32 Unk3300_BGHFBCLHCIG = 5;</code>
+       * @param value The unk3300BGHFBCLHCIG to set.
        * @return This builder for chaining.
        */
-      public Builder setConsumeMaterialId(int value) {
+      public Builder setUnk3300BGHFBCLHCIG(int value) {
         
-        consumeMaterialId_ = value;
+        unk3300BGHFBCLHCIG_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 consume_material_id = 9;</code>
+       * <code>uint32 Unk3300_BGHFBCLHCIG = 5;</code>
        * @return This builder for chaining.
        */
-      public Builder clearConsumeMaterialId() {
+      public Builder clearUnk3300BGHFBCLHCIG() {
         
-        consumeMaterialId_ = 0;
+        unk3300BGHFBCLHCIG_ = 0;
         onChanged();
         return this;
       }
 
-      private int consumeMaterialCount_ ;
+      private int unk3300FEGPHHFLFLM_ ;
       /**
-       * <code>uint32 consume_material_count = 1;</code>
-       * @return The consumeMaterialCount.
+       * <code>uint32 Unk3300_FEGPHHFLFLM = 11;</code>
+       * @return The unk3300FEGPHHFLFLM.
        */
       @java.lang.Override
-      public int getConsumeMaterialCount() {
-        return consumeMaterialCount_;
+      public int getUnk3300FEGPHHFLFLM() {
+        return unk3300FEGPHHFLFLM_;
       }
       /**
-       * <code>uint32 consume_material_count = 1;</code>
-       * @param value The consumeMaterialCount to set.
+       * <code>uint32 Unk3300_FEGPHHFLFLM = 11;</code>
+       * @param value The unk3300FEGPHHFLFLM to set.
        * @return This builder for chaining.
        */
-      public Builder setConsumeMaterialCount(int value) {
+      public Builder setUnk3300FEGPHHFLFLM(int value) {
         
-        consumeMaterialCount_ = value;
+        unk3300FEGPHHFLFLM_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 consume_material_count = 1;</code>
+       * <code>uint32 Unk3300_FEGPHHFLFLM = 11;</code>
        * @return This builder for chaining.
        */
-      public Builder clearConsumeMaterialCount() {
+      public Builder clearUnk3300FEGPHHFLFLM() {
         
-        consumeMaterialCount_ = 0;
+        unk3300FEGPHHFLFLM_ = 0;
         onChanged();
         return this;
       }
@@ -741,12 +749,12 @@ public final class PlayerCompoundMaterialBoostReqOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n$PlayerCompoundMaterialBoostReq.proto\"\225" +
+      "\n$PlayerCompoundMaterialBoostReq.proto\"\215" +
       "\001\n\036PlayerCompoundMaterialBoostReq\022\024\n\014is_" +
-      "boost_all\030\010 \001(\010\022 \n\030target_compound_group" +
-      "_id\030\016 \001(\r\022\033\n\023consume_material_id\030\t \001(\r\022\036" +
-      "\n\026consume_material_count\030\001 \001(\rB\033\n\031emu.gr" +
-      "asscutter.net.protob\006proto3"
+      "boost_all\030\r \001(\010\022\033\n\023Unk3300_PPDDLODBIKG\030\010" +
+      " \001(\r\022\033\n\023Unk3300_BGHFBCLHCIG\030\005 \001(\r\022\033\n\023Unk" +
+      "3300_FEGPHHFLFLM\030\013 \001(\rB\033\n\031emu.grasscutte" +
+      "r.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -757,7 +765,7 @@ public final class PlayerCompoundMaterialBoostReqOuterClass {
     internal_static_PlayerCompoundMaterialBoostReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_PlayerCompoundMaterialBoostReq_descriptor,
-        new java.lang.String[] { "IsBoostAll", "TargetCompoundGroupId", "ConsumeMaterialId", "ConsumeMaterialCount", });
+        new java.lang.String[] { "IsBoostAll", "Unk3300PPDDLODBIKG", "Unk3300BGHFBCLHCIG", "Unk3300FEGPHHFLFLM", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

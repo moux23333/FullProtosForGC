@@ -19,25 +19,29 @@ public final class AsterLargeInfoNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.AsterLargeDetailInfo info = 10;</code>
+     * <code>.AsterLargeDetailInfo info = 6;</code>
      * @return Whether the info field is set.
      */
     boolean hasInfo();
     /**
-     * <code>.AsterLargeDetailInfo info = 10;</code>
+     * <code>.AsterLargeDetailInfo info = 6;</code>
      * @return The info.
      */
     emu.grasscutter.net.proto.AsterLargeDetailInfoOuterClass.AsterLargeDetailInfo getInfo();
     /**
-     * <code>.AsterLargeDetailInfo info = 10;</code>
+     * <code>.AsterLargeDetailInfo info = 6;</code>
      */
     emu.grasscutter.net.proto.AsterLargeDetailInfoOuterClass.AsterLargeDetailInfoOrBuilder getInfoOrBuilder();
   }
   /**
    * <pre>
-   * CmdId: 2146
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 2023;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code AsterLargeInfoNotify}
@@ -84,7 +88,7 @@ public final class AsterLargeInfoNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 82: {
+            case 50: {
               emu.grasscutter.net.proto.AsterLargeDetailInfoOuterClass.AsterLargeDetailInfo.Builder subBuilder = null;
               if (info_ != null) {
                 subBuilder = info_.toBuilder();
@@ -129,10 +133,10 @@ public final class AsterLargeInfoNotifyOuterClass {
               emu.grasscutter.net.proto.AsterLargeInfoNotifyOuterClass.AsterLargeInfoNotify.class, emu.grasscutter.net.proto.AsterLargeInfoNotifyOuterClass.AsterLargeInfoNotify.Builder.class);
     }
 
-    public static final int INFO_FIELD_NUMBER = 10;
+    public static final int INFO_FIELD_NUMBER = 6;
     private emu.grasscutter.net.proto.AsterLargeDetailInfoOuterClass.AsterLargeDetailInfo info_;
     /**
-     * <code>.AsterLargeDetailInfo info = 10;</code>
+     * <code>.AsterLargeDetailInfo info = 6;</code>
      * @return Whether the info field is set.
      */
     @java.lang.Override
@@ -140,7 +144,7 @@ public final class AsterLargeInfoNotifyOuterClass {
       return info_ != null;
     }
     /**
-     * <code>.AsterLargeDetailInfo info = 10;</code>
+     * <code>.AsterLargeDetailInfo info = 6;</code>
      * @return The info.
      */
     @java.lang.Override
@@ -148,7 +152,7 @@ public final class AsterLargeInfoNotifyOuterClass {
       return info_ == null ? emu.grasscutter.net.proto.AsterLargeDetailInfoOuterClass.AsterLargeDetailInfo.getDefaultInstance() : info_;
     }
     /**
-     * <code>.AsterLargeDetailInfo info = 10;</code>
+     * <code>.AsterLargeDetailInfo info = 6;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.AsterLargeDetailInfoOuterClass.AsterLargeDetailInfoOrBuilder getInfoOrBuilder() {
@@ -170,7 +174,7 @@ public final class AsterLargeInfoNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (info_ != null) {
-        output.writeMessage(10, getInfo());
+        output.writeMessage(6, getInfo());
       }
       unknownFields.writeTo(output);
     }
@@ -183,7 +187,7 @@ public final class AsterLargeInfoNotifyOuterClass {
       size = 0;
       if (info_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(10, getInfo());
+          .computeMessageSize(6, getInfo());
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -317,9 +321,13 @@ public final class AsterLargeInfoNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 2146
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 2023;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code AsterLargeInfoNotify}
@@ -480,14 +488,14 @@ public final class AsterLargeInfoNotifyOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.AsterLargeDetailInfoOuterClass.AsterLargeDetailInfo, emu.grasscutter.net.proto.AsterLargeDetailInfoOuterClass.AsterLargeDetailInfo.Builder, emu.grasscutter.net.proto.AsterLargeDetailInfoOuterClass.AsterLargeDetailInfoOrBuilder> infoBuilder_;
       /**
-       * <code>.AsterLargeDetailInfo info = 10;</code>
+       * <code>.AsterLargeDetailInfo info = 6;</code>
        * @return Whether the info field is set.
        */
       public boolean hasInfo() {
         return infoBuilder_ != null || info_ != null;
       }
       /**
-       * <code>.AsterLargeDetailInfo info = 10;</code>
+       * <code>.AsterLargeDetailInfo info = 6;</code>
        * @return The info.
        */
       public emu.grasscutter.net.proto.AsterLargeDetailInfoOuterClass.AsterLargeDetailInfo getInfo() {
@@ -498,7 +506,7 @@ public final class AsterLargeInfoNotifyOuterClass {
         }
       }
       /**
-       * <code>.AsterLargeDetailInfo info = 10;</code>
+       * <code>.AsterLargeDetailInfo info = 6;</code>
        */
       public Builder setInfo(emu.grasscutter.net.proto.AsterLargeDetailInfoOuterClass.AsterLargeDetailInfo value) {
         if (infoBuilder_ == null) {
@@ -514,7 +522,7 @@ public final class AsterLargeInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.AsterLargeDetailInfo info = 10;</code>
+       * <code>.AsterLargeDetailInfo info = 6;</code>
        */
       public Builder setInfo(
           emu.grasscutter.net.proto.AsterLargeDetailInfoOuterClass.AsterLargeDetailInfo.Builder builderForValue) {
@@ -528,7 +536,7 @@ public final class AsterLargeInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.AsterLargeDetailInfo info = 10;</code>
+       * <code>.AsterLargeDetailInfo info = 6;</code>
        */
       public Builder mergeInfo(emu.grasscutter.net.proto.AsterLargeDetailInfoOuterClass.AsterLargeDetailInfo value) {
         if (infoBuilder_ == null) {
@@ -546,7 +554,7 @@ public final class AsterLargeInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.AsterLargeDetailInfo info = 10;</code>
+       * <code>.AsterLargeDetailInfo info = 6;</code>
        */
       public Builder clearInfo() {
         if (infoBuilder_ == null) {
@@ -560,7 +568,7 @@ public final class AsterLargeInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.AsterLargeDetailInfo info = 10;</code>
+       * <code>.AsterLargeDetailInfo info = 6;</code>
        */
       public emu.grasscutter.net.proto.AsterLargeDetailInfoOuterClass.AsterLargeDetailInfo.Builder getInfoBuilder() {
         
@@ -568,7 +576,7 @@ public final class AsterLargeInfoNotifyOuterClass {
         return getInfoFieldBuilder().getBuilder();
       }
       /**
-       * <code>.AsterLargeDetailInfo info = 10;</code>
+       * <code>.AsterLargeDetailInfo info = 6;</code>
        */
       public emu.grasscutter.net.proto.AsterLargeDetailInfoOuterClass.AsterLargeDetailInfoOrBuilder getInfoOrBuilder() {
         if (infoBuilder_ != null) {
@@ -579,7 +587,7 @@ public final class AsterLargeInfoNotifyOuterClass {
         }
       }
       /**
-       * <code>.AsterLargeDetailInfo info = 10;</code>
+       * <code>.AsterLargeDetailInfo info = 6;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.AsterLargeDetailInfoOuterClass.AsterLargeDetailInfo, emu.grasscutter.net.proto.AsterLargeDetailInfoOuterClass.AsterLargeDetailInfo.Builder, emu.grasscutter.net.proto.AsterLargeDetailInfoOuterClass.AsterLargeDetailInfoOrBuilder> 
@@ -663,7 +671,7 @@ public final class AsterLargeInfoNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n\032AsterLargeInfoNotify.proto\032\032AsterLarge" +
       "DetailInfo.proto\";\n\024AsterLargeInfoNotify" +
-      "\022#\n\004info\030\n \001(\0132\025.AsterLargeDetailInfoB\033\n" +
+      "\022#\n\004info\030\006 \001(\0132\025.AsterLargeDetailInfoB\033\n" +
       "\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

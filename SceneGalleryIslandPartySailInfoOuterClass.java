@@ -19,56 +19,56 @@ public final class SceneGalleryIslandPartySailInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 max_clean_progress = 14;</code>
-     * @return The maxCleanProgress.
-     */
-    int getMaxCleanProgress();
-
-    /**
-     * <code>uint32 clean_progress = 10;</code>
-     * @return The cleanProgress.
-     */
-    int getCleanProgress();
-
-    /**
-     * <code>.GalleryStartSource start_source = 1;</code>
-     * @return The enum numeric value on the wire for startSource.
-     */
-    int getStartSourceValue();
-    /**
-     * <code>.GalleryStartSource start_source = 1;</code>
-     * @return The startSource.
-     */
-    emu.grasscutter.net.proto.GalleryStartSourceOuterClass.GalleryStartSource getStartSource();
-
-    /**
-     * <code>uint32 kill_progress = 11;</code>
-     * @return The killProgress.
-     */
-    int getKillProgress();
-
-    /**
-     * <code>uint32 coin = 15;</code>
+     * <code>uint32 coin = 5;</code>
      * @return The coin.
      */
     int getCoin();
 
     /**
-     * <code>.IslandPartySailStage stage = 12;</code>
+     * <code>uint32 Unk3300_HCJGDHEMBLM = 4;</code>
+     * @return The unk3300HCJGDHEMBLM.
+     */
+    int getUnk3300HCJGDHEMBLM();
+
+    /**
+     * <code>uint32 Unk3300_MJHMCAPGBIK = 6;</code>
+     * @return The unk3300MJHMCAPGBIK.
+     */
+    int getUnk3300MJHMCAPGBIK();
+
+    /**
+     * <code>uint32 Unk3300_PFCJODGNDCI = 3;</code>
+     * @return The unk3300PFCJODGNDCI.
+     */
+    int getUnk3300PFCJODGNDCI();
+
+    /**
+     * <code>.IslandPartySailStage stage = 14;</code>
      * @return The enum numeric value on the wire for stage.
      */
     int getStageValue();
     /**
-     * <code>.IslandPartySailStage stage = 12;</code>
+     * <code>.IslandPartySailStage stage = 14;</code>
      * @return The stage.
      */
     emu.grasscutter.net.proto.IslandPartySailStageOuterClass.IslandPartySailStage getStage();
 
     /**
-     * <code>uint32 max_kill_progress = 8;</code>
-     * @return The maxKillProgress.
+     * <code>uint32 Unk3300_MJOIIJIBAHF = 10;</code>
+     * @return The unk3300MJOIIJIBAHF.
      */
-    int getMaxKillProgress();
+    int getUnk3300MJOIIJIBAHF();
+
+    /**
+     * <code>.GalleryStartSource start_source = 13;</code>
+     * @return The enum numeric value on the wire for startSource.
+     */
+    int getStartSourceValue();
+    /**
+     * <code>.GalleryStartSource start_source = 13;</code>
+     * @return The startSource.
+     */
+    emu.grasscutter.net.proto.GalleryStartSourceOuterClass.GalleryStartSource getStartSource();
   }
   /**
    * Protobuf type {@code SceneGalleryIslandPartySailInfo}
@@ -83,8 +83,8 @@ public final class SceneGalleryIslandPartySailInfoOuterClass {
       super(builder);
     }
     private SceneGalleryIslandPartySailInfo() {
-      startSource_ = 0;
       stage_ = 0;
+      startSource_ = 0;
     }
 
     @java.lang.Override
@@ -117,41 +117,41 @@ public final class SceneGalleryIslandPartySailInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
+            case 24: {
+
+              unk3300PFCJODGNDCI_ = input.readUInt32();
+              break;
+            }
+            case 32: {
+
+              unk3300HCJGDHEMBLM_ = input.readUInt32();
+              break;
+            }
+            case 40: {
+
+              coin_ = input.readUInt32();
+              break;
+            }
+            case 48: {
+
+              unk3300MJHMCAPGBIK_ = input.readUInt32();
+              break;
+            }
+            case 80: {
+
+              unk3300MJOIIJIBAHF_ = input.readUInt32();
+              break;
+            }
+            case 104: {
               int rawValue = input.readEnum();
 
               startSource_ = rawValue;
               break;
             }
-            case 64: {
-
-              maxKillProgress_ = input.readUInt32();
-              break;
-            }
-            case 80: {
-
-              cleanProgress_ = input.readUInt32();
-              break;
-            }
-            case 88: {
-
-              killProgress_ = input.readUInt32();
-              break;
-            }
-            case 96: {
+            case 112: {
               int rawValue = input.readEnum();
 
               stage_ = rawValue;
-              break;
-            }
-            case 112: {
-
-              maxCleanProgress_ = input.readUInt32();
-              break;
-            }
-            case 120: {
-
-              coin_ = input.readUInt32();
               break;
             }
             default: {
@@ -186,62 +186,10 @@ public final class SceneGalleryIslandPartySailInfoOuterClass {
               emu.grasscutter.net.proto.SceneGalleryIslandPartySailInfoOuterClass.SceneGalleryIslandPartySailInfo.class, emu.grasscutter.net.proto.SceneGalleryIslandPartySailInfoOuterClass.SceneGalleryIslandPartySailInfo.Builder.class);
     }
 
-    public static final int MAX_CLEAN_PROGRESS_FIELD_NUMBER = 14;
-    private int maxCleanProgress_;
-    /**
-     * <code>uint32 max_clean_progress = 14;</code>
-     * @return The maxCleanProgress.
-     */
-    @java.lang.Override
-    public int getMaxCleanProgress() {
-      return maxCleanProgress_;
-    }
-
-    public static final int CLEAN_PROGRESS_FIELD_NUMBER = 10;
-    private int cleanProgress_;
-    /**
-     * <code>uint32 clean_progress = 10;</code>
-     * @return The cleanProgress.
-     */
-    @java.lang.Override
-    public int getCleanProgress() {
-      return cleanProgress_;
-    }
-
-    public static final int START_SOURCE_FIELD_NUMBER = 1;
-    private int startSource_;
-    /**
-     * <code>.GalleryStartSource start_source = 1;</code>
-     * @return The enum numeric value on the wire for startSource.
-     */
-    @java.lang.Override public int getStartSourceValue() {
-      return startSource_;
-    }
-    /**
-     * <code>.GalleryStartSource start_source = 1;</code>
-     * @return The startSource.
-     */
-    @java.lang.Override public emu.grasscutter.net.proto.GalleryStartSourceOuterClass.GalleryStartSource getStartSource() {
-      @SuppressWarnings("deprecation")
-      emu.grasscutter.net.proto.GalleryStartSourceOuterClass.GalleryStartSource result = emu.grasscutter.net.proto.GalleryStartSourceOuterClass.GalleryStartSource.valueOf(startSource_);
-      return result == null ? emu.grasscutter.net.proto.GalleryStartSourceOuterClass.GalleryStartSource.UNRECOGNIZED : result;
-    }
-
-    public static final int KILL_PROGRESS_FIELD_NUMBER = 11;
-    private int killProgress_;
-    /**
-     * <code>uint32 kill_progress = 11;</code>
-     * @return The killProgress.
-     */
-    @java.lang.Override
-    public int getKillProgress() {
-      return killProgress_;
-    }
-
-    public static final int COIN_FIELD_NUMBER = 15;
+    public static final int COIN_FIELD_NUMBER = 5;
     private int coin_;
     /**
-     * <code>uint32 coin = 15;</code>
+     * <code>uint32 coin = 5;</code>
      * @return The coin.
      */
     @java.lang.Override
@@ -249,17 +197,50 @@ public final class SceneGalleryIslandPartySailInfoOuterClass {
       return coin_;
     }
 
-    public static final int STAGE_FIELD_NUMBER = 12;
+    public static final int UNK3300_HCJGDHEMBLM_FIELD_NUMBER = 4;
+    private int unk3300HCJGDHEMBLM_;
+    /**
+     * <code>uint32 Unk3300_HCJGDHEMBLM = 4;</code>
+     * @return The unk3300HCJGDHEMBLM.
+     */
+    @java.lang.Override
+    public int getUnk3300HCJGDHEMBLM() {
+      return unk3300HCJGDHEMBLM_;
+    }
+
+    public static final int UNK3300_MJHMCAPGBIK_FIELD_NUMBER = 6;
+    private int unk3300MJHMCAPGBIK_;
+    /**
+     * <code>uint32 Unk3300_MJHMCAPGBIK = 6;</code>
+     * @return The unk3300MJHMCAPGBIK.
+     */
+    @java.lang.Override
+    public int getUnk3300MJHMCAPGBIK() {
+      return unk3300MJHMCAPGBIK_;
+    }
+
+    public static final int UNK3300_PFCJODGNDCI_FIELD_NUMBER = 3;
+    private int unk3300PFCJODGNDCI_;
+    /**
+     * <code>uint32 Unk3300_PFCJODGNDCI = 3;</code>
+     * @return The unk3300PFCJODGNDCI.
+     */
+    @java.lang.Override
+    public int getUnk3300PFCJODGNDCI() {
+      return unk3300PFCJODGNDCI_;
+    }
+
+    public static final int STAGE_FIELD_NUMBER = 14;
     private int stage_;
     /**
-     * <code>.IslandPartySailStage stage = 12;</code>
+     * <code>.IslandPartySailStage stage = 14;</code>
      * @return The enum numeric value on the wire for stage.
      */
     @java.lang.Override public int getStageValue() {
       return stage_;
     }
     /**
-     * <code>.IslandPartySailStage stage = 12;</code>
+     * <code>.IslandPartySailStage stage = 14;</code>
      * @return The stage.
      */
     @java.lang.Override public emu.grasscutter.net.proto.IslandPartySailStageOuterClass.IslandPartySailStage getStage() {
@@ -268,15 +249,34 @@ public final class SceneGalleryIslandPartySailInfoOuterClass {
       return result == null ? emu.grasscutter.net.proto.IslandPartySailStageOuterClass.IslandPartySailStage.UNRECOGNIZED : result;
     }
 
-    public static final int MAX_KILL_PROGRESS_FIELD_NUMBER = 8;
-    private int maxKillProgress_;
+    public static final int UNK3300_MJOIIJIBAHF_FIELD_NUMBER = 10;
+    private int unk3300MJOIIJIBAHF_;
     /**
-     * <code>uint32 max_kill_progress = 8;</code>
-     * @return The maxKillProgress.
+     * <code>uint32 Unk3300_MJOIIJIBAHF = 10;</code>
+     * @return The unk3300MJOIIJIBAHF.
      */
     @java.lang.Override
-    public int getMaxKillProgress() {
-      return maxKillProgress_;
+    public int getUnk3300MJOIIJIBAHF() {
+      return unk3300MJOIIJIBAHF_;
+    }
+
+    public static final int START_SOURCE_FIELD_NUMBER = 13;
+    private int startSource_;
+    /**
+     * <code>.GalleryStartSource start_source = 13;</code>
+     * @return The enum numeric value on the wire for startSource.
+     */
+    @java.lang.Override public int getStartSourceValue() {
+      return startSource_;
+    }
+    /**
+     * <code>.GalleryStartSource start_source = 13;</code>
+     * @return The startSource.
+     */
+    @java.lang.Override public emu.grasscutter.net.proto.GalleryStartSourceOuterClass.GalleryStartSource getStartSource() {
+      @SuppressWarnings("deprecation")
+      emu.grasscutter.net.proto.GalleryStartSourceOuterClass.GalleryStartSource result = emu.grasscutter.net.proto.GalleryStartSourceOuterClass.GalleryStartSource.valueOf(startSource_);
+      return result == null ? emu.grasscutter.net.proto.GalleryStartSourceOuterClass.GalleryStartSource.UNRECOGNIZED : result;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -293,26 +293,26 @@ public final class SceneGalleryIslandPartySailInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (startSource_ != emu.grasscutter.net.proto.GalleryStartSourceOuterClass.GalleryStartSource.GALLERY_START_SOURCE_BY_NONE.getNumber()) {
-        output.writeEnum(1, startSource_);
+      if (unk3300PFCJODGNDCI_ != 0) {
+        output.writeUInt32(3, unk3300PFCJODGNDCI_);
       }
-      if (maxKillProgress_ != 0) {
-        output.writeUInt32(8, maxKillProgress_);
-      }
-      if (cleanProgress_ != 0) {
-        output.writeUInt32(10, cleanProgress_);
-      }
-      if (killProgress_ != 0) {
-        output.writeUInt32(11, killProgress_);
-      }
-      if (stage_ != emu.grasscutter.net.proto.IslandPartySailStageOuterClass.IslandPartySailStage.ISLAND_PARTY_SAIL_STAGE_NONE.getNumber()) {
-        output.writeEnum(12, stage_);
-      }
-      if (maxCleanProgress_ != 0) {
-        output.writeUInt32(14, maxCleanProgress_);
+      if (unk3300HCJGDHEMBLM_ != 0) {
+        output.writeUInt32(4, unk3300HCJGDHEMBLM_);
       }
       if (coin_ != 0) {
-        output.writeUInt32(15, coin_);
+        output.writeUInt32(5, coin_);
+      }
+      if (unk3300MJHMCAPGBIK_ != 0) {
+        output.writeUInt32(6, unk3300MJHMCAPGBIK_);
+      }
+      if (unk3300MJOIIJIBAHF_ != 0) {
+        output.writeUInt32(10, unk3300MJOIIJIBAHF_);
+      }
+      if (startSource_ != emu.grasscutter.net.proto.GalleryStartSourceOuterClass.GalleryStartSource.GALLERY_START_SOURCE_BY_NONE.getNumber()) {
+        output.writeEnum(13, startSource_);
+      }
+      if (stage_ != emu.grasscutter.net.proto.IslandPartySailStageOuterClass.IslandPartySailStage.ISLAND_PARTY_SAIL_STAGE_NONE.getNumber()) {
+        output.writeEnum(14, stage_);
       }
       unknownFields.writeTo(output);
     }
@@ -323,33 +323,33 @@ public final class SceneGalleryIslandPartySailInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (startSource_ != emu.grasscutter.net.proto.GalleryStartSourceOuterClass.GalleryStartSource.GALLERY_START_SOURCE_BY_NONE.getNumber()) {
+      if (unk3300PFCJODGNDCI_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(1, startSource_);
+          .computeUInt32Size(3, unk3300PFCJODGNDCI_);
       }
-      if (maxKillProgress_ != 0) {
+      if (unk3300HCJGDHEMBLM_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, maxKillProgress_);
-      }
-      if (cleanProgress_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, cleanProgress_);
-      }
-      if (killProgress_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, killProgress_);
-      }
-      if (stage_ != emu.grasscutter.net.proto.IslandPartySailStageOuterClass.IslandPartySailStage.ISLAND_PARTY_SAIL_STAGE_NONE.getNumber()) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(12, stage_);
-      }
-      if (maxCleanProgress_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, maxCleanProgress_);
+          .computeUInt32Size(4, unk3300HCJGDHEMBLM_);
       }
       if (coin_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, coin_);
+          .computeUInt32Size(5, coin_);
+      }
+      if (unk3300MJHMCAPGBIK_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(6, unk3300MJHMCAPGBIK_);
+      }
+      if (unk3300MJOIIJIBAHF_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(10, unk3300MJOIIJIBAHF_);
+      }
+      if (startSource_ != emu.grasscutter.net.proto.GalleryStartSourceOuterClass.GalleryStartSource.GALLERY_START_SOURCE_BY_NONE.getNumber()) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeEnumSize(13, startSource_);
+      }
+      if (stage_ != emu.grasscutter.net.proto.IslandPartySailStageOuterClass.IslandPartySailStage.ISLAND_PARTY_SAIL_STAGE_NONE.getNumber()) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeEnumSize(14, stage_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -366,18 +366,18 @@ public final class SceneGalleryIslandPartySailInfoOuterClass {
       }
       emu.grasscutter.net.proto.SceneGalleryIslandPartySailInfoOuterClass.SceneGalleryIslandPartySailInfo other = (emu.grasscutter.net.proto.SceneGalleryIslandPartySailInfoOuterClass.SceneGalleryIslandPartySailInfo) obj;
 
-      if (getMaxCleanProgress()
-          != other.getMaxCleanProgress()) return false;
-      if (getCleanProgress()
-          != other.getCleanProgress()) return false;
-      if (startSource_ != other.startSource_) return false;
-      if (getKillProgress()
-          != other.getKillProgress()) return false;
       if (getCoin()
           != other.getCoin()) return false;
+      if (getUnk3300HCJGDHEMBLM()
+          != other.getUnk3300HCJGDHEMBLM()) return false;
+      if (getUnk3300MJHMCAPGBIK()
+          != other.getUnk3300MJHMCAPGBIK()) return false;
+      if (getUnk3300PFCJODGNDCI()
+          != other.getUnk3300PFCJODGNDCI()) return false;
       if (stage_ != other.stage_) return false;
-      if (getMaxKillProgress()
-          != other.getMaxKillProgress()) return false;
+      if (getUnk3300MJOIIJIBAHF()
+          != other.getUnk3300MJOIIJIBAHF()) return false;
+      if (startSource_ != other.startSource_) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -389,20 +389,20 @@ public final class SceneGalleryIslandPartySailInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + MAX_CLEAN_PROGRESS_FIELD_NUMBER;
-      hash = (53 * hash) + getMaxCleanProgress();
-      hash = (37 * hash) + CLEAN_PROGRESS_FIELD_NUMBER;
-      hash = (53 * hash) + getCleanProgress();
-      hash = (37 * hash) + START_SOURCE_FIELD_NUMBER;
-      hash = (53 * hash) + startSource_;
-      hash = (37 * hash) + KILL_PROGRESS_FIELD_NUMBER;
-      hash = (53 * hash) + getKillProgress();
       hash = (37 * hash) + COIN_FIELD_NUMBER;
       hash = (53 * hash) + getCoin();
+      hash = (37 * hash) + UNK3300_HCJGDHEMBLM_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300HCJGDHEMBLM();
+      hash = (37 * hash) + UNK3300_MJHMCAPGBIK_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300MJHMCAPGBIK();
+      hash = (37 * hash) + UNK3300_PFCJODGNDCI_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300PFCJODGNDCI();
       hash = (37 * hash) + STAGE_FIELD_NUMBER;
       hash = (53 * hash) + stage_;
-      hash = (37 * hash) + MAX_KILL_PROGRESS_FIELD_NUMBER;
-      hash = (53 * hash) + getMaxKillProgress();
+      hash = (37 * hash) + UNK3300_MJOIIJIBAHF_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300MJOIIJIBAHF();
+      hash = (37 * hash) + START_SOURCE_FIELD_NUMBER;
+      hash = (53 * hash) + startSource_;
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -536,19 +536,19 @@ public final class SceneGalleryIslandPartySailInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        maxCleanProgress_ = 0;
-
-        cleanProgress_ = 0;
-
-        startSource_ = 0;
-
-        killProgress_ = 0;
-
         coin_ = 0;
+
+        unk3300HCJGDHEMBLM_ = 0;
+
+        unk3300MJHMCAPGBIK_ = 0;
+
+        unk3300PFCJODGNDCI_ = 0;
 
         stage_ = 0;
 
-        maxKillProgress_ = 0;
+        unk3300MJOIIJIBAHF_ = 0;
+
+        startSource_ = 0;
 
         return this;
       }
@@ -576,13 +576,13 @@ public final class SceneGalleryIslandPartySailInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.SceneGalleryIslandPartySailInfoOuterClass.SceneGalleryIslandPartySailInfo buildPartial() {
         emu.grasscutter.net.proto.SceneGalleryIslandPartySailInfoOuterClass.SceneGalleryIslandPartySailInfo result = new emu.grasscutter.net.proto.SceneGalleryIslandPartySailInfoOuterClass.SceneGalleryIslandPartySailInfo(this);
-        result.maxCleanProgress_ = maxCleanProgress_;
-        result.cleanProgress_ = cleanProgress_;
-        result.startSource_ = startSource_;
-        result.killProgress_ = killProgress_;
         result.coin_ = coin_;
+        result.unk3300HCJGDHEMBLM_ = unk3300HCJGDHEMBLM_;
+        result.unk3300MJHMCAPGBIK_ = unk3300MJHMCAPGBIK_;
+        result.unk3300PFCJODGNDCI_ = unk3300PFCJODGNDCI_;
         result.stage_ = stage_;
-        result.maxKillProgress_ = maxKillProgress_;
+        result.unk3300MJOIIJIBAHF_ = unk3300MJOIIJIBAHF_;
+        result.startSource_ = startSource_;
         onBuilt();
         return result;
       }
@@ -631,26 +631,26 @@ public final class SceneGalleryIslandPartySailInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.SceneGalleryIslandPartySailInfoOuterClass.SceneGalleryIslandPartySailInfo other) {
         if (other == emu.grasscutter.net.proto.SceneGalleryIslandPartySailInfoOuterClass.SceneGalleryIslandPartySailInfo.getDefaultInstance()) return this;
-        if (other.getMaxCleanProgress() != 0) {
-          setMaxCleanProgress(other.getMaxCleanProgress());
-        }
-        if (other.getCleanProgress() != 0) {
-          setCleanProgress(other.getCleanProgress());
-        }
-        if (other.startSource_ != 0) {
-          setStartSourceValue(other.getStartSourceValue());
-        }
-        if (other.getKillProgress() != 0) {
-          setKillProgress(other.getKillProgress());
-        }
         if (other.getCoin() != 0) {
           setCoin(other.getCoin());
+        }
+        if (other.getUnk3300HCJGDHEMBLM() != 0) {
+          setUnk3300HCJGDHEMBLM(other.getUnk3300HCJGDHEMBLM());
+        }
+        if (other.getUnk3300MJHMCAPGBIK() != 0) {
+          setUnk3300MJHMCAPGBIK(other.getUnk3300MJHMCAPGBIK());
+        }
+        if (other.getUnk3300PFCJODGNDCI() != 0) {
+          setUnk3300PFCJODGNDCI(other.getUnk3300PFCJODGNDCI());
         }
         if (other.stage_ != 0) {
           setStageValue(other.getStageValue());
         }
-        if (other.getMaxKillProgress() != 0) {
-          setMaxKillProgress(other.getMaxKillProgress());
+        if (other.getUnk3300MJOIIJIBAHF() != 0) {
+          setUnk3300MJOIIJIBAHF(other.getUnk3300MJOIIJIBAHF());
+        }
+        if (other.startSource_ != 0) {
+          setStartSourceValue(other.getStartSourceValue());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -681,156 +681,9 @@ public final class SceneGalleryIslandPartySailInfoOuterClass {
         return this;
       }
 
-      private int maxCleanProgress_ ;
-      /**
-       * <code>uint32 max_clean_progress = 14;</code>
-       * @return The maxCleanProgress.
-       */
-      @java.lang.Override
-      public int getMaxCleanProgress() {
-        return maxCleanProgress_;
-      }
-      /**
-       * <code>uint32 max_clean_progress = 14;</code>
-       * @param value The maxCleanProgress to set.
-       * @return This builder for chaining.
-       */
-      public Builder setMaxCleanProgress(int value) {
-        
-        maxCleanProgress_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 max_clean_progress = 14;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearMaxCleanProgress() {
-        
-        maxCleanProgress_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int cleanProgress_ ;
-      /**
-       * <code>uint32 clean_progress = 10;</code>
-       * @return The cleanProgress.
-       */
-      @java.lang.Override
-      public int getCleanProgress() {
-        return cleanProgress_;
-      }
-      /**
-       * <code>uint32 clean_progress = 10;</code>
-       * @param value The cleanProgress to set.
-       * @return This builder for chaining.
-       */
-      public Builder setCleanProgress(int value) {
-        
-        cleanProgress_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 clean_progress = 10;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearCleanProgress() {
-        
-        cleanProgress_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int startSource_ = 0;
-      /**
-       * <code>.GalleryStartSource start_source = 1;</code>
-       * @return The enum numeric value on the wire for startSource.
-       */
-      @java.lang.Override public int getStartSourceValue() {
-        return startSource_;
-      }
-      /**
-       * <code>.GalleryStartSource start_source = 1;</code>
-       * @param value The enum numeric value on the wire for startSource to set.
-       * @return This builder for chaining.
-       */
-      public Builder setStartSourceValue(int value) {
-        
-        startSource_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>.GalleryStartSource start_source = 1;</code>
-       * @return The startSource.
-       */
-      @java.lang.Override
-      public emu.grasscutter.net.proto.GalleryStartSourceOuterClass.GalleryStartSource getStartSource() {
-        @SuppressWarnings("deprecation")
-        emu.grasscutter.net.proto.GalleryStartSourceOuterClass.GalleryStartSource result = emu.grasscutter.net.proto.GalleryStartSourceOuterClass.GalleryStartSource.valueOf(startSource_);
-        return result == null ? emu.grasscutter.net.proto.GalleryStartSourceOuterClass.GalleryStartSource.UNRECOGNIZED : result;
-      }
-      /**
-       * <code>.GalleryStartSource start_source = 1;</code>
-       * @param value The startSource to set.
-       * @return This builder for chaining.
-       */
-      public Builder setStartSource(emu.grasscutter.net.proto.GalleryStartSourceOuterClass.GalleryStartSource value) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        
-        startSource_ = value.getNumber();
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>.GalleryStartSource start_source = 1;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearStartSource() {
-        
-        startSource_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int killProgress_ ;
-      /**
-       * <code>uint32 kill_progress = 11;</code>
-       * @return The killProgress.
-       */
-      @java.lang.Override
-      public int getKillProgress() {
-        return killProgress_;
-      }
-      /**
-       * <code>uint32 kill_progress = 11;</code>
-       * @param value The killProgress to set.
-       * @return This builder for chaining.
-       */
-      public Builder setKillProgress(int value) {
-        
-        killProgress_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 kill_progress = 11;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearKillProgress() {
-        
-        killProgress_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int coin_ ;
       /**
-       * <code>uint32 coin = 15;</code>
+       * <code>uint32 coin = 5;</code>
        * @return The coin.
        */
       @java.lang.Override
@@ -838,7 +691,7 @@ public final class SceneGalleryIslandPartySailInfoOuterClass {
         return coin_;
       }
       /**
-       * <code>uint32 coin = 15;</code>
+       * <code>uint32 coin = 5;</code>
        * @param value The coin to set.
        * @return This builder for chaining.
        */
@@ -849,7 +702,7 @@ public final class SceneGalleryIslandPartySailInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 coin = 15;</code>
+       * <code>uint32 coin = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearCoin() {
@@ -859,16 +712,109 @@ public final class SceneGalleryIslandPartySailInfoOuterClass {
         return this;
       }
 
+      private int unk3300HCJGDHEMBLM_ ;
+      /**
+       * <code>uint32 Unk3300_HCJGDHEMBLM = 4;</code>
+       * @return The unk3300HCJGDHEMBLM.
+       */
+      @java.lang.Override
+      public int getUnk3300HCJGDHEMBLM() {
+        return unk3300HCJGDHEMBLM_;
+      }
+      /**
+       * <code>uint32 Unk3300_HCJGDHEMBLM = 4;</code>
+       * @param value The unk3300HCJGDHEMBLM to set.
+       * @return This builder for chaining.
+       */
+      public Builder setUnk3300HCJGDHEMBLM(int value) {
+        
+        unk3300HCJGDHEMBLM_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 Unk3300_HCJGDHEMBLM = 4;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearUnk3300HCJGDHEMBLM() {
+        
+        unk3300HCJGDHEMBLM_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int unk3300MJHMCAPGBIK_ ;
+      /**
+       * <code>uint32 Unk3300_MJHMCAPGBIK = 6;</code>
+       * @return The unk3300MJHMCAPGBIK.
+       */
+      @java.lang.Override
+      public int getUnk3300MJHMCAPGBIK() {
+        return unk3300MJHMCAPGBIK_;
+      }
+      /**
+       * <code>uint32 Unk3300_MJHMCAPGBIK = 6;</code>
+       * @param value The unk3300MJHMCAPGBIK to set.
+       * @return This builder for chaining.
+       */
+      public Builder setUnk3300MJHMCAPGBIK(int value) {
+        
+        unk3300MJHMCAPGBIK_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 Unk3300_MJHMCAPGBIK = 6;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearUnk3300MJHMCAPGBIK() {
+        
+        unk3300MJHMCAPGBIK_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int unk3300PFCJODGNDCI_ ;
+      /**
+       * <code>uint32 Unk3300_PFCJODGNDCI = 3;</code>
+       * @return The unk3300PFCJODGNDCI.
+       */
+      @java.lang.Override
+      public int getUnk3300PFCJODGNDCI() {
+        return unk3300PFCJODGNDCI_;
+      }
+      /**
+       * <code>uint32 Unk3300_PFCJODGNDCI = 3;</code>
+       * @param value The unk3300PFCJODGNDCI to set.
+       * @return This builder for chaining.
+       */
+      public Builder setUnk3300PFCJODGNDCI(int value) {
+        
+        unk3300PFCJODGNDCI_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 Unk3300_PFCJODGNDCI = 3;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearUnk3300PFCJODGNDCI() {
+        
+        unk3300PFCJODGNDCI_ = 0;
+        onChanged();
+        return this;
+      }
+
       private int stage_ = 0;
       /**
-       * <code>.IslandPartySailStage stage = 12;</code>
+       * <code>.IslandPartySailStage stage = 14;</code>
        * @return The enum numeric value on the wire for stage.
        */
       @java.lang.Override public int getStageValue() {
         return stage_;
       }
       /**
-       * <code>.IslandPartySailStage stage = 12;</code>
+       * <code>.IslandPartySailStage stage = 14;</code>
        * @param value The enum numeric value on the wire for stage to set.
        * @return This builder for chaining.
        */
@@ -879,7 +825,7 @@ public final class SceneGalleryIslandPartySailInfoOuterClass {
         return this;
       }
       /**
-       * <code>.IslandPartySailStage stage = 12;</code>
+       * <code>.IslandPartySailStage stage = 14;</code>
        * @return The stage.
        */
       @java.lang.Override
@@ -889,7 +835,7 @@ public final class SceneGalleryIslandPartySailInfoOuterClass {
         return result == null ? emu.grasscutter.net.proto.IslandPartySailStageOuterClass.IslandPartySailStage.UNRECOGNIZED : result;
       }
       /**
-       * <code>.IslandPartySailStage stage = 12;</code>
+       * <code>.IslandPartySailStage stage = 14;</code>
        * @param value The stage to set.
        * @return This builder for chaining.
        */
@@ -903,7 +849,7 @@ public final class SceneGalleryIslandPartySailInfoOuterClass {
         return this;
       }
       /**
-       * <code>.IslandPartySailStage stage = 12;</code>
+       * <code>.IslandPartySailStage stage = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearStage() {
@@ -913,33 +859,87 @@ public final class SceneGalleryIslandPartySailInfoOuterClass {
         return this;
       }
 
-      private int maxKillProgress_ ;
+      private int unk3300MJOIIJIBAHF_ ;
       /**
-       * <code>uint32 max_kill_progress = 8;</code>
-       * @return The maxKillProgress.
+       * <code>uint32 Unk3300_MJOIIJIBAHF = 10;</code>
+       * @return The unk3300MJOIIJIBAHF.
        */
       @java.lang.Override
-      public int getMaxKillProgress() {
-        return maxKillProgress_;
+      public int getUnk3300MJOIIJIBAHF() {
+        return unk3300MJOIIJIBAHF_;
       }
       /**
-       * <code>uint32 max_kill_progress = 8;</code>
-       * @param value The maxKillProgress to set.
+       * <code>uint32 Unk3300_MJOIIJIBAHF = 10;</code>
+       * @param value The unk3300MJOIIJIBAHF to set.
        * @return This builder for chaining.
        */
-      public Builder setMaxKillProgress(int value) {
+      public Builder setUnk3300MJOIIJIBAHF(int value) {
         
-        maxKillProgress_ = value;
+        unk3300MJOIIJIBAHF_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 max_kill_progress = 8;</code>
+       * <code>uint32 Unk3300_MJOIIJIBAHF = 10;</code>
        * @return This builder for chaining.
        */
-      public Builder clearMaxKillProgress() {
+      public Builder clearUnk3300MJOIIJIBAHF() {
         
-        maxKillProgress_ = 0;
+        unk3300MJOIIJIBAHF_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int startSource_ = 0;
+      /**
+       * <code>.GalleryStartSource start_source = 13;</code>
+       * @return The enum numeric value on the wire for startSource.
+       */
+      @java.lang.Override public int getStartSourceValue() {
+        return startSource_;
+      }
+      /**
+       * <code>.GalleryStartSource start_source = 13;</code>
+       * @param value The enum numeric value on the wire for startSource to set.
+       * @return This builder for chaining.
+       */
+      public Builder setStartSourceValue(int value) {
+        
+        startSource_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.GalleryStartSource start_source = 13;</code>
+       * @return The startSource.
+       */
+      @java.lang.Override
+      public emu.grasscutter.net.proto.GalleryStartSourceOuterClass.GalleryStartSource getStartSource() {
+        @SuppressWarnings("deprecation")
+        emu.grasscutter.net.proto.GalleryStartSourceOuterClass.GalleryStartSource result = emu.grasscutter.net.proto.GalleryStartSourceOuterClass.GalleryStartSource.valueOf(startSource_);
+        return result == null ? emu.grasscutter.net.proto.GalleryStartSourceOuterClass.GalleryStartSource.UNRECOGNIZED : result;
+      }
+      /**
+       * <code>.GalleryStartSource start_source = 13;</code>
+       * @param value The startSource to set.
+       * @return This builder for chaining.
+       */
+      public Builder setStartSource(emu.grasscutter.net.proto.GalleryStartSourceOuterClass.GalleryStartSource value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        
+        startSource_ = value.getNumber();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.GalleryStartSource start_source = 13;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearStartSource() {
+        
+        startSource_ = 0;
         onChanged();
         return this;
       }
@@ -1012,14 +1012,14 @@ public final class SceneGalleryIslandPartySailInfoOuterClass {
     java.lang.String[] descriptorData = {
       "\n%SceneGalleryIslandPartySailInfo.proto\032" +
       "\030GalleryStartSource.proto\032\032IslandPartySa" +
-      "ilStage.proto\"\346\001\n\037SceneGalleryIslandPart" +
-      "ySailInfo\022\032\n\022max_clean_progress\030\016 \001(\r\022\026\n" +
-      "\016clean_progress\030\n \001(\r\022)\n\014start_source\030\001 " +
-      "\001(\0162\023.GalleryStartSource\022\025\n\rkill_progres" +
-      "s\030\013 \001(\r\022\014\n\004coin\030\017 \001(\r\022$\n\005stage\030\014 \001(\0162\025.I" +
-      "slandPartySailStage\022\031\n\021max_kill_progress" +
-      "\030\010 \001(\rB\033\n\031emu.grasscutter.net.protob\006pro" +
-      "to3"
+      "ilStage.proto\"\364\001\n\037SceneGalleryIslandPart" +
+      "ySailInfo\022\014\n\004coin\030\005 \001(\r\022\033\n\023Unk3300_HCJGD" +
+      "HEMBLM\030\004 \001(\r\022\033\n\023Unk3300_MJHMCAPGBIK\030\006 \001(" +
+      "\r\022\033\n\023Unk3300_PFCJODGNDCI\030\003 \001(\r\022$\n\005stage\030" +
+      "\016 \001(\0162\025.IslandPartySailStage\022\033\n\023Unk3300_" +
+      "MJOIIJIBAHF\030\n \001(\r\022)\n\014start_source\030\r \001(\0162" +
+      "\023.GalleryStartSourceB\033\n\031emu.grasscutter." +
+      "net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -1032,7 +1032,7 @@ public final class SceneGalleryIslandPartySailInfoOuterClass {
     internal_static_SceneGalleryIslandPartySailInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SceneGalleryIslandPartySailInfo_descriptor,
-        new java.lang.String[] { "MaxCleanProgress", "CleanProgress", "StartSource", "KillProgress", "Coin", "Stage", "MaxKillProgress", });
+        new java.lang.String[] { "Coin", "Unk3300HCJGDHEMBLM", "Unk3300MJHMCAPGBIK", "Unk3300PFCJODGNDCI", "Stage", "Unk3300MJOIIJIBAHF", "StartSource", });
     emu.grasscutter.net.proto.GalleryStartSourceOuterClass.getDescriptor();
     emu.grasscutter.net.proto.IslandPartySailStageOuterClass.getDescriptor();
   }

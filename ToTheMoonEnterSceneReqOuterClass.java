@@ -19,23 +19,27 @@ public final class ToTheMoonEnterSceneReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 version = 14;</code>
+     * <code>uint32 version = 11;</code>
      * @return The version.
      */
     int getVersion();
 
     /**
-     * <code>uint32 scene_id = 15;</code>
+     * <code>uint32 scene_id = 13;</code>
      * @return The sceneId.
      */
     int getSceneId();
   }
   /**
    * <pre>
-   * CmdId: 6135
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 6119;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code ToTheMoonEnterSceneReq}
@@ -82,12 +86,12 @@ public final class ToTheMoonEnterSceneReqOuterClass {
             case 0:
               done = true;
               break;
-            case 112: {
+            case 88: {
 
               version_ = input.readUInt32();
               break;
             }
-            case 120: {
+            case 104: {
 
               sceneId_ = input.readUInt32();
               break;
@@ -124,10 +128,10 @@ public final class ToTheMoonEnterSceneReqOuterClass {
               emu.grasscutter.net.proto.ToTheMoonEnterSceneReqOuterClass.ToTheMoonEnterSceneReq.class, emu.grasscutter.net.proto.ToTheMoonEnterSceneReqOuterClass.ToTheMoonEnterSceneReq.Builder.class);
     }
 
-    public static final int VERSION_FIELD_NUMBER = 14;
+    public static final int VERSION_FIELD_NUMBER = 11;
     private int version_;
     /**
-     * <code>uint32 version = 14;</code>
+     * <code>uint32 version = 11;</code>
      * @return The version.
      */
     @java.lang.Override
@@ -135,10 +139,10 @@ public final class ToTheMoonEnterSceneReqOuterClass {
       return version_;
     }
 
-    public static final int SCENE_ID_FIELD_NUMBER = 15;
+    public static final int SCENE_ID_FIELD_NUMBER = 13;
     private int sceneId_;
     /**
-     * <code>uint32 scene_id = 15;</code>
+     * <code>uint32 scene_id = 13;</code>
      * @return The sceneId.
      */
     @java.lang.Override
@@ -161,10 +165,10 @@ public final class ToTheMoonEnterSceneReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (version_ != 0) {
-        output.writeUInt32(14, version_);
+        output.writeUInt32(11, version_);
       }
       if (sceneId_ != 0) {
-        output.writeUInt32(15, sceneId_);
+        output.writeUInt32(13, sceneId_);
       }
       unknownFields.writeTo(output);
     }
@@ -177,11 +181,11 @@ public final class ToTheMoonEnterSceneReqOuterClass {
       size = 0;
       if (version_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, version_);
+          .computeUInt32Size(11, version_);
       }
       if (sceneId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, sceneId_);
+          .computeUInt32Size(13, sceneId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -314,10 +318,14 @@ public final class ToTheMoonEnterSceneReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 6135
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 6119;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code ToTheMoonEnterSceneReq}
@@ -474,7 +482,7 @@ public final class ToTheMoonEnterSceneReqOuterClass {
 
       private int version_ ;
       /**
-       * <code>uint32 version = 14;</code>
+       * <code>uint32 version = 11;</code>
        * @return The version.
        */
       @java.lang.Override
@@ -482,7 +490,7 @@ public final class ToTheMoonEnterSceneReqOuterClass {
         return version_;
       }
       /**
-       * <code>uint32 version = 14;</code>
+       * <code>uint32 version = 11;</code>
        * @param value The version to set.
        * @return This builder for chaining.
        */
@@ -493,7 +501,7 @@ public final class ToTheMoonEnterSceneReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 version = 14;</code>
+       * <code>uint32 version = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearVersion() {
@@ -505,7 +513,7 @@ public final class ToTheMoonEnterSceneReqOuterClass {
 
       private int sceneId_ ;
       /**
-       * <code>uint32 scene_id = 15;</code>
+       * <code>uint32 scene_id = 13;</code>
        * @return The sceneId.
        */
       @java.lang.Override
@@ -513,7 +521,7 @@ public final class ToTheMoonEnterSceneReqOuterClass {
         return sceneId_;
       }
       /**
-       * <code>uint32 scene_id = 15;</code>
+       * <code>uint32 scene_id = 13;</code>
        * @param value The sceneId to set.
        * @return This builder for chaining.
        */
@@ -524,7 +532,7 @@ public final class ToTheMoonEnterSceneReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 scene_id = 15;</code>
+       * <code>uint32 scene_id = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearSceneId() {
@@ -601,8 +609,8 @@ public final class ToTheMoonEnterSceneReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\034ToTheMoonEnterSceneReq.proto\";\n\026ToTheM" +
-      "oonEnterSceneReq\022\017\n\007version\030\016 \001(\r\022\020\n\010sce" +
-      "ne_id\030\017 \001(\rB\033\n\031emu.grasscutter.net.proto" +
+      "oonEnterSceneReq\022\017\n\007version\030\013 \001(\r\022\020\n\010sce" +
+      "ne_id\030\r \001(\rB\033\n\031emu.grasscutter.net.proto" +
       "b\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

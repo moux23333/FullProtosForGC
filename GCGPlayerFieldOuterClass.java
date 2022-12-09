@@ -19,11 +19,17 @@ public final class GCGPlayerFieldOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>map&lt;uint32, .GCGZone&gt; modify_zone_map = 2;</code>
+     * <code>uint32 Unk3300_IKJMGAHCFPM = 5;</code>
+     * @return The unk3300IKJMGAHCFPM.
+     */
+    int getUnk3300IKJMGAHCFPM();
+
+    /**
+     * <code>map&lt;uint32, .GCGZone&gt; modify_zone_map = 7;</code>
      */
     int getModifyZoneMapCount();
     /**
-     * <code>map&lt;uint32, .GCGZone&gt; modify_zone_map = 2;</code>
+     * <code>map&lt;uint32, .GCGZone&gt; modify_zone_map = 7;</code>
      */
     boolean containsModifyZoneMap(
         int key);
@@ -34,223 +40,217 @@ public final class GCGPlayerFieldOuterClass {
     java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone>
     getModifyZoneMap();
     /**
-     * <code>map&lt;uint32, .GCGZone&gt; modify_zone_map = 2;</code>
+     * <code>map&lt;uint32, .GCGZone&gt; modify_zone_map = 7;</code>
      */
     java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone>
     getModifyZoneMapMap();
     /**
-     * <code>map&lt;uint32, .GCGZone&gt; modify_zone_map = 2;</code>
+     * <code>map&lt;uint32, .GCGZone&gt; modify_zone_map = 7;</code>
      */
 
     emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone getModifyZoneMapOrDefault(
         int key,
         emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone defaultValue);
     /**
-     * <code>map&lt;uint32, .GCGZone&gt; modify_zone_map = 2;</code>
+     * <code>map&lt;uint32, .GCGZone&gt; modify_zone_map = 7;</code>
      */
 
     emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone getModifyZoneMapOrThrow(
         int key);
 
     /**
-     * <code>uint32 cur_waiting_index = 383;</code>
-     * @return The curWaitingIndex.
+     * <code>uint32 Unk3300_GGHKFFADEAL = 731;</code>
+     * @return The unk3300GGHKFFADEAL.
      */
-    int getCurWaitingIndex();
+    int getUnk3300GGHKFFADEAL();
 
     /**
-     * <code>.GCGZone summon_zone = 1;</code>
-     * @return Whether the summonZone field is set.
+     * <code>.GCGZone Unk3300_AOPJIOHMPOF = 10;</code>
+     * @return Whether the unk3300AOPJIOHMPOF field is set.
      */
-    boolean hasSummonZone();
+    boolean hasUnk3300AOPJIOHMPOF();
     /**
-     * <code>.GCGZone summon_zone = 1;</code>
-     * @return The summonZone.
+     * <code>.GCGZone Unk3300_AOPJIOHMPOF = 10;</code>
+     * @return The unk3300AOPJIOHMPOF.
      */
-    emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone getSummonZone();
+    emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone getUnk3300AOPJIOHMPOF();
     /**
-     * <code>.GCGZone summon_zone = 1;</code>
+     * <code>.GCGZone Unk3300_AOPJIOHMPOF = 10;</code>
      */
-    emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZoneOrBuilder getSummonZoneOrBuilder();
+    emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZoneOrBuilder getUnk3300AOPJIOHMPOFOrBuilder();
 
     /**
-     * <code>uint32 field_show_id = 8;</code>
-     * @return The fieldShowId.
+     * <code>uint32 Unk3300_FDFPHNDOJML = 12;</code>
+     * @return The unk3300FDFPHNDOJML.
      */
-    int getFieldShowId();
+    int getUnk3300FDFPHNDOJML();
 
     /**
-     * <code>uint32 card_back_show_id = 12;</code>
-     * @return The cardBackShowId.
+     * <code>.GCGZone Unk3300_IPLMHKCNDLE = 1;</code>
+     * @return Whether the unk3300IPLMHKCNDLE field is set.
      */
-    int getCardBackShowId();
+    boolean hasUnk3300IPLMHKCNDLE();
+    /**
+     * <code>.GCGZone Unk3300_IPLMHKCNDLE = 1;</code>
+     * @return The unk3300IPLMHKCNDLE.
+     */
+    emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone getUnk3300IPLMHKCNDLE();
+    /**
+     * <code>.GCGZone Unk3300_IPLMHKCNDLE = 1;</code>
+     */
+    emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZoneOrBuilder getUnk3300IPLMHKCNDLEOrBuilder();
 
     /**
-     * <code>uint32 dice_count = 3;</code>
-     * @return The diceCount.
+     * <code>.GCGZone Unk3300_EIHOMDLENMK = 9;</code>
+     * @return Whether the unk3300EIHOMDLENMK field is set.
      */
-    int getDiceCount();
+    boolean hasUnk3300EIHOMDLENMK();
+    /**
+     * <code>.GCGZone Unk3300_EIHOMDLENMK = 9;</code>
+     * @return The unk3300EIHOMDLENMK.
+     */
+    emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone getUnk3300EIHOMDLENMK();
+    /**
+     * <code>.GCGZone Unk3300_EIHOMDLENMK = 9;</code>
+     */
+    emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZoneOrBuilder getUnk3300EIHOMDLENMKOrBuilder();
 
     /**
-     * <code>uint32 controller_id = 10;</code>
+     * <code>repeated .GCGWaitingCharacter waiting_list = 2;</code>
+     */
+    java.util.List<emu.grasscutter.net.proto.GCGWaitingCharacterOuterClass.GCGWaitingCharacter> 
+        getWaitingListList();
+    /**
+     * <code>repeated .GCGWaitingCharacter waiting_list = 2;</code>
+     */
+    emu.grasscutter.net.proto.GCGWaitingCharacterOuterClass.GCGWaitingCharacter getWaitingList(int index);
+    /**
+     * <code>repeated .GCGWaitingCharacter waiting_list = 2;</code>
+     */
+    int getWaitingListCount();
+    /**
+     * <code>repeated .GCGWaitingCharacter waiting_list = 2;</code>
+     */
+    java.util.List<? extends emu.grasscutter.net.proto.GCGWaitingCharacterOuterClass.GCGWaitingCharacterOrBuilder> 
+        getWaitingListOrBuilderList();
+    /**
+     * <code>repeated .GCGWaitingCharacter waiting_list = 2;</code>
+     */
+    emu.grasscutter.net.proto.GCGWaitingCharacterOuterClass.GCGWaitingCharacterOrBuilder getWaitingListOrBuilder(
+        int index);
+
+    /**
+     * <code>uint32 Unk3300_PBECINKKHND = 15;</code>
+     * @return The unk3300PBECINKKHND.
+     */
+    int getUnk3300PBECINKKHND();
+
+    /**
+     * <code>uint32 controller_id = 6;</code>
      * @return The controllerId.
      */
     int getControllerId();
 
     /**
-     * <code>.GCGZone on_stage_zone = 14;</code>
-     * @return Whether the onStageZone field is set.
+     * <code>.GCGZone Unk3300_INDJNJJJNKL = 11;</code>
+     * @return Whether the unk3300INDJNJJJNKL field is set.
      */
-    boolean hasOnStageZone();
+    boolean hasUnk3300INDJNJJJNKL();
     /**
-     * <code>.GCGZone on_stage_zone = 14;</code>
-     * @return The onStageZone.
+     * <code>.GCGZone Unk3300_INDJNJJJNKL = 11;</code>
+     * @return The unk3300INDJNJJJNKL.
      */
-    emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone getOnStageZone();
+    emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone getUnk3300INDJNJJJNKL();
     /**
-     * <code>.GCGZone on_stage_zone = 14;</code>
+     * <code>.GCGZone Unk3300_INDJNJJJNKL = 11;</code>
      */
-    emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZoneOrBuilder getOnStageZoneOrBuilder();
+    emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZoneOrBuilder getUnk3300INDJNJJJNKLOrBuilder();
 
     /**
-     * <code>bool is_passed = 7;</code>
+     * <code>.GCGZone Unk3300_EFNAEFBECHD = 4;</code>
+     * @return Whether the unk3300EFNAEFBECHD field is set.
+     */
+    boolean hasUnk3300EFNAEFBECHD();
+    /**
+     * <code>.GCGZone Unk3300_EFNAEFBECHD = 4;</code>
+     * @return The unk3300EFNAEFBECHD.
+     */
+    emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone getUnk3300EFNAEFBECHD();
+    /**
+     * <code>.GCGZone Unk3300_EFNAEFBECHD = 4;</code>
+     */
+    emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZoneOrBuilder getUnk3300EFNAEFBECHDOrBuilder();
+
+    /**
+     * <code>bool is_passed = 8;</code>
      * @return The isPassed.
      */
     boolean getIsPassed();
 
     /**
-     * <code>.GCGZone character_zone = 5;</code>
-     * @return Whether the characterZone field is set.
+     * <code>repeated .GCGPVEIntention intention_list = 304;</code>
      */
-    boolean hasCharacterZone();
+    java.util.List<emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntention> 
+        getIntentionListList();
     /**
-     * <code>.GCGZone character_zone = 5;</code>
-     * @return The characterZone.
+     * <code>repeated .GCGPVEIntention intention_list = 304;</code>
      */
-    emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone getCharacterZone();
+    emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntention getIntentionList(int index);
     /**
-     * <code>.GCGZone character_zone = 5;</code>
+     * <code>repeated .GCGPVEIntention intention_list = 304;</code>
      */
-    emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZoneOrBuilder getCharacterZoneOrBuilder();
+    int getIntentionListCount();
+    /**
+     * <code>repeated .GCGPVEIntention intention_list = 304;</code>
+     */
+    java.util.List<? extends emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntentionOrBuilder> 
+        getIntentionListOrBuilderList();
+    /**
+     * <code>repeated .GCGPVEIntention intention_list = 304;</code>
+     */
+    emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntentionOrBuilder getIntentionListOrBuilder(
+        int index);
 
     /**
-     * <code>uint32 on_stage_character_guid = 6;</code>
-     * @return The onStageCharacterGuid.
-     */
-    int getOnStageCharacterGuid();
-
-    /**
-     * <code>.GCGZone assist_zone = 15;</code>
-     * @return Whether the assistZone field is set.
-     */
-    boolean hasAssistZone();
-    /**
-     * <code>.GCGZone assist_zone = 15;</code>
-     * @return The assistZone.
-     */
-    emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone getAssistZone();
-    /**
-     * <code>.GCGZone assist_zone = 15;</code>
-     */
-    emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZoneOrBuilder getAssistZoneOrBuilder();
-
-    /**
-     * <code>uint32 deck_card_num = 13;</code>
-     * @return The deckCardNum.
-     */
-    int getDeckCardNum();
-
-    /**
-     * <code>repeated .GCGDiceSideType dice_side_list = 11;</code>
+     * <code>repeated .GCGDiceSideType dice_side_list = 13;</code>
      * @return A list containing the diceSideList.
      */
     java.util.List<emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType> getDiceSideListList();
     /**
-     * <code>repeated .GCGDiceSideType dice_side_list = 11;</code>
+     * <code>repeated .GCGDiceSideType dice_side_list = 13;</code>
      * @return The count of diceSideList.
      */
     int getDiceSideListCount();
     /**
-     * <code>repeated .GCGDiceSideType dice_side_list = 11;</code>
+     * <code>repeated .GCGDiceSideType dice_side_list = 13;</code>
      * @param index The index of the element to return.
      * @return The diceSideList at the given index.
      */
     emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType getDiceSideList(int index);
     /**
-     * <code>repeated .GCGDiceSideType dice_side_list = 11;</code>
+     * <code>repeated .GCGDiceSideType dice_side_list = 13;</code>
      * @return A list containing the enum numeric values on the wire for diceSideList.
      */
     java.util.List<java.lang.Integer>
     getDiceSideListValueList();
     /**
-     * <code>repeated .GCGDiceSideType dice_side_list = 11;</code>
+     * <code>repeated .GCGDiceSideType dice_side_list = 13;</code>
      * @param index The index of the value to return.
      * @return The enum numeric value on the wire of diceSideList at the given index.
      */
     int getDiceSideListValue(int index);
 
     /**
-     * <code>.GCGZone hand_zone = 9;</code>
-     * @return Whether the handZone field is set.
+     * <code>uint32 Unk3300_FJNPFBIHFGD = 3;</code>
+     * @return The unk3300FJNPFBIHFGD.
      */
-    boolean hasHandZone();
-    /**
-     * <code>.GCGZone hand_zone = 9;</code>
-     * @return The handZone.
-     */
-    emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone getHandZone();
-    /**
-     * <code>.GCGZone hand_zone = 9;</code>
-     */
-    emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZoneOrBuilder getHandZoneOrBuilder();
+    int getUnk3300FJNPFBIHFGD();
 
     /**
-     * <code>repeated .GCGPVEIntention intention_list = 1192;</code>
+     * <code>uint32 Unk3300_GLNIFLOKBPM = 14;</code>
+     * @return The unk3300GLNIFLOKBPM.
      */
-    java.util.List<emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntention> 
-        getIntentionListList();
-    /**
-     * <code>repeated .GCGPVEIntention intention_list = 1192;</code>
-     */
-    emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntention getIntentionList(int index);
-    /**
-     * <code>repeated .GCGPVEIntention intention_list = 1192;</code>
-     */
-    int getIntentionListCount();
-    /**
-     * <code>repeated .GCGPVEIntention intention_list = 1192;</code>
-     */
-    java.util.List<? extends emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntentionOrBuilder> 
-        getIntentionListOrBuilderList();
-    /**
-     * <code>repeated .GCGPVEIntention intention_list = 1192;</code>
-     */
-    emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntentionOrBuilder getIntentionListOrBuilder(
-        int index);
-
-    /**
-     * <code>repeated .GCGWaitingCharacter waiting_list = 4;</code>
-     */
-    java.util.List<emu.grasscutter.net.proto.GCGWaitingCharacterOuterClass.GCGWaitingCharacter> 
-        getWaitingListList();
-    /**
-     * <code>repeated .GCGWaitingCharacter waiting_list = 4;</code>
-     */
-    emu.grasscutter.net.proto.GCGWaitingCharacterOuterClass.GCGWaitingCharacter getWaitingList(int index);
-    /**
-     * <code>repeated .GCGWaitingCharacter waiting_list = 4;</code>
-     */
-    int getWaitingListCount();
-    /**
-     * <code>repeated .GCGWaitingCharacter waiting_list = 4;</code>
-     */
-    java.util.List<? extends emu.grasscutter.net.proto.GCGWaitingCharacterOuterClass.GCGWaitingCharacterOrBuilder> 
-        getWaitingListOrBuilderList();
-    /**
-     * <code>repeated .GCGWaitingCharacter waiting_list = 4;</code>
-     */
-    emu.grasscutter.net.proto.GCGWaitingCharacterOuterClass.GCGWaitingCharacterOrBuilder getWaitingListOrBuilder(
-        int index);
+    int getUnk3300GLNIFLOKBPM();
   }
   /**
    * Protobuf type {@code GCGPlayerField}
@@ -265,9 +265,9 @@ public final class GCGPlayerFieldOuterClass {
       super(builder);
     }
     private GCGPlayerField() {
-      diceSideList_ = java.util.Collections.emptyList();
-      intentionList_ = java.util.Collections.emptyList();
       waitingList_ = java.util.Collections.emptyList();
+      intentionList_ = java.util.Collections.emptyList();
+      diceSideList_ = java.util.Collections.emptyList();
     }
 
     @java.lang.Override
@@ -303,18 +303,55 @@ public final class GCGPlayerFieldOuterClass {
               break;
             case 10: {
               emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.Builder subBuilder = null;
-              if (summonZone_ != null) {
-                subBuilder = summonZone_.toBuilder();
+              if (unk3300IPLMHKCNDLE_ != null) {
+                subBuilder = unk3300IPLMHKCNDLE_.toBuilder();
               }
-              summonZone_ = input.readMessage(emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.parser(), extensionRegistry);
+              unk3300IPLMHKCNDLE_ = input.readMessage(emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.parser(), extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom(summonZone_);
-                summonZone_ = subBuilder.buildPartial();
+                subBuilder.mergeFrom(unk3300IPLMHKCNDLE_);
+                unk3300IPLMHKCNDLE_ = subBuilder.buildPartial();
               }
 
               break;
             }
             case 18: {
+              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
+                waitingList_ = new java.util.ArrayList<emu.grasscutter.net.proto.GCGWaitingCharacterOuterClass.GCGWaitingCharacter>();
+                mutable_bitField0_ |= 0x00000002;
+              }
+              waitingList_.add(
+                  input.readMessage(emu.grasscutter.net.proto.GCGWaitingCharacterOuterClass.GCGWaitingCharacter.parser(), extensionRegistry));
+              break;
+            }
+            case 24: {
+
+              unk3300FJNPFBIHFGD_ = input.readUInt32();
+              break;
+            }
+            case 34: {
+              emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.Builder subBuilder = null;
+              if (unk3300EFNAEFBECHD_ != null) {
+                subBuilder = unk3300EFNAEFBECHD_.toBuilder();
+              }
+              unk3300EFNAEFBECHD_ = input.readMessage(emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(unk3300EFNAEFBECHD_);
+                unk3300EFNAEFBECHD_ = subBuilder.buildPartial();
+              }
+
+              break;
+            }
+            case 40: {
+
+              unk3300IKJMGAHCFPM_ = input.readUInt32();
+              break;
+            }
+            case 48: {
+
+              controllerId_ = input.readUInt32();
+              break;
+            }
+            case 58: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 modifyZoneMap_ = com.google.protobuf.MapField.newMapField(
                     ModifyZoneMapDefaultEntryHolder.defaultEntry);
@@ -327,137 +364,100 @@ public final class GCGPlayerFieldOuterClass {
                   modifyZoneMap__.getKey(), modifyZoneMap__.getValue());
               break;
             }
-            case 24: {
-
-              diceCount_ = input.readUInt32();
-              break;
-            }
-            case 34: {
-              if (!((mutable_bitField0_ & 0x00000008) != 0)) {
-                waitingList_ = new java.util.ArrayList<emu.grasscutter.net.proto.GCGWaitingCharacterOuterClass.GCGWaitingCharacter>();
-                mutable_bitField0_ |= 0x00000008;
-              }
-              waitingList_.add(
-                  input.readMessage(emu.grasscutter.net.proto.GCGWaitingCharacterOuterClass.GCGWaitingCharacter.parser(), extensionRegistry));
-              break;
-            }
-            case 42: {
-              emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.Builder subBuilder = null;
-              if (characterZone_ != null) {
-                subBuilder = characterZone_.toBuilder();
-              }
-              characterZone_ = input.readMessage(emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom(characterZone_);
-                characterZone_ = subBuilder.buildPartial();
-              }
-
-              break;
-            }
-            case 48: {
-
-              onStageCharacterGuid_ = input.readUInt32();
-              break;
-            }
-            case 56: {
+            case 64: {
 
               isPassed_ = input.readBool();
               break;
             }
-            case 64: {
-
-              fieldShowId_ = input.readUInt32();
-              break;
-            }
             case 74: {
               emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.Builder subBuilder = null;
-              if (handZone_ != null) {
-                subBuilder = handZone_.toBuilder();
+              if (unk3300EIHOMDLENMK_ != null) {
+                subBuilder = unk3300EIHOMDLENMK_.toBuilder();
               }
-              handZone_ = input.readMessage(emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.parser(), extensionRegistry);
+              unk3300EIHOMDLENMK_ = input.readMessage(emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.parser(), extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom(handZone_);
-                handZone_ = subBuilder.buildPartial();
+                subBuilder.mergeFrom(unk3300EIHOMDLENMK_);
+                unk3300EIHOMDLENMK_ = subBuilder.buildPartial();
               }
 
               break;
             }
-            case 80: {
+            case 82: {
+              emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.Builder subBuilder = null;
+              if (unk3300AOPJIOHMPOF_ != null) {
+                subBuilder = unk3300AOPJIOHMPOF_.toBuilder();
+              }
+              unk3300AOPJIOHMPOF_ = input.readMessage(emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(unk3300AOPJIOHMPOF_);
+                unk3300AOPJIOHMPOF_ = subBuilder.buildPartial();
+              }
 
-              controllerId_ = input.readUInt32();
               break;
             }
-            case 88: {
+            case 90: {
+              emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.Builder subBuilder = null;
+              if (unk3300INDJNJJJNKL_ != null) {
+                subBuilder = unk3300INDJNJJJNKL_.toBuilder();
+              }
+              unk3300INDJNJJJNKL_ = input.readMessage(emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(unk3300INDJNJJJNKL_);
+                unk3300INDJNJJJNKL_ = subBuilder.buildPartial();
+              }
+
+              break;
+            }
+            case 96: {
+
+              unk3300FDFPHNDOJML_ = input.readUInt32();
+              break;
+            }
+            case 104: {
               int rawValue = input.readEnum();
-              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
+              if (!((mutable_bitField0_ & 0x00000008) != 0)) {
                 diceSideList_ = new java.util.ArrayList<java.lang.Integer>();
-                mutable_bitField0_ |= 0x00000002;
+                mutable_bitField0_ |= 0x00000008;
               }
               diceSideList_.add(rawValue);
               break;
             }
-            case 90: {
+            case 106: {
               int length = input.readRawVarint32();
               int oldLimit = input.pushLimit(length);
               while(input.getBytesUntilLimit() > 0) {
                 int rawValue = input.readEnum();
-                if (!((mutable_bitField0_ & 0x00000002) != 0)) {
+                if (!((mutable_bitField0_ & 0x00000008) != 0)) {
                   diceSideList_ = new java.util.ArrayList<java.lang.Integer>();
-                  mutable_bitField0_ |= 0x00000002;
+                  mutable_bitField0_ |= 0x00000008;
                 }
                 diceSideList_.add(rawValue);
               }
               input.popLimit(oldLimit);
               break;
             }
-            case 96: {
+            case 112: {
 
-              cardBackShowId_ = input.readUInt32();
+              unk3300GLNIFLOKBPM_ = input.readUInt32();
               break;
             }
-            case 104: {
+            case 120: {
 
-              deckCardNum_ = input.readUInt32();
+              unk3300PBECINKKHND_ = input.readUInt32();
               break;
             }
-            case 114: {
-              emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.Builder subBuilder = null;
-              if (onStageZone_ != null) {
-                subBuilder = onStageZone_.toBuilder();
-              }
-              onStageZone_ = input.readMessage(emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom(onStageZone_);
-                onStageZone_ = subBuilder.buildPartial();
-              }
-
-              break;
-            }
-            case 122: {
-              emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.Builder subBuilder = null;
-              if (assistZone_ != null) {
-                subBuilder = assistZone_.toBuilder();
-              }
-              assistZone_ = input.readMessage(emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom(assistZone_);
-                assistZone_ = subBuilder.buildPartial();
-              }
-
-              break;
-            }
-            case 3064: {
-
-              curWaitingIndex_ = input.readUInt32();
-              break;
-            }
-            case 9538: {
+            case 2434: {
               if (!((mutable_bitField0_ & 0x00000004) != 0)) {
                 intentionList_ = new java.util.ArrayList<emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntention>();
                 mutable_bitField0_ |= 0x00000004;
               }
               intentionList_.add(
                   input.readMessage(emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntention.parser(), extensionRegistry));
+              break;
+            }
+            case 5848: {
+
+              unk3300GGHKFFADEAL_ = input.readUInt32();
               break;
             }
             default: {
@@ -475,10 +475,10 @@ public final class GCGPlayerFieldOuterClass {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
       } finally {
-        if (((mutable_bitField0_ & 0x00000008) != 0)) {
+        if (((mutable_bitField0_ & 0x00000002) != 0)) {
           waitingList_ = java.util.Collections.unmodifiableList(waitingList_);
         }
-        if (((mutable_bitField0_ & 0x00000002) != 0)) {
+        if (((mutable_bitField0_ & 0x00000008) != 0)) {
           diceSideList_ = java.util.Collections.unmodifiableList(diceSideList_);
         }
         if (((mutable_bitField0_ & 0x00000004) != 0)) {
@@ -498,7 +498,7 @@ public final class GCGPlayerFieldOuterClass {
     protected com.google.protobuf.MapField internalGetMapField(
         int number) {
       switch (number) {
-        case 2:
+        case 7:
           return internalGetModifyZoneMap();
         default:
           throw new RuntimeException(
@@ -513,7 +513,18 @@ public final class GCGPlayerFieldOuterClass {
               emu.grasscutter.net.proto.GCGPlayerFieldOuterClass.GCGPlayerField.class, emu.grasscutter.net.proto.GCGPlayerFieldOuterClass.GCGPlayerField.Builder.class);
     }
 
-    public static final int MODIFY_ZONE_MAP_FIELD_NUMBER = 2;
+    public static final int UNK3300_IKJMGAHCFPM_FIELD_NUMBER = 5;
+    private int unk3300IKJMGAHCFPM_;
+    /**
+     * <code>uint32 Unk3300_IKJMGAHCFPM = 5;</code>
+     * @return The unk3300IKJMGAHCFPM.
+     */
+    @java.lang.Override
+    public int getUnk3300IKJMGAHCFPM() {
+      return unk3300IKJMGAHCFPM_;
+    }
+
+    public static final int MODIFY_ZONE_MAP_FIELD_NUMBER = 7;
     private static final class ModifyZoneMapDefaultEntryHolder {
       static final com.google.protobuf.MapEntry<
           java.lang.Integer, emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone> defaultEntry =
@@ -540,7 +551,7 @@ public final class GCGPlayerFieldOuterClass {
       return internalGetModifyZoneMap().getMap().size();
     }
     /**
-     * <code>map&lt;uint32, .GCGZone&gt; modify_zone_map = 2;</code>
+     * <code>map&lt;uint32, .GCGZone&gt; modify_zone_map = 7;</code>
      */
 
     @java.lang.Override
@@ -558,7 +569,7 @@ public final class GCGPlayerFieldOuterClass {
       return getModifyZoneMapMap();
     }
     /**
-     * <code>map&lt;uint32, .GCGZone&gt; modify_zone_map = 2;</code>
+     * <code>map&lt;uint32, .GCGZone&gt; modify_zone_map = 7;</code>
      */
     @java.lang.Override
 
@@ -566,7 +577,7 @@ public final class GCGPlayerFieldOuterClass {
       return internalGetModifyZoneMap().getMap();
     }
     /**
-     * <code>map&lt;uint32, .GCGZone&gt; modify_zone_map = 2;</code>
+     * <code>map&lt;uint32, .GCGZone&gt; modify_zone_map = 7;</code>
      */
     @java.lang.Override
 
@@ -579,7 +590,7 @@ public final class GCGPlayerFieldOuterClass {
       return map.containsKey(key) ? map.get(key) : defaultValue;
     }
     /**
-     * <code>map&lt;uint32, .GCGZone&gt; modify_zone_map = 2;</code>
+     * <code>map&lt;uint32, .GCGZone&gt; modify_zone_map = 7;</code>
      */
     @java.lang.Override
 
@@ -594,80 +605,161 @@ public final class GCGPlayerFieldOuterClass {
       return map.get(key);
     }
 
-    public static final int CUR_WAITING_INDEX_FIELD_NUMBER = 383;
-    private int curWaitingIndex_;
+    public static final int UNK3300_GGHKFFADEAL_FIELD_NUMBER = 731;
+    private int unk3300GGHKFFADEAL_;
     /**
-     * <code>uint32 cur_waiting_index = 383;</code>
-     * @return The curWaitingIndex.
+     * <code>uint32 Unk3300_GGHKFFADEAL = 731;</code>
+     * @return The unk3300GGHKFFADEAL.
      */
     @java.lang.Override
-    public int getCurWaitingIndex() {
-      return curWaitingIndex_;
+    public int getUnk3300GGHKFFADEAL() {
+      return unk3300GGHKFFADEAL_;
     }
 
-    public static final int SUMMON_ZONE_FIELD_NUMBER = 1;
-    private emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone summonZone_;
+    public static final int UNK3300_AOPJIOHMPOF_FIELD_NUMBER = 10;
+    private emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone unk3300AOPJIOHMPOF_;
     /**
-     * <code>.GCGZone summon_zone = 1;</code>
-     * @return Whether the summonZone field is set.
+     * <code>.GCGZone Unk3300_AOPJIOHMPOF = 10;</code>
+     * @return Whether the unk3300AOPJIOHMPOF field is set.
      */
     @java.lang.Override
-    public boolean hasSummonZone() {
-      return summonZone_ != null;
+    public boolean hasUnk3300AOPJIOHMPOF() {
+      return unk3300AOPJIOHMPOF_ != null;
     }
     /**
-     * <code>.GCGZone summon_zone = 1;</code>
-     * @return The summonZone.
+     * <code>.GCGZone Unk3300_AOPJIOHMPOF = 10;</code>
+     * @return The unk3300AOPJIOHMPOF.
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone getSummonZone() {
-      return summonZone_ == null ? emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.getDefaultInstance() : summonZone_;
+    public emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone getUnk3300AOPJIOHMPOF() {
+      return unk3300AOPJIOHMPOF_ == null ? emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.getDefaultInstance() : unk3300AOPJIOHMPOF_;
     }
     /**
-     * <code>.GCGZone summon_zone = 1;</code>
+     * <code>.GCGZone Unk3300_AOPJIOHMPOF = 10;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZoneOrBuilder getSummonZoneOrBuilder() {
-      return getSummonZone();
-    }
-
-    public static final int FIELD_SHOW_ID_FIELD_NUMBER = 8;
-    private int fieldShowId_;
-    /**
-     * <code>uint32 field_show_id = 8;</code>
-     * @return The fieldShowId.
-     */
-    @java.lang.Override
-    public int getFieldShowId() {
-      return fieldShowId_;
+    public emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZoneOrBuilder getUnk3300AOPJIOHMPOFOrBuilder() {
+      return getUnk3300AOPJIOHMPOF();
     }
 
-    public static final int CARD_BACK_SHOW_ID_FIELD_NUMBER = 12;
-    private int cardBackShowId_;
+    public static final int UNK3300_FDFPHNDOJML_FIELD_NUMBER = 12;
+    private int unk3300FDFPHNDOJML_;
     /**
-     * <code>uint32 card_back_show_id = 12;</code>
-     * @return The cardBackShowId.
+     * <code>uint32 Unk3300_FDFPHNDOJML = 12;</code>
+     * @return The unk3300FDFPHNDOJML.
      */
     @java.lang.Override
-    public int getCardBackShowId() {
-      return cardBackShowId_;
+    public int getUnk3300FDFPHNDOJML() {
+      return unk3300FDFPHNDOJML_;
     }
 
-    public static final int DICE_COUNT_FIELD_NUMBER = 3;
-    private int diceCount_;
+    public static final int UNK3300_IPLMHKCNDLE_FIELD_NUMBER = 1;
+    private emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone unk3300IPLMHKCNDLE_;
     /**
-     * <code>uint32 dice_count = 3;</code>
-     * @return The diceCount.
+     * <code>.GCGZone Unk3300_IPLMHKCNDLE = 1;</code>
+     * @return Whether the unk3300IPLMHKCNDLE field is set.
      */
     @java.lang.Override
-    public int getDiceCount() {
-      return diceCount_;
+    public boolean hasUnk3300IPLMHKCNDLE() {
+      return unk3300IPLMHKCNDLE_ != null;
+    }
+    /**
+     * <code>.GCGZone Unk3300_IPLMHKCNDLE = 1;</code>
+     * @return The unk3300IPLMHKCNDLE.
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone getUnk3300IPLMHKCNDLE() {
+      return unk3300IPLMHKCNDLE_ == null ? emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.getDefaultInstance() : unk3300IPLMHKCNDLE_;
+    }
+    /**
+     * <code>.GCGZone Unk3300_IPLMHKCNDLE = 1;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZoneOrBuilder getUnk3300IPLMHKCNDLEOrBuilder() {
+      return getUnk3300IPLMHKCNDLE();
     }
 
-    public static final int CONTROLLER_ID_FIELD_NUMBER = 10;
+    public static final int UNK3300_EIHOMDLENMK_FIELD_NUMBER = 9;
+    private emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone unk3300EIHOMDLENMK_;
+    /**
+     * <code>.GCGZone Unk3300_EIHOMDLENMK = 9;</code>
+     * @return Whether the unk3300EIHOMDLENMK field is set.
+     */
+    @java.lang.Override
+    public boolean hasUnk3300EIHOMDLENMK() {
+      return unk3300EIHOMDLENMK_ != null;
+    }
+    /**
+     * <code>.GCGZone Unk3300_EIHOMDLENMK = 9;</code>
+     * @return The unk3300EIHOMDLENMK.
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone getUnk3300EIHOMDLENMK() {
+      return unk3300EIHOMDLENMK_ == null ? emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.getDefaultInstance() : unk3300EIHOMDLENMK_;
+    }
+    /**
+     * <code>.GCGZone Unk3300_EIHOMDLENMK = 9;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZoneOrBuilder getUnk3300EIHOMDLENMKOrBuilder() {
+      return getUnk3300EIHOMDLENMK();
+    }
+
+    public static final int WAITING_LIST_FIELD_NUMBER = 2;
+    private java.util.List<emu.grasscutter.net.proto.GCGWaitingCharacterOuterClass.GCGWaitingCharacter> waitingList_;
+    /**
+     * <code>repeated .GCGWaitingCharacter waiting_list = 2;</code>
+     */
+    @java.lang.Override
+    public java.util.List<emu.grasscutter.net.proto.GCGWaitingCharacterOuterClass.GCGWaitingCharacter> getWaitingListList() {
+      return waitingList_;
+    }
+    /**
+     * <code>repeated .GCGWaitingCharacter waiting_list = 2;</code>
+     */
+    @java.lang.Override
+    public java.util.List<? extends emu.grasscutter.net.proto.GCGWaitingCharacterOuterClass.GCGWaitingCharacterOrBuilder> 
+        getWaitingListOrBuilderList() {
+      return waitingList_;
+    }
+    /**
+     * <code>repeated .GCGWaitingCharacter waiting_list = 2;</code>
+     */
+    @java.lang.Override
+    public int getWaitingListCount() {
+      return waitingList_.size();
+    }
+    /**
+     * <code>repeated .GCGWaitingCharacter waiting_list = 2;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.GCGWaitingCharacterOuterClass.GCGWaitingCharacter getWaitingList(int index) {
+      return waitingList_.get(index);
+    }
+    /**
+     * <code>repeated .GCGWaitingCharacter waiting_list = 2;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.GCGWaitingCharacterOuterClass.GCGWaitingCharacterOrBuilder getWaitingListOrBuilder(
+        int index) {
+      return waitingList_.get(index);
+    }
+
+    public static final int UNK3300_PBECINKKHND_FIELD_NUMBER = 15;
+    private int unk3300PBECINKKHND_;
+    /**
+     * <code>uint32 Unk3300_PBECINKKHND = 15;</code>
+     * @return The unk3300PBECINKKHND.
+     */
+    @java.lang.Override
+    public int getUnk3300PBECINKKHND() {
+      return unk3300PBECINKKHND_;
+    }
+
+    public static final int CONTROLLER_ID_FIELD_NUMBER = 6;
     private int controllerId_;
     /**
-     * <code>uint32 controller_id = 10;</code>
+     * <code>uint32 controller_id = 6;</code>
      * @return The controllerId.
      */
     @java.lang.Override
@@ -675,36 +767,62 @@ public final class GCGPlayerFieldOuterClass {
       return controllerId_;
     }
 
-    public static final int ON_STAGE_ZONE_FIELD_NUMBER = 14;
-    private emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone onStageZone_;
+    public static final int UNK3300_INDJNJJJNKL_FIELD_NUMBER = 11;
+    private emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone unk3300INDJNJJJNKL_;
     /**
-     * <code>.GCGZone on_stage_zone = 14;</code>
-     * @return Whether the onStageZone field is set.
+     * <code>.GCGZone Unk3300_INDJNJJJNKL = 11;</code>
+     * @return Whether the unk3300INDJNJJJNKL field is set.
      */
     @java.lang.Override
-    public boolean hasOnStageZone() {
-      return onStageZone_ != null;
+    public boolean hasUnk3300INDJNJJJNKL() {
+      return unk3300INDJNJJJNKL_ != null;
     }
     /**
-     * <code>.GCGZone on_stage_zone = 14;</code>
-     * @return The onStageZone.
+     * <code>.GCGZone Unk3300_INDJNJJJNKL = 11;</code>
+     * @return The unk3300INDJNJJJNKL.
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone getOnStageZone() {
-      return onStageZone_ == null ? emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.getDefaultInstance() : onStageZone_;
+    public emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone getUnk3300INDJNJJJNKL() {
+      return unk3300INDJNJJJNKL_ == null ? emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.getDefaultInstance() : unk3300INDJNJJJNKL_;
     }
     /**
-     * <code>.GCGZone on_stage_zone = 14;</code>
+     * <code>.GCGZone Unk3300_INDJNJJJNKL = 11;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZoneOrBuilder getOnStageZoneOrBuilder() {
-      return getOnStageZone();
+    public emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZoneOrBuilder getUnk3300INDJNJJJNKLOrBuilder() {
+      return getUnk3300INDJNJJJNKL();
     }
 
-    public static final int IS_PASSED_FIELD_NUMBER = 7;
+    public static final int UNK3300_EFNAEFBECHD_FIELD_NUMBER = 4;
+    private emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone unk3300EFNAEFBECHD_;
+    /**
+     * <code>.GCGZone Unk3300_EFNAEFBECHD = 4;</code>
+     * @return Whether the unk3300EFNAEFBECHD field is set.
+     */
+    @java.lang.Override
+    public boolean hasUnk3300EFNAEFBECHD() {
+      return unk3300EFNAEFBECHD_ != null;
+    }
+    /**
+     * <code>.GCGZone Unk3300_EFNAEFBECHD = 4;</code>
+     * @return The unk3300EFNAEFBECHD.
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone getUnk3300EFNAEFBECHD() {
+      return unk3300EFNAEFBECHD_ == null ? emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.getDefaultInstance() : unk3300EFNAEFBECHD_;
+    }
+    /**
+     * <code>.GCGZone Unk3300_EFNAEFBECHD = 4;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZoneOrBuilder getUnk3300EFNAEFBECHDOrBuilder() {
+      return getUnk3300EFNAEFBECHD();
+    }
+
+    public static final int IS_PASSED_FIELD_NUMBER = 8;
     private boolean isPassed_;
     /**
-     * <code>bool is_passed = 7;</code>
+     * <code>bool is_passed = 8;</code>
      * @return The isPassed.
      */
     @java.lang.Override
@@ -712,81 +830,47 @@ public final class GCGPlayerFieldOuterClass {
       return isPassed_;
     }
 
-    public static final int CHARACTER_ZONE_FIELD_NUMBER = 5;
-    private emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone characterZone_;
+    public static final int INTENTION_LIST_FIELD_NUMBER = 304;
+    private java.util.List<emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntention> intentionList_;
     /**
-     * <code>.GCGZone character_zone = 5;</code>
-     * @return Whether the characterZone field is set.
+     * <code>repeated .GCGPVEIntention intention_list = 304;</code>
      */
     @java.lang.Override
-    public boolean hasCharacterZone() {
-      return characterZone_ != null;
+    public java.util.List<emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntention> getIntentionListList() {
+      return intentionList_;
     }
     /**
-     * <code>.GCGZone character_zone = 5;</code>
-     * @return The characterZone.
+     * <code>repeated .GCGPVEIntention intention_list = 304;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone getCharacterZone() {
-      return characterZone_ == null ? emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.getDefaultInstance() : characterZone_;
+    public java.util.List<? extends emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntentionOrBuilder> 
+        getIntentionListOrBuilderList() {
+      return intentionList_;
     }
     /**
-     * <code>.GCGZone character_zone = 5;</code>
+     * <code>repeated .GCGPVEIntention intention_list = 304;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZoneOrBuilder getCharacterZoneOrBuilder() {
-      return getCharacterZone();
-    }
-
-    public static final int ON_STAGE_CHARACTER_GUID_FIELD_NUMBER = 6;
-    private int onStageCharacterGuid_;
-    /**
-     * <code>uint32 on_stage_character_guid = 6;</code>
-     * @return The onStageCharacterGuid.
-     */
-    @java.lang.Override
-    public int getOnStageCharacterGuid() {
-      return onStageCharacterGuid_;
-    }
-
-    public static final int ASSIST_ZONE_FIELD_NUMBER = 15;
-    private emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone assistZone_;
-    /**
-     * <code>.GCGZone assist_zone = 15;</code>
-     * @return Whether the assistZone field is set.
-     */
-    @java.lang.Override
-    public boolean hasAssistZone() {
-      return assistZone_ != null;
+    public int getIntentionListCount() {
+      return intentionList_.size();
     }
     /**
-     * <code>.GCGZone assist_zone = 15;</code>
-     * @return The assistZone.
+     * <code>repeated .GCGPVEIntention intention_list = 304;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone getAssistZone() {
-      return assistZone_ == null ? emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.getDefaultInstance() : assistZone_;
+    public emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntention getIntentionList(int index) {
+      return intentionList_.get(index);
     }
     /**
-     * <code>.GCGZone assist_zone = 15;</code>
+     * <code>repeated .GCGPVEIntention intention_list = 304;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZoneOrBuilder getAssistZoneOrBuilder() {
-      return getAssistZone();
+    public emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntentionOrBuilder getIntentionListOrBuilder(
+        int index) {
+      return intentionList_.get(index);
     }
 
-    public static final int DECK_CARD_NUM_FIELD_NUMBER = 13;
-    private int deckCardNum_;
-    /**
-     * <code>uint32 deck_card_num = 13;</code>
-     * @return The deckCardNum.
-     */
-    @java.lang.Override
-    public int getDeckCardNum() {
-      return deckCardNum_;
-    }
-
-    public static final int DICE_SIDE_LIST_FIELD_NUMBER = 11;
+    public static final int DICE_SIDE_LIST_FIELD_NUMBER = 13;
     private java.util.List<java.lang.Integer> diceSideList_;
     private static final com.google.protobuf.Internal.ListAdapter.Converter<
         java.lang.Integer, emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType> diceSideList_converter_ =
@@ -799,7 +883,7 @@ public final class GCGPlayerFieldOuterClass {
               }
             };
     /**
-     * <code>repeated .GCGDiceSideType dice_side_list = 11;</code>
+     * <code>repeated .GCGDiceSideType dice_side_list = 13;</code>
      * @return A list containing the diceSideList.
      */
     @java.lang.Override
@@ -808,7 +892,7 @@ public final class GCGPlayerFieldOuterClass {
           java.lang.Integer, emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType>(diceSideList_, diceSideList_converter_);
     }
     /**
-     * <code>repeated .GCGDiceSideType dice_side_list = 11;</code>
+     * <code>repeated .GCGDiceSideType dice_side_list = 13;</code>
      * @return The count of diceSideList.
      */
     @java.lang.Override
@@ -816,7 +900,7 @@ public final class GCGPlayerFieldOuterClass {
       return diceSideList_.size();
     }
     /**
-     * <code>repeated .GCGDiceSideType dice_side_list = 11;</code>
+     * <code>repeated .GCGDiceSideType dice_side_list = 13;</code>
      * @param index The index of the element to return.
      * @return The diceSideList at the given index.
      */
@@ -825,7 +909,7 @@ public final class GCGPlayerFieldOuterClass {
       return diceSideList_converter_.convert(diceSideList_.get(index));
     }
     /**
-     * <code>repeated .GCGDiceSideType dice_side_list = 11;</code>
+     * <code>repeated .GCGDiceSideType dice_side_list = 13;</code>
      * @return A list containing the enum numeric values on the wire for diceSideList.
      */
     @java.lang.Override
@@ -834,7 +918,7 @@ public final class GCGPlayerFieldOuterClass {
       return diceSideList_;
     }
     /**
-     * <code>repeated .GCGDiceSideType dice_side_list = 11;</code>
+     * <code>repeated .GCGDiceSideType dice_side_list = 13;</code>
      * @param index The index of the value to return.
      * @return The enum numeric value on the wire of diceSideList at the given index.
      */
@@ -844,110 +928,26 @@ public final class GCGPlayerFieldOuterClass {
     }
     private int diceSideListMemoizedSerializedSize;
 
-    public static final int HAND_ZONE_FIELD_NUMBER = 9;
-    private emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone handZone_;
+    public static final int UNK3300_FJNPFBIHFGD_FIELD_NUMBER = 3;
+    private int unk3300FJNPFBIHFGD_;
     /**
-     * <code>.GCGZone hand_zone = 9;</code>
-     * @return Whether the handZone field is set.
+     * <code>uint32 Unk3300_FJNPFBIHFGD = 3;</code>
+     * @return The unk3300FJNPFBIHFGD.
      */
     @java.lang.Override
-    public boolean hasHandZone() {
-      return handZone_ != null;
-    }
-    /**
-     * <code>.GCGZone hand_zone = 9;</code>
-     * @return The handZone.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone getHandZone() {
-      return handZone_ == null ? emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.getDefaultInstance() : handZone_;
-    }
-    /**
-     * <code>.GCGZone hand_zone = 9;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZoneOrBuilder getHandZoneOrBuilder() {
-      return getHandZone();
+    public int getUnk3300FJNPFBIHFGD() {
+      return unk3300FJNPFBIHFGD_;
     }
 
-    public static final int INTENTION_LIST_FIELD_NUMBER = 1192;
-    private java.util.List<emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntention> intentionList_;
+    public static final int UNK3300_GLNIFLOKBPM_FIELD_NUMBER = 14;
+    private int unk3300GLNIFLOKBPM_;
     /**
-     * <code>repeated .GCGPVEIntention intention_list = 1192;</code>
+     * <code>uint32 Unk3300_GLNIFLOKBPM = 14;</code>
+     * @return The unk3300GLNIFLOKBPM.
      */
     @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntention> getIntentionListList() {
-      return intentionList_;
-    }
-    /**
-     * <code>repeated .GCGPVEIntention intention_list = 1192;</code>
-     */
-    @java.lang.Override
-    public java.util.List<? extends emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntentionOrBuilder> 
-        getIntentionListOrBuilderList() {
-      return intentionList_;
-    }
-    /**
-     * <code>repeated .GCGPVEIntention intention_list = 1192;</code>
-     */
-    @java.lang.Override
-    public int getIntentionListCount() {
-      return intentionList_.size();
-    }
-    /**
-     * <code>repeated .GCGPVEIntention intention_list = 1192;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntention getIntentionList(int index) {
-      return intentionList_.get(index);
-    }
-    /**
-     * <code>repeated .GCGPVEIntention intention_list = 1192;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntentionOrBuilder getIntentionListOrBuilder(
-        int index) {
-      return intentionList_.get(index);
-    }
-
-    public static final int WAITING_LIST_FIELD_NUMBER = 4;
-    private java.util.List<emu.grasscutter.net.proto.GCGWaitingCharacterOuterClass.GCGWaitingCharacter> waitingList_;
-    /**
-     * <code>repeated .GCGWaitingCharacter waiting_list = 4;</code>
-     */
-    @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.GCGWaitingCharacterOuterClass.GCGWaitingCharacter> getWaitingListList() {
-      return waitingList_;
-    }
-    /**
-     * <code>repeated .GCGWaitingCharacter waiting_list = 4;</code>
-     */
-    @java.lang.Override
-    public java.util.List<? extends emu.grasscutter.net.proto.GCGWaitingCharacterOuterClass.GCGWaitingCharacterOrBuilder> 
-        getWaitingListOrBuilderList() {
-      return waitingList_;
-    }
-    /**
-     * <code>repeated .GCGWaitingCharacter waiting_list = 4;</code>
-     */
-    @java.lang.Override
-    public int getWaitingListCount() {
-      return waitingList_.size();
-    }
-    /**
-     * <code>repeated .GCGWaitingCharacter waiting_list = 4;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.GCGWaitingCharacterOuterClass.GCGWaitingCharacter getWaitingList(int index) {
-      return waitingList_.get(index);
-    }
-    /**
-     * <code>repeated .GCGWaitingCharacter waiting_list = 4;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.GCGWaitingCharacterOuterClass.GCGWaitingCharacterOrBuilder getWaitingListOrBuilder(
-        int index) {
-      return waitingList_.get(index);
+    public int getUnk3300GLNIFLOKBPM() {
+      return unk3300GLNIFLOKBPM_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -965,63 +965,63 @@ public final class GCGPlayerFieldOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      if (summonZone_ != null) {
-        output.writeMessage(1, getSummonZone());
+      if (unk3300IPLMHKCNDLE_ != null) {
+        output.writeMessage(1, getUnk3300IPLMHKCNDLE());
+      }
+      for (int i = 0; i < waitingList_.size(); i++) {
+        output.writeMessage(2, waitingList_.get(i));
+      }
+      if (unk3300FJNPFBIHFGD_ != 0) {
+        output.writeUInt32(3, unk3300FJNPFBIHFGD_);
+      }
+      if (unk3300EFNAEFBECHD_ != null) {
+        output.writeMessage(4, getUnk3300EFNAEFBECHD());
+      }
+      if (unk3300IKJMGAHCFPM_ != 0) {
+        output.writeUInt32(5, unk3300IKJMGAHCFPM_);
+      }
+      if (controllerId_ != 0) {
+        output.writeUInt32(6, controllerId_);
       }
       com.google.protobuf.GeneratedMessageV3
         .serializeIntegerMapTo(
           output,
           internalGetModifyZoneMap(),
           ModifyZoneMapDefaultEntryHolder.defaultEntry,
-          2);
-      if (diceCount_ != 0) {
-        output.writeUInt32(3, diceCount_);
-      }
-      for (int i = 0; i < waitingList_.size(); i++) {
-        output.writeMessage(4, waitingList_.get(i));
-      }
-      if (characterZone_ != null) {
-        output.writeMessage(5, getCharacterZone());
-      }
-      if (onStageCharacterGuid_ != 0) {
-        output.writeUInt32(6, onStageCharacterGuid_);
-      }
+          7);
       if (isPassed_ != false) {
-        output.writeBool(7, isPassed_);
+        output.writeBool(8, isPassed_);
       }
-      if (fieldShowId_ != 0) {
-        output.writeUInt32(8, fieldShowId_);
+      if (unk3300EIHOMDLENMK_ != null) {
+        output.writeMessage(9, getUnk3300EIHOMDLENMK());
       }
-      if (handZone_ != null) {
-        output.writeMessage(9, getHandZone());
+      if (unk3300AOPJIOHMPOF_ != null) {
+        output.writeMessage(10, getUnk3300AOPJIOHMPOF());
       }
-      if (controllerId_ != 0) {
-        output.writeUInt32(10, controllerId_);
+      if (unk3300INDJNJJJNKL_ != null) {
+        output.writeMessage(11, getUnk3300INDJNJJJNKL());
+      }
+      if (unk3300FDFPHNDOJML_ != 0) {
+        output.writeUInt32(12, unk3300FDFPHNDOJML_);
       }
       if (getDiceSideListList().size() > 0) {
-        output.writeUInt32NoTag(90);
+        output.writeUInt32NoTag(106);
         output.writeUInt32NoTag(diceSideListMemoizedSerializedSize);
       }
       for (int i = 0; i < diceSideList_.size(); i++) {
         output.writeEnumNoTag(diceSideList_.get(i));
       }
-      if (cardBackShowId_ != 0) {
-        output.writeUInt32(12, cardBackShowId_);
+      if (unk3300GLNIFLOKBPM_ != 0) {
+        output.writeUInt32(14, unk3300GLNIFLOKBPM_);
       }
-      if (deckCardNum_ != 0) {
-        output.writeUInt32(13, deckCardNum_);
-      }
-      if (onStageZone_ != null) {
-        output.writeMessage(14, getOnStageZone());
-      }
-      if (assistZone_ != null) {
-        output.writeMessage(15, getAssistZone());
-      }
-      if (curWaitingIndex_ != 0) {
-        output.writeUInt32(383, curWaitingIndex_);
+      if (unk3300PBECINKKHND_ != 0) {
+        output.writeUInt32(15, unk3300PBECINKKHND_);
       }
       for (int i = 0; i < intentionList_.size(); i++) {
-        output.writeMessage(1192, intentionList_.get(i));
+        output.writeMessage(304, intentionList_.get(i));
+      }
+      if (unk3300GGHKFFADEAL_ != 0) {
+        output.writeUInt32(731, unk3300GGHKFFADEAL_);
       }
       unknownFields.writeTo(output);
     }
@@ -1032,9 +1032,29 @@ public final class GCGPlayerFieldOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (summonZone_ != null) {
+      if (unk3300IPLMHKCNDLE_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(1, getSummonZone());
+          .computeMessageSize(1, getUnk3300IPLMHKCNDLE());
+      }
+      for (int i = 0; i < waitingList_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(2, waitingList_.get(i));
+      }
+      if (unk3300FJNPFBIHFGD_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(3, unk3300FJNPFBIHFGD_);
+      }
+      if (unk3300EFNAEFBECHD_ != null) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(4, getUnk3300EFNAEFBECHD());
+      }
+      if (unk3300IKJMGAHCFPM_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(5, unk3300IKJMGAHCFPM_);
+      }
+      if (controllerId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(6, controllerId_);
       }
       for (java.util.Map.Entry<java.lang.Integer, emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone> entry
            : internalGetModifyZoneMap().getMap().entrySet()) {
@@ -1044,39 +1064,27 @@ public final class GCGPlayerFieldOuterClass {
             .setValue(entry.getValue())
             .build();
         size += com.google.protobuf.CodedOutputStream
-            .computeMessageSize(2, modifyZoneMap__);
-      }
-      if (diceCount_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, diceCount_);
-      }
-      for (int i = 0; i < waitingList_.size(); i++) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(4, waitingList_.get(i));
-      }
-      if (characterZone_ != null) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(5, getCharacterZone());
-      }
-      if (onStageCharacterGuid_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, onStageCharacterGuid_);
+            .computeMessageSize(7, modifyZoneMap__);
       }
       if (isPassed_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(7, isPassed_);
+          .computeBoolSize(8, isPassed_);
       }
-      if (fieldShowId_ != 0) {
+      if (unk3300EIHOMDLENMK_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, fieldShowId_);
+          .computeMessageSize(9, getUnk3300EIHOMDLENMK());
       }
-      if (handZone_ != null) {
+      if (unk3300AOPJIOHMPOF_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(9, getHandZone());
+          .computeMessageSize(10, getUnk3300AOPJIOHMPOF());
       }
-      if (controllerId_ != 0) {
+      if (unk3300INDJNJJJNKL_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, controllerId_);
+          .computeMessageSize(11, getUnk3300INDJNJJJNKL());
+      }
+      if (unk3300FDFPHNDOJML_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(12, unk3300FDFPHNDOJML_);
       }
       {
         int dataSize = 0;
@@ -1090,29 +1098,21 @@ public final class GCGPlayerFieldOuterClass {
             .computeUInt32SizeNoTag(dataSize);
         }diceSideListMemoizedSerializedSize = dataSize;
       }
-      if (cardBackShowId_ != 0) {
+      if (unk3300GLNIFLOKBPM_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, cardBackShowId_);
+          .computeUInt32Size(14, unk3300GLNIFLOKBPM_);
       }
-      if (deckCardNum_ != 0) {
+      if (unk3300PBECINKKHND_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, deckCardNum_);
-      }
-      if (onStageZone_ != null) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(14, getOnStageZone());
-      }
-      if (assistZone_ != null) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(15, getAssistZone());
-      }
-      if (curWaitingIndex_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(383, curWaitingIndex_);
+          .computeUInt32Size(15, unk3300PBECINKKHND_);
       }
       for (int i = 0; i < intentionList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(1192, intentionList_.get(i));
+          .computeMessageSize(304, intentionList_.get(i));
+      }
+      if (unk3300GGHKFFADEAL_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(731, unk3300GGHKFFADEAL_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -1129,54 +1129,54 @@ public final class GCGPlayerFieldOuterClass {
       }
       emu.grasscutter.net.proto.GCGPlayerFieldOuterClass.GCGPlayerField other = (emu.grasscutter.net.proto.GCGPlayerFieldOuterClass.GCGPlayerField) obj;
 
+      if (getUnk3300IKJMGAHCFPM()
+          != other.getUnk3300IKJMGAHCFPM()) return false;
       if (!internalGetModifyZoneMap().equals(
           other.internalGetModifyZoneMap())) return false;
-      if (getCurWaitingIndex()
-          != other.getCurWaitingIndex()) return false;
-      if (hasSummonZone() != other.hasSummonZone()) return false;
-      if (hasSummonZone()) {
-        if (!getSummonZone()
-            .equals(other.getSummonZone())) return false;
+      if (getUnk3300GGHKFFADEAL()
+          != other.getUnk3300GGHKFFADEAL()) return false;
+      if (hasUnk3300AOPJIOHMPOF() != other.hasUnk3300AOPJIOHMPOF()) return false;
+      if (hasUnk3300AOPJIOHMPOF()) {
+        if (!getUnk3300AOPJIOHMPOF()
+            .equals(other.getUnk3300AOPJIOHMPOF())) return false;
       }
-      if (getFieldShowId()
-          != other.getFieldShowId()) return false;
-      if (getCardBackShowId()
-          != other.getCardBackShowId()) return false;
-      if (getDiceCount()
-          != other.getDiceCount()) return false;
+      if (getUnk3300FDFPHNDOJML()
+          != other.getUnk3300FDFPHNDOJML()) return false;
+      if (hasUnk3300IPLMHKCNDLE() != other.hasUnk3300IPLMHKCNDLE()) return false;
+      if (hasUnk3300IPLMHKCNDLE()) {
+        if (!getUnk3300IPLMHKCNDLE()
+            .equals(other.getUnk3300IPLMHKCNDLE())) return false;
+      }
+      if (hasUnk3300EIHOMDLENMK() != other.hasUnk3300EIHOMDLENMK()) return false;
+      if (hasUnk3300EIHOMDLENMK()) {
+        if (!getUnk3300EIHOMDLENMK()
+            .equals(other.getUnk3300EIHOMDLENMK())) return false;
+      }
+      if (!getWaitingListList()
+          .equals(other.getWaitingListList())) return false;
+      if (getUnk3300PBECINKKHND()
+          != other.getUnk3300PBECINKKHND()) return false;
       if (getControllerId()
           != other.getControllerId()) return false;
-      if (hasOnStageZone() != other.hasOnStageZone()) return false;
-      if (hasOnStageZone()) {
-        if (!getOnStageZone()
-            .equals(other.getOnStageZone())) return false;
+      if (hasUnk3300INDJNJJJNKL() != other.hasUnk3300INDJNJJJNKL()) return false;
+      if (hasUnk3300INDJNJJJNKL()) {
+        if (!getUnk3300INDJNJJJNKL()
+            .equals(other.getUnk3300INDJNJJJNKL())) return false;
+      }
+      if (hasUnk3300EFNAEFBECHD() != other.hasUnk3300EFNAEFBECHD()) return false;
+      if (hasUnk3300EFNAEFBECHD()) {
+        if (!getUnk3300EFNAEFBECHD()
+            .equals(other.getUnk3300EFNAEFBECHD())) return false;
       }
       if (getIsPassed()
           != other.getIsPassed()) return false;
-      if (hasCharacterZone() != other.hasCharacterZone()) return false;
-      if (hasCharacterZone()) {
-        if (!getCharacterZone()
-            .equals(other.getCharacterZone())) return false;
-      }
-      if (getOnStageCharacterGuid()
-          != other.getOnStageCharacterGuid()) return false;
-      if (hasAssistZone() != other.hasAssistZone()) return false;
-      if (hasAssistZone()) {
-        if (!getAssistZone()
-            .equals(other.getAssistZone())) return false;
-      }
-      if (getDeckCardNum()
-          != other.getDeckCardNum()) return false;
-      if (!diceSideList_.equals(other.diceSideList_)) return false;
-      if (hasHandZone() != other.hasHandZone()) return false;
-      if (hasHandZone()) {
-        if (!getHandZone()
-            .equals(other.getHandZone())) return false;
-      }
       if (!getIntentionListList()
           .equals(other.getIntentionListList())) return false;
-      if (!getWaitingListList()
-          .equals(other.getWaitingListList())) return false;
+      if (!diceSideList_.equals(other.diceSideList_)) return false;
+      if (getUnk3300FJNPFBIHFGD()
+          != other.getUnk3300FJNPFBIHFGD()) return false;
+      if (getUnk3300GLNIFLOKBPM()
+          != other.getUnk3300GLNIFLOKBPM()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -1188,59 +1188,59 @@ public final class GCGPlayerFieldOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + UNK3300_IKJMGAHCFPM_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300IKJMGAHCFPM();
       if (!internalGetModifyZoneMap().getMap().isEmpty()) {
         hash = (37 * hash) + MODIFY_ZONE_MAP_FIELD_NUMBER;
         hash = (53 * hash) + internalGetModifyZoneMap().hashCode();
       }
-      hash = (37 * hash) + CUR_WAITING_INDEX_FIELD_NUMBER;
-      hash = (53 * hash) + getCurWaitingIndex();
-      if (hasSummonZone()) {
-        hash = (37 * hash) + SUMMON_ZONE_FIELD_NUMBER;
-        hash = (53 * hash) + getSummonZone().hashCode();
+      hash = (37 * hash) + UNK3300_GGHKFFADEAL_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300GGHKFFADEAL();
+      if (hasUnk3300AOPJIOHMPOF()) {
+        hash = (37 * hash) + UNK3300_AOPJIOHMPOF_FIELD_NUMBER;
+        hash = (53 * hash) + getUnk3300AOPJIOHMPOF().hashCode();
       }
-      hash = (37 * hash) + FIELD_SHOW_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getFieldShowId();
-      hash = (37 * hash) + CARD_BACK_SHOW_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getCardBackShowId();
-      hash = (37 * hash) + DICE_COUNT_FIELD_NUMBER;
-      hash = (53 * hash) + getDiceCount();
-      hash = (37 * hash) + CONTROLLER_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getControllerId();
-      if (hasOnStageZone()) {
-        hash = (37 * hash) + ON_STAGE_ZONE_FIELD_NUMBER;
-        hash = (53 * hash) + getOnStageZone().hashCode();
+      hash = (37 * hash) + UNK3300_FDFPHNDOJML_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300FDFPHNDOJML();
+      if (hasUnk3300IPLMHKCNDLE()) {
+        hash = (37 * hash) + UNK3300_IPLMHKCNDLE_FIELD_NUMBER;
+        hash = (53 * hash) + getUnk3300IPLMHKCNDLE().hashCode();
       }
-      hash = (37 * hash) + IS_PASSED_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsPassed());
-      if (hasCharacterZone()) {
-        hash = (37 * hash) + CHARACTER_ZONE_FIELD_NUMBER;
-        hash = (53 * hash) + getCharacterZone().hashCode();
-      }
-      hash = (37 * hash) + ON_STAGE_CHARACTER_GUID_FIELD_NUMBER;
-      hash = (53 * hash) + getOnStageCharacterGuid();
-      if (hasAssistZone()) {
-        hash = (37 * hash) + ASSIST_ZONE_FIELD_NUMBER;
-        hash = (53 * hash) + getAssistZone().hashCode();
-      }
-      hash = (37 * hash) + DECK_CARD_NUM_FIELD_NUMBER;
-      hash = (53 * hash) + getDeckCardNum();
-      if (getDiceSideListCount() > 0) {
-        hash = (37 * hash) + DICE_SIDE_LIST_FIELD_NUMBER;
-        hash = (53 * hash) + diceSideList_.hashCode();
-      }
-      if (hasHandZone()) {
-        hash = (37 * hash) + HAND_ZONE_FIELD_NUMBER;
-        hash = (53 * hash) + getHandZone().hashCode();
-      }
-      if (getIntentionListCount() > 0) {
-        hash = (37 * hash) + INTENTION_LIST_FIELD_NUMBER;
-        hash = (53 * hash) + getIntentionListList().hashCode();
+      if (hasUnk3300EIHOMDLENMK()) {
+        hash = (37 * hash) + UNK3300_EIHOMDLENMK_FIELD_NUMBER;
+        hash = (53 * hash) + getUnk3300EIHOMDLENMK().hashCode();
       }
       if (getWaitingListCount() > 0) {
         hash = (37 * hash) + WAITING_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getWaitingListList().hashCode();
       }
+      hash = (37 * hash) + UNK3300_PBECINKKHND_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300PBECINKKHND();
+      hash = (37 * hash) + CONTROLLER_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getControllerId();
+      if (hasUnk3300INDJNJJJNKL()) {
+        hash = (37 * hash) + UNK3300_INDJNJJJNKL_FIELD_NUMBER;
+        hash = (53 * hash) + getUnk3300INDJNJJJNKL().hashCode();
+      }
+      if (hasUnk3300EFNAEFBECHD()) {
+        hash = (37 * hash) + UNK3300_EFNAEFBECHD_FIELD_NUMBER;
+        hash = (53 * hash) + getUnk3300EFNAEFBECHD().hashCode();
+      }
+      hash = (37 * hash) + IS_PASSED_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getIsPassed());
+      if (getIntentionListCount() > 0) {
+        hash = (37 * hash) + INTENTION_LIST_FIELD_NUMBER;
+        hash = (53 * hash) + getIntentionListList().hashCode();
+      }
+      if (getDiceSideListCount() > 0) {
+        hash = (37 * hash) + DICE_SIDE_LIST_FIELD_NUMBER;
+        hash = (53 * hash) + diceSideList_.hashCode();
+      }
+      hash = (37 * hash) + UNK3300_FJNPFBIHFGD_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300FJNPFBIHFGD();
+      hash = (37 * hash) + UNK3300_GLNIFLOKBPM_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300GLNIFLOKBPM();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -1352,7 +1352,7 @@ public final class GCGPlayerFieldOuterClass {
       protected com.google.protobuf.MapField internalGetMapField(
           int number) {
         switch (number) {
-          case 2:
+          case 7:
             return internalGetModifyZoneMap();
           default:
             throw new RuntimeException(
@@ -1363,7 +1363,7 @@ public final class GCGPlayerFieldOuterClass {
       protected com.google.protobuf.MapField internalGetMutableMapField(
           int number) {
         switch (number) {
-          case 2:
+          case 7:
             return internalGetMutableModifyZoneMap();
           default:
             throw new RuntimeException(
@@ -1391,74 +1391,74 @@ public final class GCGPlayerFieldOuterClass {
       private void maybeForceBuilderInitialization() {
         if (com.google.protobuf.GeneratedMessageV3
                 .alwaysUseFieldBuilders) {
-          getIntentionListFieldBuilder();
           getWaitingListFieldBuilder();
+          getIntentionListFieldBuilder();
         }
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        unk3300IKJMGAHCFPM_ = 0;
+
         internalGetMutableModifyZoneMap().clear();
-        curWaitingIndex_ = 0;
+        unk3300GGHKFFADEAL_ = 0;
 
-        if (summonZoneBuilder_ == null) {
-          summonZone_ = null;
+        if (unk3300AOPJIOHMPOFBuilder_ == null) {
+          unk3300AOPJIOHMPOF_ = null;
         } else {
-          summonZone_ = null;
-          summonZoneBuilder_ = null;
+          unk3300AOPJIOHMPOF_ = null;
+          unk3300AOPJIOHMPOFBuilder_ = null;
         }
-        fieldShowId_ = 0;
+        unk3300FDFPHNDOJML_ = 0;
 
-        cardBackShowId_ = 0;
-
-        diceCount_ = 0;
+        if (unk3300IPLMHKCNDLEBuilder_ == null) {
+          unk3300IPLMHKCNDLE_ = null;
+        } else {
+          unk3300IPLMHKCNDLE_ = null;
+          unk3300IPLMHKCNDLEBuilder_ = null;
+        }
+        if (unk3300EIHOMDLENMKBuilder_ == null) {
+          unk3300EIHOMDLENMK_ = null;
+        } else {
+          unk3300EIHOMDLENMK_ = null;
+          unk3300EIHOMDLENMKBuilder_ = null;
+        }
+        if (waitingListBuilder_ == null) {
+          waitingList_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000002);
+        } else {
+          waitingListBuilder_.clear();
+        }
+        unk3300PBECINKKHND_ = 0;
 
         controllerId_ = 0;
 
-        if (onStageZoneBuilder_ == null) {
-          onStageZone_ = null;
+        if (unk3300INDJNJJJNKLBuilder_ == null) {
+          unk3300INDJNJJJNKL_ = null;
         } else {
-          onStageZone_ = null;
-          onStageZoneBuilder_ = null;
+          unk3300INDJNJJJNKL_ = null;
+          unk3300INDJNJJJNKLBuilder_ = null;
+        }
+        if (unk3300EFNAEFBECHDBuilder_ == null) {
+          unk3300EFNAEFBECHD_ = null;
+        } else {
+          unk3300EFNAEFBECHD_ = null;
+          unk3300EFNAEFBECHDBuilder_ = null;
         }
         isPassed_ = false;
 
-        if (characterZoneBuilder_ == null) {
-          characterZone_ = null;
-        } else {
-          characterZone_ = null;
-          characterZoneBuilder_ = null;
-        }
-        onStageCharacterGuid_ = 0;
-
-        if (assistZoneBuilder_ == null) {
-          assistZone_ = null;
-        } else {
-          assistZone_ = null;
-          assistZoneBuilder_ = null;
-        }
-        deckCardNum_ = 0;
-
-        diceSideList_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x00000002);
-        if (handZoneBuilder_ == null) {
-          handZone_ = null;
-        } else {
-          handZone_ = null;
-          handZoneBuilder_ = null;
-        }
         if (intentionListBuilder_ == null) {
           intentionList_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000004);
         } else {
           intentionListBuilder_.clear();
         }
-        if (waitingListBuilder_ == null) {
-          waitingList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000008);
-        } else {
-          waitingListBuilder_.clear();
-        }
+        diceSideList_ = java.util.Collections.emptyList();
+        bitField0_ = (bitField0_ & ~0x00000008);
+        unk3300FJNPFBIHFGD_ = 0;
+
+        unk3300GLNIFLOKBPM_ = 0;
+
         return this;
       }
 
@@ -1486,46 +1486,48 @@ public final class GCGPlayerFieldOuterClass {
       public emu.grasscutter.net.proto.GCGPlayerFieldOuterClass.GCGPlayerField buildPartial() {
         emu.grasscutter.net.proto.GCGPlayerFieldOuterClass.GCGPlayerField result = new emu.grasscutter.net.proto.GCGPlayerFieldOuterClass.GCGPlayerField(this);
         int from_bitField0_ = bitField0_;
+        result.unk3300IKJMGAHCFPM_ = unk3300IKJMGAHCFPM_;
         result.modifyZoneMap_ = internalGetModifyZoneMap();
         result.modifyZoneMap_.makeImmutable();
-        result.curWaitingIndex_ = curWaitingIndex_;
-        if (summonZoneBuilder_ == null) {
-          result.summonZone_ = summonZone_;
+        result.unk3300GGHKFFADEAL_ = unk3300GGHKFFADEAL_;
+        if (unk3300AOPJIOHMPOFBuilder_ == null) {
+          result.unk3300AOPJIOHMPOF_ = unk3300AOPJIOHMPOF_;
         } else {
-          result.summonZone_ = summonZoneBuilder_.build();
+          result.unk3300AOPJIOHMPOF_ = unk3300AOPJIOHMPOFBuilder_.build();
         }
-        result.fieldShowId_ = fieldShowId_;
-        result.cardBackShowId_ = cardBackShowId_;
-        result.diceCount_ = diceCount_;
-        result.controllerId_ = controllerId_;
-        if (onStageZoneBuilder_ == null) {
-          result.onStageZone_ = onStageZone_;
+        result.unk3300FDFPHNDOJML_ = unk3300FDFPHNDOJML_;
+        if (unk3300IPLMHKCNDLEBuilder_ == null) {
+          result.unk3300IPLMHKCNDLE_ = unk3300IPLMHKCNDLE_;
         } else {
-          result.onStageZone_ = onStageZoneBuilder_.build();
+          result.unk3300IPLMHKCNDLE_ = unk3300IPLMHKCNDLEBuilder_.build();
+        }
+        if (unk3300EIHOMDLENMKBuilder_ == null) {
+          result.unk3300EIHOMDLENMK_ = unk3300EIHOMDLENMK_;
+        } else {
+          result.unk3300EIHOMDLENMK_ = unk3300EIHOMDLENMKBuilder_.build();
+        }
+        if (waitingListBuilder_ == null) {
+          if (((bitField0_ & 0x00000002) != 0)) {
+            waitingList_ = java.util.Collections.unmodifiableList(waitingList_);
+            bitField0_ = (bitField0_ & ~0x00000002);
+          }
+          result.waitingList_ = waitingList_;
+        } else {
+          result.waitingList_ = waitingListBuilder_.build();
+        }
+        result.unk3300PBECINKKHND_ = unk3300PBECINKKHND_;
+        result.controllerId_ = controllerId_;
+        if (unk3300INDJNJJJNKLBuilder_ == null) {
+          result.unk3300INDJNJJJNKL_ = unk3300INDJNJJJNKL_;
+        } else {
+          result.unk3300INDJNJJJNKL_ = unk3300INDJNJJJNKLBuilder_.build();
+        }
+        if (unk3300EFNAEFBECHDBuilder_ == null) {
+          result.unk3300EFNAEFBECHD_ = unk3300EFNAEFBECHD_;
+        } else {
+          result.unk3300EFNAEFBECHD_ = unk3300EFNAEFBECHDBuilder_.build();
         }
         result.isPassed_ = isPassed_;
-        if (characterZoneBuilder_ == null) {
-          result.characterZone_ = characterZone_;
-        } else {
-          result.characterZone_ = characterZoneBuilder_.build();
-        }
-        result.onStageCharacterGuid_ = onStageCharacterGuid_;
-        if (assistZoneBuilder_ == null) {
-          result.assistZone_ = assistZone_;
-        } else {
-          result.assistZone_ = assistZoneBuilder_.build();
-        }
-        result.deckCardNum_ = deckCardNum_;
-        if (((bitField0_ & 0x00000002) != 0)) {
-          diceSideList_ = java.util.Collections.unmodifiableList(diceSideList_);
-          bitField0_ = (bitField0_ & ~0x00000002);
-        }
-        result.diceSideList_ = diceSideList_;
-        if (handZoneBuilder_ == null) {
-          result.handZone_ = handZone_;
-        } else {
-          result.handZone_ = handZoneBuilder_.build();
-        }
         if (intentionListBuilder_ == null) {
           if (((bitField0_ & 0x00000004) != 0)) {
             intentionList_ = java.util.Collections.unmodifiableList(intentionList_);
@@ -1535,15 +1537,13 @@ public final class GCGPlayerFieldOuterClass {
         } else {
           result.intentionList_ = intentionListBuilder_.build();
         }
-        if (waitingListBuilder_ == null) {
-          if (((bitField0_ & 0x00000008) != 0)) {
-            waitingList_ = java.util.Collections.unmodifiableList(waitingList_);
-            bitField0_ = (bitField0_ & ~0x00000008);
-          }
-          result.waitingList_ = waitingList_;
-        } else {
-          result.waitingList_ = waitingListBuilder_.build();
+        if (((bitField0_ & 0x00000008) != 0)) {
+          diceSideList_ = java.util.Collections.unmodifiableList(diceSideList_);
+          bitField0_ = (bitField0_ & ~0x00000008);
         }
+        result.diceSideList_ = diceSideList_;
+        result.unk3300FJNPFBIHFGD_ = unk3300FJNPFBIHFGD_;
+        result.unk3300GLNIFLOKBPM_ = unk3300GLNIFLOKBPM_;
         onBuilt();
         return result;
       }
@@ -1592,56 +1592,66 @@ public final class GCGPlayerFieldOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.GCGPlayerFieldOuterClass.GCGPlayerField other) {
         if (other == emu.grasscutter.net.proto.GCGPlayerFieldOuterClass.GCGPlayerField.getDefaultInstance()) return this;
+        if (other.getUnk3300IKJMGAHCFPM() != 0) {
+          setUnk3300IKJMGAHCFPM(other.getUnk3300IKJMGAHCFPM());
+        }
         internalGetMutableModifyZoneMap().mergeFrom(
             other.internalGetModifyZoneMap());
-        if (other.getCurWaitingIndex() != 0) {
-          setCurWaitingIndex(other.getCurWaitingIndex());
+        if (other.getUnk3300GGHKFFADEAL() != 0) {
+          setUnk3300GGHKFFADEAL(other.getUnk3300GGHKFFADEAL());
         }
-        if (other.hasSummonZone()) {
-          mergeSummonZone(other.getSummonZone());
+        if (other.hasUnk3300AOPJIOHMPOF()) {
+          mergeUnk3300AOPJIOHMPOF(other.getUnk3300AOPJIOHMPOF());
         }
-        if (other.getFieldShowId() != 0) {
-          setFieldShowId(other.getFieldShowId());
+        if (other.getUnk3300FDFPHNDOJML() != 0) {
+          setUnk3300FDFPHNDOJML(other.getUnk3300FDFPHNDOJML());
         }
-        if (other.getCardBackShowId() != 0) {
-          setCardBackShowId(other.getCardBackShowId());
+        if (other.hasUnk3300IPLMHKCNDLE()) {
+          mergeUnk3300IPLMHKCNDLE(other.getUnk3300IPLMHKCNDLE());
         }
-        if (other.getDiceCount() != 0) {
-          setDiceCount(other.getDiceCount());
+        if (other.hasUnk3300EIHOMDLENMK()) {
+          mergeUnk3300EIHOMDLENMK(other.getUnk3300EIHOMDLENMK());
+        }
+        if (waitingListBuilder_ == null) {
+          if (!other.waitingList_.isEmpty()) {
+            if (waitingList_.isEmpty()) {
+              waitingList_ = other.waitingList_;
+              bitField0_ = (bitField0_ & ~0x00000002);
+            } else {
+              ensureWaitingListIsMutable();
+              waitingList_.addAll(other.waitingList_);
+            }
+            onChanged();
+          }
+        } else {
+          if (!other.waitingList_.isEmpty()) {
+            if (waitingListBuilder_.isEmpty()) {
+              waitingListBuilder_.dispose();
+              waitingListBuilder_ = null;
+              waitingList_ = other.waitingList_;
+              bitField0_ = (bitField0_ & ~0x00000002);
+              waitingListBuilder_ = 
+                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+                   getWaitingListFieldBuilder() : null;
+            } else {
+              waitingListBuilder_.addAllMessages(other.waitingList_);
+            }
+          }
+        }
+        if (other.getUnk3300PBECINKKHND() != 0) {
+          setUnk3300PBECINKKHND(other.getUnk3300PBECINKKHND());
         }
         if (other.getControllerId() != 0) {
           setControllerId(other.getControllerId());
         }
-        if (other.hasOnStageZone()) {
-          mergeOnStageZone(other.getOnStageZone());
+        if (other.hasUnk3300INDJNJJJNKL()) {
+          mergeUnk3300INDJNJJJNKL(other.getUnk3300INDJNJJJNKL());
+        }
+        if (other.hasUnk3300EFNAEFBECHD()) {
+          mergeUnk3300EFNAEFBECHD(other.getUnk3300EFNAEFBECHD());
         }
         if (other.getIsPassed() != false) {
           setIsPassed(other.getIsPassed());
-        }
-        if (other.hasCharacterZone()) {
-          mergeCharacterZone(other.getCharacterZone());
-        }
-        if (other.getOnStageCharacterGuid() != 0) {
-          setOnStageCharacterGuid(other.getOnStageCharacterGuid());
-        }
-        if (other.hasAssistZone()) {
-          mergeAssistZone(other.getAssistZone());
-        }
-        if (other.getDeckCardNum() != 0) {
-          setDeckCardNum(other.getDeckCardNum());
-        }
-        if (!other.diceSideList_.isEmpty()) {
-          if (diceSideList_.isEmpty()) {
-            diceSideList_ = other.diceSideList_;
-            bitField0_ = (bitField0_ & ~0x00000002);
-          } else {
-            ensureDiceSideListIsMutable();
-            diceSideList_.addAll(other.diceSideList_);
-          }
-          onChanged();
-        }
-        if (other.hasHandZone()) {
-          mergeHandZone(other.getHandZone());
         }
         if (intentionListBuilder_ == null) {
           if (!other.intentionList_.isEmpty()) {
@@ -1669,31 +1679,21 @@ public final class GCGPlayerFieldOuterClass {
             }
           }
         }
-        if (waitingListBuilder_ == null) {
-          if (!other.waitingList_.isEmpty()) {
-            if (waitingList_.isEmpty()) {
-              waitingList_ = other.waitingList_;
-              bitField0_ = (bitField0_ & ~0x00000008);
-            } else {
-              ensureWaitingListIsMutable();
-              waitingList_.addAll(other.waitingList_);
-            }
-            onChanged();
+        if (!other.diceSideList_.isEmpty()) {
+          if (diceSideList_.isEmpty()) {
+            diceSideList_ = other.diceSideList_;
+            bitField0_ = (bitField0_ & ~0x00000008);
+          } else {
+            ensureDiceSideListIsMutable();
+            diceSideList_.addAll(other.diceSideList_);
           }
-        } else {
-          if (!other.waitingList_.isEmpty()) {
-            if (waitingListBuilder_.isEmpty()) {
-              waitingListBuilder_.dispose();
-              waitingListBuilder_ = null;
-              waitingList_ = other.waitingList_;
-              bitField0_ = (bitField0_ & ~0x00000008);
-              waitingListBuilder_ = 
-                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
-                   getWaitingListFieldBuilder() : null;
-            } else {
-              waitingListBuilder_.addAllMessages(other.waitingList_);
-            }
-          }
+          onChanged();
+        }
+        if (other.getUnk3300FJNPFBIHFGD() != 0) {
+          setUnk3300FJNPFBIHFGD(other.getUnk3300FJNPFBIHFGD());
+        }
+        if (other.getUnk3300GLNIFLOKBPM() != 0) {
+          setUnk3300GLNIFLOKBPM(other.getUnk3300GLNIFLOKBPM());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -1725,6 +1725,37 @@ public final class GCGPlayerFieldOuterClass {
       }
       private int bitField0_;
 
+      private int unk3300IKJMGAHCFPM_ ;
+      /**
+       * <code>uint32 Unk3300_IKJMGAHCFPM = 5;</code>
+       * @return The unk3300IKJMGAHCFPM.
+       */
+      @java.lang.Override
+      public int getUnk3300IKJMGAHCFPM() {
+        return unk3300IKJMGAHCFPM_;
+      }
+      /**
+       * <code>uint32 Unk3300_IKJMGAHCFPM = 5;</code>
+       * @param value The unk3300IKJMGAHCFPM to set.
+       * @return This builder for chaining.
+       */
+      public Builder setUnk3300IKJMGAHCFPM(int value) {
+        
+        unk3300IKJMGAHCFPM_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 Unk3300_IKJMGAHCFPM = 5;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearUnk3300IKJMGAHCFPM() {
+        
+        unk3300IKJMGAHCFPM_ = 0;
+        onChanged();
+        return this;
+      }
+
       private com.google.protobuf.MapField<
           java.lang.Integer, emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone> modifyZoneMap_;
       private com.google.protobuf.MapField<java.lang.Integer, emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone>
@@ -1752,7 +1783,7 @@ public final class GCGPlayerFieldOuterClass {
         return internalGetModifyZoneMap().getMap().size();
       }
       /**
-       * <code>map&lt;uint32, .GCGZone&gt; modify_zone_map = 2;</code>
+       * <code>map&lt;uint32, .GCGZone&gt; modify_zone_map = 7;</code>
        */
 
       @java.lang.Override
@@ -1770,7 +1801,7 @@ public final class GCGPlayerFieldOuterClass {
         return getModifyZoneMapMap();
       }
       /**
-       * <code>map&lt;uint32, .GCGZone&gt; modify_zone_map = 2;</code>
+       * <code>map&lt;uint32, .GCGZone&gt; modify_zone_map = 7;</code>
        */
       @java.lang.Override
 
@@ -1778,7 +1809,7 @@ public final class GCGPlayerFieldOuterClass {
         return internalGetModifyZoneMap().getMap();
       }
       /**
-       * <code>map&lt;uint32, .GCGZone&gt; modify_zone_map = 2;</code>
+       * <code>map&lt;uint32, .GCGZone&gt; modify_zone_map = 7;</code>
        */
       @java.lang.Override
 
@@ -1791,7 +1822,7 @@ public final class GCGPlayerFieldOuterClass {
         return map.containsKey(key) ? map.get(key) : defaultValue;
       }
       /**
-       * <code>map&lt;uint32, .GCGZone&gt; modify_zone_map = 2;</code>
+       * <code>map&lt;uint32, .GCGZone&gt; modify_zone_map = 7;</code>
        */
       @java.lang.Override
 
@@ -1812,7 +1843,7 @@ public final class GCGPlayerFieldOuterClass {
         return this;
       }
       /**
-       * <code>map&lt;uint32, .GCGZone&gt; modify_zone_map = 2;</code>
+       * <code>map&lt;uint32, .GCGZone&gt; modify_zone_map = 7;</code>
        */
 
       public Builder removeModifyZoneMap(
@@ -1831,7 +1862,7 @@ public final class GCGPlayerFieldOuterClass {
         return internalGetMutableModifyZoneMap().getMutableMap();
       }
       /**
-       * <code>map&lt;uint32, .GCGZone&gt; modify_zone_map = 2;</code>
+       * <code>map&lt;uint32, .GCGZone&gt; modify_zone_map = 7;</code>
        */
       public Builder putModifyZoneMap(
           int key,
@@ -1843,7 +1874,7 @@ public final class GCGPlayerFieldOuterClass {
         return this;
       }
       /**
-       * <code>map&lt;uint32, .GCGZone&gt; modify_zone_map = 2;</code>
+       * <code>map&lt;uint32, .GCGZone&gt; modify_zone_map = 7;</code>
        */
 
       public Builder putAllModifyZoneMap(
@@ -1853,252 +1884,699 @@ public final class GCGPlayerFieldOuterClass {
         return this;
       }
 
-      private int curWaitingIndex_ ;
+      private int unk3300GGHKFFADEAL_ ;
       /**
-       * <code>uint32 cur_waiting_index = 383;</code>
-       * @return The curWaitingIndex.
+       * <code>uint32 Unk3300_GGHKFFADEAL = 731;</code>
+       * @return The unk3300GGHKFFADEAL.
        */
       @java.lang.Override
-      public int getCurWaitingIndex() {
-        return curWaitingIndex_;
+      public int getUnk3300GGHKFFADEAL() {
+        return unk3300GGHKFFADEAL_;
       }
       /**
-       * <code>uint32 cur_waiting_index = 383;</code>
-       * @param value The curWaitingIndex to set.
+       * <code>uint32 Unk3300_GGHKFFADEAL = 731;</code>
+       * @param value The unk3300GGHKFFADEAL to set.
        * @return This builder for chaining.
        */
-      public Builder setCurWaitingIndex(int value) {
+      public Builder setUnk3300GGHKFFADEAL(int value) {
         
-        curWaitingIndex_ = value;
+        unk3300GGHKFFADEAL_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 cur_waiting_index = 383;</code>
+       * <code>uint32 Unk3300_GGHKFFADEAL = 731;</code>
        * @return This builder for chaining.
        */
-      public Builder clearCurWaitingIndex() {
+      public Builder clearUnk3300GGHKFFADEAL() {
         
-        curWaitingIndex_ = 0;
+        unk3300GGHKFFADEAL_ = 0;
         onChanged();
         return this;
       }
 
-      private emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone summonZone_;
+      private emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone unk3300AOPJIOHMPOF_;
       private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone, emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.Builder, emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZoneOrBuilder> summonZoneBuilder_;
+          emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone, emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.Builder, emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZoneOrBuilder> unk3300AOPJIOHMPOFBuilder_;
       /**
-       * <code>.GCGZone summon_zone = 1;</code>
-       * @return Whether the summonZone field is set.
+       * <code>.GCGZone Unk3300_AOPJIOHMPOF = 10;</code>
+       * @return Whether the unk3300AOPJIOHMPOF field is set.
        */
-      public boolean hasSummonZone() {
-        return summonZoneBuilder_ != null || summonZone_ != null;
+      public boolean hasUnk3300AOPJIOHMPOF() {
+        return unk3300AOPJIOHMPOFBuilder_ != null || unk3300AOPJIOHMPOF_ != null;
       }
       /**
-       * <code>.GCGZone summon_zone = 1;</code>
-       * @return The summonZone.
+       * <code>.GCGZone Unk3300_AOPJIOHMPOF = 10;</code>
+       * @return The unk3300AOPJIOHMPOF.
        */
-      public emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone getSummonZone() {
-        if (summonZoneBuilder_ == null) {
-          return summonZone_ == null ? emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.getDefaultInstance() : summonZone_;
+      public emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone getUnk3300AOPJIOHMPOF() {
+        if (unk3300AOPJIOHMPOFBuilder_ == null) {
+          return unk3300AOPJIOHMPOF_ == null ? emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.getDefaultInstance() : unk3300AOPJIOHMPOF_;
         } else {
-          return summonZoneBuilder_.getMessage();
+          return unk3300AOPJIOHMPOFBuilder_.getMessage();
         }
       }
       /**
-       * <code>.GCGZone summon_zone = 1;</code>
+       * <code>.GCGZone Unk3300_AOPJIOHMPOF = 10;</code>
        */
-      public Builder setSummonZone(emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone value) {
-        if (summonZoneBuilder_ == null) {
+      public Builder setUnk3300AOPJIOHMPOF(emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone value) {
+        if (unk3300AOPJIOHMPOFBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          summonZone_ = value;
+          unk3300AOPJIOHMPOF_ = value;
           onChanged();
         } else {
-          summonZoneBuilder_.setMessage(value);
+          unk3300AOPJIOHMPOFBuilder_.setMessage(value);
         }
 
         return this;
       }
       /**
-       * <code>.GCGZone summon_zone = 1;</code>
+       * <code>.GCGZone Unk3300_AOPJIOHMPOF = 10;</code>
        */
-      public Builder setSummonZone(
+      public Builder setUnk3300AOPJIOHMPOF(
           emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.Builder builderForValue) {
-        if (summonZoneBuilder_ == null) {
-          summonZone_ = builderForValue.build();
+        if (unk3300AOPJIOHMPOFBuilder_ == null) {
+          unk3300AOPJIOHMPOF_ = builderForValue.build();
           onChanged();
         } else {
-          summonZoneBuilder_.setMessage(builderForValue.build());
+          unk3300AOPJIOHMPOFBuilder_.setMessage(builderForValue.build());
         }
 
         return this;
       }
       /**
-       * <code>.GCGZone summon_zone = 1;</code>
+       * <code>.GCGZone Unk3300_AOPJIOHMPOF = 10;</code>
        */
-      public Builder mergeSummonZone(emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone value) {
-        if (summonZoneBuilder_ == null) {
-          if (summonZone_ != null) {
-            summonZone_ =
-              emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.newBuilder(summonZone_).mergeFrom(value).buildPartial();
+      public Builder mergeUnk3300AOPJIOHMPOF(emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone value) {
+        if (unk3300AOPJIOHMPOFBuilder_ == null) {
+          if (unk3300AOPJIOHMPOF_ != null) {
+            unk3300AOPJIOHMPOF_ =
+              emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.newBuilder(unk3300AOPJIOHMPOF_).mergeFrom(value).buildPartial();
           } else {
-            summonZone_ = value;
+            unk3300AOPJIOHMPOF_ = value;
           }
           onChanged();
         } else {
-          summonZoneBuilder_.mergeFrom(value);
+          unk3300AOPJIOHMPOFBuilder_.mergeFrom(value);
         }
 
         return this;
       }
       /**
-       * <code>.GCGZone summon_zone = 1;</code>
+       * <code>.GCGZone Unk3300_AOPJIOHMPOF = 10;</code>
        */
-      public Builder clearSummonZone() {
-        if (summonZoneBuilder_ == null) {
-          summonZone_ = null;
+      public Builder clearUnk3300AOPJIOHMPOF() {
+        if (unk3300AOPJIOHMPOFBuilder_ == null) {
+          unk3300AOPJIOHMPOF_ = null;
           onChanged();
         } else {
-          summonZone_ = null;
-          summonZoneBuilder_ = null;
+          unk3300AOPJIOHMPOF_ = null;
+          unk3300AOPJIOHMPOFBuilder_ = null;
         }
 
         return this;
       }
       /**
-       * <code>.GCGZone summon_zone = 1;</code>
+       * <code>.GCGZone Unk3300_AOPJIOHMPOF = 10;</code>
        */
-      public emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.Builder getSummonZoneBuilder() {
+      public emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.Builder getUnk3300AOPJIOHMPOFBuilder() {
         
         onChanged();
-        return getSummonZoneFieldBuilder().getBuilder();
+        return getUnk3300AOPJIOHMPOFFieldBuilder().getBuilder();
       }
       /**
-       * <code>.GCGZone summon_zone = 1;</code>
+       * <code>.GCGZone Unk3300_AOPJIOHMPOF = 10;</code>
        */
-      public emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZoneOrBuilder getSummonZoneOrBuilder() {
-        if (summonZoneBuilder_ != null) {
-          return summonZoneBuilder_.getMessageOrBuilder();
+      public emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZoneOrBuilder getUnk3300AOPJIOHMPOFOrBuilder() {
+        if (unk3300AOPJIOHMPOFBuilder_ != null) {
+          return unk3300AOPJIOHMPOFBuilder_.getMessageOrBuilder();
         } else {
-          return summonZone_ == null ?
-              emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.getDefaultInstance() : summonZone_;
+          return unk3300AOPJIOHMPOF_ == null ?
+              emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.getDefaultInstance() : unk3300AOPJIOHMPOF_;
         }
       }
       /**
-       * <code>.GCGZone summon_zone = 1;</code>
+       * <code>.GCGZone Unk3300_AOPJIOHMPOF = 10;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone, emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.Builder, emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZoneOrBuilder> 
-          getSummonZoneFieldBuilder() {
-        if (summonZoneBuilder_ == null) {
-          summonZoneBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+          getUnk3300AOPJIOHMPOFFieldBuilder() {
+        if (unk3300AOPJIOHMPOFBuilder_ == null) {
+          unk3300AOPJIOHMPOFBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
               emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone, emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.Builder, emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZoneOrBuilder>(
-                  getSummonZone(),
+                  getUnk3300AOPJIOHMPOF(),
                   getParentForChildren(),
                   isClean());
-          summonZone_ = null;
+          unk3300AOPJIOHMPOF_ = null;
         }
-        return summonZoneBuilder_;
+        return unk3300AOPJIOHMPOFBuilder_;
       }
 
-      private int fieldShowId_ ;
+      private int unk3300FDFPHNDOJML_ ;
       /**
-       * <code>uint32 field_show_id = 8;</code>
-       * @return The fieldShowId.
+       * <code>uint32 Unk3300_FDFPHNDOJML = 12;</code>
+       * @return The unk3300FDFPHNDOJML.
        */
       @java.lang.Override
-      public int getFieldShowId() {
-        return fieldShowId_;
+      public int getUnk3300FDFPHNDOJML() {
+        return unk3300FDFPHNDOJML_;
       }
       /**
-       * <code>uint32 field_show_id = 8;</code>
-       * @param value The fieldShowId to set.
+       * <code>uint32 Unk3300_FDFPHNDOJML = 12;</code>
+       * @param value The unk3300FDFPHNDOJML to set.
        * @return This builder for chaining.
        */
-      public Builder setFieldShowId(int value) {
+      public Builder setUnk3300FDFPHNDOJML(int value) {
         
-        fieldShowId_ = value;
+        unk3300FDFPHNDOJML_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 field_show_id = 8;</code>
+       * <code>uint32 Unk3300_FDFPHNDOJML = 12;</code>
        * @return This builder for chaining.
        */
-      public Builder clearFieldShowId() {
+      public Builder clearUnk3300FDFPHNDOJML() {
         
-        fieldShowId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int cardBackShowId_ ;
-      /**
-       * <code>uint32 card_back_show_id = 12;</code>
-       * @return The cardBackShowId.
-       */
-      @java.lang.Override
-      public int getCardBackShowId() {
-        return cardBackShowId_;
-      }
-      /**
-       * <code>uint32 card_back_show_id = 12;</code>
-       * @param value The cardBackShowId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setCardBackShowId(int value) {
-        
-        cardBackShowId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 card_back_show_id = 12;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearCardBackShowId() {
-        
-        cardBackShowId_ = 0;
+        unk3300FDFPHNDOJML_ = 0;
         onChanged();
         return this;
       }
 
-      private int diceCount_ ;
+      private emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone unk3300IPLMHKCNDLE_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone, emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.Builder, emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZoneOrBuilder> unk3300IPLMHKCNDLEBuilder_;
       /**
-       * <code>uint32 dice_count = 3;</code>
-       * @return The diceCount.
+       * <code>.GCGZone Unk3300_IPLMHKCNDLE = 1;</code>
+       * @return Whether the unk3300IPLMHKCNDLE field is set.
        */
-      @java.lang.Override
-      public int getDiceCount() {
-        return diceCount_;
+      public boolean hasUnk3300IPLMHKCNDLE() {
+        return unk3300IPLMHKCNDLEBuilder_ != null || unk3300IPLMHKCNDLE_ != null;
       }
       /**
-       * <code>uint32 dice_count = 3;</code>
-       * @param value The diceCount to set.
+       * <code>.GCGZone Unk3300_IPLMHKCNDLE = 1;</code>
+       * @return The unk3300IPLMHKCNDLE.
+       */
+      public emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone getUnk3300IPLMHKCNDLE() {
+        if (unk3300IPLMHKCNDLEBuilder_ == null) {
+          return unk3300IPLMHKCNDLE_ == null ? emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.getDefaultInstance() : unk3300IPLMHKCNDLE_;
+        } else {
+          return unk3300IPLMHKCNDLEBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>.GCGZone Unk3300_IPLMHKCNDLE = 1;</code>
+       */
+      public Builder setUnk3300IPLMHKCNDLE(emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone value) {
+        if (unk3300IPLMHKCNDLEBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          unk3300IPLMHKCNDLE_ = value;
+          onChanged();
+        } else {
+          unk3300IPLMHKCNDLEBuilder_.setMessage(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.GCGZone Unk3300_IPLMHKCNDLE = 1;</code>
+       */
+      public Builder setUnk3300IPLMHKCNDLE(
+          emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.Builder builderForValue) {
+        if (unk3300IPLMHKCNDLEBuilder_ == null) {
+          unk3300IPLMHKCNDLE_ = builderForValue.build();
+          onChanged();
+        } else {
+          unk3300IPLMHKCNDLEBuilder_.setMessage(builderForValue.build());
+        }
+
+        return this;
+      }
+      /**
+       * <code>.GCGZone Unk3300_IPLMHKCNDLE = 1;</code>
+       */
+      public Builder mergeUnk3300IPLMHKCNDLE(emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone value) {
+        if (unk3300IPLMHKCNDLEBuilder_ == null) {
+          if (unk3300IPLMHKCNDLE_ != null) {
+            unk3300IPLMHKCNDLE_ =
+              emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.newBuilder(unk3300IPLMHKCNDLE_).mergeFrom(value).buildPartial();
+          } else {
+            unk3300IPLMHKCNDLE_ = value;
+          }
+          onChanged();
+        } else {
+          unk3300IPLMHKCNDLEBuilder_.mergeFrom(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.GCGZone Unk3300_IPLMHKCNDLE = 1;</code>
+       */
+      public Builder clearUnk3300IPLMHKCNDLE() {
+        if (unk3300IPLMHKCNDLEBuilder_ == null) {
+          unk3300IPLMHKCNDLE_ = null;
+          onChanged();
+        } else {
+          unk3300IPLMHKCNDLE_ = null;
+          unk3300IPLMHKCNDLEBuilder_ = null;
+        }
+
+        return this;
+      }
+      /**
+       * <code>.GCGZone Unk3300_IPLMHKCNDLE = 1;</code>
+       */
+      public emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.Builder getUnk3300IPLMHKCNDLEBuilder() {
+        
+        onChanged();
+        return getUnk3300IPLMHKCNDLEFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.GCGZone Unk3300_IPLMHKCNDLE = 1;</code>
+       */
+      public emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZoneOrBuilder getUnk3300IPLMHKCNDLEOrBuilder() {
+        if (unk3300IPLMHKCNDLEBuilder_ != null) {
+          return unk3300IPLMHKCNDLEBuilder_.getMessageOrBuilder();
+        } else {
+          return unk3300IPLMHKCNDLE_ == null ?
+              emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.getDefaultInstance() : unk3300IPLMHKCNDLE_;
+        }
+      }
+      /**
+       * <code>.GCGZone Unk3300_IPLMHKCNDLE = 1;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone, emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.Builder, emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZoneOrBuilder> 
+          getUnk3300IPLMHKCNDLEFieldBuilder() {
+        if (unk3300IPLMHKCNDLEBuilder_ == null) {
+          unk3300IPLMHKCNDLEBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone, emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.Builder, emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZoneOrBuilder>(
+                  getUnk3300IPLMHKCNDLE(),
+                  getParentForChildren(),
+                  isClean());
+          unk3300IPLMHKCNDLE_ = null;
+        }
+        return unk3300IPLMHKCNDLEBuilder_;
+      }
+
+      private emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone unk3300EIHOMDLENMK_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone, emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.Builder, emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZoneOrBuilder> unk3300EIHOMDLENMKBuilder_;
+      /**
+       * <code>.GCGZone Unk3300_EIHOMDLENMK = 9;</code>
+       * @return Whether the unk3300EIHOMDLENMK field is set.
+       */
+      public boolean hasUnk3300EIHOMDLENMK() {
+        return unk3300EIHOMDLENMKBuilder_ != null || unk3300EIHOMDLENMK_ != null;
+      }
+      /**
+       * <code>.GCGZone Unk3300_EIHOMDLENMK = 9;</code>
+       * @return The unk3300EIHOMDLENMK.
+       */
+      public emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone getUnk3300EIHOMDLENMK() {
+        if (unk3300EIHOMDLENMKBuilder_ == null) {
+          return unk3300EIHOMDLENMK_ == null ? emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.getDefaultInstance() : unk3300EIHOMDLENMK_;
+        } else {
+          return unk3300EIHOMDLENMKBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>.GCGZone Unk3300_EIHOMDLENMK = 9;</code>
+       */
+      public Builder setUnk3300EIHOMDLENMK(emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone value) {
+        if (unk3300EIHOMDLENMKBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          unk3300EIHOMDLENMK_ = value;
+          onChanged();
+        } else {
+          unk3300EIHOMDLENMKBuilder_.setMessage(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.GCGZone Unk3300_EIHOMDLENMK = 9;</code>
+       */
+      public Builder setUnk3300EIHOMDLENMK(
+          emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.Builder builderForValue) {
+        if (unk3300EIHOMDLENMKBuilder_ == null) {
+          unk3300EIHOMDLENMK_ = builderForValue.build();
+          onChanged();
+        } else {
+          unk3300EIHOMDLENMKBuilder_.setMessage(builderForValue.build());
+        }
+
+        return this;
+      }
+      /**
+       * <code>.GCGZone Unk3300_EIHOMDLENMK = 9;</code>
+       */
+      public Builder mergeUnk3300EIHOMDLENMK(emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone value) {
+        if (unk3300EIHOMDLENMKBuilder_ == null) {
+          if (unk3300EIHOMDLENMK_ != null) {
+            unk3300EIHOMDLENMK_ =
+              emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.newBuilder(unk3300EIHOMDLENMK_).mergeFrom(value).buildPartial();
+          } else {
+            unk3300EIHOMDLENMK_ = value;
+          }
+          onChanged();
+        } else {
+          unk3300EIHOMDLENMKBuilder_.mergeFrom(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.GCGZone Unk3300_EIHOMDLENMK = 9;</code>
+       */
+      public Builder clearUnk3300EIHOMDLENMK() {
+        if (unk3300EIHOMDLENMKBuilder_ == null) {
+          unk3300EIHOMDLENMK_ = null;
+          onChanged();
+        } else {
+          unk3300EIHOMDLENMK_ = null;
+          unk3300EIHOMDLENMKBuilder_ = null;
+        }
+
+        return this;
+      }
+      /**
+       * <code>.GCGZone Unk3300_EIHOMDLENMK = 9;</code>
+       */
+      public emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.Builder getUnk3300EIHOMDLENMKBuilder() {
+        
+        onChanged();
+        return getUnk3300EIHOMDLENMKFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.GCGZone Unk3300_EIHOMDLENMK = 9;</code>
+       */
+      public emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZoneOrBuilder getUnk3300EIHOMDLENMKOrBuilder() {
+        if (unk3300EIHOMDLENMKBuilder_ != null) {
+          return unk3300EIHOMDLENMKBuilder_.getMessageOrBuilder();
+        } else {
+          return unk3300EIHOMDLENMK_ == null ?
+              emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.getDefaultInstance() : unk3300EIHOMDLENMK_;
+        }
+      }
+      /**
+       * <code>.GCGZone Unk3300_EIHOMDLENMK = 9;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone, emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.Builder, emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZoneOrBuilder> 
+          getUnk3300EIHOMDLENMKFieldBuilder() {
+        if (unk3300EIHOMDLENMKBuilder_ == null) {
+          unk3300EIHOMDLENMKBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone, emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.Builder, emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZoneOrBuilder>(
+                  getUnk3300EIHOMDLENMK(),
+                  getParentForChildren(),
+                  isClean());
+          unk3300EIHOMDLENMK_ = null;
+        }
+        return unk3300EIHOMDLENMKBuilder_;
+      }
+
+      private java.util.List<emu.grasscutter.net.proto.GCGWaitingCharacterOuterClass.GCGWaitingCharacter> waitingList_ =
+        java.util.Collections.emptyList();
+      private void ensureWaitingListIsMutable() {
+        if (!((bitField0_ & 0x00000002) != 0)) {
+          waitingList_ = new java.util.ArrayList<emu.grasscutter.net.proto.GCGWaitingCharacterOuterClass.GCGWaitingCharacter>(waitingList_);
+          bitField0_ |= 0x00000002;
+         }
+      }
+
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          emu.grasscutter.net.proto.GCGWaitingCharacterOuterClass.GCGWaitingCharacter, emu.grasscutter.net.proto.GCGWaitingCharacterOuterClass.GCGWaitingCharacter.Builder, emu.grasscutter.net.proto.GCGWaitingCharacterOuterClass.GCGWaitingCharacterOrBuilder> waitingListBuilder_;
+
+      /**
+       * <code>repeated .GCGWaitingCharacter waiting_list = 2;</code>
+       */
+      public java.util.List<emu.grasscutter.net.proto.GCGWaitingCharacterOuterClass.GCGWaitingCharacter> getWaitingListList() {
+        if (waitingListBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(waitingList_);
+        } else {
+          return waitingListBuilder_.getMessageList();
+        }
+      }
+      /**
+       * <code>repeated .GCGWaitingCharacter waiting_list = 2;</code>
+       */
+      public int getWaitingListCount() {
+        if (waitingListBuilder_ == null) {
+          return waitingList_.size();
+        } else {
+          return waitingListBuilder_.getCount();
+        }
+      }
+      /**
+       * <code>repeated .GCGWaitingCharacter waiting_list = 2;</code>
+       */
+      public emu.grasscutter.net.proto.GCGWaitingCharacterOuterClass.GCGWaitingCharacter getWaitingList(int index) {
+        if (waitingListBuilder_ == null) {
+          return waitingList_.get(index);
+        } else {
+          return waitingListBuilder_.getMessage(index);
+        }
+      }
+      /**
+       * <code>repeated .GCGWaitingCharacter waiting_list = 2;</code>
+       */
+      public Builder setWaitingList(
+          int index, emu.grasscutter.net.proto.GCGWaitingCharacterOuterClass.GCGWaitingCharacter value) {
+        if (waitingListBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureWaitingListIsMutable();
+          waitingList_.set(index, value);
+          onChanged();
+        } else {
+          waitingListBuilder_.setMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .GCGWaitingCharacter waiting_list = 2;</code>
+       */
+      public Builder setWaitingList(
+          int index, emu.grasscutter.net.proto.GCGWaitingCharacterOuterClass.GCGWaitingCharacter.Builder builderForValue) {
+        if (waitingListBuilder_ == null) {
+          ensureWaitingListIsMutable();
+          waitingList_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          waitingListBuilder_.setMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .GCGWaitingCharacter waiting_list = 2;</code>
+       */
+      public Builder addWaitingList(emu.grasscutter.net.proto.GCGWaitingCharacterOuterClass.GCGWaitingCharacter value) {
+        if (waitingListBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureWaitingListIsMutable();
+          waitingList_.add(value);
+          onChanged();
+        } else {
+          waitingListBuilder_.addMessage(value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .GCGWaitingCharacter waiting_list = 2;</code>
+       */
+      public Builder addWaitingList(
+          int index, emu.grasscutter.net.proto.GCGWaitingCharacterOuterClass.GCGWaitingCharacter value) {
+        if (waitingListBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureWaitingListIsMutable();
+          waitingList_.add(index, value);
+          onChanged();
+        } else {
+          waitingListBuilder_.addMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .GCGWaitingCharacter waiting_list = 2;</code>
+       */
+      public Builder addWaitingList(
+          emu.grasscutter.net.proto.GCGWaitingCharacterOuterClass.GCGWaitingCharacter.Builder builderForValue) {
+        if (waitingListBuilder_ == null) {
+          ensureWaitingListIsMutable();
+          waitingList_.add(builderForValue.build());
+          onChanged();
+        } else {
+          waitingListBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .GCGWaitingCharacter waiting_list = 2;</code>
+       */
+      public Builder addWaitingList(
+          int index, emu.grasscutter.net.proto.GCGWaitingCharacterOuterClass.GCGWaitingCharacter.Builder builderForValue) {
+        if (waitingListBuilder_ == null) {
+          ensureWaitingListIsMutable();
+          waitingList_.add(index, builderForValue.build());
+          onChanged();
+        } else {
+          waitingListBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .GCGWaitingCharacter waiting_list = 2;</code>
+       */
+      public Builder addAllWaitingList(
+          java.lang.Iterable<? extends emu.grasscutter.net.proto.GCGWaitingCharacterOuterClass.GCGWaitingCharacter> values) {
+        if (waitingListBuilder_ == null) {
+          ensureWaitingListIsMutable();
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, waitingList_);
+          onChanged();
+        } else {
+          waitingListBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .GCGWaitingCharacter waiting_list = 2;</code>
+       */
+      public Builder clearWaitingList() {
+        if (waitingListBuilder_ == null) {
+          waitingList_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000002);
+          onChanged();
+        } else {
+          waitingListBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .GCGWaitingCharacter waiting_list = 2;</code>
+       */
+      public Builder removeWaitingList(int index) {
+        if (waitingListBuilder_ == null) {
+          ensureWaitingListIsMutable();
+          waitingList_.remove(index);
+          onChanged();
+        } else {
+          waitingListBuilder_.remove(index);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .GCGWaitingCharacter waiting_list = 2;</code>
+       */
+      public emu.grasscutter.net.proto.GCGWaitingCharacterOuterClass.GCGWaitingCharacter.Builder getWaitingListBuilder(
+          int index) {
+        return getWaitingListFieldBuilder().getBuilder(index);
+      }
+      /**
+       * <code>repeated .GCGWaitingCharacter waiting_list = 2;</code>
+       */
+      public emu.grasscutter.net.proto.GCGWaitingCharacterOuterClass.GCGWaitingCharacterOrBuilder getWaitingListOrBuilder(
+          int index) {
+        if (waitingListBuilder_ == null) {
+          return waitingList_.get(index);  } else {
+          return waitingListBuilder_.getMessageOrBuilder(index);
+        }
+      }
+      /**
+       * <code>repeated .GCGWaitingCharacter waiting_list = 2;</code>
+       */
+      public java.util.List<? extends emu.grasscutter.net.proto.GCGWaitingCharacterOuterClass.GCGWaitingCharacterOrBuilder> 
+           getWaitingListOrBuilderList() {
+        if (waitingListBuilder_ != null) {
+          return waitingListBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(waitingList_);
+        }
+      }
+      /**
+       * <code>repeated .GCGWaitingCharacter waiting_list = 2;</code>
+       */
+      public emu.grasscutter.net.proto.GCGWaitingCharacterOuterClass.GCGWaitingCharacter.Builder addWaitingListBuilder() {
+        return getWaitingListFieldBuilder().addBuilder(
+            emu.grasscutter.net.proto.GCGWaitingCharacterOuterClass.GCGWaitingCharacter.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .GCGWaitingCharacter waiting_list = 2;</code>
+       */
+      public emu.grasscutter.net.proto.GCGWaitingCharacterOuterClass.GCGWaitingCharacter.Builder addWaitingListBuilder(
+          int index) {
+        return getWaitingListFieldBuilder().addBuilder(
+            index, emu.grasscutter.net.proto.GCGWaitingCharacterOuterClass.GCGWaitingCharacter.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .GCGWaitingCharacter waiting_list = 2;</code>
+       */
+      public java.util.List<emu.grasscutter.net.proto.GCGWaitingCharacterOuterClass.GCGWaitingCharacter.Builder> 
+           getWaitingListBuilderList() {
+        return getWaitingListFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          emu.grasscutter.net.proto.GCGWaitingCharacterOuterClass.GCGWaitingCharacter, emu.grasscutter.net.proto.GCGWaitingCharacterOuterClass.GCGWaitingCharacter.Builder, emu.grasscutter.net.proto.GCGWaitingCharacterOuterClass.GCGWaitingCharacterOrBuilder> 
+          getWaitingListFieldBuilder() {
+        if (waitingListBuilder_ == null) {
+          waitingListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+              emu.grasscutter.net.proto.GCGWaitingCharacterOuterClass.GCGWaitingCharacter, emu.grasscutter.net.proto.GCGWaitingCharacterOuterClass.GCGWaitingCharacter.Builder, emu.grasscutter.net.proto.GCGWaitingCharacterOuterClass.GCGWaitingCharacterOrBuilder>(
+                  waitingList_,
+                  ((bitField0_ & 0x00000002) != 0),
+                  getParentForChildren(),
+                  isClean());
+          waitingList_ = null;
+        }
+        return waitingListBuilder_;
+      }
+
+      private int unk3300PBECINKKHND_ ;
+      /**
+       * <code>uint32 Unk3300_PBECINKKHND = 15;</code>
+       * @return The unk3300PBECINKKHND.
+       */
+      @java.lang.Override
+      public int getUnk3300PBECINKKHND() {
+        return unk3300PBECINKKHND_;
+      }
+      /**
+       * <code>uint32 Unk3300_PBECINKKHND = 15;</code>
+       * @param value The unk3300PBECINKKHND to set.
        * @return This builder for chaining.
        */
-      public Builder setDiceCount(int value) {
+      public Builder setUnk3300PBECINKKHND(int value) {
         
-        diceCount_ = value;
+        unk3300PBECINKKHND_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 dice_count = 3;</code>
+       * <code>uint32 Unk3300_PBECINKKHND = 15;</code>
        * @return This builder for chaining.
        */
-      public Builder clearDiceCount() {
+      public Builder clearUnk3300PBECINKKHND() {
         
-        diceCount_ = 0;
+        unk3300PBECINKKHND_ = 0;
         onChanged();
         return this;
       }
 
       private int controllerId_ ;
       /**
-       * <code>uint32 controller_id = 10;</code>
+       * <code>uint32 controller_id = 6;</code>
        * @return The controllerId.
        */
       @java.lang.Override
@@ -2106,7 +2584,7 @@ public final class GCGPlayerFieldOuterClass {
         return controllerId_;
       }
       /**
-       * <code>uint32 controller_id = 10;</code>
+       * <code>uint32 controller_id = 6;</code>
        * @param value The controllerId to set.
        * @return This builder for chaining.
        */
@@ -2117,7 +2595,7 @@ public final class GCGPlayerFieldOuterClass {
         return this;
       }
       /**
-       * <code>uint32 controller_id = 10;</code>
+       * <code>uint32 controller_id = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearControllerId() {
@@ -2127,128 +2605,247 @@ public final class GCGPlayerFieldOuterClass {
         return this;
       }
 
-      private emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone onStageZone_;
+      private emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone unk3300INDJNJJJNKL_;
       private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone, emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.Builder, emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZoneOrBuilder> onStageZoneBuilder_;
+          emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone, emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.Builder, emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZoneOrBuilder> unk3300INDJNJJJNKLBuilder_;
       /**
-       * <code>.GCGZone on_stage_zone = 14;</code>
-       * @return Whether the onStageZone field is set.
+       * <code>.GCGZone Unk3300_INDJNJJJNKL = 11;</code>
+       * @return Whether the unk3300INDJNJJJNKL field is set.
        */
-      public boolean hasOnStageZone() {
-        return onStageZoneBuilder_ != null || onStageZone_ != null;
+      public boolean hasUnk3300INDJNJJJNKL() {
+        return unk3300INDJNJJJNKLBuilder_ != null || unk3300INDJNJJJNKL_ != null;
       }
       /**
-       * <code>.GCGZone on_stage_zone = 14;</code>
-       * @return The onStageZone.
+       * <code>.GCGZone Unk3300_INDJNJJJNKL = 11;</code>
+       * @return The unk3300INDJNJJJNKL.
        */
-      public emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone getOnStageZone() {
-        if (onStageZoneBuilder_ == null) {
-          return onStageZone_ == null ? emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.getDefaultInstance() : onStageZone_;
+      public emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone getUnk3300INDJNJJJNKL() {
+        if (unk3300INDJNJJJNKLBuilder_ == null) {
+          return unk3300INDJNJJJNKL_ == null ? emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.getDefaultInstance() : unk3300INDJNJJJNKL_;
         } else {
-          return onStageZoneBuilder_.getMessage();
+          return unk3300INDJNJJJNKLBuilder_.getMessage();
         }
       }
       /**
-       * <code>.GCGZone on_stage_zone = 14;</code>
+       * <code>.GCGZone Unk3300_INDJNJJJNKL = 11;</code>
        */
-      public Builder setOnStageZone(emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone value) {
-        if (onStageZoneBuilder_ == null) {
+      public Builder setUnk3300INDJNJJJNKL(emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone value) {
+        if (unk3300INDJNJJJNKLBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          onStageZone_ = value;
+          unk3300INDJNJJJNKL_ = value;
           onChanged();
         } else {
-          onStageZoneBuilder_.setMessage(value);
+          unk3300INDJNJJJNKLBuilder_.setMessage(value);
         }
 
         return this;
       }
       /**
-       * <code>.GCGZone on_stage_zone = 14;</code>
+       * <code>.GCGZone Unk3300_INDJNJJJNKL = 11;</code>
        */
-      public Builder setOnStageZone(
+      public Builder setUnk3300INDJNJJJNKL(
           emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.Builder builderForValue) {
-        if (onStageZoneBuilder_ == null) {
-          onStageZone_ = builderForValue.build();
+        if (unk3300INDJNJJJNKLBuilder_ == null) {
+          unk3300INDJNJJJNKL_ = builderForValue.build();
           onChanged();
         } else {
-          onStageZoneBuilder_.setMessage(builderForValue.build());
+          unk3300INDJNJJJNKLBuilder_.setMessage(builderForValue.build());
         }
 
         return this;
       }
       /**
-       * <code>.GCGZone on_stage_zone = 14;</code>
+       * <code>.GCGZone Unk3300_INDJNJJJNKL = 11;</code>
        */
-      public Builder mergeOnStageZone(emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone value) {
-        if (onStageZoneBuilder_ == null) {
-          if (onStageZone_ != null) {
-            onStageZone_ =
-              emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.newBuilder(onStageZone_).mergeFrom(value).buildPartial();
+      public Builder mergeUnk3300INDJNJJJNKL(emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone value) {
+        if (unk3300INDJNJJJNKLBuilder_ == null) {
+          if (unk3300INDJNJJJNKL_ != null) {
+            unk3300INDJNJJJNKL_ =
+              emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.newBuilder(unk3300INDJNJJJNKL_).mergeFrom(value).buildPartial();
           } else {
-            onStageZone_ = value;
+            unk3300INDJNJJJNKL_ = value;
           }
           onChanged();
         } else {
-          onStageZoneBuilder_.mergeFrom(value);
+          unk3300INDJNJJJNKLBuilder_.mergeFrom(value);
         }
 
         return this;
       }
       /**
-       * <code>.GCGZone on_stage_zone = 14;</code>
+       * <code>.GCGZone Unk3300_INDJNJJJNKL = 11;</code>
        */
-      public Builder clearOnStageZone() {
-        if (onStageZoneBuilder_ == null) {
-          onStageZone_ = null;
+      public Builder clearUnk3300INDJNJJJNKL() {
+        if (unk3300INDJNJJJNKLBuilder_ == null) {
+          unk3300INDJNJJJNKL_ = null;
           onChanged();
         } else {
-          onStageZone_ = null;
-          onStageZoneBuilder_ = null;
+          unk3300INDJNJJJNKL_ = null;
+          unk3300INDJNJJJNKLBuilder_ = null;
         }
 
         return this;
       }
       /**
-       * <code>.GCGZone on_stage_zone = 14;</code>
+       * <code>.GCGZone Unk3300_INDJNJJJNKL = 11;</code>
        */
-      public emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.Builder getOnStageZoneBuilder() {
+      public emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.Builder getUnk3300INDJNJJJNKLBuilder() {
         
         onChanged();
-        return getOnStageZoneFieldBuilder().getBuilder();
+        return getUnk3300INDJNJJJNKLFieldBuilder().getBuilder();
       }
       /**
-       * <code>.GCGZone on_stage_zone = 14;</code>
+       * <code>.GCGZone Unk3300_INDJNJJJNKL = 11;</code>
        */
-      public emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZoneOrBuilder getOnStageZoneOrBuilder() {
-        if (onStageZoneBuilder_ != null) {
-          return onStageZoneBuilder_.getMessageOrBuilder();
+      public emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZoneOrBuilder getUnk3300INDJNJJJNKLOrBuilder() {
+        if (unk3300INDJNJJJNKLBuilder_ != null) {
+          return unk3300INDJNJJJNKLBuilder_.getMessageOrBuilder();
         } else {
-          return onStageZone_ == null ?
-              emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.getDefaultInstance() : onStageZone_;
+          return unk3300INDJNJJJNKL_ == null ?
+              emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.getDefaultInstance() : unk3300INDJNJJJNKL_;
         }
       }
       /**
-       * <code>.GCGZone on_stage_zone = 14;</code>
+       * <code>.GCGZone Unk3300_INDJNJJJNKL = 11;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone, emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.Builder, emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZoneOrBuilder> 
-          getOnStageZoneFieldBuilder() {
-        if (onStageZoneBuilder_ == null) {
-          onStageZoneBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+          getUnk3300INDJNJJJNKLFieldBuilder() {
+        if (unk3300INDJNJJJNKLBuilder_ == null) {
+          unk3300INDJNJJJNKLBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
               emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone, emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.Builder, emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZoneOrBuilder>(
-                  getOnStageZone(),
+                  getUnk3300INDJNJJJNKL(),
                   getParentForChildren(),
                   isClean());
-          onStageZone_ = null;
+          unk3300INDJNJJJNKL_ = null;
         }
-        return onStageZoneBuilder_;
+        return unk3300INDJNJJJNKLBuilder_;
+      }
+
+      private emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone unk3300EFNAEFBECHD_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone, emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.Builder, emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZoneOrBuilder> unk3300EFNAEFBECHDBuilder_;
+      /**
+       * <code>.GCGZone Unk3300_EFNAEFBECHD = 4;</code>
+       * @return Whether the unk3300EFNAEFBECHD field is set.
+       */
+      public boolean hasUnk3300EFNAEFBECHD() {
+        return unk3300EFNAEFBECHDBuilder_ != null || unk3300EFNAEFBECHD_ != null;
+      }
+      /**
+       * <code>.GCGZone Unk3300_EFNAEFBECHD = 4;</code>
+       * @return The unk3300EFNAEFBECHD.
+       */
+      public emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone getUnk3300EFNAEFBECHD() {
+        if (unk3300EFNAEFBECHDBuilder_ == null) {
+          return unk3300EFNAEFBECHD_ == null ? emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.getDefaultInstance() : unk3300EFNAEFBECHD_;
+        } else {
+          return unk3300EFNAEFBECHDBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>.GCGZone Unk3300_EFNAEFBECHD = 4;</code>
+       */
+      public Builder setUnk3300EFNAEFBECHD(emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone value) {
+        if (unk3300EFNAEFBECHDBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          unk3300EFNAEFBECHD_ = value;
+          onChanged();
+        } else {
+          unk3300EFNAEFBECHDBuilder_.setMessage(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.GCGZone Unk3300_EFNAEFBECHD = 4;</code>
+       */
+      public Builder setUnk3300EFNAEFBECHD(
+          emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.Builder builderForValue) {
+        if (unk3300EFNAEFBECHDBuilder_ == null) {
+          unk3300EFNAEFBECHD_ = builderForValue.build();
+          onChanged();
+        } else {
+          unk3300EFNAEFBECHDBuilder_.setMessage(builderForValue.build());
+        }
+
+        return this;
+      }
+      /**
+       * <code>.GCGZone Unk3300_EFNAEFBECHD = 4;</code>
+       */
+      public Builder mergeUnk3300EFNAEFBECHD(emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone value) {
+        if (unk3300EFNAEFBECHDBuilder_ == null) {
+          if (unk3300EFNAEFBECHD_ != null) {
+            unk3300EFNAEFBECHD_ =
+              emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.newBuilder(unk3300EFNAEFBECHD_).mergeFrom(value).buildPartial();
+          } else {
+            unk3300EFNAEFBECHD_ = value;
+          }
+          onChanged();
+        } else {
+          unk3300EFNAEFBECHDBuilder_.mergeFrom(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.GCGZone Unk3300_EFNAEFBECHD = 4;</code>
+       */
+      public Builder clearUnk3300EFNAEFBECHD() {
+        if (unk3300EFNAEFBECHDBuilder_ == null) {
+          unk3300EFNAEFBECHD_ = null;
+          onChanged();
+        } else {
+          unk3300EFNAEFBECHD_ = null;
+          unk3300EFNAEFBECHDBuilder_ = null;
+        }
+
+        return this;
+      }
+      /**
+       * <code>.GCGZone Unk3300_EFNAEFBECHD = 4;</code>
+       */
+      public emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.Builder getUnk3300EFNAEFBECHDBuilder() {
+        
+        onChanged();
+        return getUnk3300EFNAEFBECHDFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.GCGZone Unk3300_EFNAEFBECHD = 4;</code>
+       */
+      public emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZoneOrBuilder getUnk3300EFNAEFBECHDOrBuilder() {
+        if (unk3300EFNAEFBECHDBuilder_ != null) {
+          return unk3300EFNAEFBECHDBuilder_.getMessageOrBuilder();
+        } else {
+          return unk3300EFNAEFBECHD_ == null ?
+              emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.getDefaultInstance() : unk3300EFNAEFBECHD_;
+        }
+      }
+      /**
+       * <code>.GCGZone Unk3300_EFNAEFBECHD = 4;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone, emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.Builder, emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZoneOrBuilder> 
+          getUnk3300EFNAEFBECHDFieldBuilder() {
+        if (unk3300EFNAEFBECHDBuilder_ == null) {
+          unk3300EFNAEFBECHDBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone, emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.Builder, emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZoneOrBuilder>(
+                  getUnk3300EFNAEFBECHD(),
+                  getParentForChildren(),
+                  isClean());
+          unk3300EFNAEFBECHD_ = null;
+        }
+        return unk3300EFNAEFBECHDBuilder_;
       }
 
       private boolean isPassed_ ;
       /**
-       * <code>bool is_passed = 7;</code>
+       * <code>bool is_passed = 8;</code>
        * @return The isPassed.
        */
       @java.lang.Override
@@ -2256,7 +2853,7 @@ public final class GCGPlayerFieldOuterClass {
         return isPassed_;
       }
       /**
-       * <code>bool is_passed = 7;</code>
+       * <code>bool is_passed = 8;</code>
        * @param value The isPassed to set.
        * @return This builder for chaining.
        */
@@ -2267,7 +2864,7 @@ public final class GCGPlayerFieldOuterClass {
         return this;
       }
       /**
-       * <code>bool is_passed = 7;</code>
+       * <code>bool is_passed = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsPassed() {
@@ -2275,565 +2872,6 @@ public final class GCGPlayerFieldOuterClass {
         isPassed_ = false;
         onChanged();
         return this;
-      }
-
-      private emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone characterZone_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone, emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.Builder, emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZoneOrBuilder> characterZoneBuilder_;
-      /**
-       * <code>.GCGZone character_zone = 5;</code>
-       * @return Whether the characterZone field is set.
-       */
-      public boolean hasCharacterZone() {
-        return characterZoneBuilder_ != null || characterZone_ != null;
-      }
-      /**
-       * <code>.GCGZone character_zone = 5;</code>
-       * @return The characterZone.
-       */
-      public emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone getCharacterZone() {
-        if (characterZoneBuilder_ == null) {
-          return characterZone_ == null ? emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.getDefaultInstance() : characterZone_;
-        } else {
-          return characterZoneBuilder_.getMessage();
-        }
-      }
-      /**
-       * <code>.GCGZone character_zone = 5;</code>
-       */
-      public Builder setCharacterZone(emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone value) {
-        if (characterZoneBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          characterZone_ = value;
-          onChanged();
-        } else {
-          characterZoneBuilder_.setMessage(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.GCGZone character_zone = 5;</code>
-       */
-      public Builder setCharacterZone(
-          emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.Builder builderForValue) {
-        if (characterZoneBuilder_ == null) {
-          characterZone_ = builderForValue.build();
-          onChanged();
-        } else {
-          characterZoneBuilder_.setMessage(builderForValue.build());
-        }
-
-        return this;
-      }
-      /**
-       * <code>.GCGZone character_zone = 5;</code>
-       */
-      public Builder mergeCharacterZone(emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone value) {
-        if (characterZoneBuilder_ == null) {
-          if (characterZone_ != null) {
-            characterZone_ =
-              emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.newBuilder(characterZone_).mergeFrom(value).buildPartial();
-          } else {
-            characterZone_ = value;
-          }
-          onChanged();
-        } else {
-          characterZoneBuilder_.mergeFrom(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.GCGZone character_zone = 5;</code>
-       */
-      public Builder clearCharacterZone() {
-        if (characterZoneBuilder_ == null) {
-          characterZone_ = null;
-          onChanged();
-        } else {
-          characterZone_ = null;
-          characterZoneBuilder_ = null;
-        }
-
-        return this;
-      }
-      /**
-       * <code>.GCGZone character_zone = 5;</code>
-       */
-      public emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.Builder getCharacterZoneBuilder() {
-        
-        onChanged();
-        return getCharacterZoneFieldBuilder().getBuilder();
-      }
-      /**
-       * <code>.GCGZone character_zone = 5;</code>
-       */
-      public emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZoneOrBuilder getCharacterZoneOrBuilder() {
-        if (characterZoneBuilder_ != null) {
-          return characterZoneBuilder_.getMessageOrBuilder();
-        } else {
-          return characterZone_ == null ?
-              emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.getDefaultInstance() : characterZone_;
-        }
-      }
-      /**
-       * <code>.GCGZone character_zone = 5;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone, emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.Builder, emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZoneOrBuilder> 
-          getCharacterZoneFieldBuilder() {
-        if (characterZoneBuilder_ == null) {
-          characterZoneBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone, emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.Builder, emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZoneOrBuilder>(
-                  getCharacterZone(),
-                  getParentForChildren(),
-                  isClean());
-          characterZone_ = null;
-        }
-        return characterZoneBuilder_;
-      }
-
-      private int onStageCharacterGuid_ ;
-      /**
-       * <code>uint32 on_stage_character_guid = 6;</code>
-       * @return The onStageCharacterGuid.
-       */
-      @java.lang.Override
-      public int getOnStageCharacterGuid() {
-        return onStageCharacterGuid_;
-      }
-      /**
-       * <code>uint32 on_stage_character_guid = 6;</code>
-       * @param value The onStageCharacterGuid to set.
-       * @return This builder for chaining.
-       */
-      public Builder setOnStageCharacterGuid(int value) {
-        
-        onStageCharacterGuid_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 on_stage_character_guid = 6;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearOnStageCharacterGuid() {
-        
-        onStageCharacterGuid_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone assistZone_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone, emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.Builder, emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZoneOrBuilder> assistZoneBuilder_;
-      /**
-       * <code>.GCGZone assist_zone = 15;</code>
-       * @return Whether the assistZone field is set.
-       */
-      public boolean hasAssistZone() {
-        return assistZoneBuilder_ != null || assistZone_ != null;
-      }
-      /**
-       * <code>.GCGZone assist_zone = 15;</code>
-       * @return The assistZone.
-       */
-      public emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone getAssistZone() {
-        if (assistZoneBuilder_ == null) {
-          return assistZone_ == null ? emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.getDefaultInstance() : assistZone_;
-        } else {
-          return assistZoneBuilder_.getMessage();
-        }
-      }
-      /**
-       * <code>.GCGZone assist_zone = 15;</code>
-       */
-      public Builder setAssistZone(emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone value) {
-        if (assistZoneBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          assistZone_ = value;
-          onChanged();
-        } else {
-          assistZoneBuilder_.setMessage(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.GCGZone assist_zone = 15;</code>
-       */
-      public Builder setAssistZone(
-          emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.Builder builderForValue) {
-        if (assistZoneBuilder_ == null) {
-          assistZone_ = builderForValue.build();
-          onChanged();
-        } else {
-          assistZoneBuilder_.setMessage(builderForValue.build());
-        }
-
-        return this;
-      }
-      /**
-       * <code>.GCGZone assist_zone = 15;</code>
-       */
-      public Builder mergeAssistZone(emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone value) {
-        if (assistZoneBuilder_ == null) {
-          if (assistZone_ != null) {
-            assistZone_ =
-              emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.newBuilder(assistZone_).mergeFrom(value).buildPartial();
-          } else {
-            assistZone_ = value;
-          }
-          onChanged();
-        } else {
-          assistZoneBuilder_.mergeFrom(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.GCGZone assist_zone = 15;</code>
-       */
-      public Builder clearAssistZone() {
-        if (assistZoneBuilder_ == null) {
-          assistZone_ = null;
-          onChanged();
-        } else {
-          assistZone_ = null;
-          assistZoneBuilder_ = null;
-        }
-
-        return this;
-      }
-      /**
-       * <code>.GCGZone assist_zone = 15;</code>
-       */
-      public emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.Builder getAssistZoneBuilder() {
-        
-        onChanged();
-        return getAssistZoneFieldBuilder().getBuilder();
-      }
-      /**
-       * <code>.GCGZone assist_zone = 15;</code>
-       */
-      public emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZoneOrBuilder getAssistZoneOrBuilder() {
-        if (assistZoneBuilder_ != null) {
-          return assistZoneBuilder_.getMessageOrBuilder();
-        } else {
-          return assistZone_ == null ?
-              emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.getDefaultInstance() : assistZone_;
-        }
-      }
-      /**
-       * <code>.GCGZone assist_zone = 15;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone, emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.Builder, emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZoneOrBuilder> 
-          getAssistZoneFieldBuilder() {
-        if (assistZoneBuilder_ == null) {
-          assistZoneBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone, emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.Builder, emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZoneOrBuilder>(
-                  getAssistZone(),
-                  getParentForChildren(),
-                  isClean());
-          assistZone_ = null;
-        }
-        return assistZoneBuilder_;
-      }
-
-      private int deckCardNum_ ;
-      /**
-       * <code>uint32 deck_card_num = 13;</code>
-       * @return The deckCardNum.
-       */
-      @java.lang.Override
-      public int getDeckCardNum() {
-        return deckCardNum_;
-      }
-      /**
-       * <code>uint32 deck_card_num = 13;</code>
-       * @param value The deckCardNum to set.
-       * @return This builder for chaining.
-       */
-      public Builder setDeckCardNum(int value) {
-        
-        deckCardNum_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 deck_card_num = 13;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearDeckCardNum() {
-        
-        deckCardNum_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private java.util.List<java.lang.Integer> diceSideList_ =
-        java.util.Collections.emptyList();
-      private void ensureDiceSideListIsMutable() {
-        if (!((bitField0_ & 0x00000002) != 0)) {
-          diceSideList_ = new java.util.ArrayList<java.lang.Integer>(diceSideList_);
-          bitField0_ |= 0x00000002;
-        }
-      }
-      /**
-       * <code>repeated .GCGDiceSideType dice_side_list = 11;</code>
-       * @return A list containing the diceSideList.
-       */
-      public java.util.List<emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType> getDiceSideListList() {
-        return new com.google.protobuf.Internal.ListAdapter<
-            java.lang.Integer, emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType>(diceSideList_, diceSideList_converter_);
-      }
-      /**
-       * <code>repeated .GCGDiceSideType dice_side_list = 11;</code>
-       * @return The count of diceSideList.
-       */
-      public int getDiceSideListCount() {
-        return diceSideList_.size();
-      }
-      /**
-       * <code>repeated .GCGDiceSideType dice_side_list = 11;</code>
-       * @param index The index of the element to return.
-       * @return The diceSideList at the given index.
-       */
-      public emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType getDiceSideList(int index) {
-        return diceSideList_converter_.convert(diceSideList_.get(index));
-      }
-      /**
-       * <code>repeated .GCGDiceSideType dice_side_list = 11;</code>
-       * @param index The index to set the value at.
-       * @param value The diceSideList to set.
-       * @return This builder for chaining.
-       */
-      public Builder setDiceSideList(
-          int index, emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType value) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        ensureDiceSideListIsMutable();
-        diceSideList_.set(index, value.getNumber());
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated .GCGDiceSideType dice_side_list = 11;</code>
-       * @param value The diceSideList to add.
-       * @return This builder for chaining.
-       */
-      public Builder addDiceSideList(emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType value) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        ensureDiceSideListIsMutable();
-        diceSideList_.add(value.getNumber());
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated .GCGDiceSideType dice_side_list = 11;</code>
-       * @param values The diceSideList to add.
-       * @return This builder for chaining.
-       */
-      public Builder addAllDiceSideList(
-          java.lang.Iterable<? extends emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType> values) {
-        ensureDiceSideListIsMutable();
-        for (emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType value : values) {
-          diceSideList_.add(value.getNumber());
-        }
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated .GCGDiceSideType dice_side_list = 11;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearDiceSideList() {
-        diceSideList_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x00000002);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated .GCGDiceSideType dice_side_list = 11;</code>
-       * @return A list containing the enum numeric values on the wire for diceSideList.
-       */
-      public java.util.List<java.lang.Integer>
-      getDiceSideListValueList() {
-        return java.util.Collections.unmodifiableList(diceSideList_);
-      }
-      /**
-       * <code>repeated .GCGDiceSideType dice_side_list = 11;</code>
-       * @param index The index of the value to return.
-       * @return The enum numeric value on the wire of diceSideList at the given index.
-       */
-      public int getDiceSideListValue(int index) {
-        return diceSideList_.get(index);
-      }
-      /**
-       * <code>repeated .GCGDiceSideType dice_side_list = 11;</code>
-       * @param index The index of the value to return.
-       * @return The enum numeric value on the wire of diceSideList at the given index.
-       * @return This builder for chaining.
-       */
-      public Builder setDiceSideListValue(
-          int index, int value) {
-        ensureDiceSideListIsMutable();
-        diceSideList_.set(index, value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated .GCGDiceSideType dice_side_list = 11;</code>
-       * @param value The enum numeric value on the wire for diceSideList to add.
-       * @return This builder for chaining.
-       */
-      public Builder addDiceSideListValue(int value) {
-        ensureDiceSideListIsMutable();
-        diceSideList_.add(value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated .GCGDiceSideType dice_side_list = 11;</code>
-       * @param values The enum numeric values on the wire for diceSideList to add.
-       * @return This builder for chaining.
-       */
-      public Builder addAllDiceSideListValue(
-          java.lang.Iterable<java.lang.Integer> values) {
-        ensureDiceSideListIsMutable();
-        for (int value : values) {
-          diceSideList_.add(value);
-        }
-        onChanged();
-        return this;
-      }
-
-      private emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone handZone_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone, emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.Builder, emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZoneOrBuilder> handZoneBuilder_;
-      /**
-       * <code>.GCGZone hand_zone = 9;</code>
-       * @return Whether the handZone field is set.
-       */
-      public boolean hasHandZone() {
-        return handZoneBuilder_ != null || handZone_ != null;
-      }
-      /**
-       * <code>.GCGZone hand_zone = 9;</code>
-       * @return The handZone.
-       */
-      public emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone getHandZone() {
-        if (handZoneBuilder_ == null) {
-          return handZone_ == null ? emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.getDefaultInstance() : handZone_;
-        } else {
-          return handZoneBuilder_.getMessage();
-        }
-      }
-      /**
-       * <code>.GCGZone hand_zone = 9;</code>
-       */
-      public Builder setHandZone(emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone value) {
-        if (handZoneBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          handZone_ = value;
-          onChanged();
-        } else {
-          handZoneBuilder_.setMessage(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.GCGZone hand_zone = 9;</code>
-       */
-      public Builder setHandZone(
-          emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.Builder builderForValue) {
-        if (handZoneBuilder_ == null) {
-          handZone_ = builderForValue.build();
-          onChanged();
-        } else {
-          handZoneBuilder_.setMessage(builderForValue.build());
-        }
-
-        return this;
-      }
-      /**
-       * <code>.GCGZone hand_zone = 9;</code>
-       */
-      public Builder mergeHandZone(emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone value) {
-        if (handZoneBuilder_ == null) {
-          if (handZone_ != null) {
-            handZone_ =
-              emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.newBuilder(handZone_).mergeFrom(value).buildPartial();
-          } else {
-            handZone_ = value;
-          }
-          onChanged();
-        } else {
-          handZoneBuilder_.mergeFrom(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.GCGZone hand_zone = 9;</code>
-       */
-      public Builder clearHandZone() {
-        if (handZoneBuilder_ == null) {
-          handZone_ = null;
-          onChanged();
-        } else {
-          handZone_ = null;
-          handZoneBuilder_ = null;
-        }
-
-        return this;
-      }
-      /**
-       * <code>.GCGZone hand_zone = 9;</code>
-       */
-      public emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.Builder getHandZoneBuilder() {
-        
-        onChanged();
-        return getHandZoneFieldBuilder().getBuilder();
-      }
-      /**
-       * <code>.GCGZone hand_zone = 9;</code>
-       */
-      public emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZoneOrBuilder getHandZoneOrBuilder() {
-        if (handZoneBuilder_ != null) {
-          return handZoneBuilder_.getMessageOrBuilder();
-        } else {
-          return handZone_ == null ?
-              emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.getDefaultInstance() : handZone_;
-        }
-      }
-      /**
-       * <code>.GCGZone hand_zone = 9;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone, emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.Builder, emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZoneOrBuilder> 
-          getHandZoneFieldBuilder() {
-        if (handZoneBuilder_ == null) {
-          handZoneBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone, emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.Builder, emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZoneOrBuilder>(
-                  getHandZone(),
-                  getParentForChildren(),
-                  isClean());
-          handZone_ = null;
-        }
-        return handZoneBuilder_;
       }
 
       private java.util.List<emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntention> intentionList_ =
@@ -2849,7 +2887,7 @@ public final class GCGPlayerFieldOuterClass {
           emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntention, emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntention.Builder, emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntentionOrBuilder> intentionListBuilder_;
 
       /**
-       * <code>repeated .GCGPVEIntention intention_list = 1192;</code>
+       * <code>repeated .GCGPVEIntention intention_list = 304;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntention> getIntentionListList() {
         if (intentionListBuilder_ == null) {
@@ -2859,7 +2897,7 @@ public final class GCGPlayerFieldOuterClass {
         }
       }
       /**
-       * <code>repeated .GCGPVEIntention intention_list = 1192;</code>
+       * <code>repeated .GCGPVEIntention intention_list = 304;</code>
        */
       public int getIntentionListCount() {
         if (intentionListBuilder_ == null) {
@@ -2869,7 +2907,7 @@ public final class GCGPlayerFieldOuterClass {
         }
       }
       /**
-       * <code>repeated .GCGPVEIntention intention_list = 1192;</code>
+       * <code>repeated .GCGPVEIntention intention_list = 304;</code>
        */
       public emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntention getIntentionList(int index) {
         if (intentionListBuilder_ == null) {
@@ -2879,7 +2917,7 @@ public final class GCGPlayerFieldOuterClass {
         }
       }
       /**
-       * <code>repeated .GCGPVEIntention intention_list = 1192;</code>
+       * <code>repeated .GCGPVEIntention intention_list = 304;</code>
        */
       public Builder setIntentionList(
           int index, emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntention value) {
@@ -2896,7 +2934,7 @@ public final class GCGPlayerFieldOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GCGPVEIntention intention_list = 1192;</code>
+       * <code>repeated .GCGPVEIntention intention_list = 304;</code>
        */
       public Builder setIntentionList(
           int index, emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntention.Builder builderForValue) {
@@ -2910,7 +2948,7 @@ public final class GCGPlayerFieldOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GCGPVEIntention intention_list = 1192;</code>
+       * <code>repeated .GCGPVEIntention intention_list = 304;</code>
        */
       public Builder addIntentionList(emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntention value) {
         if (intentionListBuilder_ == null) {
@@ -2926,7 +2964,7 @@ public final class GCGPlayerFieldOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GCGPVEIntention intention_list = 1192;</code>
+       * <code>repeated .GCGPVEIntention intention_list = 304;</code>
        */
       public Builder addIntentionList(
           int index, emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntention value) {
@@ -2943,7 +2981,7 @@ public final class GCGPlayerFieldOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GCGPVEIntention intention_list = 1192;</code>
+       * <code>repeated .GCGPVEIntention intention_list = 304;</code>
        */
       public Builder addIntentionList(
           emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntention.Builder builderForValue) {
@@ -2957,7 +2995,7 @@ public final class GCGPlayerFieldOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GCGPVEIntention intention_list = 1192;</code>
+       * <code>repeated .GCGPVEIntention intention_list = 304;</code>
        */
       public Builder addIntentionList(
           int index, emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntention.Builder builderForValue) {
@@ -2971,7 +3009,7 @@ public final class GCGPlayerFieldOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GCGPVEIntention intention_list = 1192;</code>
+       * <code>repeated .GCGPVEIntention intention_list = 304;</code>
        */
       public Builder addAllIntentionList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntention> values) {
@@ -2986,7 +3024,7 @@ public final class GCGPlayerFieldOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GCGPVEIntention intention_list = 1192;</code>
+       * <code>repeated .GCGPVEIntention intention_list = 304;</code>
        */
       public Builder clearIntentionList() {
         if (intentionListBuilder_ == null) {
@@ -2999,7 +3037,7 @@ public final class GCGPlayerFieldOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GCGPVEIntention intention_list = 1192;</code>
+       * <code>repeated .GCGPVEIntention intention_list = 304;</code>
        */
       public Builder removeIntentionList(int index) {
         if (intentionListBuilder_ == null) {
@@ -3012,14 +3050,14 @@ public final class GCGPlayerFieldOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GCGPVEIntention intention_list = 1192;</code>
+       * <code>repeated .GCGPVEIntention intention_list = 304;</code>
        */
       public emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntention.Builder getIntentionListBuilder(
           int index) {
         return getIntentionListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .GCGPVEIntention intention_list = 1192;</code>
+       * <code>repeated .GCGPVEIntention intention_list = 304;</code>
        */
       public emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntentionOrBuilder getIntentionListOrBuilder(
           int index) {
@@ -3029,7 +3067,7 @@ public final class GCGPlayerFieldOuterClass {
         }
       }
       /**
-       * <code>repeated .GCGPVEIntention intention_list = 1192;</code>
+       * <code>repeated .GCGPVEIntention intention_list = 304;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntentionOrBuilder> 
            getIntentionListOrBuilderList() {
@@ -3040,14 +3078,14 @@ public final class GCGPlayerFieldOuterClass {
         }
       }
       /**
-       * <code>repeated .GCGPVEIntention intention_list = 1192;</code>
+       * <code>repeated .GCGPVEIntention intention_list = 304;</code>
        */
       public emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntention.Builder addIntentionListBuilder() {
         return getIntentionListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntention.getDefaultInstance());
       }
       /**
-       * <code>repeated .GCGPVEIntention intention_list = 1192;</code>
+       * <code>repeated .GCGPVEIntention intention_list = 304;</code>
        */
       public emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntention.Builder addIntentionListBuilder(
           int index) {
@@ -3055,7 +3093,7 @@ public final class GCGPlayerFieldOuterClass {
             index, emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntention.getDefaultInstance());
       }
       /**
-       * <code>repeated .GCGPVEIntention intention_list = 1192;</code>
+       * <code>repeated .GCGPVEIntention intention_list = 304;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntention.Builder> 
            getIntentionListBuilderList() {
@@ -3076,244 +3114,206 @@ public final class GCGPlayerFieldOuterClass {
         return intentionListBuilder_;
       }
 
-      private java.util.List<emu.grasscutter.net.proto.GCGWaitingCharacterOuterClass.GCGWaitingCharacter> waitingList_ =
+      private java.util.List<java.lang.Integer> diceSideList_ =
         java.util.Collections.emptyList();
-      private void ensureWaitingListIsMutable() {
+      private void ensureDiceSideListIsMutable() {
         if (!((bitField0_ & 0x00000008) != 0)) {
-          waitingList_ = new java.util.ArrayList<emu.grasscutter.net.proto.GCGWaitingCharacterOuterClass.GCGWaitingCharacter>(waitingList_);
+          diceSideList_ = new java.util.ArrayList<java.lang.Integer>(diceSideList_);
           bitField0_ |= 0x00000008;
-         }
+        }
+      }
+      /**
+       * <code>repeated .GCGDiceSideType dice_side_list = 13;</code>
+       * @return A list containing the diceSideList.
+       */
+      public java.util.List<emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType> getDiceSideListList() {
+        return new com.google.protobuf.Internal.ListAdapter<
+            java.lang.Integer, emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType>(diceSideList_, diceSideList_converter_);
+      }
+      /**
+       * <code>repeated .GCGDiceSideType dice_side_list = 13;</code>
+       * @return The count of diceSideList.
+       */
+      public int getDiceSideListCount() {
+        return diceSideList_.size();
+      }
+      /**
+       * <code>repeated .GCGDiceSideType dice_side_list = 13;</code>
+       * @param index The index of the element to return.
+       * @return The diceSideList at the given index.
+       */
+      public emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType getDiceSideList(int index) {
+        return diceSideList_converter_.convert(diceSideList_.get(index));
+      }
+      /**
+       * <code>repeated .GCGDiceSideType dice_side_list = 13;</code>
+       * @param index The index to set the value at.
+       * @param value The diceSideList to set.
+       * @return This builder for chaining.
+       */
+      public Builder setDiceSideList(
+          int index, emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        ensureDiceSideListIsMutable();
+        diceSideList_.set(index, value.getNumber());
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated .GCGDiceSideType dice_side_list = 13;</code>
+       * @param value The diceSideList to add.
+       * @return This builder for chaining.
+       */
+      public Builder addDiceSideList(emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        ensureDiceSideListIsMutable();
+        diceSideList_.add(value.getNumber());
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated .GCGDiceSideType dice_side_list = 13;</code>
+       * @param values The diceSideList to add.
+       * @return This builder for chaining.
+       */
+      public Builder addAllDiceSideList(
+          java.lang.Iterable<? extends emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType> values) {
+        ensureDiceSideListIsMutable();
+        for (emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType value : values) {
+          diceSideList_.add(value.getNumber());
+        }
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated .GCGDiceSideType dice_side_list = 13;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearDiceSideList() {
+        diceSideList_ = java.util.Collections.emptyList();
+        bitField0_ = (bitField0_ & ~0x00000008);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated .GCGDiceSideType dice_side_list = 13;</code>
+       * @return A list containing the enum numeric values on the wire for diceSideList.
+       */
+      public java.util.List<java.lang.Integer>
+      getDiceSideListValueList() {
+        return java.util.Collections.unmodifiableList(diceSideList_);
+      }
+      /**
+       * <code>repeated .GCGDiceSideType dice_side_list = 13;</code>
+       * @param index The index of the value to return.
+       * @return The enum numeric value on the wire of diceSideList at the given index.
+       */
+      public int getDiceSideListValue(int index) {
+        return diceSideList_.get(index);
+      }
+      /**
+       * <code>repeated .GCGDiceSideType dice_side_list = 13;</code>
+       * @param index The index of the value to return.
+       * @return The enum numeric value on the wire of diceSideList at the given index.
+       * @return This builder for chaining.
+       */
+      public Builder setDiceSideListValue(
+          int index, int value) {
+        ensureDiceSideListIsMutable();
+        diceSideList_.set(index, value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated .GCGDiceSideType dice_side_list = 13;</code>
+       * @param value The enum numeric value on the wire for diceSideList to add.
+       * @return This builder for chaining.
+       */
+      public Builder addDiceSideListValue(int value) {
+        ensureDiceSideListIsMutable();
+        diceSideList_.add(value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated .GCGDiceSideType dice_side_list = 13;</code>
+       * @param values The enum numeric values on the wire for diceSideList to add.
+       * @return This builder for chaining.
+       */
+      public Builder addAllDiceSideListValue(
+          java.lang.Iterable<java.lang.Integer> values) {
+        ensureDiceSideListIsMutable();
+        for (int value : values) {
+          diceSideList_.add(value);
+        }
+        onChanged();
+        return this;
       }
 
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.GCGWaitingCharacterOuterClass.GCGWaitingCharacter, emu.grasscutter.net.proto.GCGWaitingCharacterOuterClass.GCGWaitingCharacter.Builder, emu.grasscutter.net.proto.GCGWaitingCharacterOuterClass.GCGWaitingCharacterOrBuilder> waitingListBuilder_;
+      private int unk3300FJNPFBIHFGD_ ;
+      /**
+       * <code>uint32 Unk3300_FJNPFBIHFGD = 3;</code>
+       * @return The unk3300FJNPFBIHFGD.
+       */
+      @java.lang.Override
+      public int getUnk3300FJNPFBIHFGD() {
+        return unk3300FJNPFBIHFGD_;
+      }
+      /**
+       * <code>uint32 Unk3300_FJNPFBIHFGD = 3;</code>
+       * @param value The unk3300FJNPFBIHFGD to set.
+       * @return This builder for chaining.
+       */
+      public Builder setUnk3300FJNPFBIHFGD(int value) {
+        
+        unk3300FJNPFBIHFGD_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 Unk3300_FJNPFBIHFGD = 3;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearUnk3300FJNPFBIHFGD() {
+        
+        unk3300FJNPFBIHFGD_ = 0;
+        onChanged();
+        return this;
+      }
 
+      private int unk3300GLNIFLOKBPM_ ;
       /**
-       * <code>repeated .GCGWaitingCharacter waiting_list = 4;</code>
+       * <code>uint32 Unk3300_GLNIFLOKBPM = 14;</code>
+       * @return The unk3300GLNIFLOKBPM.
        */
-      public java.util.List<emu.grasscutter.net.proto.GCGWaitingCharacterOuterClass.GCGWaitingCharacter> getWaitingListList() {
-        if (waitingListBuilder_ == null) {
-          return java.util.Collections.unmodifiableList(waitingList_);
-        } else {
-          return waitingListBuilder_.getMessageList();
-        }
+      @java.lang.Override
+      public int getUnk3300GLNIFLOKBPM() {
+        return unk3300GLNIFLOKBPM_;
       }
       /**
-       * <code>repeated .GCGWaitingCharacter waiting_list = 4;</code>
+       * <code>uint32 Unk3300_GLNIFLOKBPM = 14;</code>
+       * @param value The unk3300GLNIFLOKBPM to set.
+       * @return This builder for chaining.
        */
-      public int getWaitingListCount() {
-        if (waitingListBuilder_ == null) {
-          return waitingList_.size();
-        } else {
-          return waitingListBuilder_.getCount();
-        }
-      }
-      /**
-       * <code>repeated .GCGWaitingCharacter waiting_list = 4;</code>
-       */
-      public emu.grasscutter.net.proto.GCGWaitingCharacterOuterClass.GCGWaitingCharacter getWaitingList(int index) {
-        if (waitingListBuilder_ == null) {
-          return waitingList_.get(index);
-        } else {
-          return waitingListBuilder_.getMessage(index);
-        }
-      }
-      /**
-       * <code>repeated .GCGWaitingCharacter waiting_list = 4;</code>
-       */
-      public Builder setWaitingList(
-          int index, emu.grasscutter.net.proto.GCGWaitingCharacterOuterClass.GCGWaitingCharacter value) {
-        if (waitingListBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureWaitingListIsMutable();
-          waitingList_.set(index, value);
-          onChanged();
-        } else {
-          waitingListBuilder_.setMessage(index, value);
-        }
+      public Builder setUnk3300GLNIFLOKBPM(int value) {
+        
+        unk3300GLNIFLOKBPM_ = value;
+        onChanged();
         return this;
       }
       /**
-       * <code>repeated .GCGWaitingCharacter waiting_list = 4;</code>
+       * <code>uint32 Unk3300_GLNIFLOKBPM = 14;</code>
+       * @return This builder for chaining.
        */
-      public Builder setWaitingList(
-          int index, emu.grasscutter.net.proto.GCGWaitingCharacterOuterClass.GCGWaitingCharacter.Builder builderForValue) {
-        if (waitingListBuilder_ == null) {
-          ensureWaitingListIsMutable();
-          waitingList_.set(index, builderForValue.build());
-          onChanged();
-        } else {
-          waitingListBuilder_.setMessage(index, builderForValue.build());
-        }
+      public Builder clearUnk3300GLNIFLOKBPM() {
+        
+        unk3300GLNIFLOKBPM_ = 0;
+        onChanged();
         return this;
-      }
-      /**
-       * <code>repeated .GCGWaitingCharacter waiting_list = 4;</code>
-       */
-      public Builder addWaitingList(emu.grasscutter.net.proto.GCGWaitingCharacterOuterClass.GCGWaitingCharacter value) {
-        if (waitingListBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureWaitingListIsMutable();
-          waitingList_.add(value);
-          onChanged();
-        } else {
-          waitingListBuilder_.addMessage(value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .GCGWaitingCharacter waiting_list = 4;</code>
-       */
-      public Builder addWaitingList(
-          int index, emu.grasscutter.net.proto.GCGWaitingCharacterOuterClass.GCGWaitingCharacter value) {
-        if (waitingListBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureWaitingListIsMutable();
-          waitingList_.add(index, value);
-          onChanged();
-        } else {
-          waitingListBuilder_.addMessage(index, value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .GCGWaitingCharacter waiting_list = 4;</code>
-       */
-      public Builder addWaitingList(
-          emu.grasscutter.net.proto.GCGWaitingCharacterOuterClass.GCGWaitingCharacter.Builder builderForValue) {
-        if (waitingListBuilder_ == null) {
-          ensureWaitingListIsMutable();
-          waitingList_.add(builderForValue.build());
-          onChanged();
-        } else {
-          waitingListBuilder_.addMessage(builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .GCGWaitingCharacter waiting_list = 4;</code>
-       */
-      public Builder addWaitingList(
-          int index, emu.grasscutter.net.proto.GCGWaitingCharacterOuterClass.GCGWaitingCharacter.Builder builderForValue) {
-        if (waitingListBuilder_ == null) {
-          ensureWaitingListIsMutable();
-          waitingList_.add(index, builderForValue.build());
-          onChanged();
-        } else {
-          waitingListBuilder_.addMessage(index, builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .GCGWaitingCharacter waiting_list = 4;</code>
-       */
-      public Builder addAllWaitingList(
-          java.lang.Iterable<? extends emu.grasscutter.net.proto.GCGWaitingCharacterOuterClass.GCGWaitingCharacter> values) {
-        if (waitingListBuilder_ == null) {
-          ensureWaitingListIsMutable();
-          com.google.protobuf.AbstractMessageLite.Builder.addAll(
-              values, waitingList_);
-          onChanged();
-        } else {
-          waitingListBuilder_.addAllMessages(values);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .GCGWaitingCharacter waiting_list = 4;</code>
-       */
-      public Builder clearWaitingList() {
-        if (waitingListBuilder_ == null) {
-          waitingList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000008);
-          onChanged();
-        } else {
-          waitingListBuilder_.clear();
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .GCGWaitingCharacter waiting_list = 4;</code>
-       */
-      public Builder removeWaitingList(int index) {
-        if (waitingListBuilder_ == null) {
-          ensureWaitingListIsMutable();
-          waitingList_.remove(index);
-          onChanged();
-        } else {
-          waitingListBuilder_.remove(index);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .GCGWaitingCharacter waiting_list = 4;</code>
-       */
-      public emu.grasscutter.net.proto.GCGWaitingCharacterOuterClass.GCGWaitingCharacter.Builder getWaitingListBuilder(
-          int index) {
-        return getWaitingListFieldBuilder().getBuilder(index);
-      }
-      /**
-       * <code>repeated .GCGWaitingCharacter waiting_list = 4;</code>
-       */
-      public emu.grasscutter.net.proto.GCGWaitingCharacterOuterClass.GCGWaitingCharacterOrBuilder getWaitingListOrBuilder(
-          int index) {
-        if (waitingListBuilder_ == null) {
-          return waitingList_.get(index);  } else {
-          return waitingListBuilder_.getMessageOrBuilder(index);
-        }
-      }
-      /**
-       * <code>repeated .GCGWaitingCharacter waiting_list = 4;</code>
-       */
-      public java.util.List<? extends emu.grasscutter.net.proto.GCGWaitingCharacterOuterClass.GCGWaitingCharacterOrBuilder> 
-           getWaitingListOrBuilderList() {
-        if (waitingListBuilder_ != null) {
-          return waitingListBuilder_.getMessageOrBuilderList();
-        } else {
-          return java.util.Collections.unmodifiableList(waitingList_);
-        }
-      }
-      /**
-       * <code>repeated .GCGWaitingCharacter waiting_list = 4;</code>
-       */
-      public emu.grasscutter.net.proto.GCGWaitingCharacterOuterClass.GCGWaitingCharacter.Builder addWaitingListBuilder() {
-        return getWaitingListFieldBuilder().addBuilder(
-            emu.grasscutter.net.proto.GCGWaitingCharacterOuterClass.GCGWaitingCharacter.getDefaultInstance());
-      }
-      /**
-       * <code>repeated .GCGWaitingCharacter waiting_list = 4;</code>
-       */
-      public emu.grasscutter.net.proto.GCGWaitingCharacterOuterClass.GCGWaitingCharacter.Builder addWaitingListBuilder(
-          int index) {
-        return getWaitingListFieldBuilder().addBuilder(
-            index, emu.grasscutter.net.proto.GCGWaitingCharacterOuterClass.GCGWaitingCharacter.getDefaultInstance());
-      }
-      /**
-       * <code>repeated .GCGWaitingCharacter waiting_list = 4;</code>
-       */
-      public java.util.List<emu.grasscutter.net.proto.GCGWaitingCharacterOuterClass.GCGWaitingCharacter.Builder> 
-           getWaitingListBuilderList() {
-        return getWaitingListFieldBuilder().getBuilderList();
-      }
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.GCGWaitingCharacterOuterClass.GCGWaitingCharacter, emu.grasscutter.net.proto.GCGWaitingCharacterOuterClass.GCGWaitingCharacter.Builder, emu.grasscutter.net.proto.GCGWaitingCharacterOuterClass.GCGWaitingCharacterOrBuilder> 
-          getWaitingListFieldBuilder() {
-        if (waitingListBuilder_ == null) {
-          waitingListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              emu.grasscutter.net.proto.GCGWaitingCharacterOuterClass.GCGWaitingCharacter, emu.grasscutter.net.proto.GCGWaitingCharacterOuterClass.GCGWaitingCharacter.Builder, emu.grasscutter.net.proto.GCGWaitingCharacterOuterClass.GCGWaitingCharacterOrBuilder>(
-                  waitingList_,
-                  ((bitField0_ & 0x00000008) != 0),
-                  getParentForChildren(),
-                  isClean());
-          waitingList_ = null;
-        }
-        return waitingListBuilder_;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -3389,24 +3389,25 @@ public final class GCGPlayerFieldOuterClass {
     java.lang.String[] descriptorData = {
       "\n\024GCGPlayerField.proto\032\025GCGDiceSideType." +
       "proto\032\025GCGPVEIntention.proto\032\031GCGWaiting" +
-      "Character.proto\032\rGCGZone.proto\"\360\004\n\016GCGPl" +
-      "ayerField\022;\n\017modify_zone_map\030\002 \003(\0132\".GCG" +
-      "PlayerField.ModifyZoneMapEntry\022\032\n\021cur_wa" +
-      "iting_index\030\377\002 \001(\r\022\035\n\013summon_zone\030\001 \001(\0132" +
-      "\010.GCGZone\022\025\n\rfield_show_id\030\010 \001(\r\022\031\n\021card" +
-      "_back_show_id\030\014 \001(\r\022\022\n\ndice_count\030\003 \001(\r\022" +
-      "\025\n\rcontroller_id\030\n \001(\r\022\037\n\ron_stage_zone\030" +
-      "\016 \001(\0132\010.GCGZone\022\021\n\tis_passed\030\007 \001(\010\022 \n\016ch" +
-      "aracter_zone\030\005 \001(\0132\010.GCGZone\022\037\n\027on_stage" +
-      "_character_guid\030\006 \001(\r\022\035\n\013assist_zone\030\017 \001" +
-      "(\0132\010.GCGZone\022\025\n\rdeck_card_num\030\r \001(\r\022(\n\016d" +
-      "ice_side_list\030\013 \003(\0162\020.GCGDiceSideType\022\033\n" +
-      "\thand_zone\030\t \001(\0132\010.GCGZone\022)\n\016intention_" +
-      "list\030\250\t \003(\0132\020.GCGPVEIntention\022*\n\014waiting" +
-      "_list\030\004 \003(\0132\024.GCGWaitingCharacter\032>\n\022Mod" +
-      "ifyZoneMapEntry\022\013\n\003key\030\001 \001(\r\022\027\n\005value\030\002 " +
-      "\001(\0132\010.GCGZone:\0028\001B\033\n\031emu.grasscutter.net" +
-      ".protob\006proto3"
+      "Character.proto\032\rGCGZone.proto\"\252\005\n\016GCGPl" +
+      "ayerField\022\033\n\023Unk3300_IKJMGAHCFPM\030\005 \001(\r\022;" +
+      "\n\017modify_zone_map\030\007 \003(\0132\".GCGPlayerField" +
+      ".ModifyZoneMapEntry\022\034\n\023Unk3300_GGHKFFADE" +
+      "AL\030\333\005 \001(\r\022%\n\023Unk3300_AOPJIOHMPOF\030\n \001(\0132\010" +
+      ".GCGZone\022\033\n\023Unk3300_FDFPHNDOJML\030\014 \001(\r\022%\n" +
+      "\023Unk3300_IPLMHKCNDLE\030\001 \001(\0132\010.GCGZone\022%\n\023" +
+      "Unk3300_EIHOMDLENMK\030\t \001(\0132\010.GCGZone\022*\n\014w" +
+      "aiting_list\030\002 \003(\0132\024.GCGWaitingCharacter\022" +
+      "\033\n\023Unk3300_PBECINKKHND\030\017 \001(\r\022\025\n\rcontroll" +
+      "er_id\030\006 \001(\r\022%\n\023Unk3300_INDJNJJJNKL\030\013 \001(\013" +
+      "2\010.GCGZone\022%\n\023Unk3300_EFNAEFBECHD\030\004 \001(\0132" +
+      "\010.GCGZone\022\021\n\tis_passed\030\010 \001(\010\022)\n\016intentio" +
+      "n_list\030\260\002 \003(\0132\020.GCGPVEIntention\022(\n\016dice_" +
+      "side_list\030\r \003(\0162\020.GCGDiceSideType\022\033\n\023Unk" +
+      "3300_FJNPFBIHFGD\030\003 \001(\r\022\033\n\023Unk3300_GLNIFL" +
+      "OKBPM\030\016 \001(\r\032>\n\022ModifyZoneMapEntry\022\013\n\003key" +
+      "\030\001 \001(\r\022\027\n\005value\030\002 \001(\0132\010.GCGZone:\0028\001B\033\n\031e" +
+      "mu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -3421,7 +3422,7 @@ public final class GCGPlayerFieldOuterClass {
     internal_static_GCGPlayerField_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GCGPlayerField_descriptor,
-        new java.lang.String[] { "ModifyZoneMap", "CurWaitingIndex", "SummonZone", "FieldShowId", "CardBackShowId", "DiceCount", "ControllerId", "OnStageZone", "IsPassed", "CharacterZone", "OnStageCharacterGuid", "AssistZone", "DeckCardNum", "DiceSideList", "HandZone", "IntentionList", "WaitingList", });
+        new java.lang.String[] { "Unk3300IKJMGAHCFPM", "ModifyZoneMap", "Unk3300GGHKFFADEAL", "Unk3300AOPJIOHMPOF", "Unk3300FDFPHNDOJML", "Unk3300IPLMHKCNDLE", "Unk3300EIHOMDLENMK", "WaitingList", "Unk3300PBECINKKHND", "ControllerId", "Unk3300INDJNJJJNKL", "Unk3300EFNAEFBECHD", "IsPassed", "IntentionList", "DiceSideList", "Unk3300FJNPFBIHFGD", "Unk3300GLNIFLOKBPM", });
     internal_static_GCGPlayerField_ModifyZoneMapEntry_descriptor =
       internal_static_GCGPlayerField_descriptor.getNestedTypes().get(0);
     internal_static_GCGPlayerField_ModifyZoneMapEntry_fieldAccessorTable = new

@@ -19,17 +19,21 @@ public final class MuqadasPotionActivityEnterDungeonReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 level_id = 12;</code>
+     * <code>uint32 level_id = 4;</code>
      * @return The levelId.
      */
     int getLevelId();
   }
   /**
    * <pre>
-   * CmdId: 24602
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 22772;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code MuqadasPotionActivityEnterDungeonReq}
@@ -76,7 +80,7 @@ public final class MuqadasPotionActivityEnterDungeonReqOuterClass {
             case 0:
               done = true;
               break;
-            case 96: {
+            case 32: {
 
               levelId_ = input.readUInt32();
               break;
@@ -113,10 +117,10 @@ public final class MuqadasPotionActivityEnterDungeonReqOuterClass {
               emu.grasscutter.net.proto.MuqadasPotionActivityEnterDungeonReqOuterClass.MuqadasPotionActivityEnterDungeonReq.class, emu.grasscutter.net.proto.MuqadasPotionActivityEnterDungeonReqOuterClass.MuqadasPotionActivityEnterDungeonReq.Builder.class);
     }
 
-    public static final int LEVEL_ID_FIELD_NUMBER = 12;
+    public static final int LEVEL_ID_FIELD_NUMBER = 4;
     private int levelId_;
     /**
-     * <code>uint32 level_id = 12;</code>
+     * <code>uint32 level_id = 4;</code>
      * @return The levelId.
      */
     @java.lang.Override
@@ -139,7 +143,7 @@ public final class MuqadasPotionActivityEnterDungeonReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (levelId_ != 0) {
-        output.writeUInt32(12, levelId_);
+        output.writeUInt32(4, levelId_);
       }
       unknownFields.writeTo(output);
     }
@@ -152,7 +156,7 @@ public final class MuqadasPotionActivityEnterDungeonReqOuterClass {
       size = 0;
       if (levelId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, levelId_);
+          .computeUInt32Size(4, levelId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -281,10 +285,14 @@ public final class MuqadasPotionActivityEnterDungeonReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 24602
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 22772;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code MuqadasPotionActivityEnterDungeonReq}
@@ -435,7 +443,7 @@ public final class MuqadasPotionActivityEnterDungeonReqOuterClass {
 
       private int levelId_ ;
       /**
-       * <code>uint32 level_id = 12;</code>
+       * <code>uint32 level_id = 4;</code>
        * @return The levelId.
        */
       @java.lang.Override
@@ -443,7 +451,7 @@ public final class MuqadasPotionActivityEnterDungeonReqOuterClass {
         return levelId_;
       }
       /**
-       * <code>uint32 level_id = 12;</code>
+       * <code>uint32 level_id = 4;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
        */
@@ -454,7 +462,7 @@ public final class MuqadasPotionActivityEnterDungeonReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 level_id = 12;</code>
+       * <code>uint32 level_id = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearLevelId() {
@@ -532,7 +540,7 @@ public final class MuqadasPotionActivityEnterDungeonReqOuterClass {
     java.lang.String[] descriptorData = {
       "\n*MuqadasPotionActivityEnterDungeonReq.p" +
       "roto\"8\n$MuqadasPotionActivityEnterDungeo" +
-      "nReq\022\020\n\010level_id\030\014 \001(\rB\033\n\031emu.grasscutte" +
+      "nReq\022\020\n\010level_id\030\004 \001(\rB\033\n\031emu.grasscutte" +
       "r.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

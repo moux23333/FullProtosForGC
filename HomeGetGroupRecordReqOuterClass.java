@@ -19,17 +19,21 @@ public final class HomeGetGroupRecordReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 group_id = 14;</code>
+     * <code>uint32 group_id = 6;</code>
      * @return The groupId.
      */
     int getGroupId();
   }
   /**
    * <pre>
-   * CmdId: 4523
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 4756;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code HomeGetGroupRecordReq}
@@ -76,7 +80,7 @@ public final class HomeGetGroupRecordReqOuterClass {
             case 0:
               done = true;
               break;
-            case 112: {
+            case 48: {
 
               groupId_ = input.readUInt32();
               break;
@@ -113,10 +117,10 @@ public final class HomeGetGroupRecordReqOuterClass {
               emu.grasscutter.net.proto.HomeGetGroupRecordReqOuterClass.HomeGetGroupRecordReq.class, emu.grasscutter.net.proto.HomeGetGroupRecordReqOuterClass.HomeGetGroupRecordReq.Builder.class);
     }
 
-    public static final int GROUP_ID_FIELD_NUMBER = 14;
+    public static final int GROUP_ID_FIELD_NUMBER = 6;
     private int groupId_;
     /**
-     * <code>uint32 group_id = 14;</code>
+     * <code>uint32 group_id = 6;</code>
      * @return The groupId.
      */
     @java.lang.Override
@@ -139,7 +143,7 @@ public final class HomeGetGroupRecordReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (groupId_ != 0) {
-        output.writeUInt32(14, groupId_);
+        output.writeUInt32(6, groupId_);
       }
       unknownFields.writeTo(output);
     }
@@ -152,7 +156,7 @@ public final class HomeGetGroupRecordReqOuterClass {
       size = 0;
       if (groupId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, groupId_);
+          .computeUInt32Size(6, groupId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -281,10 +285,14 @@ public final class HomeGetGroupRecordReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 4523
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 4756;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code HomeGetGroupRecordReq}
@@ -435,7 +443,7 @@ public final class HomeGetGroupRecordReqOuterClass {
 
       private int groupId_ ;
       /**
-       * <code>uint32 group_id = 14;</code>
+       * <code>uint32 group_id = 6;</code>
        * @return The groupId.
        */
       @java.lang.Override
@@ -443,7 +451,7 @@ public final class HomeGetGroupRecordReqOuterClass {
         return groupId_;
       }
       /**
-       * <code>uint32 group_id = 14;</code>
+       * <code>uint32 group_id = 6;</code>
        * @param value The groupId to set.
        * @return This builder for chaining.
        */
@@ -454,7 +462,7 @@ public final class HomeGetGroupRecordReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 group_id = 14;</code>
+       * <code>uint32 group_id = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearGroupId() {
@@ -531,7 +539,7 @@ public final class HomeGetGroupRecordReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\033HomeGetGroupRecordReq.proto\")\n\025HomeGet" +
-      "GroupRecordReq\022\020\n\010group_id\030\016 \001(\rB\033\n\031emu." +
+      "GroupRecordReq\022\020\n\010group_id\030\006 \001(\rB\033\n\031emu." +
       "grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

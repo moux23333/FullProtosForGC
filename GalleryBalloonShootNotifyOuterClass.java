@@ -19,46 +19,50 @@ public final class GalleryBalloonShootNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 trigger_entity_id = 12;</code>
+     * <code>uint32 trigger_entity_id = 3;</code>
      * @return The triggerEntityId.
      */
     int getTriggerEntityId();
 
     /**
-     * <code>uint32 gallery_id = 5;</code>
-     * @return The galleryId.
-     */
-    int getGalleryId();
-
-    /**
-     * <code>uint32 combo = 14;</code>
+     * <code>uint32 combo = 15;</code>
      * @return The combo.
      */
     int getCombo();
 
     /**
-     * <code>uint64 combo_disable_time = 6;</code>
+     * <code>uint64 combo_disable_time = 9;</code>
      * @return The comboDisableTime.
      */
     long getComboDisableTime();
 
     /**
-     * <code>int32 add_score = 11;</code>
+     * <code>uint32 cur_score = 1;</code>
+     * @return The curScore.
+     */
+    int getCurScore();
+
+    /**
+     * <code>int32 add_score = 2;</code>
      * @return The addScore.
      */
     int getAddScore();
 
     /**
-     * <code>uint32 cur_score = 13;</code>
-     * @return The curScore.
+     * <code>uint32 gallery_id = 11;</code>
+     * @return The galleryId.
      */
-    int getCurScore();
+    int getGalleryId();
   }
   /**
    * <pre>
-   * CmdId: 5598
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 5530;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code GalleryBalloonShootNotify}
@@ -105,32 +109,32 @@ public final class GalleryBalloonShootNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 40: {
+            case 8: {
 
-              galleryId_ = input.readUInt32();
+              curScore_ = input.readUInt32();
               break;
             }
-            case 48: {
+            case 16: {
+
+              addScore_ = input.readInt32();
+              break;
+            }
+            case 24: {
+
+              triggerEntityId_ = input.readUInt32();
+              break;
+            }
+            case 72: {
 
               comboDisableTime_ = input.readUInt64();
               break;
             }
             case 88: {
 
-              addScore_ = input.readInt32();
+              galleryId_ = input.readUInt32();
               break;
             }
-            case 96: {
-
-              triggerEntityId_ = input.readUInt32();
-              break;
-            }
-            case 104: {
-
-              curScore_ = input.readUInt32();
-              break;
-            }
-            case 112: {
+            case 120: {
 
               combo_ = input.readUInt32();
               break;
@@ -167,10 +171,10 @@ public final class GalleryBalloonShootNotifyOuterClass {
               emu.grasscutter.net.proto.GalleryBalloonShootNotifyOuterClass.GalleryBalloonShootNotify.class, emu.grasscutter.net.proto.GalleryBalloonShootNotifyOuterClass.GalleryBalloonShootNotify.Builder.class);
     }
 
-    public static final int TRIGGER_ENTITY_ID_FIELD_NUMBER = 12;
+    public static final int TRIGGER_ENTITY_ID_FIELD_NUMBER = 3;
     private int triggerEntityId_;
     /**
-     * <code>uint32 trigger_entity_id = 12;</code>
+     * <code>uint32 trigger_entity_id = 3;</code>
      * @return The triggerEntityId.
      */
     @java.lang.Override
@@ -178,21 +182,10 @@ public final class GalleryBalloonShootNotifyOuterClass {
       return triggerEntityId_;
     }
 
-    public static final int GALLERY_ID_FIELD_NUMBER = 5;
-    private int galleryId_;
-    /**
-     * <code>uint32 gallery_id = 5;</code>
-     * @return The galleryId.
-     */
-    @java.lang.Override
-    public int getGalleryId() {
-      return galleryId_;
-    }
-
-    public static final int COMBO_FIELD_NUMBER = 14;
+    public static final int COMBO_FIELD_NUMBER = 15;
     private int combo_;
     /**
-     * <code>uint32 combo = 14;</code>
+     * <code>uint32 combo = 15;</code>
      * @return The combo.
      */
     @java.lang.Override
@@ -200,10 +193,10 @@ public final class GalleryBalloonShootNotifyOuterClass {
       return combo_;
     }
 
-    public static final int COMBO_DISABLE_TIME_FIELD_NUMBER = 6;
+    public static final int COMBO_DISABLE_TIME_FIELD_NUMBER = 9;
     private long comboDisableTime_;
     /**
-     * <code>uint64 combo_disable_time = 6;</code>
+     * <code>uint64 combo_disable_time = 9;</code>
      * @return The comboDisableTime.
      */
     @java.lang.Override
@@ -211,10 +204,21 @@ public final class GalleryBalloonShootNotifyOuterClass {
       return comboDisableTime_;
     }
 
-    public static final int ADD_SCORE_FIELD_NUMBER = 11;
+    public static final int CUR_SCORE_FIELD_NUMBER = 1;
+    private int curScore_;
+    /**
+     * <code>uint32 cur_score = 1;</code>
+     * @return The curScore.
+     */
+    @java.lang.Override
+    public int getCurScore() {
+      return curScore_;
+    }
+
+    public static final int ADD_SCORE_FIELD_NUMBER = 2;
     private int addScore_;
     /**
-     * <code>int32 add_score = 11;</code>
+     * <code>int32 add_score = 2;</code>
      * @return The addScore.
      */
     @java.lang.Override
@@ -222,15 +226,15 @@ public final class GalleryBalloonShootNotifyOuterClass {
       return addScore_;
     }
 
-    public static final int CUR_SCORE_FIELD_NUMBER = 13;
-    private int curScore_;
+    public static final int GALLERY_ID_FIELD_NUMBER = 11;
+    private int galleryId_;
     /**
-     * <code>uint32 cur_score = 13;</code>
-     * @return The curScore.
+     * <code>uint32 gallery_id = 11;</code>
+     * @return The galleryId.
      */
     @java.lang.Override
-    public int getCurScore() {
-      return curScore_;
+    public int getGalleryId() {
+      return galleryId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -247,23 +251,23 @@ public final class GalleryBalloonShootNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (galleryId_ != 0) {
-        output.writeUInt32(5, galleryId_);
-      }
-      if (comboDisableTime_ != 0L) {
-        output.writeUInt64(6, comboDisableTime_);
+      if (curScore_ != 0) {
+        output.writeUInt32(1, curScore_);
       }
       if (addScore_ != 0) {
-        output.writeInt32(11, addScore_);
+        output.writeInt32(2, addScore_);
       }
       if (triggerEntityId_ != 0) {
-        output.writeUInt32(12, triggerEntityId_);
+        output.writeUInt32(3, triggerEntityId_);
       }
-      if (curScore_ != 0) {
-        output.writeUInt32(13, curScore_);
+      if (comboDisableTime_ != 0L) {
+        output.writeUInt64(9, comboDisableTime_);
+      }
+      if (galleryId_ != 0) {
+        output.writeUInt32(11, galleryId_);
       }
       if (combo_ != 0) {
-        output.writeUInt32(14, combo_);
+        output.writeUInt32(15, combo_);
       }
       unknownFields.writeTo(output);
     }
@@ -274,29 +278,29 @@ public final class GalleryBalloonShootNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (galleryId_ != 0) {
+      if (curScore_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, galleryId_);
-      }
-      if (comboDisableTime_ != 0L) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt64Size(6, comboDisableTime_);
+          .computeUInt32Size(1, curScore_);
       }
       if (addScore_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(11, addScore_);
+          .computeInt32Size(2, addScore_);
       }
       if (triggerEntityId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, triggerEntityId_);
+          .computeUInt32Size(3, triggerEntityId_);
       }
-      if (curScore_ != 0) {
+      if (comboDisableTime_ != 0L) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, curScore_);
+          .computeUInt64Size(9, comboDisableTime_);
+      }
+      if (galleryId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(11, galleryId_);
       }
       if (combo_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, combo_);
+          .computeUInt32Size(15, combo_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -315,16 +319,16 @@ public final class GalleryBalloonShootNotifyOuterClass {
 
       if (getTriggerEntityId()
           != other.getTriggerEntityId()) return false;
-      if (getGalleryId()
-          != other.getGalleryId()) return false;
       if (getCombo()
           != other.getCombo()) return false;
       if (getComboDisableTime()
           != other.getComboDisableTime()) return false;
-      if (getAddScore()
-          != other.getAddScore()) return false;
       if (getCurScore()
           != other.getCurScore()) return false;
+      if (getAddScore()
+          != other.getAddScore()) return false;
+      if (getGalleryId()
+          != other.getGalleryId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -338,17 +342,17 @@ public final class GalleryBalloonShootNotifyOuterClass {
       hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + TRIGGER_ENTITY_ID_FIELD_NUMBER;
       hash = (53 * hash) + getTriggerEntityId();
-      hash = (37 * hash) + GALLERY_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getGalleryId();
       hash = (37 * hash) + COMBO_FIELD_NUMBER;
       hash = (53 * hash) + getCombo();
       hash = (37 * hash) + COMBO_DISABLE_TIME_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
           getComboDisableTime());
-      hash = (37 * hash) + ADD_SCORE_FIELD_NUMBER;
-      hash = (53 * hash) + getAddScore();
       hash = (37 * hash) + CUR_SCORE_FIELD_NUMBER;
       hash = (53 * hash) + getCurScore();
+      hash = (37 * hash) + ADD_SCORE_FIELD_NUMBER;
+      hash = (53 * hash) + getAddScore();
+      hash = (37 * hash) + GALLERY_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getGalleryId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -446,9 +450,13 @@ public final class GalleryBalloonShootNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 5598
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 5530;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code GalleryBalloonShootNotify}
@@ -490,15 +498,15 @@ public final class GalleryBalloonShootNotifyOuterClass {
         super.clear();
         triggerEntityId_ = 0;
 
-        galleryId_ = 0;
-
         combo_ = 0;
 
         comboDisableTime_ = 0L;
 
+        curScore_ = 0;
+
         addScore_ = 0;
 
-        curScore_ = 0;
+        galleryId_ = 0;
 
         return this;
       }
@@ -527,11 +535,11 @@ public final class GalleryBalloonShootNotifyOuterClass {
       public emu.grasscutter.net.proto.GalleryBalloonShootNotifyOuterClass.GalleryBalloonShootNotify buildPartial() {
         emu.grasscutter.net.proto.GalleryBalloonShootNotifyOuterClass.GalleryBalloonShootNotify result = new emu.grasscutter.net.proto.GalleryBalloonShootNotifyOuterClass.GalleryBalloonShootNotify(this);
         result.triggerEntityId_ = triggerEntityId_;
-        result.galleryId_ = galleryId_;
         result.combo_ = combo_;
         result.comboDisableTime_ = comboDisableTime_;
-        result.addScore_ = addScore_;
         result.curScore_ = curScore_;
+        result.addScore_ = addScore_;
+        result.galleryId_ = galleryId_;
         onBuilt();
         return result;
       }
@@ -583,20 +591,20 @@ public final class GalleryBalloonShootNotifyOuterClass {
         if (other.getTriggerEntityId() != 0) {
           setTriggerEntityId(other.getTriggerEntityId());
         }
-        if (other.getGalleryId() != 0) {
-          setGalleryId(other.getGalleryId());
-        }
         if (other.getCombo() != 0) {
           setCombo(other.getCombo());
         }
         if (other.getComboDisableTime() != 0L) {
           setComboDisableTime(other.getComboDisableTime());
         }
+        if (other.getCurScore() != 0) {
+          setCurScore(other.getCurScore());
+        }
         if (other.getAddScore() != 0) {
           setAddScore(other.getAddScore());
         }
-        if (other.getCurScore() != 0) {
-          setCurScore(other.getCurScore());
+        if (other.getGalleryId() != 0) {
+          setGalleryId(other.getGalleryId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -629,7 +637,7 @@ public final class GalleryBalloonShootNotifyOuterClass {
 
       private int triggerEntityId_ ;
       /**
-       * <code>uint32 trigger_entity_id = 12;</code>
+       * <code>uint32 trigger_entity_id = 3;</code>
        * @return The triggerEntityId.
        */
       @java.lang.Override
@@ -637,7 +645,7 @@ public final class GalleryBalloonShootNotifyOuterClass {
         return triggerEntityId_;
       }
       /**
-       * <code>uint32 trigger_entity_id = 12;</code>
+       * <code>uint32 trigger_entity_id = 3;</code>
        * @param value The triggerEntityId to set.
        * @return This builder for chaining.
        */
@@ -648,7 +656,7 @@ public final class GalleryBalloonShootNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 trigger_entity_id = 12;</code>
+       * <code>uint32 trigger_entity_id = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearTriggerEntityId() {
@@ -658,40 +666,9 @@ public final class GalleryBalloonShootNotifyOuterClass {
         return this;
       }
 
-      private int galleryId_ ;
-      /**
-       * <code>uint32 gallery_id = 5;</code>
-       * @return The galleryId.
-       */
-      @java.lang.Override
-      public int getGalleryId() {
-        return galleryId_;
-      }
-      /**
-       * <code>uint32 gallery_id = 5;</code>
-       * @param value The galleryId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setGalleryId(int value) {
-        
-        galleryId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 gallery_id = 5;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearGalleryId() {
-        
-        galleryId_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int combo_ ;
       /**
-       * <code>uint32 combo = 14;</code>
+       * <code>uint32 combo = 15;</code>
        * @return The combo.
        */
       @java.lang.Override
@@ -699,7 +676,7 @@ public final class GalleryBalloonShootNotifyOuterClass {
         return combo_;
       }
       /**
-       * <code>uint32 combo = 14;</code>
+       * <code>uint32 combo = 15;</code>
        * @param value The combo to set.
        * @return This builder for chaining.
        */
@@ -710,7 +687,7 @@ public final class GalleryBalloonShootNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 combo = 14;</code>
+       * <code>uint32 combo = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearCombo() {
@@ -722,7 +699,7 @@ public final class GalleryBalloonShootNotifyOuterClass {
 
       private long comboDisableTime_ ;
       /**
-       * <code>uint64 combo_disable_time = 6;</code>
+       * <code>uint64 combo_disable_time = 9;</code>
        * @return The comboDisableTime.
        */
       @java.lang.Override
@@ -730,7 +707,7 @@ public final class GalleryBalloonShootNotifyOuterClass {
         return comboDisableTime_;
       }
       /**
-       * <code>uint64 combo_disable_time = 6;</code>
+       * <code>uint64 combo_disable_time = 9;</code>
        * @param value The comboDisableTime to set.
        * @return This builder for chaining.
        */
@@ -741,7 +718,7 @@ public final class GalleryBalloonShootNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint64 combo_disable_time = 6;</code>
+       * <code>uint64 combo_disable_time = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearComboDisableTime() {
@@ -751,40 +728,9 @@ public final class GalleryBalloonShootNotifyOuterClass {
         return this;
       }
 
-      private int addScore_ ;
-      /**
-       * <code>int32 add_score = 11;</code>
-       * @return The addScore.
-       */
-      @java.lang.Override
-      public int getAddScore() {
-        return addScore_;
-      }
-      /**
-       * <code>int32 add_score = 11;</code>
-       * @param value The addScore to set.
-       * @return This builder for chaining.
-       */
-      public Builder setAddScore(int value) {
-        
-        addScore_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>int32 add_score = 11;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearAddScore() {
-        
-        addScore_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int curScore_ ;
       /**
-       * <code>uint32 cur_score = 13;</code>
+       * <code>uint32 cur_score = 1;</code>
        * @return The curScore.
        */
       @java.lang.Override
@@ -792,7 +738,7 @@ public final class GalleryBalloonShootNotifyOuterClass {
         return curScore_;
       }
       /**
-       * <code>uint32 cur_score = 13;</code>
+       * <code>uint32 cur_score = 1;</code>
        * @param value The curScore to set.
        * @return This builder for chaining.
        */
@@ -803,12 +749,74 @@ public final class GalleryBalloonShootNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 cur_score = 13;</code>
+       * <code>uint32 cur_score = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearCurScore() {
         
         curScore_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int addScore_ ;
+      /**
+       * <code>int32 add_score = 2;</code>
+       * @return The addScore.
+       */
+      @java.lang.Override
+      public int getAddScore() {
+        return addScore_;
+      }
+      /**
+       * <code>int32 add_score = 2;</code>
+       * @param value The addScore to set.
+       * @return This builder for chaining.
+       */
+      public Builder setAddScore(int value) {
+        
+        addScore_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 add_score = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearAddScore() {
+        
+        addScore_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int galleryId_ ;
+      /**
+       * <code>uint32 gallery_id = 11;</code>
+       * @return The galleryId.
+       */
+      @java.lang.Override
+      public int getGalleryId() {
+        return galleryId_;
+      }
+      /**
+       * <code>uint32 gallery_id = 11;</code>
+       * @param value The galleryId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setGalleryId(int value) {
+        
+        galleryId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 gallery_id = 11;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearGalleryId() {
+        
+        galleryId_ = 0;
         onChanged();
         return this;
       }
@@ -881,9 +889,9 @@ public final class GalleryBalloonShootNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n\037GalleryBalloonShootNotify.proto\"\233\001\n\031Ga" +
       "lleryBalloonShootNotify\022\031\n\021trigger_entit" +
-      "y_id\030\014 \001(\r\022\022\n\ngallery_id\030\005 \001(\r\022\r\n\005combo\030" +
-      "\016 \001(\r\022\032\n\022combo_disable_time\030\006 \001(\004\022\021\n\tadd" +
-      "_score\030\013 \001(\005\022\021\n\tcur_score\030\r \001(\rB\033\n\031emu.g" +
+      "y_id\030\003 \001(\r\022\r\n\005combo\030\017 \001(\r\022\032\n\022combo_disab" +
+      "le_time\030\t \001(\004\022\021\n\tcur_score\030\001 \001(\r\022\021\n\tadd_" +
+      "score\030\002 \001(\005\022\022\n\ngallery_id\030\013 \001(\rB\033\n\031emu.g" +
       "rasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -895,7 +903,7 @@ public final class GalleryBalloonShootNotifyOuterClass {
     internal_static_GalleryBalloonShootNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GalleryBalloonShootNotify_descriptor,
-        new java.lang.String[] { "TriggerEntityId", "GalleryId", "Combo", "ComboDisableTime", "AddScore", "CurScore", });
+        new java.lang.String[] { "TriggerEntityId", "Combo", "ComboDisableTime", "CurScore", "AddScore", "GalleryId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

@@ -19,22 +19,26 @@ public final class GCGGrowthLevelNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 exp = 7;</code>
-     * @return The exp.
-     */
-    int getExp();
-
-    /**
-     * <code>uint32 level = 11;</code>
+     * <code>uint32 level = 10;</code>
      * @return The level.
      */
     int getLevel();
+
+    /**
+     * <code>uint32 exp = 2;</code>
+     * @return The exp.
+     */
+    int getExp();
   }
   /**
    * <pre>
-   * CmdId: 7736
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 7343;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code GCGGrowthLevelNotify}
@@ -81,12 +85,12 @@ public final class GCGGrowthLevelNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 56: {
+            case 16: {
 
               exp_ = input.readUInt32();
               break;
             }
-            case 88: {
+            case 80: {
 
               level_ = input.readUInt32();
               break;
@@ -123,26 +127,26 @@ public final class GCGGrowthLevelNotifyOuterClass {
               emu.grasscutter.net.proto.GCGGrowthLevelNotifyOuterClass.GCGGrowthLevelNotify.class, emu.grasscutter.net.proto.GCGGrowthLevelNotifyOuterClass.GCGGrowthLevelNotify.Builder.class);
     }
 
-    public static final int EXP_FIELD_NUMBER = 7;
-    private int exp_;
-    /**
-     * <code>uint32 exp = 7;</code>
-     * @return The exp.
-     */
-    @java.lang.Override
-    public int getExp() {
-      return exp_;
-    }
-
-    public static final int LEVEL_FIELD_NUMBER = 11;
+    public static final int LEVEL_FIELD_NUMBER = 10;
     private int level_;
     /**
-     * <code>uint32 level = 11;</code>
+     * <code>uint32 level = 10;</code>
      * @return The level.
      */
     @java.lang.Override
     public int getLevel() {
       return level_;
+    }
+
+    public static final int EXP_FIELD_NUMBER = 2;
+    private int exp_;
+    /**
+     * <code>uint32 exp = 2;</code>
+     * @return The exp.
+     */
+    @java.lang.Override
+    public int getExp() {
+      return exp_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -160,10 +164,10 @@ public final class GCGGrowthLevelNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (exp_ != 0) {
-        output.writeUInt32(7, exp_);
+        output.writeUInt32(2, exp_);
       }
       if (level_ != 0) {
-        output.writeUInt32(11, level_);
+        output.writeUInt32(10, level_);
       }
       unknownFields.writeTo(output);
     }
@@ -176,11 +180,11 @@ public final class GCGGrowthLevelNotifyOuterClass {
       size = 0;
       if (exp_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, exp_);
+          .computeUInt32Size(2, exp_);
       }
       if (level_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, level_);
+          .computeUInt32Size(10, level_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -197,10 +201,10 @@ public final class GCGGrowthLevelNotifyOuterClass {
       }
       emu.grasscutter.net.proto.GCGGrowthLevelNotifyOuterClass.GCGGrowthLevelNotify other = (emu.grasscutter.net.proto.GCGGrowthLevelNotifyOuterClass.GCGGrowthLevelNotify) obj;
 
-      if (getExp()
-          != other.getExp()) return false;
       if (getLevel()
           != other.getLevel()) return false;
+      if (getExp()
+          != other.getExp()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -212,10 +216,10 @@ public final class GCGGrowthLevelNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + EXP_FIELD_NUMBER;
-      hash = (53 * hash) + getExp();
       hash = (37 * hash) + LEVEL_FIELD_NUMBER;
       hash = (53 * hash) + getLevel();
+      hash = (37 * hash) + EXP_FIELD_NUMBER;
+      hash = (53 * hash) + getExp();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -313,9 +317,13 @@ public final class GCGGrowthLevelNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 7736
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 7343;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code GCGGrowthLevelNotify}
@@ -355,9 +363,9 @@ public final class GCGGrowthLevelNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        exp_ = 0;
-
         level_ = 0;
+
+        exp_ = 0;
 
         return this;
       }
@@ -385,8 +393,8 @@ public final class GCGGrowthLevelNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.GCGGrowthLevelNotifyOuterClass.GCGGrowthLevelNotify buildPartial() {
         emu.grasscutter.net.proto.GCGGrowthLevelNotifyOuterClass.GCGGrowthLevelNotify result = new emu.grasscutter.net.proto.GCGGrowthLevelNotifyOuterClass.GCGGrowthLevelNotify(this);
-        result.exp_ = exp_;
         result.level_ = level_;
+        result.exp_ = exp_;
         onBuilt();
         return result;
       }
@@ -435,11 +443,11 @@ public final class GCGGrowthLevelNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.GCGGrowthLevelNotifyOuterClass.GCGGrowthLevelNotify other) {
         if (other == emu.grasscutter.net.proto.GCGGrowthLevelNotifyOuterClass.GCGGrowthLevelNotify.getDefaultInstance()) return this;
-        if (other.getExp() != 0) {
-          setExp(other.getExp());
-        }
         if (other.getLevel() != 0) {
           setLevel(other.getLevel());
+        }
+        if (other.getExp() != 0) {
+          setExp(other.getExp());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -470,40 +478,9 @@ public final class GCGGrowthLevelNotifyOuterClass {
         return this;
       }
 
-      private int exp_ ;
-      /**
-       * <code>uint32 exp = 7;</code>
-       * @return The exp.
-       */
-      @java.lang.Override
-      public int getExp() {
-        return exp_;
-      }
-      /**
-       * <code>uint32 exp = 7;</code>
-       * @param value The exp to set.
-       * @return This builder for chaining.
-       */
-      public Builder setExp(int value) {
-        
-        exp_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 exp = 7;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearExp() {
-        
-        exp_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int level_ ;
       /**
-       * <code>uint32 level = 11;</code>
+       * <code>uint32 level = 10;</code>
        * @return The level.
        */
       @java.lang.Override
@@ -511,7 +488,7 @@ public final class GCGGrowthLevelNotifyOuterClass {
         return level_;
       }
       /**
-       * <code>uint32 level = 11;</code>
+       * <code>uint32 level = 10;</code>
        * @param value The level to set.
        * @return This builder for chaining.
        */
@@ -522,12 +499,43 @@ public final class GCGGrowthLevelNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 level = 11;</code>
+       * <code>uint32 level = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearLevel() {
         
         level_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int exp_ ;
+      /**
+       * <code>uint32 exp = 2;</code>
+       * @return The exp.
+       */
+      @java.lang.Override
+      public int getExp() {
+        return exp_;
+      }
+      /**
+       * <code>uint32 exp = 2;</code>
+       * @param value The exp to set.
+       * @return This builder for chaining.
+       */
+      public Builder setExp(int value) {
+        
+        exp_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 exp = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearExp() {
+        
+        exp_ = 0;
         onChanged();
         return this;
       }
@@ -599,7 +607,7 @@ public final class GCGGrowthLevelNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\032GCGGrowthLevelNotify.proto\"2\n\024GCGGrowt" +
-      "hLevelNotify\022\013\n\003exp\030\007 \001(\r\022\r\n\005level\030\013 \001(\r" +
+      "hLevelNotify\022\r\n\005level\030\n \001(\r\022\013\n\003exp\030\002 \001(\r" +
       "B\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -611,7 +619,7 @@ public final class GCGGrowthLevelNotifyOuterClass {
     internal_static_GCGGrowthLevelNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GCGGrowthLevelNotify_descriptor,
-        new java.lang.String[] { "Exp", "Level", });
+        new java.lang.String[] { "Level", "Exp", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

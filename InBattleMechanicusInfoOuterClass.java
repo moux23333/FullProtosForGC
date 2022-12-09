@@ -19,10 +19,55 @@ public final class InBattleMechanicusInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 left_monster = 5;</code>
-     * @return The leftMonster.
+     * <code>repeated uint32 Unk3300_MNNDELKIBLG = 656;</code>
+     * @return A list containing the unk3300MNNDELKIBLG.
      */
-    int getLeftMonster();
+    java.util.List<java.lang.Integer> getUnk3300MNNDELKIBLGList();
+    /**
+     * <code>repeated uint32 Unk3300_MNNDELKIBLG = 656;</code>
+     * @return The count of unk3300MNNDELKIBLG.
+     */
+    int getUnk3300MNNDELKIBLGCount();
+    /**
+     * <code>repeated uint32 Unk3300_MNNDELKIBLG = 656;</code>
+     * @param index The index of the element to return.
+     * @return The unk3300MNNDELKIBLG at the given index.
+     */
+    int getUnk3300MNNDELKIBLG(int index);
+
+    /**
+     * <code>repeated uint32 Unk3300_GHBEHPGBBIH = 683;</code>
+     * @return A list containing the unk3300GHBEHPGBBIH.
+     */
+    java.util.List<java.lang.Integer> getUnk3300GHBEHPGBBIHList();
+    /**
+     * <code>repeated uint32 Unk3300_GHBEHPGBBIH = 683;</code>
+     * @return The count of unk3300GHBEHPGBBIH.
+     */
+    int getUnk3300GHBEHPGBBIHCount();
+    /**
+     * <code>repeated uint32 Unk3300_GHBEHPGBBIH = 683;</code>
+     * @param index The index of the element to return.
+     * @return The unk3300GHBEHPGBBIH at the given index.
+     */
+    int getUnk3300GHBEHPGBBIH(int index);
+
+    /**
+     * <code>.InBattleMechanicusStageType stage = 7;</code>
+     * @return The enum numeric value on the wire for stage.
+     */
+    int getStageValue();
+    /**
+     * <code>.InBattleMechanicusStageType stage = 7;</code>
+     * @return The stage.
+     */
+    emu.grasscutter.net.proto.InBattleMechanicusStageTypeOuterClass.InBattleMechanicusStageType getStage();
+
+    /**
+     * <code>uint32 Unk3300_EBOIGFMOKHK = 4;</code>
+     * @return The unk3300EBOIGFMOKHK.
+     */
+    int getUnk3300EBOIGFMOKHK();
 
     /**
      * <code>uint32 wait_seconds = 13;</code>
@@ -31,193 +76,148 @@ public final class InBattleMechanicusInfoOuterClass {
     int getWaitSeconds();
 
     /**
-     * <code>repeated uint32 entrance_list = 410;</code>
-     * @return A list containing the entranceList.
+     * <code>uint32 left_monster_num = 15;</code>
+     * @return The leftMonsterNum.
      */
-    java.util.List<java.lang.Integer> getEntranceListList();
-    /**
-     * <code>repeated uint32 entrance_list = 410;</code>
-     * @return The count of entranceList.
-     */
-    int getEntranceListCount();
-    /**
-     * <code>repeated uint32 entrance_list = 410;</code>
-     * @param index The index of the element to return.
-     * @return The entranceList at the given index.
-     */
-    int getEntranceList(int index);
+    int getLeftMonsterNum();
 
     /**
-     * <code>repeated uint32 exit_list = 115;</code>
-     * @return A list containing the exitList.
+     * <code>uint64 Unk3300_IFIPKLOGEOF = 6;</code>
+     * @return The unk3300IFIPKLOGEOF.
      */
-    java.util.List<java.lang.Integer> getExitListList();
-    /**
-     * <code>repeated uint32 exit_list = 115;</code>
-     * @return The count of exitList.
-     */
-    int getExitListCount();
-    /**
-     * <code>repeated uint32 exit_list = 115;</code>
-     * @param index The index of the element to return.
-     * @return The exitList at the given index.
-     */
-    int getExitList(int index);
+    long getUnk3300IFIPKLOGEOF();
 
     /**
-     * <code>repeated .InBattleMechanicusCardInfo history_card_list = 11;</code>
-     */
-    java.util.List<emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfo> 
-        getHistoryCardListList();
-    /**
-     * <code>repeated .InBattleMechanicusCardInfo history_card_list = 11;</code>
-     */
-    emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfo getHistoryCardList(int index);
-    /**
-     * <code>repeated .InBattleMechanicusCardInfo history_card_list = 11;</code>
-     */
-    int getHistoryCardListCount();
-    /**
-     * <code>repeated .InBattleMechanicusCardInfo history_card_list = 11;</code>
-     */
-    java.util.List<? extends emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfoOrBuilder> 
-        getHistoryCardListOrBuilderList();
-    /**
-     * <code>repeated .InBattleMechanicusCardInfo history_card_list = 11;</code>
-     */
-    emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfoOrBuilder getHistoryCardListOrBuilder(
-        int index);
-
-    /**
-     * <code>uint32 max_escape_monster_num = 10;</code>
-     * @return The maxEscapeMonsterNum.
-     */
-    int getMaxEscapeMonsterNum();
-
-    /**
-     * <code>uint32 building_stage_duration = 4;</code>
-     * @return The buildingStageDuration.
-     */
-    int getBuildingStageDuration();
-
-    /**
-     * <code>uint64 duration_ms = 8;</code>
-     * @return The durationMs.
-     */
-    long getDurationMs();
-
-    /**
-     * <code>.InBattleMechanicusStageType stage = 9;</code>
-     * @return The enum numeric value on the wire for stage.
-     */
-    int getStageValue();
-    /**
-     * <code>.InBattleMechanicusStageType stage = 9;</code>
-     * @return The stage.
-     */
-    emu.grasscutter.net.proto.InBattleMechanicusStageTypeOuterClass.InBattleMechanicusStageType getStage();
-
-    /**
-     * <code>uint32 total_round = 12;</code>
-     * @return The totalRound.
-     */
-    int getTotalRound();
-
-    /**
-     * <code>repeated .InBattleMechanicusMonsterInfo monster_list = 14;</code>
-     */
-    java.util.List<emu.grasscutter.net.proto.InBattleMechanicusMonsterInfoOuterClass.InBattleMechanicusMonsterInfo> 
-        getMonsterListList();
-    /**
-     * <code>repeated .InBattleMechanicusMonsterInfo monster_list = 14;</code>
-     */
-    emu.grasscutter.net.proto.InBattleMechanicusMonsterInfoOuterClass.InBattleMechanicusMonsterInfo getMonsterList(int index);
-    /**
-     * <code>repeated .InBattleMechanicusMonsterInfo monster_list = 14;</code>
-     */
-    int getMonsterListCount();
-    /**
-     * <code>repeated .InBattleMechanicusMonsterInfo monster_list = 14;</code>
-     */
-    java.util.List<? extends emu.grasscutter.net.proto.InBattleMechanicusMonsterInfoOuterClass.InBattleMechanicusMonsterInfoOrBuilder> 
-        getMonsterListOrBuilderList();
-    /**
-     * <code>repeated .InBattleMechanicusMonsterInfo monster_list = 14;</code>
-     */
-    emu.grasscutter.net.proto.InBattleMechanicusMonsterInfoOuterClass.InBattleMechanicusMonsterInfoOrBuilder getMonsterListOrBuilder(
-        int index);
-
-    /**
-     * <code>uint32 escaped_monster_num = 6;</code>
-     * @return The escapedMonsterNum.
-     */
-    int getEscapedMonsterNum();
-
-    /**
-     * <code>uint32 round = 3;</code>
-     * @return The round.
-     */
-    int getRound();
-
-    /**
-     * <code>repeated .InBattleMechanicusCardInfo pick_card_list = 15;</code>
-     */
-    java.util.List<emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfo> 
-        getPickCardListList();
-    /**
-     * <code>repeated .InBattleMechanicusCardInfo pick_card_list = 15;</code>
-     */
-    emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfo getPickCardList(int index);
-    /**
-     * <code>repeated .InBattleMechanicusCardInfo pick_card_list = 15;</code>
-     */
-    int getPickCardListCount();
-    /**
-     * <code>repeated .InBattleMechanicusCardInfo pick_card_list = 15;</code>
-     */
-    java.util.List<? extends emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfoOrBuilder> 
-        getPickCardListOrBuilderList();
-    /**
-     * <code>repeated .InBattleMechanicusCardInfo pick_card_list = 15;</code>
-     */
-    emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfoOrBuilder getPickCardListOrBuilder(
-        int index);
-
-    /**
-     * <code>repeated .InBattleMechanicusPlayerInfo player_list = 7;</code>
+     * <code>repeated .InBattleMechanicusPlayerInfo player_list = 12;</code>
      */
     java.util.List<emu.grasscutter.net.proto.InBattleMechanicusPlayerInfoOuterClass.InBattleMechanicusPlayerInfo> 
         getPlayerListList();
     /**
-     * <code>repeated .InBattleMechanicusPlayerInfo player_list = 7;</code>
+     * <code>repeated .InBattleMechanicusPlayerInfo player_list = 12;</code>
      */
     emu.grasscutter.net.proto.InBattleMechanicusPlayerInfoOuterClass.InBattleMechanicusPlayerInfo getPlayerList(int index);
     /**
-     * <code>repeated .InBattleMechanicusPlayerInfo player_list = 7;</code>
+     * <code>repeated .InBattleMechanicusPlayerInfo player_list = 12;</code>
      */
     int getPlayerListCount();
     /**
-     * <code>repeated .InBattleMechanicusPlayerInfo player_list = 7;</code>
+     * <code>repeated .InBattleMechanicusPlayerInfo player_list = 12;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.InBattleMechanicusPlayerInfoOuterClass.InBattleMechanicusPlayerInfoOrBuilder> 
         getPlayerListOrBuilderList();
     /**
-     * <code>repeated .InBattleMechanicusPlayerInfo player_list = 7;</code>
+     * <code>repeated .InBattleMechanicusPlayerInfo player_list = 12;</code>
      */
     emu.grasscutter.net.proto.InBattleMechanicusPlayerInfoOuterClass.InBattleMechanicusPlayerInfoOrBuilder getPlayerListOrBuilder(
         int index);
 
     /**
-     * <code>uint64 wait_begin_time_us = 1;</code>
+     * <code>uint32 total_round = 1;</code>
+     * @return The totalRound.
+     */
+    int getTotalRound();
+
+    /**
+     * <code>uint64 Unk3300_IAPINOLIALF = 14;</code>
+     * @return The unk3300IAPINOLIALF.
+     */
+    long getUnk3300IAPINOLIALF();
+
+    /**
+     * <code>repeated .InBattleMechanicusMonsterInfo monster_list = 9;</code>
+     */
+    java.util.List<emu.grasscutter.net.proto.InBattleMechanicusMonsterInfoOuterClass.InBattleMechanicusMonsterInfo> 
+        getMonsterListList();
+    /**
+     * <code>repeated .InBattleMechanicusMonsterInfo monster_list = 9;</code>
+     */
+    emu.grasscutter.net.proto.InBattleMechanicusMonsterInfoOuterClass.InBattleMechanicusMonsterInfo getMonsterList(int index);
+    /**
+     * <code>repeated .InBattleMechanicusMonsterInfo monster_list = 9;</code>
+     */
+    int getMonsterListCount();
+    /**
+     * <code>repeated .InBattleMechanicusMonsterInfo monster_list = 9;</code>
+     */
+    java.util.List<? extends emu.grasscutter.net.proto.InBattleMechanicusMonsterInfoOuterClass.InBattleMechanicusMonsterInfoOrBuilder> 
+        getMonsterListOrBuilderList();
+    /**
+     * <code>repeated .InBattleMechanicusMonsterInfo monster_list = 9;</code>
+     */
+    emu.grasscutter.net.proto.InBattleMechanicusMonsterInfoOuterClass.InBattleMechanicusMonsterInfoOrBuilder getMonsterListOrBuilder(
+        int index);
+
+    /**
+     * <code>uint32 Unk3300_CIJALCAMHCD = 3;</code>
+     * @return The unk3300CIJALCAMHCD.
+     */
+    int getUnk3300CIJALCAMHCD();
+
+    /**
+     * <code>uint64 wait_begin_time_us = 2;</code>
      * @return The waitBeginTimeUs.
      */
     long getWaitBeginTimeUs();
 
     /**
-     * <code>uint64 begin_time_ms = 2;</code>
-     * @return The beginTimeMs.
+     * <code>repeated .InBattleMechanicusCardInfo history_card_list = 5;</code>
      */
-    long getBeginTimeMs();
+    java.util.List<emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfo> 
+        getHistoryCardListList();
+    /**
+     * <code>repeated .InBattleMechanicusCardInfo history_card_list = 5;</code>
+     */
+    emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfo getHistoryCardList(int index);
+    /**
+     * <code>repeated .InBattleMechanicusCardInfo history_card_list = 5;</code>
+     */
+    int getHistoryCardListCount();
+    /**
+     * <code>repeated .InBattleMechanicusCardInfo history_card_list = 5;</code>
+     */
+    java.util.List<? extends emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfoOrBuilder> 
+        getHistoryCardListOrBuilderList();
+    /**
+     * <code>repeated .InBattleMechanicusCardInfo history_card_list = 5;</code>
+     */
+    emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfoOrBuilder getHistoryCardListOrBuilder(
+        int index);
+
+    /**
+     * <code>repeated .InBattleMechanicusCardInfo pick_card_list = 8;</code>
+     */
+    java.util.List<emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfo> 
+        getPickCardListList();
+    /**
+     * <code>repeated .InBattleMechanicusCardInfo pick_card_list = 8;</code>
+     */
+    emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfo getPickCardList(int index);
+    /**
+     * <code>repeated .InBattleMechanicusCardInfo pick_card_list = 8;</code>
+     */
+    int getPickCardListCount();
+    /**
+     * <code>repeated .InBattleMechanicusCardInfo pick_card_list = 8;</code>
+     */
+    java.util.List<? extends emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfoOrBuilder> 
+        getPickCardListOrBuilderList();
+    /**
+     * <code>repeated .InBattleMechanicusCardInfo pick_card_list = 8;</code>
+     */
+    emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfoOrBuilder getPickCardListOrBuilder(
+        int index);
+
+    /**
+     * <code>uint32 escaped_monster_num = 10;</code>
+     * @return The escapedMonsterNum.
+     */
+    int getEscapedMonsterNum();
+
+    /**
+     * <code>uint32 round = 11;</code>
+     * @return The round.
+     */
+    int getRound();
   }
   /**
    * Protobuf type {@code InBattleMechanicusInfo}
@@ -232,13 +232,13 @@ public final class InBattleMechanicusInfoOuterClass {
       super(builder);
     }
     private InBattleMechanicusInfo() {
-      entranceList_ = emptyIntList();
-      exitList_ = emptyIntList();
-      historyCardList_ = java.util.Collections.emptyList();
+      unk3300MNNDELKIBLG_ = emptyIntList();
+      unk3300GHBEHPGBBIH_ = emptyIntList();
       stage_ = 0;
-      monsterList_ = java.util.Collections.emptyList();
-      pickCardList_ = java.util.Collections.emptyList();
       playerList_ = java.util.Collections.emptyList();
+      monsterList_ = java.util.Collections.emptyList();
+      historyCardList_ = java.util.Collections.emptyList();
+      pickCardList_ = java.util.Collections.emptyList();
     }
 
     @java.lang.Override
@@ -274,79 +274,54 @@ public final class InBattleMechanicusInfoOuterClass {
               break;
             case 8: {
 
-              waitBeginTimeUs_ = input.readUInt64();
+              totalRound_ = input.readUInt32();
               break;
             }
             case 16: {
 
-              beginTimeMs_ = input.readUInt64();
+              waitBeginTimeUs_ = input.readUInt64();
               break;
             }
             case 24: {
 
-              round_ = input.readUInt32();
+              unk3300CIJALCAMHCD_ = input.readUInt32();
               break;
             }
             case 32: {
 
-              buildingStageDuration_ = input.readUInt32();
+              unk3300EBOIGFMOKHK_ = input.readUInt32();
               break;
             }
-            case 40: {
-
-              leftMonster_ = input.readUInt32();
-              break;
-            }
-            case 48: {
-
-              escapedMonsterNum_ = input.readUInt32();
-              break;
-            }
-            case 58: {
-              if (!((mutable_bitField0_ & 0x00000020) != 0)) {
-                playerList_ = new java.util.ArrayList<emu.grasscutter.net.proto.InBattleMechanicusPlayerInfoOuterClass.InBattleMechanicusPlayerInfo>();
-                mutable_bitField0_ |= 0x00000020;
-              }
-              playerList_.add(
-                  input.readMessage(emu.grasscutter.net.proto.InBattleMechanicusPlayerInfoOuterClass.InBattleMechanicusPlayerInfo.parser(), extensionRegistry));
-              break;
-            }
-            case 64: {
-
-              durationMs_ = input.readUInt64();
-              break;
-            }
-            case 72: {
-              int rawValue = input.readEnum();
-
-              stage_ = rawValue;
-              break;
-            }
-            case 80: {
-
-              maxEscapeMonsterNum_ = input.readUInt32();
-              break;
-            }
-            case 90: {
-              if (!((mutable_bitField0_ & 0x00000004) != 0)) {
+            case 42: {
+              if (!((mutable_bitField0_ & 0x00000010) != 0)) {
                 historyCardList_ = new java.util.ArrayList<emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfo>();
-                mutable_bitField0_ |= 0x00000004;
+                mutable_bitField0_ |= 0x00000010;
               }
               historyCardList_.add(
                   input.readMessage(emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfo.parser(), extensionRegistry));
               break;
             }
-            case 96: {
+            case 48: {
 
-              totalRound_ = input.readUInt32();
+              unk3300IFIPKLOGEOF_ = input.readUInt64();
               break;
             }
-            case 104: {
+            case 56: {
+              int rawValue = input.readEnum();
 
-              waitSeconds_ = input.readUInt32();
+              stage_ = rawValue;
               break;
             }
-            case 114: {
+            case 66: {
+              if (!((mutable_bitField0_ & 0x00000020) != 0)) {
+                pickCardList_ = new java.util.ArrayList<emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfo>();
+                mutable_bitField0_ |= 0x00000020;
+              }
+              pickCardList_.add(
+                  input.readMessage(emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfo.parser(), extensionRegistry));
+              break;
+            }
+            case 74: {
               if (!((mutable_bitField0_ & 0x00000008) != 0)) {
                 monsterList_ = new java.util.ArrayList<emu.grasscutter.net.proto.InBattleMechanicusMonsterInfoOuterClass.InBattleMechanicusMonsterInfo>();
                 mutable_bitField0_ |= 0x00000008;
@@ -355,53 +330,78 @@ public final class InBattleMechanicusInfoOuterClass {
                   input.readMessage(emu.grasscutter.net.proto.InBattleMechanicusMonsterInfoOuterClass.InBattleMechanicusMonsterInfo.parser(), extensionRegistry));
               break;
             }
-            case 122: {
-              if (!((mutable_bitField0_ & 0x00000010) != 0)) {
-                pickCardList_ = new java.util.ArrayList<emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfo>();
-                mutable_bitField0_ |= 0x00000010;
-              }
-              pickCardList_.add(
-                  input.readMessage(emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfo.parser(), extensionRegistry));
+            case 80: {
+
+              escapedMonsterNum_ = input.readUInt32();
               break;
             }
-            case 920: {
-              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
-                exitList_ = newIntList();
-                mutable_bitField0_ |= 0x00000002;
-              }
-              exitList_.addInt(input.readUInt32());
+            case 88: {
+
+              round_ = input.readUInt32();
               break;
             }
-            case 922: {
+            case 98: {
+              if (!((mutable_bitField0_ & 0x00000004) != 0)) {
+                playerList_ = new java.util.ArrayList<emu.grasscutter.net.proto.InBattleMechanicusPlayerInfoOuterClass.InBattleMechanicusPlayerInfo>();
+                mutable_bitField0_ |= 0x00000004;
+              }
+              playerList_.add(
+                  input.readMessage(emu.grasscutter.net.proto.InBattleMechanicusPlayerInfoOuterClass.InBattleMechanicusPlayerInfo.parser(), extensionRegistry));
+              break;
+            }
+            case 104: {
+
+              waitSeconds_ = input.readUInt32();
+              break;
+            }
+            case 112: {
+
+              unk3300IAPINOLIALF_ = input.readUInt64();
+              break;
+            }
+            case 120: {
+
+              leftMonsterNum_ = input.readUInt32();
+              break;
+            }
+            case 5248: {
+              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+                unk3300MNNDELKIBLG_ = newIntList();
+                mutable_bitField0_ |= 0x00000001;
+              }
+              unk3300MNNDELKIBLG_.addInt(input.readUInt32());
+              break;
+            }
+            case 5250: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000002) != 0) && input.getBytesUntilLimit() > 0) {
-                exitList_ = newIntList();
-                mutable_bitField0_ |= 0x00000002;
+              if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
+                unk3300MNNDELKIBLG_ = newIntList();
+                mutable_bitField0_ |= 0x00000001;
               }
               while (input.getBytesUntilLimit() > 0) {
-                exitList_.addInt(input.readUInt32());
+                unk3300MNNDELKIBLG_.addInt(input.readUInt32());
               }
               input.popLimit(limit);
               break;
             }
-            case 3280: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                entranceList_ = newIntList();
-                mutable_bitField0_ |= 0x00000001;
+            case 5464: {
+              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
+                unk3300GHBEHPGBBIH_ = newIntList();
+                mutable_bitField0_ |= 0x00000002;
               }
-              entranceList_.addInt(input.readUInt32());
+              unk3300GHBEHPGBBIH_.addInt(input.readUInt32());
               break;
             }
-            case 3282: {
+            case 5466: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
-                entranceList_ = newIntList();
-                mutable_bitField0_ |= 0x00000001;
+              if (!((mutable_bitField0_ & 0x00000002) != 0) && input.getBytesUntilLimit() > 0) {
+                unk3300GHBEHPGBBIH_ = newIntList();
+                mutable_bitField0_ |= 0x00000002;
               }
               while (input.getBytesUntilLimit() > 0) {
-                entranceList_.addInt(input.readUInt32());
+                unk3300GHBEHPGBBIH_.addInt(input.readUInt32());
               }
               input.popLimit(limit);
               break;
@@ -421,23 +421,23 @@ public final class InBattleMechanicusInfoOuterClass {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
       } finally {
-        if (((mutable_bitField0_ & 0x00000020) != 0)) {
-          playerList_ = java.util.Collections.unmodifiableList(playerList_);
-        }
-        if (((mutable_bitField0_ & 0x00000004) != 0)) {
+        if (((mutable_bitField0_ & 0x00000010) != 0)) {
           historyCardList_ = java.util.Collections.unmodifiableList(historyCardList_);
+        }
+        if (((mutable_bitField0_ & 0x00000020) != 0)) {
+          pickCardList_ = java.util.Collections.unmodifiableList(pickCardList_);
         }
         if (((mutable_bitField0_ & 0x00000008) != 0)) {
           monsterList_ = java.util.Collections.unmodifiableList(monsterList_);
         }
-        if (((mutable_bitField0_ & 0x00000010) != 0)) {
-          pickCardList_ = java.util.Collections.unmodifiableList(pickCardList_);
-        }
-        if (((mutable_bitField0_ & 0x00000002) != 0)) {
-          exitList_.makeImmutable(); // C
+        if (((mutable_bitField0_ & 0x00000004) != 0)) {
+          playerList_ = java.util.Collections.unmodifiableList(playerList_);
         }
         if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          entranceList_.makeImmutable(); // C
+          unk3300MNNDELKIBLG_.makeImmutable(); // C
+        }
+        if (((mutable_bitField0_ & 0x00000002) != 0)) {
+          unk3300GHBEHPGBBIH_.makeImmutable(); // C
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -456,15 +456,90 @@ public final class InBattleMechanicusInfoOuterClass {
               emu.grasscutter.net.proto.InBattleMechanicusInfoOuterClass.InBattleMechanicusInfo.class, emu.grasscutter.net.proto.InBattleMechanicusInfoOuterClass.InBattleMechanicusInfo.Builder.class);
     }
 
-    public static final int LEFT_MONSTER_FIELD_NUMBER = 5;
-    private int leftMonster_;
+    public static final int UNK3300_MNNDELKIBLG_FIELD_NUMBER = 656;
+    private com.google.protobuf.Internal.IntList unk3300MNNDELKIBLG_;
     /**
-     * <code>uint32 left_monster = 5;</code>
-     * @return The leftMonster.
+     * <code>repeated uint32 Unk3300_MNNDELKIBLG = 656;</code>
+     * @return A list containing the unk3300MNNDELKIBLG.
      */
     @java.lang.Override
-    public int getLeftMonster() {
-      return leftMonster_;
+    public java.util.List<java.lang.Integer>
+        getUnk3300MNNDELKIBLGList() {
+      return unk3300MNNDELKIBLG_;
+    }
+    /**
+     * <code>repeated uint32 Unk3300_MNNDELKIBLG = 656;</code>
+     * @return The count of unk3300MNNDELKIBLG.
+     */
+    public int getUnk3300MNNDELKIBLGCount() {
+      return unk3300MNNDELKIBLG_.size();
+    }
+    /**
+     * <code>repeated uint32 Unk3300_MNNDELKIBLG = 656;</code>
+     * @param index The index of the element to return.
+     * @return The unk3300MNNDELKIBLG at the given index.
+     */
+    public int getUnk3300MNNDELKIBLG(int index) {
+      return unk3300MNNDELKIBLG_.getInt(index);
+    }
+    private int unk3300MNNDELKIBLGMemoizedSerializedSize = -1;
+
+    public static final int UNK3300_GHBEHPGBBIH_FIELD_NUMBER = 683;
+    private com.google.protobuf.Internal.IntList unk3300GHBEHPGBBIH_;
+    /**
+     * <code>repeated uint32 Unk3300_GHBEHPGBBIH = 683;</code>
+     * @return A list containing the unk3300GHBEHPGBBIH.
+     */
+    @java.lang.Override
+    public java.util.List<java.lang.Integer>
+        getUnk3300GHBEHPGBBIHList() {
+      return unk3300GHBEHPGBBIH_;
+    }
+    /**
+     * <code>repeated uint32 Unk3300_GHBEHPGBBIH = 683;</code>
+     * @return The count of unk3300GHBEHPGBBIH.
+     */
+    public int getUnk3300GHBEHPGBBIHCount() {
+      return unk3300GHBEHPGBBIH_.size();
+    }
+    /**
+     * <code>repeated uint32 Unk3300_GHBEHPGBBIH = 683;</code>
+     * @param index The index of the element to return.
+     * @return The unk3300GHBEHPGBBIH at the given index.
+     */
+    public int getUnk3300GHBEHPGBBIH(int index) {
+      return unk3300GHBEHPGBBIH_.getInt(index);
+    }
+    private int unk3300GHBEHPGBBIHMemoizedSerializedSize = -1;
+
+    public static final int STAGE_FIELD_NUMBER = 7;
+    private int stage_;
+    /**
+     * <code>.InBattleMechanicusStageType stage = 7;</code>
+     * @return The enum numeric value on the wire for stage.
+     */
+    @java.lang.Override public int getStageValue() {
+      return stage_;
+    }
+    /**
+     * <code>.InBattleMechanicusStageType stage = 7;</code>
+     * @return The stage.
+     */
+    @java.lang.Override public emu.grasscutter.net.proto.InBattleMechanicusStageTypeOuterClass.InBattleMechanicusStageType getStage() {
+      @SuppressWarnings("deprecation")
+      emu.grasscutter.net.proto.InBattleMechanicusStageTypeOuterClass.InBattleMechanicusStageType result = emu.grasscutter.net.proto.InBattleMechanicusStageTypeOuterClass.InBattleMechanicusStageType.valueOf(stage_);
+      return result == null ? emu.grasscutter.net.proto.InBattleMechanicusStageTypeOuterClass.InBattleMechanicusStageType.UNRECOGNIZED : result;
+    }
+
+    public static final int UNK3300_EBOIGFMOKHK_FIELD_NUMBER = 4;
+    private int unk3300EBOIGFMOKHK_;
+    /**
+     * <code>uint32 Unk3300_EBOIGFMOKHK = 4;</code>
+     * @return The unk3300EBOIGFMOKHK.
+     */
+    @java.lang.Override
+    public int getUnk3300EBOIGFMOKHK() {
+      return unk3300EBOIGFMOKHK_;
     }
 
     public static final int WAIT_SECONDS_FIELD_NUMBER = 13;
@@ -478,278 +553,39 @@ public final class InBattleMechanicusInfoOuterClass {
       return waitSeconds_;
     }
 
-    public static final int ENTRANCE_LIST_FIELD_NUMBER = 410;
-    private com.google.protobuf.Internal.IntList entranceList_;
+    public static final int LEFT_MONSTER_NUM_FIELD_NUMBER = 15;
+    private int leftMonsterNum_;
     /**
-     * <code>repeated uint32 entrance_list = 410;</code>
-     * @return A list containing the entranceList.
+     * <code>uint32 left_monster_num = 15;</code>
+     * @return The leftMonsterNum.
      */
     @java.lang.Override
-    public java.util.List<java.lang.Integer>
-        getEntranceListList() {
-      return entranceList_;
-    }
-    /**
-     * <code>repeated uint32 entrance_list = 410;</code>
-     * @return The count of entranceList.
-     */
-    public int getEntranceListCount() {
-      return entranceList_.size();
-    }
-    /**
-     * <code>repeated uint32 entrance_list = 410;</code>
-     * @param index The index of the element to return.
-     * @return The entranceList at the given index.
-     */
-    public int getEntranceList(int index) {
-      return entranceList_.getInt(index);
-    }
-    private int entranceListMemoizedSerializedSize = -1;
-
-    public static final int EXIT_LIST_FIELD_NUMBER = 115;
-    private com.google.protobuf.Internal.IntList exitList_;
-    /**
-     * <code>repeated uint32 exit_list = 115;</code>
-     * @return A list containing the exitList.
-     */
-    @java.lang.Override
-    public java.util.List<java.lang.Integer>
-        getExitListList() {
-      return exitList_;
-    }
-    /**
-     * <code>repeated uint32 exit_list = 115;</code>
-     * @return The count of exitList.
-     */
-    public int getExitListCount() {
-      return exitList_.size();
-    }
-    /**
-     * <code>repeated uint32 exit_list = 115;</code>
-     * @param index The index of the element to return.
-     * @return The exitList at the given index.
-     */
-    public int getExitList(int index) {
-      return exitList_.getInt(index);
-    }
-    private int exitListMemoizedSerializedSize = -1;
-
-    public static final int HISTORY_CARD_LIST_FIELD_NUMBER = 11;
-    private java.util.List<emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfo> historyCardList_;
-    /**
-     * <code>repeated .InBattleMechanicusCardInfo history_card_list = 11;</code>
-     */
-    @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfo> getHistoryCardListList() {
-      return historyCardList_;
-    }
-    /**
-     * <code>repeated .InBattleMechanicusCardInfo history_card_list = 11;</code>
-     */
-    @java.lang.Override
-    public java.util.List<? extends emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfoOrBuilder> 
-        getHistoryCardListOrBuilderList() {
-      return historyCardList_;
-    }
-    /**
-     * <code>repeated .InBattleMechanicusCardInfo history_card_list = 11;</code>
-     */
-    @java.lang.Override
-    public int getHistoryCardListCount() {
-      return historyCardList_.size();
-    }
-    /**
-     * <code>repeated .InBattleMechanicusCardInfo history_card_list = 11;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfo getHistoryCardList(int index) {
-      return historyCardList_.get(index);
-    }
-    /**
-     * <code>repeated .InBattleMechanicusCardInfo history_card_list = 11;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfoOrBuilder getHistoryCardListOrBuilder(
-        int index) {
-      return historyCardList_.get(index);
+    public int getLeftMonsterNum() {
+      return leftMonsterNum_;
     }
 
-    public static final int MAX_ESCAPE_MONSTER_NUM_FIELD_NUMBER = 10;
-    private int maxEscapeMonsterNum_;
+    public static final int UNK3300_IFIPKLOGEOF_FIELD_NUMBER = 6;
+    private long unk3300IFIPKLOGEOF_;
     /**
-     * <code>uint32 max_escape_monster_num = 10;</code>
-     * @return The maxEscapeMonsterNum.
+     * <code>uint64 Unk3300_IFIPKLOGEOF = 6;</code>
+     * @return The unk3300IFIPKLOGEOF.
      */
     @java.lang.Override
-    public int getMaxEscapeMonsterNum() {
-      return maxEscapeMonsterNum_;
+    public long getUnk3300IFIPKLOGEOF() {
+      return unk3300IFIPKLOGEOF_;
     }
 
-    public static final int BUILDING_STAGE_DURATION_FIELD_NUMBER = 4;
-    private int buildingStageDuration_;
-    /**
-     * <code>uint32 building_stage_duration = 4;</code>
-     * @return The buildingStageDuration.
-     */
-    @java.lang.Override
-    public int getBuildingStageDuration() {
-      return buildingStageDuration_;
-    }
-
-    public static final int DURATION_MS_FIELD_NUMBER = 8;
-    private long durationMs_;
-    /**
-     * <code>uint64 duration_ms = 8;</code>
-     * @return The durationMs.
-     */
-    @java.lang.Override
-    public long getDurationMs() {
-      return durationMs_;
-    }
-
-    public static final int STAGE_FIELD_NUMBER = 9;
-    private int stage_;
-    /**
-     * <code>.InBattleMechanicusStageType stage = 9;</code>
-     * @return The enum numeric value on the wire for stage.
-     */
-    @java.lang.Override public int getStageValue() {
-      return stage_;
-    }
-    /**
-     * <code>.InBattleMechanicusStageType stage = 9;</code>
-     * @return The stage.
-     */
-    @java.lang.Override public emu.grasscutter.net.proto.InBattleMechanicusStageTypeOuterClass.InBattleMechanicusStageType getStage() {
-      @SuppressWarnings("deprecation")
-      emu.grasscutter.net.proto.InBattleMechanicusStageTypeOuterClass.InBattleMechanicusStageType result = emu.grasscutter.net.proto.InBattleMechanicusStageTypeOuterClass.InBattleMechanicusStageType.valueOf(stage_);
-      return result == null ? emu.grasscutter.net.proto.InBattleMechanicusStageTypeOuterClass.InBattleMechanicusStageType.UNRECOGNIZED : result;
-    }
-
-    public static final int TOTAL_ROUND_FIELD_NUMBER = 12;
-    private int totalRound_;
-    /**
-     * <code>uint32 total_round = 12;</code>
-     * @return The totalRound.
-     */
-    @java.lang.Override
-    public int getTotalRound() {
-      return totalRound_;
-    }
-
-    public static final int MONSTER_LIST_FIELD_NUMBER = 14;
-    private java.util.List<emu.grasscutter.net.proto.InBattleMechanicusMonsterInfoOuterClass.InBattleMechanicusMonsterInfo> monsterList_;
-    /**
-     * <code>repeated .InBattleMechanicusMonsterInfo monster_list = 14;</code>
-     */
-    @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.InBattleMechanicusMonsterInfoOuterClass.InBattleMechanicusMonsterInfo> getMonsterListList() {
-      return monsterList_;
-    }
-    /**
-     * <code>repeated .InBattleMechanicusMonsterInfo monster_list = 14;</code>
-     */
-    @java.lang.Override
-    public java.util.List<? extends emu.grasscutter.net.proto.InBattleMechanicusMonsterInfoOuterClass.InBattleMechanicusMonsterInfoOrBuilder> 
-        getMonsterListOrBuilderList() {
-      return monsterList_;
-    }
-    /**
-     * <code>repeated .InBattleMechanicusMonsterInfo monster_list = 14;</code>
-     */
-    @java.lang.Override
-    public int getMonsterListCount() {
-      return monsterList_.size();
-    }
-    /**
-     * <code>repeated .InBattleMechanicusMonsterInfo monster_list = 14;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.InBattleMechanicusMonsterInfoOuterClass.InBattleMechanicusMonsterInfo getMonsterList(int index) {
-      return monsterList_.get(index);
-    }
-    /**
-     * <code>repeated .InBattleMechanicusMonsterInfo monster_list = 14;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.InBattleMechanicusMonsterInfoOuterClass.InBattleMechanicusMonsterInfoOrBuilder getMonsterListOrBuilder(
-        int index) {
-      return monsterList_.get(index);
-    }
-
-    public static final int ESCAPED_MONSTER_NUM_FIELD_NUMBER = 6;
-    private int escapedMonsterNum_;
-    /**
-     * <code>uint32 escaped_monster_num = 6;</code>
-     * @return The escapedMonsterNum.
-     */
-    @java.lang.Override
-    public int getEscapedMonsterNum() {
-      return escapedMonsterNum_;
-    }
-
-    public static final int ROUND_FIELD_NUMBER = 3;
-    private int round_;
-    /**
-     * <code>uint32 round = 3;</code>
-     * @return The round.
-     */
-    @java.lang.Override
-    public int getRound() {
-      return round_;
-    }
-
-    public static final int PICK_CARD_LIST_FIELD_NUMBER = 15;
-    private java.util.List<emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfo> pickCardList_;
-    /**
-     * <code>repeated .InBattleMechanicusCardInfo pick_card_list = 15;</code>
-     */
-    @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfo> getPickCardListList() {
-      return pickCardList_;
-    }
-    /**
-     * <code>repeated .InBattleMechanicusCardInfo pick_card_list = 15;</code>
-     */
-    @java.lang.Override
-    public java.util.List<? extends emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfoOrBuilder> 
-        getPickCardListOrBuilderList() {
-      return pickCardList_;
-    }
-    /**
-     * <code>repeated .InBattleMechanicusCardInfo pick_card_list = 15;</code>
-     */
-    @java.lang.Override
-    public int getPickCardListCount() {
-      return pickCardList_.size();
-    }
-    /**
-     * <code>repeated .InBattleMechanicusCardInfo pick_card_list = 15;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfo getPickCardList(int index) {
-      return pickCardList_.get(index);
-    }
-    /**
-     * <code>repeated .InBattleMechanicusCardInfo pick_card_list = 15;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfoOrBuilder getPickCardListOrBuilder(
-        int index) {
-      return pickCardList_.get(index);
-    }
-
-    public static final int PLAYER_LIST_FIELD_NUMBER = 7;
+    public static final int PLAYER_LIST_FIELD_NUMBER = 12;
     private java.util.List<emu.grasscutter.net.proto.InBattleMechanicusPlayerInfoOuterClass.InBattleMechanicusPlayerInfo> playerList_;
     /**
-     * <code>repeated .InBattleMechanicusPlayerInfo player_list = 7;</code>
+     * <code>repeated .InBattleMechanicusPlayerInfo player_list = 12;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.InBattleMechanicusPlayerInfoOuterClass.InBattleMechanicusPlayerInfo> getPlayerListList() {
       return playerList_;
     }
     /**
-     * <code>repeated .InBattleMechanicusPlayerInfo player_list = 7;</code>
+     * <code>repeated .InBattleMechanicusPlayerInfo player_list = 12;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.InBattleMechanicusPlayerInfoOuterClass.InBattleMechanicusPlayerInfoOrBuilder> 
@@ -757,21 +593,21 @@ public final class InBattleMechanicusInfoOuterClass {
       return playerList_;
     }
     /**
-     * <code>repeated .InBattleMechanicusPlayerInfo player_list = 7;</code>
+     * <code>repeated .InBattleMechanicusPlayerInfo player_list = 12;</code>
      */
     @java.lang.Override
     public int getPlayerListCount() {
       return playerList_.size();
     }
     /**
-     * <code>repeated .InBattleMechanicusPlayerInfo player_list = 7;</code>
+     * <code>repeated .InBattleMechanicusPlayerInfo player_list = 12;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.InBattleMechanicusPlayerInfoOuterClass.InBattleMechanicusPlayerInfo getPlayerList(int index) {
       return playerList_.get(index);
     }
     /**
-     * <code>repeated .InBattleMechanicusPlayerInfo player_list = 7;</code>
+     * <code>repeated .InBattleMechanicusPlayerInfo player_list = 12;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.InBattleMechanicusPlayerInfoOuterClass.InBattleMechanicusPlayerInfoOrBuilder getPlayerListOrBuilder(
@@ -779,10 +615,83 @@ public final class InBattleMechanicusInfoOuterClass {
       return playerList_.get(index);
     }
 
-    public static final int WAIT_BEGIN_TIME_US_FIELD_NUMBER = 1;
+    public static final int TOTAL_ROUND_FIELD_NUMBER = 1;
+    private int totalRound_;
+    /**
+     * <code>uint32 total_round = 1;</code>
+     * @return The totalRound.
+     */
+    @java.lang.Override
+    public int getTotalRound() {
+      return totalRound_;
+    }
+
+    public static final int UNK3300_IAPINOLIALF_FIELD_NUMBER = 14;
+    private long unk3300IAPINOLIALF_;
+    /**
+     * <code>uint64 Unk3300_IAPINOLIALF = 14;</code>
+     * @return The unk3300IAPINOLIALF.
+     */
+    @java.lang.Override
+    public long getUnk3300IAPINOLIALF() {
+      return unk3300IAPINOLIALF_;
+    }
+
+    public static final int MONSTER_LIST_FIELD_NUMBER = 9;
+    private java.util.List<emu.grasscutter.net.proto.InBattleMechanicusMonsterInfoOuterClass.InBattleMechanicusMonsterInfo> monsterList_;
+    /**
+     * <code>repeated .InBattleMechanicusMonsterInfo monster_list = 9;</code>
+     */
+    @java.lang.Override
+    public java.util.List<emu.grasscutter.net.proto.InBattleMechanicusMonsterInfoOuterClass.InBattleMechanicusMonsterInfo> getMonsterListList() {
+      return monsterList_;
+    }
+    /**
+     * <code>repeated .InBattleMechanicusMonsterInfo monster_list = 9;</code>
+     */
+    @java.lang.Override
+    public java.util.List<? extends emu.grasscutter.net.proto.InBattleMechanicusMonsterInfoOuterClass.InBattleMechanicusMonsterInfoOrBuilder> 
+        getMonsterListOrBuilderList() {
+      return monsterList_;
+    }
+    /**
+     * <code>repeated .InBattleMechanicusMonsterInfo monster_list = 9;</code>
+     */
+    @java.lang.Override
+    public int getMonsterListCount() {
+      return monsterList_.size();
+    }
+    /**
+     * <code>repeated .InBattleMechanicusMonsterInfo monster_list = 9;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.InBattleMechanicusMonsterInfoOuterClass.InBattleMechanicusMonsterInfo getMonsterList(int index) {
+      return monsterList_.get(index);
+    }
+    /**
+     * <code>repeated .InBattleMechanicusMonsterInfo monster_list = 9;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.InBattleMechanicusMonsterInfoOuterClass.InBattleMechanicusMonsterInfoOrBuilder getMonsterListOrBuilder(
+        int index) {
+      return monsterList_.get(index);
+    }
+
+    public static final int UNK3300_CIJALCAMHCD_FIELD_NUMBER = 3;
+    private int unk3300CIJALCAMHCD_;
+    /**
+     * <code>uint32 Unk3300_CIJALCAMHCD = 3;</code>
+     * @return The unk3300CIJALCAMHCD.
+     */
+    @java.lang.Override
+    public int getUnk3300CIJALCAMHCD() {
+      return unk3300CIJALCAMHCD_;
+    }
+
+    public static final int WAIT_BEGIN_TIME_US_FIELD_NUMBER = 2;
     private long waitBeginTimeUs_;
     /**
-     * <code>uint64 wait_begin_time_us = 1;</code>
+     * <code>uint64 wait_begin_time_us = 2;</code>
      * @return The waitBeginTimeUs.
      */
     @java.lang.Override
@@ -790,15 +699,106 @@ public final class InBattleMechanicusInfoOuterClass {
       return waitBeginTimeUs_;
     }
 
-    public static final int BEGIN_TIME_MS_FIELD_NUMBER = 2;
-    private long beginTimeMs_;
+    public static final int HISTORY_CARD_LIST_FIELD_NUMBER = 5;
+    private java.util.List<emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfo> historyCardList_;
     /**
-     * <code>uint64 begin_time_ms = 2;</code>
-     * @return The beginTimeMs.
+     * <code>repeated .InBattleMechanicusCardInfo history_card_list = 5;</code>
      */
     @java.lang.Override
-    public long getBeginTimeMs() {
-      return beginTimeMs_;
+    public java.util.List<emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfo> getHistoryCardListList() {
+      return historyCardList_;
+    }
+    /**
+     * <code>repeated .InBattleMechanicusCardInfo history_card_list = 5;</code>
+     */
+    @java.lang.Override
+    public java.util.List<? extends emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfoOrBuilder> 
+        getHistoryCardListOrBuilderList() {
+      return historyCardList_;
+    }
+    /**
+     * <code>repeated .InBattleMechanicusCardInfo history_card_list = 5;</code>
+     */
+    @java.lang.Override
+    public int getHistoryCardListCount() {
+      return historyCardList_.size();
+    }
+    /**
+     * <code>repeated .InBattleMechanicusCardInfo history_card_list = 5;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfo getHistoryCardList(int index) {
+      return historyCardList_.get(index);
+    }
+    /**
+     * <code>repeated .InBattleMechanicusCardInfo history_card_list = 5;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfoOrBuilder getHistoryCardListOrBuilder(
+        int index) {
+      return historyCardList_.get(index);
+    }
+
+    public static final int PICK_CARD_LIST_FIELD_NUMBER = 8;
+    private java.util.List<emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfo> pickCardList_;
+    /**
+     * <code>repeated .InBattleMechanicusCardInfo pick_card_list = 8;</code>
+     */
+    @java.lang.Override
+    public java.util.List<emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfo> getPickCardListList() {
+      return pickCardList_;
+    }
+    /**
+     * <code>repeated .InBattleMechanicusCardInfo pick_card_list = 8;</code>
+     */
+    @java.lang.Override
+    public java.util.List<? extends emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfoOrBuilder> 
+        getPickCardListOrBuilderList() {
+      return pickCardList_;
+    }
+    /**
+     * <code>repeated .InBattleMechanicusCardInfo pick_card_list = 8;</code>
+     */
+    @java.lang.Override
+    public int getPickCardListCount() {
+      return pickCardList_.size();
+    }
+    /**
+     * <code>repeated .InBattleMechanicusCardInfo pick_card_list = 8;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfo getPickCardList(int index) {
+      return pickCardList_.get(index);
+    }
+    /**
+     * <code>repeated .InBattleMechanicusCardInfo pick_card_list = 8;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfoOrBuilder getPickCardListOrBuilder(
+        int index) {
+      return pickCardList_.get(index);
+    }
+
+    public static final int ESCAPED_MONSTER_NUM_FIELD_NUMBER = 10;
+    private int escapedMonsterNum_;
+    /**
+     * <code>uint32 escaped_monster_num = 10;</code>
+     * @return The escapedMonsterNum.
+     */
+    @java.lang.Override
+    public int getEscapedMonsterNum() {
+      return escapedMonsterNum_;
+    }
+
+    public static final int ROUND_FIELD_NUMBER = 11;
+    private int round_;
+    /**
+     * <code>uint32 round = 11;</code>
+     * @return The round.
+     */
+    @java.lang.Override
+    public int getRound() {
+      return round_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -816,64 +816,64 @@ public final class InBattleMechanicusInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
+      if (totalRound_ != 0) {
+        output.writeUInt32(1, totalRound_);
+      }
       if (waitBeginTimeUs_ != 0L) {
-        output.writeUInt64(1, waitBeginTimeUs_);
+        output.writeUInt64(2, waitBeginTimeUs_);
       }
-      if (beginTimeMs_ != 0L) {
-        output.writeUInt64(2, beginTimeMs_);
+      if (unk3300CIJALCAMHCD_ != 0) {
+        output.writeUInt32(3, unk3300CIJALCAMHCD_);
       }
-      if (round_ != 0) {
-        output.writeUInt32(3, round_);
-      }
-      if (buildingStageDuration_ != 0) {
-        output.writeUInt32(4, buildingStageDuration_);
-      }
-      if (leftMonster_ != 0) {
-        output.writeUInt32(5, leftMonster_);
-      }
-      if (escapedMonsterNum_ != 0) {
-        output.writeUInt32(6, escapedMonsterNum_);
-      }
-      for (int i = 0; i < playerList_.size(); i++) {
-        output.writeMessage(7, playerList_.get(i));
-      }
-      if (durationMs_ != 0L) {
-        output.writeUInt64(8, durationMs_);
-      }
-      if (stage_ != emu.grasscutter.net.proto.InBattleMechanicusStageTypeOuterClass.InBattleMechanicusStageType.IN_BATTLE_MECHANICUS_STAGE_TYPE_NONE.getNumber()) {
-        output.writeEnum(9, stage_);
-      }
-      if (maxEscapeMonsterNum_ != 0) {
-        output.writeUInt32(10, maxEscapeMonsterNum_);
+      if (unk3300EBOIGFMOKHK_ != 0) {
+        output.writeUInt32(4, unk3300EBOIGFMOKHK_);
       }
       for (int i = 0; i < historyCardList_.size(); i++) {
-        output.writeMessage(11, historyCardList_.get(i));
+        output.writeMessage(5, historyCardList_.get(i));
       }
-      if (totalRound_ != 0) {
-        output.writeUInt32(12, totalRound_);
+      if (unk3300IFIPKLOGEOF_ != 0L) {
+        output.writeUInt64(6, unk3300IFIPKLOGEOF_);
+      }
+      if (stage_ != emu.grasscutter.net.proto.InBattleMechanicusStageTypeOuterClass.InBattleMechanicusStageType.IN_BATTLE_MECHANICUS_STAGE_TYPE_NONE.getNumber()) {
+        output.writeEnum(7, stage_);
+      }
+      for (int i = 0; i < pickCardList_.size(); i++) {
+        output.writeMessage(8, pickCardList_.get(i));
+      }
+      for (int i = 0; i < monsterList_.size(); i++) {
+        output.writeMessage(9, monsterList_.get(i));
+      }
+      if (escapedMonsterNum_ != 0) {
+        output.writeUInt32(10, escapedMonsterNum_);
+      }
+      if (round_ != 0) {
+        output.writeUInt32(11, round_);
+      }
+      for (int i = 0; i < playerList_.size(); i++) {
+        output.writeMessage(12, playerList_.get(i));
       }
       if (waitSeconds_ != 0) {
         output.writeUInt32(13, waitSeconds_);
       }
-      for (int i = 0; i < monsterList_.size(); i++) {
-        output.writeMessage(14, monsterList_.get(i));
+      if (unk3300IAPINOLIALF_ != 0L) {
+        output.writeUInt64(14, unk3300IAPINOLIALF_);
       }
-      for (int i = 0; i < pickCardList_.size(); i++) {
-        output.writeMessage(15, pickCardList_.get(i));
+      if (leftMonsterNum_ != 0) {
+        output.writeUInt32(15, leftMonsterNum_);
       }
-      if (getExitListList().size() > 0) {
-        output.writeUInt32NoTag(922);
-        output.writeUInt32NoTag(exitListMemoizedSerializedSize);
+      if (getUnk3300MNNDELKIBLGList().size() > 0) {
+        output.writeUInt32NoTag(5250);
+        output.writeUInt32NoTag(unk3300MNNDELKIBLGMemoizedSerializedSize);
       }
-      for (int i = 0; i < exitList_.size(); i++) {
-        output.writeUInt32NoTag(exitList_.getInt(i));
+      for (int i = 0; i < unk3300MNNDELKIBLG_.size(); i++) {
+        output.writeUInt32NoTag(unk3300MNNDELKIBLG_.getInt(i));
       }
-      if (getEntranceListList().size() > 0) {
-        output.writeUInt32NoTag(3282);
-        output.writeUInt32NoTag(entranceListMemoizedSerializedSize);
+      if (getUnk3300GHBEHPGBBIHList().size() > 0) {
+        output.writeUInt32NoTag(5466);
+        output.writeUInt32NoTag(unk3300GHBEHPGBBIHMemoizedSerializedSize);
       }
-      for (int i = 0; i < entranceList_.size(); i++) {
-        output.writeUInt32NoTag(entranceList_.getInt(i));
+      for (int i = 0; i < unk3300GHBEHPGBBIH_.size(); i++) {
+        output.writeUInt32NoTag(unk3300GHBEHPGBBIH_.getInt(i));
       }
       unknownFields.writeTo(output);
     }
@@ -884,93 +884,93 @@ public final class InBattleMechanicusInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (totalRound_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(1, totalRound_);
+      }
       if (waitBeginTimeUs_ != 0L) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt64Size(1, waitBeginTimeUs_);
+          .computeUInt64Size(2, waitBeginTimeUs_);
       }
-      if (beginTimeMs_ != 0L) {
+      if (unk3300CIJALCAMHCD_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt64Size(2, beginTimeMs_);
+          .computeUInt32Size(3, unk3300CIJALCAMHCD_);
       }
-      if (round_ != 0) {
+      if (unk3300EBOIGFMOKHK_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, round_);
-      }
-      if (buildingStageDuration_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, buildingStageDuration_);
-      }
-      if (leftMonster_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, leftMonster_);
-      }
-      if (escapedMonsterNum_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, escapedMonsterNum_);
-      }
-      for (int i = 0; i < playerList_.size(); i++) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(7, playerList_.get(i));
-      }
-      if (durationMs_ != 0L) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt64Size(8, durationMs_);
-      }
-      if (stage_ != emu.grasscutter.net.proto.InBattleMechanicusStageTypeOuterClass.InBattleMechanicusStageType.IN_BATTLE_MECHANICUS_STAGE_TYPE_NONE.getNumber()) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(9, stage_);
-      }
-      if (maxEscapeMonsterNum_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, maxEscapeMonsterNum_);
+          .computeUInt32Size(4, unk3300EBOIGFMOKHK_);
       }
       for (int i = 0; i < historyCardList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(11, historyCardList_.get(i));
+          .computeMessageSize(5, historyCardList_.get(i));
       }
-      if (totalRound_ != 0) {
+      if (unk3300IFIPKLOGEOF_ != 0L) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, totalRound_);
+          .computeUInt64Size(6, unk3300IFIPKLOGEOF_);
+      }
+      if (stage_ != emu.grasscutter.net.proto.InBattleMechanicusStageTypeOuterClass.InBattleMechanicusStageType.IN_BATTLE_MECHANICUS_STAGE_TYPE_NONE.getNumber()) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeEnumSize(7, stage_);
+      }
+      for (int i = 0; i < pickCardList_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(8, pickCardList_.get(i));
+      }
+      for (int i = 0; i < monsterList_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(9, monsterList_.get(i));
+      }
+      if (escapedMonsterNum_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(10, escapedMonsterNum_);
+      }
+      if (round_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(11, round_);
+      }
+      for (int i = 0; i < playerList_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(12, playerList_.get(i));
       }
       if (waitSeconds_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(13, waitSeconds_);
       }
-      for (int i = 0; i < monsterList_.size(); i++) {
+      if (unk3300IAPINOLIALF_ != 0L) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(14, monsterList_.get(i));
+          .computeUInt64Size(14, unk3300IAPINOLIALF_);
       }
-      for (int i = 0; i < pickCardList_.size(); i++) {
+      if (leftMonsterNum_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(15, pickCardList_.get(i));
+          .computeUInt32Size(15, leftMonsterNum_);
       }
       {
         int dataSize = 0;
-        for (int i = 0; i < exitList_.size(); i++) {
+        for (int i = 0; i < unk3300MNNDELKIBLG_.size(); i++) {
           dataSize += com.google.protobuf.CodedOutputStream
-            .computeUInt32SizeNoTag(exitList_.getInt(i));
+            .computeUInt32SizeNoTag(unk3300MNNDELKIBLG_.getInt(i));
         }
         size += dataSize;
-        if (!getExitListList().isEmpty()) {
+        if (!getUnk3300MNNDELKIBLGList().isEmpty()) {
           size += 2;
           size += com.google.protobuf.CodedOutputStream
               .computeInt32SizeNoTag(dataSize);
         }
-        exitListMemoizedSerializedSize = dataSize;
+        unk3300MNNDELKIBLGMemoizedSerializedSize = dataSize;
       }
       {
         int dataSize = 0;
-        for (int i = 0; i < entranceList_.size(); i++) {
+        for (int i = 0; i < unk3300GHBEHPGBBIH_.size(); i++) {
           dataSize += com.google.protobuf.CodedOutputStream
-            .computeUInt32SizeNoTag(entranceList_.getInt(i));
+            .computeUInt32SizeNoTag(unk3300GHBEHPGBBIH_.getInt(i));
         }
         size += dataSize;
-        if (!getEntranceListList().isEmpty()) {
+        if (!getUnk3300GHBEHPGBBIHList().isEmpty()) {
           size += 2;
           size += com.google.protobuf.CodedOutputStream
               .computeInt32SizeNoTag(dataSize);
         }
-        entranceListMemoizedSerializedSize = dataSize;
+        unk3300GHBEHPGBBIHMemoizedSerializedSize = dataSize;
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -987,39 +987,39 @@ public final class InBattleMechanicusInfoOuterClass {
       }
       emu.grasscutter.net.proto.InBattleMechanicusInfoOuterClass.InBattleMechanicusInfo other = (emu.grasscutter.net.proto.InBattleMechanicusInfoOuterClass.InBattleMechanicusInfo) obj;
 
-      if (getLeftMonster()
-          != other.getLeftMonster()) return false;
+      if (!getUnk3300MNNDELKIBLGList()
+          .equals(other.getUnk3300MNNDELKIBLGList())) return false;
+      if (!getUnk3300GHBEHPGBBIHList()
+          .equals(other.getUnk3300GHBEHPGBBIHList())) return false;
+      if (stage_ != other.stage_) return false;
+      if (getUnk3300EBOIGFMOKHK()
+          != other.getUnk3300EBOIGFMOKHK()) return false;
       if (getWaitSeconds()
           != other.getWaitSeconds()) return false;
-      if (!getEntranceListList()
-          .equals(other.getEntranceListList())) return false;
-      if (!getExitListList()
-          .equals(other.getExitListList())) return false;
-      if (!getHistoryCardListList()
-          .equals(other.getHistoryCardListList())) return false;
-      if (getMaxEscapeMonsterNum()
-          != other.getMaxEscapeMonsterNum()) return false;
-      if (getBuildingStageDuration()
-          != other.getBuildingStageDuration()) return false;
-      if (getDurationMs()
-          != other.getDurationMs()) return false;
-      if (stage_ != other.stage_) return false;
+      if (getLeftMonsterNum()
+          != other.getLeftMonsterNum()) return false;
+      if (getUnk3300IFIPKLOGEOF()
+          != other.getUnk3300IFIPKLOGEOF()) return false;
+      if (!getPlayerListList()
+          .equals(other.getPlayerListList())) return false;
       if (getTotalRound()
           != other.getTotalRound()) return false;
+      if (getUnk3300IAPINOLIALF()
+          != other.getUnk3300IAPINOLIALF()) return false;
       if (!getMonsterListList()
           .equals(other.getMonsterListList())) return false;
+      if (getUnk3300CIJALCAMHCD()
+          != other.getUnk3300CIJALCAMHCD()) return false;
+      if (getWaitBeginTimeUs()
+          != other.getWaitBeginTimeUs()) return false;
+      if (!getHistoryCardListList()
+          .equals(other.getHistoryCardListList())) return false;
+      if (!getPickCardListList()
+          .equals(other.getPickCardListList())) return false;
       if (getEscapedMonsterNum()
           != other.getEscapedMonsterNum()) return false;
       if (getRound()
           != other.getRound()) return false;
-      if (!getPickCardListList()
-          .equals(other.getPickCardListList())) return false;
-      if (!getPlayerListList()
-          .equals(other.getPlayerListList())) return false;
-      if (getWaitBeginTimeUs()
-          != other.getWaitBeginTimeUs()) return false;
-      if (getBeginTimeMs()
-          != other.getBeginTimeMs()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -1031,55 +1031,55 @@ public final class InBattleMechanicusInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + LEFT_MONSTER_FIELD_NUMBER;
-      hash = (53 * hash) + getLeftMonster();
+      if (getUnk3300MNNDELKIBLGCount() > 0) {
+        hash = (37 * hash) + UNK3300_MNNDELKIBLG_FIELD_NUMBER;
+        hash = (53 * hash) + getUnk3300MNNDELKIBLGList().hashCode();
+      }
+      if (getUnk3300GHBEHPGBBIHCount() > 0) {
+        hash = (37 * hash) + UNK3300_GHBEHPGBBIH_FIELD_NUMBER;
+        hash = (53 * hash) + getUnk3300GHBEHPGBBIHList().hashCode();
+      }
+      hash = (37 * hash) + STAGE_FIELD_NUMBER;
+      hash = (53 * hash) + stage_;
+      hash = (37 * hash) + UNK3300_EBOIGFMOKHK_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300EBOIGFMOKHK();
       hash = (37 * hash) + WAIT_SECONDS_FIELD_NUMBER;
       hash = (53 * hash) + getWaitSeconds();
-      if (getEntranceListCount() > 0) {
-        hash = (37 * hash) + ENTRANCE_LIST_FIELD_NUMBER;
-        hash = (53 * hash) + getEntranceListList().hashCode();
+      hash = (37 * hash) + LEFT_MONSTER_NUM_FIELD_NUMBER;
+      hash = (53 * hash) + getLeftMonsterNum();
+      hash = (37 * hash) + UNK3300_IFIPKLOGEOF_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
+          getUnk3300IFIPKLOGEOF());
+      if (getPlayerListCount() > 0) {
+        hash = (37 * hash) + PLAYER_LIST_FIELD_NUMBER;
+        hash = (53 * hash) + getPlayerListList().hashCode();
       }
-      if (getExitListCount() > 0) {
-        hash = (37 * hash) + EXIT_LIST_FIELD_NUMBER;
-        hash = (53 * hash) + getExitListList().hashCode();
+      hash = (37 * hash) + TOTAL_ROUND_FIELD_NUMBER;
+      hash = (53 * hash) + getTotalRound();
+      hash = (37 * hash) + UNK3300_IAPINOLIALF_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
+          getUnk3300IAPINOLIALF());
+      if (getMonsterListCount() > 0) {
+        hash = (37 * hash) + MONSTER_LIST_FIELD_NUMBER;
+        hash = (53 * hash) + getMonsterListList().hashCode();
       }
+      hash = (37 * hash) + UNK3300_CIJALCAMHCD_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300CIJALCAMHCD();
+      hash = (37 * hash) + WAIT_BEGIN_TIME_US_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
+          getWaitBeginTimeUs());
       if (getHistoryCardListCount() > 0) {
         hash = (37 * hash) + HISTORY_CARD_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getHistoryCardListList().hashCode();
       }
-      hash = (37 * hash) + MAX_ESCAPE_MONSTER_NUM_FIELD_NUMBER;
-      hash = (53 * hash) + getMaxEscapeMonsterNum();
-      hash = (37 * hash) + BUILDING_STAGE_DURATION_FIELD_NUMBER;
-      hash = (53 * hash) + getBuildingStageDuration();
-      hash = (37 * hash) + DURATION_MS_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-          getDurationMs());
-      hash = (37 * hash) + STAGE_FIELD_NUMBER;
-      hash = (53 * hash) + stage_;
-      hash = (37 * hash) + TOTAL_ROUND_FIELD_NUMBER;
-      hash = (53 * hash) + getTotalRound();
-      if (getMonsterListCount() > 0) {
-        hash = (37 * hash) + MONSTER_LIST_FIELD_NUMBER;
-        hash = (53 * hash) + getMonsterListList().hashCode();
+      if (getPickCardListCount() > 0) {
+        hash = (37 * hash) + PICK_CARD_LIST_FIELD_NUMBER;
+        hash = (53 * hash) + getPickCardListList().hashCode();
       }
       hash = (37 * hash) + ESCAPED_MONSTER_NUM_FIELD_NUMBER;
       hash = (53 * hash) + getEscapedMonsterNum();
       hash = (37 * hash) + ROUND_FIELD_NUMBER;
       hash = (53 * hash) + getRound();
-      if (getPickCardListCount() > 0) {
-        hash = (37 * hash) + PICK_CARD_LIST_FIELD_NUMBER;
-        hash = (53 * hash) + getPickCardListList().hashCode();
-      }
-      if (getPlayerListCount() > 0) {
-        hash = (37 * hash) + PLAYER_LIST_FIELD_NUMBER;
-        hash = (53 * hash) + getPlayerListList().hashCode();
-      }
-      hash = (37 * hash) + WAIT_BEGIN_TIME_US_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-          getWaitBeginTimeUs());
-      hash = (37 * hash) + BEGIN_TIME_MS_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-          getBeginTimeMs());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -1208,38 +1208,38 @@ public final class InBattleMechanicusInfoOuterClass {
       private void maybeForceBuilderInitialization() {
         if (com.google.protobuf.GeneratedMessageV3
                 .alwaysUseFieldBuilders) {
-          getHistoryCardListFieldBuilder();
-          getMonsterListFieldBuilder();
-          getPickCardListFieldBuilder();
           getPlayerListFieldBuilder();
+          getMonsterListFieldBuilder();
+          getHistoryCardListFieldBuilder();
+          getPickCardListFieldBuilder();
         }
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        leftMonster_ = 0;
+        unk3300MNNDELKIBLG_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000001);
+        unk3300GHBEHPGBBIH_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000002);
+        stage_ = 0;
+
+        unk3300EBOIGFMOKHK_ = 0;
 
         waitSeconds_ = 0;
 
-        entranceList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000001);
-        exitList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000002);
-        if (historyCardListBuilder_ == null) {
-          historyCardList_ = java.util.Collections.emptyList();
+        leftMonsterNum_ = 0;
+
+        unk3300IFIPKLOGEOF_ = 0L;
+
+        if (playerListBuilder_ == null) {
+          playerList_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000004);
         } else {
-          historyCardListBuilder_.clear();
+          playerListBuilder_.clear();
         }
-        maxEscapeMonsterNum_ = 0;
-
-        buildingStageDuration_ = 0;
-
-        durationMs_ = 0L;
-
-        stage_ = 0;
-
         totalRound_ = 0;
+
+        unk3300IAPINOLIALF_ = 0L;
 
         if (monsterListBuilder_ == null) {
           monsterList_ = java.util.Collections.emptyList();
@@ -1247,25 +1247,25 @@ public final class InBattleMechanicusInfoOuterClass {
         } else {
           monsterListBuilder_.clear();
         }
-        escapedMonsterNum_ = 0;
+        unk3300CIJALCAMHCD_ = 0;
 
-        round_ = 0;
+        waitBeginTimeUs_ = 0L;
 
+        if (historyCardListBuilder_ == null) {
+          historyCardList_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000010);
+        } else {
+          historyCardListBuilder_.clear();
+        }
         if (pickCardListBuilder_ == null) {
           pickCardList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000010);
+          bitField0_ = (bitField0_ & ~0x00000020);
         } else {
           pickCardListBuilder_.clear();
         }
-        if (playerListBuilder_ == null) {
-          playerList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000020);
-        } else {
-          playerListBuilder_.clear();
-        }
-        waitBeginTimeUs_ = 0L;
+        escapedMonsterNum_ = 0;
 
-        beginTimeMs_ = 0L;
+        round_ = 0;
 
         return this;
       }
@@ -1294,32 +1294,32 @@ public final class InBattleMechanicusInfoOuterClass {
       public emu.grasscutter.net.proto.InBattleMechanicusInfoOuterClass.InBattleMechanicusInfo buildPartial() {
         emu.grasscutter.net.proto.InBattleMechanicusInfoOuterClass.InBattleMechanicusInfo result = new emu.grasscutter.net.proto.InBattleMechanicusInfoOuterClass.InBattleMechanicusInfo(this);
         int from_bitField0_ = bitField0_;
-        result.leftMonster_ = leftMonster_;
-        result.waitSeconds_ = waitSeconds_;
         if (((bitField0_ & 0x00000001) != 0)) {
-          entranceList_.makeImmutable();
+          unk3300MNNDELKIBLG_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000001);
         }
-        result.entranceList_ = entranceList_;
+        result.unk3300MNNDELKIBLG_ = unk3300MNNDELKIBLG_;
         if (((bitField0_ & 0x00000002) != 0)) {
-          exitList_.makeImmutable();
+          unk3300GHBEHPGBBIH_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000002);
         }
-        result.exitList_ = exitList_;
-        if (historyCardListBuilder_ == null) {
+        result.unk3300GHBEHPGBBIH_ = unk3300GHBEHPGBBIH_;
+        result.stage_ = stage_;
+        result.unk3300EBOIGFMOKHK_ = unk3300EBOIGFMOKHK_;
+        result.waitSeconds_ = waitSeconds_;
+        result.leftMonsterNum_ = leftMonsterNum_;
+        result.unk3300IFIPKLOGEOF_ = unk3300IFIPKLOGEOF_;
+        if (playerListBuilder_ == null) {
           if (((bitField0_ & 0x00000004) != 0)) {
-            historyCardList_ = java.util.Collections.unmodifiableList(historyCardList_);
+            playerList_ = java.util.Collections.unmodifiableList(playerList_);
             bitField0_ = (bitField0_ & ~0x00000004);
           }
-          result.historyCardList_ = historyCardList_;
+          result.playerList_ = playerList_;
         } else {
-          result.historyCardList_ = historyCardListBuilder_.build();
+          result.playerList_ = playerListBuilder_.build();
         }
-        result.maxEscapeMonsterNum_ = maxEscapeMonsterNum_;
-        result.buildingStageDuration_ = buildingStageDuration_;
-        result.durationMs_ = durationMs_;
-        result.stage_ = stage_;
         result.totalRound_ = totalRound_;
+        result.unk3300IAPINOLIALF_ = unk3300IAPINOLIALF_;
         if (monsterListBuilder_ == null) {
           if (((bitField0_ & 0x00000008) != 0)) {
             monsterList_ = java.util.Collections.unmodifiableList(monsterList_);
@@ -1329,28 +1329,28 @@ public final class InBattleMechanicusInfoOuterClass {
         } else {
           result.monsterList_ = monsterListBuilder_.build();
         }
-        result.escapedMonsterNum_ = escapedMonsterNum_;
-        result.round_ = round_;
-        if (pickCardListBuilder_ == null) {
+        result.unk3300CIJALCAMHCD_ = unk3300CIJALCAMHCD_;
+        result.waitBeginTimeUs_ = waitBeginTimeUs_;
+        if (historyCardListBuilder_ == null) {
           if (((bitField0_ & 0x00000010) != 0)) {
-            pickCardList_ = java.util.Collections.unmodifiableList(pickCardList_);
+            historyCardList_ = java.util.Collections.unmodifiableList(historyCardList_);
             bitField0_ = (bitField0_ & ~0x00000010);
+          }
+          result.historyCardList_ = historyCardList_;
+        } else {
+          result.historyCardList_ = historyCardListBuilder_.build();
+        }
+        if (pickCardListBuilder_ == null) {
+          if (((bitField0_ & 0x00000020) != 0)) {
+            pickCardList_ = java.util.Collections.unmodifiableList(pickCardList_);
+            bitField0_ = (bitField0_ & ~0x00000020);
           }
           result.pickCardList_ = pickCardList_;
         } else {
           result.pickCardList_ = pickCardListBuilder_.build();
         }
-        if (playerListBuilder_ == null) {
-          if (((bitField0_ & 0x00000020) != 0)) {
-            playerList_ = java.util.Collections.unmodifiableList(playerList_);
-            bitField0_ = (bitField0_ & ~0x00000020);
-          }
-          result.playerList_ = playerList_;
-        } else {
-          result.playerList_ = playerListBuilder_.build();
-        }
-        result.waitBeginTimeUs_ = waitBeginTimeUs_;
-        result.beginTimeMs_ = beginTimeMs_;
+        result.escapedMonsterNum_ = escapedMonsterNum_;
+        result.round_ = round_;
         onBuilt();
         return result;
       }
@@ -1399,72 +1399,72 @@ public final class InBattleMechanicusInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.InBattleMechanicusInfoOuterClass.InBattleMechanicusInfo other) {
         if (other == emu.grasscutter.net.proto.InBattleMechanicusInfoOuterClass.InBattleMechanicusInfo.getDefaultInstance()) return this;
-        if (other.getLeftMonster() != 0) {
-          setLeftMonster(other.getLeftMonster());
-        }
-        if (other.getWaitSeconds() != 0) {
-          setWaitSeconds(other.getWaitSeconds());
-        }
-        if (!other.entranceList_.isEmpty()) {
-          if (entranceList_.isEmpty()) {
-            entranceList_ = other.entranceList_;
+        if (!other.unk3300MNNDELKIBLG_.isEmpty()) {
+          if (unk3300MNNDELKIBLG_.isEmpty()) {
+            unk3300MNNDELKIBLG_ = other.unk3300MNNDELKIBLG_;
             bitField0_ = (bitField0_ & ~0x00000001);
           } else {
-            ensureEntranceListIsMutable();
-            entranceList_.addAll(other.entranceList_);
+            ensureUnk3300MNNDELKIBLGIsMutable();
+            unk3300MNNDELKIBLG_.addAll(other.unk3300MNNDELKIBLG_);
           }
           onChanged();
         }
-        if (!other.exitList_.isEmpty()) {
-          if (exitList_.isEmpty()) {
-            exitList_ = other.exitList_;
+        if (!other.unk3300GHBEHPGBBIH_.isEmpty()) {
+          if (unk3300GHBEHPGBBIH_.isEmpty()) {
+            unk3300GHBEHPGBBIH_ = other.unk3300GHBEHPGBBIH_;
             bitField0_ = (bitField0_ & ~0x00000002);
           } else {
-            ensureExitListIsMutable();
-            exitList_.addAll(other.exitList_);
+            ensureUnk3300GHBEHPGBBIHIsMutable();
+            unk3300GHBEHPGBBIH_.addAll(other.unk3300GHBEHPGBBIH_);
           }
           onChanged();
-        }
-        if (historyCardListBuilder_ == null) {
-          if (!other.historyCardList_.isEmpty()) {
-            if (historyCardList_.isEmpty()) {
-              historyCardList_ = other.historyCardList_;
-              bitField0_ = (bitField0_ & ~0x00000004);
-            } else {
-              ensureHistoryCardListIsMutable();
-              historyCardList_.addAll(other.historyCardList_);
-            }
-            onChanged();
-          }
-        } else {
-          if (!other.historyCardList_.isEmpty()) {
-            if (historyCardListBuilder_.isEmpty()) {
-              historyCardListBuilder_.dispose();
-              historyCardListBuilder_ = null;
-              historyCardList_ = other.historyCardList_;
-              bitField0_ = (bitField0_ & ~0x00000004);
-              historyCardListBuilder_ = 
-                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
-                   getHistoryCardListFieldBuilder() : null;
-            } else {
-              historyCardListBuilder_.addAllMessages(other.historyCardList_);
-            }
-          }
-        }
-        if (other.getMaxEscapeMonsterNum() != 0) {
-          setMaxEscapeMonsterNum(other.getMaxEscapeMonsterNum());
-        }
-        if (other.getBuildingStageDuration() != 0) {
-          setBuildingStageDuration(other.getBuildingStageDuration());
-        }
-        if (other.getDurationMs() != 0L) {
-          setDurationMs(other.getDurationMs());
         }
         if (other.stage_ != 0) {
           setStageValue(other.getStageValue());
         }
+        if (other.getUnk3300EBOIGFMOKHK() != 0) {
+          setUnk3300EBOIGFMOKHK(other.getUnk3300EBOIGFMOKHK());
+        }
+        if (other.getWaitSeconds() != 0) {
+          setWaitSeconds(other.getWaitSeconds());
+        }
+        if (other.getLeftMonsterNum() != 0) {
+          setLeftMonsterNum(other.getLeftMonsterNum());
+        }
+        if (other.getUnk3300IFIPKLOGEOF() != 0L) {
+          setUnk3300IFIPKLOGEOF(other.getUnk3300IFIPKLOGEOF());
+        }
+        if (playerListBuilder_ == null) {
+          if (!other.playerList_.isEmpty()) {
+            if (playerList_.isEmpty()) {
+              playerList_ = other.playerList_;
+              bitField0_ = (bitField0_ & ~0x00000004);
+            } else {
+              ensurePlayerListIsMutable();
+              playerList_.addAll(other.playerList_);
+            }
+            onChanged();
+          }
+        } else {
+          if (!other.playerList_.isEmpty()) {
+            if (playerListBuilder_.isEmpty()) {
+              playerListBuilder_.dispose();
+              playerListBuilder_ = null;
+              playerList_ = other.playerList_;
+              bitField0_ = (bitField0_ & ~0x00000004);
+              playerListBuilder_ = 
+                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+                   getPlayerListFieldBuilder() : null;
+            } else {
+              playerListBuilder_.addAllMessages(other.playerList_);
+            }
+          }
+        }
         if (other.getTotalRound() != 0) {
           setTotalRound(other.getTotalRound());
+        }
+        if (other.getUnk3300IAPINOLIALF() != 0L) {
+          setUnk3300IAPINOLIALF(other.getUnk3300IAPINOLIALF());
         }
         if (monsterListBuilder_ == null) {
           if (!other.monsterList_.isEmpty()) {
@@ -1492,17 +1492,43 @@ public final class InBattleMechanicusInfoOuterClass {
             }
           }
         }
-        if (other.getEscapedMonsterNum() != 0) {
-          setEscapedMonsterNum(other.getEscapedMonsterNum());
+        if (other.getUnk3300CIJALCAMHCD() != 0) {
+          setUnk3300CIJALCAMHCD(other.getUnk3300CIJALCAMHCD());
         }
-        if (other.getRound() != 0) {
-          setRound(other.getRound());
+        if (other.getWaitBeginTimeUs() != 0L) {
+          setWaitBeginTimeUs(other.getWaitBeginTimeUs());
+        }
+        if (historyCardListBuilder_ == null) {
+          if (!other.historyCardList_.isEmpty()) {
+            if (historyCardList_.isEmpty()) {
+              historyCardList_ = other.historyCardList_;
+              bitField0_ = (bitField0_ & ~0x00000010);
+            } else {
+              ensureHistoryCardListIsMutable();
+              historyCardList_.addAll(other.historyCardList_);
+            }
+            onChanged();
+          }
+        } else {
+          if (!other.historyCardList_.isEmpty()) {
+            if (historyCardListBuilder_.isEmpty()) {
+              historyCardListBuilder_.dispose();
+              historyCardListBuilder_ = null;
+              historyCardList_ = other.historyCardList_;
+              bitField0_ = (bitField0_ & ~0x00000010);
+              historyCardListBuilder_ = 
+                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+                   getHistoryCardListFieldBuilder() : null;
+            } else {
+              historyCardListBuilder_.addAllMessages(other.historyCardList_);
+            }
+          }
         }
         if (pickCardListBuilder_ == null) {
           if (!other.pickCardList_.isEmpty()) {
             if (pickCardList_.isEmpty()) {
               pickCardList_ = other.pickCardList_;
-              bitField0_ = (bitField0_ & ~0x00000010);
+              bitField0_ = (bitField0_ & ~0x00000020);
             } else {
               ensurePickCardListIsMutable();
               pickCardList_.addAll(other.pickCardList_);
@@ -1515,7 +1541,7 @@ public final class InBattleMechanicusInfoOuterClass {
               pickCardListBuilder_.dispose();
               pickCardListBuilder_ = null;
               pickCardList_ = other.pickCardList_;
-              bitField0_ = (bitField0_ & ~0x00000010);
+              bitField0_ = (bitField0_ & ~0x00000020);
               pickCardListBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
                    getPickCardListFieldBuilder() : null;
@@ -1524,37 +1550,11 @@ public final class InBattleMechanicusInfoOuterClass {
             }
           }
         }
-        if (playerListBuilder_ == null) {
-          if (!other.playerList_.isEmpty()) {
-            if (playerList_.isEmpty()) {
-              playerList_ = other.playerList_;
-              bitField0_ = (bitField0_ & ~0x00000020);
-            } else {
-              ensurePlayerListIsMutable();
-              playerList_.addAll(other.playerList_);
-            }
-            onChanged();
-          }
-        } else {
-          if (!other.playerList_.isEmpty()) {
-            if (playerListBuilder_.isEmpty()) {
-              playerListBuilder_.dispose();
-              playerListBuilder_ = null;
-              playerList_ = other.playerList_;
-              bitField0_ = (bitField0_ & ~0x00000020);
-              playerListBuilder_ = 
-                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
-                   getPlayerListFieldBuilder() : null;
-            } else {
-              playerListBuilder_.addAllMessages(other.playerList_);
-            }
-          }
+        if (other.getEscapedMonsterNum() != 0) {
+          setEscapedMonsterNum(other.getEscapedMonsterNum());
         }
-        if (other.getWaitBeginTimeUs() != 0L) {
-          setWaitBeginTimeUs(other.getWaitBeginTimeUs());
-        }
-        if (other.getBeginTimeMs() != 0L) {
-          setBeginTimeMs(other.getBeginTimeMs());
+        if (other.getRound() != 0) {
+          setRound(other.getRound());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -1586,33 +1586,245 @@ public final class InBattleMechanicusInfoOuterClass {
       }
       private int bitField0_;
 
-      private int leftMonster_ ;
-      /**
-       * <code>uint32 left_monster = 5;</code>
-       * @return The leftMonster.
-       */
-      @java.lang.Override
-      public int getLeftMonster() {
-        return leftMonster_;
+      private com.google.protobuf.Internal.IntList unk3300MNNDELKIBLG_ = emptyIntList();
+      private void ensureUnk3300MNNDELKIBLGIsMutable() {
+        if (!((bitField0_ & 0x00000001) != 0)) {
+          unk3300MNNDELKIBLG_ = mutableCopy(unk3300MNNDELKIBLG_);
+          bitField0_ |= 0x00000001;
+         }
       }
       /**
-       * <code>uint32 left_monster = 5;</code>
-       * @param value The leftMonster to set.
+       * <code>repeated uint32 Unk3300_MNNDELKIBLG = 656;</code>
+       * @return A list containing the unk3300MNNDELKIBLG.
+       */
+      public java.util.List<java.lang.Integer>
+          getUnk3300MNNDELKIBLGList() {
+        return ((bitField0_ & 0x00000001) != 0) ?
+                 java.util.Collections.unmodifiableList(unk3300MNNDELKIBLG_) : unk3300MNNDELKIBLG_;
+      }
+      /**
+       * <code>repeated uint32 Unk3300_MNNDELKIBLG = 656;</code>
+       * @return The count of unk3300MNNDELKIBLG.
+       */
+      public int getUnk3300MNNDELKIBLGCount() {
+        return unk3300MNNDELKIBLG_.size();
+      }
+      /**
+       * <code>repeated uint32 Unk3300_MNNDELKIBLG = 656;</code>
+       * @param index The index of the element to return.
+       * @return The unk3300MNNDELKIBLG at the given index.
+       */
+      public int getUnk3300MNNDELKIBLG(int index) {
+        return unk3300MNNDELKIBLG_.getInt(index);
+      }
+      /**
+       * <code>repeated uint32 Unk3300_MNNDELKIBLG = 656;</code>
+       * @param index The index to set the value at.
+       * @param value The unk3300MNNDELKIBLG to set.
        * @return This builder for chaining.
        */
-      public Builder setLeftMonster(int value) {
-        
-        leftMonster_ = value;
+      public Builder setUnk3300MNNDELKIBLG(
+          int index, int value) {
+        ensureUnk3300MNNDELKIBLGIsMutable();
+        unk3300MNNDELKIBLG_.setInt(index, value);
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 left_monster = 5;</code>
+       * <code>repeated uint32 Unk3300_MNNDELKIBLG = 656;</code>
+       * @param value The unk3300MNNDELKIBLG to add.
        * @return This builder for chaining.
        */
-      public Builder clearLeftMonster() {
+      public Builder addUnk3300MNNDELKIBLG(int value) {
+        ensureUnk3300MNNDELKIBLGIsMutable();
+        unk3300MNNDELKIBLG_.addInt(value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint32 Unk3300_MNNDELKIBLG = 656;</code>
+       * @param values The unk3300MNNDELKIBLG to add.
+       * @return This builder for chaining.
+       */
+      public Builder addAllUnk3300MNNDELKIBLG(
+          java.lang.Iterable<? extends java.lang.Integer> values) {
+        ensureUnk3300MNNDELKIBLGIsMutable();
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, unk3300MNNDELKIBLG_);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint32 Unk3300_MNNDELKIBLG = 656;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearUnk3300MNNDELKIBLG() {
+        unk3300MNNDELKIBLG_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000001);
+        onChanged();
+        return this;
+      }
+
+      private com.google.protobuf.Internal.IntList unk3300GHBEHPGBBIH_ = emptyIntList();
+      private void ensureUnk3300GHBEHPGBBIHIsMutable() {
+        if (!((bitField0_ & 0x00000002) != 0)) {
+          unk3300GHBEHPGBBIH_ = mutableCopy(unk3300GHBEHPGBBIH_);
+          bitField0_ |= 0x00000002;
+         }
+      }
+      /**
+       * <code>repeated uint32 Unk3300_GHBEHPGBBIH = 683;</code>
+       * @return A list containing the unk3300GHBEHPGBBIH.
+       */
+      public java.util.List<java.lang.Integer>
+          getUnk3300GHBEHPGBBIHList() {
+        return ((bitField0_ & 0x00000002) != 0) ?
+                 java.util.Collections.unmodifiableList(unk3300GHBEHPGBBIH_) : unk3300GHBEHPGBBIH_;
+      }
+      /**
+       * <code>repeated uint32 Unk3300_GHBEHPGBBIH = 683;</code>
+       * @return The count of unk3300GHBEHPGBBIH.
+       */
+      public int getUnk3300GHBEHPGBBIHCount() {
+        return unk3300GHBEHPGBBIH_.size();
+      }
+      /**
+       * <code>repeated uint32 Unk3300_GHBEHPGBBIH = 683;</code>
+       * @param index The index of the element to return.
+       * @return The unk3300GHBEHPGBBIH at the given index.
+       */
+      public int getUnk3300GHBEHPGBBIH(int index) {
+        return unk3300GHBEHPGBBIH_.getInt(index);
+      }
+      /**
+       * <code>repeated uint32 Unk3300_GHBEHPGBBIH = 683;</code>
+       * @param index The index to set the value at.
+       * @param value The unk3300GHBEHPGBBIH to set.
+       * @return This builder for chaining.
+       */
+      public Builder setUnk3300GHBEHPGBBIH(
+          int index, int value) {
+        ensureUnk3300GHBEHPGBBIHIsMutable();
+        unk3300GHBEHPGBBIH_.setInt(index, value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint32 Unk3300_GHBEHPGBBIH = 683;</code>
+       * @param value The unk3300GHBEHPGBBIH to add.
+       * @return This builder for chaining.
+       */
+      public Builder addUnk3300GHBEHPGBBIH(int value) {
+        ensureUnk3300GHBEHPGBBIHIsMutable();
+        unk3300GHBEHPGBBIH_.addInt(value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint32 Unk3300_GHBEHPGBBIH = 683;</code>
+       * @param values The unk3300GHBEHPGBBIH to add.
+       * @return This builder for chaining.
+       */
+      public Builder addAllUnk3300GHBEHPGBBIH(
+          java.lang.Iterable<? extends java.lang.Integer> values) {
+        ensureUnk3300GHBEHPGBBIHIsMutable();
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, unk3300GHBEHPGBBIH_);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint32 Unk3300_GHBEHPGBBIH = 683;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearUnk3300GHBEHPGBBIH() {
+        unk3300GHBEHPGBBIH_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000002);
+        onChanged();
+        return this;
+      }
+
+      private int stage_ = 0;
+      /**
+       * <code>.InBattleMechanicusStageType stage = 7;</code>
+       * @return The enum numeric value on the wire for stage.
+       */
+      @java.lang.Override public int getStageValue() {
+        return stage_;
+      }
+      /**
+       * <code>.InBattleMechanicusStageType stage = 7;</code>
+       * @param value The enum numeric value on the wire for stage to set.
+       * @return This builder for chaining.
+       */
+      public Builder setStageValue(int value) {
         
-        leftMonster_ = 0;
+        stage_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.InBattleMechanicusStageType stage = 7;</code>
+       * @return The stage.
+       */
+      @java.lang.Override
+      public emu.grasscutter.net.proto.InBattleMechanicusStageTypeOuterClass.InBattleMechanicusStageType getStage() {
+        @SuppressWarnings("deprecation")
+        emu.grasscutter.net.proto.InBattleMechanicusStageTypeOuterClass.InBattleMechanicusStageType result = emu.grasscutter.net.proto.InBattleMechanicusStageTypeOuterClass.InBattleMechanicusStageType.valueOf(stage_);
+        return result == null ? emu.grasscutter.net.proto.InBattleMechanicusStageTypeOuterClass.InBattleMechanicusStageType.UNRECOGNIZED : result;
+      }
+      /**
+       * <code>.InBattleMechanicusStageType stage = 7;</code>
+       * @param value The stage to set.
+       * @return This builder for chaining.
+       */
+      public Builder setStage(emu.grasscutter.net.proto.InBattleMechanicusStageTypeOuterClass.InBattleMechanicusStageType value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        
+        stage_ = value.getNumber();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.InBattleMechanicusStageType stage = 7;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearStage() {
+        
+        stage_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int unk3300EBOIGFMOKHK_ ;
+      /**
+       * <code>uint32 Unk3300_EBOIGFMOKHK = 4;</code>
+       * @return The unk3300EBOIGFMOKHK.
+       */
+      @java.lang.Override
+      public int getUnk3300EBOIGFMOKHK() {
+        return unk3300EBOIGFMOKHK_;
+      }
+      /**
+       * <code>uint32 Unk3300_EBOIGFMOKHK = 4;</code>
+       * @param value The unk3300EBOIGFMOKHK to set.
+       * @return This builder for chaining.
+       */
+      public Builder setUnk3300EBOIGFMOKHK(int value) {
+        
+        unk3300EBOIGFMOKHK_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 Unk3300_EBOIGFMOKHK = 4;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearUnk3300EBOIGFMOKHK() {
+        
+        unk3300EBOIGFMOKHK_ = 0;
         onChanged();
         return this;
       }
@@ -1648,554 +1860,311 @@ public final class InBattleMechanicusInfoOuterClass {
         return this;
       }
 
-      private com.google.protobuf.Internal.IntList entranceList_ = emptyIntList();
-      private void ensureEntranceListIsMutable() {
-        if (!((bitField0_ & 0x00000001) != 0)) {
-          entranceList_ = mutableCopy(entranceList_);
-          bitField0_ |= 0x00000001;
-         }
-      }
+      private int leftMonsterNum_ ;
       /**
-       * <code>repeated uint32 entrance_list = 410;</code>
-       * @return A list containing the entranceList.
+       * <code>uint32 left_monster_num = 15;</code>
+       * @return The leftMonsterNum.
        */
-      public java.util.List<java.lang.Integer>
-          getEntranceListList() {
-        return ((bitField0_ & 0x00000001) != 0) ?
-                 java.util.Collections.unmodifiableList(entranceList_) : entranceList_;
+      @java.lang.Override
+      public int getLeftMonsterNum() {
+        return leftMonsterNum_;
       }
       /**
-       * <code>repeated uint32 entrance_list = 410;</code>
-       * @return The count of entranceList.
-       */
-      public int getEntranceListCount() {
-        return entranceList_.size();
-      }
-      /**
-       * <code>repeated uint32 entrance_list = 410;</code>
-       * @param index The index of the element to return.
-       * @return The entranceList at the given index.
-       */
-      public int getEntranceList(int index) {
-        return entranceList_.getInt(index);
-      }
-      /**
-       * <code>repeated uint32 entrance_list = 410;</code>
-       * @param index The index to set the value at.
-       * @param value The entranceList to set.
+       * <code>uint32 left_monster_num = 15;</code>
+       * @param value The leftMonsterNum to set.
        * @return This builder for chaining.
        */
-      public Builder setEntranceList(
-          int index, int value) {
-        ensureEntranceListIsMutable();
-        entranceList_.setInt(index, value);
+      public Builder setLeftMonsterNum(int value) {
+        
+        leftMonsterNum_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 entrance_list = 410;</code>
-       * @param value The entranceList to add.
+       * <code>uint32 left_monster_num = 15;</code>
        * @return This builder for chaining.
        */
-      public Builder addEntranceList(int value) {
-        ensureEntranceListIsMutable();
-        entranceList_.addInt(value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 entrance_list = 410;</code>
-       * @param values The entranceList to add.
-       * @return This builder for chaining.
-       */
-      public Builder addAllEntranceList(
-          java.lang.Iterable<? extends java.lang.Integer> values) {
-        ensureEntranceListIsMutable();
-        com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, entranceList_);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 entrance_list = 410;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearEntranceList() {
-        entranceList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000001);
+      public Builder clearLeftMonsterNum() {
+        
+        leftMonsterNum_ = 0;
         onChanged();
         return this;
       }
 
-      private com.google.protobuf.Internal.IntList exitList_ = emptyIntList();
-      private void ensureExitListIsMutable() {
-        if (!((bitField0_ & 0x00000002) != 0)) {
-          exitList_ = mutableCopy(exitList_);
-          bitField0_ |= 0x00000002;
-         }
-      }
+      private long unk3300IFIPKLOGEOF_ ;
       /**
-       * <code>repeated uint32 exit_list = 115;</code>
-       * @return A list containing the exitList.
+       * <code>uint64 Unk3300_IFIPKLOGEOF = 6;</code>
+       * @return The unk3300IFIPKLOGEOF.
        */
-      public java.util.List<java.lang.Integer>
-          getExitListList() {
-        return ((bitField0_ & 0x00000002) != 0) ?
-                 java.util.Collections.unmodifiableList(exitList_) : exitList_;
+      @java.lang.Override
+      public long getUnk3300IFIPKLOGEOF() {
+        return unk3300IFIPKLOGEOF_;
       }
       /**
-       * <code>repeated uint32 exit_list = 115;</code>
-       * @return The count of exitList.
-       */
-      public int getExitListCount() {
-        return exitList_.size();
-      }
-      /**
-       * <code>repeated uint32 exit_list = 115;</code>
-       * @param index The index of the element to return.
-       * @return The exitList at the given index.
-       */
-      public int getExitList(int index) {
-        return exitList_.getInt(index);
-      }
-      /**
-       * <code>repeated uint32 exit_list = 115;</code>
-       * @param index The index to set the value at.
-       * @param value The exitList to set.
+       * <code>uint64 Unk3300_IFIPKLOGEOF = 6;</code>
+       * @param value The unk3300IFIPKLOGEOF to set.
        * @return This builder for chaining.
        */
-      public Builder setExitList(
-          int index, int value) {
-        ensureExitListIsMutable();
-        exitList_.setInt(index, value);
+      public Builder setUnk3300IFIPKLOGEOF(long value) {
+        
+        unk3300IFIPKLOGEOF_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 exit_list = 115;</code>
-       * @param value The exitList to add.
+       * <code>uint64 Unk3300_IFIPKLOGEOF = 6;</code>
        * @return This builder for chaining.
        */
-      public Builder addExitList(int value) {
-        ensureExitListIsMutable();
-        exitList_.addInt(value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 exit_list = 115;</code>
-       * @param values The exitList to add.
-       * @return This builder for chaining.
-       */
-      public Builder addAllExitList(
-          java.lang.Iterable<? extends java.lang.Integer> values) {
-        ensureExitListIsMutable();
-        com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, exitList_);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 exit_list = 115;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearExitList() {
-        exitList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000002);
+      public Builder clearUnk3300IFIPKLOGEOF() {
+        
+        unk3300IFIPKLOGEOF_ = 0L;
         onChanged();
         return this;
       }
 
-      private java.util.List<emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfo> historyCardList_ =
+      private java.util.List<emu.grasscutter.net.proto.InBattleMechanicusPlayerInfoOuterClass.InBattleMechanicusPlayerInfo> playerList_ =
         java.util.Collections.emptyList();
-      private void ensureHistoryCardListIsMutable() {
+      private void ensurePlayerListIsMutable() {
         if (!((bitField0_ & 0x00000004) != 0)) {
-          historyCardList_ = new java.util.ArrayList<emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfo>(historyCardList_);
+          playerList_ = new java.util.ArrayList<emu.grasscutter.net.proto.InBattleMechanicusPlayerInfoOuterClass.InBattleMechanicusPlayerInfo>(playerList_);
           bitField0_ |= 0x00000004;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfo, emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfo.Builder, emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfoOrBuilder> historyCardListBuilder_;
+          emu.grasscutter.net.proto.InBattleMechanicusPlayerInfoOuterClass.InBattleMechanicusPlayerInfo, emu.grasscutter.net.proto.InBattleMechanicusPlayerInfoOuterClass.InBattleMechanicusPlayerInfo.Builder, emu.grasscutter.net.proto.InBattleMechanicusPlayerInfoOuterClass.InBattleMechanicusPlayerInfoOrBuilder> playerListBuilder_;
 
       /**
-       * <code>repeated .InBattleMechanicusCardInfo history_card_list = 11;</code>
+       * <code>repeated .InBattleMechanicusPlayerInfo player_list = 12;</code>
        */
-      public java.util.List<emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfo> getHistoryCardListList() {
-        if (historyCardListBuilder_ == null) {
-          return java.util.Collections.unmodifiableList(historyCardList_);
+      public java.util.List<emu.grasscutter.net.proto.InBattleMechanicusPlayerInfoOuterClass.InBattleMechanicusPlayerInfo> getPlayerListList() {
+        if (playerListBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(playerList_);
         } else {
-          return historyCardListBuilder_.getMessageList();
+          return playerListBuilder_.getMessageList();
         }
       }
       /**
-       * <code>repeated .InBattleMechanicusCardInfo history_card_list = 11;</code>
+       * <code>repeated .InBattleMechanicusPlayerInfo player_list = 12;</code>
        */
-      public int getHistoryCardListCount() {
-        if (historyCardListBuilder_ == null) {
-          return historyCardList_.size();
+      public int getPlayerListCount() {
+        if (playerListBuilder_ == null) {
+          return playerList_.size();
         } else {
-          return historyCardListBuilder_.getCount();
+          return playerListBuilder_.getCount();
         }
       }
       /**
-       * <code>repeated .InBattleMechanicusCardInfo history_card_list = 11;</code>
+       * <code>repeated .InBattleMechanicusPlayerInfo player_list = 12;</code>
        */
-      public emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfo getHistoryCardList(int index) {
-        if (historyCardListBuilder_ == null) {
-          return historyCardList_.get(index);
+      public emu.grasscutter.net.proto.InBattleMechanicusPlayerInfoOuterClass.InBattleMechanicusPlayerInfo getPlayerList(int index) {
+        if (playerListBuilder_ == null) {
+          return playerList_.get(index);
         } else {
-          return historyCardListBuilder_.getMessage(index);
+          return playerListBuilder_.getMessage(index);
         }
       }
       /**
-       * <code>repeated .InBattleMechanicusCardInfo history_card_list = 11;</code>
+       * <code>repeated .InBattleMechanicusPlayerInfo player_list = 12;</code>
        */
-      public Builder setHistoryCardList(
-          int index, emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfo value) {
-        if (historyCardListBuilder_ == null) {
+      public Builder setPlayerList(
+          int index, emu.grasscutter.net.proto.InBattleMechanicusPlayerInfoOuterClass.InBattleMechanicusPlayerInfo value) {
+        if (playerListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureHistoryCardListIsMutable();
-          historyCardList_.set(index, value);
+          ensurePlayerListIsMutable();
+          playerList_.set(index, value);
           onChanged();
         } else {
-          historyCardListBuilder_.setMessage(index, value);
+          playerListBuilder_.setMessage(index, value);
         }
         return this;
       }
       /**
-       * <code>repeated .InBattleMechanicusCardInfo history_card_list = 11;</code>
+       * <code>repeated .InBattleMechanicusPlayerInfo player_list = 12;</code>
        */
-      public Builder setHistoryCardList(
-          int index, emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfo.Builder builderForValue) {
-        if (historyCardListBuilder_ == null) {
-          ensureHistoryCardListIsMutable();
-          historyCardList_.set(index, builderForValue.build());
+      public Builder setPlayerList(
+          int index, emu.grasscutter.net.proto.InBattleMechanicusPlayerInfoOuterClass.InBattleMechanicusPlayerInfo.Builder builderForValue) {
+        if (playerListBuilder_ == null) {
+          ensurePlayerListIsMutable();
+          playerList_.set(index, builderForValue.build());
           onChanged();
         } else {
-          historyCardListBuilder_.setMessage(index, builderForValue.build());
+          playerListBuilder_.setMessage(index, builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .InBattleMechanicusCardInfo history_card_list = 11;</code>
+       * <code>repeated .InBattleMechanicusPlayerInfo player_list = 12;</code>
        */
-      public Builder addHistoryCardList(emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfo value) {
-        if (historyCardListBuilder_ == null) {
+      public Builder addPlayerList(emu.grasscutter.net.proto.InBattleMechanicusPlayerInfoOuterClass.InBattleMechanicusPlayerInfo value) {
+        if (playerListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureHistoryCardListIsMutable();
-          historyCardList_.add(value);
+          ensurePlayerListIsMutable();
+          playerList_.add(value);
           onChanged();
         } else {
-          historyCardListBuilder_.addMessage(value);
+          playerListBuilder_.addMessage(value);
         }
         return this;
       }
       /**
-       * <code>repeated .InBattleMechanicusCardInfo history_card_list = 11;</code>
+       * <code>repeated .InBattleMechanicusPlayerInfo player_list = 12;</code>
        */
-      public Builder addHistoryCardList(
-          int index, emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfo value) {
-        if (historyCardListBuilder_ == null) {
+      public Builder addPlayerList(
+          int index, emu.grasscutter.net.proto.InBattleMechanicusPlayerInfoOuterClass.InBattleMechanicusPlayerInfo value) {
+        if (playerListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureHistoryCardListIsMutable();
-          historyCardList_.add(index, value);
+          ensurePlayerListIsMutable();
+          playerList_.add(index, value);
           onChanged();
         } else {
-          historyCardListBuilder_.addMessage(index, value);
+          playerListBuilder_.addMessage(index, value);
         }
         return this;
       }
       /**
-       * <code>repeated .InBattleMechanicusCardInfo history_card_list = 11;</code>
+       * <code>repeated .InBattleMechanicusPlayerInfo player_list = 12;</code>
        */
-      public Builder addHistoryCardList(
-          emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfo.Builder builderForValue) {
-        if (historyCardListBuilder_ == null) {
-          ensureHistoryCardListIsMutable();
-          historyCardList_.add(builderForValue.build());
+      public Builder addPlayerList(
+          emu.grasscutter.net.proto.InBattleMechanicusPlayerInfoOuterClass.InBattleMechanicusPlayerInfo.Builder builderForValue) {
+        if (playerListBuilder_ == null) {
+          ensurePlayerListIsMutable();
+          playerList_.add(builderForValue.build());
           onChanged();
         } else {
-          historyCardListBuilder_.addMessage(builderForValue.build());
+          playerListBuilder_.addMessage(builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .InBattleMechanicusCardInfo history_card_list = 11;</code>
+       * <code>repeated .InBattleMechanicusPlayerInfo player_list = 12;</code>
        */
-      public Builder addHistoryCardList(
-          int index, emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfo.Builder builderForValue) {
-        if (historyCardListBuilder_ == null) {
-          ensureHistoryCardListIsMutable();
-          historyCardList_.add(index, builderForValue.build());
+      public Builder addPlayerList(
+          int index, emu.grasscutter.net.proto.InBattleMechanicusPlayerInfoOuterClass.InBattleMechanicusPlayerInfo.Builder builderForValue) {
+        if (playerListBuilder_ == null) {
+          ensurePlayerListIsMutable();
+          playerList_.add(index, builderForValue.build());
           onChanged();
         } else {
-          historyCardListBuilder_.addMessage(index, builderForValue.build());
+          playerListBuilder_.addMessage(index, builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .InBattleMechanicusCardInfo history_card_list = 11;</code>
+       * <code>repeated .InBattleMechanicusPlayerInfo player_list = 12;</code>
        */
-      public Builder addAllHistoryCardList(
-          java.lang.Iterable<? extends emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfo> values) {
-        if (historyCardListBuilder_ == null) {
-          ensureHistoryCardListIsMutable();
+      public Builder addAllPlayerList(
+          java.lang.Iterable<? extends emu.grasscutter.net.proto.InBattleMechanicusPlayerInfoOuterClass.InBattleMechanicusPlayerInfo> values) {
+        if (playerListBuilder_ == null) {
+          ensurePlayerListIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
-              values, historyCardList_);
+              values, playerList_);
           onChanged();
         } else {
-          historyCardListBuilder_.addAllMessages(values);
+          playerListBuilder_.addAllMessages(values);
         }
         return this;
       }
       /**
-       * <code>repeated .InBattleMechanicusCardInfo history_card_list = 11;</code>
+       * <code>repeated .InBattleMechanicusPlayerInfo player_list = 12;</code>
        */
-      public Builder clearHistoryCardList() {
-        if (historyCardListBuilder_ == null) {
-          historyCardList_ = java.util.Collections.emptyList();
+      public Builder clearPlayerList() {
+        if (playerListBuilder_ == null) {
+          playerList_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000004);
           onChanged();
         } else {
-          historyCardListBuilder_.clear();
+          playerListBuilder_.clear();
         }
         return this;
       }
       /**
-       * <code>repeated .InBattleMechanicusCardInfo history_card_list = 11;</code>
+       * <code>repeated .InBattleMechanicusPlayerInfo player_list = 12;</code>
        */
-      public Builder removeHistoryCardList(int index) {
-        if (historyCardListBuilder_ == null) {
-          ensureHistoryCardListIsMutable();
-          historyCardList_.remove(index);
+      public Builder removePlayerList(int index) {
+        if (playerListBuilder_ == null) {
+          ensurePlayerListIsMutable();
+          playerList_.remove(index);
           onChanged();
         } else {
-          historyCardListBuilder_.remove(index);
+          playerListBuilder_.remove(index);
         }
         return this;
       }
       /**
-       * <code>repeated .InBattleMechanicusCardInfo history_card_list = 11;</code>
+       * <code>repeated .InBattleMechanicusPlayerInfo player_list = 12;</code>
        */
-      public emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfo.Builder getHistoryCardListBuilder(
+      public emu.grasscutter.net.proto.InBattleMechanicusPlayerInfoOuterClass.InBattleMechanicusPlayerInfo.Builder getPlayerListBuilder(
           int index) {
-        return getHistoryCardListFieldBuilder().getBuilder(index);
+        return getPlayerListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .InBattleMechanicusCardInfo history_card_list = 11;</code>
+       * <code>repeated .InBattleMechanicusPlayerInfo player_list = 12;</code>
        */
-      public emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfoOrBuilder getHistoryCardListOrBuilder(
+      public emu.grasscutter.net.proto.InBattleMechanicusPlayerInfoOuterClass.InBattleMechanicusPlayerInfoOrBuilder getPlayerListOrBuilder(
           int index) {
-        if (historyCardListBuilder_ == null) {
-          return historyCardList_.get(index);  } else {
-          return historyCardListBuilder_.getMessageOrBuilder(index);
+        if (playerListBuilder_ == null) {
+          return playerList_.get(index);  } else {
+          return playerListBuilder_.getMessageOrBuilder(index);
         }
       }
       /**
-       * <code>repeated .InBattleMechanicusCardInfo history_card_list = 11;</code>
+       * <code>repeated .InBattleMechanicusPlayerInfo player_list = 12;</code>
        */
-      public java.util.List<? extends emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfoOrBuilder> 
-           getHistoryCardListOrBuilderList() {
-        if (historyCardListBuilder_ != null) {
-          return historyCardListBuilder_.getMessageOrBuilderList();
+      public java.util.List<? extends emu.grasscutter.net.proto.InBattleMechanicusPlayerInfoOuterClass.InBattleMechanicusPlayerInfoOrBuilder> 
+           getPlayerListOrBuilderList() {
+        if (playerListBuilder_ != null) {
+          return playerListBuilder_.getMessageOrBuilderList();
         } else {
-          return java.util.Collections.unmodifiableList(historyCardList_);
+          return java.util.Collections.unmodifiableList(playerList_);
         }
       }
       /**
-       * <code>repeated .InBattleMechanicusCardInfo history_card_list = 11;</code>
+       * <code>repeated .InBattleMechanicusPlayerInfo player_list = 12;</code>
        */
-      public emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfo.Builder addHistoryCardListBuilder() {
-        return getHistoryCardListFieldBuilder().addBuilder(
-            emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfo.getDefaultInstance());
+      public emu.grasscutter.net.proto.InBattleMechanicusPlayerInfoOuterClass.InBattleMechanicusPlayerInfo.Builder addPlayerListBuilder() {
+        return getPlayerListFieldBuilder().addBuilder(
+            emu.grasscutter.net.proto.InBattleMechanicusPlayerInfoOuterClass.InBattleMechanicusPlayerInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .InBattleMechanicusCardInfo history_card_list = 11;</code>
+       * <code>repeated .InBattleMechanicusPlayerInfo player_list = 12;</code>
        */
-      public emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfo.Builder addHistoryCardListBuilder(
+      public emu.grasscutter.net.proto.InBattleMechanicusPlayerInfoOuterClass.InBattleMechanicusPlayerInfo.Builder addPlayerListBuilder(
           int index) {
-        return getHistoryCardListFieldBuilder().addBuilder(
-            index, emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfo.getDefaultInstance());
+        return getPlayerListFieldBuilder().addBuilder(
+            index, emu.grasscutter.net.proto.InBattleMechanicusPlayerInfoOuterClass.InBattleMechanicusPlayerInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .InBattleMechanicusCardInfo history_card_list = 11;</code>
+       * <code>repeated .InBattleMechanicusPlayerInfo player_list = 12;</code>
        */
-      public java.util.List<emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfo.Builder> 
-           getHistoryCardListBuilderList() {
-        return getHistoryCardListFieldBuilder().getBuilderList();
+      public java.util.List<emu.grasscutter.net.proto.InBattleMechanicusPlayerInfoOuterClass.InBattleMechanicusPlayerInfo.Builder> 
+           getPlayerListBuilderList() {
+        return getPlayerListFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfo, emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfo.Builder, emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfoOrBuilder> 
-          getHistoryCardListFieldBuilder() {
-        if (historyCardListBuilder_ == null) {
-          historyCardListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfo, emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfo.Builder, emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfoOrBuilder>(
-                  historyCardList_,
+          emu.grasscutter.net.proto.InBattleMechanicusPlayerInfoOuterClass.InBattleMechanicusPlayerInfo, emu.grasscutter.net.proto.InBattleMechanicusPlayerInfoOuterClass.InBattleMechanicusPlayerInfo.Builder, emu.grasscutter.net.proto.InBattleMechanicusPlayerInfoOuterClass.InBattleMechanicusPlayerInfoOrBuilder> 
+          getPlayerListFieldBuilder() {
+        if (playerListBuilder_ == null) {
+          playerListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+              emu.grasscutter.net.proto.InBattleMechanicusPlayerInfoOuterClass.InBattleMechanicusPlayerInfo, emu.grasscutter.net.proto.InBattleMechanicusPlayerInfoOuterClass.InBattleMechanicusPlayerInfo.Builder, emu.grasscutter.net.proto.InBattleMechanicusPlayerInfoOuterClass.InBattleMechanicusPlayerInfoOrBuilder>(
+                  playerList_,
                   ((bitField0_ & 0x00000004) != 0),
                   getParentForChildren(),
                   isClean());
-          historyCardList_ = null;
+          playerList_ = null;
         }
-        return historyCardListBuilder_;
-      }
-
-      private int maxEscapeMonsterNum_ ;
-      /**
-       * <code>uint32 max_escape_monster_num = 10;</code>
-       * @return The maxEscapeMonsterNum.
-       */
-      @java.lang.Override
-      public int getMaxEscapeMonsterNum() {
-        return maxEscapeMonsterNum_;
-      }
-      /**
-       * <code>uint32 max_escape_monster_num = 10;</code>
-       * @param value The maxEscapeMonsterNum to set.
-       * @return This builder for chaining.
-       */
-      public Builder setMaxEscapeMonsterNum(int value) {
-        
-        maxEscapeMonsterNum_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 max_escape_monster_num = 10;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearMaxEscapeMonsterNum() {
-        
-        maxEscapeMonsterNum_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int buildingStageDuration_ ;
-      /**
-       * <code>uint32 building_stage_duration = 4;</code>
-       * @return The buildingStageDuration.
-       */
-      @java.lang.Override
-      public int getBuildingStageDuration() {
-        return buildingStageDuration_;
-      }
-      /**
-       * <code>uint32 building_stage_duration = 4;</code>
-       * @param value The buildingStageDuration to set.
-       * @return This builder for chaining.
-       */
-      public Builder setBuildingStageDuration(int value) {
-        
-        buildingStageDuration_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 building_stage_duration = 4;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearBuildingStageDuration() {
-        
-        buildingStageDuration_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private long durationMs_ ;
-      /**
-       * <code>uint64 duration_ms = 8;</code>
-       * @return The durationMs.
-       */
-      @java.lang.Override
-      public long getDurationMs() {
-        return durationMs_;
-      }
-      /**
-       * <code>uint64 duration_ms = 8;</code>
-       * @param value The durationMs to set.
-       * @return This builder for chaining.
-       */
-      public Builder setDurationMs(long value) {
-        
-        durationMs_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint64 duration_ms = 8;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearDurationMs() {
-        
-        durationMs_ = 0L;
-        onChanged();
-        return this;
-      }
-
-      private int stage_ = 0;
-      /**
-       * <code>.InBattleMechanicusStageType stage = 9;</code>
-       * @return The enum numeric value on the wire for stage.
-       */
-      @java.lang.Override public int getStageValue() {
-        return stage_;
-      }
-      /**
-       * <code>.InBattleMechanicusStageType stage = 9;</code>
-       * @param value The enum numeric value on the wire for stage to set.
-       * @return This builder for chaining.
-       */
-      public Builder setStageValue(int value) {
-        
-        stage_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>.InBattleMechanicusStageType stage = 9;</code>
-       * @return The stage.
-       */
-      @java.lang.Override
-      public emu.grasscutter.net.proto.InBattleMechanicusStageTypeOuterClass.InBattleMechanicusStageType getStage() {
-        @SuppressWarnings("deprecation")
-        emu.grasscutter.net.proto.InBattleMechanicusStageTypeOuterClass.InBattleMechanicusStageType result = emu.grasscutter.net.proto.InBattleMechanicusStageTypeOuterClass.InBattleMechanicusStageType.valueOf(stage_);
-        return result == null ? emu.grasscutter.net.proto.InBattleMechanicusStageTypeOuterClass.InBattleMechanicusStageType.UNRECOGNIZED : result;
-      }
-      /**
-       * <code>.InBattleMechanicusStageType stage = 9;</code>
-       * @param value The stage to set.
-       * @return This builder for chaining.
-       */
-      public Builder setStage(emu.grasscutter.net.proto.InBattleMechanicusStageTypeOuterClass.InBattleMechanicusStageType value) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        
-        stage_ = value.getNumber();
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>.InBattleMechanicusStageType stage = 9;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearStage() {
-        
-        stage_ = 0;
-        onChanged();
-        return this;
+        return playerListBuilder_;
       }
 
       private int totalRound_ ;
       /**
-       * <code>uint32 total_round = 12;</code>
+       * <code>uint32 total_round = 1;</code>
        * @return The totalRound.
        */
       @java.lang.Override
@@ -2203,7 +2172,7 @@ public final class InBattleMechanicusInfoOuterClass {
         return totalRound_;
       }
       /**
-       * <code>uint32 total_round = 12;</code>
+       * <code>uint32 total_round = 1;</code>
        * @param value The totalRound to set.
        * @return This builder for chaining.
        */
@@ -2214,12 +2183,43 @@ public final class InBattleMechanicusInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 total_round = 12;</code>
+       * <code>uint32 total_round = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearTotalRound() {
         
         totalRound_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private long unk3300IAPINOLIALF_ ;
+      /**
+       * <code>uint64 Unk3300_IAPINOLIALF = 14;</code>
+       * @return The unk3300IAPINOLIALF.
+       */
+      @java.lang.Override
+      public long getUnk3300IAPINOLIALF() {
+        return unk3300IAPINOLIALF_;
+      }
+      /**
+       * <code>uint64 Unk3300_IAPINOLIALF = 14;</code>
+       * @param value The unk3300IAPINOLIALF to set.
+       * @return This builder for chaining.
+       */
+      public Builder setUnk3300IAPINOLIALF(long value) {
+        
+        unk3300IAPINOLIALF_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint64 Unk3300_IAPINOLIALF = 14;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearUnk3300IAPINOLIALF() {
+        
+        unk3300IAPINOLIALF_ = 0L;
         onChanged();
         return this;
       }
@@ -2237,7 +2237,7 @@ public final class InBattleMechanicusInfoOuterClass {
           emu.grasscutter.net.proto.InBattleMechanicusMonsterInfoOuterClass.InBattleMechanicusMonsterInfo, emu.grasscutter.net.proto.InBattleMechanicusMonsterInfoOuterClass.InBattleMechanicusMonsterInfo.Builder, emu.grasscutter.net.proto.InBattleMechanicusMonsterInfoOuterClass.InBattleMechanicusMonsterInfoOrBuilder> monsterListBuilder_;
 
       /**
-       * <code>repeated .InBattleMechanicusMonsterInfo monster_list = 14;</code>
+       * <code>repeated .InBattleMechanicusMonsterInfo monster_list = 9;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.InBattleMechanicusMonsterInfoOuterClass.InBattleMechanicusMonsterInfo> getMonsterListList() {
         if (monsterListBuilder_ == null) {
@@ -2247,7 +2247,7 @@ public final class InBattleMechanicusInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .InBattleMechanicusMonsterInfo monster_list = 14;</code>
+       * <code>repeated .InBattleMechanicusMonsterInfo monster_list = 9;</code>
        */
       public int getMonsterListCount() {
         if (monsterListBuilder_ == null) {
@@ -2257,7 +2257,7 @@ public final class InBattleMechanicusInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .InBattleMechanicusMonsterInfo monster_list = 14;</code>
+       * <code>repeated .InBattleMechanicusMonsterInfo monster_list = 9;</code>
        */
       public emu.grasscutter.net.proto.InBattleMechanicusMonsterInfoOuterClass.InBattleMechanicusMonsterInfo getMonsterList(int index) {
         if (monsterListBuilder_ == null) {
@@ -2267,7 +2267,7 @@ public final class InBattleMechanicusInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .InBattleMechanicusMonsterInfo monster_list = 14;</code>
+       * <code>repeated .InBattleMechanicusMonsterInfo monster_list = 9;</code>
        */
       public Builder setMonsterList(
           int index, emu.grasscutter.net.proto.InBattleMechanicusMonsterInfoOuterClass.InBattleMechanicusMonsterInfo value) {
@@ -2284,7 +2284,7 @@ public final class InBattleMechanicusInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .InBattleMechanicusMonsterInfo monster_list = 14;</code>
+       * <code>repeated .InBattleMechanicusMonsterInfo monster_list = 9;</code>
        */
       public Builder setMonsterList(
           int index, emu.grasscutter.net.proto.InBattleMechanicusMonsterInfoOuterClass.InBattleMechanicusMonsterInfo.Builder builderForValue) {
@@ -2298,7 +2298,7 @@ public final class InBattleMechanicusInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .InBattleMechanicusMonsterInfo monster_list = 14;</code>
+       * <code>repeated .InBattleMechanicusMonsterInfo monster_list = 9;</code>
        */
       public Builder addMonsterList(emu.grasscutter.net.proto.InBattleMechanicusMonsterInfoOuterClass.InBattleMechanicusMonsterInfo value) {
         if (monsterListBuilder_ == null) {
@@ -2314,7 +2314,7 @@ public final class InBattleMechanicusInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .InBattleMechanicusMonsterInfo monster_list = 14;</code>
+       * <code>repeated .InBattleMechanicusMonsterInfo monster_list = 9;</code>
        */
       public Builder addMonsterList(
           int index, emu.grasscutter.net.proto.InBattleMechanicusMonsterInfoOuterClass.InBattleMechanicusMonsterInfo value) {
@@ -2331,7 +2331,7 @@ public final class InBattleMechanicusInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .InBattleMechanicusMonsterInfo monster_list = 14;</code>
+       * <code>repeated .InBattleMechanicusMonsterInfo monster_list = 9;</code>
        */
       public Builder addMonsterList(
           emu.grasscutter.net.proto.InBattleMechanicusMonsterInfoOuterClass.InBattleMechanicusMonsterInfo.Builder builderForValue) {
@@ -2345,7 +2345,7 @@ public final class InBattleMechanicusInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .InBattleMechanicusMonsterInfo monster_list = 14;</code>
+       * <code>repeated .InBattleMechanicusMonsterInfo monster_list = 9;</code>
        */
       public Builder addMonsterList(
           int index, emu.grasscutter.net.proto.InBattleMechanicusMonsterInfoOuterClass.InBattleMechanicusMonsterInfo.Builder builderForValue) {
@@ -2359,7 +2359,7 @@ public final class InBattleMechanicusInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .InBattleMechanicusMonsterInfo monster_list = 14;</code>
+       * <code>repeated .InBattleMechanicusMonsterInfo monster_list = 9;</code>
        */
       public Builder addAllMonsterList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.InBattleMechanicusMonsterInfoOuterClass.InBattleMechanicusMonsterInfo> values) {
@@ -2374,7 +2374,7 @@ public final class InBattleMechanicusInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .InBattleMechanicusMonsterInfo monster_list = 14;</code>
+       * <code>repeated .InBattleMechanicusMonsterInfo monster_list = 9;</code>
        */
       public Builder clearMonsterList() {
         if (monsterListBuilder_ == null) {
@@ -2387,7 +2387,7 @@ public final class InBattleMechanicusInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .InBattleMechanicusMonsterInfo monster_list = 14;</code>
+       * <code>repeated .InBattleMechanicusMonsterInfo monster_list = 9;</code>
        */
       public Builder removeMonsterList(int index) {
         if (monsterListBuilder_ == null) {
@@ -2400,14 +2400,14 @@ public final class InBattleMechanicusInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .InBattleMechanicusMonsterInfo monster_list = 14;</code>
+       * <code>repeated .InBattleMechanicusMonsterInfo monster_list = 9;</code>
        */
       public emu.grasscutter.net.proto.InBattleMechanicusMonsterInfoOuterClass.InBattleMechanicusMonsterInfo.Builder getMonsterListBuilder(
           int index) {
         return getMonsterListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .InBattleMechanicusMonsterInfo monster_list = 14;</code>
+       * <code>repeated .InBattleMechanicusMonsterInfo monster_list = 9;</code>
        */
       public emu.grasscutter.net.proto.InBattleMechanicusMonsterInfoOuterClass.InBattleMechanicusMonsterInfoOrBuilder getMonsterListOrBuilder(
           int index) {
@@ -2417,7 +2417,7 @@ public final class InBattleMechanicusInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .InBattleMechanicusMonsterInfo monster_list = 14;</code>
+       * <code>repeated .InBattleMechanicusMonsterInfo monster_list = 9;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.InBattleMechanicusMonsterInfoOuterClass.InBattleMechanicusMonsterInfoOrBuilder> 
            getMonsterListOrBuilderList() {
@@ -2428,14 +2428,14 @@ public final class InBattleMechanicusInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .InBattleMechanicusMonsterInfo monster_list = 14;</code>
+       * <code>repeated .InBattleMechanicusMonsterInfo monster_list = 9;</code>
        */
       public emu.grasscutter.net.proto.InBattleMechanicusMonsterInfoOuterClass.InBattleMechanicusMonsterInfo.Builder addMonsterListBuilder() {
         return getMonsterListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.InBattleMechanicusMonsterInfoOuterClass.InBattleMechanicusMonsterInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .InBattleMechanicusMonsterInfo monster_list = 14;</code>
+       * <code>repeated .InBattleMechanicusMonsterInfo monster_list = 9;</code>
        */
       public emu.grasscutter.net.proto.InBattleMechanicusMonsterInfoOuterClass.InBattleMechanicusMonsterInfo.Builder addMonsterListBuilder(
           int index) {
@@ -2443,7 +2443,7 @@ public final class InBattleMechanicusInfoOuterClass {
             index, emu.grasscutter.net.proto.InBattleMechanicusMonsterInfoOuterClass.InBattleMechanicusMonsterInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .InBattleMechanicusMonsterInfo monster_list = 14;</code>
+       * <code>repeated .InBattleMechanicusMonsterInfo monster_list = 9;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.InBattleMechanicusMonsterInfoOuterClass.InBattleMechanicusMonsterInfo.Builder> 
            getMonsterListBuilderList() {
@@ -2464,74 +2464,314 @@ public final class InBattleMechanicusInfoOuterClass {
         return monsterListBuilder_;
       }
 
-      private int escapedMonsterNum_ ;
+      private int unk3300CIJALCAMHCD_ ;
       /**
-       * <code>uint32 escaped_monster_num = 6;</code>
-       * @return The escapedMonsterNum.
+       * <code>uint32 Unk3300_CIJALCAMHCD = 3;</code>
+       * @return The unk3300CIJALCAMHCD.
        */
       @java.lang.Override
-      public int getEscapedMonsterNum() {
-        return escapedMonsterNum_;
+      public int getUnk3300CIJALCAMHCD() {
+        return unk3300CIJALCAMHCD_;
       }
       /**
-       * <code>uint32 escaped_monster_num = 6;</code>
-       * @param value The escapedMonsterNum to set.
+       * <code>uint32 Unk3300_CIJALCAMHCD = 3;</code>
+       * @param value The unk3300CIJALCAMHCD to set.
        * @return This builder for chaining.
        */
-      public Builder setEscapedMonsterNum(int value) {
+      public Builder setUnk3300CIJALCAMHCD(int value) {
         
-        escapedMonsterNum_ = value;
+        unk3300CIJALCAMHCD_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 escaped_monster_num = 6;</code>
+       * <code>uint32 Unk3300_CIJALCAMHCD = 3;</code>
        * @return This builder for chaining.
        */
-      public Builder clearEscapedMonsterNum() {
+      public Builder clearUnk3300CIJALCAMHCD() {
         
-        escapedMonsterNum_ = 0;
+        unk3300CIJALCAMHCD_ = 0;
         onChanged();
         return this;
       }
 
-      private int round_ ;
+      private long waitBeginTimeUs_ ;
       /**
-       * <code>uint32 round = 3;</code>
-       * @return The round.
+       * <code>uint64 wait_begin_time_us = 2;</code>
+       * @return The waitBeginTimeUs.
        */
       @java.lang.Override
-      public int getRound() {
-        return round_;
+      public long getWaitBeginTimeUs() {
+        return waitBeginTimeUs_;
       }
       /**
-       * <code>uint32 round = 3;</code>
-       * @param value The round to set.
+       * <code>uint64 wait_begin_time_us = 2;</code>
+       * @param value The waitBeginTimeUs to set.
        * @return This builder for chaining.
        */
-      public Builder setRound(int value) {
+      public Builder setWaitBeginTimeUs(long value) {
         
-        round_ = value;
+        waitBeginTimeUs_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 round = 3;</code>
+       * <code>uint64 wait_begin_time_us = 2;</code>
        * @return This builder for chaining.
        */
-      public Builder clearRound() {
+      public Builder clearWaitBeginTimeUs() {
         
-        round_ = 0;
+        waitBeginTimeUs_ = 0L;
         onChanged();
         return this;
+      }
+
+      private java.util.List<emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfo> historyCardList_ =
+        java.util.Collections.emptyList();
+      private void ensureHistoryCardListIsMutable() {
+        if (!((bitField0_ & 0x00000010) != 0)) {
+          historyCardList_ = new java.util.ArrayList<emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfo>(historyCardList_);
+          bitField0_ |= 0x00000010;
+         }
+      }
+
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfo, emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfo.Builder, emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfoOrBuilder> historyCardListBuilder_;
+
+      /**
+       * <code>repeated .InBattleMechanicusCardInfo history_card_list = 5;</code>
+       */
+      public java.util.List<emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfo> getHistoryCardListList() {
+        if (historyCardListBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(historyCardList_);
+        } else {
+          return historyCardListBuilder_.getMessageList();
+        }
+      }
+      /**
+       * <code>repeated .InBattleMechanicusCardInfo history_card_list = 5;</code>
+       */
+      public int getHistoryCardListCount() {
+        if (historyCardListBuilder_ == null) {
+          return historyCardList_.size();
+        } else {
+          return historyCardListBuilder_.getCount();
+        }
+      }
+      /**
+       * <code>repeated .InBattleMechanicusCardInfo history_card_list = 5;</code>
+       */
+      public emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfo getHistoryCardList(int index) {
+        if (historyCardListBuilder_ == null) {
+          return historyCardList_.get(index);
+        } else {
+          return historyCardListBuilder_.getMessage(index);
+        }
+      }
+      /**
+       * <code>repeated .InBattleMechanicusCardInfo history_card_list = 5;</code>
+       */
+      public Builder setHistoryCardList(
+          int index, emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfo value) {
+        if (historyCardListBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureHistoryCardListIsMutable();
+          historyCardList_.set(index, value);
+          onChanged();
+        } else {
+          historyCardListBuilder_.setMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .InBattleMechanicusCardInfo history_card_list = 5;</code>
+       */
+      public Builder setHistoryCardList(
+          int index, emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfo.Builder builderForValue) {
+        if (historyCardListBuilder_ == null) {
+          ensureHistoryCardListIsMutable();
+          historyCardList_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          historyCardListBuilder_.setMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .InBattleMechanicusCardInfo history_card_list = 5;</code>
+       */
+      public Builder addHistoryCardList(emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfo value) {
+        if (historyCardListBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureHistoryCardListIsMutable();
+          historyCardList_.add(value);
+          onChanged();
+        } else {
+          historyCardListBuilder_.addMessage(value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .InBattleMechanicusCardInfo history_card_list = 5;</code>
+       */
+      public Builder addHistoryCardList(
+          int index, emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfo value) {
+        if (historyCardListBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureHistoryCardListIsMutable();
+          historyCardList_.add(index, value);
+          onChanged();
+        } else {
+          historyCardListBuilder_.addMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .InBattleMechanicusCardInfo history_card_list = 5;</code>
+       */
+      public Builder addHistoryCardList(
+          emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfo.Builder builderForValue) {
+        if (historyCardListBuilder_ == null) {
+          ensureHistoryCardListIsMutable();
+          historyCardList_.add(builderForValue.build());
+          onChanged();
+        } else {
+          historyCardListBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .InBattleMechanicusCardInfo history_card_list = 5;</code>
+       */
+      public Builder addHistoryCardList(
+          int index, emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfo.Builder builderForValue) {
+        if (historyCardListBuilder_ == null) {
+          ensureHistoryCardListIsMutable();
+          historyCardList_.add(index, builderForValue.build());
+          onChanged();
+        } else {
+          historyCardListBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .InBattleMechanicusCardInfo history_card_list = 5;</code>
+       */
+      public Builder addAllHistoryCardList(
+          java.lang.Iterable<? extends emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfo> values) {
+        if (historyCardListBuilder_ == null) {
+          ensureHistoryCardListIsMutable();
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, historyCardList_);
+          onChanged();
+        } else {
+          historyCardListBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .InBattleMechanicusCardInfo history_card_list = 5;</code>
+       */
+      public Builder clearHistoryCardList() {
+        if (historyCardListBuilder_ == null) {
+          historyCardList_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000010);
+          onChanged();
+        } else {
+          historyCardListBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .InBattleMechanicusCardInfo history_card_list = 5;</code>
+       */
+      public Builder removeHistoryCardList(int index) {
+        if (historyCardListBuilder_ == null) {
+          ensureHistoryCardListIsMutable();
+          historyCardList_.remove(index);
+          onChanged();
+        } else {
+          historyCardListBuilder_.remove(index);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .InBattleMechanicusCardInfo history_card_list = 5;</code>
+       */
+      public emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfo.Builder getHistoryCardListBuilder(
+          int index) {
+        return getHistoryCardListFieldBuilder().getBuilder(index);
+      }
+      /**
+       * <code>repeated .InBattleMechanicusCardInfo history_card_list = 5;</code>
+       */
+      public emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfoOrBuilder getHistoryCardListOrBuilder(
+          int index) {
+        if (historyCardListBuilder_ == null) {
+          return historyCardList_.get(index);  } else {
+          return historyCardListBuilder_.getMessageOrBuilder(index);
+        }
+      }
+      /**
+       * <code>repeated .InBattleMechanicusCardInfo history_card_list = 5;</code>
+       */
+      public java.util.List<? extends emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfoOrBuilder> 
+           getHistoryCardListOrBuilderList() {
+        if (historyCardListBuilder_ != null) {
+          return historyCardListBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(historyCardList_);
+        }
+      }
+      /**
+       * <code>repeated .InBattleMechanicusCardInfo history_card_list = 5;</code>
+       */
+      public emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfo.Builder addHistoryCardListBuilder() {
+        return getHistoryCardListFieldBuilder().addBuilder(
+            emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfo.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .InBattleMechanicusCardInfo history_card_list = 5;</code>
+       */
+      public emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfo.Builder addHistoryCardListBuilder(
+          int index) {
+        return getHistoryCardListFieldBuilder().addBuilder(
+            index, emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfo.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .InBattleMechanicusCardInfo history_card_list = 5;</code>
+       */
+      public java.util.List<emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfo.Builder> 
+           getHistoryCardListBuilderList() {
+        return getHistoryCardListFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfo, emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfo.Builder, emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfoOrBuilder> 
+          getHistoryCardListFieldBuilder() {
+        if (historyCardListBuilder_ == null) {
+          historyCardListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+              emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfo, emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfo.Builder, emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfoOrBuilder>(
+                  historyCardList_,
+                  ((bitField0_ & 0x00000010) != 0),
+                  getParentForChildren(),
+                  isClean());
+          historyCardList_ = null;
+        }
+        return historyCardListBuilder_;
       }
 
       private java.util.List<emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfo> pickCardList_ =
         java.util.Collections.emptyList();
       private void ensurePickCardListIsMutable() {
-        if (!((bitField0_ & 0x00000010) != 0)) {
+        if (!((bitField0_ & 0x00000020) != 0)) {
           pickCardList_ = new java.util.ArrayList<emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfo>(pickCardList_);
-          bitField0_ |= 0x00000010;
+          bitField0_ |= 0x00000020;
          }
       }
 
@@ -2539,7 +2779,7 @@ public final class InBattleMechanicusInfoOuterClass {
           emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfo, emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfo.Builder, emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfoOrBuilder> pickCardListBuilder_;
 
       /**
-       * <code>repeated .InBattleMechanicusCardInfo pick_card_list = 15;</code>
+       * <code>repeated .InBattleMechanicusCardInfo pick_card_list = 8;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfo> getPickCardListList() {
         if (pickCardListBuilder_ == null) {
@@ -2549,7 +2789,7 @@ public final class InBattleMechanicusInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .InBattleMechanicusCardInfo pick_card_list = 15;</code>
+       * <code>repeated .InBattleMechanicusCardInfo pick_card_list = 8;</code>
        */
       public int getPickCardListCount() {
         if (pickCardListBuilder_ == null) {
@@ -2559,7 +2799,7 @@ public final class InBattleMechanicusInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .InBattleMechanicusCardInfo pick_card_list = 15;</code>
+       * <code>repeated .InBattleMechanicusCardInfo pick_card_list = 8;</code>
        */
       public emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfo getPickCardList(int index) {
         if (pickCardListBuilder_ == null) {
@@ -2569,7 +2809,7 @@ public final class InBattleMechanicusInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .InBattleMechanicusCardInfo pick_card_list = 15;</code>
+       * <code>repeated .InBattleMechanicusCardInfo pick_card_list = 8;</code>
        */
       public Builder setPickCardList(
           int index, emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfo value) {
@@ -2586,7 +2826,7 @@ public final class InBattleMechanicusInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .InBattleMechanicusCardInfo pick_card_list = 15;</code>
+       * <code>repeated .InBattleMechanicusCardInfo pick_card_list = 8;</code>
        */
       public Builder setPickCardList(
           int index, emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfo.Builder builderForValue) {
@@ -2600,7 +2840,7 @@ public final class InBattleMechanicusInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .InBattleMechanicusCardInfo pick_card_list = 15;</code>
+       * <code>repeated .InBattleMechanicusCardInfo pick_card_list = 8;</code>
        */
       public Builder addPickCardList(emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfo value) {
         if (pickCardListBuilder_ == null) {
@@ -2616,7 +2856,7 @@ public final class InBattleMechanicusInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .InBattleMechanicusCardInfo pick_card_list = 15;</code>
+       * <code>repeated .InBattleMechanicusCardInfo pick_card_list = 8;</code>
        */
       public Builder addPickCardList(
           int index, emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfo value) {
@@ -2633,7 +2873,7 @@ public final class InBattleMechanicusInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .InBattleMechanicusCardInfo pick_card_list = 15;</code>
+       * <code>repeated .InBattleMechanicusCardInfo pick_card_list = 8;</code>
        */
       public Builder addPickCardList(
           emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfo.Builder builderForValue) {
@@ -2647,7 +2887,7 @@ public final class InBattleMechanicusInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .InBattleMechanicusCardInfo pick_card_list = 15;</code>
+       * <code>repeated .InBattleMechanicusCardInfo pick_card_list = 8;</code>
        */
       public Builder addPickCardList(
           int index, emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfo.Builder builderForValue) {
@@ -2661,7 +2901,7 @@ public final class InBattleMechanicusInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .InBattleMechanicusCardInfo pick_card_list = 15;</code>
+       * <code>repeated .InBattleMechanicusCardInfo pick_card_list = 8;</code>
        */
       public Builder addAllPickCardList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfo> values) {
@@ -2676,12 +2916,12 @@ public final class InBattleMechanicusInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .InBattleMechanicusCardInfo pick_card_list = 15;</code>
+       * <code>repeated .InBattleMechanicusCardInfo pick_card_list = 8;</code>
        */
       public Builder clearPickCardList() {
         if (pickCardListBuilder_ == null) {
           pickCardList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000010);
+          bitField0_ = (bitField0_ & ~0x00000020);
           onChanged();
         } else {
           pickCardListBuilder_.clear();
@@ -2689,7 +2929,7 @@ public final class InBattleMechanicusInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .InBattleMechanicusCardInfo pick_card_list = 15;</code>
+       * <code>repeated .InBattleMechanicusCardInfo pick_card_list = 8;</code>
        */
       public Builder removePickCardList(int index) {
         if (pickCardListBuilder_ == null) {
@@ -2702,14 +2942,14 @@ public final class InBattleMechanicusInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .InBattleMechanicusCardInfo pick_card_list = 15;</code>
+       * <code>repeated .InBattleMechanicusCardInfo pick_card_list = 8;</code>
        */
       public emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfo.Builder getPickCardListBuilder(
           int index) {
         return getPickCardListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .InBattleMechanicusCardInfo pick_card_list = 15;</code>
+       * <code>repeated .InBattleMechanicusCardInfo pick_card_list = 8;</code>
        */
       public emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfoOrBuilder getPickCardListOrBuilder(
           int index) {
@@ -2719,7 +2959,7 @@ public final class InBattleMechanicusInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .InBattleMechanicusCardInfo pick_card_list = 15;</code>
+       * <code>repeated .InBattleMechanicusCardInfo pick_card_list = 8;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfoOrBuilder> 
            getPickCardListOrBuilderList() {
@@ -2730,14 +2970,14 @@ public final class InBattleMechanicusInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .InBattleMechanicusCardInfo pick_card_list = 15;</code>
+       * <code>repeated .InBattleMechanicusCardInfo pick_card_list = 8;</code>
        */
       public emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfo.Builder addPickCardListBuilder() {
         return getPickCardListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .InBattleMechanicusCardInfo pick_card_list = 15;</code>
+       * <code>repeated .InBattleMechanicusCardInfo pick_card_list = 8;</code>
        */
       public emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfo.Builder addPickCardListBuilder(
           int index) {
@@ -2745,7 +2985,7 @@ public final class InBattleMechanicusInfoOuterClass {
             index, emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .InBattleMechanicusCardInfo pick_card_list = 15;</code>
+       * <code>repeated .InBattleMechanicusCardInfo pick_card_list = 8;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfo.Builder> 
            getPickCardListBuilderList() {
@@ -2758,7 +2998,7 @@ public final class InBattleMechanicusInfoOuterClass {
           pickCardListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
               emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfo, emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfo.Builder, emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfoOrBuilder>(
                   pickCardList_,
-                  ((bitField0_ & 0x00000010) != 0),
+                  ((bitField0_ & 0x00000020) != 0),
                   getParentForChildren(),
                   isClean());
           pickCardList_ = null;
@@ -2766,304 +3006,64 @@ public final class InBattleMechanicusInfoOuterClass {
         return pickCardListBuilder_;
       }
 
-      private java.util.List<emu.grasscutter.net.proto.InBattleMechanicusPlayerInfoOuterClass.InBattleMechanicusPlayerInfo> playerList_ =
-        java.util.Collections.emptyList();
-      private void ensurePlayerListIsMutable() {
-        if (!((bitField0_ & 0x00000020) != 0)) {
-          playerList_ = new java.util.ArrayList<emu.grasscutter.net.proto.InBattleMechanicusPlayerInfoOuterClass.InBattleMechanicusPlayerInfo>(playerList_);
-          bitField0_ |= 0x00000020;
-         }
-      }
-
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.InBattleMechanicusPlayerInfoOuterClass.InBattleMechanicusPlayerInfo, emu.grasscutter.net.proto.InBattleMechanicusPlayerInfoOuterClass.InBattleMechanicusPlayerInfo.Builder, emu.grasscutter.net.proto.InBattleMechanicusPlayerInfoOuterClass.InBattleMechanicusPlayerInfoOrBuilder> playerListBuilder_;
-
+      private int escapedMonsterNum_ ;
       /**
-       * <code>repeated .InBattleMechanicusPlayerInfo player_list = 7;</code>
-       */
-      public java.util.List<emu.grasscutter.net.proto.InBattleMechanicusPlayerInfoOuterClass.InBattleMechanicusPlayerInfo> getPlayerListList() {
-        if (playerListBuilder_ == null) {
-          return java.util.Collections.unmodifiableList(playerList_);
-        } else {
-          return playerListBuilder_.getMessageList();
-        }
-      }
-      /**
-       * <code>repeated .InBattleMechanicusPlayerInfo player_list = 7;</code>
-       */
-      public int getPlayerListCount() {
-        if (playerListBuilder_ == null) {
-          return playerList_.size();
-        } else {
-          return playerListBuilder_.getCount();
-        }
-      }
-      /**
-       * <code>repeated .InBattleMechanicusPlayerInfo player_list = 7;</code>
-       */
-      public emu.grasscutter.net.proto.InBattleMechanicusPlayerInfoOuterClass.InBattleMechanicusPlayerInfo getPlayerList(int index) {
-        if (playerListBuilder_ == null) {
-          return playerList_.get(index);
-        } else {
-          return playerListBuilder_.getMessage(index);
-        }
-      }
-      /**
-       * <code>repeated .InBattleMechanicusPlayerInfo player_list = 7;</code>
-       */
-      public Builder setPlayerList(
-          int index, emu.grasscutter.net.proto.InBattleMechanicusPlayerInfoOuterClass.InBattleMechanicusPlayerInfo value) {
-        if (playerListBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensurePlayerListIsMutable();
-          playerList_.set(index, value);
-          onChanged();
-        } else {
-          playerListBuilder_.setMessage(index, value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .InBattleMechanicusPlayerInfo player_list = 7;</code>
-       */
-      public Builder setPlayerList(
-          int index, emu.grasscutter.net.proto.InBattleMechanicusPlayerInfoOuterClass.InBattleMechanicusPlayerInfo.Builder builderForValue) {
-        if (playerListBuilder_ == null) {
-          ensurePlayerListIsMutable();
-          playerList_.set(index, builderForValue.build());
-          onChanged();
-        } else {
-          playerListBuilder_.setMessage(index, builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .InBattleMechanicusPlayerInfo player_list = 7;</code>
-       */
-      public Builder addPlayerList(emu.grasscutter.net.proto.InBattleMechanicusPlayerInfoOuterClass.InBattleMechanicusPlayerInfo value) {
-        if (playerListBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensurePlayerListIsMutable();
-          playerList_.add(value);
-          onChanged();
-        } else {
-          playerListBuilder_.addMessage(value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .InBattleMechanicusPlayerInfo player_list = 7;</code>
-       */
-      public Builder addPlayerList(
-          int index, emu.grasscutter.net.proto.InBattleMechanicusPlayerInfoOuterClass.InBattleMechanicusPlayerInfo value) {
-        if (playerListBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensurePlayerListIsMutable();
-          playerList_.add(index, value);
-          onChanged();
-        } else {
-          playerListBuilder_.addMessage(index, value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .InBattleMechanicusPlayerInfo player_list = 7;</code>
-       */
-      public Builder addPlayerList(
-          emu.grasscutter.net.proto.InBattleMechanicusPlayerInfoOuterClass.InBattleMechanicusPlayerInfo.Builder builderForValue) {
-        if (playerListBuilder_ == null) {
-          ensurePlayerListIsMutable();
-          playerList_.add(builderForValue.build());
-          onChanged();
-        } else {
-          playerListBuilder_.addMessage(builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .InBattleMechanicusPlayerInfo player_list = 7;</code>
-       */
-      public Builder addPlayerList(
-          int index, emu.grasscutter.net.proto.InBattleMechanicusPlayerInfoOuterClass.InBattleMechanicusPlayerInfo.Builder builderForValue) {
-        if (playerListBuilder_ == null) {
-          ensurePlayerListIsMutable();
-          playerList_.add(index, builderForValue.build());
-          onChanged();
-        } else {
-          playerListBuilder_.addMessage(index, builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .InBattleMechanicusPlayerInfo player_list = 7;</code>
-       */
-      public Builder addAllPlayerList(
-          java.lang.Iterable<? extends emu.grasscutter.net.proto.InBattleMechanicusPlayerInfoOuterClass.InBattleMechanicusPlayerInfo> values) {
-        if (playerListBuilder_ == null) {
-          ensurePlayerListIsMutable();
-          com.google.protobuf.AbstractMessageLite.Builder.addAll(
-              values, playerList_);
-          onChanged();
-        } else {
-          playerListBuilder_.addAllMessages(values);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .InBattleMechanicusPlayerInfo player_list = 7;</code>
-       */
-      public Builder clearPlayerList() {
-        if (playerListBuilder_ == null) {
-          playerList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000020);
-          onChanged();
-        } else {
-          playerListBuilder_.clear();
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .InBattleMechanicusPlayerInfo player_list = 7;</code>
-       */
-      public Builder removePlayerList(int index) {
-        if (playerListBuilder_ == null) {
-          ensurePlayerListIsMutable();
-          playerList_.remove(index);
-          onChanged();
-        } else {
-          playerListBuilder_.remove(index);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .InBattleMechanicusPlayerInfo player_list = 7;</code>
-       */
-      public emu.grasscutter.net.proto.InBattleMechanicusPlayerInfoOuterClass.InBattleMechanicusPlayerInfo.Builder getPlayerListBuilder(
-          int index) {
-        return getPlayerListFieldBuilder().getBuilder(index);
-      }
-      /**
-       * <code>repeated .InBattleMechanicusPlayerInfo player_list = 7;</code>
-       */
-      public emu.grasscutter.net.proto.InBattleMechanicusPlayerInfoOuterClass.InBattleMechanicusPlayerInfoOrBuilder getPlayerListOrBuilder(
-          int index) {
-        if (playerListBuilder_ == null) {
-          return playerList_.get(index);  } else {
-          return playerListBuilder_.getMessageOrBuilder(index);
-        }
-      }
-      /**
-       * <code>repeated .InBattleMechanicusPlayerInfo player_list = 7;</code>
-       */
-      public java.util.List<? extends emu.grasscutter.net.proto.InBattleMechanicusPlayerInfoOuterClass.InBattleMechanicusPlayerInfoOrBuilder> 
-           getPlayerListOrBuilderList() {
-        if (playerListBuilder_ != null) {
-          return playerListBuilder_.getMessageOrBuilderList();
-        } else {
-          return java.util.Collections.unmodifiableList(playerList_);
-        }
-      }
-      /**
-       * <code>repeated .InBattleMechanicusPlayerInfo player_list = 7;</code>
-       */
-      public emu.grasscutter.net.proto.InBattleMechanicusPlayerInfoOuterClass.InBattleMechanicusPlayerInfo.Builder addPlayerListBuilder() {
-        return getPlayerListFieldBuilder().addBuilder(
-            emu.grasscutter.net.proto.InBattleMechanicusPlayerInfoOuterClass.InBattleMechanicusPlayerInfo.getDefaultInstance());
-      }
-      /**
-       * <code>repeated .InBattleMechanicusPlayerInfo player_list = 7;</code>
-       */
-      public emu.grasscutter.net.proto.InBattleMechanicusPlayerInfoOuterClass.InBattleMechanicusPlayerInfo.Builder addPlayerListBuilder(
-          int index) {
-        return getPlayerListFieldBuilder().addBuilder(
-            index, emu.grasscutter.net.proto.InBattleMechanicusPlayerInfoOuterClass.InBattleMechanicusPlayerInfo.getDefaultInstance());
-      }
-      /**
-       * <code>repeated .InBattleMechanicusPlayerInfo player_list = 7;</code>
-       */
-      public java.util.List<emu.grasscutter.net.proto.InBattleMechanicusPlayerInfoOuterClass.InBattleMechanicusPlayerInfo.Builder> 
-           getPlayerListBuilderList() {
-        return getPlayerListFieldBuilder().getBuilderList();
-      }
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.InBattleMechanicusPlayerInfoOuterClass.InBattleMechanicusPlayerInfo, emu.grasscutter.net.proto.InBattleMechanicusPlayerInfoOuterClass.InBattleMechanicusPlayerInfo.Builder, emu.grasscutter.net.proto.InBattleMechanicusPlayerInfoOuterClass.InBattleMechanicusPlayerInfoOrBuilder> 
-          getPlayerListFieldBuilder() {
-        if (playerListBuilder_ == null) {
-          playerListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              emu.grasscutter.net.proto.InBattleMechanicusPlayerInfoOuterClass.InBattleMechanicusPlayerInfo, emu.grasscutter.net.proto.InBattleMechanicusPlayerInfoOuterClass.InBattleMechanicusPlayerInfo.Builder, emu.grasscutter.net.proto.InBattleMechanicusPlayerInfoOuterClass.InBattleMechanicusPlayerInfoOrBuilder>(
-                  playerList_,
-                  ((bitField0_ & 0x00000020) != 0),
-                  getParentForChildren(),
-                  isClean());
-          playerList_ = null;
-        }
-        return playerListBuilder_;
-      }
-
-      private long waitBeginTimeUs_ ;
-      /**
-       * <code>uint64 wait_begin_time_us = 1;</code>
-       * @return The waitBeginTimeUs.
+       * <code>uint32 escaped_monster_num = 10;</code>
+       * @return The escapedMonsterNum.
        */
       @java.lang.Override
-      public long getWaitBeginTimeUs() {
-        return waitBeginTimeUs_;
+      public int getEscapedMonsterNum() {
+        return escapedMonsterNum_;
       }
       /**
-       * <code>uint64 wait_begin_time_us = 1;</code>
-       * @param value The waitBeginTimeUs to set.
+       * <code>uint32 escaped_monster_num = 10;</code>
+       * @param value The escapedMonsterNum to set.
        * @return This builder for chaining.
        */
-      public Builder setWaitBeginTimeUs(long value) {
+      public Builder setEscapedMonsterNum(int value) {
         
-        waitBeginTimeUs_ = value;
+        escapedMonsterNum_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint64 wait_begin_time_us = 1;</code>
+       * <code>uint32 escaped_monster_num = 10;</code>
        * @return This builder for chaining.
        */
-      public Builder clearWaitBeginTimeUs() {
+      public Builder clearEscapedMonsterNum() {
         
-        waitBeginTimeUs_ = 0L;
+        escapedMonsterNum_ = 0;
         onChanged();
         return this;
       }
 
-      private long beginTimeMs_ ;
+      private int round_ ;
       /**
-       * <code>uint64 begin_time_ms = 2;</code>
-       * @return The beginTimeMs.
+       * <code>uint32 round = 11;</code>
+       * @return The round.
        */
       @java.lang.Override
-      public long getBeginTimeMs() {
-        return beginTimeMs_;
+      public int getRound() {
+        return round_;
       }
       /**
-       * <code>uint64 begin_time_ms = 2;</code>
-       * @param value The beginTimeMs to set.
+       * <code>uint32 round = 11;</code>
+       * @param value The round to set.
        * @return This builder for chaining.
        */
-      public Builder setBeginTimeMs(long value) {
+      public Builder setRound(int value) {
         
-        beginTimeMs_ = value;
+        round_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint64 begin_time_ms = 2;</code>
+       * <code>uint32 round = 11;</code>
        * @return This builder for chaining.
        */
-      public Builder clearBeginTimeMs() {
+      public Builder clearRound() {
         
-        beginTimeMs_ = 0L;
+        round_ = 0;
         onChanged();
         return this;
       }
@@ -3138,22 +3138,23 @@ public final class InBattleMechanicusInfoOuterClass {
       "MechanicusCardInfo.proto\032#InBattleMechan" +
       "icusMonsterInfo.proto\032\"InBattleMechanicu" +
       "sPlayerInfo.proto\032!InBattleMechanicusSta" +
-      "geType.proto\"\275\004\n\026InBattleMechanicusInfo\022" +
-      "\024\n\014left_monster\030\005 \001(\r\022\024\n\014wait_seconds\030\r " +
-      "\001(\r\022\026\n\rentrance_list\030\232\003 \003(\r\022\021\n\texit_list" +
-      "\030s \003(\r\0226\n\021history_card_list\030\013 \003(\0132\033.InBa" +
-      "ttleMechanicusCardInfo\022\036\n\026max_escape_mon" +
-      "ster_num\030\n \001(\r\022\037\n\027building_stage_duratio" +
-      "n\030\004 \001(\r\022\023\n\013duration_ms\030\010 \001(\004\022+\n\005stage\030\t " +
-      "\001(\0162\034.InBattleMechanicusStageType\022\023\n\013tot" +
-      "al_round\030\014 \001(\r\0224\n\014monster_list\030\016 \003(\0132\036.I" +
-      "nBattleMechanicusMonsterInfo\022\033\n\023escaped_" +
-      "monster_num\030\006 \001(\r\022\r\n\005round\030\003 \001(\r\0223\n\016pick" +
-      "_card_list\030\017 \003(\0132\033.InBattleMechanicusCar" +
-      "dInfo\0222\n\013player_list\030\007 \003(\0132\035.InBattleMec" +
-      "hanicusPlayerInfo\022\032\n\022wait_begin_time_us\030" +
-      "\001 \001(\004\022\025\n\rbegin_time_ms\030\002 \001(\004B\033\n\031emu.gras" +
-      "scutter.net.protob\006proto3"
+      "geType.proto\"\331\004\n\026InBattleMechanicusInfo\022" +
+      "\034\n\023Unk3300_MNNDELKIBLG\030\220\005 \003(\r\022\034\n\023Unk3300" +
+      "_GHBEHPGBBIH\030\253\005 \003(\r\022+\n\005stage\030\007 \001(\0162\034.InB" +
+      "attleMechanicusStageType\022\033\n\023Unk3300_EBOI" +
+      "GFMOKHK\030\004 \001(\r\022\024\n\014wait_seconds\030\r \001(\r\022\030\n\020l" +
+      "eft_monster_num\030\017 \001(\r\022\033\n\023Unk3300_IFIPKLO" +
+      "GEOF\030\006 \001(\004\0222\n\013player_list\030\014 \003(\0132\035.InBatt" +
+      "leMechanicusPlayerInfo\022\023\n\013total_round\030\001 " +
+      "\001(\r\022\033\n\023Unk3300_IAPINOLIALF\030\016 \001(\004\0224\n\014mons" +
+      "ter_list\030\t \003(\0132\036.InBattleMechanicusMonst" +
+      "erInfo\022\033\n\023Unk3300_CIJALCAMHCD\030\003 \001(\r\022\032\n\022w" +
+      "ait_begin_time_us\030\002 \001(\004\0226\n\021history_card_" +
+      "list\030\005 \003(\0132\033.InBattleMechanicusCardInfo\022" +
+      "3\n\016pick_card_list\030\010 \003(\0132\033.InBattleMechan" +
+      "icusCardInfo\022\033\n\023escaped_monster_num\030\n \001(" +
+      "\r\022\r\n\005round\030\013 \001(\rB\033\n\031emu.grasscutter.net." +
+      "protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -3168,7 +3169,7 @@ public final class InBattleMechanicusInfoOuterClass {
     internal_static_InBattleMechanicusInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_InBattleMechanicusInfo_descriptor,
-        new java.lang.String[] { "LeftMonster", "WaitSeconds", "EntranceList", "ExitList", "HistoryCardList", "MaxEscapeMonsterNum", "BuildingStageDuration", "DurationMs", "Stage", "TotalRound", "MonsterList", "EscapedMonsterNum", "Round", "PickCardList", "PlayerList", "WaitBeginTimeUs", "BeginTimeMs", });
+        new java.lang.String[] { "Unk3300MNNDELKIBLG", "Unk3300GHBEHPGBBIH", "Stage", "Unk3300EBOIGFMOKHK", "WaitSeconds", "LeftMonsterNum", "Unk3300IFIPKLOGEOF", "PlayerList", "TotalRound", "Unk3300IAPINOLIALF", "MonsterList", "Unk3300CIJALCAMHCD", "WaitBeginTimeUs", "HistoryCardList", "PickCardList", "EscapedMonsterNum", "Round", });
     emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.getDescriptor();
     emu.grasscutter.net.proto.InBattleMechanicusMonsterInfoOuterClass.getDescriptor();
     emu.grasscutter.net.proto.InBattleMechanicusPlayerInfoOuterClass.getDescriptor();

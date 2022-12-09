@@ -19,39 +19,39 @@ public final class HideAndSeekPlayerBattleInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 costume_id = 3;</code>
-     * @return The costumeId.
-     */
-    int getCostumeId();
-
-    /**
-     * <code>repeated uint32 skill_list = 15;</code>
-     * @return A list containing the skillList.
-     */
-    java.util.List<java.lang.Integer> getSkillListList();
-    /**
-     * <code>repeated uint32 skill_list = 15;</code>
-     * @return The count of skillList.
-     */
-    int getSkillListCount();
-    /**
-     * <code>repeated uint32 skill_list = 15;</code>
-     * @param index The index of the element to return.
-     * @return The skillList at the given index.
-     */
-    int getSkillList(int index);
-
-    /**
      * <code>bool is_ready = 12;</code>
      * @return The isReady.
      */
     boolean getIsReady();
 
     /**
-     * <code>uint32 avatar_id = 6;</code>
+     * <code>repeated uint32 skill_list = 11;</code>
+     * @return A list containing the skillList.
+     */
+    java.util.List<java.lang.Integer> getSkillListList();
+    /**
+     * <code>repeated uint32 skill_list = 11;</code>
+     * @return The count of skillList.
+     */
+    int getSkillListCount();
+    /**
+     * <code>repeated uint32 skill_list = 11;</code>
+     * @param index The index of the element to return.
+     * @return The skillList at the given index.
+     */
+    int getSkillList(int index);
+
+    /**
+     * <code>uint32 avatar_id = 15;</code>
      * @return The avatarId.
      */
     int getAvatarId();
+
+    /**
+     * <code>uint32 costume_id = 4;</code>
+     * @return The costumeId.
+     */
+    int getCostumeId();
   }
   /**
    * Protobuf type {@code HideAndSeekPlayerBattleInfo}
@@ -100,22 +100,12 @@ public final class HideAndSeekPlayerBattleInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 24: {
+            case 32: {
 
               costumeId_ = input.readUInt32();
               break;
             }
-            case 48: {
-
-              avatarId_ = input.readUInt32();
-              break;
-            }
-            case 96: {
-
-              isReady_ = input.readBool();
-              break;
-            }
-            case 120: {
+            case 88: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 skillList_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
@@ -123,7 +113,7 @@ public final class HideAndSeekPlayerBattleInfoOuterClass {
               skillList_.addInt(input.readUInt32());
               break;
             }
-            case 122: {
+            case 90: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -134,6 +124,16 @@ public final class HideAndSeekPlayerBattleInfoOuterClass {
                 skillList_.addInt(input.readUInt32());
               }
               input.popLimit(limit);
+              break;
+            }
+            case 96: {
+
+              isReady_ = input.readBool();
+              break;
+            }
+            case 120: {
+
+              avatarId_ = input.readUInt32();
               break;
             }
             default: {
@@ -171,45 +171,6 @@ public final class HideAndSeekPlayerBattleInfoOuterClass {
               emu.grasscutter.net.proto.HideAndSeekPlayerBattleInfoOuterClass.HideAndSeekPlayerBattleInfo.class, emu.grasscutter.net.proto.HideAndSeekPlayerBattleInfoOuterClass.HideAndSeekPlayerBattleInfo.Builder.class);
     }
 
-    public static final int COSTUME_ID_FIELD_NUMBER = 3;
-    private int costumeId_;
-    /**
-     * <code>uint32 costume_id = 3;</code>
-     * @return The costumeId.
-     */
-    @java.lang.Override
-    public int getCostumeId() {
-      return costumeId_;
-    }
-
-    public static final int SKILL_LIST_FIELD_NUMBER = 15;
-    private com.google.protobuf.Internal.IntList skillList_;
-    /**
-     * <code>repeated uint32 skill_list = 15;</code>
-     * @return A list containing the skillList.
-     */
-    @java.lang.Override
-    public java.util.List<java.lang.Integer>
-        getSkillListList() {
-      return skillList_;
-    }
-    /**
-     * <code>repeated uint32 skill_list = 15;</code>
-     * @return The count of skillList.
-     */
-    public int getSkillListCount() {
-      return skillList_.size();
-    }
-    /**
-     * <code>repeated uint32 skill_list = 15;</code>
-     * @param index The index of the element to return.
-     * @return The skillList at the given index.
-     */
-    public int getSkillList(int index) {
-      return skillList_.getInt(index);
-    }
-    private int skillListMemoizedSerializedSize = -1;
-
     public static final int IS_READY_FIELD_NUMBER = 12;
     private boolean isReady_;
     /**
@@ -221,15 +182,54 @@ public final class HideAndSeekPlayerBattleInfoOuterClass {
       return isReady_;
     }
 
-    public static final int AVATAR_ID_FIELD_NUMBER = 6;
+    public static final int SKILL_LIST_FIELD_NUMBER = 11;
+    private com.google.protobuf.Internal.IntList skillList_;
+    /**
+     * <code>repeated uint32 skill_list = 11;</code>
+     * @return A list containing the skillList.
+     */
+    @java.lang.Override
+    public java.util.List<java.lang.Integer>
+        getSkillListList() {
+      return skillList_;
+    }
+    /**
+     * <code>repeated uint32 skill_list = 11;</code>
+     * @return The count of skillList.
+     */
+    public int getSkillListCount() {
+      return skillList_.size();
+    }
+    /**
+     * <code>repeated uint32 skill_list = 11;</code>
+     * @param index The index of the element to return.
+     * @return The skillList at the given index.
+     */
+    public int getSkillList(int index) {
+      return skillList_.getInt(index);
+    }
+    private int skillListMemoizedSerializedSize = -1;
+
+    public static final int AVATAR_ID_FIELD_NUMBER = 15;
     private int avatarId_;
     /**
-     * <code>uint32 avatar_id = 6;</code>
+     * <code>uint32 avatar_id = 15;</code>
      * @return The avatarId.
      */
     @java.lang.Override
     public int getAvatarId() {
       return avatarId_;
+    }
+
+    public static final int COSTUME_ID_FIELD_NUMBER = 4;
+    private int costumeId_;
+    /**
+     * <code>uint32 costume_id = 4;</code>
+     * @return The costumeId.
+     */
+    @java.lang.Override
+    public int getCostumeId() {
+      return costumeId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -248,20 +248,20 @@ public final class HideAndSeekPlayerBattleInfoOuterClass {
                         throws java.io.IOException {
       getSerializedSize();
       if (costumeId_ != 0) {
-        output.writeUInt32(3, costumeId_);
-      }
-      if (avatarId_ != 0) {
-        output.writeUInt32(6, avatarId_);
-      }
-      if (isReady_ != false) {
-        output.writeBool(12, isReady_);
+        output.writeUInt32(4, costumeId_);
       }
       if (getSkillListList().size() > 0) {
-        output.writeUInt32NoTag(122);
+        output.writeUInt32NoTag(90);
         output.writeUInt32NoTag(skillListMemoizedSerializedSize);
       }
       for (int i = 0; i < skillList_.size(); i++) {
         output.writeUInt32NoTag(skillList_.getInt(i));
+      }
+      if (isReady_ != false) {
+        output.writeBool(12, isReady_);
+      }
+      if (avatarId_ != 0) {
+        output.writeUInt32(15, avatarId_);
       }
       unknownFields.writeTo(output);
     }
@@ -274,15 +274,7 @@ public final class HideAndSeekPlayerBattleInfoOuterClass {
       size = 0;
       if (costumeId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, costumeId_);
-      }
-      if (avatarId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, avatarId_);
-      }
-      if (isReady_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(12, isReady_);
+          .computeUInt32Size(4, costumeId_);
       }
       {
         int dataSize = 0;
@@ -297,6 +289,14 @@ public final class HideAndSeekPlayerBattleInfoOuterClass {
               .computeInt32SizeNoTag(dataSize);
         }
         skillListMemoizedSerializedSize = dataSize;
+      }
+      if (isReady_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(12, isReady_);
+      }
+      if (avatarId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(15, avatarId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -313,14 +313,14 @@ public final class HideAndSeekPlayerBattleInfoOuterClass {
       }
       emu.grasscutter.net.proto.HideAndSeekPlayerBattleInfoOuterClass.HideAndSeekPlayerBattleInfo other = (emu.grasscutter.net.proto.HideAndSeekPlayerBattleInfoOuterClass.HideAndSeekPlayerBattleInfo) obj;
 
-      if (getCostumeId()
-          != other.getCostumeId()) return false;
-      if (!getSkillListList()
-          .equals(other.getSkillListList())) return false;
       if (getIsReady()
           != other.getIsReady()) return false;
+      if (!getSkillListList()
+          .equals(other.getSkillListList())) return false;
       if (getAvatarId()
           != other.getAvatarId()) return false;
+      if (getCostumeId()
+          != other.getCostumeId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -332,17 +332,17 @@ public final class HideAndSeekPlayerBattleInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + COSTUME_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getCostumeId();
+      hash = (37 * hash) + IS_READY_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getIsReady());
       if (getSkillListCount() > 0) {
         hash = (37 * hash) + SKILL_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getSkillListList().hashCode();
       }
-      hash = (37 * hash) + IS_READY_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsReady());
       hash = (37 * hash) + AVATAR_ID_FIELD_NUMBER;
       hash = (53 * hash) + getAvatarId();
+      hash = (37 * hash) + COSTUME_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getCostumeId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -476,13 +476,13 @@ public final class HideAndSeekPlayerBattleInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        costumeId_ = 0;
+        isReady_ = false;
 
         skillList_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
-        isReady_ = false;
-
         avatarId_ = 0;
+
+        costumeId_ = 0;
 
         return this;
       }
@@ -511,14 +511,14 @@ public final class HideAndSeekPlayerBattleInfoOuterClass {
       public emu.grasscutter.net.proto.HideAndSeekPlayerBattleInfoOuterClass.HideAndSeekPlayerBattleInfo buildPartial() {
         emu.grasscutter.net.proto.HideAndSeekPlayerBattleInfoOuterClass.HideAndSeekPlayerBattleInfo result = new emu.grasscutter.net.proto.HideAndSeekPlayerBattleInfoOuterClass.HideAndSeekPlayerBattleInfo(this);
         int from_bitField0_ = bitField0_;
-        result.costumeId_ = costumeId_;
+        result.isReady_ = isReady_;
         if (((bitField0_ & 0x00000001) != 0)) {
           skillList_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000001);
         }
         result.skillList_ = skillList_;
-        result.isReady_ = isReady_;
         result.avatarId_ = avatarId_;
+        result.costumeId_ = costumeId_;
         onBuilt();
         return result;
       }
@@ -567,8 +567,8 @@ public final class HideAndSeekPlayerBattleInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.HideAndSeekPlayerBattleInfoOuterClass.HideAndSeekPlayerBattleInfo other) {
         if (other == emu.grasscutter.net.proto.HideAndSeekPlayerBattleInfoOuterClass.HideAndSeekPlayerBattleInfo.getDefaultInstance()) return this;
-        if (other.getCostumeId() != 0) {
-          setCostumeId(other.getCostumeId());
+        if (other.getIsReady() != false) {
+          setIsReady(other.getIsReady());
         }
         if (!other.skillList_.isEmpty()) {
           if (skillList_.isEmpty()) {
@@ -580,11 +580,11 @@ public final class HideAndSeekPlayerBattleInfoOuterClass {
           }
           onChanged();
         }
-        if (other.getIsReady() != false) {
-          setIsReady(other.getIsReady());
-        }
         if (other.getAvatarId() != 0) {
           setAvatarId(other.getAvatarId());
+        }
+        if (other.getCostumeId() != 0) {
+          setCostumeId(other.getCostumeId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -615,116 +615,6 @@ public final class HideAndSeekPlayerBattleInfoOuterClass {
         return this;
       }
       private int bitField0_;
-
-      private int costumeId_ ;
-      /**
-       * <code>uint32 costume_id = 3;</code>
-       * @return The costumeId.
-       */
-      @java.lang.Override
-      public int getCostumeId() {
-        return costumeId_;
-      }
-      /**
-       * <code>uint32 costume_id = 3;</code>
-       * @param value The costumeId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setCostumeId(int value) {
-        
-        costumeId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 costume_id = 3;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearCostumeId() {
-        
-        costumeId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private com.google.protobuf.Internal.IntList skillList_ = emptyIntList();
-      private void ensureSkillListIsMutable() {
-        if (!((bitField0_ & 0x00000001) != 0)) {
-          skillList_ = mutableCopy(skillList_);
-          bitField0_ |= 0x00000001;
-         }
-      }
-      /**
-       * <code>repeated uint32 skill_list = 15;</code>
-       * @return A list containing the skillList.
-       */
-      public java.util.List<java.lang.Integer>
-          getSkillListList() {
-        return ((bitField0_ & 0x00000001) != 0) ?
-                 java.util.Collections.unmodifiableList(skillList_) : skillList_;
-      }
-      /**
-       * <code>repeated uint32 skill_list = 15;</code>
-       * @return The count of skillList.
-       */
-      public int getSkillListCount() {
-        return skillList_.size();
-      }
-      /**
-       * <code>repeated uint32 skill_list = 15;</code>
-       * @param index The index of the element to return.
-       * @return The skillList at the given index.
-       */
-      public int getSkillList(int index) {
-        return skillList_.getInt(index);
-      }
-      /**
-       * <code>repeated uint32 skill_list = 15;</code>
-       * @param index The index to set the value at.
-       * @param value The skillList to set.
-       * @return This builder for chaining.
-       */
-      public Builder setSkillList(
-          int index, int value) {
-        ensureSkillListIsMutable();
-        skillList_.setInt(index, value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 skill_list = 15;</code>
-       * @param value The skillList to add.
-       * @return This builder for chaining.
-       */
-      public Builder addSkillList(int value) {
-        ensureSkillListIsMutable();
-        skillList_.addInt(value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 skill_list = 15;</code>
-       * @param values The skillList to add.
-       * @return This builder for chaining.
-       */
-      public Builder addAllSkillList(
-          java.lang.Iterable<? extends java.lang.Integer> values) {
-        ensureSkillListIsMutable();
-        com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, skillList_);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 skill_list = 15;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearSkillList() {
-        skillList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000001);
-        onChanged();
-        return this;
-      }
 
       private boolean isReady_ ;
       /**
@@ -757,9 +647,88 @@ public final class HideAndSeekPlayerBattleInfoOuterClass {
         return this;
       }
 
+      private com.google.protobuf.Internal.IntList skillList_ = emptyIntList();
+      private void ensureSkillListIsMutable() {
+        if (!((bitField0_ & 0x00000001) != 0)) {
+          skillList_ = mutableCopy(skillList_);
+          bitField0_ |= 0x00000001;
+         }
+      }
+      /**
+       * <code>repeated uint32 skill_list = 11;</code>
+       * @return A list containing the skillList.
+       */
+      public java.util.List<java.lang.Integer>
+          getSkillListList() {
+        return ((bitField0_ & 0x00000001) != 0) ?
+                 java.util.Collections.unmodifiableList(skillList_) : skillList_;
+      }
+      /**
+       * <code>repeated uint32 skill_list = 11;</code>
+       * @return The count of skillList.
+       */
+      public int getSkillListCount() {
+        return skillList_.size();
+      }
+      /**
+       * <code>repeated uint32 skill_list = 11;</code>
+       * @param index The index of the element to return.
+       * @return The skillList at the given index.
+       */
+      public int getSkillList(int index) {
+        return skillList_.getInt(index);
+      }
+      /**
+       * <code>repeated uint32 skill_list = 11;</code>
+       * @param index The index to set the value at.
+       * @param value The skillList to set.
+       * @return This builder for chaining.
+       */
+      public Builder setSkillList(
+          int index, int value) {
+        ensureSkillListIsMutable();
+        skillList_.setInt(index, value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint32 skill_list = 11;</code>
+       * @param value The skillList to add.
+       * @return This builder for chaining.
+       */
+      public Builder addSkillList(int value) {
+        ensureSkillListIsMutable();
+        skillList_.addInt(value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint32 skill_list = 11;</code>
+       * @param values The skillList to add.
+       * @return This builder for chaining.
+       */
+      public Builder addAllSkillList(
+          java.lang.Iterable<? extends java.lang.Integer> values) {
+        ensureSkillListIsMutable();
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, skillList_);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint32 skill_list = 11;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearSkillList() {
+        skillList_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000001);
+        onChanged();
+        return this;
+      }
+
       private int avatarId_ ;
       /**
-       * <code>uint32 avatar_id = 6;</code>
+       * <code>uint32 avatar_id = 15;</code>
        * @return The avatarId.
        */
       @java.lang.Override
@@ -767,7 +736,7 @@ public final class HideAndSeekPlayerBattleInfoOuterClass {
         return avatarId_;
       }
       /**
-       * <code>uint32 avatar_id = 6;</code>
+       * <code>uint32 avatar_id = 15;</code>
        * @param value The avatarId to set.
        * @return This builder for chaining.
        */
@@ -778,12 +747,43 @@ public final class HideAndSeekPlayerBattleInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 avatar_id = 6;</code>
+       * <code>uint32 avatar_id = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearAvatarId() {
         
         avatarId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int costumeId_ ;
+      /**
+       * <code>uint32 costume_id = 4;</code>
+       * @return The costumeId.
+       */
+      @java.lang.Override
+      public int getCostumeId() {
+        return costumeId_;
+      }
+      /**
+       * <code>uint32 costume_id = 4;</code>
+       * @param value The costumeId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setCostumeId(int value) {
+        
+        costumeId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 costume_id = 4;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearCostumeId() {
+        
+        costumeId_ = 0;
         onChanged();
         return this;
       }
@@ -855,9 +855,9 @@ public final class HideAndSeekPlayerBattleInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n!HideAndSeekPlayerBattleInfo.proto\"j\n\033H" +
-      "ideAndSeekPlayerBattleInfo\022\022\n\ncostume_id" +
-      "\030\003 \001(\r\022\022\n\nskill_list\030\017 \003(\r\022\020\n\010is_ready\030\014" +
-      " \001(\010\022\021\n\tavatar_id\030\006 \001(\rB\033\n\031emu.grasscutt" +
+      "ideAndSeekPlayerBattleInfo\022\020\n\010is_ready\030\014" +
+      " \001(\010\022\022\n\nskill_list\030\013 \003(\r\022\021\n\tavatar_id\030\017 " +
+      "\001(\r\022\022\n\ncostume_id\030\004 \001(\rB\033\n\031emu.grasscutt" +
       "er.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -869,7 +869,7 @@ public final class HideAndSeekPlayerBattleInfoOuterClass {
     internal_static_HideAndSeekPlayerBattleInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_HideAndSeekPlayerBattleInfo_descriptor,
-        new java.lang.String[] { "CostumeId", "SkillList", "IsReady", "AvatarId", });
+        new java.lang.String[] { "IsReady", "SkillList", "AvatarId", "CostumeId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

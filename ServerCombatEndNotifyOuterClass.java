@@ -19,17 +19,17 @@ public final class ServerCombatEndNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated uint32 combat_end_type_list = 14;</code>
+     * <code>repeated uint32 combat_end_type_list = 15;</code>
      * @return A list containing the combatEndTypeList.
      */
     java.util.List<java.lang.Integer> getCombatEndTypeListList();
     /**
-     * <code>repeated uint32 combat_end_type_list = 14;</code>
+     * <code>repeated uint32 combat_end_type_list = 15;</code>
      * @return The count of combatEndTypeList.
      */
     int getCombatEndTypeListCount();
     /**
-     * <code>repeated uint32 combat_end_type_list = 14;</code>
+     * <code>repeated uint32 combat_end_type_list = 15;</code>
      * @param index The index of the element to return.
      * @return The combatEndTypeList at the given index.
      */
@@ -37,9 +37,13 @@ public final class ServerCombatEndNotifyOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 1105
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 1142;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code ServerCombatEndNotify}
@@ -88,7 +92,7 @@ public final class ServerCombatEndNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 112: {
+            case 120: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 combatEndTypeList_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
@@ -96,7 +100,7 @@ public final class ServerCombatEndNotifyOuterClass {
               combatEndTypeList_.addInt(input.readUInt32());
               break;
             }
-            case 114: {
+            case 122: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -144,10 +148,10 @@ public final class ServerCombatEndNotifyOuterClass {
               emu.grasscutter.net.proto.ServerCombatEndNotifyOuterClass.ServerCombatEndNotify.class, emu.grasscutter.net.proto.ServerCombatEndNotifyOuterClass.ServerCombatEndNotify.Builder.class);
     }
 
-    public static final int COMBAT_END_TYPE_LIST_FIELD_NUMBER = 14;
+    public static final int COMBAT_END_TYPE_LIST_FIELD_NUMBER = 15;
     private com.google.protobuf.Internal.IntList combatEndTypeList_;
     /**
-     * <code>repeated uint32 combat_end_type_list = 14;</code>
+     * <code>repeated uint32 combat_end_type_list = 15;</code>
      * @return A list containing the combatEndTypeList.
      */
     @java.lang.Override
@@ -156,14 +160,14 @@ public final class ServerCombatEndNotifyOuterClass {
       return combatEndTypeList_;
     }
     /**
-     * <code>repeated uint32 combat_end_type_list = 14;</code>
+     * <code>repeated uint32 combat_end_type_list = 15;</code>
      * @return The count of combatEndTypeList.
      */
     public int getCombatEndTypeListCount() {
       return combatEndTypeList_.size();
     }
     /**
-     * <code>repeated uint32 combat_end_type_list = 14;</code>
+     * <code>repeated uint32 combat_end_type_list = 15;</code>
      * @param index The index of the element to return.
      * @return The combatEndTypeList at the given index.
      */
@@ -188,7 +192,7 @@ public final class ServerCombatEndNotifyOuterClass {
                         throws java.io.IOException {
       getSerializedSize();
       if (getCombatEndTypeListList().size() > 0) {
-        output.writeUInt32NoTag(114);
+        output.writeUInt32NoTag(122);
         output.writeUInt32NoTag(combatEndTypeListMemoizedSerializedSize);
       }
       for (int i = 0; i < combatEndTypeList_.size(); i++) {
@@ -346,9 +350,13 @@ public final class ServerCombatEndNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 1105
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 1142;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code ServerCombatEndNotify}
@@ -518,7 +526,7 @@ public final class ServerCombatEndNotifyOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 combat_end_type_list = 14;</code>
+       * <code>repeated uint32 combat_end_type_list = 15;</code>
        * @return A list containing the combatEndTypeList.
        */
       public java.util.List<java.lang.Integer>
@@ -527,14 +535,14 @@ public final class ServerCombatEndNotifyOuterClass {
                  java.util.Collections.unmodifiableList(combatEndTypeList_) : combatEndTypeList_;
       }
       /**
-       * <code>repeated uint32 combat_end_type_list = 14;</code>
+       * <code>repeated uint32 combat_end_type_list = 15;</code>
        * @return The count of combatEndTypeList.
        */
       public int getCombatEndTypeListCount() {
         return combatEndTypeList_.size();
       }
       /**
-       * <code>repeated uint32 combat_end_type_list = 14;</code>
+       * <code>repeated uint32 combat_end_type_list = 15;</code>
        * @param index The index of the element to return.
        * @return The combatEndTypeList at the given index.
        */
@@ -542,7 +550,7 @@ public final class ServerCombatEndNotifyOuterClass {
         return combatEndTypeList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 combat_end_type_list = 14;</code>
+       * <code>repeated uint32 combat_end_type_list = 15;</code>
        * @param index The index to set the value at.
        * @param value The combatEndTypeList to set.
        * @return This builder for chaining.
@@ -555,7 +563,7 @@ public final class ServerCombatEndNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 combat_end_type_list = 14;</code>
+       * <code>repeated uint32 combat_end_type_list = 15;</code>
        * @param value The combatEndTypeList to add.
        * @return This builder for chaining.
        */
@@ -566,7 +574,7 @@ public final class ServerCombatEndNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 combat_end_type_list = 14;</code>
+       * <code>repeated uint32 combat_end_type_list = 15;</code>
        * @param values The combatEndTypeList to add.
        * @return This builder for chaining.
        */
@@ -579,7 +587,7 @@ public final class ServerCombatEndNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 combat_end_type_list = 14;</code>
+       * <code>repeated uint32 combat_end_type_list = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearCombatEndTypeList() {
@@ -656,7 +664,7 @@ public final class ServerCombatEndNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\033ServerCombatEndNotify.proto\"5\n\025ServerC" +
-      "ombatEndNotify\022\034\n\024combat_end_type_list\030\016" +
+      "ombatEndNotify\022\034\n\024combat_end_type_list\030\017" +
       " \003(\rB\033\n\031emu.grasscutter.net.protob\006proto" +
       "3"
     };

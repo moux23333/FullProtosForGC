@@ -19,40 +19,44 @@ public final class BlessingGetAllRecvPicRecordListRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .BlessingRecvPicRecord recv_pic_record_list = 15;</code>
+     * <code>int32 retcode = 4;</code>
+     * @return The retcode.
+     */
+    int getRetcode();
+
+    /**
+     * <code>repeated .BlessingRecvPicRecord recv_pic_record_list = 6;</code>
      */
     java.util.List<emu.grasscutter.net.proto.BlessingRecvPicRecordOuterClass.BlessingRecvPicRecord> 
         getRecvPicRecordListList();
     /**
-     * <code>repeated .BlessingRecvPicRecord recv_pic_record_list = 15;</code>
+     * <code>repeated .BlessingRecvPicRecord recv_pic_record_list = 6;</code>
      */
     emu.grasscutter.net.proto.BlessingRecvPicRecordOuterClass.BlessingRecvPicRecord getRecvPicRecordList(int index);
     /**
-     * <code>repeated .BlessingRecvPicRecord recv_pic_record_list = 15;</code>
+     * <code>repeated .BlessingRecvPicRecord recv_pic_record_list = 6;</code>
      */
     int getRecvPicRecordListCount();
     /**
-     * <code>repeated .BlessingRecvPicRecord recv_pic_record_list = 15;</code>
+     * <code>repeated .BlessingRecvPicRecord recv_pic_record_list = 6;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.BlessingRecvPicRecordOuterClass.BlessingRecvPicRecordOrBuilder> 
         getRecvPicRecordListOrBuilderList();
     /**
-     * <code>repeated .BlessingRecvPicRecord recv_pic_record_list = 15;</code>
+     * <code>repeated .BlessingRecvPicRecord recv_pic_record_list = 6;</code>
      */
     emu.grasscutter.net.proto.BlessingRecvPicRecordOuterClass.BlessingRecvPicRecordOrBuilder getRecvPicRecordListOrBuilder(
         int index);
-
-    /**
-     * <code>int32 retcode = 9;</code>
-     * @return The retcode.
-     */
-    int getRetcode();
   }
   /**
    * <pre>
-   * CmdId: 2083
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 2058;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code BlessingGetAllRecvPicRecordListRsp}
@@ -101,12 +105,12 @@ public final class BlessingGetAllRecvPicRecordListRspOuterClass {
             case 0:
               done = true;
               break;
-            case 72: {
+            case 32: {
 
               retcode_ = input.readInt32();
               break;
             }
-            case 122: {
+            case 50: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 recvPicRecordList_ = new java.util.ArrayList<emu.grasscutter.net.proto.BlessingRecvPicRecordOuterClass.BlessingRecvPicRecord>();
                 mutable_bitField0_ |= 0x00000001;
@@ -150,17 +154,28 @@ public final class BlessingGetAllRecvPicRecordListRspOuterClass {
               emu.grasscutter.net.proto.BlessingGetAllRecvPicRecordListRspOuterClass.BlessingGetAllRecvPicRecordListRsp.class, emu.grasscutter.net.proto.BlessingGetAllRecvPicRecordListRspOuterClass.BlessingGetAllRecvPicRecordListRsp.Builder.class);
     }
 
-    public static final int RECV_PIC_RECORD_LIST_FIELD_NUMBER = 15;
+    public static final int RETCODE_FIELD_NUMBER = 4;
+    private int retcode_;
+    /**
+     * <code>int32 retcode = 4;</code>
+     * @return The retcode.
+     */
+    @java.lang.Override
+    public int getRetcode() {
+      return retcode_;
+    }
+
+    public static final int RECV_PIC_RECORD_LIST_FIELD_NUMBER = 6;
     private java.util.List<emu.grasscutter.net.proto.BlessingRecvPicRecordOuterClass.BlessingRecvPicRecord> recvPicRecordList_;
     /**
-     * <code>repeated .BlessingRecvPicRecord recv_pic_record_list = 15;</code>
+     * <code>repeated .BlessingRecvPicRecord recv_pic_record_list = 6;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.BlessingRecvPicRecordOuterClass.BlessingRecvPicRecord> getRecvPicRecordListList() {
       return recvPicRecordList_;
     }
     /**
-     * <code>repeated .BlessingRecvPicRecord recv_pic_record_list = 15;</code>
+     * <code>repeated .BlessingRecvPicRecord recv_pic_record_list = 6;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.BlessingRecvPicRecordOuterClass.BlessingRecvPicRecordOrBuilder> 
@@ -168,37 +183,26 @@ public final class BlessingGetAllRecvPicRecordListRspOuterClass {
       return recvPicRecordList_;
     }
     /**
-     * <code>repeated .BlessingRecvPicRecord recv_pic_record_list = 15;</code>
+     * <code>repeated .BlessingRecvPicRecord recv_pic_record_list = 6;</code>
      */
     @java.lang.Override
     public int getRecvPicRecordListCount() {
       return recvPicRecordList_.size();
     }
     /**
-     * <code>repeated .BlessingRecvPicRecord recv_pic_record_list = 15;</code>
+     * <code>repeated .BlessingRecvPicRecord recv_pic_record_list = 6;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.BlessingRecvPicRecordOuterClass.BlessingRecvPicRecord getRecvPicRecordList(int index) {
       return recvPicRecordList_.get(index);
     }
     /**
-     * <code>repeated .BlessingRecvPicRecord recv_pic_record_list = 15;</code>
+     * <code>repeated .BlessingRecvPicRecord recv_pic_record_list = 6;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.BlessingRecvPicRecordOuterClass.BlessingRecvPicRecordOrBuilder getRecvPicRecordListOrBuilder(
         int index) {
       return recvPicRecordList_.get(index);
-    }
-
-    public static final int RETCODE_FIELD_NUMBER = 9;
-    private int retcode_;
-    /**
-     * <code>int32 retcode = 9;</code>
-     * @return The retcode.
-     */
-    @java.lang.Override
-    public int getRetcode() {
-      return retcode_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -216,10 +220,10 @@ public final class BlessingGetAllRecvPicRecordListRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (retcode_ != 0) {
-        output.writeInt32(9, retcode_);
+        output.writeInt32(4, retcode_);
       }
       for (int i = 0; i < recvPicRecordList_.size(); i++) {
-        output.writeMessage(15, recvPicRecordList_.get(i));
+        output.writeMessage(6, recvPicRecordList_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -232,11 +236,11 @@ public final class BlessingGetAllRecvPicRecordListRspOuterClass {
       size = 0;
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(9, retcode_);
+          .computeInt32Size(4, retcode_);
       }
       for (int i = 0; i < recvPicRecordList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(15, recvPicRecordList_.get(i));
+          .computeMessageSize(6, recvPicRecordList_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -253,10 +257,10 @@ public final class BlessingGetAllRecvPicRecordListRspOuterClass {
       }
       emu.grasscutter.net.proto.BlessingGetAllRecvPicRecordListRspOuterClass.BlessingGetAllRecvPicRecordListRsp other = (emu.grasscutter.net.proto.BlessingGetAllRecvPicRecordListRspOuterClass.BlessingGetAllRecvPicRecordListRsp) obj;
 
-      if (!getRecvPicRecordListList()
-          .equals(other.getRecvPicRecordListList())) return false;
       if (getRetcode()
           != other.getRetcode()) return false;
+      if (!getRecvPicRecordListList()
+          .equals(other.getRecvPicRecordListList())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -268,12 +272,12 @@ public final class BlessingGetAllRecvPicRecordListRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
+      hash = (53 * hash) + getRetcode();
       if (getRecvPicRecordListCount() > 0) {
         hash = (37 * hash) + RECV_PIC_RECORD_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getRecvPicRecordListList().hashCode();
       }
-      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
-      hash = (53 * hash) + getRetcode();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -371,9 +375,13 @@ public final class BlessingGetAllRecvPicRecordListRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 2083
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 2058;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code BlessingGetAllRecvPicRecordListRsp}
@@ -414,14 +422,14 @@ public final class BlessingGetAllRecvPicRecordListRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        retcode_ = 0;
+
         if (recvPicRecordListBuilder_ == null) {
           recvPicRecordList_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000001);
         } else {
           recvPicRecordListBuilder_.clear();
         }
-        retcode_ = 0;
-
         return this;
       }
 
@@ -449,6 +457,7 @@ public final class BlessingGetAllRecvPicRecordListRspOuterClass {
       public emu.grasscutter.net.proto.BlessingGetAllRecvPicRecordListRspOuterClass.BlessingGetAllRecvPicRecordListRsp buildPartial() {
         emu.grasscutter.net.proto.BlessingGetAllRecvPicRecordListRspOuterClass.BlessingGetAllRecvPicRecordListRsp result = new emu.grasscutter.net.proto.BlessingGetAllRecvPicRecordListRspOuterClass.BlessingGetAllRecvPicRecordListRsp(this);
         int from_bitField0_ = bitField0_;
+        result.retcode_ = retcode_;
         if (recvPicRecordListBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0)) {
             recvPicRecordList_ = java.util.Collections.unmodifiableList(recvPicRecordList_);
@@ -458,7 +467,6 @@ public final class BlessingGetAllRecvPicRecordListRspOuterClass {
         } else {
           result.recvPicRecordList_ = recvPicRecordListBuilder_.build();
         }
-        result.retcode_ = retcode_;
         onBuilt();
         return result;
       }
@@ -507,6 +515,9 @@ public final class BlessingGetAllRecvPicRecordListRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.BlessingGetAllRecvPicRecordListRspOuterClass.BlessingGetAllRecvPicRecordListRsp other) {
         if (other == emu.grasscutter.net.proto.BlessingGetAllRecvPicRecordListRspOuterClass.BlessingGetAllRecvPicRecordListRsp.getDefaultInstance()) return this;
+        if (other.getRetcode() != 0) {
+          setRetcode(other.getRetcode());
+        }
         if (recvPicRecordListBuilder_ == null) {
           if (!other.recvPicRecordList_.isEmpty()) {
             if (recvPicRecordList_.isEmpty()) {
@@ -532,9 +543,6 @@ public final class BlessingGetAllRecvPicRecordListRspOuterClass {
               recvPicRecordListBuilder_.addAllMessages(other.recvPicRecordList_);
             }
           }
-        }
-        if (other.getRetcode() != 0) {
-          setRetcode(other.getRetcode());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -566,6 +574,37 @@ public final class BlessingGetAllRecvPicRecordListRspOuterClass {
       }
       private int bitField0_;
 
+      private int retcode_ ;
+      /**
+       * <code>int32 retcode = 4;</code>
+       * @return The retcode.
+       */
+      @java.lang.Override
+      public int getRetcode() {
+        return retcode_;
+      }
+      /**
+       * <code>int32 retcode = 4;</code>
+       * @param value The retcode to set.
+       * @return This builder for chaining.
+       */
+      public Builder setRetcode(int value) {
+        
+        retcode_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 retcode = 4;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearRetcode() {
+        
+        retcode_ = 0;
+        onChanged();
+        return this;
+      }
+
       private java.util.List<emu.grasscutter.net.proto.BlessingRecvPicRecordOuterClass.BlessingRecvPicRecord> recvPicRecordList_ =
         java.util.Collections.emptyList();
       private void ensureRecvPicRecordListIsMutable() {
@@ -579,7 +618,7 @@ public final class BlessingGetAllRecvPicRecordListRspOuterClass {
           emu.grasscutter.net.proto.BlessingRecvPicRecordOuterClass.BlessingRecvPicRecord, emu.grasscutter.net.proto.BlessingRecvPicRecordOuterClass.BlessingRecvPicRecord.Builder, emu.grasscutter.net.proto.BlessingRecvPicRecordOuterClass.BlessingRecvPicRecordOrBuilder> recvPicRecordListBuilder_;
 
       /**
-       * <code>repeated .BlessingRecvPicRecord recv_pic_record_list = 15;</code>
+       * <code>repeated .BlessingRecvPicRecord recv_pic_record_list = 6;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.BlessingRecvPicRecordOuterClass.BlessingRecvPicRecord> getRecvPicRecordListList() {
         if (recvPicRecordListBuilder_ == null) {
@@ -589,7 +628,7 @@ public final class BlessingGetAllRecvPicRecordListRspOuterClass {
         }
       }
       /**
-       * <code>repeated .BlessingRecvPicRecord recv_pic_record_list = 15;</code>
+       * <code>repeated .BlessingRecvPicRecord recv_pic_record_list = 6;</code>
        */
       public int getRecvPicRecordListCount() {
         if (recvPicRecordListBuilder_ == null) {
@@ -599,7 +638,7 @@ public final class BlessingGetAllRecvPicRecordListRspOuterClass {
         }
       }
       /**
-       * <code>repeated .BlessingRecvPicRecord recv_pic_record_list = 15;</code>
+       * <code>repeated .BlessingRecvPicRecord recv_pic_record_list = 6;</code>
        */
       public emu.grasscutter.net.proto.BlessingRecvPicRecordOuterClass.BlessingRecvPicRecord getRecvPicRecordList(int index) {
         if (recvPicRecordListBuilder_ == null) {
@@ -609,7 +648,7 @@ public final class BlessingGetAllRecvPicRecordListRspOuterClass {
         }
       }
       /**
-       * <code>repeated .BlessingRecvPicRecord recv_pic_record_list = 15;</code>
+       * <code>repeated .BlessingRecvPicRecord recv_pic_record_list = 6;</code>
        */
       public Builder setRecvPicRecordList(
           int index, emu.grasscutter.net.proto.BlessingRecvPicRecordOuterClass.BlessingRecvPicRecord value) {
@@ -626,7 +665,7 @@ public final class BlessingGetAllRecvPicRecordListRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .BlessingRecvPicRecord recv_pic_record_list = 15;</code>
+       * <code>repeated .BlessingRecvPicRecord recv_pic_record_list = 6;</code>
        */
       public Builder setRecvPicRecordList(
           int index, emu.grasscutter.net.proto.BlessingRecvPicRecordOuterClass.BlessingRecvPicRecord.Builder builderForValue) {
@@ -640,7 +679,7 @@ public final class BlessingGetAllRecvPicRecordListRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .BlessingRecvPicRecord recv_pic_record_list = 15;</code>
+       * <code>repeated .BlessingRecvPicRecord recv_pic_record_list = 6;</code>
        */
       public Builder addRecvPicRecordList(emu.grasscutter.net.proto.BlessingRecvPicRecordOuterClass.BlessingRecvPicRecord value) {
         if (recvPicRecordListBuilder_ == null) {
@@ -656,7 +695,7 @@ public final class BlessingGetAllRecvPicRecordListRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .BlessingRecvPicRecord recv_pic_record_list = 15;</code>
+       * <code>repeated .BlessingRecvPicRecord recv_pic_record_list = 6;</code>
        */
       public Builder addRecvPicRecordList(
           int index, emu.grasscutter.net.proto.BlessingRecvPicRecordOuterClass.BlessingRecvPicRecord value) {
@@ -673,7 +712,7 @@ public final class BlessingGetAllRecvPicRecordListRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .BlessingRecvPicRecord recv_pic_record_list = 15;</code>
+       * <code>repeated .BlessingRecvPicRecord recv_pic_record_list = 6;</code>
        */
       public Builder addRecvPicRecordList(
           emu.grasscutter.net.proto.BlessingRecvPicRecordOuterClass.BlessingRecvPicRecord.Builder builderForValue) {
@@ -687,7 +726,7 @@ public final class BlessingGetAllRecvPicRecordListRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .BlessingRecvPicRecord recv_pic_record_list = 15;</code>
+       * <code>repeated .BlessingRecvPicRecord recv_pic_record_list = 6;</code>
        */
       public Builder addRecvPicRecordList(
           int index, emu.grasscutter.net.proto.BlessingRecvPicRecordOuterClass.BlessingRecvPicRecord.Builder builderForValue) {
@@ -701,7 +740,7 @@ public final class BlessingGetAllRecvPicRecordListRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .BlessingRecvPicRecord recv_pic_record_list = 15;</code>
+       * <code>repeated .BlessingRecvPicRecord recv_pic_record_list = 6;</code>
        */
       public Builder addAllRecvPicRecordList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.BlessingRecvPicRecordOuterClass.BlessingRecvPicRecord> values) {
@@ -716,7 +755,7 @@ public final class BlessingGetAllRecvPicRecordListRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .BlessingRecvPicRecord recv_pic_record_list = 15;</code>
+       * <code>repeated .BlessingRecvPicRecord recv_pic_record_list = 6;</code>
        */
       public Builder clearRecvPicRecordList() {
         if (recvPicRecordListBuilder_ == null) {
@@ -729,7 +768,7 @@ public final class BlessingGetAllRecvPicRecordListRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .BlessingRecvPicRecord recv_pic_record_list = 15;</code>
+       * <code>repeated .BlessingRecvPicRecord recv_pic_record_list = 6;</code>
        */
       public Builder removeRecvPicRecordList(int index) {
         if (recvPicRecordListBuilder_ == null) {
@@ -742,14 +781,14 @@ public final class BlessingGetAllRecvPicRecordListRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .BlessingRecvPicRecord recv_pic_record_list = 15;</code>
+       * <code>repeated .BlessingRecvPicRecord recv_pic_record_list = 6;</code>
        */
       public emu.grasscutter.net.proto.BlessingRecvPicRecordOuterClass.BlessingRecvPicRecord.Builder getRecvPicRecordListBuilder(
           int index) {
         return getRecvPicRecordListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .BlessingRecvPicRecord recv_pic_record_list = 15;</code>
+       * <code>repeated .BlessingRecvPicRecord recv_pic_record_list = 6;</code>
        */
       public emu.grasscutter.net.proto.BlessingRecvPicRecordOuterClass.BlessingRecvPicRecordOrBuilder getRecvPicRecordListOrBuilder(
           int index) {
@@ -759,7 +798,7 @@ public final class BlessingGetAllRecvPicRecordListRspOuterClass {
         }
       }
       /**
-       * <code>repeated .BlessingRecvPicRecord recv_pic_record_list = 15;</code>
+       * <code>repeated .BlessingRecvPicRecord recv_pic_record_list = 6;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.BlessingRecvPicRecordOuterClass.BlessingRecvPicRecordOrBuilder> 
            getRecvPicRecordListOrBuilderList() {
@@ -770,14 +809,14 @@ public final class BlessingGetAllRecvPicRecordListRspOuterClass {
         }
       }
       /**
-       * <code>repeated .BlessingRecvPicRecord recv_pic_record_list = 15;</code>
+       * <code>repeated .BlessingRecvPicRecord recv_pic_record_list = 6;</code>
        */
       public emu.grasscutter.net.proto.BlessingRecvPicRecordOuterClass.BlessingRecvPicRecord.Builder addRecvPicRecordListBuilder() {
         return getRecvPicRecordListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.BlessingRecvPicRecordOuterClass.BlessingRecvPicRecord.getDefaultInstance());
       }
       /**
-       * <code>repeated .BlessingRecvPicRecord recv_pic_record_list = 15;</code>
+       * <code>repeated .BlessingRecvPicRecord recv_pic_record_list = 6;</code>
        */
       public emu.grasscutter.net.proto.BlessingRecvPicRecordOuterClass.BlessingRecvPicRecord.Builder addRecvPicRecordListBuilder(
           int index) {
@@ -785,7 +824,7 @@ public final class BlessingGetAllRecvPicRecordListRspOuterClass {
             index, emu.grasscutter.net.proto.BlessingRecvPicRecordOuterClass.BlessingRecvPicRecord.getDefaultInstance());
       }
       /**
-       * <code>repeated .BlessingRecvPicRecord recv_pic_record_list = 15;</code>
+       * <code>repeated .BlessingRecvPicRecord recv_pic_record_list = 6;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.BlessingRecvPicRecordOuterClass.BlessingRecvPicRecord.Builder> 
            getRecvPicRecordListBuilderList() {
@@ -804,37 +843,6 @@ public final class BlessingGetAllRecvPicRecordListRspOuterClass {
           recvPicRecordList_ = null;
         }
         return recvPicRecordListBuilder_;
-      }
-
-      private int retcode_ ;
-      /**
-       * <code>int32 retcode = 9;</code>
-       * @return The retcode.
-       */
-      @java.lang.Override
-      public int getRetcode() {
-        return retcode_;
-      }
-      /**
-       * <code>int32 retcode = 9;</code>
-       * @param value The retcode to set.
-       * @return This builder for chaining.
-       */
-      public Builder setRetcode(int value) {
-        
-        retcode_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>int32 retcode = 9;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearRetcode() {
-        
-        retcode_ = 0;
-        onChanged();
-        return this;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -905,9 +913,9 @@ public final class BlessingGetAllRecvPicRecordListRspOuterClass {
     java.lang.String[] descriptorData = {
       "\n(BlessingGetAllRecvPicRecordListRsp.pro" +
       "to\032\033BlessingRecvPicRecord.proto\"k\n\"Bless" +
-      "ingGetAllRecvPicRecordListRsp\0224\n\024recv_pi" +
-      "c_record_list\030\017 \003(\0132\026.BlessingRecvPicRec" +
-      "ord\022\017\n\007retcode\030\t \001(\005B\033\n\031emu.grasscutter." +
+      "ingGetAllRecvPicRecordListRsp\022\017\n\007retcode" +
+      "\030\004 \001(\005\0224\n\024recv_pic_record_list\030\006 \003(\0132\026.B" +
+      "lessingRecvPicRecordB\033\n\031emu.grasscutter." +
       "net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -920,7 +928,7 @@ public final class BlessingGetAllRecvPicRecordListRspOuterClass {
     internal_static_BlessingGetAllRecvPicRecordListRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_BlessingGetAllRecvPicRecordListRsp_descriptor,
-        new java.lang.String[] { "RecvPicRecordList", "Retcode", });
+        new java.lang.String[] { "Retcode", "RecvPicRecordList", });
     emu.grasscutter.net.proto.BlessingRecvPicRecordOuterClass.getDescriptor();
   }
 

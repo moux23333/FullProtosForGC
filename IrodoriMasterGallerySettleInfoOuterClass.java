@@ -19,39 +19,39 @@ public final class IrodoriMasterGallerySettleInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.GalleryStopReason reason = 15;</code>
+     * <code>.GalleryStopReason reason = 10;</code>
      * @return The enum numeric value on the wire for reason.
      */
     int getReasonValue();
     /**
-     * <code>.GalleryStopReason reason = 15;</code>
+     * <code>.GalleryStopReason reason = 10;</code>
      * @return The reason.
      */
     emu.grasscutter.net.proto.GalleryStopReasonOuterClass.GalleryStopReason getReason();
 
     /**
-     * <code>bool is_finish = 11;</code>
-     * @return The isFinish.
-     */
-    boolean getIsFinish();
-
-    /**
-     * <code>uint32 finish_time = 14;</code>
-     * @return The finishTime.
-     */
-    int getFinishTime();
-
-    /**
-     * <code>uint32 difficult = 6;</code>
+     * <code>uint32 difficult = 2;</code>
      * @return The difficult.
      */
     int getDifficult();
 
     /**
-     * <code>uint32 level_id = 4;</code>
+     * <code>uint32 finish_time = 4;</code>
+     * @return The finishTime.
+     */
+    int getFinishTime();
+
+    /**
+     * <code>uint32 level_id = 1;</code>
      * @return The levelId.
      */
     int getLevelId();
+
+    /**
+     * <code>bool is_finish = 3;</code>
+     * @return The isFinish.
+     */
+    boolean getIsFinish();
   }
   /**
    * Protobuf type {@code IrodoriMasterGallerySettleInfo}
@@ -99,27 +99,27 @@ public final class IrodoriMasterGallerySettleInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 32: {
+            case 8: {
 
               levelId_ = input.readUInt32();
               break;
             }
-            case 48: {
+            case 16: {
 
               difficult_ = input.readUInt32();
               break;
             }
-            case 88: {
+            case 24: {
 
               isFinish_ = input.readBool();
               break;
             }
-            case 112: {
+            case 32: {
 
               finishTime_ = input.readUInt32();
               break;
             }
-            case 120: {
+            case 80: {
               int rawValue = input.readEnum();
 
               reason_ = rawValue;
@@ -157,17 +157,17 @@ public final class IrodoriMasterGallerySettleInfoOuterClass {
               emu.grasscutter.net.proto.IrodoriMasterGallerySettleInfoOuterClass.IrodoriMasterGallerySettleInfo.class, emu.grasscutter.net.proto.IrodoriMasterGallerySettleInfoOuterClass.IrodoriMasterGallerySettleInfo.Builder.class);
     }
 
-    public static final int REASON_FIELD_NUMBER = 15;
+    public static final int REASON_FIELD_NUMBER = 10;
     private int reason_;
     /**
-     * <code>.GalleryStopReason reason = 15;</code>
+     * <code>.GalleryStopReason reason = 10;</code>
      * @return The enum numeric value on the wire for reason.
      */
     @java.lang.Override public int getReasonValue() {
       return reason_;
     }
     /**
-     * <code>.GalleryStopReason reason = 15;</code>
+     * <code>.GalleryStopReason reason = 10;</code>
      * @return The reason.
      */
     @java.lang.Override public emu.grasscutter.net.proto.GalleryStopReasonOuterClass.GalleryStopReason getReason() {
@@ -176,32 +176,10 @@ public final class IrodoriMasterGallerySettleInfoOuterClass {
       return result == null ? emu.grasscutter.net.proto.GalleryStopReasonOuterClass.GalleryStopReason.UNRECOGNIZED : result;
     }
 
-    public static final int IS_FINISH_FIELD_NUMBER = 11;
-    private boolean isFinish_;
-    /**
-     * <code>bool is_finish = 11;</code>
-     * @return The isFinish.
-     */
-    @java.lang.Override
-    public boolean getIsFinish() {
-      return isFinish_;
-    }
-
-    public static final int FINISH_TIME_FIELD_NUMBER = 14;
-    private int finishTime_;
-    /**
-     * <code>uint32 finish_time = 14;</code>
-     * @return The finishTime.
-     */
-    @java.lang.Override
-    public int getFinishTime() {
-      return finishTime_;
-    }
-
-    public static final int DIFFICULT_FIELD_NUMBER = 6;
+    public static final int DIFFICULT_FIELD_NUMBER = 2;
     private int difficult_;
     /**
-     * <code>uint32 difficult = 6;</code>
+     * <code>uint32 difficult = 2;</code>
      * @return The difficult.
      */
     @java.lang.Override
@@ -209,15 +187,37 @@ public final class IrodoriMasterGallerySettleInfoOuterClass {
       return difficult_;
     }
 
-    public static final int LEVEL_ID_FIELD_NUMBER = 4;
+    public static final int FINISH_TIME_FIELD_NUMBER = 4;
+    private int finishTime_;
+    /**
+     * <code>uint32 finish_time = 4;</code>
+     * @return The finishTime.
+     */
+    @java.lang.Override
+    public int getFinishTime() {
+      return finishTime_;
+    }
+
+    public static final int LEVEL_ID_FIELD_NUMBER = 1;
     private int levelId_;
     /**
-     * <code>uint32 level_id = 4;</code>
+     * <code>uint32 level_id = 1;</code>
      * @return The levelId.
      */
     @java.lang.Override
     public int getLevelId() {
       return levelId_;
+    }
+
+    public static final int IS_FINISH_FIELD_NUMBER = 3;
+    private boolean isFinish_;
+    /**
+     * <code>bool is_finish = 3;</code>
+     * @return The isFinish.
+     */
+    @java.lang.Override
+    public boolean getIsFinish() {
+      return isFinish_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -235,19 +235,19 @@ public final class IrodoriMasterGallerySettleInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (levelId_ != 0) {
-        output.writeUInt32(4, levelId_);
+        output.writeUInt32(1, levelId_);
       }
       if (difficult_ != 0) {
-        output.writeUInt32(6, difficult_);
+        output.writeUInt32(2, difficult_);
       }
       if (isFinish_ != false) {
-        output.writeBool(11, isFinish_);
+        output.writeBool(3, isFinish_);
       }
       if (finishTime_ != 0) {
-        output.writeUInt32(14, finishTime_);
+        output.writeUInt32(4, finishTime_);
       }
       if (reason_ != emu.grasscutter.net.proto.GalleryStopReasonOuterClass.GalleryStopReason.GALLERY_STOP_REASON_NONE.getNumber()) {
-        output.writeEnum(15, reason_);
+        output.writeEnum(10, reason_);
       }
       unknownFields.writeTo(output);
     }
@@ -260,23 +260,23 @@ public final class IrodoriMasterGallerySettleInfoOuterClass {
       size = 0;
       if (levelId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, levelId_);
+          .computeUInt32Size(1, levelId_);
       }
       if (difficult_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, difficult_);
+          .computeUInt32Size(2, difficult_);
       }
       if (isFinish_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(11, isFinish_);
+          .computeBoolSize(3, isFinish_);
       }
       if (finishTime_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, finishTime_);
+          .computeUInt32Size(4, finishTime_);
       }
       if (reason_ != emu.grasscutter.net.proto.GalleryStopReasonOuterClass.GalleryStopReason.GALLERY_STOP_REASON_NONE.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(15, reason_);
+          .computeEnumSize(10, reason_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -294,14 +294,14 @@ public final class IrodoriMasterGallerySettleInfoOuterClass {
       emu.grasscutter.net.proto.IrodoriMasterGallerySettleInfoOuterClass.IrodoriMasterGallerySettleInfo other = (emu.grasscutter.net.proto.IrodoriMasterGallerySettleInfoOuterClass.IrodoriMasterGallerySettleInfo) obj;
 
       if (reason_ != other.reason_) return false;
-      if (getIsFinish()
-          != other.getIsFinish()) return false;
-      if (getFinishTime()
-          != other.getFinishTime()) return false;
       if (getDifficult()
           != other.getDifficult()) return false;
+      if (getFinishTime()
+          != other.getFinishTime()) return false;
       if (getLevelId()
           != other.getLevelId()) return false;
+      if (getIsFinish()
+          != other.getIsFinish()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -315,15 +315,15 @@ public final class IrodoriMasterGallerySettleInfoOuterClass {
       hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + REASON_FIELD_NUMBER;
       hash = (53 * hash) + reason_;
+      hash = (37 * hash) + DIFFICULT_FIELD_NUMBER;
+      hash = (53 * hash) + getDifficult();
+      hash = (37 * hash) + FINISH_TIME_FIELD_NUMBER;
+      hash = (53 * hash) + getFinishTime();
+      hash = (37 * hash) + LEVEL_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getLevelId();
       hash = (37 * hash) + IS_FINISH_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsFinish());
-      hash = (37 * hash) + FINISH_TIME_FIELD_NUMBER;
-      hash = (53 * hash) + getFinishTime();
-      hash = (37 * hash) + DIFFICULT_FIELD_NUMBER;
-      hash = (53 * hash) + getDifficult();
-      hash = (37 * hash) + LEVEL_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getLevelId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -459,13 +459,13 @@ public final class IrodoriMasterGallerySettleInfoOuterClass {
         super.clear();
         reason_ = 0;
 
-        isFinish_ = false;
+        difficult_ = 0;
 
         finishTime_ = 0;
 
-        difficult_ = 0;
-
         levelId_ = 0;
+
+        isFinish_ = false;
 
         return this;
       }
@@ -494,10 +494,10 @@ public final class IrodoriMasterGallerySettleInfoOuterClass {
       public emu.grasscutter.net.proto.IrodoriMasterGallerySettleInfoOuterClass.IrodoriMasterGallerySettleInfo buildPartial() {
         emu.grasscutter.net.proto.IrodoriMasterGallerySettleInfoOuterClass.IrodoriMasterGallerySettleInfo result = new emu.grasscutter.net.proto.IrodoriMasterGallerySettleInfoOuterClass.IrodoriMasterGallerySettleInfo(this);
         result.reason_ = reason_;
-        result.isFinish_ = isFinish_;
-        result.finishTime_ = finishTime_;
         result.difficult_ = difficult_;
+        result.finishTime_ = finishTime_;
         result.levelId_ = levelId_;
+        result.isFinish_ = isFinish_;
         onBuilt();
         return result;
       }
@@ -549,17 +549,17 @@ public final class IrodoriMasterGallerySettleInfoOuterClass {
         if (other.reason_ != 0) {
           setReasonValue(other.getReasonValue());
         }
-        if (other.getIsFinish() != false) {
-          setIsFinish(other.getIsFinish());
+        if (other.getDifficult() != 0) {
+          setDifficult(other.getDifficult());
         }
         if (other.getFinishTime() != 0) {
           setFinishTime(other.getFinishTime());
         }
-        if (other.getDifficult() != 0) {
-          setDifficult(other.getDifficult());
-        }
         if (other.getLevelId() != 0) {
           setLevelId(other.getLevelId());
+        }
+        if (other.getIsFinish() != false) {
+          setIsFinish(other.getIsFinish());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -592,14 +592,14 @@ public final class IrodoriMasterGallerySettleInfoOuterClass {
 
       private int reason_ = 0;
       /**
-       * <code>.GalleryStopReason reason = 15;</code>
+       * <code>.GalleryStopReason reason = 10;</code>
        * @return The enum numeric value on the wire for reason.
        */
       @java.lang.Override public int getReasonValue() {
         return reason_;
       }
       /**
-       * <code>.GalleryStopReason reason = 15;</code>
+       * <code>.GalleryStopReason reason = 10;</code>
        * @param value The enum numeric value on the wire for reason to set.
        * @return This builder for chaining.
        */
@@ -610,7 +610,7 @@ public final class IrodoriMasterGallerySettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>.GalleryStopReason reason = 15;</code>
+       * <code>.GalleryStopReason reason = 10;</code>
        * @return The reason.
        */
       @java.lang.Override
@@ -620,7 +620,7 @@ public final class IrodoriMasterGallerySettleInfoOuterClass {
         return result == null ? emu.grasscutter.net.proto.GalleryStopReasonOuterClass.GalleryStopReason.UNRECOGNIZED : result;
       }
       /**
-       * <code>.GalleryStopReason reason = 15;</code>
+       * <code>.GalleryStopReason reason = 10;</code>
        * @param value The reason to set.
        * @return This builder for chaining.
        */
@@ -634,7 +634,7 @@ public final class IrodoriMasterGallerySettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>.GalleryStopReason reason = 15;</code>
+       * <code>.GalleryStopReason reason = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearReason() {
@@ -644,71 +644,9 @@ public final class IrodoriMasterGallerySettleInfoOuterClass {
         return this;
       }
 
-      private boolean isFinish_ ;
-      /**
-       * <code>bool is_finish = 11;</code>
-       * @return The isFinish.
-       */
-      @java.lang.Override
-      public boolean getIsFinish() {
-        return isFinish_;
-      }
-      /**
-       * <code>bool is_finish = 11;</code>
-       * @param value The isFinish to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsFinish(boolean value) {
-        
-        isFinish_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_finish = 11;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsFinish() {
-        
-        isFinish_ = false;
-        onChanged();
-        return this;
-      }
-
-      private int finishTime_ ;
-      /**
-       * <code>uint32 finish_time = 14;</code>
-       * @return The finishTime.
-       */
-      @java.lang.Override
-      public int getFinishTime() {
-        return finishTime_;
-      }
-      /**
-       * <code>uint32 finish_time = 14;</code>
-       * @param value The finishTime to set.
-       * @return This builder for chaining.
-       */
-      public Builder setFinishTime(int value) {
-        
-        finishTime_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 finish_time = 14;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearFinishTime() {
-        
-        finishTime_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int difficult_ ;
       /**
-       * <code>uint32 difficult = 6;</code>
+       * <code>uint32 difficult = 2;</code>
        * @return The difficult.
        */
       @java.lang.Override
@@ -716,7 +654,7 @@ public final class IrodoriMasterGallerySettleInfoOuterClass {
         return difficult_;
       }
       /**
-       * <code>uint32 difficult = 6;</code>
+       * <code>uint32 difficult = 2;</code>
        * @param value The difficult to set.
        * @return This builder for chaining.
        */
@@ -727,7 +665,7 @@ public final class IrodoriMasterGallerySettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 difficult = 6;</code>
+       * <code>uint32 difficult = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearDifficult() {
@@ -737,9 +675,40 @@ public final class IrodoriMasterGallerySettleInfoOuterClass {
         return this;
       }
 
+      private int finishTime_ ;
+      /**
+       * <code>uint32 finish_time = 4;</code>
+       * @return The finishTime.
+       */
+      @java.lang.Override
+      public int getFinishTime() {
+        return finishTime_;
+      }
+      /**
+       * <code>uint32 finish_time = 4;</code>
+       * @param value The finishTime to set.
+       * @return This builder for chaining.
+       */
+      public Builder setFinishTime(int value) {
+        
+        finishTime_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 finish_time = 4;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearFinishTime() {
+        
+        finishTime_ = 0;
+        onChanged();
+        return this;
+      }
+
       private int levelId_ ;
       /**
-       * <code>uint32 level_id = 4;</code>
+       * <code>uint32 level_id = 1;</code>
        * @return The levelId.
        */
       @java.lang.Override
@@ -747,7 +716,7 @@ public final class IrodoriMasterGallerySettleInfoOuterClass {
         return levelId_;
       }
       /**
-       * <code>uint32 level_id = 4;</code>
+       * <code>uint32 level_id = 1;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
        */
@@ -758,12 +727,43 @@ public final class IrodoriMasterGallerySettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 level_id = 4;</code>
+       * <code>uint32 level_id = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearLevelId() {
         
         levelId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private boolean isFinish_ ;
+      /**
+       * <code>bool is_finish = 3;</code>
+       * @return The isFinish.
+       */
+      @java.lang.Override
+      public boolean getIsFinish() {
+        return isFinish_;
+      }
+      /**
+       * <code>bool is_finish = 3;</code>
+       * @param value The isFinish to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIsFinish(boolean value) {
+        
+        isFinish_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool is_finish = 3;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsFinish() {
+        
+        isFinish_ = false;
         onChanged();
         return this;
       }
@@ -836,10 +836,10 @@ public final class IrodoriMasterGallerySettleInfoOuterClass {
     java.lang.String[] descriptorData = {
       "\n$IrodoriMasterGallerySettleInfo.proto\032\027" +
       "GalleryStopReason.proto\"\221\001\n\036IrodoriMaste" +
-      "rGallerySettleInfo\022\"\n\006reason\030\017 \001(\0162\022.Gal" +
-      "leryStopReason\022\021\n\tis_finish\030\013 \001(\010\022\023\n\013fin" +
-      "ish_time\030\016 \001(\r\022\021\n\tdifficult\030\006 \001(\r\022\020\n\010lev" +
-      "el_id\030\004 \001(\rB\033\n\031emu.grasscutter.net.proto" +
+      "rGallerySettleInfo\022\"\n\006reason\030\n \001(\0162\022.Gal" +
+      "leryStopReason\022\021\n\tdifficult\030\002 \001(\r\022\023\n\013fin" +
+      "ish_time\030\004 \001(\r\022\020\n\010level_id\030\001 \001(\r\022\021\n\tis_f" +
+      "inish\030\003 \001(\010B\033\n\031emu.grasscutter.net.proto" +
       "b\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -852,7 +852,7 @@ public final class IrodoriMasterGallerySettleInfoOuterClass {
     internal_static_IrodoriMasterGallerySettleInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_IrodoriMasterGallerySettleInfo_descriptor,
-        new java.lang.String[] { "Reason", "IsFinish", "FinishTime", "Difficult", "LevelId", });
+        new java.lang.String[] { "Reason", "Difficult", "FinishTime", "LevelId", "IsFinish", });
     emu.grasscutter.net.proto.GalleryStopReasonOuterClass.getDescriptor();
   }
 

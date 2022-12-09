@@ -19,75 +19,79 @@ public final class MiracleRingDeliverItemReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.InterOpType op_type = 9;</code>
-     * @return The enum numeric value on the wire for opType.
-     */
-    int getOpTypeValue();
-    /**
-     * <code>.InterOpType op_type = 9;</code>
-     * @return The opType.
-     */
-    emu.grasscutter.net.proto.InterOpTypeOuterClass.InterOpType getOpType();
-
-    /**
-     * <code>repeated .ItemParam item_param_list = 1;</code>
+     * <code>repeated .ItemParam item_param_list = 3;</code>
      */
     java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> 
         getItemParamListList();
     /**
-     * <code>repeated .ItemParam item_param_list = 1;</code>
+     * <code>repeated .ItemParam item_param_list = 3;</code>
      */
     emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam getItemParamList(int index);
     /**
-     * <code>repeated .ItemParam item_param_list = 1;</code>
+     * <code>repeated .ItemParam item_param_list = 3;</code>
      */
     int getItemParamListCount();
     /**
-     * <code>repeated .ItemParam item_param_list = 1;</code>
+     * <code>repeated .ItemParam item_param_list = 3;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder> 
         getItemParamListOrBuilderList();
     /**
-     * <code>repeated .ItemParam item_param_list = 1;</code>
+     * <code>repeated .ItemParam item_param_list = 3;</code>
      */
     emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder getItemParamListOrBuilder(
         int index);
 
     /**
-     * <code>repeated uint64 food_weapon_guid_list = 4;</code>
+     * <code>uint32 gadget_entity_id = 6;</code>
+     * @return The gadgetEntityId.
+     */
+    int getGadgetEntityId();
+
+    /**
+     * <code>uint32 gadget_id = 8;</code>
+     * @return The gadgetId.
+     */
+    int getGadgetId();
+
+    /**
+     * <code>repeated uint64 food_weapon_guid_list = 13;</code>
      * @return A list containing the foodWeaponGuidList.
      */
     java.util.List<java.lang.Long> getFoodWeaponGuidListList();
     /**
-     * <code>repeated uint64 food_weapon_guid_list = 4;</code>
+     * <code>repeated uint64 food_weapon_guid_list = 13;</code>
      * @return The count of foodWeaponGuidList.
      */
     int getFoodWeaponGuidListCount();
     /**
-     * <code>repeated uint64 food_weapon_guid_list = 4;</code>
+     * <code>repeated uint64 food_weapon_guid_list = 13;</code>
      * @param index The index of the element to return.
      * @return The foodWeaponGuidList at the given index.
      */
     long getFoodWeaponGuidList(int index);
 
     /**
-     * <code>uint32 gadget_id = 14;</code>
-     * @return The gadgetId.
+     * <code>.InterOpType op_type = 15;</code>
+     * @return The enum numeric value on the wire for opType.
      */
-    int getGadgetId();
-
+    int getOpTypeValue();
     /**
-     * <code>uint32 gadget_entity_id = 5;</code>
-     * @return The gadgetEntityId.
+     * <code>.InterOpType op_type = 15;</code>
+     * @return The opType.
      */
-    int getGadgetEntityId();
+    emu.grasscutter.net.proto.InterOpTypeOuterClass.InterOpType getOpType();
   }
   /**
    * <pre>
-   * CmdId: 5229
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 5244;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code MiracleRingDeliverItemReq}
@@ -102,9 +106,9 @@ public final class MiracleRingDeliverItemReqOuterClass {
       super(builder);
     }
     private MiracleRingDeliverItemReq() {
-      opType_ = 0;
       itemParamList_ = java.util.Collections.emptyList();
       foodWeaponGuidList_ = emptyLongList();
+      opType_ = 0;
     }
 
     @java.lang.Override
@@ -138,7 +142,7 @@ public final class MiracleRingDeliverItemReqOuterClass {
             case 0:
               done = true;
               break;
-            case 10: {
+            case 26: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 itemParamList_ = new java.util.ArrayList<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam>();
                 mutable_bitField0_ |= 0x00000001;
@@ -147,7 +151,17 @@ public final class MiracleRingDeliverItemReqOuterClass {
                   input.readMessage(emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.parser(), extensionRegistry));
               break;
             }
-            case 32: {
+            case 48: {
+
+              gadgetEntityId_ = input.readUInt32();
+              break;
+            }
+            case 64: {
+
+              gadgetId_ = input.readUInt32();
+              break;
+            }
+            case 104: {
               if (!((mutable_bitField0_ & 0x00000002) != 0)) {
                 foodWeaponGuidList_ = newLongList();
                 mutable_bitField0_ |= 0x00000002;
@@ -155,7 +169,7 @@ public final class MiracleRingDeliverItemReqOuterClass {
               foodWeaponGuidList_.addLong(input.readUInt64());
               break;
             }
-            case 34: {
+            case 106: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000002) != 0) && input.getBytesUntilLimit() > 0) {
@@ -168,20 +182,10 @@ public final class MiracleRingDeliverItemReqOuterClass {
               input.popLimit(limit);
               break;
             }
-            case 40: {
-
-              gadgetEntityId_ = input.readUInt32();
-              break;
-            }
-            case 72: {
+            case 120: {
               int rawValue = input.readEnum();
 
               opType_ = rawValue;
-              break;
-            }
-            case 112: {
-
-              gadgetId_ = input.readUInt32();
               break;
             }
             default: {
@@ -222,36 +226,17 @@ public final class MiracleRingDeliverItemReqOuterClass {
               emu.grasscutter.net.proto.MiracleRingDeliverItemReqOuterClass.MiracleRingDeliverItemReq.class, emu.grasscutter.net.proto.MiracleRingDeliverItemReqOuterClass.MiracleRingDeliverItemReq.Builder.class);
     }
 
-    public static final int OP_TYPE_FIELD_NUMBER = 9;
-    private int opType_;
-    /**
-     * <code>.InterOpType op_type = 9;</code>
-     * @return The enum numeric value on the wire for opType.
-     */
-    @java.lang.Override public int getOpTypeValue() {
-      return opType_;
-    }
-    /**
-     * <code>.InterOpType op_type = 9;</code>
-     * @return The opType.
-     */
-    @java.lang.Override public emu.grasscutter.net.proto.InterOpTypeOuterClass.InterOpType getOpType() {
-      @SuppressWarnings("deprecation")
-      emu.grasscutter.net.proto.InterOpTypeOuterClass.InterOpType result = emu.grasscutter.net.proto.InterOpTypeOuterClass.InterOpType.valueOf(opType_);
-      return result == null ? emu.grasscutter.net.proto.InterOpTypeOuterClass.InterOpType.UNRECOGNIZED : result;
-    }
-
-    public static final int ITEM_PARAM_LIST_FIELD_NUMBER = 1;
+    public static final int ITEM_PARAM_LIST_FIELD_NUMBER = 3;
     private java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> itemParamList_;
     /**
-     * <code>repeated .ItemParam item_param_list = 1;</code>
+     * <code>repeated .ItemParam item_param_list = 3;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> getItemParamListList() {
       return itemParamList_;
     }
     /**
-     * <code>repeated .ItemParam item_param_list = 1;</code>
+     * <code>repeated .ItemParam item_param_list = 3;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder> 
@@ -259,21 +244,21 @@ public final class MiracleRingDeliverItemReqOuterClass {
       return itemParamList_;
     }
     /**
-     * <code>repeated .ItemParam item_param_list = 1;</code>
+     * <code>repeated .ItemParam item_param_list = 3;</code>
      */
     @java.lang.Override
     public int getItemParamListCount() {
       return itemParamList_.size();
     }
     /**
-     * <code>repeated .ItemParam item_param_list = 1;</code>
+     * <code>repeated .ItemParam item_param_list = 3;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam getItemParamList(int index) {
       return itemParamList_.get(index);
     }
     /**
-     * <code>repeated .ItemParam item_param_list = 1;</code>
+     * <code>repeated .ItemParam item_param_list = 3;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder getItemParamListOrBuilder(
@@ -281,10 +266,32 @@ public final class MiracleRingDeliverItemReqOuterClass {
       return itemParamList_.get(index);
     }
 
-    public static final int FOOD_WEAPON_GUID_LIST_FIELD_NUMBER = 4;
+    public static final int GADGET_ENTITY_ID_FIELD_NUMBER = 6;
+    private int gadgetEntityId_;
+    /**
+     * <code>uint32 gadget_entity_id = 6;</code>
+     * @return The gadgetEntityId.
+     */
+    @java.lang.Override
+    public int getGadgetEntityId() {
+      return gadgetEntityId_;
+    }
+
+    public static final int GADGET_ID_FIELD_NUMBER = 8;
+    private int gadgetId_;
+    /**
+     * <code>uint32 gadget_id = 8;</code>
+     * @return The gadgetId.
+     */
+    @java.lang.Override
+    public int getGadgetId() {
+      return gadgetId_;
+    }
+
+    public static final int FOOD_WEAPON_GUID_LIST_FIELD_NUMBER = 13;
     private com.google.protobuf.Internal.LongList foodWeaponGuidList_;
     /**
-     * <code>repeated uint64 food_weapon_guid_list = 4;</code>
+     * <code>repeated uint64 food_weapon_guid_list = 13;</code>
      * @return A list containing the foodWeaponGuidList.
      */
     @java.lang.Override
@@ -293,14 +300,14 @@ public final class MiracleRingDeliverItemReqOuterClass {
       return foodWeaponGuidList_;
     }
     /**
-     * <code>repeated uint64 food_weapon_guid_list = 4;</code>
+     * <code>repeated uint64 food_weapon_guid_list = 13;</code>
      * @return The count of foodWeaponGuidList.
      */
     public int getFoodWeaponGuidListCount() {
       return foodWeaponGuidList_.size();
     }
     /**
-     * <code>repeated uint64 food_weapon_guid_list = 4;</code>
+     * <code>repeated uint64 food_weapon_guid_list = 13;</code>
      * @param index The index of the element to return.
      * @return The foodWeaponGuidList at the given index.
      */
@@ -309,26 +316,23 @@ public final class MiracleRingDeliverItemReqOuterClass {
     }
     private int foodWeaponGuidListMemoizedSerializedSize = -1;
 
-    public static final int GADGET_ID_FIELD_NUMBER = 14;
-    private int gadgetId_;
+    public static final int OP_TYPE_FIELD_NUMBER = 15;
+    private int opType_;
     /**
-     * <code>uint32 gadget_id = 14;</code>
-     * @return The gadgetId.
+     * <code>.InterOpType op_type = 15;</code>
+     * @return The enum numeric value on the wire for opType.
      */
-    @java.lang.Override
-    public int getGadgetId() {
-      return gadgetId_;
+    @java.lang.Override public int getOpTypeValue() {
+      return opType_;
     }
-
-    public static final int GADGET_ENTITY_ID_FIELD_NUMBER = 5;
-    private int gadgetEntityId_;
     /**
-     * <code>uint32 gadget_entity_id = 5;</code>
-     * @return The gadgetEntityId.
+     * <code>.InterOpType op_type = 15;</code>
+     * @return The opType.
      */
-    @java.lang.Override
-    public int getGadgetEntityId() {
-      return gadgetEntityId_;
+    @java.lang.Override public emu.grasscutter.net.proto.InterOpTypeOuterClass.InterOpType getOpType() {
+      @SuppressWarnings("deprecation")
+      emu.grasscutter.net.proto.InterOpTypeOuterClass.InterOpType result = emu.grasscutter.net.proto.InterOpTypeOuterClass.InterOpType.valueOf(opType_);
+      return result == null ? emu.grasscutter.net.proto.InterOpTypeOuterClass.InterOpType.UNRECOGNIZED : result;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -347,23 +351,23 @@ public final class MiracleRingDeliverItemReqOuterClass {
                         throws java.io.IOException {
       getSerializedSize();
       for (int i = 0; i < itemParamList_.size(); i++) {
-        output.writeMessage(1, itemParamList_.get(i));
+        output.writeMessage(3, itemParamList_.get(i));
+      }
+      if (gadgetEntityId_ != 0) {
+        output.writeUInt32(6, gadgetEntityId_);
+      }
+      if (gadgetId_ != 0) {
+        output.writeUInt32(8, gadgetId_);
       }
       if (getFoodWeaponGuidListList().size() > 0) {
-        output.writeUInt32NoTag(34);
+        output.writeUInt32NoTag(106);
         output.writeUInt32NoTag(foodWeaponGuidListMemoizedSerializedSize);
       }
       for (int i = 0; i < foodWeaponGuidList_.size(); i++) {
         output.writeUInt64NoTag(foodWeaponGuidList_.getLong(i));
       }
-      if (gadgetEntityId_ != 0) {
-        output.writeUInt32(5, gadgetEntityId_);
-      }
       if (opType_ != emu.grasscutter.net.proto.InterOpTypeOuterClass.InterOpType.INTER_OP_TYPE_FINISH.getNumber()) {
-        output.writeEnum(9, opType_);
-      }
-      if (gadgetId_ != 0) {
-        output.writeUInt32(14, gadgetId_);
+        output.writeEnum(15, opType_);
       }
       unknownFields.writeTo(output);
     }
@@ -376,7 +380,15 @@ public final class MiracleRingDeliverItemReqOuterClass {
       size = 0;
       for (int i = 0; i < itemParamList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(1, itemParamList_.get(i));
+          .computeMessageSize(3, itemParamList_.get(i));
+      }
+      if (gadgetEntityId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(6, gadgetEntityId_);
+      }
+      if (gadgetId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(8, gadgetId_);
       }
       {
         int dataSize = 0;
@@ -392,17 +404,9 @@ public final class MiracleRingDeliverItemReqOuterClass {
         }
         foodWeaponGuidListMemoizedSerializedSize = dataSize;
       }
-      if (gadgetEntityId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, gadgetEntityId_);
-      }
       if (opType_ != emu.grasscutter.net.proto.InterOpTypeOuterClass.InterOpType.INTER_OP_TYPE_FINISH.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(9, opType_);
-      }
-      if (gadgetId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, gadgetId_);
+          .computeEnumSize(15, opType_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -419,15 +423,15 @@ public final class MiracleRingDeliverItemReqOuterClass {
       }
       emu.grasscutter.net.proto.MiracleRingDeliverItemReqOuterClass.MiracleRingDeliverItemReq other = (emu.grasscutter.net.proto.MiracleRingDeliverItemReqOuterClass.MiracleRingDeliverItemReq) obj;
 
-      if (opType_ != other.opType_) return false;
       if (!getItemParamListList()
           .equals(other.getItemParamListList())) return false;
-      if (!getFoodWeaponGuidListList()
-          .equals(other.getFoodWeaponGuidListList())) return false;
-      if (getGadgetId()
-          != other.getGadgetId()) return false;
       if (getGadgetEntityId()
           != other.getGadgetEntityId()) return false;
+      if (getGadgetId()
+          != other.getGadgetId()) return false;
+      if (!getFoodWeaponGuidListList()
+          .equals(other.getFoodWeaponGuidListList())) return false;
+      if (opType_ != other.opType_) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -439,20 +443,20 @@ public final class MiracleRingDeliverItemReqOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + OP_TYPE_FIELD_NUMBER;
-      hash = (53 * hash) + opType_;
       if (getItemParamListCount() > 0) {
         hash = (37 * hash) + ITEM_PARAM_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getItemParamListList().hashCode();
       }
+      hash = (37 * hash) + GADGET_ENTITY_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getGadgetEntityId();
+      hash = (37 * hash) + GADGET_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getGadgetId();
       if (getFoodWeaponGuidListCount() > 0) {
         hash = (37 * hash) + FOOD_WEAPON_GUID_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getFoodWeaponGuidListList().hashCode();
       }
-      hash = (37 * hash) + GADGET_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getGadgetId();
-      hash = (37 * hash) + GADGET_ENTITY_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getGadgetEntityId();
+      hash = (37 * hash) + OP_TYPE_FIELD_NUMBER;
+      hash = (53 * hash) + opType_;
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -550,10 +554,14 @@ public final class MiracleRingDeliverItemReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 5229
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 5244;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code MiracleRingDeliverItemReq}
@@ -594,19 +602,19 @@ public final class MiracleRingDeliverItemReqOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        opType_ = 0;
-
         if (itemParamListBuilder_ == null) {
           itemParamList_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000001);
         } else {
           itemParamListBuilder_.clear();
         }
-        foodWeaponGuidList_ = emptyLongList();
-        bitField0_ = (bitField0_ & ~0x00000002);
+        gadgetEntityId_ = 0;
+
         gadgetId_ = 0;
 
-        gadgetEntityId_ = 0;
+        foodWeaponGuidList_ = emptyLongList();
+        bitField0_ = (bitField0_ & ~0x00000002);
+        opType_ = 0;
 
         return this;
       }
@@ -635,7 +643,6 @@ public final class MiracleRingDeliverItemReqOuterClass {
       public emu.grasscutter.net.proto.MiracleRingDeliverItemReqOuterClass.MiracleRingDeliverItemReq buildPartial() {
         emu.grasscutter.net.proto.MiracleRingDeliverItemReqOuterClass.MiracleRingDeliverItemReq result = new emu.grasscutter.net.proto.MiracleRingDeliverItemReqOuterClass.MiracleRingDeliverItemReq(this);
         int from_bitField0_ = bitField0_;
-        result.opType_ = opType_;
         if (itemParamListBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0)) {
             itemParamList_ = java.util.Collections.unmodifiableList(itemParamList_);
@@ -645,13 +652,14 @@ public final class MiracleRingDeliverItemReqOuterClass {
         } else {
           result.itemParamList_ = itemParamListBuilder_.build();
         }
+        result.gadgetEntityId_ = gadgetEntityId_;
+        result.gadgetId_ = gadgetId_;
         if (((bitField0_ & 0x00000002) != 0)) {
           foodWeaponGuidList_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000002);
         }
         result.foodWeaponGuidList_ = foodWeaponGuidList_;
-        result.gadgetId_ = gadgetId_;
-        result.gadgetEntityId_ = gadgetEntityId_;
+        result.opType_ = opType_;
         onBuilt();
         return result;
       }
@@ -700,9 +708,6 @@ public final class MiracleRingDeliverItemReqOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.MiracleRingDeliverItemReqOuterClass.MiracleRingDeliverItemReq other) {
         if (other == emu.grasscutter.net.proto.MiracleRingDeliverItemReqOuterClass.MiracleRingDeliverItemReq.getDefaultInstance()) return this;
-        if (other.opType_ != 0) {
-          setOpTypeValue(other.getOpTypeValue());
-        }
         if (itemParamListBuilder_ == null) {
           if (!other.itemParamList_.isEmpty()) {
             if (itemParamList_.isEmpty()) {
@@ -729,6 +734,12 @@ public final class MiracleRingDeliverItemReqOuterClass {
             }
           }
         }
+        if (other.getGadgetEntityId() != 0) {
+          setGadgetEntityId(other.getGadgetEntityId());
+        }
+        if (other.getGadgetId() != 0) {
+          setGadgetId(other.getGadgetId());
+        }
         if (!other.foodWeaponGuidList_.isEmpty()) {
           if (foodWeaponGuidList_.isEmpty()) {
             foodWeaponGuidList_ = other.foodWeaponGuidList_;
@@ -739,11 +750,8 @@ public final class MiracleRingDeliverItemReqOuterClass {
           }
           onChanged();
         }
-        if (other.getGadgetId() != 0) {
-          setGadgetId(other.getGadgetId());
-        }
-        if (other.getGadgetEntityId() != 0) {
-          setGadgetEntityId(other.getGadgetEntityId());
+        if (other.opType_ != 0) {
+          setOpTypeValue(other.getOpTypeValue());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -775,60 +783,6 @@ public final class MiracleRingDeliverItemReqOuterClass {
       }
       private int bitField0_;
 
-      private int opType_ = 0;
-      /**
-       * <code>.InterOpType op_type = 9;</code>
-       * @return The enum numeric value on the wire for opType.
-       */
-      @java.lang.Override public int getOpTypeValue() {
-        return opType_;
-      }
-      /**
-       * <code>.InterOpType op_type = 9;</code>
-       * @param value The enum numeric value on the wire for opType to set.
-       * @return This builder for chaining.
-       */
-      public Builder setOpTypeValue(int value) {
-        
-        opType_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>.InterOpType op_type = 9;</code>
-       * @return The opType.
-       */
-      @java.lang.Override
-      public emu.grasscutter.net.proto.InterOpTypeOuterClass.InterOpType getOpType() {
-        @SuppressWarnings("deprecation")
-        emu.grasscutter.net.proto.InterOpTypeOuterClass.InterOpType result = emu.grasscutter.net.proto.InterOpTypeOuterClass.InterOpType.valueOf(opType_);
-        return result == null ? emu.grasscutter.net.proto.InterOpTypeOuterClass.InterOpType.UNRECOGNIZED : result;
-      }
-      /**
-       * <code>.InterOpType op_type = 9;</code>
-       * @param value The opType to set.
-       * @return This builder for chaining.
-       */
-      public Builder setOpType(emu.grasscutter.net.proto.InterOpTypeOuterClass.InterOpType value) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        
-        opType_ = value.getNumber();
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>.InterOpType op_type = 9;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearOpType() {
-        
-        opType_ = 0;
-        onChanged();
-        return this;
-      }
-
       private java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> itemParamList_ =
         java.util.Collections.emptyList();
       private void ensureItemParamListIsMutable() {
@@ -842,7 +796,7 @@ public final class MiracleRingDeliverItemReqOuterClass {
           emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder> itemParamListBuilder_;
 
       /**
-       * <code>repeated .ItemParam item_param_list = 1;</code>
+       * <code>repeated .ItemParam item_param_list = 3;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> getItemParamListList() {
         if (itemParamListBuilder_ == null) {
@@ -852,7 +806,7 @@ public final class MiracleRingDeliverItemReqOuterClass {
         }
       }
       /**
-       * <code>repeated .ItemParam item_param_list = 1;</code>
+       * <code>repeated .ItemParam item_param_list = 3;</code>
        */
       public int getItemParamListCount() {
         if (itemParamListBuilder_ == null) {
@@ -862,7 +816,7 @@ public final class MiracleRingDeliverItemReqOuterClass {
         }
       }
       /**
-       * <code>repeated .ItemParam item_param_list = 1;</code>
+       * <code>repeated .ItemParam item_param_list = 3;</code>
        */
       public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam getItemParamList(int index) {
         if (itemParamListBuilder_ == null) {
@@ -872,7 +826,7 @@ public final class MiracleRingDeliverItemReqOuterClass {
         }
       }
       /**
-       * <code>repeated .ItemParam item_param_list = 1;</code>
+       * <code>repeated .ItemParam item_param_list = 3;</code>
        */
       public Builder setItemParamList(
           int index, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam value) {
@@ -889,7 +843,7 @@ public final class MiracleRingDeliverItemReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ItemParam item_param_list = 1;</code>
+       * <code>repeated .ItemParam item_param_list = 3;</code>
        */
       public Builder setItemParamList(
           int index, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder builderForValue) {
@@ -903,7 +857,7 @@ public final class MiracleRingDeliverItemReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ItemParam item_param_list = 1;</code>
+       * <code>repeated .ItemParam item_param_list = 3;</code>
        */
       public Builder addItemParamList(emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam value) {
         if (itemParamListBuilder_ == null) {
@@ -919,7 +873,7 @@ public final class MiracleRingDeliverItemReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ItemParam item_param_list = 1;</code>
+       * <code>repeated .ItemParam item_param_list = 3;</code>
        */
       public Builder addItemParamList(
           int index, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam value) {
@@ -936,7 +890,7 @@ public final class MiracleRingDeliverItemReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ItemParam item_param_list = 1;</code>
+       * <code>repeated .ItemParam item_param_list = 3;</code>
        */
       public Builder addItemParamList(
           emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder builderForValue) {
@@ -950,7 +904,7 @@ public final class MiracleRingDeliverItemReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ItemParam item_param_list = 1;</code>
+       * <code>repeated .ItemParam item_param_list = 3;</code>
        */
       public Builder addItemParamList(
           int index, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder builderForValue) {
@@ -964,7 +918,7 @@ public final class MiracleRingDeliverItemReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ItemParam item_param_list = 1;</code>
+       * <code>repeated .ItemParam item_param_list = 3;</code>
        */
       public Builder addAllItemParamList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> values) {
@@ -979,7 +933,7 @@ public final class MiracleRingDeliverItemReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ItemParam item_param_list = 1;</code>
+       * <code>repeated .ItemParam item_param_list = 3;</code>
        */
       public Builder clearItemParamList() {
         if (itemParamListBuilder_ == null) {
@@ -992,7 +946,7 @@ public final class MiracleRingDeliverItemReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ItemParam item_param_list = 1;</code>
+       * <code>repeated .ItemParam item_param_list = 3;</code>
        */
       public Builder removeItemParamList(int index) {
         if (itemParamListBuilder_ == null) {
@@ -1005,14 +959,14 @@ public final class MiracleRingDeliverItemReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ItemParam item_param_list = 1;</code>
+       * <code>repeated .ItemParam item_param_list = 3;</code>
        */
       public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder getItemParamListBuilder(
           int index) {
         return getItemParamListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .ItemParam item_param_list = 1;</code>
+       * <code>repeated .ItemParam item_param_list = 3;</code>
        */
       public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder getItemParamListOrBuilder(
           int index) {
@@ -1022,7 +976,7 @@ public final class MiracleRingDeliverItemReqOuterClass {
         }
       }
       /**
-       * <code>repeated .ItemParam item_param_list = 1;</code>
+       * <code>repeated .ItemParam item_param_list = 3;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder> 
            getItemParamListOrBuilderList() {
@@ -1033,14 +987,14 @@ public final class MiracleRingDeliverItemReqOuterClass {
         }
       }
       /**
-       * <code>repeated .ItemParam item_param_list = 1;</code>
+       * <code>repeated .ItemParam item_param_list = 3;</code>
        */
       public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder addItemParamListBuilder() {
         return getItemParamListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.getDefaultInstance());
       }
       /**
-       * <code>repeated .ItemParam item_param_list = 1;</code>
+       * <code>repeated .ItemParam item_param_list = 3;</code>
        */
       public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder addItemParamListBuilder(
           int index) {
@@ -1048,7 +1002,7 @@ public final class MiracleRingDeliverItemReqOuterClass {
             index, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.getDefaultInstance());
       }
       /**
-       * <code>repeated .ItemParam item_param_list = 1;</code>
+       * <code>repeated .ItemParam item_param_list = 3;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder> 
            getItemParamListBuilderList() {
@@ -1069,6 +1023,68 @@ public final class MiracleRingDeliverItemReqOuterClass {
         return itemParamListBuilder_;
       }
 
+      private int gadgetEntityId_ ;
+      /**
+       * <code>uint32 gadget_entity_id = 6;</code>
+       * @return The gadgetEntityId.
+       */
+      @java.lang.Override
+      public int getGadgetEntityId() {
+        return gadgetEntityId_;
+      }
+      /**
+       * <code>uint32 gadget_entity_id = 6;</code>
+       * @param value The gadgetEntityId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setGadgetEntityId(int value) {
+        
+        gadgetEntityId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 gadget_entity_id = 6;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearGadgetEntityId() {
+        
+        gadgetEntityId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int gadgetId_ ;
+      /**
+       * <code>uint32 gadget_id = 8;</code>
+       * @return The gadgetId.
+       */
+      @java.lang.Override
+      public int getGadgetId() {
+        return gadgetId_;
+      }
+      /**
+       * <code>uint32 gadget_id = 8;</code>
+       * @param value The gadgetId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setGadgetId(int value) {
+        
+        gadgetId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 gadget_id = 8;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearGadgetId() {
+        
+        gadgetId_ = 0;
+        onChanged();
+        return this;
+      }
+
       private com.google.protobuf.Internal.LongList foodWeaponGuidList_ = emptyLongList();
       private void ensureFoodWeaponGuidListIsMutable() {
         if (!((bitField0_ & 0x00000002) != 0)) {
@@ -1077,7 +1093,7 @@ public final class MiracleRingDeliverItemReqOuterClass {
          }
       }
       /**
-       * <code>repeated uint64 food_weapon_guid_list = 4;</code>
+       * <code>repeated uint64 food_weapon_guid_list = 13;</code>
        * @return A list containing the foodWeaponGuidList.
        */
       public java.util.List<java.lang.Long>
@@ -1086,14 +1102,14 @@ public final class MiracleRingDeliverItemReqOuterClass {
                  java.util.Collections.unmodifiableList(foodWeaponGuidList_) : foodWeaponGuidList_;
       }
       /**
-       * <code>repeated uint64 food_weapon_guid_list = 4;</code>
+       * <code>repeated uint64 food_weapon_guid_list = 13;</code>
        * @return The count of foodWeaponGuidList.
        */
       public int getFoodWeaponGuidListCount() {
         return foodWeaponGuidList_.size();
       }
       /**
-       * <code>repeated uint64 food_weapon_guid_list = 4;</code>
+       * <code>repeated uint64 food_weapon_guid_list = 13;</code>
        * @param index The index of the element to return.
        * @return The foodWeaponGuidList at the given index.
        */
@@ -1101,7 +1117,7 @@ public final class MiracleRingDeliverItemReqOuterClass {
         return foodWeaponGuidList_.getLong(index);
       }
       /**
-       * <code>repeated uint64 food_weapon_guid_list = 4;</code>
+       * <code>repeated uint64 food_weapon_guid_list = 13;</code>
        * @param index The index to set the value at.
        * @param value The foodWeaponGuidList to set.
        * @return This builder for chaining.
@@ -1114,7 +1130,7 @@ public final class MiracleRingDeliverItemReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint64 food_weapon_guid_list = 4;</code>
+       * <code>repeated uint64 food_weapon_guid_list = 13;</code>
        * @param value The foodWeaponGuidList to add.
        * @return This builder for chaining.
        */
@@ -1125,7 +1141,7 @@ public final class MiracleRingDeliverItemReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint64 food_weapon_guid_list = 4;</code>
+       * <code>repeated uint64 food_weapon_guid_list = 13;</code>
        * @param values The foodWeaponGuidList to add.
        * @return This builder for chaining.
        */
@@ -1138,7 +1154,7 @@ public final class MiracleRingDeliverItemReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint64 food_weapon_guid_list = 4;</code>
+       * <code>repeated uint64 food_weapon_guid_list = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearFoodWeaponGuidList() {
@@ -1148,64 +1164,56 @@ public final class MiracleRingDeliverItemReqOuterClass {
         return this;
       }
 
-      private int gadgetId_ ;
+      private int opType_ = 0;
       /**
-       * <code>uint32 gadget_id = 14;</code>
-       * @return The gadgetId.
+       * <code>.InterOpType op_type = 15;</code>
+       * @return The enum numeric value on the wire for opType.
+       */
+      @java.lang.Override public int getOpTypeValue() {
+        return opType_;
+      }
+      /**
+       * <code>.InterOpType op_type = 15;</code>
+       * @param value The enum numeric value on the wire for opType to set.
+       * @return This builder for chaining.
+       */
+      public Builder setOpTypeValue(int value) {
+        
+        opType_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.InterOpType op_type = 15;</code>
+       * @return The opType.
        */
       @java.lang.Override
-      public int getGadgetId() {
-        return gadgetId_;
+      public emu.grasscutter.net.proto.InterOpTypeOuterClass.InterOpType getOpType() {
+        @SuppressWarnings("deprecation")
+        emu.grasscutter.net.proto.InterOpTypeOuterClass.InterOpType result = emu.grasscutter.net.proto.InterOpTypeOuterClass.InterOpType.valueOf(opType_);
+        return result == null ? emu.grasscutter.net.proto.InterOpTypeOuterClass.InterOpType.UNRECOGNIZED : result;
       }
       /**
-       * <code>uint32 gadget_id = 14;</code>
-       * @param value The gadgetId to set.
+       * <code>.InterOpType op_type = 15;</code>
+       * @param value The opType to set.
        * @return This builder for chaining.
        */
-      public Builder setGadgetId(int value) {
+      public Builder setOpType(emu.grasscutter.net.proto.InterOpTypeOuterClass.InterOpType value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
         
-        gadgetId_ = value;
+        opType_ = value.getNumber();
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 gadget_id = 14;</code>
+       * <code>.InterOpType op_type = 15;</code>
        * @return This builder for chaining.
        */
-      public Builder clearGadgetId() {
+      public Builder clearOpType() {
         
-        gadgetId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int gadgetEntityId_ ;
-      /**
-       * <code>uint32 gadget_entity_id = 5;</code>
-       * @return The gadgetEntityId.
-       */
-      @java.lang.Override
-      public int getGadgetEntityId() {
-        return gadgetEntityId_;
-      }
-      /**
-       * <code>uint32 gadget_entity_id = 5;</code>
-       * @param value The gadgetEntityId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setGadgetEntityId(int value) {
-        
-        gadgetEntityId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 gadget_entity_id = 5;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearGadgetEntityId() {
-        
-        gadgetEntityId_ = 0;
+        opType_ = 0;
         onChanged();
         return this;
       }
@@ -1278,11 +1286,11 @@ public final class MiracleRingDeliverItemReqOuterClass {
     java.lang.String[] descriptorData = {
       "\n\037MiracleRingDeliverItemReq.proto\032\021Inter" +
       "OpType.proto\032\017ItemParam.proto\"\253\001\n\031Miracl" +
-      "eRingDeliverItemReq\022\035\n\007op_type\030\t \001(\0162\014.I" +
-      "nterOpType\022#\n\017item_param_list\030\001 \003(\0132\n.It" +
-      "emParam\022\035\n\025food_weapon_guid_list\030\004 \003(\004\022\021" +
-      "\n\tgadget_id\030\016 \001(\r\022\030\n\020gadget_entity_id\030\005 " +
-      "\001(\rB\033\n\031emu.grasscutter.net.protob\006proto3"
+      "eRingDeliverItemReq\022#\n\017item_param_list\030\003" +
+      " \003(\0132\n.ItemParam\022\030\n\020gadget_entity_id\030\006 \001" +
+      "(\r\022\021\n\tgadget_id\030\010 \001(\r\022\035\n\025food_weapon_gui" +
+      "d_list\030\r \003(\004\022\035\n\007op_type\030\017 \001(\0162\014.InterOpT" +
+      "ypeB\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -1295,7 +1303,7 @@ public final class MiracleRingDeliverItemReqOuterClass {
     internal_static_MiracleRingDeliverItemReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_MiracleRingDeliverItemReq_descriptor,
-        new java.lang.String[] { "OpType", "ItemParamList", "FoodWeaponGuidList", "GadgetId", "GadgetEntityId", });
+        new java.lang.String[] { "ItemParamList", "GadgetEntityId", "GadgetId", "FoodWeaponGuidList", "OpType", });
     emu.grasscutter.net.proto.InterOpTypeOuterClass.getDescriptor();
     emu.grasscutter.net.proto.ItemParamOuterClass.getDescriptor();
   }

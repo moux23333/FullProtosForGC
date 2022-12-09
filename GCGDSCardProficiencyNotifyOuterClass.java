@@ -19,22 +19,26 @@ public final class GCGDSCardProficiencyNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 proficiency = 2;</code>
+     * <code>uint32 proficiency = 10;</code>
      * @return The proficiency.
      */
     int getProficiency();
 
     /**
-     * <code>uint32 card_id = 12;</code>
+     * <code>uint32 card_id = 13;</code>
      * @return The cardId.
      */
     int getCardId();
   }
   /**
    * <pre>
-   * CmdId: 7680
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 7969;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code GCGDSCardProficiencyNotify}
@@ -81,12 +85,12 @@ public final class GCGDSCardProficiencyNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
+            case 80: {
 
               proficiency_ = input.readUInt32();
               break;
             }
-            case 96: {
+            case 104: {
 
               cardId_ = input.readUInt32();
               break;
@@ -123,10 +127,10 @@ public final class GCGDSCardProficiencyNotifyOuterClass {
               emu.grasscutter.net.proto.GCGDSCardProficiencyNotifyOuterClass.GCGDSCardProficiencyNotify.class, emu.grasscutter.net.proto.GCGDSCardProficiencyNotifyOuterClass.GCGDSCardProficiencyNotify.Builder.class);
     }
 
-    public static final int PROFICIENCY_FIELD_NUMBER = 2;
+    public static final int PROFICIENCY_FIELD_NUMBER = 10;
     private int proficiency_;
     /**
-     * <code>uint32 proficiency = 2;</code>
+     * <code>uint32 proficiency = 10;</code>
      * @return The proficiency.
      */
     @java.lang.Override
@@ -134,10 +138,10 @@ public final class GCGDSCardProficiencyNotifyOuterClass {
       return proficiency_;
     }
 
-    public static final int CARD_ID_FIELD_NUMBER = 12;
+    public static final int CARD_ID_FIELD_NUMBER = 13;
     private int cardId_;
     /**
-     * <code>uint32 card_id = 12;</code>
+     * <code>uint32 card_id = 13;</code>
      * @return The cardId.
      */
     @java.lang.Override
@@ -160,10 +164,10 @@ public final class GCGDSCardProficiencyNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (proficiency_ != 0) {
-        output.writeUInt32(2, proficiency_);
+        output.writeUInt32(10, proficiency_);
       }
       if (cardId_ != 0) {
-        output.writeUInt32(12, cardId_);
+        output.writeUInt32(13, cardId_);
       }
       unknownFields.writeTo(output);
     }
@@ -176,11 +180,11 @@ public final class GCGDSCardProficiencyNotifyOuterClass {
       size = 0;
       if (proficiency_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, proficiency_);
+          .computeUInt32Size(10, proficiency_);
       }
       if (cardId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, cardId_);
+          .computeUInt32Size(13, cardId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -313,9 +317,13 @@ public final class GCGDSCardProficiencyNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 7680
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 7969;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code GCGDSCardProficiencyNotify}
@@ -472,7 +480,7 @@ public final class GCGDSCardProficiencyNotifyOuterClass {
 
       private int proficiency_ ;
       /**
-       * <code>uint32 proficiency = 2;</code>
+       * <code>uint32 proficiency = 10;</code>
        * @return The proficiency.
        */
       @java.lang.Override
@@ -480,7 +488,7 @@ public final class GCGDSCardProficiencyNotifyOuterClass {
         return proficiency_;
       }
       /**
-       * <code>uint32 proficiency = 2;</code>
+       * <code>uint32 proficiency = 10;</code>
        * @param value The proficiency to set.
        * @return This builder for chaining.
        */
@@ -491,7 +499,7 @@ public final class GCGDSCardProficiencyNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 proficiency = 2;</code>
+       * <code>uint32 proficiency = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearProficiency() {
@@ -503,7 +511,7 @@ public final class GCGDSCardProficiencyNotifyOuterClass {
 
       private int cardId_ ;
       /**
-       * <code>uint32 card_id = 12;</code>
+       * <code>uint32 card_id = 13;</code>
        * @return The cardId.
        */
       @java.lang.Override
@@ -511,7 +519,7 @@ public final class GCGDSCardProficiencyNotifyOuterClass {
         return cardId_;
       }
       /**
-       * <code>uint32 card_id = 12;</code>
+       * <code>uint32 card_id = 13;</code>
        * @param value The cardId to set.
        * @return This builder for chaining.
        */
@@ -522,7 +530,7 @@ public final class GCGDSCardProficiencyNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 card_id = 12;</code>
+       * <code>uint32 card_id = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearCardId() {
@@ -600,7 +608,7 @@ public final class GCGDSCardProficiencyNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n GCGDSCardProficiencyNotify.proto\"B\n\032GC" +
       "GDSCardProficiencyNotify\022\023\n\013proficiency\030" +
-      "\002 \001(\r\022\017\n\007card_id\030\014 \001(\rB\033\n\031emu.grasscutte" +
+      "\n \001(\r\022\017\n\007card_id\030\r \001(\rB\033\n\031emu.grasscutte" +
       "r.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

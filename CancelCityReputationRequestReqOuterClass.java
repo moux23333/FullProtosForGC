@@ -19,23 +19,27 @@ public final class CancelCityReputationRequestReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
+     * <code>uint32 city_id = 14;</code>
+     * @return The cityId.
+     */
+    int getCityId();
+
+    /**
      * <code>uint32 request_id = 10;</code>
      * @return The requestId.
      */
     int getRequestId();
-
-    /**
-     * <code>uint32 city_id = 6;</code>
-     * @return The cityId.
-     */
-    int getCityId();
   }
   /**
    * <pre>
-   * CmdId: 2899
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 2857;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code CancelCityReputationRequestReq}
@@ -82,14 +86,14 @@ public final class CancelCityReputationRequestReqOuterClass {
             case 0:
               done = true;
               break;
-            case 48: {
-
-              cityId_ = input.readUInt32();
-              break;
-            }
             case 80: {
 
               requestId_ = input.readUInt32();
+              break;
+            }
+            case 112: {
+
+              cityId_ = input.readUInt32();
               break;
             }
             default: {
@@ -124,6 +128,17 @@ public final class CancelCityReputationRequestReqOuterClass {
               emu.grasscutter.net.proto.CancelCityReputationRequestReqOuterClass.CancelCityReputationRequestReq.class, emu.grasscutter.net.proto.CancelCityReputationRequestReqOuterClass.CancelCityReputationRequestReq.Builder.class);
     }
 
+    public static final int CITY_ID_FIELD_NUMBER = 14;
+    private int cityId_;
+    /**
+     * <code>uint32 city_id = 14;</code>
+     * @return The cityId.
+     */
+    @java.lang.Override
+    public int getCityId() {
+      return cityId_;
+    }
+
     public static final int REQUEST_ID_FIELD_NUMBER = 10;
     private int requestId_;
     /**
@@ -133,17 +148,6 @@ public final class CancelCityReputationRequestReqOuterClass {
     @java.lang.Override
     public int getRequestId() {
       return requestId_;
-    }
-
-    public static final int CITY_ID_FIELD_NUMBER = 6;
-    private int cityId_;
-    /**
-     * <code>uint32 city_id = 6;</code>
-     * @return The cityId.
-     */
-    @java.lang.Override
-    public int getCityId() {
-      return cityId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -160,11 +164,11 @@ public final class CancelCityReputationRequestReqOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (cityId_ != 0) {
-        output.writeUInt32(6, cityId_);
-      }
       if (requestId_ != 0) {
         output.writeUInt32(10, requestId_);
+      }
+      if (cityId_ != 0) {
+        output.writeUInt32(14, cityId_);
       }
       unknownFields.writeTo(output);
     }
@@ -175,13 +179,13 @@ public final class CancelCityReputationRequestReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (cityId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, cityId_);
-      }
       if (requestId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(10, requestId_);
+      }
+      if (cityId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(14, cityId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -198,10 +202,10 @@ public final class CancelCityReputationRequestReqOuterClass {
       }
       emu.grasscutter.net.proto.CancelCityReputationRequestReqOuterClass.CancelCityReputationRequestReq other = (emu.grasscutter.net.proto.CancelCityReputationRequestReqOuterClass.CancelCityReputationRequestReq) obj;
 
-      if (getRequestId()
-          != other.getRequestId()) return false;
       if (getCityId()
           != other.getCityId()) return false;
+      if (getRequestId()
+          != other.getRequestId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -213,10 +217,10 @@ public final class CancelCityReputationRequestReqOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + REQUEST_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getRequestId();
       hash = (37 * hash) + CITY_ID_FIELD_NUMBER;
       hash = (53 * hash) + getCityId();
+      hash = (37 * hash) + REQUEST_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getRequestId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -314,10 +318,14 @@ public final class CancelCityReputationRequestReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 2899
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 2857;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code CancelCityReputationRequestReq}
@@ -357,9 +365,9 @@ public final class CancelCityReputationRequestReqOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        requestId_ = 0;
-
         cityId_ = 0;
+
+        requestId_ = 0;
 
         return this;
       }
@@ -387,8 +395,8 @@ public final class CancelCityReputationRequestReqOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.CancelCityReputationRequestReqOuterClass.CancelCityReputationRequestReq buildPartial() {
         emu.grasscutter.net.proto.CancelCityReputationRequestReqOuterClass.CancelCityReputationRequestReq result = new emu.grasscutter.net.proto.CancelCityReputationRequestReqOuterClass.CancelCityReputationRequestReq(this);
-        result.requestId_ = requestId_;
         result.cityId_ = cityId_;
+        result.requestId_ = requestId_;
         onBuilt();
         return result;
       }
@@ -437,11 +445,11 @@ public final class CancelCityReputationRequestReqOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.CancelCityReputationRequestReqOuterClass.CancelCityReputationRequestReq other) {
         if (other == emu.grasscutter.net.proto.CancelCityReputationRequestReqOuterClass.CancelCityReputationRequestReq.getDefaultInstance()) return this;
-        if (other.getRequestId() != 0) {
-          setRequestId(other.getRequestId());
-        }
         if (other.getCityId() != 0) {
           setCityId(other.getCityId());
+        }
+        if (other.getRequestId() != 0) {
+          setRequestId(other.getRequestId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -472,6 +480,37 @@ public final class CancelCityReputationRequestReqOuterClass {
         return this;
       }
 
+      private int cityId_ ;
+      /**
+       * <code>uint32 city_id = 14;</code>
+       * @return The cityId.
+       */
+      @java.lang.Override
+      public int getCityId() {
+        return cityId_;
+      }
+      /**
+       * <code>uint32 city_id = 14;</code>
+       * @param value The cityId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setCityId(int value) {
+        
+        cityId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 city_id = 14;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearCityId() {
+        
+        cityId_ = 0;
+        onChanged();
+        return this;
+      }
+
       private int requestId_ ;
       /**
        * <code>uint32 request_id = 10;</code>
@@ -499,37 +538,6 @@ public final class CancelCityReputationRequestReqOuterClass {
       public Builder clearRequestId() {
         
         requestId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int cityId_ ;
-      /**
-       * <code>uint32 city_id = 6;</code>
-       * @return The cityId.
-       */
-      @java.lang.Override
-      public int getCityId() {
-        return cityId_;
-      }
-      /**
-       * <code>uint32 city_id = 6;</code>
-       * @param value The cityId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setCityId(int value) {
-        
-        cityId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 city_id = 6;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearCityId() {
-        
-        cityId_ = 0;
         onChanged();
         return this;
       }
@@ -601,8 +609,8 @@ public final class CancelCityReputationRequestReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n$CancelCityReputationRequestReq.proto\"E" +
-      "\n\036CancelCityReputationRequestReq\022\022\n\nrequ" +
-      "est_id\030\n \001(\r\022\017\n\007city_id\030\006 \001(\rB\033\n\031emu.gra" +
+      "\n\036CancelCityReputationRequestReq\022\017\n\007city" +
+      "_id\030\016 \001(\r\022\022\n\nrequest_id\030\n \001(\rB\033\n\031emu.gra" +
       "sscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -614,7 +622,7 @@ public final class CancelCityReputationRequestReqOuterClass {
     internal_static_CancelCityReputationRequestReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_CancelCityReputationRequestReq_descriptor,
-        new java.lang.String[] { "RequestId", "CityId", });
+        new java.lang.String[] { "CityId", "RequestId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

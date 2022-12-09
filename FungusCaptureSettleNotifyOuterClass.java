@@ -19,16 +19,20 @@ public final class FungusCaptureSettleNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_success = 2;</code>
+     * <code>bool is_success = 14;</code>
      * @return The isSuccess.
      */
     boolean getIsSuccess();
   }
   /**
    * <pre>
-   * CmdId: 5506
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 5510;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code FungusCaptureSettleNotify}
@@ -75,7 +79,7 @@ public final class FungusCaptureSettleNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
+            case 112: {
 
               isSuccess_ = input.readBool();
               break;
@@ -112,10 +116,10 @@ public final class FungusCaptureSettleNotifyOuterClass {
               emu.grasscutter.net.proto.FungusCaptureSettleNotifyOuterClass.FungusCaptureSettleNotify.class, emu.grasscutter.net.proto.FungusCaptureSettleNotifyOuterClass.FungusCaptureSettleNotify.Builder.class);
     }
 
-    public static final int IS_SUCCESS_FIELD_NUMBER = 2;
+    public static final int IS_SUCCESS_FIELD_NUMBER = 14;
     private boolean isSuccess_;
     /**
-     * <code>bool is_success = 2;</code>
+     * <code>bool is_success = 14;</code>
      * @return The isSuccess.
      */
     @java.lang.Override
@@ -138,7 +142,7 @@ public final class FungusCaptureSettleNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (isSuccess_ != false) {
-        output.writeBool(2, isSuccess_);
+        output.writeBool(14, isSuccess_);
       }
       unknownFields.writeTo(output);
     }
@@ -151,7 +155,7 @@ public final class FungusCaptureSettleNotifyOuterClass {
       size = 0;
       if (isSuccess_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(2, isSuccess_);
+          .computeBoolSize(14, isSuccess_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -281,9 +285,13 @@ public final class FungusCaptureSettleNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 5506
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 5510;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code FungusCaptureSettleNotify}
@@ -434,7 +442,7 @@ public final class FungusCaptureSettleNotifyOuterClass {
 
       private boolean isSuccess_ ;
       /**
-       * <code>bool is_success = 2;</code>
+       * <code>bool is_success = 14;</code>
        * @return The isSuccess.
        */
       @java.lang.Override
@@ -442,7 +450,7 @@ public final class FungusCaptureSettleNotifyOuterClass {
         return isSuccess_;
       }
       /**
-       * <code>bool is_success = 2;</code>
+       * <code>bool is_success = 14;</code>
        * @param value The isSuccess to set.
        * @return This builder for chaining.
        */
@@ -453,7 +461,7 @@ public final class FungusCaptureSettleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>bool is_success = 2;</code>
+       * <code>bool is_success = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsSuccess() {
@@ -530,7 +538,7 @@ public final class FungusCaptureSettleNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\037FungusCaptureSettleNotify.proto\"/\n\031Fun" +
-      "gusCaptureSettleNotify\022\022\n\nis_success\030\002 \001" +
+      "gusCaptureSettleNotify\022\022\n\nis_success\030\016 \001" +
       "(\010B\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

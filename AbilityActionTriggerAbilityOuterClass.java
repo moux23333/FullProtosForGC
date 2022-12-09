@@ -19,7 +19,7 @@ public final class AbilityActionTriggerAbilityOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 other_id = 14;</code>
+     * <code>uint32 other_id = 4;</code>
      * @return The otherId.
      */
     int getOtherId();
@@ -69,7 +69,7 @@ public final class AbilityActionTriggerAbilityOuterClass {
             case 0:
               done = true;
               break;
-            case 112: {
+            case 32: {
 
               otherId_ = input.readUInt32();
               break;
@@ -106,10 +106,10 @@ public final class AbilityActionTriggerAbilityOuterClass {
               emu.grasscutter.net.proto.AbilityActionTriggerAbilityOuterClass.AbilityActionTriggerAbility.class, emu.grasscutter.net.proto.AbilityActionTriggerAbilityOuterClass.AbilityActionTriggerAbility.Builder.class);
     }
 
-    public static final int OTHER_ID_FIELD_NUMBER = 14;
+    public static final int OTHER_ID_FIELD_NUMBER = 4;
     private int otherId_;
     /**
-     * <code>uint32 other_id = 14;</code>
+     * <code>uint32 other_id = 4;</code>
      * @return The otherId.
      */
     @java.lang.Override
@@ -132,7 +132,7 @@ public final class AbilityActionTriggerAbilityOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (otherId_ != 0) {
-        output.writeUInt32(14, otherId_);
+        output.writeUInt32(4, otherId_);
       }
       unknownFields.writeTo(output);
     }
@@ -145,7 +145,7 @@ public final class AbilityActionTriggerAbilityOuterClass {
       size = 0;
       if (otherId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, otherId_);
+          .computeUInt32Size(4, otherId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -421,7 +421,7 @@ public final class AbilityActionTriggerAbilityOuterClass {
 
       private int otherId_ ;
       /**
-       * <code>uint32 other_id = 14;</code>
+       * <code>uint32 other_id = 4;</code>
        * @return The otherId.
        */
       @java.lang.Override
@@ -429,7 +429,7 @@ public final class AbilityActionTriggerAbilityOuterClass {
         return otherId_;
       }
       /**
-       * <code>uint32 other_id = 14;</code>
+       * <code>uint32 other_id = 4;</code>
        * @param value The otherId to set.
        * @return This builder for chaining.
        */
@@ -440,7 +440,7 @@ public final class AbilityActionTriggerAbilityOuterClass {
         return this;
       }
       /**
-       * <code>uint32 other_id = 14;</code>
+       * <code>uint32 other_id = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearOtherId() {
@@ -517,7 +517,7 @@ public final class AbilityActionTriggerAbilityOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n!AbilityActionTriggerAbility.proto\"/\n\033A" +
-      "bilityActionTriggerAbility\022\020\n\010other_id\030\016" +
+      "bilityActionTriggerAbility\022\020\n\010other_id\030\004" +
       " \001(\rB\033\n\031emu.grasscutter.net.protob\006proto" +
       "3"
     };

@@ -19,23 +19,27 @@ public final class EnterIrodoriChessDungeonReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_hard_map = 1;</code>
+     * <code>bool is_hard_map = 12;</code>
      * @return The isHardMap.
      */
     boolean getIsHardMap();
 
     /**
-     * <code>uint32 level_id = 11;</code>
+     * <code>uint32 level_id = 10;</code>
      * @return The levelId.
      */
     int getLevelId();
   }
   /**
    * <pre>
-   * CmdId: 8717
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 8592;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code EnterIrodoriChessDungeonReq}
@@ -82,14 +86,14 @@ public final class EnterIrodoriChessDungeonReqOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
-
-              isHardMap_ = input.readBool();
-              break;
-            }
-            case 88: {
+            case 80: {
 
               levelId_ = input.readUInt32();
+              break;
+            }
+            case 96: {
+
+              isHardMap_ = input.readBool();
               break;
             }
             default: {
@@ -124,10 +128,10 @@ public final class EnterIrodoriChessDungeonReqOuterClass {
               emu.grasscutter.net.proto.EnterIrodoriChessDungeonReqOuterClass.EnterIrodoriChessDungeonReq.class, emu.grasscutter.net.proto.EnterIrodoriChessDungeonReqOuterClass.EnterIrodoriChessDungeonReq.Builder.class);
     }
 
-    public static final int IS_HARD_MAP_FIELD_NUMBER = 1;
+    public static final int IS_HARD_MAP_FIELD_NUMBER = 12;
     private boolean isHardMap_;
     /**
-     * <code>bool is_hard_map = 1;</code>
+     * <code>bool is_hard_map = 12;</code>
      * @return The isHardMap.
      */
     @java.lang.Override
@@ -135,10 +139,10 @@ public final class EnterIrodoriChessDungeonReqOuterClass {
       return isHardMap_;
     }
 
-    public static final int LEVEL_ID_FIELD_NUMBER = 11;
+    public static final int LEVEL_ID_FIELD_NUMBER = 10;
     private int levelId_;
     /**
-     * <code>uint32 level_id = 11;</code>
+     * <code>uint32 level_id = 10;</code>
      * @return The levelId.
      */
     @java.lang.Override
@@ -160,11 +164,11 @@ public final class EnterIrodoriChessDungeonReqOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (isHardMap_ != false) {
-        output.writeBool(1, isHardMap_);
-      }
       if (levelId_ != 0) {
-        output.writeUInt32(11, levelId_);
+        output.writeUInt32(10, levelId_);
+      }
+      if (isHardMap_ != false) {
+        output.writeBool(12, isHardMap_);
       }
       unknownFields.writeTo(output);
     }
@@ -175,13 +179,13 @@ public final class EnterIrodoriChessDungeonReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (isHardMap_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(1, isHardMap_);
-      }
       if (levelId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, levelId_);
+          .computeUInt32Size(10, levelId_);
+      }
+      if (isHardMap_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(12, isHardMap_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -315,10 +319,14 @@ public final class EnterIrodoriChessDungeonReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 8717
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 8592;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code EnterIrodoriChessDungeonReq}
@@ -475,7 +483,7 @@ public final class EnterIrodoriChessDungeonReqOuterClass {
 
       private boolean isHardMap_ ;
       /**
-       * <code>bool is_hard_map = 1;</code>
+       * <code>bool is_hard_map = 12;</code>
        * @return The isHardMap.
        */
       @java.lang.Override
@@ -483,7 +491,7 @@ public final class EnterIrodoriChessDungeonReqOuterClass {
         return isHardMap_;
       }
       /**
-       * <code>bool is_hard_map = 1;</code>
+       * <code>bool is_hard_map = 12;</code>
        * @param value The isHardMap to set.
        * @return This builder for chaining.
        */
@@ -494,7 +502,7 @@ public final class EnterIrodoriChessDungeonReqOuterClass {
         return this;
       }
       /**
-       * <code>bool is_hard_map = 1;</code>
+       * <code>bool is_hard_map = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsHardMap() {
@@ -506,7 +514,7 @@ public final class EnterIrodoriChessDungeonReqOuterClass {
 
       private int levelId_ ;
       /**
-       * <code>uint32 level_id = 11;</code>
+       * <code>uint32 level_id = 10;</code>
        * @return The levelId.
        */
       @java.lang.Override
@@ -514,7 +522,7 @@ public final class EnterIrodoriChessDungeonReqOuterClass {
         return levelId_;
       }
       /**
-       * <code>uint32 level_id = 11;</code>
+       * <code>uint32 level_id = 10;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
        */
@@ -525,7 +533,7 @@ public final class EnterIrodoriChessDungeonReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 level_id = 11;</code>
+       * <code>uint32 level_id = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearLevelId() {
@@ -603,7 +611,7 @@ public final class EnterIrodoriChessDungeonReqOuterClass {
     java.lang.String[] descriptorData = {
       "\n!EnterIrodoriChessDungeonReq.proto\"D\n\033E" +
       "nterIrodoriChessDungeonReq\022\023\n\013is_hard_ma" +
-      "p\030\001 \001(\010\022\020\n\010level_id\030\013 \001(\rB\033\n\031emu.grasscu" +
+      "p\030\014 \001(\010\022\020\n\010level_id\030\n \001(\rB\033\n\031emu.grasscu" +
       "tter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

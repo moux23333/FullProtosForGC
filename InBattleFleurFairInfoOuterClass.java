@@ -19,56 +19,56 @@ public final class InBattleFleurFairInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated uint32 gallery_id_list = 5;</code>
-     * @return A list containing the galleryIdList.
-     */
-    java.util.List<java.lang.Integer> getGalleryIdListList();
-    /**
-     * <code>repeated uint32 gallery_id_list = 5;</code>
-     * @return The count of galleryIdList.
-     */
-    int getGalleryIdListCount();
-    /**
-     * <code>repeated uint32 gallery_id_list = 5;</code>
-     * @param index The index of the element to return.
-     * @return The galleryIdList at the given index.
-     */
-    int getGalleryIdList(int index);
-
-    /**
-     * <code>uint32 gallery_stage_index = 6;</code>
+     * <code>uint32 gallery_stage_index = 7;</code>
      * @return The galleryStageIndex.
      */
     int getGalleryStageIndex();
 
     /**
-     * <code>uint32 preview_stage_index = 8;</code>
+     * <code>uint32 preview_display_duration = 11;</code>
+     * @return The previewDisplayDuration.
+     */
+    int getPreviewDisplayDuration();
+
+    /**
+     * <code>repeated uint32 Unk3300_NNPMBFGJELL = 15;</code>
+     * @return A list containing the unk3300NNPMBFGJELL.
+     */
+    java.util.List<java.lang.Integer> getUnk3300NNPMBFGJELLList();
+    /**
+     * <code>repeated uint32 Unk3300_NNPMBFGJELL = 15;</code>
+     * @return The count of unk3300NNPMBFGJELL.
+     */
+    int getUnk3300NNPMBFGJELLCount();
+    /**
+     * <code>repeated uint32 Unk3300_NNPMBFGJELL = 15;</code>
+     * @param index The index of the element to return.
+     * @return The unk3300NNPMBFGJELL at the given index.
+     */
+    int getUnk3300NNPMBFGJELL(int index);
+
+    /**
+     * <code>uint32 preview_stage_index = 9;</code>
      * @return The previewStageIndex.
      */
     int getPreviewStageIndex();
 
     /**
-     * <code>repeated uint32 ability_group_id_list = 2;</code>
-     * @return A list containing the abilityGroupIdList.
+     * <code>repeated uint32 Unk3300_IJBKKLGOMIE = 14;</code>
+     * @return A list containing the unk3300IJBKKLGOMIE.
      */
-    java.util.List<java.lang.Integer> getAbilityGroupIdListList();
+    java.util.List<java.lang.Integer> getUnk3300IJBKKLGOMIEList();
     /**
-     * <code>repeated uint32 ability_group_id_list = 2;</code>
-     * @return The count of abilityGroupIdList.
+     * <code>repeated uint32 Unk3300_IJBKKLGOMIE = 14;</code>
+     * @return The count of unk3300IJBKKLGOMIE.
      */
-    int getAbilityGroupIdListCount();
+    int getUnk3300IJBKKLGOMIECount();
     /**
-     * <code>repeated uint32 ability_group_id_list = 2;</code>
+     * <code>repeated uint32 Unk3300_IJBKKLGOMIE = 14;</code>
      * @param index The index of the element to return.
-     * @return The abilityGroupIdList at the given index.
+     * @return The unk3300IJBKKLGOMIE at the given index.
      */
-    int getAbilityGroupIdList(int index);
-
-    /**
-     * <code>uint32 preview_display_duration = 12;</code>
-     * @return The previewDisplayDuration.
-     */
-    int getPreviewDisplayDuration();
+    int getUnk3300IJBKKLGOMIE(int index);
   }
   /**
    * Protobuf type {@code InBattleFleurFairInfo}
@@ -83,8 +83,8 @@ public final class InBattleFleurFairInfoOuterClass {
       super(builder);
     }
     private InBattleFleurFairInfo() {
-      galleryIdList_ = emptyIntList();
-      abilityGroupIdList_ = emptyIntList();
+      unk3300NNPMBFGJELL_ = emptyIntList();
+      unk3300IJBKKLGOMIE_ = emptyIntList();
     }
 
     @java.lang.Override
@@ -118,61 +118,61 @@ public final class InBattleFleurFairInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
-              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
-                abilityGroupIdList_ = newIntList();
-                mutable_bitField0_ |= 0x00000002;
-              }
-              abilityGroupIdList_.addInt(input.readUInt32());
-              break;
-            }
-            case 18: {
-              int length = input.readRawVarint32();
-              int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000002) != 0) && input.getBytesUntilLimit() > 0) {
-                abilityGroupIdList_ = newIntList();
-                mutable_bitField0_ |= 0x00000002;
-              }
-              while (input.getBytesUntilLimit() > 0) {
-                abilityGroupIdList_.addInt(input.readUInt32());
-              }
-              input.popLimit(limit);
-              break;
-            }
-            case 40: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                galleryIdList_ = newIntList();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              galleryIdList_.addInt(input.readUInt32());
-              break;
-            }
-            case 42: {
-              int length = input.readRawVarint32();
-              int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
-                galleryIdList_ = newIntList();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              while (input.getBytesUntilLimit() > 0) {
-                galleryIdList_.addInt(input.readUInt32());
-              }
-              input.popLimit(limit);
-              break;
-            }
-            case 48: {
+            case 56: {
 
               galleryStageIndex_ = input.readUInt32();
               break;
             }
-            case 64: {
+            case 72: {
 
               previewStageIndex_ = input.readUInt32();
               break;
             }
-            case 96: {
+            case 88: {
 
               previewDisplayDuration_ = input.readUInt32();
+              break;
+            }
+            case 112: {
+              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
+                unk3300IJBKKLGOMIE_ = newIntList();
+                mutable_bitField0_ |= 0x00000002;
+              }
+              unk3300IJBKKLGOMIE_.addInt(input.readUInt32());
+              break;
+            }
+            case 114: {
+              int length = input.readRawVarint32();
+              int limit = input.pushLimit(length);
+              if (!((mutable_bitField0_ & 0x00000002) != 0) && input.getBytesUntilLimit() > 0) {
+                unk3300IJBKKLGOMIE_ = newIntList();
+                mutable_bitField0_ |= 0x00000002;
+              }
+              while (input.getBytesUntilLimit() > 0) {
+                unk3300IJBKKLGOMIE_.addInt(input.readUInt32());
+              }
+              input.popLimit(limit);
+              break;
+            }
+            case 120: {
+              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+                unk3300NNPMBFGJELL_ = newIntList();
+                mutable_bitField0_ |= 0x00000001;
+              }
+              unk3300NNPMBFGJELL_.addInt(input.readUInt32());
+              break;
+            }
+            case 122: {
+              int length = input.readRawVarint32();
+              int limit = input.pushLimit(length);
+              if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
+                unk3300NNPMBFGJELL_ = newIntList();
+                mutable_bitField0_ |= 0x00000001;
+              }
+              while (input.getBytesUntilLimit() > 0) {
+                unk3300NNPMBFGJELL_.addInt(input.readUInt32());
+              }
+              input.popLimit(limit);
               break;
             }
             default: {
@@ -191,10 +191,10 @@ public final class InBattleFleurFairInfoOuterClass {
             e).setUnfinishedMessage(this);
       } finally {
         if (((mutable_bitField0_ & 0x00000002) != 0)) {
-          abilityGroupIdList_.makeImmutable(); // C
+          unk3300IJBKKLGOMIE_.makeImmutable(); // C
         }
         if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          galleryIdList_.makeImmutable(); // C
+          unk3300NNPMBFGJELL_.makeImmutable(); // C
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -213,38 +213,10 @@ public final class InBattleFleurFairInfoOuterClass {
               emu.grasscutter.net.proto.InBattleFleurFairInfoOuterClass.InBattleFleurFairInfo.class, emu.grasscutter.net.proto.InBattleFleurFairInfoOuterClass.InBattleFleurFairInfo.Builder.class);
     }
 
-    public static final int GALLERY_ID_LIST_FIELD_NUMBER = 5;
-    private com.google.protobuf.Internal.IntList galleryIdList_;
-    /**
-     * <code>repeated uint32 gallery_id_list = 5;</code>
-     * @return A list containing the galleryIdList.
-     */
-    @java.lang.Override
-    public java.util.List<java.lang.Integer>
-        getGalleryIdListList() {
-      return galleryIdList_;
-    }
-    /**
-     * <code>repeated uint32 gallery_id_list = 5;</code>
-     * @return The count of galleryIdList.
-     */
-    public int getGalleryIdListCount() {
-      return galleryIdList_.size();
-    }
-    /**
-     * <code>repeated uint32 gallery_id_list = 5;</code>
-     * @param index The index of the element to return.
-     * @return The galleryIdList at the given index.
-     */
-    public int getGalleryIdList(int index) {
-      return galleryIdList_.getInt(index);
-    }
-    private int galleryIdListMemoizedSerializedSize = -1;
-
-    public static final int GALLERY_STAGE_INDEX_FIELD_NUMBER = 6;
+    public static final int GALLERY_STAGE_INDEX_FIELD_NUMBER = 7;
     private int galleryStageIndex_;
     /**
-     * <code>uint32 gallery_stage_index = 6;</code>
+     * <code>uint32 gallery_stage_index = 7;</code>
      * @return The galleryStageIndex.
      */
     @java.lang.Override
@@ -252,10 +224,49 @@ public final class InBattleFleurFairInfoOuterClass {
       return galleryStageIndex_;
     }
 
-    public static final int PREVIEW_STAGE_INDEX_FIELD_NUMBER = 8;
+    public static final int PREVIEW_DISPLAY_DURATION_FIELD_NUMBER = 11;
+    private int previewDisplayDuration_;
+    /**
+     * <code>uint32 preview_display_duration = 11;</code>
+     * @return The previewDisplayDuration.
+     */
+    @java.lang.Override
+    public int getPreviewDisplayDuration() {
+      return previewDisplayDuration_;
+    }
+
+    public static final int UNK3300_NNPMBFGJELL_FIELD_NUMBER = 15;
+    private com.google.protobuf.Internal.IntList unk3300NNPMBFGJELL_;
+    /**
+     * <code>repeated uint32 Unk3300_NNPMBFGJELL = 15;</code>
+     * @return A list containing the unk3300NNPMBFGJELL.
+     */
+    @java.lang.Override
+    public java.util.List<java.lang.Integer>
+        getUnk3300NNPMBFGJELLList() {
+      return unk3300NNPMBFGJELL_;
+    }
+    /**
+     * <code>repeated uint32 Unk3300_NNPMBFGJELL = 15;</code>
+     * @return The count of unk3300NNPMBFGJELL.
+     */
+    public int getUnk3300NNPMBFGJELLCount() {
+      return unk3300NNPMBFGJELL_.size();
+    }
+    /**
+     * <code>repeated uint32 Unk3300_NNPMBFGJELL = 15;</code>
+     * @param index The index of the element to return.
+     * @return The unk3300NNPMBFGJELL at the given index.
+     */
+    public int getUnk3300NNPMBFGJELL(int index) {
+      return unk3300NNPMBFGJELL_.getInt(index);
+    }
+    private int unk3300NNPMBFGJELLMemoizedSerializedSize = -1;
+
+    public static final int PREVIEW_STAGE_INDEX_FIELD_NUMBER = 9;
     private int previewStageIndex_;
     /**
-     * <code>uint32 preview_stage_index = 8;</code>
+     * <code>uint32 preview_stage_index = 9;</code>
      * @return The previewStageIndex.
      */
     @java.lang.Override
@@ -263,44 +274,33 @@ public final class InBattleFleurFairInfoOuterClass {
       return previewStageIndex_;
     }
 
-    public static final int ABILITY_GROUP_ID_LIST_FIELD_NUMBER = 2;
-    private com.google.protobuf.Internal.IntList abilityGroupIdList_;
+    public static final int UNK3300_IJBKKLGOMIE_FIELD_NUMBER = 14;
+    private com.google.protobuf.Internal.IntList unk3300IJBKKLGOMIE_;
     /**
-     * <code>repeated uint32 ability_group_id_list = 2;</code>
-     * @return A list containing the abilityGroupIdList.
+     * <code>repeated uint32 Unk3300_IJBKKLGOMIE = 14;</code>
+     * @return A list containing the unk3300IJBKKLGOMIE.
      */
     @java.lang.Override
     public java.util.List<java.lang.Integer>
-        getAbilityGroupIdListList() {
-      return abilityGroupIdList_;
+        getUnk3300IJBKKLGOMIEList() {
+      return unk3300IJBKKLGOMIE_;
     }
     /**
-     * <code>repeated uint32 ability_group_id_list = 2;</code>
-     * @return The count of abilityGroupIdList.
+     * <code>repeated uint32 Unk3300_IJBKKLGOMIE = 14;</code>
+     * @return The count of unk3300IJBKKLGOMIE.
      */
-    public int getAbilityGroupIdListCount() {
-      return abilityGroupIdList_.size();
+    public int getUnk3300IJBKKLGOMIECount() {
+      return unk3300IJBKKLGOMIE_.size();
     }
     /**
-     * <code>repeated uint32 ability_group_id_list = 2;</code>
+     * <code>repeated uint32 Unk3300_IJBKKLGOMIE = 14;</code>
      * @param index The index of the element to return.
-     * @return The abilityGroupIdList at the given index.
+     * @return The unk3300IJBKKLGOMIE at the given index.
      */
-    public int getAbilityGroupIdList(int index) {
-      return abilityGroupIdList_.getInt(index);
+    public int getUnk3300IJBKKLGOMIE(int index) {
+      return unk3300IJBKKLGOMIE_.getInt(index);
     }
-    private int abilityGroupIdListMemoizedSerializedSize = -1;
-
-    public static final int PREVIEW_DISPLAY_DURATION_FIELD_NUMBER = 12;
-    private int previewDisplayDuration_;
-    /**
-     * <code>uint32 preview_display_duration = 12;</code>
-     * @return The previewDisplayDuration.
-     */
-    @java.lang.Override
-    public int getPreviewDisplayDuration() {
-      return previewDisplayDuration_;
-    }
+    private int unk3300IJBKKLGOMIEMemoizedSerializedSize = -1;
 
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
@@ -317,28 +317,28 @@ public final class InBattleFleurFairInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      if (getAbilityGroupIdListList().size() > 0) {
-        output.writeUInt32NoTag(18);
-        output.writeUInt32NoTag(abilityGroupIdListMemoizedSerializedSize);
-      }
-      for (int i = 0; i < abilityGroupIdList_.size(); i++) {
-        output.writeUInt32NoTag(abilityGroupIdList_.getInt(i));
-      }
-      if (getGalleryIdListList().size() > 0) {
-        output.writeUInt32NoTag(42);
-        output.writeUInt32NoTag(galleryIdListMemoizedSerializedSize);
-      }
-      for (int i = 0; i < galleryIdList_.size(); i++) {
-        output.writeUInt32NoTag(galleryIdList_.getInt(i));
-      }
       if (galleryStageIndex_ != 0) {
-        output.writeUInt32(6, galleryStageIndex_);
+        output.writeUInt32(7, galleryStageIndex_);
       }
       if (previewStageIndex_ != 0) {
-        output.writeUInt32(8, previewStageIndex_);
+        output.writeUInt32(9, previewStageIndex_);
       }
       if (previewDisplayDuration_ != 0) {
-        output.writeUInt32(12, previewDisplayDuration_);
+        output.writeUInt32(11, previewDisplayDuration_);
+      }
+      if (getUnk3300IJBKKLGOMIEList().size() > 0) {
+        output.writeUInt32NoTag(114);
+        output.writeUInt32NoTag(unk3300IJBKKLGOMIEMemoizedSerializedSize);
+      }
+      for (int i = 0; i < unk3300IJBKKLGOMIE_.size(); i++) {
+        output.writeUInt32NoTag(unk3300IJBKKLGOMIE_.getInt(i));
+      }
+      if (getUnk3300NNPMBFGJELLList().size() > 0) {
+        output.writeUInt32NoTag(122);
+        output.writeUInt32NoTag(unk3300NNPMBFGJELLMemoizedSerializedSize);
+      }
+      for (int i = 0; i < unk3300NNPMBFGJELL_.size(); i++) {
+        output.writeUInt32NoTag(unk3300NNPMBFGJELL_.getInt(i));
       }
       unknownFields.writeTo(output);
     }
@@ -349,45 +349,45 @@ public final class InBattleFleurFairInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      {
-        int dataSize = 0;
-        for (int i = 0; i < abilityGroupIdList_.size(); i++) {
-          dataSize += com.google.protobuf.CodedOutputStream
-            .computeUInt32SizeNoTag(abilityGroupIdList_.getInt(i));
-        }
-        size += dataSize;
-        if (!getAbilityGroupIdListList().isEmpty()) {
-          size += 1;
-          size += com.google.protobuf.CodedOutputStream
-              .computeInt32SizeNoTag(dataSize);
-        }
-        abilityGroupIdListMemoizedSerializedSize = dataSize;
-      }
-      {
-        int dataSize = 0;
-        for (int i = 0; i < galleryIdList_.size(); i++) {
-          dataSize += com.google.protobuf.CodedOutputStream
-            .computeUInt32SizeNoTag(galleryIdList_.getInt(i));
-        }
-        size += dataSize;
-        if (!getGalleryIdListList().isEmpty()) {
-          size += 1;
-          size += com.google.protobuf.CodedOutputStream
-              .computeInt32SizeNoTag(dataSize);
-        }
-        galleryIdListMemoizedSerializedSize = dataSize;
-      }
       if (galleryStageIndex_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, galleryStageIndex_);
+          .computeUInt32Size(7, galleryStageIndex_);
       }
       if (previewStageIndex_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, previewStageIndex_);
+          .computeUInt32Size(9, previewStageIndex_);
       }
       if (previewDisplayDuration_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, previewDisplayDuration_);
+          .computeUInt32Size(11, previewDisplayDuration_);
+      }
+      {
+        int dataSize = 0;
+        for (int i = 0; i < unk3300IJBKKLGOMIE_.size(); i++) {
+          dataSize += com.google.protobuf.CodedOutputStream
+            .computeUInt32SizeNoTag(unk3300IJBKKLGOMIE_.getInt(i));
+        }
+        size += dataSize;
+        if (!getUnk3300IJBKKLGOMIEList().isEmpty()) {
+          size += 1;
+          size += com.google.protobuf.CodedOutputStream
+              .computeInt32SizeNoTag(dataSize);
+        }
+        unk3300IJBKKLGOMIEMemoizedSerializedSize = dataSize;
+      }
+      {
+        int dataSize = 0;
+        for (int i = 0; i < unk3300NNPMBFGJELL_.size(); i++) {
+          dataSize += com.google.protobuf.CodedOutputStream
+            .computeUInt32SizeNoTag(unk3300NNPMBFGJELL_.getInt(i));
+        }
+        size += dataSize;
+        if (!getUnk3300NNPMBFGJELLList().isEmpty()) {
+          size += 1;
+          size += com.google.protobuf.CodedOutputStream
+              .computeInt32SizeNoTag(dataSize);
+        }
+        unk3300NNPMBFGJELLMemoizedSerializedSize = dataSize;
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -404,16 +404,16 @@ public final class InBattleFleurFairInfoOuterClass {
       }
       emu.grasscutter.net.proto.InBattleFleurFairInfoOuterClass.InBattleFleurFairInfo other = (emu.grasscutter.net.proto.InBattleFleurFairInfoOuterClass.InBattleFleurFairInfo) obj;
 
-      if (!getGalleryIdListList()
-          .equals(other.getGalleryIdListList())) return false;
       if (getGalleryStageIndex()
           != other.getGalleryStageIndex()) return false;
-      if (getPreviewStageIndex()
-          != other.getPreviewStageIndex()) return false;
-      if (!getAbilityGroupIdListList()
-          .equals(other.getAbilityGroupIdListList())) return false;
       if (getPreviewDisplayDuration()
           != other.getPreviewDisplayDuration()) return false;
+      if (!getUnk3300NNPMBFGJELLList()
+          .equals(other.getUnk3300NNPMBFGJELLList())) return false;
+      if (getPreviewStageIndex()
+          != other.getPreviewStageIndex()) return false;
+      if (!getUnk3300IJBKKLGOMIEList()
+          .equals(other.getUnk3300IJBKKLGOMIEList())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -425,20 +425,20 @@ public final class InBattleFleurFairInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (getGalleryIdListCount() > 0) {
-        hash = (37 * hash) + GALLERY_ID_LIST_FIELD_NUMBER;
-        hash = (53 * hash) + getGalleryIdListList().hashCode();
-      }
       hash = (37 * hash) + GALLERY_STAGE_INDEX_FIELD_NUMBER;
       hash = (53 * hash) + getGalleryStageIndex();
-      hash = (37 * hash) + PREVIEW_STAGE_INDEX_FIELD_NUMBER;
-      hash = (53 * hash) + getPreviewStageIndex();
-      if (getAbilityGroupIdListCount() > 0) {
-        hash = (37 * hash) + ABILITY_GROUP_ID_LIST_FIELD_NUMBER;
-        hash = (53 * hash) + getAbilityGroupIdListList().hashCode();
-      }
       hash = (37 * hash) + PREVIEW_DISPLAY_DURATION_FIELD_NUMBER;
       hash = (53 * hash) + getPreviewDisplayDuration();
+      if (getUnk3300NNPMBFGJELLCount() > 0) {
+        hash = (37 * hash) + UNK3300_NNPMBFGJELL_FIELD_NUMBER;
+        hash = (53 * hash) + getUnk3300NNPMBFGJELLList().hashCode();
+      }
+      hash = (37 * hash) + PREVIEW_STAGE_INDEX_FIELD_NUMBER;
+      hash = (53 * hash) + getPreviewStageIndex();
+      if (getUnk3300IJBKKLGOMIECount() > 0) {
+        hash = (37 * hash) + UNK3300_IJBKKLGOMIE_FIELD_NUMBER;
+        hash = (53 * hash) + getUnk3300IJBKKLGOMIEList().hashCode();
+      }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -572,16 +572,16 @@ public final class InBattleFleurFairInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        galleryIdList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000001);
         galleryStageIndex_ = 0;
 
-        previewStageIndex_ = 0;
-
-        abilityGroupIdList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000002);
         previewDisplayDuration_ = 0;
 
+        unk3300NNPMBFGJELL_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000001);
+        previewStageIndex_ = 0;
+
+        unk3300IJBKKLGOMIE_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000002);
         return this;
       }
 
@@ -609,19 +609,19 @@ public final class InBattleFleurFairInfoOuterClass {
       public emu.grasscutter.net.proto.InBattleFleurFairInfoOuterClass.InBattleFleurFairInfo buildPartial() {
         emu.grasscutter.net.proto.InBattleFleurFairInfoOuterClass.InBattleFleurFairInfo result = new emu.grasscutter.net.proto.InBattleFleurFairInfoOuterClass.InBattleFleurFairInfo(this);
         int from_bitField0_ = bitField0_;
+        result.galleryStageIndex_ = galleryStageIndex_;
+        result.previewDisplayDuration_ = previewDisplayDuration_;
         if (((bitField0_ & 0x00000001) != 0)) {
-          galleryIdList_.makeImmutable();
+          unk3300NNPMBFGJELL_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000001);
         }
-        result.galleryIdList_ = galleryIdList_;
-        result.galleryStageIndex_ = galleryStageIndex_;
+        result.unk3300NNPMBFGJELL_ = unk3300NNPMBFGJELL_;
         result.previewStageIndex_ = previewStageIndex_;
         if (((bitField0_ & 0x00000002) != 0)) {
-          abilityGroupIdList_.makeImmutable();
+          unk3300IJBKKLGOMIE_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000002);
         }
-        result.abilityGroupIdList_ = abilityGroupIdList_;
-        result.previewDisplayDuration_ = previewDisplayDuration_;
+        result.unk3300IJBKKLGOMIE_ = unk3300IJBKKLGOMIE_;
         onBuilt();
         return result;
       }
@@ -670,34 +670,34 @@ public final class InBattleFleurFairInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.InBattleFleurFairInfoOuterClass.InBattleFleurFairInfo other) {
         if (other == emu.grasscutter.net.proto.InBattleFleurFairInfoOuterClass.InBattleFleurFairInfo.getDefaultInstance()) return this;
-        if (!other.galleryIdList_.isEmpty()) {
-          if (galleryIdList_.isEmpty()) {
-            galleryIdList_ = other.galleryIdList_;
-            bitField0_ = (bitField0_ & ~0x00000001);
-          } else {
-            ensureGalleryIdListIsMutable();
-            galleryIdList_.addAll(other.galleryIdList_);
-          }
-          onChanged();
-        }
         if (other.getGalleryStageIndex() != 0) {
           setGalleryStageIndex(other.getGalleryStageIndex());
+        }
+        if (other.getPreviewDisplayDuration() != 0) {
+          setPreviewDisplayDuration(other.getPreviewDisplayDuration());
+        }
+        if (!other.unk3300NNPMBFGJELL_.isEmpty()) {
+          if (unk3300NNPMBFGJELL_.isEmpty()) {
+            unk3300NNPMBFGJELL_ = other.unk3300NNPMBFGJELL_;
+            bitField0_ = (bitField0_ & ~0x00000001);
+          } else {
+            ensureUnk3300NNPMBFGJELLIsMutable();
+            unk3300NNPMBFGJELL_.addAll(other.unk3300NNPMBFGJELL_);
+          }
+          onChanged();
         }
         if (other.getPreviewStageIndex() != 0) {
           setPreviewStageIndex(other.getPreviewStageIndex());
         }
-        if (!other.abilityGroupIdList_.isEmpty()) {
-          if (abilityGroupIdList_.isEmpty()) {
-            abilityGroupIdList_ = other.abilityGroupIdList_;
+        if (!other.unk3300IJBKKLGOMIE_.isEmpty()) {
+          if (unk3300IJBKKLGOMIE_.isEmpty()) {
+            unk3300IJBKKLGOMIE_ = other.unk3300IJBKKLGOMIE_;
             bitField0_ = (bitField0_ & ~0x00000002);
           } else {
-            ensureAbilityGroupIdListIsMutable();
-            abilityGroupIdList_.addAll(other.abilityGroupIdList_);
+            ensureUnk3300IJBKKLGOMIEIsMutable();
+            unk3300IJBKKLGOMIE_.addAll(other.unk3300IJBKKLGOMIE_);
           }
           onChanged();
-        }
-        if (other.getPreviewDisplayDuration() != 0) {
-          setPreviewDisplayDuration(other.getPreviewDisplayDuration());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -729,88 +729,9 @@ public final class InBattleFleurFairInfoOuterClass {
       }
       private int bitField0_;
 
-      private com.google.protobuf.Internal.IntList galleryIdList_ = emptyIntList();
-      private void ensureGalleryIdListIsMutable() {
-        if (!((bitField0_ & 0x00000001) != 0)) {
-          galleryIdList_ = mutableCopy(galleryIdList_);
-          bitField0_ |= 0x00000001;
-         }
-      }
-      /**
-       * <code>repeated uint32 gallery_id_list = 5;</code>
-       * @return A list containing the galleryIdList.
-       */
-      public java.util.List<java.lang.Integer>
-          getGalleryIdListList() {
-        return ((bitField0_ & 0x00000001) != 0) ?
-                 java.util.Collections.unmodifiableList(galleryIdList_) : galleryIdList_;
-      }
-      /**
-       * <code>repeated uint32 gallery_id_list = 5;</code>
-       * @return The count of galleryIdList.
-       */
-      public int getGalleryIdListCount() {
-        return galleryIdList_.size();
-      }
-      /**
-       * <code>repeated uint32 gallery_id_list = 5;</code>
-       * @param index The index of the element to return.
-       * @return The galleryIdList at the given index.
-       */
-      public int getGalleryIdList(int index) {
-        return galleryIdList_.getInt(index);
-      }
-      /**
-       * <code>repeated uint32 gallery_id_list = 5;</code>
-       * @param index The index to set the value at.
-       * @param value The galleryIdList to set.
-       * @return This builder for chaining.
-       */
-      public Builder setGalleryIdList(
-          int index, int value) {
-        ensureGalleryIdListIsMutable();
-        galleryIdList_.setInt(index, value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 gallery_id_list = 5;</code>
-       * @param value The galleryIdList to add.
-       * @return This builder for chaining.
-       */
-      public Builder addGalleryIdList(int value) {
-        ensureGalleryIdListIsMutable();
-        galleryIdList_.addInt(value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 gallery_id_list = 5;</code>
-       * @param values The galleryIdList to add.
-       * @return This builder for chaining.
-       */
-      public Builder addAllGalleryIdList(
-          java.lang.Iterable<? extends java.lang.Integer> values) {
-        ensureGalleryIdListIsMutable();
-        com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, galleryIdList_);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 gallery_id_list = 5;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearGalleryIdList() {
-        galleryIdList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000001);
-        onChanged();
-        return this;
-      }
-
       private int galleryStageIndex_ ;
       /**
-       * <code>uint32 gallery_stage_index = 6;</code>
+       * <code>uint32 gallery_stage_index = 7;</code>
        * @return The galleryStageIndex.
        */
       @java.lang.Override
@@ -818,7 +739,7 @@ public final class InBattleFleurFairInfoOuterClass {
         return galleryStageIndex_;
       }
       /**
-       * <code>uint32 gallery_stage_index = 6;</code>
+       * <code>uint32 gallery_stage_index = 7;</code>
        * @param value The galleryStageIndex to set.
        * @return This builder for chaining.
        */
@@ -829,7 +750,7 @@ public final class InBattleFleurFairInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 gallery_stage_index = 6;</code>
+       * <code>uint32 gallery_stage_index = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearGalleryStageIndex() {
@@ -839,119 +760,9 @@ public final class InBattleFleurFairInfoOuterClass {
         return this;
       }
 
-      private int previewStageIndex_ ;
-      /**
-       * <code>uint32 preview_stage_index = 8;</code>
-       * @return The previewStageIndex.
-       */
-      @java.lang.Override
-      public int getPreviewStageIndex() {
-        return previewStageIndex_;
-      }
-      /**
-       * <code>uint32 preview_stage_index = 8;</code>
-       * @param value The previewStageIndex to set.
-       * @return This builder for chaining.
-       */
-      public Builder setPreviewStageIndex(int value) {
-        
-        previewStageIndex_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 preview_stage_index = 8;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearPreviewStageIndex() {
-        
-        previewStageIndex_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private com.google.protobuf.Internal.IntList abilityGroupIdList_ = emptyIntList();
-      private void ensureAbilityGroupIdListIsMutable() {
-        if (!((bitField0_ & 0x00000002) != 0)) {
-          abilityGroupIdList_ = mutableCopy(abilityGroupIdList_);
-          bitField0_ |= 0x00000002;
-         }
-      }
-      /**
-       * <code>repeated uint32 ability_group_id_list = 2;</code>
-       * @return A list containing the abilityGroupIdList.
-       */
-      public java.util.List<java.lang.Integer>
-          getAbilityGroupIdListList() {
-        return ((bitField0_ & 0x00000002) != 0) ?
-                 java.util.Collections.unmodifiableList(abilityGroupIdList_) : abilityGroupIdList_;
-      }
-      /**
-       * <code>repeated uint32 ability_group_id_list = 2;</code>
-       * @return The count of abilityGroupIdList.
-       */
-      public int getAbilityGroupIdListCount() {
-        return abilityGroupIdList_.size();
-      }
-      /**
-       * <code>repeated uint32 ability_group_id_list = 2;</code>
-       * @param index The index of the element to return.
-       * @return The abilityGroupIdList at the given index.
-       */
-      public int getAbilityGroupIdList(int index) {
-        return abilityGroupIdList_.getInt(index);
-      }
-      /**
-       * <code>repeated uint32 ability_group_id_list = 2;</code>
-       * @param index The index to set the value at.
-       * @param value The abilityGroupIdList to set.
-       * @return This builder for chaining.
-       */
-      public Builder setAbilityGroupIdList(
-          int index, int value) {
-        ensureAbilityGroupIdListIsMutable();
-        abilityGroupIdList_.setInt(index, value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 ability_group_id_list = 2;</code>
-       * @param value The abilityGroupIdList to add.
-       * @return This builder for chaining.
-       */
-      public Builder addAbilityGroupIdList(int value) {
-        ensureAbilityGroupIdListIsMutable();
-        abilityGroupIdList_.addInt(value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 ability_group_id_list = 2;</code>
-       * @param values The abilityGroupIdList to add.
-       * @return This builder for chaining.
-       */
-      public Builder addAllAbilityGroupIdList(
-          java.lang.Iterable<? extends java.lang.Integer> values) {
-        ensureAbilityGroupIdListIsMutable();
-        com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, abilityGroupIdList_);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 ability_group_id_list = 2;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearAbilityGroupIdList() {
-        abilityGroupIdList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000002);
-        onChanged();
-        return this;
-      }
-
       private int previewDisplayDuration_ ;
       /**
-       * <code>uint32 preview_display_duration = 12;</code>
+       * <code>uint32 preview_display_duration = 11;</code>
        * @return The previewDisplayDuration.
        */
       @java.lang.Override
@@ -959,7 +770,7 @@ public final class InBattleFleurFairInfoOuterClass {
         return previewDisplayDuration_;
       }
       /**
-       * <code>uint32 preview_display_duration = 12;</code>
+       * <code>uint32 preview_display_duration = 11;</code>
        * @param value The previewDisplayDuration to set.
        * @return This builder for chaining.
        */
@@ -970,12 +781,201 @@ public final class InBattleFleurFairInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 preview_display_duration = 12;</code>
+       * <code>uint32 preview_display_duration = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearPreviewDisplayDuration() {
         
         previewDisplayDuration_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private com.google.protobuf.Internal.IntList unk3300NNPMBFGJELL_ = emptyIntList();
+      private void ensureUnk3300NNPMBFGJELLIsMutable() {
+        if (!((bitField0_ & 0x00000001) != 0)) {
+          unk3300NNPMBFGJELL_ = mutableCopy(unk3300NNPMBFGJELL_);
+          bitField0_ |= 0x00000001;
+         }
+      }
+      /**
+       * <code>repeated uint32 Unk3300_NNPMBFGJELL = 15;</code>
+       * @return A list containing the unk3300NNPMBFGJELL.
+       */
+      public java.util.List<java.lang.Integer>
+          getUnk3300NNPMBFGJELLList() {
+        return ((bitField0_ & 0x00000001) != 0) ?
+                 java.util.Collections.unmodifiableList(unk3300NNPMBFGJELL_) : unk3300NNPMBFGJELL_;
+      }
+      /**
+       * <code>repeated uint32 Unk3300_NNPMBFGJELL = 15;</code>
+       * @return The count of unk3300NNPMBFGJELL.
+       */
+      public int getUnk3300NNPMBFGJELLCount() {
+        return unk3300NNPMBFGJELL_.size();
+      }
+      /**
+       * <code>repeated uint32 Unk3300_NNPMBFGJELL = 15;</code>
+       * @param index The index of the element to return.
+       * @return The unk3300NNPMBFGJELL at the given index.
+       */
+      public int getUnk3300NNPMBFGJELL(int index) {
+        return unk3300NNPMBFGJELL_.getInt(index);
+      }
+      /**
+       * <code>repeated uint32 Unk3300_NNPMBFGJELL = 15;</code>
+       * @param index The index to set the value at.
+       * @param value The unk3300NNPMBFGJELL to set.
+       * @return This builder for chaining.
+       */
+      public Builder setUnk3300NNPMBFGJELL(
+          int index, int value) {
+        ensureUnk3300NNPMBFGJELLIsMutable();
+        unk3300NNPMBFGJELL_.setInt(index, value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint32 Unk3300_NNPMBFGJELL = 15;</code>
+       * @param value The unk3300NNPMBFGJELL to add.
+       * @return This builder for chaining.
+       */
+      public Builder addUnk3300NNPMBFGJELL(int value) {
+        ensureUnk3300NNPMBFGJELLIsMutable();
+        unk3300NNPMBFGJELL_.addInt(value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint32 Unk3300_NNPMBFGJELL = 15;</code>
+       * @param values The unk3300NNPMBFGJELL to add.
+       * @return This builder for chaining.
+       */
+      public Builder addAllUnk3300NNPMBFGJELL(
+          java.lang.Iterable<? extends java.lang.Integer> values) {
+        ensureUnk3300NNPMBFGJELLIsMutable();
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, unk3300NNPMBFGJELL_);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint32 Unk3300_NNPMBFGJELL = 15;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearUnk3300NNPMBFGJELL() {
+        unk3300NNPMBFGJELL_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000001);
+        onChanged();
+        return this;
+      }
+
+      private int previewStageIndex_ ;
+      /**
+       * <code>uint32 preview_stage_index = 9;</code>
+       * @return The previewStageIndex.
+       */
+      @java.lang.Override
+      public int getPreviewStageIndex() {
+        return previewStageIndex_;
+      }
+      /**
+       * <code>uint32 preview_stage_index = 9;</code>
+       * @param value The previewStageIndex to set.
+       * @return This builder for chaining.
+       */
+      public Builder setPreviewStageIndex(int value) {
+        
+        previewStageIndex_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 preview_stage_index = 9;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearPreviewStageIndex() {
+        
+        previewStageIndex_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private com.google.protobuf.Internal.IntList unk3300IJBKKLGOMIE_ = emptyIntList();
+      private void ensureUnk3300IJBKKLGOMIEIsMutable() {
+        if (!((bitField0_ & 0x00000002) != 0)) {
+          unk3300IJBKKLGOMIE_ = mutableCopy(unk3300IJBKKLGOMIE_);
+          bitField0_ |= 0x00000002;
+         }
+      }
+      /**
+       * <code>repeated uint32 Unk3300_IJBKKLGOMIE = 14;</code>
+       * @return A list containing the unk3300IJBKKLGOMIE.
+       */
+      public java.util.List<java.lang.Integer>
+          getUnk3300IJBKKLGOMIEList() {
+        return ((bitField0_ & 0x00000002) != 0) ?
+                 java.util.Collections.unmodifiableList(unk3300IJBKKLGOMIE_) : unk3300IJBKKLGOMIE_;
+      }
+      /**
+       * <code>repeated uint32 Unk3300_IJBKKLGOMIE = 14;</code>
+       * @return The count of unk3300IJBKKLGOMIE.
+       */
+      public int getUnk3300IJBKKLGOMIECount() {
+        return unk3300IJBKKLGOMIE_.size();
+      }
+      /**
+       * <code>repeated uint32 Unk3300_IJBKKLGOMIE = 14;</code>
+       * @param index The index of the element to return.
+       * @return The unk3300IJBKKLGOMIE at the given index.
+       */
+      public int getUnk3300IJBKKLGOMIE(int index) {
+        return unk3300IJBKKLGOMIE_.getInt(index);
+      }
+      /**
+       * <code>repeated uint32 Unk3300_IJBKKLGOMIE = 14;</code>
+       * @param index The index to set the value at.
+       * @param value The unk3300IJBKKLGOMIE to set.
+       * @return This builder for chaining.
+       */
+      public Builder setUnk3300IJBKKLGOMIE(
+          int index, int value) {
+        ensureUnk3300IJBKKLGOMIEIsMutable();
+        unk3300IJBKKLGOMIE_.setInt(index, value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint32 Unk3300_IJBKKLGOMIE = 14;</code>
+       * @param value The unk3300IJBKKLGOMIE to add.
+       * @return This builder for chaining.
+       */
+      public Builder addUnk3300IJBKKLGOMIE(int value) {
+        ensureUnk3300IJBKKLGOMIEIsMutable();
+        unk3300IJBKKLGOMIE_.addInt(value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint32 Unk3300_IJBKKLGOMIE = 14;</code>
+       * @param values The unk3300IJBKKLGOMIE to add.
+       * @return This builder for chaining.
+       */
+      public Builder addAllUnk3300IJBKKLGOMIE(
+          java.lang.Iterable<? extends java.lang.Integer> values) {
+        ensureUnk3300IJBKKLGOMIEIsMutable();
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, unk3300IJBKKLGOMIE_);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint32 Unk3300_IJBKKLGOMIE = 14;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearUnk3300IJBKKLGOMIE() {
+        unk3300IJBKKLGOMIE_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000002);
         onChanged();
         return this;
       }
@@ -1046,12 +1046,13 @@ public final class InBattleFleurFairInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\033InBattleFleurFairInfo.proto\"\253\001\n\025InBatt" +
-      "leFleurFairInfo\022\027\n\017gallery_id_list\030\005 \003(\r" +
-      "\022\033\n\023gallery_stage_index\030\006 \001(\r\022\033\n\023preview" +
-      "_stage_index\030\010 \001(\r\022\035\n\025ability_group_id_l" +
-      "ist\030\002 \003(\r\022 \n\030preview_display_duration\030\014 " +
-      "\001(\rB\033\n\031emu.grasscutter.net.protob\006proto3"
+      "\n\033InBattleFleurFairInfo.proto\"\255\001\n\025InBatt" +
+      "leFleurFairInfo\022\033\n\023gallery_stage_index\030\007" +
+      " \001(\r\022 \n\030preview_display_duration\030\013 \001(\r\022\033" +
+      "\n\023Unk3300_NNPMBFGJELL\030\017 \003(\r\022\033\n\023preview_s" +
+      "tage_index\030\t \001(\r\022\033\n\023Unk3300_IJBKKLGOMIE\030" +
+      "\016 \003(\rB\033\n\031emu.grasscutter.net.protob\006prot" +
+      "o3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -1062,7 +1063,7 @@ public final class InBattleFleurFairInfoOuterClass {
     internal_static_InBattleFleurFairInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_InBattleFleurFairInfo_descriptor,
-        new java.lang.String[] { "GalleryIdList", "GalleryStageIndex", "PreviewStageIndex", "AbilityGroupIdList", "PreviewDisplayDuration", });
+        new java.lang.String[] { "GalleryStageIndex", "PreviewDisplayDuration", "Unk3300NNPMBFGJELL", "PreviewStageIndex", "Unk3300IJBKKLGOMIE", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

@@ -19,28 +19,32 @@ public final class RegionSearchChangeRegionNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.RegionSearchChangeRegionNotify.RegionEvent event = 1;</code>
+     * <code>uint32 region_id = 6;</code>
+     * @return The regionId.
+     */
+    int getRegionId();
+
+    /**
+     * <code>.RegionSearchChangeRegionNotify.RegionEvent event = 11;</code>
      * @return The enum numeric value on the wire for event.
      */
     int getEventValue();
     /**
-     * <code>.RegionSearchChangeRegionNotify.RegionEvent event = 1;</code>
+     * <code>.RegionSearchChangeRegionNotify.RegionEvent event = 11;</code>
      * @return The event.
      */
     emu.grasscutter.net.proto.RegionSearchChangeRegionNotifyOuterClass.RegionSearchChangeRegionNotify.RegionEvent getEvent();
-
-    /**
-     * <code>uint32 region_id = 10;</code>
-     * @return The regionId.
-     */
-    int getRegionId();
   }
   /**
    * <pre>
-   * CmdId: 5618
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 5641;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code RegionSearchChangeRegionNotify}
@@ -88,15 +92,15 @@ public final class RegionSearchChangeRegionNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
+            case 48: {
+
+              regionId_ = input.readUInt32();
+              break;
+            }
+            case 88: {
               int rawValue = input.readEnum();
 
               event_ = rawValue;
-              break;
-            }
-            case 80: {
-
-              regionId_ = input.readUInt32();
               break;
             }
             default: {
@@ -248,34 +252,34 @@ public final class RegionSearchChangeRegionNotifyOuterClass {
       // @@protoc_insertion_point(enum_scope:RegionSearchChangeRegionNotify.RegionEvent)
     }
 
-    public static final int EVENT_FIELD_NUMBER = 1;
+    public static final int REGION_ID_FIELD_NUMBER = 6;
+    private int regionId_;
+    /**
+     * <code>uint32 region_id = 6;</code>
+     * @return The regionId.
+     */
+    @java.lang.Override
+    public int getRegionId() {
+      return regionId_;
+    }
+
+    public static final int EVENT_FIELD_NUMBER = 11;
     private int event_;
     /**
-     * <code>.RegionSearchChangeRegionNotify.RegionEvent event = 1;</code>
+     * <code>.RegionSearchChangeRegionNotify.RegionEvent event = 11;</code>
      * @return The enum numeric value on the wire for event.
      */
     @java.lang.Override public int getEventValue() {
       return event_;
     }
     /**
-     * <code>.RegionSearchChangeRegionNotify.RegionEvent event = 1;</code>
+     * <code>.RegionSearchChangeRegionNotify.RegionEvent event = 11;</code>
      * @return The event.
      */
     @java.lang.Override public emu.grasscutter.net.proto.RegionSearchChangeRegionNotifyOuterClass.RegionSearchChangeRegionNotify.RegionEvent getEvent() {
       @SuppressWarnings("deprecation")
       emu.grasscutter.net.proto.RegionSearchChangeRegionNotifyOuterClass.RegionSearchChangeRegionNotify.RegionEvent result = emu.grasscutter.net.proto.RegionSearchChangeRegionNotifyOuterClass.RegionSearchChangeRegionNotify.RegionEvent.valueOf(event_);
       return result == null ? emu.grasscutter.net.proto.RegionSearchChangeRegionNotifyOuterClass.RegionSearchChangeRegionNotify.RegionEvent.UNRECOGNIZED : result;
-    }
-
-    public static final int REGION_ID_FIELD_NUMBER = 10;
-    private int regionId_;
-    /**
-     * <code>uint32 region_id = 10;</code>
-     * @return The regionId.
-     */
-    @java.lang.Override
-    public int getRegionId() {
-      return regionId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -292,11 +296,11 @@ public final class RegionSearchChangeRegionNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (event_ != emu.grasscutter.net.proto.RegionSearchChangeRegionNotifyOuterClass.RegionSearchChangeRegionNotify.RegionEvent.REGION_EVENT_NONE.getNumber()) {
-        output.writeEnum(1, event_);
-      }
       if (regionId_ != 0) {
-        output.writeUInt32(10, regionId_);
+        output.writeUInt32(6, regionId_);
+      }
+      if (event_ != emu.grasscutter.net.proto.RegionSearchChangeRegionNotifyOuterClass.RegionSearchChangeRegionNotify.RegionEvent.REGION_EVENT_NONE.getNumber()) {
+        output.writeEnum(11, event_);
       }
       unknownFields.writeTo(output);
     }
@@ -307,13 +311,13 @@ public final class RegionSearchChangeRegionNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (event_ != emu.grasscutter.net.proto.RegionSearchChangeRegionNotifyOuterClass.RegionSearchChangeRegionNotify.RegionEvent.REGION_EVENT_NONE.getNumber()) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(1, event_);
-      }
       if (regionId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, regionId_);
+          .computeUInt32Size(6, regionId_);
+      }
+      if (event_ != emu.grasscutter.net.proto.RegionSearchChangeRegionNotifyOuterClass.RegionSearchChangeRegionNotify.RegionEvent.REGION_EVENT_NONE.getNumber()) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeEnumSize(11, event_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -330,9 +334,9 @@ public final class RegionSearchChangeRegionNotifyOuterClass {
       }
       emu.grasscutter.net.proto.RegionSearchChangeRegionNotifyOuterClass.RegionSearchChangeRegionNotify other = (emu.grasscutter.net.proto.RegionSearchChangeRegionNotifyOuterClass.RegionSearchChangeRegionNotify) obj;
 
-      if (event_ != other.event_) return false;
       if (getRegionId()
           != other.getRegionId()) return false;
+      if (event_ != other.event_) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -344,10 +348,10 @@ public final class RegionSearchChangeRegionNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + EVENT_FIELD_NUMBER;
-      hash = (53 * hash) + event_;
       hash = (37 * hash) + REGION_ID_FIELD_NUMBER;
       hash = (53 * hash) + getRegionId();
+      hash = (37 * hash) + EVENT_FIELD_NUMBER;
+      hash = (53 * hash) + event_;
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -445,10 +449,14 @@ public final class RegionSearchChangeRegionNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 5618
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 5641;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code RegionSearchChangeRegionNotify}
@@ -488,9 +496,9 @@ public final class RegionSearchChangeRegionNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        event_ = 0;
-
         regionId_ = 0;
+
+        event_ = 0;
 
         return this;
       }
@@ -518,8 +526,8 @@ public final class RegionSearchChangeRegionNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.RegionSearchChangeRegionNotifyOuterClass.RegionSearchChangeRegionNotify buildPartial() {
         emu.grasscutter.net.proto.RegionSearchChangeRegionNotifyOuterClass.RegionSearchChangeRegionNotify result = new emu.grasscutter.net.proto.RegionSearchChangeRegionNotifyOuterClass.RegionSearchChangeRegionNotify(this);
-        result.event_ = event_;
         result.regionId_ = regionId_;
+        result.event_ = event_;
         onBuilt();
         return result;
       }
@@ -568,11 +576,11 @@ public final class RegionSearchChangeRegionNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.RegionSearchChangeRegionNotifyOuterClass.RegionSearchChangeRegionNotify other) {
         if (other == emu.grasscutter.net.proto.RegionSearchChangeRegionNotifyOuterClass.RegionSearchChangeRegionNotify.getDefaultInstance()) return this;
-        if (other.event_ != 0) {
-          setEventValue(other.getEventValue());
-        }
         if (other.getRegionId() != 0) {
           setRegionId(other.getRegionId());
+        }
+        if (other.event_ != 0) {
+          setEventValue(other.getEventValue());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -603,16 +611,47 @@ public final class RegionSearchChangeRegionNotifyOuterClass {
         return this;
       }
 
+      private int regionId_ ;
+      /**
+       * <code>uint32 region_id = 6;</code>
+       * @return The regionId.
+       */
+      @java.lang.Override
+      public int getRegionId() {
+        return regionId_;
+      }
+      /**
+       * <code>uint32 region_id = 6;</code>
+       * @param value The regionId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setRegionId(int value) {
+        
+        regionId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 region_id = 6;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearRegionId() {
+        
+        regionId_ = 0;
+        onChanged();
+        return this;
+      }
+
       private int event_ = 0;
       /**
-       * <code>.RegionSearchChangeRegionNotify.RegionEvent event = 1;</code>
+       * <code>.RegionSearchChangeRegionNotify.RegionEvent event = 11;</code>
        * @return The enum numeric value on the wire for event.
        */
       @java.lang.Override public int getEventValue() {
         return event_;
       }
       /**
-       * <code>.RegionSearchChangeRegionNotify.RegionEvent event = 1;</code>
+       * <code>.RegionSearchChangeRegionNotify.RegionEvent event = 11;</code>
        * @param value The enum numeric value on the wire for event to set.
        * @return This builder for chaining.
        */
@@ -623,7 +662,7 @@ public final class RegionSearchChangeRegionNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.RegionSearchChangeRegionNotify.RegionEvent event = 1;</code>
+       * <code>.RegionSearchChangeRegionNotify.RegionEvent event = 11;</code>
        * @return The event.
        */
       @java.lang.Override
@@ -633,7 +672,7 @@ public final class RegionSearchChangeRegionNotifyOuterClass {
         return result == null ? emu.grasscutter.net.proto.RegionSearchChangeRegionNotifyOuterClass.RegionSearchChangeRegionNotify.RegionEvent.UNRECOGNIZED : result;
       }
       /**
-       * <code>.RegionSearchChangeRegionNotify.RegionEvent event = 1;</code>
+       * <code>.RegionSearchChangeRegionNotify.RegionEvent event = 11;</code>
        * @param value The event to set.
        * @return This builder for chaining.
        */
@@ -647,43 +686,12 @@ public final class RegionSearchChangeRegionNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.RegionSearchChangeRegionNotify.RegionEvent event = 1;</code>
+       * <code>.RegionSearchChangeRegionNotify.RegionEvent event = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearEvent() {
         
         event_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int regionId_ ;
-      /**
-       * <code>uint32 region_id = 10;</code>
-       * @return The regionId.
-       */
-      @java.lang.Override
-      public int getRegionId() {
-        return regionId_;
-      }
-      /**
-       * <code>uint32 region_id = 10;</code>
-       * @param value The regionId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setRegionId(int value) {
-        
-        regionId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 region_id = 10;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearRegionId() {
-        
-        regionId_ = 0;
         onChanged();
         return this;
       }
@@ -755,9 +763,9 @@ public final class RegionSearchChangeRegionNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n$RegionSearchChangeRegionNotify.proto\"\305" +
-      "\001\n\036RegionSearchChangeRegionNotify\022:\n\005eve" +
-      "nt\030\001 \001(\0162+.RegionSearchChangeRegionNotif" +
-      "y.RegionEvent\022\021\n\tregion_id\030\n \001(\r\"T\n\013Regi" +
+      "\001\n\036RegionSearchChangeRegionNotify\022\021\n\treg" +
+      "ion_id\030\006 \001(\r\022:\n\005event\030\013 \001(\0162+.RegionSear" +
+      "chChangeRegionNotify.RegionEvent\"T\n\013Regi" +
       "onEvent\022\025\n\021REGION_EVENT_NONE\020\000\022\026\n\022REGION" +
       "_EVENT_ENTER\020\001\022\026\n\022REGION_EVENT_LEAVE\020\002B\033" +
       "\n\031emu.grasscutter.net.protob\006proto3"
@@ -771,7 +779,7 @@ public final class RegionSearchChangeRegionNotifyOuterClass {
     internal_static_RegionSearchChangeRegionNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_RegionSearchChangeRegionNotify_descriptor,
-        new java.lang.String[] { "Event", "RegionId", });
+        new java.lang.String[] { "RegionId", "Event", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

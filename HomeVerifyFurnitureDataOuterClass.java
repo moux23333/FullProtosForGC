@@ -19,33 +19,33 @@ public final class HomeVerifyFurnitureDataOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated uint32 type = 7;</code>
+     * <code>repeated uint32 type = 12;</code>
      * @return A list containing the type.
      */
     java.util.List<java.lang.Integer> getTypeList();
     /**
-     * <code>repeated uint32 type = 7;</code>
+     * <code>repeated uint32 type = 12;</code>
      * @return The count of type.
      */
     int getTypeCount();
     /**
-     * <code>repeated uint32 type = 7;</code>
+     * <code>repeated uint32 type = 12;</code>
      * @param index The index of the element to return.
      * @return The type at the given index.
      */
     int getType(int index);
 
     /**
-     * <code>uint32 id = 5;</code>
-     * @return The id.
-     */
-    int getId();
-
-    /**
-     * <code>uint32 num = 9;</code>
+     * <code>uint32 num = 7;</code>
      * @return The num.
      */
     int getNum();
+
+    /**
+     * <code>uint32 id = 13;</code>
+     * @return The id.
+     */
+    int getId();
   }
   /**
    * Protobuf type {@code HomeVerifyFurnitureData}
@@ -94,12 +94,12 @@ public final class HomeVerifyFurnitureDataOuterClass {
             case 0:
               done = true;
               break;
-            case 40: {
+            case 56: {
 
-              id_ = input.readUInt32();
+              num_ = input.readUInt32();
               break;
             }
-            case 56: {
+            case 96: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 type_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
@@ -107,7 +107,7 @@ public final class HomeVerifyFurnitureDataOuterClass {
               type_.addInt(input.readUInt32());
               break;
             }
-            case 58: {
+            case 98: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -120,9 +120,9 @@ public final class HomeVerifyFurnitureDataOuterClass {
               input.popLimit(limit);
               break;
             }
-            case 72: {
+            case 104: {
 
-              num_ = input.readUInt32();
+              id_ = input.readUInt32();
               break;
             }
             default: {
@@ -160,10 +160,10 @@ public final class HomeVerifyFurnitureDataOuterClass {
               emu.grasscutter.net.proto.HomeVerifyFurnitureDataOuterClass.HomeVerifyFurnitureData.class, emu.grasscutter.net.proto.HomeVerifyFurnitureDataOuterClass.HomeVerifyFurnitureData.Builder.class);
     }
 
-    public static final int TYPE_FIELD_NUMBER = 7;
+    public static final int TYPE_FIELD_NUMBER = 12;
     private com.google.protobuf.Internal.IntList type_;
     /**
-     * <code>repeated uint32 type = 7;</code>
+     * <code>repeated uint32 type = 12;</code>
      * @return A list containing the type.
      */
     @java.lang.Override
@@ -172,14 +172,14 @@ public final class HomeVerifyFurnitureDataOuterClass {
       return type_;
     }
     /**
-     * <code>repeated uint32 type = 7;</code>
+     * <code>repeated uint32 type = 12;</code>
      * @return The count of type.
      */
     public int getTypeCount() {
       return type_.size();
     }
     /**
-     * <code>repeated uint32 type = 7;</code>
+     * <code>repeated uint32 type = 12;</code>
      * @param index The index of the element to return.
      * @return The type at the given index.
      */
@@ -188,26 +188,26 @@ public final class HomeVerifyFurnitureDataOuterClass {
     }
     private int typeMemoizedSerializedSize = -1;
 
-    public static final int ID_FIELD_NUMBER = 5;
-    private int id_;
-    /**
-     * <code>uint32 id = 5;</code>
-     * @return The id.
-     */
-    @java.lang.Override
-    public int getId() {
-      return id_;
-    }
-
-    public static final int NUM_FIELD_NUMBER = 9;
+    public static final int NUM_FIELD_NUMBER = 7;
     private int num_;
     /**
-     * <code>uint32 num = 9;</code>
+     * <code>uint32 num = 7;</code>
      * @return The num.
      */
     @java.lang.Override
     public int getNum() {
       return num_;
+    }
+
+    public static final int ID_FIELD_NUMBER = 13;
+    private int id_;
+    /**
+     * <code>uint32 id = 13;</code>
+     * @return The id.
+     */
+    @java.lang.Override
+    public int getId() {
+      return id_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -225,18 +225,18 @@ public final class HomeVerifyFurnitureDataOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      if (id_ != 0) {
-        output.writeUInt32(5, id_);
+      if (num_ != 0) {
+        output.writeUInt32(7, num_);
       }
       if (getTypeList().size() > 0) {
-        output.writeUInt32NoTag(58);
+        output.writeUInt32NoTag(98);
         output.writeUInt32NoTag(typeMemoizedSerializedSize);
       }
       for (int i = 0; i < type_.size(); i++) {
         output.writeUInt32NoTag(type_.getInt(i));
       }
-      if (num_ != 0) {
-        output.writeUInt32(9, num_);
+      if (id_ != 0) {
+        output.writeUInt32(13, id_);
       }
       unknownFields.writeTo(output);
     }
@@ -247,9 +247,9 @@ public final class HomeVerifyFurnitureDataOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (id_ != 0) {
+      if (num_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, id_);
+          .computeUInt32Size(7, num_);
       }
       {
         int dataSize = 0;
@@ -265,9 +265,9 @@ public final class HomeVerifyFurnitureDataOuterClass {
         }
         typeMemoizedSerializedSize = dataSize;
       }
-      if (num_ != 0) {
+      if (id_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, num_);
+          .computeUInt32Size(13, id_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -286,10 +286,10 @@ public final class HomeVerifyFurnitureDataOuterClass {
 
       if (!getTypeList()
           .equals(other.getTypeList())) return false;
-      if (getId()
-          != other.getId()) return false;
       if (getNum()
           != other.getNum()) return false;
+      if (getId()
+          != other.getId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -305,10 +305,10 @@ public final class HomeVerifyFurnitureDataOuterClass {
         hash = (37 * hash) + TYPE_FIELD_NUMBER;
         hash = (53 * hash) + getTypeList().hashCode();
       }
-      hash = (37 * hash) + ID_FIELD_NUMBER;
-      hash = (53 * hash) + getId();
       hash = (37 * hash) + NUM_FIELD_NUMBER;
       hash = (53 * hash) + getNum();
+      hash = (37 * hash) + ID_FIELD_NUMBER;
+      hash = (53 * hash) + getId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -444,9 +444,9 @@ public final class HomeVerifyFurnitureDataOuterClass {
         super.clear();
         type_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
-        id_ = 0;
-
         num_ = 0;
+
+        id_ = 0;
 
         return this;
       }
@@ -480,8 +480,8 @@ public final class HomeVerifyFurnitureDataOuterClass {
           bitField0_ = (bitField0_ & ~0x00000001);
         }
         result.type_ = type_;
-        result.id_ = id_;
         result.num_ = num_;
+        result.id_ = id_;
         onBuilt();
         return result;
       }
@@ -540,11 +540,11 @@ public final class HomeVerifyFurnitureDataOuterClass {
           }
           onChanged();
         }
-        if (other.getId() != 0) {
-          setId(other.getId());
-        }
         if (other.getNum() != 0) {
           setNum(other.getNum());
+        }
+        if (other.getId() != 0) {
+          setId(other.getId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -584,7 +584,7 @@ public final class HomeVerifyFurnitureDataOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 type = 7;</code>
+       * <code>repeated uint32 type = 12;</code>
        * @return A list containing the type.
        */
       public java.util.List<java.lang.Integer>
@@ -593,14 +593,14 @@ public final class HomeVerifyFurnitureDataOuterClass {
                  java.util.Collections.unmodifiableList(type_) : type_;
       }
       /**
-       * <code>repeated uint32 type = 7;</code>
+       * <code>repeated uint32 type = 12;</code>
        * @return The count of type.
        */
       public int getTypeCount() {
         return type_.size();
       }
       /**
-       * <code>repeated uint32 type = 7;</code>
+       * <code>repeated uint32 type = 12;</code>
        * @param index The index of the element to return.
        * @return The type at the given index.
        */
@@ -608,7 +608,7 @@ public final class HomeVerifyFurnitureDataOuterClass {
         return type_.getInt(index);
       }
       /**
-       * <code>repeated uint32 type = 7;</code>
+       * <code>repeated uint32 type = 12;</code>
        * @param index The index to set the value at.
        * @param value The type to set.
        * @return This builder for chaining.
@@ -621,7 +621,7 @@ public final class HomeVerifyFurnitureDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 type = 7;</code>
+       * <code>repeated uint32 type = 12;</code>
        * @param value The type to add.
        * @return This builder for chaining.
        */
@@ -632,7 +632,7 @@ public final class HomeVerifyFurnitureDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 type = 7;</code>
+       * <code>repeated uint32 type = 12;</code>
        * @param values The type to add.
        * @return This builder for chaining.
        */
@@ -645,7 +645,7 @@ public final class HomeVerifyFurnitureDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 type = 7;</code>
+       * <code>repeated uint32 type = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearType() {
@@ -655,40 +655,9 @@ public final class HomeVerifyFurnitureDataOuterClass {
         return this;
       }
 
-      private int id_ ;
-      /**
-       * <code>uint32 id = 5;</code>
-       * @return The id.
-       */
-      @java.lang.Override
-      public int getId() {
-        return id_;
-      }
-      /**
-       * <code>uint32 id = 5;</code>
-       * @param value The id to set.
-       * @return This builder for chaining.
-       */
-      public Builder setId(int value) {
-        
-        id_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 id = 5;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearId() {
-        
-        id_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int num_ ;
       /**
-       * <code>uint32 num = 9;</code>
+       * <code>uint32 num = 7;</code>
        * @return The num.
        */
       @java.lang.Override
@@ -696,7 +665,7 @@ public final class HomeVerifyFurnitureDataOuterClass {
         return num_;
       }
       /**
-       * <code>uint32 num = 9;</code>
+       * <code>uint32 num = 7;</code>
        * @param value The num to set.
        * @return This builder for chaining.
        */
@@ -707,12 +676,43 @@ public final class HomeVerifyFurnitureDataOuterClass {
         return this;
       }
       /**
-       * <code>uint32 num = 9;</code>
+       * <code>uint32 num = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearNum() {
         
         num_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int id_ ;
+      /**
+       * <code>uint32 id = 13;</code>
+       * @return The id.
+       */
+      @java.lang.Override
+      public int getId() {
+        return id_;
+      }
+      /**
+       * <code>uint32 id = 13;</code>
+       * @param value The id to set.
+       * @return This builder for chaining.
+       */
+      public Builder setId(int value) {
+        
+        id_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 id = 13;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearId() {
+        
+        id_ = 0;
         onChanged();
         return this;
       }
@@ -784,8 +784,8 @@ public final class HomeVerifyFurnitureDataOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\035HomeVerifyFurnitureData.proto\"@\n\027HomeV" +
-      "erifyFurnitureData\022\014\n\004type\030\007 \003(\r\022\n\n\002id\030\005" +
-      " \001(\r\022\013\n\003num\030\t \001(\rB\033\n\031emu.grasscutter.net" +
+      "erifyFurnitureData\022\014\n\004type\030\014 \003(\r\022\013\n\003num\030" +
+      "\007 \001(\r\022\n\n\002id\030\r \001(\rB\033\n\031emu.grasscutter.net" +
       ".protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -797,7 +797,7 @@ public final class HomeVerifyFurnitureDataOuterClass {
     internal_static_HomeVerifyFurnitureData_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_HomeVerifyFurnitureData_descriptor,
-        new java.lang.String[] { "Type", "Id", "Num", });
+        new java.lang.String[] { "Type", "Num", "Id", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

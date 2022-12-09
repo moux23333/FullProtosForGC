@@ -19,28 +19,32 @@ public final class DraftGuestReplyInviteNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 draft_id = 5;</code>
-     * @return The draftId.
-     */
-    int getDraftId();
-
-    /**
-     * <code>bool is_agree = 9;</code>
+     * <code>bool is_agree = 1;</code>
      * @return The isAgree.
      */
     boolean getIsAgree();
 
     /**
-     * <code>uint32 guest_uid = 10;</code>
+     * <code>uint32 guest_uid = 13;</code>
      * @return The guestUid.
      */
     int getGuestUid();
+
+    /**
+     * <code>uint32 draft_id = 2;</code>
+     * @return The draftId.
+     */
+    int getDraftId();
   }
   /**
    * <pre>
-   * CmdId: 5490
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 5447;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code DraftGuestReplyInviteNotify}
@@ -87,17 +91,17 @@ public final class DraftGuestReplyInviteNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 40: {
-
-              draftId_ = input.readUInt32();
-              break;
-            }
-            case 72: {
+            case 8: {
 
               isAgree_ = input.readBool();
               break;
             }
-            case 80: {
+            case 16: {
+
+              draftId_ = input.readUInt32();
+              break;
+            }
+            case 104: {
 
               guestUid_ = input.readUInt32();
               break;
@@ -134,21 +138,10 @@ public final class DraftGuestReplyInviteNotifyOuterClass {
               emu.grasscutter.net.proto.DraftGuestReplyInviteNotifyOuterClass.DraftGuestReplyInviteNotify.class, emu.grasscutter.net.proto.DraftGuestReplyInviteNotifyOuterClass.DraftGuestReplyInviteNotify.Builder.class);
     }
 
-    public static final int DRAFT_ID_FIELD_NUMBER = 5;
-    private int draftId_;
-    /**
-     * <code>uint32 draft_id = 5;</code>
-     * @return The draftId.
-     */
-    @java.lang.Override
-    public int getDraftId() {
-      return draftId_;
-    }
-
-    public static final int IS_AGREE_FIELD_NUMBER = 9;
+    public static final int IS_AGREE_FIELD_NUMBER = 1;
     private boolean isAgree_;
     /**
-     * <code>bool is_agree = 9;</code>
+     * <code>bool is_agree = 1;</code>
      * @return The isAgree.
      */
     @java.lang.Override
@@ -156,15 +149,26 @@ public final class DraftGuestReplyInviteNotifyOuterClass {
       return isAgree_;
     }
 
-    public static final int GUEST_UID_FIELD_NUMBER = 10;
+    public static final int GUEST_UID_FIELD_NUMBER = 13;
     private int guestUid_;
     /**
-     * <code>uint32 guest_uid = 10;</code>
+     * <code>uint32 guest_uid = 13;</code>
      * @return The guestUid.
      */
     @java.lang.Override
     public int getGuestUid() {
       return guestUid_;
+    }
+
+    public static final int DRAFT_ID_FIELD_NUMBER = 2;
+    private int draftId_;
+    /**
+     * <code>uint32 draft_id = 2;</code>
+     * @return The draftId.
+     */
+    @java.lang.Override
+    public int getDraftId() {
+      return draftId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -181,14 +185,14 @@ public final class DraftGuestReplyInviteNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (draftId_ != 0) {
-        output.writeUInt32(5, draftId_);
-      }
       if (isAgree_ != false) {
-        output.writeBool(9, isAgree_);
+        output.writeBool(1, isAgree_);
+      }
+      if (draftId_ != 0) {
+        output.writeUInt32(2, draftId_);
       }
       if (guestUid_ != 0) {
-        output.writeUInt32(10, guestUid_);
+        output.writeUInt32(13, guestUid_);
       }
       unknownFields.writeTo(output);
     }
@@ -199,17 +203,17 @@ public final class DraftGuestReplyInviteNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (draftId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, draftId_);
-      }
       if (isAgree_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(9, isAgree_);
+          .computeBoolSize(1, isAgree_);
+      }
+      if (draftId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(2, draftId_);
       }
       if (guestUid_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, guestUid_);
+          .computeUInt32Size(13, guestUid_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -226,12 +230,12 @@ public final class DraftGuestReplyInviteNotifyOuterClass {
       }
       emu.grasscutter.net.proto.DraftGuestReplyInviteNotifyOuterClass.DraftGuestReplyInviteNotify other = (emu.grasscutter.net.proto.DraftGuestReplyInviteNotifyOuterClass.DraftGuestReplyInviteNotify) obj;
 
-      if (getDraftId()
-          != other.getDraftId()) return false;
       if (getIsAgree()
           != other.getIsAgree()) return false;
       if (getGuestUid()
           != other.getGuestUid()) return false;
+      if (getDraftId()
+          != other.getDraftId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -243,13 +247,13 @@ public final class DraftGuestReplyInviteNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + DRAFT_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getDraftId();
       hash = (37 * hash) + IS_AGREE_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsAgree());
       hash = (37 * hash) + GUEST_UID_FIELD_NUMBER;
       hash = (53 * hash) + getGuestUid();
+      hash = (37 * hash) + DRAFT_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getDraftId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -347,9 +351,13 @@ public final class DraftGuestReplyInviteNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 5490
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 5447;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code DraftGuestReplyInviteNotify}
@@ -389,11 +397,11 @@ public final class DraftGuestReplyInviteNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        draftId_ = 0;
-
         isAgree_ = false;
 
         guestUid_ = 0;
+
+        draftId_ = 0;
 
         return this;
       }
@@ -421,9 +429,9 @@ public final class DraftGuestReplyInviteNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.DraftGuestReplyInviteNotifyOuterClass.DraftGuestReplyInviteNotify buildPartial() {
         emu.grasscutter.net.proto.DraftGuestReplyInviteNotifyOuterClass.DraftGuestReplyInviteNotify result = new emu.grasscutter.net.proto.DraftGuestReplyInviteNotifyOuterClass.DraftGuestReplyInviteNotify(this);
-        result.draftId_ = draftId_;
         result.isAgree_ = isAgree_;
         result.guestUid_ = guestUid_;
+        result.draftId_ = draftId_;
         onBuilt();
         return result;
       }
@@ -472,14 +480,14 @@ public final class DraftGuestReplyInviteNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.DraftGuestReplyInviteNotifyOuterClass.DraftGuestReplyInviteNotify other) {
         if (other == emu.grasscutter.net.proto.DraftGuestReplyInviteNotifyOuterClass.DraftGuestReplyInviteNotify.getDefaultInstance()) return this;
-        if (other.getDraftId() != 0) {
-          setDraftId(other.getDraftId());
-        }
         if (other.getIsAgree() != false) {
           setIsAgree(other.getIsAgree());
         }
         if (other.getGuestUid() != 0) {
           setGuestUid(other.getGuestUid());
+        }
+        if (other.getDraftId() != 0) {
+          setDraftId(other.getDraftId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -510,40 +518,9 @@ public final class DraftGuestReplyInviteNotifyOuterClass {
         return this;
       }
 
-      private int draftId_ ;
-      /**
-       * <code>uint32 draft_id = 5;</code>
-       * @return The draftId.
-       */
-      @java.lang.Override
-      public int getDraftId() {
-        return draftId_;
-      }
-      /**
-       * <code>uint32 draft_id = 5;</code>
-       * @param value The draftId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setDraftId(int value) {
-        
-        draftId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 draft_id = 5;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearDraftId() {
-        
-        draftId_ = 0;
-        onChanged();
-        return this;
-      }
-
       private boolean isAgree_ ;
       /**
-       * <code>bool is_agree = 9;</code>
+       * <code>bool is_agree = 1;</code>
        * @return The isAgree.
        */
       @java.lang.Override
@@ -551,7 +528,7 @@ public final class DraftGuestReplyInviteNotifyOuterClass {
         return isAgree_;
       }
       /**
-       * <code>bool is_agree = 9;</code>
+       * <code>bool is_agree = 1;</code>
        * @param value The isAgree to set.
        * @return This builder for chaining.
        */
@@ -562,7 +539,7 @@ public final class DraftGuestReplyInviteNotifyOuterClass {
         return this;
       }
       /**
-       * <code>bool is_agree = 9;</code>
+       * <code>bool is_agree = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsAgree() {
@@ -574,7 +551,7 @@ public final class DraftGuestReplyInviteNotifyOuterClass {
 
       private int guestUid_ ;
       /**
-       * <code>uint32 guest_uid = 10;</code>
+       * <code>uint32 guest_uid = 13;</code>
        * @return The guestUid.
        */
       @java.lang.Override
@@ -582,7 +559,7 @@ public final class DraftGuestReplyInviteNotifyOuterClass {
         return guestUid_;
       }
       /**
-       * <code>uint32 guest_uid = 10;</code>
+       * <code>uint32 guest_uid = 13;</code>
        * @param value The guestUid to set.
        * @return This builder for chaining.
        */
@@ -593,12 +570,43 @@ public final class DraftGuestReplyInviteNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 guest_uid = 10;</code>
+       * <code>uint32 guest_uid = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearGuestUid() {
         
         guestUid_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int draftId_ ;
+      /**
+       * <code>uint32 draft_id = 2;</code>
+       * @return The draftId.
+       */
+      @java.lang.Override
+      public int getDraftId() {
+        return draftId_;
+      }
+      /**
+       * <code>uint32 draft_id = 2;</code>
+       * @param value The draftId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setDraftId(int value) {
+        
+        draftId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 draft_id = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearDraftId() {
+        
+        draftId_ = 0;
         onChanged();
         return this;
       }
@@ -670,8 +678,8 @@ public final class DraftGuestReplyInviteNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n!DraftGuestReplyInviteNotify.proto\"T\n\033D" +
-      "raftGuestReplyInviteNotify\022\020\n\010draft_id\030\005" +
-      " \001(\r\022\020\n\010is_agree\030\t \001(\010\022\021\n\tguest_uid\030\n \001(" +
+      "raftGuestReplyInviteNotify\022\020\n\010is_agree\030\001" +
+      " \001(\010\022\021\n\tguest_uid\030\r \001(\r\022\020\n\010draft_id\030\002 \001(" +
       "\rB\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -683,7 +691,7 @@ public final class DraftGuestReplyInviteNotifyOuterClass {
     internal_static_DraftGuestReplyInviteNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_DraftGuestReplyInviteNotify_descriptor,
-        new java.lang.String[] { "DraftId", "IsAgree", "GuestUid", });
+        new java.lang.String[] { "IsAgree", "GuestUid", "DraftId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

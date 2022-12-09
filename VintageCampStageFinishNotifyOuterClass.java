@@ -19,16 +19,20 @@ public final class VintageCampStageFinishNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 stage_id = 11;</code>
+     * <code>uint32 stage_id = 3;</code>
      * @return The stageId.
      */
     int getStageId();
   }
   /**
    * <pre>
-   * CmdId: 22830
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 21839;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code VintageCampStageFinishNotify}
@@ -75,7 +79,7 @@ public final class VintageCampStageFinishNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 88: {
+            case 24: {
 
               stageId_ = input.readUInt32();
               break;
@@ -112,10 +116,10 @@ public final class VintageCampStageFinishNotifyOuterClass {
               emu.grasscutter.net.proto.VintageCampStageFinishNotifyOuterClass.VintageCampStageFinishNotify.class, emu.grasscutter.net.proto.VintageCampStageFinishNotifyOuterClass.VintageCampStageFinishNotify.Builder.class);
     }
 
-    public static final int STAGE_ID_FIELD_NUMBER = 11;
+    public static final int STAGE_ID_FIELD_NUMBER = 3;
     private int stageId_;
     /**
-     * <code>uint32 stage_id = 11;</code>
+     * <code>uint32 stage_id = 3;</code>
      * @return The stageId.
      */
     @java.lang.Override
@@ -138,7 +142,7 @@ public final class VintageCampStageFinishNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (stageId_ != 0) {
-        output.writeUInt32(11, stageId_);
+        output.writeUInt32(3, stageId_);
       }
       unknownFields.writeTo(output);
     }
@@ -151,7 +155,7 @@ public final class VintageCampStageFinishNotifyOuterClass {
       size = 0;
       if (stageId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, stageId_);
+          .computeUInt32Size(3, stageId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -280,9 +284,13 @@ public final class VintageCampStageFinishNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 22830
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 21839;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code VintageCampStageFinishNotify}
@@ -433,7 +441,7 @@ public final class VintageCampStageFinishNotifyOuterClass {
 
       private int stageId_ ;
       /**
-       * <code>uint32 stage_id = 11;</code>
+       * <code>uint32 stage_id = 3;</code>
        * @return The stageId.
        */
       @java.lang.Override
@@ -441,7 +449,7 @@ public final class VintageCampStageFinishNotifyOuterClass {
         return stageId_;
       }
       /**
-       * <code>uint32 stage_id = 11;</code>
+       * <code>uint32 stage_id = 3;</code>
        * @param value The stageId to set.
        * @return This builder for chaining.
        */
@@ -452,7 +460,7 @@ public final class VintageCampStageFinishNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 stage_id = 11;</code>
+       * <code>uint32 stage_id = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearStageId() {
@@ -530,7 +538,7 @@ public final class VintageCampStageFinishNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n\"VintageCampStageFinishNotify.proto\"0\n\034" +
       "VintageCampStageFinishNotify\022\020\n\010stage_id" +
-      "\030\013 \001(\rB\033\n\031emu.grasscutter.net.protob\006pro" +
+      "\030\003 \001(\rB\033\n\031emu.grasscutter.net.protob\006pro" +
       "to3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

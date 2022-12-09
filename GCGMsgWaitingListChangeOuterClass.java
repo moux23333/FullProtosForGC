@@ -19,16 +19,16 @@ public final class GCGMsgWaitingListChangeOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 cur_index = 6;</code>
-     * @return The curIndex.
-     */
-    int getCurIndex();
-
-    /**
-     * <code>uint32 controller_id = 4;</code>
+     * <code>uint32 controller_id = 11;</code>
      * @return The controllerId.
      */
     int getControllerId();
+
+    /**
+     * <code>uint32 cur_index = 3;</code>
+     * @return The curIndex.
+     */
+    int getCurIndex();
   }
   /**
    * Protobuf type {@code GCGMsgWaitingListChange}
@@ -75,14 +75,14 @@ public final class GCGMsgWaitingListChangeOuterClass {
             case 0:
               done = true;
               break;
-            case 32: {
-
-              controllerId_ = input.readUInt32();
-              break;
-            }
-            case 48: {
+            case 24: {
 
               curIndex_ = input.readUInt32();
+              break;
+            }
+            case 88: {
+
+              controllerId_ = input.readUInt32();
               break;
             }
             default: {
@@ -117,26 +117,26 @@ public final class GCGMsgWaitingListChangeOuterClass {
               emu.grasscutter.net.proto.GCGMsgWaitingListChangeOuterClass.GCGMsgWaitingListChange.class, emu.grasscutter.net.proto.GCGMsgWaitingListChangeOuterClass.GCGMsgWaitingListChange.Builder.class);
     }
 
-    public static final int CUR_INDEX_FIELD_NUMBER = 6;
-    private int curIndex_;
-    /**
-     * <code>uint32 cur_index = 6;</code>
-     * @return The curIndex.
-     */
-    @java.lang.Override
-    public int getCurIndex() {
-      return curIndex_;
-    }
-
-    public static final int CONTROLLER_ID_FIELD_NUMBER = 4;
+    public static final int CONTROLLER_ID_FIELD_NUMBER = 11;
     private int controllerId_;
     /**
-     * <code>uint32 controller_id = 4;</code>
+     * <code>uint32 controller_id = 11;</code>
      * @return The controllerId.
      */
     @java.lang.Override
     public int getControllerId() {
       return controllerId_;
+    }
+
+    public static final int CUR_INDEX_FIELD_NUMBER = 3;
+    private int curIndex_;
+    /**
+     * <code>uint32 cur_index = 3;</code>
+     * @return The curIndex.
+     */
+    @java.lang.Override
+    public int getCurIndex() {
+      return curIndex_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -153,11 +153,11 @@ public final class GCGMsgWaitingListChangeOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (controllerId_ != 0) {
-        output.writeUInt32(4, controllerId_);
-      }
       if (curIndex_ != 0) {
-        output.writeUInt32(6, curIndex_);
+        output.writeUInt32(3, curIndex_);
+      }
+      if (controllerId_ != 0) {
+        output.writeUInt32(11, controllerId_);
       }
       unknownFields.writeTo(output);
     }
@@ -168,13 +168,13 @@ public final class GCGMsgWaitingListChangeOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (controllerId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, controllerId_);
-      }
       if (curIndex_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, curIndex_);
+          .computeUInt32Size(3, curIndex_);
+      }
+      if (controllerId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(11, controllerId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -191,10 +191,10 @@ public final class GCGMsgWaitingListChangeOuterClass {
       }
       emu.grasscutter.net.proto.GCGMsgWaitingListChangeOuterClass.GCGMsgWaitingListChange other = (emu.grasscutter.net.proto.GCGMsgWaitingListChangeOuterClass.GCGMsgWaitingListChange) obj;
 
-      if (getCurIndex()
-          != other.getCurIndex()) return false;
       if (getControllerId()
           != other.getControllerId()) return false;
+      if (getCurIndex()
+          != other.getCurIndex()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -206,10 +206,10 @@ public final class GCGMsgWaitingListChangeOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + CUR_INDEX_FIELD_NUMBER;
-      hash = (53 * hash) + getCurIndex();
       hash = (37 * hash) + CONTROLLER_ID_FIELD_NUMBER;
       hash = (53 * hash) + getControllerId();
+      hash = (37 * hash) + CUR_INDEX_FIELD_NUMBER;
+      hash = (53 * hash) + getCurIndex();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -343,9 +343,9 @@ public final class GCGMsgWaitingListChangeOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        curIndex_ = 0;
-
         controllerId_ = 0;
+
+        curIndex_ = 0;
 
         return this;
       }
@@ -373,8 +373,8 @@ public final class GCGMsgWaitingListChangeOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.GCGMsgWaitingListChangeOuterClass.GCGMsgWaitingListChange buildPartial() {
         emu.grasscutter.net.proto.GCGMsgWaitingListChangeOuterClass.GCGMsgWaitingListChange result = new emu.grasscutter.net.proto.GCGMsgWaitingListChangeOuterClass.GCGMsgWaitingListChange(this);
-        result.curIndex_ = curIndex_;
         result.controllerId_ = controllerId_;
+        result.curIndex_ = curIndex_;
         onBuilt();
         return result;
       }
@@ -423,11 +423,11 @@ public final class GCGMsgWaitingListChangeOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.GCGMsgWaitingListChangeOuterClass.GCGMsgWaitingListChange other) {
         if (other == emu.grasscutter.net.proto.GCGMsgWaitingListChangeOuterClass.GCGMsgWaitingListChange.getDefaultInstance()) return this;
-        if (other.getCurIndex() != 0) {
-          setCurIndex(other.getCurIndex());
-        }
         if (other.getControllerId() != 0) {
           setControllerId(other.getControllerId());
+        }
+        if (other.getCurIndex() != 0) {
+          setCurIndex(other.getCurIndex());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -458,40 +458,9 @@ public final class GCGMsgWaitingListChangeOuterClass {
         return this;
       }
 
-      private int curIndex_ ;
-      /**
-       * <code>uint32 cur_index = 6;</code>
-       * @return The curIndex.
-       */
-      @java.lang.Override
-      public int getCurIndex() {
-        return curIndex_;
-      }
-      /**
-       * <code>uint32 cur_index = 6;</code>
-       * @param value The curIndex to set.
-       * @return This builder for chaining.
-       */
-      public Builder setCurIndex(int value) {
-        
-        curIndex_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 cur_index = 6;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearCurIndex() {
-        
-        curIndex_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int controllerId_ ;
       /**
-       * <code>uint32 controller_id = 4;</code>
+       * <code>uint32 controller_id = 11;</code>
        * @return The controllerId.
        */
       @java.lang.Override
@@ -499,7 +468,7 @@ public final class GCGMsgWaitingListChangeOuterClass {
         return controllerId_;
       }
       /**
-       * <code>uint32 controller_id = 4;</code>
+       * <code>uint32 controller_id = 11;</code>
        * @param value The controllerId to set.
        * @return This builder for chaining.
        */
@@ -510,12 +479,43 @@ public final class GCGMsgWaitingListChangeOuterClass {
         return this;
       }
       /**
-       * <code>uint32 controller_id = 4;</code>
+       * <code>uint32 controller_id = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearControllerId() {
         
         controllerId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int curIndex_ ;
+      /**
+       * <code>uint32 cur_index = 3;</code>
+       * @return The curIndex.
+       */
+      @java.lang.Override
+      public int getCurIndex() {
+        return curIndex_;
+      }
+      /**
+       * <code>uint32 cur_index = 3;</code>
+       * @param value The curIndex to set.
+       * @return This builder for chaining.
+       */
+      public Builder setCurIndex(int value) {
+        
+        curIndex_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 cur_index = 3;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearCurIndex() {
+        
+        curIndex_ = 0;
         onChanged();
         return this;
       }
@@ -587,8 +587,8 @@ public final class GCGMsgWaitingListChangeOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\035GCGMsgWaitingListChange.proto\"C\n\027GCGMs" +
-      "gWaitingListChange\022\021\n\tcur_index\030\006 \001(\r\022\025\n" +
-      "\rcontroller_id\030\004 \001(\rB\033\n\031emu.grasscutter." +
+      "gWaitingListChange\022\025\n\rcontroller_id\030\013 \001(" +
+      "\r\022\021\n\tcur_index\030\003 \001(\rB\033\n\031emu.grasscutter." +
       "net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -600,7 +600,7 @@ public final class GCGMsgWaitingListChangeOuterClass {
     internal_static_GCGMsgWaitingListChange_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GCGMsgWaitingListChange_descriptor,
-        new java.lang.String[] { "CurIndex", "ControllerId", });
+        new java.lang.String[] { "ControllerId", "CurIndex", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

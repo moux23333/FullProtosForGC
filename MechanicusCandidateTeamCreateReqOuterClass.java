@@ -19,17 +19,21 @@ public final class MechanicusCandidateTeamCreateReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 difficult_level = 6;</code>
+     * <code>uint32 difficult_level = 2;</code>
      * @return The difficultLevel.
      */
     int getDifficultLevel();
   }
   /**
    * <pre>
-   * CmdId: 3981
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 3925;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code MechanicusCandidateTeamCreateReq}
@@ -76,7 +80,7 @@ public final class MechanicusCandidateTeamCreateReqOuterClass {
             case 0:
               done = true;
               break;
-            case 48: {
+            case 16: {
 
               difficultLevel_ = input.readUInt32();
               break;
@@ -113,10 +117,10 @@ public final class MechanicusCandidateTeamCreateReqOuterClass {
               emu.grasscutter.net.proto.MechanicusCandidateTeamCreateReqOuterClass.MechanicusCandidateTeamCreateReq.class, emu.grasscutter.net.proto.MechanicusCandidateTeamCreateReqOuterClass.MechanicusCandidateTeamCreateReq.Builder.class);
     }
 
-    public static final int DIFFICULT_LEVEL_FIELD_NUMBER = 6;
+    public static final int DIFFICULT_LEVEL_FIELD_NUMBER = 2;
     private int difficultLevel_;
     /**
-     * <code>uint32 difficult_level = 6;</code>
+     * <code>uint32 difficult_level = 2;</code>
      * @return The difficultLevel.
      */
     @java.lang.Override
@@ -139,7 +143,7 @@ public final class MechanicusCandidateTeamCreateReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (difficultLevel_ != 0) {
-        output.writeUInt32(6, difficultLevel_);
+        output.writeUInt32(2, difficultLevel_);
       }
       unknownFields.writeTo(output);
     }
@@ -152,7 +156,7 @@ public final class MechanicusCandidateTeamCreateReqOuterClass {
       size = 0;
       if (difficultLevel_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, difficultLevel_);
+          .computeUInt32Size(2, difficultLevel_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -281,10 +285,14 @@ public final class MechanicusCandidateTeamCreateReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 3981
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 3925;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code MechanicusCandidateTeamCreateReq}
@@ -435,7 +443,7 @@ public final class MechanicusCandidateTeamCreateReqOuterClass {
 
       private int difficultLevel_ ;
       /**
-       * <code>uint32 difficult_level = 6;</code>
+       * <code>uint32 difficult_level = 2;</code>
        * @return The difficultLevel.
        */
       @java.lang.Override
@@ -443,7 +451,7 @@ public final class MechanicusCandidateTeamCreateReqOuterClass {
         return difficultLevel_;
       }
       /**
-       * <code>uint32 difficult_level = 6;</code>
+       * <code>uint32 difficult_level = 2;</code>
        * @param value The difficultLevel to set.
        * @return This builder for chaining.
        */
@@ -454,7 +462,7 @@ public final class MechanicusCandidateTeamCreateReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 difficult_level = 6;</code>
+       * <code>uint32 difficult_level = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearDifficultLevel() {
@@ -532,7 +540,7 @@ public final class MechanicusCandidateTeamCreateReqOuterClass {
     java.lang.String[] descriptorData = {
       "\n&MechanicusCandidateTeamCreateReq.proto" +
       "\";\n MechanicusCandidateTeamCreateReq\022\027\n\017" +
-      "difficult_level\030\006 \001(\rB\033\n\031emu.grasscutter" +
+      "difficult_level\030\002 \001(\rB\033\n\031emu.grasscutter" +
       ".net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

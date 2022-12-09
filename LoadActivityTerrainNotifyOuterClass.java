@@ -19,17 +19,21 @@ public final class LoadActivityTerrainNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 activity_id = 3;</code>
+     * <code>uint32 activity_id = 5;</code>
      * @return The activityId.
      */
     int getActivityId();
   }
   /**
    * <pre>
-   * CmdId: 2029
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 2089;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code LoadActivityTerrainNotify}
@@ -76,7 +80,7 @@ public final class LoadActivityTerrainNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 24: {
+            case 40: {
 
               activityId_ = input.readUInt32();
               break;
@@ -113,10 +117,10 @@ public final class LoadActivityTerrainNotifyOuterClass {
               emu.grasscutter.net.proto.LoadActivityTerrainNotifyOuterClass.LoadActivityTerrainNotify.class, emu.grasscutter.net.proto.LoadActivityTerrainNotifyOuterClass.LoadActivityTerrainNotify.Builder.class);
     }
 
-    public static final int ACTIVITY_ID_FIELD_NUMBER = 3;
+    public static final int ACTIVITY_ID_FIELD_NUMBER = 5;
     private int activityId_;
     /**
-     * <code>uint32 activity_id = 3;</code>
+     * <code>uint32 activity_id = 5;</code>
      * @return The activityId.
      */
     @java.lang.Override
@@ -139,7 +143,7 @@ public final class LoadActivityTerrainNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (activityId_ != 0) {
-        output.writeUInt32(3, activityId_);
+        output.writeUInt32(5, activityId_);
       }
       unknownFields.writeTo(output);
     }
@@ -152,7 +156,7 @@ public final class LoadActivityTerrainNotifyOuterClass {
       size = 0;
       if (activityId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, activityId_);
+          .computeUInt32Size(5, activityId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -281,10 +285,14 @@ public final class LoadActivityTerrainNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 2029
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 2089;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code LoadActivityTerrainNotify}
@@ -435,7 +443,7 @@ public final class LoadActivityTerrainNotifyOuterClass {
 
       private int activityId_ ;
       /**
-       * <code>uint32 activity_id = 3;</code>
+       * <code>uint32 activity_id = 5;</code>
        * @return The activityId.
        */
       @java.lang.Override
@@ -443,7 +451,7 @@ public final class LoadActivityTerrainNotifyOuterClass {
         return activityId_;
       }
       /**
-       * <code>uint32 activity_id = 3;</code>
+       * <code>uint32 activity_id = 5;</code>
        * @param value The activityId to set.
        * @return This builder for chaining.
        */
@@ -454,7 +462,7 @@ public final class LoadActivityTerrainNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 activity_id = 3;</code>
+       * <code>uint32 activity_id = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearActivityId() {
@@ -531,7 +539,7 @@ public final class LoadActivityTerrainNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\037LoadActivityTerrainNotify.proto\"0\n\031Loa" +
-      "dActivityTerrainNotify\022\023\n\013activity_id\030\003 " +
+      "dActivityTerrainNotify\022\023\n\013activity_id\030\005 " +
       "\001(\rB\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

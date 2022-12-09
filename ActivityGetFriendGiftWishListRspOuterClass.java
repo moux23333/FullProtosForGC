@@ -19,46 +19,50 @@ public final class ActivityGetFriendGiftWishListRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 6;</code>
-     * @return The retcode.
-     */
-    int getRetcode();
-
-    /**
-     * <code>repeated .ActivityFriendGiftWishData friend_gift_wish_list = 11;</code>
+     * <code>repeated .ActivityFriendGiftWishData friend_gift_wish_list = 12;</code>
      */
     java.util.List<emu.grasscutter.net.proto.ActivityFriendGiftWishDataOuterClass.ActivityFriendGiftWishData> 
         getFriendGiftWishListList();
     /**
-     * <code>repeated .ActivityFriendGiftWishData friend_gift_wish_list = 11;</code>
+     * <code>repeated .ActivityFriendGiftWishData friend_gift_wish_list = 12;</code>
      */
     emu.grasscutter.net.proto.ActivityFriendGiftWishDataOuterClass.ActivityFriendGiftWishData getFriendGiftWishList(int index);
     /**
-     * <code>repeated .ActivityFriendGiftWishData friend_gift_wish_list = 11;</code>
+     * <code>repeated .ActivityFriendGiftWishData friend_gift_wish_list = 12;</code>
      */
     int getFriendGiftWishListCount();
     /**
-     * <code>repeated .ActivityFriendGiftWishData friend_gift_wish_list = 11;</code>
+     * <code>repeated .ActivityFriendGiftWishData friend_gift_wish_list = 12;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.ActivityFriendGiftWishDataOuterClass.ActivityFriendGiftWishDataOrBuilder> 
         getFriendGiftWishListOrBuilderList();
     /**
-     * <code>repeated .ActivityFriendGiftWishData friend_gift_wish_list = 11;</code>
+     * <code>repeated .ActivityFriendGiftWishData friend_gift_wish_list = 12;</code>
      */
     emu.grasscutter.net.proto.ActivityFriendGiftWishDataOuterClass.ActivityFriendGiftWishDataOrBuilder getFriendGiftWishListOrBuilder(
         int index);
 
     /**
-     * <code>uint32 schedule_id = 10;</code>
+     * <code>uint32 schedule_id = 4;</code>
      * @return The scheduleId.
      */
     int getScheduleId();
+
+    /**
+     * <code>int32 retcode = 2;</code>
+     * @return The retcode.
+     */
+    int getRetcode();
   }
   /**
    * <pre>
-   * CmdId: 8253
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 8355;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code ActivityGetFriendGiftWishListRsp}
@@ -107,17 +111,17 @@ public final class ActivityGetFriendGiftWishListRspOuterClass {
             case 0:
               done = true;
               break;
-            case 48: {
+            case 16: {
 
               retcode_ = input.readInt32();
               break;
             }
-            case 80: {
+            case 32: {
 
               scheduleId_ = input.readUInt32();
               break;
             }
-            case 90: {
+            case 98: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 friendGiftWishList_ = new java.util.ArrayList<emu.grasscutter.net.proto.ActivityFriendGiftWishDataOuterClass.ActivityFriendGiftWishData>();
                 mutable_bitField0_ |= 0x00000001;
@@ -161,28 +165,17 @@ public final class ActivityGetFriendGiftWishListRspOuterClass {
               emu.grasscutter.net.proto.ActivityGetFriendGiftWishListRspOuterClass.ActivityGetFriendGiftWishListRsp.class, emu.grasscutter.net.proto.ActivityGetFriendGiftWishListRspOuterClass.ActivityGetFriendGiftWishListRsp.Builder.class);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 6;
-    private int retcode_;
-    /**
-     * <code>int32 retcode = 6;</code>
-     * @return The retcode.
-     */
-    @java.lang.Override
-    public int getRetcode() {
-      return retcode_;
-    }
-
-    public static final int FRIEND_GIFT_WISH_LIST_FIELD_NUMBER = 11;
+    public static final int FRIEND_GIFT_WISH_LIST_FIELD_NUMBER = 12;
     private java.util.List<emu.grasscutter.net.proto.ActivityFriendGiftWishDataOuterClass.ActivityFriendGiftWishData> friendGiftWishList_;
     /**
-     * <code>repeated .ActivityFriendGiftWishData friend_gift_wish_list = 11;</code>
+     * <code>repeated .ActivityFriendGiftWishData friend_gift_wish_list = 12;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.ActivityFriendGiftWishDataOuterClass.ActivityFriendGiftWishData> getFriendGiftWishListList() {
       return friendGiftWishList_;
     }
     /**
-     * <code>repeated .ActivityFriendGiftWishData friend_gift_wish_list = 11;</code>
+     * <code>repeated .ActivityFriendGiftWishData friend_gift_wish_list = 12;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.ActivityFriendGiftWishDataOuterClass.ActivityFriendGiftWishDataOrBuilder> 
@@ -190,21 +183,21 @@ public final class ActivityGetFriendGiftWishListRspOuterClass {
       return friendGiftWishList_;
     }
     /**
-     * <code>repeated .ActivityFriendGiftWishData friend_gift_wish_list = 11;</code>
+     * <code>repeated .ActivityFriendGiftWishData friend_gift_wish_list = 12;</code>
      */
     @java.lang.Override
     public int getFriendGiftWishListCount() {
       return friendGiftWishList_.size();
     }
     /**
-     * <code>repeated .ActivityFriendGiftWishData friend_gift_wish_list = 11;</code>
+     * <code>repeated .ActivityFriendGiftWishData friend_gift_wish_list = 12;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.ActivityFriendGiftWishDataOuterClass.ActivityFriendGiftWishData getFriendGiftWishList(int index) {
       return friendGiftWishList_.get(index);
     }
     /**
-     * <code>repeated .ActivityFriendGiftWishData friend_gift_wish_list = 11;</code>
+     * <code>repeated .ActivityFriendGiftWishData friend_gift_wish_list = 12;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.ActivityFriendGiftWishDataOuterClass.ActivityFriendGiftWishDataOrBuilder getFriendGiftWishListOrBuilder(
@@ -212,15 +205,26 @@ public final class ActivityGetFriendGiftWishListRspOuterClass {
       return friendGiftWishList_.get(index);
     }
 
-    public static final int SCHEDULE_ID_FIELD_NUMBER = 10;
+    public static final int SCHEDULE_ID_FIELD_NUMBER = 4;
     private int scheduleId_;
     /**
-     * <code>uint32 schedule_id = 10;</code>
+     * <code>uint32 schedule_id = 4;</code>
      * @return The scheduleId.
      */
     @java.lang.Override
     public int getScheduleId() {
       return scheduleId_;
+    }
+
+    public static final int RETCODE_FIELD_NUMBER = 2;
+    private int retcode_;
+    /**
+     * <code>int32 retcode = 2;</code>
+     * @return The retcode.
+     */
+    @java.lang.Override
+    public int getRetcode() {
+      return retcode_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -238,13 +242,13 @@ public final class ActivityGetFriendGiftWishListRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (retcode_ != 0) {
-        output.writeInt32(6, retcode_);
+        output.writeInt32(2, retcode_);
       }
       if (scheduleId_ != 0) {
-        output.writeUInt32(10, scheduleId_);
+        output.writeUInt32(4, scheduleId_);
       }
       for (int i = 0; i < friendGiftWishList_.size(); i++) {
-        output.writeMessage(11, friendGiftWishList_.get(i));
+        output.writeMessage(12, friendGiftWishList_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -257,15 +261,15 @@ public final class ActivityGetFriendGiftWishListRspOuterClass {
       size = 0;
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(6, retcode_);
+          .computeInt32Size(2, retcode_);
       }
       if (scheduleId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, scheduleId_);
+          .computeUInt32Size(4, scheduleId_);
       }
       for (int i = 0; i < friendGiftWishList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(11, friendGiftWishList_.get(i));
+          .computeMessageSize(12, friendGiftWishList_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -282,12 +286,12 @@ public final class ActivityGetFriendGiftWishListRspOuterClass {
       }
       emu.grasscutter.net.proto.ActivityGetFriendGiftWishListRspOuterClass.ActivityGetFriendGiftWishListRsp other = (emu.grasscutter.net.proto.ActivityGetFriendGiftWishListRspOuterClass.ActivityGetFriendGiftWishListRsp) obj;
 
-      if (getRetcode()
-          != other.getRetcode()) return false;
       if (!getFriendGiftWishListList()
           .equals(other.getFriendGiftWishListList())) return false;
       if (getScheduleId()
           != other.getScheduleId()) return false;
+      if (getRetcode()
+          != other.getRetcode()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -299,14 +303,14 @@ public final class ActivityGetFriendGiftWishListRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
-      hash = (53 * hash) + getRetcode();
       if (getFriendGiftWishListCount() > 0) {
         hash = (37 * hash) + FRIEND_GIFT_WISH_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getFriendGiftWishListList().hashCode();
       }
       hash = (37 * hash) + SCHEDULE_ID_FIELD_NUMBER;
       hash = (53 * hash) + getScheduleId();
+      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
+      hash = (53 * hash) + getRetcode();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -404,9 +408,13 @@ public final class ActivityGetFriendGiftWishListRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 8253
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 8355;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code ActivityGetFriendGiftWishListRsp}
@@ -447,8 +455,6 @@ public final class ActivityGetFriendGiftWishListRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        retcode_ = 0;
-
         if (friendGiftWishListBuilder_ == null) {
           friendGiftWishList_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000001);
@@ -456,6 +462,8 @@ public final class ActivityGetFriendGiftWishListRspOuterClass {
           friendGiftWishListBuilder_.clear();
         }
         scheduleId_ = 0;
+
+        retcode_ = 0;
 
         return this;
       }
@@ -484,7 +492,6 @@ public final class ActivityGetFriendGiftWishListRspOuterClass {
       public emu.grasscutter.net.proto.ActivityGetFriendGiftWishListRspOuterClass.ActivityGetFriendGiftWishListRsp buildPartial() {
         emu.grasscutter.net.proto.ActivityGetFriendGiftWishListRspOuterClass.ActivityGetFriendGiftWishListRsp result = new emu.grasscutter.net.proto.ActivityGetFriendGiftWishListRspOuterClass.ActivityGetFriendGiftWishListRsp(this);
         int from_bitField0_ = bitField0_;
-        result.retcode_ = retcode_;
         if (friendGiftWishListBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0)) {
             friendGiftWishList_ = java.util.Collections.unmodifiableList(friendGiftWishList_);
@@ -495,6 +502,7 @@ public final class ActivityGetFriendGiftWishListRspOuterClass {
           result.friendGiftWishList_ = friendGiftWishListBuilder_.build();
         }
         result.scheduleId_ = scheduleId_;
+        result.retcode_ = retcode_;
         onBuilt();
         return result;
       }
@@ -543,9 +551,6 @@ public final class ActivityGetFriendGiftWishListRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.ActivityGetFriendGiftWishListRspOuterClass.ActivityGetFriendGiftWishListRsp other) {
         if (other == emu.grasscutter.net.proto.ActivityGetFriendGiftWishListRspOuterClass.ActivityGetFriendGiftWishListRsp.getDefaultInstance()) return this;
-        if (other.getRetcode() != 0) {
-          setRetcode(other.getRetcode());
-        }
         if (friendGiftWishListBuilder_ == null) {
           if (!other.friendGiftWishList_.isEmpty()) {
             if (friendGiftWishList_.isEmpty()) {
@@ -574,6 +579,9 @@ public final class ActivityGetFriendGiftWishListRspOuterClass {
         }
         if (other.getScheduleId() != 0) {
           setScheduleId(other.getScheduleId());
+        }
+        if (other.getRetcode() != 0) {
+          setRetcode(other.getRetcode());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -605,37 +613,6 @@ public final class ActivityGetFriendGiftWishListRspOuterClass {
       }
       private int bitField0_;
 
-      private int retcode_ ;
-      /**
-       * <code>int32 retcode = 6;</code>
-       * @return The retcode.
-       */
-      @java.lang.Override
-      public int getRetcode() {
-        return retcode_;
-      }
-      /**
-       * <code>int32 retcode = 6;</code>
-       * @param value The retcode to set.
-       * @return This builder for chaining.
-       */
-      public Builder setRetcode(int value) {
-        
-        retcode_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>int32 retcode = 6;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearRetcode() {
-        
-        retcode_ = 0;
-        onChanged();
-        return this;
-      }
-
       private java.util.List<emu.grasscutter.net.proto.ActivityFriendGiftWishDataOuterClass.ActivityFriendGiftWishData> friendGiftWishList_ =
         java.util.Collections.emptyList();
       private void ensureFriendGiftWishListIsMutable() {
@@ -649,7 +626,7 @@ public final class ActivityGetFriendGiftWishListRspOuterClass {
           emu.grasscutter.net.proto.ActivityFriendGiftWishDataOuterClass.ActivityFriendGiftWishData, emu.grasscutter.net.proto.ActivityFriendGiftWishDataOuterClass.ActivityFriendGiftWishData.Builder, emu.grasscutter.net.proto.ActivityFriendGiftWishDataOuterClass.ActivityFriendGiftWishDataOrBuilder> friendGiftWishListBuilder_;
 
       /**
-       * <code>repeated .ActivityFriendGiftWishData friend_gift_wish_list = 11;</code>
+       * <code>repeated .ActivityFriendGiftWishData friend_gift_wish_list = 12;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.ActivityFriendGiftWishDataOuterClass.ActivityFriendGiftWishData> getFriendGiftWishListList() {
         if (friendGiftWishListBuilder_ == null) {
@@ -659,7 +636,7 @@ public final class ActivityGetFriendGiftWishListRspOuterClass {
         }
       }
       /**
-       * <code>repeated .ActivityFriendGiftWishData friend_gift_wish_list = 11;</code>
+       * <code>repeated .ActivityFriendGiftWishData friend_gift_wish_list = 12;</code>
        */
       public int getFriendGiftWishListCount() {
         if (friendGiftWishListBuilder_ == null) {
@@ -669,7 +646,7 @@ public final class ActivityGetFriendGiftWishListRspOuterClass {
         }
       }
       /**
-       * <code>repeated .ActivityFriendGiftWishData friend_gift_wish_list = 11;</code>
+       * <code>repeated .ActivityFriendGiftWishData friend_gift_wish_list = 12;</code>
        */
       public emu.grasscutter.net.proto.ActivityFriendGiftWishDataOuterClass.ActivityFriendGiftWishData getFriendGiftWishList(int index) {
         if (friendGiftWishListBuilder_ == null) {
@@ -679,7 +656,7 @@ public final class ActivityGetFriendGiftWishListRspOuterClass {
         }
       }
       /**
-       * <code>repeated .ActivityFriendGiftWishData friend_gift_wish_list = 11;</code>
+       * <code>repeated .ActivityFriendGiftWishData friend_gift_wish_list = 12;</code>
        */
       public Builder setFriendGiftWishList(
           int index, emu.grasscutter.net.proto.ActivityFriendGiftWishDataOuterClass.ActivityFriendGiftWishData value) {
@@ -696,7 +673,7 @@ public final class ActivityGetFriendGiftWishListRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ActivityFriendGiftWishData friend_gift_wish_list = 11;</code>
+       * <code>repeated .ActivityFriendGiftWishData friend_gift_wish_list = 12;</code>
        */
       public Builder setFriendGiftWishList(
           int index, emu.grasscutter.net.proto.ActivityFriendGiftWishDataOuterClass.ActivityFriendGiftWishData.Builder builderForValue) {
@@ -710,7 +687,7 @@ public final class ActivityGetFriendGiftWishListRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ActivityFriendGiftWishData friend_gift_wish_list = 11;</code>
+       * <code>repeated .ActivityFriendGiftWishData friend_gift_wish_list = 12;</code>
        */
       public Builder addFriendGiftWishList(emu.grasscutter.net.proto.ActivityFriendGiftWishDataOuterClass.ActivityFriendGiftWishData value) {
         if (friendGiftWishListBuilder_ == null) {
@@ -726,7 +703,7 @@ public final class ActivityGetFriendGiftWishListRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ActivityFriendGiftWishData friend_gift_wish_list = 11;</code>
+       * <code>repeated .ActivityFriendGiftWishData friend_gift_wish_list = 12;</code>
        */
       public Builder addFriendGiftWishList(
           int index, emu.grasscutter.net.proto.ActivityFriendGiftWishDataOuterClass.ActivityFriendGiftWishData value) {
@@ -743,7 +720,7 @@ public final class ActivityGetFriendGiftWishListRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ActivityFriendGiftWishData friend_gift_wish_list = 11;</code>
+       * <code>repeated .ActivityFriendGiftWishData friend_gift_wish_list = 12;</code>
        */
       public Builder addFriendGiftWishList(
           emu.grasscutter.net.proto.ActivityFriendGiftWishDataOuterClass.ActivityFriendGiftWishData.Builder builderForValue) {
@@ -757,7 +734,7 @@ public final class ActivityGetFriendGiftWishListRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ActivityFriendGiftWishData friend_gift_wish_list = 11;</code>
+       * <code>repeated .ActivityFriendGiftWishData friend_gift_wish_list = 12;</code>
        */
       public Builder addFriendGiftWishList(
           int index, emu.grasscutter.net.proto.ActivityFriendGiftWishDataOuterClass.ActivityFriendGiftWishData.Builder builderForValue) {
@@ -771,7 +748,7 @@ public final class ActivityGetFriendGiftWishListRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ActivityFriendGiftWishData friend_gift_wish_list = 11;</code>
+       * <code>repeated .ActivityFriendGiftWishData friend_gift_wish_list = 12;</code>
        */
       public Builder addAllFriendGiftWishList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.ActivityFriendGiftWishDataOuterClass.ActivityFriendGiftWishData> values) {
@@ -786,7 +763,7 @@ public final class ActivityGetFriendGiftWishListRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ActivityFriendGiftWishData friend_gift_wish_list = 11;</code>
+       * <code>repeated .ActivityFriendGiftWishData friend_gift_wish_list = 12;</code>
        */
       public Builder clearFriendGiftWishList() {
         if (friendGiftWishListBuilder_ == null) {
@@ -799,7 +776,7 @@ public final class ActivityGetFriendGiftWishListRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ActivityFriendGiftWishData friend_gift_wish_list = 11;</code>
+       * <code>repeated .ActivityFriendGiftWishData friend_gift_wish_list = 12;</code>
        */
       public Builder removeFriendGiftWishList(int index) {
         if (friendGiftWishListBuilder_ == null) {
@@ -812,14 +789,14 @@ public final class ActivityGetFriendGiftWishListRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ActivityFriendGiftWishData friend_gift_wish_list = 11;</code>
+       * <code>repeated .ActivityFriendGiftWishData friend_gift_wish_list = 12;</code>
        */
       public emu.grasscutter.net.proto.ActivityFriendGiftWishDataOuterClass.ActivityFriendGiftWishData.Builder getFriendGiftWishListBuilder(
           int index) {
         return getFriendGiftWishListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .ActivityFriendGiftWishData friend_gift_wish_list = 11;</code>
+       * <code>repeated .ActivityFriendGiftWishData friend_gift_wish_list = 12;</code>
        */
       public emu.grasscutter.net.proto.ActivityFriendGiftWishDataOuterClass.ActivityFriendGiftWishDataOrBuilder getFriendGiftWishListOrBuilder(
           int index) {
@@ -829,7 +806,7 @@ public final class ActivityGetFriendGiftWishListRspOuterClass {
         }
       }
       /**
-       * <code>repeated .ActivityFriendGiftWishData friend_gift_wish_list = 11;</code>
+       * <code>repeated .ActivityFriendGiftWishData friend_gift_wish_list = 12;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.ActivityFriendGiftWishDataOuterClass.ActivityFriendGiftWishDataOrBuilder> 
            getFriendGiftWishListOrBuilderList() {
@@ -840,14 +817,14 @@ public final class ActivityGetFriendGiftWishListRspOuterClass {
         }
       }
       /**
-       * <code>repeated .ActivityFriendGiftWishData friend_gift_wish_list = 11;</code>
+       * <code>repeated .ActivityFriendGiftWishData friend_gift_wish_list = 12;</code>
        */
       public emu.grasscutter.net.proto.ActivityFriendGiftWishDataOuterClass.ActivityFriendGiftWishData.Builder addFriendGiftWishListBuilder() {
         return getFriendGiftWishListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.ActivityFriendGiftWishDataOuterClass.ActivityFriendGiftWishData.getDefaultInstance());
       }
       /**
-       * <code>repeated .ActivityFriendGiftWishData friend_gift_wish_list = 11;</code>
+       * <code>repeated .ActivityFriendGiftWishData friend_gift_wish_list = 12;</code>
        */
       public emu.grasscutter.net.proto.ActivityFriendGiftWishDataOuterClass.ActivityFriendGiftWishData.Builder addFriendGiftWishListBuilder(
           int index) {
@@ -855,7 +832,7 @@ public final class ActivityGetFriendGiftWishListRspOuterClass {
             index, emu.grasscutter.net.proto.ActivityFriendGiftWishDataOuterClass.ActivityFriendGiftWishData.getDefaultInstance());
       }
       /**
-       * <code>repeated .ActivityFriendGiftWishData friend_gift_wish_list = 11;</code>
+       * <code>repeated .ActivityFriendGiftWishData friend_gift_wish_list = 12;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.ActivityFriendGiftWishDataOuterClass.ActivityFriendGiftWishData.Builder> 
            getFriendGiftWishListBuilderList() {
@@ -878,7 +855,7 @@ public final class ActivityGetFriendGiftWishListRspOuterClass {
 
       private int scheduleId_ ;
       /**
-       * <code>uint32 schedule_id = 10;</code>
+       * <code>uint32 schedule_id = 4;</code>
        * @return The scheduleId.
        */
       @java.lang.Override
@@ -886,7 +863,7 @@ public final class ActivityGetFriendGiftWishListRspOuterClass {
         return scheduleId_;
       }
       /**
-       * <code>uint32 schedule_id = 10;</code>
+       * <code>uint32 schedule_id = 4;</code>
        * @param value The scheduleId to set.
        * @return This builder for chaining.
        */
@@ -897,12 +874,43 @@ public final class ActivityGetFriendGiftWishListRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 schedule_id = 10;</code>
+       * <code>uint32 schedule_id = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearScheduleId() {
         
         scheduleId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int retcode_ ;
+      /**
+       * <code>int32 retcode = 2;</code>
+       * @return The retcode.
+       */
+      @java.lang.Override
+      public int getRetcode() {
+        return retcode_;
+      }
+      /**
+       * <code>int32 retcode = 2;</code>
+       * @param value The retcode to set.
+       * @return This builder for chaining.
+       */
+      public Builder setRetcode(int value) {
+        
+        retcode_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 retcode = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearRetcode() {
+        
+        retcode_ = 0;
         onChanged();
         return this;
       }
@@ -975,10 +983,10 @@ public final class ActivityGetFriendGiftWishListRspOuterClass {
     java.lang.String[] descriptorData = {
       "\n&ActivityGetFriendGiftWishListRsp.proto" +
       "\032 ActivityFriendGiftWishData.proto\"\204\001\n A" +
-      "ctivityGetFriendGiftWishListRsp\022\017\n\007retco" +
-      "de\030\006 \001(\005\022:\n\025friend_gift_wish_list\030\013 \003(\0132" +
-      "\033.ActivityFriendGiftWishData\022\023\n\013schedule" +
-      "_id\030\n \001(\rB\033\n\031emu.grasscutter.net.protob\006" +
+      "ctivityGetFriendGiftWishListRsp\022:\n\025frien" +
+      "d_gift_wish_list\030\014 \003(\0132\033.ActivityFriendG" +
+      "iftWishData\022\023\n\013schedule_id\030\004 \001(\r\022\017\n\007retc" +
+      "ode\030\002 \001(\005B\033\n\031emu.grasscutter.net.protob\006" +
       "proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -991,7 +999,7 @@ public final class ActivityGetFriendGiftWishListRspOuterClass {
     internal_static_ActivityGetFriendGiftWishListRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ActivityGetFriendGiftWishListRsp_descriptor,
-        new java.lang.String[] { "Retcode", "FriendGiftWishList", "ScheduleId", });
+        new java.lang.String[] { "FriendGiftWishList", "ScheduleId", "Retcode", });
     emu.grasscutter.net.proto.ActivityFriendGiftWishDataOuterClass.getDescriptor();
   }
 

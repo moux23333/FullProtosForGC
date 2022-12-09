@@ -19,22 +19,26 @@ public final class MiracleRingDropResultNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 last_take_reward_time = 5;</code>
+     * <code>int32 last_take_reward_time = 15;</code>
      * @return The lastTakeRewardTime.
      */
     int getLastTakeRewardTime();
 
     /**
-     * <code>int32 drop_result = 9;</code>
+     * <code>int32 drop_result = 8;</code>
      * @return The dropResult.
      */
     int getDropResult();
   }
   /**
    * <pre>
-   * CmdId: 5231
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 5231;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code MiracleRingDropResultNotify}
@@ -81,14 +85,14 @@ public final class MiracleRingDropResultNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 40: {
-
-              lastTakeRewardTime_ = input.readInt32();
-              break;
-            }
-            case 72: {
+            case 64: {
 
               dropResult_ = input.readInt32();
+              break;
+            }
+            case 120: {
+
+              lastTakeRewardTime_ = input.readInt32();
               break;
             }
             default: {
@@ -123,10 +127,10 @@ public final class MiracleRingDropResultNotifyOuterClass {
               emu.grasscutter.net.proto.MiracleRingDropResultNotifyOuterClass.MiracleRingDropResultNotify.class, emu.grasscutter.net.proto.MiracleRingDropResultNotifyOuterClass.MiracleRingDropResultNotify.Builder.class);
     }
 
-    public static final int LAST_TAKE_REWARD_TIME_FIELD_NUMBER = 5;
+    public static final int LAST_TAKE_REWARD_TIME_FIELD_NUMBER = 15;
     private int lastTakeRewardTime_;
     /**
-     * <code>int32 last_take_reward_time = 5;</code>
+     * <code>int32 last_take_reward_time = 15;</code>
      * @return The lastTakeRewardTime.
      */
     @java.lang.Override
@@ -134,10 +138,10 @@ public final class MiracleRingDropResultNotifyOuterClass {
       return lastTakeRewardTime_;
     }
 
-    public static final int DROP_RESULT_FIELD_NUMBER = 9;
+    public static final int DROP_RESULT_FIELD_NUMBER = 8;
     private int dropResult_;
     /**
-     * <code>int32 drop_result = 9;</code>
+     * <code>int32 drop_result = 8;</code>
      * @return The dropResult.
      */
     @java.lang.Override
@@ -159,11 +163,11 @@ public final class MiracleRingDropResultNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (lastTakeRewardTime_ != 0) {
-        output.writeInt32(5, lastTakeRewardTime_);
-      }
       if (dropResult_ != 0) {
-        output.writeInt32(9, dropResult_);
+        output.writeInt32(8, dropResult_);
+      }
+      if (lastTakeRewardTime_ != 0) {
+        output.writeInt32(15, lastTakeRewardTime_);
       }
       unknownFields.writeTo(output);
     }
@@ -174,13 +178,13 @@ public final class MiracleRingDropResultNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (lastTakeRewardTime_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(5, lastTakeRewardTime_);
-      }
       if (dropResult_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(9, dropResult_);
+          .computeInt32Size(8, dropResult_);
+      }
+      if (lastTakeRewardTime_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(15, lastTakeRewardTime_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -313,9 +317,13 @@ public final class MiracleRingDropResultNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 5231
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 5231;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code MiracleRingDropResultNotify}
@@ -472,7 +480,7 @@ public final class MiracleRingDropResultNotifyOuterClass {
 
       private int lastTakeRewardTime_ ;
       /**
-       * <code>int32 last_take_reward_time = 5;</code>
+       * <code>int32 last_take_reward_time = 15;</code>
        * @return The lastTakeRewardTime.
        */
       @java.lang.Override
@@ -480,7 +488,7 @@ public final class MiracleRingDropResultNotifyOuterClass {
         return lastTakeRewardTime_;
       }
       /**
-       * <code>int32 last_take_reward_time = 5;</code>
+       * <code>int32 last_take_reward_time = 15;</code>
        * @param value The lastTakeRewardTime to set.
        * @return This builder for chaining.
        */
@@ -491,7 +499,7 @@ public final class MiracleRingDropResultNotifyOuterClass {
         return this;
       }
       /**
-       * <code>int32 last_take_reward_time = 5;</code>
+       * <code>int32 last_take_reward_time = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearLastTakeRewardTime() {
@@ -503,7 +511,7 @@ public final class MiracleRingDropResultNotifyOuterClass {
 
       private int dropResult_ ;
       /**
-       * <code>int32 drop_result = 9;</code>
+       * <code>int32 drop_result = 8;</code>
        * @return The dropResult.
        */
       @java.lang.Override
@@ -511,7 +519,7 @@ public final class MiracleRingDropResultNotifyOuterClass {
         return dropResult_;
       }
       /**
-       * <code>int32 drop_result = 9;</code>
+       * <code>int32 drop_result = 8;</code>
        * @param value The dropResult to set.
        * @return This builder for chaining.
        */
@@ -522,7 +530,7 @@ public final class MiracleRingDropResultNotifyOuterClass {
         return this;
       }
       /**
-       * <code>int32 drop_result = 9;</code>
+       * <code>int32 drop_result = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearDropResult() {
@@ -600,7 +608,7 @@ public final class MiracleRingDropResultNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n!MiracleRingDropResultNotify.proto\"Q\n\033M" +
       "iracleRingDropResultNotify\022\035\n\025last_take_" +
-      "reward_time\030\005 \001(\005\022\023\n\013drop_result\030\t \001(\005B\033" +
+      "reward_time\030\017 \001(\005\022\023\n\013drop_result\030\010 \001(\005B\033" +
       "\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

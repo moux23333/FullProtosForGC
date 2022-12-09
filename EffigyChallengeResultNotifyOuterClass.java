@@ -19,34 +19,38 @@ public final class EffigyChallengeResultNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_success = 5;</code>
-     * @return The isSuccess.
-     */
-    boolean getIsSuccess();
-
-    /**
-     * <code>uint32 challenge_max_score = 12;</code>
-     * @return The challengeMaxScore.
-     */
-    int getChallengeMaxScore();
-
-    /**
-     * <code>uint32 challenge_score = 3;</code>
+     * <code>uint32 challenge_score = 8;</code>
      * @return The challengeScore.
      */
     int getChallengeScore();
 
     /**
-     * <code>uint32 challenge_id = 7;</code>
+     * <code>bool is_success = 4;</code>
+     * @return The isSuccess.
+     */
+    boolean getIsSuccess();
+
+    /**
+     * <code>uint32 challenge_id = 13;</code>
      * @return The challengeId.
      */
     int getChallengeId();
+
+    /**
+     * <code>uint32 challenge_max_score = 6;</code>
+     * @return The challengeMaxScore.
+     */
+    int getChallengeMaxScore();
   }
   /**
    * <pre>
-   * CmdId: 2046
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 2022;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code EffigyChallengeResultNotify}
@@ -93,24 +97,24 @@ public final class EffigyChallengeResultNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 24: {
-
-              challengeScore_ = input.readUInt32();
-              break;
-            }
-            case 40: {
+            case 32: {
 
               isSuccess_ = input.readBool();
               break;
             }
-            case 56: {
-
-              challengeId_ = input.readUInt32();
-              break;
-            }
-            case 96: {
+            case 48: {
 
               challengeMaxScore_ = input.readUInt32();
+              break;
+            }
+            case 64: {
+
+              challengeScore_ = input.readUInt32();
+              break;
+            }
+            case 104: {
+
+              challengeId_ = input.readUInt32();
               break;
             }
             default: {
@@ -145,32 +149,10 @@ public final class EffigyChallengeResultNotifyOuterClass {
               emu.grasscutter.net.proto.EffigyChallengeResultNotifyOuterClass.EffigyChallengeResultNotify.class, emu.grasscutter.net.proto.EffigyChallengeResultNotifyOuterClass.EffigyChallengeResultNotify.Builder.class);
     }
 
-    public static final int IS_SUCCESS_FIELD_NUMBER = 5;
-    private boolean isSuccess_;
-    /**
-     * <code>bool is_success = 5;</code>
-     * @return The isSuccess.
-     */
-    @java.lang.Override
-    public boolean getIsSuccess() {
-      return isSuccess_;
-    }
-
-    public static final int CHALLENGE_MAX_SCORE_FIELD_NUMBER = 12;
-    private int challengeMaxScore_;
-    /**
-     * <code>uint32 challenge_max_score = 12;</code>
-     * @return The challengeMaxScore.
-     */
-    @java.lang.Override
-    public int getChallengeMaxScore() {
-      return challengeMaxScore_;
-    }
-
-    public static final int CHALLENGE_SCORE_FIELD_NUMBER = 3;
+    public static final int CHALLENGE_SCORE_FIELD_NUMBER = 8;
     private int challengeScore_;
     /**
-     * <code>uint32 challenge_score = 3;</code>
+     * <code>uint32 challenge_score = 8;</code>
      * @return The challengeScore.
      */
     @java.lang.Override
@@ -178,15 +160,37 @@ public final class EffigyChallengeResultNotifyOuterClass {
       return challengeScore_;
     }
 
-    public static final int CHALLENGE_ID_FIELD_NUMBER = 7;
+    public static final int IS_SUCCESS_FIELD_NUMBER = 4;
+    private boolean isSuccess_;
+    /**
+     * <code>bool is_success = 4;</code>
+     * @return The isSuccess.
+     */
+    @java.lang.Override
+    public boolean getIsSuccess() {
+      return isSuccess_;
+    }
+
+    public static final int CHALLENGE_ID_FIELD_NUMBER = 13;
     private int challengeId_;
     /**
-     * <code>uint32 challenge_id = 7;</code>
+     * <code>uint32 challenge_id = 13;</code>
      * @return The challengeId.
      */
     @java.lang.Override
     public int getChallengeId() {
       return challengeId_;
+    }
+
+    public static final int CHALLENGE_MAX_SCORE_FIELD_NUMBER = 6;
+    private int challengeMaxScore_;
+    /**
+     * <code>uint32 challenge_max_score = 6;</code>
+     * @return The challengeMaxScore.
+     */
+    @java.lang.Override
+    public int getChallengeMaxScore() {
+      return challengeMaxScore_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -203,17 +207,17 @@ public final class EffigyChallengeResultNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (challengeScore_ != 0) {
-        output.writeUInt32(3, challengeScore_);
-      }
       if (isSuccess_ != false) {
-        output.writeBool(5, isSuccess_);
-      }
-      if (challengeId_ != 0) {
-        output.writeUInt32(7, challengeId_);
+        output.writeBool(4, isSuccess_);
       }
       if (challengeMaxScore_ != 0) {
-        output.writeUInt32(12, challengeMaxScore_);
+        output.writeUInt32(6, challengeMaxScore_);
+      }
+      if (challengeScore_ != 0) {
+        output.writeUInt32(8, challengeScore_);
+      }
+      if (challengeId_ != 0) {
+        output.writeUInt32(13, challengeId_);
       }
       unknownFields.writeTo(output);
     }
@@ -224,21 +228,21 @@ public final class EffigyChallengeResultNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (challengeScore_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, challengeScore_);
-      }
       if (isSuccess_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(5, isSuccess_);
-      }
-      if (challengeId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, challengeId_);
+          .computeBoolSize(4, isSuccess_);
       }
       if (challengeMaxScore_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, challengeMaxScore_);
+          .computeUInt32Size(6, challengeMaxScore_);
+      }
+      if (challengeScore_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(8, challengeScore_);
+      }
+      if (challengeId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(13, challengeId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -255,14 +259,14 @@ public final class EffigyChallengeResultNotifyOuterClass {
       }
       emu.grasscutter.net.proto.EffigyChallengeResultNotifyOuterClass.EffigyChallengeResultNotify other = (emu.grasscutter.net.proto.EffigyChallengeResultNotifyOuterClass.EffigyChallengeResultNotify) obj;
 
-      if (getIsSuccess()
-          != other.getIsSuccess()) return false;
-      if (getChallengeMaxScore()
-          != other.getChallengeMaxScore()) return false;
       if (getChallengeScore()
           != other.getChallengeScore()) return false;
+      if (getIsSuccess()
+          != other.getIsSuccess()) return false;
       if (getChallengeId()
           != other.getChallengeId()) return false;
+      if (getChallengeMaxScore()
+          != other.getChallengeMaxScore()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -274,15 +278,15 @@ public final class EffigyChallengeResultNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + CHALLENGE_SCORE_FIELD_NUMBER;
+      hash = (53 * hash) + getChallengeScore();
       hash = (37 * hash) + IS_SUCCESS_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsSuccess());
-      hash = (37 * hash) + CHALLENGE_MAX_SCORE_FIELD_NUMBER;
-      hash = (53 * hash) + getChallengeMaxScore();
-      hash = (37 * hash) + CHALLENGE_SCORE_FIELD_NUMBER;
-      hash = (53 * hash) + getChallengeScore();
       hash = (37 * hash) + CHALLENGE_ID_FIELD_NUMBER;
       hash = (53 * hash) + getChallengeId();
+      hash = (37 * hash) + CHALLENGE_MAX_SCORE_FIELD_NUMBER;
+      hash = (53 * hash) + getChallengeMaxScore();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -380,9 +384,13 @@ public final class EffigyChallengeResultNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 2046
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 2022;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code EffigyChallengeResultNotify}
@@ -422,13 +430,13 @@ public final class EffigyChallengeResultNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        isSuccess_ = false;
-
-        challengeMaxScore_ = 0;
-
         challengeScore_ = 0;
 
+        isSuccess_ = false;
+
         challengeId_ = 0;
+
+        challengeMaxScore_ = 0;
 
         return this;
       }
@@ -456,10 +464,10 @@ public final class EffigyChallengeResultNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.EffigyChallengeResultNotifyOuterClass.EffigyChallengeResultNotify buildPartial() {
         emu.grasscutter.net.proto.EffigyChallengeResultNotifyOuterClass.EffigyChallengeResultNotify result = new emu.grasscutter.net.proto.EffigyChallengeResultNotifyOuterClass.EffigyChallengeResultNotify(this);
-        result.isSuccess_ = isSuccess_;
-        result.challengeMaxScore_ = challengeMaxScore_;
         result.challengeScore_ = challengeScore_;
+        result.isSuccess_ = isSuccess_;
         result.challengeId_ = challengeId_;
+        result.challengeMaxScore_ = challengeMaxScore_;
         onBuilt();
         return result;
       }
@@ -508,17 +516,17 @@ public final class EffigyChallengeResultNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.EffigyChallengeResultNotifyOuterClass.EffigyChallengeResultNotify other) {
         if (other == emu.grasscutter.net.proto.EffigyChallengeResultNotifyOuterClass.EffigyChallengeResultNotify.getDefaultInstance()) return this;
-        if (other.getIsSuccess() != false) {
-          setIsSuccess(other.getIsSuccess());
-        }
-        if (other.getChallengeMaxScore() != 0) {
-          setChallengeMaxScore(other.getChallengeMaxScore());
-        }
         if (other.getChallengeScore() != 0) {
           setChallengeScore(other.getChallengeScore());
         }
+        if (other.getIsSuccess() != false) {
+          setIsSuccess(other.getIsSuccess());
+        }
         if (other.getChallengeId() != 0) {
           setChallengeId(other.getChallengeId());
+        }
+        if (other.getChallengeMaxScore() != 0) {
+          setChallengeMaxScore(other.getChallengeMaxScore());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -549,71 +557,9 @@ public final class EffigyChallengeResultNotifyOuterClass {
         return this;
       }
 
-      private boolean isSuccess_ ;
-      /**
-       * <code>bool is_success = 5;</code>
-       * @return The isSuccess.
-       */
-      @java.lang.Override
-      public boolean getIsSuccess() {
-        return isSuccess_;
-      }
-      /**
-       * <code>bool is_success = 5;</code>
-       * @param value The isSuccess to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsSuccess(boolean value) {
-        
-        isSuccess_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_success = 5;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsSuccess() {
-        
-        isSuccess_ = false;
-        onChanged();
-        return this;
-      }
-
-      private int challengeMaxScore_ ;
-      /**
-       * <code>uint32 challenge_max_score = 12;</code>
-       * @return The challengeMaxScore.
-       */
-      @java.lang.Override
-      public int getChallengeMaxScore() {
-        return challengeMaxScore_;
-      }
-      /**
-       * <code>uint32 challenge_max_score = 12;</code>
-       * @param value The challengeMaxScore to set.
-       * @return This builder for chaining.
-       */
-      public Builder setChallengeMaxScore(int value) {
-        
-        challengeMaxScore_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 challenge_max_score = 12;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearChallengeMaxScore() {
-        
-        challengeMaxScore_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int challengeScore_ ;
       /**
-       * <code>uint32 challenge_score = 3;</code>
+       * <code>uint32 challenge_score = 8;</code>
        * @return The challengeScore.
        */
       @java.lang.Override
@@ -621,7 +567,7 @@ public final class EffigyChallengeResultNotifyOuterClass {
         return challengeScore_;
       }
       /**
-       * <code>uint32 challenge_score = 3;</code>
+       * <code>uint32 challenge_score = 8;</code>
        * @param value The challengeScore to set.
        * @return This builder for chaining.
        */
@@ -632,7 +578,7 @@ public final class EffigyChallengeResultNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 challenge_score = 3;</code>
+       * <code>uint32 challenge_score = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearChallengeScore() {
@@ -642,9 +588,40 @@ public final class EffigyChallengeResultNotifyOuterClass {
         return this;
       }
 
+      private boolean isSuccess_ ;
+      /**
+       * <code>bool is_success = 4;</code>
+       * @return The isSuccess.
+       */
+      @java.lang.Override
+      public boolean getIsSuccess() {
+        return isSuccess_;
+      }
+      /**
+       * <code>bool is_success = 4;</code>
+       * @param value The isSuccess to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIsSuccess(boolean value) {
+        
+        isSuccess_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool is_success = 4;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsSuccess() {
+        
+        isSuccess_ = false;
+        onChanged();
+        return this;
+      }
+
       private int challengeId_ ;
       /**
-       * <code>uint32 challenge_id = 7;</code>
+       * <code>uint32 challenge_id = 13;</code>
        * @return The challengeId.
        */
       @java.lang.Override
@@ -652,7 +629,7 @@ public final class EffigyChallengeResultNotifyOuterClass {
         return challengeId_;
       }
       /**
-       * <code>uint32 challenge_id = 7;</code>
+       * <code>uint32 challenge_id = 13;</code>
        * @param value The challengeId to set.
        * @return This builder for chaining.
        */
@@ -663,12 +640,43 @@ public final class EffigyChallengeResultNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 challenge_id = 7;</code>
+       * <code>uint32 challenge_id = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearChallengeId() {
         
         challengeId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int challengeMaxScore_ ;
+      /**
+       * <code>uint32 challenge_max_score = 6;</code>
+       * @return The challengeMaxScore.
+       */
+      @java.lang.Override
+      public int getChallengeMaxScore() {
+        return challengeMaxScore_;
+      }
+      /**
+       * <code>uint32 challenge_max_score = 6;</code>
+       * @param value The challengeMaxScore to set.
+       * @return This builder for chaining.
+       */
+      public Builder setChallengeMaxScore(int value) {
+        
+        challengeMaxScore_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 challenge_max_score = 6;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearChallengeMaxScore() {
+        
+        challengeMaxScore_ = 0;
         onChanged();
         return this;
       }
@@ -740,9 +748,9 @@ public final class EffigyChallengeResultNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n!EffigyChallengeResultNotify.proto\"}\n\033E" +
-      "ffigyChallengeResultNotify\022\022\n\nis_success" +
-      "\030\005 \001(\010\022\033\n\023challenge_max_score\030\014 \001(\r\022\027\n\017c" +
-      "hallenge_score\030\003 \001(\r\022\024\n\014challenge_id\030\007 \001" +
+      "ffigyChallengeResultNotify\022\027\n\017challenge_" +
+      "score\030\010 \001(\r\022\022\n\nis_success\030\004 \001(\010\022\024\n\014chall" +
+      "enge_id\030\r \001(\r\022\033\n\023challenge_max_score\030\006 \001" +
       "(\rB\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -754,7 +762,7 @@ public final class EffigyChallengeResultNotifyOuterClass {
     internal_static_EffigyChallengeResultNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_EffigyChallengeResultNotify_descriptor,
-        new java.lang.String[] { "IsSuccess", "ChallengeMaxScore", "ChallengeScore", "ChallengeId", });
+        new java.lang.String[] { "ChallengeScore", "IsSuccess", "ChallengeId", "ChallengeMaxScore", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

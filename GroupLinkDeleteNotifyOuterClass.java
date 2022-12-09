@@ -19,16 +19,20 @@ public final class GroupLinkDeleteNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 bundle_id = 12;</code>
+     * <code>uint32 bundle_id = 9;</code>
      * @return The bundleId.
      */
     int getBundleId();
   }
   /**
    * <pre>
-   * CmdId: 5775
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 5772;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code GroupLinkDeleteNotify}
@@ -75,7 +79,7 @@ public final class GroupLinkDeleteNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 96: {
+            case 72: {
 
               bundleId_ = input.readUInt32();
               break;
@@ -112,10 +116,10 @@ public final class GroupLinkDeleteNotifyOuterClass {
               emu.grasscutter.net.proto.GroupLinkDeleteNotifyOuterClass.GroupLinkDeleteNotify.class, emu.grasscutter.net.proto.GroupLinkDeleteNotifyOuterClass.GroupLinkDeleteNotify.Builder.class);
     }
 
-    public static final int BUNDLE_ID_FIELD_NUMBER = 12;
+    public static final int BUNDLE_ID_FIELD_NUMBER = 9;
     private int bundleId_;
     /**
-     * <code>uint32 bundle_id = 12;</code>
+     * <code>uint32 bundle_id = 9;</code>
      * @return The bundleId.
      */
     @java.lang.Override
@@ -138,7 +142,7 @@ public final class GroupLinkDeleteNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (bundleId_ != 0) {
-        output.writeUInt32(12, bundleId_);
+        output.writeUInt32(9, bundleId_);
       }
       unknownFields.writeTo(output);
     }
@@ -151,7 +155,7 @@ public final class GroupLinkDeleteNotifyOuterClass {
       size = 0;
       if (bundleId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, bundleId_);
+          .computeUInt32Size(9, bundleId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -280,9 +284,13 @@ public final class GroupLinkDeleteNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 5775
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 5772;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code GroupLinkDeleteNotify}
@@ -433,7 +441,7 @@ public final class GroupLinkDeleteNotifyOuterClass {
 
       private int bundleId_ ;
       /**
-       * <code>uint32 bundle_id = 12;</code>
+       * <code>uint32 bundle_id = 9;</code>
        * @return The bundleId.
        */
       @java.lang.Override
@@ -441,7 +449,7 @@ public final class GroupLinkDeleteNotifyOuterClass {
         return bundleId_;
       }
       /**
-       * <code>uint32 bundle_id = 12;</code>
+       * <code>uint32 bundle_id = 9;</code>
        * @param value The bundleId to set.
        * @return This builder for chaining.
        */
@@ -452,7 +460,7 @@ public final class GroupLinkDeleteNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 bundle_id = 12;</code>
+       * <code>uint32 bundle_id = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearBundleId() {
@@ -529,7 +537,7 @@ public final class GroupLinkDeleteNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\033GroupLinkDeleteNotify.proto\"*\n\025GroupLi" +
-      "nkDeleteNotify\022\021\n\tbundle_id\030\014 \001(\rB\033\n\031emu" +
+      "nkDeleteNotify\022\021\n\tbundle_id\030\t \001(\rB\033\n\031emu" +
       ".grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

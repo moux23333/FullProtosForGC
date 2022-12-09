@@ -19,23 +19,23 @@ public final class CheckGroupReplacedRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 4;</code>
+     * <code>int32 retcode = 14;</code>
      * @return The retcode.
      */
     int getRetcode();
 
     /**
-     * <code>repeated uint32 replaced_group_id_list = 6;</code>
+     * <code>repeated uint32 replaced_group_id_list = 10;</code>
      * @return A list containing the replacedGroupIdList.
      */
     java.util.List<java.lang.Integer> getReplacedGroupIdListList();
     /**
-     * <code>repeated uint32 replaced_group_id_list = 6;</code>
+     * <code>repeated uint32 replaced_group_id_list = 10;</code>
      * @return The count of replacedGroupIdList.
      */
     int getReplacedGroupIdListCount();
     /**
-     * <code>repeated uint32 replaced_group_id_list = 6;</code>
+     * <code>repeated uint32 replaced_group_id_list = 10;</code>
      * @param index The index of the element to return.
      * @return The replacedGroupIdList at the given index.
      */
@@ -43,9 +43,13 @@ public final class CheckGroupReplacedRspOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 3152
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 3411;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code CheckGroupReplacedRsp}
@@ -94,12 +98,7 @@ public final class CheckGroupReplacedRspOuterClass {
             case 0:
               done = true;
               break;
-            case 32: {
-
-              retcode_ = input.readInt32();
-              break;
-            }
-            case 48: {
+            case 80: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 replacedGroupIdList_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
@@ -107,7 +106,7 @@ public final class CheckGroupReplacedRspOuterClass {
               replacedGroupIdList_.addInt(input.readUInt32());
               break;
             }
-            case 50: {
+            case 82: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -118,6 +117,11 @@ public final class CheckGroupReplacedRspOuterClass {
                 replacedGroupIdList_.addInt(input.readUInt32());
               }
               input.popLimit(limit);
+              break;
+            }
+            case 112: {
+
+              retcode_ = input.readInt32();
               break;
             }
             default: {
@@ -155,10 +159,10 @@ public final class CheckGroupReplacedRspOuterClass {
               emu.grasscutter.net.proto.CheckGroupReplacedRspOuterClass.CheckGroupReplacedRsp.class, emu.grasscutter.net.proto.CheckGroupReplacedRspOuterClass.CheckGroupReplacedRsp.Builder.class);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 4;
+    public static final int RETCODE_FIELD_NUMBER = 14;
     private int retcode_;
     /**
-     * <code>int32 retcode = 4;</code>
+     * <code>int32 retcode = 14;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -166,10 +170,10 @@ public final class CheckGroupReplacedRspOuterClass {
       return retcode_;
     }
 
-    public static final int REPLACED_GROUP_ID_LIST_FIELD_NUMBER = 6;
+    public static final int REPLACED_GROUP_ID_LIST_FIELD_NUMBER = 10;
     private com.google.protobuf.Internal.IntList replacedGroupIdList_;
     /**
-     * <code>repeated uint32 replaced_group_id_list = 6;</code>
+     * <code>repeated uint32 replaced_group_id_list = 10;</code>
      * @return A list containing the replacedGroupIdList.
      */
     @java.lang.Override
@@ -178,14 +182,14 @@ public final class CheckGroupReplacedRspOuterClass {
       return replacedGroupIdList_;
     }
     /**
-     * <code>repeated uint32 replaced_group_id_list = 6;</code>
+     * <code>repeated uint32 replaced_group_id_list = 10;</code>
      * @return The count of replacedGroupIdList.
      */
     public int getReplacedGroupIdListCount() {
       return replacedGroupIdList_.size();
     }
     /**
-     * <code>repeated uint32 replaced_group_id_list = 6;</code>
+     * <code>repeated uint32 replaced_group_id_list = 10;</code>
      * @param index The index of the element to return.
      * @return The replacedGroupIdList at the given index.
      */
@@ -209,15 +213,15 @@ public final class CheckGroupReplacedRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      if (retcode_ != 0) {
-        output.writeInt32(4, retcode_);
-      }
       if (getReplacedGroupIdListList().size() > 0) {
-        output.writeUInt32NoTag(50);
+        output.writeUInt32NoTag(82);
         output.writeUInt32NoTag(replacedGroupIdListMemoizedSerializedSize);
       }
       for (int i = 0; i < replacedGroupIdList_.size(); i++) {
         output.writeUInt32NoTag(replacedGroupIdList_.getInt(i));
+      }
+      if (retcode_ != 0) {
+        output.writeInt32(14, retcode_);
       }
       unknownFields.writeTo(output);
     }
@@ -228,10 +232,6 @@ public final class CheckGroupReplacedRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (retcode_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(4, retcode_);
-      }
       {
         int dataSize = 0;
         for (int i = 0; i < replacedGroupIdList_.size(); i++) {
@@ -245,6 +245,10 @@ public final class CheckGroupReplacedRspOuterClass {
               .computeInt32SizeNoTag(dataSize);
         }
         replacedGroupIdListMemoizedSerializedSize = dataSize;
+      }
+      if (retcode_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(14, retcode_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -379,9 +383,13 @@ public final class CheckGroupReplacedRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 3152
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 3411;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code CheckGroupReplacedRsp}
@@ -551,7 +559,7 @@ public final class CheckGroupReplacedRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 4;</code>
+       * <code>int32 retcode = 14;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -559,7 +567,7 @@ public final class CheckGroupReplacedRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 4;</code>
+       * <code>int32 retcode = 14;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -570,7 +578,7 @@ public final class CheckGroupReplacedRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 4;</code>
+       * <code>int32 retcode = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -588,7 +596,7 @@ public final class CheckGroupReplacedRspOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 replaced_group_id_list = 6;</code>
+       * <code>repeated uint32 replaced_group_id_list = 10;</code>
        * @return A list containing the replacedGroupIdList.
        */
       public java.util.List<java.lang.Integer>
@@ -597,14 +605,14 @@ public final class CheckGroupReplacedRspOuterClass {
                  java.util.Collections.unmodifiableList(replacedGroupIdList_) : replacedGroupIdList_;
       }
       /**
-       * <code>repeated uint32 replaced_group_id_list = 6;</code>
+       * <code>repeated uint32 replaced_group_id_list = 10;</code>
        * @return The count of replacedGroupIdList.
        */
       public int getReplacedGroupIdListCount() {
         return replacedGroupIdList_.size();
       }
       /**
-       * <code>repeated uint32 replaced_group_id_list = 6;</code>
+       * <code>repeated uint32 replaced_group_id_list = 10;</code>
        * @param index The index of the element to return.
        * @return The replacedGroupIdList at the given index.
        */
@@ -612,7 +620,7 @@ public final class CheckGroupReplacedRspOuterClass {
         return replacedGroupIdList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 replaced_group_id_list = 6;</code>
+       * <code>repeated uint32 replaced_group_id_list = 10;</code>
        * @param index The index to set the value at.
        * @param value The replacedGroupIdList to set.
        * @return This builder for chaining.
@@ -625,7 +633,7 @@ public final class CheckGroupReplacedRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 replaced_group_id_list = 6;</code>
+       * <code>repeated uint32 replaced_group_id_list = 10;</code>
        * @param value The replacedGroupIdList to add.
        * @return This builder for chaining.
        */
@@ -636,7 +644,7 @@ public final class CheckGroupReplacedRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 replaced_group_id_list = 6;</code>
+       * <code>repeated uint32 replaced_group_id_list = 10;</code>
        * @param values The replacedGroupIdList to add.
        * @return This builder for chaining.
        */
@@ -649,7 +657,7 @@ public final class CheckGroupReplacedRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 replaced_group_id_list = 6;</code>
+       * <code>repeated uint32 replaced_group_id_list = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearReplacedGroupIdList() {
@@ -726,8 +734,8 @@ public final class CheckGroupReplacedRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\033CheckGroupReplacedRsp.proto\"H\n\025CheckGr" +
-      "oupReplacedRsp\022\017\n\007retcode\030\004 \001(\005\022\036\n\026repla" +
-      "ced_group_id_list\030\006 \003(\rB\033\n\031emu.grasscutt" +
+      "oupReplacedRsp\022\017\n\007retcode\030\016 \001(\005\022\036\n\026repla" +
+      "ced_group_id_list\030\n \003(\rB\033\n\031emu.grasscutt" +
       "er.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

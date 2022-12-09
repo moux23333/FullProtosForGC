@@ -19,13 +19,7 @@ public final class FocusAvatarRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 5;</code>
-     * @return The retcode.
-     */
-    int getRetcode();
-
-    /**
-     * <code>bool is_focus = 11;</code>
+     * <code>bool is_focus = 2;</code>
      * @return The isFocus.
      */
     boolean getIsFocus();
@@ -35,12 +29,22 @@ public final class FocusAvatarRspOuterClass {
      * @return The avatarGuid.
      */
     long getAvatarGuid();
+
+    /**
+     * <code>int32 retcode = 15;</code>
+     * @return The retcode.
+     */
+    int getRetcode();
   }
   /**
    * <pre>
-   * CmdId: 1681
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 1786;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code FocusAvatarRsp}
@@ -87,19 +91,19 @@ public final class FocusAvatarRspOuterClass {
             case 0:
               done = true;
               break;
+            case 16: {
+
+              isFocus_ = input.readBool();
+              break;
+            }
             case 32: {
 
               avatarGuid_ = input.readUInt64();
               break;
             }
-            case 40: {
+            case 120: {
 
               retcode_ = input.readInt32();
-              break;
-            }
-            case 88: {
-
-              isFocus_ = input.readBool();
               break;
             }
             default: {
@@ -134,21 +138,10 @@ public final class FocusAvatarRspOuterClass {
               emu.grasscutter.net.proto.FocusAvatarRspOuterClass.FocusAvatarRsp.class, emu.grasscutter.net.proto.FocusAvatarRspOuterClass.FocusAvatarRsp.Builder.class);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 5;
-    private int retcode_;
-    /**
-     * <code>int32 retcode = 5;</code>
-     * @return The retcode.
-     */
-    @java.lang.Override
-    public int getRetcode() {
-      return retcode_;
-    }
-
-    public static final int IS_FOCUS_FIELD_NUMBER = 11;
+    public static final int IS_FOCUS_FIELD_NUMBER = 2;
     private boolean isFocus_;
     /**
-     * <code>bool is_focus = 11;</code>
+     * <code>bool is_focus = 2;</code>
      * @return The isFocus.
      */
     @java.lang.Override
@@ -167,6 +160,17 @@ public final class FocusAvatarRspOuterClass {
       return avatarGuid_;
     }
 
+    public static final int RETCODE_FIELD_NUMBER = 15;
+    private int retcode_;
+    /**
+     * <code>int32 retcode = 15;</code>
+     * @return The retcode.
+     */
+    @java.lang.Override
+    public int getRetcode() {
+      return retcode_;
+    }
+
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
     public final boolean isInitialized() {
@@ -181,14 +185,14 @@ public final class FocusAvatarRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (isFocus_ != false) {
+        output.writeBool(2, isFocus_);
+      }
       if (avatarGuid_ != 0L) {
         output.writeUInt64(4, avatarGuid_);
       }
       if (retcode_ != 0) {
-        output.writeInt32(5, retcode_);
-      }
-      if (isFocus_ != false) {
-        output.writeBool(11, isFocus_);
+        output.writeInt32(15, retcode_);
       }
       unknownFields.writeTo(output);
     }
@@ -199,17 +203,17 @@ public final class FocusAvatarRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (isFocus_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(2, isFocus_);
+      }
       if (avatarGuid_ != 0L) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt64Size(4, avatarGuid_);
       }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(5, retcode_);
-      }
-      if (isFocus_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(11, isFocus_);
+          .computeInt32Size(15, retcode_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -226,12 +230,12 @@ public final class FocusAvatarRspOuterClass {
       }
       emu.grasscutter.net.proto.FocusAvatarRspOuterClass.FocusAvatarRsp other = (emu.grasscutter.net.proto.FocusAvatarRspOuterClass.FocusAvatarRsp) obj;
 
-      if (getRetcode()
-          != other.getRetcode()) return false;
       if (getIsFocus()
           != other.getIsFocus()) return false;
       if (getAvatarGuid()
           != other.getAvatarGuid()) return false;
+      if (getRetcode()
+          != other.getRetcode()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -243,14 +247,14 @@ public final class FocusAvatarRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
-      hash = (53 * hash) + getRetcode();
       hash = (37 * hash) + IS_FOCUS_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsFocus());
       hash = (37 * hash) + AVATAR_GUID_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
           getAvatarGuid());
+      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
+      hash = (53 * hash) + getRetcode();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -348,9 +352,13 @@ public final class FocusAvatarRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 1681
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 1786;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code FocusAvatarRsp}
@@ -390,11 +398,11 @@ public final class FocusAvatarRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        retcode_ = 0;
-
         isFocus_ = false;
 
         avatarGuid_ = 0L;
+
+        retcode_ = 0;
 
         return this;
       }
@@ -422,9 +430,9 @@ public final class FocusAvatarRspOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.FocusAvatarRspOuterClass.FocusAvatarRsp buildPartial() {
         emu.grasscutter.net.proto.FocusAvatarRspOuterClass.FocusAvatarRsp result = new emu.grasscutter.net.proto.FocusAvatarRspOuterClass.FocusAvatarRsp(this);
-        result.retcode_ = retcode_;
         result.isFocus_ = isFocus_;
         result.avatarGuid_ = avatarGuid_;
+        result.retcode_ = retcode_;
         onBuilt();
         return result;
       }
@@ -473,14 +481,14 @@ public final class FocusAvatarRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.FocusAvatarRspOuterClass.FocusAvatarRsp other) {
         if (other == emu.grasscutter.net.proto.FocusAvatarRspOuterClass.FocusAvatarRsp.getDefaultInstance()) return this;
-        if (other.getRetcode() != 0) {
-          setRetcode(other.getRetcode());
-        }
         if (other.getIsFocus() != false) {
           setIsFocus(other.getIsFocus());
         }
         if (other.getAvatarGuid() != 0L) {
           setAvatarGuid(other.getAvatarGuid());
+        }
+        if (other.getRetcode() != 0) {
+          setRetcode(other.getRetcode());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -511,40 +519,9 @@ public final class FocusAvatarRspOuterClass {
         return this;
       }
 
-      private int retcode_ ;
-      /**
-       * <code>int32 retcode = 5;</code>
-       * @return The retcode.
-       */
-      @java.lang.Override
-      public int getRetcode() {
-        return retcode_;
-      }
-      /**
-       * <code>int32 retcode = 5;</code>
-       * @param value The retcode to set.
-       * @return This builder for chaining.
-       */
-      public Builder setRetcode(int value) {
-        
-        retcode_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>int32 retcode = 5;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearRetcode() {
-        
-        retcode_ = 0;
-        onChanged();
-        return this;
-      }
-
       private boolean isFocus_ ;
       /**
-       * <code>bool is_focus = 11;</code>
+       * <code>bool is_focus = 2;</code>
        * @return The isFocus.
        */
       @java.lang.Override
@@ -552,7 +529,7 @@ public final class FocusAvatarRspOuterClass {
         return isFocus_;
       }
       /**
-       * <code>bool is_focus = 11;</code>
+       * <code>bool is_focus = 2;</code>
        * @param value The isFocus to set.
        * @return This builder for chaining.
        */
@@ -563,7 +540,7 @@ public final class FocusAvatarRspOuterClass {
         return this;
       }
       /**
-       * <code>bool is_focus = 11;</code>
+       * <code>bool is_focus = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsFocus() {
@@ -600,6 +577,37 @@ public final class FocusAvatarRspOuterClass {
       public Builder clearAvatarGuid() {
         
         avatarGuid_ = 0L;
+        onChanged();
+        return this;
+      }
+
+      private int retcode_ ;
+      /**
+       * <code>int32 retcode = 15;</code>
+       * @return The retcode.
+       */
+      @java.lang.Override
+      public int getRetcode() {
+        return retcode_;
+      }
+      /**
+       * <code>int32 retcode = 15;</code>
+       * @param value The retcode to set.
+       * @return This builder for chaining.
+       */
+      public Builder setRetcode(int value) {
+        
+        retcode_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 retcode = 15;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearRetcode() {
+        
+        retcode_ = 0;
         onChanged();
         return this;
       }
@@ -671,8 +679,8 @@ public final class FocusAvatarRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\024FocusAvatarRsp.proto\"H\n\016FocusAvatarRsp" +
-      "\022\017\n\007retcode\030\005 \001(\005\022\020\n\010is_focus\030\013 \001(\010\022\023\n\013a" +
-      "vatar_guid\030\004 \001(\004B\033\n\031emu.grasscutter.net." +
+      "\022\020\n\010is_focus\030\002 \001(\010\022\023\n\013avatar_guid\030\004 \001(\004\022" +
+      "\017\n\007retcode\030\017 \001(\005B\033\n\031emu.grasscutter.net." +
       "protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -684,7 +692,7 @@ public final class FocusAvatarRspOuterClass {
     internal_static_FocusAvatarRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_FocusAvatarRsp_descriptor,
-        new java.lang.String[] { "Retcode", "IsFocus", "AvatarGuid", });
+        new java.lang.String[] { "IsFocus", "AvatarGuid", "Retcode", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

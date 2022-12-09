@@ -19,33 +19,37 @@ public final class LuaSetOptionNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>string lua_set_param = 8;</code>
+     * <code>string lua_set_param = 1;</code>
      * @return The luaSetParam.
      */
     java.lang.String getLuaSetParam();
     /**
-     * <code>string lua_set_param = 8;</code>
+     * <code>string lua_set_param = 1;</code>
      * @return The bytes for luaSetParam.
      */
     com.google.protobuf.ByteString
         getLuaSetParamBytes();
 
     /**
-     * <code>.LuaSetOptionNotify.LuaOptionType option_type = 10;</code>
+     * <code>.LuaSetOptionNotify.LuaOptionType option_type = 7;</code>
      * @return The enum numeric value on the wire for optionType.
      */
     int getOptionTypeValue();
     /**
-     * <code>.LuaSetOptionNotify.LuaOptionType option_type = 10;</code>
+     * <code>.LuaSetOptionNotify.LuaOptionType option_type = 7;</code>
      * @return The optionType.
      */
     emu.grasscutter.net.proto.LuaSetOptionNotifyOuterClass.LuaSetOptionNotify.LuaOptionType getOptionType();
   }
   /**
    * <pre>
-   * CmdId: 316
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 323;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code LuaSetOptionNotify}
@@ -94,13 +98,13 @@ public final class LuaSetOptionNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 66: {
+            case 10: {
               java.lang.String s = input.readStringRequireUtf8();
 
               luaSetParam_ = s;
               break;
             }
-            case 80: {
+            case 56: {
               int rawValue = input.readEnum();
 
               optionType_ = rawValue;
@@ -246,10 +250,10 @@ public final class LuaSetOptionNotifyOuterClass {
       // @@protoc_insertion_point(enum_scope:LuaSetOptionNotify.LuaOptionType)
     }
 
-    public static final int LUA_SET_PARAM_FIELD_NUMBER = 8;
+    public static final int LUA_SET_PARAM_FIELD_NUMBER = 1;
     private volatile java.lang.Object luaSetParam_;
     /**
-     * <code>string lua_set_param = 8;</code>
+     * <code>string lua_set_param = 1;</code>
      * @return The luaSetParam.
      */
     @java.lang.Override
@@ -266,7 +270,7 @@ public final class LuaSetOptionNotifyOuterClass {
       }
     }
     /**
-     * <code>string lua_set_param = 8;</code>
+     * <code>string lua_set_param = 1;</code>
      * @return The bytes for luaSetParam.
      */
     @java.lang.Override
@@ -284,17 +288,17 @@ public final class LuaSetOptionNotifyOuterClass {
       }
     }
 
-    public static final int OPTION_TYPE_FIELD_NUMBER = 10;
+    public static final int OPTION_TYPE_FIELD_NUMBER = 7;
     private int optionType_;
     /**
-     * <code>.LuaSetOptionNotify.LuaOptionType option_type = 10;</code>
+     * <code>.LuaSetOptionNotify.LuaOptionType option_type = 7;</code>
      * @return The enum numeric value on the wire for optionType.
      */
     @java.lang.Override public int getOptionTypeValue() {
       return optionType_;
     }
     /**
-     * <code>.LuaSetOptionNotify.LuaOptionType option_type = 10;</code>
+     * <code>.LuaSetOptionNotify.LuaOptionType option_type = 7;</code>
      * @return The optionType.
      */
     @java.lang.Override public emu.grasscutter.net.proto.LuaSetOptionNotifyOuterClass.LuaSetOptionNotify.LuaOptionType getOptionType() {
@@ -318,10 +322,10 @@ public final class LuaSetOptionNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(luaSetParam_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 8, luaSetParam_);
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 1, luaSetParam_);
       }
       if (optionType_ != emu.grasscutter.net.proto.LuaSetOptionNotifyOuterClass.LuaSetOptionNotify.LuaOptionType.LUA_OPTION_TYPE_NONE.getNumber()) {
-        output.writeEnum(10, optionType_);
+        output.writeEnum(7, optionType_);
       }
       unknownFields.writeTo(output);
     }
@@ -333,11 +337,11 @@ public final class LuaSetOptionNotifyOuterClass {
 
       size = 0;
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(luaSetParam_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(8, luaSetParam_);
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, luaSetParam_);
       }
       if (optionType_ != emu.grasscutter.net.proto.LuaSetOptionNotifyOuterClass.LuaSetOptionNotify.LuaOptionType.LUA_OPTION_TYPE_NONE.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(10, optionType_);
+          .computeEnumSize(7, optionType_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -469,9 +473,13 @@ public final class LuaSetOptionNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 316
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 323;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code LuaSetOptionNotify}
@@ -629,7 +637,7 @@ public final class LuaSetOptionNotifyOuterClass {
 
       private java.lang.Object luaSetParam_ = "";
       /**
-       * <code>string lua_set_param = 8;</code>
+       * <code>string lua_set_param = 1;</code>
        * @return The luaSetParam.
        */
       public java.lang.String getLuaSetParam() {
@@ -645,7 +653,7 @@ public final class LuaSetOptionNotifyOuterClass {
         }
       }
       /**
-       * <code>string lua_set_param = 8;</code>
+       * <code>string lua_set_param = 1;</code>
        * @return The bytes for luaSetParam.
        */
       public com.google.protobuf.ByteString
@@ -662,7 +670,7 @@ public final class LuaSetOptionNotifyOuterClass {
         }
       }
       /**
-       * <code>string lua_set_param = 8;</code>
+       * <code>string lua_set_param = 1;</code>
        * @param value The luaSetParam to set.
        * @return This builder for chaining.
        */
@@ -677,7 +685,7 @@ public final class LuaSetOptionNotifyOuterClass {
         return this;
       }
       /**
-       * <code>string lua_set_param = 8;</code>
+       * <code>string lua_set_param = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearLuaSetParam() {
@@ -687,7 +695,7 @@ public final class LuaSetOptionNotifyOuterClass {
         return this;
       }
       /**
-       * <code>string lua_set_param = 8;</code>
+       * <code>string lua_set_param = 1;</code>
        * @param value The bytes for luaSetParam to set.
        * @return This builder for chaining.
        */
@@ -705,14 +713,14 @@ public final class LuaSetOptionNotifyOuterClass {
 
       private int optionType_ = 0;
       /**
-       * <code>.LuaSetOptionNotify.LuaOptionType option_type = 10;</code>
+       * <code>.LuaSetOptionNotify.LuaOptionType option_type = 7;</code>
        * @return The enum numeric value on the wire for optionType.
        */
       @java.lang.Override public int getOptionTypeValue() {
         return optionType_;
       }
       /**
-       * <code>.LuaSetOptionNotify.LuaOptionType option_type = 10;</code>
+       * <code>.LuaSetOptionNotify.LuaOptionType option_type = 7;</code>
        * @param value The enum numeric value on the wire for optionType to set.
        * @return This builder for chaining.
        */
@@ -723,7 +731,7 @@ public final class LuaSetOptionNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.LuaSetOptionNotify.LuaOptionType option_type = 10;</code>
+       * <code>.LuaSetOptionNotify.LuaOptionType option_type = 7;</code>
        * @return The optionType.
        */
       @java.lang.Override
@@ -733,7 +741,7 @@ public final class LuaSetOptionNotifyOuterClass {
         return result == null ? emu.grasscutter.net.proto.LuaSetOptionNotifyOuterClass.LuaSetOptionNotify.LuaOptionType.UNRECOGNIZED : result;
       }
       /**
-       * <code>.LuaSetOptionNotify.LuaOptionType option_type = 10;</code>
+       * <code>.LuaSetOptionNotify.LuaOptionType option_type = 7;</code>
        * @param value The optionType to set.
        * @return This builder for chaining.
        */
@@ -747,7 +755,7 @@ public final class LuaSetOptionNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.LuaSetOptionNotify.LuaOptionType option_type = 10;</code>
+       * <code>.LuaSetOptionNotify.LuaOptionType option_type = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearOptionType() {
@@ -824,8 +832,8 @@ public final class LuaSetOptionNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\030LuaSetOptionNotify.proto\"\260\001\n\022LuaSetOpt" +
-      "ionNotify\022\025\n\rlua_set_param\030\010 \001(\t\0226\n\013opti" +
-      "on_type\030\n \001(\0162!.LuaSetOptionNotify.LuaOp" +
+      "ionNotify\022\025\n\rlua_set_param\030\001 \001(\t\0226\n\013opti" +
+      "on_type\030\007 \001(\0162!.LuaSetOptionNotify.LuaOp" +
       "tionType\"K\n\rLuaOptionType\022\030\n\024LUA_OPTION_" +
       "TYPE_NONE\020\000\022 \n\034LUA_OPTION_TYPE_PLAYER_IN" +
       "PUT\020\001B\033\n\031emu.grasscutter.net.protob\006prot" +

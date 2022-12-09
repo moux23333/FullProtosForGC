@@ -19,29 +19,33 @@ public final class StartArenaChallengeLevelReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 arena_challenge_id = 4;</code>
-     * @return The arenaChallengeId.
+     * <code>uint32 Unk3300_FDFNFLAKONG = 13;</code>
+     * @return The unk3300FDFNFLAKONG.
      */
-    int getArenaChallengeId();
+    int getUnk3300FDFNFLAKONG();
 
     /**
-     * <code>uint32 gadget_entity_id = 5;</code>
+     * <code>uint32 gadget_entity_id = 3;</code>
      * @return The gadgetEntityId.
      */
     int getGadgetEntityId();
 
     /**
-     * <code>uint32 arena_challenge_level = 2;</code>
-     * @return The arenaChallengeLevel.
+     * <code>uint32 Unk3300_DBHAGHMMLAI = 12;</code>
+     * @return The unk3300DBHAGHMMLAI.
      */
-    int getArenaChallengeLevel();
+    int getUnk3300DBHAGHMMLAI();
   }
   /**
    * <pre>
-   * CmdId: 2127
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 2196;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code StartArenaChallengeLevelReq}
@@ -88,19 +92,19 @@ public final class StartArenaChallengeLevelReqOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
-
-              arenaChallengeLevel_ = input.readUInt32();
-              break;
-            }
-            case 32: {
-
-              arenaChallengeId_ = input.readUInt32();
-              break;
-            }
-            case 40: {
+            case 24: {
 
               gadgetEntityId_ = input.readUInt32();
+              break;
+            }
+            case 96: {
+
+              unk3300DBHAGHMMLAI_ = input.readUInt32();
+              break;
+            }
+            case 104: {
+
+              unk3300FDFNFLAKONG_ = input.readUInt32();
               break;
             }
             default: {
@@ -135,21 +139,21 @@ public final class StartArenaChallengeLevelReqOuterClass {
               emu.grasscutter.net.proto.StartArenaChallengeLevelReqOuterClass.StartArenaChallengeLevelReq.class, emu.grasscutter.net.proto.StartArenaChallengeLevelReqOuterClass.StartArenaChallengeLevelReq.Builder.class);
     }
 
-    public static final int ARENA_CHALLENGE_ID_FIELD_NUMBER = 4;
-    private int arenaChallengeId_;
+    public static final int UNK3300_FDFNFLAKONG_FIELD_NUMBER = 13;
+    private int unk3300FDFNFLAKONG_;
     /**
-     * <code>uint32 arena_challenge_id = 4;</code>
-     * @return The arenaChallengeId.
+     * <code>uint32 Unk3300_FDFNFLAKONG = 13;</code>
+     * @return The unk3300FDFNFLAKONG.
      */
     @java.lang.Override
-    public int getArenaChallengeId() {
-      return arenaChallengeId_;
+    public int getUnk3300FDFNFLAKONG() {
+      return unk3300FDFNFLAKONG_;
     }
 
-    public static final int GADGET_ENTITY_ID_FIELD_NUMBER = 5;
+    public static final int GADGET_ENTITY_ID_FIELD_NUMBER = 3;
     private int gadgetEntityId_;
     /**
-     * <code>uint32 gadget_entity_id = 5;</code>
+     * <code>uint32 gadget_entity_id = 3;</code>
      * @return The gadgetEntityId.
      */
     @java.lang.Override
@@ -157,15 +161,15 @@ public final class StartArenaChallengeLevelReqOuterClass {
       return gadgetEntityId_;
     }
 
-    public static final int ARENA_CHALLENGE_LEVEL_FIELD_NUMBER = 2;
-    private int arenaChallengeLevel_;
+    public static final int UNK3300_DBHAGHMMLAI_FIELD_NUMBER = 12;
+    private int unk3300DBHAGHMMLAI_;
     /**
-     * <code>uint32 arena_challenge_level = 2;</code>
-     * @return The arenaChallengeLevel.
+     * <code>uint32 Unk3300_DBHAGHMMLAI = 12;</code>
+     * @return The unk3300DBHAGHMMLAI.
      */
     @java.lang.Override
-    public int getArenaChallengeLevel() {
-      return arenaChallengeLevel_;
+    public int getUnk3300DBHAGHMMLAI() {
+      return unk3300DBHAGHMMLAI_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -182,14 +186,14 @@ public final class StartArenaChallengeLevelReqOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (arenaChallengeLevel_ != 0) {
-        output.writeUInt32(2, arenaChallengeLevel_);
-      }
-      if (arenaChallengeId_ != 0) {
-        output.writeUInt32(4, arenaChallengeId_);
-      }
       if (gadgetEntityId_ != 0) {
-        output.writeUInt32(5, gadgetEntityId_);
+        output.writeUInt32(3, gadgetEntityId_);
+      }
+      if (unk3300DBHAGHMMLAI_ != 0) {
+        output.writeUInt32(12, unk3300DBHAGHMMLAI_);
+      }
+      if (unk3300FDFNFLAKONG_ != 0) {
+        output.writeUInt32(13, unk3300FDFNFLAKONG_);
       }
       unknownFields.writeTo(output);
     }
@@ -200,17 +204,17 @@ public final class StartArenaChallengeLevelReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (arenaChallengeLevel_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, arenaChallengeLevel_);
-      }
-      if (arenaChallengeId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, arenaChallengeId_);
-      }
       if (gadgetEntityId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, gadgetEntityId_);
+          .computeUInt32Size(3, gadgetEntityId_);
+      }
+      if (unk3300DBHAGHMMLAI_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(12, unk3300DBHAGHMMLAI_);
+      }
+      if (unk3300FDFNFLAKONG_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(13, unk3300FDFNFLAKONG_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -227,12 +231,12 @@ public final class StartArenaChallengeLevelReqOuterClass {
       }
       emu.grasscutter.net.proto.StartArenaChallengeLevelReqOuterClass.StartArenaChallengeLevelReq other = (emu.grasscutter.net.proto.StartArenaChallengeLevelReqOuterClass.StartArenaChallengeLevelReq) obj;
 
-      if (getArenaChallengeId()
-          != other.getArenaChallengeId()) return false;
+      if (getUnk3300FDFNFLAKONG()
+          != other.getUnk3300FDFNFLAKONG()) return false;
       if (getGadgetEntityId()
           != other.getGadgetEntityId()) return false;
-      if (getArenaChallengeLevel()
-          != other.getArenaChallengeLevel()) return false;
+      if (getUnk3300DBHAGHMMLAI()
+          != other.getUnk3300DBHAGHMMLAI()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -244,12 +248,12 @@ public final class StartArenaChallengeLevelReqOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + ARENA_CHALLENGE_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getArenaChallengeId();
+      hash = (37 * hash) + UNK3300_FDFNFLAKONG_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300FDFNFLAKONG();
       hash = (37 * hash) + GADGET_ENTITY_ID_FIELD_NUMBER;
       hash = (53 * hash) + getGadgetEntityId();
-      hash = (37 * hash) + ARENA_CHALLENGE_LEVEL_FIELD_NUMBER;
-      hash = (53 * hash) + getArenaChallengeLevel();
+      hash = (37 * hash) + UNK3300_DBHAGHMMLAI_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300DBHAGHMMLAI();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -347,10 +351,14 @@ public final class StartArenaChallengeLevelReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 2127
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 2196;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code StartArenaChallengeLevelReq}
@@ -390,11 +398,11 @@ public final class StartArenaChallengeLevelReqOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        arenaChallengeId_ = 0;
+        unk3300FDFNFLAKONG_ = 0;
 
         gadgetEntityId_ = 0;
 
-        arenaChallengeLevel_ = 0;
+        unk3300DBHAGHMMLAI_ = 0;
 
         return this;
       }
@@ -422,9 +430,9 @@ public final class StartArenaChallengeLevelReqOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.StartArenaChallengeLevelReqOuterClass.StartArenaChallengeLevelReq buildPartial() {
         emu.grasscutter.net.proto.StartArenaChallengeLevelReqOuterClass.StartArenaChallengeLevelReq result = new emu.grasscutter.net.proto.StartArenaChallengeLevelReqOuterClass.StartArenaChallengeLevelReq(this);
-        result.arenaChallengeId_ = arenaChallengeId_;
+        result.unk3300FDFNFLAKONG_ = unk3300FDFNFLAKONG_;
         result.gadgetEntityId_ = gadgetEntityId_;
-        result.arenaChallengeLevel_ = arenaChallengeLevel_;
+        result.unk3300DBHAGHMMLAI_ = unk3300DBHAGHMMLAI_;
         onBuilt();
         return result;
       }
@@ -473,14 +481,14 @@ public final class StartArenaChallengeLevelReqOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.StartArenaChallengeLevelReqOuterClass.StartArenaChallengeLevelReq other) {
         if (other == emu.grasscutter.net.proto.StartArenaChallengeLevelReqOuterClass.StartArenaChallengeLevelReq.getDefaultInstance()) return this;
-        if (other.getArenaChallengeId() != 0) {
-          setArenaChallengeId(other.getArenaChallengeId());
+        if (other.getUnk3300FDFNFLAKONG() != 0) {
+          setUnk3300FDFNFLAKONG(other.getUnk3300FDFNFLAKONG());
         }
         if (other.getGadgetEntityId() != 0) {
           setGadgetEntityId(other.getGadgetEntityId());
         }
-        if (other.getArenaChallengeLevel() != 0) {
-          setArenaChallengeLevel(other.getArenaChallengeLevel());
+        if (other.getUnk3300DBHAGHMMLAI() != 0) {
+          setUnk3300DBHAGHMMLAI(other.getUnk3300DBHAGHMMLAI());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -511,40 +519,40 @@ public final class StartArenaChallengeLevelReqOuterClass {
         return this;
       }
 
-      private int arenaChallengeId_ ;
+      private int unk3300FDFNFLAKONG_ ;
       /**
-       * <code>uint32 arena_challenge_id = 4;</code>
-       * @return The arenaChallengeId.
+       * <code>uint32 Unk3300_FDFNFLAKONG = 13;</code>
+       * @return The unk3300FDFNFLAKONG.
        */
       @java.lang.Override
-      public int getArenaChallengeId() {
-        return arenaChallengeId_;
+      public int getUnk3300FDFNFLAKONG() {
+        return unk3300FDFNFLAKONG_;
       }
       /**
-       * <code>uint32 arena_challenge_id = 4;</code>
-       * @param value The arenaChallengeId to set.
+       * <code>uint32 Unk3300_FDFNFLAKONG = 13;</code>
+       * @param value The unk3300FDFNFLAKONG to set.
        * @return This builder for chaining.
        */
-      public Builder setArenaChallengeId(int value) {
+      public Builder setUnk3300FDFNFLAKONG(int value) {
         
-        arenaChallengeId_ = value;
+        unk3300FDFNFLAKONG_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 arena_challenge_id = 4;</code>
+       * <code>uint32 Unk3300_FDFNFLAKONG = 13;</code>
        * @return This builder for chaining.
        */
-      public Builder clearArenaChallengeId() {
+      public Builder clearUnk3300FDFNFLAKONG() {
         
-        arenaChallengeId_ = 0;
+        unk3300FDFNFLAKONG_ = 0;
         onChanged();
         return this;
       }
 
       private int gadgetEntityId_ ;
       /**
-       * <code>uint32 gadget_entity_id = 5;</code>
+       * <code>uint32 gadget_entity_id = 3;</code>
        * @return The gadgetEntityId.
        */
       @java.lang.Override
@@ -552,7 +560,7 @@ public final class StartArenaChallengeLevelReqOuterClass {
         return gadgetEntityId_;
       }
       /**
-       * <code>uint32 gadget_entity_id = 5;</code>
+       * <code>uint32 gadget_entity_id = 3;</code>
        * @param value The gadgetEntityId to set.
        * @return This builder for chaining.
        */
@@ -563,7 +571,7 @@ public final class StartArenaChallengeLevelReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 gadget_entity_id = 5;</code>
+       * <code>uint32 gadget_entity_id = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearGadgetEntityId() {
@@ -573,33 +581,33 @@ public final class StartArenaChallengeLevelReqOuterClass {
         return this;
       }
 
-      private int arenaChallengeLevel_ ;
+      private int unk3300DBHAGHMMLAI_ ;
       /**
-       * <code>uint32 arena_challenge_level = 2;</code>
-       * @return The arenaChallengeLevel.
+       * <code>uint32 Unk3300_DBHAGHMMLAI = 12;</code>
+       * @return The unk3300DBHAGHMMLAI.
        */
       @java.lang.Override
-      public int getArenaChallengeLevel() {
-        return arenaChallengeLevel_;
+      public int getUnk3300DBHAGHMMLAI() {
+        return unk3300DBHAGHMMLAI_;
       }
       /**
-       * <code>uint32 arena_challenge_level = 2;</code>
-       * @param value The arenaChallengeLevel to set.
+       * <code>uint32 Unk3300_DBHAGHMMLAI = 12;</code>
+       * @param value The unk3300DBHAGHMMLAI to set.
        * @return This builder for chaining.
        */
-      public Builder setArenaChallengeLevel(int value) {
+      public Builder setUnk3300DBHAGHMMLAI(int value) {
         
-        arenaChallengeLevel_ = value;
+        unk3300DBHAGHMMLAI_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 arena_challenge_level = 2;</code>
+       * <code>uint32 Unk3300_DBHAGHMMLAI = 12;</code>
        * @return This builder for chaining.
        */
-      public Builder clearArenaChallengeLevel() {
+      public Builder clearUnk3300DBHAGHMMLAI() {
         
-        arenaChallengeLevel_ = 0;
+        unk3300DBHAGHMMLAI_ = 0;
         onChanged();
         return this;
       }
@@ -670,11 +678,11 @@ public final class StartArenaChallengeLevelReqOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n!StartArenaChallengeLevelReq.proto\"r\n\033S" +
-      "tartArenaChallengeLevelReq\022\032\n\022arena_chal" +
-      "lenge_id\030\004 \001(\r\022\030\n\020gadget_entity_id\030\005 \001(\r" +
-      "\022\035\n\025arena_challenge_level\030\002 \001(\rB\033\n\031emu.g" +
-      "rasscutter.net.protob\006proto3"
+      "\n!StartArenaChallengeLevelReq.proto\"q\n\033S" +
+      "tartArenaChallengeLevelReq\022\033\n\023Unk3300_FD" +
+      "FNFLAKONG\030\r \001(\r\022\030\n\020gadget_entity_id\030\003 \001(" +
+      "\r\022\033\n\023Unk3300_DBHAGHMMLAI\030\014 \001(\rB\033\n\031emu.gr" +
+      "asscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -685,7 +693,7 @@ public final class StartArenaChallengeLevelReqOuterClass {
     internal_static_StartArenaChallengeLevelReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_StartArenaChallengeLevelReq_descriptor,
-        new java.lang.String[] { "ArenaChallengeId", "GadgetEntityId", "ArenaChallengeLevel", });
+        new java.lang.String[] { "Unk3300FDFNFLAKONG", "GadgetEntityId", "Unk3300DBHAGHMMLAI", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

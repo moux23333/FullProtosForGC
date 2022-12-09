@@ -19,7 +19,7 @@ public final class HomeSetBlueprintSlotOptionReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 slot_id = 1;</code>
+     * <code>uint32 slot_id = 3;</code>
      * @return The slotId.
      */
     int getSlotId();
@@ -32,10 +32,14 @@ public final class HomeSetBlueprintSlotOptionReqOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 4798
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 4491;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code HomeSetBlueprintSlotOptionReq}
@@ -82,7 +86,7 @@ public final class HomeSetBlueprintSlotOptionReqOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
+            case 24: {
 
               slotId_ = input.readUInt32();
               break;
@@ -124,10 +128,10 @@ public final class HomeSetBlueprintSlotOptionReqOuterClass {
               emu.grasscutter.net.proto.HomeSetBlueprintSlotOptionReqOuterClass.HomeSetBlueprintSlotOptionReq.class, emu.grasscutter.net.proto.HomeSetBlueprintSlotOptionReqOuterClass.HomeSetBlueprintSlotOptionReq.Builder.class);
     }
 
-    public static final int SLOT_ID_FIELD_NUMBER = 1;
+    public static final int SLOT_ID_FIELD_NUMBER = 3;
     private int slotId_;
     /**
-     * <code>uint32 slot_id = 1;</code>
+     * <code>uint32 slot_id = 3;</code>
      * @return The slotId.
      */
     @java.lang.Override
@@ -161,7 +165,7 @@ public final class HomeSetBlueprintSlotOptionReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (slotId_ != 0) {
-        output.writeUInt32(1, slotId_);
+        output.writeUInt32(3, slotId_);
       }
       if (isAllowCopy_ != false) {
         output.writeBool(8, isAllowCopy_);
@@ -177,7 +181,7 @@ public final class HomeSetBlueprintSlotOptionReqOuterClass {
       size = 0;
       if (slotId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, slotId_);
+          .computeUInt32Size(3, slotId_);
       }
       if (isAllowCopy_ != false) {
         size += com.google.protobuf.CodedOutputStream
@@ -315,10 +319,14 @@ public final class HomeSetBlueprintSlotOptionReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 4798
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 4491;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code HomeSetBlueprintSlotOptionReq}
@@ -475,7 +483,7 @@ public final class HomeSetBlueprintSlotOptionReqOuterClass {
 
       private int slotId_ ;
       /**
-       * <code>uint32 slot_id = 1;</code>
+       * <code>uint32 slot_id = 3;</code>
        * @return The slotId.
        */
       @java.lang.Override
@@ -483,7 +491,7 @@ public final class HomeSetBlueprintSlotOptionReqOuterClass {
         return slotId_;
       }
       /**
-       * <code>uint32 slot_id = 1;</code>
+       * <code>uint32 slot_id = 3;</code>
        * @param value The slotId to set.
        * @return This builder for chaining.
        */
@@ -494,7 +502,7 @@ public final class HomeSetBlueprintSlotOptionReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 slot_id = 1;</code>
+       * <code>uint32 slot_id = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearSlotId() {
@@ -603,7 +611,7 @@ public final class HomeSetBlueprintSlotOptionReqOuterClass {
     java.lang.String[] descriptorData = {
       "\n#HomeSetBlueprintSlotOptionReq.proto\"G\n" +
       "\035HomeSetBlueprintSlotOptionReq\022\017\n\007slot_i" +
-      "d\030\001 \001(\r\022\025\n\ris_allow_copy\030\010 \001(\010B\033\n\031emu.gr" +
+      "d\030\003 \001(\r\022\025\n\ris_allow_copy\030\010 \001(\010B\033\n\031emu.gr" +
       "asscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

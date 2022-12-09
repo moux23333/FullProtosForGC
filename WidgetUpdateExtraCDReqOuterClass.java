@@ -19,34 +19,38 @@ public final class WidgetUpdateExtraCDReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 material_id = 14;</code>
+     * <code>uint32 material_id = 6;</code>
      * @return The materialId.
      */
     int getMaterialId();
 
     /**
-     * <code>.WidgetExtraCdType extra_cd_type = 10;</code>
+     * <code>.WidgetExtraCdType extra_cd_type = 7;</code>
      * @return The enum numeric value on the wire for extraCdType.
      */
     int getExtraCdTypeValue();
     /**
-     * <code>.WidgetExtraCdType extra_cd_type = 10;</code>
+     * <code>.WidgetExtraCdType extra_cd_type = 7;</code>
      * @return The extraCdType.
      */
     emu.grasscutter.net.proto.WidgetExtraCdTypeOuterClass.WidgetExtraCdType getExtraCdType();
 
     /**
-     * <code>uint32 cd_group = 7;</code>
+     * <code>uint32 cd_group = 14;</code>
      * @return The cdGroup.
      */
     int getCdGroup();
   }
   /**
    * <pre>
-   * CmdId: 5960
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 5907;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code WidgetUpdateExtraCDReq}
@@ -94,12 +98,12 @@ public final class WidgetUpdateExtraCDReqOuterClass {
             case 0:
               done = true;
               break;
-            case 56: {
+            case 48: {
 
-              cdGroup_ = input.readUInt32();
+              materialId_ = input.readUInt32();
               break;
             }
-            case 80: {
+            case 56: {
               int rawValue = input.readEnum();
 
               extraCdType_ = rawValue;
@@ -107,7 +111,7 @@ public final class WidgetUpdateExtraCDReqOuterClass {
             }
             case 112: {
 
-              materialId_ = input.readUInt32();
+              cdGroup_ = input.readUInt32();
               break;
             }
             default: {
@@ -142,10 +146,10 @@ public final class WidgetUpdateExtraCDReqOuterClass {
               emu.grasscutter.net.proto.WidgetUpdateExtraCDReqOuterClass.WidgetUpdateExtraCDReq.class, emu.grasscutter.net.proto.WidgetUpdateExtraCDReqOuterClass.WidgetUpdateExtraCDReq.Builder.class);
     }
 
-    public static final int MATERIAL_ID_FIELD_NUMBER = 14;
+    public static final int MATERIAL_ID_FIELD_NUMBER = 6;
     private int materialId_;
     /**
-     * <code>uint32 material_id = 14;</code>
+     * <code>uint32 material_id = 6;</code>
      * @return The materialId.
      */
     @java.lang.Override
@@ -153,17 +157,17 @@ public final class WidgetUpdateExtraCDReqOuterClass {
       return materialId_;
     }
 
-    public static final int EXTRA_CD_TYPE_FIELD_NUMBER = 10;
+    public static final int EXTRA_CD_TYPE_FIELD_NUMBER = 7;
     private int extraCdType_;
     /**
-     * <code>.WidgetExtraCdType extra_cd_type = 10;</code>
+     * <code>.WidgetExtraCdType extra_cd_type = 7;</code>
      * @return The enum numeric value on the wire for extraCdType.
      */
     @java.lang.Override public int getExtraCdTypeValue() {
       return extraCdType_;
     }
     /**
-     * <code>.WidgetExtraCdType extra_cd_type = 10;</code>
+     * <code>.WidgetExtraCdType extra_cd_type = 7;</code>
      * @return The extraCdType.
      */
     @java.lang.Override public emu.grasscutter.net.proto.WidgetExtraCdTypeOuterClass.WidgetExtraCdType getExtraCdType() {
@@ -172,10 +176,10 @@ public final class WidgetUpdateExtraCDReqOuterClass {
       return result == null ? emu.grasscutter.net.proto.WidgetExtraCdTypeOuterClass.WidgetExtraCdType.UNRECOGNIZED : result;
     }
 
-    public static final int CD_GROUP_FIELD_NUMBER = 7;
+    public static final int CD_GROUP_FIELD_NUMBER = 14;
     private int cdGroup_;
     /**
-     * <code>uint32 cd_group = 7;</code>
+     * <code>uint32 cd_group = 14;</code>
      * @return The cdGroup.
      */
     @java.lang.Override
@@ -197,14 +201,14 @@ public final class WidgetUpdateExtraCDReqOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (cdGroup_ != 0) {
-        output.writeUInt32(7, cdGroup_);
+      if (materialId_ != 0) {
+        output.writeUInt32(6, materialId_);
       }
       if (extraCdType_ != emu.grasscutter.net.proto.WidgetExtraCdTypeOuterClass.WidgetExtraCdType.WIDGET_EXTRA_CD_TYPE_NONE.getNumber()) {
-        output.writeEnum(10, extraCdType_);
+        output.writeEnum(7, extraCdType_);
       }
-      if (materialId_ != 0) {
-        output.writeUInt32(14, materialId_);
+      if (cdGroup_ != 0) {
+        output.writeUInt32(14, cdGroup_);
       }
       unknownFields.writeTo(output);
     }
@@ -215,17 +219,17 @@ public final class WidgetUpdateExtraCDReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (cdGroup_ != 0) {
+      if (materialId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, cdGroup_);
+          .computeUInt32Size(6, materialId_);
       }
       if (extraCdType_ != emu.grasscutter.net.proto.WidgetExtraCdTypeOuterClass.WidgetExtraCdType.WIDGET_EXTRA_CD_TYPE_NONE.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(10, extraCdType_);
+          .computeEnumSize(7, extraCdType_);
       }
-      if (materialId_ != 0) {
+      if (cdGroup_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, materialId_);
+          .computeUInt32Size(14, cdGroup_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -361,10 +365,14 @@ public final class WidgetUpdateExtraCDReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 5960
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 5907;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code WidgetUpdateExtraCDReq}
@@ -527,7 +535,7 @@ public final class WidgetUpdateExtraCDReqOuterClass {
 
       private int materialId_ ;
       /**
-       * <code>uint32 material_id = 14;</code>
+       * <code>uint32 material_id = 6;</code>
        * @return The materialId.
        */
       @java.lang.Override
@@ -535,7 +543,7 @@ public final class WidgetUpdateExtraCDReqOuterClass {
         return materialId_;
       }
       /**
-       * <code>uint32 material_id = 14;</code>
+       * <code>uint32 material_id = 6;</code>
        * @param value The materialId to set.
        * @return This builder for chaining.
        */
@@ -546,7 +554,7 @@ public final class WidgetUpdateExtraCDReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 material_id = 14;</code>
+       * <code>uint32 material_id = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearMaterialId() {
@@ -558,14 +566,14 @@ public final class WidgetUpdateExtraCDReqOuterClass {
 
       private int extraCdType_ = 0;
       /**
-       * <code>.WidgetExtraCdType extra_cd_type = 10;</code>
+       * <code>.WidgetExtraCdType extra_cd_type = 7;</code>
        * @return The enum numeric value on the wire for extraCdType.
        */
       @java.lang.Override public int getExtraCdTypeValue() {
         return extraCdType_;
       }
       /**
-       * <code>.WidgetExtraCdType extra_cd_type = 10;</code>
+       * <code>.WidgetExtraCdType extra_cd_type = 7;</code>
        * @param value The enum numeric value on the wire for extraCdType to set.
        * @return This builder for chaining.
        */
@@ -576,7 +584,7 @@ public final class WidgetUpdateExtraCDReqOuterClass {
         return this;
       }
       /**
-       * <code>.WidgetExtraCdType extra_cd_type = 10;</code>
+       * <code>.WidgetExtraCdType extra_cd_type = 7;</code>
        * @return The extraCdType.
        */
       @java.lang.Override
@@ -586,7 +594,7 @@ public final class WidgetUpdateExtraCDReqOuterClass {
         return result == null ? emu.grasscutter.net.proto.WidgetExtraCdTypeOuterClass.WidgetExtraCdType.UNRECOGNIZED : result;
       }
       /**
-       * <code>.WidgetExtraCdType extra_cd_type = 10;</code>
+       * <code>.WidgetExtraCdType extra_cd_type = 7;</code>
        * @param value The extraCdType to set.
        * @return This builder for chaining.
        */
@@ -600,7 +608,7 @@ public final class WidgetUpdateExtraCDReqOuterClass {
         return this;
       }
       /**
-       * <code>.WidgetExtraCdType extra_cd_type = 10;</code>
+       * <code>.WidgetExtraCdType extra_cd_type = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearExtraCdType() {
@@ -612,7 +620,7 @@ public final class WidgetUpdateExtraCDReqOuterClass {
 
       private int cdGroup_ ;
       /**
-       * <code>uint32 cd_group = 7;</code>
+       * <code>uint32 cd_group = 14;</code>
        * @return The cdGroup.
        */
       @java.lang.Override
@@ -620,7 +628,7 @@ public final class WidgetUpdateExtraCDReqOuterClass {
         return cdGroup_;
       }
       /**
-       * <code>uint32 cd_group = 7;</code>
+       * <code>uint32 cd_group = 14;</code>
        * @param value The cdGroup to set.
        * @return This builder for chaining.
        */
@@ -631,7 +639,7 @@ public final class WidgetUpdateExtraCDReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 cd_group = 7;</code>
+       * <code>uint32 cd_group = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearCdGroup() {
@@ -709,8 +717,8 @@ public final class WidgetUpdateExtraCDReqOuterClass {
     java.lang.String[] descriptorData = {
       "\n\034WidgetUpdateExtraCDReq.proto\032\027WidgetEx" +
       "traCdType.proto\"j\n\026WidgetUpdateExtraCDRe" +
-      "q\022\023\n\013material_id\030\016 \001(\r\022)\n\rextra_cd_type\030" +
-      "\n \001(\0162\022.WidgetExtraCdType\022\020\n\010cd_group\030\007 " +
+      "q\022\023\n\013material_id\030\006 \001(\r\022)\n\rextra_cd_type\030" +
+      "\007 \001(\0162\022.WidgetExtraCdType\022\020\n\010cd_group\030\016 " +
       "\001(\rB\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

@@ -19,17 +19,21 @@ public final class MichiaeMatsuriUnlockCrystalSkillReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 crystal_skill_id = 1;</code>
+     * <code>uint32 crystal_skill_id = 10;</code>
      * @return The crystalSkillId.
      */
     int getCrystalSkillId();
   }
   /**
    * <pre>
-   * CmdId: 8345
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 8632;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code MichiaeMatsuriUnlockCrystalSkillReq}
@@ -76,7 +80,7 @@ public final class MichiaeMatsuriUnlockCrystalSkillReqOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
+            case 80: {
 
               crystalSkillId_ = input.readUInt32();
               break;
@@ -113,10 +117,10 @@ public final class MichiaeMatsuriUnlockCrystalSkillReqOuterClass {
               emu.grasscutter.net.proto.MichiaeMatsuriUnlockCrystalSkillReqOuterClass.MichiaeMatsuriUnlockCrystalSkillReq.class, emu.grasscutter.net.proto.MichiaeMatsuriUnlockCrystalSkillReqOuterClass.MichiaeMatsuriUnlockCrystalSkillReq.Builder.class);
     }
 
-    public static final int CRYSTAL_SKILL_ID_FIELD_NUMBER = 1;
+    public static final int CRYSTAL_SKILL_ID_FIELD_NUMBER = 10;
     private int crystalSkillId_;
     /**
-     * <code>uint32 crystal_skill_id = 1;</code>
+     * <code>uint32 crystal_skill_id = 10;</code>
      * @return The crystalSkillId.
      */
     @java.lang.Override
@@ -139,7 +143,7 @@ public final class MichiaeMatsuriUnlockCrystalSkillReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (crystalSkillId_ != 0) {
-        output.writeUInt32(1, crystalSkillId_);
+        output.writeUInt32(10, crystalSkillId_);
       }
       unknownFields.writeTo(output);
     }
@@ -152,7 +156,7 @@ public final class MichiaeMatsuriUnlockCrystalSkillReqOuterClass {
       size = 0;
       if (crystalSkillId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, crystalSkillId_);
+          .computeUInt32Size(10, crystalSkillId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -281,10 +285,14 @@ public final class MichiaeMatsuriUnlockCrystalSkillReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 8345
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 8632;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code MichiaeMatsuriUnlockCrystalSkillReq}
@@ -435,7 +443,7 @@ public final class MichiaeMatsuriUnlockCrystalSkillReqOuterClass {
 
       private int crystalSkillId_ ;
       /**
-       * <code>uint32 crystal_skill_id = 1;</code>
+       * <code>uint32 crystal_skill_id = 10;</code>
        * @return The crystalSkillId.
        */
       @java.lang.Override
@@ -443,7 +451,7 @@ public final class MichiaeMatsuriUnlockCrystalSkillReqOuterClass {
         return crystalSkillId_;
       }
       /**
-       * <code>uint32 crystal_skill_id = 1;</code>
+       * <code>uint32 crystal_skill_id = 10;</code>
        * @param value The crystalSkillId to set.
        * @return This builder for chaining.
        */
@@ -454,7 +462,7 @@ public final class MichiaeMatsuriUnlockCrystalSkillReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 crystal_skill_id = 1;</code>
+       * <code>uint32 crystal_skill_id = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearCrystalSkillId() {
@@ -532,7 +540,7 @@ public final class MichiaeMatsuriUnlockCrystalSkillReqOuterClass {
     java.lang.String[] descriptorData = {
       "\n)MichiaeMatsuriUnlockCrystalSkillReq.pr" +
       "oto\"?\n#MichiaeMatsuriUnlockCrystalSkillR" +
-      "eq\022\030\n\020crystal_skill_id\030\001 \001(\rB\033\n\031emu.gras" +
+      "eq\022\030\n\020crystal_skill_id\030\n \001(\rB\033\n\031emu.gras" +
       "scutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

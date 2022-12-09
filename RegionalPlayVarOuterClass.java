@@ -19,28 +19,28 @@ public final class RegionalPlayVarOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 type = 15;</code>
+     * <code>uint32 type = 5;</code>
      * @return The type.
      */
     int getType();
 
     /**
-     * <code>float max_value = 11;</code>
-     * @return The maxValue.
+     * <code>float Unk3300_FOBMHHNIPPH = 4;</code>
+     * @return The unk3300FOBMHHNIPPH.
      */
-    float getMaxValue();
+    float getUnk3300FOBMHHNIPPH();
 
     /**
-     * <code>float value = 3;</code>
+     * <code>float Unk3300_PIDHFABKIJN = 3;</code>
+     * @return The unk3300PIDHFABKIJN.
+     */
+    float getUnk3300PIDHFABKIJN();
+
+    /**
+     * <code>float value = 2;</code>
      * @return The value.
      */
     float getValue();
-
-    /**
-     * <code>float base_value = 10;</code>
-     * @return The baseValue.
-     */
-    float getBaseValue();
   }
   /**
    * Protobuf type {@code RegionalPlayVar}
@@ -87,22 +87,22 @@ public final class RegionalPlayVarOuterClass {
             case 0:
               done = true;
               break;
-            case 29: {
+            case 21: {
 
               value_ = input.readFloat();
               break;
             }
-            case 85: {
+            case 29: {
 
-              baseValue_ = input.readFloat();
+              unk3300PIDHFABKIJN_ = input.readFloat();
               break;
             }
-            case 93: {
+            case 37: {
 
-              maxValue_ = input.readFloat();
+              unk3300FOBMHHNIPPH_ = input.readFloat();
               break;
             }
-            case 120: {
+            case 40: {
 
               type_ = input.readUInt32();
               break;
@@ -139,10 +139,10 @@ public final class RegionalPlayVarOuterClass {
               emu.grasscutter.net.proto.RegionalPlayVarOuterClass.RegionalPlayVar.class, emu.grasscutter.net.proto.RegionalPlayVarOuterClass.RegionalPlayVar.Builder.class);
     }
 
-    public static final int TYPE_FIELD_NUMBER = 15;
+    public static final int TYPE_FIELD_NUMBER = 5;
     private int type_;
     /**
-     * <code>uint32 type = 15;</code>
+     * <code>uint32 type = 5;</code>
      * @return The type.
      */
     @java.lang.Override
@@ -150,37 +150,37 @@ public final class RegionalPlayVarOuterClass {
       return type_;
     }
 
-    public static final int MAX_VALUE_FIELD_NUMBER = 11;
-    private float maxValue_;
+    public static final int UNK3300_FOBMHHNIPPH_FIELD_NUMBER = 4;
+    private float unk3300FOBMHHNIPPH_;
     /**
-     * <code>float max_value = 11;</code>
-     * @return The maxValue.
+     * <code>float Unk3300_FOBMHHNIPPH = 4;</code>
+     * @return The unk3300FOBMHHNIPPH.
      */
     @java.lang.Override
-    public float getMaxValue() {
-      return maxValue_;
+    public float getUnk3300FOBMHHNIPPH() {
+      return unk3300FOBMHHNIPPH_;
     }
 
-    public static final int VALUE_FIELD_NUMBER = 3;
+    public static final int UNK3300_PIDHFABKIJN_FIELD_NUMBER = 3;
+    private float unk3300PIDHFABKIJN_;
+    /**
+     * <code>float Unk3300_PIDHFABKIJN = 3;</code>
+     * @return The unk3300PIDHFABKIJN.
+     */
+    @java.lang.Override
+    public float getUnk3300PIDHFABKIJN() {
+      return unk3300PIDHFABKIJN_;
+    }
+
+    public static final int VALUE_FIELD_NUMBER = 2;
     private float value_;
     /**
-     * <code>float value = 3;</code>
+     * <code>float value = 2;</code>
      * @return The value.
      */
     @java.lang.Override
     public float getValue() {
       return value_;
-    }
-
-    public static final int BASE_VALUE_FIELD_NUMBER = 10;
-    private float baseValue_;
-    /**
-     * <code>float base_value = 10;</code>
-     * @return The baseValue.
-     */
-    @java.lang.Override
-    public float getBaseValue() {
-      return baseValue_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -198,16 +198,16 @@ public final class RegionalPlayVarOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (value_ != 0F) {
-        output.writeFloat(3, value_);
+        output.writeFloat(2, value_);
       }
-      if (baseValue_ != 0F) {
-        output.writeFloat(10, baseValue_);
+      if (unk3300PIDHFABKIJN_ != 0F) {
+        output.writeFloat(3, unk3300PIDHFABKIJN_);
       }
-      if (maxValue_ != 0F) {
-        output.writeFloat(11, maxValue_);
+      if (unk3300FOBMHHNIPPH_ != 0F) {
+        output.writeFloat(4, unk3300FOBMHHNIPPH_);
       }
       if (type_ != 0) {
-        output.writeUInt32(15, type_);
+        output.writeUInt32(5, type_);
       }
       unknownFields.writeTo(output);
     }
@@ -220,19 +220,19 @@ public final class RegionalPlayVarOuterClass {
       size = 0;
       if (value_ != 0F) {
         size += com.google.protobuf.CodedOutputStream
-          .computeFloatSize(3, value_);
+          .computeFloatSize(2, value_);
       }
-      if (baseValue_ != 0F) {
+      if (unk3300PIDHFABKIJN_ != 0F) {
         size += com.google.protobuf.CodedOutputStream
-          .computeFloatSize(10, baseValue_);
+          .computeFloatSize(3, unk3300PIDHFABKIJN_);
       }
-      if (maxValue_ != 0F) {
+      if (unk3300FOBMHHNIPPH_ != 0F) {
         size += com.google.protobuf.CodedOutputStream
-          .computeFloatSize(11, maxValue_);
+          .computeFloatSize(4, unk3300FOBMHHNIPPH_);
       }
       if (type_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, type_);
+          .computeUInt32Size(5, type_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -251,15 +251,15 @@ public final class RegionalPlayVarOuterClass {
 
       if (getType()
           != other.getType()) return false;
-      if (java.lang.Float.floatToIntBits(getMaxValue())
+      if (java.lang.Float.floatToIntBits(getUnk3300FOBMHHNIPPH())
           != java.lang.Float.floatToIntBits(
-              other.getMaxValue())) return false;
+              other.getUnk3300FOBMHHNIPPH())) return false;
+      if (java.lang.Float.floatToIntBits(getUnk3300PIDHFABKIJN())
+          != java.lang.Float.floatToIntBits(
+              other.getUnk3300PIDHFABKIJN())) return false;
       if (java.lang.Float.floatToIntBits(getValue())
           != java.lang.Float.floatToIntBits(
               other.getValue())) return false;
-      if (java.lang.Float.floatToIntBits(getBaseValue())
-          != java.lang.Float.floatToIntBits(
-              other.getBaseValue())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -273,15 +273,15 @@ public final class RegionalPlayVarOuterClass {
       hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + TYPE_FIELD_NUMBER;
       hash = (53 * hash) + getType();
-      hash = (37 * hash) + MAX_VALUE_FIELD_NUMBER;
+      hash = (37 * hash) + UNK3300_FOBMHHNIPPH_FIELD_NUMBER;
       hash = (53 * hash) + java.lang.Float.floatToIntBits(
-          getMaxValue());
+          getUnk3300FOBMHHNIPPH());
+      hash = (37 * hash) + UNK3300_PIDHFABKIJN_FIELD_NUMBER;
+      hash = (53 * hash) + java.lang.Float.floatToIntBits(
+          getUnk3300PIDHFABKIJN());
       hash = (37 * hash) + VALUE_FIELD_NUMBER;
       hash = (53 * hash) + java.lang.Float.floatToIntBits(
           getValue());
-      hash = (37 * hash) + BASE_VALUE_FIELD_NUMBER;
-      hash = (53 * hash) + java.lang.Float.floatToIntBits(
-          getBaseValue());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -417,11 +417,11 @@ public final class RegionalPlayVarOuterClass {
         super.clear();
         type_ = 0;
 
-        maxValue_ = 0F;
+        unk3300FOBMHHNIPPH_ = 0F;
+
+        unk3300PIDHFABKIJN_ = 0F;
 
         value_ = 0F;
-
-        baseValue_ = 0F;
 
         return this;
       }
@@ -450,9 +450,9 @@ public final class RegionalPlayVarOuterClass {
       public emu.grasscutter.net.proto.RegionalPlayVarOuterClass.RegionalPlayVar buildPartial() {
         emu.grasscutter.net.proto.RegionalPlayVarOuterClass.RegionalPlayVar result = new emu.grasscutter.net.proto.RegionalPlayVarOuterClass.RegionalPlayVar(this);
         result.type_ = type_;
-        result.maxValue_ = maxValue_;
+        result.unk3300FOBMHHNIPPH_ = unk3300FOBMHHNIPPH_;
+        result.unk3300PIDHFABKIJN_ = unk3300PIDHFABKIJN_;
         result.value_ = value_;
-        result.baseValue_ = baseValue_;
         onBuilt();
         return result;
       }
@@ -504,14 +504,14 @@ public final class RegionalPlayVarOuterClass {
         if (other.getType() != 0) {
           setType(other.getType());
         }
-        if (other.getMaxValue() != 0F) {
-          setMaxValue(other.getMaxValue());
+        if (other.getUnk3300FOBMHHNIPPH() != 0F) {
+          setUnk3300FOBMHHNIPPH(other.getUnk3300FOBMHHNIPPH());
+        }
+        if (other.getUnk3300PIDHFABKIJN() != 0F) {
+          setUnk3300PIDHFABKIJN(other.getUnk3300PIDHFABKIJN());
         }
         if (other.getValue() != 0F) {
           setValue(other.getValue());
-        }
-        if (other.getBaseValue() != 0F) {
-          setBaseValue(other.getBaseValue());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -544,7 +544,7 @@ public final class RegionalPlayVarOuterClass {
 
       private int type_ ;
       /**
-       * <code>uint32 type = 15;</code>
+       * <code>uint32 type = 5;</code>
        * @return The type.
        */
       @java.lang.Override
@@ -552,7 +552,7 @@ public final class RegionalPlayVarOuterClass {
         return type_;
       }
       /**
-       * <code>uint32 type = 15;</code>
+       * <code>uint32 type = 5;</code>
        * @param value The type to set.
        * @return This builder for chaining.
        */
@@ -563,7 +563,7 @@ public final class RegionalPlayVarOuterClass {
         return this;
       }
       /**
-       * <code>uint32 type = 15;</code>
+       * <code>uint32 type = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearType() {
@@ -573,40 +573,71 @@ public final class RegionalPlayVarOuterClass {
         return this;
       }
 
-      private float maxValue_ ;
+      private float unk3300FOBMHHNIPPH_ ;
       /**
-       * <code>float max_value = 11;</code>
-       * @return The maxValue.
+       * <code>float Unk3300_FOBMHHNIPPH = 4;</code>
+       * @return The unk3300FOBMHHNIPPH.
        */
       @java.lang.Override
-      public float getMaxValue() {
-        return maxValue_;
+      public float getUnk3300FOBMHHNIPPH() {
+        return unk3300FOBMHHNIPPH_;
       }
       /**
-       * <code>float max_value = 11;</code>
-       * @param value The maxValue to set.
+       * <code>float Unk3300_FOBMHHNIPPH = 4;</code>
+       * @param value The unk3300FOBMHHNIPPH to set.
        * @return This builder for chaining.
        */
-      public Builder setMaxValue(float value) {
+      public Builder setUnk3300FOBMHHNIPPH(float value) {
         
-        maxValue_ = value;
+        unk3300FOBMHHNIPPH_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>float max_value = 11;</code>
+       * <code>float Unk3300_FOBMHHNIPPH = 4;</code>
        * @return This builder for chaining.
        */
-      public Builder clearMaxValue() {
+      public Builder clearUnk3300FOBMHHNIPPH() {
         
-        maxValue_ = 0F;
+        unk3300FOBMHHNIPPH_ = 0F;
+        onChanged();
+        return this;
+      }
+
+      private float unk3300PIDHFABKIJN_ ;
+      /**
+       * <code>float Unk3300_PIDHFABKIJN = 3;</code>
+       * @return The unk3300PIDHFABKIJN.
+       */
+      @java.lang.Override
+      public float getUnk3300PIDHFABKIJN() {
+        return unk3300PIDHFABKIJN_;
+      }
+      /**
+       * <code>float Unk3300_PIDHFABKIJN = 3;</code>
+       * @param value The unk3300PIDHFABKIJN to set.
+       * @return This builder for chaining.
+       */
+      public Builder setUnk3300PIDHFABKIJN(float value) {
+        
+        unk3300PIDHFABKIJN_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>float Unk3300_PIDHFABKIJN = 3;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearUnk3300PIDHFABKIJN() {
+        
+        unk3300PIDHFABKIJN_ = 0F;
         onChanged();
         return this;
       }
 
       private float value_ ;
       /**
-       * <code>float value = 3;</code>
+       * <code>float value = 2;</code>
        * @return The value.
        */
       @java.lang.Override
@@ -614,7 +645,7 @@ public final class RegionalPlayVarOuterClass {
         return value_;
       }
       /**
-       * <code>float value = 3;</code>
+       * <code>float value = 2;</code>
        * @param value The value to set.
        * @return This builder for chaining.
        */
@@ -625,43 +656,12 @@ public final class RegionalPlayVarOuterClass {
         return this;
       }
       /**
-       * <code>float value = 3;</code>
+       * <code>float value = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearValue() {
         
         value_ = 0F;
-        onChanged();
-        return this;
-      }
-
-      private float baseValue_ ;
-      /**
-       * <code>float base_value = 10;</code>
-       * @return The baseValue.
-       */
-      @java.lang.Override
-      public float getBaseValue() {
-        return baseValue_;
-      }
-      /**
-       * <code>float base_value = 10;</code>
-       * @param value The baseValue to set.
-       * @return This builder for chaining.
-       */
-      public Builder setBaseValue(float value) {
-        
-        baseValue_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>float base_value = 10;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearBaseValue() {
-        
-        baseValue_ = 0F;
         onChanged();
         return this;
       }
@@ -732,10 +732,11 @@ public final class RegionalPlayVarOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\025RegionalPlayVar.proto\"U\n\017RegionalPlayV" +
-      "ar\022\014\n\004type\030\017 \001(\r\022\021\n\tmax_value\030\013 \001(\002\022\r\n\005v" +
-      "alue\030\003 \001(\002\022\022\n\nbase_value\030\n \001(\002B\033\n\031emu.gr" +
-      "asscutter.net.protob\006proto3"
+      "\n\025RegionalPlayVar.proto\"h\n\017RegionalPlayV" +
+      "ar\022\014\n\004type\030\005 \001(\r\022\033\n\023Unk3300_FOBMHHNIPPH\030" +
+      "\004 \001(\002\022\033\n\023Unk3300_PIDHFABKIJN\030\003 \001(\002\022\r\n\005va" +
+      "lue\030\002 \001(\002B\033\n\031emu.grasscutter.net.protob\006" +
+      "proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -746,7 +747,7 @@ public final class RegionalPlayVarOuterClass {
     internal_static_RegionalPlayVar_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_RegionalPlayVar_descriptor,
-        new java.lang.String[] { "Type", "MaxValue", "Value", "BaseValue", });
+        new java.lang.String[] { "Type", "Unk3300FOBMHHNIPPH", "Unk3300PIDHFABKIJN", "Value", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

@@ -19,31 +19,31 @@ public final class DynamicLayerNodesOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 level = 10;</code>
+     * <code>int32 level = 7;</code>
      * @return The level.
      */
     int getLevel();
 
     /**
-     * <code>repeated .DynamicSVONode nodes = 6;</code>
+     * <code>repeated .DynamicSVONode nodes = 4;</code>
      */
     java.util.List<emu.grasscutter.net.proto.DynamicSVONodeOuterClass.DynamicSVONode> 
         getNodesList();
     /**
-     * <code>repeated .DynamicSVONode nodes = 6;</code>
+     * <code>repeated .DynamicSVONode nodes = 4;</code>
      */
     emu.grasscutter.net.proto.DynamicSVONodeOuterClass.DynamicSVONode getNodes(int index);
     /**
-     * <code>repeated .DynamicSVONode nodes = 6;</code>
+     * <code>repeated .DynamicSVONode nodes = 4;</code>
      */
     int getNodesCount();
     /**
-     * <code>repeated .DynamicSVONode nodes = 6;</code>
+     * <code>repeated .DynamicSVONode nodes = 4;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.DynamicSVONodeOuterClass.DynamicSVONodeOrBuilder> 
         getNodesOrBuilderList();
     /**
-     * <code>repeated .DynamicSVONode nodes = 6;</code>
+     * <code>repeated .DynamicSVONode nodes = 4;</code>
      */
     emu.grasscutter.net.proto.DynamicSVONodeOuterClass.DynamicSVONodeOrBuilder getNodesOrBuilder(
         int index);
@@ -95,7 +95,7 @@ public final class DynamicLayerNodesOuterClass {
             case 0:
               done = true;
               break;
-            case 50: {
+            case 34: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 nodes_ = new java.util.ArrayList<emu.grasscutter.net.proto.DynamicSVONodeOuterClass.DynamicSVONode>();
                 mutable_bitField0_ |= 0x00000001;
@@ -104,7 +104,7 @@ public final class DynamicLayerNodesOuterClass {
                   input.readMessage(emu.grasscutter.net.proto.DynamicSVONodeOuterClass.DynamicSVONode.parser(), extensionRegistry));
               break;
             }
-            case 80: {
+            case 56: {
 
               level_ = input.readInt32();
               break;
@@ -144,10 +144,10 @@ public final class DynamicLayerNodesOuterClass {
               emu.grasscutter.net.proto.DynamicLayerNodesOuterClass.DynamicLayerNodes.class, emu.grasscutter.net.proto.DynamicLayerNodesOuterClass.DynamicLayerNodes.Builder.class);
     }
 
-    public static final int LEVEL_FIELD_NUMBER = 10;
+    public static final int LEVEL_FIELD_NUMBER = 7;
     private int level_;
     /**
-     * <code>int32 level = 10;</code>
+     * <code>int32 level = 7;</code>
      * @return The level.
      */
     @java.lang.Override
@@ -155,17 +155,17 @@ public final class DynamicLayerNodesOuterClass {
       return level_;
     }
 
-    public static final int NODES_FIELD_NUMBER = 6;
+    public static final int NODES_FIELD_NUMBER = 4;
     private java.util.List<emu.grasscutter.net.proto.DynamicSVONodeOuterClass.DynamicSVONode> nodes_;
     /**
-     * <code>repeated .DynamicSVONode nodes = 6;</code>
+     * <code>repeated .DynamicSVONode nodes = 4;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.DynamicSVONodeOuterClass.DynamicSVONode> getNodesList() {
       return nodes_;
     }
     /**
-     * <code>repeated .DynamicSVONode nodes = 6;</code>
+     * <code>repeated .DynamicSVONode nodes = 4;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.DynamicSVONodeOuterClass.DynamicSVONodeOrBuilder> 
@@ -173,21 +173,21 @@ public final class DynamicLayerNodesOuterClass {
       return nodes_;
     }
     /**
-     * <code>repeated .DynamicSVONode nodes = 6;</code>
+     * <code>repeated .DynamicSVONode nodes = 4;</code>
      */
     @java.lang.Override
     public int getNodesCount() {
       return nodes_.size();
     }
     /**
-     * <code>repeated .DynamicSVONode nodes = 6;</code>
+     * <code>repeated .DynamicSVONode nodes = 4;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.DynamicSVONodeOuterClass.DynamicSVONode getNodes(int index) {
       return nodes_.get(index);
     }
     /**
-     * <code>repeated .DynamicSVONode nodes = 6;</code>
+     * <code>repeated .DynamicSVONode nodes = 4;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.DynamicSVONodeOuterClass.DynamicSVONodeOrBuilder getNodesOrBuilder(
@@ -210,10 +210,10 @@ public final class DynamicLayerNodesOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       for (int i = 0; i < nodes_.size(); i++) {
-        output.writeMessage(6, nodes_.get(i));
+        output.writeMessage(4, nodes_.get(i));
       }
       if (level_ != 0) {
-        output.writeInt32(10, level_);
+        output.writeInt32(7, level_);
       }
       unknownFields.writeTo(output);
     }
@@ -226,11 +226,11 @@ public final class DynamicLayerNodesOuterClass {
       size = 0;
       for (int i = 0; i < nodes_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(6, nodes_.get(i));
+          .computeMessageSize(4, nodes_.get(i));
       }
       if (level_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(10, level_);
+          .computeInt32Size(7, level_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -556,7 +556,7 @@ public final class DynamicLayerNodesOuterClass {
 
       private int level_ ;
       /**
-       * <code>int32 level = 10;</code>
+       * <code>int32 level = 7;</code>
        * @return The level.
        */
       @java.lang.Override
@@ -564,7 +564,7 @@ public final class DynamicLayerNodesOuterClass {
         return level_;
       }
       /**
-       * <code>int32 level = 10;</code>
+       * <code>int32 level = 7;</code>
        * @param value The level to set.
        * @return This builder for chaining.
        */
@@ -575,7 +575,7 @@ public final class DynamicLayerNodesOuterClass {
         return this;
       }
       /**
-       * <code>int32 level = 10;</code>
+       * <code>int32 level = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearLevel() {
@@ -598,7 +598,7 @@ public final class DynamicLayerNodesOuterClass {
           emu.grasscutter.net.proto.DynamicSVONodeOuterClass.DynamicSVONode, emu.grasscutter.net.proto.DynamicSVONodeOuterClass.DynamicSVONode.Builder, emu.grasscutter.net.proto.DynamicSVONodeOuterClass.DynamicSVONodeOrBuilder> nodesBuilder_;
 
       /**
-       * <code>repeated .DynamicSVONode nodes = 6;</code>
+       * <code>repeated .DynamicSVONode nodes = 4;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.DynamicSVONodeOuterClass.DynamicSVONode> getNodesList() {
         if (nodesBuilder_ == null) {
@@ -608,7 +608,7 @@ public final class DynamicLayerNodesOuterClass {
         }
       }
       /**
-       * <code>repeated .DynamicSVONode nodes = 6;</code>
+       * <code>repeated .DynamicSVONode nodes = 4;</code>
        */
       public int getNodesCount() {
         if (nodesBuilder_ == null) {
@@ -618,7 +618,7 @@ public final class DynamicLayerNodesOuterClass {
         }
       }
       /**
-       * <code>repeated .DynamicSVONode nodes = 6;</code>
+       * <code>repeated .DynamicSVONode nodes = 4;</code>
        */
       public emu.grasscutter.net.proto.DynamicSVONodeOuterClass.DynamicSVONode getNodes(int index) {
         if (nodesBuilder_ == null) {
@@ -628,7 +628,7 @@ public final class DynamicLayerNodesOuterClass {
         }
       }
       /**
-       * <code>repeated .DynamicSVONode nodes = 6;</code>
+       * <code>repeated .DynamicSVONode nodes = 4;</code>
        */
       public Builder setNodes(
           int index, emu.grasscutter.net.proto.DynamicSVONodeOuterClass.DynamicSVONode value) {
@@ -645,7 +645,7 @@ public final class DynamicLayerNodesOuterClass {
         return this;
       }
       /**
-       * <code>repeated .DynamicSVONode nodes = 6;</code>
+       * <code>repeated .DynamicSVONode nodes = 4;</code>
        */
       public Builder setNodes(
           int index, emu.grasscutter.net.proto.DynamicSVONodeOuterClass.DynamicSVONode.Builder builderForValue) {
@@ -659,7 +659,7 @@ public final class DynamicLayerNodesOuterClass {
         return this;
       }
       /**
-       * <code>repeated .DynamicSVONode nodes = 6;</code>
+       * <code>repeated .DynamicSVONode nodes = 4;</code>
        */
       public Builder addNodes(emu.grasscutter.net.proto.DynamicSVONodeOuterClass.DynamicSVONode value) {
         if (nodesBuilder_ == null) {
@@ -675,7 +675,7 @@ public final class DynamicLayerNodesOuterClass {
         return this;
       }
       /**
-       * <code>repeated .DynamicSVONode nodes = 6;</code>
+       * <code>repeated .DynamicSVONode nodes = 4;</code>
        */
       public Builder addNodes(
           int index, emu.grasscutter.net.proto.DynamicSVONodeOuterClass.DynamicSVONode value) {
@@ -692,7 +692,7 @@ public final class DynamicLayerNodesOuterClass {
         return this;
       }
       /**
-       * <code>repeated .DynamicSVONode nodes = 6;</code>
+       * <code>repeated .DynamicSVONode nodes = 4;</code>
        */
       public Builder addNodes(
           emu.grasscutter.net.proto.DynamicSVONodeOuterClass.DynamicSVONode.Builder builderForValue) {
@@ -706,7 +706,7 @@ public final class DynamicLayerNodesOuterClass {
         return this;
       }
       /**
-       * <code>repeated .DynamicSVONode nodes = 6;</code>
+       * <code>repeated .DynamicSVONode nodes = 4;</code>
        */
       public Builder addNodes(
           int index, emu.grasscutter.net.proto.DynamicSVONodeOuterClass.DynamicSVONode.Builder builderForValue) {
@@ -720,7 +720,7 @@ public final class DynamicLayerNodesOuterClass {
         return this;
       }
       /**
-       * <code>repeated .DynamicSVONode nodes = 6;</code>
+       * <code>repeated .DynamicSVONode nodes = 4;</code>
        */
       public Builder addAllNodes(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.DynamicSVONodeOuterClass.DynamicSVONode> values) {
@@ -735,7 +735,7 @@ public final class DynamicLayerNodesOuterClass {
         return this;
       }
       /**
-       * <code>repeated .DynamicSVONode nodes = 6;</code>
+       * <code>repeated .DynamicSVONode nodes = 4;</code>
        */
       public Builder clearNodes() {
         if (nodesBuilder_ == null) {
@@ -748,7 +748,7 @@ public final class DynamicLayerNodesOuterClass {
         return this;
       }
       /**
-       * <code>repeated .DynamicSVONode nodes = 6;</code>
+       * <code>repeated .DynamicSVONode nodes = 4;</code>
        */
       public Builder removeNodes(int index) {
         if (nodesBuilder_ == null) {
@@ -761,14 +761,14 @@ public final class DynamicLayerNodesOuterClass {
         return this;
       }
       /**
-       * <code>repeated .DynamicSVONode nodes = 6;</code>
+       * <code>repeated .DynamicSVONode nodes = 4;</code>
        */
       public emu.grasscutter.net.proto.DynamicSVONodeOuterClass.DynamicSVONode.Builder getNodesBuilder(
           int index) {
         return getNodesFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .DynamicSVONode nodes = 6;</code>
+       * <code>repeated .DynamicSVONode nodes = 4;</code>
        */
       public emu.grasscutter.net.proto.DynamicSVONodeOuterClass.DynamicSVONodeOrBuilder getNodesOrBuilder(
           int index) {
@@ -778,7 +778,7 @@ public final class DynamicLayerNodesOuterClass {
         }
       }
       /**
-       * <code>repeated .DynamicSVONode nodes = 6;</code>
+       * <code>repeated .DynamicSVONode nodes = 4;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.DynamicSVONodeOuterClass.DynamicSVONodeOrBuilder> 
            getNodesOrBuilderList() {
@@ -789,14 +789,14 @@ public final class DynamicLayerNodesOuterClass {
         }
       }
       /**
-       * <code>repeated .DynamicSVONode nodes = 6;</code>
+       * <code>repeated .DynamicSVONode nodes = 4;</code>
        */
       public emu.grasscutter.net.proto.DynamicSVONodeOuterClass.DynamicSVONode.Builder addNodesBuilder() {
         return getNodesFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.DynamicSVONodeOuterClass.DynamicSVONode.getDefaultInstance());
       }
       /**
-       * <code>repeated .DynamicSVONode nodes = 6;</code>
+       * <code>repeated .DynamicSVONode nodes = 4;</code>
        */
       public emu.grasscutter.net.proto.DynamicSVONodeOuterClass.DynamicSVONode.Builder addNodesBuilder(
           int index) {
@@ -804,7 +804,7 @@ public final class DynamicLayerNodesOuterClass {
             index, emu.grasscutter.net.proto.DynamicSVONodeOuterClass.DynamicSVONode.getDefaultInstance());
       }
       /**
-       * <code>repeated .DynamicSVONode nodes = 6;</code>
+       * <code>repeated .DynamicSVONode nodes = 4;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.DynamicSVONodeOuterClass.DynamicSVONode.Builder> 
            getNodesBuilderList() {
@@ -892,8 +892,8 @@ public final class DynamicLayerNodesOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\027DynamicLayerNodes.proto\032\024DynamicSVONod" +
-      "e.proto\"B\n\021DynamicLayerNodes\022\r\n\005level\030\n " +
-      "\001(\005\022\036\n\005nodes\030\006 \003(\0132\017.DynamicSVONodeB\033\n\031e" +
+      "e.proto\"B\n\021DynamicLayerNodes\022\r\n\005level\030\007 " +
+      "\001(\005\022\036\n\005nodes\030\004 \003(\0132\017.DynamicSVONodeB\033\n\031e" +
       "mu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

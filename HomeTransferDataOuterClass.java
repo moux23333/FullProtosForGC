@@ -19,25 +19,25 @@ public final class HomeTransferDataOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 guid = 15;</code>
-     * @return The guid.
-     */
-    int getGuid();
-
-    /**
-     * <code>.Vector spawn_pos = 7;</code>
+     * <code>.Vector spawn_pos = 1;</code>
      * @return Whether the spawnPos field is set.
      */
     boolean hasSpawnPos();
     /**
-     * <code>.Vector spawn_pos = 7;</code>
+     * <code>.Vector spawn_pos = 1;</code>
      * @return The spawnPos.
      */
     emu.grasscutter.net.proto.VectorOuterClass.Vector getSpawnPos();
     /**
-     * <code>.Vector spawn_pos = 7;</code>
+     * <code>.Vector spawn_pos = 1;</code>
      */
     emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getSpawnPosOrBuilder();
+
+    /**
+     * <code>uint32 guid = 5;</code>
+     * @return The guid.
+     */
+    int getGuid();
   }
   /**
    * Protobuf type {@code HomeTransferData}
@@ -84,7 +84,7 @@ public final class HomeTransferDataOuterClass {
             case 0:
               done = true;
               break;
-            case 58: {
+            case 10: {
               emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder subBuilder = null;
               if (spawnPos_ != null) {
                 subBuilder = spawnPos_.toBuilder();
@@ -97,7 +97,7 @@ public final class HomeTransferDataOuterClass {
 
               break;
             }
-            case 120: {
+            case 40: {
 
               guid_ = input.readUInt32();
               break;
@@ -134,21 +134,10 @@ public final class HomeTransferDataOuterClass {
               emu.grasscutter.net.proto.HomeTransferDataOuterClass.HomeTransferData.class, emu.grasscutter.net.proto.HomeTransferDataOuterClass.HomeTransferData.Builder.class);
     }
 
-    public static final int GUID_FIELD_NUMBER = 15;
-    private int guid_;
-    /**
-     * <code>uint32 guid = 15;</code>
-     * @return The guid.
-     */
-    @java.lang.Override
-    public int getGuid() {
-      return guid_;
-    }
-
-    public static final int SPAWN_POS_FIELD_NUMBER = 7;
+    public static final int SPAWN_POS_FIELD_NUMBER = 1;
     private emu.grasscutter.net.proto.VectorOuterClass.Vector spawnPos_;
     /**
-     * <code>.Vector spawn_pos = 7;</code>
+     * <code>.Vector spawn_pos = 1;</code>
      * @return Whether the spawnPos field is set.
      */
     @java.lang.Override
@@ -156,7 +145,7 @@ public final class HomeTransferDataOuterClass {
       return spawnPos_ != null;
     }
     /**
-     * <code>.Vector spawn_pos = 7;</code>
+     * <code>.Vector spawn_pos = 1;</code>
      * @return The spawnPos.
      */
     @java.lang.Override
@@ -164,11 +153,22 @@ public final class HomeTransferDataOuterClass {
       return spawnPos_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : spawnPos_;
     }
     /**
-     * <code>.Vector spawn_pos = 7;</code>
+     * <code>.Vector spawn_pos = 1;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getSpawnPosOrBuilder() {
       return getSpawnPos();
+    }
+
+    public static final int GUID_FIELD_NUMBER = 5;
+    private int guid_;
+    /**
+     * <code>uint32 guid = 5;</code>
+     * @return The guid.
+     */
+    @java.lang.Override
+    public int getGuid() {
+      return guid_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -186,10 +186,10 @@ public final class HomeTransferDataOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (spawnPos_ != null) {
-        output.writeMessage(7, getSpawnPos());
+        output.writeMessage(1, getSpawnPos());
       }
       if (guid_ != 0) {
-        output.writeUInt32(15, guid_);
+        output.writeUInt32(5, guid_);
       }
       unknownFields.writeTo(output);
     }
@@ -202,11 +202,11 @@ public final class HomeTransferDataOuterClass {
       size = 0;
       if (spawnPos_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(7, getSpawnPos());
+          .computeMessageSize(1, getSpawnPos());
       }
       if (guid_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, guid_);
+          .computeUInt32Size(5, guid_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -223,13 +223,13 @@ public final class HomeTransferDataOuterClass {
       }
       emu.grasscutter.net.proto.HomeTransferDataOuterClass.HomeTransferData other = (emu.grasscutter.net.proto.HomeTransferDataOuterClass.HomeTransferData) obj;
 
-      if (getGuid()
-          != other.getGuid()) return false;
       if (hasSpawnPos() != other.hasSpawnPos()) return false;
       if (hasSpawnPos()) {
         if (!getSpawnPos()
             .equals(other.getSpawnPos())) return false;
       }
+      if (getGuid()
+          != other.getGuid()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -241,12 +241,12 @@ public final class HomeTransferDataOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + GUID_FIELD_NUMBER;
-      hash = (53 * hash) + getGuid();
       if (hasSpawnPos()) {
         hash = (37 * hash) + SPAWN_POS_FIELD_NUMBER;
         hash = (53 * hash) + getSpawnPos().hashCode();
       }
+      hash = (37 * hash) + GUID_FIELD_NUMBER;
+      hash = (53 * hash) + getGuid();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -380,14 +380,14 @@ public final class HomeTransferDataOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        guid_ = 0;
-
         if (spawnPosBuilder_ == null) {
           spawnPos_ = null;
         } else {
           spawnPos_ = null;
           spawnPosBuilder_ = null;
         }
+        guid_ = 0;
+
         return this;
       }
 
@@ -414,12 +414,12 @@ public final class HomeTransferDataOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.HomeTransferDataOuterClass.HomeTransferData buildPartial() {
         emu.grasscutter.net.proto.HomeTransferDataOuterClass.HomeTransferData result = new emu.grasscutter.net.proto.HomeTransferDataOuterClass.HomeTransferData(this);
-        result.guid_ = guid_;
         if (spawnPosBuilder_ == null) {
           result.spawnPos_ = spawnPos_;
         } else {
           result.spawnPos_ = spawnPosBuilder_.build();
         }
+        result.guid_ = guid_;
         onBuilt();
         return result;
       }
@@ -468,11 +468,11 @@ public final class HomeTransferDataOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.HomeTransferDataOuterClass.HomeTransferData other) {
         if (other == emu.grasscutter.net.proto.HomeTransferDataOuterClass.HomeTransferData.getDefaultInstance()) return this;
-        if (other.getGuid() != 0) {
-          setGuid(other.getGuid());
-        }
         if (other.hasSpawnPos()) {
           mergeSpawnPos(other.getSpawnPos());
+        }
+        if (other.getGuid() != 0) {
+          setGuid(other.getGuid());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -503,49 +503,18 @@ public final class HomeTransferDataOuterClass {
         return this;
       }
 
-      private int guid_ ;
-      /**
-       * <code>uint32 guid = 15;</code>
-       * @return The guid.
-       */
-      @java.lang.Override
-      public int getGuid() {
-        return guid_;
-      }
-      /**
-       * <code>uint32 guid = 15;</code>
-       * @param value The guid to set.
-       * @return This builder for chaining.
-       */
-      public Builder setGuid(int value) {
-        
-        guid_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 guid = 15;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearGuid() {
-        
-        guid_ = 0;
-        onChanged();
-        return this;
-      }
-
       private emu.grasscutter.net.proto.VectorOuterClass.Vector spawnPos_;
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> spawnPosBuilder_;
       /**
-       * <code>.Vector spawn_pos = 7;</code>
+       * <code>.Vector spawn_pos = 1;</code>
        * @return Whether the spawnPos field is set.
        */
       public boolean hasSpawnPos() {
         return spawnPosBuilder_ != null || spawnPos_ != null;
       }
       /**
-       * <code>.Vector spawn_pos = 7;</code>
+       * <code>.Vector spawn_pos = 1;</code>
        * @return The spawnPos.
        */
       public emu.grasscutter.net.proto.VectorOuterClass.Vector getSpawnPos() {
@@ -556,7 +525,7 @@ public final class HomeTransferDataOuterClass {
         }
       }
       /**
-       * <code>.Vector spawn_pos = 7;</code>
+       * <code>.Vector spawn_pos = 1;</code>
        */
       public Builder setSpawnPos(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
         if (spawnPosBuilder_ == null) {
@@ -572,7 +541,7 @@ public final class HomeTransferDataOuterClass {
         return this;
       }
       /**
-       * <code>.Vector spawn_pos = 7;</code>
+       * <code>.Vector spawn_pos = 1;</code>
        */
       public Builder setSpawnPos(
           emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder builderForValue) {
@@ -586,7 +555,7 @@ public final class HomeTransferDataOuterClass {
         return this;
       }
       /**
-       * <code>.Vector spawn_pos = 7;</code>
+       * <code>.Vector spawn_pos = 1;</code>
        */
       public Builder mergeSpawnPos(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
         if (spawnPosBuilder_ == null) {
@@ -604,7 +573,7 @@ public final class HomeTransferDataOuterClass {
         return this;
       }
       /**
-       * <code>.Vector spawn_pos = 7;</code>
+       * <code>.Vector spawn_pos = 1;</code>
        */
       public Builder clearSpawnPos() {
         if (spawnPosBuilder_ == null) {
@@ -618,7 +587,7 @@ public final class HomeTransferDataOuterClass {
         return this;
       }
       /**
-       * <code>.Vector spawn_pos = 7;</code>
+       * <code>.Vector spawn_pos = 1;</code>
        */
       public emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder getSpawnPosBuilder() {
         
@@ -626,7 +595,7 @@ public final class HomeTransferDataOuterClass {
         return getSpawnPosFieldBuilder().getBuilder();
       }
       /**
-       * <code>.Vector spawn_pos = 7;</code>
+       * <code>.Vector spawn_pos = 1;</code>
        */
       public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getSpawnPosOrBuilder() {
         if (spawnPosBuilder_ != null) {
@@ -637,7 +606,7 @@ public final class HomeTransferDataOuterClass {
         }
       }
       /**
-       * <code>.Vector spawn_pos = 7;</code>
+       * <code>.Vector spawn_pos = 1;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> 
@@ -651,6 +620,37 @@ public final class HomeTransferDataOuterClass {
           spawnPos_ = null;
         }
         return spawnPosBuilder_;
+      }
+
+      private int guid_ ;
+      /**
+       * <code>uint32 guid = 5;</code>
+       * @return The guid.
+       */
+      @java.lang.Override
+      public int getGuid() {
+        return guid_;
+      }
+      /**
+       * <code>uint32 guid = 5;</code>
+       * @param value The guid to set.
+       * @return This builder for chaining.
+       */
+      public Builder setGuid(int value) {
+        
+        guid_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 guid = 5;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearGuid() {
+        
+        guid_ = 0;
+        onChanged();
+        return this;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -720,8 +720,8 @@ public final class HomeTransferDataOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\026HomeTransferData.proto\032\014Vector.proto\"<" +
-      "\n\020HomeTransferData\022\014\n\004guid\030\017 \001(\r\022\032\n\tspaw" +
-      "n_pos\030\007 \001(\0132\007.VectorB\033\n\031emu.grasscutter." +
+      "\n\020HomeTransferData\022\032\n\tspawn_pos\030\001 \001(\0132\007." +
+      "Vector\022\014\n\004guid\030\005 \001(\rB\033\n\031emu.grasscutter." +
       "net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -734,7 +734,7 @@ public final class HomeTransferDataOuterClass {
     internal_static_HomeTransferData_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_HomeTransferData_descriptor,
-        new java.lang.String[] { "Guid", "SpawnPos", });
+        new java.lang.String[] { "SpawnPos", "Guid", });
     emu.grasscutter.net.proto.VectorOuterClass.getDescriptor();
   }
 

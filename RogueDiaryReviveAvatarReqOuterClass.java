@@ -19,26 +19,30 @@ public final class RogueDiaryReviveAvatarReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.RogueDiaryAvatar revive_avatar = 2;</code>
+     * <code>.RogueDiaryAvatar revive_avatar = 15;</code>
      * @return Whether the reviveAvatar field is set.
      */
     boolean hasReviveAvatar();
     /**
-     * <code>.RogueDiaryAvatar revive_avatar = 2;</code>
+     * <code>.RogueDiaryAvatar revive_avatar = 15;</code>
      * @return The reviveAvatar.
      */
     emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatar getReviveAvatar();
     /**
-     * <code>.RogueDiaryAvatar revive_avatar = 2;</code>
+     * <code>.RogueDiaryAvatar revive_avatar = 15;</code>
      */
     emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatarOrBuilder getReviveAvatarOrBuilder();
   }
   /**
    * <pre>
-   * CmdId: 8038
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 8678;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code RogueDiaryReviveAvatarReq}
@@ -85,7 +89,7 @@ public final class RogueDiaryReviveAvatarReqOuterClass {
             case 0:
               done = true;
               break;
-            case 18: {
+            case 122: {
               emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatar.Builder subBuilder = null;
               if (reviveAvatar_ != null) {
                 subBuilder = reviveAvatar_.toBuilder();
@@ -130,10 +134,10 @@ public final class RogueDiaryReviveAvatarReqOuterClass {
               emu.grasscutter.net.proto.RogueDiaryReviveAvatarReqOuterClass.RogueDiaryReviveAvatarReq.class, emu.grasscutter.net.proto.RogueDiaryReviveAvatarReqOuterClass.RogueDiaryReviveAvatarReq.Builder.class);
     }
 
-    public static final int REVIVE_AVATAR_FIELD_NUMBER = 2;
+    public static final int REVIVE_AVATAR_FIELD_NUMBER = 15;
     private emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatar reviveAvatar_;
     /**
-     * <code>.RogueDiaryAvatar revive_avatar = 2;</code>
+     * <code>.RogueDiaryAvatar revive_avatar = 15;</code>
      * @return Whether the reviveAvatar field is set.
      */
     @java.lang.Override
@@ -141,7 +145,7 @@ public final class RogueDiaryReviveAvatarReqOuterClass {
       return reviveAvatar_ != null;
     }
     /**
-     * <code>.RogueDiaryAvatar revive_avatar = 2;</code>
+     * <code>.RogueDiaryAvatar revive_avatar = 15;</code>
      * @return The reviveAvatar.
      */
     @java.lang.Override
@@ -149,7 +153,7 @@ public final class RogueDiaryReviveAvatarReqOuterClass {
       return reviveAvatar_ == null ? emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatar.getDefaultInstance() : reviveAvatar_;
     }
     /**
-     * <code>.RogueDiaryAvatar revive_avatar = 2;</code>
+     * <code>.RogueDiaryAvatar revive_avatar = 15;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatarOrBuilder getReviveAvatarOrBuilder() {
@@ -171,7 +175,7 @@ public final class RogueDiaryReviveAvatarReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (reviveAvatar_ != null) {
-        output.writeMessage(2, getReviveAvatar());
+        output.writeMessage(15, getReviveAvatar());
       }
       unknownFields.writeTo(output);
     }
@@ -184,7 +188,7 @@ public final class RogueDiaryReviveAvatarReqOuterClass {
       size = 0;
       if (reviveAvatar_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(2, getReviveAvatar());
+          .computeMessageSize(15, getReviveAvatar());
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -318,10 +322,14 @@ public final class RogueDiaryReviveAvatarReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 8038
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 8678;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code RogueDiaryReviveAvatarReq}
@@ -482,14 +490,14 @@ public final class RogueDiaryReviveAvatarReqOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatar, emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatar.Builder, emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatarOrBuilder> reviveAvatarBuilder_;
       /**
-       * <code>.RogueDiaryAvatar revive_avatar = 2;</code>
+       * <code>.RogueDiaryAvatar revive_avatar = 15;</code>
        * @return Whether the reviveAvatar field is set.
        */
       public boolean hasReviveAvatar() {
         return reviveAvatarBuilder_ != null || reviveAvatar_ != null;
       }
       /**
-       * <code>.RogueDiaryAvatar revive_avatar = 2;</code>
+       * <code>.RogueDiaryAvatar revive_avatar = 15;</code>
        * @return The reviveAvatar.
        */
       public emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatar getReviveAvatar() {
@@ -500,7 +508,7 @@ public final class RogueDiaryReviveAvatarReqOuterClass {
         }
       }
       /**
-       * <code>.RogueDiaryAvatar revive_avatar = 2;</code>
+       * <code>.RogueDiaryAvatar revive_avatar = 15;</code>
        */
       public Builder setReviveAvatar(emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatar value) {
         if (reviveAvatarBuilder_ == null) {
@@ -516,7 +524,7 @@ public final class RogueDiaryReviveAvatarReqOuterClass {
         return this;
       }
       /**
-       * <code>.RogueDiaryAvatar revive_avatar = 2;</code>
+       * <code>.RogueDiaryAvatar revive_avatar = 15;</code>
        */
       public Builder setReviveAvatar(
           emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatar.Builder builderForValue) {
@@ -530,7 +538,7 @@ public final class RogueDiaryReviveAvatarReqOuterClass {
         return this;
       }
       /**
-       * <code>.RogueDiaryAvatar revive_avatar = 2;</code>
+       * <code>.RogueDiaryAvatar revive_avatar = 15;</code>
        */
       public Builder mergeReviveAvatar(emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatar value) {
         if (reviveAvatarBuilder_ == null) {
@@ -548,7 +556,7 @@ public final class RogueDiaryReviveAvatarReqOuterClass {
         return this;
       }
       /**
-       * <code>.RogueDiaryAvatar revive_avatar = 2;</code>
+       * <code>.RogueDiaryAvatar revive_avatar = 15;</code>
        */
       public Builder clearReviveAvatar() {
         if (reviveAvatarBuilder_ == null) {
@@ -562,7 +570,7 @@ public final class RogueDiaryReviveAvatarReqOuterClass {
         return this;
       }
       /**
-       * <code>.RogueDiaryAvatar revive_avatar = 2;</code>
+       * <code>.RogueDiaryAvatar revive_avatar = 15;</code>
        */
       public emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatar.Builder getReviveAvatarBuilder() {
         
@@ -570,7 +578,7 @@ public final class RogueDiaryReviveAvatarReqOuterClass {
         return getReviveAvatarFieldBuilder().getBuilder();
       }
       /**
-       * <code>.RogueDiaryAvatar revive_avatar = 2;</code>
+       * <code>.RogueDiaryAvatar revive_avatar = 15;</code>
        */
       public emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatarOrBuilder getReviveAvatarOrBuilder() {
         if (reviveAvatarBuilder_ != null) {
@@ -581,7 +589,7 @@ public final class RogueDiaryReviveAvatarReqOuterClass {
         }
       }
       /**
-       * <code>.RogueDiaryAvatar revive_avatar = 2;</code>
+       * <code>.RogueDiaryAvatar revive_avatar = 15;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatar, emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatar.Builder, emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatarOrBuilder> 
@@ -665,7 +673,7 @@ public final class RogueDiaryReviveAvatarReqOuterClass {
     java.lang.String[] descriptorData = {
       "\n\037RogueDiaryReviveAvatarReq.proto\032\026Rogue" +
       "DiaryAvatar.proto\"E\n\031RogueDiaryReviveAva" +
-      "tarReq\022(\n\rrevive_avatar\030\002 \001(\0132\021.RogueDia" +
+      "tarReq\022(\n\rrevive_avatar\030\017 \001(\0132\021.RogueDia" +
       "ryAvatarB\033\n\031emu.grasscutter.net.protob\006p" +
       "roto3"
     };

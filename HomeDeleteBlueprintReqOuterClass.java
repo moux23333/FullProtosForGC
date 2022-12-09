@@ -19,17 +19,21 @@ public final class HomeDeleteBlueprintReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 slot_id = 2;</code>
+     * <code>uint32 slot_id = 14;</code>
      * @return The slotId.
      */
     int getSlotId();
   }
   /**
    * <pre>
-   * CmdId: 4502
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 4501;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code HomeDeleteBlueprintReq}
@@ -76,7 +80,7 @@ public final class HomeDeleteBlueprintReqOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
+            case 112: {
 
               slotId_ = input.readUInt32();
               break;
@@ -113,10 +117,10 @@ public final class HomeDeleteBlueprintReqOuterClass {
               emu.grasscutter.net.proto.HomeDeleteBlueprintReqOuterClass.HomeDeleteBlueprintReq.class, emu.grasscutter.net.proto.HomeDeleteBlueprintReqOuterClass.HomeDeleteBlueprintReq.Builder.class);
     }
 
-    public static final int SLOT_ID_FIELD_NUMBER = 2;
+    public static final int SLOT_ID_FIELD_NUMBER = 14;
     private int slotId_;
     /**
-     * <code>uint32 slot_id = 2;</code>
+     * <code>uint32 slot_id = 14;</code>
      * @return The slotId.
      */
     @java.lang.Override
@@ -139,7 +143,7 @@ public final class HomeDeleteBlueprintReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (slotId_ != 0) {
-        output.writeUInt32(2, slotId_);
+        output.writeUInt32(14, slotId_);
       }
       unknownFields.writeTo(output);
     }
@@ -152,7 +156,7 @@ public final class HomeDeleteBlueprintReqOuterClass {
       size = 0;
       if (slotId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, slotId_);
+          .computeUInt32Size(14, slotId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -281,10 +285,14 @@ public final class HomeDeleteBlueprintReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 4502
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 4501;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code HomeDeleteBlueprintReq}
@@ -435,7 +443,7 @@ public final class HomeDeleteBlueprintReqOuterClass {
 
       private int slotId_ ;
       /**
-       * <code>uint32 slot_id = 2;</code>
+       * <code>uint32 slot_id = 14;</code>
        * @return The slotId.
        */
       @java.lang.Override
@@ -443,7 +451,7 @@ public final class HomeDeleteBlueprintReqOuterClass {
         return slotId_;
       }
       /**
-       * <code>uint32 slot_id = 2;</code>
+       * <code>uint32 slot_id = 14;</code>
        * @param value The slotId to set.
        * @return This builder for chaining.
        */
@@ -454,7 +462,7 @@ public final class HomeDeleteBlueprintReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 slot_id = 2;</code>
+       * <code>uint32 slot_id = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearSlotId() {
@@ -531,7 +539,7 @@ public final class HomeDeleteBlueprintReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\034HomeDeleteBlueprintReq.proto\")\n\026HomeDe" +
-      "leteBlueprintReq\022\017\n\007slot_id\030\002 \001(\rB\033\n\031emu" +
+      "leteBlueprintReq\022\017\n\007slot_id\030\016 \001(\rB\033\n\031emu" +
       ".grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

@@ -19,64 +19,64 @@ public final class ChessPlayerInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
+     * <code>repeated .ChessNormalCardInfo candidate_card_info_list = 1;</code>
+     */
+    java.util.List<emu.grasscutter.net.proto.ChessNormalCardInfoOuterClass.ChessNormalCardInfo> 
+        getCandidateCardInfoListList();
+    /**
+     * <code>repeated .ChessNormalCardInfo candidate_card_info_list = 1;</code>
+     */
+    emu.grasscutter.net.proto.ChessNormalCardInfoOuterClass.ChessNormalCardInfo getCandidateCardInfoList(int index);
+    /**
+     * <code>repeated .ChessNormalCardInfo candidate_card_info_list = 1;</code>
+     */
+    int getCandidateCardInfoListCount();
+    /**
+     * <code>repeated .ChessNormalCardInfo candidate_card_info_list = 1;</code>
+     */
+    java.util.List<? extends emu.grasscutter.net.proto.ChessNormalCardInfoOuterClass.ChessNormalCardInfoOrBuilder> 
+        getCandidateCardInfoListOrBuilderList();
+    /**
+     * <code>repeated .ChessNormalCardInfo candidate_card_info_list = 1;</code>
+     */
+    emu.grasscutter.net.proto.ChessNormalCardInfoOuterClass.ChessNormalCardInfoOrBuilder getCandidateCardInfoListOrBuilder(
+        int index);
+
+    /**
      * <code>uint32 uid = 5;</code>
      * @return The uid.
      */
     int getUid();
 
     /**
-     * <code>uint32 free_refresh_limit = 10;</code>
-     * @return The freeRefreshLimit.
+     * <code>uint32 Unk3300_AOCJHOKCDDM = 2;</code>
+     * @return The unk3300AOCJHOKCDDM.
      */
-    int getFreeRefreshLimit();
+    int getUnk3300AOCJHOKCDDM();
 
     /**
-     * <code>repeated .ChessNormalCardInfo candidate_card_info_list = 3;</code>
+     * <code>uint32 Unk3300_GPNDNCCLHKE = 10;</code>
+     * @return The unk3300GPNDNCCLHKE.
      */
-    java.util.List<emu.grasscutter.net.proto.ChessNormalCardInfoOuterClass.ChessNormalCardInfo> 
-        getCandidateCardInfoListList();
-    /**
-     * <code>repeated .ChessNormalCardInfo candidate_card_info_list = 3;</code>
-     */
-    emu.grasscutter.net.proto.ChessNormalCardInfoOuterClass.ChessNormalCardInfo getCandidateCardInfoList(int index);
-    /**
-     * <code>repeated .ChessNormalCardInfo candidate_card_info_list = 3;</code>
-     */
-    int getCandidateCardInfoListCount();
-    /**
-     * <code>repeated .ChessNormalCardInfo candidate_card_info_list = 3;</code>
-     */
-    java.util.List<? extends emu.grasscutter.net.proto.ChessNormalCardInfoOuterClass.ChessNormalCardInfoOrBuilder> 
-        getCandidateCardInfoListOrBuilderList();
-    /**
-     * <code>repeated .ChessNormalCardInfo candidate_card_info_list = 3;</code>
-     */
-    emu.grasscutter.net.proto.ChessNormalCardInfoOuterClass.ChessNormalCardInfoOrBuilder getCandidateCardInfoListOrBuilder(
-        int index);
+    int getUnk3300GPNDNCCLHKE();
 
     /**
-     * <code>uint32 building_points = 12;</code>
+     * <code>uint32 building_points = 8;</code>
      * @return The buildingPoints.
      */
     int getBuildingPoints();
 
     /**
-     * <code>uint32 candidate_index = 6;</code>
-     * @return The candidateIndex.
+     * <code>uint32 Unk3300_PPFBGIDKCDJ = 12;</code>
+     * @return The unk3300PPFBGIDKCDJ.
      */
-    int getCandidateIndex();
+    int getUnk3300PPFBGIDKCDJ();
 
     /**
-     * <code>uint32 free_refresh_count = 13;</code>
-     * @return The freeRefreshCount.
+     * <code>uint32 Unk3300_PPFPEAGBHLP = 13;</code>
+     * @return The unk3300PPFPEAGBHLP.
      */
-    int getFreeRefreshCount();
-
-    /**
-     * <code>uint32 refresh_cost = 7;</code>
-     * @return The refreshCost.
-     */
-    int getRefreshCost();
+    int getUnk3300PPFPEAGBHLP();
   }
   /**
    * Protobuf type {@code ChessPlayerInfo}
@@ -125,7 +125,7 @@ public final class ChessPlayerInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 26: {
+            case 10: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 candidateCardInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.ChessNormalCardInfoOuterClass.ChessNormalCardInfo>();
                 mutable_bitField0_ |= 0x00000001;
@@ -134,34 +134,34 @@ public final class ChessPlayerInfoOuterClass {
                   input.readMessage(emu.grasscutter.net.proto.ChessNormalCardInfoOuterClass.ChessNormalCardInfo.parser(), extensionRegistry));
               break;
             }
+            case 16: {
+
+              unk3300AOCJHOKCDDM_ = input.readUInt32();
+              break;
+            }
             case 40: {
 
               uid_ = input.readUInt32();
               break;
             }
-            case 48: {
-
-              candidateIndex_ = input.readUInt32();
-              break;
-            }
-            case 56: {
-
-              refreshCost_ = input.readUInt32();
-              break;
-            }
-            case 80: {
-
-              freeRefreshLimit_ = input.readUInt32();
-              break;
-            }
-            case 96: {
+            case 64: {
 
               buildingPoints_ = input.readUInt32();
               break;
             }
+            case 80: {
+
+              unk3300GPNDNCCLHKE_ = input.readUInt32();
+              break;
+            }
+            case 96: {
+
+              unk3300PPFBGIDKCDJ_ = input.readUInt32();
+              break;
+            }
             case 104: {
 
-              freeRefreshCount_ = input.readUInt32();
+              unk3300PPFPEAGBHLP_ = input.readUInt32();
               break;
             }
             default: {
@@ -199,6 +199,46 @@ public final class ChessPlayerInfoOuterClass {
               emu.grasscutter.net.proto.ChessPlayerInfoOuterClass.ChessPlayerInfo.class, emu.grasscutter.net.proto.ChessPlayerInfoOuterClass.ChessPlayerInfo.Builder.class);
     }
 
+    public static final int CANDIDATE_CARD_INFO_LIST_FIELD_NUMBER = 1;
+    private java.util.List<emu.grasscutter.net.proto.ChessNormalCardInfoOuterClass.ChessNormalCardInfo> candidateCardInfoList_;
+    /**
+     * <code>repeated .ChessNormalCardInfo candidate_card_info_list = 1;</code>
+     */
+    @java.lang.Override
+    public java.util.List<emu.grasscutter.net.proto.ChessNormalCardInfoOuterClass.ChessNormalCardInfo> getCandidateCardInfoListList() {
+      return candidateCardInfoList_;
+    }
+    /**
+     * <code>repeated .ChessNormalCardInfo candidate_card_info_list = 1;</code>
+     */
+    @java.lang.Override
+    public java.util.List<? extends emu.grasscutter.net.proto.ChessNormalCardInfoOuterClass.ChessNormalCardInfoOrBuilder> 
+        getCandidateCardInfoListOrBuilderList() {
+      return candidateCardInfoList_;
+    }
+    /**
+     * <code>repeated .ChessNormalCardInfo candidate_card_info_list = 1;</code>
+     */
+    @java.lang.Override
+    public int getCandidateCardInfoListCount() {
+      return candidateCardInfoList_.size();
+    }
+    /**
+     * <code>repeated .ChessNormalCardInfo candidate_card_info_list = 1;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.ChessNormalCardInfoOuterClass.ChessNormalCardInfo getCandidateCardInfoList(int index) {
+      return candidateCardInfoList_.get(index);
+    }
+    /**
+     * <code>repeated .ChessNormalCardInfo candidate_card_info_list = 1;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.ChessNormalCardInfoOuterClass.ChessNormalCardInfoOrBuilder getCandidateCardInfoListOrBuilder(
+        int index) {
+      return candidateCardInfoList_.get(index);
+    }
+
     public static final int UID_FIELD_NUMBER = 5;
     private int uid_;
     /**
@@ -210,61 +250,32 @@ public final class ChessPlayerInfoOuterClass {
       return uid_;
     }
 
-    public static final int FREE_REFRESH_LIMIT_FIELD_NUMBER = 10;
-    private int freeRefreshLimit_;
+    public static final int UNK3300_AOCJHOKCDDM_FIELD_NUMBER = 2;
+    private int unk3300AOCJHOKCDDM_;
     /**
-     * <code>uint32 free_refresh_limit = 10;</code>
-     * @return The freeRefreshLimit.
+     * <code>uint32 Unk3300_AOCJHOKCDDM = 2;</code>
+     * @return The unk3300AOCJHOKCDDM.
      */
     @java.lang.Override
-    public int getFreeRefreshLimit() {
-      return freeRefreshLimit_;
+    public int getUnk3300AOCJHOKCDDM() {
+      return unk3300AOCJHOKCDDM_;
     }
 
-    public static final int CANDIDATE_CARD_INFO_LIST_FIELD_NUMBER = 3;
-    private java.util.List<emu.grasscutter.net.proto.ChessNormalCardInfoOuterClass.ChessNormalCardInfo> candidateCardInfoList_;
+    public static final int UNK3300_GPNDNCCLHKE_FIELD_NUMBER = 10;
+    private int unk3300GPNDNCCLHKE_;
     /**
-     * <code>repeated .ChessNormalCardInfo candidate_card_info_list = 3;</code>
+     * <code>uint32 Unk3300_GPNDNCCLHKE = 10;</code>
+     * @return The unk3300GPNDNCCLHKE.
      */
     @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.ChessNormalCardInfoOuterClass.ChessNormalCardInfo> getCandidateCardInfoListList() {
-      return candidateCardInfoList_;
-    }
-    /**
-     * <code>repeated .ChessNormalCardInfo candidate_card_info_list = 3;</code>
-     */
-    @java.lang.Override
-    public java.util.List<? extends emu.grasscutter.net.proto.ChessNormalCardInfoOuterClass.ChessNormalCardInfoOrBuilder> 
-        getCandidateCardInfoListOrBuilderList() {
-      return candidateCardInfoList_;
-    }
-    /**
-     * <code>repeated .ChessNormalCardInfo candidate_card_info_list = 3;</code>
-     */
-    @java.lang.Override
-    public int getCandidateCardInfoListCount() {
-      return candidateCardInfoList_.size();
-    }
-    /**
-     * <code>repeated .ChessNormalCardInfo candidate_card_info_list = 3;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.ChessNormalCardInfoOuterClass.ChessNormalCardInfo getCandidateCardInfoList(int index) {
-      return candidateCardInfoList_.get(index);
-    }
-    /**
-     * <code>repeated .ChessNormalCardInfo candidate_card_info_list = 3;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.ChessNormalCardInfoOuterClass.ChessNormalCardInfoOrBuilder getCandidateCardInfoListOrBuilder(
-        int index) {
-      return candidateCardInfoList_.get(index);
+    public int getUnk3300GPNDNCCLHKE() {
+      return unk3300GPNDNCCLHKE_;
     }
 
-    public static final int BUILDING_POINTS_FIELD_NUMBER = 12;
+    public static final int BUILDING_POINTS_FIELD_NUMBER = 8;
     private int buildingPoints_;
     /**
-     * <code>uint32 building_points = 12;</code>
+     * <code>uint32 building_points = 8;</code>
      * @return The buildingPoints.
      */
     @java.lang.Override
@@ -272,37 +283,26 @@ public final class ChessPlayerInfoOuterClass {
       return buildingPoints_;
     }
 
-    public static final int CANDIDATE_INDEX_FIELD_NUMBER = 6;
-    private int candidateIndex_;
+    public static final int UNK3300_PPFBGIDKCDJ_FIELD_NUMBER = 12;
+    private int unk3300PPFBGIDKCDJ_;
     /**
-     * <code>uint32 candidate_index = 6;</code>
-     * @return The candidateIndex.
+     * <code>uint32 Unk3300_PPFBGIDKCDJ = 12;</code>
+     * @return The unk3300PPFBGIDKCDJ.
      */
     @java.lang.Override
-    public int getCandidateIndex() {
-      return candidateIndex_;
+    public int getUnk3300PPFBGIDKCDJ() {
+      return unk3300PPFBGIDKCDJ_;
     }
 
-    public static final int FREE_REFRESH_COUNT_FIELD_NUMBER = 13;
-    private int freeRefreshCount_;
+    public static final int UNK3300_PPFPEAGBHLP_FIELD_NUMBER = 13;
+    private int unk3300PPFPEAGBHLP_;
     /**
-     * <code>uint32 free_refresh_count = 13;</code>
-     * @return The freeRefreshCount.
+     * <code>uint32 Unk3300_PPFPEAGBHLP = 13;</code>
+     * @return The unk3300PPFPEAGBHLP.
      */
     @java.lang.Override
-    public int getFreeRefreshCount() {
-      return freeRefreshCount_;
-    }
-
-    public static final int REFRESH_COST_FIELD_NUMBER = 7;
-    private int refreshCost_;
-    /**
-     * <code>uint32 refresh_cost = 7;</code>
-     * @return The refreshCost.
-     */
-    @java.lang.Override
-    public int getRefreshCost() {
-      return refreshCost_;
+    public int getUnk3300PPFPEAGBHLP() {
+      return unk3300PPFPEAGBHLP_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -320,25 +320,25 @@ public final class ChessPlayerInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       for (int i = 0; i < candidateCardInfoList_.size(); i++) {
-        output.writeMessage(3, candidateCardInfoList_.get(i));
+        output.writeMessage(1, candidateCardInfoList_.get(i));
+      }
+      if (unk3300AOCJHOKCDDM_ != 0) {
+        output.writeUInt32(2, unk3300AOCJHOKCDDM_);
       }
       if (uid_ != 0) {
         output.writeUInt32(5, uid_);
       }
-      if (candidateIndex_ != 0) {
-        output.writeUInt32(6, candidateIndex_);
-      }
-      if (refreshCost_ != 0) {
-        output.writeUInt32(7, refreshCost_);
-      }
-      if (freeRefreshLimit_ != 0) {
-        output.writeUInt32(10, freeRefreshLimit_);
-      }
       if (buildingPoints_ != 0) {
-        output.writeUInt32(12, buildingPoints_);
+        output.writeUInt32(8, buildingPoints_);
       }
-      if (freeRefreshCount_ != 0) {
-        output.writeUInt32(13, freeRefreshCount_);
+      if (unk3300GPNDNCCLHKE_ != 0) {
+        output.writeUInt32(10, unk3300GPNDNCCLHKE_);
+      }
+      if (unk3300PPFBGIDKCDJ_ != 0) {
+        output.writeUInt32(12, unk3300PPFBGIDKCDJ_);
+      }
+      if (unk3300PPFPEAGBHLP_ != 0) {
+        output.writeUInt32(13, unk3300PPFPEAGBHLP_);
       }
       unknownFields.writeTo(output);
     }
@@ -351,31 +351,31 @@ public final class ChessPlayerInfoOuterClass {
       size = 0;
       for (int i = 0; i < candidateCardInfoList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(3, candidateCardInfoList_.get(i));
+          .computeMessageSize(1, candidateCardInfoList_.get(i));
+      }
+      if (unk3300AOCJHOKCDDM_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(2, unk3300AOCJHOKCDDM_);
       }
       if (uid_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(5, uid_);
       }
-      if (candidateIndex_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, candidateIndex_);
-      }
-      if (refreshCost_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, refreshCost_);
-      }
-      if (freeRefreshLimit_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, freeRefreshLimit_);
-      }
       if (buildingPoints_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, buildingPoints_);
+          .computeUInt32Size(8, buildingPoints_);
       }
-      if (freeRefreshCount_ != 0) {
+      if (unk3300GPNDNCCLHKE_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, freeRefreshCount_);
+          .computeUInt32Size(10, unk3300GPNDNCCLHKE_);
+      }
+      if (unk3300PPFBGIDKCDJ_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(12, unk3300PPFBGIDKCDJ_);
+      }
+      if (unk3300PPFPEAGBHLP_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(13, unk3300PPFPEAGBHLP_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -392,20 +392,20 @@ public final class ChessPlayerInfoOuterClass {
       }
       emu.grasscutter.net.proto.ChessPlayerInfoOuterClass.ChessPlayerInfo other = (emu.grasscutter.net.proto.ChessPlayerInfoOuterClass.ChessPlayerInfo) obj;
 
-      if (getUid()
-          != other.getUid()) return false;
-      if (getFreeRefreshLimit()
-          != other.getFreeRefreshLimit()) return false;
       if (!getCandidateCardInfoListList()
           .equals(other.getCandidateCardInfoListList())) return false;
+      if (getUid()
+          != other.getUid()) return false;
+      if (getUnk3300AOCJHOKCDDM()
+          != other.getUnk3300AOCJHOKCDDM()) return false;
+      if (getUnk3300GPNDNCCLHKE()
+          != other.getUnk3300GPNDNCCLHKE()) return false;
       if (getBuildingPoints()
           != other.getBuildingPoints()) return false;
-      if (getCandidateIndex()
-          != other.getCandidateIndex()) return false;
-      if (getFreeRefreshCount()
-          != other.getFreeRefreshCount()) return false;
-      if (getRefreshCost()
-          != other.getRefreshCost()) return false;
+      if (getUnk3300PPFBGIDKCDJ()
+          != other.getUnk3300PPFBGIDKCDJ()) return false;
+      if (getUnk3300PPFPEAGBHLP()
+          != other.getUnk3300PPFPEAGBHLP()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -417,22 +417,22 @@ public final class ChessPlayerInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + UID_FIELD_NUMBER;
-      hash = (53 * hash) + getUid();
-      hash = (37 * hash) + FREE_REFRESH_LIMIT_FIELD_NUMBER;
-      hash = (53 * hash) + getFreeRefreshLimit();
       if (getCandidateCardInfoListCount() > 0) {
         hash = (37 * hash) + CANDIDATE_CARD_INFO_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getCandidateCardInfoListList().hashCode();
       }
+      hash = (37 * hash) + UID_FIELD_NUMBER;
+      hash = (53 * hash) + getUid();
+      hash = (37 * hash) + UNK3300_AOCJHOKCDDM_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300AOCJHOKCDDM();
+      hash = (37 * hash) + UNK3300_GPNDNCCLHKE_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300GPNDNCCLHKE();
       hash = (37 * hash) + BUILDING_POINTS_FIELD_NUMBER;
       hash = (53 * hash) + getBuildingPoints();
-      hash = (37 * hash) + CANDIDATE_INDEX_FIELD_NUMBER;
-      hash = (53 * hash) + getCandidateIndex();
-      hash = (37 * hash) + FREE_REFRESH_COUNT_FIELD_NUMBER;
-      hash = (53 * hash) + getFreeRefreshCount();
-      hash = (37 * hash) + REFRESH_COST_FIELD_NUMBER;
-      hash = (53 * hash) + getRefreshCost();
+      hash = (37 * hash) + UNK3300_PPFBGIDKCDJ_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300PPFBGIDKCDJ();
+      hash = (37 * hash) + UNK3300_PPFPEAGBHLP_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300PPFPEAGBHLP();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -567,23 +567,23 @@ public final class ChessPlayerInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        uid_ = 0;
-
-        freeRefreshLimit_ = 0;
-
         if (candidateCardInfoListBuilder_ == null) {
           candidateCardInfoList_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000001);
         } else {
           candidateCardInfoListBuilder_.clear();
         }
+        uid_ = 0;
+
+        unk3300AOCJHOKCDDM_ = 0;
+
+        unk3300GPNDNCCLHKE_ = 0;
+
         buildingPoints_ = 0;
 
-        candidateIndex_ = 0;
+        unk3300PPFBGIDKCDJ_ = 0;
 
-        freeRefreshCount_ = 0;
-
-        refreshCost_ = 0;
+        unk3300PPFPEAGBHLP_ = 0;
 
         return this;
       }
@@ -612,8 +612,6 @@ public final class ChessPlayerInfoOuterClass {
       public emu.grasscutter.net.proto.ChessPlayerInfoOuterClass.ChessPlayerInfo buildPartial() {
         emu.grasscutter.net.proto.ChessPlayerInfoOuterClass.ChessPlayerInfo result = new emu.grasscutter.net.proto.ChessPlayerInfoOuterClass.ChessPlayerInfo(this);
         int from_bitField0_ = bitField0_;
-        result.uid_ = uid_;
-        result.freeRefreshLimit_ = freeRefreshLimit_;
         if (candidateCardInfoListBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0)) {
             candidateCardInfoList_ = java.util.Collections.unmodifiableList(candidateCardInfoList_);
@@ -623,10 +621,12 @@ public final class ChessPlayerInfoOuterClass {
         } else {
           result.candidateCardInfoList_ = candidateCardInfoListBuilder_.build();
         }
+        result.uid_ = uid_;
+        result.unk3300AOCJHOKCDDM_ = unk3300AOCJHOKCDDM_;
+        result.unk3300GPNDNCCLHKE_ = unk3300GPNDNCCLHKE_;
         result.buildingPoints_ = buildingPoints_;
-        result.candidateIndex_ = candidateIndex_;
-        result.freeRefreshCount_ = freeRefreshCount_;
-        result.refreshCost_ = refreshCost_;
+        result.unk3300PPFBGIDKCDJ_ = unk3300PPFBGIDKCDJ_;
+        result.unk3300PPFPEAGBHLP_ = unk3300PPFPEAGBHLP_;
         onBuilt();
         return result;
       }
@@ -675,12 +675,6 @@ public final class ChessPlayerInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.ChessPlayerInfoOuterClass.ChessPlayerInfo other) {
         if (other == emu.grasscutter.net.proto.ChessPlayerInfoOuterClass.ChessPlayerInfo.getDefaultInstance()) return this;
-        if (other.getUid() != 0) {
-          setUid(other.getUid());
-        }
-        if (other.getFreeRefreshLimit() != 0) {
-          setFreeRefreshLimit(other.getFreeRefreshLimit());
-        }
         if (candidateCardInfoListBuilder_ == null) {
           if (!other.candidateCardInfoList_.isEmpty()) {
             if (candidateCardInfoList_.isEmpty()) {
@@ -707,17 +701,23 @@ public final class ChessPlayerInfoOuterClass {
             }
           }
         }
+        if (other.getUid() != 0) {
+          setUid(other.getUid());
+        }
+        if (other.getUnk3300AOCJHOKCDDM() != 0) {
+          setUnk3300AOCJHOKCDDM(other.getUnk3300AOCJHOKCDDM());
+        }
+        if (other.getUnk3300GPNDNCCLHKE() != 0) {
+          setUnk3300GPNDNCCLHKE(other.getUnk3300GPNDNCCLHKE());
+        }
         if (other.getBuildingPoints() != 0) {
           setBuildingPoints(other.getBuildingPoints());
         }
-        if (other.getCandidateIndex() != 0) {
-          setCandidateIndex(other.getCandidateIndex());
+        if (other.getUnk3300PPFBGIDKCDJ() != 0) {
+          setUnk3300PPFBGIDKCDJ(other.getUnk3300PPFBGIDKCDJ());
         }
-        if (other.getFreeRefreshCount() != 0) {
-          setFreeRefreshCount(other.getFreeRefreshCount());
-        }
-        if (other.getRefreshCost() != 0) {
-          setRefreshCost(other.getRefreshCost());
+        if (other.getUnk3300PPFPEAGBHLP() != 0) {
+          setUnk3300PPFPEAGBHLP(other.getUnk3300PPFPEAGBHLP());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -748,6 +748,246 @@ public final class ChessPlayerInfoOuterClass {
         return this;
       }
       private int bitField0_;
+
+      private java.util.List<emu.grasscutter.net.proto.ChessNormalCardInfoOuterClass.ChessNormalCardInfo> candidateCardInfoList_ =
+        java.util.Collections.emptyList();
+      private void ensureCandidateCardInfoListIsMutable() {
+        if (!((bitField0_ & 0x00000001) != 0)) {
+          candidateCardInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.ChessNormalCardInfoOuterClass.ChessNormalCardInfo>(candidateCardInfoList_);
+          bitField0_ |= 0x00000001;
+         }
+      }
+
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          emu.grasscutter.net.proto.ChessNormalCardInfoOuterClass.ChessNormalCardInfo, emu.grasscutter.net.proto.ChessNormalCardInfoOuterClass.ChessNormalCardInfo.Builder, emu.grasscutter.net.proto.ChessNormalCardInfoOuterClass.ChessNormalCardInfoOrBuilder> candidateCardInfoListBuilder_;
+
+      /**
+       * <code>repeated .ChessNormalCardInfo candidate_card_info_list = 1;</code>
+       */
+      public java.util.List<emu.grasscutter.net.proto.ChessNormalCardInfoOuterClass.ChessNormalCardInfo> getCandidateCardInfoListList() {
+        if (candidateCardInfoListBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(candidateCardInfoList_);
+        } else {
+          return candidateCardInfoListBuilder_.getMessageList();
+        }
+      }
+      /**
+       * <code>repeated .ChessNormalCardInfo candidate_card_info_list = 1;</code>
+       */
+      public int getCandidateCardInfoListCount() {
+        if (candidateCardInfoListBuilder_ == null) {
+          return candidateCardInfoList_.size();
+        } else {
+          return candidateCardInfoListBuilder_.getCount();
+        }
+      }
+      /**
+       * <code>repeated .ChessNormalCardInfo candidate_card_info_list = 1;</code>
+       */
+      public emu.grasscutter.net.proto.ChessNormalCardInfoOuterClass.ChessNormalCardInfo getCandidateCardInfoList(int index) {
+        if (candidateCardInfoListBuilder_ == null) {
+          return candidateCardInfoList_.get(index);
+        } else {
+          return candidateCardInfoListBuilder_.getMessage(index);
+        }
+      }
+      /**
+       * <code>repeated .ChessNormalCardInfo candidate_card_info_list = 1;</code>
+       */
+      public Builder setCandidateCardInfoList(
+          int index, emu.grasscutter.net.proto.ChessNormalCardInfoOuterClass.ChessNormalCardInfo value) {
+        if (candidateCardInfoListBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureCandidateCardInfoListIsMutable();
+          candidateCardInfoList_.set(index, value);
+          onChanged();
+        } else {
+          candidateCardInfoListBuilder_.setMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .ChessNormalCardInfo candidate_card_info_list = 1;</code>
+       */
+      public Builder setCandidateCardInfoList(
+          int index, emu.grasscutter.net.proto.ChessNormalCardInfoOuterClass.ChessNormalCardInfo.Builder builderForValue) {
+        if (candidateCardInfoListBuilder_ == null) {
+          ensureCandidateCardInfoListIsMutable();
+          candidateCardInfoList_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          candidateCardInfoListBuilder_.setMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .ChessNormalCardInfo candidate_card_info_list = 1;</code>
+       */
+      public Builder addCandidateCardInfoList(emu.grasscutter.net.proto.ChessNormalCardInfoOuterClass.ChessNormalCardInfo value) {
+        if (candidateCardInfoListBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureCandidateCardInfoListIsMutable();
+          candidateCardInfoList_.add(value);
+          onChanged();
+        } else {
+          candidateCardInfoListBuilder_.addMessage(value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .ChessNormalCardInfo candidate_card_info_list = 1;</code>
+       */
+      public Builder addCandidateCardInfoList(
+          int index, emu.grasscutter.net.proto.ChessNormalCardInfoOuterClass.ChessNormalCardInfo value) {
+        if (candidateCardInfoListBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureCandidateCardInfoListIsMutable();
+          candidateCardInfoList_.add(index, value);
+          onChanged();
+        } else {
+          candidateCardInfoListBuilder_.addMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .ChessNormalCardInfo candidate_card_info_list = 1;</code>
+       */
+      public Builder addCandidateCardInfoList(
+          emu.grasscutter.net.proto.ChessNormalCardInfoOuterClass.ChessNormalCardInfo.Builder builderForValue) {
+        if (candidateCardInfoListBuilder_ == null) {
+          ensureCandidateCardInfoListIsMutable();
+          candidateCardInfoList_.add(builderForValue.build());
+          onChanged();
+        } else {
+          candidateCardInfoListBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .ChessNormalCardInfo candidate_card_info_list = 1;</code>
+       */
+      public Builder addCandidateCardInfoList(
+          int index, emu.grasscutter.net.proto.ChessNormalCardInfoOuterClass.ChessNormalCardInfo.Builder builderForValue) {
+        if (candidateCardInfoListBuilder_ == null) {
+          ensureCandidateCardInfoListIsMutable();
+          candidateCardInfoList_.add(index, builderForValue.build());
+          onChanged();
+        } else {
+          candidateCardInfoListBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .ChessNormalCardInfo candidate_card_info_list = 1;</code>
+       */
+      public Builder addAllCandidateCardInfoList(
+          java.lang.Iterable<? extends emu.grasscutter.net.proto.ChessNormalCardInfoOuterClass.ChessNormalCardInfo> values) {
+        if (candidateCardInfoListBuilder_ == null) {
+          ensureCandidateCardInfoListIsMutable();
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, candidateCardInfoList_);
+          onChanged();
+        } else {
+          candidateCardInfoListBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .ChessNormalCardInfo candidate_card_info_list = 1;</code>
+       */
+      public Builder clearCandidateCardInfoList() {
+        if (candidateCardInfoListBuilder_ == null) {
+          candidateCardInfoList_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000001);
+          onChanged();
+        } else {
+          candidateCardInfoListBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .ChessNormalCardInfo candidate_card_info_list = 1;</code>
+       */
+      public Builder removeCandidateCardInfoList(int index) {
+        if (candidateCardInfoListBuilder_ == null) {
+          ensureCandidateCardInfoListIsMutable();
+          candidateCardInfoList_.remove(index);
+          onChanged();
+        } else {
+          candidateCardInfoListBuilder_.remove(index);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .ChessNormalCardInfo candidate_card_info_list = 1;</code>
+       */
+      public emu.grasscutter.net.proto.ChessNormalCardInfoOuterClass.ChessNormalCardInfo.Builder getCandidateCardInfoListBuilder(
+          int index) {
+        return getCandidateCardInfoListFieldBuilder().getBuilder(index);
+      }
+      /**
+       * <code>repeated .ChessNormalCardInfo candidate_card_info_list = 1;</code>
+       */
+      public emu.grasscutter.net.proto.ChessNormalCardInfoOuterClass.ChessNormalCardInfoOrBuilder getCandidateCardInfoListOrBuilder(
+          int index) {
+        if (candidateCardInfoListBuilder_ == null) {
+          return candidateCardInfoList_.get(index);  } else {
+          return candidateCardInfoListBuilder_.getMessageOrBuilder(index);
+        }
+      }
+      /**
+       * <code>repeated .ChessNormalCardInfo candidate_card_info_list = 1;</code>
+       */
+      public java.util.List<? extends emu.grasscutter.net.proto.ChessNormalCardInfoOuterClass.ChessNormalCardInfoOrBuilder> 
+           getCandidateCardInfoListOrBuilderList() {
+        if (candidateCardInfoListBuilder_ != null) {
+          return candidateCardInfoListBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(candidateCardInfoList_);
+        }
+      }
+      /**
+       * <code>repeated .ChessNormalCardInfo candidate_card_info_list = 1;</code>
+       */
+      public emu.grasscutter.net.proto.ChessNormalCardInfoOuterClass.ChessNormalCardInfo.Builder addCandidateCardInfoListBuilder() {
+        return getCandidateCardInfoListFieldBuilder().addBuilder(
+            emu.grasscutter.net.proto.ChessNormalCardInfoOuterClass.ChessNormalCardInfo.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .ChessNormalCardInfo candidate_card_info_list = 1;</code>
+       */
+      public emu.grasscutter.net.proto.ChessNormalCardInfoOuterClass.ChessNormalCardInfo.Builder addCandidateCardInfoListBuilder(
+          int index) {
+        return getCandidateCardInfoListFieldBuilder().addBuilder(
+            index, emu.grasscutter.net.proto.ChessNormalCardInfoOuterClass.ChessNormalCardInfo.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .ChessNormalCardInfo candidate_card_info_list = 1;</code>
+       */
+      public java.util.List<emu.grasscutter.net.proto.ChessNormalCardInfoOuterClass.ChessNormalCardInfo.Builder> 
+           getCandidateCardInfoListBuilderList() {
+        return getCandidateCardInfoListFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          emu.grasscutter.net.proto.ChessNormalCardInfoOuterClass.ChessNormalCardInfo, emu.grasscutter.net.proto.ChessNormalCardInfoOuterClass.ChessNormalCardInfo.Builder, emu.grasscutter.net.proto.ChessNormalCardInfoOuterClass.ChessNormalCardInfoOrBuilder> 
+          getCandidateCardInfoListFieldBuilder() {
+        if (candidateCardInfoListBuilder_ == null) {
+          candidateCardInfoListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+              emu.grasscutter.net.proto.ChessNormalCardInfoOuterClass.ChessNormalCardInfo, emu.grasscutter.net.proto.ChessNormalCardInfoOuterClass.ChessNormalCardInfo.Builder, emu.grasscutter.net.proto.ChessNormalCardInfoOuterClass.ChessNormalCardInfoOrBuilder>(
+                  candidateCardInfoList_,
+                  ((bitField0_ & 0x00000001) != 0),
+                  getParentForChildren(),
+                  isClean());
+          candidateCardInfoList_ = null;
+        }
+        return candidateCardInfoListBuilder_;
+      }
 
       private int uid_ ;
       /**
@@ -780,280 +1020,71 @@ public final class ChessPlayerInfoOuterClass {
         return this;
       }
 
-      private int freeRefreshLimit_ ;
+      private int unk3300AOCJHOKCDDM_ ;
       /**
-       * <code>uint32 free_refresh_limit = 10;</code>
-       * @return The freeRefreshLimit.
+       * <code>uint32 Unk3300_AOCJHOKCDDM = 2;</code>
+       * @return The unk3300AOCJHOKCDDM.
        */
       @java.lang.Override
-      public int getFreeRefreshLimit() {
-        return freeRefreshLimit_;
+      public int getUnk3300AOCJHOKCDDM() {
+        return unk3300AOCJHOKCDDM_;
       }
       /**
-       * <code>uint32 free_refresh_limit = 10;</code>
-       * @param value The freeRefreshLimit to set.
+       * <code>uint32 Unk3300_AOCJHOKCDDM = 2;</code>
+       * @param value The unk3300AOCJHOKCDDM to set.
        * @return This builder for chaining.
        */
-      public Builder setFreeRefreshLimit(int value) {
+      public Builder setUnk3300AOCJHOKCDDM(int value) {
         
-        freeRefreshLimit_ = value;
+        unk3300AOCJHOKCDDM_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 free_refresh_limit = 10;</code>
+       * <code>uint32 Unk3300_AOCJHOKCDDM = 2;</code>
        * @return This builder for chaining.
        */
-      public Builder clearFreeRefreshLimit() {
+      public Builder clearUnk3300AOCJHOKCDDM() {
         
-        freeRefreshLimit_ = 0;
+        unk3300AOCJHOKCDDM_ = 0;
         onChanged();
         return this;
       }
 
-      private java.util.List<emu.grasscutter.net.proto.ChessNormalCardInfoOuterClass.ChessNormalCardInfo> candidateCardInfoList_ =
-        java.util.Collections.emptyList();
-      private void ensureCandidateCardInfoListIsMutable() {
-        if (!((bitField0_ & 0x00000001) != 0)) {
-          candidateCardInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.ChessNormalCardInfoOuterClass.ChessNormalCardInfo>(candidateCardInfoList_);
-          bitField0_ |= 0x00000001;
-         }
-      }
-
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.ChessNormalCardInfoOuterClass.ChessNormalCardInfo, emu.grasscutter.net.proto.ChessNormalCardInfoOuterClass.ChessNormalCardInfo.Builder, emu.grasscutter.net.proto.ChessNormalCardInfoOuterClass.ChessNormalCardInfoOrBuilder> candidateCardInfoListBuilder_;
-
+      private int unk3300GPNDNCCLHKE_ ;
       /**
-       * <code>repeated .ChessNormalCardInfo candidate_card_info_list = 3;</code>
+       * <code>uint32 Unk3300_GPNDNCCLHKE = 10;</code>
+       * @return The unk3300GPNDNCCLHKE.
        */
-      public java.util.List<emu.grasscutter.net.proto.ChessNormalCardInfoOuterClass.ChessNormalCardInfo> getCandidateCardInfoListList() {
-        if (candidateCardInfoListBuilder_ == null) {
-          return java.util.Collections.unmodifiableList(candidateCardInfoList_);
-        } else {
-          return candidateCardInfoListBuilder_.getMessageList();
-        }
+      @java.lang.Override
+      public int getUnk3300GPNDNCCLHKE() {
+        return unk3300GPNDNCCLHKE_;
       }
       /**
-       * <code>repeated .ChessNormalCardInfo candidate_card_info_list = 3;</code>
+       * <code>uint32 Unk3300_GPNDNCCLHKE = 10;</code>
+       * @param value The unk3300GPNDNCCLHKE to set.
+       * @return This builder for chaining.
        */
-      public int getCandidateCardInfoListCount() {
-        if (candidateCardInfoListBuilder_ == null) {
-          return candidateCardInfoList_.size();
-        } else {
-          return candidateCardInfoListBuilder_.getCount();
-        }
-      }
-      /**
-       * <code>repeated .ChessNormalCardInfo candidate_card_info_list = 3;</code>
-       */
-      public emu.grasscutter.net.proto.ChessNormalCardInfoOuterClass.ChessNormalCardInfo getCandidateCardInfoList(int index) {
-        if (candidateCardInfoListBuilder_ == null) {
-          return candidateCardInfoList_.get(index);
-        } else {
-          return candidateCardInfoListBuilder_.getMessage(index);
-        }
-      }
-      /**
-       * <code>repeated .ChessNormalCardInfo candidate_card_info_list = 3;</code>
-       */
-      public Builder setCandidateCardInfoList(
-          int index, emu.grasscutter.net.proto.ChessNormalCardInfoOuterClass.ChessNormalCardInfo value) {
-        if (candidateCardInfoListBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureCandidateCardInfoListIsMutable();
-          candidateCardInfoList_.set(index, value);
-          onChanged();
-        } else {
-          candidateCardInfoListBuilder_.setMessage(index, value);
-        }
+      public Builder setUnk3300GPNDNCCLHKE(int value) {
+        
+        unk3300GPNDNCCLHKE_ = value;
+        onChanged();
         return this;
       }
       /**
-       * <code>repeated .ChessNormalCardInfo candidate_card_info_list = 3;</code>
+       * <code>uint32 Unk3300_GPNDNCCLHKE = 10;</code>
+       * @return This builder for chaining.
        */
-      public Builder setCandidateCardInfoList(
-          int index, emu.grasscutter.net.proto.ChessNormalCardInfoOuterClass.ChessNormalCardInfo.Builder builderForValue) {
-        if (candidateCardInfoListBuilder_ == null) {
-          ensureCandidateCardInfoListIsMutable();
-          candidateCardInfoList_.set(index, builderForValue.build());
-          onChanged();
-        } else {
-          candidateCardInfoListBuilder_.setMessage(index, builderForValue.build());
-        }
+      public Builder clearUnk3300GPNDNCCLHKE() {
+        
+        unk3300GPNDNCCLHKE_ = 0;
+        onChanged();
         return this;
-      }
-      /**
-       * <code>repeated .ChessNormalCardInfo candidate_card_info_list = 3;</code>
-       */
-      public Builder addCandidateCardInfoList(emu.grasscutter.net.proto.ChessNormalCardInfoOuterClass.ChessNormalCardInfo value) {
-        if (candidateCardInfoListBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureCandidateCardInfoListIsMutable();
-          candidateCardInfoList_.add(value);
-          onChanged();
-        } else {
-          candidateCardInfoListBuilder_.addMessage(value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .ChessNormalCardInfo candidate_card_info_list = 3;</code>
-       */
-      public Builder addCandidateCardInfoList(
-          int index, emu.grasscutter.net.proto.ChessNormalCardInfoOuterClass.ChessNormalCardInfo value) {
-        if (candidateCardInfoListBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureCandidateCardInfoListIsMutable();
-          candidateCardInfoList_.add(index, value);
-          onChanged();
-        } else {
-          candidateCardInfoListBuilder_.addMessage(index, value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .ChessNormalCardInfo candidate_card_info_list = 3;</code>
-       */
-      public Builder addCandidateCardInfoList(
-          emu.grasscutter.net.proto.ChessNormalCardInfoOuterClass.ChessNormalCardInfo.Builder builderForValue) {
-        if (candidateCardInfoListBuilder_ == null) {
-          ensureCandidateCardInfoListIsMutable();
-          candidateCardInfoList_.add(builderForValue.build());
-          onChanged();
-        } else {
-          candidateCardInfoListBuilder_.addMessage(builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .ChessNormalCardInfo candidate_card_info_list = 3;</code>
-       */
-      public Builder addCandidateCardInfoList(
-          int index, emu.grasscutter.net.proto.ChessNormalCardInfoOuterClass.ChessNormalCardInfo.Builder builderForValue) {
-        if (candidateCardInfoListBuilder_ == null) {
-          ensureCandidateCardInfoListIsMutable();
-          candidateCardInfoList_.add(index, builderForValue.build());
-          onChanged();
-        } else {
-          candidateCardInfoListBuilder_.addMessage(index, builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .ChessNormalCardInfo candidate_card_info_list = 3;</code>
-       */
-      public Builder addAllCandidateCardInfoList(
-          java.lang.Iterable<? extends emu.grasscutter.net.proto.ChessNormalCardInfoOuterClass.ChessNormalCardInfo> values) {
-        if (candidateCardInfoListBuilder_ == null) {
-          ensureCandidateCardInfoListIsMutable();
-          com.google.protobuf.AbstractMessageLite.Builder.addAll(
-              values, candidateCardInfoList_);
-          onChanged();
-        } else {
-          candidateCardInfoListBuilder_.addAllMessages(values);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .ChessNormalCardInfo candidate_card_info_list = 3;</code>
-       */
-      public Builder clearCandidateCardInfoList() {
-        if (candidateCardInfoListBuilder_ == null) {
-          candidateCardInfoList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000001);
-          onChanged();
-        } else {
-          candidateCardInfoListBuilder_.clear();
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .ChessNormalCardInfo candidate_card_info_list = 3;</code>
-       */
-      public Builder removeCandidateCardInfoList(int index) {
-        if (candidateCardInfoListBuilder_ == null) {
-          ensureCandidateCardInfoListIsMutable();
-          candidateCardInfoList_.remove(index);
-          onChanged();
-        } else {
-          candidateCardInfoListBuilder_.remove(index);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .ChessNormalCardInfo candidate_card_info_list = 3;</code>
-       */
-      public emu.grasscutter.net.proto.ChessNormalCardInfoOuterClass.ChessNormalCardInfo.Builder getCandidateCardInfoListBuilder(
-          int index) {
-        return getCandidateCardInfoListFieldBuilder().getBuilder(index);
-      }
-      /**
-       * <code>repeated .ChessNormalCardInfo candidate_card_info_list = 3;</code>
-       */
-      public emu.grasscutter.net.proto.ChessNormalCardInfoOuterClass.ChessNormalCardInfoOrBuilder getCandidateCardInfoListOrBuilder(
-          int index) {
-        if (candidateCardInfoListBuilder_ == null) {
-          return candidateCardInfoList_.get(index);  } else {
-          return candidateCardInfoListBuilder_.getMessageOrBuilder(index);
-        }
-      }
-      /**
-       * <code>repeated .ChessNormalCardInfo candidate_card_info_list = 3;</code>
-       */
-      public java.util.List<? extends emu.grasscutter.net.proto.ChessNormalCardInfoOuterClass.ChessNormalCardInfoOrBuilder> 
-           getCandidateCardInfoListOrBuilderList() {
-        if (candidateCardInfoListBuilder_ != null) {
-          return candidateCardInfoListBuilder_.getMessageOrBuilderList();
-        } else {
-          return java.util.Collections.unmodifiableList(candidateCardInfoList_);
-        }
-      }
-      /**
-       * <code>repeated .ChessNormalCardInfo candidate_card_info_list = 3;</code>
-       */
-      public emu.grasscutter.net.proto.ChessNormalCardInfoOuterClass.ChessNormalCardInfo.Builder addCandidateCardInfoListBuilder() {
-        return getCandidateCardInfoListFieldBuilder().addBuilder(
-            emu.grasscutter.net.proto.ChessNormalCardInfoOuterClass.ChessNormalCardInfo.getDefaultInstance());
-      }
-      /**
-       * <code>repeated .ChessNormalCardInfo candidate_card_info_list = 3;</code>
-       */
-      public emu.grasscutter.net.proto.ChessNormalCardInfoOuterClass.ChessNormalCardInfo.Builder addCandidateCardInfoListBuilder(
-          int index) {
-        return getCandidateCardInfoListFieldBuilder().addBuilder(
-            index, emu.grasscutter.net.proto.ChessNormalCardInfoOuterClass.ChessNormalCardInfo.getDefaultInstance());
-      }
-      /**
-       * <code>repeated .ChessNormalCardInfo candidate_card_info_list = 3;</code>
-       */
-      public java.util.List<emu.grasscutter.net.proto.ChessNormalCardInfoOuterClass.ChessNormalCardInfo.Builder> 
-           getCandidateCardInfoListBuilderList() {
-        return getCandidateCardInfoListFieldBuilder().getBuilderList();
-      }
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.ChessNormalCardInfoOuterClass.ChessNormalCardInfo, emu.grasscutter.net.proto.ChessNormalCardInfoOuterClass.ChessNormalCardInfo.Builder, emu.grasscutter.net.proto.ChessNormalCardInfoOuterClass.ChessNormalCardInfoOrBuilder> 
-          getCandidateCardInfoListFieldBuilder() {
-        if (candidateCardInfoListBuilder_ == null) {
-          candidateCardInfoListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              emu.grasscutter.net.proto.ChessNormalCardInfoOuterClass.ChessNormalCardInfo, emu.grasscutter.net.proto.ChessNormalCardInfoOuterClass.ChessNormalCardInfo.Builder, emu.grasscutter.net.proto.ChessNormalCardInfoOuterClass.ChessNormalCardInfoOrBuilder>(
-                  candidateCardInfoList_,
-                  ((bitField0_ & 0x00000001) != 0),
-                  getParentForChildren(),
-                  isClean());
-          candidateCardInfoList_ = null;
-        }
-        return candidateCardInfoListBuilder_;
       }
 
       private int buildingPoints_ ;
       /**
-       * <code>uint32 building_points = 12;</code>
+       * <code>uint32 building_points = 8;</code>
        * @return The buildingPoints.
        */
       @java.lang.Override
@@ -1061,7 +1092,7 @@ public final class ChessPlayerInfoOuterClass {
         return buildingPoints_;
       }
       /**
-       * <code>uint32 building_points = 12;</code>
+       * <code>uint32 building_points = 8;</code>
        * @param value The buildingPoints to set.
        * @return This builder for chaining.
        */
@@ -1072,7 +1103,7 @@ public final class ChessPlayerInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 building_points = 12;</code>
+       * <code>uint32 building_points = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearBuildingPoints() {
@@ -1082,95 +1113,64 @@ public final class ChessPlayerInfoOuterClass {
         return this;
       }
 
-      private int candidateIndex_ ;
+      private int unk3300PPFBGIDKCDJ_ ;
       /**
-       * <code>uint32 candidate_index = 6;</code>
-       * @return The candidateIndex.
+       * <code>uint32 Unk3300_PPFBGIDKCDJ = 12;</code>
+       * @return The unk3300PPFBGIDKCDJ.
        */
       @java.lang.Override
-      public int getCandidateIndex() {
-        return candidateIndex_;
+      public int getUnk3300PPFBGIDKCDJ() {
+        return unk3300PPFBGIDKCDJ_;
       }
       /**
-       * <code>uint32 candidate_index = 6;</code>
-       * @param value The candidateIndex to set.
+       * <code>uint32 Unk3300_PPFBGIDKCDJ = 12;</code>
+       * @param value The unk3300PPFBGIDKCDJ to set.
        * @return This builder for chaining.
        */
-      public Builder setCandidateIndex(int value) {
+      public Builder setUnk3300PPFBGIDKCDJ(int value) {
         
-        candidateIndex_ = value;
+        unk3300PPFBGIDKCDJ_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 candidate_index = 6;</code>
+       * <code>uint32 Unk3300_PPFBGIDKCDJ = 12;</code>
        * @return This builder for chaining.
        */
-      public Builder clearCandidateIndex() {
+      public Builder clearUnk3300PPFBGIDKCDJ() {
         
-        candidateIndex_ = 0;
+        unk3300PPFBGIDKCDJ_ = 0;
         onChanged();
         return this;
       }
 
-      private int freeRefreshCount_ ;
+      private int unk3300PPFPEAGBHLP_ ;
       /**
-       * <code>uint32 free_refresh_count = 13;</code>
-       * @return The freeRefreshCount.
+       * <code>uint32 Unk3300_PPFPEAGBHLP = 13;</code>
+       * @return The unk3300PPFPEAGBHLP.
        */
       @java.lang.Override
-      public int getFreeRefreshCount() {
-        return freeRefreshCount_;
+      public int getUnk3300PPFPEAGBHLP() {
+        return unk3300PPFPEAGBHLP_;
       }
       /**
-       * <code>uint32 free_refresh_count = 13;</code>
-       * @param value The freeRefreshCount to set.
+       * <code>uint32 Unk3300_PPFPEAGBHLP = 13;</code>
+       * @param value The unk3300PPFPEAGBHLP to set.
        * @return This builder for chaining.
        */
-      public Builder setFreeRefreshCount(int value) {
+      public Builder setUnk3300PPFPEAGBHLP(int value) {
         
-        freeRefreshCount_ = value;
+        unk3300PPFPEAGBHLP_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 free_refresh_count = 13;</code>
+       * <code>uint32 Unk3300_PPFPEAGBHLP = 13;</code>
        * @return This builder for chaining.
        */
-      public Builder clearFreeRefreshCount() {
+      public Builder clearUnk3300PPFPEAGBHLP() {
         
-        freeRefreshCount_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int refreshCost_ ;
-      /**
-       * <code>uint32 refresh_cost = 7;</code>
-       * @return The refreshCost.
-       */
-      @java.lang.Override
-      public int getRefreshCost() {
-        return refreshCost_;
-      }
-      /**
-       * <code>uint32 refresh_cost = 7;</code>
-       * @param value The refreshCost to set.
-       * @return This builder for chaining.
-       */
-      public Builder setRefreshCost(int value) {
-        
-        refreshCost_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 refresh_cost = 7;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearRefreshCost() {
-        
-        refreshCost_ = 0;
+        unk3300PPFPEAGBHLP_ = 0;
         onChanged();
         return this;
       }
@@ -1242,13 +1242,13 @@ public final class ChessPlayerInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\025ChessPlayerInfo.proto\032\031ChessNormalCard" +
-      "Info.proto\"\326\001\n\017ChessPlayerInfo\022\013\n\003uid\030\005 " +
-      "\001(\r\022\032\n\022free_refresh_limit\030\n \001(\r\0226\n\030candi" +
-      "date_card_info_list\030\003 \003(\0132\024.ChessNormalC" +
-      "ardInfo\022\027\n\017building_points\030\014 \001(\r\022\027\n\017cand" +
-      "idate_index\030\006 \001(\r\022\032\n\022free_refresh_count\030" +
-      "\r \001(\r\022\024\n\014refresh_cost\030\007 \001(\rB\033\n\031emu.grass" +
-      "cutter.net.protob\006proto3"
+      "Info.proto\"\343\001\n\017ChessPlayerInfo\0226\n\030candid" +
+      "ate_card_info_list\030\001 \003(\0132\024.ChessNormalCa" +
+      "rdInfo\022\013\n\003uid\030\005 \001(\r\022\033\n\023Unk3300_AOCJHOKCD" +
+      "DM\030\002 \001(\r\022\033\n\023Unk3300_GPNDNCCLHKE\030\n \001(\r\022\027\n" +
+      "\017building_points\030\010 \001(\r\022\033\n\023Unk3300_PPFBGI" +
+      "DKCDJ\030\014 \001(\r\022\033\n\023Unk3300_PPFPEAGBHLP\030\r \001(\r" +
+      "B\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -1260,7 +1260,7 @@ public final class ChessPlayerInfoOuterClass {
     internal_static_ChessPlayerInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ChessPlayerInfo_descriptor,
-        new java.lang.String[] { "Uid", "FreeRefreshLimit", "CandidateCardInfoList", "BuildingPoints", "CandidateIndex", "FreeRefreshCount", "RefreshCost", });
+        new java.lang.String[] { "CandidateCardInfoList", "Uid", "Unk3300AOCJHOKCDDM", "Unk3300GPNDNCCLHKE", "BuildingPoints", "Unk3300PPFBGIDKCDJ", "Unk3300PPFPEAGBHLP", });
     emu.grasscutter.net.proto.ChessNormalCardInfoOuterClass.getDescriptor();
   }
 

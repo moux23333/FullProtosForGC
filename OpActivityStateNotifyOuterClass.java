@@ -19,51 +19,55 @@ public final class OpActivityStateNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated uint32 finished_bonus_activity_id_list = 14;</code>
+     * <code>repeated uint32 finished_bonus_activity_id_list = 6;</code>
      * @return A list containing the finishedBonusActivityIdList.
      */
     java.util.List<java.lang.Integer> getFinishedBonusActivityIdListList();
     /**
-     * <code>repeated uint32 finished_bonus_activity_id_list = 14;</code>
+     * <code>repeated uint32 finished_bonus_activity_id_list = 6;</code>
      * @return The count of finishedBonusActivityIdList.
      */
     int getFinishedBonusActivityIdListCount();
     /**
-     * <code>repeated uint32 finished_bonus_activity_id_list = 14;</code>
+     * <code>repeated uint32 finished_bonus_activity_id_list = 6;</code>
      * @param index The index of the element to return.
      * @return The finishedBonusActivityIdList at the given index.
      */
     int getFinishedBonusActivityIdList(int index);
 
     /**
-     * <code>repeated .OpActivityTagBriefInfo opened_op_activity_info_list = 13;</code>
+     * <code>repeated .OpActivityTagBriefInfo opened_op_activity_info_list = 8;</code>
      */
     java.util.List<emu.grasscutter.net.proto.OpActivityTagBriefInfoOuterClass.OpActivityTagBriefInfo> 
         getOpenedOpActivityInfoListList();
     /**
-     * <code>repeated .OpActivityTagBriefInfo opened_op_activity_info_list = 13;</code>
+     * <code>repeated .OpActivityTagBriefInfo opened_op_activity_info_list = 8;</code>
      */
     emu.grasscutter.net.proto.OpActivityTagBriefInfoOuterClass.OpActivityTagBriefInfo getOpenedOpActivityInfoList(int index);
     /**
-     * <code>repeated .OpActivityTagBriefInfo opened_op_activity_info_list = 13;</code>
+     * <code>repeated .OpActivityTagBriefInfo opened_op_activity_info_list = 8;</code>
      */
     int getOpenedOpActivityInfoListCount();
     /**
-     * <code>repeated .OpActivityTagBriefInfo opened_op_activity_info_list = 13;</code>
+     * <code>repeated .OpActivityTagBriefInfo opened_op_activity_info_list = 8;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.OpActivityTagBriefInfoOuterClass.OpActivityTagBriefInfoOrBuilder> 
         getOpenedOpActivityInfoListOrBuilderList();
     /**
-     * <code>repeated .OpActivityTagBriefInfo opened_op_activity_info_list = 13;</code>
+     * <code>repeated .OpActivityTagBriefInfo opened_op_activity_info_list = 8;</code>
      */
     emu.grasscutter.net.proto.OpActivityTagBriefInfoOuterClass.OpActivityTagBriefInfoOrBuilder getOpenedOpActivityInfoListOrBuilder(
         int index);
   }
   /**
    * <pre>
-   * CmdId: 2572
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 2579;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code OpActivityStateNotify}
@@ -113,16 +117,7 @@ public final class OpActivityStateNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 106: {
-              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
-                openedOpActivityInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.OpActivityTagBriefInfoOuterClass.OpActivityTagBriefInfo>();
-                mutable_bitField0_ |= 0x00000002;
-              }
-              openedOpActivityInfoList_.add(
-                  input.readMessage(emu.grasscutter.net.proto.OpActivityTagBriefInfoOuterClass.OpActivityTagBriefInfo.parser(), extensionRegistry));
-              break;
-            }
-            case 112: {
+            case 48: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 finishedBonusActivityIdList_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
@@ -130,7 +125,7 @@ public final class OpActivityStateNotifyOuterClass {
               finishedBonusActivityIdList_.addInt(input.readUInt32());
               break;
             }
-            case 114: {
+            case 50: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -141,6 +136,15 @@ public final class OpActivityStateNotifyOuterClass {
                 finishedBonusActivityIdList_.addInt(input.readUInt32());
               }
               input.popLimit(limit);
+              break;
+            }
+            case 66: {
+              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
+                openedOpActivityInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.OpActivityTagBriefInfoOuterClass.OpActivityTagBriefInfo>();
+                mutable_bitField0_ |= 0x00000002;
+              }
+              openedOpActivityInfoList_.add(
+                  input.readMessage(emu.grasscutter.net.proto.OpActivityTagBriefInfoOuterClass.OpActivityTagBriefInfo.parser(), extensionRegistry));
               break;
             }
             default: {
@@ -158,11 +162,11 @@ public final class OpActivityStateNotifyOuterClass {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
       } finally {
-        if (((mutable_bitField0_ & 0x00000002) != 0)) {
-          openedOpActivityInfoList_ = java.util.Collections.unmodifiableList(openedOpActivityInfoList_);
-        }
         if (((mutable_bitField0_ & 0x00000001) != 0)) {
           finishedBonusActivityIdList_.makeImmutable(); // C
+        }
+        if (((mutable_bitField0_ & 0x00000002) != 0)) {
+          openedOpActivityInfoList_ = java.util.Collections.unmodifiableList(openedOpActivityInfoList_);
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -181,10 +185,10 @@ public final class OpActivityStateNotifyOuterClass {
               emu.grasscutter.net.proto.OpActivityStateNotifyOuterClass.OpActivityStateNotify.class, emu.grasscutter.net.proto.OpActivityStateNotifyOuterClass.OpActivityStateNotify.Builder.class);
     }
 
-    public static final int FINISHED_BONUS_ACTIVITY_ID_LIST_FIELD_NUMBER = 14;
+    public static final int FINISHED_BONUS_ACTIVITY_ID_LIST_FIELD_NUMBER = 6;
     private com.google.protobuf.Internal.IntList finishedBonusActivityIdList_;
     /**
-     * <code>repeated uint32 finished_bonus_activity_id_list = 14;</code>
+     * <code>repeated uint32 finished_bonus_activity_id_list = 6;</code>
      * @return A list containing the finishedBonusActivityIdList.
      */
     @java.lang.Override
@@ -193,14 +197,14 @@ public final class OpActivityStateNotifyOuterClass {
       return finishedBonusActivityIdList_;
     }
     /**
-     * <code>repeated uint32 finished_bonus_activity_id_list = 14;</code>
+     * <code>repeated uint32 finished_bonus_activity_id_list = 6;</code>
      * @return The count of finishedBonusActivityIdList.
      */
     public int getFinishedBonusActivityIdListCount() {
       return finishedBonusActivityIdList_.size();
     }
     /**
-     * <code>repeated uint32 finished_bonus_activity_id_list = 14;</code>
+     * <code>repeated uint32 finished_bonus_activity_id_list = 6;</code>
      * @param index The index of the element to return.
      * @return The finishedBonusActivityIdList at the given index.
      */
@@ -209,17 +213,17 @@ public final class OpActivityStateNotifyOuterClass {
     }
     private int finishedBonusActivityIdListMemoizedSerializedSize = -1;
 
-    public static final int OPENED_OP_ACTIVITY_INFO_LIST_FIELD_NUMBER = 13;
+    public static final int OPENED_OP_ACTIVITY_INFO_LIST_FIELD_NUMBER = 8;
     private java.util.List<emu.grasscutter.net.proto.OpActivityTagBriefInfoOuterClass.OpActivityTagBriefInfo> openedOpActivityInfoList_;
     /**
-     * <code>repeated .OpActivityTagBriefInfo opened_op_activity_info_list = 13;</code>
+     * <code>repeated .OpActivityTagBriefInfo opened_op_activity_info_list = 8;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.OpActivityTagBriefInfoOuterClass.OpActivityTagBriefInfo> getOpenedOpActivityInfoListList() {
       return openedOpActivityInfoList_;
     }
     /**
-     * <code>repeated .OpActivityTagBriefInfo opened_op_activity_info_list = 13;</code>
+     * <code>repeated .OpActivityTagBriefInfo opened_op_activity_info_list = 8;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.OpActivityTagBriefInfoOuterClass.OpActivityTagBriefInfoOrBuilder> 
@@ -227,21 +231,21 @@ public final class OpActivityStateNotifyOuterClass {
       return openedOpActivityInfoList_;
     }
     /**
-     * <code>repeated .OpActivityTagBriefInfo opened_op_activity_info_list = 13;</code>
+     * <code>repeated .OpActivityTagBriefInfo opened_op_activity_info_list = 8;</code>
      */
     @java.lang.Override
     public int getOpenedOpActivityInfoListCount() {
       return openedOpActivityInfoList_.size();
     }
     /**
-     * <code>repeated .OpActivityTagBriefInfo opened_op_activity_info_list = 13;</code>
+     * <code>repeated .OpActivityTagBriefInfo opened_op_activity_info_list = 8;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.OpActivityTagBriefInfoOuterClass.OpActivityTagBriefInfo getOpenedOpActivityInfoList(int index) {
       return openedOpActivityInfoList_.get(index);
     }
     /**
-     * <code>repeated .OpActivityTagBriefInfo opened_op_activity_info_list = 13;</code>
+     * <code>repeated .OpActivityTagBriefInfo opened_op_activity_info_list = 8;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.OpActivityTagBriefInfoOuterClass.OpActivityTagBriefInfoOrBuilder getOpenedOpActivityInfoListOrBuilder(
@@ -264,15 +268,15 @@ public final class OpActivityStateNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      for (int i = 0; i < openedOpActivityInfoList_.size(); i++) {
-        output.writeMessage(13, openedOpActivityInfoList_.get(i));
-      }
       if (getFinishedBonusActivityIdListList().size() > 0) {
-        output.writeUInt32NoTag(114);
+        output.writeUInt32NoTag(50);
         output.writeUInt32NoTag(finishedBonusActivityIdListMemoizedSerializedSize);
       }
       for (int i = 0; i < finishedBonusActivityIdList_.size(); i++) {
         output.writeUInt32NoTag(finishedBonusActivityIdList_.getInt(i));
+      }
+      for (int i = 0; i < openedOpActivityInfoList_.size(); i++) {
+        output.writeMessage(8, openedOpActivityInfoList_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -283,10 +287,6 @@ public final class OpActivityStateNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      for (int i = 0; i < openedOpActivityInfoList_.size(); i++) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(13, openedOpActivityInfoList_.get(i));
-      }
       {
         int dataSize = 0;
         for (int i = 0; i < finishedBonusActivityIdList_.size(); i++) {
@@ -300,6 +300,10 @@ public final class OpActivityStateNotifyOuterClass {
               .computeInt32SizeNoTag(dataSize);
         }
         finishedBonusActivityIdListMemoizedSerializedSize = dataSize;
+      }
+      for (int i = 0; i < openedOpActivityInfoList_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(8, openedOpActivityInfoList_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -436,9 +440,13 @@ public final class OpActivityStateNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 2572
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 2579;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code OpActivityStateNotify}
@@ -650,7 +658,7 @@ public final class OpActivityStateNotifyOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 finished_bonus_activity_id_list = 14;</code>
+       * <code>repeated uint32 finished_bonus_activity_id_list = 6;</code>
        * @return A list containing the finishedBonusActivityIdList.
        */
       public java.util.List<java.lang.Integer>
@@ -659,14 +667,14 @@ public final class OpActivityStateNotifyOuterClass {
                  java.util.Collections.unmodifiableList(finishedBonusActivityIdList_) : finishedBonusActivityIdList_;
       }
       /**
-       * <code>repeated uint32 finished_bonus_activity_id_list = 14;</code>
+       * <code>repeated uint32 finished_bonus_activity_id_list = 6;</code>
        * @return The count of finishedBonusActivityIdList.
        */
       public int getFinishedBonusActivityIdListCount() {
         return finishedBonusActivityIdList_.size();
       }
       /**
-       * <code>repeated uint32 finished_bonus_activity_id_list = 14;</code>
+       * <code>repeated uint32 finished_bonus_activity_id_list = 6;</code>
        * @param index The index of the element to return.
        * @return The finishedBonusActivityIdList at the given index.
        */
@@ -674,7 +682,7 @@ public final class OpActivityStateNotifyOuterClass {
         return finishedBonusActivityIdList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 finished_bonus_activity_id_list = 14;</code>
+       * <code>repeated uint32 finished_bonus_activity_id_list = 6;</code>
        * @param index The index to set the value at.
        * @param value The finishedBonusActivityIdList to set.
        * @return This builder for chaining.
@@ -687,7 +695,7 @@ public final class OpActivityStateNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 finished_bonus_activity_id_list = 14;</code>
+       * <code>repeated uint32 finished_bonus_activity_id_list = 6;</code>
        * @param value The finishedBonusActivityIdList to add.
        * @return This builder for chaining.
        */
@@ -698,7 +706,7 @@ public final class OpActivityStateNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 finished_bonus_activity_id_list = 14;</code>
+       * <code>repeated uint32 finished_bonus_activity_id_list = 6;</code>
        * @param values The finishedBonusActivityIdList to add.
        * @return This builder for chaining.
        */
@@ -711,7 +719,7 @@ public final class OpActivityStateNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 finished_bonus_activity_id_list = 14;</code>
+       * <code>repeated uint32 finished_bonus_activity_id_list = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearFinishedBonusActivityIdList() {
@@ -734,7 +742,7 @@ public final class OpActivityStateNotifyOuterClass {
           emu.grasscutter.net.proto.OpActivityTagBriefInfoOuterClass.OpActivityTagBriefInfo, emu.grasscutter.net.proto.OpActivityTagBriefInfoOuterClass.OpActivityTagBriefInfo.Builder, emu.grasscutter.net.proto.OpActivityTagBriefInfoOuterClass.OpActivityTagBriefInfoOrBuilder> openedOpActivityInfoListBuilder_;
 
       /**
-       * <code>repeated .OpActivityTagBriefInfo opened_op_activity_info_list = 13;</code>
+       * <code>repeated .OpActivityTagBriefInfo opened_op_activity_info_list = 8;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.OpActivityTagBriefInfoOuterClass.OpActivityTagBriefInfo> getOpenedOpActivityInfoListList() {
         if (openedOpActivityInfoListBuilder_ == null) {
@@ -744,7 +752,7 @@ public final class OpActivityStateNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .OpActivityTagBriefInfo opened_op_activity_info_list = 13;</code>
+       * <code>repeated .OpActivityTagBriefInfo opened_op_activity_info_list = 8;</code>
        */
       public int getOpenedOpActivityInfoListCount() {
         if (openedOpActivityInfoListBuilder_ == null) {
@@ -754,7 +762,7 @@ public final class OpActivityStateNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .OpActivityTagBriefInfo opened_op_activity_info_list = 13;</code>
+       * <code>repeated .OpActivityTagBriefInfo opened_op_activity_info_list = 8;</code>
        */
       public emu.grasscutter.net.proto.OpActivityTagBriefInfoOuterClass.OpActivityTagBriefInfo getOpenedOpActivityInfoList(int index) {
         if (openedOpActivityInfoListBuilder_ == null) {
@@ -764,7 +772,7 @@ public final class OpActivityStateNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .OpActivityTagBriefInfo opened_op_activity_info_list = 13;</code>
+       * <code>repeated .OpActivityTagBriefInfo opened_op_activity_info_list = 8;</code>
        */
       public Builder setOpenedOpActivityInfoList(
           int index, emu.grasscutter.net.proto.OpActivityTagBriefInfoOuterClass.OpActivityTagBriefInfo value) {
@@ -781,7 +789,7 @@ public final class OpActivityStateNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .OpActivityTagBriefInfo opened_op_activity_info_list = 13;</code>
+       * <code>repeated .OpActivityTagBriefInfo opened_op_activity_info_list = 8;</code>
        */
       public Builder setOpenedOpActivityInfoList(
           int index, emu.grasscutter.net.proto.OpActivityTagBriefInfoOuterClass.OpActivityTagBriefInfo.Builder builderForValue) {
@@ -795,7 +803,7 @@ public final class OpActivityStateNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .OpActivityTagBriefInfo opened_op_activity_info_list = 13;</code>
+       * <code>repeated .OpActivityTagBriefInfo opened_op_activity_info_list = 8;</code>
        */
       public Builder addOpenedOpActivityInfoList(emu.grasscutter.net.proto.OpActivityTagBriefInfoOuterClass.OpActivityTagBriefInfo value) {
         if (openedOpActivityInfoListBuilder_ == null) {
@@ -811,7 +819,7 @@ public final class OpActivityStateNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .OpActivityTagBriefInfo opened_op_activity_info_list = 13;</code>
+       * <code>repeated .OpActivityTagBriefInfo opened_op_activity_info_list = 8;</code>
        */
       public Builder addOpenedOpActivityInfoList(
           int index, emu.grasscutter.net.proto.OpActivityTagBriefInfoOuterClass.OpActivityTagBriefInfo value) {
@@ -828,7 +836,7 @@ public final class OpActivityStateNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .OpActivityTagBriefInfo opened_op_activity_info_list = 13;</code>
+       * <code>repeated .OpActivityTagBriefInfo opened_op_activity_info_list = 8;</code>
        */
       public Builder addOpenedOpActivityInfoList(
           emu.grasscutter.net.proto.OpActivityTagBriefInfoOuterClass.OpActivityTagBriefInfo.Builder builderForValue) {
@@ -842,7 +850,7 @@ public final class OpActivityStateNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .OpActivityTagBriefInfo opened_op_activity_info_list = 13;</code>
+       * <code>repeated .OpActivityTagBriefInfo opened_op_activity_info_list = 8;</code>
        */
       public Builder addOpenedOpActivityInfoList(
           int index, emu.grasscutter.net.proto.OpActivityTagBriefInfoOuterClass.OpActivityTagBriefInfo.Builder builderForValue) {
@@ -856,7 +864,7 @@ public final class OpActivityStateNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .OpActivityTagBriefInfo opened_op_activity_info_list = 13;</code>
+       * <code>repeated .OpActivityTagBriefInfo opened_op_activity_info_list = 8;</code>
        */
       public Builder addAllOpenedOpActivityInfoList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.OpActivityTagBriefInfoOuterClass.OpActivityTagBriefInfo> values) {
@@ -871,7 +879,7 @@ public final class OpActivityStateNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .OpActivityTagBriefInfo opened_op_activity_info_list = 13;</code>
+       * <code>repeated .OpActivityTagBriefInfo opened_op_activity_info_list = 8;</code>
        */
       public Builder clearOpenedOpActivityInfoList() {
         if (openedOpActivityInfoListBuilder_ == null) {
@@ -884,7 +892,7 @@ public final class OpActivityStateNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .OpActivityTagBriefInfo opened_op_activity_info_list = 13;</code>
+       * <code>repeated .OpActivityTagBriefInfo opened_op_activity_info_list = 8;</code>
        */
       public Builder removeOpenedOpActivityInfoList(int index) {
         if (openedOpActivityInfoListBuilder_ == null) {
@@ -897,14 +905,14 @@ public final class OpActivityStateNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .OpActivityTagBriefInfo opened_op_activity_info_list = 13;</code>
+       * <code>repeated .OpActivityTagBriefInfo opened_op_activity_info_list = 8;</code>
        */
       public emu.grasscutter.net.proto.OpActivityTagBriefInfoOuterClass.OpActivityTagBriefInfo.Builder getOpenedOpActivityInfoListBuilder(
           int index) {
         return getOpenedOpActivityInfoListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .OpActivityTagBriefInfo opened_op_activity_info_list = 13;</code>
+       * <code>repeated .OpActivityTagBriefInfo opened_op_activity_info_list = 8;</code>
        */
       public emu.grasscutter.net.proto.OpActivityTagBriefInfoOuterClass.OpActivityTagBriefInfoOrBuilder getOpenedOpActivityInfoListOrBuilder(
           int index) {
@@ -914,7 +922,7 @@ public final class OpActivityStateNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .OpActivityTagBriefInfo opened_op_activity_info_list = 13;</code>
+       * <code>repeated .OpActivityTagBriefInfo opened_op_activity_info_list = 8;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.OpActivityTagBriefInfoOuterClass.OpActivityTagBriefInfoOrBuilder> 
            getOpenedOpActivityInfoListOrBuilderList() {
@@ -925,14 +933,14 @@ public final class OpActivityStateNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .OpActivityTagBriefInfo opened_op_activity_info_list = 13;</code>
+       * <code>repeated .OpActivityTagBriefInfo opened_op_activity_info_list = 8;</code>
        */
       public emu.grasscutter.net.proto.OpActivityTagBriefInfoOuterClass.OpActivityTagBriefInfo.Builder addOpenedOpActivityInfoListBuilder() {
         return getOpenedOpActivityInfoListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.OpActivityTagBriefInfoOuterClass.OpActivityTagBriefInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .OpActivityTagBriefInfo opened_op_activity_info_list = 13;</code>
+       * <code>repeated .OpActivityTagBriefInfo opened_op_activity_info_list = 8;</code>
        */
       public emu.grasscutter.net.proto.OpActivityTagBriefInfoOuterClass.OpActivityTagBriefInfo.Builder addOpenedOpActivityInfoListBuilder(
           int index) {
@@ -940,7 +948,7 @@ public final class OpActivityStateNotifyOuterClass {
             index, emu.grasscutter.net.proto.OpActivityTagBriefInfoOuterClass.OpActivityTagBriefInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .OpActivityTagBriefInfo opened_op_activity_info_list = 13;</code>
+       * <code>repeated .OpActivityTagBriefInfo opened_op_activity_info_list = 8;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.OpActivityTagBriefInfoOuterClass.OpActivityTagBriefInfo.Builder> 
            getOpenedOpActivityInfoListBuilderList() {
@@ -1030,7 +1038,7 @@ public final class OpActivityStateNotifyOuterClass {
       "\n\033OpActivityStateNotify.proto\032\034OpActivit" +
       "yTagBriefInfo.proto\"\177\n\025OpActivityStateNo" +
       "tify\022\'\n\037finished_bonus_activity_id_list\030" +
-      "\016 \003(\r\022=\n\034opened_op_activity_info_list\030\r " +
+      "\006 \003(\r\022=\n\034opened_op_activity_info_list\030\010 " +
       "\003(\0132\027.OpActivityTagBriefInfoB\033\n\031emu.gras" +
       "scutter.net.protob\006proto3"
     };

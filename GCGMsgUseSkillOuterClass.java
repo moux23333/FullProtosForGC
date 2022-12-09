@@ -19,13 +19,13 @@ public final class GCGMsgUseSkillOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 skill_id = 9;</code>
+     * <code>uint32 skill_id = 3;</code>
      * @return The skillId.
      */
     int getSkillId();
 
     /**
-     * <code>uint32 card_guid = 6;</code>
+     * <code>uint32 card_guid = 10;</code>
      * @return The cardGuid.
      */
     int getCardGuid();
@@ -75,14 +75,14 @@ public final class GCGMsgUseSkillOuterClass {
             case 0:
               done = true;
               break;
-            case 48: {
-
-              cardGuid_ = input.readUInt32();
-              break;
-            }
-            case 72: {
+            case 24: {
 
               skillId_ = input.readUInt32();
+              break;
+            }
+            case 80: {
+
+              cardGuid_ = input.readUInt32();
               break;
             }
             default: {
@@ -117,10 +117,10 @@ public final class GCGMsgUseSkillOuterClass {
               emu.grasscutter.net.proto.GCGMsgUseSkillOuterClass.GCGMsgUseSkill.class, emu.grasscutter.net.proto.GCGMsgUseSkillOuterClass.GCGMsgUseSkill.Builder.class);
     }
 
-    public static final int SKILL_ID_FIELD_NUMBER = 9;
+    public static final int SKILL_ID_FIELD_NUMBER = 3;
     private int skillId_;
     /**
-     * <code>uint32 skill_id = 9;</code>
+     * <code>uint32 skill_id = 3;</code>
      * @return The skillId.
      */
     @java.lang.Override
@@ -128,10 +128,10 @@ public final class GCGMsgUseSkillOuterClass {
       return skillId_;
     }
 
-    public static final int CARD_GUID_FIELD_NUMBER = 6;
+    public static final int CARD_GUID_FIELD_NUMBER = 10;
     private int cardGuid_;
     /**
-     * <code>uint32 card_guid = 6;</code>
+     * <code>uint32 card_guid = 10;</code>
      * @return The cardGuid.
      */
     @java.lang.Override
@@ -153,11 +153,11 @@ public final class GCGMsgUseSkillOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (cardGuid_ != 0) {
-        output.writeUInt32(6, cardGuid_);
-      }
       if (skillId_ != 0) {
-        output.writeUInt32(9, skillId_);
+        output.writeUInt32(3, skillId_);
+      }
+      if (cardGuid_ != 0) {
+        output.writeUInt32(10, cardGuid_);
       }
       unknownFields.writeTo(output);
     }
@@ -168,13 +168,13 @@ public final class GCGMsgUseSkillOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (cardGuid_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, cardGuid_);
-      }
       if (skillId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, skillId_);
+          .computeUInt32Size(3, skillId_);
+      }
+      if (cardGuid_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(10, cardGuid_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -460,7 +460,7 @@ public final class GCGMsgUseSkillOuterClass {
 
       private int skillId_ ;
       /**
-       * <code>uint32 skill_id = 9;</code>
+       * <code>uint32 skill_id = 3;</code>
        * @return The skillId.
        */
       @java.lang.Override
@@ -468,7 +468,7 @@ public final class GCGMsgUseSkillOuterClass {
         return skillId_;
       }
       /**
-       * <code>uint32 skill_id = 9;</code>
+       * <code>uint32 skill_id = 3;</code>
        * @param value The skillId to set.
        * @return This builder for chaining.
        */
@@ -479,7 +479,7 @@ public final class GCGMsgUseSkillOuterClass {
         return this;
       }
       /**
-       * <code>uint32 skill_id = 9;</code>
+       * <code>uint32 skill_id = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearSkillId() {
@@ -491,7 +491,7 @@ public final class GCGMsgUseSkillOuterClass {
 
       private int cardGuid_ ;
       /**
-       * <code>uint32 card_guid = 6;</code>
+       * <code>uint32 card_guid = 10;</code>
        * @return The cardGuid.
        */
       @java.lang.Override
@@ -499,7 +499,7 @@ public final class GCGMsgUseSkillOuterClass {
         return cardGuid_;
       }
       /**
-       * <code>uint32 card_guid = 6;</code>
+       * <code>uint32 card_guid = 10;</code>
        * @param value The cardGuid to set.
        * @return This builder for chaining.
        */
@@ -510,7 +510,7 @@ public final class GCGMsgUseSkillOuterClass {
         return this;
       }
       /**
-       * <code>uint32 card_guid = 6;</code>
+       * <code>uint32 card_guid = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearCardGuid() {
@@ -587,7 +587,7 @@ public final class GCGMsgUseSkillOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\024GCGMsgUseSkill.proto\"5\n\016GCGMsgUseSkill" +
-      "\022\020\n\010skill_id\030\t \001(\r\022\021\n\tcard_guid\030\006 \001(\rB\033\n" +
+      "\022\020\n\010skill_id\030\003 \001(\r\022\021\n\tcard_guid\030\n \001(\rB\033\n" +
       "\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

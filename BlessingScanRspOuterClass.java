@@ -19,28 +19,32 @@ public final class BlessingScanRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 scan_pic_id = 4;</code>
-     * @return The scanPicId.
-     */
-    int getScanPicId();
-
-    /**
-     * <code>int32 retcode = 11;</code>
+     * <code>int32 retcode = 13;</code>
      * @return The retcode.
      */
     int getRetcode();
 
     /**
-     * <code>uint32 cur_day_scan_num = 1;</code>
+     * <code>uint32 cur_day_scan_num = 11;</code>
      * @return The curDayScanNum.
      */
     int getCurDayScanNum();
+
+    /**
+     * <code>uint32 scan_pic_id = 12;</code>
+     * @return The scanPicId.
+     */
+    int getScanPicId();
   }
   /**
    * <pre>
-   * CmdId: 2093
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 2166;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code BlessingScanRsp}
@@ -87,17 +91,17 @@ public final class BlessingScanRspOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
+            case 88: {
 
               curDayScanNum_ = input.readUInt32();
               break;
             }
-            case 32: {
+            case 96: {
 
               scanPicId_ = input.readUInt32();
               break;
             }
-            case 88: {
+            case 104: {
 
               retcode_ = input.readInt32();
               break;
@@ -134,21 +138,10 @@ public final class BlessingScanRspOuterClass {
               emu.grasscutter.net.proto.BlessingScanRspOuterClass.BlessingScanRsp.class, emu.grasscutter.net.proto.BlessingScanRspOuterClass.BlessingScanRsp.Builder.class);
     }
 
-    public static final int SCAN_PIC_ID_FIELD_NUMBER = 4;
-    private int scanPicId_;
-    /**
-     * <code>uint32 scan_pic_id = 4;</code>
-     * @return The scanPicId.
-     */
-    @java.lang.Override
-    public int getScanPicId() {
-      return scanPicId_;
-    }
-
-    public static final int RETCODE_FIELD_NUMBER = 11;
+    public static final int RETCODE_FIELD_NUMBER = 13;
     private int retcode_;
     /**
-     * <code>int32 retcode = 11;</code>
+     * <code>int32 retcode = 13;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -156,15 +149,26 @@ public final class BlessingScanRspOuterClass {
       return retcode_;
     }
 
-    public static final int CUR_DAY_SCAN_NUM_FIELD_NUMBER = 1;
+    public static final int CUR_DAY_SCAN_NUM_FIELD_NUMBER = 11;
     private int curDayScanNum_;
     /**
-     * <code>uint32 cur_day_scan_num = 1;</code>
+     * <code>uint32 cur_day_scan_num = 11;</code>
      * @return The curDayScanNum.
      */
     @java.lang.Override
     public int getCurDayScanNum() {
       return curDayScanNum_;
+    }
+
+    public static final int SCAN_PIC_ID_FIELD_NUMBER = 12;
+    private int scanPicId_;
+    /**
+     * <code>uint32 scan_pic_id = 12;</code>
+     * @return The scanPicId.
+     */
+    @java.lang.Override
+    public int getScanPicId() {
+      return scanPicId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -182,13 +186,13 @@ public final class BlessingScanRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (curDayScanNum_ != 0) {
-        output.writeUInt32(1, curDayScanNum_);
+        output.writeUInt32(11, curDayScanNum_);
       }
       if (scanPicId_ != 0) {
-        output.writeUInt32(4, scanPicId_);
+        output.writeUInt32(12, scanPicId_);
       }
       if (retcode_ != 0) {
-        output.writeInt32(11, retcode_);
+        output.writeInt32(13, retcode_);
       }
       unknownFields.writeTo(output);
     }
@@ -201,15 +205,15 @@ public final class BlessingScanRspOuterClass {
       size = 0;
       if (curDayScanNum_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, curDayScanNum_);
+          .computeUInt32Size(11, curDayScanNum_);
       }
       if (scanPicId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, scanPicId_);
+          .computeUInt32Size(12, scanPicId_);
       }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(11, retcode_);
+          .computeInt32Size(13, retcode_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -226,12 +230,12 @@ public final class BlessingScanRspOuterClass {
       }
       emu.grasscutter.net.proto.BlessingScanRspOuterClass.BlessingScanRsp other = (emu.grasscutter.net.proto.BlessingScanRspOuterClass.BlessingScanRsp) obj;
 
-      if (getScanPicId()
-          != other.getScanPicId()) return false;
       if (getRetcode()
           != other.getRetcode()) return false;
       if (getCurDayScanNum()
           != other.getCurDayScanNum()) return false;
+      if (getScanPicId()
+          != other.getScanPicId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -243,12 +247,12 @@ public final class BlessingScanRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + SCAN_PIC_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getScanPicId();
       hash = (37 * hash) + RETCODE_FIELD_NUMBER;
       hash = (53 * hash) + getRetcode();
       hash = (37 * hash) + CUR_DAY_SCAN_NUM_FIELD_NUMBER;
       hash = (53 * hash) + getCurDayScanNum();
+      hash = (37 * hash) + SCAN_PIC_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getScanPicId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -346,9 +350,13 @@ public final class BlessingScanRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 2093
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 2166;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code BlessingScanRsp}
@@ -388,11 +396,11 @@ public final class BlessingScanRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        scanPicId_ = 0;
-
         retcode_ = 0;
 
         curDayScanNum_ = 0;
+
+        scanPicId_ = 0;
 
         return this;
       }
@@ -420,9 +428,9 @@ public final class BlessingScanRspOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.BlessingScanRspOuterClass.BlessingScanRsp buildPartial() {
         emu.grasscutter.net.proto.BlessingScanRspOuterClass.BlessingScanRsp result = new emu.grasscutter.net.proto.BlessingScanRspOuterClass.BlessingScanRsp(this);
-        result.scanPicId_ = scanPicId_;
         result.retcode_ = retcode_;
         result.curDayScanNum_ = curDayScanNum_;
+        result.scanPicId_ = scanPicId_;
         onBuilt();
         return result;
       }
@@ -471,14 +479,14 @@ public final class BlessingScanRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.BlessingScanRspOuterClass.BlessingScanRsp other) {
         if (other == emu.grasscutter.net.proto.BlessingScanRspOuterClass.BlessingScanRsp.getDefaultInstance()) return this;
-        if (other.getScanPicId() != 0) {
-          setScanPicId(other.getScanPicId());
-        }
         if (other.getRetcode() != 0) {
           setRetcode(other.getRetcode());
         }
         if (other.getCurDayScanNum() != 0) {
           setCurDayScanNum(other.getCurDayScanNum());
+        }
+        if (other.getScanPicId() != 0) {
+          setScanPicId(other.getScanPicId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -509,40 +517,9 @@ public final class BlessingScanRspOuterClass {
         return this;
       }
 
-      private int scanPicId_ ;
-      /**
-       * <code>uint32 scan_pic_id = 4;</code>
-       * @return The scanPicId.
-       */
-      @java.lang.Override
-      public int getScanPicId() {
-        return scanPicId_;
-      }
-      /**
-       * <code>uint32 scan_pic_id = 4;</code>
-       * @param value The scanPicId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setScanPicId(int value) {
-        
-        scanPicId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 scan_pic_id = 4;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearScanPicId() {
-        
-        scanPicId_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 11;</code>
+       * <code>int32 retcode = 13;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -550,7 +527,7 @@ public final class BlessingScanRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 11;</code>
+       * <code>int32 retcode = 13;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -561,7 +538,7 @@ public final class BlessingScanRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 11;</code>
+       * <code>int32 retcode = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -573,7 +550,7 @@ public final class BlessingScanRspOuterClass {
 
       private int curDayScanNum_ ;
       /**
-       * <code>uint32 cur_day_scan_num = 1;</code>
+       * <code>uint32 cur_day_scan_num = 11;</code>
        * @return The curDayScanNum.
        */
       @java.lang.Override
@@ -581,7 +558,7 @@ public final class BlessingScanRspOuterClass {
         return curDayScanNum_;
       }
       /**
-       * <code>uint32 cur_day_scan_num = 1;</code>
+       * <code>uint32 cur_day_scan_num = 11;</code>
        * @param value The curDayScanNum to set.
        * @return This builder for chaining.
        */
@@ -592,12 +569,43 @@ public final class BlessingScanRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 cur_day_scan_num = 1;</code>
+       * <code>uint32 cur_day_scan_num = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearCurDayScanNum() {
         
         curDayScanNum_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int scanPicId_ ;
+      /**
+       * <code>uint32 scan_pic_id = 12;</code>
+       * @return The scanPicId.
+       */
+      @java.lang.Override
+      public int getScanPicId() {
+        return scanPicId_;
+      }
+      /**
+       * <code>uint32 scan_pic_id = 12;</code>
+       * @param value The scanPicId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setScanPicId(int value) {
+        
+        scanPicId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 scan_pic_id = 12;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearScanPicId() {
+        
+        scanPicId_ = 0;
         onChanged();
         return this;
       }
@@ -669,8 +677,8 @@ public final class BlessingScanRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\025BlessingScanRsp.proto\"Q\n\017BlessingScanR" +
-      "sp\022\023\n\013scan_pic_id\030\004 \001(\r\022\017\n\007retcode\030\013 \001(\005" +
-      "\022\030\n\020cur_day_scan_num\030\001 \001(\rB\033\n\031emu.grassc" +
+      "sp\022\017\n\007retcode\030\r \001(\005\022\030\n\020cur_day_scan_num\030" +
+      "\013 \001(\r\022\023\n\013scan_pic_id\030\014 \001(\rB\033\n\031emu.grassc" +
       "utter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -682,7 +690,7 @@ public final class BlessingScanRspOuterClass {
     internal_static_BlessingScanRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_BlessingScanRsp_descriptor,
-        new java.lang.String[] { "ScanPicId", "Retcode", "CurDayScanNum", });
+        new java.lang.String[] { "Retcode", "CurDayScanNum", "ScanPicId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

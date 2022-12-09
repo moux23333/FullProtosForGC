@@ -19,23 +19,27 @@ public final class SeaLampTakePhaseRewardReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 phase_id = 12;</code>
+     * <code>uint32 phase_id = 9;</code>
      * @return The phaseId.
      */
     int getPhaseId();
 
     /**
-     * <code>uint32 activity_id = 11;</code>
+     * <code>uint32 activity_id = 14;</code>
      * @return The activityId.
      */
     int getActivityId();
   }
   /**
    * <pre>
-   * CmdId: 2176
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 2006;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code SeaLampTakePhaseRewardReq}
@@ -82,14 +86,14 @@ public final class SeaLampTakePhaseRewardReqOuterClass {
             case 0:
               done = true;
               break;
-            case 88: {
-
-              activityId_ = input.readUInt32();
-              break;
-            }
-            case 96: {
+            case 72: {
 
               phaseId_ = input.readUInt32();
+              break;
+            }
+            case 112: {
+
+              activityId_ = input.readUInt32();
               break;
             }
             default: {
@@ -124,10 +128,10 @@ public final class SeaLampTakePhaseRewardReqOuterClass {
               emu.grasscutter.net.proto.SeaLampTakePhaseRewardReqOuterClass.SeaLampTakePhaseRewardReq.class, emu.grasscutter.net.proto.SeaLampTakePhaseRewardReqOuterClass.SeaLampTakePhaseRewardReq.Builder.class);
     }
 
-    public static final int PHASE_ID_FIELD_NUMBER = 12;
+    public static final int PHASE_ID_FIELD_NUMBER = 9;
     private int phaseId_;
     /**
-     * <code>uint32 phase_id = 12;</code>
+     * <code>uint32 phase_id = 9;</code>
      * @return The phaseId.
      */
     @java.lang.Override
@@ -135,10 +139,10 @@ public final class SeaLampTakePhaseRewardReqOuterClass {
       return phaseId_;
     }
 
-    public static final int ACTIVITY_ID_FIELD_NUMBER = 11;
+    public static final int ACTIVITY_ID_FIELD_NUMBER = 14;
     private int activityId_;
     /**
-     * <code>uint32 activity_id = 11;</code>
+     * <code>uint32 activity_id = 14;</code>
      * @return The activityId.
      */
     @java.lang.Override
@@ -160,11 +164,11 @@ public final class SeaLampTakePhaseRewardReqOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (activityId_ != 0) {
-        output.writeUInt32(11, activityId_);
-      }
       if (phaseId_ != 0) {
-        output.writeUInt32(12, phaseId_);
+        output.writeUInt32(9, phaseId_);
+      }
+      if (activityId_ != 0) {
+        output.writeUInt32(14, activityId_);
       }
       unknownFields.writeTo(output);
     }
@@ -175,13 +179,13 @@ public final class SeaLampTakePhaseRewardReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (activityId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, activityId_);
-      }
       if (phaseId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, phaseId_);
+          .computeUInt32Size(9, phaseId_);
+      }
+      if (activityId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(14, activityId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -314,10 +318,14 @@ public final class SeaLampTakePhaseRewardReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 2176
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 2006;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code SeaLampTakePhaseRewardReq}
@@ -474,7 +482,7 @@ public final class SeaLampTakePhaseRewardReqOuterClass {
 
       private int phaseId_ ;
       /**
-       * <code>uint32 phase_id = 12;</code>
+       * <code>uint32 phase_id = 9;</code>
        * @return The phaseId.
        */
       @java.lang.Override
@@ -482,7 +490,7 @@ public final class SeaLampTakePhaseRewardReqOuterClass {
         return phaseId_;
       }
       /**
-       * <code>uint32 phase_id = 12;</code>
+       * <code>uint32 phase_id = 9;</code>
        * @param value The phaseId to set.
        * @return This builder for chaining.
        */
@@ -493,7 +501,7 @@ public final class SeaLampTakePhaseRewardReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 phase_id = 12;</code>
+       * <code>uint32 phase_id = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearPhaseId() {
@@ -505,7 +513,7 @@ public final class SeaLampTakePhaseRewardReqOuterClass {
 
       private int activityId_ ;
       /**
-       * <code>uint32 activity_id = 11;</code>
+       * <code>uint32 activity_id = 14;</code>
        * @return The activityId.
        */
       @java.lang.Override
@@ -513,7 +521,7 @@ public final class SeaLampTakePhaseRewardReqOuterClass {
         return activityId_;
       }
       /**
-       * <code>uint32 activity_id = 11;</code>
+       * <code>uint32 activity_id = 14;</code>
        * @param value The activityId to set.
        * @return This builder for chaining.
        */
@@ -524,7 +532,7 @@ public final class SeaLampTakePhaseRewardReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 activity_id = 11;</code>
+       * <code>uint32 activity_id = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearActivityId() {
@@ -601,8 +609,8 @@ public final class SeaLampTakePhaseRewardReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\037SeaLampTakePhaseRewardReq.proto\"B\n\031Sea" +
-      "LampTakePhaseRewardReq\022\020\n\010phase_id\030\014 \001(\r" +
-      "\022\023\n\013activity_id\030\013 \001(\rB\033\n\031emu.grasscutter" +
+      "LampTakePhaseRewardReq\022\020\n\010phase_id\030\t \001(\r" +
+      "\022\023\n\013activity_id\030\016 \001(\rB\033\n\031emu.grasscutter" +
       ".net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

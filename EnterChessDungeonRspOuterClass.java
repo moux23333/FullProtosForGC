@@ -25,16 +25,20 @@ public final class EnterChessDungeonRspOuterClass {
     int getRetcode();
 
     /**
-     * <code>uint32 map_id = 13;</code>
+     * <code>uint32 map_id = 12;</code>
      * @return The mapId.
      */
     int getMapId();
   }
   /**
    * <pre>
-   * CmdId: 8592
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 8293;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code EnterChessDungeonRsp}
@@ -86,7 +90,7 @@ public final class EnterChessDungeonRspOuterClass {
               retcode_ = input.readInt32();
               break;
             }
-            case 104: {
+            case 96: {
 
               mapId_ = input.readUInt32();
               break;
@@ -134,10 +138,10 @@ public final class EnterChessDungeonRspOuterClass {
       return retcode_;
     }
 
-    public static final int MAP_ID_FIELD_NUMBER = 13;
+    public static final int MAP_ID_FIELD_NUMBER = 12;
     private int mapId_;
     /**
-     * <code>uint32 map_id = 13;</code>
+     * <code>uint32 map_id = 12;</code>
      * @return The mapId.
      */
     @java.lang.Override
@@ -163,7 +167,7 @@ public final class EnterChessDungeonRspOuterClass {
         output.writeInt32(8, retcode_);
       }
       if (mapId_ != 0) {
-        output.writeUInt32(13, mapId_);
+        output.writeUInt32(12, mapId_);
       }
       unknownFields.writeTo(output);
     }
@@ -180,7 +184,7 @@ public final class EnterChessDungeonRspOuterClass {
       }
       if (mapId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, mapId_);
+          .computeUInt32Size(12, mapId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -313,9 +317,13 @@ public final class EnterChessDungeonRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 8592
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 8293;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code EnterChessDungeonRsp}
@@ -503,7 +511,7 @@ public final class EnterChessDungeonRspOuterClass {
 
       private int mapId_ ;
       /**
-       * <code>uint32 map_id = 13;</code>
+       * <code>uint32 map_id = 12;</code>
        * @return The mapId.
        */
       @java.lang.Override
@@ -511,7 +519,7 @@ public final class EnterChessDungeonRspOuterClass {
         return mapId_;
       }
       /**
-       * <code>uint32 map_id = 13;</code>
+       * <code>uint32 map_id = 12;</code>
        * @param value The mapId to set.
        * @return This builder for chaining.
        */
@@ -522,7 +530,7 @@ public final class EnterChessDungeonRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 map_id = 13;</code>
+       * <code>uint32 map_id = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearMapId() {
@@ -600,7 +608,7 @@ public final class EnterChessDungeonRspOuterClass {
     java.lang.String[] descriptorData = {
       "\n\032EnterChessDungeonRsp.proto\"7\n\024EnterChe" +
       "ssDungeonRsp\022\017\n\007retcode\030\010 \001(\005\022\016\n\006map_id\030" +
-      "\r \001(\rB\033\n\031emu.grasscutter.net.protob\006prot" +
+      "\014 \001(\rB\033\n\031emu.grasscutter.net.protob\006prot" +
       "o3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

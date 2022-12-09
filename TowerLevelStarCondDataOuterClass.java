@@ -19,28 +19,28 @@ public final class TowerLevelStarCondDataOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_fail = 15;</code>
-     * @return The isFail.
+     * <code>bool Unk3300_KBCFDFOAJMM = 14;</code>
+     * @return The unk3300KBCFDFOAJMM.
      */
-    boolean getIsFail();
+    boolean getUnk3300KBCFDFOAJMM();
 
     /**
-     * <code>uint32 cond_value = 9;</code>
-     * @return The condValue.
+     * <code>bool Unk3300_CPBCNACKAAK = 5;</code>
+     * @return The unk3300CPBCNACKAAK.
      */
-    int getCondValue();
+    boolean getUnk3300CPBCNACKAAK();
 
     /**
-     * <code>bool is_pause = 13;</code>
-     * @return The isPause.
+     * <code>uint32 Unk3300_JGOLBFMJBCL = 11;</code>
+     * @return The unk3300JGOLBFMJBCL.
      */
-    boolean getIsPause();
+    int getUnk3300JGOLBFMJBCL();
 
     /**
-     * <code>uint32 star_cond_index = 6;</code>
-     * @return The starCondIndex.
+     * <code>uint32 Unk3300_MGHNDJAACME = 12;</code>
+     * @return The unk3300MGHNDJAACME.
      */
-    int getStarCondIndex();
+    int getUnk3300MGHNDJAACME();
   }
   /**
    * Protobuf type {@code TowerLevelStarCondData}
@@ -87,24 +87,24 @@ public final class TowerLevelStarCondDataOuterClass {
             case 0:
               done = true;
               break;
-            case 48: {
+            case 40: {
 
-              starCondIndex_ = input.readUInt32();
+              unk3300CPBCNACKAAK_ = input.readBool();
               break;
             }
-            case 72: {
+            case 88: {
 
-              condValue_ = input.readUInt32();
+              unk3300JGOLBFMJBCL_ = input.readUInt32();
               break;
             }
-            case 104: {
+            case 96: {
 
-              isPause_ = input.readBool();
+              unk3300MGHNDJAACME_ = input.readUInt32();
               break;
             }
-            case 120: {
+            case 112: {
 
-              isFail_ = input.readBool();
+              unk3300KBCFDFOAJMM_ = input.readBool();
               break;
             }
             default: {
@@ -139,48 +139,48 @@ public final class TowerLevelStarCondDataOuterClass {
               emu.grasscutter.net.proto.TowerLevelStarCondDataOuterClass.TowerLevelStarCondData.class, emu.grasscutter.net.proto.TowerLevelStarCondDataOuterClass.TowerLevelStarCondData.Builder.class);
     }
 
-    public static final int IS_FAIL_FIELD_NUMBER = 15;
-    private boolean isFail_;
+    public static final int UNK3300_KBCFDFOAJMM_FIELD_NUMBER = 14;
+    private boolean unk3300KBCFDFOAJMM_;
     /**
-     * <code>bool is_fail = 15;</code>
-     * @return The isFail.
+     * <code>bool Unk3300_KBCFDFOAJMM = 14;</code>
+     * @return The unk3300KBCFDFOAJMM.
      */
     @java.lang.Override
-    public boolean getIsFail() {
-      return isFail_;
+    public boolean getUnk3300KBCFDFOAJMM() {
+      return unk3300KBCFDFOAJMM_;
     }
 
-    public static final int COND_VALUE_FIELD_NUMBER = 9;
-    private int condValue_;
+    public static final int UNK3300_CPBCNACKAAK_FIELD_NUMBER = 5;
+    private boolean unk3300CPBCNACKAAK_;
     /**
-     * <code>uint32 cond_value = 9;</code>
-     * @return The condValue.
+     * <code>bool Unk3300_CPBCNACKAAK = 5;</code>
+     * @return The unk3300CPBCNACKAAK.
      */
     @java.lang.Override
-    public int getCondValue() {
-      return condValue_;
+    public boolean getUnk3300CPBCNACKAAK() {
+      return unk3300CPBCNACKAAK_;
     }
 
-    public static final int IS_PAUSE_FIELD_NUMBER = 13;
-    private boolean isPause_;
+    public static final int UNK3300_JGOLBFMJBCL_FIELD_NUMBER = 11;
+    private int unk3300JGOLBFMJBCL_;
     /**
-     * <code>bool is_pause = 13;</code>
-     * @return The isPause.
+     * <code>uint32 Unk3300_JGOLBFMJBCL = 11;</code>
+     * @return The unk3300JGOLBFMJBCL.
      */
     @java.lang.Override
-    public boolean getIsPause() {
-      return isPause_;
+    public int getUnk3300JGOLBFMJBCL() {
+      return unk3300JGOLBFMJBCL_;
     }
 
-    public static final int STAR_COND_INDEX_FIELD_NUMBER = 6;
-    private int starCondIndex_;
+    public static final int UNK3300_MGHNDJAACME_FIELD_NUMBER = 12;
+    private int unk3300MGHNDJAACME_;
     /**
-     * <code>uint32 star_cond_index = 6;</code>
-     * @return The starCondIndex.
+     * <code>uint32 Unk3300_MGHNDJAACME = 12;</code>
+     * @return The unk3300MGHNDJAACME.
      */
     @java.lang.Override
-    public int getStarCondIndex() {
-      return starCondIndex_;
+    public int getUnk3300MGHNDJAACME() {
+      return unk3300MGHNDJAACME_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -197,17 +197,17 @@ public final class TowerLevelStarCondDataOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (starCondIndex_ != 0) {
-        output.writeUInt32(6, starCondIndex_);
+      if (unk3300CPBCNACKAAK_ != false) {
+        output.writeBool(5, unk3300CPBCNACKAAK_);
       }
-      if (condValue_ != 0) {
-        output.writeUInt32(9, condValue_);
+      if (unk3300JGOLBFMJBCL_ != 0) {
+        output.writeUInt32(11, unk3300JGOLBFMJBCL_);
       }
-      if (isPause_ != false) {
-        output.writeBool(13, isPause_);
+      if (unk3300MGHNDJAACME_ != 0) {
+        output.writeUInt32(12, unk3300MGHNDJAACME_);
       }
-      if (isFail_ != false) {
-        output.writeBool(15, isFail_);
+      if (unk3300KBCFDFOAJMM_ != false) {
+        output.writeBool(14, unk3300KBCFDFOAJMM_);
       }
       unknownFields.writeTo(output);
     }
@@ -218,21 +218,21 @@ public final class TowerLevelStarCondDataOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (starCondIndex_ != 0) {
+      if (unk3300CPBCNACKAAK_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, starCondIndex_);
+          .computeBoolSize(5, unk3300CPBCNACKAAK_);
       }
-      if (condValue_ != 0) {
+      if (unk3300JGOLBFMJBCL_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, condValue_);
+          .computeUInt32Size(11, unk3300JGOLBFMJBCL_);
       }
-      if (isPause_ != false) {
+      if (unk3300MGHNDJAACME_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(13, isPause_);
+          .computeUInt32Size(12, unk3300MGHNDJAACME_);
       }
-      if (isFail_ != false) {
+      if (unk3300KBCFDFOAJMM_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(15, isFail_);
+          .computeBoolSize(14, unk3300KBCFDFOAJMM_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -249,14 +249,14 @@ public final class TowerLevelStarCondDataOuterClass {
       }
       emu.grasscutter.net.proto.TowerLevelStarCondDataOuterClass.TowerLevelStarCondData other = (emu.grasscutter.net.proto.TowerLevelStarCondDataOuterClass.TowerLevelStarCondData) obj;
 
-      if (getIsFail()
-          != other.getIsFail()) return false;
-      if (getCondValue()
-          != other.getCondValue()) return false;
-      if (getIsPause()
-          != other.getIsPause()) return false;
-      if (getStarCondIndex()
-          != other.getStarCondIndex()) return false;
+      if (getUnk3300KBCFDFOAJMM()
+          != other.getUnk3300KBCFDFOAJMM()) return false;
+      if (getUnk3300CPBCNACKAAK()
+          != other.getUnk3300CPBCNACKAAK()) return false;
+      if (getUnk3300JGOLBFMJBCL()
+          != other.getUnk3300JGOLBFMJBCL()) return false;
+      if (getUnk3300MGHNDJAACME()
+          != other.getUnk3300MGHNDJAACME()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -268,16 +268,16 @@ public final class TowerLevelStarCondDataOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + IS_FAIL_FIELD_NUMBER;
+      hash = (37 * hash) + UNK3300_KBCFDFOAJMM_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsFail());
-      hash = (37 * hash) + COND_VALUE_FIELD_NUMBER;
-      hash = (53 * hash) + getCondValue();
-      hash = (37 * hash) + IS_PAUSE_FIELD_NUMBER;
+          getUnk3300KBCFDFOAJMM());
+      hash = (37 * hash) + UNK3300_CPBCNACKAAK_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsPause());
-      hash = (37 * hash) + STAR_COND_INDEX_FIELD_NUMBER;
-      hash = (53 * hash) + getStarCondIndex();
+          getUnk3300CPBCNACKAAK());
+      hash = (37 * hash) + UNK3300_JGOLBFMJBCL_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300JGOLBFMJBCL();
+      hash = (37 * hash) + UNK3300_MGHNDJAACME_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300MGHNDJAACME();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -411,13 +411,13 @@ public final class TowerLevelStarCondDataOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        isFail_ = false;
+        unk3300KBCFDFOAJMM_ = false;
 
-        condValue_ = 0;
+        unk3300CPBCNACKAAK_ = false;
 
-        isPause_ = false;
+        unk3300JGOLBFMJBCL_ = 0;
 
-        starCondIndex_ = 0;
+        unk3300MGHNDJAACME_ = 0;
 
         return this;
       }
@@ -445,10 +445,10 @@ public final class TowerLevelStarCondDataOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.TowerLevelStarCondDataOuterClass.TowerLevelStarCondData buildPartial() {
         emu.grasscutter.net.proto.TowerLevelStarCondDataOuterClass.TowerLevelStarCondData result = new emu.grasscutter.net.proto.TowerLevelStarCondDataOuterClass.TowerLevelStarCondData(this);
-        result.isFail_ = isFail_;
-        result.condValue_ = condValue_;
-        result.isPause_ = isPause_;
-        result.starCondIndex_ = starCondIndex_;
+        result.unk3300KBCFDFOAJMM_ = unk3300KBCFDFOAJMM_;
+        result.unk3300CPBCNACKAAK_ = unk3300CPBCNACKAAK_;
+        result.unk3300JGOLBFMJBCL_ = unk3300JGOLBFMJBCL_;
+        result.unk3300MGHNDJAACME_ = unk3300MGHNDJAACME_;
         onBuilt();
         return result;
       }
@@ -497,17 +497,17 @@ public final class TowerLevelStarCondDataOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.TowerLevelStarCondDataOuterClass.TowerLevelStarCondData other) {
         if (other == emu.grasscutter.net.proto.TowerLevelStarCondDataOuterClass.TowerLevelStarCondData.getDefaultInstance()) return this;
-        if (other.getIsFail() != false) {
-          setIsFail(other.getIsFail());
+        if (other.getUnk3300KBCFDFOAJMM() != false) {
+          setUnk3300KBCFDFOAJMM(other.getUnk3300KBCFDFOAJMM());
         }
-        if (other.getCondValue() != 0) {
-          setCondValue(other.getCondValue());
+        if (other.getUnk3300CPBCNACKAAK() != false) {
+          setUnk3300CPBCNACKAAK(other.getUnk3300CPBCNACKAAK());
         }
-        if (other.getIsPause() != false) {
-          setIsPause(other.getIsPause());
+        if (other.getUnk3300JGOLBFMJBCL() != 0) {
+          setUnk3300JGOLBFMJBCL(other.getUnk3300JGOLBFMJBCL());
         }
-        if (other.getStarCondIndex() != 0) {
-          setStarCondIndex(other.getStarCondIndex());
+        if (other.getUnk3300MGHNDJAACME() != 0) {
+          setUnk3300MGHNDJAACME(other.getUnk3300MGHNDJAACME());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -538,126 +538,126 @@ public final class TowerLevelStarCondDataOuterClass {
         return this;
       }
 
-      private boolean isFail_ ;
+      private boolean unk3300KBCFDFOAJMM_ ;
       /**
-       * <code>bool is_fail = 15;</code>
-       * @return The isFail.
+       * <code>bool Unk3300_KBCFDFOAJMM = 14;</code>
+       * @return The unk3300KBCFDFOAJMM.
        */
       @java.lang.Override
-      public boolean getIsFail() {
-        return isFail_;
+      public boolean getUnk3300KBCFDFOAJMM() {
+        return unk3300KBCFDFOAJMM_;
       }
       /**
-       * <code>bool is_fail = 15;</code>
-       * @param value The isFail to set.
+       * <code>bool Unk3300_KBCFDFOAJMM = 14;</code>
+       * @param value The unk3300KBCFDFOAJMM to set.
        * @return This builder for chaining.
        */
-      public Builder setIsFail(boolean value) {
+      public Builder setUnk3300KBCFDFOAJMM(boolean value) {
         
-        isFail_ = value;
+        unk3300KBCFDFOAJMM_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>bool is_fail = 15;</code>
+       * <code>bool Unk3300_KBCFDFOAJMM = 14;</code>
        * @return This builder for chaining.
        */
-      public Builder clearIsFail() {
+      public Builder clearUnk3300KBCFDFOAJMM() {
         
-        isFail_ = false;
+        unk3300KBCFDFOAJMM_ = false;
         onChanged();
         return this;
       }
 
-      private int condValue_ ;
+      private boolean unk3300CPBCNACKAAK_ ;
       /**
-       * <code>uint32 cond_value = 9;</code>
-       * @return The condValue.
+       * <code>bool Unk3300_CPBCNACKAAK = 5;</code>
+       * @return The unk3300CPBCNACKAAK.
        */
       @java.lang.Override
-      public int getCondValue() {
-        return condValue_;
+      public boolean getUnk3300CPBCNACKAAK() {
+        return unk3300CPBCNACKAAK_;
       }
       /**
-       * <code>uint32 cond_value = 9;</code>
-       * @param value The condValue to set.
+       * <code>bool Unk3300_CPBCNACKAAK = 5;</code>
+       * @param value The unk3300CPBCNACKAAK to set.
        * @return This builder for chaining.
        */
-      public Builder setCondValue(int value) {
+      public Builder setUnk3300CPBCNACKAAK(boolean value) {
         
-        condValue_ = value;
+        unk3300CPBCNACKAAK_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 cond_value = 9;</code>
+       * <code>bool Unk3300_CPBCNACKAAK = 5;</code>
        * @return This builder for chaining.
        */
-      public Builder clearCondValue() {
+      public Builder clearUnk3300CPBCNACKAAK() {
         
-        condValue_ = 0;
+        unk3300CPBCNACKAAK_ = false;
         onChanged();
         return this;
       }
 
-      private boolean isPause_ ;
+      private int unk3300JGOLBFMJBCL_ ;
       /**
-       * <code>bool is_pause = 13;</code>
-       * @return The isPause.
+       * <code>uint32 Unk3300_JGOLBFMJBCL = 11;</code>
+       * @return The unk3300JGOLBFMJBCL.
        */
       @java.lang.Override
-      public boolean getIsPause() {
-        return isPause_;
+      public int getUnk3300JGOLBFMJBCL() {
+        return unk3300JGOLBFMJBCL_;
       }
       /**
-       * <code>bool is_pause = 13;</code>
-       * @param value The isPause to set.
+       * <code>uint32 Unk3300_JGOLBFMJBCL = 11;</code>
+       * @param value The unk3300JGOLBFMJBCL to set.
        * @return This builder for chaining.
        */
-      public Builder setIsPause(boolean value) {
+      public Builder setUnk3300JGOLBFMJBCL(int value) {
         
-        isPause_ = value;
+        unk3300JGOLBFMJBCL_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>bool is_pause = 13;</code>
+       * <code>uint32 Unk3300_JGOLBFMJBCL = 11;</code>
        * @return This builder for chaining.
        */
-      public Builder clearIsPause() {
+      public Builder clearUnk3300JGOLBFMJBCL() {
         
-        isPause_ = false;
+        unk3300JGOLBFMJBCL_ = 0;
         onChanged();
         return this;
       }
 
-      private int starCondIndex_ ;
+      private int unk3300MGHNDJAACME_ ;
       /**
-       * <code>uint32 star_cond_index = 6;</code>
-       * @return The starCondIndex.
+       * <code>uint32 Unk3300_MGHNDJAACME = 12;</code>
+       * @return The unk3300MGHNDJAACME.
        */
       @java.lang.Override
-      public int getStarCondIndex() {
-        return starCondIndex_;
+      public int getUnk3300MGHNDJAACME() {
+        return unk3300MGHNDJAACME_;
       }
       /**
-       * <code>uint32 star_cond_index = 6;</code>
-       * @param value The starCondIndex to set.
+       * <code>uint32 Unk3300_MGHNDJAACME = 12;</code>
+       * @param value The unk3300MGHNDJAACME to set.
        * @return This builder for chaining.
        */
-      public Builder setStarCondIndex(int value) {
+      public Builder setUnk3300MGHNDJAACME(int value) {
         
-        starCondIndex_ = value;
+        unk3300MGHNDJAACME_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 star_cond_index = 6;</code>
+       * <code>uint32 Unk3300_MGHNDJAACME = 12;</code>
        * @return This builder for chaining.
        */
-      public Builder clearStarCondIndex() {
+      public Builder clearUnk3300MGHNDJAACME() {
         
-        starCondIndex_ = 0;
+        unk3300MGHNDJAACME_ = 0;
         onChanged();
         return this;
       }
@@ -728,11 +728,12 @@ public final class TowerLevelStarCondDataOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\034TowerLevelStarCondData.proto\"h\n\026TowerL" +
-      "evelStarCondData\022\017\n\007is_fail\030\017 \001(\010\022\022\n\ncon" +
-      "d_value\030\t \001(\r\022\020\n\010is_pause\030\r \001(\010\022\027\n\017star_" +
-      "cond_index\030\006 \001(\rB\033\n\031emu.grasscutter.net." +
-      "protob\006proto3"
+      "\n\034TowerLevelStarCondData.proto\"\214\001\n\026Tower" +
+      "LevelStarCondData\022\033\n\023Unk3300_KBCFDFOAJMM" +
+      "\030\016 \001(\010\022\033\n\023Unk3300_CPBCNACKAAK\030\005 \001(\010\022\033\n\023U" +
+      "nk3300_JGOLBFMJBCL\030\013 \001(\r\022\033\n\023Unk3300_MGHN" +
+      "DJAACME\030\014 \001(\rB\033\n\031emu.grasscutter.net.pro" +
+      "tob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -743,7 +744,7 @@ public final class TowerLevelStarCondDataOuterClass {
     internal_static_TowerLevelStarCondData_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_TowerLevelStarCondData_descriptor,
-        new java.lang.String[] { "IsFail", "CondValue", "IsPause", "StarCondIndex", });
+        new java.lang.String[] { "Unk3300KBCFDFOAJMM", "Unk3300CPBCNACKAAK", "Unk3300JGOLBFMJBCL", "Unk3300MGHNDJAACME", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

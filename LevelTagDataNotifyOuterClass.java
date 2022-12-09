@@ -19,17 +19,17 @@ public final class LevelTagDataNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated uint32 level_tag_id_list = 9;</code>
+     * <code>repeated uint32 level_tag_id_list = 15;</code>
      * @return A list containing the levelTagIdList.
      */
     java.util.List<java.lang.Integer> getLevelTagIdListList();
     /**
-     * <code>repeated uint32 level_tag_id_list = 9;</code>
+     * <code>repeated uint32 level_tag_id_list = 15;</code>
      * @return The count of levelTagIdList.
      */
     int getLevelTagIdListCount();
     /**
-     * <code>repeated uint32 level_tag_id_list = 9;</code>
+     * <code>repeated uint32 level_tag_id_list = 15;</code>
      * @param index The index of the element to return.
      * @return The levelTagIdList at the given index.
      */
@@ -37,10 +37,14 @@ public final class LevelTagDataNotifyOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 3314
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 3468;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code LevelTagDataNotify}
@@ -89,7 +93,7 @@ public final class LevelTagDataNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 72: {
+            case 120: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 levelTagIdList_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
@@ -97,7 +101,7 @@ public final class LevelTagDataNotifyOuterClass {
               levelTagIdList_.addInt(input.readUInt32());
               break;
             }
-            case 74: {
+            case 122: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -145,10 +149,10 @@ public final class LevelTagDataNotifyOuterClass {
               emu.grasscutter.net.proto.LevelTagDataNotifyOuterClass.LevelTagDataNotify.class, emu.grasscutter.net.proto.LevelTagDataNotifyOuterClass.LevelTagDataNotify.Builder.class);
     }
 
-    public static final int LEVEL_TAG_ID_LIST_FIELD_NUMBER = 9;
+    public static final int LEVEL_TAG_ID_LIST_FIELD_NUMBER = 15;
     private com.google.protobuf.Internal.IntList levelTagIdList_;
     /**
-     * <code>repeated uint32 level_tag_id_list = 9;</code>
+     * <code>repeated uint32 level_tag_id_list = 15;</code>
      * @return A list containing the levelTagIdList.
      */
     @java.lang.Override
@@ -157,14 +161,14 @@ public final class LevelTagDataNotifyOuterClass {
       return levelTagIdList_;
     }
     /**
-     * <code>repeated uint32 level_tag_id_list = 9;</code>
+     * <code>repeated uint32 level_tag_id_list = 15;</code>
      * @return The count of levelTagIdList.
      */
     public int getLevelTagIdListCount() {
       return levelTagIdList_.size();
     }
     /**
-     * <code>repeated uint32 level_tag_id_list = 9;</code>
+     * <code>repeated uint32 level_tag_id_list = 15;</code>
      * @param index The index of the element to return.
      * @return The levelTagIdList at the given index.
      */
@@ -189,7 +193,7 @@ public final class LevelTagDataNotifyOuterClass {
                         throws java.io.IOException {
       getSerializedSize();
       if (getLevelTagIdListList().size() > 0) {
-        output.writeUInt32NoTag(74);
+        output.writeUInt32NoTag(122);
         output.writeUInt32NoTag(levelTagIdListMemoizedSerializedSize);
       }
       for (int i = 0; i < levelTagIdList_.size(); i++) {
@@ -347,10 +351,14 @@ public final class LevelTagDataNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 3314
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 3468;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code LevelTagDataNotify}
@@ -520,7 +528,7 @@ public final class LevelTagDataNotifyOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 level_tag_id_list = 9;</code>
+       * <code>repeated uint32 level_tag_id_list = 15;</code>
        * @return A list containing the levelTagIdList.
        */
       public java.util.List<java.lang.Integer>
@@ -529,14 +537,14 @@ public final class LevelTagDataNotifyOuterClass {
                  java.util.Collections.unmodifiableList(levelTagIdList_) : levelTagIdList_;
       }
       /**
-       * <code>repeated uint32 level_tag_id_list = 9;</code>
+       * <code>repeated uint32 level_tag_id_list = 15;</code>
        * @return The count of levelTagIdList.
        */
       public int getLevelTagIdListCount() {
         return levelTagIdList_.size();
       }
       /**
-       * <code>repeated uint32 level_tag_id_list = 9;</code>
+       * <code>repeated uint32 level_tag_id_list = 15;</code>
        * @param index The index of the element to return.
        * @return The levelTagIdList at the given index.
        */
@@ -544,7 +552,7 @@ public final class LevelTagDataNotifyOuterClass {
         return levelTagIdList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 level_tag_id_list = 9;</code>
+       * <code>repeated uint32 level_tag_id_list = 15;</code>
        * @param index The index to set the value at.
        * @param value The levelTagIdList to set.
        * @return This builder for chaining.
@@ -557,7 +565,7 @@ public final class LevelTagDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 level_tag_id_list = 9;</code>
+       * <code>repeated uint32 level_tag_id_list = 15;</code>
        * @param value The levelTagIdList to add.
        * @return This builder for chaining.
        */
@@ -568,7 +576,7 @@ public final class LevelTagDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 level_tag_id_list = 9;</code>
+       * <code>repeated uint32 level_tag_id_list = 15;</code>
        * @param values The levelTagIdList to add.
        * @return This builder for chaining.
        */
@@ -581,7 +589,7 @@ public final class LevelTagDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 level_tag_id_list = 9;</code>
+       * <code>repeated uint32 level_tag_id_list = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearLevelTagIdList() {
@@ -658,7 +666,7 @@ public final class LevelTagDataNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\030LevelTagDataNotify.proto\"/\n\022LevelTagDa" +
-      "taNotify\022\031\n\021level_tag_id_list\030\t \003(\rB\033\n\031e" +
+      "taNotify\022\031\n\021level_tag_id_list\030\017 \003(\rB\033\n\031e" +
       "mu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

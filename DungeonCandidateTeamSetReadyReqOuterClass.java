@@ -19,17 +19,21 @@ public final class DungeonCandidateTeamSetReadyReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_ready = 15;</code>
+     * <code>bool is_ready = 12;</code>
      * @return The isReady.
      */
     boolean getIsReady();
   }
   /**
    * <pre>
-   * CmdId: 991
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 921;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code DungeonCandidateTeamSetReadyReq}
@@ -76,7 +80,7 @@ public final class DungeonCandidateTeamSetReadyReqOuterClass {
             case 0:
               done = true;
               break;
-            case 120: {
+            case 96: {
 
               isReady_ = input.readBool();
               break;
@@ -113,10 +117,10 @@ public final class DungeonCandidateTeamSetReadyReqOuterClass {
               emu.grasscutter.net.proto.DungeonCandidateTeamSetReadyReqOuterClass.DungeonCandidateTeamSetReadyReq.class, emu.grasscutter.net.proto.DungeonCandidateTeamSetReadyReqOuterClass.DungeonCandidateTeamSetReadyReq.Builder.class);
     }
 
-    public static final int IS_READY_FIELD_NUMBER = 15;
+    public static final int IS_READY_FIELD_NUMBER = 12;
     private boolean isReady_;
     /**
-     * <code>bool is_ready = 15;</code>
+     * <code>bool is_ready = 12;</code>
      * @return The isReady.
      */
     @java.lang.Override
@@ -139,7 +143,7 @@ public final class DungeonCandidateTeamSetReadyReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (isReady_ != false) {
-        output.writeBool(15, isReady_);
+        output.writeBool(12, isReady_);
       }
       unknownFields.writeTo(output);
     }
@@ -152,7 +156,7 @@ public final class DungeonCandidateTeamSetReadyReqOuterClass {
       size = 0;
       if (isReady_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(15, isReady_);
+          .computeBoolSize(12, isReady_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -282,10 +286,14 @@ public final class DungeonCandidateTeamSetReadyReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 991
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 921;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code DungeonCandidateTeamSetReadyReq}
@@ -436,7 +444,7 @@ public final class DungeonCandidateTeamSetReadyReqOuterClass {
 
       private boolean isReady_ ;
       /**
-       * <code>bool is_ready = 15;</code>
+       * <code>bool is_ready = 12;</code>
        * @return The isReady.
        */
       @java.lang.Override
@@ -444,7 +452,7 @@ public final class DungeonCandidateTeamSetReadyReqOuterClass {
         return isReady_;
       }
       /**
-       * <code>bool is_ready = 15;</code>
+       * <code>bool is_ready = 12;</code>
        * @param value The isReady to set.
        * @return This builder for chaining.
        */
@@ -455,7 +463,7 @@ public final class DungeonCandidateTeamSetReadyReqOuterClass {
         return this;
       }
       /**
-       * <code>bool is_ready = 15;</code>
+       * <code>bool is_ready = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsReady() {
@@ -533,7 +541,7 @@ public final class DungeonCandidateTeamSetReadyReqOuterClass {
     java.lang.String[] descriptorData = {
       "\n%DungeonCandidateTeamSetReadyReq.proto\"" +
       "3\n\037DungeonCandidateTeamSetReadyReq\022\020\n\010is" +
-      "_ready\030\017 \001(\010B\033\n\031emu.grasscutter.net.prot" +
+      "_ready\030\014 \001(\010B\033\n\031emu.grasscutter.net.prot" +
       "ob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

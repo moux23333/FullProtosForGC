@@ -19,34 +19,34 @@ public final class FungusFighterTrainingSelectFungusReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated uint32 backup_fungus_id_list = 11;</code>
+     * <code>repeated uint32 backup_fungus_id_list = 3;</code>
      * @return A list containing the backupFungusIdList.
      */
     java.util.List<java.lang.Integer> getBackupFungusIdListList();
     /**
-     * <code>repeated uint32 backup_fungus_id_list = 11;</code>
+     * <code>repeated uint32 backup_fungus_id_list = 3;</code>
      * @return The count of backupFungusIdList.
      */
     int getBackupFungusIdListCount();
     /**
-     * <code>repeated uint32 backup_fungus_id_list = 11;</code>
+     * <code>repeated uint32 backup_fungus_id_list = 3;</code>
      * @param index The index of the element to return.
      * @return The backupFungusIdList at the given index.
      */
     int getBackupFungusIdList(int index);
 
     /**
-     * <code>repeated uint32 fight_fungus_id_list = 7;</code>
+     * <code>repeated uint32 fight_fungus_id_list = 9;</code>
      * @return A list containing the fightFungusIdList.
      */
     java.util.List<java.lang.Integer> getFightFungusIdListList();
     /**
-     * <code>repeated uint32 fight_fungus_id_list = 7;</code>
+     * <code>repeated uint32 fight_fungus_id_list = 9;</code>
      * @return The count of fightFungusIdList.
      */
     int getFightFungusIdListCount();
     /**
-     * <code>repeated uint32 fight_fungus_id_list = 7;</code>
+     * <code>repeated uint32 fight_fungus_id_list = 9;</code>
      * @param index The index of the element to return.
      * @return The fightFungusIdList at the given index.
      */
@@ -54,10 +54,14 @@ public final class FungusFighterTrainingSelectFungusReqOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 23903
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 24249;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code FungusFighterTrainingSelectFungusReq}
@@ -107,28 +111,7 @@ public final class FungusFighterTrainingSelectFungusReqOuterClass {
             case 0:
               done = true;
               break;
-            case 56: {
-              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
-                fightFungusIdList_ = newIntList();
-                mutable_bitField0_ |= 0x00000002;
-              }
-              fightFungusIdList_.addInt(input.readUInt32());
-              break;
-            }
-            case 58: {
-              int length = input.readRawVarint32();
-              int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000002) != 0) && input.getBytesUntilLimit() > 0) {
-                fightFungusIdList_ = newIntList();
-                mutable_bitField0_ |= 0x00000002;
-              }
-              while (input.getBytesUntilLimit() > 0) {
-                fightFungusIdList_.addInt(input.readUInt32());
-              }
-              input.popLimit(limit);
-              break;
-            }
-            case 88: {
+            case 24: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 backupFungusIdList_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
@@ -136,7 +119,7 @@ public final class FungusFighterTrainingSelectFungusReqOuterClass {
               backupFungusIdList_.addInt(input.readUInt32());
               break;
             }
-            case 90: {
+            case 26: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -145,6 +128,27 @@ public final class FungusFighterTrainingSelectFungusReqOuterClass {
               }
               while (input.getBytesUntilLimit() > 0) {
                 backupFungusIdList_.addInt(input.readUInt32());
+              }
+              input.popLimit(limit);
+              break;
+            }
+            case 72: {
+              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
+                fightFungusIdList_ = newIntList();
+                mutable_bitField0_ |= 0x00000002;
+              }
+              fightFungusIdList_.addInt(input.readUInt32());
+              break;
+            }
+            case 74: {
+              int length = input.readRawVarint32();
+              int limit = input.pushLimit(length);
+              if (!((mutable_bitField0_ & 0x00000002) != 0) && input.getBytesUntilLimit() > 0) {
+                fightFungusIdList_ = newIntList();
+                mutable_bitField0_ |= 0x00000002;
+              }
+              while (input.getBytesUntilLimit() > 0) {
+                fightFungusIdList_.addInt(input.readUInt32());
               }
               input.popLimit(limit);
               break;
@@ -164,11 +168,11 @@ public final class FungusFighterTrainingSelectFungusReqOuterClass {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
       } finally {
-        if (((mutable_bitField0_ & 0x00000002) != 0)) {
-          fightFungusIdList_.makeImmutable(); // C
-        }
         if (((mutable_bitField0_ & 0x00000001) != 0)) {
           backupFungusIdList_.makeImmutable(); // C
+        }
+        if (((mutable_bitField0_ & 0x00000002) != 0)) {
+          fightFungusIdList_.makeImmutable(); // C
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -187,10 +191,10 @@ public final class FungusFighterTrainingSelectFungusReqOuterClass {
               emu.grasscutter.net.proto.FungusFighterTrainingSelectFungusReqOuterClass.FungusFighterTrainingSelectFungusReq.class, emu.grasscutter.net.proto.FungusFighterTrainingSelectFungusReqOuterClass.FungusFighterTrainingSelectFungusReq.Builder.class);
     }
 
-    public static final int BACKUP_FUNGUS_ID_LIST_FIELD_NUMBER = 11;
+    public static final int BACKUP_FUNGUS_ID_LIST_FIELD_NUMBER = 3;
     private com.google.protobuf.Internal.IntList backupFungusIdList_;
     /**
-     * <code>repeated uint32 backup_fungus_id_list = 11;</code>
+     * <code>repeated uint32 backup_fungus_id_list = 3;</code>
      * @return A list containing the backupFungusIdList.
      */
     @java.lang.Override
@@ -199,14 +203,14 @@ public final class FungusFighterTrainingSelectFungusReqOuterClass {
       return backupFungusIdList_;
     }
     /**
-     * <code>repeated uint32 backup_fungus_id_list = 11;</code>
+     * <code>repeated uint32 backup_fungus_id_list = 3;</code>
      * @return The count of backupFungusIdList.
      */
     public int getBackupFungusIdListCount() {
       return backupFungusIdList_.size();
     }
     /**
-     * <code>repeated uint32 backup_fungus_id_list = 11;</code>
+     * <code>repeated uint32 backup_fungus_id_list = 3;</code>
      * @param index The index of the element to return.
      * @return The backupFungusIdList at the given index.
      */
@@ -215,10 +219,10 @@ public final class FungusFighterTrainingSelectFungusReqOuterClass {
     }
     private int backupFungusIdListMemoizedSerializedSize = -1;
 
-    public static final int FIGHT_FUNGUS_ID_LIST_FIELD_NUMBER = 7;
+    public static final int FIGHT_FUNGUS_ID_LIST_FIELD_NUMBER = 9;
     private com.google.protobuf.Internal.IntList fightFungusIdList_;
     /**
-     * <code>repeated uint32 fight_fungus_id_list = 7;</code>
+     * <code>repeated uint32 fight_fungus_id_list = 9;</code>
      * @return A list containing the fightFungusIdList.
      */
     @java.lang.Override
@@ -227,14 +231,14 @@ public final class FungusFighterTrainingSelectFungusReqOuterClass {
       return fightFungusIdList_;
     }
     /**
-     * <code>repeated uint32 fight_fungus_id_list = 7;</code>
+     * <code>repeated uint32 fight_fungus_id_list = 9;</code>
      * @return The count of fightFungusIdList.
      */
     public int getFightFungusIdListCount() {
       return fightFungusIdList_.size();
     }
     /**
-     * <code>repeated uint32 fight_fungus_id_list = 7;</code>
+     * <code>repeated uint32 fight_fungus_id_list = 9;</code>
      * @param index The index of the element to return.
      * @return The fightFungusIdList at the given index.
      */
@@ -258,19 +262,19 @@ public final class FungusFighterTrainingSelectFungusReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      if (getFightFungusIdListList().size() > 0) {
-        output.writeUInt32NoTag(58);
-        output.writeUInt32NoTag(fightFungusIdListMemoizedSerializedSize);
-      }
-      for (int i = 0; i < fightFungusIdList_.size(); i++) {
-        output.writeUInt32NoTag(fightFungusIdList_.getInt(i));
-      }
       if (getBackupFungusIdListList().size() > 0) {
-        output.writeUInt32NoTag(90);
+        output.writeUInt32NoTag(26);
         output.writeUInt32NoTag(backupFungusIdListMemoizedSerializedSize);
       }
       for (int i = 0; i < backupFungusIdList_.size(); i++) {
         output.writeUInt32NoTag(backupFungusIdList_.getInt(i));
+      }
+      if (getFightFungusIdListList().size() > 0) {
+        output.writeUInt32NoTag(74);
+        output.writeUInt32NoTag(fightFungusIdListMemoizedSerializedSize);
+      }
+      for (int i = 0; i < fightFungusIdList_.size(); i++) {
+        output.writeUInt32NoTag(fightFungusIdList_.getInt(i));
       }
       unknownFields.writeTo(output);
     }
@@ -281,20 +285,6 @@ public final class FungusFighterTrainingSelectFungusReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      {
-        int dataSize = 0;
-        for (int i = 0; i < fightFungusIdList_.size(); i++) {
-          dataSize += com.google.protobuf.CodedOutputStream
-            .computeUInt32SizeNoTag(fightFungusIdList_.getInt(i));
-        }
-        size += dataSize;
-        if (!getFightFungusIdListList().isEmpty()) {
-          size += 1;
-          size += com.google.protobuf.CodedOutputStream
-              .computeInt32SizeNoTag(dataSize);
-        }
-        fightFungusIdListMemoizedSerializedSize = dataSize;
-      }
       {
         int dataSize = 0;
         for (int i = 0; i < backupFungusIdList_.size(); i++) {
@@ -308,6 +298,20 @@ public final class FungusFighterTrainingSelectFungusReqOuterClass {
               .computeInt32SizeNoTag(dataSize);
         }
         backupFungusIdListMemoizedSerializedSize = dataSize;
+      }
+      {
+        int dataSize = 0;
+        for (int i = 0; i < fightFungusIdList_.size(); i++) {
+          dataSize += com.google.protobuf.CodedOutputStream
+            .computeUInt32SizeNoTag(fightFungusIdList_.getInt(i));
+        }
+        size += dataSize;
+        if (!getFightFungusIdListList().isEmpty()) {
+          size += 1;
+          size += com.google.protobuf.CodedOutputStream
+              .computeInt32SizeNoTag(dataSize);
+        }
+        fightFungusIdListMemoizedSerializedSize = dataSize;
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -444,10 +448,14 @@ public final class FungusFighterTrainingSelectFungusReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 23903
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 24249;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code FungusFighterTrainingSelectFungusReq}
@@ -634,7 +642,7 @@ public final class FungusFighterTrainingSelectFungusReqOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 backup_fungus_id_list = 11;</code>
+       * <code>repeated uint32 backup_fungus_id_list = 3;</code>
        * @return A list containing the backupFungusIdList.
        */
       public java.util.List<java.lang.Integer>
@@ -643,14 +651,14 @@ public final class FungusFighterTrainingSelectFungusReqOuterClass {
                  java.util.Collections.unmodifiableList(backupFungusIdList_) : backupFungusIdList_;
       }
       /**
-       * <code>repeated uint32 backup_fungus_id_list = 11;</code>
+       * <code>repeated uint32 backup_fungus_id_list = 3;</code>
        * @return The count of backupFungusIdList.
        */
       public int getBackupFungusIdListCount() {
         return backupFungusIdList_.size();
       }
       /**
-       * <code>repeated uint32 backup_fungus_id_list = 11;</code>
+       * <code>repeated uint32 backup_fungus_id_list = 3;</code>
        * @param index The index of the element to return.
        * @return The backupFungusIdList at the given index.
        */
@@ -658,7 +666,7 @@ public final class FungusFighterTrainingSelectFungusReqOuterClass {
         return backupFungusIdList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 backup_fungus_id_list = 11;</code>
+       * <code>repeated uint32 backup_fungus_id_list = 3;</code>
        * @param index The index to set the value at.
        * @param value The backupFungusIdList to set.
        * @return This builder for chaining.
@@ -671,7 +679,7 @@ public final class FungusFighterTrainingSelectFungusReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 backup_fungus_id_list = 11;</code>
+       * <code>repeated uint32 backup_fungus_id_list = 3;</code>
        * @param value The backupFungusIdList to add.
        * @return This builder for chaining.
        */
@@ -682,7 +690,7 @@ public final class FungusFighterTrainingSelectFungusReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 backup_fungus_id_list = 11;</code>
+       * <code>repeated uint32 backup_fungus_id_list = 3;</code>
        * @param values The backupFungusIdList to add.
        * @return This builder for chaining.
        */
@@ -695,7 +703,7 @@ public final class FungusFighterTrainingSelectFungusReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 backup_fungus_id_list = 11;</code>
+       * <code>repeated uint32 backup_fungus_id_list = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearBackupFungusIdList() {
@@ -713,7 +721,7 @@ public final class FungusFighterTrainingSelectFungusReqOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 fight_fungus_id_list = 7;</code>
+       * <code>repeated uint32 fight_fungus_id_list = 9;</code>
        * @return A list containing the fightFungusIdList.
        */
       public java.util.List<java.lang.Integer>
@@ -722,14 +730,14 @@ public final class FungusFighterTrainingSelectFungusReqOuterClass {
                  java.util.Collections.unmodifiableList(fightFungusIdList_) : fightFungusIdList_;
       }
       /**
-       * <code>repeated uint32 fight_fungus_id_list = 7;</code>
+       * <code>repeated uint32 fight_fungus_id_list = 9;</code>
        * @return The count of fightFungusIdList.
        */
       public int getFightFungusIdListCount() {
         return fightFungusIdList_.size();
       }
       /**
-       * <code>repeated uint32 fight_fungus_id_list = 7;</code>
+       * <code>repeated uint32 fight_fungus_id_list = 9;</code>
        * @param index The index of the element to return.
        * @return The fightFungusIdList at the given index.
        */
@@ -737,7 +745,7 @@ public final class FungusFighterTrainingSelectFungusReqOuterClass {
         return fightFungusIdList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 fight_fungus_id_list = 7;</code>
+       * <code>repeated uint32 fight_fungus_id_list = 9;</code>
        * @param index The index to set the value at.
        * @param value The fightFungusIdList to set.
        * @return This builder for chaining.
@@ -750,7 +758,7 @@ public final class FungusFighterTrainingSelectFungusReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 fight_fungus_id_list = 7;</code>
+       * <code>repeated uint32 fight_fungus_id_list = 9;</code>
        * @param value The fightFungusIdList to add.
        * @return This builder for chaining.
        */
@@ -761,7 +769,7 @@ public final class FungusFighterTrainingSelectFungusReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 fight_fungus_id_list = 7;</code>
+       * <code>repeated uint32 fight_fungus_id_list = 9;</code>
        * @param values The fightFungusIdList to add.
        * @return This builder for chaining.
        */
@@ -774,7 +782,7 @@ public final class FungusFighterTrainingSelectFungusReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 fight_fungus_id_list = 7;</code>
+       * <code>repeated uint32 fight_fungus_id_list = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearFightFungusIdList() {
@@ -852,8 +860,8 @@ public final class FungusFighterTrainingSelectFungusReqOuterClass {
     java.lang.String[] descriptorData = {
       "\n*FungusFighterTrainingSelectFungusReq.p" +
       "roto\"c\n$FungusFighterTrainingSelectFungu" +
-      "sReq\022\035\n\025backup_fungus_id_list\030\013 \003(\r\022\034\n\024f" +
-      "ight_fungus_id_list\030\007 \003(\rB\033\n\031emu.grasscu" +
+      "sReq\022\035\n\025backup_fungus_id_list\030\003 \003(\r\022\034\n\024f" +
+      "ight_fungus_id_list\030\t \003(\rB\033\n\031emu.grasscu" +
       "tter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

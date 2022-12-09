@@ -19,22 +19,26 @@ public final class HideAndSeekSelectAvatarRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 2;</code>
-     * @return The retcode.
-     */
-    int getRetcode();
-
-    /**
-     * <code>uint32 avatar_id = 3;</code>
+     * <code>uint32 avatar_id = 8;</code>
      * @return The avatarId.
      */
     int getAvatarId();
+
+    /**
+     * <code>int32 retcode = 7;</code>
+     * @return The retcode.
+     */
+    int getRetcode();
   }
   /**
    * <pre>
-   * CmdId: 5367
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 5353;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code HideAndSeekSelectAvatarRsp}
@@ -81,12 +85,12 @@ public final class HideAndSeekSelectAvatarRspOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
+            case 56: {
 
               retcode_ = input.readInt32();
               break;
             }
-            case 24: {
+            case 64: {
 
               avatarId_ = input.readUInt32();
               break;
@@ -123,26 +127,26 @@ public final class HideAndSeekSelectAvatarRspOuterClass {
               emu.grasscutter.net.proto.HideAndSeekSelectAvatarRspOuterClass.HideAndSeekSelectAvatarRsp.class, emu.grasscutter.net.proto.HideAndSeekSelectAvatarRspOuterClass.HideAndSeekSelectAvatarRsp.Builder.class);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 2;
-    private int retcode_;
-    /**
-     * <code>int32 retcode = 2;</code>
-     * @return The retcode.
-     */
-    @java.lang.Override
-    public int getRetcode() {
-      return retcode_;
-    }
-
-    public static final int AVATAR_ID_FIELD_NUMBER = 3;
+    public static final int AVATAR_ID_FIELD_NUMBER = 8;
     private int avatarId_;
     /**
-     * <code>uint32 avatar_id = 3;</code>
+     * <code>uint32 avatar_id = 8;</code>
      * @return The avatarId.
      */
     @java.lang.Override
     public int getAvatarId() {
       return avatarId_;
+    }
+
+    public static final int RETCODE_FIELD_NUMBER = 7;
+    private int retcode_;
+    /**
+     * <code>int32 retcode = 7;</code>
+     * @return The retcode.
+     */
+    @java.lang.Override
+    public int getRetcode() {
+      return retcode_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -160,10 +164,10 @@ public final class HideAndSeekSelectAvatarRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (retcode_ != 0) {
-        output.writeInt32(2, retcode_);
+        output.writeInt32(7, retcode_);
       }
       if (avatarId_ != 0) {
-        output.writeUInt32(3, avatarId_);
+        output.writeUInt32(8, avatarId_);
       }
       unknownFields.writeTo(output);
     }
@@ -176,11 +180,11 @@ public final class HideAndSeekSelectAvatarRspOuterClass {
       size = 0;
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(2, retcode_);
+          .computeInt32Size(7, retcode_);
       }
       if (avatarId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, avatarId_);
+          .computeUInt32Size(8, avatarId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -197,10 +201,10 @@ public final class HideAndSeekSelectAvatarRspOuterClass {
       }
       emu.grasscutter.net.proto.HideAndSeekSelectAvatarRspOuterClass.HideAndSeekSelectAvatarRsp other = (emu.grasscutter.net.proto.HideAndSeekSelectAvatarRspOuterClass.HideAndSeekSelectAvatarRsp) obj;
 
-      if (getRetcode()
-          != other.getRetcode()) return false;
       if (getAvatarId()
           != other.getAvatarId()) return false;
+      if (getRetcode()
+          != other.getRetcode()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -212,10 +216,10 @@ public final class HideAndSeekSelectAvatarRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
-      hash = (53 * hash) + getRetcode();
       hash = (37 * hash) + AVATAR_ID_FIELD_NUMBER;
       hash = (53 * hash) + getAvatarId();
+      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
+      hash = (53 * hash) + getRetcode();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -313,9 +317,13 @@ public final class HideAndSeekSelectAvatarRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 5367
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 5353;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code HideAndSeekSelectAvatarRsp}
@@ -355,9 +363,9 @@ public final class HideAndSeekSelectAvatarRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        retcode_ = 0;
-
         avatarId_ = 0;
+
+        retcode_ = 0;
 
         return this;
       }
@@ -385,8 +393,8 @@ public final class HideAndSeekSelectAvatarRspOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.HideAndSeekSelectAvatarRspOuterClass.HideAndSeekSelectAvatarRsp buildPartial() {
         emu.grasscutter.net.proto.HideAndSeekSelectAvatarRspOuterClass.HideAndSeekSelectAvatarRsp result = new emu.grasscutter.net.proto.HideAndSeekSelectAvatarRspOuterClass.HideAndSeekSelectAvatarRsp(this);
-        result.retcode_ = retcode_;
         result.avatarId_ = avatarId_;
+        result.retcode_ = retcode_;
         onBuilt();
         return result;
       }
@@ -435,11 +443,11 @@ public final class HideAndSeekSelectAvatarRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.HideAndSeekSelectAvatarRspOuterClass.HideAndSeekSelectAvatarRsp other) {
         if (other == emu.grasscutter.net.proto.HideAndSeekSelectAvatarRspOuterClass.HideAndSeekSelectAvatarRsp.getDefaultInstance()) return this;
-        if (other.getRetcode() != 0) {
-          setRetcode(other.getRetcode());
-        }
         if (other.getAvatarId() != 0) {
           setAvatarId(other.getAvatarId());
+        }
+        if (other.getRetcode() != 0) {
+          setRetcode(other.getRetcode());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -470,40 +478,9 @@ public final class HideAndSeekSelectAvatarRspOuterClass {
         return this;
       }
 
-      private int retcode_ ;
-      /**
-       * <code>int32 retcode = 2;</code>
-       * @return The retcode.
-       */
-      @java.lang.Override
-      public int getRetcode() {
-        return retcode_;
-      }
-      /**
-       * <code>int32 retcode = 2;</code>
-       * @param value The retcode to set.
-       * @return This builder for chaining.
-       */
-      public Builder setRetcode(int value) {
-        
-        retcode_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>int32 retcode = 2;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearRetcode() {
-        
-        retcode_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int avatarId_ ;
       /**
-       * <code>uint32 avatar_id = 3;</code>
+       * <code>uint32 avatar_id = 8;</code>
        * @return The avatarId.
        */
       @java.lang.Override
@@ -511,7 +488,7 @@ public final class HideAndSeekSelectAvatarRspOuterClass {
         return avatarId_;
       }
       /**
-       * <code>uint32 avatar_id = 3;</code>
+       * <code>uint32 avatar_id = 8;</code>
        * @param value The avatarId to set.
        * @return This builder for chaining.
        */
@@ -522,12 +499,43 @@ public final class HideAndSeekSelectAvatarRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 avatar_id = 3;</code>
+       * <code>uint32 avatar_id = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearAvatarId() {
         
         avatarId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int retcode_ ;
+      /**
+       * <code>int32 retcode = 7;</code>
+       * @return The retcode.
+       */
+      @java.lang.Override
+      public int getRetcode() {
+        return retcode_;
+      }
+      /**
+       * <code>int32 retcode = 7;</code>
+       * @param value The retcode to set.
+       * @return This builder for chaining.
+       */
+      public Builder setRetcode(int value) {
+        
+        retcode_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 retcode = 7;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearRetcode() {
+        
+        retcode_ = 0;
         onChanged();
         return this;
       }
@@ -599,8 +607,8 @@ public final class HideAndSeekSelectAvatarRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n HideAndSeekSelectAvatarRsp.proto\"@\n\032Hi" +
-      "deAndSeekSelectAvatarRsp\022\017\n\007retcode\030\002 \001(" +
-      "\005\022\021\n\tavatar_id\030\003 \001(\rB\033\n\031emu.grasscutter." +
+      "deAndSeekSelectAvatarRsp\022\021\n\tavatar_id\030\010 " +
+      "\001(\r\022\017\n\007retcode\030\007 \001(\005B\033\n\031emu.grasscutter." +
       "net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -612,7 +620,7 @@ public final class HideAndSeekSelectAvatarRspOuterClass {
     internal_static_HideAndSeekSelectAvatarRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_HideAndSeekSelectAvatarRsp_descriptor,
-        new java.lang.String[] { "Retcode", "AvatarId", });
+        new java.lang.String[] { "AvatarId", "Retcode", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

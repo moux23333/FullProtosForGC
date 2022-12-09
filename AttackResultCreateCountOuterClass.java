@@ -19,38 +19,38 @@ public final class AttackResultCreateCountOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated uint32 create_count_list = 10;</code>
-     * @return A list containing the createCountList.
+     * <code>repeated uint32 Unk3300_PFFFFJBPKGN = 8;</code>
+     * @return A list containing the unk3300PFFFFJBPKGN.
      */
-    java.util.List<java.lang.Integer> getCreateCountListList();
+    java.util.List<java.lang.Integer> getUnk3300PFFFFJBPKGNList();
     /**
-     * <code>repeated uint32 create_count_list = 10;</code>
-     * @return The count of createCountList.
+     * <code>repeated uint32 Unk3300_PFFFFJBPKGN = 8;</code>
+     * @return The count of unk3300PFFFFJBPKGN.
      */
-    int getCreateCountListCount();
+    int getUnk3300PFFFFJBPKGNCount();
     /**
-     * <code>repeated uint32 create_count_list = 10;</code>
+     * <code>repeated uint32 Unk3300_PFFFFJBPKGN = 8;</code>
      * @param index The index of the element to return.
-     * @return The createCountList at the given index.
+     * @return The unk3300PFFFFJBPKGN at the given index.
      */
-    int getCreateCountList(int index);
+    int getUnk3300PFFFFJBPKGN(int index);
 
     /**
-     * <code>repeated uint32 create_count_no_cost_list = 7;</code>
-     * @return A list containing the createCountNoCostList.
+     * <code>repeated uint32 Unk3300_MDGFBFBAHPB = 10;</code>
+     * @return A list containing the unk3300MDGFBFBAHPB.
      */
-    java.util.List<java.lang.Integer> getCreateCountNoCostListList();
+    java.util.List<java.lang.Integer> getUnk3300MDGFBFBAHPBList();
     /**
-     * <code>repeated uint32 create_count_no_cost_list = 7;</code>
-     * @return The count of createCountNoCostList.
+     * <code>repeated uint32 Unk3300_MDGFBFBAHPB = 10;</code>
+     * @return The count of unk3300MDGFBFBAHPB.
      */
-    int getCreateCountNoCostListCount();
+    int getUnk3300MDGFBFBAHPBCount();
     /**
-     * <code>repeated uint32 create_count_no_cost_list = 7;</code>
+     * <code>repeated uint32 Unk3300_MDGFBFBAHPB = 10;</code>
      * @param index The index of the element to return.
-     * @return The createCountNoCostList at the given index.
+     * @return The unk3300MDGFBFBAHPB at the given index.
      */
-    int getCreateCountNoCostList(int index);
+    int getUnk3300MDGFBFBAHPB(int index);
   }
   /**
    * Protobuf type {@code AttackResultCreateCount}
@@ -65,8 +65,8 @@ public final class AttackResultCreateCountOuterClass {
       super(builder);
     }
     private AttackResultCreateCount() {
-      createCountList_ = emptyIntList();
-      createCountNoCostList_ = emptyIntList();
+      unk3300PFFFFJBPKGN_ = emptyIntList();
+      unk3300MDGFBFBAHPB_ = emptyIntList();
     }
 
     @java.lang.Override
@@ -100,44 +100,44 @@ public final class AttackResultCreateCountOuterClass {
             case 0:
               done = true;
               break;
-            case 56: {
-              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
-                createCountNoCostList_ = newIntList();
-                mutable_bitField0_ |= 0x00000002;
+            case 64: {
+              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+                unk3300PFFFFJBPKGN_ = newIntList();
+                mutable_bitField0_ |= 0x00000001;
               }
-              createCountNoCostList_.addInt(input.readUInt32());
+              unk3300PFFFFJBPKGN_.addInt(input.readUInt32());
               break;
             }
-            case 58: {
+            case 66: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000002) != 0) && input.getBytesUntilLimit() > 0) {
-                createCountNoCostList_ = newIntList();
-                mutable_bitField0_ |= 0x00000002;
+              if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
+                unk3300PFFFFJBPKGN_ = newIntList();
+                mutable_bitField0_ |= 0x00000001;
               }
               while (input.getBytesUntilLimit() > 0) {
-                createCountNoCostList_.addInt(input.readUInt32());
+                unk3300PFFFFJBPKGN_.addInt(input.readUInt32());
               }
               input.popLimit(limit);
               break;
             }
             case 80: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                createCountList_ = newIntList();
-                mutable_bitField0_ |= 0x00000001;
+              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
+                unk3300MDGFBFBAHPB_ = newIntList();
+                mutable_bitField0_ |= 0x00000002;
               }
-              createCountList_.addInt(input.readUInt32());
+              unk3300MDGFBFBAHPB_.addInt(input.readUInt32());
               break;
             }
             case 82: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
-                createCountList_ = newIntList();
-                mutable_bitField0_ |= 0x00000001;
+              if (!((mutable_bitField0_ & 0x00000002) != 0) && input.getBytesUntilLimit() > 0) {
+                unk3300MDGFBFBAHPB_ = newIntList();
+                mutable_bitField0_ |= 0x00000002;
               }
               while (input.getBytesUntilLimit() > 0) {
-                createCountList_.addInt(input.readUInt32());
+                unk3300MDGFBFBAHPB_.addInt(input.readUInt32());
               }
               input.popLimit(limit);
               break;
@@ -157,11 +157,11 @@ public final class AttackResultCreateCountOuterClass {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
       } finally {
-        if (((mutable_bitField0_ & 0x00000002) != 0)) {
-          createCountNoCostList_.makeImmutable(); // C
-        }
         if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          createCountList_.makeImmutable(); // C
+          unk3300PFFFFJBPKGN_.makeImmutable(); // C
+        }
+        if (((mutable_bitField0_ & 0x00000002) != 0)) {
+          unk3300MDGFBFBAHPB_.makeImmutable(); // C
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -180,61 +180,61 @@ public final class AttackResultCreateCountOuterClass {
               emu.grasscutter.net.proto.AttackResultCreateCountOuterClass.AttackResultCreateCount.class, emu.grasscutter.net.proto.AttackResultCreateCountOuterClass.AttackResultCreateCount.Builder.class);
     }
 
-    public static final int CREATE_COUNT_LIST_FIELD_NUMBER = 10;
-    private com.google.protobuf.Internal.IntList createCountList_;
+    public static final int UNK3300_PFFFFJBPKGN_FIELD_NUMBER = 8;
+    private com.google.protobuf.Internal.IntList unk3300PFFFFJBPKGN_;
     /**
-     * <code>repeated uint32 create_count_list = 10;</code>
-     * @return A list containing the createCountList.
+     * <code>repeated uint32 Unk3300_PFFFFJBPKGN = 8;</code>
+     * @return A list containing the unk3300PFFFFJBPKGN.
      */
     @java.lang.Override
     public java.util.List<java.lang.Integer>
-        getCreateCountListList() {
-      return createCountList_;
+        getUnk3300PFFFFJBPKGNList() {
+      return unk3300PFFFFJBPKGN_;
     }
     /**
-     * <code>repeated uint32 create_count_list = 10;</code>
-     * @return The count of createCountList.
+     * <code>repeated uint32 Unk3300_PFFFFJBPKGN = 8;</code>
+     * @return The count of unk3300PFFFFJBPKGN.
      */
-    public int getCreateCountListCount() {
-      return createCountList_.size();
+    public int getUnk3300PFFFFJBPKGNCount() {
+      return unk3300PFFFFJBPKGN_.size();
     }
     /**
-     * <code>repeated uint32 create_count_list = 10;</code>
+     * <code>repeated uint32 Unk3300_PFFFFJBPKGN = 8;</code>
      * @param index The index of the element to return.
-     * @return The createCountList at the given index.
+     * @return The unk3300PFFFFJBPKGN at the given index.
      */
-    public int getCreateCountList(int index) {
-      return createCountList_.getInt(index);
+    public int getUnk3300PFFFFJBPKGN(int index) {
+      return unk3300PFFFFJBPKGN_.getInt(index);
     }
-    private int createCountListMemoizedSerializedSize = -1;
+    private int unk3300PFFFFJBPKGNMemoizedSerializedSize = -1;
 
-    public static final int CREATE_COUNT_NO_COST_LIST_FIELD_NUMBER = 7;
-    private com.google.protobuf.Internal.IntList createCountNoCostList_;
+    public static final int UNK3300_MDGFBFBAHPB_FIELD_NUMBER = 10;
+    private com.google.protobuf.Internal.IntList unk3300MDGFBFBAHPB_;
     /**
-     * <code>repeated uint32 create_count_no_cost_list = 7;</code>
-     * @return A list containing the createCountNoCostList.
+     * <code>repeated uint32 Unk3300_MDGFBFBAHPB = 10;</code>
+     * @return A list containing the unk3300MDGFBFBAHPB.
      */
     @java.lang.Override
     public java.util.List<java.lang.Integer>
-        getCreateCountNoCostListList() {
-      return createCountNoCostList_;
+        getUnk3300MDGFBFBAHPBList() {
+      return unk3300MDGFBFBAHPB_;
     }
     /**
-     * <code>repeated uint32 create_count_no_cost_list = 7;</code>
-     * @return The count of createCountNoCostList.
+     * <code>repeated uint32 Unk3300_MDGFBFBAHPB = 10;</code>
+     * @return The count of unk3300MDGFBFBAHPB.
      */
-    public int getCreateCountNoCostListCount() {
-      return createCountNoCostList_.size();
+    public int getUnk3300MDGFBFBAHPBCount() {
+      return unk3300MDGFBFBAHPB_.size();
     }
     /**
-     * <code>repeated uint32 create_count_no_cost_list = 7;</code>
+     * <code>repeated uint32 Unk3300_MDGFBFBAHPB = 10;</code>
      * @param index The index of the element to return.
-     * @return The createCountNoCostList at the given index.
+     * @return The unk3300MDGFBFBAHPB at the given index.
      */
-    public int getCreateCountNoCostList(int index) {
-      return createCountNoCostList_.getInt(index);
+    public int getUnk3300MDGFBFBAHPB(int index) {
+      return unk3300MDGFBFBAHPB_.getInt(index);
     }
-    private int createCountNoCostListMemoizedSerializedSize = -1;
+    private int unk3300MDGFBFBAHPBMemoizedSerializedSize = -1;
 
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
@@ -251,19 +251,19 @@ public final class AttackResultCreateCountOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      if (getCreateCountNoCostListList().size() > 0) {
-        output.writeUInt32NoTag(58);
-        output.writeUInt32NoTag(createCountNoCostListMemoizedSerializedSize);
+      if (getUnk3300PFFFFJBPKGNList().size() > 0) {
+        output.writeUInt32NoTag(66);
+        output.writeUInt32NoTag(unk3300PFFFFJBPKGNMemoizedSerializedSize);
       }
-      for (int i = 0; i < createCountNoCostList_.size(); i++) {
-        output.writeUInt32NoTag(createCountNoCostList_.getInt(i));
+      for (int i = 0; i < unk3300PFFFFJBPKGN_.size(); i++) {
+        output.writeUInt32NoTag(unk3300PFFFFJBPKGN_.getInt(i));
       }
-      if (getCreateCountListList().size() > 0) {
+      if (getUnk3300MDGFBFBAHPBList().size() > 0) {
         output.writeUInt32NoTag(82);
-        output.writeUInt32NoTag(createCountListMemoizedSerializedSize);
+        output.writeUInt32NoTag(unk3300MDGFBFBAHPBMemoizedSerializedSize);
       }
-      for (int i = 0; i < createCountList_.size(); i++) {
-        output.writeUInt32NoTag(createCountList_.getInt(i));
+      for (int i = 0; i < unk3300MDGFBFBAHPB_.size(); i++) {
+        output.writeUInt32NoTag(unk3300MDGFBFBAHPB_.getInt(i));
       }
       unknownFields.writeTo(output);
     }
@@ -276,31 +276,31 @@ public final class AttackResultCreateCountOuterClass {
       size = 0;
       {
         int dataSize = 0;
-        for (int i = 0; i < createCountNoCostList_.size(); i++) {
+        for (int i = 0; i < unk3300PFFFFJBPKGN_.size(); i++) {
           dataSize += com.google.protobuf.CodedOutputStream
-            .computeUInt32SizeNoTag(createCountNoCostList_.getInt(i));
+            .computeUInt32SizeNoTag(unk3300PFFFFJBPKGN_.getInt(i));
         }
         size += dataSize;
-        if (!getCreateCountNoCostListList().isEmpty()) {
+        if (!getUnk3300PFFFFJBPKGNList().isEmpty()) {
           size += 1;
           size += com.google.protobuf.CodedOutputStream
               .computeInt32SizeNoTag(dataSize);
         }
-        createCountNoCostListMemoizedSerializedSize = dataSize;
+        unk3300PFFFFJBPKGNMemoizedSerializedSize = dataSize;
       }
       {
         int dataSize = 0;
-        for (int i = 0; i < createCountList_.size(); i++) {
+        for (int i = 0; i < unk3300MDGFBFBAHPB_.size(); i++) {
           dataSize += com.google.protobuf.CodedOutputStream
-            .computeUInt32SizeNoTag(createCountList_.getInt(i));
+            .computeUInt32SizeNoTag(unk3300MDGFBFBAHPB_.getInt(i));
         }
         size += dataSize;
-        if (!getCreateCountListList().isEmpty()) {
+        if (!getUnk3300MDGFBFBAHPBList().isEmpty()) {
           size += 1;
           size += com.google.protobuf.CodedOutputStream
               .computeInt32SizeNoTag(dataSize);
         }
-        createCountListMemoizedSerializedSize = dataSize;
+        unk3300MDGFBFBAHPBMemoizedSerializedSize = dataSize;
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -317,10 +317,10 @@ public final class AttackResultCreateCountOuterClass {
       }
       emu.grasscutter.net.proto.AttackResultCreateCountOuterClass.AttackResultCreateCount other = (emu.grasscutter.net.proto.AttackResultCreateCountOuterClass.AttackResultCreateCount) obj;
 
-      if (!getCreateCountListList()
-          .equals(other.getCreateCountListList())) return false;
-      if (!getCreateCountNoCostListList()
-          .equals(other.getCreateCountNoCostListList())) return false;
+      if (!getUnk3300PFFFFJBPKGNList()
+          .equals(other.getUnk3300PFFFFJBPKGNList())) return false;
+      if (!getUnk3300MDGFBFBAHPBList()
+          .equals(other.getUnk3300MDGFBFBAHPBList())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -332,13 +332,13 @@ public final class AttackResultCreateCountOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (getCreateCountListCount() > 0) {
-        hash = (37 * hash) + CREATE_COUNT_LIST_FIELD_NUMBER;
-        hash = (53 * hash) + getCreateCountListList().hashCode();
+      if (getUnk3300PFFFFJBPKGNCount() > 0) {
+        hash = (37 * hash) + UNK3300_PFFFFJBPKGN_FIELD_NUMBER;
+        hash = (53 * hash) + getUnk3300PFFFFJBPKGNList().hashCode();
       }
-      if (getCreateCountNoCostListCount() > 0) {
-        hash = (37 * hash) + CREATE_COUNT_NO_COST_LIST_FIELD_NUMBER;
-        hash = (53 * hash) + getCreateCountNoCostListList().hashCode();
+      if (getUnk3300MDGFBFBAHPBCount() > 0) {
+        hash = (37 * hash) + UNK3300_MDGFBFBAHPB_FIELD_NUMBER;
+        hash = (53 * hash) + getUnk3300MDGFBFBAHPBList().hashCode();
       }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
@@ -473,9 +473,9 @@ public final class AttackResultCreateCountOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        createCountList_ = emptyIntList();
+        unk3300PFFFFJBPKGN_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
-        createCountNoCostList_ = emptyIntList();
+        unk3300MDGFBFBAHPB_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000002);
         return this;
       }
@@ -505,15 +505,15 @@ public final class AttackResultCreateCountOuterClass {
         emu.grasscutter.net.proto.AttackResultCreateCountOuterClass.AttackResultCreateCount result = new emu.grasscutter.net.proto.AttackResultCreateCountOuterClass.AttackResultCreateCount(this);
         int from_bitField0_ = bitField0_;
         if (((bitField0_ & 0x00000001) != 0)) {
-          createCountList_.makeImmutable();
+          unk3300PFFFFJBPKGN_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000001);
         }
-        result.createCountList_ = createCountList_;
+        result.unk3300PFFFFJBPKGN_ = unk3300PFFFFJBPKGN_;
         if (((bitField0_ & 0x00000002) != 0)) {
-          createCountNoCostList_.makeImmutable();
+          unk3300MDGFBFBAHPB_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000002);
         }
-        result.createCountNoCostList_ = createCountNoCostList_;
+        result.unk3300MDGFBFBAHPB_ = unk3300MDGFBFBAHPB_;
         onBuilt();
         return result;
       }
@@ -562,23 +562,23 @@ public final class AttackResultCreateCountOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.AttackResultCreateCountOuterClass.AttackResultCreateCount other) {
         if (other == emu.grasscutter.net.proto.AttackResultCreateCountOuterClass.AttackResultCreateCount.getDefaultInstance()) return this;
-        if (!other.createCountList_.isEmpty()) {
-          if (createCountList_.isEmpty()) {
-            createCountList_ = other.createCountList_;
+        if (!other.unk3300PFFFFJBPKGN_.isEmpty()) {
+          if (unk3300PFFFFJBPKGN_.isEmpty()) {
+            unk3300PFFFFJBPKGN_ = other.unk3300PFFFFJBPKGN_;
             bitField0_ = (bitField0_ & ~0x00000001);
           } else {
-            ensureCreateCountListIsMutable();
-            createCountList_.addAll(other.createCountList_);
+            ensureUnk3300PFFFFJBPKGNIsMutable();
+            unk3300PFFFFJBPKGN_.addAll(other.unk3300PFFFFJBPKGN_);
           }
           onChanged();
         }
-        if (!other.createCountNoCostList_.isEmpty()) {
-          if (createCountNoCostList_.isEmpty()) {
-            createCountNoCostList_ = other.createCountNoCostList_;
+        if (!other.unk3300MDGFBFBAHPB_.isEmpty()) {
+          if (unk3300MDGFBFBAHPB_.isEmpty()) {
+            unk3300MDGFBFBAHPB_ = other.unk3300MDGFBFBAHPB_;
             bitField0_ = (bitField0_ & ~0x00000002);
           } else {
-            ensureCreateCountNoCostListIsMutable();
-            createCountNoCostList_.addAll(other.createCountNoCostList_);
+            ensureUnk3300MDGFBFBAHPBIsMutable();
+            unk3300MDGFBFBAHPB_.addAll(other.unk3300MDGFBFBAHPB_);
           }
           onChanged();
         }
@@ -612,159 +612,159 @@ public final class AttackResultCreateCountOuterClass {
       }
       private int bitField0_;
 
-      private com.google.protobuf.Internal.IntList createCountList_ = emptyIntList();
-      private void ensureCreateCountListIsMutable() {
+      private com.google.protobuf.Internal.IntList unk3300PFFFFJBPKGN_ = emptyIntList();
+      private void ensureUnk3300PFFFFJBPKGNIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          createCountList_ = mutableCopy(createCountList_);
+          unk3300PFFFFJBPKGN_ = mutableCopy(unk3300PFFFFJBPKGN_);
           bitField0_ |= 0x00000001;
          }
       }
       /**
-       * <code>repeated uint32 create_count_list = 10;</code>
-       * @return A list containing the createCountList.
+       * <code>repeated uint32 Unk3300_PFFFFJBPKGN = 8;</code>
+       * @return A list containing the unk3300PFFFFJBPKGN.
        */
       public java.util.List<java.lang.Integer>
-          getCreateCountListList() {
+          getUnk3300PFFFFJBPKGNList() {
         return ((bitField0_ & 0x00000001) != 0) ?
-                 java.util.Collections.unmodifiableList(createCountList_) : createCountList_;
+                 java.util.Collections.unmodifiableList(unk3300PFFFFJBPKGN_) : unk3300PFFFFJBPKGN_;
       }
       /**
-       * <code>repeated uint32 create_count_list = 10;</code>
-       * @return The count of createCountList.
+       * <code>repeated uint32 Unk3300_PFFFFJBPKGN = 8;</code>
+       * @return The count of unk3300PFFFFJBPKGN.
        */
-      public int getCreateCountListCount() {
-        return createCountList_.size();
+      public int getUnk3300PFFFFJBPKGNCount() {
+        return unk3300PFFFFJBPKGN_.size();
       }
       /**
-       * <code>repeated uint32 create_count_list = 10;</code>
+       * <code>repeated uint32 Unk3300_PFFFFJBPKGN = 8;</code>
        * @param index The index of the element to return.
-       * @return The createCountList at the given index.
+       * @return The unk3300PFFFFJBPKGN at the given index.
        */
-      public int getCreateCountList(int index) {
-        return createCountList_.getInt(index);
+      public int getUnk3300PFFFFJBPKGN(int index) {
+        return unk3300PFFFFJBPKGN_.getInt(index);
       }
       /**
-       * <code>repeated uint32 create_count_list = 10;</code>
+       * <code>repeated uint32 Unk3300_PFFFFJBPKGN = 8;</code>
        * @param index The index to set the value at.
-       * @param value The createCountList to set.
+       * @param value The unk3300PFFFFJBPKGN to set.
        * @return This builder for chaining.
        */
-      public Builder setCreateCountList(
+      public Builder setUnk3300PFFFFJBPKGN(
           int index, int value) {
-        ensureCreateCountListIsMutable();
-        createCountList_.setInt(index, value);
+        ensureUnk3300PFFFFJBPKGNIsMutable();
+        unk3300PFFFFJBPKGN_.setInt(index, value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 create_count_list = 10;</code>
-       * @param value The createCountList to add.
+       * <code>repeated uint32 Unk3300_PFFFFJBPKGN = 8;</code>
+       * @param value The unk3300PFFFFJBPKGN to add.
        * @return This builder for chaining.
        */
-      public Builder addCreateCountList(int value) {
-        ensureCreateCountListIsMutable();
-        createCountList_.addInt(value);
+      public Builder addUnk3300PFFFFJBPKGN(int value) {
+        ensureUnk3300PFFFFJBPKGNIsMutable();
+        unk3300PFFFFJBPKGN_.addInt(value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 create_count_list = 10;</code>
-       * @param values The createCountList to add.
+       * <code>repeated uint32 Unk3300_PFFFFJBPKGN = 8;</code>
+       * @param values The unk3300PFFFFJBPKGN to add.
        * @return This builder for chaining.
        */
-      public Builder addAllCreateCountList(
+      public Builder addAllUnk3300PFFFFJBPKGN(
           java.lang.Iterable<? extends java.lang.Integer> values) {
-        ensureCreateCountListIsMutable();
+        ensureUnk3300PFFFFJBPKGNIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, createCountList_);
+            values, unk3300PFFFFJBPKGN_);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 create_count_list = 10;</code>
+       * <code>repeated uint32 Unk3300_PFFFFJBPKGN = 8;</code>
        * @return This builder for chaining.
        */
-      public Builder clearCreateCountList() {
-        createCountList_ = emptyIntList();
+      public Builder clearUnk3300PFFFFJBPKGN() {
+        unk3300PFFFFJBPKGN_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
         onChanged();
         return this;
       }
 
-      private com.google.protobuf.Internal.IntList createCountNoCostList_ = emptyIntList();
-      private void ensureCreateCountNoCostListIsMutable() {
+      private com.google.protobuf.Internal.IntList unk3300MDGFBFBAHPB_ = emptyIntList();
+      private void ensureUnk3300MDGFBFBAHPBIsMutable() {
         if (!((bitField0_ & 0x00000002) != 0)) {
-          createCountNoCostList_ = mutableCopy(createCountNoCostList_);
+          unk3300MDGFBFBAHPB_ = mutableCopy(unk3300MDGFBFBAHPB_);
           bitField0_ |= 0x00000002;
          }
       }
       /**
-       * <code>repeated uint32 create_count_no_cost_list = 7;</code>
-       * @return A list containing the createCountNoCostList.
+       * <code>repeated uint32 Unk3300_MDGFBFBAHPB = 10;</code>
+       * @return A list containing the unk3300MDGFBFBAHPB.
        */
       public java.util.List<java.lang.Integer>
-          getCreateCountNoCostListList() {
+          getUnk3300MDGFBFBAHPBList() {
         return ((bitField0_ & 0x00000002) != 0) ?
-                 java.util.Collections.unmodifiableList(createCountNoCostList_) : createCountNoCostList_;
+                 java.util.Collections.unmodifiableList(unk3300MDGFBFBAHPB_) : unk3300MDGFBFBAHPB_;
       }
       /**
-       * <code>repeated uint32 create_count_no_cost_list = 7;</code>
-       * @return The count of createCountNoCostList.
+       * <code>repeated uint32 Unk3300_MDGFBFBAHPB = 10;</code>
+       * @return The count of unk3300MDGFBFBAHPB.
        */
-      public int getCreateCountNoCostListCount() {
-        return createCountNoCostList_.size();
+      public int getUnk3300MDGFBFBAHPBCount() {
+        return unk3300MDGFBFBAHPB_.size();
       }
       /**
-       * <code>repeated uint32 create_count_no_cost_list = 7;</code>
+       * <code>repeated uint32 Unk3300_MDGFBFBAHPB = 10;</code>
        * @param index The index of the element to return.
-       * @return The createCountNoCostList at the given index.
+       * @return The unk3300MDGFBFBAHPB at the given index.
        */
-      public int getCreateCountNoCostList(int index) {
-        return createCountNoCostList_.getInt(index);
+      public int getUnk3300MDGFBFBAHPB(int index) {
+        return unk3300MDGFBFBAHPB_.getInt(index);
       }
       /**
-       * <code>repeated uint32 create_count_no_cost_list = 7;</code>
+       * <code>repeated uint32 Unk3300_MDGFBFBAHPB = 10;</code>
        * @param index The index to set the value at.
-       * @param value The createCountNoCostList to set.
+       * @param value The unk3300MDGFBFBAHPB to set.
        * @return This builder for chaining.
        */
-      public Builder setCreateCountNoCostList(
+      public Builder setUnk3300MDGFBFBAHPB(
           int index, int value) {
-        ensureCreateCountNoCostListIsMutable();
-        createCountNoCostList_.setInt(index, value);
+        ensureUnk3300MDGFBFBAHPBIsMutable();
+        unk3300MDGFBFBAHPB_.setInt(index, value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 create_count_no_cost_list = 7;</code>
-       * @param value The createCountNoCostList to add.
+       * <code>repeated uint32 Unk3300_MDGFBFBAHPB = 10;</code>
+       * @param value The unk3300MDGFBFBAHPB to add.
        * @return This builder for chaining.
        */
-      public Builder addCreateCountNoCostList(int value) {
-        ensureCreateCountNoCostListIsMutable();
-        createCountNoCostList_.addInt(value);
+      public Builder addUnk3300MDGFBFBAHPB(int value) {
+        ensureUnk3300MDGFBFBAHPBIsMutable();
+        unk3300MDGFBFBAHPB_.addInt(value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 create_count_no_cost_list = 7;</code>
-       * @param values The createCountNoCostList to add.
+       * <code>repeated uint32 Unk3300_MDGFBFBAHPB = 10;</code>
+       * @param values The unk3300MDGFBFBAHPB to add.
        * @return This builder for chaining.
        */
-      public Builder addAllCreateCountNoCostList(
+      public Builder addAllUnk3300MDGFBFBAHPB(
           java.lang.Iterable<? extends java.lang.Integer> values) {
-        ensureCreateCountNoCostListIsMutable();
+        ensureUnk3300MDGFBFBAHPBIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, createCountNoCostList_);
+            values, unk3300MDGFBFBAHPB_);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 create_count_no_cost_list = 7;</code>
+       * <code>repeated uint32 Unk3300_MDGFBFBAHPB = 10;</code>
        * @return This builder for chaining.
        */
-      public Builder clearCreateCountNoCostList() {
-        createCountNoCostList_ = emptyIntList();
+      public Builder clearUnk3300MDGFBFBAHPB() {
+        unk3300MDGFBFBAHPB_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000002);
         onChanged();
         return this;
@@ -836,10 +836,10 @@ public final class AttackResultCreateCountOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\035AttackResultCreateCount.proto\"W\n\027Attac" +
-      "kResultCreateCount\022\031\n\021create_count_list\030" +
-      "\n \003(\r\022!\n\031create_count_no_cost_list\030\007 \003(\r" +
-      "B\033\n\031emu.grasscutter.net.protob\006proto3"
+      "\n\035AttackResultCreateCount.proto\"S\n\027Attac" +
+      "kResultCreateCount\022\033\n\023Unk3300_PFFFFJBPKG" +
+      "N\030\010 \003(\r\022\033\n\023Unk3300_MDGFBFBAHPB\030\n \003(\rB\033\n\031" +
+      "emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -850,7 +850,7 @@ public final class AttackResultCreateCountOuterClass {
     internal_static_AttackResultCreateCount_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_AttackResultCreateCount_descriptor,
-        new java.lang.String[] { "CreateCountList", "CreateCountNoCostList", });
+        new java.lang.String[] { "Unk3300PFFFFJBPKGN", "Unk3300MDGFBFBAHPB", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

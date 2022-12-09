@@ -19,17 +19,21 @@ public final class EchoShellTakeRewardReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 reward_id = 10;</code>
+     * <code>uint32 reward_id = 4;</code>
      * @return The rewardId.
      */
     int getRewardId();
   }
   /**
    * <pre>
-   * CmdId: 8114
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 8049;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code EchoShellTakeRewardReq}
@@ -76,7 +80,7 @@ public final class EchoShellTakeRewardReqOuterClass {
             case 0:
               done = true;
               break;
-            case 80: {
+            case 32: {
 
               rewardId_ = input.readUInt32();
               break;
@@ -113,10 +117,10 @@ public final class EchoShellTakeRewardReqOuterClass {
               emu.grasscutter.net.proto.EchoShellTakeRewardReqOuterClass.EchoShellTakeRewardReq.class, emu.grasscutter.net.proto.EchoShellTakeRewardReqOuterClass.EchoShellTakeRewardReq.Builder.class);
     }
 
-    public static final int REWARD_ID_FIELD_NUMBER = 10;
+    public static final int REWARD_ID_FIELD_NUMBER = 4;
     private int rewardId_;
     /**
-     * <code>uint32 reward_id = 10;</code>
+     * <code>uint32 reward_id = 4;</code>
      * @return The rewardId.
      */
     @java.lang.Override
@@ -139,7 +143,7 @@ public final class EchoShellTakeRewardReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (rewardId_ != 0) {
-        output.writeUInt32(10, rewardId_);
+        output.writeUInt32(4, rewardId_);
       }
       unknownFields.writeTo(output);
     }
@@ -152,7 +156,7 @@ public final class EchoShellTakeRewardReqOuterClass {
       size = 0;
       if (rewardId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, rewardId_);
+          .computeUInt32Size(4, rewardId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -281,10 +285,14 @@ public final class EchoShellTakeRewardReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 8114
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 8049;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code EchoShellTakeRewardReq}
@@ -435,7 +443,7 @@ public final class EchoShellTakeRewardReqOuterClass {
 
       private int rewardId_ ;
       /**
-       * <code>uint32 reward_id = 10;</code>
+       * <code>uint32 reward_id = 4;</code>
        * @return The rewardId.
        */
       @java.lang.Override
@@ -443,7 +451,7 @@ public final class EchoShellTakeRewardReqOuterClass {
         return rewardId_;
       }
       /**
-       * <code>uint32 reward_id = 10;</code>
+       * <code>uint32 reward_id = 4;</code>
        * @param value The rewardId to set.
        * @return This builder for chaining.
        */
@@ -454,7 +462,7 @@ public final class EchoShellTakeRewardReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 reward_id = 10;</code>
+       * <code>uint32 reward_id = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearRewardId() {
@@ -531,7 +539,7 @@ public final class EchoShellTakeRewardReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\034EchoShellTakeRewardReq.proto\"+\n\026EchoSh" +
-      "ellTakeRewardReq\022\021\n\treward_id\030\n \001(\rB\033\n\031e" +
+      "ellTakeRewardReq\022\021\n\treward_id\030\004 \001(\rB\033\n\031e" +
       "mu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

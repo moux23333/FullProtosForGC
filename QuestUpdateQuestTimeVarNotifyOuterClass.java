@@ -53,16 +53,20 @@ public final class QuestUpdateQuestTimeVarNotifyOuterClass {
         int key);
 
     /**
-     * <code>uint32 parent_quest_id = 3;</code>
+     * <code>uint32 parent_quest_id = 14;</code>
      * @return The parentQuestId.
      */
     int getParentQuestId();
   }
   /**
    * <pre>
-   * CmdId: 456
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 482;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code QuestUpdateQuestTimeVarNotify}
@@ -123,7 +127,7 @@ public final class QuestUpdateQuestTimeVarNotifyOuterClass {
                   timeVarMap__.getKey(), timeVarMap__.getValue());
               break;
             }
-            case 24: {
+            case 112: {
 
               parentQuestId_ = input.readUInt32();
               break;
@@ -253,10 +257,10 @@ public final class QuestUpdateQuestTimeVarNotifyOuterClass {
       return map.get(key);
     }
 
-    public static final int PARENT_QUEST_ID_FIELD_NUMBER = 3;
+    public static final int PARENT_QUEST_ID_FIELD_NUMBER = 14;
     private int parentQuestId_;
     /**
-     * <code>uint32 parent_quest_id = 3;</code>
+     * <code>uint32 parent_quest_id = 14;</code>
      * @return The parentQuestId.
      */
     @java.lang.Override
@@ -285,7 +289,7 @@ public final class QuestUpdateQuestTimeVarNotifyOuterClass {
           TimeVarMapDefaultEntryHolder.defaultEntry,
           1);
       if (parentQuestId_ != 0) {
-        output.writeUInt32(3, parentQuestId_);
+        output.writeUInt32(14, parentQuestId_);
       }
       unknownFields.writeTo(output);
     }
@@ -308,7 +312,7 @@ public final class QuestUpdateQuestTimeVarNotifyOuterClass {
       }
       if (parentQuestId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, parentQuestId_);
+          .computeUInt32Size(14, parentQuestId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -443,9 +447,13 @@ public final class QuestUpdateQuestTimeVarNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 456
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 482;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code QuestUpdateQuestTimeVarNotify}
@@ -753,7 +761,7 @@ public final class QuestUpdateQuestTimeVarNotifyOuterClass {
 
       private int parentQuestId_ ;
       /**
-       * <code>uint32 parent_quest_id = 3;</code>
+       * <code>uint32 parent_quest_id = 14;</code>
        * @return The parentQuestId.
        */
       @java.lang.Override
@@ -761,7 +769,7 @@ public final class QuestUpdateQuestTimeVarNotifyOuterClass {
         return parentQuestId_;
       }
       /**
-       * <code>uint32 parent_quest_id = 3;</code>
+       * <code>uint32 parent_quest_id = 14;</code>
        * @param value The parentQuestId to set.
        * @return This builder for chaining.
        */
@@ -772,7 +780,7 @@ public final class QuestUpdateQuestTimeVarNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 parent_quest_id = 3;</code>
+       * <code>uint32 parent_quest_id = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearParentQuestId() {
@@ -857,7 +865,7 @@ public final class QuestUpdateQuestTimeVarNotifyOuterClass {
       "\n\035QuestUpdateQuestTimeVarNotify\022D\n\014time_" +
       "var_map\030\001 \003(\0132..QuestUpdateQuestTimeVarN" +
       "otify.TimeVarMapEntry\022\027\n\017parent_quest_id" +
-      "\030\003 \001(\r\0321\n\017TimeVarMapEntry\022\013\n\003key\030\001 \001(\r\022\r" +
+      "\030\016 \001(\r\0321\n\017TimeVarMapEntry\022\013\n\003key\030\001 \001(\r\022\r" +
       "\n\005value\030\002 \001(\r:\0028\001B\033\n\031emu.grasscutter.net" +
       ".protob\006proto3"
     };

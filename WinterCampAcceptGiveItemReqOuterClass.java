@@ -19,17 +19,21 @@ public final class WinterCampAcceptGiveItemReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 uid = 11;</code>
+     * <code>uint32 uid = 4;</code>
      * @return The uid.
      */
     int getUid();
   }
   /**
    * <pre>
-   * CmdId: 8387
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 8516;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code WinterCampAcceptGiveItemReq}
@@ -76,7 +80,7 @@ public final class WinterCampAcceptGiveItemReqOuterClass {
             case 0:
               done = true;
               break;
-            case 88: {
+            case 32: {
 
               uid_ = input.readUInt32();
               break;
@@ -113,10 +117,10 @@ public final class WinterCampAcceptGiveItemReqOuterClass {
               emu.grasscutter.net.proto.WinterCampAcceptGiveItemReqOuterClass.WinterCampAcceptGiveItemReq.class, emu.grasscutter.net.proto.WinterCampAcceptGiveItemReqOuterClass.WinterCampAcceptGiveItemReq.Builder.class);
     }
 
-    public static final int UID_FIELD_NUMBER = 11;
+    public static final int UID_FIELD_NUMBER = 4;
     private int uid_;
     /**
-     * <code>uint32 uid = 11;</code>
+     * <code>uint32 uid = 4;</code>
      * @return The uid.
      */
     @java.lang.Override
@@ -139,7 +143,7 @@ public final class WinterCampAcceptGiveItemReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (uid_ != 0) {
-        output.writeUInt32(11, uid_);
+        output.writeUInt32(4, uid_);
       }
       unknownFields.writeTo(output);
     }
@@ -152,7 +156,7 @@ public final class WinterCampAcceptGiveItemReqOuterClass {
       size = 0;
       if (uid_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, uid_);
+          .computeUInt32Size(4, uid_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -281,10 +285,14 @@ public final class WinterCampAcceptGiveItemReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 8387
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 8516;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code WinterCampAcceptGiveItemReq}
@@ -435,7 +443,7 @@ public final class WinterCampAcceptGiveItemReqOuterClass {
 
       private int uid_ ;
       /**
-       * <code>uint32 uid = 11;</code>
+       * <code>uint32 uid = 4;</code>
        * @return The uid.
        */
       @java.lang.Override
@@ -443,7 +451,7 @@ public final class WinterCampAcceptGiveItemReqOuterClass {
         return uid_;
       }
       /**
-       * <code>uint32 uid = 11;</code>
+       * <code>uint32 uid = 4;</code>
        * @param value The uid to set.
        * @return This builder for chaining.
        */
@@ -454,7 +462,7 @@ public final class WinterCampAcceptGiveItemReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 uid = 11;</code>
+       * <code>uint32 uid = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearUid() {
@@ -531,7 +539,7 @@ public final class WinterCampAcceptGiveItemReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n!WinterCampAcceptGiveItemReq.proto\"*\n\033W" +
-      "interCampAcceptGiveItemReq\022\013\n\003uid\030\013 \001(\rB" +
+      "interCampAcceptGiveItemReq\022\013\n\003uid\030\004 \001(\rB" +
       "\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

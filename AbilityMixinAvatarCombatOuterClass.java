@@ -19,7 +19,7 @@ public final class AbilityMixinAvatarCombatOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_enter_combat = 9;</code>
+     * <code>bool is_enter_combat = 6;</code>
      * @return The isEnterCombat.
      */
     boolean getIsEnterCombat();
@@ -69,7 +69,7 @@ public final class AbilityMixinAvatarCombatOuterClass {
             case 0:
               done = true;
               break;
-            case 72: {
+            case 48: {
 
               isEnterCombat_ = input.readBool();
               break;
@@ -106,10 +106,10 @@ public final class AbilityMixinAvatarCombatOuterClass {
               emu.grasscutter.net.proto.AbilityMixinAvatarCombatOuterClass.AbilityMixinAvatarCombat.class, emu.grasscutter.net.proto.AbilityMixinAvatarCombatOuterClass.AbilityMixinAvatarCombat.Builder.class);
     }
 
-    public static final int IS_ENTER_COMBAT_FIELD_NUMBER = 9;
+    public static final int IS_ENTER_COMBAT_FIELD_NUMBER = 6;
     private boolean isEnterCombat_;
     /**
-     * <code>bool is_enter_combat = 9;</code>
+     * <code>bool is_enter_combat = 6;</code>
      * @return The isEnterCombat.
      */
     @java.lang.Override
@@ -132,7 +132,7 @@ public final class AbilityMixinAvatarCombatOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (isEnterCombat_ != false) {
-        output.writeBool(9, isEnterCombat_);
+        output.writeBool(6, isEnterCombat_);
       }
       unknownFields.writeTo(output);
     }
@@ -145,7 +145,7 @@ public final class AbilityMixinAvatarCombatOuterClass {
       size = 0;
       if (isEnterCombat_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(9, isEnterCombat_);
+          .computeBoolSize(6, isEnterCombat_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -422,7 +422,7 @@ public final class AbilityMixinAvatarCombatOuterClass {
 
       private boolean isEnterCombat_ ;
       /**
-       * <code>bool is_enter_combat = 9;</code>
+       * <code>bool is_enter_combat = 6;</code>
        * @return The isEnterCombat.
        */
       @java.lang.Override
@@ -430,7 +430,7 @@ public final class AbilityMixinAvatarCombatOuterClass {
         return isEnterCombat_;
       }
       /**
-       * <code>bool is_enter_combat = 9;</code>
+       * <code>bool is_enter_combat = 6;</code>
        * @param value The isEnterCombat to set.
        * @return This builder for chaining.
        */
@@ -441,7 +441,7 @@ public final class AbilityMixinAvatarCombatOuterClass {
         return this;
       }
       /**
-       * <code>bool is_enter_combat = 9;</code>
+       * <code>bool is_enter_combat = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsEnterCombat() {
@@ -519,7 +519,7 @@ public final class AbilityMixinAvatarCombatOuterClass {
     java.lang.String[] descriptorData = {
       "\n\036AbilityMixinAvatarCombat.proto\"3\n\030Abil" +
       "ityMixinAvatarCombat\022\027\n\017is_enter_combat\030" +
-      "\t \001(\010B\033\n\031emu.grasscutter.net.protob\006prot" +
+      "\006 \001(\010B\033\n\031emu.grasscutter.net.protob\006prot" +
       "o3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

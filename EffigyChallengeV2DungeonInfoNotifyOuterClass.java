@@ -19,28 +19,32 @@ public final class EffigyChallengeV2DungeonInfoNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 challenge_mode_difficulty = 2;</code>
+     * <code>uint32 challenge_mode_difficulty = 13;</code>
      * @return The challengeModeDifficulty.
      */
     int getChallengeModeDifficulty();
 
     /**
-     * <code>uint32 skill_no = 4;</code>
+     * <code>uint32 skill_no = 15;</code>
      * @return The skillNo.
      */
     int getSkillNo();
 
     /**
-     * <code>uint32 level_id = 13;</code>
+     * <code>uint32 level_id = 2;</code>
      * @return The levelId.
      */
     int getLevelId();
   }
   /**
    * <pre>
-   * CmdId: 22835
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 24761;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code EffigyChallengeV2DungeonInfoNotify}
@@ -89,17 +93,17 @@ public final class EffigyChallengeV2DungeonInfoNotifyOuterClass {
               break;
             case 16: {
 
-              challengeModeDifficulty_ = input.readUInt32();
-              break;
-            }
-            case 32: {
-
-              skillNo_ = input.readUInt32();
+              levelId_ = input.readUInt32();
               break;
             }
             case 104: {
 
-              levelId_ = input.readUInt32();
+              challengeModeDifficulty_ = input.readUInt32();
+              break;
+            }
+            case 120: {
+
+              skillNo_ = input.readUInt32();
               break;
             }
             default: {
@@ -134,10 +138,10 @@ public final class EffigyChallengeV2DungeonInfoNotifyOuterClass {
               emu.grasscutter.net.proto.EffigyChallengeV2DungeonInfoNotifyOuterClass.EffigyChallengeV2DungeonInfoNotify.class, emu.grasscutter.net.proto.EffigyChallengeV2DungeonInfoNotifyOuterClass.EffigyChallengeV2DungeonInfoNotify.Builder.class);
     }
 
-    public static final int CHALLENGE_MODE_DIFFICULTY_FIELD_NUMBER = 2;
+    public static final int CHALLENGE_MODE_DIFFICULTY_FIELD_NUMBER = 13;
     private int challengeModeDifficulty_;
     /**
-     * <code>uint32 challenge_mode_difficulty = 2;</code>
+     * <code>uint32 challenge_mode_difficulty = 13;</code>
      * @return The challengeModeDifficulty.
      */
     @java.lang.Override
@@ -145,10 +149,10 @@ public final class EffigyChallengeV2DungeonInfoNotifyOuterClass {
       return challengeModeDifficulty_;
     }
 
-    public static final int SKILL_NO_FIELD_NUMBER = 4;
+    public static final int SKILL_NO_FIELD_NUMBER = 15;
     private int skillNo_;
     /**
-     * <code>uint32 skill_no = 4;</code>
+     * <code>uint32 skill_no = 15;</code>
      * @return The skillNo.
      */
     @java.lang.Override
@@ -156,10 +160,10 @@ public final class EffigyChallengeV2DungeonInfoNotifyOuterClass {
       return skillNo_;
     }
 
-    public static final int LEVEL_ID_FIELD_NUMBER = 13;
+    public static final int LEVEL_ID_FIELD_NUMBER = 2;
     private int levelId_;
     /**
-     * <code>uint32 level_id = 13;</code>
+     * <code>uint32 level_id = 2;</code>
      * @return The levelId.
      */
     @java.lang.Override
@@ -181,14 +185,14 @@ public final class EffigyChallengeV2DungeonInfoNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (levelId_ != 0) {
+        output.writeUInt32(2, levelId_);
+      }
       if (challengeModeDifficulty_ != 0) {
-        output.writeUInt32(2, challengeModeDifficulty_);
+        output.writeUInt32(13, challengeModeDifficulty_);
       }
       if (skillNo_ != 0) {
-        output.writeUInt32(4, skillNo_);
-      }
-      if (levelId_ != 0) {
-        output.writeUInt32(13, levelId_);
+        output.writeUInt32(15, skillNo_);
       }
       unknownFields.writeTo(output);
     }
@@ -199,17 +203,17 @@ public final class EffigyChallengeV2DungeonInfoNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (levelId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(2, levelId_);
+      }
       if (challengeModeDifficulty_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, challengeModeDifficulty_);
+          .computeUInt32Size(13, challengeModeDifficulty_);
       }
       if (skillNo_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, skillNo_);
-      }
-      if (levelId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, levelId_);
+          .computeUInt32Size(15, skillNo_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -346,9 +350,13 @@ public final class EffigyChallengeV2DungeonInfoNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 22835
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 24761;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code EffigyChallengeV2DungeonInfoNotify}
@@ -511,7 +519,7 @@ public final class EffigyChallengeV2DungeonInfoNotifyOuterClass {
 
       private int challengeModeDifficulty_ ;
       /**
-       * <code>uint32 challenge_mode_difficulty = 2;</code>
+       * <code>uint32 challenge_mode_difficulty = 13;</code>
        * @return The challengeModeDifficulty.
        */
       @java.lang.Override
@@ -519,7 +527,7 @@ public final class EffigyChallengeV2DungeonInfoNotifyOuterClass {
         return challengeModeDifficulty_;
       }
       /**
-       * <code>uint32 challenge_mode_difficulty = 2;</code>
+       * <code>uint32 challenge_mode_difficulty = 13;</code>
        * @param value The challengeModeDifficulty to set.
        * @return This builder for chaining.
        */
@@ -530,7 +538,7 @@ public final class EffigyChallengeV2DungeonInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 challenge_mode_difficulty = 2;</code>
+       * <code>uint32 challenge_mode_difficulty = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearChallengeModeDifficulty() {
@@ -542,7 +550,7 @@ public final class EffigyChallengeV2DungeonInfoNotifyOuterClass {
 
       private int skillNo_ ;
       /**
-       * <code>uint32 skill_no = 4;</code>
+       * <code>uint32 skill_no = 15;</code>
        * @return The skillNo.
        */
       @java.lang.Override
@@ -550,7 +558,7 @@ public final class EffigyChallengeV2DungeonInfoNotifyOuterClass {
         return skillNo_;
       }
       /**
-       * <code>uint32 skill_no = 4;</code>
+       * <code>uint32 skill_no = 15;</code>
        * @param value The skillNo to set.
        * @return This builder for chaining.
        */
@@ -561,7 +569,7 @@ public final class EffigyChallengeV2DungeonInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 skill_no = 4;</code>
+       * <code>uint32 skill_no = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearSkillNo() {
@@ -573,7 +581,7 @@ public final class EffigyChallengeV2DungeonInfoNotifyOuterClass {
 
       private int levelId_ ;
       /**
-       * <code>uint32 level_id = 13;</code>
+       * <code>uint32 level_id = 2;</code>
        * @return The levelId.
        */
       @java.lang.Override
@@ -581,7 +589,7 @@ public final class EffigyChallengeV2DungeonInfoNotifyOuterClass {
         return levelId_;
       }
       /**
-       * <code>uint32 level_id = 13;</code>
+       * <code>uint32 level_id = 2;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
        */
@@ -592,7 +600,7 @@ public final class EffigyChallengeV2DungeonInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 level_id = 13;</code>
+       * <code>uint32 level_id = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearLevelId() {
@@ -670,8 +678,8 @@ public final class EffigyChallengeV2DungeonInfoNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n(EffigyChallengeV2DungeonInfoNotify.pro" +
       "to\"k\n\"EffigyChallengeV2DungeonInfoNotify" +
-      "\022!\n\031challenge_mode_difficulty\030\002 \001(\r\022\020\n\010s" +
-      "kill_no\030\004 \001(\r\022\020\n\010level_id\030\r \001(\rB\033\n\031emu.g" +
+      "\022!\n\031challenge_mode_difficulty\030\r \001(\r\022\020\n\010s" +
+      "kill_no\030\017 \001(\r\022\020\n\010level_id\030\002 \001(\rB\033\n\031emu.g" +
       "rasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

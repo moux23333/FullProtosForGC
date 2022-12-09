@@ -19,34 +19,38 @@ public final class UpdateRedPointNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .RedPointData red_point_list = 12;</code>
+     * <code>repeated .RedPointData red_point_list = 10;</code>
      */
     java.util.List<emu.grasscutter.net.proto.RedPointDataOuterClass.RedPointData> 
         getRedPointListList();
     /**
-     * <code>repeated .RedPointData red_point_list = 12;</code>
+     * <code>repeated .RedPointData red_point_list = 10;</code>
      */
     emu.grasscutter.net.proto.RedPointDataOuterClass.RedPointData getRedPointList(int index);
     /**
-     * <code>repeated .RedPointData red_point_list = 12;</code>
+     * <code>repeated .RedPointData red_point_list = 10;</code>
      */
     int getRedPointListCount();
     /**
-     * <code>repeated .RedPointData red_point_list = 12;</code>
+     * <code>repeated .RedPointData red_point_list = 10;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.RedPointDataOuterClass.RedPointDataOrBuilder> 
         getRedPointListOrBuilderList();
     /**
-     * <code>repeated .RedPointData red_point_list = 12;</code>
+     * <code>repeated .RedPointData red_point_list = 10;</code>
      */
     emu.grasscutter.net.proto.RedPointDataOuterClass.RedPointDataOrBuilder getRedPointListOrBuilder(
         int index);
   }
   /**
    * <pre>
-   * CmdId: 93
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 7;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code UpdateRedPointNotify}
@@ -95,7 +99,7 @@ public final class UpdateRedPointNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 98: {
+            case 82: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 redPointList_ = new java.util.ArrayList<emu.grasscutter.net.proto.RedPointDataOuterClass.RedPointData>();
                 mutable_bitField0_ |= 0x00000001;
@@ -139,17 +143,17 @@ public final class UpdateRedPointNotifyOuterClass {
               emu.grasscutter.net.proto.UpdateRedPointNotifyOuterClass.UpdateRedPointNotify.class, emu.grasscutter.net.proto.UpdateRedPointNotifyOuterClass.UpdateRedPointNotify.Builder.class);
     }
 
-    public static final int RED_POINT_LIST_FIELD_NUMBER = 12;
+    public static final int RED_POINT_LIST_FIELD_NUMBER = 10;
     private java.util.List<emu.grasscutter.net.proto.RedPointDataOuterClass.RedPointData> redPointList_;
     /**
-     * <code>repeated .RedPointData red_point_list = 12;</code>
+     * <code>repeated .RedPointData red_point_list = 10;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.RedPointDataOuterClass.RedPointData> getRedPointListList() {
       return redPointList_;
     }
     /**
-     * <code>repeated .RedPointData red_point_list = 12;</code>
+     * <code>repeated .RedPointData red_point_list = 10;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.RedPointDataOuterClass.RedPointDataOrBuilder> 
@@ -157,21 +161,21 @@ public final class UpdateRedPointNotifyOuterClass {
       return redPointList_;
     }
     /**
-     * <code>repeated .RedPointData red_point_list = 12;</code>
+     * <code>repeated .RedPointData red_point_list = 10;</code>
      */
     @java.lang.Override
     public int getRedPointListCount() {
       return redPointList_.size();
     }
     /**
-     * <code>repeated .RedPointData red_point_list = 12;</code>
+     * <code>repeated .RedPointData red_point_list = 10;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.RedPointDataOuterClass.RedPointData getRedPointList(int index) {
       return redPointList_.get(index);
     }
     /**
-     * <code>repeated .RedPointData red_point_list = 12;</code>
+     * <code>repeated .RedPointData red_point_list = 10;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.RedPointDataOuterClass.RedPointDataOrBuilder getRedPointListOrBuilder(
@@ -194,7 +198,7 @@ public final class UpdateRedPointNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       for (int i = 0; i < redPointList_.size(); i++) {
-        output.writeMessage(12, redPointList_.get(i));
+        output.writeMessage(10, redPointList_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -207,7 +211,7 @@ public final class UpdateRedPointNotifyOuterClass {
       size = 0;
       for (int i = 0; i < redPointList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(12, redPointList_.get(i));
+          .computeMessageSize(10, redPointList_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -338,9 +342,13 @@ public final class UpdateRedPointNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 93
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 7;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code UpdateRedPointNotify}
@@ -540,7 +548,7 @@ public final class UpdateRedPointNotifyOuterClass {
           emu.grasscutter.net.proto.RedPointDataOuterClass.RedPointData, emu.grasscutter.net.proto.RedPointDataOuterClass.RedPointData.Builder, emu.grasscutter.net.proto.RedPointDataOuterClass.RedPointDataOrBuilder> redPointListBuilder_;
 
       /**
-       * <code>repeated .RedPointData red_point_list = 12;</code>
+       * <code>repeated .RedPointData red_point_list = 10;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.RedPointDataOuterClass.RedPointData> getRedPointListList() {
         if (redPointListBuilder_ == null) {
@@ -550,7 +558,7 @@ public final class UpdateRedPointNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .RedPointData red_point_list = 12;</code>
+       * <code>repeated .RedPointData red_point_list = 10;</code>
        */
       public int getRedPointListCount() {
         if (redPointListBuilder_ == null) {
@@ -560,7 +568,7 @@ public final class UpdateRedPointNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .RedPointData red_point_list = 12;</code>
+       * <code>repeated .RedPointData red_point_list = 10;</code>
        */
       public emu.grasscutter.net.proto.RedPointDataOuterClass.RedPointData getRedPointList(int index) {
         if (redPointListBuilder_ == null) {
@@ -570,7 +578,7 @@ public final class UpdateRedPointNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .RedPointData red_point_list = 12;</code>
+       * <code>repeated .RedPointData red_point_list = 10;</code>
        */
       public Builder setRedPointList(
           int index, emu.grasscutter.net.proto.RedPointDataOuterClass.RedPointData value) {
@@ -587,7 +595,7 @@ public final class UpdateRedPointNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .RedPointData red_point_list = 12;</code>
+       * <code>repeated .RedPointData red_point_list = 10;</code>
        */
       public Builder setRedPointList(
           int index, emu.grasscutter.net.proto.RedPointDataOuterClass.RedPointData.Builder builderForValue) {
@@ -601,7 +609,7 @@ public final class UpdateRedPointNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .RedPointData red_point_list = 12;</code>
+       * <code>repeated .RedPointData red_point_list = 10;</code>
        */
       public Builder addRedPointList(emu.grasscutter.net.proto.RedPointDataOuterClass.RedPointData value) {
         if (redPointListBuilder_ == null) {
@@ -617,7 +625,7 @@ public final class UpdateRedPointNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .RedPointData red_point_list = 12;</code>
+       * <code>repeated .RedPointData red_point_list = 10;</code>
        */
       public Builder addRedPointList(
           int index, emu.grasscutter.net.proto.RedPointDataOuterClass.RedPointData value) {
@@ -634,7 +642,7 @@ public final class UpdateRedPointNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .RedPointData red_point_list = 12;</code>
+       * <code>repeated .RedPointData red_point_list = 10;</code>
        */
       public Builder addRedPointList(
           emu.grasscutter.net.proto.RedPointDataOuterClass.RedPointData.Builder builderForValue) {
@@ -648,7 +656,7 @@ public final class UpdateRedPointNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .RedPointData red_point_list = 12;</code>
+       * <code>repeated .RedPointData red_point_list = 10;</code>
        */
       public Builder addRedPointList(
           int index, emu.grasscutter.net.proto.RedPointDataOuterClass.RedPointData.Builder builderForValue) {
@@ -662,7 +670,7 @@ public final class UpdateRedPointNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .RedPointData red_point_list = 12;</code>
+       * <code>repeated .RedPointData red_point_list = 10;</code>
        */
       public Builder addAllRedPointList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.RedPointDataOuterClass.RedPointData> values) {
@@ -677,7 +685,7 @@ public final class UpdateRedPointNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .RedPointData red_point_list = 12;</code>
+       * <code>repeated .RedPointData red_point_list = 10;</code>
        */
       public Builder clearRedPointList() {
         if (redPointListBuilder_ == null) {
@@ -690,7 +698,7 @@ public final class UpdateRedPointNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .RedPointData red_point_list = 12;</code>
+       * <code>repeated .RedPointData red_point_list = 10;</code>
        */
       public Builder removeRedPointList(int index) {
         if (redPointListBuilder_ == null) {
@@ -703,14 +711,14 @@ public final class UpdateRedPointNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .RedPointData red_point_list = 12;</code>
+       * <code>repeated .RedPointData red_point_list = 10;</code>
        */
       public emu.grasscutter.net.proto.RedPointDataOuterClass.RedPointData.Builder getRedPointListBuilder(
           int index) {
         return getRedPointListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .RedPointData red_point_list = 12;</code>
+       * <code>repeated .RedPointData red_point_list = 10;</code>
        */
       public emu.grasscutter.net.proto.RedPointDataOuterClass.RedPointDataOrBuilder getRedPointListOrBuilder(
           int index) {
@@ -720,7 +728,7 @@ public final class UpdateRedPointNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .RedPointData red_point_list = 12;</code>
+       * <code>repeated .RedPointData red_point_list = 10;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.RedPointDataOuterClass.RedPointDataOrBuilder> 
            getRedPointListOrBuilderList() {
@@ -731,14 +739,14 @@ public final class UpdateRedPointNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .RedPointData red_point_list = 12;</code>
+       * <code>repeated .RedPointData red_point_list = 10;</code>
        */
       public emu.grasscutter.net.proto.RedPointDataOuterClass.RedPointData.Builder addRedPointListBuilder() {
         return getRedPointListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.RedPointDataOuterClass.RedPointData.getDefaultInstance());
       }
       /**
-       * <code>repeated .RedPointData red_point_list = 12;</code>
+       * <code>repeated .RedPointData red_point_list = 10;</code>
        */
       public emu.grasscutter.net.proto.RedPointDataOuterClass.RedPointData.Builder addRedPointListBuilder(
           int index) {
@@ -746,7 +754,7 @@ public final class UpdateRedPointNotifyOuterClass {
             index, emu.grasscutter.net.proto.RedPointDataOuterClass.RedPointData.getDefaultInstance());
       }
       /**
-       * <code>repeated .RedPointData red_point_list = 12;</code>
+       * <code>repeated .RedPointData red_point_list = 10;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.RedPointDataOuterClass.RedPointData.Builder> 
            getRedPointListBuilderList() {
@@ -835,7 +843,7 @@ public final class UpdateRedPointNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n\032UpdateRedPointNotify.proto\032\022RedPointDa" +
       "ta.proto\"=\n\024UpdateRedPointNotify\022%\n\016red_" +
-      "point_list\030\014 \003(\0132\r.RedPointDataB\033\n\031emu.g" +
+      "point_list\030\n \003(\0132\r.RedPointDataB\033\n\031emu.g" +
       "rasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

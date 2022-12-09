@@ -19,34 +19,38 @@ public final class DigActivityMarkPointChangeNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .DigMarkPoint dig_mark_point_list = 11;</code>
+     * <code>repeated .DigMarkPoint dig_mark_point_list = 1;</code>
      */
     java.util.List<emu.grasscutter.net.proto.DigMarkPointOuterClass.DigMarkPoint> 
         getDigMarkPointListList();
     /**
-     * <code>repeated .DigMarkPoint dig_mark_point_list = 11;</code>
+     * <code>repeated .DigMarkPoint dig_mark_point_list = 1;</code>
      */
     emu.grasscutter.net.proto.DigMarkPointOuterClass.DigMarkPoint getDigMarkPointList(int index);
     /**
-     * <code>repeated .DigMarkPoint dig_mark_point_list = 11;</code>
+     * <code>repeated .DigMarkPoint dig_mark_point_list = 1;</code>
      */
     int getDigMarkPointListCount();
     /**
-     * <code>repeated .DigMarkPoint dig_mark_point_list = 11;</code>
+     * <code>repeated .DigMarkPoint dig_mark_point_list = 1;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.DigMarkPointOuterClass.DigMarkPointOrBuilder> 
         getDigMarkPointListOrBuilderList();
     /**
-     * <code>repeated .DigMarkPoint dig_mark_point_list = 11;</code>
+     * <code>repeated .DigMarkPoint dig_mark_point_list = 1;</code>
      */
     emu.grasscutter.net.proto.DigMarkPointOuterClass.DigMarkPointOrBuilder getDigMarkPointListOrBuilder(
         int index);
   }
   /**
    * <pre>
-   * CmdId: 8109
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 8871;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code DigActivityMarkPointChangeNotify}
@@ -95,7 +99,7 @@ public final class DigActivityMarkPointChangeNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 90: {
+            case 10: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 digMarkPointList_ = new java.util.ArrayList<emu.grasscutter.net.proto.DigMarkPointOuterClass.DigMarkPoint>();
                 mutable_bitField0_ |= 0x00000001;
@@ -139,17 +143,17 @@ public final class DigActivityMarkPointChangeNotifyOuterClass {
               emu.grasscutter.net.proto.DigActivityMarkPointChangeNotifyOuterClass.DigActivityMarkPointChangeNotify.class, emu.grasscutter.net.proto.DigActivityMarkPointChangeNotifyOuterClass.DigActivityMarkPointChangeNotify.Builder.class);
     }
 
-    public static final int DIG_MARK_POINT_LIST_FIELD_NUMBER = 11;
+    public static final int DIG_MARK_POINT_LIST_FIELD_NUMBER = 1;
     private java.util.List<emu.grasscutter.net.proto.DigMarkPointOuterClass.DigMarkPoint> digMarkPointList_;
     /**
-     * <code>repeated .DigMarkPoint dig_mark_point_list = 11;</code>
+     * <code>repeated .DigMarkPoint dig_mark_point_list = 1;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.DigMarkPointOuterClass.DigMarkPoint> getDigMarkPointListList() {
       return digMarkPointList_;
     }
     /**
-     * <code>repeated .DigMarkPoint dig_mark_point_list = 11;</code>
+     * <code>repeated .DigMarkPoint dig_mark_point_list = 1;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.DigMarkPointOuterClass.DigMarkPointOrBuilder> 
@@ -157,21 +161,21 @@ public final class DigActivityMarkPointChangeNotifyOuterClass {
       return digMarkPointList_;
     }
     /**
-     * <code>repeated .DigMarkPoint dig_mark_point_list = 11;</code>
+     * <code>repeated .DigMarkPoint dig_mark_point_list = 1;</code>
      */
     @java.lang.Override
     public int getDigMarkPointListCount() {
       return digMarkPointList_.size();
     }
     /**
-     * <code>repeated .DigMarkPoint dig_mark_point_list = 11;</code>
+     * <code>repeated .DigMarkPoint dig_mark_point_list = 1;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.DigMarkPointOuterClass.DigMarkPoint getDigMarkPointList(int index) {
       return digMarkPointList_.get(index);
     }
     /**
-     * <code>repeated .DigMarkPoint dig_mark_point_list = 11;</code>
+     * <code>repeated .DigMarkPoint dig_mark_point_list = 1;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.DigMarkPointOuterClass.DigMarkPointOrBuilder getDigMarkPointListOrBuilder(
@@ -194,7 +198,7 @@ public final class DigActivityMarkPointChangeNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       for (int i = 0; i < digMarkPointList_.size(); i++) {
-        output.writeMessage(11, digMarkPointList_.get(i));
+        output.writeMessage(1, digMarkPointList_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -207,7 +211,7 @@ public final class DigActivityMarkPointChangeNotifyOuterClass {
       size = 0;
       for (int i = 0; i < digMarkPointList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(11, digMarkPointList_.get(i));
+          .computeMessageSize(1, digMarkPointList_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -338,9 +342,13 @@ public final class DigActivityMarkPointChangeNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 8109
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 8871;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code DigActivityMarkPointChangeNotify}
@@ -540,7 +548,7 @@ public final class DigActivityMarkPointChangeNotifyOuterClass {
           emu.grasscutter.net.proto.DigMarkPointOuterClass.DigMarkPoint, emu.grasscutter.net.proto.DigMarkPointOuterClass.DigMarkPoint.Builder, emu.grasscutter.net.proto.DigMarkPointOuterClass.DigMarkPointOrBuilder> digMarkPointListBuilder_;
 
       /**
-       * <code>repeated .DigMarkPoint dig_mark_point_list = 11;</code>
+       * <code>repeated .DigMarkPoint dig_mark_point_list = 1;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.DigMarkPointOuterClass.DigMarkPoint> getDigMarkPointListList() {
         if (digMarkPointListBuilder_ == null) {
@@ -550,7 +558,7 @@ public final class DigActivityMarkPointChangeNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .DigMarkPoint dig_mark_point_list = 11;</code>
+       * <code>repeated .DigMarkPoint dig_mark_point_list = 1;</code>
        */
       public int getDigMarkPointListCount() {
         if (digMarkPointListBuilder_ == null) {
@@ -560,7 +568,7 @@ public final class DigActivityMarkPointChangeNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .DigMarkPoint dig_mark_point_list = 11;</code>
+       * <code>repeated .DigMarkPoint dig_mark_point_list = 1;</code>
        */
       public emu.grasscutter.net.proto.DigMarkPointOuterClass.DigMarkPoint getDigMarkPointList(int index) {
         if (digMarkPointListBuilder_ == null) {
@@ -570,7 +578,7 @@ public final class DigActivityMarkPointChangeNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .DigMarkPoint dig_mark_point_list = 11;</code>
+       * <code>repeated .DigMarkPoint dig_mark_point_list = 1;</code>
        */
       public Builder setDigMarkPointList(
           int index, emu.grasscutter.net.proto.DigMarkPointOuterClass.DigMarkPoint value) {
@@ -587,7 +595,7 @@ public final class DigActivityMarkPointChangeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .DigMarkPoint dig_mark_point_list = 11;</code>
+       * <code>repeated .DigMarkPoint dig_mark_point_list = 1;</code>
        */
       public Builder setDigMarkPointList(
           int index, emu.grasscutter.net.proto.DigMarkPointOuterClass.DigMarkPoint.Builder builderForValue) {
@@ -601,7 +609,7 @@ public final class DigActivityMarkPointChangeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .DigMarkPoint dig_mark_point_list = 11;</code>
+       * <code>repeated .DigMarkPoint dig_mark_point_list = 1;</code>
        */
       public Builder addDigMarkPointList(emu.grasscutter.net.proto.DigMarkPointOuterClass.DigMarkPoint value) {
         if (digMarkPointListBuilder_ == null) {
@@ -617,7 +625,7 @@ public final class DigActivityMarkPointChangeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .DigMarkPoint dig_mark_point_list = 11;</code>
+       * <code>repeated .DigMarkPoint dig_mark_point_list = 1;</code>
        */
       public Builder addDigMarkPointList(
           int index, emu.grasscutter.net.proto.DigMarkPointOuterClass.DigMarkPoint value) {
@@ -634,7 +642,7 @@ public final class DigActivityMarkPointChangeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .DigMarkPoint dig_mark_point_list = 11;</code>
+       * <code>repeated .DigMarkPoint dig_mark_point_list = 1;</code>
        */
       public Builder addDigMarkPointList(
           emu.grasscutter.net.proto.DigMarkPointOuterClass.DigMarkPoint.Builder builderForValue) {
@@ -648,7 +656,7 @@ public final class DigActivityMarkPointChangeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .DigMarkPoint dig_mark_point_list = 11;</code>
+       * <code>repeated .DigMarkPoint dig_mark_point_list = 1;</code>
        */
       public Builder addDigMarkPointList(
           int index, emu.grasscutter.net.proto.DigMarkPointOuterClass.DigMarkPoint.Builder builderForValue) {
@@ -662,7 +670,7 @@ public final class DigActivityMarkPointChangeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .DigMarkPoint dig_mark_point_list = 11;</code>
+       * <code>repeated .DigMarkPoint dig_mark_point_list = 1;</code>
        */
       public Builder addAllDigMarkPointList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.DigMarkPointOuterClass.DigMarkPoint> values) {
@@ -677,7 +685,7 @@ public final class DigActivityMarkPointChangeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .DigMarkPoint dig_mark_point_list = 11;</code>
+       * <code>repeated .DigMarkPoint dig_mark_point_list = 1;</code>
        */
       public Builder clearDigMarkPointList() {
         if (digMarkPointListBuilder_ == null) {
@@ -690,7 +698,7 @@ public final class DigActivityMarkPointChangeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .DigMarkPoint dig_mark_point_list = 11;</code>
+       * <code>repeated .DigMarkPoint dig_mark_point_list = 1;</code>
        */
       public Builder removeDigMarkPointList(int index) {
         if (digMarkPointListBuilder_ == null) {
@@ -703,14 +711,14 @@ public final class DigActivityMarkPointChangeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .DigMarkPoint dig_mark_point_list = 11;</code>
+       * <code>repeated .DigMarkPoint dig_mark_point_list = 1;</code>
        */
       public emu.grasscutter.net.proto.DigMarkPointOuterClass.DigMarkPoint.Builder getDigMarkPointListBuilder(
           int index) {
         return getDigMarkPointListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .DigMarkPoint dig_mark_point_list = 11;</code>
+       * <code>repeated .DigMarkPoint dig_mark_point_list = 1;</code>
        */
       public emu.grasscutter.net.proto.DigMarkPointOuterClass.DigMarkPointOrBuilder getDigMarkPointListOrBuilder(
           int index) {
@@ -720,7 +728,7 @@ public final class DigActivityMarkPointChangeNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .DigMarkPoint dig_mark_point_list = 11;</code>
+       * <code>repeated .DigMarkPoint dig_mark_point_list = 1;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.DigMarkPointOuterClass.DigMarkPointOrBuilder> 
            getDigMarkPointListOrBuilderList() {
@@ -731,14 +739,14 @@ public final class DigActivityMarkPointChangeNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .DigMarkPoint dig_mark_point_list = 11;</code>
+       * <code>repeated .DigMarkPoint dig_mark_point_list = 1;</code>
        */
       public emu.grasscutter.net.proto.DigMarkPointOuterClass.DigMarkPoint.Builder addDigMarkPointListBuilder() {
         return getDigMarkPointListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.DigMarkPointOuterClass.DigMarkPoint.getDefaultInstance());
       }
       /**
-       * <code>repeated .DigMarkPoint dig_mark_point_list = 11;</code>
+       * <code>repeated .DigMarkPoint dig_mark_point_list = 1;</code>
        */
       public emu.grasscutter.net.proto.DigMarkPointOuterClass.DigMarkPoint.Builder addDigMarkPointListBuilder(
           int index) {
@@ -746,7 +754,7 @@ public final class DigActivityMarkPointChangeNotifyOuterClass {
             index, emu.grasscutter.net.proto.DigMarkPointOuterClass.DigMarkPoint.getDefaultInstance());
       }
       /**
-       * <code>repeated .DigMarkPoint dig_mark_point_list = 11;</code>
+       * <code>repeated .DigMarkPoint dig_mark_point_list = 1;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.DigMarkPointOuterClass.DigMarkPoint.Builder> 
            getDigMarkPointListBuilderList() {
@@ -836,7 +844,7 @@ public final class DigActivityMarkPointChangeNotifyOuterClass {
       "\n&DigActivityMarkPointChangeNotify.proto" +
       "\032\022DigMarkPoint.proto\"N\n DigActivityMarkP" +
       "ointChangeNotify\022*\n\023dig_mark_point_list\030" +
-      "\013 \003(\0132\r.DigMarkPointB\033\n\031emu.grasscutter." +
+      "\001 \003(\0132\r.DigMarkPointB\033\n\031emu.grasscutter." +
       "net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

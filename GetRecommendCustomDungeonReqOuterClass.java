@@ -19,17 +19,21 @@ public final class GetRecommendCustomDungeonReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_refresh = 13;</code>
+     * <code>bool is_refresh = 6;</code>
      * @return The isRefresh.
      */
     boolean getIsRefresh();
   }
   /**
    * <pre>
-   * CmdId: 6235
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 6221;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code GetRecommendCustomDungeonReq}
@@ -76,7 +80,7 @@ public final class GetRecommendCustomDungeonReqOuterClass {
             case 0:
               done = true;
               break;
-            case 104: {
+            case 48: {
 
               isRefresh_ = input.readBool();
               break;
@@ -113,10 +117,10 @@ public final class GetRecommendCustomDungeonReqOuterClass {
               emu.grasscutter.net.proto.GetRecommendCustomDungeonReqOuterClass.GetRecommendCustomDungeonReq.class, emu.grasscutter.net.proto.GetRecommendCustomDungeonReqOuterClass.GetRecommendCustomDungeonReq.Builder.class);
     }
 
-    public static final int IS_REFRESH_FIELD_NUMBER = 13;
+    public static final int IS_REFRESH_FIELD_NUMBER = 6;
     private boolean isRefresh_;
     /**
-     * <code>bool is_refresh = 13;</code>
+     * <code>bool is_refresh = 6;</code>
      * @return The isRefresh.
      */
     @java.lang.Override
@@ -139,7 +143,7 @@ public final class GetRecommendCustomDungeonReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (isRefresh_ != false) {
-        output.writeBool(13, isRefresh_);
+        output.writeBool(6, isRefresh_);
       }
       unknownFields.writeTo(output);
     }
@@ -152,7 +156,7 @@ public final class GetRecommendCustomDungeonReqOuterClass {
       size = 0;
       if (isRefresh_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(13, isRefresh_);
+          .computeBoolSize(6, isRefresh_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -282,10 +286,14 @@ public final class GetRecommendCustomDungeonReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 6235
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 6221;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code GetRecommendCustomDungeonReq}
@@ -436,7 +444,7 @@ public final class GetRecommendCustomDungeonReqOuterClass {
 
       private boolean isRefresh_ ;
       /**
-       * <code>bool is_refresh = 13;</code>
+       * <code>bool is_refresh = 6;</code>
        * @return The isRefresh.
        */
       @java.lang.Override
@@ -444,7 +452,7 @@ public final class GetRecommendCustomDungeonReqOuterClass {
         return isRefresh_;
       }
       /**
-       * <code>bool is_refresh = 13;</code>
+       * <code>bool is_refresh = 6;</code>
        * @param value The isRefresh to set.
        * @return This builder for chaining.
        */
@@ -455,7 +463,7 @@ public final class GetRecommendCustomDungeonReqOuterClass {
         return this;
       }
       /**
-       * <code>bool is_refresh = 13;</code>
+       * <code>bool is_refresh = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsRefresh() {
@@ -533,7 +541,7 @@ public final class GetRecommendCustomDungeonReqOuterClass {
     java.lang.String[] descriptorData = {
       "\n\"GetRecommendCustomDungeonReq.proto\"2\n\034" +
       "GetRecommendCustomDungeonReq\022\022\n\nis_refre" +
-      "sh\030\r \001(\010B\033\n\031emu.grasscutter.net.protob\006p" +
+      "sh\030\006 \001(\010B\033\n\031emu.grasscutter.net.protob\006p" +
       "roto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

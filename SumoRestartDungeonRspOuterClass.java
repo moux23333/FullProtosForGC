@@ -19,28 +19,32 @@ public final class SumoRestartDungeonRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 11;</code>
+     * <code>int32 retcode = 5;</code>
      * @return The retcode.
      */
     int getRetcode();
 
     /**
-     * <code>uint32 dungeon_id = 4;</code>
-     * @return The dungeonId.
-     */
-    int getDungeonId();
-
-    /**
-     * <code>uint32 point_id = 12;</code>
+     * <code>uint32 point_id = 8;</code>
      * @return The pointId.
      */
     int getPointId();
+
+    /**
+     * <code>uint32 dungeon_id = 12;</code>
+     * @return The dungeonId.
+     */
+    int getDungeonId();
   }
   /**
    * <pre>
-   * CmdId: 8214
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 8276;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code SumoRestartDungeonRsp}
@@ -87,19 +91,19 @@ public final class SumoRestartDungeonRspOuterClass {
             case 0:
               done = true;
               break;
-            case 32: {
-
-              dungeonId_ = input.readUInt32();
-              break;
-            }
-            case 88: {
+            case 40: {
 
               retcode_ = input.readInt32();
               break;
             }
-            case 96: {
+            case 64: {
 
               pointId_ = input.readUInt32();
+              break;
+            }
+            case 96: {
+
+              dungeonId_ = input.readUInt32();
               break;
             }
             default: {
@@ -134,10 +138,10 @@ public final class SumoRestartDungeonRspOuterClass {
               emu.grasscutter.net.proto.SumoRestartDungeonRspOuterClass.SumoRestartDungeonRsp.class, emu.grasscutter.net.proto.SumoRestartDungeonRspOuterClass.SumoRestartDungeonRsp.Builder.class);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 11;
+    public static final int RETCODE_FIELD_NUMBER = 5;
     private int retcode_;
     /**
-     * <code>int32 retcode = 11;</code>
+     * <code>int32 retcode = 5;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -145,26 +149,26 @@ public final class SumoRestartDungeonRspOuterClass {
       return retcode_;
     }
 
-    public static final int DUNGEON_ID_FIELD_NUMBER = 4;
-    private int dungeonId_;
-    /**
-     * <code>uint32 dungeon_id = 4;</code>
-     * @return The dungeonId.
-     */
-    @java.lang.Override
-    public int getDungeonId() {
-      return dungeonId_;
-    }
-
-    public static final int POINT_ID_FIELD_NUMBER = 12;
+    public static final int POINT_ID_FIELD_NUMBER = 8;
     private int pointId_;
     /**
-     * <code>uint32 point_id = 12;</code>
+     * <code>uint32 point_id = 8;</code>
      * @return The pointId.
      */
     @java.lang.Override
     public int getPointId() {
       return pointId_;
+    }
+
+    public static final int DUNGEON_ID_FIELD_NUMBER = 12;
+    private int dungeonId_;
+    /**
+     * <code>uint32 dungeon_id = 12;</code>
+     * @return The dungeonId.
+     */
+    @java.lang.Override
+    public int getDungeonId() {
+      return dungeonId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -181,14 +185,14 @@ public final class SumoRestartDungeonRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (dungeonId_ != 0) {
-        output.writeUInt32(4, dungeonId_);
-      }
       if (retcode_ != 0) {
-        output.writeInt32(11, retcode_);
+        output.writeInt32(5, retcode_);
       }
       if (pointId_ != 0) {
-        output.writeUInt32(12, pointId_);
+        output.writeUInt32(8, pointId_);
+      }
+      if (dungeonId_ != 0) {
+        output.writeUInt32(12, dungeonId_);
       }
       unknownFields.writeTo(output);
     }
@@ -199,17 +203,17 @@ public final class SumoRestartDungeonRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (dungeonId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, dungeonId_);
-      }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(11, retcode_);
+          .computeInt32Size(5, retcode_);
       }
       if (pointId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, pointId_);
+          .computeUInt32Size(8, pointId_);
+      }
+      if (dungeonId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(12, dungeonId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -228,10 +232,10 @@ public final class SumoRestartDungeonRspOuterClass {
 
       if (getRetcode()
           != other.getRetcode()) return false;
-      if (getDungeonId()
-          != other.getDungeonId()) return false;
       if (getPointId()
           != other.getPointId()) return false;
+      if (getDungeonId()
+          != other.getDungeonId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -245,10 +249,10 @@ public final class SumoRestartDungeonRspOuterClass {
       hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + RETCODE_FIELD_NUMBER;
       hash = (53 * hash) + getRetcode();
-      hash = (37 * hash) + DUNGEON_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getDungeonId();
       hash = (37 * hash) + POINT_ID_FIELD_NUMBER;
       hash = (53 * hash) + getPointId();
+      hash = (37 * hash) + DUNGEON_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getDungeonId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -346,9 +350,13 @@ public final class SumoRestartDungeonRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 8214
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 8276;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code SumoRestartDungeonRsp}
@@ -390,9 +398,9 @@ public final class SumoRestartDungeonRspOuterClass {
         super.clear();
         retcode_ = 0;
 
-        dungeonId_ = 0;
-
         pointId_ = 0;
+
+        dungeonId_ = 0;
 
         return this;
       }
@@ -421,8 +429,8 @@ public final class SumoRestartDungeonRspOuterClass {
       public emu.grasscutter.net.proto.SumoRestartDungeonRspOuterClass.SumoRestartDungeonRsp buildPartial() {
         emu.grasscutter.net.proto.SumoRestartDungeonRspOuterClass.SumoRestartDungeonRsp result = new emu.grasscutter.net.proto.SumoRestartDungeonRspOuterClass.SumoRestartDungeonRsp(this);
         result.retcode_ = retcode_;
-        result.dungeonId_ = dungeonId_;
         result.pointId_ = pointId_;
+        result.dungeonId_ = dungeonId_;
         onBuilt();
         return result;
       }
@@ -474,11 +482,11 @@ public final class SumoRestartDungeonRspOuterClass {
         if (other.getRetcode() != 0) {
           setRetcode(other.getRetcode());
         }
-        if (other.getDungeonId() != 0) {
-          setDungeonId(other.getDungeonId());
-        }
         if (other.getPointId() != 0) {
           setPointId(other.getPointId());
+        }
+        if (other.getDungeonId() != 0) {
+          setDungeonId(other.getDungeonId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -511,7 +519,7 @@ public final class SumoRestartDungeonRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 11;</code>
+       * <code>int32 retcode = 5;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -519,7 +527,7 @@ public final class SumoRestartDungeonRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 11;</code>
+       * <code>int32 retcode = 5;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -530,7 +538,7 @@ public final class SumoRestartDungeonRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 11;</code>
+       * <code>int32 retcode = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -540,40 +548,9 @@ public final class SumoRestartDungeonRspOuterClass {
         return this;
       }
 
-      private int dungeonId_ ;
-      /**
-       * <code>uint32 dungeon_id = 4;</code>
-       * @return The dungeonId.
-       */
-      @java.lang.Override
-      public int getDungeonId() {
-        return dungeonId_;
-      }
-      /**
-       * <code>uint32 dungeon_id = 4;</code>
-       * @param value The dungeonId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setDungeonId(int value) {
-        
-        dungeonId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 dungeon_id = 4;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearDungeonId() {
-        
-        dungeonId_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int pointId_ ;
       /**
-       * <code>uint32 point_id = 12;</code>
+       * <code>uint32 point_id = 8;</code>
        * @return The pointId.
        */
       @java.lang.Override
@@ -581,7 +558,7 @@ public final class SumoRestartDungeonRspOuterClass {
         return pointId_;
       }
       /**
-       * <code>uint32 point_id = 12;</code>
+       * <code>uint32 point_id = 8;</code>
        * @param value The pointId to set.
        * @return This builder for chaining.
        */
@@ -592,12 +569,43 @@ public final class SumoRestartDungeonRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 point_id = 12;</code>
+       * <code>uint32 point_id = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearPointId() {
         
         pointId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int dungeonId_ ;
+      /**
+       * <code>uint32 dungeon_id = 12;</code>
+       * @return The dungeonId.
+       */
+      @java.lang.Override
+      public int getDungeonId() {
+        return dungeonId_;
+      }
+      /**
+       * <code>uint32 dungeon_id = 12;</code>
+       * @param value The dungeonId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setDungeonId(int value) {
+        
+        dungeonId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 dungeon_id = 12;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearDungeonId() {
+        
+        dungeonId_ = 0;
         onChanged();
         return this;
       }
@@ -669,8 +677,8 @@ public final class SumoRestartDungeonRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\033SumoRestartDungeonRsp.proto\"N\n\025SumoRes" +
-      "tartDungeonRsp\022\017\n\007retcode\030\013 \001(\005\022\022\n\ndunge" +
-      "on_id\030\004 \001(\r\022\020\n\010point_id\030\014 \001(\rB\033\n\031emu.gra" +
+      "tartDungeonRsp\022\017\n\007retcode\030\005 \001(\005\022\020\n\010point" +
+      "_id\030\010 \001(\r\022\022\n\ndungeon_id\030\014 \001(\rB\033\n\031emu.gra" +
       "sscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -682,7 +690,7 @@ public final class SumoRestartDungeonRspOuterClass {
     internal_static_SumoRestartDungeonRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SumoRestartDungeonRsp_descriptor,
-        new java.lang.String[] { "Retcode", "DungeonId", "PointId", });
+        new java.lang.String[] { "Retcode", "PointId", "DungeonId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

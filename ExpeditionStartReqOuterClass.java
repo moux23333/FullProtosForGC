@@ -19,46 +19,50 @@ public final class ExpeditionStartReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated uint32 avatar_id_list = 1;</code>
+     * <code>uint32 Unk3300_AIEJKADFLKG = 10;</code>
+     * @return The unk3300AIEJKADFLKG.
+     */
+    int getUnk3300AIEJKADFLKG();
+
+    /**
+     * <code>uint32 path_id = 3;</code>
+     * @return The pathId.
+     */
+    int getPathId();
+
+    /**
+     * <code>uint32 Unk3300_AFGPGIIGAKA = 14;</code>
+     * @return The unk3300AFGPGIIGAKA.
+     */
+    int getUnk3300AFGPGIIGAKA();
+
+    /**
+     * <code>repeated uint32 avatar_id_list = 7;</code>
      * @return A list containing the avatarIdList.
      */
     java.util.List<java.lang.Integer> getAvatarIdListList();
     /**
-     * <code>repeated uint32 avatar_id_list = 1;</code>
+     * <code>repeated uint32 avatar_id_list = 7;</code>
      * @return The count of avatarIdList.
      */
     int getAvatarIdListCount();
     /**
-     * <code>repeated uint32 avatar_id_list = 1;</code>
+     * <code>repeated uint32 avatar_id_list = 7;</code>
      * @param index The index of the element to return.
      * @return The avatarIdList at the given index.
      */
     int getAvatarIdList(int index);
-
-    /**
-     * <code>uint32 assist_uid = 5;</code>
-     * @return The assistUid.
-     */
-    int getAssistUid();
-
-    /**
-     * <code>uint32 assist_avatar_id = 8;</code>
-     * @return The assistAvatarId.
-     */
-    int getAssistAvatarId();
-
-    /**
-     * <code>uint32 path_id = 7;</code>
-     * @return The pathId.
-     */
-    int getPathId();
   }
   /**
    * <pre>
-   * CmdId: 2087
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 2016;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code ExpeditionStartReq}
@@ -107,7 +111,12 @@ public final class ExpeditionStartReqOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
+            case 24: {
+
+              pathId_ = input.readUInt32();
+              break;
+            }
+            case 56: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 avatarIdList_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
@@ -115,7 +124,7 @@ public final class ExpeditionStartReqOuterClass {
               avatarIdList_.addInt(input.readUInt32());
               break;
             }
-            case 10: {
+            case 58: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -128,19 +137,14 @@ public final class ExpeditionStartReqOuterClass {
               input.popLimit(limit);
               break;
             }
-            case 40: {
+            case 80: {
 
-              assistUid_ = input.readUInt32();
+              unk3300AIEJKADFLKG_ = input.readUInt32();
               break;
             }
-            case 56: {
+            case 112: {
 
-              pathId_ = input.readUInt32();
-              break;
-            }
-            case 64: {
-
-              assistAvatarId_ = input.readUInt32();
+              unk3300AFGPGIIGAKA_ = input.readUInt32();
               break;
             }
             default: {
@@ -178,10 +182,43 @@ public final class ExpeditionStartReqOuterClass {
               emu.grasscutter.net.proto.ExpeditionStartReqOuterClass.ExpeditionStartReq.class, emu.grasscutter.net.proto.ExpeditionStartReqOuterClass.ExpeditionStartReq.Builder.class);
     }
 
-    public static final int AVATAR_ID_LIST_FIELD_NUMBER = 1;
+    public static final int UNK3300_AIEJKADFLKG_FIELD_NUMBER = 10;
+    private int unk3300AIEJKADFLKG_;
+    /**
+     * <code>uint32 Unk3300_AIEJKADFLKG = 10;</code>
+     * @return The unk3300AIEJKADFLKG.
+     */
+    @java.lang.Override
+    public int getUnk3300AIEJKADFLKG() {
+      return unk3300AIEJKADFLKG_;
+    }
+
+    public static final int PATH_ID_FIELD_NUMBER = 3;
+    private int pathId_;
+    /**
+     * <code>uint32 path_id = 3;</code>
+     * @return The pathId.
+     */
+    @java.lang.Override
+    public int getPathId() {
+      return pathId_;
+    }
+
+    public static final int UNK3300_AFGPGIIGAKA_FIELD_NUMBER = 14;
+    private int unk3300AFGPGIIGAKA_;
+    /**
+     * <code>uint32 Unk3300_AFGPGIIGAKA = 14;</code>
+     * @return The unk3300AFGPGIIGAKA.
+     */
+    @java.lang.Override
+    public int getUnk3300AFGPGIIGAKA() {
+      return unk3300AFGPGIIGAKA_;
+    }
+
+    public static final int AVATAR_ID_LIST_FIELD_NUMBER = 7;
     private com.google.protobuf.Internal.IntList avatarIdList_;
     /**
-     * <code>repeated uint32 avatar_id_list = 1;</code>
+     * <code>repeated uint32 avatar_id_list = 7;</code>
      * @return A list containing the avatarIdList.
      */
     @java.lang.Override
@@ -190,14 +227,14 @@ public final class ExpeditionStartReqOuterClass {
       return avatarIdList_;
     }
     /**
-     * <code>repeated uint32 avatar_id_list = 1;</code>
+     * <code>repeated uint32 avatar_id_list = 7;</code>
      * @return The count of avatarIdList.
      */
     public int getAvatarIdListCount() {
       return avatarIdList_.size();
     }
     /**
-     * <code>repeated uint32 avatar_id_list = 1;</code>
+     * <code>repeated uint32 avatar_id_list = 7;</code>
      * @param index The index of the element to return.
      * @return The avatarIdList at the given index.
      */
@@ -205,39 +242,6 @@ public final class ExpeditionStartReqOuterClass {
       return avatarIdList_.getInt(index);
     }
     private int avatarIdListMemoizedSerializedSize = -1;
-
-    public static final int ASSIST_UID_FIELD_NUMBER = 5;
-    private int assistUid_;
-    /**
-     * <code>uint32 assist_uid = 5;</code>
-     * @return The assistUid.
-     */
-    @java.lang.Override
-    public int getAssistUid() {
-      return assistUid_;
-    }
-
-    public static final int ASSIST_AVATAR_ID_FIELD_NUMBER = 8;
-    private int assistAvatarId_;
-    /**
-     * <code>uint32 assist_avatar_id = 8;</code>
-     * @return The assistAvatarId.
-     */
-    @java.lang.Override
-    public int getAssistAvatarId() {
-      return assistAvatarId_;
-    }
-
-    public static final int PATH_ID_FIELD_NUMBER = 7;
-    private int pathId_;
-    /**
-     * <code>uint32 path_id = 7;</code>
-     * @return The pathId.
-     */
-    @java.lang.Override
-    public int getPathId() {
-      return pathId_;
-    }
 
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
@@ -254,21 +258,21 @@ public final class ExpeditionStartReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
+      if (pathId_ != 0) {
+        output.writeUInt32(3, pathId_);
+      }
       if (getAvatarIdListList().size() > 0) {
-        output.writeUInt32NoTag(10);
+        output.writeUInt32NoTag(58);
         output.writeUInt32NoTag(avatarIdListMemoizedSerializedSize);
       }
       for (int i = 0; i < avatarIdList_.size(); i++) {
         output.writeUInt32NoTag(avatarIdList_.getInt(i));
       }
-      if (assistUid_ != 0) {
-        output.writeUInt32(5, assistUid_);
+      if (unk3300AIEJKADFLKG_ != 0) {
+        output.writeUInt32(10, unk3300AIEJKADFLKG_);
       }
-      if (pathId_ != 0) {
-        output.writeUInt32(7, pathId_);
-      }
-      if (assistAvatarId_ != 0) {
-        output.writeUInt32(8, assistAvatarId_);
+      if (unk3300AFGPGIIGAKA_ != 0) {
+        output.writeUInt32(14, unk3300AFGPGIIGAKA_);
       }
       unknownFields.writeTo(output);
     }
@@ -279,6 +283,10 @@ public final class ExpeditionStartReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (pathId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(3, pathId_);
+      }
       {
         int dataSize = 0;
         for (int i = 0; i < avatarIdList_.size(); i++) {
@@ -293,17 +301,13 @@ public final class ExpeditionStartReqOuterClass {
         }
         avatarIdListMemoizedSerializedSize = dataSize;
       }
-      if (assistUid_ != 0) {
+      if (unk3300AIEJKADFLKG_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, assistUid_);
+          .computeUInt32Size(10, unk3300AIEJKADFLKG_);
       }
-      if (pathId_ != 0) {
+      if (unk3300AFGPGIIGAKA_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, pathId_);
-      }
-      if (assistAvatarId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, assistAvatarId_);
+          .computeUInt32Size(14, unk3300AFGPGIIGAKA_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -320,14 +324,14 @@ public final class ExpeditionStartReqOuterClass {
       }
       emu.grasscutter.net.proto.ExpeditionStartReqOuterClass.ExpeditionStartReq other = (emu.grasscutter.net.proto.ExpeditionStartReqOuterClass.ExpeditionStartReq) obj;
 
-      if (!getAvatarIdListList()
-          .equals(other.getAvatarIdListList())) return false;
-      if (getAssistUid()
-          != other.getAssistUid()) return false;
-      if (getAssistAvatarId()
-          != other.getAssistAvatarId()) return false;
+      if (getUnk3300AIEJKADFLKG()
+          != other.getUnk3300AIEJKADFLKG()) return false;
       if (getPathId()
           != other.getPathId()) return false;
+      if (getUnk3300AFGPGIIGAKA()
+          != other.getUnk3300AFGPGIIGAKA()) return false;
+      if (!getAvatarIdListList()
+          .equals(other.getAvatarIdListList())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -339,16 +343,16 @@ public final class ExpeditionStartReqOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + UNK3300_AIEJKADFLKG_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300AIEJKADFLKG();
+      hash = (37 * hash) + PATH_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getPathId();
+      hash = (37 * hash) + UNK3300_AFGPGIIGAKA_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300AFGPGIIGAKA();
       if (getAvatarIdListCount() > 0) {
         hash = (37 * hash) + AVATAR_ID_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getAvatarIdListList().hashCode();
       }
-      hash = (37 * hash) + ASSIST_UID_FIELD_NUMBER;
-      hash = (53 * hash) + getAssistUid();
-      hash = (37 * hash) + ASSIST_AVATAR_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getAssistAvatarId();
-      hash = (37 * hash) + PATH_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getPathId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -446,10 +450,14 @@ public final class ExpeditionStartReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 2087
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 2016;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code ExpeditionStartReq}
@@ -489,14 +497,14 @@ public final class ExpeditionStartReqOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        avatarIdList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000001);
-        assistUid_ = 0;
-
-        assistAvatarId_ = 0;
+        unk3300AIEJKADFLKG_ = 0;
 
         pathId_ = 0;
 
+        unk3300AFGPGIIGAKA_ = 0;
+
+        avatarIdList_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000001);
         return this;
       }
 
@@ -524,14 +532,14 @@ public final class ExpeditionStartReqOuterClass {
       public emu.grasscutter.net.proto.ExpeditionStartReqOuterClass.ExpeditionStartReq buildPartial() {
         emu.grasscutter.net.proto.ExpeditionStartReqOuterClass.ExpeditionStartReq result = new emu.grasscutter.net.proto.ExpeditionStartReqOuterClass.ExpeditionStartReq(this);
         int from_bitField0_ = bitField0_;
+        result.unk3300AIEJKADFLKG_ = unk3300AIEJKADFLKG_;
+        result.pathId_ = pathId_;
+        result.unk3300AFGPGIIGAKA_ = unk3300AFGPGIIGAKA_;
         if (((bitField0_ & 0x00000001) != 0)) {
           avatarIdList_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000001);
         }
         result.avatarIdList_ = avatarIdList_;
-        result.assistUid_ = assistUid_;
-        result.assistAvatarId_ = assistAvatarId_;
-        result.pathId_ = pathId_;
         onBuilt();
         return result;
       }
@@ -580,6 +588,15 @@ public final class ExpeditionStartReqOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.ExpeditionStartReqOuterClass.ExpeditionStartReq other) {
         if (other == emu.grasscutter.net.proto.ExpeditionStartReqOuterClass.ExpeditionStartReq.getDefaultInstance()) return this;
+        if (other.getUnk3300AIEJKADFLKG() != 0) {
+          setUnk3300AIEJKADFLKG(other.getUnk3300AIEJKADFLKG());
+        }
+        if (other.getPathId() != 0) {
+          setPathId(other.getPathId());
+        }
+        if (other.getUnk3300AFGPGIIGAKA() != 0) {
+          setUnk3300AFGPGIIGAKA(other.getUnk3300AFGPGIIGAKA());
+        }
         if (!other.avatarIdList_.isEmpty()) {
           if (avatarIdList_.isEmpty()) {
             avatarIdList_ = other.avatarIdList_;
@@ -589,15 +606,6 @@ public final class ExpeditionStartReqOuterClass {
             avatarIdList_.addAll(other.avatarIdList_);
           }
           onChanged();
-        }
-        if (other.getAssistUid() != 0) {
-          setAssistUid(other.getAssistUid());
-        }
-        if (other.getAssistAvatarId() != 0) {
-          setAssistAvatarId(other.getAssistAvatarId());
-        }
-        if (other.getPathId() != 0) {
-          setPathId(other.getPathId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -629,6 +637,99 @@ public final class ExpeditionStartReqOuterClass {
       }
       private int bitField0_;
 
+      private int unk3300AIEJKADFLKG_ ;
+      /**
+       * <code>uint32 Unk3300_AIEJKADFLKG = 10;</code>
+       * @return The unk3300AIEJKADFLKG.
+       */
+      @java.lang.Override
+      public int getUnk3300AIEJKADFLKG() {
+        return unk3300AIEJKADFLKG_;
+      }
+      /**
+       * <code>uint32 Unk3300_AIEJKADFLKG = 10;</code>
+       * @param value The unk3300AIEJKADFLKG to set.
+       * @return This builder for chaining.
+       */
+      public Builder setUnk3300AIEJKADFLKG(int value) {
+        
+        unk3300AIEJKADFLKG_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 Unk3300_AIEJKADFLKG = 10;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearUnk3300AIEJKADFLKG() {
+        
+        unk3300AIEJKADFLKG_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int pathId_ ;
+      /**
+       * <code>uint32 path_id = 3;</code>
+       * @return The pathId.
+       */
+      @java.lang.Override
+      public int getPathId() {
+        return pathId_;
+      }
+      /**
+       * <code>uint32 path_id = 3;</code>
+       * @param value The pathId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setPathId(int value) {
+        
+        pathId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 path_id = 3;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearPathId() {
+        
+        pathId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int unk3300AFGPGIIGAKA_ ;
+      /**
+       * <code>uint32 Unk3300_AFGPGIIGAKA = 14;</code>
+       * @return The unk3300AFGPGIIGAKA.
+       */
+      @java.lang.Override
+      public int getUnk3300AFGPGIIGAKA() {
+        return unk3300AFGPGIIGAKA_;
+      }
+      /**
+       * <code>uint32 Unk3300_AFGPGIIGAKA = 14;</code>
+       * @param value The unk3300AFGPGIIGAKA to set.
+       * @return This builder for chaining.
+       */
+      public Builder setUnk3300AFGPGIIGAKA(int value) {
+        
+        unk3300AFGPGIIGAKA_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 Unk3300_AFGPGIIGAKA = 14;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearUnk3300AFGPGIIGAKA() {
+        
+        unk3300AFGPGIIGAKA_ = 0;
+        onChanged();
+        return this;
+      }
+
       private com.google.protobuf.Internal.IntList avatarIdList_ = emptyIntList();
       private void ensureAvatarIdListIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
@@ -637,7 +738,7 @@ public final class ExpeditionStartReqOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 avatar_id_list = 1;</code>
+       * <code>repeated uint32 avatar_id_list = 7;</code>
        * @return A list containing the avatarIdList.
        */
       public java.util.List<java.lang.Integer>
@@ -646,14 +747,14 @@ public final class ExpeditionStartReqOuterClass {
                  java.util.Collections.unmodifiableList(avatarIdList_) : avatarIdList_;
       }
       /**
-       * <code>repeated uint32 avatar_id_list = 1;</code>
+       * <code>repeated uint32 avatar_id_list = 7;</code>
        * @return The count of avatarIdList.
        */
       public int getAvatarIdListCount() {
         return avatarIdList_.size();
       }
       /**
-       * <code>repeated uint32 avatar_id_list = 1;</code>
+       * <code>repeated uint32 avatar_id_list = 7;</code>
        * @param index The index of the element to return.
        * @return The avatarIdList at the given index.
        */
@@ -661,7 +762,7 @@ public final class ExpeditionStartReqOuterClass {
         return avatarIdList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 avatar_id_list = 1;</code>
+       * <code>repeated uint32 avatar_id_list = 7;</code>
        * @param index The index to set the value at.
        * @param value The avatarIdList to set.
        * @return This builder for chaining.
@@ -674,7 +775,7 @@ public final class ExpeditionStartReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 avatar_id_list = 1;</code>
+       * <code>repeated uint32 avatar_id_list = 7;</code>
        * @param value The avatarIdList to add.
        * @return This builder for chaining.
        */
@@ -685,7 +786,7 @@ public final class ExpeditionStartReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 avatar_id_list = 1;</code>
+       * <code>repeated uint32 avatar_id_list = 7;</code>
        * @param values The avatarIdList to add.
        * @return This builder for chaining.
        */
@@ -698,105 +799,12 @@ public final class ExpeditionStartReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 avatar_id_list = 1;</code>
+       * <code>repeated uint32 avatar_id_list = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearAvatarIdList() {
         avatarIdList_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
-        onChanged();
-        return this;
-      }
-
-      private int assistUid_ ;
-      /**
-       * <code>uint32 assist_uid = 5;</code>
-       * @return The assistUid.
-       */
-      @java.lang.Override
-      public int getAssistUid() {
-        return assistUid_;
-      }
-      /**
-       * <code>uint32 assist_uid = 5;</code>
-       * @param value The assistUid to set.
-       * @return This builder for chaining.
-       */
-      public Builder setAssistUid(int value) {
-        
-        assistUid_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 assist_uid = 5;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearAssistUid() {
-        
-        assistUid_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int assistAvatarId_ ;
-      /**
-       * <code>uint32 assist_avatar_id = 8;</code>
-       * @return The assistAvatarId.
-       */
-      @java.lang.Override
-      public int getAssistAvatarId() {
-        return assistAvatarId_;
-      }
-      /**
-       * <code>uint32 assist_avatar_id = 8;</code>
-       * @param value The assistAvatarId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setAssistAvatarId(int value) {
-        
-        assistAvatarId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 assist_avatar_id = 8;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearAssistAvatarId() {
-        
-        assistAvatarId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int pathId_ ;
-      /**
-       * <code>uint32 path_id = 7;</code>
-       * @return The pathId.
-       */
-      @java.lang.Override
-      public int getPathId() {
-        return pathId_;
-      }
-      /**
-       * <code>uint32 path_id = 7;</code>
-       * @param value The pathId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setPathId(int value) {
-        
-        pathId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 path_id = 7;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearPathId() {
-        
-        pathId_ = 0;
         onChanged();
         return this;
       }
@@ -867,11 +875,11 @@ public final class ExpeditionStartReqOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\030ExpeditionStartReq.proto\"k\n\022Expedition" +
-      "StartReq\022\026\n\016avatar_id_list\030\001 \003(\r\022\022\n\nassi" +
-      "st_uid\030\005 \001(\r\022\030\n\020assist_avatar_id\030\010 \001(\r\022\017" +
-      "\n\007path_id\030\007 \001(\rB\033\n\031emu.grasscutter.net.p" +
-      "rotob\006proto3"
+      "\n\030ExpeditionStartReq.proto\"w\n\022Expedition" +
+      "StartReq\022\033\n\023Unk3300_AIEJKADFLKG\030\n \001(\r\022\017\n" +
+      "\007path_id\030\003 \001(\r\022\033\n\023Unk3300_AFGPGIIGAKA\030\016 " +
+      "\001(\r\022\026\n\016avatar_id_list\030\007 \003(\rB\033\n\031emu.grass" +
+      "cutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -882,7 +890,7 @@ public final class ExpeditionStartReqOuterClass {
     internal_static_ExpeditionStartReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ExpeditionStartReq_descriptor,
-        new java.lang.String[] { "AvatarIdList", "AssistUid", "AssistAvatarId", "PathId", });
+        new java.lang.String[] { "Unk3300AIEJKADFLKG", "PathId", "Unk3300AFGPGIIGAKA", "AvatarIdList", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

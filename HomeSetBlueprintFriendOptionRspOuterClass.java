@@ -19,22 +19,26 @@ public final class HomeSetBlueprintFriendOptionRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_allow_friend_copy = 2;</code>
+     * <code>bool is_allow_friend_copy = 14;</code>
      * @return The isAllowFriendCopy.
      */
     boolean getIsAllowFriendCopy();
 
     /**
-     * <code>int32 retcode = 12;</code>
+     * <code>int32 retcode = 13;</code>
      * @return The retcode.
      */
     int getRetcode();
   }
   /**
    * <pre>
-   * CmdId: 4604
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 4615;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code HomeSetBlueprintFriendOptionRsp}
@@ -81,14 +85,14 @@ public final class HomeSetBlueprintFriendOptionRspOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
-
-              isAllowFriendCopy_ = input.readBool();
-              break;
-            }
-            case 96: {
+            case 104: {
 
               retcode_ = input.readInt32();
+              break;
+            }
+            case 112: {
+
+              isAllowFriendCopy_ = input.readBool();
               break;
             }
             default: {
@@ -123,10 +127,10 @@ public final class HomeSetBlueprintFriendOptionRspOuterClass {
               emu.grasscutter.net.proto.HomeSetBlueprintFriendOptionRspOuterClass.HomeSetBlueprintFriendOptionRsp.class, emu.grasscutter.net.proto.HomeSetBlueprintFriendOptionRspOuterClass.HomeSetBlueprintFriendOptionRsp.Builder.class);
     }
 
-    public static final int IS_ALLOW_FRIEND_COPY_FIELD_NUMBER = 2;
+    public static final int IS_ALLOW_FRIEND_COPY_FIELD_NUMBER = 14;
     private boolean isAllowFriendCopy_;
     /**
-     * <code>bool is_allow_friend_copy = 2;</code>
+     * <code>bool is_allow_friend_copy = 14;</code>
      * @return The isAllowFriendCopy.
      */
     @java.lang.Override
@@ -134,10 +138,10 @@ public final class HomeSetBlueprintFriendOptionRspOuterClass {
       return isAllowFriendCopy_;
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 12;
+    public static final int RETCODE_FIELD_NUMBER = 13;
     private int retcode_;
     /**
-     * <code>int32 retcode = 12;</code>
+     * <code>int32 retcode = 13;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -159,11 +163,11 @@ public final class HomeSetBlueprintFriendOptionRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (isAllowFriendCopy_ != false) {
-        output.writeBool(2, isAllowFriendCopy_);
-      }
       if (retcode_ != 0) {
-        output.writeInt32(12, retcode_);
+        output.writeInt32(13, retcode_);
+      }
+      if (isAllowFriendCopy_ != false) {
+        output.writeBool(14, isAllowFriendCopy_);
       }
       unknownFields.writeTo(output);
     }
@@ -174,13 +178,13 @@ public final class HomeSetBlueprintFriendOptionRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (isAllowFriendCopy_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(2, isAllowFriendCopy_);
-      }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(12, retcode_);
+          .computeInt32Size(13, retcode_);
+      }
+      if (isAllowFriendCopy_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(14, isAllowFriendCopy_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -314,9 +318,13 @@ public final class HomeSetBlueprintFriendOptionRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 4604
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 4615;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code HomeSetBlueprintFriendOptionRsp}
@@ -473,7 +481,7 @@ public final class HomeSetBlueprintFriendOptionRspOuterClass {
 
       private boolean isAllowFriendCopy_ ;
       /**
-       * <code>bool is_allow_friend_copy = 2;</code>
+       * <code>bool is_allow_friend_copy = 14;</code>
        * @return The isAllowFriendCopy.
        */
       @java.lang.Override
@@ -481,7 +489,7 @@ public final class HomeSetBlueprintFriendOptionRspOuterClass {
         return isAllowFriendCopy_;
       }
       /**
-       * <code>bool is_allow_friend_copy = 2;</code>
+       * <code>bool is_allow_friend_copy = 14;</code>
        * @param value The isAllowFriendCopy to set.
        * @return This builder for chaining.
        */
@@ -492,7 +500,7 @@ public final class HomeSetBlueprintFriendOptionRspOuterClass {
         return this;
       }
       /**
-       * <code>bool is_allow_friend_copy = 2;</code>
+       * <code>bool is_allow_friend_copy = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsAllowFriendCopy() {
@@ -504,7 +512,7 @@ public final class HomeSetBlueprintFriendOptionRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 12;</code>
+       * <code>int32 retcode = 13;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -512,7 +520,7 @@ public final class HomeSetBlueprintFriendOptionRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 12;</code>
+       * <code>int32 retcode = 13;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -523,7 +531,7 @@ public final class HomeSetBlueprintFriendOptionRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 12;</code>
+       * <code>int32 retcode = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -601,7 +609,7 @@ public final class HomeSetBlueprintFriendOptionRspOuterClass {
     java.lang.String[] descriptorData = {
       "\n%HomeSetBlueprintFriendOptionRsp.proto\"" +
       "P\n\037HomeSetBlueprintFriendOptionRsp\022\034\n\024is" +
-      "_allow_friend_copy\030\002 \001(\010\022\017\n\007retcode\030\014 \001(" +
+      "_allow_friend_copy\030\016 \001(\010\022\017\n\007retcode\030\r \001(" +
       "\005B\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

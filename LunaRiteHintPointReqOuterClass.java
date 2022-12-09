@@ -19,17 +19,21 @@ public final class LunaRiteHintPointReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 area_id = 13;</code>
+     * <code>uint32 area_id = 11;</code>
      * @return The areaId.
      */
     int getAreaId();
   }
   /**
    * <pre>
-   * CmdId: 8195
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 8811;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code LunaRiteHintPointReq}
@@ -76,7 +80,7 @@ public final class LunaRiteHintPointReqOuterClass {
             case 0:
               done = true;
               break;
-            case 104: {
+            case 88: {
 
               areaId_ = input.readUInt32();
               break;
@@ -113,10 +117,10 @@ public final class LunaRiteHintPointReqOuterClass {
               emu.grasscutter.net.proto.LunaRiteHintPointReqOuterClass.LunaRiteHintPointReq.class, emu.grasscutter.net.proto.LunaRiteHintPointReqOuterClass.LunaRiteHintPointReq.Builder.class);
     }
 
-    public static final int AREA_ID_FIELD_NUMBER = 13;
+    public static final int AREA_ID_FIELD_NUMBER = 11;
     private int areaId_;
     /**
-     * <code>uint32 area_id = 13;</code>
+     * <code>uint32 area_id = 11;</code>
      * @return The areaId.
      */
     @java.lang.Override
@@ -139,7 +143,7 @@ public final class LunaRiteHintPointReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (areaId_ != 0) {
-        output.writeUInt32(13, areaId_);
+        output.writeUInt32(11, areaId_);
       }
       unknownFields.writeTo(output);
     }
@@ -152,7 +156,7 @@ public final class LunaRiteHintPointReqOuterClass {
       size = 0;
       if (areaId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, areaId_);
+          .computeUInt32Size(11, areaId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -281,10 +285,14 @@ public final class LunaRiteHintPointReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 8195
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 8811;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code LunaRiteHintPointReq}
@@ -435,7 +443,7 @@ public final class LunaRiteHintPointReqOuterClass {
 
       private int areaId_ ;
       /**
-       * <code>uint32 area_id = 13;</code>
+       * <code>uint32 area_id = 11;</code>
        * @return The areaId.
        */
       @java.lang.Override
@@ -443,7 +451,7 @@ public final class LunaRiteHintPointReqOuterClass {
         return areaId_;
       }
       /**
-       * <code>uint32 area_id = 13;</code>
+       * <code>uint32 area_id = 11;</code>
        * @param value The areaId to set.
        * @return This builder for chaining.
        */
@@ -454,7 +462,7 @@ public final class LunaRiteHintPointReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 area_id = 13;</code>
+       * <code>uint32 area_id = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearAreaId() {
@@ -531,7 +539,7 @@ public final class LunaRiteHintPointReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\032LunaRiteHintPointReq.proto\"\'\n\024LunaRite" +
-      "HintPointReq\022\017\n\007area_id\030\r \001(\rB\033\n\031emu.gra" +
+      "HintPointReq\022\017\n\007area_id\030\013 \001(\rB\033\n\031emu.gra" +
       "sscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

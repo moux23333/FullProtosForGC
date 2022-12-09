@@ -19,31 +19,35 @@ public final class SearchCustomDungeonRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 15;</code>
+     * <code>int32 retcode = 2;</code>
      * @return The retcode.
      */
     int getRetcode();
 
     /**
-     * <code>.OtherCustomDungeonBrief custom_dungeon_brief = 14;</code>
+     * <code>.OtherCustomDungeonBrief custom_dungeon_brief = 8;</code>
      * @return Whether the customDungeonBrief field is set.
      */
     boolean hasCustomDungeonBrief();
     /**
-     * <code>.OtherCustomDungeonBrief custom_dungeon_brief = 14;</code>
+     * <code>.OtherCustomDungeonBrief custom_dungeon_brief = 8;</code>
      * @return The customDungeonBrief.
      */
     emu.grasscutter.net.proto.OtherCustomDungeonBriefOuterClass.OtherCustomDungeonBrief getCustomDungeonBrief();
     /**
-     * <code>.OtherCustomDungeonBrief custom_dungeon_brief = 14;</code>
+     * <code>.OtherCustomDungeonBrief custom_dungeon_brief = 8;</code>
      */
     emu.grasscutter.net.proto.OtherCustomDungeonBriefOuterClass.OtherCustomDungeonBriefOrBuilder getCustomDungeonBriefOrBuilder();
   }
   /**
    * <pre>
-   * CmdId: 6215
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 6239;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code SearchCustomDungeonRsp}
@@ -90,7 +94,12 @@ public final class SearchCustomDungeonRspOuterClass {
             case 0:
               done = true;
               break;
-            case 114: {
+            case 16: {
+
+              retcode_ = input.readInt32();
+              break;
+            }
+            case 66: {
               emu.grasscutter.net.proto.OtherCustomDungeonBriefOuterClass.OtherCustomDungeonBrief.Builder subBuilder = null;
               if (customDungeonBrief_ != null) {
                 subBuilder = customDungeonBrief_.toBuilder();
@@ -101,11 +110,6 @@ public final class SearchCustomDungeonRspOuterClass {
                 customDungeonBrief_ = subBuilder.buildPartial();
               }
 
-              break;
-            }
-            case 120: {
-
-              retcode_ = input.readInt32();
               break;
             }
             default: {
@@ -140,10 +144,10 @@ public final class SearchCustomDungeonRspOuterClass {
               emu.grasscutter.net.proto.SearchCustomDungeonRspOuterClass.SearchCustomDungeonRsp.class, emu.grasscutter.net.proto.SearchCustomDungeonRspOuterClass.SearchCustomDungeonRsp.Builder.class);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 15;
+    public static final int RETCODE_FIELD_NUMBER = 2;
     private int retcode_;
     /**
-     * <code>int32 retcode = 15;</code>
+     * <code>int32 retcode = 2;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -151,10 +155,10 @@ public final class SearchCustomDungeonRspOuterClass {
       return retcode_;
     }
 
-    public static final int CUSTOM_DUNGEON_BRIEF_FIELD_NUMBER = 14;
+    public static final int CUSTOM_DUNGEON_BRIEF_FIELD_NUMBER = 8;
     private emu.grasscutter.net.proto.OtherCustomDungeonBriefOuterClass.OtherCustomDungeonBrief customDungeonBrief_;
     /**
-     * <code>.OtherCustomDungeonBrief custom_dungeon_brief = 14;</code>
+     * <code>.OtherCustomDungeonBrief custom_dungeon_brief = 8;</code>
      * @return Whether the customDungeonBrief field is set.
      */
     @java.lang.Override
@@ -162,7 +166,7 @@ public final class SearchCustomDungeonRspOuterClass {
       return customDungeonBrief_ != null;
     }
     /**
-     * <code>.OtherCustomDungeonBrief custom_dungeon_brief = 14;</code>
+     * <code>.OtherCustomDungeonBrief custom_dungeon_brief = 8;</code>
      * @return The customDungeonBrief.
      */
     @java.lang.Override
@@ -170,7 +174,7 @@ public final class SearchCustomDungeonRspOuterClass {
       return customDungeonBrief_ == null ? emu.grasscutter.net.proto.OtherCustomDungeonBriefOuterClass.OtherCustomDungeonBrief.getDefaultInstance() : customDungeonBrief_;
     }
     /**
-     * <code>.OtherCustomDungeonBrief custom_dungeon_brief = 14;</code>
+     * <code>.OtherCustomDungeonBrief custom_dungeon_brief = 8;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.OtherCustomDungeonBriefOuterClass.OtherCustomDungeonBriefOrBuilder getCustomDungeonBriefOrBuilder() {
@@ -191,11 +195,11 @@ public final class SearchCustomDungeonRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (customDungeonBrief_ != null) {
-        output.writeMessage(14, getCustomDungeonBrief());
-      }
       if (retcode_ != 0) {
-        output.writeInt32(15, retcode_);
+        output.writeInt32(2, retcode_);
+      }
+      if (customDungeonBrief_ != null) {
+        output.writeMessage(8, getCustomDungeonBrief());
       }
       unknownFields.writeTo(output);
     }
@@ -206,13 +210,13 @@ public final class SearchCustomDungeonRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (customDungeonBrief_ != null) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(14, getCustomDungeonBrief());
-      }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(15, retcode_);
+          .computeInt32Size(2, retcode_);
+      }
+      if (customDungeonBrief_ != null) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(8, getCustomDungeonBrief());
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -350,9 +354,13 @@ public final class SearchCustomDungeonRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 6215
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 6239;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code SearchCustomDungeonRsp}
@@ -517,7 +525,7 @@ public final class SearchCustomDungeonRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 15;</code>
+       * <code>int32 retcode = 2;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -525,7 +533,7 @@ public final class SearchCustomDungeonRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 15;</code>
+       * <code>int32 retcode = 2;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -536,7 +544,7 @@ public final class SearchCustomDungeonRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 15;</code>
+       * <code>int32 retcode = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -550,14 +558,14 @@ public final class SearchCustomDungeonRspOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.OtherCustomDungeonBriefOuterClass.OtherCustomDungeonBrief, emu.grasscutter.net.proto.OtherCustomDungeonBriefOuterClass.OtherCustomDungeonBrief.Builder, emu.grasscutter.net.proto.OtherCustomDungeonBriefOuterClass.OtherCustomDungeonBriefOrBuilder> customDungeonBriefBuilder_;
       /**
-       * <code>.OtherCustomDungeonBrief custom_dungeon_brief = 14;</code>
+       * <code>.OtherCustomDungeonBrief custom_dungeon_brief = 8;</code>
        * @return Whether the customDungeonBrief field is set.
        */
       public boolean hasCustomDungeonBrief() {
         return customDungeonBriefBuilder_ != null || customDungeonBrief_ != null;
       }
       /**
-       * <code>.OtherCustomDungeonBrief custom_dungeon_brief = 14;</code>
+       * <code>.OtherCustomDungeonBrief custom_dungeon_brief = 8;</code>
        * @return The customDungeonBrief.
        */
       public emu.grasscutter.net.proto.OtherCustomDungeonBriefOuterClass.OtherCustomDungeonBrief getCustomDungeonBrief() {
@@ -568,7 +576,7 @@ public final class SearchCustomDungeonRspOuterClass {
         }
       }
       /**
-       * <code>.OtherCustomDungeonBrief custom_dungeon_brief = 14;</code>
+       * <code>.OtherCustomDungeonBrief custom_dungeon_brief = 8;</code>
        */
       public Builder setCustomDungeonBrief(emu.grasscutter.net.proto.OtherCustomDungeonBriefOuterClass.OtherCustomDungeonBrief value) {
         if (customDungeonBriefBuilder_ == null) {
@@ -584,7 +592,7 @@ public final class SearchCustomDungeonRspOuterClass {
         return this;
       }
       /**
-       * <code>.OtherCustomDungeonBrief custom_dungeon_brief = 14;</code>
+       * <code>.OtherCustomDungeonBrief custom_dungeon_brief = 8;</code>
        */
       public Builder setCustomDungeonBrief(
           emu.grasscutter.net.proto.OtherCustomDungeonBriefOuterClass.OtherCustomDungeonBrief.Builder builderForValue) {
@@ -598,7 +606,7 @@ public final class SearchCustomDungeonRspOuterClass {
         return this;
       }
       /**
-       * <code>.OtherCustomDungeonBrief custom_dungeon_brief = 14;</code>
+       * <code>.OtherCustomDungeonBrief custom_dungeon_brief = 8;</code>
        */
       public Builder mergeCustomDungeonBrief(emu.grasscutter.net.proto.OtherCustomDungeonBriefOuterClass.OtherCustomDungeonBrief value) {
         if (customDungeonBriefBuilder_ == null) {
@@ -616,7 +624,7 @@ public final class SearchCustomDungeonRspOuterClass {
         return this;
       }
       /**
-       * <code>.OtherCustomDungeonBrief custom_dungeon_brief = 14;</code>
+       * <code>.OtherCustomDungeonBrief custom_dungeon_brief = 8;</code>
        */
       public Builder clearCustomDungeonBrief() {
         if (customDungeonBriefBuilder_ == null) {
@@ -630,7 +638,7 @@ public final class SearchCustomDungeonRspOuterClass {
         return this;
       }
       /**
-       * <code>.OtherCustomDungeonBrief custom_dungeon_brief = 14;</code>
+       * <code>.OtherCustomDungeonBrief custom_dungeon_brief = 8;</code>
        */
       public emu.grasscutter.net.proto.OtherCustomDungeonBriefOuterClass.OtherCustomDungeonBrief.Builder getCustomDungeonBriefBuilder() {
         
@@ -638,7 +646,7 @@ public final class SearchCustomDungeonRspOuterClass {
         return getCustomDungeonBriefFieldBuilder().getBuilder();
       }
       /**
-       * <code>.OtherCustomDungeonBrief custom_dungeon_brief = 14;</code>
+       * <code>.OtherCustomDungeonBrief custom_dungeon_brief = 8;</code>
        */
       public emu.grasscutter.net.proto.OtherCustomDungeonBriefOuterClass.OtherCustomDungeonBriefOrBuilder getCustomDungeonBriefOrBuilder() {
         if (customDungeonBriefBuilder_ != null) {
@@ -649,7 +657,7 @@ public final class SearchCustomDungeonRspOuterClass {
         }
       }
       /**
-       * <code>.OtherCustomDungeonBrief custom_dungeon_brief = 14;</code>
+       * <code>.OtherCustomDungeonBrief custom_dungeon_brief = 8;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.OtherCustomDungeonBriefOuterClass.OtherCustomDungeonBrief, emu.grasscutter.net.proto.OtherCustomDungeonBriefOuterClass.OtherCustomDungeonBrief.Builder, emu.grasscutter.net.proto.OtherCustomDungeonBriefOuterClass.OtherCustomDungeonBriefOrBuilder> 
@@ -733,8 +741,8 @@ public final class SearchCustomDungeonRspOuterClass {
     java.lang.String[] descriptorData = {
       "\n\034SearchCustomDungeonRsp.proto\032\035OtherCus" +
       "tomDungeonBrief.proto\"a\n\026SearchCustomDun" +
-      "geonRsp\022\017\n\007retcode\030\017 \001(\005\0226\n\024custom_dunge" +
-      "on_brief\030\016 \001(\0132\030.OtherCustomDungeonBrief" +
+      "geonRsp\022\017\n\007retcode\030\002 \001(\005\0226\n\024custom_dunge" +
+      "on_brief\030\010 \001(\0132\030.OtherCustomDungeonBrief" +
       "B\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

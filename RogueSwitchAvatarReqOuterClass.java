@@ -19,46 +19,50 @@ public final class RogueSwitchAvatarReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 cell_id = 15;</code>
-     * @return The cellId.
-     */
-    int getCellId();
-
-    /**
-     * <code>repeated uint64 onstage_avatar_guid_list = 3;</code>
+     * <code>repeated uint64 onstage_avatar_guid_list = 8;</code>
      * @return A list containing the onstageAvatarGuidList.
      */
     java.util.List<java.lang.Long> getOnstageAvatarGuidListList();
     /**
-     * <code>repeated uint64 onstage_avatar_guid_list = 3;</code>
+     * <code>repeated uint64 onstage_avatar_guid_list = 8;</code>
      * @return The count of onstageAvatarGuidList.
      */
     int getOnstageAvatarGuidListCount();
     /**
-     * <code>repeated uint64 onstage_avatar_guid_list = 3;</code>
+     * <code>repeated uint64 onstage_avatar_guid_list = 8;</code>
      * @param index The index of the element to return.
      * @return The onstageAvatarGuidList at the given index.
      */
     long getOnstageAvatarGuidList(int index);
 
     /**
-     * <code>uint64 cur_avatar_guid = 11;</code>
-     * @return The curAvatarGuid.
-     */
-    long getCurAvatarGuid();
-
-    /**
-     * <code>uint32 dungeon_id = 6;</code>
+     * <code>uint32 dungeon_id = 10;</code>
      * @return The dungeonId.
      */
     int getDungeonId();
+
+    /**
+     * <code>uint32 cell_id = 11;</code>
+     * @return The cellId.
+     */
+    int getCellId();
+
+    /**
+     * <code>uint64 cur_avatar_guid = 4;</code>
+     * @return The curAvatarGuid.
+     */
+    long getCurAvatarGuid();
   }
   /**
    * <pre>
-   * CmdId: 8201
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 8399;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code RogueSwitchAvatarReq}
@@ -107,7 +111,12 @@ public final class RogueSwitchAvatarReqOuterClass {
             case 0:
               done = true;
               break;
-            case 24: {
+            case 32: {
+
+              curAvatarGuid_ = input.readUInt64();
+              break;
+            }
+            case 64: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 onstageAvatarGuidList_ = newLongList();
                 mutable_bitField0_ |= 0x00000001;
@@ -115,7 +124,7 @@ public final class RogueSwitchAvatarReqOuterClass {
               onstageAvatarGuidList_.addLong(input.readUInt64());
               break;
             }
-            case 26: {
+            case 66: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -128,17 +137,12 @@ public final class RogueSwitchAvatarReqOuterClass {
               input.popLimit(limit);
               break;
             }
-            case 48: {
+            case 80: {
 
               dungeonId_ = input.readUInt32();
               break;
             }
             case 88: {
-
-              curAvatarGuid_ = input.readUInt64();
-              break;
-            }
-            case 120: {
 
               cellId_ = input.readUInt32();
               break;
@@ -178,21 +182,10 @@ public final class RogueSwitchAvatarReqOuterClass {
               emu.grasscutter.net.proto.RogueSwitchAvatarReqOuterClass.RogueSwitchAvatarReq.class, emu.grasscutter.net.proto.RogueSwitchAvatarReqOuterClass.RogueSwitchAvatarReq.Builder.class);
     }
 
-    public static final int CELL_ID_FIELD_NUMBER = 15;
-    private int cellId_;
-    /**
-     * <code>uint32 cell_id = 15;</code>
-     * @return The cellId.
-     */
-    @java.lang.Override
-    public int getCellId() {
-      return cellId_;
-    }
-
-    public static final int ONSTAGE_AVATAR_GUID_LIST_FIELD_NUMBER = 3;
+    public static final int ONSTAGE_AVATAR_GUID_LIST_FIELD_NUMBER = 8;
     private com.google.protobuf.Internal.LongList onstageAvatarGuidList_;
     /**
-     * <code>repeated uint64 onstage_avatar_guid_list = 3;</code>
+     * <code>repeated uint64 onstage_avatar_guid_list = 8;</code>
      * @return A list containing the onstageAvatarGuidList.
      */
     @java.lang.Override
@@ -201,14 +194,14 @@ public final class RogueSwitchAvatarReqOuterClass {
       return onstageAvatarGuidList_;
     }
     /**
-     * <code>repeated uint64 onstage_avatar_guid_list = 3;</code>
+     * <code>repeated uint64 onstage_avatar_guid_list = 8;</code>
      * @return The count of onstageAvatarGuidList.
      */
     public int getOnstageAvatarGuidListCount() {
       return onstageAvatarGuidList_.size();
     }
     /**
-     * <code>repeated uint64 onstage_avatar_guid_list = 3;</code>
+     * <code>repeated uint64 onstage_avatar_guid_list = 8;</code>
      * @param index The index of the element to return.
      * @return The onstageAvatarGuidList at the given index.
      */
@@ -217,26 +210,37 @@ public final class RogueSwitchAvatarReqOuterClass {
     }
     private int onstageAvatarGuidListMemoizedSerializedSize = -1;
 
-    public static final int CUR_AVATAR_GUID_FIELD_NUMBER = 11;
-    private long curAvatarGuid_;
-    /**
-     * <code>uint64 cur_avatar_guid = 11;</code>
-     * @return The curAvatarGuid.
-     */
-    @java.lang.Override
-    public long getCurAvatarGuid() {
-      return curAvatarGuid_;
-    }
-
-    public static final int DUNGEON_ID_FIELD_NUMBER = 6;
+    public static final int DUNGEON_ID_FIELD_NUMBER = 10;
     private int dungeonId_;
     /**
-     * <code>uint32 dungeon_id = 6;</code>
+     * <code>uint32 dungeon_id = 10;</code>
      * @return The dungeonId.
      */
     @java.lang.Override
     public int getDungeonId() {
       return dungeonId_;
+    }
+
+    public static final int CELL_ID_FIELD_NUMBER = 11;
+    private int cellId_;
+    /**
+     * <code>uint32 cell_id = 11;</code>
+     * @return The cellId.
+     */
+    @java.lang.Override
+    public int getCellId() {
+      return cellId_;
+    }
+
+    public static final int CUR_AVATAR_GUID_FIELD_NUMBER = 4;
+    private long curAvatarGuid_;
+    /**
+     * <code>uint64 cur_avatar_guid = 4;</code>
+     * @return The curAvatarGuid.
+     */
+    @java.lang.Override
+    public long getCurAvatarGuid() {
+      return curAvatarGuid_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -254,21 +258,21 @@ public final class RogueSwitchAvatarReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
+      if (curAvatarGuid_ != 0L) {
+        output.writeUInt64(4, curAvatarGuid_);
+      }
       if (getOnstageAvatarGuidListList().size() > 0) {
-        output.writeUInt32NoTag(26);
+        output.writeUInt32NoTag(66);
         output.writeUInt32NoTag(onstageAvatarGuidListMemoizedSerializedSize);
       }
       for (int i = 0; i < onstageAvatarGuidList_.size(); i++) {
         output.writeUInt64NoTag(onstageAvatarGuidList_.getLong(i));
       }
       if (dungeonId_ != 0) {
-        output.writeUInt32(6, dungeonId_);
-      }
-      if (curAvatarGuid_ != 0L) {
-        output.writeUInt64(11, curAvatarGuid_);
+        output.writeUInt32(10, dungeonId_);
       }
       if (cellId_ != 0) {
-        output.writeUInt32(15, cellId_);
+        output.writeUInt32(11, cellId_);
       }
       unknownFields.writeTo(output);
     }
@@ -279,6 +283,10 @@ public final class RogueSwitchAvatarReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (curAvatarGuid_ != 0L) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt64Size(4, curAvatarGuid_);
+      }
       {
         int dataSize = 0;
         for (int i = 0; i < onstageAvatarGuidList_.size(); i++) {
@@ -295,15 +303,11 @@ public final class RogueSwitchAvatarReqOuterClass {
       }
       if (dungeonId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, dungeonId_);
-      }
-      if (curAvatarGuid_ != 0L) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt64Size(11, curAvatarGuid_);
+          .computeUInt32Size(10, dungeonId_);
       }
       if (cellId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, cellId_);
+          .computeUInt32Size(11, cellId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -320,14 +324,14 @@ public final class RogueSwitchAvatarReqOuterClass {
       }
       emu.grasscutter.net.proto.RogueSwitchAvatarReqOuterClass.RogueSwitchAvatarReq other = (emu.grasscutter.net.proto.RogueSwitchAvatarReqOuterClass.RogueSwitchAvatarReq) obj;
 
-      if (getCellId()
-          != other.getCellId()) return false;
       if (!getOnstageAvatarGuidListList()
           .equals(other.getOnstageAvatarGuidListList())) return false;
-      if (getCurAvatarGuid()
-          != other.getCurAvatarGuid()) return false;
       if (getDungeonId()
           != other.getDungeonId()) return false;
+      if (getCellId()
+          != other.getCellId()) return false;
+      if (getCurAvatarGuid()
+          != other.getCurAvatarGuid()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -339,17 +343,17 @@ public final class RogueSwitchAvatarReqOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + CELL_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getCellId();
       if (getOnstageAvatarGuidListCount() > 0) {
         hash = (37 * hash) + ONSTAGE_AVATAR_GUID_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getOnstageAvatarGuidListList().hashCode();
       }
+      hash = (37 * hash) + DUNGEON_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getDungeonId();
+      hash = (37 * hash) + CELL_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getCellId();
       hash = (37 * hash) + CUR_AVATAR_GUID_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
           getCurAvatarGuid());
-      hash = (37 * hash) + DUNGEON_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getDungeonId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -447,10 +451,14 @@ public final class RogueSwitchAvatarReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 8201
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 8399;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code RogueSwitchAvatarReq}
@@ -490,13 +498,13 @@ public final class RogueSwitchAvatarReqOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        cellId_ = 0;
-
         onstageAvatarGuidList_ = emptyLongList();
         bitField0_ = (bitField0_ & ~0x00000001);
-        curAvatarGuid_ = 0L;
-
         dungeonId_ = 0;
+
+        cellId_ = 0;
+
+        curAvatarGuid_ = 0L;
 
         return this;
       }
@@ -525,14 +533,14 @@ public final class RogueSwitchAvatarReqOuterClass {
       public emu.grasscutter.net.proto.RogueSwitchAvatarReqOuterClass.RogueSwitchAvatarReq buildPartial() {
         emu.grasscutter.net.proto.RogueSwitchAvatarReqOuterClass.RogueSwitchAvatarReq result = new emu.grasscutter.net.proto.RogueSwitchAvatarReqOuterClass.RogueSwitchAvatarReq(this);
         int from_bitField0_ = bitField0_;
-        result.cellId_ = cellId_;
         if (((bitField0_ & 0x00000001) != 0)) {
           onstageAvatarGuidList_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000001);
         }
         result.onstageAvatarGuidList_ = onstageAvatarGuidList_;
-        result.curAvatarGuid_ = curAvatarGuid_;
         result.dungeonId_ = dungeonId_;
+        result.cellId_ = cellId_;
+        result.curAvatarGuid_ = curAvatarGuid_;
         onBuilt();
         return result;
       }
@@ -581,9 +589,6 @@ public final class RogueSwitchAvatarReqOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.RogueSwitchAvatarReqOuterClass.RogueSwitchAvatarReq other) {
         if (other == emu.grasscutter.net.proto.RogueSwitchAvatarReqOuterClass.RogueSwitchAvatarReq.getDefaultInstance()) return this;
-        if (other.getCellId() != 0) {
-          setCellId(other.getCellId());
-        }
         if (!other.onstageAvatarGuidList_.isEmpty()) {
           if (onstageAvatarGuidList_.isEmpty()) {
             onstageAvatarGuidList_ = other.onstageAvatarGuidList_;
@@ -594,11 +599,14 @@ public final class RogueSwitchAvatarReqOuterClass {
           }
           onChanged();
         }
-        if (other.getCurAvatarGuid() != 0L) {
-          setCurAvatarGuid(other.getCurAvatarGuid());
-        }
         if (other.getDungeonId() != 0) {
           setDungeonId(other.getDungeonId());
+        }
+        if (other.getCellId() != 0) {
+          setCellId(other.getCellId());
+        }
+        if (other.getCurAvatarGuid() != 0L) {
+          setCurAvatarGuid(other.getCurAvatarGuid());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -630,37 +638,6 @@ public final class RogueSwitchAvatarReqOuterClass {
       }
       private int bitField0_;
 
-      private int cellId_ ;
-      /**
-       * <code>uint32 cell_id = 15;</code>
-       * @return The cellId.
-       */
-      @java.lang.Override
-      public int getCellId() {
-        return cellId_;
-      }
-      /**
-       * <code>uint32 cell_id = 15;</code>
-       * @param value The cellId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setCellId(int value) {
-        
-        cellId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 cell_id = 15;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearCellId() {
-        
-        cellId_ = 0;
-        onChanged();
-        return this;
-      }
-
       private com.google.protobuf.Internal.LongList onstageAvatarGuidList_ = emptyLongList();
       private void ensureOnstageAvatarGuidListIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
@@ -669,7 +646,7 @@ public final class RogueSwitchAvatarReqOuterClass {
          }
       }
       /**
-       * <code>repeated uint64 onstage_avatar_guid_list = 3;</code>
+       * <code>repeated uint64 onstage_avatar_guid_list = 8;</code>
        * @return A list containing the onstageAvatarGuidList.
        */
       public java.util.List<java.lang.Long>
@@ -678,14 +655,14 @@ public final class RogueSwitchAvatarReqOuterClass {
                  java.util.Collections.unmodifiableList(onstageAvatarGuidList_) : onstageAvatarGuidList_;
       }
       /**
-       * <code>repeated uint64 onstage_avatar_guid_list = 3;</code>
+       * <code>repeated uint64 onstage_avatar_guid_list = 8;</code>
        * @return The count of onstageAvatarGuidList.
        */
       public int getOnstageAvatarGuidListCount() {
         return onstageAvatarGuidList_.size();
       }
       /**
-       * <code>repeated uint64 onstage_avatar_guid_list = 3;</code>
+       * <code>repeated uint64 onstage_avatar_guid_list = 8;</code>
        * @param index The index of the element to return.
        * @return The onstageAvatarGuidList at the given index.
        */
@@ -693,7 +670,7 @@ public final class RogueSwitchAvatarReqOuterClass {
         return onstageAvatarGuidList_.getLong(index);
       }
       /**
-       * <code>repeated uint64 onstage_avatar_guid_list = 3;</code>
+       * <code>repeated uint64 onstage_avatar_guid_list = 8;</code>
        * @param index The index to set the value at.
        * @param value The onstageAvatarGuidList to set.
        * @return This builder for chaining.
@@ -706,7 +683,7 @@ public final class RogueSwitchAvatarReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint64 onstage_avatar_guid_list = 3;</code>
+       * <code>repeated uint64 onstage_avatar_guid_list = 8;</code>
        * @param value The onstageAvatarGuidList to add.
        * @return This builder for chaining.
        */
@@ -717,7 +694,7 @@ public final class RogueSwitchAvatarReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint64 onstage_avatar_guid_list = 3;</code>
+       * <code>repeated uint64 onstage_avatar_guid_list = 8;</code>
        * @param values The onstageAvatarGuidList to add.
        * @return This builder for chaining.
        */
@@ -730,7 +707,7 @@ public final class RogueSwitchAvatarReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint64 onstage_avatar_guid_list = 3;</code>
+       * <code>repeated uint64 onstage_avatar_guid_list = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearOnstageAvatarGuidList() {
@@ -740,40 +717,9 @@ public final class RogueSwitchAvatarReqOuterClass {
         return this;
       }
 
-      private long curAvatarGuid_ ;
-      /**
-       * <code>uint64 cur_avatar_guid = 11;</code>
-       * @return The curAvatarGuid.
-       */
-      @java.lang.Override
-      public long getCurAvatarGuid() {
-        return curAvatarGuid_;
-      }
-      /**
-       * <code>uint64 cur_avatar_guid = 11;</code>
-       * @param value The curAvatarGuid to set.
-       * @return This builder for chaining.
-       */
-      public Builder setCurAvatarGuid(long value) {
-        
-        curAvatarGuid_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint64 cur_avatar_guid = 11;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearCurAvatarGuid() {
-        
-        curAvatarGuid_ = 0L;
-        onChanged();
-        return this;
-      }
-
       private int dungeonId_ ;
       /**
-       * <code>uint32 dungeon_id = 6;</code>
+       * <code>uint32 dungeon_id = 10;</code>
        * @return The dungeonId.
        */
       @java.lang.Override
@@ -781,7 +727,7 @@ public final class RogueSwitchAvatarReqOuterClass {
         return dungeonId_;
       }
       /**
-       * <code>uint32 dungeon_id = 6;</code>
+       * <code>uint32 dungeon_id = 10;</code>
        * @param value The dungeonId to set.
        * @return This builder for chaining.
        */
@@ -792,12 +738,74 @@ public final class RogueSwitchAvatarReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 dungeon_id = 6;</code>
+       * <code>uint32 dungeon_id = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearDungeonId() {
         
         dungeonId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int cellId_ ;
+      /**
+       * <code>uint32 cell_id = 11;</code>
+       * @return The cellId.
+       */
+      @java.lang.Override
+      public int getCellId() {
+        return cellId_;
+      }
+      /**
+       * <code>uint32 cell_id = 11;</code>
+       * @param value The cellId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setCellId(int value) {
+        
+        cellId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 cell_id = 11;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearCellId() {
+        
+        cellId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private long curAvatarGuid_ ;
+      /**
+       * <code>uint64 cur_avatar_guid = 4;</code>
+       * @return The curAvatarGuid.
+       */
+      @java.lang.Override
+      public long getCurAvatarGuid() {
+        return curAvatarGuid_;
+      }
+      /**
+       * <code>uint64 cur_avatar_guid = 4;</code>
+       * @param value The curAvatarGuid to set.
+       * @return This builder for chaining.
+       */
+      public Builder setCurAvatarGuid(long value) {
+        
+        curAvatarGuid_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint64 cur_avatar_guid = 4;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearCurAvatarGuid() {
+        
+        curAvatarGuid_ = 0L;
         onChanged();
         return this;
       }
@@ -869,9 +877,9 @@ public final class RogueSwitchAvatarReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\032RogueSwitchAvatarReq.proto\"v\n\024RogueSwi" +
-      "tchAvatarReq\022\017\n\007cell_id\030\017 \001(\r\022 \n\030onstage" +
-      "_avatar_guid_list\030\003 \003(\004\022\027\n\017cur_avatar_gu" +
-      "id\030\013 \001(\004\022\022\n\ndungeon_id\030\006 \001(\rB\033\n\031emu.gras" +
+      "tchAvatarReq\022 \n\030onstage_avatar_guid_list" +
+      "\030\010 \003(\004\022\022\n\ndungeon_id\030\n \001(\r\022\017\n\007cell_id\030\013 " +
+      "\001(\r\022\027\n\017cur_avatar_guid\030\004 \001(\004B\033\n\031emu.gras" +
       "scutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -883,7 +891,7 @@ public final class RogueSwitchAvatarReqOuterClass {
     internal_static_RogueSwitchAvatarReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_RogueSwitchAvatarReq_descriptor,
-        new java.lang.String[] { "CellId", "OnstageAvatarGuidList", "CurAvatarGuid", "DungeonId", });
+        new java.lang.String[] { "OnstageAvatarGuidList", "DungeonId", "CellId", "CurAvatarGuid", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

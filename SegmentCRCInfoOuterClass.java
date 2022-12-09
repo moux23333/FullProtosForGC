@@ -19,37 +19,37 @@ public final class SegmentCRCInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 module = 13;</code>
-     * @return The module.
-     */
-    int getModule();
-
-    /**
-     * <code>int32 retcode = 5;</code>
-     * @return The retcode.
-     */
-    int getRetcode();
-
-    /**
-     * <code>uint32 size = 10;</code>
+     * <code>uint32 size = 6;</code>
      * @return The size.
      */
     int getSize();
 
     /**
-     * <code>string crc = 3;</code>
+     * <code>string crc = 8;</code>
      * @return The crc.
      */
     java.lang.String getCrc();
     /**
-     * <code>string crc = 3;</code>
+     * <code>string crc = 8;</code>
      * @return The bytes for crc.
      */
     com.google.protobuf.ByteString
         getCrcBytes();
 
     /**
-     * <code>uint32 offset = 11;</code>
+     * <code>uint32 module = 4;</code>
+     * @return The module.
+     */
+    int getModule();
+
+    /**
+     * <code>int32 retcode = 3;</code>
+     * @return The retcode.
+     */
+    int getRetcode();
+
+    /**
+     * <code>uint32 offset = 9;</code>
      * @return The offset.
      */
     int getOffset();
@@ -100,30 +100,30 @@ public final class SegmentCRCInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 26: {
+            case 24: {
+
+              retcode_ = input.readInt32();
+              break;
+            }
+            case 32: {
+
+              module_ = input.readUInt32();
+              break;
+            }
+            case 48: {
+
+              size_ = input.readUInt32();
+              break;
+            }
+            case 66: {
               java.lang.String s = input.readStringRequireUtf8();
 
               crc_ = s;
               break;
             }
-            case 40: {
-
-              retcode_ = input.readInt32();
-              break;
-            }
-            case 80: {
-
-              size_ = input.readUInt32();
-              break;
-            }
-            case 88: {
+            case 72: {
 
               offset_ = input.readUInt32();
-              break;
-            }
-            case 104: {
-
-              module_ = input.readUInt32();
               break;
             }
             default: {
@@ -158,32 +158,10 @@ public final class SegmentCRCInfoOuterClass {
               emu.grasscutter.net.proto.SegmentCRCInfoOuterClass.SegmentCRCInfo.class, emu.grasscutter.net.proto.SegmentCRCInfoOuterClass.SegmentCRCInfo.Builder.class);
     }
 
-    public static final int MODULE_FIELD_NUMBER = 13;
-    private int module_;
-    /**
-     * <code>uint32 module = 13;</code>
-     * @return The module.
-     */
-    @java.lang.Override
-    public int getModule() {
-      return module_;
-    }
-
-    public static final int RETCODE_FIELD_NUMBER = 5;
-    private int retcode_;
-    /**
-     * <code>int32 retcode = 5;</code>
-     * @return The retcode.
-     */
-    @java.lang.Override
-    public int getRetcode() {
-      return retcode_;
-    }
-
-    public static final int SIZE_FIELD_NUMBER = 10;
+    public static final int SIZE_FIELD_NUMBER = 6;
     private int size_;
     /**
-     * <code>uint32 size = 10;</code>
+     * <code>uint32 size = 6;</code>
      * @return The size.
      */
     @java.lang.Override
@@ -191,10 +169,10 @@ public final class SegmentCRCInfoOuterClass {
       return size_;
     }
 
-    public static final int CRC_FIELD_NUMBER = 3;
+    public static final int CRC_FIELD_NUMBER = 8;
     private volatile java.lang.Object crc_;
     /**
-     * <code>string crc = 3;</code>
+     * <code>string crc = 8;</code>
      * @return The crc.
      */
     @java.lang.Override
@@ -211,7 +189,7 @@ public final class SegmentCRCInfoOuterClass {
       }
     }
     /**
-     * <code>string crc = 3;</code>
+     * <code>string crc = 8;</code>
      * @return The bytes for crc.
      */
     @java.lang.Override
@@ -229,10 +207,32 @@ public final class SegmentCRCInfoOuterClass {
       }
     }
 
-    public static final int OFFSET_FIELD_NUMBER = 11;
+    public static final int MODULE_FIELD_NUMBER = 4;
+    private int module_;
+    /**
+     * <code>uint32 module = 4;</code>
+     * @return The module.
+     */
+    @java.lang.Override
+    public int getModule() {
+      return module_;
+    }
+
+    public static final int RETCODE_FIELD_NUMBER = 3;
+    private int retcode_;
+    /**
+     * <code>int32 retcode = 3;</code>
+     * @return The retcode.
+     */
+    @java.lang.Override
+    public int getRetcode() {
+      return retcode_;
+    }
+
+    public static final int OFFSET_FIELD_NUMBER = 9;
     private int offset_;
     /**
-     * <code>uint32 offset = 11;</code>
+     * <code>uint32 offset = 9;</code>
      * @return The offset.
      */
     @java.lang.Override
@@ -254,20 +254,20 @@ public final class SegmentCRCInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(crc_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 3, crc_);
-      }
       if (retcode_ != 0) {
-        output.writeInt32(5, retcode_);
-      }
-      if (size_ != 0) {
-        output.writeUInt32(10, size_);
-      }
-      if (offset_ != 0) {
-        output.writeUInt32(11, offset_);
+        output.writeInt32(3, retcode_);
       }
       if (module_ != 0) {
-        output.writeUInt32(13, module_);
+        output.writeUInt32(4, module_);
+      }
+      if (size_ != 0) {
+        output.writeUInt32(6, size_);
+      }
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(crc_)) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 8, crc_);
+      }
+      if (offset_ != 0) {
+        output.writeUInt32(9, offset_);
       }
       unknownFields.writeTo(output);
     }
@@ -278,24 +278,24 @@ public final class SegmentCRCInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(crc_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, crc_);
-      }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(5, retcode_);
-      }
-      if (size_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, size_);
-      }
-      if (offset_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, offset_);
+          .computeInt32Size(3, retcode_);
       }
       if (module_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, module_);
+          .computeUInt32Size(4, module_);
+      }
+      if (size_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(6, size_);
+      }
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(crc_)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(8, crc_);
+      }
+      if (offset_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(9, offset_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -312,14 +312,14 @@ public final class SegmentCRCInfoOuterClass {
       }
       emu.grasscutter.net.proto.SegmentCRCInfoOuterClass.SegmentCRCInfo other = (emu.grasscutter.net.proto.SegmentCRCInfoOuterClass.SegmentCRCInfo) obj;
 
-      if (getModule()
-          != other.getModule()) return false;
-      if (getRetcode()
-          != other.getRetcode()) return false;
       if (getSize()
           != other.getSize()) return false;
       if (!getCrc()
           .equals(other.getCrc())) return false;
+      if (getModule()
+          != other.getModule()) return false;
+      if (getRetcode()
+          != other.getRetcode()) return false;
       if (getOffset()
           != other.getOffset()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
@@ -333,14 +333,14 @@ public final class SegmentCRCInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + MODULE_FIELD_NUMBER;
-      hash = (53 * hash) + getModule();
-      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
-      hash = (53 * hash) + getRetcode();
       hash = (37 * hash) + SIZE_FIELD_NUMBER;
       hash = (53 * hash) + getSize();
       hash = (37 * hash) + CRC_FIELD_NUMBER;
       hash = (53 * hash) + getCrc().hashCode();
+      hash = (37 * hash) + MODULE_FIELD_NUMBER;
+      hash = (53 * hash) + getModule();
+      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
+      hash = (53 * hash) + getRetcode();
       hash = (37 * hash) + OFFSET_FIELD_NUMBER;
       hash = (53 * hash) + getOffset();
       hash = (29 * hash) + unknownFields.hashCode();
@@ -476,13 +476,13 @@ public final class SegmentCRCInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        module_ = 0;
-
-        retcode_ = 0;
-
         size_ = 0;
 
         crc_ = "";
+
+        module_ = 0;
+
+        retcode_ = 0;
 
         offset_ = 0;
 
@@ -512,10 +512,10 @@ public final class SegmentCRCInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.SegmentCRCInfoOuterClass.SegmentCRCInfo buildPartial() {
         emu.grasscutter.net.proto.SegmentCRCInfoOuterClass.SegmentCRCInfo result = new emu.grasscutter.net.proto.SegmentCRCInfoOuterClass.SegmentCRCInfo(this);
-        result.module_ = module_;
-        result.retcode_ = retcode_;
         result.size_ = size_;
         result.crc_ = crc_;
+        result.module_ = module_;
+        result.retcode_ = retcode_;
         result.offset_ = offset_;
         onBuilt();
         return result;
@@ -565,18 +565,18 @@ public final class SegmentCRCInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.SegmentCRCInfoOuterClass.SegmentCRCInfo other) {
         if (other == emu.grasscutter.net.proto.SegmentCRCInfoOuterClass.SegmentCRCInfo.getDefaultInstance()) return this;
-        if (other.getModule() != 0) {
-          setModule(other.getModule());
-        }
-        if (other.getRetcode() != 0) {
-          setRetcode(other.getRetcode());
-        }
         if (other.getSize() != 0) {
           setSize(other.getSize());
         }
         if (!other.getCrc().isEmpty()) {
           crc_ = other.crc_;
           onChanged();
+        }
+        if (other.getModule() != 0) {
+          setModule(other.getModule());
+        }
+        if (other.getRetcode() != 0) {
+          setRetcode(other.getRetcode());
         }
         if (other.getOffset() != 0) {
           setOffset(other.getOffset());
@@ -610,71 +610,9 @@ public final class SegmentCRCInfoOuterClass {
         return this;
       }
 
-      private int module_ ;
-      /**
-       * <code>uint32 module = 13;</code>
-       * @return The module.
-       */
-      @java.lang.Override
-      public int getModule() {
-        return module_;
-      }
-      /**
-       * <code>uint32 module = 13;</code>
-       * @param value The module to set.
-       * @return This builder for chaining.
-       */
-      public Builder setModule(int value) {
-        
-        module_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 module = 13;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearModule() {
-        
-        module_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int retcode_ ;
-      /**
-       * <code>int32 retcode = 5;</code>
-       * @return The retcode.
-       */
-      @java.lang.Override
-      public int getRetcode() {
-        return retcode_;
-      }
-      /**
-       * <code>int32 retcode = 5;</code>
-       * @param value The retcode to set.
-       * @return This builder for chaining.
-       */
-      public Builder setRetcode(int value) {
-        
-        retcode_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>int32 retcode = 5;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearRetcode() {
-        
-        retcode_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int size_ ;
       /**
-       * <code>uint32 size = 10;</code>
+       * <code>uint32 size = 6;</code>
        * @return The size.
        */
       @java.lang.Override
@@ -682,7 +620,7 @@ public final class SegmentCRCInfoOuterClass {
         return size_;
       }
       /**
-       * <code>uint32 size = 10;</code>
+       * <code>uint32 size = 6;</code>
        * @param value The size to set.
        * @return This builder for chaining.
        */
@@ -693,7 +631,7 @@ public final class SegmentCRCInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 size = 10;</code>
+       * <code>uint32 size = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearSize() {
@@ -705,7 +643,7 @@ public final class SegmentCRCInfoOuterClass {
 
       private java.lang.Object crc_ = "";
       /**
-       * <code>string crc = 3;</code>
+       * <code>string crc = 8;</code>
        * @return The crc.
        */
       public java.lang.String getCrc() {
@@ -721,7 +659,7 @@ public final class SegmentCRCInfoOuterClass {
         }
       }
       /**
-       * <code>string crc = 3;</code>
+       * <code>string crc = 8;</code>
        * @return The bytes for crc.
        */
       public com.google.protobuf.ByteString
@@ -738,7 +676,7 @@ public final class SegmentCRCInfoOuterClass {
         }
       }
       /**
-       * <code>string crc = 3;</code>
+       * <code>string crc = 8;</code>
        * @param value The crc to set.
        * @return This builder for chaining.
        */
@@ -753,7 +691,7 @@ public final class SegmentCRCInfoOuterClass {
         return this;
       }
       /**
-       * <code>string crc = 3;</code>
+       * <code>string crc = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearCrc() {
@@ -763,7 +701,7 @@ public final class SegmentCRCInfoOuterClass {
         return this;
       }
       /**
-       * <code>string crc = 3;</code>
+       * <code>string crc = 8;</code>
        * @param value The bytes for crc to set.
        * @return This builder for chaining.
        */
@@ -779,9 +717,71 @@ public final class SegmentCRCInfoOuterClass {
         return this;
       }
 
+      private int module_ ;
+      /**
+       * <code>uint32 module = 4;</code>
+       * @return The module.
+       */
+      @java.lang.Override
+      public int getModule() {
+        return module_;
+      }
+      /**
+       * <code>uint32 module = 4;</code>
+       * @param value The module to set.
+       * @return This builder for chaining.
+       */
+      public Builder setModule(int value) {
+        
+        module_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 module = 4;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearModule() {
+        
+        module_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int retcode_ ;
+      /**
+       * <code>int32 retcode = 3;</code>
+       * @return The retcode.
+       */
+      @java.lang.Override
+      public int getRetcode() {
+        return retcode_;
+      }
+      /**
+       * <code>int32 retcode = 3;</code>
+       * @param value The retcode to set.
+       * @return This builder for chaining.
+       */
+      public Builder setRetcode(int value) {
+        
+        retcode_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 retcode = 3;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearRetcode() {
+        
+        retcode_ = 0;
+        onChanged();
+        return this;
+      }
+
       private int offset_ ;
       /**
-       * <code>uint32 offset = 11;</code>
+       * <code>uint32 offset = 9;</code>
        * @return The offset.
        */
       @java.lang.Override
@@ -789,7 +789,7 @@ public final class SegmentCRCInfoOuterClass {
         return offset_;
       }
       /**
-       * <code>uint32 offset = 11;</code>
+       * <code>uint32 offset = 9;</code>
        * @param value The offset to set.
        * @return This builder for chaining.
        */
@@ -800,7 +800,7 @@ public final class SegmentCRCInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 offset = 11;</code>
+       * <code>uint32 offset = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearOffset() {
@@ -877,8 +877,8 @@ public final class SegmentCRCInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\024SegmentCRCInfo.proto\"\\\n\016SegmentCRCInfo" +
-      "\022\016\n\006module\030\r \001(\r\022\017\n\007retcode\030\005 \001(\005\022\014\n\004siz" +
-      "e\030\n \001(\r\022\013\n\003crc\030\003 \001(\t\022\016\n\006offset\030\013 \001(\rB\033\n\031" +
+      "\022\014\n\004size\030\006 \001(\r\022\013\n\003crc\030\010 \001(\t\022\016\n\006module\030\004 " +
+      "\001(\r\022\017\n\007retcode\030\003 \001(\005\022\016\n\006offset\030\t \001(\rB\033\n\031" +
       "emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -890,7 +890,7 @@ public final class SegmentCRCInfoOuterClass {
     internal_static_SegmentCRCInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SegmentCRCInfo_descriptor,
-        new java.lang.String[] { "Module", "Retcode", "Size", "Crc", "Offset", });
+        new java.lang.String[] { "Size", "Crc", "Module", "Retcode", "Offset", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

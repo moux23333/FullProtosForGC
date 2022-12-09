@@ -19,58 +19,58 @@ public final class WinterCampAcceptItemResultInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .ItemParam accept_item_list = 2;</code>
+     * <code>repeated .ItemParam Unk3300_ILELLFNPDFJ = 15;</code>
      */
     java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> 
-        getAcceptItemListList();
+        getUnk3300ILELLFNPDFJList();
     /**
-     * <code>repeated .ItemParam accept_item_list = 2;</code>
+     * <code>repeated .ItemParam Unk3300_ILELLFNPDFJ = 15;</code>
      */
-    emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam getAcceptItemList(int index);
+    emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam getUnk3300ILELLFNPDFJ(int index);
     /**
-     * <code>repeated .ItemParam accept_item_list = 2;</code>
+     * <code>repeated .ItemParam Unk3300_ILELLFNPDFJ = 15;</code>
      */
-    int getAcceptItemListCount();
+    int getUnk3300ILELLFNPDFJCount();
     /**
-     * <code>repeated .ItemParam accept_item_list = 2;</code>
+     * <code>repeated .ItemParam Unk3300_ILELLFNPDFJ = 15;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder> 
-        getAcceptItemListOrBuilderList();
+        getUnk3300ILELLFNPDFJOrBuilderList();
     /**
-     * <code>repeated .ItemParam accept_item_list = 2;</code>
+     * <code>repeated .ItemParam Unk3300_ILELLFNPDFJ = 15;</code>
      */
-    emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder getAcceptItemListOrBuilder(
+    emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder getUnk3300ILELLFNPDFJOrBuilder(
         int index);
 
     /**
-     * <code>uint32 uid = 6;</code>
+     * <code>repeated .ItemParam Unk3300_JHKOMCFHAOG = 13;</code>
+     */
+    java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> 
+        getUnk3300JHKOMCFHAOGList();
+    /**
+     * <code>repeated .ItemParam Unk3300_JHKOMCFHAOG = 13;</code>
+     */
+    emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam getUnk3300JHKOMCFHAOG(int index);
+    /**
+     * <code>repeated .ItemParam Unk3300_JHKOMCFHAOG = 13;</code>
+     */
+    int getUnk3300JHKOMCFHAOGCount();
+    /**
+     * <code>repeated .ItemParam Unk3300_JHKOMCFHAOG = 13;</code>
+     */
+    java.util.List<? extends emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder> 
+        getUnk3300JHKOMCFHAOGOrBuilderList();
+    /**
+     * <code>repeated .ItemParam Unk3300_JHKOMCFHAOG = 13;</code>
+     */
+    emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder getUnk3300JHKOMCFHAOGOrBuilder(
+        int index);
+
+    /**
+     * <code>uint32 uid = 9;</code>
      * @return The uid.
      */
     int getUid();
-
-    /**
-     * <code>repeated .ItemParam unaccept_item_list = 9;</code>
-     */
-    java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> 
-        getUnacceptItemListList();
-    /**
-     * <code>repeated .ItemParam unaccept_item_list = 9;</code>
-     */
-    emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam getUnacceptItemList(int index);
-    /**
-     * <code>repeated .ItemParam unaccept_item_list = 9;</code>
-     */
-    int getUnacceptItemListCount();
-    /**
-     * <code>repeated .ItemParam unaccept_item_list = 9;</code>
-     */
-    java.util.List<? extends emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder> 
-        getUnacceptItemListOrBuilderList();
-    /**
-     * <code>repeated .ItemParam unaccept_item_list = 9;</code>
-     */
-    emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder getUnacceptItemListOrBuilder(
-        int index);
   }
   /**
    * Protobuf type {@code WinterCampAcceptItemResultInfo}
@@ -85,8 +85,8 @@ public final class WinterCampAcceptItemResultInfoOuterClass {
       super(builder);
     }
     private WinterCampAcceptItemResultInfo() {
-      acceptItemList_ = java.util.Collections.emptyList();
-      unacceptItemList_ = java.util.Collections.emptyList();
+      unk3300ILELLFNPDFJ_ = java.util.Collections.emptyList();
+      unk3300JHKOMCFHAOG_ = java.util.Collections.emptyList();
     }
 
     @java.lang.Override
@@ -120,26 +120,26 @@ public final class WinterCampAcceptItemResultInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 18: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                acceptItemList_ = new java.util.ArrayList<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam>();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              acceptItemList_.add(
-                  input.readMessage(emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.parser(), extensionRegistry));
-              break;
-            }
-            case 48: {
+            case 72: {
 
               uid_ = input.readUInt32();
               break;
             }
-            case 74: {
+            case 106: {
               if (!((mutable_bitField0_ & 0x00000002) != 0)) {
-                unacceptItemList_ = new java.util.ArrayList<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam>();
+                unk3300JHKOMCFHAOG_ = new java.util.ArrayList<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam>();
                 mutable_bitField0_ |= 0x00000002;
               }
-              unacceptItemList_.add(
+              unk3300JHKOMCFHAOG_.add(
+                  input.readMessage(emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.parser(), extensionRegistry));
+              break;
+            }
+            case 122: {
+              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+                unk3300ILELLFNPDFJ_ = new java.util.ArrayList<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam>();
+                mutable_bitField0_ |= 0x00000001;
+              }
+              unk3300ILELLFNPDFJ_.add(
                   input.readMessage(emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.parser(), extensionRegistry));
               break;
             }
@@ -158,11 +158,11 @@ public final class WinterCampAcceptItemResultInfoOuterClass {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
       } finally {
-        if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          acceptItemList_ = java.util.Collections.unmodifiableList(acceptItemList_);
-        }
         if (((mutable_bitField0_ & 0x00000002) != 0)) {
-          unacceptItemList_ = java.util.Collections.unmodifiableList(unacceptItemList_);
+          unk3300JHKOMCFHAOG_ = java.util.Collections.unmodifiableList(unk3300JHKOMCFHAOG_);
+        }
+        if (((mutable_bitField0_ & 0x00000001) != 0)) {
+          unk3300ILELLFNPDFJ_ = java.util.Collections.unmodifiableList(unk3300ILELLFNPDFJ_);
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -181,95 +181,95 @@ public final class WinterCampAcceptItemResultInfoOuterClass {
               emu.grasscutter.net.proto.WinterCampAcceptItemResultInfoOuterClass.WinterCampAcceptItemResultInfo.class, emu.grasscutter.net.proto.WinterCampAcceptItemResultInfoOuterClass.WinterCampAcceptItemResultInfo.Builder.class);
     }
 
-    public static final int ACCEPT_ITEM_LIST_FIELD_NUMBER = 2;
-    private java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> acceptItemList_;
+    public static final int UNK3300_ILELLFNPDFJ_FIELD_NUMBER = 15;
+    private java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> unk3300ILELLFNPDFJ_;
     /**
-     * <code>repeated .ItemParam accept_item_list = 2;</code>
+     * <code>repeated .ItemParam Unk3300_ILELLFNPDFJ = 15;</code>
      */
     @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> getAcceptItemListList() {
-      return acceptItemList_;
+    public java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> getUnk3300ILELLFNPDFJList() {
+      return unk3300ILELLFNPDFJ_;
     }
     /**
-     * <code>repeated .ItemParam accept_item_list = 2;</code>
+     * <code>repeated .ItemParam Unk3300_ILELLFNPDFJ = 15;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder> 
-        getAcceptItemListOrBuilderList() {
-      return acceptItemList_;
+        getUnk3300ILELLFNPDFJOrBuilderList() {
+      return unk3300ILELLFNPDFJ_;
     }
     /**
-     * <code>repeated .ItemParam accept_item_list = 2;</code>
+     * <code>repeated .ItemParam Unk3300_ILELLFNPDFJ = 15;</code>
      */
     @java.lang.Override
-    public int getAcceptItemListCount() {
-      return acceptItemList_.size();
+    public int getUnk3300ILELLFNPDFJCount() {
+      return unk3300ILELLFNPDFJ_.size();
     }
     /**
-     * <code>repeated .ItemParam accept_item_list = 2;</code>
+     * <code>repeated .ItemParam Unk3300_ILELLFNPDFJ = 15;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam getAcceptItemList(int index) {
-      return acceptItemList_.get(index);
+    public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam getUnk3300ILELLFNPDFJ(int index) {
+      return unk3300ILELLFNPDFJ_.get(index);
     }
     /**
-     * <code>repeated .ItemParam accept_item_list = 2;</code>
+     * <code>repeated .ItemParam Unk3300_ILELLFNPDFJ = 15;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder getAcceptItemListOrBuilder(
+    public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder getUnk3300ILELLFNPDFJOrBuilder(
         int index) {
-      return acceptItemList_.get(index);
+      return unk3300ILELLFNPDFJ_.get(index);
     }
 
-    public static final int UID_FIELD_NUMBER = 6;
+    public static final int UNK3300_JHKOMCFHAOG_FIELD_NUMBER = 13;
+    private java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> unk3300JHKOMCFHAOG_;
+    /**
+     * <code>repeated .ItemParam Unk3300_JHKOMCFHAOG = 13;</code>
+     */
+    @java.lang.Override
+    public java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> getUnk3300JHKOMCFHAOGList() {
+      return unk3300JHKOMCFHAOG_;
+    }
+    /**
+     * <code>repeated .ItemParam Unk3300_JHKOMCFHAOG = 13;</code>
+     */
+    @java.lang.Override
+    public java.util.List<? extends emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder> 
+        getUnk3300JHKOMCFHAOGOrBuilderList() {
+      return unk3300JHKOMCFHAOG_;
+    }
+    /**
+     * <code>repeated .ItemParam Unk3300_JHKOMCFHAOG = 13;</code>
+     */
+    @java.lang.Override
+    public int getUnk3300JHKOMCFHAOGCount() {
+      return unk3300JHKOMCFHAOG_.size();
+    }
+    /**
+     * <code>repeated .ItemParam Unk3300_JHKOMCFHAOG = 13;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam getUnk3300JHKOMCFHAOG(int index) {
+      return unk3300JHKOMCFHAOG_.get(index);
+    }
+    /**
+     * <code>repeated .ItemParam Unk3300_JHKOMCFHAOG = 13;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder getUnk3300JHKOMCFHAOGOrBuilder(
+        int index) {
+      return unk3300JHKOMCFHAOG_.get(index);
+    }
+
+    public static final int UID_FIELD_NUMBER = 9;
     private int uid_;
     /**
-     * <code>uint32 uid = 6;</code>
+     * <code>uint32 uid = 9;</code>
      * @return The uid.
      */
     @java.lang.Override
     public int getUid() {
       return uid_;
-    }
-
-    public static final int UNACCEPT_ITEM_LIST_FIELD_NUMBER = 9;
-    private java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> unacceptItemList_;
-    /**
-     * <code>repeated .ItemParam unaccept_item_list = 9;</code>
-     */
-    @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> getUnacceptItemListList() {
-      return unacceptItemList_;
-    }
-    /**
-     * <code>repeated .ItemParam unaccept_item_list = 9;</code>
-     */
-    @java.lang.Override
-    public java.util.List<? extends emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder> 
-        getUnacceptItemListOrBuilderList() {
-      return unacceptItemList_;
-    }
-    /**
-     * <code>repeated .ItemParam unaccept_item_list = 9;</code>
-     */
-    @java.lang.Override
-    public int getUnacceptItemListCount() {
-      return unacceptItemList_.size();
-    }
-    /**
-     * <code>repeated .ItemParam unaccept_item_list = 9;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam getUnacceptItemList(int index) {
-      return unacceptItemList_.get(index);
-    }
-    /**
-     * <code>repeated .ItemParam unaccept_item_list = 9;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder getUnacceptItemListOrBuilder(
-        int index) {
-      return unacceptItemList_.get(index);
     }
 
     private byte memoizedIsInitialized = -1;
@@ -286,14 +286,14 @@ public final class WinterCampAcceptItemResultInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      for (int i = 0; i < acceptItemList_.size(); i++) {
-        output.writeMessage(2, acceptItemList_.get(i));
-      }
       if (uid_ != 0) {
-        output.writeUInt32(6, uid_);
+        output.writeUInt32(9, uid_);
       }
-      for (int i = 0; i < unacceptItemList_.size(); i++) {
-        output.writeMessage(9, unacceptItemList_.get(i));
+      for (int i = 0; i < unk3300JHKOMCFHAOG_.size(); i++) {
+        output.writeMessage(13, unk3300JHKOMCFHAOG_.get(i));
+      }
+      for (int i = 0; i < unk3300ILELLFNPDFJ_.size(); i++) {
+        output.writeMessage(15, unk3300ILELLFNPDFJ_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -304,17 +304,17 @@ public final class WinterCampAcceptItemResultInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      for (int i = 0; i < acceptItemList_.size(); i++) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(2, acceptItemList_.get(i));
-      }
       if (uid_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, uid_);
+          .computeUInt32Size(9, uid_);
       }
-      for (int i = 0; i < unacceptItemList_.size(); i++) {
+      for (int i = 0; i < unk3300JHKOMCFHAOG_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(9, unacceptItemList_.get(i));
+          .computeMessageSize(13, unk3300JHKOMCFHAOG_.get(i));
+      }
+      for (int i = 0; i < unk3300ILELLFNPDFJ_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(15, unk3300ILELLFNPDFJ_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -331,12 +331,12 @@ public final class WinterCampAcceptItemResultInfoOuterClass {
       }
       emu.grasscutter.net.proto.WinterCampAcceptItemResultInfoOuterClass.WinterCampAcceptItemResultInfo other = (emu.grasscutter.net.proto.WinterCampAcceptItemResultInfoOuterClass.WinterCampAcceptItemResultInfo) obj;
 
-      if (!getAcceptItemListList()
-          .equals(other.getAcceptItemListList())) return false;
+      if (!getUnk3300ILELLFNPDFJList()
+          .equals(other.getUnk3300ILELLFNPDFJList())) return false;
+      if (!getUnk3300JHKOMCFHAOGList()
+          .equals(other.getUnk3300JHKOMCFHAOGList())) return false;
       if (getUid()
           != other.getUid()) return false;
-      if (!getUnacceptItemListList()
-          .equals(other.getUnacceptItemListList())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -348,16 +348,16 @@ public final class WinterCampAcceptItemResultInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (getAcceptItemListCount() > 0) {
-        hash = (37 * hash) + ACCEPT_ITEM_LIST_FIELD_NUMBER;
-        hash = (53 * hash) + getAcceptItemListList().hashCode();
+      if (getUnk3300ILELLFNPDFJCount() > 0) {
+        hash = (37 * hash) + UNK3300_ILELLFNPDFJ_FIELD_NUMBER;
+        hash = (53 * hash) + getUnk3300ILELLFNPDFJList().hashCode();
+      }
+      if (getUnk3300JHKOMCFHAOGCount() > 0) {
+        hash = (37 * hash) + UNK3300_JHKOMCFHAOG_FIELD_NUMBER;
+        hash = (53 * hash) + getUnk3300JHKOMCFHAOGList().hashCode();
       }
       hash = (37 * hash) + UID_FIELD_NUMBER;
       hash = (53 * hash) + getUid();
-      if (getUnacceptItemListCount() > 0) {
-        hash = (37 * hash) + UNACCEPT_ITEM_LIST_FIELD_NUMBER;
-        hash = (53 * hash) + getUnacceptItemListList().hashCode();
-      }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -486,27 +486,27 @@ public final class WinterCampAcceptItemResultInfoOuterClass {
       private void maybeForceBuilderInitialization() {
         if (com.google.protobuf.GeneratedMessageV3
                 .alwaysUseFieldBuilders) {
-          getAcceptItemListFieldBuilder();
-          getUnacceptItemListFieldBuilder();
+          getUnk3300ILELLFNPDFJFieldBuilder();
+          getUnk3300JHKOMCFHAOGFieldBuilder();
         }
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        if (acceptItemListBuilder_ == null) {
-          acceptItemList_ = java.util.Collections.emptyList();
+        if (unk3300ILELLFNPDFJBuilder_ == null) {
+          unk3300ILELLFNPDFJ_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000001);
         } else {
-          acceptItemListBuilder_.clear();
+          unk3300ILELLFNPDFJBuilder_.clear();
+        }
+        if (unk3300JHKOMCFHAOGBuilder_ == null) {
+          unk3300JHKOMCFHAOG_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000002);
+        } else {
+          unk3300JHKOMCFHAOGBuilder_.clear();
         }
         uid_ = 0;
 
-        if (unacceptItemListBuilder_ == null) {
-          unacceptItemList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000002);
-        } else {
-          unacceptItemListBuilder_.clear();
-        }
         return this;
       }
 
@@ -534,25 +534,25 @@ public final class WinterCampAcceptItemResultInfoOuterClass {
       public emu.grasscutter.net.proto.WinterCampAcceptItemResultInfoOuterClass.WinterCampAcceptItemResultInfo buildPartial() {
         emu.grasscutter.net.proto.WinterCampAcceptItemResultInfoOuterClass.WinterCampAcceptItemResultInfo result = new emu.grasscutter.net.proto.WinterCampAcceptItemResultInfoOuterClass.WinterCampAcceptItemResultInfo(this);
         int from_bitField0_ = bitField0_;
-        if (acceptItemListBuilder_ == null) {
+        if (unk3300ILELLFNPDFJBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0)) {
-            acceptItemList_ = java.util.Collections.unmodifiableList(acceptItemList_);
+            unk3300ILELLFNPDFJ_ = java.util.Collections.unmodifiableList(unk3300ILELLFNPDFJ_);
             bitField0_ = (bitField0_ & ~0x00000001);
           }
-          result.acceptItemList_ = acceptItemList_;
+          result.unk3300ILELLFNPDFJ_ = unk3300ILELLFNPDFJ_;
         } else {
-          result.acceptItemList_ = acceptItemListBuilder_.build();
+          result.unk3300ILELLFNPDFJ_ = unk3300ILELLFNPDFJBuilder_.build();
         }
-        result.uid_ = uid_;
-        if (unacceptItemListBuilder_ == null) {
+        if (unk3300JHKOMCFHAOGBuilder_ == null) {
           if (((bitField0_ & 0x00000002) != 0)) {
-            unacceptItemList_ = java.util.Collections.unmodifiableList(unacceptItemList_);
+            unk3300JHKOMCFHAOG_ = java.util.Collections.unmodifiableList(unk3300JHKOMCFHAOG_);
             bitField0_ = (bitField0_ & ~0x00000002);
           }
-          result.unacceptItemList_ = unacceptItemList_;
+          result.unk3300JHKOMCFHAOG_ = unk3300JHKOMCFHAOG_;
         } else {
-          result.unacceptItemList_ = unacceptItemListBuilder_.build();
+          result.unk3300JHKOMCFHAOG_ = unk3300JHKOMCFHAOGBuilder_.build();
         }
+        result.uid_ = uid_;
         onBuilt();
         return result;
       }
@@ -601,60 +601,60 @@ public final class WinterCampAcceptItemResultInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.WinterCampAcceptItemResultInfoOuterClass.WinterCampAcceptItemResultInfo other) {
         if (other == emu.grasscutter.net.proto.WinterCampAcceptItemResultInfoOuterClass.WinterCampAcceptItemResultInfo.getDefaultInstance()) return this;
-        if (acceptItemListBuilder_ == null) {
-          if (!other.acceptItemList_.isEmpty()) {
-            if (acceptItemList_.isEmpty()) {
-              acceptItemList_ = other.acceptItemList_;
+        if (unk3300ILELLFNPDFJBuilder_ == null) {
+          if (!other.unk3300ILELLFNPDFJ_.isEmpty()) {
+            if (unk3300ILELLFNPDFJ_.isEmpty()) {
+              unk3300ILELLFNPDFJ_ = other.unk3300ILELLFNPDFJ_;
               bitField0_ = (bitField0_ & ~0x00000001);
             } else {
-              ensureAcceptItemListIsMutable();
-              acceptItemList_.addAll(other.acceptItemList_);
+              ensureUnk3300ILELLFNPDFJIsMutable();
+              unk3300ILELLFNPDFJ_.addAll(other.unk3300ILELLFNPDFJ_);
             }
             onChanged();
           }
         } else {
-          if (!other.acceptItemList_.isEmpty()) {
-            if (acceptItemListBuilder_.isEmpty()) {
-              acceptItemListBuilder_.dispose();
-              acceptItemListBuilder_ = null;
-              acceptItemList_ = other.acceptItemList_;
+          if (!other.unk3300ILELLFNPDFJ_.isEmpty()) {
+            if (unk3300ILELLFNPDFJBuilder_.isEmpty()) {
+              unk3300ILELLFNPDFJBuilder_.dispose();
+              unk3300ILELLFNPDFJBuilder_ = null;
+              unk3300ILELLFNPDFJ_ = other.unk3300ILELLFNPDFJ_;
               bitField0_ = (bitField0_ & ~0x00000001);
-              acceptItemListBuilder_ = 
+              unk3300ILELLFNPDFJBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
-                   getAcceptItemListFieldBuilder() : null;
+                   getUnk3300ILELLFNPDFJFieldBuilder() : null;
             } else {
-              acceptItemListBuilder_.addAllMessages(other.acceptItemList_);
+              unk3300ILELLFNPDFJBuilder_.addAllMessages(other.unk3300ILELLFNPDFJ_);
+            }
+          }
+        }
+        if (unk3300JHKOMCFHAOGBuilder_ == null) {
+          if (!other.unk3300JHKOMCFHAOG_.isEmpty()) {
+            if (unk3300JHKOMCFHAOG_.isEmpty()) {
+              unk3300JHKOMCFHAOG_ = other.unk3300JHKOMCFHAOG_;
+              bitField0_ = (bitField0_ & ~0x00000002);
+            } else {
+              ensureUnk3300JHKOMCFHAOGIsMutable();
+              unk3300JHKOMCFHAOG_.addAll(other.unk3300JHKOMCFHAOG_);
+            }
+            onChanged();
+          }
+        } else {
+          if (!other.unk3300JHKOMCFHAOG_.isEmpty()) {
+            if (unk3300JHKOMCFHAOGBuilder_.isEmpty()) {
+              unk3300JHKOMCFHAOGBuilder_.dispose();
+              unk3300JHKOMCFHAOGBuilder_ = null;
+              unk3300JHKOMCFHAOG_ = other.unk3300JHKOMCFHAOG_;
+              bitField0_ = (bitField0_ & ~0x00000002);
+              unk3300JHKOMCFHAOGBuilder_ = 
+                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+                   getUnk3300JHKOMCFHAOGFieldBuilder() : null;
+            } else {
+              unk3300JHKOMCFHAOGBuilder_.addAllMessages(other.unk3300JHKOMCFHAOG_);
             }
           }
         }
         if (other.getUid() != 0) {
           setUid(other.getUid());
-        }
-        if (unacceptItemListBuilder_ == null) {
-          if (!other.unacceptItemList_.isEmpty()) {
-            if (unacceptItemList_.isEmpty()) {
-              unacceptItemList_ = other.unacceptItemList_;
-              bitField0_ = (bitField0_ & ~0x00000002);
-            } else {
-              ensureUnacceptItemListIsMutable();
-              unacceptItemList_.addAll(other.unacceptItemList_);
-            }
-            onChanged();
-          }
-        } else {
-          if (!other.unacceptItemList_.isEmpty()) {
-            if (unacceptItemListBuilder_.isEmpty()) {
-              unacceptItemListBuilder_.dispose();
-              unacceptItemListBuilder_ = null;
-              unacceptItemList_ = other.unacceptItemList_;
-              bitField0_ = (bitField0_ & ~0x00000002);
-              unacceptItemListBuilder_ = 
-                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
-                   getUnacceptItemListFieldBuilder() : null;
-            } else {
-              unacceptItemListBuilder_.addAllMessages(other.unacceptItemList_);
-            }
-          }
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -686,249 +686,489 @@ public final class WinterCampAcceptItemResultInfoOuterClass {
       }
       private int bitField0_;
 
-      private java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> acceptItemList_ =
+      private java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> unk3300ILELLFNPDFJ_ =
         java.util.Collections.emptyList();
-      private void ensureAcceptItemListIsMutable() {
+      private void ensureUnk3300ILELLFNPDFJIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          acceptItemList_ = new java.util.ArrayList<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam>(acceptItemList_);
+          unk3300ILELLFNPDFJ_ = new java.util.ArrayList<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam>(unk3300ILELLFNPDFJ_);
           bitField0_ |= 0x00000001;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder> acceptItemListBuilder_;
+          emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder> unk3300ILELLFNPDFJBuilder_;
 
       /**
-       * <code>repeated .ItemParam accept_item_list = 2;</code>
+       * <code>repeated .ItemParam Unk3300_ILELLFNPDFJ = 15;</code>
        */
-      public java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> getAcceptItemListList() {
-        if (acceptItemListBuilder_ == null) {
-          return java.util.Collections.unmodifiableList(acceptItemList_);
+      public java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> getUnk3300ILELLFNPDFJList() {
+        if (unk3300ILELLFNPDFJBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(unk3300ILELLFNPDFJ_);
         } else {
-          return acceptItemListBuilder_.getMessageList();
+          return unk3300ILELLFNPDFJBuilder_.getMessageList();
         }
       }
       /**
-       * <code>repeated .ItemParam accept_item_list = 2;</code>
+       * <code>repeated .ItemParam Unk3300_ILELLFNPDFJ = 15;</code>
        */
-      public int getAcceptItemListCount() {
-        if (acceptItemListBuilder_ == null) {
-          return acceptItemList_.size();
+      public int getUnk3300ILELLFNPDFJCount() {
+        if (unk3300ILELLFNPDFJBuilder_ == null) {
+          return unk3300ILELLFNPDFJ_.size();
         } else {
-          return acceptItemListBuilder_.getCount();
+          return unk3300ILELLFNPDFJBuilder_.getCount();
         }
       }
       /**
-       * <code>repeated .ItemParam accept_item_list = 2;</code>
+       * <code>repeated .ItemParam Unk3300_ILELLFNPDFJ = 15;</code>
        */
-      public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam getAcceptItemList(int index) {
-        if (acceptItemListBuilder_ == null) {
-          return acceptItemList_.get(index);
+      public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam getUnk3300ILELLFNPDFJ(int index) {
+        if (unk3300ILELLFNPDFJBuilder_ == null) {
+          return unk3300ILELLFNPDFJ_.get(index);
         } else {
-          return acceptItemListBuilder_.getMessage(index);
+          return unk3300ILELLFNPDFJBuilder_.getMessage(index);
         }
       }
       /**
-       * <code>repeated .ItemParam accept_item_list = 2;</code>
+       * <code>repeated .ItemParam Unk3300_ILELLFNPDFJ = 15;</code>
        */
-      public Builder setAcceptItemList(
+      public Builder setUnk3300ILELLFNPDFJ(
           int index, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam value) {
-        if (acceptItemListBuilder_ == null) {
+        if (unk3300ILELLFNPDFJBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureAcceptItemListIsMutable();
-          acceptItemList_.set(index, value);
+          ensureUnk3300ILELLFNPDFJIsMutable();
+          unk3300ILELLFNPDFJ_.set(index, value);
           onChanged();
         } else {
-          acceptItemListBuilder_.setMessage(index, value);
+          unk3300ILELLFNPDFJBuilder_.setMessage(index, value);
         }
         return this;
       }
       /**
-       * <code>repeated .ItemParam accept_item_list = 2;</code>
+       * <code>repeated .ItemParam Unk3300_ILELLFNPDFJ = 15;</code>
        */
-      public Builder setAcceptItemList(
+      public Builder setUnk3300ILELLFNPDFJ(
           int index, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder builderForValue) {
-        if (acceptItemListBuilder_ == null) {
-          ensureAcceptItemListIsMutable();
-          acceptItemList_.set(index, builderForValue.build());
+        if (unk3300ILELLFNPDFJBuilder_ == null) {
+          ensureUnk3300ILELLFNPDFJIsMutable();
+          unk3300ILELLFNPDFJ_.set(index, builderForValue.build());
           onChanged();
         } else {
-          acceptItemListBuilder_.setMessage(index, builderForValue.build());
+          unk3300ILELLFNPDFJBuilder_.setMessage(index, builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .ItemParam accept_item_list = 2;</code>
+       * <code>repeated .ItemParam Unk3300_ILELLFNPDFJ = 15;</code>
        */
-      public Builder addAcceptItemList(emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam value) {
-        if (acceptItemListBuilder_ == null) {
+      public Builder addUnk3300ILELLFNPDFJ(emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam value) {
+        if (unk3300ILELLFNPDFJBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureAcceptItemListIsMutable();
-          acceptItemList_.add(value);
+          ensureUnk3300ILELLFNPDFJIsMutable();
+          unk3300ILELLFNPDFJ_.add(value);
           onChanged();
         } else {
-          acceptItemListBuilder_.addMessage(value);
+          unk3300ILELLFNPDFJBuilder_.addMessage(value);
         }
         return this;
       }
       /**
-       * <code>repeated .ItemParam accept_item_list = 2;</code>
+       * <code>repeated .ItemParam Unk3300_ILELLFNPDFJ = 15;</code>
        */
-      public Builder addAcceptItemList(
+      public Builder addUnk3300ILELLFNPDFJ(
           int index, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam value) {
-        if (acceptItemListBuilder_ == null) {
+        if (unk3300ILELLFNPDFJBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureAcceptItemListIsMutable();
-          acceptItemList_.add(index, value);
+          ensureUnk3300ILELLFNPDFJIsMutable();
+          unk3300ILELLFNPDFJ_.add(index, value);
           onChanged();
         } else {
-          acceptItemListBuilder_.addMessage(index, value);
+          unk3300ILELLFNPDFJBuilder_.addMessage(index, value);
         }
         return this;
       }
       /**
-       * <code>repeated .ItemParam accept_item_list = 2;</code>
+       * <code>repeated .ItemParam Unk3300_ILELLFNPDFJ = 15;</code>
        */
-      public Builder addAcceptItemList(
+      public Builder addUnk3300ILELLFNPDFJ(
           emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder builderForValue) {
-        if (acceptItemListBuilder_ == null) {
-          ensureAcceptItemListIsMutable();
-          acceptItemList_.add(builderForValue.build());
+        if (unk3300ILELLFNPDFJBuilder_ == null) {
+          ensureUnk3300ILELLFNPDFJIsMutable();
+          unk3300ILELLFNPDFJ_.add(builderForValue.build());
           onChanged();
         } else {
-          acceptItemListBuilder_.addMessage(builderForValue.build());
+          unk3300ILELLFNPDFJBuilder_.addMessage(builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .ItemParam accept_item_list = 2;</code>
+       * <code>repeated .ItemParam Unk3300_ILELLFNPDFJ = 15;</code>
        */
-      public Builder addAcceptItemList(
+      public Builder addUnk3300ILELLFNPDFJ(
           int index, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder builderForValue) {
-        if (acceptItemListBuilder_ == null) {
-          ensureAcceptItemListIsMutable();
-          acceptItemList_.add(index, builderForValue.build());
+        if (unk3300ILELLFNPDFJBuilder_ == null) {
+          ensureUnk3300ILELLFNPDFJIsMutable();
+          unk3300ILELLFNPDFJ_.add(index, builderForValue.build());
           onChanged();
         } else {
-          acceptItemListBuilder_.addMessage(index, builderForValue.build());
+          unk3300ILELLFNPDFJBuilder_.addMessage(index, builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .ItemParam accept_item_list = 2;</code>
+       * <code>repeated .ItemParam Unk3300_ILELLFNPDFJ = 15;</code>
        */
-      public Builder addAllAcceptItemList(
+      public Builder addAllUnk3300ILELLFNPDFJ(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> values) {
-        if (acceptItemListBuilder_ == null) {
-          ensureAcceptItemListIsMutable();
+        if (unk3300ILELLFNPDFJBuilder_ == null) {
+          ensureUnk3300ILELLFNPDFJIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
-              values, acceptItemList_);
+              values, unk3300ILELLFNPDFJ_);
           onChanged();
         } else {
-          acceptItemListBuilder_.addAllMessages(values);
+          unk3300ILELLFNPDFJBuilder_.addAllMessages(values);
         }
         return this;
       }
       /**
-       * <code>repeated .ItemParam accept_item_list = 2;</code>
+       * <code>repeated .ItemParam Unk3300_ILELLFNPDFJ = 15;</code>
        */
-      public Builder clearAcceptItemList() {
-        if (acceptItemListBuilder_ == null) {
-          acceptItemList_ = java.util.Collections.emptyList();
+      public Builder clearUnk3300ILELLFNPDFJ() {
+        if (unk3300ILELLFNPDFJBuilder_ == null) {
+          unk3300ILELLFNPDFJ_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000001);
           onChanged();
         } else {
-          acceptItemListBuilder_.clear();
+          unk3300ILELLFNPDFJBuilder_.clear();
         }
         return this;
       }
       /**
-       * <code>repeated .ItemParam accept_item_list = 2;</code>
+       * <code>repeated .ItemParam Unk3300_ILELLFNPDFJ = 15;</code>
        */
-      public Builder removeAcceptItemList(int index) {
-        if (acceptItemListBuilder_ == null) {
-          ensureAcceptItemListIsMutable();
-          acceptItemList_.remove(index);
+      public Builder removeUnk3300ILELLFNPDFJ(int index) {
+        if (unk3300ILELLFNPDFJBuilder_ == null) {
+          ensureUnk3300ILELLFNPDFJIsMutable();
+          unk3300ILELLFNPDFJ_.remove(index);
           onChanged();
         } else {
-          acceptItemListBuilder_.remove(index);
+          unk3300ILELLFNPDFJBuilder_.remove(index);
         }
         return this;
       }
       /**
-       * <code>repeated .ItemParam accept_item_list = 2;</code>
+       * <code>repeated .ItemParam Unk3300_ILELLFNPDFJ = 15;</code>
        */
-      public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder getAcceptItemListBuilder(
+      public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder getUnk3300ILELLFNPDFJBuilder(
           int index) {
-        return getAcceptItemListFieldBuilder().getBuilder(index);
+        return getUnk3300ILELLFNPDFJFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .ItemParam accept_item_list = 2;</code>
+       * <code>repeated .ItemParam Unk3300_ILELLFNPDFJ = 15;</code>
        */
-      public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder getAcceptItemListOrBuilder(
+      public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder getUnk3300ILELLFNPDFJOrBuilder(
           int index) {
-        if (acceptItemListBuilder_ == null) {
-          return acceptItemList_.get(index);  } else {
-          return acceptItemListBuilder_.getMessageOrBuilder(index);
+        if (unk3300ILELLFNPDFJBuilder_ == null) {
+          return unk3300ILELLFNPDFJ_.get(index);  } else {
+          return unk3300ILELLFNPDFJBuilder_.getMessageOrBuilder(index);
         }
       }
       /**
-       * <code>repeated .ItemParam accept_item_list = 2;</code>
+       * <code>repeated .ItemParam Unk3300_ILELLFNPDFJ = 15;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder> 
-           getAcceptItemListOrBuilderList() {
-        if (acceptItemListBuilder_ != null) {
-          return acceptItemListBuilder_.getMessageOrBuilderList();
+           getUnk3300ILELLFNPDFJOrBuilderList() {
+        if (unk3300ILELLFNPDFJBuilder_ != null) {
+          return unk3300ILELLFNPDFJBuilder_.getMessageOrBuilderList();
         } else {
-          return java.util.Collections.unmodifiableList(acceptItemList_);
+          return java.util.Collections.unmodifiableList(unk3300ILELLFNPDFJ_);
         }
       }
       /**
-       * <code>repeated .ItemParam accept_item_list = 2;</code>
+       * <code>repeated .ItemParam Unk3300_ILELLFNPDFJ = 15;</code>
        */
-      public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder addAcceptItemListBuilder() {
-        return getAcceptItemListFieldBuilder().addBuilder(
+      public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder addUnk3300ILELLFNPDFJBuilder() {
+        return getUnk3300ILELLFNPDFJFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.getDefaultInstance());
       }
       /**
-       * <code>repeated .ItemParam accept_item_list = 2;</code>
+       * <code>repeated .ItemParam Unk3300_ILELLFNPDFJ = 15;</code>
        */
-      public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder addAcceptItemListBuilder(
+      public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder addUnk3300ILELLFNPDFJBuilder(
           int index) {
-        return getAcceptItemListFieldBuilder().addBuilder(
+        return getUnk3300ILELLFNPDFJFieldBuilder().addBuilder(
             index, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.getDefaultInstance());
       }
       /**
-       * <code>repeated .ItemParam accept_item_list = 2;</code>
+       * <code>repeated .ItemParam Unk3300_ILELLFNPDFJ = 15;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder> 
-           getAcceptItemListBuilderList() {
-        return getAcceptItemListFieldBuilder().getBuilderList();
+           getUnk3300ILELLFNPDFJBuilderList() {
+        return getUnk3300ILELLFNPDFJFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilderV3<
           emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder> 
-          getAcceptItemListFieldBuilder() {
-        if (acceptItemListBuilder_ == null) {
-          acceptItemListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+          getUnk3300ILELLFNPDFJFieldBuilder() {
+        if (unk3300ILELLFNPDFJBuilder_ == null) {
+          unk3300ILELLFNPDFJBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
               emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder>(
-                  acceptItemList_,
+                  unk3300ILELLFNPDFJ_,
                   ((bitField0_ & 0x00000001) != 0),
                   getParentForChildren(),
                   isClean());
-          acceptItemList_ = null;
+          unk3300ILELLFNPDFJ_ = null;
         }
-        return acceptItemListBuilder_;
+        return unk3300ILELLFNPDFJBuilder_;
+      }
+
+      private java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> unk3300JHKOMCFHAOG_ =
+        java.util.Collections.emptyList();
+      private void ensureUnk3300JHKOMCFHAOGIsMutable() {
+        if (!((bitField0_ & 0x00000002) != 0)) {
+          unk3300JHKOMCFHAOG_ = new java.util.ArrayList<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam>(unk3300JHKOMCFHAOG_);
+          bitField0_ |= 0x00000002;
+         }
+      }
+
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder> unk3300JHKOMCFHAOGBuilder_;
+
+      /**
+       * <code>repeated .ItemParam Unk3300_JHKOMCFHAOG = 13;</code>
+       */
+      public java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> getUnk3300JHKOMCFHAOGList() {
+        if (unk3300JHKOMCFHAOGBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(unk3300JHKOMCFHAOG_);
+        } else {
+          return unk3300JHKOMCFHAOGBuilder_.getMessageList();
+        }
+      }
+      /**
+       * <code>repeated .ItemParam Unk3300_JHKOMCFHAOG = 13;</code>
+       */
+      public int getUnk3300JHKOMCFHAOGCount() {
+        if (unk3300JHKOMCFHAOGBuilder_ == null) {
+          return unk3300JHKOMCFHAOG_.size();
+        } else {
+          return unk3300JHKOMCFHAOGBuilder_.getCount();
+        }
+      }
+      /**
+       * <code>repeated .ItemParam Unk3300_JHKOMCFHAOG = 13;</code>
+       */
+      public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam getUnk3300JHKOMCFHAOG(int index) {
+        if (unk3300JHKOMCFHAOGBuilder_ == null) {
+          return unk3300JHKOMCFHAOG_.get(index);
+        } else {
+          return unk3300JHKOMCFHAOGBuilder_.getMessage(index);
+        }
+      }
+      /**
+       * <code>repeated .ItemParam Unk3300_JHKOMCFHAOG = 13;</code>
+       */
+      public Builder setUnk3300JHKOMCFHAOG(
+          int index, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam value) {
+        if (unk3300JHKOMCFHAOGBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureUnk3300JHKOMCFHAOGIsMutable();
+          unk3300JHKOMCFHAOG_.set(index, value);
+          onChanged();
+        } else {
+          unk3300JHKOMCFHAOGBuilder_.setMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .ItemParam Unk3300_JHKOMCFHAOG = 13;</code>
+       */
+      public Builder setUnk3300JHKOMCFHAOG(
+          int index, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder builderForValue) {
+        if (unk3300JHKOMCFHAOGBuilder_ == null) {
+          ensureUnk3300JHKOMCFHAOGIsMutable();
+          unk3300JHKOMCFHAOG_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          unk3300JHKOMCFHAOGBuilder_.setMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .ItemParam Unk3300_JHKOMCFHAOG = 13;</code>
+       */
+      public Builder addUnk3300JHKOMCFHAOG(emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam value) {
+        if (unk3300JHKOMCFHAOGBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureUnk3300JHKOMCFHAOGIsMutable();
+          unk3300JHKOMCFHAOG_.add(value);
+          onChanged();
+        } else {
+          unk3300JHKOMCFHAOGBuilder_.addMessage(value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .ItemParam Unk3300_JHKOMCFHAOG = 13;</code>
+       */
+      public Builder addUnk3300JHKOMCFHAOG(
+          int index, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam value) {
+        if (unk3300JHKOMCFHAOGBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureUnk3300JHKOMCFHAOGIsMutable();
+          unk3300JHKOMCFHAOG_.add(index, value);
+          onChanged();
+        } else {
+          unk3300JHKOMCFHAOGBuilder_.addMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .ItemParam Unk3300_JHKOMCFHAOG = 13;</code>
+       */
+      public Builder addUnk3300JHKOMCFHAOG(
+          emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder builderForValue) {
+        if (unk3300JHKOMCFHAOGBuilder_ == null) {
+          ensureUnk3300JHKOMCFHAOGIsMutable();
+          unk3300JHKOMCFHAOG_.add(builderForValue.build());
+          onChanged();
+        } else {
+          unk3300JHKOMCFHAOGBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .ItemParam Unk3300_JHKOMCFHAOG = 13;</code>
+       */
+      public Builder addUnk3300JHKOMCFHAOG(
+          int index, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder builderForValue) {
+        if (unk3300JHKOMCFHAOGBuilder_ == null) {
+          ensureUnk3300JHKOMCFHAOGIsMutable();
+          unk3300JHKOMCFHAOG_.add(index, builderForValue.build());
+          onChanged();
+        } else {
+          unk3300JHKOMCFHAOGBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .ItemParam Unk3300_JHKOMCFHAOG = 13;</code>
+       */
+      public Builder addAllUnk3300JHKOMCFHAOG(
+          java.lang.Iterable<? extends emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> values) {
+        if (unk3300JHKOMCFHAOGBuilder_ == null) {
+          ensureUnk3300JHKOMCFHAOGIsMutable();
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, unk3300JHKOMCFHAOG_);
+          onChanged();
+        } else {
+          unk3300JHKOMCFHAOGBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .ItemParam Unk3300_JHKOMCFHAOG = 13;</code>
+       */
+      public Builder clearUnk3300JHKOMCFHAOG() {
+        if (unk3300JHKOMCFHAOGBuilder_ == null) {
+          unk3300JHKOMCFHAOG_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000002);
+          onChanged();
+        } else {
+          unk3300JHKOMCFHAOGBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .ItemParam Unk3300_JHKOMCFHAOG = 13;</code>
+       */
+      public Builder removeUnk3300JHKOMCFHAOG(int index) {
+        if (unk3300JHKOMCFHAOGBuilder_ == null) {
+          ensureUnk3300JHKOMCFHAOGIsMutable();
+          unk3300JHKOMCFHAOG_.remove(index);
+          onChanged();
+        } else {
+          unk3300JHKOMCFHAOGBuilder_.remove(index);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .ItemParam Unk3300_JHKOMCFHAOG = 13;</code>
+       */
+      public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder getUnk3300JHKOMCFHAOGBuilder(
+          int index) {
+        return getUnk3300JHKOMCFHAOGFieldBuilder().getBuilder(index);
+      }
+      /**
+       * <code>repeated .ItemParam Unk3300_JHKOMCFHAOG = 13;</code>
+       */
+      public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder getUnk3300JHKOMCFHAOGOrBuilder(
+          int index) {
+        if (unk3300JHKOMCFHAOGBuilder_ == null) {
+          return unk3300JHKOMCFHAOG_.get(index);  } else {
+          return unk3300JHKOMCFHAOGBuilder_.getMessageOrBuilder(index);
+        }
+      }
+      /**
+       * <code>repeated .ItemParam Unk3300_JHKOMCFHAOG = 13;</code>
+       */
+      public java.util.List<? extends emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder> 
+           getUnk3300JHKOMCFHAOGOrBuilderList() {
+        if (unk3300JHKOMCFHAOGBuilder_ != null) {
+          return unk3300JHKOMCFHAOGBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(unk3300JHKOMCFHAOG_);
+        }
+      }
+      /**
+       * <code>repeated .ItemParam Unk3300_JHKOMCFHAOG = 13;</code>
+       */
+      public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder addUnk3300JHKOMCFHAOGBuilder() {
+        return getUnk3300JHKOMCFHAOGFieldBuilder().addBuilder(
+            emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .ItemParam Unk3300_JHKOMCFHAOG = 13;</code>
+       */
+      public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder addUnk3300JHKOMCFHAOGBuilder(
+          int index) {
+        return getUnk3300JHKOMCFHAOGFieldBuilder().addBuilder(
+            index, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .ItemParam Unk3300_JHKOMCFHAOG = 13;</code>
+       */
+      public java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder> 
+           getUnk3300JHKOMCFHAOGBuilderList() {
+        return getUnk3300JHKOMCFHAOGFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder> 
+          getUnk3300JHKOMCFHAOGFieldBuilder() {
+        if (unk3300JHKOMCFHAOGBuilder_ == null) {
+          unk3300JHKOMCFHAOGBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+              emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder>(
+                  unk3300JHKOMCFHAOG_,
+                  ((bitField0_ & 0x00000002) != 0),
+                  getParentForChildren(),
+                  isClean());
+          unk3300JHKOMCFHAOG_ = null;
+        }
+        return unk3300JHKOMCFHAOGBuilder_;
       }
 
       private int uid_ ;
       /**
-       * <code>uint32 uid = 6;</code>
+       * <code>uint32 uid = 9;</code>
        * @return The uid.
        */
       @java.lang.Override
@@ -936,7 +1176,7 @@ public final class WinterCampAcceptItemResultInfoOuterClass {
         return uid_;
       }
       /**
-       * <code>uint32 uid = 6;</code>
+       * <code>uint32 uid = 9;</code>
        * @param value The uid to set.
        * @return This builder for chaining.
        */
@@ -947,7 +1187,7 @@ public final class WinterCampAcceptItemResultInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 uid = 6;</code>
+       * <code>uint32 uid = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearUid() {
@@ -955,246 +1195,6 @@ public final class WinterCampAcceptItemResultInfoOuterClass {
         uid_ = 0;
         onChanged();
         return this;
-      }
-
-      private java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> unacceptItemList_ =
-        java.util.Collections.emptyList();
-      private void ensureUnacceptItemListIsMutable() {
-        if (!((bitField0_ & 0x00000002) != 0)) {
-          unacceptItemList_ = new java.util.ArrayList<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam>(unacceptItemList_);
-          bitField0_ |= 0x00000002;
-         }
-      }
-
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder> unacceptItemListBuilder_;
-
-      /**
-       * <code>repeated .ItemParam unaccept_item_list = 9;</code>
-       */
-      public java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> getUnacceptItemListList() {
-        if (unacceptItemListBuilder_ == null) {
-          return java.util.Collections.unmodifiableList(unacceptItemList_);
-        } else {
-          return unacceptItemListBuilder_.getMessageList();
-        }
-      }
-      /**
-       * <code>repeated .ItemParam unaccept_item_list = 9;</code>
-       */
-      public int getUnacceptItemListCount() {
-        if (unacceptItemListBuilder_ == null) {
-          return unacceptItemList_.size();
-        } else {
-          return unacceptItemListBuilder_.getCount();
-        }
-      }
-      /**
-       * <code>repeated .ItemParam unaccept_item_list = 9;</code>
-       */
-      public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam getUnacceptItemList(int index) {
-        if (unacceptItemListBuilder_ == null) {
-          return unacceptItemList_.get(index);
-        } else {
-          return unacceptItemListBuilder_.getMessage(index);
-        }
-      }
-      /**
-       * <code>repeated .ItemParam unaccept_item_list = 9;</code>
-       */
-      public Builder setUnacceptItemList(
-          int index, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam value) {
-        if (unacceptItemListBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureUnacceptItemListIsMutable();
-          unacceptItemList_.set(index, value);
-          onChanged();
-        } else {
-          unacceptItemListBuilder_.setMessage(index, value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .ItemParam unaccept_item_list = 9;</code>
-       */
-      public Builder setUnacceptItemList(
-          int index, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder builderForValue) {
-        if (unacceptItemListBuilder_ == null) {
-          ensureUnacceptItemListIsMutable();
-          unacceptItemList_.set(index, builderForValue.build());
-          onChanged();
-        } else {
-          unacceptItemListBuilder_.setMessage(index, builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .ItemParam unaccept_item_list = 9;</code>
-       */
-      public Builder addUnacceptItemList(emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam value) {
-        if (unacceptItemListBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureUnacceptItemListIsMutable();
-          unacceptItemList_.add(value);
-          onChanged();
-        } else {
-          unacceptItemListBuilder_.addMessage(value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .ItemParam unaccept_item_list = 9;</code>
-       */
-      public Builder addUnacceptItemList(
-          int index, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam value) {
-        if (unacceptItemListBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureUnacceptItemListIsMutable();
-          unacceptItemList_.add(index, value);
-          onChanged();
-        } else {
-          unacceptItemListBuilder_.addMessage(index, value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .ItemParam unaccept_item_list = 9;</code>
-       */
-      public Builder addUnacceptItemList(
-          emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder builderForValue) {
-        if (unacceptItemListBuilder_ == null) {
-          ensureUnacceptItemListIsMutable();
-          unacceptItemList_.add(builderForValue.build());
-          onChanged();
-        } else {
-          unacceptItemListBuilder_.addMessage(builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .ItemParam unaccept_item_list = 9;</code>
-       */
-      public Builder addUnacceptItemList(
-          int index, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder builderForValue) {
-        if (unacceptItemListBuilder_ == null) {
-          ensureUnacceptItemListIsMutable();
-          unacceptItemList_.add(index, builderForValue.build());
-          onChanged();
-        } else {
-          unacceptItemListBuilder_.addMessage(index, builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .ItemParam unaccept_item_list = 9;</code>
-       */
-      public Builder addAllUnacceptItemList(
-          java.lang.Iterable<? extends emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> values) {
-        if (unacceptItemListBuilder_ == null) {
-          ensureUnacceptItemListIsMutable();
-          com.google.protobuf.AbstractMessageLite.Builder.addAll(
-              values, unacceptItemList_);
-          onChanged();
-        } else {
-          unacceptItemListBuilder_.addAllMessages(values);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .ItemParam unaccept_item_list = 9;</code>
-       */
-      public Builder clearUnacceptItemList() {
-        if (unacceptItemListBuilder_ == null) {
-          unacceptItemList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000002);
-          onChanged();
-        } else {
-          unacceptItemListBuilder_.clear();
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .ItemParam unaccept_item_list = 9;</code>
-       */
-      public Builder removeUnacceptItemList(int index) {
-        if (unacceptItemListBuilder_ == null) {
-          ensureUnacceptItemListIsMutable();
-          unacceptItemList_.remove(index);
-          onChanged();
-        } else {
-          unacceptItemListBuilder_.remove(index);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .ItemParam unaccept_item_list = 9;</code>
-       */
-      public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder getUnacceptItemListBuilder(
-          int index) {
-        return getUnacceptItemListFieldBuilder().getBuilder(index);
-      }
-      /**
-       * <code>repeated .ItemParam unaccept_item_list = 9;</code>
-       */
-      public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder getUnacceptItemListOrBuilder(
-          int index) {
-        if (unacceptItemListBuilder_ == null) {
-          return unacceptItemList_.get(index);  } else {
-          return unacceptItemListBuilder_.getMessageOrBuilder(index);
-        }
-      }
-      /**
-       * <code>repeated .ItemParam unaccept_item_list = 9;</code>
-       */
-      public java.util.List<? extends emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder> 
-           getUnacceptItemListOrBuilderList() {
-        if (unacceptItemListBuilder_ != null) {
-          return unacceptItemListBuilder_.getMessageOrBuilderList();
-        } else {
-          return java.util.Collections.unmodifiableList(unacceptItemList_);
-        }
-      }
-      /**
-       * <code>repeated .ItemParam unaccept_item_list = 9;</code>
-       */
-      public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder addUnacceptItemListBuilder() {
-        return getUnacceptItemListFieldBuilder().addBuilder(
-            emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.getDefaultInstance());
-      }
-      /**
-       * <code>repeated .ItemParam unaccept_item_list = 9;</code>
-       */
-      public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder addUnacceptItemListBuilder(
-          int index) {
-        return getUnacceptItemListFieldBuilder().addBuilder(
-            index, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.getDefaultInstance());
-      }
-      /**
-       * <code>repeated .ItemParam unaccept_item_list = 9;</code>
-       */
-      public java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder> 
-           getUnacceptItemListBuilderList() {
-        return getUnacceptItemListFieldBuilder().getBuilderList();
-      }
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder> 
-          getUnacceptItemListFieldBuilder() {
-        if (unacceptItemListBuilder_ == null) {
-          unacceptItemListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder>(
-                  unacceptItemList_,
-                  ((bitField0_ & 0x00000002) != 0),
-                  getParentForChildren(),
-                  isClean());
-          unacceptItemList_ = null;
-        }
-        return unacceptItemListBuilder_;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -1264,11 +1264,11 @@ public final class WinterCampAcceptItemResultInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n$WinterCampAcceptItemResultInfo.proto\032\017" +
-      "ItemParam.proto\"{\n\036WinterCampAcceptItemR" +
-      "esultInfo\022$\n\020accept_item_list\030\002 \003(\0132\n.It" +
-      "emParam\022\013\n\003uid\030\006 \001(\r\022&\n\022unaccept_item_li" +
-      "st\030\t \003(\0132\n.ItemParamB\033\n\031emu.grasscutter." +
-      "net.protob\006proto3"
+      "ItemParam.proto\"\177\n\036WinterCampAcceptItemR" +
+      "esultInfo\022\'\n\023Unk3300_ILELLFNPDFJ\030\017 \003(\0132\n" +
+      ".ItemParam\022\'\n\023Unk3300_JHKOMCFHAOG\030\r \003(\0132" +
+      "\n.ItemParam\022\013\n\003uid\030\t \001(\rB\033\n\031emu.grasscut" +
+      "ter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -1280,7 +1280,7 @@ public final class WinterCampAcceptItemResultInfoOuterClass {
     internal_static_WinterCampAcceptItemResultInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_WinterCampAcceptItemResultInfo_descriptor,
-        new java.lang.String[] { "AcceptItemList", "Uid", "UnacceptItemList", });
+        new java.lang.String[] { "Unk3300ILELLFNPDFJ", "Unk3300JHKOMCFHAOG", "Uid", });
     emu.grasscutter.net.proto.ItemParamOuterClass.getDescriptor();
   }
 

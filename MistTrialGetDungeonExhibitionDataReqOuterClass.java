@@ -19,17 +19,21 @@ public final class MistTrialGetDungeonExhibitionDataReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 trial_id = 13;</code>
+     * <code>uint32 trial_id = 6;</code>
      * @return The trialId.
      */
     int getTrialId();
   }
   /**
    * <pre>
-   * CmdId: 8740
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 8983;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code MistTrialGetDungeonExhibitionDataReq}
@@ -76,7 +80,7 @@ public final class MistTrialGetDungeonExhibitionDataReqOuterClass {
             case 0:
               done = true;
               break;
-            case 104: {
+            case 48: {
 
               trialId_ = input.readUInt32();
               break;
@@ -113,10 +117,10 @@ public final class MistTrialGetDungeonExhibitionDataReqOuterClass {
               emu.grasscutter.net.proto.MistTrialGetDungeonExhibitionDataReqOuterClass.MistTrialGetDungeonExhibitionDataReq.class, emu.grasscutter.net.proto.MistTrialGetDungeonExhibitionDataReqOuterClass.MistTrialGetDungeonExhibitionDataReq.Builder.class);
     }
 
-    public static final int TRIAL_ID_FIELD_NUMBER = 13;
+    public static final int TRIAL_ID_FIELD_NUMBER = 6;
     private int trialId_;
     /**
-     * <code>uint32 trial_id = 13;</code>
+     * <code>uint32 trial_id = 6;</code>
      * @return The trialId.
      */
     @java.lang.Override
@@ -139,7 +143,7 @@ public final class MistTrialGetDungeonExhibitionDataReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (trialId_ != 0) {
-        output.writeUInt32(13, trialId_);
+        output.writeUInt32(6, trialId_);
       }
       unknownFields.writeTo(output);
     }
@@ -152,7 +156,7 @@ public final class MistTrialGetDungeonExhibitionDataReqOuterClass {
       size = 0;
       if (trialId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, trialId_);
+          .computeUInt32Size(6, trialId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -281,10 +285,14 @@ public final class MistTrialGetDungeonExhibitionDataReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 8740
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 8983;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code MistTrialGetDungeonExhibitionDataReq}
@@ -435,7 +443,7 @@ public final class MistTrialGetDungeonExhibitionDataReqOuterClass {
 
       private int trialId_ ;
       /**
-       * <code>uint32 trial_id = 13;</code>
+       * <code>uint32 trial_id = 6;</code>
        * @return The trialId.
        */
       @java.lang.Override
@@ -443,7 +451,7 @@ public final class MistTrialGetDungeonExhibitionDataReqOuterClass {
         return trialId_;
       }
       /**
-       * <code>uint32 trial_id = 13;</code>
+       * <code>uint32 trial_id = 6;</code>
        * @param value The trialId to set.
        * @return This builder for chaining.
        */
@@ -454,7 +462,7 @@ public final class MistTrialGetDungeonExhibitionDataReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 trial_id = 13;</code>
+       * <code>uint32 trial_id = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearTrialId() {
@@ -532,7 +540,7 @@ public final class MistTrialGetDungeonExhibitionDataReqOuterClass {
     java.lang.String[] descriptorData = {
       "\n*MistTrialGetDungeonExhibitionDataReq.p" +
       "roto\"8\n$MistTrialGetDungeonExhibitionDat" +
-      "aReq\022\020\n\010trial_id\030\r \001(\rB\033\n\031emu.grasscutte" +
+      "aReq\022\020\n\010trial_id\030\006 \001(\rB\033\n\031emu.grasscutte" +
       "r.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

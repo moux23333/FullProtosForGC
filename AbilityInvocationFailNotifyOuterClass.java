@@ -19,43 +19,47 @@ public final class AbilityInvocationFailNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>string reason = 7;</code>
+     * <code>uint32 entity_id = 4;</code>
+     * @return The entityId.
+     */
+    int getEntityId();
+
+    /**
+     * <code>string reason = 8;</code>
      * @return The reason.
      */
     java.lang.String getReason();
     /**
-     * <code>string reason = 7;</code>
+     * <code>string reason = 8;</code>
      * @return The bytes for reason.
      */
     com.google.protobuf.ByteString
         getReasonBytes();
 
     /**
-     * <code>uint32 entity_id = 13;</code>
-     * @return The entityId.
-     */
-    int getEntityId();
-
-    /**
-     * <code>.AbilityInvokeEntry invoke = 3;</code>
+     * <code>.AbilityInvokeEntry invoke = 11;</code>
      * @return Whether the invoke field is set.
      */
     boolean hasInvoke();
     /**
-     * <code>.AbilityInvokeEntry invoke = 3;</code>
+     * <code>.AbilityInvokeEntry invoke = 11;</code>
      * @return The invoke.
      */
     emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry getInvoke();
     /**
-     * <code>.AbilityInvokeEntry invoke = 3;</code>
+     * <code>.AbilityInvokeEntry invoke = 11;</code>
      */
     emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntryOrBuilder getInvokeOrBuilder();
   }
   /**
    * <pre>
-   * CmdId: 1107
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 1200;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code AbilityInvocationFailNotify}
@@ -103,7 +107,18 @@ public final class AbilityInvocationFailNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 26: {
+            case 32: {
+
+              entityId_ = input.readUInt32();
+              break;
+            }
+            case 66: {
+              java.lang.String s = input.readStringRequireUtf8();
+
+              reason_ = s;
+              break;
+            }
+            case 90: {
               emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry.Builder subBuilder = null;
               if (invoke_ != null) {
                 subBuilder = invoke_.toBuilder();
@@ -114,17 +129,6 @@ public final class AbilityInvocationFailNotifyOuterClass {
                 invoke_ = subBuilder.buildPartial();
               }
 
-              break;
-            }
-            case 58: {
-              java.lang.String s = input.readStringRequireUtf8();
-
-              reason_ = s;
-              break;
-            }
-            case 104: {
-
-              entityId_ = input.readUInt32();
               break;
             }
             default: {
@@ -159,10 +163,21 @@ public final class AbilityInvocationFailNotifyOuterClass {
               emu.grasscutter.net.proto.AbilityInvocationFailNotifyOuterClass.AbilityInvocationFailNotify.class, emu.grasscutter.net.proto.AbilityInvocationFailNotifyOuterClass.AbilityInvocationFailNotify.Builder.class);
     }
 
-    public static final int REASON_FIELD_NUMBER = 7;
+    public static final int ENTITY_ID_FIELD_NUMBER = 4;
+    private int entityId_;
+    /**
+     * <code>uint32 entity_id = 4;</code>
+     * @return The entityId.
+     */
+    @java.lang.Override
+    public int getEntityId() {
+      return entityId_;
+    }
+
+    public static final int REASON_FIELD_NUMBER = 8;
     private volatile java.lang.Object reason_;
     /**
-     * <code>string reason = 7;</code>
+     * <code>string reason = 8;</code>
      * @return The reason.
      */
     @java.lang.Override
@@ -179,7 +194,7 @@ public final class AbilityInvocationFailNotifyOuterClass {
       }
     }
     /**
-     * <code>string reason = 7;</code>
+     * <code>string reason = 8;</code>
      * @return The bytes for reason.
      */
     @java.lang.Override
@@ -197,21 +212,10 @@ public final class AbilityInvocationFailNotifyOuterClass {
       }
     }
 
-    public static final int ENTITY_ID_FIELD_NUMBER = 13;
-    private int entityId_;
-    /**
-     * <code>uint32 entity_id = 13;</code>
-     * @return The entityId.
-     */
-    @java.lang.Override
-    public int getEntityId() {
-      return entityId_;
-    }
-
-    public static final int INVOKE_FIELD_NUMBER = 3;
+    public static final int INVOKE_FIELD_NUMBER = 11;
     private emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry invoke_;
     /**
-     * <code>.AbilityInvokeEntry invoke = 3;</code>
+     * <code>.AbilityInvokeEntry invoke = 11;</code>
      * @return Whether the invoke field is set.
      */
     @java.lang.Override
@@ -219,7 +223,7 @@ public final class AbilityInvocationFailNotifyOuterClass {
       return invoke_ != null;
     }
     /**
-     * <code>.AbilityInvokeEntry invoke = 3;</code>
+     * <code>.AbilityInvokeEntry invoke = 11;</code>
      * @return The invoke.
      */
     @java.lang.Override
@@ -227,7 +231,7 @@ public final class AbilityInvocationFailNotifyOuterClass {
       return invoke_ == null ? emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry.getDefaultInstance() : invoke_;
     }
     /**
-     * <code>.AbilityInvokeEntry invoke = 3;</code>
+     * <code>.AbilityInvokeEntry invoke = 11;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntryOrBuilder getInvokeOrBuilder() {
@@ -248,14 +252,14 @@ public final class AbilityInvocationFailNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (invoke_ != null) {
-        output.writeMessage(3, getInvoke());
+      if (entityId_ != 0) {
+        output.writeUInt32(4, entityId_);
       }
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(reason_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 7, reason_);
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 8, reason_);
       }
-      if (entityId_ != 0) {
-        output.writeUInt32(13, entityId_);
+      if (invoke_ != null) {
+        output.writeMessage(11, getInvoke());
       }
       unknownFields.writeTo(output);
     }
@@ -266,16 +270,16 @@ public final class AbilityInvocationFailNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (invoke_ != null) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(3, getInvoke());
-      }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(reason_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(7, reason_);
-      }
       if (entityId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, entityId_);
+          .computeUInt32Size(4, entityId_);
+      }
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(reason_)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(8, reason_);
+      }
+      if (invoke_ != null) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(11, getInvoke());
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -292,10 +296,10 @@ public final class AbilityInvocationFailNotifyOuterClass {
       }
       emu.grasscutter.net.proto.AbilityInvocationFailNotifyOuterClass.AbilityInvocationFailNotify other = (emu.grasscutter.net.proto.AbilityInvocationFailNotifyOuterClass.AbilityInvocationFailNotify) obj;
 
-      if (!getReason()
-          .equals(other.getReason())) return false;
       if (getEntityId()
           != other.getEntityId()) return false;
+      if (!getReason()
+          .equals(other.getReason())) return false;
       if (hasInvoke() != other.hasInvoke()) return false;
       if (hasInvoke()) {
         if (!getInvoke()
@@ -312,10 +316,10 @@ public final class AbilityInvocationFailNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + REASON_FIELD_NUMBER;
-      hash = (53 * hash) + getReason().hashCode();
       hash = (37 * hash) + ENTITY_ID_FIELD_NUMBER;
       hash = (53 * hash) + getEntityId();
+      hash = (37 * hash) + REASON_FIELD_NUMBER;
+      hash = (53 * hash) + getReason().hashCode();
       if (hasInvoke()) {
         hash = (37 * hash) + INVOKE_FIELD_NUMBER;
         hash = (53 * hash) + getInvoke().hashCode();
@@ -417,9 +421,13 @@ public final class AbilityInvocationFailNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 1107
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 1200;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code AbilityInvocationFailNotify}
@@ -459,9 +467,9 @@ public final class AbilityInvocationFailNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        reason_ = "";
-
         entityId_ = 0;
+
+        reason_ = "";
 
         if (invokeBuilder_ == null) {
           invoke_ = null;
@@ -495,8 +503,8 @@ public final class AbilityInvocationFailNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.AbilityInvocationFailNotifyOuterClass.AbilityInvocationFailNotify buildPartial() {
         emu.grasscutter.net.proto.AbilityInvocationFailNotifyOuterClass.AbilityInvocationFailNotify result = new emu.grasscutter.net.proto.AbilityInvocationFailNotifyOuterClass.AbilityInvocationFailNotify(this);
-        result.reason_ = reason_;
         result.entityId_ = entityId_;
+        result.reason_ = reason_;
         if (invokeBuilder_ == null) {
           result.invoke_ = invoke_;
         } else {
@@ -550,12 +558,12 @@ public final class AbilityInvocationFailNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.AbilityInvocationFailNotifyOuterClass.AbilityInvocationFailNotify other) {
         if (other == emu.grasscutter.net.proto.AbilityInvocationFailNotifyOuterClass.AbilityInvocationFailNotify.getDefaultInstance()) return this;
+        if (other.getEntityId() != 0) {
+          setEntityId(other.getEntityId());
+        }
         if (!other.getReason().isEmpty()) {
           reason_ = other.reason_;
           onChanged();
-        }
-        if (other.getEntityId() != 0) {
-          setEntityId(other.getEntityId());
         }
         if (other.hasInvoke()) {
           mergeInvoke(other.getInvoke());
@@ -589,9 +597,40 @@ public final class AbilityInvocationFailNotifyOuterClass {
         return this;
       }
 
+      private int entityId_ ;
+      /**
+       * <code>uint32 entity_id = 4;</code>
+       * @return The entityId.
+       */
+      @java.lang.Override
+      public int getEntityId() {
+        return entityId_;
+      }
+      /**
+       * <code>uint32 entity_id = 4;</code>
+       * @param value The entityId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setEntityId(int value) {
+        
+        entityId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 entity_id = 4;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearEntityId() {
+        
+        entityId_ = 0;
+        onChanged();
+        return this;
+      }
+
       private java.lang.Object reason_ = "";
       /**
-       * <code>string reason = 7;</code>
+       * <code>string reason = 8;</code>
        * @return The reason.
        */
       public java.lang.String getReason() {
@@ -607,7 +646,7 @@ public final class AbilityInvocationFailNotifyOuterClass {
         }
       }
       /**
-       * <code>string reason = 7;</code>
+       * <code>string reason = 8;</code>
        * @return The bytes for reason.
        */
       public com.google.protobuf.ByteString
@@ -624,7 +663,7 @@ public final class AbilityInvocationFailNotifyOuterClass {
         }
       }
       /**
-       * <code>string reason = 7;</code>
+       * <code>string reason = 8;</code>
        * @param value The reason to set.
        * @return This builder for chaining.
        */
@@ -639,7 +678,7 @@ public final class AbilityInvocationFailNotifyOuterClass {
         return this;
       }
       /**
-       * <code>string reason = 7;</code>
+       * <code>string reason = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearReason() {
@@ -649,7 +688,7 @@ public final class AbilityInvocationFailNotifyOuterClass {
         return this;
       }
       /**
-       * <code>string reason = 7;</code>
+       * <code>string reason = 8;</code>
        * @param value The bytes for reason to set.
        * @return This builder for chaining.
        */
@@ -665,49 +704,18 @@ public final class AbilityInvocationFailNotifyOuterClass {
         return this;
       }
 
-      private int entityId_ ;
-      /**
-       * <code>uint32 entity_id = 13;</code>
-       * @return The entityId.
-       */
-      @java.lang.Override
-      public int getEntityId() {
-        return entityId_;
-      }
-      /**
-       * <code>uint32 entity_id = 13;</code>
-       * @param value The entityId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setEntityId(int value) {
-        
-        entityId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 entity_id = 13;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearEntityId() {
-        
-        entityId_ = 0;
-        onChanged();
-        return this;
-      }
-
       private emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry invoke_;
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry, emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry.Builder, emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntryOrBuilder> invokeBuilder_;
       /**
-       * <code>.AbilityInvokeEntry invoke = 3;</code>
+       * <code>.AbilityInvokeEntry invoke = 11;</code>
        * @return Whether the invoke field is set.
        */
       public boolean hasInvoke() {
         return invokeBuilder_ != null || invoke_ != null;
       }
       /**
-       * <code>.AbilityInvokeEntry invoke = 3;</code>
+       * <code>.AbilityInvokeEntry invoke = 11;</code>
        * @return The invoke.
        */
       public emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry getInvoke() {
@@ -718,7 +726,7 @@ public final class AbilityInvocationFailNotifyOuterClass {
         }
       }
       /**
-       * <code>.AbilityInvokeEntry invoke = 3;</code>
+       * <code>.AbilityInvokeEntry invoke = 11;</code>
        */
       public Builder setInvoke(emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry value) {
         if (invokeBuilder_ == null) {
@@ -734,7 +742,7 @@ public final class AbilityInvocationFailNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.AbilityInvokeEntry invoke = 3;</code>
+       * <code>.AbilityInvokeEntry invoke = 11;</code>
        */
       public Builder setInvoke(
           emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry.Builder builderForValue) {
@@ -748,7 +756,7 @@ public final class AbilityInvocationFailNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.AbilityInvokeEntry invoke = 3;</code>
+       * <code>.AbilityInvokeEntry invoke = 11;</code>
        */
       public Builder mergeInvoke(emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry value) {
         if (invokeBuilder_ == null) {
@@ -766,7 +774,7 @@ public final class AbilityInvocationFailNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.AbilityInvokeEntry invoke = 3;</code>
+       * <code>.AbilityInvokeEntry invoke = 11;</code>
        */
       public Builder clearInvoke() {
         if (invokeBuilder_ == null) {
@@ -780,7 +788,7 @@ public final class AbilityInvocationFailNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.AbilityInvokeEntry invoke = 3;</code>
+       * <code>.AbilityInvokeEntry invoke = 11;</code>
        */
       public emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry.Builder getInvokeBuilder() {
         
@@ -788,7 +796,7 @@ public final class AbilityInvocationFailNotifyOuterClass {
         return getInvokeFieldBuilder().getBuilder();
       }
       /**
-       * <code>.AbilityInvokeEntry invoke = 3;</code>
+       * <code>.AbilityInvokeEntry invoke = 11;</code>
        */
       public emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntryOrBuilder getInvokeOrBuilder() {
         if (invokeBuilder_ != null) {
@@ -799,7 +807,7 @@ public final class AbilityInvocationFailNotifyOuterClass {
         }
       }
       /**
-       * <code>.AbilityInvokeEntry invoke = 3;</code>
+       * <code>.AbilityInvokeEntry invoke = 11;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry, emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry.Builder, emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntryOrBuilder> 
@@ -883,8 +891,8 @@ public final class AbilityInvocationFailNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n!AbilityInvocationFailNotify.proto\032\030Abi" +
       "lityInvokeEntry.proto\"e\n\033AbilityInvocati" +
-      "onFailNotify\022\016\n\006reason\030\007 \001(\t\022\021\n\tentity_i" +
-      "d\030\r \001(\r\022#\n\006invoke\030\003 \001(\0132\023.AbilityInvokeE" +
+      "onFailNotify\022\021\n\tentity_id\030\004 \001(\r\022\016\n\006reaso" +
+      "n\030\010 \001(\t\022#\n\006invoke\030\013 \001(\0132\023.AbilityInvokeE" +
       "ntryB\033\n\031emu.grasscutter.net.protob\006proto" +
       "3"
     };
@@ -898,7 +906,7 @@ public final class AbilityInvocationFailNotifyOuterClass {
     internal_static_AbilityInvocationFailNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_AbilityInvocationFailNotify_descriptor,
-        new java.lang.String[] { "Reason", "EntityId", "Invoke", });
+        new java.lang.String[] { "EntityId", "Reason", "Invoke", });
     emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.getDescriptor();
   }
 

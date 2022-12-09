@@ -19,17 +19,21 @@ public final class GachaActivityUpdateElemNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 elem_type = 10;</code>
+     * <code>uint32 elem_type = 9;</code>
      * @return The elemType.
      */
     int getElemType();
   }
   /**
    * <pre>
-   * CmdId: 8919
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 8241;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code GachaActivityUpdateElemNotify}
@@ -76,7 +80,7 @@ public final class GachaActivityUpdateElemNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 80: {
+            case 72: {
 
               elemType_ = input.readUInt32();
               break;
@@ -113,10 +117,10 @@ public final class GachaActivityUpdateElemNotifyOuterClass {
               emu.grasscutter.net.proto.GachaActivityUpdateElemNotifyOuterClass.GachaActivityUpdateElemNotify.class, emu.grasscutter.net.proto.GachaActivityUpdateElemNotifyOuterClass.GachaActivityUpdateElemNotify.Builder.class);
     }
 
-    public static final int ELEM_TYPE_FIELD_NUMBER = 10;
+    public static final int ELEM_TYPE_FIELD_NUMBER = 9;
     private int elemType_;
     /**
-     * <code>uint32 elem_type = 10;</code>
+     * <code>uint32 elem_type = 9;</code>
      * @return The elemType.
      */
     @java.lang.Override
@@ -139,7 +143,7 @@ public final class GachaActivityUpdateElemNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (elemType_ != 0) {
-        output.writeUInt32(10, elemType_);
+        output.writeUInt32(9, elemType_);
       }
       unknownFields.writeTo(output);
     }
@@ -152,7 +156,7 @@ public final class GachaActivityUpdateElemNotifyOuterClass {
       size = 0;
       if (elemType_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, elemType_);
+          .computeUInt32Size(9, elemType_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -281,10 +285,14 @@ public final class GachaActivityUpdateElemNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 8919
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 8241;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code GachaActivityUpdateElemNotify}
@@ -435,7 +443,7 @@ public final class GachaActivityUpdateElemNotifyOuterClass {
 
       private int elemType_ ;
       /**
-       * <code>uint32 elem_type = 10;</code>
+       * <code>uint32 elem_type = 9;</code>
        * @return The elemType.
        */
       @java.lang.Override
@@ -443,7 +451,7 @@ public final class GachaActivityUpdateElemNotifyOuterClass {
         return elemType_;
       }
       /**
-       * <code>uint32 elem_type = 10;</code>
+       * <code>uint32 elem_type = 9;</code>
        * @param value The elemType to set.
        * @return This builder for chaining.
        */
@@ -454,7 +462,7 @@ public final class GachaActivityUpdateElemNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 elem_type = 10;</code>
+       * <code>uint32 elem_type = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearElemType() {
@@ -532,7 +540,7 @@ public final class GachaActivityUpdateElemNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n#GachaActivityUpdateElemNotify.proto\"2\n" +
       "\035GachaActivityUpdateElemNotify\022\021\n\telem_t" +
-      "ype\030\n \001(\rB\033\n\031emu.grasscutter.net.protob\006" +
+      "ype\030\t \001(\rB\033\n\031emu.grasscutter.net.protob\006" +
       "proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

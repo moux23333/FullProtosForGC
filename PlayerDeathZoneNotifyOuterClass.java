@@ -19,16 +19,20 @@ public final class PlayerDeathZoneNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 cur_death_zone_id = 8;</code>
+     * <code>uint32 cur_death_zone_id = 11;</code>
      * @return The curDeathZoneId.
      */
     int getCurDeathZoneId();
   }
   /**
    * <pre>
-   * CmdId: 6275
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 6272;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code PlayerDeathZoneNotify}
@@ -75,7 +79,7 @@ public final class PlayerDeathZoneNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 64: {
+            case 88: {
 
               curDeathZoneId_ = input.readUInt32();
               break;
@@ -112,10 +116,10 @@ public final class PlayerDeathZoneNotifyOuterClass {
               emu.grasscutter.net.proto.PlayerDeathZoneNotifyOuterClass.PlayerDeathZoneNotify.class, emu.grasscutter.net.proto.PlayerDeathZoneNotifyOuterClass.PlayerDeathZoneNotify.Builder.class);
     }
 
-    public static final int CUR_DEATH_ZONE_ID_FIELD_NUMBER = 8;
+    public static final int CUR_DEATH_ZONE_ID_FIELD_NUMBER = 11;
     private int curDeathZoneId_;
     /**
-     * <code>uint32 cur_death_zone_id = 8;</code>
+     * <code>uint32 cur_death_zone_id = 11;</code>
      * @return The curDeathZoneId.
      */
     @java.lang.Override
@@ -138,7 +142,7 @@ public final class PlayerDeathZoneNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (curDeathZoneId_ != 0) {
-        output.writeUInt32(8, curDeathZoneId_);
+        output.writeUInt32(11, curDeathZoneId_);
       }
       unknownFields.writeTo(output);
     }
@@ -151,7 +155,7 @@ public final class PlayerDeathZoneNotifyOuterClass {
       size = 0;
       if (curDeathZoneId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, curDeathZoneId_);
+          .computeUInt32Size(11, curDeathZoneId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -280,9 +284,13 @@ public final class PlayerDeathZoneNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 6275
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 6272;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code PlayerDeathZoneNotify}
@@ -433,7 +441,7 @@ public final class PlayerDeathZoneNotifyOuterClass {
 
       private int curDeathZoneId_ ;
       /**
-       * <code>uint32 cur_death_zone_id = 8;</code>
+       * <code>uint32 cur_death_zone_id = 11;</code>
        * @return The curDeathZoneId.
        */
       @java.lang.Override
@@ -441,7 +449,7 @@ public final class PlayerDeathZoneNotifyOuterClass {
         return curDeathZoneId_;
       }
       /**
-       * <code>uint32 cur_death_zone_id = 8;</code>
+       * <code>uint32 cur_death_zone_id = 11;</code>
        * @param value The curDeathZoneId to set.
        * @return This builder for chaining.
        */
@@ -452,7 +460,7 @@ public final class PlayerDeathZoneNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 cur_death_zone_id = 8;</code>
+       * <code>uint32 cur_death_zone_id = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearCurDeathZoneId() {
@@ -529,7 +537,7 @@ public final class PlayerDeathZoneNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\033PlayerDeathZoneNotify.proto\"2\n\025PlayerD" +
-      "eathZoneNotify\022\031\n\021cur_death_zone_id\030\010 \001(" +
+      "eathZoneNotify\022\031\n\021cur_death_zone_id\030\013 \001(" +
       "\rB\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

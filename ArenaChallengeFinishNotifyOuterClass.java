@@ -19,52 +19,56 @@ public final class ArenaChallengeFinishNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 arena_challenge_level = 13;</code>
-     * @return The arenaChallengeLevel.
+     * <code>bool is_success = 8;</code>
+     * @return The isSuccess.
      */
-    int getArenaChallengeLevel();
+    boolean getIsSuccess();
 
     /**
-     * <code>uint32 arena_challenge_id = 3;</code>
-     * @return The arenaChallengeId.
+     * <code>uint32 Unk3300_FDFNFLAKONG = 3;</code>
+     * @return The unk3300FDFNFLAKONG.
      */
-    int getArenaChallengeId();
+    int getUnk3300FDFNFLAKONG();
 
     /**
-     * <code>repeated .ArenaChallengeChildChallengeInfo child_challenge_list = 2;</code>
+     * <code>repeated .ArenaChallengeChildChallengeInfo child_challenge_list = 14;</code>
      */
     java.util.List<emu.grasscutter.net.proto.ArenaChallengeChildChallengeInfoOuterClass.ArenaChallengeChildChallengeInfo> 
         getChildChallengeListList();
     /**
-     * <code>repeated .ArenaChallengeChildChallengeInfo child_challenge_list = 2;</code>
+     * <code>repeated .ArenaChallengeChildChallengeInfo child_challenge_list = 14;</code>
      */
     emu.grasscutter.net.proto.ArenaChallengeChildChallengeInfoOuterClass.ArenaChallengeChildChallengeInfo getChildChallengeList(int index);
     /**
-     * <code>repeated .ArenaChallengeChildChallengeInfo child_challenge_list = 2;</code>
+     * <code>repeated .ArenaChallengeChildChallengeInfo child_challenge_list = 14;</code>
      */
     int getChildChallengeListCount();
     /**
-     * <code>repeated .ArenaChallengeChildChallengeInfo child_challenge_list = 2;</code>
+     * <code>repeated .ArenaChallengeChildChallengeInfo child_challenge_list = 14;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.ArenaChallengeChildChallengeInfoOuterClass.ArenaChallengeChildChallengeInfoOrBuilder> 
         getChildChallengeListOrBuilderList();
     /**
-     * <code>repeated .ArenaChallengeChildChallengeInfo child_challenge_list = 2;</code>
+     * <code>repeated .ArenaChallengeChildChallengeInfo child_challenge_list = 14;</code>
      */
     emu.grasscutter.net.proto.ArenaChallengeChildChallengeInfoOuterClass.ArenaChallengeChildChallengeInfoOrBuilder getChildChallengeListOrBuilder(
         int index);
 
     /**
-     * <code>bool is_success = 12;</code>
-     * @return The isSuccess.
+     * <code>uint32 Unk3300_DBHAGHMMLAI = 10;</code>
+     * @return The unk3300DBHAGHMMLAI.
      */
-    boolean getIsSuccess();
+    int getUnk3300DBHAGHMMLAI();
   }
   /**
    * <pre>
-   * CmdId: 2030
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 2164;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code ArenaChallengeFinishNotify}
@@ -113,28 +117,28 @@ public final class ArenaChallengeFinishNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 18: {
+            case 24: {
+
+              unk3300FDFNFLAKONG_ = input.readUInt32();
+              break;
+            }
+            case 64: {
+
+              isSuccess_ = input.readBool();
+              break;
+            }
+            case 80: {
+
+              unk3300DBHAGHMMLAI_ = input.readUInt32();
+              break;
+            }
+            case 114: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 childChallengeList_ = new java.util.ArrayList<emu.grasscutter.net.proto.ArenaChallengeChildChallengeInfoOuterClass.ArenaChallengeChildChallengeInfo>();
                 mutable_bitField0_ |= 0x00000001;
               }
               childChallengeList_.add(
                   input.readMessage(emu.grasscutter.net.proto.ArenaChallengeChildChallengeInfoOuterClass.ArenaChallengeChildChallengeInfo.parser(), extensionRegistry));
-              break;
-            }
-            case 24: {
-
-              arenaChallengeId_ = input.readUInt32();
-              break;
-            }
-            case 96: {
-
-              isSuccess_ = input.readBool();
-              break;
-            }
-            case 104: {
-
-              arenaChallengeLevel_ = input.readUInt32();
               break;
             }
             default: {
@@ -172,39 +176,39 @@ public final class ArenaChallengeFinishNotifyOuterClass {
               emu.grasscutter.net.proto.ArenaChallengeFinishNotifyOuterClass.ArenaChallengeFinishNotify.class, emu.grasscutter.net.proto.ArenaChallengeFinishNotifyOuterClass.ArenaChallengeFinishNotify.Builder.class);
     }
 
-    public static final int ARENA_CHALLENGE_LEVEL_FIELD_NUMBER = 13;
-    private int arenaChallengeLevel_;
+    public static final int IS_SUCCESS_FIELD_NUMBER = 8;
+    private boolean isSuccess_;
     /**
-     * <code>uint32 arena_challenge_level = 13;</code>
-     * @return The arenaChallengeLevel.
+     * <code>bool is_success = 8;</code>
+     * @return The isSuccess.
      */
     @java.lang.Override
-    public int getArenaChallengeLevel() {
-      return arenaChallengeLevel_;
+    public boolean getIsSuccess() {
+      return isSuccess_;
     }
 
-    public static final int ARENA_CHALLENGE_ID_FIELD_NUMBER = 3;
-    private int arenaChallengeId_;
+    public static final int UNK3300_FDFNFLAKONG_FIELD_NUMBER = 3;
+    private int unk3300FDFNFLAKONG_;
     /**
-     * <code>uint32 arena_challenge_id = 3;</code>
-     * @return The arenaChallengeId.
+     * <code>uint32 Unk3300_FDFNFLAKONG = 3;</code>
+     * @return The unk3300FDFNFLAKONG.
      */
     @java.lang.Override
-    public int getArenaChallengeId() {
-      return arenaChallengeId_;
+    public int getUnk3300FDFNFLAKONG() {
+      return unk3300FDFNFLAKONG_;
     }
 
-    public static final int CHILD_CHALLENGE_LIST_FIELD_NUMBER = 2;
+    public static final int CHILD_CHALLENGE_LIST_FIELD_NUMBER = 14;
     private java.util.List<emu.grasscutter.net.proto.ArenaChallengeChildChallengeInfoOuterClass.ArenaChallengeChildChallengeInfo> childChallengeList_;
     /**
-     * <code>repeated .ArenaChallengeChildChallengeInfo child_challenge_list = 2;</code>
+     * <code>repeated .ArenaChallengeChildChallengeInfo child_challenge_list = 14;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.ArenaChallengeChildChallengeInfoOuterClass.ArenaChallengeChildChallengeInfo> getChildChallengeListList() {
       return childChallengeList_;
     }
     /**
-     * <code>repeated .ArenaChallengeChildChallengeInfo child_challenge_list = 2;</code>
+     * <code>repeated .ArenaChallengeChildChallengeInfo child_challenge_list = 14;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.ArenaChallengeChildChallengeInfoOuterClass.ArenaChallengeChildChallengeInfoOrBuilder> 
@@ -212,21 +216,21 @@ public final class ArenaChallengeFinishNotifyOuterClass {
       return childChallengeList_;
     }
     /**
-     * <code>repeated .ArenaChallengeChildChallengeInfo child_challenge_list = 2;</code>
+     * <code>repeated .ArenaChallengeChildChallengeInfo child_challenge_list = 14;</code>
      */
     @java.lang.Override
     public int getChildChallengeListCount() {
       return childChallengeList_.size();
     }
     /**
-     * <code>repeated .ArenaChallengeChildChallengeInfo child_challenge_list = 2;</code>
+     * <code>repeated .ArenaChallengeChildChallengeInfo child_challenge_list = 14;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.ArenaChallengeChildChallengeInfoOuterClass.ArenaChallengeChildChallengeInfo getChildChallengeList(int index) {
       return childChallengeList_.get(index);
     }
     /**
-     * <code>repeated .ArenaChallengeChildChallengeInfo child_challenge_list = 2;</code>
+     * <code>repeated .ArenaChallengeChildChallengeInfo child_challenge_list = 14;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.ArenaChallengeChildChallengeInfoOuterClass.ArenaChallengeChildChallengeInfoOrBuilder getChildChallengeListOrBuilder(
@@ -234,15 +238,15 @@ public final class ArenaChallengeFinishNotifyOuterClass {
       return childChallengeList_.get(index);
     }
 
-    public static final int IS_SUCCESS_FIELD_NUMBER = 12;
-    private boolean isSuccess_;
+    public static final int UNK3300_DBHAGHMMLAI_FIELD_NUMBER = 10;
+    private int unk3300DBHAGHMMLAI_;
     /**
-     * <code>bool is_success = 12;</code>
-     * @return The isSuccess.
+     * <code>uint32 Unk3300_DBHAGHMMLAI = 10;</code>
+     * @return The unk3300DBHAGHMMLAI.
      */
     @java.lang.Override
-    public boolean getIsSuccess() {
-      return isSuccess_;
+    public int getUnk3300DBHAGHMMLAI() {
+      return unk3300DBHAGHMMLAI_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -259,17 +263,17 @@ public final class ArenaChallengeFinishNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      for (int i = 0; i < childChallengeList_.size(); i++) {
-        output.writeMessage(2, childChallengeList_.get(i));
-      }
-      if (arenaChallengeId_ != 0) {
-        output.writeUInt32(3, arenaChallengeId_);
+      if (unk3300FDFNFLAKONG_ != 0) {
+        output.writeUInt32(3, unk3300FDFNFLAKONG_);
       }
       if (isSuccess_ != false) {
-        output.writeBool(12, isSuccess_);
+        output.writeBool(8, isSuccess_);
       }
-      if (arenaChallengeLevel_ != 0) {
-        output.writeUInt32(13, arenaChallengeLevel_);
+      if (unk3300DBHAGHMMLAI_ != 0) {
+        output.writeUInt32(10, unk3300DBHAGHMMLAI_);
+      }
+      for (int i = 0; i < childChallengeList_.size(); i++) {
+        output.writeMessage(14, childChallengeList_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -280,21 +284,21 @@ public final class ArenaChallengeFinishNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      for (int i = 0; i < childChallengeList_.size(); i++) {
+      if (unk3300FDFNFLAKONG_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(2, childChallengeList_.get(i));
-      }
-      if (arenaChallengeId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, arenaChallengeId_);
+          .computeUInt32Size(3, unk3300FDFNFLAKONG_);
       }
       if (isSuccess_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(12, isSuccess_);
+          .computeBoolSize(8, isSuccess_);
       }
-      if (arenaChallengeLevel_ != 0) {
+      if (unk3300DBHAGHMMLAI_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, arenaChallengeLevel_);
+          .computeUInt32Size(10, unk3300DBHAGHMMLAI_);
+      }
+      for (int i = 0; i < childChallengeList_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(14, childChallengeList_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -311,14 +315,14 @@ public final class ArenaChallengeFinishNotifyOuterClass {
       }
       emu.grasscutter.net.proto.ArenaChallengeFinishNotifyOuterClass.ArenaChallengeFinishNotify other = (emu.grasscutter.net.proto.ArenaChallengeFinishNotifyOuterClass.ArenaChallengeFinishNotify) obj;
 
-      if (getArenaChallengeLevel()
-          != other.getArenaChallengeLevel()) return false;
-      if (getArenaChallengeId()
-          != other.getArenaChallengeId()) return false;
-      if (!getChildChallengeListList()
-          .equals(other.getChildChallengeListList())) return false;
       if (getIsSuccess()
           != other.getIsSuccess()) return false;
+      if (getUnk3300FDFNFLAKONG()
+          != other.getUnk3300FDFNFLAKONG()) return false;
+      if (!getChildChallengeListList()
+          .equals(other.getChildChallengeListList())) return false;
+      if (getUnk3300DBHAGHMMLAI()
+          != other.getUnk3300DBHAGHMMLAI()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -330,17 +334,17 @@ public final class ArenaChallengeFinishNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + ARENA_CHALLENGE_LEVEL_FIELD_NUMBER;
-      hash = (53 * hash) + getArenaChallengeLevel();
-      hash = (37 * hash) + ARENA_CHALLENGE_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getArenaChallengeId();
+      hash = (37 * hash) + IS_SUCCESS_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getIsSuccess());
+      hash = (37 * hash) + UNK3300_FDFNFLAKONG_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300FDFNFLAKONG();
       if (getChildChallengeListCount() > 0) {
         hash = (37 * hash) + CHILD_CHALLENGE_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getChildChallengeListList().hashCode();
       }
-      hash = (37 * hash) + IS_SUCCESS_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsSuccess());
+      hash = (37 * hash) + UNK3300_DBHAGHMMLAI_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300DBHAGHMMLAI();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -438,9 +442,13 @@ public final class ArenaChallengeFinishNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 2030
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 2164;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code ArenaChallengeFinishNotify}
@@ -481,9 +489,9 @@ public final class ArenaChallengeFinishNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        arenaChallengeLevel_ = 0;
+        isSuccess_ = false;
 
-        arenaChallengeId_ = 0;
+        unk3300FDFNFLAKONG_ = 0;
 
         if (childChallengeListBuilder_ == null) {
           childChallengeList_ = java.util.Collections.emptyList();
@@ -491,7 +499,7 @@ public final class ArenaChallengeFinishNotifyOuterClass {
         } else {
           childChallengeListBuilder_.clear();
         }
-        isSuccess_ = false;
+        unk3300DBHAGHMMLAI_ = 0;
 
         return this;
       }
@@ -520,8 +528,8 @@ public final class ArenaChallengeFinishNotifyOuterClass {
       public emu.grasscutter.net.proto.ArenaChallengeFinishNotifyOuterClass.ArenaChallengeFinishNotify buildPartial() {
         emu.grasscutter.net.proto.ArenaChallengeFinishNotifyOuterClass.ArenaChallengeFinishNotify result = new emu.grasscutter.net.proto.ArenaChallengeFinishNotifyOuterClass.ArenaChallengeFinishNotify(this);
         int from_bitField0_ = bitField0_;
-        result.arenaChallengeLevel_ = arenaChallengeLevel_;
-        result.arenaChallengeId_ = arenaChallengeId_;
+        result.isSuccess_ = isSuccess_;
+        result.unk3300FDFNFLAKONG_ = unk3300FDFNFLAKONG_;
         if (childChallengeListBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0)) {
             childChallengeList_ = java.util.Collections.unmodifiableList(childChallengeList_);
@@ -531,7 +539,7 @@ public final class ArenaChallengeFinishNotifyOuterClass {
         } else {
           result.childChallengeList_ = childChallengeListBuilder_.build();
         }
-        result.isSuccess_ = isSuccess_;
+        result.unk3300DBHAGHMMLAI_ = unk3300DBHAGHMMLAI_;
         onBuilt();
         return result;
       }
@@ -580,11 +588,11 @@ public final class ArenaChallengeFinishNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.ArenaChallengeFinishNotifyOuterClass.ArenaChallengeFinishNotify other) {
         if (other == emu.grasscutter.net.proto.ArenaChallengeFinishNotifyOuterClass.ArenaChallengeFinishNotify.getDefaultInstance()) return this;
-        if (other.getArenaChallengeLevel() != 0) {
-          setArenaChallengeLevel(other.getArenaChallengeLevel());
+        if (other.getIsSuccess() != false) {
+          setIsSuccess(other.getIsSuccess());
         }
-        if (other.getArenaChallengeId() != 0) {
-          setArenaChallengeId(other.getArenaChallengeId());
+        if (other.getUnk3300FDFNFLAKONG() != 0) {
+          setUnk3300FDFNFLAKONG(other.getUnk3300FDFNFLAKONG());
         }
         if (childChallengeListBuilder_ == null) {
           if (!other.childChallengeList_.isEmpty()) {
@@ -612,8 +620,8 @@ public final class ArenaChallengeFinishNotifyOuterClass {
             }
           }
         }
-        if (other.getIsSuccess() != false) {
-          setIsSuccess(other.getIsSuccess());
+        if (other.getUnk3300DBHAGHMMLAI() != 0) {
+          setUnk3300DBHAGHMMLAI(other.getUnk3300DBHAGHMMLAI());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -645,64 +653,64 @@ public final class ArenaChallengeFinishNotifyOuterClass {
       }
       private int bitField0_;
 
-      private int arenaChallengeLevel_ ;
+      private boolean isSuccess_ ;
       /**
-       * <code>uint32 arena_challenge_level = 13;</code>
-       * @return The arenaChallengeLevel.
+       * <code>bool is_success = 8;</code>
+       * @return The isSuccess.
        */
       @java.lang.Override
-      public int getArenaChallengeLevel() {
-        return arenaChallengeLevel_;
+      public boolean getIsSuccess() {
+        return isSuccess_;
       }
       /**
-       * <code>uint32 arena_challenge_level = 13;</code>
-       * @param value The arenaChallengeLevel to set.
+       * <code>bool is_success = 8;</code>
+       * @param value The isSuccess to set.
        * @return This builder for chaining.
        */
-      public Builder setArenaChallengeLevel(int value) {
+      public Builder setIsSuccess(boolean value) {
         
-        arenaChallengeLevel_ = value;
+        isSuccess_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 arena_challenge_level = 13;</code>
+       * <code>bool is_success = 8;</code>
        * @return This builder for chaining.
        */
-      public Builder clearArenaChallengeLevel() {
+      public Builder clearIsSuccess() {
         
-        arenaChallengeLevel_ = 0;
+        isSuccess_ = false;
         onChanged();
         return this;
       }
 
-      private int arenaChallengeId_ ;
+      private int unk3300FDFNFLAKONG_ ;
       /**
-       * <code>uint32 arena_challenge_id = 3;</code>
-       * @return The arenaChallengeId.
+       * <code>uint32 Unk3300_FDFNFLAKONG = 3;</code>
+       * @return The unk3300FDFNFLAKONG.
        */
       @java.lang.Override
-      public int getArenaChallengeId() {
-        return arenaChallengeId_;
+      public int getUnk3300FDFNFLAKONG() {
+        return unk3300FDFNFLAKONG_;
       }
       /**
-       * <code>uint32 arena_challenge_id = 3;</code>
-       * @param value The arenaChallengeId to set.
+       * <code>uint32 Unk3300_FDFNFLAKONG = 3;</code>
+       * @param value The unk3300FDFNFLAKONG to set.
        * @return This builder for chaining.
        */
-      public Builder setArenaChallengeId(int value) {
+      public Builder setUnk3300FDFNFLAKONG(int value) {
         
-        arenaChallengeId_ = value;
+        unk3300FDFNFLAKONG_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 arena_challenge_id = 3;</code>
+       * <code>uint32 Unk3300_FDFNFLAKONG = 3;</code>
        * @return This builder for chaining.
        */
-      public Builder clearArenaChallengeId() {
+      public Builder clearUnk3300FDFNFLAKONG() {
         
-        arenaChallengeId_ = 0;
+        unk3300FDFNFLAKONG_ = 0;
         onChanged();
         return this;
       }
@@ -720,7 +728,7 @@ public final class ArenaChallengeFinishNotifyOuterClass {
           emu.grasscutter.net.proto.ArenaChallengeChildChallengeInfoOuterClass.ArenaChallengeChildChallengeInfo, emu.grasscutter.net.proto.ArenaChallengeChildChallengeInfoOuterClass.ArenaChallengeChildChallengeInfo.Builder, emu.grasscutter.net.proto.ArenaChallengeChildChallengeInfoOuterClass.ArenaChallengeChildChallengeInfoOrBuilder> childChallengeListBuilder_;
 
       /**
-       * <code>repeated .ArenaChallengeChildChallengeInfo child_challenge_list = 2;</code>
+       * <code>repeated .ArenaChallengeChildChallengeInfo child_challenge_list = 14;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.ArenaChallengeChildChallengeInfoOuterClass.ArenaChallengeChildChallengeInfo> getChildChallengeListList() {
         if (childChallengeListBuilder_ == null) {
@@ -730,7 +738,7 @@ public final class ArenaChallengeFinishNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .ArenaChallengeChildChallengeInfo child_challenge_list = 2;</code>
+       * <code>repeated .ArenaChallengeChildChallengeInfo child_challenge_list = 14;</code>
        */
       public int getChildChallengeListCount() {
         if (childChallengeListBuilder_ == null) {
@@ -740,7 +748,7 @@ public final class ArenaChallengeFinishNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .ArenaChallengeChildChallengeInfo child_challenge_list = 2;</code>
+       * <code>repeated .ArenaChallengeChildChallengeInfo child_challenge_list = 14;</code>
        */
       public emu.grasscutter.net.proto.ArenaChallengeChildChallengeInfoOuterClass.ArenaChallengeChildChallengeInfo getChildChallengeList(int index) {
         if (childChallengeListBuilder_ == null) {
@@ -750,7 +758,7 @@ public final class ArenaChallengeFinishNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .ArenaChallengeChildChallengeInfo child_challenge_list = 2;</code>
+       * <code>repeated .ArenaChallengeChildChallengeInfo child_challenge_list = 14;</code>
        */
       public Builder setChildChallengeList(
           int index, emu.grasscutter.net.proto.ArenaChallengeChildChallengeInfoOuterClass.ArenaChallengeChildChallengeInfo value) {
@@ -767,7 +775,7 @@ public final class ArenaChallengeFinishNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ArenaChallengeChildChallengeInfo child_challenge_list = 2;</code>
+       * <code>repeated .ArenaChallengeChildChallengeInfo child_challenge_list = 14;</code>
        */
       public Builder setChildChallengeList(
           int index, emu.grasscutter.net.proto.ArenaChallengeChildChallengeInfoOuterClass.ArenaChallengeChildChallengeInfo.Builder builderForValue) {
@@ -781,7 +789,7 @@ public final class ArenaChallengeFinishNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ArenaChallengeChildChallengeInfo child_challenge_list = 2;</code>
+       * <code>repeated .ArenaChallengeChildChallengeInfo child_challenge_list = 14;</code>
        */
       public Builder addChildChallengeList(emu.grasscutter.net.proto.ArenaChallengeChildChallengeInfoOuterClass.ArenaChallengeChildChallengeInfo value) {
         if (childChallengeListBuilder_ == null) {
@@ -797,7 +805,7 @@ public final class ArenaChallengeFinishNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ArenaChallengeChildChallengeInfo child_challenge_list = 2;</code>
+       * <code>repeated .ArenaChallengeChildChallengeInfo child_challenge_list = 14;</code>
        */
       public Builder addChildChallengeList(
           int index, emu.grasscutter.net.proto.ArenaChallengeChildChallengeInfoOuterClass.ArenaChallengeChildChallengeInfo value) {
@@ -814,7 +822,7 @@ public final class ArenaChallengeFinishNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ArenaChallengeChildChallengeInfo child_challenge_list = 2;</code>
+       * <code>repeated .ArenaChallengeChildChallengeInfo child_challenge_list = 14;</code>
        */
       public Builder addChildChallengeList(
           emu.grasscutter.net.proto.ArenaChallengeChildChallengeInfoOuterClass.ArenaChallengeChildChallengeInfo.Builder builderForValue) {
@@ -828,7 +836,7 @@ public final class ArenaChallengeFinishNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ArenaChallengeChildChallengeInfo child_challenge_list = 2;</code>
+       * <code>repeated .ArenaChallengeChildChallengeInfo child_challenge_list = 14;</code>
        */
       public Builder addChildChallengeList(
           int index, emu.grasscutter.net.proto.ArenaChallengeChildChallengeInfoOuterClass.ArenaChallengeChildChallengeInfo.Builder builderForValue) {
@@ -842,7 +850,7 @@ public final class ArenaChallengeFinishNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ArenaChallengeChildChallengeInfo child_challenge_list = 2;</code>
+       * <code>repeated .ArenaChallengeChildChallengeInfo child_challenge_list = 14;</code>
        */
       public Builder addAllChildChallengeList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.ArenaChallengeChildChallengeInfoOuterClass.ArenaChallengeChildChallengeInfo> values) {
@@ -857,7 +865,7 @@ public final class ArenaChallengeFinishNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ArenaChallengeChildChallengeInfo child_challenge_list = 2;</code>
+       * <code>repeated .ArenaChallengeChildChallengeInfo child_challenge_list = 14;</code>
        */
       public Builder clearChildChallengeList() {
         if (childChallengeListBuilder_ == null) {
@@ -870,7 +878,7 @@ public final class ArenaChallengeFinishNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ArenaChallengeChildChallengeInfo child_challenge_list = 2;</code>
+       * <code>repeated .ArenaChallengeChildChallengeInfo child_challenge_list = 14;</code>
        */
       public Builder removeChildChallengeList(int index) {
         if (childChallengeListBuilder_ == null) {
@@ -883,14 +891,14 @@ public final class ArenaChallengeFinishNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ArenaChallengeChildChallengeInfo child_challenge_list = 2;</code>
+       * <code>repeated .ArenaChallengeChildChallengeInfo child_challenge_list = 14;</code>
        */
       public emu.grasscutter.net.proto.ArenaChallengeChildChallengeInfoOuterClass.ArenaChallengeChildChallengeInfo.Builder getChildChallengeListBuilder(
           int index) {
         return getChildChallengeListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .ArenaChallengeChildChallengeInfo child_challenge_list = 2;</code>
+       * <code>repeated .ArenaChallengeChildChallengeInfo child_challenge_list = 14;</code>
        */
       public emu.grasscutter.net.proto.ArenaChallengeChildChallengeInfoOuterClass.ArenaChallengeChildChallengeInfoOrBuilder getChildChallengeListOrBuilder(
           int index) {
@@ -900,7 +908,7 @@ public final class ArenaChallengeFinishNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .ArenaChallengeChildChallengeInfo child_challenge_list = 2;</code>
+       * <code>repeated .ArenaChallengeChildChallengeInfo child_challenge_list = 14;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.ArenaChallengeChildChallengeInfoOuterClass.ArenaChallengeChildChallengeInfoOrBuilder> 
            getChildChallengeListOrBuilderList() {
@@ -911,14 +919,14 @@ public final class ArenaChallengeFinishNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .ArenaChallengeChildChallengeInfo child_challenge_list = 2;</code>
+       * <code>repeated .ArenaChallengeChildChallengeInfo child_challenge_list = 14;</code>
        */
       public emu.grasscutter.net.proto.ArenaChallengeChildChallengeInfoOuterClass.ArenaChallengeChildChallengeInfo.Builder addChildChallengeListBuilder() {
         return getChildChallengeListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.ArenaChallengeChildChallengeInfoOuterClass.ArenaChallengeChildChallengeInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .ArenaChallengeChildChallengeInfo child_challenge_list = 2;</code>
+       * <code>repeated .ArenaChallengeChildChallengeInfo child_challenge_list = 14;</code>
        */
       public emu.grasscutter.net.proto.ArenaChallengeChildChallengeInfoOuterClass.ArenaChallengeChildChallengeInfo.Builder addChildChallengeListBuilder(
           int index) {
@@ -926,7 +934,7 @@ public final class ArenaChallengeFinishNotifyOuterClass {
             index, emu.grasscutter.net.proto.ArenaChallengeChildChallengeInfoOuterClass.ArenaChallengeChildChallengeInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .ArenaChallengeChildChallengeInfo child_challenge_list = 2;</code>
+       * <code>repeated .ArenaChallengeChildChallengeInfo child_challenge_list = 14;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.ArenaChallengeChildChallengeInfoOuterClass.ArenaChallengeChildChallengeInfo.Builder> 
            getChildChallengeListBuilderList() {
@@ -947,33 +955,33 @@ public final class ArenaChallengeFinishNotifyOuterClass {
         return childChallengeListBuilder_;
       }
 
-      private boolean isSuccess_ ;
+      private int unk3300DBHAGHMMLAI_ ;
       /**
-       * <code>bool is_success = 12;</code>
-       * @return The isSuccess.
+       * <code>uint32 Unk3300_DBHAGHMMLAI = 10;</code>
+       * @return The unk3300DBHAGHMMLAI.
        */
       @java.lang.Override
-      public boolean getIsSuccess() {
-        return isSuccess_;
+      public int getUnk3300DBHAGHMMLAI() {
+        return unk3300DBHAGHMMLAI_;
       }
       /**
-       * <code>bool is_success = 12;</code>
-       * @param value The isSuccess to set.
+       * <code>uint32 Unk3300_DBHAGHMMLAI = 10;</code>
+       * @param value The unk3300DBHAGHMMLAI to set.
        * @return This builder for chaining.
        */
-      public Builder setIsSuccess(boolean value) {
+      public Builder setUnk3300DBHAGHMMLAI(int value) {
         
-        isSuccess_ = value;
+        unk3300DBHAGHMMLAI_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>bool is_success = 12;</code>
+       * <code>uint32 Unk3300_DBHAGHMMLAI = 10;</code>
        * @return This builder for chaining.
        */
-      public Builder clearIsSuccess() {
+      public Builder clearUnk3300DBHAGHMMLAI() {
         
-        isSuccess_ = false;
+        unk3300DBHAGHMMLAI_ = 0;
         onChanged();
         return this;
       }
@@ -1045,13 +1053,13 @@ public final class ArenaChallengeFinishNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n ArenaChallengeFinishNotify.proto\032&Aren" +
-      "aChallengeChildChallengeInfo.proto\"\254\001\n\032A" +
-      "renaChallengeFinishNotify\022\035\n\025arena_chall" +
-      "enge_level\030\r \001(\r\022\032\n\022arena_challenge_id\030\003" +
-      " \001(\r\022?\n\024child_challenge_list\030\002 \003(\0132!.Are" +
-      "naChallengeChildChallengeInfo\022\022\n\nis_succ" +
-      "ess\030\014 \001(\010B\033\n\031emu.grasscutter.net.protob\006" +
-      "proto3"
+      "aChallengeChildChallengeInfo.proto\"\253\001\n\032A" +
+      "renaChallengeFinishNotify\022\022\n\nis_success\030" +
+      "\010 \001(\010\022\033\n\023Unk3300_FDFNFLAKONG\030\003 \001(\r\022?\n\024ch" +
+      "ild_challenge_list\030\016 \003(\0132!.ArenaChalleng" +
+      "eChildChallengeInfo\022\033\n\023Unk3300_DBHAGHMML" +
+      "AI\030\n \001(\rB\033\n\031emu.grasscutter.net.protob\006p" +
+      "roto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -1063,7 +1071,7 @@ public final class ArenaChallengeFinishNotifyOuterClass {
     internal_static_ArenaChallengeFinishNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ArenaChallengeFinishNotify_descriptor,
-        new java.lang.String[] { "ArenaChallengeLevel", "ArenaChallengeId", "ChildChallengeList", "IsSuccess", });
+        new java.lang.String[] { "IsSuccess", "Unk3300FDFNFLAKONG", "ChildChallengeList", "Unk3300DBHAGHMMLAI", });
     emu.grasscutter.net.proto.ArenaChallengeChildChallengeInfoOuterClass.getDescriptor();
   }
 

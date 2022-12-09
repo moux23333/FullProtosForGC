@@ -19,17 +19,21 @@ public final class ChannelerSlabLoopDungeonTakeScoreRewardReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 reward_index = 8;</code>
+     * <code>uint32 reward_index = 13;</code>
      * @return The rewardIndex.
      */
     int getRewardIndex();
   }
   /**
    * <pre>
-   * CmdId: 8684
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 8348;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code ChannelerSlabLoopDungeonTakeScoreRewardReq}
@@ -76,7 +80,7 @@ public final class ChannelerSlabLoopDungeonTakeScoreRewardReqOuterClass {
             case 0:
               done = true;
               break;
-            case 64: {
+            case 104: {
 
               rewardIndex_ = input.readUInt32();
               break;
@@ -113,10 +117,10 @@ public final class ChannelerSlabLoopDungeonTakeScoreRewardReqOuterClass {
               emu.grasscutter.net.proto.ChannelerSlabLoopDungeonTakeScoreRewardReqOuterClass.ChannelerSlabLoopDungeonTakeScoreRewardReq.class, emu.grasscutter.net.proto.ChannelerSlabLoopDungeonTakeScoreRewardReqOuterClass.ChannelerSlabLoopDungeonTakeScoreRewardReq.Builder.class);
     }
 
-    public static final int REWARD_INDEX_FIELD_NUMBER = 8;
+    public static final int REWARD_INDEX_FIELD_NUMBER = 13;
     private int rewardIndex_;
     /**
-     * <code>uint32 reward_index = 8;</code>
+     * <code>uint32 reward_index = 13;</code>
      * @return The rewardIndex.
      */
     @java.lang.Override
@@ -139,7 +143,7 @@ public final class ChannelerSlabLoopDungeonTakeScoreRewardReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (rewardIndex_ != 0) {
-        output.writeUInt32(8, rewardIndex_);
+        output.writeUInt32(13, rewardIndex_);
       }
       unknownFields.writeTo(output);
     }
@@ -152,7 +156,7 @@ public final class ChannelerSlabLoopDungeonTakeScoreRewardReqOuterClass {
       size = 0;
       if (rewardIndex_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, rewardIndex_);
+          .computeUInt32Size(13, rewardIndex_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -281,10 +285,14 @@ public final class ChannelerSlabLoopDungeonTakeScoreRewardReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 8684
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 8348;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code ChannelerSlabLoopDungeonTakeScoreRewardReq}
@@ -435,7 +443,7 @@ public final class ChannelerSlabLoopDungeonTakeScoreRewardReqOuterClass {
 
       private int rewardIndex_ ;
       /**
-       * <code>uint32 reward_index = 8;</code>
+       * <code>uint32 reward_index = 13;</code>
        * @return The rewardIndex.
        */
       @java.lang.Override
@@ -443,7 +451,7 @@ public final class ChannelerSlabLoopDungeonTakeScoreRewardReqOuterClass {
         return rewardIndex_;
       }
       /**
-       * <code>uint32 reward_index = 8;</code>
+       * <code>uint32 reward_index = 13;</code>
        * @param value The rewardIndex to set.
        * @return This builder for chaining.
        */
@@ -454,7 +462,7 @@ public final class ChannelerSlabLoopDungeonTakeScoreRewardReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 reward_index = 8;</code>
+       * <code>uint32 reward_index = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearRewardIndex() {
@@ -532,7 +540,7 @@ public final class ChannelerSlabLoopDungeonTakeScoreRewardReqOuterClass {
     java.lang.String[] descriptorData = {
       "\n0ChannelerSlabLoopDungeonTakeScoreRewar" +
       "dReq.proto\"B\n*ChannelerSlabLoopDungeonTa" +
-      "keScoreRewardReq\022\024\n\014reward_index\030\010 \001(\rB\033" +
+      "keScoreRewardReq\022\024\n\014reward_index\030\r \001(\rB\033" +
       "\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

@@ -19,34 +19,38 @@ public final class DragonSpineCoinChangeNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 shimmering_essence = 4;</code>
-     * @return The shimmeringEssence.
+     * <code>uint32 Unk3300_IMLKIJAOADF = 11;</code>
+     * @return The unk3300IMLKIJAOADF.
      */
-    int getShimmeringEssence();
+    int getUnk3300IMLKIJAOADF();
 
     /**
-     * <code>uint32 warm_essence = 13;</code>
-     * @return The warmEssence.
-     */
-    int getWarmEssence();
-
-    /**
-     * <code>uint32 schedule_id = 12;</code>
+     * <code>uint32 schedule_id = 15;</code>
      * @return The scheduleId.
      */
     int getScheduleId();
 
     /**
-     * <code>uint32 wondrous_essence = 11;</code>
-     * @return The wondrousEssence.
+     * <code>uint32 Unk3300_FOHJDGCAKEK = 3;</code>
+     * @return The unk3300FOHJDGCAKEK.
      */
-    int getWondrousEssence();
+    int getUnk3300FOHJDGCAKEK();
+
+    /**
+     * <code>uint32 Unk3300_NEOCMGJCEOJ = 2;</code>
+     * @return The unk3300NEOCMGJCEOJ.
+     */
+    int getUnk3300NEOCMGJCEOJ();
   }
   /**
    * <pre>
-   * CmdId: 2088
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 2086;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code DragonSpineCoinChangeNotify}
@@ -93,24 +97,24 @@ public final class DragonSpineCoinChangeNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 32: {
+            case 16: {
 
-              shimmeringEssence_ = input.readUInt32();
+              unk3300NEOCMGJCEOJ_ = input.readUInt32();
+              break;
+            }
+            case 24: {
+
+              unk3300FOHJDGCAKEK_ = input.readUInt32();
               break;
             }
             case 88: {
 
-              wondrousEssence_ = input.readUInt32();
+              unk3300IMLKIJAOADF_ = input.readUInt32();
               break;
             }
-            case 96: {
+            case 120: {
 
               scheduleId_ = input.readUInt32();
-              break;
-            }
-            case 104: {
-
-              warmEssence_ = input.readUInt32();
               break;
             }
             default: {
@@ -145,32 +149,21 @@ public final class DragonSpineCoinChangeNotifyOuterClass {
               emu.grasscutter.net.proto.DragonSpineCoinChangeNotifyOuterClass.DragonSpineCoinChangeNotify.class, emu.grasscutter.net.proto.DragonSpineCoinChangeNotifyOuterClass.DragonSpineCoinChangeNotify.Builder.class);
     }
 
-    public static final int SHIMMERING_ESSENCE_FIELD_NUMBER = 4;
-    private int shimmeringEssence_;
+    public static final int UNK3300_IMLKIJAOADF_FIELD_NUMBER = 11;
+    private int unk3300IMLKIJAOADF_;
     /**
-     * <code>uint32 shimmering_essence = 4;</code>
-     * @return The shimmeringEssence.
+     * <code>uint32 Unk3300_IMLKIJAOADF = 11;</code>
+     * @return The unk3300IMLKIJAOADF.
      */
     @java.lang.Override
-    public int getShimmeringEssence() {
-      return shimmeringEssence_;
+    public int getUnk3300IMLKIJAOADF() {
+      return unk3300IMLKIJAOADF_;
     }
 
-    public static final int WARM_ESSENCE_FIELD_NUMBER = 13;
-    private int warmEssence_;
-    /**
-     * <code>uint32 warm_essence = 13;</code>
-     * @return The warmEssence.
-     */
-    @java.lang.Override
-    public int getWarmEssence() {
-      return warmEssence_;
-    }
-
-    public static final int SCHEDULE_ID_FIELD_NUMBER = 12;
+    public static final int SCHEDULE_ID_FIELD_NUMBER = 15;
     private int scheduleId_;
     /**
-     * <code>uint32 schedule_id = 12;</code>
+     * <code>uint32 schedule_id = 15;</code>
      * @return The scheduleId.
      */
     @java.lang.Override
@@ -178,15 +171,26 @@ public final class DragonSpineCoinChangeNotifyOuterClass {
       return scheduleId_;
     }
 
-    public static final int WONDROUS_ESSENCE_FIELD_NUMBER = 11;
-    private int wondrousEssence_;
+    public static final int UNK3300_FOHJDGCAKEK_FIELD_NUMBER = 3;
+    private int unk3300FOHJDGCAKEK_;
     /**
-     * <code>uint32 wondrous_essence = 11;</code>
-     * @return The wondrousEssence.
+     * <code>uint32 Unk3300_FOHJDGCAKEK = 3;</code>
+     * @return The unk3300FOHJDGCAKEK.
      */
     @java.lang.Override
-    public int getWondrousEssence() {
-      return wondrousEssence_;
+    public int getUnk3300FOHJDGCAKEK() {
+      return unk3300FOHJDGCAKEK_;
+    }
+
+    public static final int UNK3300_NEOCMGJCEOJ_FIELD_NUMBER = 2;
+    private int unk3300NEOCMGJCEOJ_;
+    /**
+     * <code>uint32 Unk3300_NEOCMGJCEOJ = 2;</code>
+     * @return The unk3300NEOCMGJCEOJ.
+     */
+    @java.lang.Override
+    public int getUnk3300NEOCMGJCEOJ() {
+      return unk3300NEOCMGJCEOJ_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -203,17 +207,17 @@ public final class DragonSpineCoinChangeNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (shimmeringEssence_ != 0) {
-        output.writeUInt32(4, shimmeringEssence_);
+      if (unk3300NEOCMGJCEOJ_ != 0) {
+        output.writeUInt32(2, unk3300NEOCMGJCEOJ_);
       }
-      if (wondrousEssence_ != 0) {
-        output.writeUInt32(11, wondrousEssence_);
+      if (unk3300FOHJDGCAKEK_ != 0) {
+        output.writeUInt32(3, unk3300FOHJDGCAKEK_);
+      }
+      if (unk3300IMLKIJAOADF_ != 0) {
+        output.writeUInt32(11, unk3300IMLKIJAOADF_);
       }
       if (scheduleId_ != 0) {
-        output.writeUInt32(12, scheduleId_);
-      }
-      if (warmEssence_ != 0) {
-        output.writeUInt32(13, warmEssence_);
+        output.writeUInt32(15, scheduleId_);
       }
       unknownFields.writeTo(output);
     }
@@ -224,21 +228,21 @@ public final class DragonSpineCoinChangeNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (shimmeringEssence_ != 0) {
+      if (unk3300NEOCMGJCEOJ_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, shimmeringEssence_);
+          .computeUInt32Size(2, unk3300NEOCMGJCEOJ_);
       }
-      if (wondrousEssence_ != 0) {
+      if (unk3300FOHJDGCAKEK_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, wondrousEssence_);
+          .computeUInt32Size(3, unk3300FOHJDGCAKEK_);
+      }
+      if (unk3300IMLKIJAOADF_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(11, unk3300IMLKIJAOADF_);
       }
       if (scheduleId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, scheduleId_);
-      }
-      if (warmEssence_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, warmEssence_);
+          .computeUInt32Size(15, scheduleId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -255,14 +259,14 @@ public final class DragonSpineCoinChangeNotifyOuterClass {
       }
       emu.grasscutter.net.proto.DragonSpineCoinChangeNotifyOuterClass.DragonSpineCoinChangeNotify other = (emu.grasscutter.net.proto.DragonSpineCoinChangeNotifyOuterClass.DragonSpineCoinChangeNotify) obj;
 
-      if (getShimmeringEssence()
-          != other.getShimmeringEssence()) return false;
-      if (getWarmEssence()
-          != other.getWarmEssence()) return false;
+      if (getUnk3300IMLKIJAOADF()
+          != other.getUnk3300IMLKIJAOADF()) return false;
       if (getScheduleId()
           != other.getScheduleId()) return false;
-      if (getWondrousEssence()
-          != other.getWondrousEssence()) return false;
+      if (getUnk3300FOHJDGCAKEK()
+          != other.getUnk3300FOHJDGCAKEK()) return false;
+      if (getUnk3300NEOCMGJCEOJ()
+          != other.getUnk3300NEOCMGJCEOJ()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -274,14 +278,14 @@ public final class DragonSpineCoinChangeNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + SHIMMERING_ESSENCE_FIELD_NUMBER;
-      hash = (53 * hash) + getShimmeringEssence();
-      hash = (37 * hash) + WARM_ESSENCE_FIELD_NUMBER;
-      hash = (53 * hash) + getWarmEssence();
+      hash = (37 * hash) + UNK3300_IMLKIJAOADF_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300IMLKIJAOADF();
       hash = (37 * hash) + SCHEDULE_ID_FIELD_NUMBER;
       hash = (53 * hash) + getScheduleId();
-      hash = (37 * hash) + WONDROUS_ESSENCE_FIELD_NUMBER;
-      hash = (53 * hash) + getWondrousEssence();
+      hash = (37 * hash) + UNK3300_FOHJDGCAKEK_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300FOHJDGCAKEK();
+      hash = (37 * hash) + UNK3300_NEOCMGJCEOJ_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300NEOCMGJCEOJ();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -379,9 +383,13 @@ public final class DragonSpineCoinChangeNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 2088
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 2086;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code DragonSpineCoinChangeNotify}
@@ -421,13 +429,13 @@ public final class DragonSpineCoinChangeNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        shimmeringEssence_ = 0;
-
-        warmEssence_ = 0;
+        unk3300IMLKIJAOADF_ = 0;
 
         scheduleId_ = 0;
 
-        wondrousEssence_ = 0;
+        unk3300FOHJDGCAKEK_ = 0;
+
+        unk3300NEOCMGJCEOJ_ = 0;
 
         return this;
       }
@@ -455,10 +463,10 @@ public final class DragonSpineCoinChangeNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.DragonSpineCoinChangeNotifyOuterClass.DragonSpineCoinChangeNotify buildPartial() {
         emu.grasscutter.net.proto.DragonSpineCoinChangeNotifyOuterClass.DragonSpineCoinChangeNotify result = new emu.grasscutter.net.proto.DragonSpineCoinChangeNotifyOuterClass.DragonSpineCoinChangeNotify(this);
-        result.shimmeringEssence_ = shimmeringEssence_;
-        result.warmEssence_ = warmEssence_;
+        result.unk3300IMLKIJAOADF_ = unk3300IMLKIJAOADF_;
         result.scheduleId_ = scheduleId_;
-        result.wondrousEssence_ = wondrousEssence_;
+        result.unk3300FOHJDGCAKEK_ = unk3300FOHJDGCAKEK_;
+        result.unk3300NEOCMGJCEOJ_ = unk3300NEOCMGJCEOJ_;
         onBuilt();
         return result;
       }
@@ -507,17 +515,17 @@ public final class DragonSpineCoinChangeNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.DragonSpineCoinChangeNotifyOuterClass.DragonSpineCoinChangeNotify other) {
         if (other == emu.grasscutter.net.proto.DragonSpineCoinChangeNotifyOuterClass.DragonSpineCoinChangeNotify.getDefaultInstance()) return this;
-        if (other.getShimmeringEssence() != 0) {
-          setShimmeringEssence(other.getShimmeringEssence());
-        }
-        if (other.getWarmEssence() != 0) {
-          setWarmEssence(other.getWarmEssence());
+        if (other.getUnk3300IMLKIJAOADF() != 0) {
+          setUnk3300IMLKIJAOADF(other.getUnk3300IMLKIJAOADF());
         }
         if (other.getScheduleId() != 0) {
           setScheduleId(other.getScheduleId());
         }
-        if (other.getWondrousEssence() != 0) {
-          setWondrousEssence(other.getWondrousEssence());
+        if (other.getUnk3300FOHJDGCAKEK() != 0) {
+          setUnk3300FOHJDGCAKEK(other.getUnk3300FOHJDGCAKEK());
+        }
+        if (other.getUnk3300NEOCMGJCEOJ() != 0) {
+          setUnk3300NEOCMGJCEOJ(other.getUnk3300NEOCMGJCEOJ());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -548,71 +556,40 @@ public final class DragonSpineCoinChangeNotifyOuterClass {
         return this;
       }
 
-      private int shimmeringEssence_ ;
+      private int unk3300IMLKIJAOADF_ ;
       /**
-       * <code>uint32 shimmering_essence = 4;</code>
-       * @return The shimmeringEssence.
+       * <code>uint32 Unk3300_IMLKIJAOADF = 11;</code>
+       * @return The unk3300IMLKIJAOADF.
        */
       @java.lang.Override
-      public int getShimmeringEssence() {
-        return shimmeringEssence_;
+      public int getUnk3300IMLKIJAOADF() {
+        return unk3300IMLKIJAOADF_;
       }
       /**
-       * <code>uint32 shimmering_essence = 4;</code>
-       * @param value The shimmeringEssence to set.
+       * <code>uint32 Unk3300_IMLKIJAOADF = 11;</code>
+       * @param value The unk3300IMLKIJAOADF to set.
        * @return This builder for chaining.
        */
-      public Builder setShimmeringEssence(int value) {
+      public Builder setUnk3300IMLKIJAOADF(int value) {
         
-        shimmeringEssence_ = value;
+        unk3300IMLKIJAOADF_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 shimmering_essence = 4;</code>
+       * <code>uint32 Unk3300_IMLKIJAOADF = 11;</code>
        * @return This builder for chaining.
        */
-      public Builder clearShimmeringEssence() {
+      public Builder clearUnk3300IMLKIJAOADF() {
         
-        shimmeringEssence_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int warmEssence_ ;
-      /**
-       * <code>uint32 warm_essence = 13;</code>
-       * @return The warmEssence.
-       */
-      @java.lang.Override
-      public int getWarmEssence() {
-        return warmEssence_;
-      }
-      /**
-       * <code>uint32 warm_essence = 13;</code>
-       * @param value The warmEssence to set.
-       * @return This builder for chaining.
-       */
-      public Builder setWarmEssence(int value) {
-        
-        warmEssence_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 warm_essence = 13;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearWarmEssence() {
-        
-        warmEssence_ = 0;
+        unk3300IMLKIJAOADF_ = 0;
         onChanged();
         return this;
       }
 
       private int scheduleId_ ;
       /**
-       * <code>uint32 schedule_id = 12;</code>
+       * <code>uint32 schedule_id = 15;</code>
        * @return The scheduleId.
        */
       @java.lang.Override
@@ -620,7 +597,7 @@ public final class DragonSpineCoinChangeNotifyOuterClass {
         return scheduleId_;
       }
       /**
-       * <code>uint32 schedule_id = 12;</code>
+       * <code>uint32 schedule_id = 15;</code>
        * @param value The scheduleId to set.
        * @return This builder for chaining.
        */
@@ -631,7 +608,7 @@ public final class DragonSpineCoinChangeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 schedule_id = 12;</code>
+       * <code>uint32 schedule_id = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearScheduleId() {
@@ -641,33 +618,64 @@ public final class DragonSpineCoinChangeNotifyOuterClass {
         return this;
       }
 
-      private int wondrousEssence_ ;
+      private int unk3300FOHJDGCAKEK_ ;
       /**
-       * <code>uint32 wondrous_essence = 11;</code>
-       * @return The wondrousEssence.
+       * <code>uint32 Unk3300_FOHJDGCAKEK = 3;</code>
+       * @return The unk3300FOHJDGCAKEK.
        */
       @java.lang.Override
-      public int getWondrousEssence() {
-        return wondrousEssence_;
+      public int getUnk3300FOHJDGCAKEK() {
+        return unk3300FOHJDGCAKEK_;
       }
       /**
-       * <code>uint32 wondrous_essence = 11;</code>
-       * @param value The wondrousEssence to set.
+       * <code>uint32 Unk3300_FOHJDGCAKEK = 3;</code>
+       * @param value The unk3300FOHJDGCAKEK to set.
        * @return This builder for chaining.
        */
-      public Builder setWondrousEssence(int value) {
+      public Builder setUnk3300FOHJDGCAKEK(int value) {
         
-        wondrousEssence_ = value;
+        unk3300FOHJDGCAKEK_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 wondrous_essence = 11;</code>
+       * <code>uint32 Unk3300_FOHJDGCAKEK = 3;</code>
        * @return This builder for chaining.
        */
-      public Builder clearWondrousEssence() {
+      public Builder clearUnk3300FOHJDGCAKEK() {
         
-        wondrousEssence_ = 0;
+        unk3300FOHJDGCAKEK_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int unk3300NEOCMGJCEOJ_ ;
+      /**
+       * <code>uint32 Unk3300_NEOCMGJCEOJ = 2;</code>
+       * @return The unk3300NEOCMGJCEOJ.
+       */
+      @java.lang.Override
+      public int getUnk3300NEOCMGJCEOJ() {
+        return unk3300NEOCMGJCEOJ_;
+      }
+      /**
+       * <code>uint32 Unk3300_NEOCMGJCEOJ = 2;</code>
+       * @param value The unk3300NEOCMGJCEOJ to set.
+       * @return This builder for chaining.
+       */
+      public Builder setUnk3300NEOCMGJCEOJ(int value) {
+        
+        unk3300NEOCMGJCEOJ_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 Unk3300_NEOCMGJCEOJ = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearUnk3300NEOCMGJCEOJ() {
+        
+        unk3300NEOCMGJCEOJ_ = 0;
         onChanged();
         return this;
       }
@@ -738,11 +746,12 @@ public final class DragonSpineCoinChangeNotifyOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n!DragonSpineCoinChangeNotify.proto\"~\n\033D" +
-      "ragonSpineCoinChangeNotify\022\032\n\022shimmering" +
-      "_essence\030\004 \001(\r\022\024\n\014warm_essence\030\r \001(\r\022\023\n\013" +
-      "schedule_id\030\014 \001(\r\022\030\n\020wondrous_essence\030\013 " +
-      "\001(\rB\033\n\031emu.grasscutter.net.protob\006proto3"
+      "\n!DragonSpineCoinChangeNotify.proto\"\211\001\n\033" +
+      "DragonSpineCoinChangeNotify\022\033\n\023Unk3300_I" +
+      "MLKIJAOADF\030\013 \001(\r\022\023\n\013schedule_id\030\017 \001(\r\022\033\n" +
+      "\023Unk3300_FOHJDGCAKEK\030\003 \001(\r\022\033\n\023Unk3300_NE" +
+      "OCMGJCEOJ\030\002 \001(\rB\033\n\031emu.grasscutter.net.p" +
+      "rotob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -753,7 +762,7 @@ public final class DragonSpineCoinChangeNotifyOuterClass {
     internal_static_DragonSpineCoinChangeNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_DragonSpineCoinChangeNotify_descriptor,
-        new java.lang.String[] { "ShimmeringEssence", "WarmEssence", "ScheduleId", "WondrousEssence", });
+        new java.lang.String[] { "Unk3300IMLKIJAOADF", "ScheduleId", "Unk3300FOHJDGCAKEK", "Unk3300NEOCMGJCEOJ", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

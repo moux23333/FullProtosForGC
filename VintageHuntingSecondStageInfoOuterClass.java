@@ -19,22 +19,22 @@ public final class VintageHuntingSecondStageInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 total_num = 11;</code>
+     * <code>uint32 left_num = 15;</code>
+     * @return The leftNum.
+     */
+    int getLeftNum();
+
+    /**
+     * <code>uint32 total_num = 13;</code>
      * @return The totalNum.
      */
     int getTotalNum();
 
     /**
-     * <code>uint32 capture_animal_num = 13;</code>
+     * <code>uint32 capture_animal_num = 10;</code>
      * @return The captureAnimalNum.
      */
     int getCaptureAnimalNum();
-
-    /**
-     * <code>uint32 left_num = 3;</code>
-     * @return The leftNum.
-     */
-    int getLeftNum();
   }
   /**
    * Protobuf type {@code VintageHuntingSecondStageInfo}
@@ -81,19 +81,19 @@ public final class VintageHuntingSecondStageInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 24: {
+            case 80: {
 
-              leftNum_ = input.readUInt32();
-              break;
-            }
-            case 88: {
-
-              totalNum_ = input.readUInt32();
+              captureAnimalNum_ = input.readUInt32();
               break;
             }
             case 104: {
 
-              captureAnimalNum_ = input.readUInt32();
+              totalNum_ = input.readUInt32();
+              break;
+            }
+            case 120: {
+
+              leftNum_ = input.readUInt32();
               break;
             }
             default: {
@@ -128,10 +128,21 @@ public final class VintageHuntingSecondStageInfoOuterClass {
               emu.grasscutter.net.proto.VintageHuntingSecondStageInfoOuterClass.VintageHuntingSecondStageInfo.class, emu.grasscutter.net.proto.VintageHuntingSecondStageInfoOuterClass.VintageHuntingSecondStageInfo.Builder.class);
     }
 
-    public static final int TOTAL_NUM_FIELD_NUMBER = 11;
+    public static final int LEFT_NUM_FIELD_NUMBER = 15;
+    private int leftNum_;
+    /**
+     * <code>uint32 left_num = 15;</code>
+     * @return The leftNum.
+     */
+    @java.lang.Override
+    public int getLeftNum() {
+      return leftNum_;
+    }
+
+    public static final int TOTAL_NUM_FIELD_NUMBER = 13;
     private int totalNum_;
     /**
-     * <code>uint32 total_num = 11;</code>
+     * <code>uint32 total_num = 13;</code>
      * @return The totalNum.
      */
     @java.lang.Override
@@ -139,26 +150,15 @@ public final class VintageHuntingSecondStageInfoOuterClass {
       return totalNum_;
     }
 
-    public static final int CAPTURE_ANIMAL_NUM_FIELD_NUMBER = 13;
+    public static final int CAPTURE_ANIMAL_NUM_FIELD_NUMBER = 10;
     private int captureAnimalNum_;
     /**
-     * <code>uint32 capture_animal_num = 13;</code>
+     * <code>uint32 capture_animal_num = 10;</code>
      * @return The captureAnimalNum.
      */
     @java.lang.Override
     public int getCaptureAnimalNum() {
       return captureAnimalNum_;
-    }
-
-    public static final int LEFT_NUM_FIELD_NUMBER = 3;
-    private int leftNum_;
-    /**
-     * <code>uint32 left_num = 3;</code>
-     * @return The leftNum.
-     */
-    @java.lang.Override
-    public int getLeftNum() {
-      return leftNum_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -175,14 +175,14 @@ public final class VintageHuntingSecondStageInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (leftNum_ != 0) {
-        output.writeUInt32(3, leftNum_);
+      if (captureAnimalNum_ != 0) {
+        output.writeUInt32(10, captureAnimalNum_);
       }
       if (totalNum_ != 0) {
-        output.writeUInt32(11, totalNum_);
+        output.writeUInt32(13, totalNum_);
       }
-      if (captureAnimalNum_ != 0) {
-        output.writeUInt32(13, captureAnimalNum_);
+      if (leftNum_ != 0) {
+        output.writeUInt32(15, leftNum_);
       }
       unknownFields.writeTo(output);
     }
@@ -193,17 +193,17 @@ public final class VintageHuntingSecondStageInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (leftNum_ != 0) {
+      if (captureAnimalNum_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, leftNum_);
+          .computeUInt32Size(10, captureAnimalNum_);
       }
       if (totalNum_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, totalNum_);
+          .computeUInt32Size(13, totalNum_);
       }
-      if (captureAnimalNum_ != 0) {
+      if (leftNum_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, captureAnimalNum_);
+          .computeUInt32Size(15, leftNum_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -220,12 +220,12 @@ public final class VintageHuntingSecondStageInfoOuterClass {
       }
       emu.grasscutter.net.proto.VintageHuntingSecondStageInfoOuterClass.VintageHuntingSecondStageInfo other = (emu.grasscutter.net.proto.VintageHuntingSecondStageInfoOuterClass.VintageHuntingSecondStageInfo) obj;
 
+      if (getLeftNum()
+          != other.getLeftNum()) return false;
       if (getTotalNum()
           != other.getTotalNum()) return false;
       if (getCaptureAnimalNum()
           != other.getCaptureAnimalNum()) return false;
-      if (getLeftNum()
-          != other.getLeftNum()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -237,12 +237,12 @@ public final class VintageHuntingSecondStageInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + LEFT_NUM_FIELD_NUMBER;
+      hash = (53 * hash) + getLeftNum();
       hash = (37 * hash) + TOTAL_NUM_FIELD_NUMBER;
       hash = (53 * hash) + getTotalNum();
       hash = (37 * hash) + CAPTURE_ANIMAL_NUM_FIELD_NUMBER;
       hash = (53 * hash) + getCaptureAnimalNum();
-      hash = (37 * hash) + LEFT_NUM_FIELD_NUMBER;
-      hash = (53 * hash) + getLeftNum();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -376,11 +376,11 @@ public final class VintageHuntingSecondStageInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        leftNum_ = 0;
+
         totalNum_ = 0;
 
         captureAnimalNum_ = 0;
-
-        leftNum_ = 0;
 
         return this;
       }
@@ -408,9 +408,9 @@ public final class VintageHuntingSecondStageInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.VintageHuntingSecondStageInfoOuterClass.VintageHuntingSecondStageInfo buildPartial() {
         emu.grasscutter.net.proto.VintageHuntingSecondStageInfoOuterClass.VintageHuntingSecondStageInfo result = new emu.grasscutter.net.proto.VintageHuntingSecondStageInfoOuterClass.VintageHuntingSecondStageInfo(this);
+        result.leftNum_ = leftNum_;
         result.totalNum_ = totalNum_;
         result.captureAnimalNum_ = captureAnimalNum_;
-        result.leftNum_ = leftNum_;
         onBuilt();
         return result;
       }
@@ -459,14 +459,14 @@ public final class VintageHuntingSecondStageInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.VintageHuntingSecondStageInfoOuterClass.VintageHuntingSecondStageInfo other) {
         if (other == emu.grasscutter.net.proto.VintageHuntingSecondStageInfoOuterClass.VintageHuntingSecondStageInfo.getDefaultInstance()) return this;
+        if (other.getLeftNum() != 0) {
+          setLeftNum(other.getLeftNum());
+        }
         if (other.getTotalNum() != 0) {
           setTotalNum(other.getTotalNum());
         }
         if (other.getCaptureAnimalNum() != 0) {
           setCaptureAnimalNum(other.getCaptureAnimalNum());
-        }
-        if (other.getLeftNum() != 0) {
-          setLeftNum(other.getLeftNum());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -497,9 +497,40 @@ public final class VintageHuntingSecondStageInfoOuterClass {
         return this;
       }
 
+      private int leftNum_ ;
+      /**
+       * <code>uint32 left_num = 15;</code>
+       * @return The leftNum.
+       */
+      @java.lang.Override
+      public int getLeftNum() {
+        return leftNum_;
+      }
+      /**
+       * <code>uint32 left_num = 15;</code>
+       * @param value The leftNum to set.
+       * @return This builder for chaining.
+       */
+      public Builder setLeftNum(int value) {
+        
+        leftNum_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 left_num = 15;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearLeftNum() {
+        
+        leftNum_ = 0;
+        onChanged();
+        return this;
+      }
+
       private int totalNum_ ;
       /**
-       * <code>uint32 total_num = 11;</code>
+       * <code>uint32 total_num = 13;</code>
        * @return The totalNum.
        */
       @java.lang.Override
@@ -507,7 +538,7 @@ public final class VintageHuntingSecondStageInfoOuterClass {
         return totalNum_;
       }
       /**
-       * <code>uint32 total_num = 11;</code>
+       * <code>uint32 total_num = 13;</code>
        * @param value The totalNum to set.
        * @return This builder for chaining.
        */
@@ -518,7 +549,7 @@ public final class VintageHuntingSecondStageInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 total_num = 11;</code>
+       * <code>uint32 total_num = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearTotalNum() {
@@ -530,7 +561,7 @@ public final class VintageHuntingSecondStageInfoOuterClass {
 
       private int captureAnimalNum_ ;
       /**
-       * <code>uint32 capture_animal_num = 13;</code>
+       * <code>uint32 capture_animal_num = 10;</code>
        * @return The captureAnimalNum.
        */
       @java.lang.Override
@@ -538,7 +569,7 @@ public final class VintageHuntingSecondStageInfoOuterClass {
         return captureAnimalNum_;
       }
       /**
-       * <code>uint32 capture_animal_num = 13;</code>
+       * <code>uint32 capture_animal_num = 10;</code>
        * @param value The captureAnimalNum to set.
        * @return This builder for chaining.
        */
@@ -549,43 +580,12 @@ public final class VintageHuntingSecondStageInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 capture_animal_num = 13;</code>
+       * <code>uint32 capture_animal_num = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearCaptureAnimalNum() {
         
         captureAnimalNum_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int leftNum_ ;
-      /**
-       * <code>uint32 left_num = 3;</code>
-       * @return The leftNum.
-       */
-      @java.lang.Override
-      public int getLeftNum() {
-        return leftNum_;
-      }
-      /**
-       * <code>uint32 left_num = 3;</code>
-       * @param value The leftNum to set.
-       * @return This builder for chaining.
-       */
-      public Builder setLeftNum(int value) {
-        
-        leftNum_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 left_num = 3;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearLeftNum() {
-        
-        leftNum_ = 0;
         onChanged();
         return this;
       }
@@ -657,9 +657,9 @@ public final class VintageHuntingSecondStageInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n#VintageHuntingSecondStageInfo.proto\"`\n" +
-      "\035VintageHuntingSecondStageInfo\022\021\n\ttotal_" +
-      "num\030\013 \001(\r\022\032\n\022capture_animal_num\030\r \001(\r\022\020\n" +
-      "\010left_num\030\003 \001(\rB\033\n\031emu.grasscutter.net.p" +
+      "\035VintageHuntingSecondStageInfo\022\020\n\010left_n" +
+      "um\030\017 \001(\r\022\021\n\ttotal_num\030\r \001(\r\022\032\n\022capture_a" +
+      "nimal_num\030\n \001(\rB\033\n\031emu.grasscutter.net.p" +
       "rotob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -671,7 +671,7 @@ public final class VintageHuntingSecondStageInfoOuterClass {
     internal_static_VintageHuntingSecondStageInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_VintageHuntingSecondStageInfo_descriptor,
-        new java.lang.String[] { "TotalNum", "CaptureAnimalNum", "LeftNum", });
+        new java.lang.String[] { "LeftNum", "TotalNum", "CaptureAnimalNum", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

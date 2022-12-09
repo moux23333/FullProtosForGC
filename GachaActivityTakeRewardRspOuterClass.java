@@ -19,11 +19,11 @@ public final class GachaActivityTakeRewardRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>map&lt;uint32, uint32&gt; robot_num_map = 3;</code>
+     * <code>map&lt;uint32, uint32&gt; robot_num_map = 10;</code>
      */
     int getRobotNumMapCount();
     /**
-     * <code>map&lt;uint32, uint32&gt; robot_num_map = 3;</code>
+     * <code>map&lt;uint32, uint32&gt; robot_num_map = 10;</code>
      */
     boolean containsRobotNumMap(
         int key);
@@ -34,35 +34,39 @@ public final class GachaActivityTakeRewardRspOuterClass {
     java.util.Map<java.lang.Integer, java.lang.Integer>
     getRobotNumMap();
     /**
-     * <code>map&lt;uint32, uint32&gt; robot_num_map = 3;</code>
+     * <code>map&lt;uint32, uint32&gt; robot_num_map = 10;</code>
      */
     java.util.Map<java.lang.Integer, java.lang.Integer>
     getRobotNumMapMap();
     /**
-     * <code>map&lt;uint32, uint32&gt; robot_num_map = 3;</code>
+     * <code>map&lt;uint32, uint32&gt; robot_num_map = 10;</code>
      */
 
     int getRobotNumMapOrDefault(
         int key,
         int defaultValue);
     /**
-     * <code>map&lt;uint32, uint32&gt; robot_num_map = 3;</code>
+     * <code>map&lt;uint32, uint32&gt; robot_num_map = 10;</code>
      */
 
     int getRobotNumMapOrThrow(
         int key);
 
     /**
-     * <code>int32 retcode = 13;</code>
+     * <code>int32 retcode = 8;</code>
      * @return The retcode.
      */
     int getRetcode();
   }
   /**
    * <pre>
-   * CmdId: 8768
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 8354;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code GachaActivityTakeRewardRsp}
@@ -110,7 +114,12 @@ public final class GachaActivityTakeRewardRspOuterClass {
             case 0:
               done = true;
               break;
-            case 26: {
+            case 64: {
+
+              retcode_ = input.readInt32();
+              break;
+            }
+            case 82: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 robotNumMap_ = com.google.protobuf.MapField.newMapField(
                     RobotNumMapDefaultEntryHolder.defaultEntry);
@@ -121,11 +130,6 @@ public final class GachaActivityTakeRewardRspOuterClass {
                   RobotNumMapDefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
               robotNumMap_.getMutableMap().put(
                   robotNumMap__.getKey(), robotNumMap__.getValue());
-              break;
-            }
-            case 104: {
-
-              retcode_ = input.readInt32();
               break;
             }
             default: {
@@ -157,7 +161,7 @@ public final class GachaActivityTakeRewardRspOuterClass {
     protected com.google.protobuf.MapField internalGetMapField(
         int number) {
       switch (number) {
-        case 3:
+        case 10:
           return internalGetRobotNumMap();
         default:
           throw new RuntimeException(
@@ -172,7 +176,7 @@ public final class GachaActivityTakeRewardRspOuterClass {
               emu.grasscutter.net.proto.GachaActivityTakeRewardRspOuterClass.GachaActivityTakeRewardRsp.class, emu.grasscutter.net.proto.GachaActivityTakeRewardRspOuterClass.GachaActivityTakeRewardRsp.Builder.class);
     }
 
-    public static final int ROBOT_NUM_MAP_FIELD_NUMBER = 3;
+    public static final int ROBOT_NUM_MAP_FIELD_NUMBER = 10;
     private static final class RobotNumMapDefaultEntryHolder {
       static final com.google.protobuf.MapEntry<
           java.lang.Integer, java.lang.Integer> defaultEntry =
@@ -199,7 +203,7 @@ public final class GachaActivityTakeRewardRspOuterClass {
       return internalGetRobotNumMap().getMap().size();
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; robot_num_map = 3;</code>
+     * <code>map&lt;uint32, uint32&gt; robot_num_map = 10;</code>
      */
 
     @java.lang.Override
@@ -217,7 +221,7 @@ public final class GachaActivityTakeRewardRspOuterClass {
       return getRobotNumMapMap();
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; robot_num_map = 3;</code>
+     * <code>map&lt;uint32, uint32&gt; robot_num_map = 10;</code>
      */
     @java.lang.Override
 
@@ -225,7 +229,7 @@ public final class GachaActivityTakeRewardRspOuterClass {
       return internalGetRobotNumMap().getMap();
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; robot_num_map = 3;</code>
+     * <code>map&lt;uint32, uint32&gt; robot_num_map = 10;</code>
      */
     @java.lang.Override
 
@@ -238,7 +242,7 @@ public final class GachaActivityTakeRewardRspOuterClass {
       return map.containsKey(key) ? map.get(key) : defaultValue;
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; robot_num_map = 3;</code>
+     * <code>map&lt;uint32, uint32&gt; robot_num_map = 10;</code>
      */
     @java.lang.Override
 
@@ -253,10 +257,10 @@ public final class GachaActivityTakeRewardRspOuterClass {
       return map.get(key);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 13;
+    public static final int RETCODE_FIELD_NUMBER = 8;
     private int retcode_;
     /**
-     * <code>int32 retcode = 13;</code>
+     * <code>int32 retcode = 8;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -278,15 +282,15 @@ public final class GachaActivityTakeRewardRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (retcode_ != 0) {
+        output.writeInt32(8, retcode_);
+      }
       com.google.protobuf.GeneratedMessageV3
         .serializeIntegerMapTo(
           output,
           internalGetRobotNumMap(),
           RobotNumMapDefaultEntryHolder.defaultEntry,
-          3);
-      if (retcode_ != 0) {
-        output.writeInt32(13, retcode_);
-      }
+          10);
       unknownFields.writeTo(output);
     }
 
@@ -296,6 +300,10 @@ public final class GachaActivityTakeRewardRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (retcode_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(8, retcode_);
+      }
       for (java.util.Map.Entry<java.lang.Integer, java.lang.Integer> entry
            : internalGetRobotNumMap().getMap().entrySet()) {
         com.google.protobuf.MapEntry<java.lang.Integer, java.lang.Integer>
@@ -304,11 +312,7 @@ public final class GachaActivityTakeRewardRspOuterClass {
             .setValue(entry.getValue())
             .build();
         size += com.google.protobuf.CodedOutputStream
-            .computeMessageSize(3, robotNumMap__);
-      }
-      if (retcode_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(13, retcode_);
+            .computeMessageSize(10, robotNumMap__);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -443,9 +447,13 @@ public final class GachaActivityTakeRewardRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 8768
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 8354;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code GachaActivityTakeRewardRsp}
@@ -463,7 +471,7 @@ public final class GachaActivityTakeRewardRspOuterClass {
       protected com.google.protobuf.MapField internalGetMapField(
           int number) {
         switch (number) {
-          case 3:
+          case 10:
             return internalGetRobotNumMap();
           default:
             throw new RuntimeException(
@@ -474,7 +482,7 @@ public final class GachaActivityTakeRewardRspOuterClass {
       protected com.google.protobuf.MapField internalGetMutableMapField(
           int number) {
         switch (number) {
-          case 3:
+          case 10:
             return internalGetMutableRobotNumMap();
           default:
             throw new RuntimeException(
@@ -650,7 +658,7 @@ public final class GachaActivityTakeRewardRspOuterClass {
         return internalGetRobotNumMap().getMap().size();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; robot_num_map = 3;</code>
+       * <code>map&lt;uint32, uint32&gt; robot_num_map = 10;</code>
        */
 
       @java.lang.Override
@@ -668,7 +676,7 @@ public final class GachaActivityTakeRewardRspOuterClass {
         return getRobotNumMapMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; robot_num_map = 3;</code>
+       * <code>map&lt;uint32, uint32&gt; robot_num_map = 10;</code>
        */
       @java.lang.Override
 
@@ -676,7 +684,7 @@ public final class GachaActivityTakeRewardRspOuterClass {
         return internalGetRobotNumMap().getMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; robot_num_map = 3;</code>
+       * <code>map&lt;uint32, uint32&gt; robot_num_map = 10;</code>
        */
       @java.lang.Override
 
@@ -689,7 +697,7 @@ public final class GachaActivityTakeRewardRspOuterClass {
         return map.containsKey(key) ? map.get(key) : defaultValue;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; robot_num_map = 3;</code>
+       * <code>map&lt;uint32, uint32&gt; robot_num_map = 10;</code>
        */
       @java.lang.Override
 
@@ -710,7 +718,7 @@ public final class GachaActivityTakeRewardRspOuterClass {
         return this;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; robot_num_map = 3;</code>
+       * <code>map&lt;uint32, uint32&gt; robot_num_map = 10;</code>
        */
 
       public Builder removeRobotNumMap(
@@ -729,7 +737,7 @@ public final class GachaActivityTakeRewardRspOuterClass {
         return internalGetMutableRobotNumMap().getMutableMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; robot_num_map = 3;</code>
+       * <code>map&lt;uint32, uint32&gt; robot_num_map = 10;</code>
        */
       public Builder putRobotNumMap(
           int key,
@@ -741,7 +749,7 @@ public final class GachaActivityTakeRewardRspOuterClass {
         return this;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; robot_num_map = 3;</code>
+       * <code>map&lt;uint32, uint32&gt; robot_num_map = 10;</code>
        */
 
       public Builder putAllRobotNumMap(
@@ -753,7 +761,7 @@ public final class GachaActivityTakeRewardRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 13;</code>
+       * <code>int32 retcode = 8;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -761,7 +769,7 @@ public final class GachaActivityTakeRewardRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 13;</code>
+       * <code>int32 retcode = 8;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -772,7 +780,7 @@ public final class GachaActivityTakeRewardRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 13;</code>
+       * <code>int32 retcode = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -855,8 +863,8 @@ public final class GachaActivityTakeRewardRspOuterClass {
     java.lang.String[] descriptorData = {
       "\n GachaActivityTakeRewardRsp.proto\"\246\001\n\032G" +
       "achaActivityTakeRewardRsp\022C\n\rrobot_num_m" +
-      "ap\030\003 \003(\0132,.GachaActivityTakeRewardRsp.Ro" +
-      "botNumMapEntry\022\017\n\007retcode\030\r \001(\005\0322\n\020Robot" +
+      "ap\030\n \003(\0132,.GachaActivityTakeRewardRsp.Ro" +
+      "botNumMapEntry\022\017\n\007retcode\030\010 \001(\005\0322\n\020Robot" +
       "NumMapEntry\022\013\n\003key\030\001 \001(\r\022\r\n\005value\030\002 \001(\r:" +
       "\0028\001B\033\n\031emu.grasscutter.net.protob\006proto3"
     };

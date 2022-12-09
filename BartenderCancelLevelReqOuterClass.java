@@ -19,17 +19,21 @@ public final class BartenderCancelLevelReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 level_id = 13;</code>
+     * <code>uint32 level_id = 14;</code>
      * @return The levelId.
      */
     int getLevelId();
   }
   /**
    * <pre>
-   * CmdId: 8771
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 8446;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code BartenderCancelLevelReq}
@@ -76,7 +80,7 @@ public final class BartenderCancelLevelReqOuterClass {
             case 0:
               done = true;
               break;
-            case 104: {
+            case 112: {
 
               levelId_ = input.readUInt32();
               break;
@@ -113,10 +117,10 @@ public final class BartenderCancelLevelReqOuterClass {
               emu.grasscutter.net.proto.BartenderCancelLevelReqOuterClass.BartenderCancelLevelReq.class, emu.grasscutter.net.proto.BartenderCancelLevelReqOuterClass.BartenderCancelLevelReq.Builder.class);
     }
 
-    public static final int LEVEL_ID_FIELD_NUMBER = 13;
+    public static final int LEVEL_ID_FIELD_NUMBER = 14;
     private int levelId_;
     /**
-     * <code>uint32 level_id = 13;</code>
+     * <code>uint32 level_id = 14;</code>
      * @return The levelId.
      */
     @java.lang.Override
@@ -139,7 +143,7 @@ public final class BartenderCancelLevelReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (levelId_ != 0) {
-        output.writeUInt32(13, levelId_);
+        output.writeUInt32(14, levelId_);
       }
       unknownFields.writeTo(output);
     }
@@ -152,7 +156,7 @@ public final class BartenderCancelLevelReqOuterClass {
       size = 0;
       if (levelId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, levelId_);
+          .computeUInt32Size(14, levelId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -281,10 +285,14 @@ public final class BartenderCancelLevelReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 8771
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 8446;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code BartenderCancelLevelReq}
@@ -435,7 +443,7 @@ public final class BartenderCancelLevelReqOuterClass {
 
       private int levelId_ ;
       /**
-       * <code>uint32 level_id = 13;</code>
+       * <code>uint32 level_id = 14;</code>
        * @return The levelId.
        */
       @java.lang.Override
@@ -443,7 +451,7 @@ public final class BartenderCancelLevelReqOuterClass {
         return levelId_;
       }
       /**
-       * <code>uint32 level_id = 13;</code>
+       * <code>uint32 level_id = 14;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
        */
@@ -454,7 +462,7 @@ public final class BartenderCancelLevelReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 level_id = 13;</code>
+       * <code>uint32 level_id = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearLevelId() {
@@ -531,7 +539,7 @@ public final class BartenderCancelLevelReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\035BartenderCancelLevelReq.proto\"+\n\027Barte" +
-      "nderCancelLevelReq\022\020\n\010level_id\030\r \001(\rB\033\n\031" +
+      "nderCancelLevelReq\022\020\n\010level_id\030\016 \001(\rB\033\n\031" +
       "emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

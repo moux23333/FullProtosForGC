@@ -19,28 +19,32 @@ public final class TriggerRoguelikeRuneRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 available_count = 4;</code>
+     * <code>uint32 available_count = 15;</code>
      * @return The availableCount.
      */
     int getAvailableCount();
 
     /**
-     * <code>uint32 rune_id = 14;</code>
+     * <code>uint32 rune_id = 10;</code>
      * @return The runeId.
      */
     int getRuneId();
 
     /**
-     * <code>int32 retcode = 8;</code>
+     * <code>int32 retcode = 4;</code>
      * @return The retcode.
      */
     int getRetcode();
   }
   /**
    * <pre>
-   * CmdId: 8065
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 8133;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code TriggerRoguelikeRuneRsp}
@@ -89,17 +93,17 @@ public final class TriggerRoguelikeRuneRspOuterClass {
               break;
             case 32: {
 
-              availableCount_ = input.readUInt32();
-              break;
-            }
-            case 64: {
-
               retcode_ = input.readInt32();
               break;
             }
-            case 112: {
+            case 80: {
 
               runeId_ = input.readUInt32();
+              break;
+            }
+            case 120: {
+
+              availableCount_ = input.readUInt32();
               break;
             }
             default: {
@@ -134,10 +138,10 @@ public final class TriggerRoguelikeRuneRspOuterClass {
               emu.grasscutter.net.proto.TriggerRoguelikeRuneRspOuterClass.TriggerRoguelikeRuneRsp.class, emu.grasscutter.net.proto.TriggerRoguelikeRuneRspOuterClass.TriggerRoguelikeRuneRsp.Builder.class);
     }
 
-    public static final int AVAILABLE_COUNT_FIELD_NUMBER = 4;
+    public static final int AVAILABLE_COUNT_FIELD_NUMBER = 15;
     private int availableCount_;
     /**
-     * <code>uint32 available_count = 4;</code>
+     * <code>uint32 available_count = 15;</code>
      * @return The availableCount.
      */
     @java.lang.Override
@@ -145,10 +149,10 @@ public final class TriggerRoguelikeRuneRspOuterClass {
       return availableCount_;
     }
 
-    public static final int RUNE_ID_FIELD_NUMBER = 14;
+    public static final int RUNE_ID_FIELD_NUMBER = 10;
     private int runeId_;
     /**
-     * <code>uint32 rune_id = 14;</code>
+     * <code>uint32 rune_id = 10;</code>
      * @return The runeId.
      */
     @java.lang.Override
@@ -156,10 +160,10 @@ public final class TriggerRoguelikeRuneRspOuterClass {
       return runeId_;
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 8;
+    public static final int RETCODE_FIELD_NUMBER = 4;
     private int retcode_;
     /**
-     * <code>int32 retcode = 8;</code>
+     * <code>int32 retcode = 4;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -181,14 +185,14 @@ public final class TriggerRoguelikeRuneRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (availableCount_ != 0) {
-        output.writeUInt32(4, availableCount_);
-      }
       if (retcode_ != 0) {
-        output.writeInt32(8, retcode_);
+        output.writeInt32(4, retcode_);
       }
       if (runeId_ != 0) {
-        output.writeUInt32(14, runeId_);
+        output.writeUInt32(10, runeId_);
+      }
+      if (availableCount_ != 0) {
+        output.writeUInt32(15, availableCount_);
       }
       unknownFields.writeTo(output);
     }
@@ -199,17 +203,17 @@ public final class TriggerRoguelikeRuneRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (availableCount_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, availableCount_);
-      }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(8, retcode_);
+          .computeInt32Size(4, retcode_);
       }
       if (runeId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, runeId_);
+          .computeUInt32Size(10, runeId_);
+      }
+      if (availableCount_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(15, availableCount_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -346,9 +350,13 @@ public final class TriggerRoguelikeRuneRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 8065
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 8133;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code TriggerRoguelikeRuneRsp}
@@ -511,7 +519,7 @@ public final class TriggerRoguelikeRuneRspOuterClass {
 
       private int availableCount_ ;
       /**
-       * <code>uint32 available_count = 4;</code>
+       * <code>uint32 available_count = 15;</code>
        * @return The availableCount.
        */
       @java.lang.Override
@@ -519,7 +527,7 @@ public final class TriggerRoguelikeRuneRspOuterClass {
         return availableCount_;
       }
       /**
-       * <code>uint32 available_count = 4;</code>
+       * <code>uint32 available_count = 15;</code>
        * @param value The availableCount to set.
        * @return This builder for chaining.
        */
@@ -530,7 +538,7 @@ public final class TriggerRoguelikeRuneRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 available_count = 4;</code>
+       * <code>uint32 available_count = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearAvailableCount() {
@@ -542,7 +550,7 @@ public final class TriggerRoguelikeRuneRspOuterClass {
 
       private int runeId_ ;
       /**
-       * <code>uint32 rune_id = 14;</code>
+       * <code>uint32 rune_id = 10;</code>
        * @return The runeId.
        */
       @java.lang.Override
@@ -550,7 +558,7 @@ public final class TriggerRoguelikeRuneRspOuterClass {
         return runeId_;
       }
       /**
-       * <code>uint32 rune_id = 14;</code>
+       * <code>uint32 rune_id = 10;</code>
        * @param value The runeId to set.
        * @return This builder for chaining.
        */
@@ -561,7 +569,7 @@ public final class TriggerRoguelikeRuneRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 rune_id = 14;</code>
+       * <code>uint32 rune_id = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearRuneId() {
@@ -573,7 +581,7 @@ public final class TriggerRoguelikeRuneRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 8;</code>
+       * <code>int32 retcode = 4;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -581,7 +589,7 @@ public final class TriggerRoguelikeRuneRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 8;</code>
+       * <code>int32 retcode = 4;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -592,7 +600,7 @@ public final class TriggerRoguelikeRuneRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 8;</code>
+       * <code>int32 retcode = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -669,8 +677,8 @@ public final class TriggerRoguelikeRuneRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\035TriggerRoguelikeRuneRsp.proto\"T\n\027Trigg" +
-      "erRoguelikeRuneRsp\022\027\n\017available_count\030\004 " +
-      "\001(\r\022\017\n\007rune_id\030\016 \001(\r\022\017\n\007retcode\030\010 \001(\005B\033\n" +
+      "erRoguelikeRuneRsp\022\027\n\017available_count\030\017 " +
+      "\001(\r\022\017\n\007rune_id\030\n \001(\r\022\017\n\007retcode\030\004 \001(\005B\033\n" +
       "\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

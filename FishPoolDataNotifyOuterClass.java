@@ -19,22 +19,26 @@ public final class FishPoolDataNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 entity_id = 6;</code>
+     * <code>uint32 entity_id = 3;</code>
      * @return The entityId.
      */
     int getEntityId();
 
     /**
-     * <code>uint32 today_fish_num = 2;</code>
+     * <code>uint32 today_fish_num = 12;</code>
      * @return The todayFishNum.
      */
     int getTodayFishNum();
   }
   /**
    * <pre>
-   * CmdId: 5848
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 5837;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code FishPoolDataNotify}
@@ -81,14 +85,14 @@ public final class FishPoolDataNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
-
-              todayFishNum_ = input.readUInt32();
-              break;
-            }
-            case 48: {
+            case 24: {
 
               entityId_ = input.readUInt32();
+              break;
+            }
+            case 96: {
+
+              todayFishNum_ = input.readUInt32();
               break;
             }
             default: {
@@ -123,10 +127,10 @@ public final class FishPoolDataNotifyOuterClass {
               emu.grasscutter.net.proto.FishPoolDataNotifyOuterClass.FishPoolDataNotify.class, emu.grasscutter.net.proto.FishPoolDataNotifyOuterClass.FishPoolDataNotify.Builder.class);
     }
 
-    public static final int ENTITY_ID_FIELD_NUMBER = 6;
+    public static final int ENTITY_ID_FIELD_NUMBER = 3;
     private int entityId_;
     /**
-     * <code>uint32 entity_id = 6;</code>
+     * <code>uint32 entity_id = 3;</code>
      * @return The entityId.
      */
     @java.lang.Override
@@ -134,10 +138,10 @@ public final class FishPoolDataNotifyOuterClass {
       return entityId_;
     }
 
-    public static final int TODAY_FISH_NUM_FIELD_NUMBER = 2;
+    public static final int TODAY_FISH_NUM_FIELD_NUMBER = 12;
     private int todayFishNum_;
     /**
-     * <code>uint32 today_fish_num = 2;</code>
+     * <code>uint32 today_fish_num = 12;</code>
      * @return The todayFishNum.
      */
     @java.lang.Override
@@ -159,11 +163,11 @@ public final class FishPoolDataNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (todayFishNum_ != 0) {
-        output.writeUInt32(2, todayFishNum_);
-      }
       if (entityId_ != 0) {
-        output.writeUInt32(6, entityId_);
+        output.writeUInt32(3, entityId_);
+      }
+      if (todayFishNum_ != 0) {
+        output.writeUInt32(12, todayFishNum_);
       }
       unknownFields.writeTo(output);
     }
@@ -174,13 +178,13 @@ public final class FishPoolDataNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (todayFishNum_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, todayFishNum_);
-      }
       if (entityId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, entityId_);
+          .computeUInt32Size(3, entityId_);
+      }
+      if (todayFishNum_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(12, todayFishNum_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -313,9 +317,13 @@ public final class FishPoolDataNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 5848
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 5837;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code FishPoolDataNotify}
@@ -472,7 +480,7 @@ public final class FishPoolDataNotifyOuterClass {
 
       private int entityId_ ;
       /**
-       * <code>uint32 entity_id = 6;</code>
+       * <code>uint32 entity_id = 3;</code>
        * @return The entityId.
        */
       @java.lang.Override
@@ -480,7 +488,7 @@ public final class FishPoolDataNotifyOuterClass {
         return entityId_;
       }
       /**
-       * <code>uint32 entity_id = 6;</code>
+       * <code>uint32 entity_id = 3;</code>
        * @param value The entityId to set.
        * @return This builder for chaining.
        */
@@ -491,7 +499,7 @@ public final class FishPoolDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 entity_id = 6;</code>
+       * <code>uint32 entity_id = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearEntityId() {
@@ -503,7 +511,7 @@ public final class FishPoolDataNotifyOuterClass {
 
       private int todayFishNum_ ;
       /**
-       * <code>uint32 today_fish_num = 2;</code>
+       * <code>uint32 today_fish_num = 12;</code>
        * @return The todayFishNum.
        */
       @java.lang.Override
@@ -511,7 +519,7 @@ public final class FishPoolDataNotifyOuterClass {
         return todayFishNum_;
       }
       /**
-       * <code>uint32 today_fish_num = 2;</code>
+       * <code>uint32 today_fish_num = 12;</code>
        * @param value The todayFishNum to set.
        * @return This builder for chaining.
        */
@@ -522,7 +530,7 @@ public final class FishPoolDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 today_fish_num = 2;</code>
+       * <code>uint32 today_fish_num = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearTodayFishNum() {
@@ -599,8 +607,8 @@ public final class FishPoolDataNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\030FishPoolDataNotify.proto\"?\n\022FishPoolDa" +
-      "taNotify\022\021\n\tentity_id\030\006 \001(\r\022\026\n\016today_fis" +
-      "h_num\030\002 \001(\rB\033\n\031emu.grasscutter.net.proto" +
+      "taNotify\022\021\n\tentity_id\030\003 \001(\r\022\026\n\016today_fis" +
+      "h_num\030\014 \001(\rB\033\n\031emu.grasscutter.net.proto" +
       "b\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

@@ -19,21 +19,25 @@ public final class ClientReconnectNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.ClientReconnectReason reason = 6;</code>
+     * <code>.ClientReconnectReason reason = 1;</code>
      * @return The enum numeric value on the wire for reason.
      */
     int getReasonValue();
     /**
-     * <code>.ClientReconnectReason reason = 6;</code>
+     * <code>.ClientReconnectReason reason = 1;</code>
      * @return The reason.
      */
     emu.grasscutter.net.proto.ClientReconnectReasonOuterClass.ClientReconnectReason getReason();
   }
   /**
    * <pre>
-   * CmdId: 75
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 39;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code ClientReconnectNotify}
@@ -81,7 +85,7 @@ public final class ClientReconnectNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 48: {
+            case 8: {
               int rawValue = input.readEnum();
 
               reason_ = rawValue;
@@ -119,17 +123,17 @@ public final class ClientReconnectNotifyOuterClass {
               emu.grasscutter.net.proto.ClientReconnectNotifyOuterClass.ClientReconnectNotify.class, emu.grasscutter.net.proto.ClientReconnectNotifyOuterClass.ClientReconnectNotify.Builder.class);
     }
 
-    public static final int REASON_FIELD_NUMBER = 6;
+    public static final int REASON_FIELD_NUMBER = 1;
     private int reason_;
     /**
-     * <code>.ClientReconnectReason reason = 6;</code>
+     * <code>.ClientReconnectReason reason = 1;</code>
      * @return The enum numeric value on the wire for reason.
      */
     @java.lang.Override public int getReasonValue() {
       return reason_;
     }
     /**
-     * <code>.ClientReconnectReason reason = 6;</code>
+     * <code>.ClientReconnectReason reason = 1;</code>
      * @return The reason.
      */
     @java.lang.Override public emu.grasscutter.net.proto.ClientReconnectReasonOuterClass.ClientReconnectReason getReason() {
@@ -152,8 +156,8 @@ public final class ClientReconnectNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (reason_ != emu.grasscutter.net.proto.ClientReconnectReasonOuterClass.ClientReconnectReason.CLIENT_RECONNECT_REASON_RECONNNECT_NONE.getNumber()) {
-        output.writeEnum(6, reason_);
+      if (reason_ != emu.grasscutter.net.proto.ClientReconnectReasonOuterClass.ClientReconnectReason.CLIENT_RECONNECT_REASON_NONE.getNumber()) {
+        output.writeEnum(1, reason_);
       }
       unknownFields.writeTo(output);
     }
@@ -164,9 +168,9 @@ public final class ClientReconnectNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (reason_ != emu.grasscutter.net.proto.ClientReconnectReasonOuterClass.ClientReconnectReason.CLIENT_RECONNECT_REASON_RECONNNECT_NONE.getNumber()) {
+      if (reason_ != emu.grasscutter.net.proto.ClientReconnectReasonOuterClass.ClientReconnectReason.CLIENT_RECONNECT_REASON_NONE.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(6, reason_);
+          .computeEnumSize(1, reason_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -294,9 +298,13 @@ public final class ClientReconnectNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 75
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 39;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code ClientReconnectNotify}
@@ -447,14 +455,14 @@ public final class ClientReconnectNotifyOuterClass {
 
       private int reason_ = 0;
       /**
-       * <code>.ClientReconnectReason reason = 6;</code>
+       * <code>.ClientReconnectReason reason = 1;</code>
        * @return The enum numeric value on the wire for reason.
        */
       @java.lang.Override public int getReasonValue() {
         return reason_;
       }
       /**
-       * <code>.ClientReconnectReason reason = 6;</code>
+       * <code>.ClientReconnectReason reason = 1;</code>
        * @param value The enum numeric value on the wire for reason to set.
        * @return This builder for chaining.
        */
@@ -465,7 +473,7 @@ public final class ClientReconnectNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.ClientReconnectReason reason = 6;</code>
+       * <code>.ClientReconnectReason reason = 1;</code>
        * @return The reason.
        */
       @java.lang.Override
@@ -475,7 +483,7 @@ public final class ClientReconnectNotifyOuterClass {
         return result == null ? emu.grasscutter.net.proto.ClientReconnectReasonOuterClass.ClientReconnectReason.UNRECOGNIZED : result;
       }
       /**
-       * <code>.ClientReconnectReason reason = 6;</code>
+       * <code>.ClientReconnectReason reason = 1;</code>
        * @param value The reason to set.
        * @return This builder for chaining.
        */
@@ -489,7 +497,7 @@ public final class ClientReconnectNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.ClientReconnectReason reason = 6;</code>
+       * <code>.ClientReconnectReason reason = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearReason() {
@@ -567,7 +575,7 @@ public final class ClientReconnectNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n\033ClientReconnectNotify.proto\032\033ClientRec" +
       "onnectReason.proto\"?\n\025ClientReconnectNot" +
-      "ify\022&\n\006reason\030\006 \001(\0162\026.ClientReconnectRea" +
+      "ify\022&\n\006reason\030\001 \001(\0162\026.ClientReconnectRea" +
       "sonB\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

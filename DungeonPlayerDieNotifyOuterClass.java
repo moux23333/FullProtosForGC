@@ -19,11 +19,11 @@ public final class DungeonPlayerDieNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>map&lt;uint32, .StrengthenPointData&gt; strengthen_point_data_map = 15;</code>
+     * <code>map&lt;uint32, .StrengthenPointData&gt; strengthen_point_data_map = 7;</code>
      */
     int getStrengthenPointDataMapCount();
     /**
-     * <code>map&lt;uint32, .StrengthenPointData&gt; strengthen_point_data_map = 15;</code>
+     * <code>map&lt;uint32, .StrengthenPointData&gt; strengthen_point_data_map = 7;</code>
      */
     boolean containsStrengthenPointDataMap(
         int key);
@@ -34,77 +34,77 @@ public final class DungeonPlayerDieNotifyOuterClass {
     java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.StrengthenPointDataOuterClass.StrengthenPointData>
     getStrengthenPointDataMap();
     /**
-     * <code>map&lt;uint32, .StrengthenPointData&gt; strengthen_point_data_map = 15;</code>
+     * <code>map&lt;uint32, .StrengthenPointData&gt; strengthen_point_data_map = 7;</code>
      */
     java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.StrengthenPointDataOuterClass.StrengthenPointData>
     getStrengthenPointDataMapMap();
     /**
-     * <code>map&lt;uint32, .StrengthenPointData&gt; strengthen_point_data_map = 15;</code>
+     * <code>map&lt;uint32, .StrengthenPointData&gt; strengthen_point_data_map = 7;</code>
      */
 
     emu.grasscutter.net.proto.StrengthenPointDataOuterClass.StrengthenPointData getStrengthenPointDataMapOrDefault(
         int key,
         emu.grasscutter.net.proto.StrengthenPointDataOuterClass.StrengthenPointData defaultValue);
     /**
-     * <code>map&lt;uint32, .StrengthenPointData&gt; strengthen_point_data_map = 15;</code>
+     * <code>map&lt;uint32, .StrengthenPointData&gt; strengthen_point_data_map = 7;</code>
      */
 
     emu.grasscutter.net.proto.StrengthenPointDataOuterClass.StrengthenPointData getStrengthenPointDataMapOrThrow(
         int key);
 
     /**
-     * <code>uint32 wait_time = 1;</code>
-     * @return The waitTime.
-     */
-    int getWaitTime();
-
-    /**
-     * <code>uint32 dungeon_id = 9;</code>
-     * @return The dungeonId.
-     */
-    int getDungeonId();
-
-    /**
-     * <code>uint32 murderer_entity_id = 13;</code>
-     * @return The murdererEntityId.
-     */
-    int getMurdererEntityId();
-
-    /**
-     * <code>.PlayerDieType die_type = 3;</code>
+     * <code>.PlayerDieType die_type = 8;</code>
      * @return The enum numeric value on the wire for dieType.
      */
     int getDieTypeValue();
     /**
-     * <code>.PlayerDieType die_type = 3;</code>
+     * <code>.PlayerDieType die_type = 8;</code>
      * @return The dieType.
      */
     emu.grasscutter.net.proto.PlayerDieTypeOuterClass.PlayerDieType getDieType();
 
     /**
-     * <code>uint32 revive_count = 6;</code>
+     * <code>uint32 revive_count = 3;</code>
      * @return The reviveCount.
      */
     int getReviveCount();
 
     /**
-     * <code>uint32 monster_id = 4;</code>
+     * <code>uint32 wait_time = 4;</code>
+     * @return The waitTime.
+     */
+    int getWaitTime();
+
+    /**
+     * <code>uint32 dungeon_id = 6;</code>
+     * @return The dungeonId.
+     */
+    int getDungeonId();
+
+    /**
+     * <code>uint32 murderer_entity_id = 11;</code>
+     * @return The murdererEntityId.
+     */
+    int getMurdererEntityId();
+
+    /**
+     * <code>uint32 monster_id = 10;</code>
      * @return Whether the monsterId field is set.
      */
     boolean hasMonsterId();
     /**
-     * <code>uint32 monster_id = 4;</code>
+     * <code>uint32 monster_id = 10;</code>
      * @return The monsterId.
      */
     int getMonsterId();
 
     /**
-     * <code>uint32 gadget_id = 8;</code>
+     * <code>uint32 gadget_id = 14;</code>
      * @return Whether the gadgetId field is set.
      */
     boolean hasGadgetId();
     /**
-     * <code>uint32 gadget_id = 8;</code>
+     * <code>uint32 gadget_id = 14;</code>
      * @return The gadgetId.
      */
     int getGadgetId();
@@ -113,9 +113,13 @@ public final class DungeonPlayerDieNotifyOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 931
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 927;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code DungeonPlayerDieNotify}
@@ -164,43 +168,22 @@ public final class DungeonPlayerDieNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
-
-              waitTime_ = input.readUInt32();
-              break;
-            }
             case 24: {
-              int rawValue = input.readEnum();
-
-              dieType_ = rawValue;
-              break;
-            }
-            case 32: {
-              entityCase_ = 4;
-              entity_ = input.readUInt32();
-              break;
-            }
-            case 48: {
 
               reviveCount_ = input.readUInt32();
               break;
             }
-            case 64: {
-              entityCase_ = 8;
-              entity_ = input.readUInt32();
+            case 32: {
+
+              waitTime_ = input.readUInt32();
               break;
             }
-            case 72: {
+            case 48: {
 
               dungeonId_ = input.readUInt32();
               break;
             }
-            case 104: {
-
-              murdererEntityId_ = input.readUInt32();
-              break;
-            }
-            case 122: {
+            case 58: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 strengthenPointDataMap_ = com.google.protobuf.MapField.newMapField(
                     StrengthenPointDataMapDefaultEntryHolder.defaultEntry);
@@ -211,6 +194,27 @@ public final class DungeonPlayerDieNotifyOuterClass {
                   StrengthenPointDataMapDefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
               strengthenPointDataMap_.getMutableMap().put(
                   strengthenPointDataMap__.getKey(), strengthenPointDataMap__.getValue());
+              break;
+            }
+            case 64: {
+              int rawValue = input.readEnum();
+
+              dieType_ = rawValue;
+              break;
+            }
+            case 80: {
+              entityCase_ = 10;
+              entity_ = input.readUInt32();
+              break;
+            }
+            case 88: {
+
+              murdererEntityId_ = input.readUInt32();
+              break;
+            }
+            case 112: {
+              entityCase_ = 14;
+              entity_ = input.readUInt32();
               break;
             }
             default: {
@@ -242,7 +246,7 @@ public final class DungeonPlayerDieNotifyOuterClass {
     protected com.google.protobuf.MapField internalGetMapField(
         int number) {
       switch (number) {
-        case 15:
+        case 7:
           return internalGetStrengthenPointDataMap();
         default:
           throw new RuntimeException(
@@ -262,8 +266,8 @@ public final class DungeonPlayerDieNotifyOuterClass {
     public enum EntityCase
         implements com.google.protobuf.Internal.EnumLite,
             com.google.protobuf.AbstractMessage.InternalOneOfEnum {
-      MONSTER_ID(4),
-      GADGET_ID(8),
+      MONSTER_ID(10),
+      GADGET_ID(14),
       ENTITY_NOT_SET(0);
       private final int value;
       private EntityCase(int value) {
@@ -281,8 +285,8 @@ public final class DungeonPlayerDieNotifyOuterClass {
 
       public static EntityCase forNumber(int value) {
         switch (value) {
-          case 4: return MONSTER_ID;
-          case 8: return GADGET_ID;
+          case 10: return MONSTER_ID;
+          case 14: return GADGET_ID;
           case 0: return ENTITY_NOT_SET;
           default: return null;
         }
@@ -298,7 +302,7 @@ public final class DungeonPlayerDieNotifyOuterClass {
           entityCase_);
     }
 
-    public static final int STRENGTHEN_POINT_DATA_MAP_FIELD_NUMBER = 15;
+    public static final int STRENGTHEN_POINT_DATA_MAP_FIELD_NUMBER = 7;
     private static final class StrengthenPointDataMapDefaultEntryHolder {
       static final com.google.protobuf.MapEntry<
           java.lang.Integer, emu.grasscutter.net.proto.StrengthenPointDataOuterClass.StrengthenPointData> defaultEntry =
@@ -325,7 +329,7 @@ public final class DungeonPlayerDieNotifyOuterClass {
       return internalGetStrengthenPointDataMap().getMap().size();
     }
     /**
-     * <code>map&lt;uint32, .StrengthenPointData&gt; strengthen_point_data_map = 15;</code>
+     * <code>map&lt;uint32, .StrengthenPointData&gt; strengthen_point_data_map = 7;</code>
      */
 
     @java.lang.Override
@@ -343,7 +347,7 @@ public final class DungeonPlayerDieNotifyOuterClass {
       return getStrengthenPointDataMapMap();
     }
     /**
-     * <code>map&lt;uint32, .StrengthenPointData&gt; strengthen_point_data_map = 15;</code>
+     * <code>map&lt;uint32, .StrengthenPointData&gt; strengthen_point_data_map = 7;</code>
      */
     @java.lang.Override
 
@@ -351,7 +355,7 @@ public final class DungeonPlayerDieNotifyOuterClass {
       return internalGetStrengthenPointDataMap().getMap();
     }
     /**
-     * <code>map&lt;uint32, .StrengthenPointData&gt; strengthen_point_data_map = 15;</code>
+     * <code>map&lt;uint32, .StrengthenPointData&gt; strengthen_point_data_map = 7;</code>
      */
     @java.lang.Override
 
@@ -364,7 +368,7 @@ public final class DungeonPlayerDieNotifyOuterClass {
       return map.containsKey(key) ? map.get(key) : defaultValue;
     }
     /**
-     * <code>map&lt;uint32, .StrengthenPointData&gt; strengthen_point_data_map = 15;</code>
+     * <code>map&lt;uint32, .StrengthenPointData&gt; strengthen_point_data_map = 7;</code>
      */
     @java.lang.Override
 
@@ -379,50 +383,17 @@ public final class DungeonPlayerDieNotifyOuterClass {
       return map.get(key);
     }
 
-    public static final int WAIT_TIME_FIELD_NUMBER = 1;
-    private int waitTime_;
-    /**
-     * <code>uint32 wait_time = 1;</code>
-     * @return The waitTime.
-     */
-    @java.lang.Override
-    public int getWaitTime() {
-      return waitTime_;
-    }
-
-    public static final int DUNGEON_ID_FIELD_NUMBER = 9;
-    private int dungeonId_;
-    /**
-     * <code>uint32 dungeon_id = 9;</code>
-     * @return The dungeonId.
-     */
-    @java.lang.Override
-    public int getDungeonId() {
-      return dungeonId_;
-    }
-
-    public static final int MURDERER_ENTITY_ID_FIELD_NUMBER = 13;
-    private int murdererEntityId_;
-    /**
-     * <code>uint32 murderer_entity_id = 13;</code>
-     * @return The murdererEntityId.
-     */
-    @java.lang.Override
-    public int getMurdererEntityId() {
-      return murdererEntityId_;
-    }
-
-    public static final int DIE_TYPE_FIELD_NUMBER = 3;
+    public static final int DIE_TYPE_FIELD_NUMBER = 8;
     private int dieType_;
     /**
-     * <code>.PlayerDieType die_type = 3;</code>
+     * <code>.PlayerDieType die_type = 8;</code>
      * @return The enum numeric value on the wire for dieType.
      */
     @java.lang.Override public int getDieTypeValue() {
       return dieType_;
     }
     /**
-     * <code>.PlayerDieType die_type = 3;</code>
+     * <code>.PlayerDieType die_type = 8;</code>
      * @return The dieType.
      */
     @java.lang.Override public emu.grasscutter.net.proto.PlayerDieTypeOuterClass.PlayerDieType getDieType() {
@@ -431,10 +402,10 @@ public final class DungeonPlayerDieNotifyOuterClass {
       return result == null ? emu.grasscutter.net.proto.PlayerDieTypeOuterClass.PlayerDieType.UNRECOGNIZED : result;
     }
 
-    public static final int REVIVE_COUNT_FIELD_NUMBER = 6;
+    public static final int REVIVE_COUNT_FIELD_NUMBER = 3;
     private int reviveCount_;
     /**
-     * <code>uint32 revive_count = 6;</code>
+     * <code>uint32 revive_count = 3;</code>
      * @return The reviveCount.
      */
     @java.lang.Override
@@ -442,43 +413,76 @@ public final class DungeonPlayerDieNotifyOuterClass {
       return reviveCount_;
     }
 
-    public static final int MONSTER_ID_FIELD_NUMBER = 4;
+    public static final int WAIT_TIME_FIELD_NUMBER = 4;
+    private int waitTime_;
     /**
-     * <code>uint32 monster_id = 4;</code>
+     * <code>uint32 wait_time = 4;</code>
+     * @return The waitTime.
+     */
+    @java.lang.Override
+    public int getWaitTime() {
+      return waitTime_;
+    }
+
+    public static final int DUNGEON_ID_FIELD_NUMBER = 6;
+    private int dungeonId_;
+    /**
+     * <code>uint32 dungeon_id = 6;</code>
+     * @return The dungeonId.
+     */
+    @java.lang.Override
+    public int getDungeonId() {
+      return dungeonId_;
+    }
+
+    public static final int MURDERER_ENTITY_ID_FIELD_NUMBER = 11;
+    private int murdererEntityId_;
+    /**
+     * <code>uint32 murderer_entity_id = 11;</code>
+     * @return The murdererEntityId.
+     */
+    @java.lang.Override
+    public int getMurdererEntityId() {
+      return murdererEntityId_;
+    }
+
+    public static final int MONSTER_ID_FIELD_NUMBER = 10;
+    /**
+     * <code>uint32 monster_id = 10;</code>
      * @return Whether the monsterId field is set.
      */
     @java.lang.Override
     public boolean hasMonsterId() {
-      return entityCase_ == 4;
+      return entityCase_ == 10;
     }
     /**
-     * <code>uint32 monster_id = 4;</code>
+     * <code>uint32 monster_id = 10;</code>
      * @return The monsterId.
      */
     @java.lang.Override
     public int getMonsterId() {
-      if (entityCase_ == 4) {
+      if (entityCase_ == 10) {
         return (java.lang.Integer) entity_;
       }
       return 0;
     }
 
-    public static final int GADGET_ID_FIELD_NUMBER = 8;
+    public static final int GADGET_ID_FIELD_NUMBER = 14;
     /**
-     * <code>uint32 gadget_id = 8;</code>
+     * <code>uint32 gadget_id = 14;</code>
      * @return Whether the gadgetId field is set.
      */
     @java.lang.Override
     public boolean hasGadgetId() {
-      return entityCase_ == 8;
+      return entityCase_ == 14;
     }
     /**
-     * <code>uint32 gadget_id = 8;</code>
+     * <code>uint32 gadget_id = 14;</code>
      * @return The gadgetId.
      */
     @java.lang.Override
     public int getGadgetId() {
-      if (entityCase_ == 8) {
+      if (entityCase_ == 14) {
         return (java.lang.Integer) entity_;
       }
       return 0;
@@ -498,35 +502,35 @@ public final class DungeonPlayerDieNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (waitTime_ != 0) {
-        output.writeUInt32(1, waitTime_);
-      }
-      if (dieType_ != emu.grasscutter.net.proto.PlayerDieTypeOuterClass.PlayerDieType.PLAYER_DIE_TYPE_NONE.getNumber()) {
-        output.writeEnum(3, dieType_);
-      }
-      if (entityCase_ == 4) {
-        output.writeUInt32(
-            4, (int)((java.lang.Integer) entity_));
-      }
       if (reviveCount_ != 0) {
-        output.writeUInt32(6, reviveCount_);
+        output.writeUInt32(3, reviveCount_);
       }
-      if (entityCase_ == 8) {
-        output.writeUInt32(
-            8, (int)((java.lang.Integer) entity_));
+      if (waitTime_ != 0) {
+        output.writeUInt32(4, waitTime_);
       }
       if (dungeonId_ != 0) {
-        output.writeUInt32(9, dungeonId_);
-      }
-      if (murdererEntityId_ != 0) {
-        output.writeUInt32(13, murdererEntityId_);
+        output.writeUInt32(6, dungeonId_);
       }
       com.google.protobuf.GeneratedMessageV3
         .serializeIntegerMapTo(
           output,
           internalGetStrengthenPointDataMap(),
           StrengthenPointDataMapDefaultEntryHolder.defaultEntry,
-          15);
+          7);
+      if (dieType_ != emu.grasscutter.net.proto.PlayerDieTypeOuterClass.PlayerDieType.PLAYER_DIE_TYPE_NONE.getNumber()) {
+        output.writeEnum(8, dieType_);
+      }
+      if (entityCase_ == 10) {
+        output.writeUInt32(
+            10, (int)((java.lang.Integer) entity_));
+      }
+      if (murdererEntityId_ != 0) {
+        output.writeUInt32(11, murdererEntityId_);
+      }
+      if (entityCase_ == 14) {
+        output.writeUInt32(
+            14, (int)((java.lang.Integer) entity_));
+      }
       unknownFields.writeTo(output);
     }
 
@@ -536,35 +540,17 @@ public final class DungeonPlayerDieNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (waitTime_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, waitTime_);
-      }
-      if (dieType_ != emu.grasscutter.net.proto.PlayerDieTypeOuterClass.PlayerDieType.PLAYER_DIE_TYPE_NONE.getNumber()) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(3, dieType_);
-      }
-      if (entityCase_ == 4) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(
-              4, (int)((java.lang.Integer) entity_));
-      }
       if (reviveCount_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, reviveCount_);
+          .computeUInt32Size(3, reviveCount_);
       }
-      if (entityCase_ == 8) {
+      if (waitTime_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(
-              8, (int)((java.lang.Integer) entity_));
+          .computeUInt32Size(4, waitTime_);
       }
       if (dungeonId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, dungeonId_);
-      }
-      if (murdererEntityId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, murdererEntityId_);
+          .computeUInt32Size(6, dungeonId_);
       }
       for (java.util.Map.Entry<java.lang.Integer, emu.grasscutter.net.proto.StrengthenPointDataOuterClass.StrengthenPointData> entry
            : internalGetStrengthenPointDataMap().getMap().entrySet()) {
@@ -574,7 +560,25 @@ public final class DungeonPlayerDieNotifyOuterClass {
             .setValue(entry.getValue())
             .build();
         size += com.google.protobuf.CodedOutputStream
-            .computeMessageSize(15, strengthenPointDataMap__);
+            .computeMessageSize(7, strengthenPointDataMap__);
+      }
+      if (dieType_ != emu.grasscutter.net.proto.PlayerDieTypeOuterClass.PlayerDieType.PLAYER_DIE_TYPE_NONE.getNumber()) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeEnumSize(8, dieType_);
+      }
+      if (entityCase_ == 10) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(
+              10, (int)((java.lang.Integer) entity_));
+      }
+      if (murdererEntityId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(11, murdererEntityId_);
+      }
+      if (entityCase_ == 14) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(
+              14, (int)((java.lang.Integer) entity_));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -593,22 +597,22 @@ public final class DungeonPlayerDieNotifyOuterClass {
 
       if (!internalGetStrengthenPointDataMap().equals(
           other.internalGetStrengthenPointDataMap())) return false;
+      if (dieType_ != other.dieType_) return false;
+      if (getReviveCount()
+          != other.getReviveCount()) return false;
       if (getWaitTime()
           != other.getWaitTime()) return false;
       if (getDungeonId()
           != other.getDungeonId()) return false;
       if (getMurdererEntityId()
           != other.getMurdererEntityId()) return false;
-      if (dieType_ != other.dieType_) return false;
-      if (getReviveCount()
-          != other.getReviveCount()) return false;
       if (!getEntityCase().equals(other.getEntityCase())) return false;
       switch (entityCase_) {
-        case 4:
+        case 10:
           if (getMonsterId()
               != other.getMonsterId()) return false;
           break;
-        case 8:
+        case 14:
           if (getGadgetId()
               != other.getGadgetId()) return false;
           break;
@@ -630,22 +634,22 @@ public final class DungeonPlayerDieNotifyOuterClass {
         hash = (37 * hash) + STRENGTHEN_POINT_DATA_MAP_FIELD_NUMBER;
         hash = (53 * hash) + internalGetStrengthenPointDataMap().hashCode();
       }
+      hash = (37 * hash) + DIE_TYPE_FIELD_NUMBER;
+      hash = (53 * hash) + dieType_;
+      hash = (37 * hash) + REVIVE_COUNT_FIELD_NUMBER;
+      hash = (53 * hash) + getReviveCount();
       hash = (37 * hash) + WAIT_TIME_FIELD_NUMBER;
       hash = (53 * hash) + getWaitTime();
       hash = (37 * hash) + DUNGEON_ID_FIELD_NUMBER;
       hash = (53 * hash) + getDungeonId();
       hash = (37 * hash) + MURDERER_ENTITY_ID_FIELD_NUMBER;
       hash = (53 * hash) + getMurdererEntityId();
-      hash = (37 * hash) + DIE_TYPE_FIELD_NUMBER;
-      hash = (53 * hash) + dieType_;
-      hash = (37 * hash) + REVIVE_COUNT_FIELD_NUMBER;
-      hash = (53 * hash) + getReviveCount();
       switch (entityCase_) {
-        case 4:
+        case 10:
           hash = (37 * hash) + MONSTER_ID_FIELD_NUMBER;
           hash = (53 * hash) + getMonsterId();
           break;
-        case 8:
+        case 14:
           hash = (37 * hash) + GADGET_ID_FIELD_NUMBER;
           hash = (53 * hash) + getGadgetId();
           break;
@@ -749,9 +753,13 @@ public final class DungeonPlayerDieNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 931
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 927;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code DungeonPlayerDieNotify}
@@ -769,7 +777,7 @@ public final class DungeonPlayerDieNotifyOuterClass {
       protected com.google.protobuf.MapField internalGetMapField(
           int number) {
         switch (number) {
-          case 15:
+          case 7:
             return internalGetStrengthenPointDataMap();
           default:
             throw new RuntimeException(
@@ -780,7 +788,7 @@ public final class DungeonPlayerDieNotifyOuterClass {
       protected com.google.protobuf.MapField internalGetMutableMapField(
           int number) {
         switch (number) {
-          case 15:
+          case 7:
             return internalGetMutableStrengthenPointDataMap();
           default:
             throw new RuntimeException(
@@ -814,15 +822,15 @@ public final class DungeonPlayerDieNotifyOuterClass {
       public Builder clear() {
         super.clear();
         internalGetMutableStrengthenPointDataMap().clear();
+        dieType_ = 0;
+
+        reviveCount_ = 0;
+
         waitTime_ = 0;
 
         dungeonId_ = 0;
 
         murdererEntityId_ = 0;
-
-        dieType_ = 0;
-
-        reviveCount_ = 0;
 
         entityCase_ = 0;
         entity_ = null;
@@ -855,15 +863,15 @@ public final class DungeonPlayerDieNotifyOuterClass {
         int from_bitField0_ = bitField0_;
         result.strengthenPointDataMap_ = internalGetStrengthenPointDataMap();
         result.strengthenPointDataMap_.makeImmutable();
+        result.dieType_ = dieType_;
+        result.reviveCount_ = reviveCount_;
         result.waitTime_ = waitTime_;
         result.dungeonId_ = dungeonId_;
         result.murdererEntityId_ = murdererEntityId_;
-        result.dieType_ = dieType_;
-        result.reviveCount_ = reviveCount_;
-        if (entityCase_ == 4) {
+        if (entityCase_ == 10) {
           result.entity_ = entity_;
         }
-        if (entityCase_ == 8) {
+        if (entityCase_ == 14) {
           result.entity_ = entity_;
         }
         result.entityCase_ = entityCase_;
@@ -917,6 +925,12 @@ public final class DungeonPlayerDieNotifyOuterClass {
         if (other == emu.grasscutter.net.proto.DungeonPlayerDieNotifyOuterClass.DungeonPlayerDieNotify.getDefaultInstance()) return this;
         internalGetMutableStrengthenPointDataMap().mergeFrom(
             other.internalGetStrengthenPointDataMap());
+        if (other.dieType_ != 0) {
+          setDieTypeValue(other.getDieTypeValue());
+        }
+        if (other.getReviveCount() != 0) {
+          setReviveCount(other.getReviveCount());
+        }
         if (other.getWaitTime() != 0) {
           setWaitTime(other.getWaitTime());
         }
@@ -925,12 +939,6 @@ public final class DungeonPlayerDieNotifyOuterClass {
         }
         if (other.getMurdererEntityId() != 0) {
           setMurdererEntityId(other.getMurdererEntityId());
-        }
-        if (other.dieType_ != 0) {
-          setDieTypeValue(other.getDieTypeValue());
-        }
-        if (other.getReviveCount() != 0) {
-          setReviveCount(other.getReviveCount());
         }
         switch (other.getEntityCase()) {
           case MONSTER_ID: {
@@ -1017,7 +1025,7 @@ public final class DungeonPlayerDieNotifyOuterClass {
         return internalGetStrengthenPointDataMap().getMap().size();
       }
       /**
-       * <code>map&lt;uint32, .StrengthenPointData&gt; strengthen_point_data_map = 15;</code>
+       * <code>map&lt;uint32, .StrengthenPointData&gt; strengthen_point_data_map = 7;</code>
        */
 
       @java.lang.Override
@@ -1035,7 +1043,7 @@ public final class DungeonPlayerDieNotifyOuterClass {
         return getStrengthenPointDataMapMap();
       }
       /**
-       * <code>map&lt;uint32, .StrengthenPointData&gt; strengthen_point_data_map = 15;</code>
+       * <code>map&lt;uint32, .StrengthenPointData&gt; strengthen_point_data_map = 7;</code>
        */
       @java.lang.Override
 
@@ -1043,7 +1051,7 @@ public final class DungeonPlayerDieNotifyOuterClass {
         return internalGetStrengthenPointDataMap().getMap();
       }
       /**
-       * <code>map&lt;uint32, .StrengthenPointData&gt; strengthen_point_data_map = 15;</code>
+       * <code>map&lt;uint32, .StrengthenPointData&gt; strengthen_point_data_map = 7;</code>
        */
       @java.lang.Override
 
@@ -1056,7 +1064,7 @@ public final class DungeonPlayerDieNotifyOuterClass {
         return map.containsKey(key) ? map.get(key) : defaultValue;
       }
       /**
-       * <code>map&lt;uint32, .StrengthenPointData&gt; strengthen_point_data_map = 15;</code>
+       * <code>map&lt;uint32, .StrengthenPointData&gt; strengthen_point_data_map = 7;</code>
        */
       @java.lang.Override
 
@@ -1077,7 +1085,7 @@ public final class DungeonPlayerDieNotifyOuterClass {
         return this;
       }
       /**
-       * <code>map&lt;uint32, .StrengthenPointData&gt; strengthen_point_data_map = 15;</code>
+       * <code>map&lt;uint32, .StrengthenPointData&gt; strengthen_point_data_map = 7;</code>
        */
 
       public Builder removeStrengthenPointDataMap(
@@ -1096,7 +1104,7 @@ public final class DungeonPlayerDieNotifyOuterClass {
         return internalGetMutableStrengthenPointDataMap().getMutableMap();
       }
       /**
-       * <code>map&lt;uint32, .StrengthenPointData&gt; strengthen_point_data_map = 15;</code>
+       * <code>map&lt;uint32, .StrengthenPointData&gt; strengthen_point_data_map = 7;</code>
        */
       public Builder putStrengthenPointDataMap(
           int key,
@@ -1108,7 +1116,7 @@ public final class DungeonPlayerDieNotifyOuterClass {
         return this;
       }
       /**
-       * <code>map&lt;uint32, .StrengthenPointData&gt; strengthen_point_data_map = 15;</code>
+       * <code>map&lt;uint32, .StrengthenPointData&gt; strengthen_point_data_map = 7;</code>
        */
 
       public Builder putAllStrengthenPointDataMap(
@@ -1118,109 +1126,16 @@ public final class DungeonPlayerDieNotifyOuterClass {
         return this;
       }
 
-      private int waitTime_ ;
-      /**
-       * <code>uint32 wait_time = 1;</code>
-       * @return The waitTime.
-       */
-      @java.lang.Override
-      public int getWaitTime() {
-        return waitTime_;
-      }
-      /**
-       * <code>uint32 wait_time = 1;</code>
-       * @param value The waitTime to set.
-       * @return This builder for chaining.
-       */
-      public Builder setWaitTime(int value) {
-        
-        waitTime_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 wait_time = 1;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearWaitTime() {
-        
-        waitTime_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int dungeonId_ ;
-      /**
-       * <code>uint32 dungeon_id = 9;</code>
-       * @return The dungeonId.
-       */
-      @java.lang.Override
-      public int getDungeonId() {
-        return dungeonId_;
-      }
-      /**
-       * <code>uint32 dungeon_id = 9;</code>
-       * @param value The dungeonId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setDungeonId(int value) {
-        
-        dungeonId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 dungeon_id = 9;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearDungeonId() {
-        
-        dungeonId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int murdererEntityId_ ;
-      /**
-       * <code>uint32 murderer_entity_id = 13;</code>
-       * @return The murdererEntityId.
-       */
-      @java.lang.Override
-      public int getMurdererEntityId() {
-        return murdererEntityId_;
-      }
-      /**
-       * <code>uint32 murderer_entity_id = 13;</code>
-       * @param value The murdererEntityId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setMurdererEntityId(int value) {
-        
-        murdererEntityId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 murderer_entity_id = 13;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearMurdererEntityId() {
-        
-        murdererEntityId_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int dieType_ = 0;
       /**
-       * <code>.PlayerDieType die_type = 3;</code>
+       * <code>.PlayerDieType die_type = 8;</code>
        * @return The enum numeric value on the wire for dieType.
        */
       @java.lang.Override public int getDieTypeValue() {
         return dieType_;
       }
       /**
-       * <code>.PlayerDieType die_type = 3;</code>
+       * <code>.PlayerDieType die_type = 8;</code>
        * @param value The enum numeric value on the wire for dieType to set.
        * @return This builder for chaining.
        */
@@ -1231,7 +1146,7 @@ public final class DungeonPlayerDieNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.PlayerDieType die_type = 3;</code>
+       * <code>.PlayerDieType die_type = 8;</code>
        * @return The dieType.
        */
       @java.lang.Override
@@ -1241,7 +1156,7 @@ public final class DungeonPlayerDieNotifyOuterClass {
         return result == null ? emu.grasscutter.net.proto.PlayerDieTypeOuterClass.PlayerDieType.UNRECOGNIZED : result;
       }
       /**
-       * <code>.PlayerDieType die_type = 3;</code>
+       * <code>.PlayerDieType die_type = 8;</code>
        * @param value The dieType to set.
        * @return This builder for chaining.
        */
@@ -1255,7 +1170,7 @@ public final class DungeonPlayerDieNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.PlayerDieType die_type = 3;</code>
+       * <code>.PlayerDieType die_type = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearDieType() {
@@ -1267,7 +1182,7 @@ public final class DungeonPlayerDieNotifyOuterClass {
 
       private int reviveCount_ ;
       /**
-       * <code>uint32 revive_count = 6;</code>
+       * <code>uint32 revive_count = 3;</code>
        * @return The reviveCount.
        */
       @java.lang.Override
@@ -1275,7 +1190,7 @@ public final class DungeonPlayerDieNotifyOuterClass {
         return reviveCount_;
       }
       /**
-       * <code>uint32 revive_count = 6;</code>
+       * <code>uint32 revive_count = 3;</code>
        * @param value The reviveCount to set.
        * @return This builder for chaining.
        */
@@ -1286,7 +1201,7 @@ public final class DungeonPlayerDieNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 revive_count = 6;</code>
+       * <code>uint32 revive_count = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearReviveCount() {
@@ -1296,40 +1211,133 @@ public final class DungeonPlayerDieNotifyOuterClass {
         return this;
       }
 
+      private int waitTime_ ;
       /**
-       * <code>uint32 monster_id = 4;</code>
+       * <code>uint32 wait_time = 4;</code>
+       * @return The waitTime.
+       */
+      @java.lang.Override
+      public int getWaitTime() {
+        return waitTime_;
+      }
+      /**
+       * <code>uint32 wait_time = 4;</code>
+       * @param value The waitTime to set.
+       * @return This builder for chaining.
+       */
+      public Builder setWaitTime(int value) {
+        
+        waitTime_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 wait_time = 4;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearWaitTime() {
+        
+        waitTime_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int dungeonId_ ;
+      /**
+       * <code>uint32 dungeon_id = 6;</code>
+       * @return The dungeonId.
+       */
+      @java.lang.Override
+      public int getDungeonId() {
+        return dungeonId_;
+      }
+      /**
+       * <code>uint32 dungeon_id = 6;</code>
+       * @param value The dungeonId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setDungeonId(int value) {
+        
+        dungeonId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 dungeon_id = 6;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearDungeonId() {
+        
+        dungeonId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int murdererEntityId_ ;
+      /**
+       * <code>uint32 murderer_entity_id = 11;</code>
+       * @return The murdererEntityId.
+       */
+      @java.lang.Override
+      public int getMurdererEntityId() {
+        return murdererEntityId_;
+      }
+      /**
+       * <code>uint32 murderer_entity_id = 11;</code>
+       * @param value The murdererEntityId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setMurdererEntityId(int value) {
+        
+        murdererEntityId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 murderer_entity_id = 11;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearMurdererEntityId() {
+        
+        murdererEntityId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      /**
+       * <code>uint32 monster_id = 10;</code>
        * @return Whether the monsterId field is set.
        */
       public boolean hasMonsterId() {
-        return entityCase_ == 4;
+        return entityCase_ == 10;
       }
       /**
-       * <code>uint32 monster_id = 4;</code>
+       * <code>uint32 monster_id = 10;</code>
        * @return The monsterId.
        */
       public int getMonsterId() {
-        if (entityCase_ == 4) {
+        if (entityCase_ == 10) {
           return (java.lang.Integer) entity_;
         }
         return 0;
       }
       /**
-       * <code>uint32 monster_id = 4;</code>
+       * <code>uint32 monster_id = 10;</code>
        * @param value The monsterId to set.
        * @return This builder for chaining.
        */
       public Builder setMonsterId(int value) {
-        entityCase_ = 4;
+        entityCase_ = 10;
         entity_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 monster_id = 4;</code>
+       * <code>uint32 monster_id = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearMonsterId() {
-        if (entityCase_ == 4) {
+        if (entityCase_ == 10) {
           entityCase_ = 0;
           entity_ = null;
           onChanged();
@@ -1338,39 +1346,39 @@ public final class DungeonPlayerDieNotifyOuterClass {
       }
 
       /**
-       * <code>uint32 gadget_id = 8;</code>
+       * <code>uint32 gadget_id = 14;</code>
        * @return Whether the gadgetId field is set.
        */
       public boolean hasGadgetId() {
-        return entityCase_ == 8;
+        return entityCase_ == 14;
       }
       /**
-       * <code>uint32 gadget_id = 8;</code>
+       * <code>uint32 gadget_id = 14;</code>
        * @return The gadgetId.
        */
       public int getGadgetId() {
-        if (entityCase_ == 8) {
+        if (entityCase_ == 14) {
           return (java.lang.Integer) entity_;
         }
         return 0;
       }
       /**
-       * <code>uint32 gadget_id = 8;</code>
+       * <code>uint32 gadget_id = 14;</code>
        * @param value The gadgetId to set.
        * @return This builder for chaining.
        */
       public Builder setGadgetId(int value) {
-        entityCase_ = 8;
+        entityCase_ = 14;
         entity_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 gadget_id = 8;</code>
+       * <code>uint32 gadget_id = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearGadgetId() {
-        if (entityCase_ == 8) {
+        if (entityCase_ == 14) {
           entityCase_ = 0;
           entity_ = null;
           onChanged();
@@ -1452,12 +1460,12 @@ public final class DungeonPlayerDieNotifyOuterClass {
       "\n\034DungeonPlayerDieNotify.proto\032\023PlayerDi" +
       "eType.proto\032\031StrengthenPointData.proto\"\365" +
       "\002\n\026DungeonPlayerDieNotify\022V\n\031strengthen_" +
-      "point_data_map\030\017 \003(\01323.DungeonPlayerDieN" +
-      "otify.StrengthenPointDataMapEntry\022\021\n\twai" +
-      "t_time\030\001 \001(\r\022\022\n\ndungeon_id\030\t \001(\r\022\032\n\022murd" +
-      "erer_entity_id\030\r \001(\r\022 \n\010die_type\030\003 \001(\0162\016" +
-      ".PlayerDieType\022\024\n\014revive_count\030\006 \001(\r\022\024\n\n" +
-      "monster_id\030\004 \001(\rH\000\022\023\n\tgadget_id\030\010 \001(\rH\000\032" +
+      "point_data_map\030\007 \003(\01323.DungeonPlayerDieN" +
+      "otify.StrengthenPointDataMapEntry\022 \n\010die" +
+      "_type\030\010 \001(\0162\016.PlayerDieType\022\024\n\014revive_co" +
+      "unt\030\003 \001(\r\022\021\n\twait_time\030\004 \001(\r\022\022\n\ndungeon_" +
+      "id\030\006 \001(\r\022\032\n\022murderer_entity_id\030\013 \001(\r\022\024\n\n" +
+      "monster_id\030\n \001(\rH\000\022\023\n\tgadget_id\030\016 \001(\rH\000\032" +
       "S\n\033StrengthenPointDataMapEntry\022\013\n\003key\030\001 " +
       "\001(\r\022#\n\005value\030\002 \001(\0132\024.StrengthenPointData" +
       ":\0028\001B\010\n\006entityB\033\n\031emu.grasscutter.net.pr" +
@@ -1474,7 +1482,7 @@ public final class DungeonPlayerDieNotifyOuterClass {
     internal_static_DungeonPlayerDieNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_DungeonPlayerDieNotify_descriptor,
-        new java.lang.String[] { "StrengthenPointDataMap", "WaitTime", "DungeonId", "MurdererEntityId", "DieType", "ReviveCount", "MonsterId", "GadgetId", "Entity", });
+        new java.lang.String[] { "StrengthenPointDataMap", "DieType", "ReviveCount", "WaitTime", "DungeonId", "MurdererEntityId", "MonsterId", "GadgetId", "Entity", });
     internal_static_DungeonPlayerDieNotify_StrengthenPointDataMapEntry_descriptor =
       internal_static_DungeonPlayerDieNotify_descriptor.getNestedTypes().get(0);
     internal_static_DungeonPlayerDieNotify_StrengthenPointDataMapEntry_fieldAccessorTable = new

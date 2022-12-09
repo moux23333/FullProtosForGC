@@ -19,28 +19,32 @@ public final class UpgradeRoguelikeShikigamiRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
+     * <code>uint32 shikigami_group_id = 8;</code>
+     * @return The shikigamiGroupId.
+     */
+    int getShikigamiGroupId();
+
+    /**
      * <code>int32 retcode = 10;</code>
      * @return The retcode.
      */
     int getRetcode();
 
     /**
-     * <code>uint32 shikigami_group_id = 14;</code>
-     * @return The shikigamiGroupId.
-     */
-    int getShikigamiGroupId();
-
-    /**
-     * <code>uint32 cur_level = 4;</code>
+     * <code>uint32 cur_level = 5;</code>
      * @return The curLevel.
      */
     int getCurLevel();
   }
   /**
    * <pre>
-   * CmdId: 8966
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 8314;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code UpgradeRoguelikeShikigamiRsp}
@@ -87,19 +91,19 @@ public final class UpgradeRoguelikeShikigamiRspOuterClass {
             case 0:
               done = true;
               break;
-            case 32: {
+            case 40: {
 
               curLevel_ = input.readUInt32();
+              break;
+            }
+            case 64: {
+
+              shikigamiGroupId_ = input.readUInt32();
               break;
             }
             case 80: {
 
               retcode_ = input.readInt32();
-              break;
-            }
-            case 112: {
-
-              shikigamiGroupId_ = input.readUInt32();
               break;
             }
             default: {
@@ -134,6 +138,17 @@ public final class UpgradeRoguelikeShikigamiRspOuterClass {
               emu.grasscutter.net.proto.UpgradeRoguelikeShikigamiRspOuterClass.UpgradeRoguelikeShikigamiRsp.class, emu.grasscutter.net.proto.UpgradeRoguelikeShikigamiRspOuterClass.UpgradeRoguelikeShikigamiRsp.Builder.class);
     }
 
+    public static final int SHIKIGAMI_GROUP_ID_FIELD_NUMBER = 8;
+    private int shikigamiGroupId_;
+    /**
+     * <code>uint32 shikigami_group_id = 8;</code>
+     * @return The shikigamiGroupId.
+     */
+    @java.lang.Override
+    public int getShikigamiGroupId() {
+      return shikigamiGroupId_;
+    }
+
     public static final int RETCODE_FIELD_NUMBER = 10;
     private int retcode_;
     /**
@@ -145,21 +160,10 @@ public final class UpgradeRoguelikeShikigamiRspOuterClass {
       return retcode_;
     }
 
-    public static final int SHIKIGAMI_GROUP_ID_FIELD_NUMBER = 14;
-    private int shikigamiGroupId_;
-    /**
-     * <code>uint32 shikigami_group_id = 14;</code>
-     * @return The shikigamiGroupId.
-     */
-    @java.lang.Override
-    public int getShikigamiGroupId() {
-      return shikigamiGroupId_;
-    }
-
-    public static final int CUR_LEVEL_FIELD_NUMBER = 4;
+    public static final int CUR_LEVEL_FIELD_NUMBER = 5;
     private int curLevel_;
     /**
-     * <code>uint32 cur_level = 4;</code>
+     * <code>uint32 cur_level = 5;</code>
      * @return The curLevel.
      */
     @java.lang.Override
@@ -182,13 +186,13 @@ public final class UpgradeRoguelikeShikigamiRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (curLevel_ != 0) {
-        output.writeUInt32(4, curLevel_);
+        output.writeUInt32(5, curLevel_);
+      }
+      if (shikigamiGroupId_ != 0) {
+        output.writeUInt32(8, shikigamiGroupId_);
       }
       if (retcode_ != 0) {
         output.writeInt32(10, retcode_);
-      }
-      if (shikigamiGroupId_ != 0) {
-        output.writeUInt32(14, shikigamiGroupId_);
       }
       unknownFields.writeTo(output);
     }
@@ -201,15 +205,15 @@ public final class UpgradeRoguelikeShikigamiRspOuterClass {
       size = 0;
       if (curLevel_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, curLevel_);
+          .computeUInt32Size(5, curLevel_);
+      }
+      if (shikigamiGroupId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(8, shikigamiGroupId_);
       }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeInt32Size(10, retcode_);
-      }
-      if (shikigamiGroupId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, shikigamiGroupId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -226,10 +230,10 @@ public final class UpgradeRoguelikeShikigamiRspOuterClass {
       }
       emu.grasscutter.net.proto.UpgradeRoguelikeShikigamiRspOuterClass.UpgradeRoguelikeShikigamiRsp other = (emu.grasscutter.net.proto.UpgradeRoguelikeShikigamiRspOuterClass.UpgradeRoguelikeShikigamiRsp) obj;
 
-      if (getRetcode()
-          != other.getRetcode()) return false;
       if (getShikigamiGroupId()
           != other.getShikigamiGroupId()) return false;
+      if (getRetcode()
+          != other.getRetcode()) return false;
       if (getCurLevel()
           != other.getCurLevel()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
@@ -243,10 +247,10 @@ public final class UpgradeRoguelikeShikigamiRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
-      hash = (53 * hash) + getRetcode();
       hash = (37 * hash) + SHIKIGAMI_GROUP_ID_FIELD_NUMBER;
       hash = (53 * hash) + getShikigamiGroupId();
+      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
+      hash = (53 * hash) + getRetcode();
       hash = (37 * hash) + CUR_LEVEL_FIELD_NUMBER;
       hash = (53 * hash) + getCurLevel();
       hash = (29 * hash) + unknownFields.hashCode();
@@ -346,9 +350,13 @@ public final class UpgradeRoguelikeShikigamiRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 8966
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 8314;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code UpgradeRoguelikeShikigamiRsp}
@@ -388,9 +396,9 @@ public final class UpgradeRoguelikeShikigamiRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        retcode_ = 0;
-
         shikigamiGroupId_ = 0;
+
+        retcode_ = 0;
 
         curLevel_ = 0;
 
@@ -420,8 +428,8 @@ public final class UpgradeRoguelikeShikigamiRspOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.UpgradeRoguelikeShikigamiRspOuterClass.UpgradeRoguelikeShikigamiRsp buildPartial() {
         emu.grasscutter.net.proto.UpgradeRoguelikeShikigamiRspOuterClass.UpgradeRoguelikeShikigamiRsp result = new emu.grasscutter.net.proto.UpgradeRoguelikeShikigamiRspOuterClass.UpgradeRoguelikeShikigamiRsp(this);
-        result.retcode_ = retcode_;
         result.shikigamiGroupId_ = shikigamiGroupId_;
+        result.retcode_ = retcode_;
         result.curLevel_ = curLevel_;
         onBuilt();
         return result;
@@ -471,11 +479,11 @@ public final class UpgradeRoguelikeShikigamiRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.UpgradeRoguelikeShikigamiRspOuterClass.UpgradeRoguelikeShikigamiRsp other) {
         if (other == emu.grasscutter.net.proto.UpgradeRoguelikeShikigamiRspOuterClass.UpgradeRoguelikeShikigamiRsp.getDefaultInstance()) return this;
-        if (other.getRetcode() != 0) {
-          setRetcode(other.getRetcode());
-        }
         if (other.getShikigamiGroupId() != 0) {
           setShikigamiGroupId(other.getShikigamiGroupId());
+        }
+        if (other.getRetcode() != 0) {
+          setRetcode(other.getRetcode());
         }
         if (other.getCurLevel() != 0) {
           setCurLevel(other.getCurLevel());
@@ -506,6 +514,37 @@ public final class UpgradeRoguelikeShikigamiRspOuterClass {
             mergeFrom(parsedMessage);
           }
         }
+        return this;
+      }
+
+      private int shikigamiGroupId_ ;
+      /**
+       * <code>uint32 shikigami_group_id = 8;</code>
+       * @return The shikigamiGroupId.
+       */
+      @java.lang.Override
+      public int getShikigamiGroupId() {
+        return shikigamiGroupId_;
+      }
+      /**
+       * <code>uint32 shikigami_group_id = 8;</code>
+       * @param value The shikigamiGroupId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setShikigamiGroupId(int value) {
+        
+        shikigamiGroupId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 shikigami_group_id = 8;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearShikigamiGroupId() {
+        
+        shikigamiGroupId_ = 0;
+        onChanged();
         return this;
       }
 
@@ -540,40 +579,9 @@ public final class UpgradeRoguelikeShikigamiRspOuterClass {
         return this;
       }
 
-      private int shikigamiGroupId_ ;
-      /**
-       * <code>uint32 shikigami_group_id = 14;</code>
-       * @return The shikigamiGroupId.
-       */
-      @java.lang.Override
-      public int getShikigamiGroupId() {
-        return shikigamiGroupId_;
-      }
-      /**
-       * <code>uint32 shikigami_group_id = 14;</code>
-       * @param value The shikigamiGroupId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setShikigamiGroupId(int value) {
-        
-        shikigamiGroupId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 shikigami_group_id = 14;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearShikigamiGroupId() {
-        
-        shikigamiGroupId_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int curLevel_ ;
       /**
-       * <code>uint32 cur_level = 4;</code>
+       * <code>uint32 cur_level = 5;</code>
        * @return The curLevel.
        */
       @java.lang.Override
@@ -581,7 +589,7 @@ public final class UpgradeRoguelikeShikigamiRspOuterClass {
         return curLevel_;
       }
       /**
-       * <code>uint32 cur_level = 4;</code>
+       * <code>uint32 cur_level = 5;</code>
        * @param value The curLevel to set.
        * @return This builder for chaining.
        */
@@ -592,7 +600,7 @@ public final class UpgradeRoguelikeShikigamiRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 cur_level = 4;</code>
+       * <code>uint32 cur_level = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearCurLevel() {
@@ -669,9 +677,9 @@ public final class UpgradeRoguelikeShikigamiRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\"UpgradeRoguelikeShikigamiRsp.proto\"^\n\034" +
-      "UpgradeRoguelikeShikigamiRsp\022\017\n\007retcode\030" +
-      "\n \001(\005\022\032\n\022shikigami_group_id\030\016 \001(\r\022\021\n\tcur" +
-      "_level\030\004 \001(\rB\033\n\031emu.grasscutter.net.prot" +
+      "UpgradeRoguelikeShikigamiRsp\022\032\n\022shikigam" +
+      "i_group_id\030\010 \001(\r\022\017\n\007retcode\030\n \001(\005\022\021\n\tcur" +
+      "_level\030\005 \001(\rB\033\n\031emu.grasscutter.net.prot" +
       "ob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -683,7 +691,7 @@ public final class UpgradeRoguelikeShikigamiRspOuterClass {
     internal_static_UpgradeRoguelikeShikigamiRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_UpgradeRoguelikeShikigamiRsp_descriptor,
-        new java.lang.String[] { "Retcode", "ShikigamiGroupId", "CurLevel", });
+        new java.lang.String[] { "ShikigamiGroupId", "Retcode", "CurLevel", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

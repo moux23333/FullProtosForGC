@@ -19,22 +19,26 @@ public final class GCGDSChangeCurDeckRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 8;</code>
+     * <code>int32 retcode = 6;</code>
      * @return The retcode.
      */
     int getRetcode();
 
     /**
-     * <code>uint32 deck_id = 14;</code>
+     * <code>uint32 deck_id = 3;</code>
      * @return The deckId.
      */
     int getDeckId();
   }
   /**
    * <pre>
-   * CmdId: 7301
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 7908;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code GCGDSChangeCurDeckRsp}
@@ -81,14 +85,14 @@ public final class GCGDSChangeCurDeckRspOuterClass {
             case 0:
               done = true;
               break;
-            case 64: {
-
-              retcode_ = input.readInt32();
-              break;
-            }
-            case 112: {
+            case 24: {
 
               deckId_ = input.readUInt32();
+              break;
+            }
+            case 48: {
+
+              retcode_ = input.readInt32();
               break;
             }
             default: {
@@ -123,10 +127,10 @@ public final class GCGDSChangeCurDeckRspOuterClass {
               emu.grasscutter.net.proto.GCGDSChangeCurDeckRspOuterClass.GCGDSChangeCurDeckRsp.class, emu.grasscutter.net.proto.GCGDSChangeCurDeckRspOuterClass.GCGDSChangeCurDeckRsp.Builder.class);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 8;
+    public static final int RETCODE_FIELD_NUMBER = 6;
     private int retcode_;
     /**
-     * <code>int32 retcode = 8;</code>
+     * <code>int32 retcode = 6;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -134,10 +138,10 @@ public final class GCGDSChangeCurDeckRspOuterClass {
       return retcode_;
     }
 
-    public static final int DECK_ID_FIELD_NUMBER = 14;
+    public static final int DECK_ID_FIELD_NUMBER = 3;
     private int deckId_;
     /**
-     * <code>uint32 deck_id = 14;</code>
+     * <code>uint32 deck_id = 3;</code>
      * @return The deckId.
      */
     @java.lang.Override
@@ -159,11 +163,11 @@ public final class GCGDSChangeCurDeckRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (retcode_ != 0) {
-        output.writeInt32(8, retcode_);
-      }
       if (deckId_ != 0) {
-        output.writeUInt32(14, deckId_);
+        output.writeUInt32(3, deckId_);
+      }
+      if (retcode_ != 0) {
+        output.writeInt32(6, retcode_);
       }
       unknownFields.writeTo(output);
     }
@@ -174,13 +178,13 @@ public final class GCGDSChangeCurDeckRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (retcode_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(8, retcode_);
-      }
       if (deckId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, deckId_);
+          .computeUInt32Size(3, deckId_);
+      }
+      if (retcode_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(6, retcode_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -313,9 +317,13 @@ public final class GCGDSChangeCurDeckRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 7301
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 7908;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code GCGDSChangeCurDeckRsp}
@@ -472,7 +480,7 @@ public final class GCGDSChangeCurDeckRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 8;</code>
+       * <code>int32 retcode = 6;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -480,7 +488,7 @@ public final class GCGDSChangeCurDeckRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 8;</code>
+       * <code>int32 retcode = 6;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -491,7 +499,7 @@ public final class GCGDSChangeCurDeckRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 8;</code>
+       * <code>int32 retcode = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -503,7 +511,7 @@ public final class GCGDSChangeCurDeckRspOuterClass {
 
       private int deckId_ ;
       /**
-       * <code>uint32 deck_id = 14;</code>
+       * <code>uint32 deck_id = 3;</code>
        * @return The deckId.
        */
       @java.lang.Override
@@ -511,7 +519,7 @@ public final class GCGDSChangeCurDeckRspOuterClass {
         return deckId_;
       }
       /**
-       * <code>uint32 deck_id = 14;</code>
+       * <code>uint32 deck_id = 3;</code>
        * @param value The deckId to set.
        * @return This builder for chaining.
        */
@@ -522,7 +530,7 @@ public final class GCGDSChangeCurDeckRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 deck_id = 14;</code>
+       * <code>uint32 deck_id = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearDeckId() {
@@ -599,8 +607,8 @@ public final class GCGDSChangeCurDeckRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\033GCGDSChangeCurDeckRsp.proto\"9\n\025GCGDSCh" +
-      "angeCurDeckRsp\022\017\n\007retcode\030\010 \001(\005\022\017\n\007deck_" +
-      "id\030\016 \001(\rB\033\n\031emu.grasscutter.net.protob\006p" +
+      "angeCurDeckRsp\022\017\n\007retcode\030\006 \001(\005\022\017\n\007deck_" +
+      "id\030\003 \001(\rB\033\n\031emu.grasscutter.net.protob\006p" +
       "roto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

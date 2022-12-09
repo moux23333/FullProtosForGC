@@ -19,22 +19,26 @@ public final class HomeDeleteBlueprintRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 slot_id = 5;</code>
-     * @return The slotId.
-     */
-    int getSlotId();
-
-    /**
-     * <code>int32 retcode = 14;</code>
+     * <code>int32 retcode = 2;</code>
      * @return The retcode.
      */
     int getRetcode();
+
+    /**
+     * <code>uint32 slot_id = 15;</code>
+     * @return The slotId.
+     */
+    int getSlotId();
   }
   /**
    * <pre>
-   * CmdId: 4586
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 4545;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code HomeDeleteBlueprintRsp}
@@ -81,14 +85,14 @@ public final class HomeDeleteBlueprintRspOuterClass {
             case 0:
               done = true;
               break;
-            case 40: {
-
-              slotId_ = input.readUInt32();
-              break;
-            }
-            case 112: {
+            case 16: {
 
               retcode_ = input.readInt32();
+              break;
+            }
+            case 120: {
+
+              slotId_ = input.readUInt32();
               break;
             }
             default: {
@@ -123,26 +127,26 @@ public final class HomeDeleteBlueprintRspOuterClass {
               emu.grasscutter.net.proto.HomeDeleteBlueprintRspOuterClass.HomeDeleteBlueprintRsp.class, emu.grasscutter.net.proto.HomeDeleteBlueprintRspOuterClass.HomeDeleteBlueprintRsp.Builder.class);
     }
 
-    public static final int SLOT_ID_FIELD_NUMBER = 5;
-    private int slotId_;
-    /**
-     * <code>uint32 slot_id = 5;</code>
-     * @return The slotId.
-     */
-    @java.lang.Override
-    public int getSlotId() {
-      return slotId_;
-    }
-
-    public static final int RETCODE_FIELD_NUMBER = 14;
+    public static final int RETCODE_FIELD_NUMBER = 2;
     private int retcode_;
     /**
-     * <code>int32 retcode = 14;</code>
+     * <code>int32 retcode = 2;</code>
      * @return The retcode.
      */
     @java.lang.Override
     public int getRetcode() {
       return retcode_;
+    }
+
+    public static final int SLOT_ID_FIELD_NUMBER = 15;
+    private int slotId_;
+    /**
+     * <code>uint32 slot_id = 15;</code>
+     * @return The slotId.
+     */
+    @java.lang.Override
+    public int getSlotId() {
+      return slotId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -159,11 +163,11 @@ public final class HomeDeleteBlueprintRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (slotId_ != 0) {
-        output.writeUInt32(5, slotId_);
-      }
       if (retcode_ != 0) {
-        output.writeInt32(14, retcode_);
+        output.writeInt32(2, retcode_);
+      }
+      if (slotId_ != 0) {
+        output.writeUInt32(15, slotId_);
       }
       unknownFields.writeTo(output);
     }
@@ -174,13 +178,13 @@ public final class HomeDeleteBlueprintRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (slotId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, slotId_);
-      }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(14, retcode_);
+          .computeInt32Size(2, retcode_);
+      }
+      if (slotId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(15, slotId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -197,10 +201,10 @@ public final class HomeDeleteBlueprintRspOuterClass {
       }
       emu.grasscutter.net.proto.HomeDeleteBlueprintRspOuterClass.HomeDeleteBlueprintRsp other = (emu.grasscutter.net.proto.HomeDeleteBlueprintRspOuterClass.HomeDeleteBlueprintRsp) obj;
 
-      if (getSlotId()
-          != other.getSlotId()) return false;
       if (getRetcode()
           != other.getRetcode()) return false;
+      if (getSlotId()
+          != other.getSlotId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -212,10 +216,10 @@ public final class HomeDeleteBlueprintRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + SLOT_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getSlotId();
       hash = (37 * hash) + RETCODE_FIELD_NUMBER;
       hash = (53 * hash) + getRetcode();
+      hash = (37 * hash) + SLOT_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getSlotId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -313,9 +317,13 @@ public final class HomeDeleteBlueprintRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 4586
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 4545;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code HomeDeleteBlueprintRsp}
@@ -355,9 +363,9 @@ public final class HomeDeleteBlueprintRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        slotId_ = 0;
-
         retcode_ = 0;
+
+        slotId_ = 0;
 
         return this;
       }
@@ -385,8 +393,8 @@ public final class HomeDeleteBlueprintRspOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.HomeDeleteBlueprintRspOuterClass.HomeDeleteBlueprintRsp buildPartial() {
         emu.grasscutter.net.proto.HomeDeleteBlueprintRspOuterClass.HomeDeleteBlueprintRsp result = new emu.grasscutter.net.proto.HomeDeleteBlueprintRspOuterClass.HomeDeleteBlueprintRsp(this);
-        result.slotId_ = slotId_;
         result.retcode_ = retcode_;
+        result.slotId_ = slotId_;
         onBuilt();
         return result;
       }
@@ -435,11 +443,11 @@ public final class HomeDeleteBlueprintRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.HomeDeleteBlueprintRspOuterClass.HomeDeleteBlueprintRsp other) {
         if (other == emu.grasscutter.net.proto.HomeDeleteBlueprintRspOuterClass.HomeDeleteBlueprintRsp.getDefaultInstance()) return this;
-        if (other.getSlotId() != 0) {
-          setSlotId(other.getSlotId());
-        }
         if (other.getRetcode() != 0) {
           setRetcode(other.getRetcode());
+        }
+        if (other.getSlotId() != 0) {
+          setSlotId(other.getSlotId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -470,40 +478,9 @@ public final class HomeDeleteBlueprintRspOuterClass {
         return this;
       }
 
-      private int slotId_ ;
-      /**
-       * <code>uint32 slot_id = 5;</code>
-       * @return The slotId.
-       */
-      @java.lang.Override
-      public int getSlotId() {
-        return slotId_;
-      }
-      /**
-       * <code>uint32 slot_id = 5;</code>
-       * @param value The slotId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setSlotId(int value) {
-        
-        slotId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 slot_id = 5;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearSlotId() {
-        
-        slotId_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 14;</code>
+       * <code>int32 retcode = 2;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -511,7 +488,7 @@ public final class HomeDeleteBlueprintRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 14;</code>
+       * <code>int32 retcode = 2;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -522,12 +499,43 @@ public final class HomeDeleteBlueprintRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 14;</code>
+       * <code>int32 retcode = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
         
         retcode_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int slotId_ ;
+      /**
+       * <code>uint32 slot_id = 15;</code>
+       * @return The slotId.
+       */
+      @java.lang.Override
+      public int getSlotId() {
+        return slotId_;
+      }
+      /**
+       * <code>uint32 slot_id = 15;</code>
+       * @param value The slotId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setSlotId(int value) {
+        
+        slotId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 slot_id = 15;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearSlotId() {
+        
+        slotId_ = 0;
         onChanged();
         return this;
       }
@@ -599,8 +607,8 @@ public final class HomeDeleteBlueprintRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\034HomeDeleteBlueprintRsp.proto\":\n\026HomeDe" +
-      "leteBlueprintRsp\022\017\n\007slot_id\030\005 \001(\r\022\017\n\007ret" +
-      "code\030\016 \001(\005B\033\n\031emu.grasscutter.net.protob" +
+      "leteBlueprintRsp\022\017\n\007retcode\030\002 \001(\005\022\017\n\007slo" +
+      "t_id\030\017 \001(\rB\033\n\031emu.grasscutter.net.protob" +
       "\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -612,7 +620,7 @@ public final class HomeDeleteBlueprintRspOuterClass {
     internal_static_HomeDeleteBlueprintRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_HomeDeleteBlueprintRsp_descriptor,
-        new java.lang.String[] { "SlotId", "Retcode", });
+        new java.lang.String[] { "Retcode", "SlotId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

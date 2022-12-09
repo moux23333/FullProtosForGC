@@ -19,28 +19,32 @@ public final class ScenePlayGuestReplyInviteRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 6;</code>
-     * @return The retcode.
-     */
-    int getRetcode();
-
-    /**
-     * <code>bool is_agree = 2;</code>
+     * <code>bool is_agree = 1;</code>
      * @return The isAgree.
      */
     boolean getIsAgree();
 
     /**
-     * <code>uint32 play_id = 8;</code>
+     * <code>int32 retcode = 7;</code>
+     * @return The retcode.
+     */
+    int getRetcode();
+
+    /**
+     * <code>uint32 play_id = 15;</code>
      * @return The playId.
      */
     int getPlayId();
   }
   /**
    * <pre>
-   * CmdId: 4440
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 4397;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code ScenePlayGuestReplyInviteRsp}
@@ -87,17 +91,17 @@ public final class ScenePlayGuestReplyInviteRspOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
+            case 8: {
 
               isAgree_ = input.readBool();
               break;
             }
-            case 48: {
+            case 56: {
 
               retcode_ = input.readInt32();
               break;
             }
-            case 64: {
+            case 120: {
 
               playId_ = input.readUInt32();
               break;
@@ -134,21 +138,10 @@ public final class ScenePlayGuestReplyInviteRspOuterClass {
               emu.grasscutter.net.proto.ScenePlayGuestReplyInviteRspOuterClass.ScenePlayGuestReplyInviteRsp.class, emu.grasscutter.net.proto.ScenePlayGuestReplyInviteRspOuterClass.ScenePlayGuestReplyInviteRsp.Builder.class);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 6;
-    private int retcode_;
-    /**
-     * <code>int32 retcode = 6;</code>
-     * @return The retcode.
-     */
-    @java.lang.Override
-    public int getRetcode() {
-      return retcode_;
-    }
-
-    public static final int IS_AGREE_FIELD_NUMBER = 2;
+    public static final int IS_AGREE_FIELD_NUMBER = 1;
     private boolean isAgree_;
     /**
-     * <code>bool is_agree = 2;</code>
+     * <code>bool is_agree = 1;</code>
      * @return The isAgree.
      */
     @java.lang.Override
@@ -156,10 +149,21 @@ public final class ScenePlayGuestReplyInviteRspOuterClass {
       return isAgree_;
     }
 
-    public static final int PLAY_ID_FIELD_NUMBER = 8;
+    public static final int RETCODE_FIELD_NUMBER = 7;
+    private int retcode_;
+    /**
+     * <code>int32 retcode = 7;</code>
+     * @return The retcode.
+     */
+    @java.lang.Override
+    public int getRetcode() {
+      return retcode_;
+    }
+
+    public static final int PLAY_ID_FIELD_NUMBER = 15;
     private int playId_;
     /**
-     * <code>uint32 play_id = 8;</code>
+     * <code>uint32 play_id = 15;</code>
      * @return The playId.
      */
     @java.lang.Override
@@ -182,13 +186,13 @@ public final class ScenePlayGuestReplyInviteRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (isAgree_ != false) {
-        output.writeBool(2, isAgree_);
+        output.writeBool(1, isAgree_);
       }
       if (retcode_ != 0) {
-        output.writeInt32(6, retcode_);
+        output.writeInt32(7, retcode_);
       }
       if (playId_ != 0) {
-        output.writeUInt32(8, playId_);
+        output.writeUInt32(15, playId_);
       }
       unknownFields.writeTo(output);
     }
@@ -201,15 +205,15 @@ public final class ScenePlayGuestReplyInviteRspOuterClass {
       size = 0;
       if (isAgree_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(2, isAgree_);
+          .computeBoolSize(1, isAgree_);
       }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(6, retcode_);
+          .computeInt32Size(7, retcode_);
       }
       if (playId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, playId_);
+          .computeUInt32Size(15, playId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -226,10 +230,10 @@ public final class ScenePlayGuestReplyInviteRspOuterClass {
       }
       emu.grasscutter.net.proto.ScenePlayGuestReplyInviteRspOuterClass.ScenePlayGuestReplyInviteRsp other = (emu.grasscutter.net.proto.ScenePlayGuestReplyInviteRspOuterClass.ScenePlayGuestReplyInviteRsp) obj;
 
-      if (getRetcode()
-          != other.getRetcode()) return false;
       if (getIsAgree()
           != other.getIsAgree()) return false;
+      if (getRetcode()
+          != other.getRetcode()) return false;
       if (getPlayId()
           != other.getPlayId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
@@ -243,11 +247,11 @@ public final class ScenePlayGuestReplyInviteRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
-      hash = (53 * hash) + getRetcode();
       hash = (37 * hash) + IS_AGREE_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsAgree());
+      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
+      hash = (53 * hash) + getRetcode();
       hash = (37 * hash) + PLAY_ID_FIELD_NUMBER;
       hash = (53 * hash) + getPlayId();
       hash = (29 * hash) + unknownFields.hashCode();
@@ -347,9 +351,13 @@ public final class ScenePlayGuestReplyInviteRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 4440
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 4397;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code ScenePlayGuestReplyInviteRsp}
@@ -389,9 +397,9 @@ public final class ScenePlayGuestReplyInviteRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        retcode_ = 0;
-
         isAgree_ = false;
+
+        retcode_ = 0;
 
         playId_ = 0;
 
@@ -421,8 +429,8 @@ public final class ScenePlayGuestReplyInviteRspOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.ScenePlayGuestReplyInviteRspOuterClass.ScenePlayGuestReplyInviteRsp buildPartial() {
         emu.grasscutter.net.proto.ScenePlayGuestReplyInviteRspOuterClass.ScenePlayGuestReplyInviteRsp result = new emu.grasscutter.net.proto.ScenePlayGuestReplyInviteRspOuterClass.ScenePlayGuestReplyInviteRsp(this);
-        result.retcode_ = retcode_;
         result.isAgree_ = isAgree_;
+        result.retcode_ = retcode_;
         result.playId_ = playId_;
         onBuilt();
         return result;
@@ -472,11 +480,11 @@ public final class ScenePlayGuestReplyInviteRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.ScenePlayGuestReplyInviteRspOuterClass.ScenePlayGuestReplyInviteRsp other) {
         if (other == emu.grasscutter.net.proto.ScenePlayGuestReplyInviteRspOuterClass.ScenePlayGuestReplyInviteRsp.getDefaultInstance()) return this;
-        if (other.getRetcode() != 0) {
-          setRetcode(other.getRetcode());
-        }
         if (other.getIsAgree() != false) {
           setIsAgree(other.getIsAgree());
+        }
+        if (other.getRetcode() != 0) {
+          setRetcode(other.getRetcode());
         }
         if (other.getPlayId() != 0) {
           setPlayId(other.getPlayId());
@@ -510,40 +518,9 @@ public final class ScenePlayGuestReplyInviteRspOuterClass {
         return this;
       }
 
-      private int retcode_ ;
-      /**
-       * <code>int32 retcode = 6;</code>
-       * @return The retcode.
-       */
-      @java.lang.Override
-      public int getRetcode() {
-        return retcode_;
-      }
-      /**
-       * <code>int32 retcode = 6;</code>
-       * @param value The retcode to set.
-       * @return This builder for chaining.
-       */
-      public Builder setRetcode(int value) {
-        
-        retcode_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>int32 retcode = 6;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearRetcode() {
-        
-        retcode_ = 0;
-        onChanged();
-        return this;
-      }
-
       private boolean isAgree_ ;
       /**
-       * <code>bool is_agree = 2;</code>
+       * <code>bool is_agree = 1;</code>
        * @return The isAgree.
        */
       @java.lang.Override
@@ -551,7 +528,7 @@ public final class ScenePlayGuestReplyInviteRspOuterClass {
         return isAgree_;
       }
       /**
-       * <code>bool is_agree = 2;</code>
+       * <code>bool is_agree = 1;</code>
        * @param value The isAgree to set.
        * @return This builder for chaining.
        */
@@ -562,7 +539,7 @@ public final class ScenePlayGuestReplyInviteRspOuterClass {
         return this;
       }
       /**
-       * <code>bool is_agree = 2;</code>
+       * <code>bool is_agree = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsAgree() {
@@ -572,9 +549,40 @@ public final class ScenePlayGuestReplyInviteRspOuterClass {
         return this;
       }
 
+      private int retcode_ ;
+      /**
+       * <code>int32 retcode = 7;</code>
+       * @return The retcode.
+       */
+      @java.lang.Override
+      public int getRetcode() {
+        return retcode_;
+      }
+      /**
+       * <code>int32 retcode = 7;</code>
+       * @param value The retcode to set.
+       * @return This builder for chaining.
+       */
+      public Builder setRetcode(int value) {
+        
+        retcode_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 retcode = 7;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearRetcode() {
+        
+        retcode_ = 0;
+        onChanged();
+        return this;
+      }
+
       private int playId_ ;
       /**
-       * <code>uint32 play_id = 8;</code>
+       * <code>uint32 play_id = 15;</code>
        * @return The playId.
        */
       @java.lang.Override
@@ -582,7 +590,7 @@ public final class ScenePlayGuestReplyInviteRspOuterClass {
         return playId_;
       }
       /**
-       * <code>uint32 play_id = 8;</code>
+       * <code>uint32 play_id = 15;</code>
        * @param value The playId to set.
        * @return This builder for chaining.
        */
@@ -593,7 +601,7 @@ public final class ScenePlayGuestReplyInviteRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 play_id = 8;</code>
+       * <code>uint32 play_id = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearPlayId() {
@@ -670,8 +678,8 @@ public final class ScenePlayGuestReplyInviteRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\"ScenePlayGuestReplyInviteRsp.proto\"R\n\034" +
-      "ScenePlayGuestReplyInviteRsp\022\017\n\007retcode\030" +
-      "\006 \001(\005\022\020\n\010is_agree\030\002 \001(\010\022\017\n\007play_id\030\010 \001(\r" +
+      "ScenePlayGuestReplyInviteRsp\022\020\n\010is_agree" +
+      "\030\001 \001(\010\022\017\n\007retcode\030\007 \001(\005\022\017\n\007play_id\030\017 \001(\r" +
       "B\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -683,7 +691,7 @@ public final class ScenePlayGuestReplyInviteRspOuterClass {
     internal_static_ScenePlayGuestReplyInviteRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ScenePlayGuestReplyInviteRsp_descriptor,
-        new java.lang.String[] { "Retcode", "IsAgree", "PlayId", });
+        new java.lang.String[] { "IsAgree", "Retcode", "PlayId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

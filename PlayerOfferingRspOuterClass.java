@@ -19,34 +19,34 @@ public final class PlayerOfferingRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .ItemParam item_list = 7;</code>
+     * <code>int32 retcode = 5;</code>
+     * @return The retcode.
+     */
+    int getRetcode();
+
+    /**
+     * <code>repeated .ItemParam item_list = 3;</code>
      */
     java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> 
         getItemListList();
     /**
-     * <code>repeated .ItemParam item_list = 7;</code>
+     * <code>repeated .ItemParam item_list = 3;</code>
      */
     emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam getItemList(int index);
     /**
-     * <code>repeated .ItemParam item_list = 7;</code>
+     * <code>repeated .ItemParam item_list = 3;</code>
      */
     int getItemListCount();
     /**
-     * <code>repeated .ItemParam item_list = 7;</code>
+     * <code>repeated .ItemParam item_list = 3;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder> 
         getItemListOrBuilderList();
     /**
-     * <code>repeated .ItemParam item_list = 7;</code>
+     * <code>repeated .ItemParam item_list = 3;</code>
      */
     emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder getItemListOrBuilder(
         int index);
-
-    /**
-     * <code>int32 retcode = 4;</code>
-     * @return The retcode.
-     */
-    int getRetcode();
 
     /**
      * <code>.PlayerOfferingData offering_data = 10;</code>
@@ -65,9 +65,13 @@ public final class PlayerOfferingRspOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 2917
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 2916;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code PlayerOfferingRsp}
@@ -116,18 +120,18 @@ public final class PlayerOfferingRspOuterClass {
             case 0:
               done = true;
               break;
-            case 32: {
-
-              retcode_ = input.readInt32();
-              break;
-            }
-            case 58: {
+            case 26: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 itemList_ = new java.util.ArrayList<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam>();
                 mutable_bitField0_ |= 0x00000001;
               }
               itemList_.add(
                   input.readMessage(emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.parser(), extensionRegistry));
+              break;
+            }
+            case 40: {
+
+              retcode_ = input.readInt32();
               break;
             }
             case 82: {
@@ -178,17 +182,28 @@ public final class PlayerOfferingRspOuterClass {
               emu.grasscutter.net.proto.PlayerOfferingRspOuterClass.PlayerOfferingRsp.class, emu.grasscutter.net.proto.PlayerOfferingRspOuterClass.PlayerOfferingRsp.Builder.class);
     }
 
-    public static final int ITEM_LIST_FIELD_NUMBER = 7;
+    public static final int RETCODE_FIELD_NUMBER = 5;
+    private int retcode_;
+    /**
+     * <code>int32 retcode = 5;</code>
+     * @return The retcode.
+     */
+    @java.lang.Override
+    public int getRetcode() {
+      return retcode_;
+    }
+
+    public static final int ITEM_LIST_FIELD_NUMBER = 3;
     private java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> itemList_;
     /**
-     * <code>repeated .ItemParam item_list = 7;</code>
+     * <code>repeated .ItemParam item_list = 3;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> getItemListList() {
       return itemList_;
     }
     /**
-     * <code>repeated .ItemParam item_list = 7;</code>
+     * <code>repeated .ItemParam item_list = 3;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder> 
@@ -196,37 +211,26 @@ public final class PlayerOfferingRspOuterClass {
       return itemList_;
     }
     /**
-     * <code>repeated .ItemParam item_list = 7;</code>
+     * <code>repeated .ItemParam item_list = 3;</code>
      */
     @java.lang.Override
     public int getItemListCount() {
       return itemList_.size();
     }
     /**
-     * <code>repeated .ItemParam item_list = 7;</code>
+     * <code>repeated .ItemParam item_list = 3;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam getItemList(int index) {
       return itemList_.get(index);
     }
     /**
-     * <code>repeated .ItemParam item_list = 7;</code>
+     * <code>repeated .ItemParam item_list = 3;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder getItemListOrBuilder(
         int index) {
       return itemList_.get(index);
-    }
-
-    public static final int RETCODE_FIELD_NUMBER = 4;
-    private int retcode_;
-    /**
-     * <code>int32 retcode = 4;</code>
-     * @return The retcode.
-     */
-    @java.lang.Override
-    public int getRetcode() {
-      return retcode_;
     }
 
     public static final int OFFERING_DATA_FIELD_NUMBER = 10;
@@ -269,11 +273,11 @@ public final class PlayerOfferingRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (retcode_ != 0) {
-        output.writeInt32(4, retcode_);
-      }
       for (int i = 0; i < itemList_.size(); i++) {
-        output.writeMessage(7, itemList_.get(i));
+        output.writeMessage(3, itemList_.get(i));
+      }
+      if (retcode_ != 0) {
+        output.writeInt32(5, retcode_);
       }
       if (offeringData_ != null) {
         output.writeMessage(10, getOfferingData());
@@ -287,13 +291,13 @@ public final class PlayerOfferingRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (retcode_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(4, retcode_);
-      }
       for (int i = 0; i < itemList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(7, itemList_.get(i));
+          .computeMessageSize(3, itemList_.get(i));
+      }
+      if (retcode_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(5, retcode_);
       }
       if (offeringData_ != null) {
         size += com.google.protobuf.CodedOutputStream
@@ -314,10 +318,10 @@ public final class PlayerOfferingRspOuterClass {
       }
       emu.grasscutter.net.proto.PlayerOfferingRspOuterClass.PlayerOfferingRsp other = (emu.grasscutter.net.proto.PlayerOfferingRspOuterClass.PlayerOfferingRsp) obj;
 
-      if (!getItemListList()
-          .equals(other.getItemListList())) return false;
       if (getRetcode()
           != other.getRetcode()) return false;
+      if (!getItemListList()
+          .equals(other.getItemListList())) return false;
       if (hasOfferingData() != other.hasOfferingData()) return false;
       if (hasOfferingData()) {
         if (!getOfferingData()
@@ -334,12 +338,12 @@ public final class PlayerOfferingRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
+      hash = (53 * hash) + getRetcode();
       if (getItemListCount() > 0) {
         hash = (37 * hash) + ITEM_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getItemListList().hashCode();
       }
-      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
-      hash = (53 * hash) + getRetcode();
       if (hasOfferingData()) {
         hash = (37 * hash) + OFFERING_DATA_FIELD_NUMBER;
         hash = (53 * hash) + getOfferingData().hashCode();
@@ -441,9 +445,13 @@ public final class PlayerOfferingRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 2917
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 2916;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code PlayerOfferingRsp}
@@ -484,14 +492,14 @@ public final class PlayerOfferingRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        retcode_ = 0;
+
         if (itemListBuilder_ == null) {
           itemList_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000001);
         } else {
           itemListBuilder_.clear();
         }
-        retcode_ = 0;
-
         if (offeringDataBuilder_ == null) {
           offeringData_ = null;
         } else {
@@ -525,6 +533,7 @@ public final class PlayerOfferingRspOuterClass {
       public emu.grasscutter.net.proto.PlayerOfferingRspOuterClass.PlayerOfferingRsp buildPartial() {
         emu.grasscutter.net.proto.PlayerOfferingRspOuterClass.PlayerOfferingRsp result = new emu.grasscutter.net.proto.PlayerOfferingRspOuterClass.PlayerOfferingRsp(this);
         int from_bitField0_ = bitField0_;
+        result.retcode_ = retcode_;
         if (itemListBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0)) {
             itemList_ = java.util.Collections.unmodifiableList(itemList_);
@@ -534,7 +543,6 @@ public final class PlayerOfferingRspOuterClass {
         } else {
           result.itemList_ = itemListBuilder_.build();
         }
-        result.retcode_ = retcode_;
         if (offeringDataBuilder_ == null) {
           result.offeringData_ = offeringData_;
         } else {
@@ -588,6 +596,9 @@ public final class PlayerOfferingRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.PlayerOfferingRspOuterClass.PlayerOfferingRsp other) {
         if (other == emu.grasscutter.net.proto.PlayerOfferingRspOuterClass.PlayerOfferingRsp.getDefaultInstance()) return this;
+        if (other.getRetcode() != 0) {
+          setRetcode(other.getRetcode());
+        }
         if (itemListBuilder_ == null) {
           if (!other.itemList_.isEmpty()) {
             if (itemList_.isEmpty()) {
@@ -613,9 +624,6 @@ public final class PlayerOfferingRspOuterClass {
               itemListBuilder_.addAllMessages(other.itemList_);
             }
           }
-        }
-        if (other.getRetcode() != 0) {
-          setRetcode(other.getRetcode());
         }
         if (other.hasOfferingData()) {
           mergeOfferingData(other.getOfferingData());
@@ -650,6 +658,37 @@ public final class PlayerOfferingRspOuterClass {
       }
       private int bitField0_;
 
+      private int retcode_ ;
+      /**
+       * <code>int32 retcode = 5;</code>
+       * @return The retcode.
+       */
+      @java.lang.Override
+      public int getRetcode() {
+        return retcode_;
+      }
+      /**
+       * <code>int32 retcode = 5;</code>
+       * @param value The retcode to set.
+       * @return This builder for chaining.
+       */
+      public Builder setRetcode(int value) {
+        
+        retcode_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 retcode = 5;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearRetcode() {
+        
+        retcode_ = 0;
+        onChanged();
+        return this;
+      }
+
       private java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> itemList_ =
         java.util.Collections.emptyList();
       private void ensureItemListIsMutable() {
@@ -663,7 +702,7 @@ public final class PlayerOfferingRspOuterClass {
           emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder> itemListBuilder_;
 
       /**
-       * <code>repeated .ItemParam item_list = 7;</code>
+       * <code>repeated .ItemParam item_list = 3;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> getItemListList() {
         if (itemListBuilder_ == null) {
@@ -673,7 +712,7 @@ public final class PlayerOfferingRspOuterClass {
         }
       }
       /**
-       * <code>repeated .ItemParam item_list = 7;</code>
+       * <code>repeated .ItemParam item_list = 3;</code>
        */
       public int getItemListCount() {
         if (itemListBuilder_ == null) {
@@ -683,7 +722,7 @@ public final class PlayerOfferingRspOuterClass {
         }
       }
       /**
-       * <code>repeated .ItemParam item_list = 7;</code>
+       * <code>repeated .ItemParam item_list = 3;</code>
        */
       public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam getItemList(int index) {
         if (itemListBuilder_ == null) {
@@ -693,7 +732,7 @@ public final class PlayerOfferingRspOuterClass {
         }
       }
       /**
-       * <code>repeated .ItemParam item_list = 7;</code>
+       * <code>repeated .ItemParam item_list = 3;</code>
        */
       public Builder setItemList(
           int index, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam value) {
@@ -710,7 +749,7 @@ public final class PlayerOfferingRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ItemParam item_list = 7;</code>
+       * <code>repeated .ItemParam item_list = 3;</code>
        */
       public Builder setItemList(
           int index, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder builderForValue) {
@@ -724,7 +763,7 @@ public final class PlayerOfferingRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ItemParam item_list = 7;</code>
+       * <code>repeated .ItemParam item_list = 3;</code>
        */
       public Builder addItemList(emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam value) {
         if (itemListBuilder_ == null) {
@@ -740,7 +779,7 @@ public final class PlayerOfferingRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ItemParam item_list = 7;</code>
+       * <code>repeated .ItemParam item_list = 3;</code>
        */
       public Builder addItemList(
           int index, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam value) {
@@ -757,7 +796,7 @@ public final class PlayerOfferingRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ItemParam item_list = 7;</code>
+       * <code>repeated .ItemParam item_list = 3;</code>
        */
       public Builder addItemList(
           emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder builderForValue) {
@@ -771,7 +810,7 @@ public final class PlayerOfferingRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ItemParam item_list = 7;</code>
+       * <code>repeated .ItemParam item_list = 3;</code>
        */
       public Builder addItemList(
           int index, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder builderForValue) {
@@ -785,7 +824,7 @@ public final class PlayerOfferingRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ItemParam item_list = 7;</code>
+       * <code>repeated .ItemParam item_list = 3;</code>
        */
       public Builder addAllItemList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> values) {
@@ -800,7 +839,7 @@ public final class PlayerOfferingRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ItemParam item_list = 7;</code>
+       * <code>repeated .ItemParam item_list = 3;</code>
        */
       public Builder clearItemList() {
         if (itemListBuilder_ == null) {
@@ -813,7 +852,7 @@ public final class PlayerOfferingRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ItemParam item_list = 7;</code>
+       * <code>repeated .ItemParam item_list = 3;</code>
        */
       public Builder removeItemList(int index) {
         if (itemListBuilder_ == null) {
@@ -826,14 +865,14 @@ public final class PlayerOfferingRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ItemParam item_list = 7;</code>
+       * <code>repeated .ItemParam item_list = 3;</code>
        */
       public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder getItemListBuilder(
           int index) {
         return getItemListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .ItemParam item_list = 7;</code>
+       * <code>repeated .ItemParam item_list = 3;</code>
        */
       public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder getItemListOrBuilder(
           int index) {
@@ -843,7 +882,7 @@ public final class PlayerOfferingRspOuterClass {
         }
       }
       /**
-       * <code>repeated .ItemParam item_list = 7;</code>
+       * <code>repeated .ItemParam item_list = 3;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder> 
            getItemListOrBuilderList() {
@@ -854,14 +893,14 @@ public final class PlayerOfferingRspOuterClass {
         }
       }
       /**
-       * <code>repeated .ItemParam item_list = 7;</code>
+       * <code>repeated .ItemParam item_list = 3;</code>
        */
       public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder addItemListBuilder() {
         return getItemListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.getDefaultInstance());
       }
       /**
-       * <code>repeated .ItemParam item_list = 7;</code>
+       * <code>repeated .ItemParam item_list = 3;</code>
        */
       public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder addItemListBuilder(
           int index) {
@@ -869,7 +908,7 @@ public final class PlayerOfferingRspOuterClass {
             index, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.getDefaultInstance());
       }
       /**
-       * <code>repeated .ItemParam item_list = 7;</code>
+       * <code>repeated .ItemParam item_list = 3;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder> 
            getItemListBuilderList() {
@@ -888,37 +927,6 @@ public final class PlayerOfferingRspOuterClass {
           itemList_ = null;
         }
         return itemListBuilder_;
-      }
-
-      private int retcode_ ;
-      /**
-       * <code>int32 retcode = 4;</code>
-       * @return The retcode.
-       */
-      @java.lang.Override
-      public int getRetcode() {
-        return retcode_;
-      }
-      /**
-       * <code>int32 retcode = 4;</code>
-       * @param value The retcode to set.
-       * @return This builder for chaining.
-       */
-      public Builder setRetcode(int value) {
-        
-        retcode_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>int32 retcode = 4;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearRetcode() {
-        
-        retcode_ = 0;
-        onChanged();
-        return this;
       }
 
       private emu.grasscutter.net.proto.PlayerOfferingDataOuterClass.PlayerOfferingData offeringData_;
@@ -1108,8 +1116,8 @@ public final class PlayerOfferingRspOuterClass {
     java.lang.String[] descriptorData = {
       "\n\027PlayerOfferingRsp.proto\032\017ItemParam.pro" +
       "to\032\030PlayerOfferingData.proto\"o\n\021PlayerOf" +
-      "feringRsp\022\035\n\titem_list\030\007 \003(\0132\n.ItemParam" +
-      "\022\017\n\007retcode\030\004 \001(\005\022*\n\roffering_data\030\n \001(\013" +
+      "feringRsp\022\017\n\007retcode\030\005 \001(\005\022\035\n\titem_list\030" +
+      "\003 \003(\0132\n.ItemParam\022*\n\roffering_data\030\n \001(\013" +
       "2\023.PlayerOfferingDataB\033\n\031emu.grasscutter" +
       ".net.protob\006proto3"
     };
@@ -1124,7 +1132,7 @@ public final class PlayerOfferingRspOuterClass {
     internal_static_PlayerOfferingRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_PlayerOfferingRsp_descriptor,
-        new java.lang.String[] { "ItemList", "Retcode", "OfferingData", });
+        new java.lang.String[] { "Retcode", "ItemList", "OfferingData", });
     emu.grasscutter.net.proto.ItemParamOuterClass.getDescriptor();
     emu.grasscutter.net.proto.PlayerOfferingDataOuterClass.getDescriptor();
   }

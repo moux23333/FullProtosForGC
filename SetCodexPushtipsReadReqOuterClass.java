@@ -19,23 +19,27 @@ public final class SetCodexPushtipsReadReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 type_id = 2;</code>
-     * @return The typeId.
-     */
-    int getTypeId();
-
-    /**
-     * <code>uint32 codex_id = 14;</code>
+     * <code>uint32 codex_id = 8;</code>
      * @return The codexId.
      */
     int getCodexId();
+
+    /**
+     * <code>uint32 type_id = 3;</code>
+     * @return The typeId.
+     */
+    int getTypeId();
   }
   /**
    * <pre>
-   * CmdId: 4208
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 4209;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code SetCodexPushtipsReadReq}
@@ -82,12 +86,12 @@ public final class SetCodexPushtipsReadReqOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
+            case 24: {
 
               typeId_ = input.readUInt32();
               break;
             }
-            case 112: {
+            case 64: {
 
               codexId_ = input.readUInt32();
               break;
@@ -124,26 +128,26 @@ public final class SetCodexPushtipsReadReqOuterClass {
               emu.grasscutter.net.proto.SetCodexPushtipsReadReqOuterClass.SetCodexPushtipsReadReq.class, emu.grasscutter.net.proto.SetCodexPushtipsReadReqOuterClass.SetCodexPushtipsReadReq.Builder.class);
     }
 
-    public static final int TYPE_ID_FIELD_NUMBER = 2;
-    private int typeId_;
-    /**
-     * <code>uint32 type_id = 2;</code>
-     * @return The typeId.
-     */
-    @java.lang.Override
-    public int getTypeId() {
-      return typeId_;
-    }
-
-    public static final int CODEX_ID_FIELD_NUMBER = 14;
+    public static final int CODEX_ID_FIELD_NUMBER = 8;
     private int codexId_;
     /**
-     * <code>uint32 codex_id = 14;</code>
+     * <code>uint32 codex_id = 8;</code>
      * @return The codexId.
      */
     @java.lang.Override
     public int getCodexId() {
       return codexId_;
+    }
+
+    public static final int TYPE_ID_FIELD_NUMBER = 3;
+    private int typeId_;
+    /**
+     * <code>uint32 type_id = 3;</code>
+     * @return The typeId.
+     */
+    @java.lang.Override
+    public int getTypeId() {
+      return typeId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -161,10 +165,10 @@ public final class SetCodexPushtipsReadReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (typeId_ != 0) {
-        output.writeUInt32(2, typeId_);
+        output.writeUInt32(3, typeId_);
       }
       if (codexId_ != 0) {
-        output.writeUInt32(14, codexId_);
+        output.writeUInt32(8, codexId_);
       }
       unknownFields.writeTo(output);
     }
@@ -177,11 +181,11 @@ public final class SetCodexPushtipsReadReqOuterClass {
       size = 0;
       if (typeId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, typeId_);
+          .computeUInt32Size(3, typeId_);
       }
       if (codexId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, codexId_);
+          .computeUInt32Size(8, codexId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -198,10 +202,10 @@ public final class SetCodexPushtipsReadReqOuterClass {
       }
       emu.grasscutter.net.proto.SetCodexPushtipsReadReqOuterClass.SetCodexPushtipsReadReq other = (emu.grasscutter.net.proto.SetCodexPushtipsReadReqOuterClass.SetCodexPushtipsReadReq) obj;
 
-      if (getTypeId()
-          != other.getTypeId()) return false;
       if (getCodexId()
           != other.getCodexId()) return false;
+      if (getTypeId()
+          != other.getTypeId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -213,10 +217,10 @@ public final class SetCodexPushtipsReadReqOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + TYPE_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getTypeId();
       hash = (37 * hash) + CODEX_ID_FIELD_NUMBER;
       hash = (53 * hash) + getCodexId();
+      hash = (37 * hash) + TYPE_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getTypeId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -314,10 +318,14 @@ public final class SetCodexPushtipsReadReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 4208
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 4209;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code SetCodexPushtipsReadReq}
@@ -357,9 +365,9 @@ public final class SetCodexPushtipsReadReqOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        typeId_ = 0;
-
         codexId_ = 0;
+
+        typeId_ = 0;
 
         return this;
       }
@@ -387,8 +395,8 @@ public final class SetCodexPushtipsReadReqOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.SetCodexPushtipsReadReqOuterClass.SetCodexPushtipsReadReq buildPartial() {
         emu.grasscutter.net.proto.SetCodexPushtipsReadReqOuterClass.SetCodexPushtipsReadReq result = new emu.grasscutter.net.proto.SetCodexPushtipsReadReqOuterClass.SetCodexPushtipsReadReq(this);
-        result.typeId_ = typeId_;
         result.codexId_ = codexId_;
+        result.typeId_ = typeId_;
         onBuilt();
         return result;
       }
@@ -437,11 +445,11 @@ public final class SetCodexPushtipsReadReqOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.SetCodexPushtipsReadReqOuterClass.SetCodexPushtipsReadReq other) {
         if (other == emu.grasscutter.net.proto.SetCodexPushtipsReadReqOuterClass.SetCodexPushtipsReadReq.getDefaultInstance()) return this;
-        if (other.getTypeId() != 0) {
-          setTypeId(other.getTypeId());
-        }
         if (other.getCodexId() != 0) {
           setCodexId(other.getCodexId());
+        }
+        if (other.getTypeId() != 0) {
+          setTypeId(other.getTypeId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -472,40 +480,9 @@ public final class SetCodexPushtipsReadReqOuterClass {
         return this;
       }
 
-      private int typeId_ ;
-      /**
-       * <code>uint32 type_id = 2;</code>
-       * @return The typeId.
-       */
-      @java.lang.Override
-      public int getTypeId() {
-        return typeId_;
-      }
-      /**
-       * <code>uint32 type_id = 2;</code>
-       * @param value The typeId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setTypeId(int value) {
-        
-        typeId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 type_id = 2;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearTypeId() {
-        
-        typeId_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int codexId_ ;
       /**
-       * <code>uint32 codex_id = 14;</code>
+       * <code>uint32 codex_id = 8;</code>
        * @return The codexId.
        */
       @java.lang.Override
@@ -513,7 +490,7 @@ public final class SetCodexPushtipsReadReqOuterClass {
         return codexId_;
       }
       /**
-       * <code>uint32 codex_id = 14;</code>
+       * <code>uint32 codex_id = 8;</code>
        * @param value The codexId to set.
        * @return This builder for chaining.
        */
@@ -524,12 +501,43 @@ public final class SetCodexPushtipsReadReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 codex_id = 14;</code>
+       * <code>uint32 codex_id = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearCodexId() {
         
         codexId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int typeId_ ;
+      /**
+       * <code>uint32 type_id = 3;</code>
+       * @return The typeId.
+       */
+      @java.lang.Override
+      public int getTypeId() {
+        return typeId_;
+      }
+      /**
+       * <code>uint32 type_id = 3;</code>
+       * @param value The typeId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setTypeId(int value) {
+        
+        typeId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 type_id = 3;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearTypeId() {
+        
+        typeId_ = 0;
         onChanged();
         return this;
       }
@@ -601,8 +609,8 @@ public final class SetCodexPushtipsReadReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\035SetCodexPushtipsReadReq.proto\"<\n\027SetCo" +
-      "dexPushtipsReadReq\022\017\n\007type_id\030\002 \001(\r\022\020\n\010c" +
-      "odex_id\030\016 \001(\rB\033\n\031emu.grasscutter.net.pro" +
+      "dexPushtipsReadReq\022\020\n\010codex_id\030\010 \001(\r\022\017\n\007" +
+      "type_id\030\003 \001(\rB\033\n\031emu.grasscutter.net.pro" +
       "tob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -614,7 +622,7 @@ public final class SetCodexPushtipsReadReqOuterClass {
     internal_static_SetCodexPushtipsReadReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SetCodexPushtipsReadReq_descriptor,
-        new java.lang.String[] { "TypeId", "CodexId", });
+        new java.lang.String[] { "CodexId", "TypeId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

@@ -19,22 +19,22 @@ public final class GCGPhaseOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.GCGPhaseType phase_type = 5;</code>
+     * <code>.GCGPhaseType phase_type = 4;</code>
      * @return The enum numeric value on the wire for phaseType.
      */
     int getPhaseTypeValue();
     /**
-     * <code>.GCGPhaseType phase_type = 5;</code>
+     * <code>.GCGPhaseType phase_type = 4;</code>
      * @return The phaseType.
      */
     emu.grasscutter.net.proto.GCGPhaseTypeOuterClass.GCGPhaseType getPhaseType();
 
     /**
-     * <code>map&lt;uint32, uint32&gt; allow_controller_map = 6;</code>
+     * <code>map&lt;uint32, uint32&gt; allow_controller_map = 12;</code>
      */
     int getAllowControllerMapCount();
     /**
-     * <code>map&lt;uint32, uint32&gt; allow_controller_map = 6;</code>
+     * <code>map&lt;uint32, uint32&gt; allow_controller_map = 12;</code>
      */
     boolean containsAllowControllerMap(
         int key);
@@ -45,19 +45,19 @@ public final class GCGPhaseOuterClass {
     java.util.Map<java.lang.Integer, java.lang.Integer>
     getAllowControllerMap();
     /**
-     * <code>map&lt;uint32, uint32&gt; allow_controller_map = 6;</code>
+     * <code>map&lt;uint32, uint32&gt; allow_controller_map = 12;</code>
      */
     java.util.Map<java.lang.Integer, java.lang.Integer>
     getAllowControllerMapMap();
     /**
-     * <code>map&lt;uint32, uint32&gt; allow_controller_map = 6;</code>
+     * <code>map&lt;uint32, uint32&gt; allow_controller_map = 12;</code>
      */
 
     int getAllowControllerMapOrDefault(
         int key,
         int defaultValue);
     /**
-     * <code>map&lt;uint32, uint32&gt; allow_controller_map = 6;</code>
+     * <code>map&lt;uint32, uint32&gt; allow_controller_map = 12;</code>
      */
 
     int getAllowControllerMapOrThrow(
@@ -110,13 +110,13 @@ public final class GCGPhaseOuterClass {
             case 0:
               done = true;
               break;
-            case 40: {
+            case 32: {
               int rawValue = input.readEnum();
 
               phaseType_ = rawValue;
               break;
             }
-            case 50: {
+            case 98: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 allowControllerMap_ = com.google.protobuf.MapField.newMapField(
                     AllowControllerMapDefaultEntryHolder.defaultEntry);
@@ -158,7 +158,7 @@ public final class GCGPhaseOuterClass {
     protected com.google.protobuf.MapField internalGetMapField(
         int number) {
       switch (number) {
-        case 6:
+        case 12:
           return internalGetAllowControllerMap();
         default:
           throw new RuntimeException(
@@ -173,17 +173,17 @@ public final class GCGPhaseOuterClass {
               emu.grasscutter.net.proto.GCGPhaseOuterClass.GCGPhase.class, emu.grasscutter.net.proto.GCGPhaseOuterClass.GCGPhase.Builder.class);
     }
 
-    public static final int PHASE_TYPE_FIELD_NUMBER = 5;
+    public static final int PHASE_TYPE_FIELD_NUMBER = 4;
     private int phaseType_;
     /**
-     * <code>.GCGPhaseType phase_type = 5;</code>
+     * <code>.GCGPhaseType phase_type = 4;</code>
      * @return The enum numeric value on the wire for phaseType.
      */
     @java.lang.Override public int getPhaseTypeValue() {
       return phaseType_;
     }
     /**
-     * <code>.GCGPhaseType phase_type = 5;</code>
+     * <code>.GCGPhaseType phase_type = 4;</code>
      * @return The phaseType.
      */
     @java.lang.Override public emu.grasscutter.net.proto.GCGPhaseTypeOuterClass.GCGPhaseType getPhaseType() {
@@ -192,7 +192,7 @@ public final class GCGPhaseOuterClass {
       return result == null ? emu.grasscutter.net.proto.GCGPhaseTypeOuterClass.GCGPhaseType.UNRECOGNIZED : result;
     }
 
-    public static final int ALLOW_CONTROLLER_MAP_FIELD_NUMBER = 6;
+    public static final int ALLOW_CONTROLLER_MAP_FIELD_NUMBER = 12;
     private static final class AllowControllerMapDefaultEntryHolder {
       static final com.google.protobuf.MapEntry<
           java.lang.Integer, java.lang.Integer> defaultEntry =
@@ -219,7 +219,7 @@ public final class GCGPhaseOuterClass {
       return internalGetAllowControllerMap().getMap().size();
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; allow_controller_map = 6;</code>
+     * <code>map&lt;uint32, uint32&gt; allow_controller_map = 12;</code>
      */
 
     @java.lang.Override
@@ -237,7 +237,7 @@ public final class GCGPhaseOuterClass {
       return getAllowControllerMapMap();
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; allow_controller_map = 6;</code>
+     * <code>map&lt;uint32, uint32&gt; allow_controller_map = 12;</code>
      */
     @java.lang.Override
 
@@ -245,7 +245,7 @@ public final class GCGPhaseOuterClass {
       return internalGetAllowControllerMap().getMap();
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; allow_controller_map = 6;</code>
+     * <code>map&lt;uint32, uint32&gt; allow_controller_map = 12;</code>
      */
     @java.lang.Override
 
@@ -258,7 +258,7 @@ public final class GCGPhaseOuterClass {
       return map.containsKey(key) ? map.get(key) : defaultValue;
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; allow_controller_map = 6;</code>
+     * <code>map&lt;uint32, uint32&gt; allow_controller_map = 12;</code>
      */
     @java.lang.Override
 
@@ -288,14 +288,14 @@ public final class GCGPhaseOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (phaseType_ != emu.grasscutter.net.proto.GCGPhaseTypeOuterClass.GCGPhaseType.GCG_PHASE_TYPE_INVALID.getNumber()) {
-        output.writeEnum(5, phaseType_);
+        output.writeEnum(4, phaseType_);
       }
       com.google.protobuf.GeneratedMessageV3
         .serializeIntegerMapTo(
           output,
           internalGetAllowControllerMap(),
           AllowControllerMapDefaultEntryHolder.defaultEntry,
-          6);
+          12);
       unknownFields.writeTo(output);
     }
 
@@ -307,7 +307,7 @@ public final class GCGPhaseOuterClass {
       size = 0;
       if (phaseType_ != emu.grasscutter.net.proto.GCGPhaseTypeOuterClass.GCGPhaseType.GCG_PHASE_TYPE_INVALID.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(5, phaseType_);
+          .computeEnumSize(4, phaseType_);
       }
       for (java.util.Map.Entry<java.lang.Integer, java.lang.Integer> entry
            : internalGetAllowControllerMap().getMap().entrySet()) {
@@ -317,7 +317,7 @@ public final class GCGPhaseOuterClass {
             .setValue(entry.getValue())
             .build();
         size += com.google.protobuf.CodedOutputStream
-            .computeMessageSize(6, allowControllerMap__);
+            .computeMessageSize(12, allowControllerMap__);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -465,7 +465,7 @@ public final class GCGPhaseOuterClass {
       protected com.google.protobuf.MapField internalGetMapField(
           int number) {
         switch (number) {
-          case 6:
+          case 12:
             return internalGetAllowControllerMap();
           default:
             throw new RuntimeException(
@@ -476,7 +476,7 @@ public final class GCGPhaseOuterClass {
       protected com.google.protobuf.MapField internalGetMutableMapField(
           int number) {
         switch (number) {
-          case 6:
+          case 12:
             return internalGetMutableAllowControllerMap();
           default:
             throw new RuntimeException(
@@ -627,14 +627,14 @@ public final class GCGPhaseOuterClass {
 
       private int phaseType_ = 0;
       /**
-       * <code>.GCGPhaseType phase_type = 5;</code>
+       * <code>.GCGPhaseType phase_type = 4;</code>
        * @return The enum numeric value on the wire for phaseType.
        */
       @java.lang.Override public int getPhaseTypeValue() {
         return phaseType_;
       }
       /**
-       * <code>.GCGPhaseType phase_type = 5;</code>
+       * <code>.GCGPhaseType phase_type = 4;</code>
        * @param value The enum numeric value on the wire for phaseType to set.
        * @return This builder for chaining.
        */
@@ -645,7 +645,7 @@ public final class GCGPhaseOuterClass {
         return this;
       }
       /**
-       * <code>.GCGPhaseType phase_type = 5;</code>
+       * <code>.GCGPhaseType phase_type = 4;</code>
        * @return The phaseType.
        */
       @java.lang.Override
@@ -655,7 +655,7 @@ public final class GCGPhaseOuterClass {
         return result == null ? emu.grasscutter.net.proto.GCGPhaseTypeOuterClass.GCGPhaseType.UNRECOGNIZED : result;
       }
       /**
-       * <code>.GCGPhaseType phase_type = 5;</code>
+       * <code>.GCGPhaseType phase_type = 4;</code>
        * @param value The phaseType to set.
        * @return This builder for chaining.
        */
@@ -669,7 +669,7 @@ public final class GCGPhaseOuterClass {
         return this;
       }
       /**
-       * <code>.GCGPhaseType phase_type = 5;</code>
+       * <code>.GCGPhaseType phase_type = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearPhaseType() {
@@ -706,7 +706,7 @@ public final class GCGPhaseOuterClass {
         return internalGetAllowControllerMap().getMap().size();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; allow_controller_map = 6;</code>
+       * <code>map&lt;uint32, uint32&gt; allow_controller_map = 12;</code>
        */
 
       @java.lang.Override
@@ -724,7 +724,7 @@ public final class GCGPhaseOuterClass {
         return getAllowControllerMapMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; allow_controller_map = 6;</code>
+       * <code>map&lt;uint32, uint32&gt; allow_controller_map = 12;</code>
        */
       @java.lang.Override
 
@@ -732,7 +732,7 @@ public final class GCGPhaseOuterClass {
         return internalGetAllowControllerMap().getMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; allow_controller_map = 6;</code>
+       * <code>map&lt;uint32, uint32&gt; allow_controller_map = 12;</code>
        */
       @java.lang.Override
 
@@ -745,7 +745,7 @@ public final class GCGPhaseOuterClass {
         return map.containsKey(key) ? map.get(key) : defaultValue;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; allow_controller_map = 6;</code>
+       * <code>map&lt;uint32, uint32&gt; allow_controller_map = 12;</code>
        */
       @java.lang.Override
 
@@ -766,7 +766,7 @@ public final class GCGPhaseOuterClass {
         return this;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; allow_controller_map = 6;</code>
+       * <code>map&lt;uint32, uint32&gt; allow_controller_map = 12;</code>
        */
 
       public Builder removeAllowControllerMap(
@@ -785,7 +785,7 @@ public final class GCGPhaseOuterClass {
         return internalGetMutableAllowControllerMap().getMutableMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; allow_controller_map = 6;</code>
+       * <code>map&lt;uint32, uint32&gt; allow_controller_map = 12;</code>
        */
       public Builder putAllowControllerMap(
           int key,
@@ -797,7 +797,7 @@ public final class GCGPhaseOuterClass {
         return this;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; allow_controller_map = 6;</code>
+       * <code>map&lt;uint32, uint32&gt; allow_controller_map = 12;</code>
        */
 
       public Builder putAllAllowControllerMap(
@@ -879,8 +879,8 @@ public final class GCGPhaseOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\016GCGPhase.proto\032\022GCGPhaseType.proto\"\251\001\n" +
-      "\010GCGPhase\022!\n\nphase_type\030\005 \001(\0162\r.GCGPhase" +
-      "Type\022?\n\024allow_controller_map\030\006 \003(\0132!.GCG" +
+      "\010GCGPhase\022!\n\nphase_type\030\004 \001(\0162\r.GCGPhase" +
+      "Type\022?\n\024allow_controller_map\030\014 \003(\0132!.GCG" +
       "Phase.AllowControllerMapEntry\0329\n\027AllowCo" +
       "ntrollerMapEntry\022\013\n\003key\030\001 \001(\r\022\r\n\005value\030\002" +
       " \001(\r:\0028\001B\033\n\031emu.grasscutter.net.protob\006p" +

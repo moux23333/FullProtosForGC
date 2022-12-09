@@ -19,16 +19,20 @@ public final class LiveEndNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 live_id = 5;</code>
+     * <code>uint32 live_id = 12;</code>
      * @return The liveId.
      */
     int getLiveId();
   }
   /**
    * <pre>
-   * CmdId: 806
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 810;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code LiveEndNotify}
@@ -75,7 +79,7 @@ public final class LiveEndNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 40: {
+            case 96: {
 
               liveId_ = input.readUInt32();
               break;
@@ -112,10 +116,10 @@ public final class LiveEndNotifyOuterClass {
               emu.grasscutter.net.proto.LiveEndNotifyOuterClass.LiveEndNotify.class, emu.grasscutter.net.proto.LiveEndNotifyOuterClass.LiveEndNotify.Builder.class);
     }
 
-    public static final int LIVE_ID_FIELD_NUMBER = 5;
+    public static final int LIVE_ID_FIELD_NUMBER = 12;
     private int liveId_;
     /**
-     * <code>uint32 live_id = 5;</code>
+     * <code>uint32 live_id = 12;</code>
      * @return The liveId.
      */
     @java.lang.Override
@@ -138,7 +142,7 @@ public final class LiveEndNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (liveId_ != 0) {
-        output.writeUInt32(5, liveId_);
+        output.writeUInt32(12, liveId_);
       }
       unknownFields.writeTo(output);
     }
@@ -151,7 +155,7 @@ public final class LiveEndNotifyOuterClass {
       size = 0;
       if (liveId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, liveId_);
+          .computeUInt32Size(12, liveId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -280,9 +284,13 @@ public final class LiveEndNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 806
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 810;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code LiveEndNotify}
@@ -433,7 +441,7 @@ public final class LiveEndNotifyOuterClass {
 
       private int liveId_ ;
       /**
-       * <code>uint32 live_id = 5;</code>
+       * <code>uint32 live_id = 12;</code>
        * @return The liveId.
        */
       @java.lang.Override
@@ -441,7 +449,7 @@ public final class LiveEndNotifyOuterClass {
         return liveId_;
       }
       /**
-       * <code>uint32 live_id = 5;</code>
+       * <code>uint32 live_id = 12;</code>
        * @param value The liveId to set.
        * @return This builder for chaining.
        */
@@ -452,7 +460,7 @@ public final class LiveEndNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 live_id = 5;</code>
+       * <code>uint32 live_id = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearLiveId() {
@@ -529,7 +537,7 @@ public final class LiveEndNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\023LiveEndNotify.proto\" \n\rLiveEndNotify\022\017" +
-      "\n\007live_id\030\005 \001(\rB\033\n\031emu.grasscutter.net.p" +
+      "\n\007live_id\030\014 \001(\rB\033\n\031emu.grasscutter.net.p" +
       "rotob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

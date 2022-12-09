@@ -19,39 +19,43 @@ public final class ActivityTakeAllScoreRewardRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated uint32 reward_config_list = 14;</code>
+     * <code>repeated uint32 reward_config_list = 10;</code>
      * @return A list containing the rewardConfigList.
      */
     java.util.List<java.lang.Integer> getRewardConfigListList();
     /**
-     * <code>repeated uint32 reward_config_list = 14;</code>
+     * <code>repeated uint32 reward_config_list = 10;</code>
      * @return The count of rewardConfigList.
      */
     int getRewardConfigListCount();
     /**
-     * <code>repeated uint32 reward_config_list = 14;</code>
+     * <code>repeated uint32 reward_config_list = 10;</code>
      * @param index The index of the element to return.
      * @return The rewardConfigList at the given index.
      */
     int getRewardConfigList(int index);
 
     /**
-     * <code>int32 retcode = 15;</code>
+     * <code>int32 retcode = 9;</code>
      * @return The retcode.
      */
     int getRetcode();
 
     /**
-     * <code>uint32 activity_id = 7;</code>
+     * <code>uint32 activity_id = 3;</code>
      * @return The activityId.
      */
     int getActivityId();
   }
   /**
    * <pre>
-   * CmdId: 8043
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 8043;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code ActivityTakeAllScoreRewardRsp}
@@ -100,12 +104,17 @@ public final class ActivityTakeAllScoreRewardRspOuterClass {
             case 0:
               done = true;
               break;
-            case 56: {
+            case 24: {
 
               activityId_ = input.readUInt32();
               break;
             }
-            case 112: {
+            case 72: {
+
+              retcode_ = input.readInt32();
+              break;
+            }
+            case 80: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 rewardConfigList_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
@@ -113,7 +122,7 @@ public final class ActivityTakeAllScoreRewardRspOuterClass {
               rewardConfigList_.addInt(input.readUInt32());
               break;
             }
-            case 114: {
+            case 82: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -124,11 +133,6 @@ public final class ActivityTakeAllScoreRewardRspOuterClass {
                 rewardConfigList_.addInt(input.readUInt32());
               }
               input.popLimit(limit);
-              break;
-            }
-            case 120: {
-
-              retcode_ = input.readInt32();
               break;
             }
             default: {
@@ -166,10 +170,10 @@ public final class ActivityTakeAllScoreRewardRspOuterClass {
               emu.grasscutter.net.proto.ActivityTakeAllScoreRewardRspOuterClass.ActivityTakeAllScoreRewardRsp.class, emu.grasscutter.net.proto.ActivityTakeAllScoreRewardRspOuterClass.ActivityTakeAllScoreRewardRsp.Builder.class);
     }
 
-    public static final int REWARD_CONFIG_LIST_FIELD_NUMBER = 14;
+    public static final int REWARD_CONFIG_LIST_FIELD_NUMBER = 10;
     private com.google.protobuf.Internal.IntList rewardConfigList_;
     /**
-     * <code>repeated uint32 reward_config_list = 14;</code>
+     * <code>repeated uint32 reward_config_list = 10;</code>
      * @return A list containing the rewardConfigList.
      */
     @java.lang.Override
@@ -178,14 +182,14 @@ public final class ActivityTakeAllScoreRewardRspOuterClass {
       return rewardConfigList_;
     }
     /**
-     * <code>repeated uint32 reward_config_list = 14;</code>
+     * <code>repeated uint32 reward_config_list = 10;</code>
      * @return The count of rewardConfigList.
      */
     public int getRewardConfigListCount() {
       return rewardConfigList_.size();
     }
     /**
-     * <code>repeated uint32 reward_config_list = 14;</code>
+     * <code>repeated uint32 reward_config_list = 10;</code>
      * @param index The index of the element to return.
      * @return The rewardConfigList at the given index.
      */
@@ -194,10 +198,10 @@ public final class ActivityTakeAllScoreRewardRspOuterClass {
     }
     private int rewardConfigListMemoizedSerializedSize = -1;
 
-    public static final int RETCODE_FIELD_NUMBER = 15;
+    public static final int RETCODE_FIELD_NUMBER = 9;
     private int retcode_;
     /**
-     * <code>int32 retcode = 15;</code>
+     * <code>int32 retcode = 9;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -205,10 +209,10 @@ public final class ActivityTakeAllScoreRewardRspOuterClass {
       return retcode_;
     }
 
-    public static final int ACTIVITY_ID_FIELD_NUMBER = 7;
+    public static final int ACTIVITY_ID_FIELD_NUMBER = 3;
     private int activityId_;
     /**
-     * <code>uint32 activity_id = 7;</code>
+     * <code>uint32 activity_id = 3;</code>
      * @return The activityId.
      */
     @java.lang.Override
@@ -232,17 +236,17 @@ public final class ActivityTakeAllScoreRewardRspOuterClass {
                         throws java.io.IOException {
       getSerializedSize();
       if (activityId_ != 0) {
-        output.writeUInt32(7, activityId_);
+        output.writeUInt32(3, activityId_);
+      }
+      if (retcode_ != 0) {
+        output.writeInt32(9, retcode_);
       }
       if (getRewardConfigListList().size() > 0) {
-        output.writeUInt32NoTag(114);
+        output.writeUInt32NoTag(82);
         output.writeUInt32NoTag(rewardConfigListMemoizedSerializedSize);
       }
       for (int i = 0; i < rewardConfigList_.size(); i++) {
         output.writeUInt32NoTag(rewardConfigList_.getInt(i));
-      }
-      if (retcode_ != 0) {
-        output.writeInt32(15, retcode_);
       }
       unknownFields.writeTo(output);
     }
@@ -255,7 +259,11 @@ public final class ActivityTakeAllScoreRewardRspOuterClass {
       size = 0;
       if (activityId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, activityId_);
+          .computeUInt32Size(3, activityId_);
+      }
+      if (retcode_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(9, retcode_);
       }
       {
         int dataSize = 0;
@@ -270,10 +278,6 @@ public final class ActivityTakeAllScoreRewardRspOuterClass {
               .computeInt32SizeNoTag(dataSize);
         }
         rewardConfigListMemoizedSerializedSize = dataSize;
-      }
-      if (retcode_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(15, retcode_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -412,9 +416,13 @@ public final class ActivityTakeAllScoreRewardRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 8043
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 8043;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code ActivityTakeAllScoreRewardRsp}
@@ -596,7 +604,7 @@ public final class ActivityTakeAllScoreRewardRspOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 reward_config_list = 14;</code>
+       * <code>repeated uint32 reward_config_list = 10;</code>
        * @return A list containing the rewardConfigList.
        */
       public java.util.List<java.lang.Integer>
@@ -605,14 +613,14 @@ public final class ActivityTakeAllScoreRewardRspOuterClass {
                  java.util.Collections.unmodifiableList(rewardConfigList_) : rewardConfigList_;
       }
       /**
-       * <code>repeated uint32 reward_config_list = 14;</code>
+       * <code>repeated uint32 reward_config_list = 10;</code>
        * @return The count of rewardConfigList.
        */
       public int getRewardConfigListCount() {
         return rewardConfigList_.size();
       }
       /**
-       * <code>repeated uint32 reward_config_list = 14;</code>
+       * <code>repeated uint32 reward_config_list = 10;</code>
        * @param index The index of the element to return.
        * @return The rewardConfigList at the given index.
        */
@@ -620,7 +628,7 @@ public final class ActivityTakeAllScoreRewardRspOuterClass {
         return rewardConfigList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 reward_config_list = 14;</code>
+       * <code>repeated uint32 reward_config_list = 10;</code>
        * @param index The index to set the value at.
        * @param value The rewardConfigList to set.
        * @return This builder for chaining.
@@ -633,7 +641,7 @@ public final class ActivityTakeAllScoreRewardRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 reward_config_list = 14;</code>
+       * <code>repeated uint32 reward_config_list = 10;</code>
        * @param value The rewardConfigList to add.
        * @return This builder for chaining.
        */
@@ -644,7 +652,7 @@ public final class ActivityTakeAllScoreRewardRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 reward_config_list = 14;</code>
+       * <code>repeated uint32 reward_config_list = 10;</code>
        * @param values The rewardConfigList to add.
        * @return This builder for chaining.
        */
@@ -657,7 +665,7 @@ public final class ActivityTakeAllScoreRewardRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 reward_config_list = 14;</code>
+       * <code>repeated uint32 reward_config_list = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearRewardConfigList() {
@@ -669,7 +677,7 @@ public final class ActivityTakeAllScoreRewardRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 15;</code>
+       * <code>int32 retcode = 9;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -677,7 +685,7 @@ public final class ActivityTakeAllScoreRewardRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 15;</code>
+       * <code>int32 retcode = 9;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -688,7 +696,7 @@ public final class ActivityTakeAllScoreRewardRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 15;</code>
+       * <code>int32 retcode = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -700,7 +708,7 @@ public final class ActivityTakeAllScoreRewardRspOuterClass {
 
       private int activityId_ ;
       /**
-       * <code>uint32 activity_id = 7;</code>
+       * <code>uint32 activity_id = 3;</code>
        * @return The activityId.
        */
       @java.lang.Override
@@ -708,7 +716,7 @@ public final class ActivityTakeAllScoreRewardRspOuterClass {
         return activityId_;
       }
       /**
-       * <code>uint32 activity_id = 7;</code>
+       * <code>uint32 activity_id = 3;</code>
        * @param value The activityId to set.
        * @return This builder for chaining.
        */
@@ -719,7 +727,7 @@ public final class ActivityTakeAllScoreRewardRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 activity_id = 7;</code>
+       * <code>uint32 activity_id = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearActivityId() {
@@ -797,8 +805,8 @@ public final class ActivityTakeAllScoreRewardRspOuterClass {
     java.lang.String[] descriptorData = {
       "\n#ActivityTakeAllScoreRewardRsp.proto\"a\n" +
       "\035ActivityTakeAllScoreRewardRsp\022\032\n\022reward" +
-      "_config_list\030\016 \003(\r\022\017\n\007retcode\030\017 \001(\005\022\023\n\013a" +
-      "ctivity_id\030\007 \001(\rB\033\n\031emu.grasscutter.net." +
+      "_config_list\030\n \003(\r\022\017\n\007retcode\030\t \001(\005\022\023\n\013a" +
+      "ctivity_id\030\003 \001(\rB\033\n\031emu.grasscutter.net." +
       "protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

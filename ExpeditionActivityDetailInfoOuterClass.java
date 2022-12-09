@@ -19,76 +19,76 @@ public final class ExpeditionActivityDetailInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 cur_challenge_id = 5;</code>
-     * @return The curChallengeId.
+     * <code>uint32 Unk3300_GJLCAJOFCKL = 9;</code>
+     * @return The unk3300GJLCAJOFCKL.
      */
-    int getCurChallengeId();
+    int getUnk3300GJLCAJOFCKL();
 
     /**
-     * <code>repeated .ExpeditionChallengeInfo challenge_info_list = 10;</code>
+     * <code>repeated .ExpeditionChallengeInfo challenge_info_list = 15;</code>
      */
     java.util.List<emu.grasscutter.net.proto.ExpeditionChallengeInfoOuterClass.ExpeditionChallengeInfo> 
         getChallengeInfoListList();
     /**
-     * <code>repeated .ExpeditionChallengeInfo challenge_info_list = 10;</code>
+     * <code>repeated .ExpeditionChallengeInfo challenge_info_list = 15;</code>
      */
     emu.grasscutter.net.proto.ExpeditionChallengeInfoOuterClass.ExpeditionChallengeInfo getChallengeInfoList(int index);
     /**
-     * <code>repeated .ExpeditionChallengeInfo challenge_info_list = 10;</code>
+     * <code>repeated .ExpeditionChallengeInfo challenge_info_list = 15;</code>
      */
     int getChallengeInfoListCount();
     /**
-     * <code>repeated .ExpeditionChallengeInfo challenge_info_list = 10;</code>
+     * <code>repeated .ExpeditionChallengeInfo challenge_info_list = 15;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.ExpeditionChallengeInfoOuterClass.ExpeditionChallengeInfoOrBuilder> 
         getChallengeInfoListOrBuilderList();
     /**
-     * <code>repeated .ExpeditionChallengeInfo challenge_info_list = 10;</code>
+     * <code>repeated .ExpeditionChallengeInfo challenge_info_list = 15;</code>
      */
     emu.grasscutter.net.proto.ExpeditionChallengeInfoOuterClass.ExpeditionChallengeInfoOrBuilder getChallengeInfoListOrBuilder(
         int index);
 
     /**
-     * <code>uint32 expedition_count = 2;</code>
-     * @return The expeditionCount.
+     * <code>uint32 Unk3300_MNPBCNEDKAJ = 3;</code>
+     * @return The unk3300MNPBCNEDKAJ.
      */
-    int getExpeditionCount();
+    int getUnk3300MNPBCNEDKAJ();
 
     /**
-     * <code>uint32 content_close_time = 4;</code>
-     * @return The contentCloseTime.
+     * <code>repeated .ExpeditionPathInfo path_info_list = 11;</code>
      */
-    int getContentCloseTime();
+    java.util.List<emu.grasscutter.net.proto.ExpeditionPathInfoOuterClass.ExpeditionPathInfo> 
+        getPathInfoListList();
+    /**
+     * <code>repeated .ExpeditionPathInfo path_info_list = 11;</code>
+     */
+    emu.grasscutter.net.proto.ExpeditionPathInfoOuterClass.ExpeditionPathInfo getPathInfoList(int index);
+    /**
+     * <code>repeated .ExpeditionPathInfo path_info_list = 11;</code>
+     */
+    int getPathInfoListCount();
+    /**
+     * <code>repeated .ExpeditionPathInfo path_info_list = 11;</code>
+     */
+    java.util.List<? extends emu.grasscutter.net.proto.ExpeditionPathInfoOuterClass.ExpeditionPathInfoOrBuilder> 
+        getPathInfoListOrBuilderList();
+    /**
+     * <code>repeated .ExpeditionPathInfo path_info_list = 11;</code>
+     */
+    emu.grasscutter.net.proto.ExpeditionPathInfoOuterClass.ExpeditionPathInfoOrBuilder getPathInfoListOrBuilder(
+        int index);
 
     /**
-     * <code>bool is_content_closed = 8;</code>
+     * <code>bool is_content_closed = 4;</code>
      * @return The isContentClosed.
      */
     boolean getIsContentClosed();
 
     /**
-     * <code>repeated .ExpeditionPathInfo path_info_list = 15;</code>
+     * <code>uint32 content_close_time = 6;</code>
+     * @return The contentCloseTime.
      */
-    java.util.List<emu.grasscutter.net.proto.ExpeditionPathInfoOuterClass.ExpeditionPathInfo> 
-        getPathInfoListList();
-    /**
-     * <code>repeated .ExpeditionPathInfo path_info_list = 15;</code>
-     */
-    emu.grasscutter.net.proto.ExpeditionPathInfoOuterClass.ExpeditionPathInfo getPathInfoList(int index);
-    /**
-     * <code>repeated .ExpeditionPathInfo path_info_list = 15;</code>
-     */
-    int getPathInfoListCount();
-    /**
-     * <code>repeated .ExpeditionPathInfo path_info_list = 15;</code>
-     */
-    java.util.List<? extends emu.grasscutter.net.proto.ExpeditionPathInfoOuterClass.ExpeditionPathInfoOrBuilder> 
-        getPathInfoListOrBuilderList();
-    /**
-     * <code>repeated .ExpeditionPathInfo path_info_list = 15;</code>
-     */
-    emu.grasscutter.net.proto.ExpeditionPathInfoOuterClass.ExpeditionPathInfoOrBuilder getPathInfoListOrBuilder(
-        int index);
+    int getContentCloseTime();
   }
   /**
    * Protobuf type {@code ExpeditionActivityDetailInfo}
@@ -138,42 +138,42 @@ public final class ExpeditionActivityDetailInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
+            case 24: {
 
-              expeditionCount_ = input.readUInt32();
+              unk3300MNPBCNEDKAJ_ = input.readUInt32();
               break;
             }
             case 32: {
 
-              contentCloseTime_ = input.readUInt32();
-              break;
-            }
-            case 40: {
-
-              curChallengeId_ = input.readUInt32();
-              break;
-            }
-            case 64: {
-
               isContentClosed_ = input.readBool();
               break;
             }
-            case 82: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                challengeInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.ExpeditionChallengeInfoOuterClass.ExpeditionChallengeInfo>();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              challengeInfoList_.add(
-                  input.readMessage(emu.grasscutter.net.proto.ExpeditionChallengeInfoOuterClass.ExpeditionChallengeInfo.parser(), extensionRegistry));
+            case 48: {
+
+              contentCloseTime_ = input.readUInt32();
               break;
             }
-            case 122: {
+            case 72: {
+
+              unk3300GJLCAJOFCKL_ = input.readUInt32();
+              break;
+            }
+            case 90: {
               if (!((mutable_bitField0_ & 0x00000002) != 0)) {
                 pathInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.ExpeditionPathInfoOuterClass.ExpeditionPathInfo>();
                 mutable_bitField0_ |= 0x00000002;
               }
               pathInfoList_.add(
                   input.readMessage(emu.grasscutter.net.proto.ExpeditionPathInfoOuterClass.ExpeditionPathInfo.parser(), extensionRegistry));
+              break;
+            }
+            case 122: {
+              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+                challengeInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.ExpeditionChallengeInfoOuterClass.ExpeditionChallengeInfo>();
+                mutable_bitField0_ |= 0x00000001;
+              }
+              challengeInfoList_.add(
+                  input.readMessage(emu.grasscutter.net.proto.ExpeditionChallengeInfoOuterClass.ExpeditionChallengeInfo.parser(), extensionRegistry));
               break;
             }
             default: {
@@ -191,11 +191,11 @@ public final class ExpeditionActivityDetailInfoOuterClass {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
       } finally {
-        if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          challengeInfoList_ = java.util.Collections.unmodifiableList(challengeInfoList_);
-        }
         if (((mutable_bitField0_ & 0x00000002) != 0)) {
           pathInfoList_ = java.util.Collections.unmodifiableList(pathInfoList_);
+        }
+        if (((mutable_bitField0_ & 0x00000001) != 0)) {
+          challengeInfoList_ = java.util.Collections.unmodifiableList(challengeInfoList_);
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -214,28 +214,28 @@ public final class ExpeditionActivityDetailInfoOuterClass {
               emu.grasscutter.net.proto.ExpeditionActivityDetailInfoOuterClass.ExpeditionActivityDetailInfo.class, emu.grasscutter.net.proto.ExpeditionActivityDetailInfoOuterClass.ExpeditionActivityDetailInfo.Builder.class);
     }
 
-    public static final int CUR_CHALLENGE_ID_FIELD_NUMBER = 5;
-    private int curChallengeId_;
+    public static final int UNK3300_GJLCAJOFCKL_FIELD_NUMBER = 9;
+    private int unk3300GJLCAJOFCKL_;
     /**
-     * <code>uint32 cur_challenge_id = 5;</code>
-     * @return The curChallengeId.
+     * <code>uint32 Unk3300_GJLCAJOFCKL = 9;</code>
+     * @return The unk3300GJLCAJOFCKL.
      */
     @java.lang.Override
-    public int getCurChallengeId() {
-      return curChallengeId_;
+    public int getUnk3300GJLCAJOFCKL() {
+      return unk3300GJLCAJOFCKL_;
     }
 
-    public static final int CHALLENGE_INFO_LIST_FIELD_NUMBER = 10;
+    public static final int CHALLENGE_INFO_LIST_FIELD_NUMBER = 15;
     private java.util.List<emu.grasscutter.net.proto.ExpeditionChallengeInfoOuterClass.ExpeditionChallengeInfo> challengeInfoList_;
     /**
-     * <code>repeated .ExpeditionChallengeInfo challenge_info_list = 10;</code>
+     * <code>repeated .ExpeditionChallengeInfo challenge_info_list = 15;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.ExpeditionChallengeInfoOuterClass.ExpeditionChallengeInfo> getChallengeInfoListList() {
       return challengeInfoList_;
     }
     /**
-     * <code>repeated .ExpeditionChallengeInfo challenge_info_list = 10;</code>
+     * <code>repeated .ExpeditionChallengeInfo challenge_info_list = 15;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.ExpeditionChallengeInfoOuterClass.ExpeditionChallengeInfoOrBuilder> 
@@ -243,21 +243,21 @@ public final class ExpeditionActivityDetailInfoOuterClass {
       return challengeInfoList_;
     }
     /**
-     * <code>repeated .ExpeditionChallengeInfo challenge_info_list = 10;</code>
+     * <code>repeated .ExpeditionChallengeInfo challenge_info_list = 15;</code>
      */
     @java.lang.Override
     public int getChallengeInfoListCount() {
       return challengeInfoList_.size();
     }
     /**
-     * <code>repeated .ExpeditionChallengeInfo challenge_info_list = 10;</code>
+     * <code>repeated .ExpeditionChallengeInfo challenge_info_list = 15;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.ExpeditionChallengeInfoOuterClass.ExpeditionChallengeInfo getChallengeInfoList(int index) {
       return challengeInfoList_.get(index);
     }
     /**
-     * <code>repeated .ExpeditionChallengeInfo challenge_info_list = 10;</code>
+     * <code>repeated .ExpeditionChallengeInfo challenge_info_list = 15;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.ExpeditionChallengeInfoOuterClass.ExpeditionChallengeInfoOrBuilder getChallengeInfoListOrBuilder(
@@ -265,50 +265,28 @@ public final class ExpeditionActivityDetailInfoOuterClass {
       return challengeInfoList_.get(index);
     }
 
-    public static final int EXPEDITION_COUNT_FIELD_NUMBER = 2;
-    private int expeditionCount_;
+    public static final int UNK3300_MNPBCNEDKAJ_FIELD_NUMBER = 3;
+    private int unk3300MNPBCNEDKAJ_;
     /**
-     * <code>uint32 expedition_count = 2;</code>
-     * @return The expeditionCount.
+     * <code>uint32 Unk3300_MNPBCNEDKAJ = 3;</code>
+     * @return The unk3300MNPBCNEDKAJ.
      */
     @java.lang.Override
-    public int getExpeditionCount() {
-      return expeditionCount_;
+    public int getUnk3300MNPBCNEDKAJ() {
+      return unk3300MNPBCNEDKAJ_;
     }
 
-    public static final int CONTENT_CLOSE_TIME_FIELD_NUMBER = 4;
-    private int contentCloseTime_;
-    /**
-     * <code>uint32 content_close_time = 4;</code>
-     * @return The contentCloseTime.
-     */
-    @java.lang.Override
-    public int getContentCloseTime() {
-      return contentCloseTime_;
-    }
-
-    public static final int IS_CONTENT_CLOSED_FIELD_NUMBER = 8;
-    private boolean isContentClosed_;
-    /**
-     * <code>bool is_content_closed = 8;</code>
-     * @return The isContentClosed.
-     */
-    @java.lang.Override
-    public boolean getIsContentClosed() {
-      return isContentClosed_;
-    }
-
-    public static final int PATH_INFO_LIST_FIELD_NUMBER = 15;
+    public static final int PATH_INFO_LIST_FIELD_NUMBER = 11;
     private java.util.List<emu.grasscutter.net.proto.ExpeditionPathInfoOuterClass.ExpeditionPathInfo> pathInfoList_;
     /**
-     * <code>repeated .ExpeditionPathInfo path_info_list = 15;</code>
+     * <code>repeated .ExpeditionPathInfo path_info_list = 11;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.ExpeditionPathInfoOuterClass.ExpeditionPathInfo> getPathInfoListList() {
       return pathInfoList_;
     }
     /**
-     * <code>repeated .ExpeditionPathInfo path_info_list = 15;</code>
+     * <code>repeated .ExpeditionPathInfo path_info_list = 11;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.ExpeditionPathInfoOuterClass.ExpeditionPathInfoOrBuilder> 
@@ -316,26 +294,48 @@ public final class ExpeditionActivityDetailInfoOuterClass {
       return pathInfoList_;
     }
     /**
-     * <code>repeated .ExpeditionPathInfo path_info_list = 15;</code>
+     * <code>repeated .ExpeditionPathInfo path_info_list = 11;</code>
      */
     @java.lang.Override
     public int getPathInfoListCount() {
       return pathInfoList_.size();
     }
     /**
-     * <code>repeated .ExpeditionPathInfo path_info_list = 15;</code>
+     * <code>repeated .ExpeditionPathInfo path_info_list = 11;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.ExpeditionPathInfoOuterClass.ExpeditionPathInfo getPathInfoList(int index) {
       return pathInfoList_.get(index);
     }
     /**
-     * <code>repeated .ExpeditionPathInfo path_info_list = 15;</code>
+     * <code>repeated .ExpeditionPathInfo path_info_list = 11;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.ExpeditionPathInfoOuterClass.ExpeditionPathInfoOrBuilder getPathInfoListOrBuilder(
         int index) {
       return pathInfoList_.get(index);
+    }
+
+    public static final int IS_CONTENT_CLOSED_FIELD_NUMBER = 4;
+    private boolean isContentClosed_;
+    /**
+     * <code>bool is_content_closed = 4;</code>
+     * @return The isContentClosed.
+     */
+    @java.lang.Override
+    public boolean getIsContentClosed() {
+      return isContentClosed_;
+    }
+
+    public static final int CONTENT_CLOSE_TIME_FIELD_NUMBER = 6;
+    private int contentCloseTime_;
+    /**
+     * <code>uint32 content_close_time = 6;</code>
+     * @return The contentCloseTime.
+     */
+    @java.lang.Override
+    public int getContentCloseTime() {
+      return contentCloseTime_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -352,23 +352,23 @@ public final class ExpeditionActivityDetailInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (expeditionCount_ != 0) {
-        output.writeUInt32(2, expeditionCount_);
-      }
-      if (contentCloseTime_ != 0) {
-        output.writeUInt32(4, contentCloseTime_);
-      }
-      if (curChallengeId_ != 0) {
-        output.writeUInt32(5, curChallengeId_);
+      if (unk3300MNPBCNEDKAJ_ != 0) {
+        output.writeUInt32(3, unk3300MNPBCNEDKAJ_);
       }
       if (isContentClosed_ != false) {
-        output.writeBool(8, isContentClosed_);
+        output.writeBool(4, isContentClosed_);
       }
-      for (int i = 0; i < challengeInfoList_.size(); i++) {
-        output.writeMessage(10, challengeInfoList_.get(i));
+      if (contentCloseTime_ != 0) {
+        output.writeUInt32(6, contentCloseTime_);
+      }
+      if (unk3300GJLCAJOFCKL_ != 0) {
+        output.writeUInt32(9, unk3300GJLCAJOFCKL_);
       }
       for (int i = 0; i < pathInfoList_.size(); i++) {
-        output.writeMessage(15, pathInfoList_.get(i));
+        output.writeMessage(11, pathInfoList_.get(i));
+      }
+      for (int i = 0; i < challengeInfoList_.size(); i++) {
+        output.writeMessage(15, challengeInfoList_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -379,29 +379,29 @@ public final class ExpeditionActivityDetailInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (expeditionCount_ != 0) {
+      if (unk3300MNPBCNEDKAJ_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, expeditionCount_);
-      }
-      if (contentCloseTime_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, contentCloseTime_);
-      }
-      if (curChallengeId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, curChallengeId_);
+          .computeUInt32Size(3, unk3300MNPBCNEDKAJ_);
       }
       if (isContentClosed_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(8, isContentClosed_);
+          .computeBoolSize(4, isContentClosed_);
       }
-      for (int i = 0; i < challengeInfoList_.size(); i++) {
+      if (contentCloseTime_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(10, challengeInfoList_.get(i));
+          .computeUInt32Size(6, contentCloseTime_);
+      }
+      if (unk3300GJLCAJOFCKL_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(9, unk3300GJLCAJOFCKL_);
       }
       for (int i = 0; i < pathInfoList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(15, pathInfoList_.get(i));
+          .computeMessageSize(11, pathInfoList_.get(i));
+      }
+      for (int i = 0; i < challengeInfoList_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(15, challengeInfoList_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -418,18 +418,18 @@ public final class ExpeditionActivityDetailInfoOuterClass {
       }
       emu.grasscutter.net.proto.ExpeditionActivityDetailInfoOuterClass.ExpeditionActivityDetailInfo other = (emu.grasscutter.net.proto.ExpeditionActivityDetailInfoOuterClass.ExpeditionActivityDetailInfo) obj;
 
-      if (getCurChallengeId()
-          != other.getCurChallengeId()) return false;
+      if (getUnk3300GJLCAJOFCKL()
+          != other.getUnk3300GJLCAJOFCKL()) return false;
       if (!getChallengeInfoListList()
           .equals(other.getChallengeInfoListList())) return false;
-      if (getExpeditionCount()
-          != other.getExpeditionCount()) return false;
-      if (getContentCloseTime()
-          != other.getContentCloseTime()) return false;
-      if (getIsContentClosed()
-          != other.getIsContentClosed()) return false;
+      if (getUnk3300MNPBCNEDKAJ()
+          != other.getUnk3300MNPBCNEDKAJ()) return false;
       if (!getPathInfoListList()
           .equals(other.getPathInfoListList())) return false;
+      if (getIsContentClosed()
+          != other.getIsContentClosed()) return false;
+      if (getContentCloseTime()
+          != other.getContentCloseTime()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -441,23 +441,23 @@ public final class ExpeditionActivityDetailInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + CUR_CHALLENGE_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getCurChallengeId();
+      hash = (37 * hash) + UNK3300_GJLCAJOFCKL_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300GJLCAJOFCKL();
       if (getChallengeInfoListCount() > 0) {
         hash = (37 * hash) + CHALLENGE_INFO_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getChallengeInfoListList().hashCode();
       }
-      hash = (37 * hash) + EXPEDITION_COUNT_FIELD_NUMBER;
-      hash = (53 * hash) + getExpeditionCount();
-      hash = (37 * hash) + CONTENT_CLOSE_TIME_FIELD_NUMBER;
-      hash = (53 * hash) + getContentCloseTime();
-      hash = (37 * hash) + IS_CONTENT_CLOSED_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsContentClosed());
+      hash = (37 * hash) + UNK3300_MNPBCNEDKAJ_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300MNPBCNEDKAJ();
       if (getPathInfoListCount() > 0) {
         hash = (37 * hash) + PATH_INFO_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getPathInfoListList().hashCode();
       }
+      hash = (37 * hash) + IS_CONTENT_CLOSED_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getIsContentClosed());
+      hash = (37 * hash) + CONTENT_CLOSE_TIME_FIELD_NUMBER;
+      hash = (53 * hash) + getContentCloseTime();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -593,7 +593,7 @@ public final class ExpeditionActivityDetailInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        curChallengeId_ = 0;
+        unk3300GJLCAJOFCKL_ = 0;
 
         if (challengeInfoListBuilder_ == null) {
           challengeInfoList_ = java.util.Collections.emptyList();
@@ -601,11 +601,7 @@ public final class ExpeditionActivityDetailInfoOuterClass {
         } else {
           challengeInfoListBuilder_.clear();
         }
-        expeditionCount_ = 0;
-
-        contentCloseTime_ = 0;
-
-        isContentClosed_ = false;
+        unk3300MNPBCNEDKAJ_ = 0;
 
         if (pathInfoListBuilder_ == null) {
           pathInfoList_ = java.util.Collections.emptyList();
@@ -613,6 +609,10 @@ public final class ExpeditionActivityDetailInfoOuterClass {
         } else {
           pathInfoListBuilder_.clear();
         }
+        isContentClosed_ = false;
+
+        contentCloseTime_ = 0;
+
         return this;
       }
 
@@ -640,7 +640,7 @@ public final class ExpeditionActivityDetailInfoOuterClass {
       public emu.grasscutter.net.proto.ExpeditionActivityDetailInfoOuterClass.ExpeditionActivityDetailInfo buildPartial() {
         emu.grasscutter.net.proto.ExpeditionActivityDetailInfoOuterClass.ExpeditionActivityDetailInfo result = new emu.grasscutter.net.proto.ExpeditionActivityDetailInfoOuterClass.ExpeditionActivityDetailInfo(this);
         int from_bitField0_ = bitField0_;
-        result.curChallengeId_ = curChallengeId_;
+        result.unk3300GJLCAJOFCKL_ = unk3300GJLCAJOFCKL_;
         if (challengeInfoListBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0)) {
             challengeInfoList_ = java.util.Collections.unmodifiableList(challengeInfoList_);
@@ -650,9 +650,7 @@ public final class ExpeditionActivityDetailInfoOuterClass {
         } else {
           result.challengeInfoList_ = challengeInfoListBuilder_.build();
         }
-        result.expeditionCount_ = expeditionCount_;
-        result.contentCloseTime_ = contentCloseTime_;
-        result.isContentClosed_ = isContentClosed_;
+        result.unk3300MNPBCNEDKAJ_ = unk3300MNPBCNEDKAJ_;
         if (pathInfoListBuilder_ == null) {
           if (((bitField0_ & 0x00000002) != 0)) {
             pathInfoList_ = java.util.Collections.unmodifiableList(pathInfoList_);
@@ -662,6 +660,8 @@ public final class ExpeditionActivityDetailInfoOuterClass {
         } else {
           result.pathInfoList_ = pathInfoListBuilder_.build();
         }
+        result.isContentClosed_ = isContentClosed_;
+        result.contentCloseTime_ = contentCloseTime_;
         onBuilt();
         return result;
       }
@@ -710,8 +710,8 @@ public final class ExpeditionActivityDetailInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.ExpeditionActivityDetailInfoOuterClass.ExpeditionActivityDetailInfo other) {
         if (other == emu.grasscutter.net.proto.ExpeditionActivityDetailInfoOuterClass.ExpeditionActivityDetailInfo.getDefaultInstance()) return this;
-        if (other.getCurChallengeId() != 0) {
-          setCurChallengeId(other.getCurChallengeId());
+        if (other.getUnk3300GJLCAJOFCKL() != 0) {
+          setUnk3300GJLCAJOFCKL(other.getUnk3300GJLCAJOFCKL());
         }
         if (challengeInfoListBuilder_ == null) {
           if (!other.challengeInfoList_.isEmpty()) {
@@ -739,14 +739,8 @@ public final class ExpeditionActivityDetailInfoOuterClass {
             }
           }
         }
-        if (other.getExpeditionCount() != 0) {
-          setExpeditionCount(other.getExpeditionCount());
-        }
-        if (other.getContentCloseTime() != 0) {
-          setContentCloseTime(other.getContentCloseTime());
-        }
-        if (other.getIsContentClosed() != false) {
-          setIsContentClosed(other.getIsContentClosed());
+        if (other.getUnk3300MNPBCNEDKAJ() != 0) {
+          setUnk3300MNPBCNEDKAJ(other.getUnk3300MNPBCNEDKAJ());
         }
         if (pathInfoListBuilder_ == null) {
           if (!other.pathInfoList_.isEmpty()) {
@@ -773,6 +767,12 @@ public final class ExpeditionActivityDetailInfoOuterClass {
               pathInfoListBuilder_.addAllMessages(other.pathInfoList_);
             }
           }
+        }
+        if (other.getIsContentClosed() != false) {
+          setIsContentClosed(other.getIsContentClosed());
+        }
+        if (other.getContentCloseTime() != 0) {
+          setContentCloseTime(other.getContentCloseTime());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -804,33 +804,33 @@ public final class ExpeditionActivityDetailInfoOuterClass {
       }
       private int bitField0_;
 
-      private int curChallengeId_ ;
+      private int unk3300GJLCAJOFCKL_ ;
       /**
-       * <code>uint32 cur_challenge_id = 5;</code>
-       * @return The curChallengeId.
+       * <code>uint32 Unk3300_GJLCAJOFCKL = 9;</code>
+       * @return The unk3300GJLCAJOFCKL.
        */
       @java.lang.Override
-      public int getCurChallengeId() {
-        return curChallengeId_;
+      public int getUnk3300GJLCAJOFCKL() {
+        return unk3300GJLCAJOFCKL_;
       }
       /**
-       * <code>uint32 cur_challenge_id = 5;</code>
-       * @param value The curChallengeId to set.
+       * <code>uint32 Unk3300_GJLCAJOFCKL = 9;</code>
+       * @param value The unk3300GJLCAJOFCKL to set.
        * @return This builder for chaining.
        */
-      public Builder setCurChallengeId(int value) {
+      public Builder setUnk3300GJLCAJOFCKL(int value) {
         
-        curChallengeId_ = value;
+        unk3300GJLCAJOFCKL_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 cur_challenge_id = 5;</code>
+       * <code>uint32 Unk3300_GJLCAJOFCKL = 9;</code>
        * @return This builder for chaining.
        */
-      public Builder clearCurChallengeId() {
+      public Builder clearUnk3300GJLCAJOFCKL() {
         
-        curChallengeId_ = 0;
+        unk3300GJLCAJOFCKL_ = 0;
         onChanged();
         return this;
       }
@@ -848,7 +848,7 @@ public final class ExpeditionActivityDetailInfoOuterClass {
           emu.grasscutter.net.proto.ExpeditionChallengeInfoOuterClass.ExpeditionChallengeInfo, emu.grasscutter.net.proto.ExpeditionChallengeInfoOuterClass.ExpeditionChallengeInfo.Builder, emu.grasscutter.net.proto.ExpeditionChallengeInfoOuterClass.ExpeditionChallengeInfoOrBuilder> challengeInfoListBuilder_;
 
       /**
-       * <code>repeated .ExpeditionChallengeInfo challenge_info_list = 10;</code>
+       * <code>repeated .ExpeditionChallengeInfo challenge_info_list = 15;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.ExpeditionChallengeInfoOuterClass.ExpeditionChallengeInfo> getChallengeInfoListList() {
         if (challengeInfoListBuilder_ == null) {
@@ -858,7 +858,7 @@ public final class ExpeditionActivityDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .ExpeditionChallengeInfo challenge_info_list = 10;</code>
+       * <code>repeated .ExpeditionChallengeInfo challenge_info_list = 15;</code>
        */
       public int getChallengeInfoListCount() {
         if (challengeInfoListBuilder_ == null) {
@@ -868,7 +868,7 @@ public final class ExpeditionActivityDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .ExpeditionChallengeInfo challenge_info_list = 10;</code>
+       * <code>repeated .ExpeditionChallengeInfo challenge_info_list = 15;</code>
        */
       public emu.grasscutter.net.proto.ExpeditionChallengeInfoOuterClass.ExpeditionChallengeInfo getChallengeInfoList(int index) {
         if (challengeInfoListBuilder_ == null) {
@@ -878,7 +878,7 @@ public final class ExpeditionActivityDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .ExpeditionChallengeInfo challenge_info_list = 10;</code>
+       * <code>repeated .ExpeditionChallengeInfo challenge_info_list = 15;</code>
        */
       public Builder setChallengeInfoList(
           int index, emu.grasscutter.net.proto.ExpeditionChallengeInfoOuterClass.ExpeditionChallengeInfo value) {
@@ -895,7 +895,7 @@ public final class ExpeditionActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ExpeditionChallengeInfo challenge_info_list = 10;</code>
+       * <code>repeated .ExpeditionChallengeInfo challenge_info_list = 15;</code>
        */
       public Builder setChallengeInfoList(
           int index, emu.grasscutter.net.proto.ExpeditionChallengeInfoOuterClass.ExpeditionChallengeInfo.Builder builderForValue) {
@@ -909,7 +909,7 @@ public final class ExpeditionActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ExpeditionChallengeInfo challenge_info_list = 10;</code>
+       * <code>repeated .ExpeditionChallengeInfo challenge_info_list = 15;</code>
        */
       public Builder addChallengeInfoList(emu.grasscutter.net.proto.ExpeditionChallengeInfoOuterClass.ExpeditionChallengeInfo value) {
         if (challengeInfoListBuilder_ == null) {
@@ -925,7 +925,7 @@ public final class ExpeditionActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ExpeditionChallengeInfo challenge_info_list = 10;</code>
+       * <code>repeated .ExpeditionChallengeInfo challenge_info_list = 15;</code>
        */
       public Builder addChallengeInfoList(
           int index, emu.grasscutter.net.proto.ExpeditionChallengeInfoOuterClass.ExpeditionChallengeInfo value) {
@@ -942,7 +942,7 @@ public final class ExpeditionActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ExpeditionChallengeInfo challenge_info_list = 10;</code>
+       * <code>repeated .ExpeditionChallengeInfo challenge_info_list = 15;</code>
        */
       public Builder addChallengeInfoList(
           emu.grasscutter.net.proto.ExpeditionChallengeInfoOuterClass.ExpeditionChallengeInfo.Builder builderForValue) {
@@ -956,7 +956,7 @@ public final class ExpeditionActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ExpeditionChallengeInfo challenge_info_list = 10;</code>
+       * <code>repeated .ExpeditionChallengeInfo challenge_info_list = 15;</code>
        */
       public Builder addChallengeInfoList(
           int index, emu.grasscutter.net.proto.ExpeditionChallengeInfoOuterClass.ExpeditionChallengeInfo.Builder builderForValue) {
@@ -970,7 +970,7 @@ public final class ExpeditionActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ExpeditionChallengeInfo challenge_info_list = 10;</code>
+       * <code>repeated .ExpeditionChallengeInfo challenge_info_list = 15;</code>
        */
       public Builder addAllChallengeInfoList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.ExpeditionChallengeInfoOuterClass.ExpeditionChallengeInfo> values) {
@@ -985,7 +985,7 @@ public final class ExpeditionActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ExpeditionChallengeInfo challenge_info_list = 10;</code>
+       * <code>repeated .ExpeditionChallengeInfo challenge_info_list = 15;</code>
        */
       public Builder clearChallengeInfoList() {
         if (challengeInfoListBuilder_ == null) {
@@ -998,7 +998,7 @@ public final class ExpeditionActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ExpeditionChallengeInfo challenge_info_list = 10;</code>
+       * <code>repeated .ExpeditionChallengeInfo challenge_info_list = 15;</code>
        */
       public Builder removeChallengeInfoList(int index) {
         if (challengeInfoListBuilder_ == null) {
@@ -1011,14 +1011,14 @@ public final class ExpeditionActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ExpeditionChallengeInfo challenge_info_list = 10;</code>
+       * <code>repeated .ExpeditionChallengeInfo challenge_info_list = 15;</code>
        */
       public emu.grasscutter.net.proto.ExpeditionChallengeInfoOuterClass.ExpeditionChallengeInfo.Builder getChallengeInfoListBuilder(
           int index) {
         return getChallengeInfoListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .ExpeditionChallengeInfo challenge_info_list = 10;</code>
+       * <code>repeated .ExpeditionChallengeInfo challenge_info_list = 15;</code>
        */
       public emu.grasscutter.net.proto.ExpeditionChallengeInfoOuterClass.ExpeditionChallengeInfoOrBuilder getChallengeInfoListOrBuilder(
           int index) {
@@ -1028,7 +1028,7 @@ public final class ExpeditionActivityDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .ExpeditionChallengeInfo challenge_info_list = 10;</code>
+       * <code>repeated .ExpeditionChallengeInfo challenge_info_list = 15;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.ExpeditionChallengeInfoOuterClass.ExpeditionChallengeInfoOrBuilder> 
            getChallengeInfoListOrBuilderList() {
@@ -1039,14 +1039,14 @@ public final class ExpeditionActivityDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .ExpeditionChallengeInfo challenge_info_list = 10;</code>
+       * <code>repeated .ExpeditionChallengeInfo challenge_info_list = 15;</code>
        */
       public emu.grasscutter.net.proto.ExpeditionChallengeInfoOuterClass.ExpeditionChallengeInfo.Builder addChallengeInfoListBuilder() {
         return getChallengeInfoListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.ExpeditionChallengeInfoOuterClass.ExpeditionChallengeInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .ExpeditionChallengeInfo challenge_info_list = 10;</code>
+       * <code>repeated .ExpeditionChallengeInfo challenge_info_list = 15;</code>
        */
       public emu.grasscutter.net.proto.ExpeditionChallengeInfoOuterClass.ExpeditionChallengeInfo.Builder addChallengeInfoListBuilder(
           int index) {
@@ -1054,7 +1054,7 @@ public final class ExpeditionActivityDetailInfoOuterClass {
             index, emu.grasscutter.net.proto.ExpeditionChallengeInfoOuterClass.ExpeditionChallengeInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .ExpeditionChallengeInfo challenge_info_list = 10;</code>
+       * <code>repeated .ExpeditionChallengeInfo challenge_info_list = 15;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.ExpeditionChallengeInfoOuterClass.ExpeditionChallengeInfo.Builder> 
            getChallengeInfoListBuilderList() {
@@ -1075,95 +1075,33 @@ public final class ExpeditionActivityDetailInfoOuterClass {
         return challengeInfoListBuilder_;
       }
 
-      private int expeditionCount_ ;
+      private int unk3300MNPBCNEDKAJ_ ;
       /**
-       * <code>uint32 expedition_count = 2;</code>
-       * @return The expeditionCount.
+       * <code>uint32 Unk3300_MNPBCNEDKAJ = 3;</code>
+       * @return The unk3300MNPBCNEDKAJ.
        */
       @java.lang.Override
-      public int getExpeditionCount() {
-        return expeditionCount_;
+      public int getUnk3300MNPBCNEDKAJ() {
+        return unk3300MNPBCNEDKAJ_;
       }
       /**
-       * <code>uint32 expedition_count = 2;</code>
-       * @param value The expeditionCount to set.
+       * <code>uint32 Unk3300_MNPBCNEDKAJ = 3;</code>
+       * @param value The unk3300MNPBCNEDKAJ to set.
        * @return This builder for chaining.
        */
-      public Builder setExpeditionCount(int value) {
+      public Builder setUnk3300MNPBCNEDKAJ(int value) {
         
-        expeditionCount_ = value;
+        unk3300MNPBCNEDKAJ_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 expedition_count = 2;</code>
+       * <code>uint32 Unk3300_MNPBCNEDKAJ = 3;</code>
        * @return This builder for chaining.
        */
-      public Builder clearExpeditionCount() {
+      public Builder clearUnk3300MNPBCNEDKAJ() {
         
-        expeditionCount_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int contentCloseTime_ ;
-      /**
-       * <code>uint32 content_close_time = 4;</code>
-       * @return The contentCloseTime.
-       */
-      @java.lang.Override
-      public int getContentCloseTime() {
-        return contentCloseTime_;
-      }
-      /**
-       * <code>uint32 content_close_time = 4;</code>
-       * @param value The contentCloseTime to set.
-       * @return This builder for chaining.
-       */
-      public Builder setContentCloseTime(int value) {
-        
-        contentCloseTime_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 content_close_time = 4;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearContentCloseTime() {
-        
-        contentCloseTime_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private boolean isContentClosed_ ;
-      /**
-       * <code>bool is_content_closed = 8;</code>
-       * @return The isContentClosed.
-       */
-      @java.lang.Override
-      public boolean getIsContentClosed() {
-        return isContentClosed_;
-      }
-      /**
-       * <code>bool is_content_closed = 8;</code>
-       * @param value The isContentClosed to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsContentClosed(boolean value) {
-        
-        isContentClosed_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_content_closed = 8;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsContentClosed() {
-        
-        isContentClosed_ = false;
+        unk3300MNPBCNEDKAJ_ = 0;
         onChanged();
         return this;
       }
@@ -1181,7 +1119,7 @@ public final class ExpeditionActivityDetailInfoOuterClass {
           emu.grasscutter.net.proto.ExpeditionPathInfoOuterClass.ExpeditionPathInfo, emu.grasscutter.net.proto.ExpeditionPathInfoOuterClass.ExpeditionPathInfo.Builder, emu.grasscutter.net.proto.ExpeditionPathInfoOuterClass.ExpeditionPathInfoOrBuilder> pathInfoListBuilder_;
 
       /**
-       * <code>repeated .ExpeditionPathInfo path_info_list = 15;</code>
+       * <code>repeated .ExpeditionPathInfo path_info_list = 11;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.ExpeditionPathInfoOuterClass.ExpeditionPathInfo> getPathInfoListList() {
         if (pathInfoListBuilder_ == null) {
@@ -1191,7 +1129,7 @@ public final class ExpeditionActivityDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .ExpeditionPathInfo path_info_list = 15;</code>
+       * <code>repeated .ExpeditionPathInfo path_info_list = 11;</code>
        */
       public int getPathInfoListCount() {
         if (pathInfoListBuilder_ == null) {
@@ -1201,7 +1139,7 @@ public final class ExpeditionActivityDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .ExpeditionPathInfo path_info_list = 15;</code>
+       * <code>repeated .ExpeditionPathInfo path_info_list = 11;</code>
        */
       public emu.grasscutter.net.proto.ExpeditionPathInfoOuterClass.ExpeditionPathInfo getPathInfoList(int index) {
         if (pathInfoListBuilder_ == null) {
@@ -1211,7 +1149,7 @@ public final class ExpeditionActivityDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .ExpeditionPathInfo path_info_list = 15;</code>
+       * <code>repeated .ExpeditionPathInfo path_info_list = 11;</code>
        */
       public Builder setPathInfoList(
           int index, emu.grasscutter.net.proto.ExpeditionPathInfoOuterClass.ExpeditionPathInfo value) {
@@ -1228,7 +1166,7 @@ public final class ExpeditionActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ExpeditionPathInfo path_info_list = 15;</code>
+       * <code>repeated .ExpeditionPathInfo path_info_list = 11;</code>
        */
       public Builder setPathInfoList(
           int index, emu.grasscutter.net.proto.ExpeditionPathInfoOuterClass.ExpeditionPathInfo.Builder builderForValue) {
@@ -1242,7 +1180,7 @@ public final class ExpeditionActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ExpeditionPathInfo path_info_list = 15;</code>
+       * <code>repeated .ExpeditionPathInfo path_info_list = 11;</code>
        */
       public Builder addPathInfoList(emu.grasscutter.net.proto.ExpeditionPathInfoOuterClass.ExpeditionPathInfo value) {
         if (pathInfoListBuilder_ == null) {
@@ -1258,7 +1196,7 @@ public final class ExpeditionActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ExpeditionPathInfo path_info_list = 15;</code>
+       * <code>repeated .ExpeditionPathInfo path_info_list = 11;</code>
        */
       public Builder addPathInfoList(
           int index, emu.grasscutter.net.proto.ExpeditionPathInfoOuterClass.ExpeditionPathInfo value) {
@@ -1275,7 +1213,7 @@ public final class ExpeditionActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ExpeditionPathInfo path_info_list = 15;</code>
+       * <code>repeated .ExpeditionPathInfo path_info_list = 11;</code>
        */
       public Builder addPathInfoList(
           emu.grasscutter.net.proto.ExpeditionPathInfoOuterClass.ExpeditionPathInfo.Builder builderForValue) {
@@ -1289,7 +1227,7 @@ public final class ExpeditionActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ExpeditionPathInfo path_info_list = 15;</code>
+       * <code>repeated .ExpeditionPathInfo path_info_list = 11;</code>
        */
       public Builder addPathInfoList(
           int index, emu.grasscutter.net.proto.ExpeditionPathInfoOuterClass.ExpeditionPathInfo.Builder builderForValue) {
@@ -1303,7 +1241,7 @@ public final class ExpeditionActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ExpeditionPathInfo path_info_list = 15;</code>
+       * <code>repeated .ExpeditionPathInfo path_info_list = 11;</code>
        */
       public Builder addAllPathInfoList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.ExpeditionPathInfoOuterClass.ExpeditionPathInfo> values) {
@@ -1318,7 +1256,7 @@ public final class ExpeditionActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ExpeditionPathInfo path_info_list = 15;</code>
+       * <code>repeated .ExpeditionPathInfo path_info_list = 11;</code>
        */
       public Builder clearPathInfoList() {
         if (pathInfoListBuilder_ == null) {
@@ -1331,7 +1269,7 @@ public final class ExpeditionActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ExpeditionPathInfo path_info_list = 15;</code>
+       * <code>repeated .ExpeditionPathInfo path_info_list = 11;</code>
        */
       public Builder removePathInfoList(int index) {
         if (pathInfoListBuilder_ == null) {
@@ -1344,14 +1282,14 @@ public final class ExpeditionActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ExpeditionPathInfo path_info_list = 15;</code>
+       * <code>repeated .ExpeditionPathInfo path_info_list = 11;</code>
        */
       public emu.grasscutter.net.proto.ExpeditionPathInfoOuterClass.ExpeditionPathInfo.Builder getPathInfoListBuilder(
           int index) {
         return getPathInfoListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .ExpeditionPathInfo path_info_list = 15;</code>
+       * <code>repeated .ExpeditionPathInfo path_info_list = 11;</code>
        */
       public emu.grasscutter.net.proto.ExpeditionPathInfoOuterClass.ExpeditionPathInfoOrBuilder getPathInfoListOrBuilder(
           int index) {
@@ -1361,7 +1299,7 @@ public final class ExpeditionActivityDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .ExpeditionPathInfo path_info_list = 15;</code>
+       * <code>repeated .ExpeditionPathInfo path_info_list = 11;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.ExpeditionPathInfoOuterClass.ExpeditionPathInfoOrBuilder> 
            getPathInfoListOrBuilderList() {
@@ -1372,14 +1310,14 @@ public final class ExpeditionActivityDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .ExpeditionPathInfo path_info_list = 15;</code>
+       * <code>repeated .ExpeditionPathInfo path_info_list = 11;</code>
        */
       public emu.grasscutter.net.proto.ExpeditionPathInfoOuterClass.ExpeditionPathInfo.Builder addPathInfoListBuilder() {
         return getPathInfoListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.ExpeditionPathInfoOuterClass.ExpeditionPathInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .ExpeditionPathInfo path_info_list = 15;</code>
+       * <code>repeated .ExpeditionPathInfo path_info_list = 11;</code>
        */
       public emu.grasscutter.net.proto.ExpeditionPathInfoOuterClass.ExpeditionPathInfo.Builder addPathInfoListBuilder(
           int index) {
@@ -1387,7 +1325,7 @@ public final class ExpeditionActivityDetailInfoOuterClass {
             index, emu.grasscutter.net.proto.ExpeditionPathInfoOuterClass.ExpeditionPathInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .ExpeditionPathInfo path_info_list = 15;</code>
+       * <code>repeated .ExpeditionPathInfo path_info_list = 11;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.ExpeditionPathInfoOuterClass.ExpeditionPathInfo.Builder> 
            getPathInfoListBuilderList() {
@@ -1406,6 +1344,68 @@ public final class ExpeditionActivityDetailInfoOuterClass {
           pathInfoList_ = null;
         }
         return pathInfoListBuilder_;
+      }
+
+      private boolean isContentClosed_ ;
+      /**
+       * <code>bool is_content_closed = 4;</code>
+       * @return The isContentClosed.
+       */
+      @java.lang.Override
+      public boolean getIsContentClosed() {
+        return isContentClosed_;
+      }
+      /**
+       * <code>bool is_content_closed = 4;</code>
+       * @param value The isContentClosed to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIsContentClosed(boolean value) {
+        
+        isContentClosed_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool is_content_closed = 4;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsContentClosed() {
+        
+        isContentClosed_ = false;
+        onChanged();
+        return this;
+      }
+
+      private int contentCloseTime_ ;
+      /**
+       * <code>uint32 content_close_time = 6;</code>
+       * @return The contentCloseTime.
+       */
+      @java.lang.Override
+      public int getContentCloseTime() {
+        return contentCloseTime_;
+      }
+      /**
+       * <code>uint32 content_close_time = 6;</code>
+       * @param value The contentCloseTime to set.
+       * @return This builder for chaining.
+       */
+      public Builder setContentCloseTime(int value) {
+        
+        contentCloseTime_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 content_close_time = 6;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearContentCloseTime() {
+        
+        contentCloseTime_ = 0;
+        onChanged();
+        return this;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -1476,14 +1476,14 @@ public final class ExpeditionActivityDetailInfoOuterClass {
     java.lang.String[] descriptorData = {
       "\n\"ExpeditionActivityDetailInfo.proto\032\035Ex" +
       "peditionChallengeInfo.proto\032\030ExpeditionP" +
-      "athInfo.proto\"\355\001\n\034ExpeditionActivityDeta" +
-      "ilInfo\022\030\n\020cur_challenge_id\030\005 \001(\r\0225\n\023chal" +
-      "lenge_info_list\030\n \003(\0132\030.ExpeditionChalle" +
-      "ngeInfo\022\030\n\020expedition_count\030\002 \001(\r\022\032\n\022con" +
-      "tent_close_time\030\004 \001(\r\022\031\n\021is_content_clos" +
-      "ed\030\010 \001(\010\022+\n\016path_info_list\030\017 \003(\0132\023.Exped" +
-      "itionPathInfoB\033\n\031emu.grasscutter.net.pro" +
-      "tob\006proto3"
+      "athInfo.proto\"\363\001\n\034ExpeditionActivityDeta" +
+      "ilInfo\022\033\n\023Unk3300_GJLCAJOFCKL\030\t \001(\r\0225\n\023c" +
+      "hallenge_info_list\030\017 \003(\0132\030.ExpeditionCha" +
+      "llengeInfo\022\033\n\023Unk3300_MNPBCNEDKAJ\030\003 \001(\r\022" +
+      "+\n\016path_info_list\030\013 \003(\0132\023.ExpeditionPath" +
+      "Info\022\031\n\021is_content_closed\030\004 \001(\010\022\032\n\022conte" +
+      "nt_close_time\030\006 \001(\rB\033\n\031emu.grasscutter.n" +
+      "et.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -1496,7 +1496,7 @@ public final class ExpeditionActivityDetailInfoOuterClass {
     internal_static_ExpeditionActivityDetailInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ExpeditionActivityDetailInfo_descriptor,
-        new java.lang.String[] { "CurChallengeId", "ChallengeInfoList", "ExpeditionCount", "ContentCloseTime", "IsContentClosed", "PathInfoList", });
+        new java.lang.String[] { "Unk3300GJLCAJOFCKL", "ChallengeInfoList", "Unk3300MNPBCNEDKAJ", "PathInfoList", "IsContentClosed", "ContentCloseTime", });
     emu.grasscutter.net.proto.ExpeditionChallengeInfoOuterClass.getDescriptor();
     emu.grasscutter.net.proto.ExpeditionPathInfoOuterClass.getDescriptor();
   }

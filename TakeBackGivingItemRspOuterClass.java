@@ -19,22 +19,26 @@ public final class TakeBackGivingItemRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 giving_id = 10;</code>
+     * <code>uint32 giving_id = 6;</code>
      * @return The givingId.
      */
     int getGivingId();
 
     /**
-     * <code>int32 retcode = 6;</code>
+     * <code>int32 retcode = 15;</code>
      * @return The retcode.
      */
     int getRetcode();
   }
   /**
    * <pre>
-   * CmdId: 145
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 196;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code TakeBackGivingItemRsp}
@@ -83,12 +87,12 @@ public final class TakeBackGivingItemRspOuterClass {
               break;
             case 48: {
 
-              retcode_ = input.readInt32();
+              givingId_ = input.readUInt32();
               break;
             }
-            case 80: {
+            case 120: {
 
-              givingId_ = input.readUInt32();
+              retcode_ = input.readInt32();
               break;
             }
             default: {
@@ -123,10 +127,10 @@ public final class TakeBackGivingItemRspOuterClass {
               emu.grasscutter.net.proto.TakeBackGivingItemRspOuterClass.TakeBackGivingItemRsp.class, emu.grasscutter.net.proto.TakeBackGivingItemRspOuterClass.TakeBackGivingItemRsp.Builder.class);
     }
 
-    public static final int GIVING_ID_FIELD_NUMBER = 10;
+    public static final int GIVING_ID_FIELD_NUMBER = 6;
     private int givingId_;
     /**
-     * <code>uint32 giving_id = 10;</code>
+     * <code>uint32 giving_id = 6;</code>
      * @return The givingId.
      */
     @java.lang.Override
@@ -134,10 +138,10 @@ public final class TakeBackGivingItemRspOuterClass {
       return givingId_;
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 6;
+    public static final int RETCODE_FIELD_NUMBER = 15;
     private int retcode_;
     /**
-     * <code>int32 retcode = 6;</code>
+     * <code>int32 retcode = 15;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -159,11 +163,11 @@ public final class TakeBackGivingItemRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (retcode_ != 0) {
-        output.writeInt32(6, retcode_);
-      }
       if (givingId_ != 0) {
-        output.writeUInt32(10, givingId_);
+        output.writeUInt32(6, givingId_);
+      }
+      if (retcode_ != 0) {
+        output.writeInt32(15, retcode_);
       }
       unknownFields.writeTo(output);
     }
@@ -174,13 +178,13 @@ public final class TakeBackGivingItemRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (retcode_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(6, retcode_);
-      }
       if (givingId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, givingId_);
+          .computeUInt32Size(6, givingId_);
+      }
+      if (retcode_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(15, retcode_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -313,9 +317,13 @@ public final class TakeBackGivingItemRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 145
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 196;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code TakeBackGivingItemRsp}
@@ -472,7 +480,7 @@ public final class TakeBackGivingItemRspOuterClass {
 
       private int givingId_ ;
       /**
-       * <code>uint32 giving_id = 10;</code>
+       * <code>uint32 giving_id = 6;</code>
        * @return The givingId.
        */
       @java.lang.Override
@@ -480,7 +488,7 @@ public final class TakeBackGivingItemRspOuterClass {
         return givingId_;
       }
       /**
-       * <code>uint32 giving_id = 10;</code>
+       * <code>uint32 giving_id = 6;</code>
        * @param value The givingId to set.
        * @return This builder for chaining.
        */
@@ -491,7 +499,7 @@ public final class TakeBackGivingItemRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 giving_id = 10;</code>
+       * <code>uint32 giving_id = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearGivingId() {
@@ -503,7 +511,7 @@ public final class TakeBackGivingItemRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 6;</code>
+       * <code>int32 retcode = 15;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -511,7 +519,7 @@ public final class TakeBackGivingItemRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 6;</code>
+       * <code>int32 retcode = 15;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -522,7 +530,7 @@ public final class TakeBackGivingItemRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 6;</code>
+       * <code>int32 retcode = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -599,8 +607,8 @@ public final class TakeBackGivingItemRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\033TakeBackGivingItemRsp.proto\";\n\025TakeBac" +
-      "kGivingItemRsp\022\021\n\tgiving_id\030\n \001(\r\022\017\n\007ret" +
-      "code\030\006 \001(\005B\033\n\031emu.grasscutter.net.protob" +
+      "kGivingItemRsp\022\021\n\tgiving_id\030\006 \001(\r\022\017\n\007ret" +
+      "code\030\017 \001(\005B\033\n\031emu.grasscutter.net.protob" +
       "\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

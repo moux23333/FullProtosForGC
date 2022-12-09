@@ -25,34 +25,34 @@ public final class GravenInnocenceDetailInfoOuterClass {
     boolean getIsContentClosed();
 
     /**
-     * <code>.GravenInnocenceRaceInfo race_info = 10;</code>
+     * <code>.GravenInnocenceRaceInfo race_info = 2;</code>
      * @return Whether the raceInfo field is set.
      */
     boolean hasRaceInfo();
     /**
-     * <code>.GravenInnocenceRaceInfo race_info = 10;</code>
+     * <code>.GravenInnocenceRaceInfo race_info = 2;</code>
      * @return The raceInfo.
      */
     emu.grasscutter.net.proto.GravenInnocenceRaceInfoOuterClass.GravenInnocenceRaceInfo getRaceInfo();
     /**
-     * <code>.GravenInnocenceRaceInfo race_info = 10;</code>
+     * <code>.GravenInnocenceRaceInfo race_info = 2;</code>
      */
     emu.grasscutter.net.proto.GravenInnocenceRaceInfoOuterClass.GravenInnocenceRaceInfoOrBuilder getRaceInfoOrBuilder();
 
     /**
-     * <code>.GravenInnocencePhotoInfo photo_info = 7;</code>
-     * @return Whether the photoInfo field is set.
+     * <code>.GravenInnocenceCampInfo camp_info = 3;</code>
+     * @return Whether the campInfo field is set.
      */
-    boolean hasPhotoInfo();
+    boolean hasCampInfo();
     /**
-     * <code>.GravenInnocencePhotoInfo photo_info = 7;</code>
-     * @return The photoInfo.
+     * <code>.GravenInnocenceCampInfo camp_info = 3;</code>
+     * @return The campInfo.
      */
-    emu.grasscutter.net.proto.GravenInnocencePhotoInfoOuterClass.GravenInnocencePhotoInfo getPhotoInfo();
+    emu.grasscutter.net.proto.GravenInnocenceCampInfoOuterClass.GravenInnocenceCampInfo getCampInfo();
     /**
-     * <code>.GravenInnocencePhotoInfo photo_info = 7;</code>
+     * <code>.GravenInnocenceCampInfo camp_info = 3;</code>
      */
-    emu.grasscutter.net.proto.GravenInnocencePhotoInfoOuterClass.GravenInnocencePhotoInfoOrBuilder getPhotoInfoOrBuilder();
+    emu.grasscutter.net.proto.GravenInnocenceCampInfoOuterClass.GravenInnocenceCampInfoOrBuilder getCampInfoOrBuilder();
 
     /**
      * <code>.GravenInnocenceCarveInfo carve_info = 13;</code>
@@ -70,19 +70,19 @@ public final class GravenInnocenceDetailInfoOuterClass {
     emu.grasscutter.net.proto.GravenInnocenceCarveInfoOuterClass.GravenInnocenceCarveInfoOrBuilder getCarveInfoOrBuilder();
 
     /**
-     * <code>.GravenInnocenceCampInfo camp_info = 12;</code>
-     * @return Whether the campInfo field is set.
+     * <code>.GravenInnocencePhotoInfo photo_info = 10;</code>
+     * @return Whether the photoInfo field is set.
      */
-    boolean hasCampInfo();
+    boolean hasPhotoInfo();
     /**
-     * <code>.GravenInnocenceCampInfo camp_info = 12;</code>
-     * @return The campInfo.
+     * <code>.GravenInnocencePhotoInfo photo_info = 10;</code>
+     * @return The photoInfo.
      */
-    emu.grasscutter.net.proto.GravenInnocenceCampInfoOuterClass.GravenInnocenceCampInfo getCampInfo();
+    emu.grasscutter.net.proto.GravenInnocencePhotoInfoOuterClass.GravenInnocencePhotoInfo getPhotoInfo();
     /**
-     * <code>.GravenInnocenceCampInfo camp_info = 12;</code>
+     * <code>.GravenInnocencePhotoInfo photo_info = 10;</code>
      */
-    emu.grasscutter.net.proto.GravenInnocenceCampInfoOuterClass.GravenInnocenceCampInfoOrBuilder getCampInfoOrBuilder();
+    emu.grasscutter.net.proto.GravenInnocencePhotoInfoOuterClass.GravenInnocencePhotoInfoOrBuilder getPhotoInfoOrBuilder();
   }
   /**
    * Protobuf type {@code GravenInnocenceDetailInfo}
@@ -129,25 +129,7 @@ public final class GravenInnocenceDetailInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 58: {
-              emu.grasscutter.net.proto.GravenInnocencePhotoInfoOuterClass.GravenInnocencePhotoInfo.Builder subBuilder = null;
-              if (photoInfo_ != null) {
-                subBuilder = photoInfo_.toBuilder();
-              }
-              photoInfo_ = input.readMessage(emu.grasscutter.net.proto.GravenInnocencePhotoInfoOuterClass.GravenInnocencePhotoInfo.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom(photoInfo_);
-                photoInfo_ = subBuilder.buildPartial();
-              }
-
-              break;
-            }
-            case 64: {
-
-              isContentClosed_ = input.readBool();
-              break;
-            }
-            case 82: {
+            case 18: {
               emu.grasscutter.net.proto.GravenInnocenceRaceInfoOuterClass.GravenInnocenceRaceInfo.Builder subBuilder = null;
               if (raceInfo_ != null) {
                 subBuilder = raceInfo_.toBuilder();
@@ -160,7 +142,7 @@ public final class GravenInnocenceDetailInfoOuterClass {
 
               break;
             }
-            case 98: {
+            case 26: {
               emu.grasscutter.net.proto.GravenInnocenceCampInfoOuterClass.GravenInnocenceCampInfo.Builder subBuilder = null;
               if (campInfo_ != null) {
                 subBuilder = campInfo_.toBuilder();
@@ -169,6 +151,24 @@ public final class GravenInnocenceDetailInfoOuterClass {
               if (subBuilder != null) {
                 subBuilder.mergeFrom(campInfo_);
                 campInfo_ = subBuilder.buildPartial();
+              }
+
+              break;
+            }
+            case 64: {
+
+              isContentClosed_ = input.readBool();
+              break;
+            }
+            case 82: {
+              emu.grasscutter.net.proto.GravenInnocencePhotoInfoOuterClass.GravenInnocencePhotoInfo.Builder subBuilder = null;
+              if (photoInfo_ != null) {
+                subBuilder = photoInfo_.toBuilder();
+              }
+              photoInfo_ = input.readMessage(emu.grasscutter.net.proto.GravenInnocencePhotoInfoOuterClass.GravenInnocencePhotoInfo.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(photoInfo_);
+                photoInfo_ = subBuilder.buildPartial();
               }
 
               break;
@@ -229,10 +229,10 @@ public final class GravenInnocenceDetailInfoOuterClass {
       return isContentClosed_;
     }
 
-    public static final int RACE_INFO_FIELD_NUMBER = 10;
+    public static final int RACE_INFO_FIELD_NUMBER = 2;
     private emu.grasscutter.net.proto.GravenInnocenceRaceInfoOuterClass.GravenInnocenceRaceInfo raceInfo_;
     /**
-     * <code>.GravenInnocenceRaceInfo race_info = 10;</code>
+     * <code>.GravenInnocenceRaceInfo race_info = 2;</code>
      * @return Whether the raceInfo field is set.
      */
     @java.lang.Override
@@ -240,7 +240,7 @@ public final class GravenInnocenceDetailInfoOuterClass {
       return raceInfo_ != null;
     }
     /**
-     * <code>.GravenInnocenceRaceInfo race_info = 10;</code>
+     * <code>.GravenInnocenceRaceInfo race_info = 2;</code>
      * @return The raceInfo.
      */
     @java.lang.Override
@@ -248,37 +248,37 @@ public final class GravenInnocenceDetailInfoOuterClass {
       return raceInfo_ == null ? emu.grasscutter.net.proto.GravenInnocenceRaceInfoOuterClass.GravenInnocenceRaceInfo.getDefaultInstance() : raceInfo_;
     }
     /**
-     * <code>.GravenInnocenceRaceInfo race_info = 10;</code>
+     * <code>.GravenInnocenceRaceInfo race_info = 2;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.GravenInnocenceRaceInfoOuterClass.GravenInnocenceRaceInfoOrBuilder getRaceInfoOrBuilder() {
       return getRaceInfo();
     }
 
-    public static final int PHOTO_INFO_FIELD_NUMBER = 7;
-    private emu.grasscutter.net.proto.GravenInnocencePhotoInfoOuterClass.GravenInnocencePhotoInfo photoInfo_;
+    public static final int CAMP_INFO_FIELD_NUMBER = 3;
+    private emu.grasscutter.net.proto.GravenInnocenceCampInfoOuterClass.GravenInnocenceCampInfo campInfo_;
     /**
-     * <code>.GravenInnocencePhotoInfo photo_info = 7;</code>
-     * @return Whether the photoInfo field is set.
+     * <code>.GravenInnocenceCampInfo camp_info = 3;</code>
+     * @return Whether the campInfo field is set.
      */
     @java.lang.Override
-    public boolean hasPhotoInfo() {
-      return photoInfo_ != null;
+    public boolean hasCampInfo() {
+      return campInfo_ != null;
     }
     /**
-     * <code>.GravenInnocencePhotoInfo photo_info = 7;</code>
-     * @return The photoInfo.
+     * <code>.GravenInnocenceCampInfo camp_info = 3;</code>
+     * @return The campInfo.
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.GravenInnocencePhotoInfoOuterClass.GravenInnocencePhotoInfo getPhotoInfo() {
-      return photoInfo_ == null ? emu.grasscutter.net.proto.GravenInnocencePhotoInfoOuterClass.GravenInnocencePhotoInfo.getDefaultInstance() : photoInfo_;
+    public emu.grasscutter.net.proto.GravenInnocenceCampInfoOuterClass.GravenInnocenceCampInfo getCampInfo() {
+      return campInfo_ == null ? emu.grasscutter.net.proto.GravenInnocenceCampInfoOuterClass.GravenInnocenceCampInfo.getDefaultInstance() : campInfo_;
     }
     /**
-     * <code>.GravenInnocencePhotoInfo photo_info = 7;</code>
+     * <code>.GravenInnocenceCampInfo camp_info = 3;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.GravenInnocencePhotoInfoOuterClass.GravenInnocencePhotoInfoOrBuilder getPhotoInfoOrBuilder() {
-      return getPhotoInfo();
+    public emu.grasscutter.net.proto.GravenInnocenceCampInfoOuterClass.GravenInnocenceCampInfoOrBuilder getCampInfoOrBuilder() {
+      return getCampInfo();
     }
 
     public static final int CARVE_INFO_FIELD_NUMBER = 13;
@@ -307,30 +307,30 @@ public final class GravenInnocenceDetailInfoOuterClass {
       return getCarveInfo();
     }
 
-    public static final int CAMP_INFO_FIELD_NUMBER = 12;
-    private emu.grasscutter.net.proto.GravenInnocenceCampInfoOuterClass.GravenInnocenceCampInfo campInfo_;
+    public static final int PHOTO_INFO_FIELD_NUMBER = 10;
+    private emu.grasscutter.net.proto.GravenInnocencePhotoInfoOuterClass.GravenInnocencePhotoInfo photoInfo_;
     /**
-     * <code>.GravenInnocenceCampInfo camp_info = 12;</code>
-     * @return Whether the campInfo field is set.
+     * <code>.GravenInnocencePhotoInfo photo_info = 10;</code>
+     * @return Whether the photoInfo field is set.
      */
     @java.lang.Override
-    public boolean hasCampInfo() {
-      return campInfo_ != null;
+    public boolean hasPhotoInfo() {
+      return photoInfo_ != null;
     }
     /**
-     * <code>.GravenInnocenceCampInfo camp_info = 12;</code>
-     * @return The campInfo.
+     * <code>.GravenInnocencePhotoInfo photo_info = 10;</code>
+     * @return The photoInfo.
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.GravenInnocenceCampInfoOuterClass.GravenInnocenceCampInfo getCampInfo() {
-      return campInfo_ == null ? emu.grasscutter.net.proto.GravenInnocenceCampInfoOuterClass.GravenInnocenceCampInfo.getDefaultInstance() : campInfo_;
+    public emu.grasscutter.net.proto.GravenInnocencePhotoInfoOuterClass.GravenInnocencePhotoInfo getPhotoInfo() {
+      return photoInfo_ == null ? emu.grasscutter.net.proto.GravenInnocencePhotoInfoOuterClass.GravenInnocencePhotoInfo.getDefaultInstance() : photoInfo_;
     }
     /**
-     * <code>.GravenInnocenceCampInfo camp_info = 12;</code>
+     * <code>.GravenInnocencePhotoInfo photo_info = 10;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.GravenInnocenceCampInfoOuterClass.GravenInnocenceCampInfoOrBuilder getCampInfoOrBuilder() {
-      return getCampInfo();
+    public emu.grasscutter.net.proto.GravenInnocencePhotoInfoOuterClass.GravenInnocencePhotoInfoOrBuilder getPhotoInfoOrBuilder() {
+      return getPhotoInfo();
     }
 
     private byte memoizedIsInitialized = -1;
@@ -347,17 +347,17 @@ public final class GravenInnocenceDetailInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (photoInfo_ != null) {
-        output.writeMessage(7, getPhotoInfo());
+      if (raceInfo_ != null) {
+        output.writeMessage(2, getRaceInfo());
+      }
+      if (campInfo_ != null) {
+        output.writeMessage(3, getCampInfo());
       }
       if (isContentClosed_ != false) {
         output.writeBool(8, isContentClosed_);
       }
-      if (raceInfo_ != null) {
-        output.writeMessage(10, getRaceInfo());
-      }
-      if (campInfo_ != null) {
-        output.writeMessage(12, getCampInfo());
+      if (photoInfo_ != null) {
+        output.writeMessage(10, getPhotoInfo());
       }
       if (carveInfo_ != null) {
         output.writeMessage(13, getCarveInfo());
@@ -371,21 +371,21 @@ public final class GravenInnocenceDetailInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (photoInfo_ != null) {
+      if (raceInfo_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(7, getPhotoInfo());
+          .computeMessageSize(2, getRaceInfo());
+      }
+      if (campInfo_ != null) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(3, getCampInfo());
       }
       if (isContentClosed_ != false) {
         size += com.google.protobuf.CodedOutputStream
           .computeBoolSize(8, isContentClosed_);
       }
-      if (raceInfo_ != null) {
+      if (photoInfo_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(10, getRaceInfo());
-      }
-      if (campInfo_ != null) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(12, getCampInfo());
+          .computeMessageSize(10, getPhotoInfo());
       }
       if (carveInfo_ != null) {
         size += com.google.protobuf.CodedOutputStream
@@ -413,20 +413,20 @@ public final class GravenInnocenceDetailInfoOuterClass {
         if (!getRaceInfo()
             .equals(other.getRaceInfo())) return false;
       }
-      if (hasPhotoInfo() != other.hasPhotoInfo()) return false;
-      if (hasPhotoInfo()) {
-        if (!getPhotoInfo()
-            .equals(other.getPhotoInfo())) return false;
+      if (hasCampInfo() != other.hasCampInfo()) return false;
+      if (hasCampInfo()) {
+        if (!getCampInfo()
+            .equals(other.getCampInfo())) return false;
       }
       if (hasCarveInfo() != other.hasCarveInfo()) return false;
       if (hasCarveInfo()) {
         if (!getCarveInfo()
             .equals(other.getCarveInfo())) return false;
       }
-      if (hasCampInfo() != other.hasCampInfo()) return false;
-      if (hasCampInfo()) {
-        if (!getCampInfo()
-            .equals(other.getCampInfo())) return false;
+      if (hasPhotoInfo() != other.hasPhotoInfo()) return false;
+      if (hasPhotoInfo()) {
+        if (!getPhotoInfo()
+            .equals(other.getPhotoInfo())) return false;
       }
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
@@ -446,17 +446,17 @@ public final class GravenInnocenceDetailInfoOuterClass {
         hash = (37 * hash) + RACE_INFO_FIELD_NUMBER;
         hash = (53 * hash) + getRaceInfo().hashCode();
       }
-      if (hasPhotoInfo()) {
-        hash = (37 * hash) + PHOTO_INFO_FIELD_NUMBER;
-        hash = (53 * hash) + getPhotoInfo().hashCode();
+      if (hasCampInfo()) {
+        hash = (37 * hash) + CAMP_INFO_FIELD_NUMBER;
+        hash = (53 * hash) + getCampInfo().hashCode();
       }
       if (hasCarveInfo()) {
         hash = (37 * hash) + CARVE_INFO_FIELD_NUMBER;
         hash = (53 * hash) + getCarveInfo().hashCode();
       }
-      if (hasCampInfo()) {
-        hash = (37 * hash) + CAMP_INFO_FIELD_NUMBER;
-        hash = (53 * hash) + getCampInfo().hashCode();
+      if (hasPhotoInfo()) {
+        hash = (37 * hash) + PHOTO_INFO_FIELD_NUMBER;
+        hash = (53 * hash) + getPhotoInfo().hashCode();
       }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
@@ -599,11 +599,11 @@ public final class GravenInnocenceDetailInfoOuterClass {
           raceInfo_ = null;
           raceInfoBuilder_ = null;
         }
-        if (photoInfoBuilder_ == null) {
-          photoInfo_ = null;
+        if (campInfoBuilder_ == null) {
+          campInfo_ = null;
         } else {
-          photoInfo_ = null;
-          photoInfoBuilder_ = null;
+          campInfo_ = null;
+          campInfoBuilder_ = null;
         }
         if (carveInfoBuilder_ == null) {
           carveInfo_ = null;
@@ -611,11 +611,11 @@ public final class GravenInnocenceDetailInfoOuterClass {
           carveInfo_ = null;
           carveInfoBuilder_ = null;
         }
-        if (campInfoBuilder_ == null) {
-          campInfo_ = null;
+        if (photoInfoBuilder_ == null) {
+          photoInfo_ = null;
         } else {
-          campInfo_ = null;
-          campInfoBuilder_ = null;
+          photoInfo_ = null;
+          photoInfoBuilder_ = null;
         }
         return this;
       }
@@ -649,20 +649,20 @@ public final class GravenInnocenceDetailInfoOuterClass {
         } else {
           result.raceInfo_ = raceInfoBuilder_.build();
         }
-        if (photoInfoBuilder_ == null) {
-          result.photoInfo_ = photoInfo_;
+        if (campInfoBuilder_ == null) {
+          result.campInfo_ = campInfo_;
         } else {
-          result.photoInfo_ = photoInfoBuilder_.build();
+          result.campInfo_ = campInfoBuilder_.build();
         }
         if (carveInfoBuilder_ == null) {
           result.carveInfo_ = carveInfo_;
         } else {
           result.carveInfo_ = carveInfoBuilder_.build();
         }
-        if (campInfoBuilder_ == null) {
-          result.campInfo_ = campInfo_;
+        if (photoInfoBuilder_ == null) {
+          result.photoInfo_ = photoInfo_;
         } else {
-          result.campInfo_ = campInfoBuilder_.build();
+          result.photoInfo_ = photoInfoBuilder_.build();
         }
         onBuilt();
         return result;
@@ -718,14 +718,14 @@ public final class GravenInnocenceDetailInfoOuterClass {
         if (other.hasRaceInfo()) {
           mergeRaceInfo(other.getRaceInfo());
         }
-        if (other.hasPhotoInfo()) {
-          mergePhotoInfo(other.getPhotoInfo());
+        if (other.hasCampInfo()) {
+          mergeCampInfo(other.getCampInfo());
         }
         if (other.hasCarveInfo()) {
           mergeCarveInfo(other.getCarveInfo());
         }
-        if (other.hasCampInfo()) {
-          mergeCampInfo(other.getCampInfo());
+        if (other.hasPhotoInfo()) {
+          mergePhotoInfo(other.getPhotoInfo());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -791,14 +791,14 @@ public final class GravenInnocenceDetailInfoOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.GravenInnocenceRaceInfoOuterClass.GravenInnocenceRaceInfo, emu.grasscutter.net.proto.GravenInnocenceRaceInfoOuterClass.GravenInnocenceRaceInfo.Builder, emu.grasscutter.net.proto.GravenInnocenceRaceInfoOuterClass.GravenInnocenceRaceInfoOrBuilder> raceInfoBuilder_;
       /**
-       * <code>.GravenInnocenceRaceInfo race_info = 10;</code>
+       * <code>.GravenInnocenceRaceInfo race_info = 2;</code>
        * @return Whether the raceInfo field is set.
        */
       public boolean hasRaceInfo() {
         return raceInfoBuilder_ != null || raceInfo_ != null;
       }
       /**
-       * <code>.GravenInnocenceRaceInfo race_info = 10;</code>
+       * <code>.GravenInnocenceRaceInfo race_info = 2;</code>
        * @return The raceInfo.
        */
       public emu.grasscutter.net.proto.GravenInnocenceRaceInfoOuterClass.GravenInnocenceRaceInfo getRaceInfo() {
@@ -809,7 +809,7 @@ public final class GravenInnocenceDetailInfoOuterClass {
         }
       }
       /**
-       * <code>.GravenInnocenceRaceInfo race_info = 10;</code>
+       * <code>.GravenInnocenceRaceInfo race_info = 2;</code>
        */
       public Builder setRaceInfo(emu.grasscutter.net.proto.GravenInnocenceRaceInfoOuterClass.GravenInnocenceRaceInfo value) {
         if (raceInfoBuilder_ == null) {
@@ -825,7 +825,7 @@ public final class GravenInnocenceDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>.GravenInnocenceRaceInfo race_info = 10;</code>
+       * <code>.GravenInnocenceRaceInfo race_info = 2;</code>
        */
       public Builder setRaceInfo(
           emu.grasscutter.net.proto.GravenInnocenceRaceInfoOuterClass.GravenInnocenceRaceInfo.Builder builderForValue) {
@@ -839,7 +839,7 @@ public final class GravenInnocenceDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>.GravenInnocenceRaceInfo race_info = 10;</code>
+       * <code>.GravenInnocenceRaceInfo race_info = 2;</code>
        */
       public Builder mergeRaceInfo(emu.grasscutter.net.proto.GravenInnocenceRaceInfoOuterClass.GravenInnocenceRaceInfo value) {
         if (raceInfoBuilder_ == null) {
@@ -857,7 +857,7 @@ public final class GravenInnocenceDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>.GravenInnocenceRaceInfo race_info = 10;</code>
+       * <code>.GravenInnocenceRaceInfo race_info = 2;</code>
        */
       public Builder clearRaceInfo() {
         if (raceInfoBuilder_ == null) {
@@ -871,7 +871,7 @@ public final class GravenInnocenceDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>.GravenInnocenceRaceInfo race_info = 10;</code>
+       * <code>.GravenInnocenceRaceInfo race_info = 2;</code>
        */
       public emu.grasscutter.net.proto.GravenInnocenceRaceInfoOuterClass.GravenInnocenceRaceInfo.Builder getRaceInfoBuilder() {
         
@@ -879,7 +879,7 @@ public final class GravenInnocenceDetailInfoOuterClass {
         return getRaceInfoFieldBuilder().getBuilder();
       }
       /**
-       * <code>.GravenInnocenceRaceInfo race_info = 10;</code>
+       * <code>.GravenInnocenceRaceInfo race_info = 2;</code>
        */
       public emu.grasscutter.net.proto.GravenInnocenceRaceInfoOuterClass.GravenInnocenceRaceInfoOrBuilder getRaceInfoOrBuilder() {
         if (raceInfoBuilder_ != null) {
@@ -890,7 +890,7 @@ public final class GravenInnocenceDetailInfoOuterClass {
         }
       }
       /**
-       * <code>.GravenInnocenceRaceInfo race_info = 10;</code>
+       * <code>.GravenInnocenceRaceInfo race_info = 2;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.GravenInnocenceRaceInfoOuterClass.GravenInnocenceRaceInfo, emu.grasscutter.net.proto.GravenInnocenceRaceInfoOuterClass.GravenInnocenceRaceInfo.Builder, emu.grasscutter.net.proto.GravenInnocenceRaceInfoOuterClass.GravenInnocenceRaceInfoOrBuilder> 
@@ -906,123 +906,123 @@ public final class GravenInnocenceDetailInfoOuterClass {
         return raceInfoBuilder_;
       }
 
-      private emu.grasscutter.net.proto.GravenInnocencePhotoInfoOuterClass.GravenInnocencePhotoInfo photoInfo_;
+      private emu.grasscutter.net.proto.GravenInnocenceCampInfoOuterClass.GravenInnocenceCampInfo campInfo_;
       private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.GravenInnocencePhotoInfoOuterClass.GravenInnocencePhotoInfo, emu.grasscutter.net.proto.GravenInnocencePhotoInfoOuterClass.GravenInnocencePhotoInfo.Builder, emu.grasscutter.net.proto.GravenInnocencePhotoInfoOuterClass.GravenInnocencePhotoInfoOrBuilder> photoInfoBuilder_;
+          emu.grasscutter.net.proto.GravenInnocenceCampInfoOuterClass.GravenInnocenceCampInfo, emu.grasscutter.net.proto.GravenInnocenceCampInfoOuterClass.GravenInnocenceCampInfo.Builder, emu.grasscutter.net.proto.GravenInnocenceCampInfoOuterClass.GravenInnocenceCampInfoOrBuilder> campInfoBuilder_;
       /**
-       * <code>.GravenInnocencePhotoInfo photo_info = 7;</code>
-       * @return Whether the photoInfo field is set.
+       * <code>.GravenInnocenceCampInfo camp_info = 3;</code>
+       * @return Whether the campInfo field is set.
        */
-      public boolean hasPhotoInfo() {
-        return photoInfoBuilder_ != null || photoInfo_ != null;
+      public boolean hasCampInfo() {
+        return campInfoBuilder_ != null || campInfo_ != null;
       }
       /**
-       * <code>.GravenInnocencePhotoInfo photo_info = 7;</code>
-       * @return The photoInfo.
+       * <code>.GravenInnocenceCampInfo camp_info = 3;</code>
+       * @return The campInfo.
        */
-      public emu.grasscutter.net.proto.GravenInnocencePhotoInfoOuterClass.GravenInnocencePhotoInfo getPhotoInfo() {
-        if (photoInfoBuilder_ == null) {
-          return photoInfo_ == null ? emu.grasscutter.net.proto.GravenInnocencePhotoInfoOuterClass.GravenInnocencePhotoInfo.getDefaultInstance() : photoInfo_;
+      public emu.grasscutter.net.proto.GravenInnocenceCampInfoOuterClass.GravenInnocenceCampInfo getCampInfo() {
+        if (campInfoBuilder_ == null) {
+          return campInfo_ == null ? emu.grasscutter.net.proto.GravenInnocenceCampInfoOuterClass.GravenInnocenceCampInfo.getDefaultInstance() : campInfo_;
         } else {
-          return photoInfoBuilder_.getMessage();
+          return campInfoBuilder_.getMessage();
         }
       }
       /**
-       * <code>.GravenInnocencePhotoInfo photo_info = 7;</code>
+       * <code>.GravenInnocenceCampInfo camp_info = 3;</code>
        */
-      public Builder setPhotoInfo(emu.grasscutter.net.proto.GravenInnocencePhotoInfoOuterClass.GravenInnocencePhotoInfo value) {
-        if (photoInfoBuilder_ == null) {
+      public Builder setCampInfo(emu.grasscutter.net.proto.GravenInnocenceCampInfoOuterClass.GravenInnocenceCampInfo value) {
+        if (campInfoBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          photoInfo_ = value;
+          campInfo_ = value;
           onChanged();
         } else {
-          photoInfoBuilder_.setMessage(value);
+          campInfoBuilder_.setMessage(value);
         }
 
         return this;
       }
       /**
-       * <code>.GravenInnocencePhotoInfo photo_info = 7;</code>
+       * <code>.GravenInnocenceCampInfo camp_info = 3;</code>
        */
-      public Builder setPhotoInfo(
-          emu.grasscutter.net.proto.GravenInnocencePhotoInfoOuterClass.GravenInnocencePhotoInfo.Builder builderForValue) {
-        if (photoInfoBuilder_ == null) {
-          photoInfo_ = builderForValue.build();
+      public Builder setCampInfo(
+          emu.grasscutter.net.proto.GravenInnocenceCampInfoOuterClass.GravenInnocenceCampInfo.Builder builderForValue) {
+        if (campInfoBuilder_ == null) {
+          campInfo_ = builderForValue.build();
           onChanged();
         } else {
-          photoInfoBuilder_.setMessage(builderForValue.build());
+          campInfoBuilder_.setMessage(builderForValue.build());
         }
 
         return this;
       }
       /**
-       * <code>.GravenInnocencePhotoInfo photo_info = 7;</code>
+       * <code>.GravenInnocenceCampInfo camp_info = 3;</code>
        */
-      public Builder mergePhotoInfo(emu.grasscutter.net.proto.GravenInnocencePhotoInfoOuterClass.GravenInnocencePhotoInfo value) {
-        if (photoInfoBuilder_ == null) {
-          if (photoInfo_ != null) {
-            photoInfo_ =
-              emu.grasscutter.net.proto.GravenInnocencePhotoInfoOuterClass.GravenInnocencePhotoInfo.newBuilder(photoInfo_).mergeFrom(value).buildPartial();
+      public Builder mergeCampInfo(emu.grasscutter.net.proto.GravenInnocenceCampInfoOuterClass.GravenInnocenceCampInfo value) {
+        if (campInfoBuilder_ == null) {
+          if (campInfo_ != null) {
+            campInfo_ =
+              emu.grasscutter.net.proto.GravenInnocenceCampInfoOuterClass.GravenInnocenceCampInfo.newBuilder(campInfo_).mergeFrom(value).buildPartial();
           } else {
-            photoInfo_ = value;
+            campInfo_ = value;
           }
           onChanged();
         } else {
-          photoInfoBuilder_.mergeFrom(value);
+          campInfoBuilder_.mergeFrom(value);
         }
 
         return this;
       }
       /**
-       * <code>.GravenInnocencePhotoInfo photo_info = 7;</code>
+       * <code>.GravenInnocenceCampInfo camp_info = 3;</code>
        */
-      public Builder clearPhotoInfo() {
-        if (photoInfoBuilder_ == null) {
-          photoInfo_ = null;
+      public Builder clearCampInfo() {
+        if (campInfoBuilder_ == null) {
+          campInfo_ = null;
           onChanged();
         } else {
-          photoInfo_ = null;
-          photoInfoBuilder_ = null;
+          campInfo_ = null;
+          campInfoBuilder_ = null;
         }
 
         return this;
       }
       /**
-       * <code>.GravenInnocencePhotoInfo photo_info = 7;</code>
+       * <code>.GravenInnocenceCampInfo camp_info = 3;</code>
        */
-      public emu.grasscutter.net.proto.GravenInnocencePhotoInfoOuterClass.GravenInnocencePhotoInfo.Builder getPhotoInfoBuilder() {
+      public emu.grasscutter.net.proto.GravenInnocenceCampInfoOuterClass.GravenInnocenceCampInfo.Builder getCampInfoBuilder() {
         
         onChanged();
-        return getPhotoInfoFieldBuilder().getBuilder();
+        return getCampInfoFieldBuilder().getBuilder();
       }
       /**
-       * <code>.GravenInnocencePhotoInfo photo_info = 7;</code>
+       * <code>.GravenInnocenceCampInfo camp_info = 3;</code>
        */
-      public emu.grasscutter.net.proto.GravenInnocencePhotoInfoOuterClass.GravenInnocencePhotoInfoOrBuilder getPhotoInfoOrBuilder() {
-        if (photoInfoBuilder_ != null) {
-          return photoInfoBuilder_.getMessageOrBuilder();
+      public emu.grasscutter.net.proto.GravenInnocenceCampInfoOuterClass.GravenInnocenceCampInfoOrBuilder getCampInfoOrBuilder() {
+        if (campInfoBuilder_ != null) {
+          return campInfoBuilder_.getMessageOrBuilder();
         } else {
-          return photoInfo_ == null ?
-              emu.grasscutter.net.proto.GravenInnocencePhotoInfoOuterClass.GravenInnocencePhotoInfo.getDefaultInstance() : photoInfo_;
+          return campInfo_ == null ?
+              emu.grasscutter.net.proto.GravenInnocenceCampInfoOuterClass.GravenInnocenceCampInfo.getDefaultInstance() : campInfo_;
         }
       }
       /**
-       * <code>.GravenInnocencePhotoInfo photo_info = 7;</code>
+       * <code>.GravenInnocenceCampInfo camp_info = 3;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.GravenInnocencePhotoInfoOuterClass.GravenInnocencePhotoInfo, emu.grasscutter.net.proto.GravenInnocencePhotoInfoOuterClass.GravenInnocencePhotoInfo.Builder, emu.grasscutter.net.proto.GravenInnocencePhotoInfoOuterClass.GravenInnocencePhotoInfoOrBuilder> 
-          getPhotoInfoFieldBuilder() {
-        if (photoInfoBuilder_ == null) {
-          photoInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.GravenInnocencePhotoInfoOuterClass.GravenInnocencePhotoInfo, emu.grasscutter.net.proto.GravenInnocencePhotoInfoOuterClass.GravenInnocencePhotoInfo.Builder, emu.grasscutter.net.proto.GravenInnocencePhotoInfoOuterClass.GravenInnocencePhotoInfoOrBuilder>(
-                  getPhotoInfo(),
+          emu.grasscutter.net.proto.GravenInnocenceCampInfoOuterClass.GravenInnocenceCampInfo, emu.grasscutter.net.proto.GravenInnocenceCampInfoOuterClass.GravenInnocenceCampInfo.Builder, emu.grasscutter.net.proto.GravenInnocenceCampInfoOuterClass.GravenInnocenceCampInfoOrBuilder> 
+          getCampInfoFieldBuilder() {
+        if (campInfoBuilder_ == null) {
+          campInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              emu.grasscutter.net.proto.GravenInnocenceCampInfoOuterClass.GravenInnocenceCampInfo, emu.grasscutter.net.proto.GravenInnocenceCampInfoOuterClass.GravenInnocenceCampInfo.Builder, emu.grasscutter.net.proto.GravenInnocenceCampInfoOuterClass.GravenInnocenceCampInfoOrBuilder>(
+                  getCampInfo(),
                   getParentForChildren(),
                   isClean());
-          photoInfo_ = null;
+          campInfo_ = null;
         }
-        return photoInfoBuilder_;
+        return campInfoBuilder_;
       }
 
       private emu.grasscutter.net.proto.GravenInnocenceCarveInfoOuterClass.GravenInnocenceCarveInfo carveInfo_;
@@ -1144,123 +1144,123 @@ public final class GravenInnocenceDetailInfoOuterClass {
         return carveInfoBuilder_;
       }
 
-      private emu.grasscutter.net.proto.GravenInnocenceCampInfoOuterClass.GravenInnocenceCampInfo campInfo_;
+      private emu.grasscutter.net.proto.GravenInnocencePhotoInfoOuterClass.GravenInnocencePhotoInfo photoInfo_;
       private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.GravenInnocenceCampInfoOuterClass.GravenInnocenceCampInfo, emu.grasscutter.net.proto.GravenInnocenceCampInfoOuterClass.GravenInnocenceCampInfo.Builder, emu.grasscutter.net.proto.GravenInnocenceCampInfoOuterClass.GravenInnocenceCampInfoOrBuilder> campInfoBuilder_;
+          emu.grasscutter.net.proto.GravenInnocencePhotoInfoOuterClass.GravenInnocencePhotoInfo, emu.grasscutter.net.proto.GravenInnocencePhotoInfoOuterClass.GravenInnocencePhotoInfo.Builder, emu.grasscutter.net.proto.GravenInnocencePhotoInfoOuterClass.GravenInnocencePhotoInfoOrBuilder> photoInfoBuilder_;
       /**
-       * <code>.GravenInnocenceCampInfo camp_info = 12;</code>
-       * @return Whether the campInfo field is set.
+       * <code>.GravenInnocencePhotoInfo photo_info = 10;</code>
+       * @return Whether the photoInfo field is set.
        */
-      public boolean hasCampInfo() {
-        return campInfoBuilder_ != null || campInfo_ != null;
+      public boolean hasPhotoInfo() {
+        return photoInfoBuilder_ != null || photoInfo_ != null;
       }
       /**
-       * <code>.GravenInnocenceCampInfo camp_info = 12;</code>
-       * @return The campInfo.
+       * <code>.GravenInnocencePhotoInfo photo_info = 10;</code>
+       * @return The photoInfo.
        */
-      public emu.grasscutter.net.proto.GravenInnocenceCampInfoOuterClass.GravenInnocenceCampInfo getCampInfo() {
-        if (campInfoBuilder_ == null) {
-          return campInfo_ == null ? emu.grasscutter.net.proto.GravenInnocenceCampInfoOuterClass.GravenInnocenceCampInfo.getDefaultInstance() : campInfo_;
+      public emu.grasscutter.net.proto.GravenInnocencePhotoInfoOuterClass.GravenInnocencePhotoInfo getPhotoInfo() {
+        if (photoInfoBuilder_ == null) {
+          return photoInfo_ == null ? emu.grasscutter.net.proto.GravenInnocencePhotoInfoOuterClass.GravenInnocencePhotoInfo.getDefaultInstance() : photoInfo_;
         } else {
-          return campInfoBuilder_.getMessage();
+          return photoInfoBuilder_.getMessage();
         }
       }
       /**
-       * <code>.GravenInnocenceCampInfo camp_info = 12;</code>
+       * <code>.GravenInnocencePhotoInfo photo_info = 10;</code>
        */
-      public Builder setCampInfo(emu.grasscutter.net.proto.GravenInnocenceCampInfoOuterClass.GravenInnocenceCampInfo value) {
-        if (campInfoBuilder_ == null) {
+      public Builder setPhotoInfo(emu.grasscutter.net.proto.GravenInnocencePhotoInfoOuterClass.GravenInnocencePhotoInfo value) {
+        if (photoInfoBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          campInfo_ = value;
+          photoInfo_ = value;
           onChanged();
         } else {
-          campInfoBuilder_.setMessage(value);
+          photoInfoBuilder_.setMessage(value);
         }
 
         return this;
       }
       /**
-       * <code>.GravenInnocenceCampInfo camp_info = 12;</code>
+       * <code>.GravenInnocencePhotoInfo photo_info = 10;</code>
        */
-      public Builder setCampInfo(
-          emu.grasscutter.net.proto.GravenInnocenceCampInfoOuterClass.GravenInnocenceCampInfo.Builder builderForValue) {
-        if (campInfoBuilder_ == null) {
-          campInfo_ = builderForValue.build();
+      public Builder setPhotoInfo(
+          emu.grasscutter.net.proto.GravenInnocencePhotoInfoOuterClass.GravenInnocencePhotoInfo.Builder builderForValue) {
+        if (photoInfoBuilder_ == null) {
+          photoInfo_ = builderForValue.build();
           onChanged();
         } else {
-          campInfoBuilder_.setMessage(builderForValue.build());
+          photoInfoBuilder_.setMessage(builderForValue.build());
         }
 
         return this;
       }
       /**
-       * <code>.GravenInnocenceCampInfo camp_info = 12;</code>
+       * <code>.GravenInnocencePhotoInfo photo_info = 10;</code>
        */
-      public Builder mergeCampInfo(emu.grasscutter.net.proto.GravenInnocenceCampInfoOuterClass.GravenInnocenceCampInfo value) {
-        if (campInfoBuilder_ == null) {
-          if (campInfo_ != null) {
-            campInfo_ =
-              emu.grasscutter.net.proto.GravenInnocenceCampInfoOuterClass.GravenInnocenceCampInfo.newBuilder(campInfo_).mergeFrom(value).buildPartial();
+      public Builder mergePhotoInfo(emu.grasscutter.net.proto.GravenInnocencePhotoInfoOuterClass.GravenInnocencePhotoInfo value) {
+        if (photoInfoBuilder_ == null) {
+          if (photoInfo_ != null) {
+            photoInfo_ =
+              emu.grasscutter.net.proto.GravenInnocencePhotoInfoOuterClass.GravenInnocencePhotoInfo.newBuilder(photoInfo_).mergeFrom(value).buildPartial();
           } else {
-            campInfo_ = value;
+            photoInfo_ = value;
           }
           onChanged();
         } else {
-          campInfoBuilder_.mergeFrom(value);
+          photoInfoBuilder_.mergeFrom(value);
         }
 
         return this;
       }
       /**
-       * <code>.GravenInnocenceCampInfo camp_info = 12;</code>
+       * <code>.GravenInnocencePhotoInfo photo_info = 10;</code>
        */
-      public Builder clearCampInfo() {
-        if (campInfoBuilder_ == null) {
-          campInfo_ = null;
+      public Builder clearPhotoInfo() {
+        if (photoInfoBuilder_ == null) {
+          photoInfo_ = null;
           onChanged();
         } else {
-          campInfo_ = null;
-          campInfoBuilder_ = null;
+          photoInfo_ = null;
+          photoInfoBuilder_ = null;
         }
 
         return this;
       }
       /**
-       * <code>.GravenInnocenceCampInfo camp_info = 12;</code>
+       * <code>.GravenInnocencePhotoInfo photo_info = 10;</code>
        */
-      public emu.grasscutter.net.proto.GravenInnocenceCampInfoOuterClass.GravenInnocenceCampInfo.Builder getCampInfoBuilder() {
+      public emu.grasscutter.net.proto.GravenInnocencePhotoInfoOuterClass.GravenInnocencePhotoInfo.Builder getPhotoInfoBuilder() {
         
         onChanged();
-        return getCampInfoFieldBuilder().getBuilder();
+        return getPhotoInfoFieldBuilder().getBuilder();
       }
       /**
-       * <code>.GravenInnocenceCampInfo camp_info = 12;</code>
+       * <code>.GravenInnocencePhotoInfo photo_info = 10;</code>
        */
-      public emu.grasscutter.net.proto.GravenInnocenceCampInfoOuterClass.GravenInnocenceCampInfoOrBuilder getCampInfoOrBuilder() {
-        if (campInfoBuilder_ != null) {
-          return campInfoBuilder_.getMessageOrBuilder();
+      public emu.grasscutter.net.proto.GravenInnocencePhotoInfoOuterClass.GravenInnocencePhotoInfoOrBuilder getPhotoInfoOrBuilder() {
+        if (photoInfoBuilder_ != null) {
+          return photoInfoBuilder_.getMessageOrBuilder();
         } else {
-          return campInfo_ == null ?
-              emu.grasscutter.net.proto.GravenInnocenceCampInfoOuterClass.GravenInnocenceCampInfo.getDefaultInstance() : campInfo_;
+          return photoInfo_ == null ?
+              emu.grasscutter.net.proto.GravenInnocencePhotoInfoOuterClass.GravenInnocencePhotoInfo.getDefaultInstance() : photoInfo_;
         }
       }
       /**
-       * <code>.GravenInnocenceCampInfo camp_info = 12;</code>
+       * <code>.GravenInnocencePhotoInfo photo_info = 10;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.GravenInnocenceCampInfoOuterClass.GravenInnocenceCampInfo, emu.grasscutter.net.proto.GravenInnocenceCampInfoOuterClass.GravenInnocenceCampInfo.Builder, emu.grasscutter.net.proto.GravenInnocenceCampInfoOuterClass.GravenInnocenceCampInfoOrBuilder> 
-          getCampInfoFieldBuilder() {
-        if (campInfoBuilder_ == null) {
-          campInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.GravenInnocenceCampInfoOuterClass.GravenInnocenceCampInfo, emu.grasscutter.net.proto.GravenInnocenceCampInfoOuterClass.GravenInnocenceCampInfo.Builder, emu.grasscutter.net.proto.GravenInnocenceCampInfoOuterClass.GravenInnocenceCampInfoOrBuilder>(
-                  getCampInfo(),
+          emu.grasscutter.net.proto.GravenInnocencePhotoInfoOuterClass.GravenInnocencePhotoInfo, emu.grasscutter.net.proto.GravenInnocencePhotoInfoOuterClass.GravenInnocencePhotoInfo.Builder, emu.grasscutter.net.proto.GravenInnocencePhotoInfoOuterClass.GravenInnocencePhotoInfoOrBuilder> 
+          getPhotoInfoFieldBuilder() {
+        if (photoInfoBuilder_ == null) {
+          photoInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              emu.grasscutter.net.proto.GravenInnocencePhotoInfoOuterClass.GravenInnocencePhotoInfo, emu.grasscutter.net.proto.GravenInnocencePhotoInfoOuterClass.GravenInnocencePhotoInfo.Builder, emu.grasscutter.net.proto.GravenInnocencePhotoInfoOuterClass.GravenInnocencePhotoInfoOrBuilder>(
+                  getPhotoInfo(),
                   getParentForChildren(),
                   isClean());
-          campInfo_ = null;
+          photoInfo_ = null;
         }
-        return campInfoBuilder_;
+        return photoInfoBuilder_;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -1334,11 +1334,11 @@ public final class GravenInnocenceDetailInfoOuterClass {
       "eCarveInfo.proto\032\036GravenInnocencePhotoIn" +
       "fo.proto\032\035GravenInnocenceRaceInfo.proto\"" +
       "\356\001\n\031GravenInnocenceDetailInfo\022\031\n\021is_cont" +
-      "ent_closed\030\010 \001(\010\022+\n\trace_info\030\n \001(\0132\030.Gr" +
-      "avenInnocenceRaceInfo\022-\n\nphoto_info\030\007 \001(" +
-      "\0132\031.GravenInnocencePhotoInfo\022-\n\ncarve_in" +
-      "fo\030\r \001(\0132\031.GravenInnocenceCarveInfo\022+\n\tc" +
-      "amp_info\030\014 \001(\0132\030.GravenInnocenceCampInfo" +
+      "ent_closed\030\010 \001(\010\022+\n\trace_info\030\002 \001(\0132\030.Gr" +
+      "avenInnocenceRaceInfo\022+\n\tcamp_info\030\003 \001(\013" +
+      "2\030.GravenInnocenceCampInfo\022-\n\ncarve_info" +
+      "\030\r \001(\0132\031.GravenInnocenceCarveInfo\022-\n\npho" +
+      "to_info\030\n \001(\0132\031.GravenInnocencePhotoInfo" +
       "B\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -1354,7 +1354,7 @@ public final class GravenInnocenceDetailInfoOuterClass {
     internal_static_GravenInnocenceDetailInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GravenInnocenceDetailInfo_descriptor,
-        new java.lang.String[] { "IsContentClosed", "RaceInfo", "PhotoInfo", "CarveInfo", "CampInfo", });
+        new java.lang.String[] { "IsContentClosed", "RaceInfo", "CampInfo", "CarveInfo", "PhotoInfo", });
     emu.grasscutter.net.proto.GravenInnocenceCampInfoOuterClass.getDescriptor();
     emu.grasscutter.net.proto.GravenInnocenceCarveInfoOuterClass.getDescriptor();
     emu.grasscutter.net.proto.GravenInnocencePhotoInfoOuterClass.getDescriptor();

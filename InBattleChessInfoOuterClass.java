@@ -19,73 +19,32 @@ public final class InBattleChessInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated uint32 ban_card_tag_list = 2;</code>
-     * @return A list containing the banCardTagList.
-     */
-    java.util.List<java.lang.Integer> getBanCardTagListList();
-    /**
-     * <code>repeated uint32 ban_card_tag_list = 2;</code>
-     * @return The count of banCardTagList.
-     */
-    int getBanCardTagListCount();
-    /**
-     * <code>repeated uint32 ban_card_tag_list = 2;</code>
-     * @param index The index of the element to return.
-     * @return The banCardTagList at the given index.
-     */
-    int getBanCardTagList(int index);
-
-    /**
-     * <code>uint32 round = 4;</code>
+     * <code>uint32 round = 2;</code>
      * @return The round.
      */
     int getRound();
 
     /**
-     * <code>repeated .ChessCardInfo selected_card_info_list = 9;</code>
-     */
-    java.util.List<emu.grasscutter.net.proto.ChessCardInfoOuterClass.ChessCardInfo> 
-        getSelectedCardInfoListList();
-    /**
-     * <code>repeated .ChessCardInfo selected_card_info_list = 9;</code>
-     */
-    emu.grasscutter.net.proto.ChessCardInfoOuterClass.ChessCardInfo getSelectedCardInfoList(int index);
-    /**
-     * <code>repeated .ChessCardInfo selected_card_info_list = 9;</code>
-     */
-    int getSelectedCardInfoListCount();
-    /**
-     * <code>repeated .ChessCardInfo selected_card_info_list = 9;</code>
-     */
-    java.util.List<? extends emu.grasscutter.net.proto.ChessCardInfoOuterClass.ChessCardInfoOrBuilder> 
-        getSelectedCardInfoListOrBuilderList();
-    /**
-     * <code>repeated .ChessCardInfo selected_card_info_list = 9;</code>
-     */
-    emu.grasscutter.net.proto.ChessCardInfoOuterClass.ChessCardInfoOrBuilder getSelectedCardInfoListOrBuilder(
-        int index);
-
-    /**
-     * <code>.ChessMysteryInfo mystery_info = 1;</code>
+     * <code>.ChessMysteryInfo mystery_info = 6;</code>
      * @return Whether the mysteryInfo field is set.
      */
     boolean hasMysteryInfo();
     /**
-     * <code>.ChessMysteryInfo mystery_info = 1;</code>
+     * <code>.ChessMysteryInfo mystery_info = 6;</code>
      * @return The mysteryInfo.
      */
     emu.grasscutter.net.proto.ChessMysteryInfoOuterClass.ChessMysteryInfo getMysteryInfo();
     /**
-     * <code>.ChessMysteryInfo mystery_info = 1;</code>
+     * <code>.ChessMysteryInfo mystery_info = 6;</code>
      */
     emu.grasscutter.net.proto.ChessMysteryInfoOuterClass.ChessMysteryInfoOrBuilder getMysteryInfoOrBuilder();
 
     /**
-     * <code>map&lt;uint32, .ChessPlayerInfo&gt; player_info_map = 8;</code>
+     * <code>map&lt;uint32, .ChessPlayerInfo&gt; player_info_map = 15;</code>
      */
     int getPlayerInfoMapCount();
     /**
-     * <code>map&lt;uint32, .ChessPlayerInfo&gt; player_info_map = 8;</code>
+     * <code>map&lt;uint32, .ChessPlayerInfo&gt; player_info_map = 15;</code>
      */
     boolean containsPlayerInfoMap(
         int key);
@@ -96,47 +55,88 @@ public final class InBattleChessInfoOuterClass {
     java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.ChessPlayerInfoOuterClass.ChessPlayerInfo>
     getPlayerInfoMap();
     /**
-     * <code>map&lt;uint32, .ChessPlayerInfo&gt; player_info_map = 8;</code>
+     * <code>map&lt;uint32, .ChessPlayerInfo&gt; player_info_map = 15;</code>
      */
     java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.ChessPlayerInfoOuterClass.ChessPlayerInfo>
     getPlayerInfoMapMap();
     /**
-     * <code>map&lt;uint32, .ChessPlayerInfo&gt; player_info_map = 8;</code>
+     * <code>map&lt;uint32, .ChessPlayerInfo&gt; player_info_map = 15;</code>
      */
 
     emu.grasscutter.net.proto.ChessPlayerInfoOuterClass.ChessPlayerInfo getPlayerInfoMapOrDefault(
         int key,
         emu.grasscutter.net.proto.ChessPlayerInfoOuterClass.ChessPlayerInfo defaultValue);
     /**
-     * <code>map&lt;uint32, .ChessPlayerInfo&gt; player_info_map = 8;</code>
+     * <code>map&lt;uint32, .ChessPlayerInfo&gt; player_info_map = 15;</code>
      */
 
     emu.grasscutter.net.proto.ChessPlayerInfoOuterClass.ChessPlayerInfo getPlayerInfoMapOrThrow(
         int key);
 
     /**
-     * <code>uint32 max_escapable_monsters = 6;</code>
+     * <code>uint32 max_escapable_monsters = 7;</code>
      * @return The maxEscapableMonsters.
      */
     int getMaxEscapableMonsters();
 
     /**
-     * <code>uint32 escaped_monsters = 12;</code>
+     * <code>uint32 escaped_monsters = 11;</code>
      * @return The escapedMonsters.
      */
     int getEscapedMonsters();
 
     /**
-     * <code>uint32 total_round = 14;</code>
+     * <code>repeated .ChessCardInfo selected_card_info_list = 4;</code>
+     */
+    java.util.List<emu.grasscutter.net.proto.ChessCardInfoOuterClass.ChessCardInfo> 
+        getSelectedCardInfoListList();
+    /**
+     * <code>repeated .ChessCardInfo selected_card_info_list = 4;</code>
+     */
+    emu.grasscutter.net.proto.ChessCardInfoOuterClass.ChessCardInfo getSelectedCardInfoList(int index);
+    /**
+     * <code>repeated .ChessCardInfo selected_card_info_list = 4;</code>
+     */
+    int getSelectedCardInfoListCount();
+    /**
+     * <code>repeated .ChessCardInfo selected_card_info_list = 4;</code>
+     */
+    java.util.List<? extends emu.grasscutter.net.proto.ChessCardInfoOuterClass.ChessCardInfoOrBuilder> 
+        getSelectedCardInfoListOrBuilderList();
+    /**
+     * <code>repeated .ChessCardInfo selected_card_info_list = 4;</code>
+     */
+    emu.grasscutter.net.proto.ChessCardInfoOuterClass.ChessCardInfoOrBuilder getSelectedCardInfoListOrBuilder(
+        int index);
+
+    /**
+     * <code>uint32 total_round = 13;</code>
      * @return The totalRound.
      */
     int getTotalRound();
 
     /**
-     * <code>uint32 left_monsters = 15;</code>
+     * <code>uint32 left_monsters = 5;</code>
      * @return The leftMonsters.
      */
     int getLeftMonsters();
+
+    /**
+     * <code>repeated uint32 ban_card_tag_list = 1;</code>
+     * @return A list containing the banCardTagList.
+     */
+    java.util.List<java.lang.Integer> getBanCardTagListList();
+    /**
+     * <code>repeated uint32 ban_card_tag_list = 1;</code>
+     * @return The count of banCardTagList.
+     */
+    int getBanCardTagListCount();
+    /**
+     * <code>repeated uint32 ban_card_tag_list = 1;</code>
+     * @param index The index of the element to return.
+     * @return The banCardTagList at the given index.
+     */
+    int getBanCardTagList(int index);
   }
   /**
    * Protobuf type {@code InBattleChessInfo}
@@ -151,8 +151,8 @@ public final class InBattleChessInfoOuterClass {
       super(builder);
     }
     private InBattleChessInfo() {
-      banCardTagList_ = emptyIntList();
       selectedCardInfoList_ = java.util.Collections.emptyList();
+      banCardTagList_ = emptyIntList();
     }
 
     @java.lang.Override
@@ -186,7 +186,47 @@ public final class InBattleChessInfoOuterClass {
             case 0:
               done = true;
               break;
+            case 8: {
+              if (!((mutable_bitField0_ & 0x00000004) != 0)) {
+                banCardTagList_ = newIntList();
+                mutable_bitField0_ |= 0x00000004;
+              }
+              banCardTagList_.addInt(input.readUInt32());
+              break;
+            }
             case 10: {
+              int length = input.readRawVarint32();
+              int limit = input.pushLimit(length);
+              if (!((mutable_bitField0_ & 0x00000004) != 0) && input.getBytesUntilLimit() > 0) {
+                banCardTagList_ = newIntList();
+                mutable_bitField0_ |= 0x00000004;
+              }
+              while (input.getBytesUntilLimit() > 0) {
+                banCardTagList_.addInt(input.readUInt32());
+              }
+              input.popLimit(limit);
+              break;
+            }
+            case 16: {
+
+              round_ = input.readUInt32();
+              break;
+            }
+            case 34: {
+              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
+                selectedCardInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.ChessCardInfoOuterClass.ChessCardInfo>();
+                mutable_bitField0_ |= 0x00000002;
+              }
+              selectedCardInfoList_.add(
+                  input.readMessage(emu.grasscutter.net.proto.ChessCardInfoOuterClass.ChessCardInfo.parser(), extensionRegistry));
+              break;
+            }
+            case 40: {
+
+              leftMonsters_ = input.readUInt32();
+              break;
+            }
+            case 50: {
               emu.grasscutter.net.proto.ChessMysteryInfoOuterClass.ChessMysteryInfo.Builder subBuilder = null;
               if (mysteryInfo_ != null) {
                 subBuilder = mysteryInfo_.toBuilder();
@@ -199,72 +239,32 @@ public final class InBattleChessInfoOuterClass {
 
               break;
             }
-            case 16: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                banCardTagList_ = newIntList();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              banCardTagList_.addInt(input.readUInt32());
-              break;
-            }
-            case 18: {
-              int length = input.readRawVarint32();
-              int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
-                banCardTagList_ = newIntList();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              while (input.getBytesUntilLimit() > 0) {
-                banCardTagList_.addInt(input.readUInt32());
-              }
-              input.popLimit(limit);
-              break;
-            }
-            case 32: {
-
-              round_ = input.readUInt32();
-              break;
-            }
-            case 48: {
+            case 56: {
 
               maxEscapableMonsters_ = input.readUInt32();
               break;
             }
-            case 66: {
-              if (!((mutable_bitField0_ & 0x00000004) != 0)) {
+            case 88: {
+
+              escapedMonsters_ = input.readUInt32();
+              break;
+            }
+            case 104: {
+
+              totalRound_ = input.readUInt32();
+              break;
+            }
+            case 122: {
+              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 playerInfoMap_ = com.google.protobuf.MapField.newMapField(
                     PlayerInfoMapDefaultEntryHolder.defaultEntry);
-                mutable_bitField0_ |= 0x00000004;
+                mutable_bitField0_ |= 0x00000001;
               }
               com.google.protobuf.MapEntry<java.lang.Integer, emu.grasscutter.net.proto.ChessPlayerInfoOuterClass.ChessPlayerInfo>
               playerInfoMap__ = input.readMessage(
                   PlayerInfoMapDefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
               playerInfoMap_.getMutableMap().put(
                   playerInfoMap__.getKey(), playerInfoMap__.getValue());
-              break;
-            }
-            case 74: {
-              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
-                selectedCardInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.ChessCardInfoOuterClass.ChessCardInfo>();
-                mutable_bitField0_ |= 0x00000002;
-              }
-              selectedCardInfoList_.add(
-                  input.readMessage(emu.grasscutter.net.proto.ChessCardInfoOuterClass.ChessCardInfo.parser(), extensionRegistry));
-              break;
-            }
-            case 96: {
-
-              escapedMonsters_ = input.readUInt32();
-              break;
-            }
-            case 112: {
-
-              totalRound_ = input.readUInt32();
-              break;
-            }
-            case 120: {
-
-              leftMonsters_ = input.readUInt32();
               break;
             }
             default: {
@@ -282,7 +282,7 @@ public final class InBattleChessInfoOuterClass {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
       } finally {
-        if (((mutable_bitField0_ & 0x00000001) != 0)) {
+        if (((mutable_bitField0_ & 0x00000004) != 0)) {
           banCardTagList_.makeImmutable(); // C
         }
         if (((mutable_bitField0_ & 0x00000002) != 0)) {
@@ -302,7 +302,7 @@ public final class InBattleChessInfoOuterClass {
     protected com.google.protobuf.MapField internalGetMapField(
         int number) {
       switch (number) {
-        case 8:
+        case 15:
           return internalGetPlayerInfoMap();
         default:
           throw new RuntimeException(
@@ -317,38 +317,10 @@ public final class InBattleChessInfoOuterClass {
               emu.grasscutter.net.proto.InBattleChessInfoOuterClass.InBattleChessInfo.class, emu.grasscutter.net.proto.InBattleChessInfoOuterClass.InBattleChessInfo.Builder.class);
     }
 
-    public static final int BAN_CARD_TAG_LIST_FIELD_NUMBER = 2;
-    private com.google.protobuf.Internal.IntList banCardTagList_;
-    /**
-     * <code>repeated uint32 ban_card_tag_list = 2;</code>
-     * @return A list containing the banCardTagList.
-     */
-    @java.lang.Override
-    public java.util.List<java.lang.Integer>
-        getBanCardTagListList() {
-      return banCardTagList_;
-    }
-    /**
-     * <code>repeated uint32 ban_card_tag_list = 2;</code>
-     * @return The count of banCardTagList.
-     */
-    public int getBanCardTagListCount() {
-      return banCardTagList_.size();
-    }
-    /**
-     * <code>repeated uint32 ban_card_tag_list = 2;</code>
-     * @param index The index of the element to return.
-     * @return The banCardTagList at the given index.
-     */
-    public int getBanCardTagList(int index) {
-      return banCardTagList_.getInt(index);
-    }
-    private int banCardTagListMemoizedSerializedSize = -1;
-
-    public static final int ROUND_FIELD_NUMBER = 4;
+    public static final int ROUND_FIELD_NUMBER = 2;
     private int round_;
     /**
-     * <code>uint32 round = 4;</code>
+     * <code>uint32 round = 2;</code>
      * @return The round.
      */
     @java.lang.Override
@@ -356,50 +328,10 @@ public final class InBattleChessInfoOuterClass {
       return round_;
     }
 
-    public static final int SELECTED_CARD_INFO_LIST_FIELD_NUMBER = 9;
-    private java.util.List<emu.grasscutter.net.proto.ChessCardInfoOuterClass.ChessCardInfo> selectedCardInfoList_;
-    /**
-     * <code>repeated .ChessCardInfo selected_card_info_list = 9;</code>
-     */
-    @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.ChessCardInfoOuterClass.ChessCardInfo> getSelectedCardInfoListList() {
-      return selectedCardInfoList_;
-    }
-    /**
-     * <code>repeated .ChessCardInfo selected_card_info_list = 9;</code>
-     */
-    @java.lang.Override
-    public java.util.List<? extends emu.grasscutter.net.proto.ChessCardInfoOuterClass.ChessCardInfoOrBuilder> 
-        getSelectedCardInfoListOrBuilderList() {
-      return selectedCardInfoList_;
-    }
-    /**
-     * <code>repeated .ChessCardInfo selected_card_info_list = 9;</code>
-     */
-    @java.lang.Override
-    public int getSelectedCardInfoListCount() {
-      return selectedCardInfoList_.size();
-    }
-    /**
-     * <code>repeated .ChessCardInfo selected_card_info_list = 9;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.ChessCardInfoOuterClass.ChessCardInfo getSelectedCardInfoList(int index) {
-      return selectedCardInfoList_.get(index);
-    }
-    /**
-     * <code>repeated .ChessCardInfo selected_card_info_list = 9;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.ChessCardInfoOuterClass.ChessCardInfoOrBuilder getSelectedCardInfoListOrBuilder(
-        int index) {
-      return selectedCardInfoList_.get(index);
-    }
-
-    public static final int MYSTERY_INFO_FIELD_NUMBER = 1;
+    public static final int MYSTERY_INFO_FIELD_NUMBER = 6;
     private emu.grasscutter.net.proto.ChessMysteryInfoOuterClass.ChessMysteryInfo mysteryInfo_;
     /**
-     * <code>.ChessMysteryInfo mystery_info = 1;</code>
+     * <code>.ChessMysteryInfo mystery_info = 6;</code>
      * @return Whether the mysteryInfo field is set.
      */
     @java.lang.Override
@@ -407,7 +339,7 @@ public final class InBattleChessInfoOuterClass {
       return mysteryInfo_ != null;
     }
     /**
-     * <code>.ChessMysteryInfo mystery_info = 1;</code>
+     * <code>.ChessMysteryInfo mystery_info = 6;</code>
      * @return The mysteryInfo.
      */
     @java.lang.Override
@@ -415,14 +347,14 @@ public final class InBattleChessInfoOuterClass {
       return mysteryInfo_ == null ? emu.grasscutter.net.proto.ChessMysteryInfoOuterClass.ChessMysteryInfo.getDefaultInstance() : mysteryInfo_;
     }
     /**
-     * <code>.ChessMysteryInfo mystery_info = 1;</code>
+     * <code>.ChessMysteryInfo mystery_info = 6;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.ChessMysteryInfoOuterClass.ChessMysteryInfoOrBuilder getMysteryInfoOrBuilder() {
       return getMysteryInfo();
     }
 
-    public static final int PLAYER_INFO_MAP_FIELD_NUMBER = 8;
+    public static final int PLAYER_INFO_MAP_FIELD_NUMBER = 15;
     private static final class PlayerInfoMapDefaultEntryHolder {
       static final com.google.protobuf.MapEntry<
           java.lang.Integer, emu.grasscutter.net.proto.ChessPlayerInfoOuterClass.ChessPlayerInfo> defaultEntry =
@@ -449,7 +381,7 @@ public final class InBattleChessInfoOuterClass {
       return internalGetPlayerInfoMap().getMap().size();
     }
     /**
-     * <code>map&lt;uint32, .ChessPlayerInfo&gt; player_info_map = 8;</code>
+     * <code>map&lt;uint32, .ChessPlayerInfo&gt; player_info_map = 15;</code>
      */
 
     @java.lang.Override
@@ -467,7 +399,7 @@ public final class InBattleChessInfoOuterClass {
       return getPlayerInfoMapMap();
     }
     /**
-     * <code>map&lt;uint32, .ChessPlayerInfo&gt; player_info_map = 8;</code>
+     * <code>map&lt;uint32, .ChessPlayerInfo&gt; player_info_map = 15;</code>
      */
     @java.lang.Override
 
@@ -475,7 +407,7 @@ public final class InBattleChessInfoOuterClass {
       return internalGetPlayerInfoMap().getMap();
     }
     /**
-     * <code>map&lt;uint32, .ChessPlayerInfo&gt; player_info_map = 8;</code>
+     * <code>map&lt;uint32, .ChessPlayerInfo&gt; player_info_map = 15;</code>
      */
     @java.lang.Override
 
@@ -488,7 +420,7 @@ public final class InBattleChessInfoOuterClass {
       return map.containsKey(key) ? map.get(key) : defaultValue;
     }
     /**
-     * <code>map&lt;uint32, .ChessPlayerInfo&gt; player_info_map = 8;</code>
+     * <code>map&lt;uint32, .ChessPlayerInfo&gt; player_info_map = 15;</code>
      */
     @java.lang.Override
 
@@ -503,10 +435,10 @@ public final class InBattleChessInfoOuterClass {
       return map.get(key);
     }
 
-    public static final int MAX_ESCAPABLE_MONSTERS_FIELD_NUMBER = 6;
+    public static final int MAX_ESCAPABLE_MONSTERS_FIELD_NUMBER = 7;
     private int maxEscapableMonsters_;
     /**
-     * <code>uint32 max_escapable_monsters = 6;</code>
+     * <code>uint32 max_escapable_monsters = 7;</code>
      * @return The maxEscapableMonsters.
      */
     @java.lang.Override
@@ -514,10 +446,10 @@ public final class InBattleChessInfoOuterClass {
       return maxEscapableMonsters_;
     }
 
-    public static final int ESCAPED_MONSTERS_FIELD_NUMBER = 12;
+    public static final int ESCAPED_MONSTERS_FIELD_NUMBER = 11;
     private int escapedMonsters_;
     /**
-     * <code>uint32 escaped_monsters = 12;</code>
+     * <code>uint32 escaped_monsters = 11;</code>
      * @return The escapedMonsters.
      */
     @java.lang.Override
@@ -525,10 +457,50 @@ public final class InBattleChessInfoOuterClass {
       return escapedMonsters_;
     }
 
-    public static final int TOTAL_ROUND_FIELD_NUMBER = 14;
+    public static final int SELECTED_CARD_INFO_LIST_FIELD_NUMBER = 4;
+    private java.util.List<emu.grasscutter.net.proto.ChessCardInfoOuterClass.ChessCardInfo> selectedCardInfoList_;
+    /**
+     * <code>repeated .ChessCardInfo selected_card_info_list = 4;</code>
+     */
+    @java.lang.Override
+    public java.util.List<emu.grasscutter.net.proto.ChessCardInfoOuterClass.ChessCardInfo> getSelectedCardInfoListList() {
+      return selectedCardInfoList_;
+    }
+    /**
+     * <code>repeated .ChessCardInfo selected_card_info_list = 4;</code>
+     */
+    @java.lang.Override
+    public java.util.List<? extends emu.grasscutter.net.proto.ChessCardInfoOuterClass.ChessCardInfoOrBuilder> 
+        getSelectedCardInfoListOrBuilderList() {
+      return selectedCardInfoList_;
+    }
+    /**
+     * <code>repeated .ChessCardInfo selected_card_info_list = 4;</code>
+     */
+    @java.lang.Override
+    public int getSelectedCardInfoListCount() {
+      return selectedCardInfoList_.size();
+    }
+    /**
+     * <code>repeated .ChessCardInfo selected_card_info_list = 4;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.ChessCardInfoOuterClass.ChessCardInfo getSelectedCardInfoList(int index) {
+      return selectedCardInfoList_.get(index);
+    }
+    /**
+     * <code>repeated .ChessCardInfo selected_card_info_list = 4;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.ChessCardInfoOuterClass.ChessCardInfoOrBuilder getSelectedCardInfoListOrBuilder(
+        int index) {
+      return selectedCardInfoList_.get(index);
+    }
+
+    public static final int TOTAL_ROUND_FIELD_NUMBER = 13;
     private int totalRound_;
     /**
-     * <code>uint32 total_round = 14;</code>
+     * <code>uint32 total_round = 13;</code>
      * @return The totalRound.
      */
     @java.lang.Override
@@ -536,16 +508,44 @@ public final class InBattleChessInfoOuterClass {
       return totalRound_;
     }
 
-    public static final int LEFT_MONSTERS_FIELD_NUMBER = 15;
+    public static final int LEFT_MONSTERS_FIELD_NUMBER = 5;
     private int leftMonsters_;
     /**
-     * <code>uint32 left_monsters = 15;</code>
+     * <code>uint32 left_monsters = 5;</code>
      * @return The leftMonsters.
      */
     @java.lang.Override
     public int getLeftMonsters() {
       return leftMonsters_;
     }
+
+    public static final int BAN_CARD_TAG_LIST_FIELD_NUMBER = 1;
+    private com.google.protobuf.Internal.IntList banCardTagList_;
+    /**
+     * <code>repeated uint32 ban_card_tag_list = 1;</code>
+     * @return A list containing the banCardTagList.
+     */
+    @java.lang.Override
+    public java.util.List<java.lang.Integer>
+        getBanCardTagListList() {
+      return banCardTagList_;
+    }
+    /**
+     * <code>repeated uint32 ban_card_tag_list = 1;</code>
+     * @return The count of banCardTagList.
+     */
+    public int getBanCardTagListCount() {
+      return banCardTagList_.size();
+    }
+    /**
+     * <code>repeated uint32 ban_card_tag_list = 1;</code>
+     * @param index The index of the element to return.
+     * @return The banCardTagList at the given index.
+     */
+    public int getBanCardTagList(int index) {
+      return banCardTagList_.getInt(index);
+    }
+    private int banCardTagListMemoizedSerializedSize = -1;
 
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
@@ -562,40 +562,40 @@ public final class InBattleChessInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      if (mysteryInfo_ != null) {
-        output.writeMessage(1, getMysteryInfo());
-      }
       if (getBanCardTagListList().size() > 0) {
-        output.writeUInt32NoTag(18);
+        output.writeUInt32NoTag(10);
         output.writeUInt32NoTag(banCardTagListMemoizedSerializedSize);
       }
       for (int i = 0; i < banCardTagList_.size(); i++) {
         output.writeUInt32NoTag(banCardTagList_.getInt(i));
       }
       if (round_ != 0) {
-        output.writeUInt32(4, round_);
+        output.writeUInt32(2, round_);
+      }
+      for (int i = 0; i < selectedCardInfoList_.size(); i++) {
+        output.writeMessage(4, selectedCardInfoList_.get(i));
+      }
+      if (leftMonsters_ != 0) {
+        output.writeUInt32(5, leftMonsters_);
+      }
+      if (mysteryInfo_ != null) {
+        output.writeMessage(6, getMysteryInfo());
       }
       if (maxEscapableMonsters_ != 0) {
-        output.writeUInt32(6, maxEscapableMonsters_);
+        output.writeUInt32(7, maxEscapableMonsters_);
+      }
+      if (escapedMonsters_ != 0) {
+        output.writeUInt32(11, escapedMonsters_);
+      }
+      if (totalRound_ != 0) {
+        output.writeUInt32(13, totalRound_);
       }
       com.google.protobuf.GeneratedMessageV3
         .serializeIntegerMapTo(
           output,
           internalGetPlayerInfoMap(),
           PlayerInfoMapDefaultEntryHolder.defaultEntry,
-          8);
-      for (int i = 0; i < selectedCardInfoList_.size(); i++) {
-        output.writeMessage(9, selectedCardInfoList_.get(i));
-      }
-      if (escapedMonsters_ != 0) {
-        output.writeUInt32(12, escapedMonsters_);
-      }
-      if (totalRound_ != 0) {
-        output.writeUInt32(14, totalRound_);
-      }
-      if (leftMonsters_ != 0) {
-        output.writeUInt32(15, leftMonsters_);
-      }
+          15);
       unknownFields.writeTo(output);
     }
 
@@ -605,10 +605,6 @@ public final class InBattleChessInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (mysteryInfo_ != null) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(1, getMysteryInfo());
-      }
       {
         int dataSize = 0;
         for (int i = 0; i < banCardTagList_.size(); i++) {
@@ -625,11 +621,31 @@ public final class InBattleChessInfoOuterClass {
       }
       if (round_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, round_);
+          .computeUInt32Size(2, round_);
+      }
+      for (int i = 0; i < selectedCardInfoList_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(4, selectedCardInfoList_.get(i));
+      }
+      if (leftMonsters_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(5, leftMonsters_);
+      }
+      if (mysteryInfo_ != null) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(6, getMysteryInfo());
       }
       if (maxEscapableMonsters_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, maxEscapableMonsters_);
+          .computeUInt32Size(7, maxEscapableMonsters_);
+      }
+      if (escapedMonsters_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(11, escapedMonsters_);
+      }
+      if (totalRound_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(13, totalRound_);
       }
       for (java.util.Map.Entry<java.lang.Integer, emu.grasscutter.net.proto.ChessPlayerInfoOuterClass.ChessPlayerInfo> entry
            : internalGetPlayerInfoMap().getMap().entrySet()) {
@@ -639,23 +655,7 @@ public final class InBattleChessInfoOuterClass {
             .setValue(entry.getValue())
             .build();
         size += com.google.protobuf.CodedOutputStream
-            .computeMessageSize(8, playerInfoMap__);
-      }
-      for (int i = 0; i < selectedCardInfoList_.size(); i++) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(9, selectedCardInfoList_.get(i));
-      }
-      if (escapedMonsters_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, escapedMonsters_);
-      }
-      if (totalRound_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, totalRound_);
-      }
-      if (leftMonsters_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, leftMonsters_);
+            .computeMessageSize(15, playerInfoMap__);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -672,12 +672,8 @@ public final class InBattleChessInfoOuterClass {
       }
       emu.grasscutter.net.proto.InBattleChessInfoOuterClass.InBattleChessInfo other = (emu.grasscutter.net.proto.InBattleChessInfoOuterClass.InBattleChessInfo) obj;
 
-      if (!getBanCardTagListList()
-          .equals(other.getBanCardTagListList())) return false;
       if (getRound()
           != other.getRound()) return false;
-      if (!getSelectedCardInfoListList()
-          .equals(other.getSelectedCardInfoListList())) return false;
       if (hasMysteryInfo() != other.hasMysteryInfo()) return false;
       if (hasMysteryInfo()) {
         if (!getMysteryInfo()
@@ -689,10 +685,14 @@ public final class InBattleChessInfoOuterClass {
           != other.getMaxEscapableMonsters()) return false;
       if (getEscapedMonsters()
           != other.getEscapedMonsters()) return false;
+      if (!getSelectedCardInfoListList()
+          .equals(other.getSelectedCardInfoListList())) return false;
       if (getTotalRound()
           != other.getTotalRound()) return false;
       if (getLeftMonsters()
           != other.getLeftMonsters()) return false;
+      if (!getBanCardTagListList()
+          .equals(other.getBanCardTagListList())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -704,16 +704,8 @@ public final class InBattleChessInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (getBanCardTagListCount() > 0) {
-        hash = (37 * hash) + BAN_CARD_TAG_LIST_FIELD_NUMBER;
-        hash = (53 * hash) + getBanCardTagListList().hashCode();
-      }
       hash = (37 * hash) + ROUND_FIELD_NUMBER;
       hash = (53 * hash) + getRound();
-      if (getSelectedCardInfoListCount() > 0) {
-        hash = (37 * hash) + SELECTED_CARD_INFO_LIST_FIELD_NUMBER;
-        hash = (53 * hash) + getSelectedCardInfoListList().hashCode();
-      }
       if (hasMysteryInfo()) {
         hash = (37 * hash) + MYSTERY_INFO_FIELD_NUMBER;
         hash = (53 * hash) + getMysteryInfo().hashCode();
@@ -726,10 +718,18 @@ public final class InBattleChessInfoOuterClass {
       hash = (53 * hash) + getMaxEscapableMonsters();
       hash = (37 * hash) + ESCAPED_MONSTERS_FIELD_NUMBER;
       hash = (53 * hash) + getEscapedMonsters();
+      if (getSelectedCardInfoListCount() > 0) {
+        hash = (37 * hash) + SELECTED_CARD_INFO_LIST_FIELD_NUMBER;
+        hash = (53 * hash) + getSelectedCardInfoListList().hashCode();
+      }
       hash = (37 * hash) + TOTAL_ROUND_FIELD_NUMBER;
       hash = (53 * hash) + getTotalRound();
       hash = (37 * hash) + LEFT_MONSTERS_FIELD_NUMBER;
       hash = (53 * hash) + getLeftMonsters();
+      if (getBanCardTagListCount() > 0) {
+        hash = (37 * hash) + BAN_CARD_TAG_LIST_FIELD_NUMBER;
+        hash = (53 * hash) + getBanCardTagListList().hashCode();
+      }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -841,7 +841,7 @@ public final class InBattleChessInfoOuterClass {
       protected com.google.protobuf.MapField internalGetMapField(
           int number) {
         switch (number) {
-          case 8:
+          case 15:
             return internalGetPlayerInfoMap();
           default:
             throw new RuntimeException(
@@ -852,7 +852,7 @@ public final class InBattleChessInfoOuterClass {
       protected com.google.protobuf.MapField internalGetMutableMapField(
           int number) {
         switch (number) {
-          case 8:
+          case 15:
             return internalGetMutablePlayerInfoMap();
           default:
             throw new RuntimeException(
@@ -886,16 +886,8 @@ public final class InBattleChessInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        banCardTagList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000001);
         round_ = 0;
 
-        if (selectedCardInfoListBuilder_ == null) {
-          selectedCardInfoList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000002);
-        } else {
-          selectedCardInfoListBuilder_.clear();
-        }
         if (mysteryInfoBuilder_ == null) {
           mysteryInfo_ = null;
         } else {
@@ -907,10 +899,18 @@ public final class InBattleChessInfoOuterClass {
 
         escapedMonsters_ = 0;
 
+        if (selectedCardInfoListBuilder_ == null) {
+          selectedCardInfoList_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000002);
+        } else {
+          selectedCardInfoListBuilder_.clear();
+        }
         totalRound_ = 0;
 
         leftMonsters_ = 0;
 
+        banCardTagList_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000004);
         return this;
       }
 
@@ -938,21 +938,7 @@ public final class InBattleChessInfoOuterClass {
       public emu.grasscutter.net.proto.InBattleChessInfoOuterClass.InBattleChessInfo buildPartial() {
         emu.grasscutter.net.proto.InBattleChessInfoOuterClass.InBattleChessInfo result = new emu.grasscutter.net.proto.InBattleChessInfoOuterClass.InBattleChessInfo(this);
         int from_bitField0_ = bitField0_;
-        if (((bitField0_ & 0x00000001) != 0)) {
-          banCardTagList_.makeImmutable();
-          bitField0_ = (bitField0_ & ~0x00000001);
-        }
-        result.banCardTagList_ = banCardTagList_;
         result.round_ = round_;
-        if (selectedCardInfoListBuilder_ == null) {
-          if (((bitField0_ & 0x00000002) != 0)) {
-            selectedCardInfoList_ = java.util.Collections.unmodifiableList(selectedCardInfoList_);
-            bitField0_ = (bitField0_ & ~0x00000002);
-          }
-          result.selectedCardInfoList_ = selectedCardInfoList_;
-        } else {
-          result.selectedCardInfoList_ = selectedCardInfoListBuilder_.build();
-        }
         if (mysteryInfoBuilder_ == null) {
           result.mysteryInfo_ = mysteryInfo_;
         } else {
@@ -962,8 +948,22 @@ public final class InBattleChessInfoOuterClass {
         result.playerInfoMap_.makeImmutable();
         result.maxEscapableMonsters_ = maxEscapableMonsters_;
         result.escapedMonsters_ = escapedMonsters_;
+        if (selectedCardInfoListBuilder_ == null) {
+          if (((bitField0_ & 0x00000002) != 0)) {
+            selectedCardInfoList_ = java.util.Collections.unmodifiableList(selectedCardInfoList_);
+            bitField0_ = (bitField0_ & ~0x00000002);
+          }
+          result.selectedCardInfoList_ = selectedCardInfoList_;
+        } else {
+          result.selectedCardInfoList_ = selectedCardInfoListBuilder_.build();
+        }
         result.totalRound_ = totalRound_;
         result.leftMonsters_ = leftMonsters_;
+        if (((bitField0_ & 0x00000004) != 0)) {
+          banCardTagList_.makeImmutable();
+          bitField0_ = (bitField0_ & ~0x00000004);
+        }
+        result.banCardTagList_ = banCardTagList_;
         onBuilt();
         return result;
       }
@@ -1012,18 +1012,19 @@ public final class InBattleChessInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.InBattleChessInfoOuterClass.InBattleChessInfo other) {
         if (other == emu.grasscutter.net.proto.InBattleChessInfoOuterClass.InBattleChessInfo.getDefaultInstance()) return this;
-        if (!other.banCardTagList_.isEmpty()) {
-          if (banCardTagList_.isEmpty()) {
-            banCardTagList_ = other.banCardTagList_;
-            bitField0_ = (bitField0_ & ~0x00000001);
-          } else {
-            ensureBanCardTagListIsMutable();
-            banCardTagList_.addAll(other.banCardTagList_);
-          }
-          onChanged();
-        }
         if (other.getRound() != 0) {
           setRound(other.getRound());
+        }
+        if (other.hasMysteryInfo()) {
+          mergeMysteryInfo(other.getMysteryInfo());
+        }
+        internalGetMutablePlayerInfoMap().mergeFrom(
+            other.internalGetPlayerInfoMap());
+        if (other.getMaxEscapableMonsters() != 0) {
+          setMaxEscapableMonsters(other.getMaxEscapableMonsters());
+        }
+        if (other.getEscapedMonsters() != 0) {
+          setEscapedMonsters(other.getEscapedMonsters());
         }
         if (selectedCardInfoListBuilder_ == null) {
           if (!other.selectedCardInfoList_.isEmpty()) {
@@ -1051,22 +1052,21 @@ public final class InBattleChessInfoOuterClass {
             }
           }
         }
-        if (other.hasMysteryInfo()) {
-          mergeMysteryInfo(other.getMysteryInfo());
-        }
-        internalGetMutablePlayerInfoMap().mergeFrom(
-            other.internalGetPlayerInfoMap());
-        if (other.getMaxEscapableMonsters() != 0) {
-          setMaxEscapableMonsters(other.getMaxEscapableMonsters());
-        }
-        if (other.getEscapedMonsters() != 0) {
-          setEscapedMonsters(other.getEscapedMonsters());
-        }
         if (other.getTotalRound() != 0) {
           setTotalRound(other.getTotalRound());
         }
         if (other.getLeftMonsters() != 0) {
           setLeftMonsters(other.getLeftMonsters());
+        }
+        if (!other.banCardTagList_.isEmpty()) {
+          if (banCardTagList_.isEmpty()) {
+            banCardTagList_ = other.banCardTagList_;
+            bitField0_ = (bitField0_ & ~0x00000004);
+          } else {
+            ensureBanCardTagListIsMutable();
+            banCardTagList_.addAll(other.banCardTagList_);
+          }
+          onChanged();
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -1098,88 +1098,9 @@ public final class InBattleChessInfoOuterClass {
       }
       private int bitField0_;
 
-      private com.google.protobuf.Internal.IntList banCardTagList_ = emptyIntList();
-      private void ensureBanCardTagListIsMutable() {
-        if (!((bitField0_ & 0x00000001) != 0)) {
-          banCardTagList_ = mutableCopy(banCardTagList_);
-          bitField0_ |= 0x00000001;
-         }
-      }
-      /**
-       * <code>repeated uint32 ban_card_tag_list = 2;</code>
-       * @return A list containing the banCardTagList.
-       */
-      public java.util.List<java.lang.Integer>
-          getBanCardTagListList() {
-        return ((bitField0_ & 0x00000001) != 0) ?
-                 java.util.Collections.unmodifiableList(banCardTagList_) : banCardTagList_;
-      }
-      /**
-       * <code>repeated uint32 ban_card_tag_list = 2;</code>
-       * @return The count of banCardTagList.
-       */
-      public int getBanCardTagListCount() {
-        return banCardTagList_.size();
-      }
-      /**
-       * <code>repeated uint32 ban_card_tag_list = 2;</code>
-       * @param index The index of the element to return.
-       * @return The banCardTagList at the given index.
-       */
-      public int getBanCardTagList(int index) {
-        return banCardTagList_.getInt(index);
-      }
-      /**
-       * <code>repeated uint32 ban_card_tag_list = 2;</code>
-       * @param index The index to set the value at.
-       * @param value The banCardTagList to set.
-       * @return This builder for chaining.
-       */
-      public Builder setBanCardTagList(
-          int index, int value) {
-        ensureBanCardTagListIsMutable();
-        banCardTagList_.setInt(index, value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 ban_card_tag_list = 2;</code>
-       * @param value The banCardTagList to add.
-       * @return This builder for chaining.
-       */
-      public Builder addBanCardTagList(int value) {
-        ensureBanCardTagListIsMutable();
-        banCardTagList_.addInt(value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 ban_card_tag_list = 2;</code>
-       * @param values The banCardTagList to add.
-       * @return This builder for chaining.
-       */
-      public Builder addAllBanCardTagList(
-          java.lang.Iterable<? extends java.lang.Integer> values) {
-        ensureBanCardTagListIsMutable();
-        com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, banCardTagList_);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 ban_card_tag_list = 2;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearBanCardTagList() {
-        banCardTagList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000001);
-        onChanged();
-        return this;
-      }
-
       private int round_ ;
       /**
-       * <code>uint32 round = 4;</code>
+       * <code>uint32 round = 2;</code>
        * @return The round.
        */
       @java.lang.Override
@@ -1187,7 +1108,7 @@ public final class InBattleChessInfoOuterClass {
         return round_;
       }
       /**
-       * <code>uint32 round = 4;</code>
+       * <code>uint32 round = 2;</code>
        * @param value The round to set.
        * @return This builder for chaining.
        */
@@ -1198,7 +1119,7 @@ public final class InBattleChessInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 round = 4;</code>
+       * <code>uint32 round = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearRound() {
@@ -1208,258 +1129,18 @@ public final class InBattleChessInfoOuterClass {
         return this;
       }
 
-      private java.util.List<emu.grasscutter.net.proto.ChessCardInfoOuterClass.ChessCardInfo> selectedCardInfoList_ =
-        java.util.Collections.emptyList();
-      private void ensureSelectedCardInfoListIsMutable() {
-        if (!((bitField0_ & 0x00000002) != 0)) {
-          selectedCardInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.ChessCardInfoOuterClass.ChessCardInfo>(selectedCardInfoList_);
-          bitField0_ |= 0x00000002;
-         }
-      }
-
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.ChessCardInfoOuterClass.ChessCardInfo, emu.grasscutter.net.proto.ChessCardInfoOuterClass.ChessCardInfo.Builder, emu.grasscutter.net.proto.ChessCardInfoOuterClass.ChessCardInfoOrBuilder> selectedCardInfoListBuilder_;
-
-      /**
-       * <code>repeated .ChessCardInfo selected_card_info_list = 9;</code>
-       */
-      public java.util.List<emu.grasscutter.net.proto.ChessCardInfoOuterClass.ChessCardInfo> getSelectedCardInfoListList() {
-        if (selectedCardInfoListBuilder_ == null) {
-          return java.util.Collections.unmodifiableList(selectedCardInfoList_);
-        } else {
-          return selectedCardInfoListBuilder_.getMessageList();
-        }
-      }
-      /**
-       * <code>repeated .ChessCardInfo selected_card_info_list = 9;</code>
-       */
-      public int getSelectedCardInfoListCount() {
-        if (selectedCardInfoListBuilder_ == null) {
-          return selectedCardInfoList_.size();
-        } else {
-          return selectedCardInfoListBuilder_.getCount();
-        }
-      }
-      /**
-       * <code>repeated .ChessCardInfo selected_card_info_list = 9;</code>
-       */
-      public emu.grasscutter.net.proto.ChessCardInfoOuterClass.ChessCardInfo getSelectedCardInfoList(int index) {
-        if (selectedCardInfoListBuilder_ == null) {
-          return selectedCardInfoList_.get(index);
-        } else {
-          return selectedCardInfoListBuilder_.getMessage(index);
-        }
-      }
-      /**
-       * <code>repeated .ChessCardInfo selected_card_info_list = 9;</code>
-       */
-      public Builder setSelectedCardInfoList(
-          int index, emu.grasscutter.net.proto.ChessCardInfoOuterClass.ChessCardInfo value) {
-        if (selectedCardInfoListBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureSelectedCardInfoListIsMutable();
-          selectedCardInfoList_.set(index, value);
-          onChanged();
-        } else {
-          selectedCardInfoListBuilder_.setMessage(index, value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .ChessCardInfo selected_card_info_list = 9;</code>
-       */
-      public Builder setSelectedCardInfoList(
-          int index, emu.grasscutter.net.proto.ChessCardInfoOuterClass.ChessCardInfo.Builder builderForValue) {
-        if (selectedCardInfoListBuilder_ == null) {
-          ensureSelectedCardInfoListIsMutable();
-          selectedCardInfoList_.set(index, builderForValue.build());
-          onChanged();
-        } else {
-          selectedCardInfoListBuilder_.setMessage(index, builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .ChessCardInfo selected_card_info_list = 9;</code>
-       */
-      public Builder addSelectedCardInfoList(emu.grasscutter.net.proto.ChessCardInfoOuterClass.ChessCardInfo value) {
-        if (selectedCardInfoListBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureSelectedCardInfoListIsMutable();
-          selectedCardInfoList_.add(value);
-          onChanged();
-        } else {
-          selectedCardInfoListBuilder_.addMessage(value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .ChessCardInfo selected_card_info_list = 9;</code>
-       */
-      public Builder addSelectedCardInfoList(
-          int index, emu.grasscutter.net.proto.ChessCardInfoOuterClass.ChessCardInfo value) {
-        if (selectedCardInfoListBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureSelectedCardInfoListIsMutable();
-          selectedCardInfoList_.add(index, value);
-          onChanged();
-        } else {
-          selectedCardInfoListBuilder_.addMessage(index, value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .ChessCardInfo selected_card_info_list = 9;</code>
-       */
-      public Builder addSelectedCardInfoList(
-          emu.grasscutter.net.proto.ChessCardInfoOuterClass.ChessCardInfo.Builder builderForValue) {
-        if (selectedCardInfoListBuilder_ == null) {
-          ensureSelectedCardInfoListIsMutable();
-          selectedCardInfoList_.add(builderForValue.build());
-          onChanged();
-        } else {
-          selectedCardInfoListBuilder_.addMessage(builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .ChessCardInfo selected_card_info_list = 9;</code>
-       */
-      public Builder addSelectedCardInfoList(
-          int index, emu.grasscutter.net.proto.ChessCardInfoOuterClass.ChessCardInfo.Builder builderForValue) {
-        if (selectedCardInfoListBuilder_ == null) {
-          ensureSelectedCardInfoListIsMutable();
-          selectedCardInfoList_.add(index, builderForValue.build());
-          onChanged();
-        } else {
-          selectedCardInfoListBuilder_.addMessage(index, builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .ChessCardInfo selected_card_info_list = 9;</code>
-       */
-      public Builder addAllSelectedCardInfoList(
-          java.lang.Iterable<? extends emu.grasscutter.net.proto.ChessCardInfoOuterClass.ChessCardInfo> values) {
-        if (selectedCardInfoListBuilder_ == null) {
-          ensureSelectedCardInfoListIsMutable();
-          com.google.protobuf.AbstractMessageLite.Builder.addAll(
-              values, selectedCardInfoList_);
-          onChanged();
-        } else {
-          selectedCardInfoListBuilder_.addAllMessages(values);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .ChessCardInfo selected_card_info_list = 9;</code>
-       */
-      public Builder clearSelectedCardInfoList() {
-        if (selectedCardInfoListBuilder_ == null) {
-          selectedCardInfoList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000002);
-          onChanged();
-        } else {
-          selectedCardInfoListBuilder_.clear();
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .ChessCardInfo selected_card_info_list = 9;</code>
-       */
-      public Builder removeSelectedCardInfoList(int index) {
-        if (selectedCardInfoListBuilder_ == null) {
-          ensureSelectedCardInfoListIsMutable();
-          selectedCardInfoList_.remove(index);
-          onChanged();
-        } else {
-          selectedCardInfoListBuilder_.remove(index);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .ChessCardInfo selected_card_info_list = 9;</code>
-       */
-      public emu.grasscutter.net.proto.ChessCardInfoOuterClass.ChessCardInfo.Builder getSelectedCardInfoListBuilder(
-          int index) {
-        return getSelectedCardInfoListFieldBuilder().getBuilder(index);
-      }
-      /**
-       * <code>repeated .ChessCardInfo selected_card_info_list = 9;</code>
-       */
-      public emu.grasscutter.net.proto.ChessCardInfoOuterClass.ChessCardInfoOrBuilder getSelectedCardInfoListOrBuilder(
-          int index) {
-        if (selectedCardInfoListBuilder_ == null) {
-          return selectedCardInfoList_.get(index);  } else {
-          return selectedCardInfoListBuilder_.getMessageOrBuilder(index);
-        }
-      }
-      /**
-       * <code>repeated .ChessCardInfo selected_card_info_list = 9;</code>
-       */
-      public java.util.List<? extends emu.grasscutter.net.proto.ChessCardInfoOuterClass.ChessCardInfoOrBuilder> 
-           getSelectedCardInfoListOrBuilderList() {
-        if (selectedCardInfoListBuilder_ != null) {
-          return selectedCardInfoListBuilder_.getMessageOrBuilderList();
-        } else {
-          return java.util.Collections.unmodifiableList(selectedCardInfoList_);
-        }
-      }
-      /**
-       * <code>repeated .ChessCardInfo selected_card_info_list = 9;</code>
-       */
-      public emu.grasscutter.net.proto.ChessCardInfoOuterClass.ChessCardInfo.Builder addSelectedCardInfoListBuilder() {
-        return getSelectedCardInfoListFieldBuilder().addBuilder(
-            emu.grasscutter.net.proto.ChessCardInfoOuterClass.ChessCardInfo.getDefaultInstance());
-      }
-      /**
-       * <code>repeated .ChessCardInfo selected_card_info_list = 9;</code>
-       */
-      public emu.grasscutter.net.proto.ChessCardInfoOuterClass.ChessCardInfo.Builder addSelectedCardInfoListBuilder(
-          int index) {
-        return getSelectedCardInfoListFieldBuilder().addBuilder(
-            index, emu.grasscutter.net.proto.ChessCardInfoOuterClass.ChessCardInfo.getDefaultInstance());
-      }
-      /**
-       * <code>repeated .ChessCardInfo selected_card_info_list = 9;</code>
-       */
-      public java.util.List<emu.grasscutter.net.proto.ChessCardInfoOuterClass.ChessCardInfo.Builder> 
-           getSelectedCardInfoListBuilderList() {
-        return getSelectedCardInfoListFieldBuilder().getBuilderList();
-      }
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.ChessCardInfoOuterClass.ChessCardInfo, emu.grasscutter.net.proto.ChessCardInfoOuterClass.ChessCardInfo.Builder, emu.grasscutter.net.proto.ChessCardInfoOuterClass.ChessCardInfoOrBuilder> 
-          getSelectedCardInfoListFieldBuilder() {
-        if (selectedCardInfoListBuilder_ == null) {
-          selectedCardInfoListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              emu.grasscutter.net.proto.ChessCardInfoOuterClass.ChessCardInfo, emu.grasscutter.net.proto.ChessCardInfoOuterClass.ChessCardInfo.Builder, emu.grasscutter.net.proto.ChessCardInfoOuterClass.ChessCardInfoOrBuilder>(
-                  selectedCardInfoList_,
-                  ((bitField0_ & 0x00000002) != 0),
-                  getParentForChildren(),
-                  isClean());
-          selectedCardInfoList_ = null;
-        }
-        return selectedCardInfoListBuilder_;
-      }
-
       private emu.grasscutter.net.proto.ChessMysteryInfoOuterClass.ChessMysteryInfo mysteryInfo_;
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.ChessMysteryInfoOuterClass.ChessMysteryInfo, emu.grasscutter.net.proto.ChessMysteryInfoOuterClass.ChessMysteryInfo.Builder, emu.grasscutter.net.proto.ChessMysteryInfoOuterClass.ChessMysteryInfoOrBuilder> mysteryInfoBuilder_;
       /**
-       * <code>.ChessMysteryInfo mystery_info = 1;</code>
+       * <code>.ChessMysteryInfo mystery_info = 6;</code>
        * @return Whether the mysteryInfo field is set.
        */
       public boolean hasMysteryInfo() {
         return mysteryInfoBuilder_ != null || mysteryInfo_ != null;
       }
       /**
-       * <code>.ChessMysteryInfo mystery_info = 1;</code>
+       * <code>.ChessMysteryInfo mystery_info = 6;</code>
        * @return The mysteryInfo.
        */
       public emu.grasscutter.net.proto.ChessMysteryInfoOuterClass.ChessMysteryInfo getMysteryInfo() {
@@ -1470,7 +1151,7 @@ public final class InBattleChessInfoOuterClass {
         }
       }
       /**
-       * <code>.ChessMysteryInfo mystery_info = 1;</code>
+       * <code>.ChessMysteryInfo mystery_info = 6;</code>
        */
       public Builder setMysteryInfo(emu.grasscutter.net.proto.ChessMysteryInfoOuterClass.ChessMysteryInfo value) {
         if (mysteryInfoBuilder_ == null) {
@@ -1486,7 +1167,7 @@ public final class InBattleChessInfoOuterClass {
         return this;
       }
       /**
-       * <code>.ChessMysteryInfo mystery_info = 1;</code>
+       * <code>.ChessMysteryInfo mystery_info = 6;</code>
        */
       public Builder setMysteryInfo(
           emu.grasscutter.net.proto.ChessMysteryInfoOuterClass.ChessMysteryInfo.Builder builderForValue) {
@@ -1500,7 +1181,7 @@ public final class InBattleChessInfoOuterClass {
         return this;
       }
       /**
-       * <code>.ChessMysteryInfo mystery_info = 1;</code>
+       * <code>.ChessMysteryInfo mystery_info = 6;</code>
        */
       public Builder mergeMysteryInfo(emu.grasscutter.net.proto.ChessMysteryInfoOuterClass.ChessMysteryInfo value) {
         if (mysteryInfoBuilder_ == null) {
@@ -1518,7 +1199,7 @@ public final class InBattleChessInfoOuterClass {
         return this;
       }
       /**
-       * <code>.ChessMysteryInfo mystery_info = 1;</code>
+       * <code>.ChessMysteryInfo mystery_info = 6;</code>
        */
       public Builder clearMysteryInfo() {
         if (mysteryInfoBuilder_ == null) {
@@ -1532,7 +1213,7 @@ public final class InBattleChessInfoOuterClass {
         return this;
       }
       /**
-       * <code>.ChessMysteryInfo mystery_info = 1;</code>
+       * <code>.ChessMysteryInfo mystery_info = 6;</code>
        */
       public emu.grasscutter.net.proto.ChessMysteryInfoOuterClass.ChessMysteryInfo.Builder getMysteryInfoBuilder() {
         
@@ -1540,7 +1221,7 @@ public final class InBattleChessInfoOuterClass {
         return getMysteryInfoFieldBuilder().getBuilder();
       }
       /**
-       * <code>.ChessMysteryInfo mystery_info = 1;</code>
+       * <code>.ChessMysteryInfo mystery_info = 6;</code>
        */
       public emu.grasscutter.net.proto.ChessMysteryInfoOuterClass.ChessMysteryInfoOrBuilder getMysteryInfoOrBuilder() {
         if (mysteryInfoBuilder_ != null) {
@@ -1551,7 +1232,7 @@ public final class InBattleChessInfoOuterClass {
         }
       }
       /**
-       * <code>.ChessMysteryInfo mystery_info = 1;</code>
+       * <code>.ChessMysteryInfo mystery_info = 6;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.ChessMysteryInfoOuterClass.ChessMysteryInfo, emu.grasscutter.net.proto.ChessMysteryInfoOuterClass.ChessMysteryInfo.Builder, emu.grasscutter.net.proto.ChessMysteryInfoOuterClass.ChessMysteryInfoOrBuilder> 
@@ -1594,7 +1275,7 @@ public final class InBattleChessInfoOuterClass {
         return internalGetPlayerInfoMap().getMap().size();
       }
       /**
-       * <code>map&lt;uint32, .ChessPlayerInfo&gt; player_info_map = 8;</code>
+       * <code>map&lt;uint32, .ChessPlayerInfo&gt; player_info_map = 15;</code>
        */
 
       @java.lang.Override
@@ -1612,7 +1293,7 @@ public final class InBattleChessInfoOuterClass {
         return getPlayerInfoMapMap();
       }
       /**
-       * <code>map&lt;uint32, .ChessPlayerInfo&gt; player_info_map = 8;</code>
+       * <code>map&lt;uint32, .ChessPlayerInfo&gt; player_info_map = 15;</code>
        */
       @java.lang.Override
 
@@ -1620,7 +1301,7 @@ public final class InBattleChessInfoOuterClass {
         return internalGetPlayerInfoMap().getMap();
       }
       /**
-       * <code>map&lt;uint32, .ChessPlayerInfo&gt; player_info_map = 8;</code>
+       * <code>map&lt;uint32, .ChessPlayerInfo&gt; player_info_map = 15;</code>
        */
       @java.lang.Override
 
@@ -1633,7 +1314,7 @@ public final class InBattleChessInfoOuterClass {
         return map.containsKey(key) ? map.get(key) : defaultValue;
       }
       /**
-       * <code>map&lt;uint32, .ChessPlayerInfo&gt; player_info_map = 8;</code>
+       * <code>map&lt;uint32, .ChessPlayerInfo&gt; player_info_map = 15;</code>
        */
       @java.lang.Override
 
@@ -1654,7 +1335,7 @@ public final class InBattleChessInfoOuterClass {
         return this;
       }
       /**
-       * <code>map&lt;uint32, .ChessPlayerInfo&gt; player_info_map = 8;</code>
+       * <code>map&lt;uint32, .ChessPlayerInfo&gt; player_info_map = 15;</code>
        */
 
       public Builder removePlayerInfoMap(
@@ -1673,7 +1354,7 @@ public final class InBattleChessInfoOuterClass {
         return internalGetMutablePlayerInfoMap().getMutableMap();
       }
       /**
-       * <code>map&lt;uint32, .ChessPlayerInfo&gt; player_info_map = 8;</code>
+       * <code>map&lt;uint32, .ChessPlayerInfo&gt; player_info_map = 15;</code>
        */
       public Builder putPlayerInfoMap(
           int key,
@@ -1685,7 +1366,7 @@ public final class InBattleChessInfoOuterClass {
         return this;
       }
       /**
-       * <code>map&lt;uint32, .ChessPlayerInfo&gt; player_info_map = 8;</code>
+       * <code>map&lt;uint32, .ChessPlayerInfo&gt; player_info_map = 15;</code>
        */
 
       public Builder putAllPlayerInfoMap(
@@ -1697,7 +1378,7 @@ public final class InBattleChessInfoOuterClass {
 
       private int maxEscapableMonsters_ ;
       /**
-       * <code>uint32 max_escapable_monsters = 6;</code>
+       * <code>uint32 max_escapable_monsters = 7;</code>
        * @return The maxEscapableMonsters.
        */
       @java.lang.Override
@@ -1705,7 +1386,7 @@ public final class InBattleChessInfoOuterClass {
         return maxEscapableMonsters_;
       }
       /**
-       * <code>uint32 max_escapable_monsters = 6;</code>
+       * <code>uint32 max_escapable_monsters = 7;</code>
        * @param value The maxEscapableMonsters to set.
        * @return This builder for chaining.
        */
@@ -1716,7 +1397,7 @@ public final class InBattleChessInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 max_escapable_monsters = 6;</code>
+       * <code>uint32 max_escapable_monsters = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearMaxEscapableMonsters() {
@@ -1728,7 +1409,7 @@ public final class InBattleChessInfoOuterClass {
 
       private int escapedMonsters_ ;
       /**
-       * <code>uint32 escaped_monsters = 12;</code>
+       * <code>uint32 escaped_monsters = 11;</code>
        * @return The escapedMonsters.
        */
       @java.lang.Override
@@ -1736,7 +1417,7 @@ public final class InBattleChessInfoOuterClass {
         return escapedMonsters_;
       }
       /**
-       * <code>uint32 escaped_monsters = 12;</code>
+       * <code>uint32 escaped_monsters = 11;</code>
        * @param value The escapedMonsters to set.
        * @return This builder for chaining.
        */
@@ -1747,7 +1428,7 @@ public final class InBattleChessInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 escaped_monsters = 12;</code>
+       * <code>uint32 escaped_monsters = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearEscapedMonsters() {
@@ -1757,9 +1438,249 @@ public final class InBattleChessInfoOuterClass {
         return this;
       }
 
+      private java.util.List<emu.grasscutter.net.proto.ChessCardInfoOuterClass.ChessCardInfo> selectedCardInfoList_ =
+        java.util.Collections.emptyList();
+      private void ensureSelectedCardInfoListIsMutable() {
+        if (!((bitField0_ & 0x00000002) != 0)) {
+          selectedCardInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.ChessCardInfoOuterClass.ChessCardInfo>(selectedCardInfoList_);
+          bitField0_ |= 0x00000002;
+         }
+      }
+
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          emu.grasscutter.net.proto.ChessCardInfoOuterClass.ChessCardInfo, emu.grasscutter.net.proto.ChessCardInfoOuterClass.ChessCardInfo.Builder, emu.grasscutter.net.proto.ChessCardInfoOuterClass.ChessCardInfoOrBuilder> selectedCardInfoListBuilder_;
+
+      /**
+       * <code>repeated .ChessCardInfo selected_card_info_list = 4;</code>
+       */
+      public java.util.List<emu.grasscutter.net.proto.ChessCardInfoOuterClass.ChessCardInfo> getSelectedCardInfoListList() {
+        if (selectedCardInfoListBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(selectedCardInfoList_);
+        } else {
+          return selectedCardInfoListBuilder_.getMessageList();
+        }
+      }
+      /**
+       * <code>repeated .ChessCardInfo selected_card_info_list = 4;</code>
+       */
+      public int getSelectedCardInfoListCount() {
+        if (selectedCardInfoListBuilder_ == null) {
+          return selectedCardInfoList_.size();
+        } else {
+          return selectedCardInfoListBuilder_.getCount();
+        }
+      }
+      /**
+       * <code>repeated .ChessCardInfo selected_card_info_list = 4;</code>
+       */
+      public emu.grasscutter.net.proto.ChessCardInfoOuterClass.ChessCardInfo getSelectedCardInfoList(int index) {
+        if (selectedCardInfoListBuilder_ == null) {
+          return selectedCardInfoList_.get(index);
+        } else {
+          return selectedCardInfoListBuilder_.getMessage(index);
+        }
+      }
+      /**
+       * <code>repeated .ChessCardInfo selected_card_info_list = 4;</code>
+       */
+      public Builder setSelectedCardInfoList(
+          int index, emu.grasscutter.net.proto.ChessCardInfoOuterClass.ChessCardInfo value) {
+        if (selectedCardInfoListBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureSelectedCardInfoListIsMutable();
+          selectedCardInfoList_.set(index, value);
+          onChanged();
+        } else {
+          selectedCardInfoListBuilder_.setMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .ChessCardInfo selected_card_info_list = 4;</code>
+       */
+      public Builder setSelectedCardInfoList(
+          int index, emu.grasscutter.net.proto.ChessCardInfoOuterClass.ChessCardInfo.Builder builderForValue) {
+        if (selectedCardInfoListBuilder_ == null) {
+          ensureSelectedCardInfoListIsMutable();
+          selectedCardInfoList_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          selectedCardInfoListBuilder_.setMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .ChessCardInfo selected_card_info_list = 4;</code>
+       */
+      public Builder addSelectedCardInfoList(emu.grasscutter.net.proto.ChessCardInfoOuterClass.ChessCardInfo value) {
+        if (selectedCardInfoListBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureSelectedCardInfoListIsMutable();
+          selectedCardInfoList_.add(value);
+          onChanged();
+        } else {
+          selectedCardInfoListBuilder_.addMessage(value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .ChessCardInfo selected_card_info_list = 4;</code>
+       */
+      public Builder addSelectedCardInfoList(
+          int index, emu.grasscutter.net.proto.ChessCardInfoOuterClass.ChessCardInfo value) {
+        if (selectedCardInfoListBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureSelectedCardInfoListIsMutable();
+          selectedCardInfoList_.add(index, value);
+          onChanged();
+        } else {
+          selectedCardInfoListBuilder_.addMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .ChessCardInfo selected_card_info_list = 4;</code>
+       */
+      public Builder addSelectedCardInfoList(
+          emu.grasscutter.net.proto.ChessCardInfoOuterClass.ChessCardInfo.Builder builderForValue) {
+        if (selectedCardInfoListBuilder_ == null) {
+          ensureSelectedCardInfoListIsMutable();
+          selectedCardInfoList_.add(builderForValue.build());
+          onChanged();
+        } else {
+          selectedCardInfoListBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .ChessCardInfo selected_card_info_list = 4;</code>
+       */
+      public Builder addSelectedCardInfoList(
+          int index, emu.grasscutter.net.proto.ChessCardInfoOuterClass.ChessCardInfo.Builder builderForValue) {
+        if (selectedCardInfoListBuilder_ == null) {
+          ensureSelectedCardInfoListIsMutable();
+          selectedCardInfoList_.add(index, builderForValue.build());
+          onChanged();
+        } else {
+          selectedCardInfoListBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .ChessCardInfo selected_card_info_list = 4;</code>
+       */
+      public Builder addAllSelectedCardInfoList(
+          java.lang.Iterable<? extends emu.grasscutter.net.proto.ChessCardInfoOuterClass.ChessCardInfo> values) {
+        if (selectedCardInfoListBuilder_ == null) {
+          ensureSelectedCardInfoListIsMutable();
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, selectedCardInfoList_);
+          onChanged();
+        } else {
+          selectedCardInfoListBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .ChessCardInfo selected_card_info_list = 4;</code>
+       */
+      public Builder clearSelectedCardInfoList() {
+        if (selectedCardInfoListBuilder_ == null) {
+          selectedCardInfoList_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000002);
+          onChanged();
+        } else {
+          selectedCardInfoListBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .ChessCardInfo selected_card_info_list = 4;</code>
+       */
+      public Builder removeSelectedCardInfoList(int index) {
+        if (selectedCardInfoListBuilder_ == null) {
+          ensureSelectedCardInfoListIsMutable();
+          selectedCardInfoList_.remove(index);
+          onChanged();
+        } else {
+          selectedCardInfoListBuilder_.remove(index);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .ChessCardInfo selected_card_info_list = 4;</code>
+       */
+      public emu.grasscutter.net.proto.ChessCardInfoOuterClass.ChessCardInfo.Builder getSelectedCardInfoListBuilder(
+          int index) {
+        return getSelectedCardInfoListFieldBuilder().getBuilder(index);
+      }
+      /**
+       * <code>repeated .ChessCardInfo selected_card_info_list = 4;</code>
+       */
+      public emu.grasscutter.net.proto.ChessCardInfoOuterClass.ChessCardInfoOrBuilder getSelectedCardInfoListOrBuilder(
+          int index) {
+        if (selectedCardInfoListBuilder_ == null) {
+          return selectedCardInfoList_.get(index);  } else {
+          return selectedCardInfoListBuilder_.getMessageOrBuilder(index);
+        }
+      }
+      /**
+       * <code>repeated .ChessCardInfo selected_card_info_list = 4;</code>
+       */
+      public java.util.List<? extends emu.grasscutter.net.proto.ChessCardInfoOuterClass.ChessCardInfoOrBuilder> 
+           getSelectedCardInfoListOrBuilderList() {
+        if (selectedCardInfoListBuilder_ != null) {
+          return selectedCardInfoListBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(selectedCardInfoList_);
+        }
+      }
+      /**
+       * <code>repeated .ChessCardInfo selected_card_info_list = 4;</code>
+       */
+      public emu.grasscutter.net.proto.ChessCardInfoOuterClass.ChessCardInfo.Builder addSelectedCardInfoListBuilder() {
+        return getSelectedCardInfoListFieldBuilder().addBuilder(
+            emu.grasscutter.net.proto.ChessCardInfoOuterClass.ChessCardInfo.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .ChessCardInfo selected_card_info_list = 4;</code>
+       */
+      public emu.grasscutter.net.proto.ChessCardInfoOuterClass.ChessCardInfo.Builder addSelectedCardInfoListBuilder(
+          int index) {
+        return getSelectedCardInfoListFieldBuilder().addBuilder(
+            index, emu.grasscutter.net.proto.ChessCardInfoOuterClass.ChessCardInfo.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .ChessCardInfo selected_card_info_list = 4;</code>
+       */
+      public java.util.List<emu.grasscutter.net.proto.ChessCardInfoOuterClass.ChessCardInfo.Builder> 
+           getSelectedCardInfoListBuilderList() {
+        return getSelectedCardInfoListFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          emu.grasscutter.net.proto.ChessCardInfoOuterClass.ChessCardInfo, emu.grasscutter.net.proto.ChessCardInfoOuterClass.ChessCardInfo.Builder, emu.grasscutter.net.proto.ChessCardInfoOuterClass.ChessCardInfoOrBuilder> 
+          getSelectedCardInfoListFieldBuilder() {
+        if (selectedCardInfoListBuilder_ == null) {
+          selectedCardInfoListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+              emu.grasscutter.net.proto.ChessCardInfoOuterClass.ChessCardInfo, emu.grasscutter.net.proto.ChessCardInfoOuterClass.ChessCardInfo.Builder, emu.grasscutter.net.proto.ChessCardInfoOuterClass.ChessCardInfoOrBuilder>(
+                  selectedCardInfoList_,
+                  ((bitField0_ & 0x00000002) != 0),
+                  getParentForChildren(),
+                  isClean());
+          selectedCardInfoList_ = null;
+        }
+        return selectedCardInfoListBuilder_;
+      }
+
       private int totalRound_ ;
       /**
-       * <code>uint32 total_round = 14;</code>
+       * <code>uint32 total_round = 13;</code>
        * @return The totalRound.
        */
       @java.lang.Override
@@ -1767,7 +1688,7 @@ public final class InBattleChessInfoOuterClass {
         return totalRound_;
       }
       /**
-       * <code>uint32 total_round = 14;</code>
+       * <code>uint32 total_round = 13;</code>
        * @param value The totalRound to set.
        * @return This builder for chaining.
        */
@@ -1778,7 +1699,7 @@ public final class InBattleChessInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 total_round = 14;</code>
+       * <code>uint32 total_round = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearTotalRound() {
@@ -1790,7 +1711,7 @@ public final class InBattleChessInfoOuterClass {
 
       private int leftMonsters_ ;
       /**
-       * <code>uint32 left_monsters = 15;</code>
+       * <code>uint32 left_monsters = 5;</code>
        * @return The leftMonsters.
        */
       @java.lang.Override
@@ -1798,7 +1719,7 @@ public final class InBattleChessInfoOuterClass {
         return leftMonsters_;
       }
       /**
-       * <code>uint32 left_monsters = 15;</code>
+       * <code>uint32 left_monsters = 5;</code>
        * @param value The leftMonsters to set.
        * @return This builder for chaining.
        */
@@ -1809,12 +1730,91 @@ public final class InBattleChessInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 left_monsters = 15;</code>
+       * <code>uint32 left_monsters = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearLeftMonsters() {
         
         leftMonsters_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private com.google.protobuf.Internal.IntList banCardTagList_ = emptyIntList();
+      private void ensureBanCardTagListIsMutable() {
+        if (!((bitField0_ & 0x00000004) != 0)) {
+          banCardTagList_ = mutableCopy(banCardTagList_);
+          bitField0_ |= 0x00000004;
+         }
+      }
+      /**
+       * <code>repeated uint32 ban_card_tag_list = 1;</code>
+       * @return A list containing the banCardTagList.
+       */
+      public java.util.List<java.lang.Integer>
+          getBanCardTagListList() {
+        return ((bitField0_ & 0x00000004) != 0) ?
+                 java.util.Collections.unmodifiableList(banCardTagList_) : banCardTagList_;
+      }
+      /**
+       * <code>repeated uint32 ban_card_tag_list = 1;</code>
+       * @return The count of banCardTagList.
+       */
+      public int getBanCardTagListCount() {
+        return banCardTagList_.size();
+      }
+      /**
+       * <code>repeated uint32 ban_card_tag_list = 1;</code>
+       * @param index The index of the element to return.
+       * @return The banCardTagList at the given index.
+       */
+      public int getBanCardTagList(int index) {
+        return banCardTagList_.getInt(index);
+      }
+      /**
+       * <code>repeated uint32 ban_card_tag_list = 1;</code>
+       * @param index The index to set the value at.
+       * @param value The banCardTagList to set.
+       * @return This builder for chaining.
+       */
+      public Builder setBanCardTagList(
+          int index, int value) {
+        ensureBanCardTagListIsMutable();
+        banCardTagList_.setInt(index, value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint32 ban_card_tag_list = 1;</code>
+       * @param value The banCardTagList to add.
+       * @return This builder for chaining.
+       */
+      public Builder addBanCardTagList(int value) {
+        ensureBanCardTagListIsMutable();
+        banCardTagList_.addInt(value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint32 ban_card_tag_list = 1;</code>
+       * @param values The banCardTagList to add.
+       * @return This builder for chaining.
+       */
+      public Builder addAllBanCardTagList(
+          java.lang.Iterable<? extends java.lang.Integer> values) {
+        ensureBanCardTagListIsMutable();
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, banCardTagList_);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint32 ban_card_tag_list = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearBanCardTagList() {
+        banCardTagList_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000004);
         onChanged();
         return this;
       }
@@ -1892,15 +1892,15 @@ public final class InBattleChessInfoOuterClass {
     java.lang.String[] descriptorData = {
       "\n\027InBattleChessInfo.proto\032\023ChessCardInfo" +
       ".proto\032\026ChessMysteryInfo.proto\032\025ChessPla" +
-      "yerInfo.proto\"\205\003\n\021InBattleChessInfo\022\031\n\021b" +
-      "an_card_tag_list\030\002 \003(\r\022\r\n\005round\030\004 \001(\r\022/\n" +
-      "\027selected_card_info_list\030\t \003(\0132\016.ChessCa" +
-      "rdInfo\022\'\n\014mystery_info\030\001 \001(\0132\021.ChessMyst" +
-      "eryInfo\022>\n\017player_info_map\030\010 \003(\0132%.InBat" +
-      "tleChessInfo.PlayerInfoMapEntry\022\036\n\026max_e" +
-      "scapable_monsters\030\006 \001(\r\022\030\n\020escaped_monst" +
-      "ers\030\014 \001(\r\022\023\n\013total_round\030\016 \001(\r\022\025\n\rleft_m" +
-      "onsters\030\017 \001(\r\032F\n\022PlayerInfoMapEntry\022\013\n\003k" +
+      "yerInfo.proto\"\205\003\n\021InBattleChessInfo\022\r\n\005r" +
+      "ound\030\002 \001(\r\022\'\n\014mystery_info\030\006 \001(\0132\021.Chess" +
+      "MysteryInfo\022>\n\017player_info_map\030\017 \003(\0132%.I" +
+      "nBattleChessInfo.PlayerInfoMapEntry\022\036\n\026m" +
+      "ax_escapable_monsters\030\007 \001(\r\022\030\n\020escaped_m" +
+      "onsters\030\013 \001(\r\022/\n\027selected_card_info_list" +
+      "\030\004 \003(\0132\016.ChessCardInfo\022\023\n\013total_round\030\r " +
+      "\001(\r\022\025\n\rleft_monsters\030\005 \001(\r\022\031\n\021ban_card_t" +
+      "ag_list\030\001 \003(\r\032F\n\022PlayerInfoMapEntry\022\013\n\003k" +
       "ey\030\001 \001(\r\022\037\n\005value\030\002 \001(\0132\020.ChessPlayerInf" +
       "o:\0028\001B\033\n\031emu.grasscutter.net.protob\006prot" +
       "o3"
@@ -1917,7 +1917,7 @@ public final class InBattleChessInfoOuterClass {
     internal_static_InBattleChessInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_InBattleChessInfo_descriptor,
-        new java.lang.String[] { "BanCardTagList", "Round", "SelectedCardInfoList", "MysteryInfo", "PlayerInfoMap", "MaxEscapableMonsters", "EscapedMonsters", "TotalRound", "LeftMonsters", });
+        new java.lang.String[] { "Round", "MysteryInfo", "PlayerInfoMap", "MaxEscapableMonsters", "EscapedMonsters", "SelectedCardInfoList", "TotalRound", "LeftMonsters", "BanCardTagList", });
     internal_static_InBattleChessInfo_PlayerInfoMapEntry_descriptor =
       internal_static_InBattleChessInfo_descriptor.getNestedTypes().get(0);
     internal_static_InBattleChessInfo_PlayerInfoMapEntry_fieldAccessorTable = new

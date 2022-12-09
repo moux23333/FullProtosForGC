@@ -19,28 +19,32 @@ public final class UgcNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_ugc_publish_ban = 12;</code>
-     * @return The isUgcPublishBan.
+     * <code>bool Unk3300_IBLDINGJJFI = 8;</code>
+     * @return The unk3300IBLDINGJJFI.
      */
-    boolean getIsUgcPublishBan();
+    boolean getUnk3300IBLDINGJJFI();
 
     /**
-     * <code>bool is_ugc_publish_feature_closed = 8;</code>
-     * @return The isUgcPublishFeatureClosed.
-     */
-    boolean getIsUgcPublishFeatureClosed();
-
-    /**
-     * <code>bool is_ugc_feature_closed = 15;</code>
+     * <code>bool is_ugc_feature_closed = 6;</code>
      * @return The isUgcFeatureClosed.
      */
     boolean getIsUgcFeatureClosed();
+
+    /**
+     * <code>bool Unk3300_KPABJPMLHCD = 9;</code>
+     * @return The unk3300KPABJPMLHCD.
+     */
+    boolean getUnk3300KPABJPMLHCD();
   }
   /**
    * <pre>
-   * CmdId: 6341
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 6308;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code UgcNotify}
@@ -87,19 +91,19 @@ public final class UgcNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 64: {
-
-              isUgcPublishFeatureClosed_ = input.readBool();
-              break;
-            }
-            case 96: {
-
-              isUgcPublishBan_ = input.readBool();
-              break;
-            }
-            case 120: {
+            case 48: {
 
               isUgcFeatureClosed_ = input.readBool();
+              break;
+            }
+            case 64: {
+
+              unk3300IBLDINGJJFI_ = input.readBool();
+              break;
+            }
+            case 72: {
+
+              unk3300KPABJPMLHCD_ = input.readBool();
               break;
             }
             default: {
@@ -134,37 +138,37 @@ public final class UgcNotifyOuterClass {
               emu.grasscutter.net.proto.UgcNotifyOuterClass.UgcNotify.class, emu.grasscutter.net.proto.UgcNotifyOuterClass.UgcNotify.Builder.class);
     }
 
-    public static final int IS_UGC_PUBLISH_BAN_FIELD_NUMBER = 12;
-    private boolean isUgcPublishBan_;
+    public static final int UNK3300_IBLDINGJJFI_FIELD_NUMBER = 8;
+    private boolean unk3300IBLDINGJJFI_;
     /**
-     * <code>bool is_ugc_publish_ban = 12;</code>
-     * @return The isUgcPublishBan.
+     * <code>bool Unk3300_IBLDINGJJFI = 8;</code>
+     * @return The unk3300IBLDINGJJFI.
      */
     @java.lang.Override
-    public boolean getIsUgcPublishBan() {
-      return isUgcPublishBan_;
+    public boolean getUnk3300IBLDINGJJFI() {
+      return unk3300IBLDINGJJFI_;
     }
 
-    public static final int IS_UGC_PUBLISH_FEATURE_CLOSED_FIELD_NUMBER = 8;
-    private boolean isUgcPublishFeatureClosed_;
-    /**
-     * <code>bool is_ugc_publish_feature_closed = 8;</code>
-     * @return The isUgcPublishFeatureClosed.
-     */
-    @java.lang.Override
-    public boolean getIsUgcPublishFeatureClosed() {
-      return isUgcPublishFeatureClosed_;
-    }
-
-    public static final int IS_UGC_FEATURE_CLOSED_FIELD_NUMBER = 15;
+    public static final int IS_UGC_FEATURE_CLOSED_FIELD_NUMBER = 6;
     private boolean isUgcFeatureClosed_;
     /**
-     * <code>bool is_ugc_feature_closed = 15;</code>
+     * <code>bool is_ugc_feature_closed = 6;</code>
      * @return The isUgcFeatureClosed.
      */
     @java.lang.Override
     public boolean getIsUgcFeatureClosed() {
       return isUgcFeatureClosed_;
+    }
+
+    public static final int UNK3300_KPABJPMLHCD_FIELD_NUMBER = 9;
+    private boolean unk3300KPABJPMLHCD_;
+    /**
+     * <code>bool Unk3300_KPABJPMLHCD = 9;</code>
+     * @return The unk3300KPABJPMLHCD.
+     */
+    @java.lang.Override
+    public boolean getUnk3300KPABJPMLHCD() {
+      return unk3300KPABJPMLHCD_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -181,14 +185,14 @@ public final class UgcNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (isUgcPublishFeatureClosed_ != false) {
-        output.writeBool(8, isUgcPublishFeatureClosed_);
-      }
-      if (isUgcPublishBan_ != false) {
-        output.writeBool(12, isUgcPublishBan_);
-      }
       if (isUgcFeatureClosed_ != false) {
-        output.writeBool(15, isUgcFeatureClosed_);
+        output.writeBool(6, isUgcFeatureClosed_);
+      }
+      if (unk3300IBLDINGJJFI_ != false) {
+        output.writeBool(8, unk3300IBLDINGJJFI_);
+      }
+      if (unk3300KPABJPMLHCD_ != false) {
+        output.writeBool(9, unk3300KPABJPMLHCD_);
       }
       unknownFields.writeTo(output);
     }
@@ -199,17 +203,17 @@ public final class UgcNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (isUgcPublishFeatureClosed_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(8, isUgcPublishFeatureClosed_);
-      }
-      if (isUgcPublishBan_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(12, isUgcPublishBan_);
-      }
       if (isUgcFeatureClosed_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(15, isUgcFeatureClosed_);
+          .computeBoolSize(6, isUgcFeatureClosed_);
+      }
+      if (unk3300IBLDINGJJFI_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(8, unk3300IBLDINGJJFI_);
+      }
+      if (unk3300KPABJPMLHCD_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(9, unk3300KPABJPMLHCD_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -226,12 +230,12 @@ public final class UgcNotifyOuterClass {
       }
       emu.grasscutter.net.proto.UgcNotifyOuterClass.UgcNotify other = (emu.grasscutter.net.proto.UgcNotifyOuterClass.UgcNotify) obj;
 
-      if (getIsUgcPublishBan()
-          != other.getIsUgcPublishBan()) return false;
-      if (getIsUgcPublishFeatureClosed()
-          != other.getIsUgcPublishFeatureClosed()) return false;
+      if (getUnk3300IBLDINGJJFI()
+          != other.getUnk3300IBLDINGJJFI()) return false;
       if (getIsUgcFeatureClosed()
           != other.getIsUgcFeatureClosed()) return false;
+      if (getUnk3300KPABJPMLHCD()
+          != other.getUnk3300KPABJPMLHCD()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -243,15 +247,15 @@ public final class UgcNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + IS_UGC_PUBLISH_BAN_FIELD_NUMBER;
+      hash = (37 * hash) + UNK3300_IBLDINGJJFI_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsUgcPublishBan());
-      hash = (37 * hash) + IS_UGC_PUBLISH_FEATURE_CLOSED_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsUgcPublishFeatureClosed());
+          getUnk3300IBLDINGJJFI());
       hash = (37 * hash) + IS_UGC_FEATURE_CLOSED_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsUgcFeatureClosed());
+      hash = (37 * hash) + UNK3300_KPABJPMLHCD_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getUnk3300KPABJPMLHCD());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -349,9 +353,13 @@ public final class UgcNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 6341
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 6308;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code UgcNotify}
@@ -391,11 +399,11 @@ public final class UgcNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        isUgcPublishBan_ = false;
-
-        isUgcPublishFeatureClosed_ = false;
+        unk3300IBLDINGJJFI_ = false;
 
         isUgcFeatureClosed_ = false;
+
+        unk3300KPABJPMLHCD_ = false;
 
         return this;
       }
@@ -423,9 +431,9 @@ public final class UgcNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.UgcNotifyOuterClass.UgcNotify buildPartial() {
         emu.grasscutter.net.proto.UgcNotifyOuterClass.UgcNotify result = new emu.grasscutter.net.proto.UgcNotifyOuterClass.UgcNotify(this);
-        result.isUgcPublishBan_ = isUgcPublishBan_;
-        result.isUgcPublishFeatureClosed_ = isUgcPublishFeatureClosed_;
+        result.unk3300IBLDINGJJFI_ = unk3300IBLDINGJJFI_;
         result.isUgcFeatureClosed_ = isUgcFeatureClosed_;
+        result.unk3300KPABJPMLHCD_ = unk3300KPABJPMLHCD_;
         onBuilt();
         return result;
       }
@@ -474,14 +482,14 @@ public final class UgcNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.UgcNotifyOuterClass.UgcNotify other) {
         if (other == emu.grasscutter.net.proto.UgcNotifyOuterClass.UgcNotify.getDefaultInstance()) return this;
-        if (other.getIsUgcPublishBan() != false) {
-          setIsUgcPublishBan(other.getIsUgcPublishBan());
-        }
-        if (other.getIsUgcPublishFeatureClosed() != false) {
-          setIsUgcPublishFeatureClosed(other.getIsUgcPublishFeatureClosed());
+        if (other.getUnk3300IBLDINGJJFI() != false) {
+          setUnk3300IBLDINGJJFI(other.getUnk3300IBLDINGJJFI());
         }
         if (other.getIsUgcFeatureClosed() != false) {
           setIsUgcFeatureClosed(other.getIsUgcFeatureClosed());
+        }
+        if (other.getUnk3300KPABJPMLHCD() != false) {
+          setUnk3300KPABJPMLHCD(other.getUnk3300KPABJPMLHCD());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -512,71 +520,40 @@ public final class UgcNotifyOuterClass {
         return this;
       }
 
-      private boolean isUgcPublishBan_ ;
+      private boolean unk3300IBLDINGJJFI_ ;
       /**
-       * <code>bool is_ugc_publish_ban = 12;</code>
-       * @return The isUgcPublishBan.
+       * <code>bool Unk3300_IBLDINGJJFI = 8;</code>
+       * @return The unk3300IBLDINGJJFI.
        */
       @java.lang.Override
-      public boolean getIsUgcPublishBan() {
-        return isUgcPublishBan_;
+      public boolean getUnk3300IBLDINGJJFI() {
+        return unk3300IBLDINGJJFI_;
       }
       /**
-       * <code>bool is_ugc_publish_ban = 12;</code>
-       * @param value The isUgcPublishBan to set.
+       * <code>bool Unk3300_IBLDINGJJFI = 8;</code>
+       * @param value The unk3300IBLDINGJJFI to set.
        * @return This builder for chaining.
        */
-      public Builder setIsUgcPublishBan(boolean value) {
+      public Builder setUnk3300IBLDINGJJFI(boolean value) {
         
-        isUgcPublishBan_ = value;
+        unk3300IBLDINGJJFI_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>bool is_ugc_publish_ban = 12;</code>
+       * <code>bool Unk3300_IBLDINGJJFI = 8;</code>
        * @return This builder for chaining.
        */
-      public Builder clearIsUgcPublishBan() {
+      public Builder clearUnk3300IBLDINGJJFI() {
         
-        isUgcPublishBan_ = false;
-        onChanged();
-        return this;
-      }
-
-      private boolean isUgcPublishFeatureClosed_ ;
-      /**
-       * <code>bool is_ugc_publish_feature_closed = 8;</code>
-       * @return The isUgcPublishFeatureClosed.
-       */
-      @java.lang.Override
-      public boolean getIsUgcPublishFeatureClosed() {
-        return isUgcPublishFeatureClosed_;
-      }
-      /**
-       * <code>bool is_ugc_publish_feature_closed = 8;</code>
-       * @param value The isUgcPublishFeatureClosed to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsUgcPublishFeatureClosed(boolean value) {
-        
-        isUgcPublishFeatureClosed_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_ugc_publish_feature_closed = 8;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsUgcPublishFeatureClosed() {
-        
-        isUgcPublishFeatureClosed_ = false;
+        unk3300IBLDINGJJFI_ = false;
         onChanged();
         return this;
       }
 
       private boolean isUgcFeatureClosed_ ;
       /**
-       * <code>bool is_ugc_feature_closed = 15;</code>
+       * <code>bool is_ugc_feature_closed = 6;</code>
        * @return The isUgcFeatureClosed.
        */
       @java.lang.Override
@@ -584,7 +561,7 @@ public final class UgcNotifyOuterClass {
         return isUgcFeatureClosed_;
       }
       /**
-       * <code>bool is_ugc_feature_closed = 15;</code>
+       * <code>bool is_ugc_feature_closed = 6;</code>
        * @param value The isUgcFeatureClosed to set.
        * @return This builder for chaining.
        */
@@ -595,12 +572,43 @@ public final class UgcNotifyOuterClass {
         return this;
       }
       /**
-       * <code>bool is_ugc_feature_closed = 15;</code>
+       * <code>bool is_ugc_feature_closed = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsUgcFeatureClosed() {
         
         isUgcFeatureClosed_ = false;
+        onChanged();
+        return this;
+      }
+
+      private boolean unk3300KPABJPMLHCD_ ;
+      /**
+       * <code>bool Unk3300_KPABJPMLHCD = 9;</code>
+       * @return The unk3300KPABJPMLHCD.
+       */
+      @java.lang.Override
+      public boolean getUnk3300KPABJPMLHCD() {
+        return unk3300KPABJPMLHCD_;
+      }
+      /**
+       * <code>bool Unk3300_KPABJPMLHCD = 9;</code>
+       * @param value The unk3300KPABJPMLHCD to set.
+       * @return This builder for chaining.
+       */
+      public Builder setUnk3300KPABJPMLHCD(boolean value) {
+        
+        unk3300KPABJPMLHCD_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool Unk3300_KPABJPMLHCD = 9;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearUnk3300KPABJPMLHCD() {
+        
+        unk3300KPABJPMLHCD_ = false;
         onChanged();
         return this;
       }
@@ -671,11 +679,10 @@ public final class UgcNotifyOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\017UgcNotify.proto\"m\n\tUgcNotify\022\032\n\022is_ugc" +
-      "_publish_ban\030\014 \001(\010\022%\n\035is_ugc_publish_fea" +
-      "ture_closed\030\010 \001(\010\022\035\n\025is_ugc_feature_clos" +
-      "ed\030\017 \001(\010B\033\n\031emu.grasscutter.net.protob\006p" +
-      "roto3"
+      "\n\017UgcNotify.proto\"d\n\tUgcNotify\022\033\n\023Unk330" +
+      "0_IBLDINGJJFI\030\010 \001(\010\022\035\n\025is_ugc_feature_cl" +
+      "osed\030\006 \001(\010\022\033\n\023Unk3300_KPABJPMLHCD\030\t \001(\010B" +
+      "\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -686,7 +693,7 @@ public final class UgcNotifyOuterClass {
     internal_static_UgcNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_UgcNotify_descriptor,
-        new java.lang.String[] { "IsUgcPublishBan", "IsUgcPublishFeatureClosed", "IsUgcFeatureClosed", });
+        new java.lang.String[] { "Unk3300IBLDINGJJFI", "IsUgcFeatureClosed", "Unk3300KPABJPMLHCD", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

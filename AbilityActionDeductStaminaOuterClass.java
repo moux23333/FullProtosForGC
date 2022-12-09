@@ -19,7 +19,7 @@ public final class AbilityActionDeductStaminaOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_swim = 1;</code>
+     * <code>bool is_swim = 7;</code>
      * @return The isSwim.
      */
     boolean getIsSwim();
@@ -69,7 +69,7 @@ public final class AbilityActionDeductStaminaOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
+            case 56: {
 
               isSwim_ = input.readBool();
               break;
@@ -106,10 +106,10 @@ public final class AbilityActionDeductStaminaOuterClass {
               emu.grasscutter.net.proto.AbilityActionDeductStaminaOuterClass.AbilityActionDeductStamina.class, emu.grasscutter.net.proto.AbilityActionDeductStaminaOuterClass.AbilityActionDeductStamina.Builder.class);
     }
 
-    public static final int IS_SWIM_FIELD_NUMBER = 1;
+    public static final int IS_SWIM_FIELD_NUMBER = 7;
     private boolean isSwim_;
     /**
-     * <code>bool is_swim = 1;</code>
+     * <code>bool is_swim = 7;</code>
      * @return The isSwim.
      */
     @java.lang.Override
@@ -132,7 +132,7 @@ public final class AbilityActionDeductStaminaOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (isSwim_ != false) {
-        output.writeBool(1, isSwim_);
+        output.writeBool(7, isSwim_);
       }
       unknownFields.writeTo(output);
     }
@@ -145,7 +145,7 @@ public final class AbilityActionDeductStaminaOuterClass {
       size = 0;
       if (isSwim_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(1, isSwim_);
+          .computeBoolSize(7, isSwim_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -422,7 +422,7 @@ public final class AbilityActionDeductStaminaOuterClass {
 
       private boolean isSwim_ ;
       /**
-       * <code>bool is_swim = 1;</code>
+       * <code>bool is_swim = 7;</code>
        * @return The isSwim.
        */
       @java.lang.Override
@@ -430,7 +430,7 @@ public final class AbilityActionDeductStaminaOuterClass {
         return isSwim_;
       }
       /**
-       * <code>bool is_swim = 1;</code>
+       * <code>bool is_swim = 7;</code>
        * @param value The isSwim to set.
        * @return This builder for chaining.
        */
@@ -441,7 +441,7 @@ public final class AbilityActionDeductStaminaOuterClass {
         return this;
       }
       /**
-       * <code>bool is_swim = 1;</code>
+       * <code>bool is_swim = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsSwim() {
@@ -518,7 +518,7 @@ public final class AbilityActionDeductStaminaOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n AbilityActionDeductStamina.proto\"-\n\032Ab" +
-      "ilityActionDeductStamina\022\017\n\007is_swim\030\001 \001(" +
+      "ilityActionDeductStamina\022\017\n\007is_swim\030\007 \001(" +
       "\010B\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

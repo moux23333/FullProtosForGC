@@ -19,16 +19,20 @@ public final class FishBaitGoneNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 uid = 8;</code>
+     * <code>uint32 uid = 11;</code>
      * @return The uid.
      */
     int getUid();
   }
   /**
    * <pre>
-   * CmdId: 5823
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 5830;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code FishBaitGoneNotify}
@@ -75,7 +79,7 @@ public final class FishBaitGoneNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 64: {
+            case 88: {
 
               uid_ = input.readUInt32();
               break;
@@ -112,10 +116,10 @@ public final class FishBaitGoneNotifyOuterClass {
               emu.grasscutter.net.proto.FishBaitGoneNotifyOuterClass.FishBaitGoneNotify.class, emu.grasscutter.net.proto.FishBaitGoneNotifyOuterClass.FishBaitGoneNotify.Builder.class);
     }
 
-    public static final int UID_FIELD_NUMBER = 8;
+    public static final int UID_FIELD_NUMBER = 11;
     private int uid_;
     /**
-     * <code>uint32 uid = 8;</code>
+     * <code>uint32 uid = 11;</code>
      * @return The uid.
      */
     @java.lang.Override
@@ -138,7 +142,7 @@ public final class FishBaitGoneNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (uid_ != 0) {
-        output.writeUInt32(8, uid_);
+        output.writeUInt32(11, uid_);
       }
       unknownFields.writeTo(output);
     }
@@ -151,7 +155,7 @@ public final class FishBaitGoneNotifyOuterClass {
       size = 0;
       if (uid_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, uid_);
+          .computeUInt32Size(11, uid_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -280,9 +284,13 @@ public final class FishBaitGoneNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 5823
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 5830;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code FishBaitGoneNotify}
@@ -433,7 +441,7 @@ public final class FishBaitGoneNotifyOuterClass {
 
       private int uid_ ;
       /**
-       * <code>uint32 uid = 8;</code>
+       * <code>uint32 uid = 11;</code>
        * @return The uid.
        */
       @java.lang.Override
@@ -441,7 +449,7 @@ public final class FishBaitGoneNotifyOuterClass {
         return uid_;
       }
       /**
-       * <code>uint32 uid = 8;</code>
+       * <code>uint32 uid = 11;</code>
        * @param value The uid to set.
        * @return This builder for chaining.
        */
@@ -452,7 +460,7 @@ public final class FishBaitGoneNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 uid = 8;</code>
+       * <code>uint32 uid = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearUid() {
@@ -529,7 +537,7 @@ public final class FishBaitGoneNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\030FishBaitGoneNotify.proto\"!\n\022FishBaitGo" +
-      "neNotify\022\013\n\003uid\030\010 \001(\rB\033\n\031emu.grasscutter" +
+      "neNotify\022\013\n\003uid\030\013 \001(\rB\033\n\031emu.grasscutter" +
       ".net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

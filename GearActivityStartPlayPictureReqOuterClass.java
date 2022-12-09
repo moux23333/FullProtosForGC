@@ -20,10 +20,14 @@ public final class GearActivityStartPlayPictureReqOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 24550
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 24968;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code GearActivityStartPlayPictureReq}
@@ -248,10 +252,14 @@ public final class GearActivityStartPlayPictureReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 24550
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 24968;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code GearActivityStartPlayPictureReq}

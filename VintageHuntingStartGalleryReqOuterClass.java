@@ -19,17 +19,21 @@ public final class VintageHuntingStartGalleryReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 stage_id = 7;</code>
+     * <code>uint32 stage_id = 3;</code>
      * @return The stageId.
      */
     int getStageId();
   }
   /**
    * <pre>
-   * CmdId: 21780
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 21649;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code VintageHuntingStartGalleryReq}
@@ -76,7 +80,7 @@ public final class VintageHuntingStartGalleryReqOuterClass {
             case 0:
               done = true;
               break;
-            case 56: {
+            case 24: {
 
               stageId_ = input.readUInt32();
               break;
@@ -113,10 +117,10 @@ public final class VintageHuntingStartGalleryReqOuterClass {
               emu.grasscutter.net.proto.VintageHuntingStartGalleryReqOuterClass.VintageHuntingStartGalleryReq.class, emu.grasscutter.net.proto.VintageHuntingStartGalleryReqOuterClass.VintageHuntingStartGalleryReq.Builder.class);
     }
 
-    public static final int STAGE_ID_FIELD_NUMBER = 7;
+    public static final int STAGE_ID_FIELD_NUMBER = 3;
     private int stageId_;
     /**
-     * <code>uint32 stage_id = 7;</code>
+     * <code>uint32 stage_id = 3;</code>
      * @return The stageId.
      */
     @java.lang.Override
@@ -139,7 +143,7 @@ public final class VintageHuntingStartGalleryReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (stageId_ != 0) {
-        output.writeUInt32(7, stageId_);
+        output.writeUInt32(3, stageId_);
       }
       unknownFields.writeTo(output);
     }
@@ -152,7 +156,7 @@ public final class VintageHuntingStartGalleryReqOuterClass {
       size = 0;
       if (stageId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, stageId_);
+          .computeUInt32Size(3, stageId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -281,10 +285,14 @@ public final class VintageHuntingStartGalleryReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 21780
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 21649;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code VintageHuntingStartGalleryReq}
@@ -435,7 +443,7 @@ public final class VintageHuntingStartGalleryReqOuterClass {
 
       private int stageId_ ;
       /**
-       * <code>uint32 stage_id = 7;</code>
+       * <code>uint32 stage_id = 3;</code>
        * @return The stageId.
        */
       @java.lang.Override
@@ -443,7 +451,7 @@ public final class VintageHuntingStartGalleryReqOuterClass {
         return stageId_;
       }
       /**
-       * <code>uint32 stage_id = 7;</code>
+       * <code>uint32 stage_id = 3;</code>
        * @param value The stageId to set.
        * @return This builder for chaining.
        */
@@ -454,7 +462,7 @@ public final class VintageHuntingStartGalleryReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 stage_id = 7;</code>
+       * <code>uint32 stage_id = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearStageId() {
@@ -532,7 +540,7 @@ public final class VintageHuntingStartGalleryReqOuterClass {
     java.lang.String[] descriptorData = {
       "\n#VintageHuntingStartGalleryReq.proto\"1\n" +
       "\035VintageHuntingStartGalleryReq\022\020\n\010stage_" +
-      "id\030\007 \001(\rB\033\n\031emu.grasscutter.net.protob\006p" +
+      "id\030\003 \001(\rB\033\n\031emu.grasscutter.net.protob\006p" +
       "roto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

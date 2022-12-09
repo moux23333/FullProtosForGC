@@ -19,17 +19,21 @@ public final class IrodoriScanEntityReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 entity_id = 11;</code>
+     * <code>uint32 entity_id = 2;</code>
      * @return The entityId.
      */
     int getEntityId();
   }
   /**
    * <pre>
-   * CmdId: 8767
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 8931;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code IrodoriScanEntityReq}
@@ -76,7 +80,7 @@ public final class IrodoriScanEntityReqOuterClass {
             case 0:
               done = true;
               break;
-            case 88: {
+            case 16: {
 
               entityId_ = input.readUInt32();
               break;
@@ -113,10 +117,10 @@ public final class IrodoriScanEntityReqOuterClass {
               emu.grasscutter.net.proto.IrodoriScanEntityReqOuterClass.IrodoriScanEntityReq.class, emu.grasscutter.net.proto.IrodoriScanEntityReqOuterClass.IrodoriScanEntityReq.Builder.class);
     }
 
-    public static final int ENTITY_ID_FIELD_NUMBER = 11;
+    public static final int ENTITY_ID_FIELD_NUMBER = 2;
     private int entityId_;
     /**
-     * <code>uint32 entity_id = 11;</code>
+     * <code>uint32 entity_id = 2;</code>
      * @return The entityId.
      */
     @java.lang.Override
@@ -139,7 +143,7 @@ public final class IrodoriScanEntityReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (entityId_ != 0) {
-        output.writeUInt32(11, entityId_);
+        output.writeUInt32(2, entityId_);
       }
       unknownFields.writeTo(output);
     }
@@ -152,7 +156,7 @@ public final class IrodoriScanEntityReqOuterClass {
       size = 0;
       if (entityId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, entityId_);
+          .computeUInt32Size(2, entityId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -281,10 +285,14 @@ public final class IrodoriScanEntityReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 8767
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 8931;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code IrodoriScanEntityReq}
@@ -435,7 +443,7 @@ public final class IrodoriScanEntityReqOuterClass {
 
       private int entityId_ ;
       /**
-       * <code>uint32 entity_id = 11;</code>
+       * <code>uint32 entity_id = 2;</code>
        * @return The entityId.
        */
       @java.lang.Override
@@ -443,7 +451,7 @@ public final class IrodoriScanEntityReqOuterClass {
         return entityId_;
       }
       /**
-       * <code>uint32 entity_id = 11;</code>
+       * <code>uint32 entity_id = 2;</code>
        * @param value The entityId to set.
        * @return This builder for chaining.
        */
@@ -454,7 +462,7 @@ public final class IrodoriScanEntityReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 entity_id = 11;</code>
+       * <code>uint32 entity_id = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearEntityId() {
@@ -531,7 +539,7 @@ public final class IrodoriScanEntityReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\032IrodoriScanEntityReq.proto\")\n\024IrodoriS" +
-      "canEntityReq\022\021\n\tentity_id\030\013 \001(\rB\033\n\031emu.g" +
+      "canEntityReq\022\021\n\tentity_id\030\002 \001(\rB\033\n\031emu.g" +
       "rasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

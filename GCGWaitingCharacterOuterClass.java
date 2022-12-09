@@ -19,16 +19,16 @@ public final class GCGWaitingCharacterOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 card_id = 2;</code>
-     * @return The cardId.
-     */
-    int getCardId();
-
-    /**
-     * <code>uint32 cond_count = 14;</code>
+     * <code>uint32 cond_count = 1;</code>
      * @return The condCount.
      */
     int getCondCount();
+
+    /**
+     * <code>uint32 card_id = 11;</code>
+     * @return The cardId.
+     */
+    int getCardId();
   }
   /**
    * Protobuf type {@code GCGWaitingCharacter}
@@ -75,14 +75,14 @@ public final class GCGWaitingCharacterOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
-
-              cardId_ = input.readUInt32();
-              break;
-            }
-            case 112: {
+            case 8: {
 
               condCount_ = input.readUInt32();
+              break;
+            }
+            case 88: {
+
+              cardId_ = input.readUInt32();
               break;
             }
             default: {
@@ -117,26 +117,26 @@ public final class GCGWaitingCharacterOuterClass {
               emu.grasscutter.net.proto.GCGWaitingCharacterOuterClass.GCGWaitingCharacter.class, emu.grasscutter.net.proto.GCGWaitingCharacterOuterClass.GCGWaitingCharacter.Builder.class);
     }
 
-    public static final int CARD_ID_FIELD_NUMBER = 2;
-    private int cardId_;
-    /**
-     * <code>uint32 card_id = 2;</code>
-     * @return The cardId.
-     */
-    @java.lang.Override
-    public int getCardId() {
-      return cardId_;
-    }
-
-    public static final int COND_COUNT_FIELD_NUMBER = 14;
+    public static final int COND_COUNT_FIELD_NUMBER = 1;
     private int condCount_;
     /**
-     * <code>uint32 cond_count = 14;</code>
+     * <code>uint32 cond_count = 1;</code>
      * @return The condCount.
      */
     @java.lang.Override
     public int getCondCount() {
       return condCount_;
+    }
+
+    public static final int CARD_ID_FIELD_NUMBER = 11;
+    private int cardId_;
+    /**
+     * <code>uint32 card_id = 11;</code>
+     * @return The cardId.
+     */
+    @java.lang.Override
+    public int getCardId() {
+      return cardId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -153,11 +153,11 @@ public final class GCGWaitingCharacterOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (cardId_ != 0) {
-        output.writeUInt32(2, cardId_);
-      }
       if (condCount_ != 0) {
-        output.writeUInt32(14, condCount_);
+        output.writeUInt32(1, condCount_);
+      }
+      if (cardId_ != 0) {
+        output.writeUInt32(11, cardId_);
       }
       unknownFields.writeTo(output);
     }
@@ -168,13 +168,13 @@ public final class GCGWaitingCharacterOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (cardId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, cardId_);
-      }
       if (condCount_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, condCount_);
+          .computeUInt32Size(1, condCount_);
+      }
+      if (cardId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(11, cardId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -191,10 +191,10 @@ public final class GCGWaitingCharacterOuterClass {
       }
       emu.grasscutter.net.proto.GCGWaitingCharacterOuterClass.GCGWaitingCharacter other = (emu.grasscutter.net.proto.GCGWaitingCharacterOuterClass.GCGWaitingCharacter) obj;
 
-      if (getCardId()
-          != other.getCardId()) return false;
       if (getCondCount()
           != other.getCondCount()) return false;
+      if (getCardId()
+          != other.getCardId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -206,10 +206,10 @@ public final class GCGWaitingCharacterOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + CARD_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getCardId();
       hash = (37 * hash) + COND_COUNT_FIELD_NUMBER;
       hash = (53 * hash) + getCondCount();
+      hash = (37 * hash) + CARD_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getCardId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -343,9 +343,9 @@ public final class GCGWaitingCharacterOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        cardId_ = 0;
-
         condCount_ = 0;
+
+        cardId_ = 0;
 
         return this;
       }
@@ -373,8 +373,8 @@ public final class GCGWaitingCharacterOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.GCGWaitingCharacterOuterClass.GCGWaitingCharacter buildPartial() {
         emu.grasscutter.net.proto.GCGWaitingCharacterOuterClass.GCGWaitingCharacter result = new emu.grasscutter.net.proto.GCGWaitingCharacterOuterClass.GCGWaitingCharacter(this);
-        result.cardId_ = cardId_;
         result.condCount_ = condCount_;
+        result.cardId_ = cardId_;
         onBuilt();
         return result;
       }
@@ -423,11 +423,11 @@ public final class GCGWaitingCharacterOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.GCGWaitingCharacterOuterClass.GCGWaitingCharacter other) {
         if (other == emu.grasscutter.net.proto.GCGWaitingCharacterOuterClass.GCGWaitingCharacter.getDefaultInstance()) return this;
-        if (other.getCardId() != 0) {
-          setCardId(other.getCardId());
-        }
         if (other.getCondCount() != 0) {
           setCondCount(other.getCondCount());
+        }
+        if (other.getCardId() != 0) {
+          setCardId(other.getCardId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -458,40 +458,9 @@ public final class GCGWaitingCharacterOuterClass {
         return this;
       }
 
-      private int cardId_ ;
-      /**
-       * <code>uint32 card_id = 2;</code>
-       * @return The cardId.
-       */
-      @java.lang.Override
-      public int getCardId() {
-        return cardId_;
-      }
-      /**
-       * <code>uint32 card_id = 2;</code>
-       * @param value The cardId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setCardId(int value) {
-        
-        cardId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 card_id = 2;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearCardId() {
-        
-        cardId_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int condCount_ ;
       /**
-       * <code>uint32 cond_count = 14;</code>
+       * <code>uint32 cond_count = 1;</code>
        * @return The condCount.
        */
       @java.lang.Override
@@ -499,7 +468,7 @@ public final class GCGWaitingCharacterOuterClass {
         return condCount_;
       }
       /**
-       * <code>uint32 cond_count = 14;</code>
+       * <code>uint32 cond_count = 1;</code>
        * @param value The condCount to set.
        * @return This builder for chaining.
        */
@@ -510,12 +479,43 @@ public final class GCGWaitingCharacterOuterClass {
         return this;
       }
       /**
-       * <code>uint32 cond_count = 14;</code>
+       * <code>uint32 cond_count = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearCondCount() {
         
         condCount_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int cardId_ ;
+      /**
+       * <code>uint32 card_id = 11;</code>
+       * @return The cardId.
+       */
+      @java.lang.Override
+      public int getCardId() {
+        return cardId_;
+      }
+      /**
+       * <code>uint32 card_id = 11;</code>
+       * @param value The cardId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setCardId(int value) {
+        
+        cardId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 card_id = 11;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearCardId() {
+        
+        cardId_ = 0;
         onChanged();
         return this;
       }
@@ -587,8 +587,8 @@ public final class GCGWaitingCharacterOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\031GCGWaitingCharacter.proto\":\n\023GCGWaitin" +
-      "gCharacter\022\017\n\007card_id\030\002 \001(\r\022\022\n\ncond_coun" +
-      "t\030\016 \001(\rB\033\n\031emu.grasscutter.net.protob\006pr" +
+      "gCharacter\022\022\n\ncond_count\030\001 \001(\r\022\017\n\007card_i" +
+      "d\030\013 \001(\rB\033\n\031emu.grasscutter.net.protob\006pr" +
       "oto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -600,7 +600,7 @@ public final class GCGWaitingCharacterOuterClass {
     internal_static_GCGWaitingCharacter_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GCGWaitingCharacter_descriptor,
-        new java.lang.String[] { "CardId", "CondCount", });
+        new java.lang.String[] { "CondCount", "CardId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

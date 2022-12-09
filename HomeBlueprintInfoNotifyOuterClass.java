@@ -19,16 +19,20 @@ public final class HomeBlueprintInfoNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_allow_friend_copy = 15;</code>
+     * <code>bool is_allow_friend_copy = 1;</code>
      * @return The isAllowFriendCopy.
      */
     boolean getIsAllowFriendCopy();
   }
   /**
    * <pre>
-   * CmdId: 4765
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 4813;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code HomeBlueprintInfoNotify}
@@ -75,7 +79,7 @@ public final class HomeBlueprintInfoNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 120: {
+            case 8: {
 
               isAllowFriendCopy_ = input.readBool();
               break;
@@ -112,10 +116,10 @@ public final class HomeBlueprintInfoNotifyOuterClass {
               emu.grasscutter.net.proto.HomeBlueprintInfoNotifyOuterClass.HomeBlueprintInfoNotify.class, emu.grasscutter.net.proto.HomeBlueprintInfoNotifyOuterClass.HomeBlueprintInfoNotify.Builder.class);
     }
 
-    public static final int IS_ALLOW_FRIEND_COPY_FIELD_NUMBER = 15;
+    public static final int IS_ALLOW_FRIEND_COPY_FIELD_NUMBER = 1;
     private boolean isAllowFriendCopy_;
     /**
-     * <code>bool is_allow_friend_copy = 15;</code>
+     * <code>bool is_allow_friend_copy = 1;</code>
      * @return The isAllowFriendCopy.
      */
     @java.lang.Override
@@ -138,7 +142,7 @@ public final class HomeBlueprintInfoNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (isAllowFriendCopy_ != false) {
-        output.writeBool(15, isAllowFriendCopy_);
+        output.writeBool(1, isAllowFriendCopy_);
       }
       unknownFields.writeTo(output);
     }
@@ -151,7 +155,7 @@ public final class HomeBlueprintInfoNotifyOuterClass {
       size = 0;
       if (isAllowFriendCopy_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(15, isAllowFriendCopy_);
+          .computeBoolSize(1, isAllowFriendCopy_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -281,9 +285,13 @@ public final class HomeBlueprintInfoNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 4765
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 4813;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code HomeBlueprintInfoNotify}
@@ -434,7 +442,7 @@ public final class HomeBlueprintInfoNotifyOuterClass {
 
       private boolean isAllowFriendCopy_ ;
       /**
-       * <code>bool is_allow_friend_copy = 15;</code>
+       * <code>bool is_allow_friend_copy = 1;</code>
        * @return The isAllowFriendCopy.
        */
       @java.lang.Override
@@ -442,7 +450,7 @@ public final class HomeBlueprintInfoNotifyOuterClass {
         return isAllowFriendCopy_;
       }
       /**
-       * <code>bool is_allow_friend_copy = 15;</code>
+       * <code>bool is_allow_friend_copy = 1;</code>
        * @param value The isAllowFriendCopy to set.
        * @return This builder for chaining.
        */
@@ -453,7 +461,7 @@ public final class HomeBlueprintInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>bool is_allow_friend_copy = 15;</code>
+       * <code>bool is_allow_friend_copy = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsAllowFriendCopy() {
@@ -531,7 +539,7 @@ public final class HomeBlueprintInfoNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n\035HomeBlueprintInfoNotify.proto\"7\n\027HomeB" +
       "lueprintInfoNotify\022\034\n\024is_allow_friend_co" +
-      "py\030\017 \001(\010B\033\n\031emu.grasscutter.net.protob\006p" +
+      "py\030\001 \001(\010B\033\n\031emu.grasscutter.net.protob\006p" +
       "roto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

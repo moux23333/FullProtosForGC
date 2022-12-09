@@ -26,9 +26,13 @@ public final class DungeonCandidateTeamCreateRspOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 906
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 910;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code DungeonCandidateTeamCreateRsp}
@@ -280,9 +284,13 @@ public final class DungeonCandidateTeamCreateRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 906
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 910;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code DungeonCandidateTeamCreateRsp}

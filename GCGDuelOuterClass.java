@@ -25,210 +25,305 @@ public final class GCGDuelOuterClass {
     int getServerSeq();
 
     /**
-     * <code>repeated .GCGPlayerField field_list = 7;</code>
+     * <code>repeated .GCGControllerShowInfo show_info_list = 7;</code>
      */
-    java.util.List<emu.grasscutter.net.proto.GCGPlayerFieldOuterClass.GCGPlayerField> 
-        getFieldListList();
+    java.util.List<emu.grasscutter.net.proto.GCGControllerShowInfoOuterClass.GCGControllerShowInfo> 
+        getShowInfoListList();
     /**
-     * <code>repeated .GCGPlayerField field_list = 7;</code>
+     * <code>repeated .GCGControllerShowInfo show_info_list = 7;</code>
      */
-    emu.grasscutter.net.proto.GCGPlayerFieldOuterClass.GCGPlayerField getFieldList(int index);
+    emu.grasscutter.net.proto.GCGControllerShowInfoOuterClass.GCGControllerShowInfo getShowInfoList(int index);
     /**
-     * <code>repeated .GCGPlayerField field_list = 7;</code>
+     * <code>repeated .GCGControllerShowInfo show_info_list = 7;</code>
      */
-    int getFieldListCount();
+    int getShowInfoListCount();
     /**
-     * <code>repeated .GCGPlayerField field_list = 7;</code>
+     * <code>repeated .GCGControllerShowInfo show_info_list = 7;</code>
      */
-    java.util.List<? extends emu.grasscutter.net.proto.GCGPlayerFieldOuterClass.GCGPlayerFieldOrBuilder> 
-        getFieldListOrBuilderList();
+    java.util.List<? extends emu.grasscutter.net.proto.GCGControllerShowInfoOuterClass.GCGControllerShowInfoOrBuilder> 
+        getShowInfoListOrBuilderList();
     /**
-     * <code>repeated .GCGPlayerField field_list = 7;</code>
+     * <code>repeated .GCGControllerShowInfo show_info_list = 7;</code>
      */
-    emu.grasscutter.net.proto.GCGPlayerFieldOuterClass.GCGPlayerFieldOrBuilder getFieldListOrBuilder(
+    emu.grasscutter.net.proto.GCGControllerShowInfoOuterClass.GCGControllerShowInfoOrBuilder getShowInfoListOrBuilder(
         int index);
 
     /**
-     * <code>.GCGGameBusinessType business_type = 14;</code>
-     * @return The enum numeric value on the wire for businessType.
+     * <code>repeated uint32 forbid_finish_challenge_list = 192;</code>
+     * @return A list containing the forbidFinishChallengeList.
      */
-    int getBusinessTypeValue();
+    java.util.List<java.lang.Integer> getForbidFinishChallengeListList();
     /**
-     * <code>.GCGGameBusinessType business_type = 14;</code>
-     * @return The businessType.
+     * <code>repeated uint32 forbid_finish_challenge_list = 192;</code>
+     * @return The count of forbidFinishChallengeList.
      */
-    emu.grasscutter.net.proto.GCGGameBusinessTypeOuterClass.GCGGameBusinessType getBusinessType();
+    int getForbidFinishChallengeListCount();
+    /**
+     * <code>repeated uint32 forbid_finish_challenge_list = 192;</code>
+     * @param index The index of the element to return.
+     * @return The forbidFinishChallengeList at the given index.
+     */
+    int getForbidFinishChallengeList(int index);
 
     /**
-     * <code>repeated .GCGDuelChallenge challenge_list = 5;</code>
+     * <code>repeated .GCGCard card_list = 1;</code>
      */
-    java.util.List<emu.grasscutter.net.proto.GCGDuelChallengeOuterClass.GCGDuelChallenge> 
-        getChallengeListList();
+    java.util.List<emu.grasscutter.net.proto.GCGCardOuterClass.GCGCard> 
+        getCardListList();
     /**
-     * <code>repeated .GCGDuelChallenge challenge_list = 5;</code>
+     * <code>repeated .GCGCard card_list = 1;</code>
      */
-    emu.grasscutter.net.proto.GCGDuelChallengeOuterClass.GCGDuelChallenge getChallengeList(int index);
+    emu.grasscutter.net.proto.GCGCardOuterClass.GCGCard getCardList(int index);
     /**
-     * <code>repeated .GCGDuelChallenge challenge_list = 5;</code>
+     * <code>repeated .GCGCard card_list = 1;</code>
      */
-    int getChallengeListCount();
+    int getCardListCount();
     /**
-     * <code>repeated .GCGDuelChallenge challenge_list = 5;</code>
+     * <code>repeated .GCGCard card_list = 1;</code>
      */
-    java.util.List<? extends emu.grasscutter.net.proto.GCGDuelChallengeOuterClass.GCGDuelChallengeOrBuilder> 
-        getChallengeListOrBuilderList();
+    java.util.List<? extends emu.grasscutter.net.proto.GCGCardOuterClass.GCGCardOrBuilder> 
+        getCardListOrBuilderList();
     /**
-     * <code>repeated .GCGDuelChallenge challenge_list = 5;</code>
+     * <code>repeated .GCGCard card_list = 1;</code>
      */
-    emu.grasscutter.net.proto.GCGDuelChallengeOuterClass.GCGDuelChallengeOrBuilder getChallengeListOrBuilder(
+    emu.grasscutter.net.proto.GCGCardOuterClass.GCGCardOrBuilder getCardListOrBuilder(
         int index);
 
     /**
-     * <code>uint32 game_id = 11;</code>
+     * <code>uint32 Unk3300_BIANMOPDEHO = 9;</code>
+     * @return The unk3300BIANMOPDEHO.
+     */
+    int getUnk3300BIANMOPDEHO();
+
+    /**
+     * <code>.GCGCostReviseInfo cost_revise = 8;</code>
+     * @return Whether the costRevise field is set.
+     */
+    boolean hasCostRevise();
+    /**
+     * <code>.GCGCostReviseInfo cost_revise = 8;</code>
+     * @return The costRevise.
+     */
+    emu.grasscutter.net.proto.GCGCostReviseInfoOuterClass.GCGCostReviseInfo getCostRevise();
+    /**
+     * <code>.GCGCostReviseInfo cost_revise = 8;</code>
+     */
+    emu.grasscutter.net.proto.GCGCostReviseInfoOuterClass.GCGCostReviseInfoOrBuilder getCostReviseOrBuilder();
+
+    /**
+     * <code>uint32 game_id = 4;</code>
      * @return The gameId.
      */
     int getGameId();
 
     /**
-     * <code>uint32 controller_id = 13;</code>
-     * @return The controllerId.
+     * <code>repeated .GCGPlayerField field_list = 5;</code>
      */
-    int getControllerId();
+    java.util.List<emu.grasscutter.net.proto.GCGPlayerFieldOuterClass.GCGPlayerField> 
+        getFieldListList();
+    /**
+     * <code>repeated .GCGPlayerField field_list = 5;</code>
+     */
+    emu.grasscutter.net.proto.GCGPlayerFieldOuterClass.GCGPlayerField getFieldList(int index);
+    /**
+     * <code>repeated .GCGPlayerField field_list = 5;</code>
+     */
+    int getFieldListCount();
+    /**
+     * <code>repeated .GCGPlayerField field_list = 5;</code>
+     */
+    java.util.List<? extends emu.grasscutter.net.proto.GCGPlayerFieldOuterClass.GCGPlayerFieldOrBuilder> 
+        getFieldListOrBuilderList();
+    /**
+     * <code>repeated .GCGPlayerField field_list = 5;</code>
+     */
+    emu.grasscutter.net.proto.GCGPlayerFieldOuterClass.GCGPlayerFieldOrBuilder getFieldListOrBuilder(
+        int index);
 
     /**
-     * <code>uint32 round = 15;</code>
+     * <code>repeated .Unk3300_ADHENCIFKNI Unk3300_CDCMBOKBLAK = 1987;</code>
+     */
+    java.util.List<emu.grasscutter.net.proto.Unk3300ADHENCIFKNI.Unk3300_ADHENCIFKNI> 
+        getUnk3300CDCMBOKBLAKList();
+    /**
+     * <code>repeated .Unk3300_ADHENCIFKNI Unk3300_CDCMBOKBLAK = 1987;</code>
+     */
+    emu.grasscutter.net.proto.Unk3300ADHENCIFKNI.Unk3300_ADHENCIFKNI getUnk3300CDCMBOKBLAK(int index);
+    /**
+     * <code>repeated .Unk3300_ADHENCIFKNI Unk3300_CDCMBOKBLAK = 1987;</code>
+     */
+    int getUnk3300CDCMBOKBLAKCount();
+    /**
+     * <code>repeated .Unk3300_ADHENCIFKNI Unk3300_CDCMBOKBLAK = 1987;</code>
+     */
+    java.util.List<? extends emu.grasscutter.net.proto.Unk3300ADHENCIFKNI.Unk3300_ADHENCIFKNIOrBuilder> 
+        getUnk3300CDCMBOKBLAKOrBuilderList();
+    /**
+     * <code>repeated .Unk3300_ADHENCIFKNI Unk3300_CDCMBOKBLAK = 1987;</code>
+     */
+    emu.grasscutter.net.proto.Unk3300ADHENCIFKNI.Unk3300_ADHENCIFKNIOrBuilder getUnk3300CDCMBOKBLAKOrBuilder(
+        int index);
+
+    /**
+     * <code>.GCGGameBusinessType business_type = 13;</code>
+     * @return The enum numeric value on the wire for businessType.
+     */
+    int getBusinessTypeValue();
+    /**
+     * <code>.GCGGameBusinessType business_type = 13;</code>
+     * @return The businessType.
+     */
+    emu.grasscutter.net.proto.GCGGameBusinessTypeOuterClass.GCGGameBusinessType getBusinessType();
+
+    /**
+     * <code>repeated .GCGPVEIntention intention_list = 2;</code>
+     */
+    java.util.List<emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntention> 
+        getIntentionListList();
+    /**
+     * <code>repeated .GCGPVEIntention intention_list = 2;</code>
+     */
+    emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntention getIntentionList(int index);
+    /**
+     * <code>repeated .GCGPVEIntention intention_list = 2;</code>
+     */
+    int getIntentionListCount();
+    /**
+     * <code>repeated .GCGPVEIntention intention_list = 2;</code>
+     */
+    java.util.List<? extends emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntentionOrBuilder> 
+        getIntentionListOrBuilderList();
+    /**
+     * <code>repeated .GCGPVEIntention intention_list = 2;</code>
+     */
+    emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntentionOrBuilder getIntentionListOrBuilder(
+        int index);
+
+    /**
+     * <code>repeated .GCGDuelChallenge challenge_list = 1617;</code>
+     */
+    java.util.List<emu.grasscutter.net.proto.GCGDuelChallengeOuterClass.GCGDuelChallenge> 
+        getChallengeListList();
+    /**
+     * <code>repeated .GCGDuelChallenge challenge_list = 1617;</code>
+     */
+    emu.grasscutter.net.proto.GCGDuelChallengeOuterClass.GCGDuelChallenge getChallengeList(int index);
+    /**
+     * <code>repeated .GCGDuelChallenge challenge_list = 1617;</code>
+     */
+    int getChallengeListCount();
+    /**
+     * <code>repeated .GCGDuelChallenge challenge_list = 1617;</code>
+     */
+    java.util.List<? extends emu.grasscutter.net.proto.GCGDuelChallengeOuterClass.GCGDuelChallengeOrBuilder> 
+        getChallengeListOrBuilderList();
+    /**
+     * <code>repeated .GCGDuelChallenge challenge_list = 1617;</code>
+     */
+    emu.grasscutter.net.proto.GCGDuelChallengeOuterClass.GCGDuelChallengeOrBuilder getChallengeListOrBuilder(
+        int index);
+
+    /**
+     * <code>repeated .GCGCard history_card_list = 1872;</code>
+     */
+    java.util.List<emu.grasscutter.net.proto.GCGCardOuterClass.GCGCard> 
+        getHistoryCardListList();
+    /**
+     * <code>repeated .GCGCard history_card_list = 1872;</code>
+     */
+    emu.grasscutter.net.proto.GCGCardOuterClass.GCGCard getHistoryCardList(int index);
+    /**
+     * <code>repeated .GCGCard history_card_list = 1872;</code>
+     */
+    int getHistoryCardListCount();
+    /**
+     * <code>repeated .GCGCard history_card_list = 1872;</code>
+     */
+    java.util.List<? extends emu.grasscutter.net.proto.GCGCardOuterClass.GCGCardOrBuilder> 
+        getHistoryCardListOrBuilderList();
+    /**
+     * <code>repeated .GCGCard history_card_list = 1872;</code>
+     */
+    emu.grasscutter.net.proto.GCGCardOuterClass.GCGCardOrBuilder getHistoryCardListOrBuilder(
+        int index);
+
+    /**
+     * <code>uint32 round = 11;</code>
      * @return The round.
      */
     int getRound();
 
     /**
-     * <code>uint32 cur_controller_id = 12;</code>
-     * @return The curControllerId.
+     * <code>uint32 controller_id = 12;</code>
+     * @return The controllerId.
      */
-    int getCurControllerId();
+    int getControllerId();
 
     /**
-     * <code>repeated .GCGPVEIntention intetion_list = 1;</code>
+     * <code>repeated .GCGMessagePack history_msg_pack_list = 797;</code>
      */
-    java.util.List<emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntention> 
-        getIntetionListList();
+    java.util.List<emu.grasscutter.net.proto.GCGMessagePackOuterClass.GCGMessagePack> 
+        getHistoryMsgPackListList();
     /**
-     * <code>repeated .GCGPVEIntention intetion_list = 1;</code>
+     * <code>repeated .GCGMessagePack history_msg_pack_list = 797;</code>
      */
-    emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntention getIntetionList(int index);
+    emu.grasscutter.net.proto.GCGMessagePackOuterClass.GCGMessagePack getHistoryMsgPackList(int index);
     /**
-     * <code>repeated .GCGPVEIntention intetion_list = 1;</code>
+     * <code>repeated .GCGMessagePack history_msg_pack_list = 797;</code>
      */
-    int getIntetionListCount();
+    int getHistoryMsgPackListCount();
     /**
-     * <code>repeated .GCGPVEIntention intetion_list = 1;</code>
+     * <code>repeated .GCGMessagePack history_msg_pack_list = 797;</code>
      */
-    java.util.List<? extends emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntentionOrBuilder> 
-        getIntetionListOrBuilderList();
+    java.util.List<? extends emu.grasscutter.net.proto.GCGMessagePackOuterClass.GCGMessagePackOrBuilder> 
+        getHistoryMsgPackListOrBuilderList();
     /**
-     * <code>repeated .GCGPVEIntention intetion_list = 1;</code>
+     * <code>repeated .GCGMessagePack history_msg_pack_list = 797;</code>
      */
-    emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntentionOrBuilder getIntetionListOrBuilder(
+    emu.grasscutter.net.proto.GCGMessagePackOuterClass.GCGMessagePackOrBuilder getHistoryMsgPackListOrBuilder(
         int index);
 
     /**
-     * <code>.GCGCostReviseInfo cost_revise = 10;</code>
-     * @return Whether the costRevise field is set.
+     * <code>uint32 Unk3300_JHDDNKFPINA = 10;</code>
+     * @return The unk3300JHDDNKFPINA.
      */
-    boolean hasCostRevise();
-    /**
-     * <code>.GCGCostReviseInfo cost_revise = 10;</code>
-     * @return The costRevise.
-     */
-    emu.grasscutter.net.proto.GCGCostReviseInfoOuterClass.GCGCostReviseInfo getCostRevise();
-    /**
-     * <code>.GCGCostReviseInfo cost_revise = 10;</code>
-     */
-    emu.grasscutter.net.proto.GCGCostReviseInfoOuterClass.GCGCostReviseInfoOrBuilder getCostReviseOrBuilder();
+    int getUnk3300JHDDNKFPINA();
 
     /**
-     * <code>repeated uint32 card_id_list = 4;</code>
+     * <code>repeated uint32 card_id_list = 6;</code>
      * @return A list containing the cardIdList.
      */
     java.util.List<java.lang.Integer> getCardIdListList();
     /**
-     * <code>repeated uint32 card_id_list = 4;</code>
+     * <code>repeated uint32 card_id_list = 6;</code>
      * @return The count of cardIdList.
      */
     int getCardIdListCount();
     /**
-     * <code>repeated uint32 card_id_list = 4;</code>
+     * <code>repeated uint32 card_id_list = 6;</code>
      * @param index The index of the element to return.
      * @return The cardIdList at the given index.
      */
     int getCardIdList(int index);
 
     /**
-     * <code>repeated .GCGCard card_list = 9;</code>
+     * <code>uint32 Unk3300_JBBMBKGOONO = 15;</code>
+     * @return The unk3300JBBMBKGOONO.
      */
-    java.util.List<emu.grasscutter.net.proto.GCGCardOuterClass.GCGCard> 
-        getCardListList();
-    /**
-     * <code>repeated .GCGCard card_list = 9;</code>
-     */
-    emu.grasscutter.net.proto.GCGCardOuterClass.GCGCard getCardList(int index);
-    /**
-     * <code>repeated .GCGCard card_list = 9;</code>
-     */
-    int getCardListCount();
-    /**
-     * <code>repeated .GCGCard card_list = 9;</code>
-     */
-    java.util.List<? extends emu.grasscutter.net.proto.GCGCardOuterClass.GCGCardOrBuilder> 
-        getCardListOrBuilderList();
-    /**
-     * <code>repeated .GCGCard card_list = 9;</code>
-     */
-    emu.grasscutter.net.proto.GCGCardOuterClass.GCGCardOrBuilder getCardListOrBuilder(
-        int index);
+    int getUnk3300JBBMBKGOONO();
 
     /**
-     * <code>repeated .GCGControllerShowInfo show_info_list = 6;</code>
-     */
-    java.util.List<emu.grasscutter.net.proto.GCGControllerShowInfoOuterClass.GCGControllerShowInfo> 
-        getShowInfoListList();
-    /**
-     * <code>repeated .GCGControllerShowInfo show_info_list = 6;</code>
-     */
-    emu.grasscutter.net.proto.GCGControllerShowInfoOuterClass.GCGControllerShowInfo getShowInfoList(int index);
-    /**
-     * <code>repeated .GCGControllerShowInfo show_info_list = 6;</code>
-     */
-    int getShowInfoListCount();
-    /**
-     * <code>repeated .GCGControllerShowInfo show_info_list = 6;</code>
-     */
-    java.util.List<? extends emu.grasscutter.net.proto.GCGControllerShowInfoOuterClass.GCGControllerShowInfoOrBuilder> 
-        getShowInfoListOrBuilderList();
-    /**
-     * <code>repeated .GCGControllerShowInfo show_info_list = 6;</code>
-     */
-    emu.grasscutter.net.proto.GCGControllerShowInfoOuterClass.GCGControllerShowInfoOrBuilder getShowInfoListOrBuilder(
-        int index);
-
-    /**
-     * <code>uint32 game_type = 2;</code>
-     * @return The gameType.
-     */
-    int getGameType();
-
-    /**
-     * <code>.GCGPhase phase = 8;</code>
+     * <code>.GCGPhase phase = 14;</code>
      * @return Whether the phase field is set.
      */
     boolean hasPhase();
     /**
-     * <code>.GCGPhase phase = 8;</code>
+     * <code>.GCGPhase phase = 14;</code>
      * @return The phase.
      */
     emu.grasscutter.net.proto.GCGPhaseOuterClass.GCGPhase getPhase();
     /**
-     * <code>.GCGPhase phase = 8;</code>
+     * <code>.GCGPhase phase = 14;</code>
      */
     emu.grasscutter.net.proto.GCGPhaseOuterClass.GCGPhaseOrBuilder getPhaseOrBuilder();
   }
@@ -245,13 +340,17 @@ public final class GCGDuelOuterClass {
       super(builder);
     }
     private GCGDuel() {
-      fieldList_ = java.util.Collections.emptyList();
-      businessType_ = 0;
-      challengeList_ = java.util.Collections.emptyList();
-      intetionList_ = java.util.Collections.emptyList();
-      cardIdList_ = emptyIntList();
-      cardList_ = java.util.Collections.emptyList();
       showInfoList_ = java.util.Collections.emptyList();
+      forbidFinishChallengeList_ = emptyIntList();
+      cardList_ = java.util.Collections.emptyList();
+      fieldList_ = java.util.Collections.emptyList();
+      unk3300CDCMBOKBLAK_ = java.util.Collections.emptyList();
+      businessType_ = 0;
+      intentionList_ = java.util.Collections.emptyList();
+      challengeList_ = java.util.Collections.emptyList();
+      historyCardList_ = java.util.Collections.emptyList();
+      historyMsgPackList_ = java.util.Collections.emptyList();
+      cardIdList_ = emptyIntList();
     }
 
     @java.lang.Override
@@ -287,16 +386,20 @@ public final class GCGDuelOuterClass {
               break;
             case 10: {
               if (!((mutable_bitField0_ & 0x00000004) != 0)) {
-                intetionList_ = new java.util.ArrayList<emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntention>();
+                cardList_ = new java.util.ArrayList<emu.grasscutter.net.proto.GCGCardOuterClass.GCGCard>();
                 mutable_bitField0_ |= 0x00000004;
               }
-              intetionList_.add(
-                  input.readMessage(emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntention.parser(), extensionRegistry));
+              cardList_.add(
+                  input.readMessage(emu.grasscutter.net.proto.GCGCardOuterClass.GCGCard.parser(), extensionRegistry));
               break;
             }
-            case 16: {
-
-              gameType_ = input.readUInt32();
+            case 18: {
+              if (!((mutable_bitField0_ & 0x00000020) != 0)) {
+                intentionList_ = new java.util.ArrayList<emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntention>();
+                mutable_bitField0_ |= 0x00000020;
+              }
+              intentionList_.add(
+                  input.readMessage(emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntention.parser(), extensionRegistry));
               break;
             }
             case 24: {
@@ -305,19 +408,33 @@ public final class GCGDuelOuterClass {
               break;
             }
             case 32: {
+
+              gameId_ = input.readUInt32();
+              break;
+            }
+            case 42: {
               if (!((mutable_bitField0_ & 0x00000008) != 0)) {
-                cardIdList_ = newIntList();
+                fieldList_ = new java.util.ArrayList<emu.grasscutter.net.proto.GCGPlayerFieldOuterClass.GCGPlayerField>();
                 mutable_bitField0_ |= 0x00000008;
+              }
+              fieldList_.add(
+                  input.readMessage(emu.grasscutter.net.proto.GCGPlayerFieldOuterClass.GCGPlayerField.parser(), extensionRegistry));
+              break;
+            }
+            case 48: {
+              if (!((mutable_bitField0_ & 0x00000200) != 0)) {
+                cardIdList_ = newIntList();
+                mutable_bitField0_ |= 0x00000200;
               }
               cardIdList_.addInt(input.readUInt32());
               break;
             }
-            case 34: {
+            case 50: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000008) != 0) && input.getBytesUntilLimit() > 0) {
+              if (!((mutable_bitField0_ & 0x00000200) != 0) && input.getBytesUntilLimit() > 0) {
                 cardIdList_ = newIntList();
-                mutable_bitField0_ |= 0x00000008;
+                mutable_bitField0_ |= 0x00000200;
               }
               while (input.getBytesUntilLimit() > 0) {
                 cardIdList_.addInt(input.readUInt32());
@@ -325,56 +442,16 @@ public final class GCGDuelOuterClass {
               input.popLimit(limit);
               break;
             }
-            case 42: {
-              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
-                challengeList_ = new java.util.ArrayList<emu.grasscutter.net.proto.GCGDuelChallengeOuterClass.GCGDuelChallenge>();
-                mutable_bitField0_ |= 0x00000002;
-              }
-              challengeList_.add(
-                  input.readMessage(emu.grasscutter.net.proto.GCGDuelChallengeOuterClass.GCGDuelChallenge.parser(), extensionRegistry));
-              break;
-            }
-            case 50: {
-              if (!((mutable_bitField0_ & 0x00000020) != 0)) {
+            case 58: {
+              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 showInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.GCGControllerShowInfoOuterClass.GCGControllerShowInfo>();
-                mutable_bitField0_ |= 0x00000020;
+                mutable_bitField0_ |= 0x00000001;
               }
               showInfoList_.add(
                   input.readMessage(emu.grasscutter.net.proto.GCGControllerShowInfoOuterClass.GCGControllerShowInfo.parser(), extensionRegistry));
               break;
             }
-            case 58: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                fieldList_ = new java.util.ArrayList<emu.grasscutter.net.proto.GCGPlayerFieldOuterClass.GCGPlayerField>();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              fieldList_.add(
-                  input.readMessage(emu.grasscutter.net.proto.GCGPlayerFieldOuterClass.GCGPlayerField.parser(), extensionRegistry));
-              break;
-            }
             case 66: {
-              emu.grasscutter.net.proto.GCGPhaseOuterClass.GCGPhase.Builder subBuilder = null;
-              if (phase_ != null) {
-                subBuilder = phase_.toBuilder();
-              }
-              phase_ = input.readMessage(emu.grasscutter.net.proto.GCGPhaseOuterClass.GCGPhase.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom(phase_);
-                phase_ = subBuilder.buildPartial();
-              }
-
-              break;
-            }
-            case 74: {
-              if (!((mutable_bitField0_ & 0x00000010) != 0)) {
-                cardList_ = new java.util.ArrayList<emu.grasscutter.net.proto.GCGCardOuterClass.GCGCard>();
-                mutable_bitField0_ |= 0x00000010;
-              }
-              cardList_.add(
-                  input.readMessage(emu.grasscutter.net.proto.GCGCardOuterClass.GCGCard.parser(), extensionRegistry));
-              break;
-            }
-            case 82: {
               emu.grasscutter.net.proto.GCGCostReviseInfoOuterClass.GCGCostReviseInfo.Builder subBuilder = null;
               if (costRevise_ != null) {
                 subBuilder = costRevise_.toBuilder();
@@ -387,30 +464,105 @@ public final class GCGDuelOuterClass {
 
               break;
             }
+            case 72: {
+
+              unk3300BIANMOPDEHO_ = input.readUInt32();
+              break;
+            }
+            case 80: {
+
+              unk3300JHDDNKFPINA_ = input.readUInt32();
+              break;
+            }
             case 88: {
 
-              gameId_ = input.readUInt32();
+              round_ = input.readUInt32();
               break;
             }
             case 96: {
 
-              curControllerId_ = input.readUInt32();
-              break;
-            }
-            case 104: {
-
               controllerId_ = input.readUInt32();
               break;
             }
-            case 112: {
+            case 104: {
               int rawValue = input.readEnum();
 
               businessType_ = rawValue;
               break;
             }
+            case 114: {
+              emu.grasscutter.net.proto.GCGPhaseOuterClass.GCGPhase.Builder subBuilder = null;
+              if (phase_ != null) {
+                subBuilder = phase_.toBuilder();
+              }
+              phase_ = input.readMessage(emu.grasscutter.net.proto.GCGPhaseOuterClass.GCGPhase.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(phase_);
+                phase_ = subBuilder.buildPartial();
+              }
+
+              break;
+            }
             case 120: {
 
-              round_ = input.readUInt32();
+              unk3300JBBMBKGOONO_ = input.readUInt32();
+              break;
+            }
+            case 1536: {
+              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
+                forbidFinishChallengeList_ = newIntList();
+                mutable_bitField0_ |= 0x00000002;
+              }
+              forbidFinishChallengeList_.addInt(input.readUInt32());
+              break;
+            }
+            case 1538: {
+              int length = input.readRawVarint32();
+              int limit = input.pushLimit(length);
+              if (!((mutable_bitField0_ & 0x00000002) != 0) && input.getBytesUntilLimit() > 0) {
+                forbidFinishChallengeList_ = newIntList();
+                mutable_bitField0_ |= 0x00000002;
+              }
+              while (input.getBytesUntilLimit() > 0) {
+                forbidFinishChallengeList_.addInt(input.readUInt32());
+              }
+              input.popLimit(limit);
+              break;
+            }
+            case 6378: {
+              if (!((mutable_bitField0_ & 0x00000100) != 0)) {
+                historyMsgPackList_ = new java.util.ArrayList<emu.grasscutter.net.proto.GCGMessagePackOuterClass.GCGMessagePack>();
+                mutable_bitField0_ |= 0x00000100;
+              }
+              historyMsgPackList_.add(
+                  input.readMessage(emu.grasscutter.net.proto.GCGMessagePackOuterClass.GCGMessagePack.parser(), extensionRegistry));
+              break;
+            }
+            case 12938: {
+              if (!((mutable_bitField0_ & 0x00000040) != 0)) {
+                challengeList_ = new java.util.ArrayList<emu.grasscutter.net.proto.GCGDuelChallengeOuterClass.GCGDuelChallenge>();
+                mutable_bitField0_ |= 0x00000040;
+              }
+              challengeList_.add(
+                  input.readMessage(emu.grasscutter.net.proto.GCGDuelChallengeOuterClass.GCGDuelChallenge.parser(), extensionRegistry));
+              break;
+            }
+            case 14978: {
+              if (!((mutable_bitField0_ & 0x00000080) != 0)) {
+                historyCardList_ = new java.util.ArrayList<emu.grasscutter.net.proto.GCGCardOuterClass.GCGCard>();
+                mutable_bitField0_ |= 0x00000080;
+              }
+              historyCardList_.add(
+                  input.readMessage(emu.grasscutter.net.proto.GCGCardOuterClass.GCGCard.parser(), extensionRegistry));
+              break;
+            }
+            case 15898: {
+              if (!((mutable_bitField0_ & 0x00000010) != 0)) {
+                unk3300CDCMBOKBLAK_ = new java.util.ArrayList<emu.grasscutter.net.proto.Unk3300ADHENCIFKNI.Unk3300_ADHENCIFKNI>();
+                mutable_bitField0_ |= 0x00000010;
+              }
+              unk3300CDCMBOKBLAK_.add(
+                  input.readMessage(emu.grasscutter.net.proto.Unk3300ADHENCIFKNI.Unk3300_ADHENCIFKNI.parser(), extensionRegistry));
               break;
             }
             default: {
@@ -429,22 +581,34 @@ public final class GCGDuelOuterClass {
             e).setUnfinishedMessage(this);
       } finally {
         if (((mutable_bitField0_ & 0x00000004) != 0)) {
-          intetionList_ = java.util.Collections.unmodifiableList(intetionList_);
-        }
-        if (((mutable_bitField0_ & 0x00000008) != 0)) {
-          cardIdList_.makeImmutable(); // C
-        }
-        if (((mutable_bitField0_ & 0x00000002) != 0)) {
-          challengeList_ = java.util.Collections.unmodifiableList(challengeList_);
+          cardList_ = java.util.Collections.unmodifiableList(cardList_);
         }
         if (((mutable_bitField0_ & 0x00000020) != 0)) {
-          showInfoList_ = java.util.Collections.unmodifiableList(showInfoList_);
+          intentionList_ = java.util.Collections.unmodifiableList(intentionList_);
         }
-        if (((mutable_bitField0_ & 0x00000001) != 0)) {
+        if (((mutable_bitField0_ & 0x00000008) != 0)) {
           fieldList_ = java.util.Collections.unmodifiableList(fieldList_);
         }
+        if (((mutable_bitField0_ & 0x00000200) != 0)) {
+          cardIdList_.makeImmutable(); // C
+        }
+        if (((mutable_bitField0_ & 0x00000001) != 0)) {
+          showInfoList_ = java.util.Collections.unmodifiableList(showInfoList_);
+        }
+        if (((mutable_bitField0_ & 0x00000002) != 0)) {
+          forbidFinishChallengeList_.makeImmutable(); // C
+        }
+        if (((mutable_bitField0_ & 0x00000100) != 0)) {
+          historyMsgPackList_ = java.util.Collections.unmodifiableList(historyMsgPackList_);
+        }
+        if (((mutable_bitField0_ & 0x00000040) != 0)) {
+          challengeList_ = java.util.Collections.unmodifiableList(challengeList_);
+        }
+        if (((mutable_bitField0_ & 0x00000080) != 0)) {
+          historyCardList_ = java.util.Collections.unmodifiableList(historyCardList_);
+        }
         if (((mutable_bitField0_ & 0x00000010) != 0)) {
-          cardList_ = java.util.Collections.unmodifiableList(cardList_);
+          unk3300CDCMBOKBLAK_ = java.util.Collections.unmodifiableList(unk3300CDCMBOKBLAK_);
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -474,17 +638,173 @@ public final class GCGDuelOuterClass {
       return serverSeq_;
     }
 
-    public static final int FIELD_LIST_FIELD_NUMBER = 7;
+    public static final int SHOW_INFO_LIST_FIELD_NUMBER = 7;
+    private java.util.List<emu.grasscutter.net.proto.GCGControllerShowInfoOuterClass.GCGControllerShowInfo> showInfoList_;
+    /**
+     * <code>repeated .GCGControllerShowInfo show_info_list = 7;</code>
+     */
+    @java.lang.Override
+    public java.util.List<emu.grasscutter.net.proto.GCGControllerShowInfoOuterClass.GCGControllerShowInfo> getShowInfoListList() {
+      return showInfoList_;
+    }
+    /**
+     * <code>repeated .GCGControllerShowInfo show_info_list = 7;</code>
+     */
+    @java.lang.Override
+    public java.util.List<? extends emu.grasscutter.net.proto.GCGControllerShowInfoOuterClass.GCGControllerShowInfoOrBuilder> 
+        getShowInfoListOrBuilderList() {
+      return showInfoList_;
+    }
+    /**
+     * <code>repeated .GCGControllerShowInfo show_info_list = 7;</code>
+     */
+    @java.lang.Override
+    public int getShowInfoListCount() {
+      return showInfoList_.size();
+    }
+    /**
+     * <code>repeated .GCGControllerShowInfo show_info_list = 7;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.GCGControllerShowInfoOuterClass.GCGControllerShowInfo getShowInfoList(int index) {
+      return showInfoList_.get(index);
+    }
+    /**
+     * <code>repeated .GCGControllerShowInfo show_info_list = 7;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.GCGControllerShowInfoOuterClass.GCGControllerShowInfoOrBuilder getShowInfoListOrBuilder(
+        int index) {
+      return showInfoList_.get(index);
+    }
+
+    public static final int FORBID_FINISH_CHALLENGE_LIST_FIELD_NUMBER = 192;
+    private com.google.protobuf.Internal.IntList forbidFinishChallengeList_;
+    /**
+     * <code>repeated uint32 forbid_finish_challenge_list = 192;</code>
+     * @return A list containing the forbidFinishChallengeList.
+     */
+    @java.lang.Override
+    public java.util.List<java.lang.Integer>
+        getForbidFinishChallengeListList() {
+      return forbidFinishChallengeList_;
+    }
+    /**
+     * <code>repeated uint32 forbid_finish_challenge_list = 192;</code>
+     * @return The count of forbidFinishChallengeList.
+     */
+    public int getForbidFinishChallengeListCount() {
+      return forbidFinishChallengeList_.size();
+    }
+    /**
+     * <code>repeated uint32 forbid_finish_challenge_list = 192;</code>
+     * @param index The index of the element to return.
+     * @return The forbidFinishChallengeList at the given index.
+     */
+    public int getForbidFinishChallengeList(int index) {
+      return forbidFinishChallengeList_.getInt(index);
+    }
+    private int forbidFinishChallengeListMemoizedSerializedSize = -1;
+
+    public static final int CARD_LIST_FIELD_NUMBER = 1;
+    private java.util.List<emu.grasscutter.net.proto.GCGCardOuterClass.GCGCard> cardList_;
+    /**
+     * <code>repeated .GCGCard card_list = 1;</code>
+     */
+    @java.lang.Override
+    public java.util.List<emu.grasscutter.net.proto.GCGCardOuterClass.GCGCard> getCardListList() {
+      return cardList_;
+    }
+    /**
+     * <code>repeated .GCGCard card_list = 1;</code>
+     */
+    @java.lang.Override
+    public java.util.List<? extends emu.grasscutter.net.proto.GCGCardOuterClass.GCGCardOrBuilder> 
+        getCardListOrBuilderList() {
+      return cardList_;
+    }
+    /**
+     * <code>repeated .GCGCard card_list = 1;</code>
+     */
+    @java.lang.Override
+    public int getCardListCount() {
+      return cardList_.size();
+    }
+    /**
+     * <code>repeated .GCGCard card_list = 1;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.GCGCardOuterClass.GCGCard getCardList(int index) {
+      return cardList_.get(index);
+    }
+    /**
+     * <code>repeated .GCGCard card_list = 1;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.GCGCardOuterClass.GCGCardOrBuilder getCardListOrBuilder(
+        int index) {
+      return cardList_.get(index);
+    }
+
+    public static final int UNK3300_BIANMOPDEHO_FIELD_NUMBER = 9;
+    private int unk3300BIANMOPDEHO_;
+    /**
+     * <code>uint32 Unk3300_BIANMOPDEHO = 9;</code>
+     * @return The unk3300BIANMOPDEHO.
+     */
+    @java.lang.Override
+    public int getUnk3300BIANMOPDEHO() {
+      return unk3300BIANMOPDEHO_;
+    }
+
+    public static final int COST_REVISE_FIELD_NUMBER = 8;
+    private emu.grasscutter.net.proto.GCGCostReviseInfoOuterClass.GCGCostReviseInfo costRevise_;
+    /**
+     * <code>.GCGCostReviseInfo cost_revise = 8;</code>
+     * @return Whether the costRevise field is set.
+     */
+    @java.lang.Override
+    public boolean hasCostRevise() {
+      return costRevise_ != null;
+    }
+    /**
+     * <code>.GCGCostReviseInfo cost_revise = 8;</code>
+     * @return The costRevise.
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.GCGCostReviseInfoOuterClass.GCGCostReviseInfo getCostRevise() {
+      return costRevise_ == null ? emu.grasscutter.net.proto.GCGCostReviseInfoOuterClass.GCGCostReviseInfo.getDefaultInstance() : costRevise_;
+    }
+    /**
+     * <code>.GCGCostReviseInfo cost_revise = 8;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.GCGCostReviseInfoOuterClass.GCGCostReviseInfoOrBuilder getCostReviseOrBuilder() {
+      return getCostRevise();
+    }
+
+    public static final int GAME_ID_FIELD_NUMBER = 4;
+    private int gameId_;
+    /**
+     * <code>uint32 game_id = 4;</code>
+     * @return The gameId.
+     */
+    @java.lang.Override
+    public int getGameId() {
+      return gameId_;
+    }
+
+    public static final int FIELD_LIST_FIELD_NUMBER = 5;
     private java.util.List<emu.grasscutter.net.proto.GCGPlayerFieldOuterClass.GCGPlayerField> fieldList_;
     /**
-     * <code>repeated .GCGPlayerField field_list = 7;</code>
+     * <code>repeated .GCGPlayerField field_list = 5;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.GCGPlayerFieldOuterClass.GCGPlayerField> getFieldListList() {
       return fieldList_;
     }
     /**
-     * <code>repeated .GCGPlayerField field_list = 7;</code>
+     * <code>repeated .GCGPlayerField field_list = 5;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.GCGPlayerFieldOuterClass.GCGPlayerFieldOrBuilder> 
@@ -492,21 +812,21 @@ public final class GCGDuelOuterClass {
       return fieldList_;
     }
     /**
-     * <code>repeated .GCGPlayerField field_list = 7;</code>
+     * <code>repeated .GCGPlayerField field_list = 5;</code>
      */
     @java.lang.Override
     public int getFieldListCount() {
       return fieldList_.size();
     }
     /**
-     * <code>repeated .GCGPlayerField field_list = 7;</code>
+     * <code>repeated .GCGPlayerField field_list = 5;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.GCGPlayerFieldOuterClass.GCGPlayerField getFieldList(int index) {
       return fieldList_.get(index);
     }
     /**
-     * <code>repeated .GCGPlayerField field_list = 7;</code>
+     * <code>repeated .GCGPlayerField field_list = 5;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.GCGPlayerFieldOuterClass.GCGPlayerFieldOrBuilder getFieldListOrBuilder(
@@ -514,17 +834,57 @@ public final class GCGDuelOuterClass {
       return fieldList_.get(index);
     }
 
-    public static final int BUSINESS_TYPE_FIELD_NUMBER = 14;
+    public static final int UNK3300_CDCMBOKBLAK_FIELD_NUMBER = 1987;
+    private java.util.List<emu.grasscutter.net.proto.Unk3300ADHENCIFKNI.Unk3300_ADHENCIFKNI> unk3300CDCMBOKBLAK_;
+    /**
+     * <code>repeated .Unk3300_ADHENCIFKNI Unk3300_CDCMBOKBLAK = 1987;</code>
+     */
+    @java.lang.Override
+    public java.util.List<emu.grasscutter.net.proto.Unk3300ADHENCIFKNI.Unk3300_ADHENCIFKNI> getUnk3300CDCMBOKBLAKList() {
+      return unk3300CDCMBOKBLAK_;
+    }
+    /**
+     * <code>repeated .Unk3300_ADHENCIFKNI Unk3300_CDCMBOKBLAK = 1987;</code>
+     */
+    @java.lang.Override
+    public java.util.List<? extends emu.grasscutter.net.proto.Unk3300ADHENCIFKNI.Unk3300_ADHENCIFKNIOrBuilder> 
+        getUnk3300CDCMBOKBLAKOrBuilderList() {
+      return unk3300CDCMBOKBLAK_;
+    }
+    /**
+     * <code>repeated .Unk3300_ADHENCIFKNI Unk3300_CDCMBOKBLAK = 1987;</code>
+     */
+    @java.lang.Override
+    public int getUnk3300CDCMBOKBLAKCount() {
+      return unk3300CDCMBOKBLAK_.size();
+    }
+    /**
+     * <code>repeated .Unk3300_ADHENCIFKNI Unk3300_CDCMBOKBLAK = 1987;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.Unk3300ADHENCIFKNI.Unk3300_ADHENCIFKNI getUnk3300CDCMBOKBLAK(int index) {
+      return unk3300CDCMBOKBLAK_.get(index);
+    }
+    /**
+     * <code>repeated .Unk3300_ADHENCIFKNI Unk3300_CDCMBOKBLAK = 1987;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.Unk3300ADHENCIFKNI.Unk3300_ADHENCIFKNIOrBuilder getUnk3300CDCMBOKBLAKOrBuilder(
+        int index) {
+      return unk3300CDCMBOKBLAK_.get(index);
+    }
+
+    public static final int BUSINESS_TYPE_FIELD_NUMBER = 13;
     private int businessType_;
     /**
-     * <code>.GCGGameBusinessType business_type = 14;</code>
+     * <code>.GCGGameBusinessType business_type = 13;</code>
      * @return The enum numeric value on the wire for businessType.
      */
     @java.lang.Override public int getBusinessTypeValue() {
       return businessType_;
     }
     /**
-     * <code>.GCGGameBusinessType business_type = 14;</code>
+     * <code>.GCGGameBusinessType business_type = 13;</code>
      * @return The businessType.
      */
     @java.lang.Override public emu.grasscutter.net.proto.GCGGameBusinessTypeOuterClass.GCGGameBusinessType getBusinessType() {
@@ -533,17 +893,57 @@ public final class GCGDuelOuterClass {
       return result == null ? emu.grasscutter.net.proto.GCGGameBusinessTypeOuterClass.GCGGameBusinessType.UNRECOGNIZED : result;
     }
 
-    public static final int CHALLENGE_LIST_FIELD_NUMBER = 5;
+    public static final int INTENTION_LIST_FIELD_NUMBER = 2;
+    private java.util.List<emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntention> intentionList_;
+    /**
+     * <code>repeated .GCGPVEIntention intention_list = 2;</code>
+     */
+    @java.lang.Override
+    public java.util.List<emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntention> getIntentionListList() {
+      return intentionList_;
+    }
+    /**
+     * <code>repeated .GCGPVEIntention intention_list = 2;</code>
+     */
+    @java.lang.Override
+    public java.util.List<? extends emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntentionOrBuilder> 
+        getIntentionListOrBuilderList() {
+      return intentionList_;
+    }
+    /**
+     * <code>repeated .GCGPVEIntention intention_list = 2;</code>
+     */
+    @java.lang.Override
+    public int getIntentionListCount() {
+      return intentionList_.size();
+    }
+    /**
+     * <code>repeated .GCGPVEIntention intention_list = 2;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntention getIntentionList(int index) {
+      return intentionList_.get(index);
+    }
+    /**
+     * <code>repeated .GCGPVEIntention intention_list = 2;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntentionOrBuilder getIntentionListOrBuilder(
+        int index) {
+      return intentionList_.get(index);
+    }
+
+    public static final int CHALLENGE_LIST_FIELD_NUMBER = 1617;
     private java.util.List<emu.grasscutter.net.proto.GCGDuelChallengeOuterClass.GCGDuelChallenge> challengeList_;
     /**
-     * <code>repeated .GCGDuelChallenge challenge_list = 5;</code>
+     * <code>repeated .GCGDuelChallenge challenge_list = 1617;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.GCGDuelChallengeOuterClass.GCGDuelChallenge> getChallengeListList() {
       return challengeList_;
     }
     /**
-     * <code>repeated .GCGDuelChallenge challenge_list = 5;</code>
+     * <code>repeated .GCGDuelChallenge challenge_list = 1617;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.GCGDuelChallengeOuterClass.GCGDuelChallengeOrBuilder> 
@@ -551,21 +951,21 @@ public final class GCGDuelOuterClass {
       return challengeList_;
     }
     /**
-     * <code>repeated .GCGDuelChallenge challenge_list = 5;</code>
+     * <code>repeated .GCGDuelChallenge challenge_list = 1617;</code>
      */
     @java.lang.Override
     public int getChallengeListCount() {
       return challengeList_.size();
     }
     /**
-     * <code>repeated .GCGDuelChallenge challenge_list = 5;</code>
+     * <code>repeated .GCGDuelChallenge challenge_list = 1617;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.GCGDuelChallengeOuterClass.GCGDuelChallenge getChallengeList(int index) {
       return challengeList_.get(index);
     }
     /**
-     * <code>repeated .GCGDuelChallenge challenge_list = 5;</code>
+     * <code>repeated .GCGDuelChallenge challenge_list = 1617;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.GCGDuelChallengeOuterClass.GCGDuelChallengeOrBuilder getChallengeListOrBuilder(
@@ -573,32 +973,50 @@ public final class GCGDuelOuterClass {
       return challengeList_.get(index);
     }
 
-    public static final int GAME_ID_FIELD_NUMBER = 11;
-    private int gameId_;
+    public static final int HISTORY_CARD_LIST_FIELD_NUMBER = 1872;
+    private java.util.List<emu.grasscutter.net.proto.GCGCardOuterClass.GCGCard> historyCardList_;
     /**
-     * <code>uint32 game_id = 11;</code>
-     * @return The gameId.
+     * <code>repeated .GCGCard history_card_list = 1872;</code>
      */
     @java.lang.Override
-    public int getGameId() {
-      return gameId_;
+    public java.util.List<emu.grasscutter.net.proto.GCGCardOuterClass.GCGCard> getHistoryCardListList() {
+      return historyCardList_;
     }
-
-    public static final int CONTROLLER_ID_FIELD_NUMBER = 13;
-    private int controllerId_;
     /**
-     * <code>uint32 controller_id = 13;</code>
-     * @return The controllerId.
+     * <code>repeated .GCGCard history_card_list = 1872;</code>
      */
     @java.lang.Override
-    public int getControllerId() {
-      return controllerId_;
+    public java.util.List<? extends emu.grasscutter.net.proto.GCGCardOuterClass.GCGCardOrBuilder> 
+        getHistoryCardListOrBuilderList() {
+      return historyCardList_;
+    }
+    /**
+     * <code>repeated .GCGCard history_card_list = 1872;</code>
+     */
+    @java.lang.Override
+    public int getHistoryCardListCount() {
+      return historyCardList_.size();
+    }
+    /**
+     * <code>repeated .GCGCard history_card_list = 1872;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.GCGCardOuterClass.GCGCard getHistoryCardList(int index) {
+      return historyCardList_.get(index);
+    }
+    /**
+     * <code>repeated .GCGCard history_card_list = 1872;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.GCGCardOuterClass.GCGCardOrBuilder getHistoryCardListOrBuilder(
+        int index) {
+      return historyCardList_.get(index);
     }
 
-    public static final int ROUND_FIELD_NUMBER = 15;
+    public static final int ROUND_FIELD_NUMBER = 11;
     private int round_;
     /**
-     * <code>uint32 round = 15;</code>
+     * <code>uint32 round = 11;</code>
      * @return The round.
      */
     @java.lang.Override
@@ -606,87 +1024,72 @@ public final class GCGDuelOuterClass {
       return round_;
     }
 
-    public static final int CUR_CONTROLLER_ID_FIELD_NUMBER = 12;
-    private int curControllerId_;
+    public static final int CONTROLLER_ID_FIELD_NUMBER = 12;
+    private int controllerId_;
     /**
-     * <code>uint32 cur_controller_id = 12;</code>
-     * @return The curControllerId.
+     * <code>uint32 controller_id = 12;</code>
+     * @return The controllerId.
      */
     @java.lang.Override
-    public int getCurControllerId() {
-      return curControllerId_;
+    public int getControllerId() {
+      return controllerId_;
     }
 
-    public static final int INTETION_LIST_FIELD_NUMBER = 1;
-    private java.util.List<emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntention> intetionList_;
+    public static final int HISTORY_MSG_PACK_LIST_FIELD_NUMBER = 797;
+    private java.util.List<emu.grasscutter.net.proto.GCGMessagePackOuterClass.GCGMessagePack> historyMsgPackList_;
     /**
-     * <code>repeated .GCGPVEIntention intetion_list = 1;</code>
+     * <code>repeated .GCGMessagePack history_msg_pack_list = 797;</code>
      */
     @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntention> getIntetionListList() {
-      return intetionList_;
+    public java.util.List<emu.grasscutter.net.proto.GCGMessagePackOuterClass.GCGMessagePack> getHistoryMsgPackListList() {
+      return historyMsgPackList_;
     }
     /**
-     * <code>repeated .GCGPVEIntention intetion_list = 1;</code>
+     * <code>repeated .GCGMessagePack history_msg_pack_list = 797;</code>
      */
     @java.lang.Override
-    public java.util.List<? extends emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntentionOrBuilder> 
-        getIntetionListOrBuilderList() {
-      return intetionList_;
+    public java.util.List<? extends emu.grasscutter.net.proto.GCGMessagePackOuterClass.GCGMessagePackOrBuilder> 
+        getHistoryMsgPackListOrBuilderList() {
+      return historyMsgPackList_;
     }
     /**
-     * <code>repeated .GCGPVEIntention intetion_list = 1;</code>
+     * <code>repeated .GCGMessagePack history_msg_pack_list = 797;</code>
      */
     @java.lang.Override
-    public int getIntetionListCount() {
-      return intetionList_.size();
+    public int getHistoryMsgPackListCount() {
+      return historyMsgPackList_.size();
     }
     /**
-     * <code>repeated .GCGPVEIntention intetion_list = 1;</code>
+     * <code>repeated .GCGMessagePack history_msg_pack_list = 797;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntention getIntetionList(int index) {
-      return intetionList_.get(index);
+    public emu.grasscutter.net.proto.GCGMessagePackOuterClass.GCGMessagePack getHistoryMsgPackList(int index) {
+      return historyMsgPackList_.get(index);
     }
     /**
-     * <code>repeated .GCGPVEIntention intetion_list = 1;</code>
+     * <code>repeated .GCGMessagePack history_msg_pack_list = 797;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntentionOrBuilder getIntetionListOrBuilder(
+    public emu.grasscutter.net.proto.GCGMessagePackOuterClass.GCGMessagePackOrBuilder getHistoryMsgPackListOrBuilder(
         int index) {
-      return intetionList_.get(index);
+      return historyMsgPackList_.get(index);
     }
 
-    public static final int COST_REVISE_FIELD_NUMBER = 10;
-    private emu.grasscutter.net.proto.GCGCostReviseInfoOuterClass.GCGCostReviseInfo costRevise_;
+    public static final int UNK3300_JHDDNKFPINA_FIELD_NUMBER = 10;
+    private int unk3300JHDDNKFPINA_;
     /**
-     * <code>.GCGCostReviseInfo cost_revise = 10;</code>
-     * @return Whether the costRevise field is set.
+     * <code>uint32 Unk3300_JHDDNKFPINA = 10;</code>
+     * @return The unk3300JHDDNKFPINA.
      */
     @java.lang.Override
-    public boolean hasCostRevise() {
-      return costRevise_ != null;
-    }
-    /**
-     * <code>.GCGCostReviseInfo cost_revise = 10;</code>
-     * @return The costRevise.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.GCGCostReviseInfoOuterClass.GCGCostReviseInfo getCostRevise() {
-      return costRevise_ == null ? emu.grasscutter.net.proto.GCGCostReviseInfoOuterClass.GCGCostReviseInfo.getDefaultInstance() : costRevise_;
-    }
-    /**
-     * <code>.GCGCostReviseInfo cost_revise = 10;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.GCGCostReviseInfoOuterClass.GCGCostReviseInfoOrBuilder getCostReviseOrBuilder() {
-      return getCostRevise();
+    public int getUnk3300JHDDNKFPINA() {
+      return unk3300JHDDNKFPINA_;
     }
 
-    public static final int CARD_ID_LIST_FIELD_NUMBER = 4;
+    public static final int CARD_ID_LIST_FIELD_NUMBER = 6;
     private com.google.protobuf.Internal.IntList cardIdList_;
     /**
-     * <code>repeated uint32 card_id_list = 4;</code>
+     * <code>repeated uint32 card_id_list = 6;</code>
      * @return A list containing the cardIdList.
      */
     @java.lang.Override
@@ -695,14 +1098,14 @@ public final class GCGDuelOuterClass {
       return cardIdList_;
     }
     /**
-     * <code>repeated uint32 card_id_list = 4;</code>
+     * <code>repeated uint32 card_id_list = 6;</code>
      * @return The count of cardIdList.
      */
     public int getCardIdListCount() {
       return cardIdList_.size();
     }
     /**
-     * <code>repeated uint32 card_id_list = 4;</code>
+     * <code>repeated uint32 card_id_list = 6;</code>
      * @param index The index of the element to return.
      * @return The cardIdList at the given index.
      */
@@ -711,101 +1114,21 @@ public final class GCGDuelOuterClass {
     }
     private int cardIdListMemoizedSerializedSize = -1;
 
-    public static final int CARD_LIST_FIELD_NUMBER = 9;
-    private java.util.List<emu.grasscutter.net.proto.GCGCardOuterClass.GCGCard> cardList_;
+    public static final int UNK3300_JBBMBKGOONO_FIELD_NUMBER = 15;
+    private int unk3300JBBMBKGOONO_;
     /**
-     * <code>repeated .GCGCard card_list = 9;</code>
+     * <code>uint32 Unk3300_JBBMBKGOONO = 15;</code>
+     * @return The unk3300JBBMBKGOONO.
      */
     @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.GCGCardOuterClass.GCGCard> getCardListList() {
-      return cardList_;
-    }
-    /**
-     * <code>repeated .GCGCard card_list = 9;</code>
-     */
-    @java.lang.Override
-    public java.util.List<? extends emu.grasscutter.net.proto.GCGCardOuterClass.GCGCardOrBuilder> 
-        getCardListOrBuilderList() {
-      return cardList_;
-    }
-    /**
-     * <code>repeated .GCGCard card_list = 9;</code>
-     */
-    @java.lang.Override
-    public int getCardListCount() {
-      return cardList_.size();
-    }
-    /**
-     * <code>repeated .GCGCard card_list = 9;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.GCGCardOuterClass.GCGCard getCardList(int index) {
-      return cardList_.get(index);
-    }
-    /**
-     * <code>repeated .GCGCard card_list = 9;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.GCGCardOuterClass.GCGCardOrBuilder getCardListOrBuilder(
-        int index) {
-      return cardList_.get(index);
+    public int getUnk3300JBBMBKGOONO() {
+      return unk3300JBBMBKGOONO_;
     }
 
-    public static final int SHOW_INFO_LIST_FIELD_NUMBER = 6;
-    private java.util.List<emu.grasscutter.net.proto.GCGControllerShowInfoOuterClass.GCGControllerShowInfo> showInfoList_;
-    /**
-     * <code>repeated .GCGControllerShowInfo show_info_list = 6;</code>
-     */
-    @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.GCGControllerShowInfoOuterClass.GCGControllerShowInfo> getShowInfoListList() {
-      return showInfoList_;
-    }
-    /**
-     * <code>repeated .GCGControllerShowInfo show_info_list = 6;</code>
-     */
-    @java.lang.Override
-    public java.util.List<? extends emu.grasscutter.net.proto.GCGControllerShowInfoOuterClass.GCGControllerShowInfoOrBuilder> 
-        getShowInfoListOrBuilderList() {
-      return showInfoList_;
-    }
-    /**
-     * <code>repeated .GCGControllerShowInfo show_info_list = 6;</code>
-     */
-    @java.lang.Override
-    public int getShowInfoListCount() {
-      return showInfoList_.size();
-    }
-    /**
-     * <code>repeated .GCGControllerShowInfo show_info_list = 6;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.GCGControllerShowInfoOuterClass.GCGControllerShowInfo getShowInfoList(int index) {
-      return showInfoList_.get(index);
-    }
-    /**
-     * <code>repeated .GCGControllerShowInfo show_info_list = 6;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.GCGControllerShowInfoOuterClass.GCGControllerShowInfoOrBuilder getShowInfoListOrBuilder(
-        int index) {
-      return showInfoList_.get(index);
-    }
-
-    public static final int GAME_TYPE_FIELD_NUMBER = 2;
-    private int gameType_;
-    /**
-     * <code>uint32 game_type = 2;</code>
-     * @return The gameType.
-     */
-    @java.lang.Override
-    public int getGameType() {
-      return gameType_;
-    }
-
-    public static final int PHASE_FIELD_NUMBER = 8;
+    public static final int PHASE_FIELD_NUMBER = 14;
     private emu.grasscutter.net.proto.GCGPhaseOuterClass.GCGPhase phase_;
     /**
-     * <code>.GCGPhase phase = 8;</code>
+     * <code>.GCGPhase phase = 14;</code>
      * @return Whether the phase field is set.
      */
     @java.lang.Override
@@ -813,7 +1136,7 @@ public final class GCGDuelOuterClass {
       return phase_ != null;
     }
     /**
-     * <code>.GCGPhase phase = 8;</code>
+     * <code>.GCGPhase phase = 14;</code>
      * @return The phase.
      */
     @java.lang.Override
@@ -821,7 +1144,7 @@ public final class GCGDuelOuterClass {
       return phase_ == null ? emu.grasscutter.net.proto.GCGPhaseOuterClass.GCGPhase.getDefaultInstance() : phase_;
     }
     /**
-     * <code>.GCGPhase phase = 8;</code>
+     * <code>.GCGPhase phase = 14;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.GCGPhaseOuterClass.GCGPhaseOrBuilder getPhaseOrBuilder() {
@@ -843,54 +1166,73 @@ public final class GCGDuelOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      for (int i = 0; i < intetionList_.size(); i++) {
-        output.writeMessage(1, intetionList_.get(i));
+      for (int i = 0; i < cardList_.size(); i++) {
+        output.writeMessage(1, cardList_.get(i));
       }
-      if (gameType_ != 0) {
-        output.writeUInt32(2, gameType_);
+      for (int i = 0; i < intentionList_.size(); i++) {
+        output.writeMessage(2, intentionList_.get(i));
       }
       if (serverSeq_ != 0) {
         output.writeUInt32(3, serverSeq_);
       }
+      if (gameId_ != 0) {
+        output.writeUInt32(4, gameId_);
+      }
+      for (int i = 0; i < fieldList_.size(); i++) {
+        output.writeMessage(5, fieldList_.get(i));
+      }
       if (getCardIdListList().size() > 0) {
-        output.writeUInt32NoTag(34);
+        output.writeUInt32NoTag(50);
         output.writeUInt32NoTag(cardIdListMemoizedSerializedSize);
       }
       for (int i = 0; i < cardIdList_.size(); i++) {
         output.writeUInt32NoTag(cardIdList_.getInt(i));
       }
-      for (int i = 0; i < challengeList_.size(); i++) {
-        output.writeMessage(5, challengeList_.get(i));
-      }
       for (int i = 0; i < showInfoList_.size(); i++) {
-        output.writeMessage(6, showInfoList_.get(i));
-      }
-      for (int i = 0; i < fieldList_.size(); i++) {
-        output.writeMessage(7, fieldList_.get(i));
-      }
-      if (phase_ != null) {
-        output.writeMessage(8, getPhase());
-      }
-      for (int i = 0; i < cardList_.size(); i++) {
-        output.writeMessage(9, cardList_.get(i));
+        output.writeMessage(7, showInfoList_.get(i));
       }
       if (costRevise_ != null) {
-        output.writeMessage(10, getCostRevise());
+        output.writeMessage(8, getCostRevise());
       }
-      if (gameId_ != 0) {
-        output.writeUInt32(11, gameId_);
+      if (unk3300BIANMOPDEHO_ != 0) {
+        output.writeUInt32(9, unk3300BIANMOPDEHO_);
       }
-      if (curControllerId_ != 0) {
-        output.writeUInt32(12, curControllerId_);
-      }
-      if (controllerId_ != 0) {
-        output.writeUInt32(13, controllerId_);
-      }
-      if (businessType_ != emu.grasscutter.net.proto.GCGGameBusinessTypeOuterClass.GCGGameBusinessType.GCG_GAME_BUSINESS_TYPE_NONE.getNumber()) {
-        output.writeEnum(14, businessType_);
+      if (unk3300JHDDNKFPINA_ != 0) {
+        output.writeUInt32(10, unk3300JHDDNKFPINA_);
       }
       if (round_ != 0) {
-        output.writeUInt32(15, round_);
+        output.writeUInt32(11, round_);
+      }
+      if (controllerId_ != 0) {
+        output.writeUInt32(12, controllerId_);
+      }
+      if (businessType_ != emu.grasscutter.net.proto.GCGGameBusinessTypeOuterClass.GCGGameBusinessType.GCG_GAME_BUSINESS_TYPE_NONE.getNumber()) {
+        output.writeEnum(13, businessType_);
+      }
+      if (phase_ != null) {
+        output.writeMessage(14, getPhase());
+      }
+      if (unk3300JBBMBKGOONO_ != 0) {
+        output.writeUInt32(15, unk3300JBBMBKGOONO_);
+      }
+      if (getForbidFinishChallengeListList().size() > 0) {
+        output.writeUInt32NoTag(1538);
+        output.writeUInt32NoTag(forbidFinishChallengeListMemoizedSerializedSize);
+      }
+      for (int i = 0; i < forbidFinishChallengeList_.size(); i++) {
+        output.writeUInt32NoTag(forbidFinishChallengeList_.getInt(i));
+      }
+      for (int i = 0; i < historyMsgPackList_.size(); i++) {
+        output.writeMessage(797, historyMsgPackList_.get(i));
+      }
+      for (int i = 0; i < challengeList_.size(); i++) {
+        output.writeMessage(1617, challengeList_.get(i));
+      }
+      for (int i = 0; i < historyCardList_.size(); i++) {
+        output.writeMessage(1872, historyCardList_.get(i));
+      }
+      for (int i = 0; i < unk3300CDCMBOKBLAK_.size(); i++) {
+        output.writeMessage(1987, unk3300CDCMBOKBLAK_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -901,17 +1243,25 @@ public final class GCGDuelOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      for (int i = 0; i < intetionList_.size(); i++) {
+      for (int i = 0; i < cardList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(1, intetionList_.get(i));
+          .computeMessageSize(1, cardList_.get(i));
       }
-      if (gameType_ != 0) {
+      for (int i = 0; i < intentionList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, gameType_);
+          .computeMessageSize(2, intentionList_.get(i));
       }
       if (serverSeq_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(3, serverSeq_);
+      }
+      if (gameId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(4, gameId_);
+      }
+      for (int i = 0; i < fieldList_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(5, fieldList_.get(i));
       }
       {
         int dataSize = 0;
@@ -927,49 +1277,71 @@ public final class GCGDuelOuterClass {
         }
         cardIdListMemoizedSerializedSize = dataSize;
       }
-      for (int i = 0; i < challengeList_.size(); i++) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(5, challengeList_.get(i));
-      }
       for (int i = 0; i < showInfoList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(6, showInfoList_.get(i));
-      }
-      for (int i = 0; i < fieldList_.size(); i++) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(7, fieldList_.get(i));
-      }
-      if (phase_ != null) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(8, getPhase());
-      }
-      for (int i = 0; i < cardList_.size(); i++) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(9, cardList_.get(i));
+          .computeMessageSize(7, showInfoList_.get(i));
       }
       if (costRevise_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(10, getCostRevise());
+          .computeMessageSize(8, getCostRevise());
       }
-      if (gameId_ != 0) {
+      if (unk3300BIANMOPDEHO_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, gameId_);
+          .computeUInt32Size(9, unk3300BIANMOPDEHO_);
       }
-      if (curControllerId_ != 0) {
+      if (unk3300JHDDNKFPINA_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, curControllerId_);
-      }
-      if (controllerId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, controllerId_);
-      }
-      if (businessType_ != emu.grasscutter.net.proto.GCGGameBusinessTypeOuterClass.GCGGameBusinessType.GCG_GAME_BUSINESS_TYPE_NONE.getNumber()) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(14, businessType_);
+          .computeUInt32Size(10, unk3300JHDDNKFPINA_);
       }
       if (round_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, round_);
+          .computeUInt32Size(11, round_);
+      }
+      if (controllerId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(12, controllerId_);
+      }
+      if (businessType_ != emu.grasscutter.net.proto.GCGGameBusinessTypeOuterClass.GCGGameBusinessType.GCG_GAME_BUSINESS_TYPE_NONE.getNumber()) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeEnumSize(13, businessType_);
+      }
+      if (phase_ != null) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(14, getPhase());
+      }
+      if (unk3300JBBMBKGOONO_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(15, unk3300JBBMBKGOONO_);
+      }
+      {
+        int dataSize = 0;
+        for (int i = 0; i < forbidFinishChallengeList_.size(); i++) {
+          dataSize += com.google.protobuf.CodedOutputStream
+            .computeUInt32SizeNoTag(forbidFinishChallengeList_.getInt(i));
+        }
+        size += dataSize;
+        if (!getForbidFinishChallengeListList().isEmpty()) {
+          size += 2;
+          size += com.google.protobuf.CodedOutputStream
+              .computeInt32SizeNoTag(dataSize);
+        }
+        forbidFinishChallengeListMemoizedSerializedSize = dataSize;
+      }
+      for (int i = 0; i < historyMsgPackList_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(797, historyMsgPackList_.get(i));
+      }
+      for (int i = 0; i < challengeList_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(1617, challengeList_.get(i));
+      }
+      for (int i = 0; i < historyCardList_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(1872, historyCardList_.get(i));
+      }
+      for (int i = 0; i < unk3300CDCMBOKBLAK_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(1987, unk3300CDCMBOKBLAK_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -988,34 +1360,44 @@ public final class GCGDuelOuterClass {
 
       if (getServerSeq()
           != other.getServerSeq()) return false;
-      if (!getFieldListList()
-          .equals(other.getFieldListList())) return false;
-      if (businessType_ != other.businessType_) return false;
-      if (!getChallengeListList()
-          .equals(other.getChallengeListList())) return false;
-      if (getGameId()
-          != other.getGameId()) return false;
-      if (getControllerId()
-          != other.getControllerId()) return false;
-      if (getRound()
-          != other.getRound()) return false;
-      if (getCurControllerId()
-          != other.getCurControllerId()) return false;
-      if (!getIntetionListList()
-          .equals(other.getIntetionListList())) return false;
+      if (!getShowInfoListList()
+          .equals(other.getShowInfoListList())) return false;
+      if (!getForbidFinishChallengeListList()
+          .equals(other.getForbidFinishChallengeListList())) return false;
+      if (!getCardListList()
+          .equals(other.getCardListList())) return false;
+      if (getUnk3300BIANMOPDEHO()
+          != other.getUnk3300BIANMOPDEHO()) return false;
       if (hasCostRevise() != other.hasCostRevise()) return false;
       if (hasCostRevise()) {
         if (!getCostRevise()
             .equals(other.getCostRevise())) return false;
       }
+      if (getGameId()
+          != other.getGameId()) return false;
+      if (!getFieldListList()
+          .equals(other.getFieldListList())) return false;
+      if (!getUnk3300CDCMBOKBLAKList()
+          .equals(other.getUnk3300CDCMBOKBLAKList())) return false;
+      if (businessType_ != other.businessType_) return false;
+      if (!getIntentionListList()
+          .equals(other.getIntentionListList())) return false;
+      if (!getChallengeListList()
+          .equals(other.getChallengeListList())) return false;
+      if (!getHistoryCardListList()
+          .equals(other.getHistoryCardListList())) return false;
+      if (getRound()
+          != other.getRound()) return false;
+      if (getControllerId()
+          != other.getControllerId()) return false;
+      if (!getHistoryMsgPackListList()
+          .equals(other.getHistoryMsgPackListList())) return false;
+      if (getUnk3300JHDDNKFPINA()
+          != other.getUnk3300JHDDNKFPINA()) return false;
       if (!getCardIdListList()
           .equals(other.getCardIdListList())) return false;
-      if (!getCardListList()
-          .equals(other.getCardListList())) return false;
-      if (!getShowInfoListList()
-          .equals(other.getShowInfoListList())) return false;
-      if (getGameType()
-          != other.getGameType()) return false;
+      if (getUnk3300JBBMBKGOONO()
+          != other.getUnk3300JBBMBKGOONO()) return false;
       if (hasPhase() != other.hasPhase()) return false;
       if (hasPhase()) {
         if (!getPhase()
@@ -1034,46 +1416,64 @@ public final class GCGDuelOuterClass {
       hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + SERVER_SEQ_FIELD_NUMBER;
       hash = (53 * hash) + getServerSeq();
-      if (getFieldListCount() > 0) {
-        hash = (37 * hash) + FIELD_LIST_FIELD_NUMBER;
-        hash = (53 * hash) + getFieldListList().hashCode();
+      if (getShowInfoListCount() > 0) {
+        hash = (37 * hash) + SHOW_INFO_LIST_FIELD_NUMBER;
+        hash = (53 * hash) + getShowInfoListList().hashCode();
       }
-      hash = (37 * hash) + BUSINESS_TYPE_FIELD_NUMBER;
-      hash = (53 * hash) + businessType_;
-      if (getChallengeListCount() > 0) {
-        hash = (37 * hash) + CHALLENGE_LIST_FIELD_NUMBER;
-        hash = (53 * hash) + getChallengeListList().hashCode();
-      }
-      hash = (37 * hash) + GAME_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getGameId();
-      hash = (37 * hash) + CONTROLLER_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getControllerId();
-      hash = (37 * hash) + ROUND_FIELD_NUMBER;
-      hash = (53 * hash) + getRound();
-      hash = (37 * hash) + CUR_CONTROLLER_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getCurControllerId();
-      if (getIntetionListCount() > 0) {
-        hash = (37 * hash) + INTETION_LIST_FIELD_NUMBER;
-        hash = (53 * hash) + getIntetionListList().hashCode();
-      }
-      if (hasCostRevise()) {
-        hash = (37 * hash) + COST_REVISE_FIELD_NUMBER;
-        hash = (53 * hash) + getCostRevise().hashCode();
-      }
-      if (getCardIdListCount() > 0) {
-        hash = (37 * hash) + CARD_ID_LIST_FIELD_NUMBER;
-        hash = (53 * hash) + getCardIdListList().hashCode();
+      if (getForbidFinishChallengeListCount() > 0) {
+        hash = (37 * hash) + FORBID_FINISH_CHALLENGE_LIST_FIELD_NUMBER;
+        hash = (53 * hash) + getForbidFinishChallengeListList().hashCode();
       }
       if (getCardListCount() > 0) {
         hash = (37 * hash) + CARD_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getCardListList().hashCode();
       }
-      if (getShowInfoListCount() > 0) {
-        hash = (37 * hash) + SHOW_INFO_LIST_FIELD_NUMBER;
-        hash = (53 * hash) + getShowInfoListList().hashCode();
+      hash = (37 * hash) + UNK3300_BIANMOPDEHO_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300BIANMOPDEHO();
+      if (hasCostRevise()) {
+        hash = (37 * hash) + COST_REVISE_FIELD_NUMBER;
+        hash = (53 * hash) + getCostRevise().hashCode();
       }
-      hash = (37 * hash) + GAME_TYPE_FIELD_NUMBER;
-      hash = (53 * hash) + getGameType();
+      hash = (37 * hash) + GAME_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getGameId();
+      if (getFieldListCount() > 0) {
+        hash = (37 * hash) + FIELD_LIST_FIELD_NUMBER;
+        hash = (53 * hash) + getFieldListList().hashCode();
+      }
+      if (getUnk3300CDCMBOKBLAKCount() > 0) {
+        hash = (37 * hash) + UNK3300_CDCMBOKBLAK_FIELD_NUMBER;
+        hash = (53 * hash) + getUnk3300CDCMBOKBLAKList().hashCode();
+      }
+      hash = (37 * hash) + BUSINESS_TYPE_FIELD_NUMBER;
+      hash = (53 * hash) + businessType_;
+      if (getIntentionListCount() > 0) {
+        hash = (37 * hash) + INTENTION_LIST_FIELD_NUMBER;
+        hash = (53 * hash) + getIntentionListList().hashCode();
+      }
+      if (getChallengeListCount() > 0) {
+        hash = (37 * hash) + CHALLENGE_LIST_FIELD_NUMBER;
+        hash = (53 * hash) + getChallengeListList().hashCode();
+      }
+      if (getHistoryCardListCount() > 0) {
+        hash = (37 * hash) + HISTORY_CARD_LIST_FIELD_NUMBER;
+        hash = (53 * hash) + getHistoryCardListList().hashCode();
+      }
+      hash = (37 * hash) + ROUND_FIELD_NUMBER;
+      hash = (53 * hash) + getRound();
+      hash = (37 * hash) + CONTROLLER_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getControllerId();
+      if (getHistoryMsgPackListCount() > 0) {
+        hash = (37 * hash) + HISTORY_MSG_PACK_LIST_FIELD_NUMBER;
+        hash = (53 * hash) + getHistoryMsgPackListList().hashCode();
+      }
+      hash = (37 * hash) + UNK3300_JHDDNKFPINA_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300JHDDNKFPINA();
+      if (getCardIdListCount() > 0) {
+        hash = (37 * hash) + CARD_ID_LIST_FIELD_NUMBER;
+        hash = (53 * hash) + getCardIdListList().hashCode();
+      }
+      hash = (37 * hash) + UNK3300_JBBMBKGOONO_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300JBBMBKGOONO();
       if (hasPhase()) {
         hash = (37 * hash) + PHASE_FIELD_NUMBER;
         hash = (53 * hash) + getPhase().hashCode();
@@ -1206,11 +1606,14 @@ public final class GCGDuelOuterClass {
       private void maybeForceBuilderInitialization() {
         if (com.google.protobuf.GeneratedMessageV3
                 .alwaysUseFieldBuilders) {
-          getFieldListFieldBuilder();
-          getChallengeListFieldBuilder();
-          getIntetionListFieldBuilder();
-          getCardListFieldBuilder();
           getShowInfoListFieldBuilder();
+          getCardListFieldBuilder();
+          getFieldListFieldBuilder();
+          getUnk3300CDCMBOKBLAKFieldBuilder();
+          getIntentionListFieldBuilder();
+          getChallengeListFieldBuilder();
+          getHistoryCardListFieldBuilder();
+          getHistoryMsgPackListFieldBuilder();
         }
       }
       @java.lang.Override
@@ -1218,55 +1621,77 @@ public final class GCGDuelOuterClass {
         super.clear();
         serverSeq_ = 0;
 
-        if (fieldListBuilder_ == null) {
-          fieldList_ = java.util.Collections.emptyList();
+        if (showInfoListBuilder_ == null) {
+          showInfoList_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000001);
         } else {
-          fieldListBuilder_.clear();
+          showInfoListBuilder_.clear();
         }
-        businessType_ = 0;
-
-        if (challengeListBuilder_ == null) {
-          challengeList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000002);
-        } else {
-          challengeListBuilder_.clear();
-        }
-        gameId_ = 0;
-
-        controllerId_ = 0;
-
-        round_ = 0;
-
-        curControllerId_ = 0;
-
-        if (intetionListBuilder_ == null) {
-          intetionList_ = java.util.Collections.emptyList();
+        forbidFinishChallengeList_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000002);
+        if (cardListBuilder_ == null) {
+          cardList_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000004);
         } else {
-          intetionListBuilder_.clear();
+          cardListBuilder_.clear();
         }
+        unk3300BIANMOPDEHO_ = 0;
+
         if (costReviseBuilder_ == null) {
           costRevise_ = null;
         } else {
           costRevise_ = null;
           costReviseBuilder_ = null;
         }
-        cardIdList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000008);
-        if (cardListBuilder_ == null) {
-          cardList_ = java.util.Collections.emptyList();
+        gameId_ = 0;
+
+        if (fieldListBuilder_ == null) {
+          fieldList_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000008);
+        } else {
+          fieldListBuilder_.clear();
+        }
+        if (unk3300CDCMBOKBLAKBuilder_ == null) {
+          unk3300CDCMBOKBLAK_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000010);
         } else {
-          cardListBuilder_.clear();
+          unk3300CDCMBOKBLAKBuilder_.clear();
         }
-        if (showInfoListBuilder_ == null) {
-          showInfoList_ = java.util.Collections.emptyList();
+        businessType_ = 0;
+
+        if (intentionListBuilder_ == null) {
+          intentionList_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000020);
         } else {
-          showInfoListBuilder_.clear();
+          intentionListBuilder_.clear();
         }
-        gameType_ = 0;
+        if (challengeListBuilder_ == null) {
+          challengeList_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000040);
+        } else {
+          challengeListBuilder_.clear();
+        }
+        if (historyCardListBuilder_ == null) {
+          historyCardList_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000080);
+        } else {
+          historyCardListBuilder_.clear();
+        }
+        round_ = 0;
+
+        controllerId_ = 0;
+
+        if (historyMsgPackListBuilder_ == null) {
+          historyMsgPackList_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000100);
+        } else {
+          historyMsgPackListBuilder_.clear();
+        }
+        unk3300JHDDNKFPINA_ = 0;
+
+        cardIdList_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000200);
+        unk3300JBBMBKGOONO_ = 0;
 
         if (phaseBuilder_ == null) {
           phase_ = null;
@@ -1302,67 +1727,100 @@ public final class GCGDuelOuterClass {
         emu.grasscutter.net.proto.GCGDuelOuterClass.GCGDuel result = new emu.grasscutter.net.proto.GCGDuelOuterClass.GCGDuel(this);
         int from_bitField0_ = bitField0_;
         result.serverSeq_ = serverSeq_;
-        if (fieldListBuilder_ == null) {
-          if (((bitField0_ & 0x00000001) != 0)) {
-            fieldList_ = java.util.Collections.unmodifiableList(fieldList_);
-            bitField0_ = (bitField0_ & ~0x00000001);
-          }
-          result.fieldList_ = fieldList_;
-        } else {
-          result.fieldList_ = fieldListBuilder_.build();
-        }
-        result.businessType_ = businessType_;
-        if (challengeListBuilder_ == null) {
-          if (((bitField0_ & 0x00000002) != 0)) {
-            challengeList_ = java.util.Collections.unmodifiableList(challengeList_);
-            bitField0_ = (bitField0_ & ~0x00000002);
-          }
-          result.challengeList_ = challengeList_;
-        } else {
-          result.challengeList_ = challengeListBuilder_.build();
-        }
-        result.gameId_ = gameId_;
-        result.controllerId_ = controllerId_;
-        result.round_ = round_;
-        result.curControllerId_ = curControllerId_;
-        if (intetionListBuilder_ == null) {
-          if (((bitField0_ & 0x00000004) != 0)) {
-            intetionList_ = java.util.Collections.unmodifiableList(intetionList_);
-            bitField0_ = (bitField0_ & ~0x00000004);
-          }
-          result.intetionList_ = intetionList_;
-        } else {
-          result.intetionList_ = intetionListBuilder_.build();
-        }
-        if (costReviseBuilder_ == null) {
-          result.costRevise_ = costRevise_;
-        } else {
-          result.costRevise_ = costReviseBuilder_.build();
-        }
-        if (((bitField0_ & 0x00000008) != 0)) {
-          cardIdList_.makeImmutable();
-          bitField0_ = (bitField0_ & ~0x00000008);
-        }
-        result.cardIdList_ = cardIdList_;
-        if (cardListBuilder_ == null) {
-          if (((bitField0_ & 0x00000010) != 0)) {
-            cardList_ = java.util.Collections.unmodifiableList(cardList_);
-            bitField0_ = (bitField0_ & ~0x00000010);
-          }
-          result.cardList_ = cardList_;
-        } else {
-          result.cardList_ = cardListBuilder_.build();
-        }
         if (showInfoListBuilder_ == null) {
-          if (((bitField0_ & 0x00000020) != 0)) {
+          if (((bitField0_ & 0x00000001) != 0)) {
             showInfoList_ = java.util.Collections.unmodifiableList(showInfoList_);
-            bitField0_ = (bitField0_ & ~0x00000020);
+            bitField0_ = (bitField0_ & ~0x00000001);
           }
           result.showInfoList_ = showInfoList_;
         } else {
           result.showInfoList_ = showInfoListBuilder_.build();
         }
-        result.gameType_ = gameType_;
+        if (((bitField0_ & 0x00000002) != 0)) {
+          forbidFinishChallengeList_.makeImmutable();
+          bitField0_ = (bitField0_ & ~0x00000002);
+        }
+        result.forbidFinishChallengeList_ = forbidFinishChallengeList_;
+        if (cardListBuilder_ == null) {
+          if (((bitField0_ & 0x00000004) != 0)) {
+            cardList_ = java.util.Collections.unmodifiableList(cardList_);
+            bitField0_ = (bitField0_ & ~0x00000004);
+          }
+          result.cardList_ = cardList_;
+        } else {
+          result.cardList_ = cardListBuilder_.build();
+        }
+        result.unk3300BIANMOPDEHO_ = unk3300BIANMOPDEHO_;
+        if (costReviseBuilder_ == null) {
+          result.costRevise_ = costRevise_;
+        } else {
+          result.costRevise_ = costReviseBuilder_.build();
+        }
+        result.gameId_ = gameId_;
+        if (fieldListBuilder_ == null) {
+          if (((bitField0_ & 0x00000008) != 0)) {
+            fieldList_ = java.util.Collections.unmodifiableList(fieldList_);
+            bitField0_ = (bitField0_ & ~0x00000008);
+          }
+          result.fieldList_ = fieldList_;
+        } else {
+          result.fieldList_ = fieldListBuilder_.build();
+        }
+        if (unk3300CDCMBOKBLAKBuilder_ == null) {
+          if (((bitField0_ & 0x00000010) != 0)) {
+            unk3300CDCMBOKBLAK_ = java.util.Collections.unmodifiableList(unk3300CDCMBOKBLAK_);
+            bitField0_ = (bitField0_ & ~0x00000010);
+          }
+          result.unk3300CDCMBOKBLAK_ = unk3300CDCMBOKBLAK_;
+        } else {
+          result.unk3300CDCMBOKBLAK_ = unk3300CDCMBOKBLAKBuilder_.build();
+        }
+        result.businessType_ = businessType_;
+        if (intentionListBuilder_ == null) {
+          if (((bitField0_ & 0x00000020) != 0)) {
+            intentionList_ = java.util.Collections.unmodifiableList(intentionList_);
+            bitField0_ = (bitField0_ & ~0x00000020);
+          }
+          result.intentionList_ = intentionList_;
+        } else {
+          result.intentionList_ = intentionListBuilder_.build();
+        }
+        if (challengeListBuilder_ == null) {
+          if (((bitField0_ & 0x00000040) != 0)) {
+            challengeList_ = java.util.Collections.unmodifiableList(challengeList_);
+            bitField0_ = (bitField0_ & ~0x00000040);
+          }
+          result.challengeList_ = challengeList_;
+        } else {
+          result.challengeList_ = challengeListBuilder_.build();
+        }
+        if (historyCardListBuilder_ == null) {
+          if (((bitField0_ & 0x00000080) != 0)) {
+            historyCardList_ = java.util.Collections.unmodifiableList(historyCardList_);
+            bitField0_ = (bitField0_ & ~0x00000080);
+          }
+          result.historyCardList_ = historyCardList_;
+        } else {
+          result.historyCardList_ = historyCardListBuilder_.build();
+        }
+        result.round_ = round_;
+        result.controllerId_ = controllerId_;
+        if (historyMsgPackListBuilder_ == null) {
+          if (((bitField0_ & 0x00000100) != 0)) {
+            historyMsgPackList_ = java.util.Collections.unmodifiableList(historyMsgPackList_);
+            bitField0_ = (bitField0_ & ~0x00000100);
+          }
+          result.historyMsgPackList_ = historyMsgPackList_;
+        } else {
+          result.historyMsgPackList_ = historyMsgPackListBuilder_.build();
+        }
+        result.unk3300JHDDNKFPINA_ = unk3300JHDDNKFPINA_;
+        if (((bitField0_ & 0x00000200) != 0)) {
+          cardIdList_.makeImmutable();
+          bitField0_ = (bitField0_ & ~0x00000200);
+        }
+        result.cardIdList_ = cardIdList_;
+        result.unk3300JBBMBKGOONO_ = unk3300JBBMBKGOONO_;
         if (phaseBuilder_ == null) {
           result.phase_ = phase_;
         } else {
@@ -1419,143 +1877,11 @@ public final class GCGDuelOuterClass {
         if (other.getServerSeq() != 0) {
           setServerSeq(other.getServerSeq());
         }
-        if (fieldListBuilder_ == null) {
-          if (!other.fieldList_.isEmpty()) {
-            if (fieldList_.isEmpty()) {
-              fieldList_ = other.fieldList_;
-              bitField0_ = (bitField0_ & ~0x00000001);
-            } else {
-              ensureFieldListIsMutable();
-              fieldList_.addAll(other.fieldList_);
-            }
-            onChanged();
-          }
-        } else {
-          if (!other.fieldList_.isEmpty()) {
-            if (fieldListBuilder_.isEmpty()) {
-              fieldListBuilder_.dispose();
-              fieldListBuilder_ = null;
-              fieldList_ = other.fieldList_;
-              bitField0_ = (bitField0_ & ~0x00000001);
-              fieldListBuilder_ = 
-                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
-                   getFieldListFieldBuilder() : null;
-            } else {
-              fieldListBuilder_.addAllMessages(other.fieldList_);
-            }
-          }
-        }
-        if (other.businessType_ != 0) {
-          setBusinessTypeValue(other.getBusinessTypeValue());
-        }
-        if (challengeListBuilder_ == null) {
-          if (!other.challengeList_.isEmpty()) {
-            if (challengeList_.isEmpty()) {
-              challengeList_ = other.challengeList_;
-              bitField0_ = (bitField0_ & ~0x00000002);
-            } else {
-              ensureChallengeListIsMutable();
-              challengeList_.addAll(other.challengeList_);
-            }
-            onChanged();
-          }
-        } else {
-          if (!other.challengeList_.isEmpty()) {
-            if (challengeListBuilder_.isEmpty()) {
-              challengeListBuilder_.dispose();
-              challengeListBuilder_ = null;
-              challengeList_ = other.challengeList_;
-              bitField0_ = (bitField0_ & ~0x00000002);
-              challengeListBuilder_ = 
-                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
-                   getChallengeListFieldBuilder() : null;
-            } else {
-              challengeListBuilder_.addAllMessages(other.challengeList_);
-            }
-          }
-        }
-        if (other.getGameId() != 0) {
-          setGameId(other.getGameId());
-        }
-        if (other.getControllerId() != 0) {
-          setControllerId(other.getControllerId());
-        }
-        if (other.getRound() != 0) {
-          setRound(other.getRound());
-        }
-        if (other.getCurControllerId() != 0) {
-          setCurControllerId(other.getCurControllerId());
-        }
-        if (intetionListBuilder_ == null) {
-          if (!other.intetionList_.isEmpty()) {
-            if (intetionList_.isEmpty()) {
-              intetionList_ = other.intetionList_;
-              bitField0_ = (bitField0_ & ~0x00000004);
-            } else {
-              ensureIntetionListIsMutable();
-              intetionList_.addAll(other.intetionList_);
-            }
-            onChanged();
-          }
-        } else {
-          if (!other.intetionList_.isEmpty()) {
-            if (intetionListBuilder_.isEmpty()) {
-              intetionListBuilder_.dispose();
-              intetionListBuilder_ = null;
-              intetionList_ = other.intetionList_;
-              bitField0_ = (bitField0_ & ~0x00000004);
-              intetionListBuilder_ = 
-                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
-                   getIntetionListFieldBuilder() : null;
-            } else {
-              intetionListBuilder_.addAllMessages(other.intetionList_);
-            }
-          }
-        }
-        if (other.hasCostRevise()) {
-          mergeCostRevise(other.getCostRevise());
-        }
-        if (!other.cardIdList_.isEmpty()) {
-          if (cardIdList_.isEmpty()) {
-            cardIdList_ = other.cardIdList_;
-            bitField0_ = (bitField0_ & ~0x00000008);
-          } else {
-            ensureCardIdListIsMutable();
-            cardIdList_.addAll(other.cardIdList_);
-          }
-          onChanged();
-        }
-        if (cardListBuilder_ == null) {
-          if (!other.cardList_.isEmpty()) {
-            if (cardList_.isEmpty()) {
-              cardList_ = other.cardList_;
-              bitField0_ = (bitField0_ & ~0x00000010);
-            } else {
-              ensureCardListIsMutable();
-              cardList_.addAll(other.cardList_);
-            }
-            onChanged();
-          }
-        } else {
-          if (!other.cardList_.isEmpty()) {
-            if (cardListBuilder_.isEmpty()) {
-              cardListBuilder_.dispose();
-              cardListBuilder_ = null;
-              cardList_ = other.cardList_;
-              bitField0_ = (bitField0_ & ~0x00000010);
-              cardListBuilder_ = 
-                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
-                   getCardListFieldBuilder() : null;
-            } else {
-              cardListBuilder_.addAllMessages(other.cardList_);
-            }
-          }
-        }
         if (showInfoListBuilder_ == null) {
           if (!other.showInfoList_.isEmpty()) {
             if (showInfoList_.isEmpty()) {
               showInfoList_ = other.showInfoList_;
-              bitField0_ = (bitField0_ & ~0x00000020);
+              bitField0_ = (bitField0_ & ~0x00000001);
             } else {
               ensureShowInfoListIsMutable();
               showInfoList_.addAll(other.showInfoList_);
@@ -1568,7 +1894,7 @@ public final class GCGDuelOuterClass {
               showInfoListBuilder_.dispose();
               showInfoListBuilder_ = null;
               showInfoList_ = other.showInfoList_;
-              bitField0_ = (bitField0_ & ~0x00000020);
+              bitField0_ = (bitField0_ & ~0x00000001);
               showInfoListBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
                    getShowInfoListFieldBuilder() : null;
@@ -1577,8 +1903,231 @@ public final class GCGDuelOuterClass {
             }
           }
         }
-        if (other.getGameType() != 0) {
-          setGameType(other.getGameType());
+        if (!other.forbidFinishChallengeList_.isEmpty()) {
+          if (forbidFinishChallengeList_.isEmpty()) {
+            forbidFinishChallengeList_ = other.forbidFinishChallengeList_;
+            bitField0_ = (bitField0_ & ~0x00000002);
+          } else {
+            ensureForbidFinishChallengeListIsMutable();
+            forbidFinishChallengeList_.addAll(other.forbidFinishChallengeList_);
+          }
+          onChanged();
+        }
+        if (cardListBuilder_ == null) {
+          if (!other.cardList_.isEmpty()) {
+            if (cardList_.isEmpty()) {
+              cardList_ = other.cardList_;
+              bitField0_ = (bitField0_ & ~0x00000004);
+            } else {
+              ensureCardListIsMutable();
+              cardList_.addAll(other.cardList_);
+            }
+            onChanged();
+          }
+        } else {
+          if (!other.cardList_.isEmpty()) {
+            if (cardListBuilder_.isEmpty()) {
+              cardListBuilder_.dispose();
+              cardListBuilder_ = null;
+              cardList_ = other.cardList_;
+              bitField0_ = (bitField0_ & ~0x00000004);
+              cardListBuilder_ = 
+                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+                   getCardListFieldBuilder() : null;
+            } else {
+              cardListBuilder_.addAllMessages(other.cardList_);
+            }
+          }
+        }
+        if (other.getUnk3300BIANMOPDEHO() != 0) {
+          setUnk3300BIANMOPDEHO(other.getUnk3300BIANMOPDEHO());
+        }
+        if (other.hasCostRevise()) {
+          mergeCostRevise(other.getCostRevise());
+        }
+        if (other.getGameId() != 0) {
+          setGameId(other.getGameId());
+        }
+        if (fieldListBuilder_ == null) {
+          if (!other.fieldList_.isEmpty()) {
+            if (fieldList_.isEmpty()) {
+              fieldList_ = other.fieldList_;
+              bitField0_ = (bitField0_ & ~0x00000008);
+            } else {
+              ensureFieldListIsMutable();
+              fieldList_.addAll(other.fieldList_);
+            }
+            onChanged();
+          }
+        } else {
+          if (!other.fieldList_.isEmpty()) {
+            if (fieldListBuilder_.isEmpty()) {
+              fieldListBuilder_.dispose();
+              fieldListBuilder_ = null;
+              fieldList_ = other.fieldList_;
+              bitField0_ = (bitField0_ & ~0x00000008);
+              fieldListBuilder_ = 
+                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+                   getFieldListFieldBuilder() : null;
+            } else {
+              fieldListBuilder_.addAllMessages(other.fieldList_);
+            }
+          }
+        }
+        if (unk3300CDCMBOKBLAKBuilder_ == null) {
+          if (!other.unk3300CDCMBOKBLAK_.isEmpty()) {
+            if (unk3300CDCMBOKBLAK_.isEmpty()) {
+              unk3300CDCMBOKBLAK_ = other.unk3300CDCMBOKBLAK_;
+              bitField0_ = (bitField0_ & ~0x00000010);
+            } else {
+              ensureUnk3300CDCMBOKBLAKIsMutable();
+              unk3300CDCMBOKBLAK_.addAll(other.unk3300CDCMBOKBLAK_);
+            }
+            onChanged();
+          }
+        } else {
+          if (!other.unk3300CDCMBOKBLAK_.isEmpty()) {
+            if (unk3300CDCMBOKBLAKBuilder_.isEmpty()) {
+              unk3300CDCMBOKBLAKBuilder_.dispose();
+              unk3300CDCMBOKBLAKBuilder_ = null;
+              unk3300CDCMBOKBLAK_ = other.unk3300CDCMBOKBLAK_;
+              bitField0_ = (bitField0_ & ~0x00000010);
+              unk3300CDCMBOKBLAKBuilder_ = 
+                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+                   getUnk3300CDCMBOKBLAKFieldBuilder() : null;
+            } else {
+              unk3300CDCMBOKBLAKBuilder_.addAllMessages(other.unk3300CDCMBOKBLAK_);
+            }
+          }
+        }
+        if (other.businessType_ != 0) {
+          setBusinessTypeValue(other.getBusinessTypeValue());
+        }
+        if (intentionListBuilder_ == null) {
+          if (!other.intentionList_.isEmpty()) {
+            if (intentionList_.isEmpty()) {
+              intentionList_ = other.intentionList_;
+              bitField0_ = (bitField0_ & ~0x00000020);
+            } else {
+              ensureIntentionListIsMutable();
+              intentionList_.addAll(other.intentionList_);
+            }
+            onChanged();
+          }
+        } else {
+          if (!other.intentionList_.isEmpty()) {
+            if (intentionListBuilder_.isEmpty()) {
+              intentionListBuilder_.dispose();
+              intentionListBuilder_ = null;
+              intentionList_ = other.intentionList_;
+              bitField0_ = (bitField0_ & ~0x00000020);
+              intentionListBuilder_ = 
+                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+                   getIntentionListFieldBuilder() : null;
+            } else {
+              intentionListBuilder_.addAllMessages(other.intentionList_);
+            }
+          }
+        }
+        if (challengeListBuilder_ == null) {
+          if (!other.challengeList_.isEmpty()) {
+            if (challengeList_.isEmpty()) {
+              challengeList_ = other.challengeList_;
+              bitField0_ = (bitField0_ & ~0x00000040);
+            } else {
+              ensureChallengeListIsMutable();
+              challengeList_.addAll(other.challengeList_);
+            }
+            onChanged();
+          }
+        } else {
+          if (!other.challengeList_.isEmpty()) {
+            if (challengeListBuilder_.isEmpty()) {
+              challengeListBuilder_.dispose();
+              challengeListBuilder_ = null;
+              challengeList_ = other.challengeList_;
+              bitField0_ = (bitField0_ & ~0x00000040);
+              challengeListBuilder_ = 
+                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+                   getChallengeListFieldBuilder() : null;
+            } else {
+              challengeListBuilder_.addAllMessages(other.challengeList_);
+            }
+          }
+        }
+        if (historyCardListBuilder_ == null) {
+          if (!other.historyCardList_.isEmpty()) {
+            if (historyCardList_.isEmpty()) {
+              historyCardList_ = other.historyCardList_;
+              bitField0_ = (bitField0_ & ~0x00000080);
+            } else {
+              ensureHistoryCardListIsMutable();
+              historyCardList_.addAll(other.historyCardList_);
+            }
+            onChanged();
+          }
+        } else {
+          if (!other.historyCardList_.isEmpty()) {
+            if (historyCardListBuilder_.isEmpty()) {
+              historyCardListBuilder_.dispose();
+              historyCardListBuilder_ = null;
+              historyCardList_ = other.historyCardList_;
+              bitField0_ = (bitField0_ & ~0x00000080);
+              historyCardListBuilder_ = 
+                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+                   getHistoryCardListFieldBuilder() : null;
+            } else {
+              historyCardListBuilder_.addAllMessages(other.historyCardList_);
+            }
+          }
+        }
+        if (other.getRound() != 0) {
+          setRound(other.getRound());
+        }
+        if (other.getControllerId() != 0) {
+          setControllerId(other.getControllerId());
+        }
+        if (historyMsgPackListBuilder_ == null) {
+          if (!other.historyMsgPackList_.isEmpty()) {
+            if (historyMsgPackList_.isEmpty()) {
+              historyMsgPackList_ = other.historyMsgPackList_;
+              bitField0_ = (bitField0_ & ~0x00000100);
+            } else {
+              ensureHistoryMsgPackListIsMutable();
+              historyMsgPackList_.addAll(other.historyMsgPackList_);
+            }
+            onChanged();
+          }
+        } else {
+          if (!other.historyMsgPackList_.isEmpty()) {
+            if (historyMsgPackListBuilder_.isEmpty()) {
+              historyMsgPackListBuilder_.dispose();
+              historyMsgPackListBuilder_ = null;
+              historyMsgPackList_ = other.historyMsgPackList_;
+              bitField0_ = (bitField0_ & ~0x00000100);
+              historyMsgPackListBuilder_ = 
+                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+                   getHistoryMsgPackListFieldBuilder() : null;
+            } else {
+              historyMsgPackListBuilder_.addAllMessages(other.historyMsgPackList_);
+            }
+          }
+        }
+        if (other.getUnk3300JHDDNKFPINA() != 0) {
+          setUnk3300JHDDNKFPINA(other.getUnk3300JHDDNKFPINA());
+        }
+        if (!other.cardIdList_.isEmpty()) {
+          if (cardIdList_.isEmpty()) {
+            cardIdList_ = other.cardIdList_;
+            bitField0_ = (bitField0_ & ~0x00000200);
+          } else {
+            ensureCardIdListIsMutable();
+            cardIdList_.addAll(other.cardIdList_);
+          }
+          onChanged();
+        }
+        if (other.getUnk3300JBBMBKGOONO() != 0) {
+          setUnk3300JBBMBKGOONO(other.getUnk3300JBBMBKGOONO());
         }
         if (other.hasPhase()) {
           mergePhase(other.getPhase());
@@ -1644,916 +2193,608 @@ public final class GCGDuelOuterClass {
         return this;
       }
 
-      private java.util.List<emu.grasscutter.net.proto.GCGPlayerFieldOuterClass.GCGPlayerField> fieldList_ =
+      private java.util.List<emu.grasscutter.net.proto.GCGControllerShowInfoOuterClass.GCGControllerShowInfo> showInfoList_ =
         java.util.Collections.emptyList();
-      private void ensureFieldListIsMutable() {
+      private void ensureShowInfoListIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          fieldList_ = new java.util.ArrayList<emu.grasscutter.net.proto.GCGPlayerFieldOuterClass.GCGPlayerField>(fieldList_);
+          showInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.GCGControllerShowInfoOuterClass.GCGControllerShowInfo>(showInfoList_);
           bitField0_ |= 0x00000001;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.GCGPlayerFieldOuterClass.GCGPlayerField, emu.grasscutter.net.proto.GCGPlayerFieldOuterClass.GCGPlayerField.Builder, emu.grasscutter.net.proto.GCGPlayerFieldOuterClass.GCGPlayerFieldOrBuilder> fieldListBuilder_;
+          emu.grasscutter.net.proto.GCGControllerShowInfoOuterClass.GCGControllerShowInfo, emu.grasscutter.net.proto.GCGControllerShowInfoOuterClass.GCGControllerShowInfo.Builder, emu.grasscutter.net.proto.GCGControllerShowInfoOuterClass.GCGControllerShowInfoOrBuilder> showInfoListBuilder_;
 
       /**
-       * <code>repeated .GCGPlayerField field_list = 7;</code>
+       * <code>repeated .GCGControllerShowInfo show_info_list = 7;</code>
        */
-      public java.util.List<emu.grasscutter.net.proto.GCGPlayerFieldOuterClass.GCGPlayerField> getFieldListList() {
-        if (fieldListBuilder_ == null) {
-          return java.util.Collections.unmodifiableList(fieldList_);
+      public java.util.List<emu.grasscutter.net.proto.GCGControllerShowInfoOuterClass.GCGControllerShowInfo> getShowInfoListList() {
+        if (showInfoListBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(showInfoList_);
         } else {
-          return fieldListBuilder_.getMessageList();
+          return showInfoListBuilder_.getMessageList();
         }
       }
       /**
-       * <code>repeated .GCGPlayerField field_list = 7;</code>
+       * <code>repeated .GCGControllerShowInfo show_info_list = 7;</code>
        */
-      public int getFieldListCount() {
-        if (fieldListBuilder_ == null) {
-          return fieldList_.size();
+      public int getShowInfoListCount() {
+        if (showInfoListBuilder_ == null) {
+          return showInfoList_.size();
         } else {
-          return fieldListBuilder_.getCount();
+          return showInfoListBuilder_.getCount();
         }
       }
       /**
-       * <code>repeated .GCGPlayerField field_list = 7;</code>
+       * <code>repeated .GCGControllerShowInfo show_info_list = 7;</code>
        */
-      public emu.grasscutter.net.proto.GCGPlayerFieldOuterClass.GCGPlayerField getFieldList(int index) {
-        if (fieldListBuilder_ == null) {
-          return fieldList_.get(index);
+      public emu.grasscutter.net.proto.GCGControllerShowInfoOuterClass.GCGControllerShowInfo getShowInfoList(int index) {
+        if (showInfoListBuilder_ == null) {
+          return showInfoList_.get(index);
         } else {
-          return fieldListBuilder_.getMessage(index);
+          return showInfoListBuilder_.getMessage(index);
         }
       }
       /**
-       * <code>repeated .GCGPlayerField field_list = 7;</code>
+       * <code>repeated .GCGControllerShowInfo show_info_list = 7;</code>
        */
-      public Builder setFieldList(
-          int index, emu.grasscutter.net.proto.GCGPlayerFieldOuterClass.GCGPlayerField value) {
-        if (fieldListBuilder_ == null) {
+      public Builder setShowInfoList(
+          int index, emu.grasscutter.net.proto.GCGControllerShowInfoOuterClass.GCGControllerShowInfo value) {
+        if (showInfoListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureFieldListIsMutable();
-          fieldList_.set(index, value);
+          ensureShowInfoListIsMutable();
+          showInfoList_.set(index, value);
           onChanged();
         } else {
-          fieldListBuilder_.setMessage(index, value);
+          showInfoListBuilder_.setMessage(index, value);
         }
         return this;
       }
       /**
-       * <code>repeated .GCGPlayerField field_list = 7;</code>
+       * <code>repeated .GCGControllerShowInfo show_info_list = 7;</code>
        */
-      public Builder setFieldList(
-          int index, emu.grasscutter.net.proto.GCGPlayerFieldOuterClass.GCGPlayerField.Builder builderForValue) {
-        if (fieldListBuilder_ == null) {
-          ensureFieldListIsMutable();
-          fieldList_.set(index, builderForValue.build());
+      public Builder setShowInfoList(
+          int index, emu.grasscutter.net.proto.GCGControllerShowInfoOuterClass.GCGControllerShowInfo.Builder builderForValue) {
+        if (showInfoListBuilder_ == null) {
+          ensureShowInfoListIsMutable();
+          showInfoList_.set(index, builderForValue.build());
           onChanged();
         } else {
-          fieldListBuilder_.setMessage(index, builderForValue.build());
+          showInfoListBuilder_.setMessage(index, builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .GCGPlayerField field_list = 7;</code>
+       * <code>repeated .GCGControllerShowInfo show_info_list = 7;</code>
        */
-      public Builder addFieldList(emu.grasscutter.net.proto.GCGPlayerFieldOuterClass.GCGPlayerField value) {
-        if (fieldListBuilder_ == null) {
+      public Builder addShowInfoList(emu.grasscutter.net.proto.GCGControllerShowInfoOuterClass.GCGControllerShowInfo value) {
+        if (showInfoListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureFieldListIsMutable();
-          fieldList_.add(value);
+          ensureShowInfoListIsMutable();
+          showInfoList_.add(value);
           onChanged();
         } else {
-          fieldListBuilder_.addMessage(value);
+          showInfoListBuilder_.addMessage(value);
         }
         return this;
       }
       /**
-       * <code>repeated .GCGPlayerField field_list = 7;</code>
+       * <code>repeated .GCGControllerShowInfo show_info_list = 7;</code>
        */
-      public Builder addFieldList(
-          int index, emu.grasscutter.net.proto.GCGPlayerFieldOuterClass.GCGPlayerField value) {
-        if (fieldListBuilder_ == null) {
+      public Builder addShowInfoList(
+          int index, emu.grasscutter.net.proto.GCGControllerShowInfoOuterClass.GCGControllerShowInfo value) {
+        if (showInfoListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureFieldListIsMutable();
-          fieldList_.add(index, value);
+          ensureShowInfoListIsMutable();
+          showInfoList_.add(index, value);
           onChanged();
         } else {
-          fieldListBuilder_.addMessage(index, value);
+          showInfoListBuilder_.addMessage(index, value);
         }
         return this;
       }
       /**
-       * <code>repeated .GCGPlayerField field_list = 7;</code>
+       * <code>repeated .GCGControllerShowInfo show_info_list = 7;</code>
        */
-      public Builder addFieldList(
-          emu.grasscutter.net.proto.GCGPlayerFieldOuterClass.GCGPlayerField.Builder builderForValue) {
-        if (fieldListBuilder_ == null) {
-          ensureFieldListIsMutable();
-          fieldList_.add(builderForValue.build());
+      public Builder addShowInfoList(
+          emu.grasscutter.net.proto.GCGControllerShowInfoOuterClass.GCGControllerShowInfo.Builder builderForValue) {
+        if (showInfoListBuilder_ == null) {
+          ensureShowInfoListIsMutable();
+          showInfoList_.add(builderForValue.build());
           onChanged();
         } else {
-          fieldListBuilder_.addMessage(builderForValue.build());
+          showInfoListBuilder_.addMessage(builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .GCGPlayerField field_list = 7;</code>
+       * <code>repeated .GCGControllerShowInfo show_info_list = 7;</code>
        */
-      public Builder addFieldList(
-          int index, emu.grasscutter.net.proto.GCGPlayerFieldOuterClass.GCGPlayerField.Builder builderForValue) {
-        if (fieldListBuilder_ == null) {
-          ensureFieldListIsMutable();
-          fieldList_.add(index, builderForValue.build());
+      public Builder addShowInfoList(
+          int index, emu.grasscutter.net.proto.GCGControllerShowInfoOuterClass.GCGControllerShowInfo.Builder builderForValue) {
+        if (showInfoListBuilder_ == null) {
+          ensureShowInfoListIsMutable();
+          showInfoList_.add(index, builderForValue.build());
           onChanged();
         } else {
-          fieldListBuilder_.addMessage(index, builderForValue.build());
+          showInfoListBuilder_.addMessage(index, builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .GCGPlayerField field_list = 7;</code>
+       * <code>repeated .GCGControllerShowInfo show_info_list = 7;</code>
        */
-      public Builder addAllFieldList(
-          java.lang.Iterable<? extends emu.grasscutter.net.proto.GCGPlayerFieldOuterClass.GCGPlayerField> values) {
-        if (fieldListBuilder_ == null) {
-          ensureFieldListIsMutable();
+      public Builder addAllShowInfoList(
+          java.lang.Iterable<? extends emu.grasscutter.net.proto.GCGControllerShowInfoOuterClass.GCGControllerShowInfo> values) {
+        if (showInfoListBuilder_ == null) {
+          ensureShowInfoListIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
-              values, fieldList_);
+              values, showInfoList_);
           onChanged();
         } else {
-          fieldListBuilder_.addAllMessages(values);
+          showInfoListBuilder_.addAllMessages(values);
         }
         return this;
       }
       /**
-       * <code>repeated .GCGPlayerField field_list = 7;</code>
+       * <code>repeated .GCGControllerShowInfo show_info_list = 7;</code>
        */
-      public Builder clearFieldList() {
-        if (fieldListBuilder_ == null) {
-          fieldList_ = java.util.Collections.emptyList();
+      public Builder clearShowInfoList() {
+        if (showInfoListBuilder_ == null) {
+          showInfoList_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000001);
           onChanged();
         } else {
-          fieldListBuilder_.clear();
+          showInfoListBuilder_.clear();
         }
         return this;
       }
       /**
-       * <code>repeated .GCGPlayerField field_list = 7;</code>
+       * <code>repeated .GCGControllerShowInfo show_info_list = 7;</code>
        */
-      public Builder removeFieldList(int index) {
-        if (fieldListBuilder_ == null) {
-          ensureFieldListIsMutable();
-          fieldList_.remove(index);
+      public Builder removeShowInfoList(int index) {
+        if (showInfoListBuilder_ == null) {
+          ensureShowInfoListIsMutable();
+          showInfoList_.remove(index);
           onChanged();
         } else {
-          fieldListBuilder_.remove(index);
+          showInfoListBuilder_.remove(index);
         }
         return this;
       }
       /**
-       * <code>repeated .GCGPlayerField field_list = 7;</code>
+       * <code>repeated .GCGControllerShowInfo show_info_list = 7;</code>
        */
-      public emu.grasscutter.net.proto.GCGPlayerFieldOuterClass.GCGPlayerField.Builder getFieldListBuilder(
+      public emu.grasscutter.net.proto.GCGControllerShowInfoOuterClass.GCGControllerShowInfo.Builder getShowInfoListBuilder(
           int index) {
-        return getFieldListFieldBuilder().getBuilder(index);
+        return getShowInfoListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .GCGPlayerField field_list = 7;</code>
+       * <code>repeated .GCGControllerShowInfo show_info_list = 7;</code>
        */
-      public emu.grasscutter.net.proto.GCGPlayerFieldOuterClass.GCGPlayerFieldOrBuilder getFieldListOrBuilder(
+      public emu.grasscutter.net.proto.GCGControllerShowInfoOuterClass.GCGControllerShowInfoOrBuilder getShowInfoListOrBuilder(
           int index) {
-        if (fieldListBuilder_ == null) {
-          return fieldList_.get(index);  } else {
-          return fieldListBuilder_.getMessageOrBuilder(index);
+        if (showInfoListBuilder_ == null) {
+          return showInfoList_.get(index);  } else {
+          return showInfoListBuilder_.getMessageOrBuilder(index);
         }
       }
       /**
-       * <code>repeated .GCGPlayerField field_list = 7;</code>
+       * <code>repeated .GCGControllerShowInfo show_info_list = 7;</code>
        */
-      public java.util.List<? extends emu.grasscutter.net.proto.GCGPlayerFieldOuterClass.GCGPlayerFieldOrBuilder> 
-           getFieldListOrBuilderList() {
-        if (fieldListBuilder_ != null) {
-          return fieldListBuilder_.getMessageOrBuilderList();
+      public java.util.List<? extends emu.grasscutter.net.proto.GCGControllerShowInfoOuterClass.GCGControllerShowInfoOrBuilder> 
+           getShowInfoListOrBuilderList() {
+        if (showInfoListBuilder_ != null) {
+          return showInfoListBuilder_.getMessageOrBuilderList();
         } else {
-          return java.util.Collections.unmodifiableList(fieldList_);
+          return java.util.Collections.unmodifiableList(showInfoList_);
         }
       }
       /**
-       * <code>repeated .GCGPlayerField field_list = 7;</code>
+       * <code>repeated .GCGControllerShowInfo show_info_list = 7;</code>
        */
-      public emu.grasscutter.net.proto.GCGPlayerFieldOuterClass.GCGPlayerField.Builder addFieldListBuilder() {
-        return getFieldListFieldBuilder().addBuilder(
-            emu.grasscutter.net.proto.GCGPlayerFieldOuterClass.GCGPlayerField.getDefaultInstance());
+      public emu.grasscutter.net.proto.GCGControllerShowInfoOuterClass.GCGControllerShowInfo.Builder addShowInfoListBuilder() {
+        return getShowInfoListFieldBuilder().addBuilder(
+            emu.grasscutter.net.proto.GCGControllerShowInfoOuterClass.GCGControllerShowInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .GCGPlayerField field_list = 7;</code>
+       * <code>repeated .GCGControllerShowInfo show_info_list = 7;</code>
        */
-      public emu.grasscutter.net.proto.GCGPlayerFieldOuterClass.GCGPlayerField.Builder addFieldListBuilder(
+      public emu.grasscutter.net.proto.GCGControllerShowInfoOuterClass.GCGControllerShowInfo.Builder addShowInfoListBuilder(
           int index) {
-        return getFieldListFieldBuilder().addBuilder(
-            index, emu.grasscutter.net.proto.GCGPlayerFieldOuterClass.GCGPlayerField.getDefaultInstance());
+        return getShowInfoListFieldBuilder().addBuilder(
+            index, emu.grasscutter.net.proto.GCGControllerShowInfoOuterClass.GCGControllerShowInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .GCGPlayerField field_list = 7;</code>
+       * <code>repeated .GCGControllerShowInfo show_info_list = 7;</code>
        */
-      public java.util.List<emu.grasscutter.net.proto.GCGPlayerFieldOuterClass.GCGPlayerField.Builder> 
-           getFieldListBuilderList() {
-        return getFieldListFieldBuilder().getBuilderList();
+      public java.util.List<emu.grasscutter.net.proto.GCGControllerShowInfoOuterClass.GCGControllerShowInfo.Builder> 
+           getShowInfoListBuilderList() {
+        return getShowInfoListFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.GCGPlayerFieldOuterClass.GCGPlayerField, emu.grasscutter.net.proto.GCGPlayerFieldOuterClass.GCGPlayerField.Builder, emu.grasscutter.net.proto.GCGPlayerFieldOuterClass.GCGPlayerFieldOrBuilder> 
-          getFieldListFieldBuilder() {
-        if (fieldListBuilder_ == null) {
-          fieldListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              emu.grasscutter.net.proto.GCGPlayerFieldOuterClass.GCGPlayerField, emu.grasscutter.net.proto.GCGPlayerFieldOuterClass.GCGPlayerField.Builder, emu.grasscutter.net.proto.GCGPlayerFieldOuterClass.GCGPlayerFieldOrBuilder>(
-                  fieldList_,
+          emu.grasscutter.net.proto.GCGControllerShowInfoOuterClass.GCGControllerShowInfo, emu.grasscutter.net.proto.GCGControllerShowInfoOuterClass.GCGControllerShowInfo.Builder, emu.grasscutter.net.proto.GCGControllerShowInfoOuterClass.GCGControllerShowInfoOrBuilder> 
+          getShowInfoListFieldBuilder() {
+        if (showInfoListBuilder_ == null) {
+          showInfoListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+              emu.grasscutter.net.proto.GCGControllerShowInfoOuterClass.GCGControllerShowInfo, emu.grasscutter.net.proto.GCGControllerShowInfoOuterClass.GCGControllerShowInfo.Builder, emu.grasscutter.net.proto.GCGControllerShowInfoOuterClass.GCGControllerShowInfoOrBuilder>(
+                  showInfoList_,
                   ((bitField0_ & 0x00000001) != 0),
                   getParentForChildren(),
                   isClean());
-          fieldList_ = null;
+          showInfoList_ = null;
         }
-        return fieldListBuilder_;
+        return showInfoListBuilder_;
       }
 
-      private int businessType_ = 0;
-      /**
-       * <code>.GCGGameBusinessType business_type = 14;</code>
-       * @return The enum numeric value on the wire for businessType.
-       */
-      @java.lang.Override public int getBusinessTypeValue() {
-        return businessType_;
-      }
-      /**
-       * <code>.GCGGameBusinessType business_type = 14;</code>
-       * @param value The enum numeric value on the wire for businessType to set.
-       * @return This builder for chaining.
-       */
-      public Builder setBusinessTypeValue(int value) {
-        
-        businessType_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>.GCGGameBusinessType business_type = 14;</code>
-       * @return The businessType.
-       */
-      @java.lang.Override
-      public emu.grasscutter.net.proto.GCGGameBusinessTypeOuterClass.GCGGameBusinessType getBusinessType() {
-        @SuppressWarnings("deprecation")
-        emu.grasscutter.net.proto.GCGGameBusinessTypeOuterClass.GCGGameBusinessType result = emu.grasscutter.net.proto.GCGGameBusinessTypeOuterClass.GCGGameBusinessType.valueOf(businessType_);
-        return result == null ? emu.grasscutter.net.proto.GCGGameBusinessTypeOuterClass.GCGGameBusinessType.UNRECOGNIZED : result;
-      }
-      /**
-       * <code>.GCGGameBusinessType business_type = 14;</code>
-       * @param value The businessType to set.
-       * @return This builder for chaining.
-       */
-      public Builder setBusinessType(emu.grasscutter.net.proto.GCGGameBusinessTypeOuterClass.GCGGameBusinessType value) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        
-        businessType_ = value.getNumber();
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>.GCGGameBusinessType business_type = 14;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearBusinessType() {
-        
-        businessType_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private java.util.List<emu.grasscutter.net.proto.GCGDuelChallengeOuterClass.GCGDuelChallenge> challengeList_ =
-        java.util.Collections.emptyList();
-      private void ensureChallengeListIsMutable() {
+      private com.google.protobuf.Internal.IntList forbidFinishChallengeList_ = emptyIntList();
+      private void ensureForbidFinishChallengeListIsMutable() {
         if (!((bitField0_ & 0x00000002) != 0)) {
-          challengeList_ = new java.util.ArrayList<emu.grasscutter.net.proto.GCGDuelChallengeOuterClass.GCGDuelChallenge>(challengeList_);
+          forbidFinishChallengeList_ = mutableCopy(forbidFinishChallengeList_);
           bitField0_ |= 0x00000002;
          }
       }
-
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.GCGDuelChallengeOuterClass.GCGDuelChallenge, emu.grasscutter.net.proto.GCGDuelChallengeOuterClass.GCGDuelChallenge.Builder, emu.grasscutter.net.proto.GCGDuelChallengeOuterClass.GCGDuelChallengeOrBuilder> challengeListBuilder_;
-
       /**
-       * <code>repeated .GCGDuelChallenge challenge_list = 5;</code>
+       * <code>repeated uint32 forbid_finish_challenge_list = 192;</code>
+       * @return A list containing the forbidFinishChallengeList.
        */
-      public java.util.List<emu.grasscutter.net.proto.GCGDuelChallengeOuterClass.GCGDuelChallenge> getChallengeListList() {
-        if (challengeListBuilder_ == null) {
-          return java.util.Collections.unmodifiableList(challengeList_);
-        } else {
-          return challengeListBuilder_.getMessageList();
-        }
+      public java.util.List<java.lang.Integer>
+          getForbidFinishChallengeListList() {
+        return ((bitField0_ & 0x00000002) != 0) ?
+                 java.util.Collections.unmodifiableList(forbidFinishChallengeList_) : forbidFinishChallengeList_;
       }
       /**
-       * <code>repeated .GCGDuelChallenge challenge_list = 5;</code>
+       * <code>repeated uint32 forbid_finish_challenge_list = 192;</code>
+       * @return The count of forbidFinishChallengeList.
        */
-      public int getChallengeListCount() {
-        if (challengeListBuilder_ == null) {
-          return challengeList_.size();
-        } else {
-          return challengeListBuilder_.getCount();
-        }
+      public int getForbidFinishChallengeListCount() {
+        return forbidFinishChallengeList_.size();
       }
       /**
-       * <code>repeated .GCGDuelChallenge challenge_list = 5;</code>
+       * <code>repeated uint32 forbid_finish_challenge_list = 192;</code>
+       * @param index The index of the element to return.
+       * @return The forbidFinishChallengeList at the given index.
        */
-      public emu.grasscutter.net.proto.GCGDuelChallengeOuterClass.GCGDuelChallenge getChallengeList(int index) {
-        if (challengeListBuilder_ == null) {
-          return challengeList_.get(index);
-        } else {
-          return challengeListBuilder_.getMessage(index);
-        }
+      public int getForbidFinishChallengeList(int index) {
+        return forbidFinishChallengeList_.getInt(index);
       }
       /**
-       * <code>repeated .GCGDuelChallenge challenge_list = 5;</code>
-       */
-      public Builder setChallengeList(
-          int index, emu.grasscutter.net.proto.GCGDuelChallengeOuterClass.GCGDuelChallenge value) {
-        if (challengeListBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureChallengeListIsMutable();
-          challengeList_.set(index, value);
-          onChanged();
-        } else {
-          challengeListBuilder_.setMessage(index, value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .GCGDuelChallenge challenge_list = 5;</code>
-       */
-      public Builder setChallengeList(
-          int index, emu.grasscutter.net.proto.GCGDuelChallengeOuterClass.GCGDuelChallenge.Builder builderForValue) {
-        if (challengeListBuilder_ == null) {
-          ensureChallengeListIsMutable();
-          challengeList_.set(index, builderForValue.build());
-          onChanged();
-        } else {
-          challengeListBuilder_.setMessage(index, builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .GCGDuelChallenge challenge_list = 5;</code>
-       */
-      public Builder addChallengeList(emu.grasscutter.net.proto.GCGDuelChallengeOuterClass.GCGDuelChallenge value) {
-        if (challengeListBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureChallengeListIsMutable();
-          challengeList_.add(value);
-          onChanged();
-        } else {
-          challengeListBuilder_.addMessage(value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .GCGDuelChallenge challenge_list = 5;</code>
-       */
-      public Builder addChallengeList(
-          int index, emu.grasscutter.net.proto.GCGDuelChallengeOuterClass.GCGDuelChallenge value) {
-        if (challengeListBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureChallengeListIsMutable();
-          challengeList_.add(index, value);
-          onChanged();
-        } else {
-          challengeListBuilder_.addMessage(index, value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .GCGDuelChallenge challenge_list = 5;</code>
-       */
-      public Builder addChallengeList(
-          emu.grasscutter.net.proto.GCGDuelChallengeOuterClass.GCGDuelChallenge.Builder builderForValue) {
-        if (challengeListBuilder_ == null) {
-          ensureChallengeListIsMutable();
-          challengeList_.add(builderForValue.build());
-          onChanged();
-        } else {
-          challengeListBuilder_.addMessage(builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .GCGDuelChallenge challenge_list = 5;</code>
-       */
-      public Builder addChallengeList(
-          int index, emu.grasscutter.net.proto.GCGDuelChallengeOuterClass.GCGDuelChallenge.Builder builderForValue) {
-        if (challengeListBuilder_ == null) {
-          ensureChallengeListIsMutable();
-          challengeList_.add(index, builderForValue.build());
-          onChanged();
-        } else {
-          challengeListBuilder_.addMessage(index, builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .GCGDuelChallenge challenge_list = 5;</code>
-       */
-      public Builder addAllChallengeList(
-          java.lang.Iterable<? extends emu.grasscutter.net.proto.GCGDuelChallengeOuterClass.GCGDuelChallenge> values) {
-        if (challengeListBuilder_ == null) {
-          ensureChallengeListIsMutable();
-          com.google.protobuf.AbstractMessageLite.Builder.addAll(
-              values, challengeList_);
-          onChanged();
-        } else {
-          challengeListBuilder_.addAllMessages(values);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .GCGDuelChallenge challenge_list = 5;</code>
-       */
-      public Builder clearChallengeList() {
-        if (challengeListBuilder_ == null) {
-          challengeList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000002);
-          onChanged();
-        } else {
-          challengeListBuilder_.clear();
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .GCGDuelChallenge challenge_list = 5;</code>
-       */
-      public Builder removeChallengeList(int index) {
-        if (challengeListBuilder_ == null) {
-          ensureChallengeListIsMutable();
-          challengeList_.remove(index);
-          onChanged();
-        } else {
-          challengeListBuilder_.remove(index);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .GCGDuelChallenge challenge_list = 5;</code>
-       */
-      public emu.grasscutter.net.proto.GCGDuelChallengeOuterClass.GCGDuelChallenge.Builder getChallengeListBuilder(
-          int index) {
-        return getChallengeListFieldBuilder().getBuilder(index);
-      }
-      /**
-       * <code>repeated .GCGDuelChallenge challenge_list = 5;</code>
-       */
-      public emu.grasscutter.net.proto.GCGDuelChallengeOuterClass.GCGDuelChallengeOrBuilder getChallengeListOrBuilder(
-          int index) {
-        if (challengeListBuilder_ == null) {
-          return challengeList_.get(index);  } else {
-          return challengeListBuilder_.getMessageOrBuilder(index);
-        }
-      }
-      /**
-       * <code>repeated .GCGDuelChallenge challenge_list = 5;</code>
-       */
-      public java.util.List<? extends emu.grasscutter.net.proto.GCGDuelChallengeOuterClass.GCGDuelChallengeOrBuilder> 
-           getChallengeListOrBuilderList() {
-        if (challengeListBuilder_ != null) {
-          return challengeListBuilder_.getMessageOrBuilderList();
-        } else {
-          return java.util.Collections.unmodifiableList(challengeList_);
-        }
-      }
-      /**
-       * <code>repeated .GCGDuelChallenge challenge_list = 5;</code>
-       */
-      public emu.grasscutter.net.proto.GCGDuelChallengeOuterClass.GCGDuelChallenge.Builder addChallengeListBuilder() {
-        return getChallengeListFieldBuilder().addBuilder(
-            emu.grasscutter.net.proto.GCGDuelChallengeOuterClass.GCGDuelChallenge.getDefaultInstance());
-      }
-      /**
-       * <code>repeated .GCGDuelChallenge challenge_list = 5;</code>
-       */
-      public emu.grasscutter.net.proto.GCGDuelChallengeOuterClass.GCGDuelChallenge.Builder addChallengeListBuilder(
-          int index) {
-        return getChallengeListFieldBuilder().addBuilder(
-            index, emu.grasscutter.net.proto.GCGDuelChallengeOuterClass.GCGDuelChallenge.getDefaultInstance());
-      }
-      /**
-       * <code>repeated .GCGDuelChallenge challenge_list = 5;</code>
-       */
-      public java.util.List<emu.grasscutter.net.proto.GCGDuelChallengeOuterClass.GCGDuelChallenge.Builder> 
-           getChallengeListBuilderList() {
-        return getChallengeListFieldBuilder().getBuilderList();
-      }
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.GCGDuelChallengeOuterClass.GCGDuelChallenge, emu.grasscutter.net.proto.GCGDuelChallengeOuterClass.GCGDuelChallenge.Builder, emu.grasscutter.net.proto.GCGDuelChallengeOuterClass.GCGDuelChallengeOrBuilder> 
-          getChallengeListFieldBuilder() {
-        if (challengeListBuilder_ == null) {
-          challengeListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              emu.grasscutter.net.proto.GCGDuelChallengeOuterClass.GCGDuelChallenge, emu.grasscutter.net.proto.GCGDuelChallengeOuterClass.GCGDuelChallenge.Builder, emu.grasscutter.net.proto.GCGDuelChallengeOuterClass.GCGDuelChallengeOrBuilder>(
-                  challengeList_,
-                  ((bitField0_ & 0x00000002) != 0),
-                  getParentForChildren(),
-                  isClean());
-          challengeList_ = null;
-        }
-        return challengeListBuilder_;
-      }
-
-      private int gameId_ ;
-      /**
-       * <code>uint32 game_id = 11;</code>
-       * @return The gameId.
-       */
-      @java.lang.Override
-      public int getGameId() {
-        return gameId_;
-      }
-      /**
-       * <code>uint32 game_id = 11;</code>
-       * @param value The gameId to set.
+       * <code>repeated uint32 forbid_finish_challenge_list = 192;</code>
+       * @param index The index to set the value at.
+       * @param value The forbidFinishChallengeList to set.
        * @return This builder for chaining.
        */
-      public Builder setGameId(int value) {
-        
-        gameId_ = value;
+      public Builder setForbidFinishChallengeList(
+          int index, int value) {
+        ensureForbidFinishChallengeListIsMutable();
+        forbidFinishChallengeList_.setInt(index, value);
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 game_id = 11;</code>
+       * <code>repeated uint32 forbid_finish_challenge_list = 192;</code>
+       * @param value The forbidFinishChallengeList to add.
        * @return This builder for chaining.
        */
-      public Builder clearGameId() {
-        
-        gameId_ = 0;
+      public Builder addForbidFinishChallengeList(int value) {
+        ensureForbidFinishChallengeListIsMutable();
+        forbidFinishChallengeList_.addInt(value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint32 forbid_finish_challenge_list = 192;</code>
+       * @param values The forbidFinishChallengeList to add.
+       * @return This builder for chaining.
+       */
+      public Builder addAllForbidFinishChallengeList(
+          java.lang.Iterable<? extends java.lang.Integer> values) {
+        ensureForbidFinishChallengeListIsMutable();
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, forbidFinishChallengeList_);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint32 forbid_finish_challenge_list = 192;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearForbidFinishChallengeList() {
+        forbidFinishChallengeList_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000002);
         onChanged();
         return this;
       }
 
-      private int controllerId_ ;
-      /**
-       * <code>uint32 controller_id = 13;</code>
-       * @return The controllerId.
-       */
-      @java.lang.Override
-      public int getControllerId() {
-        return controllerId_;
-      }
-      /**
-       * <code>uint32 controller_id = 13;</code>
-       * @param value The controllerId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setControllerId(int value) {
-        
-        controllerId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 controller_id = 13;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearControllerId() {
-        
-        controllerId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int round_ ;
-      /**
-       * <code>uint32 round = 15;</code>
-       * @return The round.
-       */
-      @java.lang.Override
-      public int getRound() {
-        return round_;
-      }
-      /**
-       * <code>uint32 round = 15;</code>
-       * @param value The round to set.
-       * @return This builder for chaining.
-       */
-      public Builder setRound(int value) {
-        
-        round_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 round = 15;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearRound() {
-        
-        round_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int curControllerId_ ;
-      /**
-       * <code>uint32 cur_controller_id = 12;</code>
-       * @return The curControllerId.
-       */
-      @java.lang.Override
-      public int getCurControllerId() {
-        return curControllerId_;
-      }
-      /**
-       * <code>uint32 cur_controller_id = 12;</code>
-       * @param value The curControllerId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setCurControllerId(int value) {
-        
-        curControllerId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 cur_controller_id = 12;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearCurControllerId() {
-        
-        curControllerId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private java.util.List<emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntention> intetionList_ =
+      private java.util.List<emu.grasscutter.net.proto.GCGCardOuterClass.GCGCard> cardList_ =
         java.util.Collections.emptyList();
-      private void ensureIntetionListIsMutable() {
+      private void ensureCardListIsMutable() {
         if (!((bitField0_ & 0x00000004) != 0)) {
-          intetionList_ = new java.util.ArrayList<emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntention>(intetionList_);
+          cardList_ = new java.util.ArrayList<emu.grasscutter.net.proto.GCGCardOuterClass.GCGCard>(cardList_);
           bitField0_ |= 0x00000004;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntention, emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntention.Builder, emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntentionOrBuilder> intetionListBuilder_;
+          emu.grasscutter.net.proto.GCGCardOuterClass.GCGCard, emu.grasscutter.net.proto.GCGCardOuterClass.GCGCard.Builder, emu.grasscutter.net.proto.GCGCardOuterClass.GCGCardOrBuilder> cardListBuilder_;
 
       /**
-       * <code>repeated .GCGPVEIntention intetion_list = 1;</code>
+       * <code>repeated .GCGCard card_list = 1;</code>
        */
-      public java.util.List<emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntention> getIntetionListList() {
-        if (intetionListBuilder_ == null) {
-          return java.util.Collections.unmodifiableList(intetionList_);
+      public java.util.List<emu.grasscutter.net.proto.GCGCardOuterClass.GCGCard> getCardListList() {
+        if (cardListBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(cardList_);
         } else {
-          return intetionListBuilder_.getMessageList();
+          return cardListBuilder_.getMessageList();
         }
       }
       /**
-       * <code>repeated .GCGPVEIntention intetion_list = 1;</code>
+       * <code>repeated .GCGCard card_list = 1;</code>
        */
-      public int getIntetionListCount() {
-        if (intetionListBuilder_ == null) {
-          return intetionList_.size();
+      public int getCardListCount() {
+        if (cardListBuilder_ == null) {
+          return cardList_.size();
         } else {
-          return intetionListBuilder_.getCount();
+          return cardListBuilder_.getCount();
         }
       }
       /**
-       * <code>repeated .GCGPVEIntention intetion_list = 1;</code>
+       * <code>repeated .GCGCard card_list = 1;</code>
        */
-      public emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntention getIntetionList(int index) {
-        if (intetionListBuilder_ == null) {
-          return intetionList_.get(index);
+      public emu.grasscutter.net.proto.GCGCardOuterClass.GCGCard getCardList(int index) {
+        if (cardListBuilder_ == null) {
+          return cardList_.get(index);
         } else {
-          return intetionListBuilder_.getMessage(index);
+          return cardListBuilder_.getMessage(index);
         }
       }
       /**
-       * <code>repeated .GCGPVEIntention intetion_list = 1;</code>
+       * <code>repeated .GCGCard card_list = 1;</code>
        */
-      public Builder setIntetionList(
-          int index, emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntention value) {
-        if (intetionListBuilder_ == null) {
+      public Builder setCardList(
+          int index, emu.grasscutter.net.proto.GCGCardOuterClass.GCGCard value) {
+        if (cardListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureIntetionListIsMutable();
-          intetionList_.set(index, value);
+          ensureCardListIsMutable();
+          cardList_.set(index, value);
           onChanged();
         } else {
-          intetionListBuilder_.setMessage(index, value);
+          cardListBuilder_.setMessage(index, value);
         }
         return this;
       }
       /**
-       * <code>repeated .GCGPVEIntention intetion_list = 1;</code>
+       * <code>repeated .GCGCard card_list = 1;</code>
        */
-      public Builder setIntetionList(
-          int index, emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntention.Builder builderForValue) {
-        if (intetionListBuilder_ == null) {
-          ensureIntetionListIsMutable();
-          intetionList_.set(index, builderForValue.build());
+      public Builder setCardList(
+          int index, emu.grasscutter.net.proto.GCGCardOuterClass.GCGCard.Builder builderForValue) {
+        if (cardListBuilder_ == null) {
+          ensureCardListIsMutable();
+          cardList_.set(index, builderForValue.build());
           onChanged();
         } else {
-          intetionListBuilder_.setMessage(index, builderForValue.build());
+          cardListBuilder_.setMessage(index, builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .GCGPVEIntention intetion_list = 1;</code>
+       * <code>repeated .GCGCard card_list = 1;</code>
        */
-      public Builder addIntetionList(emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntention value) {
-        if (intetionListBuilder_ == null) {
+      public Builder addCardList(emu.grasscutter.net.proto.GCGCardOuterClass.GCGCard value) {
+        if (cardListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureIntetionListIsMutable();
-          intetionList_.add(value);
+          ensureCardListIsMutable();
+          cardList_.add(value);
           onChanged();
         } else {
-          intetionListBuilder_.addMessage(value);
+          cardListBuilder_.addMessage(value);
         }
         return this;
       }
       /**
-       * <code>repeated .GCGPVEIntention intetion_list = 1;</code>
+       * <code>repeated .GCGCard card_list = 1;</code>
        */
-      public Builder addIntetionList(
-          int index, emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntention value) {
-        if (intetionListBuilder_ == null) {
+      public Builder addCardList(
+          int index, emu.grasscutter.net.proto.GCGCardOuterClass.GCGCard value) {
+        if (cardListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureIntetionListIsMutable();
-          intetionList_.add(index, value);
+          ensureCardListIsMutable();
+          cardList_.add(index, value);
           onChanged();
         } else {
-          intetionListBuilder_.addMessage(index, value);
+          cardListBuilder_.addMessage(index, value);
         }
         return this;
       }
       /**
-       * <code>repeated .GCGPVEIntention intetion_list = 1;</code>
+       * <code>repeated .GCGCard card_list = 1;</code>
        */
-      public Builder addIntetionList(
-          emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntention.Builder builderForValue) {
-        if (intetionListBuilder_ == null) {
-          ensureIntetionListIsMutable();
-          intetionList_.add(builderForValue.build());
+      public Builder addCardList(
+          emu.grasscutter.net.proto.GCGCardOuterClass.GCGCard.Builder builderForValue) {
+        if (cardListBuilder_ == null) {
+          ensureCardListIsMutable();
+          cardList_.add(builderForValue.build());
           onChanged();
         } else {
-          intetionListBuilder_.addMessage(builderForValue.build());
+          cardListBuilder_.addMessage(builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .GCGPVEIntention intetion_list = 1;</code>
+       * <code>repeated .GCGCard card_list = 1;</code>
        */
-      public Builder addIntetionList(
-          int index, emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntention.Builder builderForValue) {
-        if (intetionListBuilder_ == null) {
-          ensureIntetionListIsMutable();
-          intetionList_.add(index, builderForValue.build());
+      public Builder addCardList(
+          int index, emu.grasscutter.net.proto.GCGCardOuterClass.GCGCard.Builder builderForValue) {
+        if (cardListBuilder_ == null) {
+          ensureCardListIsMutable();
+          cardList_.add(index, builderForValue.build());
           onChanged();
         } else {
-          intetionListBuilder_.addMessage(index, builderForValue.build());
+          cardListBuilder_.addMessage(index, builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .GCGPVEIntention intetion_list = 1;</code>
+       * <code>repeated .GCGCard card_list = 1;</code>
        */
-      public Builder addAllIntetionList(
-          java.lang.Iterable<? extends emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntention> values) {
-        if (intetionListBuilder_ == null) {
-          ensureIntetionListIsMutable();
+      public Builder addAllCardList(
+          java.lang.Iterable<? extends emu.grasscutter.net.proto.GCGCardOuterClass.GCGCard> values) {
+        if (cardListBuilder_ == null) {
+          ensureCardListIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
-              values, intetionList_);
+              values, cardList_);
           onChanged();
         } else {
-          intetionListBuilder_.addAllMessages(values);
+          cardListBuilder_.addAllMessages(values);
         }
         return this;
       }
       /**
-       * <code>repeated .GCGPVEIntention intetion_list = 1;</code>
+       * <code>repeated .GCGCard card_list = 1;</code>
        */
-      public Builder clearIntetionList() {
-        if (intetionListBuilder_ == null) {
-          intetionList_ = java.util.Collections.emptyList();
+      public Builder clearCardList() {
+        if (cardListBuilder_ == null) {
+          cardList_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000004);
           onChanged();
         } else {
-          intetionListBuilder_.clear();
+          cardListBuilder_.clear();
         }
         return this;
       }
       /**
-       * <code>repeated .GCGPVEIntention intetion_list = 1;</code>
+       * <code>repeated .GCGCard card_list = 1;</code>
        */
-      public Builder removeIntetionList(int index) {
-        if (intetionListBuilder_ == null) {
-          ensureIntetionListIsMutable();
-          intetionList_.remove(index);
+      public Builder removeCardList(int index) {
+        if (cardListBuilder_ == null) {
+          ensureCardListIsMutable();
+          cardList_.remove(index);
           onChanged();
         } else {
-          intetionListBuilder_.remove(index);
+          cardListBuilder_.remove(index);
         }
         return this;
       }
       /**
-       * <code>repeated .GCGPVEIntention intetion_list = 1;</code>
+       * <code>repeated .GCGCard card_list = 1;</code>
        */
-      public emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntention.Builder getIntetionListBuilder(
+      public emu.grasscutter.net.proto.GCGCardOuterClass.GCGCard.Builder getCardListBuilder(
           int index) {
-        return getIntetionListFieldBuilder().getBuilder(index);
+        return getCardListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .GCGPVEIntention intetion_list = 1;</code>
+       * <code>repeated .GCGCard card_list = 1;</code>
        */
-      public emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntentionOrBuilder getIntetionListOrBuilder(
+      public emu.grasscutter.net.proto.GCGCardOuterClass.GCGCardOrBuilder getCardListOrBuilder(
           int index) {
-        if (intetionListBuilder_ == null) {
-          return intetionList_.get(index);  } else {
-          return intetionListBuilder_.getMessageOrBuilder(index);
+        if (cardListBuilder_ == null) {
+          return cardList_.get(index);  } else {
+          return cardListBuilder_.getMessageOrBuilder(index);
         }
       }
       /**
-       * <code>repeated .GCGPVEIntention intetion_list = 1;</code>
+       * <code>repeated .GCGCard card_list = 1;</code>
        */
-      public java.util.List<? extends emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntentionOrBuilder> 
-           getIntetionListOrBuilderList() {
-        if (intetionListBuilder_ != null) {
-          return intetionListBuilder_.getMessageOrBuilderList();
+      public java.util.List<? extends emu.grasscutter.net.proto.GCGCardOuterClass.GCGCardOrBuilder> 
+           getCardListOrBuilderList() {
+        if (cardListBuilder_ != null) {
+          return cardListBuilder_.getMessageOrBuilderList();
         } else {
-          return java.util.Collections.unmodifiableList(intetionList_);
+          return java.util.Collections.unmodifiableList(cardList_);
         }
       }
       /**
-       * <code>repeated .GCGPVEIntention intetion_list = 1;</code>
+       * <code>repeated .GCGCard card_list = 1;</code>
        */
-      public emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntention.Builder addIntetionListBuilder() {
-        return getIntetionListFieldBuilder().addBuilder(
-            emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntention.getDefaultInstance());
+      public emu.grasscutter.net.proto.GCGCardOuterClass.GCGCard.Builder addCardListBuilder() {
+        return getCardListFieldBuilder().addBuilder(
+            emu.grasscutter.net.proto.GCGCardOuterClass.GCGCard.getDefaultInstance());
       }
       /**
-       * <code>repeated .GCGPVEIntention intetion_list = 1;</code>
+       * <code>repeated .GCGCard card_list = 1;</code>
        */
-      public emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntention.Builder addIntetionListBuilder(
+      public emu.grasscutter.net.proto.GCGCardOuterClass.GCGCard.Builder addCardListBuilder(
           int index) {
-        return getIntetionListFieldBuilder().addBuilder(
-            index, emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntention.getDefaultInstance());
+        return getCardListFieldBuilder().addBuilder(
+            index, emu.grasscutter.net.proto.GCGCardOuterClass.GCGCard.getDefaultInstance());
       }
       /**
-       * <code>repeated .GCGPVEIntention intetion_list = 1;</code>
+       * <code>repeated .GCGCard card_list = 1;</code>
        */
-      public java.util.List<emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntention.Builder> 
-           getIntetionListBuilderList() {
-        return getIntetionListFieldBuilder().getBuilderList();
+      public java.util.List<emu.grasscutter.net.proto.GCGCardOuterClass.GCGCard.Builder> 
+           getCardListBuilderList() {
+        return getCardListFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntention, emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntention.Builder, emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntentionOrBuilder> 
-          getIntetionListFieldBuilder() {
-        if (intetionListBuilder_ == null) {
-          intetionListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntention, emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntention.Builder, emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntentionOrBuilder>(
-                  intetionList_,
+          emu.grasscutter.net.proto.GCGCardOuterClass.GCGCard, emu.grasscutter.net.proto.GCGCardOuterClass.GCGCard.Builder, emu.grasscutter.net.proto.GCGCardOuterClass.GCGCardOrBuilder> 
+          getCardListFieldBuilder() {
+        if (cardListBuilder_ == null) {
+          cardListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+              emu.grasscutter.net.proto.GCGCardOuterClass.GCGCard, emu.grasscutter.net.proto.GCGCardOuterClass.GCGCard.Builder, emu.grasscutter.net.proto.GCGCardOuterClass.GCGCardOrBuilder>(
+                  cardList_,
                   ((bitField0_ & 0x00000004) != 0),
                   getParentForChildren(),
                   isClean());
-          intetionList_ = null;
+          cardList_ = null;
         }
-        return intetionListBuilder_;
+        return cardListBuilder_;
+      }
+
+      private int unk3300BIANMOPDEHO_ ;
+      /**
+       * <code>uint32 Unk3300_BIANMOPDEHO = 9;</code>
+       * @return The unk3300BIANMOPDEHO.
+       */
+      @java.lang.Override
+      public int getUnk3300BIANMOPDEHO() {
+        return unk3300BIANMOPDEHO_;
+      }
+      /**
+       * <code>uint32 Unk3300_BIANMOPDEHO = 9;</code>
+       * @param value The unk3300BIANMOPDEHO to set.
+       * @return This builder for chaining.
+       */
+      public Builder setUnk3300BIANMOPDEHO(int value) {
+        
+        unk3300BIANMOPDEHO_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 Unk3300_BIANMOPDEHO = 9;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearUnk3300BIANMOPDEHO() {
+        
+        unk3300BIANMOPDEHO_ = 0;
+        onChanged();
+        return this;
       }
 
       private emu.grasscutter.net.proto.GCGCostReviseInfoOuterClass.GCGCostReviseInfo costRevise_;
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.GCGCostReviseInfoOuterClass.GCGCostReviseInfo, emu.grasscutter.net.proto.GCGCostReviseInfoOuterClass.GCGCostReviseInfo.Builder, emu.grasscutter.net.proto.GCGCostReviseInfoOuterClass.GCGCostReviseInfoOrBuilder> costReviseBuilder_;
       /**
-       * <code>.GCGCostReviseInfo cost_revise = 10;</code>
+       * <code>.GCGCostReviseInfo cost_revise = 8;</code>
        * @return Whether the costRevise field is set.
        */
       public boolean hasCostRevise() {
         return costReviseBuilder_ != null || costRevise_ != null;
       }
       /**
-       * <code>.GCGCostReviseInfo cost_revise = 10;</code>
+       * <code>.GCGCostReviseInfo cost_revise = 8;</code>
        * @return The costRevise.
        */
       public emu.grasscutter.net.proto.GCGCostReviseInfoOuterClass.GCGCostReviseInfo getCostRevise() {
@@ -2564,7 +2805,7 @@ public final class GCGDuelOuterClass {
         }
       }
       /**
-       * <code>.GCGCostReviseInfo cost_revise = 10;</code>
+       * <code>.GCGCostReviseInfo cost_revise = 8;</code>
        */
       public Builder setCostRevise(emu.grasscutter.net.proto.GCGCostReviseInfoOuterClass.GCGCostReviseInfo value) {
         if (costReviseBuilder_ == null) {
@@ -2580,7 +2821,7 @@ public final class GCGDuelOuterClass {
         return this;
       }
       /**
-       * <code>.GCGCostReviseInfo cost_revise = 10;</code>
+       * <code>.GCGCostReviseInfo cost_revise = 8;</code>
        */
       public Builder setCostRevise(
           emu.grasscutter.net.proto.GCGCostReviseInfoOuterClass.GCGCostReviseInfo.Builder builderForValue) {
@@ -2594,7 +2835,7 @@ public final class GCGDuelOuterClass {
         return this;
       }
       /**
-       * <code>.GCGCostReviseInfo cost_revise = 10;</code>
+       * <code>.GCGCostReviseInfo cost_revise = 8;</code>
        */
       public Builder mergeCostRevise(emu.grasscutter.net.proto.GCGCostReviseInfoOuterClass.GCGCostReviseInfo value) {
         if (costReviseBuilder_ == null) {
@@ -2612,7 +2853,7 @@ public final class GCGDuelOuterClass {
         return this;
       }
       /**
-       * <code>.GCGCostReviseInfo cost_revise = 10;</code>
+       * <code>.GCGCostReviseInfo cost_revise = 8;</code>
        */
       public Builder clearCostRevise() {
         if (costReviseBuilder_ == null) {
@@ -2626,7 +2867,7 @@ public final class GCGDuelOuterClass {
         return this;
       }
       /**
-       * <code>.GCGCostReviseInfo cost_revise = 10;</code>
+       * <code>.GCGCostReviseInfo cost_revise = 8;</code>
        */
       public emu.grasscutter.net.proto.GCGCostReviseInfoOuterClass.GCGCostReviseInfo.Builder getCostReviseBuilder() {
         
@@ -2634,7 +2875,7 @@ public final class GCGDuelOuterClass {
         return getCostReviseFieldBuilder().getBuilder();
       }
       /**
-       * <code>.GCGCostReviseInfo cost_revise = 10;</code>
+       * <code>.GCGCostReviseInfo cost_revise = 8;</code>
        */
       public emu.grasscutter.net.proto.GCGCostReviseInfoOuterClass.GCGCostReviseInfoOrBuilder getCostReviseOrBuilder() {
         if (costReviseBuilder_ != null) {
@@ -2645,7 +2886,7 @@ public final class GCGDuelOuterClass {
         }
       }
       /**
-       * <code>.GCGCostReviseInfo cost_revise = 10;</code>
+       * <code>.GCGCostReviseInfo cost_revise = 8;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.GCGCostReviseInfoOuterClass.GCGCostReviseInfo, emu.grasscutter.net.proto.GCGCostReviseInfoOuterClass.GCGCostReviseInfo.Builder, emu.grasscutter.net.proto.GCGCostReviseInfoOuterClass.GCGCostReviseInfoOrBuilder> 
@@ -2661,31 +2902,1649 @@ public final class GCGDuelOuterClass {
         return costReviseBuilder_;
       }
 
-      private com.google.protobuf.Internal.IntList cardIdList_ = emptyIntList();
-      private void ensureCardIdListIsMutable() {
+      private int gameId_ ;
+      /**
+       * <code>uint32 game_id = 4;</code>
+       * @return The gameId.
+       */
+      @java.lang.Override
+      public int getGameId() {
+        return gameId_;
+      }
+      /**
+       * <code>uint32 game_id = 4;</code>
+       * @param value The gameId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setGameId(int value) {
+        
+        gameId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 game_id = 4;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearGameId() {
+        
+        gameId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private java.util.List<emu.grasscutter.net.proto.GCGPlayerFieldOuterClass.GCGPlayerField> fieldList_ =
+        java.util.Collections.emptyList();
+      private void ensureFieldListIsMutable() {
         if (!((bitField0_ & 0x00000008) != 0)) {
-          cardIdList_ = mutableCopy(cardIdList_);
+          fieldList_ = new java.util.ArrayList<emu.grasscutter.net.proto.GCGPlayerFieldOuterClass.GCGPlayerField>(fieldList_);
           bitField0_ |= 0x00000008;
          }
       }
+
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          emu.grasscutter.net.proto.GCGPlayerFieldOuterClass.GCGPlayerField, emu.grasscutter.net.proto.GCGPlayerFieldOuterClass.GCGPlayerField.Builder, emu.grasscutter.net.proto.GCGPlayerFieldOuterClass.GCGPlayerFieldOrBuilder> fieldListBuilder_;
+
       /**
-       * <code>repeated uint32 card_id_list = 4;</code>
+       * <code>repeated .GCGPlayerField field_list = 5;</code>
+       */
+      public java.util.List<emu.grasscutter.net.proto.GCGPlayerFieldOuterClass.GCGPlayerField> getFieldListList() {
+        if (fieldListBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(fieldList_);
+        } else {
+          return fieldListBuilder_.getMessageList();
+        }
+      }
+      /**
+       * <code>repeated .GCGPlayerField field_list = 5;</code>
+       */
+      public int getFieldListCount() {
+        if (fieldListBuilder_ == null) {
+          return fieldList_.size();
+        } else {
+          return fieldListBuilder_.getCount();
+        }
+      }
+      /**
+       * <code>repeated .GCGPlayerField field_list = 5;</code>
+       */
+      public emu.grasscutter.net.proto.GCGPlayerFieldOuterClass.GCGPlayerField getFieldList(int index) {
+        if (fieldListBuilder_ == null) {
+          return fieldList_.get(index);
+        } else {
+          return fieldListBuilder_.getMessage(index);
+        }
+      }
+      /**
+       * <code>repeated .GCGPlayerField field_list = 5;</code>
+       */
+      public Builder setFieldList(
+          int index, emu.grasscutter.net.proto.GCGPlayerFieldOuterClass.GCGPlayerField value) {
+        if (fieldListBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureFieldListIsMutable();
+          fieldList_.set(index, value);
+          onChanged();
+        } else {
+          fieldListBuilder_.setMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .GCGPlayerField field_list = 5;</code>
+       */
+      public Builder setFieldList(
+          int index, emu.grasscutter.net.proto.GCGPlayerFieldOuterClass.GCGPlayerField.Builder builderForValue) {
+        if (fieldListBuilder_ == null) {
+          ensureFieldListIsMutable();
+          fieldList_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          fieldListBuilder_.setMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .GCGPlayerField field_list = 5;</code>
+       */
+      public Builder addFieldList(emu.grasscutter.net.proto.GCGPlayerFieldOuterClass.GCGPlayerField value) {
+        if (fieldListBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureFieldListIsMutable();
+          fieldList_.add(value);
+          onChanged();
+        } else {
+          fieldListBuilder_.addMessage(value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .GCGPlayerField field_list = 5;</code>
+       */
+      public Builder addFieldList(
+          int index, emu.grasscutter.net.proto.GCGPlayerFieldOuterClass.GCGPlayerField value) {
+        if (fieldListBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureFieldListIsMutable();
+          fieldList_.add(index, value);
+          onChanged();
+        } else {
+          fieldListBuilder_.addMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .GCGPlayerField field_list = 5;</code>
+       */
+      public Builder addFieldList(
+          emu.grasscutter.net.proto.GCGPlayerFieldOuterClass.GCGPlayerField.Builder builderForValue) {
+        if (fieldListBuilder_ == null) {
+          ensureFieldListIsMutable();
+          fieldList_.add(builderForValue.build());
+          onChanged();
+        } else {
+          fieldListBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .GCGPlayerField field_list = 5;</code>
+       */
+      public Builder addFieldList(
+          int index, emu.grasscutter.net.proto.GCGPlayerFieldOuterClass.GCGPlayerField.Builder builderForValue) {
+        if (fieldListBuilder_ == null) {
+          ensureFieldListIsMutable();
+          fieldList_.add(index, builderForValue.build());
+          onChanged();
+        } else {
+          fieldListBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .GCGPlayerField field_list = 5;</code>
+       */
+      public Builder addAllFieldList(
+          java.lang.Iterable<? extends emu.grasscutter.net.proto.GCGPlayerFieldOuterClass.GCGPlayerField> values) {
+        if (fieldListBuilder_ == null) {
+          ensureFieldListIsMutable();
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, fieldList_);
+          onChanged();
+        } else {
+          fieldListBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .GCGPlayerField field_list = 5;</code>
+       */
+      public Builder clearFieldList() {
+        if (fieldListBuilder_ == null) {
+          fieldList_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000008);
+          onChanged();
+        } else {
+          fieldListBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .GCGPlayerField field_list = 5;</code>
+       */
+      public Builder removeFieldList(int index) {
+        if (fieldListBuilder_ == null) {
+          ensureFieldListIsMutable();
+          fieldList_.remove(index);
+          onChanged();
+        } else {
+          fieldListBuilder_.remove(index);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .GCGPlayerField field_list = 5;</code>
+       */
+      public emu.grasscutter.net.proto.GCGPlayerFieldOuterClass.GCGPlayerField.Builder getFieldListBuilder(
+          int index) {
+        return getFieldListFieldBuilder().getBuilder(index);
+      }
+      /**
+       * <code>repeated .GCGPlayerField field_list = 5;</code>
+       */
+      public emu.grasscutter.net.proto.GCGPlayerFieldOuterClass.GCGPlayerFieldOrBuilder getFieldListOrBuilder(
+          int index) {
+        if (fieldListBuilder_ == null) {
+          return fieldList_.get(index);  } else {
+          return fieldListBuilder_.getMessageOrBuilder(index);
+        }
+      }
+      /**
+       * <code>repeated .GCGPlayerField field_list = 5;</code>
+       */
+      public java.util.List<? extends emu.grasscutter.net.proto.GCGPlayerFieldOuterClass.GCGPlayerFieldOrBuilder> 
+           getFieldListOrBuilderList() {
+        if (fieldListBuilder_ != null) {
+          return fieldListBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(fieldList_);
+        }
+      }
+      /**
+       * <code>repeated .GCGPlayerField field_list = 5;</code>
+       */
+      public emu.grasscutter.net.proto.GCGPlayerFieldOuterClass.GCGPlayerField.Builder addFieldListBuilder() {
+        return getFieldListFieldBuilder().addBuilder(
+            emu.grasscutter.net.proto.GCGPlayerFieldOuterClass.GCGPlayerField.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .GCGPlayerField field_list = 5;</code>
+       */
+      public emu.grasscutter.net.proto.GCGPlayerFieldOuterClass.GCGPlayerField.Builder addFieldListBuilder(
+          int index) {
+        return getFieldListFieldBuilder().addBuilder(
+            index, emu.grasscutter.net.proto.GCGPlayerFieldOuterClass.GCGPlayerField.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .GCGPlayerField field_list = 5;</code>
+       */
+      public java.util.List<emu.grasscutter.net.proto.GCGPlayerFieldOuterClass.GCGPlayerField.Builder> 
+           getFieldListBuilderList() {
+        return getFieldListFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          emu.grasscutter.net.proto.GCGPlayerFieldOuterClass.GCGPlayerField, emu.grasscutter.net.proto.GCGPlayerFieldOuterClass.GCGPlayerField.Builder, emu.grasscutter.net.proto.GCGPlayerFieldOuterClass.GCGPlayerFieldOrBuilder> 
+          getFieldListFieldBuilder() {
+        if (fieldListBuilder_ == null) {
+          fieldListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+              emu.grasscutter.net.proto.GCGPlayerFieldOuterClass.GCGPlayerField, emu.grasscutter.net.proto.GCGPlayerFieldOuterClass.GCGPlayerField.Builder, emu.grasscutter.net.proto.GCGPlayerFieldOuterClass.GCGPlayerFieldOrBuilder>(
+                  fieldList_,
+                  ((bitField0_ & 0x00000008) != 0),
+                  getParentForChildren(),
+                  isClean());
+          fieldList_ = null;
+        }
+        return fieldListBuilder_;
+      }
+
+      private java.util.List<emu.grasscutter.net.proto.Unk3300ADHENCIFKNI.Unk3300_ADHENCIFKNI> unk3300CDCMBOKBLAK_ =
+        java.util.Collections.emptyList();
+      private void ensureUnk3300CDCMBOKBLAKIsMutable() {
+        if (!((bitField0_ & 0x00000010) != 0)) {
+          unk3300CDCMBOKBLAK_ = new java.util.ArrayList<emu.grasscutter.net.proto.Unk3300ADHENCIFKNI.Unk3300_ADHENCIFKNI>(unk3300CDCMBOKBLAK_);
+          bitField0_ |= 0x00000010;
+         }
+      }
+
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          emu.grasscutter.net.proto.Unk3300ADHENCIFKNI.Unk3300_ADHENCIFKNI, emu.grasscutter.net.proto.Unk3300ADHENCIFKNI.Unk3300_ADHENCIFKNI.Builder, emu.grasscutter.net.proto.Unk3300ADHENCIFKNI.Unk3300_ADHENCIFKNIOrBuilder> unk3300CDCMBOKBLAKBuilder_;
+
+      /**
+       * <code>repeated .Unk3300_ADHENCIFKNI Unk3300_CDCMBOKBLAK = 1987;</code>
+       */
+      public java.util.List<emu.grasscutter.net.proto.Unk3300ADHENCIFKNI.Unk3300_ADHENCIFKNI> getUnk3300CDCMBOKBLAKList() {
+        if (unk3300CDCMBOKBLAKBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(unk3300CDCMBOKBLAK_);
+        } else {
+          return unk3300CDCMBOKBLAKBuilder_.getMessageList();
+        }
+      }
+      /**
+       * <code>repeated .Unk3300_ADHENCIFKNI Unk3300_CDCMBOKBLAK = 1987;</code>
+       */
+      public int getUnk3300CDCMBOKBLAKCount() {
+        if (unk3300CDCMBOKBLAKBuilder_ == null) {
+          return unk3300CDCMBOKBLAK_.size();
+        } else {
+          return unk3300CDCMBOKBLAKBuilder_.getCount();
+        }
+      }
+      /**
+       * <code>repeated .Unk3300_ADHENCIFKNI Unk3300_CDCMBOKBLAK = 1987;</code>
+       */
+      public emu.grasscutter.net.proto.Unk3300ADHENCIFKNI.Unk3300_ADHENCIFKNI getUnk3300CDCMBOKBLAK(int index) {
+        if (unk3300CDCMBOKBLAKBuilder_ == null) {
+          return unk3300CDCMBOKBLAK_.get(index);
+        } else {
+          return unk3300CDCMBOKBLAKBuilder_.getMessage(index);
+        }
+      }
+      /**
+       * <code>repeated .Unk3300_ADHENCIFKNI Unk3300_CDCMBOKBLAK = 1987;</code>
+       */
+      public Builder setUnk3300CDCMBOKBLAK(
+          int index, emu.grasscutter.net.proto.Unk3300ADHENCIFKNI.Unk3300_ADHENCIFKNI value) {
+        if (unk3300CDCMBOKBLAKBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureUnk3300CDCMBOKBLAKIsMutable();
+          unk3300CDCMBOKBLAK_.set(index, value);
+          onChanged();
+        } else {
+          unk3300CDCMBOKBLAKBuilder_.setMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .Unk3300_ADHENCIFKNI Unk3300_CDCMBOKBLAK = 1987;</code>
+       */
+      public Builder setUnk3300CDCMBOKBLAK(
+          int index, emu.grasscutter.net.proto.Unk3300ADHENCIFKNI.Unk3300_ADHENCIFKNI.Builder builderForValue) {
+        if (unk3300CDCMBOKBLAKBuilder_ == null) {
+          ensureUnk3300CDCMBOKBLAKIsMutable();
+          unk3300CDCMBOKBLAK_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          unk3300CDCMBOKBLAKBuilder_.setMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .Unk3300_ADHENCIFKNI Unk3300_CDCMBOKBLAK = 1987;</code>
+       */
+      public Builder addUnk3300CDCMBOKBLAK(emu.grasscutter.net.proto.Unk3300ADHENCIFKNI.Unk3300_ADHENCIFKNI value) {
+        if (unk3300CDCMBOKBLAKBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureUnk3300CDCMBOKBLAKIsMutable();
+          unk3300CDCMBOKBLAK_.add(value);
+          onChanged();
+        } else {
+          unk3300CDCMBOKBLAKBuilder_.addMessage(value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .Unk3300_ADHENCIFKNI Unk3300_CDCMBOKBLAK = 1987;</code>
+       */
+      public Builder addUnk3300CDCMBOKBLAK(
+          int index, emu.grasscutter.net.proto.Unk3300ADHENCIFKNI.Unk3300_ADHENCIFKNI value) {
+        if (unk3300CDCMBOKBLAKBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureUnk3300CDCMBOKBLAKIsMutable();
+          unk3300CDCMBOKBLAK_.add(index, value);
+          onChanged();
+        } else {
+          unk3300CDCMBOKBLAKBuilder_.addMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .Unk3300_ADHENCIFKNI Unk3300_CDCMBOKBLAK = 1987;</code>
+       */
+      public Builder addUnk3300CDCMBOKBLAK(
+          emu.grasscutter.net.proto.Unk3300ADHENCIFKNI.Unk3300_ADHENCIFKNI.Builder builderForValue) {
+        if (unk3300CDCMBOKBLAKBuilder_ == null) {
+          ensureUnk3300CDCMBOKBLAKIsMutable();
+          unk3300CDCMBOKBLAK_.add(builderForValue.build());
+          onChanged();
+        } else {
+          unk3300CDCMBOKBLAKBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .Unk3300_ADHENCIFKNI Unk3300_CDCMBOKBLAK = 1987;</code>
+       */
+      public Builder addUnk3300CDCMBOKBLAK(
+          int index, emu.grasscutter.net.proto.Unk3300ADHENCIFKNI.Unk3300_ADHENCIFKNI.Builder builderForValue) {
+        if (unk3300CDCMBOKBLAKBuilder_ == null) {
+          ensureUnk3300CDCMBOKBLAKIsMutable();
+          unk3300CDCMBOKBLAK_.add(index, builderForValue.build());
+          onChanged();
+        } else {
+          unk3300CDCMBOKBLAKBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .Unk3300_ADHENCIFKNI Unk3300_CDCMBOKBLAK = 1987;</code>
+       */
+      public Builder addAllUnk3300CDCMBOKBLAK(
+          java.lang.Iterable<? extends emu.grasscutter.net.proto.Unk3300ADHENCIFKNI.Unk3300_ADHENCIFKNI> values) {
+        if (unk3300CDCMBOKBLAKBuilder_ == null) {
+          ensureUnk3300CDCMBOKBLAKIsMutable();
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, unk3300CDCMBOKBLAK_);
+          onChanged();
+        } else {
+          unk3300CDCMBOKBLAKBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .Unk3300_ADHENCIFKNI Unk3300_CDCMBOKBLAK = 1987;</code>
+       */
+      public Builder clearUnk3300CDCMBOKBLAK() {
+        if (unk3300CDCMBOKBLAKBuilder_ == null) {
+          unk3300CDCMBOKBLAK_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000010);
+          onChanged();
+        } else {
+          unk3300CDCMBOKBLAKBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .Unk3300_ADHENCIFKNI Unk3300_CDCMBOKBLAK = 1987;</code>
+       */
+      public Builder removeUnk3300CDCMBOKBLAK(int index) {
+        if (unk3300CDCMBOKBLAKBuilder_ == null) {
+          ensureUnk3300CDCMBOKBLAKIsMutable();
+          unk3300CDCMBOKBLAK_.remove(index);
+          onChanged();
+        } else {
+          unk3300CDCMBOKBLAKBuilder_.remove(index);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .Unk3300_ADHENCIFKNI Unk3300_CDCMBOKBLAK = 1987;</code>
+       */
+      public emu.grasscutter.net.proto.Unk3300ADHENCIFKNI.Unk3300_ADHENCIFKNI.Builder getUnk3300CDCMBOKBLAKBuilder(
+          int index) {
+        return getUnk3300CDCMBOKBLAKFieldBuilder().getBuilder(index);
+      }
+      /**
+       * <code>repeated .Unk3300_ADHENCIFKNI Unk3300_CDCMBOKBLAK = 1987;</code>
+       */
+      public emu.grasscutter.net.proto.Unk3300ADHENCIFKNI.Unk3300_ADHENCIFKNIOrBuilder getUnk3300CDCMBOKBLAKOrBuilder(
+          int index) {
+        if (unk3300CDCMBOKBLAKBuilder_ == null) {
+          return unk3300CDCMBOKBLAK_.get(index);  } else {
+          return unk3300CDCMBOKBLAKBuilder_.getMessageOrBuilder(index);
+        }
+      }
+      /**
+       * <code>repeated .Unk3300_ADHENCIFKNI Unk3300_CDCMBOKBLAK = 1987;</code>
+       */
+      public java.util.List<? extends emu.grasscutter.net.proto.Unk3300ADHENCIFKNI.Unk3300_ADHENCIFKNIOrBuilder> 
+           getUnk3300CDCMBOKBLAKOrBuilderList() {
+        if (unk3300CDCMBOKBLAKBuilder_ != null) {
+          return unk3300CDCMBOKBLAKBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(unk3300CDCMBOKBLAK_);
+        }
+      }
+      /**
+       * <code>repeated .Unk3300_ADHENCIFKNI Unk3300_CDCMBOKBLAK = 1987;</code>
+       */
+      public emu.grasscutter.net.proto.Unk3300ADHENCIFKNI.Unk3300_ADHENCIFKNI.Builder addUnk3300CDCMBOKBLAKBuilder() {
+        return getUnk3300CDCMBOKBLAKFieldBuilder().addBuilder(
+            emu.grasscutter.net.proto.Unk3300ADHENCIFKNI.Unk3300_ADHENCIFKNI.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .Unk3300_ADHENCIFKNI Unk3300_CDCMBOKBLAK = 1987;</code>
+       */
+      public emu.grasscutter.net.proto.Unk3300ADHENCIFKNI.Unk3300_ADHENCIFKNI.Builder addUnk3300CDCMBOKBLAKBuilder(
+          int index) {
+        return getUnk3300CDCMBOKBLAKFieldBuilder().addBuilder(
+            index, emu.grasscutter.net.proto.Unk3300ADHENCIFKNI.Unk3300_ADHENCIFKNI.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .Unk3300_ADHENCIFKNI Unk3300_CDCMBOKBLAK = 1987;</code>
+       */
+      public java.util.List<emu.grasscutter.net.proto.Unk3300ADHENCIFKNI.Unk3300_ADHENCIFKNI.Builder> 
+           getUnk3300CDCMBOKBLAKBuilderList() {
+        return getUnk3300CDCMBOKBLAKFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          emu.grasscutter.net.proto.Unk3300ADHENCIFKNI.Unk3300_ADHENCIFKNI, emu.grasscutter.net.proto.Unk3300ADHENCIFKNI.Unk3300_ADHENCIFKNI.Builder, emu.grasscutter.net.proto.Unk3300ADHENCIFKNI.Unk3300_ADHENCIFKNIOrBuilder> 
+          getUnk3300CDCMBOKBLAKFieldBuilder() {
+        if (unk3300CDCMBOKBLAKBuilder_ == null) {
+          unk3300CDCMBOKBLAKBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+              emu.grasscutter.net.proto.Unk3300ADHENCIFKNI.Unk3300_ADHENCIFKNI, emu.grasscutter.net.proto.Unk3300ADHENCIFKNI.Unk3300_ADHENCIFKNI.Builder, emu.grasscutter.net.proto.Unk3300ADHENCIFKNI.Unk3300_ADHENCIFKNIOrBuilder>(
+                  unk3300CDCMBOKBLAK_,
+                  ((bitField0_ & 0x00000010) != 0),
+                  getParentForChildren(),
+                  isClean());
+          unk3300CDCMBOKBLAK_ = null;
+        }
+        return unk3300CDCMBOKBLAKBuilder_;
+      }
+
+      private int businessType_ = 0;
+      /**
+       * <code>.GCGGameBusinessType business_type = 13;</code>
+       * @return The enum numeric value on the wire for businessType.
+       */
+      @java.lang.Override public int getBusinessTypeValue() {
+        return businessType_;
+      }
+      /**
+       * <code>.GCGGameBusinessType business_type = 13;</code>
+       * @param value The enum numeric value on the wire for businessType to set.
+       * @return This builder for chaining.
+       */
+      public Builder setBusinessTypeValue(int value) {
+        
+        businessType_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.GCGGameBusinessType business_type = 13;</code>
+       * @return The businessType.
+       */
+      @java.lang.Override
+      public emu.grasscutter.net.proto.GCGGameBusinessTypeOuterClass.GCGGameBusinessType getBusinessType() {
+        @SuppressWarnings("deprecation")
+        emu.grasscutter.net.proto.GCGGameBusinessTypeOuterClass.GCGGameBusinessType result = emu.grasscutter.net.proto.GCGGameBusinessTypeOuterClass.GCGGameBusinessType.valueOf(businessType_);
+        return result == null ? emu.grasscutter.net.proto.GCGGameBusinessTypeOuterClass.GCGGameBusinessType.UNRECOGNIZED : result;
+      }
+      /**
+       * <code>.GCGGameBusinessType business_type = 13;</code>
+       * @param value The businessType to set.
+       * @return This builder for chaining.
+       */
+      public Builder setBusinessType(emu.grasscutter.net.proto.GCGGameBusinessTypeOuterClass.GCGGameBusinessType value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        
+        businessType_ = value.getNumber();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.GCGGameBusinessType business_type = 13;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearBusinessType() {
+        
+        businessType_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private java.util.List<emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntention> intentionList_ =
+        java.util.Collections.emptyList();
+      private void ensureIntentionListIsMutable() {
+        if (!((bitField0_ & 0x00000020) != 0)) {
+          intentionList_ = new java.util.ArrayList<emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntention>(intentionList_);
+          bitField0_ |= 0x00000020;
+         }
+      }
+
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntention, emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntention.Builder, emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntentionOrBuilder> intentionListBuilder_;
+
+      /**
+       * <code>repeated .GCGPVEIntention intention_list = 2;</code>
+       */
+      public java.util.List<emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntention> getIntentionListList() {
+        if (intentionListBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(intentionList_);
+        } else {
+          return intentionListBuilder_.getMessageList();
+        }
+      }
+      /**
+       * <code>repeated .GCGPVEIntention intention_list = 2;</code>
+       */
+      public int getIntentionListCount() {
+        if (intentionListBuilder_ == null) {
+          return intentionList_.size();
+        } else {
+          return intentionListBuilder_.getCount();
+        }
+      }
+      /**
+       * <code>repeated .GCGPVEIntention intention_list = 2;</code>
+       */
+      public emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntention getIntentionList(int index) {
+        if (intentionListBuilder_ == null) {
+          return intentionList_.get(index);
+        } else {
+          return intentionListBuilder_.getMessage(index);
+        }
+      }
+      /**
+       * <code>repeated .GCGPVEIntention intention_list = 2;</code>
+       */
+      public Builder setIntentionList(
+          int index, emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntention value) {
+        if (intentionListBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureIntentionListIsMutable();
+          intentionList_.set(index, value);
+          onChanged();
+        } else {
+          intentionListBuilder_.setMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .GCGPVEIntention intention_list = 2;</code>
+       */
+      public Builder setIntentionList(
+          int index, emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntention.Builder builderForValue) {
+        if (intentionListBuilder_ == null) {
+          ensureIntentionListIsMutable();
+          intentionList_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          intentionListBuilder_.setMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .GCGPVEIntention intention_list = 2;</code>
+       */
+      public Builder addIntentionList(emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntention value) {
+        if (intentionListBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureIntentionListIsMutable();
+          intentionList_.add(value);
+          onChanged();
+        } else {
+          intentionListBuilder_.addMessage(value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .GCGPVEIntention intention_list = 2;</code>
+       */
+      public Builder addIntentionList(
+          int index, emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntention value) {
+        if (intentionListBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureIntentionListIsMutable();
+          intentionList_.add(index, value);
+          onChanged();
+        } else {
+          intentionListBuilder_.addMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .GCGPVEIntention intention_list = 2;</code>
+       */
+      public Builder addIntentionList(
+          emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntention.Builder builderForValue) {
+        if (intentionListBuilder_ == null) {
+          ensureIntentionListIsMutable();
+          intentionList_.add(builderForValue.build());
+          onChanged();
+        } else {
+          intentionListBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .GCGPVEIntention intention_list = 2;</code>
+       */
+      public Builder addIntentionList(
+          int index, emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntention.Builder builderForValue) {
+        if (intentionListBuilder_ == null) {
+          ensureIntentionListIsMutable();
+          intentionList_.add(index, builderForValue.build());
+          onChanged();
+        } else {
+          intentionListBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .GCGPVEIntention intention_list = 2;</code>
+       */
+      public Builder addAllIntentionList(
+          java.lang.Iterable<? extends emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntention> values) {
+        if (intentionListBuilder_ == null) {
+          ensureIntentionListIsMutable();
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, intentionList_);
+          onChanged();
+        } else {
+          intentionListBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .GCGPVEIntention intention_list = 2;</code>
+       */
+      public Builder clearIntentionList() {
+        if (intentionListBuilder_ == null) {
+          intentionList_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000020);
+          onChanged();
+        } else {
+          intentionListBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .GCGPVEIntention intention_list = 2;</code>
+       */
+      public Builder removeIntentionList(int index) {
+        if (intentionListBuilder_ == null) {
+          ensureIntentionListIsMutable();
+          intentionList_.remove(index);
+          onChanged();
+        } else {
+          intentionListBuilder_.remove(index);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .GCGPVEIntention intention_list = 2;</code>
+       */
+      public emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntention.Builder getIntentionListBuilder(
+          int index) {
+        return getIntentionListFieldBuilder().getBuilder(index);
+      }
+      /**
+       * <code>repeated .GCGPVEIntention intention_list = 2;</code>
+       */
+      public emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntentionOrBuilder getIntentionListOrBuilder(
+          int index) {
+        if (intentionListBuilder_ == null) {
+          return intentionList_.get(index);  } else {
+          return intentionListBuilder_.getMessageOrBuilder(index);
+        }
+      }
+      /**
+       * <code>repeated .GCGPVEIntention intention_list = 2;</code>
+       */
+      public java.util.List<? extends emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntentionOrBuilder> 
+           getIntentionListOrBuilderList() {
+        if (intentionListBuilder_ != null) {
+          return intentionListBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(intentionList_);
+        }
+      }
+      /**
+       * <code>repeated .GCGPVEIntention intention_list = 2;</code>
+       */
+      public emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntention.Builder addIntentionListBuilder() {
+        return getIntentionListFieldBuilder().addBuilder(
+            emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntention.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .GCGPVEIntention intention_list = 2;</code>
+       */
+      public emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntention.Builder addIntentionListBuilder(
+          int index) {
+        return getIntentionListFieldBuilder().addBuilder(
+            index, emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntention.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .GCGPVEIntention intention_list = 2;</code>
+       */
+      public java.util.List<emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntention.Builder> 
+           getIntentionListBuilderList() {
+        return getIntentionListFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntention, emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntention.Builder, emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntentionOrBuilder> 
+          getIntentionListFieldBuilder() {
+        if (intentionListBuilder_ == null) {
+          intentionListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+              emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntention, emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntention.Builder, emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntentionOrBuilder>(
+                  intentionList_,
+                  ((bitField0_ & 0x00000020) != 0),
+                  getParentForChildren(),
+                  isClean());
+          intentionList_ = null;
+        }
+        return intentionListBuilder_;
+      }
+
+      private java.util.List<emu.grasscutter.net.proto.GCGDuelChallengeOuterClass.GCGDuelChallenge> challengeList_ =
+        java.util.Collections.emptyList();
+      private void ensureChallengeListIsMutable() {
+        if (!((bitField0_ & 0x00000040) != 0)) {
+          challengeList_ = new java.util.ArrayList<emu.grasscutter.net.proto.GCGDuelChallengeOuterClass.GCGDuelChallenge>(challengeList_);
+          bitField0_ |= 0x00000040;
+         }
+      }
+
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          emu.grasscutter.net.proto.GCGDuelChallengeOuterClass.GCGDuelChallenge, emu.grasscutter.net.proto.GCGDuelChallengeOuterClass.GCGDuelChallenge.Builder, emu.grasscutter.net.proto.GCGDuelChallengeOuterClass.GCGDuelChallengeOrBuilder> challengeListBuilder_;
+
+      /**
+       * <code>repeated .GCGDuelChallenge challenge_list = 1617;</code>
+       */
+      public java.util.List<emu.grasscutter.net.proto.GCGDuelChallengeOuterClass.GCGDuelChallenge> getChallengeListList() {
+        if (challengeListBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(challengeList_);
+        } else {
+          return challengeListBuilder_.getMessageList();
+        }
+      }
+      /**
+       * <code>repeated .GCGDuelChallenge challenge_list = 1617;</code>
+       */
+      public int getChallengeListCount() {
+        if (challengeListBuilder_ == null) {
+          return challengeList_.size();
+        } else {
+          return challengeListBuilder_.getCount();
+        }
+      }
+      /**
+       * <code>repeated .GCGDuelChallenge challenge_list = 1617;</code>
+       */
+      public emu.grasscutter.net.proto.GCGDuelChallengeOuterClass.GCGDuelChallenge getChallengeList(int index) {
+        if (challengeListBuilder_ == null) {
+          return challengeList_.get(index);
+        } else {
+          return challengeListBuilder_.getMessage(index);
+        }
+      }
+      /**
+       * <code>repeated .GCGDuelChallenge challenge_list = 1617;</code>
+       */
+      public Builder setChallengeList(
+          int index, emu.grasscutter.net.proto.GCGDuelChallengeOuterClass.GCGDuelChallenge value) {
+        if (challengeListBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureChallengeListIsMutable();
+          challengeList_.set(index, value);
+          onChanged();
+        } else {
+          challengeListBuilder_.setMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .GCGDuelChallenge challenge_list = 1617;</code>
+       */
+      public Builder setChallengeList(
+          int index, emu.grasscutter.net.proto.GCGDuelChallengeOuterClass.GCGDuelChallenge.Builder builderForValue) {
+        if (challengeListBuilder_ == null) {
+          ensureChallengeListIsMutable();
+          challengeList_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          challengeListBuilder_.setMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .GCGDuelChallenge challenge_list = 1617;</code>
+       */
+      public Builder addChallengeList(emu.grasscutter.net.proto.GCGDuelChallengeOuterClass.GCGDuelChallenge value) {
+        if (challengeListBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureChallengeListIsMutable();
+          challengeList_.add(value);
+          onChanged();
+        } else {
+          challengeListBuilder_.addMessage(value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .GCGDuelChallenge challenge_list = 1617;</code>
+       */
+      public Builder addChallengeList(
+          int index, emu.grasscutter.net.proto.GCGDuelChallengeOuterClass.GCGDuelChallenge value) {
+        if (challengeListBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureChallengeListIsMutable();
+          challengeList_.add(index, value);
+          onChanged();
+        } else {
+          challengeListBuilder_.addMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .GCGDuelChallenge challenge_list = 1617;</code>
+       */
+      public Builder addChallengeList(
+          emu.grasscutter.net.proto.GCGDuelChallengeOuterClass.GCGDuelChallenge.Builder builderForValue) {
+        if (challengeListBuilder_ == null) {
+          ensureChallengeListIsMutable();
+          challengeList_.add(builderForValue.build());
+          onChanged();
+        } else {
+          challengeListBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .GCGDuelChallenge challenge_list = 1617;</code>
+       */
+      public Builder addChallengeList(
+          int index, emu.grasscutter.net.proto.GCGDuelChallengeOuterClass.GCGDuelChallenge.Builder builderForValue) {
+        if (challengeListBuilder_ == null) {
+          ensureChallengeListIsMutable();
+          challengeList_.add(index, builderForValue.build());
+          onChanged();
+        } else {
+          challengeListBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .GCGDuelChallenge challenge_list = 1617;</code>
+       */
+      public Builder addAllChallengeList(
+          java.lang.Iterable<? extends emu.grasscutter.net.proto.GCGDuelChallengeOuterClass.GCGDuelChallenge> values) {
+        if (challengeListBuilder_ == null) {
+          ensureChallengeListIsMutable();
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, challengeList_);
+          onChanged();
+        } else {
+          challengeListBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .GCGDuelChallenge challenge_list = 1617;</code>
+       */
+      public Builder clearChallengeList() {
+        if (challengeListBuilder_ == null) {
+          challengeList_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000040);
+          onChanged();
+        } else {
+          challengeListBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .GCGDuelChallenge challenge_list = 1617;</code>
+       */
+      public Builder removeChallengeList(int index) {
+        if (challengeListBuilder_ == null) {
+          ensureChallengeListIsMutable();
+          challengeList_.remove(index);
+          onChanged();
+        } else {
+          challengeListBuilder_.remove(index);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .GCGDuelChallenge challenge_list = 1617;</code>
+       */
+      public emu.grasscutter.net.proto.GCGDuelChallengeOuterClass.GCGDuelChallenge.Builder getChallengeListBuilder(
+          int index) {
+        return getChallengeListFieldBuilder().getBuilder(index);
+      }
+      /**
+       * <code>repeated .GCGDuelChallenge challenge_list = 1617;</code>
+       */
+      public emu.grasscutter.net.proto.GCGDuelChallengeOuterClass.GCGDuelChallengeOrBuilder getChallengeListOrBuilder(
+          int index) {
+        if (challengeListBuilder_ == null) {
+          return challengeList_.get(index);  } else {
+          return challengeListBuilder_.getMessageOrBuilder(index);
+        }
+      }
+      /**
+       * <code>repeated .GCGDuelChallenge challenge_list = 1617;</code>
+       */
+      public java.util.List<? extends emu.grasscutter.net.proto.GCGDuelChallengeOuterClass.GCGDuelChallengeOrBuilder> 
+           getChallengeListOrBuilderList() {
+        if (challengeListBuilder_ != null) {
+          return challengeListBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(challengeList_);
+        }
+      }
+      /**
+       * <code>repeated .GCGDuelChallenge challenge_list = 1617;</code>
+       */
+      public emu.grasscutter.net.proto.GCGDuelChallengeOuterClass.GCGDuelChallenge.Builder addChallengeListBuilder() {
+        return getChallengeListFieldBuilder().addBuilder(
+            emu.grasscutter.net.proto.GCGDuelChallengeOuterClass.GCGDuelChallenge.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .GCGDuelChallenge challenge_list = 1617;</code>
+       */
+      public emu.grasscutter.net.proto.GCGDuelChallengeOuterClass.GCGDuelChallenge.Builder addChallengeListBuilder(
+          int index) {
+        return getChallengeListFieldBuilder().addBuilder(
+            index, emu.grasscutter.net.proto.GCGDuelChallengeOuterClass.GCGDuelChallenge.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .GCGDuelChallenge challenge_list = 1617;</code>
+       */
+      public java.util.List<emu.grasscutter.net.proto.GCGDuelChallengeOuterClass.GCGDuelChallenge.Builder> 
+           getChallengeListBuilderList() {
+        return getChallengeListFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          emu.grasscutter.net.proto.GCGDuelChallengeOuterClass.GCGDuelChallenge, emu.grasscutter.net.proto.GCGDuelChallengeOuterClass.GCGDuelChallenge.Builder, emu.grasscutter.net.proto.GCGDuelChallengeOuterClass.GCGDuelChallengeOrBuilder> 
+          getChallengeListFieldBuilder() {
+        if (challengeListBuilder_ == null) {
+          challengeListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+              emu.grasscutter.net.proto.GCGDuelChallengeOuterClass.GCGDuelChallenge, emu.grasscutter.net.proto.GCGDuelChallengeOuterClass.GCGDuelChallenge.Builder, emu.grasscutter.net.proto.GCGDuelChallengeOuterClass.GCGDuelChallengeOrBuilder>(
+                  challengeList_,
+                  ((bitField0_ & 0x00000040) != 0),
+                  getParentForChildren(),
+                  isClean());
+          challengeList_ = null;
+        }
+        return challengeListBuilder_;
+      }
+
+      private java.util.List<emu.grasscutter.net.proto.GCGCardOuterClass.GCGCard> historyCardList_ =
+        java.util.Collections.emptyList();
+      private void ensureHistoryCardListIsMutable() {
+        if (!((bitField0_ & 0x00000080) != 0)) {
+          historyCardList_ = new java.util.ArrayList<emu.grasscutter.net.proto.GCGCardOuterClass.GCGCard>(historyCardList_);
+          bitField0_ |= 0x00000080;
+         }
+      }
+
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          emu.grasscutter.net.proto.GCGCardOuterClass.GCGCard, emu.grasscutter.net.proto.GCGCardOuterClass.GCGCard.Builder, emu.grasscutter.net.proto.GCGCardOuterClass.GCGCardOrBuilder> historyCardListBuilder_;
+
+      /**
+       * <code>repeated .GCGCard history_card_list = 1872;</code>
+       */
+      public java.util.List<emu.grasscutter.net.proto.GCGCardOuterClass.GCGCard> getHistoryCardListList() {
+        if (historyCardListBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(historyCardList_);
+        } else {
+          return historyCardListBuilder_.getMessageList();
+        }
+      }
+      /**
+       * <code>repeated .GCGCard history_card_list = 1872;</code>
+       */
+      public int getHistoryCardListCount() {
+        if (historyCardListBuilder_ == null) {
+          return historyCardList_.size();
+        } else {
+          return historyCardListBuilder_.getCount();
+        }
+      }
+      /**
+       * <code>repeated .GCGCard history_card_list = 1872;</code>
+       */
+      public emu.grasscutter.net.proto.GCGCardOuterClass.GCGCard getHistoryCardList(int index) {
+        if (historyCardListBuilder_ == null) {
+          return historyCardList_.get(index);
+        } else {
+          return historyCardListBuilder_.getMessage(index);
+        }
+      }
+      /**
+       * <code>repeated .GCGCard history_card_list = 1872;</code>
+       */
+      public Builder setHistoryCardList(
+          int index, emu.grasscutter.net.proto.GCGCardOuterClass.GCGCard value) {
+        if (historyCardListBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureHistoryCardListIsMutable();
+          historyCardList_.set(index, value);
+          onChanged();
+        } else {
+          historyCardListBuilder_.setMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .GCGCard history_card_list = 1872;</code>
+       */
+      public Builder setHistoryCardList(
+          int index, emu.grasscutter.net.proto.GCGCardOuterClass.GCGCard.Builder builderForValue) {
+        if (historyCardListBuilder_ == null) {
+          ensureHistoryCardListIsMutable();
+          historyCardList_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          historyCardListBuilder_.setMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .GCGCard history_card_list = 1872;</code>
+       */
+      public Builder addHistoryCardList(emu.grasscutter.net.proto.GCGCardOuterClass.GCGCard value) {
+        if (historyCardListBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureHistoryCardListIsMutable();
+          historyCardList_.add(value);
+          onChanged();
+        } else {
+          historyCardListBuilder_.addMessage(value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .GCGCard history_card_list = 1872;</code>
+       */
+      public Builder addHistoryCardList(
+          int index, emu.grasscutter.net.proto.GCGCardOuterClass.GCGCard value) {
+        if (historyCardListBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureHistoryCardListIsMutable();
+          historyCardList_.add(index, value);
+          onChanged();
+        } else {
+          historyCardListBuilder_.addMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .GCGCard history_card_list = 1872;</code>
+       */
+      public Builder addHistoryCardList(
+          emu.grasscutter.net.proto.GCGCardOuterClass.GCGCard.Builder builderForValue) {
+        if (historyCardListBuilder_ == null) {
+          ensureHistoryCardListIsMutable();
+          historyCardList_.add(builderForValue.build());
+          onChanged();
+        } else {
+          historyCardListBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .GCGCard history_card_list = 1872;</code>
+       */
+      public Builder addHistoryCardList(
+          int index, emu.grasscutter.net.proto.GCGCardOuterClass.GCGCard.Builder builderForValue) {
+        if (historyCardListBuilder_ == null) {
+          ensureHistoryCardListIsMutable();
+          historyCardList_.add(index, builderForValue.build());
+          onChanged();
+        } else {
+          historyCardListBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .GCGCard history_card_list = 1872;</code>
+       */
+      public Builder addAllHistoryCardList(
+          java.lang.Iterable<? extends emu.grasscutter.net.proto.GCGCardOuterClass.GCGCard> values) {
+        if (historyCardListBuilder_ == null) {
+          ensureHistoryCardListIsMutable();
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, historyCardList_);
+          onChanged();
+        } else {
+          historyCardListBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .GCGCard history_card_list = 1872;</code>
+       */
+      public Builder clearHistoryCardList() {
+        if (historyCardListBuilder_ == null) {
+          historyCardList_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000080);
+          onChanged();
+        } else {
+          historyCardListBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .GCGCard history_card_list = 1872;</code>
+       */
+      public Builder removeHistoryCardList(int index) {
+        if (historyCardListBuilder_ == null) {
+          ensureHistoryCardListIsMutable();
+          historyCardList_.remove(index);
+          onChanged();
+        } else {
+          historyCardListBuilder_.remove(index);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .GCGCard history_card_list = 1872;</code>
+       */
+      public emu.grasscutter.net.proto.GCGCardOuterClass.GCGCard.Builder getHistoryCardListBuilder(
+          int index) {
+        return getHistoryCardListFieldBuilder().getBuilder(index);
+      }
+      /**
+       * <code>repeated .GCGCard history_card_list = 1872;</code>
+       */
+      public emu.grasscutter.net.proto.GCGCardOuterClass.GCGCardOrBuilder getHistoryCardListOrBuilder(
+          int index) {
+        if (historyCardListBuilder_ == null) {
+          return historyCardList_.get(index);  } else {
+          return historyCardListBuilder_.getMessageOrBuilder(index);
+        }
+      }
+      /**
+       * <code>repeated .GCGCard history_card_list = 1872;</code>
+       */
+      public java.util.List<? extends emu.grasscutter.net.proto.GCGCardOuterClass.GCGCardOrBuilder> 
+           getHistoryCardListOrBuilderList() {
+        if (historyCardListBuilder_ != null) {
+          return historyCardListBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(historyCardList_);
+        }
+      }
+      /**
+       * <code>repeated .GCGCard history_card_list = 1872;</code>
+       */
+      public emu.grasscutter.net.proto.GCGCardOuterClass.GCGCard.Builder addHistoryCardListBuilder() {
+        return getHistoryCardListFieldBuilder().addBuilder(
+            emu.grasscutter.net.proto.GCGCardOuterClass.GCGCard.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .GCGCard history_card_list = 1872;</code>
+       */
+      public emu.grasscutter.net.proto.GCGCardOuterClass.GCGCard.Builder addHistoryCardListBuilder(
+          int index) {
+        return getHistoryCardListFieldBuilder().addBuilder(
+            index, emu.grasscutter.net.proto.GCGCardOuterClass.GCGCard.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .GCGCard history_card_list = 1872;</code>
+       */
+      public java.util.List<emu.grasscutter.net.proto.GCGCardOuterClass.GCGCard.Builder> 
+           getHistoryCardListBuilderList() {
+        return getHistoryCardListFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          emu.grasscutter.net.proto.GCGCardOuterClass.GCGCard, emu.grasscutter.net.proto.GCGCardOuterClass.GCGCard.Builder, emu.grasscutter.net.proto.GCGCardOuterClass.GCGCardOrBuilder> 
+          getHistoryCardListFieldBuilder() {
+        if (historyCardListBuilder_ == null) {
+          historyCardListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+              emu.grasscutter.net.proto.GCGCardOuterClass.GCGCard, emu.grasscutter.net.proto.GCGCardOuterClass.GCGCard.Builder, emu.grasscutter.net.proto.GCGCardOuterClass.GCGCardOrBuilder>(
+                  historyCardList_,
+                  ((bitField0_ & 0x00000080) != 0),
+                  getParentForChildren(),
+                  isClean());
+          historyCardList_ = null;
+        }
+        return historyCardListBuilder_;
+      }
+
+      private int round_ ;
+      /**
+       * <code>uint32 round = 11;</code>
+       * @return The round.
+       */
+      @java.lang.Override
+      public int getRound() {
+        return round_;
+      }
+      /**
+       * <code>uint32 round = 11;</code>
+       * @param value The round to set.
+       * @return This builder for chaining.
+       */
+      public Builder setRound(int value) {
+        
+        round_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 round = 11;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearRound() {
+        
+        round_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int controllerId_ ;
+      /**
+       * <code>uint32 controller_id = 12;</code>
+       * @return The controllerId.
+       */
+      @java.lang.Override
+      public int getControllerId() {
+        return controllerId_;
+      }
+      /**
+       * <code>uint32 controller_id = 12;</code>
+       * @param value The controllerId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setControllerId(int value) {
+        
+        controllerId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 controller_id = 12;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearControllerId() {
+        
+        controllerId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private java.util.List<emu.grasscutter.net.proto.GCGMessagePackOuterClass.GCGMessagePack> historyMsgPackList_ =
+        java.util.Collections.emptyList();
+      private void ensureHistoryMsgPackListIsMutable() {
+        if (!((bitField0_ & 0x00000100) != 0)) {
+          historyMsgPackList_ = new java.util.ArrayList<emu.grasscutter.net.proto.GCGMessagePackOuterClass.GCGMessagePack>(historyMsgPackList_);
+          bitField0_ |= 0x00000100;
+         }
+      }
+
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          emu.grasscutter.net.proto.GCGMessagePackOuterClass.GCGMessagePack, emu.grasscutter.net.proto.GCGMessagePackOuterClass.GCGMessagePack.Builder, emu.grasscutter.net.proto.GCGMessagePackOuterClass.GCGMessagePackOrBuilder> historyMsgPackListBuilder_;
+
+      /**
+       * <code>repeated .GCGMessagePack history_msg_pack_list = 797;</code>
+       */
+      public java.util.List<emu.grasscutter.net.proto.GCGMessagePackOuterClass.GCGMessagePack> getHistoryMsgPackListList() {
+        if (historyMsgPackListBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(historyMsgPackList_);
+        } else {
+          return historyMsgPackListBuilder_.getMessageList();
+        }
+      }
+      /**
+       * <code>repeated .GCGMessagePack history_msg_pack_list = 797;</code>
+       */
+      public int getHistoryMsgPackListCount() {
+        if (historyMsgPackListBuilder_ == null) {
+          return historyMsgPackList_.size();
+        } else {
+          return historyMsgPackListBuilder_.getCount();
+        }
+      }
+      /**
+       * <code>repeated .GCGMessagePack history_msg_pack_list = 797;</code>
+       */
+      public emu.grasscutter.net.proto.GCGMessagePackOuterClass.GCGMessagePack getHistoryMsgPackList(int index) {
+        if (historyMsgPackListBuilder_ == null) {
+          return historyMsgPackList_.get(index);
+        } else {
+          return historyMsgPackListBuilder_.getMessage(index);
+        }
+      }
+      /**
+       * <code>repeated .GCGMessagePack history_msg_pack_list = 797;</code>
+       */
+      public Builder setHistoryMsgPackList(
+          int index, emu.grasscutter.net.proto.GCGMessagePackOuterClass.GCGMessagePack value) {
+        if (historyMsgPackListBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureHistoryMsgPackListIsMutable();
+          historyMsgPackList_.set(index, value);
+          onChanged();
+        } else {
+          historyMsgPackListBuilder_.setMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .GCGMessagePack history_msg_pack_list = 797;</code>
+       */
+      public Builder setHistoryMsgPackList(
+          int index, emu.grasscutter.net.proto.GCGMessagePackOuterClass.GCGMessagePack.Builder builderForValue) {
+        if (historyMsgPackListBuilder_ == null) {
+          ensureHistoryMsgPackListIsMutable();
+          historyMsgPackList_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          historyMsgPackListBuilder_.setMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .GCGMessagePack history_msg_pack_list = 797;</code>
+       */
+      public Builder addHistoryMsgPackList(emu.grasscutter.net.proto.GCGMessagePackOuterClass.GCGMessagePack value) {
+        if (historyMsgPackListBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureHistoryMsgPackListIsMutable();
+          historyMsgPackList_.add(value);
+          onChanged();
+        } else {
+          historyMsgPackListBuilder_.addMessage(value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .GCGMessagePack history_msg_pack_list = 797;</code>
+       */
+      public Builder addHistoryMsgPackList(
+          int index, emu.grasscutter.net.proto.GCGMessagePackOuterClass.GCGMessagePack value) {
+        if (historyMsgPackListBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureHistoryMsgPackListIsMutable();
+          historyMsgPackList_.add(index, value);
+          onChanged();
+        } else {
+          historyMsgPackListBuilder_.addMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .GCGMessagePack history_msg_pack_list = 797;</code>
+       */
+      public Builder addHistoryMsgPackList(
+          emu.grasscutter.net.proto.GCGMessagePackOuterClass.GCGMessagePack.Builder builderForValue) {
+        if (historyMsgPackListBuilder_ == null) {
+          ensureHistoryMsgPackListIsMutable();
+          historyMsgPackList_.add(builderForValue.build());
+          onChanged();
+        } else {
+          historyMsgPackListBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .GCGMessagePack history_msg_pack_list = 797;</code>
+       */
+      public Builder addHistoryMsgPackList(
+          int index, emu.grasscutter.net.proto.GCGMessagePackOuterClass.GCGMessagePack.Builder builderForValue) {
+        if (historyMsgPackListBuilder_ == null) {
+          ensureHistoryMsgPackListIsMutable();
+          historyMsgPackList_.add(index, builderForValue.build());
+          onChanged();
+        } else {
+          historyMsgPackListBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .GCGMessagePack history_msg_pack_list = 797;</code>
+       */
+      public Builder addAllHistoryMsgPackList(
+          java.lang.Iterable<? extends emu.grasscutter.net.proto.GCGMessagePackOuterClass.GCGMessagePack> values) {
+        if (historyMsgPackListBuilder_ == null) {
+          ensureHistoryMsgPackListIsMutable();
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, historyMsgPackList_);
+          onChanged();
+        } else {
+          historyMsgPackListBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .GCGMessagePack history_msg_pack_list = 797;</code>
+       */
+      public Builder clearHistoryMsgPackList() {
+        if (historyMsgPackListBuilder_ == null) {
+          historyMsgPackList_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000100);
+          onChanged();
+        } else {
+          historyMsgPackListBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .GCGMessagePack history_msg_pack_list = 797;</code>
+       */
+      public Builder removeHistoryMsgPackList(int index) {
+        if (historyMsgPackListBuilder_ == null) {
+          ensureHistoryMsgPackListIsMutable();
+          historyMsgPackList_.remove(index);
+          onChanged();
+        } else {
+          historyMsgPackListBuilder_.remove(index);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .GCGMessagePack history_msg_pack_list = 797;</code>
+       */
+      public emu.grasscutter.net.proto.GCGMessagePackOuterClass.GCGMessagePack.Builder getHistoryMsgPackListBuilder(
+          int index) {
+        return getHistoryMsgPackListFieldBuilder().getBuilder(index);
+      }
+      /**
+       * <code>repeated .GCGMessagePack history_msg_pack_list = 797;</code>
+       */
+      public emu.grasscutter.net.proto.GCGMessagePackOuterClass.GCGMessagePackOrBuilder getHistoryMsgPackListOrBuilder(
+          int index) {
+        if (historyMsgPackListBuilder_ == null) {
+          return historyMsgPackList_.get(index);  } else {
+          return historyMsgPackListBuilder_.getMessageOrBuilder(index);
+        }
+      }
+      /**
+       * <code>repeated .GCGMessagePack history_msg_pack_list = 797;</code>
+       */
+      public java.util.List<? extends emu.grasscutter.net.proto.GCGMessagePackOuterClass.GCGMessagePackOrBuilder> 
+           getHistoryMsgPackListOrBuilderList() {
+        if (historyMsgPackListBuilder_ != null) {
+          return historyMsgPackListBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(historyMsgPackList_);
+        }
+      }
+      /**
+       * <code>repeated .GCGMessagePack history_msg_pack_list = 797;</code>
+       */
+      public emu.grasscutter.net.proto.GCGMessagePackOuterClass.GCGMessagePack.Builder addHistoryMsgPackListBuilder() {
+        return getHistoryMsgPackListFieldBuilder().addBuilder(
+            emu.grasscutter.net.proto.GCGMessagePackOuterClass.GCGMessagePack.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .GCGMessagePack history_msg_pack_list = 797;</code>
+       */
+      public emu.grasscutter.net.proto.GCGMessagePackOuterClass.GCGMessagePack.Builder addHistoryMsgPackListBuilder(
+          int index) {
+        return getHistoryMsgPackListFieldBuilder().addBuilder(
+            index, emu.grasscutter.net.proto.GCGMessagePackOuterClass.GCGMessagePack.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .GCGMessagePack history_msg_pack_list = 797;</code>
+       */
+      public java.util.List<emu.grasscutter.net.proto.GCGMessagePackOuterClass.GCGMessagePack.Builder> 
+           getHistoryMsgPackListBuilderList() {
+        return getHistoryMsgPackListFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          emu.grasscutter.net.proto.GCGMessagePackOuterClass.GCGMessagePack, emu.grasscutter.net.proto.GCGMessagePackOuterClass.GCGMessagePack.Builder, emu.grasscutter.net.proto.GCGMessagePackOuterClass.GCGMessagePackOrBuilder> 
+          getHistoryMsgPackListFieldBuilder() {
+        if (historyMsgPackListBuilder_ == null) {
+          historyMsgPackListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+              emu.grasscutter.net.proto.GCGMessagePackOuterClass.GCGMessagePack, emu.grasscutter.net.proto.GCGMessagePackOuterClass.GCGMessagePack.Builder, emu.grasscutter.net.proto.GCGMessagePackOuterClass.GCGMessagePackOrBuilder>(
+                  historyMsgPackList_,
+                  ((bitField0_ & 0x00000100) != 0),
+                  getParentForChildren(),
+                  isClean());
+          historyMsgPackList_ = null;
+        }
+        return historyMsgPackListBuilder_;
+      }
+
+      private int unk3300JHDDNKFPINA_ ;
+      /**
+       * <code>uint32 Unk3300_JHDDNKFPINA = 10;</code>
+       * @return The unk3300JHDDNKFPINA.
+       */
+      @java.lang.Override
+      public int getUnk3300JHDDNKFPINA() {
+        return unk3300JHDDNKFPINA_;
+      }
+      /**
+       * <code>uint32 Unk3300_JHDDNKFPINA = 10;</code>
+       * @param value The unk3300JHDDNKFPINA to set.
+       * @return This builder for chaining.
+       */
+      public Builder setUnk3300JHDDNKFPINA(int value) {
+        
+        unk3300JHDDNKFPINA_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 Unk3300_JHDDNKFPINA = 10;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearUnk3300JHDDNKFPINA() {
+        
+        unk3300JHDDNKFPINA_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private com.google.protobuf.Internal.IntList cardIdList_ = emptyIntList();
+      private void ensureCardIdListIsMutable() {
+        if (!((bitField0_ & 0x00000200) != 0)) {
+          cardIdList_ = mutableCopy(cardIdList_);
+          bitField0_ |= 0x00000200;
+         }
+      }
+      /**
+       * <code>repeated uint32 card_id_list = 6;</code>
        * @return A list containing the cardIdList.
        */
       public java.util.List<java.lang.Integer>
           getCardIdListList() {
-        return ((bitField0_ & 0x00000008) != 0) ?
+        return ((bitField0_ & 0x00000200) != 0) ?
                  java.util.Collections.unmodifiableList(cardIdList_) : cardIdList_;
       }
       /**
-       * <code>repeated uint32 card_id_list = 4;</code>
+       * <code>repeated uint32 card_id_list = 6;</code>
        * @return The count of cardIdList.
        */
       public int getCardIdListCount() {
         return cardIdList_.size();
       }
       /**
-       * <code>repeated uint32 card_id_list = 4;</code>
+       * <code>repeated uint32 card_id_list = 6;</code>
        * @param index The index of the element to return.
        * @return The cardIdList at the given index.
        */
@@ -2693,7 +4552,7 @@ public final class GCGDuelOuterClass {
         return cardIdList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 card_id_list = 4;</code>
+       * <code>repeated uint32 card_id_list = 6;</code>
        * @param index The index to set the value at.
        * @param value The cardIdList to set.
        * @return This builder for chaining.
@@ -2706,7 +4565,7 @@ public final class GCGDuelOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 card_id_list = 4;</code>
+       * <code>repeated uint32 card_id_list = 6;</code>
        * @param value The cardIdList to add.
        * @return This builder for chaining.
        */
@@ -2717,7 +4576,7 @@ public final class GCGDuelOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 card_id_list = 4;</code>
+       * <code>repeated uint32 card_id_list = 6;</code>
        * @param values The cardIdList to add.
        * @return This builder for chaining.
        */
@@ -2730,523 +4589,43 @@ public final class GCGDuelOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 card_id_list = 4;</code>
+       * <code>repeated uint32 card_id_list = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearCardIdList() {
         cardIdList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000008);
+        bitField0_ = (bitField0_ & ~0x00000200);
         onChanged();
         return this;
       }
 
-      private java.util.List<emu.grasscutter.net.proto.GCGCardOuterClass.GCGCard> cardList_ =
-        java.util.Collections.emptyList();
-      private void ensureCardListIsMutable() {
-        if (!((bitField0_ & 0x00000010) != 0)) {
-          cardList_ = new java.util.ArrayList<emu.grasscutter.net.proto.GCGCardOuterClass.GCGCard>(cardList_);
-          bitField0_ |= 0x00000010;
-         }
-      }
-
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.GCGCardOuterClass.GCGCard, emu.grasscutter.net.proto.GCGCardOuterClass.GCGCard.Builder, emu.grasscutter.net.proto.GCGCardOuterClass.GCGCardOrBuilder> cardListBuilder_;
-
+      private int unk3300JBBMBKGOONO_ ;
       /**
-       * <code>repeated .GCGCard card_list = 9;</code>
-       */
-      public java.util.List<emu.grasscutter.net.proto.GCGCardOuterClass.GCGCard> getCardListList() {
-        if (cardListBuilder_ == null) {
-          return java.util.Collections.unmodifiableList(cardList_);
-        } else {
-          return cardListBuilder_.getMessageList();
-        }
-      }
-      /**
-       * <code>repeated .GCGCard card_list = 9;</code>
-       */
-      public int getCardListCount() {
-        if (cardListBuilder_ == null) {
-          return cardList_.size();
-        } else {
-          return cardListBuilder_.getCount();
-        }
-      }
-      /**
-       * <code>repeated .GCGCard card_list = 9;</code>
-       */
-      public emu.grasscutter.net.proto.GCGCardOuterClass.GCGCard getCardList(int index) {
-        if (cardListBuilder_ == null) {
-          return cardList_.get(index);
-        } else {
-          return cardListBuilder_.getMessage(index);
-        }
-      }
-      /**
-       * <code>repeated .GCGCard card_list = 9;</code>
-       */
-      public Builder setCardList(
-          int index, emu.grasscutter.net.proto.GCGCardOuterClass.GCGCard value) {
-        if (cardListBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureCardListIsMutable();
-          cardList_.set(index, value);
-          onChanged();
-        } else {
-          cardListBuilder_.setMessage(index, value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .GCGCard card_list = 9;</code>
-       */
-      public Builder setCardList(
-          int index, emu.grasscutter.net.proto.GCGCardOuterClass.GCGCard.Builder builderForValue) {
-        if (cardListBuilder_ == null) {
-          ensureCardListIsMutable();
-          cardList_.set(index, builderForValue.build());
-          onChanged();
-        } else {
-          cardListBuilder_.setMessage(index, builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .GCGCard card_list = 9;</code>
-       */
-      public Builder addCardList(emu.grasscutter.net.proto.GCGCardOuterClass.GCGCard value) {
-        if (cardListBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureCardListIsMutable();
-          cardList_.add(value);
-          onChanged();
-        } else {
-          cardListBuilder_.addMessage(value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .GCGCard card_list = 9;</code>
-       */
-      public Builder addCardList(
-          int index, emu.grasscutter.net.proto.GCGCardOuterClass.GCGCard value) {
-        if (cardListBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureCardListIsMutable();
-          cardList_.add(index, value);
-          onChanged();
-        } else {
-          cardListBuilder_.addMessage(index, value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .GCGCard card_list = 9;</code>
-       */
-      public Builder addCardList(
-          emu.grasscutter.net.proto.GCGCardOuterClass.GCGCard.Builder builderForValue) {
-        if (cardListBuilder_ == null) {
-          ensureCardListIsMutable();
-          cardList_.add(builderForValue.build());
-          onChanged();
-        } else {
-          cardListBuilder_.addMessage(builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .GCGCard card_list = 9;</code>
-       */
-      public Builder addCardList(
-          int index, emu.grasscutter.net.proto.GCGCardOuterClass.GCGCard.Builder builderForValue) {
-        if (cardListBuilder_ == null) {
-          ensureCardListIsMutable();
-          cardList_.add(index, builderForValue.build());
-          onChanged();
-        } else {
-          cardListBuilder_.addMessage(index, builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .GCGCard card_list = 9;</code>
-       */
-      public Builder addAllCardList(
-          java.lang.Iterable<? extends emu.grasscutter.net.proto.GCGCardOuterClass.GCGCard> values) {
-        if (cardListBuilder_ == null) {
-          ensureCardListIsMutable();
-          com.google.protobuf.AbstractMessageLite.Builder.addAll(
-              values, cardList_);
-          onChanged();
-        } else {
-          cardListBuilder_.addAllMessages(values);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .GCGCard card_list = 9;</code>
-       */
-      public Builder clearCardList() {
-        if (cardListBuilder_ == null) {
-          cardList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000010);
-          onChanged();
-        } else {
-          cardListBuilder_.clear();
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .GCGCard card_list = 9;</code>
-       */
-      public Builder removeCardList(int index) {
-        if (cardListBuilder_ == null) {
-          ensureCardListIsMutable();
-          cardList_.remove(index);
-          onChanged();
-        } else {
-          cardListBuilder_.remove(index);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .GCGCard card_list = 9;</code>
-       */
-      public emu.grasscutter.net.proto.GCGCardOuterClass.GCGCard.Builder getCardListBuilder(
-          int index) {
-        return getCardListFieldBuilder().getBuilder(index);
-      }
-      /**
-       * <code>repeated .GCGCard card_list = 9;</code>
-       */
-      public emu.grasscutter.net.proto.GCGCardOuterClass.GCGCardOrBuilder getCardListOrBuilder(
-          int index) {
-        if (cardListBuilder_ == null) {
-          return cardList_.get(index);  } else {
-          return cardListBuilder_.getMessageOrBuilder(index);
-        }
-      }
-      /**
-       * <code>repeated .GCGCard card_list = 9;</code>
-       */
-      public java.util.List<? extends emu.grasscutter.net.proto.GCGCardOuterClass.GCGCardOrBuilder> 
-           getCardListOrBuilderList() {
-        if (cardListBuilder_ != null) {
-          return cardListBuilder_.getMessageOrBuilderList();
-        } else {
-          return java.util.Collections.unmodifiableList(cardList_);
-        }
-      }
-      /**
-       * <code>repeated .GCGCard card_list = 9;</code>
-       */
-      public emu.grasscutter.net.proto.GCGCardOuterClass.GCGCard.Builder addCardListBuilder() {
-        return getCardListFieldBuilder().addBuilder(
-            emu.grasscutter.net.proto.GCGCardOuterClass.GCGCard.getDefaultInstance());
-      }
-      /**
-       * <code>repeated .GCGCard card_list = 9;</code>
-       */
-      public emu.grasscutter.net.proto.GCGCardOuterClass.GCGCard.Builder addCardListBuilder(
-          int index) {
-        return getCardListFieldBuilder().addBuilder(
-            index, emu.grasscutter.net.proto.GCGCardOuterClass.GCGCard.getDefaultInstance());
-      }
-      /**
-       * <code>repeated .GCGCard card_list = 9;</code>
-       */
-      public java.util.List<emu.grasscutter.net.proto.GCGCardOuterClass.GCGCard.Builder> 
-           getCardListBuilderList() {
-        return getCardListFieldBuilder().getBuilderList();
-      }
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.GCGCardOuterClass.GCGCard, emu.grasscutter.net.proto.GCGCardOuterClass.GCGCard.Builder, emu.grasscutter.net.proto.GCGCardOuterClass.GCGCardOrBuilder> 
-          getCardListFieldBuilder() {
-        if (cardListBuilder_ == null) {
-          cardListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              emu.grasscutter.net.proto.GCGCardOuterClass.GCGCard, emu.grasscutter.net.proto.GCGCardOuterClass.GCGCard.Builder, emu.grasscutter.net.proto.GCGCardOuterClass.GCGCardOrBuilder>(
-                  cardList_,
-                  ((bitField0_ & 0x00000010) != 0),
-                  getParentForChildren(),
-                  isClean());
-          cardList_ = null;
-        }
-        return cardListBuilder_;
-      }
-
-      private java.util.List<emu.grasscutter.net.proto.GCGControllerShowInfoOuterClass.GCGControllerShowInfo> showInfoList_ =
-        java.util.Collections.emptyList();
-      private void ensureShowInfoListIsMutable() {
-        if (!((bitField0_ & 0x00000020) != 0)) {
-          showInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.GCGControllerShowInfoOuterClass.GCGControllerShowInfo>(showInfoList_);
-          bitField0_ |= 0x00000020;
-         }
-      }
-
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.GCGControllerShowInfoOuterClass.GCGControllerShowInfo, emu.grasscutter.net.proto.GCGControllerShowInfoOuterClass.GCGControllerShowInfo.Builder, emu.grasscutter.net.proto.GCGControllerShowInfoOuterClass.GCGControllerShowInfoOrBuilder> showInfoListBuilder_;
-
-      /**
-       * <code>repeated .GCGControllerShowInfo show_info_list = 6;</code>
-       */
-      public java.util.List<emu.grasscutter.net.proto.GCGControllerShowInfoOuterClass.GCGControllerShowInfo> getShowInfoListList() {
-        if (showInfoListBuilder_ == null) {
-          return java.util.Collections.unmodifiableList(showInfoList_);
-        } else {
-          return showInfoListBuilder_.getMessageList();
-        }
-      }
-      /**
-       * <code>repeated .GCGControllerShowInfo show_info_list = 6;</code>
-       */
-      public int getShowInfoListCount() {
-        if (showInfoListBuilder_ == null) {
-          return showInfoList_.size();
-        } else {
-          return showInfoListBuilder_.getCount();
-        }
-      }
-      /**
-       * <code>repeated .GCGControllerShowInfo show_info_list = 6;</code>
-       */
-      public emu.grasscutter.net.proto.GCGControllerShowInfoOuterClass.GCGControllerShowInfo getShowInfoList(int index) {
-        if (showInfoListBuilder_ == null) {
-          return showInfoList_.get(index);
-        } else {
-          return showInfoListBuilder_.getMessage(index);
-        }
-      }
-      /**
-       * <code>repeated .GCGControllerShowInfo show_info_list = 6;</code>
-       */
-      public Builder setShowInfoList(
-          int index, emu.grasscutter.net.proto.GCGControllerShowInfoOuterClass.GCGControllerShowInfo value) {
-        if (showInfoListBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureShowInfoListIsMutable();
-          showInfoList_.set(index, value);
-          onChanged();
-        } else {
-          showInfoListBuilder_.setMessage(index, value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .GCGControllerShowInfo show_info_list = 6;</code>
-       */
-      public Builder setShowInfoList(
-          int index, emu.grasscutter.net.proto.GCGControllerShowInfoOuterClass.GCGControllerShowInfo.Builder builderForValue) {
-        if (showInfoListBuilder_ == null) {
-          ensureShowInfoListIsMutable();
-          showInfoList_.set(index, builderForValue.build());
-          onChanged();
-        } else {
-          showInfoListBuilder_.setMessage(index, builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .GCGControllerShowInfo show_info_list = 6;</code>
-       */
-      public Builder addShowInfoList(emu.grasscutter.net.proto.GCGControllerShowInfoOuterClass.GCGControllerShowInfo value) {
-        if (showInfoListBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureShowInfoListIsMutable();
-          showInfoList_.add(value);
-          onChanged();
-        } else {
-          showInfoListBuilder_.addMessage(value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .GCGControllerShowInfo show_info_list = 6;</code>
-       */
-      public Builder addShowInfoList(
-          int index, emu.grasscutter.net.proto.GCGControllerShowInfoOuterClass.GCGControllerShowInfo value) {
-        if (showInfoListBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureShowInfoListIsMutable();
-          showInfoList_.add(index, value);
-          onChanged();
-        } else {
-          showInfoListBuilder_.addMessage(index, value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .GCGControllerShowInfo show_info_list = 6;</code>
-       */
-      public Builder addShowInfoList(
-          emu.grasscutter.net.proto.GCGControllerShowInfoOuterClass.GCGControllerShowInfo.Builder builderForValue) {
-        if (showInfoListBuilder_ == null) {
-          ensureShowInfoListIsMutable();
-          showInfoList_.add(builderForValue.build());
-          onChanged();
-        } else {
-          showInfoListBuilder_.addMessage(builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .GCGControllerShowInfo show_info_list = 6;</code>
-       */
-      public Builder addShowInfoList(
-          int index, emu.grasscutter.net.proto.GCGControllerShowInfoOuterClass.GCGControllerShowInfo.Builder builderForValue) {
-        if (showInfoListBuilder_ == null) {
-          ensureShowInfoListIsMutable();
-          showInfoList_.add(index, builderForValue.build());
-          onChanged();
-        } else {
-          showInfoListBuilder_.addMessage(index, builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .GCGControllerShowInfo show_info_list = 6;</code>
-       */
-      public Builder addAllShowInfoList(
-          java.lang.Iterable<? extends emu.grasscutter.net.proto.GCGControllerShowInfoOuterClass.GCGControllerShowInfo> values) {
-        if (showInfoListBuilder_ == null) {
-          ensureShowInfoListIsMutable();
-          com.google.protobuf.AbstractMessageLite.Builder.addAll(
-              values, showInfoList_);
-          onChanged();
-        } else {
-          showInfoListBuilder_.addAllMessages(values);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .GCGControllerShowInfo show_info_list = 6;</code>
-       */
-      public Builder clearShowInfoList() {
-        if (showInfoListBuilder_ == null) {
-          showInfoList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000020);
-          onChanged();
-        } else {
-          showInfoListBuilder_.clear();
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .GCGControllerShowInfo show_info_list = 6;</code>
-       */
-      public Builder removeShowInfoList(int index) {
-        if (showInfoListBuilder_ == null) {
-          ensureShowInfoListIsMutable();
-          showInfoList_.remove(index);
-          onChanged();
-        } else {
-          showInfoListBuilder_.remove(index);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .GCGControllerShowInfo show_info_list = 6;</code>
-       */
-      public emu.grasscutter.net.proto.GCGControllerShowInfoOuterClass.GCGControllerShowInfo.Builder getShowInfoListBuilder(
-          int index) {
-        return getShowInfoListFieldBuilder().getBuilder(index);
-      }
-      /**
-       * <code>repeated .GCGControllerShowInfo show_info_list = 6;</code>
-       */
-      public emu.grasscutter.net.proto.GCGControllerShowInfoOuterClass.GCGControllerShowInfoOrBuilder getShowInfoListOrBuilder(
-          int index) {
-        if (showInfoListBuilder_ == null) {
-          return showInfoList_.get(index);  } else {
-          return showInfoListBuilder_.getMessageOrBuilder(index);
-        }
-      }
-      /**
-       * <code>repeated .GCGControllerShowInfo show_info_list = 6;</code>
-       */
-      public java.util.List<? extends emu.grasscutter.net.proto.GCGControllerShowInfoOuterClass.GCGControllerShowInfoOrBuilder> 
-           getShowInfoListOrBuilderList() {
-        if (showInfoListBuilder_ != null) {
-          return showInfoListBuilder_.getMessageOrBuilderList();
-        } else {
-          return java.util.Collections.unmodifiableList(showInfoList_);
-        }
-      }
-      /**
-       * <code>repeated .GCGControllerShowInfo show_info_list = 6;</code>
-       */
-      public emu.grasscutter.net.proto.GCGControllerShowInfoOuterClass.GCGControllerShowInfo.Builder addShowInfoListBuilder() {
-        return getShowInfoListFieldBuilder().addBuilder(
-            emu.grasscutter.net.proto.GCGControllerShowInfoOuterClass.GCGControllerShowInfo.getDefaultInstance());
-      }
-      /**
-       * <code>repeated .GCGControllerShowInfo show_info_list = 6;</code>
-       */
-      public emu.grasscutter.net.proto.GCGControllerShowInfoOuterClass.GCGControllerShowInfo.Builder addShowInfoListBuilder(
-          int index) {
-        return getShowInfoListFieldBuilder().addBuilder(
-            index, emu.grasscutter.net.proto.GCGControllerShowInfoOuterClass.GCGControllerShowInfo.getDefaultInstance());
-      }
-      /**
-       * <code>repeated .GCGControllerShowInfo show_info_list = 6;</code>
-       */
-      public java.util.List<emu.grasscutter.net.proto.GCGControllerShowInfoOuterClass.GCGControllerShowInfo.Builder> 
-           getShowInfoListBuilderList() {
-        return getShowInfoListFieldBuilder().getBuilderList();
-      }
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.GCGControllerShowInfoOuterClass.GCGControllerShowInfo, emu.grasscutter.net.proto.GCGControllerShowInfoOuterClass.GCGControllerShowInfo.Builder, emu.grasscutter.net.proto.GCGControllerShowInfoOuterClass.GCGControllerShowInfoOrBuilder> 
-          getShowInfoListFieldBuilder() {
-        if (showInfoListBuilder_ == null) {
-          showInfoListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              emu.grasscutter.net.proto.GCGControllerShowInfoOuterClass.GCGControllerShowInfo, emu.grasscutter.net.proto.GCGControllerShowInfoOuterClass.GCGControllerShowInfo.Builder, emu.grasscutter.net.proto.GCGControllerShowInfoOuterClass.GCGControllerShowInfoOrBuilder>(
-                  showInfoList_,
-                  ((bitField0_ & 0x00000020) != 0),
-                  getParentForChildren(),
-                  isClean());
-          showInfoList_ = null;
-        }
-        return showInfoListBuilder_;
-      }
-
-      private int gameType_ ;
-      /**
-       * <code>uint32 game_type = 2;</code>
-       * @return The gameType.
+       * <code>uint32 Unk3300_JBBMBKGOONO = 15;</code>
+       * @return The unk3300JBBMBKGOONO.
        */
       @java.lang.Override
-      public int getGameType() {
-        return gameType_;
+      public int getUnk3300JBBMBKGOONO() {
+        return unk3300JBBMBKGOONO_;
       }
       /**
-       * <code>uint32 game_type = 2;</code>
-       * @param value The gameType to set.
+       * <code>uint32 Unk3300_JBBMBKGOONO = 15;</code>
+       * @param value The unk3300JBBMBKGOONO to set.
        * @return This builder for chaining.
        */
-      public Builder setGameType(int value) {
+      public Builder setUnk3300JBBMBKGOONO(int value) {
         
-        gameType_ = value;
+        unk3300JBBMBKGOONO_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 game_type = 2;</code>
+       * <code>uint32 Unk3300_JBBMBKGOONO = 15;</code>
        * @return This builder for chaining.
        */
-      public Builder clearGameType() {
+      public Builder clearUnk3300JBBMBKGOONO() {
         
-        gameType_ = 0;
+        unk3300JBBMBKGOONO_ = 0;
         onChanged();
         return this;
       }
@@ -3255,14 +4634,14 @@ public final class GCGDuelOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.GCGPhaseOuterClass.GCGPhase, emu.grasscutter.net.proto.GCGPhaseOuterClass.GCGPhase.Builder, emu.grasscutter.net.proto.GCGPhaseOuterClass.GCGPhaseOrBuilder> phaseBuilder_;
       /**
-       * <code>.GCGPhase phase = 8;</code>
+       * <code>.GCGPhase phase = 14;</code>
        * @return Whether the phase field is set.
        */
       public boolean hasPhase() {
         return phaseBuilder_ != null || phase_ != null;
       }
       /**
-       * <code>.GCGPhase phase = 8;</code>
+       * <code>.GCGPhase phase = 14;</code>
        * @return The phase.
        */
       public emu.grasscutter.net.proto.GCGPhaseOuterClass.GCGPhase getPhase() {
@@ -3273,7 +4652,7 @@ public final class GCGDuelOuterClass {
         }
       }
       /**
-       * <code>.GCGPhase phase = 8;</code>
+       * <code>.GCGPhase phase = 14;</code>
        */
       public Builder setPhase(emu.grasscutter.net.proto.GCGPhaseOuterClass.GCGPhase value) {
         if (phaseBuilder_ == null) {
@@ -3289,7 +4668,7 @@ public final class GCGDuelOuterClass {
         return this;
       }
       /**
-       * <code>.GCGPhase phase = 8;</code>
+       * <code>.GCGPhase phase = 14;</code>
        */
       public Builder setPhase(
           emu.grasscutter.net.proto.GCGPhaseOuterClass.GCGPhase.Builder builderForValue) {
@@ -3303,7 +4682,7 @@ public final class GCGDuelOuterClass {
         return this;
       }
       /**
-       * <code>.GCGPhase phase = 8;</code>
+       * <code>.GCGPhase phase = 14;</code>
        */
       public Builder mergePhase(emu.grasscutter.net.proto.GCGPhaseOuterClass.GCGPhase value) {
         if (phaseBuilder_ == null) {
@@ -3321,7 +4700,7 @@ public final class GCGDuelOuterClass {
         return this;
       }
       /**
-       * <code>.GCGPhase phase = 8;</code>
+       * <code>.GCGPhase phase = 14;</code>
        */
       public Builder clearPhase() {
         if (phaseBuilder_ == null) {
@@ -3335,7 +4714,7 @@ public final class GCGDuelOuterClass {
         return this;
       }
       /**
-       * <code>.GCGPhase phase = 8;</code>
+       * <code>.GCGPhase phase = 14;</code>
        */
       public emu.grasscutter.net.proto.GCGPhaseOuterClass.GCGPhase.Builder getPhaseBuilder() {
         
@@ -3343,7 +4722,7 @@ public final class GCGDuelOuterClass {
         return getPhaseFieldBuilder().getBuilder();
       }
       /**
-       * <code>.GCGPhase phase = 8;</code>
+       * <code>.GCGPhase phase = 14;</code>
        */
       public emu.grasscutter.net.proto.GCGPhaseOuterClass.GCGPhaseOrBuilder getPhaseOrBuilder() {
         if (phaseBuilder_ != null) {
@@ -3354,7 +4733,7 @@ public final class GCGDuelOuterClass {
         }
       }
       /**
-       * <code>.GCGPhase phase = 8;</code>
+       * <code>.GCGPhase phase = 14;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.GCGPhaseOuterClass.GCGPhase, emu.grasscutter.net.proto.GCGPhaseOuterClass.GCGPhase.Builder, emu.grasscutter.net.proto.GCGPhaseOuterClass.GCGPhaseOrBuilder> 
@@ -3439,21 +4818,28 @@ public final class GCGDuelOuterClass {
       "\n\rGCGDuel.proto\032\rGCGCard.proto\032\033GCGContr" +
       "ollerShowInfo.proto\032\027GCGCostReviseInfo.p" +
       "roto\032\026GCGDuelChallenge.proto\032\031GCGGameBus" +
-      "inessType.proto\032\025GCGPVEIntention.proto\032\016" +
-      "GCGPhase.proto\032\024GCGPlayerField.proto\"\316\003\n" +
-      "\007GCGDuel\022\022\n\nserver_seq\030\003 \001(\r\022#\n\nfield_li" +
-      "st\030\007 \003(\0132\017.GCGPlayerField\022+\n\rbusiness_ty" +
-      "pe\030\016 \001(\0162\024.GCGGameBusinessType\022)\n\016challe" +
-      "nge_list\030\005 \003(\0132\021.GCGDuelChallenge\022\017\n\007gam" +
-      "e_id\030\013 \001(\r\022\025\n\rcontroller_id\030\r \001(\r\022\r\n\005rou" +
-      "nd\030\017 \001(\r\022\031\n\021cur_controller_id\030\014 \001(\r\022\'\n\ri" +
-      "ntetion_list\030\001 \003(\0132\020.GCGPVEIntention\022\'\n\013" +
-      "cost_revise\030\n \001(\0132\022.GCGCostReviseInfo\022\024\n" +
-      "\014card_id_list\030\004 \003(\r\022\033\n\tcard_list\030\t \003(\0132\010" +
-      ".GCGCard\022.\n\016show_info_list\030\006 \003(\0132\026.GCGCo" +
-      "ntrollerShowInfo\022\021\n\tgame_type\030\002 \001(\r\022\030\n\005p" +
-      "hase\030\010 \001(\0132\t.GCGPhaseB\033\n\031emu.grasscutter" +
-      ".net.protob\006proto3"
+      "inessType.proto\032\024GCGMessagePack.proto\032\025G" +
+      "CGPVEIntention.proto\032\016GCGPhase.proto\032\024GC" +
+      "GPlayerField.proto\032\031Unk3300_ADHENCIFKNI." +
+      "proto\"\253\005\n\007GCGDuel\022\022\n\nserver_seq\030\003 \001(\r\022.\n" +
+      "\016show_info_list\030\007 \003(\0132\026.GCGControllerSho" +
+      "wInfo\022%\n\034forbid_finish_challenge_list\030\300\001" +
+      " \003(\r\022\033\n\tcard_list\030\001 \003(\0132\010.GCGCard\022\033\n\023Unk" +
+      "3300_BIANMOPDEHO\030\t \001(\r\022\'\n\013cost_revise\030\010 " +
+      "\001(\0132\022.GCGCostReviseInfo\022\017\n\007game_id\030\004 \001(\r" +
+      "\022#\n\nfield_list\030\005 \003(\0132\017.GCGPlayerField\0222\n" +
+      "\023Unk3300_CDCMBOKBLAK\030\303\017 \003(\0132\024.Unk3300_AD" +
+      "HENCIFKNI\022+\n\rbusiness_type\030\r \001(\0162\024.GCGGa" +
+      "meBusinessType\022(\n\016intention_list\030\002 \003(\0132\020" +
+      ".GCGPVEIntention\022*\n\016challenge_list\030\321\014 \003(" +
+      "\0132\021.GCGDuelChallenge\022$\n\021history_card_lis" +
+      "t\030\320\016 \003(\0132\010.GCGCard\022\r\n\005round\030\013 \001(\r\022\025\n\rcon" +
+      "troller_id\030\014 \001(\r\022/\n\025history_msg_pack_lis" +
+      "t\030\235\006 \003(\0132\017.GCGMessagePack\022\033\n\023Unk3300_JHD" +
+      "DNKFPINA\030\n \001(\r\022\024\n\014card_id_list\030\006 \003(\r\022\033\n\023" +
+      "Unk3300_JBBMBKGOONO\030\017 \001(\r\022\030\n\005phase\030\016 \001(\013" +
+      "2\t.GCGPhaseB\033\n\031emu.grasscutter.net.proto" +
+      "b\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -3463,24 +4849,28 @@ public final class GCGDuelOuterClass {
           emu.grasscutter.net.proto.GCGCostReviseInfoOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.GCGDuelChallengeOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.GCGGameBusinessTypeOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.GCGMessagePackOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.GCGPhaseOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.GCGPlayerFieldOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.Unk3300ADHENCIFKNI.getDescriptor(),
         });
     internal_static_GCGDuel_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_GCGDuel_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GCGDuel_descriptor,
-        new java.lang.String[] { "ServerSeq", "FieldList", "BusinessType", "ChallengeList", "GameId", "ControllerId", "Round", "CurControllerId", "IntetionList", "CostRevise", "CardIdList", "CardList", "ShowInfoList", "GameType", "Phase", });
+        new java.lang.String[] { "ServerSeq", "ShowInfoList", "ForbidFinishChallengeList", "CardList", "Unk3300BIANMOPDEHO", "CostRevise", "GameId", "FieldList", "Unk3300CDCMBOKBLAK", "BusinessType", "IntentionList", "ChallengeList", "HistoryCardList", "Round", "ControllerId", "HistoryMsgPackList", "Unk3300JHDDNKFPINA", "CardIdList", "Unk3300JBBMBKGOONO", "Phase", });
     emu.grasscutter.net.proto.GCGCardOuterClass.getDescriptor();
     emu.grasscutter.net.proto.GCGControllerShowInfoOuterClass.getDescriptor();
     emu.grasscutter.net.proto.GCGCostReviseInfoOuterClass.getDescriptor();
     emu.grasscutter.net.proto.GCGDuelChallengeOuterClass.getDescriptor();
     emu.grasscutter.net.proto.GCGGameBusinessTypeOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.GCGMessagePackOuterClass.getDescriptor();
     emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.getDescriptor();
     emu.grasscutter.net.proto.GCGPhaseOuterClass.getDescriptor();
     emu.grasscutter.net.proto.GCGPlayerFieldOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.Unk3300ADHENCIFKNI.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

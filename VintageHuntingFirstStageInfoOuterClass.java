@@ -19,28 +19,28 @@ public final class VintageHuntingFirstStageInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 timid_cnt = 15;</code>
-     * @return The timidCnt.
+     * <code>uint32 Unk3300_HIKADHBLPEB = 10;</code>
+     * @return The unk3300HIKADHBLPEB.
      */
-    int getTimidCnt();
+    int getUnk3300HIKADHBLPEB();
 
     /**
-     * <code>uint32 brutal_cnt = 7;</code>
-     * @return The brutalCnt.
-     */
-    int getBrutalCnt();
-
-    /**
-     * <code>uint32 score = 14;</code>
+     * <code>uint32 score = 7;</code>
      * @return The score.
      */
     int getScore();
 
     /**
-     * <code>uint32 elite_cnt = 11;</code>
-     * @return The eliteCnt.
+     * <code>uint32 Unk3300_IPAJLKOBDKC = 3;</code>
+     * @return The unk3300IPAJLKOBDKC.
      */
-    int getEliteCnt();
+    int getUnk3300IPAJLKOBDKC();
+
+    /**
+     * <code>uint32 Unk3300_NILGNHOPGLD = 15;</code>
+     * @return The unk3300NILGNHOPGLD.
+     */
+    int getUnk3300NILGNHOPGLD();
   }
   /**
    * Protobuf type {@code VintageHuntingFirstStageInfo}
@@ -87,24 +87,24 @@ public final class VintageHuntingFirstStageInfoOuterClass {
             case 0:
               done = true;
               break;
+            case 24: {
+
+              unk3300IPAJLKOBDKC_ = input.readUInt32();
+              break;
+            }
             case 56: {
-
-              brutalCnt_ = input.readUInt32();
-              break;
-            }
-            case 88: {
-
-              eliteCnt_ = input.readUInt32();
-              break;
-            }
-            case 112: {
 
               score_ = input.readUInt32();
               break;
             }
+            case 80: {
+
+              unk3300HIKADHBLPEB_ = input.readUInt32();
+              break;
+            }
             case 120: {
 
-              timidCnt_ = input.readUInt32();
+              unk3300NILGNHOPGLD_ = input.readUInt32();
               break;
             }
             default: {
@@ -139,32 +139,21 @@ public final class VintageHuntingFirstStageInfoOuterClass {
               emu.grasscutter.net.proto.VintageHuntingFirstStageInfoOuterClass.VintageHuntingFirstStageInfo.class, emu.grasscutter.net.proto.VintageHuntingFirstStageInfoOuterClass.VintageHuntingFirstStageInfo.Builder.class);
     }
 
-    public static final int TIMID_CNT_FIELD_NUMBER = 15;
-    private int timidCnt_;
+    public static final int UNK3300_HIKADHBLPEB_FIELD_NUMBER = 10;
+    private int unk3300HIKADHBLPEB_;
     /**
-     * <code>uint32 timid_cnt = 15;</code>
-     * @return The timidCnt.
+     * <code>uint32 Unk3300_HIKADHBLPEB = 10;</code>
+     * @return The unk3300HIKADHBLPEB.
      */
     @java.lang.Override
-    public int getTimidCnt() {
-      return timidCnt_;
+    public int getUnk3300HIKADHBLPEB() {
+      return unk3300HIKADHBLPEB_;
     }
 
-    public static final int BRUTAL_CNT_FIELD_NUMBER = 7;
-    private int brutalCnt_;
-    /**
-     * <code>uint32 brutal_cnt = 7;</code>
-     * @return The brutalCnt.
-     */
-    @java.lang.Override
-    public int getBrutalCnt() {
-      return brutalCnt_;
-    }
-
-    public static final int SCORE_FIELD_NUMBER = 14;
+    public static final int SCORE_FIELD_NUMBER = 7;
     private int score_;
     /**
-     * <code>uint32 score = 14;</code>
+     * <code>uint32 score = 7;</code>
      * @return The score.
      */
     @java.lang.Override
@@ -172,15 +161,26 @@ public final class VintageHuntingFirstStageInfoOuterClass {
       return score_;
     }
 
-    public static final int ELITE_CNT_FIELD_NUMBER = 11;
-    private int eliteCnt_;
+    public static final int UNK3300_IPAJLKOBDKC_FIELD_NUMBER = 3;
+    private int unk3300IPAJLKOBDKC_;
     /**
-     * <code>uint32 elite_cnt = 11;</code>
-     * @return The eliteCnt.
+     * <code>uint32 Unk3300_IPAJLKOBDKC = 3;</code>
+     * @return The unk3300IPAJLKOBDKC.
      */
     @java.lang.Override
-    public int getEliteCnt() {
-      return eliteCnt_;
+    public int getUnk3300IPAJLKOBDKC() {
+      return unk3300IPAJLKOBDKC_;
+    }
+
+    public static final int UNK3300_NILGNHOPGLD_FIELD_NUMBER = 15;
+    private int unk3300NILGNHOPGLD_;
+    /**
+     * <code>uint32 Unk3300_NILGNHOPGLD = 15;</code>
+     * @return The unk3300NILGNHOPGLD.
+     */
+    @java.lang.Override
+    public int getUnk3300NILGNHOPGLD() {
+      return unk3300NILGNHOPGLD_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -197,17 +197,17 @@ public final class VintageHuntingFirstStageInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (brutalCnt_ != 0) {
-        output.writeUInt32(7, brutalCnt_);
-      }
-      if (eliteCnt_ != 0) {
-        output.writeUInt32(11, eliteCnt_);
+      if (unk3300IPAJLKOBDKC_ != 0) {
+        output.writeUInt32(3, unk3300IPAJLKOBDKC_);
       }
       if (score_ != 0) {
-        output.writeUInt32(14, score_);
+        output.writeUInt32(7, score_);
       }
-      if (timidCnt_ != 0) {
-        output.writeUInt32(15, timidCnt_);
+      if (unk3300HIKADHBLPEB_ != 0) {
+        output.writeUInt32(10, unk3300HIKADHBLPEB_);
+      }
+      if (unk3300NILGNHOPGLD_ != 0) {
+        output.writeUInt32(15, unk3300NILGNHOPGLD_);
       }
       unknownFields.writeTo(output);
     }
@@ -218,21 +218,21 @@ public final class VintageHuntingFirstStageInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (brutalCnt_ != 0) {
+      if (unk3300IPAJLKOBDKC_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, brutalCnt_);
-      }
-      if (eliteCnt_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, eliteCnt_);
+          .computeUInt32Size(3, unk3300IPAJLKOBDKC_);
       }
       if (score_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, score_);
+          .computeUInt32Size(7, score_);
       }
-      if (timidCnt_ != 0) {
+      if (unk3300HIKADHBLPEB_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, timidCnt_);
+          .computeUInt32Size(10, unk3300HIKADHBLPEB_);
+      }
+      if (unk3300NILGNHOPGLD_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(15, unk3300NILGNHOPGLD_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -249,14 +249,14 @@ public final class VintageHuntingFirstStageInfoOuterClass {
       }
       emu.grasscutter.net.proto.VintageHuntingFirstStageInfoOuterClass.VintageHuntingFirstStageInfo other = (emu.grasscutter.net.proto.VintageHuntingFirstStageInfoOuterClass.VintageHuntingFirstStageInfo) obj;
 
-      if (getTimidCnt()
-          != other.getTimidCnt()) return false;
-      if (getBrutalCnt()
-          != other.getBrutalCnt()) return false;
+      if (getUnk3300HIKADHBLPEB()
+          != other.getUnk3300HIKADHBLPEB()) return false;
       if (getScore()
           != other.getScore()) return false;
-      if (getEliteCnt()
-          != other.getEliteCnt()) return false;
+      if (getUnk3300IPAJLKOBDKC()
+          != other.getUnk3300IPAJLKOBDKC()) return false;
+      if (getUnk3300NILGNHOPGLD()
+          != other.getUnk3300NILGNHOPGLD()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -268,14 +268,14 @@ public final class VintageHuntingFirstStageInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + TIMID_CNT_FIELD_NUMBER;
-      hash = (53 * hash) + getTimidCnt();
-      hash = (37 * hash) + BRUTAL_CNT_FIELD_NUMBER;
-      hash = (53 * hash) + getBrutalCnt();
+      hash = (37 * hash) + UNK3300_HIKADHBLPEB_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300HIKADHBLPEB();
       hash = (37 * hash) + SCORE_FIELD_NUMBER;
       hash = (53 * hash) + getScore();
-      hash = (37 * hash) + ELITE_CNT_FIELD_NUMBER;
-      hash = (53 * hash) + getEliteCnt();
+      hash = (37 * hash) + UNK3300_IPAJLKOBDKC_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300IPAJLKOBDKC();
+      hash = (37 * hash) + UNK3300_NILGNHOPGLD_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300NILGNHOPGLD();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -409,13 +409,13 @@ public final class VintageHuntingFirstStageInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        timidCnt_ = 0;
-
-        brutalCnt_ = 0;
+        unk3300HIKADHBLPEB_ = 0;
 
         score_ = 0;
 
-        eliteCnt_ = 0;
+        unk3300IPAJLKOBDKC_ = 0;
+
+        unk3300NILGNHOPGLD_ = 0;
 
         return this;
       }
@@ -443,10 +443,10 @@ public final class VintageHuntingFirstStageInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.VintageHuntingFirstStageInfoOuterClass.VintageHuntingFirstStageInfo buildPartial() {
         emu.grasscutter.net.proto.VintageHuntingFirstStageInfoOuterClass.VintageHuntingFirstStageInfo result = new emu.grasscutter.net.proto.VintageHuntingFirstStageInfoOuterClass.VintageHuntingFirstStageInfo(this);
-        result.timidCnt_ = timidCnt_;
-        result.brutalCnt_ = brutalCnt_;
+        result.unk3300HIKADHBLPEB_ = unk3300HIKADHBLPEB_;
         result.score_ = score_;
-        result.eliteCnt_ = eliteCnt_;
+        result.unk3300IPAJLKOBDKC_ = unk3300IPAJLKOBDKC_;
+        result.unk3300NILGNHOPGLD_ = unk3300NILGNHOPGLD_;
         onBuilt();
         return result;
       }
@@ -495,17 +495,17 @@ public final class VintageHuntingFirstStageInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.VintageHuntingFirstStageInfoOuterClass.VintageHuntingFirstStageInfo other) {
         if (other == emu.grasscutter.net.proto.VintageHuntingFirstStageInfoOuterClass.VintageHuntingFirstStageInfo.getDefaultInstance()) return this;
-        if (other.getTimidCnt() != 0) {
-          setTimidCnt(other.getTimidCnt());
-        }
-        if (other.getBrutalCnt() != 0) {
-          setBrutalCnt(other.getBrutalCnt());
+        if (other.getUnk3300HIKADHBLPEB() != 0) {
+          setUnk3300HIKADHBLPEB(other.getUnk3300HIKADHBLPEB());
         }
         if (other.getScore() != 0) {
           setScore(other.getScore());
         }
-        if (other.getEliteCnt() != 0) {
-          setEliteCnt(other.getEliteCnt());
+        if (other.getUnk3300IPAJLKOBDKC() != 0) {
+          setUnk3300IPAJLKOBDKC(other.getUnk3300IPAJLKOBDKC());
+        }
+        if (other.getUnk3300NILGNHOPGLD() != 0) {
+          setUnk3300NILGNHOPGLD(other.getUnk3300NILGNHOPGLD());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -536,71 +536,40 @@ public final class VintageHuntingFirstStageInfoOuterClass {
         return this;
       }
 
-      private int timidCnt_ ;
+      private int unk3300HIKADHBLPEB_ ;
       /**
-       * <code>uint32 timid_cnt = 15;</code>
-       * @return The timidCnt.
+       * <code>uint32 Unk3300_HIKADHBLPEB = 10;</code>
+       * @return The unk3300HIKADHBLPEB.
        */
       @java.lang.Override
-      public int getTimidCnt() {
-        return timidCnt_;
+      public int getUnk3300HIKADHBLPEB() {
+        return unk3300HIKADHBLPEB_;
       }
       /**
-       * <code>uint32 timid_cnt = 15;</code>
-       * @param value The timidCnt to set.
+       * <code>uint32 Unk3300_HIKADHBLPEB = 10;</code>
+       * @param value The unk3300HIKADHBLPEB to set.
        * @return This builder for chaining.
        */
-      public Builder setTimidCnt(int value) {
+      public Builder setUnk3300HIKADHBLPEB(int value) {
         
-        timidCnt_ = value;
+        unk3300HIKADHBLPEB_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 timid_cnt = 15;</code>
+       * <code>uint32 Unk3300_HIKADHBLPEB = 10;</code>
        * @return This builder for chaining.
        */
-      public Builder clearTimidCnt() {
+      public Builder clearUnk3300HIKADHBLPEB() {
         
-        timidCnt_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int brutalCnt_ ;
-      /**
-       * <code>uint32 brutal_cnt = 7;</code>
-       * @return The brutalCnt.
-       */
-      @java.lang.Override
-      public int getBrutalCnt() {
-        return brutalCnt_;
-      }
-      /**
-       * <code>uint32 brutal_cnt = 7;</code>
-       * @param value The brutalCnt to set.
-       * @return This builder for chaining.
-       */
-      public Builder setBrutalCnt(int value) {
-        
-        brutalCnt_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 brutal_cnt = 7;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearBrutalCnt() {
-        
-        brutalCnt_ = 0;
+        unk3300HIKADHBLPEB_ = 0;
         onChanged();
         return this;
       }
 
       private int score_ ;
       /**
-       * <code>uint32 score = 14;</code>
+       * <code>uint32 score = 7;</code>
        * @return The score.
        */
       @java.lang.Override
@@ -608,7 +577,7 @@ public final class VintageHuntingFirstStageInfoOuterClass {
         return score_;
       }
       /**
-       * <code>uint32 score = 14;</code>
+       * <code>uint32 score = 7;</code>
        * @param value The score to set.
        * @return This builder for chaining.
        */
@@ -619,7 +588,7 @@ public final class VintageHuntingFirstStageInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 score = 14;</code>
+       * <code>uint32 score = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearScore() {
@@ -629,33 +598,64 @@ public final class VintageHuntingFirstStageInfoOuterClass {
         return this;
       }
 
-      private int eliteCnt_ ;
+      private int unk3300IPAJLKOBDKC_ ;
       /**
-       * <code>uint32 elite_cnt = 11;</code>
-       * @return The eliteCnt.
+       * <code>uint32 Unk3300_IPAJLKOBDKC = 3;</code>
+       * @return The unk3300IPAJLKOBDKC.
        */
       @java.lang.Override
-      public int getEliteCnt() {
-        return eliteCnt_;
+      public int getUnk3300IPAJLKOBDKC() {
+        return unk3300IPAJLKOBDKC_;
       }
       /**
-       * <code>uint32 elite_cnt = 11;</code>
-       * @param value The eliteCnt to set.
+       * <code>uint32 Unk3300_IPAJLKOBDKC = 3;</code>
+       * @param value The unk3300IPAJLKOBDKC to set.
        * @return This builder for chaining.
        */
-      public Builder setEliteCnt(int value) {
+      public Builder setUnk3300IPAJLKOBDKC(int value) {
         
-        eliteCnt_ = value;
+        unk3300IPAJLKOBDKC_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 elite_cnt = 11;</code>
+       * <code>uint32 Unk3300_IPAJLKOBDKC = 3;</code>
        * @return This builder for chaining.
        */
-      public Builder clearEliteCnt() {
+      public Builder clearUnk3300IPAJLKOBDKC() {
         
-        eliteCnt_ = 0;
+        unk3300IPAJLKOBDKC_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int unk3300NILGNHOPGLD_ ;
+      /**
+       * <code>uint32 Unk3300_NILGNHOPGLD = 15;</code>
+       * @return The unk3300NILGNHOPGLD.
+       */
+      @java.lang.Override
+      public int getUnk3300NILGNHOPGLD() {
+        return unk3300NILGNHOPGLD_;
+      }
+      /**
+       * <code>uint32 Unk3300_NILGNHOPGLD = 15;</code>
+       * @param value The unk3300NILGNHOPGLD to set.
+       * @return This builder for chaining.
+       */
+      public Builder setUnk3300NILGNHOPGLD(int value) {
+        
+        unk3300NILGNHOPGLD_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 Unk3300_NILGNHOPGLD = 15;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearUnk3300NILGNHOPGLD() {
+        
+        unk3300NILGNHOPGLD_ = 0;
         onChanged();
         return this;
       }
@@ -726,11 +726,12 @@ public final class VintageHuntingFirstStageInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\"VintageHuntingFirstStageInfo.proto\"g\n\034" +
-      "VintageHuntingFirstStageInfo\022\021\n\ttimid_cn" +
-      "t\030\017 \001(\r\022\022\n\nbrutal_cnt\030\007 \001(\r\022\r\n\005score\030\016 \001" +
-      "(\r\022\021\n\telite_cnt\030\013 \001(\rB\033\n\031emu.grasscutter" +
-      ".net.protob\006proto3"
+      "\n\"VintageHuntingFirstStageInfo.proto\"\204\001\n" +
+      "\034VintageHuntingFirstStageInfo\022\033\n\023Unk3300" +
+      "_HIKADHBLPEB\030\n \001(\r\022\r\n\005score\030\007 \001(\r\022\033\n\023Unk" +
+      "3300_IPAJLKOBDKC\030\003 \001(\r\022\033\n\023Unk3300_NILGNH" +
+      "OPGLD\030\017 \001(\rB\033\n\031emu.grasscutter.net.proto" +
+      "b\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -741,7 +742,7 @@ public final class VintageHuntingFirstStageInfoOuterClass {
     internal_static_VintageHuntingFirstStageInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_VintageHuntingFirstStageInfo_descriptor,
-        new java.lang.String[] { "TimidCnt", "BrutalCnt", "Score", "EliteCnt", });
+        new java.lang.String[] { "Unk3300HIKADHBLPEB", "Score", "Unk3300IPAJLKOBDKC", "Unk3300NILGNHOPGLD", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

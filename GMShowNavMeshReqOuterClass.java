@@ -19,41 +19,45 @@ public final class GMShowNavMeshReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.Vector center = 1;</code>
-     * @return Whether the center field is set.
-     */
-    boolean hasCenter();
-    /**
-     * <code>.Vector center = 1;</code>
-     * @return The center.
-     */
-    emu.grasscutter.net.proto.VectorOuterClass.Vector getCenter();
-    /**
-     * <code>.Vector center = 1;</code>
-     */
-    emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getCenterOrBuilder();
-
-    /**
-     * <code>.Vector extent = 5;</code>
+     * <code>.Vector extent = 3;</code>
      * @return Whether the extent field is set.
      */
     boolean hasExtent();
     /**
-     * <code>.Vector extent = 5;</code>
+     * <code>.Vector extent = 3;</code>
      * @return The extent.
      */
     emu.grasscutter.net.proto.VectorOuterClass.Vector getExtent();
     /**
-     * <code>.Vector extent = 5;</code>
+     * <code>.Vector extent = 3;</code>
      */
     emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getExtentOrBuilder();
+
+    /**
+     * <code>.Vector center = 4;</code>
+     * @return Whether the center field is set.
+     */
+    boolean hasCenter();
+    /**
+     * <code>.Vector center = 4;</code>
+     * @return The center.
+     */
+    emu.grasscutter.net.proto.VectorOuterClass.Vector getCenter();
+    /**
+     * <code>.Vector center = 4;</code>
+     */
+    emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getCenterOrBuilder();
   }
   /**
    * <pre>
-   * CmdId: 2357
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 2363;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code GMShowNavMeshReq}
@@ -100,20 +104,7 @@ public final class GMShowNavMeshReqOuterClass {
             case 0:
               done = true;
               break;
-            case 10: {
-              emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder subBuilder = null;
-              if (center_ != null) {
-                subBuilder = center_.toBuilder();
-              }
-              center_ = input.readMessage(emu.grasscutter.net.proto.VectorOuterClass.Vector.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom(center_);
-                center_ = subBuilder.buildPartial();
-              }
-
-              break;
-            }
-            case 42: {
+            case 26: {
               emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder subBuilder = null;
               if (extent_ != null) {
                 subBuilder = extent_.toBuilder();
@@ -122,6 +113,19 @@ public final class GMShowNavMeshReqOuterClass {
               if (subBuilder != null) {
                 subBuilder.mergeFrom(extent_);
                 extent_ = subBuilder.buildPartial();
+              }
+
+              break;
+            }
+            case 34: {
+              emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder subBuilder = null;
+              if (center_ != null) {
+                subBuilder = center_.toBuilder();
+              }
+              center_ = input.readMessage(emu.grasscutter.net.proto.VectorOuterClass.Vector.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(center_);
+                center_ = subBuilder.buildPartial();
               }
 
               break;
@@ -158,36 +162,10 @@ public final class GMShowNavMeshReqOuterClass {
               emu.grasscutter.net.proto.GMShowNavMeshReqOuterClass.GMShowNavMeshReq.class, emu.grasscutter.net.proto.GMShowNavMeshReqOuterClass.GMShowNavMeshReq.Builder.class);
     }
 
-    public static final int CENTER_FIELD_NUMBER = 1;
-    private emu.grasscutter.net.proto.VectorOuterClass.Vector center_;
-    /**
-     * <code>.Vector center = 1;</code>
-     * @return Whether the center field is set.
-     */
-    @java.lang.Override
-    public boolean hasCenter() {
-      return center_ != null;
-    }
-    /**
-     * <code>.Vector center = 1;</code>
-     * @return The center.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.VectorOuterClass.Vector getCenter() {
-      return center_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : center_;
-    }
-    /**
-     * <code>.Vector center = 1;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getCenterOrBuilder() {
-      return getCenter();
-    }
-
-    public static final int EXTENT_FIELD_NUMBER = 5;
+    public static final int EXTENT_FIELD_NUMBER = 3;
     private emu.grasscutter.net.proto.VectorOuterClass.Vector extent_;
     /**
-     * <code>.Vector extent = 5;</code>
+     * <code>.Vector extent = 3;</code>
      * @return Whether the extent field is set.
      */
     @java.lang.Override
@@ -195,7 +173,7 @@ public final class GMShowNavMeshReqOuterClass {
       return extent_ != null;
     }
     /**
-     * <code>.Vector extent = 5;</code>
+     * <code>.Vector extent = 3;</code>
      * @return The extent.
      */
     @java.lang.Override
@@ -203,11 +181,37 @@ public final class GMShowNavMeshReqOuterClass {
       return extent_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : extent_;
     }
     /**
-     * <code>.Vector extent = 5;</code>
+     * <code>.Vector extent = 3;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getExtentOrBuilder() {
       return getExtent();
+    }
+
+    public static final int CENTER_FIELD_NUMBER = 4;
+    private emu.grasscutter.net.proto.VectorOuterClass.Vector center_;
+    /**
+     * <code>.Vector center = 4;</code>
+     * @return Whether the center field is set.
+     */
+    @java.lang.Override
+    public boolean hasCenter() {
+      return center_ != null;
+    }
+    /**
+     * <code>.Vector center = 4;</code>
+     * @return The center.
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.VectorOuterClass.Vector getCenter() {
+      return center_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : center_;
+    }
+    /**
+     * <code>.Vector center = 4;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getCenterOrBuilder() {
+      return getCenter();
     }
 
     private byte memoizedIsInitialized = -1;
@@ -224,11 +228,11 @@ public final class GMShowNavMeshReqOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (center_ != null) {
-        output.writeMessage(1, getCenter());
-      }
       if (extent_ != null) {
-        output.writeMessage(5, getExtent());
+        output.writeMessage(3, getExtent());
+      }
+      if (center_ != null) {
+        output.writeMessage(4, getCenter());
       }
       unknownFields.writeTo(output);
     }
@@ -239,13 +243,13 @@ public final class GMShowNavMeshReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (center_ != null) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(1, getCenter());
-      }
       if (extent_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(5, getExtent());
+          .computeMessageSize(3, getExtent());
+      }
+      if (center_ != null) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(4, getCenter());
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -262,15 +266,15 @@ public final class GMShowNavMeshReqOuterClass {
       }
       emu.grasscutter.net.proto.GMShowNavMeshReqOuterClass.GMShowNavMeshReq other = (emu.grasscutter.net.proto.GMShowNavMeshReqOuterClass.GMShowNavMeshReq) obj;
 
-      if (hasCenter() != other.hasCenter()) return false;
-      if (hasCenter()) {
-        if (!getCenter()
-            .equals(other.getCenter())) return false;
-      }
       if (hasExtent() != other.hasExtent()) return false;
       if (hasExtent()) {
         if (!getExtent()
             .equals(other.getExtent())) return false;
+      }
+      if (hasCenter() != other.hasCenter()) return false;
+      if (hasCenter()) {
+        if (!getCenter()
+            .equals(other.getCenter())) return false;
       }
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
@@ -283,13 +287,13 @@ public final class GMShowNavMeshReqOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (hasCenter()) {
-        hash = (37 * hash) + CENTER_FIELD_NUMBER;
-        hash = (53 * hash) + getCenter().hashCode();
-      }
       if (hasExtent()) {
         hash = (37 * hash) + EXTENT_FIELD_NUMBER;
         hash = (53 * hash) + getExtent().hashCode();
+      }
+      if (hasCenter()) {
+        hash = (37 * hash) + CENTER_FIELD_NUMBER;
+        hash = (53 * hash) + getCenter().hashCode();
       }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
@@ -388,10 +392,14 @@ public final class GMShowNavMeshReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 2357
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 2363;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code GMShowNavMeshReq}
@@ -431,17 +439,17 @@ public final class GMShowNavMeshReqOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        if (centerBuilder_ == null) {
-          center_ = null;
-        } else {
-          center_ = null;
-          centerBuilder_ = null;
-        }
         if (extentBuilder_ == null) {
           extent_ = null;
         } else {
           extent_ = null;
           extentBuilder_ = null;
+        }
+        if (centerBuilder_ == null) {
+          center_ = null;
+        } else {
+          center_ = null;
+          centerBuilder_ = null;
         }
         return this;
       }
@@ -469,15 +477,15 @@ public final class GMShowNavMeshReqOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.GMShowNavMeshReqOuterClass.GMShowNavMeshReq buildPartial() {
         emu.grasscutter.net.proto.GMShowNavMeshReqOuterClass.GMShowNavMeshReq result = new emu.grasscutter.net.proto.GMShowNavMeshReqOuterClass.GMShowNavMeshReq(this);
-        if (centerBuilder_ == null) {
-          result.center_ = center_;
-        } else {
-          result.center_ = centerBuilder_.build();
-        }
         if (extentBuilder_ == null) {
           result.extent_ = extent_;
         } else {
           result.extent_ = extentBuilder_.build();
+        }
+        if (centerBuilder_ == null) {
+          result.center_ = center_;
+        } else {
+          result.center_ = centerBuilder_.build();
         }
         onBuilt();
         return result;
@@ -527,11 +535,11 @@ public final class GMShowNavMeshReqOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.GMShowNavMeshReqOuterClass.GMShowNavMeshReq other) {
         if (other == emu.grasscutter.net.proto.GMShowNavMeshReqOuterClass.GMShowNavMeshReq.getDefaultInstance()) return this;
-        if (other.hasCenter()) {
-          mergeCenter(other.getCenter());
-        }
         if (other.hasExtent()) {
           mergeExtent(other.getExtent());
+        }
+        if (other.hasCenter()) {
+          mergeCenter(other.getCenter());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -562,137 +570,18 @@ public final class GMShowNavMeshReqOuterClass {
         return this;
       }
 
-      private emu.grasscutter.net.proto.VectorOuterClass.Vector center_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> centerBuilder_;
-      /**
-       * <code>.Vector center = 1;</code>
-       * @return Whether the center field is set.
-       */
-      public boolean hasCenter() {
-        return centerBuilder_ != null || center_ != null;
-      }
-      /**
-       * <code>.Vector center = 1;</code>
-       * @return The center.
-       */
-      public emu.grasscutter.net.proto.VectorOuterClass.Vector getCenter() {
-        if (centerBuilder_ == null) {
-          return center_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : center_;
-        } else {
-          return centerBuilder_.getMessage();
-        }
-      }
-      /**
-       * <code>.Vector center = 1;</code>
-       */
-      public Builder setCenter(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
-        if (centerBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          center_ = value;
-          onChanged();
-        } else {
-          centerBuilder_.setMessage(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.Vector center = 1;</code>
-       */
-      public Builder setCenter(
-          emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder builderForValue) {
-        if (centerBuilder_ == null) {
-          center_ = builderForValue.build();
-          onChanged();
-        } else {
-          centerBuilder_.setMessage(builderForValue.build());
-        }
-
-        return this;
-      }
-      /**
-       * <code>.Vector center = 1;</code>
-       */
-      public Builder mergeCenter(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
-        if (centerBuilder_ == null) {
-          if (center_ != null) {
-            center_ =
-              emu.grasscutter.net.proto.VectorOuterClass.Vector.newBuilder(center_).mergeFrom(value).buildPartial();
-          } else {
-            center_ = value;
-          }
-          onChanged();
-        } else {
-          centerBuilder_.mergeFrom(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.Vector center = 1;</code>
-       */
-      public Builder clearCenter() {
-        if (centerBuilder_ == null) {
-          center_ = null;
-          onChanged();
-        } else {
-          center_ = null;
-          centerBuilder_ = null;
-        }
-
-        return this;
-      }
-      /**
-       * <code>.Vector center = 1;</code>
-       */
-      public emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder getCenterBuilder() {
-        
-        onChanged();
-        return getCenterFieldBuilder().getBuilder();
-      }
-      /**
-       * <code>.Vector center = 1;</code>
-       */
-      public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getCenterOrBuilder() {
-        if (centerBuilder_ != null) {
-          return centerBuilder_.getMessageOrBuilder();
-        } else {
-          return center_ == null ?
-              emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : center_;
-        }
-      }
-      /**
-       * <code>.Vector center = 1;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> 
-          getCenterFieldBuilder() {
-        if (centerBuilder_ == null) {
-          centerBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder>(
-                  getCenter(),
-                  getParentForChildren(),
-                  isClean());
-          center_ = null;
-        }
-        return centerBuilder_;
-      }
-
       private emu.grasscutter.net.proto.VectorOuterClass.Vector extent_;
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> extentBuilder_;
       /**
-       * <code>.Vector extent = 5;</code>
+       * <code>.Vector extent = 3;</code>
        * @return Whether the extent field is set.
        */
       public boolean hasExtent() {
         return extentBuilder_ != null || extent_ != null;
       }
       /**
-       * <code>.Vector extent = 5;</code>
+       * <code>.Vector extent = 3;</code>
        * @return The extent.
        */
       public emu.grasscutter.net.proto.VectorOuterClass.Vector getExtent() {
@@ -703,7 +592,7 @@ public final class GMShowNavMeshReqOuterClass {
         }
       }
       /**
-       * <code>.Vector extent = 5;</code>
+       * <code>.Vector extent = 3;</code>
        */
       public Builder setExtent(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
         if (extentBuilder_ == null) {
@@ -719,7 +608,7 @@ public final class GMShowNavMeshReqOuterClass {
         return this;
       }
       /**
-       * <code>.Vector extent = 5;</code>
+       * <code>.Vector extent = 3;</code>
        */
       public Builder setExtent(
           emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder builderForValue) {
@@ -733,7 +622,7 @@ public final class GMShowNavMeshReqOuterClass {
         return this;
       }
       /**
-       * <code>.Vector extent = 5;</code>
+       * <code>.Vector extent = 3;</code>
        */
       public Builder mergeExtent(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
         if (extentBuilder_ == null) {
@@ -751,7 +640,7 @@ public final class GMShowNavMeshReqOuterClass {
         return this;
       }
       /**
-       * <code>.Vector extent = 5;</code>
+       * <code>.Vector extent = 3;</code>
        */
       public Builder clearExtent() {
         if (extentBuilder_ == null) {
@@ -765,7 +654,7 @@ public final class GMShowNavMeshReqOuterClass {
         return this;
       }
       /**
-       * <code>.Vector extent = 5;</code>
+       * <code>.Vector extent = 3;</code>
        */
       public emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder getExtentBuilder() {
         
@@ -773,7 +662,7 @@ public final class GMShowNavMeshReqOuterClass {
         return getExtentFieldBuilder().getBuilder();
       }
       /**
-       * <code>.Vector extent = 5;</code>
+       * <code>.Vector extent = 3;</code>
        */
       public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getExtentOrBuilder() {
         if (extentBuilder_ != null) {
@@ -784,7 +673,7 @@ public final class GMShowNavMeshReqOuterClass {
         }
       }
       /**
-       * <code>.Vector extent = 5;</code>
+       * <code>.Vector extent = 3;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> 
@@ -798,6 +687,125 @@ public final class GMShowNavMeshReqOuterClass {
           extent_ = null;
         }
         return extentBuilder_;
+      }
+
+      private emu.grasscutter.net.proto.VectorOuterClass.Vector center_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> centerBuilder_;
+      /**
+       * <code>.Vector center = 4;</code>
+       * @return Whether the center field is set.
+       */
+      public boolean hasCenter() {
+        return centerBuilder_ != null || center_ != null;
+      }
+      /**
+       * <code>.Vector center = 4;</code>
+       * @return The center.
+       */
+      public emu.grasscutter.net.proto.VectorOuterClass.Vector getCenter() {
+        if (centerBuilder_ == null) {
+          return center_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : center_;
+        } else {
+          return centerBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>.Vector center = 4;</code>
+       */
+      public Builder setCenter(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
+        if (centerBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          center_ = value;
+          onChanged();
+        } else {
+          centerBuilder_.setMessage(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.Vector center = 4;</code>
+       */
+      public Builder setCenter(
+          emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder builderForValue) {
+        if (centerBuilder_ == null) {
+          center_ = builderForValue.build();
+          onChanged();
+        } else {
+          centerBuilder_.setMessage(builderForValue.build());
+        }
+
+        return this;
+      }
+      /**
+       * <code>.Vector center = 4;</code>
+       */
+      public Builder mergeCenter(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
+        if (centerBuilder_ == null) {
+          if (center_ != null) {
+            center_ =
+              emu.grasscutter.net.proto.VectorOuterClass.Vector.newBuilder(center_).mergeFrom(value).buildPartial();
+          } else {
+            center_ = value;
+          }
+          onChanged();
+        } else {
+          centerBuilder_.mergeFrom(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.Vector center = 4;</code>
+       */
+      public Builder clearCenter() {
+        if (centerBuilder_ == null) {
+          center_ = null;
+          onChanged();
+        } else {
+          center_ = null;
+          centerBuilder_ = null;
+        }
+
+        return this;
+      }
+      /**
+       * <code>.Vector center = 4;</code>
+       */
+      public emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder getCenterBuilder() {
+        
+        onChanged();
+        return getCenterFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.Vector center = 4;</code>
+       */
+      public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getCenterOrBuilder() {
+        if (centerBuilder_ != null) {
+          return centerBuilder_.getMessageOrBuilder();
+        } else {
+          return center_ == null ?
+              emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : center_;
+        }
+      }
+      /**
+       * <code>.Vector center = 4;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> 
+          getCenterFieldBuilder() {
+        if (centerBuilder_ == null) {
+          centerBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder>(
+                  getCenter(),
+                  getParentForChildren(),
+                  isClean());
+          center_ = null;
+        }
+        return centerBuilder_;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -867,8 +875,8 @@ public final class GMShowNavMeshReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\026GMShowNavMeshReq.proto\032\014Vector.proto\"D" +
-      "\n\020GMShowNavMeshReq\022\027\n\006center\030\001 \001(\0132\007.Vec" +
-      "tor\022\027\n\006extent\030\005 \001(\0132\007.VectorB\033\n\031emu.gras" +
+      "\n\020GMShowNavMeshReq\022\027\n\006extent\030\003 \001(\0132\007.Vec" +
+      "tor\022\027\n\006center\030\004 \001(\0132\007.VectorB\033\n\031emu.gras" +
       "scutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -881,7 +889,7 @@ public final class GMShowNavMeshReqOuterClass {
     internal_static_GMShowNavMeshReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GMShowNavMeshReq_descriptor,
-        new java.lang.String[] { "Center", "Extent", });
+        new java.lang.String[] { "Extent", "Center", });
     emu.grasscutter.net.proto.VectorOuterClass.getDescriptor();
   }
 

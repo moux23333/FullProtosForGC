@@ -19,23 +19,27 @@ public final class AvatarEnterElementViewNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_triggerd = 3;</code>
-     * @return The isTriggerd.
+     * <code>bool is_triggered = 6;</code>
+     * @return The isTriggered.
      */
-    boolean getIsTriggerd();
+    boolean getIsTriggered();
 
     /**
-     * <code>uint32 avatar_entity_id = 12;</code>
+     * <code>uint32 avatar_entity_id = 15;</code>
      * @return The avatarEntityId.
      */
     int getAvatarEntityId();
   }
   /**
    * <pre>
-   * CmdId: 334
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 380;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code AvatarEnterElementViewNotify}
@@ -82,12 +86,12 @@ public final class AvatarEnterElementViewNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 24: {
+            case 48: {
 
-              isTriggerd_ = input.readBool();
+              isTriggered_ = input.readBool();
               break;
             }
-            case 96: {
+            case 120: {
 
               avatarEntityId_ = input.readUInt32();
               break;
@@ -124,21 +128,21 @@ public final class AvatarEnterElementViewNotifyOuterClass {
               emu.grasscutter.net.proto.AvatarEnterElementViewNotifyOuterClass.AvatarEnterElementViewNotify.class, emu.grasscutter.net.proto.AvatarEnterElementViewNotifyOuterClass.AvatarEnterElementViewNotify.Builder.class);
     }
 
-    public static final int IS_TRIGGERD_FIELD_NUMBER = 3;
-    private boolean isTriggerd_;
+    public static final int IS_TRIGGERED_FIELD_NUMBER = 6;
+    private boolean isTriggered_;
     /**
-     * <code>bool is_triggerd = 3;</code>
-     * @return The isTriggerd.
+     * <code>bool is_triggered = 6;</code>
+     * @return The isTriggered.
      */
     @java.lang.Override
-    public boolean getIsTriggerd() {
-      return isTriggerd_;
+    public boolean getIsTriggered() {
+      return isTriggered_;
     }
 
-    public static final int AVATAR_ENTITY_ID_FIELD_NUMBER = 12;
+    public static final int AVATAR_ENTITY_ID_FIELD_NUMBER = 15;
     private int avatarEntityId_;
     /**
-     * <code>uint32 avatar_entity_id = 12;</code>
+     * <code>uint32 avatar_entity_id = 15;</code>
      * @return The avatarEntityId.
      */
     @java.lang.Override
@@ -160,11 +164,11 @@ public final class AvatarEnterElementViewNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (isTriggerd_ != false) {
-        output.writeBool(3, isTriggerd_);
+      if (isTriggered_ != false) {
+        output.writeBool(6, isTriggered_);
       }
       if (avatarEntityId_ != 0) {
-        output.writeUInt32(12, avatarEntityId_);
+        output.writeUInt32(15, avatarEntityId_);
       }
       unknownFields.writeTo(output);
     }
@@ -175,13 +179,13 @@ public final class AvatarEnterElementViewNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (isTriggerd_ != false) {
+      if (isTriggered_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(3, isTriggerd_);
+          .computeBoolSize(6, isTriggered_);
       }
       if (avatarEntityId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, avatarEntityId_);
+          .computeUInt32Size(15, avatarEntityId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -198,8 +202,8 @@ public final class AvatarEnterElementViewNotifyOuterClass {
       }
       emu.grasscutter.net.proto.AvatarEnterElementViewNotifyOuterClass.AvatarEnterElementViewNotify other = (emu.grasscutter.net.proto.AvatarEnterElementViewNotifyOuterClass.AvatarEnterElementViewNotify) obj;
 
-      if (getIsTriggerd()
-          != other.getIsTriggerd()) return false;
+      if (getIsTriggered()
+          != other.getIsTriggered()) return false;
       if (getAvatarEntityId()
           != other.getAvatarEntityId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
@@ -213,9 +217,9 @@ public final class AvatarEnterElementViewNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + IS_TRIGGERD_FIELD_NUMBER;
+      hash = (37 * hash) + IS_TRIGGERED_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsTriggerd());
+          getIsTriggered());
       hash = (37 * hash) + AVATAR_ENTITY_ID_FIELD_NUMBER;
       hash = (53 * hash) + getAvatarEntityId();
       hash = (29 * hash) + unknownFields.hashCode();
@@ -315,10 +319,14 @@ public final class AvatarEnterElementViewNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 334
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 380;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code AvatarEnterElementViewNotify}
@@ -358,7 +366,7 @@ public final class AvatarEnterElementViewNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        isTriggerd_ = false;
+        isTriggered_ = false;
 
         avatarEntityId_ = 0;
 
@@ -388,7 +396,7 @@ public final class AvatarEnterElementViewNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.AvatarEnterElementViewNotifyOuterClass.AvatarEnterElementViewNotify buildPartial() {
         emu.grasscutter.net.proto.AvatarEnterElementViewNotifyOuterClass.AvatarEnterElementViewNotify result = new emu.grasscutter.net.proto.AvatarEnterElementViewNotifyOuterClass.AvatarEnterElementViewNotify(this);
-        result.isTriggerd_ = isTriggerd_;
+        result.isTriggered_ = isTriggered_;
         result.avatarEntityId_ = avatarEntityId_;
         onBuilt();
         return result;
@@ -438,8 +446,8 @@ public final class AvatarEnterElementViewNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.AvatarEnterElementViewNotifyOuterClass.AvatarEnterElementViewNotify other) {
         if (other == emu.grasscutter.net.proto.AvatarEnterElementViewNotifyOuterClass.AvatarEnterElementViewNotify.getDefaultInstance()) return this;
-        if (other.getIsTriggerd() != false) {
-          setIsTriggerd(other.getIsTriggerd());
+        if (other.getIsTriggered() != false) {
+          setIsTriggered(other.getIsTriggered());
         }
         if (other.getAvatarEntityId() != 0) {
           setAvatarEntityId(other.getAvatarEntityId());
@@ -473,40 +481,40 @@ public final class AvatarEnterElementViewNotifyOuterClass {
         return this;
       }
 
-      private boolean isTriggerd_ ;
+      private boolean isTriggered_ ;
       /**
-       * <code>bool is_triggerd = 3;</code>
-       * @return The isTriggerd.
+       * <code>bool is_triggered = 6;</code>
+       * @return The isTriggered.
        */
       @java.lang.Override
-      public boolean getIsTriggerd() {
-        return isTriggerd_;
+      public boolean getIsTriggered() {
+        return isTriggered_;
       }
       /**
-       * <code>bool is_triggerd = 3;</code>
-       * @param value The isTriggerd to set.
+       * <code>bool is_triggered = 6;</code>
+       * @param value The isTriggered to set.
        * @return This builder for chaining.
        */
-      public Builder setIsTriggerd(boolean value) {
+      public Builder setIsTriggered(boolean value) {
         
-        isTriggerd_ = value;
+        isTriggered_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>bool is_triggerd = 3;</code>
+       * <code>bool is_triggered = 6;</code>
        * @return This builder for chaining.
        */
-      public Builder clearIsTriggerd() {
+      public Builder clearIsTriggered() {
         
-        isTriggerd_ = false;
+        isTriggered_ = false;
         onChanged();
         return this;
       }
 
       private int avatarEntityId_ ;
       /**
-       * <code>uint32 avatar_entity_id = 12;</code>
+       * <code>uint32 avatar_entity_id = 15;</code>
        * @return The avatarEntityId.
        */
       @java.lang.Override
@@ -514,7 +522,7 @@ public final class AvatarEnterElementViewNotifyOuterClass {
         return avatarEntityId_;
       }
       /**
-       * <code>uint32 avatar_entity_id = 12;</code>
+       * <code>uint32 avatar_entity_id = 15;</code>
        * @param value The avatarEntityId to set.
        * @return This builder for chaining.
        */
@@ -525,7 +533,7 @@ public final class AvatarEnterElementViewNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 avatar_entity_id = 12;</code>
+       * <code>uint32 avatar_entity_id = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearAvatarEntityId() {
@@ -601,10 +609,10 @@ public final class AvatarEnterElementViewNotifyOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\"AvatarEnterElementViewNotify.proto\"M\n\034" +
-      "AvatarEnterElementViewNotify\022\023\n\013is_trigg" +
-      "erd\030\003 \001(\010\022\030\n\020avatar_entity_id\030\014 \001(\rB\033\n\031e" +
-      "mu.grasscutter.net.protob\006proto3"
+      "\n\"AvatarEnterElementViewNotify.proto\"N\n\034" +
+      "AvatarEnterElementViewNotify\022\024\n\014is_trigg" +
+      "ered\030\006 \001(\010\022\030\n\020avatar_entity_id\030\017 \001(\rB\033\n\031" +
+      "emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -615,7 +623,7 @@ public final class AvatarEnterElementViewNotifyOuterClass {
     internal_static_AvatarEnterElementViewNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_AvatarEnterElementViewNotify_descriptor,
-        new java.lang.String[] { "IsTriggerd", "AvatarEntityId", });
+        new java.lang.String[] { "IsTriggered", "AvatarEntityId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

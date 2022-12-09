@@ -19,21 +19,21 @@ public final class DraftInviteFailInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 uid = 8;</code>
-     * @return The uid.
-     */
-    int getUid();
-
-    /**
-     * <code>.DraftInviteFailReason reason = 5;</code>
+     * <code>.DraftInviteFailReason reason = 6;</code>
      * @return The enum numeric value on the wire for reason.
      */
     int getReasonValue();
     /**
-     * <code>.DraftInviteFailReason reason = 5;</code>
+     * <code>.DraftInviteFailReason reason = 6;</code>
      * @return The reason.
      */
     emu.grasscutter.net.proto.DraftInviteFailReasonOuterClass.DraftInviteFailReason getReason();
+
+    /**
+     * <code>uint32 uid = 10;</code>
+     * @return The uid.
+     */
+    int getUid();
   }
   /**
    * Protobuf type {@code DraftInviteFailInfo}
@@ -81,13 +81,13 @@ public final class DraftInviteFailInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 40: {
+            case 48: {
               int rawValue = input.readEnum();
 
               reason_ = rawValue;
               break;
             }
-            case 64: {
+            case 80: {
 
               uid_ = input.readUInt32();
               break;
@@ -124,34 +124,34 @@ public final class DraftInviteFailInfoOuterClass {
               emu.grasscutter.net.proto.DraftInviteFailInfoOuterClass.DraftInviteFailInfo.class, emu.grasscutter.net.proto.DraftInviteFailInfoOuterClass.DraftInviteFailInfo.Builder.class);
     }
 
-    public static final int UID_FIELD_NUMBER = 8;
-    private int uid_;
-    /**
-     * <code>uint32 uid = 8;</code>
-     * @return The uid.
-     */
-    @java.lang.Override
-    public int getUid() {
-      return uid_;
-    }
-
-    public static final int REASON_FIELD_NUMBER = 5;
+    public static final int REASON_FIELD_NUMBER = 6;
     private int reason_;
     /**
-     * <code>.DraftInviteFailReason reason = 5;</code>
+     * <code>.DraftInviteFailReason reason = 6;</code>
      * @return The enum numeric value on the wire for reason.
      */
     @java.lang.Override public int getReasonValue() {
       return reason_;
     }
     /**
-     * <code>.DraftInviteFailReason reason = 5;</code>
+     * <code>.DraftInviteFailReason reason = 6;</code>
      * @return The reason.
      */
     @java.lang.Override public emu.grasscutter.net.proto.DraftInviteFailReasonOuterClass.DraftInviteFailReason getReason() {
       @SuppressWarnings("deprecation")
       emu.grasscutter.net.proto.DraftInviteFailReasonOuterClass.DraftInviteFailReason result = emu.grasscutter.net.proto.DraftInviteFailReasonOuterClass.DraftInviteFailReason.valueOf(reason_);
       return result == null ? emu.grasscutter.net.proto.DraftInviteFailReasonOuterClass.DraftInviteFailReason.UNRECOGNIZED : result;
+    }
+
+    public static final int UID_FIELD_NUMBER = 10;
+    private int uid_;
+    /**
+     * <code>uint32 uid = 10;</code>
+     * @return The uid.
+     */
+    @java.lang.Override
+    public int getUid() {
+      return uid_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -169,10 +169,10 @@ public final class DraftInviteFailInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (reason_ != emu.grasscutter.net.proto.DraftInviteFailReasonOuterClass.DraftInviteFailReason.DRAFT_INVITE_FAIL_REASON_UNKNOWN.getNumber()) {
-        output.writeEnum(5, reason_);
+        output.writeEnum(6, reason_);
       }
       if (uid_ != 0) {
-        output.writeUInt32(8, uid_);
+        output.writeUInt32(10, uid_);
       }
       unknownFields.writeTo(output);
     }
@@ -185,11 +185,11 @@ public final class DraftInviteFailInfoOuterClass {
       size = 0;
       if (reason_ != emu.grasscutter.net.proto.DraftInviteFailReasonOuterClass.DraftInviteFailReason.DRAFT_INVITE_FAIL_REASON_UNKNOWN.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(5, reason_);
+          .computeEnumSize(6, reason_);
       }
       if (uid_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, uid_);
+          .computeUInt32Size(10, uid_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -206,9 +206,9 @@ public final class DraftInviteFailInfoOuterClass {
       }
       emu.grasscutter.net.proto.DraftInviteFailInfoOuterClass.DraftInviteFailInfo other = (emu.grasscutter.net.proto.DraftInviteFailInfoOuterClass.DraftInviteFailInfo) obj;
 
+      if (reason_ != other.reason_) return false;
       if (getUid()
           != other.getUid()) return false;
-      if (reason_ != other.reason_) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -220,10 +220,10 @@ public final class DraftInviteFailInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + UID_FIELD_NUMBER;
-      hash = (53 * hash) + getUid();
       hash = (37 * hash) + REASON_FIELD_NUMBER;
       hash = (53 * hash) + reason_;
+      hash = (37 * hash) + UID_FIELD_NUMBER;
+      hash = (53 * hash) + getUid();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -357,9 +357,9 @@ public final class DraftInviteFailInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        uid_ = 0;
-
         reason_ = 0;
+
+        uid_ = 0;
 
         return this;
       }
@@ -387,8 +387,8 @@ public final class DraftInviteFailInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.DraftInviteFailInfoOuterClass.DraftInviteFailInfo buildPartial() {
         emu.grasscutter.net.proto.DraftInviteFailInfoOuterClass.DraftInviteFailInfo result = new emu.grasscutter.net.proto.DraftInviteFailInfoOuterClass.DraftInviteFailInfo(this);
-        result.uid_ = uid_;
         result.reason_ = reason_;
+        result.uid_ = uid_;
         onBuilt();
         return result;
       }
@@ -437,11 +437,11 @@ public final class DraftInviteFailInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.DraftInviteFailInfoOuterClass.DraftInviteFailInfo other) {
         if (other == emu.grasscutter.net.proto.DraftInviteFailInfoOuterClass.DraftInviteFailInfo.getDefaultInstance()) return this;
-        if (other.getUid() != 0) {
-          setUid(other.getUid());
-        }
         if (other.reason_ != 0) {
           setReasonValue(other.getReasonValue());
+        }
+        if (other.getUid() != 0) {
+          setUid(other.getUid());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -472,47 +472,16 @@ public final class DraftInviteFailInfoOuterClass {
         return this;
       }
 
-      private int uid_ ;
-      /**
-       * <code>uint32 uid = 8;</code>
-       * @return The uid.
-       */
-      @java.lang.Override
-      public int getUid() {
-        return uid_;
-      }
-      /**
-       * <code>uint32 uid = 8;</code>
-       * @param value The uid to set.
-       * @return This builder for chaining.
-       */
-      public Builder setUid(int value) {
-        
-        uid_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 uid = 8;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearUid() {
-        
-        uid_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int reason_ = 0;
       /**
-       * <code>.DraftInviteFailReason reason = 5;</code>
+       * <code>.DraftInviteFailReason reason = 6;</code>
        * @return The enum numeric value on the wire for reason.
        */
       @java.lang.Override public int getReasonValue() {
         return reason_;
       }
       /**
-       * <code>.DraftInviteFailReason reason = 5;</code>
+       * <code>.DraftInviteFailReason reason = 6;</code>
        * @param value The enum numeric value on the wire for reason to set.
        * @return This builder for chaining.
        */
@@ -523,7 +492,7 @@ public final class DraftInviteFailInfoOuterClass {
         return this;
       }
       /**
-       * <code>.DraftInviteFailReason reason = 5;</code>
+       * <code>.DraftInviteFailReason reason = 6;</code>
        * @return The reason.
        */
       @java.lang.Override
@@ -533,7 +502,7 @@ public final class DraftInviteFailInfoOuterClass {
         return result == null ? emu.grasscutter.net.proto.DraftInviteFailReasonOuterClass.DraftInviteFailReason.UNRECOGNIZED : result;
       }
       /**
-       * <code>.DraftInviteFailReason reason = 5;</code>
+       * <code>.DraftInviteFailReason reason = 6;</code>
        * @param value The reason to set.
        * @return This builder for chaining.
        */
@@ -547,12 +516,43 @@ public final class DraftInviteFailInfoOuterClass {
         return this;
       }
       /**
-       * <code>.DraftInviteFailReason reason = 5;</code>
+       * <code>.DraftInviteFailReason reason = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearReason() {
         
         reason_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int uid_ ;
+      /**
+       * <code>uint32 uid = 10;</code>
+       * @return The uid.
+       */
+      @java.lang.Override
+      public int getUid() {
+        return uid_;
+      }
+      /**
+       * <code>uint32 uid = 10;</code>
+       * @param value The uid to set.
+       * @return This builder for chaining.
+       */
+      public Builder setUid(int value) {
+        
+        uid_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 uid = 10;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearUid() {
+        
+        uid_ = 0;
         onChanged();
         return this;
       }
@@ -625,8 +625,8 @@ public final class DraftInviteFailInfoOuterClass {
     java.lang.String[] descriptorData = {
       "\n\031DraftInviteFailInfo.proto\032\033DraftInvite" +
       "FailReason.proto\"J\n\023DraftInviteFailInfo\022" +
-      "\013\n\003uid\030\010 \001(\r\022&\n\006reason\030\005 \001(\0162\026.DraftInvi" +
-      "teFailReasonB\033\n\031emu.grasscutter.net.prot" +
+      "&\n\006reason\030\006 \001(\0162\026.DraftInviteFailReason\022" +
+      "\013\n\003uid\030\n \001(\rB\033\n\031emu.grasscutter.net.prot" +
       "ob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -639,7 +639,7 @@ public final class DraftInviteFailInfoOuterClass {
     internal_static_DraftInviteFailInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_DraftInviteFailInfo_descriptor,
-        new java.lang.String[] { "Uid", "Reason", });
+        new java.lang.String[] { "Reason", "Uid", });
     emu.grasscutter.net.proto.DraftInviteFailReasonOuterClass.getDescriptor();
   }
 

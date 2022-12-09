@@ -19,7 +19,7 @@ public final class AbilityApplyLevelModifierOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 apply_entity_id = 6;</code>
+     * <code>uint32 apply_entity_id = 1;</code>
      * @return The applyEntityId.
      */
     int getApplyEntityId();
@@ -69,7 +69,7 @@ public final class AbilityApplyLevelModifierOuterClass {
             case 0:
               done = true;
               break;
-            case 48: {
+            case 8: {
 
               applyEntityId_ = input.readUInt32();
               break;
@@ -106,10 +106,10 @@ public final class AbilityApplyLevelModifierOuterClass {
               emu.grasscutter.net.proto.AbilityApplyLevelModifierOuterClass.AbilityApplyLevelModifier.class, emu.grasscutter.net.proto.AbilityApplyLevelModifierOuterClass.AbilityApplyLevelModifier.Builder.class);
     }
 
-    public static final int APPLY_ENTITY_ID_FIELD_NUMBER = 6;
+    public static final int APPLY_ENTITY_ID_FIELD_NUMBER = 1;
     private int applyEntityId_;
     /**
-     * <code>uint32 apply_entity_id = 6;</code>
+     * <code>uint32 apply_entity_id = 1;</code>
      * @return The applyEntityId.
      */
     @java.lang.Override
@@ -132,7 +132,7 @@ public final class AbilityApplyLevelModifierOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (applyEntityId_ != 0) {
-        output.writeUInt32(6, applyEntityId_);
+        output.writeUInt32(1, applyEntityId_);
       }
       unknownFields.writeTo(output);
     }
@@ -145,7 +145,7 @@ public final class AbilityApplyLevelModifierOuterClass {
       size = 0;
       if (applyEntityId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, applyEntityId_);
+          .computeUInt32Size(1, applyEntityId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -421,7 +421,7 @@ public final class AbilityApplyLevelModifierOuterClass {
 
       private int applyEntityId_ ;
       /**
-       * <code>uint32 apply_entity_id = 6;</code>
+       * <code>uint32 apply_entity_id = 1;</code>
        * @return The applyEntityId.
        */
       @java.lang.Override
@@ -429,7 +429,7 @@ public final class AbilityApplyLevelModifierOuterClass {
         return applyEntityId_;
       }
       /**
-       * <code>uint32 apply_entity_id = 6;</code>
+       * <code>uint32 apply_entity_id = 1;</code>
        * @param value The applyEntityId to set.
        * @return This builder for chaining.
        */
@@ -440,7 +440,7 @@ public final class AbilityApplyLevelModifierOuterClass {
         return this;
       }
       /**
-       * <code>uint32 apply_entity_id = 6;</code>
+       * <code>uint32 apply_entity_id = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearApplyEntityId() {
@@ -518,7 +518,7 @@ public final class AbilityApplyLevelModifierOuterClass {
     java.lang.String[] descriptorData = {
       "\n\037AbilityApplyLevelModifier.proto\"4\n\031Abi" +
       "lityApplyLevelModifier\022\027\n\017apply_entity_i" +
-      "d\030\006 \001(\rB\033\n\031emu.grasscutter.net.protob\006pr" +
+      "d\030\001 \001(\rB\033\n\031emu.grasscutter.net.protob\006pr" +
       "oto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

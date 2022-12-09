@@ -19,23 +19,27 @@ public final class BargainOfferPriceReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 bargain_id = 4;</code>
+     * <code>uint32 bargain_id = 5;</code>
      * @return The bargainId.
      */
     int getBargainId();
 
     /**
-     * <code>uint32 price = 6;</code>
+     * <code>uint32 price = 3;</code>
      * @return The price.
      */
     int getPrice();
   }
   /**
    * <pre>
-   * CmdId: 493
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 407;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code BargainOfferPriceReq}
@@ -82,14 +86,14 @@ public final class BargainOfferPriceReqOuterClass {
             case 0:
               done = true;
               break;
-            case 32: {
-
-              bargainId_ = input.readUInt32();
-              break;
-            }
-            case 48: {
+            case 24: {
 
               price_ = input.readUInt32();
+              break;
+            }
+            case 40: {
+
+              bargainId_ = input.readUInt32();
               break;
             }
             default: {
@@ -124,10 +128,10 @@ public final class BargainOfferPriceReqOuterClass {
               emu.grasscutter.net.proto.BargainOfferPriceReqOuterClass.BargainOfferPriceReq.class, emu.grasscutter.net.proto.BargainOfferPriceReqOuterClass.BargainOfferPriceReq.Builder.class);
     }
 
-    public static final int BARGAIN_ID_FIELD_NUMBER = 4;
+    public static final int BARGAIN_ID_FIELD_NUMBER = 5;
     private int bargainId_;
     /**
-     * <code>uint32 bargain_id = 4;</code>
+     * <code>uint32 bargain_id = 5;</code>
      * @return The bargainId.
      */
     @java.lang.Override
@@ -135,10 +139,10 @@ public final class BargainOfferPriceReqOuterClass {
       return bargainId_;
     }
 
-    public static final int PRICE_FIELD_NUMBER = 6;
+    public static final int PRICE_FIELD_NUMBER = 3;
     private int price_;
     /**
-     * <code>uint32 price = 6;</code>
+     * <code>uint32 price = 3;</code>
      * @return The price.
      */
     @java.lang.Override
@@ -160,11 +164,11 @@ public final class BargainOfferPriceReqOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (bargainId_ != 0) {
-        output.writeUInt32(4, bargainId_);
-      }
       if (price_ != 0) {
-        output.writeUInt32(6, price_);
+        output.writeUInt32(3, price_);
+      }
+      if (bargainId_ != 0) {
+        output.writeUInt32(5, bargainId_);
       }
       unknownFields.writeTo(output);
     }
@@ -175,13 +179,13 @@ public final class BargainOfferPriceReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (bargainId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, bargainId_);
-      }
       if (price_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, price_);
+          .computeUInt32Size(3, price_);
+      }
+      if (bargainId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(5, bargainId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -314,10 +318,14 @@ public final class BargainOfferPriceReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 493
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 407;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code BargainOfferPriceReq}
@@ -474,7 +482,7 @@ public final class BargainOfferPriceReqOuterClass {
 
       private int bargainId_ ;
       /**
-       * <code>uint32 bargain_id = 4;</code>
+       * <code>uint32 bargain_id = 5;</code>
        * @return The bargainId.
        */
       @java.lang.Override
@@ -482,7 +490,7 @@ public final class BargainOfferPriceReqOuterClass {
         return bargainId_;
       }
       /**
-       * <code>uint32 bargain_id = 4;</code>
+       * <code>uint32 bargain_id = 5;</code>
        * @param value The bargainId to set.
        * @return This builder for chaining.
        */
@@ -493,7 +501,7 @@ public final class BargainOfferPriceReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 bargain_id = 4;</code>
+       * <code>uint32 bargain_id = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearBargainId() {
@@ -505,7 +513,7 @@ public final class BargainOfferPriceReqOuterClass {
 
       private int price_ ;
       /**
-       * <code>uint32 price = 6;</code>
+       * <code>uint32 price = 3;</code>
        * @return The price.
        */
       @java.lang.Override
@@ -513,7 +521,7 @@ public final class BargainOfferPriceReqOuterClass {
         return price_;
       }
       /**
-       * <code>uint32 price = 6;</code>
+       * <code>uint32 price = 3;</code>
        * @param value The price to set.
        * @return This builder for chaining.
        */
@@ -524,7 +532,7 @@ public final class BargainOfferPriceReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 price = 6;</code>
+       * <code>uint32 price = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearPrice() {
@@ -601,8 +609,8 @@ public final class BargainOfferPriceReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\032BargainOfferPriceReq.proto\"9\n\024BargainO" +
-      "fferPriceReq\022\022\n\nbargain_id\030\004 \001(\r\022\r\n\005pric" +
-      "e\030\006 \001(\rB\033\n\031emu.grasscutter.net.protob\006pr" +
+      "fferPriceReq\022\022\n\nbargain_id\030\005 \001(\r\022\r\n\005pric" +
+      "e\030\003 \001(\rB\033\n\031emu.grasscutter.net.protob\006pr" +
       "oto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

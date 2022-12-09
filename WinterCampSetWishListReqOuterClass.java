@@ -19,17 +19,17 @@ public final class WinterCampSetWishListReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated uint32 item_id_list = 4;</code>
+     * <code>repeated uint32 item_id_list = 1;</code>
      * @return A list containing the itemIdList.
      */
     java.util.List<java.lang.Integer> getItemIdListList();
     /**
-     * <code>repeated uint32 item_id_list = 4;</code>
+     * <code>repeated uint32 item_id_list = 1;</code>
      * @return The count of itemIdList.
      */
     int getItemIdListCount();
     /**
-     * <code>repeated uint32 item_id_list = 4;</code>
+     * <code>repeated uint32 item_id_list = 1;</code>
      * @param index The index of the element to return.
      * @return The itemIdList at the given index.
      */
@@ -37,10 +37,14 @@ public final class WinterCampSetWishListReqOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 8753
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 8380;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code WinterCampSetWishListReq}
@@ -89,7 +93,7 @@ public final class WinterCampSetWishListReqOuterClass {
             case 0:
               done = true;
               break;
-            case 32: {
+            case 8: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 itemIdList_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
@@ -97,7 +101,7 @@ public final class WinterCampSetWishListReqOuterClass {
               itemIdList_.addInt(input.readUInt32());
               break;
             }
-            case 34: {
+            case 10: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -145,10 +149,10 @@ public final class WinterCampSetWishListReqOuterClass {
               emu.grasscutter.net.proto.WinterCampSetWishListReqOuterClass.WinterCampSetWishListReq.class, emu.grasscutter.net.proto.WinterCampSetWishListReqOuterClass.WinterCampSetWishListReq.Builder.class);
     }
 
-    public static final int ITEM_ID_LIST_FIELD_NUMBER = 4;
+    public static final int ITEM_ID_LIST_FIELD_NUMBER = 1;
     private com.google.protobuf.Internal.IntList itemIdList_;
     /**
-     * <code>repeated uint32 item_id_list = 4;</code>
+     * <code>repeated uint32 item_id_list = 1;</code>
      * @return A list containing the itemIdList.
      */
     @java.lang.Override
@@ -157,14 +161,14 @@ public final class WinterCampSetWishListReqOuterClass {
       return itemIdList_;
     }
     /**
-     * <code>repeated uint32 item_id_list = 4;</code>
+     * <code>repeated uint32 item_id_list = 1;</code>
      * @return The count of itemIdList.
      */
     public int getItemIdListCount() {
       return itemIdList_.size();
     }
     /**
-     * <code>repeated uint32 item_id_list = 4;</code>
+     * <code>repeated uint32 item_id_list = 1;</code>
      * @param index The index of the element to return.
      * @return The itemIdList at the given index.
      */
@@ -189,7 +193,7 @@ public final class WinterCampSetWishListReqOuterClass {
                         throws java.io.IOException {
       getSerializedSize();
       if (getItemIdListList().size() > 0) {
-        output.writeUInt32NoTag(34);
+        output.writeUInt32NoTag(10);
         output.writeUInt32NoTag(itemIdListMemoizedSerializedSize);
       }
       for (int i = 0; i < itemIdList_.size(); i++) {
@@ -347,10 +351,14 @@ public final class WinterCampSetWishListReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 8753
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 8380;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code WinterCampSetWishListReq}
@@ -520,7 +528,7 @@ public final class WinterCampSetWishListReqOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 item_id_list = 4;</code>
+       * <code>repeated uint32 item_id_list = 1;</code>
        * @return A list containing the itemIdList.
        */
       public java.util.List<java.lang.Integer>
@@ -529,14 +537,14 @@ public final class WinterCampSetWishListReqOuterClass {
                  java.util.Collections.unmodifiableList(itemIdList_) : itemIdList_;
       }
       /**
-       * <code>repeated uint32 item_id_list = 4;</code>
+       * <code>repeated uint32 item_id_list = 1;</code>
        * @return The count of itemIdList.
        */
       public int getItemIdListCount() {
         return itemIdList_.size();
       }
       /**
-       * <code>repeated uint32 item_id_list = 4;</code>
+       * <code>repeated uint32 item_id_list = 1;</code>
        * @param index The index of the element to return.
        * @return The itemIdList at the given index.
        */
@@ -544,7 +552,7 @@ public final class WinterCampSetWishListReqOuterClass {
         return itemIdList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 item_id_list = 4;</code>
+       * <code>repeated uint32 item_id_list = 1;</code>
        * @param index The index to set the value at.
        * @param value The itemIdList to set.
        * @return This builder for chaining.
@@ -557,7 +565,7 @@ public final class WinterCampSetWishListReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 item_id_list = 4;</code>
+       * <code>repeated uint32 item_id_list = 1;</code>
        * @param value The itemIdList to add.
        * @return This builder for chaining.
        */
@@ -568,7 +576,7 @@ public final class WinterCampSetWishListReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 item_id_list = 4;</code>
+       * <code>repeated uint32 item_id_list = 1;</code>
        * @param values The itemIdList to add.
        * @return This builder for chaining.
        */
@@ -581,7 +589,7 @@ public final class WinterCampSetWishListReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 item_id_list = 4;</code>
+       * <code>repeated uint32 item_id_list = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearItemIdList() {
@@ -658,7 +666,7 @@ public final class WinterCampSetWishListReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\036WinterCampSetWishListReq.proto\"0\n\030Wint" +
-      "erCampSetWishListReq\022\024\n\014item_id_list\030\004 \003" +
+      "erCampSetWishListReq\022\024\n\014item_id_list\030\001 \003" +
       "(\rB\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

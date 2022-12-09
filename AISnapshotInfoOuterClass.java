@@ -19,25 +19,25 @@ public final class AISnapshotInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .AISnapshotEntityData ai_snapshots = 13;</code>
+     * <code>repeated .AISnapshotEntityData ai_snapshots = 1;</code>
      */
     java.util.List<emu.grasscutter.net.proto.AISnapshotEntityDataOuterClass.AISnapshotEntityData> 
         getAiSnapshotsList();
     /**
-     * <code>repeated .AISnapshotEntityData ai_snapshots = 13;</code>
+     * <code>repeated .AISnapshotEntityData ai_snapshots = 1;</code>
      */
     emu.grasscutter.net.proto.AISnapshotEntityDataOuterClass.AISnapshotEntityData getAiSnapshots(int index);
     /**
-     * <code>repeated .AISnapshotEntityData ai_snapshots = 13;</code>
+     * <code>repeated .AISnapshotEntityData ai_snapshots = 1;</code>
      */
     int getAiSnapshotsCount();
     /**
-     * <code>repeated .AISnapshotEntityData ai_snapshots = 13;</code>
+     * <code>repeated .AISnapshotEntityData ai_snapshots = 1;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.AISnapshotEntityDataOuterClass.AISnapshotEntityDataOrBuilder> 
         getAiSnapshotsOrBuilderList();
     /**
-     * <code>repeated .AISnapshotEntityData ai_snapshots = 13;</code>
+     * <code>repeated .AISnapshotEntityData ai_snapshots = 1;</code>
      */
     emu.grasscutter.net.proto.AISnapshotEntityDataOuterClass.AISnapshotEntityDataOrBuilder getAiSnapshotsOrBuilder(
         int index);
@@ -89,7 +89,7 @@ public final class AISnapshotInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 106: {
+            case 10: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 aiSnapshots_ = new java.util.ArrayList<emu.grasscutter.net.proto.AISnapshotEntityDataOuterClass.AISnapshotEntityData>();
                 mutable_bitField0_ |= 0x00000001;
@@ -133,17 +133,17 @@ public final class AISnapshotInfoOuterClass {
               emu.grasscutter.net.proto.AISnapshotInfoOuterClass.AISnapshotInfo.class, emu.grasscutter.net.proto.AISnapshotInfoOuterClass.AISnapshotInfo.Builder.class);
     }
 
-    public static final int AI_SNAPSHOTS_FIELD_NUMBER = 13;
+    public static final int AI_SNAPSHOTS_FIELD_NUMBER = 1;
     private java.util.List<emu.grasscutter.net.proto.AISnapshotEntityDataOuterClass.AISnapshotEntityData> aiSnapshots_;
     /**
-     * <code>repeated .AISnapshotEntityData ai_snapshots = 13;</code>
+     * <code>repeated .AISnapshotEntityData ai_snapshots = 1;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.AISnapshotEntityDataOuterClass.AISnapshotEntityData> getAiSnapshotsList() {
       return aiSnapshots_;
     }
     /**
-     * <code>repeated .AISnapshotEntityData ai_snapshots = 13;</code>
+     * <code>repeated .AISnapshotEntityData ai_snapshots = 1;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.AISnapshotEntityDataOuterClass.AISnapshotEntityDataOrBuilder> 
@@ -151,21 +151,21 @@ public final class AISnapshotInfoOuterClass {
       return aiSnapshots_;
     }
     /**
-     * <code>repeated .AISnapshotEntityData ai_snapshots = 13;</code>
+     * <code>repeated .AISnapshotEntityData ai_snapshots = 1;</code>
      */
     @java.lang.Override
     public int getAiSnapshotsCount() {
       return aiSnapshots_.size();
     }
     /**
-     * <code>repeated .AISnapshotEntityData ai_snapshots = 13;</code>
+     * <code>repeated .AISnapshotEntityData ai_snapshots = 1;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.AISnapshotEntityDataOuterClass.AISnapshotEntityData getAiSnapshots(int index) {
       return aiSnapshots_.get(index);
     }
     /**
-     * <code>repeated .AISnapshotEntityData ai_snapshots = 13;</code>
+     * <code>repeated .AISnapshotEntityData ai_snapshots = 1;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.AISnapshotEntityDataOuterClass.AISnapshotEntityDataOrBuilder getAiSnapshotsOrBuilder(
@@ -188,7 +188,7 @@ public final class AISnapshotInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       for (int i = 0; i < aiSnapshots_.size(); i++) {
-        output.writeMessage(13, aiSnapshots_.get(i));
+        output.writeMessage(1, aiSnapshots_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -201,7 +201,7 @@ public final class AISnapshotInfoOuterClass {
       size = 0;
       for (int i = 0; i < aiSnapshots_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(13, aiSnapshots_.get(i));
+          .computeMessageSize(1, aiSnapshots_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -528,7 +528,7 @@ public final class AISnapshotInfoOuterClass {
           emu.grasscutter.net.proto.AISnapshotEntityDataOuterClass.AISnapshotEntityData, emu.grasscutter.net.proto.AISnapshotEntityDataOuterClass.AISnapshotEntityData.Builder, emu.grasscutter.net.proto.AISnapshotEntityDataOuterClass.AISnapshotEntityDataOrBuilder> aiSnapshotsBuilder_;
 
       /**
-       * <code>repeated .AISnapshotEntityData ai_snapshots = 13;</code>
+       * <code>repeated .AISnapshotEntityData ai_snapshots = 1;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.AISnapshotEntityDataOuterClass.AISnapshotEntityData> getAiSnapshotsList() {
         if (aiSnapshotsBuilder_ == null) {
@@ -538,7 +538,7 @@ public final class AISnapshotInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .AISnapshotEntityData ai_snapshots = 13;</code>
+       * <code>repeated .AISnapshotEntityData ai_snapshots = 1;</code>
        */
       public int getAiSnapshotsCount() {
         if (aiSnapshotsBuilder_ == null) {
@@ -548,7 +548,7 @@ public final class AISnapshotInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .AISnapshotEntityData ai_snapshots = 13;</code>
+       * <code>repeated .AISnapshotEntityData ai_snapshots = 1;</code>
        */
       public emu.grasscutter.net.proto.AISnapshotEntityDataOuterClass.AISnapshotEntityData getAiSnapshots(int index) {
         if (aiSnapshotsBuilder_ == null) {
@@ -558,7 +558,7 @@ public final class AISnapshotInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .AISnapshotEntityData ai_snapshots = 13;</code>
+       * <code>repeated .AISnapshotEntityData ai_snapshots = 1;</code>
        */
       public Builder setAiSnapshots(
           int index, emu.grasscutter.net.proto.AISnapshotEntityDataOuterClass.AISnapshotEntityData value) {
@@ -575,7 +575,7 @@ public final class AISnapshotInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .AISnapshotEntityData ai_snapshots = 13;</code>
+       * <code>repeated .AISnapshotEntityData ai_snapshots = 1;</code>
        */
       public Builder setAiSnapshots(
           int index, emu.grasscutter.net.proto.AISnapshotEntityDataOuterClass.AISnapshotEntityData.Builder builderForValue) {
@@ -589,7 +589,7 @@ public final class AISnapshotInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .AISnapshotEntityData ai_snapshots = 13;</code>
+       * <code>repeated .AISnapshotEntityData ai_snapshots = 1;</code>
        */
       public Builder addAiSnapshots(emu.grasscutter.net.proto.AISnapshotEntityDataOuterClass.AISnapshotEntityData value) {
         if (aiSnapshotsBuilder_ == null) {
@@ -605,7 +605,7 @@ public final class AISnapshotInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .AISnapshotEntityData ai_snapshots = 13;</code>
+       * <code>repeated .AISnapshotEntityData ai_snapshots = 1;</code>
        */
       public Builder addAiSnapshots(
           int index, emu.grasscutter.net.proto.AISnapshotEntityDataOuterClass.AISnapshotEntityData value) {
@@ -622,7 +622,7 @@ public final class AISnapshotInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .AISnapshotEntityData ai_snapshots = 13;</code>
+       * <code>repeated .AISnapshotEntityData ai_snapshots = 1;</code>
        */
       public Builder addAiSnapshots(
           emu.grasscutter.net.proto.AISnapshotEntityDataOuterClass.AISnapshotEntityData.Builder builderForValue) {
@@ -636,7 +636,7 @@ public final class AISnapshotInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .AISnapshotEntityData ai_snapshots = 13;</code>
+       * <code>repeated .AISnapshotEntityData ai_snapshots = 1;</code>
        */
       public Builder addAiSnapshots(
           int index, emu.grasscutter.net.proto.AISnapshotEntityDataOuterClass.AISnapshotEntityData.Builder builderForValue) {
@@ -650,7 +650,7 @@ public final class AISnapshotInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .AISnapshotEntityData ai_snapshots = 13;</code>
+       * <code>repeated .AISnapshotEntityData ai_snapshots = 1;</code>
        */
       public Builder addAllAiSnapshots(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.AISnapshotEntityDataOuterClass.AISnapshotEntityData> values) {
@@ -665,7 +665,7 @@ public final class AISnapshotInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .AISnapshotEntityData ai_snapshots = 13;</code>
+       * <code>repeated .AISnapshotEntityData ai_snapshots = 1;</code>
        */
       public Builder clearAiSnapshots() {
         if (aiSnapshotsBuilder_ == null) {
@@ -678,7 +678,7 @@ public final class AISnapshotInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .AISnapshotEntityData ai_snapshots = 13;</code>
+       * <code>repeated .AISnapshotEntityData ai_snapshots = 1;</code>
        */
       public Builder removeAiSnapshots(int index) {
         if (aiSnapshotsBuilder_ == null) {
@@ -691,14 +691,14 @@ public final class AISnapshotInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .AISnapshotEntityData ai_snapshots = 13;</code>
+       * <code>repeated .AISnapshotEntityData ai_snapshots = 1;</code>
        */
       public emu.grasscutter.net.proto.AISnapshotEntityDataOuterClass.AISnapshotEntityData.Builder getAiSnapshotsBuilder(
           int index) {
         return getAiSnapshotsFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .AISnapshotEntityData ai_snapshots = 13;</code>
+       * <code>repeated .AISnapshotEntityData ai_snapshots = 1;</code>
        */
       public emu.grasscutter.net.proto.AISnapshotEntityDataOuterClass.AISnapshotEntityDataOrBuilder getAiSnapshotsOrBuilder(
           int index) {
@@ -708,7 +708,7 @@ public final class AISnapshotInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .AISnapshotEntityData ai_snapshots = 13;</code>
+       * <code>repeated .AISnapshotEntityData ai_snapshots = 1;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.AISnapshotEntityDataOuterClass.AISnapshotEntityDataOrBuilder> 
            getAiSnapshotsOrBuilderList() {
@@ -719,14 +719,14 @@ public final class AISnapshotInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .AISnapshotEntityData ai_snapshots = 13;</code>
+       * <code>repeated .AISnapshotEntityData ai_snapshots = 1;</code>
        */
       public emu.grasscutter.net.proto.AISnapshotEntityDataOuterClass.AISnapshotEntityData.Builder addAiSnapshotsBuilder() {
         return getAiSnapshotsFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.AISnapshotEntityDataOuterClass.AISnapshotEntityData.getDefaultInstance());
       }
       /**
-       * <code>repeated .AISnapshotEntityData ai_snapshots = 13;</code>
+       * <code>repeated .AISnapshotEntityData ai_snapshots = 1;</code>
        */
       public emu.grasscutter.net.proto.AISnapshotEntityDataOuterClass.AISnapshotEntityData.Builder addAiSnapshotsBuilder(
           int index) {
@@ -734,7 +734,7 @@ public final class AISnapshotInfoOuterClass {
             index, emu.grasscutter.net.proto.AISnapshotEntityDataOuterClass.AISnapshotEntityData.getDefaultInstance());
       }
       /**
-       * <code>repeated .AISnapshotEntityData ai_snapshots = 13;</code>
+       * <code>repeated .AISnapshotEntityData ai_snapshots = 1;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.AISnapshotEntityDataOuterClass.AISnapshotEntityData.Builder> 
            getAiSnapshotsBuilderList() {
@@ -823,7 +823,7 @@ public final class AISnapshotInfoOuterClass {
     java.lang.String[] descriptorData = {
       "\n\024AISnapshotInfo.proto\032\032AISnapshotEntity" +
       "Data.proto\"=\n\016AISnapshotInfo\022+\n\014ai_snaps" +
-      "hots\030\r \003(\0132\025.AISnapshotEntityDataB\033\n\031emu" +
+      "hots\030\001 \003(\0132\025.AISnapshotEntityDataB\033\n\031emu" +
       ".grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

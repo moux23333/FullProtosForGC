@@ -19,16 +19,16 @@ public final class AbilityMixinUGCTimeControlOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint64 start_move_time_ms = 13;</code>
+     * <code>uint64 start_move_time_ms = 12;</code>
      * @return The startMoveTimeMs.
      */
     long getStartMoveTimeMs();
 
     /**
-     * <code>uint32 forward = 3;</code>
-     * @return The forward.
+     * <code>uint32 start_move_time = 9;</code>
+     * @return The startMoveTime.
      */
-    int getForward();
+    int getStartMoveTime();
   }
   /**
    * Protobuf type {@code AbilityMixinUGCTimeControl}
@@ -75,12 +75,12 @@ public final class AbilityMixinUGCTimeControlOuterClass {
             case 0:
               done = true;
               break;
-            case 24: {
+            case 72: {
 
-              forward_ = input.readUInt32();
+              startMoveTime_ = input.readUInt32();
               break;
             }
-            case 104: {
+            case 96: {
 
               startMoveTimeMs_ = input.readUInt64();
               break;
@@ -117,10 +117,10 @@ public final class AbilityMixinUGCTimeControlOuterClass {
               emu.grasscutter.net.proto.AbilityMixinUGCTimeControlOuterClass.AbilityMixinUGCTimeControl.class, emu.grasscutter.net.proto.AbilityMixinUGCTimeControlOuterClass.AbilityMixinUGCTimeControl.Builder.class);
     }
 
-    public static final int START_MOVE_TIME_MS_FIELD_NUMBER = 13;
+    public static final int START_MOVE_TIME_MS_FIELD_NUMBER = 12;
     private long startMoveTimeMs_;
     /**
-     * <code>uint64 start_move_time_ms = 13;</code>
+     * <code>uint64 start_move_time_ms = 12;</code>
      * @return The startMoveTimeMs.
      */
     @java.lang.Override
@@ -128,15 +128,15 @@ public final class AbilityMixinUGCTimeControlOuterClass {
       return startMoveTimeMs_;
     }
 
-    public static final int FORWARD_FIELD_NUMBER = 3;
-    private int forward_;
+    public static final int START_MOVE_TIME_FIELD_NUMBER = 9;
+    private int startMoveTime_;
     /**
-     * <code>uint32 forward = 3;</code>
-     * @return The forward.
+     * <code>uint32 start_move_time = 9;</code>
+     * @return The startMoveTime.
      */
     @java.lang.Override
-    public int getForward() {
-      return forward_;
+    public int getStartMoveTime() {
+      return startMoveTime_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -153,11 +153,11 @@ public final class AbilityMixinUGCTimeControlOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (forward_ != 0) {
-        output.writeUInt32(3, forward_);
+      if (startMoveTime_ != 0) {
+        output.writeUInt32(9, startMoveTime_);
       }
       if (startMoveTimeMs_ != 0L) {
-        output.writeUInt64(13, startMoveTimeMs_);
+        output.writeUInt64(12, startMoveTimeMs_);
       }
       unknownFields.writeTo(output);
     }
@@ -168,13 +168,13 @@ public final class AbilityMixinUGCTimeControlOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (forward_ != 0) {
+      if (startMoveTime_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, forward_);
+          .computeUInt32Size(9, startMoveTime_);
       }
       if (startMoveTimeMs_ != 0L) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt64Size(13, startMoveTimeMs_);
+          .computeUInt64Size(12, startMoveTimeMs_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -193,8 +193,8 @@ public final class AbilityMixinUGCTimeControlOuterClass {
 
       if (getStartMoveTimeMs()
           != other.getStartMoveTimeMs()) return false;
-      if (getForward()
-          != other.getForward()) return false;
+      if (getStartMoveTime()
+          != other.getStartMoveTime()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -209,8 +209,8 @@ public final class AbilityMixinUGCTimeControlOuterClass {
       hash = (37 * hash) + START_MOVE_TIME_MS_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
           getStartMoveTimeMs());
-      hash = (37 * hash) + FORWARD_FIELD_NUMBER;
-      hash = (53 * hash) + getForward();
+      hash = (37 * hash) + START_MOVE_TIME_FIELD_NUMBER;
+      hash = (53 * hash) + getStartMoveTime();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -346,7 +346,7 @@ public final class AbilityMixinUGCTimeControlOuterClass {
         super.clear();
         startMoveTimeMs_ = 0L;
 
-        forward_ = 0;
+        startMoveTime_ = 0;
 
         return this;
       }
@@ -375,7 +375,7 @@ public final class AbilityMixinUGCTimeControlOuterClass {
       public emu.grasscutter.net.proto.AbilityMixinUGCTimeControlOuterClass.AbilityMixinUGCTimeControl buildPartial() {
         emu.grasscutter.net.proto.AbilityMixinUGCTimeControlOuterClass.AbilityMixinUGCTimeControl result = new emu.grasscutter.net.proto.AbilityMixinUGCTimeControlOuterClass.AbilityMixinUGCTimeControl(this);
         result.startMoveTimeMs_ = startMoveTimeMs_;
-        result.forward_ = forward_;
+        result.startMoveTime_ = startMoveTime_;
         onBuilt();
         return result;
       }
@@ -427,8 +427,8 @@ public final class AbilityMixinUGCTimeControlOuterClass {
         if (other.getStartMoveTimeMs() != 0L) {
           setStartMoveTimeMs(other.getStartMoveTimeMs());
         }
-        if (other.getForward() != 0) {
-          setForward(other.getForward());
+        if (other.getStartMoveTime() != 0) {
+          setStartMoveTime(other.getStartMoveTime());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -461,7 +461,7 @@ public final class AbilityMixinUGCTimeControlOuterClass {
 
       private long startMoveTimeMs_ ;
       /**
-       * <code>uint64 start_move_time_ms = 13;</code>
+       * <code>uint64 start_move_time_ms = 12;</code>
        * @return The startMoveTimeMs.
        */
       @java.lang.Override
@@ -469,7 +469,7 @@ public final class AbilityMixinUGCTimeControlOuterClass {
         return startMoveTimeMs_;
       }
       /**
-       * <code>uint64 start_move_time_ms = 13;</code>
+       * <code>uint64 start_move_time_ms = 12;</code>
        * @param value The startMoveTimeMs to set.
        * @return This builder for chaining.
        */
@@ -480,7 +480,7 @@ public final class AbilityMixinUGCTimeControlOuterClass {
         return this;
       }
       /**
-       * <code>uint64 start_move_time_ms = 13;</code>
+       * <code>uint64 start_move_time_ms = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearStartMoveTimeMs() {
@@ -490,33 +490,33 @@ public final class AbilityMixinUGCTimeControlOuterClass {
         return this;
       }
 
-      private int forward_ ;
+      private int startMoveTime_ ;
       /**
-       * <code>uint32 forward = 3;</code>
-       * @return The forward.
+       * <code>uint32 start_move_time = 9;</code>
+       * @return The startMoveTime.
        */
       @java.lang.Override
-      public int getForward() {
-        return forward_;
+      public int getStartMoveTime() {
+        return startMoveTime_;
       }
       /**
-       * <code>uint32 forward = 3;</code>
-       * @param value The forward to set.
+       * <code>uint32 start_move_time = 9;</code>
+       * @param value The startMoveTime to set.
        * @return This builder for chaining.
        */
-      public Builder setForward(int value) {
+      public Builder setStartMoveTime(int value) {
         
-        forward_ = value;
+        startMoveTime_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 forward = 3;</code>
+       * <code>uint32 start_move_time = 9;</code>
        * @return This builder for chaining.
        */
-      public Builder clearForward() {
+      public Builder clearStartMoveTime() {
         
-        forward_ = 0;
+        startMoveTime_ = 0;
         onChanged();
         return this;
       }
@@ -587,10 +587,10 @@ public final class AbilityMixinUGCTimeControlOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n AbilityMixinUGCTimeControl.proto\"I\n\032Ab" +
+      "\n AbilityMixinUGCTimeControl.proto\"Q\n\032Ab" +
       "ilityMixinUGCTimeControl\022\032\n\022start_move_t" +
-      "ime_ms\030\r \001(\004\022\017\n\007forward\030\003 \001(\rB\033\n\031emu.gra" +
-      "sscutter.net.protob\006proto3"
+      "ime_ms\030\014 \001(\004\022\027\n\017start_move_time\030\t \001(\rB\033\n" +
+      "\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -601,7 +601,7 @@ public final class AbilityMixinUGCTimeControlOuterClass {
     internal_static_AbilityMixinUGCTimeControl_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_AbilityMixinUGCTimeControl_descriptor,
-        new java.lang.String[] { "StartMoveTimeMs", "Forward", });
+        new java.lang.String[] { "StartMoveTimeMs", "StartMoveTime", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

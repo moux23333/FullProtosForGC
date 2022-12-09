@@ -27,6 +27,14 @@ public final class GCGClientPerformTypeOuterClass {
      * <code>GCG_CLIENT_PERFORM_TYPE_CARD_EXCHANGE = 1;</code>
      */
     GCG_CLIENT_PERFORM_TYPE_CARD_EXCHANGE(1),
+    /**
+     * <code>GCG_CLIENT_PERFORM_TYPE_FIRST_HAND = 2;</code>
+     */
+    GCG_CLIENT_PERFORM_TYPE_FIRST_HAND(2),
+    /**
+     * <code>GCG_CLIENT_PERFORM_TYPE_REROLL = 3;</code>
+     */
+    GCG_CLIENT_PERFORM_TYPE_REROLL(3),
     UNRECOGNIZED(-1),
     ;
 
@@ -38,6 +46,14 @@ public final class GCGClientPerformTypeOuterClass {
      * <code>GCG_CLIENT_PERFORM_TYPE_CARD_EXCHANGE = 1;</code>
      */
     public static final int GCG_CLIENT_PERFORM_TYPE_CARD_EXCHANGE_VALUE = 1;
+    /**
+     * <code>GCG_CLIENT_PERFORM_TYPE_FIRST_HAND = 2;</code>
+     */
+    public static final int GCG_CLIENT_PERFORM_TYPE_FIRST_HAND_VALUE = 2;
+    /**
+     * <code>GCG_CLIENT_PERFORM_TYPE_REROLL = 3;</code>
+     */
+    public static final int GCG_CLIENT_PERFORM_TYPE_REROLL_VALUE = 3;
 
 
     public final int getNumber() {
@@ -66,6 +82,8 @@ public final class GCGClientPerformTypeOuterClass {
       switch (value) {
         case 0: return GCG_CLIENT_PERFORM_TYPE_INVALID;
         case 1: return GCG_CLIENT_PERFORM_TYPE_CARD_EXCHANGE;
+        case 2: return GCG_CLIENT_PERFORM_TYPE_FIRST_HAND;
+        case 3: return GCG_CLIENT_PERFORM_TYPE_REROLL;
         default: return null;
       }
     }
@@ -131,11 +149,13 @@ public final class GCGClientPerformTypeOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\032GCGClientPerformType.proto*f\n\024GCGClien" +
-      "tPerformType\022#\n\037GCG_CLIENT_PERFORM_TYPE_" +
-      "INVALID\020\000\022)\n%GCG_CLIENT_PERFORM_TYPE_CAR" +
-      "D_EXCHANGE\020\001B\033\n\031emu.grasscutter.net.prot" +
-      "ob\006proto3"
+      "\n\032GCGClientPerformType.proto*\262\001\n\024GCGClie" +
+      "ntPerformType\022#\n\037GCG_CLIENT_PERFORM_TYPE" +
+      "_INVALID\020\000\022)\n%GCG_CLIENT_PERFORM_TYPE_CA" +
+      "RD_EXCHANGE\020\001\022&\n\"GCG_CLIENT_PERFORM_TYPE" +
+      "_FIRST_HAND\020\002\022\"\n\036GCG_CLIENT_PERFORM_TYPE" +
+      "_REROLL\020\003B\033\n\031emu.grasscutter.net.protob\006" +
+      "proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

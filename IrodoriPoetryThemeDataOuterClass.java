@@ -19,68 +19,68 @@ public final class IrodoriPoetryThemeDataOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated uint32 scanned_index_list = 1;</code>
-     * @return A list containing the scannedIndexList.
+     * <code>uint32 Unk3300_HFMKPNOBPDK = 14;</code>
+     * @return The unk3300HFMKPNOBPDK.
      */
-    java.util.List<java.lang.Integer> getScannedIndexListList();
+    int getUnk3300HFMKPNOBPDK();
+
     /**
-     * <code>repeated uint32 scanned_index_list = 1;</code>
-     * @return The count of scannedIndexList.
+     * <code>repeated uint32 Unk3300_CNNMEHOGGLL = 10;</code>
+     * @return A list containing the unk3300CNNMEHOGGLL.
      */
-    int getScannedIndexListCount();
+    java.util.List<java.lang.Integer> getUnk3300CNNMEHOGGLLList();
     /**
-     * <code>repeated uint32 scanned_index_list = 1;</code>
+     * <code>repeated uint32 Unk3300_CNNMEHOGGLL = 10;</code>
+     * @return The count of unk3300CNNMEHOGGLL.
+     */
+    int getUnk3300CNNMEHOGGLLCount();
+    /**
+     * <code>repeated uint32 Unk3300_CNNMEHOGGLL = 10;</code>
      * @param index The index of the element to return.
-     * @return The scannedIndexList at the given index.
+     * @return The unk3300CNNMEHOGGLL at the given index.
      */
-    int getScannedIndexList(int index);
+    int getUnk3300CNNMEHOGGLL(int index);
 
     /**
-     * <code>repeated uint32 line_id_list = 4;</code>
-     * @return A list containing the lineIdList.
-     */
-    java.util.List<java.lang.Integer> getLineIdListList();
-    /**
-     * <code>repeated uint32 line_id_list = 4;</code>
-     * @return The count of lineIdList.
-     */
-    int getLineIdListCount();
-    /**
-     * <code>repeated uint32 line_id_list = 4;</code>
-     * @param index The index of the element to return.
-     * @return The lineIdList at the given index.
-     */
-    int getLineIdList(int index);
-
-    /**
-     * <code>uint32 max_progress = 2;</code>
-     * @return The maxProgress.
-     */
-    int getMaxProgress();
-
-    /**
-     * <code>uint32 theme_id = 13;</code>
-     * @return The themeId.
-     */
-    int getThemeId();
-
-    /**
-     * <code>uint32 progress = 5;</code>
+     * <code>uint32 progress = 11;</code>
      * @return The progress.
      */
     int getProgress();
 
     /**
-     * <code>uint32 min_progress = 12;</code>
-     * @return The minProgress.
+     * <code>uint32 theme_id = 12;</code>
+     * @return The themeId.
      */
-    int getMinProgress();
+    int getThemeId();
 
     /**
-     * <code>uint32 selected_line_id = 9;</code>
-     * @return The selectedLineId.
+     * <code>uint32 max_progress = 7;</code>
+     * @return The maxProgress.
      */
-    int getSelectedLineId();
+    int getMaxProgress();
+
+    /**
+     * <code>repeated uint32 Unk3300_HODJKKDBJDJ = 15;</code>
+     * @return A list containing the unk3300HODJKKDBJDJ.
+     */
+    java.util.List<java.lang.Integer> getUnk3300HODJKKDBJDJList();
+    /**
+     * <code>repeated uint32 Unk3300_HODJKKDBJDJ = 15;</code>
+     * @return The count of unk3300HODJKKDBJDJ.
+     */
+    int getUnk3300HODJKKDBJDJCount();
+    /**
+     * <code>repeated uint32 Unk3300_HODJKKDBJDJ = 15;</code>
+     * @param index The index of the element to return.
+     * @return The unk3300HODJKKDBJDJ at the given index.
+     */
+    int getUnk3300HODJKKDBJDJ(int index);
+
+    /**
+     * <code>uint32 Unk3300_NJHMNLIAGIK = 6;</code>
+     * @return The unk3300NJHMNLIAGIK.
+     */
+    int getUnk3300NJHMNLIAGIK();
   }
   /**
    * Protobuf type {@code IrodoriPoetryThemeData}
@@ -95,8 +95,8 @@ public final class IrodoriPoetryThemeDataOuterClass {
       super(builder);
     }
     private IrodoriPoetryThemeData() {
-      scannedIndexList_ = emptyIntList();
-      lineIdList_ = emptyIntList();
+      unk3300CNNMEHOGGLL_ = emptyIntList();
+      unk3300HODJKKDBJDJ_ = emptyIntList();
     }
 
     @java.lang.Override
@@ -130,71 +130,71 @@ public final class IrodoriPoetryThemeDataOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                scannedIndexList_ = newIntList();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              scannedIndexList_.addInt(input.readUInt32());
+            case 48: {
+
+              unk3300NJHMNLIAGIK_ = input.readUInt32();
               break;
             }
-            case 10: {
-              int length = input.readRawVarint32();
-              int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
-                scannedIndexList_ = newIntList();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              while (input.getBytesUntilLimit() > 0) {
-                scannedIndexList_.addInt(input.readUInt32());
-              }
-              input.popLimit(limit);
-              break;
-            }
-            case 16: {
+            case 56: {
 
               maxProgress_ = input.readUInt32();
               break;
             }
-            case 32: {
-              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
-                lineIdList_ = newIntList();
-                mutable_bitField0_ |= 0x00000002;
+            case 80: {
+              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+                unk3300CNNMEHOGGLL_ = newIntList();
+                mutable_bitField0_ |= 0x00000001;
               }
-              lineIdList_.addInt(input.readUInt32());
+              unk3300CNNMEHOGGLL_.addInt(input.readUInt32());
               break;
             }
-            case 34: {
+            case 82: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000002) != 0) && input.getBytesUntilLimit() > 0) {
-                lineIdList_ = newIntList();
-                mutable_bitField0_ |= 0x00000002;
+              if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
+                unk3300CNNMEHOGGLL_ = newIntList();
+                mutable_bitField0_ |= 0x00000001;
               }
               while (input.getBytesUntilLimit() > 0) {
-                lineIdList_.addInt(input.readUInt32());
+                unk3300CNNMEHOGGLL_.addInt(input.readUInt32());
               }
               input.popLimit(limit);
               break;
             }
-            case 40: {
+            case 88: {
 
               progress_ = input.readUInt32();
               break;
             }
-            case 72: {
-
-              selectedLineId_ = input.readUInt32();
-              break;
-            }
             case 96: {
 
-              minProgress_ = input.readUInt32();
+              themeId_ = input.readUInt32();
               break;
             }
-            case 104: {
+            case 112: {
 
-              themeId_ = input.readUInt32();
+              unk3300HFMKPNOBPDK_ = input.readUInt32();
+              break;
+            }
+            case 120: {
+              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
+                unk3300HODJKKDBJDJ_ = newIntList();
+                mutable_bitField0_ |= 0x00000002;
+              }
+              unk3300HODJKKDBJDJ_.addInt(input.readUInt32());
+              break;
+            }
+            case 122: {
+              int length = input.readRawVarint32();
+              int limit = input.pushLimit(length);
+              if (!((mutable_bitField0_ & 0x00000002) != 0) && input.getBytesUntilLimit() > 0) {
+                unk3300HODJKKDBJDJ_ = newIntList();
+                mutable_bitField0_ |= 0x00000002;
+              }
+              while (input.getBytesUntilLimit() > 0) {
+                unk3300HODJKKDBJDJ_.addInt(input.readUInt32());
+              }
+              input.popLimit(limit);
               break;
             }
             default: {
@@ -213,10 +213,10 @@ public final class IrodoriPoetryThemeDataOuterClass {
             e).setUnfinishedMessage(this);
       } finally {
         if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          scannedIndexList_.makeImmutable(); // C
+          unk3300CNNMEHOGGLL_.makeImmutable(); // C
         }
         if (((mutable_bitField0_ & 0x00000002) != 0)) {
-          lineIdList_.makeImmutable(); // C
+          unk3300HODJKKDBJDJ_.makeImmutable(); // C
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -235,88 +235,49 @@ public final class IrodoriPoetryThemeDataOuterClass {
               emu.grasscutter.net.proto.IrodoriPoetryThemeDataOuterClass.IrodoriPoetryThemeData.class, emu.grasscutter.net.proto.IrodoriPoetryThemeDataOuterClass.IrodoriPoetryThemeData.Builder.class);
     }
 
-    public static final int SCANNED_INDEX_LIST_FIELD_NUMBER = 1;
-    private com.google.protobuf.Internal.IntList scannedIndexList_;
+    public static final int UNK3300_HFMKPNOBPDK_FIELD_NUMBER = 14;
+    private int unk3300HFMKPNOBPDK_;
     /**
-     * <code>repeated uint32 scanned_index_list = 1;</code>
-     * @return A list containing the scannedIndexList.
+     * <code>uint32 Unk3300_HFMKPNOBPDK = 14;</code>
+     * @return The unk3300HFMKPNOBPDK.
+     */
+    @java.lang.Override
+    public int getUnk3300HFMKPNOBPDK() {
+      return unk3300HFMKPNOBPDK_;
+    }
+
+    public static final int UNK3300_CNNMEHOGGLL_FIELD_NUMBER = 10;
+    private com.google.protobuf.Internal.IntList unk3300CNNMEHOGGLL_;
+    /**
+     * <code>repeated uint32 Unk3300_CNNMEHOGGLL = 10;</code>
+     * @return A list containing the unk3300CNNMEHOGGLL.
      */
     @java.lang.Override
     public java.util.List<java.lang.Integer>
-        getScannedIndexListList() {
-      return scannedIndexList_;
+        getUnk3300CNNMEHOGGLLList() {
+      return unk3300CNNMEHOGGLL_;
     }
     /**
-     * <code>repeated uint32 scanned_index_list = 1;</code>
-     * @return The count of scannedIndexList.
+     * <code>repeated uint32 Unk3300_CNNMEHOGGLL = 10;</code>
+     * @return The count of unk3300CNNMEHOGGLL.
      */
-    public int getScannedIndexListCount() {
-      return scannedIndexList_.size();
+    public int getUnk3300CNNMEHOGGLLCount() {
+      return unk3300CNNMEHOGGLL_.size();
     }
     /**
-     * <code>repeated uint32 scanned_index_list = 1;</code>
+     * <code>repeated uint32 Unk3300_CNNMEHOGGLL = 10;</code>
      * @param index The index of the element to return.
-     * @return The scannedIndexList at the given index.
+     * @return The unk3300CNNMEHOGGLL at the given index.
      */
-    public int getScannedIndexList(int index) {
-      return scannedIndexList_.getInt(index);
+    public int getUnk3300CNNMEHOGGLL(int index) {
+      return unk3300CNNMEHOGGLL_.getInt(index);
     }
-    private int scannedIndexListMemoizedSerializedSize = -1;
+    private int unk3300CNNMEHOGGLLMemoizedSerializedSize = -1;
 
-    public static final int LINE_ID_LIST_FIELD_NUMBER = 4;
-    private com.google.protobuf.Internal.IntList lineIdList_;
-    /**
-     * <code>repeated uint32 line_id_list = 4;</code>
-     * @return A list containing the lineIdList.
-     */
-    @java.lang.Override
-    public java.util.List<java.lang.Integer>
-        getLineIdListList() {
-      return lineIdList_;
-    }
-    /**
-     * <code>repeated uint32 line_id_list = 4;</code>
-     * @return The count of lineIdList.
-     */
-    public int getLineIdListCount() {
-      return lineIdList_.size();
-    }
-    /**
-     * <code>repeated uint32 line_id_list = 4;</code>
-     * @param index The index of the element to return.
-     * @return The lineIdList at the given index.
-     */
-    public int getLineIdList(int index) {
-      return lineIdList_.getInt(index);
-    }
-    private int lineIdListMemoizedSerializedSize = -1;
-
-    public static final int MAX_PROGRESS_FIELD_NUMBER = 2;
-    private int maxProgress_;
-    /**
-     * <code>uint32 max_progress = 2;</code>
-     * @return The maxProgress.
-     */
-    @java.lang.Override
-    public int getMaxProgress() {
-      return maxProgress_;
-    }
-
-    public static final int THEME_ID_FIELD_NUMBER = 13;
-    private int themeId_;
-    /**
-     * <code>uint32 theme_id = 13;</code>
-     * @return The themeId.
-     */
-    @java.lang.Override
-    public int getThemeId() {
-      return themeId_;
-    }
-
-    public static final int PROGRESS_FIELD_NUMBER = 5;
+    public static final int PROGRESS_FIELD_NUMBER = 11;
     private int progress_;
     /**
-     * <code>uint32 progress = 5;</code>
+     * <code>uint32 progress = 11;</code>
      * @return The progress.
      */
     @java.lang.Override
@@ -324,26 +285,65 @@ public final class IrodoriPoetryThemeDataOuterClass {
       return progress_;
     }
 
-    public static final int MIN_PROGRESS_FIELD_NUMBER = 12;
-    private int minProgress_;
+    public static final int THEME_ID_FIELD_NUMBER = 12;
+    private int themeId_;
     /**
-     * <code>uint32 min_progress = 12;</code>
-     * @return The minProgress.
+     * <code>uint32 theme_id = 12;</code>
+     * @return The themeId.
      */
     @java.lang.Override
-    public int getMinProgress() {
-      return minProgress_;
+    public int getThemeId() {
+      return themeId_;
     }
 
-    public static final int SELECTED_LINE_ID_FIELD_NUMBER = 9;
-    private int selectedLineId_;
+    public static final int MAX_PROGRESS_FIELD_NUMBER = 7;
+    private int maxProgress_;
     /**
-     * <code>uint32 selected_line_id = 9;</code>
-     * @return The selectedLineId.
+     * <code>uint32 max_progress = 7;</code>
+     * @return The maxProgress.
      */
     @java.lang.Override
-    public int getSelectedLineId() {
-      return selectedLineId_;
+    public int getMaxProgress() {
+      return maxProgress_;
+    }
+
+    public static final int UNK3300_HODJKKDBJDJ_FIELD_NUMBER = 15;
+    private com.google.protobuf.Internal.IntList unk3300HODJKKDBJDJ_;
+    /**
+     * <code>repeated uint32 Unk3300_HODJKKDBJDJ = 15;</code>
+     * @return A list containing the unk3300HODJKKDBJDJ.
+     */
+    @java.lang.Override
+    public java.util.List<java.lang.Integer>
+        getUnk3300HODJKKDBJDJList() {
+      return unk3300HODJKKDBJDJ_;
+    }
+    /**
+     * <code>repeated uint32 Unk3300_HODJKKDBJDJ = 15;</code>
+     * @return The count of unk3300HODJKKDBJDJ.
+     */
+    public int getUnk3300HODJKKDBJDJCount() {
+      return unk3300HODJKKDBJDJ_.size();
+    }
+    /**
+     * <code>repeated uint32 Unk3300_HODJKKDBJDJ = 15;</code>
+     * @param index The index of the element to return.
+     * @return The unk3300HODJKKDBJDJ at the given index.
+     */
+    public int getUnk3300HODJKKDBJDJ(int index) {
+      return unk3300HODJKKDBJDJ_.getInt(index);
+    }
+    private int unk3300HODJKKDBJDJMemoizedSerializedSize = -1;
+
+    public static final int UNK3300_NJHMNLIAGIK_FIELD_NUMBER = 6;
+    private int unk3300NJHMNLIAGIK_;
+    /**
+     * <code>uint32 Unk3300_NJHMNLIAGIK = 6;</code>
+     * @return The unk3300NJHMNLIAGIK.
+     */
+    @java.lang.Override
+    public int getUnk3300NJHMNLIAGIK() {
+      return unk3300NJHMNLIAGIK_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -361,34 +361,34 @@ public final class IrodoriPoetryThemeDataOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      if (getScannedIndexListList().size() > 0) {
-        output.writeUInt32NoTag(10);
-        output.writeUInt32NoTag(scannedIndexListMemoizedSerializedSize);
-      }
-      for (int i = 0; i < scannedIndexList_.size(); i++) {
-        output.writeUInt32NoTag(scannedIndexList_.getInt(i));
+      if (unk3300NJHMNLIAGIK_ != 0) {
+        output.writeUInt32(6, unk3300NJHMNLIAGIK_);
       }
       if (maxProgress_ != 0) {
-        output.writeUInt32(2, maxProgress_);
+        output.writeUInt32(7, maxProgress_);
       }
-      if (getLineIdListList().size() > 0) {
-        output.writeUInt32NoTag(34);
-        output.writeUInt32NoTag(lineIdListMemoizedSerializedSize);
+      if (getUnk3300CNNMEHOGGLLList().size() > 0) {
+        output.writeUInt32NoTag(82);
+        output.writeUInt32NoTag(unk3300CNNMEHOGGLLMemoizedSerializedSize);
       }
-      for (int i = 0; i < lineIdList_.size(); i++) {
-        output.writeUInt32NoTag(lineIdList_.getInt(i));
+      for (int i = 0; i < unk3300CNNMEHOGGLL_.size(); i++) {
+        output.writeUInt32NoTag(unk3300CNNMEHOGGLL_.getInt(i));
       }
       if (progress_ != 0) {
-        output.writeUInt32(5, progress_);
-      }
-      if (selectedLineId_ != 0) {
-        output.writeUInt32(9, selectedLineId_);
-      }
-      if (minProgress_ != 0) {
-        output.writeUInt32(12, minProgress_);
+        output.writeUInt32(11, progress_);
       }
       if (themeId_ != 0) {
-        output.writeUInt32(13, themeId_);
+        output.writeUInt32(12, themeId_);
+      }
+      if (unk3300HFMKPNOBPDK_ != 0) {
+        output.writeUInt32(14, unk3300HFMKPNOBPDK_);
+      }
+      if (getUnk3300HODJKKDBJDJList().size() > 0) {
+        output.writeUInt32NoTag(122);
+        output.writeUInt32NoTag(unk3300HODJKKDBJDJMemoizedSerializedSize);
+      }
+      for (int i = 0; i < unk3300HODJKKDBJDJ_.size(); i++) {
+        output.writeUInt32NoTag(unk3300HODJKKDBJDJ_.getInt(i));
       }
       unknownFields.writeTo(output);
     }
@@ -399,53 +399,53 @@ public final class IrodoriPoetryThemeDataOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      {
-        int dataSize = 0;
-        for (int i = 0; i < scannedIndexList_.size(); i++) {
-          dataSize += com.google.protobuf.CodedOutputStream
-            .computeUInt32SizeNoTag(scannedIndexList_.getInt(i));
-        }
-        size += dataSize;
-        if (!getScannedIndexListList().isEmpty()) {
-          size += 1;
-          size += com.google.protobuf.CodedOutputStream
-              .computeInt32SizeNoTag(dataSize);
-        }
-        scannedIndexListMemoizedSerializedSize = dataSize;
+      if (unk3300NJHMNLIAGIK_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(6, unk3300NJHMNLIAGIK_);
       }
       if (maxProgress_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, maxProgress_);
+          .computeUInt32Size(7, maxProgress_);
       }
       {
         int dataSize = 0;
-        for (int i = 0; i < lineIdList_.size(); i++) {
+        for (int i = 0; i < unk3300CNNMEHOGGLL_.size(); i++) {
           dataSize += com.google.protobuf.CodedOutputStream
-            .computeUInt32SizeNoTag(lineIdList_.getInt(i));
+            .computeUInt32SizeNoTag(unk3300CNNMEHOGGLL_.getInt(i));
         }
         size += dataSize;
-        if (!getLineIdListList().isEmpty()) {
+        if (!getUnk3300CNNMEHOGGLLList().isEmpty()) {
           size += 1;
           size += com.google.protobuf.CodedOutputStream
               .computeInt32SizeNoTag(dataSize);
         }
-        lineIdListMemoizedSerializedSize = dataSize;
+        unk3300CNNMEHOGGLLMemoizedSerializedSize = dataSize;
       }
       if (progress_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, progress_);
-      }
-      if (selectedLineId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, selectedLineId_);
-      }
-      if (minProgress_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, minProgress_);
+          .computeUInt32Size(11, progress_);
       }
       if (themeId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, themeId_);
+          .computeUInt32Size(12, themeId_);
+      }
+      if (unk3300HFMKPNOBPDK_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(14, unk3300HFMKPNOBPDK_);
+      }
+      {
+        int dataSize = 0;
+        for (int i = 0; i < unk3300HODJKKDBJDJ_.size(); i++) {
+          dataSize += com.google.protobuf.CodedOutputStream
+            .computeUInt32SizeNoTag(unk3300HODJKKDBJDJ_.getInt(i));
+        }
+        size += dataSize;
+        if (!getUnk3300HODJKKDBJDJList().isEmpty()) {
+          size += 1;
+          size += com.google.protobuf.CodedOutputStream
+              .computeInt32SizeNoTag(dataSize);
+        }
+        unk3300HODJKKDBJDJMemoizedSerializedSize = dataSize;
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -462,20 +462,20 @@ public final class IrodoriPoetryThemeDataOuterClass {
       }
       emu.grasscutter.net.proto.IrodoriPoetryThemeDataOuterClass.IrodoriPoetryThemeData other = (emu.grasscutter.net.proto.IrodoriPoetryThemeDataOuterClass.IrodoriPoetryThemeData) obj;
 
-      if (!getScannedIndexListList()
-          .equals(other.getScannedIndexListList())) return false;
-      if (!getLineIdListList()
-          .equals(other.getLineIdListList())) return false;
-      if (getMaxProgress()
-          != other.getMaxProgress()) return false;
-      if (getThemeId()
-          != other.getThemeId()) return false;
+      if (getUnk3300HFMKPNOBPDK()
+          != other.getUnk3300HFMKPNOBPDK()) return false;
+      if (!getUnk3300CNNMEHOGGLLList()
+          .equals(other.getUnk3300CNNMEHOGGLLList())) return false;
       if (getProgress()
           != other.getProgress()) return false;
-      if (getMinProgress()
-          != other.getMinProgress()) return false;
-      if (getSelectedLineId()
-          != other.getSelectedLineId()) return false;
+      if (getThemeId()
+          != other.getThemeId()) return false;
+      if (getMaxProgress()
+          != other.getMaxProgress()) return false;
+      if (!getUnk3300HODJKKDBJDJList()
+          .equals(other.getUnk3300HODJKKDBJDJList())) return false;
+      if (getUnk3300NJHMNLIAGIK()
+          != other.getUnk3300NJHMNLIAGIK()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -487,24 +487,24 @@ public final class IrodoriPoetryThemeDataOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (getScannedIndexListCount() > 0) {
-        hash = (37 * hash) + SCANNED_INDEX_LIST_FIELD_NUMBER;
-        hash = (53 * hash) + getScannedIndexListList().hashCode();
+      hash = (37 * hash) + UNK3300_HFMKPNOBPDK_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300HFMKPNOBPDK();
+      if (getUnk3300CNNMEHOGGLLCount() > 0) {
+        hash = (37 * hash) + UNK3300_CNNMEHOGGLL_FIELD_NUMBER;
+        hash = (53 * hash) + getUnk3300CNNMEHOGGLLList().hashCode();
       }
-      if (getLineIdListCount() > 0) {
-        hash = (37 * hash) + LINE_ID_LIST_FIELD_NUMBER;
-        hash = (53 * hash) + getLineIdListList().hashCode();
-      }
-      hash = (37 * hash) + MAX_PROGRESS_FIELD_NUMBER;
-      hash = (53 * hash) + getMaxProgress();
-      hash = (37 * hash) + THEME_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getThemeId();
       hash = (37 * hash) + PROGRESS_FIELD_NUMBER;
       hash = (53 * hash) + getProgress();
-      hash = (37 * hash) + MIN_PROGRESS_FIELD_NUMBER;
-      hash = (53 * hash) + getMinProgress();
-      hash = (37 * hash) + SELECTED_LINE_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getSelectedLineId();
+      hash = (37 * hash) + THEME_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getThemeId();
+      hash = (37 * hash) + MAX_PROGRESS_FIELD_NUMBER;
+      hash = (53 * hash) + getMaxProgress();
+      if (getUnk3300HODJKKDBJDJCount() > 0) {
+        hash = (37 * hash) + UNK3300_HODJKKDBJDJ_FIELD_NUMBER;
+        hash = (53 * hash) + getUnk3300HODJKKDBJDJList().hashCode();
+      }
+      hash = (37 * hash) + UNK3300_NJHMNLIAGIK_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300NJHMNLIAGIK();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -638,19 +638,19 @@ public final class IrodoriPoetryThemeDataOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        scannedIndexList_ = emptyIntList();
+        unk3300HFMKPNOBPDK_ = 0;
+
+        unk3300CNNMEHOGGLL_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
-        lineIdList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000002);
-        maxProgress_ = 0;
+        progress_ = 0;
 
         themeId_ = 0;
 
-        progress_ = 0;
+        maxProgress_ = 0;
 
-        minProgress_ = 0;
-
-        selectedLineId_ = 0;
+        unk3300HODJKKDBJDJ_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000002);
+        unk3300NJHMNLIAGIK_ = 0;
 
         return this;
       }
@@ -679,21 +679,21 @@ public final class IrodoriPoetryThemeDataOuterClass {
       public emu.grasscutter.net.proto.IrodoriPoetryThemeDataOuterClass.IrodoriPoetryThemeData buildPartial() {
         emu.grasscutter.net.proto.IrodoriPoetryThemeDataOuterClass.IrodoriPoetryThemeData result = new emu.grasscutter.net.proto.IrodoriPoetryThemeDataOuterClass.IrodoriPoetryThemeData(this);
         int from_bitField0_ = bitField0_;
+        result.unk3300HFMKPNOBPDK_ = unk3300HFMKPNOBPDK_;
         if (((bitField0_ & 0x00000001) != 0)) {
-          scannedIndexList_.makeImmutable();
+          unk3300CNNMEHOGGLL_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000001);
         }
-        result.scannedIndexList_ = scannedIndexList_;
+        result.unk3300CNNMEHOGGLL_ = unk3300CNNMEHOGGLL_;
+        result.progress_ = progress_;
+        result.themeId_ = themeId_;
+        result.maxProgress_ = maxProgress_;
         if (((bitField0_ & 0x00000002) != 0)) {
-          lineIdList_.makeImmutable();
+          unk3300HODJKKDBJDJ_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000002);
         }
-        result.lineIdList_ = lineIdList_;
-        result.maxProgress_ = maxProgress_;
-        result.themeId_ = themeId_;
-        result.progress_ = progress_;
-        result.minProgress_ = minProgress_;
-        result.selectedLineId_ = selectedLineId_;
+        result.unk3300HODJKKDBJDJ_ = unk3300HODJKKDBJDJ_;
+        result.unk3300NJHMNLIAGIK_ = unk3300NJHMNLIAGIK_;
         onBuilt();
         return result;
       }
@@ -742,40 +742,40 @@ public final class IrodoriPoetryThemeDataOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.IrodoriPoetryThemeDataOuterClass.IrodoriPoetryThemeData other) {
         if (other == emu.grasscutter.net.proto.IrodoriPoetryThemeDataOuterClass.IrodoriPoetryThemeData.getDefaultInstance()) return this;
-        if (!other.scannedIndexList_.isEmpty()) {
-          if (scannedIndexList_.isEmpty()) {
-            scannedIndexList_ = other.scannedIndexList_;
+        if (other.getUnk3300HFMKPNOBPDK() != 0) {
+          setUnk3300HFMKPNOBPDK(other.getUnk3300HFMKPNOBPDK());
+        }
+        if (!other.unk3300CNNMEHOGGLL_.isEmpty()) {
+          if (unk3300CNNMEHOGGLL_.isEmpty()) {
+            unk3300CNNMEHOGGLL_ = other.unk3300CNNMEHOGGLL_;
             bitField0_ = (bitField0_ & ~0x00000001);
           } else {
-            ensureScannedIndexListIsMutable();
-            scannedIndexList_.addAll(other.scannedIndexList_);
+            ensureUnk3300CNNMEHOGGLLIsMutable();
+            unk3300CNNMEHOGGLL_.addAll(other.unk3300CNNMEHOGGLL_);
           }
           onChanged();
-        }
-        if (!other.lineIdList_.isEmpty()) {
-          if (lineIdList_.isEmpty()) {
-            lineIdList_ = other.lineIdList_;
-            bitField0_ = (bitField0_ & ~0x00000002);
-          } else {
-            ensureLineIdListIsMutable();
-            lineIdList_.addAll(other.lineIdList_);
-          }
-          onChanged();
-        }
-        if (other.getMaxProgress() != 0) {
-          setMaxProgress(other.getMaxProgress());
-        }
-        if (other.getThemeId() != 0) {
-          setThemeId(other.getThemeId());
         }
         if (other.getProgress() != 0) {
           setProgress(other.getProgress());
         }
-        if (other.getMinProgress() != 0) {
-          setMinProgress(other.getMinProgress());
+        if (other.getThemeId() != 0) {
+          setThemeId(other.getThemeId());
         }
-        if (other.getSelectedLineId() != 0) {
-          setSelectedLineId(other.getSelectedLineId());
+        if (other.getMaxProgress() != 0) {
+          setMaxProgress(other.getMaxProgress());
+        }
+        if (!other.unk3300HODJKKDBJDJ_.isEmpty()) {
+          if (unk3300HODJKKDBJDJ_.isEmpty()) {
+            unk3300HODJKKDBJDJ_ = other.unk3300HODJKKDBJDJ_;
+            bitField0_ = (bitField0_ & ~0x00000002);
+          } else {
+            ensureUnk3300HODJKKDBJDJIsMutable();
+            unk3300HODJKKDBJDJ_.addAll(other.unk3300HODJKKDBJDJ_);
+          }
+          onChanged();
+        }
+        if (other.getUnk3300NJHMNLIAGIK() != 0) {
+          setUnk3300NJHMNLIAGIK(other.getUnk3300NJHMNLIAGIK());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -807,229 +807,119 @@ public final class IrodoriPoetryThemeDataOuterClass {
       }
       private int bitField0_;
 
-      private com.google.protobuf.Internal.IntList scannedIndexList_ = emptyIntList();
-      private void ensureScannedIndexListIsMutable() {
+      private int unk3300HFMKPNOBPDK_ ;
+      /**
+       * <code>uint32 Unk3300_HFMKPNOBPDK = 14;</code>
+       * @return The unk3300HFMKPNOBPDK.
+       */
+      @java.lang.Override
+      public int getUnk3300HFMKPNOBPDK() {
+        return unk3300HFMKPNOBPDK_;
+      }
+      /**
+       * <code>uint32 Unk3300_HFMKPNOBPDK = 14;</code>
+       * @param value The unk3300HFMKPNOBPDK to set.
+       * @return This builder for chaining.
+       */
+      public Builder setUnk3300HFMKPNOBPDK(int value) {
+        
+        unk3300HFMKPNOBPDK_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 Unk3300_HFMKPNOBPDK = 14;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearUnk3300HFMKPNOBPDK() {
+        
+        unk3300HFMKPNOBPDK_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private com.google.protobuf.Internal.IntList unk3300CNNMEHOGGLL_ = emptyIntList();
+      private void ensureUnk3300CNNMEHOGGLLIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          scannedIndexList_ = mutableCopy(scannedIndexList_);
+          unk3300CNNMEHOGGLL_ = mutableCopy(unk3300CNNMEHOGGLL_);
           bitField0_ |= 0x00000001;
          }
       }
       /**
-       * <code>repeated uint32 scanned_index_list = 1;</code>
-       * @return A list containing the scannedIndexList.
+       * <code>repeated uint32 Unk3300_CNNMEHOGGLL = 10;</code>
+       * @return A list containing the unk3300CNNMEHOGGLL.
        */
       public java.util.List<java.lang.Integer>
-          getScannedIndexListList() {
+          getUnk3300CNNMEHOGGLLList() {
         return ((bitField0_ & 0x00000001) != 0) ?
-                 java.util.Collections.unmodifiableList(scannedIndexList_) : scannedIndexList_;
+                 java.util.Collections.unmodifiableList(unk3300CNNMEHOGGLL_) : unk3300CNNMEHOGGLL_;
       }
       /**
-       * <code>repeated uint32 scanned_index_list = 1;</code>
-       * @return The count of scannedIndexList.
+       * <code>repeated uint32 Unk3300_CNNMEHOGGLL = 10;</code>
+       * @return The count of unk3300CNNMEHOGGLL.
        */
-      public int getScannedIndexListCount() {
-        return scannedIndexList_.size();
+      public int getUnk3300CNNMEHOGGLLCount() {
+        return unk3300CNNMEHOGGLL_.size();
       }
       /**
-       * <code>repeated uint32 scanned_index_list = 1;</code>
+       * <code>repeated uint32 Unk3300_CNNMEHOGGLL = 10;</code>
        * @param index The index of the element to return.
-       * @return The scannedIndexList at the given index.
+       * @return The unk3300CNNMEHOGGLL at the given index.
        */
-      public int getScannedIndexList(int index) {
-        return scannedIndexList_.getInt(index);
+      public int getUnk3300CNNMEHOGGLL(int index) {
+        return unk3300CNNMEHOGGLL_.getInt(index);
       }
       /**
-       * <code>repeated uint32 scanned_index_list = 1;</code>
+       * <code>repeated uint32 Unk3300_CNNMEHOGGLL = 10;</code>
        * @param index The index to set the value at.
-       * @param value The scannedIndexList to set.
+       * @param value The unk3300CNNMEHOGGLL to set.
        * @return This builder for chaining.
        */
-      public Builder setScannedIndexList(
+      public Builder setUnk3300CNNMEHOGGLL(
           int index, int value) {
-        ensureScannedIndexListIsMutable();
-        scannedIndexList_.setInt(index, value);
+        ensureUnk3300CNNMEHOGGLLIsMutable();
+        unk3300CNNMEHOGGLL_.setInt(index, value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 scanned_index_list = 1;</code>
-       * @param value The scannedIndexList to add.
+       * <code>repeated uint32 Unk3300_CNNMEHOGGLL = 10;</code>
+       * @param value The unk3300CNNMEHOGGLL to add.
        * @return This builder for chaining.
        */
-      public Builder addScannedIndexList(int value) {
-        ensureScannedIndexListIsMutable();
-        scannedIndexList_.addInt(value);
+      public Builder addUnk3300CNNMEHOGGLL(int value) {
+        ensureUnk3300CNNMEHOGGLLIsMutable();
+        unk3300CNNMEHOGGLL_.addInt(value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 scanned_index_list = 1;</code>
-       * @param values The scannedIndexList to add.
+       * <code>repeated uint32 Unk3300_CNNMEHOGGLL = 10;</code>
+       * @param values The unk3300CNNMEHOGGLL to add.
        * @return This builder for chaining.
        */
-      public Builder addAllScannedIndexList(
+      public Builder addAllUnk3300CNNMEHOGGLL(
           java.lang.Iterable<? extends java.lang.Integer> values) {
-        ensureScannedIndexListIsMutable();
+        ensureUnk3300CNNMEHOGGLLIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, scannedIndexList_);
+            values, unk3300CNNMEHOGGLL_);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 scanned_index_list = 1;</code>
+       * <code>repeated uint32 Unk3300_CNNMEHOGGLL = 10;</code>
        * @return This builder for chaining.
        */
-      public Builder clearScannedIndexList() {
-        scannedIndexList_ = emptyIntList();
+      public Builder clearUnk3300CNNMEHOGGLL() {
+        unk3300CNNMEHOGGLL_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
-        onChanged();
-        return this;
-      }
-
-      private com.google.protobuf.Internal.IntList lineIdList_ = emptyIntList();
-      private void ensureLineIdListIsMutable() {
-        if (!((bitField0_ & 0x00000002) != 0)) {
-          lineIdList_ = mutableCopy(lineIdList_);
-          bitField0_ |= 0x00000002;
-         }
-      }
-      /**
-       * <code>repeated uint32 line_id_list = 4;</code>
-       * @return A list containing the lineIdList.
-       */
-      public java.util.List<java.lang.Integer>
-          getLineIdListList() {
-        return ((bitField0_ & 0x00000002) != 0) ?
-                 java.util.Collections.unmodifiableList(lineIdList_) : lineIdList_;
-      }
-      /**
-       * <code>repeated uint32 line_id_list = 4;</code>
-       * @return The count of lineIdList.
-       */
-      public int getLineIdListCount() {
-        return lineIdList_.size();
-      }
-      /**
-       * <code>repeated uint32 line_id_list = 4;</code>
-       * @param index The index of the element to return.
-       * @return The lineIdList at the given index.
-       */
-      public int getLineIdList(int index) {
-        return lineIdList_.getInt(index);
-      }
-      /**
-       * <code>repeated uint32 line_id_list = 4;</code>
-       * @param index The index to set the value at.
-       * @param value The lineIdList to set.
-       * @return This builder for chaining.
-       */
-      public Builder setLineIdList(
-          int index, int value) {
-        ensureLineIdListIsMutable();
-        lineIdList_.setInt(index, value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 line_id_list = 4;</code>
-       * @param value The lineIdList to add.
-       * @return This builder for chaining.
-       */
-      public Builder addLineIdList(int value) {
-        ensureLineIdListIsMutable();
-        lineIdList_.addInt(value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 line_id_list = 4;</code>
-       * @param values The lineIdList to add.
-       * @return This builder for chaining.
-       */
-      public Builder addAllLineIdList(
-          java.lang.Iterable<? extends java.lang.Integer> values) {
-        ensureLineIdListIsMutable();
-        com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, lineIdList_);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 line_id_list = 4;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearLineIdList() {
-        lineIdList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000002);
-        onChanged();
-        return this;
-      }
-
-      private int maxProgress_ ;
-      /**
-       * <code>uint32 max_progress = 2;</code>
-       * @return The maxProgress.
-       */
-      @java.lang.Override
-      public int getMaxProgress() {
-        return maxProgress_;
-      }
-      /**
-       * <code>uint32 max_progress = 2;</code>
-       * @param value The maxProgress to set.
-       * @return This builder for chaining.
-       */
-      public Builder setMaxProgress(int value) {
-        
-        maxProgress_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 max_progress = 2;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearMaxProgress() {
-        
-        maxProgress_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int themeId_ ;
-      /**
-       * <code>uint32 theme_id = 13;</code>
-       * @return The themeId.
-       */
-      @java.lang.Override
-      public int getThemeId() {
-        return themeId_;
-      }
-      /**
-       * <code>uint32 theme_id = 13;</code>
-       * @param value The themeId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setThemeId(int value) {
-        
-        themeId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 theme_id = 13;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearThemeId() {
-        
-        themeId_ = 0;
         onChanged();
         return this;
       }
 
       private int progress_ ;
       /**
-       * <code>uint32 progress = 5;</code>
+       * <code>uint32 progress = 11;</code>
        * @return The progress.
        */
       @java.lang.Override
@@ -1037,7 +927,7 @@ public final class IrodoriPoetryThemeDataOuterClass {
         return progress_;
       }
       /**
-       * <code>uint32 progress = 5;</code>
+       * <code>uint32 progress = 11;</code>
        * @param value The progress to set.
        * @return This builder for chaining.
        */
@@ -1048,7 +938,7 @@ public final class IrodoriPoetryThemeDataOuterClass {
         return this;
       }
       /**
-       * <code>uint32 progress = 5;</code>
+       * <code>uint32 progress = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearProgress() {
@@ -1058,64 +948,174 @@ public final class IrodoriPoetryThemeDataOuterClass {
         return this;
       }
 
-      private int minProgress_ ;
+      private int themeId_ ;
       /**
-       * <code>uint32 min_progress = 12;</code>
-       * @return The minProgress.
+       * <code>uint32 theme_id = 12;</code>
+       * @return The themeId.
        */
       @java.lang.Override
-      public int getMinProgress() {
-        return minProgress_;
+      public int getThemeId() {
+        return themeId_;
       }
       /**
-       * <code>uint32 min_progress = 12;</code>
-       * @param value The minProgress to set.
+       * <code>uint32 theme_id = 12;</code>
+       * @param value The themeId to set.
        * @return This builder for chaining.
        */
-      public Builder setMinProgress(int value) {
+      public Builder setThemeId(int value) {
         
-        minProgress_ = value;
+        themeId_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 min_progress = 12;</code>
+       * <code>uint32 theme_id = 12;</code>
        * @return This builder for chaining.
        */
-      public Builder clearMinProgress() {
+      public Builder clearThemeId() {
         
-        minProgress_ = 0;
+        themeId_ = 0;
         onChanged();
         return this;
       }
 
-      private int selectedLineId_ ;
+      private int maxProgress_ ;
       /**
-       * <code>uint32 selected_line_id = 9;</code>
-       * @return The selectedLineId.
+       * <code>uint32 max_progress = 7;</code>
+       * @return The maxProgress.
        */
       @java.lang.Override
-      public int getSelectedLineId() {
-        return selectedLineId_;
+      public int getMaxProgress() {
+        return maxProgress_;
       }
       /**
-       * <code>uint32 selected_line_id = 9;</code>
-       * @param value The selectedLineId to set.
+       * <code>uint32 max_progress = 7;</code>
+       * @param value The maxProgress to set.
        * @return This builder for chaining.
        */
-      public Builder setSelectedLineId(int value) {
+      public Builder setMaxProgress(int value) {
         
-        selectedLineId_ = value;
+        maxProgress_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 selected_line_id = 9;</code>
+       * <code>uint32 max_progress = 7;</code>
        * @return This builder for chaining.
        */
-      public Builder clearSelectedLineId() {
+      public Builder clearMaxProgress() {
         
-        selectedLineId_ = 0;
+        maxProgress_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private com.google.protobuf.Internal.IntList unk3300HODJKKDBJDJ_ = emptyIntList();
+      private void ensureUnk3300HODJKKDBJDJIsMutable() {
+        if (!((bitField0_ & 0x00000002) != 0)) {
+          unk3300HODJKKDBJDJ_ = mutableCopy(unk3300HODJKKDBJDJ_);
+          bitField0_ |= 0x00000002;
+         }
+      }
+      /**
+       * <code>repeated uint32 Unk3300_HODJKKDBJDJ = 15;</code>
+       * @return A list containing the unk3300HODJKKDBJDJ.
+       */
+      public java.util.List<java.lang.Integer>
+          getUnk3300HODJKKDBJDJList() {
+        return ((bitField0_ & 0x00000002) != 0) ?
+                 java.util.Collections.unmodifiableList(unk3300HODJKKDBJDJ_) : unk3300HODJKKDBJDJ_;
+      }
+      /**
+       * <code>repeated uint32 Unk3300_HODJKKDBJDJ = 15;</code>
+       * @return The count of unk3300HODJKKDBJDJ.
+       */
+      public int getUnk3300HODJKKDBJDJCount() {
+        return unk3300HODJKKDBJDJ_.size();
+      }
+      /**
+       * <code>repeated uint32 Unk3300_HODJKKDBJDJ = 15;</code>
+       * @param index The index of the element to return.
+       * @return The unk3300HODJKKDBJDJ at the given index.
+       */
+      public int getUnk3300HODJKKDBJDJ(int index) {
+        return unk3300HODJKKDBJDJ_.getInt(index);
+      }
+      /**
+       * <code>repeated uint32 Unk3300_HODJKKDBJDJ = 15;</code>
+       * @param index The index to set the value at.
+       * @param value The unk3300HODJKKDBJDJ to set.
+       * @return This builder for chaining.
+       */
+      public Builder setUnk3300HODJKKDBJDJ(
+          int index, int value) {
+        ensureUnk3300HODJKKDBJDJIsMutable();
+        unk3300HODJKKDBJDJ_.setInt(index, value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint32 Unk3300_HODJKKDBJDJ = 15;</code>
+       * @param value The unk3300HODJKKDBJDJ to add.
+       * @return This builder for chaining.
+       */
+      public Builder addUnk3300HODJKKDBJDJ(int value) {
+        ensureUnk3300HODJKKDBJDJIsMutable();
+        unk3300HODJKKDBJDJ_.addInt(value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint32 Unk3300_HODJKKDBJDJ = 15;</code>
+       * @param values The unk3300HODJKKDBJDJ to add.
+       * @return This builder for chaining.
+       */
+      public Builder addAllUnk3300HODJKKDBJDJ(
+          java.lang.Iterable<? extends java.lang.Integer> values) {
+        ensureUnk3300HODJKKDBJDJIsMutable();
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, unk3300HODJKKDBJDJ_);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint32 Unk3300_HODJKKDBJDJ = 15;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearUnk3300HODJKKDBJDJ() {
+        unk3300HODJKKDBJDJ_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000002);
+        onChanged();
+        return this;
+      }
+
+      private int unk3300NJHMNLIAGIK_ ;
+      /**
+       * <code>uint32 Unk3300_NJHMNLIAGIK = 6;</code>
+       * @return The unk3300NJHMNLIAGIK.
+       */
+      @java.lang.Override
+      public int getUnk3300NJHMNLIAGIK() {
+        return unk3300NJHMNLIAGIK_;
+      }
+      /**
+       * <code>uint32 Unk3300_NJHMNLIAGIK = 6;</code>
+       * @param value The unk3300NJHMNLIAGIK to set.
+       * @return This builder for chaining.
+       */
+      public Builder setUnk3300NJHMNLIAGIK(int value) {
+        
+        unk3300NJHMNLIAGIK_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 Unk3300_NJHMNLIAGIK = 6;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearUnk3300NJHMNLIAGIK() {
+        
+        unk3300NJHMNLIAGIK_ = 0;
         onChanged();
         return this;
       }
@@ -1186,13 +1186,13 @@ public final class IrodoriPoetryThemeDataOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\034IrodoriPoetryThemeData.proto\"\264\001\n\026Irodo" +
-      "riPoetryThemeData\022\032\n\022scanned_index_list\030" +
-      "\001 \003(\r\022\024\n\014line_id_list\030\004 \003(\r\022\024\n\014max_progr" +
-      "ess\030\002 \001(\r\022\020\n\010theme_id\030\r \001(\r\022\020\n\010progress\030" +
-      "\005 \001(\r\022\024\n\014min_progress\030\014 \001(\r\022\030\n\020selected_" +
-      "line_id\030\t \001(\rB\033\n\031emu.grasscutter.net.pro" +
-      "tob\006proto3"
+      "\n\034IrodoriPoetryThemeData.proto\"\306\001\n\026Irodo" +
+      "riPoetryThemeData\022\033\n\023Unk3300_HFMKPNOBPDK" +
+      "\030\016 \001(\r\022\033\n\023Unk3300_CNNMEHOGGLL\030\n \003(\r\022\020\n\010p" +
+      "rogress\030\013 \001(\r\022\020\n\010theme_id\030\014 \001(\r\022\024\n\014max_p" +
+      "rogress\030\007 \001(\r\022\033\n\023Unk3300_HODJKKDBJDJ\030\017 \003" +
+      "(\r\022\033\n\023Unk3300_NJHMNLIAGIK\030\006 \001(\rB\033\n\031emu.g" +
+      "rasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -1203,7 +1203,7 @@ public final class IrodoriPoetryThemeDataOuterClass {
     internal_static_IrodoriPoetryThemeData_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_IrodoriPoetryThemeData_descriptor,
-        new java.lang.String[] { "ScannedIndexList", "LineIdList", "MaxProgress", "ThemeId", "Progress", "MinProgress", "SelectedLineId", });
+        new java.lang.String[] { "Unk3300HFMKPNOBPDK", "Unk3300CNNMEHOGGLL", "Progress", "ThemeId", "MaxProgress", "Unk3300HODJKKDBJDJ", "Unk3300NJHMNLIAGIK", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

@@ -19,55 +19,34 @@ public final class GetCityHuntingOfferRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 9;</code>
-     * @return The retcode.
-     */
-    int getRetcode();
-
-    /**
-     * <code>repeated .HuntingOfferData hunting_offer_list = 13;</code>
+     * <code>repeated .HuntingOfferData hunting_offer_list = 2;</code>
      */
     java.util.List<emu.grasscutter.net.proto.HuntingOfferDataOuterClass.HuntingOfferData> 
         getHuntingOfferListList();
     /**
-     * <code>repeated .HuntingOfferData hunting_offer_list = 13;</code>
+     * <code>repeated .HuntingOfferData hunting_offer_list = 2;</code>
      */
     emu.grasscutter.net.proto.HuntingOfferDataOuterClass.HuntingOfferData getHuntingOfferList(int index);
     /**
-     * <code>repeated .HuntingOfferData hunting_offer_list = 13;</code>
+     * <code>repeated .HuntingOfferData hunting_offer_list = 2;</code>
      */
     int getHuntingOfferListCount();
     /**
-     * <code>repeated .HuntingOfferData hunting_offer_list = 13;</code>
+     * <code>repeated .HuntingOfferData hunting_offer_list = 2;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.HuntingOfferDataOuterClass.HuntingOfferDataOrBuilder> 
         getHuntingOfferListOrBuilderList();
     /**
-     * <code>repeated .HuntingOfferData hunting_offer_list = 13;</code>
+     * <code>repeated .HuntingOfferData hunting_offer_list = 2;</code>
      */
     emu.grasscutter.net.proto.HuntingOfferDataOuterClass.HuntingOfferDataOrBuilder getHuntingOfferListOrBuilder(
         int index);
 
     /**
-     * <code>uint32 city_id = 2;</code>
-     * @return The cityId.
+     * <code>int32 retcode = 9;</code>
+     * @return The retcode.
      */
-    int getCityId();
-
-    /**
-     * <code>.HuntingPair ongoing_hunting_pair = 8;</code>
-     * @return Whether the ongoingHuntingPair field is set.
-     */
-    boolean hasOngoingHuntingPair();
-    /**
-     * <code>.HuntingPair ongoing_hunting_pair = 8;</code>
-     * @return The ongoingHuntingPair.
-     */
-    emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPair getOngoingHuntingPair();
-    /**
-     * <code>.HuntingPair ongoing_hunting_pair = 8;</code>
-     */
-    emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPairOrBuilder getOngoingHuntingPairOrBuilder();
+    int getRetcode();
 
     /**
      * <code>uint32 cur_week_finished_count = 1;</code>
@@ -76,16 +55,41 @@ public final class GetCityHuntingOfferRspOuterClass {
     int getCurWeekFinishedCount();
 
     /**
-     * <code>uint32 next_refresh_time = 4;</code>
+     * <code>.HuntingPair ongoing_hunting_pair = 15;</code>
+     * @return Whether the ongoingHuntingPair field is set.
+     */
+    boolean hasOngoingHuntingPair();
+    /**
+     * <code>.HuntingPair ongoing_hunting_pair = 15;</code>
+     * @return The ongoingHuntingPair.
+     */
+    emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPair getOngoingHuntingPair();
+    /**
+     * <code>.HuntingPair ongoing_hunting_pair = 15;</code>
+     */
+    emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPairOrBuilder getOngoingHuntingPairOrBuilder();
+
+    /**
+     * <code>uint32 next_refresh_time = 5;</code>
      * @return The nextRefreshTime.
      */
     int getNextRefreshTime();
+
+    /**
+     * <code>uint32 city_id = 12;</code>
+     * @return The cityId.
+     */
+    int getCityId();
   }
   /**
    * <pre>
-   * CmdId: 4307
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 4335;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code GetCityHuntingOfferRsp}
@@ -139,17 +143,31 @@ public final class GetCityHuntingOfferRspOuterClass {
               curWeekFinishedCount_ = input.readUInt32();
               break;
             }
-            case 16: {
-
-              cityId_ = input.readUInt32();
+            case 18: {
+              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+                huntingOfferList_ = new java.util.ArrayList<emu.grasscutter.net.proto.HuntingOfferDataOuterClass.HuntingOfferData>();
+                mutable_bitField0_ |= 0x00000001;
+              }
+              huntingOfferList_.add(
+                  input.readMessage(emu.grasscutter.net.proto.HuntingOfferDataOuterClass.HuntingOfferData.parser(), extensionRegistry));
               break;
             }
-            case 32: {
+            case 40: {
 
               nextRefreshTime_ = input.readUInt32();
               break;
             }
-            case 66: {
+            case 72: {
+
+              retcode_ = input.readInt32();
+              break;
+            }
+            case 96: {
+
+              cityId_ = input.readUInt32();
+              break;
+            }
+            case 122: {
               emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPair.Builder subBuilder = null;
               if (ongoingHuntingPair_ != null) {
                 subBuilder = ongoingHuntingPair_.toBuilder();
@@ -160,20 +178,6 @@ public final class GetCityHuntingOfferRspOuterClass {
                 ongoingHuntingPair_ = subBuilder.buildPartial();
               }
 
-              break;
-            }
-            case 72: {
-
-              retcode_ = input.readInt32();
-              break;
-            }
-            case 106: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                huntingOfferList_ = new java.util.ArrayList<emu.grasscutter.net.proto.HuntingOfferDataOuterClass.HuntingOfferData>();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              huntingOfferList_.add(
-                  input.readMessage(emu.grasscutter.net.proto.HuntingOfferDataOuterClass.HuntingOfferData.parser(), extensionRegistry));
               break;
             }
             default: {
@@ -211,6 +215,46 @@ public final class GetCityHuntingOfferRspOuterClass {
               emu.grasscutter.net.proto.GetCityHuntingOfferRspOuterClass.GetCityHuntingOfferRsp.class, emu.grasscutter.net.proto.GetCityHuntingOfferRspOuterClass.GetCityHuntingOfferRsp.Builder.class);
     }
 
+    public static final int HUNTING_OFFER_LIST_FIELD_NUMBER = 2;
+    private java.util.List<emu.grasscutter.net.proto.HuntingOfferDataOuterClass.HuntingOfferData> huntingOfferList_;
+    /**
+     * <code>repeated .HuntingOfferData hunting_offer_list = 2;</code>
+     */
+    @java.lang.Override
+    public java.util.List<emu.grasscutter.net.proto.HuntingOfferDataOuterClass.HuntingOfferData> getHuntingOfferListList() {
+      return huntingOfferList_;
+    }
+    /**
+     * <code>repeated .HuntingOfferData hunting_offer_list = 2;</code>
+     */
+    @java.lang.Override
+    public java.util.List<? extends emu.grasscutter.net.proto.HuntingOfferDataOuterClass.HuntingOfferDataOrBuilder> 
+        getHuntingOfferListOrBuilderList() {
+      return huntingOfferList_;
+    }
+    /**
+     * <code>repeated .HuntingOfferData hunting_offer_list = 2;</code>
+     */
+    @java.lang.Override
+    public int getHuntingOfferListCount() {
+      return huntingOfferList_.size();
+    }
+    /**
+     * <code>repeated .HuntingOfferData hunting_offer_list = 2;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.HuntingOfferDataOuterClass.HuntingOfferData getHuntingOfferList(int index) {
+      return huntingOfferList_.get(index);
+    }
+    /**
+     * <code>repeated .HuntingOfferData hunting_offer_list = 2;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.HuntingOfferDataOuterClass.HuntingOfferDataOrBuilder getHuntingOfferListOrBuilder(
+        int index) {
+      return huntingOfferList_.get(index);
+    }
+
     public static final int RETCODE_FIELD_NUMBER = 9;
     private int retcode_;
     /**
@@ -220,83 +264,6 @@ public final class GetCityHuntingOfferRspOuterClass {
     @java.lang.Override
     public int getRetcode() {
       return retcode_;
-    }
-
-    public static final int HUNTING_OFFER_LIST_FIELD_NUMBER = 13;
-    private java.util.List<emu.grasscutter.net.proto.HuntingOfferDataOuterClass.HuntingOfferData> huntingOfferList_;
-    /**
-     * <code>repeated .HuntingOfferData hunting_offer_list = 13;</code>
-     */
-    @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.HuntingOfferDataOuterClass.HuntingOfferData> getHuntingOfferListList() {
-      return huntingOfferList_;
-    }
-    /**
-     * <code>repeated .HuntingOfferData hunting_offer_list = 13;</code>
-     */
-    @java.lang.Override
-    public java.util.List<? extends emu.grasscutter.net.proto.HuntingOfferDataOuterClass.HuntingOfferDataOrBuilder> 
-        getHuntingOfferListOrBuilderList() {
-      return huntingOfferList_;
-    }
-    /**
-     * <code>repeated .HuntingOfferData hunting_offer_list = 13;</code>
-     */
-    @java.lang.Override
-    public int getHuntingOfferListCount() {
-      return huntingOfferList_.size();
-    }
-    /**
-     * <code>repeated .HuntingOfferData hunting_offer_list = 13;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.HuntingOfferDataOuterClass.HuntingOfferData getHuntingOfferList(int index) {
-      return huntingOfferList_.get(index);
-    }
-    /**
-     * <code>repeated .HuntingOfferData hunting_offer_list = 13;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.HuntingOfferDataOuterClass.HuntingOfferDataOrBuilder getHuntingOfferListOrBuilder(
-        int index) {
-      return huntingOfferList_.get(index);
-    }
-
-    public static final int CITY_ID_FIELD_NUMBER = 2;
-    private int cityId_;
-    /**
-     * <code>uint32 city_id = 2;</code>
-     * @return The cityId.
-     */
-    @java.lang.Override
-    public int getCityId() {
-      return cityId_;
-    }
-
-    public static final int ONGOING_HUNTING_PAIR_FIELD_NUMBER = 8;
-    private emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPair ongoingHuntingPair_;
-    /**
-     * <code>.HuntingPair ongoing_hunting_pair = 8;</code>
-     * @return Whether the ongoingHuntingPair field is set.
-     */
-    @java.lang.Override
-    public boolean hasOngoingHuntingPair() {
-      return ongoingHuntingPair_ != null;
-    }
-    /**
-     * <code>.HuntingPair ongoing_hunting_pair = 8;</code>
-     * @return The ongoingHuntingPair.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPair getOngoingHuntingPair() {
-      return ongoingHuntingPair_ == null ? emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPair.getDefaultInstance() : ongoingHuntingPair_;
-    }
-    /**
-     * <code>.HuntingPair ongoing_hunting_pair = 8;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPairOrBuilder getOngoingHuntingPairOrBuilder() {
-      return getOngoingHuntingPair();
     }
 
     public static final int CUR_WEEK_FINISHED_COUNT_FIELD_NUMBER = 1;
@@ -310,15 +277,52 @@ public final class GetCityHuntingOfferRspOuterClass {
       return curWeekFinishedCount_;
     }
 
-    public static final int NEXT_REFRESH_TIME_FIELD_NUMBER = 4;
+    public static final int ONGOING_HUNTING_PAIR_FIELD_NUMBER = 15;
+    private emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPair ongoingHuntingPair_;
+    /**
+     * <code>.HuntingPair ongoing_hunting_pair = 15;</code>
+     * @return Whether the ongoingHuntingPair field is set.
+     */
+    @java.lang.Override
+    public boolean hasOngoingHuntingPair() {
+      return ongoingHuntingPair_ != null;
+    }
+    /**
+     * <code>.HuntingPair ongoing_hunting_pair = 15;</code>
+     * @return The ongoingHuntingPair.
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPair getOngoingHuntingPair() {
+      return ongoingHuntingPair_ == null ? emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPair.getDefaultInstance() : ongoingHuntingPair_;
+    }
+    /**
+     * <code>.HuntingPair ongoing_hunting_pair = 15;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPairOrBuilder getOngoingHuntingPairOrBuilder() {
+      return getOngoingHuntingPair();
+    }
+
+    public static final int NEXT_REFRESH_TIME_FIELD_NUMBER = 5;
     private int nextRefreshTime_;
     /**
-     * <code>uint32 next_refresh_time = 4;</code>
+     * <code>uint32 next_refresh_time = 5;</code>
      * @return The nextRefreshTime.
      */
     @java.lang.Override
     public int getNextRefreshTime() {
       return nextRefreshTime_;
+    }
+
+    public static final int CITY_ID_FIELD_NUMBER = 12;
+    private int cityId_;
+    /**
+     * <code>uint32 city_id = 12;</code>
+     * @return The cityId.
+     */
+    @java.lang.Override
+    public int getCityId() {
+      return cityId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -338,20 +342,20 @@ public final class GetCityHuntingOfferRspOuterClass {
       if (curWeekFinishedCount_ != 0) {
         output.writeUInt32(1, curWeekFinishedCount_);
       }
-      if (cityId_ != 0) {
-        output.writeUInt32(2, cityId_);
+      for (int i = 0; i < huntingOfferList_.size(); i++) {
+        output.writeMessage(2, huntingOfferList_.get(i));
       }
       if (nextRefreshTime_ != 0) {
-        output.writeUInt32(4, nextRefreshTime_);
-      }
-      if (ongoingHuntingPair_ != null) {
-        output.writeMessage(8, getOngoingHuntingPair());
+        output.writeUInt32(5, nextRefreshTime_);
       }
       if (retcode_ != 0) {
         output.writeInt32(9, retcode_);
       }
-      for (int i = 0; i < huntingOfferList_.size(); i++) {
-        output.writeMessage(13, huntingOfferList_.get(i));
+      if (cityId_ != 0) {
+        output.writeUInt32(12, cityId_);
+      }
+      if (ongoingHuntingPair_ != null) {
+        output.writeMessage(15, getOngoingHuntingPair());
       }
       unknownFields.writeTo(output);
     }
@@ -366,25 +370,25 @@ public final class GetCityHuntingOfferRspOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(1, curWeekFinishedCount_);
       }
-      if (cityId_ != 0) {
+      for (int i = 0; i < huntingOfferList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, cityId_);
+          .computeMessageSize(2, huntingOfferList_.get(i));
       }
       if (nextRefreshTime_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, nextRefreshTime_);
-      }
-      if (ongoingHuntingPair_ != null) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(8, getOngoingHuntingPair());
+          .computeUInt32Size(5, nextRefreshTime_);
       }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeInt32Size(9, retcode_);
       }
-      for (int i = 0; i < huntingOfferList_.size(); i++) {
+      if (cityId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(13, huntingOfferList_.get(i));
+          .computeUInt32Size(12, cityId_);
+      }
+      if (ongoingHuntingPair_ != null) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(15, getOngoingHuntingPair());
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -401,21 +405,21 @@ public final class GetCityHuntingOfferRspOuterClass {
       }
       emu.grasscutter.net.proto.GetCityHuntingOfferRspOuterClass.GetCityHuntingOfferRsp other = (emu.grasscutter.net.proto.GetCityHuntingOfferRspOuterClass.GetCityHuntingOfferRsp) obj;
 
-      if (getRetcode()
-          != other.getRetcode()) return false;
       if (!getHuntingOfferListList()
           .equals(other.getHuntingOfferListList())) return false;
-      if (getCityId()
-          != other.getCityId()) return false;
+      if (getRetcode()
+          != other.getRetcode()) return false;
+      if (getCurWeekFinishedCount()
+          != other.getCurWeekFinishedCount()) return false;
       if (hasOngoingHuntingPair() != other.hasOngoingHuntingPair()) return false;
       if (hasOngoingHuntingPair()) {
         if (!getOngoingHuntingPair()
             .equals(other.getOngoingHuntingPair())) return false;
       }
-      if (getCurWeekFinishedCount()
-          != other.getCurWeekFinishedCount()) return false;
       if (getNextRefreshTime()
           != other.getNextRefreshTime()) return false;
+      if (getCityId()
+          != other.getCityId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -427,22 +431,22 @@ public final class GetCityHuntingOfferRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
-      hash = (53 * hash) + getRetcode();
       if (getHuntingOfferListCount() > 0) {
         hash = (37 * hash) + HUNTING_OFFER_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getHuntingOfferListList().hashCode();
       }
-      hash = (37 * hash) + CITY_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getCityId();
+      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
+      hash = (53 * hash) + getRetcode();
+      hash = (37 * hash) + CUR_WEEK_FINISHED_COUNT_FIELD_NUMBER;
+      hash = (53 * hash) + getCurWeekFinishedCount();
       if (hasOngoingHuntingPair()) {
         hash = (37 * hash) + ONGOING_HUNTING_PAIR_FIELD_NUMBER;
         hash = (53 * hash) + getOngoingHuntingPair().hashCode();
       }
-      hash = (37 * hash) + CUR_WEEK_FINISHED_COUNT_FIELD_NUMBER;
-      hash = (53 * hash) + getCurWeekFinishedCount();
       hash = (37 * hash) + NEXT_REFRESH_TIME_FIELD_NUMBER;
       hash = (53 * hash) + getNextRefreshTime();
+      hash = (37 * hash) + CITY_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getCityId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -540,9 +544,13 @@ public final class GetCityHuntingOfferRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 4307
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 4335;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code GetCityHuntingOfferRsp}
@@ -583,15 +591,15 @@ public final class GetCityHuntingOfferRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        retcode_ = 0;
-
         if (huntingOfferListBuilder_ == null) {
           huntingOfferList_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000001);
         } else {
           huntingOfferListBuilder_.clear();
         }
-        cityId_ = 0;
+        retcode_ = 0;
+
+        curWeekFinishedCount_ = 0;
 
         if (ongoingHuntingPairBuilder_ == null) {
           ongoingHuntingPair_ = null;
@@ -599,9 +607,9 @@ public final class GetCityHuntingOfferRspOuterClass {
           ongoingHuntingPair_ = null;
           ongoingHuntingPairBuilder_ = null;
         }
-        curWeekFinishedCount_ = 0;
-
         nextRefreshTime_ = 0;
+
+        cityId_ = 0;
 
         return this;
       }
@@ -630,7 +638,6 @@ public final class GetCityHuntingOfferRspOuterClass {
       public emu.grasscutter.net.proto.GetCityHuntingOfferRspOuterClass.GetCityHuntingOfferRsp buildPartial() {
         emu.grasscutter.net.proto.GetCityHuntingOfferRspOuterClass.GetCityHuntingOfferRsp result = new emu.grasscutter.net.proto.GetCityHuntingOfferRspOuterClass.GetCityHuntingOfferRsp(this);
         int from_bitField0_ = bitField0_;
-        result.retcode_ = retcode_;
         if (huntingOfferListBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0)) {
             huntingOfferList_ = java.util.Collections.unmodifiableList(huntingOfferList_);
@@ -640,14 +647,15 @@ public final class GetCityHuntingOfferRspOuterClass {
         } else {
           result.huntingOfferList_ = huntingOfferListBuilder_.build();
         }
-        result.cityId_ = cityId_;
+        result.retcode_ = retcode_;
+        result.curWeekFinishedCount_ = curWeekFinishedCount_;
         if (ongoingHuntingPairBuilder_ == null) {
           result.ongoingHuntingPair_ = ongoingHuntingPair_;
         } else {
           result.ongoingHuntingPair_ = ongoingHuntingPairBuilder_.build();
         }
-        result.curWeekFinishedCount_ = curWeekFinishedCount_;
         result.nextRefreshTime_ = nextRefreshTime_;
+        result.cityId_ = cityId_;
         onBuilt();
         return result;
       }
@@ -696,9 +704,6 @@ public final class GetCityHuntingOfferRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.GetCityHuntingOfferRspOuterClass.GetCityHuntingOfferRsp other) {
         if (other == emu.grasscutter.net.proto.GetCityHuntingOfferRspOuterClass.GetCityHuntingOfferRsp.getDefaultInstance()) return this;
-        if (other.getRetcode() != 0) {
-          setRetcode(other.getRetcode());
-        }
         if (huntingOfferListBuilder_ == null) {
           if (!other.huntingOfferList_.isEmpty()) {
             if (huntingOfferList_.isEmpty()) {
@@ -725,17 +730,20 @@ public final class GetCityHuntingOfferRspOuterClass {
             }
           }
         }
-        if (other.getCityId() != 0) {
-          setCityId(other.getCityId());
-        }
-        if (other.hasOngoingHuntingPair()) {
-          mergeOngoingHuntingPair(other.getOngoingHuntingPair());
+        if (other.getRetcode() != 0) {
+          setRetcode(other.getRetcode());
         }
         if (other.getCurWeekFinishedCount() != 0) {
           setCurWeekFinishedCount(other.getCurWeekFinishedCount());
         }
+        if (other.hasOngoingHuntingPair()) {
+          mergeOngoingHuntingPair(other.getOngoingHuntingPair());
+        }
         if (other.getNextRefreshTime() != 0) {
           setNextRefreshTime(other.getNextRefreshTime());
+        }
+        if (other.getCityId() != 0) {
+          setCityId(other.getCityId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -767,6 +775,246 @@ public final class GetCityHuntingOfferRspOuterClass {
       }
       private int bitField0_;
 
+      private java.util.List<emu.grasscutter.net.proto.HuntingOfferDataOuterClass.HuntingOfferData> huntingOfferList_ =
+        java.util.Collections.emptyList();
+      private void ensureHuntingOfferListIsMutable() {
+        if (!((bitField0_ & 0x00000001) != 0)) {
+          huntingOfferList_ = new java.util.ArrayList<emu.grasscutter.net.proto.HuntingOfferDataOuterClass.HuntingOfferData>(huntingOfferList_);
+          bitField0_ |= 0x00000001;
+         }
+      }
+
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          emu.grasscutter.net.proto.HuntingOfferDataOuterClass.HuntingOfferData, emu.grasscutter.net.proto.HuntingOfferDataOuterClass.HuntingOfferData.Builder, emu.grasscutter.net.proto.HuntingOfferDataOuterClass.HuntingOfferDataOrBuilder> huntingOfferListBuilder_;
+
+      /**
+       * <code>repeated .HuntingOfferData hunting_offer_list = 2;</code>
+       */
+      public java.util.List<emu.grasscutter.net.proto.HuntingOfferDataOuterClass.HuntingOfferData> getHuntingOfferListList() {
+        if (huntingOfferListBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(huntingOfferList_);
+        } else {
+          return huntingOfferListBuilder_.getMessageList();
+        }
+      }
+      /**
+       * <code>repeated .HuntingOfferData hunting_offer_list = 2;</code>
+       */
+      public int getHuntingOfferListCount() {
+        if (huntingOfferListBuilder_ == null) {
+          return huntingOfferList_.size();
+        } else {
+          return huntingOfferListBuilder_.getCount();
+        }
+      }
+      /**
+       * <code>repeated .HuntingOfferData hunting_offer_list = 2;</code>
+       */
+      public emu.grasscutter.net.proto.HuntingOfferDataOuterClass.HuntingOfferData getHuntingOfferList(int index) {
+        if (huntingOfferListBuilder_ == null) {
+          return huntingOfferList_.get(index);
+        } else {
+          return huntingOfferListBuilder_.getMessage(index);
+        }
+      }
+      /**
+       * <code>repeated .HuntingOfferData hunting_offer_list = 2;</code>
+       */
+      public Builder setHuntingOfferList(
+          int index, emu.grasscutter.net.proto.HuntingOfferDataOuterClass.HuntingOfferData value) {
+        if (huntingOfferListBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureHuntingOfferListIsMutable();
+          huntingOfferList_.set(index, value);
+          onChanged();
+        } else {
+          huntingOfferListBuilder_.setMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .HuntingOfferData hunting_offer_list = 2;</code>
+       */
+      public Builder setHuntingOfferList(
+          int index, emu.grasscutter.net.proto.HuntingOfferDataOuterClass.HuntingOfferData.Builder builderForValue) {
+        if (huntingOfferListBuilder_ == null) {
+          ensureHuntingOfferListIsMutable();
+          huntingOfferList_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          huntingOfferListBuilder_.setMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .HuntingOfferData hunting_offer_list = 2;</code>
+       */
+      public Builder addHuntingOfferList(emu.grasscutter.net.proto.HuntingOfferDataOuterClass.HuntingOfferData value) {
+        if (huntingOfferListBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureHuntingOfferListIsMutable();
+          huntingOfferList_.add(value);
+          onChanged();
+        } else {
+          huntingOfferListBuilder_.addMessage(value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .HuntingOfferData hunting_offer_list = 2;</code>
+       */
+      public Builder addHuntingOfferList(
+          int index, emu.grasscutter.net.proto.HuntingOfferDataOuterClass.HuntingOfferData value) {
+        if (huntingOfferListBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureHuntingOfferListIsMutable();
+          huntingOfferList_.add(index, value);
+          onChanged();
+        } else {
+          huntingOfferListBuilder_.addMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .HuntingOfferData hunting_offer_list = 2;</code>
+       */
+      public Builder addHuntingOfferList(
+          emu.grasscutter.net.proto.HuntingOfferDataOuterClass.HuntingOfferData.Builder builderForValue) {
+        if (huntingOfferListBuilder_ == null) {
+          ensureHuntingOfferListIsMutable();
+          huntingOfferList_.add(builderForValue.build());
+          onChanged();
+        } else {
+          huntingOfferListBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .HuntingOfferData hunting_offer_list = 2;</code>
+       */
+      public Builder addHuntingOfferList(
+          int index, emu.grasscutter.net.proto.HuntingOfferDataOuterClass.HuntingOfferData.Builder builderForValue) {
+        if (huntingOfferListBuilder_ == null) {
+          ensureHuntingOfferListIsMutable();
+          huntingOfferList_.add(index, builderForValue.build());
+          onChanged();
+        } else {
+          huntingOfferListBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .HuntingOfferData hunting_offer_list = 2;</code>
+       */
+      public Builder addAllHuntingOfferList(
+          java.lang.Iterable<? extends emu.grasscutter.net.proto.HuntingOfferDataOuterClass.HuntingOfferData> values) {
+        if (huntingOfferListBuilder_ == null) {
+          ensureHuntingOfferListIsMutable();
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, huntingOfferList_);
+          onChanged();
+        } else {
+          huntingOfferListBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .HuntingOfferData hunting_offer_list = 2;</code>
+       */
+      public Builder clearHuntingOfferList() {
+        if (huntingOfferListBuilder_ == null) {
+          huntingOfferList_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000001);
+          onChanged();
+        } else {
+          huntingOfferListBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .HuntingOfferData hunting_offer_list = 2;</code>
+       */
+      public Builder removeHuntingOfferList(int index) {
+        if (huntingOfferListBuilder_ == null) {
+          ensureHuntingOfferListIsMutable();
+          huntingOfferList_.remove(index);
+          onChanged();
+        } else {
+          huntingOfferListBuilder_.remove(index);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .HuntingOfferData hunting_offer_list = 2;</code>
+       */
+      public emu.grasscutter.net.proto.HuntingOfferDataOuterClass.HuntingOfferData.Builder getHuntingOfferListBuilder(
+          int index) {
+        return getHuntingOfferListFieldBuilder().getBuilder(index);
+      }
+      /**
+       * <code>repeated .HuntingOfferData hunting_offer_list = 2;</code>
+       */
+      public emu.grasscutter.net.proto.HuntingOfferDataOuterClass.HuntingOfferDataOrBuilder getHuntingOfferListOrBuilder(
+          int index) {
+        if (huntingOfferListBuilder_ == null) {
+          return huntingOfferList_.get(index);  } else {
+          return huntingOfferListBuilder_.getMessageOrBuilder(index);
+        }
+      }
+      /**
+       * <code>repeated .HuntingOfferData hunting_offer_list = 2;</code>
+       */
+      public java.util.List<? extends emu.grasscutter.net.proto.HuntingOfferDataOuterClass.HuntingOfferDataOrBuilder> 
+           getHuntingOfferListOrBuilderList() {
+        if (huntingOfferListBuilder_ != null) {
+          return huntingOfferListBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(huntingOfferList_);
+        }
+      }
+      /**
+       * <code>repeated .HuntingOfferData hunting_offer_list = 2;</code>
+       */
+      public emu.grasscutter.net.proto.HuntingOfferDataOuterClass.HuntingOfferData.Builder addHuntingOfferListBuilder() {
+        return getHuntingOfferListFieldBuilder().addBuilder(
+            emu.grasscutter.net.proto.HuntingOfferDataOuterClass.HuntingOfferData.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .HuntingOfferData hunting_offer_list = 2;</code>
+       */
+      public emu.grasscutter.net.proto.HuntingOfferDataOuterClass.HuntingOfferData.Builder addHuntingOfferListBuilder(
+          int index) {
+        return getHuntingOfferListFieldBuilder().addBuilder(
+            index, emu.grasscutter.net.proto.HuntingOfferDataOuterClass.HuntingOfferData.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .HuntingOfferData hunting_offer_list = 2;</code>
+       */
+      public java.util.List<emu.grasscutter.net.proto.HuntingOfferDataOuterClass.HuntingOfferData.Builder> 
+           getHuntingOfferListBuilderList() {
+        return getHuntingOfferListFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          emu.grasscutter.net.proto.HuntingOfferDataOuterClass.HuntingOfferData, emu.grasscutter.net.proto.HuntingOfferDataOuterClass.HuntingOfferData.Builder, emu.grasscutter.net.proto.HuntingOfferDataOuterClass.HuntingOfferDataOrBuilder> 
+          getHuntingOfferListFieldBuilder() {
+        if (huntingOfferListBuilder_ == null) {
+          huntingOfferListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+              emu.grasscutter.net.proto.HuntingOfferDataOuterClass.HuntingOfferData, emu.grasscutter.net.proto.HuntingOfferDataOuterClass.HuntingOfferData.Builder, emu.grasscutter.net.proto.HuntingOfferDataOuterClass.HuntingOfferDataOrBuilder>(
+                  huntingOfferList_,
+                  ((bitField0_ & 0x00000001) != 0),
+                  getParentForChildren(),
+                  isClean());
+          huntingOfferList_ = null;
+        }
+        return huntingOfferListBuilder_;
+      }
+
       private int retcode_ ;
       /**
        * <code>int32 retcode = 9;</code>
@@ -796,396 +1044,6 @@ public final class GetCityHuntingOfferRspOuterClass {
         retcode_ = 0;
         onChanged();
         return this;
-      }
-
-      private java.util.List<emu.grasscutter.net.proto.HuntingOfferDataOuterClass.HuntingOfferData> huntingOfferList_ =
-        java.util.Collections.emptyList();
-      private void ensureHuntingOfferListIsMutable() {
-        if (!((bitField0_ & 0x00000001) != 0)) {
-          huntingOfferList_ = new java.util.ArrayList<emu.grasscutter.net.proto.HuntingOfferDataOuterClass.HuntingOfferData>(huntingOfferList_);
-          bitField0_ |= 0x00000001;
-         }
-      }
-
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.HuntingOfferDataOuterClass.HuntingOfferData, emu.grasscutter.net.proto.HuntingOfferDataOuterClass.HuntingOfferData.Builder, emu.grasscutter.net.proto.HuntingOfferDataOuterClass.HuntingOfferDataOrBuilder> huntingOfferListBuilder_;
-
-      /**
-       * <code>repeated .HuntingOfferData hunting_offer_list = 13;</code>
-       */
-      public java.util.List<emu.grasscutter.net.proto.HuntingOfferDataOuterClass.HuntingOfferData> getHuntingOfferListList() {
-        if (huntingOfferListBuilder_ == null) {
-          return java.util.Collections.unmodifiableList(huntingOfferList_);
-        } else {
-          return huntingOfferListBuilder_.getMessageList();
-        }
-      }
-      /**
-       * <code>repeated .HuntingOfferData hunting_offer_list = 13;</code>
-       */
-      public int getHuntingOfferListCount() {
-        if (huntingOfferListBuilder_ == null) {
-          return huntingOfferList_.size();
-        } else {
-          return huntingOfferListBuilder_.getCount();
-        }
-      }
-      /**
-       * <code>repeated .HuntingOfferData hunting_offer_list = 13;</code>
-       */
-      public emu.grasscutter.net.proto.HuntingOfferDataOuterClass.HuntingOfferData getHuntingOfferList(int index) {
-        if (huntingOfferListBuilder_ == null) {
-          return huntingOfferList_.get(index);
-        } else {
-          return huntingOfferListBuilder_.getMessage(index);
-        }
-      }
-      /**
-       * <code>repeated .HuntingOfferData hunting_offer_list = 13;</code>
-       */
-      public Builder setHuntingOfferList(
-          int index, emu.grasscutter.net.proto.HuntingOfferDataOuterClass.HuntingOfferData value) {
-        if (huntingOfferListBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureHuntingOfferListIsMutable();
-          huntingOfferList_.set(index, value);
-          onChanged();
-        } else {
-          huntingOfferListBuilder_.setMessage(index, value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .HuntingOfferData hunting_offer_list = 13;</code>
-       */
-      public Builder setHuntingOfferList(
-          int index, emu.grasscutter.net.proto.HuntingOfferDataOuterClass.HuntingOfferData.Builder builderForValue) {
-        if (huntingOfferListBuilder_ == null) {
-          ensureHuntingOfferListIsMutable();
-          huntingOfferList_.set(index, builderForValue.build());
-          onChanged();
-        } else {
-          huntingOfferListBuilder_.setMessage(index, builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .HuntingOfferData hunting_offer_list = 13;</code>
-       */
-      public Builder addHuntingOfferList(emu.grasscutter.net.proto.HuntingOfferDataOuterClass.HuntingOfferData value) {
-        if (huntingOfferListBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureHuntingOfferListIsMutable();
-          huntingOfferList_.add(value);
-          onChanged();
-        } else {
-          huntingOfferListBuilder_.addMessage(value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .HuntingOfferData hunting_offer_list = 13;</code>
-       */
-      public Builder addHuntingOfferList(
-          int index, emu.grasscutter.net.proto.HuntingOfferDataOuterClass.HuntingOfferData value) {
-        if (huntingOfferListBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureHuntingOfferListIsMutable();
-          huntingOfferList_.add(index, value);
-          onChanged();
-        } else {
-          huntingOfferListBuilder_.addMessage(index, value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .HuntingOfferData hunting_offer_list = 13;</code>
-       */
-      public Builder addHuntingOfferList(
-          emu.grasscutter.net.proto.HuntingOfferDataOuterClass.HuntingOfferData.Builder builderForValue) {
-        if (huntingOfferListBuilder_ == null) {
-          ensureHuntingOfferListIsMutable();
-          huntingOfferList_.add(builderForValue.build());
-          onChanged();
-        } else {
-          huntingOfferListBuilder_.addMessage(builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .HuntingOfferData hunting_offer_list = 13;</code>
-       */
-      public Builder addHuntingOfferList(
-          int index, emu.grasscutter.net.proto.HuntingOfferDataOuterClass.HuntingOfferData.Builder builderForValue) {
-        if (huntingOfferListBuilder_ == null) {
-          ensureHuntingOfferListIsMutable();
-          huntingOfferList_.add(index, builderForValue.build());
-          onChanged();
-        } else {
-          huntingOfferListBuilder_.addMessage(index, builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .HuntingOfferData hunting_offer_list = 13;</code>
-       */
-      public Builder addAllHuntingOfferList(
-          java.lang.Iterable<? extends emu.grasscutter.net.proto.HuntingOfferDataOuterClass.HuntingOfferData> values) {
-        if (huntingOfferListBuilder_ == null) {
-          ensureHuntingOfferListIsMutable();
-          com.google.protobuf.AbstractMessageLite.Builder.addAll(
-              values, huntingOfferList_);
-          onChanged();
-        } else {
-          huntingOfferListBuilder_.addAllMessages(values);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .HuntingOfferData hunting_offer_list = 13;</code>
-       */
-      public Builder clearHuntingOfferList() {
-        if (huntingOfferListBuilder_ == null) {
-          huntingOfferList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000001);
-          onChanged();
-        } else {
-          huntingOfferListBuilder_.clear();
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .HuntingOfferData hunting_offer_list = 13;</code>
-       */
-      public Builder removeHuntingOfferList(int index) {
-        if (huntingOfferListBuilder_ == null) {
-          ensureHuntingOfferListIsMutable();
-          huntingOfferList_.remove(index);
-          onChanged();
-        } else {
-          huntingOfferListBuilder_.remove(index);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .HuntingOfferData hunting_offer_list = 13;</code>
-       */
-      public emu.grasscutter.net.proto.HuntingOfferDataOuterClass.HuntingOfferData.Builder getHuntingOfferListBuilder(
-          int index) {
-        return getHuntingOfferListFieldBuilder().getBuilder(index);
-      }
-      /**
-       * <code>repeated .HuntingOfferData hunting_offer_list = 13;</code>
-       */
-      public emu.grasscutter.net.proto.HuntingOfferDataOuterClass.HuntingOfferDataOrBuilder getHuntingOfferListOrBuilder(
-          int index) {
-        if (huntingOfferListBuilder_ == null) {
-          return huntingOfferList_.get(index);  } else {
-          return huntingOfferListBuilder_.getMessageOrBuilder(index);
-        }
-      }
-      /**
-       * <code>repeated .HuntingOfferData hunting_offer_list = 13;</code>
-       */
-      public java.util.List<? extends emu.grasscutter.net.proto.HuntingOfferDataOuterClass.HuntingOfferDataOrBuilder> 
-           getHuntingOfferListOrBuilderList() {
-        if (huntingOfferListBuilder_ != null) {
-          return huntingOfferListBuilder_.getMessageOrBuilderList();
-        } else {
-          return java.util.Collections.unmodifiableList(huntingOfferList_);
-        }
-      }
-      /**
-       * <code>repeated .HuntingOfferData hunting_offer_list = 13;</code>
-       */
-      public emu.grasscutter.net.proto.HuntingOfferDataOuterClass.HuntingOfferData.Builder addHuntingOfferListBuilder() {
-        return getHuntingOfferListFieldBuilder().addBuilder(
-            emu.grasscutter.net.proto.HuntingOfferDataOuterClass.HuntingOfferData.getDefaultInstance());
-      }
-      /**
-       * <code>repeated .HuntingOfferData hunting_offer_list = 13;</code>
-       */
-      public emu.grasscutter.net.proto.HuntingOfferDataOuterClass.HuntingOfferData.Builder addHuntingOfferListBuilder(
-          int index) {
-        return getHuntingOfferListFieldBuilder().addBuilder(
-            index, emu.grasscutter.net.proto.HuntingOfferDataOuterClass.HuntingOfferData.getDefaultInstance());
-      }
-      /**
-       * <code>repeated .HuntingOfferData hunting_offer_list = 13;</code>
-       */
-      public java.util.List<emu.grasscutter.net.proto.HuntingOfferDataOuterClass.HuntingOfferData.Builder> 
-           getHuntingOfferListBuilderList() {
-        return getHuntingOfferListFieldBuilder().getBuilderList();
-      }
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.HuntingOfferDataOuterClass.HuntingOfferData, emu.grasscutter.net.proto.HuntingOfferDataOuterClass.HuntingOfferData.Builder, emu.grasscutter.net.proto.HuntingOfferDataOuterClass.HuntingOfferDataOrBuilder> 
-          getHuntingOfferListFieldBuilder() {
-        if (huntingOfferListBuilder_ == null) {
-          huntingOfferListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              emu.grasscutter.net.proto.HuntingOfferDataOuterClass.HuntingOfferData, emu.grasscutter.net.proto.HuntingOfferDataOuterClass.HuntingOfferData.Builder, emu.grasscutter.net.proto.HuntingOfferDataOuterClass.HuntingOfferDataOrBuilder>(
-                  huntingOfferList_,
-                  ((bitField0_ & 0x00000001) != 0),
-                  getParentForChildren(),
-                  isClean());
-          huntingOfferList_ = null;
-        }
-        return huntingOfferListBuilder_;
-      }
-
-      private int cityId_ ;
-      /**
-       * <code>uint32 city_id = 2;</code>
-       * @return The cityId.
-       */
-      @java.lang.Override
-      public int getCityId() {
-        return cityId_;
-      }
-      /**
-       * <code>uint32 city_id = 2;</code>
-       * @param value The cityId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setCityId(int value) {
-        
-        cityId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 city_id = 2;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearCityId() {
-        
-        cityId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPair ongoingHuntingPair_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPair, emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPair.Builder, emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPairOrBuilder> ongoingHuntingPairBuilder_;
-      /**
-       * <code>.HuntingPair ongoing_hunting_pair = 8;</code>
-       * @return Whether the ongoingHuntingPair field is set.
-       */
-      public boolean hasOngoingHuntingPair() {
-        return ongoingHuntingPairBuilder_ != null || ongoingHuntingPair_ != null;
-      }
-      /**
-       * <code>.HuntingPair ongoing_hunting_pair = 8;</code>
-       * @return The ongoingHuntingPair.
-       */
-      public emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPair getOngoingHuntingPair() {
-        if (ongoingHuntingPairBuilder_ == null) {
-          return ongoingHuntingPair_ == null ? emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPair.getDefaultInstance() : ongoingHuntingPair_;
-        } else {
-          return ongoingHuntingPairBuilder_.getMessage();
-        }
-      }
-      /**
-       * <code>.HuntingPair ongoing_hunting_pair = 8;</code>
-       */
-      public Builder setOngoingHuntingPair(emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPair value) {
-        if (ongoingHuntingPairBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ongoingHuntingPair_ = value;
-          onChanged();
-        } else {
-          ongoingHuntingPairBuilder_.setMessage(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.HuntingPair ongoing_hunting_pair = 8;</code>
-       */
-      public Builder setOngoingHuntingPair(
-          emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPair.Builder builderForValue) {
-        if (ongoingHuntingPairBuilder_ == null) {
-          ongoingHuntingPair_ = builderForValue.build();
-          onChanged();
-        } else {
-          ongoingHuntingPairBuilder_.setMessage(builderForValue.build());
-        }
-
-        return this;
-      }
-      /**
-       * <code>.HuntingPair ongoing_hunting_pair = 8;</code>
-       */
-      public Builder mergeOngoingHuntingPair(emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPair value) {
-        if (ongoingHuntingPairBuilder_ == null) {
-          if (ongoingHuntingPair_ != null) {
-            ongoingHuntingPair_ =
-              emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPair.newBuilder(ongoingHuntingPair_).mergeFrom(value).buildPartial();
-          } else {
-            ongoingHuntingPair_ = value;
-          }
-          onChanged();
-        } else {
-          ongoingHuntingPairBuilder_.mergeFrom(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.HuntingPair ongoing_hunting_pair = 8;</code>
-       */
-      public Builder clearOngoingHuntingPair() {
-        if (ongoingHuntingPairBuilder_ == null) {
-          ongoingHuntingPair_ = null;
-          onChanged();
-        } else {
-          ongoingHuntingPair_ = null;
-          ongoingHuntingPairBuilder_ = null;
-        }
-
-        return this;
-      }
-      /**
-       * <code>.HuntingPair ongoing_hunting_pair = 8;</code>
-       */
-      public emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPair.Builder getOngoingHuntingPairBuilder() {
-        
-        onChanged();
-        return getOngoingHuntingPairFieldBuilder().getBuilder();
-      }
-      /**
-       * <code>.HuntingPair ongoing_hunting_pair = 8;</code>
-       */
-      public emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPairOrBuilder getOngoingHuntingPairOrBuilder() {
-        if (ongoingHuntingPairBuilder_ != null) {
-          return ongoingHuntingPairBuilder_.getMessageOrBuilder();
-        } else {
-          return ongoingHuntingPair_ == null ?
-              emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPair.getDefaultInstance() : ongoingHuntingPair_;
-        }
-      }
-      /**
-       * <code>.HuntingPair ongoing_hunting_pair = 8;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPair, emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPair.Builder, emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPairOrBuilder> 
-          getOngoingHuntingPairFieldBuilder() {
-        if (ongoingHuntingPairBuilder_ == null) {
-          ongoingHuntingPairBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPair, emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPair.Builder, emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPairOrBuilder>(
-                  getOngoingHuntingPair(),
-                  getParentForChildren(),
-                  isClean());
-          ongoingHuntingPair_ = null;
-        }
-        return ongoingHuntingPairBuilder_;
       }
 
       private int curWeekFinishedCount_ ;
@@ -1219,9 +1077,128 @@ public final class GetCityHuntingOfferRspOuterClass {
         return this;
       }
 
+      private emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPair ongoingHuntingPair_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPair, emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPair.Builder, emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPairOrBuilder> ongoingHuntingPairBuilder_;
+      /**
+       * <code>.HuntingPair ongoing_hunting_pair = 15;</code>
+       * @return Whether the ongoingHuntingPair field is set.
+       */
+      public boolean hasOngoingHuntingPair() {
+        return ongoingHuntingPairBuilder_ != null || ongoingHuntingPair_ != null;
+      }
+      /**
+       * <code>.HuntingPair ongoing_hunting_pair = 15;</code>
+       * @return The ongoingHuntingPair.
+       */
+      public emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPair getOngoingHuntingPair() {
+        if (ongoingHuntingPairBuilder_ == null) {
+          return ongoingHuntingPair_ == null ? emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPair.getDefaultInstance() : ongoingHuntingPair_;
+        } else {
+          return ongoingHuntingPairBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>.HuntingPair ongoing_hunting_pair = 15;</code>
+       */
+      public Builder setOngoingHuntingPair(emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPair value) {
+        if (ongoingHuntingPairBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ongoingHuntingPair_ = value;
+          onChanged();
+        } else {
+          ongoingHuntingPairBuilder_.setMessage(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.HuntingPair ongoing_hunting_pair = 15;</code>
+       */
+      public Builder setOngoingHuntingPair(
+          emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPair.Builder builderForValue) {
+        if (ongoingHuntingPairBuilder_ == null) {
+          ongoingHuntingPair_ = builderForValue.build();
+          onChanged();
+        } else {
+          ongoingHuntingPairBuilder_.setMessage(builderForValue.build());
+        }
+
+        return this;
+      }
+      /**
+       * <code>.HuntingPair ongoing_hunting_pair = 15;</code>
+       */
+      public Builder mergeOngoingHuntingPair(emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPair value) {
+        if (ongoingHuntingPairBuilder_ == null) {
+          if (ongoingHuntingPair_ != null) {
+            ongoingHuntingPair_ =
+              emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPair.newBuilder(ongoingHuntingPair_).mergeFrom(value).buildPartial();
+          } else {
+            ongoingHuntingPair_ = value;
+          }
+          onChanged();
+        } else {
+          ongoingHuntingPairBuilder_.mergeFrom(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.HuntingPair ongoing_hunting_pair = 15;</code>
+       */
+      public Builder clearOngoingHuntingPair() {
+        if (ongoingHuntingPairBuilder_ == null) {
+          ongoingHuntingPair_ = null;
+          onChanged();
+        } else {
+          ongoingHuntingPair_ = null;
+          ongoingHuntingPairBuilder_ = null;
+        }
+
+        return this;
+      }
+      /**
+       * <code>.HuntingPair ongoing_hunting_pair = 15;</code>
+       */
+      public emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPair.Builder getOngoingHuntingPairBuilder() {
+        
+        onChanged();
+        return getOngoingHuntingPairFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.HuntingPair ongoing_hunting_pair = 15;</code>
+       */
+      public emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPairOrBuilder getOngoingHuntingPairOrBuilder() {
+        if (ongoingHuntingPairBuilder_ != null) {
+          return ongoingHuntingPairBuilder_.getMessageOrBuilder();
+        } else {
+          return ongoingHuntingPair_ == null ?
+              emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPair.getDefaultInstance() : ongoingHuntingPair_;
+        }
+      }
+      /**
+       * <code>.HuntingPair ongoing_hunting_pair = 15;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPair, emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPair.Builder, emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPairOrBuilder> 
+          getOngoingHuntingPairFieldBuilder() {
+        if (ongoingHuntingPairBuilder_ == null) {
+          ongoingHuntingPairBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPair, emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPair.Builder, emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPairOrBuilder>(
+                  getOngoingHuntingPair(),
+                  getParentForChildren(),
+                  isClean());
+          ongoingHuntingPair_ = null;
+        }
+        return ongoingHuntingPairBuilder_;
+      }
+
       private int nextRefreshTime_ ;
       /**
-       * <code>uint32 next_refresh_time = 4;</code>
+       * <code>uint32 next_refresh_time = 5;</code>
        * @return The nextRefreshTime.
        */
       @java.lang.Override
@@ -1229,7 +1206,7 @@ public final class GetCityHuntingOfferRspOuterClass {
         return nextRefreshTime_;
       }
       /**
-       * <code>uint32 next_refresh_time = 4;</code>
+       * <code>uint32 next_refresh_time = 5;</code>
        * @param value The nextRefreshTime to set.
        * @return This builder for chaining.
        */
@@ -1240,12 +1217,43 @@ public final class GetCityHuntingOfferRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 next_refresh_time = 4;</code>
+       * <code>uint32 next_refresh_time = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearNextRefreshTime() {
         
         nextRefreshTime_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int cityId_ ;
+      /**
+       * <code>uint32 city_id = 12;</code>
+       * @return The cityId.
+       */
+      @java.lang.Override
+      public int getCityId() {
+        return cityId_;
+      }
+      /**
+       * <code>uint32 city_id = 12;</code>
+       * @param value The cityId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setCityId(int value) {
+        
+        cityId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 city_id = 12;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearCityId() {
+        
+        cityId_ = 0;
         onChanged();
         return this;
       }
@@ -1318,12 +1326,12 @@ public final class GetCityHuntingOfferRspOuterClass {
     java.lang.String[] descriptorData = {
       "\n\034GetCityHuntingOfferRsp.proto\032\026HuntingO" +
       "fferData.proto\032\021HuntingPair.proto\"\321\001\n\026Ge" +
-      "tCityHuntingOfferRsp\022\017\n\007retcode\030\t \001(\005\022-\n" +
-      "\022hunting_offer_list\030\r \003(\0132\021.HuntingOffer" +
-      "Data\022\017\n\007city_id\030\002 \001(\r\022*\n\024ongoing_hunting" +
-      "_pair\030\010 \001(\0132\014.HuntingPair\022\037\n\027cur_week_fi" +
-      "nished_count\030\001 \001(\r\022\031\n\021next_refresh_time\030" +
-      "\004 \001(\rB\033\n\031emu.grasscutter.net.protob\006prot" +
+      "tCityHuntingOfferRsp\022-\n\022hunting_offer_li" +
+      "st\030\002 \003(\0132\021.HuntingOfferData\022\017\n\007retcode\030\t" +
+      " \001(\005\022\037\n\027cur_week_finished_count\030\001 \001(\r\022*\n" +
+      "\024ongoing_hunting_pair\030\017 \001(\0132\014.HuntingPai" +
+      "r\022\031\n\021next_refresh_time\030\005 \001(\r\022\017\n\007city_id\030" +
+      "\014 \001(\rB\033\n\031emu.grasscutter.net.protob\006prot" +
       "o3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -1337,7 +1345,7 @@ public final class GetCityHuntingOfferRspOuterClass {
     internal_static_GetCityHuntingOfferRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GetCityHuntingOfferRsp_descriptor,
-        new java.lang.String[] { "Retcode", "HuntingOfferList", "CityId", "OngoingHuntingPair", "CurWeekFinishedCount", "NextRefreshTime", });
+        new java.lang.String[] { "HuntingOfferList", "Retcode", "CurWeekFinishedCount", "OngoingHuntingPair", "NextRefreshTime", "CityId", });
     emu.grasscutter.net.proto.HuntingOfferDataOuterClass.getDescriptor();
     emu.grasscutter.net.proto.HuntingPairOuterClass.getDescriptor();
   }

@@ -19,22 +19,26 @@ public final class MichiaeMatsuriRemoveChallengeMarkNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 gadget_id = 9;</code>
-     * @return The gadgetId.
-     */
-    int getGadgetId();
-
-    /**
-     * <code>uint32 group_id = 2;</code>
+     * <code>uint32 group_id = 10;</code>
      * @return The groupId.
      */
     int getGroupId();
+
+    /**
+     * <code>uint32 gadget_id = 13;</code>
+     * @return The gadgetId.
+     */
+    int getGadgetId();
   }
   /**
    * <pre>
-   * CmdId: 8072
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 8581;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code MichiaeMatsuriRemoveChallengeMarkNotify}
@@ -81,12 +85,12 @@ public final class MichiaeMatsuriRemoveChallengeMarkNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
+            case 80: {
 
               groupId_ = input.readUInt32();
               break;
             }
-            case 72: {
+            case 104: {
 
               gadgetId_ = input.readUInt32();
               break;
@@ -123,26 +127,26 @@ public final class MichiaeMatsuriRemoveChallengeMarkNotifyOuterClass {
               emu.grasscutter.net.proto.MichiaeMatsuriRemoveChallengeMarkNotifyOuterClass.MichiaeMatsuriRemoveChallengeMarkNotify.class, emu.grasscutter.net.proto.MichiaeMatsuriRemoveChallengeMarkNotifyOuterClass.MichiaeMatsuriRemoveChallengeMarkNotify.Builder.class);
     }
 
-    public static final int GADGET_ID_FIELD_NUMBER = 9;
-    private int gadgetId_;
-    /**
-     * <code>uint32 gadget_id = 9;</code>
-     * @return The gadgetId.
-     */
-    @java.lang.Override
-    public int getGadgetId() {
-      return gadgetId_;
-    }
-
-    public static final int GROUP_ID_FIELD_NUMBER = 2;
+    public static final int GROUP_ID_FIELD_NUMBER = 10;
     private int groupId_;
     /**
-     * <code>uint32 group_id = 2;</code>
+     * <code>uint32 group_id = 10;</code>
      * @return The groupId.
      */
     @java.lang.Override
     public int getGroupId() {
       return groupId_;
+    }
+
+    public static final int GADGET_ID_FIELD_NUMBER = 13;
+    private int gadgetId_;
+    /**
+     * <code>uint32 gadget_id = 13;</code>
+     * @return The gadgetId.
+     */
+    @java.lang.Override
+    public int getGadgetId() {
+      return gadgetId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -160,10 +164,10 @@ public final class MichiaeMatsuriRemoveChallengeMarkNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (groupId_ != 0) {
-        output.writeUInt32(2, groupId_);
+        output.writeUInt32(10, groupId_);
       }
       if (gadgetId_ != 0) {
-        output.writeUInt32(9, gadgetId_);
+        output.writeUInt32(13, gadgetId_);
       }
       unknownFields.writeTo(output);
     }
@@ -176,11 +180,11 @@ public final class MichiaeMatsuriRemoveChallengeMarkNotifyOuterClass {
       size = 0;
       if (groupId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, groupId_);
+          .computeUInt32Size(10, groupId_);
       }
       if (gadgetId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, gadgetId_);
+          .computeUInt32Size(13, gadgetId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -197,10 +201,10 @@ public final class MichiaeMatsuriRemoveChallengeMarkNotifyOuterClass {
       }
       emu.grasscutter.net.proto.MichiaeMatsuriRemoveChallengeMarkNotifyOuterClass.MichiaeMatsuriRemoveChallengeMarkNotify other = (emu.grasscutter.net.proto.MichiaeMatsuriRemoveChallengeMarkNotifyOuterClass.MichiaeMatsuriRemoveChallengeMarkNotify) obj;
 
-      if (getGadgetId()
-          != other.getGadgetId()) return false;
       if (getGroupId()
           != other.getGroupId()) return false;
+      if (getGadgetId()
+          != other.getGadgetId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -212,10 +216,10 @@ public final class MichiaeMatsuriRemoveChallengeMarkNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + GADGET_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getGadgetId();
       hash = (37 * hash) + GROUP_ID_FIELD_NUMBER;
       hash = (53 * hash) + getGroupId();
+      hash = (37 * hash) + GADGET_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getGadgetId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -313,9 +317,13 @@ public final class MichiaeMatsuriRemoveChallengeMarkNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 8072
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 8581;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code MichiaeMatsuriRemoveChallengeMarkNotify}
@@ -355,9 +363,9 @@ public final class MichiaeMatsuriRemoveChallengeMarkNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        gadgetId_ = 0;
-
         groupId_ = 0;
+
+        gadgetId_ = 0;
 
         return this;
       }
@@ -385,8 +393,8 @@ public final class MichiaeMatsuriRemoveChallengeMarkNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.MichiaeMatsuriRemoveChallengeMarkNotifyOuterClass.MichiaeMatsuriRemoveChallengeMarkNotify buildPartial() {
         emu.grasscutter.net.proto.MichiaeMatsuriRemoveChallengeMarkNotifyOuterClass.MichiaeMatsuriRemoveChallengeMarkNotify result = new emu.grasscutter.net.proto.MichiaeMatsuriRemoveChallengeMarkNotifyOuterClass.MichiaeMatsuriRemoveChallengeMarkNotify(this);
-        result.gadgetId_ = gadgetId_;
         result.groupId_ = groupId_;
+        result.gadgetId_ = gadgetId_;
         onBuilt();
         return result;
       }
@@ -435,11 +443,11 @@ public final class MichiaeMatsuriRemoveChallengeMarkNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.MichiaeMatsuriRemoveChallengeMarkNotifyOuterClass.MichiaeMatsuriRemoveChallengeMarkNotify other) {
         if (other == emu.grasscutter.net.proto.MichiaeMatsuriRemoveChallengeMarkNotifyOuterClass.MichiaeMatsuriRemoveChallengeMarkNotify.getDefaultInstance()) return this;
-        if (other.getGadgetId() != 0) {
-          setGadgetId(other.getGadgetId());
-        }
         if (other.getGroupId() != 0) {
           setGroupId(other.getGroupId());
+        }
+        if (other.getGadgetId() != 0) {
+          setGadgetId(other.getGadgetId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -470,40 +478,9 @@ public final class MichiaeMatsuriRemoveChallengeMarkNotifyOuterClass {
         return this;
       }
 
-      private int gadgetId_ ;
-      /**
-       * <code>uint32 gadget_id = 9;</code>
-       * @return The gadgetId.
-       */
-      @java.lang.Override
-      public int getGadgetId() {
-        return gadgetId_;
-      }
-      /**
-       * <code>uint32 gadget_id = 9;</code>
-       * @param value The gadgetId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setGadgetId(int value) {
-        
-        gadgetId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 gadget_id = 9;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearGadgetId() {
-        
-        gadgetId_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int groupId_ ;
       /**
-       * <code>uint32 group_id = 2;</code>
+       * <code>uint32 group_id = 10;</code>
        * @return The groupId.
        */
       @java.lang.Override
@@ -511,7 +488,7 @@ public final class MichiaeMatsuriRemoveChallengeMarkNotifyOuterClass {
         return groupId_;
       }
       /**
-       * <code>uint32 group_id = 2;</code>
+       * <code>uint32 group_id = 10;</code>
        * @param value The groupId to set.
        * @return This builder for chaining.
        */
@@ -522,12 +499,43 @@ public final class MichiaeMatsuriRemoveChallengeMarkNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 group_id = 2;</code>
+       * <code>uint32 group_id = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearGroupId() {
         
         groupId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int gadgetId_ ;
+      /**
+       * <code>uint32 gadget_id = 13;</code>
+       * @return The gadgetId.
+       */
+      @java.lang.Override
+      public int getGadgetId() {
+        return gadgetId_;
+      }
+      /**
+       * <code>uint32 gadget_id = 13;</code>
+       * @param value The gadgetId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setGadgetId(int value) {
+        
+        gadgetId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 gadget_id = 13;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearGadgetId() {
+        
+        gadgetId_ = 0;
         onChanged();
         return this;
       }
@@ -600,8 +608,8 @@ public final class MichiaeMatsuriRemoveChallengeMarkNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n-MichiaeMatsuriRemoveChallengeMarkNotif" +
       "y.proto\"N\n\'MichiaeMatsuriRemoveChallenge" +
-      "MarkNotify\022\021\n\tgadget_id\030\t \001(\r\022\020\n\010group_i" +
-      "d\030\002 \001(\rB\033\n\031emu.grasscutter.net.protob\006pr" +
+      "MarkNotify\022\020\n\010group_id\030\n \001(\r\022\021\n\tgadget_i" +
+      "d\030\r \001(\rB\033\n\031emu.grasscutter.net.protob\006pr" +
       "oto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -613,7 +621,7 @@ public final class MichiaeMatsuriRemoveChallengeMarkNotifyOuterClass {
     internal_static_MichiaeMatsuriRemoveChallengeMarkNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_MichiaeMatsuriRemoveChallengeMarkNotify_descriptor,
-        new java.lang.String[] { "GadgetId", "GroupId", });
+        new java.lang.String[] { "GroupId", "GadgetId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

@@ -19,16 +19,22 @@ public final class ExpeditionStartRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 assist_uid = 1;</code>
-     * @return The assistUid.
+     * <code>uint32 Unk3300_AIEJKADFLKG = 5;</code>
+     * @return The unk3300AIEJKADFLKG.
      */
-    int getAssistUid();
+    int getUnk3300AIEJKADFLKG();
 
     /**
-     * <code>uint32 path_id = 7;</code>
+     * <code>uint32 path_id = 3;</code>
      * @return The pathId.
      */
     int getPathId();
+
+    /**
+     * <code>int32 retcode = 6;</code>
+     * @return The retcode.
+     */
+    int getRetcode();
 
     /**
      * <code>repeated uint32 avatar_id_list = 4;</code>
@@ -48,22 +54,20 @@ public final class ExpeditionStartRspOuterClass {
     int getAvatarIdList(int index);
 
     /**
-     * <code>int32 retcode = 12;</code>
-     * @return The retcode.
+     * <code>uint32 Unk3300_AFGPGIIGAKA = 10;</code>
+     * @return The unk3300AFGPGIIGAKA.
      */
-    int getRetcode();
-
-    /**
-     * <code>uint32 assist_avatar_id = 2;</code>
-     * @return The assistAvatarId.
-     */
-    int getAssistAvatarId();
+    int getUnk3300AFGPGIIGAKA();
   }
   /**
    * <pre>
-   * CmdId: 2135
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 2182;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code ExpeditionStartRsp}
@@ -112,14 +116,9 @@ public final class ExpeditionStartRspOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
+            case 24: {
 
-              assistUid_ = input.readUInt32();
-              break;
-            }
-            case 16: {
-
-              assistAvatarId_ = input.readUInt32();
+              pathId_ = input.readUInt32();
               break;
             }
             case 32: {
@@ -143,14 +142,19 @@ public final class ExpeditionStartRspOuterClass {
               input.popLimit(limit);
               break;
             }
-            case 56: {
+            case 40: {
 
-              pathId_ = input.readUInt32();
+              unk3300AIEJKADFLKG_ = input.readUInt32();
               break;
             }
-            case 96: {
+            case 48: {
 
               retcode_ = input.readInt32();
+              break;
+            }
+            case 80: {
+
+              unk3300AFGPGIIGAKA_ = input.readUInt32();
               break;
             }
             default: {
@@ -188,26 +192,37 @@ public final class ExpeditionStartRspOuterClass {
               emu.grasscutter.net.proto.ExpeditionStartRspOuterClass.ExpeditionStartRsp.class, emu.grasscutter.net.proto.ExpeditionStartRspOuterClass.ExpeditionStartRsp.Builder.class);
     }
 
-    public static final int ASSIST_UID_FIELD_NUMBER = 1;
-    private int assistUid_;
+    public static final int UNK3300_AIEJKADFLKG_FIELD_NUMBER = 5;
+    private int unk3300AIEJKADFLKG_;
     /**
-     * <code>uint32 assist_uid = 1;</code>
-     * @return The assistUid.
+     * <code>uint32 Unk3300_AIEJKADFLKG = 5;</code>
+     * @return The unk3300AIEJKADFLKG.
      */
     @java.lang.Override
-    public int getAssistUid() {
-      return assistUid_;
+    public int getUnk3300AIEJKADFLKG() {
+      return unk3300AIEJKADFLKG_;
     }
 
-    public static final int PATH_ID_FIELD_NUMBER = 7;
+    public static final int PATH_ID_FIELD_NUMBER = 3;
     private int pathId_;
     /**
-     * <code>uint32 path_id = 7;</code>
+     * <code>uint32 path_id = 3;</code>
      * @return The pathId.
      */
     @java.lang.Override
     public int getPathId() {
       return pathId_;
+    }
+
+    public static final int RETCODE_FIELD_NUMBER = 6;
+    private int retcode_;
+    /**
+     * <code>int32 retcode = 6;</code>
+     * @return The retcode.
+     */
+    @java.lang.Override
+    public int getRetcode() {
+      return retcode_;
     }
 
     public static final int AVATAR_ID_LIST_FIELD_NUMBER = 4;
@@ -238,26 +253,15 @@ public final class ExpeditionStartRspOuterClass {
     }
     private int avatarIdListMemoizedSerializedSize = -1;
 
-    public static final int RETCODE_FIELD_NUMBER = 12;
-    private int retcode_;
+    public static final int UNK3300_AFGPGIIGAKA_FIELD_NUMBER = 10;
+    private int unk3300AFGPGIIGAKA_;
     /**
-     * <code>int32 retcode = 12;</code>
-     * @return The retcode.
+     * <code>uint32 Unk3300_AFGPGIIGAKA = 10;</code>
+     * @return The unk3300AFGPGIIGAKA.
      */
     @java.lang.Override
-    public int getRetcode() {
-      return retcode_;
-    }
-
-    public static final int ASSIST_AVATAR_ID_FIELD_NUMBER = 2;
-    private int assistAvatarId_;
-    /**
-     * <code>uint32 assist_avatar_id = 2;</code>
-     * @return The assistAvatarId.
-     */
-    @java.lang.Override
-    public int getAssistAvatarId() {
-      return assistAvatarId_;
+    public int getUnk3300AFGPGIIGAKA() {
+      return unk3300AFGPGIIGAKA_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -275,11 +279,8 @@ public final class ExpeditionStartRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      if (assistUid_ != 0) {
-        output.writeUInt32(1, assistUid_);
-      }
-      if (assistAvatarId_ != 0) {
-        output.writeUInt32(2, assistAvatarId_);
+      if (pathId_ != 0) {
+        output.writeUInt32(3, pathId_);
       }
       if (getAvatarIdListList().size() > 0) {
         output.writeUInt32NoTag(34);
@@ -288,11 +289,14 @@ public final class ExpeditionStartRspOuterClass {
       for (int i = 0; i < avatarIdList_.size(); i++) {
         output.writeUInt32NoTag(avatarIdList_.getInt(i));
       }
-      if (pathId_ != 0) {
-        output.writeUInt32(7, pathId_);
+      if (unk3300AIEJKADFLKG_ != 0) {
+        output.writeUInt32(5, unk3300AIEJKADFLKG_);
       }
       if (retcode_ != 0) {
-        output.writeInt32(12, retcode_);
+        output.writeInt32(6, retcode_);
+      }
+      if (unk3300AFGPGIIGAKA_ != 0) {
+        output.writeUInt32(10, unk3300AFGPGIIGAKA_);
       }
       unknownFields.writeTo(output);
     }
@@ -303,13 +307,9 @@ public final class ExpeditionStartRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (assistUid_ != 0) {
+      if (pathId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, assistUid_);
-      }
-      if (assistAvatarId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, assistAvatarId_);
+          .computeUInt32Size(3, pathId_);
       }
       {
         int dataSize = 0;
@@ -325,13 +325,17 @@ public final class ExpeditionStartRspOuterClass {
         }
         avatarIdListMemoizedSerializedSize = dataSize;
       }
-      if (pathId_ != 0) {
+      if (unk3300AIEJKADFLKG_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, pathId_);
+          .computeUInt32Size(5, unk3300AIEJKADFLKG_);
       }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(12, retcode_);
+          .computeInt32Size(6, retcode_);
+      }
+      if (unk3300AFGPGIIGAKA_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(10, unk3300AFGPGIIGAKA_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -348,16 +352,16 @@ public final class ExpeditionStartRspOuterClass {
       }
       emu.grasscutter.net.proto.ExpeditionStartRspOuterClass.ExpeditionStartRsp other = (emu.grasscutter.net.proto.ExpeditionStartRspOuterClass.ExpeditionStartRsp) obj;
 
-      if (getAssistUid()
-          != other.getAssistUid()) return false;
+      if (getUnk3300AIEJKADFLKG()
+          != other.getUnk3300AIEJKADFLKG()) return false;
       if (getPathId()
           != other.getPathId()) return false;
-      if (!getAvatarIdListList()
-          .equals(other.getAvatarIdListList())) return false;
       if (getRetcode()
           != other.getRetcode()) return false;
-      if (getAssistAvatarId()
-          != other.getAssistAvatarId()) return false;
+      if (!getAvatarIdListList()
+          .equals(other.getAvatarIdListList())) return false;
+      if (getUnk3300AFGPGIIGAKA()
+          != other.getUnk3300AFGPGIIGAKA()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -369,18 +373,18 @@ public final class ExpeditionStartRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + ASSIST_UID_FIELD_NUMBER;
-      hash = (53 * hash) + getAssistUid();
+      hash = (37 * hash) + UNK3300_AIEJKADFLKG_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300AIEJKADFLKG();
       hash = (37 * hash) + PATH_ID_FIELD_NUMBER;
       hash = (53 * hash) + getPathId();
+      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
+      hash = (53 * hash) + getRetcode();
       if (getAvatarIdListCount() > 0) {
         hash = (37 * hash) + AVATAR_ID_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getAvatarIdListList().hashCode();
       }
-      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
-      hash = (53 * hash) + getRetcode();
-      hash = (37 * hash) + ASSIST_AVATAR_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getAssistAvatarId();
+      hash = (37 * hash) + UNK3300_AFGPGIIGAKA_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300AFGPGIIGAKA();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -478,9 +482,13 @@ public final class ExpeditionStartRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 2135
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 2182;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code ExpeditionStartRsp}
@@ -520,15 +528,15 @@ public final class ExpeditionStartRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        assistUid_ = 0;
+        unk3300AIEJKADFLKG_ = 0;
 
         pathId_ = 0;
 
-        avatarIdList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000001);
         retcode_ = 0;
 
-        assistAvatarId_ = 0;
+        avatarIdList_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000001);
+        unk3300AFGPGIIGAKA_ = 0;
 
         return this;
       }
@@ -557,15 +565,15 @@ public final class ExpeditionStartRspOuterClass {
       public emu.grasscutter.net.proto.ExpeditionStartRspOuterClass.ExpeditionStartRsp buildPartial() {
         emu.grasscutter.net.proto.ExpeditionStartRspOuterClass.ExpeditionStartRsp result = new emu.grasscutter.net.proto.ExpeditionStartRspOuterClass.ExpeditionStartRsp(this);
         int from_bitField0_ = bitField0_;
-        result.assistUid_ = assistUid_;
+        result.unk3300AIEJKADFLKG_ = unk3300AIEJKADFLKG_;
         result.pathId_ = pathId_;
+        result.retcode_ = retcode_;
         if (((bitField0_ & 0x00000001) != 0)) {
           avatarIdList_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000001);
         }
         result.avatarIdList_ = avatarIdList_;
-        result.retcode_ = retcode_;
-        result.assistAvatarId_ = assistAvatarId_;
+        result.unk3300AFGPGIIGAKA_ = unk3300AFGPGIIGAKA_;
         onBuilt();
         return result;
       }
@@ -614,11 +622,14 @@ public final class ExpeditionStartRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.ExpeditionStartRspOuterClass.ExpeditionStartRsp other) {
         if (other == emu.grasscutter.net.proto.ExpeditionStartRspOuterClass.ExpeditionStartRsp.getDefaultInstance()) return this;
-        if (other.getAssistUid() != 0) {
-          setAssistUid(other.getAssistUid());
+        if (other.getUnk3300AIEJKADFLKG() != 0) {
+          setUnk3300AIEJKADFLKG(other.getUnk3300AIEJKADFLKG());
         }
         if (other.getPathId() != 0) {
           setPathId(other.getPathId());
+        }
+        if (other.getRetcode() != 0) {
+          setRetcode(other.getRetcode());
         }
         if (!other.avatarIdList_.isEmpty()) {
           if (avatarIdList_.isEmpty()) {
@@ -630,11 +641,8 @@ public final class ExpeditionStartRspOuterClass {
           }
           onChanged();
         }
-        if (other.getRetcode() != 0) {
-          setRetcode(other.getRetcode());
-        }
-        if (other.getAssistAvatarId() != 0) {
-          setAssistAvatarId(other.getAssistAvatarId());
+        if (other.getUnk3300AFGPGIIGAKA() != 0) {
+          setUnk3300AFGPGIIGAKA(other.getUnk3300AFGPGIIGAKA());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -666,40 +674,40 @@ public final class ExpeditionStartRspOuterClass {
       }
       private int bitField0_;
 
-      private int assistUid_ ;
+      private int unk3300AIEJKADFLKG_ ;
       /**
-       * <code>uint32 assist_uid = 1;</code>
-       * @return The assistUid.
+       * <code>uint32 Unk3300_AIEJKADFLKG = 5;</code>
+       * @return The unk3300AIEJKADFLKG.
        */
       @java.lang.Override
-      public int getAssistUid() {
-        return assistUid_;
+      public int getUnk3300AIEJKADFLKG() {
+        return unk3300AIEJKADFLKG_;
       }
       /**
-       * <code>uint32 assist_uid = 1;</code>
-       * @param value The assistUid to set.
+       * <code>uint32 Unk3300_AIEJKADFLKG = 5;</code>
+       * @param value The unk3300AIEJKADFLKG to set.
        * @return This builder for chaining.
        */
-      public Builder setAssistUid(int value) {
+      public Builder setUnk3300AIEJKADFLKG(int value) {
         
-        assistUid_ = value;
+        unk3300AIEJKADFLKG_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 assist_uid = 1;</code>
+       * <code>uint32 Unk3300_AIEJKADFLKG = 5;</code>
        * @return This builder for chaining.
        */
-      public Builder clearAssistUid() {
+      public Builder clearUnk3300AIEJKADFLKG() {
         
-        assistUid_ = 0;
+        unk3300AIEJKADFLKG_ = 0;
         onChanged();
         return this;
       }
 
       private int pathId_ ;
       /**
-       * <code>uint32 path_id = 7;</code>
+       * <code>uint32 path_id = 3;</code>
        * @return The pathId.
        */
       @java.lang.Override
@@ -707,7 +715,7 @@ public final class ExpeditionStartRspOuterClass {
         return pathId_;
       }
       /**
-       * <code>uint32 path_id = 7;</code>
+       * <code>uint32 path_id = 3;</code>
        * @param value The pathId to set.
        * @return This builder for chaining.
        */
@@ -718,12 +726,43 @@ public final class ExpeditionStartRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 path_id = 7;</code>
+       * <code>uint32 path_id = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearPathId() {
         
         pathId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int retcode_ ;
+      /**
+       * <code>int32 retcode = 6;</code>
+       * @return The retcode.
+       */
+      @java.lang.Override
+      public int getRetcode() {
+        return retcode_;
+      }
+      /**
+       * <code>int32 retcode = 6;</code>
+       * @param value The retcode to set.
+       * @return This builder for chaining.
+       */
+      public Builder setRetcode(int value) {
+        
+        retcode_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 retcode = 6;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearRetcode() {
+        
+        retcode_ = 0;
         onChanged();
         return this;
       }
@@ -807,64 +846,33 @@ public final class ExpeditionStartRspOuterClass {
         return this;
       }
 
-      private int retcode_ ;
+      private int unk3300AFGPGIIGAKA_ ;
       /**
-       * <code>int32 retcode = 12;</code>
-       * @return The retcode.
+       * <code>uint32 Unk3300_AFGPGIIGAKA = 10;</code>
+       * @return The unk3300AFGPGIIGAKA.
        */
       @java.lang.Override
-      public int getRetcode() {
-        return retcode_;
+      public int getUnk3300AFGPGIIGAKA() {
+        return unk3300AFGPGIIGAKA_;
       }
       /**
-       * <code>int32 retcode = 12;</code>
-       * @param value The retcode to set.
+       * <code>uint32 Unk3300_AFGPGIIGAKA = 10;</code>
+       * @param value The unk3300AFGPGIIGAKA to set.
        * @return This builder for chaining.
        */
-      public Builder setRetcode(int value) {
+      public Builder setUnk3300AFGPGIIGAKA(int value) {
         
-        retcode_ = value;
+        unk3300AFGPGIIGAKA_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>int32 retcode = 12;</code>
+       * <code>uint32 Unk3300_AFGPGIIGAKA = 10;</code>
        * @return This builder for chaining.
        */
-      public Builder clearRetcode() {
+      public Builder clearUnk3300AFGPGIIGAKA() {
         
-        retcode_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int assistAvatarId_ ;
-      /**
-       * <code>uint32 assist_avatar_id = 2;</code>
-       * @return The assistAvatarId.
-       */
-      @java.lang.Override
-      public int getAssistAvatarId() {
-        return assistAvatarId_;
-      }
-      /**
-       * <code>uint32 assist_avatar_id = 2;</code>
-       * @param value The assistAvatarId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setAssistAvatarId(int value) {
-        
-        assistAvatarId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 assist_avatar_id = 2;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearAssistAvatarId() {
-        
-        assistAvatarId_ = 0;
+        unk3300AFGPGIIGAKA_ = 0;
         onChanged();
         return this;
       }
@@ -935,11 +943,12 @@ public final class ExpeditionStartRspOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\030ExpeditionStartRsp.proto\"|\n\022Expedition" +
-      "StartRsp\022\022\n\nassist_uid\030\001 \001(\r\022\017\n\007path_id\030" +
-      "\007 \001(\r\022\026\n\016avatar_id_list\030\004 \003(\r\022\017\n\007retcode" +
-      "\030\014 \001(\005\022\030\n\020assist_avatar_id\030\002 \001(\rB\033\n\031emu." +
-      "grasscutter.net.protob\006proto3"
+      "\n\030ExpeditionStartRsp.proto\"\210\001\n\022Expeditio" +
+      "nStartRsp\022\033\n\023Unk3300_AIEJKADFLKG\030\005 \001(\r\022\017" +
+      "\n\007path_id\030\003 \001(\r\022\017\n\007retcode\030\006 \001(\005\022\026\n\016avat" +
+      "ar_id_list\030\004 \003(\r\022\033\n\023Unk3300_AFGPGIIGAKA\030" +
+      "\n \001(\rB\033\n\031emu.grasscutter.net.protob\006prot" +
+      "o3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -950,7 +959,7 @@ public final class ExpeditionStartRspOuterClass {
     internal_static_ExpeditionStartRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ExpeditionStartRsp_descriptor,
-        new java.lang.String[] { "AssistUid", "PathId", "AvatarIdList", "Retcode", "AssistAvatarId", });
+        new java.lang.String[] { "Unk3300AIEJKADFLKG", "PathId", "Retcode", "AvatarIdList", "Unk3300AFGPGIIGAKA", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

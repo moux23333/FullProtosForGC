@@ -19,17 +19,21 @@ public final class BartenderCancelOrderReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 quest_id = 3;</code>
+     * <code>uint32 quest_id = 5;</code>
      * @return The questId.
      */
     int getQuestId();
   }
   /**
    * <pre>
-   * CmdId: 8442
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 8249;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code BartenderCancelOrderReq}
@@ -76,7 +80,7 @@ public final class BartenderCancelOrderReqOuterClass {
             case 0:
               done = true;
               break;
-            case 24: {
+            case 40: {
 
               questId_ = input.readUInt32();
               break;
@@ -113,10 +117,10 @@ public final class BartenderCancelOrderReqOuterClass {
               emu.grasscutter.net.proto.BartenderCancelOrderReqOuterClass.BartenderCancelOrderReq.class, emu.grasscutter.net.proto.BartenderCancelOrderReqOuterClass.BartenderCancelOrderReq.Builder.class);
     }
 
-    public static final int QUEST_ID_FIELD_NUMBER = 3;
+    public static final int QUEST_ID_FIELD_NUMBER = 5;
     private int questId_;
     /**
-     * <code>uint32 quest_id = 3;</code>
+     * <code>uint32 quest_id = 5;</code>
      * @return The questId.
      */
     @java.lang.Override
@@ -139,7 +143,7 @@ public final class BartenderCancelOrderReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (questId_ != 0) {
-        output.writeUInt32(3, questId_);
+        output.writeUInt32(5, questId_);
       }
       unknownFields.writeTo(output);
     }
@@ -152,7 +156,7 @@ public final class BartenderCancelOrderReqOuterClass {
       size = 0;
       if (questId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, questId_);
+          .computeUInt32Size(5, questId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -281,10 +285,14 @@ public final class BartenderCancelOrderReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 8442
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 8249;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code BartenderCancelOrderReq}
@@ -435,7 +443,7 @@ public final class BartenderCancelOrderReqOuterClass {
 
       private int questId_ ;
       /**
-       * <code>uint32 quest_id = 3;</code>
+       * <code>uint32 quest_id = 5;</code>
        * @return The questId.
        */
       @java.lang.Override
@@ -443,7 +451,7 @@ public final class BartenderCancelOrderReqOuterClass {
         return questId_;
       }
       /**
-       * <code>uint32 quest_id = 3;</code>
+       * <code>uint32 quest_id = 5;</code>
        * @param value The questId to set.
        * @return This builder for chaining.
        */
@@ -454,7 +462,7 @@ public final class BartenderCancelOrderReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 quest_id = 3;</code>
+       * <code>uint32 quest_id = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearQuestId() {
@@ -531,7 +539,7 @@ public final class BartenderCancelOrderReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\035BartenderCancelOrderReq.proto\"+\n\027Barte" +
-      "nderCancelOrderReq\022\020\n\010quest_id\030\003 \001(\rB\033\n\031" +
+      "nderCancelOrderReq\022\020\n\010quest_id\030\005 \001(\rB\033\n\031" +
       "emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

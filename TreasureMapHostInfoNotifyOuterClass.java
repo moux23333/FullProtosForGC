@@ -19,17 +19,17 @@ public final class TreasureMapHostInfoNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated uint32 mp_challenge_region_list = 8;</code>
+     * <code>repeated uint32 mp_challenge_region_list = 1;</code>
      * @return A list containing the mpChallengeRegionList.
      */
     java.util.List<java.lang.Integer> getMpChallengeRegionListList();
     /**
-     * <code>repeated uint32 mp_challenge_region_list = 8;</code>
+     * <code>repeated uint32 mp_challenge_region_list = 1;</code>
      * @return The count of mpChallengeRegionList.
      */
     int getMpChallengeRegionListCount();
     /**
-     * <code>repeated uint32 mp_challenge_region_list = 8;</code>
+     * <code>repeated uint32 mp_challenge_region_list = 1;</code>
      * @param index The index of the element to return.
      * @return The mpChallengeRegionList at the given index.
      */
@@ -37,9 +37,13 @@ public final class TreasureMapHostInfoNotifyOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 8681
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 8296;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code TreasureMapHostInfoNotify}
@@ -88,7 +92,7 @@ public final class TreasureMapHostInfoNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 64: {
+            case 8: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 mpChallengeRegionList_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
@@ -96,7 +100,7 @@ public final class TreasureMapHostInfoNotifyOuterClass {
               mpChallengeRegionList_.addInt(input.readUInt32());
               break;
             }
-            case 66: {
+            case 10: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -144,10 +148,10 @@ public final class TreasureMapHostInfoNotifyOuterClass {
               emu.grasscutter.net.proto.TreasureMapHostInfoNotifyOuterClass.TreasureMapHostInfoNotify.class, emu.grasscutter.net.proto.TreasureMapHostInfoNotifyOuterClass.TreasureMapHostInfoNotify.Builder.class);
     }
 
-    public static final int MP_CHALLENGE_REGION_LIST_FIELD_NUMBER = 8;
+    public static final int MP_CHALLENGE_REGION_LIST_FIELD_NUMBER = 1;
     private com.google.protobuf.Internal.IntList mpChallengeRegionList_;
     /**
-     * <code>repeated uint32 mp_challenge_region_list = 8;</code>
+     * <code>repeated uint32 mp_challenge_region_list = 1;</code>
      * @return A list containing the mpChallengeRegionList.
      */
     @java.lang.Override
@@ -156,14 +160,14 @@ public final class TreasureMapHostInfoNotifyOuterClass {
       return mpChallengeRegionList_;
     }
     /**
-     * <code>repeated uint32 mp_challenge_region_list = 8;</code>
+     * <code>repeated uint32 mp_challenge_region_list = 1;</code>
      * @return The count of mpChallengeRegionList.
      */
     public int getMpChallengeRegionListCount() {
       return mpChallengeRegionList_.size();
     }
     /**
-     * <code>repeated uint32 mp_challenge_region_list = 8;</code>
+     * <code>repeated uint32 mp_challenge_region_list = 1;</code>
      * @param index The index of the element to return.
      * @return The mpChallengeRegionList at the given index.
      */
@@ -188,7 +192,7 @@ public final class TreasureMapHostInfoNotifyOuterClass {
                         throws java.io.IOException {
       getSerializedSize();
       if (getMpChallengeRegionListList().size() > 0) {
-        output.writeUInt32NoTag(66);
+        output.writeUInt32NoTag(10);
         output.writeUInt32NoTag(mpChallengeRegionListMemoizedSerializedSize);
       }
       for (int i = 0; i < mpChallengeRegionList_.size(); i++) {
@@ -346,9 +350,13 @@ public final class TreasureMapHostInfoNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 8681
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 8296;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code TreasureMapHostInfoNotify}
@@ -518,7 +526,7 @@ public final class TreasureMapHostInfoNotifyOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 mp_challenge_region_list = 8;</code>
+       * <code>repeated uint32 mp_challenge_region_list = 1;</code>
        * @return A list containing the mpChallengeRegionList.
        */
       public java.util.List<java.lang.Integer>
@@ -527,14 +535,14 @@ public final class TreasureMapHostInfoNotifyOuterClass {
                  java.util.Collections.unmodifiableList(mpChallengeRegionList_) : mpChallengeRegionList_;
       }
       /**
-       * <code>repeated uint32 mp_challenge_region_list = 8;</code>
+       * <code>repeated uint32 mp_challenge_region_list = 1;</code>
        * @return The count of mpChallengeRegionList.
        */
       public int getMpChallengeRegionListCount() {
         return mpChallengeRegionList_.size();
       }
       /**
-       * <code>repeated uint32 mp_challenge_region_list = 8;</code>
+       * <code>repeated uint32 mp_challenge_region_list = 1;</code>
        * @param index The index of the element to return.
        * @return The mpChallengeRegionList at the given index.
        */
@@ -542,7 +550,7 @@ public final class TreasureMapHostInfoNotifyOuterClass {
         return mpChallengeRegionList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 mp_challenge_region_list = 8;</code>
+       * <code>repeated uint32 mp_challenge_region_list = 1;</code>
        * @param index The index to set the value at.
        * @param value The mpChallengeRegionList to set.
        * @return This builder for chaining.
@@ -555,7 +563,7 @@ public final class TreasureMapHostInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 mp_challenge_region_list = 8;</code>
+       * <code>repeated uint32 mp_challenge_region_list = 1;</code>
        * @param value The mpChallengeRegionList to add.
        * @return This builder for chaining.
        */
@@ -566,7 +574,7 @@ public final class TreasureMapHostInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 mp_challenge_region_list = 8;</code>
+       * <code>repeated uint32 mp_challenge_region_list = 1;</code>
        * @param values The mpChallengeRegionList to add.
        * @return This builder for chaining.
        */
@@ -579,7 +587,7 @@ public final class TreasureMapHostInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 mp_challenge_region_list = 8;</code>
+       * <code>repeated uint32 mp_challenge_region_list = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearMpChallengeRegionList() {
@@ -657,7 +665,7 @@ public final class TreasureMapHostInfoNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n\037TreasureMapHostInfoNotify.proto\"=\n\031Tre" +
       "asureMapHostInfoNotify\022 \n\030mp_challenge_r" +
-      "egion_list\030\010 \003(\rB\033\n\031emu.grasscutter.net." +
+      "egion_list\030\001 \003(\rB\033\n\031emu.grasscutter.net." +
       "protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

@@ -19,17 +19,21 @@ public final class MichiaeMatsuriStartDarkChallengeReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 worktop_entity_id = 2;</code>
+     * <code>uint32 worktop_entity_id = 15;</code>
      * @return The worktopEntityId.
      */
     int getWorktopEntityId();
   }
   /**
    * <pre>
-   * CmdId: 8054
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 8166;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code MichiaeMatsuriStartDarkChallengeReq}
@@ -76,7 +80,7 @@ public final class MichiaeMatsuriStartDarkChallengeReqOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
+            case 120: {
 
               worktopEntityId_ = input.readUInt32();
               break;
@@ -113,10 +117,10 @@ public final class MichiaeMatsuriStartDarkChallengeReqOuterClass {
               emu.grasscutter.net.proto.MichiaeMatsuriStartDarkChallengeReqOuterClass.MichiaeMatsuriStartDarkChallengeReq.class, emu.grasscutter.net.proto.MichiaeMatsuriStartDarkChallengeReqOuterClass.MichiaeMatsuriStartDarkChallengeReq.Builder.class);
     }
 
-    public static final int WORKTOP_ENTITY_ID_FIELD_NUMBER = 2;
+    public static final int WORKTOP_ENTITY_ID_FIELD_NUMBER = 15;
     private int worktopEntityId_;
     /**
-     * <code>uint32 worktop_entity_id = 2;</code>
+     * <code>uint32 worktop_entity_id = 15;</code>
      * @return The worktopEntityId.
      */
     @java.lang.Override
@@ -139,7 +143,7 @@ public final class MichiaeMatsuriStartDarkChallengeReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (worktopEntityId_ != 0) {
-        output.writeUInt32(2, worktopEntityId_);
+        output.writeUInt32(15, worktopEntityId_);
       }
       unknownFields.writeTo(output);
     }
@@ -152,7 +156,7 @@ public final class MichiaeMatsuriStartDarkChallengeReqOuterClass {
       size = 0;
       if (worktopEntityId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, worktopEntityId_);
+          .computeUInt32Size(15, worktopEntityId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -281,10 +285,14 @@ public final class MichiaeMatsuriStartDarkChallengeReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 8054
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 8166;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code MichiaeMatsuriStartDarkChallengeReq}
@@ -435,7 +443,7 @@ public final class MichiaeMatsuriStartDarkChallengeReqOuterClass {
 
       private int worktopEntityId_ ;
       /**
-       * <code>uint32 worktop_entity_id = 2;</code>
+       * <code>uint32 worktop_entity_id = 15;</code>
        * @return The worktopEntityId.
        */
       @java.lang.Override
@@ -443,7 +451,7 @@ public final class MichiaeMatsuriStartDarkChallengeReqOuterClass {
         return worktopEntityId_;
       }
       /**
-       * <code>uint32 worktop_entity_id = 2;</code>
+       * <code>uint32 worktop_entity_id = 15;</code>
        * @param value The worktopEntityId to set.
        * @return This builder for chaining.
        */
@@ -454,7 +462,7 @@ public final class MichiaeMatsuriStartDarkChallengeReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 worktop_entity_id = 2;</code>
+       * <code>uint32 worktop_entity_id = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearWorktopEntityId() {
@@ -532,7 +540,7 @@ public final class MichiaeMatsuriStartDarkChallengeReqOuterClass {
     java.lang.String[] descriptorData = {
       "\n)MichiaeMatsuriStartDarkChallengeReq.pr" +
       "oto\"@\n#MichiaeMatsuriStartDarkChallengeR" +
-      "eq\022\031\n\021worktop_entity_id\030\002 \001(\rB\033\n\031emu.gra" +
+      "eq\022\031\n\021worktop_entity_id\030\017 \001(\rB\033\n\031emu.gra" +
       "sscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

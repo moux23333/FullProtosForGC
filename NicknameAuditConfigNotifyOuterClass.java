@@ -19,22 +19,26 @@ public final class NicknameAuditConfigNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
+     * <code>uint32 submit_limit = 3;</code>
+     * @return The submitLimit.
+     */
+    int getSubmitLimit();
+
+    /**
      * <code>bool is_open = 8;</code>
      * @return The isOpen.
      */
     boolean getIsOpen();
-
-    /**
-     * <code>uint32 submit_limit = 12;</code>
-     * @return The submitLimit.
-     */
-    int getSubmitLimit();
   }
   /**
    * <pre>
-   * CmdId: 152
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 171;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code NicknameAuditConfigNotify}
@@ -81,14 +85,14 @@ public final class NicknameAuditConfigNotifyOuterClass {
             case 0:
               done = true;
               break;
+            case 24: {
+
+              submitLimit_ = input.readUInt32();
+              break;
+            }
             case 64: {
 
               isOpen_ = input.readBool();
-              break;
-            }
-            case 96: {
-
-              submitLimit_ = input.readUInt32();
               break;
             }
             default: {
@@ -123,6 +127,17 @@ public final class NicknameAuditConfigNotifyOuterClass {
               emu.grasscutter.net.proto.NicknameAuditConfigNotifyOuterClass.NicknameAuditConfigNotify.class, emu.grasscutter.net.proto.NicknameAuditConfigNotifyOuterClass.NicknameAuditConfigNotify.Builder.class);
     }
 
+    public static final int SUBMIT_LIMIT_FIELD_NUMBER = 3;
+    private int submitLimit_;
+    /**
+     * <code>uint32 submit_limit = 3;</code>
+     * @return The submitLimit.
+     */
+    @java.lang.Override
+    public int getSubmitLimit() {
+      return submitLimit_;
+    }
+
     public static final int IS_OPEN_FIELD_NUMBER = 8;
     private boolean isOpen_;
     /**
@@ -132,17 +147,6 @@ public final class NicknameAuditConfigNotifyOuterClass {
     @java.lang.Override
     public boolean getIsOpen() {
       return isOpen_;
-    }
-
-    public static final int SUBMIT_LIMIT_FIELD_NUMBER = 12;
-    private int submitLimit_;
-    /**
-     * <code>uint32 submit_limit = 12;</code>
-     * @return The submitLimit.
-     */
-    @java.lang.Override
-    public int getSubmitLimit() {
-      return submitLimit_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -159,11 +163,11 @@ public final class NicknameAuditConfigNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (submitLimit_ != 0) {
+        output.writeUInt32(3, submitLimit_);
+      }
       if (isOpen_ != false) {
         output.writeBool(8, isOpen_);
-      }
-      if (submitLimit_ != 0) {
-        output.writeUInt32(12, submitLimit_);
       }
       unknownFields.writeTo(output);
     }
@@ -174,13 +178,13 @@ public final class NicknameAuditConfigNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (submitLimit_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(3, submitLimit_);
+      }
       if (isOpen_ != false) {
         size += com.google.protobuf.CodedOutputStream
           .computeBoolSize(8, isOpen_);
-      }
-      if (submitLimit_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, submitLimit_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -197,10 +201,10 @@ public final class NicknameAuditConfigNotifyOuterClass {
       }
       emu.grasscutter.net.proto.NicknameAuditConfigNotifyOuterClass.NicknameAuditConfigNotify other = (emu.grasscutter.net.proto.NicknameAuditConfigNotifyOuterClass.NicknameAuditConfigNotify) obj;
 
-      if (getIsOpen()
-          != other.getIsOpen()) return false;
       if (getSubmitLimit()
           != other.getSubmitLimit()) return false;
+      if (getIsOpen()
+          != other.getIsOpen()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -212,11 +216,11 @@ public final class NicknameAuditConfigNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + SUBMIT_LIMIT_FIELD_NUMBER;
+      hash = (53 * hash) + getSubmitLimit();
       hash = (37 * hash) + IS_OPEN_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsOpen());
-      hash = (37 * hash) + SUBMIT_LIMIT_FIELD_NUMBER;
-      hash = (53 * hash) + getSubmitLimit();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -314,9 +318,13 @@ public final class NicknameAuditConfigNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 152
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 171;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code NicknameAuditConfigNotify}
@@ -356,9 +364,9 @@ public final class NicknameAuditConfigNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        isOpen_ = false;
-
         submitLimit_ = 0;
+
+        isOpen_ = false;
 
         return this;
       }
@@ -386,8 +394,8 @@ public final class NicknameAuditConfigNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.NicknameAuditConfigNotifyOuterClass.NicknameAuditConfigNotify buildPartial() {
         emu.grasscutter.net.proto.NicknameAuditConfigNotifyOuterClass.NicknameAuditConfigNotify result = new emu.grasscutter.net.proto.NicknameAuditConfigNotifyOuterClass.NicknameAuditConfigNotify(this);
-        result.isOpen_ = isOpen_;
         result.submitLimit_ = submitLimit_;
+        result.isOpen_ = isOpen_;
         onBuilt();
         return result;
       }
@@ -436,11 +444,11 @@ public final class NicknameAuditConfigNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.NicknameAuditConfigNotifyOuterClass.NicknameAuditConfigNotify other) {
         if (other == emu.grasscutter.net.proto.NicknameAuditConfigNotifyOuterClass.NicknameAuditConfigNotify.getDefaultInstance()) return this;
-        if (other.getIsOpen() != false) {
-          setIsOpen(other.getIsOpen());
-        }
         if (other.getSubmitLimit() != 0) {
           setSubmitLimit(other.getSubmitLimit());
+        }
+        if (other.getIsOpen() != false) {
+          setIsOpen(other.getIsOpen());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -471,6 +479,37 @@ public final class NicknameAuditConfigNotifyOuterClass {
         return this;
       }
 
+      private int submitLimit_ ;
+      /**
+       * <code>uint32 submit_limit = 3;</code>
+       * @return The submitLimit.
+       */
+      @java.lang.Override
+      public int getSubmitLimit() {
+        return submitLimit_;
+      }
+      /**
+       * <code>uint32 submit_limit = 3;</code>
+       * @param value The submitLimit to set.
+       * @return This builder for chaining.
+       */
+      public Builder setSubmitLimit(int value) {
+        
+        submitLimit_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 submit_limit = 3;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearSubmitLimit() {
+        
+        submitLimit_ = 0;
+        onChanged();
+        return this;
+      }
+
       private boolean isOpen_ ;
       /**
        * <code>bool is_open = 8;</code>
@@ -498,37 +537,6 @@ public final class NicknameAuditConfigNotifyOuterClass {
       public Builder clearIsOpen() {
         
         isOpen_ = false;
-        onChanged();
-        return this;
-      }
-
-      private int submitLimit_ ;
-      /**
-       * <code>uint32 submit_limit = 12;</code>
-       * @return The submitLimit.
-       */
-      @java.lang.Override
-      public int getSubmitLimit() {
-        return submitLimit_;
-      }
-      /**
-       * <code>uint32 submit_limit = 12;</code>
-       * @param value The submitLimit to set.
-       * @return This builder for chaining.
-       */
-      public Builder setSubmitLimit(int value) {
-        
-        submitLimit_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 submit_limit = 12;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearSubmitLimit() {
-        
-        submitLimit_ = 0;
         onChanged();
         return this;
       }
@@ -600,8 +608,8 @@ public final class NicknameAuditConfigNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\037NicknameAuditConfigNotify.proto\"B\n\031Nic" +
-      "knameAuditConfigNotify\022\017\n\007is_open\030\010 \001(\010\022" +
-      "\024\n\014submit_limit\030\014 \001(\rB\033\n\031emu.grasscutter" +
+      "knameAuditConfigNotify\022\024\n\014submit_limit\030\003" +
+      " \001(\r\022\017\n\007is_open\030\010 \001(\010B\033\n\031emu.grasscutter" +
       ".net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -613,7 +621,7 @@ public final class NicknameAuditConfigNotifyOuterClass {
     internal_static_NicknameAuditConfigNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_NicknameAuditConfigNotify_descriptor,
-        new java.lang.String[] { "IsOpen", "SubmitLimit", });
+        new java.lang.String[] { "SubmitLimit", "IsOpen", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

@@ -19,52 +19,52 @@ public final class HomeVerifySceneDataOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .HomeVerifyBlockData blocks = 6;</code>
-     */
-    java.util.List<emu.grasscutter.net.proto.HomeVerifyBlockDataOuterClass.HomeVerifyBlockData> 
-        getBlocksList();
-    /**
-     * <code>repeated .HomeVerifyBlockData blocks = 6;</code>
-     */
-    emu.grasscutter.net.proto.HomeVerifyBlockDataOuterClass.HomeVerifyBlockData getBlocks(int index);
-    /**
-     * <code>repeated .HomeVerifyBlockData blocks = 6;</code>
-     */
-    int getBlocksCount();
-    /**
-     * <code>repeated .HomeVerifyBlockData blocks = 6;</code>
-     */
-    java.util.List<? extends emu.grasscutter.net.proto.HomeVerifyBlockDataOuterClass.HomeVerifyBlockDataOrBuilder> 
-        getBlocksOrBuilderList();
-    /**
-     * <code>repeated .HomeVerifyBlockData blocks = 6;</code>
-     */
-    emu.grasscutter.net.proto.HomeVerifyBlockDataOuterClass.HomeVerifyBlockDataOrBuilder getBlocksOrBuilder(
-        int index);
-
-    /**
-     * <code>uint32 module_id = 11;</code>
-     * @return The moduleId.
-     */
-    int getModuleId();
-
-    /**
-     * <code>uint32 scene_id = 4;</code>
+     * <code>uint32 scene_id = 7;</code>
      * @return The sceneId.
      */
     int getSceneId();
 
     /**
-     * <code>uint32 version = 14;</code>
+     * <code>repeated .HomeVerifyBlockData blocks = 8;</code>
+     */
+    java.util.List<emu.grasscutter.net.proto.HomeVerifyBlockDataOuterClass.HomeVerifyBlockData> 
+        getBlocksList();
+    /**
+     * <code>repeated .HomeVerifyBlockData blocks = 8;</code>
+     */
+    emu.grasscutter.net.proto.HomeVerifyBlockDataOuterClass.HomeVerifyBlockData getBlocks(int index);
+    /**
+     * <code>repeated .HomeVerifyBlockData blocks = 8;</code>
+     */
+    int getBlocksCount();
+    /**
+     * <code>repeated .HomeVerifyBlockData blocks = 8;</code>
+     */
+    java.util.List<? extends emu.grasscutter.net.proto.HomeVerifyBlockDataOuterClass.HomeVerifyBlockDataOrBuilder> 
+        getBlocksOrBuilderList();
+    /**
+     * <code>repeated .HomeVerifyBlockData blocks = 8;</code>
+     */
+    emu.grasscutter.net.proto.HomeVerifyBlockDataOuterClass.HomeVerifyBlockDataOrBuilder getBlocksOrBuilder(
+        int index);
+
+    /**
+     * <code>uint32 version = 2;</code>
      * @return The version.
      */
     int getVersion();
 
     /**
-     * <code>uint32 is_room = 2;</code>
+     * <code>uint32 is_room = 9;</code>
      * @return The isRoom.
      */
     int getIsRoom();
+
+    /**
+     * <code>uint32 module_id = 12;</code>
+     * @return The moduleId.
+     */
+    int getModuleId();
   }
   /**
    * Protobuf type {@code HomeVerifySceneData}
@@ -115,15 +115,15 @@ public final class HomeVerifySceneDataOuterClass {
               break;
             case 16: {
 
-              isRoom_ = input.readUInt32();
+              version_ = input.readUInt32();
               break;
             }
-            case 32: {
+            case 56: {
 
               sceneId_ = input.readUInt32();
               break;
             }
-            case 50: {
+            case 66: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 blocks_ = new java.util.ArrayList<emu.grasscutter.net.proto.HomeVerifyBlockDataOuterClass.HomeVerifyBlockData>();
                 mutable_bitField0_ |= 0x00000001;
@@ -132,14 +132,14 @@ public final class HomeVerifySceneDataOuterClass {
                   input.readMessage(emu.grasscutter.net.proto.HomeVerifyBlockDataOuterClass.HomeVerifyBlockData.parser(), extensionRegistry));
               break;
             }
-            case 88: {
+            case 72: {
 
-              moduleId_ = input.readUInt32();
+              isRoom_ = input.readUInt32();
               break;
             }
-            case 112: {
+            case 96: {
 
-              version_ = input.readUInt32();
+              moduleId_ = input.readUInt32();
               break;
             }
             default: {
@@ -177,61 +177,10 @@ public final class HomeVerifySceneDataOuterClass {
               emu.grasscutter.net.proto.HomeVerifySceneDataOuterClass.HomeVerifySceneData.class, emu.grasscutter.net.proto.HomeVerifySceneDataOuterClass.HomeVerifySceneData.Builder.class);
     }
 
-    public static final int BLOCKS_FIELD_NUMBER = 6;
-    private java.util.List<emu.grasscutter.net.proto.HomeVerifyBlockDataOuterClass.HomeVerifyBlockData> blocks_;
-    /**
-     * <code>repeated .HomeVerifyBlockData blocks = 6;</code>
-     */
-    @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.HomeVerifyBlockDataOuterClass.HomeVerifyBlockData> getBlocksList() {
-      return blocks_;
-    }
-    /**
-     * <code>repeated .HomeVerifyBlockData blocks = 6;</code>
-     */
-    @java.lang.Override
-    public java.util.List<? extends emu.grasscutter.net.proto.HomeVerifyBlockDataOuterClass.HomeVerifyBlockDataOrBuilder> 
-        getBlocksOrBuilderList() {
-      return blocks_;
-    }
-    /**
-     * <code>repeated .HomeVerifyBlockData blocks = 6;</code>
-     */
-    @java.lang.Override
-    public int getBlocksCount() {
-      return blocks_.size();
-    }
-    /**
-     * <code>repeated .HomeVerifyBlockData blocks = 6;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.HomeVerifyBlockDataOuterClass.HomeVerifyBlockData getBlocks(int index) {
-      return blocks_.get(index);
-    }
-    /**
-     * <code>repeated .HomeVerifyBlockData blocks = 6;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.HomeVerifyBlockDataOuterClass.HomeVerifyBlockDataOrBuilder getBlocksOrBuilder(
-        int index) {
-      return blocks_.get(index);
-    }
-
-    public static final int MODULE_ID_FIELD_NUMBER = 11;
-    private int moduleId_;
-    /**
-     * <code>uint32 module_id = 11;</code>
-     * @return The moduleId.
-     */
-    @java.lang.Override
-    public int getModuleId() {
-      return moduleId_;
-    }
-
-    public static final int SCENE_ID_FIELD_NUMBER = 4;
+    public static final int SCENE_ID_FIELD_NUMBER = 7;
     private int sceneId_;
     /**
-     * <code>uint32 scene_id = 4;</code>
+     * <code>uint32 scene_id = 7;</code>
      * @return The sceneId.
      */
     @java.lang.Override
@@ -239,10 +188,50 @@ public final class HomeVerifySceneDataOuterClass {
       return sceneId_;
     }
 
-    public static final int VERSION_FIELD_NUMBER = 14;
+    public static final int BLOCKS_FIELD_NUMBER = 8;
+    private java.util.List<emu.grasscutter.net.proto.HomeVerifyBlockDataOuterClass.HomeVerifyBlockData> blocks_;
+    /**
+     * <code>repeated .HomeVerifyBlockData blocks = 8;</code>
+     */
+    @java.lang.Override
+    public java.util.List<emu.grasscutter.net.proto.HomeVerifyBlockDataOuterClass.HomeVerifyBlockData> getBlocksList() {
+      return blocks_;
+    }
+    /**
+     * <code>repeated .HomeVerifyBlockData blocks = 8;</code>
+     */
+    @java.lang.Override
+    public java.util.List<? extends emu.grasscutter.net.proto.HomeVerifyBlockDataOuterClass.HomeVerifyBlockDataOrBuilder> 
+        getBlocksOrBuilderList() {
+      return blocks_;
+    }
+    /**
+     * <code>repeated .HomeVerifyBlockData blocks = 8;</code>
+     */
+    @java.lang.Override
+    public int getBlocksCount() {
+      return blocks_.size();
+    }
+    /**
+     * <code>repeated .HomeVerifyBlockData blocks = 8;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.HomeVerifyBlockDataOuterClass.HomeVerifyBlockData getBlocks(int index) {
+      return blocks_.get(index);
+    }
+    /**
+     * <code>repeated .HomeVerifyBlockData blocks = 8;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.HomeVerifyBlockDataOuterClass.HomeVerifyBlockDataOrBuilder getBlocksOrBuilder(
+        int index) {
+      return blocks_.get(index);
+    }
+
+    public static final int VERSION_FIELD_NUMBER = 2;
     private int version_;
     /**
-     * <code>uint32 version = 14;</code>
+     * <code>uint32 version = 2;</code>
      * @return The version.
      */
     @java.lang.Override
@@ -250,15 +239,26 @@ public final class HomeVerifySceneDataOuterClass {
       return version_;
     }
 
-    public static final int IS_ROOM_FIELD_NUMBER = 2;
+    public static final int IS_ROOM_FIELD_NUMBER = 9;
     private int isRoom_;
     /**
-     * <code>uint32 is_room = 2;</code>
+     * <code>uint32 is_room = 9;</code>
      * @return The isRoom.
      */
     @java.lang.Override
     public int getIsRoom() {
       return isRoom_;
+    }
+
+    public static final int MODULE_ID_FIELD_NUMBER = 12;
+    private int moduleId_;
+    /**
+     * <code>uint32 module_id = 12;</code>
+     * @return The moduleId.
+     */
+    @java.lang.Override
+    public int getModuleId() {
+      return moduleId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -275,20 +275,20 @@ public final class HomeVerifySceneDataOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (isRoom_ != 0) {
-        output.writeUInt32(2, isRoom_);
+      if (version_ != 0) {
+        output.writeUInt32(2, version_);
       }
       if (sceneId_ != 0) {
-        output.writeUInt32(4, sceneId_);
+        output.writeUInt32(7, sceneId_);
       }
       for (int i = 0; i < blocks_.size(); i++) {
-        output.writeMessage(6, blocks_.get(i));
+        output.writeMessage(8, blocks_.get(i));
+      }
+      if (isRoom_ != 0) {
+        output.writeUInt32(9, isRoom_);
       }
       if (moduleId_ != 0) {
-        output.writeUInt32(11, moduleId_);
-      }
-      if (version_ != 0) {
-        output.writeUInt32(14, version_);
+        output.writeUInt32(12, moduleId_);
       }
       unknownFields.writeTo(output);
     }
@@ -299,25 +299,25 @@ public final class HomeVerifySceneDataOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (isRoom_ != 0) {
+      if (version_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, isRoom_);
+          .computeUInt32Size(2, version_);
       }
       if (sceneId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, sceneId_);
+          .computeUInt32Size(7, sceneId_);
       }
       for (int i = 0; i < blocks_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(6, blocks_.get(i));
+          .computeMessageSize(8, blocks_.get(i));
+      }
+      if (isRoom_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(9, isRoom_);
       }
       if (moduleId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, moduleId_);
-      }
-      if (version_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, version_);
+          .computeUInt32Size(12, moduleId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -334,16 +334,16 @@ public final class HomeVerifySceneDataOuterClass {
       }
       emu.grasscutter.net.proto.HomeVerifySceneDataOuterClass.HomeVerifySceneData other = (emu.grasscutter.net.proto.HomeVerifySceneDataOuterClass.HomeVerifySceneData) obj;
 
-      if (!getBlocksList()
-          .equals(other.getBlocksList())) return false;
-      if (getModuleId()
-          != other.getModuleId()) return false;
       if (getSceneId()
           != other.getSceneId()) return false;
+      if (!getBlocksList()
+          .equals(other.getBlocksList())) return false;
       if (getVersion()
           != other.getVersion()) return false;
       if (getIsRoom()
           != other.getIsRoom()) return false;
+      if (getModuleId()
+          != other.getModuleId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -355,18 +355,18 @@ public final class HomeVerifySceneDataOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + SCENE_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getSceneId();
       if (getBlocksCount() > 0) {
         hash = (37 * hash) + BLOCKS_FIELD_NUMBER;
         hash = (53 * hash) + getBlocksList().hashCode();
       }
-      hash = (37 * hash) + MODULE_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getModuleId();
-      hash = (37 * hash) + SCENE_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getSceneId();
       hash = (37 * hash) + VERSION_FIELD_NUMBER;
       hash = (53 * hash) + getVersion();
       hash = (37 * hash) + IS_ROOM_FIELD_NUMBER;
       hash = (53 * hash) + getIsRoom();
+      hash = (37 * hash) + MODULE_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getModuleId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -501,19 +501,19 @@ public final class HomeVerifySceneDataOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        sceneId_ = 0;
+
         if (blocksBuilder_ == null) {
           blocks_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000001);
         } else {
           blocksBuilder_.clear();
         }
-        moduleId_ = 0;
-
-        sceneId_ = 0;
-
         version_ = 0;
 
         isRoom_ = 0;
+
+        moduleId_ = 0;
 
         return this;
       }
@@ -542,6 +542,7 @@ public final class HomeVerifySceneDataOuterClass {
       public emu.grasscutter.net.proto.HomeVerifySceneDataOuterClass.HomeVerifySceneData buildPartial() {
         emu.grasscutter.net.proto.HomeVerifySceneDataOuterClass.HomeVerifySceneData result = new emu.grasscutter.net.proto.HomeVerifySceneDataOuterClass.HomeVerifySceneData(this);
         int from_bitField0_ = bitField0_;
+        result.sceneId_ = sceneId_;
         if (blocksBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0)) {
             blocks_ = java.util.Collections.unmodifiableList(blocks_);
@@ -551,10 +552,9 @@ public final class HomeVerifySceneDataOuterClass {
         } else {
           result.blocks_ = blocksBuilder_.build();
         }
-        result.moduleId_ = moduleId_;
-        result.sceneId_ = sceneId_;
         result.version_ = version_;
         result.isRoom_ = isRoom_;
+        result.moduleId_ = moduleId_;
         onBuilt();
         return result;
       }
@@ -603,6 +603,9 @@ public final class HomeVerifySceneDataOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.HomeVerifySceneDataOuterClass.HomeVerifySceneData other) {
         if (other == emu.grasscutter.net.proto.HomeVerifySceneDataOuterClass.HomeVerifySceneData.getDefaultInstance()) return this;
+        if (other.getSceneId() != 0) {
+          setSceneId(other.getSceneId());
+        }
         if (blocksBuilder_ == null) {
           if (!other.blocks_.isEmpty()) {
             if (blocks_.isEmpty()) {
@@ -629,17 +632,14 @@ public final class HomeVerifySceneDataOuterClass {
             }
           }
         }
-        if (other.getModuleId() != 0) {
-          setModuleId(other.getModuleId());
-        }
-        if (other.getSceneId() != 0) {
-          setSceneId(other.getSceneId());
-        }
         if (other.getVersion() != 0) {
           setVersion(other.getVersion());
         }
         if (other.getIsRoom() != 0) {
           setIsRoom(other.getIsRoom());
+        }
+        if (other.getModuleId() != 0) {
+          setModuleId(other.getModuleId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -671,6 +671,37 @@ public final class HomeVerifySceneDataOuterClass {
       }
       private int bitField0_;
 
+      private int sceneId_ ;
+      /**
+       * <code>uint32 scene_id = 7;</code>
+       * @return The sceneId.
+       */
+      @java.lang.Override
+      public int getSceneId() {
+        return sceneId_;
+      }
+      /**
+       * <code>uint32 scene_id = 7;</code>
+       * @param value The sceneId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setSceneId(int value) {
+        
+        sceneId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 scene_id = 7;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearSceneId() {
+        
+        sceneId_ = 0;
+        onChanged();
+        return this;
+      }
+
       private java.util.List<emu.grasscutter.net.proto.HomeVerifyBlockDataOuterClass.HomeVerifyBlockData> blocks_ =
         java.util.Collections.emptyList();
       private void ensureBlocksIsMutable() {
@@ -684,7 +715,7 @@ public final class HomeVerifySceneDataOuterClass {
           emu.grasscutter.net.proto.HomeVerifyBlockDataOuterClass.HomeVerifyBlockData, emu.grasscutter.net.proto.HomeVerifyBlockDataOuterClass.HomeVerifyBlockData.Builder, emu.grasscutter.net.proto.HomeVerifyBlockDataOuterClass.HomeVerifyBlockDataOrBuilder> blocksBuilder_;
 
       /**
-       * <code>repeated .HomeVerifyBlockData blocks = 6;</code>
+       * <code>repeated .HomeVerifyBlockData blocks = 8;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.HomeVerifyBlockDataOuterClass.HomeVerifyBlockData> getBlocksList() {
         if (blocksBuilder_ == null) {
@@ -694,7 +725,7 @@ public final class HomeVerifySceneDataOuterClass {
         }
       }
       /**
-       * <code>repeated .HomeVerifyBlockData blocks = 6;</code>
+       * <code>repeated .HomeVerifyBlockData blocks = 8;</code>
        */
       public int getBlocksCount() {
         if (blocksBuilder_ == null) {
@@ -704,7 +735,7 @@ public final class HomeVerifySceneDataOuterClass {
         }
       }
       /**
-       * <code>repeated .HomeVerifyBlockData blocks = 6;</code>
+       * <code>repeated .HomeVerifyBlockData blocks = 8;</code>
        */
       public emu.grasscutter.net.proto.HomeVerifyBlockDataOuterClass.HomeVerifyBlockData getBlocks(int index) {
         if (blocksBuilder_ == null) {
@@ -714,7 +745,7 @@ public final class HomeVerifySceneDataOuterClass {
         }
       }
       /**
-       * <code>repeated .HomeVerifyBlockData blocks = 6;</code>
+       * <code>repeated .HomeVerifyBlockData blocks = 8;</code>
        */
       public Builder setBlocks(
           int index, emu.grasscutter.net.proto.HomeVerifyBlockDataOuterClass.HomeVerifyBlockData value) {
@@ -731,7 +762,7 @@ public final class HomeVerifySceneDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated .HomeVerifyBlockData blocks = 6;</code>
+       * <code>repeated .HomeVerifyBlockData blocks = 8;</code>
        */
       public Builder setBlocks(
           int index, emu.grasscutter.net.proto.HomeVerifyBlockDataOuterClass.HomeVerifyBlockData.Builder builderForValue) {
@@ -745,7 +776,7 @@ public final class HomeVerifySceneDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated .HomeVerifyBlockData blocks = 6;</code>
+       * <code>repeated .HomeVerifyBlockData blocks = 8;</code>
        */
       public Builder addBlocks(emu.grasscutter.net.proto.HomeVerifyBlockDataOuterClass.HomeVerifyBlockData value) {
         if (blocksBuilder_ == null) {
@@ -761,7 +792,7 @@ public final class HomeVerifySceneDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated .HomeVerifyBlockData blocks = 6;</code>
+       * <code>repeated .HomeVerifyBlockData blocks = 8;</code>
        */
       public Builder addBlocks(
           int index, emu.grasscutter.net.proto.HomeVerifyBlockDataOuterClass.HomeVerifyBlockData value) {
@@ -778,7 +809,7 @@ public final class HomeVerifySceneDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated .HomeVerifyBlockData blocks = 6;</code>
+       * <code>repeated .HomeVerifyBlockData blocks = 8;</code>
        */
       public Builder addBlocks(
           emu.grasscutter.net.proto.HomeVerifyBlockDataOuterClass.HomeVerifyBlockData.Builder builderForValue) {
@@ -792,7 +823,7 @@ public final class HomeVerifySceneDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated .HomeVerifyBlockData blocks = 6;</code>
+       * <code>repeated .HomeVerifyBlockData blocks = 8;</code>
        */
       public Builder addBlocks(
           int index, emu.grasscutter.net.proto.HomeVerifyBlockDataOuterClass.HomeVerifyBlockData.Builder builderForValue) {
@@ -806,7 +837,7 @@ public final class HomeVerifySceneDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated .HomeVerifyBlockData blocks = 6;</code>
+       * <code>repeated .HomeVerifyBlockData blocks = 8;</code>
        */
       public Builder addAllBlocks(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.HomeVerifyBlockDataOuterClass.HomeVerifyBlockData> values) {
@@ -821,7 +852,7 @@ public final class HomeVerifySceneDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated .HomeVerifyBlockData blocks = 6;</code>
+       * <code>repeated .HomeVerifyBlockData blocks = 8;</code>
        */
       public Builder clearBlocks() {
         if (blocksBuilder_ == null) {
@@ -834,7 +865,7 @@ public final class HomeVerifySceneDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated .HomeVerifyBlockData blocks = 6;</code>
+       * <code>repeated .HomeVerifyBlockData blocks = 8;</code>
        */
       public Builder removeBlocks(int index) {
         if (blocksBuilder_ == null) {
@@ -847,14 +878,14 @@ public final class HomeVerifySceneDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated .HomeVerifyBlockData blocks = 6;</code>
+       * <code>repeated .HomeVerifyBlockData blocks = 8;</code>
        */
       public emu.grasscutter.net.proto.HomeVerifyBlockDataOuterClass.HomeVerifyBlockData.Builder getBlocksBuilder(
           int index) {
         return getBlocksFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .HomeVerifyBlockData blocks = 6;</code>
+       * <code>repeated .HomeVerifyBlockData blocks = 8;</code>
        */
       public emu.grasscutter.net.proto.HomeVerifyBlockDataOuterClass.HomeVerifyBlockDataOrBuilder getBlocksOrBuilder(
           int index) {
@@ -864,7 +895,7 @@ public final class HomeVerifySceneDataOuterClass {
         }
       }
       /**
-       * <code>repeated .HomeVerifyBlockData blocks = 6;</code>
+       * <code>repeated .HomeVerifyBlockData blocks = 8;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.HomeVerifyBlockDataOuterClass.HomeVerifyBlockDataOrBuilder> 
            getBlocksOrBuilderList() {
@@ -875,14 +906,14 @@ public final class HomeVerifySceneDataOuterClass {
         }
       }
       /**
-       * <code>repeated .HomeVerifyBlockData blocks = 6;</code>
+       * <code>repeated .HomeVerifyBlockData blocks = 8;</code>
        */
       public emu.grasscutter.net.proto.HomeVerifyBlockDataOuterClass.HomeVerifyBlockData.Builder addBlocksBuilder() {
         return getBlocksFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.HomeVerifyBlockDataOuterClass.HomeVerifyBlockData.getDefaultInstance());
       }
       /**
-       * <code>repeated .HomeVerifyBlockData blocks = 6;</code>
+       * <code>repeated .HomeVerifyBlockData blocks = 8;</code>
        */
       public emu.grasscutter.net.proto.HomeVerifyBlockDataOuterClass.HomeVerifyBlockData.Builder addBlocksBuilder(
           int index) {
@@ -890,7 +921,7 @@ public final class HomeVerifySceneDataOuterClass {
             index, emu.grasscutter.net.proto.HomeVerifyBlockDataOuterClass.HomeVerifyBlockData.getDefaultInstance());
       }
       /**
-       * <code>repeated .HomeVerifyBlockData blocks = 6;</code>
+       * <code>repeated .HomeVerifyBlockData blocks = 8;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.HomeVerifyBlockDataOuterClass.HomeVerifyBlockData.Builder> 
            getBlocksBuilderList() {
@@ -911,71 +942,9 @@ public final class HomeVerifySceneDataOuterClass {
         return blocksBuilder_;
       }
 
-      private int moduleId_ ;
-      /**
-       * <code>uint32 module_id = 11;</code>
-       * @return The moduleId.
-       */
-      @java.lang.Override
-      public int getModuleId() {
-        return moduleId_;
-      }
-      /**
-       * <code>uint32 module_id = 11;</code>
-       * @param value The moduleId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setModuleId(int value) {
-        
-        moduleId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 module_id = 11;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearModuleId() {
-        
-        moduleId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int sceneId_ ;
-      /**
-       * <code>uint32 scene_id = 4;</code>
-       * @return The sceneId.
-       */
-      @java.lang.Override
-      public int getSceneId() {
-        return sceneId_;
-      }
-      /**
-       * <code>uint32 scene_id = 4;</code>
-       * @param value The sceneId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setSceneId(int value) {
-        
-        sceneId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 scene_id = 4;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearSceneId() {
-        
-        sceneId_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int version_ ;
       /**
-       * <code>uint32 version = 14;</code>
+       * <code>uint32 version = 2;</code>
        * @return The version.
        */
       @java.lang.Override
@@ -983,7 +952,7 @@ public final class HomeVerifySceneDataOuterClass {
         return version_;
       }
       /**
-       * <code>uint32 version = 14;</code>
+       * <code>uint32 version = 2;</code>
        * @param value The version to set.
        * @return This builder for chaining.
        */
@@ -994,7 +963,7 @@ public final class HomeVerifySceneDataOuterClass {
         return this;
       }
       /**
-       * <code>uint32 version = 14;</code>
+       * <code>uint32 version = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearVersion() {
@@ -1006,7 +975,7 @@ public final class HomeVerifySceneDataOuterClass {
 
       private int isRoom_ ;
       /**
-       * <code>uint32 is_room = 2;</code>
+       * <code>uint32 is_room = 9;</code>
        * @return The isRoom.
        */
       @java.lang.Override
@@ -1014,7 +983,7 @@ public final class HomeVerifySceneDataOuterClass {
         return isRoom_;
       }
       /**
-       * <code>uint32 is_room = 2;</code>
+       * <code>uint32 is_room = 9;</code>
        * @param value The isRoom to set.
        * @return This builder for chaining.
        */
@@ -1025,12 +994,43 @@ public final class HomeVerifySceneDataOuterClass {
         return this;
       }
       /**
-       * <code>uint32 is_room = 2;</code>
+       * <code>uint32 is_room = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsRoom() {
         
         isRoom_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int moduleId_ ;
+      /**
+       * <code>uint32 module_id = 12;</code>
+       * @return The moduleId.
+       */
+      @java.lang.Override
+      public int getModuleId() {
+        return moduleId_;
+      }
+      /**
+       * <code>uint32 module_id = 12;</code>
+       * @param value The moduleId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setModuleId(int value) {
+        
+        moduleId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 module_id = 12;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearModuleId() {
+        
+        moduleId_ = 0;
         onChanged();
         return this;
       }
@@ -1102,10 +1102,10 @@ public final class HomeVerifySceneDataOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\031HomeVerifySceneData.proto\032\031HomeVerifyB" +
-      "lockData.proto\"\202\001\n\023HomeVerifySceneData\022$" +
-      "\n\006blocks\030\006 \003(\0132\024.HomeVerifyBlockData\022\021\n\t" +
-      "module_id\030\013 \001(\r\022\020\n\010scene_id\030\004 \001(\r\022\017\n\007ver" +
-      "sion\030\016 \001(\r\022\017\n\007is_room\030\002 \001(\rB\033\n\031emu.grass" +
+      "lockData.proto\"\202\001\n\023HomeVerifySceneData\022\020" +
+      "\n\010scene_id\030\007 \001(\r\022$\n\006blocks\030\010 \003(\0132\024.HomeV" +
+      "erifyBlockData\022\017\n\007version\030\002 \001(\r\022\017\n\007is_ro" +
+      "om\030\t \001(\r\022\021\n\tmodule_id\030\014 \001(\rB\033\n\031emu.grass" +
       "cutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -1118,7 +1118,7 @@ public final class HomeVerifySceneDataOuterClass {
     internal_static_HomeVerifySceneData_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_HomeVerifySceneData_descriptor,
-        new java.lang.String[] { "Blocks", "ModuleId", "SceneId", "Version", "IsRoom", });
+        new java.lang.String[] { "SceneId", "Blocks", "Version", "IsRoom", "ModuleId", });
     emu.grasscutter.net.proto.HomeVerifyBlockDataOuterClass.getDescriptor();
   }
 

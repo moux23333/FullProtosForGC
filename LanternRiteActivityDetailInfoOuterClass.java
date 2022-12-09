@@ -19,21 +19,6 @@ public final class LanternRiteActivityDetailInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.LanternProjectionInfo projection_info = 13;</code>
-     * @return Whether the projectionInfo field is set.
-     */
-    boolean hasProjectionInfo();
-    /**
-     * <code>.LanternProjectionInfo projection_info = 13;</code>
-     * @return The projectionInfo.
-     */
-    emu.grasscutter.net.proto.LanternProjectionInfoOuterClass.LanternProjectionInfo getProjectionInfo();
-    /**
-     * <code>.LanternProjectionInfo projection_info = 13;</code>
-     */
-    emu.grasscutter.net.proto.LanternProjectionInfoOuterClass.LanternProjectionInfoOrBuilder getProjectionInfoOrBuilder();
-
-    /**
      * <code>repeated .SalvageStageInfo stage_info_list = 5;</code>
      */
     java.util.List<emu.grasscutter.net.proto.SalvageStageInfoOuterClass.SalvageStageInfo> 
@@ -58,37 +43,52 @@ public final class LanternRiteActivityDetailInfoOuterClass {
         int index);
 
     /**
-     * <code>.LanternRiteFireworksInfo fireworks_info = 8;</code>
+     * <code>.LanternRiteFireworksInfo fireworks_info = 15;</code>
      * @return Whether the fireworksInfo field is set.
      */
     boolean hasFireworksInfo();
     /**
-     * <code>.LanternRiteFireworksInfo fireworks_info = 8;</code>
+     * <code>.LanternRiteFireworksInfo fireworks_info = 15;</code>
      * @return The fireworksInfo.
      */
     emu.grasscutter.net.proto.LanternRiteFireworksInfoOuterClass.LanternRiteFireworksInfo getFireworksInfo();
     /**
-     * <code>.LanternRiteFireworksInfo fireworks_info = 8;</code>
+     * <code>.LanternRiteFireworksInfo fireworks_info = 15;</code>
      */
     emu.grasscutter.net.proto.LanternRiteFireworksInfoOuterClass.LanternRiteFireworksInfoOrBuilder getFireworksInfoOrBuilder();
 
     /**
-     * <code>bool is_mini_eldritch_dungeon_open = 2;</code>
-     * @return The isMiniEldritchDungeonOpen.
+     * <code>bool Unk3300_PDFJNCDGKGH = 11;</code>
+     * @return The unk3300PDFJNCDGKGH.
      */
-    boolean getIsMiniEldritchDungeonOpen();
+    boolean getUnk3300PDFJNCDGKGH();
+
+    /**
+     * <code>.LanternProjectionInfo projection_info = 3;</code>
+     * @return Whether the projectionInfo field is set.
+     */
+    boolean hasProjectionInfo();
+    /**
+     * <code>.LanternProjectionInfo projection_info = 3;</code>
+     * @return The projectionInfo.
+     */
+    emu.grasscutter.net.proto.LanternProjectionInfoOuterClass.LanternProjectionInfo getProjectionInfo();
+    /**
+     * <code>.LanternProjectionInfo projection_info = 3;</code>
+     */
+    emu.grasscutter.net.proto.LanternProjectionInfoOuterClass.LanternProjectionInfoOrBuilder getProjectionInfoOrBuilder();
+
+    /**
+     * <code>bool Unk3300_DKBJLCIMBAL = 8;</code>
+     * @return The unk3300DKBJLCIMBAL.
+     */
+    boolean getUnk3300DKBJLCIMBAL();
 
     /**
      * <code>bool is_content_closed = 14;</code>
      * @return The isContentClosed.
      */
     boolean getIsContentClosed();
-
-    /**
-     * <code>bool is_taken_skin_reward = 6;</code>
-     * @return The isTakenSkinReward.
-     */
-    boolean getIsTakenSkinReward();
   }
   /**
    * Protobuf type {@code LanternRiteActivityDetailInfo}
@@ -137,39 +137,7 @@ public final class LanternRiteActivityDetailInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
-
-              isMiniEldritchDungeonOpen_ = input.readBool();
-              break;
-            }
-            case 42: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                stageInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.SalvageStageInfoOuterClass.SalvageStageInfo>();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              stageInfoList_.add(
-                  input.readMessage(emu.grasscutter.net.proto.SalvageStageInfoOuterClass.SalvageStageInfo.parser(), extensionRegistry));
-              break;
-            }
-            case 48: {
-
-              isTakenSkinReward_ = input.readBool();
-              break;
-            }
-            case 66: {
-              emu.grasscutter.net.proto.LanternRiteFireworksInfoOuterClass.LanternRiteFireworksInfo.Builder subBuilder = null;
-              if (fireworksInfo_ != null) {
-                subBuilder = fireworksInfo_.toBuilder();
-              }
-              fireworksInfo_ = input.readMessage(emu.grasscutter.net.proto.LanternRiteFireworksInfoOuterClass.LanternRiteFireworksInfo.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom(fireworksInfo_);
-                fireworksInfo_ = subBuilder.buildPartial();
-              }
-
-              break;
-            }
-            case 106: {
+            case 26: {
               emu.grasscutter.net.proto.LanternProjectionInfoOuterClass.LanternProjectionInfo.Builder subBuilder = null;
               if (projectionInfo_ != null) {
                 subBuilder = projectionInfo_.toBuilder();
@@ -182,9 +150,41 @@ public final class LanternRiteActivityDetailInfoOuterClass {
 
               break;
             }
+            case 42: {
+              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+                stageInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.SalvageStageInfoOuterClass.SalvageStageInfo>();
+                mutable_bitField0_ |= 0x00000001;
+              }
+              stageInfoList_.add(
+                  input.readMessage(emu.grasscutter.net.proto.SalvageStageInfoOuterClass.SalvageStageInfo.parser(), extensionRegistry));
+              break;
+            }
+            case 64: {
+
+              unk3300DKBJLCIMBAL_ = input.readBool();
+              break;
+            }
+            case 88: {
+
+              unk3300PDFJNCDGKGH_ = input.readBool();
+              break;
+            }
             case 112: {
 
               isContentClosed_ = input.readBool();
+              break;
+            }
+            case 122: {
+              emu.grasscutter.net.proto.LanternRiteFireworksInfoOuterClass.LanternRiteFireworksInfo.Builder subBuilder = null;
+              if (fireworksInfo_ != null) {
+                subBuilder = fireworksInfo_.toBuilder();
+              }
+              fireworksInfo_ = input.readMessage(emu.grasscutter.net.proto.LanternRiteFireworksInfoOuterClass.LanternRiteFireworksInfo.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(fireworksInfo_);
+                fireworksInfo_ = subBuilder.buildPartial();
+              }
+
               break;
             }
             default: {
@@ -220,32 +220,6 @@ public final class LanternRiteActivityDetailInfoOuterClass {
       return emu.grasscutter.net.proto.LanternRiteActivityDetailInfoOuterClass.internal_static_LanternRiteActivityDetailInfo_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               emu.grasscutter.net.proto.LanternRiteActivityDetailInfoOuterClass.LanternRiteActivityDetailInfo.class, emu.grasscutter.net.proto.LanternRiteActivityDetailInfoOuterClass.LanternRiteActivityDetailInfo.Builder.class);
-    }
-
-    public static final int PROJECTION_INFO_FIELD_NUMBER = 13;
-    private emu.grasscutter.net.proto.LanternProjectionInfoOuterClass.LanternProjectionInfo projectionInfo_;
-    /**
-     * <code>.LanternProjectionInfo projection_info = 13;</code>
-     * @return Whether the projectionInfo field is set.
-     */
-    @java.lang.Override
-    public boolean hasProjectionInfo() {
-      return projectionInfo_ != null;
-    }
-    /**
-     * <code>.LanternProjectionInfo projection_info = 13;</code>
-     * @return The projectionInfo.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.LanternProjectionInfoOuterClass.LanternProjectionInfo getProjectionInfo() {
-      return projectionInfo_ == null ? emu.grasscutter.net.proto.LanternProjectionInfoOuterClass.LanternProjectionInfo.getDefaultInstance() : projectionInfo_;
-    }
-    /**
-     * <code>.LanternProjectionInfo projection_info = 13;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.LanternProjectionInfoOuterClass.LanternProjectionInfoOrBuilder getProjectionInfoOrBuilder() {
-      return getProjectionInfo();
     }
 
     public static final int STAGE_INFO_LIST_FIELD_NUMBER = 5;
@@ -288,10 +262,10 @@ public final class LanternRiteActivityDetailInfoOuterClass {
       return stageInfoList_.get(index);
     }
 
-    public static final int FIREWORKS_INFO_FIELD_NUMBER = 8;
+    public static final int FIREWORKS_INFO_FIELD_NUMBER = 15;
     private emu.grasscutter.net.proto.LanternRiteFireworksInfoOuterClass.LanternRiteFireworksInfo fireworksInfo_;
     /**
-     * <code>.LanternRiteFireworksInfo fireworks_info = 8;</code>
+     * <code>.LanternRiteFireworksInfo fireworks_info = 15;</code>
      * @return Whether the fireworksInfo field is set.
      */
     @java.lang.Override
@@ -299,7 +273,7 @@ public final class LanternRiteActivityDetailInfoOuterClass {
       return fireworksInfo_ != null;
     }
     /**
-     * <code>.LanternRiteFireworksInfo fireworks_info = 8;</code>
+     * <code>.LanternRiteFireworksInfo fireworks_info = 15;</code>
      * @return The fireworksInfo.
      */
     @java.lang.Override
@@ -307,22 +281,59 @@ public final class LanternRiteActivityDetailInfoOuterClass {
       return fireworksInfo_ == null ? emu.grasscutter.net.proto.LanternRiteFireworksInfoOuterClass.LanternRiteFireworksInfo.getDefaultInstance() : fireworksInfo_;
     }
     /**
-     * <code>.LanternRiteFireworksInfo fireworks_info = 8;</code>
+     * <code>.LanternRiteFireworksInfo fireworks_info = 15;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.LanternRiteFireworksInfoOuterClass.LanternRiteFireworksInfoOrBuilder getFireworksInfoOrBuilder() {
       return getFireworksInfo();
     }
 
-    public static final int IS_MINI_ELDRITCH_DUNGEON_OPEN_FIELD_NUMBER = 2;
-    private boolean isMiniEldritchDungeonOpen_;
+    public static final int UNK3300_PDFJNCDGKGH_FIELD_NUMBER = 11;
+    private boolean unk3300PDFJNCDGKGH_;
     /**
-     * <code>bool is_mini_eldritch_dungeon_open = 2;</code>
-     * @return The isMiniEldritchDungeonOpen.
+     * <code>bool Unk3300_PDFJNCDGKGH = 11;</code>
+     * @return The unk3300PDFJNCDGKGH.
      */
     @java.lang.Override
-    public boolean getIsMiniEldritchDungeonOpen() {
-      return isMiniEldritchDungeonOpen_;
+    public boolean getUnk3300PDFJNCDGKGH() {
+      return unk3300PDFJNCDGKGH_;
+    }
+
+    public static final int PROJECTION_INFO_FIELD_NUMBER = 3;
+    private emu.grasscutter.net.proto.LanternProjectionInfoOuterClass.LanternProjectionInfo projectionInfo_;
+    /**
+     * <code>.LanternProjectionInfo projection_info = 3;</code>
+     * @return Whether the projectionInfo field is set.
+     */
+    @java.lang.Override
+    public boolean hasProjectionInfo() {
+      return projectionInfo_ != null;
+    }
+    /**
+     * <code>.LanternProjectionInfo projection_info = 3;</code>
+     * @return The projectionInfo.
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.LanternProjectionInfoOuterClass.LanternProjectionInfo getProjectionInfo() {
+      return projectionInfo_ == null ? emu.grasscutter.net.proto.LanternProjectionInfoOuterClass.LanternProjectionInfo.getDefaultInstance() : projectionInfo_;
+    }
+    /**
+     * <code>.LanternProjectionInfo projection_info = 3;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.LanternProjectionInfoOuterClass.LanternProjectionInfoOrBuilder getProjectionInfoOrBuilder() {
+      return getProjectionInfo();
+    }
+
+    public static final int UNK3300_DKBJLCIMBAL_FIELD_NUMBER = 8;
+    private boolean unk3300DKBJLCIMBAL_;
+    /**
+     * <code>bool Unk3300_DKBJLCIMBAL = 8;</code>
+     * @return The unk3300DKBJLCIMBAL.
+     */
+    @java.lang.Override
+    public boolean getUnk3300DKBJLCIMBAL() {
+      return unk3300DKBJLCIMBAL_;
     }
 
     public static final int IS_CONTENT_CLOSED_FIELD_NUMBER = 14;
@@ -334,17 +345,6 @@ public final class LanternRiteActivityDetailInfoOuterClass {
     @java.lang.Override
     public boolean getIsContentClosed() {
       return isContentClosed_;
-    }
-
-    public static final int IS_TAKEN_SKIN_REWARD_FIELD_NUMBER = 6;
-    private boolean isTakenSkinReward_;
-    /**
-     * <code>bool is_taken_skin_reward = 6;</code>
-     * @return The isTakenSkinReward.
-     */
-    @java.lang.Override
-    public boolean getIsTakenSkinReward() {
-      return isTakenSkinReward_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -361,23 +361,23 @@ public final class LanternRiteActivityDetailInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (isMiniEldritchDungeonOpen_ != false) {
-        output.writeBool(2, isMiniEldritchDungeonOpen_);
+      if (projectionInfo_ != null) {
+        output.writeMessage(3, getProjectionInfo());
       }
       for (int i = 0; i < stageInfoList_.size(); i++) {
         output.writeMessage(5, stageInfoList_.get(i));
       }
-      if (isTakenSkinReward_ != false) {
-        output.writeBool(6, isTakenSkinReward_);
+      if (unk3300DKBJLCIMBAL_ != false) {
+        output.writeBool(8, unk3300DKBJLCIMBAL_);
       }
-      if (fireworksInfo_ != null) {
-        output.writeMessage(8, getFireworksInfo());
-      }
-      if (projectionInfo_ != null) {
-        output.writeMessage(13, getProjectionInfo());
+      if (unk3300PDFJNCDGKGH_ != false) {
+        output.writeBool(11, unk3300PDFJNCDGKGH_);
       }
       if (isContentClosed_ != false) {
         output.writeBool(14, isContentClosed_);
+      }
+      if (fireworksInfo_ != null) {
+        output.writeMessage(15, getFireworksInfo());
       }
       unknownFields.writeTo(output);
     }
@@ -388,29 +388,29 @@ public final class LanternRiteActivityDetailInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (isMiniEldritchDungeonOpen_ != false) {
+      if (projectionInfo_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(2, isMiniEldritchDungeonOpen_);
+          .computeMessageSize(3, getProjectionInfo());
       }
       for (int i = 0; i < stageInfoList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(5, stageInfoList_.get(i));
       }
-      if (isTakenSkinReward_ != false) {
+      if (unk3300DKBJLCIMBAL_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(6, isTakenSkinReward_);
+          .computeBoolSize(8, unk3300DKBJLCIMBAL_);
       }
-      if (fireworksInfo_ != null) {
+      if (unk3300PDFJNCDGKGH_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(8, getFireworksInfo());
-      }
-      if (projectionInfo_ != null) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(13, getProjectionInfo());
+          .computeBoolSize(11, unk3300PDFJNCDGKGH_);
       }
       if (isContentClosed_ != false) {
         size += com.google.protobuf.CodedOutputStream
           .computeBoolSize(14, isContentClosed_);
+      }
+      if (fireworksInfo_ != null) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(15, getFireworksInfo());
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -427,11 +427,6 @@ public final class LanternRiteActivityDetailInfoOuterClass {
       }
       emu.grasscutter.net.proto.LanternRiteActivityDetailInfoOuterClass.LanternRiteActivityDetailInfo other = (emu.grasscutter.net.proto.LanternRiteActivityDetailInfoOuterClass.LanternRiteActivityDetailInfo) obj;
 
-      if (hasProjectionInfo() != other.hasProjectionInfo()) return false;
-      if (hasProjectionInfo()) {
-        if (!getProjectionInfo()
-            .equals(other.getProjectionInfo())) return false;
-      }
       if (!getStageInfoListList()
           .equals(other.getStageInfoListList())) return false;
       if (hasFireworksInfo() != other.hasFireworksInfo()) return false;
@@ -439,12 +434,17 @@ public final class LanternRiteActivityDetailInfoOuterClass {
         if (!getFireworksInfo()
             .equals(other.getFireworksInfo())) return false;
       }
-      if (getIsMiniEldritchDungeonOpen()
-          != other.getIsMiniEldritchDungeonOpen()) return false;
+      if (getUnk3300PDFJNCDGKGH()
+          != other.getUnk3300PDFJNCDGKGH()) return false;
+      if (hasProjectionInfo() != other.hasProjectionInfo()) return false;
+      if (hasProjectionInfo()) {
+        if (!getProjectionInfo()
+            .equals(other.getProjectionInfo())) return false;
+      }
+      if (getUnk3300DKBJLCIMBAL()
+          != other.getUnk3300DKBJLCIMBAL()) return false;
       if (getIsContentClosed()
           != other.getIsContentClosed()) return false;
-      if (getIsTakenSkinReward()
-          != other.getIsTakenSkinReward()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -456,10 +456,6 @@ public final class LanternRiteActivityDetailInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (hasProjectionInfo()) {
-        hash = (37 * hash) + PROJECTION_INFO_FIELD_NUMBER;
-        hash = (53 * hash) + getProjectionInfo().hashCode();
-      }
       if (getStageInfoListCount() > 0) {
         hash = (37 * hash) + STAGE_INFO_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getStageInfoListList().hashCode();
@@ -468,15 +464,19 @@ public final class LanternRiteActivityDetailInfoOuterClass {
         hash = (37 * hash) + FIREWORKS_INFO_FIELD_NUMBER;
         hash = (53 * hash) + getFireworksInfo().hashCode();
       }
-      hash = (37 * hash) + IS_MINI_ELDRITCH_DUNGEON_OPEN_FIELD_NUMBER;
+      hash = (37 * hash) + UNK3300_PDFJNCDGKGH_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsMiniEldritchDungeonOpen());
+          getUnk3300PDFJNCDGKGH());
+      if (hasProjectionInfo()) {
+        hash = (37 * hash) + PROJECTION_INFO_FIELD_NUMBER;
+        hash = (53 * hash) + getProjectionInfo().hashCode();
+      }
+      hash = (37 * hash) + UNK3300_DKBJLCIMBAL_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getUnk3300DKBJLCIMBAL());
       hash = (37 * hash) + IS_CONTENT_CLOSED_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsContentClosed());
-      hash = (37 * hash) + IS_TAKEN_SKIN_REWARD_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsTakenSkinReward());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -611,12 +611,6 @@ public final class LanternRiteActivityDetailInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        if (projectionInfoBuilder_ == null) {
-          projectionInfo_ = null;
-        } else {
-          projectionInfo_ = null;
-          projectionInfoBuilder_ = null;
-        }
         if (stageInfoListBuilder_ == null) {
           stageInfoList_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000001);
@@ -629,11 +623,17 @@ public final class LanternRiteActivityDetailInfoOuterClass {
           fireworksInfo_ = null;
           fireworksInfoBuilder_ = null;
         }
-        isMiniEldritchDungeonOpen_ = false;
+        unk3300PDFJNCDGKGH_ = false;
+
+        if (projectionInfoBuilder_ == null) {
+          projectionInfo_ = null;
+        } else {
+          projectionInfo_ = null;
+          projectionInfoBuilder_ = null;
+        }
+        unk3300DKBJLCIMBAL_ = false;
 
         isContentClosed_ = false;
-
-        isTakenSkinReward_ = false;
 
         return this;
       }
@@ -662,11 +662,6 @@ public final class LanternRiteActivityDetailInfoOuterClass {
       public emu.grasscutter.net.proto.LanternRiteActivityDetailInfoOuterClass.LanternRiteActivityDetailInfo buildPartial() {
         emu.grasscutter.net.proto.LanternRiteActivityDetailInfoOuterClass.LanternRiteActivityDetailInfo result = new emu.grasscutter.net.proto.LanternRiteActivityDetailInfoOuterClass.LanternRiteActivityDetailInfo(this);
         int from_bitField0_ = bitField0_;
-        if (projectionInfoBuilder_ == null) {
-          result.projectionInfo_ = projectionInfo_;
-        } else {
-          result.projectionInfo_ = projectionInfoBuilder_.build();
-        }
         if (stageInfoListBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0)) {
             stageInfoList_ = java.util.Collections.unmodifiableList(stageInfoList_);
@@ -681,9 +676,14 @@ public final class LanternRiteActivityDetailInfoOuterClass {
         } else {
           result.fireworksInfo_ = fireworksInfoBuilder_.build();
         }
-        result.isMiniEldritchDungeonOpen_ = isMiniEldritchDungeonOpen_;
+        result.unk3300PDFJNCDGKGH_ = unk3300PDFJNCDGKGH_;
+        if (projectionInfoBuilder_ == null) {
+          result.projectionInfo_ = projectionInfo_;
+        } else {
+          result.projectionInfo_ = projectionInfoBuilder_.build();
+        }
+        result.unk3300DKBJLCIMBAL_ = unk3300DKBJLCIMBAL_;
         result.isContentClosed_ = isContentClosed_;
-        result.isTakenSkinReward_ = isTakenSkinReward_;
         onBuilt();
         return result;
       }
@@ -732,9 +732,6 @@ public final class LanternRiteActivityDetailInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.LanternRiteActivityDetailInfoOuterClass.LanternRiteActivityDetailInfo other) {
         if (other == emu.grasscutter.net.proto.LanternRiteActivityDetailInfoOuterClass.LanternRiteActivityDetailInfo.getDefaultInstance()) return this;
-        if (other.hasProjectionInfo()) {
-          mergeProjectionInfo(other.getProjectionInfo());
-        }
         if (stageInfoListBuilder_ == null) {
           if (!other.stageInfoList_.isEmpty()) {
             if (stageInfoList_.isEmpty()) {
@@ -764,14 +761,17 @@ public final class LanternRiteActivityDetailInfoOuterClass {
         if (other.hasFireworksInfo()) {
           mergeFireworksInfo(other.getFireworksInfo());
         }
-        if (other.getIsMiniEldritchDungeonOpen() != false) {
-          setIsMiniEldritchDungeonOpen(other.getIsMiniEldritchDungeonOpen());
+        if (other.getUnk3300PDFJNCDGKGH() != false) {
+          setUnk3300PDFJNCDGKGH(other.getUnk3300PDFJNCDGKGH());
+        }
+        if (other.hasProjectionInfo()) {
+          mergeProjectionInfo(other.getProjectionInfo());
+        }
+        if (other.getUnk3300DKBJLCIMBAL() != false) {
+          setUnk3300DKBJLCIMBAL(other.getUnk3300DKBJLCIMBAL());
         }
         if (other.getIsContentClosed() != false) {
           setIsContentClosed(other.getIsContentClosed());
-        }
-        if (other.getIsTakenSkinReward() != false) {
-          setIsTakenSkinReward(other.getIsTakenSkinReward());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -802,125 +802,6 @@ public final class LanternRiteActivityDetailInfoOuterClass {
         return this;
       }
       private int bitField0_;
-
-      private emu.grasscutter.net.proto.LanternProjectionInfoOuterClass.LanternProjectionInfo projectionInfo_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.LanternProjectionInfoOuterClass.LanternProjectionInfo, emu.grasscutter.net.proto.LanternProjectionInfoOuterClass.LanternProjectionInfo.Builder, emu.grasscutter.net.proto.LanternProjectionInfoOuterClass.LanternProjectionInfoOrBuilder> projectionInfoBuilder_;
-      /**
-       * <code>.LanternProjectionInfo projection_info = 13;</code>
-       * @return Whether the projectionInfo field is set.
-       */
-      public boolean hasProjectionInfo() {
-        return projectionInfoBuilder_ != null || projectionInfo_ != null;
-      }
-      /**
-       * <code>.LanternProjectionInfo projection_info = 13;</code>
-       * @return The projectionInfo.
-       */
-      public emu.grasscutter.net.proto.LanternProjectionInfoOuterClass.LanternProjectionInfo getProjectionInfo() {
-        if (projectionInfoBuilder_ == null) {
-          return projectionInfo_ == null ? emu.grasscutter.net.proto.LanternProjectionInfoOuterClass.LanternProjectionInfo.getDefaultInstance() : projectionInfo_;
-        } else {
-          return projectionInfoBuilder_.getMessage();
-        }
-      }
-      /**
-       * <code>.LanternProjectionInfo projection_info = 13;</code>
-       */
-      public Builder setProjectionInfo(emu.grasscutter.net.proto.LanternProjectionInfoOuterClass.LanternProjectionInfo value) {
-        if (projectionInfoBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          projectionInfo_ = value;
-          onChanged();
-        } else {
-          projectionInfoBuilder_.setMessage(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.LanternProjectionInfo projection_info = 13;</code>
-       */
-      public Builder setProjectionInfo(
-          emu.grasscutter.net.proto.LanternProjectionInfoOuterClass.LanternProjectionInfo.Builder builderForValue) {
-        if (projectionInfoBuilder_ == null) {
-          projectionInfo_ = builderForValue.build();
-          onChanged();
-        } else {
-          projectionInfoBuilder_.setMessage(builderForValue.build());
-        }
-
-        return this;
-      }
-      /**
-       * <code>.LanternProjectionInfo projection_info = 13;</code>
-       */
-      public Builder mergeProjectionInfo(emu.grasscutter.net.proto.LanternProjectionInfoOuterClass.LanternProjectionInfo value) {
-        if (projectionInfoBuilder_ == null) {
-          if (projectionInfo_ != null) {
-            projectionInfo_ =
-              emu.grasscutter.net.proto.LanternProjectionInfoOuterClass.LanternProjectionInfo.newBuilder(projectionInfo_).mergeFrom(value).buildPartial();
-          } else {
-            projectionInfo_ = value;
-          }
-          onChanged();
-        } else {
-          projectionInfoBuilder_.mergeFrom(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.LanternProjectionInfo projection_info = 13;</code>
-       */
-      public Builder clearProjectionInfo() {
-        if (projectionInfoBuilder_ == null) {
-          projectionInfo_ = null;
-          onChanged();
-        } else {
-          projectionInfo_ = null;
-          projectionInfoBuilder_ = null;
-        }
-
-        return this;
-      }
-      /**
-       * <code>.LanternProjectionInfo projection_info = 13;</code>
-       */
-      public emu.grasscutter.net.proto.LanternProjectionInfoOuterClass.LanternProjectionInfo.Builder getProjectionInfoBuilder() {
-        
-        onChanged();
-        return getProjectionInfoFieldBuilder().getBuilder();
-      }
-      /**
-       * <code>.LanternProjectionInfo projection_info = 13;</code>
-       */
-      public emu.grasscutter.net.proto.LanternProjectionInfoOuterClass.LanternProjectionInfoOrBuilder getProjectionInfoOrBuilder() {
-        if (projectionInfoBuilder_ != null) {
-          return projectionInfoBuilder_.getMessageOrBuilder();
-        } else {
-          return projectionInfo_ == null ?
-              emu.grasscutter.net.proto.LanternProjectionInfoOuterClass.LanternProjectionInfo.getDefaultInstance() : projectionInfo_;
-        }
-      }
-      /**
-       * <code>.LanternProjectionInfo projection_info = 13;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.LanternProjectionInfoOuterClass.LanternProjectionInfo, emu.grasscutter.net.proto.LanternProjectionInfoOuterClass.LanternProjectionInfo.Builder, emu.grasscutter.net.proto.LanternProjectionInfoOuterClass.LanternProjectionInfoOrBuilder> 
-          getProjectionInfoFieldBuilder() {
-        if (projectionInfoBuilder_ == null) {
-          projectionInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.LanternProjectionInfoOuterClass.LanternProjectionInfo, emu.grasscutter.net.proto.LanternProjectionInfoOuterClass.LanternProjectionInfo.Builder, emu.grasscutter.net.proto.LanternProjectionInfoOuterClass.LanternProjectionInfoOrBuilder>(
-                  getProjectionInfo(),
-                  getParentForChildren(),
-                  isClean());
-          projectionInfo_ = null;
-        }
-        return projectionInfoBuilder_;
-      }
 
       private java.util.List<emu.grasscutter.net.proto.SalvageStageInfoOuterClass.SalvageStageInfo> stageInfoList_ =
         java.util.Collections.emptyList();
@@ -1166,14 +1047,14 @@ public final class LanternRiteActivityDetailInfoOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.LanternRiteFireworksInfoOuterClass.LanternRiteFireworksInfo, emu.grasscutter.net.proto.LanternRiteFireworksInfoOuterClass.LanternRiteFireworksInfo.Builder, emu.grasscutter.net.proto.LanternRiteFireworksInfoOuterClass.LanternRiteFireworksInfoOrBuilder> fireworksInfoBuilder_;
       /**
-       * <code>.LanternRiteFireworksInfo fireworks_info = 8;</code>
+       * <code>.LanternRiteFireworksInfo fireworks_info = 15;</code>
        * @return Whether the fireworksInfo field is set.
        */
       public boolean hasFireworksInfo() {
         return fireworksInfoBuilder_ != null || fireworksInfo_ != null;
       }
       /**
-       * <code>.LanternRiteFireworksInfo fireworks_info = 8;</code>
+       * <code>.LanternRiteFireworksInfo fireworks_info = 15;</code>
        * @return The fireworksInfo.
        */
       public emu.grasscutter.net.proto.LanternRiteFireworksInfoOuterClass.LanternRiteFireworksInfo getFireworksInfo() {
@@ -1184,7 +1065,7 @@ public final class LanternRiteActivityDetailInfoOuterClass {
         }
       }
       /**
-       * <code>.LanternRiteFireworksInfo fireworks_info = 8;</code>
+       * <code>.LanternRiteFireworksInfo fireworks_info = 15;</code>
        */
       public Builder setFireworksInfo(emu.grasscutter.net.proto.LanternRiteFireworksInfoOuterClass.LanternRiteFireworksInfo value) {
         if (fireworksInfoBuilder_ == null) {
@@ -1200,7 +1081,7 @@ public final class LanternRiteActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>.LanternRiteFireworksInfo fireworks_info = 8;</code>
+       * <code>.LanternRiteFireworksInfo fireworks_info = 15;</code>
        */
       public Builder setFireworksInfo(
           emu.grasscutter.net.proto.LanternRiteFireworksInfoOuterClass.LanternRiteFireworksInfo.Builder builderForValue) {
@@ -1214,7 +1095,7 @@ public final class LanternRiteActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>.LanternRiteFireworksInfo fireworks_info = 8;</code>
+       * <code>.LanternRiteFireworksInfo fireworks_info = 15;</code>
        */
       public Builder mergeFireworksInfo(emu.grasscutter.net.proto.LanternRiteFireworksInfoOuterClass.LanternRiteFireworksInfo value) {
         if (fireworksInfoBuilder_ == null) {
@@ -1232,7 +1113,7 @@ public final class LanternRiteActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>.LanternRiteFireworksInfo fireworks_info = 8;</code>
+       * <code>.LanternRiteFireworksInfo fireworks_info = 15;</code>
        */
       public Builder clearFireworksInfo() {
         if (fireworksInfoBuilder_ == null) {
@@ -1246,7 +1127,7 @@ public final class LanternRiteActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>.LanternRiteFireworksInfo fireworks_info = 8;</code>
+       * <code>.LanternRiteFireworksInfo fireworks_info = 15;</code>
        */
       public emu.grasscutter.net.proto.LanternRiteFireworksInfoOuterClass.LanternRiteFireworksInfo.Builder getFireworksInfoBuilder() {
         
@@ -1254,7 +1135,7 @@ public final class LanternRiteActivityDetailInfoOuterClass {
         return getFireworksInfoFieldBuilder().getBuilder();
       }
       /**
-       * <code>.LanternRiteFireworksInfo fireworks_info = 8;</code>
+       * <code>.LanternRiteFireworksInfo fireworks_info = 15;</code>
        */
       public emu.grasscutter.net.proto.LanternRiteFireworksInfoOuterClass.LanternRiteFireworksInfoOrBuilder getFireworksInfoOrBuilder() {
         if (fireworksInfoBuilder_ != null) {
@@ -1265,7 +1146,7 @@ public final class LanternRiteActivityDetailInfoOuterClass {
         }
       }
       /**
-       * <code>.LanternRiteFireworksInfo fireworks_info = 8;</code>
+       * <code>.LanternRiteFireworksInfo fireworks_info = 15;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.LanternRiteFireworksInfoOuterClass.LanternRiteFireworksInfo, emu.grasscutter.net.proto.LanternRiteFireworksInfoOuterClass.LanternRiteFireworksInfo.Builder, emu.grasscutter.net.proto.LanternRiteFireworksInfoOuterClass.LanternRiteFireworksInfoOrBuilder> 
@@ -1281,33 +1162,183 @@ public final class LanternRiteActivityDetailInfoOuterClass {
         return fireworksInfoBuilder_;
       }
 
-      private boolean isMiniEldritchDungeonOpen_ ;
+      private boolean unk3300PDFJNCDGKGH_ ;
       /**
-       * <code>bool is_mini_eldritch_dungeon_open = 2;</code>
-       * @return The isMiniEldritchDungeonOpen.
+       * <code>bool Unk3300_PDFJNCDGKGH = 11;</code>
+       * @return The unk3300PDFJNCDGKGH.
        */
       @java.lang.Override
-      public boolean getIsMiniEldritchDungeonOpen() {
-        return isMiniEldritchDungeonOpen_;
+      public boolean getUnk3300PDFJNCDGKGH() {
+        return unk3300PDFJNCDGKGH_;
       }
       /**
-       * <code>bool is_mini_eldritch_dungeon_open = 2;</code>
-       * @param value The isMiniEldritchDungeonOpen to set.
+       * <code>bool Unk3300_PDFJNCDGKGH = 11;</code>
+       * @param value The unk3300PDFJNCDGKGH to set.
        * @return This builder for chaining.
        */
-      public Builder setIsMiniEldritchDungeonOpen(boolean value) {
+      public Builder setUnk3300PDFJNCDGKGH(boolean value) {
         
-        isMiniEldritchDungeonOpen_ = value;
+        unk3300PDFJNCDGKGH_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>bool is_mini_eldritch_dungeon_open = 2;</code>
+       * <code>bool Unk3300_PDFJNCDGKGH = 11;</code>
        * @return This builder for chaining.
        */
-      public Builder clearIsMiniEldritchDungeonOpen() {
+      public Builder clearUnk3300PDFJNCDGKGH() {
         
-        isMiniEldritchDungeonOpen_ = false;
+        unk3300PDFJNCDGKGH_ = false;
+        onChanged();
+        return this;
+      }
+
+      private emu.grasscutter.net.proto.LanternProjectionInfoOuterClass.LanternProjectionInfo projectionInfo_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.LanternProjectionInfoOuterClass.LanternProjectionInfo, emu.grasscutter.net.proto.LanternProjectionInfoOuterClass.LanternProjectionInfo.Builder, emu.grasscutter.net.proto.LanternProjectionInfoOuterClass.LanternProjectionInfoOrBuilder> projectionInfoBuilder_;
+      /**
+       * <code>.LanternProjectionInfo projection_info = 3;</code>
+       * @return Whether the projectionInfo field is set.
+       */
+      public boolean hasProjectionInfo() {
+        return projectionInfoBuilder_ != null || projectionInfo_ != null;
+      }
+      /**
+       * <code>.LanternProjectionInfo projection_info = 3;</code>
+       * @return The projectionInfo.
+       */
+      public emu.grasscutter.net.proto.LanternProjectionInfoOuterClass.LanternProjectionInfo getProjectionInfo() {
+        if (projectionInfoBuilder_ == null) {
+          return projectionInfo_ == null ? emu.grasscutter.net.proto.LanternProjectionInfoOuterClass.LanternProjectionInfo.getDefaultInstance() : projectionInfo_;
+        } else {
+          return projectionInfoBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>.LanternProjectionInfo projection_info = 3;</code>
+       */
+      public Builder setProjectionInfo(emu.grasscutter.net.proto.LanternProjectionInfoOuterClass.LanternProjectionInfo value) {
+        if (projectionInfoBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          projectionInfo_ = value;
+          onChanged();
+        } else {
+          projectionInfoBuilder_.setMessage(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.LanternProjectionInfo projection_info = 3;</code>
+       */
+      public Builder setProjectionInfo(
+          emu.grasscutter.net.proto.LanternProjectionInfoOuterClass.LanternProjectionInfo.Builder builderForValue) {
+        if (projectionInfoBuilder_ == null) {
+          projectionInfo_ = builderForValue.build();
+          onChanged();
+        } else {
+          projectionInfoBuilder_.setMessage(builderForValue.build());
+        }
+
+        return this;
+      }
+      /**
+       * <code>.LanternProjectionInfo projection_info = 3;</code>
+       */
+      public Builder mergeProjectionInfo(emu.grasscutter.net.proto.LanternProjectionInfoOuterClass.LanternProjectionInfo value) {
+        if (projectionInfoBuilder_ == null) {
+          if (projectionInfo_ != null) {
+            projectionInfo_ =
+              emu.grasscutter.net.proto.LanternProjectionInfoOuterClass.LanternProjectionInfo.newBuilder(projectionInfo_).mergeFrom(value).buildPartial();
+          } else {
+            projectionInfo_ = value;
+          }
+          onChanged();
+        } else {
+          projectionInfoBuilder_.mergeFrom(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.LanternProjectionInfo projection_info = 3;</code>
+       */
+      public Builder clearProjectionInfo() {
+        if (projectionInfoBuilder_ == null) {
+          projectionInfo_ = null;
+          onChanged();
+        } else {
+          projectionInfo_ = null;
+          projectionInfoBuilder_ = null;
+        }
+
+        return this;
+      }
+      /**
+       * <code>.LanternProjectionInfo projection_info = 3;</code>
+       */
+      public emu.grasscutter.net.proto.LanternProjectionInfoOuterClass.LanternProjectionInfo.Builder getProjectionInfoBuilder() {
+        
+        onChanged();
+        return getProjectionInfoFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.LanternProjectionInfo projection_info = 3;</code>
+       */
+      public emu.grasscutter.net.proto.LanternProjectionInfoOuterClass.LanternProjectionInfoOrBuilder getProjectionInfoOrBuilder() {
+        if (projectionInfoBuilder_ != null) {
+          return projectionInfoBuilder_.getMessageOrBuilder();
+        } else {
+          return projectionInfo_ == null ?
+              emu.grasscutter.net.proto.LanternProjectionInfoOuterClass.LanternProjectionInfo.getDefaultInstance() : projectionInfo_;
+        }
+      }
+      /**
+       * <code>.LanternProjectionInfo projection_info = 3;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.LanternProjectionInfoOuterClass.LanternProjectionInfo, emu.grasscutter.net.proto.LanternProjectionInfoOuterClass.LanternProjectionInfo.Builder, emu.grasscutter.net.proto.LanternProjectionInfoOuterClass.LanternProjectionInfoOrBuilder> 
+          getProjectionInfoFieldBuilder() {
+        if (projectionInfoBuilder_ == null) {
+          projectionInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              emu.grasscutter.net.proto.LanternProjectionInfoOuterClass.LanternProjectionInfo, emu.grasscutter.net.proto.LanternProjectionInfoOuterClass.LanternProjectionInfo.Builder, emu.grasscutter.net.proto.LanternProjectionInfoOuterClass.LanternProjectionInfoOrBuilder>(
+                  getProjectionInfo(),
+                  getParentForChildren(),
+                  isClean());
+          projectionInfo_ = null;
+        }
+        return projectionInfoBuilder_;
+      }
+
+      private boolean unk3300DKBJLCIMBAL_ ;
+      /**
+       * <code>bool Unk3300_DKBJLCIMBAL = 8;</code>
+       * @return The unk3300DKBJLCIMBAL.
+       */
+      @java.lang.Override
+      public boolean getUnk3300DKBJLCIMBAL() {
+        return unk3300DKBJLCIMBAL_;
+      }
+      /**
+       * <code>bool Unk3300_DKBJLCIMBAL = 8;</code>
+       * @param value The unk3300DKBJLCIMBAL to set.
+       * @return This builder for chaining.
+       */
+      public Builder setUnk3300DKBJLCIMBAL(boolean value) {
+        
+        unk3300DKBJLCIMBAL_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool Unk3300_DKBJLCIMBAL = 8;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearUnk3300DKBJLCIMBAL() {
+        
+        unk3300DKBJLCIMBAL_ = false;
         onChanged();
         return this;
       }
@@ -1339,37 +1370,6 @@ public final class LanternRiteActivityDetailInfoOuterClass {
       public Builder clearIsContentClosed() {
         
         isContentClosed_ = false;
-        onChanged();
-        return this;
-      }
-
-      private boolean isTakenSkinReward_ ;
-      /**
-       * <code>bool is_taken_skin_reward = 6;</code>
-       * @return The isTakenSkinReward.
-       */
-      @java.lang.Override
-      public boolean getIsTakenSkinReward() {
-        return isTakenSkinReward_;
-      }
-      /**
-       * <code>bool is_taken_skin_reward = 6;</code>
-       * @param value The isTakenSkinReward to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsTakenSkinReward(boolean value) {
-        
-        isTakenSkinReward_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_taken_skin_reward = 6;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsTakenSkinReward() {
-        
-        isTakenSkinReward_ = false;
         onChanged();
         return this;
       }
@@ -1443,14 +1443,14 @@ public final class LanternRiteActivityDetailInfoOuterClass {
       "\n#LanternRiteActivityDetailInfo.proto\032\033L" +
       "anternProjectionInfo.proto\032\036LanternRiteF" +
       "ireworksInfo.proto\032\026SalvageStageInfo.pro" +
-      "to\"\217\002\n\035LanternRiteActivityDetailInfo\022/\n\017" +
-      "projection_info\030\r \001(\0132\026.LanternProjectio" +
-      "nInfo\022*\n\017stage_info_list\030\005 \003(\0132\021.Salvage" +
-      "StageInfo\0221\n\016fireworks_info\030\010 \001(\0132\031.Lant" +
-      "ernRiteFireworksInfo\022%\n\035is_mini_eldritch" +
-      "_dungeon_open\030\002 \001(\010\022\031\n\021is_content_closed" +
-      "\030\016 \001(\010\022\034\n\024is_taken_skin_reward\030\006 \001(\010B\033\n\031" +
-      "emu.grasscutter.net.protob\006proto3"
+      "to\"\204\002\n\035LanternRiteActivityDetailInfo\022*\n\017" +
+      "stage_info_list\030\005 \003(\0132\021.SalvageStageInfo" +
+      "\0221\n\016fireworks_info\030\017 \001(\0132\031.LanternRiteFi" +
+      "reworksInfo\022\033\n\023Unk3300_PDFJNCDGKGH\030\013 \001(\010" +
+      "\022/\n\017projection_info\030\003 \001(\0132\026.LanternProje" +
+      "ctionInfo\022\033\n\023Unk3300_DKBJLCIMBAL\030\010 \001(\010\022\031" +
+      "\n\021is_content_closed\030\016 \001(\010B\033\n\031emu.grasscu" +
+      "tter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -1464,7 +1464,7 @@ public final class LanternRiteActivityDetailInfoOuterClass {
     internal_static_LanternRiteActivityDetailInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_LanternRiteActivityDetailInfo_descriptor,
-        new java.lang.String[] { "ProjectionInfo", "StageInfoList", "FireworksInfo", "IsMiniEldritchDungeonOpen", "IsContentClosed", "IsTakenSkinReward", });
+        new java.lang.String[] { "StageInfoList", "FireworksInfo", "Unk3300PDFJNCDGKGH", "ProjectionInfo", "Unk3300DKBJLCIMBAL", "IsContentClosed", });
     emu.grasscutter.net.proto.LanternProjectionInfoOuterClass.getDescriptor();
     emu.grasscutter.net.proto.LanternRiteFireworksInfoOuterClass.getDescriptor();
     emu.grasscutter.net.proto.SalvageStageInfoOuterClass.getDescriptor();

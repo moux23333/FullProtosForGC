@@ -19,23 +19,27 @@ public final class WatcherEventNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 add_progress = 6;</code>
+     * <code>uint32 add_progress = 2;</code>
      * @return The addProgress.
      */
     int getAddProgress();
 
     /**
-     * <code>uint32 watcher_id = 9;</code>
+     * <code>uint32 watcher_id = 14;</code>
      * @return The watcherId.
      */
     int getWatcherId();
   }
   /**
    * <pre>
-   * CmdId: 2212
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 2256;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code WatcherEventNotify}
@@ -82,12 +86,12 @@ public final class WatcherEventNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 48: {
+            case 16: {
 
               addProgress_ = input.readUInt32();
               break;
             }
-            case 72: {
+            case 112: {
 
               watcherId_ = input.readUInt32();
               break;
@@ -124,10 +128,10 @@ public final class WatcherEventNotifyOuterClass {
               emu.grasscutter.net.proto.WatcherEventNotifyOuterClass.WatcherEventNotify.class, emu.grasscutter.net.proto.WatcherEventNotifyOuterClass.WatcherEventNotify.Builder.class);
     }
 
-    public static final int ADD_PROGRESS_FIELD_NUMBER = 6;
+    public static final int ADD_PROGRESS_FIELD_NUMBER = 2;
     private int addProgress_;
     /**
-     * <code>uint32 add_progress = 6;</code>
+     * <code>uint32 add_progress = 2;</code>
      * @return The addProgress.
      */
     @java.lang.Override
@@ -135,10 +139,10 @@ public final class WatcherEventNotifyOuterClass {
       return addProgress_;
     }
 
-    public static final int WATCHER_ID_FIELD_NUMBER = 9;
+    public static final int WATCHER_ID_FIELD_NUMBER = 14;
     private int watcherId_;
     /**
-     * <code>uint32 watcher_id = 9;</code>
+     * <code>uint32 watcher_id = 14;</code>
      * @return The watcherId.
      */
     @java.lang.Override
@@ -161,10 +165,10 @@ public final class WatcherEventNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (addProgress_ != 0) {
-        output.writeUInt32(6, addProgress_);
+        output.writeUInt32(2, addProgress_);
       }
       if (watcherId_ != 0) {
-        output.writeUInt32(9, watcherId_);
+        output.writeUInt32(14, watcherId_);
       }
       unknownFields.writeTo(output);
     }
@@ -177,11 +181,11 @@ public final class WatcherEventNotifyOuterClass {
       size = 0;
       if (addProgress_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, addProgress_);
+          .computeUInt32Size(2, addProgress_);
       }
       if (watcherId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, watcherId_);
+          .computeUInt32Size(14, watcherId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -314,10 +318,14 @@ public final class WatcherEventNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 2212
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 2256;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code WatcherEventNotify}
@@ -474,7 +482,7 @@ public final class WatcherEventNotifyOuterClass {
 
       private int addProgress_ ;
       /**
-       * <code>uint32 add_progress = 6;</code>
+       * <code>uint32 add_progress = 2;</code>
        * @return The addProgress.
        */
       @java.lang.Override
@@ -482,7 +490,7 @@ public final class WatcherEventNotifyOuterClass {
         return addProgress_;
       }
       /**
-       * <code>uint32 add_progress = 6;</code>
+       * <code>uint32 add_progress = 2;</code>
        * @param value The addProgress to set.
        * @return This builder for chaining.
        */
@@ -493,7 +501,7 @@ public final class WatcherEventNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 add_progress = 6;</code>
+       * <code>uint32 add_progress = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearAddProgress() {
@@ -505,7 +513,7 @@ public final class WatcherEventNotifyOuterClass {
 
       private int watcherId_ ;
       /**
-       * <code>uint32 watcher_id = 9;</code>
+       * <code>uint32 watcher_id = 14;</code>
        * @return The watcherId.
        */
       @java.lang.Override
@@ -513,7 +521,7 @@ public final class WatcherEventNotifyOuterClass {
         return watcherId_;
       }
       /**
-       * <code>uint32 watcher_id = 9;</code>
+       * <code>uint32 watcher_id = 14;</code>
        * @param value The watcherId to set.
        * @return This builder for chaining.
        */
@@ -524,7 +532,7 @@ public final class WatcherEventNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 watcher_id = 9;</code>
+       * <code>uint32 watcher_id = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearWatcherId() {
@@ -601,8 +609,8 @@ public final class WatcherEventNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\030WatcherEventNotify.proto\">\n\022WatcherEve" +
-      "ntNotify\022\024\n\014add_progress\030\006 \001(\r\022\022\n\nwatche" +
-      "r_id\030\t \001(\rB\033\n\031emu.grasscutter.net.protob" +
+      "ntNotify\022\024\n\014add_progress\030\002 \001(\r\022\022\n\nwatche" +
+      "r_id\030\016 \001(\rB\033\n\031emu.grasscutter.net.protob" +
       "\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

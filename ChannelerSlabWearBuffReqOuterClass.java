@@ -19,29 +19,33 @@ public final class ChannelerSlabWearBuffReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 buff_id = 3;</code>
-     * @return The buffId.
+     * <code>uint32 slot_id = 13;</code>
+     * @return The slotId.
      */
-    int getBuffId();
+    int getSlotId();
 
     /**
-     * <code>bool is_mp = 5;</code>
+     * <code>bool is_mp = 6;</code>
      * @return The isMp.
      */
     boolean getIsMp();
 
     /**
-     * <code>uint32 slot_id = 13;</code>
-     * @return The slotId.
+     * <code>uint32 buff_id = 1;</code>
+     * @return The buffId.
      */
-    int getSlotId();
+    int getBuffId();
   }
   /**
    * <pre>
-   * CmdId: 8107
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 8664;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code ChannelerSlabWearBuffReq}
@@ -88,12 +92,12 @@ public final class ChannelerSlabWearBuffReqOuterClass {
             case 0:
               done = true;
               break;
-            case 24: {
+            case 8: {
 
               buffId_ = input.readUInt32();
               break;
             }
-            case 40: {
+            case 48: {
 
               isMp_ = input.readBool();
               break;
@@ -135,28 +139,6 @@ public final class ChannelerSlabWearBuffReqOuterClass {
               emu.grasscutter.net.proto.ChannelerSlabWearBuffReqOuterClass.ChannelerSlabWearBuffReq.class, emu.grasscutter.net.proto.ChannelerSlabWearBuffReqOuterClass.ChannelerSlabWearBuffReq.Builder.class);
     }
 
-    public static final int BUFF_ID_FIELD_NUMBER = 3;
-    private int buffId_;
-    /**
-     * <code>uint32 buff_id = 3;</code>
-     * @return The buffId.
-     */
-    @java.lang.Override
-    public int getBuffId() {
-      return buffId_;
-    }
-
-    public static final int IS_MP_FIELD_NUMBER = 5;
-    private boolean isMp_;
-    /**
-     * <code>bool is_mp = 5;</code>
-     * @return The isMp.
-     */
-    @java.lang.Override
-    public boolean getIsMp() {
-      return isMp_;
-    }
-
     public static final int SLOT_ID_FIELD_NUMBER = 13;
     private int slotId_;
     /**
@@ -166,6 +148,28 @@ public final class ChannelerSlabWearBuffReqOuterClass {
     @java.lang.Override
     public int getSlotId() {
       return slotId_;
+    }
+
+    public static final int IS_MP_FIELD_NUMBER = 6;
+    private boolean isMp_;
+    /**
+     * <code>bool is_mp = 6;</code>
+     * @return The isMp.
+     */
+    @java.lang.Override
+    public boolean getIsMp() {
+      return isMp_;
+    }
+
+    public static final int BUFF_ID_FIELD_NUMBER = 1;
+    private int buffId_;
+    /**
+     * <code>uint32 buff_id = 1;</code>
+     * @return The buffId.
+     */
+    @java.lang.Override
+    public int getBuffId() {
+      return buffId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -183,10 +187,10 @@ public final class ChannelerSlabWearBuffReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (buffId_ != 0) {
-        output.writeUInt32(3, buffId_);
+        output.writeUInt32(1, buffId_);
       }
       if (isMp_ != false) {
-        output.writeBool(5, isMp_);
+        output.writeBool(6, isMp_);
       }
       if (slotId_ != 0) {
         output.writeUInt32(13, slotId_);
@@ -202,11 +206,11 @@ public final class ChannelerSlabWearBuffReqOuterClass {
       size = 0;
       if (buffId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, buffId_);
+          .computeUInt32Size(1, buffId_);
       }
       if (isMp_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(5, isMp_);
+          .computeBoolSize(6, isMp_);
       }
       if (slotId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
@@ -227,12 +231,12 @@ public final class ChannelerSlabWearBuffReqOuterClass {
       }
       emu.grasscutter.net.proto.ChannelerSlabWearBuffReqOuterClass.ChannelerSlabWearBuffReq other = (emu.grasscutter.net.proto.ChannelerSlabWearBuffReqOuterClass.ChannelerSlabWearBuffReq) obj;
 
-      if (getBuffId()
-          != other.getBuffId()) return false;
-      if (getIsMp()
-          != other.getIsMp()) return false;
       if (getSlotId()
           != other.getSlotId()) return false;
+      if (getIsMp()
+          != other.getIsMp()) return false;
+      if (getBuffId()
+          != other.getBuffId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -244,13 +248,13 @@ public final class ChannelerSlabWearBuffReqOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + BUFF_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getBuffId();
+      hash = (37 * hash) + SLOT_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getSlotId();
       hash = (37 * hash) + IS_MP_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsMp());
-      hash = (37 * hash) + SLOT_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getSlotId();
+      hash = (37 * hash) + BUFF_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getBuffId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -348,10 +352,14 @@ public final class ChannelerSlabWearBuffReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 8107
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 8664;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code ChannelerSlabWearBuffReq}
@@ -391,11 +399,11 @@ public final class ChannelerSlabWearBuffReqOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        buffId_ = 0;
+        slotId_ = 0;
 
         isMp_ = false;
 
-        slotId_ = 0;
+        buffId_ = 0;
 
         return this;
       }
@@ -423,9 +431,9 @@ public final class ChannelerSlabWearBuffReqOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.ChannelerSlabWearBuffReqOuterClass.ChannelerSlabWearBuffReq buildPartial() {
         emu.grasscutter.net.proto.ChannelerSlabWearBuffReqOuterClass.ChannelerSlabWearBuffReq result = new emu.grasscutter.net.proto.ChannelerSlabWearBuffReqOuterClass.ChannelerSlabWearBuffReq(this);
-        result.buffId_ = buffId_;
-        result.isMp_ = isMp_;
         result.slotId_ = slotId_;
+        result.isMp_ = isMp_;
+        result.buffId_ = buffId_;
         onBuilt();
         return result;
       }
@@ -474,14 +482,14 @@ public final class ChannelerSlabWearBuffReqOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.ChannelerSlabWearBuffReqOuterClass.ChannelerSlabWearBuffReq other) {
         if (other == emu.grasscutter.net.proto.ChannelerSlabWearBuffReqOuterClass.ChannelerSlabWearBuffReq.getDefaultInstance()) return this;
-        if (other.getBuffId() != 0) {
-          setBuffId(other.getBuffId());
+        if (other.getSlotId() != 0) {
+          setSlotId(other.getSlotId());
         }
         if (other.getIsMp() != false) {
           setIsMp(other.getIsMp());
         }
-        if (other.getSlotId() != 0) {
-          setSlotId(other.getSlotId());
+        if (other.getBuffId() != 0) {
+          setBuffId(other.getBuffId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -512,68 +520,6 @@ public final class ChannelerSlabWearBuffReqOuterClass {
         return this;
       }
 
-      private int buffId_ ;
-      /**
-       * <code>uint32 buff_id = 3;</code>
-       * @return The buffId.
-       */
-      @java.lang.Override
-      public int getBuffId() {
-        return buffId_;
-      }
-      /**
-       * <code>uint32 buff_id = 3;</code>
-       * @param value The buffId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setBuffId(int value) {
-        
-        buffId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 buff_id = 3;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearBuffId() {
-        
-        buffId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private boolean isMp_ ;
-      /**
-       * <code>bool is_mp = 5;</code>
-       * @return The isMp.
-       */
-      @java.lang.Override
-      public boolean getIsMp() {
-        return isMp_;
-      }
-      /**
-       * <code>bool is_mp = 5;</code>
-       * @param value The isMp to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsMp(boolean value) {
-        
-        isMp_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_mp = 5;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsMp() {
-        
-        isMp_ = false;
-        onChanged();
-        return this;
-      }
-
       private int slotId_ ;
       /**
        * <code>uint32 slot_id = 13;</code>
@@ -601,6 +547,68 @@ public final class ChannelerSlabWearBuffReqOuterClass {
       public Builder clearSlotId() {
         
         slotId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private boolean isMp_ ;
+      /**
+       * <code>bool is_mp = 6;</code>
+       * @return The isMp.
+       */
+      @java.lang.Override
+      public boolean getIsMp() {
+        return isMp_;
+      }
+      /**
+       * <code>bool is_mp = 6;</code>
+       * @param value The isMp to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIsMp(boolean value) {
+        
+        isMp_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool is_mp = 6;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsMp() {
+        
+        isMp_ = false;
+        onChanged();
+        return this;
+      }
+
+      private int buffId_ ;
+      /**
+       * <code>uint32 buff_id = 1;</code>
+       * @return The buffId.
+       */
+      @java.lang.Override
+      public int getBuffId() {
+        return buffId_;
+      }
+      /**
+       * <code>uint32 buff_id = 1;</code>
+       * @param value The buffId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setBuffId(int value) {
+        
+        buffId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 buff_id = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearBuffId() {
+        
+        buffId_ = 0;
         onChanged();
         return this;
       }
@@ -672,8 +680,8 @@ public final class ChannelerSlabWearBuffReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\036ChannelerSlabWearBuffReq.proto\"K\n\030Chan" +
-      "nelerSlabWearBuffReq\022\017\n\007buff_id\030\003 \001(\r\022\r\n" +
-      "\005is_mp\030\005 \001(\010\022\017\n\007slot_id\030\r \001(\rB\033\n\031emu.gra" +
+      "nelerSlabWearBuffReq\022\017\n\007slot_id\030\r \001(\r\022\r\n" +
+      "\005is_mp\030\006 \001(\010\022\017\n\007buff_id\030\001 \001(\rB\033\n\031emu.gra" +
       "sscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -685,7 +693,7 @@ public final class ChannelerSlabWearBuffReqOuterClass {
     internal_static_ChannelerSlabWearBuffReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ChannelerSlabWearBuffReq_descriptor,
-        new java.lang.String[] { "BuffId", "IsMp", "SlotId", });
+        new java.lang.String[] { "SlotId", "IsMp", "BuffId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

@@ -19,29 +19,33 @@ public final class ToTheMoonRemoveObstacleReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 handle = 12;</code>
+     * <code>int32 handle = 15;</code>
      * @return The handle.
      */
     int getHandle();
 
     /**
-     * <code>uint32 scene_id = 10;</code>
+     * <code>uint32 scene_id = 7;</code>
      * @return The sceneId.
      */
     int getSceneId();
 
     /**
-     * <code>int32 query_id = 11;</code>
+     * <code>int32 query_id = 6;</code>
      * @return The queryId.
      */
     int getQueryId();
   }
   /**
    * <pre>
-   * CmdId: 6190
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 6147;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code ToTheMoonRemoveObstacleReq}
@@ -88,17 +92,17 @@ public final class ToTheMoonRemoveObstacleReqOuterClass {
             case 0:
               done = true;
               break;
-            case 80: {
-
-              sceneId_ = input.readUInt32();
-              break;
-            }
-            case 88: {
+            case 48: {
 
               queryId_ = input.readInt32();
               break;
             }
-            case 96: {
+            case 56: {
+
+              sceneId_ = input.readUInt32();
+              break;
+            }
+            case 120: {
 
               handle_ = input.readInt32();
               break;
@@ -243,10 +247,10 @@ public final class ToTheMoonRemoveObstacleReqOuterClass {
       // @@protoc_insertion_point(enum_scope:ToTheMoonRemoveObstacleReq.ObstacleType)
     }
 
-    public static final int HANDLE_FIELD_NUMBER = 12;
+    public static final int HANDLE_FIELD_NUMBER = 15;
     private int handle_;
     /**
-     * <code>int32 handle = 12;</code>
+     * <code>int32 handle = 15;</code>
      * @return The handle.
      */
     @java.lang.Override
@@ -254,10 +258,10 @@ public final class ToTheMoonRemoveObstacleReqOuterClass {
       return handle_;
     }
 
-    public static final int SCENE_ID_FIELD_NUMBER = 10;
+    public static final int SCENE_ID_FIELD_NUMBER = 7;
     private int sceneId_;
     /**
-     * <code>uint32 scene_id = 10;</code>
+     * <code>uint32 scene_id = 7;</code>
      * @return The sceneId.
      */
     @java.lang.Override
@@ -265,10 +269,10 @@ public final class ToTheMoonRemoveObstacleReqOuterClass {
       return sceneId_;
     }
 
-    public static final int QUERY_ID_FIELD_NUMBER = 11;
+    public static final int QUERY_ID_FIELD_NUMBER = 6;
     private int queryId_;
     /**
-     * <code>int32 query_id = 11;</code>
+     * <code>int32 query_id = 6;</code>
      * @return The queryId.
      */
     @java.lang.Override
@@ -290,14 +294,14 @@ public final class ToTheMoonRemoveObstacleReqOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (sceneId_ != 0) {
-        output.writeUInt32(10, sceneId_);
-      }
       if (queryId_ != 0) {
-        output.writeInt32(11, queryId_);
+        output.writeInt32(6, queryId_);
+      }
+      if (sceneId_ != 0) {
+        output.writeUInt32(7, sceneId_);
       }
       if (handle_ != 0) {
-        output.writeInt32(12, handle_);
+        output.writeInt32(15, handle_);
       }
       unknownFields.writeTo(output);
     }
@@ -308,17 +312,17 @@ public final class ToTheMoonRemoveObstacleReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (sceneId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, sceneId_);
-      }
       if (queryId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(11, queryId_);
+          .computeInt32Size(6, queryId_);
+      }
+      if (sceneId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(7, sceneId_);
       }
       if (handle_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(12, handle_);
+          .computeInt32Size(15, handle_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -455,10 +459,14 @@ public final class ToTheMoonRemoveObstacleReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 6190
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 6147;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code ToTheMoonRemoveObstacleReq}
@@ -621,7 +629,7 @@ public final class ToTheMoonRemoveObstacleReqOuterClass {
 
       private int handle_ ;
       /**
-       * <code>int32 handle = 12;</code>
+       * <code>int32 handle = 15;</code>
        * @return The handle.
        */
       @java.lang.Override
@@ -629,7 +637,7 @@ public final class ToTheMoonRemoveObstacleReqOuterClass {
         return handle_;
       }
       /**
-       * <code>int32 handle = 12;</code>
+       * <code>int32 handle = 15;</code>
        * @param value The handle to set.
        * @return This builder for chaining.
        */
@@ -640,7 +648,7 @@ public final class ToTheMoonRemoveObstacleReqOuterClass {
         return this;
       }
       /**
-       * <code>int32 handle = 12;</code>
+       * <code>int32 handle = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearHandle() {
@@ -652,7 +660,7 @@ public final class ToTheMoonRemoveObstacleReqOuterClass {
 
       private int sceneId_ ;
       /**
-       * <code>uint32 scene_id = 10;</code>
+       * <code>uint32 scene_id = 7;</code>
        * @return The sceneId.
        */
       @java.lang.Override
@@ -660,7 +668,7 @@ public final class ToTheMoonRemoveObstacleReqOuterClass {
         return sceneId_;
       }
       /**
-       * <code>uint32 scene_id = 10;</code>
+       * <code>uint32 scene_id = 7;</code>
        * @param value The sceneId to set.
        * @return This builder for chaining.
        */
@@ -671,7 +679,7 @@ public final class ToTheMoonRemoveObstacleReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 scene_id = 10;</code>
+       * <code>uint32 scene_id = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearSceneId() {
@@ -683,7 +691,7 @@ public final class ToTheMoonRemoveObstacleReqOuterClass {
 
       private int queryId_ ;
       /**
-       * <code>int32 query_id = 11;</code>
+       * <code>int32 query_id = 6;</code>
        * @return The queryId.
        */
       @java.lang.Override
@@ -691,7 +699,7 @@ public final class ToTheMoonRemoveObstacleReqOuterClass {
         return queryId_;
       }
       /**
-       * <code>int32 query_id = 11;</code>
+       * <code>int32 query_id = 6;</code>
        * @param value The queryId to set.
        * @return This builder for chaining.
        */
@@ -702,7 +710,7 @@ public final class ToTheMoonRemoveObstacleReqOuterClass {
         return this;
       }
       /**
-       * <code>int32 query_id = 11;</code>
+       * <code>int32 query_id = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearQueryId() {
@@ -779,8 +787,8 @@ public final class ToTheMoonRemoveObstacleReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n ToTheMoonRemoveObstacleReq.proto\"\222\001\n\032T" +
-      "oTheMoonRemoveObstacleReq\022\016\n\006handle\030\014 \001(" +
-      "\005\022\020\n\010scene_id\030\n \001(\r\022\020\n\010query_id\030\013 \001(\005\"@\n" +
+      "oTheMoonRemoveObstacleReq\022\016\n\006handle\030\017 \001(" +
+      "\005\022\020\n\010scene_id\030\007 \001(\r\022\020\n\010query_id\030\006 \001(\005\"@\n" +
       "\014ObstacleType\022\025\n\021OBSTACLE_TYPE_BOX\020\000\022\031\n\025" +
       "OBSTACLE_TYPE_CAPSULE\020\001B\033\n\031emu.grasscutt" +
       "er.net.protob\006proto3"

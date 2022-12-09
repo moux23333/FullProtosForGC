@@ -19,82 +19,86 @@ public final class CrystalLinkDungeonInfoNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .CrystalLinkBuffInfo buff_info_list = 8;</code>
+     * <code>repeated .CrystalLinkBuffInfo buff_info_list = 11;</code>
      */
     java.util.List<emu.grasscutter.net.proto.CrystalLinkBuffInfoOuterClass.CrystalLinkBuffInfo> 
         getBuffInfoListList();
     /**
-     * <code>repeated .CrystalLinkBuffInfo buff_info_list = 8;</code>
+     * <code>repeated .CrystalLinkBuffInfo buff_info_list = 11;</code>
      */
     emu.grasscutter.net.proto.CrystalLinkBuffInfoOuterClass.CrystalLinkBuffInfo getBuffInfoList(int index);
     /**
-     * <code>repeated .CrystalLinkBuffInfo buff_info_list = 8;</code>
+     * <code>repeated .CrystalLinkBuffInfo buff_info_list = 11;</code>
      */
     int getBuffInfoListCount();
     /**
-     * <code>repeated .CrystalLinkBuffInfo buff_info_list = 8;</code>
+     * <code>repeated .CrystalLinkBuffInfo buff_info_list = 11;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.CrystalLinkBuffInfoOuterClass.CrystalLinkBuffInfoOrBuilder> 
         getBuffInfoListOrBuilderList();
     /**
-     * <code>repeated .CrystalLinkBuffInfo buff_info_list = 8;</code>
+     * <code>repeated .CrystalLinkBuffInfo buff_info_list = 11;</code>
      */
     emu.grasscutter.net.proto.CrystalLinkBuffInfoOuterClass.CrystalLinkBuffInfoOrBuilder getBuffInfoListOrBuilder(
         int index);
 
     /**
-     * <code>uint32 level_id = 1;</code>
+     * <code>uint32 level_id = 5;</code>
      * @return The levelId.
      */
     int getLevelId();
 
     /**
-     * <code>bool is_upper_part = 15;</code>
+     * <code>bool is_upper_part = 13;</code>
      * @return The isUpperPart.
      */
     boolean getIsUpperPart();
 
     /**
-     * <code>uint32 difficulty_id = 11;</code>
+     * <code>uint32 difficulty_id = 14;</code>
      * @return The difficultyId.
      */
     int getDifficultyId();
 
     /**
-     * <code>repeated .CrystalLinkDungeonAvatarInfo dungeon_avatar_info_list = 3;</code>
+     * <code>repeated .CrystalLinkDungeonAvatarInfo dungeon_avatar_info_list = 12;</code>
      */
     java.util.List<emu.grasscutter.net.proto.CrystalLinkDungeonAvatarInfoOuterClass.CrystalLinkDungeonAvatarInfo> 
         getDungeonAvatarInfoListList();
     /**
-     * <code>repeated .CrystalLinkDungeonAvatarInfo dungeon_avatar_info_list = 3;</code>
+     * <code>repeated .CrystalLinkDungeonAvatarInfo dungeon_avatar_info_list = 12;</code>
      */
     emu.grasscutter.net.proto.CrystalLinkDungeonAvatarInfoOuterClass.CrystalLinkDungeonAvatarInfo getDungeonAvatarInfoList(int index);
     /**
-     * <code>repeated .CrystalLinkDungeonAvatarInfo dungeon_avatar_info_list = 3;</code>
+     * <code>repeated .CrystalLinkDungeonAvatarInfo dungeon_avatar_info_list = 12;</code>
      */
     int getDungeonAvatarInfoListCount();
     /**
-     * <code>repeated .CrystalLinkDungeonAvatarInfo dungeon_avatar_info_list = 3;</code>
+     * <code>repeated .CrystalLinkDungeonAvatarInfo dungeon_avatar_info_list = 12;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.CrystalLinkDungeonAvatarInfoOuterClass.CrystalLinkDungeonAvatarInfoOrBuilder> 
         getDungeonAvatarInfoListOrBuilderList();
     /**
-     * <code>repeated .CrystalLinkDungeonAvatarInfo dungeon_avatar_info_list = 3;</code>
+     * <code>repeated .CrystalLinkDungeonAvatarInfo dungeon_avatar_info_list = 12;</code>
      */
     emu.grasscutter.net.proto.CrystalLinkDungeonAvatarInfoOuterClass.CrystalLinkDungeonAvatarInfoOrBuilder getDungeonAvatarInfoListOrBuilder(
         int index);
 
     /**
-     * <code>uint32 init_gallery_progress = 7;</code>
+     * <code>uint32 init_gallery_progress = 4;</code>
      * @return The initGalleryProgress.
      */
     int getInitGalleryProgress();
   }
   /**
    * <pre>
-   * CmdId: 8858
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 8408;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code CrystalLinkDungeonInfoNotify}
@@ -144,26 +148,17 @@ public final class CrystalLinkDungeonInfoNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
-
-              levelId_ = input.readUInt32();
-              break;
-            }
-            case 26: {
-              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
-                dungeonAvatarInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.CrystalLinkDungeonAvatarInfoOuterClass.CrystalLinkDungeonAvatarInfo>();
-                mutable_bitField0_ |= 0x00000002;
-              }
-              dungeonAvatarInfoList_.add(
-                  input.readMessage(emu.grasscutter.net.proto.CrystalLinkDungeonAvatarInfoOuterClass.CrystalLinkDungeonAvatarInfo.parser(), extensionRegistry));
-              break;
-            }
-            case 56: {
+            case 32: {
 
               initGalleryProgress_ = input.readUInt32();
               break;
             }
-            case 66: {
+            case 40: {
+
+              levelId_ = input.readUInt32();
+              break;
+            }
+            case 90: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 buffInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.CrystalLinkBuffInfoOuterClass.CrystalLinkBuffInfo>();
                 mutable_bitField0_ |= 0x00000001;
@@ -172,14 +167,23 @@ public final class CrystalLinkDungeonInfoNotifyOuterClass {
                   input.readMessage(emu.grasscutter.net.proto.CrystalLinkBuffInfoOuterClass.CrystalLinkBuffInfo.parser(), extensionRegistry));
               break;
             }
-            case 88: {
-
-              difficultyId_ = input.readUInt32();
+            case 98: {
+              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
+                dungeonAvatarInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.CrystalLinkDungeonAvatarInfoOuterClass.CrystalLinkDungeonAvatarInfo>();
+                mutable_bitField0_ |= 0x00000002;
+              }
+              dungeonAvatarInfoList_.add(
+                  input.readMessage(emu.grasscutter.net.proto.CrystalLinkDungeonAvatarInfoOuterClass.CrystalLinkDungeonAvatarInfo.parser(), extensionRegistry));
               break;
             }
-            case 120: {
+            case 104: {
 
               isUpperPart_ = input.readBool();
+              break;
+            }
+            case 112: {
+
+              difficultyId_ = input.readUInt32();
               break;
             }
             default: {
@@ -197,11 +201,11 @@ public final class CrystalLinkDungeonInfoNotifyOuterClass {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
       } finally {
-        if (((mutable_bitField0_ & 0x00000002) != 0)) {
-          dungeonAvatarInfoList_ = java.util.Collections.unmodifiableList(dungeonAvatarInfoList_);
-        }
         if (((mutable_bitField0_ & 0x00000001) != 0)) {
           buffInfoList_ = java.util.Collections.unmodifiableList(buffInfoList_);
+        }
+        if (((mutable_bitField0_ & 0x00000002) != 0)) {
+          dungeonAvatarInfoList_ = java.util.Collections.unmodifiableList(dungeonAvatarInfoList_);
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -220,17 +224,17 @@ public final class CrystalLinkDungeonInfoNotifyOuterClass {
               emu.grasscutter.net.proto.CrystalLinkDungeonInfoNotifyOuterClass.CrystalLinkDungeonInfoNotify.class, emu.grasscutter.net.proto.CrystalLinkDungeonInfoNotifyOuterClass.CrystalLinkDungeonInfoNotify.Builder.class);
     }
 
-    public static final int BUFF_INFO_LIST_FIELD_NUMBER = 8;
+    public static final int BUFF_INFO_LIST_FIELD_NUMBER = 11;
     private java.util.List<emu.grasscutter.net.proto.CrystalLinkBuffInfoOuterClass.CrystalLinkBuffInfo> buffInfoList_;
     /**
-     * <code>repeated .CrystalLinkBuffInfo buff_info_list = 8;</code>
+     * <code>repeated .CrystalLinkBuffInfo buff_info_list = 11;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.CrystalLinkBuffInfoOuterClass.CrystalLinkBuffInfo> getBuffInfoListList() {
       return buffInfoList_;
     }
     /**
-     * <code>repeated .CrystalLinkBuffInfo buff_info_list = 8;</code>
+     * <code>repeated .CrystalLinkBuffInfo buff_info_list = 11;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.CrystalLinkBuffInfoOuterClass.CrystalLinkBuffInfoOrBuilder> 
@@ -238,21 +242,21 @@ public final class CrystalLinkDungeonInfoNotifyOuterClass {
       return buffInfoList_;
     }
     /**
-     * <code>repeated .CrystalLinkBuffInfo buff_info_list = 8;</code>
+     * <code>repeated .CrystalLinkBuffInfo buff_info_list = 11;</code>
      */
     @java.lang.Override
     public int getBuffInfoListCount() {
       return buffInfoList_.size();
     }
     /**
-     * <code>repeated .CrystalLinkBuffInfo buff_info_list = 8;</code>
+     * <code>repeated .CrystalLinkBuffInfo buff_info_list = 11;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.CrystalLinkBuffInfoOuterClass.CrystalLinkBuffInfo getBuffInfoList(int index) {
       return buffInfoList_.get(index);
     }
     /**
-     * <code>repeated .CrystalLinkBuffInfo buff_info_list = 8;</code>
+     * <code>repeated .CrystalLinkBuffInfo buff_info_list = 11;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.CrystalLinkBuffInfoOuterClass.CrystalLinkBuffInfoOrBuilder getBuffInfoListOrBuilder(
@@ -260,10 +264,10 @@ public final class CrystalLinkDungeonInfoNotifyOuterClass {
       return buffInfoList_.get(index);
     }
 
-    public static final int LEVEL_ID_FIELD_NUMBER = 1;
+    public static final int LEVEL_ID_FIELD_NUMBER = 5;
     private int levelId_;
     /**
-     * <code>uint32 level_id = 1;</code>
+     * <code>uint32 level_id = 5;</code>
      * @return The levelId.
      */
     @java.lang.Override
@@ -271,10 +275,10 @@ public final class CrystalLinkDungeonInfoNotifyOuterClass {
       return levelId_;
     }
 
-    public static final int IS_UPPER_PART_FIELD_NUMBER = 15;
+    public static final int IS_UPPER_PART_FIELD_NUMBER = 13;
     private boolean isUpperPart_;
     /**
-     * <code>bool is_upper_part = 15;</code>
+     * <code>bool is_upper_part = 13;</code>
      * @return The isUpperPart.
      */
     @java.lang.Override
@@ -282,10 +286,10 @@ public final class CrystalLinkDungeonInfoNotifyOuterClass {
       return isUpperPart_;
     }
 
-    public static final int DIFFICULTY_ID_FIELD_NUMBER = 11;
+    public static final int DIFFICULTY_ID_FIELD_NUMBER = 14;
     private int difficultyId_;
     /**
-     * <code>uint32 difficulty_id = 11;</code>
+     * <code>uint32 difficulty_id = 14;</code>
      * @return The difficultyId.
      */
     @java.lang.Override
@@ -293,17 +297,17 @@ public final class CrystalLinkDungeonInfoNotifyOuterClass {
       return difficultyId_;
     }
 
-    public static final int DUNGEON_AVATAR_INFO_LIST_FIELD_NUMBER = 3;
+    public static final int DUNGEON_AVATAR_INFO_LIST_FIELD_NUMBER = 12;
     private java.util.List<emu.grasscutter.net.proto.CrystalLinkDungeonAvatarInfoOuterClass.CrystalLinkDungeonAvatarInfo> dungeonAvatarInfoList_;
     /**
-     * <code>repeated .CrystalLinkDungeonAvatarInfo dungeon_avatar_info_list = 3;</code>
+     * <code>repeated .CrystalLinkDungeonAvatarInfo dungeon_avatar_info_list = 12;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.CrystalLinkDungeonAvatarInfoOuterClass.CrystalLinkDungeonAvatarInfo> getDungeonAvatarInfoListList() {
       return dungeonAvatarInfoList_;
     }
     /**
-     * <code>repeated .CrystalLinkDungeonAvatarInfo dungeon_avatar_info_list = 3;</code>
+     * <code>repeated .CrystalLinkDungeonAvatarInfo dungeon_avatar_info_list = 12;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.CrystalLinkDungeonAvatarInfoOuterClass.CrystalLinkDungeonAvatarInfoOrBuilder> 
@@ -311,21 +315,21 @@ public final class CrystalLinkDungeonInfoNotifyOuterClass {
       return dungeonAvatarInfoList_;
     }
     /**
-     * <code>repeated .CrystalLinkDungeonAvatarInfo dungeon_avatar_info_list = 3;</code>
+     * <code>repeated .CrystalLinkDungeonAvatarInfo dungeon_avatar_info_list = 12;</code>
      */
     @java.lang.Override
     public int getDungeonAvatarInfoListCount() {
       return dungeonAvatarInfoList_.size();
     }
     /**
-     * <code>repeated .CrystalLinkDungeonAvatarInfo dungeon_avatar_info_list = 3;</code>
+     * <code>repeated .CrystalLinkDungeonAvatarInfo dungeon_avatar_info_list = 12;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.CrystalLinkDungeonAvatarInfoOuterClass.CrystalLinkDungeonAvatarInfo getDungeonAvatarInfoList(int index) {
       return dungeonAvatarInfoList_.get(index);
     }
     /**
-     * <code>repeated .CrystalLinkDungeonAvatarInfo dungeon_avatar_info_list = 3;</code>
+     * <code>repeated .CrystalLinkDungeonAvatarInfo dungeon_avatar_info_list = 12;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.CrystalLinkDungeonAvatarInfoOuterClass.CrystalLinkDungeonAvatarInfoOrBuilder getDungeonAvatarInfoListOrBuilder(
@@ -333,10 +337,10 @@ public final class CrystalLinkDungeonInfoNotifyOuterClass {
       return dungeonAvatarInfoList_.get(index);
     }
 
-    public static final int INIT_GALLERY_PROGRESS_FIELD_NUMBER = 7;
+    public static final int INIT_GALLERY_PROGRESS_FIELD_NUMBER = 4;
     private int initGalleryProgress_;
     /**
-     * <code>uint32 init_gallery_progress = 7;</code>
+     * <code>uint32 init_gallery_progress = 4;</code>
      * @return The initGalleryProgress.
      */
     @java.lang.Override
@@ -358,23 +362,23 @@ public final class CrystalLinkDungeonInfoNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (levelId_ != 0) {
-        output.writeUInt32(1, levelId_);
-      }
-      for (int i = 0; i < dungeonAvatarInfoList_.size(); i++) {
-        output.writeMessage(3, dungeonAvatarInfoList_.get(i));
-      }
       if (initGalleryProgress_ != 0) {
-        output.writeUInt32(7, initGalleryProgress_);
+        output.writeUInt32(4, initGalleryProgress_);
+      }
+      if (levelId_ != 0) {
+        output.writeUInt32(5, levelId_);
       }
       for (int i = 0; i < buffInfoList_.size(); i++) {
-        output.writeMessage(8, buffInfoList_.get(i));
+        output.writeMessage(11, buffInfoList_.get(i));
       }
-      if (difficultyId_ != 0) {
-        output.writeUInt32(11, difficultyId_);
+      for (int i = 0; i < dungeonAvatarInfoList_.size(); i++) {
+        output.writeMessage(12, dungeonAvatarInfoList_.get(i));
       }
       if (isUpperPart_ != false) {
-        output.writeBool(15, isUpperPart_);
+        output.writeBool(13, isUpperPart_);
+      }
+      if (difficultyId_ != 0) {
+        output.writeUInt32(14, difficultyId_);
       }
       unknownFields.writeTo(output);
     }
@@ -385,29 +389,29 @@ public final class CrystalLinkDungeonInfoNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (levelId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, levelId_);
-      }
-      for (int i = 0; i < dungeonAvatarInfoList_.size(); i++) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(3, dungeonAvatarInfoList_.get(i));
-      }
       if (initGalleryProgress_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, initGalleryProgress_);
+          .computeUInt32Size(4, initGalleryProgress_);
+      }
+      if (levelId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(5, levelId_);
       }
       for (int i = 0; i < buffInfoList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(8, buffInfoList_.get(i));
+          .computeMessageSize(11, buffInfoList_.get(i));
       }
-      if (difficultyId_ != 0) {
+      for (int i = 0; i < dungeonAvatarInfoList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, difficultyId_);
+          .computeMessageSize(12, dungeonAvatarInfoList_.get(i));
       }
       if (isUpperPart_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(15, isUpperPart_);
+          .computeBoolSize(13, isUpperPart_);
+      }
+      if (difficultyId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(14, difficultyId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -561,9 +565,13 @@ public final class CrystalLinkDungeonInfoNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 8858
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 8408;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code CrystalLinkDungeonInfoNotify}
@@ -829,7 +837,7 @@ public final class CrystalLinkDungeonInfoNotifyOuterClass {
           emu.grasscutter.net.proto.CrystalLinkBuffInfoOuterClass.CrystalLinkBuffInfo, emu.grasscutter.net.proto.CrystalLinkBuffInfoOuterClass.CrystalLinkBuffInfo.Builder, emu.grasscutter.net.proto.CrystalLinkBuffInfoOuterClass.CrystalLinkBuffInfoOrBuilder> buffInfoListBuilder_;
 
       /**
-       * <code>repeated .CrystalLinkBuffInfo buff_info_list = 8;</code>
+       * <code>repeated .CrystalLinkBuffInfo buff_info_list = 11;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.CrystalLinkBuffInfoOuterClass.CrystalLinkBuffInfo> getBuffInfoListList() {
         if (buffInfoListBuilder_ == null) {
@@ -839,7 +847,7 @@ public final class CrystalLinkDungeonInfoNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .CrystalLinkBuffInfo buff_info_list = 8;</code>
+       * <code>repeated .CrystalLinkBuffInfo buff_info_list = 11;</code>
        */
       public int getBuffInfoListCount() {
         if (buffInfoListBuilder_ == null) {
@@ -849,7 +857,7 @@ public final class CrystalLinkDungeonInfoNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .CrystalLinkBuffInfo buff_info_list = 8;</code>
+       * <code>repeated .CrystalLinkBuffInfo buff_info_list = 11;</code>
        */
       public emu.grasscutter.net.proto.CrystalLinkBuffInfoOuterClass.CrystalLinkBuffInfo getBuffInfoList(int index) {
         if (buffInfoListBuilder_ == null) {
@@ -859,7 +867,7 @@ public final class CrystalLinkDungeonInfoNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .CrystalLinkBuffInfo buff_info_list = 8;</code>
+       * <code>repeated .CrystalLinkBuffInfo buff_info_list = 11;</code>
        */
       public Builder setBuffInfoList(
           int index, emu.grasscutter.net.proto.CrystalLinkBuffInfoOuterClass.CrystalLinkBuffInfo value) {
@@ -876,7 +884,7 @@ public final class CrystalLinkDungeonInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .CrystalLinkBuffInfo buff_info_list = 8;</code>
+       * <code>repeated .CrystalLinkBuffInfo buff_info_list = 11;</code>
        */
       public Builder setBuffInfoList(
           int index, emu.grasscutter.net.proto.CrystalLinkBuffInfoOuterClass.CrystalLinkBuffInfo.Builder builderForValue) {
@@ -890,7 +898,7 @@ public final class CrystalLinkDungeonInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .CrystalLinkBuffInfo buff_info_list = 8;</code>
+       * <code>repeated .CrystalLinkBuffInfo buff_info_list = 11;</code>
        */
       public Builder addBuffInfoList(emu.grasscutter.net.proto.CrystalLinkBuffInfoOuterClass.CrystalLinkBuffInfo value) {
         if (buffInfoListBuilder_ == null) {
@@ -906,7 +914,7 @@ public final class CrystalLinkDungeonInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .CrystalLinkBuffInfo buff_info_list = 8;</code>
+       * <code>repeated .CrystalLinkBuffInfo buff_info_list = 11;</code>
        */
       public Builder addBuffInfoList(
           int index, emu.grasscutter.net.proto.CrystalLinkBuffInfoOuterClass.CrystalLinkBuffInfo value) {
@@ -923,7 +931,7 @@ public final class CrystalLinkDungeonInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .CrystalLinkBuffInfo buff_info_list = 8;</code>
+       * <code>repeated .CrystalLinkBuffInfo buff_info_list = 11;</code>
        */
       public Builder addBuffInfoList(
           emu.grasscutter.net.proto.CrystalLinkBuffInfoOuterClass.CrystalLinkBuffInfo.Builder builderForValue) {
@@ -937,7 +945,7 @@ public final class CrystalLinkDungeonInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .CrystalLinkBuffInfo buff_info_list = 8;</code>
+       * <code>repeated .CrystalLinkBuffInfo buff_info_list = 11;</code>
        */
       public Builder addBuffInfoList(
           int index, emu.grasscutter.net.proto.CrystalLinkBuffInfoOuterClass.CrystalLinkBuffInfo.Builder builderForValue) {
@@ -951,7 +959,7 @@ public final class CrystalLinkDungeonInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .CrystalLinkBuffInfo buff_info_list = 8;</code>
+       * <code>repeated .CrystalLinkBuffInfo buff_info_list = 11;</code>
        */
       public Builder addAllBuffInfoList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.CrystalLinkBuffInfoOuterClass.CrystalLinkBuffInfo> values) {
@@ -966,7 +974,7 @@ public final class CrystalLinkDungeonInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .CrystalLinkBuffInfo buff_info_list = 8;</code>
+       * <code>repeated .CrystalLinkBuffInfo buff_info_list = 11;</code>
        */
       public Builder clearBuffInfoList() {
         if (buffInfoListBuilder_ == null) {
@@ -979,7 +987,7 @@ public final class CrystalLinkDungeonInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .CrystalLinkBuffInfo buff_info_list = 8;</code>
+       * <code>repeated .CrystalLinkBuffInfo buff_info_list = 11;</code>
        */
       public Builder removeBuffInfoList(int index) {
         if (buffInfoListBuilder_ == null) {
@@ -992,14 +1000,14 @@ public final class CrystalLinkDungeonInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .CrystalLinkBuffInfo buff_info_list = 8;</code>
+       * <code>repeated .CrystalLinkBuffInfo buff_info_list = 11;</code>
        */
       public emu.grasscutter.net.proto.CrystalLinkBuffInfoOuterClass.CrystalLinkBuffInfo.Builder getBuffInfoListBuilder(
           int index) {
         return getBuffInfoListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .CrystalLinkBuffInfo buff_info_list = 8;</code>
+       * <code>repeated .CrystalLinkBuffInfo buff_info_list = 11;</code>
        */
       public emu.grasscutter.net.proto.CrystalLinkBuffInfoOuterClass.CrystalLinkBuffInfoOrBuilder getBuffInfoListOrBuilder(
           int index) {
@@ -1009,7 +1017,7 @@ public final class CrystalLinkDungeonInfoNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .CrystalLinkBuffInfo buff_info_list = 8;</code>
+       * <code>repeated .CrystalLinkBuffInfo buff_info_list = 11;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.CrystalLinkBuffInfoOuterClass.CrystalLinkBuffInfoOrBuilder> 
            getBuffInfoListOrBuilderList() {
@@ -1020,14 +1028,14 @@ public final class CrystalLinkDungeonInfoNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .CrystalLinkBuffInfo buff_info_list = 8;</code>
+       * <code>repeated .CrystalLinkBuffInfo buff_info_list = 11;</code>
        */
       public emu.grasscutter.net.proto.CrystalLinkBuffInfoOuterClass.CrystalLinkBuffInfo.Builder addBuffInfoListBuilder() {
         return getBuffInfoListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.CrystalLinkBuffInfoOuterClass.CrystalLinkBuffInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .CrystalLinkBuffInfo buff_info_list = 8;</code>
+       * <code>repeated .CrystalLinkBuffInfo buff_info_list = 11;</code>
        */
       public emu.grasscutter.net.proto.CrystalLinkBuffInfoOuterClass.CrystalLinkBuffInfo.Builder addBuffInfoListBuilder(
           int index) {
@@ -1035,7 +1043,7 @@ public final class CrystalLinkDungeonInfoNotifyOuterClass {
             index, emu.grasscutter.net.proto.CrystalLinkBuffInfoOuterClass.CrystalLinkBuffInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .CrystalLinkBuffInfo buff_info_list = 8;</code>
+       * <code>repeated .CrystalLinkBuffInfo buff_info_list = 11;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.CrystalLinkBuffInfoOuterClass.CrystalLinkBuffInfo.Builder> 
            getBuffInfoListBuilderList() {
@@ -1058,7 +1066,7 @@ public final class CrystalLinkDungeonInfoNotifyOuterClass {
 
       private int levelId_ ;
       /**
-       * <code>uint32 level_id = 1;</code>
+       * <code>uint32 level_id = 5;</code>
        * @return The levelId.
        */
       @java.lang.Override
@@ -1066,7 +1074,7 @@ public final class CrystalLinkDungeonInfoNotifyOuterClass {
         return levelId_;
       }
       /**
-       * <code>uint32 level_id = 1;</code>
+       * <code>uint32 level_id = 5;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
        */
@@ -1077,7 +1085,7 @@ public final class CrystalLinkDungeonInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 level_id = 1;</code>
+       * <code>uint32 level_id = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearLevelId() {
@@ -1089,7 +1097,7 @@ public final class CrystalLinkDungeonInfoNotifyOuterClass {
 
       private boolean isUpperPart_ ;
       /**
-       * <code>bool is_upper_part = 15;</code>
+       * <code>bool is_upper_part = 13;</code>
        * @return The isUpperPart.
        */
       @java.lang.Override
@@ -1097,7 +1105,7 @@ public final class CrystalLinkDungeonInfoNotifyOuterClass {
         return isUpperPart_;
       }
       /**
-       * <code>bool is_upper_part = 15;</code>
+       * <code>bool is_upper_part = 13;</code>
        * @param value The isUpperPart to set.
        * @return This builder for chaining.
        */
@@ -1108,7 +1116,7 @@ public final class CrystalLinkDungeonInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>bool is_upper_part = 15;</code>
+       * <code>bool is_upper_part = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsUpperPart() {
@@ -1120,7 +1128,7 @@ public final class CrystalLinkDungeonInfoNotifyOuterClass {
 
       private int difficultyId_ ;
       /**
-       * <code>uint32 difficulty_id = 11;</code>
+       * <code>uint32 difficulty_id = 14;</code>
        * @return The difficultyId.
        */
       @java.lang.Override
@@ -1128,7 +1136,7 @@ public final class CrystalLinkDungeonInfoNotifyOuterClass {
         return difficultyId_;
       }
       /**
-       * <code>uint32 difficulty_id = 11;</code>
+       * <code>uint32 difficulty_id = 14;</code>
        * @param value The difficultyId to set.
        * @return This builder for chaining.
        */
@@ -1139,7 +1147,7 @@ public final class CrystalLinkDungeonInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 difficulty_id = 11;</code>
+       * <code>uint32 difficulty_id = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearDifficultyId() {
@@ -1162,7 +1170,7 @@ public final class CrystalLinkDungeonInfoNotifyOuterClass {
           emu.grasscutter.net.proto.CrystalLinkDungeonAvatarInfoOuterClass.CrystalLinkDungeonAvatarInfo, emu.grasscutter.net.proto.CrystalLinkDungeonAvatarInfoOuterClass.CrystalLinkDungeonAvatarInfo.Builder, emu.grasscutter.net.proto.CrystalLinkDungeonAvatarInfoOuterClass.CrystalLinkDungeonAvatarInfoOrBuilder> dungeonAvatarInfoListBuilder_;
 
       /**
-       * <code>repeated .CrystalLinkDungeonAvatarInfo dungeon_avatar_info_list = 3;</code>
+       * <code>repeated .CrystalLinkDungeonAvatarInfo dungeon_avatar_info_list = 12;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.CrystalLinkDungeonAvatarInfoOuterClass.CrystalLinkDungeonAvatarInfo> getDungeonAvatarInfoListList() {
         if (dungeonAvatarInfoListBuilder_ == null) {
@@ -1172,7 +1180,7 @@ public final class CrystalLinkDungeonInfoNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .CrystalLinkDungeonAvatarInfo dungeon_avatar_info_list = 3;</code>
+       * <code>repeated .CrystalLinkDungeonAvatarInfo dungeon_avatar_info_list = 12;</code>
        */
       public int getDungeonAvatarInfoListCount() {
         if (dungeonAvatarInfoListBuilder_ == null) {
@@ -1182,7 +1190,7 @@ public final class CrystalLinkDungeonInfoNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .CrystalLinkDungeonAvatarInfo dungeon_avatar_info_list = 3;</code>
+       * <code>repeated .CrystalLinkDungeonAvatarInfo dungeon_avatar_info_list = 12;</code>
        */
       public emu.grasscutter.net.proto.CrystalLinkDungeonAvatarInfoOuterClass.CrystalLinkDungeonAvatarInfo getDungeonAvatarInfoList(int index) {
         if (dungeonAvatarInfoListBuilder_ == null) {
@@ -1192,7 +1200,7 @@ public final class CrystalLinkDungeonInfoNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .CrystalLinkDungeonAvatarInfo dungeon_avatar_info_list = 3;</code>
+       * <code>repeated .CrystalLinkDungeonAvatarInfo dungeon_avatar_info_list = 12;</code>
        */
       public Builder setDungeonAvatarInfoList(
           int index, emu.grasscutter.net.proto.CrystalLinkDungeonAvatarInfoOuterClass.CrystalLinkDungeonAvatarInfo value) {
@@ -1209,7 +1217,7 @@ public final class CrystalLinkDungeonInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .CrystalLinkDungeonAvatarInfo dungeon_avatar_info_list = 3;</code>
+       * <code>repeated .CrystalLinkDungeonAvatarInfo dungeon_avatar_info_list = 12;</code>
        */
       public Builder setDungeonAvatarInfoList(
           int index, emu.grasscutter.net.proto.CrystalLinkDungeonAvatarInfoOuterClass.CrystalLinkDungeonAvatarInfo.Builder builderForValue) {
@@ -1223,7 +1231,7 @@ public final class CrystalLinkDungeonInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .CrystalLinkDungeonAvatarInfo dungeon_avatar_info_list = 3;</code>
+       * <code>repeated .CrystalLinkDungeonAvatarInfo dungeon_avatar_info_list = 12;</code>
        */
       public Builder addDungeonAvatarInfoList(emu.grasscutter.net.proto.CrystalLinkDungeonAvatarInfoOuterClass.CrystalLinkDungeonAvatarInfo value) {
         if (dungeonAvatarInfoListBuilder_ == null) {
@@ -1239,7 +1247,7 @@ public final class CrystalLinkDungeonInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .CrystalLinkDungeonAvatarInfo dungeon_avatar_info_list = 3;</code>
+       * <code>repeated .CrystalLinkDungeonAvatarInfo dungeon_avatar_info_list = 12;</code>
        */
       public Builder addDungeonAvatarInfoList(
           int index, emu.grasscutter.net.proto.CrystalLinkDungeonAvatarInfoOuterClass.CrystalLinkDungeonAvatarInfo value) {
@@ -1256,7 +1264,7 @@ public final class CrystalLinkDungeonInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .CrystalLinkDungeonAvatarInfo dungeon_avatar_info_list = 3;</code>
+       * <code>repeated .CrystalLinkDungeonAvatarInfo dungeon_avatar_info_list = 12;</code>
        */
       public Builder addDungeonAvatarInfoList(
           emu.grasscutter.net.proto.CrystalLinkDungeonAvatarInfoOuterClass.CrystalLinkDungeonAvatarInfo.Builder builderForValue) {
@@ -1270,7 +1278,7 @@ public final class CrystalLinkDungeonInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .CrystalLinkDungeonAvatarInfo dungeon_avatar_info_list = 3;</code>
+       * <code>repeated .CrystalLinkDungeonAvatarInfo dungeon_avatar_info_list = 12;</code>
        */
       public Builder addDungeonAvatarInfoList(
           int index, emu.grasscutter.net.proto.CrystalLinkDungeonAvatarInfoOuterClass.CrystalLinkDungeonAvatarInfo.Builder builderForValue) {
@@ -1284,7 +1292,7 @@ public final class CrystalLinkDungeonInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .CrystalLinkDungeonAvatarInfo dungeon_avatar_info_list = 3;</code>
+       * <code>repeated .CrystalLinkDungeonAvatarInfo dungeon_avatar_info_list = 12;</code>
        */
       public Builder addAllDungeonAvatarInfoList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.CrystalLinkDungeonAvatarInfoOuterClass.CrystalLinkDungeonAvatarInfo> values) {
@@ -1299,7 +1307,7 @@ public final class CrystalLinkDungeonInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .CrystalLinkDungeonAvatarInfo dungeon_avatar_info_list = 3;</code>
+       * <code>repeated .CrystalLinkDungeonAvatarInfo dungeon_avatar_info_list = 12;</code>
        */
       public Builder clearDungeonAvatarInfoList() {
         if (dungeonAvatarInfoListBuilder_ == null) {
@@ -1312,7 +1320,7 @@ public final class CrystalLinkDungeonInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .CrystalLinkDungeonAvatarInfo dungeon_avatar_info_list = 3;</code>
+       * <code>repeated .CrystalLinkDungeonAvatarInfo dungeon_avatar_info_list = 12;</code>
        */
       public Builder removeDungeonAvatarInfoList(int index) {
         if (dungeonAvatarInfoListBuilder_ == null) {
@@ -1325,14 +1333,14 @@ public final class CrystalLinkDungeonInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .CrystalLinkDungeonAvatarInfo dungeon_avatar_info_list = 3;</code>
+       * <code>repeated .CrystalLinkDungeonAvatarInfo dungeon_avatar_info_list = 12;</code>
        */
       public emu.grasscutter.net.proto.CrystalLinkDungeonAvatarInfoOuterClass.CrystalLinkDungeonAvatarInfo.Builder getDungeonAvatarInfoListBuilder(
           int index) {
         return getDungeonAvatarInfoListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .CrystalLinkDungeonAvatarInfo dungeon_avatar_info_list = 3;</code>
+       * <code>repeated .CrystalLinkDungeonAvatarInfo dungeon_avatar_info_list = 12;</code>
        */
       public emu.grasscutter.net.proto.CrystalLinkDungeonAvatarInfoOuterClass.CrystalLinkDungeonAvatarInfoOrBuilder getDungeonAvatarInfoListOrBuilder(
           int index) {
@@ -1342,7 +1350,7 @@ public final class CrystalLinkDungeonInfoNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .CrystalLinkDungeonAvatarInfo dungeon_avatar_info_list = 3;</code>
+       * <code>repeated .CrystalLinkDungeonAvatarInfo dungeon_avatar_info_list = 12;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.CrystalLinkDungeonAvatarInfoOuterClass.CrystalLinkDungeonAvatarInfoOrBuilder> 
            getDungeonAvatarInfoListOrBuilderList() {
@@ -1353,14 +1361,14 @@ public final class CrystalLinkDungeonInfoNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .CrystalLinkDungeonAvatarInfo dungeon_avatar_info_list = 3;</code>
+       * <code>repeated .CrystalLinkDungeonAvatarInfo dungeon_avatar_info_list = 12;</code>
        */
       public emu.grasscutter.net.proto.CrystalLinkDungeonAvatarInfoOuterClass.CrystalLinkDungeonAvatarInfo.Builder addDungeonAvatarInfoListBuilder() {
         return getDungeonAvatarInfoListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.CrystalLinkDungeonAvatarInfoOuterClass.CrystalLinkDungeonAvatarInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .CrystalLinkDungeonAvatarInfo dungeon_avatar_info_list = 3;</code>
+       * <code>repeated .CrystalLinkDungeonAvatarInfo dungeon_avatar_info_list = 12;</code>
        */
       public emu.grasscutter.net.proto.CrystalLinkDungeonAvatarInfoOuterClass.CrystalLinkDungeonAvatarInfo.Builder addDungeonAvatarInfoListBuilder(
           int index) {
@@ -1368,7 +1376,7 @@ public final class CrystalLinkDungeonInfoNotifyOuterClass {
             index, emu.grasscutter.net.proto.CrystalLinkDungeonAvatarInfoOuterClass.CrystalLinkDungeonAvatarInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .CrystalLinkDungeonAvatarInfo dungeon_avatar_info_list = 3;</code>
+       * <code>repeated .CrystalLinkDungeonAvatarInfo dungeon_avatar_info_list = 12;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.CrystalLinkDungeonAvatarInfoOuterClass.CrystalLinkDungeonAvatarInfo.Builder> 
            getDungeonAvatarInfoListBuilderList() {
@@ -1391,7 +1399,7 @@ public final class CrystalLinkDungeonInfoNotifyOuterClass {
 
       private int initGalleryProgress_ ;
       /**
-       * <code>uint32 init_gallery_progress = 7;</code>
+       * <code>uint32 init_gallery_progress = 4;</code>
        * @return The initGalleryProgress.
        */
       @java.lang.Override
@@ -1399,7 +1407,7 @@ public final class CrystalLinkDungeonInfoNotifyOuterClass {
         return initGalleryProgress_;
       }
       /**
-       * <code>uint32 init_gallery_progress = 7;</code>
+       * <code>uint32 init_gallery_progress = 4;</code>
        * @param value The initGalleryProgress to set.
        * @return This builder for chaining.
        */
@@ -1410,7 +1418,7 @@ public final class CrystalLinkDungeonInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 init_gallery_progress = 7;</code>
+       * <code>uint32 init_gallery_progress = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearInitGalleryProgress() {
@@ -1489,12 +1497,12 @@ public final class CrystalLinkDungeonInfoNotifyOuterClass {
       "\n\"CrystalLinkDungeonInfoNotify.proto\032\031Cr" +
       "ystalLinkBuffInfo.proto\032\"CrystalLinkDung" +
       "eonAvatarInfo.proto\"\354\001\n\034CrystalLinkDunge" +
-      "onInfoNotify\022,\n\016buff_info_list\030\010 \003(\0132\024.C" +
-      "rystalLinkBuffInfo\022\020\n\010level_id\030\001 \001(\r\022\025\n\r" +
-      "is_upper_part\030\017 \001(\010\022\025\n\rdifficulty_id\030\013 \001" +
-      "(\r\022?\n\030dungeon_avatar_info_list\030\003 \003(\0132\035.C" +
+      "onInfoNotify\022,\n\016buff_info_list\030\013 \003(\0132\024.C" +
+      "rystalLinkBuffInfo\022\020\n\010level_id\030\005 \001(\r\022\025\n\r" +
+      "is_upper_part\030\r \001(\010\022\025\n\rdifficulty_id\030\016 \001" +
+      "(\r\022?\n\030dungeon_avatar_info_list\030\014 \003(\0132\035.C" +
       "rystalLinkDungeonAvatarInfo\022\035\n\025init_gall" +
-      "ery_progress\030\007 \001(\rB\033\n\031emu.grasscutter.ne" +
+      "ery_progress\030\004 \001(\rB\033\n\031emu.grasscutter.ne" +
       "t.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

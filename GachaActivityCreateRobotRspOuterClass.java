@@ -19,22 +19,26 @@ public final class GachaActivityCreateRobotRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 robot_id = 1;</code>
-     * @return The robotId.
-     */
-    int getRobotId();
-
-    /**
-     * <code>int32 retcode = 3;</code>
+     * <code>int32 retcode = 15;</code>
      * @return The retcode.
      */
     int getRetcode();
+
+    /**
+     * <code>uint32 robot_id = 11;</code>
+     * @return The robotId.
+     */
+    int getRobotId();
   }
   /**
    * <pre>
-   * CmdId: 8610
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 8494;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code GachaActivityCreateRobotRsp}
@@ -81,12 +85,12 @@ public final class GachaActivityCreateRobotRspOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
+            case 88: {
 
               robotId_ = input.readUInt32();
               break;
             }
-            case 24: {
+            case 120: {
 
               retcode_ = input.readInt32();
               break;
@@ -123,26 +127,26 @@ public final class GachaActivityCreateRobotRspOuterClass {
               emu.grasscutter.net.proto.GachaActivityCreateRobotRspOuterClass.GachaActivityCreateRobotRsp.class, emu.grasscutter.net.proto.GachaActivityCreateRobotRspOuterClass.GachaActivityCreateRobotRsp.Builder.class);
     }
 
-    public static final int ROBOT_ID_FIELD_NUMBER = 1;
-    private int robotId_;
-    /**
-     * <code>uint32 robot_id = 1;</code>
-     * @return The robotId.
-     */
-    @java.lang.Override
-    public int getRobotId() {
-      return robotId_;
-    }
-
-    public static final int RETCODE_FIELD_NUMBER = 3;
+    public static final int RETCODE_FIELD_NUMBER = 15;
     private int retcode_;
     /**
-     * <code>int32 retcode = 3;</code>
+     * <code>int32 retcode = 15;</code>
      * @return The retcode.
      */
     @java.lang.Override
     public int getRetcode() {
       return retcode_;
+    }
+
+    public static final int ROBOT_ID_FIELD_NUMBER = 11;
+    private int robotId_;
+    /**
+     * <code>uint32 robot_id = 11;</code>
+     * @return The robotId.
+     */
+    @java.lang.Override
+    public int getRobotId() {
+      return robotId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -160,10 +164,10 @@ public final class GachaActivityCreateRobotRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (robotId_ != 0) {
-        output.writeUInt32(1, robotId_);
+        output.writeUInt32(11, robotId_);
       }
       if (retcode_ != 0) {
-        output.writeInt32(3, retcode_);
+        output.writeInt32(15, retcode_);
       }
       unknownFields.writeTo(output);
     }
@@ -176,11 +180,11 @@ public final class GachaActivityCreateRobotRspOuterClass {
       size = 0;
       if (robotId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, robotId_);
+          .computeUInt32Size(11, robotId_);
       }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(3, retcode_);
+          .computeInt32Size(15, retcode_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -197,10 +201,10 @@ public final class GachaActivityCreateRobotRspOuterClass {
       }
       emu.grasscutter.net.proto.GachaActivityCreateRobotRspOuterClass.GachaActivityCreateRobotRsp other = (emu.grasscutter.net.proto.GachaActivityCreateRobotRspOuterClass.GachaActivityCreateRobotRsp) obj;
 
-      if (getRobotId()
-          != other.getRobotId()) return false;
       if (getRetcode()
           != other.getRetcode()) return false;
+      if (getRobotId()
+          != other.getRobotId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -212,10 +216,10 @@ public final class GachaActivityCreateRobotRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + ROBOT_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getRobotId();
       hash = (37 * hash) + RETCODE_FIELD_NUMBER;
       hash = (53 * hash) + getRetcode();
+      hash = (37 * hash) + ROBOT_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getRobotId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -313,9 +317,13 @@ public final class GachaActivityCreateRobotRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 8610
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 8494;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code GachaActivityCreateRobotRsp}
@@ -355,9 +363,9 @@ public final class GachaActivityCreateRobotRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        robotId_ = 0;
-
         retcode_ = 0;
+
+        robotId_ = 0;
 
         return this;
       }
@@ -385,8 +393,8 @@ public final class GachaActivityCreateRobotRspOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.GachaActivityCreateRobotRspOuterClass.GachaActivityCreateRobotRsp buildPartial() {
         emu.grasscutter.net.proto.GachaActivityCreateRobotRspOuterClass.GachaActivityCreateRobotRsp result = new emu.grasscutter.net.proto.GachaActivityCreateRobotRspOuterClass.GachaActivityCreateRobotRsp(this);
-        result.robotId_ = robotId_;
         result.retcode_ = retcode_;
+        result.robotId_ = robotId_;
         onBuilt();
         return result;
       }
@@ -435,11 +443,11 @@ public final class GachaActivityCreateRobotRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.GachaActivityCreateRobotRspOuterClass.GachaActivityCreateRobotRsp other) {
         if (other == emu.grasscutter.net.proto.GachaActivityCreateRobotRspOuterClass.GachaActivityCreateRobotRsp.getDefaultInstance()) return this;
-        if (other.getRobotId() != 0) {
-          setRobotId(other.getRobotId());
-        }
         if (other.getRetcode() != 0) {
           setRetcode(other.getRetcode());
+        }
+        if (other.getRobotId() != 0) {
+          setRobotId(other.getRobotId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -470,40 +478,9 @@ public final class GachaActivityCreateRobotRspOuterClass {
         return this;
       }
 
-      private int robotId_ ;
-      /**
-       * <code>uint32 robot_id = 1;</code>
-       * @return The robotId.
-       */
-      @java.lang.Override
-      public int getRobotId() {
-        return robotId_;
-      }
-      /**
-       * <code>uint32 robot_id = 1;</code>
-       * @param value The robotId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setRobotId(int value) {
-        
-        robotId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 robot_id = 1;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearRobotId() {
-        
-        robotId_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 3;</code>
+       * <code>int32 retcode = 15;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -511,7 +488,7 @@ public final class GachaActivityCreateRobotRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 3;</code>
+       * <code>int32 retcode = 15;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -522,12 +499,43 @@ public final class GachaActivityCreateRobotRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 3;</code>
+       * <code>int32 retcode = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
         
         retcode_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int robotId_ ;
+      /**
+       * <code>uint32 robot_id = 11;</code>
+       * @return The robotId.
+       */
+      @java.lang.Override
+      public int getRobotId() {
+        return robotId_;
+      }
+      /**
+       * <code>uint32 robot_id = 11;</code>
+       * @param value The robotId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setRobotId(int value) {
+        
+        robotId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 robot_id = 11;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearRobotId() {
+        
+        robotId_ = 0;
         onChanged();
         return this;
       }
@@ -599,8 +607,8 @@ public final class GachaActivityCreateRobotRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n!GachaActivityCreateRobotRsp.proto\"@\n\033G" +
-      "achaActivityCreateRobotRsp\022\020\n\010robot_id\030\001" +
-      " \001(\r\022\017\n\007retcode\030\003 \001(\005B\033\n\031emu.grasscutter" +
+      "achaActivityCreateRobotRsp\022\017\n\007retcode\030\017 " +
+      "\001(\005\022\020\n\010robot_id\030\013 \001(\rB\033\n\031emu.grasscutter" +
       ".net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -612,7 +620,7 @@ public final class GachaActivityCreateRobotRspOuterClass {
     internal_static_GachaActivityCreateRobotRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GachaActivityCreateRobotRsp_descriptor,
-        new java.lang.String[] { "RobotId", "Retcode", });
+        new java.lang.String[] { "Retcode", "RobotId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

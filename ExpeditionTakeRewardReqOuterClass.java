@@ -19,17 +19,21 @@ public final class ExpeditionTakeRewardReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 path_id = 3;</code>
+     * <code>uint32 path_id = 5;</code>
      * @return The pathId.
      */
     int getPathId();
   }
   /**
    * <pre>
-   * CmdId: 2149
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 2015;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code ExpeditionTakeRewardReq}
@@ -76,7 +80,7 @@ public final class ExpeditionTakeRewardReqOuterClass {
             case 0:
               done = true;
               break;
-            case 24: {
+            case 40: {
 
               pathId_ = input.readUInt32();
               break;
@@ -113,10 +117,10 @@ public final class ExpeditionTakeRewardReqOuterClass {
               emu.grasscutter.net.proto.ExpeditionTakeRewardReqOuterClass.ExpeditionTakeRewardReq.class, emu.grasscutter.net.proto.ExpeditionTakeRewardReqOuterClass.ExpeditionTakeRewardReq.Builder.class);
     }
 
-    public static final int PATH_ID_FIELD_NUMBER = 3;
+    public static final int PATH_ID_FIELD_NUMBER = 5;
     private int pathId_;
     /**
-     * <code>uint32 path_id = 3;</code>
+     * <code>uint32 path_id = 5;</code>
      * @return The pathId.
      */
     @java.lang.Override
@@ -139,7 +143,7 @@ public final class ExpeditionTakeRewardReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (pathId_ != 0) {
-        output.writeUInt32(3, pathId_);
+        output.writeUInt32(5, pathId_);
       }
       unknownFields.writeTo(output);
     }
@@ -152,7 +156,7 @@ public final class ExpeditionTakeRewardReqOuterClass {
       size = 0;
       if (pathId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, pathId_);
+          .computeUInt32Size(5, pathId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -281,10 +285,14 @@ public final class ExpeditionTakeRewardReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 2149
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 2015;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code ExpeditionTakeRewardReq}
@@ -435,7 +443,7 @@ public final class ExpeditionTakeRewardReqOuterClass {
 
       private int pathId_ ;
       /**
-       * <code>uint32 path_id = 3;</code>
+       * <code>uint32 path_id = 5;</code>
        * @return The pathId.
        */
       @java.lang.Override
@@ -443,7 +451,7 @@ public final class ExpeditionTakeRewardReqOuterClass {
         return pathId_;
       }
       /**
-       * <code>uint32 path_id = 3;</code>
+       * <code>uint32 path_id = 5;</code>
        * @param value The pathId to set.
        * @return This builder for chaining.
        */
@@ -454,7 +462,7 @@ public final class ExpeditionTakeRewardReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 path_id = 3;</code>
+       * <code>uint32 path_id = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearPathId() {
@@ -531,7 +539,7 @@ public final class ExpeditionTakeRewardReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\035ExpeditionTakeRewardReq.proto\"*\n\027Exped" +
-      "itionTakeRewardReq\022\017\n\007path_id\030\003 \001(\rB\033\n\031e" +
+      "itionTakeRewardReq\022\017\n\007path_id\030\005 \001(\rB\033\n\031e" +
       "mu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

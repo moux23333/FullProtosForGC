@@ -19,23 +19,27 @@ public final class ScenePlayOwnerStartInviteReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_skip_match = 8;</code>
+     * <code>bool is_skip_match = 4;</code>
      * @return The isSkipMatch.
      */
     boolean getIsSkipMatch();
 
     /**
-     * <code>uint32 play_id = 13;</code>
+     * <code>uint32 play_id = 7;</code>
      * @return The playId.
      */
     int getPlayId();
   }
   /**
    * <pre>
-   * CmdId: 4385
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 4369;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code ScenePlayOwnerStartInviteReq}
@@ -82,12 +86,12 @@ public final class ScenePlayOwnerStartInviteReqOuterClass {
             case 0:
               done = true;
               break;
-            case 64: {
+            case 32: {
 
               isSkipMatch_ = input.readBool();
               break;
             }
-            case 104: {
+            case 56: {
 
               playId_ = input.readUInt32();
               break;
@@ -124,10 +128,10 @@ public final class ScenePlayOwnerStartInviteReqOuterClass {
               emu.grasscutter.net.proto.ScenePlayOwnerStartInviteReqOuterClass.ScenePlayOwnerStartInviteReq.class, emu.grasscutter.net.proto.ScenePlayOwnerStartInviteReqOuterClass.ScenePlayOwnerStartInviteReq.Builder.class);
     }
 
-    public static final int IS_SKIP_MATCH_FIELD_NUMBER = 8;
+    public static final int IS_SKIP_MATCH_FIELD_NUMBER = 4;
     private boolean isSkipMatch_;
     /**
-     * <code>bool is_skip_match = 8;</code>
+     * <code>bool is_skip_match = 4;</code>
      * @return The isSkipMatch.
      */
     @java.lang.Override
@@ -135,10 +139,10 @@ public final class ScenePlayOwnerStartInviteReqOuterClass {
       return isSkipMatch_;
     }
 
-    public static final int PLAY_ID_FIELD_NUMBER = 13;
+    public static final int PLAY_ID_FIELD_NUMBER = 7;
     private int playId_;
     /**
-     * <code>uint32 play_id = 13;</code>
+     * <code>uint32 play_id = 7;</code>
      * @return The playId.
      */
     @java.lang.Override
@@ -161,10 +165,10 @@ public final class ScenePlayOwnerStartInviteReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (isSkipMatch_ != false) {
-        output.writeBool(8, isSkipMatch_);
+        output.writeBool(4, isSkipMatch_);
       }
       if (playId_ != 0) {
-        output.writeUInt32(13, playId_);
+        output.writeUInt32(7, playId_);
       }
       unknownFields.writeTo(output);
     }
@@ -177,11 +181,11 @@ public final class ScenePlayOwnerStartInviteReqOuterClass {
       size = 0;
       if (isSkipMatch_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(8, isSkipMatch_);
+          .computeBoolSize(4, isSkipMatch_);
       }
       if (playId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, playId_);
+          .computeUInt32Size(7, playId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -315,10 +319,14 @@ public final class ScenePlayOwnerStartInviteReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 4385
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 4369;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code ScenePlayOwnerStartInviteReq}
@@ -475,7 +483,7 @@ public final class ScenePlayOwnerStartInviteReqOuterClass {
 
       private boolean isSkipMatch_ ;
       /**
-       * <code>bool is_skip_match = 8;</code>
+       * <code>bool is_skip_match = 4;</code>
        * @return The isSkipMatch.
        */
       @java.lang.Override
@@ -483,7 +491,7 @@ public final class ScenePlayOwnerStartInviteReqOuterClass {
         return isSkipMatch_;
       }
       /**
-       * <code>bool is_skip_match = 8;</code>
+       * <code>bool is_skip_match = 4;</code>
        * @param value The isSkipMatch to set.
        * @return This builder for chaining.
        */
@@ -494,7 +502,7 @@ public final class ScenePlayOwnerStartInviteReqOuterClass {
         return this;
       }
       /**
-       * <code>bool is_skip_match = 8;</code>
+       * <code>bool is_skip_match = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsSkipMatch() {
@@ -506,7 +514,7 @@ public final class ScenePlayOwnerStartInviteReqOuterClass {
 
       private int playId_ ;
       /**
-       * <code>uint32 play_id = 13;</code>
+       * <code>uint32 play_id = 7;</code>
        * @return The playId.
        */
       @java.lang.Override
@@ -514,7 +522,7 @@ public final class ScenePlayOwnerStartInviteReqOuterClass {
         return playId_;
       }
       /**
-       * <code>uint32 play_id = 13;</code>
+       * <code>uint32 play_id = 7;</code>
        * @param value The playId to set.
        * @return This builder for chaining.
        */
@@ -525,7 +533,7 @@ public final class ScenePlayOwnerStartInviteReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 play_id = 13;</code>
+       * <code>uint32 play_id = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearPlayId() {
@@ -603,7 +611,7 @@ public final class ScenePlayOwnerStartInviteReqOuterClass {
     java.lang.String[] descriptorData = {
       "\n\"ScenePlayOwnerStartInviteReq.proto\"F\n\034" +
       "ScenePlayOwnerStartInviteReq\022\025\n\ris_skip_" +
-      "match\030\010 \001(\010\022\017\n\007play_id\030\r \001(\rB\033\n\031emu.gras" +
+      "match\030\004 \001(\010\022\017\n\007play_id\030\007 \001(\rB\033\n\031emu.gras" +
       "scutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

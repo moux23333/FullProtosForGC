@@ -19,7 +19,7 @@ public final class AbilityMixinDoActionBySelfModifierElementDurabilityRatioOuter
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>float last_durability_ratio = 9;</code>
+     * <code>float last_durability_ratio = 14;</code>
      * @return The lastDurabilityRatio.
      */
     float getLastDurabilityRatio();
@@ -69,7 +69,7 @@ public final class AbilityMixinDoActionBySelfModifierElementDurabilityRatioOuter
             case 0:
               done = true;
               break;
-            case 77: {
+            case 117: {
 
               lastDurabilityRatio_ = input.readFloat();
               break;
@@ -106,10 +106,10 @@ public final class AbilityMixinDoActionBySelfModifierElementDurabilityRatioOuter
               emu.grasscutter.net.proto.AbilityMixinDoActionBySelfModifierElementDurabilityRatioOuterClass.AbilityMixinDoActionBySelfModifierElementDurabilityRatio.class, emu.grasscutter.net.proto.AbilityMixinDoActionBySelfModifierElementDurabilityRatioOuterClass.AbilityMixinDoActionBySelfModifierElementDurabilityRatio.Builder.class);
     }
 
-    public static final int LAST_DURABILITY_RATIO_FIELD_NUMBER = 9;
+    public static final int LAST_DURABILITY_RATIO_FIELD_NUMBER = 14;
     private float lastDurabilityRatio_;
     /**
-     * <code>float last_durability_ratio = 9;</code>
+     * <code>float last_durability_ratio = 14;</code>
      * @return The lastDurabilityRatio.
      */
     @java.lang.Override
@@ -132,7 +132,7 @@ public final class AbilityMixinDoActionBySelfModifierElementDurabilityRatioOuter
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (lastDurabilityRatio_ != 0F) {
-        output.writeFloat(9, lastDurabilityRatio_);
+        output.writeFloat(14, lastDurabilityRatio_);
       }
       unknownFields.writeTo(output);
     }
@@ -145,7 +145,7 @@ public final class AbilityMixinDoActionBySelfModifierElementDurabilityRatioOuter
       size = 0;
       if (lastDurabilityRatio_ != 0F) {
         size += com.google.protobuf.CodedOutputStream
-          .computeFloatSize(9, lastDurabilityRatio_);
+          .computeFloatSize(14, lastDurabilityRatio_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -423,7 +423,7 @@ public final class AbilityMixinDoActionBySelfModifierElementDurabilityRatioOuter
 
       private float lastDurabilityRatio_ ;
       /**
-       * <code>float last_durability_ratio = 9;</code>
+       * <code>float last_durability_ratio = 14;</code>
        * @return The lastDurabilityRatio.
        */
       @java.lang.Override
@@ -431,7 +431,7 @@ public final class AbilityMixinDoActionBySelfModifierElementDurabilityRatioOuter
         return lastDurabilityRatio_;
       }
       /**
-       * <code>float last_durability_ratio = 9;</code>
+       * <code>float last_durability_ratio = 14;</code>
        * @param value The lastDurabilityRatio to set.
        * @return This builder for chaining.
        */
@@ -442,7 +442,7 @@ public final class AbilityMixinDoActionBySelfModifierElementDurabilityRatioOuter
         return this;
       }
       /**
-       * <code>float last_durability_ratio = 9;</code>
+       * <code>float last_durability_ratio = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearLastDurabilityRatio() {
@@ -521,7 +521,7 @@ public final class AbilityMixinDoActionBySelfModifierElementDurabilityRatioOuter
       "\n>AbilityMixinDoActionBySelfModifierElem" +
       "entDurabilityRatio.proto\"Y\n8AbilityMixin" +
       "DoActionBySelfModifierElementDurabilityR" +
-      "atio\022\035\n\025last_durability_ratio\030\t \001(\002B\033\n\031e" +
+      "atio\022\035\n\025last_durability_ratio\030\016 \001(\002B\033\n\031e" +
       "mu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

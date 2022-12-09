@@ -19,17 +19,21 @@ public final class SocialDataNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_have_first_share = 11;</code>
+     * <code>bool is_have_first_share = 13;</code>
      * @return The isHaveFirstShare.
      */
     boolean getIsHaveFirstShare();
   }
   /**
    * <pre>
-   * CmdId: 4043
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 4075;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code SocialDataNotify}
@@ -76,7 +80,7 @@ public final class SocialDataNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 88: {
+            case 104: {
 
               isHaveFirstShare_ = input.readBool();
               break;
@@ -113,10 +117,10 @@ public final class SocialDataNotifyOuterClass {
               emu.grasscutter.net.proto.SocialDataNotifyOuterClass.SocialDataNotify.class, emu.grasscutter.net.proto.SocialDataNotifyOuterClass.SocialDataNotify.Builder.class);
     }
 
-    public static final int IS_HAVE_FIRST_SHARE_FIELD_NUMBER = 11;
+    public static final int IS_HAVE_FIRST_SHARE_FIELD_NUMBER = 13;
     private boolean isHaveFirstShare_;
     /**
-     * <code>bool is_have_first_share = 11;</code>
+     * <code>bool is_have_first_share = 13;</code>
      * @return The isHaveFirstShare.
      */
     @java.lang.Override
@@ -139,7 +143,7 @@ public final class SocialDataNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (isHaveFirstShare_ != false) {
-        output.writeBool(11, isHaveFirstShare_);
+        output.writeBool(13, isHaveFirstShare_);
       }
       unknownFields.writeTo(output);
     }
@@ -152,7 +156,7 @@ public final class SocialDataNotifyOuterClass {
       size = 0;
       if (isHaveFirstShare_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(11, isHaveFirstShare_);
+          .computeBoolSize(13, isHaveFirstShare_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -282,10 +286,14 @@ public final class SocialDataNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 4043
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 4075;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code SocialDataNotify}
@@ -436,7 +444,7 @@ public final class SocialDataNotifyOuterClass {
 
       private boolean isHaveFirstShare_ ;
       /**
-       * <code>bool is_have_first_share = 11;</code>
+       * <code>bool is_have_first_share = 13;</code>
        * @return The isHaveFirstShare.
        */
       @java.lang.Override
@@ -444,7 +452,7 @@ public final class SocialDataNotifyOuterClass {
         return isHaveFirstShare_;
       }
       /**
-       * <code>bool is_have_first_share = 11;</code>
+       * <code>bool is_have_first_share = 13;</code>
        * @param value The isHaveFirstShare to set.
        * @return This builder for chaining.
        */
@@ -455,7 +463,7 @@ public final class SocialDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>bool is_have_first_share = 11;</code>
+       * <code>bool is_have_first_share = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsHaveFirstShare() {
@@ -532,7 +540,7 @@ public final class SocialDataNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\026SocialDataNotify.proto\"/\n\020SocialDataNo" +
-      "tify\022\033\n\023is_have_first_share\030\013 \001(\010B\033\n\031emu" +
+      "tify\022\033\n\023is_have_first_share\030\r \001(\010B\033\n\031emu" +
       ".grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

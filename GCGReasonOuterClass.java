@@ -59,6 +59,18 @@ public final class GCGReasonOuterClass {
      * <code>GCG_REASON_INIT = 9;</code>
      */
     GCG_REASON_INIT(9),
+    /**
+     * <code>GCG_REASON_EFFECT_DAMAGE = 10;</code>
+     */
+    GCG_REASON_EFFECT_DAMAGE(10),
+    /**
+     * <code>GCG_REASON_EFFECT_HEAL = 11;</code>
+     */
+    GCG_REASON_EFFECT_HEAL(11),
+    /**
+     * <code>GCG_REASON_EFFECT_REVIVE = 12;</code>
+     */
+    GCG_REASON_EFFECT_REVIVE(12),
     UNRECOGNIZED(-1),
     ;
 
@@ -102,6 +114,18 @@ public final class GCGReasonOuterClass {
      * <code>GCG_REASON_INIT = 9;</code>
      */
     public static final int GCG_REASON_INIT_VALUE = 9;
+    /**
+     * <code>GCG_REASON_EFFECT_DAMAGE = 10;</code>
+     */
+    public static final int GCG_REASON_EFFECT_DAMAGE_VALUE = 10;
+    /**
+     * <code>GCG_REASON_EFFECT_HEAL = 11;</code>
+     */
+    public static final int GCG_REASON_EFFECT_HEAL_VALUE = 11;
+    /**
+     * <code>GCG_REASON_EFFECT_REVIVE = 12;</code>
+     */
+    public static final int GCG_REASON_EFFECT_REVIVE_VALUE = 12;
 
 
     public final int getNumber() {
@@ -138,6 +162,9 @@ public final class GCGReasonOuterClass {
         case 7: return GCG_REASON_QUICKLY_ONSTAGE;
         case 8: return GCG_REASON_REMOVE_AFTER_DIE;
         case 9: return GCG_REASON_INIT;
+        case 10: return GCG_REASON_EFFECT_DAMAGE;
+        case 11: return GCG_REASON_EFFECT_HEAL;
+        case 12: return GCG_REASON_EFFECT_REVIVE;
         default: return null;
       }
     }
@@ -203,14 +230,17 @@ public final class GCGReasonOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\017GCGReason.proto*\200\002\n\tGCGReason\022\026\n\022GCG_R" +
+      "\n\017GCGReason.proto*\330\002\n\tGCGReason\022\026\n\022GCG_R" +
       "EASON_DEFAULT\020\000\022\025\n\021GCG_REASON_EFFECT\020\001\022\023" +
       "\n\017GCG_REASON_COST\020\002\022\021\n\rGCG_REASON_GM\020\003\022\025" +
       "\n\021GCG_REASON_ATTACK\020\004\022\025\n\021GCG_REASON_REBO" +
       "OT\020\005\022\030\n\024GCG_REASON_PLAY_CARD\020\006\022\036\n\032GCG_RE" +
       "ASON_QUICKLY_ONSTAGE\020\007\022\037\n\033GCG_REASON_REM" +
-      "OVE_AFTER_DIE\020\010\022\023\n\017GCG_REASON_INIT\020\tB\033\n\031" +
-      "emu.grasscutter.net.protob\006proto3"
+      "OVE_AFTER_DIE\020\010\022\023\n\017GCG_REASON_INIT\020\t\022\034\n\030" +
+      "GCG_REASON_EFFECT_DAMAGE\020\n\022\032\n\026GCG_REASON" +
+      "_EFFECT_HEAL\020\013\022\034\n\030GCG_REASON_EFFECT_REVI" +
+      "VE\020\014B\033\n\031emu.grasscutter.net.protob\006proto" +
+      "3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

@@ -19,31 +19,31 @@ public final class SignInDataOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 day_count = 14;</code>
+     * <code>uint32 day_count = 4;</code>
      * @return The dayCount.
      */
     int getDayCount();
 
     /**
-     * <code>repeated .ItemParam reward_item_list = 5;</code>
+     * <code>repeated .ItemParam reward_item_list = 15;</code>
      */
     java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> 
         getRewardItemListList();
     /**
-     * <code>repeated .ItemParam reward_item_list = 5;</code>
+     * <code>repeated .ItemParam reward_item_list = 15;</code>
      */
     emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam getRewardItemList(int index);
     /**
-     * <code>repeated .ItemParam reward_item_list = 5;</code>
+     * <code>repeated .ItemParam reward_item_list = 15;</code>
      */
     int getRewardItemListCount();
     /**
-     * <code>repeated .ItemParam reward_item_list = 5;</code>
+     * <code>repeated .ItemParam reward_item_list = 15;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder> 
         getRewardItemListOrBuilderList();
     /**
-     * <code>repeated .ItemParam reward_item_list = 5;</code>
+     * <code>repeated .ItemParam reward_item_list = 15;</code>
      */
     emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder getRewardItemListOrBuilder(
         int index);
@@ -95,18 +95,18 @@ public final class SignInDataOuterClass {
             case 0:
               done = true;
               break;
-            case 42: {
+            case 32: {
+
+              dayCount_ = input.readUInt32();
+              break;
+            }
+            case 122: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 rewardItemList_ = new java.util.ArrayList<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam>();
                 mutable_bitField0_ |= 0x00000001;
               }
               rewardItemList_.add(
                   input.readMessage(emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.parser(), extensionRegistry));
-              break;
-            }
-            case 112: {
-
-              dayCount_ = input.readUInt32();
               break;
             }
             default: {
@@ -144,10 +144,10 @@ public final class SignInDataOuterClass {
               emu.grasscutter.net.proto.SignInDataOuterClass.SignInData.class, emu.grasscutter.net.proto.SignInDataOuterClass.SignInData.Builder.class);
     }
 
-    public static final int DAY_COUNT_FIELD_NUMBER = 14;
+    public static final int DAY_COUNT_FIELD_NUMBER = 4;
     private int dayCount_;
     /**
-     * <code>uint32 day_count = 14;</code>
+     * <code>uint32 day_count = 4;</code>
      * @return The dayCount.
      */
     @java.lang.Override
@@ -155,17 +155,17 @@ public final class SignInDataOuterClass {
       return dayCount_;
     }
 
-    public static final int REWARD_ITEM_LIST_FIELD_NUMBER = 5;
+    public static final int REWARD_ITEM_LIST_FIELD_NUMBER = 15;
     private java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> rewardItemList_;
     /**
-     * <code>repeated .ItemParam reward_item_list = 5;</code>
+     * <code>repeated .ItemParam reward_item_list = 15;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> getRewardItemListList() {
       return rewardItemList_;
     }
     /**
-     * <code>repeated .ItemParam reward_item_list = 5;</code>
+     * <code>repeated .ItemParam reward_item_list = 15;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder> 
@@ -173,21 +173,21 @@ public final class SignInDataOuterClass {
       return rewardItemList_;
     }
     /**
-     * <code>repeated .ItemParam reward_item_list = 5;</code>
+     * <code>repeated .ItemParam reward_item_list = 15;</code>
      */
     @java.lang.Override
     public int getRewardItemListCount() {
       return rewardItemList_.size();
     }
     /**
-     * <code>repeated .ItemParam reward_item_list = 5;</code>
+     * <code>repeated .ItemParam reward_item_list = 15;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam getRewardItemList(int index) {
       return rewardItemList_.get(index);
     }
     /**
-     * <code>repeated .ItemParam reward_item_list = 5;</code>
+     * <code>repeated .ItemParam reward_item_list = 15;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder getRewardItemListOrBuilder(
@@ -209,11 +209,11 @@ public final class SignInDataOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      for (int i = 0; i < rewardItemList_.size(); i++) {
-        output.writeMessage(5, rewardItemList_.get(i));
-      }
       if (dayCount_ != 0) {
-        output.writeUInt32(14, dayCount_);
+        output.writeUInt32(4, dayCount_);
+      }
+      for (int i = 0; i < rewardItemList_.size(); i++) {
+        output.writeMessage(15, rewardItemList_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -224,13 +224,13 @@ public final class SignInDataOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      for (int i = 0; i < rewardItemList_.size(); i++) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(5, rewardItemList_.get(i));
-      }
       if (dayCount_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, dayCount_);
+          .computeUInt32Size(4, dayCount_);
+      }
+      for (int i = 0; i < rewardItemList_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(15, rewardItemList_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -556,7 +556,7 @@ public final class SignInDataOuterClass {
 
       private int dayCount_ ;
       /**
-       * <code>uint32 day_count = 14;</code>
+       * <code>uint32 day_count = 4;</code>
        * @return The dayCount.
        */
       @java.lang.Override
@@ -564,7 +564,7 @@ public final class SignInDataOuterClass {
         return dayCount_;
       }
       /**
-       * <code>uint32 day_count = 14;</code>
+       * <code>uint32 day_count = 4;</code>
        * @param value The dayCount to set.
        * @return This builder for chaining.
        */
@@ -575,7 +575,7 @@ public final class SignInDataOuterClass {
         return this;
       }
       /**
-       * <code>uint32 day_count = 14;</code>
+       * <code>uint32 day_count = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearDayCount() {
@@ -598,7 +598,7 @@ public final class SignInDataOuterClass {
           emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder> rewardItemListBuilder_;
 
       /**
-       * <code>repeated .ItemParam reward_item_list = 5;</code>
+       * <code>repeated .ItemParam reward_item_list = 15;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> getRewardItemListList() {
         if (rewardItemListBuilder_ == null) {
@@ -608,7 +608,7 @@ public final class SignInDataOuterClass {
         }
       }
       /**
-       * <code>repeated .ItemParam reward_item_list = 5;</code>
+       * <code>repeated .ItemParam reward_item_list = 15;</code>
        */
       public int getRewardItemListCount() {
         if (rewardItemListBuilder_ == null) {
@@ -618,7 +618,7 @@ public final class SignInDataOuterClass {
         }
       }
       /**
-       * <code>repeated .ItemParam reward_item_list = 5;</code>
+       * <code>repeated .ItemParam reward_item_list = 15;</code>
        */
       public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam getRewardItemList(int index) {
         if (rewardItemListBuilder_ == null) {
@@ -628,7 +628,7 @@ public final class SignInDataOuterClass {
         }
       }
       /**
-       * <code>repeated .ItemParam reward_item_list = 5;</code>
+       * <code>repeated .ItemParam reward_item_list = 15;</code>
        */
       public Builder setRewardItemList(
           int index, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam value) {
@@ -645,7 +645,7 @@ public final class SignInDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ItemParam reward_item_list = 5;</code>
+       * <code>repeated .ItemParam reward_item_list = 15;</code>
        */
       public Builder setRewardItemList(
           int index, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder builderForValue) {
@@ -659,7 +659,7 @@ public final class SignInDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ItemParam reward_item_list = 5;</code>
+       * <code>repeated .ItemParam reward_item_list = 15;</code>
        */
       public Builder addRewardItemList(emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam value) {
         if (rewardItemListBuilder_ == null) {
@@ -675,7 +675,7 @@ public final class SignInDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ItemParam reward_item_list = 5;</code>
+       * <code>repeated .ItemParam reward_item_list = 15;</code>
        */
       public Builder addRewardItemList(
           int index, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam value) {
@@ -692,7 +692,7 @@ public final class SignInDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ItemParam reward_item_list = 5;</code>
+       * <code>repeated .ItemParam reward_item_list = 15;</code>
        */
       public Builder addRewardItemList(
           emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder builderForValue) {
@@ -706,7 +706,7 @@ public final class SignInDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ItemParam reward_item_list = 5;</code>
+       * <code>repeated .ItemParam reward_item_list = 15;</code>
        */
       public Builder addRewardItemList(
           int index, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder builderForValue) {
@@ -720,7 +720,7 @@ public final class SignInDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ItemParam reward_item_list = 5;</code>
+       * <code>repeated .ItemParam reward_item_list = 15;</code>
        */
       public Builder addAllRewardItemList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> values) {
@@ -735,7 +735,7 @@ public final class SignInDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ItemParam reward_item_list = 5;</code>
+       * <code>repeated .ItemParam reward_item_list = 15;</code>
        */
       public Builder clearRewardItemList() {
         if (rewardItemListBuilder_ == null) {
@@ -748,7 +748,7 @@ public final class SignInDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ItemParam reward_item_list = 5;</code>
+       * <code>repeated .ItemParam reward_item_list = 15;</code>
        */
       public Builder removeRewardItemList(int index) {
         if (rewardItemListBuilder_ == null) {
@@ -761,14 +761,14 @@ public final class SignInDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ItemParam reward_item_list = 5;</code>
+       * <code>repeated .ItemParam reward_item_list = 15;</code>
        */
       public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder getRewardItemListBuilder(
           int index) {
         return getRewardItemListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .ItemParam reward_item_list = 5;</code>
+       * <code>repeated .ItemParam reward_item_list = 15;</code>
        */
       public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder getRewardItemListOrBuilder(
           int index) {
@@ -778,7 +778,7 @@ public final class SignInDataOuterClass {
         }
       }
       /**
-       * <code>repeated .ItemParam reward_item_list = 5;</code>
+       * <code>repeated .ItemParam reward_item_list = 15;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder> 
            getRewardItemListOrBuilderList() {
@@ -789,14 +789,14 @@ public final class SignInDataOuterClass {
         }
       }
       /**
-       * <code>repeated .ItemParam reward_item_list = 5;</code>
+       * <code>repeated .ItemParam reward_item_list = 15;</code>
        */
       public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder addRewardItemListBuilder() {
         return getRewardItemListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.getDefaultInstance());
       }
       /**
-       * <code>repeated .ItemParam reward_item_list = 5;</code>
+       * <code>repeated .ItemParam reward_item_list = 15;</code>
        */
       public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder addRewardItemListBuilder(
           int index) {
@@ -804,7 +804,7 @@ public final class SignInDataOuterClass {
             index, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.getDefaultInstance());
       }
       /**
-       * <code>repeated .ItemParam reward_item_list = 5;</code>
+       * <code>repeated .ItemParam reward_item_list = 15;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder> 
            getRewardItemListBuilderList() {
@@ -892,8 +892,8 @@ public final class SignInDataOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\020SignInData.proto\032\017ItemParam.proto\"E\n\nS" +
-      "ignInData\022\021\n\tday_count\030\016 \001(\r\022$\n\020reward_i" +
-      "tem_list\030\005 \003(\0132\n.ItemParamB\033\n\031emu.grassc" +
+      "ignInData\022\021\n\tday_count\030\004 \001(\r\022$\n\020reward_i" +
+      "tem_list\030\017 \003(\0132\n.ItemParamB\033\n\031emu.grassc" +
       "utter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

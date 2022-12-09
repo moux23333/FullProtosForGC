@@ -19,17 +19,17 @@ public final class HideAndSeekSelectSkillReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated uint32 skill_list = 13;</code>
+     * <code>repeated uint32 skill_list = 11;</code>
      * @return A list containing the skillList.
      */
     java.util.List<java.lang.Integer> getSkillListList();
     /**
-     * <code>repeated uint32 skill_list = 13;</code>
+     * <code>repeated uint32 skill_list = 11;</code>
      * @return The count of skillList.
      */
     int getSkillListCount();
     /**
-     * <code>repeated uint32 skill_list = 13;</code>
+     * <code>repeated uint32 skill_list = 11;</code>
      * @param index The index of the element to return.
      * @return The skillList at the given index.
      */
@@ -37,10 +37,14 @@ public final class HideAndSeekSelectSkillReqOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 8183
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 8062;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code HideAndSeekSelectSkillReq}
@@ -89,7 +93,7 @@ public final class HideAndSeekSelectSkillReqOuterClass {
             case 0:
               done = true;
               break;
-            case 104: {
+            case 88: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 skillList_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
@@ -97,7 +101,7 @@ public final class HideAndSeekSelectSkillReqOuterClass {
               skillList_.addInt(input.readUInt32());
               break;
             }
-            case 106: {
+            case 90: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -145,10 +149,10 @@ public final class HideAndSeekSelectSkillReqOuterClass {
               emu.grasscutter.net.proto.HideAndSeekSelectSkillReqOuterClass.HideAndSeekSelectSkillReq.class, emu.grasscutter.net.proto.HideAndSeekSelectSkillReqOuterClass.HideAndSeekSelectSkillReq.Builder.class);
     }
 
-    public static final int SKILL_LIST_FIELD_NUMBER = 13;
+    public static final int SKILL_LIST_FIELD_NUMBER = 11;
     private com.google.protobuf.Internal.IntList skillList_;
     /**
-     * <code>repeated uint32 skill_list = 13;</code>
+     * <code>repeated uint32 skill_list = 11;</code>
      * @return A list containing the skillList.
      */
     @java.lang.Override
@@ -157,14 +161,14 @@ public final class HideAndSeekSelectSkillReqOuterClass {
       return skillList_;
     }
     /**
-     * <code>repeated uint32 skill_list = 13;</code>
+     * <code>repeated uint32 skill_list = 11;</code>
      * @return The count of skillList.
      */
     public int getSkillListCount() {
       return skillList_.size();
     }
     /**
-     * <code>repeated uint32 skill_list = 13;</code>
+     * <code>repeated uint32 skill_list = 11;</code>
      * @param index The index of the element to return.
      * @return The skillList at the given index.
      */
@@ -189,7 +193,7 @@ public final class HideAndSeekSelectSkillReqOuterClass {
                         throws java.io.IOException {
       getSerializedSize();
       if (getSkillListList().size() > 0) {
-        output.writeUInt32NoTag(106);
+        output.writeUInt32NoTag(90);
         output.writeUInt32NoTag(skillListMemoizedSerializedSize);
       }
       for (int i = 0; i < skillList_.size(); i++) {
@@ -347,10 +351,14 @@ public final class HideAndSeekSelectSkillReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 8183
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 8062;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code HideAndSeekSelectSkillReq}
@@ -520,7 +528,7 @@ public final class HideAndSeekSelectSkillReqOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 skill_list = 13;</code>
+       * <code>repeated uint32 skill_list = 11;</code>
        * @return A list containing the skillList.
        */
       public java.util.List<java.lang.Integer>
@@ -529,14 +537,14 @@ public final class HideAndSeekSelectSkillReqOuterClass {
                  java.util.Collections.unmodifiableList(skillList_) : skillList_;
       }
       /**
-       * <code>repeated uint32 skill_list = 13;</code>
+       * <code>repeated uint32 skill_list = 11;</code>
        * @return The count of skillList.
        */
       public int getSkillListCount() {
         return skillList_.size();
       }
       /**
-       * <code>repeated uint32 skill_list = 13;</code>
+       * <code>repeated uint32 skill_list = 11;</code>
        * @param index The index of the element to return.
        * @return The skillList at the given index.
        */
@@ -544,7 +552,7 @@ public final class HideAndSeekSelectSkillReqOuterClass {
         return skillList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 skill_list = 13;</code>
+       * <code>repeated uint32 skill_list = 11;</code>
        * @param index The index to set the value at.
        * @param value The skillList to set.
        * @return This builder for chaining.
@@ -557,7 +565,7 @@ public final class HideAndSeekSelectSkillReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 skill_list = 13;</code>
+       * <code>repeated uint32 skill_list = 11;</code>
        * @param value The skillList to add.
        * @return This builder for chaining.
        */
@@ -568,7 +576,7 @@ public final class HideAndSeekSelectSkillReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 skill_list = 13;</code>
+       * <code>repeated uint32 skill_list = 11;</code>
        * @param values The skillList to add.
        * @return This builder for chaining.
        */
@@ -581,7 +589,7 @@ public final class HideAndSeekSelectSkillReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 skill_list = 13;</code>
+       * <code>repeated uint32 skill_list = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearSkillList() {
@@ -658,7 +666,7 @@ public final class HideAndSeekSelectSkillReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\037HideAndSeekSelectSkillReq.proto\"/\n\031Hid" +
-      "eAndSeekSelectSkillReq\022\022\n\nskill_list\030\r \003" +
+      "eAndSeekSelectSkillReq\022\022\n\nskill_list\030\013 \003" +
       "(\rB\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

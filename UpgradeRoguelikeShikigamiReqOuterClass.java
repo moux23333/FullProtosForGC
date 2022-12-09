@@ -19,23 +19,27 @@ public final class UpgradeRoguelikeShikigamiReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 upgrade_level = 6;</code>
-     * @return The upgradeLevel.
-     */
-    int getUpgradeLevel();
-
-    /**
      * <code>uint32 shikigami_group_id = 15;</code>
      * @return The shikigamiGroupId.
      */
     int getShikigamiGroupId();
+
+    /**
+     * <code>uint32 upgrade_level = 10;</code>
+     * @return The upgradeLevel.
+     */
+    int getUpgradeLevel();
   }
   /**
    * <pre>
-   * CmdId: 8151
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 8282;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code UpgradeRoguelikeShikigamiReq}
@@ -82,7 +86,7 @@ public final class UpgradeRoguelikeShikigamiReqOuterClass {
             case 0:
               done = true;
               break;
-            case 48: {
+            case 80: {
 
               upgradeLevel_ = input.readUInt32();
               break;
@@ -124,17 +128,6 @@ public final class UpgradeRoguelikeShikigamiReqOuterClass {
               emu.grasscutter.net.proto.UpgradeRoguelikeShikigamiReqOuterClass.UpgradeRoguelikeShikigamiReq.class, emu.grasscutter.net.proto.UpgradeRoguelikeShikigamiReqOuterClass.UpgradeRoguelikeShikigamiReq.Builder.class);
     }
 
-    public static final int UPGRADE_LEVEL_FIELD_NUMBER = 6;
-    private int upgradeLevel_;
-    /**
-     * <code>uint32 upgrade_level = 6;</code>
-     * @return The upgradeLevel.
-     */
-    @java.lang.Override
-    public int getUpgradeLevel() {
-      return upgradeLevel_;
-    }
-
     public static final int SHIKIGAMI_GROUP_ID_FIELD_NUMBER = 15;
     private int shikigamiGroupId_;
     /**
@@ -144,6 +137,17 @@ public final class UpgradeRoguelikeShikigamiReqOuterClass {
     @java.lang.Override
     public int getShikigamiGroupId() {
       return shikigamiGroupId_;
+    }
+
+    public static final int UPGRADE_LEVEL_FIELD_NUMBER = 10;
+    private int upgradeLevel_;
+    /**
+     * <code>uint32 upgrade_level = 10;</code>
+     * @return The upgradeLevel.
+     */
+    @java.lang.Override
+    public int getUpgradeLevel() {
+      return upgradeLevel_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -161,7 +165,7 @@ public final class UpgradeRoguelikeShikigamiReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (upgradeLevel_ != 0) {
-        output.writeUInt32(6, upgradeLevel_);
+        output.writeUInt32(10, upgradeLevel_);
       }
       if (shikigamiGroupId_ != 0) {
         output.writeUInt32(15, shikigamiGroupId_);
@@ -177,7 +181,7 @@ public final class UpgradeRoguelikeShikigamiReqOuterClass {
       size = 0;
       if (upgradeLevel_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, upgradeLevel_);
+          .computeUInt32Size(10, upgradeLevel_);
       }
       if (shikigamiGroupId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
@@ -198,10 +202,10 @@ public final class UpgradeRoguelikeShikigamiReqOuterClass {
       }
       emu.grasscutter.net.proto.UpgradeRoguelikeShikigamiReqOuterClass.UpgradeRoguelikeShikigamiReq other = (emu.grasscutter.net.proto.UpgradeRoguelikeShikigamiReqOuterClass.UpgradeRoguelikeShikigamiReq) obj;
 
-      if (getUpgradeLevel()
-          != other.getUpgradeLevel()) return false;
       if (getShikigamiGroupId()
           != other.getShikigamiGroupId()) return false;
+      if (getUpgradeLevel()
+          != other.getUpgradeLevel()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -213,10 +217,10 @@ public final class UpgradeRoguelikeShikigamiReqOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + UPGRADE_LEVEL_FIELD_NUMBER;
-      hash = (53 * hash) + getUpgradeLevel();
       hash = (37 * hash) + SHIKIGAMI_GROUP_ID_FIELD_NUMBER;
       hash = (53 * hash) + getShikigamiGroupId();
+      hash = (37 * hash) + UPGRADE_LEVEL_FIELD_NUMBER;
+      hash = (53 * hash) + getUpgradeLevel();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -314,10 +318,14 @@ public final class UpgradeRoguelikeShikigamiReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 8151
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 8282;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code UpgradeRoguelikeShikigamiReq}
@@ -357,9 +365,9 @@ public final class UpgradeRoguelikeShikigamiReqOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        upgradeLevel_ = 0;
-
         shikigamiGroupId_ = 0;
+
+        upgradeLevel_ = 0;
 
         return this;
       }
@@ -387,8 +395,8 @@ public final class UpgradeRoguelikeShikigamiReqOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.UpgradeRoguelikeShikigamiReqOuterClass.UpgradeRoguelikeShikigamiReq buildPartial() {
         emu.grasscutter.net.proto.UpgradeRoguelikeShikigamiReqOuterClass.UpgradeRoguelikeShikigamiReq result = new emu.grasscutter.net.proto.UpgradeRoguelikeShikigamiReqOuterClass.UpgradeRoguelikeShikigamiReq(this);
-        result.upgradeLevel_ = upgradeLevel_;
         result.shikigamiGroupId_ = shikigamiGroupId_;
+        result.upgradeLevel_ = upgradeLevel_;
         onBuilt();
         return result;
       }
@@ -437,11 +445,11 @@ public final class UpgradeRoguelikeShikigamiReqOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.UpgradeRoguelikeShikigamiReqOuterClass.UpgradeRoguelikeShikigamiReq other) {
         if (other == emu.grasscutter.net.proto.UpgradeRoguelikeShikigamiReqOuterClass.UpgradeRoguelikeShikigamiReq.getDefaultInstance()) return this;
-        if (other.getUpgradeLevel() != 0) {
-          setUpgradeLevel(other.getUpgradeLevel());
-        }
         if (other.getShikigamiGroupId() != 0) {
           setShikigamiGroupId(other.getShikigamiGroupId());
+        }
+        if (other.getUpgradeLevel() != 0) {
+          setUpgradeLevel(other.getUpgradeLevel());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -472,37 +480,6 @@ public final class UpgradeRoguelikeShikigamiReqOuterClass {
         return this;
       }
 
-      private int upgradeLevel_ ;
-      /**
-       * <code>uint32 upgrade_level = 6;</code>
-       * @return The upgradeLevel.
-       */
-      @java.lang.Override
-      public int getUpgradeLevel() {
-        return upgradeLevel_;
-      }
-      /**
-       * <code>uint32 upgrade_level = 6;</code>
-       * @param value The upgradeLevel to set.
-       * @return This builder for chaining.
-       */
-      public Builder setUpgradeLevel(int value) {
-        
-        upgradeLevel_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 upgrade_level = 6;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearUpgradeLevel() {
-        
-        upgradeLevel_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int shikigamiGroupId_ ;
       /**
        * <code>uint32 shikigami_group_id = 15;</code>
@@ -530,6 +507,37 @@ public final class UpgradeRoguelikeShikigamiReqOuterClass {
       public Builder clearShikigamiGroupId() {
         
         shikigamiGroupId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int upgradeLevel_ ;
+      /**
+       * <code>uint32 upgrade_level = 10;</code>
+       * @return The upgradeLevel.
+       */
+      @java.lang.Override
+      public int getUpgradeLevel() {
+        return upgradeLevel_;
+      }
+      /**
+       * <code>uint32 upgrade_level = 10;</code>
+       * @param value The upgradeLevel to set.
+       * @return This builder for chaining.
+       */
+      public Builder setUpgradeLevel(int value) {
+        
+        upgradeLevel_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 upgrade_level = 10;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearUpgradeLevel() {
+        
+        upgradeLevel_ = 0;
         onChanged();
         return this;
       }
@@ -601,8 +609,8 @@ public final class UpgradeRoguelikeShikigamiReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\"UpgradeRoguelikeShikigamiReq.proto\"Q\n\034" +
-      "UpgradeRoguelikeShikigamiReq\022\025\n\rupgrade_" +
-      "level\030\006 \001(\r\022\032\n\022shikigami_group_id\030\017 \001(\rB" +
+      "UpgradeRoguelikeShikigamiReq\022\032\n\022shikigam" +
+      "i_group_id\030\017 \001(\r\022\025\n\rupgrade_level\030\n \001(\rB" +
       "\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -614,7 +622,7 @@ public final class UpgradeRoguelikeShikigamiReqOuterClass {
     internal_static_UpgradeRoguelikeShikigamiReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_UpgradeRoguelikeShikigamiReq_descriptor,
-        new java.lang.String[] { "UpgradeLevel", "ShikigamiGroupId", });
+        new java.lang.String[] { "ShikigamiGroupId", "UpgradeLevel", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

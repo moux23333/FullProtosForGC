@@ -19,16 +19,20 @@ public final class LiveStartNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 live_id = 2;</code>
+     * <code>uint32 live_id = 7;</code>
      * @return The liveId.
      */
     int getLiveId();
   }
   /**
    * <pre>
-   * CmdId: 826
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 872;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code LiveStartNotify}
@@ -75,7 +79,7 @@ public final class LiveStartNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
+            case 56: {
 
               liveId_ = input.readUInt32();
               break;
@@ -112,10 +116,10 @@ public final class LiveStartNotifyOuterClass {
               emu.grasscutter.net.proto.LiveStartNotifyOuterClass.LiveStartNotify.class, emu.grasscutter.net.proto.LiveStartNotifyOuterClass.LiveStartNotify.Builder.class);
     }
 
-    public static final int LIVE_ID_FIELD_NUMBER = 2;
+    public static final int LIVE_ID_FIELD_NUMBER = 7;
     private int liveId_;
     /**
-     * <code>uint32 live_id = 2;</code>
+     * <code>uint32 live_id = 7;</code>
      * @return The liveId.
      */
     @java.lang.Override
@@ -138,7 +142,7 @@ public final class LiveStartNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (liveId_ != 0) {
-        output.writeUInt32(2, liveId_);
+        output.writeUInt32(7, liveId_);
       }
       unknownFields.writeTo(output);
     }
@@ -151,7 +155,7 @@ public final class LiveStartNotifyOuterClass {
       size = 0;
       if (liveId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, liveId_);
+          .computeUInt32Size(7, liveId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -280,9 +284,13 @@ public final class LiveStartNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 826
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 872;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code LiveStartNotify}
@@ -433,7 +441,7 @@ public final class LiveStartNotifyOuterClass {
 
       private int liveId_ ;
       /**
-       * <code>uint32 live_id = 2;</code>
+       * <code>uint32 live_id = 7;</code>
        * @return The liveId.
        */
       @java.lang.Override
@@ -441,7 +449,7 @@ public final class LiveStartNotifyOuterClass {
         return liveId_;
       }
       /**
-       * <code>uint32 live_id = 2;</code>
+       * <code>uint32 live_id = 7;</code>
        * @param value The liveId to set.
        * @return This builder for chaining.
        */
@@ -452,7 +460,7 @@ public final class LiveStartNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 live_id = 2;</code>
+       * <code>uint32 live_id = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearLiveId() {
@@ -529,7 +537,7 @@ public final class LiveStartNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\025LiveStartNotify.proto\"\"\n\017LiveStartNoti" +
-      "fy\022\017\n\007live_id\030\002 \001(\rB\033\n\031emu.grasscutter.n" +
+      "fy\022\017\n\007live_id\030\007 \001(\rB\033\n\031emu.grasscutter.n" +
       "et.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

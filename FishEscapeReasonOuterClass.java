@@ -20,9 +20,9 @@ public final class FishEscapeReasonOuterClass {
   public enum FishEscapeReason
       implements com.google.protobuf.ProtocolMessageEnum {
     /**
-     * <code>FISH_ESCAPE_REASON_FISN_ESCAPE_NONE = 0;</code>
+     * <code>FISH_ESCAPE_REASON_NONE = 0;</code>
      */
-    FISH_ESCAPE_REASON_FISN_ESCAPE_NONE(0),
+    FISH_ESCAPE_REASON_NONE(0),
     /**
      * <code>FISH_ESCAPE_REASON_SHOCKED = 1;</code>
      */
@@ -35,9 +35,9 @@ public final class FishEscapeReasonOuterClass {
     ;
 
     /**
-     * <code>FISH_ESCAPE_REASON_FISN_ESCAPE_NONE = 0;</code>
+     * <code>FISH_ESCAPE_REASON_NONE = 0;</code>
      */
-    public static final int FISH_ESCAPE_REASON_FISN_ESCAPE_NONE_VALUE = 0;
+    public static final int FISH_ESCAPE_REASON_NONE_VALUE = 0;
     /**
      * <code>FISH_ESCAPE_REASON_SHOCKED = 1;</code>
      */
@@ -72,7 +72,7 @@ public final class FishEscapeReasonOuterClass {
      */
     public static FishEscapeReason forNumber(int value) {
       switch (value) {
-        case 0: return FISH_ESCAPE_REASON_FISN_ESCAPE_NONE;
+        case 0: return FISH_ESCAPE_REASON_NONE;
         case 1: return FISH_ESCAPE_REASON_SHOCKED;
         case 2: return FISH_ESCAPE_REASON_UNHOOK;
         default: return null;
@@ -140,11 +140,11 @@ public final class FishEscapeReasonOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\026FishEscapeReason.proto*z\n\020FishEscapeRe" +
-      "ason\022\'\n#FISH_ESCAPE_REASON_FISN_ESCAPE_N" +
-      "ONE\020\000\022\036\n\032FISH_ESCAPE_REASON_SHOCKED\020\001\022\035\n" +
-      "\031FISH_ESCAPE_REASON_UNHOOK\020\002B\033\n\031emu.gras" +
-      "scutter.net.protob\006proto3"
+      "\n\026FishEscapeReason.proto*n\n\020FishEscapeRe" +
+      "ason\022\033\n\027FISH_ESCAPE_REASON_NONE\020\000\022\036\n\032FIS" +
+      "H_ESCAPE_REASON_SHOCKED\020\001\022\035\n\031FISH_ESCAPE" +
+      "_REASON_UNHOOK\020\002B\033\n\031emu.grasscutter.net." +
+      "protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

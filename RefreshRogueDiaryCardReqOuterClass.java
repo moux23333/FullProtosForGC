@@ -19,17 +19,17 @@ public final class RefreshRogueDiaryCardReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated uint32 refresh_card_list = 8;</code>
+     * <code>repeated uint32 refresh_card_list = 9;</code>
      * @return A list containing the refreshCardList.
      */
     java.util.List<java.lang.Integer> getRefreshCardListList();
     /**
-     * <code>repeated uint32 refresh_card_list = 8;</code>
+     * <code>repeated uint32 refresh_card_list = 9;</code>
      * @return The count of refreshCardList.
      */
     int getRefreshCardListCount();
     /**
-     * <code>repeated uint32 refresh_card_list = 8;</code>
+     * <code>repeated uint32 refresh_card_list = 9;</code>
      * @param index The index of the element to return.
      * @return The refreshCardList at the given index.
      */
@@ -37,10 +37,14 @@ public final class RefreshRogueDiaryCardReqOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 8991
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 8868;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code RefreshRogueDiaryCardReq}
@@ -89,7 +93,7 @@ public final class RefreshRogueDiaryCardReqOuterClass {
             case 0:
               done = true;
               break;
-            case 64: {
+            case 72: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 refreshCardList_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
@@ -97,7 +101,7 @@ public final class RefreshRogueDiaryCardReqOuterClass {
               refreshCardList_.addInt(input.readUInt32());
               break;
             }
-            case 66: {
+            case 74: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -145,10 +149,10 @@ public final class RefreshRogueDiaryCardReqOuterClass {
               emu.grasscutter.net.proto.RefreshRogueDiaryCardReqOuterClass.RefreshRogueDiaryCardReq.class, emu.grasscutter.net.proto.RefreshRogueDiaryCardReqOuterClass.RefreshRogueDiaryCardReq.Builder.class);
     }
 
-    public static final int REFRESH_CARD_LIST_FIELD_NUMBER = 8;
+    public static final int REFRESH_CARD_LIST_FIELD_NUMBER = 9;
     private com.google.protobuf.Internal.IntList refreshCardList_;
     /**
-     * <code>repeated uint32 refresh_card_list = 8;</code>
+     * <code>repeated uint32 refresh_card_list = 9;</code>
      * @return A list containing the refreshCardList.
      */
     @java.lang.Override
@@ -157,14 +161,14 @@ public final class RefreshRogueDiaryCardReqOuterClass {
       return refreshCardList_;
     }
     /**
-     * <code>repeated uint32 refresh_card_list = 8;</code>
+     * <code>repeated uint32 refresh_card_list = 9;</code>
      * @return The count of refreshCardList.
      */
     public int getRefreshCardListCount() {
       return refreshCardList_.size();
     }
     /**
-     * <code>repeated uint32 refresh_card_list = 8;</code>
+     * <code>repeated uint32 refresh_card_list = 9;</code>
      * @param index The index of the element to return.
      * @return The refreshCardList at the given index.
      */
@@ -189,7 +193,7 @@ public final class RefreshRogueDiaryCardReqOuterClass {
                         throws java.io.IOException {
       getSerializedSize();
       if (getRefreshCardListList().size() > 0) {
-        output.writeUInt32NoTag(66);
+        output.writeUInt32NoTag(74);
         output.writeUInt32NoTag(refreshCardListMemoizedSerializedSize);
       }
       for (int i = 0; i < refreshCardList_.size(); i++) {
@@ -347,10 +351,14 @@ public final class RefreshRogueDiaryCardReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 8991
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 8868;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code RefreshRogueDiaryCardReq}
@@ -520,7 +528,7 @@ public final class RefreshRogueDiaryCardReqOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 refresh_card_list = 8;</code>
+       * <code>repeated uint32 refresh_card_list = 9;</code>
        * @return A list containing the refreshCardList.
        */
       public java.util.List<java.lang.Integer>
@@ -529,14 +537,14 @@ public final class RefreshRogueDiaryCardReqOuterClass {
                  java.util.Collections.unmodifiableList(refreshCardList_) : refreshCardList_;
       }
       /**
-       * <code>repeated uint32 refresh_card_list = 8;</code>
+       * <code>repeated uint32 refresh_card_list = 9;</code>
        * @return The count of refreshCardList.
        */
       public int getRefreshCardListCount() {
         return refreshCardList_.size();
       }
       /**
-       * <code>repeated uint32 refresh_card_list = 8;</code>
+       * <code>repeated uint32 refresh_card_list = 9;</code>
        * @param index The index of the element to return.
        * @return The refreshCardList at the given index.
        */
@@ -544,7 +552,7 @@ public final class RefreshRogueDiaryCardReqOuterClass {
         return refreshCardList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 refresh_card_list = 8;</code>
+       * <code>repeated uint32 refresh_card_list = 9;</code>
        * @param index The index to set the value at.
        * @param value The refreshCardList to set.
        * @return This builder for chaining.
@@ -557,7 +565,7 @@ public final class RefreshRogueDiaryCardReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 refresh_card_list = 8;</code>
+       * <code>repeated uint32 refresh_card_list = 9;</code>
        * @param value The refreshCardList to add.
        * @return This builder for chaining.
        */
@@ -568,7 +576,7 @@ public final class RefreshRogueDiaryCardReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 refresh_card_list = 8;</code>
+       * <code>repeated uint32 refresh_card_list = 9;</code>
        * @param values The refreshCardList to add.
        * @return This builder for chaining.
        */
@@ -581,7 +589,7 @@ public final class RefreshRogueDiaryCardReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 refresh_card_list = 8;</code>
+       * <code>repeated uint32 refresh_card_list = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearRefreshCardList() {
@@ -659,7 +667,7 @@ public final class RefreshRogueDiaryCardReqOuterClass {
     java.lang.String[] descriptorData = {
       "\n\036RefreshRogueDiaryCardReq.proto\"5\n\030Refr" +
       "eshRogueDiaryCardReq\022\031\n\021refresh_card_lis" +
-      "t\030\010 \003(\rB\033\n\031emu.grasscutter.net.protob\006pr" +
+      "t\030\t \003(\rB\033\n\031emu.grasscutter.net.protob\006pr" +
       "oto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

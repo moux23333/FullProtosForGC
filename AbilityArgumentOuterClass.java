@@ -19,39 +19,39 @@ public final class AbilityArgumentOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 int_arg = 5;</code>
+     * <code>uint32 int_arg = 14;</code>
      * @return Whether the intArg field is set.
      */
     boolean hasIntArg();
     /**
-     * <code>uint32 int_arg = 5;</code>
+     * <code>uint32 int_arg = 14;</code>
      * @return The intArg.
      */
     int getIntArg();
 
     /**
-     * <code>float float_arg = 15;</code>
+     * <code>float float_arg = 7;</code>
      * @return Whether the floatArg field is set.
      */
     boolean hasFloatArg();
     /**
-     * <code>float float_arg = 15;</code>
+     * <code>float float_arg = 7;</code>
      * @return The floatArg.
      */
     float getFloatArg();
 
     /**
-     * <code>string str_arg = 11;</code>
+     * <code>string str_arg = 9;</code>
      * @return Whether the strArg field is set.
      */
     boolean hasStrArg();
     /**
-     * <code>string str_arg = 11;</code>
+     * <code>string str_arg = 9;</code>
      * @return The strArg.
      */
     java.lang.String getStrArg();
     /**
-     * <code>string str_arg = 11;</code>
+     * <code>string str_arg = 9;</code>
      * @return The bytes for strArg.
      */
     com.google.protobuf.ByteString
@@ -104,20 +104,20 @@ public final class AbilityArgumentOuterClass {
             case 0:
               done = true;
               break;
-            case 40: {
-              argCase_ = 5;
-              arg_ = input.readUInt32();
+            case 61: {
+              argCase_ = 7;
+              arg_ = input.readFloat();
               break;
             }
-            case 90: {
+            case 74: {
               java.lang.String s = input.readStringRequireUtf8();
-              argCase_ = 11;
+              argCase_ = 9;
               arg_ = s;
               break;
             }
-            case 125: {
-              argCase_ = 15;
-              arg_ = input.readFloat();
+            case 112: {
+              argCase_ = 14;
+              arg_ = input.readUInt32();
               break;
             }
             default: {
@@ -157,9 +157,9 @@ public final class AbilityArgumentOuterClass {
     public enum ArgCase
         implements com.google.protobuf.Internal.EnumLite,
             com.google.protobuf.AbstractMessage.InternalOneOfEnum {
-      INT_ARG(5),
-      FLOAT_ARG(15),
-      STR_ARG(11),
+      INT_ARG(14),
+      FLOAT_ARG(7),
+      STR_ARG(9),
       ARG_NOT_SET(0);
       private final int value;
       private ArgCase(int value) {
@@ -177,9 +177,9 @@ public final class AbilityArgumentOuterClass {
 
       public static ArgCase forNumber(int value) {
         switch (value) {
-          case 5: return INT_ARG;
-          case 15: return FLOAT_ARG;
-          case 11: return STR_ARG;
+          case 14: return INT_ARG;
+          case 7: return FLOAT_ARG;
+          case 9: return STR_ARG;
           case 0: return ARG_NOT_SET;
           default: return null;
         }
@@ -195,63 +195,63 @@ public final class AbilityArgumentOuterClass {
           argCase_);
     }
 
-    public static final int INT_ARG_FIELD_NUMBER = 5;
+    public static final int INT_ARG_FIELD_NUMBER = 14;
     /**
-     * <code>uint32 int_arg = 5;</code>
+     * <code>uint32 int_arg = 14;</code>
      * @return Whether the intArg field is set.
      */
     @java.lang.Override
     public boolean hasIntArg() {
-      return argCase_ == 5;
+      return argCase_ == 14;
     }
     /**
-     * <code>uint32 int_arg = 5;</code>
+     * <code>uint32 int_arg = 14;</code>
      * @return The intArg.
      */
     @java.lang.Override
     public int getIntArg() {
-      if (argCase_ == 5) {
+      if (argCase_ == 14) {
         return (java.lang.Integer) arg_;
       }
       return 0;
     }
 
-    public static final int FLOAT_ARG_FIELD_NUMBER = 15;
+    public static final int FLOAT_ARG_FIELD_NUMBER = 7;
     /**
-     * <code>float float_arg = 15;</code>
+     * <code>float float_arg = 7;</code>
      * @return Whether the floatArg field is set.
      */
     @java.lang.Override
     public boolean hasFloatArg() {
-      return argCase_ == 15;
+      return argCase_ == 7;
     }
     /**
-     * <code>float float_arg = 15;</code>
+     * <code>float float_arg = 7;</code>
      * @return The floatArg.
      */
     @java.lang.Override
     public float getFloatArg() {
-      if (argCase_ == 15) {
+      if (argCase_ == 7) {
         return (java.lang.Float) arg_;
       }
       return 0F;
     }
 
-    public static final int STR_ARG_FIELD_NUMBER = 11;
+    public static final int STR_ARG_FIELD_NUMBER = 9;
     /**
-     * <code>string str_arg = 11;</code>
+     * <code>string str_arg = 9;</code>
      * @return Whether the strArg field is set.
      */
     public boolean hasStrArg() {
-      return argCase_ == 11;
+      return argCase_ == 9;
     }
     /**
-     * <code>string str_arg = 11;</code>
+     * <code>string str_arg = 9;</code>
      * @return The strArg.
      */
     public java.lang.String getStrArg() {
       java.lang.Object ref = "";
-      if (argCase_ == 11) {
+      if (argCase_ == 9) {
         ref = arg_;
       }
       if (ref instanceof java.lang.String) {
@@ -260,27 +260,27 @@ public final class AbilityArgumentOuterClass {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
-        if (argCase_ == 11) {
+        if (argCase_ == 9) {
           arg_ = s;
         }
         return s;
       }
     }
     /**
-     * <code>string str_arg = 11;</code>
+     * <code>string str_arg = 9;</code>
      * @return The bytes for strArg.
      */
     public com.google.protobuf.ByteString
         getStrArgBytes() {
       java.lang.Object ref = "";
-      if (argCase_ == 11) {
+      if (argCase_ == 9) {
         ref = arg_;
       }
       if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
-        if (argCase_ == 11) {
+        if (argCase_ == 9) {
           arg_ = b;
         }
         return b;
@@ -303,16 +303,16 @@ public final class AbilityArgumentOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (argCase_ == 5) {
-        output.writeUInt32(
-            5, (int)((java.lang.Integer) arg_));
-      }
-      if (argCase_ == 11) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 11, arg_);
-      }
-      if (argCase_ == 15) {
+      if (argCase_ == 7) {
         output.writeFloat(
-            15, (float)((java.lang.Float) arg_));
+            7, (float)((java.lang.Float) arg_));
+      }
+      if (argCase_ == 9) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 9, arg_);
+      }
+      if (argCase_ == 14) {
+        output.writeUInt32(
+            14, (int)((java.lang.Integer) arg_));
       }
       unknownFields.writeTo(output);
     }
@@ -323,18 +323,18 @@ public final class AbilityArgumentOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (argCase_ == 5) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(
-              5, (int)((java.lang.Integer) arg_));
-      }
-      if (argCase_ == 11) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(11, arg_);
-      }
-      if (argCase_ == 15) {
+      if (argCase_ == 7) {
         size += com.google.protobuf.CodedOutputStream
           .computeFloatSize(
-              15, (float)((java.lang.Float) arg_));
+              7, (float)((java.lang.Float) arg_));
+      }
+      if (argCase_ == 9) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(9, arg_);
+      }
+      if (argCase_ == 14) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(
+              14, (int)((java.lang.Integer) arg_));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -353,16 +353,16 @@ public final class AbilityArgumentOuterClass {
 
       if (!getArgCase().equals(other.getArgCase())) return false;
       switch (argCase_) {
-        case 5:
+        case 14:
           if (getIntArg()
               != other.getIntArg()) return false;
           break;
-        case 15:
+        case 7:
           if (java.lang.Float.floatToIntBits(getFloatArg())
               != java.lang.Float.floatToIntBits(
                   other.getFloatArg())) return false;
           break;
-        case 11:
+        case 9:
           if (!getStrArg()
               .equals(other.getStrArg())) return false;
           break;
@@ -381,16 +381,16 @@ public final class AbilityArgumentOuterClass {
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
       switch (argCase_) {
-        case 5:
+        case 14:
           hash = (37 * hash) + INT_ARG_FIELD_NUMBER;
           hash = (53 * hash) + getIntArg();
           break;
-        case 15:
+        case 7:
           hash = (37 * hash) + FLOAT_ARG_FIELD_NUMBER;
           hash = (53 * hash) + java.lang.Float.floatToIntBits(
               getFloatArg());
           break;
-        case 11:
+        case 9:
           hash = (37 * hash) + STR_ARG_FIELD_NUMBER;
           hash = (53 * hash) + getStrArg().hashCode();
           break;
@@ -558,13 +558,13 @@ public final class AbilityArgumentOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.AbilityArgumentOuterClass.AbilityArgument buildPartial() {
         emu.grasscutter.net.proto.AbilityArgumentOuterClass.AbilityArgument result = new emu.grasscutter.net.proto.AbilityArgumentOuterClass.AbilityArgument(this);
-        if (argCase_ == 5) {
+        if (argCase_ == 14) {
           result.arg_ = arg_;
         }
-        if (argCase_ == 15) {
+        if (argCase_ == 7) {
           result.arg_ = arg_;
         }
-        if (argCase_ == 11) {
+        if (argCase_ == 9) {
           result.arg_ = arg_;
         }
         result.argCase_ = argCase_;
@@ -626,7 +626,7 @@ public final class AbilityArgumentOuterClass {
             break;
           }
           case STR_ARG: {
-            argCase_ = 11;
+            argCase_ = 9;
             arg_ = other.arg_;
             onChanged();
             break;
@@ -680,39 +680,39 @@ public final class AbilityArgumentOuterClass {
 
 
       /**
-       * <code>uint32 int_arg = 5;</code>
+       * <code>uint32 int_arg = 14;</code>
        * @return Whether the intArg field is set.
        */
       public boolean hasIntArg() {
-        return argCase_ == 5;
+        return argCase_ == 14;
       }
       /**
-       * <code>uint32 int_arg = 5;</code>
+       * <code>uint32 int_arg = 14;</code>
        * @return The intArg.
        */
       public int getIntArg() {
-        if (argCase_ == 5) {
+        if (argCase_ == 14) {
           return (java.lang.Integer) arg_;
         }
         return 0;
       }
       /**
-       * <code>uint32 int_arg = 5;</code>
+       * <code>uint32 int_arg = 14;</code>
        * @param value The intArg to set.
        * @return This builder for chaining.
        */
       public Builder setIntArg(int value) {
-        argCase_ = 5;
+        argCase_ = 14;
         arg_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 int_arg = 5;</code>
+       * <code>uint32 int_arg = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearIntArg() {
-        if (argCase_ == 5) {
+        if (argCase_ == 14) {
           argCase_ = 0;
           arg_ = null;
           onChanged();
@@ -721,39 +721,39 @@ public final class AbilityArgumentOuterClass {
       }
 
       /**
-       * <code>float float_arg = 15;</code>
+       * <code>float float_arg = 7;</code>
        * @return Whether the floatArg field is set.
        */
       public boolean hasFloatArg() {
-        return argCase_ == 15;
+        return argCase_ == 7;
       }
       /**
-       * <code>float float_arg = 15;</code>
+       * <code>float float_arg = 7;</code>
        * @return The floatArg.
        */
       public float getFloatArg() {
-        if (argCase_ == 15) {
+        if (argCase_ == 7) {
           return (java.lang.Float) arg_;
         }
         return 0F;
       }
       /**
-       * <code>float float_arg = 15;</code>
+       * <code>float float_arg = 7;</code>
        * @param value The floatArg to set.
        * @return This builder for chaining.
        */
       public Builder setFloatArg(float value) {
-        argCase_ = 15;
+        argCase_ = 7;
         arg_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>float float_arg = 15;</code>
+       * <code>float float_arg = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearFloatArg() {
-        if (argCase_ == 15) {
+        if (argCase_ == 7) {
           argCase_ = 0;
           arg_ = null;
           onChanged();
@@ -762,28 +762,28 @@ public final class AbilityArgumentOuterClass {
       }
 
       /**
-       * <code>string str_arg = 11;</code>
+       * <code>string str_arg = 9;</code>
        * @return Whether the strArg field is set.
        */
       @java.lang.Override
       public boolean hasStrArg() {
-        return argCase_ == 11;
+        return argCase_ == 9;
       }
       /**
-       * <code>string str_arg = 11;</code>
+       * <code>string str_arg = 9;</code>
        * @return The strArg.
        */
       @java.lang.Override
       public java.lang.String getStrArg() {
         java.lang.Object ref = "";
-        if (argCase_ == 11) {
+        if (argCase_ == 9) {
           ref = arg_;
         }
         if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
           java.lang.String s = bs.toStringUtf8();
-          if (argCase_ == 11) {
+          if (argCase_ == 9) {
             arg_ = s;
           }
           return s;
@@ -792,21 +792,21 @@ public final class AbilityArgumentOuterClass {
         }
       }
       /**
-       * <code>string str_arg = 11;</code>
+       * <code>string str_arg = 9;</code>
        * @return The bytes for strArg.
        */
       @java.lang.Override
       public com.google.protobuf.ByteString
           getStrArgBytes() {
         java.lang.Object ref = "";
-        if (argCase_ == 11) {
+        if (argCase_ == 9) {
           ref = arg_;
         }
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
                   (java.lang.String) ref);
-          if (argCase_ == 11) {
+          if (argCase_ == 9) {
             arg_ = b;
           }
           return b;
@@ -815,7 +815,7 @@ public final class AbilityArgumentOuterClass {
         }
       }
       /**
-       * <code>string str_arg = 11;</code>
+       * <code>string str_arg = 9;</code>
        * @param value The strArg to set.
        * @return This builder for chaining.
        */
@@ -824,17 +824,17 @@ public final class AbilityArgumentOuterClass {
         if (value == null) {
     throw new NullPointerException();
   }
-  argCase_ = 11;
+  argCase_ = 9;
         arg_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>string str_arg = 11;</code>
+       * <code>string str_arg = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearStrArg() {
-        if (argCase_ == 11) {
+        if (argCase_ == 9) {
           argCase_ = 0;
           arg_ = null;
           onChanged();
@@ -842,7 +842,7 @@ public final class AbilityArgumentOuterClass {
         return this;
       }
       /**
-       * <code>string str_arg = 11;</code>
+       * <code>string str_arg = 9;</code>
        * @param value The bytes for strArg to set.
        * @return This builder for chaining.
        */
@@ -852,7 +852,7 @@ public final class AbilityArgumentOuterClass {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
-        argCase_ = 11;
+        argCase_ = 9;
         arg_ = value;
         onChanged();
         return this;
@@ -925,8 +925,8 @@ public final class AbilityArgumentOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\025AbilityArgument.proto\"S\n\017AbilityArgume" +
-      "nt\022\021\n\007int_arg\030\005 \001(\rH\000\022\023\n\tfloat_arg\030\017 \001(\002" +
-      "H\000\022\021\n\007str_arg\030\013 \001(\tH\000B\005\n\003argB\033\n\031emu.gras" +
+      "nt\022\021\n\007int_arg\030\016 \001(\rH\000\022\023\n\tfloat_arg\030\007 \001(\002" +
+      "H\000\022\021\n\007str_arg\030\t \001(\tH\000B\005\n\003argB\033\n\031emu.gras" +
       "scutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

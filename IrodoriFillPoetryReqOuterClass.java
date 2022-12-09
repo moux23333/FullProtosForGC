@@ -19,23 +19,27 @@ public final class IrodoriFillPoetryReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 theme_id = 9;</code>
-     * @return The themeId.
-     */
-    int getThemeId();
-
-    /**
-     * <code>uint32 line_id = 13;</code>
+     * <code>uint32 line_id = 6;</code>
      * @return The lineId.
      */
     int getLineId();
+
+    /**
+     * <code>uint32 theme_id = 5;</code>
+     * @return The themeId.
+     */
+    int getThemeId();
   }
   /**
    * <pre>
-   * CmdId: 8129
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 8926;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code IrodoriFillPoetryReq}
@@ -82,12 +86,12 @@ public final class IrodoriFillPoetryReqOuterClass {
             case 0:
               done = true;
               break;
-            case 72: {
+            case 40: {
 
               themeId_ = input.readUInt32();
               break;
             }
-            case 104: {
+            case 48: {
 
               lineId_ = input.readUInt32();
               break;
@@ -124,26 +128,26 @@ public final class IrodoriFillPoetryReqOuterClass {
               emu.grasscutter.net.proto.IrodoriFillPoetryReqOuterClass.IrodoriFillPoetryReq.class, emu.grasscutter.net.proto.IrodoriFillPoetryReqOuterClass.IrodoriFillPoetryReq.Builder.class);
     }
 
-    public static final int THEME_ID_FIELD_NUMBER = 9;
-    private int themeId_;
-    /**
-     * <code>uint32 theme_id = 9;</code>
-     * @return The themeId.
-     */
-    @java.lang.Override
-    public int getThemeId() {
-      return themeId_;
-    }
-
-    public static final int LINE_ID_FIELD_NUMBER = 13;
+    public static final int LINE_ID_FIELD_NUMBER = 6;
     private int lineId_;
     /**
-     * <code>uint32 line_id = 13;</code>
+     * <code>uint32 line_id = 6;</code>
      * @return The lineId.
      */
     @java.lang.Override
     public int getLineId() {
       return lineId_;
+    }
+
+    public static final int THEME_ID_FIELD_NUMBER = 5;
+    private int themeId_;
+    /**
+     * <code>uint32 theme_id = 5;</code>
+     * @return The themeId.
+     */
+    @java.lang.Override
+    public int getThemeId() {
+      return themeId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -161,10 +165,10 @@ public final class IrodoriFillPoetryReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (themeId_ != 0) {
-        output.writeUInt32(9, themeId_);
+        output.writeUInt32(5, themeId_);
       }
       if (lineId_ != 0) {
-        output.writeUInt32(13, lineId_);
+        output.writeUInt32(6, lineId_);
       }
       unknownFields.writeTo(output);
     }
@@ -177,11 +181,11 @@ public final class IrodoriFillPoetryReqOuterClass {
       size = 0;
       if (themeId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, themeId_);
+          .computeUInt32Size(5, themeId_);
       }
       if (lineId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, lineId_);
+          .computeUInt32Size(6, lineId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -198,10 +202,10 @@ public final class IrodoriFillPoetryReqOuterClass {
       }
       emu.grasscutter.net.proto.IrodoriFillPoetryReqOuterClass.IrodoriFillPoetryReq other = (emu.grasscutter.net.proto.IrodoriFillPoetryReqOuterClass.IrodoriFillPoetryReq) obj;
 
-      if (getThemeId()
-          != other.getThemeId()) return false;
       if (getLineId()
           != other.getLineId()) return false;
+      if (getThemeId()
+          != other.getThemeId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -213,10 +217,10 @@ public final class IrodoriFillPoetryReqOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + THEME_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getThemeId();
       hash = (37 * hash) + LINE_ID_FIELD_NUMBER;
       hash = (53 * hash) + getLineId();
+      hash = (37 * hash) + THEME_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getThemeId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -314,10 +318,14 @@ public final class IrodoriFillPoetryReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 8129
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 8926;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code IrodoriFillPoetryReq}
@@ -357,9 +365,9 @@ public final class IrodoriFillPoetryReqOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        themeId_ = 0;
-
         lineId_ = 0;
+
+        themeId_ = 0;
 
         return this;
       }
@@ -387,8 +395,8 @@ public final class IrodoriFillPoetryReqOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.IrodoriFillPoetryReqOuterClass.IrodoriFillPoetryReq buildPartial() {
         emu.grasscutter.net.proto.IrodoriFillPoetryReqOuterClass.IrodoriFillPoetryReq result = new emu.grasscutter.net.proto.IrodoriFillPoetryReqOuterClass.IrodoriFillPoetryReq(this);
-        result.themeId_ = themeId_;
         result.lineId_ = lineId_;
+        result.themeId_ = themeId_;
         onBuilt();
         return result;
       }
@@ -437,11 +445,11 @@ public final class IrodoriFillPoetryReqOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.IrodoriFillPoetryReqOuterClass.IrodoriFillPoetryReq other) {
         if (other == emu.grasscutter.net.proto.IrodoriFillPoetryReqOuterClass.IrodoriFillPoetryReq.getDefaultInstance()) return this;
-        if (other.getThemeId() != 0) {
-          setThemeId(other.getThemeId());
-        }
         if (other.getLineId() != 0) {
           setLineId(other.getLineId());
+        }
+        if (other.getThemeId() != 0) {
+          setThemeId(other.getThemeId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -472,40 +480,9 @@ public final class IrodoriFillPoetryReqOuterClass {
         return this;
       }
 
-      private int themeId_ ;
-      /**
-       * <code>uint32 theme_id = 9;</code>
-       * @return The themeId.
-       */
-      @java.lang.Override
-      public int getThemeId() {
-        return themeId_;
-      }
-      /**
-       * <code>uint32 theme_id = 9;</code>
-       * @param value The themeId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setThemeId(int value) {
-        
-        themeId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 theme_id = 9;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearThemeId() {
-        
-        themeId_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int lineId_ ;
       /**
-       * <code>uint32 line_id = 13;</code>
+       * <code>uint32 line_id = 6;</code>
        * @return The lineId.
        */
       @java.lang.Override
@@ -513,7 +490,7 @@ public final class IrodoriFillPoetryReqOuterClass {
         return lineId_;
       }
       /**
-       * <code>uint32 line_id = 13;</code>
+       * <code>uint32 line_id = 6;</code>
        * @param value The lineId to set.
        * @return This builder for chaining.
        */
@@ -524,12 +501,43 @@ public final class IrodoriFillPoetryReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 line_id = 13;</code>
+       * <code>uint32 line_id = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearLineId() {
         
         lineId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int themeId_ ;
+      /**
+       * <code>uint32 theme_id = 5;</code>
+       * @return The themeId.
+       */
+      @java.lang.Override
+      public int getThemeId() {
+        return themeId_;
+      }
+      /**
+       * <code>uint32 theme_id = 5;</code>
+       * @param value The themeId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setThemeId(int value) {
+        
+        themeId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 theme_id = 5;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearThemeId() {
+        
+        themeId_ = 0;
         onChanged();
         return this;
       }
@@ -601,8 +609,8 @@ public final class IrodoriFillPoetryReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\032IrodoriFillPoetryReq.proto\"9\n\024IrodoriF" +
-      "illPoetryReq\022\020\n\010theme_id\030\t \001(\r\022\017\n\007line_i" +
-      "d\030\r \001(\rB\033\n\031emu.grasscutter.net.protob\006pr" +
+      "illPoetryReq\022\017\n\007line_id\030\006 \001(\r\022\020\n\010theme_i" +
+      "d\030\005 \001(\rB\033\n\031emu.grasscutter.net.protob\006pr" +
       "oto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -614,7 +622,7 @@ public final class IrodoriFillPoetryReqOuterClass {
     internal_static_IrodoriFillPoetryReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_IrodoriFillPoetryReq_descriptor,
-        new java.lang.String[] { "ThemeId", "LineId", });
+        new java.lang.String[] { "LineId", "ThemeId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

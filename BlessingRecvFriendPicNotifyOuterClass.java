@@ -19,22 +19,26 @@ public final class BlessingRecvFriendPicNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 uid = 15;</code>
-     * @return The uid.
-     */
-    int getUid();
-
-    /**
-     * <code>uint32 pic_id = 5;</code>
+     * <code>uint32 pic_id = 4;</code>
      * @return The picId.
      */
     int getPicId();
+
+    /**
+     * <code>uint32 uid = 14;</code>
+     * @return The uid.
+     */
+    int getUid();
   }
   /**
    * <pre>
-   * CmdId: 2178
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 2107;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code BlessingRecvFriendPicNotify}
@@ -81,12 +85,12 @@ public final class BlessingRecvFriendPicNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 40: {
+            case 32: {
 
               picId_ = input.readUInt32();
               break;
             }
-            case 120: {
+            case 112: {
 
               uid_ = input.readUInt32();
               break;
@@ -123,26 +127,26 @@ public final class BlessingRecvFriendPicNotifyOuterClass {
               emu.grasscutter.net.proto.BlessingRecvFriendPicNotifyOuterClass.BlessingRecvFriendPicNotify.class, emu.grasscutter.net.proto.BlessingRecvFriendPicNotifyOuterClass.BlessingRecvFriendPicNotify.Builder.class);
     }
 
-    public static final int UID_FIELD_NUMBER = 15;
-    private int uid_;
-    /**
-     * <code>uint32 uid = 15;</code>
-     * @return The uid.
-     */
-    @java.lang.Override
-    public int getUid() {
-      return uid_;
-    }
-
-    public static final int PIC_ID_FIELD_NUMBER = 5;
+    public static final int PIC_ID_FIELD_NUMBER = 4;
     private int picId_;
     /**
-     * <code>uint32 pic_id = 5;</code>
+     * <code>uint32 pic_id = 4;</code>
      * @return The picId.
      */
     @java.lang.Override
     public int getPicId() {
       return picId_;
+    }
+
+    public static final int UID_FIELD_NUMBER = 14;
+    private int uid_;
+    /**
+     * <code>uint32 uid = 14;</code>
+     * @return The uid.
+     */
+    @java.lang.Override
+    public int getUid() {
+      return uid_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -160,10 +164,10 @@ public final class BlessingRecvFriendPicNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (picId_ != 0) {
-        output.writeUInt32(5, picId_);
+        output.writeUInt32(4, picId_);
       }
       if (uid_ != 0) {
-        output.writeUInt32(15, uid_);
+        output.writeUInt32(14, uid_);
       }
       unknownFields.writeTo(output);
     }
@@ -176,11 +180,11 @@ public final class BlessingRecvFriendPicNotifyOuterClass {
       size = 0;
       if (picId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, picId_);
+          .computeUInt32Size(4, picId_);
       }
       if (uid_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, uid_);
+          .computeUInt32Size(14, uid_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -197,10 +201,10 @@ public final class BlessingRecvFriendPicNotifyOuterClass {
       }
       emu.grasscutter.net.proto.BlessingRecvFriendPicNotifyOuterClass.BlessingRecvFriendPicNotify other = (emu.grasscutter.net.proto.BlessingRecvFriendPicNotifyOuterClass.BlessingRecvFriendPicNotify) obj;
 
-      if (getUid()
-          != other.getUid()) return false;
       if (getPicId()
           != other.getPicId()) return false;
+      if (getUid()
+          != other.getUid()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -212,10 +216,10 @@ public final class BlessingRecvFriendPicNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + UID_FIELD_NUMBER;
-      hash = (53 * hash) + getUid();
       hash = (37 * hash) + PIC_ID_FIELD_NUMBER;
       hash = (53 * hash) + getPicId();
+      hash = (37 * hash) + UID_FIELD_NUMBER;
+      hash = (53 * hash) + getUid();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -313,9 +317,13 @@ public final class BlessingRecvFriendPicNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 2178
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 2107;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code BlessingRecvFriendPicNotify}
@@ -355,9 +363,9 @@ public final class BlessingRecvFriendPicNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        uid_ = 0;
-
         picId_ = 0;
+
+        uid_ = 0;
 
         return this;
       }
@@ -385,8 +393,8 @@ public final class BlessingRecvFriendPicNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.BlessingRecvFriendPicNotifyOuterClass.BlessingRecvFriendPicNotify buildPartial() {
         emu.grasscutter.net.proto.BlessingRecvFriendPicNotifyOuterClass.BlessingRecvFriendPicNotify result = new emu.grasscutter.net.proto.BlessingRecvFriendPicNotifyOuterClass.BlessingRecvFriendPicNotify(this);
-        result.uid_ = uid_;
         result.picId_ = picId_;
+        result.uid_ = uid_;
         onBuilt();
         return result;
       }
@@ -435,11 +443,11 @@ public final class BlessingRecvFriendPicNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.BlessingRecvFriendPicNotifyOuterClass.BlessingRecvFriendPicNotify other) {
         if (other == emu.grasscutter.net.proto.BlessingRecvFriendPicNotifyOuterClass.BlessingRecvFriendPicNotify.getDefaultInstance()) return this;
-        if (other.getUid() != 0) {
-          setUid(other.getUid());
-        }
         if (other.getPicId() != 0) {
           setPicId(other.getPicId());
+        }
+        if (other.getUid() != 0) {
+          setUid(other.getUid());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -470,40 +478,9 @@ public final class BlessingRecvFriendPicNotifyOuterClass {
         return this;
       }
 
-      private int uid_ ;
-      /**
-       * <code>uint32 uid = 15;</code>
-       * @return The uid.
-       */
-      @java.lang.Override
-      public int getUid() {
-        return uid_;
-      }
-      /**
-       * <code>uint32 uid = 15;</code>
-       * @param value The uid to set.
-       * @return This builder for chaining.
-       */
-      public Builder setUid(int value) {
-        
-        uid_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 uid = 15;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearUid() {
-        
-        uid_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int picId_ ;
       /**
-       * <code>uint32 pic_id = 5;</code>
+       * <code>uint32 pic_id = 4;</code>
        * @return The picId.
        */
       @java.lang.Override
@@ -511,7 +488,7 @@ public final class BlessingRecvFriendPicNotifyOuterClass {
         return picId_;
       }
       /**
-       * <code>uint32 pic_id = 5;</code>
+       * <code>uint32 pic_id = 4;</code>
        * @param value The picId to set.
        * @return This builder for chaining.
        */
@@ -522,12 +499,43 @@ public final class BlessingRecvFriendPicNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 pic_id = 5;</code>
+       * <code>uint32 pic_id = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearPicId() {
         
         picId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int uid_ ;
+      /**
+       * <code>uint32 uid = 14;</code>
+       * @return The uid.
+       */
+      @java.lang.Override
+      public int getUid() {
+        return uid_;
+      }
+      /**
+       * <code>uint32 uid = 14;</code>
+       * @param value The uid to set.
+       * @return This builder for chaining.
+       */
+      public Builder setUid(int value) {
+        
+        uid_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 uid = 14;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearUid() {
+        
+        uid_ = 0;
         onChanged();
         return this;
       }
@@ -599,8 +607,8 @@ public final class BlessingRecvFriendPicNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n!BlessingRecvFriendPicNotify.proto\":\n\033B" +
-      "lessingRecvFriendPicNotify\022\013\n\003uid\030\017 \001(\r\022" +
-      "\016\n\006pic_id\030\005 \001(\rB\033\n\031emu.grasscutter.net.p" +
+      "lessingRecvFriendPicNotify\022\016\n\006pic_id\030\004 \001" +
+      "(\r\022\013\n\003uid\030\016 \001(\rB\033\n\031emu.grasscutter.net.p" +
       "rotob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -612,7 +620,7 @@ public final class BlessingRecvFriendPicNotifyOuterClass {
     internal_static_BlessingRecvFriendPicNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_BlessingRecvFriendPicNotify_descriptor,
-        new java.lang.String[] { "Uid", "PicId", });
+        new java.lang.String[] { "PicId", "Uid", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

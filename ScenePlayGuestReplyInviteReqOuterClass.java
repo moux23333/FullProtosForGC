@@ -19,23 +19,27 @@ public final class ScenePlayGuestReplyInviteReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_agree = 15;</code>
+     * <code>bool is_agree = 7;</code>
      * @return The isAgree.
      */
     boolean getIsAgree();
 
     /**
-     * <code>uint32 play_id = 6;</code>
+     * <code>uint32 play_id = 4;</code>
      * @return The playId.
      */
     int getPlayId();
   }
   /**
    * <pre>
-   * CmdId: 4353
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 4411;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code ScenePlayGuestReplyInviteReq}
@@ -82,12 +86,12 @@ public final class ScenePlayGuestReplyInviteReqOuterClass {
             case 0:
               done = true;
               break;
-            case 48: {
+            case 32: {
 
               playId_ = input.readUInt32();
               break;
             }
-            case 120: {
+            case 56: {
 
               isAgree_ = input.readBool();
               break;
@@ -124,10 +128,10 @@ public final class ScenePlayGuestReplyInviteReqOuterClass {
               emu.grasscutter.net.proto.ScenePlayGuestReplyInviteReqOuterClass.ScenePlayGuestReplyInviteReq.class, emu.grasscutter.net.proto.ScenePlayGuestReplyInviteReqOuterClass.ScenePlayGuestReplyInviteReq.Builder.class);
     }
 
-    public static final int IS_AGREE_FIELD_NUMBER = 15;
+    public static final int IS_AGREE_FIELD_NUMBER = 7;
     private boolean isAgree_;
     /**
-     * <code>bool is_agree = 15;</code>
+     * <code>bool is_agree = 7;</code>
      * @return The isAgree.
      */
     @java.lang.Override
@@ -135,10 +139,10 @@ public final class ScenePlayGuestReplyInviteReqOuterClass {
       return isAgree_;
     }
 
-    public static final int PLAY_ID_FIELD_NUMBER = 6;
+    public static final int PLAY_ID_FIELD_NUMBER = 4;
     private int playId_;
     /**
-     * <code>uint32 play_id = 6;</code>
+     * <code>uint32 play_id = 4;</code>
      * @return The playId.
      */
     @java.lang.Override
@@ -161,10 +165,10 @@ public final class ScenePlayGuestReplyInviteReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (playId_ != 0) {
-        output.writeUInt32(6, playId_);
+        output.writeUInt32(4, playId_);
       }
       if (isAgree_ != false) {
-        output.writeBool(15, isAgree_);
+        output.writeBool(7, isAgree_);
       }
       unknownFields.writeTo(output);
     }
@@ -177,11 +181,11 @@ public final class ScenePlayGuestReplyInviteReqOuterClass {
       size = 0;
       if (playId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, playId_);
+          .computeUInt32Size(4, playId_);
       }
       if (isAgree_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(15, isAgree_);
+          .computeBoolSize(7, isAgree_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -315,10 +319,14 @@ public final class ScenePlayGuestReplyInviteReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 4353
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 4411;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code ScenePlayGuestReplyInviteReq}
@@ -475,7 +483,7 @@ public final class ScenePlayGuestReplyInviteReqOuterClass {
 
       private boolean isAgree_ ;
       /**
-       * <code>bool is_agree = 15;</code>
+       * <code>bool is_agree = 7;</code>
        * @return The isAgree.
        */
       @java.lang.Override
@@ -483,7 +491,7 @@ public final class ScenePlayGuestReplyInviteReqOuterClass {
         return isAgree_;
       }
       /**
-       * <code>bool is_agree = 15;</code>
+       * <code>bool is_agree = 7;</code>
        * @param value The isAgree to set.
        * @return This builder for chaining.
        */
@@ -494,7 +502,7 @@ public final class ScenePlayGuestReplyInviteReqOuterClass {
         return this;
       }
       /**
-       * <code>bool is_agree = 15;</code>
+       * <code>bool is_agree = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsAgree() {
@@ -506,7 +514,7 @@ public final class ScenePlayGuestReplyInviteReqOuterClass {
 
       private int playId_ ;
       /**
-       * <code>uint32 play_id = 6;</code>
+       * <code>uint32 play_id = 4;</code>
        * @return The playId.
        */
       @java.lang.Override
@@ -514,7 +522,7 @@ public final class ScenePlayGuestReplyInviteReqOuterClass {
         return playId_;
       }
       /**
-       * <code>uint32 play_id = 6;</code>
+       * <code>uint32 play_id = 4;</code>
        * @param value The playId to set.
        * @return This builder for chaining.
        */
@@ -525,7 +533,7 @@ public final class ScenePlayGuestReplyInviteReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 play_id = 6;</code>
+       * <code>uint32 play_id = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearPlayId() {
@@ -603,7 +611,7 @@ public final class ScenePlayGuestReplyInviteReqOuterClass {
     java.lang.String[] descriptorData = {
       "\n\"ScenePlayGuestReplyInviteReq.proto\"A\n\034" +
       "ScenePlayGuestReplyInviteReq\022\020\n\010is_agree" +
-      "\030\017 \001(\010\022\017\n\007play_id\030\006 \001(\rB\033\n\031emu.grasscutt" +
+      "\030\007 \001(\010\022\017\n\007play_id\030\004 \001(\rB\033\n\031emu.grasscutt" +
       "er.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

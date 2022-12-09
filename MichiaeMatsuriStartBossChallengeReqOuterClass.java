@@ -19,23 +19,27 @@ public final class MichiaeMatsuriStartBossChallengeReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 difficulty = 5;</code>
+     * <code>uint32 difficulty = 4;</code>
      * @return The difficulty.
      */
     int getDifficulty();
 
     /**
-     * <code>uint32 gadget_entity_id = 15;</code>
+     * <code>uint32 gadget_entity_id = 6;</code>
      * @return The gadgetEntityId.
      */
     int getGadgetEntityId();
   }
   /**
    * <pre>
-   * CmdId: 8703
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 8650;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code MichiaeMatsuriStartBossChallengeReq}
@@ -82,12 +86,12 @@ public final class MichiaeMatsuriStartBossChallengeReqOuterClass {
             case 0:
               done = true;
               break;
-            case 40: {
+            case 32: {
 
               difficulty_ = input.readUInt32();
               break;
             }
-            case 120: {
+            case 48: {
 
               gadgetEntityId_ = input.readUInt32();
               break;
@@ -124,10 +128,10 @@ public final class MichiaeMatsuriStartBossChallengeReqOuterClass {
               emu.grasscutter.net.proto.MichiaeMatsuriStartBossChallengeReqOuterClass.MichiaeMatsuriStartBossChallengeReq.class, emu.grasscutter.net.proto.MichiaeMatsuriStartBossChallengeReqOuterClass.MichiaeMatsuriStartBossChallengeReq.Builder.class);
     }
 
-    public static final int DIFFICULTY_FIELD_NUMBER = 5;
+    public static final int DIFFICULTY_FIELD_NUMBER = 4;
     private int difficulty_;
     /**
-     * <code>uint32 difficulty = 5;</code>
+     * <code>uint32 difficulty = 4;</code>
      * @return The difficulty.
      */
     @java.lang.Override
@@ -135,10 +139,10 @@ public final class MichiaeMatsuriStartBossChallengeReqOuterClass {
       return difficulty_;
     }
 
-    public static final int GADGET_ENTITY_ID_FIELD_NUMBER = 15;
+    public static final int GADGET_ENTITY_ID_FIELD_NUMBER = 6;
     private int gadgetEntityId_;
     /**
-     * <code>uint32 gadget_entity_id = 15;</code>
+     * <code>uint32 gadget_entity_id = 6;</code>
      * @return The gadgetEntityId.
      */
     @java.lang.Override
@@ -161,10 +165,10 @@ public final class MichiaeMatsuriStartBossChallengeReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (difficulty_ != 0) {
-        output.writeUInt32(5, difficulty_);
+        output.writeUInt32(4, difficulty_);
       }
       if (gadgetEntityId_ != 0) {
-        output.writeUInt32(15, gadgetEntityId_);
+        output.writeUInt32(6, gadgetEntityId_);
       }
       unknownFields.writeTo(output);
     }
@@ -177,11 +181,11 @@ public final class MichiaeMatsuriStartBossChallengeReqOuterClass {
       size = 0;
       if (difficulty_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, difficulty_);
+          .computeUInt32Size(4, difficulty_);
       }
       if (gadgetEntityId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, gadgetEntityId_);
+          .computeUInt32Size(6, gadgetEntityId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -314,10 +318,14 @@ public final class MichiaeMatsuriStartBossChallengeReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 8703
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 8650;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code MichiaeMatsuriStartBossChallengeReq}
@@ -474,7 +482,7 @@ public final class MichiaeMatsuriStartBossChallengeReqOuterClass {
 
       private int difficulty_ ;
       /**
-       * <code>uint32 difficulty = 5;</code>
+       * <code>uint32 difficulty = 4;</code>
        * @return The difficulty.
        */
       @java.lang.Override
@@ -482,7 +490,7 @@ public final class MichiaeMatsuriStartBossChallengeReqOuterClass {
         return difficulty_;
       }
       /**
-       * <code>uint32 difficulty = 5;</code>
+       * <code>uint32 difficulty = 4;</code>
        * @param value The difficulty to set.
        * @return This builder for chaining.
        */
@@ -493,7 +501,7 @@ public final class MichiaeMatsuriStartBossChallengeReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 difficulty = 5;</code>
+       * <code>uint32 difficulty = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearDifficulty() {
@@ -505,7 +513,7 @@ public final class MichiaeMatsuriStartBossChallengeReqOuterClass {
 
       private int gadgetEntityId_ ;
       /**
-       * <code>uint32 gadget_entity_id = 15;</code>
+       * <code>uint32 gadget_entity_id = 6;</code>
        * @return The gadgetEntityId.
        */
       @java.lang.Override
@@ -513,7 +521,7 @@ public final class MichiaeMatsuriStartBossChallengeReqOuterClass {
         return gadgetEntityId_;
       }
       /**
-       * <code>uint32 gadget_entity_id = 15;</code>
+       * <code>uint32 gadget_entity_id = 6;</code>
        * @param value The gadgetEntityId to set.
        * @return This builder for chaining.
        */
@@ -524,7 +532,7 @@ public final class MichiaeMatsuriStartBossChallengeReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 gadget_entity_id = 15;</code>
+       * <code>uint32 gadget_entity_id = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearGadgetEntityId() {
@@ -602,8 +610,8 @@ public final class MichiaeMatsuriStartBossChallengeReqOuterClass {
     java.lang.String[] descriptorData = {
       "\n)MichiaeMatsuriStartBossChallengeReq.pr" +
       "oto\"S\n#MichiaeMatsuriStartBossChallengeR" +
-      "eq\022\022\n\ndifficulty\030\005 \001(\r\022\030\n\020gadget_entity_" +
-      "id\030\017 \001(\rB\033\n\031emu.grasscutter.net.protob\006p" +
+      "eq\022\022\n\ndifficulty\030\004 \001(\r\022\030\n\020gadget_entity_" +
+      "id\030\006 \001(\rB\033\n\031emu.grasscutter.net.protob\006p" +
       "roto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

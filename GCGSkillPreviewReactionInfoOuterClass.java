@@ -19,16 +19,16 @@ public final class GCGSkillPreviewReactionInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 source_element = 13;</code>
-     * @return The sourceElement.
+     * <code>uint32 Unk3300_AENPLEDPMJH = 3;</code>
+     * @return The unk3300AENPLEDPMJH.
      */
-    int getSourceElement();
+    int getUnk3300AENPLEDPMJH();
 
     /**
-     * <code>uint32 target_element = 1;</code>
-     * @return The targetElement.
+     * <code>uint32 Unk3300_PDEHPHJFAKD = 2;</code>
+     * @return The unk3300PDEHPHJFAKD.
      */
-    int getTargetElement();
+    int getUnk3300PDEHPHJFAKD();
   }
   /**
    * Protobuf type {@code GCGSkillPreviewReactionInfo}
@@ -75,14 +75,14 @@ public final class GCGSkillPreviewReactionInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
+            case 16: {
 
-              targetElement_ = input.readUInt32();
+              unk3300PDEHPHJFAKD_ = input.readUInt32();
               break;
             }
-            case 104: {
+            case 24: {
 
-              sourceElement_ = input.readUInt32();
+              unk3300AENPLEDPMJH_ = input.readUInt32();
               break;
             }
             default: {
@@ -117,26 +117,26 @@ public final class GCGSkillPreviewReactionInfoOuterClass {
               emu.grasscutter.net.proto.GCGSkillPreviewReactionInfoOuterClass.GCGSkillPreviewReactionInfo.class, emu.grasscutter.net.proto.GCGSkillPreviewReactionInfoOuterClass.GCGSkillPreviewReactionInfo.Builder.class);
     }
 
-    public static final int SOURCE_ELEMENT_FIELD_NUMBER = 13;
-    private int sourceElement_;
+    public static final int UNK3300_AENPLEDPMJH_FIELD_NUMBER = 3;
+    private int unk3300AENPLEDPMJH_;
     /**
-     * <code>uint32 source_element = 13;</code>
-     * @return The sourceElement.
+     * <code>uint32 Unk3300_AENPLEDPMJH = 3;</code>
+     * @return The unk3300AENPLEDPMJH.
      */
     @java.lang.Override
-    public int getSourceElement() {
-      return sourceElement_;
+    public int getUnk3300AENPLEDPMJH() {
+      return unk3300AENPLEDPMJH_;
     }
 
-    public static final int TARGET_ELEMENT_FIELD_NUMBER = 1;
-    private int targetElement_;
+    public static final int UNK3300_PDEHPHJFAKD_FIELD_NUMBER = 2;
+    private int unk3300PDEHPHJFAKD_;
     /**
-     * <code>uint32 target_element = 1;</code>
-     * @return The targetElement.
+     * <code>uint32 Unk3300_PDEHPHJFAKD = 2;</code>
+     * @return The unk3300PDEHPHJFAKD.
      */
     @java.lang.Override
-    public int getTargetElement() {
-      return targetElement_;
+    public int getUnk3300PDEHPHJFAKD() {
+      return unk3300PDEHPHJFAKD_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -153,11 +153,11 @@ public final class GCGSkillPreviewReactionInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (targetElement_ != 0) {
-        output.writeUInt32(1, targetElement_);
+      if (unk3300PDEHPHJFAKD_ != 0) {
+        output.writeUInt32(2, unk3300PDEHPHJFAKD_);
       }
-      if (sourceElement_ != 0) {
-        output.writeUInt32(13, sourceElement_);
+      if (unk3300AENPLEDPMJH_ != 0) {
+        output.writeUInt32(3, unk3300AENPLEDPMJH_);
       }
       unknownFields.writeTo(output);
     }
@@ -168,13 +168,13 @@ public final class GCGSkillPreviewReactionInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (targetElement_ != 0) {
+      if (unk3300PDEHPHJFAKD_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, targetElement_);
+          .computeUInt32Size(2, unk3300PDEHPHJFAKD_);
       }
-      if (sourceElement_ != 0) {
+      if (unk3300AENPLEDPMJH_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, sourceElement_);
+          .computeUInt32Size(3, unk3300AENPLEDPMJH_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -191,10 +191,10 @@ public final class GCGSkillPreviewReactionInfoOuterClass {
       }
       emu.grasscutter.net.proto.GCGSkillPreviewReactionInfoOuterClass.GCGSkillPreviewReactionInfo other = (emu.grasscutter.net.proto.GCGSkillPreviewReactionInfoOuterClass.GCGSkillPreviewReactionInfo) obj;
 
-      if (getSourceElement()
-          != other.getSourceElement()) return false;
-      if (getTargetElement()
-          != other.getTargetElement()) return false;
+      if (getUnk3300AENPLEDPMJH()
+          != other.getUnk3300AENPLEDPMJH()) return false;
+      if (getUnk3300PDEHPHJFAKD()
+          != other.getUnk3300PDEHPHJFAKD()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -206,10 +206,10 @@ public final class GCGSkillPreviewReactionInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + SOURCE_ELEMENT_FIELD_NUMBER;
-      hash = (53 * hash) + getSourceElement();
-      hash = (37 * hash) + TARGET_ELEMENT_FIELD_NUMBER;
-      hash = (53 * hash) + getTargetElement();
+      hash = (37 * hash) + UNK3300_AENPLEDPMJH_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300AENPLEDPMJH();
+      hash = (37 * hash) + UNK3300_PDEHPHJFAKD_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300PDEHPHJFAKD();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -343,9 +343,9 @@ public final class GCGSkillPreviewReactionInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        sourceElement_ = 0;
+        unk3300AENPLEDPMJH_ = 0;
 
-        targetElement_ = 0;
+        unk3300PDEHPHJFAKD_ = 0;
 
         return this;
       }
@@ -373,8 +373,8 @@ public final class GCGSkillPreviewReactionInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.GCGSkillPreviewReactionInfoOuterClass.GCGSkillPreviewReactionInfo buildPartial() {
         emu.grasscutter.net.proto.GCGSkillPreviewReactionInfoOuterClass.GCGSkillPreviewReactionInfo result = new emu.grasscutter.net.proto.GCGSkillPreviewReactionInfoOuterClass.GCGSkillPreviewReactionInfo(this);
-        result.sourceElement_ = sourceElement_;
-        result.targetElement_ = targetElement_;
+        result.unk3300AENPLEDPMJH_ = unk3300AENPLEDPMJH_;
+        result.unk3300PDEHPHJFAKD_ = unk3300PDEHPHJFAKD_;
         onBuilt();
         return result;
       }
@@ -423,11 +423,11 @@ public final class GCGSkillPreviewReactionInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.GCGSkillPreviewReactionInfoOuterClass.GCGSkillPreviewReactionInfo other) {
         if (other == emu.grasscutter.net.proto.GCGSkillPreviewReactionInfoOuterClass.GCGSkillPreviewReactionInfo.getDefaultInstance()) return this;
-        if (other.getSourceElement() != 0) {
-          setSourceElement(other.getSourceElement());
+        if (other.getUnk3300AENPLEDPMJH() != 0) {
+          setUnk3300AENPLEDPMJH(other.getUnk3300AENPLEDPMJH());
         }
-        if (other.getTargetElement() != 0) {
-          setTargetElement(other.getTargetElement());
+        if (other.getUnk3300PDEHPHJFAKD() != 0) {
+          setUnk3300PDEHPHJFAKD(other.getUnk3300PDEHPHJFAKD());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -458,64 +458,64 @@ public final class GCGSkillPreviewReactionInfoOuterClass {
         return this;
       }
 
-      private int sourceElement_ ;
+      private int unk3300AENPLEDPMJH_ ;
       /**
-       * <code>uint32 source_element = 13;</code>
-       * @return The sourceElement.
+       * <code>uint32 Unk3300_AENPLEDPMJH = 3;</code>
+       * @return The unk3300AENPLEDPMJH.
        */
       @java.lang.Override
-      public int getSourceElement() {
-        return sourceElement_;
+      public int getUnk3300AENPLEDPMJH() {
+        return unk3300AENPLEDPMJH_;
       }
       /**
-       * <code>uint32 source_element = 13;</code>
-       * @param value The sourceElement to set.
+       * <code>uint32 Unk3300_AENPLEDPMJH = 3;</code>
+       * @param value The unk3300AENPLEDPMJH to set.
        * @return This builder for chaining.
        */
-      public Builder setSourceElement(int value) {
+      public Builder setUnk3300AENPLEDPMJH(int value) {
         
-        sourceElement_ = value;
+        unk3300AENPLEDPMJH_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 source_element = 13;</code>
+       * <code>uint32 Unk3300_AENPLEDPMJH = 3;</code>
        * @return This builder for chaining.
        */
-      public Builder clearSourceElement() {
+      public Builder clearUnk3300AENPLEDPMJH() {
         
-        sourceElement_ = 0;
+        unk3300AENPLEDPMJH_ = 0;
         onChanged();
         return this;
       }
 
-      private int targetElement_ ;
+      private int unk3300PDEHPHJFAKD_ ;
       /**
-       * <code>uint32 target_element = 1;</code>
-       * @return The targetElement.
+       * <code>uint32 Unk3300_PDEHPHJFAKD = 2;</code>
+       * @return The unk3300PDEHPHJFAKD.
        */
       @java.lang.Override
-      public int getTargetElement() {
-        return targetElement_;
+      public int getUnk3300PDEHPHJFAKD() {
+        return unk3300PDEHPHJFAKD_;
       }
       /**
-       * <code>uint32 target_element = 1;</code>
-       * @param value The targetElement to set.
+       * <code>uint32 Unk3300_PDEHPHJFAKD = 2;</code>
+       * @param value The unk3300PDEHPHJFAKD to set.
        * @return This builder for chaining.
        */
-      public Builder setTargetElement(int value) {
+      public Builder setUnk3300PDEHPHJFAKD(int value) {
         
-        targetElement_ = value;
+        unk3300PDEHPHJFAKD_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 target_element = 1;</code>
+       * <code>uint32 Unk3300_PDEHPHJFAKD = 2;</code>
        * @return This builder for chaining.
        */
-      public Builder clearTargetElement() {
+      public Builder clearUnk3300PDEHPHJFAKD() {
         
-        targetElement_ = 0;
+        unk3300PDEHPHJFAKD_ = 0;
         onChanged();
         return this;
       }
@@ -586,10 +586,11 @@ public final class GCGSkillPreviewReactionInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n!GCGSkillPreviewReactionInfo.proto\"M\n\033G" +
-      "CGSkillPreviewReactionInfo\022\026\n\016source_ele" +
-      "ment\030\r \001(\r\022\026\n\016target_element\030\001 \001(\rB\033\n\031em" +
-      "u.grasscutter.net.protob\006proto3"
+      "\n!GCGSkillPreviewReactionInfo.proto\"W\n\033G" +
+      "CGSkillPreviewReactionInfo\022\033\n\023Unk3300_AE" +
+      "NPLEDPMJH\030\003 \001(\r\022\033\n\023Unk3300_PDEHPHJFAKD\030\002" +
+      " \001(\rB\033\n\031emu.grasscutter.net.protob\006proto" +
+      "3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -600,7 +601,7 @@ public final class GCGSkillPreviewReactionInfoOuterClass {
     internal_static_GCGSkillPreviewReactionInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GCGSkillPreviewReactionInfo_descriptor,
-        new java.lang.String[] { "SourceElement", "TargetElement", });
+        new java.lang.String[] { "Unk3300AENPLEDPMJH", "Unk3300PDEHPHJFAKD", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

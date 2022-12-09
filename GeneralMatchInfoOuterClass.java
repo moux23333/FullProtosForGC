@@ -19,37 +19,37 @@ public final class GeneralMatchInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 match_param = 1;</code>
-     * @return The matchParam.
-     */
-    int getMatchParam();
-
-    /**
-     * <code>uint32 match_id = 9;</code>
+     * <code>uint32 match_id = 8;</code>
      * @return The matchId.
      */
     int getMatchId();
 
     /**
-     * <code>repeated .MatchPlayerInfo player_list = 5;</code>
+     * <code>uint32 match_param = 3;</code>
+     * @return The matchParam.
+     */
+    int getMatchParam();
+
+    /**
+     * <code>repeated .MatchPlayerInfo player_list = 12;</code>
      */
     java.util.List<emu.grasscutter.net.proto.MatchPlayerInfoOuterClass.MatchPlayerInfo> 
         getPlayerListList();
     /**
-     * <code>repeated .MatchPlayerInfo player_list = 5;</code>
+     * <code>repeated .MatchPlayerInfo player_list = 12;</code>
      */
     emu.grasscutter.net.proto.MatchPlayerInfoOuterClass.MatchPlayerInfo getPlayerList(int index);
     /**
-     * <code>repeated .MatchPlayerInfo player_list = 5;</code>
+     * <code>repeated .MatchPlayerInfo player_list = 12;</code>
      */
     int getPlayerListCount();
     /**
-     * <code>repeated .MatchPlayerInfo player_list = 5;</code>
+     * <code>repeated .MatchPlayerInfo player_list = 12;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.MatchPlayerInfoOuterClass.MatchPlayerInfoOrBuilder> 
         getPlayerListOrBuilderList();
     /**
-     * <code>repeated .MatchPlayerInfo player_list = 5;</code>
+     * <code>repeated .MatchPlayerInfo player_list = 12;</code>
      */
     emu.grasscutter.net.proto.MatchPlayerInfoOuterClass.MatchPlayerInfoOrBuilder getPlayerListOrBuilder(
         int index);
@@ -101,23 +101,23 @@ public final class GeneralMatchInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
+            case 24: {
 
               matchParam_ = input.readUInt32();
               break;
             }
-            case 42: {
+            case 64: {
+
+              matchId_ = input.readUInt32();
+              break;
+            }
+            case 98: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 playerList_ = new java.util.ArrayList<emu.grasscutter.net.proto.MatchPlayerInfoOuterClass.MatchPlayerInfo>();
                 mutable_bitField0_ |= 0x00000001;
               }
               playerList_.add(
                   input.readMessage(emu.grasscutter.net.proto.MatchPlayerInfoOuterClass.MatchPlayerInfo.parser(), extensionRegistry));
-              break;
-            }
-            case 72: {
-
-              matchId_ = input.readUInt32();
               break;
             }
             default: {
@@ -155,21 +155,10 @@ public final class GeneralMatchInfoOuterClass {
               emu.grasscutter.net.proto.GeneralMatchInfoOuterClass.GeneralMatchInfo.class, emu.grasscutter.net.proto.GeneralMatchInfoOuterClass.GeneralMatchInfo.Builder.class);
     }
 
-    public static final int MATCH_PARAM_FIELD_NUMBER = 1;
-    private int matchParam_;
-    /**
-     * <code>uint32 match_param = 1;</code>
-     * @return The matchParam.
-     */
-    @java.lang.Override
-    public int getMatchParam() {
-      return matchParam_;
-    }
-
-    public static final int MATCH_ID_FIELD_NUMBER = 9;
+    public static final int MATCH_ID_FIELD_NUMBER = 8;
     private int matchId_;
     /**
-     * <code>uint32 match_id = 9;</code>
+     * <code>uint32 match_id = 8;</code>
      * @return The matchId.
      */
     @java.lang.Override
@@ -177,17 +166,28 @@ public final class GeneralMatchInfoOuterClass {
       return matchId_;
     }
 
-    public static final int PLAYER_LIST_FIELD_NUMBER = 5;
+    public static final int MATCH_PARAM_FIELD_NUMBER = 3;
+    private int matchParam_;
+    /**
+     * <code>uint32 match_param = 3;</code>
+     * @return The matchParam.
+     */
+    @java.lang.Override
+    public int getMatchParam() {
+      return matchParam_;
+    }
+
+    public static final int PLAYER_LIST_FIELD_NUMBER = 12;
     private java.util.List<emu.grasscutter.net.proto.MatchPlayerInfoOuterClass.MatchPlayerInfo> playerList_;
     /**
-     * <code>repeated .MatchPlayerInfo player_list = 5;</code>
+     * <code>repeated .MatchPlayerInfo player_list = 12;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.MatchPlayerInfoOuterClass.MatchPlayerInfo> getPlayerListList() {
       return playerList_;
     }
     /**
-     * <code>repeated .MatchPlayerInfo player_list = 5;</code>
+     * <code>repeated .MatchPlayerInfo player_list = 12;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.MatchPlayerInfoOuterClass.MatchPlayerInfoOrBuilder> 
@@ -195,21 +195,21 @@ public final class GeneralMatchInfoOuterClass {
       return playerList_;
     }
     /**
-     * <code>repeated .MatchPlayerInfo player_list = 5;</code>
+     * <code>repeated .MatchPlayerInfo player_list = 12;</code>
      */
     @java.lang.Override
     public int getPlayerListCount() {
       return playerList_.size();
     }
     /**
-     * <code>repeated .MatchPlayerInfo player_list = 5;</code>
+     * <code>repeated .MatchPlayerInfo player_list = 12;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.MatchPlayerInfoOuterClass.MatchPlayerInfo getPlayerList(int index) {
       return playerList_.get(index);
     }
     /**
-     * <code>repeated .MatchPlayerInfo player_list = 5;</code>
+     * <code>repeated .MatchPlayerInfo player_list = 12;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.MatchPlayerInfoOuterClass.MatchPlayerInfoOrBuilder getPlayerListOrBuilder(
@@ -232,13 +232,13 @@ public final class GeneralMatchInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (matchParam_ != 0) {
-        output.writeUInt32(1, matchParam_);
-      }
-      for (int i = 0; i < playerList_.size(); i++) {
-        output.writeMessage(5, playerList_.get(i));
+        output.writeUInt32(3, matchParam_);
       }
       if (matchId_ != 0) {
-        output.writeUInt32(9, matchId_);
+        output.writeUInt32(8, matchId_);
+      }
+      for (int i = 0; i < playerList_.size(); i++) {
+        output.writeMessage(12, playerList_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -251,15 +251,15 @@ public final class GeneralMatchInfoOuterClass {
       size = 0;
       if (matchParam_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, matchParam_);
-      }
-      for (int i = 0; i < playerList_.size(); i++) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(5, playerList_.get(i));
+          .computeUInt32Size(3, matchParam_);
       }
       if (matchId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, matchId_);
+          .computeUInt32Size(8, matchId_);
+      }
+      for (int i = 0; i < playerList_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(12, playerList_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -276,10 +276,10 @@ public final class GeneralMatchInfoOuterClass {
       }
       emu.grasscutter.net.proto.GeneralMatchInfoOuterClass.GeneralMatchInfo other = (emu.grasscutter.net.proto.GeneralMatchInfoOuterClass.GeneralMatchInfo) obj;
 
-      if (getMatchParam()
-          != other.getMatchParam()) return false;
       if (getMatchId()
           != other.getMatchId()) return false;
+      if (getMatchParam()
+          != other.getMatchParam()) return false;
       if (!getPlayerListList()
           .equals(other.getPlayerListList())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
@@ -293,10 +293,10 @@ public final class GeneralMatchInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + MATCH_PARAM_FIELD_NUMBER;
-      hash = (53 * hash) + getMatchParam();
       hash = (37 * hash) + MATCH_ID_FIELD_NUMBER;
       hash = (53 * hash) + getMatchId();
+      hash = (37 * hash) + MATCH_PARAM_FIELD_NUMBER;
+      hash = (53 * hash) + getMatchParam();
       if (getPlayerListCount() > 0) {
         hash = (37 * hash) + PLAYER_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getPlayerListList().hashCode();
@@ -435,9 +435,9 @@ public final class GeneralMatchInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        matchParam_ = 0;
-
         matchId_ = 0;
+
+        matchParam_ = 0;
 
         if (playerListBuilder_ == null) {
           playerList_ = java.util.Collections.emptyList();
@@ -472,8 +472,8 @@ public final class GeneralMatchInfoOuterClass {
       public emu.grasscutter.net.proto.GeneralMatchInfoOuterClass.GeneralMatchInfo buildPartial() {
         emu.grasscutter.net.proto.GeneralMatchInfoOuterClass.GeneralMatchInfo result = new emu.grasscutter.net.proto.GeneralMatchInfoOuterClass.GeneralMatchInfo(this);
         int from_bitField0_ = bitField0_;
-        result.matchParam_ = matchParam_;
         result.matchId_ = matchId_;
+        result.matchParam_ = matchParam_;
         if (playerListBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0)) {
             playerList_ = java.util.Collections.unmodifiableList(playerList_);
@@ -531,11 +531,11 @@ public final class GeneralMatchInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.GeneralMatchInfoOuterClass.GeneralMatchInfo other) {
         if (other == emu.grasscutter.net.proto.GeneralMatchInfoOuterClass.GeneralMatchInfo.getDefaultInstance()) return this;
-        if (other.getMatchParam() != 0) {
-          setMatchParam(other.getMatchParam());
-        }
         if (other.getMatchId() != 0) {
           setMatchId(other.getMatchId());
+        }
+        if (other.getMatchParam() != 0) {
+          setMatchParam(other.getMatchParam());
         }
         if (playerListBuilder_ == null) {
           if (!other.playerList_.isEmpty()) {
@@ -593,40 +593,9 @@ public final class GeneralMatchInfoOuterClass {
       }
       private int bitField0_;
 
-      private int matchParam_ ;
-      /**
-       * <code>uint32 match_param = 1;</code>
-       * @return The matchParam.
-       */
-      @java.lang.Override
-      public int getMatchParam() {
-        return matchParam_;
-      }
-      /**
-       * <code>uint32 match_param = 1;</code>
-       * @param value The matchParam to set.
-       * @return This builder for chaining.
-       */
-      public Builder setMatchParam(int value) {
-        
-        matchParam_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 match_param = 1;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearMatchParam() {
-        
-        matchParam_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int matchId_ ;
       /**
-       * <code>uint32 match_id = 9;</code>
+       * <code>uint32 match_id = 8;</code>
        * @return The matchId.
        */
       @java.lang.Override
@@ -634,7 +603,7 @@ public final class GeneralMatchInfoOuterClass {
         return matchId_;
       }
       /**
-       * <code>uint32 match_id = 9;</code>
+       * <code>uint32 match_id = 8;</code>
        * @param value The matchId to set.
        * @return This builder for chaining.
        */
@@ -645,12 +614,43 @@ public final class GeneralMatchInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 match_id = 9;</code>
+       * <code>uint32 match_id = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearMatchId() {
         
         matchId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int matchParam_ ;
+      /**
+       * <code>uint32 match_param = 3;</code>
+       * @return The matchParam.
+       */
+      @java.lang.Override
+      public int getMatchParam() {
+        return matchParam_;
+      }
+      /**
+       * <code>uint32 match_param = 3;</code>
+       * @param value The matchParam to set.
+       * @return This builder for chaining.
+       */
+      public Builder setMatchParam(int value) {
+        
+        matchParam_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 match_param = 3;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearMatchParam() {
+        
+        matchParam_ = 0;
         onChanged();
         return this;
       }
@@ -668,7 +668,7 @@ public final class GeneralMatchInfoOuterClass {
           emu.grasscutter.net.proto.MatchPlayerInfoOuterClass.MatchPlayerInfo, emu.grasscutter.net.proto.MatchPlayerInfoOuterClass.MatchPlayerInfo.Builder, emu.grasscutter.net.proto.MatchPlayerInfoOuterClass.MatchPlayerInfoOrBuilder> playerListBuilder_;
 
       /**
-       * <code>repeated .MatchPlayerInfo player_list = 5;</code>
+       * <code>repeated .MatchPlayerInfo player_list = 12;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.MatchPlayerInfoOuterClass.MatchPlayerInfo> getPlayerListList() {
         if (playerListBuilder_ == null) {
@@ -678,7 +678,7 @@ public final class GeneralMatchInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .MatchPlayerInfo player_list = 5;</code>
+       * <code>repeated .MatchPlayerInfo player_list = 12;</code>
        */
       public int getPlayerListCount() {
         if (playerListBuilder_ == null) {
@@ -688,7 +688,7 @@ public final class GeneralMatchInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .MatchPlayerInfo player_list = 5;</code>
+       * <code>repeated .MatchPlayerInfo player_list = 12;</code>
        */
       public emu.grasscutter.net.proto.MatchPlayerInfoOuterClass.MatchPlayerInfo getPlayerList(int index) {
         if (playerListBuilder_ == null) {
@@ -698,7 +698,7 @@ public final class GeneralMatchInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .MatchPlayerInfo player_list = 5;</code>
+       * <code>repeated .MatchPlayerInfo player_list = 12;</code>
        */
       public Builder setPlayerList(
           int index, emu.grasscutter.net.proto.MatchPlayerInfoOuterClass.MatchPlayerInfo value) {
@@ -715,7 +715,7 @@ public final class GeneralMatchInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .MatchPlayerInfo player_list = 5;</code>
+       * <code>repeated .MatchPlayerInfo player_list = 12;</code>
        */
       public Builder setPlayerList(
           int index, emu.grasscutter.net.proto.MatchPlayerInfoOuterClass.MatchPlayerInfo.Builder builderForValue) {
@@ -729,7 +729,7 @@ public final class GeneralMatchInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .MatchPlayerInfo player_list = 5;</code>
+       * <code>repeated .MatchPlayerInfo player_list = 12;</code>
        */
       public Builder addPlayerList(emu.grasscutter.net.proto.MatchPlayerInfoOuterClass.MatchPlayerInfo value) {
         if (playerListBuilder_ == null) {
@@ -745,7 +745,7 @@ public final class GeneralMatchInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .MatchPlayerInfo player_list = 5;</code>
+       * <code>repeated .MatchPlayerInfo player_list = 12;</code>
        */
       public Builder addPlayerList(
           int index, emu.grasscutter.net.proto.MatchPlayerInfoOuterClass.MatchPlayerInfo value) {
@@ -762,7 +762,7 @@ public final class GeneralMatchInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .MatchPlayerInfo player_list = 5;</code>
+       * <code>repeated .MatchPlayerInfo player_list = 12;</code>
        */
       public Builder addPlayerList(
           emu.grasscutter.net.proto.MatchPlayerInfoOuterClass.MatchPlayerInfo.Builder builderForValue) {
@@ -776,7 +776,7 @@ public final class GeneralMatchInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .MatchPlayerInfo player_list = 5;</code>
+       * <code>repeated .MatchPlayerInfo player_list = 12;</code>
        */
       public Builder addPlayerList(
           int index, emu.grasscutter.net.proto.MatchPlayerInfoOuterClass.MatchPlayerInfo.Builder builderForValue) {
@@ -790,7 +790,7 @@ public final class GeneralMatchInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .MatchPlayerInfo player_list = 5;</code>
+       * <code>repeated .MatchPlayerInfo player_list = 12;</code>
        */
       public Builder addAllPlayerList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.MatchPlayerInfoOuterClass.MatchPlayerInfo> values) {
@@ -805,7 +805,7 @@ public final class GeneralMatchInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .MatchPlayerInfo player_list = 5;</code>
+       * <code>repeated .MatchPlayerInfo player_list = 12;</code>
        */
       public Builder clearPlayerList() {
         if (playerListBuilder_ == null) {
@@ -818,7 +818,7 @@ public final class GeneralMatchInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .MatchPlayerInfo player_list = 5;</code>
+       * <code>repeated .MatchPlayerInfo player_list = 12;</code>
        */
       public Builder removePlayerList(int index) {
         if (playerListBuilder_ == null) {
@@ -831,14 +831,14 @@ public final class GeneralMatchInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .MatchPlayerInfo player_list = 5;</code>
+       * <code>repeated .MatchPlayerInfo player_list = 12;</code>
        */
       public emu.grasscutter.net.proto.MatchPlayerInfoOuterClass.MatchPlayerInfo.Builder getPlayerListBuilder(
           int index) {
         return getPlayerListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .MatchPlayerInfo player_list = 5;</code>
+       * <code>repeated .MatchPlayerInfo player_list = 12;</code>
        */
       public emu.grasscutter.net.proto.MatchPlayerInfoOuterClass.MatchPlayerInfoOrBuilder getPlayerListOrBuilder(
           int index) {
@@ -848,7 +848,7 @@ public final class GeneralMatchInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .MatchPlayerInfo player_list = 5;</code>
+       * <code>repeated .MatchPlayerInfo player_list = 12;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.MatchPlayerInfoOuterClass.MatchPlayerInfoOrBuilder> 
            getPlayerListOrBuilderList() {
@@ -859,14 +859,14 @@ public final class GeneralMatchInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .MatchPlayerInfo player_list = 5;</code>
+       * <code>repeated .MatchPlayerInfo player_list = 12;</code>
        */
       public emu.grasscutter.net.proto.MatchPlayerInfoOuterClass.MatchPlayerInfo.Builder addPlayerListBuilder() {
         return getPlayerListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.MatchPlayerInfoOuterClass.MatchPlayerInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .MatchPlayerInfo player_list = 5;</code>
+       * <code>repeated .MatchPlayerInfo player_list = 12;</code>
        */
       public emu.grasscutter.net.proto.MatchPlayerInfoOuterClass.MatchPlayerInfo.Builder addPlayerListBuilder(
           int index) {
@@ -874,7 +874,7 @@ public final class GeneralMatchInfoOuterClass {
             index, emu.grasscutter.net.proto.MatchPlayerInfoOuterClass.MatchPlayerInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .MatchPlayerInfo player_list = 5;</code>
+       * <code>repeated .MatchPlayerInfo player_list = 12;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.MatchPlayerInfoOuterClass.MatchPlayerInfo.Builder> 
            getPlayerListBuilderList() {
@@ -962,9 +962,9 @@ public final class GeneralMatchInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\026GeneralMatchInfo.proto\032\025MatchPlayerInf" +
-      "o.proto\"`\n\020GeneralMatchInfo\022\023\n\013match_par" +
-      "am\030\001 \001(\r\022\020\n\010match_id\030\t \001(\r\022%\n\013player_lis" +
-      "t\030\005 \003(\0132\020.MatchPlayerInfoB\033\n\031emu.grasscu" +
+      "o.proto\"`\n\020GeneralMatchInfo\022\020\n\010match_id\030" +
+      "\010 \001(\r\022\023\n\013match_param\030\003 \001(\r\022%\n\013player_lis" +
+      "t\030\014 \003(\0132\020.MatchPlayerInfoB\033\n\031emu.grasscu" +
       "tter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -977,7 +977,7 @@ public final class GeneralMatchInfoOuterClass {
     internal_static_GeneralMatchInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GeneralMatchInfo_descriptor,
-        new java.lang.String[] { "MatchParam", "MatchId", "PlayerList", });
+        new java.lang.String[] { "MatchId", "MatchParam", "PlayerList", });
     emu.grasscutter.net.proto.MatchPlayerInfoOuterClass.getDescriptor();
   }
 

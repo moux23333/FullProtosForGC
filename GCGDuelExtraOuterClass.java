@@ -110,6 +110,64 @@ public final class GCGDuelExtraOuterClass {
      * @return The score.
      */
     int getScore();
+
+    /**
+     * <code>bool is_match_ai = 7;</code>
+     * @return The isMatchAi.
+     */
+    boolean getIsMatchAi();
+
+    /**
+     * <code>uint32 ai_deck_id = 8;</code>
+     * @return The aiDeckId.
+     */
+    int getAiDeckId();
+
+    /**
+     * <code>bool is_internal = 9;</code>
+     * @return The isInternal.
+     */
+    boolean getIsInternal();
+
+    /**
+     * <code>repeated uint32 forbid_finish_challenge_list = 10;</code>
+     * @return A list containing the forbidFinishChallengeList.
+     */
+    java.util.List<java.lang.Integer> getForbidFinishChallengeListList();
+    /**
+     * <code>repeated uint32 forbid_finish_challenge_list = 10;</code>
+     * @return The count of forbidFinishChallengeList.
+     */
+    int getForbidFinishChallengeListCount();
+    /**
+     * <code>repeated uint32 forbid_finish_challenge_list = 10;</code>
+     * @param index The index of the element to return.
+     * @return The forbidFinishChallengeList at the given index.
+     */
+    int getForbidFinishChallengeList(int index);
+
+    /**
+     * <code>uint32 level = 11;</code>
+     * @return The level.
+     */
+    int getLevel();
+
+    /**
+     * <code>uint32 client_version = 12;</code>
+     * @return The clientVersion.
+     */
+    int getClientVersion();
+
+    /**
+     * <code>.PlatformType platform_type = 13;</code>
+     * @return The enum numeric value on the wire for platformType.
+     */
+    int getPlatformTypeValue();
+    /**
+     * <code>.PlatformType platform_type = 13;</code>
+     * @return The platformType.
+     */
+    emu.grasscutter.net.proto.PlatformTypeOuterClass.PlatformType getPlatformType();
   }
   /**
    * Protobuf type {@code GCGDuelExtra}
@@ -126,6 +184,8 @@ public final class GCGDuelExtraOuterClass {
     private GCGDuelExtra() {
       cardIdList_ = emptyIntList();
       challengeList_ = java.util.Collections.emptyList();
+      forbidFinishChallengeList_ = emptyIntList();
+      platformType_ = 0;
     }
 
     @java.lang.Override
@@ -217,6 +277,58 @@ public final class GCGDuelExtraOuterClass {
               score_ = input.readUInt32();
               break;
             }
+            case 56: {
+
+              isMatchAi_ = input.readBool();
+              break;
+            }
+            case 64: {
+
+              aiDeckId_ = input.readUInt32();
+              break;
+            }
+            case 72: {
+
+              isInternal_ = input.readBool();
+              break;
+            }
+            case 80: {
+              if (!((mutable_bitField0_ & 0x00000008) != 0)) {
+                forbidFinishChallengeList_ = newIntList();
+                mutable_bitField0_ |= 0x00000008;
+              }
+              forbidFinishChallengeList_.addInt(input.readUInt32());
+              break;
+            }
+            case 82: {
+              int length = input.readRawVarint32();
+              int limit = input.pushLimit(length);
+              if (!((mutable_bitField0_ & 0x00000008) != 0) && input.getBytesUntilLimit() > 0) {
+                forbidFinishChallengeList_ = newIntList();
+                mutable_bitField0_ |= 0x00000008;
+              }
+              while (input.getBytesUntilLimit() > 0) {
+                forbidFinishChallengeList_.addInt(input.readUInt32());
+              }
+              input.popLimit(limit);
+              break;
+            }
+            case 88: {
+
+              level_ = input.readUInt32();
+              break;
+            }
+            case 96: {
+
+              clientVersion_ = input.readUInt32();
+              break;
+            }
+            case 104: {
+              int rawValue = input.readEnum();
+
+              platformType_ = rawValue;
+              break;
+            }
             default: {
               if (!parseUnknownField(
                   input, unknownFields, extensionRegistry, tag)) {
@@ -237,6 +349,9 @@ public final class GCGDuelExtraOuterClass {
         }
         if (((mutable_bitField0_ & 0x00000004) != 0)) {
           challengeList_ = java.util.Collections.unmodifiableList(challengeList_);
+        }
+        if (((mutable_bitField0_ & 0x00000008) != 0)) {
+          forbidFinishChallengeList_.makeImmutable(); // C
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -449,6 +564,108 @@ public final class GCGDuelExtraOuterClass {
       return score_;
     }
 
+    public static final int IS_MATCH_AI_FIELD_NUMBER = 7;
+    private boolean isMatchAi_;
+    /**
+     * <code>bool is_match_ai = 7;</code>
+     * @return The isMatchAi.
+     */
+    @java.lang.Override
+    public boolean getIsMatchAi() {
+      return isMatchAi_;
+    }
+
+    public static final int AI_DECK_ID_FIELD_NUMBER = 8;
+    private int aiDeckId_;
+    /**
+     * <code>uint32 ai_deck_id = 8;</code>
+     * @return The aiDeckId.
+     */
+    @java.lang.Override
+    public int getAiDeckId() {
+      return aiDeckId_;
+    }
+
+    public static final int IS_INTERNAL_FIELD_NUMBER = 9;
+    private boolean isInternal_;
+    /**
+     * <code>bool is_internal = 9;</code>
+     * @return The isInternal.
+     */
+    @java.lang.Override
+    public boolean getIsInternal() {
+      return isInternal_;
+    }
+
+    public static final int FORBID_FINISH_CHALLENGE_LIST_FIELD_NUMBER = 10;
+    private com.google.protobuf.Internal.IntList forbidFinishChallengeList_;
+    /**
+     * <code>repeated uint32 forbid_finish_challenge_list = 10;</code>
+     * @return A list containing the forbidFinishChallengeList.
+     */
+    @java.lang.Override
+    public java.util.List<java.lang.Integer>
+        getForbidFinishChallengeListList() {
+      return forbidFinishChallengeList_;
+    }
+    /**
+     * <code>repeated uint32 forbid_finish_challenge_list = 10;</code>
+     * @return The count of forbidFinishChallengeList.
+     */
+    public int getForbidFinishChallengeListCount() {
+      return forbidFinishChallengeList_.size();
+    }
+    /**
+     * <code>repeated uint32 forbid_finish_challenge_list = 10;</code>
+     * @param index The index of the element to return.
+     * @return The forbidFinishChallengeList at the given index.
+     */
+    public int getForbidFinishChallengeList(int index) {
+      return forbidFinishChallengeList_.getInt(index);
+    }
+    private int forbidFinishChallengeListMemoizedSerializedSize = -1;
+
+    public static final int LEVEL_FIELD_NUMBER = 11;
+    private int level_;
+    /**
+     * <code>uint32 level = 11;</code>
+     * @return The level.
+     */
+    @java.lang.Override
+    public int getLevel() {
+      return level_;
+    }
+
+    public static final int CLIENT_VERSION_FIELD_NUMBER = 12;
+    private int clientVersion_;
+    /**
+     * <code>uint32 client_version = 12;</code>
+     * @return The clientVersion.
+     */
+    @java.lang.Override
+    public int getClientVersion() {
+      return clientVersion_;
+    }
+
+    public static final int PLATFORM_TYPE_FIELD_NUMBER = 13;
+    private int platformType_;
+    /**
+     * <code>.PlatformType platform_type = 13;</code>
+     * @return The enum numeric value on the wire for platformType.
+     */
+    @java.lang.Override public int getPlatformTypeValue() {
+      return platformType_;
+    }
+    /**
+     * <code>.PlatformType platform_type = 13;</code>
+     * @return The platformType.
+     */
+    @java.lang.Override public emu.grasscutter.net.proto.PlatformTypeOuterClass.PlatformType getPlatformType() {
+      @SuppressWarnings("deprecation")
+      emu.grasscutter.net.proto.PlatformTypeOuterClass.PlatformType result = emu.grasscutter.net.proto.PlatformTypeOuterClass.PlatformType.valueOf(platformType_);
+      return result == null ? emu.grasscutter.net.proto.PlatformTypeOuterClass.PlatformType.UNRECOGNIZED : result;
+    }
+
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
     public final boolean isInitialized() {
@@ -488,6 +705,31 @@ public final class GCGDuelExtraOuterClass {
       }
       if (score_ != 0) {
         output.writeUInt32(6, score_);
+      }
+      if (isMatchAi_ != false) {
+        output.writeBool(7, isMatchAi_);
+      }
+      if (aiDeckId_ != 0) {
+        output.writeUInt32(8, aiDeckId_);
+      }
+      if (isInternal_ != false) {
+        output.writeBool(9, isInternal_);
+      }
+      if (getForbidFinishChallengeListList().size() > 0) {
+        output.writeUInt32NoTag(82);
+        output.writeUInt32NoTag(forbidFinishChallengeListMemoizedSerializedSize);
+      }
+      for (int i = 0; i < forbidFinishChallengeList_.size(); i++) {
+        output.writeUInt32NoTag(forbidFinishChallengeList_.getInt(i));
+      }
+      if (level_ != 0) {
+        output.writeUInt32(11, level_);
+      }
+      if (clientVersion_ != 0) {
+        output.writeUInt32(12, clientVersion_);
+      }
+      if (platformType_ != emu.grasscutter.net.proto.PlatformTypeOuterClass.PlatformType.PLATFORM_TYPE_EDITOR.getNumber()) {
+        output.writeEnum(13, platformType_);
       }
       unknownFields.writeTo(output);
     }
@@ -538,6 +780,44 @@ public final class GCGDuelExtraOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(6, score_);
       }
+      if (isMatchAi_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(7, isMatchAi_);
+      }
+      if (aiDeckId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(8, aiDeckId_);
+      }
+      if (isInternal_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(9, isInternal_);
+      }
+      {
+        int dataSize = 0;
+        for (int i = 0; i < forbidFinishChallengeList_.size(); i++) {
+          dataSize += com.google.protobuf.CodedOutputStream
+            .computeUInt32SizeNoTag(forbidFinishChallengeList_.getInt(i));
+        }
+        size += dataSize;
+        if (!getForbidFinishChallengeListList().isEmpty()) {
+          size += 1;
+          size += com.google.protobuf.CodedOutputStream
+              .computeInt32SizeNoTag(dataSize);
+        }
+        forbidFinishChallengeListMemoizedSerializedSize = dataSize;
+      }
+      if (level_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(11, level_);
+      }
+      if (clientVersion_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(12, clientVersion_);
+      }
+      if (platformType_ != emu.grasscutter.net.proto.PlatformTypeOuterClass.PlatformType.PLATFORM_TYPE_EDITOR.getNumber()) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeEnumSize(13, platformType_);
+      }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
       return size;
@@ -565,6 +845,19 @@ public final class GCGDuelExtraOuterClass {
           .equals(other.getChallengeListList())) return false;
       if (getScore()
           != other.getScore()) return false;
+      if (getIsMatchAi()
+          != other.getIsMatchAi()) return false;
+      if (getAiDeckId()
+          != other.getAiDeckId()) return false;
+      if (getIsInternal()
+          != other.getIsInternal()) return false;
+      if (!getForbidFinishChallengeListList()
+          .equals(other.getForbidFinishChallengeListList())) return false;
+      if (getLevel()
+          != other.getLevel()) return false;
+      if (getClientVersion()
+          != other.getClientVersion()) return false;
+      if (platformType_ != other.platformType_) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -594,6 +887,24 @@ public final class GCGDuelExtraOuterClass {
       }
       hash = (37 * hash) + SCORE_FIELD_NUMBER;
       hash = (53 * hash) + getScore();
+      hash = (37 * hash) + IS_MATCH_AI_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getIsMatchAi());
+      hash = (37 * hash) + AI_DECK_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getAiDeckId();
+      hash = (37 * hash) + IS_INTERNAL_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getIsInternal());
+      if (getForbidFinishChallengeListCount() > 0) {
+        hash = (37 * hash) + FORBID_FINISH_CHALLENGE_LIST_FIELD_NUMBER;
+        hash = (53 * hash) + getForbidFinishChallengeListList().hashCode();
+      }
+      hash = (37 * hash) + LEVEL_FIELD_NUMBER;
+      hash = (53 * hash) + getLevel();
+      hash = (37 * hash) + CLIENT_VERSION_FIELD_NUMBER;
+      hash = (53 * hash) + getClientVersion();
+      hash = (37 * hash) + PLATFORM_TYPE_FIELD_NUMBER;
+      hash = (53 * hash) + platformType_;
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -765,6 +1076,20 @@ public final class GCGDuelExtraOuterClass {
         }
         score_ = 0;
 
+        isMatchAi_ = false;
+
+        aiDeckId_ = 0;
+
+        isInternal_ = false;
+
+        forbidFinishChallengeList_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000008);
+        level_ = 0;
+
+        clientVersion_ = 0;
+
+        platformType_ = 0;
+
         return this;
       }
 
@@ -811,6 +1136,17 @@ public final class GCGDuelExtraOuterClass {
           result.challengeList_ = challengeListBuilder_.build();
         }
         result.score_ = score_;
+        result.isMatchAi_ = isMatchAi_;
+        result.aiDeckId_ = aiDeckId_;
+        result.isInternal_ = isInternal_;
+        if (((bitField0_ & 0x00000008) != 0)) {
+          forbidFinishChallengeList_.makeImmutable();
+          bitField0_ = (bitField0_ & ~0x00000008);
+        }
+        result.forbidFinishChallengeList_ = forbidFinishChallengeList_;
+        result.level_ = level_;
+        result.clientVersion_ = clientVersion_;
+        result.platformType_ = platformType_;
         onBuilt();
         return result;
       }
@@ -905,6 +1241,34 @@ public final class GCGDuelExtraOuterClass {
         }
         if (other.getScore() != 0) {
           setScore(other.getScore());
+        }
+        if (other.getIsMatchAi() != false) {
+          setIsMatchAi(other.getIsMatchAi());
+        }
+        if (other.getAiDeckId() != 0) {
+          setAiDeckId(other.getAiDeckId());
+        }
+        if (other.getIsInternal() != false) {
+          setIsInternal(other.getIsInternal());
+        }
+        if (!other.forbidFinishChallengeList_.isEmpty()) {
+          if (forbidFinishChallengeList_.isEmpty()) {
+            forbidFinishChallengeList_ = other.forbidFinishChallengeList_;
+            bitField0_ = (bitField0_ & ~0x00000008);
+          } else {
+            ensureForbidFinishChallengeListIsMutable();
+            forbidFinishChallengeList_.addAll(other.forbidFinishChallengeList_);
+          }
+          onChanged();
+        }
+        if (other.getLevel() != 0) {
+          setLevel(other.getLevel());
+        }
+        if (other.getClientVersion() != 0) {
+          setClientVersion(other.getClientVersion());
+        }
+        if (other.platformType_ != 0) {
+          setPlatformTypeValue(other.getPlatformTypeValue());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -1475,6 +1839,294 @@ public final class GCGDuelExtraOuterClass {
         onChanged();
         return this;
       }
+
+      private boolean isMatchAi_ ;
+      /**
+       * <code>bool is_match_ai = 7;</code>
+       * @return The isMatchAi.
+       */
+      @java.lang.Override
+      public boolean getIsMatchAi() {
+        return isMatchAi_;
+      }
+      /**
+       * <code>bool is_match_ai = 7;</code>
+       * @param value The isMatchAi to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIsMatchAi(boolean value) {
+        
+        isMatchAi_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool is_match_ai = 7;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsMatchAi() {
+        
+        isMatchAi_ = false;
+        onChanged();
+        return this;
+      }
+
+      private int aiDeckId_ ;
+      /**
+       * <code>uint32 ai_deck_id = 8;</code>
+       * @return The aiDeckId.
+       */
+      @java.lang.Override
+      public int getAiDeckId() {
+        return aiDeckId_;
+      }
+      /**
+       * <code>uint32 ai_deck_id = 8;</code>
+       * @param value The aiDeckId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setAiDeckId(int value) {
+        
+        aiDeckId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 ai_deck_id = 8;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearAiDeckId() {
+        
+        aiDeckId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private boolean isInternal_ ;
+      /**
+       * <code>bool is_internal = 9;</code>
+       * @return The isInternal.
+       */
+      @java.lang.Override
+      public boolean getIsInternal() {
+        return isInternal_;
+      }
+      /**
+       * <code>bool is_internal = 9;</code>
+       * @param value The isInternal to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIsInternal(boolean value) {
+        
+        isInternal_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool is_internal = 9;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsInternal() {
+        
+        isInternal_ = false;
+        onChanged();
+        return this;
+      }
+
+      private com.google.protobuf.Internal.IntList forbidFinishChallengeList_ = emptyIntList();
+      private void ensureForbidFinishChallengeListIsMutable() {
+        if (!((bitField0_ & 0x00000008) != 0)) {
+          forbidFinishChallengeList_ = mutableCopy(forbidFinishChallengeList_);
+          bitField0_ |= 0x00000008;
+         }
+      }
+      /**
+       * <code>repeated uint32 forbid_finish_challenge_list = 10;</code>
+       * @return A list containing the forbidFinishChallengeList.
+       */
+      public java.util.List<java.lang.Integer>
+          getForbidFinishChallengeListList() {
+        return ((bitField0_ & 0x00000008) != 0) ?
+                 java.util.Collections.unmodifiableList(forbidFinishChallengeList_) : forbidFinishChallengeList_;
+      }
+      /**
+       * <code>repeated uint32 forbid_finish_challenge_list = 10;</code>
+       * @return The count of forbidFinishChallengeList.
+       */
+      public int getForbidFinishChallengeListCount() {
+        return forbidFinishChallengeList_.size();
+      }
+      /**
+       * <code>repeated uint32 forbid_finish_challenge_list = 10;</code>
+       * @param index The index of the element to return.
+       * @return The forbidFinishChallengeList at the given index.
+       */
+      public int getForbidFinishChallengeList(int index) {
+        return forbidFinishChallengeList_.getInt(index);
+      }
+      /**
+       * <code>repeated uint32 forbid_finish_challenge_list = 10;</code>
+       * @param index The index to set the value at.
+       * @param value The forbidFinishChallengeList to set.
+       * @return This builder for chaining.
+       */
+      public Builder setForbidFinishChallengeList(
+          int index, int value) {
+        ensureForbidFinishChallengeListIsMutable();
+        forbidFinishChallengeList_.setInt(index, value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint32 forbid_finish_challenge_list = 10;</code>
+       * @param value The forbidFinishChallengeList to add.
+       * @return This builder for chaining.
+       */
+      public Builder addForbidFinishChallengeList(int value) {
+        ensureForbidFinishChallengeListIsMutable();
+        forbidFinishChallengeList_.addInt(value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint32 forbid_finish_challenge_list = 10;</code>
+       * @param values The forbidFinishChallengeList to add.
+       * @return This builder for chaining.
+       */
+      public Builder addAllForbidFinishChallengeList(
+          java.lang.Iterable<? extends java.lang.Integer> values) {
+        ensureForbidFinishChallengeListIsMutable();
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, forbidFinishChallengeList_);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint32 forbid_finish_challenge_list = 10;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearForbidFinishChallengeList() {
+        forbidFinishChallengeList_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000008);
+        onChanged();
+        return this;
+      }
+
+      private int level_ ;
+      /**
+       * <code>uint32 level = 11;</code>
+       * @return The level.
+       */
+      @java.lang.Override
+      public int getLevel() {
+        return level_;
+      }
+      /**
+       * <code>uint32 level = 11;</code>
+       * @param value The level to set.
+       * @return This builder for chaining.
+       */
+      public Builder setLevel(int value) {
+        
+        level_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 level = 11;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearLevel() {
+        
+        level_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int clientVersion_ ;
+      /**
+       * <code>uint32 client_version = 12;</code>
+       * @return The clientVersion.
+       */
+      @java.lang.Override
+      public int getClientVersion() {
+        return clientVersion_;
+      }
+      /**
+       * <code>uint32 client_version = 12;</code>
+       * @param value The clientVersion to set.
+       * @return This builder for chaining.
+       */
+      public Builder setClientVersion(int value) {
+        
+        clientVersion_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 client_version = 12;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearClientVersion() {
+        
+        clientVersion_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int platformType_ = 0;
+      /**
+       * <code>.PlatformType platform_type = 13;</code>
+       * @return The enum numeric value on the wire for platformType.
+       */
+      @java.lang.Override public int getPlatformTypeValue() {
+        return platformType_;
+      }
+      /**
+       * <code>.PlatformType platform_type = 13;</code>
+       * @param value The enum numeric value on the wire for platformType to set.
+       * @return This builder for chaining.
+       */
+      public Builder setPlatformTypeValue(int value) {
+        
+        platformType_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.PlatformType platform_type = 13;</code>
+       * @return The platformType.
+       */
+      @java.lang.Override
+      public emu.grasscutter.net.proto.PlatformTypeOuterClass.PlatformType getPlatformType() {
+        @SuppressWarnings("deprecation")
+        emu.grasscutter.net.proto.PlatformTypeOuterClass.PlatformType result = emu.grasscutter.net.proto.PlatformTypeOuterClass.PlatformType.valueOf(platformType_);
+        return result == null ? emu.grasscutter.net.proto.PlatformTypeOuterClass.PlatformType.UNRECOGNIZED : result;
+      }
+      /**
+       * <code>.PlatformType platform_type = 13;</code>
+       * @param value The platformType to set.
+       * @return This builder for chaining.
+       */
+      public Builder setPlatformType(emu.grasscutter.net.proto.PlatformTypeOuterClass.PlatformType value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        
+        platformType_ = value.getNumber();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.PlatformType platform_type = 13;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearPlatformType() {
+        
+        platformType_ = 0;
+        onChanged();
+        return this;
+      }
       @java.lang.Override
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
@@ -1548,26 +2200,32 @@ public final class GCGDuelExtraOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\022GCGDuelExtra.proto\032\026GCGChallengeData.p" +
-      "roto\"\361\001\n\014GCGDuelExtra\022\024\n\014card_id_list\030\001 " +
-      "\003(\r\022\020\n\010field_id\030\002 \001(\r\022\024\n\014card_back_id\030\003 " +
-      "\001(\r\0225\n\rcard_face_map\030\004 \003(\0132\036.GCGDuelExtr" +
-      "a.CardFaceMapEntry\022)\n\016challenge_list\030\005 \003" +
-      "(\0132\021.GCGChallengeData\022\r\n\005score\030\006 \001(\r\0322\n\020" +
-      "CardFaceMapEntry\022\013\n\003key\030\001 \001(\r\022\r\n\005value\030\002" +
-      " \001(\r:\0028\001B\033\n\031emu.grasscutter.net.protob\006p" +
-      "roto3"
+      "roto\032\022PlatformType.proto\"\242\003\n\014GCGDuelExtr" +
+      "a\022\024\n\014card_id_list\030\001 \003(\r\022\020\n\010field_id\030\002 \001(" +
+      "\r\022\024\n\014card_back_id\030\003 \001(\r\0225\n\rcard_face_map" +
+      "\030\004 \003(\0132\036.GCGDuelExtra.CardFaceMapEntry\022)" +
+      "\n\016challenge_list\030\005 \003(\0132\021.GCGChallengeDat" +
+      "a\022\r\n\005score\030\006 \001(\r\022\023\n\013is_match_ai\030\007 \001(\010\022\022\n" +
+      "\nai_deck_id\030\010 \001(\r\022\023\n\013is_internal\030\t \001(\010\022$" +
+      "\n\034forbid_finish_challenge_list\030\n \003(\r\022\r\n\005" +
+      "level\030\013 \001(\r\022\026\n\016client_version\030\014 \001(\r\022$\n\rp" +
+      "latform_type\030\r \001(\0162\r.PlatformType\0322\n\020Car" +
+      "dFaceMapEntry\022\013\n\003key\030\001 \001(\r\022\r\n\005value\030\002 \001(" +
+      "\r:\0028\001B\033\n\031emu.grasscutter.net.protob\006prot" +
+      "o3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
           emu.grasscutter.net.proto.GCGChallengeDataOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.PlatformTypeOuterClass.getDescriptor(),
         });
     internal_static_GCGDuelExtra_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_GCGDuelExtra_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GCGDuelExtra_descriptor,
-        new java.lang.String[] { "CardIdList", "FieldId", "CardBackId", "CardFaceMap", "ChallengeList", "Score", });
+        new java.lang.String[] { "CardIdList", "FieldId", "CardBackId", "CardFaceMap", "ChallengeList", "Score", "IsMatchAi", "AiDeckId", "IsInternal", "ForbidFinishChallengeList", "Level", "ClientVersion", "PlatformType", });
     internal_static_GCGDuelExtra_CardFaceMapEntry_descriptor =
       internal_static_GCGDuelExtra_descriptor.getNestedTypes().get(0);
     internal_static_GCGDuelExtra_CardFaceMapEntry_fieldAccessorTable = new
@@ -1575,6 +2233,7 @@ public final class GCGDuelExtraOuterClass {
         internal_static_GCGDuelExtra_CardFaceMapEntry_descriptor,
         new java.lang.String[] { "Key", "Value", });
     emu.grasscutter.net.proto.GCGChallengeDataOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.PlatformTypeOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

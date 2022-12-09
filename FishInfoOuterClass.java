@@ -19,16 +19,16 @@ public final class FishInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 free_count = 11;</code>
-     * @return The freeCount.
+     * <code>uint32 Unk3300_AKFBFEDCELN = 14;</code>
+     * @return The unk3300AKFBFEDCELN.
      */
-    int getFreeCount();
+    int getUnk3300AKFBFEDCELN();
 
     /**
-     * <code>uint32 into_bag_count = 12;</code>
-     * @return The intoBagCount.
+     * <code>uint32 Unk3300_FIICLBEFHLL = 7;</code>
+     * @return The unk3300FIICLBEFHLL.
      */
-    int getIntoBagCount();
+    int getUnk3300FIICLBEFHLL();
   }
   /**
    * Protobuf type {@code FishInfo}
@@ -75,14 +75,14 @@ public final class FishInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 88: {
+            case 56: {
 
-              freeCount_ = input.readUInt32();
+              unk3300FIICLBEFHLL_ = input.readUInt32();
               break;
             }
-            case 96: {
+            case 112: {
 
-              intoBagCount_ = input.readUInt32();
+              unk3300AKFBFEDCELN_ = input.readUInt32();
               break;
             }
             default: {
@@ -117,26 +117,26 @@ public final class FishInfoOuterClass {
               emu.grasscutter.net.proto.FishInfoOuterClass.FishInfo.class, emu.grasscutter.net.proto.FishInfoOuterClass.FishInfo.Builder.class);
     }
 
-    public static final int FREE_COUNT_FIELD_NUMBER = 11;
-    private int freeCount_;
+    public static final int UNK3300_AKFBFEDCELN_FIELD_NUMBER = 14;
+    private int unk3300AKFBFEDCELN_;
     /**
-     * <code>uint32 free_count = 11;</code>
-     * @return The freeCount.
+     * <code>uint32 Unk3300_AKFBFEDCELN = 14;</code>
+     * @return The unk3300AKFBFEDCELN.
      */
     @java.lang.Override
-    public int getFreeCount() {
-      return freeCount_;
+    public int getUnk3300AKFBFEDCELN() {
+      return unk3300AKFBFEDCELN_;
     }
 
-    public static final int INTO_BAG_COUNT_FIELD_NUMBER = 12;
-    private int intoBagCount_;
+    public static final int UNK3300_FIICLBEFHLL_FIELD_NUMBER = 7;
+    private int unk3300FIICLBEFHLL_;
     /**
-     * <code>uint32 into_bag_count = 12;</code>
-     * @return The intoBagCount.
+     * <code>uint32 Unk3300_FIICLBEFHLL = 7;</code>
+     * @return The unk3300FIICLBEFHLL.
      */
     @java.lang.Override
-    public int getIntoBagCount() {
-      return intoBagCount_;
+    public int getUnk3300FIICLBEFHLL() {
+      return unk3300FIICLBEFHLL_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -153,11 +153,11 @@ public final class FishInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (freeCount_ != 0) {
-        output.writeUInt32(11, freeCount_);
+      if (unk3300FIICLBEFHLL_ != 0) {
+        output.writeUInt32(7, unk3300FIICLBEFHLL_);
       }
-      if (intoBagCount_ != 0) {
-        output.writeUInt32(12, intoBagCount_);
+      if (unk3300AKFBFEDCELN_ != 0) {
+        output.writeUInt32(14, unk3300AKFBFEDCELN_);
       }
       unknownFields.writeTo(output);
     }
@@ -168,13 +168,13 @@ public final class FishInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (freeCount_ != 0) {
+      if (unk3300FIICLBEFHLL_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, freeCount_);
+          .computeUInt32Size(7, unk3300FIICLBEFHLL_);
       }
-      if (intoBagCount_ != 0) {
+      if (unk3300AKFBFEDCELN_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, intoBagCount_);
+          .computeUInt32Size(14, unk3300AKFBFEDCELN_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -191,10 +191,10 @@ public final class FishInfoOuterClass {
       }
       emu.grasscutter.net.proto.FishInfoOuterClass.FishInfo other = (emu.grasscutter.net.proto.FishInfoOuterClass.FishInfo) obj;
 
-      if (getFreeCount()
-          != other.getFreeCount()) return false;
-      if (getIntoBagCount()
-          != other.getIntoBagCount()) return false;
+      if (getUnk3300AKFBFEDCELN()
+          != other.getUnk3300AKFBFEDCELN()) return false;
+      if (getUnk3300FIICLBEFHLL()
+          != other.getUnk3300FIICLBEFHLL()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -206,10 +206,10 @@ public final class FishInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + FREE_COUNT_FIELD_NUMBER;
-      hash = (53 * hash) + getFreeCount();
-      hash = (37 * hash) + INTO_BAG_COUNT_FIELD_NUMBER;
-      hash = (53 * hash) + getIntoBagCount();
+      hash = (37 * hash) + UNK3300_AKFBFEDCELN_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300AKFBFEDCELN();
+      hash = (37 * hash) + UNK3300_FIICLBEFHLL_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300FIICLBEFHLL();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -343,9 +343,9 @@ public final class FishInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        freeCount_ = 0;
+        unk3300AKFBFEDCELN_ = 0;
 
-        intoBagCount_ = 0;
+        unk3300FIICLBEFHLL_ = 0;
 
         return this;
       }
@@ -373,8 +373,8 @@ public final class FishInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.FishInfoOuterClass.FishInfo buildPartial() {
         emu.grasscutter.net.proto.FishInfoOuterClass.FishInfo result = new emu.grasscutter.net.proto.FishInfoOuterClass.FishInfo(this);
-        result.freeCount_ = freeCount_;
-        result.intoBagCount_ = intoBagCount_;
+        result.unk3300AKFBFEDCELN_ = unk3300AKFBFEDCELN_;
+        result.unk3300FIICLBEFHLL_ = unk3300FIICLBEFHLL_;
         onBuilt();
         return result;
       }
@@ -423,11 +423,11 @@ public final class FishInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.FishInfoOuterClass.FishInfo other) {
         if (other == emu.grasscutter.net.proto.FishInfoOuterClass.FishInfo.getDefaultInstance()) return this;
-        if (other.getFreeCount() != 0) {
-          setFreeCount(other.getFreeCount());
+        if (other.getUnk3300AKFBFEDCELN() != 0) {
+          setUnk3300AKFBFEDCELN(other.getUnk3300AKFBFEDCELN());
         }
-        if (other.getIntoBagCount() != 0) {
-          setIntoBagCount(other.getIntoBagCount());
+        if (other.getUnk3300FIICLBEFHLL() != 0) {
+          setUnk3300FIICLBEFHLL(other.getUnk3300FIICLBEFHLL());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -458,64 +458,64 @@ public final class FishInfoOuterClass {
         return this;
       }
 
-      private int freeCount_ ;
+      private int unk3300AKFBFEDCELN_ ;
       /**
-       * <code>uint32 free_count = 11;</code>
-       * @return The freeCount.
+       * <code>uint32 Unk3300_AKFBFEDCELN = 14;</code>
+       * @return The unk3300AKFBFEDCELN.
        */
       @java.lang.Override
-      public int getFreeCount() {
-        return freeCount_;
+      public int getUnk3300AKFBFEDCELN() {
+        return unk3300AKFBFEDCELN_;
       }
       /**
-       * <code>uint32 free_count = 11;</code>
-       * @param value The freeCount to set.
+       * <code>uint32 Unk3300_AKFBFEDCELN = 14;</code>
+       * @param value The unk3300AKFBFEDCELN to set.
        * @return This builder for chaining.
        */
-      public Builder setFreeCount(int value) {
+      public Builder setUnk3300AKFBFEDCELN(int value) {
         
-        freeCount_ = value;
+        unk3300AKFBFEDCELN_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 free_count = 11;</code>
+       * <code>uint32 Unk3300_AKFBFEDCELN = 14;</code>
        * @return This builder for chaining.
        */
-      public Builder clearFreeCount() {
+      public Builder clearUnk3300AKFBFEDCELN() {
         
-        freeCount_ = 0;
+        unk3300AKFBFEDCELN_ = 0;
         onChanged();
         return this;
       }
 
-      private int intoBagCount_ ;
+      private int unk3300FIICLBEFHLL_ ;
       /**
-       * <code>uint32 into_bag_count = 12;</code>
-       * @return The intoBagCount.
+       * <code>uint32 Unk3300_FIICLBEFHLL = 7;</code>
+       * @return The unk3300FIICLBEFHLL.
        */
       @java.lang.Override
-      public int getIntoBagCount() {
-        return intoBagCount_;
+      public int getUnk3300FIICLBEFHLL() {
+        return unk3300FIICLBEFHLL_;
       }
       /**
-       * <code>uint32 into_bag_count = 12;</code>
-       * @param value The intoBagCount to set.
+       * <code>uint32 Unk3300_FIICLBEFHLL = 7;</code>
+       * @param value The unk3300FIICLBEFHLL to set.
        * @return This builder for chaining.
        */
-      public Builder setIntoBagCount(int value) {
+      public Builder setUnk3300FIICLBEFHLL(int value) {
         
-        intoBagCount_ = value;
+        unk3300FIICLBEFHLL_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 into_bag_count = 12;</code>
+       * <code>uint32 Unk3300_FIICLBEFHLL = 7;</code>
        * @return This builder for chaining.
        */
-      public Builder clearIntoBagCount() {
+      public Builder clearUnk3300FIICLBEFHLL() {
         
-        intoBagCount_ = 0;
+        unk3300FIICLBEFHLL_ = 0;
         onChanged();
         return this;
       }
@@ -586,9 +586,10 @@ public final class FishInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\016FishInfo.proto\"6\n\010FishInfo\022\022\n\nfree_cou" +
-      "nt\030\013 \001(\r\022\026\n\016into_bag_count\030\014 \001(\rB\033\n\031emu." +
-      "grasscutter.net.protob\006proto3"
+      "\n\016FishInfo.proto\"D\n\010FishInfo\022\033\n\023Unk3300_" +
+      "AKFBFEDCELN\030\016 \001(\r\022\033\n\023Unk3300_FIICLBEFHLL" +
+      "\030\007 \001(\rB\033\n\031emu.grasscutter.net.protob\006pro" +
+      "to3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -599,7 +600,7 @@ public final class FishInfoOuterClass {
     internal_static_FishInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_FishInfo_descriptor,
-        new java.lang.String[] { "FreeCount", "IntoBagCount", });
+        new java.lang.String[] { "Unk3300AKFBFEDCELN", "Unk3300FIICLBEFHLL", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

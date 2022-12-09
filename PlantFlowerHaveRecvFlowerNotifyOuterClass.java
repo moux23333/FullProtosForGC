@@ -19,16 +19,20 @@ public final class PlantFlowerHaveRecvFlowerNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 schedule_id = 10;</code>
+     * <code>uint32 schedule_id = 11;</code>
      * @return The scheduleId.
      */
     int getScheduleId();
   }
   /**
    * <pre>
-   * CmdId: 8078
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 8101;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code PlantFlowerHaveRecvFlowerNotify}
@@ -75,7 +79,7 @@ public final class PlantFlowerHaveRecvFlowerNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 80: {
+            case 88: {
 
               scheduleId_ = input.readUInt32();
               break;
@@ -112,10 +116,10 @@ public final class PlantFlowerHaveRecvFlowerNotifyOuterClass {
               emu.grasscutter.net.proto.PlantFlowerHaveRecvFlowerNotifyOuterClass.PlantFlowerHaveRecvFlowerNotify.class, emu.grasscutter.net.proto.PlantFlowerHaveRecvFlowerNotifyOuterClass.PlantFlowerHaveRecvFlowerNotify.Builder.class);
     }
 
-    public static final int SCHEDULE_ID_FIELD_NUMBER = 10;
+    public static final int SCHEDULE_ID_FIELD_NUMBER = 11;
     private int scheduleId_;
     /**
-     * <code>uint32 schedule_id = 10;</code>
+     * <code>uint32 schedule_id = 11;</code>
      * @return The scheduleId.
      */
     @java.lang.Override
@@ -138,7 +142,7 @@ public final class PlantFlowerHaveRecvFlowerNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (scheduleId_ != 0) {
-        output.writeUInt32(10, scheduleId_);
+        output.writeUInt32(11, scheduleId_);
       }
       unknownFields.writeTo(output);
     }
@@ -151,7 +155,7 @@ public final class PlantFlowerHaveRecvFlowerNotifyOuterClass {
       size = 0;
       if (scheduleId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, scheduleId_);
+          .computeUInt32Size(11, scheduleId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -280,9 +284,13 @@ public final class PlantFlowerHaveRecvFlowerNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 8078
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 8101;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code PlantFlowerHaveRecvFlowerNotify}
@@ -433,7 +441,7 @@ public final class PlantFlowerHaveRecvFlowerNotifyOuterClass {
 
       private int scheduleId_ ;
       /**
-       * <code>uint32 schedule_id = 10;</code>
+       * <code>uint32 schedule_id = 11;</code>
        * @return The scheduleId.
        */
       @java.lang.Override
@@ -441,7 +449,7 @@ public final class PlantFlowerHaveRecvFlowerNotifyOuterClass {
         return scheduleId_;
       }
       /**
-       * <code>uint32 schedule_id = 10;</code>
+       * <code>uint32 schedule_id = 11;</code>
        * @param value The scheduleId to set.
        * @return This builder for chaining.
        */
@@ -452,7 +460,7 @@ public final class PlantFlowerHaveRecvFlowerNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 schedule_id = 10;</code>
+       * <code>uint32 schedule_id = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearScheduleId() {
@@ -530,7 +538,7 @@ public final class PlantFlowerHaveRecvFlowerNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n%PlantFlowerHaveRecvFlowerNotify.proto\"" +
       "6\n\037PlantFlowerHaveRecvFlowerNotify\022\023\n\013sc" +
-      "hedule_id\030\n \001(\rB\033\n\031emu.grasscutter.net.p" +
+      "hedule_id\030\013 \001(\rB\033\n\031emu.grasscutter.net.p" +
       "rotob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

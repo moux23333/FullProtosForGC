@@ -19,18 +19,18 @@ public final class GCGMsgGameOverOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.GCGEndReason end_reason = 13;</code>
+     * <code>.GCGEndReason end_reason = 6;</code>
      * @return The enum numeric value on the wire for endReason.
      */
     int getEndReasonValue();
     /**
-     * <code>.GCGEndReason end_reason = 13;</code>
+     * <code>.GCGEndReason end_reason = 6;</code>
      * @return The endReason.
      */
     emu.grasscutter.net.proto.GCGEndReasonOuterClass.GCGEndReason getEndReason();
 
     /**
-     * <code>uint32 win_controller_id = 6;</code>
+     * <code>uint32 win_controller_id = 3;</code>
      * @return The winControllerId.
      */
     int getWinControllerId();
@@ -81,12 +81,12 @@ public final class GCGMsgGameOverOuterClass {
             case 0:
               done = true;
               break;
-            case 48: {
+            case 24: {
 
               winControllerId_ = input.readUInt32();
               break;
             }
-            case 104: {
+            case 48: {
               int rawValue = input.readEnum();
 
               endReason_ = rawValue;
@@ -124,17 +124,17 @@ public final class GCGMsgGameOverOuterClass {
               emu.grasscutter.net.proto.GCGMsgGameOverOuterClass.GCGMsgGameOver.class, emu.grasscutter.net.proto.GCGMsgGameOverOuterClass.GCGMsgGameOver.Builder.class);
     }
 
-    public static final int END_REASON_FIELD_NUMBER = 13;
+    public static final int END_REASON_FIELD_NUMBER = 6;
     private int endReason_;
     /**
-     * <code>.GCGEndReason end_reason = 13;</code>
+     * <code>.GCGEndReason end_reason = 6;</code>
      * @return The enum numeric value on the wire for endReason.
      */
     @java.lang.Override public int getEndReasonValue() {
       return endReason_;
     }
     /**
-     * <code>.GCGEndReason end_reason = 13;</code>
+     * <code>.GCGEndReason end_reason = 6;</code>
      * @return The endReason.
      */
     @java.lang.Override public emu.grasscutter.net.proto.GCGEndReasonOuterClass.GCGEndReason getEndReason() {
@@ -143,10 +143,10 @@ public final class GCGMsgGameOverOuterClass {
       return result == null ? emu.grasscutter.net.proto.GCGEndReasonOuterClass.GCGEndReason.UNRECOGNIZED : result;
     }
 
-    public static final int WIN_CONTROLLER_ID_FIELD_NUMBER = 6;
+    public static final int WIN_CONTROLLER_ID_FIELD_NUMBER = 3;
     private int winControllerId_;
     /**
-     * <code>uint32 win_controller_id = 6;</code>
+     * <code>uint32 win_controller_id = 3;</code>
      * @return The winControllerId.
      */
     @java.lang.Override
@@ -169,10 +169,10 @@ public final class GCGMsgGameOverOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (winControllerId_ != 0) {
-        output.writeUInt32(6, winControllerId_);
+        output.writeUInt32(3, winControllerId_);
       }
       if (endReason_ != emu.grasscutter.net.proto.GCGEndReasonOuterClass.GCGEndReason.GCG_END_REASON_DEFAULT.getNumber()) {
-        output.writeEnum(13, endReason_);
+        output.writeEnum(6, endReason_);
       }
       unknownFields.writeTo(output);
     }
@@ -185,11 +185,11 @@ public final class GCGMsgGameOverOuterClass {
       size = 0;
       if (winControllerId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, winControllerId_);
+          .computeUInt32Size(3, winControllerId_);
       }
       if (endReason_ != emu.grasscutter.net.proto.GCGEndReasonOuterClass.GCGEndReason.GCG_END_REASON_DEFAULT.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(13, endReason_);
+          .computeEnumSize(6, endReason_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -474,14 +474,14 @@ public final class GCGMsgGameOverOuterClass {
 
       private int endReason_ = 0;
       /**
-       * <code>.GCGEndReason end_reason = 13;</code>
+       * <code>.GCGEndReason end_reason = 6;</code>
        * @return The enum numeric value on the wire for endReason.
        */
       @java.lang.Override public int getEndReasonValue() {
         return endReason_;
       }
       /**
-       * <code>.GCGEndReason end_reason = 13;</code>
+       * <code>.GCGEndReason end_reason = 6;</code>
        * @param value The enum numeric value on the wire for endReason to set.
        * @return This builder for chaining.
        */
@@ -492,7 +492,7 @@ public final class GCGMsgGameOverOuterClass {
         return this;
       }
       /**
-       * <code>.GCGEndReason end_reason = 13;</code>
+       * <code>.GCGEndReason end_reason = 6;</code>
        * @return The endReason.
        */
       @java.lang.Override
@@ -502,7 +502,7 @@ public final class GCGMsgGameOverOuterClass {
         return result == null ? emu.grasscutter.net.proto.GCGEndReasonOuterClass.GCGEndReason.UNRECOGNIZED : result;
       }
       /**
-       * <code>.GCGEndReason end_reason = 13;</code>
+       * <code>.GCGEndReason end_reason = 6;</code>
        * @param value The endReason to set.
        * @return This builder for chaining.
        */
@@ -516,7 +516,7 @@ public final class GCGMsgGameOverOuterClass {
         return this;
       }
       /**
-       * <code>.GCGEndReason end_reason = 13;</code>
+       * <code>.GCGEndReason end_reason = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearEndReason() {
@@ -528,7 +528,7 @@ public final class GCGMsgGameOverOuterClass {
 
       private int winControllerId_ ;
       /**
-       * <code>uint32 win_controller_id = 6;</code>
+       * <code>uint32 win_controller_id = 3;</code>
        * @return The winControllerId.
        */
       @java.lang.Override
@@ -536,7 +536,7 @@ public final class GCGMsgGameOverOuterClass {
         return winControllerId_;
       }
       /**
-       * <code>uint32 win_controller_id = 6;</code>
+       * <code>uint32 win_controller_id = 3;</code>
        * @param value The winControllerId to set.
        * @return This builder for chaining.
        */
@@ -547,7 +547,7 @@ public final class GCGMsgGameOverOuterClass {
         return this;
       }
       /**
-       * <code>uint32 win_controller_id = 6;</code>
+       * <code>uint32 win_controller_id = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearWinControllerId() {
@@ -624,8 +624,8 @@ public final class GCGMsgGameOverOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\024GCGMsgGameOver.proto\032\022GCGEndReason.pro" +
-      "to\"N\n\016GCGMsgGameOver\022!\n\nend_reason\030\r \001(\016" +
-      "2\r.GCGEndReason\022\031\n\021win_controller_id\030\006 \001" +
+      "to\"N\n\016GCGMsgGameOver\022!\n\nend_reason\030\006 \001(\016" +
+      "2\r.GCGEndReason\022\031\n\021win_controller_id\030\003 \001" +
       "(\rB\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

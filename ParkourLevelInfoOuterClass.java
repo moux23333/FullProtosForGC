@@ -19,24 +19,6 @@ public final class ParkourLevelInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 best_record = 12;</code>
-     * @return The bestRecord.
-     */
-    int getBestRecord();
-
-    /**
-     * <code>bool is_open = 9;</code>
-     * @return The isOpen.
-     */
-    boolean getIsOpen();
-
-    /**
-     * <code>uint32 open_time = 7;</code>
-     * @return The openTime.
-     */
-    int getOpenTime();
-
-    /**
      * <code>.Vector pos = 2;</code>
      * @return Whether the pos field is set.
      */
@@ -50,6 +32,24 @@ public final class ParkourLevelInfoOuterClass {
      * <code>.Vector pos = 2;</code>
      */
     emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getPosOrBuilder();
+
+    /**
+     * <code>bool is_open = 7;</code>
+     * @return The isOpen.
+     */
+    boolean getIsOpen();
+
+    /**
+     * <code>uint32 best_record = 14;</code>
+     * @return The bestRecord.
+     */
+    int getBestRecord();
+
+    /**
+     * <code>uint32 open_time = 4;</code>
+     * @return The openTime.
+     */
+    int getOpenTime();
   }
   /**
    * Protobuf type {@code ParkourLevelInfo}
@@ -109,17 +109,17 @@ public final class ParkourLevelInfoOuterClass {
 
               break;
             }
-            case 56: {
+            case 32: {
 
               openTime_ = input.readUInt32();
               break;
             }
-            case 72: {
+            case 56: {
 
               isOpen_ = input.readBool();
               break;
             }
-            case 96: {
+            case 112: {
 
               bestRecord_ = input.readUInt32();
               break;
@@ -156,39 +156,6 @@ public final class ParkourLevelInfoOuterClass {
               emu.grasscutter.net.proto.ParkourLevelInfoOuterClass.ParkourLevelInfo.class, emu.grasscutter.net.proto.ParkourLevelInfoOuterClass.ParkourLevelInfo.Builder.class);
     }
 
-    public static final int BEST_RECORD_FIELD_NUMBER = 12;
-    private int bestRecord_;
-    /**
-     * <code>uint32 best_record = 12;</code>
-     * @return The bestRecord.
-     */
-    @java.lang.Override
-    public int getBestRecord() {
-      return bestRecord_;
-    }
-
-    public static final int IS_OPEN_FIELD_NUMBER = 9;
-    private boolean isOpen_;
-    /**
-     * <code>bool is_open = 9;</code>
-     * @return The isOpen.
-     */
-    @java.lang.Override
-    public boolean getIsOpen() {
-      return isOpen_;
-    }
-
-    public static final int OPEN_TIME_FIELD_NUMBER = 7;
-    private int openTime_;
-    /**
-     * <code>uint32 open_time = 7;</code>
-     * @return The openTime.
-     */
-    @java.lang.Override
-    public int getOpenTime() {
-      return openTime_;
-    }
-
     public static final int POS_FIELD_NUMBER = 2;
     private emu.grasscutter.net.proto.VectorOuterClass.Vector pos_;
     /**
@@ -215,6 +182,39 @@ public final class ParkourLevelInfoOuterClass {
       return getPos();
     }
 
+    public static final int IS_OPEN_FIELD_NUMBER = 7;
+    private boolean isOpen_;
+    /**
+     * <code>bool is_open = 7;</code>
+     * @return The isOpen.
+     */
+    @java.lang.Override
+    public boolean getIsOpen() {
+      return isOpen_;
+    }
+
+    public static final int BEST_RECORD_FIELD_NUMBER = 14;
+    private int bestRecord_;
+    /**
+     * <code>uint32 best_record = 14;</code>
+     * @return The bestRecord.
+     */
+    @java.lang.Override
+    public int getBestRecord() {
+      return bestRecord_;
+    }
+
+    public static final int OPEN_TIME_FIELD_NUMBER = 4;
+    private int openTime_;
+    /**
+     * <code>uint32 open_time = 4;</code>
+     * @return The openTime.
+     */
+    @java.lang.Override
+    public int getOpenTime() {
+      return openTime_;
+    }
+
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
     public final boolean isInitialized() {
@@ -233,13 +233,13 @@ public final class ParkourLevelInfoOuterClass {
         output.writeMessage(2, getPos());
       }
       if (openTime_ != 0) {
-        output.writeUInt32(7, openTime_);
+        output.writeUInt32(4, openTime_);
       }
       if (isOpen_ != false) {
-        output.writeBool(9, isOpen_);
+        output.writeBool(7, isOpen_);
       }
       if (bestRecord_ != 0) {
-        output.writeUInt32(12, bestRecord_);
+        output.writeUInt32(14, bestRecord_);
       }
       unknownFields.writeTo(output);
     }
@@ -256,15 +256,15 @@ public final class ParkourLevelInfoOuterClass {
       }
       if (openTime_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, openTime_);
+          .computeUInt32Size(4, openTime_);
       }
       if (isOpen_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(9, isOpen_);
+          .computeBoolSize(7, isOpen_);
       }
       if (bestRecord_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, bestRecord_);
+          .computeUInt32Size(14, bestRecord_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -281,17 +281,17 @@ public final class ParkourLevelInfoOuterClass {
       }
       emu.grasscutter.net.proto.ParkourLevelInfoOuterClass.ParkourLevelInfo other = (emu.grasscutter.net.proto.ParkourLevelInfoOuterClass.ParkourLevelInfo) obj;
 
-      if (getBestRecord()
-          != other.getBestRecord()) return false;
-      if (getIsOpen()
-          != other.getIsOpen()) return false;
-      if (getOpenTime()
-          != other.getOpenTime()) return false;
       if (hasPos() != other.hasPos()) return false;
       if (hasPos()) {
         if (!getPos()
             .equals(other.getPos())) return false;
       }
+      if (getIsOpen()
+          != other.getIsOpen()) return false;
+      if (getBestRecord()
+          != other.getBestRecord()) return false;
+      if (getOpenTime()
+          != other.getOpenTime()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -303,17 +303,17 @@ public final class ParkourLevelInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + BEST_RECORD_FIELD_NUMBER;
-      hash = (53 * hash) + getBestRecord();
-      hash = (37 * hash) + IS_OPEN_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsOpen());
-      hash = (37 * hash) + OPEN_TIME_FIELD_NUMBER;
-      hash = (53 * hash) + getOpenTime();
       if (hasPos()) {
         hash = (37 * hash) + POS_FIELD_NUMBER;
         hash = (53 * hash) + getPos().hashCode();
       }
+      hash = (37 * hash) + IS_OPEN_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getIsOpen());
+      hash = (37 * hash) + BEST_RECORD_FIELD_NUMBER;
+      hash = (53 * hash) + getBestRecord();
+      hash = (37 * hash) + OPEN_TIME_FIELD_NUMBER;
+      hash = (53 * hash) + getOpenTime();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -447,18 +447,18 @@ public final class ParkourLevelInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        bestRecord_ = 0;
-
-        isOpen_ = false;
-
-        openTime_ = 0;
-
         if (posBuilder_ == null) {
           pos_ = null;
         } else {
           pos_ = null;
           posBuilder_ = null;
         }
+        isOpen_ = false;
+
+        bestRecord_ = 0;
+
+        openTime_ = 0;
+
         return this;
       }
 
@@ -485,14 +485,14 @@ public final class ParkourLevelInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.ParkourLevelInfoOuterClass.ParkourLevelInfo buildPartial() {
         emu.grasscutter.net.proto.ParkourLevelInfoOuterClass.ParkourLevelInfo result = new emu.grasscutter.net.proto.ParkourLevelInfoOuterClass.ParkourLevelInfo(this);
-        result.bestRecord_ = bestRecord_;
-        result.isOpen_ = isOpen_;
-        result.openTime_ = openTime_;
         if (posBuilder_ == null) {
           result.pos_ = pos_;
         } else {
           result.pos_ = posBuilder_.build();
         }
+        result.isOpen_ = isOpen_;
+        result.bestRecord_ = bestRecord_;
+        result.openTime_ = openTime_;
         onBuilt();
         return result;
       }
@@ -541,17 +541,17 @@ public final class ParkourLevelInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.ParkourLevelInfoOuterClass.ParkourLevelInfo other) {
         if (other == emu.grasscutter.net.proto.ParkourLevelInfoOuterClass.ParkourLevelInfo.getDefaultInstance()) return this;
-        if (other.getBestRecord() != 0) {
-          setBestRecord(other.getBestRecord());
+        if (other.hasPos()) {
+          mergePos(other.getPos());
         }
         if (other.getIsOpen() != false) {
           setIsOpen(other.getIsOpen());
         }
+        if (other.getBestRecord() != 0) {
+          setBestRecord(other.getBestRecord());
+        }
         if (other.getOpenTime() != 0) {
           setOpenTime(other.getOpenTime());
-        }
-        if (other.hasPos()) {
-          mergePos(other.getPos());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -579,99 +579,6 @@ public final class ParkourLevelInfoOuterClass {
             mergeFrom(parsedMessage);
           }
         }
-        return this;
-      }
-
-      private int bestRecord_ ;
-      /**
-       * <code>uint32 best_record = 12;</code>
-       * @return The bestRecord.
-       */
-      @java.lang.Override
-      public int getBestRecord() {
-        return bestRecord_;
-      }
-      /**
-       * <code>uint32 best_record = 12;</code>
-       * @param value The bestRecord to set.
-       * @return This builder for chaining.
-       */
-      public Builder setBestRecord(int value) {
-        
-        bestRecord_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 best_record = 12;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearBestRecord() {
-        
-        bestRecord_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private boolean isOpen_ ;
-      /**
-       * <code>bool is_open = 9;</code>
-       * @return The isOpen.
-       */
-      @java.lang.Override
-      public boolean getIsOpen() {
-        return isOpen_;
-      }
-      /**
-       * <code>bool is_open = 9;</code>
-       * @param value The isOpen to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsOpen(boolean value) {
-        
-        isOpen_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_open = 9;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsOpen() {
-        
-        isOpen_ = false;
-        onChanged();
-        return this;
-      }
-
-      private int openTime_ ;
-      /**
-       * <code>uint32 open_time = 7;</code>
-       * @return The openTime.
-       */
-      @java.lang.Override
-      public int getOpenTime() {
-        return openTime_;
-      }
-      /**
-       * <code>uint32 open_time = 7;</code>
-       * @param value The openTime to set.
-       * @return This builder for chaining.
-       */
-      public Builder setOpenTime(int value) {
-        
-        openTime_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 open_time = 7;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearOpenTime() {
-        
-        openTime_ = 0;
-        onChanged();
         return this;
       }
 
@@ -793,6 +700,99 @@ public final class ParkourLevelInfoOuterClass {
         }
         return posBuilder_;
       }
+
+      private boolean isOpen_ ;
+      /**
+       * <code>bool is_open = 7;</code>
+       * @return The isOpen.
+       */
+      @java.lang.Override
+      public boolean getIsOpen() {
+        return isOpen_;
+      }
+      /**
+       * <code>bool is_open = 7;</code>
+       * @param value The isOpen to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIsOpen(boolean value) {
+        
+        isOpen_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool is_open = 7;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsOpen() {
+        
+        isOpen_ = false;
+        onChanged();
+        return this;
+      }
+
+      private int bestRecord_ ;
+      /**
+       * <code>uint32 best_record = 14;</code>
+       * @return The bestRecord.
+       */
+      @java.lang.Override
+      public int getBestRecord() {
+        return bestRecord_;
+      }
+      /**
+       * <code>uint32 best_record = 14;</code>
+       * @param value The bestRecord to set.
+       * @return This builder for chaining.
+       */
+      public Builder setBestRecord(int value) {
+        
+        bestRecord_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 best_record = 14;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearBestRecord() {
+        
+        bestRecord_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int openTime_ ;
+      /**
+       * <code>uint32 open_time = 4;</code>
+       * @return The openTime.
+       */
+      @java.lang.Override
+      public int getOpenTime() {
+        return openTime_;
+      }
+      /**
+       * <code>uint32 open_time = 4;</code>
+       * @param value The openTime to set.
+       * @return This builder for chaining.
+       */
+      public Builder setOpenTime(int value) {
+        
+        openTime_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 open_time = 4;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearOpenTime() {
+        
+        openTime_ = 0;
+        onChanged();
+        return this;
+      }
       @java.lang.Override
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
@@ -861,9 +861,9 @@ public final class ParkourLevelInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\026ParkourLevelInfo.proto\032\014Vector.proto\"a" +
-      "\n\020ParkourLevelInfo\022\023\n\013best_record\030\014 \001(\r\022" +
-      "\017\n\007is_open\030\t \001(\010\022\021\n\topen_time\030\007 \001(\r\022\024\n\003p" +
-      "os\030\002 \001(\0132\007.VectorB\033\n\031emu.grasscutter.net" +
+      "\n\020ParkourLevelInfo\022\024\n\003pos\030\002 \001(\0132\007.Vector" +
+      "\022\017\n\007is_open\030\007 \001(\010\022\023\n\013best_record\030\016 \001(\r\022\021" +
+      "\n\topen_time\030\004 \001(\rB\033\n\031emu.grasscutter.net" +
       ".protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -876,7 +876,7 @@ public final class ParkourLevelInfoOuterClass {
     internal_static_ParkourLevelInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ParkourLevelInfo_descriptor,
-        new java.lang.String[] { "BestRecord", "IsOpen", "OpenTime", "Pos", });
+        new java.lang.String[] { "Pos", "IsOpen", "BestRecord", "OpenTime", });
     emu.grasscutter.net.proto.VectorOuterClass.getDescriptor();
   }
 

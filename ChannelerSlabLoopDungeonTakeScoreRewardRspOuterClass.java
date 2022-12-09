@@ -19,22 +19,26 @@ public final class ChannelerSlabLoopDungeonTakeScoreRewardRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 reward_index = 12;</code>
-     * @return The rewardIndex.
-     */
-    int getRewardIndex();
-
-    /**
      * <code>int32 retcode = 5;</code>
      * @return The retcode.
      */
     int getRetcode();
+
+    /**
+     * <code>uint32 reward_index = 8;</code>
+     * @return The rewardIndex.
+     */
+    int getRewardIndex();
   }
   /**
    * <pre>
-   * CmdId: 8433
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 8369;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code ChannelerSlabLoopDungeonTakeScoreRewardRsp}
@@ -86,7 +90,7 @@ public final class ChannelerSlabLoopDungeonTakeScoreRewardRspOuterClass {
               retcode_ = input.readInt32();
               break;
             }
-            case 96: {
+            case 64: {
 
               rewardIndex_ = input.readUInt32();
               break;
@@ -123,17 +127,6 @@ public final class ChannelerSlabLoopDungeonTakeScoreRewardRspOuterClass {
               emu.grasscutter.net.proto.ChannelerSlabLoopDungeonTakeScoreRewardRspOuterClass.ChannelerSlabLoopDungeonTakeScoreRewardRsp.class, emu.grasscutter.net.proto.ChannelerSlabLoopDungeonTakeScoreRewardRspOuterClass.ChannelerSlabLoopDungeonTakeScoreRewardRsp.Builder.class);
     }
 
-    public static final int REWARD_INDEX_FIELD_NUMBER = 12;
-    private int rewardIndex_;
-    /**
-     * <code>uint32 reward_index = 12;</code>
-     * @return The rewardIndex.
-     */
-    @java.lang.Override
-    public int getRewardIndex() {
-      return rewardIndex_;
-    }
-
     public static final int RETCODE_FIELD_NUMBER = 5;
     private int retcode_;
     /**
@@ -143,6 +136,17 @@ public final class ChannelerSlabLoopDungeonTakeScoreRewardRspOuterClass {
     @java.lang.Override
     public int getRetcode() {
       return retcode_;
+    }
+
+    public static final int REWARD_INDEX_FIELD_NUMBER = 8;
+    private int rewardIndex_;
+    /**
+     * <code>uint32 reward_index = 8;</code>
+     * @return The rewardIndex.
+     */
+    @java.lang.Override
+    public int getRewardIndex() {
+      return rewardIndex_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -163,7 +167,7 @@ public final class ChannelerSlabLoopDungeonTakeScoreRewardRspOuterClass {
         output.writeInt32(5, retcode_);
       }
       if (rewardIndex_ != 0) {
-        output.writeUInt32(12, rewardIndex_);
+        output.writeUInt32(8, rewardIndex_);
       }
       unknownFields.writeTo(output);
     }
@@ -180,7 +184,7 @@ public final class ChannelerSlabLoopDungeonTakeScoreRewardRspOuterClass {
       }
       if (rewardIndex_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, rewardIndex_);
+          .computeUInt32Size(8, rewardIndex_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -197,10 +201,10 @@ public final class ChannelerSlabLoopDungeonTakeScoreRewardRspOuterClass {
       }
       emu.grasscutter.net.proto.ChannelerSlabLoopDungeonTakeScoreRewardRspOuterClass.ChannelerSlabLoopDungeonTakeScoreRewardRsp other = (emu.grasscutter.net.proto.ChannelerSlabLoopDungeonTakeScoreRewardRspOuterClass.ChannelerSlabLoopDungeonTakeScoreRewardRsp) obj;
 
-      if (getRewardIndex()
-          != other.getRewardIndex()) return false;
       if (getRetcode()
           != other.getRetcode()) return false;
+      if (getRewardIndex()
+          != other.getRewardIndex()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -212,10 +216,10 @@ public final class ChannelerSlabLoopDungeonTakeScoreRewardRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + REWARD_INDEX_FIELD_NUMBER;
-      hash = (53 * hash) + getRewardIndex();
       hash = (37 * hash) + RETCODE_FIELD_NUMBER;
       hash = (53 * hash) + getRetcode();
+      hash = (37 * hash) + REWARD_INDEX_FIELD_NUMBER;
+      hash = (53 * hash) + getRewardIndex();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -313,9 +317,13 @@ public final class ChannelerSlabLoopDungeonTakeScoreRewardRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 8433
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 8369;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code ChannelerSlabLoopDungeonTakeScoreRewardRsp}
@@ -355,9 +363,9 @@ public final class ChannelerSlabLoopDungeonTakeScoreRewardRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        rewardIndex_ = 0;
-
         retcode_ = 0;
+
+        rewardIndex_ = 0;
 
         return this;
       }
@@ -385,8 +393,8 @@ public final class ChannelerSlabLoopDungeonTakeScoreRewardRspOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.ChannelerSlabLoopDungeonTakeScoreRewardRspOuterClass.ChannelerSlabLoopDungeonTakeScoreRewardRsp buildPartial() {
         emu.grasscutter.net.proto.ChannelerSlabLoopDungeonTakeScoreRewardRspOuterClass.ChannelerSlabLoopDungeonTakeScoreRewardRsp result = new emu.grasscutter.net.proto.ChannelerSlabLoopDungeonTakeScoreRewardRspOuterClass.ChannelerSlabLoopDungeonTakeScoreRewardRsp(this);
-        result.rewardIndex_ = rewardIndex_;
         result.retcode_ = retcode_;
+        result.rewardIndex_ = rewardIndex_;
         onBuilt();
         return result;
       }
@@ -435,11 +443,11 @@ public final class ChannelerSlabLoopDungeonTakeScoreRewardRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.ChannelerSlabLoopDungeonTakeScoreRewardRspOuterClass.ChannelerSlabLoopDungeonTakeScoreRewardRsp other) {
         if (other == emu.grasscutter.net.proto.ChannelerSlabLoopDungeonTakeScoreRewardRspOuterClass.ChannelerSlabLoopDungeonTakeScoreRewardRsp.getDefaultInstance()) return this;
-        if (other.getRewardIndex() != 0) {
-          setRewardIndex(other.getRewardIndex());
-        }
         if (other.getRetcode() != 0) {
           setRetcode(other.getRetcode());
+        }
+        if (other.getRewardIndex() != 0) {
+          setRewardIndex(other.getRewardIndex());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -470,37 +478,6 @@ public final class ChannelerSlabLoopDungeonTakeScoreRewardRspOuterClass {
         return this;
       }
 
-      private int rewardIndex_ ;
-      /**
-       * <code>uint32 reward_index = 12;</code>
-       * @return The rewardIndex.
-       */
-      @java.lang.Override
-      public int getRewardIndex() {
-        return rewardIndex_;
-      }
-      /**
-       * <code>uint32 reward_index = 12;</code>
-       * @param value The rewardIndex to set.
-       * @return This builder for chaining.
-       */
-      public Builder setRewardIndex(int value) {
-        
-        rewardIndex_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 reward_index = 12;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearRewardIndex() {
-        
-        rewardIndex_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int retcode_ ;
       /**
        * <code>int32 retcode = 5;</code>
@@ -528,6 +505,37 @@ public final class ChannelerSlabLoopDungeonTakeScoreRewardRspOuterClass {
       public Builder clearRetcode() {
         
         retcode_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int rewardIndex_ ;
+      /**
+       * <code>uint32 reward_index = 8;</code>
+       * @return The rewardIndex.
+       */
+      @java.lang.Override
+      public int getRewardIndex() {
+        return rewardIndex_;
+      }
+      /**
+       * <code>uint32 reward_index = 8;</code>
+       * @param value The rewardIndex to set.
+       * @return This builder for chaining.
+       */
+      public Builder setRewardIndex(int value) {
+        
+        rewardIndex_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 reward_index = 8;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearRewardIndex() {
+        
+        rewardIndex_ = 0;
         onChanged();
         return this;
       }
@@ -600,8 +608,8 @@ public final class ChannelerSlabLoopDungeonTakeScoreRewardRspOuterClass {
     java.lang.String[] descriptorData = {
       "\n0ChannelerSlabLoopDungeonTakeScoreRewar" +
       "dRsp.proto\"S\n*ChannelerSlabLoopDungeonTa" +
-      "keScoreRewardRsp\022\024\n\014reward_index\030\014 \001(\r\022\017" +
-      "\n\007retcode\030\005 \001(\005B\033\n\031emu.grasscutter.net.p" +
+      "keScoreRewardRsp\022\017\n\007retcode\030\005 \001(\005\022\024\n\014rew" +
+      "ard_index\030\010 \001(\rB\033\n\031emu.grasscutter.net.p" +
       "rotob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -613,7 +621,7 @@ public final class ChannelerSlabLoopDungeonTakeScoreRewardRspOuterClass {
     internal_static_ChannelerSlabLoopDungeonTakeScoreRewardRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ChannelerSlabLoopDungeonTakeScoreRewardRsp_descriptor,
-        new java.lang.String[] { "RewardIndex", "Retcode", });
+        new java.lang.String[] { "Retcode", "RewardIndex", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

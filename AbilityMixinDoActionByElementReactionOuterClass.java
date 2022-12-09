@@ -19,7 +19,7 @@ public final class AbilityMixinDoActionByElementReactionOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 target_entity_id = 1;</code>
+     * <code>uint32 target_entity_id = 5;</code>
      * @return The targetEntityId.
      */
     int getTargetEntityId();
@@ -69,7 +69,7 @@ public final class AbilityMixinDoActionByElementReactionOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
+            case 40: {
 
               targetEntityId_ = input.readUInt32();
               break;
@@ -106,10 +106,10 @@ public final class AbilityMixinDoActionByElementReactionOuterClass {
               emu.grasscutter.net.proto.AbilityMixinDoActionByElementReactionOuterClass.AbilityMixinDoActionByElementReaction.class, emu.grasscutter.net.proto.AbilityMixinDoActionByElementReactionOuterClass.AbilityMixinDoActionByElementReaction.Builder.class);
     }
 
-    public static final int TARGET_ENTITY_ID_FIELD_NUMBER = 1;
+    public static final int TARGET_ENTITY_ID_FIELD_NUMBER = 5;
     private int targetEntityId_;
     /**
-     * <code>uint32 target_entity_id = 1;</code>
+     * <code>uint32 target_entity_id = 5;</code>
      * @return The targetEntityId.
      */
     @java.lang.Override
@@ -132,7 +132,7 @@ public final class AbilityMixinDoActionByElementReactionOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (targetEntityId_ != 0) {
-        output.writeUInt32(1, targetEntityId_);
+        output.writeUInt32(5, targetEntityId_);
       }
       unknownFields.writeTo(output);
     }
@@ -145,7 +145,7 @@ public final class AbilityMixinDoActionByElementReactionOuterClass {
       size = 0;
       if (targetEntityId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, targetEntityId_);
+          .computeUInt32Size(5, targetEntityId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -421,7 +421,7 @@ public final class AbilityMixinDoActionByElementReactionOuterClass {
 
       private int targetEntityId_ ;
       /**
-       * <code>uint32 target_entity_id = 1;</code>
+       * <code>uint32 target_entity_id = 5;</code>
        * @return The targetEntityId.
        */
       @java.lang.Override
@@ -429,7 +429,7 @@ public final class AbilityMixinDoActionByElementReactionOuterClass {
         return targetEntityId_;
       }
       /**
-       * <code>uint32 target_entity_id = 1;</code>
+       * <code>uint32 target_entity_id = 5;</code>
        * @param value The targetEntityId to set.
        * @return This builder for chaining.
        */
@@ -440,7 +440,7 @@ public final class AbilityMixinDoActionByElementReactionOuterClass {
         return this;
       }
       /**
-       * <code>uint32 target_entity_id = 1;</code>
+       * <code>uint32 target_entity_id = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearTargetEntityId() {
@@ -518,7 +518,7 @@ public final class AbilityMixinDoActionByElementReactionOuterClass {
     java.lang.String[] descriptorData = {
       "\n+AbilityMixinDoActionByElementReaction." +
       "proto\"A\n%AbilityMixinDoActionByElementRe" +
-      "action\022\030\n\020target_entity_id\030\001 \001(\rB\033\n\031emu." +
+      "action\022\030\n\020target_entity_id\030\005 \001(\rB\033\n\031emu." +
       "grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

@@ -19,75 +19,79 @@ public final class GravenInnocenceRaceSettleNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_new_record = 4;</code>
-     * @return The isNewRecord.
-     */
-    boolean getIsNewRecord();
-
-    /**
-     * <code>uint32 gallery_id = 6;</code>
+     * <code>uint32 gallery_id = 9;</code>
      * @return The galleryId.
      */
     int getGalleryId();
 
     /**
-     * <code>uint32 score = 5;</code>
-     * @return The score.
+     * <code>bool is_new_record = 3;</code>
+     * @return The isNewRecord.
      */
-    int getScore();
-
-    /**
-     * <code>.GalleryStopReason reason = 2;</code>
-     * @return The enum numeric value on the wire for reason.
-     */
-    int getReasonValue();
-    /**
-     * <code>.GalleryStopReason reason = 2;</code>
-     * @return The reason.
-     */
-    emu.grasscutter.net.proto.GalleryStopReasonOuterClass.GalleryStopReason getReason();
-
-    /**
-     * <code>uint32 total_coint_count = 13;</code>
-     * @return The totalCointCount.
-     */
-    int getTotalCointCount();
-
-    /**
-     * <code>uint32 remain_time = 10;</code>
-     * @return The remainTime.
-     */
-    int getRemainTime();
-
-    /**
-     * <code>uint32 challenge_progress = 1;</code>
-     * @return The challengeProgress.
-     */
-    int getChallengeProgress();
-
-    /**
-     * <code>uint32 coin_count = 8;</code>
-     * @return The coinCount.
-     */
-    int getCoinCount();
-
-    /**
-     * <code>bool is_success = 7;</code>
-     * @return The isSuccess.
-     */
-    boolean getIsSuccess();
+    boolean getIsNewRecord();
 
     /**
      * <code>uint32 level_id = 11;</code>
      * @return The levelId.
      */
     int getLevelId();
+
+    /**
+     * <code>uint32 Unk3300_BOIPHOPMHJM = 8;</code>
+     * @return The unk3300BOIPHOPMHJM.
+     */
+    int getUnk3300BOIPHOPMHJM();
+
+    /**
+     * <code>uint32 score = 4;</code>
+     * @return The score.
+     */
+    int getScore();
+
+    /**
+     * <code>bool is_success = 10;</code>
+     * @return The isSuccess.
+     */
+    boolean getIsSuccess();
+
+    /**
+     * <code>.GalleryStopReason reason = 12;</code>
+     * @return The enum numeric value on the wire for reason.
+     */
+    int getReasonValue();
+    /**
+     * <code>.GalleryStopReason reason = 12;</code>
+     * @return The reason.
+     */
+    emu.grasscutter.net.proto.GalleryStopReasonOuterClass.GalleryStopReason getReason();
+
+    /**
+     * <code>uint32 Unk3300_IPGJKKFDPJJ = 6;</code>
+     * @return The unk3300IPGJKKFDPJJ.
+     */
+    int getUnk3300IPGJKKFDPJJ();
+
+    /**
+     * <code>uint32 remain_time = 2;</code>
+     * @return The remainTime.
+     */
+    int getRemainTime();
+
+    /**
+     * <code>uint32 Unk3300_OHAHHKNAJKL = 7;</code>
+     * @return The unk3300OHAHHKNAJKL.
+     */
+    int getUnk3300OHAHHKNAJKL();
   }
   /**
    * <pre>
-   * CmdId: 20681
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 24427;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code GravenInnocenceRaceSettleNotify}
@@ -135,45 +139,44 @@ public final class GravenInnocenceRaceSettleNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
-
-              challengeProgress_ = input.readUInt32();
-              break;
-            }
             case 16: {
-              int rawValue = input.readEnum();
 
-              reason_ = rawValue;
+              remainTime_ = input.readUInt32();
               break;
             }
-            case 32: {
+            case 24: {
 
               isNewRecord_ = input.readBool();
               break;
             }
-            case 40: {
+            case 32: {
 
               score_ = input.readUInt32();
               break;
             }
             case 48: {
 
-              galleryId_ = input.readUInt32();
+              unk3300IPGJKKFDPJJ_ = input.readUInt32();
               break;
             }
             case 56: {
 
-              isSuccess_ = input.readBool();
+              unk3300OHAHHKNAJKL_ = input.readUInt32();
               break;
             }
             case 64: {
 
-              coinCount_ = input.readUInt32();
+              unk3300BOIPHOPMHJM_ = input.readUInt32();
+              break;
+            }
+            case 72: {
+
+              galleryId_ = input.readUInt32();
               break;
             }
             case 80: {
 
-              remainTime_ = input.readUInt32();
+              isSuccess_ = input.readBool();
               break;
             }
             case 88: {
@@ -181,9 +184,10 @@ public final class GravenInnocenceRaceSettleNotifyOuterClass {
               levelId_ = input.readUInt32();
               break;
             }
-            case 104: {
+            case 96: {
+              int rawValue = input.readEnum();
 
-              totalCointCount_ = input.readUInt32();
+              reason_ = rawValue;
               break;
             }
             default: {
@@ -218,21 +222,10 @@ public final class GravenInnocenceRaceSettleNotifyOuterClass {
               emu.grasscutter.net.proto.GravenInnocenceRaceSettleNotifyOuterClass.GravenInnocenceRaceSettleNotify.class, emu.grasscutter.net.proto.GravenInnocenceRaceSettleNotifyOuterClass.GravenInnocenceRaceSettleNotify.Builder.class);
     }
 
-    public static final int IS_NEW_RECORD_FIELD_NUMBER = 4;
-    private boolean isNewRecord_;
-    /**
-     * <code>bool is_new_record = 4;</code>
-     * @return The isNewRecord.
-     */
-    @java.lang.Override
-    public boolean getIsNewRecord() {
-      return isNewRecord_;
-    }
-
-    public static final int GALLERY_ID_FIELD_NUMBER = 6;
+    public static final int GALLERY_ID_FIELD_NUMBER = 9;
     private int galleryId_;
     /**
-     * <code>uint32 gallery_id = 6;</code>
+     * <code>uint32 gallery_id = 9;</code>
      * @return The galleryId.
      */
     @java.lang.Override
@@ -240,89 +233,15 @@ public final class GravenInnocenceRaceSettleNotifyOuterClass {
       return galleryId_;
     }
 
-    public static final int SCORE_FIELD_NUMBER = 5;
-    private int score_;
+    public static final int IS_NEW_RECORD_FIELD_NUMBER = 3;
+    private boolean isNewRecord_;
     /**
-     * <code>uint32 score = 5;</code>
-     * @return The score.
+     * <code>bool is_new_record = 3;</code>
+     * @return The isNewRecord.
      */
     @java.lang.Override
-    public int getScore() {
-      return score_;
-    }
-
-    public static final int REASON_FIELD_NUMBER = 2;
-    private int reason_;
-    /**
-     * <code>.GalleryStopReason reason = 2;</code>
-     * @return The enum numeric value on the wire for reason.
-     */
-    @java.lang.Override public int getReasonValue() {
-      return reason_;
-    }
-    /**
-     * <code>.GalleryStopReason reason = 2;</code>
-     * @return The reason.
-     */
-    @java.lang.Override public emu.grasscutter.net.proto.GalleryStopReasonOuterClass.GalleryStopReason getReason() {
-      @SuppressWarnings("deprecation")
-      emu.grasscutter.net.proto.GalleryStopReasonOuterClass.GalleryStopReason result = emu.grasscutter.net.proto.GalleryStopReasonOuterClass.GalleryStopReason.valueOf(reason_);
-      return result == null ? emu.grasscutter.net.proto.GalleryStopReasonOuterClass.GalleryStopReason.UNRECOGNIZED : result;
-    }
-
-    public static final int TOTAL_COINT_COUNT_FIELD_NUMBER = 13;
-    private int totalCointCount_;
-    /**
-     * <code>uint32 total_coint_count = 13;</code>
-     * @return The totalCointCount.
-     */
-    @java.lang.Override
-    public int getTotalCointCount() {
-      return totalCointCount_;
-    }
-
-    public static final int REMAIN_TIME_FIELD_NUMBER = 10;
-    private int remainTime_;
-    /**
-     * <code>uint32 remain_time = 10;</code>
-     * @return The remainTime.
-     */
-    @java.lang.Override
-    public int getRemainTime() {
-      return remainTime_;
-    }
-
-    public static final int CHALLENGE_PROGRESS_FIELD_NUMBER = 1;
-    private int challengeProgress_;
-    /**
-     * <code>uint32 challenge_progress = 1;</code>
-     * @return The challengeProgress.
-     */
-    @java.lang.Override
-    public int getChallengeProgress() {
-      return challengeProgress_;
-    }
-
-    public static final int COIN_COUNT_FIELD_NUMBER = 8;
-    private int coinCount_;
-    /**
-     * <code>uint32 coin_count = 8;</code>
-     * @return The coinCount.
-     */
-    @java.lang.Override
-    public int getCoinCount() {
-      return coinCount_;
-    }
-
-    public static final int IS_SUCCESS_FIELD_NUMBER = 7;
-    private boolean isSuccess_;
-    /**
-     * <code>bool is_success = 7;</code>
-     * @return The isSuccess.
-     */
-    @java.lang.Override
-    public boolean getIsSuccess() {
-      return isSuccess_;
+    public boolean getIsNewRecord() {
+      return isNewRecord_;
     }
 
     public static final int LEVEL_ID_FIELD_NUMBER = 11;
@@ -334,6 +253,91 @@ public final class GravenInnocenceRaceSettleNotifyOuterClass {
     @java.lang.Override
     public int getLevelId() {
       return levelId_;
+    }
+
+    public static final int UNK3300_BOIPHOPMHJM_FIELD_NUMBER = 8;
+    private int unk3300BOIPHOPMHJM_;
+    /**
+     * <code>uint32 Unk3300_BOIPHOPMHJM = 8;</code>
+     * @return The unk3300BOIPHOPMHJM.
+     */
+    @java.lang.Override
+    public int getUnk3300BOIPHOPMHJM() {
+      return unk3300BOIPHOPMHJM_;
+    }
+
+    public static final int SCORE_FIELD_NUMBER = 4;
+    private int score_;
+    /**
+     * <code>uint32 score = 4;</code>
+     * @return The score.
+     */
+    @java.lang.Override
+    public int getScore() {
+      return score_;
+    }
+
+    public static final int IS_SUCCESS_FIELD_NUMBER = 10;
+    private boolean isSuccess_;
+    /**
+     * <code>bool is_success = 10;</code>
+     * @return The isSuccess.
+     */
+    @java.lang.Override
+    public boolean getIsSuccess() {
+      return isSuccess_;
+    }
+
+    public static final int REASON_FIELD_NUMBER = 12;
+    private int reason_;
+    /**
+     * <code>.GalleryStopReason reason = 12;</code>
+     * @return The enum numeric value on the wire for reason.
+     */
+    @java.lang.Override public int getReasonValue() {
+      return reason_;
+    }
+    /**
+     * <code>.GalleryStopReason reason = 12;</code>
+     * @return The reason.
+     */
+    @java.lang.Override public emu.grasscutter.net.proto.GalleryStopReasonOuterClass.GalleryStopReason getReason() {
+      @SuppressWarnings("deprecation")
+      emu.grasscutter.net.proto.GalleryStopReasonOuterClass.GalleryStopReason result = emu.grasscutter.net.proto.GalleryStopReasonOuterClass.GalleryStopReason.valueOf(reason_);
+      return result == null ? emu.grasscutter.net.proto.GalleryStopReasonOuterClass.GalleryStopReason.UNRECOGNIZED : result;
+    }
+
+    public static final int UNK3300_IPGJKKFDPJJ_FIELD_NUMBER = 6;
+    private int unk3300IPGJKKFDPJJ_;
+    /**
+     * <code>uint32 Unk3300_IPGJKKFDPJJ = 6;</code>
+     * @return The unk3300IPGJKKFDPJJ.
+     */
+    @java.lang.Override
+    public int getUnk3300IPGJKKFDPJJ() {
+      return unk3300IPGJKKFDPJJ_;
+    }
+
+    public static final int REMAIN_TIME_FIELD_NUMBER = 2;
+    private int remainTime_;
+    /**
+     * <code>uint32 remain_time = 2;</code>
+     * @return The remainTime.
+     */
+    @java.lang.Override
+    public int getRemainTime() {
+      return remainTime_;
+    }
+
+    public static final int UNK3300_OHAHHKNAJKL_FIELD_NUMBER = 7;
+    private int unk3300OHAHHKNAJKL_;
+    /**
+     * <code>uint32 Unk3300_OHAHHKNAJKL = 7;</code>
+     * @return The unk3300OHAHHKNAJKL.
+     */
+    @java.lang.Override
+    public int getUnk3300OHAHHKNAJKL() {
+      return unk3300OHAHHKNAJKL_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -350,35 +354,35 @@ public final class GravenInnocenceRaceSettleNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (challengeProgress_ != 0) {
-        output.writeUInt32(1, challengeProgress_);
-      }
-      if (reason_ != emu.grasscutter.net.proto.GalleryStopReasonOuterClass.GalleryStopReason.GALLERY_STOP_REASON_NONE.getNumber()) {
-        output.writeEnum(2, reason_);
+      if (remainTime_ != 0) {
+        output.writeUInt32(2, remainTime_);
       }
       if (isNewRecord_ != false) {
-        output.writeBool(4, isNewRecord_);
+        output.writeBool(3, isNewRecord_);
       }
       if (score_ != 0) {
-        output.writeUInt32(5, score_);
+        output.writeUInt32(4, score_);
+      }
+      if (unk3300IPGJKKFDPJJ_ != 0) {
+        output.writeUInt32(6, unk3300IPGJKKFDPJJ_);
+      }
+      if (unk3300OHAHHKNAJKL_ != 0) {
+        output.writeUInt32(7, unk3300OHAHHKNAJKL_);
+      }
+      if (unk3300BOIPHOPMHJM_ != 0) {
+        output.writeUInt32(8, unk3300BOIPHOPMHJM_);
       }
       if (galleryId_ != 0) {
-        output.writeUInt32(6, galleryId_);
+        output.writeUInt32(9, galleryId_);
       }
       if (isSuccess_ != false) {
-        output.writeBool(7, isSuccess_);
-      }
-      if (coinCount_ != 0) {
-        output.writeUInt32(8, coinCount_);
-      }
-      if (remainTime_ != 0) {
-        output.writeUInt32(10, remainTime_);
+        output.writeBool(10, isSuccess_);
       }
       if (levelId_ != 0) {
         output.writeUInt32(11, levelId_);
       }
-      if (totalCointCount_ != 0) {
-        output.writeUInt32(13, totalCointCount_);
+      if (reason_ != emu.grasscutter.net.proto.GalleryStopReasonOuterClass.GalleryStopReason.GALLERY_STOP_REASON_NONE.getNumber()) {
+        output.writeEnum(12, reason_);
       }
       unknownFields.writeTo(output);
     }
@@ -389,45 +393,45 @@ public final class GravenInnocenceRaceSettleNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (challengeProgress_ != 0) {
+      if (remainTime_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, challengeProgress_);
-      }
-      if (reason_ != emu.grasscutter.net.proto.GalleryStopReasonOuterClass.GalleryStopReason.GALLERY_STOP_REASON_NONE.getNumber()) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(2, reason_);
+          .computeUInt32Size(2, remainTime_);
       }
       if (isNewRecord_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(4, isNewRecord_);
+          .computeBoolSize(3, isNewRecord_);
       }
       if (score_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, score_);
+          .computeUInt32Size(4, score_);
+      }
+      if (unk3300IPGJKKFDPJJ_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(6, unk3300IPGJKKFDPJJ_);
+      }
+      if (unk3300OHAHHKNAJKL_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(7, unk3300OHAHHKNAJKL_);
+      }
+      if (unk3300BOIPHOPMHJM_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(8, unk3300BOIPHOPMHJM_);
       }
       if (galleryId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, galleryId_);
+          .computeUInt32Size(9, galleryId_);
       }
       if (isSuccess_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(7, isSuccess_);
-      }
-      if (coinCount_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, coinCount_);
-      }
-      if (remainTime_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, remainTime_);
+          .computeBoolSize(10, isSuccess_);
       }
       if (levelId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(11, levelId_);
       }
-      if (totalCointCount_ != 0) {
+      if (reason_ != emu.grasscutter.net.proto.GalleryStopReasonOuterClass.GalleryStopReason.GALLERY_STOP_REASON_NONE.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, totalCointCount_);
+          .computeEnumSize(12, reason_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -444,25 +448,25 @@ public final class GravenInnocenceRaceSettleNotifyOuterClass {
       }
       emu.grasscutter.net.proto.GravenInnocenceRaceSettleNotifyOuterClass.GravenInnocenceRaceSettleNotify other = (emu.grasscutter.net.proto.GravenInnocenceRaceSettleNotifyOuterClass.GravenInnocenceRaceSettleNotify) obj;
 
-      if (getIsNewRecord()
-          != other.getIsNewRecord()) return false;
       if (getGalleryId()
           != other.getGalleryId()) return false;
-      if (getScore()
-          != other.getScore()) return false;
-      if (reason_ != other.reason_) return false;
-      if (getTotalCointCount()
-          != other.getTotalCointCount()) return false;
-      if (getRemainTime()
-          != other.getRemainTime()) return false;
-      if (getChallengeProgress()
-          != other.getChallengeProgress()) return false;
-      if (getCoinCount()
-          != other.getCoinCount()) return false;
-      if (getIsSuccess()
-          != other.getIsSuccess()) return false;
+      if (getIsNewRecord()
+          != other.getIsNewRecord()) return false;
       if (getLevelId()
           != other.getLevelId()) return false;
+      if (getUnk3300BOIPHOPMHJM()
+          != other.getUnk3300BOIPHOPMHJM()) return false;
+      if (getScore()
+          != other.getScore()) return false;
+      if (getIsSuccess()
+          != other.getIsSuccess()) return false;
+      if (reason_ != other.reason_) return false;
+      if (getUnk3300IPGJKKFDPJJ()
+          != other.getUnk3300IPGJKKFDPJJ()) return false;
+      if (getRemainTime()
+          != other.getRemainTime()) return false;
+      if (getUnk3300OHAHHKNAJKL()
+          != other.getUnk3300OHAHHKNAJKL()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -474,28 +478,28 @@ public final class GravenInnocenceRaceSettleNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + GALLERY_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getGalleryId();
       hash = (37 * hash) + IS_NEW_RECORD_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsNewRecord());
-      hash = (37 * hash) + GALLERY_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getGalleryId();
+      hash = (37 * hash) + LEVEL_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getLevelId();
+      hash = (37 * hash) + UNK3300_BOIPHOPMHJM_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300BOIPHOPMHJM();
       hash = (37 * hash) + SCORE_FIELD_NUMBER;
       hash = (53 * hash) + getScore();
-      hash = (37 * hash) + REASON_FIELD_NUMBER;
-      hash = (53 * hash) + reason_;
-      hash = (37 * hash) + TOTAL_COINT_COUNT_FIELD_NUMBER;
-      hash = (53 * hash) + getTotalCointCount();
-      hash = (37 * hash) + REMAIN_TIME_FIELD_NUMBER;
-      hash = (53 * hash) + getRemainTime();
-      hash = (37 * hash) + CHALLENGE_PROGRESS_FIELD_NUMBER;
-      hash = (53 * hash) + getChallengeProgress();
-      hash = (37 * hash) + COIN_COUNT_FIELD_NUMBER;
-      hash = (53 * hash) + getCoinCount();
       hash = (37 * hash) + IS_SUCCESS_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsSuccess());
-      hash = (37 * hash) + LEVEL_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getLevelId();
+      hash = (37 * hash) + REASON_FIELD_NUMBER;
+      hash = (53 * hash) + reason_;
+      hash = (37 * hash) + UNK3300_IPGJKKFDPJJ_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300IPGJKKFDPJJ();
+      hash = (37 * hash) + REMAIN_TIME_FIELD_NUMBER;
+      hash = (53 * hash) + getRemainTime();
+      hash = (37 * hash) + UNK3300_OHAHHKNAJKL_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300OHAHHKNAJKL();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -593,9 +597,13 @@ public final class GravenInnocenceRaceSettleNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 20681
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 24427;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code GravenInnocenceRaceSettleNotify}
@@ -635,25 +643,25 @@ public final class GravenInnocenceRaceSettleNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        galleryId_ = 0;
+
         isNewRecord_ = false;
 
-        galleryId_ = 0;
+        levelId_ = 0;
+
+        unk3300BOIPHOPMHJM_ = 0;
 
         score_ = 0;
 
+        isSuccess_ = false;
+
         reason_ = 0;
 
-        totalCointCount_ = 0;
+        unk3300IPGJKKFDPJJ_ = 0;
 
         remainTime_ = 0;
 
-        challengeProgress_ = 0;
-
-        coinCount_ = 0;
-
-        isSuccess_ = false;
-
-        levelId_ = 0;
+        unk3300OHAHHKNAJKL_ = 0;
 
         return this;
       }
@@ -681,16 +689,16 @@ public final class GravenInnocenceRaceSettleNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.GravenInnocenceRaceSettleNotifyOuterClass.GravenInnocenceRaceSettleNotify buildPartial() {
         emu.grasscutter.net.proto.GravenInnocenceRaceSettleNotifyOuterClass.GravenInnocenceRaceSettleNotify result = new emu.grasscutter.net.proto.GravenInnocenceRaceSettleNotifyOuterClass.GravenInnocenceRaceSettleNotify(this);
-        result.isNewRecord_ = isNewRecord_;
         result.galleryId_ = galleryId_;
-        result.score_ = score_;
-        result.reason_ = reason_;
-        result.totalCointCount_ = totalCointCount_;
-        result.remainTime_ = remainTime_;
-        result.challengeProgress_ = challengeProgress_;
-        result.coinCount_ = coinCount_;
-        result.isSuccess_ = isSuccess_;
+        result.isNewRecord_ = isNewRecord_;
         result.levelId_ = levelId_;
+        result.unk3300BOIPHOPMHJM_ = unk3300BOIPHOPMHJM_;
+        result.score_ = score_;
+        result.isSuccess_ = isSuccess_;
+        result.reason_ = reason_;
+        result.unk3300IPGJKKFDPJJ_ = unk3300IPGJKKFDPJJ_;
+        result.remainTime_ = remainTime_;
+        result.unk3300OHAHHKNAJKL_ = unk3300OHAHHKNAJKL_;
         onBuilt();
         return result;
       }
@@ -739,35 +747,35 @@ public final class GravenInnocenceRaceSettleNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.GravenInnocenceRaceSettleNotifyOuterClass.GravenInnocenceRaceSettleNotify other) {
         if (other == emu.grasscutter.net.proto.GravenInnocenceRaceSettleNotifyOuterClass.GravenInnocenceRaceSettleNotify.getDefaultInstance()) return this;
+        if (other.getGalleryId() != 0) {
+          setGalleryId(other.getGalleryId());
+        }
         if (other.getIsNewRecord() != false) {
           setIsNewRecord(other.getIsNewRecord());
         }
-        if (other.getGalleryId() != 0) {
-          setGalleryId(other.getGalleryId());
+        if (other.getLevelId() != 0) {
+          setLevelId(other.getLevelId());
+        }
+        if (other.getUnk3300BOIPHOPMHJM() != 0) {
+          setUnk3300BOIPHOPMHJM(other.getUnk3300BOIPHOPMHJM());
         }
         if (other.getScore() != 0) {
           setScore(other.getScore());
         }
+        if (other.getIsSuccess() != false) {
+          setIsSuccess(other.getIsSuccess());
+        }
         if (other.reason_ != 0) {
           setReasonValue(other.getReasonValue());
         }
-        if (other.getTotalCointCount() != 0) {
-          setTotalCointCount(other.getTotalCointCount());
+        if (other.getUnk3300IPGJKKFDPJJ() != 0) {
+          setUnk3300IPGJKKFDPJJ(other.getUnk3300IPGJKKFDPJJ());
         }
         if (other.getRemainTime() != 0) {
           setRemainTime(other.getRemainTime());
         }
-        if (other.getChallengeProgress() != 0) {
-          setChallengeProgress(other.getChallengeProgress());
-        }
-        if (other.getCoinCount() != 0) {
-          setCoinCount(other.getCoinCount());
-        }
-        if (other.getIsSuccess() != false) {
-          setIsSuccess(other.getIsSuccess());
-        }
-        if (other.getLevelId() != 0) {
-          setLevelId(other.getLevelId());
+        if (other.getUnk3300OHAHHKNAJKL() != 0) {
+          setUnk3300OHAHHKNAJKL(other.getUnk3300OHAHHKNAJKL());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -798,40 +806,9 @@ public final class GravenInnocenceRaceSettleNotifyOuterClass {
         return this;
       }
 
-      private boolean isNewRecord_ ;
-      /**
-       * <code>bool is_new_record = 4;</code>
-       * @return The isNewRecord.
-       */
-      @java.lang.Override
-      public boolean getIsNewRecord() {
-        return isNewRecord_;
-      }
-      /**
-       * <code>bool is_new_record = 4;</code>
-       * @param value The isNewRecord to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsNewRecord(boolean value) {
-        
-        isNewRecord_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_new_record = 4;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsNewRecord() {
-        
-        isNewRecord_ = false;
-        onChanged();
-        return this;
-      }
-
       private int galleryId_ ;
       /**
-       * <code>uint32 gallery_id = 6;</code>
+       * <code>uint32 gallery_id = 9;</code>
        * @return The galleryId.
        */
       @java.lang.Override
@@ -839,7 +816,7 @@ public final class GravenInnocenceRaceSettleNotifyOuterClass {
         return galleryId_;
       }
       /**
-       * <code>uint32 gallery_id = 6;</code>
+       * <code>uint32 gallery_id = 9;</code>
        * @param value The galleryId to set.
        * @return This builder for chaining.
        */
@@ -850,7 +827,7 @@ public final class GravenInnocenceRaceSettleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 gallery_id = 6;</code>
+       * <code>uint32 gallery_id = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearGalleryId() {
@@ -860,242 +837,33 @@ public final class GravenInnocenceRaceSettleNotifyOuterClass {
         return this;
       }
 
-      private int score_ ;
+      private boolean isNewRecord_ ;
       /**
-       * <code>uint32 score = 5;</code>
-       * @return The score.
+       * <code>bool is_new_record = 3;</code>
+       * @return The isNewRecord.
        */
       @java.lang.Override
-      public int getScore() {
-        return score_;
+      public boolean getIsNewRecord() {
+        return isNewRecord_;
       }
       /**
-       * <code>uint32 score = 5;</code>
-       * @param value The score to set.
+       * <code>bool is_new_record = 3;</code>
+       * @param value The isNewRecord to set.
        * @return This builder for chaining.
        */
-      public Builder setScore(int value) {
+      public Builder setIsNewRecord(boolean value) {
         
-        score_ = value;
+        isNewRecord_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 score = 5;</code>
+       * <code>bool is_new_record = 3;</code>
        * @return This builder for chaining.
        */
-      public Builder clearScore() {
+      public Builder clearIsNewRecord() {
         
-        score_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int reason_ = 0;
-      /**
-       * <code>.GalleryStopReason reason = 2;</code>
-       * @return The enum numeric value on the wire for reason.
-       */
-      @java.lang.Override public int getReasonValue() {
-        return reason_;
-      }
-      /**
-       * <code>.GalleryStopReason reason = 2;</code>
-       * @param value The enum numeric value on the wire for reason to set.
-       * @return This builder for chaining.
-       */
-      public Builder setReasonValue(int value) {
-        
-        reason_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>.GalleryStopReason reason = 2;</code>
-       * @return The reason.
-       */
-      @java.lang.Override
-      public emu.grasscutter.net.proto.GalleryStopReasonOuterClass.GalleryStopReason getReason() {
-        @SuppressWarnings("deprecation")
-        emu.grasscutter.net.proto.GalleryStopReasonOuterClass.GalleryStopReason result = emu.grasscutter.net.proto.GalleryStopReasonOuterClass.GalleryStopReason.valueOf(reason_);
-        return result == null ? emu.grasscutter.net.proto.GalleryStopReasonOuterClass.GalleryStopReason.UNRECOGNIZED : result;
-      }
-      /**
-       * <code>.GalleryStopReason reason = 2;</code>
-       * @param value The reason to set.
-       * @return This builder for chaining.
-       */
-      public Builder setReason(emu.grasscutter.net.proto.GalleryStopReasonOuterClass.GalleryStopReason value) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        
-        reason_ = value.getNumber();
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>.GalleryStopReason reason = 2;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearReason() {
-        
-        reason_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int totalCointCount_ ;
-      /**
-       * <code>uint32 total_coint_count = 13;</code>
-       * @return The totalCointCount.
-       */
-      @java.lang.Override
-      public int getTotalCointCount() {
-        return totalCointCount_;
-      }
-      /**
-       * <code>uint32 total_coint_count = 13;</code>
-       * @param value The totalCointCount to set.
-       * @return This builder for chaining.
-       */
-      public Builder setTotalCointCount(int value) {
-        
-        totalCointCount_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 total_coint_count = 13;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearTotalCointCount() {
-        
-        totalCointCount_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int remainTime_ ;
-      /**
-       * <code>uint32 remain_time = 10;</code>
-       * @return The remainTime.
-       */
-      @java.lang.Override
-      public int getRemainTime() {
-        return remainTime_;
-      }
-      /**
-       * <code>uint32 remain_time = 10;</code>
-       * @param value The remainTime to set.
-       * @return This builder for chaining.
-       */
-      public Builder setRemainTime(int value) {
-        
-        remainTime_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 remain_time = 10;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearRemainTime() {
-        
-        remainTime_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int challengeProgress_ ;
-      /**
-       * <code>uint32 challenge_progress = 1;</code>
-       * @return The challengeProgress.
-       */
-      @java.lang.Override
-      public int getChallengeProgress() {
-        return challengeProgress_;
-      }
-      /**
-       * <code>uint32 challenge_progress = 1;</code>
-       * @param value The challengeProgress to set.
-       * @return This builder for chaining.
-       */
-      public Builder setChallengeProgress(int value) {
-        
-        challengeProgress_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 challenge_progress = 1;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearChallengeProgress() {
-        
-        challengeProgress_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int coinCount_ ;
-      /**
-       * <code>uint32 coin_count = 8;</code>
-       * @return The coinCount.
-       */
-      @java.lang.Override
-      public int getCoinCount() {
-        return coinCount_;
-      }
-      /**
-       * <code>uint32 coin_count = 8;</code>
-       * @param value The coinCount to set.
-       * @return This builder for chaining.
-       */
-      public Builder setCoinCount(int value) {
-        
-        coinCount_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 coin_count = 8;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearCoinCount() {
-        
-        coinCount_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private boolean isSuccess_ ;
-      /**
-       * <code>bool is_success = 7;</code>
-       * @return The isSuccess.
-       */
-      @java.lang.Override
-      public boolean getIsSuccess() {
-        return isSuccess_;
-      }
-      /**
-       * <code>bool is_success = 7;</code>
-       * @param value The isSuccess to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsSuccess(boolean value) {
-        
-        isSuccess_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_success = 7;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsSuccess() {
-        
-        isSuccess_ = false;
+        isNewRecord_ = false;
         onChanged();
         return this;
       }
@@ -1127,6 +895,246 @@ public final class GravenInnocenceRaceSettleNotifyOuterClass {
       public Builder clearLevelId() {
         
         levelId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int unk3300BOIPHOPMHJM_ ;
+      /**
+       * <code>uint32 Unk3300_BOIPHOPMHJM = 8;</code>
+       * @return The unk3300BOIPHOPMHJM.
+       */
+      @java.lang.Override
+      public int getUnk3300BOIPHOPMHJM() {
+        return unk3300BOIPHOPMHJM_;
+      }
+      /**
+       * <code>uint32 Unk3300_BOIPHOPMHJM = 8;</code>
+       * @param value The unk3300BOIPHOPMHJM to set.
+       * @return This builder for chaining.
+       */
+      public Builder setUnk3300BOIPHOPMHJM(int value) {
+        
+        unk3300BOIPHOPMHJM_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 Unk3300_BOIPHOPMHJM = 8;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearUnk3300BOIPHOPMHJM() {
+        
+        unk3300BOIPHOPMHJM_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int score_ ;
+      /**
+       * <code>uint32 score = 4;</code>
+       * @return The score.
+       */
+      @java.lang.Override
+      public int getScore() {
+        return score_;
+      }
+      /**
+       * <code>uint32 score = 4;</code>
+       * @param value The score to set.
+       * @return This builder for chaining.
+       */
+      public Builder setScore(int value) {
+        
+        score_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 score = 4;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearScore() {
+        
+        score_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private boolean isSuccess_ ;
+      /**
+       * <code>bool is_success = 10;</code>
+       * @return The isSuccess.
+       */
+      @java.lang.Override
+      public boolean getIsSuccess() {
+        return isSuccess_;
+      }
+      /**
+       * <code>bool is_success = 10;</code>
+       * @param value The isSuccess to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIsSuccess(boolean value) {
+        
+        isSuccess_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool is_success = 10;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsSuccess() {
+        
+        isSuccess_ = false;
+        onChanged();
+        return this;
+      }
+
+      private int reason_ = 0;
+      /**
+       * <code>.GalleryStopReason reason = 12;</code>
+       * @return The enum numeric value on the wire for reason.
+       */
+      @java.lang.Override public int getReasonValue() {
+        return reason_;
+      }
+      /**
+       * <code>.GalleryStopReason reason = 12;</code>
+       * @param value The enum numeric value on the wire for reason to set.
+       * @return This builder for chaining.
+       */
+      public Builder setReasonValue(int value) {
+        
+        reason_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.GalleryStopReason reason = 12;</code>
+       * @return The reason.
+       */
+      @java.lang.Override
+      public emu.grasscutter.net.proto.GalleryStopReasonOuterClass.GalleryStopReason getReason() {
+        @SuppressWarnings("deprecation")
+        emu.grasscutter.net.proto.GalleryStopReasonOuterClass.GalleryStopReason result = emu.grasscutter.net.proto.GalleryStopReasonOuterClass.GalleryStopReason.valueOf(reason_);
+        return result == null ? emu.grasscutter.net.proto.GalleryStopReasonOuterClass.GalleryStopReason.UNRECOGNIZED : result;
+      }
+      /**
+       * <code>.GalleryStopReason reason = 12;</code>
+       * @param value The reason to set.
+       * @return This builder for chaining.
+       */
+      public Builder setReason(emu.grasscutter.net.proto.GalleryStopReasonOuterClass.GalleryStopReason value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        
+        reason_ = value.getNumber();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.GalleryStopReason reason = 12;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearReason() {
+        
+        reason_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int unk3300IPGJKKFDPJJ_ ;
+      /**
+       * <code>uint32 Unk3300_IPGJKKFDPJJ = 6;</code>
+       * @return The unk3300IPGJKKFDPJJ.
+       */
+      @java.lang.Override
+      public int getUnk3300IPGJKKFDPJJ() {
+        return unk3300IPGJKKFDPJJ_;
+      }
+      /**
+       * <code>uint32 Unk3300_IPGJKKFDPJJ = 6;</code>
+       * @param value The unk3300IPGJKKFDPJJ to set.
+       * @return This builder for chaining.
+       */
+      public Builder setUnk3300IPGJKKFDPJJ(int value) {
+        
+        unk3300IPGJKKFDPJJ_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 Unk3300_IPGJKKFDPJJ = 6;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearUnk3300IPGJKKFDPJJ() {
+        
+        unk3300IPGJKKFDPJJ_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int remainTime_ ;
+      /**
+       * <code>uint32 remain_time = 2;</code>
+       * @return The remainTime.
+       */
+      @java.lang.Override
+      public int getRemainTime() {
+        return remainTime_;
+      }
+      /**
+       * <code>uint32 remain_time = 2;</code>
+       * @param value The remainTime to set.
+       * @return This builder for chaining.
+       */
+      public Builder setRemainTime(int value) {
+        
+        remainTime_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 remain_time = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearRemainTime() {
+        
+        remainTime_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int unk3300OHAHHKNAJKL_ ;
+      /**
+       * <code>uint32 Unk3300_OHAHHKNAJKL = 7;</code>
+       * @return The unk3300OHAHHKNAJKL.
+       */
+      @java.lang.Override
+      public int getUnk3300OHAHHKNAJKL() {
+        return unk3300OHAHHKNAJKL_;
+      }
+      /**
+       * <code>uint32 Unk3300_OHAHHKNAJKL = 7;</code>
+       * @param value The unk3300OHAHHKNAJKL to set.
+       * @return This builder for chaining.
+       */
+      public Builder setUnk3300OHAHHKNAJKL(int value) {
+        
+        unk3300OHAHHKNAJKL_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 Unk3300_OHAHHKNAJKL = 7;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearUnk3300OHAHHKNAJKL() {
+        
+        unk3300OHAHHKNAJKL_ = 0;
         onChanged();
         return this;
       }
@@ -1198,15 +1206,15 @@ public final class GravenInnocenceRaceSettleNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n%GravenInnocenceRaceSettleNotify.proto\032" +
-      "\027GalleryStopReason.proto\"\205\002\n\037GravenInnoc" +
-      "enceRaceSettleNotify\022\025\n\ris_new_record\030\004 " +
-      "\001(\010\022\022\n\ngallery_id\030\006 \001(\r\022\r\n\005score\030\005 \001(\r\022\"" +
-      "\n\006reason\030\002 \001(\0162\022.GalleryStopReason\022\031\n\021to" +
-      "tal_coint_count\030\r \001(\r\022\023\n\013remain_time\030\n \001" +
-      "(\r\022\032\n\022challenge_progress\030\001 \001(\r\022\022\n\ncoin_c" +
-      "ount\030\010 \001(\r\022\022\n\nis_success\030\007 \001(\010\022\020\n\010level_" +
-      "id\030\013 \001(\rB\033\n\031emu.grasscutter.net.protob\006p" +
-      "roto3"
+      "\027GalleryStopReason.proto\"\221\002\n\037GravenInnoc" +
+      "enceRaceSettleNotify\022\022\n\ngallery_id\030\t \001(\r" +
+      "\022\025\n\ris_new_record\030\003 \001(\010\022\020\n\010level_id\030\013 \001(" +
+      "\r\022\033\n\023Unk3300_BOIPHOPMHJM\030\010 \001(\r\022\r\n\005score\030" +
+      "\004 \001(\r\022\022\n\nis_success\030\n \001(\010\022\"\n\006reason\030\014 \001(" +
+      "\0162\022.GalleryStopReason\022\033\n\023Unk3300_IPGJKKF" +
+      "DPJJ\030\006 \001(\r\022\023\n\013remain_time\030\002 \001(\r\022\033\n\023Unk33" +
+      "00_OHAHHKNAJKL\030\007 \001(\rB\033\n\031emu.grasscutter." +
+      "net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -1218,7 +1226,7 @@ public final class GravenInnocenceRaceSettleNotifyOuterClass {
     internal_static_GravenInnocenceRaceSettleNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GravenInnocenceRaceSettleNotify_descriptor,
-        new java.lang.String[] { "IsNewRecord", "GalleryId", "Score", "Reason", "TotalCointCount", "RemainTime", "ChallengeProgress", "CoinCount", "IsSuccess", "LevelId", });
+        new java.lang.String[] { "GalleryId", "IsNewRecord", "LevelId", "Unk3300BOIPHOPMHJM", "Score", "IsSuccess", "Reason", "Unk3300IPGJKKFDPJJ", "RemainTime", "Unk3300OHAHHKNAJKL", });
     emu.grasscutter.net.proto.GalleryStopReasonOuterClass.getDescriptor();
   }
 

@@ -19,70 +19,70 @@ public final class HomeGroupRecordOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 group_id = 5;</code>
+     * <code>uint32 group_id = 15;</code>
      * @return The groupId.
      */
     int getGroupId();
 
     /**
-     * <code>.HomeRacingRecord racing_gallery_info = 467;</code>
+     * <code>.HomeRacingRecord racing_gallery_info = 835;</code>
      * @return Whether the racingGalleryInfo field is set.
      */
     boolean hasRacingGalleryInfo();
     /**
-     * <code>.HomeRacingRecord racing_gallery_info = 467;</code>
+     * <code>.HomeRacingRecord racing_gallery_info = 835;</code>
      * @return The racingGalleryInfo.
      */
     emu.grasscutter.net.proto.HomeRacingRecordOuterClass.HomeRacingRecord getRacingGalleryInfo();
     /**
-     * <code>.HomeRacingRecord racing_gallery_info = 467;</code>
+     * <code>.HomeRacingRecord racing_gallery_info = 835;</code>
      */
     emu.grasscutter.net.proto.HomeRacingRecordOuterClass.HomeRacingRecordOrBuilder getRacingGalleryInfoOrBuilder();
 
     /**
-     * <code>.HomeBalloonRecord balloon_gallery_info = 1410;</code>
+     * <code>.HomeBalloonRecord balloon_gallery_info = 726;</code>
      * @return Whether the balloonGalleryInfo field is set.
      */
     boolean hasBalloonGalleryInfo();
     /**
-     * <code>.HomeBalloonRecord balloon_gallery_info = 1410;</code>
+     * <code>.HomeBalloonRecord balloon_gallery_info = 726;</code>
      * @return The balloonGalleryInfo.
      */
     emu.grasscutter.net.proto.HomeBalloonRecordOuterClass.HomeBalloonRecord getBalloonGalleryInfo();
     /**
-     * <code>.HomeBalloonRecord balloon_gallery_info = 1410;</code>
+     * <code>.HomeBalloonRecord balloon_gallery_info = 726;</code>
      */
     emu.grasscutter.net.proto.HomeBalloonRecordOuterClass.HomeBalloonRecordOrBuilder getBalloonGalleryInfoOrBuilder();
 
     /**
-     * <code>.HomeStakeRecord stake_play_info = 347;</code>
+     * <code>.HomeStakeRecord stake_play_info = 1818;</code>
      * @return Whether the stakePlayInfo field is set.
      */
     boolean hasStakePlayInfo();
     /**
-     * <code>.HomeStakeRecord stake_play_info = 347;</code>
+     * <code>.HomeStakeRecord stake_play_info = 1818;</code>
      * @return The stakePlayInfo.
      */
     emu.grasscutter.net.proto.HomeStakeRecordOuterClass.HomeStakeRecord getStakePlayInfo();
     /**
-     * <code>.HomeStakeRecord stake_play_info = 347;</code>
+     * <code>.HomeStakeRecord stake_play_info = 1818;</code>
      */
     emu.grasscutter.net.proto.HomeStakeRecordOuterClass.HomeStakeRecordOrBuilder getStakePlayInfoOrBuilder();
 
     /**
-     * <code>.SeekFurnitureGalleryInfo seek_furniture_gallery_info = 1822;</code>
+     * <code>.HomeSeekFurnitureAllRecord seek_furniture_gallery_info = 370;</code>
      * @return Whether the seekFurnitureGalleryInfo field is set.
      */
     boolean hasSeekFurnitureGalleryInfo();
     /**
-     * <code>.SeekFurnitureGalleryInfo seek_furniture_gallery_info = 1822;</code>
+     * <code>.HomeSeekFurnitureAllRecord seek_furniture_gallery_info = 370;</code>
      * @return The seekFurnitureGalleryInfo.
      */
-    emu.grasscutter.net.proto.SeekFurnitureGalleryInfoOuterClass.SeekFurnitureGalleryInfo getSeekFurnitureGalleryInfo();
+    emu.grasscutter.net.proto.HomeSeekFurnitureAllRecordOuterClass.HomeSeekFurnitureAllRecord getSeekFurnitureGalleryInfo();
     /**
-     * <code>.SeekFurnitureGalleryInfo seek_furniture_gallery_info = 1822;</code>
+     * <code>.HomeSeekFurnitureAllRecord seek_furniture_gallery_info = 370;</code>
      */
-    emu.grasscutter.net.proto.SeekFurnitureGalleryInfoOuterClass.SeekFurnitureGalleryInfoOrBuilder getSeekFurnitureGalleryInfoOrBuilder();
+    emu.grasscutter.net.proto.HomeSeekFurnitureAllRecordOuterClass.HomeSeekFurnitureAllRecordOrBuilder getSeekFurnitureGalleryInfoOrBuilder();
 
     public emu.grasscutter.net.proto.HomeGroupRecordOuterClass.HomeGroupRecord.DetailCase getDetailCase();
   }
@@ -131,42 +131,28 @@ public final class HomeGroupRecordOuterClass {
             case 0:
               done = true;
               break;
-            case 40: {
+            case 120: {
 
               groupId_ = input.readUInt32();
               break;
             }
-            case 2778: {
-              emu.grasscutter.net.proto.HomeStakeRecordOuterClass.HomeStakeRecord.Builder subBuilder = null;
-              if (detailCase_ == 347) {
-                subBuilder = ((emu.grasscutter.net.proto.HomeStakeRecordOuterClass.HomeStakeRecord) detail_).toBuilder();
+            case 2962: {
+              emu.grasscutter.net.proto.HomeSeekFurnitureAllRecordOuterClass.HomeSeekFurnitureAllRecord.Builder subBuilder = null;
+              if (detailCase_ == 370) {
+                subBuilder = ((emu.grasscutter.net.proto.HomeSeekFurnitureAllRecordOuterClass.HomeSeekFurnitureAllRecord) detail_).toBuilder();
               }
               detail_ =
-                  input.readMessage(emu.grasscutter.net.proto.HomeStakeRecordOuterClass.HomeStakeRecord.parser(), extensionRegistry);
+                  input.readMessage(emu.grasscutter.net.proto.HomeSeekFurnitureAllRecordOuterClass.HomeSeekFurnitureAllRecord.parser(), extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom((emu.grasscutter.net.proto.HomeStakeRecordOuterClass.HomeStakeRecord) detail_);
+                subBuilder.mergeFrom((emu.grasscutter.net.proto.HomeSeekFurnitureAllRecordOuterClass.HomeSeekFurnitureAllRecord) detail_);
                 detail_ = subBuilder.buildPartial();
               }
-              detailCase_ = 347;
+              detailCase_ = 370;
               break;
             }
-            case 3738: {
-              emu.grasscutter.net.proto.HomeRacingRecordOuterClass.HomeRacingRecord.Builder subBuilder = null;
-              if (detailCase_ == 467) {
-                subBuilder = ((emu.grasscutter.net.proto.HomeRacingRecordOuterClass.HomeRacingRecord) detail_).toBuilder();
-              }
-              detail_ =
-                  input.readMessage(emu.grasscutter.net.proto.HomeRacingRecordOuterClass.HomeRacingRecord.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom((emu.grasscutter.net.proto.HomeRacingRecordOuterClass.HomeRacingRecord) detail_);
-                detail_ = subBuilder.buildPartial();
-              }
-              detailCase_ = 467;
-              break;
-            }
-            case 11282: {
+            case 5810: {
               emu.grasscutter.net.proto.HomeBalloonRecordOuterClass.HomeBalloonRecord.Builder subBuilder = null;
-              if (detailCase_ == 1410) {
+              if (detailCase_ == 726) {
                 subBuilder = ((emu.grasscutter.net.proto.HomeBalloonRecordOuterClass.HomeBalloonRecord) detail_).toBuilder();
               }
               detail_ =
@@ -175,21 +161,35 @@ public final class HomeGroupRecordOuterClass {
                 subBuilder.mergeFrom((emu.grasscutter.net.proto.HomeBalloonRecordOuterClass.HomeBalloonRecord) detail_);
                 detail_ = subBuilder.buildPartial();
               }
-              detailCase_ = 1410;
+              detailCase_ = 726;
               break;
             }
-            case 14578: {
-              emu.grasscutter.net.proto.SeekFurnitureGalleryInfoOuterClass.SeekFurnitureGalleryInfo.Builder subBuilder = null;
-              if (detailCase_ == 1822) {
-                subBuilder = ((emu.grasscutter.net.proto.SeekFurnitureGalleryInfoOuterClass.SeekFurnitureGalleryInfo) detail_).toBuilder();
+            case 6682: {
+              emu.grasscutter.net.proto.HomeRacingRecordOuterClass.HomeRacingRecord.Builder subBuilder = null;
+              if (detailCase_ == 835) {
+                subBuilder = ((emu.grasscutter.net.proto.HomeRacingRecordOuterClass.HomeRacingRecord) detail_).toBuilder();
               }
               detail_ =
-                  input.readMessage(emu.grasscutter.net.proto.SeekFurnitureGalleryInfoOuterClass.SeekFurnitureGalleryInfo.parser(), extensionRegistry);
+                  input.readMessage(emu.grasscutter.net.proto.HomeRacingRecordOuterClass.HomeRacingRecord.parser(), extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom((emu.grasscutter.net.proto.SeekFurnitureGalleryInfoOuterClass.SeekFurnitureGalleryInfo) detail_);
+                subBuilder.mergeFrom((emu.grasscutter.net.proto.HomeRacingRecordOuterClass.HomeRacingRecord) detail_);
                 detail_ = subBuilder.buildPartial();
               }
-              detailCase_ = 1822;
+              detailCase_ = 835;
+              break;
+            }
+            case 14546: {
+              emu.grasscutter.net.proto.HomeStakeRecordOuterClass.HomeStakeRecord.Builder subBuilder = null;
+              if (detailCase_ == 1818) {
+                subBuilder = ((emu.grasscutter.net.proto.HomeStakeRecordOuterClass.HomeStakeRecord) detail_).toBuilder();
+              }
+              detail_ =
+                  input.readMessage(emu.grasscutter.net.proto.HomeStakeRecordOuterClass.HomeStakeRecord.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom((emu.grasscutter.net.proto.HomeStakeRecordOuterClass.HomeStakeRecord) detail_);
+                detail_ = subBuilder.buildPartial();
+              }
+              detailCase_ = 1818;
               break;
             }
             default: {
@@ -229,10 +229,10 @@ public final class HomeGroupRecordOuterClass {
     public enum DetailCase
         implements com.google.protobuf.Internal.EnumLite,
             com.google.protobuf.AbstractMessage.InternalOneOfEnum {
-      RACING_GALLERY_INFO(467),
-      BALLOON_GALLERY_INFO(1410),
-      STAKE_PLAY_INFO(347),
-      SEEK_FURNITURE_GALLERY_INFO(1822),
+      RACING_GALLERY_INFO(835),
+      BALLOON_GALLERY_INFO(726),
+      STAKE_PLAY_INFO(1818),
+      SEEK_FURNITURE_GALLERY_INFO(370),
       DETAIL_NOT_SET(0);
       private final int value;
       private DetailCase(int value) {
@@ -250,10 +250,10 @@ public final class HomeGroupRecordOuterClass {
 
       public static DetailCase forNumber(int value) {
         switch (value) {
-          case 467: return RACING_GALLERY_INFO;
-          case 1410: return BALLOON_GALLERY_INFO;
-          case 347: return STAKE_PLAY_INFO;
-          case 1822: return SEEK_FURNITURE_GALLERY_INFO;
+          case 835: return RACING_GALLERY_INFO;
+          case 726: return BALLOON_GALLERY_INFO;
+          case 1818: return STAKE_PLAY_INFO;
+          case 370: return SEEK_FURNITURE_GALLERY_INFO;
           case 0: return DETAIL_NOT_SET;
           default: return null;
         }
@@ -269,10 +269,10 @@ public final class HomeGroupRecordOuterClass {
           detailCase_);
     }
 
-    public static final int GROUP_ID_FIELD_NUMBER = 5;
+    public static final int GROUP_ID_FIELD_NUMBER = 15;
     private int groupId_;
     /**
-     * <code>uint32 group_id = 5;</code>
+     * <code>uint32 group_id = 15;</code>
      * @return The groupId.
      */
     @java.lang.Override
@@ -280,128 +280,128 @@ public final class HomeGroupRecordOuterClass {
       return groupId_;
     }
 
-    public static final int RACING_GALLERY_INFO_FIELD_NUMBER = 467;
+    public static final int RACING_GALLERY_INFO_FIELD_NUMBER = 835;
     /**
-     * <code>.HomeRacingRecord racing_gallery_info = 467;</code>
+     * <code>.HomeRacingRecord racing_gallery_info = 835;</code>
      * @return Whether the racingGalleryInfo field is set.
      */
     @java.lang.Override
     public boolean hasRacingGalleryInfo() {
-      return detailCase_ == 467;
+      return detailCase_ == 835;
     }
     /**
-     * <code>.HomeRacingRecord racing_gallery_info = 467;</code>
+     * <code>.HomeRacingRecord racing_gallery_info = 835;</code>
      * @return The racingGalleryInfo.
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.HomeRacingRecordOuterClass.HomeRacingRecord getRacingGalleryInfo() {
-      if (detailCase_ == 467) {
+      if (detailCase_ == 835) {
          return (emu.grasscutter.net.proto.HomeRacingRecordOuterClass.HomeRacingRecord) detail_;
       }
       return emu.grasscutter.net.proto.HomeRacingRecordOuterClass.HomeRacingRecord.getDefaultInstance();
     }
     /**
-     * <code>.HomeRacingRecord racing_gallery_info = 467;</code>
+     * <code>.HomeRacingRecord racing_gallery_info = 835;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.HomeRacingRecordOuterClass.HomeRacingRecordOrBuilder getRacingGalleryInfoOrBuilder() {
-      if (detailCase_ == 467) {
+      if (detailCase_ == 835) {
          return (emu.grasscutter.net.proto.HomeRacingRecordOuterClass.HomeRacingRecord) detail_;
       }
       return emu.grasscutter.net.proto.HomeRacingRecordOuterClass.HomeRacingRecord.getDefaultInstance();
     }
 
-    public static final int BALLOON_GALLERY_INFO_FIELD_NUMBER = 1410;
+    public static final int BALLOON_GALLERY_INFO_FIELD_NUMBER = 726;
     /**
-     * <code>.HomeBalloonRecord balloon_gallery_info = 1410;</code>
+     * <code>.HomeBalloonRecord balloon_gallery_info = 726;</code>
      * @return Whether the balloonGalleryInfo field is set.
      */
     @java.lang.Override
     public boolean hasBalloonGalleryInfo() {
-      return detailCase_ == 1410;
+      return detailCase_ == 726;
     }
     /**
-     * <code>.HomeBalloonRecord balloon_gallery_info = 1410;</code>
+     * <code>.HomeBalloonRecord balloon_gallery_info = 726;</code>
      * @return The balloonGalleryInfo.
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.HomeBalloonRecordOuterClass.HomeBalloonRecord getBalloonGalleryInfo() {
-      if (detailCase_ == 1410) {
+      if (detailCase_ == 726) {
          return (emu.grasscutter.net.proto.HomeBalloonRecordOuterClass.HomeBalloonRecord) detail_;
       }
       return emu.grasscutter.net.proto.HomeBalloonRecordOuterClass.HomeBalloonRecord.getDefaultInstance();
     }
     /**
-     * <code>.HomeBalloonRecord balloon_gallery_info = 1410;</code>
+     * <code>.HomeBalloonRecord balloon_gallery_info = 726;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.HomeBalloonRecordOuterClass.HomeBalloonRecordOrBuilder getBalloonGalleryInfoOrBuilder() {
-      if (detailCase_ == 1410) {
+      if (detailCase_ == 726) {
          return (emu.grasscutter.net.proto.HomeBalloonRecordOuterClass.HomeBalloonRecord) detail_;
       }
       return emu.grasscutter.net.proto.HomeBalloonRecordOuterClass.HomeBalloonRecord.getDefaultInstance();
     }
 
-    public static final int STAKE_PLAY_INFO_FIELD_NUMBER = 347;
+    public static final int STAKE_PLAY_INFO_FIELD_NUMBER = 1818;
     /**
-     * <code>.HomeStakeRecord stake_play_info = 347;</code>
+     * <code>.HomeStakeRecord stake_play_info = 1818;</code>
      * @return Whether the stakePlayInfo field is set.
      */
     @java.lang.Override
     public boolean hasStakePlayInfo() {
-      return detailCase_ == 347;
+      return detailCase_ == 1818;
     }
     /**
-     * <code>.HomeStakeRecord stake_play_info = 347;</code>
+     * <code>.HomeStakeRecord stake_play_info = 1818;</code>
      * @return The stakePlayInfo.
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.HomeStakeRecordOuterClass.HomeStakeRecord getStakePlayInfo() {
-      if (detailCase_ == 347) {
+      if (detailCase_ == 1818) {
          return (emu.grasscutter.net.proto.HomeStakeRecordOuterClass.HomeStakeRecord) detail_;
       }
       return emu.grasscutter.net.proto.HomeStakeRecordOuterClass.HomeStakeRecord.getDefaultInstance();
     }
     /**
-     * <code>.HomeStakeRecord stake_play_info = 347;</code>
+     * <code>.HomeStakeRecord stake_play_info = 1818;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.HomeStakeRecordOuterClass.HomeStakeRecordOrBuilder getStakePlayInfoOrBuilder() {
-      if (detailCase_ == 347) {
+      if (detailCase_ == 1818) {
          return (emu.grasscutter.net.proto.HomeStakeRecordOuterClass.HomeStakeRecord) detail_;
       }
       return emu.grasscutter.net.proto.HomeStakeRecordOuterClass.HomeStakeRecord.getDefaultInstance();
     }
 
-    public static final int SEEK_FURNITURE_GALLERY_INFO_FIELD_NUMBER = 1822;
+    public static final int SEEK_FURNITURE_GALLERY_INFO_FIELD_NUMBER = 370;
     /**
-     * <code>.SeekFurnitureGalleryInfo seek_furniture_gallery_info = 1822;</code>
+     * <code>.HomeSeekFurnitureAllRecord seek_furniture_gallery_info = 370;</code>
      * @return Whether the seekFurnitureGalleryInfo field is set.
      */
     @java.lang.Override
     public boolean hasSeekFurnitureGalleryInfo() {
-      return detailCase_ == 1822;
+      return detailCase_ == 370;
     }
     /**
-     * <code>.SeekFurnitureGalleryInfo seek_furniture_gallery_info = 1822;</code>
+     * <code>.HomeSeekFurnitureAllRecord seek_furniture_gallery_info = 370;</code>
      * @return The seekFurnitureGalleryInfo.
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.SeekFurnitureGalleryInfoOuterClass.SeekFurnitureGalleryInfo getSeekFurnitureGalleryInfo() {
-      if (detailCase_ == 1822) {
-         return (emu.grasscutter.net.proto.SeekFurnitureGalleryInfoOuterClass.SeekFurnitureGalleryInfo) detail_;
+    public emu.grasscutter.net.proto.HomeSeekFurnitureAllRecordOuterClass.HomeSeekFurnitureAllRecord getSeekFurnitureGalleryInfo() {
+      if (detailCase_ == 370) {
+         return (emu.grasscutter.net.proto.HomeSeekFurnitureAllRecordOuterClass.HomeSeekFurnitureAllRecord) detail_;
       }
-      return emu.grasscutter.net.proto.SeekFurnitureGalleryInfoOuterClass.SeekFurnitureGalleryInfo.getDefaultInstance();
+      return emu.grasscutter.net.proto.HomeSeekFurnitureAllRecordOuterClass.HomeSeekFurnitureAllRecord.getDefaultInstance();
     }
     /**
-     * <code>.SeekFurnitureGalleryInfo seek_furniture_gallery_info = 1822;</code>
+     * <code>.HomeSeekFurnitureAllRecord seek_furniture_gallery_info = 370;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.SeekFurnitureGalleryInfoOuterClass.SeekFurnitureGalleryInfoOrBuilder getSeekFurnitureGalleryInfoOrBuilder() {
-      if (detailCase_ == 1822) {
-         return (emu.grasscutter.net.proto.SeekFurnitureGalleryInfoOuterClass.SeekFurnitureGalleryInfo) detail_;
+    public emu.grasscutter.net.proto.HomeSeekFurnitureAllRecordOuterClass.HomeSeekFurnitureAllRecordOrBuilder getSeekFurnitureGalleryInfoOrBuilder() {
+      if (detailCase_ == 370) {
+         return (emu.grasscutter.net.proto.HomeSeekFurnitureAllRecordOuterClass.HomeSeekFurnitureAllRecord) detail_;
       }
-      return emu.grasscutter.net.proto.SeekFurnitureGalleryInfoOuterClass.SeekFurnitureGalleryInfo.getDefaultInstance();
+      return emu.grasscutter.net.proto.HomeSeekFurnitureAllRecordOuterClass.HomeSeekFurnitureAllRecord.getDefaultInstance();
     }
 
     private byte memoizedIsInitialized = -1;
@@ -419,19 +419,19 @@ public final class HomeGroupRecordOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (groupId_ != 0) {
-        output.writeUInt32(5, groupId_);
+        output.writeUInt32(15, groupId_);
       }
-      if (detailCase_ == 347) {
-        output.writeMessage(347, (emu.grasscutter.net.proto.HomeStakeRecordOuterClass.HomeStakeRecord) detail_);
+      if (detailCase_ == 370) {
+        output.writeMessage(370, (emu.grasscutter.net.proto.HomeSeekFurnitureAllRecordOuterClass.HomeSeekFurnitureAllRecord) detail_);
       }
-      if (detailCase_ == 467) {
-        output.writeMessage(467, (emu.grasscutter.net.proto.HomeRacingRecordOuterClass.HomeRacingRecord) detail_);
+      if (detailCase_ == 726) {
+        output.writeMessage(726, (emu.grasscutter.net.proto.HomeBalloonRecordOuterClass.HomeBalloonRecord) detail_);
       }
-      if (detailCase_ == 1410) {
-        output.writeMessage(1410, (emu.grasscutter.net.proto.HomeBalloonRecordOuterClass.HomeBalloonRecord) detail_);
+      if (detailCase_ == 835) {
+        output.writeMessage(835, (emu.grasscutter.net.proto.HomeRacingRecordOuterClass.HomeRacingRecord) detail_);
       }
-      if (detailCase_ == 1822) {
-        output.writeMessage(1822, (emu.grasscutter.net.proto.SeekFurnitureGalleryInfoOuterClass.SeekFurnitureGalleryInfo) detail_);
+      if (detailCase_ == 1818) {
+        output.writeMessage(1818, (emu.grasscutter.net.proto.HomeStakeRecordOuterClass.HomeStakeRecord) detail_);
       }
       unknownFields.writeTo(output);
     }
@@ -444,23 +444,23 @@ public final class HomeGroupRecordOuterClass {
       size = 0;
       if (groupId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, groupId_);
+          .computeUInt32Size(15, groupId_);
       }
-      if (detailCase_ == 347) {
+      if (detailCase_ == 370) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(347, (emu.grasscutter.net.proto.HomeStakeRecordOuterClass.HomeStakeRecord) detail_);
+          .computeMessageSize(370, (emu.grasscutter.net.proto.HomeSeekFurnitureAllRecordOuterClass.HomeSeekFurnitureAllRecord) detail_);
       }
-      if (detailCase_ == 467) {
+      if (detailCase_ == 726) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(467, (emu.grasscutter.net.proto.HomeRacingRecordOuterClass.HomeRacingRecord) detail_);
+          .computeMessageSize(726, (emu.grasscutter.net.proto.HomeBalloonRecordOuterClass.HomeBalloonRecord) detail_);
       }
-      if (detailCase_ == 1410) {
+      if (detailCase_ == 835) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(1410, (emu.grasscutter.net.proto.HomeBalloonRecordOuterClass.HomeBalloonRecord) detail_);
+          .computeMessageSize(835, (emu.grasscutter.net.proto.HomeRacingRecordOuterClass.HomeRacingRecord) detail_);
       }
-      if (detailCase_ == 1822) {
+      if (detailCase_ == 1818) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(1822, (emu.grasscutter.net.proto.SeekFurnitureGalleryInfoOuterClass.SeekFurnitureGalleryInfo) detail_);
+          .computeMessageSize(1818, (emu.grasscutter.net.proto.HomeStakeRecordOuterClass.HomeStakeRecord) detail_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -481,19 +481,19 @@ public final class HomeGroupRecordOuterClass {
           != other.getGroupId()) return false;
       if (!getDetailCase().equals(other.getDetailCase())) return false;
       switch (detailCase_) {
-        case 467:
+        case 835:
           if (!getRacingGalleryInfo()
               .equals(other.getRacingGalleryInfo())) return false;
           break;
-        case 1410:
+        case 726:
           if (!getBalloonGalleryInfo()
               .equals(other.getBalloonGalleryInfo())) return false;
           break;
-        case 347:
+        case 1818:
           if (!getStakePlayInfo()
               .equals(other.getStakePlayInfo())) return false;
           break;
-        case 1822:
+        case 370:
           if (!getSeekFurnitureGalleryInfo()
               .equals(other.getSeekFurnitureGalleryInfo())) return false;
           break;
@@ -514,19 +514,19 @@ public final class HomeGroupRecordOuterClass {
       hash = (37 * hash) + GROUP_ID_FIELD_NUMBER;
       hash = (53 * hash) + getGroupId();
       switch (detailCase_) {
-        case 467:
+        case 835:
           hash = (37 * hash) + RACING_GALLERY_INFO_FIELD_NUMBER;
           hash = (53 * hash) + getRacingGalleryInfo().hashCode();
           break;
-        case 1410:
+        case 726:
           hash = (37 * hash) + BALLOON_GALLERY_INFO_FIELD_NUMBER;
           hash = (53 * hash) + getBalloonGalleryInfo().hashCode();
           break;
-        case 347:
+        case 1818:
           hash = (37 * hash) + STAKE_PLAY_INFO_FIELD_NUMBER;
           hash = (53 * hash) + getStakePlayInfo().hashCode();
           break;
-        case 1822:
+        case 370:
           hash = (37 * hash) + SEEK_FURNITURE_GALLERY_INFO_FIELD_NUMBER;
           hash = (53 * hash) + getSeekFurnitureGalleryInfo().hashCode();
           break;
@@ -697,28 +697,28 @@ public final class HomeGroupRecordOuterClass {
       public emu.grasscutter.net.proto.HomeGroupRecordOuterClass.HomeGroupRecord buildPartial() {
         emu.grasscutter.net.proto.HomeGroupRecordOuterClass.HomeGroupRecord result = new emu.grasscutter.net.proto.HomeGroupRecordOuterClass.HomeGroupRecord(this);
         result.groupId_ = groupId_;
-        if (detailCase_ == 467) {
+        if (detailCase_ == 835) {
           if (racingGalleryInfoBuilder_ == null) {
             result.detail_ = detail_;
           } else {
             result.detail_ = racingGalleryInfoBuilder_.build();
           }
         }
-        if (detailCase_ == 1410) {
+        if (detailCase_ == 726) {
           if (balloonGalleryInfoBuilder_ == null) {
             result.detail_ = detail_;
           } else {
             result.detail_ = balloonGalleryInfoBuilder_.build();
           }
         }
-        if (detailCase_ == 347) {
+        if (detailCase_ == 1818) {
           if (stakePlayInfoBuilder_ == null) {
             result.detail_ = detail_;
           } else {
             result.detail_ = stakePlayInfoBuilder_.build();
           }
         }
-        if (detailCase_ == 1822) {
+        if (detailCase_ == 370) {
           if (seekFurnitureGalleryInfoBuilder_ == null) {
             result.detail_ = detail_;
           } else {
@@ -844,7 +844,7 @@ public final class HomeGroupRecordOuterClass {
 
       private int groupId_ ;
       /**
-       * <code>uint32 group_id = 5;</code>
+       * <code>uint32 group_id = 15;</code>
        * @return The groupId.
        */
       @java.lang.Override
@@ -852,7 +852,7 @@ public final class HomeGroupRecordOuterClass {
         return groupId_;
       }
       /**
-       * <code>uint32 group_id = 5;</code>
+       * <code>uint32 group_id = 15;</code>
        * @param value The groupId to set.
        * @return This builder for chaining.
        */
@@ -863,7 +863,7 @@ public final class HomeGroupRecordOuterClass {
         return this;
       }
       /**
-       * <code>uint32 group_id = 5;</code>
+       * <code>uint32 group_id = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearGroupId() {
@@ -876,33 +876,33 @@ public final class HomeGroupRecordOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.HomeRacingRecordOuterClass.HomeRacingRecord, emu.grasscutter.net.proto.HomeRacingRecordOuterClass.HomeRacingRecord.Builder, emu.grasscutter.net.proto.HomeRacingRecordOuterClass.HomeRacingRecordOrBuilder> racingGalleryInfoBuilder_;
       /**
-       * <code>.HomeRacingRecord racing_gallery_info = 467;</code>
+       * <code>.HomeRacingRecord racing_gallery_info = 835;</code>
        * @return Whether the racingGalleryInfo field is set.
        */
       @java.lang.Override
       public boolean hasRacingGalleryInfo() {
-        return detailCase_ == 467;
+        return detailCase_ == 835;
       }
       /**
-       * <code>.HomeRacingRecord racing_gallery_info = 467;</code>
+       * <code>.HomeRacingRecord racing_gallery_info = 835;</code>
        * @return The racingGalleryInfo.
        */
       @java.lang.Override
       public emu.grasscutter.net.proto.HomeRacingRecordOuterClass.HomeRacingRecord getRacingGalleryInfo() {
         if (racingGalleryInfoBuilder_ == null) {
-          if (detailCase_ == 467) {
+          if (detailCase_ == 835) {
             return (emu.grasscutter.net.proto.HomeRacingRecordOuterClass.HomeRacingRecord) detail_;
           }
           return emu.grasscutter.net.proto.HomeRacingRecordOuterClass.HomeRacingRecord.getDefaultInstance();
         } else {
-          if (detailCase_ == 467) {
+          if (detailCase_ == 835) {
             return racingGalleryInfoBuilder_.getMessage();
           }
           return emu.grasscutter.net.proto.HomeRacingRecordOuterClass.HomeRacingRecord.getDefaultInstance();
         }
       }
       /**
-       * <code>.HomeRacingRecord racing_gallery_info = 467;</code>
+       * <code>.HomeRacingRecord racing_gallery_info = 835;</code>
        */
       public Builder setRacingGalleryInfo(emu.grasscutter.net.proto.HomeRacingRecordOuterClass.HomeRacingRecord value) {
         if (racingGalleryInfoBuilder_ == null) {
@@ -914,11 +914,11 @@ public final class HomeGroupRecordOuterClass {
         } else {
           racingGalleryInfoBuilder_.setMessage(value);
         }
-        detailCase_ = 467;
+        detailCase_ = 835;
         return this;
       }
       /**
-       * <code>.HomeRacingRecord racing_gallery_info = 467;</code>
+       * <code>.HomeRacingRecord racing_gallery_info = 835;</code>
        */
       public Builder setRacingGalleryInfo(
           emu.grasscutter.net.proto.HomeRacingRecordOuterClass.HomeRacingRecord.Builder builderForValue) {
@@ -928,15 +928,15 @@ public final class HomeGroupRecordOuterClass {
         } else {
           racingGalleryInfoBuilder_.setMessage(builderForValue.build());
         }
-        detailCase_ = 467;
+        detailCase_ = 835;
         return this;
       }
       /**
-       * <code>.HomeRacingRecord racing_gallery_info = 467;</code>
+       * <code>.HomeRacingRecord racing_gallery_info = 835;</code>
        */
       public Builder mergeRacingGalleryInfo(emu.grasscutter.net.proto.HomeRacingRecordOuterClass.HomeRacingRecord value) {
         if (racingGalleryInfoBuilder_ == null) {
-          if (detailCase_ == 467 &&
+          if (detailCase_ == 835 &&
               detail_ != emu.grasscutter.net.proto.HomeRacingRecordOuterClass.HomeRacingRecord.getDefaultInstance()) {
             detail_ = emu.grasscutter.net.proto.HomeRacingRecordOuterClass.HomeRacingRecord.newBuilder((emu.grasscutter.net.proto.HomeRacingRecordOuterClass.HomeRacingRecord) detail_)
                 .mergeFrom(value).buildPartial();
@@ -945,26 +945,26 @@ public final class HomeGroupRecordOuterClass {
           }
           onChanged();
         } else {
-          if (detailCase_ == 467) {
+          if (detailCase_ == 835) {
             racingGalleryInfoBuilder_.mergeFrom(value);
           }
           racingGalleryInfoBuilder_.setMessage(value);
         }
-        detailCase_ = 467;
+        detailCase_ = 835;
         return this;
       }
       /**
-       * <code>.HomeRacingRecord racing_gallery_info = 467;</code>
+       * <code>.HomeRacingRecord racing_gallery_info = 835;</code>
        */
       public Builder clearRacingGalleryInfo() {
         if (racingGalleryInfoBuilder_ == null) {
-          if (detailCase_ == 467) {
+          if (detailCase_ == 835) {
             detailCase_ = 0;
             detail_ = null;
             onChanged();
           }
         } else {
-          if (detailCase_ == 467) {
+          if (detailCase_ == 835) {
             detailCase_ = 0;
             detail_ = null;
           }
@@ -973,33 +973,33 @@ public final class HomeGroupRecordOuterClass {
         return this;
       }
       /**
-       * <code>.HomeRacingRecord racing_gallery_info = 467;</code>
+       * <code>.HomeRacingRecord racing_gallery_info = 835;</code>
        */
       public emu.grasscutter.net.proto.HomeRacingRecordOuterClass.HomeRacingRecord.Builder getRacingGalleryInfoBuilder() {
         return getRacingGalleryInfoFieldBuilder().getBuilder();
       }
       /**
-       * <code>.HomeRacingRecord racing_gallery_info = 467;</code>
+       * <code>.HomeRacingRecord racing_gallery_info = 835;</code>
        */
       @java.lang.Override
       public emu.grasscutter.net.proto.HomeRacingRecordOuterClass.HomeRacingRecordOrBuilder getRacingGalleryInfoOrBuilder() {
-        if ((detailCase_ == 467) && (racingGalleryInfoBuilder_ != null)) {
+        if ((detailCase_ == 835) && (racingGalleryInfoBuilder_ != null)) {
           return racingGalleryInfoBuilder_.getMessageOrBuilder();
         } else {
-          if (detailCase_ == 467) {
+          if (detailCase_ == 835) {
             return (emu.grasscutter.net.proto.HomeRacingRecordOuterClass.HomeRacingRecord) detail_;
           }
           return emu.grasscutter.net.proto.HomeRacingRecordOuterClass.HomeRacingRecord.getDefaultInstance();
         }
       }
       /**
-       * <code>.HomeRacingRecord racing_gallery_info = 467;</code>
+       * <code>.HomeRacingRecord racing_gallery_info = 835;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.HomeRacingRecordOuterClass.HomeRacingRecord, emu.grasscutter.net.proto.HomeRacingRecordOuterClass.HomeRacingRecord.Builder, emu.grasscutter.net.proto.HomeRacingRecordOuterClass.HomeRacingRecordOrBuilder> 
           getRacingGalleryInfoFieldBuilder() {
         if (racingGalleryInfoBuilder_ == null) {
-          if (!(detailCase_ == 467)) {
+          if (!(detailCase_ == 835)) {
             detail_ = emu.grasscutter.net.proto.HomeRacingRecordOuterClass.HomeRacingRecord.getDefaultInstance();
           }
           racingGalleryInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
@@ -1009,7 +1009,7 @@ public final class HomeGroupRecordOuterClass {
                   isClean());
           detail_ = null;
         }
-        detailCase_ = 467;
+        detailCase_ = 835;
         onChanged();;
         return racingGalleryInfoBuilder_;
       }
@@ -1017,33 +1017,33 @@ public final class HomeGroupRecordOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.HomeBalloonRecordOuterClass.HomeBalloonRecord, emu.grasscutter.net.proto.HomeBalloonRecordOuterClass.HomeBalloonRecord.Builder, emu.grasscutter.net.proto.HomeBalloonRecordOuterClass.HomeBalloonRecordOrBuilder> balloonGalleryInfoBuilder_;
       /**
-       * <code>.HomeBalloonRecord balloon_gallery_info = 1410;</code>
+       * <code>.HomeBalloonRecord balloon_gallery_info = 726;</code>
        * @return Whether the balloonGalleryInfo field is set.
        */
       @java.lang.Override
       public boolean hasBalloonGalleryInfo() {
-        return detailCase_ == 1410;
+        return detailCase_ == 726;
       }
       /**
-       * <code>.HomeBalloonRecord balloon_gallery_info = 1410;</code>
+       * <code>.HomeBalloonRecord balloon_gallery_info = 726;</code>
        * @return The balloonGalleryInfo.
        */
       @java.lang.Override
       public emu.grasscutter.net.proto.HomeBalloonRecordOuterClass.HomeBalloonRecord getBalloonGalleryInfo() {
         if (balloonGalleryInfoBuilder_ == null) {
-          if (detailCase_ == 1410) {
+          if (detailCase_ == 726) {
             return (emu.grasscutter.net.proto.HomeBalloonRecordOuterClass.HomeBalloonRecord) detail_;
           }
           return emu.grasscutter.net.proto.HomeBalloonRecordOuterClass.HomeBalloonRecord.getDefaultInstance();
         } else {
-          if (detailCase_ == 1410) {
+          if (detailCase_ == 726) {
             return balloonGalleryInfoBuilder_.getMessage();
           }
           return emu.grasscutter.net.proto.HomeBalloonRecordOuterClass.HomeBalloonRecord.getDefaultInstance();
         }
       }
       /**
-       * <code>.HomeBalloonRecord balloon_gallery_info = 1410;</code>
+       * <code>.HomeBalloonRecord balloon_gallery_info = 726;</code>
        */
       public Builder setBalloonGalleryInfo(emu.grasscutter.net.proto.HomeBalloonRecordOuterClass.HomeBalloonRecord value) {
         if (balloonGalleryInfoBuilder_ == null) {
@@ -1055,11 +1055,11 @@ public final class HomeGroupRecordOuterClass {
         } else {
           balloonGalleryInfoBuilder_.setMessage(value);
         }
-        detailCase_ = 1410;
+        detailCase_ = 726;
         return this;
       }
       /**
-       * <code>.HomeBalloonRecord balloon_gallery_info = 1410;</code>
+       * <code>.HomeBalloonRecord balloon_gallery_info = 726;</code>
        */
       public Builder setBalloonGalleryInfo(
           emu.grasscutter.net.proto.HomeBalloonRecordOuterClass.HomeBalloonRecord.Builder builderForValue) {
@@ -1069,15 +1069,15 @@ public final class HomeGroupRecordOuterClass {
         } else {
           balloonGalleryInfoBuilder_.setMessage(builderForValue.build());
         }
-        detailCase_ = 1410;
+        detailCase_ = 726;
         return this;
       }
       /**
-       * <code>.HomeBalloonRecord balloon_gallery_info = 1410;</code>
+       * <code>.HomeBalloonRecord balloon_gallery_info = 726;</code>
        */
       public Builder mergeBalloonGalleryInfo(emu.grasscutter.net.proto.HomeBalloonRecordOuterClass.HomeBalloonRecord value) {
         if (balloonGalleryInfoBuilder_ == null) {
-          if (detailCase_ == 1410 &&
+          if (detailCase_ == 726 &&
               detail_ != emu.grasscutter.net.proto.HomeBalloonRecordOuterClass.HomeBalloonRecord.getDefaultInstance()) {
             detail_ = emu.grasscutter.net.proto.HomeBalloonRecordOuterClass.HomeBalloonRecord.newBuilder((emu.grasscutter.net.proto.HomeBalloonRecordOuterClass.HomeBalloonRecord) detail_)
                 .mergeFrom(value).buildPartial();
@@ -1086,26 +1086,26 @@ public final class HomeGroupRecordOuterClass {
           }
           onChanged();
         } else {
-          if (detailCase_ == 1410) {
+          if (detailCase_ == 726) {
             balloonGalleryInfoBuilder_.mergeFrom(value);
           }
           balloonGalleryInfoBuilder_.setMessage(value);
         }
-        detailCase_ = 1410;
+        detailCase_ = 726;
         return this;
       }
       /**
-       * <code>.HomeBalloonRecord balloon_gallery_info = 1410;</code>
+       * <code>.HomeBalloonRecord balloon_gallery_info = 726;</code>
        */
       public Builder clearBalloonGalleryInfo() {
         if (balloonGalleryInfoBuilder_ == null) {
-          if (detailCase_ == 1410) {
+          if (detailCase_ == 726) {
             detailCase_ = 0;
             detail_ = null;
             onChanged();
           }
         } else {
-          if (detailCase_ == 1410) {
+          if (detailCase_ == 726) {
             detailCase_ = 0;
             detail_ = null;
           }
@@ -1114,33 +1114,33 @@ public final class HomeGroupRecordOuterClass {
         return this;
       }
       /**
-       * <code>.HomeBalloonRecord balloon_gallery_info = 1410;</code>
+       * <code>.HomeBalloonRecord balloon_gallery_info = 726;</code>
        */
       public emu.grasscutter.net.proto.HomeBalloonRecordOuterClass.HomeBalloonRecord.Builder getBalloonGalleryInfoBuilder() {
         return getBalloonGalleryInfoFieldBuilder().getBuilder();
       }
       /**
-       * <code>.HomeBalloonRecord balloon_gallery_info = 1410;</code>
+       * <code>.HomeBalloonRecord balloon_gallery_info = 726;</code>
        */
       @java.lang.Override
       public emu.grasscutter.net.proto.HomeBalloonRecordOuterClass.HomeBalloonRecordOrBuilder getBalloonGalleryInfoOrBuilder() {
-        if ((detailCase_ == 1410) && (balloonGalleryInfoBuilder_ != null)) {
+        if ((detailCase_ == 726) && (balloonGalleryInfoBuilder_ != null)) {
           return balloonGalleryInfoBuilder_.getMessageOrBuilder();
         } else {
-          if (detailCase_ == 1410) {
+          if (detailCase_ == 726) {
             return (emu.grasscutter.net.proto.HomeBalloonRecordOuterClass.HomeBalloonRecord) detail_;
           }
           return emu.grasscutter.net.proto.HomeBalloonRecordOuterClass.HomeBalloonRecord.getDefaultInstance();
         }
       }
       /**
-       * <code>.HomeBalloonRecord balloon_gallery_info = 1410;</code>
+       * <code>.HomeBalloonRecord balloon_gallery_info = 726;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.HomeBalloonRecordOuterClass.HomeBalloonRecord, emu.grasscutter.net.proto.HomeBalloonRecordOuterClass.HomeBalloonRecord.Builder, emu.grasscutter.net.proto.HomeBalloonRecordOuterClass.HomeBalloonRecordOrBuilder> 
           getBalloonGalleryInfoFieldBuilder() {
         if (balloonGalleryInfoBuilder_ == null) {
-          if (!(detailCase_ == 1410)) {
+          if (!(detailCase_ == 726)) {
             detail_ = emu.grasscutter.net.proto.HomeBalloonRecordOuterClass.HomeBalloonRecord.getDefaultInstance();
           }
           balloonGalleryInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
@@ -1150,7 +1150,7 @@ public final class HomeGroupRecordOuterClass {
                   isClean());
           detail_ = null;
         }
-        detailCase_ = 1410;
+        detailCase_ = 726;
         onChanged();;
         return balloonGalleryInfoBuilder_;
       }
@@ -1158,33 +1158,33 @@ public final class HomeGroupRecordOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.HomeStakeRecordOuterClass.HomeStakeRecord, emu.grasscutter.net.proto.HomeStakeRecordOuterClass.HomeStakeRecord.Builder, emu.grasscutter.net.proto.HomeStakeRecordOuterClass.HomeStakeRecordOrBuilder> stakePlayInfoBuilder_;
       /**
-       * <code>.HomeStakeRecord stake_play_info = 347;</code>
+       * <code>.HomeStakeRecord stake_play_info = 1818;</code>
        * @return Whether the stakePlayInfo field is set.
        */
       @java.lang.Override
       public boolean hasStakePlayInfo() {
-        return detailCase_ == 347;
+        return detailCase_ == 1818;
       }
       /**
-       * <code>.HomeStakeRecord stake_play_info = 347;</code>
+       * <code>.HomeStakeRecord stake_play_info = 1818;</code>
        * @return The stakePlayInfo.
        */
       @java.lang.Override
       public emu.grasscutter.net.proto.HomeStakeRecordOuterClass.HomeStakeRecord getStakePlayInfo() {
         if (stakePlayInfoBuilder_ == null) {
-          if (detailCase_ == 347) {
+          if (detailCase_ == 1818) {
             return (emu.grasscutter.net.proto.HomeStakeRecordOuterClass.HomeStakeRecord) detail_;
           }
           return emu.grasscutter.net.proto.HomeStakeRecordOuterClass.HomeStakeRecord.getDefaultInstance();
         } else {
-          if (detailCase_ == 347) {
+          if (detailCase_ == 1818) {
             return stakePlayInfoBuilder_.getMessage();
           }
           return emu.grasscutter.net.proto.HomeStakeRecordOuterClass.HomeStakeRecord.getDefaultInstance();
         }
       }
       /**
-       * <code>.HomeStakeRecord stake_play_info = 347;</code>
+       * <code>.HomeStakeRecord stake_play_info = 1818;</code>
        */
       public Builder setStakePlayInfo(emu.grasscutter.net.proto.HomeStakeRecordOuterClass.HomeStakeRecord value) {
         if (stakePlayInfoBuilder_ == null) {
@@ -1196,11 +1196,11 @@ public final class HomeGroupRecordOuterClass {
         } else {
           stakePlayInfoBuilder_.setMessage(value);
         }
-        detailCase_ = 347;
+        detailCase_ = 1818;
         return this;
       }
       /**
-       * <code>.HomeStakeRecord stake_play_info = 347;</code>
+       * <code>.HomeStakeRecord stake_play_info = 1818;</code>
        */
       public Builder setStakePlayInfo(
           emu.grasscutter.net.proto.HomeStakeRecordOuterClass.HomeStakeRecord.Builder builderForValue) {
@@ -1210,15 +1210,15 @@ public final class HomeGroupRecordOuterClass {
         } else {
           stakePlayInfoBuilder_.setMessage(builderForValue.build());
         }
-        detailCase_ = 347;
+        detailCase_ = 1818;
         return this;
       }
       /**
-       * <code>.HomeStakeRecord stake_play_info = 347;</code>
+       * <code>.HomeStakeRecord stake_play_info = 1818;</code>
        */
       public Builder mergeStakePlayInfo(emu.grasscutter.net.proto.HomeStakeRecordOuterClass.HomeStakeRecord value) {
         if (stakePlayInfoBuilder_ == null) {
-          if (detailCase_ == 347 &&
+          if (detailCase_ == 1818 &&
               detail_ != emu.grasscutter.net.proto.HomeStakeRecordOuterClass.HomeStakeRecord.getDefaultInstance()) {
             detail_ = emu.grasscutter.net.proto.HomeStakeRecordOuterClass.HomeStakeRecord.newBuilder((emu.grasscutter.net.proto.HomeStakeRecordOuterClass.HomeStakeRecord) detail_)
                 .mergeFrom(value).buildPartial();
@@ -1227,26 +1227,26 @@ public final class HomeGroupRecordOuterClass {
           }
           onChanged();
         } else {
-          if (detailCase_ == 347) {
+          if (detailCase_ == 1818) {
             stakePlayInfoBuilder_.mergeFrom(value);
           }
           stakePlayInfoBuilder_.setMessage(value);
         }
-        detailCase_ = 347;
+        detailCase_ = 1818;
         return this;
       }
       /**
-       * <code>.HomeStakeRecord stake_play_info = 347;</code>
+       * <code>.HomeStakeRecord stake_play_info = 1818;</code>
        */
       public Builder clearStakePlayInfo() {
         if (stakePlayInfoBuilder_ == null) {
-          if (detailCase_ == 347) {
+          if (detailCase_ == 1818) {
             detailCase_ = 0;
             detail_ = null;
             onChanged();
           }
         } else {
-          if (detailCase_ == 347) {
+          if (detailCase_ == 1818) {
             detailCase_ = 0;
             detail_ = null;
           }
@@ -1255,33 +1255,33 @@ public final class HomeGroupRecordOuterClass {
         return this;
       }
       /**
-       * <code>.HomeStakeRecord stake_play_info = 347;</code>
+       * <code>.HomeStakeRecord stake_play_info = 1818;</code>
        */
       public emu.grasscutter.net.proto.HomeStakeRecordOuterClass.HomeStakeRecord.Builder getStakePlayInfoBuilder() {
         return getStakePlayInfoFieldBuilder().getBuilder();
       }
       /**
-       * <code>.HomeStakeRecord stake_play_info = 347;</code>
+       * <code>.HomeStakeRecord stake_play_info = 1818;</code>
        */
       @java.lang.Override
       public emu.grasscutter.net.proto.HomeStakeRecordOuterClass.HomeStakeRecordOrBuilder getStakePlayInfoOrBuilder() {
-        if ((detailCase_ == 347) && (stakePlayInfoBuilder_ != null)) {
+        if ((detailCase_ == 1818) && (stakePlayInfoBuilder_ != null)) {
           return stakePlayInfoBuilder_.getMessageOrBuilder();
         } else {
-          if (detailCase_ == 347) {
+          if (detailCase_ == 1818) {
             return (emu.grasscutter.net.proto.HomeStakeRecordOuterClass.HomeStakeRecord) detail_;
           }
           return emu.grasscutter.net.proto.HomeStakeRecordOuterClass.HomeStakeRecord.getDefaultInstance();
         }
       }
       /**
-       * <code>.HomeStakeRecord stake_play_info = 347;</code>
+       * <code>.HomeStakeRecord stake_play_info = 1818;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.HomeStakeRecordOuterClass.HomeStakeRecord, emu.grasscutter.net.proto.HomeStakeRecordOuterClass.HomeStakeRecord.Builder, emu.grasscutter.net.proto.HomeStakeRecordOuterClass.HomeStakeRecordOrBuilder> 
           getStakePlayInfoFieldBuilder() {
         if (stakePlayInfoBuilder_ == null) {
-          if (!(detailCase_ == 347)) {
+          if (!(detailCase_ == 1818)) {
             detail_ = emu.grasscutter.net.proto.HomeStakeRecordOuterClass.HomeStakeRecord.getDefaultInstance();
           }
           stakePlayInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
@@ -1291,43 +1291,43 @@ public final class HomeGroupRecordOuterClass {
                   isClean());
           detail_ = null;
         }
-        detailCase_ = 347;
+        detailCase_ = 1818;
         onChanged();;
         return stakePlayInfoBuilder_;
       }
 
       private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.SeekFurnitureGalleryInfoOuterClass.SeekFurnitureGalleryInfo, emu.grasscutter.net.proto.SeekFurnitureGalleryInfoOuterClass.SeekFurnitureGalleryInfo.Builder, emu.grasscutter.net.proto.SeekFurnitureGalleryInfoOuterClass.SeekFurnitureGalleryInfoOrBuilder> seekFurnitureGalleryInfoBuilder_;
+          emu.grasscutter.net.proto.HomeSeekFurnitureAllRecordOuterClass.HomeSeekFurnitureAllRecord, emu.grasscutter.net.proto.HomeSeekFurnitureAllRecordOuterClass.HomeSeekFurnitureAllRecord.Builder, emu.grasscutter.net.proto.HomeSeekFurnitureAllRecordOuterClass.HomeSeekFurnitureAllRecordOrBuilder> seekFurnitureGalleryInfoBuilder_;
       /**
-       * <code>.SeekFurnitureGalleryInfo seek_furniture_gallery_info = 1822;</code>
+       * <code>.HomeSeekFurnitureAllRecord seek_furniture_gallery_info = 370;</code>
        * @return Whether the seekFurnitureGalleryInfo field is set.
        */
       @java.lang.Override
       public boolean hasSeekFurnitureGalleryInfo() {
-        return detailCase_ == 1822;
+        return detailCase_ == 370;
       }
       /**
-       * <code>.SeekFurnitureGalleryInfo seek_furniture_gallery_info = 1822;</code>
+       * <code>.HomeSeekFurnitureAllRecord seek_furniture_gallery_info = 370;</code>
        * @return The seekFurnitureGalleryInfo.
        */
       @java.lang.Override
-      public emu.grasscutter.net.proto.SeekFurnitureGalleryInfoOuterClass.SeekFurnitureGalleryInfo getSeekFurnitureGalleryInfo() {
+      public emu.grasscutter.net.proto.HomeSeekFurnitureAllRecordOuterClass.HomeSeekFurnitureAllRecord getSeekFurnitureGalleryInfo() {
         if (seekFurnitureGalleryInfoBuilder_ == null) {
-          if (detailCase_ == 1822) {
-            return (emu.grasscutter.net.proto.SeekFurnitureGalleryInfoOuterClass.SeekFurnitureGalleryInfo) detail_;
+          if (detailCase_ == 370) {
+            return (emu.grasscutter.net.proto.HomeSeekFurnitureAllRecordOuterClass.HomeSeekFurnitureAllRecord) detail_;
           }
-          return emu.grasscutter.net.proto.SeekFurnitureGalleryInfoOuterClass.SeekFurnitureGalleryInfo.getDefaultInstance();
+          return emu.grasscutter.net.proto.HomeSeekFurnitureAllRecordOuterClass.HomeSeekFurnitureAllRecord.getDefaultInstance();
         } else {
-          if (detailCase_ == 1822) {
+          if (detailCase_ == 370) {
             return seekFurnitureGalleryInfoBuilder_.getMessage();
           }
-          return emu.grasscutter.net.proto.SeekFurnitureGalleryInfoOuterClass.SeekFurnitureGalleryInfo.getDefaultInstance();
+          return emu.grasscutter.net.proto.HomeSeekFurnitureAllRecordOuterClass.HomeSeekFurnitureAllRecord.getDefaultInstance();
         }
       }
       /**
-       * <code>.SeekFurnitureGalleryInfo seek_furniture_gallery_info = 1822;</code>
+       * <code>.HomeSeekFurnitureAllRecord seek_furniture_gallery_info = 370;</code>
        */
-      public Builder setSeekFurnitureGalleryInfo(emu.grasscutter.net.proto.SeekFurnitureGalleryInfoOuterClass.SeekFurnitureGalleryInfo value) {
+      public Builder setSeekFurnitureGalleryInfo(emu.grasscutter.net.proto.HomeSeekFurnitureAllRecordOuterClass.HomeSeekFurnitureAllRecord value) {
         if (seekFurnitureGalleryInfoBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -1337,57 +1337,57 @@ public final class HomeGroupRecordOuterClass {
         } else {
           seekFurnitureGalleryInfoBuilder_.setMessage(value);
         }
-        detailCase_ = 1822;
+        detailCase_ = 370;
         return this;
       }
       /**
-       * <code>.SeekFurnitureGalleryInfo seek_furniture_gallery_info = 1822;</code>
+       * <code>.HomeSeekFurnitureAllRecord seek_furniture_gallery_info = 370;</code>
        */
       public Builder setSeekFurnitureGalleryInfo(
-          emu.grasscutter.net.proto.SeekFurnitureGalleryInfoOuterClass.SeekFurnitureGalleryInfo.Builder builderForValue) {
+          emu.grasscutter.net.proto.HomeSeekFurnitureAllRecordOuterClass.HomeSeekFurnitureAllRecord.Builder builderForValue) {
         if (seekFurnitureGalleryInfoBuilder_ == null) {
           detail_ = builderForValue.build();
           onChanged();
         } else {
           seekFurnitureGalleryInfoBuilder_.setMessage(builderForValue.build());
         }
-        detailCase_ = 1822;
+        detailCase_ = 370;
         return this;
       }
       /**
-       * <code>.SeekFurnitureGalleryInfo seek_furniture_gallery_info = 1822;</code>
+       * <code>.HomeSeekFurnitureAllRecord seek_furniture_gallery_info = 370;</code>
        */
-      public Builder mergeSeekFurnitureGalleryInfo(emu.grasscutter.net.proto.SeekFurnitureGalleryInfoOuterClass.SeekFurnitureGalleryInfo value) {
+      public Builder mergeSeekFurnitureGalleryInfo(emu.grasscutter.net.proto.HomeSeekFurnitureAllRecordOuterClass.HomeSeekFurnitureAllRecord value) {
         if (seekFurnitureGalleryInfoBuilder_ == null) {
-          if (detailCase_ == 1822 &&
-              detail_ != emu.grasscutter.net.proto.SeekFurnitureGalleryInfoOuterClass.SeekFurnitureGalleryInfo.getDefaultInstance()) {
-            detail_ = emu.grasscutter.net.proto.SeekFurnitureGalleryInfoOuterClass.SeekFurnitureGalleryInfo.newBuilder((emu.grasscutter.net.proto.SeekFurnitureGalleryInfoOuterClass.SeekFurnitureGalleryInfo) detail_)
+          if (detailCase_ == 370 &&
+              detail_ != emu.grasscutter.net.proto.HomeSeekFurnitureAllRecordOuterClass.HomeSeekFurnitureAllRecord.getDefaultInstance()) {
+            detail_ = emu.grasscutter.net.proto.HomeSeekFurnitureAllRecordOuterClass.HomeSeekFurnitureAllRecord.newBuilder((emu.grasscutter.net.proto.HomeSeekFurnitureAllRecordOuterClass.HomeSeekFurnitureAllRecord) detail_)
                 .mergeFrom(value).buildPartial();
           } else {
             detail_ = value;
           }
           onChanged();
         } else {
-          if (detailCase_ == 1822) {
+          if (detailCase_ == 370) {
             seekFurnitureGalleryInfoBuilder_.mergeFrom(value);
           }
           seekFurnitureGalleryInfoBuilder_.setMessage(value);
         }
-        detailCase_ = 1822;
+        detailCase_ = 370;
         return this;
       }
       /**
-       * <code>.SeekFurnitureGalleryInfo seek_furniture_gallery_info = 1822;</code>
+       * <code>.HomeSeekFurnitureAllRecord seek_furniture_gallery_info = 370;</code>
        */
       public Builder clearSeekFurnitureGalleryInfo() {
         if (seekFurnitureGalleryInfoBuilder_ == null) {
-          if (detailCase_ == 1822) {
+          if (detailCase_ == 370) {
             detailCase_ = 0;
             detail_ = null;
             onChanged();
           }
         } else {
-          if (detailCase_ == 1822) {
+          if (detailCase_ == 370) {
             detailCase_ = 0;
             detail_ = null;
           }
@@ -1396,43 +1396,43 @@ public final class HomeGroupRecordOuterClass {
         return this;
       }
       /**
-       * <code>.SeekFurnitureGalleryInfo seek_furniture_gallery_info = 1822;</code>
+       * <code>.HomeSeekFurnitureAllRecord seek_furniture_gallery_info = 370;</code>
        */
-      public emu.grasscutter.net.proto.SeekFurnitureGalleryInfoOuterClass.SeekFurnitureGalleryInfo.Builder getSeekFurnitureGalleryInfoBuilder() {
+      public emu.grasscutter.net.proto.HomeSeekFurnitureAllRecordOuterClass.HomeSeekFurnitureAllRecord.Builder getSeekFurnitureGalleryInfoBuilder() {
         return getSeekFurnitureGalleryInfoFieldBuilder().getBuilder();
       }
       /**
-       * <code>.SeekFurnitureGalleryInfo seek_furniture_gallery_info = 1822;</code>
+       * <code>.HomeSeekFurnitureAllRecord seek_furniture_gallery_info = 370;</code>
        */
       @java.lang.Override
-      public emu.grasscutter.net.proto.SeekFurnitureGalleryInfoOuterClass.SeekFurnitureGalleryInfoOrBuilder getSeekFurnitureGalleryInfoOrBuilder() {
-        if ((detailCase_ == 1822) && (seekFurnitureGalleryInfoBuilder_ != null)) {
+      public emu.grasscutter.net.proto.HomeSeekFurnitureAllRecordOuterClass.HomeSeekFurnitureAllRecordOrBuilder getSeekFurnitureGalleryInfoOrBuilder() {
+        if ((detailCase_ == 370) && (seekFurnitureGalleryInfoBuilder_ != null)) {
           return seekFurnitureGalleryInfoBuilder_.getMessageOrBuilder();
         } else {
-          if (detailCase_ == 1822) {
-            return (emu.grasscutter.net.proto.SeekFurnitureGalleryInfoOuterClass.SeekFurnitureGalleryInfo) detail_;
+          if (detailCase_ == 370) {
+            return (emu.grasscutter.net.proto.HomeSeekFurnitureAllRecordOuterClass.HomeSeekFurnitureAllRecord) detail_;
           }
-          return emu.grasscutter.net.proto.SeekFurnitureGalleryInfoOuterClass.SeekFurnitureGalleryInfo.getDefaultInstance();
+          return emu.grasscutter.net.proto.HomeSeekFurnitureAllRecordOuterClass.HomeSeekFurnitureAllRecord.getDefaultInstance();
         }
       }
       /**
-       * <code>.SeekFurnitureGalleryInfo seek_furniture_gallery_info = 1822;</code>
+       * <code>.HomeSeekFurnitureAllRecord seek_furniture_gallery_info = 370;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.SeekFurnitureGalleryInfoOuterClass.SeekFurnitureGalleryInfo, emu.grasscutter.net.proto.SeekFurnitureGalleryInfoOuterClass.SeekFurnitureGalleryInfo.Builder, emu.grasscutter.net.proto.SeekFurnitureGalleryInfoOuterClass.SeekFurnitureGalleryInfoOrBuilder> 
+          emu.grasscutter.net.proto.HomeSeekFurnitureAllRecordOuterClass.HomeSeekFurnitureAllRecord, emu.grasscutter.net.proto.HomeSeekFurnitureAllRecordOuterClass.HomeSeekFurnitureAllRecord.Builder, emu.grasscutter.net.proto.HomeSeekFurnitureAllRecordOuterClass.HomeSeekFurnitureAllRecordOrBuilder> 
           getSeekFurnitureGalleryInfoFieldBuilder() {
         if (seekFurnitureGalleryInfoBuilder_ == null) {
-          if (!(detailCase_ == 1822)) {
-            detail_ = emu.grasscutter.net.proto.SeekFurnitureGalleryInfoOuterClass.SeekFurnitureGalleryInfo.getDefaultInstance();
+          if (!(detailCase_ == 370)) {
+            detail_ = emu.grasscutter.net.proto.HomeSeekFurnitureAllRecordOuterClass.HomeSeekFurnitureAllRecord.getDefaultInstance();
           }
           seekFurnitureGalleryInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.SeekFurnitureGalleryInfoOuterClass.SeekFurnitureGalleryInfo, emu.grasscutter.net.proto.SeekFurnitureGalleryInfoOuterClass.SeekFurnitureGalleryInfo.Builder, emu.grasscutter.net.proto.SeekFurnitureGalleryInfoOuterClass.SeekFurnitureGalleryInfoOrBuilder>(
-                  (emu.grasscutter.net.proto.SeekFurnitureGalleryInfoOuterClass.SeekFurnitureGalleryInfo) detail_,
+              emu.grasscutter.net.proto.HomeSeekFurnitureAllRecordOuterClass.HomeSeekFurnitureAllRecord, emu.grasscutter.net.proto.HomeSeekFurnitureAllRecordOuterClass.HomeSeekFurnitureAllRecord.Builder, emu.grasscutter.net.proto.HomeSeekFurnitureAllRecordOuterClass.HomeSeekFurnitureAllRecordOrBuilder>(
+                  (emu.grasscutter.net.proto.HomeSeekFurnitureAllRecordOuterClass.HomeSeekFurnitureAllRecord) detail_,
                   getParentForChildren(),
                   isClean());
           detail_ = null;
         }
-        detailCase_ = 1822;
+        detailCase_ = 370;
         onChanged();;
         return seekFurnitureGalleryInfoBuilder_;
       }
@@ -1504,24 +1504,24 @@ public final class HomeGroupRecordOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\025HomeGroupRecord.proto\032\027HomeBalloonReco" +
-      "rd.proto\032\026HomeRacingRecord.proto\032\025HomeSt" +
-      "akeRecord.proto\032\036SeekFurnitureGalleryInf" +
-      "o.proto\"\206\002\n\017HomeGroupRecord\022\020\n\010group_id\030" +
-      "\005 \001(\r\0221\n\023racing_gallery_info\030\323\003 \001(\0132\021.Ho" +
-      "meRacingRecordH\000\0223\n\024balloon_gallery_info" +
-      "\030\202\013 \001(\0132\022.HomeBalloonRecordH\000\022,\n\017stake_p" +
-      "lay_info\030\333\002 \001(\0132\020.HomeStakeRecordH\000\022A\n\033s" +
-      "eek_furniture_gallery_info\030\236\016 \001(\0132\031.Seek" +
-      "FurnitureGalleryInfoH\000B\010\n\006detailB\033\n\031emu." +
-      "grasscutter.net.protob\006proto3"
+      "rd.proto\032\026HomeRacingRecord.proto\032 HomeSe" +
+      "ekFurnitureAllRecord.proto\032\025HomeStakeRec" +
+      "ord.proto\"\210\002\n\017HomeGroupRecord\022\020\n\010group_i" +
+      "d\030\017 \001(\r\0221\n\023racing_gallery_info\030\303\006 \001(\0132\021." +
+      "HomeRacingRecordH\000\0223\n\024balloon_gallery_in" +
+      "fo\030\326\005 \001(\0132\022.HomeBalloonRecordH\000\022,\n\017stake" +
+      "_play_info\030\232\016 \001(\0132\020.HomeStakeRecordH\000\022C\n" +
+      "\033seek_furniture_gallery_info\030\362\002 \001(\0132\033.Ho" +
+      "meSeekFurnitureAllRecordH\000B\010\n\006detailB\033\n\031" +
+      "emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
           emu.grasscutter.net.proto.HomeBalloonRecordOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.HomeRacingRecordOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.HomeSeekFurnitureAllRecordOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.HomeStakeRecordOuterClass.getDescriptor(),
-          emu.grasscutter.net.proto.SeekFurnitureGalleryInfoOuterClass.getDescriptor(),
         });
     internal_static_HomeGroupRecord_descriptor =
       getDescriptor().getMessageTypes().get(0);
@@ -1531,8 +1531,8 @@ public final class HomeGroupRecordOuterClass {
         new java.lang.String[] { "GroupId", "RacingGalleryInfo", "BalloonGalleryInfo", "StakePlayInfo", "SeekFurnitureGalleryInfo", "Detail", });
     emu.grasscutter.net.proto.HomeBalloonRecordOuterClass.getDescriptor();
     emu.grasscutter.net.proto.HomeRacingRecordOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.HomeSeekFurnitureAllRecordOuterClass.getDescriptor();
     emu.grasscutter.net.proto.HomeStakeRecordOuterClass.getDescriptor();
-    emu.grasscutter.net.proto.SeekFurnitureGalleryInfoOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

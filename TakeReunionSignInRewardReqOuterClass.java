@@ -19,23 +19,27 @@ public final class TakeReunionSignInRewardReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 reward_day = 12;</code>
+     * <code>uint32 reward_day = 1;</code>
      * @return The rewardDay.
      */
     int getRewardDay();
 
     /**
-     * <code>uint32 config_id = 14;</code>
+     * <code>uint32 config_id = 11;</code>
      * @return The configId.
      */
     int getConfigId();
   }
   /**
    * <pre>
-   * CmdId: 5079
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 5094;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code TakeReunionSignInRewardReq}
@@ -82,12 +86,12 @@ public final class TakeReunionSignInRewardReqOuterClass {
             case 0:
               done = true;
               break;
-            case 96: {
+            case 8: {
 
               rewardDay_ = input.readUInt32();
               break;
             }
-            case 112: {
+            case 88: {
 
               configId_ = input.readUInt32();
               break;
@@ -124,10 +128,10 @@ public final class TakeReunionSignInRewardReqOuterClass {
               emu.grasscutter.net.proto.TakeReunionSignInRewardReqOuterClass.TakeReunionSignInRewardReq.class, emu.grasscutter.net.proto.TakeReunionSignInRewardReqOuterClass.TakeReunionSignInRewardReq.Builder.class);
     }
 
-    public static final int REWARD_DAY_FIELD_NUMBER = 12;
+    public static final int REWARD_DAY_FIELD_NUMBER = 1;
     private int rewardDay_;
     /**
-     * <code>uint32 reward_day = 12;</code>
+     * <code>uint32 reward_day = 1;</code>
      * @return The rewardDay.
      */
     @java.lang.Override
@@ -135,10 +139,10 @@ public final class TakeReunionSignInRewardReqOuterClass {
       return rewardDay_;
     }
 
-    public static final int CONFIG_ID_FIELD_NUMBER = 14;
+    public static final int CONFIG_ID_FIELD_NUMBER = 11;
     private int configId_;
     /**
-     * <code>uint32 config_id = 14;</code>
+     * <code>uint32 config_id = 11;</code>
      * @return The configId.
      */
     @java.lang.Override
@@ -161,10 +165,10 @@ public final class TakeReunionSignInRewardReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (rewardDay_ != 0) {
-        output.writeUInt32(12, rewardDay_);
+        output.writeUInt32(1, rewardDay_);
       }
       if (configId_ != 0) {
-        output.writeUInt32(14, configId_);
+        output.writeUInt32(11, configId_);
       }
       unknownFields.writeTo(output);
     }
@@ -177,11 +181,11 @@ public final class TakeReunionSignInRewardReqOuterClass {
       size = 0;
       if (rewardDay_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, rewardDay_);
+          .computeUInt32Size(1, rewardDay_);
       }
       if (configId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, configId_);
+          .computeUInt32Size(11, configId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -314,10 +318,14 @@ public final class TakeReunionSignInRewardReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 5079
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 5094;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code TakeReunionSignInRewardReq}
@@ -474,7 +482,7 @@ public final class TakeReunionSignInRewardReqOuterClass {
 
       private int rewardDay_ ;
       /**
-       * <code>uint32 reward_day = 12;</code>
+       * <code>uint32 reward_day = 1;</code>
        * @return The rewardDay.
        */
       @java.lang.Override
@@ -482,7 +490,7 @@ public final class TakeReunionSignInRewardReqOuterClass {
         return rewardDay_;
       }
       /**
-       * <code>uint32 reward_day = 12;</code>
+       * <code>uint32 reward_day = 1;</code>
        * @param value The rewardDay to set.
        * @return This builder for chaining.
        */
@@ -493,7 +501,7 @@ public final class TakeReunionSignInRewardReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 reward_day = 12;</code>
+       * <code>uint32 reward_day = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearRewardDay() {
@@ -505,7 +513,7 @@ public final class TakeReunionSignInRewardReqOuterClass {
 
       private int configId_ ;
       /**
-       * <code>uint32 config_id = 14;</code>
+       * <code>uint32 config_id = 11;</code>
        * @return The configId.
        */
       @java.lang.Override
@@ -513,7 +521,7 @@ public final class TakeReunionSignInRewardReqOuterClass {
         return configId_;
       }
       /**
-       * <code>uint32 config_id = 14;</code>
+       * <code>uint32 config_id = 11;</code>
        * @param value The configId to set.
        * @return This builder for chaining.
        */
@@ -524,7 +532,7 @@ public final class TakeReunionSignInRewardReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 config_id = 14;</code>
+       * <code>uint32 config_id = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearConfigId() {
@@ -601,8 +609,8 @@ public final class TakeReunionSignInRewardReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n TakeReunionSignInRewardReq.proto\"C\n\032Ta" +
-      "keReunionSignInRewardReq\022\022\n\nreward_day\030\014" +
-      " \001(\r\022\021\n\tconfig_id\030\016 \001(\rB\033\n\031emu.grasscutt" +
+      "keReunionSignInRewardReq\022\022\n\nreward_day\030\001" +
+      " \001(\r\022\021\n\tconfig_id\030\013 \001(\rB\033\n\031emu.grasscutt" +
       "er.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

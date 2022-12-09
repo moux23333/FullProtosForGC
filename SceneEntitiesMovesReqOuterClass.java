@@ -19,35 +19,38 @@ public final class SceneEntitiesMovesReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .EntityMoveInfo entity_move_info_list = 14;</code>
+     * <code>repeated .EntityMoveInfo entity_move_info_list = 11;</code>
      */
     java.util.List<emu.grasscutter.net.proto.EntityMoveInfoOuterClass.EntityMoveInfo> 
         getEntityMoveInfoListList();
     /**
-     * <code>repeated .EntityMoveInfo entity_move_info_list = 14;</code>
+     * <code>repeated .EntityMoveInfo entity_move_info_list = 11;</code>
      */
     emu.grasscutter.net.proto.EntityMoveInfoOuterClass.EntityMoveInfo getEntityMoveInfoList(int index);
     /**
-     * <code>repeated .EntityMoveInfo entity_move_info_list = 14;</code>
+     * <code>repeated .EntityMoveInfo entity_move_info_list = 11;</code>
      */
     int getEntityMoveInfoListCount();
     /**
-     * <code>repeated .EntityMoveInfo entity_move_info_list = 14;</code>
+     * <code>repeated .EntityMoveInfo entity_move_info_list = 11;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.EntityMoveInfoOuterClass.EntityMoveInfoOrBuilder> 
         getEntityMoveInfoListOrBuilderList();
     /**
-     * <code>repeated .EntityMoveInfo entity_move_info_list = 14;</code>
+     * <code>repeated .EntityMoveInfo entity_move_info_list = 11;</code>
      */
     emu.grasscutter.net.proto.EntityMoveInfoOuterClass.EntityMoveInfoOrBuilder getEntityMoveInfoListOrBuilder(
         int index);
   }
   /**
    * <pre>
-   * CmdId: 279
-   * EnetChannelId: 1
-   * EnetIsReliable: false
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 292;
+   *   ENET_CHANNEL_ID = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code SceneEntitiesMovesReq}
@@ -96,7 +99,7 @@ public final class SceneEntitiesMovesReqOuterClass {
             case 0:
               done = true;
               break;
-            case 114: {
+            case 90: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 entityMoveInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.EntityMoveInfoOuterClass.EntityMoveInfo>();
                 mutable_bitField0_ |= 0x00000001;
@@ -140,17 +143,17 @@ public final class SceneEntitiesMovesReqOuterClass {
               emu.grasscutter.net.proto.SceneEntitiesMovesReqOuterClass.SceneEntitiesMovesReq.class, emu.grasscutter.net.proto.SceneEntitiesMovesReqOuterClass.SceneEntitiesMovesReq.Builder.class);
     }
 
-    public static final int ENTITY_MOVE_INFO_LIST_FIELD_NUMBER = 14;
+    public static final int ENTITY_MOVE_INFO_LIST_FIELD_NUMBER = 11;
     private java.util.List<emu.grasscutter.net.proto.EntityMoveInfoOuterClass.EntityMoveInfo> entityMoveInfoList_;
     /**
-     * <code>repeated .EntityMoveInfo entity_move_info_list = 14;</code>
+     * <code>repeated .EntityMoveInfo entity_move_info_list = 11;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.EntityMoveInfoOuterClass.EntityMoveInfo> getEntityMoveInfoListList() {
       return entityMoveInfoList_;
     }
     /**
-     * <code>repeated .EntityMoveInfo entity_move_info_list = 14;</code>
+     * <code>repeated .EntityMoveInfo entity_move_info_list = 11;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.EntityMoveInfoOuterClass.EntityMoveInfoOrBuilder> 
@@ -158,21 +161,21 @@ public final class SceneEntitiesMovesReqOuterClass {
       return entityMoveInfoList_;
     }
     /**
-     * <code>repeated .EntityMoveInfo entity_move_info_list = 14;</code>
+     * <code>repeated .EntityMoveInfo entity_move_info_list = 11;</code>
      */
     @java.lang.Override
     public int getEntityMoveInfoListCount() {
       return entityMoveInfoList_.size();
     }
     /**
-     * <code>repeated .EntityMoveInfo entity_move_info_list = 14;</code>
+     * <code>repeated .EntityMoveInfo entity_move_info_list = 11;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.EntityMoveInfoOuterClass.EntityMoveInfo getEntityMoveInfoList(int index) {
       return entityMoveInfoList_.get(index);
     }
     /**
-     * <code>repeated .EntityMoveInfo entity_move_info_list = 14;</code>
+     * <code>repeated .EntityMoveInfo entity_move_info_list = 11;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.EntityMoveInfoOuterClass.EntityMoveInfoOrBuilder getEntityMoveInfoListOrBuilder(
@@ -195,7 +198,7 @@ public final class SceneEntitiesMovesReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       for (int i = 0; i < entityMoveInfoList_.size(); i++) {
-        output.writeMessage(14, entityMoveInfoList_.get(i));
+        output.writeMessage(11, entityMoveInfoList_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -208,7 +211,7 @@ public final class SceneEntitiesMovesReqOuterClass {
       size = 0;
       for (int i = 0; i < entityMoveInfoList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(14, entityMoveInfoList_.get(i));
+          .computeMessageSize(11, entityMoveInfoList_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -339,10 +342,13 @@ public final class SceneEntitiesMovesReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 279
-     * EnetChannelId: 1
-     * EnetIsReliable: false
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 292;
+     *   ENET_CHANNEL_ID = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code SceneEntitiesMovesReq}
@@ -542,7 +548,7 @@ public final class SceneEntitiesMovesReqOuterClass {
           emu.grasscutter.net.proto.EntityMoveInfoOuterClass.EntityMoveInfo, emu.grasscutter.net.proto.EntityMoveInfoOuterClass.EntityMoveInfo.Builder, emu.grasscutter.net.proto.EntityMoveInfoOuterClass.EntityMoveInfoOrBuilder> entityMoveInfoListBuilder_;
 
       /**
-       * <code>repeated .EntityMoveInfo entity_move_info_list = 14;</code>
+       * <code>repeated .EntityMoveInfo entity_move_info_list = 11;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.EntityMoveInfoOuterClass.EntityMoveInfo> getEntityMoveInfoListList() {
         if (entityMoveInfoListBuilder_ == null) {
@@ -552,7 +558,7 @@ public final class SceneEntitiesMovesReqOuterClass {
         }
       }
       /**
-       * <code>repeated .EntityMoveInfo entity_move_info_list = 14;</code>
+       * <code>repeated .EntityMoveInfo entity_move_info_list = 11;</code>
        */
       public int getEntityMoveInfoListCount() {
         if (entityMoveInfoListBuilder_ == null) {
@@ -562,7 +568,7 @@ public final class SceneEntitiesMovesReqOuterClass {
         }
       }
       /**
-       * <code>repeated .EntityMoveInfo entity_move_info_list = 14;</code>
+       * <code>repeated .EntityMoveInfo entity_move_info_list = 11;</code>
        */
       public emu.grasscutter.net.proto.EntityMoveInfoOuterClass.EntityMoveInfo getEntityMoveInfoList(int index) {
         if (entityMoveInfoListBuilder_ == null) {
@@ -572,7 +578,7 @@ public final class SceneEntitiesMovesReqOuterClass {
         }
       }
       /**
-       * <code>repeated .EntityMoveInfo entity_move_info_list = 14;</code>
+       * <code>repeated .EntityMoveInfo entity_move_info_list = 11;</code>
        */
       public Builder setEntityMoveInfoList(
           int index, emu.grasscutter.net.proto.EntityMoveInfoOuterClass.EntityMoveInfo value) {
@@ -589,7 +595,7 @@ public final class SceneEntitiesMovesReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated .EntityMoveInfo entity_move_info_list = 14;</code>
+       * <code>repeated .EntityMoveInfo entity_move_info_list = 11;</code>
        */
       public Builder setEntityMoveInfoList(
           int index, emu.grasscutter.net.proto.EntityMoveInfoOuterClass.EntityMoveInfo.Builder builderForValue) {
@@ -603,7 +609,7 @@ public final class SceneEntitiesMovesReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated .EntityMoveInfo entity_move_info_list = 14;</code>
+       * <code>repeated .EntityMoveInfo entity_move_info_list = 11;</code>
        */
       public Builder addEntityMoveInfoList(emu.grasscutter.net.proto.EntityMoveInfoOuterClass.EntityMoveInfo value) {
         if (entityMoveInfoListBuilder_ == null) {
@@ -619,7 +625,7 @@ public final class SceneEntitiesMovesReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated .EntityMoveInfo entity_move_info_list = 14;</code>
+       * <code>repeated .EntityMoveInfo entity_move_info_list = 11;</code>
        */
       public Builder addEntityMoveInfoList(
           int index, emu.grasscutter.net.proto.EntityMoveInfoOuterClass.EntityMoveInfo value) {
@@ -636,7 +642,7 @@ public final class SceneEntitiesMovesReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated .EntityMoveInfo entity_move_info_list = 14;</code>
+       * <code>repeated .EntityMoveInfo entity_move_info_list = 11;</code>
        */
       public Builder addEntityMoveInfoList(
           emu.grasscutter.net.proto.EntityMoveInfoOuterClass.EntityMoveInfo.Builder builderForValue) {
@@ -650,7 +656,7 @@ public final class SceneEntitiesMovesReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated .EntityMoveInfo entity_move_info_list = 14;</code>
+       * <code>repeated .EntityMoveInfo entity_move_info_list = 11;</code>
        */
       public Builder addEntityMoveInfoList(
           int index, emu.grasscutter.net.proto.EntityMoveInfoOuterClass.EntityMoveInfo.Builder builderForValue) {
@@ -664,7 +670,7 @@ public final class SceneEntitiesMovesReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated .EntityMoveInfo entity_move_info_list = 14;</code>
+       * <code>repeated .EntityMoveInfo entity_move_info_list = 11;</code>
        */
       public Builder addAllEntityMoveInfoList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.EntityMoveInfoOuterClass.EntityMoveInfo> values) {
@@ -679,7 +685,7 @@ public final class SceneEntitiesMovesReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated .EntityMoveInfo entity_move_info_list = 14;</code>
+       * <code>repeated .EntityMoveInfo entity_move_info_list = 11;</code>
        */
       public Builder clearEntityMoveInfoList() {
         if (entityMoveInfoListBuilder_ == null) {
@@ -692,7 +698,7 @@ public final class SceneEntitiesMovesReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated .EntityMoveInfo entity_move_info_list = 14;</code>
+       * <code>repeated .EntityMoveInfo entity_move_info_list = 11;</code>
        */
       public Builder removeEntityMoveInfoList(int index) {
         if (entityMoveInfoListBuilder_ == null) {
@@ -705,14 +711,14 @@ public final class SceneEntitiesMovesReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated .EntityMoveInfo entity_move_info_list = 14;</code>
+       * <code>repeated .EntityMoveInfo entity_move_info_list = 11;</code>
        */
       public emu.grasscutter.net.proto.EntityMoveInfoOuterClass.EntityMoveInfo.Builder getEntityMoveInfoListBuilder(
           int index) {
         return getEntityMoveInfoListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .EntityMoveInfo entity_move_info_list = 14;</code>
+       * <code>repeated .EntityMoveInfo entity_move_info_list = 11;</code>
        */
       public emu.grasscutter.net.proto.EntityMoveInfoOuterClass.EntityMoveInfoOrBuilder getEntityMoveInfoListOrBuilder(
           int index) {
@@ -722,7 +728,7 @@ public final class SceneEntitiesMovesReqOuterClass {
         }
       }
       /**
-       * <code>repeated .EntityMoveInfo entity_move_info_list = 14;</code>
+       * <code>repeated .EntityMoveInfo entity_move_info_list = 11;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.EntityMoveInfoOuterClass.EntityMoveInfoOrBuilder> 
            getEntityMoveInfoListOrBuilderList() {
@@ -733,14 +739,14 @@ public final class SceneEntitiesMovesReqOuterClass {
         }
       }
       /**
-       * <code>repeated .EntityMoveInfo entity_move_info_list = 14;</code>
+       * <code>repeated .EntityMoveInfo entity_move_info_list = 11;</code>
        */
       public emu.grasscutter.net.proto.EntityMoveInfoOuterClass.EntityMoveInfo.Builder addEntityMoveInfoListBuilder() {
         return getEntityMoveInfoListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.EntityMoveInfoOuterClass.EntityMoveInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .EntityMoveInfo entity_move_info_list = 14;</code>
+       * <code>repeated .EntityMoveInfo entity_move_info_list = 11;</code>
        */
       public emu.grasscutter.net.proto.EntityMoveInfoOuterClass.EntityMoveInfo.Builder addEntityMoveInfoListBuilder(
           int index) {
@@ -748,7 +754,7 @@ public final class SceneEntitiesMovesReqOuterClass {
             index, emu.grasscutter.net.proto.EntityMoveInfoOuterClass.EntityMoveInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .EntityMoveInfo entity_move_info_list = 14;</code>
+       * <code>repeated .EntityMoveInfo entity_move_info_list = 11;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.EntityMoveInfoOuterClass.EntityMoveInfo.Builder> 
            getEntityMoveInfoListBuilderList() {
@@ -837,7 +843,7 @@ public final class SceneEntitiesMovesReqOuterClass {
     java.lang.String[] descriptorData = {
       "\n\033SceneEntitiesMovesReq.proto\032\024EntityMov" +
       "eInfo.proto\"G\n\025SceneEntitiesMovesReq\022.\n\025" +
-      "entity_move_info_list\030\016 \003(\0132\017.EntityMove" +
+      "entity_move_info_list\030\013 \003(\0132\017.EntityMove" +
       "InfoB\033\n\031emu.grasscutter.net.protob\006proto" +
       "3"
     };

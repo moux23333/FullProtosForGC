@@ -32,9 +32,9 @@ public final class DungeonEntryBlockReasonOuterClass {
      */
     DUNGEON_ENTRY_BLOCK_REASON_QUEST(2),
     /**
-     * <code>DUNGEON_ENTRY_BLOCK_REASON_MULIPLE = 3;</code>
+     * <code>DUNGEON_ENTRY_BLOCK_REASON_MULTIPLE = 3;</code>
      */
-    DUNGEON_ENTRY_BLOCK_REASON_MULIPLE(3),
+    DUNGEON_ENTRY_BLOCK_REASON_MULTIPLE(3),
     UNRECOGNIZED(-1),
     ;
 
@@ -51,9 +51,9 @@ public final class DungeonEntryBlockReasonOuterClass {
      */
     public static final int DUNGEON_ENTRY_BLOCK_REASON_QUEST_VALUE = 2;
     /**
-     * <code>DUNGEON_ENTRY_BLOCK_REASON_MULIPLE = 3;</code>
+     * <code>DUNGEON_ENTRY_BLOCK_REASON_MULTIPLE = 3;</code>
      */
-    public static final int DUNGEON_ENTRY_BLOCK_REASON_MULIPLE_VALUE = 3;
+    public static final int DUNGEON_ENTRY_BLOCK_REASON_MULTIPLE_VALUE = 3;
 
 
     public final int getNumber() {
@@ -83,7 +83,7 @@ public final class DungeonEntryBlockReasonOuterClass {
         case 0: return DUNGEON_ENTRY_BLOCK_REASON_NONE;
         case 1: return DUNGEON_ENTRY_BLOCK_REASON_LEVEL;
         case 2: return DUNGEON_ENTRY_BLOCK_REASON_QUEST;
-        case 3: return DUNGEON_ENTRY_BLOCK_REASON_MULIPLE;
+        case 3: return DUNGEON_ENTRY_BLOCK_REASON_MULTIPLE;
         default: return null;
       }
     }
@@ -149,13 +149,13 @@ public final class DungeonEntryBlockReasonOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\035DungeonEntryBlockReason.proto*\262\001\n\027Dung" +
+      "\n\035DungeonEntryBlockReason.proto*\263\001\n\027Dung" +
       "eonEntryBlockReason\022#\n\037DUNGEON_ENTRY_BLO" +
       "CK_REASON_NONE\020\000\022$\n DUNGEON_ENTRY_BLOCK_" +
       "REASON_LEVEL\020\001\022$\n DUNGEON_ENTRY_BLOCK_RE" +
-      "ASON_QUEST\020\002\022&\n\"DUNGEON_ENTRY_BLOCK_REAS" +
-      "ON_MULIPLE\020\003B\033\n\031emu.grasscutter.net.prot" +
-      "ob\006proto3"
+      "ASON_QUEST\020\002\022\'\n#DUNGEON_ENTRY_BLOCK_REAS" +
+      "ON_MULTIPLE\020\003B\033\n\031emu.grasscutter.net.pro" +
+      "tob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

@@ -19,16 +19,20 @@ public final class ExpeditionChallengeFinishedNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 id = 13;</code>
+     * <code>uint32 id = 11;</code>
      * @return The id.
      */
     int getId();
   }
   /**
    * <pre>
-   * CmdId: 2091
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 2074;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code ExpeditionChallengeFinishedNotify}
@@ -75,7 +79,7 @@ public final class ExpeditionChallengeFinishedNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 104: {
+            case 88: {
 
               id_ = input.readUInt32();
               break;
@@ -112,10 +116,10 @@ public final class ExpeditionChallengeFinishedNotifyOuterClass {
               emu.grasscutter.net.proto.ExpeditionChallengeFinishedNotifyOuterClass.ExpeditionChallengeFinishedNotify.class, emu.grasscutter.net.proto.ExpeditionChallengeFinishedNotifyOuterClass.ExpeditionChallengeFinishedNotify.Builder.class);
     }
 
-    public static final int ID_FIELD_NUMBER = 13;
+    public static final int ID_FIELD_NUMBER = 11;
     private int id_;
     /**
-     * <code>uint32 id = 13;</code>
+     * <code>uint32 id = 11;</code>
      * @return The id.
      */
     @java.lang.Override
@@ -138,7 +142,7 @@ public final class ExpeditionChallengeFinishedNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (id_ != 0) {
-        output.writeUInt32(13, id_);
+        output.writeUInt32(11, id_);
       }
       unknownFields.writeTo(output);
     }
@@ -151,7 +155,7 @@ public final class ExpeditionChallengeFinishedNotifyOuterClass {
       size = 0;
       if (id_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, id_);
+          .computeUInt32Size(11, id_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -280,9 +284,13 @@ public final class ExpeditionChallengeFinishedNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 2091
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 2074;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code ExpeditionChallengeFinishedNotify}
@@ -433,7 +441,7 @@ public final class ExpeditionChallengeFinishedNotifyOuterClass {
 
       private int id_ ;
       /**
-       * <code>uint32 id = 13;</code>
+       * <code>uint32 id = 11;</code>
        * @return The id.
        */
       @java.lang.Override
@@ -441,7 +449,7 @@ public final class ExpeditionChallengeFinishedNotifyOuterClass {
         return id_;
       }
       /**
-       * <code>uint32 id = 13;</code>
+       * <code>uint32 id = 11;</code>
        * @param value The id to set.
        * @return This builder for chaining.
        */
@@ -452,7 +460,7 @@ public final class ExpeditionChallengeFinishedNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 id = 13;</code>
+       * <code>uint32 id = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearId() {
@@ -530,7 +538,7 @@ public final class ExpeditionChallengeFinishedNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n\'ExpeditionChallengeFinishedNotify.prot" +
       "o\"/\n!ExpeditionChallengeFinishedNotify\022\n" +
-      "\n\002id\030\r \001(\rB\033\n\031emu.grasscutter.net.protob" +
+      "\n\002id\030\013 \001(\rB\033\n\031emu.grasscutter.net.protob" +
       "\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

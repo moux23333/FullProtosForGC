@@ -263,6 +263,10 @@ public final class AbilityInvokeArgumentOuterClass {
      * <code>ABILITY_INVOKE_ARGUMENT_MIXIN_ERASE_BRICK_ACTIVITY = 121;</code>
      */
     ABILITY_INVOKE_ARGUMENT_MIXIN_ERASE_BRICK_ACTIVITY(121),
+    /**
+     * <code>ABILITY_INVOKE_ARGUMENT_MIXIN_BREAKOUT = 122;</code>
+     */
+    ABILITY_INVOKE_ARGUMENT_MIXIN_BREAKOUT(122),
     UNRECOGNIZED(-1),
     ;
 
@@ -510,6 +514,10 @@ public final class AbilityInvokeArgumentOuterClass {
      * <code>ABILITY_INVOKE_ARGUMENT_MIXIN_ERASE_BRICK_ACTIVITY = 121;</code>
      */
     public static final int ABILITY_INVOKE_ARGUMENT_MIXIN_ERASE_BRICK_ACTIVITY_VALUE = 121;
+    /**
+     * <code>ABILITY_INVOKE_ARGUMENT_MIXIN_BREAKOUT = 122;</code>
+     */
+    public static final int ABILITY_INVOKE_ARGUMENT_MIXIN_BREAKOUT_VALUE = 122;
 
 
     public final int getNumber() {
@@ -597,6 +605,7 @@ public final class AbilityInvokeArgumentOuterClass {
         case 119: return ABILITY_INVOKE_ARGUMENT_MIXIN_UI_INTERACT;
         case 120: return ABILITY_INVOKE_ARGUMENT_MIXIN_SHOOT_FROM_CAMERA;
         case 121: return ABILITY_INVOKE_ARGUMENT_MIXIN_ERASE_BRICK_ACTIVITY;
+        case 122: return ABILITY_INVOKE_ARGUMENT_MIXIN_BREAKOUT;
         default: return null;
       }
     }
@@ -662,7 +671,7 @@ public final class AbilityInvokeArgumentOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\033AbilityInvokeArgument.proto*\346\031\n\025Abilit" +
+      "\n\033AbilityInvokeArgument.proto*\222\032\n\025Abilit" +
       "yInvokeArgument\022 \n\034ABILITY_INVOKE_ARGUME" +
       "NT_NONE\020\000\0220\n,ABILITY_INVOKE_ARGUMENT_MET" +
       "A_MODIFIER_CHANGE\020\001\022@\n<ABILITY_INVOKE_AR" +
@@ -745,8 +754,9 @@ public final class AbilityInvokeArgumentOuterClass {
       "UMENT_MIXIN_UI_INTERACT\020w\0223\n/ABILITY_INV" +
       "OKE_ARGUMENT_MIXIN_SHOOT_FROM_CAMERA\020x\0226" +
       "\n2ABILITY_INVOKE_ARGUMENT_MIXIN_ERASE_BR" +
-      "ICK_ACTIVITY\020yB\033\n\031emu.grasscutter.net.pr" +
-      "otob\006proto3"
+      "ICK_ACTIVITY\020y\022*\n&ABILITY_INVOKE_ARGUMEN" +
+      "T_MIXIN_BREAKOUT\020zB\033\n\031emu.grasscutter.ne" +
+      "t.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

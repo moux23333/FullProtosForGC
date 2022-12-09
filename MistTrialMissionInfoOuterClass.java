@@ -19,13 +19,13 @@ public final class MistTrialMissionInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 param = 9;</code>
+     * <code>uint32 param = 8;</code>
      * @return The param.
      */
     int getParam();
 
     /**
-     * <code>uint32 watcher_list_id = 13;</code>
+     * <code>uint32 watcher_list_id = 5;</code>
      * @return The watcherListId.
      */
     int getWatcherListId();
@@ -75,14 +75,14 @@ public final class MistTrialMissionInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 72: {
-
-              param_ = input.readUInt32();
-              break;
-            }
-            case 104: {
+            case 40: {
 
               watcherListId_ = input.readUInt32();
+              break;
+            }
+            case 64: {
+
+              param_ = input.readUInt32();
               break;
             }
             default: {
@@ -117,10 +117,10 @@ public final class MistTrialMissionInfoOuterClass {
               emu.grasscutter.net.proto.MistTrialMissionInfoOuterClass.MistTrialMissionInfo.class, emu.grasscutter.net.proto.MistTrialMissionInfoOuterClass.MistTrialMissionInfo.Builder.class);
     }
 
-    public static final int PARAM_FIELD_NUMBER = 9;
+    public static final int PARAM_FIELD_NUMBER = 8;
     private int param_;
     /**
-     * <code>uint32 param = 9;</code>
+     * <code>uint32 param = 8;</code>
      * @return The param.
      */
     @java.lang.Override
@@ -128,10 +128,10 @@ public final class MistTrialMissionInfoOuterClass {
       return param_;
     }
 
-    public static final int WATCHER_LIST_ID_FIELD_NUMBER = 13;
+    public static final int WATCHER_LIST_ID_FIELD_NUMBER = 5;
     private int watcherListId_;
     /**
-     * <code>uint32 watcher_list_id = 13;</code>
+     * <code>uint32 watcher_list_id = 5;</code>
      * @return The watcherListId.
      */
     @java.lang.Override
@@ -153,11 +153,11 @@ public final class MistTrialMissionInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (param_ != 0) {
-        output.writeUInt32(9, param_);
-      }
       if (watcherListId_ != 0) {
-        output.writeUInt32(13, watcherListId_);
+        output.writeUInt32(5, watcherListId_);
+      }
+      if (param_ != 0) {
+        output.writeUInt32(8, param_);
       }
       unknownFields.writeTo(output);
     }
@@ -168,13 +168,13 @@ public final class MistTrialMissionInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (param_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, param_);
-      }
       if (watcherListId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, watcherListId_);
+          .computeUInt32Size(5, watcherListId_);
+      }
+      if (param_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(8, param_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -460,7 +460,7 @@ public final class MistTrialMissionInfoOuterClass {
 
       private int param_ ;
       /**
-       * <code>uint32 param = 9;</code>
+       * <code>uint32 param = 8;</code>
        * @return The param.
        */
       @java.lang.Override
@@ -468,7 +468,7 @@ public final class MistTrialMissionInfoOuterClass {
         return param_;
       }
       /**
-       * <code>uint32 param = 9;</code>
+       * <code>uint32 param = 8;</code>
        * @param value The param to set.
        * @return This builder for chaining.
        */
@@ -479,7 +479,7 @@ public final class MistTrialMissionInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 param = 9;</code>
+       * <code>uint32 param = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearParam() {
@@ -491,7 +491,7 @@ public final class MistTrialMissionInfoOuterClass {
 
       private int watcherListId_ ;
       /**
-       * <code>uint32 watcher_list_id = 13;</code>
+       * <code>uint32 watcher_list_id = 5;</code>
        * @return The watcherListId.
        */
       @java.lang.Override
@@ -499,7 +499,7 @@ public final class MistTrialMissionInfoOuterClass {
         return watcherListId_;
       }
       /**
-       * <code>uint32 watcher_list_id = 13;</code>
+       * <code>uint32 watcher_list_id = 5;</code>
        * @param value The watcherListId to set.
        * @return This builder for chaining.
        */
@@ -510,7 +510,7 @@ public final class MistTrialMissionInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 watcher_list_id = 13;</code>
+       * <code>uint32 watcher_list_id = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearWatcherListId() {
@@ -587,8 +587,8 @@ public final class MistTrialMissionInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\032MistTrialMissionInfo.proto\">\n\024MistTria" +
-      "lMissionInfo\022\r\n\005param\030\t \001(\r\022\027\n\017watcher_l" +
-      "ist_id\030\r \001(\rB\033\n\031emu.grasscutter.net.prot" +
+      "lMissionInfo\022\r\n\005param\030\010 \001(\r\022\027\n\017watcher_l" +
+      "ist_id\030\005 \001(\rB\033\n\031emu.grasscutter.net.prot" +
       "ob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

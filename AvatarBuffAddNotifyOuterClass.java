@@ -19,23 +19,27 @@ public final class AvatarBuffAddNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint64 avatar_guid = 10;</code>
+     * <code>uint64 avatar_guid = 11;</code>
      * @return The avatarGuid.
      */
     long getAvatarGuid();
 
     /**
-     * <code>uint32 buff_id = 6;</code>
+     * <code>uint32 buff_id = 7;</code>
      * @return The buffId.
      */
     int getBuffId();
   }
   /**
    * <pre>
-   * CmdId: 388
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 394;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code AvatarBuffAddNotify}
@@ -82,12 +86,12 @@ public final class AvatarBuffAddNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 48: {
+            case 56: {
 
               buffId_ = input.readUInt32();
               break;
             }
-            case 80: {
+            case 88: {
 
               avatarGuid_ = input.readUInt64();
               break;
@@ -124,10 +128,10 @@ public final class AvatarBuffAddNotifyOuterClass {
               emu.grasscutter.net.proto.AvatarBuffAddNotifyOuterClass.AvatarBuffAddNotify.class, emu.grasscutter.net.proto.AvatarBuffAddNotifyOuterClass.AvatarBuffAddNotify.Builder.class);
     }
 
-    public static final int AVATAR_GUID_FIELD_NUMBER = 10;
+    public static final int AVATAR_GUID_FIELD_NUMBER = 11;
     private long avatarGuid_;
     /**
-     * <code>uint64 avatar_guid = 10;</code>
+     * <code>uint64 avatar_guid = 11;</code>
      * @return The avatarGuid.
      */
     @java.lang.Override
@@ -135,10 +139,10 @@ public final class AvatarBuffAddNotifyOuterClass {
       return avatarGuid_;
     }
 
-    public static final int BUFF_ID_FIELD_NUMBER = 6;
+    public static final int BUFF_ID_FIELD_NUMBER = 7;
     private int buffId_;
     /**
-     * <code>uint32 buff_id = 6;</code>
+     * <code>uint32 buff_id = 7;</code>
      * @return The buffId.
      */
     @java.lang.Override
@@ -161,10 +165,10 @@ public final class AvatarBuffAddNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (buffId_ != 0) {
-        output.writeUInt32(6, buffId_);
+        output.writeUInt32(7, buffId_);
       }
       if (avatarGuid_ != 0L) {
-        output.writeUInt64(10, avatarGuid_);
+        output.writeUInt64(11, avatarGuid_);
       }
       unknownFields.writeTo(output);
     }
@@ -177,11 +181,11 @@ public final class AvatarBuffAddNotifyOuterClass {
       size = 0;
       if (buffId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, buffId_);
+          .computeUInt32Size(7, buffId_);
       }
       if (avatarGuid_ != 0L) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt64Size(10, avatarGuid_);
+          .computeUInt64Size(11, avatarGuid_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -315,10 +319,14 @@ public final class AvatarBuffAddNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 388
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 394;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code AvatarBuffAddNotify}
@@ -475,7 +483,7 @@ public final class AvatarBuffAddNotifyOuterClass {
 
       private long avatarGuid_ ;
       /**
-       * <code>uint64 avatar_guid = 10;</code>
+       * <code>uint64 avatar_guid = 11;</code>
        * @return The avatarGuid.
        */
       @java.lang.Override
@@ -483,7 +491,7 @@ public final class AvatarBuffAddNotifyOuterClass {
         return avatarGuid_;
       }
       /**
-       * <code>uint64 avatar_guid = 10;</code>
+       * <code>uint64 avatar_guid = 11;</code>
        * @param value The avatarGuid to set.
        * @return This builder for chaining.
        */
@@ -494,7 +502,7 @@ public final class AvatarBuffAddNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint64 avatar_guid = 10;</code>
+       * <code>uint64 avatar_guid = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearAvatarGuid() {
@@ -506,7 +514,7 @@ public final class AvatarBuffAddNotifyOuterClass {
 
       private int buffId_ ;
       /**
-       * <code>uint32 buff_id = 6;</code>
+       * <code>uint32 buff_id = 7;</code>
        * @return The buffId.
        */
       @java.lang.Override
@@ -514,7 +522,7 @@ public final class AvatarBuffAddNotifyOuterClass {
         return buffId_;
       }
       /**
-       * <code>uint32 buff_id = 6;</code>
+       * <code>uint32 buff_id = 7;</code>
        * @param value The buffId to set.
        * @return This builder for chaining.
        */
@@ -525,7 +533,7 @@ public final class AvatarBuffAddNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 buff_id = 6;</code>
+       * <code>uint32 buff_id = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearBuffId() {
@@ -602,8 +610,8 @@ public final class AvatarBuffAddNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\031AvatarBuffAddNotify.proto\";\n\023AvatarBuf" +
-      "fAddNotify\022\023\n\013avatar_guid\030\n \001(\004\022\017\n\007buff_" +
-      "id\030\006 \001(\rB\033\n\031emu.grasscutter.net.protob\006p" +
+      "fAddNotify\022\023\n\013avatar_guid\030\013 \001(\004\022\017\n\007buff_" +
+      "id\030\007 \001(\rB\033\n\031emu.grasscutter.net.protob\006p" +
       "roto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

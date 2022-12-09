@@ -19,33 +19,37 @@ public final class SaveUgcRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 15;</code>
-     * @return The retcode.
-     */
-    int getRetcode();
-
-    /**
-     * <code>uint64 ugc_guid = 8;</code>
+     * <code>uint64 ugc_guid = 9;</code>
      * @return The ugcGuid.
      */
     long getUgcGuid();
 
     /**
-     * <code>.UgcType ugc_type = 1;</code>
+     * <code>int32 retcode = 8;</code>
+     * @return The retcode.
+     */
+    int getRetcode();
+
+    /**
+     * <code>.UgcType ugc_type = 2;</code>
      * @return The enum numeric value on the wire for ugcType.
      */
     int getUgcTypeValue();
     /**
-     * <code>.UgcType ugc_type = 1;</code>
+     * <code>.UgcType ugc_type = 2;</code>
      * @return The ugcType.
      */
     emu.grasscutter.net.proto.UgcTypeOuterClass.UgcType getUgcType();
   }
   /**
    * <pre>
-   * CmdId: 6322
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 6317;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code SaveUgcRsp}
@@ -93,7 +97,7 @@ public final class SaveUgcRspOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
+            case 16: {
               int rawValue = input.readEnum();
 
               ugcType_ = rawValue;
@@ -101,12 +105,12 @@ public final class SaveUgcRspOuterClass {
             }
             case 64: {
 
-              ugcGuid_ = input.readUInt64();
+              retcode_ = input.readInt32();
               break;
             }
-            case 120: {
+            case 72: {
 
-              retcode_ = input.readInt32();
+              ugcGuid_ = input.readUInt64();
               break;
             }
             default: {
@@ -141,21 +145,10 @@ public final class SaveUgcRspOuterClass {
               emu.grasscutter.net.proto.SaveUgcRspOuterClass.SaveUgcRsp.class, emu.grasscutter.net.proto.SaveUgcRspOuterClass.SaveUgcRsp.Builder.class);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 15;
-    private int retcode_;
-    /**
-     * <code>int32 retcode = 15;</code>
-     * @return The retcode.
-     */
-    @java.lang.Override
-    public int getRetcode() {
-      return retcode_;
-    }
-
-    public static final int UGC_GUID_FIELD_NUMBER = 8;
+    public static final int UGC_GUID_FIELD_NUMBER = 9;
     private long ugcGuid_;
     /**
-     * <code>uint64 ugc_guid = 8;</code>
+     * <code>uint64 ugc_guid = 9;</code>
      * @return The ugcGuid.
      */
     @java.lang.Override
@@ -163,17 +156,28 @@ public final class SaveUgcRspOuterClass {
       return ugcGuid_;
     }
 
-    public static final int UGC_TYPE_FIELD_NUMBER = 1;
+    public static final int RETCODE_FIELD_NUMBER = 8;
+    private int retcode_;
+    /**
+     * <code>int32 retcode = 8;</code>
+     * @return The retcode.
+     */
+    @java.lang.Override
+    public int getRetcode() {
+      return retcode_;
+    }
+
+    public static final int UGC_TYPE_FIELD_NUMBER = 2;
     private int ugcType_;
     /**
-     * <code>.UgcType ugc_type = 1;</code>
+     * <code>.UgcType ugc_type = 2;</code>
      * @return The enum numeric value on the wire for ugcType.
      */
     @java.lang.Override public int getUgcTypeValue() {
       return ugcType_;
     }
     /**
-     * <code>.UgcType ugc_type = 1;</code>
+     * <code>.UgcType ugc_type = 2;</code>
      * @return The ugcType.
      */
     @java.lang.Override public emu.grasscutter.net.proto.UgcTypeOuterClass.UgcType getUgcType() {
@@ -197,13 +201,13 @@ public final class SaveUgcRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (ugcType_ != emu.grasscutter.net.proto.UgcTypeOuterClass.UgcType.UGC_TYPE_NONE.getNumber()) {
-        output.writeEnum(1, ugcType_);
-      }
-      if (ugcGuid_ != 0L) {
-        output.writeUInt64(8, ugcGuid_);
+        output.writeEnum(2, ugcType_);
       }
       if (retcode_ != 0) {
-        output.writeInt32(15, retcode_);
+        output.writeInt32(8, retcode_);
+      }
+      if (ugcGuid_ != 0L) {
+        output.writeUInt64(9, ugcGuid_);
       }
       unknownFields.writeTo(output);
     }
@@ -216,15 +220,15 @@ public final class SaveUgcRspOuterClass {
       size = 0;
       if (ugcType_ != emu.grasscutter.net.proto.UgcTypeOuterClass.UgcType.UGC_TYPE_NONE.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(1, ugcType_);
-      }
-      if (ugcGuid_ != 0L) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt64Size(8, ugcGuid_);
+          .computeEnumSize(2, ugcType_);
       }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(15, retcode_);
+          .computeInt32Size(8, retcode_);
+      }
+      if (ugcGuid_ != 0L) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt64Size(9, ugcGuid_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -241,10 +245,10 @@ public final class SaveUgcRspOuterClass {
       }
       emu.grasscutter.net.proto.SaveUgcRspOuterClass.SaveUgcRsp other = (emu.grasscutter.net.proto.SaveUgcRspOuterClass.SaveUgcRsp) obj;
 
-      if (getRetcode()
-          != other.getRetcode()) return false;
       if (getUgcGuid()
           != other.getUgcGuid()) return false;
+      if (getRetcode()
+          != other.getRetcode()) return false;
       if (ugcType_ != other.ugcType_) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
@@ -257,11 +261,11 @@ public final class SaveUgcRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
-      hash = (53 * hash) + getRetcode();
       hash = (37 * hash) + UGC_GUID_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
           getUgcGuid());
+      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
+      hash = (53 * hash) + getRetcode();
       hash = (37 * hash) + UGC_TYPE_FIELD_NUMBER;
       hash = (53 * hash) + ugcType_;
       hash = (29 * hash) + unknownFields.hashCode();
@@ -361,9 +365,13 @@ public final class SaveUgcRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 6322
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 6317;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code SaveUgcRsp}
@@ -403,9 +411,9 @@ public final class SaveUgcRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        retcode_ = 0;
-
         ugcGuid_ = 0L;
+
+        retcode_ = 0;
 
         ugcType_ = 0;
 
@@ -435,8 +443,8 @@ public final class SaveUgcRspOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.SaveUgcRspOuterClass.SaveUgcRsp buildPartial() {
         emu.grasscutter.net.proto.SaveUgcRspOuterClass.SaveUgcRsp result = new emu.grasscutter.net.proto.SaveUgcRspOuterClass.SaveUgcRsp(this);
-        result.retcode_ = retcode_;
         result.ugcGuid_ = ugcGuid_;
+        result.retcode_ = retcode_;
         result.ugcType_ = ugcType_;
         onBuilt();
         return result;
@@ -486,11 +494,11 @@ public final class SaveUgcRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.SaveUgcRspOuterClass.SaveUgcRsp other) {
         if (other == emu.grasscutter.net.proto.SaveUgcRspOuterClass.SaveUgcRsp.getDefaultInstance()) return this;
-        if (other.getRetcode() != 0) {
-          setRetcode(other.getRetcode());
-        }
         if (other.getUgcGuid() != 0L) {
           setUgcGuid(other.getUgcGuid());
+        }
+        if (other.getRetcode() != 0) {
+          setRetcode(other.getRetcode());
         }
         if (other.ugcType_ != 0) {
           setUgcTypeValue(other.getUgcTypeValue());
@@ -524,40 +532,9 @@ public final class SaveUgcRspOuterClass {
         return this;
       }
 
-      private int retcode_ ;
-      /**
-       * <code>int32 retcode = 15;</code>
-       * @return The retcode.
-       */
-      @java.lang.Override
-      public int getRetcode() {
-        return retcode_;
-      }
-      /**
-       * <code>int32 retcode = 15;</code>
-       * @param value The retcode to set.
-       * @return This builder for chaining.
-       */
-      public Builder setRetcode(int value) {
-        
-        retcode_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>int32 retcode = 15;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearRetcode() {
-        
-        retcode_ = 0;
-        onChanged();
-        return this;
-      }
-
       private long ugcGuid_ ;
       /**
-       * <code>uint64 ugc_guid = 8;</code>
+       * <code>uint64 ugc_guid = 9;</code>
        * @return The ugcGuid.
        */
       @java.lang.Override
@@ -565,7 +542,7 @@ public final class SaveUgcRspOuterClass {
         return ugcGuid_;
       }
       /**
-       * <code>uint64 ugc_guid = 8;</code>
+       * <code>uint64 ugc_guid = 9;</code>
        * @param value The ugcGuid to set.
        * @return This builder for chaining.
        */
@@ -576,7 +553,7 @@ public final class SaveUgcRspOuterClass {
         return this;
       }
       /**
-       * <code>uint64 ugc_guid = 8;</code>
+       * <code>uint64 ugc_guid = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearUgcGuid() {
@@ -586,16 +563,47 @@ public final class SaveUgcRspOuterClass {
         return this;
       }
 
+      private int retcode_ ;
+      /**
+       * <code>int32 retcode = 8;</code>
+       * @return The retcode.
+       */
+      @java.lang.Override
+      public int getRetcode() {
+        return retcode_;
+      }
+      /**
+       * <code>int32 retcode = 8;</code>
+       * @param value The retcode to set.
+       * @return This builder for chaining.
+       */
+      public Builder setRetcode(int value) {
+        
+        retcode_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 retcode = 8;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearRetcode() {
+        
+        retcode_ = 0;
+        onChanged();
+        return this;
+      }
+
       private int ugcType_ = 0;
       /**
-       * <code>.UgcType ugc_type = 1;</code>
+       * <code>.UgcType ugc_type = 2;</code>
        * @return The enum numeric value on the wire for ugcType.
        */
       @java.lang.Override public int getUgcTypeValue() {
         return ugcType_;
       }
       /**
-       * <code>.UgcType ugc_type = 1;</code>
+       * <code>.UgcType ugc_type = 2;</code>
        * @param value The enum numeric value on the wire for ugcType to set.
        * @return This builder for chaining.
        */
@@ -606,7 +614,7 @@ public final class SaveUgcRspOuterClass {
         return this;
       }
       /**
-       * <code>.UgcType ugc_type = 1;</code>
+       * <code>.UgcType ugc_type = 2;</code>
        * @return The ugcType.
        */
       @java.lang.Override
@@ -616,7 +624,7 @@ public final class SaveUgcRspOuterClass {
         return result == null ? emu.grasscutter.net.proto.UgcTypeOuterClass.UgcType.UNRECOGNIZED : result;
       }
       /**
-       * <code>.UgcType ugc_type = 1;</code>
+       * <code>.UgcType ugc_type = 2;</code>
        * @param value The ugcType to set.
        * @return This builder for chaining.
        */
@@ -630,7 +638,7 @@ public final class SaveUgcRspOuterClass {
         return this;
       }
       /**
-       * <code>.UgcType ugc_type = 1;</code>
+       * <code>.UgcType ugc_type = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearUgcType() {
@@ -707,8 +715,8 @@ public final class SaveUgcRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\020SaveUgcRsp.proto\032\rUgcType.proto\"K\n\nSav" +
-      "eUgcRsp\022\017\n\007retcode\030\017 \001(\005\022\020\n\010ugc_guid\030\010 \001" +
-      "(\004\022\032\n\010ugc_type\030\001 \001(\0162\010.UgcTypeB\033\n\031emu.gr" +
+      "eUgcRsp\022\020\n\010ugc_guid\030\t \001(\004\022\017\n\007retcode\030\010 \001" +
+      "(\005\022\032\n\010ugc_type\030\002 \001(\0162\010.UgcTypeB\033\n\031emu.gr" +
       "asscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -721,7 +729,7 @@ public final class SaveUgcRspOuterClass {
     internal_static_SaveUgcRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SaveUgcRsp_descriptor,
-        new java.lang.String[] { "Retcode", "UgcGuid", "UgcType", });
+        new java.lang.String[] { "UgcGuid", "Retcode", "UgcType", });
     emu.grasscutter.net.proto.UgcTypeOuterClass.getDescriptor();
   }
 

@@ -19,25 +19,25 @@ public final class BuoyantCombatSettleInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_new_record = 1;</code>
-     * @return The isNewRecord.
-     */
-    boolean getIsNewRecord();
-
-    /**
-     * <code>.BuoyantCombatGallerySettleInfo settle_info = 3;</code>
+     * <code>.BuoyantCombatGallerySettleInfo settle_info = 14;</code>
      * @return Whether the settleInfo field is set.
      */
     boolean hasSettleInfo();
     /**
-     * <code>.BuoyantCombatGallerySettleInfo settle_info = 3;</code>
+     * <code>.BuoyantCombatGallerySettleInfo settle_info = 14;</code>
      * @return The settleInfo.
      */
     emu.grasscutter.net.proto.BuoyantCombatGallerySettleInfoOuterClass.BuoyantCombatGallerySettleInfo getSettleInfo();
     /**
-     * <code>.BuoyantCombatGallerySettleInfo settle_info = 3;</code>
+     * <code>.BuoyantCombatGallerySettleInfo settle_info = 14;</code>
      */
     emu.grasscutter.net.proto.BuoyantCombatGallerySettleInfoOuterClass.BuoyantCombatGallerySettleInfoOrBuilder getSettleInfoOrBuilder();
+
+    /**
+     * <code>bool is_new_record = 2;</code>
+     * @return The isNewRecord.
+     */
+    boolean getIsNewRecord();
   }
   /**
    * Protobuf type {@code BuoyantCombatSettleInfo}
@@ -84,12 +84,12 @@ public final class BuoyantCombatSettleInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
+            case 16: {
 
               isNewRecord_ = input.readBool();
               break;
             }
-            case 26: {
+            case 114: {
               emu.grasscutter.net.proto.BuoyantCombatGallerySettleInfoOuterClass.BuoyantCombatGallerySettleInfo.Builder subBuilder = null;
               if (settleInfo_ != null) {
                 subBuilder = settleInfo_.toBuilder();
@@ -134,21 +134,10 @@ public final class BuoyantCombatSettleInfoOuterClass {
               emu.grasscutter.net.proto.BuoyantCombatSettleInfoOuterClass.BuoyantCombatSettleInfo.class, emu.grasscutter.net.proto.BuoyantCombatSettleInfoOuterClass.BuoyantCombatSettleInfo.Builder.class);
     }
 
-    public static final int IS_NEW_RECORD_FIELD_NUMBER = 1;
-    private boolean isNewRecord_;
-    /**
-     * <code>bool is_new_record = 1;</code>
-     * @return The isNewRecord.
-     */
-    @java.lang.Override
-    public boolean getIsNewRecord() {
-      return isNewRecord_;
-    }
-
-    public static final int SETTLE_INFO_FIELD_NUMBER = 3;
+    public static final int SETTLE_INFO_FIELD_NUMBER = 14;
     private emu.grasscutter.net.proto.BuoyantCombatGallerySettleInfoOuterClass.BuoyantCombatGallerySettleInfo settleInfo_;
     /**
-     * <code>.BuoyantCombatGallerySettleInfo settle_info = 3;</code>
+     * <code>.BuoyantCombatGallerySettleInfo settle_info = 14;</code>
      * @return Whether the settleInfo field is set.
      */
     @java.lang.Override
@@ -156,7 +145,7 @@ public final class BuoyantCombatSettleInfoOuterClass {
       return settleInfo_ != null;
     }
     /**
-     * <code>.BuoyantCombatGallerySettleInfo settle_info = 3;</code>
+     * <code>.BuoyantCombatGallerySettleInfo settle_info = 14;</code>
      * @return The settleInfo.
      */
     @java.lang.Override
@@ -164,11 +153,22 @@ public final class BuoyantCombatSettleInfoOuterClass {
       return settleInfo_ == null ? emu.grasscutter.net.proto.BuoyantCombatGallerySettleInfoOuterClass.BuoyantCombatGallerySettleInfo.getDefaultInstance() : settleInfo_;
     }
     /**
-     * <code>.BuoyantCombatGallerySettleInfo settle_info = 3;</code>
+     * <code>.BuoyantCombatGallerySettleInfo settle_info = 14;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.BuoyantCombatGallerySettleInfoOuterClass.BuoyantCombatGallerySettleInfoOrBuilder getSettleInfoOrBuilder() {
       return getSettleInfo();
+    }
+
+    public static final int IS_NEW_RECORD_FIELD_NUMBER = 2;
+    private boolean isNewRecord_;
+    /**
+     * <code>bool is_new_record = 2;</code>
+     * @return The isNewRecord.
+     */
+    @java.lang.Override
+    public boolean getIsNewRecord() {
+      return isNewRecord_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -186,10 +186,10 @@ public final class BuoyantCombatSettleInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (isNewRecord_ != false) {
-        output.writeBool(1, isNewRecord_);
+        output.writeBool(2, isNewRecord_);
       }
       if (settleInfo_ != null) {
-        output.writeMessage(3, getSettleInfo());
+        output.writeMessage(14, getSettleInfo());
       }
       unknownFields.writeTo(output);
     }
@@ -202,11 +202,11 @@ public final class BuoyantCombatSettleInfoOuterClass {
       size = 0;
       if (isNewRecord_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(1, isNewRecord_);
+          .computeBoolSize(2, isNewRecord_);
       }
       if (settleInfo_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(3, getSettleInfo());
+          .computeMessageSize(14, getSettleInfo());
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -223,13 +223,13 @@ public final class BuoyantCombatSettleInfoOuterClass {
       }
       emu.grasscutter.net.proto.BuoyantCombatSettleInfoOuterClass.BuoyantCombatSettleInfo other = (emu.grasscutter.net.proto.BuoyantCombatSettleInfoOuterClass.BuoyantCombatSettleInfo) obj;
 
-      if (getIsNewRecord()
-          != other.getIsNewRecord()) return false;
       if (hasSettleInfo() != other.hasSettleInfo()) return false;
       if (hasSettleInfo()) {
         if (!getSettleInfo()
             .equals(other.getSettleInfo())) return false;
       }
+      if (getIsNewRecord()
+          != other.getIsNewRecord()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -241,13 +241,13 @@ public final class BuoyantCombatSettleInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + IS_NEW_RECORD_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsNewRecord());
       if (hasSettleInfo()) {
         hash = (37 * hash) + SETTLE_INFO_FIELD_NUMBER;
         hash = (53 * hash) + getSettleInfo().hashCode();
       }
+      hash = (37 * hash) + IS_NEW_RECORD_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getIsNewRecord());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -381,14 +381,14 @@ public final class BuoyantCombatSettleInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        isNewRecord_ = false;
-
         if (settleInfoBuilder_ == null) {
           settleInfo_ = null;
         } else {
           settleInfo_ = null;
           settleInfoBuilder_ = null;
         }
+        isNewRecord_ = false;
+
         return this;
       }
 
@@ -415,12 +415,12 @@ public final class BuoyantCombatSettleInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.BuoyantCombatSettleInfoOuterClass.BuoyantCombatSettleInfo buildPartial() {
         emu.grasscutter.net.proto.BuoyantCombatSettleInfoOuterClass.BuoyantCombatSettleInfo result = new emu.grasscutter.net.proto.BuoyantCombatSettleInfoOuterClass.BuoyantCombatSettleInfo(this);
-        result.isNewRecord_ = isNewRecord_;
         if (settleInfoBuilder_ == null) {
           result.settleInfo_ = settleInfo_;
         } else {
           result.settleInfo_ = settleInfoBuilder_.build();
         }
+        result.isNewRecord_ = isNewRecord_;
         onBuilt();
         return result;
       }
@@ -469,11 +469,11 @@ public final class BuoyantCombatSettleInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.BuoyantCombatSettleInfoOuterClass.BuoyantCombatSettleInfo other) {
         if (other == emu.grasscutter.net.proto.BuoyantCombatSettleInfoOuterClass.BuoyantCombatSettleInfo.getDefaultInstance()) return this;
-        if (other.getIsNewRecord() != false) {
-          setIsNewRecord(other.getIsNewRecord());
-        }
         if (other.hasSettleInfo()) {
           mergeSettleInfo(other.getSettleInfo());
+        }
+        if (other.getIsNewRecord() != false) {
+          setIsNewRecord(other.getIsNewRecord());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -504,49 +504,18 @@ public final class BuoyantCombatSettleInfoOuterClass {
         return this;
       }
 
-      private boolean isNewRecord_ ;
-      /**
-       * <code>bool is_new_record = 1;</code>
-       * @return The isNewRecord.
-       */
-      @java.lang.Override
-      public boolean getIsNewRecord() {
-        return isNewRecord_;
-      }
-      /**
-       * <code>bool is_new_record = 1;</code>
-       * @param value The isNewRecord to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsNewRecord(boolean value) {
-        
-        isNewRecord_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_new_record = 1;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsNewRecord() {
-        
-        isNewRecord_ = false;
-        onChanged();
-        return this;
-      }
-
       private emu.grasscutter.net.proto.BuoyantCombatGallerySettleInfoOuterClass.BuoyantCombatGallerySettleInfo settleInfo_;
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.BuoyantCombatGallerySettleInfoOuterClass.BuoyantCombatGallerySettleInfo, emu.grasscutter.net.proto.BuoyantCombatGallerySettleInfoOuterClass.BuoyantCombatGallerySettleInfo.Builder, emu.grasscutter.net.proto.BuoyantCombatGallerySettleInfoOuterClass.BuoyantCombatGallerySettleInfoOrBuilder> settleInfoBuilder_;
       /**
-       * <code>.BuoyantCombatGallerySettleInfo settle_info = 3;</code>
+       * <code>.BuoyantCombatGallerySettleInfo settle_info = 14;</code>
        * @return Whether the settleInfo field is set.
        */
       public boolean hasSettleInfo() {
         return settleInfoBuilder_ != null || settleInfo_ != null;
       }
       /**
-       * <code>.BuoyantCombatGallerySettleInfo settle_info = 3;</code>
+       * <code>.BuoyantCombatGallerySettleInfo settle_info = 14;</code>
        * @return The settleInfo.
        */
       public emu.grasscutter.net.proto.BuoyantCombatGallerySettleInfoOuterClass.BuoyantCombatGallerySettleInfo getSettleInfo() {
@@ -557,7 +526,7 @@ public final class BuoyantCombatSettleInfoOuterClass {
         }
       }
       /**
-       * <code>.BuoyantCombatGallerySettleInfo settle_info = 3;</code>
+       * <code>.BuoyantCombatGallerySettleInfo settle_info = 14;</code>
        */
       public Builder setSettleInfo(emu.grasscutter.net.proto.BuoyantCombatGallerySettleInfoOuterClass.BuoyantCombatGallerySettleInfo value) {
         if (settleInfoBuilder_ == null) {
@@ -573,7 +542,7 @@ public final class BuoyantCombatSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>.BuoyantCombatGallerySettleInfo settle_info = 3;</code>
+       * <code>.BuoyantCombatGallerySettleInfo settle_info = 14;</code>
        */
       public Builder setSettleInfo(
           emu.grasscutter.net.proto.BuoyantCombatGallerySettleInfoOuterClass.BuoyantCombatGallerySettleInfo.Builder builderForValue) {
@@ -587,7 +556,7 @@ public final class BuoyantCombatSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>.BuoyantCombatGallerySettleInfo settle_info = 3;</code>
+       * <code>.BuoyantCombatGallerySettleInfo settle_info = 14;</code>
        */
       public Builder mergeSettleInfo(emu.grasscutter.net.proto.BuoyantCombatGallerySettleInfoOuterClass.BuoyantCombatGallerySettleInfo value) {
         if (settleInfoBuilder_ == null) {
@@ -605,7 +574,7 @@ public final class BuoyantCombatSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>.BuoyantCombatGallerySettleInfo settle_info = 3;</code>
+       * <code>.BuoyantCombatGallerySettleInfo settle_info = 14;</code>
        */
       public Builder clearSettleInfo() {
         if (settleInfoBuilder_ == null) {
@@ -619,7 +588,7 @@ public final class BuoyantCombatSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>.BuoyantCombatGallerySettleInfo settle_info = 3;</code>
+       * <code>.BuoyantCombatGallerySettleInfo settle_info = 14;</code>
        */
       public emu.grasscutter.net.proto.BuoyantCombatGallerySettleInfoOuterClass.BuoyantCombatGallerySettleInfo.Builder getSettleInfoBuilder() {
         
@@ -627,7 +596,7 @@ public final class BuoyantCombatSettleInfoOuterClass {
         return getSettleInfoFieldBuilder().getBuilder();
       }
       /**
-       * <code>.BuoyantCombatGallerySettleInfo settle_info = 3;</code>
+       * <code>.BuoyantCombatGallerySettleInfo settle_info = 14;</code>
        */
       public emu.grasscutter.net.proto.BuoyantCombatGallerySettleInfoOuterClass.BuoyantCombatGallerySettleInfoOrBuilder getSettleInfoOrBuilder() {
         if (settleInfoBuilder_ != null) {
@@ -638,7 +607,7 @@ public final class BuoyantCombatSettleInfoOuterClass {
         }
       }
       /**
-       * <code>.BuoyantCombatGallerySettleInfo settle_info = 3;</code>
+       * <code>.BuoyantCombatGallerySettleInfo settle_info = 14;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.BuoyantCombatGallerySettleInfoOuterClass.BuoyantCombatGallerySettleInfo, emu.grasscutter.net.proto.BuoyantCombatGallerySettleInfoOuterClass.BuoyantCombatGallerySettleInfo.Builder, emu.grasscutter.net.proto.BuoyantCombatGallerySettleInfoOuterClass.BuoyantCombatGallerySettleInfoOrBuilder> 
@@ -652,6 +621,37 @@ public final class BuoyantCombatSettleInfoOuterClass {
           settleInfo_ = null;
         }
         return settleInfoBuilder_;
+      }
+
+      private boolean isNewRecord_ ;
+      /**
+       * <code>bool is_new_record = 2;</code>
+       * @return The isNewRecord.
+       */
+      @java.lang.Override
+      public boolean getIsNewRecord() {
+        return isNewRecord_;
+      }
+      /**
+       * <code>bool is_new_record = 2;</code>
+       * @param value The isNewRecord to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIsNewRecord(boolean value) {
+        
+        isNewRecord_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool is_new_record = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsNewRecord() {
+        
+        isNewRecord_ = false;
+        onChanged();
+        return this;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -722,9 +722,9 @@ public final class BuoyantCombatSettleInfoOuterClass {
     java.lang.String[] descriptorData = {
       "\n\035BuoyantCombatSettleInfo.proto\032$Buoyant" +
       "CombatGallerySettleInfo.proto\"f\n\027Buoyant" +
-      "CombatSettleInfo\022\025\n\ris_new_record\030\001 \001(\010\022" +
-      "4\n\013settle_info\030\003 \001(\0132\037.BuoyantCombatGall" +
-      "erySettleInfoB\033\n\031emu.grasscutter.net.pro" +
+      "CombatSettleInfo\0224\n\013settle_info\030\016 \001(\0132\037." +
+      "BuoyantCombatGallerySettleInfo\022\025\n\ris_new" +
+      "_record\030\002 \001(\010B\033\n\031emu.grasscutter.net.pro" +
       "tob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -737,7 +737,7 @@ public final class BuoyantCombatSettleInfoOuterClass {
     internal_static_BuoyantCombatSettleInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_BuoyantCombatSettleInfo_descriptor,
-        new java.lang.String[] { "IsNewRecord", "SettleInfo", });
+        new java.lang.String[] { "SettleInfo", "IsNewRecord", });
     emu.grasscutter.net.proto.BuoyantCombatGallerySettleInfoOuterClass.getDescriptor();
   }
 

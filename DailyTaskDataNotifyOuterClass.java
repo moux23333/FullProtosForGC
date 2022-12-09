@@ -19,28 +19,32 @@ public final class DailyTaskDataNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 score_reward_id = 11;</code>
+     * <code>uint32 score_reward_id = 13;</code>
      * @return The scoreRewardId.
      */
     int getScoreRewardId();
 
     /**
-     * <code>uint32 finished_num = 4;</code>
+     * <code>uint32 finished_num = 8;</code>
      * @return The finishedNum.
      */
     int getFinishedNum();
 
     /**
-     * <code>bool is_taken_score_reward = 9;</code>
+     * <code>bool is_taken_score_reward = 5;</code>
      * @return The isTakenScoreReward.
      */
     boolean getIsTakenScoreReward();
   }
   /**
    * <pre>
-   * CmdId: 158
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 124;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code DailyTaskDataNotify}
@@ -87,17 +91,17 @@ public final class DailyTaskDataNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 32: {
-
-              finishedNum_ = input.readUInt32();
-              break;
-            }
-            case 72: {
+            case 40: {
 
               isTakenScoreReward_ = input.readBool();
               break;
             }
-            case 88: {
+            case 64: {
+
+              finishedNum_ = input.readUInt32();
+              break;
+            }
+            case 104: {
 
               scoreRewardId_ = input.readUInt32();
               break;
@@ -134,10 +138,10 @@ public final class DailyTaskDataNotifyOuterClass {
               emu.grasscutter.net.proto.DailyTaskDataNotifyOuterClass.DailyTaskDataNotify.class, emu.grasscutter.net.proto.DailyTaskDataNotifyOuterClass.DailyTaskDataNotify.Builder.class);
     }
 
-    public static final int SCORE_REWARD_ID_FIELD_NUMBER = 11;
+    public static final int SCORE_REWARD_ID_FIELD_NUMBER = 13;
     private int scoreRewardId_;
     /**
-     * <code>uint32 score_reward_id = 11;</code>
+     * <code>uint32 score_reward_id = 13;</code>
      * @return The scoreRewardId.
      */
     @java.lang.Override
@@ -145,10 +149,10 @@ public final class DailyTaskDataNotifyOuterClass {
       return scoreRewardId_;
     }
 
-    public static final int FINISHED_NUM_FIELD_NUMBER = 4;
+    public static final int FINISHED_NUM_FIELD_NUMBER = 8;
     private int finishedNum_;
     /**
-     * <code>uint32 finished_num = 4;</code>
+     * <code>uint32 finished_num = 8;</code>
      * @return The finishedNum.
      */
     @java.lang.Override
@@ -156,10 +160,10 @@ public final class DailyTaskDataNotifyOuterClass {
       return finishedNum_;
     }
 
-    public static final int IS_TAKEN_SCORE_REWARD_FIELD_NUMBER = 9;
+    public static final int IS_TAKEN_SCORE_REWARD_FIELD_NUMBER = 5;
     private boolean isTakenScoreReward_;
     /**
-     * <code>bool is_taken_score_reward = 9;</code>
+     * <code>bool is_taken_score_reward = 5;</code>
      * @return The isTakenScoreReward.
      */
     @java.lang.Override
@@ -181,14 +185,14 @@ public final class DailyTaskDataNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (finishedNum_ != 0) {
-        output.writeUInt32(4, finishedNum_);
-      }
       if (isTakenScoreReward_ != false) {
-        output.writeBool(9, isTakenScoreReward_);
+        output.writeBool(5, isTakenScoreReward_);
+      }
+      if (finishedNum_ != 0) {
+        output.writeUInt32(8, finishedNum_);
       }
       if (scoreRewardId_ != 0) {
-        output.writeUInt32(11, scoreRewardId_);
+        output.writeUInt32(13, scoreRewardId_);
       }
       unknownFields.writeTo(output);
     }
@@ -199,17 +203,17 @@ public final class DailyTaskDataNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (finishedNum_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, finishedNum_);
-      }
       if (isTakenScoreReward_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(9, isTakenScoreReward_);
+          .computeBoolSize(5, isTakenScoreReward_);
+      }
+      if (finishedNum_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(8, finishedNum_);
       }
       if (scoreRewardId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, scoreRewardId_);
+          .computeUInt32Size(13, scoreRewardId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -347,9 +351,13 @@ public final class DailyTaskDataNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 158
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 124;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code DailyTaskDataNotify}
@@ -512,7 +520,7 @@ public final class DailyTaskDataNotifyOuterClass {
 
       private int scoreRewardId_ ;
       /**
-       * <code>uint32 score_reward_id = 11;</code>
+       * <code>uint32 score_reward_id = 13;</code>
        * @return The scoreRewardId.
        */
       @java.lang.Override
@@ -520,7 +528,7 @@ public final class DailyTaskDataNotifyOuterClass {
         return scoreRewardId_;
       }
       /**
-       * <code>uint32 score_reward_id = 11;</code>
+       * <code>uint32 score_reward_id = 13;</code>
        * @param value The scoreRewardId to set.
        * @return This builder for chaining.
        */
@@ -531,7 +539,7 @@ public final class DailyTaskDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 score_reward_id = 11;</code>
+       * <code>uint32 score_reward_id = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearScoreRewardId() {
@@ -543,7 +551,7 @@ public final class DailyTaskDataNotifyOuterClass {
 
       private int finishedNum_ ;
       /**
-       * <code>uint32 finished_num = 4;</code>
+       * <code>uint32 finished_num = 8;</code>
        * @return The finishedNum.
        */
       @java.lang.Override
@@ -551,7 +559,7 @@ public final class DailyTaskDataNotifyOuterClass {
         return finishedNum_;
       }
       /**
-       * <code>uint32 finished_num = 4;</code>
+       * <code>uint32 finished_num = 8;</code>
        * @param value The finishedNum to set.
        * @return This builder for chaining.
        */
@@ -562,7 +570,7 @@ public final class DailyTaskDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 finished_num = 4;</code>
+       * <code>uint32 finished_num = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearFinishedNum() {
@@ -574,7 +582,7 @@ public final class DailyTaskDataNotifyOuterClass {
 
       private boolean isTakenScoreReward_ ;
       /**
-       * <code>bool is_taken_score_reward = 9;</code>
+       * <code>bool is_taken_score_reward = 5;</code>
        * @return The isTakenScoreReward.
        */
       @java.lang.Override
@@ -582,7 +590,7 @@ public final class DailyTaskDataNotifyOuterClass {
         return isTakenScoreReward_;
       }
       /**
-       * <code>bool is_taken_score_reward = 9;</code>
+       * <code>bool is_taken_score_reward = 5;</code>
        * @param value The isTakenScoreReward to set.
        * @return This builder for chaining.
        */
@@ -593,7 +601,7 @@ public final class DailyTaskDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>bool is_taken_score_reward = 9;</code>
+       * <code>bool is_taken_score_reward = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsTakenScoreReward() {
@@ -670,9 +678,9 @@ public final class DailyTaskDataNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\031DailyTaskDataNotify.proto\"c\n\023DailyTask" +
-      "DataNotify\022\027\n\017score_reward_id\030\013 \001(\r\022\024\n\014f" +
-      "inished_num\030\004 \001(\r\022\035\n\025is_taken_score_rewa" +
-      "rd\030\t \001(\010B\033\n\031emu.grasscutter.net.protob\006p" +
+      "DataNotify\022\027\n\017score_reward_id\030\r \001(\r\022\024\n\014f" +
+      "inished_num\030\010 \001(\r\022\035\n\025is_taken_score_rewa" +
+      "rd\030\005 \001(\010B\033\n\031emu.grasscutter.net.protob\006p" +
       "roto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

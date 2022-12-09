@@ -19,64 +19,68 @@ public final class SumoSetNoSwitchPunishTimeNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 cur_team_index = 15;</code>
-     * @return The curTeamIndex.
-     */
-    int getCurTeamIndex();
-
-    /**
-     * <code>uint32 stage_id = 13;</code>
+     * <code>uint32 stage_id = 15;</code>
      * @return The stageId.
      */
     int getStageId();
 
     /**
-     * <code>repeated .SumoDungeonTeam dungeon_team_list = 11;</code>
+     * <code>uint32 Unk3300_CBAMLHDMKJF = 10;</code>
+     * @return The unk3300CBAMLHDMKJF.
+     */
+    int getUnk3300CBAMLHDMKJF();
+
+    /**
+     * <code>uint32 activity_id = 5;</code>
+     * @return The activityId.
+     */
+    int getActivityId();
+
+    /**
+     * <code>uint32 Unk3300_BNJBIGHIJOC = 3;</code>
+     * @return The unk3300BNJBIGHIJOC.
+     */
+    int getUnk3300BNJBIGHIJOC();
+
+    /**
+     * <code>uint32 Unk3300_DJBJACGHGDM = 9;</code>
+     * @return The unk3300DJBJACGHGDM.
+     */
+    int getUnk3300DJBJACGHGDM();
+
+    /**
+     * <code>repeated .SumoDungeonTeam dungeon_team_list = 2;</code>
      */
     java.util.List<emu.grasscutter.net.proto.SumoDungeonTeamOuterClass.SumoDungeonTeam> 
         getDungeonTeamListList();
     /**
-     * <code>repeated .SumoDungeonTeam dungeon_team_list = 11;</code>
+     * <code>repeated .SumoDungeonTeam dungeon_team_list = 2;</code>
      */
     emu.grasscutter.net.proto.SumoDungeonTeamOuterClass.SumoDungeonTeam getDungeonTeamList(int index);
     /**
-     * <code>repeated .SumoDungeonTeam dungeon_team_list = 11;</code>
+     * <code>repeated .SumoDungeonTeam dungeon_team_list = 2;</code>
      */
     int getDungeonTeamListCount();
     /**
-     * <code>repeated .SumoDungeonTeam dungeon_team_list = 11;</code>
+     * <code>repeated .SumoDungeonTeam dungeon_team_list = 2;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.SumoDungeonTeamOuterClass.SumoDungeonTeamOrBuilder> 
         getDungeonTeamListOrBuilderList();
     /**
-     * <code>repeated .SumoDungeonTeam dungeon_team_list = 11;</code>
+     * <code>repeated .SumoDungeonTeam dungeon_team_list = 2;</code>
      */
     emu.grasscutter.net.proto.SumoDungeonTeamOuterClass.SumoDungeonTeamOrBuilder getDungeonTeamListOrBuilder(
         int index);
-
-    /**
-     * <code>uint32 no_switch_punish_time = 2;</code>
-     * @return The noSwitchPunishTime.
-     */
-    int getNoSwitchPunishTime();
-
-    /**
-     * <code>uint32 next_valid_switch_time = 14;</code>
-     * @return The nextValidSwitchTime.
-     */
-    int getNextValidSwitchTime();
-
-    /**
-     * <code>uint32 activity_id = 9;</code>
-     * @return The activityId.
-     */
-    int getActivityId();
   }
   /**
    * <pre>
-   * CmdId: 8935
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 8610;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code SumoSetNoSwitchPunishTimeNotify}
@@ -125,17 +129,7 @@ public final class SumoSetNoSwitchPunishTimeNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
-
-              noSwitchPunishTime_ = input.readUInt32();
-              break;
-            }
-            case 72: {
-
-              activityId_ = input.readUInt32();
-              break;
-            }
-            case 90: {
+            case 18: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 dungeonTeamList_ = new java.util.ArrayList<emu.grasscutter.net.proto.SumoDungeonTeamOuterClass.SumoDungeonTeam>();
                 mutable_bitField0_ |= 0x00000001;
@@ -144,19 +138,29 @@ public final class SumoSetNoSwitchPunishTimeNotifyOuterClass {
                   input.readMessage(emu.grasscutter.net.proto.SumoDungeonTeamOuterClass.SumoDungeonTeam.parser(), extensionRegistry));
               break;
             }
-            case 104: {
+            case 24: {
 
-              stageId_ = input.readUInt32();
+              unk3300BNJBIGHIJOC_ = input.readUInt32();
               break;
             }
-            case 112: {
+            case 40: {
 
-              nextValidSwitchTime_ = input.readUInt32();
+              activityId_ = input.readUInt32();
+              break;
+            }
+            case 72: {
+
+              unk3300DJBJACGHGDM_ = input.readUInt32();
+              break;
+            }
+            case 80: {
+
+              unk3300CBAMLHDMKJF_ = input.readUInt32();
               break;
             }
             case 120: {
 
-              curTeamIndex_ = input.readUInt32();
+              stageId_ = input.readUInt32();
               break;
             }
             default: {
@@ -194,21 +198,10 @@ public final class SumoSetNoSwitchPunishTimeNotifyOuterClass {
               emu.grasscutter.net.proto.SumoSetNoSwitchPunishTimeNotifyOuterClass.SumoSetNoSwitchPunishTimeNotify.class, emu.grasscutter.net.proto.SumoSetNoSwitchPunishTimeNotifyOuterClass.SumoSetNoSwitchPunishTimeNotify.Builder.class);
     }
 
-    public static final int CUR_TEAM_INDEX_FIELD_NUMBER = 15;
-    private int curTeamIndex_;
-    /**
-     * <code>uint32 cur_team_index = 15;</code>
-     * @return The curTeamIndex.
-     */
-    @java.lang.Override
-    public int getCurTeamIndex() {
-      return curTeamIndex_;
-    }
-
-    public static final int STAGE_ID_FIELD_NUMBER = 13;
+    public static final int STAGE_ID_FIELD_NUMBER = 15;
     private int stageId_;
     /**
-     * <code>uint32 stage_id = 13;</code>
+     * <code>uint32 stage_id = 15;</code>
      * @return The stageId.
      */
     @java.lang.Override
@@ -216,17 +209,61 @@ public final class SumoSetNoSwitchPunishTimeNotifyOuterClass {
       return stageId_;
     }
 
-    public static final int DUNGEON_TEAM_LIST_FIELD_NUMBER = 11;
+    public static final int UNK3300_CBAMLHDMKJF_FIELD_NUMBER = 10;
+    private int unk3300CBAMLHDMKJF_;
+    /**
+     * <code>uint32 Unk3300_CBAMLHDMKJF = 10;</code>
+     * @return The unk3300CBAMLHDMKJF.
+     */
+    @java.lang.Override
+    public int getUnk3300CBAMLHDMKJF() {
+      return unk3300CBAMLHDMKJF_;
+    }
+
+    public static final int ACTIVITY_ID_FIELD_NUMBER = 5;
+    private int activityId_;
+    /**
+     * <code>uint32 activity_id = 5;</code>
+     * @return The activityId.
+     */
+    @java.lang.Override
+    public int getActivityId() {
+      return activityId_;
+    }
+
+    public static final int UNK3300_BNJBIGHIJOC_FIELD_NUMBER = 3;
+    private int unk3300BNJBIGHIJOC_;
+    /**
+     * <code>uint32 Unk3300_BNJBIGHIJOC = 3;</code>
+     * @return The unk3300BNJBIGHIJOC.
+     */
+    @java.lang.Override
+    public int getUnk3300BNJBIGHIJOC() {
+      return unk3300BNJBIGHIJOC_;
+    }
+
+    public static final int UNK3300_DJBJACGHGDM_FIELD_NUMBER = 9;
+    private int unk3300DJBJACGHGDM_;
+    /**
+     * <code>uint32 Unk3300_DJBJACGHGDM = 9;</code>
+     * @return The unk3300DJBJACGHGDM.
+     */
+    @java.lang.Override
+    public int getUnk3300DJBJACGHGDM() {
+      return unk3300DJBJACGHGDM_;
+    }
+
+    public static final int DUNGEON_TEAM_LIST_FIELD_NUMBER = 2;
     private java.util.List<emu.grasscutter.net.proto.SumoDungeonTeamOuterClass.SumoDungeonTeam> dungeonTeamList_;
     /**
-     * <code>repeated .SumoDungeonTeam dungeon_team_list = 11;</code>
+     * <code>repeated .SumoDungeonTeam dungeon_team_list = 2;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.SumoDungeonTeamOuterClass.SumoDungeonTeam> getDungeonTeamListList() {
       return dungeonTeamList_;
     }
     /**
-     * <code>repeated .SumoDungeonTeam dungeon_team_list = 11;</code>
+     * <code>repeated .SumoDungeonTeam dungeon_team_list = 2;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.SumoDungeonTeamOuterClass.SumoDungeonTeamOrBuilder> 
@@ -234,59 +271,26 @@ public final class SumoSetNoSwitchPunishTimeNotifyOuterClass {
       return dungeonTeamList_;
     }
     /**
-     * <code>repeated .SumoDungeonTeam dungeon_team_list = 11;</code>
+     * <code>repeated .SumoDungeonTeam dungeon_team_list = 2;</code>
      */
     @java.lang.Override
     public int getDungeonTeamListCount() {
       return dungeonTeamList_.size();
     }
     /**
-     * <code>repeated .SumoDungeonTeam dungeon_team_list = 11;</code>
+     * <code>repeated .SumoDungeonTeam dungeon_team_list = 2;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.SumoDungeonTeamOuterClass.SumoDungeonTeam getDungeonTeamList(int index) {
       return dungeonTeamList_.get(index);
     }
     /**
-     * <code>repeated .SumoDungeonTeam dungeon_team_list = 11;</code>
+     * <code>repeated .SumoDungeonTeam dungeon_team_list = 2;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.SumoDungeonTeamOuterClass.SumoDungeonTeamOrBuilder getDungeonTeamListOrBuilder(
         int index) {
       return dungeonTeamList_.get(index);
-    }
-
-    public static final int NO_SWITCH_PUNISH_TIME_FIELD_NUMBER = 2;
-    private int noSwitchPunishTime_;
-    /**
-     * <code>uint32 no_switch_punish_time = 2;</code>
-     * @return The noSwitchPunishTime.
-     */
-    @java.lang.Override
-    public int getNoSwitchPunishTime() {
-      return noSwitchPunishTime_;
-    }
-
-    public static final int NEXT_VALID_SWITCH_TIME_FIELD_NUMBER = 14;
-    private int nextValidSwitchTime_;
-    /**
-     * <code>uint32 next_valid_switch_time = 14;</code>
-     * @return The nextValidSwitchTime.
-     */
-    @java.lang.Override
-    public int getNextValidSwitchTime() {
-      return nextValidSwitchTime_;
-    }
-
-    public static final int ACTIVITY_ID_FIELD_NUMBER = 9;
-    private int activityId_;
-    /**
-     * <code>uint32 activity_id = 9;</code>
-     * @return The activityId.
-     */
-    @java.lang.Override
-    public int getActivityId() {
-      return activityId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -303,23 +307,23 @@ public final class SumoSetNoSwitchPunishTimeNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (noSwitchPunishTime_ != 0) {
-        output.writeUInt32(2, noSwitchPunishTime_);
+      for (int i = 0; i < dungeonTeamList_.size(); i++) {
+        output.writeMessage(2, dungeonTeamList_.get(i));
+      }
+      if (unk3300BNJBIGHIJOC_ != 0) {
+        output.writeUInt32(3, unk3300BNJBIGHIJOC_);
       }
       if (activityId_ != 0) {
-        output.writeUInt32(9, activityId_);
+        output.writeUInt32(5, activityId_);
       }
-      for (int i = 0; i < dungeonTeamList_.size(); i++) {
-        output.writeMessage(11, dungeonTeamList_.get(i));
+      if (unk3300DJBJACGHGDM_ != 0) {
+        output.writeUInt32(9, unk3300DJBJACGHGDM_);
+      }
+      if (unk3300CBAMLHDMKJF_ != 0) {
+        output.writeUInt32(10, unk3300CBAMLHDMKJF_);
       }
       if (stageId_ != 0) {
-        output.writeUInt32(13, stageId_);
-      }
-      if (nextValidSwitchTime_ != 0) {
-        output.writeUInt32(14, nextValidSwitchTime_);
-      }
-      if (curTeamIndex_ != 0) {
-        output.writeUInt32(15, curTeamIndex_);
+        output.writeUInt32(15, stageId_);
       }
       unknownFields.writeTo(output);
     }
@@ -330,29 +334,29 @@ public final class SumoSetNoSwitchPunishTimeNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (noSwitchPunishTime_ != 0) {
+      for (int i = 0; i < dungeonTeamList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, noSwitchPunishTime_);
+          .computeMessageSize(2, dungeonTeamList_.get(i));
+      }
+      if (unk3300BNJBIGHIJOC_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(3, unk3300BNJBIGHIJOC_);
       }
       if (activityId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, activityId_);
+          .computeUInt32Size(5, activityId_);
       }
-      for (int i = 0; i < dungeonTeamList_.size(); i++) {
+      if (unk3300DJBJACGHGDM_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(11, dungeonTeamList_.get(i));
+          .computeUInt32Size(9, unk3300DJBJACGHGDM_);
+      }
+      if (unk3300CBAMLHDMKJF_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(10, unk3300CBAMLHDMKJF_);
       }
       if (stageId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, stageId_);
-      }
-      if (nextValidSwitchTime_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, nextValidSwitchTime_);
-      }
-      if (curTeamIndex_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, curTeamIndex_);
+          .computeUInt32Size(15, stageId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -369,18 +373,18 @@ public final class SumoSetNoSwitchPunishTimeNotifyOuterClass {
       }
       emu.grasscutter.net.proto.SumoSetNoSwitchPunishTimeNotifyOuterClass.SumoSetNoSwitchPunishTimeNotify other = (emu.grasscutter.net.proto.SumoSetNoSwitchPunishTimeNotifyOuterClass.SumoSetNoSwitchPunishTimeNotify) obj;
 
-      if (getCurTeamIndex()
-          != other.getCurTeamIndex()) return false;
       if (getStageId()
           != other.getStageId()) return false;
-      if (!getDungeonTeamListList()
-          .equals(other.getDungeonTeamListList())) return false;
-      if (getNoSwitchPunishTime()
-          != other.getNoSwitchPunishTime()) return false;
-      if (getNextValidSwitchTime()
-          != other.getNextValidSwitchTime()) return false;
+      if (getUnk3300CBAMLHDMKJF()
+          != other.getUnk3300CBAMLHDMKJF()) return false;
       if (getActivityId()
           != other.getActivityId()) return false;
+      if (getUnk3300BNJBIGHIJOC()
+          != other.getUnk3300BNJBIGHIJOC()) return false;
+      if (getUnk3300DJBJACGHGDM()
+          != other.getUnk3300DJBJACGHGDM()) return false;
+      if (!getDungeonTeamListList()
+          .equals(other.getDungeonTeamListList())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -392,20 +396,20 @@ public final class SumoSetNoSwitchPunishTimeNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + CUR_TEAM_INDEX_FIELD_NUMBER;
-      hash = (53 * hash) + getCurTeamIndex();
       hash = (37 * hash) + STAGE_ID_FIELD_NUMBER;
       hash = (53 * hash) + getStageId();
+      hash = (37 * hash) + UNK3300_CBAMLHDMKJF_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300CBAMLHDMKJF();
+      hash = (37 * hash) + ACTIVITY_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getActivityId();
+      hash = (37 * hash) + UNK3300_BNJBIGHIJOC_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300BNJBIGHIJOC();
+      hash = (37 * hash) + UNK3300_DJBJACGHGDM_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300DJBJACGHGDM();
       if (getDungeonTeamListCount() > 0) {
         hash = (37 * hash) + DUNGEON_TEAM_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getDungeonTeamListList().hashCode();
       }
-      hash = (37 * hash) + NO_SWITCH_PUNISH_TIME_FIELD_NUMBER;
-      hash = (53 * hash) + getNoSwitchPunishTime();
-      hash = (37 * hash) + NEXT_VALID_SWITCH_TIME_FIELD_NUMBER;
-      hash = (53 * hash) + getNextValidSwitchTime();
-      hash = (37 * hash) + ACTIVITY_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getActivityId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -503,9 +507,13 @@ public final class SumoSetNoSwitchPunishTimeNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 8935
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 8610;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code SumoSetNoSwitchPunishTimeNotify}
@@ -546,9 +554,15 @@ public final class SumoSetNoSwitchPunishTimeNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        curTeamIndex_ = 0;
-
         stageId_ = 0;
+
+        unk3300CBAMLHDMKJF_ = 0;
+
+        activityId_ = 0;
+
+        unk3300BNJBIGHIJOC_ = 0;
+
+        unk3300DJBJACGHGDM_ = 0;
 
         if (dungeonTeamListBuilder_ == null) {
           dungeonTeamList_ = java.util.Collections.emptyList();
@@ -556,12 +570,6 @@ public final class SumoSetNoSwitchPunishTimeNotifyOuterClass {
         } else {
           dungeonTeamListBuilder_.clear();
         }
-        noSwitchPunishTime_ = 0;
-
-        nextValidSwitchTime_ = 0;
-
-        activityId_ = 0;
-
         return this;
       }
 
@@ -589,8 +597,11 @@ public final class SumoSetNoSwitchPunishTimeNotifyOuterClass {
       public emu.grasscutter.net.proto.SumoSetNoSwitchPunishTimeNotifyOuterClass.SumoSetNoSwitchPunishTimeNotify buildPartial() {
         emu.grasscutter.net.proto.SumoSetNoSwitchPunishTimeNotifyOuterClass.SumoSetNoSwitchPunishTimeNotify result = new emu.grasscutter.net.proto.SumoSetNoSwitchPunishTimeNotifyOuterClass.SumoSetNoSwitchPunishTimeNotify(this);
         int from_bitField0_ = bitField0_;
-        result.curTeamIndex_ = curTeamIndex_;
         result.stageId_ = stageId_;
+        result.unk3300CBAMLHDMKJF_ = unk3300CBAMLHDMKJF_;
+        result.activityId_ = activityId_;
+        result.unk3300BNJBIGHIJOC_ = unk3300BNJBIGHIJOC_;
+        result.unk3300DJBJACGHGDM_ = unk3300DJBJACGHGDM_;
         if (dungeonTeamListBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0)) {
             dungeonTeamList_ = java.util.Collections.unmodifiableList(dungeonTeamList_);
@@ -600,9 +611,6 @@ public final class SumoSetNoSwitchPunishTimeNotifyOuterClass {
         } else {
           result.dungeonTeamList_ = dungeonTeamListBuilder_.build();
         }
-        result.noSwitchPunishTime_ = noSwitchPunishTime_;
-        result.nextValidSwitchTime_ = nextValidSwitchTime_;
-        result.activityId_ = activityId_;
         onBuilt();
         return result;
       }
@@ -651,11 +659,20 @@ public final class SumoSetNoSwitchPunishTimeNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.SumoSetNoSwitchPunishTimeNotifyOuterClass.SumoSetNoSwitchPunishTimeNotify other) {
         if (other == emu.grasscutter.net.proto.SumoSetNoSwitchPunishTimeNotifyOuterClass.SumoSetNoSwitchPunishTimeNotify.getDefaultInstance()) return this;
-        if (other.getCurTeamIndex() != 0) {
-          setCurTeamIndex(other.getCurTeamIndex());
-        }
         if (other.getStageId() != 0) {
           setStageId(other.getStageId());
+        }
+        if (other.getUnk3300CBAMLHDMKJF() != 0) {
+          setUnk3300CBAMLHDMKJF(other.getUnk3300CBAMLHDMKJF());
+        }
+        if (other.getActivityId() != 0) {
+          setActivityId(other.getActivityId());
+        }
+        if (other.getUnk3300BNJBIGHIJOC() != 0) {
+          setUnk3300BNJBIGHIJOC(other.getUnk3300BNJBIGHIJOC());
+        }
+        if (other.getUnk3300DJBJACGHGDM() != 0) {
+          setUnk3300DJBJACGHGDM(other.getUnk3300DJBJACGHGDM());
         }
         if (dungeonTeamListBuilder_ == null) {
           if (!other.dungeonTeamList_.isEmpty()) {
@@ -682,15 +699,6 @@ public final class SumoSetNoSwitchPunishTimeNotifyOuterClass {
               dungeonTeamListBuilder_.addAllMessages(other.dungeonTeamList_);
             }
           }
-        }
-        if (other.getNoSwitchPunishTime() != 0) {
-          setNoSwitchPunishTime(other.getNoSwitchPunishTime());
-        }
-        if (other.getNextValidSwitchTime() != 0) {
-          setNextValidSwitchTime(other.getNextValidSwitchTime());
-        }
-        if (other.getActivityId() != 0) {
-          setActivityId(other.getActivityId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -722,40 +730,9 @@ public final class SumoSetNoSwitchPunishTimeNotifyOuterClass {
       }
       private int bitField0_;
 
-      private int curTeamIndex_ ;
-      /**
-       * <code>uint32 cur_team_index = 15;</code>
-       * @return The curTeamIndex.
-       */
-      @java.lang.Override
-      public int getCurTeamIndex() {
-        return curTeamIndex_;
-      }
-      /**
-       * <code>uint32 cur_team_index = 15;</code>
-       * @param value The curTeamIndex to set.
-       * @return This builder for chaining.
-       */
-      public Builder setCurTeamIndex(int value) {
-        
-        curTeamIndex_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 cur_team_index = 15;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearCurTeamIndex() {
-        
-        curTeamIndex_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int stageId_ ;
       /**
-       * <code>uint32 stage_id = 13;</code>
+       * <code>uint32 stage_id = 15;</code>
        * @return The stageId.
        */
       @java.lang.Override
@@ -763,7 +740,7 @@ public final class SumoSetNoSwitchPunishTimeNotifyOuterClass {
         return stageId_;
       }
       /**
-       * <code>uint32 stage_id = 13;</code>
+       * <code>uint32 stage_id = 15;</code>
        * @param value The stageId to set.
        * @return This builder for chaining.
        */
@@ -774,12 +751,136 @@ public final class SumoSetNoSwitchPunishTimeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 stage_id = 13;</code>
+       * <code>uint32 stage_id = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearStageId() {
         
         stageId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int unk3300CBAMLHDMKJF_ ;
+      /**
+       * <code>uint32 Unk3300_CBAMLHDMKJF = 10;</code>
+       * @return The unk3300CBAMLHDMKJF.
+       */
+      @java.lang.Override
+      public int getUnk3300CBAMLHDMKJF() {
+        return unk3300CBAMLHDMKJF_;
+      }
+      /**
+       * <code>uint32 Unk3300_CBAMLHDMKJF = 10;</code>
+       * @param value The unk3300CBAMLHDMKJF to set.
+       * @return This builder for chaining.
+       */
+      public Builder setUnk3300CBAMLHDMKJF(int value) {
+        
+        unk3300CBAMLHDMKJF_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 Unk3300_CBAMLHDMKJF = 10;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearUnk3300CBAMLHDMKJF() {
+        
+        unk3300CBAMLHDMKJF_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int activityId_ ;
+      /**
+       * <code>uint32 activity_id = 5;</code>
+       * @return The activityId.
+       */
+      @java.lang.Override
+      public int getActivityId() {
+        return activityId_;
+      }
+      /**
+       * <code>uint32 activity_id = 5;</code>
+       * @param value The activityId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setActivityId(int value) {
+        
+        activityId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 activity_id = 5;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearActivityId() {
+        
+        activityId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int unk3300BNJBIGHIJOC_ ;
+      /**
+       * <code>uint32 Unk3300_BNJBIGHIJOC = 3;</code>
+       * @return The unk3300BNJBIGHIJOC.
+       */
+      @java.lang.Override
+      public int getUnk3300BNJBIGHIJOC() {
+        return unk3300BNJBIGHIJOC_;
+      }
+      /**
+       * <code>uint32 Unk3300_BNJBIGHIJOC = 3;</code>
+       * @param value The unk3300BNJBIGHIJOC to set.
+       * @return This builder for chaining.
+       */
+      public Builder setUnk3300BNJBIGHIJOC(int value) {
+        
+        unk3300BNJBIGHIJOC_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 Unk3300_BNJBIGHIJOC = 3;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearUnk3300BNJBIGHIJOC() {
+        
+        unk3300BNJBIGHIJOC_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int unk3300DJBJACGHGDM_ ;
+      /**
+       * <code>uint32 Unk3300_DJBJACGHGDM = 9;</code>
+       * @return The unk3300DJBJACGHGDM.
+       */
+      @java.lang.Override
+      public int getUnk3300DJBJACGHGDM() {
+        return unk3300DJBJACGHGDM_;
+      }
+      /**
+       * <code>uint32 Unk3300_DJBJACGHGDM = 9;</code>
+       * @param value The unk3300DJBJACGHGDM to set.
+       * @return This builder for chaining.
+       */
+      public Builder setUnk3300DJBJACGHGDM(int value) {
+        
+        unk3300DJBJACGHGDM_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 Unk3300_DJBJACGHGDM = 9;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearUnk3300DJBJACGHGDM() {
+        
+        unk3300DJBJACGHGDM_ = 0;
         onChanged();
         return this;
       }
@@ -797,7 +898,7 @@ public final class SumoSetNoSwitchPunishTimeNotifyOuterClass {
           emu.grasscutter.net.proto.SumoDungeonTeamOuterClass.SumoDungeonTeam, emu.grasscutter.net.proto.SumoDungeonTeamOuterClass.SumoDungeonTeam.Builder, emu.grasscutter.net.proto.SumoDungeonTeamOuterClass.SumoDungeonTeamOrBuilder> dungeonTeamListBuilder_;
 
       /**
-       * <code>repeated .SumoDungeonTeam dungeon_team_list = 11;</code>
+       * <code>repeated .SumoDungeonTeam dungeon_team_list = 2;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.SumoDungeonTeamOuterClass.SumoDungeonTeam> getDungeonTeamListList() {
         if (dungeonTeamListBuilder_ == null) {
@@ -807,7 +908,7 @@ public final class SumoSetNoSwitchPunishTimeNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .SumoDungeonTeam dungeon_team_list = 11;</code>
+       * <code>repeated .SumoDungeonTeam dungeon_team_list = 2;</code>
        */
       public int getDungeonTeamListCount() {
         if (dungeonTeamListBuilder_ == null) {
@@ -817,7 +918,7 @@ public final class SumoSetNoSwitchPunishTimeNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .SumoDungeonTeam dungeon_team_list = 11;</code>
+       * <code>repeated .SumoDungeonTeam dungeon_team_list = 2;</code>
        */
       public emu.grasscutter.net.proto.SumoDungeonTeamOuterClass.SumoDungeonTeam getDungeonTeamList(int index) {
         if (dungeonTeamListBuilder_ == null) {
@@ -827,7 +928,7 @@ public final class SumoSetNoSwitchPunishTimeNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .SumoDungeonTeam dungeon_team_list = 11;</code>
+       * <code>repeated .SumoDungeonTeam dungeon_team_list = 2;</code>
        */
       public Builder setDungeonTeamList(
           int index, emu.grasscutter.net.proto.SumoDungeonTeamOuterClass.SumoDungeonTeam value) {
@@ -844,7 +945,7 @@ public final class SumoSetNoSwitchPunishTimeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .SumoDungeonTeam dungeon_team_list = 11;</code>
+       * <code>repeated .SumoDungeonTeam dungeon_team_list = 2;</code>
        */
       public Builder setDungeonTeamList(
           int index, emu.grasscutter.net.proto.SumoDungeonTeamOuterClass.SumoDungeonTeam.Builder builderForValue) {
@@ -858,7 +959,7 @@ public final class SumoSetNoSwitchPunishTimeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .SumoDungeonTeam dungeon_team_list = 11;</code>
+       * <code>repeated .SumoDungeonTeam dungeon_team_list = 2;</code>
        */
       public Builder addDungeonTeamList(emu.grasscutter.net.proto.SumoDungeonTeamOuterClass.SumoDungeonTeam value) {
         if (dungeonTeamListBuilder_ == null) {
@@ -874,7 +975,7 @@ public final class SumoSetNoSwitchPunishTimeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .SumoDungeonTeam dungeon_team_list = 11;</code>
+       * <code>repeated .SumoDungeonTeam dungeon_team_list = 2;</code>
        */
       public Builder addDungeonTeamList(
           int index, emu.grasscutter.net.proto.SumoDungeonTeamOuterClass.SumoDungeonTeam value) {
@@ -891,7 +992,7 @@ public final class SumoSetNoSwitchPunishTimeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .SumoDungeonTeam dungeon_team_list = 11;</code>
+       * <code>repeated .SumoDungeonTeam dungeon_team_list = 2;</code>
        */
       public Builder addDungeonTeamList(
           emu.grasscutter.net.proto.SumoDungeonTeamOuterClass.SumoDungeonTeam.Builder builderForValue) {
@@ -905,7 +1006,7 @@ public final class SumoSetNoSwitchPunishTimeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .SumoDungeonTeam dungeon_team_list = 11;</code>
+       * <code>repeated .SumoDungeonTeam dungeon_team_list = 2;</code>
        */
       public Builder addDungeonTeamList(
           int index, emu.grasscutter.net.proto.SumoDungeonTeamOuterClass.SumoDungeonTeam.Builder builderForValue) {
@@ -919,7 +1020,7 @@ public final class SumoSetNoSwitchPunishTimeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .SumoDungeonTeam dungeon_team_list = 11;</code>
+       * <code>repeated .SumoDungeonTeam dungeon_team_list = 2;</code>
        */
       public Builder addAllDungeonTeamList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.SumoDungeonTeamOuterClass.SumoDungeonTeam> values) {
@@ -934,7 +1035,7 @@ public final class SumoSetNoSwitchPunishTimeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .SumoDungeonTeam dungeon_team_list = 11;</code>
+       * <code>repeated .SumoDungeonTeam dungeon_team_list = 2;</code>
        */
       public Builder clearDungeonTeamList() {
         if (dungeonTeamListBuilder_ == null) {
@@ -947,7 +1048,7 @@ public final class SumoSetNoSwitchPunishTimeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .SumoDungeonTeam dungeon_team_list = 11;</code>
+       * <code>repeated .SumoDungeonTeam dungeon_team_list = 2;</code>
        */
       public Builder removeDungeonTeamList(int index) {
         if (dungeonTeamListBuilder_ == null) {
@@ -960,14 +1061,14 @@ public final class SumoSetNoSwitchPunishTimeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .SumoDungeonTeam dungeon_team_list = 11;</code>
+       * <code>repeated .SumoDungeonTeam dungeon_team_list = 2;</code>
        */
       public emu.grasscutter.net.proto.SumoDungeonTeamOuterClass.SumoDungeonTeam.Builder getDungeonTeamListBuilder(
           int index) {
         return getDungeonTeamListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .SumoDungeonTeam dungeon_team_list = 11;</code>
+       * <code>repeated .SumoDungeonTeam dungeon_team_list = 2;</code>
        */
       public emu.grasscutter.net.proto.SumoDungeonTeamOuterClass.SumoDungeonTeamOrBuilder getDungeonTeamListOrBuilder(
           int index) {
@@ -977,7 +1078,7 @@ public final class SumoSetNoSwitchPunishTimeNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .SumoDungeonTeam dungeon_team_list = 11;</code>
+       * <code>repeated .SumoDungeonTeam dungeon_team_list = 2;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.SumoDungeonTeamOuterClass.SumoDungeonTeamOrBuilder> 
            getDungeonTeamListOrBuilderList() {
@@ -988,14 +1089,14 @@ public final class SumoSetNoSwitchPunishTimeNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .SumoDungeonTeam dungeon_team_list = 11;</code>
+       * <code>repeated .SumoDungeonTeam dungeon_team_list = 2;</code>
        */
       public emu.grasscutter.net.proto.SumoDungeonTeamOuterClass.SumoDungeonTeam.Builder addDungeonTeamListBuilder() {
         return getDungeonTeamListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.SumoDungeonTeamOuterClass.SumoDungeonTeam.getDefaultInstance());
       }
       /**
-       * <code>repeated .SumoDungeonTeam dungeon_team_list = 11;</code>
+       * <code>repeated .SumoDungeonTeam dungeon_team_list = 2;</code>
        */
       public emu.grasscutter.net.proto.SumoDungeonTeamOuterClass.SumoDungeonTeam.Builder addDungeonTeamListBuilder(
           int index) {
@@ -1003,7 +1104,7 @@ public final class SumoSetNoSwitchPunishTimeNotifyOuterClass {
             index, emu.grasscutter.net.proto.SumoDungeonTeamOuterClass.SumoDungeonTeam.getDefaultInstance());
       }
       /**
-       * <code>repeated .SumoDungeonTeam dungeon_team_list = 11;</code>
+       * <code>repeated .SumoDungeonTeam dungeon_team_list = 2;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.SumoDungeonTeamOuterClass.SumoDungeonTeam.Builder> 
            getDungeonTeamListBuilderList() {
@@ -1022,99 +1123,6 @@ public final class SumoSetNoSwitchPunishTimeNotifyOuterClass {
           dungeonTeamList_ = null;
         }
         return dungeonTeamListBuilder_;
-      }
-
-      private int noSwitchPunishTime_ ;
-      /**
-       * <code>uint32 no_switch_punish_time = 2;</code>
-       * @return The noSwitchPunishTime.
-       */
-      @java.lang.Override
-      public int getNoSwitchPunishTime() {
-        return noSwitchPunishTime_;
-      }
-      /**
-       * <code>uint32 no_switch_punish_time = 2;</code>
-       * @param value The noSwitchPunishTime to set.
-       * @return This builder for chaining.
-       */
-      public Builder setNoSwitchPunishTime(int value) {
-        
-        noSwitchPunishTime_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 no_switch_punish_time = 2;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearNoSwitchPunishTime() {
-        
-        noSwitchPunishTime_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int nextValidSwitchTime_ ;
-      /**
-       * <code>uint32 next_valid_switch_time = 14;</code>
-       * @return The nextValidSwitchTime.
-       */
-      @java.lang.Override
-      public int getNextValidSwitchTime() {
-        return nextValidSwitchTime_;
-      }
-      /**
-       * <code>uint32 next_valid_switch_time = 14;</code>
-       * @param value The nextValidSwitchTime to set.
-       * @return This builder for chaining.
-       */
-      public Builder setNextValidSwitchTime(int value) {
-        
-        nextValidSwitchTime_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 next_valid_switch_time = 14;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearNextValidSwitchTime() {
-        
-        nextValidSwitchTime_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int activityId_ ;
-      /**
-       * <code>uint32 activity_id = 9;</code>
-       * @return The activityId.
-       */
-      @java.lang.Override
-      public int getActivityId() {
-        return activityId_;
-      }
-      /**
-       * <code>uint32 activity_id = 9;</code>
-       * @param value The activityId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setActivityId(int value) {
-        
-        activityId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 activity_id = 9;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearActivityId() {
-        
-        activityId_ = 0;
-        onChanged();
-        return this;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -1185,11 +1193,11 @@ public final class SumoSetNoSwitchPunishTimeNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n%SumoSetNoSwitchPunishTimeNotify.proto\032" +
       "\025SumoDungeonTeam.proto\"\314\001\n\037SumoSetNoSwit" +
-      "chPunishTimeNotify\022\026\n\016cur_team_index\030\017 \001" +
-      "(\r\022\020\n\010stage_id\030\r \001(\r\022+\n\021dungeon_team_lis" +
-      "t\030\013 \003(\0132\020.SumoDungeonTeam\022\035\n\025no_switch_p" +
-      "unish_time\030\002 \001(\r\022\036\n\026next_valid_switch_ti" +
-      "me\030\016 \001(\r\022\023\n\013activity_id\030\t \001(\rB\033\n\031emu.gra" +
+      "chPunishTimeNotify\022\020\n\010stage_id\030\017 \001(\r\022\033\n\023" +
+      "Unk3300_CBAMLHDMKJF\030\n \001(\r\022\023\n\013activity_id" +
+      "\030\005 \001(\r\022\033\n\023Unk3300_BNJBIGHIJOC\030\003 \001(\r\022\033\n\023U" +
+      "nk3300_DJBJACGHGDM\030\t \001(\r\022+\n\021dungeon_team" +
+      "_list\030\002 \003(\0132\020.SumoDungeonTeamB\033\n\031emu.gra" +
       "sscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -1202,7 +1210,7 @@ public final class SumoSetNoSwitchPunishTimeNotifyOuterClass {
     internal_static_SumoSetNoSwitchPunishTimeNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SumoSetNoSwitchPunishTimeNotify_descriptor,
-        new java.lang.String[] { "CurTeamIndex", "StageId", "DungeonTeamList", "NoSwitchPunishTime", "NextValidSwitchTime", "ActivityId", });
+        new java.lang.String[] { "StageId", "Unk3300CBAMLHDMKJF", "ActivityId", "Unk3300BNJBIGHIJOC", "Unk3300DJBJACGHGDM", "DungeonTeamList", });
     emu.grasscutter.net.proto.SumoDungeonTeamOuterClass.getDescriptor();
   }
 

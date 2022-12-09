@@ -19,16 +19,20 @@ public final class MuqadasPotionRestartDungeonRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 5;</code>
+     * <code>int32 retcode = 1;</code>
      * @return The retcode.
      */
     int getRetcode();
   }
   /**
    * <pre>
-   * CmdId: 21208
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 20780;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code MuqadasPotionRestartDungeonRsp}
@@ -75,7 +79,7 @@ public final class MuqadasPotionRestartDungeonRspOuterClass {
             case 0:
               done = true;
               break;
-            case 40: {
+            case 8: {
 
               retcode_ = input.readInt32();
               break;
@@ -112,10 +116,10 @@ public final class MuqadasPotionRestartDungeonRspOuterClass {
               emu.grasscutter.net.proto.MuqadasPotionRestartDungeonRspOuterClass.MuqadasPotionRestartDungeonRsp.class, emu.grasscutter.net.proto.MuqadasPotionRestartDungeonRspOuterClass.MuqadasPotionRestartDungeonRsp.Builder.class);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 5;
+    public static final int RETCODE_FIELD_NUMBER = 1;
     private int retcode_;
     /**
-     * <code>int32 retcode = 5;</code>
+     * <code>int32 retcode = 1;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -138,7 +142,7 @@ public final class MuqadasPotionRestartDungeonRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (retcode_ != 0) {
-        output.writeInt32(5, retcode_);
+        output.writeInt32(1, retcode_);
       }
       unknownFields.writeTo(output);
     }
@@ -151,7 +155,7 @@ public final class MuqadasPotionRestartDungeonRspOuterClass {
       size = 0;
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(5, retcode_);
+          .computeInt32Size(1, retcode_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -280,9 +284,13 @@ public final class MuqadasPotionRestartDungeonRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 21208
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 20780;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code MuqadasPotionRestartDungeonRsp}
@@ -433,7 +441,7 @@ public final class MuqadasPotionRestartDungeonRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 5;</code>
+       * <code>int32 retcode = 1;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -441,7 +449,7 @@ public final class MuqadasPotionRestartDungeonRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 5;</code>
+       * <code>int32 retcode = 1;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -452,7 +460,7 @@ public final class MuqadasPotionRestartDungeonRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 5;</code>
+       * <code>int32 retcode = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -530,7 +538,7 @@ public final class MuqadasPotionRestartDungeonRspOuterClass {
     java.lang.String[] descriptorData = {
       "\n$MuqadasPotionRestartDungeonRsp.proto\"1" +
       "\n\036MuqadasPotionRestartDungeonRsp\022\017\n\007retc" +
-      "ode\030\005 \001(\005B\033\n\031emu.grasscutter.net.protob\006" +
+      "ode\030\001 \001(\005B\033\n\031emu.grasscutter.net.protob\006" +
       "proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

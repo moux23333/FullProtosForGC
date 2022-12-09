@@ -19,6 +19,24 @@ public final class GCGDSDeckDataOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
+     * <code>fixed32 create_time = 5;</code>
+     * @return The createTime.
+     */
+    int getCreateTime();
+
+    /**
+     * <code>uint32 field_id = 13;</code>
+     * @return The fieldId.
+     */
+    int getFieldId();
+
+    /**
+     * <code>uint32 card_back_id = 9;</code>
+     * @return The cardBackId.
+     */
+    int getCardBackId();
+
+    /**
      * <code>repeated uint32 card_list = 1;</code>
      * @return A list containing the cardList.
      */
@@ -36,63 +54,45 @@ public final class GCGDSDeckDataOuterClass {
     int getCardList(int index);
 
     /**
-     * <code>uint32 card_back_id = 15;</code>
-     * @return The cardBackId.
-     */
-    int getCardBackId();
-
-    /**
-     * <code>repeated uint32 character_card_list = 10;</code>
+     * <code>repeated uint32 character_card_list = 7;</code>
      * @return A list containing the characterCardList.
      */
     java.util.List<java.lang.Integer> getCharacterCardListList();
     /**
-     * <code>repeated uint32 character_card_list = 10;</code>
+     * <code>repeated uint32 character_card_list = 7;</code>
      * @return The count of characterCardList.
      */
     int getCharacterCardListCount();
     /**
-     * <code>repeated uint32 character_card_list = 10;</code>
+     * <code>repeated uint32 character_card_list = 7;</code>
      * @param index The index of the element to return.
      * @return The characterCardList at the given index.
      */
     int getCharacterCardList(int index);
 
     /**
-     * <code>string name = 5;</code>
+     * <code>uint32 id = 12;</code>
+     * @return The id.
+     */
+    int getId();
+
+    /**
+     * <code>string name = 10;</code>
      * @return The name.
      */
     java.lang.String getName();
     /**
-     * <code>string name = 5;</code>
+     * <code>string name = 10;</code>
      * @return The bytes for name.
      */
     com.google.protobuf.ByteString
         getNameBytes();
 
     /**
-     * <code>uint32 id = 3;</code>
-     * @return The id.
-     */
-    int getId();
-
-    /**
-     * <code>fixed32 create_time = 13;</code>
-     * @return The createTime.
-     */
-    int getCreateTime();
-
-    /**
-     * <code>bool is_valid = 4;</code>
+     * <code>bool is_valid = 15;</code>
      * @return The isValid.
      */
     boolean getIsValid();
-
-    /**
-     * <code>uint32 field_id = 7;</code>
-     * @return The fieldId.
-     */
-    int getFieldId();
   }
   /**
    * Protobuf type {@code GCGDSDeckData}
@@ -164,28 +164,12 @@ public final class GCGDSDeckDataOuterClass {
               input.popLimit(limit);
               break;
             }
-            case 24: {
+            case 45: {
 
-              id_ = input.readUInt32();
-              break;
-            }
-            case 32: {
-
-              isValid_ = input.readBool();
-              break;
-            }
-            case 42: {
-              java.lang.String s = input.readStringRequireUtf8();
-
-              name_ = s;
+              createTime_ = input.readFixed32();
               break;
             }
             case 56: {
-
-              fieldId_ = input.readUInt32();
-              break;
-            }
-            case 80: {
               if (!((mutable_bitField0_ & 0x00000002) != 0)) {
                 characterCardList_ = newIntList();
                 mutable_bitField0_ |= 0x00000002;
@@ -193,7 +177,7 @@ public final class GCGDSDeckDataOuterClass {
               characterCardList_.addInt(input.readUInt32());
               break;
             }
-            case 82: {
+            case 58: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000002) != 0) && input.getBytesUntilLimit() > 0) {
@@ -206,14 +190,30 @@ public final class GCGDSDeckDataOuterClass {
               input.popLimit(limit);
               break;
             }
-            case 109: {
+            case 72: {
 
-              createTime_ = input.readFixed32();
+              cardBackId_ = input.readUInt32();
+              break;
+            }
+            case 82: {
+              java.lang.String s = input.readStringRequireUtf8();
+
+              name_ = s;
+              break;
+            }
+            case 96: {
+
+              id_ = input.readUInt32();
+              break;
+            }
+            case 104: {
+
+              fieldId_ = input.readUInt32();
               break;
             }
             case 120: {
 
-              cardBackId_ = input.readUInt32();
+              isValid_ = input.readBool();
               break;
             }
             default: {
@@ -254,6 +254,39 @@ public final class GCGDSDeckDataOuterClass {
               emu.grasscutter.net.proto.GCGDSDeckDataOuterClass.GCGDSDeckData.class, emu.grasscutter.net.proto.GCGDSDeckDataOuterClass.GCGDSDeckData.Builder.class);
     }
 
+    public static final int CREATE_TIME_FIELD_NUMBER = 5;
+    private int createTime_;
+    /**
+     * <code>fixed32 create_time = 5;</code>
+     * @return The createTime.
+     */
+    @java.lang.Override
+    public int getCreateTime() {
+      return createTime_;
+    }
+
+    public static final int FIELD_ID_FIELD_NUMBER = 13;
+    private int fieldId_;
+    /**
+     * <code>uint32 field_id = 13;</code>
+     * @return The fieldId.
+     */
+    @java.lang.Override
+    public int getFieldId() {
+      return fieldId_;
+    }
+
+    public static final int CARD_BACK_ID_FIELD_NUMBER = 9;
+    private int cardBackId_;
+    /**
+     * <code>uint32 card_back_id = 9;</code>
+     * @return The cardBackId.
+     */
+    @java.lang.Override
+    public int getCardBackId() {
+      return cardBackId_;
+    }
+
     public static final int CARD_LIST_FIELD_NUMBER = 1;
     private com.google.protobuf.Internal.IntList cardList_;
     /**
@@ -282,21 +315,10 @@ public final class GCGDSDeckDataOuterClass {
     }
     private int cardListMemoizedSerializedSize = -1;
 
-    public static final int CARD_BACK_ID_FIELD_NUMBER = 15;
-    private int cardBackId_;
-    /**
-     * <code>uint32 card_back_id = 15;</code>
-     * @return The cardBackId.
-     */
-    @java.lang.Override
-    public int getCardBackId() {
-      return cardBackId_;
-    }
-
-    public static final int CHARACTER_CARD_LIST_FIELD_NUMBER = 10;
+    public static final int CHARACTER_CARD_LIST_FIELD_NUMBER = 7;
     private com.google.protobuf.Internal.IntList characterCardList_;
     /**
-     * <code>repeated uint32 character_card_list = 10;</code>
+     * <code>repeated uint32 character_card_list = 7;</code>
      * @return A list containing the characterCardList.
      */
     @java.lang.Override
@@ -305,14 +327,14 @@ public final class GCGDSDeckDataOuterClass {
       return characterCardList_;
     }
     /**
-     * <code>repeated uint32 character_card_list = 10;</code>
+     * <code>repeated uint32 character_card_list = 7;</code>
      * @return The count of characterCardList.
      */
     public int getCharacterCardListCount() {
       return characterCardList_.size();
     }
     /**
-     * <code>repeated uint32 character_card_list = 10;</code>
+     * <code>repeated uint32 character_card_list = 7;</code>
      * @param index The index of the element to return.
      * @return The characterCardList at the given index.
      */
@@ -321,10 +343,21 @@ public final class GCGDSDeckDataOuterClass {
     }
     private int characterCardListMemoizedSerializedSize = -1;
 
-    public static final int NAME_FIELD_NUMBER = 5;
+    public static final int ID_FIELD_NUMBER = 12;
+    private int id_;
+    /**
+     * <code>uint32 id = 12;</code>
+     * @return The id.
+     */
+    @java.lang.Override
+    public int getId() {
+      return id_;
+    }
+
+    public static final int NAME_FIELD_NUMBER = 10;
     private volatile java.lang.Object name_;
     /**
-     * <code>string name = 5;</code>
+     * <code>string name = 10;</code>
      * @return The name.
      */
     @java.lang.Override
@@ -341,7 +374,7 @@ public final class GCGDSDeckDataOuterClass {
       }
     }
     /**
-     * <code>string name = 5;</code>
+     * <code>string name = 10;</code>
      * @return The bytes for name.
      */
     @java.lang.Override
@@ -359,48 +392,15 @@ public final class GCGDSDeckDataOuterClass {
       }
     }
 
-    public static final int ID_FIELD_NUMBER = 3;
-    private int id_;
-    /**
-     * <code>uint32 id = 3;</code>
-     * @return The id.
-     */
-    @java.lang.Override
-    public int getId() {
-      return id_;
-    }
-
-    public static final int CREATE_TIME_FIELD_NUMBER = 13;
-    private int createTime_;
-    /**
-     * <code>fixed32 create_time = 13;</code>
-     * @return The createTime.
-     */
-    @java.lang.Override
-    public int getCreateTime() {
-      return createTime_;
-    }
-
-    public static final int IS_VALID_FIELD_NUMBER = 4;
+    public static final int IS_VALID_FIELD_NUMBER = 15;
     private boolean isValid_;
     /**
-     * <code>bool is_valid = 4;</code>
+     * <code>bool is_valid = 15;</code>
      * @return The isValid.
      */
     @java.lang.Override
     public boolean getIsValid() {
       return isValid_;
-    }
-
-    public static final int FIELD_ID_FIELD_NUMBER = 7;
-    private int fieldId_;
-    /**
-     * <code>uint32 field_id = 7;</code>
-     * @return The fieldId.
-     */
-    @java.lang.Override
-    public int getFieldId() {
-      return fieldId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -425,30 +425,30 @@ public final class GCGDSDeckDataOuterClass {
       for (int i = 0; i < cardList_.size(); i++) {
         output.writeUInt32NoTag(cardList_.getInt(i));
       }
-      if (id_ != 0) {
-        output.writeUInt32(3, id_);
-      }
-      if (isValid_ != false) {
-        output.writeBool(4, isValid_);
-      }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(name_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 5, name_);
-      }
-      if (fieldId_ != 0) {
-        output.writeUInt32(7, fieldId_);
+      if (createTime_ != 0) {
+        output.writeFixed32(5, createTime_);
       }
       if (getCharacterCardListList().size() > 0) {
-        output.writeUInt32NoTag(82);
+        output.writeUInt32NoTag(58);
         output.writeUInt32NoTag(characterCardListMemoizedSerializedSize);
       }
       for (int i = 0; i < characterCardList_.size(); i++) {
         output.writeUInt32NoTag(characterCardList_.getInt(i));
       }
-      if (createTime_ != 0) {
-        output.writeFixed32(13, createTime_);
-      }
       if (cardBackId_ != 0) {
-        output.writeUInt32(15, cardBackId_);
+        output.writeUInt32(9, cardBackId_);
+      }
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(name_)) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 10, name_);
+      }
+      if (id_ != 0) {
+        output.writeUInt32(12, id_);
+      }
+      if (fieldId_ != 0) {
+        output.writeUInt32(13, fieldId_);
+      }
+      if (isValid_ != false) {
+        output.writeBool(15, isValid_);
       }
       unknownFields.writeTo(output);
     }
@@ -473,20 +473,9 @@ public final class GCGDSDeckDataOuterClass {
         }
         cardListMemoizedSerializedSize = dataSize;
       }
-      if (id_ != 0) {
+      if (createTime_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, id_);
-      }
-      if (isValid_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(4, isValid_);
-      }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(name_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(5, name_);
-      }
-      if (fieldId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, fieldId_);
+          .computeFixed32Size(5, createTime_);
       }
       {
         int dataSize = 0;
@@ -502,13 +491,24 @@ public final class GCGDSDeckDataOuterClass {
         }
         characterCardListMemoizedSerializedSize = dataSize;
       }
-      if (createTime_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeFixed32Size(13, createTime_);
-      }
       if (cardBackId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, cardBackId_);
+          .computeUInt32Size(9, cardBackId_);
+      }
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(name_)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(10, name_);
+      }
+      if (id_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(12, id_);
+      }
+      if (fieldId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(13, fieldId_);
+      }
+      if (isValid_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(15, isValid_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -525,22 +525,22 @@ public final class GCGDSDeckDataOuterClass {
       }
       emu.grasscutter.net.proto.GCGDSDeckDataOuterClass.GCGDSDeckData other = (emu.grasscutter.net.proto.GCGDSDeckDataOuterClass.GCGDSDeckData) obj;
 
-      if (!getCardListList()
-          .equals(other.getCardListList())) return false;
-      if (getCardBackId()
-          != other.getCardBackId()) return false;
-      if (!getCharacterCardListList()
-          .equals(other.getCharacterCardListList())) return false;
-      if (!getName()
-          .equals(other.getName())) return false;
-      if (getId()
-          != other.getId()) return false;
       if (getCreateTime()
           != other.getCreateTime()) return false;
-      if (getIsValid()
-          != other.getIsValid()) return false;
       if (getFieldId()
           != other.getFieldId()) return false;
+      if (getCardBackId()
+          != other.getCardBackId()) return false;
+      if (!getCardListList()
+          .equals(other.getCardListList())) return false;
+      if (!getCharacterCardListList()
+          .equals(other.getCharacterCardListList())) return false;
+      if (getId()
+          != other.getId()) return false;
+      if (!getName()
+          .equals(other.getName())) return false;
+      if (getIsValid()
+          != other.getIsValid()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -552,27 +552,27 @@ public final class GCGDSDeckDataOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + CREATE_TIME_FIELD_NUMBER;
+      hash = (53 * hash) + getCreateTime();
+      hash = (37 * hash) + FIELD_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getFieldId();
+      hash = (37 * hash) + CARD_BACK_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getCardBackId();
       if (getCardListCount() > 0) {
         hash = (37 * hash) + CARD_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getCardListList().hashCode();
       }
-      hash = (37 * hash) + CARD_BACK_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getCardBackId();
       if (getCharacterCardListCount() > 0) {
         hash = (37 * hash) + CHARACTER_CARD_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getCharacterCardListList().hashCode();
       }
-      hash = (37 * hash) + NAME_FIELD_NUMBER;
-      hash = (53 * hash) + getName().hashCode();
       hash = (37 * hash) + ID_FIELD_NUMBER;
       hash = (53 * hash) + getId();
-      hash = (37 * hash) + CREATE_TIME_FIELD_NUMBER;
-      hash = (53 * hash) + getCreateTime();
+      hash = (37 * hash) + NAME_FIELD_NUMBER;
+      hash = (53 * hash) + getName().hashCode();
       hash = (37 * hash) + IS_VALID_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsValid());
-      hash = (37 * hash) + FIELD_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getFieldId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -706,21 +706,21 @@ public final class GCGDSDeckDataOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        cardList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000001);
-        cardBackId_ = 0;
-
-        characterCardList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000002);
-        name_ = "";
-
-        id_ = 0;
-
         createTime_ = 0;
 
-        isValid_ = false;
-
         fieldId_ = 0;
+
+        cardBackId_ = 0;
+
+        cardList_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000001);
+        characterCardList_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000002);
+        id_ = 0;
+
+        name_ = "";
+
+        isValid_ = false;
 
         return this;
       }
@@ -749,22 +749,22 @@ public final class GCGDSDeckDataOuterClass {
       public emu.grasscutter.net.proto.GCGDSDeckDataOuterClass.GCGDSDeckData buildPartial() {
         emu.grasscutter.net.proto.GCGDSDeckDataOuterClass.GCGDSDeckData result = new emu.grasscutter.net.proto.GCGDSDeckDataOuterClass.GCGDSDeckData(this);
         int from_bitField0_ = bitField0_;
+        result.createTime_ = createTime_;
+        result.fieldId_ = fieldId_;
+        result.cardBackId_ = cardBackId_;
         if (((bitField0_ & 0x00000001) != 0)) {
           cardList_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000001);
         }
         result.cardList_ = cardList_;
-        result.cardBackId_ = cardBackId_;
         if (((bitField0_ & 0x00000002) != 0)) {
           characterCardList_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000002);
         }
         result.characterCardList_ = characterCardList_;
-        result.name_ = name_;
         result.id_ = id_;
-        result.createTime_ = createTime_;
+        result.name_ = name_;
         result.isValid_ = isValid_;
-        result.fieldId_ = fieldId_;
         onBuilt();
         return result;
       }
@@ -813,6 +813,15 @@ public final class GCGDSDeckDataOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.GCGDSDeckDataOuterClass.GCGDSDeckData other) {
         if (other == emu.grasscutter.net.proto.GCGDSDeckDataOuterClass.GCGDSDeckData.getDefaultInstance()) return this;
+        if (other.getCreateTime() != 0) {
+          setCreateTime(other.getCreateTime());
+        }
+        if (other.getFieldId() != 0) {
+          setFieldId(other.getFieldId());
+        }
+        if (other.getCardBackId() != 0) {
+          setCardBackId(other.getCardBackId());
+        }
         if (!other.cardList_.isEmpty()) {
           if (cardList_.isEmpty()) {
             cardList_ = other.cardList_;
@@ -822,9 +831,6 @@ public final class GCGDSDeckDataOuterClass {
             cardList_.addAll(other.cardList_);
           }
           onChanged();
-        }
-        if (other.getCardBackId() != 0) {
-          setCardBackId(other.getCardBackId());
         }
         if (!other.characterCardList_.isEmpty()) {
           if (characterCardList_.isEmpty()) {
@@ -836,21 +842,15 @@ public final class GCGDSDeckDataOuterClass {
           }
           onChanged();
         }
+        if (other.getId() != 0) {
+          setId(other.getId());
+        }
         if (!other.getName().isEmpty()) {
           name_ = other.name_;
           onChanged();
         }
-        if (other.getId() != 0) {
-          setId(other.getId());
-        }
-        if (other.getCreateTime() != 0) {
-          setCreateTime(other.getCreateTime());
-        }
         if (other.getIsValid() != false) {
           setIsValid(other.getIsValid());
-        }
-        if (other.getFieldId() != 0) {
-          setFieldId(other.getFieldId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -881,6 +881,99 @@ public final class GCGDSDeckDataOuterClass {
         return this;
       }
       private int bitField0_;
+
+      private int createTime_ ;
+      /**
+       * <code>fixed32 create_time = 5;</code>
+       * @return The createTime.
+       */
+      @java.lang.Override
+      public int getCreateTime() {
+        return createTime_;
+      }
+      /**
+       * <code>fixed32 create_time = 5;</code>
+       * @param value The createTime to set.
+       * @return This builder for chaining.
+       */
+      public Builder setCreateTime(int value) {
+        
+        createTime_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>fixed32 create_time = 5;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearCreateTime() {
+        
+        createTime_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int fieldId_ ;
+      /**
+       * <code>uint32 field_id = 13;</code>
+       * @return The fieldId.
+       */
+      @java.lang.Override
+      public int getFieldId() {
+        return fieldId_;
+      }
+      /**
+       * <code>uint32 field_id = 13;</code>
+       * @param value The fieldId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setFieldId(int value) {
+        
+        fieldId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 field_id = 13;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearFieldId() {
+        
+        fieldId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int cardBackId_ ;
+      /**
+       * <code>uint32 card_back_id = 9;</code>
+       * @return The cardBackId.
+       */
+      @java.lang.Override
+      public int getCardBackId() {
+        return cardBackId_;
+      }
+      /**
+       * <code>uint32 card_back_id = 9;</code>
+       * @param value The cardBackId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setCardBackId(int value) {
+        
+        cardBackId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 card_back_id = 9;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearCardBackId() {
+        
+        cardBackId_ = 0;
+        onChanged();
+        return this;
+      }
 
       private com.google.protobuf.Internal.IntList cardList_ = emptyIntList();
       private void ensureCardListIsMutable() {
@@ -961,37 +1054,6 @@ public final class GCGDSDeckDataOuterClass {
         return this;
       }
 
-      private int cardBackId_ ;
-      /**
-       * <code>uint32 card_back_id = 15;</code>
-       * @return The cardBackId.
-       */
-      @java.lang.Override
-      public int getCardBackId() {
-        return cardBackId_;
-      }
-      /**
-       * <code>uint32 card_back_id = 15;</code>
-       * @param value The cardBackId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setCardBackId(int value) {
-        
-        cardBackId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 card_back_id = 15;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearCardBackId() {
-        
-        cardBackId_ = 0;
-        onChanged();
-        return this;
-      }
-
       private com.google.protobuf.Internal.IntList characterCardList_ = emptyIntList();
       private void ensureCharacterCardListIsMutable() {
         if (!((bitField0_ & 0x00000002) != 0)) {
@@ -1000,7 +1062,7 @@ public final class GCGDSDeckDataOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 character_card_list = 10;</code>
+       * <code>repeated uint32 character_card_list = 7;</code>
        * @return A list containing the characterCardList.
        */
       public java.util.List<java.lang.Integer>
@@ -1009,14 +1071,14 @@ public final class GCGDSDeckDataOuterClass {
                  java.util.Collections.unmodifiableList(characterCardList_) : characterCardList_;
       }
       /**
-       * <code>repeated uint32 character_card_list = 10;</code>
+       * <code>repeated uint32 character_card_list = 7;</code>
        * @return The count of characterCardList.
        */
       public int getCharacterCardListCount() {
         return characterCardList_.size();
       }
       /**
-       * <code>repeated uint32 character_card_list = 10;</code>
+       * <code>repeated uint32 character_card_list = 7;</code>
        * @param index The index of the element to return.
        * @return The characterCardList at the given index.
        */
@@ -1024,7 +1086,7 @@ public final class GCGDSDeckDataOuterClass {
         return characterCardList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 character_card_list = 10;</code>
+       * <code>repeated uint32 character_card_list = 7;</code>
        * @param index The index to set the value at.
        * @param value The characterCardList to set.
        * @return This builder for chaining.
@@ -1037,7 +1099,7 @@ public final class GCGDSDeckDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 character_card_list = 10;</code>
+       * <code>repeated uint32 character_card_list = 7;</code>
        * @param value The characterCardList to add.
        * @return This builder for chaining.
        */
@@ -1048,7 +1110,7 @@ public final class GCGDSDeckDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 character_card_list = 10;</code>
+       * <code>repeated uint32 character_card_list = 7;</code>
        * @param values The characterCardList to add.
        * @return This builder for chaining.
        */
@@ -1061,7 +1123,7 @@ public final class GCGDSDeckDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 character_card_list = 10;</code>
+       * <code>repeated uint32 character_card_list = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearCharacterCardList() {
@@ -1071,9 +1133,40 @@ public final class GCGDSDeckDataOuterClass {
         return this;
       }
 
+      private int id_ ;
+      /**
+       * <code>uint32 id = 12;</code>
+       * @return The id.
+       */
+      @java.lang.Override
+      public int getId() {
+        return id_;
+      }
+      /**
+       * <code>uint32 id = 12;</code>
+       * @param value The id to set.
+       * @return This builder for chaining.
+       */
+      public Builder setId(int value) {
+        
+        id_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 id = 12;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearId() {
+        
+        id_ = 0;
+        onChanged();
+        return this;
+      }
+
       private java.lang.Object name_ = "";
       /**
-       * <code>string name = 5;</code>
+       * <code>string name = 10;</code>
        * @return The name.
        */
       public java.lang.String getName() {
@@ -1089,7 +1182,7 @@ public final class GCGDSDeckDataOuterClass {
         }
       }
       /**
-       * <code>string name = 5;</code>
+       * <code>string name = 10;</code>
        * @return The bytes for name.
        */
       public com.google.protobuf.ByteString
@@ -1106,7 +1199,7 @@ public final class GCGDSDeckDataOuterClass {
         }
       }
       /**
-       * <code>string name = 5;</code>
+       * <code>string name = 10;</code>
        * @param value The name to set.
        * @return This builder for chaining.
        */
@@ -1121,7 +1214,7 @@ public final class GCGDSDeckDataOuterClass {
         return this;
       }
       /**
-       * <code>string name = 5;</code>
+       * <code>string name = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearName() {
@@ -1131,7 +1224,7 @@ public final class GCGDSDeckDataOuterClass {
         return this;
       }
       /**
-       * <code>string name = 5;</code>
+       * <code>string name = 10;</code>
        * @param value The bytes for name to set.
        * @return This builder for chaining.
        */
@@ -1147,71 +1240,9 @@ public final class GCGDSDeckDataOuterClass {
         return this;
       }
 
-      private int id_ ;
-      /**
-       * <code>uint32 id = 3;</code>
-       * @return The id.
-       */
-      @java.lang.Override
-      public int getId() {
-        return id_;
-      }
-      /**
-       * <code>uint32 id = 3;</code>
-       * @param value The id to set.
-       * @return This builder for chaining.
-       */
-      public Builder setId(int value) {
-        
-        id_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 id = 3;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearId() {
-        
-        id_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int createTime_ ;
-      /**
-       * <code>fixed32 create_time = 13;</code>
-       * @return The createTime.
-       */
-      @java.lang.Override
-      public int getCreateTime() {
-        return createTime_;
-      }
-      /**
-       * <code>fixed32 create_time = 13;</code>
-       * @param value The createTime to set.
-       * @return This builder for chaining.
-       */
-      public Builder setCreateTime(int value) {
-        
-        createTime_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>fixed32 create_time = 13;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearCreateTime() {
-        
-        createTime_ = 0;
-        onChanged();
-        return this;
-      }
-
       private boolean isValid_ ;
       /**
-       * <code>bool is_valid = 4;</code>
+       * <code>bool is_valid = 15;</code>
        * @return The isValid.
        */
       @java.lang.Override
@@ -1219,7 +1250,7 @@ public final class GCGDSDeckDataOuterClass {
         return isValid_;
       }
       /**
-       * <code>bool is_valid = 4;</code>
+       * <code>bool is_valid = 15;</code>
        * @param value The isValid to set.
        * @return This builder for chaining.
        */
@@ -1230,43 +1261,12 @@ public final class GCGDSDeckDataOuterClass {
         return this;
       }
       /**
-       * <code>bool is_valid = 4;</code>
+       * <code>bool is_valid = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsValid() {
         
         isValid_ = false;
-        onChanged();
-        return this;
-      }
-
-      private int fieldId_ ;
-      /**
-       * <code>uint32 field_id = 7;</code>
-       * @return The fieldId.
-       */
-      @java.lang.Override
-      public int getFieldId() {
-        return fieldId_;
-      }
-      /**
-       * <code>uint32 field_id = 7;</code>
-       * @param value The fieldId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setFieldId(int value) {
-        
-        fieldId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 field_id = 7;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearFieldId() {
-        
-        fieldId_ = 0;
         onChanged();
         return this;
       }
@@ -1338,10 +1338,10 @@ public final class GCGDSDeckDataOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\023GCGDSDeckData.proto\"\250\001\n\rGCGDSDeckData\022" +
-      "\021\n\tcard_list\030\001 \003(\r\022\024\n\014card_back_id\030\017 \001(\r" +
-      "\022\033\n\023character_card_list\030\n \003(\r\022\014\n\004name\030\005 " +
-      "\001(\t\022\n\n\002id\030\003 \001(\r\022\023\n\013create_time\030\r \001(\007\022\020\n\010" +
-      "is_valid\030\004 \001(\010\022\020\n\010field_id\030\007 \001(\rB\033\n\031emu." +
+      "\023\n\013create_time\030\005 \001(\007\022\020\n\010field_id\030\r \001(\r\022\024" +
+      "\n\014card_back_id\030\t \001(\r\022\021\n\tcard_list\030\001 \003(\r\022" +
+      "\033\n\023character_card_list\030\007 \003(\r\022\n\n\002id\030\014 \001(\r" +
+      "\022\014\n\004name\030\n \001(\t\022\020\n\010is_valid\030\017 \001(\010B\033\n\031emu." +
       "grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -1353,7 +1353,7 @@ public final class GCGDSDeckDataOuterClass {
     internal_static_GCGDSDeckData_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GCGDSDeckData_descriptor,
-        new java.lang.String[] { "CardList", "CardBackId", "CharacterCardList", "Name", "Id", "CreateTime", "IsValid", "FieldId", });
+        new java.lang.String[] { "CreateTime", "FieldId", "CardBackId", "CardList", "CharacterCardList", "Id", "Name", "IsValid", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

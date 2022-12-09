@@ -19,17 +19,17 @@ public final class AddSeenMonsterNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated uint32 monster_id_list = 12;</code>
+     * <code>repeated uint32 monster_id_list = 14;</code>
      * @return A list containing the monsterIdList.
      */
     java.util.List<java.lang.Integer> getMonsterIdListList();
     /**
-     * <code>repeated uint32 monster_id_list = 12;</code>
+     * <code>repeated uint32 monster_id_list = 14;</code>
      * @return The count of monsterIdList.
      */
     int getMonsterIdListCount();
     /**
-     * <code>repeated uint32 monster_id_list = 12;</code>
+     * <code>repeated uint32 monster_id_list = 14;</code>
      * @param index The index of the element to return.
      * @return The monsterIdList at the given index.
      */
@@ -37,10 +37,14 @@ public final class AddSeenMonsterNotifyOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 223
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 213;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code AddSeenMonsterNotify}
@@ -89,7 +93,7 @@ public final class AddSeenMonsterNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 96: {
+            case 112: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 monsterIdList_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
@@ -97,7 +101,7 @@ public final class AddSeenMonsterNotifyOuterClass {
               monsterIdList_.addInt(input.readUInt32());
               break;
             }
-            case 98: {
+            case 114: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -145,10 +149,10 @@ public final class AddSeenMonsterNotifyOuterClass {
               emu.grasscutter.net.proto.AddSeenMonsterNotifyOuterClass.AddSeenMonsterNotify.class, emu.grasscutter.net.proto.AddSeenMonsterNotifyOuterClass.AddSeenMonsterNotify.Builder.class);
     }
 
-    public static final int MONSTER_ID_LIST_FIELD_NUMBER = 12;
+    public static final int MONSTER_ID_LIST_FIELD_NUMBER = 14;
     private com.google.protobuf.Internal.IntList monsterIdList_;
     /**
-     * <code>repeated uint32 monster_id_list = 12;</code>
+     * <code>repeated uint32 monster_id_list = 14;</code>
      * @return A list containing the monsterIdList.
      */
     @java.lang.Override
@@ -157,14 +161,14 @@ public final class AddSeenMonsterNotifyOuterClass {
       return monsterIdList_;
     }
     /**
-     * <code>repeated uint32 monster_id_list = 12;</code>
+     * <code>repeated uint32 monster_id_list = 14;</code>
      * @return The count of monsterIdList.
      */
     public int getMonsterIdListCount() {
       return monsterIdList_.size();
     }
     /**
-     * <code>repeated uint32 monster_id_list = 12;</code>
+     * <code>repeated uint32 monster_id_list = 14;</code>
      * @param index The index of the element to return.
      * @return The monsterIdList at the given index.
      */
@@ -189,7 +193,7 @@ public final class AddSeenMonsterNotifyOuterClass {
                         throws java.io.IOException {
       getSerializedSize();
       if (getMonsterIdListList().size() > 0) {
-        output.writeUInt32NoTag(98);
+        output.writeUInt32NoTag(114);
         output.writeUInt32NoTag(monsterIdListMemoizedSerializedSize);
       }
       for (int i = 0; i < monsterIdList_.size(); i++) {
@@ -347,10 +351,14 @@ public final class AddSeenMonsterNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 223
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 213;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code AddSeenMonsterNotify}
@@ -520,7 +528,7 @@ public final class AddSeenMonsterNotifyOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 monster_id_list = 12;</code>
+       * <code>repeated uint32 monster_id_list = 14;</code>
        * @return A list containing the monsterIdList.
        */
       public java.util.List<java.lang.Integer>
@@ -529,14 +537,14 @@ public final class AddSeenMonsterNotifyOuterClass {
                  java.util.Collections.unmodifiableList(monsterIdList_) : monsterIdList_;
       }
       /**
-       * <code>repeated uint32 monster_id_list = 12;</code>
+       * <code>repeated uint32 monster_id_list = 14;</code>
        * @return The count of monsterIdList.
        */
       public int getMonsterIdListCount() {
         return monsterIdList_.size();
       }
       /**
-       * <code>repeated uint32 monster_id_list = 12;</code>
+       * <code>repeated uint32 monster_id_list = 14;</code>
        * @param index The index of the element to return.
        * @return The monsterIdList at the given index.
        */
@@ -544,7 +552,7 @@ public final class AddSeenMonsterNotifyOuterClass {
         return monsterIdList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 monster_id_list = 12;</code>
+       * <code>repeated uint32 monster_id_list = 14;</code>
        * @param index The index to set the value at.
        * @param value The monsterIdList to set.
        * @return This builder for chaining.
@@ -557,7 +565,7 @@ public final class AddSeenMonsterNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 monster_id_list = 12;</code>
+       * <code>repeated uint32 monster_id_list = 14;</code>
        * @param value The monsterIdList to add.
        * @return This builder for chaining.
        */
@@ -568,7 +576,7 @@ public final class AddSeenMonsterNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 monster_id_list = 12;</code>
+       * <code>repeated uint32 monster_id_list = 14;</code>
        * @param values The monsterIdList to add.
        * @return This builder for chaining.
        */
@@ -581,7 +589,7 @@ public final class AddSeenMonsterNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 monster_id_list = 12;</code>
+       * <code>repeated uint32 monster_id_list = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearMonsterIdList() {
@@ -658,7 +666,7 @@ public final class AddSeenMonsterNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\032AddSeenMonsterNotify.proto\"/\n\024AddSeenM" +
-      "onsterNotify\022\027\n\017monster_id_list\030\014 \003(\rB\033\n" +
+      "onsterNotify\022\027\n\017monster_id_list\030\016 \003(\rB\033\n" +
       "\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

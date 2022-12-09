@@ -32,9 +32,9 @@ public final class DungeonCandidateTeamPlayerLeaveReasonOuterClass {
      */
     DUNGEON_CANDIDATE_TEAM_PLAYER_LEAVE_REASON_TPLR_BE_KICK(2),
     /**
-     * <code>DUNGEON_CANDIDATE_TEAM_PLAYER_LEAVE_REASON_DISCONNECT = 3;</code>
+     * <code>DUNGEON_CANDIDATE_TEAM_PLAYER_LEAVE_REASON_TPLR_DISCONNECT = 3;</code>
      */
-    DUNGEON_CANDIDATE_TEAM_PLAYER_LEAVE_REASON_DISCONNECT(3),
+    DUNGEON_CANDIDATE_TEAM_PLAYER_LEAVE_REASON_TPLR_DISCONNECT(3),
     UNRECOGNIZED(-1),
     ;
 
@@ -51,9 +51,9 @@ public final class DungeonCandidateTeamPlayerLeaveReasonOuterClass {
      */
     public static final int DUNGEON_CANDIDATE_TEAM_PLAYER_LEAVE_REASON_TPLR_BE_KICK_VALUE = 2;
     /**
-     * <code>DUNGEON_CANDIDATE_TEAM_PLAYER_LEAVE_REASON_DISCONNECT = 3;</code>
+     * <code>DUNGEON_CANDIDATE_TEAM_PLAYER_LEAVE_REASON_TPLR_DISCONNECT = 3;</code>
      */
-    public static final int DUNGEON_CANDIDATE_TEAM_PLAYER_LEAVE_REASON_DISCONNECT_VALUE = 3;
+    public static final int DUNGEON_CANDIDATE_TEAM_PLAYER_LEAVE_REASON_TPLR_DISCONNECT_VALUE = 3;
 
 
     public final int getNumber() {
@@ -83,7 +83,7 @@ public final class DungeonCandidateTeamPlayerLeaveReasonOuterClass {
         case 0: return DUNGEON_CANDIDATE_TEAM_PLAYER_LEAVE_REASON_TPLR_NORMAL;
         case 1: return DUNGEON_CANDIDATE_TEAM_PLAYER_LEAVE_REASON_TPLR_DIE;
         case 2: return DUNGEON_CANDIDATE_TEAM_PLAYER_LEAVE_REASON_TPLR_BE_KICK;
-        case 3: return DUNGEON_CANDIDATE_TEAM_PLAYER_LEAVE_REASON_DISCONNECT;
+        case 3: return DUNGEON_CANDIDATE_TEAM_PLAYER_LEAVE_REASON_TPLR_DISCONNECT;
         default: return null;
       }
     }
@@ -150,15 +150,15 @@ public final class DungeonCandidateTeamPlayerLeaveReasonOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n+DungeonCandidateTeamPlayerLeaveReason." +
-      "proto*\224\002\n%DungeonCandidateTeamPlayerLeav" +
+      "proto*\231\002\n%DungeonCandidateTeamPlayerLeav" +
       "eReason\022:\n6DUNGEON_CANDIDATE_TEAM_PLAYER" +
       "_LEAVE_REASON_TPLR_NORMAL\020\000\0227\n3DUNGEON_C" +
       "ANDIDATE_TEAM_PLAYER_LEAVE_REASON_TPLR_D" +
       "IE\020\001\022;\n7DUNGEON_CANDIDATE_TEAM_PLAYER_LE" +
-      "AVE_REASON_TPLR_BE_KICK\020\002\0229\n5DUNGEON_CAN" +
-      "DIDATE_TEAM_PLAYER_LEAVE_REASON_DISCONNE" +
-      "CT\020\003B\033\n\031emu.grasscutter.net.protob\006proto" +
-      "3"
+      "AVE_REASON_TPLR_BE_KICK\020\002\022>\n:DUNGEON_CAN" +
+      "DIDATE_TEAM_PLAYER_LEAVE_REASON_TPLR_DIS" +
+      "CONNECT\020\003B\033\n\031emu.grasscutter.net.protob\006" +
+      "proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

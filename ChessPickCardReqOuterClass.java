@@ -19,23 +19,27 @@ public final class ChessPickCardReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 card_id = 1;</code>
+     * <code>uint32 card_id = 5;</code>
      * @return The cardId.
      */
     int getCardId();
 
     /**
-     * <code>uint32 card_index = 4;</code>
+     * <code>uint32 card_index = 3;</code>
      * @return The cardIndex.
      */
     int getCardIndex();
   }
   /**
    * <pre>
-   * CmdId: 5333
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 5366;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code ChessPickCardReq}
@@ -82,14 +86,14 @@ public final class ChessPickCardReqOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
-
-              cardId_ = input.readUInt32();
-              break;
-            }
-            case 32: {
+            case 24: {
 
               cardIndex_ = input.readUInt32();
+              break;
+            }
+            case 40: {
+
+              cardId_ = input.readUInt32();
               break;
             }
             default: {
@@ -124,10 +128,10 @@ public final class ChessPickCardReqOuterClass {
               emu.grasscutter.net.proto.ChessPickCardReqOuterClass.ChessPickCardReq.class, emu.grasscutter.net.proto.ChessPickCardReqOuterClass.ChessPickCardReq.Builder.class);
     }
 
-    public static final int CARD_ID_FIELD_NUMBER = 1;
+    public static final int CARD_ID_FIELD_NUMBER = 5;
     private int cardId_;
     /**
-     * <code>uint32 card_id = 1;</code>
+     * <code>uint32 card_id = 5;</code>
      * @return The cardId.
      */
     @java.lang.Override
@@ -135,10 +139,10 @@ public final class ChessPickCardReqOuterClass {
       return cardId_;
     }
 
-    public static final int CARD_INDEX_FIELD_NUMBER = 4;
+    public static final int CARD_INDEX_FIELD_NUMBER = 3;
     private int cardIndex_;
     /**
-     * <code>uint32 card_index = 4;</code>
+     * <code>uint32 card_index = 3;</code>
      * @return The cardIndex.
      */
     @java.lang.Override
@@ -160,11 +164,11 @@ public final class ChessPickCardReqOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (cardId_ != 0) {
-        output.writeUInt32(1, cardId_);
-      }
       if (cardIndex_ != 0) {
-        output.writeUInt32(4, cardIndex_);
+        output.writeUInt32(3, cardIndex_);
+      }
+      if (cardId_ != 0) {
+        output.writeUInt32(5, cardId_);
       }
       unknownFields.writeTo(output);
     }
@@ -175,13 +179,13 @@ public final class ChessPickCardReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (cardId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, cardId_);
-      }
       if (cardIndex_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, cardIndex_);
+          .computeUInt32Size(3, cardIndex_);
+      }
+      if (cardId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(5, cardId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -314,10 +318,14 @@ public final class ChessPickCardReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 5333
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 5366;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code ChessPickCardReq}
@@ -474,7 +482,7 @@ public final class ChessPickCardReqOuterClass {
 
       private int cardId_ ;
       /**
-       * <code>uint32 card_id = 1;</code>
+       * <code>uint32 card_id = 5;</code>
        * @return The cardId.
        */
       @java.lang.Override
@@ -482,7 +490,7 @@ public final class ChessPickCardReqOuterClass {
         return cardId_;
       }
       /**
-       * <code>uint32 card_id = 1;</code>
+       * <code>uint32 card_id = 5;</code>
        * @param value The cardId to set.
        * @return This builder for chaining.
        */
@@ -493,7 +501,7 @@ public final class ChessPickCardReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 card_id = 1;</code>
+       * <code>uint32 card_id = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearCardId() {
@@ -505,7 +513,7 @@ public final class ChessPickCardReqOuterClass {
 
       private int cardIndex_ ;
       /**
-       * <code>uint32 card_index = 4;</code>
+       * <code>uint32 card_index = 3;</code>
        * @return The cardIndex.
        */
       @java.lang.Override
@@ -513,7 +521,7 @@ public final class ChessPickCardReqOuterClass {
         return cardIndex_;
       }
       /**
-       * <code>uint32 card_index = 4;</code>
+       * <code>uint32 card_index = 3;</code>
        * @param value The cardIndex to set.
        * @return This builder for chaining.
        */
@@ -524,7 +532,7 @@ public final class ChessPickCardReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 card_index = 4;</code>
+       * <code>uint32 card_index = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearCardIndex() {
@@ -601,7 +609,7 @@ public final class ChessPickCardReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\026ChessPickCardReq.proto\"7\n\020ChessPickCar" +
-      "dReq\022\017\n\007card_id\030\001 \001(\r\022\022\n\ncard_index\030\004 \001(" +
+      "dReq\022\017\n\007card_id\030\005 \001(\r\022\022\n\ncard_index\030\003 \001(" +
       "\rB\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

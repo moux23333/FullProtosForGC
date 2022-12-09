@@ -19,17 +19,21 @@ public final class ClientBulletCreateNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 param = 6;</code>
+     * <code>uint32 param = 2;</code>
      * @return The param.
      */
     int getParam();
   }
   /**
    * <pre>
-   * CmdId: 4
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 44;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code ClientBulletCreateNotify}
@@ -76,7 +80,7 @@ public final class ClientBulletCreateNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 48: {
+            case 16: {
 
               param_ = input.readUInt32();
               break;
@@ -113,10 +117,10 @@ public final class ClientBulletCreateNotifyOuterClass {
               emu.grasscutter.net.proto.ClientBulletCreateNotifyOuterClass.ClientBulletCreateNotify.class, emu.grasscutter.net.proto.ClientBulletCreateNotifyOuterClass.ClientBulletCreateNotify.Builder.class);
     }
 
-    public static final int PARAM_FIELD_NUMBER = 6;
+    public static final int PARAM_FIELD_NUMBER = 2;
     private int param_;
     /**
-     * <code>uint32 param = 6;</code>
+     * <code>uint32 param = 2;</code>
      * @return The param.
      */
     @java.lang.Override
@@ -139,7 +143,7 @@ public final class ClientBulletCreateNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (param_ != 0) {
-        output.writeUInt32(6, param_);
+        output.writeUInt32(2, param_);
       }
       unknownFields.writeTo(output);
     }
@@ -152,7 +156,7 @@ public final class ClientBulletCreateNotifyOuterClass {
       size = 0;
       if (param_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, param_);
+          .computeUInt32Size(2, param_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -281,10 +285,14 @@ public final class ClientBulletCreateNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 4
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 44;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code ClientBulletCreateNotify}
@@ -435,7 +443,7 @@ public final class ClientBulletCreateNotifyOuterClass {
 
       private int param_ ;
       /**
-       * <code>uint32 param = 6;</code>
+       * <code>uint32 param = 2;</code>
        * @return The param.
        */
       @java.lang.Override
@@ -443,7 +451,7 @@ public final class ClientBulletCreateNotifyOuterClass {
         return param_;
       }
       /**
-       * <code>uint32 param = 6;</code>
+       * <code>uint32 param = 2;</code>
        * @param value The param to set.
        * @return This builder for chaining.
        */
@@ -454,7 +462,7 @@ public final class ClientBulletCreateNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 param = 6;</code>
+       * <code>uint32 param = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearParam() {
@@ -531,7 +539,7 @@ public final class ClientBulletCreateNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\036ClientBulletCreateNotify.proto\")\n\030Clie" +
-      "ntBulletCreateNotify\022\r\n\005param\030\006 \001(\rB\033\n\031e" +
+      "ntBulletCreateNotify\022\r\n\005param\030\002 \001(\rB\033\n\031e" +
       "mu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

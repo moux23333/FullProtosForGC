@@ -19,25 +19,29 @@ public final class GCGBossChallengeUpdateNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.GCGBossChallengeData boss_challenge = 11;</code>
+     * <code>.GCGBossChallengeData boss_challenge = 7;</code>
      * @return Whether the bossChallenge field is set.
      */
     boolean hasBossChallenge();
     /**
-     * <code>.GCGBossChallengeData boss_challenge = 11;</code>
+     * <code>.GCGBossChallengeData boss_challenge = 7;</code>
      * @return The bossChallenge.
      */
     emu.grasscutter.net.proto.GCGBossChallengeDataOuterClass.GCGBossChallengeData getBossChallenge();
     /**
-     * <code>.GCGBossChallengeData boss_challenge = 11;</code>
+     * <code>.GCGBossChallengeData boss_challenge = 7;</code>
      */
     emu.grasscutter.net.proto.GCGBossChallengeDataOuterClass.GCGBossChallengeDataOrBuilder getBossChallengeOrBuilder();
   }
   /**
    * <pre>
-   * CmdId: 7073
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 7852;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code GCGBossChallengeUpdateNotify}
@@ -84,7 +88,7 @@ public final class GCGBossChallengeUpdateNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 90: {
+            case 58: {
               emu.grasscutter.net.proto.GCGBossChallengeDataOuterClass.GCGBossChallengeData.Builder subBuilder = null;
               if (bossChallenge_ != null) {
                 subBuilder = bossChallenge_.toBuilder();
@@ -129,10 +133,10 @@ public final class GCGBossChallengeUpdateNotifyOuterClass {
               emu.grasscutter.net.proto.GCGBossChallengeUpdateNotifyOuterClass.GCGBossChallengeUpdateNotify.class, emu.grasscutter.net.proto.GCGBossChallengeUpdateNotifyOuterClass.GCGBossChallengeUpdateNotify.Builder.class);
     }
 
-    public static final int BOSS_CHALLENGE_FIELD_NUMBER = 11;
+    public static final int BOSS_CHALLENGE_FIELD_NUMBER = 7;
     private emu.grasscutter.net.proto.GCGBossChallengeDataOuterClass.GCGBossChallengeData bossChallenge_;
     /**
-     * <code>.GCGBossChallengeData boss_challenge = 11;</code>
+     * <code>.GCGBossChallengeData boss_challenge = 7;</code>
      * @return Whether the bossChallenge field is set.
      */
     @java.lang.Override
@@ -140,7 +144,7 @@ public final class GCGBossChallengeUpdateNotifyOuterClass {
       return bossChallenge_ != null;
     }
     /**
-     * <code>.GCGBossChallengeData boss_challenge = 11;</code>
+     * <code>.GCGBossChallengeData boss_challenge = 7;</code>
      * @return The bossChallenge.
      */
     @java.lang.Override
@@ -148,7 +152,7 @@ public final class GCGBossChallengeUpdateNotifyOuterClass {
       return bossChallenge_ == null ? emu.grasscutter.net.proto.GCGBossChallengeDataOuterClass.GCGBossChallengeData.getDefaultInstance() : bossChallenge_;
     }
     /**
-     * <code>.GCGBossChallengeData boss_challenge = 11;</code>
+     * <code>.GCGBossChallengeData boss_challenge = 7;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.GCGBossChallengeDataOuterClass.GCGBossChallengeDataOrBuilder getBossChallengeOrBuilder() {
@@ -170,7 +174,7 @@ public final class GCGBossChallengeUpdateNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (bossChallenge_ != null) {
-        output.writeMessage(11, getBossChallenge());
+        output.writeMessage(7, getBossChallenge());
       }
       unknownFields.writeTo(output);
     }
@@ -183,7 +187,7 @@ public final class GCGBossChallengeUpdateNotifyOuterClass {
       size = 0;
       if (bossChallenge_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(11, getBossChallenge());
+          .computeMessageSize(7, getBossChallenge());
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -317,9 +321,13 @@ public final class GCGBossChallengeUpdateNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 7073
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 7852;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code GCGBossChallengeUpdateNotify}
@@ -480,14 +488,14 @@ public final class GCGBossChallengeUpdateNotifyOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.GCGBossChallengeDataOuterClass.GCGBossChallengeData, emu.grasscutter.net.proto.GCGBossChallengeDataOuterClass.GCGBossChallengeData.Builder, emu.grasscutter.net.proto.GCGBossChallengeDataOuterClass.GCGBossChallengeDataOrBuilder> bossChallengeBuilder_;
       /**
-       * <code>.GCGBossChallengeData boss_challenge = 11;</code>
+       * <code>.GCGBossChallengeData boss_challenge = 7;</code>
        * @return Whether the bossChallenge field is set.
        */
       public boolean hasBossChallenge() {
         return bossChallengeBuilder_ != null || bossChallenge_ != null;
       }
       /**
-       * <code>.GCGBossChallengeData boss_challenge = 11;</code>
+       * <code>.GCGBossChallengeData boss_challenge = 7;</code>
        * @return The bossChallenge.
        */
       public emu.grasscutter.net.proto.GCGBossChallengeDataOuterClass.GCGBossChallengeData getBossChallenge() {
@@ -498,7 +506,7 @@ public final class GCGBossChallengeUpdateNotifyOuterClass {
         }
       }
       /**
-       * <code>.GCGBossChallengeData boss_challenge = 11;</code>
+       * <code>.GCGBossChallengeData boss_challenge = 7;</code>
        */
       public Builder setBossChallenge(emu.grasscutter.net.proto.GCGBossChallengeDataOuterClass.GCGBossChallengeData value) {
         if (bossChallengeBuilder_ == null) {
@@ -514,7 +522,7 @@ public final class GCGBossChallengeUpdateNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.GCGBossChallengeData boss_challenge = 11;</code>
+       * <code>.GCGBossChallengeData boss_challenge = 7;</code>
        */
       public Builder setBossChallenge(
           emu.grasscutter.net.proto.GCGBossChallengeDataOuterClass.GCGBossChallengeData.Builder builderForValue) {
@@ -528,7 +536,7 @@ public final class GCGBossChallengeUpdateNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.GCGBossChallengeData boss_challenge = 11;</code>
+       * <code>.GCGBossChallengeData boss_challenge = 7;</code>
        */
       public Builder mergeBossChallenge(emu.grasscutter.net.proto.GCGBossChallengeDataOuterClass.GCGBossChallengeData value) {
         if (bossChallengeBuilder_ == null) {
@@ -546,7 +554,7 @@ public final class GCGBossChallengeUpdateNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.GCGBossChallengeData boss_challenge = 11;</code>
+       * <code>.GCGBossChallengeData boss_challenge = 7;</code>
        */
       public Builder clearBossChallenge() {
         if (bossChallengeBuilder_ == null) {
@@ -560,7 +568,7 @@ public final class GCGBossChallengeUpdateNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.GCGBossChallengeData boss_challenge = 11;</code>
+       * <code>.GCGBossChallengeData boss_challenge = 7;</code>
        */
       public emu.grasscutter.net.proto.GCGBossChallengeDataOuterClass.GCGBossChallengeData.Builder getBossChallengeBuilder() {
         
@@ -568,7 +576,7 @@ public final class GCGBossChallengeUpdateNotifyOuterClass {
         return getBossChallengeFieldBuilder().getBuilder();
       }
       /**
-       * <code>.GCGBossChallengeData boss_challenge = 11;</code>
+       * <code>.GCGBossChallengeData boss_challenge = 7;</code>
        */
       public emu.grasscutter.net.proto.GCGBossChallengeDataOuterClass.GCGBossChallengeDataOrBuilder getBossChallengeOrBuilder() {
         if (bossChallengeBuilder_ != null) {
@@ -579,7 +587,7 @@ public final class GCGBossChallengeUpdateNotifyOuterClass {
         }
       }
       /**
-       * <code>.GCGBossChallengeData boss_challenge = 11;</code>
+       * <code>.GCGBossChallengeData boss_challenge = 7;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.GCGBossChallengeDataOuterClass.GCGBossChallengeData, emu.grasscutter.net.proto.GCGBossChallengeDataOuterClass.GCGBossChallengeData.Builder, emu.grasscutter.net.proto.GCGBossChallengeDataOuterClass.GCGBossChallengeDataOrBuilder> 
@@ -663,7 +671,7 @@ public final class GCGBossChallengeUpdateNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n\"GCGBossChallengeUpdateNotify.proto\032\032GC" +
       "GBossChallengeData.proto\"M\n\034GCGBossChall" +
-      "engeUpdateNotify\022-\n\016boss_challenge\030\013 \001(\013" +
+      "engeUpdateNotify\022-\n\016boss_challenge\030\007 \001(\013" +
       "2\025.GCGBossChallengeDataB\033\n\031emu.grasscutt" +
       "er.net.protob\006proto3"
     };

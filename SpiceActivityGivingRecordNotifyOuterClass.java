@@ -19,28 +19,32 @@ public final class SpiceActivityGivingRecordNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 current_increase_avatar_fetter_times = 3;</code>
-     * @return The currentIncreaseAvatarFetterTimes.
+     * <code>uint32 Unk3300_CIHIAJEGCBO = 3;</code>
+     * @return The unk3300CIHIAJEGCBO.
      */
-    int getCurrentIncreaseAvatarFetterTimes();
+    int getUnk3300CIHIAJEGCBO();
 
     /**
-     * <code>uint32 increase_avatar_fetter_limit_times = 7;</code>
-     * @return The increaseAvatarFetterLimitTimes.
+     * <code>uint32 Unk3300_LAKPMMIPBMI = 2;</code>
+     * @return The unk3300LAKPMMIPBMI.
      */
-    int getIncreaseAvatarFetterLimitTimes();
+    int getUnk3300LAKPMMIPBMI();
 
     /**
-     * <code>uint32 avatar_id = 11;</code>
+     * <code>uint32 avatar_id = 5;</code>
      * @return The avatarId.
      */
     int getAvatarId();
   }
   /**
    * <pre>
-   * CmdId: 8407
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 8719;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code SpiceActivityGivingRecordNotify}
@@ -87,17 +91,17 @@ public final class SpiceActivityGivingRecordNotifyOuterClass {
             case 0:
               done = true;
               break;
+            case 16: {
+
+              unk3300LAKPMMIPBMI_ = input.readUInt32();
+              break;
+            }
             case 24: {
 
-              currentIncreaseAvatarFetterTimes_ = input.readUInt32();
+              unk3300CIHIAJEGCBO_ = input.readUInt32();
               break;
             }
-            case 56: {
-
-              increaseAvatarFetterLimitTimes_ = input.readUInt32();
-              break;
-            }
-            case 88: {
+            case 40: {
 
               avatarId_ = input.readUInt32();
               break;
@@ -134,32 +138,32 @@ public final class SpiceActivityGivingRecordNotifyOuterClass {
               emu.grasscutter.net.proto.SpiceActivityGivingRecordNotifyOuterClass.SpiceActivityGivingRecordNotify.class, emu.grasscutter.net.proto.SpiceActivityGivingRecordNotifyOuterClass.SpiceActivityGivingRecordNotify.Builder.class);
     }
 
-    public static final int CURRENT_INCREASE_AVATAR_FETTER_TIMES_FIELD_NUMBER = 3;
-    private int currentIncreaseAvatarFetterTimes_;
+    public static final int UNK3300_CIHIAJEGCBO_FIELD_NUMBER = 3;
+    private int unk3300CIHIAJEGCBO_;
     /**
-     * <code>uint32 current_increase_avatar_fetter_times = 3;</code>
-     * @return The currentIncreaseAvatarFetterTimes.
+     * <code>uint32 Unk3300_CIHIAJEGCBO = 3;</code>
+     * @return The unk3300CIHIAJEGCBO.
      */
     @java.lang.Override
-    public int getCurrentIncreaseAvatarFetterTimes() {
-      return currentIncreaseAvatarFetterTimes_;
+    public int getUnk3300CIHIAJEGCBO() {
+      return unk3300CIHIAJEGCBO_;
     }
 
-    public static final int INCREASE_AVATAR_FETTER_LIMIT_TIMES_FIELD_NUMBER = 7;
-    private int increaseAvatarFetterLimitTimes_;
+    public static final int UNK3300_LAKPMMIPBMI_FIELD_NUMBER = 2;
+    private int unk3300LAKPMMIPBMI_;
     /**
-     * <code>uint32 increase_avatar_fetter_limit_times = 7;</code>
-     * @return The increaseAvatarFetterLimitTimes.
+     * <code>uint32 Unk3300_LAKPMMIPBMI = 2;</code>
+     * @return The unk3300LAKPMMIPBMI.
      */
     @java.lang.Override
-    public int getIncreaseAvatarFetterLimitTimes() {
-      return increaseAvatarFetterLimitTimes_;
+    public int getUnk3300LAKPMMIPBMI() {
+      return unk3300LAKPMMIPBMI_;
     }
 
-    public static final int AVATAR_ID_FIELD_NUMBER = 11;
+    public static final int AVATAR_ID_FIELD_NUMBER = 5;
     private int avatarId_;
     /**
-     * <code>uint32 avatar_id = 11;</code>
+     * <code>uint32 avatar_id = 5;</code>
      * @return The avatarId.
      */
     @java.lang.Override
@@ -181,14 +185,14 @@ public final class SpiceActivityGivingRecordNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (currentIncreaseAvatarFetterTimes_ != 0) {
-        output.writeUInt32(3, currentIncreaseAvatarFetterTimes_);
+      if (unk3300LAKPMMIPBMI_ != 0) {
+        output.writeUInt32(2, unk3300LAKPMMIPBMI_);
       }
-      if (increaseAvatarFetterLimitTimes_ != 0) {
-        output.writeUInt32(7, increaseAvatarFetterLimitTimes_);
+      if (unk3300CIHIAJEGCBO_ != 0) {
+        output.writeUInt32(3, unk3300CIHIAJEGCBO_);
       }
       if (avatarId_ != 0) {
-        output.writeUInt32(11, avatarId_);
+        output.writeUInt32(5, avatarId_);
       }
       unknownFields.writeTo(output);
     }
@@ -199,17 +203,17 @@ public final class SpiceActivityGivingRecordNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (currentIncreaseAvatarFetterTimes_ != 0) {
+      if (unk3300LAKPMMIPBMI_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, currentIncreaseAvatarFetterTimes_);
+          .computeUInt32Size(2, unk3300LAKPMMIPBMI_);
       }
-      if (increaseAvatarFetterLimitTimes_ != 0) {
+      if (unk3300CIHIAJEGCBO_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, increaseAvatarFetterLimitTimes_);
+          .computeUInt32Size(3, unk3300CIHIAJEGCBO_);
       }
       if (avatarId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, avatarId_);
+          .computeUInt32Size(5, avatarId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -226,10 +230,10 @@ public final class SpiceActivityGivingRecordNotifyOuterClass {
       }
       emu.grasscutter.net.proto.SpiceActivityGivingRecordNotifyOuterClass.SpiceActivityGivingRecordNotify other = (emu.grasscutter.net.proto.SpiceActivityGivingRecordNotifyOuterClass.SpiceActivityGivingRecordNotify) obj;
 
-      if (getCurrentIncreaseAvatarFetterTimes()
-          != other.getCurrentIncreaseAvatarFetterTimes()) return false;
-      if (getIncreaseAvatarFetterLimitTimes()
-          != other.getIncreaseAvatarFetterLimitTimes()) return false;
+      if (getUnk3300CIHIAJEGCBO()
+          != other.getUnk3300CIHIAJEGCBO()) return false;
+      if (getUnk3300LAKPMMIPBMI()
+          != other.getUnk3300LAKPMMIPBMI()) return false;
       if (getAvatarId()
           != other.getAvatarId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
@@ -243,10 +247,10 @@ public final class SpiceActivityGivingRecordNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + CURRENT_INCREASE_AVATAR_FETTER_TIMES_FIELD_NUMBER;
-      hash = (53 * hash) + getCurrentIncreaseAvatarFetterTimes();
-      hash = (37 * hash) + INCREASE_AVATAR_FETTER_LIMIT_TIMES_FIELD_NUMBER;
-      hash = (53 * hash) + getIncreaseAvatarFetterLimitTimes();
+      hash = (37 * hash) + UNK3300_CIHIAJEGCBO_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300CIHIAJEGCBO();
+      hash = (37 * hash) + UNK3300_LAKPMMIPBMI_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300LAKPMMIPBMI();
       hash = (37 * hash) + AVATAR_ID_FIELD_NUMBER;
       hash = (53 * hash) + getAvatarId();
       hash = (29 * hash) + unknownFields.hashCode();
@@ -346,9 +350,13 @@ public final class SpiceActivityGivingRecordNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 8407
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 8719;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code SpiceActivityGivingRecordNotify}
@@ -388,9 +396,9 @@ public final class SpiceActivityGivingRecordNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        currentIncreaseAvatarFetterTimes_ = 0;
+        unk3300CIHIAJEGCBO_ = 0;
 
-        increaseAvatarFetterLimitTimes_ = 0;
+        unk3300LAKPMMIPBMI_ = 0;
 
         avatarId_ = 0;
 
@@ -420,8 +428,8 @@ public final class SpiceActivityGivingRecordNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.SpiceActivityGivingRecordNotifyOuterClass.SpiceActivityGivingRecordNotify buildPartial() {
         emu.grasscutter.net.proto.SpiceActivityGivingRecordNotifyOuterClass.SpiceActivityGivingRecordNotify result = new emu.grasscutter.net.proto.SpiceActivityGivingRecordNotifyOuterClass.SpiceActivityGivingRecordNotify(this);
-        result.currentIncreaseAvatarFetterTimes_ = currentIncreaseAvatarFetterTimes_;
-        result.increaseAvatarFetterLimitTimes_ = increaseAvatarFetterLimitTimes_;
+        result.unk3300CIHIAJEGCBO_ = unk3300CIHIAJEGCBO_;
+        result.unk3300LAKPMMIPBMI_ = unk3300LAKPMMIPBMI_;
         result.avatarId_ = avatarId_;
         onBuilt();
         return result;
@@ -471,11 +479,11 @@ public final class SpiceActivityGivingRecordNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.SpiceActivityGivingRecordNotifyOuterClass.SpiceActivityGivingRecordNotify other) {
         if (other == emu.grasscutter.net.proto.SpiceActivityGivingRecordNotifyOuterClass.SpiceActivityGivingRecordNotify.getDefaultInstance()) return this;
-        if (other.getCurrentIncreaseAvatarFetterTimes() != 0) {
-          setCurrentIncreaseAvatarFetterTimes(other.getCurrentIncreaseAvatarFetterTimes());
+        if (other.getUnk3300CIHIAJEGCBO() != 0) {
+          setUnk3300CIHIAJEGCBO(other.getUnk3300CIHIAJEGCBO());
         }
-        if (other.getIncreaseAvatarFetterLimitTimes() != 0) {
-          setIncreaseAvatarFetterLimitTimes(other.getIncreaseAvatarFetterLimitTimes());
+        if (other.getUnk3300LAKPMMIPBMI() != 0) {
+          setUnk3300LAKPMMIPBMI(other.getUnk3300LAKPMMIPBMI());
         }
         if (other.getAvatarId() != 0) {
           setAvatarId(other.getAvatarId());
@@ -509,71 +517,71 @@ public final class SpiceActivityGivingRecordNotifyOuterClass {
         return this;
       }
 
-      private int currentIncreaseAvatarFetterTimes_ ;
+      private int unk3300CIHIAJEGCBO_ ;
       /**
-       * <code>uint32 current_increase_avatar_fetter_times = 3;</code>
-       * @return The currentIncreaseAvatarFetterTimes.
+       * <code>uint32 Unk3300_CIHIAJEGCBO = 3;</code>
+       * @return The unk3300CIHIAJEGCBO.
        */
       @java.lang.Override
-      public int getCurrentIncreaseAvatarFetterTimes() {
-        return currentIncreaseAvatarFetterTimes_;
+      public int getUnk3300CIHIAJEGCBO() {
+        return unk3300CIHIAJEGCBO_;
       }
       /**
-       * <code>uint32 current_increase_avatar_fetter_times = 3;</code>
-       * @param value The currentIncreaseAvatarFetterTimes to set.
+       * <code>uint32 Unk3300_CIHIAJEGCBO = 3;</code>
+       * @param value The unk3300CIHIAJEGCBO to set.
        * @return This builder for chaining.
        */
-      public Builder setCurrentIncreaseAvatarFetterTimes(int value) {
+      public Builder setUnk3300CIHIAJEGCBO(int value) {
         
-        currentIncreaseAvatarFetterTimes_ = value;
+        unk3300CIHIAJEGCBO_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 current_increase_avatar_fetter_times = 3;</code>
+       * <code>uint32 Unk3300_CIHIAJEGCBO = 3;</code>
        * @return This builder for chaining.
        */
-      public Builder clearCurrentIncreaseAvatarFetterTimes() {
+      public Builder clearUnk3300CIHIAJEGCBO() {
         
-        currentIncreaseAvatarFetterTimes_ = 0;
+        unk3300CIHIAJEGCBO_ = 0;
         onChanged();
         return this;
       }
 
-      private int increaseAvatarFetterLimitTimes_ ;
+      private int unk3300LAKPMMIPBMI_ ;
       /**
-       * <code>uint32 increase_avatar_fetter_limit_times = 7;</code>
-       * @return The increaseAvatarFetterLimitTimes.
+       * <code>uint32 Unk3300_LAKPMMIPBMI = 2;</code>
+       * @return The unk3300LAKPMMIPBMI.
        */
       @java.lang.Override
-      public int getIncreaseAvatarFetterLimitTimes() {
-        return increaseAvatarFetterLimitTimes_;
+      public int getUnk3300LAKPMMIPBMI() {
+        return unk3300LAKPMMIPBMI_;
       }
       /**
-       * <code>uint32 increase_avatar_fetter_limit_times = 7;</code>
-       * @param value The increaseAvatarFetterLimitTimes to set.
+       * <code>uint32 Unk3300_LAKPMMIPBMI = 2;</code>
+       * @param value The unk3300LAKPMMIPBMI to set.
        * @return This builder for chaining.
        */
-      public Builder setIncreaseAvatarFetterLimitTimes(int value) {
+      public Builder setUnk3300LAKPMMIPBMI(int value) {
         
-        increaseAvatarFetterLimitTimes_ = value;
+        unk3300LAKPMMIPBMI_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 increase_avatar_fetter_limit_times = 7;</code>
+       * <code>uint32 Unk3300_LAKPMMIPBMI = 2;</code>
        * @return This builder for chaining.
        */
-      public Builder clearIncreaseAvatarFetterLimitTimes() {
+      public Builder clearUnk3300LAKPMMIPBMI() {
         
-        increaseAvatarFetterLimitTimes_ = 0;
+        unk3300LAKPMMIPBMI_ = 0;
         onChanged();
         return this;
       }
 
       private int avatarId_ ;
       /**
-       * <code>uint32 avatar_id = 11;</code>
+       * <code>uint32 avatar_id = 5;</code>
        * @return The avatarId.
        */
       @java.lang.Override
@@ -581,7 +589,7 @@ public final class SpiceActivityGivingRecordNotifyOuterClass {
         return avatarId_;
       }
       /**
-       * <code>uint32 avatar_id = 11;</code>
+       * <code>uint32 avatar_id = 5;</code>
        * @param value The avatarId to set.
        * @return This builder for chaining.
        */
@@ -592,7 +600,7 @@ public final class SpiceActivityGivingRecordNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 avatar_id = 11;</code>
+       * <code>uint32 avatar_id = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearAvatarId() {
@@ -669,11 +677,10 @@ public final class SpiceActivityGivingRecordNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n%SpiceActivityGivingRecordNotify.proto\"" +
-      "\216\001\n\037SpiceActivityGivingRecordNotify\022,\n$c" +
-      "urrent_increase_avatar_fetter_times\030\003 \001(" +
-      "\r\022*\n\"increase_avatar_fetter_limit_times\030" +
-      "\007 \001(\r\022\021\n\tavatar_id\030\013 \001(\rB\033\n\031emu.grasscut" +
-      "ter.net.protob\006proto3"
+      "n\n\037SpiceActivityGivingRecordNotify\022\033\n\023Un" +
+      "k3300_CIHIAJEGCBO\030\003 \001(\r\022\033\n\023Unk3300_LAKPM" +
+      "MIPBMI\030\002 \001(\r\022\021\n\tavatar_id\030\005 \001(\rB\033\n\031emu.g" +
+      "rasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -684,7 +691,7 @@ public final class SpiceActivityGivingRecordNotifyOuterClass {
     internal_static_SpiceActivityGivingRecordNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SpiceActivityGivingRecordNotify_descriptor,
-        new java.lang.String[] { "CurrentIncreaseAvatarFetterTimes", "IncreaseAvatarFetterLimitTimes", "AvatarId", });
+        new java.lang.String[] { "Unk3300CIHIAJEGCBO", "Unk3300LAKPMMIPBMI", "AvatarId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

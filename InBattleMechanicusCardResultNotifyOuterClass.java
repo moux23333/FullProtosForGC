@@ -19,53 +19,47 @@ public final class InBattleMechanicusCardResultNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 wait_seconds = 6;</code>
-     * @return The waitSeconds.
-     */
-    int getWaitSeconds();
-
-    /**
-     * <code>uint32 group_id = 2;</code>
+     * <code>uint32 group_id = 10;</code>
      * @return The groupId.
      */
     int getGroupId();
 
     /**
-     * <code>repeated .InBattleMechanicusCardInfo card_list = 9;</code>
+     * <code>repeated .InBattleMechanicusCardInfo card_list = 8;</code>
      */
     java.util.List<emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfo> 
         getCardListList();
     /**
-     * <code>repeated .InBattleMechanicusCardInfo card_list = 9;</code>
+     * <code>repeated .InBattleMechanicusCardInfo card_list = 8;</code>
      */
     emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfo getCardList(int index);
     /**
-     * <code>repeated .InBattleMechanicusCardInfo card_list = 9;</code>
+     * <code>repeated .InBattleMechanicusCardInfo card_list = 8;</code>
      */
     int getCardListCount();
     /**
-     * <code>repeated .InBattleMechanicusCardInfo card_list = 9;</code>
+     * <code>repeated .InBattleMechanicusCardInfo card_list = 8;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfoOrBuilder> 
         getCardListOrBuilderList();
     /**
-     * <code>repeated .InBattleMechanicusCardInfo card_list = 9;</code>
+     * <code>repeated .InBattleMechanicusCardInfo card_list = 8;</code>
      */
     emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfoOrBuilder getCardListOrBuilder(
         int index);
 
     /**
-     * <code>uint64 wait_begin_time_us = 7;</code>
-     * @return The waitBeginTimeUs.
+     * <code>uint32 play_index = 14;</code>
+     * @return The playIndex.
      */
-    long getWaitBeginTimeUs();
+    int getPlayIndex();
 
     /**
-     * <code>map&lt;uint32, uint32&gt; player_confirmed_card_map = 12;</code>
+     * <code>map&lt;uint32, uint32&gt; player_confirmed_card_map = 9;</code>
      */
     int getPlayerConfirmedCardMapCount();
     /**
-     * <code>map&lt;uint32, uint32&gt; player_confirmed_card_map = 12;</code>
+     * <code>map&lt;uint32, uint32&gt; player_confirmed_card_map = 9;</code>
      */
     boolean containsPlayerConfirmedCardMap(
         int key);
@@ -76,35 +70,45 @@ public final class InBattleMechanicusCardResultNotifyOuterClass {
     java.util.Map<java.lang.Integer, java.lang.Integer>
     getPlayerConfirmedCardMap();
     /**
-     * <code>map&lt;uint32, uint32&gt; player_confirmed_card_map = 12;</code>
+     * <code>map&lt;uint32, uint32&gt; player_confirmed_card_map = 9;</code>
      */
     java.util.Map<java.lang.Integer, java.lang.Integer>
     getPlayerConfirmedCardMapMap();
     /**
-     * <code>map&lt;uint32, uint32&gt; player_confirmed_card_map = 12;</code>
+     * <code>map&lt;uint32, uint32&gt; player_confirmed_card_map = 9;</code>
      */
 
     int getPlayerConfirmedCardMapOrDefault(
         int key,
         int defaultValue);
     /**
-     * <code>map&lt;uint32, uint32&gt; player_confirmed_card_map = 12;</code>
+     * <code>map&lt;uint32, uint32&gt; player_confirmed_card_map = 9;</code>
      */
 
     int getPlayerConfirmedCardMapOrThrow(
         int key);
 
     /**
-     * <code>uint32 play_index = 8;</code>
-     * @return The playIndex.
+     * <code>uint64 wait_begin_time_us = 2;</code>
+     * @return The waitBeginTimeUs.
      */
-    int getPlayIndex();
+    long getWaitBeginTimeUs();
+
+    /**
+     * <code>uint32 wait_seconds = 5;</code>
+     * @return The waitSeconds.
+     */
+    int getWaitSeconds();
   }
   /**
    * <pre>
-   * CmdId: 5397
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 5399;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code InBattleMechanicusCardResultNotify}
@@ -155,25 +159,15 @@ public final class InBattleMechanicusCardResultNotifyOuterClass {
               break;
             case 16: {
 
-              groupId_ = input.readUInt32();
+              waitBeginTimeUs_ = input.readUInt64();
               break;
             }
-            case 48: {
+            case 40: {
 
               waitSeconds_ = input.readUInt32();
               break;
             }
-            case 56: {
-
-              waitBeginTimeUs_ = input.readUInt64();
-              break;
-            }
-            case 64: {
-
-              playIndex_ = input.readUInt32();
-              break;
-            }
-            case 74: {
+            case 66: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 cardList_ = new java.util.ArrayList<emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfo>();
                 mutable_bitField0_ |= 0x00000001;
@@ -182,7 +176,7 @@ public final class InBattleMechanicusCardResultNotifyOuterClass {
                   input.readMessage(emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfo.parser(), extensionRegistry));
               break;
             }
-            case 98: {
+            case 74: {
               if (!((mutable_bitField0_ & 0x00000002) != 0)) {
                 playerConfirmedCardMap_ = com.google.protobuf.MapField.newMapField(
                     PlayerConfirmedCardMapDefaultEntryHolder.defaultEntry);
@@ -193,6 +187,16 @@ public final class InBattleMechanicusCardResultNotifyOuterClass {
                   PlayerConfirmedCardMapDefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
               playerConfirmedCardMap_.getMutableMap().put(
                   playerConfirmedCardMap__.getKey(), playerConfirmedCardMap__.getValue());
+              break;
+            }
+            case 80: {
+
+              groupId_ = input.readUInt32();
+              break;
+            }
+            case 112: {
+
+              playIndex_ = input.readUInt32();
               break;
             }
             default: {
@@ -227,7 +231,7 @@ public final class InBattleMechanicusCardResultNotifyOuterClass {
     protected com.google.protobuf.MapField internalGetMapField(
         int number) {
       switch (number) {
-        case 12:
+        case 9:
           return internalGetPlayerConfirmedCardMap();
         default:
           throw new RuntimeException(
@@ -242,21 +246,10 @@ public final class InBattleMechanicusCardResultNotifyOuterClass {
               emu.grasscutter.net.proto.InBattleMechanicusCardResultNotifyOuterClass.InBattleMechanicusCardResultNotify.class, emu.grasscutter.net.proto.InBattleMechanicusCardResultNotifyOuterClass.InBattleMechanicusCardResultNotify.Builder.class);
     }
 
-    public static final int WAIT_SECONDS_FIELD_NUMBER = 6;
-    private int waitSeconds_;
-    /**
-     * <code>uint32 wait_seconds = 6;</code>
-     * @return The waitSeconds.
-     */
-    @java.lang.Override
-    public int getWaitSeconds() {
-      return waitSeconds_;
-    }
-
-    public static final int GROUP_ID_FIELD_NUMBER = 2;
+    public static final int GROUP_ID_FIELD_NUMBER = 10;
     private int groupId_;
     /**
-     * <code>uint32 group_id = 2;</code>
+     * <code>uint32 group_id = 10;</code>
      * @return The groupId.
      */
     @java.lang.Override
@@ -264,17 +257,17 @@ public final class InBattleMechanicusCardResultNotifyOuterClass {
       return groupId_;
     }
 
-    public static final int CARD_LIST_FIELD_NUMBER = 9;
+    public static final int CARD_LIST_FIELD_NUMBER = 8;
     private java.util.List<emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfo> cardList_;
     /**
-     * <code>repeated .InBattleMechanicusCardInfo card_list = 9;</code>
+     * <code>repeated .InBattleMechanicusCardInfo card_list = 8;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfo> getCardListList() {
       return cardList_;
     }
     /**
-     * <code>repeated .InBattleMechanicusCardInfo card_list = 9;</code>
+     * <code>repeated .InBattleMechanicusCardInfo card_list = 8;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfoOrBuilder> 
@@ -282,21 +275,21 @@ public final class InBattleMechanicusCardResultNotifyOuterClass {
       return cardList_;
     }
     /**
-     * <code>repeated .InBattleMechanicusCardInfo card_list = 9;</code>
+     * <code>repeated .InBattleMechanicusCardInfo card_list = 8;</code>
      */
     @java.lang.Override
     public int getCardListCount() {
       return cardList_.size();
     }
     /**
-     * <code>repeated .InBattleMechanicusCardInfo card_list = 9;</code>
+     * <code>repeated .InBattleMechanicusCardInfo card_list = 8;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfo getCardList(int index) {
       return cardList_.get(index);
     }
     /**
-     * <code>repeated .InBattleMechanicusCardInfo card_list = 9;</code>
+     * <code>repeated .InBattleMechanicusCardInfo card_list = 8;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfoOrBuilder getCardListOrBuilder(
@@ -304,18 +297,18 @@ public final class InBattleMechanicusCardResultNotifyOuterClass {
       return cardList_.get(index);
     }
 
-    public static final int WAIT_BEGIN_TIME_US_FIELD_NUMBER = 7;
-    private long waitBeginTimeUs_;
+    public static final int PLAY_INDEX_FIELD_NUMBER = 14;
+    private int playIndex_;
     /**
-     * <code>uint64 wait_begin_time_us = 7;</code>
-     * @return The waitBeginTimeUs.
+     * <code>uint32 play_index = 14;</code>
+     * @return The playIndex.
      */
     @java.lang.Override
-    public long getWaitBeginTimeUs() {
-      return waitBeginTimeUs_;
+    public int getPlayIndex() {
+      return playIndex_;
     }
 
-    public static final int PLAYER_CONFIRMED_CARD_MAP_FIELD_NUMBER = 12;
+    public static final int PLAYER_CONFIRMED_CARD_MAP_FIELD_NUMBER = 9;
     private static final class PlayerConfirmedCardMapDefaultEntryHolder {
       static final com.google.protobuf.MapEntry<
           java.lang.Integer, java.lang.Integer> defaultEntry =
@@ -342,7 +335,7 @@ public final class InBattleMechanicusCardResultNotifyOuterClass {
       return internalGetPlayerConfirmedCardMap().getMap().size();
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; player_confirmed_card_map = 12;</code>
+     * <code>map&lt;uint32, uint32&gt; player_confirmed_card_map = 9;</code>
      */
 
     @java.lang.Override
@@ -360,7 +353,7 @@ public final class InBattleMechanicusCardResultNotifyOuterClass {
       return getPlayerConfirmedCardMapMap();
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; player_confirmed_card_map = 12;</code>
+     * <code>map&lt;uint32, uint32&gt; player_confirmed_card_map = 9;</code>
      */
     @java.lang.Override
 
@@ -368,7 +361,7 @@ public final class InBattleMechanicusCardResultNotifyOuterClass {
       return internalGetPlayerConfirmedCardMap().getMap();
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; player_confirmed_card_map = 12;</code>
+     * <code>map&lt;uint32, uint32&gt; player_confirmed_card_map = 9;</code>
      */
     @java.lang.Override
 
@@ -381,7 +374,7 @@ public final class InBattleMechanicusCardResultNotifyOuterClass {
       return map.containsKey(key) ? map.get(key) : defaultValue;
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; player_confirmed_card_map = 12;</code>
+     * <code>map&lt;uint32, uint32&gt; player_confirmed_card_map = 9;</code>
      */
     @java.lang.Override
 
@@ -396,15 +389,26 @@ public final class InBattleMechanicusCardResultNotifyOuterClass {
       return map.get(key);
     }
 
-    public static final int PLAY_INDEX_FIELD_NUMBER = 8;
-    private int playIndex_;
+    public static final int WAIT_BEGIN_TIME_US_FIELD_NUMBER = 2;
+    private long waitBeginTimeUs_;
     /**
-     * <code>uint32 play_index = 8;</code>
-     * @return The playIndex.
+     * <code>uint64 wait_begin_time_us = 2;</code>
+     * @return The waitBeginTimeUs.
      */
     @java.lang.Override
-    public int getPlayIndex() {
-      return playIndex_;
+    public long getWaitBeginTimeUs() {
+      return waitBeginTimeUs_;
+    }
+
+    public static final int WAIT_SECONDS_FIELD_NUMBER = 5;
+    private int waitSeconds_;
+    /**
+     * <code>uint32 wait_seconds = 5;</code>
+     * @return The waitSeconds.
+     */
+    @java.lang.Override
+    public int getWaitSeconds() {
+      return waitSeconds_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -421,27 +425,27 @@ public final class InBattleMechanicusCardResultNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (groupId_ != 0) {
-        output.writeUInt32(2, groupId_);
+      if (waitBeginTimeUs_ != 0L) {
+        output.writeUInt64(2, waitBeginTimeUs_);
       }
       if (waitSeconds_ != 0) {
-        output.writeUInt32(6, waitSeconds_);
-      }
-      if (waitBeginTimeUs_ != 0L) {
-        output.writeUInt64(7, waitBeginTimeUs_);
-      }
-      if (playIndex_ != 0) {
-        output.writeUInt32(8, playIndex_);
+        output.writeUInt32(5, waitSeconds_);
       }
       for (int i = 0; i < cardList_.size(); i++) {
-        output.writeMessage(9, cardList_.get(i));
+        output.writeMessage(8, cardList_.get(i));
       }
       com.google.protobuf.GeneratedMessageV3
         .serializeIntegerMapTo(
           output,
           internalGetPlayerConfirmedCardMap(),
           PlayerConfirmedCardMapDefaultEntryHolder.defaultEntry,
-          12);
+          9);
+      if (groupId_ != 0) {
+        output.writeUInt32(10, groupId_);
+      }
+      if (playIndex_ != 0) {
+        output.writeUInt32(14, playIndex_);
+      }
       unknownFields.writeTo(output);
     }
 
@@ -451,25 +455,17 @@ public final class InBattleMechanicusCardResultNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (groupId_ != 0) {
+      if (waitBeginTimeUs_ != 0L) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, groupId_);
+          .computeUInt64Size(2, waitBeginTimeUs_);
       }
       if (waitSeconds_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, waitSeconds_);
-      }
-      if (waitBeginTimeUs_ != 0L) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt64Size(7, waitBeginTimeUs_);
-      }
-      if (playIndex_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, playIndex_);
+          .computeUInt32Size(5, waitSeconds_);
       }
       for (int i = 0; i < cardList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(9, cardList_.get(i));
+          .computeMessageSize(8, cardList_.get(i));
       }
       for (java.util.Map.Entry<java.lang.Integer, java.lang.Integer> entry
            : internalGetPlayerConfirmedCardMap().getMap().entrySet()) {
@@ -479,7 +475,15 @@ public final class InBattleMechanicusCardResultNotifyOuterClass {
             .setValue(entry.getValue())
             .build();
         size += com.google.protobuf.CodedOutputStream
-            .computeMessageSize(12, playerConfirmedCardMap__);
+            .computeMessageSize(9, playerConfirmedCardMap__);
+      }
+      if (groupId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(10, groupId_);
+      }
+      if (playIndex_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(14, playIndex_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -496,18 +500,18 @@ public final class InBattleMechanicusCardResultNotifyOuterClass {
       }
       emu.grasscutter.net.proto.InBattleMechanicusCardResultNotifyOuterClass.InBattleMechanicusCardResultNotify other = (emu.grasscutter.net.proto.InBattleMechanicusCardResultNotifyOuterClass.InBattleMechanicusCardResultNotify) obj;
 
-      if (getWaitSeconds()
-          != other.getWaitSeconds()) return false;
       if (getGroupId()
           != other.getGroupId()) return false;
       if (!getCardListList()
           .equals(other.getCardListList())) return false;
-      if (getWaitBeginTimeUs()
-          != other.getWaitBeginTimeUs()) return false;
-      if (!internalGetPlayerConfirmedCardMap().equals(
-          other.internalGetPlayerConfirmedCardMap())) return false;
       if (getPlayIndex()
           != other.getPlayIndex()) return false;
+      if (!internalGetPlayerConfirmedCardMap().equals(
+          other.internalGetPlayerConfirmedCardMap())) return false;
+      if (getWaitBeginTimeUs()
+          != other.getWaitBeginTimeUs()) return false;
+      if (getWaitSeconds()
+          != other.getWaitSeconds()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -519,23 +523,23 @@ public final class InBattleMechanicusCardResultNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + WAIT_SECONDS_FIELD_NUMBER;
-      hash = (53 * hash) + getWaitSeconds();
       hash = (37 * hash) + GROUP_ID_FIELD_NUMBER;
       hash = (53 * hash) + getGroupId();
       if (getCardListCount() > 0) {
         hash = (37 * hash) + CARD_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getCardListList().hashCode();
       }
-      hash = (37 * hash) + WAIT_BEGIN_TIME_US_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-          getWaitBeginTimeUs());
+      hash = (37 * hash) + PLAY_INDEX_FIELD_NUMBER;
+      hash = (53 * hash) + getPlayIndex();
       if (!internalGetPlayerConfirmedCardMap().getMap().isEmpty()) {
         hash = (37 * hash) + PLAYER_CONFIRMED_CARD_MAP_FIELD_NUMBER;
         hash = (53 * hash) + internalGetPlayerConfirmedCardMap().hashCode();
       }
-      hash = (37 * hash) + PLAY_INDEX_FIELD_NUMBER;
-      hash = (53 * hash) + getPlayIndex();
+      hash = (37 * hash) + WAIT_BEGIN_TIME_US_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
+          getWaitBeginTimeUs());
+      hash = (37 * hash) + WAIT_SECONDS_FIELD_NUMBER;
+      hash = (53 * hash) + getWaitSeconds();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -633,9 +637,13 @@ public final class InBattleMechanicusCardResultNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 5397
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 5399;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code InBattleMechanicusCardResultNotify}
@@ -653,7 +661,7 @@ public final class InBattleMechanicusCardResultNotifyOuterClass {
       protected com.google.protobuf.MapField internalGetMapField(
           int number) {
         switch (number) {
-          case 12:
+          case 9:
             return internalGetPlayerConfirmedCardMap();
           default:
             throw new RuntimeException(
@@ -664,7 +672,7 @@ public final class InBattleMechanicusCardResultNotifyOuterClass {
       protected com.google.protobuf.MapField internalGetMutableMapField(
           int number) {
         switch (number) {
-          case 12:
+          case 9:
             return internalGetMutablePlayerConfirmedCardMap();
           default:
             throw new RuntimeException(
@@ -698,8 +706,6 @@ public final class InBattleMechanicusCardResultNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        waitSeconds_ = 0;
-
         groupId_ = 0;
 
         if (cardListBuilder_ == null) {
@@ -708,10 +714,12 @@ public final class InBattleMechanicusCardResultNotifyOuterClass {
         } else {
           cardListBuilder_.clear();
         }
-        waitBeginTimeUs_ = 0L;
+        playIndex_ = 0;
 
         internalGetMutablePlayerConfirmedCardMap().clear();
-        playIndex_ = 0;
+        waitBeginTimeUs_ = 0L;
+
+        waitSeconds_ = 0;
 
         return this;
       }
@@ -740,7 +748,6 @@ public final class InBattleMechanicusCardResultNotifyOuterClass {
       public emu.grasscutter.net.proto.InBattleMechanicusCardResultNotifyOuterClass.InBattleMechanicusCardResultNotify buildPartial() {
         emu.grasscutter.net.proto.InBattleMechanicusCardResultNotifyOuterClass.InBattleMechanicusCardResultNotify result = new emu.grasscutter.net.proto.InBattleMechanicusCardResultNotifyOuterClass.InBattleMechanicusCardResultNotify(this);
         int from_bitField0_ = bitField0_;
-        result.waitSeconds_ = waitSeconds_;
         result.groupId_ = groupId_;
         if (cardListBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0)) {
@@ -751,10 +758,11 @@ public final class InBattleMechanicusCardResultNotifyOuterClass {
         } else {
           result.cardList_ = cardListBuilder_.build();
         }
-        result.waitBeginTimeUs_ = waitBeginTimeUs_;
+        result.playIndex_ = playIndex_;
         result.playerConfirmedCardMap_ = internalGetPlayerConfirmedCardMap();
         result.playerConfirmedCardMap_.makeImmutable();
-        result.playIndex_ = playIndex_;
+        result.waitBeginTimeUs_ = waitBeginTimeUs_;
+        result.waitSeconds_ = waitSeconds_;
         onBuilt();
         return result;
       }
@@ -803,9 +811,6 @@ public final class InBattleMechanicusCardResultNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.InBattleMechanicusCardResultNotifyOuterClass.InBattleMechanicusCardResultNotify other) {
         if (other == emu.grasscutter.net.proto.InBattleMechanicusCardResultNotifyOuterClass.InBattleMechanicusCardResultNotify.getDefaultInstance()) return this;
-        if (other.getWaitSeconds() != 0) {
-          setWaitSeconds(other.getWaitSeconds());
-        }
         if (other.getGroupId() != 0) {
           setGroupId(other.getGroupId());
         }
@@ -835,13 +840,16 @@ public final class InBattleMechanicusCardResultNotifyOuterClass {
             }
           }
         }
-        if (other.getWaitBeginTimeUs() != 0L) {
-          setWaitBeginTimeUs(other.getWaitBeginTimeUs());
+        if (other.getPlayIndex() != 0) {
+          setPlayIndex(other.getPlayIndex());
         }
         internalGetMutablePlayerConfirmedCardMap().mergeFrom(
             other.internalGetPlayerConfirmedCardMap());
-        if (other.getPlayIndex() != 0) {
-          setPlayIndex(other.getPlayIndex());
+        if (other.getWaitBeginTimeUs() != 0L) {
+          setWaitBeginTimeUs(other.getWaitBeginTimeUs());
+        }
+        if (other.getWaitSeconds() != 0) {
+          setWaitSeconds(other.getWaitSeconds());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -873,40 +881,9 @@ public final class InBattleMechanicusCardResultNotifyOuterClass {
       }
       private int bitField0_;
 
-      private int waitSeconds_ ;
-      /**
-       * <code>uint32 wait_seconds = 6;</code>
-       * @return The waitSeconds.
-       */
-      @java.lang.Override
-      public int getWaitSeconds() {
-        return waitSeconds_;
-      }
-      /**
-       * <code>uint32 wait_seconds = 6;</code>
-       * @param value The waitSeconds to set.
-       * @return This builder for chaining.
-       */
-      public Builder setWaitSeconds(int value) {
-        
-        waitSeconds_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 wait_seconds = 6;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearWaitSeconds() {
-        
-        waitSeconds_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int groupId_ ;
       /**
-       * <code>uint32 group_id = 2;</code>
+       * <code>uint32 group_id = 10;</code>
        * @return The groupId.
        */
       @java.lang.Override
@@ -914,7 +891,7 @@ public final class InBattleMechanicusCardResultNotifyOuterClass {
         return groupId_;
       }
       /**
-       * <code>uint32 group_id = 2;</code>
+       * <code>uint32 group_id = 10;</code>
        * @param value The groupId to set.
        * @return This builder for chaining.
        */
@@ -925,7 +902,7 @@ public final class InBattleMechanicusCardResultNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 group_id = 2;</code>
+       * <code>uint32 group_id = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearGroupId() {
@@ -948,7 +925,7 @@ public final class InBattleMechanicusCardResultNotifyOuterClass {
           emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfo, emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfo.Builder, emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfoOrBuilder> cardListBuilder_;
 
       /**
-       * <code>repeated .InBattleMechanicusCardInfo card_list = 9;</code>
+       * <code>repeated .InBattleMechanicusCardInfo card_list = 8;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfo> getCardListList() {
         if (cardListBuilder_ == null) {
@@ -958,7 +935,7 @@ public final class InBattleMechanicusCardResultNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .InBattleMechanicusCardInfo card_list = 9;</code>
+       * <code>repeated .InBattleMechanicusCardInfo card_list = 8;</code>
        */
       public int getCardListCount() {
         if (cardListBuilder_ == null) {
@@ -968,7 +945,7 @@ public final class InBattleMechanicusCardResultNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .InBattleMechanicusCardInfo card_list = 9;</code>
+       * <code>repeated .InBattleMechanicusCardInfo card_list = 8;</code>
        */
       public emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfo getCardList(int index) {
         if (cardListBuilder_ == null) {
@@ -978,7 +955,7 @@ public final class InBattleMechanicusCardResultNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .InBattleMechanicusCardInfo card_list = 9;</code>
+       * <code>repeated .InBattleMechanicusCardInfo card_list = 8;</code>
        */
       public Builder setCardList(
           int index, emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfo value) {
@@ -995,7 +972,7 @@ public final class InBattleMechanicusCardResultNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .InBattleMechanicusCardInfo card_list = 9;</code>
+       * <code>repeated .InBattleMechanicusCardInfo card_list = 8;</code>
        */
       public Builder setCardList(
           int index, emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfo.Builder builderForValue) {
@@ -1009,7 +986,7 @@ public final class InBattleMechanicusCardResultNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .InBattleMechanicusCardInfo card_list = 9;</code>
+       * <code>repeated .InBattleMechanicusCardInfo card_list = 8;</code>
        */
       public Builder addCardList(emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfo value) {
         if (cardListBuilder_ == null) {
@@ -1025,7 +1002,7 @@ public final class InBattleMechanicusCardResultNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .InBattleMechanicusCardInfo card_list = 9;</code>
+       * <code>repeated .InBattleMechanicusCardInfo card_list = 8;</code>
        */
       public Builder addCardList(
           int index, emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfo value) {
@@ -1042,7 +1019,7 @@ public final class InBattleMechanicusCardResultNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .InBattleMechanicusCardInfo card_list = 9;</code>
+       * <code>repeated .InBattleMechanicusCardInfo card_list = 8;</code>
        */
       public Builder addCardList(
           emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfo.Builder builderForValue) {
@@ -1056,7 +1033,7 @@ public final class InBattleMechanicusCardResultNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .InBattleMechanicusCardInfo card_list = 9;</code>
+       * <code>repeated .InBattleMechanicusCardInfo card_list = 8;</code>
        */
       public Builder addCardList(
           int index, emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfo.Builder builderForValue) {
@@ -1070,7 +1047,7 @@ public final class InBattleMechanicusCardResultNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .InBattleMechanicusCardInfo card_list = 9;</code>
+       * <code>repeated .InBattleMechanicusCardInfo card_list = 8;</code>
        */
       public Builder addAllCardList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfo> values) {
@@ -1085,7 +1062,7 @@ public final class InBattleMechanicusCardResultNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .InBattleMechanicusCardInfo card_list = 9;</code>
+       * <code>repeated .InBattleMechanicusCardInfo card_list = 8;</code>
        */
       public Builder clearCardList() {
         if (cardListBuilder_ == null) {
@@ -1098,7 +1075,7 @@ public final class InBattleMechanicusCardResultNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .InBattleMechanicusCardInfo card_list = 9;</code>
+       * <code>repeated .InBattleMechanicusCardInfo card_list = 8;</code>
        */
       public Builder removeCardList(int index) {
         if (cardListBuilder_ == null) {
@@ -1111,14 +1088,14 @@ public final class InBattleMechanicusCardResultNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .InBattleMechanicusCardInfo card_list = 9;</code>
+       * <code>repeated .InBattleMechanicusCardInfo card_list = 8;</code>
        */
       public emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfo.Builder getCardListBuilder(
           int index) {
         return getCardListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .InBattleMechanicusCardInfo card_list = 9;</code>
+       * <code>repeated .InBattleMechanicusCardInfo card_list = 8;</code>
        */
       public emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfoOrBuilder getCardListOrBuilder(
           int index) {
@@ -1128,7 +1105,7 @@ public final class InBattleMechanicusCardResultNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .InBattleMechanicusCardInfo card_list = 9;</code>
+       * <code>repeated .InBattleMechanicusCardInfo card_list = 8;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfoOrBuilder> 
            getCardListOrBuilderList() {
@@ -1139,14 +1116,14 @@ public final class InBattleMechanicusCardResultNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .InBattleMechanicusCardInfo card_list = 9;</code>
+       * <code>repeated .InBattleMechanicusCardInfo card_list = 8;</code>
        */
       public emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfo.Builder addCardListBuilder() {
         return getCardListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .InBattleMechanicusCardInfo card_list = 9;</code>
+       * <code>repeated .InBattleMechanicusCardInfo card_list = 8;</code>
        */
       public emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfo.Builder addCardListBuilder(
           int index) {
@@ -1154,7 +1131,7 @@ public final class InBattleMechanicusCardResultNotifyOuterClass {
             index, emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .InBattleMechanicusCardInfo card_list = 9;</code>
+       * <code>repeated .InBattleMechanicusCardInfo card_list = 8;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfo.Builder> 
            getCardListBuilderList() {
@@ -1175,33 +1152,33 @@ public final class InBattleMechanicusCardResultNotifyOuterClass {
         return cardListBuilder_;
       }
 
-      private long waitBeginTimeUs_ ;
+      private int playIndex_ ;
       /**
-       * <code>uint64 wait_begin_time_us = 7;</code>
-       * @return The waitBeginTimeUs.
+       * <code>uint32 play_index = 14;</code>
+       * @return The playIndex.
        */
       @java.lang.Override
-      public long getWaitBeginTimeUs() {
-        return waitBeginTimeUs_;
+      public int getPlayIndex() {
+        return playIndex_;
       }
       /**
-       * <code>uint64 wait_begin_time_us = 7;</code>
-       * @param value The waitBeginTimeUs to set.
+       * <code>uint32 play_index = 14;</code>
+       * @param value The playIndex to set.
        * @return This builder for chaining.
        */
-      public Builder setWaitBeginTimeUs(long value) {
+      public Builder setPlayIndex(int value) {
         
-        waitBeginTimeUs_ = value;
+        playIndex_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint64 wait_begin_time_us = 7;</code>
+       * <code>uint32 play_index = 14;</code>
        * @return This builder for chaining.
        */
-      public Builder clearWaitBeginTimeUs() {
+      public Builder clearPlayIndex() {
         
-        waitBeginTimeUs_ = 0L;
+        playIndex_ = 0;
         onChanged();
         return this;
       }
@@ -1233,7 +1210,7 @@ public final class InBattleMechanicusCardResultNotifyOuterClass {
         return internalGetPlayerConfirmedCardMap().getMap().size();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; player_confirmed_card_map = 12;</code>
+       * <code>map&lt;uint32, uint32&gt; player_confirmed_card_map = 9;</code>
        */
 
       @java.lang.Override
@@ -1251,7 +1228,7 @@ public final class InBattleMechanicusCardResultNotifyOuterClass {
         return getPlayerConfirmedCardMapMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; player_confirmed_card_map = 12;</code>
+       * <code>map&lt;uint32, uint32&gt; player_confirmed_card_map = 9;</code>
        */
       @java.lang.Override
 
@@ -1259,7 +1236,7 @@ public final class InBattleMechanicusCardResultNotifyOuterClass {
         return internalGetPlayerConfirmedCardMap().getMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; player_confirmed_card_map = 12;</code>
+       * <code>map&lt;uint32, uint32&gt; player_confirmed_card_map = 9;</code>
        */
       @java.lang.Override
 
@@ -1272,7 +1249,7 @@ public final class InBattleMechanicusCardResultNotifyOuterClass {
         return map.containsKey(key) ? map.get(key) : defaultValue;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; player_confirmed_card_map = 12;</code>
+       * <code>map&lt;uint32, uint32&gt; player_confirmed_card_map = 9;</code>
        */
       @java.lang.Override
 
@@ -1293,7 +1270,7 @@ public final class InBattleMechanicusCardResultNotifyOuterClass {
         return this;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; player_confirmed_card_map = 12;</code>
+       * <code>map&lt;uint32, uint32&gt; player_confirmed_card_map = 9;</code>
        */
 
       public Builder removePlayerConfirmedCardMap(
@@ -1312,7 +1289,7 @@ public final class InBattleMechanicusCardResultNotifyOuterClass {
         return internalGetMutablePlayerConfirmedCardMap().getMutableMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; player_confirmed_card_map = 12;</code>
+       * <code>map&lt;uint32, uint32&gt; player_confirmed_card_map = 9;</code>
        */
       public Builder putPlayerConfirmedCardMap(
           int key,
@@ -1324,7 +1301,7 @@ public final class InBattleMechanicusCardResultNotifyOuterClass {
         return this;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; player_confirmed_card_map = 12;</code>
+       * <code>map&lt;uint32, uint32&gt; player_confirmed_card_map = 9;</code>
        */
 
       public Builder putAllPlayerConfirmedCardMap(
@@ -1334,33 +1311,64 @@ public final class InBattleMechanicusCardResultNotifyOuterClass {
         return this;
       }
 
-      private int playIndex_ ;
+      private long waitBeginTimeUs_ ;
       /**
-       * <code>uint32 play_index = 8;</code>
-       * @return The playIndex.
+       * <code>uint64 wait_begin_time_us = 2;</code>
+       * @return The waitBeginTimeUs.
        */
       @java.lang.Override
-      public int getPlayIndex() {
-        return playIndex_;
+      public long getWaitBeginTimeUs() {
+        return waitBeginTimeUs_;
       }
       /**
-       * <code>uint32 play_index = 8;</code>
-       * @param value The playIndex to set.
+       * <code>uint64 wait_begin_time_us = 2;</code>
+       * @param value The waitBeginTimeUs to set.
        * @return This builder for chaining.
        */
-      public Builder setPlayIndex(int value) {
+      public Builder setWaitBeginTimeUs(long value) {
         
-        playIndex_ = value;
+        waitBeginTimeUs_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 play_index = 8;</code>
+       * <code>uint64 wait_begin_time_us = 2;</code>
        * @return This builder for chaining.
        */
-      public Builder clearPlayIndex() {
+      public Builder clearWaitBeginTimeUs() {
         
-        playIndex_ = 0;
+        waitBeginTimeUs_ = 0L;
+        onChanged();
+        return this;
+      }
+
+      private int waitSeconds_ ;
+      /**
+       * <code>uint32 wait_seconds = 5;</code>
+       * @return The waitSeconds.
+       */
+      @java.lang.Override
+      public int getWaitSeconds() {
+        return waitSeconds_;
+      }
+      /**
+       * <code>uint32 wait_seconds = 5;</code>
+       * @param value The waitSeconds to set.
+       * @return This builder for chaining.
+       */
+      public Builder setWaitSeconds(int value) {
+        
+        waitSeconds_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 wait_seconds = 5;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearWaitSeconds() {
+        
+        waitSeconds_ = 0;
         onChanged();
         return this;
       }
@@ -1438,13 +1446,13 @@ public final class InBattleMechanicusCardResultNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n(InBattleMechanicusCardResultNotify.pro" +
       "to\032 InBattleMechanicusCardInfo.proto\"\317\002\n" +
-      "\"InBattleMechanicusCardResultNotify\022\024\n\014w" +
-      "ait_seconds\030\006 \001(\r\022\020\n\010group_id\030\002 \001(\r\022.\n\tc" +
-      "ard_list\030\t \003(\0132\033.InBattleMechanicusCardI" +
-      "nfo\022\032\n\022wait_begin_time_us\030\007 \001(\004\022b\n\031playe" +
-      "r_confirmed_card_map\030\014 \003(\0132?.InBattleMec" +
-      "hanicusCardResultNotify.PlayerConfirmedC" +
-      "ardMapEntry\022\022\n\nplay_index\030\010 \001(\r\032=\n\033Playe" +
+      "\"InBattleMechanicusCardResultNotify\022\020\n\010g" +
+      "roup_id\030\n \001(\r\022.\n\tcard_list\030\010 \003(\0132\033.InBat" +
+      "tleMechanicusCardInfo\022\022\n\nplay_index\030\016 \001(" +
+      "\r\022b\n\031player_confirmed_card_map\030\t \003(\0132?.I" +
+      "nBattleMechanicusCardResultNotify.Player" +
+      "ConfirmedCardMapEntry\022\032\n\022wait_begin_time" +
+      "_us\030\002 \001(\004\022\024\n\014wait_seconds\030\005 \001(\r\032=\n\033Playe" +
       "rConfirmedCardMapEntry\022\013\n\003key\030\001 \001(\r\022\r\n\005v" +
       "alue\030\002 \001(\r:\0028\001B\033\n\031emu.grasscutter.net.pr" +
       "otob\006proto3"
@@ -1459,7 +1467,7 @@ public final class InBattleMechanicusCardResultNotifyOuterClass {
     internal_static_InBattleMechanicusCardResultNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_InBattleMechanicusCardResultNotify_descriptor,
-        new java.lang.String[] { "WaitSeconds", "GroupId", "CardList", "WaitBeginTimeUs", "PlayerConfirmedCardMap", "PlayIndex", });
+        new java.lang.String[] { "GroupId", "CardList", "PlayIndex", "PlayerConfirmedCardMap", "WaitBeginTimeUs", "WaitSeconds", });
     internal_static_InBattleMechanicusCardResultNotify_PlayerConfirmedCardMapEntry_descriptor =
       internal_static_InBattleMechanicusCardResultNotify_descriptor.getNestedTypes().get(0);
     internal_static_InBattleMechanicusCardResultNotify_PlayerConfirmedCardMapEntry_fieldAccessorTable = new

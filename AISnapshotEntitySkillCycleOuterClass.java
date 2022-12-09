@@ -19,34 +19,34 @@ public final class AISnapshotEntitySkillCycleOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool failed = 12;</code>
-     * @return The failed.
+     * <code>bool Unk3300_IIOIBLEOHEK = 14;</code>
+     * @return The unk3300IIOIBLEOHEK.
      */
-    boolean getFailed();
+    boolean getUnk3300IIOIBLEOHEK();
 
     /**
-     * <code>bool trydoskill = 8;</code>
-     * @return The trydoskill.
-     */
-    boolean getTrydoskill();
-
-    /**
-     * <code>bool success = 9;</code>
-     * @return The success.
-     */
-    boolean getSuccess();
-
-    /**
-     * <code>bool selected = 1;</code>
-     * @return The selected.
-     */
-    boolean getSelected();
-
-    /**
-     * <code>uint32 skill_id = 2;</code>
+     * <code>uint32 skill_id = 12;</code>
      * @return The skillId.
      */
     int getSkillId();
+
+    /**
+     * <code>bool Unk3300_ABKFNGIDFMI = 7;</code>
+     * @return The unk3300ABKFNGIDFMI.
+     */
+    boolean getUnk3300ABKFNGIDFMI();
+
+    /**
+     * <code>bool Unk3300_IFKDIMDJBDH = 2;</code>
+     * @return The unk3300IFKDIMDJBDH.
+     */
+    boolean getUnk3300IFKDIMDJBDH();
+
+    /**
+     * <code>bool Unk3300_EGIILMJFEBE = 1;</code>
+     * @return The unk3300EGIILMJFEBE.
+     */
+    boolean getUnk3300EGIILMJFEBE();
   }
   /**
    * Protobuf type {@code AISnapshotEntitySkillCycle}
@@ -95,27 +95,27 @@ public final class AISnapshotEntitySkillCycleOuterClass {
               break;
             case 8: {
 
-              selected_ = input.readBool();
+              unk3300EGIILMJFEBE_ = input.readBool();
               break;
             }
             case 16: {
 
-              skillId_ = input.readUInt32();
+              unk3300IFKDIMDJBDH_ = input.readBool();
               break;
             }
-            case 64: {
+            case 56: {
 
-              trydoskill_ = input.readBool();
-              break;
-            }
-            case 72: {
-
-              success_ = input.readBool();
+              unk3300ABKFNGIDFMI_ = input.readBool();
               break;
             }
             case 96: {
 
-              failed_ = input.readBool();
+              skillId_ = input.readUInt32();
+              break;
+            }
+            case 112: {
+
+              unk3300IIOIBLEOHEK_ = input.readBool();
               break;
             }
             default: {
@@ -150,59 +150,59 @@ public final class AISnapshotEntitySkillCycleOuterClass {
               emu.grasscutter.net.proto.AISnapshotEntitySkillCycleOuterClass.AISnapshotEntitySkillCycle.class, emu.grasscutter.net.proto.AISnapshotEntitySkillCycleOuterClass.AISnapshotEntitySkillCycle.Builder.class);
     }
 
-    public static final int FAILED_FIELD_NUMBER = 12;
-    private boolean failed_;
+    public static final int UNK3300_IIOIBLEOHEK_FIELD_NUMBER = 14;
+    private boolean unk3300IIOIBLEOHEK_;
     /**
-     * <code>bool failed = 12;</code>
-     * @return The failed.
+     * <code>bool Unk3300_IIOIBLEOHEK = 14;</code>
+     * @return The unk3300IIOIBLEOHEK.
      */
     @java.lang.Override
-    public boolean getFailed() {
-      return failed_;
+    public boolean getUnk3300IIOIBLEOHEK() {
+      return unk3300IIOIBLEOHEK_;
     }
 
-    public static final int TRYDOSKILL_FIELD_NUMBER = 8;
-    private boolean trydoskill_;
-    /**
-     * <code>bool trydoskill = 8;</code>
-     * @return The trydoskill.
-     */
-    @java.lang.Override
-    public boolean getTrydoskill() {
-      return trydoskill_;
-    }
-
-    public static final int SUCCESS_FIELD_NUMBER = 9;
-    private boolean success_;
-    /**
-     * <code>bool success = 9;</code>
-     * @return The success.
-     */
-    @java.lang.Override
-    public boolean getSuccess() {
-      return success_;
-    }
-
-    public static final int SELECTED_FIELD_NUMBER = 1;
-    private boolean selected_;
-    /**
-     * <code>bool selected = 1;</code>
-     * @return The selected.
-     */
-    @java.lang.Override
-    public boolean getSelected() {
-      return selected_;
-    }
-
-    public static final int SKILL_ID_FIELD_NUMBER = 2;
+    public static final int SKILL_ID_FIELD_NUMBER = 12;
     private int skillId_;
     /**
-     * <code>uint32 skill_id = 2;</code>
+     * <code>uint32 skill_id = 12;</code>
      * @return The skillId.
      */
     @java.lang.Override
     public int getSkillId() {
       return skillId_;
+    }
+
+    public static final int UNK3300_ABKFNGIDFMI_FIELD_NUMBER = 7;
+    private boolean unk3300ABKFNGIDFMI_;
+    /**
+     * <code>bool Unk3300_ABKFNGIDFMI = 7;</code>
+     * @return The unk3300ABKFNGIDFMI.
+     */
+    @java.lang.Override
+    public boolean getUnk3300ABKFNGIDFMI() {
+      return unk3300ABKFNGIDFMI_;
+    }
+
+    public static final int UNK3300_IFKDIMDJBDH_FIELD_NUMBER = 2;
+    private boolean unk3300IFKDIMDJBDH_;
+    /**
+     * <code>bool Unk3300_IFKDIMDJBDH = 2;</code>
+     * @return The unk3300IFKDIMDJBDH.
+     */
+    @java.lang.Override
+    public boolean getUnk3300IFKDIMDJBDH() {
+      return unk3300IFKDIMDJBDH_;
+    }
+
+    public static final int UNK3300_EGIILMJFEBE_FIELD_NUMBER = 1;
+    private boolean unk3300EGIILMJFEBE_;
+    /**
+     * <code>bool Unk3300_EGIILMJFEBE = 1;</code>
+     * @return The unk3300EGIILMJFEBE.
+     */
+    @java.lang.Override
+    public boolean getUnk3300EGIILMJFEBE() {
+      return unk3300EGIILMJFEBE_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -219,20 +219,20 @@ public final class AISnapshotEntitySkillCycleOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (selected_ != false) {
-        output.writeBool(1, selected_);
+      if (unk3300EGIILMJFEBE_ != false) {
+        output.writeBool(1, unk3300EGIILMJFEBE_);
+      }
+      if (unk3300IFKDIMDJBDH_ != false) {
+        output.writeBool(2, unk3300IFKDIMDJBDH_);
+      }
+      if (unk3300ABKFNGIDFMI_ != false) {
+        output.writeBool(7, unk3300ABKFNGIDFMI_);
       }
       if (skillId_ != 0) {
-        output.writeUInt32(2, skillId_);
+        output.writeUInt32(12, skillId_);
       }
-      if (trydoskill_ != false) {
-        output.writeBool(8, trydoskill_);
-      }
-      if (success_ != false) {
-        output.writeBool(9, success_);
-      }
-      if (failed_ != false) {
-        output.writeBool(12, failed_);
+      if (unk3300IIOIBLEOHEK_ != false) {
+        output.writeBool(14, unk3300IIOIBLEOHEK_);
       }
       unknownFields.writeTo(output);
     }
@@ -243,25 +243,25 @@ public final class AISnapshotEntitySkillCycleOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (selected_ != false) {
+      if (unk3300EGIILMJFEBE_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(1, selected_);
+          .computeBoolSize(1, unk3300EGIILMJFEBE_);
+      }
+      if (unk3300IFKDIMDJBDH_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(2, unk3300IFKDIMDJBDH_);
+      }
+      if (unk3300ABKFNGIDFMI_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(7, unk3300ABKFNGIDFMI_);
       }
       if (skillId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, skillId_);
+          .computeUInt32Size(12, skillId_);
       }
-      if (trydoskill_ != false) {
+      if (unk3300IIOIBLEOHEK_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(8, trydoskill_);
-      }
-      if (success_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(9, success_);
-      }
-      if (failed_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(12, failed_);
+          .computeBoolSize(14, unk3300IIOIBLEOHEK_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -278,16 +278,16 @@ public final class AISnapshotEntitySkillCycleOuterClass {
       }
       emu.grasscutter.net.proto.AISnapshotEntitySkillCycleOuterClass.AISnapshotEntitySkillCycle other = (emu.grasscutter.net.proto.AISnapshotEntitySkillCycleOuterClass.AISnapshotEntitySkillCycle) obj;
 
-      if (getFailed()
-          != other.getFailed()) return false;
-      if (getTrydoskill()
-          != other.getTrydoskill()) return false;
-      if (getSuccess()
-          != other.getSuccess()) return false;
-      if (getSelected()
-          != other.getSelected()) return false;
+      if (getUnk3300IIOIBLEOHEK()
+          != other.getUnk3300IIOIBLEOHEK()) return false;
       if (getSkillId()
           != other.getSkillId()) return false;
+      if (getUnk3300ABKFNGIDFMI()
+          != other.getUnk3300ABKFNGIDFMI()) return false;
+      if (getUnk3300IFKDIMDJBDH()
+          != other.getUnk3300IFKDIMDJBDH()) return false;
+      if (getUnk3300EGIILMJFEBE()
+          != other.getUnk3300EGIILMJFEBE()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -299,20 +299,20 @@ public final class AISnapshotEntitySkillCycleOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + FAILED_FIELD_NUMBER;
+      hash = (37 * hash) + UNK3300_IIOIBLEOHEK_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getFailed());
-      hash = (37 * hash) + TRYDOSKILL_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getTrydoskill());
-      hash = (37 * hash) + SUCCESS_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getSuccess());
-      hash = (37 * hash) + SELECTED_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getSelected());
+          getUnk3300IIOIBLEOHEK());
       hash = (37 * hash) + SKILL_ID_FIELD_NUMBER;
       hash = (53 * hash) + getSkillId();
+      hash = (37 * hash) + UNK3300_ABKFNGIDFMI_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getUnk3300ABKFNGIDFMI());
+      hash = (37 * hash) + UNK3300_IFKDIMDJBDH_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getUnk3300IFKDIMDJBDH());
+      hash = (37 * hash) + UNK3300_EGIILMJFEBE_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getUnk3300EGIILMJFEBE());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -446,15 +446,15 @@ public final class AISnapshotEntitySkillCycleOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        failed_ = false;
-
-        trydoskill_ = false;
-
-        success_ = false;
-
-        selected_ = false;
+        unk3300IIOIBLEOHEK_ = false;
 
         skillId_ = 0;
+
+        unk3300ABKFNGIDFMI_ = false;
+
+        unk3300IFKDIMDJBDH_ = false;
+
+        unk3300EGIILMJFEBE_ = false;
 
         return this;
       }
@@ -482,11 +482,11 @@ public final class AISnapshotEntitySkillCycleOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.AISnapshotEntitySkillCycleOuterClass.AISnapshotEntitySkillCycle buildPartial() {
         emu.grasscutter.net.proto.AISnapshotEntitySkillCycleOuterClass.AISnapshotEntitySkillCycle result = new emu.grasscutter.net.proto.AISnapshotEntitySkillCycleOuterClass.AISnapshotEntitySkillCycle(this);
-        result.failed_ = failed_;
-        result.trydoskill_ = trydoskill_;
-        result.success_ = success_;
-        result.selected_ = selected_;
+        result.unk3300IIOIBLEOHEK_ = unk3300IIOIBLEOHEK_;
         result.skillId_ = skillId_;
+        result.unk3300ABKFNGIDFMI_ = unk3300ABKFNGIDFMI_;
+        result.unk3300IFKDIMDJBDH_ = unk3300IFKDIMDJBDH_;
+        result.unk3300EGIILMJFEBE_ = unk3300EGIILMJFEBE_;
         onBuilt();
         return result;
       }
@@ -535,20 +535,20 @@ public final class AISnapshotEntitySkillCycleOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.AISnapshotEntitySkillCycleOuterClass.AISnapshotEntitySkillCycle other) {
         if (other == emu.grasscutter.net.proto.AISnapshotEntitySkillCycleOuterClass.AISnapshotEntitySkillCycle.getDefaultInstance()) return this;
-        if (other.getFailed() != false) {
-          setFailed(other.getFailed());
-        }
-        if (other.getTrydoskill() != false) {
-          setTrydoskill(other.getTrydoskill());
-        }
-        if (other.getSuccess() != false) {
-          setSuccess(other.getSuccess());
-        }
-        if (other.getSelected() != false) {
-          setSelected(other.getSelected());
+        if (other.getUnk3300IIOIBLEOHEK() != false) {
+          setUnk3300IIOIBLEOHEK(other.getUnk3300IIOIBLEOHEK());
         }
         if (other.getSkillId() != 0) {
           setSkillId(other.getSkillId());
+        }
+        if (other.getUnk3300ABKFNGIDFMI() != false) {
+          setUnk3300ABKFNGIDFMI(other.getUnk3300ABKFNGIDFMI());
+        }
+        if (other.getUnk3300IFKDIMDJBDH() != false) {
+          setUnk3300IFKDIMDJBDH(other.getUnk3300IFKDIMDJBDH());
+        }
+        if (other.getUnk3300EGIILMJFEBE() != false) {
+          setUnk3300EGIILMJFEBE(other.getUnk3300EGIILMJFEBE());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -579,133 +579,40 @@ public final class AISnapshotEntitySkillCycleOuterClass {
         return this;
       }
 
-      private boolean failed_ ;
+      private boolean unk3300IIOIBLEOHEK_ ;
       /**
-       * <code>bool failed = 12;</code>
-       * @return The failed.
+       * <code>bool Unk3300_IIOIBLEOHEK = 14;</code>
+       * @return The unk3300IIOIBLEOHEK.
        */
       @java.lang.Override
-      public boolean getFailed() {
-        return failed_;
+      public boolean getUnk3300IIOIBLEOHEK() {
+        return unk3300IIOIBLEOHEK_;
       }
       /**
-       * <code>bool failed = 12;</code>
-       * @param value The failed to set.
+       * <code>bool Unk3300_IIOIBLEOHEK = 14;</code>
+       * @param value The unk3300IIOIBLEOHEK to set.
        * @return This builder for chaining.
        */
-      public Builder setFailed(boolean value) {
+      public Builder setUnk3300IIOIBLEOHEK(boolean value) {
         
-        failed_ = value;
+        unk3300IIOIBLEOHEK_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>bool failed = 12;</code>
+       * <code>bool Unk3300_IIOIBLEOHEK = 14;</code>
        * @return This builder for chaining.
        */
-      public Builder clearFailed() {
+      public Builder clearUnk3300IIOIBLEOHEK() {
         
-        failed_ = false;
-        onChanged();
-        return this;
-      }
-
-      private boolean trydoskill_ ;
-      /**
-       * <code>bool trydoskill = 8;</code>
-       * @return The trydoskill.
-       */
-      @java.lang.Override
-      public boolean getTrydoskill() {
-        return trydoskill_;
-      }
-      /**
-       * <code>bool trydoskill = 8;</code>
-       * @param value The trydoskill to set.
-       * @return This builder for chaining.
-       */
-      public Builder setTrydoskill(boolean value) {
-        
-        trydoskill_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool trydoskill = 8;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearTrydoskill() {
-        
-        trydoskill_ = false;
-        onChanged();
-        return this;
-      }
-
-      private boolean success_ ;
-      /**
-       * <code>bool success = 9;</code>
-       * @return The success.
-       */
-      @java.lang.Override
-      public boolean getSuccess() {
-        return success_;
-      }
-      /**
-       * <code>bool success = 9;</code>
-       * @param value The success to set.
-       * @return This builder for chaining.
-       */
-      public Builder setSuccess(boolean value) {
-        
-        success_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool success = 9;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearSuccess() {
-        
-        success_ = false;
-        onChanged();
-        return this;
-      }
-
-      private boolean selected_ ;
-      /**
-       * <code>bool selected = 1;</code>
-       * @return The selected.
-       */
-      @java.lang.Override
-      public boolean getSelected() {
-        return selected_;
-      }
-      /**
-       * <code>bool selected = 1;</code>
-       * @param value The selected to set.
-       * @return This builder for chaining.
-       */
-      public Builder setSelected(boolean value) {
-        
-        selected_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool selected = 1;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearSelected() {
-        
-        selected_ = false;
+        unk3300IIOIBLEOHEK_ = false;
         onChanged();
         return this;
       }
 
       private int skillId_ ;
       /**
-       * <code>uint32 skill_id = 2;</code>
+       * <code>uint32 skill_id = 12;</code>
        * @return The skillId.
        */
       @java.lang.Override
@@ -713,7 +620,7 @@ public final class AISnapshotEntitySkillCycleOuterClass {
         return skillId_;
       }
       /**
-       * <code>uint32 skill_id = 2;</code>
+       * <code>uint32 skill_id = 12;</code>
        * @param value The skillId to set.
        * @return This builder for chaining.
        */
@@ -724,12 +631,105 @@ public final class AISnapshotEntitySkillCycleOuterClass {
         return this;
       }
       /**
-       * <code>uint32 skill_id = 2;</code>
+       * <code>uint32 skill_id = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearSkillId() {
         
         skillId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private boolean unk3300ABKFNGIDFMI_ ;
+      /**
+       * <code>bool Unk3300_ABKFNGIDFMI = 7;</code>
+       * @return The unk3300ABKFNGIDFMI.
+       */
+      @java.lang.Override
+      public boolean getUnk3300ABKFNGIDFMI() {
+        return unk3300ABKFNGIDFMI_;
+      }
+      /**
+       * <code>bool Unk3300_ABKFNGIDFMI = 7;</code>
+       * @param value The unk3300ABKFNGIDFMI to set.
+       * @return This builder for chaining.
+       */
+      public Builder setUnk3300ABKFNGIDFMI(boolean value) {
+        
+        unk3300ABKFNGIDFMI_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool Unk3300_ABKFNGIDFMI = 7;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearUnk3300ABKFNGIDFMI() {
+        
+        unk3300ABKFNGIDFMI_ = false;
+        onChanged();
+        return this;
+      }
+
+      private boolean unk3300IFKDIMDJBDH_ ;
+      /**
+       * <code>bool Unk3300_IFKDIMDJBDH = 2;</code>
+       * @return The unk3300IFKDIMDJBDH.
+       */
+      @java.lang.Override
+      public boolean getUnk3300IFKDIMDJBDH() {
+        return unk3300IFKDIMDJBDH_;
+      }
+      /**
+       * <code>bool Unk3300_IFKDIMDJBDH = 2;</code>
+       * @param value The unk3300IFKDIMDJBDH to set.
+       * @return This builder for chaining.
+       */
+      public Builder setUnk3300IFKDIMDJBDH(boolean value) {
+        
+        unk3300IFKDIMDJBDH_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool Unk3300_IFKDIMDJBDH = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearUnk3300IFKDIMDJBDH() {
+        
+        unk3300IFKDIMDJBDH_ = false;
+        onChanged();
+        return this;
+      }
+
+      private boolean unk3300EGIILMJFEBE_ ;
+      /**
+       * <code>bool Unk3300_EGIILMJFEBE = 1;</code>
+       * @return The unk3300EGIILMJFEBE.
+       */
+      @java.lang.Override
+      public boolean getUnk3300EGIILMJFEBE() {
+        return unk3300EGIILMJFEBE_;
+      }
+      /**
+       * <code>bool Unk3300_EGIILMJFEBE = 1;</code>
+       * @param value The unk3300EGIILMJFEBE to set.
+       * @return This builder for chaining.
+       */
+      public Builder setUnk3300EGIILMJFEBE(boolean value) {
+        
+        unk3300EGIILMJFEBE_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool Unk3300_EGIILMJFEBE = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearUnk3300EGIILMJFEBE() {
+        
+        unk3300EGIILMJFEBE_ = false;
         onChanged();
         return this;
       }
@@ -800,11 +800,12 @@ public final class AISnapshotEntitySkillCycleOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n AISnapshotEntitySkillCycle.proto\"u\n\032AI" +
-      "SnapshotEntitySkillCycle\022\016\n\006failed\030\014 \001(\010" +
-      "\022\022\n\ntrydoskill\030\010 \001(\010\022\017\n\007success\030\t \001(\010\022\020\n" +
-      "\010selected\030\001 \001(\010\022\020\n\010skill_id\030\002 \001(\rB\033\n\031emu" +
-      ".grasscutter.net.protob\006proto3"
+      "\n AISnapshotEntitySkillCycle.proto\"\242\001\n\032A" +
+      "ISnapshotEntitySkillCycle\022\033\n\023Unk3300_IIO" +
+      "IBLEOHEK\030\016 \001(\010\022\020\n\010skill_id\030\014 \001(\r\022\033\n\023Unk3" +
+      "300_ABKFNGIDFMI\030\007 \001(\010\022\033\n\023Unk3300_IFKDIMD" +
+      "JBDH\030\002 \001(\010\022\033\n\023Unk3300_EGIILMJFEBE\030\001 \001(\010B" +
+      "\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -815,7 +816,7 @@ public final class AISnapshotEntitySkillCycleOuterClass {
     internal_static_AISnapshotEntitySkillCycle_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_AISnapshotEntitySkillCycle_descriptor,
-        new java.lang.String[] { "Failed", "Trydoskill", "Success", "Selected", "SkillId", });
+        new java.lang.String[] { "Unk3300IIOIBLEOHEK", "SkillId", "Unk3300ABKFNGIDFMI", "Unk3300IFKDIMDJBDH", "Unk3300EGIILMJFEBE", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

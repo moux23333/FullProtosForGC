@@ -25,16 +25,20 @@ public final class WinterCampTakeBattleRewardRspOuterClass {
     int getRetcode();
 
     /**
-     * <code>uint32 id = 15;</code>
+     * <code>uint32 id = 13;</code>
      * @return The id.
      */
     int getId();
   }
   /**
    * <pre>
-   * CmdId: 8153
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 8310;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code WinterCampTakeBattleRewardRsp}
@@ -86,7 +90,7 @@ public final class WinterCampTakeBattleRewardRspOuterClass {
               retcode_ = input.readInt32();
               break;
             }
-            case 120: {
+            case 104: {
 
               id_ = input.readUInt32();
               break;
@@ -134,10 +138,10 @@ public final class WinterCampTakeBattleRewardRspOuterClass {
       return retcode_;
     }
 
-    public static final int ID_FIELD_NUMBER = 15;
+    public static final int ID_FIELD_NUMBER = 13;
     private int id_;
     /**
-     * <code>uint32 id = 15;</code>
+     * <code>uint32 id = 13;</code>
      * @return The id.
      */
     @java.lang.Override
@@ -163,7 +167,7 @@ public final class WinterCampTakeBattleRewardRspOuterClass {
         output.writeInt32(6, retcode_);
       }
       if (id_ != 0) {
-        output.writeUInt32(15, id_);
+        output.writeUInt32(13, id_);
       }
       unknownFields.writeTo(output);
     }
@@ -180,7 +184,7 @@ public final class WinterCampTakeBattleRewardRspOuterClass {
       }
       if (id_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, id_);
+          .computeUInt32Size(13, id_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -313,9 +317,13 @@ public final class WinterCampTakeBattleRewardRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 8153
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 8310;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code WinterCampTakeBattleRewardRsp}
@@ -503,7 +511,7 @@ public final class WinterCampTakeBattleRewardRspOuterClass {
 
       private int id_ ;
       /**
-       * <code>uint32 id = 15;</code>
+       * <code>uint32 id = 13;</code>
        * @return The id.
        */
       @java.lang.Override
@@ -511,7 +519,7 @@ public final class WinterCampTakeBattleRewardRspOuterClass {
         return id_;
       }
       /**
-       * <code>uint32 id = 15;</code>
+       * <code>uint32 id = 13;</code>
        * @param value The id to set.
        * @return This builder for chaining.
        */
@@ -522,7 +530,7 @@ public final class WinterCampTakeBattleRewardRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 id = 15;</code>
+       * <code>uint32 id = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearId() {
@@ -600,7 +608,7 @@ public final class WinterCampTakeBattleRewardRspOuterClass {
     java.lang.String[] descriptorData = {
       "\n#WinterCampTakeBattleRewardRsp.proto\"<\n" +
       "\035WinterCampTakeBattleRewardRsp\022\017\n\007retcod" +
-      "e\030\006 \001(\005\022\n\n\002id\030\017 \001(\rB\033\n\031emu.grasscutter.n" +
+      "e\030\006 \001(\005\022\n\n\002id\030\r \001(\rB\033\n\031emu.grasscutter.n" +
       "et.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

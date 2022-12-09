@@ -19,17 +19,17 @@ public final class WatcherAllDataNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated uint32 watcher_list = 4;</code>
+     * <code>repeated uint32 watcher_list = 13;</code>
      * @return A list containing the watcherList.
      */
     java.util.List<java.lang.Integer> getWatcherListList();
     /**
-     * <code>repeated uint32 watcher_list = 4;</code>
+     * <code>repeated uint32 watcher_list = 13;</code>
      * @return The count of watcherList.
      */
     int getWatcherListCount();
     /**
-     * <code>repeated uint32 watcher_list = 4;</code>
+     * <code>repeated uint32 watcher_list = 13;</code>
      * @param index The index of the element to return.
      * @return The watcherList at the given index.
      */
@@ -37,9 +37,13 @@ public final class WatcherAllDataNotifyOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 2272
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 2279;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code WatcherAllDataNotify}
@@ -88,7 +92,7 @@ public final class WatcherAllDataNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 32: {
+            case 104: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 watcherList_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
@@ -96,7 +100,7 @@ public final class WatcherAllDataNotifyOuterClass {
               watcherList_.addInt(input.readUInt32());
               break;
             }
-            case 34: {
+            case 106: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -144,10 +148,10 @@ public final class WatcherAllDataNotifyOuterClass {
               emu.grasscutter.net.proto.WatcherAllDataNotifyOuterClass.WatcherAllDataNotify.class, emu.grasscutter.net.proto.WatcherAllDataNotifyOuterClass.WatcherAllDataNotify.Builder.class);
     }
 
-    public static final int WATCHER_LIST_FIELD_NUMBER = 4;
+    public static final int WATCHER_LIST_FIELD_NUMBER = 13;
     private com.google.protobuf.Internal.IntList watcherList_;
     /**
-     * <code>repeated uint32 watcher_list = 4;</code>
+     * <code>repeated uint32 watcher_list = 13;</code>
      * @return A list containing the watcherList.
      */
     @java.lang.Override
@@ -156,14 +160,14 @@ public final class WatcherAllDataNotifyOuterClass {
       return watcherList_;
     }
     /**
-     * <code>repeated uint32 watcher_list = 4;</code>
+     * <code>repeated uint32 watcher_list = 13;</code>
      * @return The count of watcherList.
      */
     public int getWatcherListCount() {
       return watcherList_.size();
     }
     /**
-     * <code>repeated uint32 watcher_list = 4;</code>
+     * <code>repeated uint32 watcher_list = 13;</code>
      * @param index The index of the element to return.
      * @return The watcherList at the given index.
      */
@@ -188,7 +192,7 @@ public final class WatcherAllDataNotifyOuterClass {
                         throws java.io.IOException {
       getSerializedSize();
       if (getWatcherListList().size() > 0) {
-        output.writeUInt32NoTag(34);
+        output.writeUInt32NoTag(106);
         output.writeUInt32NoTag(watcherListMemoizedSerializedSize);
       }
       for (int i = 0; i < watcherList_.size(); i++) {
@@ -346,9 +350,13 @@ public final class WatcherAllDataNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 2272
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 2279;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code WatcherAllDataNotify}
@@ -518,7 +526,7 @@ public final class WatcherAllDataNotifyOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 watcher_list = 4;</code>
+       * <code>repeated uint32 watcher_list = 13;</code>
        * @return A list containing the watcherList.
        */
       public java.util.List<java.lang.Integer>
@@ -527,14 +535,14 @@ public final class WatcherAllDataNotifyOuterClass {
                  java.util.Collections.unmodifiableList(watcherList_) : watcherList_;
       }
       /**
-       * <code>repeated uint32 watcher_list = 4;</code>
+       * <code>repeated uint32 watcher_list = 13;</code>
        * @return The count of watcherList.
        */
       public int getWatcherListCount() {
         return watcherList_.size();
       }
       /**
-       * <code>repeated uint32 watcher_list = 4;</code>
+       * <code>repeated uint32 watcher_list = 13;</code>
        * @param index The index of the element to return.
        * @return The watcherList at the given index.
        */
@@ -542,7 +550,7 @@ public final class WatcherAllDataNotifyOuterClass {
         return watcherList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 watcher_list = 4;</code>
+       * <code>repeated uint32 watcher_list = 13;</code>
        * @param index The index to set the value at.
        * @param value The watcherList to set.
        * @return This builder for chaining.
@@ -555,7 +563,7 @@ public final class WatcherAllDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 watcher_list = 4;</code>
+       * <code>repeated uint32 watcher_list = 13;</code>
        * @param value The watcherList to add.
        * @return This builder for chaining.
        */
@@ -566,7 +574,7 @@ public final class WatcherAllDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 watcher_list = 4;</code>
+       * <code>repeated uint32 watcher_list = 13;</code>
        * @param values The watcherList to add.
        * @return This builder for chaining.
        */
@@ -579,7 +587,7 @@ public final class WatcherAllDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 watcher_list = 4;</code>
+       * <code>repeated uint32 watcher_list = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearWatcherList() {
@@ -656,7 +664,7 @@ public final class WatcherAllDataNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\032WatcherAllDataNotify.proto\",\n\024WatcherA" +
-      "llDataNotify\022\024\n\014watcher_list\030\004 \003(\rB\033\n\031em" +
+      "llDataNotify\022\024\n\014watcher_list\030\r \003(\rB\033\n\031em" +
       "u.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

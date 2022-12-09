@@ -19,23 +19,23 @@ public final class OpenBlossomCircleCampGuideNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 refresh_id = 7;</code>
+     * <code>uint32 refresh_id = 8;</code>
      * @return The refreshId.
      */
     int getRefreshId();
 
     /**
-     * <code>repeated uint32 circle_camp_id_list = 11;</code>
+     * <code>repeated uint32 circle_camp_id_list = 6;</code>
      * @return A list containing the circleCampIdList.
      */
     java.util.List<java.lang.Integer> getCircleCampIdListList();
     /**
-     * <code>repeated uint32 circle_camp_id_list = 11;</code>
+     * <code>repeated uint32 circle_camp_id_list = 6;</code>
      * @return The count of circleCampIdList.
      */
     int getCircleCampIdListCount();
     /**
-     * <code>repeated uint32 circle_camp_id_list = 11;</code>
+     * <code>repeated uint32 circle_camp_id_list = 6;</code>
      * @param index The index of the element to return.
      * @return The circleCampIdList at the given index.
      */
@@ -43,10 +43,14 @@ public final class OpenBlossomCircleCampGuideNotifyOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 2703
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 2761;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code OpenBlossomCircleCampGuideNotify}
@@ -95,12 +99,7 @@ public final class OpenBlossomCircleCampGuideNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 56: {
-
-              refreshId_ = input.readUInt32();
-              break;
-            }
-            case 88: {
+            case 48: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 circleCampIdList_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
@@ -108,7 +107,7 @@ public final class OpenBlossomCircleCampGuideNotifyOuterClass {
               circleCampIdList_.addInt(input.readUInt32());
               break;
             }
-            case 90: {
+            case 50: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -119,6 +118,11 @@ public final class OpenBlossomCircleCampGuideNotifyOuterClass {
                 circleCampIdList_.addInt(input.readUInt32());
               }
               input.popLimit(limit);
+              break;
+            }
+            case 64: {
+
+              refreshId_ = input.readUInt32();
               break;
             }
             default: {
@@ -156,10 +160,10 @@ public final class OpenBlossomCircleCampGuideNotifyOuterClass {
               emu.grasscutter.net.proto.OpenBlossomCircleCampGuideNotifyOuterClass.OpenBlossomCircleCampGuideNotify.class, emu.grasscutter.net.proto.OpenBlossomCircleCampGuideNotifyOuterClass.OpenBlossomCircleCampGuideNotify.Builder.class);
     }
 
-    public static final int REFRESH_ID_FIELD_NUMBER = 7;
+    public static final int REFRESH_ID_FIELD_NUMBER = 8;
     private int refreshId_;
     /**
-     * <code>uint32 refresh_id = 7;</code>
+     * <code>uint32 refresh_id = 8;</code>
      * @return The refreshId.
      */
     @java.lang.Override
@@ -167,10 +171,10 @@ public final class OpenBlossomCircleCampGuideNotifyOuterClass {
       return refreshId_;
     }
 
-    public static final int CIRCLE_CAMP_ID_LIST_FIELD_NUMBER = 11;
+    public static final int CIRCLE_CAMP_ID_LIST_FIELD_NUMBER = 6;
     private com.google.protobuf.Internal.IntList circleCampIdList_;
     /**
-     * <code>repeated uint32 circle_camp_id_list = 11;</code>
+     * <code>repeated uint32 circle_camp_id_list = 6;</code>
      * @return A list containing the circleCampIdList.
      */
     @java.lang.Override
@@ -179,14 +183,14 @@ public final class OpenBlossomCircleCampGuideNotifyOuterClass {
       return circleCampIdList_;
     }
     /**
-     * <code>repeated uint32 circle_camp_id_list = 11;</code>
+     * <code>repeated uint32 circle_camp_id_list = 6;</code>
      * @return The count of circleCampIdList.
      */
     public int getCircleCampIdListCount() {
       return circleCampIdList_.size();
     }
     /**
-     * <code>repeated uint32 circle_camp_id_list = 11;</code>
+     * <code>repeated uint32 circle_camp_id_list = 6;</code>
      * @param index The index of the element to return.
      * @return The circleCampIdList at the given index.
      */
@@ -210,15 +214,15 @@ public final class OpenBlossomCircleCampGuideNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      if (refreshId_ != 0) {
-        output.writeUInt32(7, refreshId_);
-      }
       if (getCircleCampIdListList().size() > 0) {
-        output.writeUInt32NoTag(90);
+        output.writeUInt32NoTag(50);
         output.writeUInt32NoTag(circleCampIdListMemoizedSerializedSize);
       }
       for (int i = 0; i < circleCampIdList_.size(); i++) {
         output.writeUInt32NoTag(circleCampIdList_.getInt(i));
+      }
+      if (refreshId_ != 0) {
+        output.writeUInt32(8, refreshId_);
       }
       unknownFields.writeTo(output);
     }
@@ -229,10 +233,6 @@ public final class OpenBlossomCircleCampGuideNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (refreshId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, refreshId_);
-      }
       {
         int dataSize = 0;
         for (int i = 0; i < circleCampIdList_.size(); i++) {
@@ -246,6 +246,10 @@ public final class OpenBlossomCircleCampGuideNotifyOuterClass {
               .computeInt32SizeNoTag(dataSize);
         }
         circleCampIdListMemoizedSerializedSize = dataSize;
+      }
+      if (refreshId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(8, refreshId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -380,10 +384,14 @@ public final class OpenBlossomCircleCampGuideNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 2703
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 2761;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code OpenBlossomCircleCampGuideNotify}
@@ -553,7 +561,7 @@ public final class OpenBlossomCircleCampGuideNotifyOuterClass {
 
       private int refreshId_ ;
       /**
-       * <code>uint32 refresh_id = 7;</code>
+       * <code>uint32 refresh_id = 8;</code>
        * @return The refreshId.
        */
       @java.lang.Override
@@ -561,7 +569,7 @@ public final class OpenBlossomCircleCampGuideNotifyOuterClass {
         return refreshId_;
       }
       /**
-       * <code>uint32 refresh_id = 7;</code>
+       * <code>uint32 refresh_id = 8;</code>
        * @param value The refreshId to set.
        * @return This builder for chaining.
        */
@@ -572,7 +580,7 @@ public final class OpenBlossomCircleCampGuideNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 refresh_id = 7;</code>
+       * <code>uint32 refresh_id = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearRefreshId() {
@@ -590,7 +598,7 @@ public final class OpenBlossomCircleCampGuideNotifyOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 circle_camp_id_list = 11;</code>
+       * <code>repeated uint32 circle_camp_id_list = 6;</code>
        * @return A list containing the circleCampIdList.
        */
       public java.util.List<java.lang.Integer>
@@ -599,14 +607,14 @@ public final class OpenBlossomCircleCampGuideNotifyOuterClass {
                  java.util.Collections.unmodifiableList(circleCampIdList_) : circleCampIdList_;
       }
       /**
-       * <code>repeated uint32 circle_camp_id_list = 11;</code>
+       * <code>repeated uint32 circle_camp_id_list = 6;</code>
        * @return The count of circleCampIdList.
        */
       public int getCircleCampIdListCount() {
         return circleCampIdList_.size();
       }
       /**
-       * <code>repeated uint32 circle_camp_id_list = 11;</code>
+       * <code>repeated uint32 circle_camp_id_list = 6;</code>
        * @param index The index of the element to return.
        * @return The circleCampIdList at the given index.
        */
@@ -614,7 +622,7 @@ public final class OpenBlossomCircleCampGuideNotifyOuterClass {
         return circleCampIdList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 circle_camp_id_list = 11;</code>
+       * <code>repeated uint32 circle_camp_id_list = 6;</code>
        * @param index The index to set the value at.
        * @param value The circleCampIdList to set.
        * @return This builder for chaining.
@@ -627,7 +635,7 @@ public final class OpenBlossomCircleCampGuideNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 circle_camp_id_list = 11;</code>
+       * <code>repeated uint32 circle_camp_id_list = 6;</code>
        * @param value The circleCampIdList to add.
        * @return This builder for chaining.
        */
@@ -638,7 +646,7 @@ public final class OpenBlossomCircleCampGuideNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 circle_camp_id_list = 11;</code>
+       * <code>repeated uint32 circle_camp_id_list = 6;</code>
        * @param values The circleCampIdList to add.
        * @return This builder for chaining.
        */
@@ -651,7 +659,7 @@ public final class OpenBlossomCircleCampGuideNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 circle_camp_id_list = 11;</code>
+       * <code>repeated uint32 circle_camp_id_list = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearCircleCampIdList() {
@@ -729,8 +737,8 @@ public final class OpenBlossomCircleCampGuideNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n&OpenBlossomCircleCampGuideNotify.proto" +
       "\"S\n OpenBlossomCircleCampGuideNotify\022\022\n\n" +
-      "refresh_id\030\007 \001(\r\022\033\n\023circle_camp_id_list\030" +
-      "\013 \003(\rB\033\n\031emu.grasscutter.net.protob\006prot" +
+      "refresh_id\030\010 \001(\r\022\033\n\023circle_camp_id_list\030" +
+      "\006 \003(\rB\033\n\031emu.grasscutter.net.protob\006prot" +
       "o3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

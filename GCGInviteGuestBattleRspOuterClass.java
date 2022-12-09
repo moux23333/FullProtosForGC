@@ -19,22 +19,38 @@ public final class GCGInviteGuestBattleRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 3;</code>
+     * <code>uint32 uid = 12;</code>
+     * @return The uid.
+     */
+    int getUid();
+
+    /**
+     * <code>int32 retcode = 13;</code>
      * @return The retcode.
      */
     int getRetcode();
 
     /**
-     * <code>uint32 uid = 11;</code>
-     * @return The uid.
+     * <code>uint32 punish_end_time = 3;</code>
+     * @return The punishEndTime.
      */
-    int getUid();
+    int getPunishEndTime();
+
+    /**
+     * <code>uint32 confirm_end_time = 7;</code>
+     * @return The confirmEndTime.
+     */
+    int getConfirmEndTime();
   }
   /**
    * <pre>
-   * CmdId: 7251
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 7997;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code GCGInviteGuestBattleRsp}
@@ -83,12 +99,22 @@ public final class GCGInviteGuestBattleRspOuterClass {
               break;
             case 24: {
 
-              retcode_ = input.readInt32();
+              punishEndTime_ = input.readUInt32();
               break;
             }
-            case 88: {
+            case 56: {
+
+              confirmEndTime_ = input.readUInt32();
+              break;
+            }
+            case 96: {
 
               uid_ = input.readUInt32();
+              break;
+            }
+            case 104: {
+
+              retcode_ = input.readInt32();
               break;
             }
             default: {
@@ -123,10 +149,21 @@ public final class GCGInviteGuestBattleRspOuterClass {
               emu.grasscutter.net.proto.GCGInviteGuestBattleRspOuterClass.GCGInviteGuestBattleRsp.class, emu.grasscutter.net.proto.GCGInviteGuestBattleRspOuterClass.GCGInviteGuestBattleRsp.Builder.class);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 3;
+    public static final int UID_FIELD_NUMBER = 12;
+    private int uid_;
+    /**
+     * <code>uint32 uid = 12;</code>
+     * @return The uid.
+     */
+    @java.lang.Override
+    public int getUid() {
+      return uid_;
+    }
+
+    public static final int RETCODE_FIELD_NUMBER = 13;
     private int retcode_;
     /**
-     * <code>int32 retcode = 3;</code>
+     * <code>int32 retcode = 13;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -134,15 +171,26 @@ public final class GCGInviteGuestBattleRspOuterClass {
       return retcode_;
     }
 
-    public static final int UID_FIELD_NUMBER = 11;
-    private int uid_;
+    public static final int PUNISH_END_TIME_FIELD_NUMBER = 3;
+    private int punishEndTime_;
     /**
-     * <code>uint32 uid = 11;</code>
-     * @return The uid.
+     * <code>uint32 punish_end_time = 3;</code>
+     * @return The punishEndTime.
      */
     @java.lang.Override
-    public int getUid() {
-      return uid_;
+    public int getPunishEndTime() {
+      return punishEndTime_;
+    }
+
+    public static final int CONFIRM_END_TIME_FIELD_NUMBER = 7;
+    private int confirmEndTime_;
+    /**
+     * <code>uint32 confirm_end_time = 7;</code>
+     * @return The confirmEndTime.
+     */
+    @java.lang.Override
+    public int getConfirmEndTime() {
+      return confirmEndTime_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -159,11 +207,17 @@ public final class GCGInviteGuestBattleRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (retcode_ != 0) {
-        output.writeInt32(3, retcode_);
+      if (punishEndTime_ != 0) {
+        output.writeUInt32(3, punishEndTime_);
+      }
+      if (confirmEndTime_ != 0) {
+        output.writeUInt32(7, confirmEndTime_);
       }
       if (uid_ != 0) {
-        output.writeUInt32(11, uid_);
+        output.writeUInt32(12, uid_);
+      }
+      if (retcode_ != 0) {
+        output.writeInt32(13, retcode_);
       }
       unknownFields.writeTo(output);
     }
@@ -174,13 +228,21 @@ public final class GCGInviteGuestBattleRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (retcode_ != 0) {
+      if (punishEndTime_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(3, retcode_);
+          .computeUInt32Size(3, punishEndTime_);
+      }
+      if (confirmEndTime_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(7, confirmEndTime_);
       }
       if (uid_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, uid_);
+          .computeUInt32Size(12, uid_);
+      }
+      if (retcode_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(13, retcode_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -197,10 +259,14 @@ public final class GCGInviteGuestBattleRspOuterClass {
       }
       emu.grasscutter.net.proto.GCGInviteGuestBattleRspOuterClass.GCGInviteGuestBattleRsp other = (emu.grasscutter.net.proto.GCGInviteGuestBattleRspOuterClass.GCGInviteGuestBattleRsp) obj;
 
-      if (getRetcode()
-          != other.getRetcode()) return false;
       if (getUid()
           != other.getUid()) return false;
+      if (getRetcode()
+          != other.getRetcode()) return false;
+      if (getPunishEndTime()
+          != other.getPunishEndTime()) return false;
+      if (getConfirmEndTime()
+          != other.getConfirmEndTime()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -212,10 +278,14 @@ public final class GCGInviteGuestBattleRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
-      hash = (53 * hash) + getRetcode();
       hash = (37 * hash) + UID_FIELD_NUMBER;
       hash = (53 * hash) + getUid();
+      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
+      hash = (53 * hash) + getRetcode();
+      hash = (37 * hash) + PUNISH_END_TIME_FIELD_NUMBER;
+      hash = (53 * hash) + getPunishEndTime();
+      hash = (37 * hash) + CONFIRM_END_TIME_FIELD_NUMBER;
+      hash = (53 * hash) + getConfirmEndTime();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -313,9 +383,13 @@ public final class GCGInviteGuestBattleRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 7251
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 7997;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code GCGInviteGuestBattleRsp}
@@ -355,9 +429,13 @@ public final class GCGInviteGuestBattleRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        uid_ = 0;
+
         retcode_ = 0;
 
-        uid_ = 0;
+        punishEndTime_ = 0;
+
+        confirmEndTime_ = 0;
 
         return this;
       }
@@ -385,8 +463,10 @@ public final class GCGInviteGuestBattleRspOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.GCGInviteGuestBattleRspOuterClass.GCGInviteGuestBattleRsp buildPartial() {
         emu.grasscutter.net.proto.GCGInviteGuestBattleRspOuterClass.GCGInviteGuestBattleRsp result = new emu.grasscutter.net.proto.GCGInviteGuestBattleRspOuterClass.GCGInviteGuestBattleRsp(this);
-        result.retcode_ = retcode_;
         result.uid_ = uid_;
+        result.retcode_ = retcode_;
+        result.punishEndTime_ = punishEndTime_;
+        result.confirmEndTime_ = confirmEndTime_;
         onBuilt();
         return result;
       }
@@ -435,11 +515,17 @@ public final class GCGInviteGuestBattleRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.GCGInviteGuestBattleRspOuterClass.GCGInviteGuestBattleRsp other) {
         if (other == emu.grasscutter.net.proto.GCGInviteGuestBattleRspOuterClass.GCGInviteGuestBattleRsp.getDefaultInstance()) return this;
+        if (other.getUid() != 0) {
+          setUid(other.getUid());
+        }
         if (other.getRetcode() != 0) {
           setRetcode(other.getRetcode());
         }
-        if (other.getUid() != 0) {
-          setUid(other.getUid());
+        if (other.getPunishEndTime() != 0) {
+          setPunishEndTime(other.getPunishEndTime());
+        }
+        if (other.getConfirmEndTime() != 0) {
+          setConfirmEndTime(other.getConfirmEndTime());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -470,40 +556,9 @@ public final class GCGInviteGuestBattleRspOuterClass {
         return this;
       }
 
-      private int retcode_ ;
-      /**
-       * <code>int32 retcode = 3;</code>
-       * @return The retcode.
-       */
-      @java.lang.Override
-      public int getRetcode() {
-        return retcode_;
-      }
-      /**
-       * <code>int32 retcode = 3;</code>
-       * @param value The retcode to set.
-       * @return This builder for chaining.
-       */
-      public Builder setRetcode(int value) {
-        
-        retcode_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>int32 retcode = 3;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearRetcode() {
-        
-        retcode_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int uid_ ;
       /**
-       * <code>uint32 uid = 11;</code>
+       * <code>uint32 uid = 12;</code>
        * @return The uid.
        */
       @java.lang.Override
@@ -511,7 +566,7 @@ public final class GCGInviteGuestBattleRspOuterClass {
         return uid_;
       }
       /**
-       * <code>uint32 uid = 11;</code>
+       * <code>uint32 uid = 12;</code>
        * @param value The uid to set.
        * @return This builder for chaining.
        */
@@ -522,12 +577,105 @@ public final class GCGInviteGuestBattleRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 uid = 11;</code>
+       * <code>uint32 uid = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearUid() {
         
         uid_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int retcode_ ;
+      /**
+       * <code>int32 retcode = 13;</code>
+       * @return The retcode.
+       */
+      @java.lang.Override
+      public int getRetcode() {
+        return retcode_;
+      }
+      /**
+       * <code>int32 retcode = 13;</code>
+       * @param value The retcode to set.
+       * @return This builder for chaining.
+       */
+      public Builder setRetcode(int value) {
+        
+        retcode_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 retcode = 13;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearRetcode() {
+        
+        retcode_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int punishEndTime_ ;
+      /**
+       * <code>uint32 punish_end_time = 3;</code>
+       * @return The punishEndTime.
+       */
+      @java.lang.Override
+      public int getPunishEndTime() {
+        return punishEndTime_;
+      }
+      /**
+       * <code>uint32 punish_end_time = 3;</code>
+       * @param value The punishEndTime to set.
+       * @return This builder for chaining.
+       */
+      public Builder setPunishEndTime(int value) {
+        
+        punishEndTime_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 punish_end_time = 3;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearPunishEndTime() {
+        
+        punishEndTime_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int confirmEndTime_ ;
+      /**
+       * <code>uint32 confirm_end_time = 7;</code>
+       * @return The confirmEndTime.
+       */
+      @java.lang.Override
+      public int getConfirmEndTime() {
+        return confirmEndTime_;
+      }
+      /**
+       * <code>uint32 confirm_end_time = 7;</code>
+       * @param value The confirmEndTime to set.
+       * @return This builder for chaining.
+       */
+      public Builder setConfirmEndTime(int value) {
+        
+        confirmEndTime_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 confirm_end_time = 7;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearConfirmEndTime() {
+        
+        confirmEndTime_ = 0;
         onChanged();
         return this;
       }
@@ -598,10 +746,11 @@ public final class GCGInviteGuestBattleRspOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\035GCGInviteGuestBattleRsp.proto\"7\n\027GCGIn" +
-      "viteGuestBattleRsp\022\017\n\007retcode\030\003 \001(\005\022\013\n\003u" +
-      "id\030\013 \001(\rB\033\n\031emu.grasscutter.net.protob\006p" +
-      "roto3"
+      "\n\035GCGInviteGuestBattleRsp.proto\"j\n\027GCGIn" +
+      "viteGuestBattleRsp\022\013\n\003uid\030\014 \001(\r\022\017\n\007retco" +
+      "de\030\r \001(\005\022\027\n\017punish_end_time\030\003 \001(\r\022\030\n\020con" +
+      "firm_end_time\030\007 \001(\rB\033\n\031emu.grasscutter.n" +
+      "et.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -612,7 +761,7 @@ public final class GCGInviteGuestBattleRspOuterClass {
     internal_static_GCGInviteGuestBattleRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GCGInviteGuestBattleRsp_descriptor,
-        new java.lang.String[] { "Retcode", "Uid", });
+        new java.lang.String[] { "Uid", "Retcode", "PunishEndTime", "ConfirmEndTime", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

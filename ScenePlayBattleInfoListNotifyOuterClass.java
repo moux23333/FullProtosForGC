@@ -19,34 +19,38 @@ public final class ScenePlayBattleInfoListNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .ScenePlayBattleInfo battle_info_list = 12;</code>
+     * <code>repeated .ScenePlayBattleInfo battle_info_list = 14;</code>
      */
     java.util.List<emu.grasscutter.net.proto.ScenePlayBattleInfoOuterClass.ScenePlayBattleInfo> 
         getBattleInfoListList();
     /**
-     * <code>repeated .ScenePlayBattleInfo battle_info_list = 12;</code>
+     * <code>repeated .ScenePlayBattleInfo battle_info_list = 14;</code>
      */
     emu.grasscutter.net.proto.ScenePlayBattleInfoOuterClass.ScenePlayBattleInfo getBattleInfoList(int index);
     /**
-     * <code>repeated .ScenePlayBattleInfo battle_info_list = 12;</code>
+     * <code>repeated .ScenePlayBattleInfo battle_info_list = 14;</code>
      */
     int getBattleInfoListCount();
     /**
-     * <code>repeated .ScenePlayBattleInfo battle_info_list = 12;</code>
+     * <code>repeated .ScenePlayBattleInfo battle_info_list = 14;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.ScenePlayBattleInfoOuterClass.ScenePlayBattleInfoOrBuilder> 
         getBattleInfoListOrBuilderList();
     /**
-     * <code>repeated .ScenePlayBattleInfo battle_info_list = 12;</code>
+     * <code>repeated .ScenePlayBattleInfo battle_info_list = 14;</code>
      */
     emu.grasscutter.net.proto.ScenePlayBattleInfoOuterClass.ScenePlayBattleInfoOrBuilder getBattleInfoListOrBuilder(
         int index);
   }
   /**
    * <pre>
-   * CmdId: 4431
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 4375;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code ScenePlayBattleInfoListNotify}
@@ -95,7 +99,7 @@ public final class ScenePlayBattleInfoListNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 98: {
+            case 114: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 battleInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.ScenePlayBattleInfoOuterClass.ScenePlayBattleInfo>();
                 mutable_bitField0_ |= 0x00000001;
@@ -139,17 +143,17 @@ public final class ScenePlayBattleInfoListNotifyOuterClass {
               emu.grasscutter.net.proto.ScenePlayBattleInfoListNotifyOuterClass.ScenePlayBattleInfoListNotify.class, emu.grasscutter.net.proto.ScenePlayBattleInfoListNotifyOuterClass.ScenePlayBattleInfoListNotify.Builder.class);
     }
 
-    public static final int BATTLE_INFO_LIST_FIELD_NUMBER = 12;
+    public static final int BATTLE_INFO_LIST_FIELD_NUMBER = 14;
     private java.util.List<emu.grasscutter.net.proto.ScenePlayBattleInfoOuterClass.ScenePlayBattleInfo> battleInfoList_;
     /**
-     * <code>repeated .ScenePlayBattleInfo battle_info_list = 12;</code>
+     * <code>repeated .ScenePlayBattleInfo battle_info_list = 14;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.ScenePlayBattleInfoOuterClass.ScenePlayBattleInfo> getBattleInfoListList() {
       return battleInfoList_;
     }
     /**
-     * <code>repeated .ScenePlayBattleInfo battle_info_list = 12;</code>
+     * <code>repeated .ScenePlayBattleInfo battle_info_list = 14;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.ScenePlayBattleInfoOuterClass.ScenePlayBattleInfoOrBuilder> 
@@ -157,21 +161,21 @@ public final class ScenePlayBattleInfoListNotifyOuterClass {
       return battleInfoList_;
     }
     /**
-     * <code>repeated .ScenePlayBattleInfo battle_info_list = 12;</code>
+     * <code>repeated .ScenePlayBattleInfo battle_info_list = 14;</code>
      */
     @java.lang.Override
     public int getBattleInfoListCount() {
       return battleInfoList_.size();
     }
     /**
-     * <code>repeated .ScenePlayBattleInfo battle_info_list = 12;</code>
+     * <code>repeated .ScenePlayBattleInfo battle_info_list = 14;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.ScenePlayBattleInfoOuterClass.ScenePlayBattleInfo getBattleInfoList(int index) {
       return battleInfoList_.get(index);
     }
     /**
-     * <code>repeated .ScenePlayBattleInfo battle_info_list = 12;</code>
+     * <code>repeated .ScenePlayBattleInfo battle_info_list = 14;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.ScenePlayBattleInfoOuterClass.ScenePlayBattleInfoOrBuilder getBattleInfoListOrBuilder(
@@ -194,7 +198,7 @@ public final class ScenePlayBattleInfoListNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       for (int i = 0; i < battleInfoList_.size(); i++) {
-        output.writeMessage(12, battleInfoList_.get(i));
+        output.writeMessage(14, battleInfoList_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -207,7 +211,7 @@ public final class ScenePlayBattleInfoListNotifyOuterClass {
       size = 0;
       for (int i = 0; i < battleInfoList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(12, battleInfoList_.get(i));
+          .computeMessageSize(14, battleInfoList_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -338,9 +342,13 @@ public final class ScenePlayBattleInfoListNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 4431
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 4375;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code ScenePlayBattleInfoListNotify}
@@ -540,7 +548,7 @@ public final class ScenePlayBattleInfoListNotifyOuterClass {
           emu.grasscutter.net.proto.ScenePlayBattleInfoOuterClass.ScenePlayBattleInfo, emu.grasscutter.net.proto.ScenePlayBattleInfoOuterClass.ScenePlayBattleInfo.Builder, emu.grasscutter.net.proto.ScenePlayBattleInfoOuterClass.ScenePlayBattleInfoOrBuilder> battleInfoListBuilder_;
 
       /**
-       * <code>repeated .ScenePlayBattleInfo battle_info_list = 12;</code>
+       * <code>repeated .ScenePlayBattleInfo battle_info_list = 14;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.ScenePlayBattleInfoOuterClass.ScenePlayBattleInfo> getBattleInfoListList() {
         if (battleInfoListBuilder_ == null) {
@@ -550,7 +558,7 @@ public final class ScenePlayBattleInfoListNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .ScenePlayBattleInfo battle_info_list = 12;</code>
+       * <code>repeated .ScenePlayBattleInfo battle_info_list = 14;</code>
        */
       public int getBattleInfoListCount() {
         if (battleInfoListBuilder_ == null) {
@@ -560,7 +568,7 @@ public final class ScenePlayBattleInfoListNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .ScenePlayBattleInfo battle_info_list = 12;</code>
+       * <code>repeated .ScenePlayBattleInfo battle_info_list = 14;</code>
        */
       public emu.grasscutter.net.proto.ScenePlayBattleInfoOuterClass.ScenePlayBattleInfo getBattleInfoList(int index) {
         if (battleInfoListBuilder_ == null) {
@@ -570,7 +578,7 @@ public final class ScenePlayBattleInfoListNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .ScenePlayBattleInfo battle_info_list = 12;</code>
+       * <code>repeated .ScenePlayBattleInfo battle_info_list = 14;</code>
        */
       public Builder setBattleInfoList(
           int index, emu.grasscutter.net.proto.ScenePlayBattleInfoOuterClass.ScenePlayBattleInfo value) {
@@ -587,7 +595,7 @@ public final class ScenePlayBattleInfoListNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ScenePlayBattleInfo battle_info_list = 12;</code>
+       * <code>repeated .ScenePlayBattleInfo battle_info_list = 14;</code>
        */
       public Builder setBattleInfoList(
           int index, emu.grasscutter.net.proto.ScenePlayBattleInfoOuterClass.ScenePlayBattleInfo.Builder builderForValue) {
@@ -601,7 +609,7 @@ public final class ScenePlayBattleInfoListNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ScenePlayBattleInfo battle_info_list = 12;</code>
+       * <code>repeated .ScenePlayBattleInfo battle_info_list = 14;</code>
        */
       public Builder addBattleInfoList(emu.grasscutter.net.proto.ScenePlayBattleInfoOuterClass.ScenePlayBattleInfo value) {
         if (battleInfoListBuilder_ == null) {
@@ -617,7 +625,7 @@ public final class ScenePlayBattleInfoListNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ScenePlayBattleInfo battle_info_list = 12;</code>
+       * <code>repeated .ScenePlayBattleInfo battle_info_list = 14;</code>
        */
       public Builder addBattleInfoList(
           int index, emu.grasscutter.net.proto.ScenePlayBattleInfoOuterClass.ScenePlayBattleInfo value) {
@@ -634,7 +642,7 @@ public final class ScenePlayBattleInfoListNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ScenePlayBattleInfo battle_info_list = 12;</code>
+       * <code>repeated .ScenePlayBattleInfo battle_info_list = 14;</code>
        */
       public Builder addBattleInfoList(
           emu.grasscutter.net.proto.ScenePlayBattleInfoOuterClass.ScenePlayBattleInfo.Builder builderForValue) {
@@ -648,7 +656,7 @@ public final class ScenePlayBattleInfoListNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ScenePlayBattleInfo battle_info_list = 12;</code>
+       * <code>repeated .ScenePlayBattleInfo battle_info_list = 14;</code>
        */
       public Builder addBattleInfoList(
           int index, emu.grasscutter.net.proto.ScenePlayBattleInfoOuterClass.ScenePlayBattleInfo.Builder builderForValue) {
@@ -662,7 +670,7 @@ public final class ScenePlayBattleInfoListNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ScenePlayBattleInfo battle_info_list = 12;</code>
+       * <code>repeated .ScenePlayBattleInfo battle_info_list = 14;</code>
        */
       public Builder addAllBattleInfoList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.ScenePlayBattleInfoOuterClass.ScenePlayBattleInfo> values) {
@@ -677,7 +685,7 @@ public final class ScenePlayBattleInfoListNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ScenePlayBattleInfo battle_info_list = 12;</code>
+       * <code>repeated .ScenePlayBattleInfo battle_info_list = 14;</code>
        */
       public Builder clearBattleInfoList() {
         if (battleInfoListBuilder_ == null) {
@@ -690,7 +698,7 @@ public final class ScenePlayBattleInfoListNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ScenePlayBattleInfo battle_info_list = 12;</code>
+       * <code>repeated .ScenePlayBattleInfo battle_info_list = 14;</code>
        */
       public Builder removeBattleInfoList(int index) {
         if (battleInfoListBuilder_ == null) {
@@ -703,14 +711,14 @@ public final class ScenePlayBattleInfoListNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ScenePlayBattleInfo battle_info_list = 12;</code>
+       * <code>repeated .ScenePlayBattleInfo battle_info_list = 14;</code>
        */
       public emu.grasscutter.net.proto.ScenePlayBattleInfoOuterClass.ScenePlayBattleInfo.Builder getBattleInfoListBuilder(
           int index) {
         return getBattleInfoListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .ScenePlayBattleInfo battle_info_list = 12;</code>
+       * <code>repeated .ScenePlayBattleInfo battle_info_list = 14;</code>
        */
       public emu.grasscutter.net.proto.ScenePlayBattleInfoOuterClass.ScenePlayBattleInfoOrBuilder getBattleInfoListOrBuilder(
           int index) {
@@ -720,7 +728,7 @@ public final class ScenePlayBattleInfoListNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .ScenePlayBattleInfo battle_info_list = 12;</code>
+       * <code>repeated .ScenePlayBattleInfo battle_info_list = 14;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.ScenePlayBattleInfoOuterClass.ScenePlayBattleInfoOrBuilder> 
            getBattleInfoListOrBuilderList() {
@@ -731,14 +739,14 @@ public final class ScenePlayBattleInfoListNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .ScenePlayBattleInfo battle_info_list = 12;</code>
+       * <code>repeated .ScenePlayBattleInfo battle_info_list = 14;</code>
        */
       public emu.grasscutter.net.proto.ScenePlayBattleInfoOuterClass.ScenePlayBattleInfo.Builder addBattleInfoListBuilder() {
         return getBattleInfoListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.ScenePlayBattleInfoOuterClass.ScenePlayBattleInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .ScenePlayBattleInfo battle_info_list = 12;</code>
+       * <code>repeated .ScenePlayBattleInfo battle_info_list = 14;</code>
        */
       public emu.grasscutter.net.proto.ScenePlayBattleInfoOuterClass.ScenePlayBattleInfo.Builder addBattleInfoListBuilder(
           int index) {
@@ -746,7 +754,7 @@ public final class ScenePlayBattleInfoListNotifyOuterClass {
             index, emu.grasscutter.net.proto.ScenePlayBattleInfoOuterClass.ScenePlayBattleInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .ScenePlayBattleInfo battle_info_list = 12;</code>
+       * <code>repeated .ScenePlayBattleInfo battle_info_list = 14;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.ScenePlayBattleInfoOuterClass.ScenePlayBattleInfo.Builder> 
            getBattleInfoListBuilderList() {
@@ -835,7 +843,7 @@ public final class ScenePlayBattleInfoListNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n#ScenePlayBattleInfoListNotify.proto\032\031S" +
       "cenePlayBattleInfo.proto\"O\n\035ScenePlayBat" +
-      "tleInfoListNotify\022.\n\020battle_info_list\030\014 " +
+      "tleInfoListNotify\022.\n\020battle_info_list\030\016 " +
       "\003(\0132\024.ScenePlayBattleInfoB\033\n\031emu.grasscu" +
       "tter.net.protob\006proto3"
     };

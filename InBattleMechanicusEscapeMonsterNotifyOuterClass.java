@@ -19,16 +19,20 @@ public final class InBattleMechanicusEscapeMonsterNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 escaped_monster_num = 4;</code>
+     * <code>uint32 escaped_monster_num = 15;</code>
      * @return The escapedMonsterNum.
      */
     int getEscapedMonsterNum();
   }
   /**
    * <pre>
-   * CmdId: 5307
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 5400;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code InBattleMechanicusEscapeMonsterNotify}
@@ -75,7 +79,7 @@ public final class InBattleMechanicusEscapeMonsterNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 32: {
+            case 120: {
 
               escapedMonsterNum_ = input.readUInt32();
               break;
@@ -112,10 +116,10 @@ public final class InBattleMechanicusEscapeMonsterNotifyOuterClass {
               emu.grasscutter.net.proto.InBattleMechanicusEscapeMonsterNotifyOuterClass.InBattleMechanicusEscapeMonsterNotify.class, emu.grasscutter.net.proto.InBattleMechanicusEscapeMonsterNotifyOuterClass.InBattleMechanicusEscapeMonsterNotify.Builder.class);
     }
 
-    public static final int ESCAPED_MONSTER_NUM_FIELD_NUMBER = 4;
+    public static final int ESCAPED_MONSTER_NUM_FIELD_NUMBER = 15;
     private int escapedMonsterNum_;
     /**
-     * <code>uint32 escaped_monster_num = 4;</code>
+     * <code>uint32 escaped_monster_num = 15;</code>
      * @return The escapedMonsterNum.
      */
     @java.lang.Override
@@ -138,7 +142,7 @@ public final class InBattleMechanicusEscapeMonsterNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (escapedMonsterNum_ != 0) {
-        output.writeUInt32(4, escapedMonsterNum_);
+        output.writeUInt32(15, escapedMonsterNum_);
       }
       unknownFields.writeTo(output);
     }
@@ -151,7 +155,7 @@ public final class InBattleMechanicusEscapeMonsterNotifyOuterClass {
       size = 0;
       if (escapedMonsterNum_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, escapedMonsterNum_);
+          .computeUInt32Size(15, escapedMonsterNum_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -280,9 +284,13 @@ public final class InBattleMechanicusEscapeMonsterNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 5307
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 5400;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code InBattleMechanicusEscapeMonsterNotify}
@@ -433,7 +441,7 @@ public final class InBattleMechanicusEscapeMonsterNotifyOuterClass {
 
       private int escapedMonsterNum_ ;
       /**
-       * <code>uint32 escaped_monster_num = 4;</code>
+       * <code>uint32 escaped_monster_num = 15;</code>
        * @return The escapedMonsterNum.
        */
       @java.lang.Override
@@ -441,7 +449,7 @@ public final class InBattleMechanicusEscapeMonsterNotifyOuterClass {
         return escapedMonsterNum_;
       }
       /**
-       * <code>uint32 escaped_monster_num = 4;</code>
+       * <code>uint32 escaped_monster_num = 15;</code>
        * @param value The escapedMonsterNum to set.
        * @return This builder for chaining.
        */
@@ -452,7 +460,7 @@ public final class InBattleMechanicusEscapeMonsterNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 escaped_monster_num = 4;</code>
+       * <code>uint32 escaped_monster_num = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearEscapedMonsterNum() {
@@ -530,7 +538,7 @@ public final class InBattleMechanicusEscapeMonsterNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n+InBattleMechanicusEscapeMonsterNotify." +
       "proto\"D\n%InBattleMechanicusEscapeMonster" +
-      "Notify\022\033\n\023escaped_monster_num\030\004 \001(\rB\033\n\031e" +
+      "Notify\022\033\n\023escaped_monster_num\030\017 \001(\rB\033\n\031e" +
       "mu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

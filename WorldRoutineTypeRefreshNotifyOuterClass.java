@@ -19,25 +19,29 @@ public final class WorldRoutineTypeRefreshNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.WorldRoutineTypeInfo world_routine_type = 7;</code>
+     * <code>.WorldRoutineTypeInfo world_routine_type = 1;</code>
      * @return Whether the worldRoutineType field is set.
      */
     boolean hasWorldRoutineType();
     /**
-     * <code>.WorldRoutineTypeInfo world_routine_type = 7;</code>
+     * <code>.WorldRoutineTypeInfo world_routine_type = 1;</code>
      * @return The worldRoutineType.
      */
     emu.grasscutter.net.proto.WorldRoutineTypeInfoOuterClass.WorldRoutineTypeInfo getWorldRoutineType();
     /**
-     * <code>.WorldRoutineTypeInfo world_routine_type = 7;</code>
+     * <code>.WorldRoutineTypeInfo world_routine_type = 1;</code>
      */
     emu.grasscutter.net.proto.WorldRoutineTypeInfoOuterClass.WorldRoutineTypeInfoOrBuilder getWorldRoutineTypeOrBuilder();
   }
   /**
    * <pre>
-   * CmdId: 3525
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 3522;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code WorldRoutineTypeRefreshNotify}
@@ -84,7 +88,7 @@ public final class WorldRoutineTypeRefreshNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 58: {
+            case 10: {
               emu.grasscutter.net.proto.WorldRoutineTypeInfoOuterClass.WorldRoutineTypeInfo.Builder subBuilder = null;
               if (worldRoutineType_ != null) {
                 subBuilder = worldRoutineType_.toBuilder();
@@ -129,10 +133,10 @@ public final class WorldRoutineTypeRefreshNotifyOuterClass {
               emu.grasscutter.net.proto.WorldRoutineTypeRefreshNotifyOuterClass.WorldRoutineTypeRefreshNotify.class, emu.grasscutter.net.proto.WorldRoutineTypeRefreshNotifyOuterClass.WorldRoutineTypeRefreshNotify.Builder.class);
     }
 
-    public static final int WORLD_ROUTINE_TYPE_FIELD_NUMBER = 7;
+    public static final int WORLD_ROUTINE_TYPE_FIELD_NUMBER = 1;
     private emu.grasscutter.net.proto.WorldRoutineTypeInfoOuterClass.WorldRoutineTypeInfo worldRoutineType_;
     /**
-     * <code>.WorldRoutineTypeInfo world_routine_type = 7;</code>
+     * <code>.WorldRoutineTypeInfo world_routine_type = 1;</code>
      * @return Whether the worldRoutineType field is set.
      */
     @java.lang.Override
@@ -140,7 +144,7 @@ public final class WorldRoutineTypeRefreshNotifyOuterClass {
       return worldRoutineType_ != null;
     }
     /**
-     * <code>.WorldRoutineTypeInfo world_routine_type = 7;</code>
+     * <code>.WorldRoutineTypeInfo world_routine_type = 1;</code>
      * @return The worldRoutineType.
      */
     @java.lang.Override
@@ -148,7 +152,7 @@ public final class WorldRoutineTypeRefreshNotifyOuterClass {
       return worldRoutineType_ == null ? emu.grasscutter.net.proto.WorldRoutineTypeInfoOuterClass.WorldRoutineTypeInfo.getDefaultInstance() : worldRoutineType_;
     }
     /**
-     * <code>.WorldRoutineTypeInfo world_routine_type = 7;</code>
+     * <code>.WorldRoutineTypeInfo world_routine_type = 1;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.WorldRoutineTypeInfoOuterClass.WorldRoutineTypeInfoOrBuilder getWorldRoutineTypeOrBuilder() {
@@ -170,7 +174,7 @@ public final class WorldRoutineTypeRefreshNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (worldRoutineType_ != null) {
-        output.writeMessage(7, getWorldRoutineType());
+        output.writeMessage(1, getWorldRoutineType());
       }
       unknownFields.writeTo(output);
     }
@@ -183,7 +187,7 @@ public final class WorldRoutineTypeRefreshNotifyOuterClass {
       size = 0;
       if (worldRoutineType_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(7, getWorldRoutineType());
+          .computeMessageSize(1, getWorldRoutineType());
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -317,9 +321,13 @@ public final class WorldRoutineTypeRefreshNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 3525
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 3522;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code WorldRoutineTypeRefreshNotify}
@@ -480,14 +488,14 @@ public final class WorldRoutineTypeRefreshNotifyOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.WorldRoutineTypeInfoOuterClass.WorldRoutineTypeInfo, emu.grasscutter.net.proto.WorldRoutineTypeInfoOuterClass.WorldRoutineTypeInfo.Builder, emu.grasscutter.net.proto.WorldRoutineTypeInfoOuterClass.WorldRoutineTypeInfoOrBuilder> worldRoutineTypeBuilder_;
       /**
-       * <code>.WorldRoutineTypeInfo world_routine_type = 7;</code>
+       * <code>.WorldRoutineTypeInfo world_routine_type = 1;</code>
        * @return Whether the worldRoutineType field is set.
        */
       public boolean hasWorldRoutineType() {
         return worldRoutineTypeBuilder_ != null || worldRoutineType_ != null;
       }
       /**
-       * <code>.WorldRoutineTypeInfo world_routine_type = 7;</code>
+       * <code>.WorldRoutineTypeInfo world_routine_type = 1;</code>
        * @return The worldRoutineType.
        */
       public emu.grasscutter.net.proto.WorldRoutineTypeInfoOuterClass.WorldRoutineTypeInfo getWorldRoutineType() {
@@ -498,7 +506,7 @@ public final class WorldRoutineTypeRefreshNotifyOuterClass {
         }
       }
       /**
-       * <code>.WorldRoutineTypeInfo world_routine_type = 7;</code>
+       * <code>.WorldRoutineTypeInfo world_routine_type = 1;</code>
        */
       public Builder setWorldRoutineType(emu.grasscutter.net.proto.WorldRoutineTypeInfoOuterClass.WorldRoutineTypeInfo value) {
         if (worldRoutineTypeBuilder_ == null) {
@@ -514,7 +522,7 @@ public final class WorldRoutineTypeRefreshNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.WorldRoutineTypeInfo world_routine_type = 7;</code>
+       * <code>.WorldRoutineTypeInfo world_routine_type = 1;</code>
        */
       public Builder setWorldRoutineType(
           emu.grasscutter.net.proto.WorldRoutineTypeInfoOuterClass.WorldRoutineTypeInfo.Builder builderForValue) {
@@ -528,7 +536,7 @@ public final class WorldRoutineTypeRefreshNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.WorldRoutineTypeInfo world_routine_type = 7;</code>
+       * <code>.WorldRoutineTypeInfo world_routine_type = 1;</code>
        */
       public Builder mergeWorldRoutineType(emu.grasscutter.net.proto.WorldRoutineTypeInfoOuterClass.WorldRoutineTypeInfo value) {
         if (worldRoutineTypeBuilder_ == null) {
@@ -546,7 +554,7 @@ public final class WorldRoutineTypeRefreshNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.WorldRoutineTypeInfo world_routine_type = 7;</code>
+       * <code>.WorldRoutineTypeInfo world_routine_type = 1;</code>
        */
       public Builder clearWorldRoutineType() {
         if (worldRoutineTypeBuilder_ == null) {
@@ -560,7 +568,7 @@ public final class WorldRoutineTypeRefreshNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.WorldRoutineTypeInfo world_routine_type = 7;</code>
+       * <code>.WorldRoutineTypeInfo world_routine_type = 1;</code>
        */
       public emu.grasscutter.net.proto.WorldRoutineTypeInfoOuterClass.WorldRoutineTypeInfo.Builder getWorldRoutineTypeBuilder() {
         
@@ -568,7 +576,7 @@ public final class WorldRoutineTypeRefreshNotifyOuterClass {
         return getWorldRoutineTypeFieldBuilder().getBuilder();
       }
       /**
-       * <code>.WorldRoutineTypeInfo world_routine_type = 7;</code>
+       * <code>.WorldRoutineTypeInfo world_routine_type = 1;</code>
        */
       public emu.grasscutter.net.proto.WorldRoutineTypeInfoOuterClass.WorldRoutineTypeInfoOrBuilder getWorldRoutineTypeOrBuilder() {
         if (worldRoutineTypeBuilder_ != null) {
@@ -579,7 +587,7 @@ public final class WorldRoutineTypeRefreshNotifyOuterClass {
         }
       }
       /**
-       * <code>.WorldRoutineTypeInfo world_routine_type = 7;</code>
+       * <code>.WorldRoutineTypeInfo world_routine_type = 1;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.WorldRoutineTypeInfoOuterClass.WorldRoutineTypeInfo, emu.grasscutter.net.proto.WorldRoutineTypeInfoOuterClass.WorldRoutineTypeInfo.Builder, emu.grasscutter.net.proto.WorldRoutineTypeInfoOuterClass.WorldRoutineTypeInfoOrBuilder> 
@@ -664,7 +672,7 @@ public final class WorldRoutineTypeRefreshNotifyOuterClass {
       "\n#WorldRoutineTypeRefreshNotify.proto\032\032W" +
       "orldRoutineTypeInfo.proto\"R\n\035WorldRoutin" +
       "eTypeRefreshNotify\0221\n\022world_routine_type" +
-      "\030\007 \001(\0132\025.WorldRoutineTypeInfoB\033\n\031emu.gra" +
+      "\030\001 \001(\0132\025.WorldRoutineTypeInfoB\033\n\031emu.gra" +
       "sscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

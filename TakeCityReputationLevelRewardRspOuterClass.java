@@ -19,52 +19,56 @@ public final class TakeCityReputationLevelRewardRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 city_id = 15;</code>
-     * @return The cityId.
+     * <code>uint32 level = 11;</code>
+     * @return The level.
      */
-    int getCityId();
+    int getLevel();
 
     /**
-     * <code>int32 retcode = 11;</code>
-     * @return The retcode.
-     */
-    int getRetcode();
-
-    /**
-     * <code>repeated .ItemParam item_list = 13;</code>
+     * <code>repeated .ItemParam item_list = 2;</code>
      */
     java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> 
         getItemListList();
     /**
-     * <code>repeated .ItemParam item_list = 13;</code>
+     * <code>repeated .ItemParam item_list = 2;</code>
      */
     emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam getItemList(int index);
     /**
-     * <code>repeated .ItemParam item_list = 13;</code>
+     * <code>repeated .ItemParam item_list = 2;</code>
      */
     int getItemListCount();
     /**
-     * <code>repeated .ItemParam item_list = 13;</code>
+     * <code>repeated .ItemParam item_list = 2;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder> 
         getItemListOrBuilderList();
     /**
-     * <code>repeated .ItemParam item_list = 13;</code>
+     * <code>repeated .ItemParam item_list = 2;</code>
      */
     emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder getItemListOrBuilder(
         int index);
 
     /**
-     * <code>uint32 level = 9;</code>
-     * @return The level.
+     * <code>uint32 city_id = 6;</code>
+     * @return The cityId.
      */
-    int getLevel();
+    int getCityId();
+
+    /**
+     * <code>int32 retcode = 14;</code>
+     * @return The retcode.
+     */
+    int getRetcode();
   }
   /**
    * <pre>
-   * CmdId: 2835
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 2819;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code TakeCityReputationLevelRewardRsp}
@@ -113,17 +117,7 @@ public final class TakeCityReputationLevelRewardRspOuterClass {
             case 0:
               done = true;
               break;
-            case 72: {
-
-              level_ = input.readUInt32();
-              break;
-            }
-            case 88: {
-
-              retcode_ = input.readInt32();
-              break;
-            }
-            case 106: {
+            case 18: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 itemList_ = new java.util.ArrayList<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam>();
                 mutable_bitField0_ |= 0x00000001;
@@ -132,9 +126,19 @@ public final class TakeCityReputationLevelRewardRspOuterClass {
                   input.readMessage(emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.parser(), extensionRegistry));
               break;
             }
-            case 120: {
+            case 48: {
 
               cityId_ = input.readUInt32();
+              break;
+            }
+            case 88: {
+
+              level_ = input.readUInt32();
+              break;
+            }
+            case 112: {
+
+              retcode_ = input.readInt32();
               break;
             }
             default: {
@@ -172,39 +176,28 @@ public final class TakeCityReputationLevelRewardRspOuterClass {
               emu.grasscutter.net.proto.TakeCityReputationLevelRewardRspOuterClass.TakeCityReputationLevelRewardRsp.class, emu.grasscutter.net.proto.TakeCityReputationLevelRewardRspOuterClass.TakeCityReputationLevelRewardRsp.Builder.class);
     }
 
-    public static final int CITY_ID_FIELD_NUMBER = 15;
-    private int cityId_;
+    public static final int LEVEL_FIELD_NUMBER = 11;
+    private int level_;
     /**
-     * <code>uint32 city_id = 15;</code>
-     * @return The cityId.
+     * <code>uint32 level = 11;</code>
+     * @return The level.
      */
     @java.lang.Override
-    public int getCityId() {
-      return cityId_;
+    public int getLevel() {
+      return level_;
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 11;
-    private int retcode_;
-    /**
-     * <code>int32 retcode = 11;</code>
-     * @return The retcode.
-     */
-    @java.lang.Override
-    public int getRetcode() {
-      return retcode_;
-    }
-
-    public static final int ITEM_LIST_FIELD_NUMBER = 13;
+    public static final int ITEM_LIST_FIELD_NUMBER = 2;
     private java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> itemList_;
     /**
-     * <code>repeated .ItemParam item_list = 13;</code>
+     * <code>repeated .ItemParam item_list = 2;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> getItemListList() {
       return itemList_;
     }
     /**
-     * <code>repeated .ItemParam item_list = 13;</code>
+     * <code>repeated .ItemParam item_list = 2;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder> 
@@ -212,21 +205,21 @@ public final class TakeCityReputationLevelRewardRspOuterClass {
       return itemList_;
     }
     /**
-     * <code>repeated .ItemParam item_list = 13;</code>
+     * <code>repeated .ItemParam item_list = 2;</code>
      */
     @java.lang.Override
     public int getItemListCount() {
       return itemList_.size();
     }
     /**
-     * <code>repeated .ItemParam item_list = 13;</code>
+     * <code>repeated .ItemParam item_list = 2;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam getItemList(int index) {
       return itemList_.get(index);
     }
     /**
-     * <code>repeated .ItemParam item_list = 13;</code>
+     * <code>repeated .ItemParam item_list = 2;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder getItemListOrBuilder(
@@ -234,15 +227,26 @@ public final class TakeCityReputationLevelRewardRspOuterClass {
       return itemList_.get(index);
     }
 
-    public static final int LEVEL_FIELD_NUMBER = 9;
-    private int level_;
+    public static final int CITY_ID_FIELD_NUMBER = 6;
+    private int cityId_;
     /**
-     * <code>uint32 level = 9;</code>
-     * @return The level.
+     * <code>uint32 city_id = 6;</code>
+     * @return The cityId.
      */
     @java.lang.Override
-    public int getLevel() {
-      return level_;
+    public int getCityId() {
+      return cityId_;
+    }
+
+    public static final int RETCODE_FIELD_NUMBER = 14;
+    private int retcode_;
+    /**
+     * <code>int32 retcode = 14;</code>
+     * @return The retcode.
+     */
+    @java.lang.Override
+    public int getRetcode() {
+      return retcode_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -259,17 +263,17 @@ public final class TakeCityReputationLevelRewardRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (level_ != 0) {
-        output.writeUInt32(9, level_);
-      }
-      if (retcode_ != 0) {
-        output.writeInt32(11, retcode_);
-      }
       for (int i = 0; i < itemList_.size(); i++) {
-        output.writeMessage(13, itemList_.get(i));
+        output.writeMessage(2, itemList_.get(i));
       }
       if (cityId_ != 0) {
-        output.writeUInt32(15, cityId_);
+        output.writeUInt32(6, cityId_);
+      }
+      if (level_ != 0) {
+        output.writeUInt32(11, level_);
+      }
+      if (retcode_ != 0) {
+        output.writeInt32(14, retcode_);
       }
       unknownFields.writeTo(output);
     }
@@ -280,21 +284,21 @@ public final class TakeCityReputationLevelRewardRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (level_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, level_);
-      }
-      if (retcode_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(11, retcode_);
-      }
       for (int i = 0; i < itemList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(13, itemList_.get(i));
+          .computeMessageSize(2, itemList_.get(i));
       }
       if (cityId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, cityId_);
+          .computeUInt32Size(6, cityId_);
+      }
+      if (level_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(11, level_);
+      }
+      if (retcode_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(14, retcode_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -311,14 +315,14 @@ public final class TakeCityReputationLevelRewardRspOuterClass {
       }
       emu.grasscutter.net.proto.TakeCityReputationLevelRewardRspOuterClass.TakeCityReputationLevelRewardRsp other = (emu.grasscutter.net.proto.TakeCityReputationLevelRewardRspOuterClass.TakeCityReputationLevelRewardRsp) obj;
 
+      if (getLevel()
+          != other.getLevel()) return false;
+      if (!getItemListList()
+          .equals(other.getItemListList())) return false;
       if (getCityId()
           != other.getCityId()) return false;
       if (getRetcode()
           != other.getRetcode()) return false;
-      if (!getItemListList()
-          .equals(other.getItemListList())) return false;
-      if (getLevel()
-          != other.getLevel()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -330,16 +334,16 @@ public final class TakeCityReputationLevelRewardRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + CITY_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getCityId();
-      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
-      hash = (53 * hash) + getRetcode();
+      hash = (37 * hash) + LEVEL_FIELD_NUMBER;
+      hash = (53 * hash) + getLevel();
       if (getItemListCount() > 0) {
         hash = (37 * hash) + ITEM_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getItemListList().hashCode();
       }
-      hash = (37 * hash) + LEVEL_FIELD_NUMBER;
-      hash = (53 * hash) + getLevel();
+      hash = (37 * hash) + CITY_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getCityId();
+      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
+      hash = (53 * hash) + getRetcode();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -437,9 +441,13 @@ public final class TakeCityReputationLevelRewardRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 2835
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 2819;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code TakeCityReputationLevelRewardRsp}
@@ -480,9 +488,7 @@ public final class TakeCityReputationLevelRewardRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        cityId_ = 0;
-
-        retcode_ = 0;
+        level_ = 0;
 
         if (itemListBuilder_ == null) {
           itemList_ = java.util.Collections.emptyList();
@@ -490,7 +496,9 @@ public final class TakeCityReputationLevelRewardRspOuterClass {
         } else {
           itemListBuilder_.clear();
         }
-        level_ = 0;
+        cityId_ = 0;
+
+        retcode_ = 0;
 
         return this;
       }
@@ -519,8 +527,7 @@ public final class TakeCityReputationLevelRewardRspOuterClass {
       public emu.grasscutter.net.proto.TakeCityReputationLevelRewardRspOuterClass.TakeCityReputationLevelRewardRsp buildPartial() {
         emu.grasscutter.net.proto.TakeCityReputationLevelRewardRspOuterClass.TakeCityReputationLevelRewardRsp result = new emu.grasscutter.net.proto.TakeCityReputationLevelRewardRspOuterClass.TakeCityReputationLevelRewardRsp(this);
         int from_bitField0_ = bitField0_;
-        result.cityId_ = cityId_;
-        result.retcode_ = retcode_;
+        result.level_ = level_;
         if (itemListBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0)) {
             itemList_ = java.util.Collections.unmodifiableList(itemList_);
@@ -530,7 +537,8 @@ public final class TakeCityReputationLevelRewardRspOuterClass {
         } else {
           result.itemList_ = itemListBuilder_.build();
         }
-        result.level_ = level_;
+        result.cityId_ = cityId_;
+        result.retcode_ = retcode_;
         onBuilt();
         return result;
       }
@@ -579,11 +587,8 @@ public final class TakeCityReputationLevelRewardRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.TakeCityReputationLevelRewardRspOuterClass.TakeCityReputationLevelRewardRsp other) {
         if (other == emu.grasscutter.net.proto.TakeCityReputationLevelRewardRspOuterClass.TakeCityReputationLevelRewardRsp.getDefaultInstance()) return this;
-        if (other.getCityId() != 0) {
-          setCityId(other.getCityId());
-        }
-        if (other.getRetcode() != 0) {
-          setRetcode(other.getRetcode());
+        if (other.getLevel() != 0) {
+          setLevel(other.getLevel());
         }
         if (itemListBuilder_ == null) {
           if (!other.itemList_.isEmpty()) {
@@ -611,8 +616,11 @@ public final class TakeCityReputationLevelRewardRspOuterClass {
             }
           }
         }
-        if (other.getLevel() != 0) {
-          setLevel(other.getLevel());
+        if (other.getCityId() != 0) {
+          setCityId(other.getCityId());
+        }
+        if (other.getRetcode() != 0) {
+          setRetcode(other.getRetcode());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -644,64 +652,33 @@ public final class TakeCityReputationLevelRewardRspOuterClass {
       }
       private int bitField0_;
 
-      private int cityId_ ;
+      private int level_ ;
       /**
-       * <code>uint32 city_id = 15;</code>
-       * @return The cityId.
+       * <code>uint32 level = 11;</code>
+       * @return The level.
        */
       @java.lang.Override
-      public int getCityId() {
-        return cityId_;
+      public int getLevel() {
+        return level_;
       }
       /**
-       * <code>uint32 city_id = 15;</code>
-       * @param value The cityId to set.
+       * <code>uint32 level = 11;</code>
+       * @param value The level to set.
        * @return This builder for chaining.
        */
-      public Builder setCityId(int value) {
+      public Builder setLevel(int value) {
         
-        cityId_ = value;
+        level_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 city_id = 15;</code>
+       * <code>uint32 level = 11;</code>
        * @return This builder for chaining.
        */
-      public Builder clearCityId() {
+      public Builder clearLevel() {
         
-        cityId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int retcode_ ;
-      /**
-       * <code>int32 retcode = 11;</code>
-       * @return The retcode.
-       */
-      @java.lang.Override
-      public int getRetcode() {
-        return retcode_;
-      }
-      /**
-       * <code>int32 retcode = 11;</code>
-       * @param value The retcode to set.
-       * @return This builder for chaining.
-       */
-      public Builder setRetcode(int value) {
-        
-        retcode_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>int32 retcode = 11;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearRetcode() {
-        
-        retcode_ = 0;
+        level_ = 0;
         onChanged();
         return this;
       }
@@ -719,7 +696,7 @@ public final class TakeCityReputationLevelRewardRspOuterClass {
           emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder> itemListBuilder_;
 
       /**
-       * <code>repeated .ItemParam item_list = 13;</code>
+       * <code>repeated .ItemParam item_list = 2;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> getItemListList() {
         if (itemListBuilder_ == null) {
@@ -729,7 +706,7 @@ public final class TakeCityReputationLevelRewardRspOuterClass {
         }
       }
       /**
-       * <code>repeated .ItemParam item_list = 13;</code>
+       * <code>repeated .ItemParam item_list = 2;</code>
        */
       public int getItemListCount() {
         if (itemListBuilder_ == null) {
@@ -739,7 +716,7 @@ public final class TakeCityReputationLevelRewardRspOuterClass {
         }
       }
       /**
-       * <code>repeated .ItemParam item_list = 13;</code>
+       * <code>repeated .ItemParam item_list = 2;</code>
        */
       public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam getItemList(int index) {
         if (itemListBuilder_ == null) {
@@ -749,7 +726,7 @@ public final class TakeCityReputationLevelRewardRspOuterClass {
         }
       }
       /**
-       * <code>repeated .ItemParam item_list = 13;</code>
+       * <code>repeated .ItemParam item_list = 2;</code>
        */
       public Builder setItemList(
           int index, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam value) {
@@ -766,7 +743,7 @@ public final class TakeCityReputationLevelRewardRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ItemParam item_list = 13;</code>
+       * <code>repeated .ItemParam item_list = 2;</code>
        */
       public Builder setItemList(
           int index, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder builderForValue) {
@@ -780,7 +757,7 @@ public final class TakeCityReputationLevelRewardRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ItemParam item_list = 13;</code>
+       * <code>repeated .ItemParam item_list = 2;</code>
        */
       public Builder addItemList(emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam value) {
         if (itemListBuilder_ == null) {
@@ -796,7 +773,7 @@ public final class TakeCityReputationLevelRewardRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ItemParam item_list = 13;</code>
+       * <code>repeated .ItemParam item_list = 2;</code>
        */
       public Builder addItemList(
           int index, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam value) {
@@ -813,7 +790,7 @@ public final class TakeCityReputationLevelRewardRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ItemParam item_list = 13;</code>
+       * <code>repeated .ItemParam item_list = 2;</code>
        */
       public Builder addItemList(
           emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder builderForValue) {
@@ -827,7 +804,7 @@ public final class TakeCityReputationLevelRewardRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ItemParam item_list = 13;</code>
+       * <code>repeated .ItemParam item_list = 2;</code>
        */
       public Builder addItemList(
           int index, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder builderForValue) {
@@ -841,7 +818,7 @@ public final class TakeCityReputationLevelRewardRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ItemParam item_list = 13;</code>
+       * <code>repeated .ItemParam item_list = 2;</code>
        */
       public Builder addAllItemList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> values) {
@@ -856,7 +833,7 @@ public final class TakeCityReputationLevelRewardRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ItemParam item_list = 13;</code>
+       * <code>repeated .ItemParam item_list = 2;</code>
        */
       public Builder clearItemList() {
         if (itemListBuilder_ == null) {
@@ -869,7 +846,7 @@ public final class TakeCityReputationLevelRewardRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ItemParam item_list = 13;</code>
+       * <code>repeated .ItemParam item_list = 2;</code>
        */
       public Builder removeItemList(int index) {
         if (itemListBuilder_ == null) {
@@ -882,14 +859,14 @@ public final class TakeCityReputationLevelRewardRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ItemParam item_list = 13;</code>
+       * <code>repeated .ItemParam item_list = 2;</code>
        */
       public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder getItemListBuilder(
           int index) {
         return getItemListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .ItemParam item_list = 13;</code>
+       * <code>repeated .ItemParam item_list = 2;</code>
        */
       public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder getItemListOrBuilder(
           int index) {
@@ -899,7 +876,7 @@ public final class TakeCityReputationLevelRewardRspOuterClass {
         }
       }
       /**
-       * <code>repeated .ItemParam item_list = 13;</code>
+       * <code>repeated .ItemParam item_list = 2;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder> 
            getItemListOrBuilderList() {
@@ -910,14 +887,14 @@ public final class TakeCityReputationLevelRewardRspOuterClass {
         }
       }
       /**
-       * <code>repeated .ItemParam item_list = 13;</code>
+       * <code>repeated .ItemParam item_list = 2;</code>
        */
       public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder addItemListBuilder() {
         return getItemListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.getDefaultInstance());
       }
       /**
-       * <code>repeated .ItemParam item_list = 13;</code>
+       * <code>repeated .ItemParam item_list = 2;</code>
        */
       public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder addItemListBuilder(
           int index) {
@@ -925,7 +902,7 @@ public final class TakeCityReputationLevelRewardRspOuterClass {
             index, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.getDefaultInstance());
       }
       /**
-       * <code>repeated .ItemParam item_list = 13;</code>
+       * <code>repeated .ItemParam item_list = 2;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder> 
            getItemListBuilderList() {
@@ -946,33 +923,64 @@ public final class TakeCityReputationLevelRewardRspOuterClass {
         return itemListBuilder_;
       }
 
-      private int level_ ;
+      private int cityId_ ;
       /**
-       * <code>uint32 level = 9;</code>
-       * @return The level.
+       * <code>uint32 city_id = 6;</code>
+       * @return The cityId.
        */
       @java.lang.Override
-      public int getLevel() {
-        return level_;
+      public int getCityId() {
+        return cityId_;
       }
       /**
-       * <code>uint32 level = 9;</code>
-       * @param value The level to set.
+       * <code>uint32 city_id = 6;</code>
+       * @param value The cityId to set.
        * @return This builder for chaining.
        */
-      public Builder setLevel(int value) {
+      public Builder setCityId(int value) {
         
-        level_ = value;
+        cityId_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 level = 9;</code>
+       * <code>uint32 city_id = 6;</code>
        * @return This builder for chaining.
        */
-      public Builder clearLevel() {
+      public Builder clearCityId() {
         
-        level_ = 0;
+        cityId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int retcode_ ;
+      /**
+       * <code>int32 retcode = 14;</code>
+       * @return The retcode.
+       */
+      @java.lang.Override
+      public int getRetcode() {
+        return retcode_;
+      }
+      /**
+       * <code>int32 retcode = 14;</code>
+       * @param value The retcode to set.
+       * @return This builder for chaining.
+       */
+      public Builder setRetcode(int value) {
+        
+        retcode_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 retcode = 14;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearRetcode() {
+        
+        retcode_ = 0;
         onChanged();
         return this;
       }
@@ -1045,9 +1053,9 @@ public final class TakeCityReputationLevelRewardRspOuterClass {
     java.lang.String[] descriptorData = {
       "\n&TakeCityReputationLevelRewardRsp.proto" +
       "\032\017ItemParam.proto\"r\n TakeCityReputationL" +
-      "evelRewardRsp\022\017\n\007city_id\030\017 \001(\r\022\017\n\007retcod" +
-      "e\030\013 \001(\005\022\035\n\titem_list\030\r \003(\0132\n.ItemParam\022\r" +
-      "\n\005level\030\t \001(\rB\033\n\031emu.grasscutter.net.pro" +
+      "evelRewardRsp\022\r\n\005level\030\013 \001(\r\022\035\n\titem_lis" +
+      "t\030\002 \003(\0132\n.ItemParam\022\017\n\007city_id\030\006 \001(\r\022\017\n\007" +
+      "retcode\030\016 \001(\005B\033\n\031emu.grasscutter.net.pro" +
       "tob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -1060,7 +1068,7 @@ public final class TakeCityReputationLevelRewardRspOuterClass {
     internal_static_TakeCityReputationLevelRewardRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_TakeCityReputationLevelRewardRsp_descriptor,
-        new java.lang.String[] { "CityId", "Retcode", "ItemList", "Level", });
+        new java.lang.String[] { "Level", "ItemList", "CityId", "Retcode", });
     emu.grasscutter.net.proto.ItemParamOuterClass.getDescriptor();
   }
 

@@ -19,44 +19,34 @@ public final class GCGSelectOnStageCostInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>map&lt;uint32, uint32&gt; cost_map = 8;</code>
-     */
-    int getCostMapCount();
-    /**
-     * <code>map&lt;uint32, uint32&gt; cost_map = 8;</code>
-     */
-    boolean containsCostMap(
-        int key);
-    /**
-     * Use {@link #getCostMapMap()} instead.
-     */
-    @java.lang.Deprecated
-    java.util.Map<java.lang.Integer, java.lang.Integer>
-    getCostMap();
-    /**
-     * <code>map&lt;uint32, uint32&gt; cost_map = 8;</code>
-     */
-    java.util.Map<java.lang.Integer, java.lang.Integer>
-    getCostMapMap();
-    /**
-     * <code>map&lt;uint32, uint32&gt; cost_map = 8;</code>
-     */
-
-    int getCostMapOrDefault(
-        int key,
-        int defaultValue);
-    /**
-     * <code>map&lt;uint32, uint32&gt; cost_map = 8;</code>
-     */
-
-    int getCostMapOrThrow(
-        int key);
-
-    /**
-     * <code>uint32 card_guid = 9;</code>
+     * <code>uint32 card_guid = 3;</code>
      * @return The cardGuid.
      */
     int getCardGuid();
+
+    /**
+     * <code>repeated .Uint32Pair cost_map = 1;</code>
+     */
+    java.util.List<emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair> 
+        getCostMapList();
+    /**
+     * <code>repeated .Uint32Pair cost_map = 1;</code>
+     */
+    emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair getCostMap(int index);
+    /**
+     * <code>repeated .Uint32Pair cost_map = 1;</code>
+     */
+    int getCostMapCount();
+    /**
+     * <code>repeated .Uint32Pair cost_map = 1;</code>
+     */
+    java.util.List<? extends emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32PairOrBuilder> 
+        getCostMapOrBuilderList();
+    /**
+     * <code>repeated .Uint32Pair cost_map = 1;</code>
+     */
+    emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32PairOrBuilder getCostMapOrBuilder(
+        int index);
   }
   /**
    * Protobuf type {@code GCGSelectOnStageCostInfo}
@@ -71,6 +61,7 @@ public final class GCGSelectOnStageCostInfoOuterClass {
       super(builder);
     }
     private GCGSelectOnStageCostInfo() {
+      costMap_ = java.util.Collections.emptyList();
     }
 
     @java.lang.Override
@@ -104,20 +95,16 @@ public final class GCGSelectOnStageCostInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 66: {
+            case 10: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                costMap_ = com.google.protobuf.MapField.newMapField(
-                    CostMapDefaultEntryHolder.defaultEntry);
+                costMap_ = new java.util.ArrayList<emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair>();
                 mutable_bitField0_ |= 0x00000001;
               }
-              com.google.protobuf.MapEntry<java.lang.Integer, java.lang.Integer>
-              costMap__ = input.readMessage(
-                  CostMapDefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
-              costMap_.getMutableMap().put(
-                  costMap__.getKey(), costMap__.getValue());
+              costMap_.add(
+                  input.readMessage(emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.parser(), extensionRegistry));
               break;
             }
-            case 72: {
+            case 24: {
 
               cardGuid_ = input.readUInt32();
               break;
@@ -137,6 +124,9 @@ public final class GCGSelectOnStageCostInfoOuterClass {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
       } finally {
+        if (((mutable_bitField0_ & 0x00000001) != 0)) {
+          costMap_ = java.util.Collections.unmodifiableList(costMap_);
+        }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
       }
@@ -146,18 +136,6 @@ public final class GCGSelectOnStageCostInfoOuterClass {
       return emu.grasscutter.net.proto.GCGSelectOnStageCostInfoOuterClass.internal_static_GCGSelectOnStageCostInfo_descriptor;
     }
 
-    @SuppressWarnings({"rawtypes"})
-    @java.lang.Override
-    protected com.google.protobuf.MapField internalGetMapField(
-        int number) {
-      switch (number) {
-        case 8:
-          return internalGetCostMap();
-        default:
-          throw new RuntimeException(
-              "Invalid map field number: " + number);
-      }
-    }
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
@@ -166,96 +144,55 @@ public final class GCGSelectOnStageCostInfoOuterClass {
               emu.grasscutter.net.proto.GCGSelectOnStageCostInfoOuterClass.GCGSelectOnStageCostInfo.class, emu.grasscutter.net.proto.GCGSelectOnStageCostInfoOuterClass.GCGSelectOnStageCostInfo.Builder.class);
     }
 
-    public static final int COST_MAP_FIELD_NUMBER = 8;
-    private static final class CostMapDefaultEntryHolder {
-      static final com.google.protobuf.MapEntry<
-          java.lang.Integer, java.lang.Integer> defaultEntry =
-              com.google.protobuf.MapEntry
-              .<java.lang.Integer, java.lang.Integer>newDefaultInstance(
-                  emu.grasscutter.net.proto.GCGSelectOnStageCostInfoOuterClass.internal_static_GCGSelectOnStageCostInfo_CostMapEntry_descriptor, 
-                  com.google.protobuf.WireFormat.FieldType.UINT32,
-                  0,
-                  com.google.protobuf.WireFormat.FieldType.UINT32,
-                  0);
-    }
-    private com.google.protobuf.MapField<
-        java.lang.Integer, java.lang.Integer> costMap_;
-    private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
-    internalGetCostMap() {
-      if (costMap_ == null) {
-        return com.google.protobuf.MapField.emptyMapField(
-            CostMapDefaultEntryHolder.defaultEntry);
-      }
-      return costMap_;
-    }
-
-    public int getCostMapCount() {
-      return internalGetCostMap().getMap().size();
-    }
-    /**
-     * <code>map&lt;uint32, uint32&gt; cost_map = 8;</code>
-     */
-
-    @java.lang.Override
-    public boolean containsCostMap(
-        int key) {
-      
-      return internalGetCostMap().getMap().containsKey(key);
-    }
-    /**
-     * Use {@link #getCostMapMap()} instead.
-     */
-    @java.lang.Override
-    @java.lang.Deprecated
-    public java.util.Map<java.lang.Integer, java.lang.Integer> getCostMap() {
-      return getCostMapMap();
-    }
-    /**
-     * <code>map&lt;uint32, uint32&gt; cost_map = 8;</code>
-     */
-    @java.lang.Override
-
-    public java.util.Map<java.lang.Integer, java.lang.Integer> getCostMapMap() {
-      return internalGetCostMap().getMap();
-    }
-    /**
-     * <code>map&lt;uint32, uint32&gt; cost_map = 8;</code>
-     */
-    @java.lang.Override
-
-    public int getCostMapOrDefault(
-        int key,
-        int defaultValue) {
-      
-      java.util.Map<java.lang.Integer, java.lang.Integer> map =
-          internalGetCostMap().getMap();
-      return map.containsKey(key) ? map.get(key) : defaultValue;
-    }
-    /**
-     * <code>map&lt;uint32, uint32&gt; cost_map = 8;</code>
-     */
-    @java.lang.Override
-
-    public int getCostMapOrThrow(
-        int key) {
-      
-      java.util.Map<java.lang.Integer, java.lang.Integer> map =
-          internalGetCostMap().getMap();
-      if (!map.containsKey(key)) {
-        throw new java.lang.IllegalArgumentException();
-      }
-      return map.get(key);
-    }
-
-    public static final int CARD_GUID_FIELD_NUMBER = 9;
+    public static final int CARD_GUID_FIELD_NUMBER = 3;
     private int cardGuid_;
     /**
-     * <code>uint32 card_guid = 9;</code>
+     * <code>uint32 card_guid = 3;</code>
      * @return The cardGuid.
      */
     @java.lang.Override
     public int getCardGuid() {
       return cardGuid_;
+    }
+
+    public static final int COST_MAP_FIELD_NUMBER = 1;
+    private java.util.List<emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair> costMap_;
+    /**
+     * <code>repeated .Uint32Pair cost_map = 1;</code>
+     */
+    @java.lang.Override
+    public java.util.List<emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair> getCostMapList() {
+      return costMap_;
+    }
+    /**
+     * <code>repeated .Uint32Pair cost_map = 1;</code>
+     */
+    @java.lang.Override
+    public java.util.List<? extends emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32PairOrBuilder> 
+        getCostMapOrBuilderList() {
+      return costMap_;
+    }
+    /**
+     * <code>repeated .Uint32Pair cost_map = 1;</code>
+     */
+    @java.lang.Override
+    public int getCostMapCount() {
+      return costMap_.size();
+    }
+    /**
+     * <code>repeated .Uint32Pair cost_map = 1;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair getCostMap(int index) {
+      return costMap_.get(index);
+    }
+    /**
+     * <code>repeated .Uint32Pair cost_map = 1;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32PairOrBuilder getCostMapOrBuilder(
+        int index) {
+      return costMap_.get(index);
     }
 
     private byte memoizedIsInitialized = -1;
@@ -272,14 +209,11 @@ public final class GCGSelectOnStageCostInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      com.google.protobuf.GeneratedMessageV3
-        .serializeIntegerMapTo(
-          output,
-          internalGetCostMap(),
-          CostMapDefaultEntryHolder.defaultEntry,
-          8);
+      for (int i = 0; i < costMap_.size(); i++) {
+        output.writeMessage(1, costMap_.get(i));
+      }
       if (cardGuid_ != 0) {
-        output.writeUInt32(9, cardGuid_);
+        output.writeUInt32(3, cardGuid_);
       }
       unknownFields.writeTo(output);
     }
@@ -290,19 +224,13 @@ public final class GCGSelectOnStageCostInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      for (java.util.Map.Entry<java.lang.Integer, java.lang.Integer> entry
-           : internalGetCostMap().getMap().entrySet()) {
-        com.google.protobuf.MapEntry<java.lang.Integer, java.lang.Integer>
-        costMap__ = CostMapDefaultEntryHolder.defaultEntry.newBuilderForType()
-            .setKey(entry.getKey())
-            .setValue(entry.getValue())
-            .build();
+      for (int i = 0; i < costMap_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-            .computeMessageSize(8, costMap__);
+          .computeMessageSize(1, costMap_.get(i));
       }
       if (cardGuid_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, cardGuid_);
+          .computeUInt32Size(3, cardGuid_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -319,10 +247,10 @@ public final class GCGSelectOnStageCostInfoOuterClass {
       }
       emu.grasscutter.net.proto.GCGSelectOnStageCostInfoOuterClass.GCGSelectOnStageCostInfo other = (emu.grasscutter.net.proto.GCGSelectOnStageCostInfoOuterClass.GCGSelectOnStageCostInfo) obj;
 
-      if (!internalGetCostMap().equals(
-          other.internalGetCostMap())) return false;
       if (getCardGuid()
           != other.getCardGuid()) return false;
+      if (!getCostMapList()
+          .equals(other.getCostMapList())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -334,12 +262,12 @@ public final class GCGSelectOnStageCostInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (!internalGetCostMap().getMap().isEmpty()) {
-        hash = (37 * hash) + COST_MAP_FIELD_NUMBER;
-        hash = (53 * hash) + internalGetCostMap().hashCode();
-      }
       hash = (37 * hash) + CARD_GUID_FIELD_NUMBER;
       hash = (53 * hash) + getCardGuid();
+      if (getCostMapCount() > 0) {
+        hash = (37 * hash) + COST_MAP_FIELD_NUMBER;
+        hash = (53 * hash) + getCostMapList().hashCode();
+      }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -447,28 +375,6 @@ public final class GCGSelectOnStageCostInfoOuterClass {
         return emu.grasscutter.net.proto.GCGSelectOnStageCostInfoOuterClass.internal_static_GCGSelectOnStageCostInfo_descriptor;
       }
 
-      @SuppressWarnings({"rawtypes"})
-      protected com.google.protobuf.MapField internalGetMapField(
-          int number) {
-        switch (number) {
-          case 8:
-            return internalGetCostMap();
-          default:
-            throw new RuntimeException(
-                "Invalid map field number: " + number);
-        }
-      }
-      @SuppressWarnings({"rawtypes"})
-      protected com.google.protobuf.MapField internalGetMutableMapField(
-          int number) {
-        switch (number) {
-          case 8:
-            return internalGetMutableCostMap();
-          default:
-            throw new RuntimeException(
-                "Invalid map field number: " + number);
-        }
-      }
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
@@ -490,14 +396,20 @@ public final class GCGSelectOnStageCostInfoOuterClass {
       private void maybeForceBuilderInitialization() {
         if (com.google.protobuf.GeneratedMessageV3
                 .alwaysUseFieldBuilders) {
+          getCostMapFieldBuilder();
         }
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        internalGetMutableCostMap().clear();
         cardGuid_ = 0;
 
+        if (costMapBuilder_ == null) {
+          costMap_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000001);
+        } else {
+          costMapBuilder_.clear();
+        }
         return this;
       }
 
@@ -525,9 +437,16 @@ public final class GCGSelectOnStageCostInfoOuterClass {
       public emu.grasscutter.net.proto.GCGSelectOnStageCostInfoOuterClass.GCGSelectOnStageCostInfo buildPartial() {
         emu.grasscutter.net.proto.GCGSelectOnStageCostInfoOuterClass.GCGSelectOnStageCostInfo result = new emu.grasscutter.net.proto.GCGSelectOnStageCostInfoOuterClass.GCGSelectOnStageCostInfo(this);
         int from_bitField0_ = bitField0_;
-        result.costMap_ = internalGetCostMap();
-        result.costMap_.makeImmutable();
         result.cardGuid_ = cardGuid_;
+        if (costMapBuilder_ == null) {
+          if (((bitField0_ & 0x00000001) != 0)) {
+            costMap_ = java.util.Collections.unmodifiableList(costMap_);
+            bitField0_ = (bitField0_ & ~0x00000001);
+          }
+          result.costMap_ = costMap_;
+        } else {
+          result.costMap_ = costMapBuilder_.build();
+        }
         onBuilt();
         return result;
       }
@@ -576,10 +495,34 @@ public final class GCGSelectOnStageCostInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.GCGSelectOnStageCostInfoOuterClass.GCGSelectOnStageCostInfo other) {
         if (other == emu.grasscutter.net.proto.GCGSelectOnStageCostInfoOuterClass.GCGSelectOnStageCostInfo.getDefaultInstance()) return this;
-        internalGetMutableCostMap().mergeFrom(
-            other.internalGetCostMap());
         if (other.getCardGuid() != 0) {
           setCardGuid(other.getCardGuid());
+        }
+        if (costMapBuilder_ == null) {
+          if (!other.costMap_.isEmpty()) {
+            if (costMap_.isEmpty()) {
+              costMap_ = other.costMap_;
+              bitField0_ = (bitField0_ & ~0x00000001);
+            } else {
+              ensureCostMapIsMutable();
+              costMap_.addAll(other.costMap_);
+            }
+            onChanged();
+          }
+        } else {
+          if (!other.costMap_.isEmpty()) {
+            if (costMapBuilder_.isEmpty()) {
+              costMapBuilder_.dispose();
+              costMapBuilder_ = null;
+              costMap_ = other.costMap_;
+              bitField0_ = (bitField0_ & ~0x00000001);
+              costMapBuilder_ = 
+                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+                   getCostMapFieldBuilder() : null;
+            } else {
+              costMapBuilder_.addAllMessages(other.costMap_);
+            }
+          }
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -611,137 +554,9 @@ public final class GCGSelectOnStageCostInfoOuterClass {
       }
       private int bitField0_;
 
-      private com.google.protobuf.MapField<
-          java.lang.Integer, java.lang.Integer> costMap_;
-      private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
-      internalGetCostMap() {
-        if (costMap_ == null) {
-          return com.google.protobuf.MapField.emptyMapField(
-              CostMapDefaultEntryHolder.defaultEntry);
-        }
-        return costMap_;
-      }
-      private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
-      internalGetMutableCostMap() {
-        onChanged();;
-        if (costMap_ == null) {
-          costMap_ = com.google.protobuf.MapField.newMapField(
-              CostMapDefaultEntryHolder.defaultEntry);
-        }
-        if (!costMap_.isMutable()) {
-          costMap_ = costMap_.copy();
-        }
-        return costMap_;
-      }
-
-      public int getCostMapCount() {
-        return internalGetCostMap().getMap().size();
-      }
-      /**
-       * <code>map&lt;uint32, uint32&gt; cost_map = 8;</code>
-       */
-
-      @java.lang.Override
-      public boolean containsCostMap(
-          int key) {
-        
-        return internalGetCostMap().getMap().containsKey(key);
-      }
-      /**
-       * Use {@link #getCostMapMap()} instead.
-       */
-      @java.lang.Override
-      @java.lang.Deprecated
-      public java.util.Map<java.lang.Integer, java.lang.Integer> getCostMap() {
-        return getCostMapMap();
-      }
-      /**
-       * <code>map&lt;uint32, uint32&gt; cost_map = 8;</code>
-       */
-      @java.lang.Override
-
-      public java.util.Map<java.lang.Integer, java.lang.Integer> getCostMapMap() {
-        return internalGetCostMap().getMap();
-      }
-      /**
-       * <code>map&lt;uint32, uint32&gt; cost_map = 8;</code>
-       */
-      @java.lang.Override
-
-      public int getCostMapOrDefault(
-          int key,
-          int defaultValue) {
-        
-        java.util.Map<java.lang.Integer, java.lang.Integer> map =
-            internalGetCostMap().getMap();
-        return map.containsKey(key) ? map.get(key) : defaultValue;
-      }
-      /**
-       * <code>map&lt;uint32, uint32&gt; cost_map = 8;</code>
-       */
-      @java.lang.Override
-
-      public int getCostMapOrThrow(
-          int key) {
-        
-        java.util.Map<java.lang.Integer, java.lang.Integer> map =
-            internalGetCostMap().getMap();
-        if (!map.containsKey(key)) {
-          throw new java.lang.IllegalArgumentException();
-        }
-        return map.get(key);
-      }
-
-      public Builder clearCostMap() {
-        internalGetMutableCostMap().getMutableMap()
-            .clear();
-        return this;
-      }
-      /**
-       * <code>map&lt;uint32, uint32&gt; cost_map = 8;</code>
-       */
-
-      public Builder removeCostMap(
-          int key) {
-        
-        internalGetMutableCostMap().getMutableMap()
-            .remove(key);
-        return this;
-      }
-      /**
-       * Use alternate mutation accessors instead.
-       */
-      @java.lang.Deprecated
-      public java.util.Map<java.lang.Integer, java.lang.Integer>
-      getMutableCostMap() {
-        return internalGetMutableCostMap().getMutableMap();
-      }
-      /**
-       * <code>map&lt;uint32, uint32&gt; cost_map = 8;</code>
-       */
-      public Builder putCostMap(
-          int key,
-          int value) {
-        
-        
-        internalGetMutableCostMap().getMutableMap()
-            .put(key, value);
-        return this;
-      }
-      /**
-       * <code>map&lt;uint32, uint32&gt; cost_map = 8;</code>
-       */
-
-      public Builder putAllCostMap(
-          java.util.Map<java.lang.Integer, java.lang.Integer> values) {
-        internalGetMutableCostMap().getMutableMap()
-            .putAll(values);
-        return this;
-      }
-
       private int cardGuid_ ;
       /**
-       * <code>uint32 card_guid = 9;</code>
+       * <code>uint32 card_guid = 3;</code>
        * @return The cardGuid.
        */
       @java.lang.Override
@@ -749,7 +564,7 @@ public final class GCGSelectOnStageCostInfoOuterClass {
         return cardGuid_;
       }
       /**
-       * <code>uint32 card_guid = 9;</code>
+       * <code>uint32 card_guid = 3;</code>
        * @param value The cardGuid to set.
        * @return This builder for chaining.
        */
@@ -760,7 +575,7 @@ public final class GCGSelectOnStageCostInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 card_guid = 9;</code>
+       * <code>uint32 card_guid = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearCardGuid() {
@@ -768,6 +583,246 @@ public final class GCGSelectOnStageCostInfoOuterClass {
         cardGuid_ = 0;
         onChanged();
         return this;
+      }
+
+      private java.util.List<emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair> costMap_ =
+        java.util.Collections.emptyList();
+      private void ensureCostMapIsMutable() {
+        if (!((bitField0_ & 0x00000001) != 0)) {
+          costMap_ = new java.util.ArrayList<emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair>(costMap_);
+          bitField0_ |= 0x00000001;
+         }
+      }
+
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair, emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.Builder, emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32PairOrBuilder> costMapBuilder_;
+
+      /**
+       * <code>repeated .Uint32Pair cost_map = 1;</code>
+       */
+      public java.util.List<emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair> getCostMapList() {
+        if (costMapBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(costMap_);
+        } else {
+          return costMapBuilder_.getMessageList();
+        }
+      }
+      /**
+       * <code>repeated .Uint32Pair cost_map = 1;</code>
+       */
+      public int getCostMapCount() {
+        if (costMapBuilder_ == null) {
+          return costMap_.size();
+        } else {
+          return costMapBuilder_.getCount();
+        }
+      }
+      /**
+       * <code>repeated .Uint32Pair cost_map = 1;</code>
+       */
+      public emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair getCostMap(int index) {
+        if (costMapBuilder_ == null) {
+          return costMap_.get(index);
+        } else {
+          return costMapBuilder_.getMessage(index);
+        }
+      }
+      /**
+       * <code>repeated .Uint32Pair cost_map = 1;</code>
+       */
+      public Builder setCostMap(
+          int index, emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair value) {
+        if (costMapBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureCostMapIsMutable();
+          costMap_.set(index, value);
+          onChanged();
+        } else {
+          costMapBuilder_.setMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .Uint32Pair cost_map = 1;</code>
+       */
+      public Builder setCostMap(
+          int index, emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.Builder builderForValue) {
+        if (costMapBuilder_ == null) {
+          ensureCostMapIsMutable();
+          costMap_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          costMapBuilder_.setMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .Uint32Pair cost_map = 1;</code>
+       */
+      public Builder addCostMap(emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair value) {
+        if (costMapBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureCostMapIsMutable();
+          costMap_.add(value);
+          onChanged();
+        } else {
+          costMapBuilder_.addMessage(value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .Uint32Pair cost_map = 1;</code>
+       */
+      public Builder addCostMap(
+          int index, emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair value) {
+        if (costMapBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureCostMapIsMutable();
+          costMap_.add(index, value);
+          onChanged();
+        } else {
+          costMapBuilder_.addMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .Uint32Pair cost_map = 1;</code>
+       */
+      public Builder addCostMap(
+          emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.Builder builderForValue) {
+        if (costMapBuilder_ == null) {
+          ensureCostMapIsMutable();
+          costMap_.add(builderForValue.build());
+          onChanged();
+        } else {
+          costMapBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .Uint32Pair cost_map = 1;</code>
+       */
+      public Builder addCostMap(
+          int index, emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.Builder builderForValue) {
+        if (costMapBuilder_ == null) {
+          ensureCostMapIsMutable();
+          costMap_.add(index, builderForValue.build());
+          onChanged();
+        } else {
+          costMapBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .Uint32Pair cost_map = 1;</code>
+       */
+      public Builder addAllCostMap(
+          java.lang.Iterable<? extends emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair> values) {
+        if (costMapBuilder_ == null) {
+          ensureCostMapIsMutable();
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, costMap_);
+          onChanged();
+        } else {
+          costMapBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .Uint32Pair cost_map = 1;</code>
+       */
+      public Builder clearCostMap() {
+        if (costMapBuilder_ == null) {
+          costMap_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000001);
+          onChanged();
+        } else {
+          costMapBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .Uint32Pair cost_map = 1;</code>
+       */
+      public Builder removeCostMap(int index) {
+        if (costMapBuilder_ == null) {
+          ensureCostMapIsMutable();
+          costMap_.remove(index);
+          onChanged();
+        } else {
+          costMapBuilder_.remove(index);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .Uint32Pair cost_map = 1;</code>
+       */
+      public emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.Builder getCostMapBuilder(
+          int index) {
+        return getCostMapFieldBuilder().getBuilder(index);
+      }
+      /**
+       * <code>repeated .Uint32Pair cost_map = 1;</code>
+       */
+      public emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32PairOrBuilder getCostMapOrBuilder(
+          int index) {
+        if (costMapBuilder_ == null) {
+          return costMap_.get(index);  } else {
+          return costMapBuilder_.getMessageOrBuilder(index);
+        }
+      }
+      /**
+       * <code>repeated .Uint32Pair cost_map = 1;</code>
+       */
+      public java.util.List<? extends emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32PairOrBuilder> 
+           getCostMapOrBuilderList() {
+        if (costMapBuilder_ != null) {
+          return costMapBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(costMap_);
+        }
+      }
+      /**
+       * <code>repeated .Uint32Pair cost_map = 1;</code>
+       */
+      public emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.Builder addCostMapBuilder() {
+        return getCostMapFieldBuilder().addBuilder(
+            emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .Uint32Pair cost_map = 1;</code>
+       */
+      public emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.Builder addCostMapBuilder(
+          int index) {
+        return getCostMapFieldBuilder().addBuilder(
+            index, emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .Uint32Pair cost_map = 1;</code>
+       */
+      public java.util.List<emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.Builder> 
+           getCostMapBuilderList() {
+        return getCostMapFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair, emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.Builder, emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32PairOrBuilder> 
+          getCostMapFieldBuilder() {
+        if (costMapBuilder_ == null) {
+          costMapBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+              emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair, emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.Builder, emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32PairOrBuilder>(
+                  costMap_,
+                  ((bitField0_ & 0x00000001) != 0),
+                  getParentForChildren(),
+                  isClean());
+          costMap_ = null;
+        }
+        return costMapBuilder_;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -827,11 +882,6 @@ public final class GCGSelectOnStageCostInfoOuterClass {
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_GCGSelectOnStageCostInfo_fieldAccessorTable;
-  private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_GCGSelectOnStageCostInfo_CostMapEntry_descriptor;
-  private static final 
-    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_GCGSelectOnStageCostInfo_CostMapEntry_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -841,29 +891,24 @@ public final class GCGSelectOnStageCostInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\036GCGSelectOnStageCostInfo.proto\"\227\001\n\030GCG" +
-      "SelectOnStageCostInfo\0228\n\010cost_map\030\010 \003(\0132" +
-      "&.GCGSelectOnStageCostInfo.CostMapEntry\022" +
-      "\021\n\tcard_guid\030\t \001(\r\032.\n\014CostMapEntry\022\013\n\003ke" +
-      "y\030\001 \001(\r\022\r\n\005value\030\002 \001(\r:\0028\001B\033\n\031emu.grassc" +
-      "utter.net.protob\006proto3"
+      "\n\036GCGSelectOnStageCostInfo.proto\032\020Uint32" +
+      "Pair.proto\"L\n\030GCGSelectOnStageCostInfo\022\021" +
+      "\n\tcard_guid\030\003 \001(\r\022\035\n\010cost_map\030\001 \003(\0132\013.Ui" +
+      "nt32PairB\033\n\031emu.grasscutter.net.protob\006p" +
+      "roto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
+          emu.grasscutter.net.proto.Uint32PairOuterClass.getDescriptor(),
         });
     internal_static_GCGSelectOnStageCostInfo_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_GCGSelectOnStageCostInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GCGSelectOnStageCostInfo_descriptor,
-        new java.lang.String[] { "CostMap", "CardGuid", });
-    internal_static_GCGSelectOnStageCostInfo_CostMapEntry_descriptor =
-      internal_static_GCGSelectOnStageCostInfo_descriptor.getNestedTypes().get(0);
-    internal_static_GCGSelectOnStageCostInfo_CostMapEntry_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_GCGSelectOnStageCostInfo_CostMapEntry_descriptor,
-        new java.lang.String[] { "Key", "Value", });
+        new java.lang.String[] { "CardGuid", "CostMap", });
+    emu.grasscutter.net.proto.Uint32PairOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

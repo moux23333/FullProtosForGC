@@ -19,33 +19,33 @@ public final class BalloonGallerySettleInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 score = 8;</code>
+     * <code>uint32 score = 12;</code>
      * @return The score.
      */
     int getScore();
 
     /**
-     * <code>.GalleryStopReason reason = 14;</code>
+     * <code>uint32 owner_uid = 2;</code>
+     * @return The ownerUid.
+     */
+    int getOwnerUid();
+
+    /**
+     * <code>.GalleryStopReason reason = 7;</code>
      * @return The enum numeric value on the wire for reason.
      */
     int getReasonValue();
     /**
-     * <code>.GalleryStopReason reason = 14;</code>
+     * <code>.GalleryStopReason reason = 7;</code>
      * @return The reason.
      */
     emu.grasscutter.net.proto.GalleryStopReasonOuterClass.GalleryStopReason getReason();
 
     /**
-     * <code>uint32 hit_count = 10;</code>
+     * <code>uint32 hit_count = 13;</code>
      * @return The hitCount.
      */
     int getHitCount();
-
-    /**
-     * <code>uint32 owner_uid = 6;</code>
-     * @return The ownerUid.
-     */
-    int getOwnerUid();
   }
   /**
    * Protobuf type {@code BalloonGallerySettleInfo}
@@ -93,25 +93,25 @@ public final class BalloonGallerySettleInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 48: {
+            case 16: {
 
               ownerUid_ = input.readUInt32();
               break;
             }
-            case 64: {
+            case 56: {
+              int rawValue = input.readEnum();
+
+              reason_ = rawValue;
+              break;
+            }
+            case 96: {
 
               score_ = input.readUInt32();
               break;
             }
-            case 80: {
+            case 104: {
 
               hitCount_ = input.readUInt32();
-              break;
-            }
-            case 112: {
-              int rawValue = input.readEnum();
-
-              reason_ = rawValue;
               break;
             }
             default: {
@@ -146,10 +146,10 @@ public final class BalloonGallerySettleInfoOuterClass {
               emu.grasscutter.net.proto.BalloonGallerySettleInfoOuterClass.BalloonGallerySettleInfo.class, emu.grasscutter.net.proto.BalloonGallerySettleInfoOuterClass.BalloonGallerySettleInfo.Builder.class);
     }
 
-    public static final int SCORE_FIELD_NUMBER = 8;
+    public static final int SCORE_FIELD_NUMBER = 12;
     private int score_;
     /**
-     * <code>uint32 score = 8;</code>
+     * <code>uint32 score = 12;</code>
      * @return The score.
      */
     @java.lang.Override
@@ -157,17 +157,28 @@ public final class BalloonGallerySettleInfoOuterClass {
       return score_;
     }
 
-    public static final int REASON_FIELD_NUMBER = 14;
+    public static final int OWNER_UID_FIELD_NUMBER = 2;
+    private int ownerUid_;
+    /**
+     * <code>uint32 owner_uid = 2;</code>
+     * @return The ownerUid.
+     */
+    @java.lang.Override
+    public int getOwnerUid() {
+      return ownerUid_;
+    }
+
+    public static final int REASON_FIELD_NUMBER = 7;
     private int reason_;
     /**
-     * <code>.GalleryStopReason reason = 14;</code>
+     * <code>.GalleryStopReason reason = 7;</code>
      * @return The enum numeric value on the wire for reason.
      */
     @java.lang.Override public int getReasonValue() {
       return reason_;
     }
     /**
-     * <code>.GalleryStopReason reason = 14;</code>
+     * <code>.GalleryStopReason reason = 7;</code>
      * @return The reason.
      */
     @java.lang.Override public emu.grasscutter.net.proto.GalleryStopReasonOuterClass.GalleryStopReason getReason() {
@@ -176,26 +187,15 @@ public final class BalloonGallerySettleInfoOuterClass {
       return result == null ? emu.grasscutter.net.proto.GalleryStopReasonOuterClass.GalleryStopReason.UNRECOGNIZED : result;
     }
 
-    public static final int HIT_COUNT_FIELD_NUMBER = 10;
+    public static final int HIT_COUNT_FIELD_NUMBER = 13;
     private int hitCount_;
     /**
-     * <code>uint32 hit_count = 10;</code>
+     * <code>uint32 hit_count = 13;</code>
      * @return The hitCount.
      */
     @java.lang.Override
     public int getHitCount() {
       return hitCount_;
-    }
-
-    public static final int OWNER_UID_FIELD_NUMBER = 6;
-    private int ownerUid_;
-    /**
-     * <code>uint32 owner_uid = 6;</code>
-     * @return The ownerUid.
-     */
-    @java.lang.Override
-    public int getOwnerUid() {
-      return ownerUid_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -213,16 +213,16 @@ public final class BalloonGallerySettleInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (ownerUid_ != 0) {
-        output.writeUInt32(6, ownerUid_);
-      }
-      if (score_ != 0) {
-        output.writeUInt32(8, score_);
-      }
-      if (hitCount_ != 0) {
-        output.writeUInt32(10, hitCount_);
+        output.writeUInt32(2, ownerUid_);
       }
       if (reason_ != emu.grasscutter.net.proto.GalleryStopReasonOuterClass.GalleryStopReason.GALLERY_STOP_REASON_NONE.getNumber()) {
-        output.writeEnum(14, reason_);
+        output.writeEnum(7, reason_);
+      }
+      if (score_ != 0) {
+        output.writeUInt32(12, score_);
+      }
+      if (hitCount_ != 0) {
+        output.writeUInt32(13, hitCount_);
       }
       unknownFields.writeTo(output);
     }
@@ -235,19 +235,19 @@ public final class BalloonGallerySettleInfoOuterClass {
       size = 0;
       if (ownerUid_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, ownerUid_);
-      }
-      if (score_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, score_);
-      }
-      if (hitCount_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, hitCount_);
+          .computeUInt32Size(2, ownerUid_);
       }
       if (reason_ != emu.grasscutter.net.proto.GalleryStopReasonOuterClass.GalleryStopReason.GALLERY_STOP_REASON_NONE.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(14, reason_);
+          .computeEnumSize(7, reason_);
+      }
+      if (score_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(12, score_);
+      }
+      if (hitCount_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(13, hitCount_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -266,11 +266,11 @@ public final class BalloonGallerySettleInfoOuterClass {
 
       if (getScore()
           != other.getScore()) return false;
+      if (getOwnerUid()
+          != other.getOwnerUid()) return false;
       if (reason_ != other.reason_) return false;
       if (getHitCount()
           != other.getHitCount()) return false;
-      if (getOwnerUid()
-          != other.getOwnerUid()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -284,12 +284,12 @@ public final class BalloonGallerySettleInfoOuterClass {
       hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + SCORE_FIELD_NUMBER;
       hash = (53 * hash) + getScore();
+      hash = (37 * hash) + OWNER_UID_FIELD_NUMBER;
+      hash = (53 * hash) + getOwnerUid();
       hash = (37 * hash) + REASON_FIELD_NUMBER;
       hash = (53 * hash) + reason_;
       hash = (37 * hash) + HIT_COUNT_FIELD_NUMBER;
       hash = (53 * hash) + getHitCount();
-      hash = (37 * hash) + OWNER_UID_FIELD_NUMBER;
-      hash = (53 * hash) + getOwnerUid();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -425,11 +425,11 @@ public final class BalloonGallerySettleInfoOuterClass {
         super.clear();
         score_ = 0;
 
+        ownerUid_ = 0;
+
         reason_ = 0;
 
         hitCount_ = 0;
-
-        ownerUid_ = 0;
 
         return this;
       }
@@ -458,9 +458,9 @@ public final class BalloonGallerySettleInfoOuterClass {
       public emu.grasscutter.net.proto.BalloonGallerySettleInfoOuterClass.BalloonGallerySettleInfo buildPartial() {
         emu.grasscutter.net.proto.BalloonGallerySettleInfoOuterClass.BalloonGallerySettleInfo result = new emu.grasscutter.net.proto.BalloonGallerySettleInfoOuterClass.BalloonGallerySettleInfo(this);
         result.score_ = score_;
+        result.ownerUid_ = ownerUid_;
         result.reason_ = reason_;
         result.hitCount_ = hitCount_;
-        result.ownerUid_ = ownerUid_;
         onBuilt();
         return result;
       }
@@ -512,14 +512,14 @@ public final class BalloonGallerySettleInfoOuterClass {
         if (other.getScore() != 0) {
           setScore(other.getScore());
         }
+        if (other.getOwnerUid() != 0) {
+          setOwnerUid(other.getOwnerUid());
+        }
         if (other.reason_ != 0) {
           setReasonValue(other.getReasonValue());
         }
         if (other.getHitCount() != 0) {
           setHitCount(other.getHitCount());
-        }
-        if (other.getOwnerUid() != 0) {
-          setOwnerUid(other.getOwnerUid());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -552,7 +552,7 @@ public final class BalloonGallerySettleInfoOuterClass {
 
       private int score_ ;
       /**
-       * <code>uint32 score = 8;</code>
+       * <code>uint32 score = 12;</code>
        * @return The score.
        */
       @java.lang.Override
@@ -560,7 +560,7 @@ public final class BalloonGallerySettleInfoOuterClass {
         return score_;
       }
       /**
-       * <code>uint32 score = 8;</code>
+       * <code>uint32 score = 12;</code>
        * @param value The score to set.
        * @return This builder for chaining.
        */
@@ -571,7 +571,7 @@ public final class BalloonGallerySettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 score = 8;</code>
+       * <code>uint32 score = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearScore() {
@@ -581,16 +581,47 @@ public final class BalloonGallerySettleInfoOuterClass {
         return this;
       }
 
+      private int ownerUid_ ;
+      /**
+       * <code>uint32 owner_uid = 2;</code>
+       * @return The ownerUid.
+       */
+      @java.lang.Override
+      public int getOwnerUid() {
+        return ownerUid_;
+      }
+      /**
+       * <code>uint32 owner_uid = 2;</code>
+       * @param value The ownerUid to set.
+       * @return This builder for chaining.
+       */
+      public Builder setOwnerUid(int value) {
+        
+        ownerUid_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 owner_uid = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearOwnerUid() {
+        
+        ownerUid_ = 0;
+        onChanged();
+        return this;
+      }
+
       private int reason_ = 0;
       /**
-       * <code>.GalleryStopReason reason = 14;</code>
+       * <code>.GalleryStopReason reason = 7;</code>
        * @return The enum numeric value on the wire for reason.
        */
       @java.lang.Override public int getReasonValue() {
         return reason_;
       }
       /**
-       * <code>.GalleryStopReason reason = 14;</code>
+       * <code>.GalleryStopReason reason = 7;</code>
        * @param value The enum numeric value on the wire for reason to set.
        * @return This builder for chaining.
        */
@@ -601,7 +632,7 @@ public final class BalloonGallerySettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>.GalleryStopReason reason = 14;</code>
+       * <code>.GalleryStopReason reason = 7;</code>
        * @return The reason.
        */
       @java.lang.Override
@@ -611,7 +642,7 @@ public final class BalloonGallerySettleInfoOuterClass {
         return result == null ? emu.grasscutter.net.proto.GalleryStopReasonOuterClass.GalleryStopReason.UNRECOGNIZED : result;
       }
       /**
-       * <code>.GalleryStopReason reason = 14;</code>
+       * <code>.GalleryStopReason reason = 7;</code>
        * @param value The reason to set.
        * @return This builder for chaining.
        */
@@ -625,7 +656,7 @@ public final class BalloonGallerySettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>.GalleryStopReason reason = 14;</code>
+       * <code>.GalleryStopReason reason = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearReason() {
@@ -637,7 +668,7 @@ public final class BalloonGallerySettleInfoOuterClass {
 
       private int hitCount_ ;
       /**
-       * <code>uint32 hit_count = 10;</code>
+       * <code>uint32 hit_count = 13;</code>
        * @return The hitCount.
        */
       @java.lang.Override
@@ -645,7 +676,7 @@ public final class BalloonGallerySettleInfoOuterClass {
         return hitCount_;
       }
       /**
-       * <code>uint32 hit_count = 10;</code>
+       * <code>uint32 hit_count = 13;</code>
        * @param value The hitCount to set.
        * @return This builder for chaining.
        */
@@ -656,43 +687,12 @@ public final class BalloonGallerySettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 hit_count = 10;</code>
+       * <code>uint32 hit_count = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearHitCount() {
         
         hitCount_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int ownerUid_ ;
-      /**
-       * <code>uint32 owner_uid = 6;</code>
-       * @return The ownerUid.
-       */
-      @java.lang.Override
-      public int getOwnerUid() {
-        return ownerUid_;
-      }
-      /**
-       * <code>uint32 owner_uid = 6;</code>
-       * @param value The ownerUid to set.
-       * @return This builder for chaining.
-       */
-      public Builder setOwnerUid(int value) {
-        
-        ownerUid_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 owner_uid = 6;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearOwnerUid() {
-        
-        ownerUid_ = 0;
         onChanged();
         return this;
       }
@@ -765,9 +765,9 @@ public final class BalloonGallerySettleInfoOuterClass {
     java.lang.String[] descriptorData = {
       "\n\036BalloonGallerySettleInfo.proto\032\027Galler" +
       "yStopReason.proto\"s\n\030BalloonGallerySettl" +
-      "eInfo\022\r\n\005score\030\010 \001(\r\022\"\n\006reason\030\016 \001(\0162\022.G" +
-      "alleryStopReason\022\021\n\thit_count\030\n \001(\r\022\021\n\to" +
-      "wner_uid\030\006 \001(\rB\033\n\031emu.grasscutter.net.pr" +
+      "eInfo\022\r\n\005score\030\014 \001(\r\022\021\n\towner_uid\030\002 \001(\r\022" +
+      "\"\n\006reason\030\007 \001(\0162\022.GalleryStopReason\022\021\n\th" +
+      "it_count\030\r \001(\rB\033\n\031emu.grasscutter.net.pr" +
       "otob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -780,7 +780,7 @@ public final class BalloonGallerySettleInfoOuterClass {
     internal_static_BalloonGallerySettleInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_BalloonGallerySettleInfo_descriptor,
-        new java.lang.String[] { "Score", "Reason", "HitCount", "OwnerUid", });
+        new java.lang.String[] { "Score", "OwnerUid", "Reason", "HitCount", });
     emu.grasscutter.net.proto.GalleryStopReasonOuterClass.getDescriptor();
   }
 

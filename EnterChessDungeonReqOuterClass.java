@@ -19,17 +19,21 @@ public final class EnterChessDungeonReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 map_id = 12;</code>
+     * <code>uint32 map_id = 14;</code>
      * @return The mapId.
      */
     int getMapId();
   }
   /**
    * <pre>
-   * CmdId: 8191
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 8855;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code EnterChessDungeonReq}
@@ -76,7 +80,7 @@ public final class EnterChessDungeonReqOuterClass {
             case 0:
               done = true;
               break;
-            case 96: {
+            case 112: {
 
               mapId_ = input.readUInt32();
               break;
@@ -113,10 +117,10 @@ public final class EnterChessDungeonReqOuterClass {
               emu.grasscutter.net.proto.EnterChessDungeonReqOuterClass.EnterChessDungeonReq.class, emu.grasscutter.net.proto.EnterChessDungeonReqOuterClass.EnterChessDungeonReq.Builder.class);
     }
 
-    public static final int MAP_ID_FIELD_NUMBER = 12;
+    public static final int MAP_ID_FIELD_NUMBER = 14;
     private int mapId_;
     /**
-     * <code>uint32 map_id = 12;</code>
+     * <code>uint32 map_id = 14;</code>
      * @return The mapId.
      */
     @java.lang.Override
@@ -139,7 +143,7 @@ public final class EnterChessDungeonReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (mapId_ != 0) {
-        output.writeUInt32(12, mapId_);
+        output.writeUInt32(14, mapId_);
       }
       unknownFields.writeTo(output);
     }
@@ -152,7 +156,7 @@ public final class EnterChessDungeonReqOuterClass {
       size = 0;
       if (mapId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, mapId_);
+          .computeUInt32Size(14, mapId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -281,10 +285,14 @@ public final class EnterChessDungeonReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 8191
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 8855;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code EnterChessDungeonReq}
@@ -435,7 +443,7 @@ public final class EnterChessDungeonReqOuterClass {
 
       private int mapId_ ;
       /**
-       * <code>uint32 map_id = 12;</code>
+       * <code>uint32 map_id = 14;</code>
        * @return The mapId.
        */
       @java.lang.Override
@@ -443,7 +451,7 @@ public final class EnterChessDungeonReqOuterClass {
         return mapId_;
       }
       /**
-       * <code>uint32 map_id = 12;</code>
+       * <code>uint32 map_id = 14;</code>
        * @param value The mapId to set.
        * @return This builder for chaining.
        */
@@ -454,7 +462,7 @@ public final class EnterChessDungeonReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 map_id = 12;</code>
+       * <code>uint32 map_id = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearMapId() {
@@ -531,7 +539,7 @@ public final class EnterChessDungeonReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\032EnterChessDungeonReq.proto\"&\n\024EnterChe" +
-      "ssDungeonReq\022\016\n\006map_id\030\014 \001(\rB\033\n\031emu.gras" +
+      "ssDungeonReq\022\016\n\006map_id\030\016 \001(\rB\033\n\031emu.gras" +
       "scutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

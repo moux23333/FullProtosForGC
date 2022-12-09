@@ -19,32 +19,36 @@ public final class WinterCampEditSnowmanCombinationReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 entity_id = 9;</code>
+     * <code>uint32 entity_id = 6;</code>
      * @return The entityId.
      */
     int getEntityId();
 
     /**
-     * <code>.CustomGadgetTreeInfo combination_info = 6;</code>
+     * <code>.CustomGadgetTreeInfo combination_info = 5;</code>
      * @return Whether the combinationInfo field is set.
      */
     boolean hasCombinationInfo();
     /**
-     * <code>.CustomGadgetTreeInfo combination_info = 6;</code>
+     * <code>.CustomGadgetTreeInfo combination_info = 5;</code>
      * @return The combinationInfo.
      */
     emu.grasscutter.net.proto.CustomGadgetTreeInfoOuterClass.CustomGadgetTreeInfo getCombinationInfo();
     /**
-     * <code>.CustomGadgetTreeInfo combination_info = 6;</code>
+     * <code>.CustomGadgetTreeInfo combination_info = 5;</code>
      */
     emu.grasscutter.net.proto.CustomGadgetTreeInfoOuterClass.CustomGadgetTreeInfoOrBuilder getCombinationInfoOrBuilder();
   }
   /**
    * <pre>
-   * CmdId: 8144
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 8157;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code WinterCampEditSnowmanCombinationReq}
@@ -91,7 +95,7 @@ public final class WinterCampEditSnowmanCombinationReqOuterClass {
             case 0:
               done = true;
               break;
-            case 50: {
+            case 42: {
               emu.grasscutter.net.proto.CustomGadgetTreeInfoOuterClass.CustomGadgetTreeInfo.Builder subBuilder = null;
               if (combinationInfo_ != null) {
                 subBuilder = combinationInfo_.toBuilder();
@@ -104,7 +108,7 @@ public final class WinterCampEditSnowmanCombinationReqOuterClass {
 
               break;
             }
-            case 72: {
+            case 48: {
 
               entityId_ = input.readUInt32();
               break;
@@ -141,10 +145,10 @@ public final class WinterCampEditSnowmanCombinationReqOuterClass {
               emu.grasscutter.net.proto.WinterCampEditSnowmanCombinationReqOuterClass.WinterCampEditSnowmanCombinationReq.class, emu.grasscutter.net.proto.WinterCampEditSnowmanCombinationReqOuterClass.WinterCampEditSnowmanCombinationReq.Builder.class);
     }
 
-    public static final int ENTITY_ID_FIELD_NUMBER = 9;
+    public static final int ENTITY_ID_FIELD_NUMBER = 6;
     private int entityId_;
     /**
-     * <code>uint32 entity_id = 9;</code>
+     * <code>uint32 entity_id = 6;</code>
      * @return The entityId.
      */
     @java.lang.Override
@@ -152,10 +156,10 @@ public final class WinterCampEditSnowmanCombinationReqOuterClass {
       return entityId_;
     }
 
-    public static final int COMBINATION_INFO_FIELD_NUMBER = 6;
+    public static final int COMBINATION_INFO_FIELD_NUMBER = 5;
     private emu.grasscutter.net.proto.CustomGadgetTreeInfoOuterClass.CustomGadgetTreeInfo combinationInfo_;
     /**
-     * <code>.CustomGadgetTreeInfo combination_info = 6;</code>
+     * <code>.CustomGadgetTreeInfo combination_info = 5;</code>
      * @return Whether the combinationInfo field is set.
      */
     @java.lang.Override
@@ -163,7 +167,7 @@ public final class WinterCampEditSnowmanCombinationReqOuterClass {
       return combinationInfo_ != null;
     }
     /**
-     * <code>.CustomGadgetTreeInfo combination_info = 6;</code>
+     * <code>.CustomGadgetTreeInfo combination_info = 5;</code>
      * @return The combinationInfo.
      */
     @java.lang.Override
@@ -171,7 +175,7 @@ public final class WinterCampEditSnowmanCombinationReqOuterClass {
       return combinationInfo_ == null ? emu.grasscutter.net.proto.CustomGadgetTreeInfoOuterClass.CustomGadgetTreeInfo.getDefaultInstance() : combinationInfo_;
     }
     /**
-     * <code>.CustomGadgetTreeInfo combination_info = 6;</code>
+     * <code>.CustomGadgetTreeInfo combination_info = 5;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.CustomGadgetTreeInfoOuterClass.CustomGadgetTreeInfoOrBuilder getCombinationInfoOrBuilder() {
@@ -193,10 +197,10 @@ public final class WinterCampEditSnowmanCombinationReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (combinationInfo_ != null) {
-        output.writeMessage(6, getCombinationInfo());
+        output.writeMessage(5, getCombinationInfo());
       }
       if (entityId_ != 0) {
-        output.writeUInt32(9, entityId_);
+        output.writeUInt32(6, entityId_);
       }
       unknownFields.writeTo(output);
     }
@@ -209,11 +213,11 @@ public final class WinterCampEditSnowmanCombinationReqOuterClass {
       size = 0;
       if (combinationInfo_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(6, getCombinationInfo());
+          .computeMessageSize(5, getCombinationInfo());
       }
       if (entityId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, entityId_);
+          .computeUInt32Size(6, entityId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -351,10 +355,14 @@ public final class WinterCampEditSnowmanCombinationReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 8144
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 8157;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code WinterCampEditSnowmanCombinationReq}
@@ -519,7 +527,7 @@ public final class WinterCampEditSnowmanCombinationReqOuterClass {
 
       private int entityId_ ;
       /**
-       * <code>uint32 entity_id = 9;</code>
+       * <code>uint32 entity_id = 6;</code>
        * @return The entityId.
        */
       @java.lang.Override
@@ -527,7 +535,7 @@ public final class WinterCampEditSnowmanCombinationReqOuterClass {
         return entityId_;
       }
       /**
-       * <code>uint32 entity_id = 9;</code>
+       * <code>uint32 entity_id = 6;</code>
        * @param value The entityId to set.
        * @return This builder for chaining.
        */
@@ -538,7 +546,7 @@ public final class WinterCampEditSnowmanCombinationReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 entity_id = 9;</code>
+       * <code>uint32 entity_id = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearEntityId() {
@@ -552,14 +560,14 @@ public final class WinterCampEditSnowmanCombinationReqOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.CustomGadgetTreeInfoOuterClass.CustomGadgetTreeInfo, emu.grasscutter.net.proto.CustomGadgetTreeInfoOuterClass.CustomGadgetTreeInfo.Builder, emu.grasscutter.net.proto.CustomGadgetTreeInfoOuterClass.CustomGadgetTreeInfoOrBuilder> combinationInfoBuilder_;
       /**
-       * <code>.CustomGadgetTreeInfo combination_info = 6;</code>
+       * <code>.CustomGadgetTreeInfo combination_info = 5;</code>
        * @return Whether the combinationInfo field is set.
        */
       public boolean hasCombinationInfo() {
         return combinationInfoBuilder_ != null || combinationInfo_ != null;
       }
       /**
-       * <code>.CustomGadgetTreeInfo combination_info = 6;</code>
+       * <code>.CustomGadgetTreeInfo combination_info = 5;</code>
        * @return The combinationInfo.
        */
       public emu.grasscutter.net.proto.CustomGadgetTreeInfoOuterClass.CustomGadgetTreeInfo getCombinationInfo() {
@@ -570,7 +578,7 @@ public final class WinterCampEditSnowmanCombinationReqOuterClass {
         }
       }
       /**
-       * <code>.CustomGadgetTreeInfo combination_info = 6;</code>
+       * <code>.CustomGadgetTreeInfo combination_info = 5;</code>
        */
       public Builder setCombinationInfo(emu.grasscutter.net.proto.CustomGadgetTreeInfoOuterClass.CustomGadgetTreeInfo value) {
         if (combinationInfoBuilder_ == null) {
@@ -586,7 +594,7 @@ public final class WinterCampEditSnowmanCombinationReqOuterClass {
         return this;
       }
       /**
-       * <code>.CustomGadgetTreeInfo combination_info = 6;</code>
+       * <code>.CustomGadgetTreeInfo combination_info = 5;</code>
        */
       public Builder setCombinationInfo(
           emu.grasscutter.net.proto.CustomGadgetTreeInfoOuterClass.CustomGadgetTreeInfo.Builder builderForValue) {
@@ -600,7 +608,7 @@ public final class WinterCampEditSnowmanCombinationReqOuterClass {
         return this;
       }
       /**
-       * <code>.CustomGadgetTreeInfo combination_info = 6;</code>
+       * <code>.CustomGadgetTreeInfo combination_info = 5;</code>
        */
       public Builder mergeCombinationInfo(emu.grasscutter.net.proto.CustomGadgetTreeInfoOuterClass.CustomGadgetTreeInfo value) {
         if (combinationInfoBuilder_ == null) {
@@ -618,7 +626,7 @@ public final class WinterCampEditSnowmanCombinationReqOuterClass {
         return this;
       }
       /**
-       * <code>.CustomGadgetTreeInfo combination_info = 6;</code>
+       * <code>.CustomGadgetTreeInfo combination_info = 5;</code>
        */
       public Builder clearCombinationInfo() {
         if (combinationInfoBuilder_ == null) {
@@ -632,7 +640,7 @@ public final class WinterCampEditSnowmanCombinationReqOuterClass {
         return this;
       }
       /**
-       * <code>.CustomGadgetTreeInfo combination_info = 6;</code>
+       * <code>.CustomGadgetTreeInfo combination_info = 5;</code>
        */
       public emu.grasscutter.net.proto.CustomGadgetTreeInfoOuterClass.CustomGadgetTreeInfo.Builder getCombinationInfoBuilder() {
         
@@ -640,7 +648,7 @@ public final class WinterCampEditSnowmanCombinationReqOuterClass {
         return getCombinationInfoFieldBuilder().getBuilder();
       }
       /**
-       * <code>.CustomGadgetTreeInfo combination_info = 6;</code>
+       * <code>.CustomGadgetTreeInfo combination_info = 5;</code>
        */
       public emu.grasscutter.net.proto.CustomGadgetTreeInfoOuterClass.CustomGadgetTreeInfoOrBuilder getCombinationInfoOrBuilder() {
         if (combinationInfoBuilder_ != null) {
@@ -651,7 +659,7 @@ public final class WinterCampEditSnowmanCombinationReqOuterClass {
         }
       }
       /**
-       * <code>.CustomGadgetTreeInfo combination_info = 6;</code>
+       * <code>.CustomGadgetTreeInfo combination_info = 5;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.CustomGadgetTreeInfoOuterClass.CustomGadgetTreeInfo, emu.grasscutter.net.proto.CustomGadgetTreeInfoOuterClass.CustomGadgetTreeInfo.Builder, emu.grasscutter.net.proto.CustomGadgetTreeInfoOuterClass.CustomGadgetTreeInfoOrBuilder> 
@@ -736,7 +744,7 @@ public final class WinterCampEditSnowmanCombinationReqOuterClass {
       "\n)WinterCampEditSnowmanCombinationReq.pr" +
       "oto\032\032CustomGadgetTreeInfo.proto\"i\n#Winte" +
       "rCampEditSnowmanCombinationReq\022\021\n\tentity" +
-      "_id\030\t \001(\r\022/\n\020combination_info\030\006 \001(\0132\025.Cu" +
+      "_id\030\006 \001(\r\022/\n\020combination_info\030\005 \001(\0132\025.Cu" +
       "stomGadgetTreeInfoB\033\n\031emu.grasscutter.ne" +
       "t.protob\006proto3"
     };

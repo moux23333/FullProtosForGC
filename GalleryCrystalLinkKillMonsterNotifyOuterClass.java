@@ -19,22 +19,26 @@ public final class GalleryCrystalLinkKillMonsterNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 score = 7;</code>
+     * <code>uint32 score = 5;</code>
      * @return The score.
      */
     int getScore();
 
     /**
-     * <code>uint32 gallery_id = 9;</code>
+     * <code>uint32 gallery_id = 1;</code>
      * @return The galleryId.
      */
     int getGalleryId();
   }
   /**
    * <pre>
-   * CmdId: 5547
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 5576;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code GalleryCrystalLinkKillMonsterNotify}
@@ -81,14 +85,14 @@ public final class GalleryCrystalLinkKillMonsterNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 56: {
-
-              score_ = input.readUInt32();
-              break;
-            }
-            case 72: {
+            case 8: {
 
               galleryId_ = input.readUInt32();
+              break;
+            }
+            case 40: {
+
+              score_ = input.readUInt32();
               break;
             }
             default: {
@@ -123,10 +127,10 @@ public final class GalleryCrystalLinkKillMonsterNotifyOuterClass {
               emu.grasscutter.net.proto.GalleryCrystalLinkKillMonsterNotifyOuterClass.GalleryCrystalLinkKillMonsterNotify.class, emu.grasscutter.net.proto.GalleryCrystalLinkKillMonsterNotifyOuterClass.GalleryCrystalLinkKillMonsterNotify.Builder.class);
     }
 
-    public static final int SCORE_FIELD_NUMBER = 7;
+    public static final int SCORE_FIELD_NUMBER = 5;
     private int score_;
     /**
-     * <code>uint32 score = 7;</code>
+     * <code>uint32 score = 5;</code>
      * @return The score.
      */
     @java.lang.Override
@@ -134,10 +138,10 @@ public final class GalleryCrystalLinkKillMonsterNotifyOuterClass {
       return score_;
     }
 
-    public static final int GALLERY_ID_FIELD_NUMBER = 9;
+    public static final int GALLERY_ID_FIELD_NUMBER = 1;
     private int galleryId_;
     /**
-     * <code>uint32 gallery_id = 9;</code>
+     * <code>uint32 gallery_id = 1;</code>
      * @return The galleryId.
      */
     @java.lang.Override
@@ -159,11 +163,11 @@ public final class GalleryCrystalLinkKillMonsterNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (score_ != 0) {
-        output.writeUInt32(7, score_);
-      }
       if (galleryId_ != 0) {
-        output.writeUInt32(9, galleryId_);
+        output.writeUInt32(1, galleryId_);
+      }
+      if (score_ != 0) {
+        output.writeUInt32(5, score_);
       }
       unknownFields.writeTo(output);
     }
@@ -174,13 +178,13 @@ public final class GalleryCrystalLinkKillMonsterNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (score_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, score_);
-      }
       if (galleryId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, galleryId_);
+          .computeUInt32Size(1, galleryId_);
+      }
+      if (score_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(5, score_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -313,9 +317,13 @@ public final class GalleryCrystalLinkKillMonsterNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 5547
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 5576;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code GalleryCrystalLinkKillMonsterNotify}
@@ -472,7 +480,7 @@ public final class GalleryCrystalLinkKillMonsterNotifyOuterClass {
 
       private int score_ ;
       /**
-       * <code>uint32 score = 7;</code>
+       * <code>uint32 score = 5;</code>
        * @return The score.
        */
       @java.lang.Override
@@ -480,7 +488,7 @@ public final class GalleryCrystalLinkKillMonsterNotifyOuterClass {
         return score_;
       }
       /**
-       * <code>uint32 score = 7;</code>
+       * <code>uint32 score = 5;</code>
        * @param value The score to set.
        * @return This builder for chaining.
        */
@@ -491,7 +499,7 @@ public final class GalleryCrystalLinkKillMonsterNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 score = 7;</code>
+       * <code>uint32 score = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearScore() {
@@ -503,7 +511,7 @@ public final class GalleryCrystalLinkKillMonsterNotifyOuterClass {
 
       private int galleryId_ ;
       /**
-       * <code>uint32 gallery_id = 9;</code>
+       * <code>uint32 gallery_id = 1;</code>
        * @return The galleryId.
        */
       @java.lang.Override
@@ -511,7 +519,7 @@ public final class GalleryCrystalLinkKillMonsterNotifyOuterClass {
         return galleryId_;
       }
       /**
-       * <code>uint32 gallery_id = 9;</code>
+       * <code>uint32 gallery_id = 1;</code>
        * @param value The galleryId to set.
        * @return This builder for chaining.
        */
@@ -522,7 +530,7 @@ public final class GalleryCrystalLinkKillMonsterNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 gallery_id = 9;</code>
+       * <code>uint32 gallery_id = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearGalleryId() {
@@ -600,7 +608,7 @@ public final class GalleryCrystalLinkKillMonsterNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n)GalleryCrystalLinkKillMonsterNotify.pr" +
       "oto\"H\n#GalleryCrystalLinkKillMonsterNoti" +
-      "fy\022\r\n\005score\030\007 \001(\r\022\022\n\ngallery_id\030\t \001(\rB\033\n" +
+      "fy\022\r\n\005score\030\005 \001(\r\022\022\n\ngallery_id\030\001 \001(\rB\033\n" +
       "\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

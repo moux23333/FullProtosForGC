@@ -19,85 +19,112 @@ public final class GCGSettleNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 game_id = 7;</code>
-     * @return The gameId.
-     */
-    int getGameId();
-
-    /**
-     * <code>.GCGGameBusinessType business_type = 2;</code>
-     * @return The enum numeric value on the wire for businessType.
-     */
-    int getBusinessTypeValue();
-    /**
-     * <code>.GCGGameBusinessType business_type = 2;</code>
-     * @return The businessType.
-     */
-    emu.grasscutter.net.proto.GCGGameBusinessTypeOuterClass.GCGGameBusinessType getBusinessType();
-
-    /**
-     * <code>bool is_win = 13;</code>
-     * @return The isWin.
-     */
-    boolean getIsWin();
-
-    /**
-     * <code>repeated .ItemParam reward_item_list = 9;</code>
+     * <code>repeated .ItemParam reward_item_list = 8;</code>
      */
     java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> 
         getRewardItemListList();
     /**
-     * <code>repeated .ItemParam reward_item_list = 9;</code>
+     * <code>repeated .ItemParam reward_item_list = 8;</code>
      */
     emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam getRewardItemList(int index);
     /**
-     * <code>repeated .ItemParam reward_item_list = 9;</code>
+     * <code>repeated .ItemParam reward_item_list = 8;</code>
      */
     int getRewardItemListCount();
     /**
-     * <code>repeated .ItemParam reward_item_list = 9;</code>
+     * <code>repeated .ItemParam reward_item_list = 8;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder> 
         getRewardItemListOrBuilderList();
     /**
-     * <code>repeated .ItemParam reward_item_list = 9;</code>
+     * <code>repeated .ItemParam reward_item_list = 8;</code>
      */
     emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder getRewardItemListOrBuilder(
         int index);
 
     /**
-     * <code>repeated uint32 finished_challenge_id_list = 6;</code>
+     * <code>repeated uint32 finished_challenge_id_list = 1;</code>
      * @return A list containing the finishedChallengeIdList.
      */
     java.util.List<java.lang.Integer> getFinishedChallengeIdListList();
     /**
-     * <code>repeated uint32 finished_challenge_id_list = 6;</code>
+     * <code>repeated uint32 finished_challenge_id_list = 1;</code>
      * @return The count of finishedChallengeIdList.
      */
     int getFinishedChallengeIdListCount();
     /**
-     * <code>repeated uint32 finished_challenge_id_list = 6;</code>
+     * <code>repeated uint32 finished_challenge_id_list = 1;</code>
      * @param index The index of the element to return.
      * @return The finishedChallengeIdList at the given index.
      */
     int getFinishedChallengeIdList(int index);
 
     /**
-     * <code>.GCGEndReason reason = 3;</code>
+     * <code>uint32 game_id = 3;</code>
+     * @return The gameId.
+     */
+    int getGameId();
+
+    /**
+     * <code>bool is_win = 2;</code>
+     * @return The isWin.
+     */
+    boolean getIsWin();
+
+    /**
+     * <code>.GCGGameBusinessType business_type = 5;</code>
+     * @return The enum numeric value on the wire for businessType.
+     */
+    int getBusinessTypeValue();
+    /**
+     * <code>.GCGGameBusinessType business_type = 5;</code>
+     * @return The businessType.
+     */
+    emu.grasscutter.net.proto.GCGGameBusinessTypeOuterClass.GCGGameBusinessType getBusinessType();
+
+    /**
+     * <code>uint32 win_controller_id = 11;</code>
+     * @return The winControllerId.
+     */
+    int getWinControllerId();
+
+    /**
+     * <code>repeated uint32 forbid_finish_challenge_list = 10;</code>
+     * @return A list containing the forbidFinishChallengeList.
+     */
+    java.util.List<java.lang.Integer> getForbidFinishChallengeListList();
+    /**
+     * <code>repeated uint32 forbid_finish_challenge_list = 10;</code>
+     * @return The count of forbidFinishChallengeList.
+     */
+    int getForbidFinishChallengeListCount();
+    /**
+     * <code>repeated uint32 forbid_finish_challenge_list = 10;</code>
+     * @param index The index of the element to return.
+     * @return The forbidFinishChallengeList at the given index.
+     */
+    int getForbidFinishChallengeList(int index);
+
+    /**
+     * <code>.GCGEndReason reason = 4;</code>
      * @return The enum numeric value on the wire for reason.
      */
     int getReasonValue();
     /**
-     * <code>.GCGEndReason reason = 3;</code>
+     * <code>.GCGEndReason reason = 4;</code>
      * @return The reason.
      */
     emu.grasscutter.net.proto.GCGEndReasonOuterClass.GCGEndReason getReason();
   }
   /**
    * <pre>
-   * CmdId: 7769
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 7562;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code GCGSettleNotify}
@@ -112,9 +139,10 @@ public final class GCGSettleNotifyOuterClass {
       super(builder);
     }
     private GCGSettleNotify() {
-      businessType_ = 0;
       rewardItemList_ = java.util.Collections.emptyList();
       finishedChallengeIdList_ = emptyIntList();
+      businessType_ = 0;
+      forbidFinishChallengeList_ = emptyIntList();
       reason_ = 0;
     }
 
@@ -149,19 +177,7 @@ public final class GCGSettleNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
-              int rawValue = input.readEnum();
-
-              businessType_ = rawValue;
-              break;
-            }
-            case 24: {
-              int rawValue = input.readEnum();
-
-              reason_ = rawValue;
-              break;
-            }
-            case 48: {
+            case 8: {
               if (!((mutable_bitField0_ & 0x00000002) != 0)) {
                 finishedChallengeIdList_ = newIntList();
                 mutable_bitField0_ |= 0x00000002;
@@ -169,7 +185,7 @@ public final class GCGSettleNotifyOuterClass {
               finishedChallengeIdList_.addInt(input.readUInt32());
               break;
             }
-            case 50: {
+            case 10: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000002) != 0) && input.getBytesUntilLimit() > 0) {
@@ -182,12 +198,29 @@ public final class GCGSettleNotifyOuterClass {
               input.popLimit(limit);
               break;
             }
-            case 56: {
+            case 16: {
+
+              isWin_ = input.readBool();
+              break;
+            }
+            case 24: {
 
               gameId_ = input.readUInt32();
               break;
             }
-            case 74: {
+            case 32: {
+              int rawValue = input.readEnum();
+
+              reason_ = rawValue;
+              break;
+            }
+            case 40: {
+              int rawValue = input.readEnum();
+
+              businessType_ = rawValue;
+              break;
+            }
+            case 66: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 rewardItemList_ = new java.util.ArrayList<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam>();
                 mutable_bitField0_ |= 0x00000001;
@@ -196,9 +229,30 @@ public final class GCGSettleNotifyOuterClass {
                   input.readMessage(emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.parser(), extensionRegistry));
               break;
             }
-            case 104: {
+            case 80: {
+              if (!((mutable_bitField0_ & 0x00000004) != 0)) {
+                forbidFinishChallengeList_ = newIntList();
+                mutable_bitField0_ |= 0x00000004;
+              }
+              forbidFinishChallengeList_.addInt(input.readUInt32());
+              break;
+            }
+            case 82: {
+              int length = input.readRawVarint32();
+              int limit = input.pushLimit(length);
+              if (!((mutable_bitField0_ & 0x00000004) != 0) && input.getBytesUntilLimit() > 0) {
+                forbidFinishChallengeList_ = newIntList();
+                mutable_bitField0_ |= 0x00000004;
+              }
+              while (input.getBytesUntilLimit() > 0) {
+                forbidFinishChallengeList_.addInt(input.readUInt32());
+              }
+              input.popLimit(limit);
+              break;
+            }
+            case 88: {
 
-              isWin_ = input.readBool();
+              winControllerId_ = input.readUInt32();
               break;
             }
             default: {
@@ -222,6 +276,9 @@ public final class GCGSettleNotifyOuterClass {
         if (((mutable_bitField0_ & 0x00000001) != 0)) {
           rewardItemList_ = java.util.Collections.unmodifiableList(rewardItemList_);
         }
+        if (((mutable_bitField0_ & 0x00000004) != 0)) {
+          forbidFinishChallengeList_.makeImmutable(); // C
+        }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
       }
@@ -239,58 +296,17 @@ public final class GCGSettleNotifyOuterClass {
               emu.grasscutter.net.proto.GCGSettleNotifyOuterClass.GCGSettleNotify.class, emu.grasscutter.net.proto.GCGSettleNotifyOuterClass.GCGSettleNotify.Builder.class);
     }
 
-    public static final int GAME_ID_FIELD_NUMBER = 7;
-    private int gameId_;
-    /**
-     * <code>uint32 game_id = 7;</code>
-     * @return The gameId.
-     */
-    @java.lang.Override
-    public int getGameId() {
-      return gameId_;
-    }
-
-    public static final int BUSINESS_TYPE_FIELD_NUMBER = 2;
-    private int businessType_;
-    /**
-     * <code>.GCGGameBusinessType business_type = 2;</code>
-     * @return The enum numeric value on the wire for businessType.
-     */
-    @java.lang.Override public int getBusinessTypeValue() {
-      return businessType_;
-    }
-    /**
-     * <code>.GCGGameBusinessType business_type = 2;</code>
-     * @return The businessType.
-     */
-    @java.lang.Override public emu.grasscutter.net.proto.GCGGameBusinessTypeOuterClass.GCGGameBusinessType getBusinessType() {
-      @SuppressWarnings("deprecation")
-      emu.grasscutter.net.proto.GCGGameBusinessTypeOuterClass.GCGGameBusinessType result = emu.grasscutter.net.proto.GCGGameBusinessTypeOuterClass.GCGGameBusinessType.valueOf(businessType_);
-      return result == null ? emu.grasscutter.net.proto.GCGGameBusinessTypeOuterClass.GCGGameBusinessType.UNRECOGNIZED : result;
-    }
-
-    public static final int IS_WIN_FIELD_NUMBER = 13;
-    private boolean isWin_;
-    /**
-     * <code>bool is_win = 13;</code>
-     * @return The isWin.
-     */
-    @java.lang.Override
-    public boolean getIsWin() {
-      return isWin_;
-    }
-
-    public static final int REWARD_ITEM_LIST_FIELD_NUMBER = 9;
+    public static final int REWARD_ITEM_LIST_FIELD_NUMBER = 8;
     private java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> rewardItemList_;
     /**
-     * <code>repeated .ItemParam reward_item_list = 9;</code>
+     * <code>repeated .ItemParam reward_item_list = 8;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> getRewardItemListList() {
       return rewardItemList_;
     }
     /**
-     * <code>repeated .ItemParam reward_item_list = 9;</code>
+     * <code>repeated .ItemParam reward_item_list = 8;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder> 
@@ -298,21 +314,21 @@ public final class GCGSettleNotifyOuterClass {
       return rewardItemList_;
     }
     /**
-     * <code>repeated .ItemParam reward_item_list = 9;</code>
+     * <code>repeated .ItemParam reward_item_list = 8;</code>
      */
     @java.lang.Override
     public int getRewardItemListCount() {
       return rewardItemList_.size();
     }
     /**
-     * <code>repeated .ItemParam reward_item_list = 9;</code>
+     * <code>repeated .ItemParam reward_item_list = 8;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam getRewardItemList(int index) {
       return rewardItemList_.get(index);
     }
     /**
-     * <code>repeated .ItemParam reward_item_list = 9;</code>
+     * <code>repeated .ItemParam reward_item_list = 8;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder getRewardItemListOrBuilder(
@@ -320,10 +336,10 @@ public final class GCGSettleNotifyOuterClass {
       return rewardItemList_.get(index);
     }
 
-    public static final int FINISHED_CHALLENGE_ID_LIST_FIELD_NUMBER = 6;
+    public static final int FINISHED_CHALLENGE_ID_LIST_FIELD_NUMBER = 1;
     private com.google.protobuf.Internal.IntList finishedChallengeIdList_;
     /**
-     * <code>repeated uint32 finished_challenge_id_list = 6;</code>
+     * <code>repeated uint32 finished_challenge_id_list = 1;</code>
      * @return A list containing the finishedChallengeIdList.
      */
     @java.lang.Override
@@ -332,14 +348,14 @@ public final class GCGSettleNotifyOuterClass {
       return finishedChallengeIdList_;
     }
     /**
-     * <code>repeated uint32 finished_challenge_id_list = 6;</code>
+     * <code>repeated uint32 finished_challenge_id_list = 1;</code>
      * @return The count of finishedChallengeIdList.
      */
     public int getFinishedChallengeIdListCount() {
       return finishedChallengeIdList_.size();
     }
     /**
-     * <code>repeated uint32 finished_challenge_id_list = 6;</code>
+     * <code>repeated uint32 finished_challenge_id_list = 1;</code>
      * @param index The index of the element to return.
      * @return The finishedChallengeIdList at the given index.
      */
@@ -348,17 +364,97 @@ public final class GCGSettleNotifyOuterClass {
     }
     private int finishedChallengeIdListMemoizedSerializedSize = -1;
 
-    public static final int REASON_FIELD_NUMBER = 3;
+    public static final int GAME_ID_FIELD_NUMBER = 3;
+    private int gameId_;
+    /**
+     * <code>uint32 game_id = 3;</code>
+     * @return The gameId.
+     */
+    @java.lang.Override
+    public int getGameId() {
+      return gameId_;
+    }
+
+    public static final int IS_WIN_FIELD_NUMBER = 2;
+    private boolean isWin_;
+    /**
+     * <code>bool is_win = 2;</code>
+     * @return The isWin.
+     */
+    @java.lang.Override
+    public boolean getIsWin() {
+      return isWin_;
+    }
+
+    public static final int BUSINESS_TYPE_FIELD_NUMBER = 5;
+    private int businessType_;
+    /**
+     * <code>.GCGGameBusinessType business_type = 5;</code>
+     * @return The enum numeric value on the wire for businessType.
+     */
+    @java.lang.Override public int getBusinessTypeValue() {
+      return businessType_;
+    }
+    /**
+     * <code>.GCGGameBusinessType business_type = 5;</code>
+     * @return The businessType.
+     */
+    @java.lang.Override public emu.grasscutter.net.proto.GCGGameBusinessTypeOuterClass.GCGGameBusinessType getBusinessType() {
+      @SuppressWarnings("deprecation")
+      emu.grasscutter.net.proto.GCGGameBusinessTypeOuterClass.GCGGameBusinessType result = emu.grasscutter.net.proto.GCGGameBusinessTypeOuterClass.GCGGameBusinessType.valueOf(businessType_);
+      return result == null ? emu.grasscutter.net.proto.GCGGameBusinessTypeOuterClass.GCGGameBusinessType.UNRECOGNIZED : result;
+    }
+
+    public static final int WIN_CONTROLLER_ID_FIELD_NUMBER = 11;
+    private int winControllerId_;
+    /**
+     * <code>uint32 win_controller_id = 11;</code>
+     * @return The winControllerId.
+     */
+    @java.lang.Override
+    public int getWinControllerId() {
+      return winControllerId_;
+    }
+
+    public static final int FORBID_FINISH_CHALLENGE_LIST_FIELD_NUMBER = 10;
+    private com.google.protobuf.Internal.IntList forbidFinishChallengeList_;
+    /**
+     * <code>repeated uint32 forbid_finish_challenge_list = 10;</code>
+     * @return A list containing the forbidFinishChallengeList.
+     */
+    @java.lang.Override
+    public java.util.List<java.lang.Integer>
+        getForbidFinishChallengeListList() {
+      return forbidFinishChallengeList_;
+    }
+    /**
+     * <code>repeated uint32 forbid_finish_challenge_list = 10;</code>
+     * @return The count of forbidFinishChallengeList.
+     */
+    public int getForbidFinishChallengeListCount() {
+      return forbidFinishChallengeList_.size();
+    }
+    /**
+     * <code>repeated uint32 forbid_finish_challenge_list = 10;</code>
+     * @param index The index of the element to return.
+     * @return The forbidFinishChallengeList at the given index.
+     */
+    public int getForbidFinishChallengeList(int index) {
+      return forbidFinishChallengeList_.getInt(index);
+    }
+    private int forbidFinishChallengeListMemoizedSerializedSize = -1;
+
+    public static final int REASON_FIELD_NUMBER = 4;
     private int reason_;
     /**
-     * <code>.GCGEndReason reason = 3;</code>
+     * <code>.GCGEndReason reason = 4;</code>
      * @return The enum numeric value on the wire for reason.
      */
     @java.lang.Override public int getReasonValue() {
       return reason_;
     }
     /**
-     * <code>.GCGEndReason reason = 3;</code>
+     * <code>.GCGEndReason reason = 4;</code>
      * @return The reason.
      */
     @java.lang.Override public emu.grasscutter.net.proto.GCGEndReasonOuterClass.GCGEndReason getReason() {
@@ -382,27 +478,37 @@ public final class GCGSettleNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      if (businessType_ != emu.grasscutter.net.proto.GCGGameBusinessTypeOuterClass.GCGGameBusinessType.GCG_GAME_BUSINESS_TYPE_NONE.getNumber()) {
-        output.writeEnum(2, businessType_);
-      }
-      if (reason_ != emu.grasscutter.net.proto.GCGEndReasonOuterClass.GCGEndReason.GCG_END_REASON_DEFAULT.getNumber()) {
-        output.writeEnum(3, reason_);
-      }
       if (getFinishedChallengeIdListList().size() > 0) {
-        output.writeUInt32NoTag(50);
+        output.writeUInt32NoTag(10);
         output.writeUInt32NoTag(finishedChallengeIdListMemoizedSerializedSize);
       }
       for (int i = 0; i < finishedChallengeIdList_.size(); i++) {
         output.writeUInt32NoTag(finishedChallengeIdList_.getInt(i));
       }
+      if (isWin_ != false) {
+        output.writeBool(2, isWin_);
+      }
       if (gameId_ != 0) {
-        output.writeUInt32(7, gameId_);
+        output.writeUInt32(3, gameId_);
+      }
+      if (reason_ != emu.grasscutter.net.proto.GCGEndReasonOuterClass.GCGEndReason.GCG_END_REASON_DEFAULT.getNumber()) {
+        output.writeEnum(4, reason_);
+      }
+      if (businessType_ != emu.grasscutter.net.proto.GCGGameBusinessTypeOuterClass.GCGGameBusinessType.GCG_GAME_BUSINESS_TYPE_NONE.getNumber()) {
+        output.writeEnum(5, businessType_);
       }
       for (int i = 0; i < rewardItemList_.size(); i++) {
-        output.writeMessage(9, rewardItemList_.get(i));
+        output.writeMessage(8, rewardItemList_.get(i));
       }
-      if (isWin_ != false) {
-        output.writeBool(13, isWin_);
+      if (getForbidFinishChallengeListList().size() > 0) {
+        output.writeUInt32NoTag(82);
+        output.writeUInt32NoTag(forbidFinishChallengeListMemoizedSerializedSize);
+      }
+      for (int i = 0; i < forbidFinishChallengeList_.size(); i++) {
+        output.writeUInt32NoTag(forbidFinishChallengeList_.getInt(i));
+      }
+      if (winControllerId_ != 0) {
+        output.writeUInt32(11, winControllerId_);
       }
       unknownFields.writeTo(output);
     }
@@ -413,14 +519,6 @@ public final class GCGSettleNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (businessType_ != emu.grasscutter.net.proto.GCGGameBusinessTypeOuterClass.GCGGameBusinessType.GCG_GAME_BUSINESS_TYPE_NONE.getNumber()) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(2, businessType_);
-      }
-      if (reason_ != emu.grasscutter.net.proto.GCGEndReasonOuterClass.GCGEndReason.GCG_END_REASON_DEFAULT.getNumber()) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(3, reason_);
-      }
       {
         int dataSize = 0;
         for (int i = 0; i < finishedChallengeIdList_.size(); i++) {
@@ -435,17 +533,43 @@ public final class GCGSettleNotifyOuterClass {
         }
         finishedChallengeIdListMemoizedSerializedSize = dataSize;
       }
+      if (isWin_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(2, isWin_);
+      }
       if (gameId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, gameId_);
+          .computeUInt32Size(3, gameId_);
+      }
+      if (reason_ != emu.grasscutter.net.proto.GCGEndReasonOuterClass.GCGEndReason.GCG_END_REASON_DEFAULT.getNumber()) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeEnumSize(4, reason_);
+      }
+      if (businessType_ != emu.grasscutter.net.proto.GCGGameBusinessTypeOuterClass.GCGGameBusinessType.GCG_GAME_BUSINESS_TYPE_NONE.getNumber()) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeEnumSize(5, businessType_);
       }
       for (int i = 0; i < rewardItemList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(9, rewardItemList_.get(i));
+          .computeMessageSize(8, rewardItemList_.get(i));
       }
-      if (isWin_ != false) {
+      {
+        int dataSize = 0;
+        for (int i = 0; i < forbidFinishChallengeList_.size(); i++) {
+          dataSize += com.google.protobuf.CodedOutputStream
+            .computeUInt32SizeNoTag(forbidFinishChallengeList_.getInt(i));
+        }
+        size += dataSize;
+        if (!getForbidFinishChallengeListList().isEmpty()) {
+          size += 1;
+          size += com.google.protobuf.CodedOutputStream
+              .computeInt32SizeNoTag(dataSize);
+        }
+        forbidFinishChallengeListMemoizedSerializedSize = dataSize;
+      }
+      if (winControllerId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(13, isWin_);
+          .computeUInt32Size(11, winControllerId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -462,15 +586,19 @@ public final class GCGSettleNotifyOuterClass {
       }
       emu.grasscutter.net.proto.GCGSettleNotifyOuterClass.GCGSettleNotify other = (emu.grasscutter.net.proto.GCGSettleNotifyOuterClass.GCGSettleNotify) obj;
 
-      if (getGameId()
-          != other.getGameId()) return false;
-      if (businessType_ != other.businessType_) return false;
-      if (getIsWin()
-          != other.getIsWin()) return false;
       if (!getRewardItemListList()
           .equals(other.getRewardItemListList())) return false;
       if (!getFinishedChallengeIdListList()
           .equals(other.getFinishedChallengeIdListList())) return false;
+      if (getGameId()
+          != other.getGameId()) return false;
+      if (getIsWin()
+          != other.getIsWin()) return false;
+      if (businessType_ != other.businessType_) return false;
+      if (getWinControllerId()
+          != other.getWinControllerId()) return false;
+      if (!getForbidFinishChallengeListList()
+          .equals(other.getForbidFinishChallengeListList())) return false;
       if (reason_ != other.reason_) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
@@ -483,13 +611,6 @@ public final class GCGSettleNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + GAME_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getGameId();
-      hash = (37 * hash) + BUSINESS_TYPE_FIELD_NUMBER;
-      hash = (53 * hash) + businessType_;
-      hash = (37 * hash) + IS_WIN_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsWin());
       if (getRewardItemListCount() > 0) {
         hash = (37 * hash) + REWARD_ITEM_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getRewardItemListList().hashCode();
@@ -497,6 +618,19 @@ public final class GCGSettleNotifyOuterClass {
       if (getFinishedChallengeIdListCount() > 0) {
         hash = (37 * hash) + FINISHED_CHALLENGE_ID_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getFinishedChallengeIdListList().hashCode();
+      }
+      hash = (37 * hash) + GAME_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getGameId();
+      hash = (37 * hash) + IS_WIN_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getIsWin());
+      hash = (37 * hash) + BUSINESS_TYPE_FIELD_NUMBER;
+      hash = (53 * hash) + businessType_;
+      hash = (37 * hash) + WIN_CONTROLLER_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getWinControllerId();
+      if (getForbidFinishChallengeListCount() > 0) {
+        hash = (37 * hash) + FORBID_FINISH_CHALLENGE_LIST_FIELD_NUMBER;
+        hash = (53 * hash) + getForbidFinishChallengeListList().hashCode();
       }
       hash = (37 * hash) + REASON_FIELD_NUMBER;
       hash = (53 * hash) + reason_;
@@ -597,9 +731,13 @@ public final class GCGSettleNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 7769
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 7562;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code GCGSettleNotify}
@@ -640,12 +778,6 @@ public final class GCGSettleNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        gameId_ = 0;
-
-        businessType_ = 0;
-
-        isWin_ = false;
-
         if (rewardItemListBuilder_ == null) {
           rewardItemList_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000001);
@@ -654,6 +786,16 @@ public final class GCGSettleNotifyOuterClass {
         }
         finishedChallengeIdList_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000002);
+        gameId_ = 0;
+
+        isWin_ = false;
+
+        businessType_ = 0;
+
+        winControllerId_ = 0;
+
+        forbidFinishChallengeList_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000004);
         reason_ = 0;
 
         return this;
@@ -683,9 +825,6 @@ public final class GCGSettleNotifyOuterClass {
       public emu.grasscutter.net.proto.GCGSettleNotifyOuterClass.GCGSettleNotify buildPartial() {
         emu.grasscutter.net.proto.GCGSettleNotifyOuterClass.GCGSettleNotify result = new emu.grasscutter.net.proto.GCGSettleNotifyOuterClass.GCGSettleNotify(this);
         int from_bitField0_ = bitField0_;
-        result.gameId_ = gameId_;
-        result.businessType_ = businessType_;
-        result.isWin_ = isWin_;
         if (rewardItemListBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0)) {
             rewardItemList_ = java.util.Collections.unmodifiableList(rewardItemList_);
@@ -700,6 +839,15 @@ public final class GCGSettleNotifyOuterClass {
           bitField0_ = (bitField0_ & ~0x00000002);
         }
         result.finishedChallengeIdList_ = finishedChallengeIdList_;
+        result.gameId_ = gameId_;
+        result.isWin_ = isWin_;
+        result.businessType_ = businessType_;
+        result.winControllerId_ = winControllerId_;
+        if (((bitField0_ & 0x00000004) != 0)) {
+          forbidFinishChallengeList_.makeImmutable();
+          bitField0_ = (bitField0_ & ~0x00000004);
+        }
+        result.forbidFinishChallengeList_ = forbidFinishChallengeList_;
         result.reason_ = reason_;
         onBuilt();
         return result;
@@ -749,15 +897,6 @@ public final class GCGSettleNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.GCGSettleNotifyOuterClass.GCGSettleNotify other) {
         if (other == emu.grasscutter.net.proto.GCGSettleNotifyOuterClass.GCGSettleNotify.getDefaultInstance()) return this;
-        if (other.getGameId() != 0) {
-          setGameId(other.getGameId());
-        }
-        if (other.businessType_ != 0) {
-          setBusinessTypeValue(other.getBusinessTypeValue());
-        }
-        if (other.getIsWin() != false) {
-          setIsWin(other.getIsWin());
-        }
         if (rewardItemListBuilder_ == null) {
           if (!other.rewardItemList_.isEmpty()) {
             if (rewardItemList_.isEmpty()) {
@@ -794,6 +933,28 @@ public final class GCGSettleNotifyOuterClass {
           }
           onChanged();
         }
+        if (other.getGameId() != 0) {
+          setGameId(other.getGameId());
+        }
+        if (other.getIsWin() != false) {
+          setIsWin(other.getIsWin());
+        }
+        if (other.businessType_ != 0) {
+          setBusinessTypeValue(other.getBusinessTypeValue());
+        }
+        if (other.getWinControllerId() != 0) {
+          setWinControllerId(other.getWinControllerId());
+        }
+        if (!other.forbidFinishChallengeList_.isEmpty()) {
+          if (forbidFinishChallengeList_.isEmpty()) {
+            forbidFinishChallengeList_ = other.forbidFinishChallengeList_;
+            bitField0_ = (bitField0_ & ~0x00000004);
+          } else {
+            ensureForbidFinishChallengeListIsMutable();
+            forbidFinishChallengeList_.addAll(other.forbidFinishChallengeList_);
+          }
+          onChanged();
+        }
         if (other.reason_ != 0) {
           setReasonValue(other.getReasonValue());
         }
@@ -827,122 +988,6 @@ public final class GCGSettleNotifyOuterClass {
       }
       private int bitField0_;
 
-      private int gameId_ ;
-      /**
-       * <code>uint32 game_id = 7;</code>
-       * @return The gameId.
-       */
-      @java.lang.Override
-      public int getGameId() {
-        return gameId_;
-      }
-      /**
-       * <code>uint32 game_id = 7;</code>
-       * @param value The gameId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setGameId(int value) {
-        
-        gameId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 game_id = 7;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearGameId() {
-        
-        gameId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int businessType_ = 0;
-      /**
-       * <code>.GCGGameBusinessType business_type = 2;</code>
-       * @return The enum numeric value on the wire for businessType.
-       */
-      @java.lang.Override public int getBusinessTypeValue() {
-        return businessType_;
-      }
-      /**
-       * <code>.GCGGameBusinessType business_type = 2;</code>
-       * @param value The enum numeric value on the wire for businessType to set.
-       * @return This builder for chaining.
-       */
-      public Builder setBusinessTypeValue(int value) {
-        
-        businessType_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>.GCGGameBusinessType business_type = 2;</code>
-       * @return The businessType.
-       */
-      @java.lang.Override
-      public emu.grasscutter.net.proto.GCGGameBusinessTypeOuterClass.GCGGameBusinessType getBusinessType() {
-        @SuppressWarnings("deprecation")
-        emu.grasscutter.net.proto.GCGGameBusinessTypeOuterClass.GCGGameBusinessType result = emu.grasscutter.net.proto.GCGGameBusinessTypeOuterClass.GCGGameBusinessType.valueOf(businessType_);
-        return result == null ? emu.grasscutter.net.proto.GCGGameBusinessTypeOuterClass.GCGGameBusinessType.UNRECOGNIZED : result;
-      }
-      /**
-       * <code>.GCGGameBusinessType business_type = 2;</code>
-       * @param value The businessType to set.
-       * @return This builder for chaining.
-       */
-      public Builder setBusinessType(emu.grasscutter.net.proto.GCGGameBusinessTypeOuterClass.GCGGameBusinessType value) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        
-        businessType_ = value.getNumber();
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>.GCGGameBusinessType business_type = 2;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearBusinessType() {
-        
-        businessType_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private boolean isWin_ ;
-      /**
-       * <code>bool is_win = 13;</code>
-       * @return The isWin.
-       */
-      @java.lang.Override
-      public boolean getIsWin() {
-        return isWin_;
-      }
-      /**
-       * <code>bool is_win = 13;</code>
-       * @param value The isWin to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsWin(boolean value) {
-        
-        isWin_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_win = 13;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsWin() {
-        
-        isWin_ = false;
-        onChanged();
-        return this;
-      }
-
       private java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> rewardItemList_ =
         java.util.Collections.emptyList();
       private void ensureRewardItemListIsMutable() {
@@ -956,7 +1001,7 @@ public final class GCGSettleNotifyOuterClass {
           emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder> rewardItemListBuilder_;
 
       /**
-       * <code>repeated .ItemParam reward_item_list = 9;</code>
+       * <code>repeated .ItemParam reward_item_list = 8;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> getRewardItemListList() {
         if (rewardItemListBuilder_ == null) {
@@ -966,7 +1011,7 @@ public final class GCGSettleNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .ItemParam reward_item_list = 9;</code>
+       * <code>repeated .ItemParam reward_item_list = 8;</code>
        */
       public int getRewardItemListCount() {
         if (rewardItemListBuilder_ == null) {
@@ -976,7 +1021,7 @@ public final class GCGSettleNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .ItemParam reward_item_list = 9;</code>
+       * <code>repeated .ItemParam reward_item_list = 8;</code>
        */
       public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam getRewardItemList(int index) {
         if (rewardItemListBuilder_ == null) {
@@ -986,7 +1031,7 @@ public final class GCGSettleNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .ItemParam reward_item_list = 9;</code>
+       * <code>repeated .ItemParam reward_item_list = 8;</code>
        */
       public Builder setRewardItemList(
           int index, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam value) {
@@ -1003,7 +1048,7 @@ public final class GCGSettleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ItemParam reward_item_list = 9;</code>
+       * <code>repeated .ItemParam reward_item_list = 8;</code>
        */
       public Builder setRewardItemList(
           int index, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder builderForValue) {
@@ -1017,7 +1062,7 @@ public final class GCGSettleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ItemParam reward_item_list = 9;</code>
+       * <code>repeated .ItemParam reward_item_list = 8;</code>
        */
       public Builder addRewardItemList(emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam value) {
         if (rewardItemListBuilder_ == null) {
@@ -1033,7 +1078,7 @@ public final class GCGSettleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ItemParam reward_item_list = 9;</code>
+       * <code>repeated .ItemParam reward_item_list = 8;</code>
        */
       public Builder addRewardItemList(
           int index, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam value) {
@@ -1050,7 +1095,7 @@ public final class GCGSettleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ItemParam reward_item_list = 9;</code>
+       * <code>repeated .ItemParam reward_item_list = 8;</code>
        */
       public Builder addRewardItemList(
           emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder builderForValue) {
@@ -1064,7 +1109,7 @@ public final class GCGSettleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ItemParam reward_item_list = 9;</code>
+       * <code>repeated .ItemParam reward_item_list = 8;</code>
        */
       public Builder addRewardItemList(
           int index, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder builderForValue) {
@@ -1078,7 +1123,7 @@ public final class GCGSettleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ItemParam reward_item_list = 9;</code>
+       * <code>repeated .ItemParam reward_item_list = 8;</code>
        */
       public Builder addAllRewardItemList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> values) {
@@ -1093,7 +1138,7 @@ public final class GCGSettleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ItemParam reward_item_list = 9;</code>
+       * <code>repeated .ItemParam reward_item_list = 8;</code>
        */
       public Builder clearRewardItemList() {
         if (rewardItemListBuilder_ == null) {
@@ -1106,7 +1151,7 @@ public final class GCGSettleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ItemParam reward_item_list = 9;</code>
+       * <code>repeated .ItemParam reward_item_list = 8;</code>
        */
       public Builder removeRewardItemList(int index) {
         if (rewardItemListBuilder_ == null) {
@@ -1119,14 +1164,14 @@ public final class GCGSettleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ItemParam reward_item_list = 9;</code>
+       * <code>repeated .ItemParam reward_item_list = 8;</code>
        */
       public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder getRewardItemListBuilder(
           int index) {
         return getRewardItemListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .ItemParam reward_item_list = 9;</code>
+       * <code>repeated .ItemParam reward_item_list = 8;</code>
        */
       public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder getRewardItemListOrBuilder(
           int index) {
@@ -1136,7 +1181,7 @@ public final class GCGSettleNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .ItemParam reward_item_list = 9;</code>
+       * <code>repeated .ItemParam reward_item_list = 8;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder> 
            getRewardItemListOrBuilderList() {
@@ -1147,14 +1192,14 @@ public final class GCGSettleNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .ItemParam reward_item_list = 9;</code>
+       * <code>repeated .ItemParam reward_item_list = 8;</code>
        */
       public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder addRewardItemListBuilder() {
         return getRewardItemListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.getDefaultInstance());
       }
       /**
-       * <code>repeated .ItemParam reward_item_list = 9;</code>
+       * <code>repeated .ItemParam reward_item_list = 8;</code>
        */
       public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder addRewardItemListBuilder(
           int index) {
@@ -1162,7 +1207,7 @@ public final class GCGSettleNotifyOuterClass {
             index, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.getDefaultInstance());
       }
       /**
-       * <code>repeated .ItemParam reward_item_list = 9;</code>
+       * <code>repeated .ItemParam reward_item_list = 8;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder> 
            getRewardItemListBuilderList() {
@@ -1191,7 +1236,7 @@ public final class GCGSettleNotifyOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 finished_challenge_id_list = 6;</code>
+       * <code>repeated uint32 finished_challenge_id_list = 1;</code>
        * @return A list containing the finishedChallengeIdList.
        */
       public java.util.List<java.lang.Integer>
@@ -1200,14 +1245,14 @@ public final class GCGSettleNotifyOuterClass {
                  java.util.Collections.unmodifiableList(finishedChallengeIdList_) : finishedChallengeIdList_;
       }
       /**
-       * <code>repeated uint32 finished_challenge_id_list = 6;</code>
+       * <code>repeated uint32 finished_challenge_id_list = 1;</code>
        * @return The count of finishedChallengeIdList.
        */
       public int getFinishedChallengeIdListCount() {
         return finishedChallengeIdList_.size();
       }
       /**
-       * <code>repeated uint32 finished_challenge_id_list = 6;</code>
+       * <code>repeated uint32 finished_challenge_id_list = 1;</code>
        * @param index The index of the element to return.
        * @return The finishedChallengeIdList at the given index.
        */
@@ -1215,7 +1260,7 @@ public final class GCGSettleNotifyOuterClass {
         return finishedChallengeIdList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 finished_challenge_id_list = 6;</code>
+       * <code>repeated uint32 finished_challenge_id_list = 1;</code>
        * @param index The index to set the value at.
        * @param value The finishedChallengeIdList to set.
        * @return This builder for chaining.
@@ -1228,7 +1273,7 @@ public final class GCGSettleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 finished_challenge_id_list = 6;</code>
+       * <code>repeated uint32 finished_challenge_id_list = 1;</code>
        * @param value The finishedChallengeIdList to add.
        * @return This builder for chaining.
        */
@@ -1239,7 +1284,7 @@ public final class GCGSettleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 finished_challenge_id_list = 6;</code>
+       * <code>repeated uint32 finished_challenge_id_list = 1;</code>
        * @param values The finishedChallengeIdList to add.
        * @return This builder for chaining.
        */
@@ -1252,7 +1297,7 @@ public final class GCGSettleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 finished_challenge_id_list = 6;</code>
+       * <code>repeated uint32 finished_challenge_id_list = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearFinishedChallengeIdList() {
@@ -1262,16 +1307,242 @@ public final class GCGSettleNotifyOuterClass {
         return this;
       }
 
+      private int gameId_ ;
+      /**
+       * <code>uint32 game_id = 3;</code>
+       * @return The gameId.
+       */
+      @java.lang.Override
+      public int getGameId() {
+        return gameId_;
+      }
+      /**
+       * <code>uint32 game_id = 3;</code>
+       * @param value The gameId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setGameId(int value) {
+        
+        gameId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 game_id = 3;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearGameId() {
+        
+        gameId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private boolean isWin_ ;
+      /**
+       * <code>bool is_win = 2;</code>
+       * @return The isWin.
+       */
+      @java.lang.Override
+      public boolean getIsWin() {
+        return isWin_;
+      }
+      /**
+       * <code>bool is_win = 2;</code>
+       * @param value The isWin to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIsWin(boolean value) {
+        
+        isWin_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool is_win = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsWin() {
+        
+        isWin_ = false;
+        onChanged();
+        return this;
+      }
+
+      private int businessType_ = 0;
+      /**
+       * <code>.GCGGameBusinessType business_type = 5;</code>
+       * @return The enum numeric value on the wire for businessType.
+       */
+      @java.lang.Override public int getBusinessTypeValue() {
+        return businessType_;
+      }
+      /**
+       * <code>.GCGGameBusinessType business_type = 5;</code>
+       * @param value The enum numeric value on the wire for businessType to set.
+       * @return This builder for chaining.
+       */
+      public Builder setBusinessTypeValue(int value) {
+        
+        businessType_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.GCGGameBusinessType business_type = 5;</code>
+       * @return The businessType.
+       */
+      @java.lang.Override
+      public emu.grasscutter.net.proto.GCGGameBusinessTypeOuterClass.GCGGameBusinessType getBusinessType() {
+        @SuppressWarnings("deprecation")
+        emu.grasscutter.net.proto.GCGGameBusinessTypeOuterClass.GCGGameBusinessType result = emu.grasscutter.net.proto.GCGGameBusinessTypeOuterClass.GCGGameBusinessType.valueOf(businessType_);
+        return result == null ? emu.grasscutter.net.proto.GCGGameBusinessTypeOuterClass.GCGGameBusinessType.UNRECOGNIZED : result;
+      }
+      /**
+       * <code>.GCGGameBusinessType business_type = 5;</code>
+       * @param value The businessType to set.
+       * @return This builder for chaining.
+       */
+      public Builder setBusinessType(emu.grasscutter.net.proto.GCGGameBusinessTypeOuterClass.GCGGameBusinessType value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        
+        businessType_ = value.getNumber();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.GCGGameBusinessType business_type = 5;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearBusinessType() {
+        
+        businessType_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int winControllerId_ ;
+      /**
+       * <code>uint32 win_controller_id = 11;</code>
+       * @return The winControllerId.
+       */
+      @java.lang.Override
+      public int getWinControllerId() {
+        return winControllerId_;
+      }
+      /**
+       * <code>uint32 win_controller_id = 11;</code>
+       * @param value The winControllerId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setWinControllerId(int value) {
+        
+        winControllerId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 win_controller_id = 11;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearWinControllerId() {
+        
+        winControllerId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private com.google.protobuf.Internal.IntList forbidFinishChallengeList_ = emptyIntList();
+      private void ensureForbidFinishChallengeListIsMutable() {
+        if (!((bitField0_ & 0x00000004) != 0)) {
+          forbidFinishChallengeList_ = mutableCopy(forbidFinishChallengeList_);
+          bitField0_ |= 0x00000004;
+         }
+      }
+      /**
+       * <code>repeated uint32 forbid_finish_challenge_list = 10;</code>
+       * @return A list containing the forbidFinishChallengeList.
+       */
+      public java.util.List<java.lang.Integer>
+          getForbidFinishChallengeListList() {
+        return ((bitField0_ & 0x00000004) != 0) ?
+                 java.util.Collections.unmodifiableList(forbidFinishChallengeList_) : forbidFinishChallengeList_;
+      }
+      /**
+       * <code>repeated uint32 forbid_finish_challenge_list = 10;</code>
+       * @return The count of forbidFinishChallengeList.
+       */
+      public int getForbidFinishChallengeListCount() {
+        return forbidFinishChallengeList_.size();
+      }
+      /**
+       * <code>repeated uint32 forbid_finish_challenge_list = 10;</code>
+       * @param index The index of the element to return.
+       * @return The forbidFinishChallengeList at the given index.
+       */
+      public int getForbidFinishChallengeList(int index) {
+        return forbidFinishChallengeList_.getInt(index);
+      }
+      /**
+       * <code>repeated uint32 forbid_finish_challenge_list = 10;</code>
+       * @param index The index to set the value at.
+       * @param value The forbidFinishChallengeList to set.
+       * @return This builder for chaining.
+       */
+      public Builder setForbidFinishChallengeList(
+          int index, int value) {
+        ensureForbidFinishChallengeListIsMutable();
+        forbidFinishChallengeList_.setInt(index, value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint32 forbid_finish_challenge_list = 10;</code>
+       * @param value The forbidFinishChallengeList to add.
+       * @return This builder for chaining.
+       */
+      public Builder addForbidFinishChallengeList(int value) {
+        ensureForbidFinishChallengeListIsMutable();
+        forbidFinishChallengeList_.addInt(value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint32 forbid_finish_challenge_list = 10;</code>
+       * @param values The forbidFinishChallengeList to add.
+       * @return This builder for chaining.
+       */
+      public Builder addAllForbidFinishChallengeList(
+          java.lang.Iterable<? extends java.lang.Integer> values) {
+        ensureForbidFinishChallengeListIsMutable();
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, forbidFinishChallengeList_);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint32 forbid_finish_challenge_list = 10;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearForbidFinishChallengeList() {
+        forbidFinishChallengeList_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000004);
+        onChanged();
+        return this;
+      }
+
       private int reason_ = 0;
       /**
-       * <code>.GCGEndReason reason = 3;</code>
+       * <code>.GCGEndReason reason = 4;</code>
        * @return The enum numeric value on the wire for reason.
        */
       @java.lang.Override public int getReasonValue() {
         return reason_;
       }
       /**
-       * <code>.GCGEndReason reason = 3;</code>
+       * <code>.GCGEndReason reason = 4;</code>
        * @param value The enum numeric value on the wire for reason to set.
        * @return This builder for chaining.
        */
@@ -1282,7 +1553,7 @@ public final class GCGSettleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.GCGEndReason reason = 3;</code>
+       * <code>.GCGEndReason reason = 4;</code>
        * @return The reason.
        */
       @java.lang.Override
@@ -1292,7 +1563,7 @@ public final class GCGSettleNotifyOuterClass {
         return result == null ? emu.grasscutter.net.proto.GCGEndReasonOuterClass.GCGEndReason.UNRECOGNIZED : result;
       }
       /**
-       * <code>.GCGEndReason reason = 3;</code>
+       * <code>.GCGEndReason reason = 4;</code>
        * @param value The reason to set.
        * @return This builder for chaining.
        */
@@ -1306,7 +1577,7 @@ public final class GCGSettleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.GCGEndReason reason = 3;</code>
+       * <code>.GCGEndReason reason = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearReason() {
@@ -1384,13 +1655,14 @@ public final class GCGSettleNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n\025GCGSettleNotify.proto\032\022GCGEndReason.pr" +
       "oto\032\031GCGGameBusinessType.proto\032\017ItemPara" +
-      "m.proto\"\310\001\n\017GCGSettleNotify\022\017\n\007game_id\030\007" +
-      " \001(\r\022+\n\rbusiness_type\030\002 \001(\0162\024.GCGGameBus" +
-      "inessType\022\016\n\006is_win\030\r \001(\010\022$\n\020reward_item" +
-      "_list\030\t \003(\0132\n.ItemParam\022\"\n\032finished_chal" +
-      "lenge_id_list\030\006 \003(\r\022\035\n\006reason\030\003 \001(\0162\r.GC" +
-      "GEndReasonB\033\n\031emu.grasscutter.net.protob" +
-      "\006proto3"
+      "m.proto\"\211\002\n\017GCGSettleNotify\022$\n\020reward_it" +
+      "em_list\030\010 \003(\0132\n.ItemParam\022\"\n\032finished_ch" +
+      "allenge_id_list\030\001 \003(\r\022\017\n\007game_id\030\003 \001(\r\022\016" +
+      "\n\006is_win\030\002 \001(\010\022+\n\rbusiness_type\030\005 \001(\0162\024." +
+      "GCGGameBusinessType\022\031\n\021win_controller_id" +
+      "\030\013 \001(\r\022$\n\034forbid_finish_challenge_list\030\n" +
+      " \003(\r\022\035\n\006reason\030\004 \001(\0162\r.GCGEndReasonB\033\n\031e" +
+      "mu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -1404,7 +1676,7 @@ public final class GCGSettleNotifyOuterClass {
     internal_static_GCGSettleNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GCGSettleNotify_descriptor,
-        new java.lang.String[] { "GameId", "BusinessType", "IsWin", "RewardItemList", "FinishedChallengeIdList", "Reason", });
+        new java.lang.String[] { "RewardItemList", "FinishedChallengeIdList", "GameId", "IsWin", "BusinessType", "WinControllerId", "ForbidFinishChallengeList", "Reason", });
     emu.grasscutter.net.proto.GCGEndReasonOuterClass.getDescriptor();
     emu.grasscutter.net.proto.GCGGameBusinessTypeOuterClass.getDescriptor();
     emu.grasscutter.net.proto.ItemParamOuterClass.getDescriptor();

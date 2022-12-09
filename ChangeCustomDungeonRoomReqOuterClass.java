@@ -19,17 +19,21 @@ public final class ChangeCustomDungeonRoomReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 room_id = 4;</code>
+     * <code>uint32 room_id = 8;</code>
      * @return The roomId.
      */
     int getRoomId();
   }
   /**
    * <pre>
-   * CmdId: 6222
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 6217;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code ChangeCustomDungeonRoomReq}
@@ -76,7 +80,7 @@ public final class ChangeCustomDungeonRoomReqOuterClass {
             case 0:
               done = true;
               break;
-            case 32: {
+            case 64: {
 
               roomId_ = input.readUInt32();
               break;
@@ -113,10 +117,10 @@ public final class ChangeCustomDungeonRoomReqOuterClass {
               emu.grasscutter.net.proto.ChangeCustomDungeonRoomReqOuterClass.ChangeCustomDungeonRoomReq.class, emu.grasscutter.net.proto.ChangeCustomDungeonRoomReqOuterClass.ChangeCustomDungeonRoomReq.Builder.class);
     }
 
-    public static final int ROOM_ID_FIELD_NUMBER = 4;
+    public static final int ROOM_ID_FIELD_NUMBER = 8;
     private int roomId_;
     /**
-     * <code>uint32 room_id = 4;</code>
+     * <code>uint32 room_id = 8;</code>
      * @return The roomId.
      */
     @java.lang.Override
@@ -139,7 +143,7 @@ public final class ChangeCustomDungeonRoomReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (roomId_ != 0) {
-        output.writeUInt32(4, roomId_);
+        output.writeUInt32(8, roomId_);
       }
       unknownFields.writeTo(output);
     }
@@ -152,7 +156,7 @@ public final class ChangeCustomDungeonRoomReqOuterClass {
       size = 0;
       if (roomId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, roomId_);
+          .computeUInt32Size(8, roomId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -281,10 +285,14 @@ public final class ChangeCustomDungeonRoomReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 6222
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 6217;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code ChangeCustomDungeonRoomReq}
@@ -435,7 +443,7 @@ public final class ChangeCustomDungeonRoomReqOuterClass {
 
       private int roomId_ ;
       /**
-       * <code>uint32 room_id = 4;</code>
+       * <code>uint32 room_id = 8;</code>
        * @return The roomId.
        */
       @java.lang.Override
@@ -443,7 +451,7 @@ public final class ChangeCustomDungeonRoomReqOuterClass {
         return roomId_;
       }
       /**
-       * <code>uint32 room_id = 4;</code>
+       * <code>uint32 room_id = 8;</code>
        * @param value The roomId to set.
        * @return This builder for chaining.
        */
@@ -454,7 +462,7 @@ public final class ChangeCustomDungeonRoomReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 room_id = 4;</code>
+       * <code>uint32 room_id = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearRoomId() {
@@ -531,7 +539,7 @@ public final class ChangeCustomDungeonRoomReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n ChangeCustomDungeonRoomReq.proto\"-\n\032Ch" +
-      "angeCustomDungeonRoomReq\022\017\n\007room_id\030\004 \001(" +
+      "angeCustomDungeonRoomReq\022\017\n\007room_id\030\010 \001(" +
       "\rB\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

@@ -19,6 +19,12 @@ public final class GetAllSceneGalleryInfoRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
+     * <code>int32 retcode = 3;</code>
+     * @return The retcode.
+     */
+    int getRetcode();
+
+    /**
      * <code>repeated .SceneGalleryInfo gallery_info_list = 12;</code>
      */
     java.util.List<emu.grasscutter.net.proto.SceneGalleryInfoOuterClass.SceneGalleryInfo> 
@@ -41,18 +47,16 @@ public final class GetAllSceneGalleryInfoRspOuterClass {
      */
     emu.grasscutter.net.proto.SceneGalleryInfoOuterClass.SceneGalleryInfoOrBuilder getGalleryInfoListOrBuilder(
         int index);
-
-    /**
-     * <code>int32 retcode = 2;</code>
-     * @return The retcode.
-     */
-    int getRetcode();
   }
   /**
    * <pre>
-   * CmdId: 5590
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 5547;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code GetAllSceneGalleryInfoRsp}
@@ -101,7 +105,7 @@ public final class GetAllSceneGalleryInfoRspOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
+            case 24: {
 
               retcode_ = input.readInt32();
               break;
@@ -150,6 +154,17 @@ public final class GetAllSceneGalleryInfoRspOuterClass {
               emu.grasscutter.net.proto.GetAllSceneGalleryInfoRspOuterClass.GetAllSceneGalleryInfoRsp.class, emu.grasscutter.net.proto.GetAllSceneGalleryInfoRspOuterClass.GetAllSceneGalleryInfoRsp.Builder.class);
     }
 
+    public static final int RETCODE_FIELD_NUMBER = 3;
+    private int retcode_;
+    /**
+     * <code>int32 retcode = 3;</code>
+     * @return The retcode.
+     */
+    @java.lang.Override
+    public int getRetcode() {
+      return retcode_;
+    }
+
     public static final int GALLERY_INFO_LIST_FIELD_NUMBER = 12;
     private java.util.List<emu.grasscutter.net.proto.SceneGalleryInfoOuterClass.SceneGalleryInfo> galleryInfoList_;
     /**
@@ -190,17 +205,6 @@ public final class GetAllSceneGalleryInfoRspOuterClass {
       return galleryInfoList_.get(index);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 2;
-    private int retcode_;
-    /**
-     * <code>int32 retcode = 2;</code>
-     * @return The retcode.
-     */
-    @java.lang.Override
-    public int getRetcode() {
-      return retcode_;
-    }
-
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
     public final boolean isInitialized() {
@@ -216,7 +220,7 @@ public final class GetAllSceneGalleryInfoRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (retcode_ != 0) {
-        output.writeInt32(2, retcode_);
+        output.writeInt32(3, retcode_);
       }
       for (int i = 0; i < galleryInfoList_.size(); i++) {
         output.writeMessage(12, galleryInfoList_.get(i));
@@ -232,7 +236,7 @@ public final class GetAllSceneGalleryInfoRspOuterClass {
       size = 0;
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(2, retcode_);
+          .computeInt32Size(3, retcode_);
       }
       for (int i = 0; i < galleryInfoList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
@@ -253,10 +257,10 @@ public final class GetAllSceneGalleryInfoRspOuterClass {
       }
       emu.grasscutter.net.proto.GetAllSceneGalleryInfoRspOuterClass.GetAllSceneGalleryInfoRsp other = (emu.grasscutter.net.proto.GetAllSceneGalleryInfoRspOuterClass.GetAllSceneGalleryInfoRsp) obj;
 
-      if (!getGalleryInfoListList()
-          .equals(other.getGalleryInfoListList())) return false;
       if (getRetcode()
           != other.getRetcode()) return false;
+      if (!getGalleryInfoListList()
+          .equals(other.getGalleryInfoListList())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -268,12 +272,12 @@ public final class GetAllSceneGalleryInfoRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
+      hash = (53 * hash) + getRetcode();
       if (getGalleryInfoListCount() > 0) {
         hash = (37 * hash) + GALLERY_INFO_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getGalleryInfoListList().hashCode();
       }
-      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
-      hash = (53 * hash) + getRetcode();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -371,9 +375,13 @@ public final class GetAllSceneGalleryInfoRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 5590
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 5547;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code GetAllSceneGalleryInfoRsp}
@@ -414,14 +422,14 @@ public final class GetAllSceneGalleryInfoRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        retcode_ = 0;
+
         if (galleryInfoListBuilder_ == null) {
           galleryInfoList_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000001);
         } else {
           galleryInfoListBuilder_.clear();
         }
-        retcode_ = 0;
-
         return this;
       }
 
@@ -449,6 +457,7 @@ public final class GetAllSceneGalleryInfoRspOuterClass {
       public emu.grasscutter.net.proto.GetAllSceneGalleryInfoRspOuterClass.GetAllSceneGalleryInfoRsp buildPartial() {
         emu.grasscutter.net.proto.GetAllSceneGalleryInfoRspOuterClass.GetAllSceneGalleryInfoRsp result = new emu.grasscutter.net.proto.GetAllSceneGalleryInfoRspOuterClass.GetAllSceneGalleryInfoRsp(this);
         int from_bitField0_ = bitField0_;
+        result.retcode_ = retcode_;
         if (galleryInfoListBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0)) {
             galleryInfoList_ = java.util.Collections.unmodifiableList(galleryInfoList_);
@@ -458,7 +467,6 @@ public final class GetAllSceneGalleryInfoRspOuterClass {
         } else {
           result.galleryInfoList_ = galleryInfoListBuilder_.build();
         }
-        result.retcode_ = retcode_;
         onBuilt();
         return result;
       }
@@ -507,6 +515,9 @@ public final class GetAllSceneGalleryInfoRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.GetAllSceneGalleryInfoRspOuterClass.GetAllSceneGalleryInfoRsp other) {
         if (other == emu.grasscutter.net.proto.GetAllSceneGalleryInfoRspOuterClass.GetAllSceneGalleryInfoRsp.getDefaultInstance()) return this;
+        if (other.getRetcode() != 0) {
+          setRetcode(other.getRetcode());
+        }
         if (galleryInfoListBuilder_ == null) {
           if (!other.galleryInfoList_.isEmpty()) {
             if (galleryInfoList_.isEmpty()) {
@@ -532,9 +543,6 @@ public final class GetAllSceneGalleryInfoRspOuterClass {
               galleryInfoListBuilder_.addAllMessages(other.galleryInfoList_);
             }
           }
-        }
-        if (other.getRetcode() != 0) {
-          setRetcode(other.getRetcode());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -565,6 +573,37 @@ public final class GetAllSceneGalleryInfoRspOuterClass {
         return this;
       }
       private int bitField0_;
+
+      private int retcode_ ;
+      /**
+       * <code>int32 retcode = 3;</code>
+       * @return The retcode.
+       */
+      @java.lang.Override
+      public int getRetcode() {
+        return retcode_;
+      }
+      /**
+       * <code>int32 retcode = 3;</code>
+       * @param value The retcode to set.
+       * @return This builder for chaining.
+       */
+      public Builder setRetcode(int value) {
+        
+        retcode_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 retcode = 3;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearRetcode() {
+        
+        retcode_ = 0;
+        onChanged();
+        return this;
+      }
 
       private java.util.List<emu.grasscutter.net.proto.SceneGalleryInfoOuterClass.SceneGalleryInfo> galleryInfoList_ =
         java.util.Collections.emptyList();
@@ -805,37 +844,6 @@ public final class GetAllSceneGalleryInfoRspOuterClass {
         }
         return galleryInfoListBuilder_;
       }
-
-      private int retcode_ ;
-      /**
-       * <code>int32 retcode = 2;</code>
-       * @return The retcode.
-       */
-      @java.lang.Override
-      public int getRetcode() {
-        return retcode_;
-      }
-      /**
-       * <code>int32 retcode = 2;</code>
-       * @param value The retcode to set.
-       * @return This builder for chaining.
-       */
-      public Builder setRetcode(int value) {
-        
-        retcode_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>int32 retcode = 2;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearRetcode() {
-        
-        retcode_ = 0;
-        onChanged();
-        return this;
-      }
       @java.lang.Override
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
@@ -905,8 +913,8 @@ public final class GetAllSceneGalleryInfoRspOuterClass {
     java.lang.String[] descriptorData = {
       "\n\037GetAllSceneGalleryInfoRsp.proto\032\026Scene" +
       "GalleryInfo.proto\"Z\n\031GetAllSceneGalleryI" +
-      "nfoRsp\022,\n\021gallery_info_list\030\014 \003(\0132\021.Scen" +
-      "eGalleryInfo\022\017\n\007retcode\030\002 \001(\005B\033\n\031emu.gra" +
+      "nfoRsp\022\017\n\007retcode\030\003 \001(\005\022,\n\021gallery_info_" +
+      "list\030\014 \003(\0132\021.SceneGalleryInfoB\033\n\031emu.gra" +
       "sscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -919,7 +927,7 @@ public final class GetAllSceneGalleryInfoRspOuterClass {
     internal_static_GetAllSceneGalleryInfoRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GetAllSceneGalleryInfoRsp_descriptor,
-        new java.lang.String[] { "GalleryInfoList", "Retcode", });
+        new java.lang.String[] { "Retcode", "GalleryInfoList", });
     emu.grasscutter.net.proto.SceneGalleryInfoOuterClass.getDescriptor();
   }
 

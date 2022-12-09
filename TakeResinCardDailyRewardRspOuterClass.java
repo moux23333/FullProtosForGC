@@ -19,46 +19,50 @@ public final class TakeResinCardDailyRewardRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .ItemParam item_vec = 6;</code>
-     */
-    java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> 
-        getItemVecList();
-    /**
-     * <code>repeated .ItemParam item_vec = 6;</code>
-     */
-    emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam getItemVec(int index);
-    /**
-     * <code>repeated .ItemParam item_vec = 6;</code>
-     */
-    int getItemVecCount();
-    /**
-     * <code>repeated .ItemParam item_vec = 6;</code>
-     */
-    java.util.List<? extends emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder> 
-        getItemVecOrBuilderList();
-    /**
-     * <code>repeated .ItemParam item_vec = 6;</code>
-     */
-    emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder getItemVecOrBuilder(
-        int index);
-
-    /**
      * <code>int32 retcode = 4;</code>
      * @return The retcode.
      */
     int getRetcode();
 
     /**
-     * <code>uint32 product_config_id = 12;</code>
+     * <code>repeated .ItemParam item_vec = 15;</code>
+     */
+    java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> 
+        getItemVecList();
+    /**
+     * <code>repeated .ItemParam item_vec = 15;</code>
+     */
+    emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam getItemVec(int index);
+    /**
+     * <code>repeated .ItemParam item_vec = 15;</code>
+     */
+    int getItemVecCount();
+    /**
+     * <code>repeated .ItemParam item_vec = 15;</code>
+     */
+    java.util.List<? extends emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder> 
+        getItemVecOrBuilderList();
+    /**
+     * <code>repeated .ItemParam item_vec = 15;</code>
+     */
+    emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder getItemVecOrBuilder(
+        int index);
+
+    /**
+     * <code>uint32 product_config_id = 13;</code>
      * @return The productConfigId.
      */
     int getProductConfigId();
   }
   /**
    * <pre>
-   * CmdId: 4144
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 4112;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code TakeResinCardDailyRewardRsp}
@@ -112,18 +116,18 @@ public final class TakeResinCardDailyRewardRspOuterClass {
               retcode_ = input.readInt32();
               break;
             }
-            case 50: {
+            case 104: {
+
+              productConfigId_ = input.readUInt32();
+              break;
+            }
+            case 122: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 itemVec_ = new java.util.ArrayList<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam>();
                 mutable_bitField0_ |= 0x00000001;
               }
               itemVec_.add(
                   input.readMessage(emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.parser(), extensionRegistry));
-              break;
-            }
-            case 96: {
-
-              productConfigId_ = input.readUInt32();
               break;
             }
             default: {
@@ -161,46 +165,6 @@ public final class TakeResinCardDailyRewardRspOuterClass {
               emu.grasscutter.net.proto.TakeResinCardDailyRewardRspOuterClass.TakeResinCardDailyRewardRsp.class, emu.grasscutter.net.proto.TakeResinCardDailyRewardRspOuterClass.TakeResinCardDailyRewardRsp.Builder.class);
     }
 
-    public static final int ITEM_VEC_FIELD_NUMBER = 6;
-    private java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> itemVec_;
-    /**
-     * <code>repeated .ItemParam item_vec = 6;</code>
-     */
-    @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> getItemVecList() {
-      return itemVec_;
-    }
-    /**
-     * <code>repeated .ItemParam item_vec = 6;</code>
-     */
-    @java.lang.Override
-    public java.util.List<? extends emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder> 
-        getItemVecOrBuilderList() {
-      return itemVec_;
-    }
-    /**
-     * <code>repeated .ItemParam item_vec = 6;</code>
-     */
-    @java.lang.Override
-    public int getItemVecCount() {
-      return itemVec_.size();
-    }
-    /**
-     * <code>repeated .ItemParam item_vec = 6;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam getItemVec(int index) {
-      return itemVec_.get(index);
-    }
-    /**
-     * <code>repeated .ItemParam item_vec = 6;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder getItemVecOrBuilder(
-        int index) {
-      return itemVec_.get(index);
-    }
-
     public static final int RETCODE_FIELD_NUMBER = 4;
     private int retcode_;
     /**
@@ -212,10 +176,50 @@ public final class TakeResinCardDailyRewardRspOuterClass {
       return retcode_;
     }
 
-    public static final int PRODUCT_CONFIG_ID_FIELD_NUMBER = 12;
+    public static final int ITEM_VEC_FIELD_NUMBER = 15;
+    private java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> itemVec_;
+    /**
+     * <code>repeated .ItemParam item_vec = 15;</code>
+     */
+    @java.lang.Override
+    public java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> getItemVecList() {
+      return itemVec_;
+    }
+    /**
+     * <code>repeated .ItemParam item_vec = 15;</code>
+     */
+    @java.lang.Override
+    public java.util.List<? extends emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder> 
+        getItemVecOrBuilderList() {
+      return itemVec_;
+    }
+    /**
+     * <code>repeated .ItemParam item_vec = 15;</code>
+     */
+    @java.lang.Override
+    public int getItemVecCount() {
+      return itemVec_.size();
+    }
+    /**
+     * <code>repeated .ItemParam item_vec = 15;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam getItemVec(int index) {
+      return itemVec_.get(index);
+    }
+    /**
+     * <code>repeated .ItemParam item_vec = 15;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder getItemVecOrBuilder(
+        int index) {
+      return itemVec_.get(index);
+    }
+
+    public static final int PRODUCT_CONFIG_ID_FIELD_NUMBER = 13;
     private int productConfigId_;
     /**
-     * <code>uint32 product_config_id = 12;</code>
+     * <code>uint32 product_config_id = 13;</code>
      * @return The productConfigId.
      */
     @java.lang.Override
@@ -240,11 +244,11 @@ public final class TakeResinCardDailyRewardRspOuterClass {
       if (retcode_ != 0) {
         output.writeInt32(4, retcode_);
       }
-      for (int i = 0; i < itemVec_.size(); i++) {
-        output.writeMessage(6, itemVec_.get(i));
-      }
       if (productConfigId_ != 0) {
-        output.writeUInt32(12, productConfigId_);
+        output.writeUInt32(13, productConfigId_);
+      }
+      for (int i = 0; i < itemVec_.size(); i++) {
+        output.writeMessage(15, itemVec_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -259,13 +263,13 @@ public final class TakeResinCardDailyRewardRspOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeInt32Size(4, retcode_);
       }
-      for (int i = 0; i < itemVec_.size(); i++) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(6, itemVec_.get(i));
-      }
       if (productConfigId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, productConfigId_);
+          .computeUInt32Size(13, productConfigId_);
+      }
+      for (int i = 0; i < itemVec_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(15, itemVec_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -282,10 +286,10 @@ public final class TakeResinCardDailyRewardRspOuterClass {
       }
       emu.grasscutter.net.proto.TakeResinCardDailyRewardRspOuterClass.TakeResinCardDailyRewardRsp other = (emu.grasscutter.net.proto.TakeResinCardDailyRewardRspOuterClass.TakeResinCardDailyRewardRsp) obj;
 
-      if (!getItemVecList()
-          .equals(other.getItemVecList())) return false;
       if (getRetcode()
           != other.getRetcode()) return false;
+      if (!getItemVecList()
+          .equals(other.getItemVecList())) return false;
       if (getProductConfigId()
           != other.getProductConfigId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
@@ -299,12 +303,12 @@ public final class TakeResinCardDailyRewardRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
+      hash = (53 * hash) + getRetcode();
       if (getItemVecCount() > 0) {
         hash = (37 * hash) + ITEM_VEC_FIELD_NUMBER;
         hash = (53 * hash) + getItemVecList().hashCode();
       }
-      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
-      hash = (53 * hash) + getRetcode();
       hash = (37 * hash) + PRODUCT_CONFIG_ID_FIELD_NUMBER;
       hash = (53 * hash) + getProductConfigId();
       hash = (29 * hash) + unknownFields.hashCode();
@@ -404,9 +408,13 @@ public final class TakeResinCardDailyRewardRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 4144
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 4112;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code TakeResinCardDailyRewardRsp}
@@ -447,14 +455,14 @@ public final class TakeResinCardDailyRewardRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        retcode_ = 0;
+
         if (itemVecBuilder_ == null) {
           itemVec_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000001);
         } else {
           itemVecBuilder_.clear();
         }
-        retcode_ = 0;
-
         productConfigId_ = 0;
 
         return this;
@@ -484,6 +492,7 @@ public final class TakeResinCardDailyRewardRspOuterClass {
       public emu.grasscutter.net.proto.TakeResinCardDailyRewardRspOuterClass.TakeResinCardDailyRewardRsp buildPartial() {
         emu.grasscutter.net.proto.TakeResinCardDailyRewardRspOuterClass.TakeResinCardDailyRewardRsp result = new emu.grasscutter.net.proto.TakeResinCardDailyRewardRspOuterClass.TakeResinCardDailyRewardRsp(this);
         int from_bitField0_ = bitField0_;
+        result.retcode_ = retcode_;
         if (itemVecBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0)) {
             itemVec_ = java.util.Collections.unmodifiableList(itemVec_);
@@ -493,7 +502,6 @@ public final class TakeResinCardDailyRewardRspOuterClass {
         } else {
           result.itemVec_ = itemVecBuilder_.build();
         }
-        result.retcode_ = retcode_;
         result.productConfigId_ = productConfigId_;
         onBuilt();
         return result;
@@ -543,6 +551,9 @@ public final class TakeResinCardDailyRewardRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.TakeResinCardDailyRewardRspOuterClass.TakeResinCardDailyRewardRsp other) {
         if (other == emu.grasscutter.net.proto.TakeResinCardDailyRewardRspOuterClass.TakeResinCardDailyRewardRsp.getDefaultInstance()) return this;
+        if (other.getRetcode() != 0) {
+          setRetcode(other.getRetcode());
+        }
         if (itemVecBuilder_ == null) {
           if (!other.itemVec_.isEmpty()) {
             if (itemVec_.isEmpty()) {
@@ -568,9 +579,6 @@ public final class TakeResinCardDailyRewardRspOuterClass {
               itemVecBuilder_.addAllMessages(other.itemVec_);
             }
           }
-        }
-        if (other.getRetcode() != 0) {
-          setRetcode(other.getRetcode());
         }
         if (other.getProductConfigId() != 0) {
           setProductConfigId(other.getProductConfigId());
@@ -605,246 +613,6 @@ public final class TakeResinCardDailyRewardRspOuterClass {
       }
       private int bitField0_;
 
-      private java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> itemVec_ =
-        java.util.Collections.emptyList();
-      private void ensureItemVecIsMutable() {
-        if (!((bitField0_ & 0x00000001) != 0)) {
-          itemVec_ = new java.util.ArrayList<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam>(itemVec_);
-          bitField0_ |= 0x00000001;
-         }
-      }
-
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder> itemVecBuilder_;
-
-      /**
-       * <code>repeated .ItemParam item_vec = 6;</code>
-       */
-      public java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> getItemVecList() {
-        if (itemVecBuilder_ == null) {
-          return java.util.Collections.unmodifiableList(itemVec_);
-        } else {
-          return itemVecBuilder_.getMessageList();
-        }
-      }
-      /**
-       * <code>repeated .ItemParam item_vec = 6;</code>
-       */
-      public int getItemVecCount() {
-        if (itemVecBuilder_ == null) {
-          return itemVec_.size();
-        } else {
-          return itemVecBuilder_.getCount();
-        }
-      }
-      /**
-       * <code>repeated .ItemParam item_vec = 6;</code>
-       */
-      public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam getItemVec(int index) {
-        if (itemVecBuilder_ == null) {
-          return itemVec_.get(index);
-        } else {
-          return itemVecBuilder_.getMessage(index);
-        }
-      }
-      /**
-       * <code>repeated .ItemParam item_vec = 6;</code>
-       */
-      public Builder setItemVec(
-          int index, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam value) {
-        if (itemVecBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureItemVecIsMutable();
-          itemVec_.set(index, value);
-          onChanged();
-        } else {
-          itemVecBuilder_.setMessage(index, value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .ItemParam item_vec = 6;</code>
-       */
-      public Builder setItemVec(
-          int index, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder builderForValue) {
-        if (itemVecBuilder_ == null) {
-          ensureItemVecIsMutable();
-          itemVec_.set(index, builderForValue.build());
-          onChanged();
-        } else {
-          itemVecBuilder_.setMessage(index, builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .ItemParam item_vec = 6;</code>
-       */
-      public Builder addItemVec(emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam value) {
-        if (itemVecBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureItemVecIsMutable();
-          itemVec_.add(value);
-          onChanged();
-        } else {
-          itemVecBuilder_.addMessage(value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .ItemParam item_vec = 6;</code>
-       */
-      public Builder addItemVec(
-          int index, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam value) {
-        if (itemVecBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureItemVecIsMutable();
-          itemVec_.add(index, value);
-          onChanged();
-        } else {
-          itemVecBuilder_.addMessage(index, value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .ItemParam item_vec = 6;</code>
-       */
-      public Builder addItemVec(
-          emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder builderForValue) {
-        if (itemVecBuilder_ == null) {
-          ensureItemVecIsMutable();
-          itemVec_.add(builderForValue.build());
-          onChanged();
-        } else {
-          itemVecBuilder_.addMessage(builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .ItemParam item_vec = 6;</code>
-       */
-      public Builder addItemVec(
-          int index, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder builderForValue) {
-        if (itemVecBuilder_ == null) {
-          ensureItemVecIsMutable();
-          itemVec_.add(index, builderForValue.build());
-          onChanged();
-        } else {
-          itemVecBuilder_.addMessage(index, builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .ItemParam item_vec = 6;</code>
-       */
-      public Builder addAllItemVec(
-          java.lang.Iterable<? extends emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> values) {
-        if (itemVecBuilder_ == null) {
-          ensureItemVecIsMutable();
-          com.google.protobuf.AbstractMessageLite.Builder.addAll(
-              values, itemVec_);
-          onChanged();
-        } else {
-          itemVecBuilder_.addAllMessages(values);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .ItemParam item_vec = 6;</code>
-       */
-      public Builder clearItemVec() {
-        if (itemVecBuilder_ == null) {
-          itemVec_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000001);
-          onChanged();
-        } else {
-          itemVecBuilder_.clear();
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .ItemParam item_vec = 6;</code>
-       */
-      public Builder removeItemVec(int index) {
-        if (itemVecBuilder_ == null) {
-          ensureItemVecIsMutable();
-          itemVec_.remove(index);
-          onChanged();
-        } else {
-          itemVecBuilder_.remove(index);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .ItemParam item_vec = 6;</code>
-       */
-      public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder getItemVecBuilder(
-          int index) {
-        return getItemVecFieldBuilder().getBuilder(index);
-      }
-      /**
-       * <code>repeated .ItemParam item_vec = 6;</code>
-       */
-      public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder getItemVecOrBuilder(
-          int index) {
-        if (itemVecBuilder_ == null) {
-          return itemVec_.get(index);  } else {
-          return itemVecBuilder_.getMessageOrBuilder(index);
-        }
-      }
-      /**
-       * <code>repeated .ItemParam item_vec = 6;</code>
-       */
-      public java.util.List<? extends emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder> 
-           getItemVecOrBuilderList() {
-        if (itemVecBuilder_ != null) {
-          return itemVecBuilder_.getMessageOrBuilderList();
-        } else {
-          return java.util.Collections.unmodifiableList(itemVec_);
-        }
-      }
-      /**
-       * <code>repeated .ItemParam item_vec = 6;</code>
-       */
-      public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder addItemVecBuilder() {
-        return getItemVecFieldBuilder().addBuilder(
-            emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.getDefaultInstance());
-      }
-      /**
-       * <code>repeated .ItemParam item_vec = 6;</code>
-       */
-      public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder addItemVecBuilder(
-          int index) {
-        return getItemVecFieldBuilder().addBuilder(
-            index, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.getDefaultInstance());
-      }
-      /**
-       * <code>repeated .ItemParam item_vec = 6;</code>
-       */
-      public java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder> 
-           getItemVecBuilderList() {
-        return getItemVecFieldBuilder().getBuilderList();
-      }
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder> 
-          getItemVecFieldBuilder() {
-        if (itemVecBuilder_ == null) {
-          itemVecBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder>(
-                  itemVec_,
-                  ((bitField0_ & 0x00000001) != 0),
-                  getParentForChildren(),
-                  isClean());
-          itemVec_ = null;
-        }
-        return itemVecBuilder_;
-      }
-
       private int retcode_ ;
       /**
        * <code>int32 retcode = 4;</code>
@@ -876,9 +644,249 @@ public final class TakeResinCardDailyRewardRspOuterClass {
         return this;
       }
 
+      private java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> itemVec_ =
+        java.util.Collections.emptyList();
+      private void ensureItemVecIsMutable() {
+        if (!((bitField0_ & 0x00000001) != 0)) {
+          itemVec_ = new java.util.ArrayList<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam>(itemVec_);
+          bitField0_ |= 0x00000001;
+         }
+      }
+
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder> itemVecBuilder_;
+
+      /**
+       * <code>repeated .ItemParam item_vec = 15;</code>
+       */
+      public java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> getItemVecList() {
+        if (itemVecBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(itemVec_);
+        } else {
+          return itemVecBuilder_.getMessageList();
+        }
+      }
+      /**
+       * <code>repeated .ItemParam item_vec = 15;</code>
+       */
+      public int getItemVecCount() {
+        if (itemVecBuilder_ == null) {
+          return itemVec_.size();
+        } else {
+          return itemVecBuilder_.getCount();
+        }
+      }
+      /**
+       * <code>repeated .ItemParam item_vec = 15;</code>
+       */
+      public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam getItemVec(int index) {
+        if (itemVecBuilder_ == null) {
+          return itemVec_.get(index);
+        } else {
+          return itemVecBuilder_.getMessage(index);
+        }
+      }
+      /**
+       * <code>repeated .ItemParam item_vec = 15;</code>
+       */
+      public Builder setItemVec(
+          int index, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam value) {
+        if (itemVecBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureItemVecIsMutable();
+          itemVec_.set(index, value);
+          onChanged();
+        } else {
+          itemVecBuilder_.setMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .ItemParam item_vec = 15;</code>
+       */
+      public Builder setItemVec(
+          int index, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder builderForValue) {
+        if (itemVecBuilder_ == null) {
+          ensureItemVecIsMutable();
+          itemVec_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          itemVecBuilder_.setMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .ItemParam item_vec = 15;</code>
+       */
+      public Builder addItemVec(emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam value) {
+        if (itemVecBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureItemVecIsMutable();
+          itemVec_.add(value);
+          onChanged();
+        } else {
+          itemVecBuilder_.addMessage(value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .ItemParam item_vec = 15;</code>
+       */
+      public Builder addItemVec(
+          int index, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam value) {
+        if (itemVecBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureItemVecIsMutable();
+          itemVec_.add(index, value);
+          onChanged();
+        } else {
+          itemVecBuilder_.addMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .ItemParam item_vec = 15;</code>
+       */
+      public Builder addItemVec(
+          emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder builderForValue) {
+        if (itemVecBuilder_ == null) {
+          ensureItemVecIsMutable();
+          itemVec_.add(builderForValue.build());
+          onChanged();
+        } else {
+          itemVecBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .ItemParam item_vec = 15;</code>
+       */
+      public Builder addItemVec(
+          int index, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder builderForValue) {
+        if (itemVecBuilder_ == null) {
+          ensureItemVecIsMutable();
+          itemVec_.add(index, builderForValue.build());
+          onChanged();
+        } else {
+          itemVecBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .ItemParam item_vec = 15;</code>
+       */
+      public Builder addAllItemVec(
+          java.lang.Iterable<? extends emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> values) {
+        if (itemVecBuilder_ == null) {
+          ensureItemVecIsMutable();
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, itemVec_);
+          onChanged();
+        } else {
+          itemVecBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .ItemParam item_vec = 15;</code>
+       */
+      public Builder clearItemVec() {
+        if (itemVecBuilder_ == null) {
+          itemVec_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000001);
+          onChanged();
+        } else {
+          itemVecBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .ItemParam item_vec = 15;</code>
+       */
+      public Builder removeItemVec(int index) {
+        if (itemVecBuilder_ == null) {
+          ensureItemVecIsMutable();
+          itemVec_.remove(index);
+          onChanged();
+        } else {
+          itemVecBuilder_.remove(index);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .ItemParam item_vec = 15;</code>
+       */
+      public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder getItemVecBuilder(
+          int index) {
+        return getItemVecFieldBuilder().getBuilder(index);
+      }
+      /**
+       * <code>repeated .ItemParam item_vec = 15;</code>
+       */
+      public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder getItemVecOrBuilder(
+          int index) {
+        if (itemVecBuilder_ == null) {
+          return itemVec_.get(index);  } else {
+          return itemVecBuilder_.getMessageOrBuilder(index);
+        }
+      }
+      /**
+       * <code>repeated .ItemParam item_vec = 15;</code>
+       */
+      public java.util.List<? extends emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder> 
+           getItemVecOrBuilderList() {
+        if (itemVecBuilder_ != null) {
+          return itemVecBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(itemVec_);
+        }
+      }
+      /**
+       * <code>repeated .ItemParam item_vec = 15;</code>
+       */
+      public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder addItemVecBuilder() {
+        return getItemVecFieldBuilder().addBuilder(
+            emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .ItemParam item_vec = 15;</code>
+       */
+      public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder addItemVecBuilder(
+          int index) {
+        return getItemVecFieldBuilder().addBuilder(
+            index, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .ItemParam item_vec = 15;</code>
+       */
+      public java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder> 
+           getItemVecBuilderList() {
+        return getItemVecFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder> 
+          getItemVecFieldBuilder() {
+        if (itemVecBuilder_ == null) {
+          itemVecBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+              emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder>(
+                  itemVec_,
+                  ((bitField0_ & 0x00000001) != 0),
+                  getParentForChildren(),
+                  isClean());
+          itemVec_ = null;
+        }
+        return itemVecBuilder_;
+      }
+
       private int productConfigId_ ;
       /**
-       * <code>uint32 product_config_id = 12;</code>
+       * <code>uint32 product_config_id = 13;</code>
        * @return The productConfigId.
        */
       @java.lang.Override
@@ -886,7 +894,7 @@ public final class TakeResinCardDailyRewardRspOuterClass {
         return productConfigId_;
       }
       /**
-       * <code>uint32 product_config_id = 12;</code>
+       * <code>uint32 product_config_id = 13;</code>
        * @param value The productConfigId to set.
        * @return This builder for chaining.
        */
@@ -897,7 +905,7 @@ public final class TakeResinCardDailyRewardRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 product_config_id = 12;</code>
+       * <code>uint32 product_config_id = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearProductConfigId() {
@@ -975,8 +983,8 @@ public final class TakeResinCardDailyRewardRspOuterClass {
     java.lang.String[] descriptorData = {
       "\n!TakeResinCardDailyRewardRsp.proto\032\017Ite" +
       "mParam.proto\"g\n\033TakeResinCardDailyReward" +
-      "Rsp\022\034\n\010item_vec\030\006 \003(\0132\n.ItemParam\022\017\n\007ret" +
-      "code\030\004 \001(\005\022\031\n\021product_config_id\030\014 \001(\rB\033\n" +
+      "Rsp\022\017\n\007retcode\030\004 \001(\005\022\034\n\010item_vec\030\017 \003(\0132\n" +
+      ".ItemParam\022\031\n\021product_config_id\030\r \001(\rB\033\n" +
       "\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -989,7 +997,7 @@ public final class TakeResinCardDailyRewardRspOuterClass {
     internal_static_TakeResinCardDailyRewardRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_TakeResinCardDailyRewardRsp_descriptor,
-        new java.lang.String[] { "ItemVec", "Retcode", "ProductConfigId", });
+        new java.lang.String[] { "Retcode", "ItemVec", "ProductConfigId", });
     emu.grasscutter.net.proto.ItemParamOuterClass.getDescriptor();
   }
 

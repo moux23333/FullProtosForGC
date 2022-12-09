@@ -19,43 +19,43 @@ public final class EvtLightCoreMoveOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.Vector target_pos = 15;</code>
-     * @return Whether the targetPos field is set.
+     * <code>float speed = 4;</code>
+     * @return The speed.
      */
-    boolean hasTargetPos();
-    /**
-     * <code>.Vector target_pos = 15;</code>
-     * @return The targetPos.
-     */
-    emu.grasscutter.net.proto.VectorOuterClass.Vector getTargetPos();
-    /**
-     * <code>.Vector target_pos = 15;</code>
-     */
-    emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getTargetPosOrBuilder();
+    float getSpeed();
 
     /**
-     * <code>float acelerate = 11;</code>
-     * @return The acelerate.
-     */
-    float getAcelerate();
-
-    /**
-     * <code>uint32 entity_id = 5;</code>
+     * <code>uint32 entity_id = 12;</code>
      * @return The entityId.
      */
     int getEntityId();
 
     /**
-     * <code>float max_absorb_time = 10;</code>
-     * @return The maxAbsorbTime.
+     * <code>float Unk3300_BLNIJMMNAGH = 1;</code>
+     * @return The unk3300BLNIJMMNAGH.
      */
-    float getMaxAbsorbTime();
+    float getUnk3300BLNIJMMNAGH();
 
     /**
-     * <code>float speed = 14;</code>
-     * @return The speed.
+     * <code>float Unk3300_NHPEDPJMCOL = 5;</code>
+     * @return The unk3300NHPEDPJMCOL.
      */
-    float getSpeed();
+    float getUnk3300NHPEDPJMCOL();
+
+    /**
+     * <code>.Vector target_pos = 11;</code>
+     * @return Whether the targetPos field is set.
+     */
+    boolean hasTargetPos();
+    /**
+     * <code>.Vector target_pos = 11;</code>
+     * @return The targetPos.
+     */
+    emu.grasscutter.net.proto.VectorOuterClass.Vector getTargetPos();
+    /**
+     * <code>.Vector target_pos = 11;</code>
+     */
+    emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getTargetPosOrBuilder();
   }
   /**
    * Protobuf type {@code EvtLightCoreMove}
@@ -102,27 +102,22 @@ public final class EvtLightCoreMoveOuterClass {
             case 0:
               done = true;
               break;
-            case 40: {
+            case 13: {
 
-              entityId_ = input.readUInt32();
+              unk3300BLNIJMMNAGH_ = input.readFloat();
               break;
             }
-            case 85: {
-
-              maxAbsorbTime_ = input.readFloat();
-              break;
-            }
-            case 93: {
-
-              acelerate_ = input.readFloat();
-              break;
-            }
-            case 117: {
+            case 37: {
 
               speed_ = input.readFloat();
               break;
             }
-            case 122: {
+            case 45: {
+
+              unk3300NHPEDPJMCOL_ = input.readFloat();
+              break;
+            }
+            case 90: {
               emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder subBuilder = null;
               if (targetPos_ != null) {
                 subBuilder = targetPos_.toBuilder();
@@ -133,6 +128,11 @@ public final class EvtLightCoreMoveOuterClass {
                 targetPos_ = subBuilder.buildPartial();
               }
 
+              break;
+            }
+            case 96: {
+
+              entityId_ = input.readUInt32();
               break;
             }
             default: {
@@ -167,47 +167,21 @@ public final class EvtLightCoreMoveOuterClass {
               emu.grasscutter.net.proto.EvtLightCoreMoveOuterClass.EvtLightCoreMove.class, emu.grasscutter.net.proto.EvtLightCoreMoveOuterClass.EvtLightCoreMove.Builder.class);
     }
 
-    public static final int TARGET_POS_FIELD_NUMBER = 15;
-    private emu.grasscutter.net.proto.VectorOuterClass.Vector targetPos_;
+    public static final int SPEED_FIELD_NUMBER = 4;
+    private float speed_;
     /**
-     * <code>.Vector target_pos = 15;</code>
-     * @return Whether the targetPos field is set.
+     * <code>float speed = 4;</code>
+     * @return The speed.
      */
     @java.lang.Override
-    public boolean hasTargetPos() {
-      return targetPos_ != null;
-    }
-    /**
-     * <code>.Vector target_pos = 15;</code>
-     * @return The targetPos.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.VectorOuterClass.Vector getTargetPos() {
-      return targetPos_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : targetPos_;
-    }
-    /**
-     * <code>.Vector target_pos = 15;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getTargetPosOrBuilder() {
-      return getTargetPos();
+    public float getSpeed() {
+      return speed_;
     }
 
-    public static final int ACELERATE_FIELD_NUMBER = 11;
-    private float acelerate_;
-    /**
-     * <code>float acelerate = 11;</code>
-     * @return The acelerate.
-     */
-    @java.lang.Override
-    public float getAcelerate() {
-      return acelerate_;
-    }
-
-    public static final int ENTITY_ID_FIELD_NUMBER = 5;
+    public static final int ENTITY_ID_FIELD_NUMBER = 12;
     private int entityId_;
     /**
-     * <code>uint32 entity_id = 5;</code>
+     * <code>uint32 entity_id = 12;</code>
      * @return The entityId.
      */
     @java.lang.Override
@@ -215,26 +189,52 @@ public final class EvtLightCoreMoveOuterClass {
       return entityId_;
     }
 
-    public static final int MAX_ABSORB_TIME_FIELD_NUMBER = 10;
-    private float maxAbsorbTime_;
+    public static final int UNK3300_BLNIJMMNAGH_FIELD_NUMBER = 1;
+    private float unk3300BLNIJMMNAGH_;
     /**
-     * <code>float max_absorb_time = 10;</code>
-     * @return The maxAbsorbTime.
+     * <code>float Unk3300_BLNIJMMNAGH = 1;</code>
+     * @return The unk3300BLNIJMMNAGH.
      */
     @java.lang.Override
-    public float getMaxAbsorbTime() {
-      return maxAbsorbTime_;
+    public float getUnk3300BLNIJMMNAGH() {
+      return unk3300BLNIJMMNAGH_;
     }
 
-    public static final int SPEED_FIELD_NUMBER = 14;
-    private float speed_;
+    public static final int UNK3300_NHPEDPJMCOL_FIELD_NUMBER = 5;
+    private float unk3300NHPEDPJMCOL_;
     /**
-     * <code>float speed = 14;</code>
-     * @return The speed.
+     * <code>float Unk3300_NHPEDPJMCOL = 5;</code>
+     * @return The unk3300NHPEDPJMCOL.
      */
     @java.lang.Override
-    public float getSpeed() {
-      return speed_;
+    public float getUnk3300NHPEDPJMCOL() {
+      return unk3300NHPEDPJMCOL_;
+    }
+
+    public static final int TARGET_POS_FIELD_NUMBER = 11;
+    private emu.grasscutter.net.proto.VectorOuterClass.Vector targetPos_;
+    /**
+     * <code>.Vector target_pos = 11;</code>
+     * @return Whether the targetPos field is set.
+     */
+    @java.lang.Override
+    public boolean hasTargetPos() {
+      return targetPos_ != null;
+    }
+    /**
+     * <code>.Vector target_pos = 11;</code>
+     * @return The targetPos.
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.VectorOuterClass.Vector getTargetPos() {
+      return targetPos_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : targetPos_;
+    }
+    /**
+     * <code>.Vector target_pos = 11;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getTargetPosOrBuilder() {
+      return getTargetPos();
     }
 
     private byte memoizedIsInitialized = -1;
@@ -251,20 +251,20 @@ public final class EvtLightCoreMoveOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (entityId_ != 0) {
-        output.writeUInt32(5, entityId_);
-      }
-      if (maxAbsorbTime_ != 0F) {
-        output.writeFloat(10, maxAbsorbTime_);
-      }
-      if (acelerate_ != 0F) {
-        output.writeFloat(11, acelerate_);
+      if (unk3300BLNIJMMNAGH_ != 0F) {
+        output.writeFloat(1, unk3300BLNIJMMNAGH_);
       }
       if (speed_ != 0F) {
-        output.writeFloat(14, speed_);
+        output.writeFloat(4, speed_);
+      }
+      if (unk3300NHPEDPJMCOL_ != 0F) {
+        output.writeFloat(5, unk3300NHPEDPJMCOL_);
       }
       if (targetPos_ != null) {
-        output.writeMessage(15, getTargetPos());
+        output.writeMessage(11, getTargetPos());
+      }
+      if (entityId_ != 0) {
+        output.writeUInt32(12, entityId_);
       }
       unknownFields.writeTo(output);
     }
@@ -275,25 +275,25 @@ public final class EvtLightCoreMoveOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (entityId_ != 0) {
+      if (unk3300BLNIJMMNAGH_ != 0F) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, entityId_);
-      }
-      if (maxAbsorbTime_ != 0F) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeFloatSize(10, maxAbsorbTime_);
-      }
-      if (acelerate_ != 0F) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeFloatSize(11, acelerate_);
+          .computeFloatSize(1, unk3300BLNIJMMNAGH_);
       }
       if (speed_ != 0F) {
         size += com.google.protobuf.CodedOutputStream
-          .computeFloatSize(14, speed_);
+          .computeFloatSize(4, speed_);
+      }
+      if (unk3300NHPEDPJMCOL_ != 0F) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeFloatSize(5, unk3300NHPEDPJMCOL_);
       }
       if (targetPos_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(15, getTargetPos());
+          .computeMessageSize(11, getTargetPos());
+      }
+      if (entityId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(12, entityId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -310,22 +310,22 @@ public final class EvtLightCoreMoveOuterClass {
       }
       emu.grasscutter.net.proto.EvtLightCoreMoveOuterClass.EvtLightCoreMove other = (emu.grasscutter.net.proto.EvtLightCoreMoveOuterClass.EvtLightCoreMove) obj;
 
+      if (java.lang.Float.floatToIntBits(getSpeed())
+          != java.lang.Float.floatToIntBits(
+              other.getSpeed())) return false;
+      if (getEntityId()
+          != other.getEntityId()) return false;
+      if (java.lang.Float.floatToIntBits(getUnk3300BLNIJMMNAGH())
+          != java.lang.Float.floatToIntBits(
+              other.getUnk3300BLNIJMMNAGH())) return false;
+      if (java.lang.Float.floatToIntBits(getUnk3300NHPEDPJMCOL())
+          != java.lang.Float.floatToIntBits(
+              other.getUnk3300NHPEDPJMCOL())) return false;
       if (hasTargetPos() != other.hasTargetPos()) return false;
       if (hasTargetPos()) {
         if (!getTargetPos()
             .equals(other.getTargetPos())) return false;
       }
-      if (java.lang.Float.floatToIntBits(getAcelerate())
-          != java.lang.Float.floatToIntBits(
-              other.getAcelerate())) return false;
-      if (getEntityId()
-          != other.getEntityId()) return false;
-      if (java.lang.Float.floatToIntBits(getMaxAbsorbTime())
-          != java.lang.Float.floatToIntBits(
-              other.getMaxAbsorbTime())) return false;
-      if (java.lang.Float.floatToIntBits(getSpeed())
-          != java.lang.Float.floatToIntBits(
-              other.getSpeed())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -337,21 +337,21 @@ public final class EvtLightCoreMoveOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + SPEED_FIELD_NUMBER;
+      hash = (53 * hash) + java.lang.Float.floatToIntBits(
+          getSpeed());
+      hash = (37 * hash) + ENTITY_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getEntityId();
+      hash = (37 * hash) + UNK3300_BLNIJMMNAGH_FIELD_NUMBER;
+      hash = (53 * hash) + java.lang.Float.floatToIntBits(
+          getUnk3300BLNIJMMNAGH());
+      hash = (37 * hash) + UNK3300_NHPEDPJMCOL_FIELD_NUMBER;
+      hash = (53 * hash) + java.lang.Float.floatToIntBits(
+          getUnk3300NHPEDPJMCOL());
       if (hasTargetPos()) {
         hash = (37 * hash) + TARGET_POS_FIELD_NUMBER;
         hash = (53 * hash) + getTargetPos().hashCode();
       }
-      hash = (37 * hash) + ACELERATE_FIELD_NUMBER;
-      hash = (53 * hash) + java.lang.Float.floatToIntBits(
-          getAcelerate());
-      hash = (37 * hash) + ENTITY_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getEntityId();
-      hash = (37 * hash) + MAX_ABSORB_TIME_FIELD_NUMBER;
-      hash = (53 * hash) + java.lang.Float.floatToIntBits(
-          getMaxAbsorbTime());
-      hash = (37 * hash) + SPEED_FIELD_NUMBER;
-      hash = (53 * hash) + java.lang.Float.floatToIntBits(
-          getSpeed());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -485,20 +485,20 @@ public final class EvtLightCoreMoveOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        speed_ = 0F;
+
+        entityId_ = 0;
+
+        unk3300BLNIJMMNAGH_ = 0F;
+
+        unk3300NHPEDPJMCOL_ = 0F;
+
         if (targetPosBuilder_ == null) {
           targetPos_ = null;
         } else {
           targetPos_ = null;
           targetPosBuilder_ = null;
         }
-        acelerate_ = 0F;
-
-        entityId_ = 0;
-
-        maxAbsorbTime_ = 0F;
-
-        speed_ = 0F;
-
         return this;
       }
 
@@ -525,15 +525,15 @@ public final class EvtLightCoreMoveOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.EvtLightCoreMoveOuterClass.EvtLightCoreMove buildPartial() {
         emu.grasscutter.net.proto.EvtLightCoreMoveOuterClass.EvtLightCoreMove result = new emu.grasscutter.net.proto.EvtLightCoreMoveOuterClass.EvtLightCoreMove(this);
+        result.speed_ = speed_;
+        result.entityId_ = entityId_;
+        result.unk3300BLNIJMMNAGH_ = unk3300BLNIJMMNAGH_;
+        result.unk3300NHPEDPJMCOL_ = unk3300NHPEDPJMCOL_;
         if (targetPosBuilder_ == null) {
           result.targetPos_ = targetPos_;
         } else {
           result.targetPos_ = targetPosBuilder_.build();
         }
-        result.acelerate_ = acelerate_;
-        result.entityId_ = entityId_;
-        result.maxAbsorbTime_ = maxAbsorbTime_;
-        result.speed_ = speed_;
         onBuilt();
         return result;
       }
@@ -582,20 +582,20 @@ public final class EvtLightCoreMoveOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.EvtLightCoreMoveOuterClass.EvtLightCoreMove other) {
         if (other == emu.grasscutter.net.proto.EvtLightCoreMoveOuterClass.EvtLightCoreMove.getDefaultInstance()) return this;
-        if (other.hasTargetPos()) {
-          mergeTargetPos(other.getTargetPos());
-        }
-        if (other.getAcelerate() != 0F) {
-          setAcelerate(other.getAcelerate());
+        if (other.getSpeed() != 0F) {
+          setSpeed(other.getSpeed());
         }
         if (other.getEntityId() != 0) {
           setEntityId(other.getEntityId());
         }
-        if (other.getMaxAbsorbTime() != 0F) {
-          setMaxAbsorbTime(other.getMaxAbsorbTime());
+        if (other.getUnk3300BLNIJMMNAGH() != 0F) {
+          setUnk3300BLNIJMMNAGH(other.getUnk3300BLNIJMMNAGH());
         }
-        if (other.getSpeed() != 0F) {
-          setSpeed(other.getSpeed());
+        if (other.getUnk3300NHPEDPJMCOL() != 0F) {
+          setUnk3300NHPEDPJMCOL(other.getUnk3300NHPEDPJMCOL());
+        }
+        if (other.hasTargetPos()) {
+          mergeTargetPos(other.getTargetPos());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -626,18 +626,142 @@ public final class EvtLightCoreMoveOuterClass {
         return this;
       }
 
+      private float speed_ ;
+      /**
+       * <code>float speed = 4;</code>
+       * @return The speed.
+       */
+      @java.lang.Override
+      public float getSpeed() {
+        return speed_;
+      }
+      /**
+       * <code>float speed = 4;</code>
+       * @param value The speed to set.
+       * @return This builder for chaining.
+       */
+      public Builder setSpeed(float value) {
+        
+        speed_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>float speed = 4;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearSpeed() {
+        
+        speed_ = 0F;
+        onChanged();
+        return this;
+      }
+
+      private int entityId_ ;
+      /**
+       * <code>uint32 entity_id = 12;</code>
+       * @return The entityId.
+       */
+      @java.lang.Override
+      public int getEntityId() {
+        return entityId_;
+      }
+      /**
+       * <code>uint32 entity_id = 12;</code>
+       * @param value The entityId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setEntityId(int value) {
+        
+        entityId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 entity_id = 12;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearEntityId() {
+        
+        entityId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private float unk3300BLNIJMMNAGH_ ;
+      /**
+       * <code>float Unk3300_BLNIJMMNAGH = 1;</code>
+       * @return The unk3300BLNIJMMNAGH.
+       */
+      @java.lang.Override
+      public float getUnk3300BLNIJMMNAGH() {
+        return unk3300BLNIJMMNAGH_;
+      }
+      /**
+       * <code>float Unk3300_BLNIJMMNAGH = 1;</code>
+       * @param value The unk3300BLNIJMMNAGH to set.
+       * @return This builder for chaining.
+       */
+      public Builder setUnk3300BLNIJMMNAGH(float value) {
+        
+        unk3300BLNIJMMNAGH_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>float Unk3300_BLNIJMMNAGH = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearUnk3300BLNIJMMNAGH() {
+        
+        unk3300BLNIJMMNAGH_ = 0F;
+        onChanged();
+        return this;
+      }
+
+      private float unk3300NHPEDPJMCOL_ ;
+      /**
+       * <code>float Unk3300_NHPEDPJMCOL = 5;</code>
+       * @return The unk3300NHPEDPJMCOL.
+       */
+      @java.lang.Override
+      public float getUnk3300NHPEDPJMCOL() {
+        return unk3300NHPEDPJMCOL_;
+      }
+      /**
+       * <code>float Unk3300_NHPEDPJMCOL = 5;</code>
+       * @param value The unk3300NHPEDPJMCOL to set.
+       * @return This builder for chaining.
+       */
+      public Builder setUnk3300NHPEDPJMCOL(float value) {
+        
+        unk3300NHPEDPJMCOL_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>float Unk3300_NHPEDPJMCOL = 5;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearUnk3300NHPEDPJMCOL() {
+        
+        unk3300NHPEDPJMCOL_ = 0F;
+        onChanged();
+        return this;
+      }
+
       private emu.grasscutter.net.proto.VectorOuterClass.Vector targetPos_;
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> targetPosBuilder_;
       /**
-       * <code>.Vector target_pos = 15;</code>
+       * <code>.Vector target_pos = 11;</code>
        * @return Whether the targetPos field is set.
        */
       public boolean hasTargetPos() {
         return targetPosBuilder_ != null || targetPos_ != null;
       }
       /**
-       * <code>.Vector target_pos = 15;</code>
+       * <code>.Vector target_pos = 11;</code>
        * @return The targetPos.
        */
       public emu.grasscutter.net.proto.VectorOuterClass.Vector getTargetPos() {
@@ -648,7 +772,7 @@ public final class EvtLightCoreMoveOuterClass {
         }
       }
       /**
-       * <code>.Vector target_pos = 15;</code>
+       * <code>.Vector target_pos = 11;</code>
        */
       public Builder setTargetPos(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
         if (targetPosBuilder_ == null) {
@@ -664,7 +788,7 @@ public final class EvtLightCoreMoveOuterClass {
         return this;
       }
       /**
-       * <code>.Vector target_pos = 15;</code>
+       * <code>.Vector target_pos = 11;</code>
        */
       public Builder setTargetPos(
           emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder builderForValue) {
@@ -678,7 +802,7 @@ public final class EvtLightCoreMoveOuterClass {
         return this;
       }
       /**
-       * <code>.Vector target_pos = 15;</code>
+       * <code>.Vector target_pos = 11;</code>
        */
       public Builder mergeTargetPos(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
         if (targetPosBuilder_ == null) {
@@ -696,7 +820,7 @@ public final class EvtLightCoreMoveOuterClass {
         return this;
       }
       /**
-       * <code>.Vector target_pos = 15;</code>
+       * <code>.Vector target_pos = 11;</code>
        */
       public Builder clearTargetPos() {
         if (targetPosBuilder_ == null) {
@@ -710,7 +834,7 @@ public final class EvtLightCoreMoveOuterClass {
         return this;
       }
       /**
-       * <code>.Vector target_pos = 15;</code>
+       * <code>.Vector target_pos = 11;</code>
        */
       public emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder getTargetPosBuilder() {
         
@@ -718,7 +842,7 @@ public final class EvtLightCoreMoveOuterClass {
         return getTargetPosFieldBuilder().getBuilder();
       }
       /**
-       * <code>.Vector target_pos = 15;</code>
+       * <code>.Vector target_pos = 11;</code>
        */
       public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getTargetPosOrBuilder() {
         if (targetPosBuilder_ != null) {
@@ -729,7 +853,7 @@ public final class EvtLightCoreMoveOuterClass {
         }
       }
       /**
-       * <code>.Vector target_pos = 15;</code>
+       * <code>.Vector target_pos = 11;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> 
@@ -743,130 +867,6 @@ public final class EvtLightCoreMoveOuterClass {
           targetPos_ = null;
         }
         return targetPosBuilder_;
-      }
-
-      private float acelerate_ ;
-      /**
-       * <code>float acelerate = 11;</code>
-       * @return The acelerate.
-       */
-      @java.lang.Override
-      public float getAcelerate() {
-        return acelerate_;
-      }
-      /**
-       * <code>float acelerate = 11;</code>
-       * @param value The acelerate to set.
-       * @return This builder for chaining.
-       */
-      public Builder setAcelerate(float value) {
-        
-        acelerate_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>float acelerate = 11;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearAcelerate() {
-        
-        acelerate_ = 0F;
-        onChanged();
-        return this;
-      }
-
-      private int entityId_ ;
-      /**
-       * <code>uint32 entity_id = 5;</code>
-       * @return The entityId.
-       */
-      @java.lang.Override
-      public int getEntityId() {
-        return entityId_;
-      }
-      /**
-       * <code>uint32 entity_id = 5;</code>
-       * @param value The entityId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setEntityId(int value) {
-        
-        entityId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 entity_id = 5;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearEntityId() {
-        
-        entityId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private float maxAbsorbTime_ ;
-      /**
-       * <code>float max_absorb_time = 10;</code>
-       * @return The maxAbsorbTime.
-       */
-      @java.lang.Override
-      public float getMaxAbsorbTime() {
-        return maxAbsorbTime_;
-      }
-      /**
-       * <code>float max_absorb_time = 10;</code>
-       * @param value The maxAbsorbTime to set.
-       * @return This builder for chaining.
-       */
-      public Builder setMaxAbsorbTime(float value) {
-        
-        maxAbsorbTime_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>float max_absorb_time = 10;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearMaxAbsorbTime() {
-        
-        maxAbsorbTime_ = 0F;
-        onChanged();
-        return this;
-      }
-
-      private float speed_ ;
-      /**
-       * <code>float speed = 14;</code>
-       * @return The speed.
-       */
-      @java.lang.Override
-      public float getSpeed() {
-        return speed_;
-      }
-      /**
-       * <code>float speed = 14;</code>
-       * @param value The speed to set.
-       * @return This builder for chaining.
-       */
-      public Builder setSpeed(float value) {
-        
-        speed_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>float speed = 14;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearSpeed() {
-        
-        speed_ = 0F;
-        onChanged();
-        return this;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -935,12 +935,12 @@ public final class EvtLightCoreMoveOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\026EvtLightCoreMove.proto\032\014Vector.proto\"}" +
-      "\n\020EvtLightCoreMove\022\033\n\ntarget_pos\030\017 \001(\0132\007" +
-      ".Vector\022\021\n\tacelerate\030\013 \001(\002\022\021\n\tentity_id\030" +
-      "\005 \001(\r\022\027\n\017max_absorb_time\030\n \001(\002\022\r\n\005speed\030" +
-      "\016 \001(\002B\033\n\031emu.grasscutter.net.protob\006prot" +
-      "o3"
+      "\n\026EvtLightCoreMove.proto\032\014Vector.proto\"\213" +
+      "\001\n\020EvtLightCoreMove\022\r\n\005speed\030\004 \001(\002\022\021\n\ten" +
+      "tity_id\030\014 \001(\r\022\033\n\023Unk3300_BLNIJMMNAGH\030\001 \001" +
+      "(\002\022\033\n\023Unk3300_NHPEDPJMCOL\030\005 \001(\002\022\033\n\ntarge" +
+      "t_pos\030\013 \001(\0132\007.VectorB\033\n\031emu.grasscutter." +
+      "net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -952,7 +952,7 @@ public final class EvtLightCoreMoveOuterClass {
     internal_static_EvtLightCoreMove_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_EvtLightCoreMove_descriptor,
-        new java.lang.String[] { "TargetPos", "Acelerate", "EntityId", "MaxAbsorbTime", "Speed", });
+        new java.lang.String[] { "Speed", "EntityId", "Unk3300BLNIJMMNAGH", "Unk3300NHPEDPJMCOL", "TargetPos", });
     emu.grasscutter.net.proto.VectorOuterClass.getDescriptor();
   }
 

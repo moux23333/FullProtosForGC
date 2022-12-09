@@ -19,23 +19,27 @@ public final class FocusAvatarReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint64 avatar_guid = 1;</code>
+     * <code>uint64 avatar_guid = 5;</code>
      * @return The avatarGuid.
      */
     long getAvatarGuid();
 
     /**
-     * <code>bool is_focus = 8;</code>
+     * <code>bool is_focus = 11;</code>
      * @return The isFocus.
      */
     boolean getIsFocus();
   }
   /**
    * <pre>
-   * CmdId: 1654
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 1793;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code FocusAvatarReq}
@@ -82,12 +86,12 @@ public final class FocusAvatarReqOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
+            case 40: {
 
               avatarGuid_ = input.readUInt64();
               break;
             }
-            case 64: {
+            case 88: {
 
               isFocus_ = input.readBool();
               break;
@@ -124,10 +128,10 @@ public final class FocusAvatarReqOuterClass {
               emu.grasscutter.net.proto.FocusAvatarReqOuterClass.FocusAvatarReq.class, emu.grasscutter.net.proto.FocusAvatarReqOuterClass.FocusAvatarReq.Builder.class);
     }
 
-    public static final int AVATAR_GUID_FIELD_NUMBER = 1;
+    public static final int AVATAR_GUID_FIELD_NUMBER = 5;
     private long avatarGuid_;
     /**
-     * <code>uint64 avatar_guid = 1;</code>
+     * <code>uint64 avatar_guid = 5;</code>
      * @return The avatarGuid.
      */
     @java.lang.Override
@@ -135,10 +139,10 @@ public final class FocusAvatarReqOuterClass {
       return avatarGuid_;
     }
 
-    public static final int IS_FOCUS_FIELD_NUMBER = 8;
+    public static final int IS_FOCUS_FIELD_NUMBER = 11;
     private boolean isFocus_;
     /**
-     * <code>bool is_focus = 8;</code>
+     * <code>bool is_focus = 11;</code>
      * @return The isFocus.
      */
     @java.lang.Override
@@ -161,10 +165,10 @@ public final class FocusAvatarReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (avatarGuid_ != 0L) {
-        output.writeUInt64(1, avatarGuid_);
+        output.writeUInt64(5, avatarGuid_);
       }
       if (isFocus_ != false) {
-        output.writeBool(8, isFocus_);
+        output.writeBool(11, isFocus_);
       }
       unknownFields.writeTo(output);
     }
@@ -177,11 +181,11 @@ public final class FocusAvatarReqOuterClass {
       size = 0;
       if (avatarGuid_ != 0L) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt64Size(1, avatarGuid_);
+          .computeUInt64Size(5, avatarGuid_);
       }
       if (isFocus_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(8, isFocus_);
+          .computeBoolSize(11, isFocus_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -316,10 +320,14 @@ public final class FocusAvatarReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 1654
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 1793;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code FocusAvatarReq}
@@ -476,7 +484,7 @@ public final class FocusAvatarReqOuterClass {
 
       private long avatarGuid_ ;
       /**
-       * <code>uint64 avatar_guid = 1;</code>
+       * <code>uint64 avatar_guid = 5;</code>
        * @return The avatarGuid.
        */
       @java.lang.Override
@@ -484,7 +492,7 @@ public final class FocusAvatarReqOuterClass {
         return avatarGuid_;
       }
       /**
-       * <code>uint64 avatar_guid = 1;</code>
+       * <code>uint64 avatar_guid = 5;</code>
        * @param value The avatarGuid to set.
        * @return This builder for chaining.
        */
@@ -495,7 +503,7 @@ public final class FocusAvatarReqOuterClass {
         return this;
       }
       /**
-       * <code>uint64 avatar_guid = 1;</code>
+       * <code>uint64 avatar_guid = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearAvatarGuid() {
@@ -507,7 +515,7 @@ public final class FocusAvatarReqOuterClass {
 
       private boolean isFocus_ ;
       /**
-       * <code>bool is_focus = 8;</code>
+       * <code>bool is_focus = 11;</code>
        * @return The isFocus.
        */
       @java.lang.Override
@@ -515,7 +523,7 @@ public final class FocusAvatarReqOuterClass {
         return isFocus_;
       }
       /**
-       * <code>bool is_focus = 8;</code>
+       * <code>bool is_focus = 11;</code>
        * @param value The isFocus to set.
        * @return This builder for chaining.
        */
@@ -526,7 +534,7 @@ public final class FocusAvatarReqOuterClass {
         return this;
       }
       /**
-       * <code>bool is_focus = 8;</code>
+       * <code>bool is_focus = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsFocus() {
@@ -603,7 +611,7 @@ public final class FocusAvatarReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\024FocusAvatarReq.proto\"7\n\016FocusAvatarReq" +
-      "\022\023\n\013avatar_guid\030\001 \001(\004\022\020\n\010is_focus\030\010 \001(\010B" +
+      "\022\023\n\013avatar_guid\030\005 \001(\004\022\020\n\010is_focus\030\013 \001(\010B" +
       "\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

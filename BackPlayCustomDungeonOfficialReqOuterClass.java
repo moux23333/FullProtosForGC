@@ -19,17 +19,21 @@ public final class BackPlayCustomDungeonOfficialReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 room_id = 2;</code>
+     * <code>uint32 room_id = 6;</code>
      * @return The roomId.
      */
     int getRoomId();
   }
   /**
    * <pre>
-   * CmdId: 6203
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 6224;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code BackPlayCustomDungeonOfficialReq}
@@ -76,7 +80,7 @@ public final class BackPlayCustomDungeonOfficialReqOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
+            case 48: {
 
               roomId_ = input.readUInt32();
               break;
@@ -113,10 +117,10 @@ public final class BackPlayCustomDungeonOfficialReqOuterClass {
               emu.grasscutter.net.proto.BackPlayCustomDungeonOfficialReqOuterClass.BackPlayCustomDungeonOfficialReq.class, emu.grasscutter.net.proto.BackPlayCustomDungeonOfficialReqOuterClass.BackPlayCustomDungeonOfficialReq.Builder.class);
     }
 
-    public static final int ROOM_ID_FIELD_NUMBER = 2;
+    public static final int ROOM_ID_FIELD_NUMBER = 6;
     private int roomId_;
     /**
-     * <code>uint32 room_id = 2;</code>
+     * <code>uint32 room_id = 6;</code>
      * @return The roomId.
      */
     @java.lang.Override
@@ -139,7 +143,7 @@ public final class BackPlayCustomDungeonOfficialReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (roomId_ != 0) {
-        output.writeUInt32(2, roomId_);
+        output.writeUInt32(6, roomId_);
       }
       unknownFields.writeTo(output);
     }
@@ -152,7 +156,7 @@ public final class BackPlayCustomDungeonOfficialReqOuterClass {
       size = 0;
       if (roomId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, roomId_);
+          .computeUInt32Size(6, roomId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -281,10 +285,14 @@ public final class BackPlayCustomDungeonOfficialReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 6203
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 6224;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code BackPlayCustomDungeonOfficialReq}
@@ -435,7 +443,7 @@ public final class BackPlayCustomDungeonOfficialReqOuterClass {
 
       private int roomId_ ;
       /**
-       * <code>uint32 room_id = 2;</code>
+       * <code>uint32 room_id = 6;</code>
        * @return The roomId.
        */
       @java.lang.Override
@@ -443,7 +451,7 @@ public final class BackPlayCustomDungeonOfficialReqOuterClass {
         return roomId_;
       }
       /**
-       * <code>uint32 room_id = 2;</code>
+       * <code>uint32 room_id = 6;</code>
        * @param value The roomId to set.
        * @return This builder for chaining.
        */
@@ -454,7 +462,7 @@ public final class BackPlayCustomDungeonOfficialReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 room_id = 2;</code>
+       * <code>uint32 room_id = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearRoomId() {
@@ -532,7 +540,7 @@ public final class BackPlayCustomDungeonOfficialReqOuterClass {
     java.lang.String[] descriptorData = {
       "\n&BackPlayCustomDungeonOfficialReq.proto" +
       "\"3\n BackPlayCustomDungeonOfficialReq\022\017\n\007" +
-      "room_id\030\002 \001(\rB\033\n\031emu.grasscutter.net.pro" +
+      "room_id\030\006 \001(\rB\033\n\031emu.grasscutter.net.pro" +
       "tob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

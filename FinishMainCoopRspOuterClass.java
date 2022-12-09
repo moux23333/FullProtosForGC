@@ -19,28 +19,32 @@ public final class FinishMainCoopRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 id = 2;</code>
-     * @return The id.
-     */
-    int getId();
-
-    /**
-     * <code>uint32 ending_save_point_id = 6;</code>
+     * <code>uint32 ending_save_point_id = 4;</code>
      * @return The endingSavePointId.
      */
     int getEndingSavePointId();
 
     /**
-     * <code>int32 retcode = 4;</code>
+     * <code>int32 retcode = 1;</code>
      * @return The retcode.
      */
     int getRetcode();
+
+    /**
+     * <code>uint32 id = 13;</code>
+     * @return The id.
+     */
+    int getId();
   }
   /**
    * <pre>
-   * CmdId: 1981
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 1981;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code FinishMainCoopRsp}
@@ -87,19 +91,19 @@ public final class FinishMainCoopRspOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
-
-              id_ = input.readUInt32();
-              break;
-            }
-            case 32: {
+            case 8: {
 
               retcode_ = input.readInt32();
               break;
             }
-            case 48: {
+            case 32: {
 
               endingSavePointId_ = input.readUInt32();
+              break;
+            }
+            case 104: {
+
+              id_ = input.readUInt32();
               break;
             }
             default: {
@@ -134,21 +138,10 @@ public final class FinishMainCoopRspOuterClass {
               emu.grasscutter.net.proto.FinishMainCoopRspOuterClass.FinishMainCoopRsp.class, emu.grasscutter.net.proto.FinishMainCoopRspOuterClass.FinishMainCoopRsp.Builder.class);
     }
 
-    public static final int ID_FIELD_NUMBER = 2;
-    private int id_;
-    /**
-     * <code>uint32 id = 2;</code>
-     * @return The id.
-     */
-    @java.lang.Override
-    public int getId() {
-      return id_;
-    }
-
-    public static final int ENDING_SAVE_POINT_ID_FIELD_NUMBER = 6;
+    public static final int ENDING_SAVE_POINT_ID_FIELD_NUMBER = 4;
     private int endingSavePointId_;
     /**
-     * <code>uint32 ending_save_point_id = 6;</code>
+     * <code>uint32 ending_save_point_id = 4;</code>
      * @return The endingSavePointId.
      */
     @java.lang.Override
@@ -156,15 +149,26 @@ public final class FinishMainCoopRspOuterClass {
       return endingSavePointId_;
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 4;
+    public static final int RETCODE_FIELD_NUMBER = 1;
     private int retcode_;
     /**
-     * <code>int32 retcode = 4;</code>
+     * <code>int32 retcode = 1;</code>
      * @return The retcode.
      */
     @java.lang.Override
     public int getRetcode() {
       return retcode_;
+    }
+
+    public static final int ID_FIELD_NUMBER = 13;
+    private int id_;
+    /**
+     * <code>uint32 id = 13;</code>
+     * @return The id.
+     */
+    @java.lang.Override
+    public int getId() {
+      return id_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -181,14 +185,14 @@ public final class FinishMainCoopRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (id_ != 0) {
-        output.writeUInt32(2, id_);
-      }
       if (retcode_ != 0) {
-        output.writeInt32(4, retcode_);
+        output.writeInt32(1, retcode_);
       }
       if (endingSavePointId_ != 0) {
-        output.writeUInt32(6, endingSavePointId_);
+        output.writeUInt32(4, endingSavePointId_);
+      }
+      if (id_ != 0) {
+        output.writeUInt32(13, id_);
       }
       unknownFields.writeTo(output);
     }
@@ -199,17 +203,17 @@ public final class FinishMainCoopRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (id_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, id_);
-      }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(4, retcode_);
+          .computeInt32Size(1, retcode_);
       }
       if (endingSavePointId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, endingSavePointId_);
+          .computeUInt32Size(4, endingSavePointId_);
+      }
+      if (id_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(13, id_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -226,12 +230,12 @@ public final class FinishMainCoopRspOuterClass {
       }
       emu.grasscutter.net.proto.FinishMainCoopRspOuterClass.FinishMainCoopRsp other = (emu.grasscutter.net.proto.FinishMainCoopRspOuterClass.FinishMainCoopRsp) obj;
 
-      if (getId()
-          != other.getId()) return false;
       if (getEndingSavePointId()
           != other.getEndingSavePointId()) return false;
       if (getRetcode()
           != other.getRetcode()) return false;
+      if (getId()
+          != other.getId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -243,12 +247,12 @@ public final class FinishMainCoopRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + ID_FIELD_NUMBER;
-      hash = (53 * hash) + getId();
       hash = (37 * hash) + ENDING_SAVE_POINT_ID_FIELD_NUMBER;
       hash = (53 * hash) + getEndingSavePointId();
       hash = (37 * hash) + RETCODE_FIELD_NUMBER;
       hash = (53 * hash) + getRetcode();
+      hash = (37 * hash) + ID_FIELD_NUMBER;
+      hash = (53 * hash) + getId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -346,9 +350,13 @@ public final class FinishMainCoopRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 1981
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 1981;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code FinishMainCoopRsp}
@@ -388,11 +396,11 @@ public final class FinishMainCoopRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        id_ = 0;
-
         endingSavePointId_ = 0;
 
         retcode_ = 0;
+
+        id_ = 0;
 
         return this;
       }
@@ -420,9 +428,9 @@ public final class FinishMainCoopRspOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.FinishMainCoopRspOuterClass.FinishMainCoopRsp buildPartial() {
         emu.grasscutter.net.proto.FinishMainCoopRspOuterClass.FinishMainCoopRsp result = new emu.grasscutter.net.proto.FinishMainCoopRspOuterClass.FinishMainCoopRsp(this);
-        result.id_ = id_;
         result.endingSavePointId_ = endingSavePointId_;
         result.retcode_ = retcode_;
+        result.id_ = id_;
         onBuilt();
         return result;
       }
@@ -471,14 +479,14 @@ public final class FinishMainCoopRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.FinishMainCoopRspOuterClass.FinishMainCoopRsp other) {
         if (other == emu.grasscutter.net.proto.FinishMainCoopRspOuterClass.FinishMainCoopRsp.getDefaultInstance()) return this;
-        if (other.getId() != 0) {
-          setId(other.getId());
-        }
         if (other.getEndingSavePointId() != 0) {
           setEndingSavePointId(other.getEndingSavePointId());
         }
         if (other.getRetcode() != 0) {
           setRetcode(other.getRetcode());
+        }
+        if (other.getId() != 0) {
+          setId(other.getId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -509,40 +517,9 @@ public final class FinishMainCoopRspOuterClass {
         return this;
       }
 
-      private int id_ ;
-      /**
-       * <code>uint32 id = 2;</code>
-       * @return The id.
-       */
-      @java.lang.Override
-      public int getId() {
-        return id_;
-      }
-      /**
-       * <code>uint32 id = 2;</code>
-       * @param value The id to set.
-       * @return This builder for chaining.
-       */
-      public Builder setId(int value) {
-        
-        id_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 id = 2;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearId() {
-        
-        id_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int endingSavePointId_ ;
       /**
-       * <code>uint32 ending_save_point_id = 6;</code>
+       * <code>uint32 ending_save_point_id = 4;</code>
        * @return The endingSavePointId.
        */
       @java.lang.Override
@@ -550,7 +527,7 @@ public final class FinishMainCoopRspOuterClass {
         return endingSavePointId_;
       }
       /**
-       * <code>uint32 ending_save_point_id = 6;</code>
+       * <code>uint32 ending_save_point_id = 4;</code>
        * @param value The endingSavePointId to set.
        * @return This builder for chaining.
        */
@@ -561,7 +538,7 @@ public final class FinishMainCoopRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 ending_save_point_id = 6;</code>
+       * <code>uint32 ending_save_point_id = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearEndingSavePointId() {
@@ -573,7 +550,7 @@ public final class FinishMainCoopRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 4;</code>
+       * <code>int32 retcode = 1;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -581,7 +558,7 @@ public final class FinishMainCoopRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 4;</code>
+       * <code>int32 retcode = 1;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -592,12 +569,43 @@ public final class FinishMainCoopRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 4;</code>
+       * <code>int32 retcode = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
         
         retcode_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int id_ ;
+      /**
+       * <code>uint32 id = 13;</code>
+       * @return The id.
+       */
+      @java.lang.Override
+      public int getId() {
+        return id_;
+      }
+      /**
+       * <code>uint32 id = 13;</code>
+       * @param value The id to set.
+       * @return This builder for chaining.
+       */
+      public Builder setId(int value) {
+        
+        id_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 id = 13;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearId() {
+        
+        id_ = 0;
         onChanged();
         return this;
       }
@@ -669,8 +677,8 @@ public final class FinishMainCoopRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\027FinishMainCoopRsp.proto\"N\n\021FinishMainC" +
-      "oopRsp\022\n\n\002id\030\002 \001(\r\022\034\n\024ending_save_point_" +
-      "id\030\006 \001(\r\022\017\n\007retcode\030\004 \001(\005B\033\n\031emu.grasscu" +
+      "oopRsp\022\034\n\024ending_save_point_id\030\004 \001(\r\022\017\n\007" +
+      "retcode\030\001 \001(\005\022\n\n\002id\030\r \001(\rB\033\n\031emu.grasscu" +
       "tter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -682,7 +690,7 @@ public final class FinishMainCoopRspOuterClass {
     internal_static_FinishMainCoopRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_FinishMainCoopRsp_descriptor,
-        new java.lang.String[] { "Id", "EndingSavePointId", "Retcode", });
+        new java.lang.String[] { "EndingSavePointId", "Retcode", "Id", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

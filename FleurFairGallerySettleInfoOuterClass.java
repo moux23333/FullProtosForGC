@@ -19,23 +19,17 @@ public final class FleurFairGallerySettleInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 energy = 2;</code>
-     * @return The energy.
+     * <code>bool is_success = 8;</code>
+     * @return The isSuccess.
      */
-    int getEnergy();
+    boolean getIsSuccess();
 
     /**
-     * <code>uint32 gallery_stage_index = 11;</code>
-     * @return The galleryStageIndex.
-     */
-    int getGalleryStageIndex();
-
-    /**
-     * <code>map&lt;uint32, int32&gt; energy_stat_map = 6;</code>
+     * <code>map&lt;uint32, int32&gt; energy_stat_map = 2;</code>
      */
     int getEnergyStatMapCount();
     /**
-     * <code>map&lt;uint32, int32&gt; energy_stat_map = 6;</code>
+     * <code>map&lt;uint32, int32&gt; energy_stat_map = 2;</code>
      */
     boolean containsEnergyStatMap(
         int key);
@@ -46,35 +40,41 @@ public final class FleurFairGallerySettleInfoOuterClass {
     java.util.Map<java.lang.Integer, java.lang.Integer>
     getEnergyStatMap();
     /**
-     * <code>map&lt;uint32, int32&gt; energy_stat_map = 6;</code>
+     * <code>map&lt;uint32, int32&gt; energy_stat_map = 2;</code>
      */
     java.util.Map<java.lang.Integer, java.lang.Integer>
     getEnergyStatMapMap();
     /**
-     * <code>map&lt;uint32, int32&gt; energy_stat_map = 6;</code>
+     * <code>map&lt;uint32, int32&gt; energy_stat_map = 2;</code>
      */
 
     int getEnergyStatMapOrDefault(
         int key,
         int defaultValue);
     /**
-     * <code>map&lt;uint32, int32&gt; energy_stat_map = 6;</code>
+     * <code>map&lt;uint32, int32&gt; energy_stat_map = 2;</code>
      */
 
     int getEnergyStatMapOrThrow(
         int key);
 
     /**
-     * <code>uint32 gallery_stage_count = 9;</code>
+     * <code>uint32 energy = 3;</code>
+     * @return The energy.
+     */
+    int getEnergy();
+
+    /**
+     * <code>uint32 gallery_stage_index = 6;</code>
+     * @return The galleryStageIndex.
+     */
+    int getGalleryStageIndex();
+
+    /**
+     * <code>uint32 gallery_stage_count = 15;</code>
      * @return The galleryStageCount.
      */
     int getGalleryStageCount();
-
-    /**
-     * <code>bool is_success = 1;</code>
-     * @return The isSuccess.
-     */
-    boolean getIsSuccess();
   }
   /**
    * Protobuf type {@code FleurFairGallerySettleInfo}
@@ -122,17 +122,7 @@ public final class FleurFairGallerySettleInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
-
-              isSuccess_ = input.readBool();
-              break;
-            }
-            case 16: {
-
-              energy_ = input.readUInt32();
-              break;
-            }
-            case 50: {
+            case 18: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 energyStatMap_ = com.google.protobuf.MapField.newMapField(
                     EnergyStatMapDefaultEntryHolder.defaultEntry);
@@ -145,14 +135,24 @@ public final class FleurFairGallerySettleInfoOuterClass {
                   energyStatMap__.getKey(), energyStatMap__.getValue());
               break;
             }
-            case 72: {
+            case 24: {
 
-              galleryStageCount_ = input.readUInt32();
+              energy_ = input.readUInt32();
               break;
             }
-            case 88: {
+            case 48: {
 
               galleryStageIndex_ = input.readUInt32();
+              break;
+            }
+            case 64: {
+
+              isSuccess_ = input.readBool();
+              break;
+            }
+            case 120: {
+
+              galleryStageCount_ = input.readUInt32();
               break;
             }
             default: {
@@ -184,7 +184,7 @@ public final class FleurFairGallerySettleInfoOuterClass {
     protected com.google.protobuf.MapField internalGetMapField(
         int number) {
       switch (number) {
-        case 6:
+        case 2:
           return internalGetEnergyStatMap();
         default:
           throw new RuntimeException(
@@ -199,29 +199,18 @@ public final class FleurFairGallerySettleInfoOuterClass {
               emu.grasscutter.net.proto.FleurFairGallerySettleInfoOuterClass.FleurFairGallerySettleInfo.class, emu.grasscutter.net.proto.FleurFairGallerySettleInfoOuterClass.FleurFairGallerySettleInfo.Builder.class);
     }
 
-    public static final int ENERGY_FIELD_NUMBER = 2;
-    private int energy_;
+    public static final int IS_SUCCESS_FIELD_NUMBER = 8;
+    private boolean isSuccess_;
     /**
-     * <code>uint32 energy = 2;</code>
-     * @return The energy.
+     * <code>bool is_success = 8;</code>
+     * @return The isSuccess.
      */
     @java.lang.Override
-    public int getEnergy() {
-      return energy_;
+    public boolean getIsSuccess() {
+      return isSuccess_;
     }
 
-    public static final int GALLERY_STAGE_INDEX_FIELD_NUMBER = 11;
-    private int galleryStageIndex_;
-    /**
-     * <code>uint32 gallery_stage_index = 11;</code>
-     * @return The galleryStageIndex.
-     */
-    @java.lang.Override
-    public int getGalleryStageIndex() {
-      return galleryStageIndex_;
-    }
-
-    public static final int ENERGY_STAT_MAP_FIELD_NUMBER = 6;
+    public static final int ENERGY_STAT_MAP_FIELD_NUMBER = 2;
     private static final class EnergyStatMapDefaultEntryHolder {
       static final com.google.protobuf.MapEntry<
           java.lang.Integer, java.lang.Integer> defaultEntry =
@@ -248,7 +237,7 @@ public final class FleurFairGallerySettleInfoOuterClass {
       return internalGetEnergyStatMap().getMap().size();
     }
     /**
-     * <code>map&lt;uint32, int32&gt; energy_stat_map = 6;</code>
+     * <code>map&lt;uint32, int32&gt; energy_stat_map = 2;</code>
      */
 
     @java.lang.Override
@@ -266,7 +255,7 @@ public final class FleurFairGallerySettleInfoOuterClass {
       return getEnergyStatMapMap();
     }
     /**
-     * <code>map&lt;uint32, int32&gt; energy_stat_map = 6;</code>
+     * <code>map&lt;uint32, int32&gt; energy_stat_map = 2;</code>
      */
     @java.lang.Override
 
@@ -274,7 +263,7 @@ public final class FleurFairGallerySettleInfoOuterClass {
       return internalGetEnergyStatMap().getMap();
     }
     /**
-     * <code>map&lt;uint32, int32&gt; energy_stat_map = 6;</code>
+     * <code>map&lt;uint32, int32&gt; energy_stat_map = 2;</code>
      */
     @java.lang.Override
 
@@ -287,7 +276,7 @@ public final class FleurFairGallerySettleInfoOuterClass {
       return map.containsKey(key) ? map.get(key) : defaultValue;
     }
     /**
-     * <code>map&lt;uint32, int32&gt; energy_stat_map = 6;</code>
+     * <code>map&lt;uint32, int32&gt; energy_stat_map = 2;</code>
      */
     @java.lang.Override
 
@@ -302,26 +291,37 @@ public final class FleurFairGallerySettleInfoOuterClass {
       return map.get(key);
     }
 
-    public static final int GALLERY_STAGE_COUNT_FIELD_NUMBER = 9;
+    public static final int ENERGY_FIELD_NUMBER = 3;
+    private int energy_;
+    /**
+     * <code>uint32 energy = 3;</code>
+     * @return The energy.
+     */
+    @java.lang.Override
+    public int getEnergy() {
+      return energy_;
+    }
+
+    public static final int GALLERY_STAGE_INDEX_FIELD_NUMBER = 6;
+    private int galleryStageIndex_;
+    /**
+     * <code>uint32 gallery_stage_index = 6;</code>
+     * @return The galleryStageIndex.
+     */
+    @java.lang.Override
+    public int getGalleryStageIndex() {
+      return galleryStageIndex_;
+    }
+
+    public static final int GALLERY_STAGE_COUNT_FIELD_NUMBER = 15;
     private int galleryStageCount_;
     /**
-     * <code>uint32 gallery_stage_count = 9;</code>
+     * <code>uint32 gallery_stage_count = 15;</code>
      * @return The galleryStageCount.
      */
     @java.lang.Override
     public int getGalleryStageCount() {
       return galleryStageCount_;
-    }
-
-    public static final int IS_SUCCESS_FIELD_NUMBER = 1;
-    private boolean isSuccess_;
-    /**
-     * <code>bool is_success = 1;</code>
-     * @return The isSuccess.
-     */
-    @java.lang.Override
-    public boolean getIsSuccess() {
-      return isSuccess_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -338,23 +338,23 @@ public final class FleurFairGallerySettleInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (isSuccess_ != false) {
-        output.writeBool(1, isSuccess_);
-      }
-      if (energy_ != 0) {
-        output.writeUInt32(2, energy_);
-      }
       com.google.protobuf.GeneratedMessageV3
         .serializeIntegerMapTo(
           output,
           internalGetEnergyStatMap(),
           EnergyStatMapDefaultEntryHolder.defaultEntry,
-          6);
-      if (galleryStageCount_ != 0) {
-        output.writeUInt32(9, galleryStageCount_);
+          2);
+      if (energy_ != 0) {
+        output.writeUInt32(3, energy_);
       }
       if (galleryStageIndex_ != 0) {
-        output.writeUInt32(11, galleryStageIndex_);
+        output.writeUInt32(6, galleryStageIndex_);
+      }
+      if (isSuccess_ != false) {
+        output.writeBool(8, isSuccess_);
+      }
+      if (galleryStageCount_ != 0) {
+        output.writeUInt32(15, galleryStageCount_);
       }
       unknownFields.writeTo(output);
     }
@@ -365,14 +365,6 @@ public final class FleurFairGallerySettleInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (isSuccess_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(1, isSuccess_);
-      }
-      if (energy_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, energy_);
-      }
       for (java.util.Map.Entry<java.lang.Integer, java.lang.Integer> entry
            : internalGetEnergyStatMap().getMap().entrySet()) {
         com.google.protobuf.MapEntry<java.lang.Integer, java.lang.Integer>
@@ -381,15 +373,23 @@ public final class FleurFairGallerySettleInfoOuterClass {
             .setValue(entry.getValue())
             .build();
         size += com.google.protobuf.CodedOutputStream
-            .computeMessageSize(6, energyStatMap__);
+            .computeMessageSize(2, energyStatMap__);
       }
-      if (galleryStageCount_ != 0) {
+      if (energy_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, galleryStageCount_);
+          .computeUInt32Size(3, energy_);
       }
       if (galleryStageIndex_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, galleryStageIndex_);
+          .computeUInt32Size(6, galleryStageIndex_);
+      }
+      if (isSuccess_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(8, isSuccess_);
+      }
+      if (galleryStageCount_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(15, galleryStageCount_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -406,16 +406,16 @@ public final class FleurFairGallerySettleInfoOuterClass {
       }
       emu.grasscutter.net.proto.FleurFairGallerySettleInfoOuterClass.FleurFairGallerySettleInfo other = (emu.grasscutter.net.proto.FleurFairGallerySettleInfoOuterClass.FleurFairGallerySettleInfo) obj;
 
+      if (getIsSuccess()
+          != other.getIsSuccess()) return false;
+      if (!internalGetEnergyStatMap().equals(
+          other.internalGetEnergyStatMap())) return false;
       if (getEnergy()
           != other.getEnergy()) return false;
       if (getGalleryStageIndex()
           != other.getGalleryStageIndex()) return false;
-      if (!internalGetEnergyStatMap().equals(
-          other.internalGetEnergyStatMap())) return false;
       if (getGalleryStageCount()
           != other.getGalleryStageCount()) return false;
-      if (getIsSuccess()
-          != other.getIsSuccess()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -427,19 +427,19 @@ public final class FleurFairGallerySettleInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + ENERGY_FIELD_NUMBER;
-      hash = (53 * hash) + getEnergy();
-      hash = (37 * hash) + GALLERY_STAGE_INDEX_FIELD_NUMBER;
-      hash = (53 * hash) + getGalleryStageIndex();
+      hash = (37 * hash) + IS_SUCCESS_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getIsSuccess());
       if (!internalGetEnergyStatMap().getMap().isEmpty()) {
         hash = (37 * hash) + ENERGY_STAT_MAP_FIELD_NUMBER;
         hash = (53 * hash) + internalGetEnergyStatMap().hashCode();
       }
+      hash = (37 * hash) + ENERGY_FIELD_NUMBER;
+      hash = (53 * hash) + getEnergy();
+      hash = (37 * hash) + GALLERY_STAGE_INDEX_FIELD_NUMBER;
+      hash = (53 * hash) + getGalleryStageIndex();
       hash = (37 * hash) + GALLERY_STAGE_COUNT_FIELD_NUMBER;
       hash = (53 * hash) + getGalleryStageCount();
-      hash = (37 * hash) + IS_SUCCESS_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsSuccess());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -551,7 +551,7 @@ public final class FleurFairGallerySettleInfoOuterClass {
       protected com.google.protobuf.MapField internalGetMapField(
           int number) {
         switch (number) {
-          case 6:
+          case 2:
             return internalGetEnergyStatMap();
           default:
             throw new RuntimeException(
@@ -562,7 +562,7 @@ public final class FleurFairGallerySettleInfoOuterClass {
       protected com.google.protobuf.MapField internalGetMutableMapField(
           int number) {
         switch (number) {
-          case 6:
+          case 2:
             return internalGetMutableEnergyStatMap();
           default:
             throw new RuntimeException(
@@ -595,14 +595,14 @@ public final class FleurFairGallerySettleInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        isSuccess_ = false;
+
+        internalGetMutableEnergyStatMap().clear();
         energy_ = 0;
 
         galleryStageIndex_ = 0;
 
-        internalGetMutableEnergyStatMap().clear();
         galleryStageCount_ = 0;
-
-        isSuccess_ = false;
 
         return this;
       }
@@ -631,12 +631,12 @@ public final class FleurFairGallerySettleInfoOuterClass {
       public emu.grasscutter.net.proto.FleurFairGallerySettleInfoOuterClass.FleurFairGallerySettleInfo buildPartial() {
         emu.grasscutter.net.proto.FleurFairGallerySettleInfoOuterClass.FleurFairGallerySettleInfo result = new emu.grasscutter.net.proto.FleurFairGallerySettleInfoOuterClass.FleurFairGallerySettleInfo(this);
         int from_bitField0_ = bitField0_;
-        result.energy_ = energy_;
-        result.galleryStageIndex_ = galleryStageIndex_;
+        result.isSuccess_ = isSuccess_;
         result.energyStatMap_ = internalGetEnergyStatMap();
         result.energyStatMap_.makeImmutable();
+        result.energy_ = energy_;
+        result.galleryStageIndex_ = galleryStageIndex_;
         result.galleryStageCount_ = galleryStageCount_;
-        result.isSuccess_ = isSuccess_;
         onBuilt();
         return result;
       }
@@ -685,19 +685,19 @@ public final class FleurFairGallerySettleInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.FleurFairGallerySettleInfoOuterClass.FleurFairGallerySettleInfo other) {
         if (other == emu.grasscutter.net.proto.FleurFairGallerySettleInfoOuterClass.FleurFairGallerySettleInfo.getDefaultInstance()) return this;
+        if (other.getIsSuccess() != false) {
+          setIsSuccess(other.getIsSuccess());
+        }
+        internalGetMutableEnergyStatMap().mergeFrom(
+            other.internalGetEnergyStatMap());
         if (other.getEnergy() != 0) {
           setEnergy(other.getEnergy());
         }
         if (other.getGalleryStageIndex() != 0) {
           setGalleryStageIndex(other.getGalleryStageIndex());
         }
-        internalGetMutableEnergyStatMap().mergeFrom(
-            other.internalGetEnergyStatMap());
         if (other.getGalleryStageCount() != 0) {
           setGalleryStageCount(other.getGalleryStageCount());
-        }
-        if (other.getIsSuccess() != false) {
-          setIsSuccess(other.getIsSuccess());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -729,64 +729,33 @@ public final class FleurFairGallerySettleInfoOuterClass {
       }
       private int bitField0_;
 
-      private int energy_ ;
+      private boolean isSuccess_ ;
       /**
-       * <code>uint32 energy = 2;</code>
-       * @return The energy.
+       * <code>bool is_success = 8;</code>
+       * @return The isSuccess.
        */
       @java.lang.Override
-      public int getEnergy() {
-        return energy_;
+      public boolean getIsSuccess() {
+        return isSuccess_;
       }
       /**
-       * <code>uint32 energy = 2;</code>
-       * @param value The energy to set.
+       * <code>bool is_success = 8;</code>
+       * @param value The isSuccess to set.
        * @return This builder for chaining.
        */
-      public Builder setEnergy(int value) {
+      public Builder setIsSuccess(boolean value) {
         
-        energy_ = value;
+        isSuccess_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 energy = 2;</code>
+       * <code>bool is_success = 8;</code>
        * @return This builder for chaining.
        */
-      public Builder clearEnergy() {
+      public Builder clearIsSuccess() {
         
-        energy_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int galleryStageIndex_ ;
-      /**
-       * <code>uint32 gallery_stage_index = 11;</code>
-       * @return The galleryStageIndex.
-       */
-      @java.lang.Override
-      public int getGalleryStageIndex() {
-        return galleryStageIndex_;
-      }
-      /**
-       * <code>uint32 gallery_stage_index = 11;</code>
-       * @param value The galleryStageIndex to set.
-       * @return This builder for chaining.
-       */
-      public Builder setGalleryStageIndex(int value) {
-        
-        galleryStageIndex_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 gallery_stage_index = 11;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearGalleryStageIndex() {
-        
-        galleryStageIndex_ = 0;
+        isSuccess_ = false;
         onChanged();
         return this;
       }
@@ -818,7 +787,7 @@ public final class FleurFairGallerySettleInfoOuterClass {
         return internalGetEnergyStatMap().getMap().size();
       }
       /**
-       * <code>map&lt;uint32, int32&gt; energy_stat_map = 6;</code>
+       * <code>map&lt;uint32, int32&gt; energy_stat_map = 2;</code>
        */
 
       @java.lang.Override
@@ -836,7 +805,7 @@ public final class FleurFairGallerySettleInfoOuterClass {
         return getEnergyStatMapMap();
       }
       /**
-       * <code>map&lt;uint32, int32&gt; energy_stat_map = 6;</code>
+       * <code>map&lt;uint32, int32&gt; energy_stat_map = 2;</code>
        */
       @java.lang.Override
 
@@ -844,7 +813,7 @@ public final class FleurFairGallerySettleInfoOuterClass {
         return internalGetEnergyStatMap().getMap();
       }
       /**
-       * <code>map&lt;uint32, int32&gt; energy_stat_map = 6;</code>
+       * <code>map&lt;uint32, int32&gt; energy_stat_map = 2;</code>
        */
       @java.lang.Override
 
@@ -857,7 +826,7 @@ public final class FleurFairGallerySettleInfoOuterClass {
         return map.containsKey(key) ? map.get(key) : defaultValue;
       }
       /**
-       * <code>map&lt;uint32, int32&gt; energy_stat_map = 6;</code>
+       * <code>map&lt;uint32, int32&gt; energy_stat_map = 2;</code>
        */
       @java.lang.Override
 
@@ -878,7 +847,7 @@ public final class FleurFairGallerySettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>map&lt;uint32, int32&gt; energy_stat_map = 6;</code>
+       * <code>map&lt;uint32, int32&gt; energy_stat_map = 2;</code>
        */
 
       public Builder removeEnergyStatMap(
@@ -897,7 +866,7 @@ public final class FleurFairGallerySettleInfoOuterClass {
         return internalGetMutableEnergyStatMap().getMutableMap();
       }
       /**
-       * <code>map&lt;uint32, int32&gt; energy_stat_map = 6;</code>
+       * <code>map&lt;uint32, int32&gt; energy_stat_map = 2;</code>
        */
       public Builder putEnergyStatMap(
           int key,
@@ -909,7 +878,7 @@ public final class FleurFairGallerySettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>map&lt;uint32, int32&gt; energy_stat_map = 6;</code>
+       * <code>map&lt;uint32, int32&gt; energy_stat_map = 2;</code>
        */
 
       public Builder putAllEnergyStatMap(
@@ -919,9 +888,71 @@ public final class FleurFairGallerySettleInfoOuterClass {
         return this;
       }
 
+      private int energy_ ;
+      /**
+       * <code>uint32 energy = 3;</code>
+       * @return The energy.
+       */
+      @java.lang.Override
+      public int getEnergy() {
+        return energy_;
+      }
+      /**
+       * <code>uint32 energy = 3;</code>
+       * @param value The energy to set.
+       * @return This builder for chaining.
+       */
+      public Builder setEnergy(int value) {
+        
+        energy_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 energy = 3;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearEnergy() {
+        
+        energy_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int galleryStageIndex_ ;
+      /**
+       * <code>uint32 gallery_stage_index = 6;</code>
+       * @return The galleryStageIndex.
+       */
+      @java.lang.Override
+      public int getGalleryStageIndex() {
+        return galleryStageIndex_;
+      }
+      /**
+       * <code>uint32 gallery_stage_index = 6;</code>
+       * @param value The galleryStageIndex to set.
+       * @return This builder for chaining.
+       */
+      public Builder setGalleryStageIndex(int value) {
+        
+        galleryStageIndex_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 gallery_stage_index = 6;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearGalleryStageIndex() {
+        
+        galleryStageIndex_ = 0;
+        onChanged();
+        return this;
+      }
+
       private int galleryStageCount_ ;
       /**
-       * <code>uint32 gallery_stage_count = 9;</code>
+       * <code>uint32 gallery_stage_count = 15;</code>
        * @return The galleryStageCount.
        */
       @java.lang.Override
@@ -929,7 +960,7 @@ public final class FleurFairGallerySettleInfoOuterClass {
         return galleryStageCount_;
       }
       /**
-       * <code>uint32 gallery_stage_count = 9;</code>
+       * <code>uint32 gallery_stage_count = 15;</code>
        * @param value The galleryStageCount to set.
        * @return This builder for chaining.
        */
@@ -940,43 +971,12 @@ public final class FleurFairGallerySettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 gallery_stage_count = 9;</code>
+       * <code>uint32 gallery_stage_count = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearGalleryStageCount() {
         
         galleryStageCount_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private boolean isSuccess_ ;
-      /**
-       * <code>bool is_success = 1;</code>
-       * @return The isSuccess.
-       */
-      @java.lang.Override
-      public boolean getIsSuccess() {
-        return isSuccess_;
-      }
-      /**
-       * <code>bool is_success = 1;</code>
-       * @param value The isSuccess to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsSuccess(boolean value) {
-        
-        isSuccess_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_success = 1;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsSuccess() {
-        
-        isSuccess_ = false;
         onChanged();
         return this;
       }
@@ -1053,11 +1053,11 @@ public final class FleurFairGallerySettleInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n FleurFairGallerySettleInfo.proto\"\371\001\n\032F" +
-      "leurFairGallerySettleInfo\022\016\n\006energy\030\002 \001(" +
-      "\r\022\033\n\023gallery_stage_index\030\013 \001(\r\022G\n\017energy" +
-      "_stat_map\030\006 \003(\0132..FleurFairGallerySettle" +
-      "Info.EnergyStatMapEntry\022\033\n\023gallery_stage" +
-      "_count\030\t \001(\r\022\022\n\nis_success\030\001 \001(\010\0324\n\022Ener" +
+      "leurFairGallerySettleInfo\022\022\n\nis_success\030" +
+      "\010 \001(\010\022G\n\017energy_stat_map\030\002 \003(\0132..FleurFa" +
+      "irGallerySettleInfo.EnergyStatMapEntry\022\016" +
+      "\n\006energy\030\003 \001(\r\022\033\n\023gallery_stage_index\030\006 " +
+      "\001(\r\022\033\n\023gallery_stage_count\030\017 \001(\r\0324\n\022Ener" +
       "gyStatMapEntry\022\013\n\003key\030\001 \001(\r\022\r\n\005value\030\002 \001" +
       "(\005:\0028\001B\033\n\031emu.grasscutter.net.protob\006pro" +
       "to3"
@@ -1071,7 +1071,7 @@ public final class FleurFairGallerySettleInfoOuterClass {
     internal_static_FleurFairGallerySettleInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_FleurFairGallerySettleInfo_descriptor,
-        new java.lang.String[] { "Energy", "GalleryStageIndex", "EnergyStatMap", "GalleryStageCount", "IsSuccess", });
+        new java.lang.String[] { "IsSuccess", "EnergyStatMap", "Energy", "GalleryStageIndex", "GalleryStageCount", });
     internal_static_FleurFairGallerySettleInfo_EnergyStatMapEntry_descriptor =
       internal_static_FleurFairGallerySettleInfo_descriptor.getNestedTypes().get(0);
     internal_static_FleurFairGallerySettleInfo_EnergyStatMapEntry_fieldAccessorTable = new

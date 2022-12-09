@@ -20,9 +20,13 @@ public final class FleurFairFinishGalleryStageNotifyOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 5342
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 5311;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code FleurFairFinishGalleryStageNotify}
@@ -247,9 +251,13 @@ public final class FleurFairFinishGalleryStageNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 5342
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 5311;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code FleurFairFinishGalleryStageNotify}

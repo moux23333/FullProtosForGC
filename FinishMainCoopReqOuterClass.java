@@ -19,23 +19,27 @@ public final class FinishMainCoopReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 id = 10;</code>
+     * <code>uint32 id = 14;</code>
      * @return The id.
      */
     int getId();
 
     /**
-     * <code>uint32 ending_save_point_id = 1;</code>
+     * <code>uint32 ending_save_point_id = 3;</code>
      * @return The endingSavePointId.
      */
     int getEndingSavePointId();
   }
   /**
    * <pre>
-   * CmdId: 1952
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 1977;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code FinishMainCoopReq}
@@ -82,12 +86,12 @@ public final class FinishMainCoopReqOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
+            case 24: {
 
               endingSavePointId_ = input.readUInt32();
               break;
             }
-            case 80: {
+            case 112: {
 
               id_ = input.readUInt32();
               break;
@@ -124,10 +128,10 @@ public final class FinishMainCoopReqOuterClass {
               emu.grasscutter.net.proto.FinishMainCoopReqOuterClass.FinishMainCoopReq.class, emu.grasscutter.net.proto.FinishMainCoopReqOuterClass.FinishMainCoopReq.Builder.class);
     }
 
-    public static final int ID_FIELD_NUMBER = 10;
+    public static final int ID_FIELD_NUMBER = 14;
     private int id_;
     /**
-     * <code>uint32 id = 10;</code>
+     * <code>uint32 id = 14;</code>
      * @return The id.
      */
     @java.lang.Override
@@ -135,10 +139,10 @@ public final class FinishMainCoopReqOuterClass {
       return id_;
     }
 
-    public static final int ENDING_SAVE_POINT_ID_FIELD_NUMBER = 1;
+    public static final int ENDING_SAVE_POINT_ID_FIELD_NUMBER = 3;
     private int endingSavePointId_;
     /**
-     * <code>uint32 ending_save_point_id = 1;</code>
+     * <code>uint32 ending_save_point_id = 3;</code>
      * @return The endingSavePointId.
      */
     @java.lang.Override
@@ -161,10 +165,10 @@ public final class FinishMainCoopReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (endingSavePointId_ != 0) {
-        output.writeUInt32(1, endingSavePointId_);
+        output.writeUInt32(3, endingSavePointId_);
       }
       if (id_ != 0) {
-        output.writeUInt32(10, id_);
+        output.writeUInt32(14, id_);
       }
       unknownFields.writeTo(output);
     }
@@ -177,11 +181,11 @@ public final class FinishMainCoopReqOuterClass {
       size = 0;
       if (endingSavePointId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, endingSavePointId_);
+          .computeUInt32Size(3, endingSavePointId_);
       }
       if (id_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, id_);
+          .computeUInt32Size(14, id_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -314,10 +318,14 @@ public final class FinishMainCoopReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 1952
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 1977;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code FinishMainCoopReq}
@@ -474,7 +482,7 @@ public final class FinishMainCoopReqOuterClass {
 
       private int id_ ;
       /**
-       * <code>uint32 id = 10;</code>
+       * <code>uint32 id = 14;</code>
        * @return The id.
        */
       @java.lang.Override
@@ -482,7 +490,7 @@ public final class FinishMainCoopReqOuterClass {
         return id_;
       }
       /**
-       * <code>uint32 id = 10;</code>
+       * <code>uint32 id = 14;</code>
        * @param value The id to set.
        * @return This builder for chaining.
        */
@@ -493,7 +501,7 @@ public final class FinishMainCoopReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 id = 10;</code>
+       * <code>uint32 id = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearId() {
@@ -505,7 +513,7 @@ public final class FinishMainCoopReqOuterClass {
 
       private int endingSavePointId_ ;
       /**
-       * <code>uint32 ending_save_point_id = 1;</code>
+       * <code>uint32 ending_save_point_id = 3;</code>
        * @return The endingSavePointId.
        */
       @java.lang.Override
@@ -513,7 +521,7 @@ public final class FinishMainCoopReqOuterClass {
         return endingSavePointId_;
       }
       /**
-       * <code>uint32 ending_save_point_id = 1;</code>
+       * <code>uint32 ending_save_point_id = 3;</code>
        * @param value The endingSavePointId to set.
        * @return This builder for chaining.
        */
@@ -524,7 +532,7 @@ public final class FinishMainCoopReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 ending_save_point_id = 1;</code>
+       * <code>uint32 ending_save_point_id = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearEndingSavePointId() {
@@ -601,8 +609,8 @@ public final class FinishMainCoopReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\027FinishMainCoopReq.proto\"=\n\021FinishMainC" +
-      "oopReq\022\n\n\002id\030\n \001(\r\022\034\n\024ending_save_point_" +
-      "id\030\001 \001(\rB\033\n\031emu.grasscutter.net.protob\006p" +
+      "oopReq\022\n\n\002id\030\016 \001(\r\022\034\n\024ending_save_point_" +
+      "id\030\003 \001(\rB\033\n\031emu.grasscutter.net.protob\006p" +
       "roto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

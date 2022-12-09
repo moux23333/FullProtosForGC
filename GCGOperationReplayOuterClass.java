@@ -19,39 +19,87 @@ public final class GCGOperationReplayOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 game_id = 1;</code>
-     * @return The gameId.
+     * <code>repeated .Unk3300_PPKPCOCOMDH Unk3300_FKBLJIMBHEA = 6;</code>
      */
-    int getGameId();
+    java.util.List<emu.grasscutter.net.proto.Unk3300PPKPCOCOMDH.Unk3300_PPKPCOCOMDH> 
+        getUnk3300FKBLJIMBHEAList();
+    /**
+     * <code>repeated .Unk3300_PPKPCOCOMDH Unk3300_FKBLJIMBHEA = 6;</code>
+     */
+    emu.grasscutter.net.proto.Unk3300PPKPCOCOMDH.Unk3300_PPKPCOCOMDH getUnk3300FKBLJIMBHEA(int index);
+    /**
+     * <code>repeated .Unk3300_PPKPCOCOMDH Unk3300_FKBLJIMBHEA = 6;</code>
+     */
+    int getUnk3300FKBLJIMBHEACount();
+    /**
+     * <code>repeated .Unk3300_PPKPCOCOMDH Unk3300_FKBLJIMBHEA = 6;</code>
+     */
+    java.util.List<? extends emu.grasscutter.net.proto.Unk3300PPKPCOCOMDH.Unk3300_PPKPCOCOMDHOrBuilder> 
+        getUnk3300FKBLJIMBHEAOrBuilderList();
+    /**
+     * <code>repeated .Unk3300_PPKPCOCOMDH Unk3300_FKBLJIMBHEA = 6;</code>
+     */
+    emu.grasscutter.net.proto.Unk3300PPKPCOCOMDH.Unk3300_PPKPCOCOMDHOrBuilder getUnk3300FKBLJIMBHEAOrBuilder(
+        int index);
 
     /**
-     * <code>uint32 seed = 11;</code>
+     * <code>uint32 seed = 1;</code>
      * @return The seed.
      */
     int getSeed();
 
     /**
-     * <code>repeated .GCGOperationData operation_data_list = 9;</code>
+     * <code>repeated .GCGReplayOperationData operation_data_list = 8;</code>
      */
-    java.util.List<emu.grasscutter.net.proto.GCGOperationDataOuterClass.GCGOperationData> 
+    java.util.List<emu.grasscutter.net.proto.GCGReplayOperationDataOuterClass.GCGReplayOperationData> 
         getOperationDataListList();
     /**
-     * <code>repeated .GCGOperationData operation_data_list = 9;</code>
+     * <code>repeated .GCGReplayOperationData operation_data_list = 8;</code>
      */
-    emu.grasscutter.net.proto.GCGOperationDataOuterClass.GCGOperationData getOperationDataList(int index);
+    emu.grasscutter.net.proto.GCGReplayOperationDataOuterClass.GCGReplayOperationData getOperationDataList(int index);
     /**
-     * <code>repeated .GCGOperationData operation_data_list = 9;</code>
+     * <code>repeated .GCGReplayOperationData operation_data_list = 8;</code>
      */
     int getOperationDataListCount();
     /**
-     * <code>repeated .GCGOperationData operation_data_list = 9;</code>
+     * <code>repeated .GCGReplayOperationData operation_data_list = 8;</code>
      */
-    java.util.List<? extends emu.grasscutter.net.proto.GCGOperationDataOuterClass.GCGOperationDataOrBuilder> 
+    java.util.List<? extends emu.grasscutter.net.proto.GCGReplayOperationDataOuterClass.GCGReplayOperationDataOrBuilder> 
         getOperationDataListOrBuilderList();
     /**
-     * <code>repeated .GCGOperationData operation_data_list = 9;</code>
+     * <code>repeated .GCGReplayOperationData operation_data_list = 8;</code>
      */
-    emu.grasscutter.net.proto.GCGOperationDataOuterClass.GCGOperationDataOrBuilder getOperationDataListOrBuilder(
+    emu.grasscutter.net.proto.GCGReplayOperationDataOuterClass.GCGReplayOperationDataOrBuilder getOperationDataListOrBuilder(
+        int index);
+
+    /**
+     * <code>uint32 game_id = 2;</code>
+     * @return The gameId.
+     */
+    int getGameId();
+
+    /**
+     * <code>repeated .GCGReplayControllerData controller_data_list = 7;</code>
+     */
+    java.util.List<emu.grasscutter.net.proto.GCGReplayControllerDataOuterClass.GCGReplayControllerData> 
+        getControllerDataListList();
+    /**
+     * <code>repeated .GCGReplayControllerData controller_data_list = 7;</code>
+     */
+    emu.grasscutter.net.proto.GCGReplayControllerDataOuterClass.GCGReplayControllerData getControllerDataList(int index);
+    /**
+     * <code>repeated .GCGReplayControllerData controller_data_list = 7;</code>
+     */
+    int getControllerDataListCount();
+    /**
+     * <code>repeated .GCGReplayControllerData controller_data_list = 7;</code>
+     */
+    java.util.List<? extends emu.grasscutter.net.proto.GCGReplayControllerDataOuterClass.GCGReplayControllerDataOrBuilder> 
+        getControllerDataListOrBuilderList();
+    /**
+     * <code>repeated .GCGReplayControllerData controller_data_list = 7;</code>
+     */
+    emu.grasscutter.net.proto.GCGReplayControllerDataOuterClass.GCGReplayControllerDataOrBuilder getControllerDataListOrBuilder(
         int index);
   }
   /**
@@ -67,7 +115,9 @@ public final class GCGOperationReplayOuterClass {
       super(builder);
     }
     private GCGOperationReplay() {
+      unk3300FKBLJIMBHEA_ = java.util.Collections.emptyList();
       operationDataList_ = java.util.Collections.emptyList();
+      controllerDataList_ = java.util.Collections.emptyList();
     }
 
     @java.lang.Override
@@ -103,21 +153,39 @@ public final class GCGOperationReplayOuterClass {
               break;
             case 8: {
 
+              seed_ = input.readUInt32();
+              break;
+            }
+            case 16: {
+
               gameId_ = input.readUInt32();
               break;
             }
-            case 74: {
+            case 50: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                operationDataList_ = new java.util.ArrayList<emu.grasscutter.net.proto.GCGOperationDataOuterClass.GCGOperationData>();
+                unk3300FKBLJIMBHEA_ = new java.util.ArrayList<emu.grasscutter.net.proto.Unk3300PPKPCOCOMDH.Unk3300_PPKPCOCOMDH>();
                 mutable_bitField0_ |= 0x00000001;
               }
-              operationDataList_.add(
-                  input.readMessage(emu.grasscutter.net.proto.GCGOperationDataOuterClass.GCGOperationData.parser(), extensionRegistry));
+              unk3300FKBLJIMBHEA_.add(
+                  input.readMessage(emu.grasscutter.net.proto.Unk3300PPKPCOCOMDH.Unk3300_PPKPCOCOMDH.parser(), extensionRegistry));
               break;
             }
-            case 88: {
-
-              seed_ = input.readUInt32();
+            case 58: {
+              if (!((mutable_bitField0_ & 0x00000004) != 0)) {
+                controllerDataList_ = new java.util.ArrayList<emu.grasscutter.net.proto.GCGReplayControllerDataOuterClass.GCGReplayControllerData>();
+                mutable_bitField0_ |= 0x00000004;
+              }
+              controllerDataList_.add(
+                  input.readMessage(emu.grasscutter.net.proto.GCGReplayControllerDataOuterClass.GCGReplayControllerData.parser(), extensionRegistry));
+              break;
+            }
+            case 66: {
+              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
+                operationDataList_ = new java.util.ArrayList<emu.grasscutter.net.proto.GCGReplayOperationDataOuterClass.GCGReplayOperationData>();
+                mutable_bitField0_ |= 0x00000002;
+              }
+              operationDataList_.add(
+                  input.readMessage(emu.grasscutter.net.proto.GCGReplayOperationDataOuterClass.GCGReplayOperationData.parser(), extensionRegistry));
               break;
             }
             default: {
@@ -136,6 +204,12 @@ public final class GCGOperationReplayOuterClass {
             e).setUnfinishedMessage(this);
       } finally {
         if (((mutable_bitField0_ & 0x00000001) != 0)) {
+          unk3300FKBLJIMBHEA_ = java.util.Collections.unmodifiableList(unk3300FKBLJIMBHEA_);
+        }
+        if (((mutable_bitField0_ & 0x00000004) != 0)) {
+          controllerDataList_ = java.util.Collections.unmodifiableList(controllerDataList_);
+        }
+        if (((mutable_bitField0_ & 0x00000002) != 0)) {
           operationDataList_ = java.util.Collections.unmodifiableList(operationDataList_);
         }
         this.unknownFields = unknownFields.build();
@@ -155,21 +229,50 @@ public final class GCGOperationReplayOuterClass {
               emu.grasscutter.net.proto.GCGOperationReplayOuterClass.GCGOperationReplay.class, emu.grasscutter.net.proto.GCGOperationReplayOuterClass.GCGOperationReplay.Builder.class);
     }
 
-    public static final int GAME_ID_FIELD_NUMBER = 1;
-    private int gameId_;
+    public static final int UNK3300_FKBLJIMBHEA_FIELD_NUMBER = 6;
+    private java.util.List<emu.grasscutter.net.proto.Unk3300PPKPCOCOMDH.Unk3300_PPKPCOCOMDH> unk3300FKBLJIMBHEA_;
     /**
-     * <code>uint32 game_id = 1;</code>
-     * @return The gameId.
+     * <code>repeated .Unk3300_PPKPCOCOMDH Unk3300_FKBLJIMBHEA = 6;</code>
      */
     @java.lang.Override
-    public int getGameId() {
-      return gameId_;
+    public java.util.List<emu.grasscutter.net.proto.Unk3300PPKPCOCOMDH.Unk3300_PPKPCOCOMDH> getUnk3300FKBLJIMBHEAList() {
+      return unk3300FKBLJIMBHEA_;
+    }
+    /**
+     * <code>repeated .Unk3300_PPKPCOCOMDH Unk3300_FKBLJIMBHEA = 6;</code>
+     */
+    @java.lang.Override
+    public java.util.List<? extends emu.grasscutter.net.proto.Unk3300PPKPCOCOMDH.Unk3300_PPKPCOCOMDHOrBuilder> 
+        getUnk3300FKBLJIMBHEAOrBuilderList() {
+      return unk3300FKBLJIMBHEA_;
+    }
+    /**
+     * <code>repeated .Unk3300_PPKPCOCOMDH Unk3300_FKBLJIMBHEA = 6;</code>
+     */
+    @java.lang.Override
+    public int getUnk3300FKBLJIMBHEACount() {
+      return unk3300FKBLJIMBHEA_.size();
+    }
+    /**
+     * <code>repeated .Unk3300_PPKPCOCOMDH Unk3300_FKBLJIMBHEA = 6;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.Unk3300PPKPCOCOMDH.Unk3300_PPKPCOCOMDH getUnk3300FKBLJIMBHEA(int index) {
+      return unk3300FKBLJIMBHEA_.get(index);
+    }
+    /**
+     * <code>repeated .Unk3300_PPKPCOCOMDH Unk3300_FKBLJIMBHEA = 6;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.Unk3300PPKPCOCOMDH.Unk3300_PPKPCOCOMDHOrBuilder getUnk3300FKBLJIMBHEAOrBuilder(
+        int index) {
+      return unk3300FKBLJIMBHEA_.get(index);
     }
 
-    public static final int SEED_FIELD_NUMBER = 11;
+    public static final int SEED_FIELD_NUMBER = 1;
     private int seed_;
     /**
-     * <code>uint32 seed = 11;</code>
+     * <code>uint32 seed = 1;</code>
      * @return The seed.
      */
     @java.lang.Override
@@ -177,44 +280,95 @@ public final class GCGOperationReplayOuterClass {
       return seed_;
     }
 
-    public static final int OPERATION_DATA_LIST_FIELD_NUMBER = 9;
-    private java.util.List<emu.grasscutter.net.proto.GCGOperationDataOuterClass.GCGOperationData> operationDataList_;
+    public static final int OPERATION_DATA_LIST_FIELD_NUMBER = 8;
+    private java.util.List<emu.grasscutter.net.proto.GCGReplayOperationDataOuterClass.GCGReplayOperationData> operationDataList_;
     /**
-     * <code>repeated .GCGOperationData operation_data_list = 9;</code>
+     * <code>repeated .GCGReplayOperationData operation_data_list = 8;</code>
      */
     @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.GCGOperationDataOuterClass.GCGOperationData> getOperationDataListList() {
+    public java.util.List<emu.grasscutter.net.proto.GCGReplayOperationDataOuterClass.GCGReplayOperationData> getOperationDataListList() {
       return operationDataList_;
     }
     /**
-     * <code>repeated .GCGOperationData operation_data_list = 9;</code>
+     * <code>repeated .GCGReplayOperationData operation_data_list = 8;</code>
      */
     @java.lang.Override
-    public java.util.List<? extends emu.grasscutter.net.proto.GCGOperationDataOuterClass.GCGOperationDataOrBuilder> 
+    public java.util.List<? extends emu.grasscutter.net.proto.GCGReplayOperationDataOuterClass.GCGReplayOperationDataOrBuilder> 
         getOperationDataListOrBuilderList() {
       return operationDataList_;
     }
     /**
-     * <code>repeated .GCGOperationData operation_data_list = 9;</code>
+     * <code>repeated .GCGReplayOperationData operation_data_list = 8;</code>
      */
     @java.lang.Override
     public int getOperationDataListCount() {
       return operationDataList_.size();
     }
     /**
-     * <code>repeated .GCGOperationData operation_data_list = 9;</code>
+     * <code>repeated .GCGReplayOperationData operation_data_list = 8;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.GCGOperationDataOuterClass.GCGOperationData getOperationDataList(int index) {
+    public emu.grasscutter.net.proto.GCGReplayOperationDataOuterClass.GCGReplayOperationData getOperationDataList(int index) {
       return operationDataList_.get(index);
     }
     /**
-     * <code>repeated .GCGOperationData operation_data_list = 9;</code>
+     * <code>repeated .GCGReplayOperationData operation_data_list = 8;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.GCGOperationDataOuterClass.GCGOperationDataOrBuilder getOperationDataListOrBuilder(
+    public emu.grasscutter.net.proto.GCGReplayOperationDataOuterClass.GCGReplayOperationDataOrBuilder getOperationDataListOrBuilder(
         int index) {
       return operationDataList_.get(index);
+    }
+
+    public static final int GAME_ID_FIELD_NUMBER = 2;
+    private int gameId_;
+    /**
+     * <code>uint32 game_id = 2;</code>
+     * @return The gameId.
+     */
+    @java.lang.Override
+    public int getGameId() {
+      return gameId_;
+    }
+
+    public static final int CONTROLLER_DATA_LIST_FIELD_NUMBER = 7;
+    private java.util.List<emu.grasscutter.net.proto.GCGReplayControllerDataOuterClass.GCGReplayControllerData> controllerDataList_;
+    /**
+     * <code>repeated .GCGReplayControllerData controller_data_list = 7;</code>
+     */
+    @java.lang.Override
+    public java.util.List<emu.grasscutter.net.proto.GCGReplayControllerDataOuterClass.GCGReplayControllerData> getControllerDataListList() {
+      return controllerDataList_;
+    }
+    /**
+     * <code>repeated .GCGReplayControllerData controller_data_list = 7;</code>
+     */
+    @java.lang.Override
+    public java.util.List<? extends emu.grasscutter.net.proto.GCGReplayControllerDataOuterClass.GCGReplayControllerDataOrBuilder> 
+        getControllerDataListOrBuilderList() {
+      return controllerDataList_;
+    }
+    /**
+     * <code>repeated .GCGReplayControllerData controller_data_list = 7;</code>
+     */
+    @java.lang.Override
+    public int getControllerDataListCount() {
+      return controllerDataList_.size();
+    }
+    /**
+     * <code>repeated .GCGReplayControllerData controller_data_list = 7;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.GCGReplayControllerDataOuterClass.GCGReplayControllerData getControllerDataList(int index) {
+      return controllerDataList_.get(index);
+    }
+    /**
+     * <code>repeated .GCGReplayControllerData controller_data_list = 7;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.GCGReplayControllerDataOuterClass.GCGReplayControllerDataOrBuilder getControllerDataListOrBuilder(
+        int index) {
+      return controllerDataList_.get(index);
     }
 
     private byte memoizedIsInitialized = -1;
@@ -231,14 +385,20 @@ public final class GCGOperationReplayOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (seed_ != 0) {
+        output.writeUInt32(1, seed_);
+      }
       if (gameId_ != 0) {
-        output.writeUInt32(1, gameId_);
+        output.writeUInt32(2, gameId_);
+      }
+      for (int i = 0; i < unk3300FKBLJIMBHEA_.size(); i++) {
+        output.writeMessage(6, unk3300FKBLJIMBHEA_.get(i));
+      }
+      for (int i = 0; i < controllerDataList_.size(); i++) {
+        output.writeMessage(7, controllerDataList_.get(i));
       }
       for (int i = 0; i < operationDataList_.size(); i++) {
-        output.writeMessage(9, operationDataList_.get(i));
-      }
-      if (seed_ != 0) {
-        output.writeUInt32(11, seed_);
+        output.writeMessage(8, operationDataList_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -249,17 +409,25 @@ public final class GCGOperationReplayOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (seed_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(1, seed_);
+      }
       if (gameId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, gameId_);
+          .computeUInt32Size(2, gameId_);
+      }
+      for (int i = 0; i < unk3300FKBLJIMBHEA_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(6, unk3300FKBLJIMBHEA_.get(i));
+      }
+      for (int i = 0; i < controllerDataList_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(7, controllerDataList_.get(i));
       }
       for (int i = 0; i < operationDataList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(9, operationDataList_.get(i));
-      }
-      if (seed_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, seed_);
+          .computeMessageSize(8, operationDataList_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -276,12 +444,16 @@ public final class GCGOperationReplayOuterClass {
       }
       emu.grasscutter.net.proto.GCGOperationReplayOuterClass.GCGOperationReplay other = (emu.grasscutter.net.proto.GCGOperationReplayOuterClass.GCGOperationReplay) obj;
 
-      if (getGameId()
-          != other.getGameId()) return false;
+      if (!getUnk3300FKBLJIMBHEAList()
+          .equals(other.getUnk3300FKBLJIMBHEAList())) return false;
       if (getSeed()
           != other.getSeed()) return false;
       if (!getOperationDataListList()
           .equals(other.getOperationDataListList())) return false;
+      if (getGameId()
+          != other.getGameId()) return false;
+      if (!getControllerDataListList()
+          .equals(other.getControllerDataListList())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -293,13 +465,21 @@ public final class GCGOperationReplayOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + GAME_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getGameId();
+      if (getUnk3300FKBLJIMBHEACount() > 0) {
+        hash = (37 * hash) + UNK3300_FKBLJIMBHEA_FIELD_NUMBER;
+        hash = (53 * hash) + getUnk3300FKBLJIMBHEAList().hashCode();
+      }
       hash = (37 * hash) + SEED_FIELD_NUMBER;
       hash = (53 * hash) + getSeed();
       if (getOperationDataListCount() > 0) {
         hash = (37 * hash) + OPERATION_DATA_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getOperationDataListList().hashCode();
+      }
+      hash = (37 * hash) + GAME_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getGameId();
+      if (getControllerDataListCount() > 0) {
+        hash = (37 * hash) + CONTROLLER_DATA_LIST_FIELD_NUMBER;
+        hash = (53 * hash) + getControllerDataListList().hashCode();
       }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
@@ -429,21 +609,35 @@ public final class GCGOperationReplayOuterClass {
       private void maybeForceBuilderInitialization() {
         if (com.google.protobuf.GeneratedMessageV3
                 .alwaysUseFieldBuilders) {
+          getUnk3300FKBLJIMBHEAFieldBuilder();
           getOperationDataListFieldBuilder();
+          getControllerDataListFieldBuilder();
         }
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        gameId_ = 0;
-
+        if (unk3300FKBLJIMBHEABuilder_ == null) {
+          unk3300FKBLJIMBHEA_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000001);
+        } else {
+          unk3300FKBLJIMBHEABuilder_.clear();
+        }
         seed_ = 0;
 
         if (operationDataListBuilder_ == null) {
           operationDataList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000001);
+          bitField0_ = (bitField0_ & ~0x00000002);
         } else {
           operationDataListBuilder_.clear();
+        }
+        gameId_ = 0;
+
+        if (controllerDataListBuilder_ == null) {
+          controllerDataList_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000004);
+        } else {
+          controllerDataListBuilder_.clear();
         }
         return this;
       }
@@ -472,16 +666,34 @@ public final class GCGOperationReplayOuterClass {
       public emu.grasscutter.net.proto.GCGOperationReplayOuterClass.GCGOperationReplay buildPartial() {
         emu.grasscutter.net.proto.GCGOperationReplayOuterClass.GCGOperationReplay result = new emu.grasscutter.net.proto.GCGOperationReplayOuterClass.GCGOperationReplay(this);
         int from_bitField0_ = bitField0_;
-        result.gameId_ = gameId_;
+        if (unk3300FKBLJIMBHEABuilder_ == null) {
+          if (((bitField0_ & 0x00000001) != 0)) {
+            unk3300FKBLJIMBHEA_ = java.util.Collections.unmodifiableList(unk3300FKBLJIMBHEA_);
+            bitField0_ = (bitField0_ & ~0x00000001);
+          }
+          result.unk3300FKBLJIMBHEA_ = unk3300FKBLJIMBHEA_;
+        } else {
+          result.unk3300FKBLJIMBHEA_ = unk3300FKBLJIMBHEABuilder_.build();
+        }
         result.seed_ = seed_;
         if (operationDataListBuilder_ == null) {
-          if (((bitField0_ & 0x00000001) != 0)) {
+          if (((bitField0_ & 0x00000002) != 0)) {
             operationDataList_ = java.util.Collections.unmodifiableList(operationDataList_);
-            bitField0_ = (bitField0_ & ~0x00000001);
+            bitField0_ = (bitField0_ & ~0x00000002);
           }
           result.operationDataList_ = operationDataList_;
         } else {
           result.operationDataList_ = operationDataListBuilder_.build();
+        }
+        result.gameId_ = gameId_;
+        if (controllerDataListBuilder_ == null) {
+          if (((bitField0_ & 0x00000004) != 0)) {
+            controllerDataList_ = java.util.Collections.unmodifiableList(controllerDataList_);
+            bitField0_ = (bitField0_ & ~0x00000004);
+          }
+          result.controllerDataList_ = controllerDataList_;
+        } else {
+          result.controllerDataList_ = controllerDataListBuilder_.build();
         }
         onBuilt();
         return result;
@@ -531,8 +743,31 @@ public final class GCGOperationReplayOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.GCGOperationReplayOuterClass.GCGOperationReplay other) {
         if (other == emu.grasscutter.net.proto.GCGOperationReplayOuterClass.GCGOperationReplay.getDefaultInstance()) return this;
-        if (other.getGameId() != 0) {
-          setGameId(other.getGameId());
+        if (unk3300FKBLJIMBHEABuilder_ == null) {
+          if (!other.unk3300FKBLJIMBHEA_.isEmpty()) {
+            if (unk3300FKBLJIMBHEA_.isEmpty()) {
+              unk3300FKBLJIMBHEA_ = other.unk3300FKBLJIMBHEA_;
+              bitField0_ = (bitField0_ & ~0x00000001);
+            } else {
+              ensureUnk3300FKBLJIMBHEAIsMutable();
+              unk3300FKBLJIMBHEA_.addAll(other.unk3300FKBLJIMBHEA_);
+            }
+            onChanged();
+          }
+        } else {
+          if (!other.unk3300FKBLJIMBHEA_.isEmpty()) {
+            if (unk3300FKBLJIMBHEABuilder_.isEmpty()) {
+              unk3300FKBLJIMBHEABuilder_.dispose();
+              unk3300FKBLJIMBHEABuilder_ = null;
+              unk3300FKBLJIMBHEA_ = other.unk3300FKBLJIMBHEA_;
+              bitField0_ = (bitField0_ & ~0x00000001);
+              unk3300FKBLJIMBHEABuilder_ = 
+                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+                   getUnk3300FKBLJIMBHEAFieldBuilder() : null;
+            } else {
+              unk3300FKBLJIMBHEABuilder_.addAllMessages(other.unk3300FKBLJIMBHEA_);
+            }
+          }
         }
         if (other.getSeed() != 0) {
           setSeed(other.getSeed());
@@ -541,7 +776,7 @@ public final class GCGOperationReplayOuterClass {
           if (!other.operationDataList_.isEmpty()) {
             if (operationDataList_.isEmpty()) {
               operationDataList_ = other.operationDataList_;
-              bitField0_ = (bitField0_ & ~0x00000001);
+              bitField0_ = (bitField0_ & ~0x00000002);
             } else {
               ensureOperationDataListIsMutable();
               operationDataList_.addAll(other.operationDataList_);
@@ -554,12 +789,41 @@ public final class GCGOperationReplayOuterClass {
               operationDataListBuilder_.dispose();
               operationDataListBuilder_ = null;
               operationDataList_ = other.operationDataList_;
-              bitField0_ = (bitField0_ & ~0x00000001);
+              bitField0_ = (bitField0_ & ~0x00000002);
               operationDataListBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
                    getOperationDataListFieldBuilder() : null;
             } else {
               operationDataListBuilder_.addAllMessages(other.operationDataList_);
+            }
+          }
+        }
+        if (other.getGameId() != 0) {
+          setGameId(other.getGameId());
+        }
+        if (controllerDataListBuilder_ == null) {
+          if (!other.controllerDataList_.isEmpty()) {
+            if (controllerDataList_.isEmpty()) {
+              controllerDataList_ = other.controllerDataList_;
+              bitField0_ = (bitField0_ & ~0x00000004);
+            } else {
+              ensureControllerDataListIsMutable();
+              controllerDataList_.addAll(other.controllerDataList_);
+            }
+            onChanged();
+          }
+        } else {
+          if (!other.controllerDataList_.isEmpty()) {
+            if (controllerDataListBuilder_.isEmpty()) {
+              controllerDataListBuilder_.dispose();
+              controllerDataListBuilder_ = null;
+              controllerDataList_ = other.controllerDataList_;
+              bitField0_ = (bitField0_ & ~0x00000004);
+              controllerDataListBuilder_ = 
+                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+                   getControllerDataListFieldBuilder() : null;
+            } else {
+              controllerDataListBuilder_.addAllMessages(other.controllerDataList_);
             }
           }
         }
@@ -593,40 +857,249 @@ public final class GCGOperationReplayOuterClass {
       }
       private int bitField0_;
 
-      private int gameId_ ;
+      private java.util.List<emu.grasscutter.net.proto.Unk3300PPKPCOCOMDH.Unk3300_PPKPCOCOMDH> unk3300FKBLJIMBHEA_ =
+        java.util.Collections.emptyList();
+      private void ensureUnk3300FKBLJIMBHEAIsMutable() {
+        if (!((bitField0_ & 0x00000001) != 0)) {
+          unk3300FKBLJIMBHEA_ = new java.util.ArrayList<emu.grasscutter.net.proto.Unk3300PPKPCOCOMDH.Unk3300_PPKPCOCOMDH>(unk3300FKBLJIMBHEA_);
+          bitField0_ |= 0x00000001;
+         }
+      }
+
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          emu.grasscutter.net.proto.Unk3300PPKPCOCOMDH.Unk3300_PPKPCOCOMDH, emu.grasscutter.net.proto.Unk3300PPKPCOCOMDH.Unk3300_PPKPCOCOMDH.Builder, emu.grasscutter.net.proto.Unk3300PPKPCOCOMDH.Unk3300_PPKPCOCOMDHOrBuilder> unk3300FKBLJIMBHEABuilder_;
+
       /**
-       * <code>uint32 game_id = 1;</code>
-       * @return The gameId.
+       * <code>repeated .Unk3300_PPKPCOCOMDH Unk3300_FKBLJIMBHEA = 6;</code>
        */
-      @java.lang.Override
-      public int getGameId() {
-        return gameId_;
+      public java.util.List<emu.grasscutter.net.proto.Unk3300PPKPCOCOMDH.Unk3300_PPKPCOCOMDH> getUnk3300FKBLJIMBHEAList() {
+        if (unk3300FKBLJIMBHEABuilder_ == null) {
+          return java.util.Collections.unmodifiableList(unk3300FKBLJIMBHEA_);
+        } else {
+          return unk3300FKBLJIMBHEABuilder_.getMessageList();
+        }
       }
       /**
-       * <code>uint32 game_id = 1;</code>
-       * @param value The gameId to set.
-       * @return This builder for chaining.
+       * <code>repeated .Unk3300_PPKPCOCOMDH Unk3300_FKBLJIMBHEA = 6;</code>
        */
-      public Builder setGameId(int value) {
-        
-        gameId_ = value;
-        onChanged();
+      public int getUnk3300FKBLJIMBHEACount() {
+        if (unk3300FKBLJIMBHEABuilder_ == null) {
+          return unk3300FKBLJIMBHEA_.size();
+        } else {
+          return unk3300FKBLJIMBHEABuilder_.getCount();
+        }
+      }
+      /**
+       * <code>repeated .Unk3300_PPKPCOCOMDH Unk3300_FKBLJIMBHEA = 6;</code>
+       */
+      public emu.grasscutter.net.proto.Unk3300PPKPCOCOMDH.Unk3300_PPKPCOCOMDH getUnk3300FKBLJIMBHEA(int index) {
+        if (unk3300FKBLJIMBHEABuilder_ == null) {
+          return unk3300FKBLJIMBHEA_.get(index);
+        } else {
+          return unk3300FKBLJIMBHEABuilder_.getMessage(index);
+        }
+      }
+      /**
+       * <code>repeated .Unk3300_PPKPCOCOMDH Unk3300_FKBLJIMBHEA = 6;</code>
+       */
+      public Builder setUnk3300FKBLJIMBHEA(
+          int index, emu.grasscutter.net.proto.Unk3300PPKPCOCOMDH.Unk3300_PPKPCOCOMDH value) {
+        if (unk3300FKBLJIMBHEABuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureUnk3300FKBLJIMBHEAIsMutable();
+          unk3300FKBLJIMBHEA_.set(index, value);
+          onChanged();
+        } else {
+          unk3300FKBLJIMBHEABuilder_.setMessage(index, value);
+        }
         return this;
       }
       /**
-       * <code>uint32 game_id = 1;</code>
-       * @return This builder for chaining.
+       * <code>repeated .Unk3300_PPKPCOCOMDH Unk3300_FKBLJIMBHEA = 6;</code>
        */
-      public Builder clearGameId() {
-        
-        gameId_ = 0;
-        onChanged();
+      public Builder setUnk3300FKBLJIMBHEA(
+          int index, emu.grasscutter.net.proto.Unk3300PPKPCOCOMDH.Unk3300_PPKPCOCOMDH.Builder builderForValue) {
+        if (unk3300FKBLJIMBHEABuilder_ == null) {
+          ensureUnk3300FKBLJIMBHEAIsMutable();
+          unk3300FKBLJIMBHEA_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          unk3300FKBLJIMBHEABuilder_.setMessage(index, builderForValue.build());
+        }
         return this;
+      }
+      /**
+       * <code>repeated .Unk3300_PPKPCOCOMDH Unk3300_FKBLJIMBHEA = 6;</code>
+       */
+      public Builder addUnk3300FKBLJIMBHEA(emu.grasscutter.net.proto.Unk3300PPKPCOCOMDH.Unk3300_PPKPCOCOMDH value) {
+        if (unk3300FKBLJIMBHEABuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureUnk3300FKBLJIMBHEAIsMutable();
+          unk3300FKBLJIMBHEA_.add(value);
+          onChanged();
+        } else {
+          unk3300FKBLJIMBHEABuilder_.addMessage(value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .Unk3300_PPKPCOCOMDH Unk3300_FKBLJIMBHEA = 6;</code>
+       */
+      public Builder addUnk3300FKBLJIMBHEA(
+          int index, emu.grasscutter.net.proto.Unk3300PPKPCOCOMDH.Unk3300_PPKPCOCOMDH value) {
+        if (unk3300FKBLJIMBHEABuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureUnk3300FKBLJIMBHEAIsMutable();
+          unk3300FKBLJIMBHEA_.add(index, value);
+          onChanged();
+        } else {
+          unk3300FKBLJIMBHEABuilder_.addMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .Unk3300_PPKPCOCOMDH Unk3300_FKBLJIMBHEA = 6;</code>
+       */
+      public Builder addUnk3300FKBLJIMBHEA(
+          emu.grasscutter.net.proto.Unk3300PPKPCOCOMDH.Unk3300_PPKPCOCOMDH.Builder builderForValue) {
+        if (unk3300FKBLJIMBHEABuilder_ == null) {
+          ensureUnk3300FKBLJIMBHEAIsMutable();
+          unk3300FKBLJIMBHEA_.add(builderForValue.build());
+          onChanged();
+        } else {
+          unk3300FKBLJIMBHEABuilder_.addMessage(builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .Unk3300_PPKPCOCOMDH Unk3300_FKBLJIMBHEA = 6;</code>
+       */
+      public Builder addUnk3300FKBLJIMBHEA(
+          int index, emu.grasscutter.net.proto.Unk3300PPKPCOCOMDH.Unk3300_PPKPCOCOMDH.Builder builderForValue) {
+        if (unk3300FKBLJIMBHEABuilder_ == null) {
+          ensureUnk3300FKBLJIMBHEAIsMutable();
+          unk3300FKBLJIMBHEA_.add(index, builderForValue.build());
+          onChanged();
+        } else {
+          unk3300FKBLJIMBHEABuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .Unk3300_PPKPCOCOMDH Unk3300_FKBLJIMBHEA = 6;</code>
+       */
+      public Builder addAllUnk3300FKBLJIMBHEA(
+          java.lang.Iterable<? extends emu.grasscutter.net.proto.Unk3300PPKPCOCOMDH.Unk3300_PPKPCOCOMDH> values) {
+        if (unk3300FKBLJIMBHEABuilder_ == null) {
+          ensureUnk3300FKBLJIMBHEAIsMutable();
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, unk3300FKBLJIMBHEA_);
+          onChanged();
+        } else {
+          unk3300FKBLJIMBHEABuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .Unk3300_PPKPCOCOMDH Unk3300_FKBLJIMBHEA = 6;</code>
+       */
+      public Builder clearUnk3300FKBLJIMBHEA() {
+        if (unk3300FKBLJIMBHEABuilder_ == null) {
+          unk3300FKBLJIMBHEA_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000001);
+          onChanged();
+        } else {
+          unk3300FKBLJIMBHEABuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .Unk3300_PPKPCOCOMDH Unk3300_FKBLJIMBHEA = 6;</code>
+       */
+      public Builder removeUnk3300FKBLJIMBHEA(int index) {
+        if (unk3300FKBLJIMBHEABuilder_ == null) {
+          ensureUnk3300FKBLJIMBHEAIsMutable();
+          unk3300FKBLJIMBHEA_.remove(index);
+          onChanged();
+        } else {
+          unk3300FKBLJIMBHEABuilder_.remove(index);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .Unk3300_PPKPCOCOMDH Unk3300_FKBLJIMBHEA = 6;</code>
+       */
+      public emu.grasscutter.net.proto.Unk3300PPKPCOCOMDH.Unk3300_PPKPCOCOMDH.Builder getUnk3300FKBLJIMBHEABuilder(
+          int index) {
+        return getUnk3300FKBLJIMBHEAFieldBuilder().getBuilder(index);
+      }
+      /**
+       * <code>repeated .Unk3300_PPKPCOCOMDH Unk3300_FKBLJIMBHEA = 6;</code>
+       */
+      public emu.grasscutter.net.proto.Unk3300PPKPCOCOMDH.Unk3300_PPKPCOCOMDHOrBuilder getUnk3300FKBLJIMBHEAOrBuilder(
+          int index) {
+        if (unk3300FKBLJIMBHEABuilder_ == null) {
+          return unk3300FKBLJIMBHEA_.get(index);  } else {
+          return unk3300FKBLJIMBHEABuilder_.getMessageOrBuilder(index);
+        }
+      }
+      /**
+       * <code>repeated .Unk3300_PPKPCOCOMDH Unk3300_FKBLJIMBHEA = 6;</code>
+       */
+      public java.util.List<? extends emu.grasscutter.net.proto.Unk3300PPKPCOCOMDH.Unk3300_PPKPCOCOMDHOrBuilder> 
+           getUnk3300FKBLJIMBHEAOrBuilderList() {
+        if (unk3300FKBLJIMBHEABuilder_ != null) {
+          return unk3300FKBLJIMBHEABuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(unk3300FKBLJIMBHEA_);
+        }
+      }
+      /**
+       * <code>repeated .Unk3300_PPKPCOCOMDH Unk3300_FKBLJIMBHEA = 6;</code>
+       */
+      public emu.grasscutter.net.proto.Unk3300PPKPCOCOMDH.Unk3300_PPKPCOCOMDH.Builder addUnk3300FKBLJIMBHEABuilder() {
+        return getUnk3300FKBLJIMBHEAFieldBuilder().addBuilder(
+            emu.grasscutter.net.proto.Unk3300PPKPCOCOMDH.Unk3300_PPKPCOCOMDH.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .Unk3300_PPKPCOCOMDH Unk3300_FKBLJIMBHEA = 6;</code>
+       */
+      public emu.grasscutter.net.proto.Unk3300PPKPCOCOMDH.Unk3300_PPKPCOCOMDH.Builder addUnk3300FKBLJIMBHEABuilder(
+          int index) {
+        return getUnk3300FKBLJIMBHEAFieldBuilder().addBuilder(
+            index, emu.grasscutter.net.proto.Unk3300PPKPCOCOMDH.Unk3300_PPKPCOCOMDH.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .Unk3300_PPKPCOCOMDH Unk3300_FKBLJIMBHEA = 6;</code>
+       */
+      public java.util.List<emu.grasscutter.net.proto.Unk3300PPKPCOCOMDH.Unk3300_PPKPCOCOMDH.Builder> 
+           getUnk3300FKBLJIMBHEABuilderList() {
+        return getUnk3300FKBLJIMBHEAFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          emu.grasscutter.net.proto.Unk3300PPKPCOCOMDH.Unk3300_PPKPCOCOMDH, emu.grasscutter.net.proto.Unk3300PPKPCOCOMDH.Unk3300_PPKPCOCOMDH.Builder, emu.grasscutter.net.proto.Unk3300PPKPCOCOMDH.Unk3300_PPKPCOCOMDHOrBuilder> 
+          getUnk3300FKBLJIMBHEAFieldBuilder() {
+        if (unk3300FKBLJIMBHEABuilder_ == null) {
+          unk3300FKBLJIMBHEABuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+              emu.grasscutter.net.proto.Unk3300PPKPCOCOMDH.Unk3300_PPKPCOCOMDH, emu.grasscutter.net.proto.Unk3300PPKPCOCOMDH.Unk3300_PPKPCOCOMDH.Builder, emu.grasscutter.net.proto.Unk3300PPKPCOCOMDH.Unk3300_PPKPCOCOMDHOrBuilder>(
+                  unk3300FKBLJIMBHEA_,
+                  ((bitField0_ & 0x00000001) != 0),
+                  getParentForChildren(),
+                  isClean());
+          unk3300FKBLJIMBHEA_ = null;
+        }
+        return unk3300FKBLJIMBHEABuilder_;
       }
 
       private int seed_ ;
       /**
-       * <code>uint32 seed = 11;</code>
+       * <code>uint32 seed = 1;</code>
        * @return The seed.
        */
       @java.lang.Override
@@ -634,7 +1107,7 @@ public final class GCGOperationReplayOuterClass {
         return seed_;
       }
       /**
-       * <code>uint32 seed = 11;</code>
+       * <code>uint32 seed = 1;</code>
        * @param value The seed to set.
        * @return This builder for chaining.
        */
@@ -645,7 +1118,7 @@ public final class GCGOperationReplayOuterClass {
         return this;
       }
       /**
-       * <code>uint32 seed = 11;</code>
+       * <code>uint32 seed = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearSeed() {
@@ -655,22 +1128,22 @@ public final class GCGOperationReplayOuterClass {
         return this;
       }
 
-      private java.util.List<emu.grasscutter.net.proto.GCGOperationDataOuterClass.GCGOperationData> operationDataList_ =
+      private java.util.List<emu.grasscutter.net.proto.GCGReplayOperationDataOuterClass.GCGReplayOperationData> operationDataList_ =
         java.util.Collections.emptyList();
       private void ensureOperationDataListIsMutable() {
-        if (!((bitField0_ & 0x00000001) != 0)) {
-          operationDataList_ = new java.util.ArrayList<emu.grasscutter.net.proto.GCGOperationDataOuterClass.GCGOperationData>(operationDataList_);
-          bitField0_ |= 0x00000001;
+        if (!((bitField0_ & 0x00000002) != 0)) {
+          operationDataList_ = new java.util.ArrayList<emu.grasscutter.net.proto.GCGReplayOperationDataOuterClass.GCGReplayOperationData>(operationDataList_);
+          bitField0_ |= 0x00000002;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.GCGOperationDataOuterClass.GCGOperationData, emu.grasscutter.net.proto.GCGOperationDataOuterClass.GCGOperationData.Builder, emu.grasscutter.net.proto.GCGOperationDataOuterClass.GCGOperationDataOrBuilder> operationDataListBuilder_;
+          emu.grasscutter.net.proto.GCGReplayOperationDataOuterClass.GCGReplayOperationData, emu.grasscutter.net.proto.GCGReplayOperationDataOuterClass.GCGReplayOperationData.Builder, emu.grasscutter.net.proto.GCGReplayOperationDataOuterClass.GCGReplayOperationDataOrBuilder> operationDataListBuilder_;
 
       /**
-       * <code>repeated .GCGOperationData operation_data_list = 9;</code>
+       * <code>repeated .GCGReplayOperationData operation_data_list = 8;</code>
        */
-      public java.util.List<emu.grasscutter.net.proto.GCGOperationDataOuterClass.GCGOperationData> getOperationDataListList() {
+      public java.util.List<emu.grasscutter.net.proto.GCGReplayOperationDataOuterClass.GCGReplayOperationData> getOperationDataListList() {
         if (operationDataListBuilder_ == null) {
           return java.util.Collections.unmodifiableList(operationDataList_);
         } else {
@@ -678,7 +1151,7 @@ public final class GCGOperationReplayOuterClass {
         }
       }
       /**
-       * <code>repeated .GCGOperationData operation_data_list = 9;</code>
+       * <code>repeated .GCGReplayOperationData operation_data_list = 8;</code>
        */
       public int getOperationDataListCount() {
         if (operationDataListBuilder_ == null) {
@@ -688,9 +1161,9 @@ public final class GCGOperationReplayOuterClass {
         }
       }
       /**
-       * <code>repeated .GCGOperationData operation_data_list = 9;</code>
+       * <code>repeated .GCGReplayOperationData operation_data_list = 8;</code>
        */
-      public emu.grasscutter.net.proto.GCGOperationDataOuterClass.GCGOperationData getOperationDataList(int index) {
+      public emu.grasscutter.net.proto.GCGReplayOperationDataOuterClass.GCGReplayOperationData getOperationDataList(int index) {
         if (operationDataListBuilder_ == null) {
           return operationDataList_.get(index);
         } else {
@@ -698,10 +1171,10 @@ public final class GCGOperationReplayOuterClass {
         }
       }
       /**
-       * <code>repeated .GCGOperationData operation_data_list = 9;</code>
+       * <code>repeated .GCGReplayOperationData operation_data_list = 8;</code>
        */
       public Builder setOperationDataList(
-          int index, emu.grasscutter.net.proto.GCGOperationDataOuterClass.GCGOperationData value) {
+          int index, emu.grasscutter.net.proto.GCGReplayOperationDataOuterClass.GCGReplayOperationData value) {
         if (operationDataListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -715,10 +1188,10 @@ public final class GCGOperationReplayOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GCGOperationData operation_data_list = 9;</code>
+       * <code>repeated .GCGReplayOperationData operation_data_list = 8;</code>
        */
       public Builder setOperationDataList(
-          int index, emu.grasscutter.net.proto.GCGOperationDataOuterClass.GCGOperationData.Builder builderForValue) {
+          int index, emu.grasscutter.net.proto.GCGReplayOperationDataOuterClass.GCGReplayOperationData.Builder builderForValue) {
         if (operationDataListBuilder_ == null) {
           ensureOperationDataListIsMutable();
           operationDataList_.set(index, builderForValue.build());
@@ -729,9 +1202,9 @@ public final class GCGOperationReplayOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GCGOperationData operation_data_list = 9;</code>
+       * <code>repeated .GCGReplayOperationData operation_data_list = 8;</code>
        */
-      public Builder addOperationDataList(emu.grasscutter.net.proto.GCGOperationDataOuterClass.GCGOperationData value) {
+      public Builder addOperationDataList(emu.grasscutter.net.proto.GCGReplayOperationDataOuterClass.GCGReplayOperationData value) {
         if (operationDataListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -745,10 +1218,10 @@ public final class GCGOperationReplayOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GCGOperationData operation_data_list = 9;</code>
+       * <code>repeated .GCGReplayOperationData operation_data_list = 8;</code>
        */
       public Builder addOperationDataList(
-          int index, emu.grasscutter.net.proto.GCGOperationDataOuterClass.GCGOperationData value) {
+          int index, emu.grasscutter.net.proto.GCGReplayOperationDataOuterClass.GCGReplayOperationData value) {
         if (operationDataListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -762,10 +1235,10 @@ public final class GCGOperationReplayOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GCGOperationData operation_data_list = 9;</code>
+       * <code>repeated .GCGReplayOperationData operation_data_list = 8;</code>
        */
       public Builder addOperationDataList(
-          emu.grasscutter.net.proto.GCGOperationDataOuterClass.GCGOperationData.Builder builderForValue) {
+          emu.grasscutter.net.proto.GCGReplayOperationDataOuterClass.GCGReplayOperationData.Builder builderForValue) {
         if (operationDataListBuilder_ == null) {
           ensureOperationDataListIsMutable();
           operationDataList_.add(builderForValue.build());
@@ -776,10 +1249,10 @@ public final class GCGOperationReplayOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GCGOperationData operation_data_list = 9;</code>
+       * <code>repeated .GCGReplayOperationData operation_data_list = 8;</code>
        */
       public Builder addOperationDataList(
-          int index, emu.grasscutter.net.proto.GCGOperationDataOuterClass.GCGOperationData.Builder builderForValue) {
+          int index, emu.grasscutter.net.proto.GCGReplayOperationDataOuterClass.GCGReplayOperationData.Builder builderForValue) {
         if (operationDataListBuilder_ == null) {
           ensureOperationDataListIsMutable();
           operationDataList_.add(index, builderForValue.build());
@@ -790,10 +1263,10 @@ public final class GCGOperationReplayOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GCGOperationData operation_data_list = 9;</code>
+       * <code>repeated .GCGReplayOperationData operation_data_list = 8;</code>
        */
       public Builder addAllOperationDataList(
-          java.lang.Iterable<? extends emu.grasscutter.net.proto.GCGOperationDataOuterClass.GCGOperationData> values) {
+          java.lang.Iterable<? extends emu.grasscutter.net.proto.GCGReplayOperationDataOuterClass.GCGReplayOperationData> values) {
         if (operationDataListBuilder_ == null) {
           ensureOperationDataListIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -805,12 +1278,12 @@ public final class GCGOperationReplayOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GCGOperationData operation_data_list = 9;</code>
+       * <code>repeated .GCGReplayOperationData operation_data_list = 8;</code>
        */
       public Builder clearOperationDataList() {
         if (operationDataListBuilder_ == null) {
           operationDataList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000001);
+          bitField0_ = (bitField0_ & ~0x00000002);
           onChanged();
         } else {
           operationDataListBuilder_.clear();
@@ -818,7 +1291,7 @@ public final class GCGOperationReplayOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GCGOperationData operation_data_list = 9;</code>
+       * <code>repeated .GCGReplayOperationData operation_data_list = 8;</code>
        */
       public Builder removeOperationDataList(int index) {
         if (operationDataListBuilder_ == null) {
@@ -831,16 +1304,16 @@ public final class GCGOperationReplayOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GCGOperationData operation_data_list = 9;</code>
+       * <code>repeated .GCGReplayOperationData operation_data_list = 8;</code>
        */
-      public emu.grasscutter.net.proto.GCGOperationDataOuterClass.GCGOperationData.Builder getOperationDataListBuilder(
+      public emu.grasscutter.net.proto.GCGReplayOperationDataOuterClass.GCGReplayOperationData.Builder getOperationDataListBuilder(
           int index) {
         return getOperationDataListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .GCGOperationData operation_data_list = 9;</code>
+       * <code>repeated .GCGReplayOperationData operation_data_list = 8;</code>
        */
-      public emu.grasscutter.net.proto.GCGOperationDataOuterClass.GCGOperationDataOrBuilder getOperationDataListOrBuilder(
+      public emu.grasscutter.net.proto.GCGReplayOperationDataOuterClass.GCGReplayOperationDataOrBuilder getOperationDataListOrBuilder(
           int index) {
         if (operationDataListBuilder_ == null) {
           return operationDataList_.get(index);  } else {
@@ -848,9 +1321,9 @@ public final class GCGOperationReplayOuterClass {
         }
       }
       /**
-       * <code>repeated .GCGOperationData operation_data_list = 9;</code>
+       * <code>repeated .GCGReplayOperationData operation_data_list = 8;</code>
        */
-      public java.util.List<? extends emu.grasscutter.net.proto.GCGOperationDataOuterClass.GCGOperationDataOrBuilder> 
+      public java.util.List<? extends emu.grasscutter.net.proto.GCGReplayOperationDataOuterClass.GCGReplayOperationDataOrBuilder> 
            getOperationDataListOrBuilderList() {
         if (operationDataListBuilder_ != null) {
           return operationDataListBuilder_.getMessageOrBuilderList();
@@ -859,40 +1332,311 @@ public final class GCGOperationReplayOuterClass {
         }
       }
       /**
-       * <code>repeated .GCGOperationData operation_data_list = 9;</code>
+       * <code>repeated .GCGReplayOperationData operation_data_list = 8;</code>
        */
-      public emu.grasscutter.net.proto.GCGOperationDataOuterClass.GCGOperationData.Builder addOperationDataListBuilder() {
+      public emu.grasscutter.net.proto.GCGReplayOperationDataOuterClass.GCGReplayOperationData.Builder addOperationDataListBuilder() {
         return getOperationDataListFieldBuilder().addBuilder(
-            emu.grasscutter.net.proto.GCGOperationDataOuterClass.GCGOperationData.getDefaultInstance());
+            emu.grasscutter.net.proto.GCGReplayOperationDataOuterClass.GCGReplayOperationData.getDefaultInstance());
       }
       /**
-       * <code>repeated .GCGOperationData operation_data_list = 9;</code>
+       * <code>repeated .GCGReplayOperationData operation_data_list = 8;</code>
        */
-      public emu.grasscutter.net.proto.GCGOperationDataOuterClass.GCGOperationData.Builder addOperationDataListBuilder(
+      public emu.grasscutter.net.proto.GCGReplayOperationDataOuterClass.GCGReplayOperationData.Builder addOperationDataListBuilder(
           int index) {
         return getOperationDataListFieldBuilder().addBuilder(
-            index, emu.grasscutter.net.proto.GCGOperationDataOuterClass.GCGOperationData.getDefaultInstance());
+            index, emu.grasscutter.net.proto.GCGReplayOperationDataOuterClass.GCGReplayOperationData.getDefaultInstance());
       }
       /**
-       * <code>repeated .GCGOperationData operation_data_list = 9;</code>
+       * <code>repeated .GCGReplayOperationData operation_data_list = 8;</code>
        */
-      public java.util.List<emu.grasscutter.net.proto.GCGOperationDataOuterClass.GCGOperationData.Builder> 
+      public java.util.List<emu.grasscutter.net.proto.GCGReplayOperationDataOuterClass.GCGReplayOperationData.Builder> 
            getOperationDataListBuilderList() {
         return getOperationDataListFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.GCGOperationDataOuterClass.GCGOperationData, emu.grasscutter.net.proto.GCGOperationDataOuterClass.GCGOperationData.Builder, emu.grasscutter.net.proto.GCGOperationDataOuterClass.GCGOperationDataOrBuilder> 
+          emu.grasscutter.net.proto.GCGReplayOperationDataOuterClass.GCGReplayOperationData, emu.grasscutter.net.proto.GCGReplayOperationDataOuterClass.GCGReplayOperationData.Builder, emu.grasscutter.net.proto.GCGReplayOperationDataOuterClass.GCGReplayOperationDataOrBuilder> 
           getOperationDataListFieldBuilder() {
         if (operationDataListBuilder_ == null) {
           operationDataListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              emu.grasscutter.net.proto.GCGOperationDataOuterClass.GCGOperationData, emu.grasscutter.net.proto.GCGOperationDataOuterClass.GCGOperationData.Builder, emu.grasscutter.net.proto.GCGOperationDataOuterClass.GCGOperationDataOrBuilder>(
+              emu.grasscutter.net.proto.GCGReplayOperationDataOuterClass.GCGReplayOperationData, emu.grasscutter.net.proto.GCGReplayOperationDataOuterClass.GCGReplayOperationData.Builder, emu.grasscutter.net.proto.GCGReplayOperationDataOuterClass.GCGReplayOperationDataOrBuilder>(
                   operationDataList_,
-                  ((bitField0_ & 0x00000001) != 0),
+                  ((bitField0_ & 0x00000002) != 0),
                   getParentForChildren(),
                   isClean());
           operationDataList_ = null;
         }
         return operationDataListBuilder_;
+      }
+
+      private int gameId_ ;
+      /**
+       * <code>uint32 game_id = 2;</code>
+       * @return The gameId.
+       */
+      @java.lang.Override
+      public int getGameId() {
+        return gameId_;
+      }
+      /**
+       * <code>uint32 game_id = 2;</code>
+       * @param value The gameId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setGameId(int value) {
+        
+        gameId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 game_id = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearGameId() {
+        
+        gameId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private java.util.List<emu.grasscutter.net.proto.GCGReplayControllerDataOuterClass.GCGReplayControllerData> controllerDataList_ =
+        java.util.Collections.emptyList();
+      private void ensureControllerDataListIsMutable() {
+        if (!((bitField0_ & 0x00000004) != 0)) {
+          controllerDataList_ = new java.util.ArrayList<emu.grasscutter.net.proto.GCGReplayControllerDataOuterClass.GCGReplayControllerData>(controllerDataList_);
+          bitField0_ |= 0x00000004;
+         }
+      }
+
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          emu.grasscutter.net.proto.GCGReplayControllerDataOuterClass.GCGReplayControllerData, emu.grasscutter.net.proto.GCGReplayControllerDataOuterClass.GCGReplayControllerData.Builder, emu.grasscutter.net.proto.GCGReplayControllerDataOuterClass.GCGReplayControllerDataOrBuilder> controllerDataListBuilder_;
+
+      /**
+       * <code>repeated .GCGReplayControllerData controller_data_list = 7;</code>
+       */
+      public java.util.List<emu.grasscutter.net.proto.GCGReplayControllerDataOuterClass.GCGReplayControllerData> getControllerDataListList() {
+        if (controllerDataListBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(controllerDataList_);
+        } else {
+          return controllerDataListBuilder_.getMessageList();
+        }
+      }
+      /**
+       * <code>repeated .GCGReplayControllerData controller_data_list = 7;</code>
+       */
+      public int getControllerDataListCount() {
+        if (controllerDataListBuilder_ == null) {
+          return controllerDataList_.size();
+        } else {
+          return controllerDataListBuilder_.getCount();
+        }
+      }
+      /**
+       * <code>repeated .GCGReplayControllerData controller_data_list = 7;</code>
+       */
+      public emu.grasscutter.net.proto.GCGReplayControllerDataOuterClass.GCGReplayControllerData getControllerDataList(int index) {
+        if (controllerDataListBuilder_ == null) {
+          return controllerDataList_.get(index);
+        } else {
+          return controllerDataListBuilder_.getMessage(index);
+        }
+      }
+      /**
+       * <code>repeated .GCGReplayControllerData controller_data_list = 7;</code>
+       */
+      public Builder setControllerDataList(
+          int index, emu.grasscutter.net.proto.GCGReplayControllerDataOuterClass.GCGReplayControllerData value) {
+        if (controllerDataListBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureControllerDataListIsMutable();
+          controllerDataList_.set(index, value);
+          onChanged();
+        } else {
+          controllerDataListBuilder_.setMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .GCGReplayControllerData controller_data_list = 7;</code>
+       */
+      public Builder setControllerDataList(
+          int index, emu.grasscutter.net.proto.GCGReplayControllerDataOuterClass.GCGReplayControllerData.Builder builderForValue) {
+        if (controllerDataListBuilder_ == null) {
+          ensureControllerDataListIsMutable();
+          controllerDataList_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          controllerDataListBuilder_.setMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .GCGReplayControllerData controller_data_list = 7;</code>
+       */
+      public Builder addControllerDataList(emu.grasscutter.net.proto.GCGReplayControllerDataOuterClass.GCGReplayControllerData value) {
+        if (controllerDataListBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureControllerDataListIsMutable();
+          controllerDataList_.add(value);
+          onChanged();
+        } else {
+          controllerDataListBuilder_.addMessage(value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .GCGReplayControllerData controller_data_list = 7;</code>
+       */
+      public Builder addControllerDataList(
+          int index, emu.grasscutter.net.proto.GCGReplayControllerDataOuterClass.GCGReplayControllerData value) {
+        if (controllerDataListBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureControllerDataListIsMutable();
+          controllerDataList_.add(index, value);
+          onChanged();
+        } else {
+          controllerDataListBuilder_.addMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .GCGReplayControllerData controller_data_list = 7;</code>
+       */
+      public Builder addControllerDataList(
+          emu.grasscutter.net.proto.GCGReplayControllerDataOuterClass.GCGReplayControllerData.Builder builderForValue) {
+        if (controllerDataListBuilder_ == null) {
+          ensureControllerDataListIsMutable();
+          controllerDataList_.add(builderForValue.build());
+          onChanged();
+        } else {
+          controllerDataListBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .GCGReplayControllerData controller_data_list = 7;</code>
+       */
+      public Builder addControllerDataList(
+          int index, emu.grasscutter.net.proto.GCGReplayControllerDataOuterClass.GCGReplayControllerData.Builder builderForValue) {
+        if (controllerDataListBuilder_ == null) {
+          ensureControllerDataListIsMutable();
+          controllerDataList_.add(index, builderForValue.build());
+          onChanged();
+        } else {
+          controllerDataListBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .GCGReplayControllerData controller_data_list = 7;</code>
+       */
+      public Builder addAllControllerDataList(
+          java.lang.Iterable<? extends emu.grasscutter.net.proto.GCGReplayControllerDataOuterClass.GCGReplayControllerData> values) {
+        if (controllerDataListBuilder_ == null) {
+          ensureControllerDataListIsMutable();
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, controllerDataList_);
+          onChanged();
+        } else {
+          controllerDataListBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .GCGReplayControllerData controller_data_list = 7;</code>
+       */
+      public Builder clearControllerDataList() {
+        if (controllerDataListBuilder_ == null) {
+          controllerDataList_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000004);
+          onChanged();
+        } else {
+          controllerDataListBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .GCGReplayControllerData controller_data_list = 7;</code>
+       */
+      public Builder removeControllerDataList(int index) {
+        if (controllerDataListBuilder_ == null) {
+          ensureControllerDataListIsMutable();
+          controllerDataList_.remove(index);
+          onChanged();
+        } else {
+          controllerDataListBuilder_.remove(index);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .GCGReplayControllerData controller_data_list = 7;</code>
+       */
+      public emu.grasscutter.net.proto.GCGReplayControllerDataOuterClass.GCGReplayControllerData.Builder getControllerDataListBuilder(
+          int index) {
+        return getControllerDataListFieldBuilder().getBuilder(index);
+      }
+      /**
+       * <code>repeated .GCGReplayControllerData controller_data_list = 7;</code>
+       */
+      public emu.grasscutter.net.proto.GCGReplayControllerDataOuterClass.GCGReplayControllerDataOrBuilder getControllerDataListOrBuilder(
+          int index) {
+        if (controllerDataListBuilder_ == null) {
+          return controllerDataList_.get(index);  } else {
+          return controllerDataListBuilder_.getMessageOrBuilder(index);
+        }
+      }
+      /**
+       * <code>repeated .GCGReplayControllerData controller_data_list = 7;</code>
+       */
+      public java.util.List<? extends emu.grasscutter.net.proto.GCGReplayControllerDataOuterClass.GCGReplayControllerDataOrBuilder> 
+           getControllerDataListOrBuilderList() {
+        if (controllerDataListBuilder_ != null) {
+          return controllerDataListBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(controllerDataList_);
+        }
+      }
+      /**
+       * <code>repeated .GCGReplayControllerData controller_data_list = 7;</code>
+       */
+      public emu.grasscutter.net.proto.GCGReplayControllerDataOuterClass.GCGReplayControllerData.Builder addControllerDataListBuilder() {
+        return getControllerDataListFieldBuilder().addBuilder(
+            emu.grasscutter.net.proto.GCGReplayControllerDataOuterClass.GCGReplayControllerData.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .GCGReplayControllerData controller_data_list = 7;</code>
+       */
+      public emu.grasscutter.net.proto.GCGReplayControllerDataOuterClass.GCGReplayControllerData.Builder addControllerDataListBuilder(
+          int index) {
+        return getControllerDataListFieldBuilder().addBuilder(
+            index, emu.grasscutter.net.proto.GCGReplayControllerDataOuterClass.GCGReplayControllerData.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .GCGReplayControllerData controller_data_list = 7;</code>
+       */
+      public java.util.List<emu.grasscutter.net.proto.GCGReplayControllerDataOuterClass.GCGReplayControllerData.Builder> 
+           getControllerDataListBuilderList() {
+        return getControllerDataListFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          emu.grasscutter.net.proto.GCGReplayControllerDataOuterClass.GCGReplayControllerData, emu.grasscutter.net.proto.GCGReplayControllerDataOuterClass.GCGReplayControllerData.Builder, emu.grasscutter.net.proto.GCGReplayControllerDataOuterClass.GCGReplayControllerDataOrBuilder> 
+          getControllerDataListFieldBuilder() {
+        if (controllerDataListBuilder_ == null) {
+          controllerDataListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+              emu.grasscutter.net.proto.GCGReplayControllerDataOuterClass.GCGReplayControllerData, emu.grasscutter.net.proto.GCGReplayControllerDataOuterClass.GCGReplayControllerData.Builder, emu.grasscutter.net.proto.GCGReplayControllerDataOuterClass.GCGReplayControllerDataOrBuilder>(
+                  controllerDataList_,
+                  ((bitField0_ & 0x00000004) != 0),
+                  getParentForChildren(),
+                  isClean());
+          controllerDataList_ = null;
+        }
+        return controllerDataListBuilder_;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -961,24 +1705,33 @@ public final class GCGOperationReplayOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\030GCGOperationReplay.proto\032\026GCGOperation" +
-      "Data.proto\"c\n\022GCGOperationReplay\022\017\n\007game" +
-      "_id\030\001 \001(\r\022\014\n\004seed\030\013 \001(\r\022.\n\023operation_dat" +
-      "a_list\030\t \003(\0132\021.GCGOperationDataB\033\n\031emu.g" +
-      "rasscutter.net.protob\006proto3"
+      "\n\030GCGOperationReplay.proto\032\035GCGReplayCon" +
+      "trollerData.proto\032\034GCGReplayOperationDat" +
+      "a.proto\032\031Unk3300_PPKPCOCOMDH.proto\"\324\001\n\022G" +
+      "CGOperationReplay\0221\n\023Unk3300_FKBLJIMBHEA" +
+      "\030\006 \003(\0132\024.Unk3300_PPKPCOCOMDH\022\014\n\004seed\030\001 \001" +
+      "(\r\0224\n\023operation_data_list\030\010 \003(\0132\027.GCGRep" +
+      "layOperationData\022\017\n\007game_id\030\002 \001(\r\0226\n\024con" +
+      "troller_data_list\030\007 \003(\0132\030.GCGReplayContr" +
+      "ollerDataB\033\n\031emu.grasscutter.net.protob\006" +
+      "proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          emu.grasscutter.net.proto.GCGOperationDataOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.GCGReplayControllerDataOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.GCGReplayOperationDataOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.Unk3300PPKPCOCOMDH.getDescriptor(),
         });
     internal_static_GCGOperationReplay_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_GCGOperationReplay_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GCGOperationReplay_descriptor,
-        new java.lang.String[] { "GameId", "Seed", "OperationDataList", });
-    emu.grasscutter.net.proto.GCGOperationDataOuterClass.getDescriptor();
+        new java.lang.String[] { "Unk3300FKBLJIMBHEA", "Seed", "OperationDataList", "GameId", "ControllerDataList", });
+    emu.grasscutter.net.proto.GCGReplayControllerDataOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.GCGReplayOperationDataOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.Unk3300PPKPCOCOMDH.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

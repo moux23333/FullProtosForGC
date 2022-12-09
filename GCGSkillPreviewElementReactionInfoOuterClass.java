@@ -19,59 +19,59 @@ public final class GCGSkillPreviewElementReactionInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated uint32 fresh_list = 8;</code>
-     * @return A list containing the freshList.
+     * <code>repeated uint32 Unk3300_JOBNBDJHAPJ = 12;</code>
+     * @return A list containing the unk3300JOBNBDJHAPJ.
      */
-    java.util.List<java.lang.Integer> getFreshListList();
+    java.util.List<java.lang.Integer> getUnk3300JOBNBDJHAPJList();
     /**
-     * <code>repeated uint32 fresh_list = 8;</code>
-     * @return The count of freshList.
+     * <code>repeated uint32 Unk3300_JOBNBDJHAPJ = 12;</code>
+     * @return The count of unk3300JOBNBDJHAPJ.
      */
-    int getFreshListCount();
+    int getUnk3300JOBNBDJHAPJCount();
     /**
-     * <code>repeated uint32 fresh_list = 8;</code>
+     * <code>repeated uint32 Unk3300_JOBNBDJHAPJ = 12;</code>
      * @param index The index of the element to return.
-     * @return The freshList at the given index.
+     * @return The unk3300JOBNBDJHAPJ at the given index.
      */
-    int getFreshList(int index);
+    int getUnk3300JOBNBDJHAPJ(int index);
 
     /**
-     * <code>repeated uint32 source_list = 2;</code>
-     * @return A list containing the sourceList.
+     * <code>repeated uint32 Unk3300_BELBNDNDGAO = 14;</code>
+     * @return A list containing the unk3300BELBNDNDGAO.
      */
-    java.util.List<java.lang.Integer> getSourceListList();
+    java.util.List<java.lang.Integer> getUnk3300BELBNDNDGAOList();
     /**
-     * <code>repeated uint32 source_list = 2;</code>
-     * @return The count of sourceList.
+     * <code>repeated uint32 Unk3300_BELBNDNDGAO = 14;</code>
+     * @return The count of unk3300BELBNDNDGAO.
      */
-    int getSourceListCount();
+    int getUnk3300BELBNDNDGAOCount();
     /**
-     * <code>repeated uint32 source_list = 2;</code>
+     * <code>repeated uint32 Unk3300_BELBNDNDGAO = 14;</code>
      * @param index The index of the element to return.
-     * @return The sourceList at the given index.
+     * @return The unk3300BELBNDNDGAO at the given index.
      */
-    int getSourceList(int index);
+    int getUnk3300BELBNDNDGAO(int index);
 
     /**
-     * <code>repeated .GCGSkillPreviewReactionInfo reaction_list = 14;</code>
+     * <code>repeated .GCGSkillPreviewReactionInfo reaction_list = 1;</code>
      */
     java.util.List<emu.grasscutter.net.proto.GCGSkillPreviewReactionInfoOuterClass.GCGSkillPreviewReactionInfo> 
         getReactionListList();
     /**
-     * <code>repeated .GCGSkillPreviewReactionInfo reaction_list = 14;</code>
+     * <code>repeated .GCGSkillPreviewReactionInfo reaction_list = 1;</code>
      */
     emu.grasscutter.net.proto.GCGSkillPreviewReactionInfoOuterClass.GCGSkillPreviewReactionInfo getReactionList(int index);
     /**
-     * <code>repeated .GCGSkillPreviewReactionInfo reaction_list = 14;</code>
+     * <code>repeated .GCGSkillPreviewReactionInfo reaction_list = 1;</code>
      */
     int getReactionListCount();
     /**
-     * <code>repeated .GCGSkillPreviewReactionInfo reaction_list = 14;</code>
+     * <code>repeated .GCGSkillPreviewReactionInfo reaction_list = 1;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.GCGSkillPreviewReactionInfoOuterClass.GCGSkillPreviewReactionInfoOrBuilder> 
         getReactionListOrBuilderList();
     /**
-     * <code>repeated .GCGSkillPreviewReactionInfo reaction_list = 14;</code>
+     * <code>repeated .GCGSkillPreviewReactionInfo reaction_list = 1;</code>
      */
     emu.grasscutter.net.proto.GCGSkillPreviewReactionInfoOuterClass.GCGSkillPreviewReactionInfoOrBuilder getReactionListOrBuilder(
         int index);
@@ -89,8 +89,8 @@ public final class GCGSkillPreviewElementReactionInfoOuterClass {
       super(builder);
     }
     private GCGSkillPreviewElementReactionInfo() {
-      freshList_ = emptyIntList();
-      sourceList_ = emptyIntList();
+      unk3300JOBNBDJHAPJ_ = emptyIntList();
+      unk3300BELBNDNDGAO_ = emptyIntList();
       reactionList_ = java.util.Collections.emptyList();
     }
 
@@ -125,55 +125,55 @@ public final class GCGSkillPreviewElementReactionInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
-              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
-                sourceList_ = newIntList();
-                mutable_bitField0_ |= 0x00000002;
-              }
-              sourceList_.addInt(input.readUInt32());
-              break;
-            }
-            case 18: {
-              int length = input.readRawVarint32();
-              int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000002) != 0) && input.getBytesUntilLimit() > 0) {
-                sourceList_ = newIntList();
-                mutable_bitField0_ |= 0x00000002;
-              }
-              while (input.getBytesUntilLimit() > 0) {
-                sourceList_.addInt(input.readUInt32());
-              }
-              input.popLimit(limit);
-              break;
-            }
-            case 64: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                freshList_ = newIntList();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              freshList_.addInt(input.readUInt32());
-              break;
-            }
-            case 66: {
-              int length = input.readRawVarint32();
-              int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
-                freshList_ = newIntList();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              while (input.getBytesUntilLimit() > 0) {
-                freshList_.addInt(input.readUInt32());
-              }
-              input.popLimit(limit);
-              break;
-            }
-            case 114: {
+            case 10: {
               if (!((mutable_bitField0_ & 0x00000004) != 0)) {
                 reactionList_ = new java.util.ArrayList<emu.grasscutter.net.proto.GCGSkillPreviewReactionInfoOuterClass.GCGSkillPreviewReactionInfo>();
                 mutable_bitField0_ |= 0x00000004;
               }
               reactionList_.add(
                   input.readMessage(emu.grasscutter.net.proto.GCGSkillPreviewReactionInfoOuterClass.GCGSkillPreviewReactionInfo.parser(), extensionRegistry));
+              break;
+            }
+            case 96: {
+              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+                unk3300JOBNBDJHAPJ_ = newIntList();
+                mutable_bitField0_ |= 0x00000001;
+              }
+              unk3300JOBNBDJHAPJ_.addInt(input.readUInt32());
+              break;
+            }
+            case 98: {
+              int length = input.readRawVarint32();
+              int limit = input.pushLimit(length);
+              if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
+                unk3300JOBNBDJHAPJ_ = newIntList();
+                mutable_bitField0_ |= 0x00000001;
+              }
+              while (input.getBytesUntilLimit() > 0) {
+                unk3300JOBNBDJHAPJ_.addInt(input.readUInt32());
+              }
+              input.popLimit(limit);
+              break;
+            }
+            case 112: {
+              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
+                unk3300BELBNDNDGAO_ = newIntList();
+                mutable_bitField0_ |= 0x00000002;
+              }
+              unk3300BELBNDNDGAO_.addInt(input.readUInt32());
+              break;
+            }
+            case 114: {
+              int length = input.readRawVarint32();
+              int limit = input.pushLimit(length);
+              if (!((mutable_bitField0_ & 0x00000002) != 0) && input.getBytesUntilLimit() > 0) {
+                unk3300BELBNDNDGAO_ = newIntList();
+                mutable_bitField0_ |= 0x00000002;
+              }
+              while (input.getBytesUntilLimit() > 0) {
+                unk3300BELBNDNDGAO_.addInt(input.readUInt32());
+              }
+              input.popLimit(limit);
               break;
             }
             default: {
@@ -191,14 +191,14 @@ public final class GCGSkillPreviewElementReactionInfoOuterClass {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
       } finally {
-        if (((mutable_bitField0_ & 0x00000002) != 0)) {
-          sourceList_.makeImmutable(); // C
-        }
-        if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          freshList_.makeImmutable(); // C
-        }
         if (((mutable_bitField0_ & 0x00000004) != 0)) {
           reactionList_ = java.util.Collections.unmodifiableList(reactionList_);
+        }
+        if (((mutable_bitField0_ & 0x00000001) != 0)) {
+          unk3300JOBNBDJHAPJ_.makeImmutable(); // C
+        }
+        if (((mutable_bitField0_ & 0x00000002) != 0)) {
+          unk3300BELBNDNDGAO_.makeImmutable(); // C
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -217,73 +217,73 @@ public final class GCGSkillPreviewElementReactionInfoOuterClass {
               emu.grasscutter.net.proto.GCGSkillPreviewElementReactionInfoOuterClass.GCGSkillPreviewElementReactionInfo.class, emu.grasscutter.net.proto.GCGSkillPreviewElementReactionInfoOuterClass.GCGSkillPreviewElementReactionInfo.Builder.class);
     }
 
-    public static final int FRESH_LIST_FIELD_NUMBER = 8;
-    private com.google.protobuf.Internal.IntList freshList_;
+    public static final int UNK3300_JOBNBDJHAPJ_FIELD_NUMBER = 12;
+    private com.google.protobuf.Internal.IntList unk3300JOBNBDJHAPJ_;
     /**
-     * <code>repeated uint32 fresh_list = 8;</code>
-     * @return A list containing the freshList.
+     * <code>repeated uint32 Unk3300_JOBNBDJHAPJ = 12;</code>
+     * @return A list containing the unk3300JOBNBDJHAPJ.
      */
     @java.lang.Override
     public java.util.List<java.lang.Integer>
-        getFreshListList() {
-      return freshList_;
+        getUnk3300JOBNBDJHAPJList() {
+      return unk3300JOBNBDJHAPJ_;
     }
     /**
-     * <code>repeated uint32 fresh_list = 8;</code>
-     * @return The count of freshList.
+     * <code>repeated uint32 Unk3300_JOBNBDJHAPJ = 12;</code>
+     * @return The count of unk3300JOBNBDJHAPJ.
      */
-    public int getFreshListCount() {
-      return freshList_.size();
+    public int getUnk3300JOBNBDJHAPJCount() {
+      return unk3300JOBNBDJHAPJ_.size();
     }
     /**
-     * <code>repeated uint32 fresh_list = 8;</code>
+     * <code>repeated uint32 Unk3300_JOBNBDJHAPJ = 12;</code>
      * @param index The index of the element to return.
-     * @return The freshList at the given index.
+     * @return The unk3300JOBNBDJHAPJ at the given index.
      */
-    public int getFreshList(int index) {
-      return freshList_.getInt(index);
+    public int getUnk3300JOBNBDJHAPJ(int index) {
+      return unk3300JOBNBDJHAPJ_.getInt(index);
     }
-    private int freshListMemoizedSerializedSize = -1;
+    private int unk3300JOBNBDJHAPJMemoizedSerializedSize = -1;
 
-    public static final int SOURCE_LIST_FIELD_NUMBER = 2;
-    private com.google.protobuf.Internal.IntList sourceList_;
+    public static final int UNK3300_BELBNDNDGAO_FIELD_NUMBER = 14;
+    private com.google.protobuf.Internal.IntList unk3300BELBNDNDGAO_;
     /**
-     * <code>repeated uint32 source_list = 2;</code>
-     * @return A list containing the sourceList.
+     * <code>repeated uint32 Unk3300_BELBNDNDGAO = 14;</code>
+     * @return A list containing the unk3300BELBNDNDGAO.
      */
     @java.lang.Override
     public java.util.List<java.lang.Integer>
-        getSourceListList() {
-      return sourceList_;
+        getUnk3300BELBNDNDGAOList() {
+      return unk3300BELBNDNDGAO_;
     }
     /**
-     * <code>repeated uint32 source_list = 2;</code>
-     * @return The count of sourceList.
+     * <code>repeated uint32 Unk3300_BELBNDNDGAO = 14;</code>
+     * @return The count of unk3300BELBNDNDGAO.
      */
-    public int getSourceListCount() {
-      return sourceList_.size();
+    public int getUnk3300BELBNDNDGAOCount() {
+      return unk3300BELBNDNDGAO_.size();
     }
     /**
-     * <code>repeated uint32 source_list = 2;</code>
+     * <code>repeated uint32 Unk3300_BELBNDNDGAO = 14;</code>
      * @param index The index of the element to return.
-     * @return The sourceList at the given index.
+     * @return The unk3300BELBNDNDGAO at the given index.
      */
-    public int getSourceList(int index) {
-      return sourceList_.getInt(index);
+    public int getUnk3300BELBNDNDGAO(int index) {
+      return unk3300BELBNDNDGAO_.getInt(index);
     }
-    private int sourceListMemoizedSerializedSize = -1;
+    private int unk3300BELBNDNDGAOMemoizedSerializedSize = -1;
 
-    public static final int REACTION_LIST_FIELD_NUMBER = 14;
+    public static final int REACTION_LIST_FIELD_NUMBER = 1;
     private java.util.List<emu.grasscutter.net.proto.GCGSkillPreviewReactionInfoOuterClass.GCGSkillPreviewReactionInfo> reactionList_;
     /**
-     * <code>repeated .GCGSkillPreviewReactionInfo reaction_list = 14;</code>
+     * <code>repeated .GCGSkillPreviewReactionInfo reaction_list = 1;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.GCGSkillPreviewReactionInfoOuterClass.GCGSkillPreviewReactionInfo> getReactionListList() {
       return reactionList_;
     }
     /**
-     * <code>repeated .GCGSkillPreviewReactionInfo reaction_list = 14;</code>
+     * <code>repeated .GCGSkillPreviewReactionInfo reaction_list = 1;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.GCGSkillPreviewReactionInfoOuterClass.GCGSkillPreviewReactionInfoOrBuilder> 
@@ -291,21 +291,21 @@ public final class GCGSkillPreviewElementReactionInfoOuterClass {
       return reactionList_;
     }
     /**
-     * <code>repeated .GCGSkillPreviewReactionInfo reaction_list = 14;</code>
+     * <code>repeated .GCGSkillPreviewReactionInfo reaction_list = 1;</code>
      */
     @java.lang.Override
     public int getReactionListCount() {
       return reactionList_.size();
     }
     /**
-     * <code>repeated .GCGSkillPreviewReactionInfo reaction_list = 14;</code>
+     * <code>repeated .GCGSkillPreviewReactionInfo reaction_list = 1;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.GCGSkillPreviewReactionInfoOuterClass.GCGSkillPreviewReactionInfo getReactionList(int index) {
       return reactionList_.get(index);
     }
     /**
-     * <code>repeated .GCGSkillPreviewReactionInfo reaction_list = 14;</code>
+     * <code>repeated .GCGSkillPreviewReactionInfo reaction_list = 1;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.GCGSkillPreviewReactionInfoOuterClass.GCGSkillPreviewReactionInfoOrBuilder getReactionListOrBuilder(
@@ -328,22 +328,22 @@ public final class GCGSkillPreviewElementReactionInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      if (getSourceListList().size() > 0) {
-        output.writeUInt32NoTag(18);
-        output.writeUInt32NoTag(sourceListMemoizedSerializedSize);
-      }
-      for (int i = 0; i < sourceList_.size(); i++) {
-        output.writeUInt32NoTag(sourceList_.getInt(i));
-      }
-      if (getFreshListList().size() > 0) {
-        output.writeUInt32NoTag(66);
-        output.writeUInt32NoTag(freshListMemoizedSerializedSize);
-      }
-      for (int i = 0; i < freshList_.size(); i++) {
-        output.writeUInt32NoTag(freshList_.getInt(i));
-      }
       for (int i = 0; i < reactionList_.size(); i++) {
-        output.writeMessage(14, reactionList_.get(i));
+        output.writeMessage(1, reactionList_.get(i));
+      }
+      if (getUnk3300JOBNBDJHAPJList().size() > 0) {
+        output.writeUInt32NoTag(98);
+        output.writeUInt32NoTag(unk3300JOBNBDJHAPJMemoizedSerializedSize);
+      }
+      for (int i = 0; i < unk3300JOBNBDJHAPJ_.size(); i++) {
+        output.writeUInt32NoTag(unk3300JOBNBDJHAPJ_.getInt(i));
+      }
+      if (getUnk3300BELBNDNDGAOList().size() > 0) {
+        output.writeUInt32NoTag(114);
+        output.writeUInt32NoTag(unk3300BELBNDNDGAOMemoizedSerializedSize);
+      }
+      for (int i = 0; i < unk3300BELBNDNDGAO_.size(); i++) {
+        output.writeUInt32NoTag(unk3300BELBNDNDGAO_.getInt(i));
       }
       unknownFields.writeTo(output);
     }
@@ -354,37 +354,37 @@ public final class GCGSkillPreviewElementReactionInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      {
-        int dataSize = 0;
-        for (int i = 0; i < sourceList_.size(); i++) {
-          dataSize += com.google.protobuf.CodedOutputStream
-            .computeUInt32SizeNoTag(sourceList_.getInt(i));
-        }
-        size += dataSize;
-        if (!getSourceListList().isEmpty()) {
-          size += 1;
-          size += com.google.protobuf.CodedOutputStream
-              .computeInt32SizeNoTag(dataSize);
-        }
-        sourceListMemoizedSerializedSize = dataSize;
-      }
-      {
-        int dataSize = 0;
-        for (int i = 0; i < freshList_.size(); i++) {
-          dataSize += com.google.protobuf.CodedOutputStream
-            .computeUInt32SizeNoTag(freshList_.getInt(i));
-        }
-        size += dataSize;
-        if (!getFreshListList().isEmpty()) {
-          size += 1;
-          size += com.google.protobuf.CodedOutputStream
-              .computeInt32SizeNoTag(dataSize);
-        }
-        freshListMemoizedSerializedSize = dataSize;
-      }
       for (int i = 0; i < reactionList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(14, reactionList_.get(i));
+          .computeMessageSize(1, reactionList_.get(i));
+      }
+      {
+        int dataSize = 0;
+        for (int i = 0; i < unk3300JOBNBDJHAPJ_.size(); i++) {
+          dataSize += com.google.protobuf.CodedOutputStream
+            .computeUInt32SizeNoTag(unk3300JOBNBDJHAPJ_.getInt(i));
+        }
+        size += dataSize;
+        if (!getUnk3300JOBNBDJHAPJList().isEmpty()) {
+          size += 1;
+          size += com.google.protobuf.CodedOutputStream
+              .computeInt32SizeNoTag(dataSize);
+        }
+        unk3300JOBNBDJHAPJMemoizedSerializedSize = dataSize;
+      }
+      {
+        int dataSize = 0;
+        for (int i = 0; i < unk3300BELBNDNDGAO_.size(); i++) {
+          dataSize += com.google.protobuf.CodedOutputStream
+            .computeUInt32SizeNoTag(unk3300BELBNDNDGAO_.getInt(i));
+        }
+        size += dataSize;
+        if (!getUnk3300BELBNDNDGAOList().isEmpty()) {
+          size += 1;
+          size += com.google.protobuf.CodedOutputStream
+              .computeInt32SizeNoTag(dataSize);
+        }
+        unk3300BELBNDNDGAOMemoizedSerializedSize = dataSize;
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -401,10 +401,10 @@ public final class GCGSkillPreviewElementReactionInfoOuterClass {
       }
       emu.grasscutter.net.proto.GCGSkillPreviewElementReactionInfoOuterClass.GCGSkillPreviewElementReactionInfo other = (emu.grasscutter.net.proto.GCGSkillPreviewElementReactionInfoOuterClass.GCGSkillPreviewElementReactionInfo) obj;
 
-      if (!getFreshListList()
-          .equals(other.getFreshListList())) return false;
-      if (!getSourceListList()
-          .equals(other.getSourceListList())) return false;
+      if (!getUnk3300JOBNBDJHAPJList()
+          .equals(other.getUnk3300JOBNBDJHAPJList())) return false;
+      if (!getUnk3300BELBNDNDGAOList()
+          .equals(other.getUnk3300BELBNDNDGAOList())) return false;
       if (!getReactionListList()
           .equals(other.getReactionListList())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
@@ -418,13 +418,13 @@ public final class GCGSkillPreviewElementReactionInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (getFreshListCount() > 0) {
-        hash = (37 * hash) + FRESH_LIST_FIELD_NUMBER;
-        hash = (53 * hash) + getFreshListList().hashCode();
+      if (getUnk3300JOBNBDJHAPJCount() > 0) {
+        hash = (37 * hash) + UNK3300_JOBNBDJHAPJ_FIELD_NUMBER;
+        hash = (53 * hash) + getUnk3300JOBNBDJHAPJList().hashCode();
       }
-      if (getSourceListCount() > 0) {
-        hash = (37 * hash) + SOURCE_LIST_FIELD_NUMBER;
-        hash = (53 * hash) + getSourceListList().hashCode();
+      if (getUnk3300BELBNDNDGAOCount() > 0) {
+        hash = (37 * hash) + UNK3300_BELBNDNDGAO_FIELD_NUMBER;
+        hash = (53 * hash) + getUnk3300BELBNDNDGAOList().hashCode();
       }
       if (getReactionListCount() > 0) {
         hash = (37 * hash) + REACTION_LIST_FIELD_NUMBER;
@@ -564,9 +564,9 @@ public final class GCGSkillPreviewElementReactionInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        freshList_ = emptyIntList();
+        unk3300JOBNBDJHAPJ_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
-        sourceList_ = emptyIntList();
+        unk3300BELBNDNDGAO_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000002);
         if (reactionListBuilder_ == null) {
           reactionList_ = java.util.Collections.emptyList();
@@ -602,15 +602,15 @@ public final class GCGSkillPreviewElementReactionInfoOuterClass {
         emu.grasscutter.net.proto.GCGSkillPreviewElementReactionInfoOuterClass.GCGSkillPreviewElementReactionInfo result = new emu.grasscutter.net.proto.GCGSkillPreviewElementReactionInfoOuterClass.GCGSkillPreviewElementReactionInfo(this);
         int from_bitField0_ = bitField0_;
         if (((bitField0_ & 0x00000001) != 0)) {
-          freshList_.makeImmutable();
+          unk3300JOBNBDJHAPJ_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000001);
         }
-        result.freshList_ = freshList_;
+        result.unk3300JOBNBDJHAPJ_ = unk3300JOBNBDJHAPJ_;
         if (((bitField0_ & 0x00000002) != 0)) {
-          sourceList_.makeImmutable();
+          unk3300BELBNDNDGAO_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000002);
         }
-        result.sourceList_ = sourceList_;
+        result.unk3300BELBNDNDGAO_ = unk3300BELBNDNDGAO_;
         if (reactionListBuilder_ == null) {
           if (((bitField0_ & 0x00000004) != 0)) {
             reactionList_ = java.util.Collections.unmodifiableList(reactionList_);
@@ -668,23 +668,23 @@ public final class GCGSkillPreviewElementReactionInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.GCGSkillPreviewElementReactionInfoOuterClass.GCGSkillPreviewElementReactionInfo other) {
         if (other == emu.grasscutter.net.proto.GCGSkillPreviewElementReactionInfoOuterClass.GCGSkillPreviewElementReactionInfo.getDefaultInstance()) return this;
-        if (!other.freshList_.isEmpty()) {
-          if (freshList_.isEmpty()) {
-            freshList_ = other.freshList_;
+        if (!other.unk3300JOBNBDJHAPJ_.isEmpty()) {
+          if (unk3300JOBNBDJHAPJ_.isEmpty()) {
+            unk3300JOBNBDJHAPJ_ = other.unk3300JOBNBDJHAPJ_;
             bitField0_ = (bitField0_ & ~0x00000001);
           } else {
-            ensureFreshListIsMutable();
-            freshList_.addAll(other.freshList_);
+            ensureUnk3300JOBNBDJHAPJIsMutable();
+            unk3300JOBNBDJHAPJ_.addAll(other.unk3300JOBNBDJHAPJ_);
           }
           onChanged();
         }
-        if (!other.sourceList_.isEmpty()) {
-          if (sourceList_.isEmpty()) {
-            sourceList_ = other.sourceList_;
+        if (!other.unk3300BELBNDNDGAO_.isEmpty()) {
+          if (unk3300BELBNDNDGAO_.isEmpty()) {
+            unk3300BELBNDNDGAO_ = other.unk3300BELBNDNDGAO_;
             bitField0_ = (bitField0_ & ~0x00000002);
           } else {
-            ensureSourceListIsMutable();
-            sourceList_.addAll(other.sourceList_);
+            ensureUnk3300BELBNDNDGAOIsMutable();
+            unk3300BELBNDNDGAO_.addAll(other.unk3300BELBNDNDGAO_);
           }
           onChanged();
         }
@@ -744,159 +744,159 @@ public final class GCGSkillPreviewElementReactionInfoOuterClass {
       }
       private int bitField0_;
 
-      private com.google.protobuf.Internal.IntList freshList_ = emptyIntList();
-      private void ensureFreshListIsMutable() {
+      private com.google.protobuf.Internal.IntList unk3300JOBNBDJHAPJ_ = emptyIntList();
+      private void ensureUnk3300JOBNBDJHAPJIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          freshList_ = mutableCopy(freshList_);
+          unk3300JOBNBDJHAPJ_ = mutableCopy(unk3300JOBNBDJHAPJ_);
           bitField0_ |= 0x00000001;
          }
       }
       /**
-       * <code>repeated uint32 fresh_list = 8;</code>
-       * @return A list containing the freshList.
+       * <code>repeated uint32 Unk3300_JOBNBDJHAPJ = 12;</code>
+       * @return A list containing the unk3300JOBNBDJHAPJ.
        */
       public java.util.List<java.lang.Integer>
-          getFreshListList() {
+          getUnk3300JOBNBDJHAPJList() {
         return ((bitField0_ & 0x00000001) != 0) ?
-                 java.util.Collections.unmodifiableList(freshList_) : freshList_;
+                 java.util.Collections.unmodifiableList(unk3300JOBNBDJHAPJ_) : unk3300JOBNBDJHAPJ_;
       }
       /**
-       * <code>repeated uint32 fresh_list = 8;</code>
-       * @return The count of freshList.
+       * <code>repeated uint32 Unk3300_JOBNBDJHAPJ = 12;</code>
+       * @return The count of unk3300JOBNBDJHAPJ.
        */
-      public int getFreshListCount() {
-        return freshList_.size();
+      public int getUnk3300JOBNBDJHAPJCount() {
+        return unk3300JOBNBDJHAPJ_.size();
       }
       /**
-       * <code>repeated uint32 fresh_list = 8;</code>
+       * <code>repeated uint32 Unk3300_JOBNBDJHAPJ = 12;</code>
        * @param index The index of the element to return.
-       * @return The freshList at the given index.
+       * @return The unk3300JOBNBDJHAPJ at the given index.
        */
-      public int getFreshList(int index) {
-        return freshList_.getInt(index);
+      public int getUnk3300JOBNBDJHAPJ(int index) {
+        return unk3300JOBNBDJHAPJ_.getInt(index);
       }
       /**
-       * <code>repeated uint32 fresh_list = 8;</code>
+       * <code>repeated uint32 Unk3300_JOBNBDJHAPJ = 12;</code>
        * @param index The index to set the value at.
-       * @param value The freshList to set.
+       * @param value The unk3300JOBNBDJHAPJ to set.
        * @return This builder for chaining.
        */
-      public Builder setFreshList(
+      public Builder setUnk3300JOBNBDJHAPJ(
           int index, int value) {
-        ensureFreshListIsMutable();
-        freshList_.setInt(index, value);
+        ensureUnk3300JOBNBDJHAPJIsMutable();
+        unk3300JOBNBDJHAPJ_.setInt(index, value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 fresh_list = 8;</code>
-       * @param value The freshList to add.
+       * <code>repeated uint32 Unk3300_JOBNBDJHAPJ = 12;</code>
+       * @param value The unk3300JOBNBDJHAPJ to add.
        * @return This builder for chaining.
        */
-      public Builder addFreshList(int value) {
-        ensureFreshListIsMutable();
-        freshList_.addInt(value);
+      public Builder addUnk3300JOBNBDJHAPJ(int value) {
+        ensureUnk3300JOBNBDJHAPJIsMutable();
+        unk3300JOBNBDJHAPJ_.addInt(value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 fresh_list = 8;</code>
-       * @param values The freshList to add.
+       * <code>repeated uint32 Unk3300_JOBNBDJHAPJ = 12;</code>
+       * @param values The unk3300JOBNBDJHAPJ to add.
        * @return This builder for chaining.
        */
-      public Builder addAllFreshList(
+      public Builder addAllUnk3300JOBNBDJHAPJ(
           java.lang.Iterable<? extends java.lang.Integer> values) {
-        ensureFreshListIsMutable();
+        ensureUnk3300JOBNBDJHAPJIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, freshList_);
+            values, unk3300JOBNBDJHAPJ_);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 fresh_list = 8;</code>
+       * <code>repeated uint32 Unk3300_JOBNBDJHAPJ = 12;</code>
        * @return This builder for chaining.
        */
-      public Builder clearFreshList() {
-        freshList_ = emptyIntList();
+      public Builder clearUnk3300JOBNBDJHAPJ() {
+        unk3300JOBNBDJHAPJ_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
         onChanged();
         return this;
       }
 
-      private com.google.protobuf.Internal.IntList sourceList_ = emptyIntList();
-      private void ensureSourceListIsMutable() {
+      private com.google.protobuf.Internal.IntList unk3300BELBNDNDGAO_ = emptyIntList();
+      private void ensureUnk3300BELBNDNDGAOIsMutable() {
         if (!((bitField0_ & 0x00000002) != 0)) {
-          sourceList_ = mutableCopy(sourceList_);
+          unk3300BELBNDNDGAO_ = mutableCopy(unk3300BELBNDNDGAO_);
           bitField0_ |= 0x00000002;
          }
       }
       /**
-       * <code>repeated uint32 source_list = 2;</code>
-       * @return A list containing the sourceList.
+       * <code>repeated uint32 Unk3300_BELBNDNDGAO = 14;</code>
+       * @return A list containing the unk3300BELBNDNDGAO.
        */
       public java.util.List<java.lang.Integer>
-          getSourceListList() {
+          getUnk3300BELBNDNDGAOList() {
         return ((bitField0_ & 0x00000002) != 0) ?
-                 java.util.Collections.unmodifiableList(sourceList_) : sourceList_;
+                 java.util.Collections.unmodifiableList(unk3300BELBNDNDGAO_) : unk3300BELBNDNDGAO_;
       }
       /**
-       * <code>repeated uint32 source_list = 2;</code>
-       * @return The count of sourceList.
+       * <code>repeated uint32 Unk3300_BELBNDNDGAO = 14;</code>
+       * @return The count of unk3300BELBNDNDGAO.
        */
-      public int getSourceListCount() {
-        return sourceList_.size();
+      public int getUnk3300BELBNDNDGAOCount() {
+        return unk3300BELBNDNDGAO_.size();
       }
       /**
-       * <code>repeated uint32 source_list = 2;</code>
+       * <code>repeated uint32 Unk3300_BELBNDNDGAO = 14;</code>
        * @param index The index of the element to return.
-       * @return The sourceList at the given index.
+       * @return The unk3300BELBNDNDGAO at the given index.
        */
-      public int getSourceList(int index) {
-        return sourceList_.getInt(index);
+      public int getUnk3300BELBNDNDGAO(int index) {
+        return unk3300BELBNDNDGAO_.getInt(index);
       }
       /**
-       * <code>repeated uint32 source_list = 2;</code>
+       * <code>repeated uint32 Unk3300_BELBNDNDGAO = 14;</code>
        * @param index The index to set the value at.
-       * @param value The sourceList to set.
+       * @param value The unk3300BELBNDNDGAO to set.
        * @return This builder for chaining.
        */
-      public Builder setSourceList(
+      public Builder setUnk3300BELBNDNDGAO(
           int index, int value) {
-        ensureSourceListIsMutable();
-        sourceList_.setInt(index, value);
+        ensureUnk3300BELBNDNDGAOIsMutable();
+        unk3300BELBNDNDGAO_.setInt(index, value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 source_list = 2;</code>
-       * @param value The sourceList to add.
+       * <code>repeated uint32 Unk3300_BELBNDNDGAO = 14;</code>
+       * @param value The unk3300BELBNDNDGAO to add.
        * @return This builder for chaining.
        */
-      public Builder addSourceList(int value) {
-        ensureSourceListIsMutable();
-        sourceList_.addInt(value);
+      public Builder addUnk3300BELBNDNDGAO(int value) {
+        ensureUnk3300BELBNDNDGAOIsMutable();
+        unk3300BELBNDNDGAO_.addInt(value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 source_list = 2;</code>
-       * @param values The sourceList to add.
+       * <code>repeated uint32 Unk3300_BELBNDNDGAO = 14;</code>
+       * @param values The unk3300BELBNDNDGAO to add.
        * @return This builder for chaining.
        */
-      public Builder addAllSourceList(
+      public Builder addAllUnk3300BELBNDNDGAO(
           java.lang.Iterable<? extends java.lang.Integer> values) {
-        ensureSourceListIsMutable();
+        ensureUnk3300BELBNDNDGAOIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, sourceList_);
+            values, unk3300BELBNDNDGAO_);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 source_list = 2;</code>
+       * <code>repeated uint32 Unk3300_BELBNDNDGAO = 14;</code>
        * @return This builder for chaining.
        */
-      public Builder clearSourceList() {
-        sourceList_ = emptyIntList();
+      public Builder clearUnk3300BELBNDNDGAO() {
+        unk3300BELBNDNDGAO_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000002);
         onChanged();
         return this;
@@ -915,7 +915,7 @@ public final class GCGSkillPreviewElementReactionInfoOuterClass {
           emu.grasscutter.net.proto.GCGSkillPreviewReactionInfoOuterClass.GCGSkillPreviewReactionInfo, emu.grasscutter.net.proto.GCGSkillPreviewReactionInfoOuterClass.GCGSkillPreviewReactionInfo.Builder, emu.grasscutter.net.proto.GCGSkillPreviewReactionInfoOuterClass.GCGSkillPreviewReactionInfoOrBuilder> reactionListBuilder_;
 
       /**
-       * <code>repeated .GCGSkillPreviewReactionInfo reaction_list = 14;</code>
+       * <code>repeated .GCGSkillPreviewReactionInfo reaction_list = 1;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.GCGSkillPreviewReactionInfoOuterClass.GCGSkillPreviewReactionInfo> getReactionListList() {
         if (reactionListBuilder_ == null) {
@@ -925,7 +925,7 @@ public final class GCGSkillPreviewElementReactionInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .GCGSkillPreviewReactionInfo reaction_list = 14;</code>
+       * <code>repeated .GCGSkillPreviewReactionInfo reaction_list = 1;</code>
        */
       public int getReactionListCount() {
         if (reactionListBuilder_ == null) {
@@ -935,7 +935,7 @@ public final class GCGSkillPreviewElementReactionInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .GCGSkillPreviewReactionInfo reaction_list = 14;</code>
+       * <code>repeated .GCGSkillPreviewReactionInfo reaction_list = 1;</code>
        */
       public emu.grasscutter.net.proto.GCGSkillPreviewReactionInfoOuterClass.GCGSkillPreviewReactionInfo getReactionList(int index) {
         if (reactionListBuilder_ == null) {
@@ -945,7 +945,7 @@ public final class GCGSkillPreviewElementReactionInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .GCGSkillPreviewReactionInfo reaction_list = 14;</code>
+       * <code>repeated .GCGSkillPreviewReactionInfo reaction_list = 1;</code>
        */
       public Builder setReactionList(
           int index, emu.grasscutter.net.proto.GCGSkillPreviewReactionInfoOuterClass.GCGSkillPreviewReactionInfo value) {
@@ -962,7 +962,7 @@ public final class GCGSkillPreviewElementReactionInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GCGSkillPreviewReactionInfo reaction_list = 14;</code>
+       * <code>repeated .GCGSkillPreviewReactionInfo reaction_list = 1;</code>
        */
       public Builder setReactionList(
           int index, emu.grasscutter.net.proto.GCGSkillPreviewReactionInfoOuterClass.GCGSkillPreviewReactionInfo.Builder builderForValue) {
@@ -976,7 +976,7 @@ public final class GCGSkillPreviewElementReactionInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GCGSkillPreviewReactionInfo reaction_list = 14;</code>
+       * <code>repeated .GCGSkillPreviewReactionInfo reaction_list = 1;</code>
        */
       public Builder addReactionList(emu.grasscutter.net.proto.GCGSkillPreviewReactionInfoOuterClass.GCGSkillPreviewReactionInfo value) {
         if (reactionListBuilder_ == null) {
@@ -992,7 +992,7 @@ public final class GCGSkillPreviewElementReactionInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GCGSkillPreviewReactionInfo reaction_list = 14;</code>
+       * <code>repeated .GCGSkillPreviewReactionInfo reaction_list = 1;</code>
        */
       public Builder addReactionList(
           int index, emu.grasscutter.net.proto.GCGSkillPreviewReactionInfoOuterClass.GCGSkillPreviewReactionInfo value) {
@@ -1009,7 +1009,7 @@ public final class GCGSkillPreviewElementReactionInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GCGSkillPreviewReactionInfo reaction_list = 14;</code>
+       * <code>repeated .GCGSkillPreviewReactionInfo reaction_list = 1;</code>
        */
       public Builder addReactionList(
           emu.grasscutter.net.proto.GCGSkillPreviewReactionInfoOuterClass.GCGSkillPreviewReactionInfo.Builder builderForValue) {
@@ -1023,7 +1023,7 @@ public final class GCGSkillPreviewElementReactionInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GCGSkillPreviewReactionInfo reaction_list = 14;</code>
+       * <code>repeated .GCGSkillPreviewReactionInfo reaction_list = 1;</code>
        */
       public Builder addReactionList(
           int index, emu.grasscutter.net.proto.GCGSkillPreviewReactionInfoOuterClass.GCGSkillPreviewReactionInfo.Builder builderForValue) {
@@ -1037,7 +1037,7 @@ public final class GCGSkillPreviewElementReactionInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GCGSkillPreviewReactionInfo reaction_list = 14;</code>
+       * <code>repeated .GCGSkillPreviewReactionInfo reaction_list = 1;</code>
        */
       public Builder addAllReactionList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.GCGSkillPreviewReactionInfoOuterClass.GCGSkillPreviewReactionInfo> values) {
@@ -1052,7 +1052,7 @@ public final class GCGSkillPreviewElementReactionInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GCGSkillPreviewReactionInfo reaction_list = 14;</code>
+       * <code>repeated .GCGSkillPreviewReactionInfo reaction_list = 1;</code>
        */
       public Builder clearReactionList() {
         if (reactionListBuilder_ == null) {
@@ -1065,7 +1065,7 @@ public final class GCGSkillPreviewElementReactionInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GCGSkillPreviewReactionInfo reaction_list = 14;</code>
+       * <code>repeated .GCGSkillPreviewReactionInfo reaction_list = 1;</code>
        */
       public Builder removeReactionList(int index) {
         if (reactionListBuilder_ == null) {
@@ -1078,14 +1078,14 @@ public final class GCGSkillPreviewElementReactionInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GCGSkillPreviewReactionInfo reaction_list = 14;</code>
+       * <code>repeated .GCGSkillPreviewReactionInfo reaction_list = 1;</code>
        */
       public emu.grasscutter.net.proto.GCGSkillPreviewReactionInfoOuterClass.GCGSkillPreviewReactionInfo.Builder getReactionListBuilder(
           int index) {
         return getReactionListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .GCGSkillPreviewReactionInfo reaction_list = 14;</code>
+       * <code>repeated .GCGSkillPreviewReactionInfo reaction_list = 1;</code>
        */
       public emu.grasscutter.net.proto.GCGSkillPreviewReactionInfoOuterClass.GCGSkillPreviewReactionInfoOrBuilder getReactionListOrBuilder(
           int index) {
@@ -1095,7 +1095,7 @@ public final class GCGSkillPreviewElementReactionInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .GCGSkillPreviewReactionInfo reaction_list = 14;</code>
+       * <code>repeated .GCGSkillPreviewReactionInfo reaction_list = 1;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.GCGSkillPreviewReactionInfoOuterClass.GCGSkillPreviewReactionInfoOrBuilder> 
            getReactionListOrBuilderList() {
@@ -1106,14 +1106,14 @@ public final class GCGSkillPreviewElementReactionInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .GCGSkillPreviewReactionInfo reaction_list = 14;</code>
+       * <code>repeated .GCGSkillPreviewReactionInfo reaction_list = 1;</code>
        */
       public emu.grasscutter.net.proto.GCGSkillPreviewReactionInfoOuterClass.GCGSkillPreviewReactionInfo.Builder addReactionListBuilder() {
         return getReactionListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.GCGSkillPreviewReactionInfoOuterClass.GCGSkillPreviewReactionInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .GCGSkillPreviewReactionInfo reaction_list = 14;</code>
+       * <code>repeated .GCGSkillPreviewReactionInfo reaction_list = 1;</code>
        */
       public emu.grasscutter.net.proto.GCGSkillPreviewReactionInfoOuterClass.GCGSkillPreviewReactionInfo.Builder addReactionListBuilder(
           int index) {
@@ -1121,7 +1121,7 @@ public final class GCGSkillPreviewElementReactionInfoOuterClass {
             index, emu.grasscutter.net.proto.GCGSkillPreviewReactionInfoOuterClass.GCGSkillPreviewReactionInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .GCGSkillPreviewReactionInfo reaction_list = 14;</code>
+       * <code>repeated .GCGSkillPreviewReactionInfo reaction_list = 1;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.GCGSkillPreviewReactionInfoOuterClass.GCGSkillPreviewReactionInfo.Builder> 
            getReactionListBuilderList() {
@@ -1209,12 +1209,12 @@ public final class GCGSkillPreviewElementReactionInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n(GCGSkillPreviewElementReactionInfo.pro" +
-      "to\032!GCGSkillPreviewReactionInfo.proto\"\202\001" +
-      "\n\"GCGSkillPreviewElementReactionInfo\022\022\n\n" +
-      "fresh_list\030\010 \003(\r\022\023\n\013source_list\030\002 \003(\r\0223\n" +
-      "\rreaction_list\030\016 \003(\0132\034.GCGSkillPreviewRe" +
-      "actionInfoB\033\n\031emu.grasscutter.net.protob" +
-      "\006proto3"
+      "to\032!GCGSkillPreviewReactionInfo.proto\"\223\001" +
+      "\n\"GCGSkillPreviewElementReactionInfo\022\033\n\023" +
+      "Unk3300_JOBNBDJHAPJ\030\014 \003(\r\022\033\n\023Unk3300_BEL" +
+      "BNDNDGAO\030\016 \003(\r\0223\n\rreaction_list\030\001 \003(\0132\034." +
+      "GCGSkillPreviewReactionInfoB\033\n\031emu.grass" +
+      "cutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -1226,7 +1226,7 @@ public final class GCGSkillPreviewElementReactionInfoOuterClass {
     internal_static_GCGSkillPreviewElementReactionInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GCGSkillPreviewElementReactionInfo_descriptor,
-        new java.lang.String[] { "FreshList", "SourceList", "ReactionList", });
+        new java.lang.String[] { "Unk3300JOBNBDJHAPJ", "Unk3300BELBNDNDGAO", "ReactionList", });
     emu.grasscutter.net.proto.GCGSkillPreviewReactionInfoOuterClass.getDescriptor();
   }
 

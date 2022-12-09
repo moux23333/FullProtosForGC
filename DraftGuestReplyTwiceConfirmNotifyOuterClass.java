@@ -31,16 +31,20 @@ public final class DraftGuestReplyTwiceConfirmNotifyOuterClass {
     int getDraftId();
 
     /**
-     * <code>uint32 guest_uid = 7;</code>
+     * <code>uint32 guest_uid = 11;</code>
      * @return The guestUid.
      */
     int getGuestUid();
   }
   /**
    * <pre>
-   * CmdId: 5497
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 5499;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code DraftGuestReplyTwiceConfirmNotify}
@@ -87,7 +91,7 @@ public final class DraftGuestReplyTwiceConfirmNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 56: {
+            case 88: {
 
               guestUid_ = input.readUInt32();
               break;
@@ -156,10 +160,10 @@ public final class DraftGuestReplyTwiceConfirmNotifyOuterClass {
       return draftId_;
     }
 
-    public static final int GUEST_UID_FIELD_NUMBER = 7;
+    public static final int GUEST_UID_FIELD_NUMBER = 11;
     private int guestUid_;
     /**
-     * <code>uint32 guest_uid = 7;</code>
+     * <code>uint32 guest_uid = 11;</code>
      * @return The guestUid.
      */
     @java.lang.Override
@@ -182,7 +186,7 @@ public final class DraftGuestReplyTwiceConfirmNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (guestUid_ != 0) {
-        output.writeUInt32(7, guestUid_);
+        output.writeUInt32(11, guestUid_);
       }
       if (isAgree_ != false) {
         output.writeBool(14, isAgree_);
@@ -201,7 +205,7 @@ public final class DraftGuestReplyTwiceConfirmNotifyOuterClass {
       size = 0;
       if (guestUid_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, guestUid_);
+          .computeUInt32Size(11, guestUid_);
       }
       if (isAgree_ != false) {
         size += com.google.protobuf.CodedOutputStream
@@ -347,9 +351,13 @@ public final class DraftGuestReplyTwiceConfirmNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 5497
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 5499;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code DraftGuestReplyTwiceConfirmNotify}
@@ -574,7 +582,7 @@ public final class DraftGuestReplyTwiceConfirmNotifyOuterClass {
 
       private int guestUid_ ;
       /**
-       * <code>uint32 guest_uid = 7;</code>
+       * <code>uint32 guest_uid = 11;</code>
        * @return The guestUid.
        */
       @java.lang.Override
@@ -582,7 +590,7 @@ public final class DraftGuestReplyTwiceConfirmNotifyOuterClass {
         return guestUid_;
       }
       /**
-       * <code>uint32 guest_uid = 7;</code>
+       * <code>uint32 guest_uid = 11;</code>
        * @param value The guestUid to set.
        * @return This builder for chaining.
        */
@@ -593,7 +601,7 @@ public final class DraftGuestReplyTwiceConfirmNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 guest_uid = 7;</code>
+       * <code>uint32 guest_uid = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearGuestUid() {
@@ -672,7 +680,7 @@ public final class DraftGuestReplyTwiceConfirmNotifyOuterClass {
       "\n\'DraftGuestReplyTwiceConfirmNotify.prot" +
       "o\"Z\n!DraftGuestReplyTwiceConfirmNotify\022\020" +
       "\n\010is_agree\030\016 \001(\010\022\020\n\010draft_id\030\017 \001(\r\022\021\n\tgu" +
-      "est_uid\030\007 \001(\rB\033\n\031emu.grasscutter.net.pro" +
+      "est_uid\030\013 \001(\rB\033\n\031emu.grasscutter.net.pro" +
       "tob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

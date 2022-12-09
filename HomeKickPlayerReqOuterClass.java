@@ -19,23 +19,27 @@ public final class HomeKickPlayerReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 target_uid = 12;</code>
-     * @return The targetUid.
-     */
-    int getTargetUid();
-
-    /**
-     * <code>bool is_kick_all = 13;</code>
+     * <code>bool is_kick_all = 14;</code>
      * @return The isKickAll.
      */
     boolean getIsKickAll();
+
+    /**
+     * <code>uint32 target_uid = 2;</code>
+     * @return The targetUid.
+     */
+    int getTargetUid();
   }
   /**
    * <pre>
-   * CmdId: 4870
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 4684;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code HomeKickPlayerReq}
@@ -82,12 +86,12 @@ public final class HomeKickPlayerReqOuterClass {
             case 0:
               done = true;
               break;
-            case 96: {
+            case 16: {
 
               targetUid_ = input.readUInt32();
               break;
             }
-            case 104: {
+            case 112: {
 
               isKickAll_ = input.readBool();
               break;
@@ -124,26 +128,26 @@ public final class HomeKickPlayerReqOuterClass {
               emu.grasscutter.net.proto.HomeKickPlayerReqOuterClass.HomeKickPlayerReq.class, emu.grasscutter.net.proto.HomeKickPlayerReqOuterClass.HomeKickPlayerReq.Builder.class);
     }
 
-    public static final int TARGET_UID_FIELD_NUMBER = 12;
-    private int targetUid_;
-    /**
-     * <code>uint32 target_uid = 12;</code>
-     * @return The targetUid.
-     */
-    @java.lang.Override
-    public int getTargetUid() {
-      return targetUid_;
-    }
-
-    public static final int IS_KICK_ALL_FIELD_NUMBER = 13;
+    public static final int IS_KICK_ALL_FIELD_NUMBER = 14;
     private boolean isKickAll_;
     /**
-     * <code>bool is_kick_all = 13;</code>
+     * <code>bool is_kick_all = 14;</code>
      * @return The isKickAll.
      */
     @java.lang.Override
     public boolean getIsKickAll() {
       return isKickAll_;
+    }
+
+    public static final int TARGET_UID_FIELD_NUMBER = 2;
+    private int targetUid_;
+    /**
+     * <code>uint32 target_uid = 2;</code>
+     * @return The targetUid.
+     */
+    @java.lang.Override
+    public int getTargetUid() {
+      return targetUid_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -161,10 +165,10 @@ public final class HomeKickPlayerReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (targetUid_ != 0) {
-        output.writeUInt32(12, targetUid_);
+        output.writeUInt32(2, targetUid_);
       }
       if (isKickAll_ != false) {
-        output.writeBool(13, isKickAll_);
+        output.writeBool(14, isKickAll_);
       }
       unknownFields.writeTo(output);
     }
@@ -177,11 +181,11 @@ public final class HomeKickPlayerReqOuterClass {
       size = 0;
       if (targetUid_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, targetUid_);
+          .computeUInt32Size(2, targetUid_);
       }
       if (isKickAll_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(13, isKickAll_);
+          .computeBoolSize(14, isKickAll_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -198,10 +202,10 @@ public final class HomeKickPlayerReqOuterClass {
       }
       emu.grasscutter.net.proto.HomeKickPlayerReqOuterClass.HomeKickPlayerReq other = (emu.grasscutter.net.proto.HomeKickPlayerReqOuterClass.HomeKickPlayerReq) obj;
 
-      if (getTargetUid()
-          != other.getTargetUid()) return false;
       if (getIsKickAll()
           != other.getIsKickAll()) return false;
+      if (getTargetUid()
+          != other.getTargetUid()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -213,11 +217,11 @@ public final class HomeKickPlayerReqOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + TARGET_UID_FIELD_NUMBER;
-      hash = (53 * hash) + getTargetUid();
       hash = (37 * hash) + IS_KICK_ALL_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsKickAll());
+      hash = (37 * hash) + TARGET_UID_FIELD_NUMBER;
+      hash = (53 * hash) + getTargetUid();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -315,10 +319,14 @@ public final class HomeKickPlayerReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 4870
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 4684;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code HomeKickPlayerReq}
@@ -358,9 +366,9 @@ public final class HomeKickPlayerReqOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        targetUid_ = 0;
-
         isKickAll_ = false;
+
+        targetUid_ = 0;
 
         return this;
       }
@@ -388,8 +396,8 @@ public final class HomeKickPlayerReqOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.HomeKickPlayerReqOuterClass.HomeKickPlayerReq buildPartial() {
         emu.grasscutter.net.proto.HomeKickPlayerReqOuterClass.HomeKickPlayerReq result = new emu.grasscutter.net.proto.HomeKickPlayerReqOuterClass.HomeKickPlayerReq(this);
-        result.targetUid_ = targetUid_;
         result.isKickAll_ = isKickAll_;
+        result.targetUid_ = targetUid_;
         onBuilt();
         return result;
       }
@@ -438,11 +446,11 @@ public final class HomeKickPlayerReqOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.HomeKickPlayerReqOuterClass.HomeKickPlayerReq other) {
         if (other == emu.grasscutter.net.proto.HomeKickPlayerReqOuterClass.HomeKickPlayerReq.getDefaultInstance()) return this;
-        if (other.getTargetUid() != 0) {
-          setTargetUid(other.getTargetUid());
-        }
         if (other.getIsKickAll() != false) {
           setIsKickAll(other.getIsKickAll());
+        }
+        if (other.getTargetUid() != 0) {
+          setTargetUid(other.getTargetUid());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -473,40 +481,9 @@ public final class HomeKickPlayerReqOuterClass {
         return this;
       }
 
-      private int targetUid_ ;
-      /**
-       * <code>uint32 target_uid = 12;</code>
-       * @return The targetUid.
-       */
-      @java.lang.Override
-      public int getTargetUid() {
-        return targetUid_;
-      }
-      /**
-       * <code>uint32 target_uid = 12;</code>
-       * @param value The targetUid to set.
-       * @return This builder for chaining.
-       */
-      public Builder setTargetUid(int value) {
-        
-        targetUid_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 target_uid = 12;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearTargetUid() {
-        
-        targetUid_ = 0;
-        onChanged();
-        return this;
-      }
-
       private boolean isKickAll_ ;
       /**
-       * <code>bool is_kick_all = 13;</code>
+       * <code>bool is_kick_all = 14;</code>
        * @return The isKickAll.
        */
       @java.lang.Override
@@ -514,7 +491,7 @@ public final class HomeKickPlayerReqOuterClass {
         return isKickAll_;
       }
       /**
-       * <code>bool is_kick_all = 13;</code>
+       * <code>bool is_kick_all = 14;</code>
        * @param value The isKickAll to set.
        * @return This builder for chaining.
        */
@@ -525,12 +502,43 @@ public final class HomeKickPlayerReqOuterClass {
         return this;
       }
       /**
-       * <code>bool is_kick_all = 13;</code>
+       * <code>bool is_kick_all = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsKickAll() {
         
         isKickAll_ = false;
+        onChanged();
+        return this;
+      }
+
+      private int targetUid_ ;
+      /**
+       * <code>uint32 target_uid = 2;</code>
+       * @return The targetUid.
+       */
+      @java.lang.Override
+      public int getTargetUid() {
+        return targetUid_;
+      }
+      /**
+       * <code>uint32 target_uid = 2;</code>
+       * @param value The targetUid to set.
+       * @return This builder for chaining.
+       */
+      public Builder setTargetUid(int value) {
+        
+        targetUid_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 target_uid = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearTargetUid() {
+        
+        targetUid_ = 0;
         onChanged();
         return this;
       }
@@ -602,8 +610,8 @@ public final class HomeKickPlayerReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\027HomeKickPlayerReq.proto\"<\n\021HomeKickPla" +
-      "yerReq\022\022\n\ntarget_uid\030\014 \001(\r\022\023\n\013is_kick_al" +
-      "l\030\r \001(\010B\033\n\031emu.grasscutter.net.protob\006pr" +
+      "yerReq\022\023\n\013is_kick_all\030\016 \001(\010\022\022\n\ntarget_ui" +
+      "d\030\002 \001(\rB\033\n\031emu.grasscutter.net.protob\006pr" +
       "oto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -615,7 +623,7 @@ public final class HomeKickPlayerReqOuterClass {
     internal_static_HomeKickPlayerReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_HomeKickPlayerReq_descriptor,
-        new java.lang.String[] { "TargetUid", "IsKickAll", });
+        new java.lang.String[] { "IsKickAll", "TargetUid", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

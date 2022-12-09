@@ -19,25 +19,29 @@ public final class OpActivityUpdateNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.OpActivityInfo op_activity_info = 6;</code>
+     * <code>.OpActivityInfo op_activity_info = 9;</code>
      * @return Whether the opActivityInfo field is set.
      */
     boolean hasOpActivityInfo();
     /**
-     * <code>.OpActivityInfo op_activity_info = 6;</code>
+     * <code>.OpActivityInfo op_activity_info = 9;</code>
      * @return The opActivityInfo.
      */
     emu.grasscutter.net.proto.OpActivityInfoOuterClass.OpActivityInfo getOpActivityInfo();
     /**
-     * <code>.OpActivityInfo op_activity_info = 6;</code>
+     * <code>.OpActivityInfo op_activity_info = 9;</code>
      */
     emu.grasscutter.net.proto.OpActivityInfoOuterClass.OpActivityInfoOrBuilder getOpActivityInfoOrBuilder();
   }
   /**
    * <pre>
-   * CmdId: 5135
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 5119;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code OpActivityUpdateNotify}
@@ -84,7 +88,7 @@ public final class OpActivityUpdateNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 50: {
+            case 74: {
               emu.grasscutter.net.proto.OpActivityInfoOuterClass.OpActivityInfo.Builder subBuilder = null;
               if (opActivityInfo_ != null) {
                 subBuilder = opActivityInfo_.toBuilder();
@@ -129,10 +133,10 @@ public final class OpActivityUpdateNotifyOuterClass {
               emu.grasscutter.net.proto.OpActivityUpdateNotifyOuterClass.OpActivityUpdateNotify.class, emu.grasscutter.net.proto.OpActivityUpdateNotifyOuterClass.OpActivityUpdateNotify.Builder.class);
     }
 
-    public static final int OP_ACTIVITY_INFO_FIELD_NUMBER = 6;
+    public static final int OP_ACTIVITY_INFO_FIELD_NUMBER = 9;
     private emu.grasscutter.net.proto.OpActivityInfoOuterClass.OpActivityInfo opActivityInfo_;
     /**
-     * <code>.OpActivityInfo op_activity_info = 6;</code>
+     * <code>.OpActivityInfo op_activity_info = 9;</code>
      * @return Whether the opActivityInfo field is set.
      */
     @java.lang.Override
@@ -140,7 +144,7 @@ public final class OpActivityUpdateNotifyOuterClass {
       return opActivityInfo_ != null;
     }
     /**
-     * <code>.OpActivityInfo op_activity_info = 6;</code>
+     * <code>.OpActivityInfo op_activity_info = 9;</code>
      * @return The opActivityInfo.
      */
     @java.lang.Override
@@ -148,7 +152,7 @@ public final class OpActivityUpdateNotifyOuterClass {
       return opActivityInfo_ == null ? emu.grasscutter.net.proto.OpActivityInfoOuterClass.OpActivityInfo.getDefaultInstance() : opActivityInfo_;
     }
     /**
-     * <code>.OpActivityInfo op_activity_info = 6;</code>
+     * <code>.OpActivityInfo op_activity_info = 9;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.OpActivityInfoOuterClass.OpActivityInfoOrBuilder getOpActivityInfoOrBuilder() {
@@ -170,7 +174,7 @@ public final class OpActivityUpdateNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (opActivityInfo_ != null) {
-        output.writeMessage(6, getOpActivityInfo());
+        output.writeMessage(9, getOpActivityInfo());
       }
       unknownFields.writeTo(output);
     }
@@ -183,7 +187,7 @@ public final class OpActivityUpdateNotifyOuterClass {
       size = 0;
       if (opActivityInfo_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(6, getOpActivityInfo());
+          .computeMessageSize(9, getOpActivityInfo());
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -317,9 +321,13 @@ public final class OpActivityUpdateNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 5135
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 5119;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code OpActivityUpdateNotify}
@@ -480,14 +488,14 @@ public final class OpActivityUpdateNotifyOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.OpActivityInfoOuterClass.OpActivityInfo, emu.grasscutter.net.proto.OpActivityInfoOuterClass.OpActivityInfo.Builder, emu.grasscutter.net.proto.OpActivityInfoOuterClass.OpActivityInfoOrBuilder> opActivityInfoBuilder_;
       /**
-       * <code>.OpActivityInfo op_activity_info = 6;</code>
+       * <code>.OpActivityInfo op_activity_info = 9;</code>
        * @return Whether the opActivityInfo field is set.
        */
       public boolean hasOpActivityInfo() {
         return opActivityInfoBuilder_ != null || opActivityInfo_ != null;
       }
       /**
-       * <code>.OpActivityInfo op_activity_info = 6;</code>
+       * <code>.OpActivityInfo op_activity_info = 9;</code>
        * @return The opActivityInfo.
        */
       public emu.grasscutter.net.proto.OpActivityInfoOuterClass.OpActivityInfo getOpActivityInfo() {
@@ -498,7 +506,7 @@ public final class OpActivityUpdateNotifyOuterClass {
         }
       }
       /**
-       * <code>.OpActivityInfo op_activity_info = 6;</code>
+       * <code>.OpActivityInfo op_activity_info = 9;</code>
        */
       public Builder setOpActivityInfo(emu.grasscutter.net.proto.OpActivityInfoOuterClass.OpActivityInfo value) {
         if (opActivityInfoBuilder_ == null) {
@@ -514,7 +522,7 @@ public final class OpActivityUpdateNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.OpActivityInfo op_activity_info = 6;</code>
+       * <code>.OpActivityInfo op_activity_info = 9;</code>
        */
       public Builder setOpActivityInfo(
           emu.grasscutter.net.proto.OpActivityInfoOuterClass.OpActivityInfo.Builder builderForValue) {
@@ -528,7 +536,7 @@ public final class OpActivityUpdateNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.OpActivityInfo op_activity_info = 6;</code>
+       * <code>.OpActivityInfo op_activity_info = 9;</code>
        */
       public Builder mergeOpActivityInfo(emu.grasscutter.net.proto.OpActivityInfoOuterClass.OpActivityInfo value) {
         if (opActivityInfoBuilder_ == null) {
@@ -546,7 +554,7 @@ public final class OpActivityUpdateNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.OpActivityInfo op_activity_info = 6;</code>
+       * <code>.OpActivityInfo op_activity_info = 9;</code>
        */
       public Builder clearOpActivityInfo() {
         if (opActivityInfoBuilder_ == null) {
@@ -560,7 +568,7 @@ public final class OpActivityUpdateNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.OpActivityInfo op_activity_info = 6;</code>
+       * <code>.OpActivityInfo op_activity_info = 9;</code>
        */
       public emu.grasscutter.net.proto.OpActivityInfoOuterClass.OpActivityInfo.Builder getOpActivityInfoBuilder() {
         
@@ -568,7 +576,7 @@ public final class OpActivityUpdateNotifyOuterClass {
         return getOpActivityInfoFieldBuilder().getBuilder();
       }
       /**
-       * <code>.OpActivityInfo op_activity_info = 6;</code>
+       * <code>.OpActivityInfo op_activity_info = 9;</code>
        */
       public emu.grasscutter.net.proto.OpActivityInfoOuterClass.OpActivityInfoOrBuilder getOpActivityInfoOrBuilder() {
         if (opActivityInfoBuilder_ != null) {
@@ -579,7 +587,7 @@ public final class OpActivityUpdateNotifyOuterClass {
         }
       }
       /**
-       * <code>.OpActivityInfo op_activity_info = 6;</code>
+       * <code>.OpActivityInfo op_activity_info = 9;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.OpActivityInfoOuterClass.OpActivityInfo, emu.grasscutter.net.proto.OpActivityInfoOuterClass.OpActivityInfo.Builder, emu.grasscutter.net.proto.OpActivityInfoOuterClass.OpActivityInfoOrBuilder> 
@@ -663,7 +671,7 @@ public final class OpActivityUpdateNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n\034OpActivityUpdateNotify.proto\032\024OpActivi" +
       "tyInfo.proto\"C\n\026OpActivityUpdateNotify\022)" +
-      "\n\020op_activity_info\030\006 \001(\0132\017.OpActivityInf" +
+      "\n\020op_activity_info\030\t \001(\0132\017.OpActivityInf" +
       "oB\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

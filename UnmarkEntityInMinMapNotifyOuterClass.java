@@ -19,16 +19,20 @@ public final class UnmarkEntityInMinMapNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 entity_id = 8;</code>
+     * <code>uint32 entity_id = 3;</code>
      * @return The entityId.
      */
     int getEntityId();
   }
   /**
    * <pre>
-   * CmdId: 219
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 254;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code UnmarkEntityInMinMapNotify}
@@ -75,7 +79,7 @@ public final class UnmarkEntityInMinMapNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 64: {
+            case 24: {
 
               entityId_ = input.readUInt32();
               break;
@@ -112,10 +116,10 @@ public final class UnmarkEntityInMinMapNotifyOuterClass {
               emu.grasscutter.net.proto.UnmarkEntityInMinMapNotifyOuterClass.UnmarkEntityInMinMapNotify.class, emu.grasscutter.net.proto.UnmarkEntityInMinMapNotifyOuterClass.UnmarkEntityInMinMapNotify.Builder.class);
     }
 
-    public static final int ENTITY_ID_FIELD_NUMBER = 8;
+    public static final int ENTITY_ID_FIELD_NUMBER = 3;
     private int entityId_;
     /**
-     * <code>uint32 entity_id = 8;</code>
+     * <code>uint32 entity_id = 3;</code>
      * @return The entityId.
      */
     @java.lang.Override
@@ -138,7 +142,7 @@ public final class UnmarkEntityInMinMapNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (entityId_ != 0) {
-        output.writeUInt32(8, entityId_);
+        output.writeUInt32(3, entityId_);
       }
       unknownFields.writeTo(output);
     }
@@ -151,7 +155,7 @@ public final class UnmarkEntityInMinMapNotifyOuterClass {
       size = 0;
       if (entityId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, entityId_);
+          .computeUInt32Size(3, entityId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -280,9 +284,13 @@ public final class UnmarkEntityInMinMapNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 219
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 254;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code UnmarkEntityInMinMapNotify}
@@ -433,7 +441,7 @@ public final class UnmarkEntityInMinMapNotifyOuterClass {
 
       private int entityId_ ;
       /**
-       * <code>uint32 entity_id = 8;</code>
+       * <code>uint32 entity_id = 3;</code>
        * @return The entityId.
        */
       @java.lang.Override
@@ -441,7 +449,7 @@ public final class UnmarkEntityInMinMapNotifyOuterClass {
         return entityId_;
       }
       /**
-       * <code>uint32 entity_id = 8;</code>
+       * <code>uint32 entity_id = 3;</code>
        * @param value The entityId to set.
        * @return This builder for chaining.
        */
@@ -452,7 +460,7 @@ public final class UnmarkEntityInMinMapNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 entity_id = 8;</code>
+       * <code>uint32 entity_id = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearEntityId() {
@@ -529,7 +537,7 @@ public final class UnmarkEntityInMinMapNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n UnmarkEntityInMinMapNotify.proto\"/\n\032Un" +
-      "markEntityInMinMapNotify\022\021\n\tentity_id\030\010 " +
+      "markEntityInMinMapNotify\022\021\n\tentity_id\030\003 " +
       "\001(\rB\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

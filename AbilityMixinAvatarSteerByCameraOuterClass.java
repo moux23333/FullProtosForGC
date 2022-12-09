@@ -34,17 +34,17 @@ public final class AbilityMixinAvatarSteerByCameraOuterClass {
     emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getTargetDirOrBuilder();
 
     /**
-     * <code>.Vector target_pos = 6;</code>
+     * <code>.Vector target_pos = 2;</code>
      * @return Whether the targetPos field is set.
      */
     boolean hasTargetPos();
     /**
-     * <code>.Vector target_pos = 6;</code>
+     * <code>.Vector target_pos = 2;</code>
      * @return The targetPos.
      */
     emu.grasscutter.net.proto.VectorOuterClass.Vector getTargetPos();
     /**
-     * <code>.Vector target_pos = 6;</code>
+     * <code>.Vector target_pos = 2;</code>
      */
     emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getTargetPosOrBuilder();
   }
@@ -93,7 +93,7 @@ public final class AbilityMixinAvatarSteerByCameraOuterClass {
             case 0:
               done = true;
               break;
-            case 50: {
+            case 18: {
               emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder subBuilder = null;
               if (targetPos_ != null) {
                 subBuilder = targetPos_.toBuilder();
@@ -177,10 +177,10 @@ public final class AbilityMixinAvatarSteerByCameraOuterClass {
       return getTargetDir();
     }
 
-    public static final int TARGET_POS_FIELD_NUMBER = 6;
+    public static final int TARGET_POS_FIELD_NUMBER = 2;
     private emu.grasscutter.net.proto.VectorOuterClass.Vector targetPos_;
     /**
-     * <code>.Vector target_pos = 6;</code>
+     * <code>.Vector target_pos = 2;</code>
      * @return Whether the targetPos field is set.
      */
     @java.lang.Override
@@ -188,7 +188,7 @@ public final class AbilityMixinAvatarSteerByCameraOuterClass {
       return targetPos_ != null;
     }
     /**
-     * <code>.Vector target_pos = 6;</code>
+     * <code>.Vector target_pos = 2;</code>
      * @return The targetPos.
      */
     @java.lang.Override
@@ -196,7 +196,7 @@ public final class AbilityMixinAvatarSteerByCameraOuterClass {
       return targetPos_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : targetPos_;
     }
     /**
-     * <code>.Vector target_pos = 6;</code>
+     * <code>.Vector target_pos = 2;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getTargetPosOrBuilder() {
@@ -218,7 +218,7 @@ public final class AbilityMixinAvatarSteerByCameraOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (targetPos_ != null) {
-        output.writeMessage(6, getTargetPos());
+        output.writeMessage(2, getTargetPos());
       }
       if (targetDir_ != null) {
         output.writeMessage(7, getTargetDir());
@@ -234,7 +234,7 @@ public final class AbilityMixinAvatarSteerByCameraOuterClass {
       size = 0;
       if (targetPos_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(6, getTargetPos());
+          .computeMessageSize(2, getTargetPos());
       }
       if (targetDir_ != null) {
         size += com.google.protobuf.CodedOutputStream
@@ -671,14 +671,14 @@ public final class AbilityMixinAvatarSteerByCameraOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> targetPosBuilder_;
       /**
-       * <code>.Vector target_pos = 6;</code>
+       * <code>.Vector target_pos = 2;</code>
        * @return Whether the targetPos field is set.
        */
       public boolean hasTargetPos() {
         return targetPosBuilder_ != null || targetPos_ != null;
       }
       /**
-       * <code>.Vector target_pos = 6;</code>
+       * <code>.Vector target_pos = 2;</code>
        * @return The targetPos.
        */
       public emu.grasscutter.net.proto.VectorOuterClass.Vector getTargetPos() {
@@ -689,7 +689,7 @@ public final class AbilityMixinAvatarSteerByCameraOuterClass {
         }
       }
       /**
-       * <code>.Vector target_pos = 6;</code>
+       * <code>.Vector target_pos = 2;</code>
        */
       public Builder setTargetPos(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
         if (targetPosBuilder_ == null) {
@@ -705,7 +705,7 @@ public final class AbilityMixinAvatarSteerByCameraOuterClass {
         return this;
       }
       /**
-       * <code>.Vector target_pos = 6;</code>
+       * <code>.Vector target_pos = 2;</code>
        */
       public Builder setTargetPos(
           emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder builderForValue) {
@@ -719,7 +719,7 @@ public final class AbilityMixinAvatarSteerByCameraOuterClass {
         return this;
       }
       /**
-       * <code>.Vector target_pos = 6;</code>
+       * <code>.Vector target_pos = 2;</code>
        */
       public Builder mergeTargetPos(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
         if (targetPosBuilder_ == null) {
@@ -737,7 +737,7 @@ public final class AbilityMixinAvatarSteerByCameraOuterClass {
         return this;
       }
       /**
-       * <code>.Vector target_pos = 6;</code>
+       * <code>.Vector target_pos = 2;</code>
        */
       public Builder clearTargetPos() {
         if (targetPosBuilder_ == null) {
@@ -751,7 +751,7 @@ public final class AbilityMixinAvatarSteerByCameraOuterClass {
         return this;
       }
       /**
-       * <code>.Vector target_pos = 6;</code>
+       * <code>.Vector target_pos = 2;</code>
        */
       public emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder getTargetPosBuilder() {
         
@@ -759,7 +759,7 @@ public final class AbilityMixinAvatarSteerByCameraOuterClass {
         return getTargetPosFieldBuilder().getBuilder();
       }
       /**
-       * <code>.Vector target_pos = 6;</code>
+       * <code>.Vector target_pos = 2;</code>
        */
       public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getTargetPosOrBuilder() {
         if (targetPosBuilder_ != null) {
@@ -770,7 +770,7 @@ public final class AbilityMixinAvatarSteerByCameraOuterClass {
         }
       }
       /**
-       * <code>.Vector target_pos = 6;</code>
+       * <code>.Vector target_pos = 2;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> 
@@ -855,7 +855,7 @@ public final class AbilityMixinAvatarSteerByCameraOuterClass {
       "\n%AbilityMixinAvatarSteerByCamera.proto\032" +
       "\014Vector.proto\"[\n\037AbilityMixinAvatarSteer" +
       "ByCamera\022\033\n\ntarget_dir\030\007 \001(\0132\007.Vector\022\033\n" +
-      "\ntarget_pos\030\006 \001(\0132\007.VectorB\033\n\031emu.grassc" +
+      "\ntarget_pos\030\002 \001(\0132\007.VectorB\033\n\031emu.grassc" +
       "utter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

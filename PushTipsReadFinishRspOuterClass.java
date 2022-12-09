@@ -19,22 +19,26 @@ public final class PushTipsReadFinishRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 push_tips_id = 3;</code>
+     * <code>uint32 push_tips_id = 13;</code>
      * @return The pushTipsId.
      */
     int getPushTipsId();
 
     /**
-     * <code>int32 retcode = 9;</code>
+     * <code>int32 retcode = 12;</code>
      * @return The retcode.
      */
     int getRetcode();
   }
   /**
    * <pre>
-   * CmdId: 2293
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 2207;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code PushTipsReadFinishRsp}
@@ -81,14 +85,14 @@ public final class PushTipsReadFinishRspOuterClass {
             case 0:
               done = true;
               break;
-            case 24: {
-
-              pushTipsId_ = input.readUInt32();
-              break;
-            }
-            case 72: {
+            case 96: {
 
               retcode_ = input.readInt32();
+              break;
+            }
+            case 104: {
+
+              pushTipsId_ = input.readUInt32();
               break;
             }
             default: {
@@ -123,10 +127,10 @@ public final class PushTipsReadFinishRspOuterClass {
               emu.grasscutter.net.proto.PushTipsReadFinishRspOuterClass.PushTipsReadFinishRsp.class, emu.grasscutter.net.proto.PushTipsReadFinishRspOuterClass.PushTipsReadFinishRsp.Builder.class);
     }
 
-    public static final int PUSH_TIPS_ID_FIELD_NUMBER = 3;
+    public static final int PUSH_TIPS_ID_FIELD_NUMBER = 13;
     private int pushTipsId_;
     /**
-     * <code>uint32 push_tips_id = 3;</code>
+     * <code>uint32 push_tips_id = 13;</code>
      * @return The pushTipsId.
      */
     @java.lang.Override
@@ -134,10 +138,10 @@ public final class PushTipsReadFinishRspOuterClass {
       return pushTipsId_;
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 9;
+    public static final int RETCODE_FIELD_NUMBER = 12;
     private int retcode_;
     /**
-     * <code>int32 retcode = 9;</code>
+     * <code>int32 retcode = 12;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -159,11 +163,11 @@ public final class PushTipsReadFinishRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (pushTipsId_ != 0) {
-        output.writeUInt32(3, pushTipsId_);
-      }
       if (retcode_ != 0) {
-        output.writeInt32(9, retcode_);
+        output.writeInt32(12, retcode_);
+      }
+      if (pushTipsId_ != 0) {
+        output.writeUInt32(13, pushTipsId_);
       }
       unknownFields.writeTo(output);
     }
@@ -174,13 +178,13 @@ public final class PushTipsReadFinishRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (pushTipsId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, pushTipsId_);
-      }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(9, retcode_);
+          .computeInt32Size(12, retcode_);
+      }
+      if (pushTipsId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(13, pushTipsId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -313,9 +317,13 @@ public final class PushTipsReadFinishRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 2293
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 2207;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code PushTipsReadFinishRsp}
@@ -472,7 +480,7 @@ public final class PushTipsReadFinishRspOuterClass {
 
       private int pushTipsId_ ;
       /**
-       * <code>uint32 push_tips_id = 3;</code>
+       * <code>uint32 push_tips_id = 13;</code>
        * @return The pushTipsId.
        */
       @java.lang.Override
@@ -480,7 +488,7 @@ public final class PushTipsReadFinishRspOuterClass {
         return pushTipsId_;
       }
       /**
-       * <code>uint32 push_tips_id = 3;</code>
+       * <code>uint32 push_tips_id = 13;</code>
        * @param value The pushTipsId to set.
        * @return This builder for chaining.
        */
@@ -491,7 +499,7 @@ public final class PushTipsReadFinishRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 push_tips_id = 3;</code>
+       * <code>uint32 push_tips_id = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearPushTipsId() {
@@ -503,7 +511,7 @@ public final class PushTipsReadFinishRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 9;</code>
+       * <code>int32 retcode = 12;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -511,7 +519,7 @@ public final class PushTipsReadFinishRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 9;</code>
+       * <code>int32 retcode = 12;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -522,7 +530,7 @@ public final class PushTipsReadFinishRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 9;</code>
+       * <code>int32 retcode = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -599,8 +607,8 @@ public final class PushTipsReadFinishRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\033PushTipsReadFinishRsp.proto\">\n\025PushTip" +
-      "sReadFinishRsp\022\024\n\014push_tips_id\030\003 \001(\r\022\017\n\007" +
-      "retcode\030\t \001(\005B\033\n\031emu.grasscutter.net.pro" +
+      "sReadFinishRsp\022\024\n\014push_tips_id\030\r \001(\r\022\017\n\007" +
+      "retcode\030\014 \001(\005B\033\n\031emu.grasscutter.net.pro" +
       "tob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

@@ -19,33 +19,37 @@ public final class RemoveRandTaskInfoNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_succ = 9;</code>
-     * @return The isSucc.
+     * <code>uint32 rand_task_id = 10;</code>
+     * @return The randTaskId.
      */
-    boolean getIsSucc();
+    int getRandTaskId();
 
     /**
-     * <code>.RemoveRandTaskInfoNotify.FinishReason reason = 10;</code>
+     * <code>.RemoveRandTaskInfoNotify.FinishReason reason = 13;</code>
      * @return The enum numeric value on the wire for reason.
      */
     int getReasonValue();
     /**
-     * <code>.RemoveRandTaskInfoNotify.FinishReason reason = 10;</code>
+     * <code>.RemoveRandTaskInfoNotify.FinishReason reason = 13;</code>
      * @return The reason.
      */
     emu.grasscutter.net.proto.RemoveRandTaskInfoNotifyOuterClass.RemoveRandTaskInfoNotify.FinishReason getReason();
 
     /**
-     * <code>uint32 rand_task_id = 13;</code>
-     * @return The randTaskId.
+     * <code>bool is_succ = 5;</code>
+     * @return The isSucc.
      */
-    int getRandTaskId();
+    boolean getIsSucc();
   }
   /**
    * <pre>
-   * CmdId: 161
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 198;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code RemoveRandTaskInfoNotify}
@@ -93,20 +97,20 @@ public final class RemoveRandTaskInfoNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 72: {
+            case 40: {
 
               isSucc_ = input.readBool();
               break;
             }
             case 80: {
-              int rawValue = input.readEnum();
 
-              reason_ = rawValue;
+              randTaskId_ = input.readUInt32();
               break;
             }
             case 104: {
+              int rawValue = input.readEnum();
 
-              randTaskId_ = input.readUInt32();
+              reason_ = rawValue;
               break;
             }
             default: {
@@ -267,28 +271,28 @@ public final class RemoveRandTaskInfoNotifyOuterClass {
       // @@protoc_insertion_point(enum_scope:RemoveRandTaskInfoNotify.FinishReason)
     }
 
-    public static final int IS_SUCC_FIELD_NUMBER = 9;
-    private boolean isSucc_;
+    public static final int RAND_TASK_ID_FIELD_NUMBER = 10;
+    private int randTaskId_;
     /**
-     * <code>bool is_succ = 9;</code>
-     * @return The isSucc.
+     * <code>uint32 rand_task_id = 10;</code>
+     * @return The randTaskId.
      */
     @java.lang.Override
-    public boolean getIsSucc() {
-      return isSucc_;
+    public int getRandTaskId() {
+      return randTaskId_;
     }
 
-    public static final int REASON_FIELD_NUMBER = 10;
+    public static final int REASON_FIELD_NUMBER = 13;
     private int reason_;
     /**
-     * <code>.RemoveRandTaskInfoNotify.FinishReason reason = 10;</code>
+     * <code>.RemoveRandTaskInfoNotify.FinishReason reason = 13;</code>
      * @return The enum numeric value on the wire for reason.
      */
     @java.lang.Override public int getReasonValue() {
       return reason_;
     }
     /**
-     * <code>.RemoveRandTaskInfoNotify.FinishReason reason = 10;</code>
+     * <code>.RemoveRandTaskInfoNotify.FinishReason reason = 13;</code>
      * @return The reason.
      */
     @java.lang.Override public emu.grasscutter.net.proto.RemoveRandTaskInfoNotifyOuterClass.RemoveRandTaskInfoNotify.FinishReason getReason() {
@@ -297,15 +301,15 @@ public final class RemoveRandTaskInfoNotifyOuterClass {
       return result == null ? emu.grasscutter.net.proto.RemoveRandTaskInfoNotifyOuterClass.RemoveRandTaskInfoNotify.FinishReason.UNRECOGNIZED : result;
     }
 
-    public static final int RAND_TASK_ID_FIELD_NUMBER = 13;
-    private int randTaskId_;
+    public static final int IS_SUCC_FIELD_NUMBER = 5;
+    private boolean isSucc_;
     /**
-     * <code>uint32 rand_task_id = 13;</code>
-     * @return The randTaskId.
+     * <code>bool is_succ = 5;</code>
+     * @return The isSucc.
      */
     @java.lang.Override
-    public int getRandTaskId() {
-      return randTaskId_;
+    public boolean getIsSucc() {
+      return isSucc_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -323,13 +327,13 @@ public final class RemoveRandTaskInfoNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (isSucc_ != false) {
-        output.writeBool(9, isSucc_);
-      }
-      if (reason_ != emu.grasscutter.net.proto.RemoveRandTaskInfoNotifyOuterClass.RemoveRandTaskInfoNotify.FinishReason.FINISH_REASON_DEFAULT.getNumber()) {
-        output.writeEnum(10, reason_);
+        output.writeBool(5, isSucc_);
       }
       if (randTaskId_ != 0) {
-        output.writeUInt32(13, randTaskId_);
+        output.writeUInt32(10, randTaskId_);
+      }
+      if (reason_ != emu.grasscutter.net.proto.RemoveRandTaskInfoNotifyOuterClass.RemoveRandTaskInfoNotify.FinishReason.FINISH_REASON_DEFAULT.getNumber()) {
+        output.writeEnum(13, reason_);
       }
       unknownFields.writeTo(output);
     }
@@ -342,15 +346,15 @@ public final class RemoveRandTaskInfoNotifyOuterClass {
       size = 0;
       if (isSucc_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(9, isSucc_);
-      }
-      if (reason_ != emu.grasscutter.net.proto.RemoveRandTaskInfoNotifyOuterClass.RemoveRandTaskInfoNotify.FinishReason.FINISH_REASON_DEFAULT.getNumber()) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(10, reason_);
+          .computeBoolSize(5, isSucc_);
       }
       if (randTaskId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, randTaskId_);
+          .computeUInt32Size(10, randTaskId_);
+      }
+      if (reason_ != emu.grasscutter.net.proto.RemoveRandTaskInfoNotifyOuterClass.RemoveRandTaskInfoNotify.FinishReason.FINISH_REASON_DEFAULT.getNumber()) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeEnumSize(13, reason_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -367,11 +371,11 @@ public final class RemoveRandTaskInfoNotifyOuterClass {
       }
       emu.grasscutter.net.proto.RemoveRandTaskInfoNotifyOuterClass.RemoveRandTaskInfoNotify other = (emu.grasscutter.net.proto.RemoveRandTaskInfoNotifyOuterClass.RemoveRandTaskInfoNotify) obj;
 
-      if (getIsSucc()
-          != other.getIsSucc()) return false;
-      if (reason_ != other.reason_) return false;
       if (getRandTaskId()
           != other.getRandTaskId()) return false;
+      if (reason_ != other.reason_) return false;
+      if (getIsSucc()
+          != other.getIsSucc()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -383,13 +387,13 @@ public final class RemoveRandTaskInfoNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + RAND_TASK_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getRandTaskId();
+      hash = (37 * hash) + REASON_FIELD_NUMBER;
+      hash = (53 * hash) + reason_;
       hash = (37 * hash) + IS_SUCC_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsSucc());
-      hash = (37 * hash) + REASON_FIELD_NUMBER;
-      hash = (53 * hash) + reason_;
-      hash = (37 * hash) + RAND_TASK_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getRandTaskId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -487,9 +491,13 @@ public final class RemoveRandTaskInfoNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 161
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 198;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code RemoveRandTaskInfoNotify}
@@ -529,11 +537,11 @@ public final class RemoveRandTaskInfoNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        isSucc_ = false;
+        randTaskId_ = 0;
 
         reason_ = 0;
 
-        randTaskId_ = 0;
+        isSucc_ = false;
 
         return this;
       }
@@ -561,9 +569,9 @@ public final class RemoveRandTaskInfoNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.RemoveRandTaskInfoNotifyOuterClass.RemoveRandTaskInfoNotify buildPartial() {
         emu.grasscutter.net.proto.RemoveRandTaskInfoNotifyOuterClass.RemoveRandTaskInfoNotify result = new emu.grasscutter.net.proto.RemoveRandTaskInfoNotifyOuterClass.RemoveRandTaskInfoNotify(this);
-        result.isSucc_ = isSucc_;
-        result.reason_ = reason_;
         result.randTaskId_ = randTaskId_;
+        result.reason_ = reason_;
+        result.isSucc_ = isSucc_;
         onBuilt();
         return result;
       }
@@ -612,14 +620,14 @@ public final class RemoveRandTaskInfoNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.RemoveRandTaskInfoNotifyOuterClass.RemoveRandTaskInfoNotify other) {
         if (other == emu.grasscutter.net.proto.RemoveRandTaskInfoNotifyOuterClass.RemoveRandTaskInfoNotify.getDefaultInstance()) return this;
-        if (other.getIsSucc() != false) {
-          setIsSucc(other.getIsSucc());
+        if (other.getRandTaskId() != 0) {
+          setRandTaskId(other.getRandTaskId());
         }
         if (other.reason_ != 0) {
           setReasonValue(other.getReasonValue());
         }
-        if (other.getRandTaskId() != 0) {
-          setRandTaskId(other.getRandTaskId());
+        if (other.getIsSucc() != false) {
+          setIsSucc(other.getIsSucc());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -650,47 +658,47 @@ public final class RemoveRandTaskInfoNotifyOuterClass {
         return this;
       }
 
-      private boolean isSucc_ ;
+      private int randTaskId_ ;
       /**
-       * <code>bool is_succ = 9;</code>
-       * @return The isSucc.
+       * <code>uint32 rand_task_id = 10;</code>
+       * @return The randTaskId.
        */
       @java.lang.Override
-      public boolean getIsSucc() {
-        return isSucc_;
+      public int getRandTaskId() {
+        return randTaskId_;
       }
       /**
-       * <code>bool is_succ = 9;</code>
-       * @param value The isSucc to set.
+       * <code>uint32 rand_task_id = 10;</code>
+       * @param value The randTaskId to set.
        * @return This builder for chaining.
        */
-      public Builder setIsSucc(boolean value) {
+      public Builder setRandTaskId(int value) {
         
-        isSucc_ = value;
+        randTaskId_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>bool is_succ = 9;</code>
+       * <code>uint32 rand_task_id = 10;</code>
        * @return This builder for chaining.
        */
-      public Builder clearIsSucc() {
+      public Builder clearRandTaskId() {
         
-        isSucc_ = false;
+        randTaskId_ = 0;
         onChanged();
         return this;
       }
 
       private int reason_ = 0;
       /**
-       * <code>.RemoveRandTaskInfoNotify.FinishReason reason = 10;</code>
+       * <code>.RemoveRandTaskInfoNotify.FinishReason reason = 13;</code>
        * @return The enum numeric value on the wire for reason.
        */
       @java.lang.Override public int getReasonValue() {
         return reason_;
       }
       /**
-       * <code>.RemoveRandTaskInfoNotify.FinishReason reason = 10;</code>
+       * <code>.RemoveRandTaskInfoNotify.FinishReason reason = 13;</code>
        * @param value The enum numeric value on the wire for reason to set.
        * @return This builder for chaining.
        */
@@ -701,7 +709,7 @@ public final class RemoveRandTaskInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.RemoveRandTaskInfoNotify.FinishReason reason = 10;</code>
+       * <code>.RemoveRandTaskInfoNotify.FinishReason reason = 13;</code>
        * @return The reason.
        */
       @java.lang.Override
@@ -711,7 +719,7 @@ public final class RemoveRandTaskInfoNotifyOuterClass {
         return result == null ? emu.grasscutter.net.proto.RemoveRandTaskInfoNotifyOuterClass.RemoveRandTaskInfoNotify.FinishReason.UNRECOGNIZED : result;
       }
       /**
-       * <code>.RemoveRandTaskInfoNotify.FinishReason reason = 10;</code>
+       * <code>.RemoveRandTaskInfoNotify.FinishReason reason = 13;</code>
        * @param value The reason to set.
        * @return This builder for chaining.
        */
@@ -725,7 +733,7 @@ public final class RemoveRandTaskInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.RemoveRandTaskInfoNotify.FinishReason reason = 10;</code>
+       * <code>.RemoveRandTaskInfoNotify.FinishReason reason = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearReason() {
@@ -735,33 +743,33 @@ public final class RemoveRandTaskInfoNotifyOuterClass {
         return this;
       }
 
-      private int randTaskId_ ;
+      private boolean isSucc_ ;
       /**
-       * <code>uint32 rand_task_id = 13;</code>
-       * @return The randTaskId.
+       * <code>bool is_succ = 5;</code>
+       * @return The isSucc.
        */
       @java.lang.Override
-      public int getRandTaskId() {
-        return randTaskId_;
+      public boolean getIsSucc() {
+        return isSucc_;
       }
       /**
-       * <code>uint32 rand_task_id = 13;</code>
-       * @param value The randTaskId to set.
+       * <code>bool is_succ = 5;</code>
+       * @param value The isSucc to set.
        * @return This builder for chaining.
        */
-      public Builder setRandTaskId(int value) {
+      public Builder setIsSucc(boolean value) {
         
-        randTaskId_ = value;
+        isSucc_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 rand_task_id = 13;</code>
+       * <code>bool is_succ = 5;</code>
        * @return This builder for chaining.
        */
-      public Builder clearRandTaskId() {
+      public Builder clearIsSucc() {
         
-        randTaskId_ = 0;
+        isSucc_ = false;
         onChanged();
         return this;
       }
@@ -833,9 +841,9 @@ public final class RemoveRandTaskInfoNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\036RemoveRandTaskInfoNotify.proto\"\363\001\n\030Rem" +
-      "oveRandTaskInfoNotify\022\017\n\007is_succ\030\t \001(\010\0226" +
-      "\n\006reason\030\n \001(\0162&.RemoveRandTaskInfoNotif" +
-      "y.FinishReason\022\024\n\014rand_task_id\030\r \001(\r\"x\n\014" +
+      "oveRandTaskInfoNotify\022\024\n\014rand_task_id\030\n " +
+      "\001(\r\0226\n\006reason\030\r \001(\0162&.RemoveRandTaskInfo" +
+      "Notify.FinishReason\022\017\n\007is_succ\030\005 \001(\010\"x\n\014" +
       "FinishReason\022\031\n\025FINISH_REASON_DEFAULT\020\000\022" +
       "\027\n\023FINISH_REASON_CLEAR\020\001\022\032\n\026FINISH_REASO" +
       "N_DISTANCE\020\002\022\030\n\024FINISH_REASON_FINISH\020\003B\033" +
@@ -850,7 +858,7 @@ public final class RemoveRandTaskInfoNotifyOuterClass {
     internal_static_RemoveRandTaskInfoNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_RemoveRandTaskInfoNotify_descriptor,
-        new java.lang.String[] { "IsSucc", "Reason", "RandTaskId", });
+        new java.lang.String[] { "RandTaskId", "Reason", "IsSucc", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

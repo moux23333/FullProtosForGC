@@ -19,23 +19,27 @@ public final class ReportFightAntiCheatNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 cheat_count = 8;</code>
-     * @return The cheatCount.
+     * <code>uint32 Unk3300_MIFNAAADBBP = 8;</code>
+     * @return The unk3300MIFNAAADBBP.
      */
-    int getCheatCount();
+    int getUnk3300MIFNAAADBBP();
 
     /**
-     * <code>uint32 cheat_type = 12;</code>
-     * @return The cheatType.
+     * <code>uint32 Unk3300_ABCKMPPMNCH = 10;</code>
+     * @return The unk3300ABCKMPPMNCH.
      */
-    int getCheatType();
+    int getUnk3300ABCKMPPMNCH();
   }
   /**
    * <pre>
-   * CmdId: 368
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 388;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code ReportFightAntiCheatNotify}
@@ -84,12 +88,12 @@ public final class ReportFightAntiCheatNotifyOuterClass {
               break;
             case 64: {
 
-              cheatCount_ = input.readUInt32();
+              unk3300MIFNAAADBBP_ = input.readUInt32();
               break;
             }
-            case 96: {
+            case 80: {
 
-              cheatType_ = input.readUInt32();
+              unk3300ABCKMPPMNCH_ = input.readUInt32();
               break;
             }
             default: {
@@ -124,26 +128,26 @@ public final class ReportFightAntiCheatNotifyOuterClass {
               emu.grasscutter.net.proto.ReportFightAntiCheatNotifyOuterClass.ReportFightAntiCheatNotify.class, emu.grasscutter.net.proto.ReportFightAntiCheatNotifyOuterClass.ReportFightAntiCheatNotify.Builder.class);
     }
 
-    public static final int CHEAT_COUNT_FIELD_NUMBER = 8;
-    private int cheatCount_;
+    public static final int UNK3300_MIFNAAADBBP_FIELD_NUMBER = 8;
+    private int unk3300MIFNAAADBBP_;
     /**
-     * <code>uint32 cheat_count = 8;</code>
-     * @return The cheatCount.
+     * <code>uint32 Unk3300_MIFNAAADBBP = 8;</code>
+     * @return The unk3300MIFNAAADBBP.
      */
     @java.lang.Override
-    public int getCheatCount() {
-      return cheatCount_;
+    public int getUnk3300MIFNAAADBBP() {
+      return unk3300MIFNAAADBBP_;
     }
 
-    public static final int CHEAT_TYPE_FIELD_NUMBER = 12;
-    private int cheatType_;
+    public static final int UNK3300_ABCKMPPMNCH_FIELD_NUMBER = 10;
+    private int unk3300ABCKMPPMNCH_;
     /**
-     * <code>uint32 cheat_type = 12;</code>
-     * @return The cheatType.
+     * <code>uint32 Unk3300_ABCKMPPMNCH = 10;</code>
+     * @return The unk3300ABCKMPPMNCH.
      */
     @java.lang.Override
-    public int getCheatType() {
-      return cheatType_;
+    public int getUnk3300ABCKMPPMNCH() {
+      return unk3300ABCKMPPMNCH_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -160,11 +164,11 @@ public final class ReportFightAntiCheatNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (cheatCount_ != 0) {
-        output.writeUInt32(8, cheatCount_);
+      if (unk3300MIFNAAADBBP_ != 0) {
+        output.writeUInt32(8, unk3300MIFNAAADBBP_);
       }
-      if (cheatType_ != 0) {
-        output.writeUInt32(12, cheatType_);
+      if (unk3300ABCKMPPMNCH_ != 0) {
+        output.writeUInt32(10, unk3300ABCKMPPMNCH_);
       }
       unknownFields.writeTo(output);
     }
@@ -175,13 +179,13 @@ public final class ReportFightAntiCheatNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (cheatCount_ != 0) {
+      if (unk3300MIFNAAADBBP_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, cheatCount_);
+          .computeUInt32Size(8, unk3300MIFNAAADBBP_);
       }
-      if (cheatType_ != 0) {
+      if (unk3300ABCKMPPMNCH_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, cheatType_);
+          .computeUInt32Size(10, unk3300ABCKMPPMNCH_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -198,10 +202,10 @@ public final class ReportFightAntiCheatNotifyOuterClass {
       }
       emu.grasscutter.net.proto.ReportFightAntiCheatNotifyOuterClass.ReportFightAntiCheatNotify other = (emu.grasscutter.net.proto.ReportFightAntiCheatNotifyOuterClass.ReportFightAntiCheatNotify) obj;
 
-      if (getCheatCount()
-          != other.getCheatCount()) return false;
-      if (getCheatType()
-          != other.getCheatType()) return false;
+      if (getUnk3300MIFNAAADBBP()
+          != other.getUnk3300MIFNAAADBBP()) return false;
+      if (getUnk3300ABCKMPPMNCH()
+          != other.getUnk3300ABCKMPPMNCH()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -213,10 +217,10 @@ public final class ReportFightAntiCheatNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + CHEAT_COUNT_FIELD_NUMBER;
-      hash = (53 * hash) + getCheatCount();
-      hash = (37 * hash) + CHEAT_TYPE_FIELD_NUMBER;
-      hash = (53 * hash) + getCheatType();
+      hash = (37 * hash) + UNK3300_MIFNAAADBBP_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300MIFNAAADBBP();
+      hash = (37 * hash) + UNK3300_ABCKMPPMNCH_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300ABCKMPPMNCH();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -314,10 +318,14 @@ public final class ReportFightAntiCheatNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 368
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 388;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code ReportFightAntiCheatNotify}
@@ -357,9 +365,9 @@ public final class ReportFightAntiCheatNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        cheatCount_ = 0;
+        unk3300MIFNAAADBBP_ = 0;
 
-        cheatType_ = 0;
+        unk3300ABCKMPPMNCH_ = 0;
 
         return this;
       }
@@ -387,8 +395,8 @@ public final class ReportFightAntiCheatNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.ReportFightAntiCheatNotifyOuterClass.ReportFightAntiCheatNotify buildPartial() {
         emu.grasscutter.net.proto.ReportFightAntiCheatNotifyOuterClass.ReportFightAntiCheatNotify result = new emu.grasscutter.net.proto.ReportFightAntiCheatNotifyOuterClass.ReportFightAntiCheatNotify(this);
-        result.cheatCount_ = cheatCount_;
-        result.cheatType_ = cheatType_;
+        result.unk3300MIFNAAADBBP_ = unk3300MIFNAAADBBP_;
+        result.unk3300ABCKMPPMNCH_ = unk3300ABCKMPPMNCH_;
         onBuilt();
         return result;
       }
@@ -437,11 +445,11 @@ public final class ReportFightAntiCheatNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.ReportFightAntiCheatNotifyOuterClass.ReportFightAntiCheatNotify other) {
         if (other == emu.grasscutter.net.proto.ReportFightAntiCheatNotifyOuterClass.ReportFightAntiCheatNotify.getDefaultInstance()) return this;
-        if (other.getCheatCount() != 0) {
-          setCheatCount(other.getCheatCount());
+        if (other.getUnk3300MIFNAAADBBP() != 0) {
+          setUnk3300MIFNAAADBBP(other.getUnk3300MIFNAAADBBP());
         }
-        if (other.getCheatType() != 0) {
-          setCheatType(other.getCheatType());
+        if (other.getUnk3300ABCKMPPMNCH() != 0) {
+          setUnk3300ABCKMPPMNCH(other.getUnk3300ABCKMPPMNCH());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -472,64 +480,64 @@ public final class ReportFightAntiCheatNotifyOuterClass {
         return this;
       }
 
-      private int cheatCount_ ;
+      private int unk3300MIFNAAADBBP_ ;
       /**
-       * <code>uint32 cheat_count = 8;</code>
-       * @return The cheatCount.
+       * <code>uint32 Unk3300_MIFNAAADBBP = 8;</code>
+       * @return The unk3300MIFNAAADBBP.
        */
       @java.lang.Override
-      public int getCheatCount() {
-        return cheatCount_;
+      public int getUnk3300MIFNAAADBBP() {
+        return unk3300MIFNAAADBBP_;
       }
       /**
-       * <code>uint32 cheat_count = 8;</code>
-       * @param value The cheatCount to set.
+       * <code>uint32 Unk3300_MIFNAAADBBP = 8;</code>
+       * @param value The unk3300MIFNAAADBBP to set.
        * @return This builder for chaining.
        */
-      public Builder setCheatCount(int value) {
+      public Builder setUnk3300MIFNAAADBBP(int value) {
         
-        cheatCount_ = value;
+        unk3300MIFNAAADBBP_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 cheat_count = 8;</code>
+       * <code>uint32 Unk3300_MIFNAAADBBP = 8;</code>
        * @return This builder for chaining.
        */
-      public Builder clearCheatCount() {
+      public Builder clearUnk3300MIFNAAADBBP() {
         
-        cheatCount_ = 0;
+        unk3300MIFNAAADBBP_ = 0;
         onChanged();
         return this;
       }
 
-      private int cheatType_ ;
+      private int unk3300ABCKMPPMNCH_ ;
       /**
-       * <code>uint32 cheat_type = 12;</code>
-       * @return The cheatType.
+       * <code>uint32 Unk3300_ABCKMPPMNCH = 10;</code>
+       * @return The unk3300ABCKMPPMNCH.
        */
       @java.lang.Override
-      public int getCheatType() {
-        return cheatType_;
+      public int getUnk3300ABCKMPPMNCH() {
+        return unk3300ABCKMPPMNCH_;
       }
       /**
-       * <code>uint32 cheat_type = 12;</code>
-       * @param value The cheatType to set.
+       * <code>uint32 Unk3300_ABCKMPPMNCH = 10;</code>
+       * @param value The unk3300ABCKMPPMNCH to set.
        * @return This builder for chaining.
        */
-      public Builder setCheatType(int value) {
+      public Builder setUnk3300ABCKMPPMNCH(int value) {
         
-        cheatType_ = value;
+        unk3300ABCKMPPMNCH_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 cheat_type = 12;</code>
+       * <code>uint32 Unk3300_ABCKMPPMNCH = 10;</code>
        * @return This builder for chaining.
        */
-      public Builder clearCheatType() {
+      public Builder clearUnk3300ABCKMPPMNCH() {
         
-        cheatType_ = 0;
+        unk3300ABCKMPPMNCH_ = 0;
         onChanged();
         return this;
       }
@@ -600,10 +608,10 @@ public final class ReportFightAntiCheatNotifyOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n ReportFightAntiCheatNotify.proto\"E\n\032Re" +
-      "portFightAntiCheatNotify\022\023\n\013cheat_count\030" +
-      "\010 \001(\r\022\022\n\ncheat_type\030\014 \001(\rB\033\n\031emu.grasscu" +
-      "tter.net.protob\006proto3"
+      "\n ReportFightAntiCheatNotify.proto\"V\n\032Re" +
+      "portFightAntiCheatNotify\022\033\n\023Unk3300_MIFN" +
+      "AAADBBP\030\010 \001(\r\022\033\n\023Unk3300_ABCKMPPMNCH\030\n \001" +
+      "(\rB\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -614,7 +622,7 @@ public final class ReportFightAntiCheatNotifyOuterClass {
     internal_static_ReportFightAntiCheatNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ReportFightAntiCheatNotify_descriptor,
-        new java.lang.String[] { "CheatCount", "CheatType", });
+        new java.lang.String[] { "Unk3300MIFNAAADBBP", "Unk3300ABCKMPPMNCH", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

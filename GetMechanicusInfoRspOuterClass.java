@@ -19,31 +19,35 @@ public final class GetMechanicusInfoRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 14;</code>
-     * @return The retcode.
-     */
-    int getRetcode();
-
-    /**
-     * <code>.MechanicusInfo mechanicus_info = 15;</code>
+     * <code>.MechanicusInfo mechanicus_info = 5;</code>
      * @return Whether the mechanicusInfo field is set.
      */
     boolean hasMechanicusInfo();
     /**
-     * <code>.MechanicusInfo mechanicus_info = 15;</code>
+     * <code>.MechanicusInfo mechanicus_info = 5;</code>
      * @return The mechanicusInfo.
      */
     emu.grasscutter.net.proto.MechanicusInfoOuterClass.MechanicusInfo getMechanicusInfo();
     /**
-     * <code>.MechanicusInfo mechanicus_info = 15;</code>
+     * <code>.MechanicusInfo mechanicus_info = 5;</code>
      */
     emu.grasscutter.net.proto.MechanicusInfoOuterClass.MechanicusInfoOrBuilder getMechanicusInfoOrBuilder();
+
+    /**
+     * <code>int32 retcode = 12;</code>
+     * @return The retcode.
+     */
+    int getRetcode();
   }
   /**
    * <pre>
-   * CmdId: 3998
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 3930;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code GetMechanicusInfoRsp}
@@ -90,12 +94,7 @@ public final class GetMechanicusInfoRspOuterClass {
             case 0:
               done = true;
               break;
-            case 112: {
-
-              retcode_ = input.readInt32();
-              break;
-            }
-            case 122: {
+            case 42: {
               emu.grasscutter.net.proto.MechanicusInfoOuterClass.MechanicusInfo.Builder subBuilder = null;
               if (mechanicusInfo_ != null) {
                 subBuilder = mechanicusInfo_.toBuilder();
@@ -106,6 +105,11 @@ public final class GetMechanicusInfoRspOuterClass {
                 mechanicusInfo_ = subBuilder.buildPartial();
               }
 
+              break;
+            }
+            case 96: {
+
+              retcode_ = input.readInt32();
               break;
             }
             default: {
@@ -140,21 +144,10 @@ public final class GetMechanicusInfoRspOuterClass {
               emu.grasscutter.net.proto.GetMechanicusInfoRspOuterClass.GetMechanicusInfoRsp.class, emu.grasscutter.net.proto.GetMechanicusInfoRspOuterClass.GetMechanicusInfoRsp.Builder.class);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 14;
-    private int retcode_;
-    /**
-     * <code>int32 retcode = 14;</code>
-     * @return The retcode.
-     */
-    @java.lang.Override
-    public int getRetcode() {
-      return retcode_;
-    }
-
-    public static final int MECHANICUS_INFO_FIELD_NUMBER = 15;
+    public static final int MECHANICUS_INFO_FIELD_NUMBER = 5;
     private emu.grasscutter.net.proto.MechanicusInfoOuterClass.MechanicusInfo mechanicusInfo_;
     /**
-     * <code>.MechanicusInfo mechanicus_info = 15;</code>
+     * <code>.MechanicusInfo mechanicus_info = 5;</code>
      * @return Whether the mechanicusInfo field is set.
      */
     @java.lang.Override
@@ -162,7 +155,7 @@ public final class GetMechanicusInfoRspOuterClass {
       return mechanicusInfo_ != null;
     }
     /**
-     * <code>.MechanicusInfo mechanicus_info = 15;</code>
+     * <code>.MechanicusInfo mechanicus_info = 5;</code>
      * @return The mechanicusInfo.
      */
     @java.lang.Override
@@ -170,11 +163,22 @@ public final class GetMechanicusInfoRspOuterClass {
       return mechanicusInfo_ == null ? emu.grasscutter.net.proto.MechanicusInfoOuterClass.MechanicusInfo.getDefaultInstance() : mechanicusInfo_;
     }
     /**
-     * <code>.MechanicusInfo mechanicus_info = 15;</code>
+     * <code>.MechanicusInfo mechanicus_info = 5;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.MechanicusInfoOuterClass.MechanicusInfoOrBuilder getMechanicusInfoOrBuilder() {
       return getMechanicusInfo();
+    }
+
+    public static final int RETCODE_FIELD_NUMBER = 12;
+    private int retcode_;
+    /**
+     * <code>int32 retcode = 12;</code>
+     * @return The retcode.
+     */
+    @java.lang.Override
+    public int getRetcode() {
+      return retcode_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -191,11 +195,11 @@ public final class GetMechanicusInfoRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (retcode_ != 0) {
-        output.writeInt32(14, retcode_);
-      }
       if (mechanicusInfo_ != null) {
-        output.writeMessage(15, getMechanicusInfo());
+        output.writeMessage(5, getMechanicusInfo());
+      }
+      if (retcode_ != 0) {
+        output.writeInt32(12, retcode_);
       }
       unknownFields.writeTo(output);
     }
@@ -206,13 +210,13 @@ public final class GetMechanicusInfoRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (retcode_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(14, retcode_);
-      }
       if (mechanicusInfo_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(15, getMechanicusInfo());
+          .computeMessageSize(5, getMechanicusInfo());
+      }
+      if (retcode_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(12, retcode_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -229,13 +233,13 @@ public final class GetMechanicusInfoRspOuterClass {
       }
       emu.grasscutter.net.proto.GetMechanicusInfoRspOuterClass.GetMechanicusInfoRsp other = (emu.grasscutter.net.proto.GetMechanicusInfoRspOuterClass.GetMechanicusInfoRsp) obj;
 
-      if (getRetcode()
-          != other.getRetcode()) return false;
       if (hasMechanicusInfo() != other.hasMechanicusInfo()) return false;
       if (hasMechanicusInfo()) {
         if (!getMechanicusInfo()
             .equals(other.getMechanicusInfo())) return false;
       }
+      if (getRetcode()
+          != other.getRetcode()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -247,12 +251,12 @@ public final class GetMechanicusInfoRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
-      hash = (53 * hash) + getRetcode();
       if (hasMechanicusInfo()) {
         hash = (37 * hash) + MECHANICUS_INFO_FIELD_NUMBER;
         hash = (53 * hash) + getMechanicusInfo().hashCode();
       }
+      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
+      hash = (53 * hash) + getRetcode();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -350,9 +354,13 @@ public final class GetMechanicusInfoRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 3998
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 3930;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code GetMechanicusInfoRsp}
@@ -392,14 +400,14 @@ public final class GetMechanicusInfoRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        retcode_ = 0;
-
         if (mechanicusInfoBuilder_ == null) {
           mechanicusInfo_ = null;
         } else {
           mechanicusInfo_ = null;
           mechanicusInfoBuilder_ = null;
         }
+        retcode_ = 0;
+
         return this;
       }
 
@@ -426,12 +434,12 @@ public final class GetMechanicusInfoRspOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.GetMechanicusInfoRspOuterClass.GetMechanicusInfoRsp buildPartial() {
         emu.grasscutter.net.proto.GetMechanicusInfoRspOuterClass.GetMechanicusInfoRsp result = new emu.grasscutter.net.proto.GetMechanicusInfoRspOuterClass.GetMechanicusInfoRsp(this);
-        result.retcode_ = retcode_;
         if (mechanicusInfoBuilder_ == null) {
           result.mechanicusInfo_ = mechanicusInfo_;
         } else {
           result.mechanicusInfo_ = mechanicusInfoBuilder_.build();
         }
+        result.retcode_ = retcode_;
         onBuilt();
         return result;
       }
@@ -480,11 +488,11 @@ public final class GetMechanicusInfoRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.GetMechanicusInfoRspOuterClass.GetMechanicusInfoRsp other) {
         if (other == emu.grasscutter.net.proto.GetMechanicusInfoRspOuterClass.GetMechanicusInfoRsp.getDefaultInstance()) return this;
-        if (other.getRetcode() != 0) {
-          setRetcode(other.getRetcode());
-        }
         if (other.hasMechanicusInfo()) {
           mergeMechanicusInfo(other.getMechanicusInfo());
+        }
+        if (other.getRetcode() != 0) {
+          setRetcode(other.getRetcode());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -515,49 +523,18 @@ public final class GetMechanicusInfoRspOuterClass {
         return this;
       }
 
-      private int retcode_ ;
-      /**
-       * <code>int32 retcode = 14;</code>
-       * @return The retcode.
-       */
-      @java.lang.Override
-      public int getRetcode() {
-        return retcode_;
-      }
-      /**
-       * <code>int32 retcode = 14;</code>
-       * @param value The retcode to set.
-       * @return This builder for chaining.
-       */
-      public Builder setRetcode(int value) {
-        
-        retcode_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>int32 retcode = 14;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearRetcode() {
-        
-        retcode_ = 0;
-        onChanged();
-        return this;
-      }
-
       private emu.grasscutter.net.proto.MechanicusInfoOuterClass.MechanicusInfo mechanicusInfo_;
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.MechanicusInfoOuterClass.MechanicusInfo, emu.grasscutter.net.proto.MechanicusInfoOuterClass.MechanicusInfo.Builder, emu.grasscutter.net.proto.MechanicusInfoOuterClass.MechanicusInfoOrBuilder> mechanicusInfoBuilder_;
       /**
-       * <code>.MechanicusInfo mechanicus_info = 15;</code>
+       * <code>.MechanicusInfo mechanicus_info = 5;</code>
        * @return Whether the mechanicusInfo field is set.
        */
       public boolean hasMechanicusInfo() {
         return mechanicusInfoBuilder_ != null || mechanicusInfo_ != null;
       }
       /**
-       * <code>.MechanicusInfo mechanicus_info = 15;</code>
+       * <code>.MechanicusInfo mechanicus_info = 5;</code>
        * @return The mechanicusInfo.
        */
       public emu.grasscutter.net.proto.MechanicusInfoOuterClass.MechanicusInfo getMechanicusInfo() {
@@ -568,7 +545,7 @@ public final class GetMechanicusInfoRspOuterClass {
         }
       }
       /**
-       * <code>.MechanicusInfo mechanicus_info = 15;</code>
+       * <code>.MechanicusInfo mechanicus_info = 5;</code>
        */
       public Builder setMechanicusInfo(emu.grasscutter.net.proto.MechanicusInfoOuterClass.MechanicusInfo value) {
         if (mechanicusInfoBuilder_ == null) {
@@ -584,7 +561,7 @@ public final class GetMechanicusInfoRspOuterClass {
         return this;
       }
       /**
-       * <code>.MechanicusInfo mechanicus_info = 15;</code>
+       * <code>.MechanicusInfo mechanicus_info = 5;</code>
        */
       public Builder setMechanicusInfo(
           emu.grasscutter.net.proto.MechanicusInfoOuterClass.MechanicusInfo.Builder builderForValue) {
@@ -598,7 +575,7 @@ public final class GetMechanicusInfoRspOuterClass {
         return this;
       }
       /**
-       * <code>.MechanicusInfo mechanicus_info = 15;</code>
+       * <code>.MechanicusInfo mechanicus_info = 5;</code>
        */
       public Builder mergeMechanicusInfo(emu.grasscutter.net.proto.MechanicusInfoOuterClass.MechanicusInfo value) {
         if (mechanicusInfoBuilder_ == null) {
@@ -616,7 +593,7 @@ public final class GetMechanicusInfoRspOuterClass {
         return this;
       }
       /**
-       * <code>.MechanicusInfo mechanicus_info = 15;</code>
+       * <code>.MechanicusInfo mechanicus_info = 5;</code>
        */
       public Builder clearMechanicusInfo() {
         if (mechanicusInfoBuilder_ == null) {
@@ -630,7 +607,7 @@ public final class GetMechanicusInfoRspOuterClass {
         return this;
       }
       /**
-       * <code>.MechanicusInfo mechanicus_info = 15;</code>
+       * <code>.MechanicusInfo mechanicus_info = 5;</code>
        */
       public emu.grasscutter.net.proto.MechanicusInfoOuterClass.MechanicusInfo.Builder getMechanicusInfoBuilder() {
         
@@ -638,7 +615,7 @@ public final class GetMechanicusInfoRspOuterClass {
         return getMechanicusInfoFieldBuilder().getBuilder();
       }
       /**
-       * <code>.MechanicusInfo mechanicus_info = 15;</code>
+       * <code>.MechanicusInfo mechanicus_info = 5;</code>
        */
       public emu.grasscutter.net.proto.MechanicusInfoOuterClass.MechanicusInfoOrBuilder getMechanicusInfoOrBuilder() {
         if (mechanicusInfoBuilder_ != null) {
@@ -649,7 +626,7 @@ public final class GetMechanicusInfoRspOuterClass {
         }
       }
       /**
-       * <code>.MechanicusInfo mechanicus_info = 15;</code>
+       * <code>.MechanicusInfo mechanicus_info = 5;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.MechanicusInfoOuterClass.MechanicusInfo, emu.grasscutter.net.proto.MechanicusInfoOuterClass.MechanicusInfo.Builder, emu.grasscutter.net.proto.MechanicusInfoOuterClass.MechanicusInfoOrBuilder> 
@@ -663,6 +640,37 @@ public final class GetMechanicusInfoRspOuterClass {
           mechanicusInfo_ = null;
         }
         return mechanicusInfoBuilder_;
+      }
+
+      private int retcode_ ;
+      /**
+       * <code>int32 retcode = 12;</code>
+       * @return The retcode.
+       */
+      @java.lang.Override
+      public int getRetcode() {
+        return retcode_;
+      }
+      /**
+       * <code>int32 retcode = 12;</code>
+       * @param value The retcode to set.
+       * @return This builder for chaining.
+       */
+      public Builder setRetcode(int value) {
+        
+        retcode_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 retcode = 12;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearRetcode() {
+        
+        retcode_ = 0;
+        onChanged();
+        return this;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -732,9 +740,9 @@ public final class GetMechanicusInfoRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\032GetMechanicusInfoRsp.proto\032\024Mechanicus" +
-      "Info.proto\"Q\n\024GetMechanicusInfoRsp\022\017\n\007re" +
-      "tcode\030\016 \001(\005\022(\n\017mechanicus_info\030\017 \001(\0132\017.M" +
-      "echanicusInfoB\033\n\031emu.grasscutter.net.pro" +
+      "Info.proto\"Q\n\024GetMechanicusInfoRsp\022(\n\017me" +
+      "chanicus_info\030\005 \001(\0132\017.MechanicusInfo\022\017\n\007" +
+      "retcode\030\014 \001(\005B\033\n\031emu.grasscutter.net.pro" +
       "tob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -747,7 +755,7 @@ public final class GetMechanicusInfoRspOuterClass {
     internal_static_GetMechanicusInfoRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GetMechanicusInfoRsp_descriptor,
-        new java.lang.String[] { "Retcode", "MechanicusInfo", });
+        new java.lang.String[] { "MechanicusInfo", "Retcode", });
     emu.grasscutter.net.proto.MechanicusInfoOuterClass.getDescriptor();
   }
 

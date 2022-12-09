@@ -19,22 +19,26 @@ public final class MechanicusSequenceOpenNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 mechanicus_id = 8;</code>
+     * <code>uint32 mechanicus_id = 12;</code>
      * @return The mechanicusId.
      */
     int getMechanicusId();
 
     /**
-     * <code>uint32 sequence_id = 7;</code>
+     * <code>uint32 sequence_id = 9;</code>
      * @return The sequenceId.
      */
     int getSequenceId();
   }
   /**
    * <pre>
-   * CmdId: 3912
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 3956;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code MechanicusSequenceOpenNotify}
@@ -81,12 +85,12 @@ public final class MechanicusSequenceOpenNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 56: {
+            case 72: {
 
               sequenceId_ = input.readUInt32();
               break;
             }
-            case 64: {
+            case 96: {
 
               mechanicusId_ = input.readUInt32();
               break;
@@ -123,10 +127,10 @@ public final class MechanicusSequenceOpenNotifyOuterClass {
               emu.grasscutter.net.proto.MechanicusSequenceOpenNotifyOuterClass.MechanicusSequenceOpenNotify.class, emu.grasscutter.net.proto.MechanicusSequenceOpenNotifyOuterClass.MechanicusSequenceOpenNotify.Builder.class);
     }
 
-    public static final int MECHANICUS_ID_FIELD_NUMBER = 8;
+    public static final int MECHANICUS_ID_FIELD_NUMBER = 12;
     private int mechanicusId_;
     /**
-     * <code>uint32 mechanicus_id = 8;</code>
+     * <code>uint32 mechanicus_id = 12;</code>
      * @return The mechanicusId.
      */
     @java.lang.Override
@@ -134,10 +138,10 @@ public final class MechanicusSequenceOpenNotifyOuterClass {
       return mechanicusId_;
     }
 
-    public static final int SEQUENCE_ID_FIELD_NUMBER = 7;
+    public static final int SEQUENCE_ID_FIELD_NUMBER = 9;
     private int sequenceId_;
     /**
-     * <code>uint32 sequence_id = 7;</code>
+     * <code>uint32 sequence_id = 9;</code>
      * @return The sequenceId.
      */
     @java.lang.Override
@@ -160,10 +164,10 @@ public final class MechanicusSequenceOpenNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (sequenceId_ != 0) {
-        output.writeUInt32(7, sequenceId_);
+        output.writeUInt32(9, sequenceId_);
       }
       if (mechanicusId_ != 0) {
-        output.writeUInt32(8, mechanicusId_);
+        output.writeUInt32(12, mechanicusId_);
       }
       unknownFields.writeTo(output);
     }
@@ -176,11 +180,11 @@ public final class MechanicusSequenceOpenNotifyOuterClass {
       size = 0;
       if (sequenceId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, sequenceId_);
+          .computeUInt32Size(9, sequenceId_);
       }
       if (mechanicusId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, mechanicusId_);
+          .computeUInt32Size(12, mechanicusId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -313,9 +317,13 @@ public final class MechanicusSequenceOpenNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 3912
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 3956;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code MechanicusSequenceOpenNotify}
@@ -472,7 +480,7 @@ public final class MechanicusSequenceOpenNotifyOuterClass {
 
       private int mechanicusId_ ;
       /**
-       * <code>uint32 mechanicus_id = 8;</code>
+       * <code>uint32 mechanicus_id = 12;</code>
        * @return The mechanicusId.
        */
       @java.lang.Override
@@ -480,7 +488,7 @@ public final class MechanicusSequenceOpenNotifyOuterClass {
         return mechanicusId_;
       }
       /**
-       * <code>uint32 mechanicus_id = 8;</code>
+       * <code>uint32 mechanicus_id = 12;</code>
        * @param value The mechanicusId to set.
        * @return This builder for chaining.
        */
@@ -491,7 +499,7 @@ public final class MechanicusSequenceOpenNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 mechanicus_id = 8;</code>
+       * <code>uint32 mechanicus_id = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearMechanicusId() {
@@ -503,7 +511,7 @@ public final class MechanicusSequenceOpenNotifyOuterClass {
 
       private int sequenceId_ ;
       /**
-       * <code>uint32 sequence_id = 7;</code>
+       * <code>uint32 sequence_id = 9;</code>
        * @return The sequenceId.
        */
       @java.lang.Override
@@ -511,7 +519,7 @@ public final class MechanicusSequenceOpenNotifyOuterClass {
         return sequenceId_;
       }
       /**
-       * <code>uint32 sequence_id = 7;</code>
+       * <code>uint32 sequence_id = 9;</code>
        * @param value The sequenceId to set.
        * @return This builder for chaining.
        */
@@ -522,7 +530,7 @@ public final class MechanicusSequenceOpenNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 sequence_id = 7;</code>
+       * <code>uint32 sequence_id = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearSequenceId() {
@@ -600,7 +608,7 @@ public final class MechanicusSequenceOpenNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n\"MechanicusSequenceOpenNotify.proto\"J\n\034" +
       "MechanicusSequenceOpenNotify\022\025\n\rmechanic" +
-      "us_id\030\010 \001(\r\022\023\n\013sequence_id\030\007 \001(\rB\033\n\031emu." +
+      "us_id\030\014 \001(\r\022\023\n\013sequence_id\030\t \001(\rB\033\n\031emu." +
       "grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

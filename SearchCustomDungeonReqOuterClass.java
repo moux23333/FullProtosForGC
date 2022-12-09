@@ -19,12 +19,12 @@ public final class SearchCustomDungeonReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>string dungeon_code = 6;</code>
+     * <code>string dungeon_code = 7;</code>
      * @return The dungeonCode.
      */
     java.lang.String getDungeonCode();
     /**
-     * <code>string dungeon_code = 6;</code>
+     * <code>string dungeon_code = 7;</code>
      * @return The bytes for dungeonCode.
      */
     com.google.protobuf.ByteString
@@ -32,10 +32,14 @@ public final class SearchCustomDungeonReqOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 6233
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 6201;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code SearchCustomDungeonReq}
@@ -83,7 +87,7 @@ public final class SearchCustomDungeonReqOuterClass {
             case 0:
               done = true;
               break;
-            case 50: {
+            case 58: {
               java.lang.String s = input.readStringRequireUtf8();
 
               dungeonCode_ = s;
@@ -121,10 +125,10 @@ public final class SearchCustomDungeonReqOuterClass {
               emu.grasscutter.net.proto.SearchCustomDungeonReqOuterClass.SearchCustomDungeonReq.class, emu.grasscutter.net.proto.SearchCustomDungeonReqOuterClass.SearchCustomDungeonReq.Builder.class);
     }
 
-    public static final int DUNGEON_CODE_FIELD_NUMBER = 6;
+    public static final int DUNGEON_CODE_FIELD_NUMBER = 7;
     private volatile java.lang.Object dungeonCode_;
     /**
-     * <code>string dungeon_code = 6;</code>
+     * <code>string dungeon_code = 7;</code>
      * @return The dungeonCode.
      */
     @java.lang.Override
@@ -141,7 +145,7 @@ public final class SearchCustomDungeonReqOuterClass {
       }
     }
     /**
-     * <code>string dungeon_code = 6;</code>
+     * <code>string dungeon_code = 7;</code>
      * @return The bytes for dungeonCode.
      */
     @java.lang.Override
@@ -174,7 +178,7 @@ public final class SearchCustomDungeonReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(dungeonCode_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 6, dungeonCode_);
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 7, dungeonCode_);
       }
       unknownFields.writeTo(output);
     }
@@ -186,7 +190,7 @@ public final class SearchCustomDungeonReqOuterClass {
 
       size = 0;
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(dungeonCode_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(6, dungeonCode_);
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(7, dungeonCode_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -315,10 +319,14 @@ public final class SearchCustomDungeonReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 6233
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 6201;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code SearchCustomDungeonReq}
@@ -470,7 +478,7 @@ public final class SearchCustomDungeonReqOuterClass {
 
       private java.lang.Object dungeonCode_ = "";
       /**
-       * <code>string dungeon_code = 6;</code>
+       * <code>string dungeon_code = 7;</code>
        * @return The dungeonCode.
        */
       public java.lang.String getDungeonCode() {
@@ -486,7 +494,7 @@ public final class SearchCustomDungeonReqOuterClass {
         }
       }
       /**
-       * <code>string dungeon_code = 6;</code>
+       * <code>string dungeon_code = 7;</code>
        * @return The bytes for dungeonCode.
        */
       public com.google.protobuf.ByteString
@@ -503,7 +511,7 @@ public final class SearchCustomDungeonReqOuterClass {
         }
       }
       /**
-       * <code>string dungeon_code = 6;</code>
+       * <code>string dungeon_code = 7;</code>
        * @param value The dungeonCode to set.
        * @return This builder for chaining.
        */
@@ -518,7 +526,7 @@ public final class SearchCustomDungeonReqOuterClass {
         return this;
       }
       /**
-       * <code>string dungeon_code = 6;</code>
+       * <code>string dungeon_code = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearDungeonCode() {
@@ -528,7 +536,7 @@ public final class SearchCustomDungeonReqOuterClass {
         return this;
       }
       /**
-       * <code>string dungeon_code = 6;</code>
+       * <code>string dungeon_code = 7;</code>
        * @param value The bytes for dungeonCode to set.
        * @return This builder for chaining.
        */
@@ -611,7 +619,7 @@ public final class SearchCustomDungeonReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\034SearchCustomDungeonReq.proto\".\n\026Search" +
-      "CustomDungeonReq\022\024\n\014dungeon_code\030\006 \001(\tB\033" +
+      "CustomDungeonReq\022\024\n\014dungeon_code\030\007 \001(\tB\033" +
       "\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

@@ -19,12 +19,6 @@ public final class SumoDungeonAvatarOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint64 avatar_guid = 11;</code>
-     * @return The avatarGuid.
-     */
-    long getAvatarGuid();
-
-    /**
      * <code>bool is_alive = 13;</code>
      * @return The isAlive.
      */
@@ -35,6 +29,12 @@ public final class SumoDungeonAvatarOuterClass {
      * @return The isTrial.
      */
     boolean getIsTrial();
+
+    /**
+     * <code>uint64 avatar_guid = 10;</code>
+     * @return The avatarGuid.
+     */
+    long getAvatarGuid();
   }
   /**
    * Protobuf type {@code SumoDungeonAvatar}
@@ -86,7 +86,7 @@ public final class SumoDungeonAvatarOuterClass {
               isTrial_ = input.readBool();
               break;
             }
-            case 88: {
+            case 80: {
 
               avatarGuid_ = input.readUInt64();
               break;
@@ -128,17 +128,6 @@ public final class SumoDungeonAvatarOuterClass {
               emu.grasscutter.net.proto.SumoDungeonAvatarOuterClass.SumoDungeonAvatar.class, emu.grasscutter.net.proto.SumoDungeonAvatarOuterClass.SumoDungeonAvatar.Builder.class);
     }
 
-    public static final int AVATAR_GUID_FIELD_NUMBER = 11;
-    private long avatarGuid_;
-    /**
-     * <code>uint64 avatar_guid = 11;</code>
-     * @return The avatarGuid.
-     */
-    @java.lang.Override
-    public long getAvatarGuid() {
-      return avatarGuid_;
-    }
-
     public static final int IS_ALIVE_FIELD_NUMBER = 13;
     private boolean isAlive_;
     /**
@@ -161,6 +150,17 @@ public final class SumoDungeonAvatarOuterClass {
       return isTrial_;
     }
 
+    public static final int AVATAR_GUID_FIELD_NUMBER = 10;
+    private long avatarGuid_;
+    /**
+     * <code>uint64 avatar_guid = 10;</code>
+     * @return The avatarGuid.
+     */
+    @java.lang.Override
+    public long getAvatarGuid() {
+      return avatarGuid_;
+    }
+
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
     public final boolean isInitialized() {
@@ -179,7 +179,7 @@ public final class SumoDungeonAvatarOuterClass {
         output.writeBool(4, isTrial_);
       }
       if (avatarGuid_ != 0L) {
-        output.writeUInt64(11, avatarGuid_);
+        output.writeUInt64(10, avatarGuid_);
       }
       if (isAlive_ != false) {
         output.writeBool(13, isAlive_);
@@ -199,7 +199,7 @@ public final class SumoDungeonAvatarOuterClass {
       }
       if (avatarGuid_ != 0L) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt64Size(11, avatarGuid_);
+          .computeUInt64Size(10, avatarGuid_);
       }
       if (isAlive_ != false) {
         size += com.google.protobuf.CodedOutputStream
@@ -220,12 +220,12 @@ public final class SumoDungeonAvatarOuterClass {
       }
       emu.grasscutter.net.proto.SumoDungeonAvatarOuterClass.SumoDungeonAvatar other = (emu.grasscutter.net.proto.SumoDungeonAvatarOuterClass.SumoDungeonAvatar) obj;
 
-      if (getAvatarGuid()
-          != other.getAvatarGuid()) return false;
       if (getIsAlive()
           != other.getIsAlive()) return false;
       if (getIsTrial()
           != other.getIsTrial()) return false;
+      if (getAvatarGuid()
+          != other.getAvatarGuid()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -237,15 +237,15 @@ public final class SumoDungeonAvatarOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + AVATAR_GUID_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-          getAvatarGuid());
       hash = (37 * hash) + IS_ALIVE_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsAlive());
       hash = (37 * hash) + IS_TRIAL_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsTrial());
+      hash = (37 * hash) + AVATAR_GUID_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
+          getAvatarGuid());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -379,11 +379,11 @@ public final class SumoDungeonAvatarOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        avatarGuid_ = 0L;
-
         isAlive_ = false;
 
         isTrial_ = false;
+
+        avatarGuid_ = 0L;
 
         return this;
       }
@@ -411,9 +411,9 @@ public final class SumoDungeonAvatarOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.SumoDungeonAvatarOuterClass.SumoDungeonAvatar buildPartial() {
         emu.grasscutter.net.proto.SumoDungeonAvatarOuterClass.SumoDungeonAvatar result = new emu.grasscutter.net.proto.SumoDungeonAvatarOuterClass.SumoDungeonAvatar(this);
-        result.avatarGuid_ = avatarGuid_;
         result.isAlive_ = isAlive_;
         result.isTrial_ = isTrial_;
+        result.avatarGuid_ = avatarGuid_;
         onBuilt();
         return result;
       }
@@ -462,14 +462,14 @@ public final class SumoDungeonAvatarOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.SumoDungeonAvatarOuterClass.SumoDungeonAvatar other) {
         if (other == emu.grasscutter.net.proto.SumoDungeonAvatarOuterClass.SumoDungeonAvatar.getDefaultInstance()) return this;
-        if (other.getAvatarGuid() != 0L) {
-          setAvatarGuid(other.getAvatarGuid());
-        }
         if (other.getIsAlive() != false) {
           setIsAlive(other.getIsAlive());
         }
         if (other.getIsTrial() != false) {
           setIsTrial(other.getIsTrial());
+        }
+        if (other.getAvatarGuid() != 0L) {
+          setAvatarGuid(other.getAvatarGuid());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -497,37 +497,6 @@ public final class SumoDungeonAvatarOuterClass {
             mergeFrom(parsedMessage);
           }
         }
-        return this;
-      }
-
-      private long avatarGuid_ ;
-      /**
-       * <code>uint64 avatar_guid = 11;</code>
-       * @return The avatarGuid.
-       */
-      @java.lang.Override
-      public long getAvatarGuid() {
-        return avatarGuid_;
-      }
-      /**
-       * <code>uint64 avatar_guid = 11;</code>
-       * @param value The avatarGuid to set.
-       * @return This builder for chaining.
-       */
-      public Builder setAvatarGuid(long value) {
-        
-        avatarGuid_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint64 avatar_guid = 11;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearAvatarGuid() {
-        
-        avatarGuid_ = 0L;
-        onChanged();
         return this;
       }
 
@@ -589,6 +558,37 @@ public final class SumoDungeonAvatarOuterClass {
       public Builder clearIsTrial() {
         
         isTrial_ = false;
+        onChanged();
+        return this;
+      }
+
+      private long avatarGuid_ ;
+      /**
+       * <code>uint64 avatar_guid = 10;</code>
+       * @return The avatarGuid.
+       */
+      @java.lang.Override
+      public long getAvatarGuid() {
+        return avatarGuid_;
+      }
+      /**
+       * <code>uint64 avatar_guid = 10;</code>
+       * @param value The avatarGuid to set.
+       * @return This builder for chaining.
+       */
+      public Builder setAvatarGuid(long value) {
+        
+        avatarGuid_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint64 avatar_guid = 10;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearAvatarGuid() {
+        
+        avatarGuid_ = 0L;
         onChanged();
         return this;
       }
@@ -660,8 +660,8 @@ public final class SumoDungeonAvatarOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\027SumoDungeonAvatar.proto\"L\n\021SumoDungeon" +
-      "Avatar\022\023\n\013avatar_guid\030\013 \001(\004\022\020\n\010is_alive\030" +
-      "\r \001(\010\022\020\n\010is_trial\030\004 \001(\010B\033\n\031emu.grasscutt" +
+      "Avatar\022\020\n\010is_alive\030\r \001(\010\022\020\n\010is_trial\030\004 \001" +
+      "(\010\022\023\n\013avatar_guid\030\n \001(\004B\033\n\031emu.grasscutt" +
       "er.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -673,7 +673,7 @@ public final class SumoDungeonAvatarOuterClass {
     internal_static_SumoDungeonAvatar_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SumoDungeonAvatar_descriptor,
-        new java.lang.String[] { "AvatarGuid", "IsAlive", "IsTrial", });
+        new java.lang.String[] { "IsAlive", "IsTrial", "AvatarGuid", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

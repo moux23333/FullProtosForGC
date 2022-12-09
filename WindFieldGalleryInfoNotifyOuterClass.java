@@ -19,58 +19,62 @@ public final class WindFieldGalleryInfoNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 show_id = 3;</code>
-     * @return The showId.
+     * <code>uint32 Unk3300_GNJKOCLJFNM = 6;</code>
+     * @return The unk3300GNJKOCLJFNM.
      */
-    int getShowId();
+    int getUnk3300GNJKOCLJFNM();
 
     /**
-     * <code>uint32 killed_monster_num = 7;</code>
-     * @return The killedMonsterNum.
+     * <code>uint32 Unk3300_NBIBKFKOCFK = 15;</code>
+     * @return The unk3300NBIBKFKOCFK.
      */
-    int getKilledMonsterNum();
+    int getUnk3300NBIBKFKOCFK();
 
     /**
-     * <code>uint32 coin_num = 9;</code>
-     * @return The coinNum.
+     * <code>uint32 Unk3300_OJHJPBCAONA = 7;</code>
+     * @return The unk3300OJHJPBCAONA.
      */
-    int getCoinNum();
+    int getUnk3300OJHJPBCAONA();
 
     /**
-     * <code>uint32 challenge_ball_max_count = 1;</code>
-     * @return The challengeBallMaxCount.
+     * <code>uint32 Unk3300_EKMHMHJDHIL = 14;</code>
+     * @return The unk3300EKMHMHJDHIL.
      */
-    int getChallengeBallMaxCount();
+    int getUnk3300EKMHMHJDHIL();
 
     /**
-     * <code>uint32 challenge_total_time = 5;</code>
-     * @return The challengeTotalTime.
+     * <code>uint32 Unk3300_MMONPDMIEBN = 13;</code>
+     * @return The unk3300MMONPDMIEBN.
      */
-    int getChallengeTotalTime();
+    int getUnk3300MMONPDMIEBN();
 
     /**
-     * <code>uint32 challenge_ball_cur_count = 10;</code>
-     * @return The challengeBallCurCount.
+     * <code>uint32 Unk3300_FFODAKMKGEK = 9;</code>
+     * @return The unk3300FFODAKMKGEK.
      */
-    int getChallengeBallCurCount();
+    int getUnk3300FFODAKMKGEK();
 
     /**
-     * <code>uint32 challenge_timestamp = 4;</code>
-     * @return The challengeTimestamp.
+     * <code>uint32 Unk3300_GNKCFHMDOHJ = 4;</code>
+     * @return The unk3300GNKCFHMDOHJ.
      */
-    int getChallengeTimestamp();
+    int getUnk3300GNKCFHMDOHJ();
 
     /**
-     * <code>uint32 element_ball_num = 14;</code>
-     * @return The elementBallNum.
+     * <code>uint32 Unk3300_GLNHBJJJINK = 2;</code>
+     * @return The unk3300GLNHBJJJINK.
      */
-    int getElementBallNum();
+    int getUnk3300GLNHBJJJINK();
   }
   /**
    * <pre>
-   * CmdId: 5526
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 5572;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code WindFieldGalleryInfoNotify}
@@ -117,44 +121,44 @@ public final class WindFieldGalleryInfoNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
+            case 16: {
 
-              challengeBallMaxCount_ = input.readUInt32();
-              break;
-            }
-            case 24: {
-
-              showId_ = input.readUInt32();
+              unk3300GLNHBJJJINK_ = input.readUInt32();
               break;
             }
             case 32: {
 
-              challengeTimestamp_ = input.readUInt32();
+              unk3300GNKCFHMDOHJ_ = input.readUInt32();
               break;
             }
-            case 40: {
+            case 48: {
 
-              challengeTotalTime_ = input.readUInt32();
+              unk3300GNJKOCLJFNM_ = input.readUInt32();
               break;
             }
             case 56: {
 
-              killedMonsterNum_ = input.readUInt32();
+              unk3300OJHJPBCAONA_ = input.readUInt32();
               break;
             }
             case 72: {
 
-              coinNum_ = input.readUInt32();
+              unk3300FFODAKMKGEK_ = input.readUInt32();
               break;
             }
-            case 80: {
+            case 104: {
 
-              challengeBallCurCount_ = input.readUInt32();
+              unk3300MMONPDMIEBN_ = input.readUInt32();
               break;
             }
             case 112: {
 
-              elementBallNum_ = input.readUInt32();
+              unk3300EKMHMHJDHIL_ = input.readUInt32();
+              break;
+            }
+            case 120: {
+
+              unk3300NBIBKFKOCFK_ = input.readUInt32();
               break;
             }
             default: {
@@ -189,92 +193,92 @@ public final class WindFieldGalleryInfoNotifyOuterClass {
               emu.grasscutter.net.proto.WindFieldGalleryInfoNotifyOuterClass.WindFieldGalleryInfoNotify.class, emu.grasscutter.net.proto.WindFieldGalleryInfoNotifyOuterClass.WindFieldGalleryInfoNotify.Builder.class);
     }
 
-    public static final int SHOW_ID_FIELD_NUMBER = 3;
-    private int showId_;
+    public static final int UNK3300_GNJKOCLJFNM_FIELD_NUMBER = 6;
+    private int unk3300GNJKOCLJFNM_;
     /**
-     * <code>uint32 show_id = 3;</code>
-     * @return The showId.
+     * <code>uint32 Unk3300_GNJKOCLJFNM = 6;</code>
+     * @return The unk3300GNJKOCLJFNM.
      */
     @java.lang.Override
-    public int getShowId() {
-      return showId_;
+    public int getUnk3300GNJKOCLJFNM() {
+      return unk3300GNJKOCLJFNM_;
     }
 
-    public static final int KILLED_MONSTER_NUM_FIELD_NUMBER = 7;
-    private int killedMonsterNum_;
+    public static final int UNK3300_NBIBKFKOCFK_FIELD_NUMBER = 15;
+    private int unk3300NBIBKFKOCFK_;
     /**
-     * <code>uint32 killed_monster_num = 7;</code>
-     * @return The killedMonsterNum.
+     * <code>uint32 Unk3300_NBIBKFKOCFK = 15;</code>
+     * @return The unk3300NBIBKFKOCFK.
      */
     @java.lang.Override
-    public int getKilledMonsterNum() {
-      return killedMonsterNum_;
+    public int getUnk3300NBIBKFKOCFK() {
+      return unk3300NBIBKFKOCFK_;
     }
 
-    public static final int COIN_NUM_FIELD_NUMBER = 9;
-    private int coinNum_;
+    public static final int UNK3300_OJHJPBCAONA_FIELD_NUMBER = 7;
+    private int unk3300OJHJPBCAONA_;
     /**
-     * <code>uint32 coin_num = 9;</code>
-     * @return The coinNum.
+     * <code>uint32 Unk3300_OJHJPBCAONA = 7;</code>
+     * @return The unk3300OJHJPBCAONA.
      */
     @java.lang.Override
-    public int getCoinNum() {
-      return coinNum_;
+    public int getUnk3300OJHJPBCAONA() {
+      return unk3300OJHJPBCAONA_;
     }
 
-    public static final int CHALLENGE_BALL_MAX_COUNT_FIELD_NUMBER = 1;
-    private int challengeBallMaxCount_;
+    public static final int UNK3300_EKMHMHJDHIL_FIELD_NUMBER = 14;
+    private int unk3300EKMHMHJDHIL_;
     /**
-     * <code>uint32 challenge_ball_max_count = 1;</code>
-     * @return The challengeBallMaxCount.
+     * <code>uint32 Unk3300_EKMHMHJDHIL = 14;</code>
+     * @return The unk3300EKMHMHJDHIL.
      */
     @java.lang.Override
-    public int getChallengeBallMaxCount() {
-      return challengeBallMaxCount_;
+    public int getUnk3300EKMHMHJDHIL() {
+      return unk3300EKMHMHJDHIL_;
     }
 
-    public static final int CHALLENGE_TOTAL_TIME_FIELD_NUMBER = 5;
-    private int challengeTotalTime_;
+    public static final int UNK3300_MMONPDMIEBN_FIELD_NUMBER = 13;
+    private int unk3300MMONPDMIEBN_;
     /**
-     * <code>uint32 challenge_total_time = 5;</code>
-     * @return The challengeTotalTime.
+     * <code>uint32 Unk3300_MMONPDMIEBN = 13;</code>
+     * @return The unk3300MMONPDMIEBN.
      */
     @java.lang.Override
-    public int getChallengeTotalTime() {
-      return challengeTotalTime_;
+    public int getUnk3300MMONPDMIEBN() {
+      return unk3300MMONPDMIEBN_;
     }
 
-    public static final int CHALLENGE_BALL_CUR_COUNT_FIELD_NUMBER = 10;
-    private int challengeBallCurCount_;
+    public static final int UNK3300_FFODAKMKGEK_FIELD_NUMBER = 9;
+    private int unk3300FFODAKMKGEK_;
     /**
-     * <code>uint32 challenge_ball_cur_count = 10;</code>
-     * @return The challengeBallCurCount.
+     * <code>uint32 Unk3300_FFODAKMKGEK = 9;</code>
+     * @return The unk3300FFODAKMKGEK.
      */
     @java.lang.Override
-    public int getChallengeBallCurCount() {
-      return challengeBallCurCount_;
+    public int getUnk3300FFODAKMKGEK() {
+      return unk3300FFODAKMKGEK_;
     }
 
-    public static final int CHALLENGE_TIMESTAMP_FIELD_NUMBER = 4;
-    private int challengeTimestamp_;
+    public static final int UNK3300_GNKCFHMDOHJ_FIELD_NUMBER = 4;
+    private int unk3300GNKCFHMDOHJ_;
     /**
-     * <code>uint32 challenge_timestamp = 4;</code>
-     * @return The challengeTimestamp.
+     * <code>uint32 Unk3300_GNKCFHMDOHJ = 4;</code>
+     * @return The unk3300GNKCFHMDOHJ.
      */
     @java.lang.Override
-    public int getChallengeTimestamp() {
-      return challengeTimestamp_;
+    public int getUnk3300GNKCFHMDOHJ() {
+      return unk3300GNKCFHMDOHJ_;
     }
 
-    public static final int ELEMENT_BALL_NUM_FIELD_NUMBER = 14;
-    private int elementBallNum_;
+    public static final int UNK3300_GLNHBJJJINK_FIELD_NUMBER = 2;
+    private int unk3300GLNHBJJJINK_;
     /**
-     * <code>uint32 element_ball_num = 14;</code>
-     * @return The elementBallNum.
+     * <code>uint32 Unk3300_GLNHBJJJINK = 2;</code>
+     * @return The unk3300GLNHBJJJINK.
      */
     @java.lang.Override
-    public int getElementBallNum() {
-      return elementBallNum_;
+    public int getUnk3300GLNHBJJJINK() {
+      return unk3300GLNHBJJJINK_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -291,29 +295,29 @@ public final class WindFieldGalleryInfoNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (challengeBallMaxCount_ != 0) {
-        output.writeUInt32(1, challengeBallMaxCount_);
+      if (unk3300GLNHBJJJINK_ != 0) {
+        output.writeUInt32(2, unk3300GLNHBJJJINK_);
       }
-      if (showId_ != 0) {
-        output.writeUInt32(3, showId_);
+      if (unk3300GNKCFHMDOHJ_ != 0) {
+        output.writeUInt32(4, unk3300GNKCFHMDOHJ_);
       }
-      if (challengeTimestamp_ != 0) {
-        output.writeUInt32(4, challengeTimestamp_);
+      if (unk3300GNJKOCLJFNM_ != 0) {
+        output.writeUInt32(6, unk3300GNJKOCLJFNM_);
       }
-      if (challengeTotalTime_ != 0) {
-        output.writeUInt32(5, challengeTotalTime_);
+      if (unk3300OJHJPBCAONA_ != 0) {
+        output.writeUInt32(7, unk3300OJHJPBCAONA_);
       }
-      if (killedMonsterNum_ != 0) {
-        output.writeUInt32(7, killedMonsterNum_);
+      if (unk3300FFODAKMKGEK_ != 0) {
+        output.writeUInt32(9, unk3300FFODAKMKGEK_);
       }
-      if (coinNum_ != 0) {
-        output.writeUInt32(9, coinNum_);
+      if (unk3300MMONPDMIEBN_ != 0) {
+        output.writeUInt32(13, unk3300MMONPDMIEBN_);
       }
-      if (challengeBallCurCount_ != 0) {
-        output.writeUInt32(10, challengeBallCurCount_);
+      if (unk3300EKMHMHJDHIL_ != 0) {
+        output.writeUInt32(14, unk3300EKMHMHJDHIL_);
       }
-      if (elementBallNum_ != 0) {
-        output.writeUInt32(14, elementBallNum_);
+      if (unk3300NBIBKFKOCFK_ != 0) {
+        output.writeUInt32(15, unk3300NBIBKFKOCFK_);
       }
       unknownFields.writeTo(output);
     }
@@ -324,37 +328,37 @@ public final class WindFieldGalleryInfoNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (challengeBallMaxCount_ != 0) {
+      if (unk3300GLNHBJJJINK_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, challengeBallMaxCount_);
+          .computeUInt32Size(2, unk3300GLNHBJJJINK_);
       }
-      if (showId_ != 0) {
+      if (unk3300GNKCFHMDOHJ_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, showId_);
+          .computeUInt32Size(4, unk3300GNKCFHMDOHJ_);
       }
-      if (challengeTimestamp_ != 0) {
+      if (unk3300GNJKOCLJFNM_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, challengeTimestamp_);
+          .computeUInt32Size(6, unk3300GNJKOCLJFNM_);
       }
-      if (challengeTotalTime_ != 0) {
+      if (unk3300OJHJPBCAONA_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, challengeTotalTime_);
+          .computeUInt32Size(7, unk3300OJHJPBCAONA_);
       }
-      if (killedMonsterNum_ != 0) {
+      if (unk3300FFODAKMKGEK_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, killedMonsterNum_);
+          .computeUInt32Size(9, unk3300FFODAKMKGEK_);
       }
-      if (coinNum_ != 0) {
+      if (unk3300MMONPDMIEBN_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, coinNum_);
+          .computeUInt32Size(13, unk3300MMONPDMIEBN_);
       }
-      if (challengeBallCurCount_ != 0) {
+      if (unk3300EKMHMHJDHIL_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, challengeBallCurCount_);
+          .computeUInt32Size(14, unk3300EKMHMHJDHIL_);
       }
-      if (elementBallNum_ != 0) {
+      if (unk3300NBIBKFKOCFK_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, elementBallNum_);
+          .computeUInt32Size(15, unk3300NBIBKFKOCFK_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -371,22 +375,22 @@ public final class WindFieldGalleryInfoNotifyOuterClass {
       }
       emu.grasscutter.net.proto.WindFieldGalleryInfoNotifyOuterClass.WindFieldGalleryInfoNotify other = (emu.grasscutter.net.proto.WindFieldGalleryInfoNotifyOuterClass.WindFieldGalleryInfoNotify) obj;
 
-      if (getShowId()
-          != other.getShowId()) return false;
-      if (getKilledMonsterNum()
-          != other.getKilledMonsterNum()) return false;
-      if (getCoinNum()
-          != other.getCoinNum()) return false;
-      if (getChallengeBallMaxCount()
-          != other.getChallengeBallMaxCount()) return false;
-      if (getChallengeTotalTime()
-          != other.getChallengeTotalTime()) return false;
-      if (getChallengeBallCurCount()
-          != other.getChallengeBallCurCount()) return false;
-      if (getChallengeTimestamp()
-          != other.getChallengeTimestamp()) return false;
-      if (getElementBallNum()
-          != other.getElementBallNum()) return false;
+      if (getUnk3300GNJKOCLJFNM()
+          != other.getUnk3300GNJKOCLJFNM()) return false;
+      if (getUnk3300NBIBKFKOCFK()
+          != other.getUnk3300NBIBKFKOCFK()) return false;
+      if (getUnk3300OJHJPBCAONA()
+          != other.getUnk3300OJHJPBCAONA()) return false;
+      if (getUnk3300EKMHMHJDHIL()
+          != other.getUnk3300EKMHMHJDHIL()) return false;
+      if (getUnk3300MMONPDMIEBN()
+          != other.getUnk3300MMONPDMIEBN()) return false;
+      if (getUnk3300FFODAKMKGEK()
+          != other.getUnk3300FFODAKMKGEK()) return false;
+      if (getUnk3300GNKCFHMDOHJ()
+          != other.getUnk3300GNKCFHMDOHJ()) return false;
+      if (getUnk3300GLNHBJJJINK()
+          != other.getUnk3300GLNHBJJJINK()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -398,22 +402,22 @@ public final class WindFieldGalleryInfoNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + SHOW_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getShowId();
-      hash = (37 * hash) + KILLED_MONSTER_NUM_FIELD_NUMBER;
-      hash = (53 * hash) + getKilledMonsterNum();
-      hash = (37 * hash) + COIN_NUM_FIELD_NUMBER;
-      hash = (53 * hash) + getCoinNum();
-      hash = (37 * hash) + CHALLENGE_BALL_MAX_COUNT_FIELD_NUMBER;
-      hash = (53 * hash) + getChallengeBallMaxCount();
-      hash = (37 * hash) + CHALLENGE_TOTAL_TIME_FIELD_NUMBER;
-      hash = (53 * hash) + getChallengeTotalTime();
-      hash = (37 * hash) + CHALLENGE_BALL_CUR_COUNT_FIELD_NUMBER;
-      hash = (53 * hash) + getChallengeBallCurCount();
-      hash = (37 * hash) + CHALLENGE_TIMESTAMP_FIELD_NUMBER;
-      hash = (53 * hash) + getChallengeTimestamp();
-      hash = (37 * hash) + ELEMENT_BALL_NUM_FIELD_NUMBER;
-      hash = (53 * hash) + getElementBallNum();
+      hash = (37 * hash) + UNK3300_GNJKOCLJFNM_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300GNJKOCLJFNM();
+      hash = (37 * hash) + UNK3300_NBIBKFKOCFK_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300NBIBKFKOCFK();
+      hash = (37 * hash) + UNK3300_OJHJPBCAONA_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300OJHJPBCAONA();
+      hash = (37 * hash) + UNK3300_EKMHMHJDHIL_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300EKMHMHJDHIL();
+      hash = (37 * hash) + UNK3300_MMONPDMIEBN_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300MMONPDMIEBN();
+      hash = (37 * hash) + UNK3300_FFODAKMKGEK_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300FFODAKMKGEK();
+      hash = (37 * hash) + UNK3300_GNKCFHMDOHJ_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300GNKCFHMDOHJ();
+      hash = (37 * hash) + UNK3300_GLNHBJJJINK_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300GLNHBJJJINK();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -511,9 +515,13 @@ public final class WindFieldGalleryInfoNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 5526
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 5572;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code WindFieldGalleryInfoNotify}
@@ -553,21 +561,21 @@ public final class WindFieldGalleryInfoNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        showId_ = 0;
+        unk3300GNJKOCLJFNM_ = 0;
 
-        killedMonsterNum_ = 0;
+        unk3300NBIBKFKOCFK_ = 0;
 
-        coinNum_ = 0;
+        unk3300OJHJPBCAONA_ = 0;
 
-        challengeBallMaxCount_ = 0;
+        unk3300EKMHMHJDHIL_ = 0;
 
-        challengeTotalTime_ = 0;
+        unk3300MMONPDMIEBN_ = 0;
 
-        challengeBallCurCount_ = 0;
+        unk3300FFODAKMKGEK_ = 0;
 
-        challengeTimestamp_ = 0;
+        unk3300GNKCFHMDOHJ_ = 0;
 
-        elementBallNum_ = 0;
+        unk3300GLNHBJJJINK_ = 0;
 
         return this;
       }
@@ -595,14 +603,14 @@ public final class WindFieldGalleryInfoNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.WindFieldGalleryInfoNotifyOuterClass.WindFieldGalleryInfoNotify buildPartial() {
         emu.grasscutter.net.proto.WindFieldGalleryInfoNotifyOuterClass.WindFieldGalleryInfoNotify result = new emu.grasscutter.net.proto.WindFieldGalleryInfoNotifyOuterClass.WindFieldGalleryInfoNotify(this);
-        result.showId_ = showId_;
-        result.killedMonsterNum_ = killedMonsterNum_;
-        result.coinNum_ = coinNum_;
-        result.challengeBallMaxCount_ = challengeBallMaxCount_;
-        result.challengeTotalTime_ = challengeTotalTime_;
-        result.challengeBallCurCount_ = challengeBallCurCount_;
-        result.challengeTimestamp_ = challengeTimestamp_;
-        result.elementBallNum_ = elementBallNum_;
+        result.unk3300GNJKOCLJFNM_ = unk3300GNJKOCLJFNM_;
+        result.unk3300NBIBKFKOCFK_ = unk3300NBIBKFKOCFK_;
+        result.unk3300OJHJPBCAONA_ = unk3300OJHJPBCAONA_;
+        result.unk3300EKMHMHJDHIL_ = unk3300EKMHMHJDHIL_;
+        result.unk3300MMONPDMIEBN_ = unk3300MMONPDMIEBN_;
+        result.unk3300FFODAKMKGEK_ = unk3300FFODAKMKGEK_;
+        result.unk3300GNKCFHMDOHJ_ = unk3300GNKCFHMDOHJ_;
+        result.unk3300GLNHBJJJINK_ = unk3300GLNHBJJJINK_;
         onBuilt();
         return result;
       }
@@ -651,29 +659,29 @@ public final class WindFieldGalleryInfoNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.WindFieldGalleryInfoNotifyOuterClass.WindFieldGalleryInfoNotify other) {
         if (other == emu.grasscutter.net.proto.WindFieldGalleryInfoNotifyOuterClass.WindFieldGalleryInfoNotify.getDefaultInstance()) return this;
-        if (other.getShowId() != 0) {
-          setShowId(other.getShowId());
+        if (other.getUnk3300GNJKOCLJFNM() != 0) {
+          setUnk3300GNJKOCLJFNM(other.getUnk3300GNJKOCLJFNM());
         }
-        if (other.getKilledMonsterNum() != 0) {
-          setKilledMonsterNum(other.getKilledMonsterNum());
+        if (other.getUnk3300NBIBKFKOCFK() != 0) {
+          setUnk3300NBIBKFKOCFK(other.getUnk3300NBIBKFKOCFK());
         }
-        if (other.getCoinNum() != 0) {
-          setCoinNum(other.getCoinNum());
+        if (other.getUnk3300OJHJPBCAONA() != 0) {
+          setUnk3300OJHJPBCAONA(other.getUnk3300OJHJPBCAONA());
         }
-        if (other.getChallengeBallMaxCount() != 0) {
-          setChallengeBallMaxCount(other.getChallengeBallMaxCount());
+        if (other.getUnk3300EKMHMHJDHIL() != 0) {
+          setUnk3300EKMHMHJDHIL(other.getUnk3300EKMHMHJDHIL());
         }
-        if (other.getChallengeTotalTime() != 0) {
-          setChallengeTotalTime(other.getChallengeTotalTime());
+        if (other.getUnk3300MMONPDMIEBN() != 0) {
+          setUnk3300MMONPDMIEBN(other.getUnk3300MMONPDMIEBN());
         }
-        if (other.getChallengeBallCurCount() != 0) {
-          setChallengeBallCurCount(other.getChallengeBallCurCount());
+        if (other.getUnk3300FFODAKMKGEK() != 0) {
+          setUnk3300FFODAKMKGEK(other.getUnk3300FFODAKMKGEK());
         }
-        if (other.getChallengeTimestamp() != 0) {
-          setChallengeTimestamp(other.getChallengeTimestamp());
+        if (other.getUnk3300GNKCFHMDOHJ() != 0) {
+          setUnk3300GNKCFHMDOHJ(other.getUnk3300GNKCFHMDOHJ());
         }
-        if (other.getElementBallNum() != 0) {
-          setElementBallNum(other.getElementBallNum());
+        if (other.getUnk3300GLNHBJJJINK() != 0) {
+          setUnk3300GLNHBJJJINK(other.getUnk3300GLNHBJJJINK());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -704,250 +712,250 @@ public final class WindFieldGalleryInfoNotifyOuterClass {
         return this;
       }
 
-      private int showId_ ;
+      private int unk3300GNJKOCLJFNM_ ;
       /**
-       * <code>uint32 show_id = 3;</code>
-       * @return The showId.
+       * <code>uint32 Unk3300_GNJKOCLJFNM = 6;</code>
+       * @return The unk3300GNJKOCLJFNM.
        */
       @java.lang.Override
-      public int getShowId() {
-        return showId_;
+      public int getUnk3300GNJKOCLJFNM() {
+        return unk3300GNJKOCLJFNM_;
       }
       /**
-       * <code>uint32 show_id = 3;</code>
-       * @param value The showId to set.
+       * <code>uint32 Unk3300_GNJKOCLJFNM = 6;</code>
+       * @param value The unk3300GNJKOCLJFNM to set.
        * @return This builder for chaining.
        */
-      public Builder setShowId(int value) {
+      public Builder setUnk3300GNJKOCLJFNM(int value) {
         
-        showId_ = value;
+        unk3300GNJKOCLJFNM_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 show_id = 3;</code>
+       * <code>uint32 Unk3300_GNJKOCLJFNM = 6;</code>
        * @return This builder for chaining.
        */
-      public Builder clearShowId() {
+      public Builder clearUnk3300GNJKOCLJFNM() {
         
-        showId_ = 0;
+        unk3300GNJKOCLJFNM_ = 0;
         onChanged();
         return this;
       }
 
-      private int killedMonsterNum_ ;
+      private int unk3300NBIBKFKOCFK_ ;
       /**
-       * <code>uint32 killed_monster_num = 7;</code>
-       * @return The killedMonsterNum.
+       * <code>uint32 Unk3300_NBIBKFKOCFK = 15;</code>
+       * @return The unk3300NBIBKFKOCFK.
        */
       @java.lang.Override
-      public int getKilledMonsterNum() {
-        return killedMonsterNum_;
+      public int getUnk3300NBIBKFKOCFK() {
+        return unk3300NBIBKFKOCFK_;
       }
       /**
-       * <code>uint32 killed_monster_num = 7;</code>
-       * @param value The killedMonsterNum to set.
+       * <code>uint32 Unk3300_NBIBKFKOCFK = 15;</code>
+       * @param value The unk3300NBIBKFKOCFK to set.
        * @return This builder for chaining.
        */
-      public Builder setKilledMonsterNum(int value) {
+      public Builder setUnk3300NBIBKFKOCFK(int value) {
         
-        killedMonsterNum_ = value;
+        unk3300NBIBKFKOCFK_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 killed_monster_num = 7;</code>
+       * <code>uint32 Unk3300_NBIBKFKOCFK = 15;</code>
        * @return This builder for chaining.
        */
-      public Builder clearKilledMonsterNum() {
+      public Builder clearUnk3300NBIBKFKOCFK() {
         
-        killedMonsterNum_ = 0;
+        unk3300NBIBKFKOCFK_ = 0;
         onChanged();
         return this;
       }
 
-      private int coinNum_ ;
+      private int unk3300OJHJPBCAONA_ ;
       /**
-       * <code>uint32 coin_num = 9;</code>
-       * @return The coinNum.
+       * <code>uint32 Unk3300_OJHJPBCAONA = 7;</code>
+       * @return The unk3300OJHJPBCAONA.
        */
       @java.lang.Override
-      public int getCoinNum() {
-        return coinNum_;
+      public int getUnk3300OJHJPBCAONA() {
+        return unk3300OJHJPBCAONA_;
       }
       /**
-       * <code>uint32 coin_num = 9;</code>
-       * @param value The coinNum to set.
+       * <code>uint32 Unk3300_OJHJPBCAONA = 7;</code>
+       * @param value The unk3300OJHJPBCAONA to set.
        * @return This builder for chaining.
        */
-      public Builder setCoinNum(int value) {
+      public Builder setUnk3300OJHJPBCAONA(int value) {
         
-        coinNum_ = value;
+        unk3300OJHJPBCAONA_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 coin_num = 9;</code>
+       * <code>uint32 Unk3300_OJHJPBCAONA = 7;</code>
        * @return This builder for chaining.
        */
-      public Builder clearCoinNum() {
+      public Builder clearUnk3300OJHJPBCAONA() {
         
-        coinNum_ = 0;
+        unk3300OJHJPBCAONA_ = 0;
         onChanged();
         return this;
       }
 
-      private int challengeBallMaxCount_ ;
+      private int unk3300EKMHMHJDHIL_ ;
       /**
-       * <code>uint32 challenge_ball_max_count = 1;</code>
-       * @return The challengeBallMaxCount.
+       * <code>uint32 Unk3300_EKMHMHJDHIL = 14;</code>
+       * @return The unk3300EKMHMHJDHIL.
        */
       @java.lang.Override
-      public int getChallengeBallMaxCount() {
-        return challengeBallMaxCount_;
+      public int getUnk3300EKMHMHJDHIL() {
+        return unk3300EKMHMHJDHIL_;
       }
       /**
-       * <code>uint32 challenge_ball_max_count = 1;</code>
-       * @param value The challengeBallMaxCount to set.
+       * <code>uint32 Unk3300_EKMHMHJDHIL = 14;</code>
+       * @param value The unk3300EKMHMHJDHIL to set.
        * @return This builder for chaining.
        */
-      public Builder setChallengeBallMaxCount(int value) {
+      public Builder setUnk3300EKMHMHJDHIL(int value) {
         
-        challengeBallMaxCount_ = value;
+        unk3300EKMHMHJDHIL_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 challenge_ball_max_count = 1;</code>
+       * <code>uint32 Unk3300_EKMHMHJDHIL = 14;</code>
        * @return This builder for chaining.
        */
-      public Builder clearChallengeBallMaxCount() {
+      public Builder clearUnk3300EKMHMHJDHIL() {
         
-        challengeBallMaxCount_ = 0;
+        unk3300EKMHMHJDHIL_ = 0;
         onChanged();
         return this;
       }
 
-      private int challengeTotalTime_ ;
+      private int unk3300MMONPDMIEBN_ ;
       /**
-       * <code>uint32 challenge_total_time = 5;</code>
-       * @return The challengeTotalTime.
+       * <code>uint32 Unk3300_MMONPDMIEBN = 13;</code>
+       * @return The unk3300MMONPDMIEBN.
        */
       @java.lang.Override
-      public int getChallengeTotalTime() {
-        return challengeTotalTime_;
+      public int getUnk3300MMONPDMIEBN() {
+        return unk3300MMONPDMIEBN_;
       }
       /**
-       * <code>uint32 challenge_total_time = 5;</code>
-       * @param value The challengeTotalTime to set.
+       * <code>uint32 Unk3300_MMONPDMIEBN = 13;</code>
+       * @param value The unk3300MMONPDMIEBN to set.
        * @return This builder for chaining.
        */
-      public Builder setChallengeTotalTime(int value) {
+      public Builder setUnk3300MMONPDMIEBN(int value) {
         
-        challengeTotalTime_ = value;
+        unk3300MMONPDMIEBN_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 challenge_total_time = 5;</code>
+       * <code>uint32 Unk3300_MMONPDMIEBN = 13;</code>
        * @return This builder for chaining.
        */
-      public Builder clearChallengeTotalTime() {
+      public Builder clearUnk3300MMONPDMIEBN() {
         
-        challengeTotalTime_ = 0;
+        unk3300MMONPDMIEBN_ = 0;
         onChanged();
         return this;
       }
 
-      private int challengeBallCurCount_ ;
+      private int unk3300FFODAKMKGEK_ ;
       /**
-       * <code>uint32 challenge_ball_cur_count = 10;</code>
-       * @return The challengeBallCurCount.
+       * <code>uint32 Unk3300_FFODAKMKGEK = 9;</code>
+       * @return The unk3300FFODAKMKGEK.
        */
       @java.lang.Override
-      public int getChallengeBallCurCount() {
-        return challengeBallCurCount_;
+      public int getUnk3300FFODAKMKGEK() {
+        return unk3300FFODAKMKGEK_;
       }
       /**
-       * <code>uint32 challenge_ball_cur_count = 10;</code>
-       * @param value The challengeBallCurCount to set.
+       * <code>uint32 Unk3300_FFODAKMKGEK = 9;</code>
+       * @param value The unk3300FFODAKMKGEK to set.
        * @return This builder for chaining.
        */
-      public Builder setChallengeBallCurCount(int value) {
+      public Builder setUnk3300FFODAKMKGEK(int value) {
         
-        challengeBallCurCount_ = value;
+        unk3300FFODAKMKGEK_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 challenge_ball_cur_count = 10;</code>
+       * <code>uint32 Unk3300_FFODAKMKGEK = 9;</code>
        * @return This builder for chaining.
        */
-      public Builder clearChallengeBallCurCount() {
+      public Builder clearUnk3300FFODAKMKGEK() {
         
-        challengeBallCurCount_ = 0;
+        unk3300FFODAKMKGEK_ = 0;
         onChanged();
         return this;
       }
 
-      private int challengeTimestamp_ ;
+      private int unk3300GNKCFHMDOHJ_ ;
       /**
-       * <code>uint32 challenge_timestamp = 4;</code>
-       * @return The challengeTimestamp.
+       * <code>uint32 Unk3300_GNKCFHMDOHJ = 4;</code>
+       * @return The unk3300GNKCFHMDOHJ.
        */
       @java.lang.Override
-      public int getChallengeTimestamp() {
-        return challengeTimestamp_;
+      public int getUnk3300GNKCFHMDOHJ() {
+        return unk3300GNKCFHMDOHJ_;
       }
       /**
-       * <code>uint32 challenge_timestamp = 4;</code>
-       * @param value The challengeTimestamp to set.
+       * <code>uint32 Unk3300_GNKCFHMDOHJ = 4;</code>
+       * @param value The unk3300GNKCFHMDOHJ to set.
        * @return This builder for chaining.
        */
-      public Builder setChallengeTimestamp(int value) {
+      public Builder setUnk3300GNKCFHMDOHJ(int value) {
         
-        challengeTimestamp_ = value;
+        unk3300GNKCFHMDOHJ_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 challenge_timestamp = 4;</code>
+       * <code>uint32 Unk3300_GNKCFHMDOHJ = 4;</code>
        * @return This builder for chaining.
        */
-      public Builder clearChallengeTimestamp() {
+      public Builder clearUnk3300GNKCFHMDOHJ() {
         
-        challengeTimestamp_ = 0;
+        unk3300GNKCFHMDOHJ_ = 0;
         onChanged();
         return this;
       }
 
-      private int elementBallNum_ ;
+      private int unk3300GLNHBJJJINK_ ;
       /**
-       * <code>uint32 element_ball_num = 14;</code>
-       * @return The elementBallNum.
+       * <code>uint32 Unk3300_GLNHBJJJINK = 2;</code>
+       * @return The unk3300GLNHBJJJINK.
        */
       @java.lang.Override
-      public int getElementBallNum() {
-        return elementBallNum_;
+      public int getUnk3300GLNHBJJJINK() {
+        return unk3300GLNHBJJJINK_;
       }
       /**
-       * <code>uint32 element_ball_num = 14;</code>
-       * @param value The elementBallNum to set.
+       * <code>uint32 Unk3300_GLNHBJJJINK = 2;</code>
+       * @param value The unk3300GLNHBJJJINK to set.
        * @return This builder for chaining.
        */
-      public Builder setElementBallNum(int value) {
+      public Builder setUnk3300GLNHBJJJINK(int value) {
         
-        elementBallNum_ = value;
+        unk3300GLNHBJJJINK_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 element_ball_num = 14;</code>
+       * <code>uint32 Unk3300_GLNHBJJJINK = 2;</code>
        * @return This builder for chaining.
        */
-      public Builder clearElementBallNum() {
+      public Builder clearUnk3300GLNHBJJJINK() {
         
-        elementBallNum_ = 0;
+        unk3300GLNHBJJJINK_ = 0;
         onChanged();
         return this;
       }
@@ -1018,14 +1026,15 @@ public final class WindFieldGalleryInfoNotifyOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n WindFieldGalleryInfoNotify.proto\"\364\001\n\032W" +
-      "indFieldGalleryInfoNotify\022\017\n\007show_id\030\003 \001" +
-      "(\r\022\032\n\022killed_monster_num\030\007 \001(\r\022\020\n\010coin_n" +
-      "um\030\t \001(\r\022 \n\030challenge_ball_max_count\030\001 \001" +
-      "(\r\022\034\n\024challenge_total_time\030\005 \001(\r\022 \n\030chal" +
-      "lenge_ball_cur_count\030\n \001(\r\022\033\n\023challenge_" +
-      "timestamp\030\004 \001(\r\022\030\n\020element_ball_num\030\016 \001(" +
-      "\rB\033\n\031emu.grasscutter.net.protob\006proto3"
+      "\n WindFieldGalleryInfoNotify.proto\"\204\002\n\032W" +
+      "indFieldGalleryInfoNotify\022\033\n\023Unk3300_GNJ" +
+      "KOCLJFNM\030\006 \001(\r\022\033\n\023Unk3300_NBIBKFKOCFK\030\017 " +
+      "\001(\r\022\033\n\023Unk3300_OJHJPBCAONA\030\007 \001(\r\022\033\n\023Unk3" +
+      "300_EKMHMHJDHIL\030\016 \001(\r\022\033\n\023Unk3300_MMONPDM" +
+      "IEBN\030\r \001(\r\022\033\n\023Unk3300_FFODAKMKGEK\030\t \001(\r\022" +
+      "\033\n\023Unk3300_GNKCFHMDOHJ\030\004 \001(\r\022\033\n\023Unk3300_" +
+      "GLNHBJJJINK\030\002 \001(\rB\033\n\031emu.grasscutter.net" +
+      ".protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -1036,7 +1045,7 @@ public final class WindFieldGalleryInfoNotifyOuterClass {
     internal_static_WindFieldGalleryInfoNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_WindFieldGalleryInfoNotify_descriptor,
-        new java.lang.String[] { "ShowId", "KilledMonsterNum", "CoinNum", "ChallengeBallMaxCount", "ChallengeTotalTime", "ChallengeBallCurCount", "ChallengeTimestamp", "ElementBallNum", });
+        new java.lang.String[] { "Unk3300GNJKOCLJFNM", "Unk3300NBIBKFKOCFK", "Unk3300OJHJPBCAONA", "Unk3300EKMHMHJDHIL", "Unk3300MMONPDMIEBN", "Unk3300FFODAKMKGEK", "Unk3300GNKCFHMDOHJ", "Unk3300GLNHBJJJINK", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

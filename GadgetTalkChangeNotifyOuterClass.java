@@ -19,22 +19,26 @@ public final class GadgetTalkChangeNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 gadget_entity_id = 5;</code>
-     * @return The gadgetEntityId.
-     */
-    int getGadgetEntityId();
-
-    /**
-     * <code>uint32 cur_gadget_talk_state = 15;</code>
+     * <code>uint32 cur_gadget_talk_state = 12;</code>
      * @return The curGadgetTalkState.
      */
     int getCurGadgetTalkState();
+
+    /**
+     * <code>uint32 gadget_entity_id = 13;</code>
+     * @return The gadgetEntityId.
+     */
+    int getGadgetEntityId();
   }
   /**
    * <pre>
-   * CmdId: 839
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 816;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code GadgetTalkChangeNotify}
@@ -81,14 +85,14 @@ public final class GadgetTalkChangeNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 40: {
-
-              gadgetEntityId_ = input.readUInt32();
-              break;
-            }
-            case 120: {
+            case 96: {
 
               curGadgetTalkState_ = input.readUInt32();
+              break;
+            }
+            case 104: {
+
+              gadgetEntityId_ = input.readUInt32();
               break;
             }
             default: {
@@ -123,26 +127,26 @@ public final class GadgetTalkChangeNotifyOuterClass {
               emu.grasscutter.net.proto.GadgetTalkChangeNotifyOuterClass.GadgetTalkChangeNotify.class, emu.grasscutter.net.proto.GadgetTalkChangeNotifyOuterClass.GadgetTalkChangeNotify.Builder.class);
     }
 
-    public static final int GADGET_ENTITY_ID_FIELD_NUMBER = 5;
-    private int gadgetEntityId_;
-    /**
-     * <code>uint32 gadget_entity_id = 5;</code>
-     * @return The gadgetEntityId.
-     */
-    @java.lang.Override
-    public int getGadgetEntityId() {
-      return gadgetEntityId_;
-    }
-
-    public static final int CUR_GADGET_TALK_STATE_FIELD_NUMBER = 15;
+    public static final int CUR_GADGET_TALK_STATE_FIELD_NUMBER = 12;
     private int curGadgetTalkState_;
     /**
-     * <code>uint32 cur_gadget_talk_state = 15;</code>
+     * <code>uint32 cur_gadget_talk_state = 12;</code>
      * @return The curGadgetTalkState.
      */
     @java.lang.Override
     public int getCurGadgetTalkState() {
       return curGadgetTalkState_;
+    }
+
+    public static final int GADGET_ENTITY_ID_FIELD_NUMBER = 13;
+    private int gadgetEntityId_;
+    /**
+     * <code>uint32 gadget_entity_id = 13;</code>
+     * @return The gadgetEntityId.
+     */
+    @java.lang.Override
+    public int getGadgetEntityId() {
+      return gadgetEntityId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -159,11 +163,11 @@ public final class GadgetTalkChangeNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (gadgetEntityId_ != 0) {
-        output.writeUInt32(5, gadgetEntityId_);
-      }
       if (curGadgetTalkState_ != 0) {
-        output.writeUInt32(15, curGadgetTalkState_);
+        output.writeUInt32(12, curGadgetTalkState_);
+      }
+      if (gadgetEntityId_ != 0) {
+        output.writeUInt32(13, gadgetEntityId_);
       }
       unknownFields.writeTo(output);
     }
@@ -174,13 +178,13 @@ public final class GadgetTalkChangeNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (gadgetEntityId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, gadgetEntityId_);
-      }
       if (curGadgetTalkState_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, curGadgetTalkState_);
+          .computeUInt32Size(12, curGadgetTalkState_);
+      }
+      if (gadgetEntityId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(13, gadgetEntityId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -197,10 +201,10 @@ public final class GadgetTalkChangeNotifyOuterClass {
       }
       emu.grasscutter.net.proto.GadgetTalkChangeNotifyOuterClass.GadgetTalkChangeNotify other = (emu.grasscutter.net.proto.GadgetTalkChangeNotifyOuterClass.GadgetTalkChangeNotify) obj;
 
-      if (getGadgetEntityId()
-          != other.getGadgetEntityId()) return false;
       if (getCurGadgetTalkState()
           != other.getCurGadgetTalkState()) return false;
+      if (getGadgetEntityId()
+          != other.getGadgetEntityId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -212,10 +216,10 @@ public final class GadgetTalkChangeNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + GADGET_ENTITY_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getGadgetEntityId();
       hash = (37 * hash) + CUR_GADGET_TALK_STATE_FIELD_NUMBER;
       hash = (53 * hash) + getCurGadgetTalkState();
+      hash = (37 * hash) + GADGET_ENTITY_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getGadgetEntityId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -313,9 +317,13 @@ public final class GadgetTalkChangeNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 839
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 816;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code GadgetTalkChangeNotify}
@@ -355,9 +363,9 @@ public final class GadgetTalkChangeNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        gadgetEntityId_ = 0;
-
         curGadgetTalkState_ = 0;
+
+        gadgetEntityId_ = 0;
 
         return this;
       }
@@ -385,8 +393,8 @@ public final class GadgetTalkChangeNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.GadgetTalkChangeNotifyOuterClass.GadgetTalkChangeNotify buildPartial() {
         emu.grasscutter.net.proto.GadgetTalkChangeNotifyOuterClass.GadgetTalkChangeNotify result = new emu.grasscutter.net.proto.GadgetTalkChangeNotifyOuterClass.GadgetTalkChangeNotify(this);
-        result.gadgetEntityId_ = gadgetEntityId_;
         result.curGadgetTalkState_ = curGadgetTalkState_;
+        result.gadgetEntityId_ = gadgetEntityId_;
         onBuilt();
         return result;
       }
@@ -435,11 +443,11 @@ public final class GadgetTalkChangeNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.GadgetTalkChangeNotifyOuterClass.GadgetTalkChangeNotify other) {
         if (other == emu.grasscutter.net.proto.GadgetTalkChangeNotifyOuterClass.GadgetTalkChangeNotify.getDefaultInstance()) return this;
-        if (other.getGadgetEntityId() != 0) {
-          setGadgetEntityId(other.getGadgetEntityId());
-        }
         if (other.getCurGadgetTalkState() != 0) {
           setCurGadgetTalkState(other.getCurGadgetTalkState());
+        }
+        if (other.getGadgetEntityId() != 0) {
+          setGadgetEntityId(other.getGadgetEntityId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -470,40 +478,9 @@ public final class GadgetTalkChangeNotifyOuterClass {
         return this;
       }
 
-      private int gadgetEntityId_ ;
-      /**
-       * <code>uint32 gadget_entity_id = 5;</code>
-       * @return The gadgetEntityId.
-       */
-      @java.lang.Override
-      public int getGadgetEntityId() {
-        return gadgetEntityId_;
-      }
-      /**
-       * <code>uint32 gadget_entity_id = 5;</code>
-       * @param value The gadgetEntityId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setGadgetEntityId(int value) {
-        
-        gadgetEntityId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 gadget_entity_id = 5;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearGadgetEntityId() {
-        
-        gadgetEntityId_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int curGadgetTalkState_ ;
       /**
-       * <code>uint32 cur_gadget_talk_state = 15;</code>
+       * <code>uint32 cur_gadget_talk_state = 12;</code>
        * @return The curGadgetTalkState.
        */
       @java.lang.Override
@@ -511,7 +488,7 @@ public final class GadgetTalkChangeNotifyOuterClass {
         return curGadgetTalkState_;
       }
       /**
-       * <code>uint32 cur_gadget_talk_state = 15;</code>
+       * <code>uint32 cur_gadget_talk_state = 12;</code>
        * @param value The curGadgetTalkState to set.
        * @return This builder for chaining.
        */
@@ -522,12 +499,43 @@ public final class GadgetTalkChangeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 cur_gadget_talk_state = 15;</code>
+       * <code>uint32 cur_gadget_talk_state = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearCurGadgetTalkState() {
         
         curGadgetTalkState_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int gadgetEntityId_ ;
+      /**
+       * <code>uint32 gadget_entity_id = 13;</code>
+       * @return The gadgetEntityId.
+       */
+      @java.lang.Override
+      public int getGadgetEntityId() {
+        return gadgetEntityId_;
+      }
+      /**
+       * <code>uint32 gadget_entity_id = 13;</code>
+       * @param value The gadgetEntityId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setGadgetEntityId(int value) {
+        
+        gadgetEntityId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 gadget_entity_id = 13;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearGadgetEntityId() {
+        
+        gadgetEntityId_ = 0;
         onChanged();
         return this;
       }
@@ -599,8 +607,8 @@ public final class GadgetTalkChangeNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\034GadgetTalkChangeNotify.proto\"Q\n\026Gadget" +
-      "TalkChangeNotify\022\030\n\020gadget_entity_id\030\005 \001" +
-      "(\r\022\035\n\025cur_gadget_talk_state\030\017 \001(\rB\033\n\031emu" +
+      "TalkChangeNotify\022\035\n\025cur_gadget_talk_stat" +
+      "e\030\014 \001(\r\022\030\n\020gadget_entity_id\030\r \001(\rB\033\n\031emu" +
       ".grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -612,7 +620,7 @@ public final class GadgetTalkChangeNotifyOuterClass {
     internal_static_GadgetTalkChangeNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GadgetTalkChangeNotify_descriptor,
-        new java.lang.String[] { "GadgetEntityId", "CurGadgetTalkState", });
+        new java.lang.String[] { "CurGadgetTalkState", "GadgetEntityId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

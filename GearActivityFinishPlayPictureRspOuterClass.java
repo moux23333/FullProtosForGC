@@ -25,16 +25,20 @@ public final class GearActivityFinishPlayPictureRspOuterClass {
     int getRetcode();
 
     /**
-     * <code>bool is_success = 6;</code>
+     * <code>bool is_success = 8;</code>
      * @return The isSuccess.
      */
     boolean getIsSuccess();
   }
   /**
    * <pre>
-   * CmdId: 21851
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 20453;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code GearActivityFinishPlayPictureRsp}
@@ -81,7 +85,7 @@ public final class GearActivityFinishPlayPictureRspOuterClass {
             case 0:
               done = true;
               break;
-            case 48: {
+            case 64: {
 
               isSuccess_ = input.readBool();
               break;
@@ -134,10 +138,10 @@ public final class GearActivityFinishPlayPictureRspOuterClass {
       return retcode_;
     }
 
-    public static final int IS_SUCCESS_FIELD_NUMBER = 6;
+    public static final int IS_SUCCESS_FIELD_NUMBER = 8;
     private boolean isSuccess_;
     /**
-     * <code>bool is_success = 6;</code>
+     * <code>bool is_success = 8;</code>
      * @return The isSuccess.
      */
     @java.lang.Override
@@ -160,7 +164,7 @@ public final class GearActivityFinishPlayPictureRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (isSuccess_ != false) {
-        output.writeBool(6, isSuccess_);
+        output.writeBool(8, isSuccess_);
       }
       if (retcode_ != 0) {
         output.writeInt32(12, retcode_);
@@ -176,7 +180,7 @@ public final class GearActivityFinishPlayPictureRspOuterClass {
       size = 0;
       if (isSuccess_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(6, isSuccess_);
+          .computeBoolSize(8, isSuccess_);
       }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
@@ -314,9 +318,13 @@ public final class GearActivityFinishPlayPictureRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 21851
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 20453;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code GearActivityFinishPlayPictureRsp}
@@ -504,7 +512,7 @@ public final class GearActivityFinishPlayPictureRspOuterClass {
 
       private boolean isSuccess_ ;
       /**
-       * <code>bool is_success = 6;</code>
+       * <code>bool is_success = 8;</code>
        * @return The isSuccess.
        */
       @java.lang.Override
@@ -512,7 +520,7 @@ public final class GearActivityFinishPlayPictureRspOuterClass {
         return isSuccess_;
       }
       /**
-       * <code>bool is_success = 6;</code>
+       * <code>bool is_success = 8;</code>
        * @param value The isSuccess to set.
        * @return This builder for chaining.
        */
@@ -523,7 +531,7 @@ public final class GearActivityFinishPlayPictureRspOuterClass {
         return this;
       }
       /**
-       * <code>bool is_success = 6;</code>
+       * <code>bool is_success = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsSuccess() {
@@ -601,7 +609,7 @@ public final class GearActivityFinishPlayPictureRspOuterClass {
     java.lang.String[] descriptorData = {
       "\n&GearActivityFinishPlayPictureRsp.proto" +
       "\"G\n GearActivityFinishPlayPictureRsp\022\017\n\007" +
-      "retcode\030\014 \001(\005\022\022\n\nis_success\030\006 \001(\010B\033\n\031emu" +
+      "retcode\030\014 \001(\005\022\022\n\nis_success\030\010 \001(\010B\033\n\031emu" +
       ".grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

@@ -19,22 +19,26 @@ public final class SignatureAuditConfigNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_open = 9;</code>
+     * <code>bool is_open = 6;</code>
      * @return The isOpen.
      */
     boolean getIsOpen();
 
     /**
-     * <code>uint32 submit_limit = 10;</code>
+     * <code>uint32 submit_limit = 11;</code>
      * @return The submitLimit.
      */
     int getSubmitLimit();
   }
   /**
    * <pre>
-   * CmdId: 4092
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 4097;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code SignatureAuditConfigNotify}
@@ -81,12 +85,12 @@ public final class SignatureAuditConfigNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 72: {
+            case 48: {
 
               isOpen_ = input.readBool();
               break;
             }
-            case 80: {
+            case 88: {
 
               submitLimit_ = input.readUInt32();
               break;
@@ -123,10 +127,10 @@ public final class SignatureAuditConfigNotifyOuterClass {
               emu.grasscutter.net.proto.SignatureAuditConfigNotifyOuterClass.SignatureAuditConfigNotify.class, emu.grasscutter.net.proto.SignatureAuditConfigNotifyOuterClass.SignatureAuditConfigNotify.Builder.class);
     }
 
-    public static final int IS_OPEN_FIELD_NUMBER = 9;
+    public static final int IS_OPEN_FIELD_NUMBER = 6;
     private boolean isOpen_;
     /**
-     * <code>bool is_open = 9;</code>
+     * <code>bool is_open = 6;</code>
      * @return The isOpen.
      */
     @java.lang.Override
@@ -134,10 +138,10 @@ public final class SignatureAuditConfigNotifyOuterClass {
       return isOpen_;
     }
 
-    public static final int SUBMIT_LIMIT_FIELD_NUMBER = 10;
+    public static final int SUBMIT_LIMIT_FIELD_NUMBER = 11;
     private int submitLimit_;
     /**
-     * <code>uint32 submit_limit = 10;</code>
+     * <code>uint32 submit_limit = 11;</code>
      * @return The submitLimit.
      */
     @java.lang.Override
@@ -160,10 +164,10 @@ public final class SignatureAuditConfigNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (isOpen_ != false) {
-        output.writeBool(9, isOpen_);
+        output.writeBool(6, isOpen_);
       }
       if (submitLimit_ != 0) {
-        output.writeUInt32(10, submitLimit_);
+        output.writeUInt32(11, submitLimit_);
       }
       unknownFields.writeTo(output);
     }
@@ -176,11 +180,11 @@ public final class SignatureAuditConfigNotifyOuterClass {
       size = 0;
       if (isOpen_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(9, isOpen_);
+          .computeBoolSize(6, isOpen_);
       }
       if (submitLimit_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, submitLimit_);
+          .computeUInt32Size(11, submitLimit_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -314,9 +318,13 @@ public final class SignatureAuditConfigNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 4092
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 4097;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code SignatureAuditConfigNotify}
@@ -473,7 +481,7 @@ public final class SignatureAuditConfigNotifyOuterClass {
 
       private boolean isOpen_ ;
       /**
-       * <code>bool is_open = 9;</code>
+       * <code>bool is_open = 6;</code>
        * @return The isOpen.
        */
       @java.lang.Override
@@ -481,7 +489,7 @@ public final class SignatureAuditConfigNotifyOuterClass {
         return isOpen_;
       }
       /**
-       * <code>bool is_open = 9;</code>
+       * <code>bool is_open = 6;</code>
        * @param value The isOpen to set.
        * @return This builder for chaining.
        */
@@ -492,7 +500,7 @@ public final class SignatureAuditConfigNotifyOuterClass {
         return this;
       }
       /**
-       * <code>bool is_open = 9;</code>
+       * <code>bool is_open = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsOpen() {
@@ -504,7 +512,7 @@ public final class SignatureAuditConfigNotifyOuterClass {
 
       private int submitLimit_ ;
       /**
-       * <code>uint32 submit_limit = 10;</code>
+       * <code>uint32 submit_limit = 11;</code>
        * @return The submitLimit.
        */
       @java.lang.Override
@@ -512,7 +520,7 @@ public final class SignatureAuditConfigNotifyOuterClass {
         return submitLimit_;
       }
       /**
-       * <code>uint32 submit_limit = 10;</code>
+       * <code>uint32 submit_limit = 11;</code>
        * @param value The submitLimit to set.
        * @return This builder for chaining.
        */
@@ -523,7 +531,7 @@ public final class SignatureAuditConfigNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 submit_limit = 10;</code>
+       * <code>uint32 submit_limit = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearSubmitLimit() {
@@ -600,8 +608,8 @@ public final class SignatureAuditConfigNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n SignatureAuditConfigNotify.proto\"C\n\032Si" +
-      "gnatureAuditConfigNotify\022\017\n\007is_open\030\t \001(" +
-      "\010\022\024\n\014submit_limit\030\n \001(\rB\033\n\031emu.grasscutt" +
+      "gnatureAuditConfigNotify\022\017\n\007is_open\030\006 \001(" +
+      "\010\022\024\n\014submit_limit\030\013 \001(\rB\033\n\031emu.grasscutt" +
       "er.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

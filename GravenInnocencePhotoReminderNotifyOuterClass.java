@@ -19,22 +19,26 @@ public final class GravenInnocencePhotoReminderNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 group_bundle_id = 14;</code>
-     * @return The groupBundleId.
-     */
-    int getGroupBundleId();
-
-    /**
-     * <code>uint32 reminder_id = 6;</code>
+     * <code>uint32 reminder_id = 13;</code>
      * @return The reminderId.
      */
     int getReminderId();
+
+    /**
+     * <code>uint32 group_bundle_id = 7;</code>
+     * @return The groupBundleId.
+     */
+    int getGroupBundleId();
   }
   /**
    * <pre>
-   * CmdId: 23864
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 22577;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code GravenInnocencePhotoReminderNotify}
@@ -81,14 +85,14 @@ public final class GravenInnocencePhotoReminderNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 48: {
-
-              reminderId_ = input.readUInt32();
-              break;
-            }
-            case 112: {
+            case 56: {
 
               groupBundleId_ = input.readUInt32();
+              break;
+            }
+            case 104: {
+
+              reminderId_ = input.readUInt32();
               break;
             }
             default: {
@@ -123,26 +127,26 @@ public final class GravenInnocencePhotoReminderNotifyOuterClass {
               emu.grasscutter.net.proto.GravenInnocencePhotoReminderNotifyOuterClass.GravenInnocencePhotoReminderNotify.class, emu.grasscutter.net.proto.GravenInnocencePhotoReminderNotifyOuterClass.GravenInnocencePhotoReminderNotify.Builder.class);
     }
 
-    public static final int GROUP_BUNDLE_ID_FIELD_NUMBER = 14;
-    private int groupBundleId_;
-    /**
-     * <code>uint32 group_bundle_id = 14;</code>
-     * @return The groupBundleId.
-     */
-    @java.lang.Override
-    public int getGroupBundleId() {
-      return groupBundleId_;
-    }
-
-    public static final int REMINDER_ID_FIELD_NUMBER = 6;
+    public static final int REMINDER_ID_FIELD_NUMBER = 13;
     private int reminderId_;
     /**
-     * <code>uint32 reminder_id = 6;</code>
+     * <code>uint32 reminder_id = 13;</code>
      * @return The reminderId.
      */
     @java.lang.Override
     public int getReminderId() {
       return reminderId_;
+    }
+
+    public static final int GROUP_BUNDLE_ID_FIELD_NUMBER = 7;
+    private int groupBundleId_;
+    /**
+     * <code>uint32 group_bundle_id = 7;</code>
+     * @return The groupBundleId.
+     */
+    @java.lang.Override
+    public int getGroupBundleId() {
+      return groupBundleId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -159,11 +163,11 @@ public final class GravenInnocencePhotoReminderNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (reminderId_ != 0) {
-        output.writeUInt32(6, reminderId_);
-      }
       if (groupBundleId_ != 0) {
-        output.writeUInt32(14, groupBundleId_);
+        output.writeUInt32(7, groupBundleId_);
+      }
+      if (reminderId_ != 0) {
+        output.writeUInt32(13, reminderId_);
       }
       unknownFields.writeTo(output);
     }
@@ -174,13 +178,13 @@ public final class GravenInnocencePhotoReminderNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (reminderId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, reminderId_);
-      }
       if (groupBundleId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, groupBundleId_);
+          .computeUInt32Size(7, groupBundleId_);
+      }
+      if (reminderId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(13, reminderId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -197,10 +201,10 @@ public final class GravenInnocencePhotoReminderNotifyOuterClass {
       }
       emu.grasscutter.net.proto.GravenInnocencePhotoReminderNotifyOuterClass.GravenInnocencePhotoReminderNotify other = (emu.grasscutter.net.proto.GravenInnocencePhotoReminderNotifyOuterClass.GravenInnocencePhotoReminderNotify) obj;
 
-      if (getGroupBundleId()
-          != other.getGroupBundleId()) return false;
       if (getReminderId()
           != other.getReminderId()) return false;
+      if (getGroupBundleId()
+          != other.getGroupBundleId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -212,10 +216,10 @@ public final class GravenInnocencePhotoReminderNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + GROUP_BUNDLE_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getGroupBundleId();
       hash = (37 * hash) + REMINDER_ID_FIELD_NUMBER;
       hash = (53 * hash) + getReminderId();
+      hash = (37 * hash) + GROUP_BUNDLE_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getGroupBundleId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -313,9 +317,13 @@ public final class GravenInnocencePhotoReminderNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 23864
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 22577;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code GravenInnocencePhotoReminderNotify}
@@ -355,9 +363,9 @@ public final class GravenInnocencePhotoReminderNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        groupBundleId_ = 0;
-
         reminderId_ = 0;
+
+        groupBundleId_ = 0;
 
         return this;
       }
@@ -385,8 +393,8 @@ public final class GravenInnocencePhotoReminderNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.GravenInnocencePhotoReminderNotifyOuterClass.GravenInnocencePhotoReminderNotify buildPartial() {
         emu.grasscutter.net.proto.GravenInnocencePhotoReminderNotifyOuterClass.GravenInnocencePhotoReminderNotify result = new emu.grasscutter.net.proto.GravenInnocencePhotoReminderNotifyOuterClass.GravenInnocencePhotoReminderNotify(this);
-        result.groupBundleId_ = groupBundleId_;
         result.reminderId_ = reminderId_;
+        result.groupBundleId_ = groupBundleId_;
         onBuilt();
         return result;
       }
@@ -435,11 +443,11 @@ public final class GravenInnocencePhotoReminderNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.GravenInnocencePhotoReminderNotifyOuterClass.GravenInnocencePhotoReminderNotify other) {
         if (other == emu.grasscutter.net.proto.GravenInnocencePhotoReminderNotifyOuterClass.GravenInnocencePhotoReminderNotify.getDefaultInstance()) return this;
-        if (other.getGroupBundleId() != 0) {
-          setGroupBundleId(other.getGroupBundleId());
-        }
         if (other.getReminderId() != 0) {
           setReminderId(other.getReminderId());
+        }
+        if (other.getGroupBundleId() != 0) {
+          setGroupBundleId(other.getGroupBundleId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -470,40 +478,9 @@ public final class GravenInnocencePhotoReminderNotifyOuterClass {
         return this;
       }
 
-      private int groupBundleId_ ;
-      /**
-       * <code>uint32 group_bundle_id = 14;</code>
-       * @return The groupBundleId.
-       */
-      @java.lang.Override
-      public int getGroupBundleId() {
-        return groupBundleId_;
-      }
-      /**
-       * <code>uint32 group_bundle_id = 14;</code>
-       * @param value The groupBundleId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setGroupBundleId(int value) {
-        
-        groupBundleId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 group_bundle_id = 14;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearGroupBundleId() {
-        
-        groupBundleId_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int reminderId_ ;
       /**
-       * <code>uint32 reminder_id = 6;</code>
+       * <code>uint32 reminder_id = 13;</code>
        * @return The reminderId.
        */
       @java.lang.Override
@@ -511,7 +488,7 @@ public final class GravenInnocencePhotoReminderNotifyOuterClass {
         return reminderId_;
       }
       /**
-       * <code>uint32 reminder_id = 6;</code>
+       * <code>uint32 reminder_id = 13;</code>
        * @param value The reminderId to set.
        * @return This builder for chaining.
        */
@@ -522,12 +499,43 @@ public final class GravenInnocencePhotoReminderNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 reminder_id = 6;</code>
+       * <code>uint32 reminder_id = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearReminderId() {
         
         reminderId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int groupBundleId_ ;
+      /**
+       * <code>uint32 group_bundle_id = 7;</code>
+       * @return The groupBundleId.
+       */
+      @java.lang.Override
+      public int getGroupBundleId() {
+        return groupBundleId_;
+      }
+      /**
+       * <code>uint32 group_bundle_id = 7;</code>
+       * @param value The groupBundleId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setGroupBundleId(int value) {
+        
+        groupBundleId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 group_bundle_id = 7;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearGroupBundleId() {
+        
+        groupBundleId_ = 0;
         onChanged();
         return this;
       }
@@ -600,8 +608,8 @@ public final class GravenInnocencePhotoReminderNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n(GravenInnocencePhotoReminderNotify.pro" +
       "to\"R\n\"GravenInnocencePhotoReminderNotify" +
-      "\022\027\n\017group_bundle_id\030\016 \001(\r\022\023\n\013reminder_id" +
-      "\030\006 \001(\rB\033\n\031emu.grasscutter.net.protob\006pro" +
+      "\022\023\n\013reminder_id\030\r \001(\r\022\027\n\017group_bundle_id" +
+      "\030\007 \001(\rB\033\n\031emu.grasscutter.net.protob\006pro" +
       "to3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -613,7 +621,7 @@ public final class GravenInnocencePhotoReminderNotifyOuterClass {
     internal_static_GravenInnocencePhotoReminderNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GravenInnocencePhotoReminderNotify_descriptor,
-        new java.lang.String[] { "GroupBundleId", "ReminderId", });
+        new java.lang.String[] { "ReminderId", "GroupBundleId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

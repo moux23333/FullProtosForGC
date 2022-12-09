@@ -19,28 +19,28 @@ public final class PbNavMeshStatsInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 authority_ai_in_combat = 10;</code>
-     * @return The authorityAiInCombat.
+     * <code>int32 Unk3300_MOKPJBIPHNI = 8;</code>
+     * @return The unk3300MOKPJBIPHNI.
      */
-    int getAuthorityAiInCombat();
+    int getUnk3300MOKPJBIPHNI();
 
     /**
-     * <code>int32 no_authority_ai_in_combat = 11;</code>
-     * @return The noAuthorityAiInCombat.
+     * <code>int32 Unk3300_IMLHLJAOBLF = 3;</code>
+     * @return The unk3300IMLHLJAOBLF.
      */
-    int getNoAuthorityAiInCombat();
+    int getUnk3300IMLHLJAOBLF();
 
     /**
-     * <code>int32 total_authority_ai = 8;</code>
-     * @return The totalAuthorityAi.
+     * <code>int32 Unk3300_DHJKKJLKDHB = 15;</code>
+     * @return The unk3300DHJKKJLKDHB.
      */
-    int getTotalAuthorityAi();
+    int getUnk3300DHJKKJLKDHB();
 
     /**
-     * <code>int32 total_no_authority_ai = 13;</code>
-     * @return The totalNoAuthorityAi.
+     * <code>int32 Unk3300_EEONKADBJME = 13;</code>
+     * @return The unk3300EEONKADBJME.
      */
-    int getTotalNoAuthorityAi();
+    int getUnk3300EEONKADBJME();
   }
   /**
    * Protobuf type {@code PbNavMeshStatsInfo}
@@ -87,24 +87,24 @@ public final class PbNavMeshStatsInfoOuterClass {
             case 0:
               done = true;
               break;
+            case 24: {
+
+              unk3300IMLHLJAOBLF_ = input.readInt32();
+              break;
+            }
             case 64: {
 
-              totalAuthorityAi_ = input.readInt32();
-              break;
-            }
-            case 80: {
-
-              authorityAiInCombat_ = input.readInt32();
-              break;
-            }
-            case 88: {
-
-              noAuthorityAiInCombat_ = input.readInt32();
+              unk3300MOKPJBIPHNI_ = input.readInt32();
               break;
             }
             case 104: {
 
-              totalNoAuthorityAi_ = input.readInt32();
+              unk3300EEONKADBJME_ = input.readInt32();
+              break;
+            }
+            case 120: {
+
+              unk3300DHJKKJLKDHB_ = input.readInt32();
               break;
             }
             default: {
@@ -139,48 +139,48 @@ public final class PbNavMeshStatsInfoOuterClass {
               emu.grasscutter.net.proto.PbNavMeshStatsInfoOuterClass.PbNavMeshStatsInfo.class, emu.grasscutter.net.proto.PbNavMeshStatsInfoOuterClass.PbNavMeshStatsInfo.Builder.class);
     }
 
-    public static final int AUTHORITY_AI_IN_COMBAT_FIELD_NUMBER = 10;
-    private int authorityAiInCombat_;
+    public static final int UNK3300_MOKPJBIPHNI_FIELD_NUMBER = 8;
+    private int unk3300MOKPJBIPHNI_;
     /**
-     * <code>int32 authority_ai_in_combat = 10;</code>
-     * @return The authorityAiInCombat.
+     * <code>int32 Unk3300_MOKPJBIPHNI = 8;</code>
+     * @return The unk3300MOKPJBIPHNI.
      */
     @java.lang.Override
-    public int getAuthorityAiInCombat() {
-      return authorityAiInCombat_;
+    public int getUnk3300MOKPJBIPHNI() {
+      return unk3300MOKPJBIPHNI_;
     }
 
-    public static final int NO_AUTHORITY_AI_IN_COMBAT_FIELD_NUMBER = 11;
-    private int noAuthorityAiInCombat_;
+    public static final int UNK3300_IMLHLJAOBLF_FIELD_NUMBER = 3;
+    private int unk3300IMLHLJAOBLF_;
     /**
-     * <code>int32 no_authority_ai_in_combat = 11;</code>
-     * @return The noAuthorityAiInCombat.
+     * <code>int32 Unk3300_IMLHLJAOBLF = 3;</code>
+     * @return The unk3300IMLHLJAOBLF.
      */
     @java.lang.Override
-    public int getNoAuthorityAiInCombat() {
-      return noAuthorityAiInCombat_;
+    public int getUnk3300IMLHLJAOBLF() {
+      return unk3300IMLHLJAOBLF_;
     }
 
-    public static final int TOTAL_AUTHORITY_AI_FIELD_NUMBER = 8;
-    private int totalAuthorityAi_;
+    public static final int UNK3300_DHJKKJLKDHB_FIELD_NUMBER = 15;
+    private int unk3300DHJKKJLKDHB_;
     /**
-     * <code>int32 total_authority_ai = 8;</code>
-     * @return The totalAuthorityAi.
+     * <code>int32 Unk3300_DHJKKJLKDHB = 15;</code>
+     * @return The unk3300DHJKKJLKDHB.
      */
     @java.lang.Override
-    public int getTotalAuthorityAi() {
-      return totalAuthorityAi_;
+    public int getUnk3300DHJKKJLKDHB() {
+      return unk3300DHJKKJLKDHB_;
     }
 
-    public static final int TOTAL_NO_AUTHORITY_AI_FIELD_NUMBER = 13;
-    private int totalNoAuthorityAi_;
+    public static final int UNK3300_EEONKADBJME_FIELD_NUMBER = 13;
+    private int unk3300EEONKADBJME_;
     /**
-     * <code>int32 total_no_authority_ai = 13;</code>
-     * @return The totalNoAuthorityAi.
+     * <code>int32 Unk3300_EEONKADBJME = 13;</code>
+     * @return The unk3300EEONKADBJME.
      */
     @java.lang.Override
-    public int getTotalNoAuthorityAi() {
-      return totalNoAuthorityAi_;
+    public int getUnk3300EEONKADBJME() {
+      return unk3300EEONKADBJME_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -197,17 +197,17 @@ public final class PbNavMeshStatsInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (totalAuthorityAi_ != 0) {
-        output.writeInt32(8, totalAuthorityAi_);
+      if (unk3300IMLHLJAOBLF_ != 0) {
+        output.writeInt32(3, unk3300IMLHLJAOBLF_);
       }
-      if (authorityAiInCombat_ != 0) {
-        output.writeInt32(10, authorityAiInCombat_);
+      if (unk3300MOKPJBIPHNI_ != 0) {
+        output.writeInt32(8, unk3300MOKPJBIPHNI_);
       }
-      if (noAuthorityAiInCombat_ != 0) {
-        output.writeInt32(11, noAuthorityAiInCombat_);
+      if (unk3300EEONKADBJME_ != 0) {
+        output.writeInt32(13, unk3300EEONKADBJME_);
       }
-      if (totalNoAuthorityAi_ != 0) {
-        output.writeInt32(13, totalNoAuthorityAi_);
+      if (unk3300DHJKKJLKDHB_ != 0) {
+        output.writeInt32(15, unk3300DHJKKJLKDHB_);
       }
       unknownFields.writeTo(output);
     }
@@ -218,21 +218,21 @@ public final class PbNavMeshStatsInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (totalAuthorityAi_ != 0) {
+      if (unk3300IMLHLJAOBLF_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(8, totalAuthorityAi_);
+          .computeInt32Size(3, unk3300IMLHLJAOBLF_);
       }
-      if (authorityAiInCombat_ != 0) {
+      if (unk3300MOKPJBIPHNI_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(10, authorityAiInCombat_);
+          .computeInt32Size(8, unk3300MOKPJBIPHNI_);
       }
-      if (noAuthorityAiInCombat_ != 0) {
+      if (unk3300EEONKADBJME_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(11, noAuthorityAiInCombat_);
+          .computeInt32Size(13, unk3300EEONKADBJME_);
       }
-      if (totalNoAuthorityAi_ != 0) {
+      if (unk3300DHJKKJLKDHB_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(13, totalNoAuthorityAi_);
+          .computeInt32Size(15, unk3300DHJKKJLKDHB_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -249,14 +249,14 @@ public final class PbNavMeshStatsInfoOuterClass {
       }
       emu.grasscutter.net.proto.PbNavMeshStatsInfoOuterClass.PbNavMeshStatsInfo other = (emu.grasscutter.net.proto.PbNavMeshStatsInfoOuterClass.PbNavMeshStatsInfo) obj;
 
-      if (getAuthorityAiInCombat()
-          != other.getAuthorityAiInCombat()) return false;
-      if (getNoAuthorityAiInCombat()
-          != other.getNoAuthorityAiInCombat()) return false;
-      if (getTotalAuthorityAi()
-          != other.getTotalAuthorityAi()) return false;
-      if (getTotalNoAuthorityAi()
-          != other.getTotalNoAuthorityAi()) return false;
+      if (getUnk3300MOKPJBIPHNI()
+          != other.getUnk3300MOKPJBIPHNI()) return false;
+      if (getUnk3300IMLHLJAOBLF()
+          != other.getUnk3300IMLHLJAOBLF()) return false;
+      if (getUnk3300DHJKKJLKDHB()
+          != other.getUnk3300DHJKKJLKDHB()) return false;
+      if (getUnk3300EEONKADBJME()
+          != other.getUnk3300EEONKADBJME()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -268,14 +268,14 @@ public final class PbNavMeshStatsInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + AUTHORITY_AI_IN_COMBAT_FIELD_NUMBER;
-      hash = (53 * hash) + getAuthorityAiInCombat();
-      hash = (37 * hash) + NO_AUTHORITY_AI_IN_COMBAT_FIELD_NUMBER;
-      hash = (53 * hash) + getNoAuthorityAiInCombat();
-      hash = (37 * hash) + TOTAL_AUTHORITY_AI_FIELD_NUMBER;
-      hash = (53 * hash) + getTotalAuthorityAi();
-      hash = (37 * hash) + TOTAL_NO_AUTHORITY_AI_FIELD_NUMBER;
-      hash = (53 * hash) + getTotalNoAuthorityAi();
+      hash = (37 * hash) + UNK3300_MOKPJBIPHNI_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300MOKPJBIPHNI();
+      hash = (37 * hash) + UNK3300_IMLHLJAOBLF_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300IMLHLJAOBLF();
+      hash = (37 * hash) + UNK3300_DHJKKJLKDHB_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300DHJKKJLKDHB();
+      hash = (37 * hash) + UNK3300_EEONKADBJME_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300EEONKADBJME();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -409,13 +409,13 @@ public final class PbNavMeshStatsInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        authorityAiInCombat_ = 0;
+        unk3300MOKPJBIPHNI_ = 0;
 
-        noAuthorityAiInCombat_ = 0;
+        unk3300IMLHLJAOBLF_ = 0;
 
-        totalAuthorityAi_ = 0;
+        unk3300DHJKKJLKDHB_ = 0;
 
-        totalNoAuthorityAi_ = 0;
+        unk3300EEONKADBJME_ = 0;
 
         return this;
       }
@@ -443,10 +443,10 @@ public final class PbNavMeshStatsInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.PbNavMeshStatsInfoOuterClass.PbNavMeshStatsInfo buildPartial() {
         emu.grasscutter.net.proto.PbNavMeshStatsInfoOuterClass.PbNavMeshStatsInfo result = new emu.grasscutter.net.proto.PbNavMeshStatsInfoOuterClass.PbNavMeshStatsInfo(this);
-        result.authorityAiInCombat_ = authorityAiInCombat_;
-        result.noAuthorityAiInCombat_ = noAuthorityAiInCombat_;
-        result.totalAuthorityAi_ = totalAuthorityAi_;
-        result.totalNoAuthorityAi_ = totalNoAuthorityAi_;
+        result.unk3300MOKPJBIPHNI_ = unk3300MOKPJBIPHNI_;
+        result.unk3300IMLHLJAOBLF_ = unk3300IMLHLJAOBLF_;
+        result.unk3300DHJKKJLKDHB_ = unk3300DHJKKJLKDHB_;
+        result.unk3300EEONKADBJME_ = unk3300EEONKADBJME_;
         onBuilt();
         return result;
       }
@@ -495,17 +495,17 @@ public final class PbNavMeshStatsInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.PbNavMeshStatsInfoOuterClass.PbNavMeshStatsInfo other) {
         if (other == emu.grasscutter.net.proto.PbNavMeshStatsInfoOuterClass.PbNavMeshStatsInfo.getDefaultInstance()) return this;
-        if (other.getAuthorityAiInCombat() != 0) {
-          setAuthorityAiInCombat(other.getAuthorityAiInCombat());
+        if (other.getUnk3300MOKPJBIPHNI() != 0) {
+          setUnk3300MOKPJBIPHNI(other.getUnk3300MOKPJBIPHNI());
         }
-        if (other.getNoAuthorityAiInCombat() != 0) {
-          setNoAuthorityAiInCombat(other.getNoAuthorityAiInCombat());
+        if (other.getUnk3300IMLHLJAOBLF() != 0) {
+          setUnk3300IMLHLJAOBLF(other.getUnk3300IMLHLJAOBLF());
         }
-        if (other.getTotalAuthorityAi() != 0) {
-          setTotalAuthorityAi(other.getTotalAuthorityAi());
+        if (other.getUnk3300DHJKKJLKDHB() != 0) {
+          setUnk3300DHJKKJLKDHB(other.getUnk3300DHJKKJLKDHB());
         }
-        if (other.getTotalNoAuthorityAi() != 0) {
-          setTotalNoAuthorityAi(other.getTotalNoAuthorityAi());
+        if (other.getUnk3300EEONKADBJME() != 0) {
+          setUnk3300EEONKADBJME(other.getUnk3300EEONKADBJME());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -536,126 +536,126 @@ public final class PbNavMeshStatsInfoOuterClass {
         return this;
       }
 
-      private int authorityAiInCombat_ ;
+      private int unk3300MOKPJBIPHNI_ ;
       /**
-       * <code>int32 authority_ai_in_combat = 10;</code>
-       * @return The authorityAiInCombat.
+       * <code>int32 Unk3300_MOKPJBIPHNI = 8;</code>
+       * @return The unk3300MOKPJBIPHNI.
        */
       @java.lang.Override
-      public int getAuthorityAiInCombat() {
-        return authorityAiInCombat_;
+      public int getUnk3300MOKPJBIPHNI() {
+        return unk3300MOKPJBIPHNI_;
       }
       /**
-       * <code>int32 authority_ai_in_combat = 10;</code>
-       * @param value The authorityAiInCombat to set.
+       * <code>int32 Unk3300_MOKPJBIPHNI = 8;</code>
+       * @param value The unk3300MOKPJBIPHNI to set.
        * @return This builder for chaining.
        */
-      public Builder setAuthorityAiInCombat(int value) {
+      public Builder setUnk3300MOKPJBIPHNI(int value) {
         
-        authorityAiInCombat_ = value;
+        unk3300MOKPJBIPHNI_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>int32 authority_ai_in_combat = 10;</code>
+       * <code>int32 Unk3300_MOKPJBIPHNI = 8;</code>
        * @return This builder for chaining.
        */
-      public Builder clearAuthorityAiInCombat() {
+      public Builder clearUnk3300MOKPJBIPHNI() {
         
-        authorityAiInCombat_ = 0;
+        unk3300MOKPJBIPHNI_ = 0;
         onChanged();
         return this;
       }
 
-      private int noAuthorityAiInCombat_ ;
+      private int unk3300IMLHLJAOBLF_ ;
       /**
-       * <code>int32 no_authority_ai_in_combat = 11;</code>
-       * @return The noAuthorityAiInCombat.
+       * <code>int32 Unk3300_IMLHLJAOBLF = 3;</code>
+       * @return The unk3300IMLHLJAOBLF.
        */
       @java.lang.Override
-      public int getNoAuthorityAiInCombat() {
-        return noAuthorityAiInCombat_;
+      public int getUnk3300IMLHLJAOBLF() {
+        return unk3300IMLHLJAOBLF_;
       }
       /**
-       * <code>int32 no_authority_ai_in_combat = 11;</code>
-       * @param value The noAuthorityAiInCombat to set.
+       * <code>int32 Unk3300_IMLHLJAOBLF = 3;</code>
+       * @param value The unk3300IMLHLJAOBLF to set.
        * @return This builder for chaining.
        */
-      public Builder setNoAuthorityAiInCombat(int value) {
+      public Builder setUnk3300IMLHLJAOBLF(int value) {
         
-        noAuthorityAiInCombat_ = value;
+        unk3300IMLHLJAOBLF_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>int32 no_authority_ai_in_combat = 11;</code>
+       * <code>int32 Unk3300_IMLHLJAOBLF = 3;</code>
        * @return This builder for chaining.
        */
-      public Builder clearNoAuthorityAiInCombat() {
+      public Builder clearUnk3300IMLHLJAOBLF() {
         
-        noAuthorityAiInCombat_ = 0;
+        unk3300IMLHLJAOBLF_ = 0;
         onChanged();
         return this;
       }
 
-      private int totalAuthorityAi_ ;
+      private int unk3300DHJKKJLKDHB_ ;
       /**
-       * <code>int32 total_authority_ai = 8;</code>
-       * @return The totalAuthorityAi.
+       * <code>int32 Unk3300_DHJKKJLKDHB = 15;</code>
+       * @return The unk3300DHJKKJLKDHB.
        */
       @java.lang.Override
-      public int getTotalAuthorityAi() {
-        return totalAuthorityAi_;
+      public int getUnk3300DHJKKJLKDHB() {
+        return unk3300DHJKKJLKDHB_;
       }
       /**
-       * <code>int32 total_authority_ai = 8;</code>
-       * @param value The totalAuthorityAi to set.
+       * <code>int32 Unk3300_DHJKKJLKDHB = 15;</code>
+       * @param value The unk3300DHJKKJLKDHB to set.
        * @return This builder for chaining.
        */
-      public Builder setTotalAuthorityAi(int value) {
+      public Builder setUnk3300DHJKKJLKDHB(int value) {
         
-        totalAuthorityAi_ = value;
+        unk3300DHJKKJLKDHB_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>int32 total_authority_ai = 8;</code>
+       * <code>int32 Unk3300_DHJKKJLKDHB = 15;</code>
        * @return This builder for chaining.
        */
-      public Builder clearTotalAuthorityAi() {
+      public Builder clearUnk3300DHJKKJLKDHB() {
         
-        totalAuthorityAi_ = 0;
+        unk3300DHJKKJLKDHB_ = 0;
         onChanged();
         return this;
       }
 
-      private int totalNoAuthorityAi_ ;
+      private int unk3300EEONKADBJME_ ;
       /**
-       * <code>int32 total_no_authority_ai = 13;</code>
-       * @return The totalNoAuthorityAi.
+       * <code>int32 Unk3300_EEONKADBJME = 13;</code>
+       * @return The unk3300EEONKADBJME.
        */
       @java.lang.Override
-      public int getTotalNoAuthorityAi() {
-        return totalNoAuthorityAi_;
+      public int getUnk3300EEONKADBJME() {
+        return unk3300EEONKADBJME_;
       }
       /**
-       * <code>int32 total_no_authority_ai = 13;</code>
-       * @param value The totalNoAuthorityAi to set.
+       * <code>int32 Unk3300_EEONKADBJME = 13;</code>
+       * @param value The unk3300EEONKADBJME to set.
        * @return This builder for chaining.
        */
-      public Builder setTotalNoAuthorityAi(int value) {
+      public Builder setUnk3300EEONKADBJME(int value) {
         
-        totalNoAuthorityAi_ = value;
+        unk3300EEONKADBJME_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>int32 total_no_authority_ai = 13;</code>
+       * <code>int32 Unk3300_EEONKADBJME = 13;</code>
        * @return This builder for chaining.
        */
-      public Builder clearTotalNoAuthorityAi() {
+      public Builder clearUnk3300EEONKADBJME() {
         
-        totalNoAuthorityAi_ = 0;
+        unk3300EEONKADBJME_ = 0;
         onChanged();
         return this;
       }
@@ -726,12 +726,12 @@ public final class PbNavMeshStatsInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\030PbNavMeshStatsInfo.proto\"\222\001\n\022PbNavMesh" +
-      "StatsInfo\022\036\n\026authority_ai_in_combat\030\n \001(" +
-      "\005\022!\n\031no_authority_ai_in_combat\030\013 \001(\005\022\032\n\022" +
-      "total_authority_ai\030\010 \001(\005\022\035\n\025total_no_aut" +
-      "hority_ai\030\r \001(\005B\033\n\031emu.grasscutter.net.p" +
-      "rotob\006proto3"
+      "\n\030PbNavMeshStatsInfo.proto\"\210\001\n\022PbNavMesh" +
+      "StatsInfo\022\033\n\023Unk3300_MOKPJBIPHNI\030\010 \001(\005\022\033" +
+      "\n\023Unk3300_IMLHLJAOBLF\030\003 \001(\005\022\033\n\023Unk3300_D" +
+      "HJKKJLKDHB\030\017 \001(\005\022\033\n\023Unk3300_EEONKADBJME\030" +
+      "\r \001(\005B\033\n\031emu.grasscutter.net.protob\006prot" +
+      "o3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -742,7 +742,7 @@ public final class PbNavMeshStatsInfoOuterClass {
     internal_static_PbNavMeshStatsInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_PbNavMeshStatsInfo_descriptor,
-        new java.lang.String[] { "AuthorityAiInCombat", "NoAuthorityAiInCombat", "TotalAuthorityAi", "TotalNoAuthorityAi", });
+        new java.lang.String[] { "Unk3300MOKPJBIPHNI", "Unk3300IMLHLJAOBLF", "Unk3300DHJKKJLKDHB", "Unk3300EEONKADBJME", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

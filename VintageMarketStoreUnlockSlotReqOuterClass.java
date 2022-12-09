@@ -19,17 +19,21 @@ public final class VintageMarketStoreUnlockSlotReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 store_id = 10;</code>
+     * <code>uint32 store_id = 8;</code>
      * @return The storeId.
      */
     int getStoreId();
   }
   /**
    * <pre>
-   * CmdId: 20626
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 22367;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code VintageMarketStoreUnlockSlotReq}
@@ -76,7 +80,7 @@ public final class VintageMarketStoreUnlockSlotReqOuterClass {
             case 0:
               done = true;
               break;
-            case 80: {
+            case 64: {
 
               storeId_ = input.readUInt32();
               break;
@@ -113,10 +117,10 @@ public final class VintageMarketStoreUnlockSlotReqOuterClass {
               emu.grasscutter.net.proto.VintageMarketStoreUnlockSlotReqOuterClass.VintageMarketStoreUnlockSlotReq.class, emu.grasscutter.net.proto.VintageMarketStoreUnlockSlotReqOuterClass.VintageMarketStoreUnlockSlotReq.Builder.class);
     }
 
-    public static final int STORE_ID_FIELD_NUMBER = 10;
+    public static final int STORE_ID_FIELD_NUMBER = 8;
     private int storeId_;
     /**
-     * <code>uint32 store_id = 10;</code>
+     * <code>uint32 store_id = 8;</code>
      * @return The storeId.
      */
     @java.lang.Override
@@ -139,7 +143,7 @@ public final class VintageMarketStoreUnlockSlotReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (storeId_ != 0) {
-        output.writeUInt32(10, storeId_);
+        output.writeUInt32(8, storeId_);
       }
       unknownFields.writeTo(output);
     }
@@ -152,7 +156,7 @@ public final class VintageMarketStoreUnlockSlotReqOuterClass {
       size = 0;
       if (storeId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, storeId_);
+          .computeUInt32Size(8, storeId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -281,10 +285,14 @@ public final class VintageMarketStoreUnlockSlotReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 20626
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 22367;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code VintageMarketStoreUnlockSlotReq}
@@ -435,7 +443,7 @@ public final class VintageMarketStoreUnlockSlotReqOuterClass {
 
       private int storeId_ ;
       /**
-       * <code>uint32 store_id = 10;</code>
+       * <code>uint32 store_id = 8;</code>
        * @return The storeId.
        */
       @java.lang.Override
@@ -443,7 +451,7 @@ public final class VintageMarketStoreUnlockSlotReqOuterClass {
         return storeId_;
       }
       /**
-       * <code>uint32 store_id = 10;</code>
+       * <code>uint32 store_id = 8;</code>
        * @param value The storeId to set.
        * @return This builder for chaining.
        */
@@ -454,7 +462,7 @@ public final class VintageMarketStoreUnlockSlotReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 store_id = 10;</code>
+       * <code>uint32 store_id = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearStoreId() {
@@ -532,7 +540,7 @@ public final class VintageMarketStoreUnlockSlotReqOuterClass {
     java.lang.String[] descriptorData = {
       "\n%VintageMarketStoreUnlockSlotReq.proto\"" +
       "3\n\037VintageMarketStoreUnlockSlotReq\022\020\n\010st" +
-      "ore_id\030\n \001(\rB\033\n\031emu.grasscutter.net.prot" +
+      "ore_id\030\010 \001(\rB\033\n\031emu.grasscutter.net.prot" +
       "ob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

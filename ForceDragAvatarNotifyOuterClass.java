@@ -19,55 +19,59 @@ public final class ForceDragAvatarNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 scene_time = 3;</code>
-     * @return The sceneTime.
+     * <code>uint64 Unk3300_IMFNNPGHKJJ = 3;</code>
+     * @return The unk3300IMFNNPGHKJJ.
      */
-    int getSceneTime();
+    long getUnk3300IMFNNPGHKJJ();
 
     /**
-     * <code>uint64 delta_time_ms = 1;</code>
-     * @return The deltaTimeMs.
-     */
-    long getDeltaTimeMs();
-
-    /**
-     * <code>uint32 entity_id = 2;</code>
-     * @return The entityId.
-     */
-    int getEntityId();
-
-    /**
-     * <code>.MotionInfo motion_info = 10;</code>
+     * <code>.MotionInfo motion_info = 9;</code>
      * @return Whether the motionInfo field is set.
      */
     boolean hasMotionInfo();
     /**
-     * <code>.MotionInfo motion_info = 10;</code>
+     * <code>.MotionInfo motion_info = 9;</code>
      * @return The motionInfo.
      */
     emu.grasscutter.net.proto.MotionInfoOuterClass.MotionInfo getMotionInfo();
     /**
-     * <code>.MotionInfo motion_info = 10;</code>
+     * <code>.MotionInfo motion_info = 9;</code>
      */
     emu.grasscutter.net.proto.MotionInfoOuterClass.MotionInfoOrBuilder getMotionInfoOrBuilder();
 
     /**
-     * <code>bool is_first_valid = 8;</code>
+     * <code>bool is_first_valid = 7;</code>
      * @return The isFirstValid.
      */
     boolean getIsFirstValid();
 
     /**
-     * <code>uint64 last_move_time_ms = 12;</code>
-     * @return The lastMoveTimeMs.
+     * <code>uint32 scene_time = 12;</code>
+     * @return The sceneTime.
      */
-    long getLastMoveTimeMs();
+    int getSceneTime();
+
+    /**
+     * <code>uint32 entity_id = 10;</code>
+     * @return The entityId.
+     */
+    int getEntityId();
+
+    /**
+     * <code>uint64 Unk3300_AFLCLLFDPBD = 5;</code>
+     * @return The unk3300AFLCLLFDPBD.
+     */
+    long getUnk3300AFLCLLFDPBD();
   }
   /**
    * <pre>
-   * CmdId: 3235
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 3008;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code ForceDragAvatarNotify}
@@ -114,27 +118,22 @@ public final class ForceDragAvatarNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
-
-              deltaTimeMs_ = input.readUInt64();
-              break;
-            }
-            case 16: {
-
-              entityId_ = input.readUInt32();
-              break;
-            }
             case 24: {
 
-              sceneTime_ = input.readUInt32();
+              unk3300IMFNNPGHKJJ_ = input.readUInt64();
               break;
             }
-            case 64: {
+            case 40: {
+
+              unk3300AFLCLLFDPBD_ = input.readUInt64();
+              break;
+            }
+            case 56: {
 
               isFirstValid_ = input.readBool();
               break;
             }
-            case 82: {
+            case 74: {
               emu.grasscutter.net.proto.MotionInfoOuterClass.MotionInfo.Builder subBuilder = null;
               if (motionInfo_ != null) {
                 subBuilder = motionInfo_.toBuilder();
@@ -147,9 +146,14 @@ public final class ForceDragAvatarNotifyOuterClass {
 
               break;
             }
+            case 80: {
+
+              entityId_ = input.readUInt32();
+              break;
+            }
             case 96: {
 
-              lastMoveTimeMs_ = input.readUInt64();
+              sceneTime_ = input.readUInt32();
               break;
             }
             default: {
@@ -184,43 +188,21 @@ public final class ForceDragAvatarNotifyOuterClass {
               emu.grasscutter.net.proto.ForceDragAvatarNotifyOuterClass.ForceDragAvatarNotify.class, emu.grasscutter.net.proto.ForceDragAvatarNotifyOuterClass.ForceDragAvatarNotify.Builder.class);
     }
 
-    public static final int SCENE_TIME_FIELD_NUMBER = 3;
-    private int sceneTime_;
+    public static final int UNK3300_IMFNNPGHKJJ_FIELD_NUMBER = 3;
+    private long unk3300IMFNNPGHKJJ_;
     /**
-     * <code>uint32 scene_time = 3;</code>
-     * @return The sceneTime.
+     * <code>uint64 Unk3300_IMFNNPGHKJJ = 3;</code>
+     * @return The unk3300IMFNNPGHKJJ.
      */
     @java.lang.Override
-    public int getSceneTime() {
-      return sceneTime_;
+    public long getUnk3300IMFNNPGHKJJ() {
+      return unk3300IMFNNPGHKJJ_;
     }
 
-    public static final int DELTA_TIME_MS_FIELD_NUMBER = 1;
-    private long deltaTimeMs_;
-    /**
-     * <code>uint64 delta_time_ms = 1;</code>
-     * @return The deltaTimeMs.
-     */
-    @java.lang.Override
-    public long getDeltaTimeMs() {
-      return deltaTimeMs_;
-    }
-
-    public static final int ENTITY_ID_FIELD_NUMBER = 2;
-    private int entityId_;
-    /**
-     * <code>uint32 entity_id = 2;</code>
-     * @return The entityId.
-     */
-    @java.lang.Override
-    public int getEntityId() {
-      return entityId_;
-    }
-
-    public static final int MOTION_INFO_FIELD_NUMBER = 10;
+    public static final int MOTION_INFO_FIELD_NUMBER = 9;
     private emu.grasscutter.net.proto.MotionInfoOuterClass.MotionInfo motionInfo_;
     /**
-     * <code>.MotionInfo motion_info = 10;</code>
+     * <code>.MotionInfo motion_info = 9;</code>
      * @return Whether the motionInfo field is set.
      */
     @java.lang.Override
@@ -228,7 +210,7 @@ public final class ForceDragAvatarNotifyOuterClass {
       return motionInfo_ != null;
     }
     /**
-     * <code>.MotionInfo motion_info = 10;</code>
+     * <code>.MotionInfo motion_info = 9;</code>
      * @return The motionInfo.
      */
     @java.lang.Override
@@ -236,17 +218,17 @@ public final class ForceDragAvatarNotifyOuterClass {
       return motionInfo_ == null ? emu.grasscutter.net.proto.MotionInfoOuterClass.MotionInfo.getDefaultInstance() : motionInfo_;
     }
     /**
-     * <code>.MotionInfo motion_info = 10;</code>
+     * <code>.MotionInfo motion_info = 9;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.MotionInfoOuterClass.MotionInfoOrBuilder getMotionInfoOrBuilder() {
       return getMotionInfo();
     }
 
-    public static final int IS_FIRST_VALID_FIELD_NUMBER = 8;
+    public static final int IS_FIRST_VALID_FIELD_NUMBER = 7;
     private boolean isFirstValid_;
     /**
-     * <code>bool is_first_valid = 8;</code>
+     * <code>bool is_first_valid = 7;</code>
      * @return The isFirstValid.
      */
     @java.lang.Override
@@ -254,15 +236,37 @@ public final class ForceDragAvatarNotifyOuterClass {
       return isFirstValid_;
     }
 
-    public static final int LAST_MOVE_TIME_MS_FIELD_NUMBER = 12;
-    private long lastMoveTimeMs_;
+    public static final int SCENE_TIME_FIELD_NUMBER = 12;
+    private int sceneTime_;
     /**
-     * <code>uint64 last_move_time_ms = 12;</code>
-     * @return The lastMoveTimeMs.
+     * <code>uint32 scene_time = 12;</code>
+     * @return The sceneTime.
      */
     @java.lang.Override
-    public long getLastMoveTimeMs() {
-      return lastMoveTimeMs_;
+    public int getSceneTime() {
+      return sceneTime_;
+    }
+
+    public static final int ENTITY_ID_FIELD_NUMBER = 10;
+    private int entityId_;
+    /**
+     * <code>uint32 entity_id = 10;</code>
+     * @return The entityId.
+     */
+    @java.lang.Override
+    public int getEntityId() {
+      return entityId_;
+    }
+
+    public static final int UNK3300_AFLCLLFDPBD_FIELD_NUMBER = 5;
+    private long unk3300AFLCLLFDPBD_;
+    /**
+     * <code>uint64 Unk3300_AFLCLLFDPBD = 5;</code>
+     * @return The unk3300AFLCLLFDPBD.
+     */
+    @java.lang.Override
+    public long getUnk3300AFLCLLFDPBD() {
+      return unk3300AFLCLLFDPBD_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -279,23 +283,23 @@ public final class ForceDragAvatarNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (deltaTimeMs_ != 0L) {
-        output.writeUInt64(1, deltaTimeMs_);
+      if (unk3300IMFNNPGHKJJ_ != 0L) {
+        output.writeUInt64(3, unk3300IMFNNPGHKJJ_);
       }
-      if (entityId_ != 0) {
-        output.writeUInt32(2, entityId_);
-      }
-      if (sceneTime_ != 0) {
-        output.writeUInt32(3, sceneTime_);
+      if (unk3300AFLCLLFDPBD_ != 0L) {
+        output.writeUInt64(5, unk3300AFLCLLFDPBD_);
       }
       if (isFirstValid_ != false) {
-        output.writeBool(8, isFirstValid_);
+        output.writeBool(7, isFirstValid_);
       }
       if (motionInfo_ != null) {
-        output.writeMessage(10, getMotionInfo());
+        output.writeMessage(9, getMotionInfo());
       }
-      if (lastMoveTimeMs_ != 0L) {
-        output.writeUInt64(12, lastMoveTimeMs_);
+      if (entityId_ != 0) {
+        output.writeUInt32(10, entityId_);
+      }
+      if (sceneTime_ != 0) {
+        output.writeUInt32(12, sceneTime_);
       }
       unknownFields.writeTo(output);
     }
@@ -306,29 +310,29 @@ public final class ForceDragAvatarNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (deltaTimeMs_ != 0L) {
+      if (unk3300IMFNNPGHKJJ_ != 0L) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt64Size(1, deltaTimeMs_);
+          .computeUInt64Size(3, unk3300IMFNNPGHKJJ_);
       }
-      if (entityId_ != 0) {
+      if (unk3300AFLCLLFDPBD_ != 0L) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, entityId_);
-      }
-      if (sceneTime_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, sceneTime_);
+          .computeUInt64Size(5, unk3300AFLCLLFDPBD_);
       }
       if (isFirstValid_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(8, isFirstValid_);
+          .computeBoolSize(7, isFirstValid_);
       }
       if (motionInfo_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(10, getMotionInfo());
+          .computeMessageSize(9, getMotionInfo());
       }
-      if (lastMoveTimeMs_ != 0L) {
+      if (entityId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt64Size(12, lastMoveTimeMs_);
+          .computeUInt32Size(10, entityId_);
+      }
+      if (sceneTime_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(12, sceneTime_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -345,12 +349,8 @@ public final class ForceDragAvatarNotifyOuterClass {
       }
       emu.grasscutter.net.proto.ForceDragAvatarNotifyOuterClass.ForceDragAvatarNotify other = (emu.grasscutter.net.proto.ForceDragAvatarNotifyOuterClass.ForceDragAvatarNotify) obj;
 
-      if (getSceneTime()
-          != other.getSceneTime()) return false;
-      if (getDeltaTimeMs()
-          != other.getDeltaTimeMs()) return false;
-      if (getEntityId()
-          != other.getEntityId()) return false;
+      if (getUnk3300IMFNNPGHKJJ()
+          != other.getUnk3300IMFNNPGHKJJ()) return false;
       if (hasMotionInfo() != other.hasMotionInfo()) return false;
       if (hasMotionInfo()) {
         if (!getMotionInfo()
@@ -358,8 +358,12 @@ public final class ForceDragAvatarNotifyOuterClass {
       }
       if (getIsFirstValid()
           != other.getIsFirstValid()) return false;
-      if (getLastMoveTimeMs()
-          != other.getLastMoveTimeMs()) return false;
+      if (getSceneTime()
+          != other.getSceneTime()) return false;
+      if (getEntityId()
+          != other.getEntityId()) return false;
+      if (getUnk3300AFLCLLFDPBD()
+          != other.getUnk3300AFLCLLFDPBD()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -371,13 +375,9 @@ public final class ForceDragAvatarNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + SCENE_TIME_FIELD_NUMBER;
-      hash = (53 * hash) + getSceneTime();
-      hash = (37 * hash) + DELTA_TIME_MS_FIELD_NUMBER;
+      hash = (37 * hash) + UNK3300_IMFNNPGHKJJ_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-          getDeltaTimeMs());
-      hash = (37 * hash) + ENTITY_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getEntityId();
+          getUnk3300IMFNNPGHKJJ());
       if (hasMotionInfo()) {
         hash = (37 * hash) + MOTION_INFO_FIELD_NUMBER;
         hash = (53 * hash) + getMotionInfo().hashCode();
@@ -385,9 +385,13 @@ public final class ForceDragAvatarNotifyOuterClass {
       hash = (37 * hash) + IS_FIRST_VALID_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsFirstValid());
-      hash = (37 * hash) + LAST_MOVE_TIME_MS_FIELD_NUMBER;
+      hash = (37 * hash) + SCENE_TIME_FIELD_NUMBER;
+      hash = (53 * hash) + getSceneTime();
+      hash = (37 * hash) + ENTITY_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getEntityId();
+      hash = (37 * hash) + UNK3300_AFLCLLFDPBD_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-          getLastMoveTimeMs());
+          getUnk3300AFLCLLFDPBD());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -485,9 +489,13 @@ public final class ForceDragAvatarNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 3235
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 3008;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code ForceDragAvatarNotify}
@@ -527,11 +535,7 @@ public final class ForceDragAvatarNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        sceneTime_ = 0;
-
-        deltaTimeMs_ = 0L;
-
-        entityId_ = 0;
+        unk3300IMFNNPGHKJJ_ = 0L;
 
         if (motionInfoBuilder_ == null) {
           motionInfo_ = null;
@@ -541,7 +545,11 @@ public final class ForceDragAvatarNotifyOuterClass {
         }
         isFirstValid_ = false;
 
-        lastMoveTimeMs_ = 0L;
+        sceneTime_ = 0;
+
+        entityId_ = 0;
+
+        unk3300AFLCLLFDPBD_ = 0L;
 
         return this;
       }
@@ -569,16 +577,16 @@ public final class ForceDragAvatarNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.ForceDragAvatarNotifyOuterClass.ForceDragAvatarNotify buildPartial() {
         emu.grasscutter.net.proto.ForceDragAvatarNotifyOuterClass.ForceDragAvatarNotify result = new emu.grasscutter.net.proto.ForceDragAvatarNotifyOuterClass.ForceDragAvatarNotify(this);
-        result.sceneTime_ = sceneTime_;
-        result.deltaTimeMs_ = deltaTimeMs_;
-        result.entityId_ = entityId_;
+        result.unk3300IMFNNPGHKJJ_ = unk3300IMFNNPGHKJJ_;
         if (motionInfoBuilder_ == null) {
           result.motionInfo_ = motionInfo_;
         } else {
           result.motionInfo_ = motionInfoBuilder_.build();
         }
         result.isFirstValid_ = isFirstValid_;
-        result.lastMoveTimeMs_ = lastMoveTimeMs_;
+        result.sceneTime_ = sceneTime_;
+        result.entityId_ = entityId_;
+        result.unk3300AFLCLLFDPBD_ = unk3300AFLCLLFDPBD_;
         onBuilt();
         return result;
       }
@@ -627,14 +635,8 @@ public final class ForceDragAvatarNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.ForceDragAvatarNotifyOuterClass.ForceDragAvatarNotify other) {
         if (other == emu.grasscutter.net.proto.ForceDragAvatarNotifyOuterClass.ForceDragAvatarNotify.getDefaultInstance()) return this;
-        if (other.getSceneTime() != 0) {
-          setSceneTime(other.getSceneTime());
-        }
-        if (other.getDeltaTimeMs() != 0L) {
-          setDeltaTimeMs(other.getDeltaTimeMs());
-        }
-        if (other.getEntityId() != 0) {
-          setEntityId(other.getEntityId());
+        if (other.getUnk3300IMFNNPGHKJJ() != 0L) {
+          setUnk3300IMFNNPGHKJJ(other.getUnk3300IMFNNPGHKJJ());
         }
         if (other.hasMotionInfo()) {
           mergeMotionInfo(other.getMotionInfo());
@@ -642,8 +644,14 @@ public final class ForceDragAvatarNotifyOuterClass {
         if (other.getIsFirstValid() != false) {
           setIsFirstValid(other.getIsFirstValid());
         }
-        if (other.getLastMoveTimeMs() != 0L) {
-          setLastMoveTimeMs(other.getLastMoveTimeMs());
+        if (other.getSceneTime() != 0) {
+          setSceneTime(other.getSceneTime());
+        }
+        if (other.getEntityId() != 0) {
+          setEntityId(other.getEntityId());
+        }
+        if (other.getUnk3300AFLCLLFDPBD() != 0L) {
+          setUnk3300AFLCLLFDPBD(other.getUnk3300AFLCLLFDPBD());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -674,95 +682,33 @@ public final class ForceDragAvatarNotifyOuterClass {
         return this;
       }
 
-      private int sceneTime_ ;
+      private long unk3300IMFNNPGHKJJ_ ;
       /**
-       * <code>uint32 scene_time = 3;</code>
-       * @return The sceneTime.
+       * <code>uint64 Unk3300_IMFNNPGHKJJ = 3;</code>
+       * @return The unk3300IMFNNPGHKJJ.
        */
       @java.lang.Override
-      public int getSceneTime() {
-        return sceneTime_;
+      public long getUnk3300IMFNNPGHKJJ() {
+        return unk3300IMFNNPGHKJJ_;
       }
       /**
-       * <code>uint32 scene_time = 3;</code>
-       * @param value The sceneTime to set.
+       * <code>uint64 Unk3300_IMFNNPGHKJJ = 3;</code>
+       * @param value The unk3300IMFNNPGHKJJ to set.
        * @return This builder for chaining.
        */
-      public Builder setSceneTime(int value) {
+      public Builder setUnk3300IMFNNPGHKJJ(long value) {
         
-        sceneTime_ = value;
+        unk3300IMFNNPGHKJJ_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 scene_time = 3;</code>
+       * <code>uint64 Unk3300_IMFNNPGHKJJ = 3;</code>
        * @return This builder for chaining.
        */
-      public Builder clearSceneTime() {
+      public Builder clearUnk3300IMFNNPGHKJJ() {
         
-        sceneTime_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private long deltaTimeMs_ ;
-      /**
-       * <code>uint64 delta_time_ms = 1;</code>
-       * @return The deltaTimeMs.
-       */
-      @java.lang.Override
-      public long getDeltaTimeMs() {
-        return deltaTimeMs_;
-      }
-      /**
-       * <code>uint64 delta_time_ms = 1;</code>
-       * @param value The deltaTimeMs to set.
-       * @return This builder for chaining.
-       */
-      public Builder setDeltaTimeMs(long value) {
-        
-        deltaTimeMs_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint64 delta_time_ms = 1;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearDeltaTimeMs() {
-        
-        deltaTimeMs_ = 0L;
-        onChanged();
-        return this;
-      }
-
-      private int entityId_ ;
-      /**
-       * <code>uint32 entity_id = 2;</code>
-       * @return The entityId.
-       */
-      @java.lang.Override
-      public int getEntityId() {
-        return entityId_;
-      }
-      /**
-       * <code>uint32 entity_id = 2;</code>
-       * @param value The entityId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setEntityId(int value) {
-        
-        entityId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 entity_id = 2;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearEntityId() {
-        
-        entityId_ = 0;
+        unk3300IMFNNPGHKJJ_ = 0L;
         onChanged();
         return this;
       }
@@ -771,14 +717,14 @@ public final class ForceDragAvatarNotifyOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.MotionInfoOuterClass.MotionInfo, emu.grasscutter.net.proto.MotionInfoOuterClass.MotionInfo.Builder, emu.grasscutter.net.proto.MotionInfoOuterClass.MotionInfoOrBuilder> motionInfoBuilder_;
       /**
-       * <code>.MotionInfo motion_info = 10;</code>
+       * <code>.MotionInfo motion_info = 9;</code>
        * @return Whether the motionInfo field is set.
        */
       public boolean hasMotionInfo() {
         return motionInfoBuilder_ != null || motionInfo_ != null;
       }
       /**
-       * <code>.MotionInfo motion_info = 10;</code>
+       * <code>.MotionInfo motion_info = 9;</code>
        * @return The motionInfo.
        */
       public emu.grasscutter.net.proto.MotionInfoOuterClass.MotionInfo getMotionInfo() {
@@ -789,7 +735,7 @@ public final class ForceDragAvatarNotifyOuterClass {
         }
       }
       /**
-       * <code>.MotionInfo motion_info = 10;</code>
+       * <code>.MotionInfo motion_info = 9;</code>
        */
       public Builder setMotionInfo(emu.grasscutter.net.proto.MotionInfoOuterClass.MotionInfo value) {
         if (motionInfoBuilder_ == null) {
@@ -805,7 +751,7 @@ public final class ForceDragAvatarNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.MotionInfo motion_info = 10;</code>
+       * <code>.MotionInfo motion_info = 9;</code>
        */
       public Builder setMotionInfo(
           emu.grasscutter.net.proto.MotionInfoOuterClass.MotionInfo.Builder builderForValue) {
@@ -819,7 +765,7 @@ public final class ForceDragAvatarNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.MotionInfo motion_info = 10;</code>
+       * <code>.MotionInfo motion_info = 9;</code>
        */
       public Builder mergeMotionInfo(emu.grasscutter.net.proto.MotionInfoOuterClass.MotionInfo value) {
         if (motionInfoBuilder_ == null) {
@@ -837,7 +783,7 @@ public final class ForceDragAvatarNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.MotionInfo motion_info = 10;</code>
+       * <code>.MotionInfo motion_info = 9;</code>
        */
       public Builder clearMotionInfo() {
         if (motionInfoBuilder_ == null) {
@@ -851,7 +797,7 @@ public final class ForceDragAvatarNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.MotionInfo motion_info = 10;</code>
+       * <code>.MotionInfo motion_info = 9;</code>
        */
       public emu.grasscutter.net.proto.MotionInfoOuterClass.MotionInfo.Builder getMotionInfoBuilder() {
         
@@ -859,7 +805,7 @@ public final class ForceDragAvatarNotifyOuterClass {
         return getMotionInfoFieldBuilder().getBuilder();
       }
       /**
-       * <code>.MotionInfo motion_info = 10;</code>
+       * <code>.MotionInfo motion_info = 9;</code>
        */
       public emu.grasscutter.net.proto.MotionInfoOuterClass.MotionInfoOrBuilder getMotionInfoOrBuilder() {
         if (motionInfoBuilder_ != null) {
@@ -870,7 +816,7 @@ public final class ForceDragAvatarNotifyOuterClass {
         }
       }
       /**
-       * <code>.MotionInfo motion_info = 10;</code>
+       * <code>.MotionInfo motion_info = 9;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.MotionInfoOuterClass.MotionInfo, emu.grasscutter.net.proto.MotionInfoOuterClass.MotionInfo.Builder, emu.grasscutter.net.proto.MotionInfoOuterClass.MotionInfoOrBuilder> 
@@ -888,7 +834,7 @@ public final class ForceDragAvatarNotifyOuterClass {
 
       private boolean isFirstValid_ ;
       /**
-       * <code>bool is_first_valid = 8;</code>
+       * <code>bool is_first_valid = 7;</code>
        * @return The isFirstValid.
        */
       @java.lang.Override
@@ -896,7 +842,7 @@ public final class ForceDragAvatarNotifyOuterClass {
         return isFirstValid_;
       }
       /**
-       * <code>bool is_first_valid = 8;</code>
+       * <code>bool is_first_valid = 7;</code>
        * @param value The isFirstValid to set.
        * @return This builder for chaining.
        */
@@ -907,7 +853,7 @@ public final class ForceDragAvatarNotifyOuterClass {
         return this;
       }
       /**
-       * <code>bool is_first_valid = 8;</code>
+       * <code>bool is_first_valid = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsFirstValid() {
@@ -917,33 +863,95 @@ public final class ForceDragAvatarNotifyOuterClass {
         return this;
       }
 
-      private long lastMoveTimeMs_ ;
+      private int sceneTime_ ;
       /**
-       * <code>uint64 last_move_time_ms = 12;</code>
-       * @return The lastMoveTimeMs.
+       * <code>uint32 scene_time = 12;</code>
+       * @return The sceneTime.
        */
       @java.lang.Override
-      public long getLastMoveTimeMs() {
-        return lastMoveTimeMs_;
+      public int getSceneTime() {
+        return sceneTime_;
       }
       /**
-       * <code>uint64 last_move_time_ms = 12;</code>
-       * @param value The lastMoveTimeMs to set.
+       * <code>uint32 scene_time = 12;</code>
+       * @param value The sceneTime to set.
        * @return This builder for chaining.
        */
-      public Builder setLastMoveTimeMs(long value) {
+      public Builder setSceneTime(int value) {
         
-        lastMoveTimeMs_ = value;
+        sceneTime_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint64 last_move_time_ms = 12;</code>
+       * <code>uint32 scene_time = 12;</code>
        * @return This builder for chaining.
        */
-      public Builder clearLastMoveTimeMs() {
+      public Builder clearSceneTime() {
         
-        lastMoveTimeMs_ = 0L;
+        sceneTime_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int entityId_ ;
+      /**
+       * <code>uint32 entity_id = 10;</code>
+       * @return The entityId.
+       */
+      @java.lang.Override
+      public int getEntityId() {
+        return entityId_;
+      }
+      /**
+       * <code>uint32 entity_id = 10;</code>
+       * @param value The entityId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setEntityId(int value) {
+        
+        entityId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 entity_id = 10;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearEntityId() {
+        
+        entityId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private long unk3300AFLCLLFDPBD_ ;
+      /**
+       * <code>uint64 Unk3300_AFLCLLFDPBD = 5;</code>
+       * @return The unk3300AFLCLLFDPBD.
+       */
+      @java.lang.Override
+      public long getUnk3300AFLCLLFDPBD() {
+        return unk3300AFLCLLFDPBD_;
+      }
+      /**
+       * <code>uint64 Unk3300_AFLCLLFDPBD = 5;</code>
+       * @param value The unk3300AFLCLLFDPBD to set.
+       * @return This builder for chaining.
+       */
+      public Builder setUnk3300AFLCLLFDPBD(long value) {
+        
+        unk3300AFLCLLFDPBD_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint64 Unk3300_AFLCLLFDPBD = 5;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearUnk3300AFLCLLFDPBD() {
+        
+        unk3300AFLCLLFDPBD_ = 0L;
         onChanged();
         return this;
       }
@@ -1015,12 +1023,12 @@ public final class ForceDragAvatarNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\033ForceDragAvatarNotify.proto\032\020MotionInf" +
-      "o.proto\"\252\001\n\025ForceDragAvatarNotify\022\022\n\nsce" +
-      "ne_time\030\003 \001(\r\022\025\n\rdelta_time_ms\030\001 \001(\004\022\021\n\t" +
-      "entity_id\030\002 \001(\r\022 \n\013motion_info\030\n \001(\0132\013.M" +
-      "otionInfo\022\026\n\016is_first_valid\030\010 \001(\010\022\031\n\021las" +
-      "t_move_time_ms\030\014 \001(\004B\033\n\031emu.grasscutter." +
-      "net.protob\006proto3"
+      "o.proto\"\262\001\n\025ForceDragAvatarNotify\022\033\n\023Unk" +
+      "3300_IMFNNPGHKJJ\030\003 \001(\004\022 \n\013motion_info\030\t " +
+      "\001(\0132\013.MotionInfo\022\026\n\016is_first_valid\030\007 \001(\010" +
+      "\022\022\n\nscene_time\030\014 \001(\r\022\021\n\tentity_id\030\n \001(\r\022" +
+      "\033\n\023Unk3300_AFLCLLFDPBD\030\005 \001(\004B\033\n\031emu.gras" +
+      "scutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -1032,7 +1040,7 @@ public final class ForceDragAvatarNotifyOuterClass {
     internal_static_ForceDragAvatarNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ForceDragAvatarNotify_descriptor,
-        new java.lang.String[] { "SceneTime", "DeltaTimeMs", "EntityId", "MotionInfo", "IsFirstValid", "LastMoveTimeMs", });
+        new java.lang.String[] { "Unk3300IMFNNPGHKJJ", "MotionInfo", "IsFirstValid", "SceneTime", "EntityId", "Unk3300AFLCLLFDPBD", });
     emu.grasscutter.net.proto.MotionInfoOuterClass.getDescriptor();
   }
 

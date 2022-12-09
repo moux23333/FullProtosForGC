@@ -19,28 +19,32 @@ public final class FlightActivityRestartRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 group_id = 11;</code>
+     * <code>int32 retcode = 4;</code>
+     * @return The retcode.
+     */
+    int getRetcode();
+
+    /**
+     * <code>uint32 group_id = 10;</code>
      * @return The groupId.
      */
     int getGroupId();
 
     /**
-     * <code>uint32 schedule_id = 10;</code>
+     * <code>uint32 schedule_id = 11;</code>
      * @return The scheduleId.
      */
     int getScheduleId();
-
-    /**
-     * <code>int32 retcode = 15;</code>
-     * @return The retcode.
-     */
-    int getRetcode();
   }
   /**
    * <pre>
-   * CmdId: 2165
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 2158;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code FlightActivityRestartRsp}
@@ -87,19 +91,19 @@ public final class FlightActivityRestartRspOuterClass {
             case 0:
               done = true;
               break;
-            case 80: {
+            case 32: {
 
-              scheduleId_ = input.readUInt32();
+              retcode_ = input.readInt32();
               break;
             }
-            case 88: {
+            case 80: {
 
               groupId_ = input.readUInt32();
               break;
             }
-            case 120: {
+            case 88: {
 
-              retcode_ = input.readInt32();
+              scheduleId_ = input.readUInt32();
               break;
             }
             default: {
@@ -134,10 +138,21 @@ public final class FlightActivityRestartRspOuterClass {
               emu.grasscutter.net.proto.FlightActivityRestartRspOuterClass.FlightActivityRestartRsp.class, emu.grasscutter.net.proto.FlightActivityRestartRspOuterClass.FlightActivityRestartRsp.Builder.class);
     }
 
-    public static final int GROUP_ID_FIELD_NUMBER = 11;
+    public static final int RETCODE_FIELD_NUMBER = 4;
+    private int retcode_;
+    /**
+     * <code>int32 retcode = 4;</code>
+     * @return The retcode.
+     */
+    @java.lang.Override
+    public int getRetcode() {
+      return retcode_;
+    }
+
+    public static final int GROUP_ID_FIELD_NUMBER = 10;
     private int groupId_;
     /**
-     * <code>uint32 group_id = 11;</code>
+     * <code>uint32 group_id = 10;</code>
      * @return The groupId.
      */
     @java.lang.Override
@@ -145,26 +160,15 @@ public final class FlightActivityRestartRspOuterClass {
       return groupId_;
     }
 
-    public static final int SCHEDULE_ID_FIELD_NUMBER = 10;
+    public static final int SCHEDULE_ID_FIELD_NUMBER = 11;
     private int scheduleId_;
     /**
-     * <code>uint32 schedule_id = 10;</code>
+     * <code>uint32 schedule_id = 11;</code>
      * @return The scheduleId.
      */
     @java.lang.Override
     public int getScheduleId() {
       return scheduleId_;
-    }
-
-    public static final int RETCODE_FIELD_NUMBER = 15;
-    private int retcode_;
-    /**
-     * <code>int32 retcode = 15;</code>
-     * @return The retcode.
-     */
-    @java.lang.Override
-    public int getRetcode() {
-      return retcode_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -181,14 +185,14 @@ public final class FlightActivityRestartRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (scheduleId_ != 0) {
-        output.writeUInt32(10, scheduleId_);
+      if (retcode_ != 0) {
+        output.writeInt32(4, retcode_);
       }
       if (groupId_ != 0) {
-        output.writeUInt32(11, groupId_);
+        output.writeUInt32(10, groupId_);
       }
-      if (retcode_ != 0) {
-        output.writeInt32(15, retcode_);
+      if (scheduleId_ != 0) {
+        output.writeUInt32(11, scheduleId_);
       }
       unknownFields.writeTo(output);
     }
@@ -199,17 +203,17 @@ public final class FlightActivityRestartRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (scheduleId_ != 0) {
+      if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, scheduleId_);
+          .computeInt32Size(4, retcode_);
       }
       if (groupId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, groupId_);
+          .computeUInt32Size(10, groupId_);
       }
-      if (retcode_ != 0) {
+      if (scheduleId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(15, retcode_);
+          .computeUInt32Size(11, scheduleId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -226,12 +230,12 @@ public final class FlightActivityRestartRspOuterClass {
       }
       emu.grasscutter.net.proto.FlightActivityRestartRspOuterClass.FlightActivityRestartRsp other = (emu.grasscutter.net.proto.FlightActivityRestartRspOuterClass.FlightActivityRestartRsp) obj;
 
+      if (getRetcode()
+          != other.getRetcode()) return false;
       if (getGroupId()
           != other.getGroupId()) return false;
       if (getScheduleId()
           != other.getScheduleId()) return false;
-      if (getRetcode()
-          != other.getRetcode()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -243,12 +247,12 @@ public final class FlightActivityRestartRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
+      hash = (53 * hash) + getRetcode();
       hash = (37 * hash) + GROUP_ID_FIELD_NUMBER;
       hash = (53 * hash) + getGroupId();
       hash = (37 * hash) + SCHEDULE_ID_FIELD_NUMBER;
       hash = (53 * hash) + getScheduleId();
-      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
-      hash = (53 * hash) + getRetcode();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -346,9 +350,13 @@ public final class FlightActivityRestartRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 2165
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 2158;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code FlightActivityRestartRsp}
@@ -388,11 +396,11 @@ public final class FlightActivityRestartRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        retcode_ = 0;
+
         groupId_ = 0;
 
         scheduleId_ = 0;
-
-        retcode_ = 0;
 
         return this;
       }
@@ -420,9 +428,9 @@ public final class FlightActivityRestartRspOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.FlightActivityRestartRspOuterClass.FlightActivityRestartRsp buildPartial() {
         emu.grasscutter.net.proto.FlightActivityRestartRspOuterClass.FlightActivityRestartRsp result = new emu.grasscutter.net.proto.FlightActivityRestartRspOuterClass.FlightActivityRestartRsp(this);
+        result.retcode_ = retcode_;
         result.groupId_ = groupId_;
         result.scheduleId_ = scheduleId_;
-        result.retcode_ = retcode_;
         onBuilt();
         return result;
       }
@@ -471,14 +479,14 @@ public final class FlightActivityRestartRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.FlightActivityRestartRspOuterClass.FlightActivityRestartRsp other) {
         if (other == emu.grasscutter.net.proto.FlightActivityRestartRspOuterClass.FlightActivityRestartRsp.getDefaultInstance()) return this;
+        if (other.getRetcode() != 0) {
+          setRetcode(other.getRetcode());
+        }
         if (other.getGroupId() != 0) {
           setGroupId(other.getGroupId());
         }
         if (other.getScheduleId() != 0) {
           setScheduleId(other.getScheduleId());
-        }
-        if (other.getRetcode() != 0) {
-          setRetcode(other.getRetcode());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -509,9 +517,40 @@ public final class FlightActivityRestartRspOuterClass {
         return this;
       }
 
+      private int retcode_ ;
+      /**
+       * <code>int32 retcode = 4;</code>
+       * @return The retcode.
+       */
+      @java.lang.Override
+      public int getRetcode() {
+        return retcode_;
+      }
+      /**
+       * <code>int32 retcode = 4;</code>
+       * @param value The retcode to set.
+       * @return This builder for chaining.
+       */
+      public Builder setRetcode(int value) {
+        
+        retcode_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 retcode = 4;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearRetcode() {
+        
+        retcode_ = 0;
+        onChanged();
+        return this;
+      }
+
       private int groupId_ ;
       /**
-       * <code>uint32 group_id = 11;</code>
+       * <code>uint32 group_id = 10;</code>
        * @return The groupId.
        */
       @java.lang.Override
@@ -519,7 +558,7 @@ public final class FlightActivityRestartRspOuterClass {
         return groupId_;
       }
       /**
-       * <code>uint32 group_id = 11;</code>
+       * <code>uint32 group_id = 10;</code>
        * @param value The groupId to set.
        * @return This builder for chaining.
        */
@@ -530,7 +569,7 @@ public final class FlightActivityRestartRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 group_id = 11;</code>
+       * <code>uint32 group_id = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearGroupId() {
@@ -542,7 +581,7 @@ public final class FlightActivityRestartRspOuterClass {
 
       private int scheduleId_ ;
       /**
-       * <code>uint32 schedule_id = 10;</code>
+       * <code>uint32 schedule_id = 11;</code>
        * @return The scheduleId.
        */
       @java.lang.Override
@@ -550,7 +589,7 @@ public final class FlightActivityRestartRspOuterClass {
         return scheduleId_;
       }
       /**
-       * <code>uint32 schedule_id = 10;</code>
+       * <code>uint32 schedule_id = 11;</code>
        * @param value The scheduleId to set.
        * @return This builder for chaining.
        */
@@ -561,43 +600,12 @@ public final class FlightActivityRestartRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 schedule_id = 10;</code>
+       * <code>uint32 schedule_id = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearScheduleId() {
         
         scheduleId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int retcode_ ;
-      /**
-       * <code>int32 retcode = 15;</code>
-       * @return The retcode.
-       */
-      @java.lang.Override
-      public int getRetcode() {
-        return retcode_;
-      }
-      /**
-       * <code>int32 retcode = 15;</code>
-       * @param value The retcode to set.
-       * @return This builder for chaining.
-       */
-      public Builder setRetcode(int value) {
-        
-        retcode_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>int32 retcode = 15;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearRetcode() {
-        
-        retcode_ = 0;
         onChanged();
         return this;
       }
@@ -669,8 +677,8 @@ public final class FlightActivityRestartRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\036FlightActivityRestartRsp.proto\"R\n\030Flig" +
-      "htActivityRestartRsp\022\020\n\010group_id\030\013 \001(\r\022\023" +
-      "\n\013schedule_id\030\n \001(\r\022\017\n\007retcode\030\017 \001(\005B\033\n\031" +
+      "htActivityRestartRsp\022\017\n\007retcode\030\004 \001(\005\022\020\n" +
+      "\010group_id\030\n \001(\r\022\023\n\013schedule_id\030\013 \001(\rB\033\n\031" +
       "emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -682,7 +690,7 @@ public final class FlightActivityRestartRspOuterClass {
     internal_static_FlightActivityRestartRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_FlightActivityRestartRsp_descriptor,
-        new java.lang.String[] { "GroupId", "ScheduleId", "Retcode", });
+        new java.lang.String[] { "Retcode", "GroupId", "ScheduleId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

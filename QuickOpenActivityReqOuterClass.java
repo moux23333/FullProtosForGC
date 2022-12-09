@@ -19,17 +19,21 @@ public final class QuickOpenActivityReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 activity_id = 1;</code>
+     * <code>uint32 activity_id = 8;</code>
      * @return The activityId.
      */
     int getActivityId();
   }
   /**
    * <pre>
-   * CmdId: 8178
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 8302;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code QuickOpenActivityReq}
@@ -76,7 +80,7 @@ public final class QuickOpenActivityReqOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
+            case 64: {
 
               activityId_ = input.readUInt32();
               break;
@@ -113,10 +117,10 @@ public final class QuickOpenActivityReqOuterClass {
               emu.grasscutter.net.proto.QuickOpenActivityReqOuterClass.QuickOpenActivityReq.class, emu.grasscutter.net.proto.QuickOpenActivityReqOuterClass.QuickOpenActivityReq.Builder.class);
     }
 
-    public static final int ACTIVITY_ID_FIELD_NUMBER = 1;
+    public static final int ACTIVITY_ID_FIELD_NUMBER = 8;
     private int activityId_;
     /**
-     * <code>uint32 activity_id = 1;</code>
+     * <code>uint32 activity_id = 8;</code>
      * @return The activityId.
      */
     @java.lang.Override
@@ -139,7 +143,7 @@ public final class QuickOpenActivityReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (activityId_ != 0) {
-        output.writeUInt32(1, activityId_);
+        output.writeUInt32(8, activityId_);
       }
       unknownFields.writeTo(output);
     }
@@ -152,7 +156,7 @@ public final class QuickOpenActivityReqOuterClass {
       size = 0;
       if (activityId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, activityId_);
+          .computeUInt32Size(8, activityId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -281,10 +285,14 @@ public final class QuickOpenActivityReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 8178
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 8302;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code QuickOpenActivityReq}
@@ -435,7 +443,7 @@ public final class QuickOpenActivityReqOuterClass {
 
       private int activityId_ ;
       /**
-       * <code>uint32 activity_id = 1;</code>
+       * <code>uint32 activity_id = 8;</code>
        * @return The activityId.
        */
       @java.lang.Override
@@ -443,7 +451,7 @@ public final class QuickOpenActivityReqOuterClass {
         return activityId_;
       }
       /**
-       * <code>uint32 activity_id = 1;</code>
+       * <code>uint32 activity_id = 8;</code>
        * @param value The activityId to set.
        * @return This builder for chaining.
        */
@@ -454,7 +462,7 @@ public final class QuickOpenActivityReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 activity_id = 1;</code>
+       * <code>uint32 activity_id = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearActivityId() {
@@ -531,7 +539,7 @@ public final class QuickOpenActivityReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\032QuickOpenActivityReq.proto\"+\n\024QuickOpe" +
-      "nActivityReq\022\023\n\013activity_id\030\001 \001(\rB\033\n\031emu" +
+      "nActivityReq\022\023\n\013activity_id\030\010 \001(\rB\033\n\031emu" +
       ".grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

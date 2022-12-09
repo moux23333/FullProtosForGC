@@ -19,39 +19,22 @@ public final class ScenePlayBattleInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 mode = 4;</code>
-     * @return The mode.
-     */
-    int getMode();
-
-    /**
-     * <code>repeated uint32 progress_stage_list = 3;</code>
-     * @return A list containing the progressStageList.
-     */
-    java.util.List<java.lang.Integer> getProgressStageListList();
-    /**
-     * <code>repeated uint32 progress_stage_list = 3;</code>
-     * @return The count of progressStageList.
-     */
-    int getProgressStageListCount();
-    /**
-     * <code>repeated uint32 progress_stage_list = 3;</code>
-     * @param index The index of the element to return.
-     * @return The progressStageList at the given index.
-     */
-    int getProgressStageList(int index);
-
-    /**
-     * <code>uint32 start_time = 10;</code>
-     * @return The startTime.
-     */
-    int getStartTime();
-
-    /**
      * <code>uint32 duration = 14;</code>
      * @return The duration.
      */
     int getDuration();
+
+    /**
+     * <code>uint32 progress = 5;</code>
+     * @return The progress.
+     */
+    int getProgress();
+
+    /**
+     * <code>uint32 prepare_end_time = 1;</code>
+     * @return The prepareEndTime.
+     */
+    int getPrepareEndTime();
 
     /**
      * <code>uint32 play_type = 12;</code>
@@ -60,34 +43,51 @@ public final class ScenePlayBattleInfoOuterClass {
     int getPlayType();
 
     /**
-     * <code>uint32 play_id = 1;</code>
-     * @return The playId.
+     * <code>repeated uint32 progress_stage_list = 13;</code>
+     * @return A list containing the progressStageList.
      */
-    int getPlayId();
+    java.util.List<java.lang.Integer> getProgressStageListList();
+    /**
+     * <code>repeated uint32 progress_stage_list = 13;</code>
+     * @return The count of progressStageList.
+     */
+    int getProgressStageListCount();
+    /**
+     * <code>repeated uint32 progress_stage_list = 13;</code>
+     * @param index The index of the element to return.
+     * @return The progressStageList at the given index.
+     */
+    int getProgressStageList(int index);
 
     /**
-     * <code>uint32 prepare_end_time = 7;</code>
-     * @return The prepareEndTime.
-     */
-    int getPrepareEndTime();
-
-    /**
-     * <code>uint32 progress = 11;</code>
-     * @return The progress.
-     */
-    int getProgress();
-
-    /**
-     * <code>uint32 state = 8;</code>
+     * <code>uint32 state = 7;</code>
      * @return The state.
      */
     int getState();
 
     /**
-     * <code>uint32 type = 9;</code>
+     * <code>uint32 mode = 6;</code>
+     * @return The mode.
+     */
+    int getMode();
+
+    /**
+     * <code>uint32 type = 10;</code>
      * @return The type.
      */
     int getType();
+
+    /**
+     * <code>uint32 play_id = 11;</code>
+     * @return The playId.
+     */
+    int getPlayId();
+
+    /**
+     * <code>uint32 start_time = 8;</code>
+     * @return The startTime.
+     */
+    int getStartTime();
   }
   /**
    * Protobuf type {@code ScenePlayBattleInfo}
@@ -138,10 +138,45 @@ public final class ScenePlayBattleInfoOuterClass {
               break;
             case 8: {
 
+              prepareEndTime_ = input.readUInt32();
+              break;
+            }
+            case 40: {
+
+              progress_ = input.readUInt32();
+              break;
+            }
+            case 48: {
+
+              mode_ = input.readUInt32();
+              break;
+            }
+            case 56: {
+
+              state_ = input.readUInt32();
+              break;
+            }
+            case 64: {
+
+              startTime_ = input.readUInt32();
+              break;
+            }
+            case 80: {
+
+              type_ = input.readUInt32();
+              break;
+            }
+            case 88: {
+
               playId_ = input.readUInt32();
               break;
             }
-            case 24: {
+            case 96: {
+
+              playType_ = input.readUInt32();
+              break;
+            }
+            case 104: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 progressStageList_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
@@ -149,7 +184,7 @@ public final class ScenePlayBattleInfoOuterClass {
               progressStageList_.addInt(input.readUInt32());
               break;
             }
-            case 26: {
+            case 106: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -160,41 +195,6 @@ public final class ScenePlayBattleInfoOuterClass {
                 progressStageList_.addInt(input.readUInt32());
               }
               input.popLimit(limit);
-              break;
-            }
-            case 32: {
-
-              mode_ = input.readUInt32();
-              break;
-            }
-            case 56: {
-
-              prepareEndTime_ = input.readUInt32();
-              break;
-            }
-            case 64: {
-
-              state_ = input.readUInt32();
-              break;
-            }
-            case 72: {
-
-              type_ = input.readUInt32();
-              break;
-            }
-            case 80: {
-
-              startTime_ = input.readUInt32();
-              break;
-            }
-            case 88: {
-
-              progress_ = input.readUInt32();
-              break;
-            }
-            case 96: {
-
-              playType_ = input.readUInt32();
               break;
             }
             case 112: {
@@ -237,56 +237,6 @@ public final class ScenePlayBattleInfoOuterClass {
               emu.grasscutter.net.proto.ScenePlayBattleInfoOuterClass.ScenePlayBattleInfo.class, emu.grasscutter.net.proto.ScenePlayBattleInfoOuterClass.ScenePlayBattleInfo.Builder.class);
     }
 
-    public static final int MODE_FIELD_NUMBER = 4;
-    private int mode_;
-    /**
-     * <code>uint32 mode = 4;</code>
-     * @return The mode.
-     */
-    @java.lang.Override
-    public int getMode() {
-      return mode_;
-    }
-
-    public static final int PROGRESS_STAGE_LIST_FIELD_NUMBER = 3;
-    private com.google.protobuf.Internal.IntList progressStageList_;
-    /**
-     * <code>repeated uint32 progress_stage_list = 3;</code>
-     * @return A list containing the progressStageList.
-     */
-    @java.lang.Override
-    public java.util.List<java.lang.Integer>
-        getProgressStageListList() {
-      return progressStageList_;
-    }
-    /**
-     * <code>repeated uint32 progress_stage_list = 3;</code>
-     * @return The count of progressStageList.
-     */
-    public int getProgressStageListCount() {
-      return progressStageList_.size();
-    }
-    /**
-     * <code>repeated uint32 progress_stage_list = 3;</code>
-     * @param index The index of the element to return.
-     * @return The progressStageList at the given index.
-     */
-    public int getProgressStageList(int index) {
-      return progressStageList_.getInt(index);
-    }
-    private int progressStageListMemoizedSerializedSize = -1;
-
-    public static final int START_TIME_FIELD_NUMBER = 10;
-    private int startTime_;
-    /**
-     * <code>uint32 start_time = 10;</code>
-     * @return The startTime.
-     */
-    @java.lang.Override
-    public int getStartTime() {
-      return startTime_;
-    }
-
     public static final int DURATION_FIELD_NUMBER = 14;
     private int duration_;
     /**
@@ -296,6 +246,28 @@ public final class ScenePlayBattleInfoOuterClass {
     @java.lang.Override
     public int getDuration() {
       return duration_;
+    }
+
+    public static final int PROGRESS_FIELD_NUMBER = 5;
+    private int progress_;
+    /**
+     * <code>uint32 progress = 5;</code>
+     * @return The progress.
+     */
+    @java.lang.Override
+    public int getProgress() {
+      return progress_;
+    }
+
+    public static final int PREPARE_END_TIME_FIELD_NUMBER = 1;
+    private int prepareEndTime_;
+    /**
+     * <code>uint32 prepare_end_time = 1;</code>
+     * @return The prepareEndTime.
+     */
+    @java.lang.Override
+    public int getPrepareEndTime() {
+      return prepareEndTime_;
     }
 
     public static final int PLAY_TYPE_FIELD_NUMBER = 12;
@@ -309,43 +281,38 @@ public final class ScenePlayBattleInfoOuterClass {
       return playType_;
     }
 
-    public static final int PLAY_ID_FIELD_NUMBER = 1;
-    private int playId_;
+    public static final int PROGRESS_STAGE_LIST_FIELD_NUMBER = 13;
+    private com.google.protobuf.Internal.IntList progressStageList_;
     /**
-     * <code>uint32 play_id = 1;</code>
-     * @return The playId.
+     * <code>repeated uint32 progress_stage_list = 13;</code>
+     * @return A list containing the progressStageList.
      */
     @java.lang.Override
-    public int getPlayId() {
-      return playId_;
+    public java.util.List<java.lang.Integer>
+        getProgressStageListList() {
+      return progressStageList_;
     }
-
-    public static final int PREPARE_END_TIME_FIELD_NUMBER = 7;
-    private int prepareEndTime_;
     /**
-     * <code>uint32 prepare_end_time = 7;</code>
-     * @return The prepareEndTime.
+     * <code>repeated uint32 progress_stage_list = 13;</code>
+     * @return The count of progressStageList.
      */
-    @java.lang.Override
-    public int getPrepareEndTime() {
-      return prepareEndTime_;
+    public int getProgressStageListCount() {
+      return progressStageList_.size();
     }
-
-    public static final int PROGRESS_FIELD_NUMBER = 11;
-    private int progress_;
     /**
-     * <code>uint32 progress = 11;</code>
-     * @return The progress.
+     * <code>repeated uint32 progress_stage_list = 13;</code>
+     * @param index The index of the element to return.
+     * @return The progressStageList at the given index.
      */
-    @java.lang.Override
-    public int getProgress() {
-      return progress_;
+    public int getProgressStageList(int index) {
+      return progressStageList_.getInt(index);
     }
+    private int progressStageListMemoizedSerializedSize = -1;
 
-    public static final int STATE_FIELD_NUMBER = 8;
+    public static final int STATE_FIELD_NUMBER = 7;
     private int state_;
     /**
-     * <code>uint32 state = 8;</code>
+     * <code>uint32 state = 7;</code>
      * @return The state.
      */
     @java.lang.Override
@@ -353,15 +320,48 @@ public final class ScenePlayBattleInfoOuterClass {
       return state_;
     }
 
-    public static final int TYPE_FIELD_NUMBER = 9;
+    public static final int MODE_FIELD_NUMBER = 6;
+    private int mode_;
+    /**
+     * <code>uint32 mode = 6;</code>
+     * @return The mode.
+     */
+    @java.lang.Override
+    public int getMode() {
+      return mode_;
+    }
+
+    public static final int TYPE_FIELD_NUMBER = 10;
     private int type_;
     /**
-     * <code>uint32 type = 9;</code>
+     * <code>uint32 type = 10;</code>
      * @return The type.
      */
     @java.lang.Override
     public int getType() {
       return type_;
+    }
+
+    public static final int PLAY_ID_FIELD_NUMBER = 11;
+    private int playId_;
+    /**
+     * <code>uint32 play_id = 11;</code>
+     * @return The playId.
+     */
+    @java.lang.Override
+    public int getPlayId() {
+      return playId_;
+    }
+
+    public static final int START_TIME_FIELD_NUMBER = 8;
+    private int startTime_;
+    /**
+     * <code>uint32 start_time = 8;</code>
+     * @return The startTime.
+     */
+    @java.lang.Override
+    public int getStartTime() {
+      return startTime_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -379,36 +379,36 @@ public final class ScenePlayBattleInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
+      if (prepareEndTime_ != 0) {
+        output.writeUInt32(1, prepareEndTime_);
+      }
+      if (progress_ != 0) {
+        output.writeUInt32(5, progress_);
+      }
+      if (mode_ != 0) {
+        output.writeUInt32(6, mode_);
+      }
+      if (state_ != 0) {
+        output.writeUInt32(7, state_);
+      }
+      if (startTime_ != 0) {
+        output.writeUInt32(8, startTime_);
+      }
+      if (type_ != 0) {
+        output.writeUInt32(10, type_);
+      }
       if (playId_ != 0) {
-        output.writeUInt32(1, playId_);
+        output.writeUInt32(11, playId_);
+      }
+      if (playType_ != 0) {
+        output.writeUInt32(12, playType_);
       }
       if (getProgressStageListList().size() > 0) {
-        output.writeUInt32NoTag(26);
+        output.writeUInt32NoTag(106);
         output.writeUInt32NoTag(progressStageListMemoizedSerializedSize);
       }
       for (int i = 0; i < progressStageList_.size(); i++) {
         output.writeUInt32NoTag(progressStageList_.getInt(i));
-      }
-      if (mode_ != 0) {
-        output.writeUInt32(4, mode_);
-      }
-      if (prepareEndTime_ != 0) {
-        output.writeUInt32(7, prepareEndTime_);
-      }
-      if (state_ != 0) {
-        output.writeUInt32(8, state_);
-      }
-      if (type_ != 0) {
-        output.writeUInt32(9, type_);
-      }
-      if (startTime_ != 0) {
-        output.writeUInt32(10, startTime_);
-      }
-      if (progress_ != 0) {
-        output.writeUInt32(11, progress_);
-      }
-      if (playType_ != 0) {
-        output.writeUInt32(12, playType_);
       }
       if (duration_ != 0) {
         output.writeUInt32(14, duration_);
@@ -422,9 +422,37 @@ public final class ScenePlayBattleInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (prepareEndTime_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(1, prepareEndTime_);
+      }
+      if (progress_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(5, progress_);
+      }
+      if (mode_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(6, mode_);
+      }
+      if (state_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(7, state_);
+      }
+      if (startTime_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(8, startTime_);
+      }
+      if (type_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(10, type_);
+      }
       if (playId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, playId_);
+          .computeUInt32Size(11, playId_);
+      }
+      if (playType_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(12, playType_);
       }
       {
         int dataSize = 0;
@@ -439,34 +467,6 @@ public final class ScenePlayBattleInfoOuterClass {
               .computeInt32SizeNoTag(dataSize);
         }
         progressStageListMemoizedSerializedSize = dataSize;
-      }
-      if (mode_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, mode_);
-      }
-      if (prepareEndTime_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, prepareEndTime_);
-      }
-      if (state_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, state_);
-      }
-      if (type_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, type_);
-      }
-      if (startTime_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, startTime_);
-      }
-      if (progress_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, progress_);
-      }
-      if (playType_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, playType_);
       }
       if (duration_ != 0) {
         size += com.google.protobuf.CodedOutputStream
@@ -487,26 +487,26 @@ public final class ScenePlayBattleInfoOuterClass {
       }
       emu.grasscutter.net.proto.ScenePlayBattleInfoOuterClass.ScenePlayBattleInfo other = (emu.grasscutter.net.proto.ScenePlayBattleInfoOuterClass.ScenePlayBattleInfo) obj;
 
-      if (getMode()
-          != other.getMode()) return false;
-      if (!getProgressStageListList()
-          .equals(other.getProgressStageListList())) return false;
-      if (getStartTime()
-          != other.getStartTime()) return false;
       if (getDuration()
           != other.getDuration()) return false;
-      if (getPlayType()
-          != other.getPlayType()) return false;
-      if (getPlayId()
-          != other.getPlayId()) return false;
-      if (getPrepareEndTime()
-          != other.getPrepareEndTime()) return false;
       if (getProgress()
           != other.getProgress()) return false;
+      if (getPrepareEndTime()
+          != other.getPrepareEndTime()) return false;
+      if (getPlayType()
+          != other.getPlayType()) return false;
+      if (!getProgressStageListList()
+          .equals(other.getProgressStageListList())) return false;
       if (getState()
           != other.getState()) return false;
+      if (getMode()
+          != other.getMode()) return false;
       if (getType()
           != other.getType()) return false;
+      if (getPlayId()
+          != other.getPlayId()) return false;
+      if (getStartTime()
+          != other.getStartTime()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -518,28 +518,28 @@ public final class ScenePlayBattleInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + MODE_FIELD_NUMBER;
-      hash = (53 * hash) + getMode();
+      hash = (37 * hash) + DURATION_FIELD_NUMBER;
+      hash = (53 * hash) + getDuration();
+      hash = (37 * hash) + PROGRESS_FIELD_NUMBER;
+      hash = (53 * hash) + getProgress();
+      hash = (37 * hash) + PREPARE_END_TIME_FIELD_NUMBER;
+      hash = (53 * hash) + getPrepareEndTime();
+      hash = (37 * hash) + PLAY_TYPE_FIELD_NUMBER;
+      hash = (53 * hash) + getPlayType();
       if (getProgressStageListCount() > 0) {
         hash = (37 * hash) + PROGRESS_STAGE_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getProgressStageListList().hashCode();
       }
-      hash = (37 * hash) + START_TIME_FIELD_NUMBER;
-      hash = (53 * hash) + getStartTime();
-      hash = (37 * hash) + DURATION_FIELD_NUMBER;
-      hash = (53 * hash) + getDuration();
-      hash = (37 * hash) + PLAY_TYPE_FIELD_NUMBER;
-      hash = (53 * hash) + getPlayType();
-      hash = (37 * hash) + PLAY_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getPlayId();
-      hash = (37 * hash) + PREPARE_END_TIME_FIELD_NUMBER;
-      hash = (53 * hash) + getPrepareEndTime();
-      hash = (37 * hash) + PROGRESS_FIELD_NUMBER;
-      hash = (53 * hash) + getProgress();
       hash = (37 * hash) + STATE_FIELD_NUMBER;
       hash = (53 * hash) + getState();
+      hash = (37 * hash) + MODE_FIELD_NUMBER;
+      hash = (53 * hash) + getMode();
       hash = (37 * hash) + TYPE_FIELD_NUMBER;
       hash = (53 * hash) + getType();
+      hash = (37 * hash) + PLAY_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getPlayId();
+      hash = (37 * hash) + START_TIME_FIELD_NUMBER;
+      hash = (53 * hash) + getStartTime();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -673,25 +673,25 @@ public final class ScenePlayBattleInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        mode_ = 0;
-
-        progressStageList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000001);
-        startTime_ = 0;
-
         duration_ = 0;
-
-        playType_ = 0;
-
-        playId_ = 0;
-
-        prepareEndTime_ = 0;
 
         progress_ = 0;
 
+        prepareEndTime_ = 0;
+
+        playType_ = 0;
+
+        progressStageList_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000001);
         state_ = 0;
 
+        mode_ = 0;
+
         type_ = 0;
+
+        playId_ = 0;
+
+        startTime_ = 0;
 
         return this;
       }
@@ -720,20 +720,20 @@ public final class ScenePlayBattleInfoOuterClass {
       public emu.grasscutter.net.proto.ScenePlayBattleInfoOuterClass.ScenePlayBattleInfo buildPartial() {
         emu.grasscutter.net.proto.ScenePlayBattleInfoOuterClass.ScenePlayBattleInfo result = new emu.grasscutter.net.proto.ScenePlayBattleInfoOuterClass.ScenePlayBattleInfo(this);
         int from_bitField0_ = bitField0_;
-        result.mode_ = mode_;
+        result.duration_ = duration_;
+        result.progress_ = progress_;
+        result.prepareEndTime_ = prepareEndTime_;
+        result.playType_ = playType_;
         if (((bitField0_ & 0x00000001) != 0)) {
           progressStageList_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000001);
         }
         result.progressStageList_ = progressStageList_;
-        result.startTime_ = startTime_;
-        result.duration_ = duration_;
-        result.playType_ = playType_;
-        result.playId_ = playId_;
-        result.prepareEndTime_ = prepareEndTime_;
-        result.progress_ = progress_;
         result.state_ = state_;
+        result.mode_ = mode_;
         result.type_ = type_;
+        result.playId_ = playId_;
+        result.startTime_ = startTime_;
         onBuilt();
         return result;
       }
@@ -782,8 +782,17 @@ public final class ScenePlayBattleInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.ScenePlayBattleInfoOuterClass.ScenePlayBattleInfo other) {
         if (other == emu.grasscutter.net.proto.ScenePlayBattleInfoOuterClass.ScenePlayBattleInfo.getDefaultInstance()) return this;
-        if (other.getMode() != 0) {
-          setMode(other.getMode());
+        if (other.getDuration() != 0) {
+          setDuration(other.getDuration());
+        }
+        if (other.getProgress() != 0) {
+          setProgress(other.getProgress());
+        }
+        if (other.getPrepareEndTime() != 0) {
+          setPrepareEndTime(other.getPrepareEndTime());
+        }
+        if (other.getPlayType() != 0) {
+          setPlayType(other.getPlayType());
         }
         if (!other.progressStageList_.isEmpty()) {
           if (progressStageList_.isEmpty()) {
@@ -795,29 +804,20 @@ public final class ScenePlayBattleInfoOuterClass {
           }
           onChanged();
         }
-        if (other.getStartTime() != 0) {
-          setStartTime(other.getStartTime());
+        if (other.getState() != 0) {
+          setState(other.getState());
         }
-        if (other.getDuration() != 0) {
-          setDuration(other.getDuration());
+        if (other.getMode() != 0) {
+          setMode(other.getMode());
         }
-        if (other.getPlayType() != 0) {
-          setPlayType(other.getPlayType());
+        if (other.getType() != 0) {
+          setType(other.getType());
         }
         if (other.getPlayId() != 0) {
           setPlayId(other.getPlayId());
         }
-        if (other.getPrepareEndTime() != 0) {
-          setPrepareEndTime(other.getPrepareEndTime());
-        }
-        if (other.getProgress() != 0) {
-          setProgress(other.getProgress());
-        }
-        if (other.getState() != 0) {
-          setState(other.getState());
-        }
-        if (other.getType() != 0) {
-          setType(other.getType());
+        if (other.getStartTime() != 0) {
+          setStartTime(other.getStartTime());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -849,147 +849,6 @@ public final class ScenePlayBattleInfoOuterClass {
       }
       private int bitField0_;
 
-      private int mode_ ;
-      /**
-       * <code>uint32 mode = 4;</code>
-       * @return The mode.
-       */
-      @java.lang.Override
-      public int getMode() {
-        return mode_;
-      }
-      /**
-       * <code>uint32 mode = 4;</code>
-       * @param value The mode to set.
-       * @return This builder for chaining.
-       */
-      public Builder setMode(int value) {
-        
-        mode_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 mode = 4;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearMode() {
-        
-        mode_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private com.google.protobuf.Internal.IntList progressStageList_ = emptyIntList();
-      private void ensureProgressStageListIsMutable() {
-        if (!((bitField0_ & 0x00000001) != 0)) {
-          progressStageList_ = mutableCopy(progressStageList_);
-          bitField0_ |= 0x00000001;
-         }
-      }
-      /**
-       * <code>repeated uint32 progress_stage_list = 3;</code>
-       * @return A list containing the progressStageList.
-       */
-      public java.util.List<java.lang.Integer>
-          getProgressStageListList() {
-        return ((bitField0_ & 0x00000001) != 0) ?
-                 java.util.Collections.unmodifiableList(progressStageList_) : progressStageList_;
-      }
-      /**
-       * <code>repeated uint32 progress_stage_list = 3;</code>
-       * @return The count of progressStageList.
-       */
-      public int getProgressStageListCount() {
-        return progressStageList_.size();
-      }
-      /**
-       * <code>repeated uint32 progress_stage_list = 3;</code>
-       * @param index The index of the element to return.
-       * @return The progressStageList at the given index.
-       */
-      public int getProgressStageList(int index) {
-        return progressStageList_.getInt(index);
-      }
-      /**
-       * <code>repeated uint32 progress_stage_list = 3;</code>
-       * @param index The index to set the value at.
-       * @param value The progressStageList to set.
-       * @return This builder for chaining.
-       */
-      public Builder setProgressStageList(
-          int index, int value) {
-        ensureProgressStageListIsMutable();
-        progressStageList_.setInt(index, value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 progress_stage_list = 3;</code>
-       * @param value The progressStageList to add.
-       * @return This builder for chaining.
-       */
-      public Builder addProgressStageList(int value) {
-        ensureProgressStageListIsMutable();
-        progressStageList_.addInt(value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 progress_stage_list = 3;</code>
-       * @param values The progressStageList to add.
-       * @return This builder for chaining.
-       */
-      public Builder addAllProgressStageList(
-          java.lang.Iterable<? extends java.lang.Integer> values) {
-        ensureProgressStageListIsMutable();
-        com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, progressStageList_);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 progress_stage_list = 3;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearProgressStageList() {
-        progressStageList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000001);
-        onChanged();
-        return this;
-      }
-
-      private int startTime_ ;
-      /**
-       * <code>uint32 start_time = 10;</code>
-       * @return The startTime.
-       */
-      @java.lang.Override
-      public int getStartTime() {
-        return startTime_;
-      }
-      /**
-       * <code>uint32 start_time = 10;</code>
-       * @param value The startTime to set.
-       * @return This builder for chaining.
-       */
-      public Builder setStartTime(int value) {
-        
-        startTime_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 start_time = 10;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearStartTime() {
-        
-        startTime_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int duration_ ;
       /**
        * <code>uint32 duration = 14;</code>
@@ -1017,6 +876,68 @@ public final class ScenePlayBattleInfoOuterClass {
       public Builder clearDuration() {
         
         duration_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int progress_ ;
+      /**
+       * <code>uint32 progress = 5;</code>
+       * @return The progress.
+       */
+      @java.lang.Override
+      public int getProgress() {
+        return progress_;
+      }
+      /**
+       * <code>uint32 progress = 5;</code>
+       * @param value The progress to set.
+       * @return This builder for chaining.
+       */
+      public Builder setProgress(int value) {
+        
+        progress_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 progress = 5;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearProgress() {
+        
+        progress_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int prepareEndTime_ ;
+      /**
+       * <code>uint32 prepare_end_time = 1;</code>
+       * @return The prepareEndTime.
+       */
+      @java.lang.Override
+      public int getPrepareEndTime() {
+        return prepareEndTime_;
+      }
+      /**
+       * <code>uint32 prepare_end_time = 1;</code>
+       * @param value The prepareEndTime to set.
+       * @return This builder for chaining.
+       */
+      public Builder setPrepareEndTime(int value) {
+        
+        prepareEndTime_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 prepare_end_time = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearPrepareEndTime() {
+        
+        prepareEndTime_ = 0;
         onChanged();
         return this;
       }
@@ -1052,102 +973,88 @@ public final class ScenePlayBattleInfoOuterClass {
         return this;
       }
 
-      private int playId_ ;
-      /**
-       * <code>uint32 play_id = 1;</code>
-       * @return The playId.
-       */
-      @java.lang.Override
-      public int getPlayId() {
-        return playId_;
+      private com.google.protobuf.Internal.IntList progressStageList_ = emptyIntList();
+      private void ensureProgressStageListIsMutable() {
+        if (!((bitField0_ & 0x00000001) != 0)) {
+          progressStageList_ = mutableCopy(progressStageList_);
+          bitField0_ |= 0x00000001;
+         }
       }
       /**
-       * <code>uint32 play_id = 1;</code>
-       * @param value The playId to set.
+       * <code>repeated uint32 progress_stage_list = 13;</code>
+       * @return A list containing the progressStageList.
+       */
+      public java.util.List<java.lang.Integer>
+          getProgressStageListList() {
+        return ((bitField0_ & 0x00000001) != 0) ?
+                 java.util.Collections.unmodifiableList(progressStageList_) : progressStageList_;
+      }
+      /**
+       * <code>repeated uint32 progress_stage_list = 13;</code>
+       * @return The count of progressStageList.
+       */
+      public int getProgressStageListCount() {
+        return progressStageList_.size();
+      }
+      /**
+       * <code>repeated uint32 progress_stage_list = 13;</code>
+       * @param index The index of the element to return.
+       * @return The progressStageList at the given index.
+       */
+      public int getProgressStageList(int index) {
+        return progressStageList_.getInt(index);
+      }
+      /**
+       * <code>repeated uint32 progress_stage_list = 13;</code>
+       * @param index The index to set the value at.
+       * @param value The progressStageList to set.
        * @return This builder for chaining.
        */
-      public Builder setPlayId(int value) {
-        
-        playId_ = value;
+      public Builder setProgressStageList(
+          int index, int value) {
+        ensureProgressStageListIsMutable();
+        progressStageList_.setInt(index, value);
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 play_id = 1;</code>
+       * <code>repeated uint32 progress_stage_list = 13;</code>
+       * @param value The progressStageList to add.
        * @return This builder for chaining.
        */
-      public Builder clearPlayId() {
-        
-        playId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int prepareEndTime_ ;
-      /**
-       * <code>uint32 prepare_end_time = 7;</code>
-       * @return The prepareEndTime.
-       */
-      @java.lang.Override
-      public int getPrepareEndTime() {
-        return prepareEndTime_;
-      }
-      /**
-       * <code>uint32 prepare_end_time = 7;</code>
-       * @param value The prepareEndTime to set.
-       * @return This builder for chaining.
-       */
-      public Builder setPrepareEndTime(int value) {
-        
-        prepareEndTime_ = value;
+      public Builder addProgressStageList(int value) {
+        ensureProgressStageListIsMutable();
+        progressStageList_.addInt(value);
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 prepare_end_time = 7;</code>
+       * <code>repeated uint32 progress_stage_list = 13;</code>
+       * @param values The progressStageList to add.
        * @return This builder for chaining.
        */
-      public Builder clearPrepareEndTime() {
-        
-        prepareEndTime_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int progress_ ;
-      /**
-       * <code>uint32 progress = 11;</code>
-       * @return The progress.
-       */
-      @java.lang.Override
-      public int getProgress() {
-        return progress_;
-      }
-      /**
-       * <code>uint32 progress = 11;</code>
-       * @param value The progress to set.
-       * @return This builder for chaining.
-       */
-      public Builder setProgress(int value) {
-        
-        progress_ = value;
+      public Builder addAllProgressStageList(
+          java.lang.Iterable<? extends java.lang.Integer> values) {
+        ensureProgressStageListIsMutable();
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, progressStageList_);
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 progress = 11;</code>
+       * <code>repeated uint32 progress_stage_list = 13;</code>
        * @return This builder for chaining.
        */
-      public Builder clearProgress() {
-        
-        progress_ = 0;
+      public Builder clearProgressStageList() {
+        progressStageList_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000001);
         onChanged();
         return this;
       }
 
       private int state_ ;
       /**
-       * <code>uint32 state = 8;</code>
+       * <code>uint32 state = 7;</code>
        * @return The state.
        */
       @java.lang.Override
@@ -1155,7 +1062,7 @@ public final class ScenePlayBattleInfoOuterClass {
         return state_;
       }
       /**
-       * <code>uint32 state = 8;</code>
+       * <code>uint32 state = 7;</code>
        * @param value The state to set.
        * @return This builder for chaining.
        */
@@ -1166,7 +1073,7 @@ public final class ScenePlayBattleInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 state = 8;</code>
+       * <code>uint32 state = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearState() {
@@ -1176,9 +1083,40 @@ public final class ScenePlayBattleInfoOuterClass {
         return this;
       }
 
+      private int mode_ ;
+      /**
+       * <code>uint32 mode = 6;</code>
+       * @return The mode.
+       */
+      @java.lang.Override
+      public int getMode() {
+        return mode_;
+      }
+      /**
+       * <code>uint32 mode = 6;</code>
+       * @param value The mode to set.
+       * @return This builder for chaining.
+       */
+      public Builder setMode(int value) {
+        
+        mode_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 mode = 6;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearMode() {
+        
+        mode_ = 0;
+        onChanged();
+        return this;
+      }
+
       private int type_ ;
       /**
-       * <code>uint32 type = 9;</code>
+       * <code>uint32 type = 10;</code>
        * @return The type.
        */
       @java.lang.Override
@@ -1186,7 +1124,7 @@ public final class ScenePlayBattleInfoOuterClass {
         return type_;
       }
       /**
-       * <code>uint32 type = 9;</code>
+       * <code>uint32 type = 10;</code>
        * @param value The type to set.
        * @return This builder for chaining.
        */
@@ -1197,12 +1135,74 @@ public final class ScenePlayBattleInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 type = 9;</code>
+       * <code>uint32 type = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearType() {
         
         type_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int playId_ ;
+      /**
+       * <code>uint32 play_id = 11;</code>
+       * @return The playId.
+       */
+      @java.lang.Override
+      public int getPlayId() {
+        return playId_;
+      }
+      /**
+       * <code>uint32 play_id = 11;</code>
+       * @param value The playId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setPlayId(int value) {
+        
+        playId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 play_id = 11;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearPlayId() {
+        
+        playId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int startTime_ ;
+      /**
+       * <code>uint32 start_time = 8;</code>
+       * @return The startTime.
+       */
+      @java.lang.Override
+      public int getStartTime() {
+        return startTime_;
+      }
+      /**
+       * <code>uint32 start_time = 8;</code>
+       * @param value The startTime to set.
+       * @return This builder for chaining.
+       */
+      public Builder setStartTime(int value) {
+        
+        startTime_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 start_time = 8;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearStartTime() {
+        
+        startTime_ = 0;
         onChanged();
         return this;
       }
@@ -1274,11 +1274,11 @@ public final class ScenePlayBattleInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\031ScenePlayBattleInfo.proto\"\323\001\n\023ScenePla" +
-      "yBattleInfo\022\014\n\004mode\030\004 \001(\r\022\033\n\023progress_st" +
-      "age_list\030\003 \003(\r\022\022\n\nstart_time\030\n \001(\r\022\020\n\010du" +
-      "ration\030\016 \001(\r\022\021\n\tplay_type\030\014 \001(\r\022\017\n\007play_" +
-      "id\030\001 \001(\r\022\030\n\020prepare_end_time\030\007 \001(\r\022\020\n\010pr" +
-      "ogress\030\013 \001(\r\022\r\n\005state\030\010 \001(\r\022\014\n\004type\030\t \001(" +
+      "yBattleInfo\022\020\n\010duration\030\016 \001(\r\022\020\n\010progres" +
+      "s\030\005 \001(\r\022\030\n\020prepare_end_time\030\001 \001(\r\022\021\n\tpla" +
+      "y_type\030\014 \001(\r\022\033\n\023progress_stage_list\030\r \003(" +
+      "\r\022\r\n\005state\030\007 \001(\r\022\014\n\004mode\030\006 \001(\r\022\014\n\004type\030\n" +
+      " \001(\r\022\017\n\007play_id\030\013 \001(\r\022\022\n\nstart_time\030\010 \001(" +
       "\rB\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -1290,7 +1290,7 @@ public final class ScenePlayBattleInfoOuterClass {
     internal_static_ScenePlayBattleInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ScenePlayBattleInfo_descriptor,
-        new java.lang.String[] { "Mode", "ProgressStageList", "StartTime", "Duration", "PlayType", "PlayId", "PrepareEndTime", "Progress", "State", "Type", });
+        new java.lang.String[] { "Duration", "Progress", "PrepareEndTime", "PlayType", "ProgressStageList", "State", "Mode", "Type", "PlayId", "StartTime", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

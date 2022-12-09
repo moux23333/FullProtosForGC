@@ -19,19 +19,19 @@ public final class ChessNormalCardInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
+     * <code>uint32 cost_points = 3;</code>
+     * @return The costPoints.
+     */
+    int getCostPoints();
+
+    /**
      * <code>uint32 card_id = 2;</code>
      * @return The cardId.
      */
     int getCardId();
 
     /**
-     * <code>uint32 cost_points = 15;</code>
-     * @return The costPoints.
-     */
-    int getCostPoints();
-
-    /**
-     * <code>bool is_attach_curse = 6;</code>
+     * <code>bool is_attach_curse = 4;</code>
      * @return The isAttachCurse.
      */
     boolean getIsAttachCurse();
@@ -86,14 +86,14 @@ public final class ChessNormalCardInfoOuterClass {
               cardId_ = input.readUInt32();
               break;
             }
-            case 48: {
-
-              isAttachCurse_ = input.readBool();
-              break;
-            }
-            case 120: {
+            case 24: {
 
               costPoints_ = input.readUInt32();
+              break;
+            }
+            case 32: {
+
+              isAttachCurse_ = input.readBool();
               break;
             }
             default: {
@@ -128,6 +128,17 @@ public final class ChessNormalCardInfoOuterClass {
               emu.grasscutter.net.proto.ChessNormalCardInfoOuterClass.ChessNormalCardInfo.class, emu.grasscutter.net.proto.ChessNormalCardInfoOuterClass.ChessNormalCardInfo.Builder.class);
     }
 
+    public static final int COST_POINTS_FIELD_NUMBER = 3;
+    private int costPoints_;
+    /**
+     * <code>uint32 cost_points = 3;</code>
+     * @return The costPoints.
+     */
+    @java.lang.Override
+    public int getCostPoints() {
+      return costPoints_;
+    }
+
     public static final int CARD_ID_FIELD_NUMBER = 2;
     private int cardId_;
     /**
@@ -139,21 +150,10 @@ public final class ChessNormalCardInfoOuterClass {
       return cardId_;
     }
 
-    public static final int COST_POINTS_FIELD_NUMBER = 15;
-    private int costPoints_;
-    /**
-     * <code>uint32 cost_points = 15;</code>
-     * @return The costPoints.
-     */
-    @java.lang.Override
-    public int getCostPoints() {
-      return costPoints_;
-    }
-
-    public static final int IS_ATTACH_CURSE_FIELD_NUMBER = 6;
+    public static final int IS_ATTACH_CURSE_FIELD_NUMBER = 4;
     private boolean isAttachCurse_;
     /**
-     * <code>bool is_attach_curse = 6;</code>
+     * <code>bool is_attach_curse = 4;</code>
      * @return The isAttachCurse.
      */
     @java.lang.Override
@@ -178,11 +178,11 @@ public final class ChessNormalCardInfoOuterClass {
       if (cardId_ != 0) {
         output.writeUInt32(2, cardId_);
       }
-      if (isAttachCurse_ != false) {
-        output.writeBool(6, isAttachCurse_);
-      }
       if (costPoints_ != 0) {
-        output.writeUInt32(15, costPoints_);
+        output.writeUInt32(3, costPoints_);
+      }
+      if (isAttachCurse_ != false) {
+        output.writeBool(4, isAttachCurse_);
       }
       unknownFields.writeTo(output);
     }
@@ -197,13 +197,13 @@ public final class ChessNormalCardInfoOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(2, cardId_);
       }
-      if (isAttachCurse_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(6, isAttachCurse_);
-      }
       if (costPoints_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, costPoints_);
+          .computeUInt32Size(3, costPoints_);
+      }
+      if (isAttachCurse_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(4, isAttachCurse_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -220,10 +220,10 @@ public final class ChessNormalCardInfoOuterClass {
       }
       emu.grasscutter.net.proto.ChessNormalCardInfoOuterClass.ChessNormalCardInfo other = (emu.grasscutter.net.proto.ChessNormalCardInfoOuterClass.ChessNormalCardInfo) obj;
 
-      if (getCardId()
-          != other.getCardId()) return false;
       if (getCostPoints()
           != other.getCostPoints()) return false;
+      if (getCardId()
+          != other.getCardId()) return false;
       if (getIsAttachCurse()
           != other.getIsAttachCurse()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
@@ -237,10 +237,10 @@ public final class ChessNormalCardInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + CARD_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getCardId();
       hash = (37 * hash) + COST_POINTS_FIELD_NUMBER;
       hash = (53 * hash) + getCostPoints();
+      hash = (37 * hash) + CARD_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getCardId();
       hash = (37 * hash) + IS_ATTACH_CURSE_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsAttachCurse());
@@ -377,9 +377,9 @@ public final class ChessNormalCardInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        cardId_ = 0;
-
         costPoints_ = 0;
+
+        cardId_ = 0;
 
         isAttachCurse_ = false;
 
@@ -409,8 +409,8 @@ public final class ChessNormalCardInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.ChessNormalCardInfoOuterClass.ChessNormalCardInfo buildPartial() {
         emu.grasscutter.net.proto.ChessNormalCardInfoOuterClass.ChessNormalCardInfo result = new emu.grasscutter.net.proto.ChessNormalCardInfoOuterClass.ChessNormalCardInfo(this);
-        result.cardId_ = cardId_;
         result.costPoints_ = costPoints_;
+        result.cardId_ = cardId_;
         result.isAttachCurse_ = isAttachCurse_;
         onBuilt();
         return result;
@@ -460,11 +460,11 @@ public final class ChessNormalCardInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.ChessNormalCardInfoOuterClass.ChessNormalCardInfo other) {
         if (other == emu.grasscutter.net.proto.ChessNormalCardInfoOuterClass.ChessNormalCardInfo.getDefaultInstance()) return this;
-        if (other.getCardId() != 0) {
-          setCardId(other.getCardId());
-        }
         if (other.getCostPoints() != 0) {
           setCostPoints(other.getCostPoints());
+        }
+        if (other.getCardId() != 0) {
+          setCardId(other.getCardId());
         }
         if (other.getIsAttachCurse() != false) {
           setIsAttachCurse(other.getIsAttachCurse());
@@ -495,6 +495,37 @@ public final class ChessNormalCardInfoOuterClass {
             mergeFrom(parsedMessage);
           }
         }
+        return this;
+      }
+
+      private int costPoints_ ;
+      /**
+       * <code>uint32 cost_points = 3;</code>
+       * @return The costPoints.
+       */
+      @java.lang.Override
+      public int getCostPoints() {
+        return costPoints_;
+      }
+      /**
+       * <code>uint32 cost_points = 3;</code>
+       * @param value The costPoints to set.
+       * @return This builder for chaining.
+       */
+      public Builder setCostPoints(int value) {
+        
+        costPoints_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 cost_points = 3;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearCostPoints() {
+        
+        costPoints_ = 0;
+        onChanged();
         return this;
       }
 
@@ -529,40 +560,9 @@ public final class ChessNormalCardInfoOuterClass {
         return this;
       }
 
-      private int costPoints_ ;
-      /**
-       * <code>uint32 cost_points = 15;</code>
-       * @return The costPoints.
-       */
-      @java.lang.Override
-      public int getCostPoints() {
-        return costPoints_;
-      }
-      /**
-       * <code>uint32 cost_points = 15;</code>
-       * @param value The costPoints to set.
-       * @return This builder for chaining.
-       */
-      public Builder setCostPoints(int value) {
-        
-        costPoints_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 cost_points = 15;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearCostPoints() {
-        
-        costPoints_ = 0;
-        onChanged();
-        return this;
-      }
-
       private boolean isAttachCurse_ ;
       /**
-       * <code>bool is_attach_curse = 6;</code>
+       * <code>bool is_attach_curse = 4;</code>
        * @return The isAttachCurse.
        */
       @java.lang.Override
@@ -570,7 +570,7 @@ public final class ChessNormalCardInfoOuterClass {
         return isAttachCurse_;
       }
       /**
-       * <code>bool is_attach_curse = 6;</code>
+       * <code>bool is_attach_curse = 4;</code>
        * @param value The isAttachCurse to set.
        * @return This builder for chaining.
        */
@@ -581,7 +581,7 @@ public final class ChessNormalCardInfoOuterClass {
         return this;
       }
       /**
-       * <code>bool is_attach_curse = 6;</code>
+       * <code>bool is_attach_curse = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsAttachCurse() {
@@ -658,8 +658,8 @@ public final class ChessNormalCardInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\031ChessNormalCardInfo.proto\"T\n\023ChessNorm" +
-      "alCardInfo\022\017\n\007card_id\030\002 \001(\r\022\023\n\013cost_poin" +
-      "ts\030\017 \001(\r\022\027\n\017is_attach_curse\030\006 \001(\010B\033\n\031emu" +
+      "alCardInfo\022\023\n\013cost_points\030\003 \001(\r\022\017\n\007card_" +
+      "id\030\002 \001(\r\022\027\n\017is_attach_curse\030\004 \001(\010B\033\n\031emu" +
       ".grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -671,7 +671,7 @@ public final class ChessNormalCardInfoOuterClass {
     internal_static_ChessNormalCardInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ChessNormalCardInfo_descriptor,
-        new java.lang.String[] { "CardId", "CostPoints", "IsAttachCurse", });
+        new java.lang.String[] { "CostPoints", "CardId", "IsAttachCurse", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

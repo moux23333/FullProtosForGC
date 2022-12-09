@@ -19,41 +19,45 @@ public final class VintageMarketFinishStorePlayReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 store_round = 9;</code>
+     * <code>uint32 store_round = 12;</code>
      * @return The storeRound.
      */
     int getStoreRound();
 
     /**
-     * <code>repeated .VintageMarketStoreOpInfo store_op_list = 3;</code>
+     * <code>repeated .VintageMarketStoreOpInfo store_op_list = 11;</code>
      */
     java.util.List<emu.grasscutter.net.proto.VintageMarketStoreOpInfoOuterClass.VintageMarketStoreOpInfo> 
         getStoreOpListList();
     /**
-     * <code>repeated .VintageMarketStoreOpInfo store_op_list = 3;</code>
+     * <code>repeated .VintageMarketStoreOpInfo store_op_list = 11;</code>
      */
     emu.grasscutter.net.proto.VintageMarketStoreOpInfoOuterClass.VintageMarketStoreOpInfo getStoreOpList(int index);
     /**
-     * <code>repeated .VintageMarketStoreOpInfo store_op_list = 3;</code>
+     * <code>repeated .VintageMarketStoreOpInfo store_op_list = 11;</code>
      */
     int getStoreOpListCount();
     /**
-     * <code>repeated .VintageMarketStoreOpInfo store_op_list = 3;</code>
+     * <code>repeated .VintageMarketStoreOpInfo store_op_list = 11;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.VintageMarketStoreOpInfoOuterClass.VintageMarketStoreOpInfoOrBuilder> 
         getStoreOpListOrBuilderList();
     /**
-     * <code>repeated .VintageMarketStoreOpInfo store_op_list = 3;</code>
+     * <code>repeated .VintageMarketStoreOpInfo store_op_list = 11;</code>
      */
     emu.grasscutter.net.proto.VintageMarketStoreOpInfoOuterClass.VintageMarketStoreOpInfoOrBuilder getStoreOpListOrBuilder(
         int index);
   }
   /**
    * <pre>
-   * CmdId: 20676
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 21911;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code VintageMarketFinishStorePlayReq}
@@ -102,7 +106,7 @@ public final class VintageMarketFinishStorePlayReqOuterClass {
             case 0:
               done = true;
               break;
-            case 26: {
+            case 90: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 storeOpList_ = new java.util.ArrayList<emu.grasscutter.net.proto.VintageMarketStoreOpInfoOuterClass.VintageMarketStoreOpInfo>();
                 mutable_bitField0_ |= 0x00000001;
@@ -111,7 +115,7 @@ public final class VintageMarketFinishStorePlayReqOuterClass {
                   input.readMessage(emu.grasscutter.net.proto.VintageMarketStoreOpInfoOuterClass.VintageMarketStoreOpInfo.parser(), extensionRegistry));
               break;
             }
-            case 72: {
+            case 96: {
 
               storeRound_ = input.readUInt32();
               break;
@@ -151,10 +155,10 @@ public final class VintageMarketFinishStorePlayReqOuterClass {
               emu.grasscutter.net.proto.VintageMarketFinishStorePlayReqOuterClass.VintageMarketFinishStorePlayReq.class, emu.grasscutter.net.proto.VintageMarketFinishStorePlayReqOuterClass.VintageMarketFinishStorePlayReq.Builder.class);
     }
 
-    public static final int STORE_ROUND_FIELD_NUMBER = 9;
+    public static final int STORE_ROUND_FIELD_NUMBER = 12;
     private int storeRound_;
     /**
-     * <code>uint32 store_round = 9;</code>
+     * <code>uint32 store_round = 12;</code>
      * @return The storeRound.
      */
     @java.lang.Override
@@ -162,17 +166,17 @@ public final class VintageMarketFinishStorePlayReqOuterClass {
       return storeRound_;
     }
 
-    public static final int STORE_OP_LIST_FIELD_NUMBER = 3;
+    public static final int STORE_OP_LIST_FIELD_NUMBER = 11;
     private java.util.List<emu.grasscutter.net.proto.VintageMarketStoreOpInfoOuterClass.VintageMarketStoreOpInfo> storeOpList_;
     /**
-     * <code>repeated .VintageMarketStoreOpInfo store_op_list = 3;</code>
+     * <code>repeated .VintageMarketStoreOpInfo store_op_list = 11;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.VintageMarketStoreOpInfoOuterClass.VintageMarketStoreOpInfo> getStoreOpListList() {
       return storeOpList_;
     }
     /**
-     * <code>repeated .VintageMarketStoreOpInfo store_op_list = 3;</code>
+     * <code>repeated .VintageMarketStoreOpInfo store_op_list = 11;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.VintageMarketStoreOpInfoOuterClass.VintageMarketStoreOpInfoOrBuilder> 
@@ -180,21 +184,21 @@ public final class VintageMarketFinishStorePlayReqOuterClass {
       return storeOpList_;
     }
     /**
-     * <code>repeated .VintageMarketStoreOpInfo store_op_list = 3;</code>
+     * <code>repeated .VintageMarketStoreOpInfo store_op_list = 11;</code>
      */
     @java.lang.Override
     public int getStoreOpListCount() {
       return storeOpList_.size();
     }
     /**
-     * <code>repeated .VintageMarketStoreOpInfo store_op_list = 3;</code>
+     * <code>repeated .VintageMarketStoreOpInfo store_op_list = 11;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.VintageMarketStoreOpInfoOuterClass.VintageMarketStoreOpInfo getStoreOpList(int index) {
       return storeOpList_.get(index);
     }
     /**
-     * <code>repeated .VintageMarketStoreOpInfo store_op_list = 3;</code>
+     * <code>repeated .VintageMarketStoreOpInfo store_op_list = 11;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.VintageMarketStoreOpInfoOuterClass.VintageMarketStoreOpInfoOrBuilder getStoreOpListOrBuilder(
@@ -217,10 +221,10 @@ public final class VintageMarketFinishStorePlayReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       for (int i = 0; i < storeOpList_.size(); i++) {
-        output.writeMessage(3, storeOpList_.get(i));
+        output.writeMessage(11, storeOpList_.get(i));
       }
       if (storeRound_ != 0) {
-        output.writeUInt32(9, storeRound_);
+        output.writeUInt32(12, storeRound_);
       }
       unknownFields.writeTo(output);
     }
@@ -233,11 +237,11 @@ public final class VintageMarketFinishStorePlayReqOuterClass {
       size = 0;
       for (int i = 0; i < storeOpList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(3, storeOpList_.get(i));
+          .computeMessageSize(11, storeOpList_.get(i));
       }
       if (storeRound_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, storeRound_);
+          .computeUInt32Size(12, storeRound_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -372,10 +376,14 @@ public final class VintageMarketFinishStorePlayReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 20676
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 21911;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code VintageMarketFinishStorePlayReq}
@@ -570,7 +578,7 @@ public final class VintageMarketFinishStorePlayReqOuterClass {
 
       private int storeRound_ ;
       /**
-       * <code>uint32 store_round = 9;</code>
+       * <code>uint32 store_round = 12;</code>
        * @return The storeRound.
        */
       @java.lang.Override
@@ -578,7 +586,7 @@ public final class VintageMarketFinishStorePlayReqOuterClass {
         return storeRound_;
       }
       /**
-       * <code>uint32 store_round = 9;</code>
+       * <code>uint32 store_round = 12;</code>
        * @param value The storeRound to set.
        * @return This builder for chaining.
        */
@@ -589,7 +597,7 @@ public final class VintageMarketFinishStorePlayReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 store_round = 9;</code>
+       * <code>uint32 store_round = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearStoreRound() {
@@ -612,7 +620,7 @@ public final class VintageMarketFinishStorePlayReqOuterClass {
           emu.grasscutter.net.proto.VintageMarketStoreOpInfoOuterClass.VintageMarketStoreOpInfo, emu.grasscutter.net.proto.VintageMarketStoreOpInfoOuterClass.VintageMarketStoreOpInfo.Builder, emu.grasscutter.net.proto.VintageMarketStoreOpInfoOuterClass.VintageMarketStoreOpInfoOrBuilder> storeOpListBuilder_;
 
       /**
-       * <code>repeated .VintageMarketStoreOpInfo store_op_list = 3;</code>
+       * <code>repeated .VintageMarketStoreOpInfo store_op_list = 11;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.VintageMarketStoreOpInfoOuterClass.VintageMarketStoreOpInfo> getStoreOpListList() {
         if (storeOpListBuilder_ == null) {
@@ -622,7 +630,7 @@ public final class VintageMarketFinishStorePlayReqOuterClass {
         }
       }
       /**
-       * <code>repeated .VintageMarketStoreOpInfo store_op_list = 3;</code>
+       * <code>repeated .VintageMarketStoreOpInfo store_op_list = 11;</code>
        */
       public int getStoreOpListCount() {
         if (storeOpListBuilder_ == null) {
@@ -632,7 +640,7 @@ public final class VintageMarketFinishStorePlayReqOuterClass {
         }
       }
       /**
-       * <code>repeated .VintageMarketStoreOpInfo store_op_list = 3;</code>
+       * <code>repeated .VintageMarketStoreOpInfo store_op_list = 11;</code>
        */
       public emu.grasscutter.net.proto.VintageMarketStoreOpInfoOuterClass.VintageMarketStoreOpInfo getStoreOpList(int index) {
         if (storeOpListBuilder_ == null) {
@@ -642,7 +650,7 @@ public final class VintageMarketFinishStorePlayReqOuterClass {
         }
       }
       /**
-       * <code>repeated .VintageMarketStoreOpInfo store_op_list = 3;</code>
+       * <code>repeated .VintageMarketStoreOpInfo store_op_list = 11;</code>
        */
       public Builder setStoreOpList(
           int index, emu.grasscutter.net.proto.VintageMarketStoreOpInfoOuterClass.VintageMarketStoreOpInfo value) {
@@ -659,7 +667,7 @@ public final class VintageMarketFinishStorePlayReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated .VintageMarketStoreOpInfo store_op_list = 3;</code>
+       * <code>repeated .VintageMarketStoreOpInfo store_op_list = 11;</code>
        */
       public Builder setStoreOpList(
           int index, emu.grasscutter.net.proto.VintageMarketStoreOpInfoOuterClass.VintageMarketStoreOpInfo.Builder builderForValue) {
@@ -673,7 +681,7 @@ public final class VintageMarketFinishStorePlayReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated .VintageMarketStoreOpInfo store_op_list = 3;</code>
+       * <code>repeated .VintageMarketStoreOpInfo store_op_list = 11;</code>
        */
       public Builder addStoreOpList(emu.grasscutter.net.proto.VintageMarketStoreOpInfoOuterClass.VintageMarketStoreOpInfo value) {
         if (storeOpListBuilder_ == null) {
@@ -689,7 +697,7 @@ public final class VintageMarketFinishStorePlayReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated .VintageMarketStoreOpInfo store_op_list = 3;</code>
+       * <code>repeated .VintageMarketStoreOpInfo store_op_list = 11;</code>
        */
       public Builder addStoreOpList(
           int index, emu.grasscutter.net.proto.VintageMarketStoreOpInfoOuterClass.VintageMarketStoreOpInfo value) {
@@ -706,7 +714,7 @@ public final class VintageMarketFinishStorePlayReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated .VintageMarketStoreOpInfo store_op_list = 3;</code>
+       * <code>repeated .VintageMarketStoreOpInfo store_op_list = 11;</code>
        */
       public Builder addStoreOpList(
           emu.grasscutter.net.proto.VintageMarketStoreOpInfoOuterClass.VintageMarketStoreOpInfo.Builder builderForValue) {
@@ -720,7 +728,7 @@ public final class VintageMarketFinishStorePlayReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated .VintageMarketStoreOpInfo store_op_list = 3;</code>
+       * <code>repeated .VintageMarketStoreOpInfo store_op_list = 11;</code>
        */
       public Builder addStoreOpList(
           int index, emu.grasscutter.net.proto.VintageMarketStoreOpInfoOuterClass.VintageMarketStoreOpInfo.Builder builderForValue) {
@@ -734,7 +742,7 @@ public final class VintageMarketFinishStorePlayReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated .VintageMarketStoreOpInfo store_op_list = 3;</code>
+       * <code>repeated .VintageMarketStoreOpInfo store_op_list = 11;</code>
        */
       public Builder addAllStoreOpList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.VintageMarketStoreOpInfoOuterClass.VintageMarketStoreOpInfo> values) {
@@ -749,7 +757,7 @@ public final class VintageMarketFinishStorePlayReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated .VintageMarketStoreOpInfo store_op_list = 3;</code>
+       * <code>repeated .VintageMarketStoreOpInfo store_op_list = 11;</code>
        */
       public Builder clearStoreOpList() {
         if (storeOpListBuilder_ == null) {
@@ -762,7 +770,7 @@ public final class VintageMarketFinishStorePlayReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated .VintageMarketStoreOpInfo store_op_list = 3;</code>
+       * <code>repeated .VintageMarketStoreOpInfo store_op_list = 11;</code>
        */
       public Builder removeStoreOpList(int index) {
         if (storeOpListBuilder_ == null) {
@@ -775,14 +783,14 @@ public final class VintageMarketFinishStorePlayReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated .VintageMarketStoreOpInfo store_op_list = 3;</code>
+       * <code>repeated .VintageMarketStoreOpInfo store_op_list = 11;</code>
        */
       public emu.grasscutter.net.proto.VintageMarketStoreOpInfoOuterClass.VintageMarketStoreOpInfo.Builder getStoreOpListBuilder(
           int index) {
         return getStoreOpListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .VintageMarketStoreOpInfo store_op_list = 3;</code>
+       * <code>repeated .VintageMarketStoreOpInfo store_op_list = 11;</code>
        */
       public emu.grasscutter.net.proto.VintageMarketStoreOpInfoOuterClass.VintageMarketStoreOpInfoOrBuilder getStoreOpListOrBuilder(
           int index) {
@@ -792,7 +800,7 @@ public final class VintageMarketFinishStorePlayReqOuterClass {
         }
       }
       /**
-       * <code>repeated .VintageMarketStoreOpInfo store_op_list = 3;</code>
+       * <code>repeated .VintageMarketStoreOpInfo store_op_list = 11;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.VintageMarketStoreOpInfoOuterClass.VintageMarketStoreOpInfoOrBuilder> 
            getStoreOpListOrBuilderList() {
@@ -803,14 +811,14 @@ public final class VintageMarketFinishStorePlayReqOuterClass {
         }
       }
       /**
-       * <code>repeated .VintageMarketStoreOpInfo store_op_list = 3;</code>
+       * <code>repeated .VintageMarketStoreOpInfo store_op_list = 11;</code>
        */
       public emu.grasscutter.net.proto.VintageMarketStoreOpInfoOuterClass.VintageMarketStoreOpInfo.Builder addStoreOpListBuilder() {
         return getStoreOpListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.VintageMarketStoreOpInfoOuterClass.VintageMarketStoreOpInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .VintageMarketStoreOpInfo store_op_list = 3;</code>
+       * <code>repeated .VintageMarketStoreOpInfo store_op_list = 11;</code>
        */
       public emu.grasscutter.net.proto.VintageMarketStoreOpInfoOuterClass.VintageMarketStoreOpInfo.Builder addStoreOpListBuilder(
           int index) {
@@ -818,7 +826,7 @@ public final class VintageMarketFinishStorePlayReqOuterClass {
             index, emu.grasscutter.net.proto.VintageMarketStoreOpInfoOuterClass.VintageMarketStoreOpInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .VintageMarketStoreOpInfo store_op_list = 3;</code>
+       * <code>repeated .VintageMarketStoreOpInfo store_op_list = 11;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.VintageMarketStoreOpInfoOuterClass.VintageMarketStoreOpInfo.Builder> 
            getStoreOpListBuilderList() {
@@ -908,7 +916,7 @@ public final class VintageMarketFinishStorePlayReqOuterClass {
       "\n%VintageMarketFinishStorePlayReq.proto\032" +
       "\036VintageMarketStoreOpInfo.proto\"h\n\037Vinta" +
       "geMarketFinishStorePlayReq\022\023\n\013store_roun" +
-      "d\030\t \001(\r\0220\n\rstore_op_list\030\003 \003(\0132\031.Vintage" +
+      "d\030\014 \001(\r\0220\n\rstore_op_list\030\013 \003(\0132\031.Vintage" +
       "MarketStoreOpInfoB\033\n\031emu.grasscutter.net" +
       ".protob\006proto3"
     };

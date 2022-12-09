@@ -19,16 +19,20 @@ public final class StoreCustomDungeonRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 12;</code>
+     * <code>int32 retcode = 5;</code>
      * @return The retcode.
      */
     int getRetcode();
   }
   /**
    * <pre>
-   * CmdId: 6201
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 6206;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code StoreCustomDungeonRsp}
@@ -75,7 +79,7 @@ public final class StoreCustomDungeonRspOuterClass {
             case 0:
               done = true;
               break;
-            case 96: {
+            case 40: {
 
               retcode_ = input.readInt32();
               break;
@@ -112,10 +116,10 @@ public final class StoreCustomDungeonRspOuterClass {
               emu.grasscutter.net.proto.StoreCustomDungeonRspOuterClass.StoreCustomDungeonRsp.class, emu.grasscutter.net.proto.StoreCustomDungeonRspOuterClass.StoreCustomDungeonRsp.Builder.class);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 12;
+    public static final int RETCODE_FIELD_NUMBER = 5;
     private int retcode_;
     /**
-     * <code>int32 retcode = 12;</code>
+     * <code>int32 retcode = 5;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -138,7 +142,7 @@ public final class StoreCustomDungeonRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (retcode_ != 0) {
-        output.writeInt32(12, retcode_);
+        output.writeInt32(5, retcode_);
       }
       unknownFields.writeTo(output);
     }
@@ -151,7 +155,7 @@ public final class StoreCustomDungeonRspOuterClass {
       size = 0;
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(12, retcode_);
+          .computeInt32Size(5, retcode_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -280,9 +284,13 @@ public final class StoreCustomDungeonRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 6201
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 6206;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code StoreCustomDungeonRsp}
@@ -433,7 +441,7 @@ public final class StoreCustomDungeonRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 12;</code>
+       * <code>int32 retcode = 5;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -441,7 +449,7 @@ public final class StoreCustomDungeonRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 12;</code>
+       * <code>int32 retcode = 5;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -452,7 +460,7 @@ public final class StoreCustomDungeonRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 12;</code>
+       * <code>int32 retcode = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -529,7 +537,7 @@ public final class StoreCustomDungeonRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\033StoreCustomDungeonRsp.proto\"(\n\025StoreCu" +
-      "stomDungeonRsp\022\017\n\007retcode\030\014 \001(\005B\033\n\031emu.g" +
+      "stomDungeonRsp\022\017\n\007retcode\030\005 \001(\005B\033\n\031emu.g" +
       "rasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

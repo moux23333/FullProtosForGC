@@ -19,45 +19,49 @@ public final class ShowMessageNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.SvrMsgId msg_id = 14;</code>
+     * <code>.SvrMsgId msg_id = 9;</code>
      * @return The enum numeric value on the wire for msgId.
      */
     int getMsgIdValue();
     /**
-     * <code>.SvrMsgId msg_id = 14;</code>
+     * <code>.SvrMsgId msg_id = 9;</code>
      * @return The msgId.
      */
     emu.grasscutter.net.proto.SvrMsgIdOuterClass.SvrMsgId getMsgId();
 
     /**
-     * <code>repeated .MsgParam params = 13;</code>
+     * <code>repeated .MsgParam params = 10;</code>
      */
     java.util.List<emu.grasscutter.net.proto.MsgParamOuterClass.MsgParam> 
         getParamsList();
     /**
-     * <code>repeated .MsgParam params = 13;</code>
+     * <code>repeated .MsgParam params = 10;</code>
      */
     emu.grasscutter.net.proto.MsgParamOuterClass.MsgParam getParams(int index);
     /**
-     * <code>repeated .MsgParam params = 13;</code>
+     * <code>repeated .MsgParam params = 10;</code>
      */
     int getParamsCount();
     /**
-     * <code>repeated .MsgParam params = 13;</code>
+     * <code>repeated .MsgParam params = 10;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.MsgParamOuterClass.MsgParamOrBuilder> 
         getParamsOrBuilderList();
     /**
-     * <code>repeated .MsgParam params = 13;</code>
+     * <code>repeated .MsgParam params = 10;</code>
      */
     emu.grasscutter.net.proto.MsgParamOuterClass.MsgParamOrBuilder getParamsOrBuilder(
         int index);
   }
   /**
    * <pre>
-   * CmdId: 35
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 19;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code ShowMessageNotify}
@@ -107,19 +111,19 @@ public final class ShowMessageNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 106: {
+            case 72: {
+              int rawValue = input.readEnum();
+
+              msgId_ = rawValue;
+              break;
+            }
+            case 82: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 params_ = new java.util.ArrayList<emu.grasscutter.net.proto.MsgParamOuterClass.MsgParam>();
                 mutable_bitField0_ |= 0x00000001;
               }
               params_.add(
                   input.readMessage(emu.grasscutter.net.proto.MsgParamOuterClass.MsgParam.parser(), extensionRegistry));
-              break;
-            }
-            case 112: {
-              int rawValue = input.readEnum();
-
-              msgId_ = rawValue;
               break;
             }
             default: {
@@ -157,17 +161,17 @@ public final class ShowMessageNotifyOuterClass {
               emu.grasscutter.net.proto.ShowMessageNotifyOuterClass.ShowMessageNotify.class, emu.grasscutter.net.proto.ShowMessageNotifyOuterClass.ShowMessageNotify.Builder.class);
     }
 
-    public static final int MSG_ID_FIELD_NUMBER = 14;
+    public static final int MSG_ID_FIELD_NUMBER = 9;
     private int msgId_;
     /**
-     * <code>.SvrMsgId msg_id = 14;</code>
+     * <code>.SvrMsgId msg_id = 9;</code>
      * @return The enum numeric value on the wire for msgId.
      */
     @java.lang.Override public int getMsgIdValue() {
       return msgId_;
     }
     /**
-     * <code>.SvrMsgId msg_id = 14;</code>
+     * <code>.SvrMsgId msg_id = 9;</code>
      * @return The msgId.
      */
     @java.lang.Override public emu.grasscutter.net.proto.SvrMsgIdOuterClass.SvrMsgId getMsgId() {
@@ -176,17 +180,17 @@ public final class ShowMessageNotifyOuterClass {
       return result == null ? emu.grasscutter.net.proto.SvrMsgIdOuterClass.SvrMsgId.UNRECOGNIZED : result;
     }
 
-    public static final int PARAMS_FIELD_NUMBER = 13;
+    public static final int PARAMS_FIELD_NUMBER = 10;
     private java.util.List<emu.grasscutter.net.proto.MsgParamOuterClass.MsgParam> params_;
     /**
-     * <code>repeated .MsgParam params = 13;</code>
+     * <code>repeated .MsgParam params = 10;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.MsgParamOuterClass.MsgParam> getParamsList() {
       return params_;
     }
     /**
-     * <code>repeated .MsgParam params = 13;</code>
+     * <code>repeated .MsgParam params = 10;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.MsgParamOuterClass.MsgParamOrBuilder> 
@@ -194,21 +198,21 @@ public final class ShowMessageNotifyOuterClass {
       return params_;
     }
     /**
-     * <code>repeated .MsgParam params = 13;</code>
+     * <code>repeated .MsgParam params = 10;</code>
      */
     @java.lang.Override
     public int getParamsCount() {
       return params_.size();
     }
     /**
-     * <code>repeated .MsgParam params = 13;</code>
+     * <code>repeated .MsgParam params = 10;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.MsgParamOuterClass.MsgParam getParams(int index) {
       return params_.get(index);
     }
     /**
-     * <code>repeated .MsgParam params = 13;</code>
+     * <code>repeated .MsgParam params = 10;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.MsgParamOuterClass.MsgParamOrBuilder getParamsOrBuilder(
@@ -230,11 +234,11 @@ public final class ShowMessageNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      for (int i = 0; i < params_.size(); i++) {
-        output.writeMessage(13, params_.get(i));
-      }
       if (msgId_ != emu.grasscutter.net.proto.SvrMsgIdOuterClass.SvrMsgId.SVR_MSG_ID_UNKNOWN.getNumber()) {
-        output.writeEnum(14, msgId_);
+        output.writeEnum(9, msgId_);
+      }
+      for (int i = 0; i < params_.size(); i++) {
+        output.writeMessage(10, params_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -245,13 +249,13 @@ public final class ShowMessageNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      for (int i = 0; i < params_.size(); i++) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(13, params_.get(i));
-      }
       if (msgId_ != emu.grasscutter.net.proto.SvrMsgIdOuterClass.SvrMsgId.SVR_MSG_ID_UNKNOWN.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(14, msgId_);
+          .computeEnumSize(9, msgId_);
+      }
+      for (int i = 0; i < params_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(10, params_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -385,9 +389,13 @@ public final class ShowMessageNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 35
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 19;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code ShowMessageNotify}
@@ -582,14 +590,14 @@ public final class ShowMessageNotifyOuterClass {
 
       private int msgId_ = 0;
       /**
-       * <code>.SvrMsgId msg_id = 14;</code>
+       * <code>.SvrMsgId msg_id = 9;</code>
        * @return The enum numeric value on the wire for msgId.
        */
       @java.lang.Override public int getMsgIdValue() {
         return msgId_;
       }
       /**
-       * <code>.SvrMsgId msg_id = 14;</code>
+       * <code>.SvrMsgId msg_id = 9;</code>
        * @param value The enum numeric value on the wire for msgId to set.
        * @return This builder for chaining.
        */
@@ -600,7 +608,7 @@ public final class ShowMessageNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.SvrMsgId msg_id = 14;</code>
+       * <code>.SvrMsgId msg_id = 9;</code>
        * @return The msgId.
        */
       @java.lang.Override
@@ -610,7 +618,7 @@ public final class ShowMessageNotifyOuterClass {
         return result == null ? emu.grasscutter.net.proto.SvrMsgIdOuterClass.SvrMsgId.UNRECOGNIZED : result;
       }
       /**
-       * <code>.SvrMsgId msg_id = 14;</code>
+       * <code>.SvrMsgId msg_id = 9;</code>
        * @param value The msgId to set.
        * @return This builder for chaining.
        */
@@ -624,7 +632,7 @@ public final class ShowMessageNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.SvrMsgId msg_id = 14;</code>
+       * <code>.SvrMsgId msg_id = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearMsgId() {
@@ -647,7 +655,7 @@ public final class ShowMessageNotifyOuterClass {
           emu.grasscutter.net.proto.MsgParamOuterClass.MsgParam, emu.grasscutter.net.proto.MsgParamOuterClass.MsgParam.Builder, emu.grasscutter.net.proto.MsgParamOuterClass.MsgParamOrBuilder> paramsBuilder_;
 
       /**
-       * <code>repeated .MsgParam params = 13;</code>
+       * <code>repeated .MsgParam params = 10;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.MsgParamOuterClass.MsgParam> getParamsList() {
         if (paramsBuilder_ == null) {
@@ -657,7 +665,7 @@ public final class ShowMessageNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .MsgParam params = 13;</code>
+       * <code>repeated .MsgParam params = 10;</code>
        */
       public int getParamsCount() {
         if (paramsBuilder_ == null) {
@@ -667,7 +675,7 @@ public final class ShowMessageNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .MsgParam params = 13;</code>
+       * <code>repeated .MsgParam params = 10;</code>
        */
       public emu.grasscutter.net.proto.MsgParamOuterClass.MsgParam getParams(int index) {
         if (paramsBuilder_ == null) {
@@ -677,7 +685,7 @@ public final class ShowMessageNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .MsgParam params = 13;</code>
+       * <code>repeated .MsgParam params = 10;</code>
        */
       public Builder setParams(
           int index, emu.grasscutter.net.proto.MsgParamOuterClass.MsgParam value) {
@@ -694,7 +702,7 @@ public final class ShowMessageNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .MsgParam params = 13;</code>
+       * <code>repeated .MsgParam params = 10;</code>
        */
       public Builder setParams(
           int index, emu.grasscutter.net.proto.MsgParamOuterClass.MsgParam.Builder builderForValue) {
@@ -708,7 +716,7 @@ public final class ShowMessageNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .MsgParam params = 13;</code>
+       * <code>repeated .MsgParam params = 10;</code>
        */
       public Builder addParams(emu.grasscutter.net.proto.MsgParamOuterClass.MsgParam value) {
         if (paramsBuilder_ == null) {
@@ -724,7 +732,7 @@ public final class ShowMessageNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .MsgParam params = 13;</code>
+       * <code>repeated .MsgParam params = 10;</code>
        */
       public Builder addParams(
           int index, emu.grasscutter.net.proto.MsgParamOuterClass.MsgParam value) {
@@ -741,7 +749,7 @@ public final class ShowMessageNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .MsgParam params = 13;</code>
+       * <code>repeated .MsgParam params = 10;</code>
        */
       public Builder addParams(
           emu.grasscutter.net.proto.MsgParamOuterClass.MsgParam.Builder builderForValue) {
@@ -755,7 +763,7 @@ public final class ShowMessageNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .MsgParam params = 13;</code>
+       * <code>repeated .MsgParam params = 10;</code>
        */
       public Builder addParams(
           int index, emu.grasscutter.net.proto.MsgParamOuterClass.MsgParam.Builder builderForValue) {
@@ -769,7 +777,7 @@ public final class ShowMessageNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .MsgParam params = 13;</code>
+       * <code>repeated .MsgParam params = 10;</code>
        */
       public Builder addAllParams(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.MsgParamOuterClass.MsgParam> values) {
@@ -784,7 +792,7 @@ public final class ShowMessageNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .MsgParam params = 13;</code>
+       * <code>repeated .MsgParam params = 10;</code>
        */
       public Builder clearParams() {
         if (paramsBuilder_ == null) {
@@ -797,7 +805,7 @@ public final class ShowMessageNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .MsgParam params = 13;</code>
+       * <code>repeated .MsgParam params = 10;</code>
        */
       public Builder removeParams(int index) {
         if (paramsBuilder_ == null) {
@@ -810,14 +818,14 @@ public final class ShowMessageNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .MsgParam params = 13;</code>
+       * <code>repeated .MsgParam params = 10;</code>
        */
       public emu.grasscutter.net.proto.MsgParamOuterClass.MsgParam.Builder getParamsBuilder(
           int index) {
         return getParamsFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .MsgParam params = 13;</code>
+       * <code>repeated .MsgParam params = 10;</code>
        */
       public emu.grasscutter.net.proto.MsgParamOuterClass.MsgParamOrBuilder getParamsOrBuilder(
           int index) {
@@ -827,7 +835,7 @@ public final class ShowMessageNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .MsgParam params = 13;</code>
+       * <code>repeated .MsgParam params = 10;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.MsgParamOuterClass.MsgParamOrBuilder> 
            getParamsOrBuilderList() {
@@ -838,14 +846,14 @@ public final class ShowMessageNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .MsgParam params = 13;</code>
+       * <code>repeated .MsgParam params = 10;</code>
        */
       public emu.grasscutter.net.proto.MsgParamOuterClass.MsgParam.Builder addParamsBuilder() {
         return getParamsFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.MsgParamOuterClass.MsgParam.getDefaultInstance());
       }
       /**
-       * <code>repeated .MsgParam params = 13;</code>
+       * <code>repeated .MsgParam params = 10;</code>
        */
       public emu.grasscutter.net.proto.MsgParamOuterClass.MsgParam.Builder addParamsBuilder(
           int index) {
@@ -853,7 +861,7 @@ public final class ShowMessageNotifyOuterClass {
             index, emu.grasscutter.net.proto.MsgParamOuterClass.MsgParam.getDefaultInstance());
       }
       /**
-       * <code>repeated .MsgParam params = 13;</code>
+       * <code>repeated .MsgParam params = 10;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.MsgParamOuterClass.MsgParam.Builder> 
            getParamsBuilderList() {
@@ -942,7 +950,7 @@ public final class ShowMessageNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n\027ShowMessageNotify.proto\032\016MsgParam.prot" +
       "o\032\016SvrMsgId.proto\"I\n\021ShowMessageNotify\022\031" +
-      "\n\006msg_id\030\016 \001(\0162\t.SvrMsgId\022\031\n\006params\030\r \003(" +
+      "\n\006msg_id\030\t \001(\0162\t.SvrMsgId\022\031\n\006params\030\n \003(" +
       "\0132\t.MsgParamB\033\n\031emu.grasscutter.net.prot" +
       "ob\006proto3"
     };

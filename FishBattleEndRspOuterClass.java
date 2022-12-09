@@ -19,101 +19,6 @@ public final class FishBattleEndRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_got_reward = 10;</code>
-     * @return The isGotReward.
-     */
-    boolean getIsGotReward();
-
-    /**
-     * <code>repeated .ItemParam reward_item_list = 11;</code>
-     */
-    java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> 
-        getRewardItemListList();
-    /**
-     * <code>repeated .ItemParam reward_item_list = 11;</code>
-     */
-    emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam getRewardItemList(int index);
-    /**
-     * <code>repeated .ItemParam reward_item_list = 11;</code>
-     */
-    int getRewardItemListCount();
-    /**
-     * <code>repeated .ItemParam reward_item_list = 11;</code>
-     */
-    java.util.List<? extends emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder> 
-        getRewardItemListOrBuilderList();
-    /**
-     * <code>repeated .ItemParam reward_item_list = 11;</code>
-     */
-    emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder getRewardItemListOrBuilder(
-        int index);
-
-    /**
-     * <code>repeated .ItemParam talent_item_list = 13;</code>
-     */
-    java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> 
-        getTalentItemListList();
-    /**
-     * <code>repeated .ItemParam talent_item_list = 13;</code>
-     */
-    emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam getTalentItemList(int index);
-    /**
-     * <code>repeated .ItemParam talent_item_list = 13;</code>
-     */
-    int getTalentItemListCount();
-    /**
-     * <code>repeated .ItemParam talent_item_list = 13;</code>
-     */
-    java.util.List<? extends emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder> 
-        getTalentItemListOrBuilderList();
-    /**
-     * <code>repeated .ItemParam talent_item_list = 13;</code>
-     */
-    emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder getTalentItemListOrBuilder(
-        int index);
-
-    /**
-     * <code>repeated .ItemParam drop_item_list = 9;</code>
-     */
-    java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> 
-        getDropItemListList();
-    /**
-     * <code>repeated .ItemParam drop_item_list = 9;</code>
-     */
-    emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam getDropItemList(int index);
-    /**
-     * <code>repeated .ItemParam drop_item_list = 9;</code>
-     */
-    int getDropItemListCount();
-    /**
-     * <code>repeated .ItemParam drop_item_list = 9;</code>
-     */
-    java.util.List<? extends emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder> 
-        getDropItemListOrBuilderList();
-    /**
-     * <code>repeated .ItemParam drop_item_list = 9;</code>
-     */
-    emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder getDropItemListOrBuilder(
-        int index);
-
-    /**
-     * <code>int32 retcode = 7;</code>
-     * @return The retcode.
-     */
-    int getRetcode();
-
-    /**
-     * <code>.FishBattleEndRsp.FishNoRewardReason no_reward_reason = 14;</code>
-     * @return The enum numeric value on the wire for noRewardReason.
-     */
-    int getNoRewardReasonValue();
-    /**
-     * <code>.FishBattleEndRsp.FishNoRewardReason no_reward_reason = 14;</code>
-     * @return The noRewardReason.
-     */
-    emu.grasscutter.net.proto.FishBattleEndRspOuterClass.FishBattleEndRsp.FishNoRewardReason getNoRewardReason();
-
-    /**
      * <code>.FishBattleResult battle_result = 6;</code>
      * @return The enum numeric value on the wire for battleResult.
      */
@@ -123,12 +28,111 @@ public final class FishBattleEndRspOuterClass {
      * @return The battleResult.
      */
     emu.grasscutter.net.proto.FishBattleResultOuterClass.FishBattleResult getBattleResult();
+
+    /**
+     * <code>.FishBattleEndRsp.FishNoRewardReason no_reward_reason = 2;</code>
+     * @return The enum numeric value on the wire for noRewardReason.
+     */
+    int getNoRewardReasonValue();
+    /**
+     * <code>.FishBattleEndRsp.FishNoRewardReason no_reward_reason = 2;</code>
+     * @return The noRewardReason.
+     */
+    emu.grasscutter.net.proto.FishBattleEndRspOuterClass.FishBattleEndRsp.FishNoRewardReason getNoRewardReason();
+
+    /**
+     * <code>int32 retcode = 9;</code>
+     * @return The retcode.
+     */
+    int getRetcode();
+
+    /**
+     * <code>repeated .ItemParam Unk3300_ABBBGOBDJEC = 12;</code>
+     */
+    java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> 
+        getUnk3300ABBBGOBDJECList();
+    /**
+     * <code>repeated .ItemParam Unk3300_ABBBGOBDJEC = 12;</code>
+     */
+    emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam getUnk3300ABBBGOBDJEC(int index);
+    /**
+     * <code>repeated .ItemParam Unk3300_ABBBGOBDJEC = 12;</code>
+     */
+    int getUnk3300ABBBGOBDJECCount();
+    /**
+     * <code>repeated .ItemParam Unk3300_ABBBGOBDJEC = 12;</code>
+     */
+    java.util.List<? extends emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder> 
+        getUnk3300ABBBGOBDJECOrBuilderList();
+    /**
+     * <code>repeated .ItemParam Unk3300_ABBBGOBDJEC = 12;</code>
+     */
+    emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder getUnk3300ABBBGOBDJECOrBuilder(
+        int index);
+
+    /**
+     * <code>bool is_got_reward = 8;</code>
+     * @return The isGotReward.
+     */
+    boolean getIsGotReward();
+
+    /**
+     * <code>repeated .ItemParam Unk3300_MDCKKPGNKGL = 1;</code>
+     */
+    java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> 
+        getUnk3300MDCKKPGNKGLList();
+    /**
+     * <code>repeated .ItemParam Unk3300_MDCKKPGNKGL = 1;</code>
+     */
+    emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam getUnk3300MDCKKPGNKGL(int index);
+    /**
+     * <code>repeated .ItemParam Unk3300_MDCKKPGNKGL = 1;</code>
+     */
+    int getUnk3300MDCKKPGNKGLCount();
+    /**
+     * <code>repeated .ItemParam Unk3300_MDCKKPGNKGL = 1;</code>
+     */
+    java.util.List<? extends emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder> 
+        getUnk3300MDCKKPGNKGLOrBuilderList();
+    /**
+     * <code>repeated .ItemParam Unk3300_MDCKKPGNKGL = 1;</code>
+     */
+    emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder getUnk3300MDCKKPGNKGLOrBuilder(
+        int index);
+
+    /**
+     * <code>repeated .ItemParam reward_item_list = 15;</code>
+     */
+    java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> 
+        getRewardItemListList();
+    /**
+     * <code>repeated .ItemParam reward_item_list = 15;</code>
+     */
+    emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam getRewardItemList(int index);
+    /**
+     * <code>repeated .ItemParam reward_item_list = 15;</code>
+     */
+    int getRewardItemListCount();
+    /**
+     * <code>repeated .ItemParam reward_item_list = 15;</code>
+     */
+    java.util.List<? extends emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder> 
+        getRewardItemListOrBuilderList();
+    /**
+     * <code>repeated .ItemParam reward_item_list = 15;</code>
+     */
+    emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder getRewardItemListOrBuilder(
+        int index);
   }
   /**
    * <pre>
-   * CmdId: 5842
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 5845;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code FishBattleEndRsp}
@@ -143,11 +147,11 @@ public final class FishBattleEndRspOuterClass {
       super(builder);
     }
     private FishBattleEndRsp() {
-      rewardItemList_ = java.util.Collections.emptyList();
-      talentItemList_ = java.util.Collections.emptyList();
-      dropItemList_ = java.util.Collections.emptyList();
-      noRewardReason_ = 0;
       battleResult_ = 0;
+      noRewardReason_ = 0;
+      unk3300ABBBGOBDJEC_ = java.util.Collections.emptyList();
+      unk3300MDCKKPGNKGL_ = java.util.Collections.emptyList();
+      rewardItemList_ = java.util.Collections.emptyList();
     }
 
     @java.lang.Override
@@ -181,53 +185,53 @@ public final class FishBattleEndRspOuterClass {
             case 0:
               done = true;
               break;
+            case 10: {
+              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
+                unk3300MDCKKPGNKGL_ = new java.util.ArrayList<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam>();
+                mutable_bitField0_ |= 0x00000002;
+              }
+              unk3300MDCKKPGNKGL_.add(
+                  input.readMessage(emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.parser(), extensionRegistry));
+              break;
+            }
+            case 16: {
+              int rawValue = input.readEnum();
+
+              noRewardReason_ = rawValue;
+              break;
+            }
             case 48: {
               int rawValue = input.readEnum();
 
               battleResult_ = rawValue;
               break;
             }
-            case 56: {
-
-              retcode_ = input.readInt32();
-              break;
-            }
-            case 74: {
-              if (!((mutable_bitField0_ & 0x00000004) != 0)) {
-                dropItemList_ = new java.util.ArrayList<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam>();
-                mutable_bitField0_ |= 0x00000004;
-              }
-              dropItemList_.add(
-                  input.readMessage(emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.parser(), extensionRegistry));
-              break;
-            }
-            case 80: {
+            case 64: {
 
               isGotReward_ = input.readBool();
               break;
             }
-            case 90: {
+            case 72: {
+
+              retcode_ = input.readInt32();
+              break;
+            }
+            case 98: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                rewardItemList_ = new java.util.ArrayList<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam>();
+                unk3300ABBBGOBDJEC_ = new java.util.ArrayList<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam>();
                 mutable_bitField0_ |= 0x00000001;
+              }
+              unk3300ABBBGOBDJEC_.add(
+                  input.readMessage(emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.parser(), extensionRegistry));
+              break;
+            }
+            case 122: {
+              if (!((mutable_bitField0_ & 0x00000004) != 0)) {
+                rewardItemList_ = new java.util.ArrayList<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam>();
+                mutable_bitField0_ |= 0x00000004;
               }
               rewardItemList_.add(
                   input.readMessage(emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.parser(), extensionRegistry));
-              break;
-            }
-            case 106: {
-              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
-                talentItemList_ = new java.util.ArrayList<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam>();
-                mutable_bitField0_ |= 0x00000002;
-              }
-              talentItemList_.add(
-                  input.readMessage(emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.parser(), extensionRegistry));
-              break;
-            }
-            case 112: {
-              int rawValue = input.readEnum();
-
-              noRewardReason_ = rawValue;
               break;
             }
             default: {
@@ -245,14 +249,14 @@ public final class FishBattleEndRspOuterClass {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
       } finally {
-        if (((mutable_bitField0_ & 0x00000004) != 0)) {
-          dropItemList_ = java.util.Collections.unmodifiableList(dropItemList_);
+        if (((mutable_bitField0_ & 0x00000002) != 0)) {
+          unk3300MDCKKPGNKGL_ = java.util.Collections.unmodifiableList(unk3300MDCKKPGNKGL_);
         }
         if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          rewardItemList_ = java.util.Collections.unmodifiableList(rewardItemList_);
+          unk3300ABBBGOBDJEC_ = java.util.Collections.unmodifiableList(unk3300ABBBGOBDJEC_);
         }
-        if (((mutable_bitField0_ & 0x00000002) != 0)) {
-          talentItemList_ = java.util.Collections.unmodifiableList(talentItemList_);
+        if (((mutable_bitField0_ & 0x00000004) != 0)) {
+          rewardItemList_ = java.util.Collections.unmodifiableList(rewardItemList_);
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -397,167 +401,6 @@ public final class FishBattleEndRspOuterClass {
       // @@protoc_insertion_point(enum_scope:FishBattleEndRsp.FishNoRewardReason)
     }
 
-    public static final int IS_GOT_REWARD_FIELD_NUMBER = 10;
-    private boolean isGotReward_;
-    /**
-     * <code>bool is_got_reward = 10;</code>
-     * @return The isGotReward.
-     */
-    @java.lang.Override
-    public boolean getIsGotReward() {
-      return isGotReward_;
-    }
-
-    public static final int REWARD_ITEM_LIST_FIELD_NUMBER = 11;
-    private java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> rewardItemList_;
-    /**
-     * <code>repeated .ItemParam reward_item_list = 11;</code>
-     */
-    @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> getRewardItemListList() {
-      return rewardItemList_;
-    }
-    /**
-     * <code>repeated .ItemParam reward_item_list = 11;</code>
-     */
-    @java.lang.Override
-    public java.util.List<? extends emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder> 
-        getRewardItemListOrBuilderList() {
-      return rewardItemList_;
-    }
-    /**
-     * <code>repeated .ItemParam reward_item_list = 11;</code>
-     */
-    @java.lang.Override
-    public int getRewardItemListCount() {
-      return rewardItemList_.size();
-    }
-    /**
-     * <code>repeated .ItemParam reward_item_list = 11;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam getRewardItemList(int index) {
-      return rewardItemList_.get(index);
-    }
-    /**
-     * <code>repeated .ItemParam reward_item_list = 11;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder getRewardItemListOrBuilder(
-        int index) {
-      return rewardItemList_.get(index);
-    }
-
-    public static final int TALENT_ITEM_LIST_FIELD_NUMBER = 13;
-    private java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> talentItemList_;
-    /**
-     * <code>repeated .ItemParam talent_item_list = 13;</code>
-     */
-    @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> getTalentItemListList() {
-      return talentItemList_;
-    }
-    /**
-     * <code>repeated .ItemParam talent_item_list = 13;</code>
-     */
-    @java.lang.Override
-    public java.util.List<? extends emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder> 
-        getTalentItemListOrBuilderList() {
-      return talentItemList_;
-    }
-    /**
-     * <code>repeated .ItemParam talent_item_list = 13;</code>
-     */
-    @java.lang.Override
-    public int getTalentItemListCount() {
-      return talentItemList_.size();
-    }
-    /**
-     * <code>repeated .ItemParam talent_item_list = 13;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam getTalentItemList(int index) {
-      return talentItemList_.get(index);
-    }
-    /**
-     * <code>repeated .ItemParam talent_item_list = 13;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder getTalentItemListOrBuilder(
-        int index) {
-      return talentItemList_.get(index);
-    }
-
-    public static final int DROP_ITEM_LIST_FIELD_NUMBER = 9;
-    private java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> dropItemList_;
-    /**
-     * <code>repeated .ItemParam drop_item_list = 9;</code>
-     */
-    @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> getDropItemListList() {
-      return dropItemList_;
-    }
-    /**
-     * <code>repeated .ItemParam drop_item_list = 9;</code>
-     */
-    @java.lang.Override
-    public java.util.List<? extends emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder> 
-        getDropItemListOrBuilderList() {
-      return dropItemList_;
-    }
-    /**
-     * <code>repeated .ItemParam drop_item_list = 9;</code>
-     */
-    @java.lang.Override
-    public int getDropItemListCount() {
-      return dropItemList_.size();
-    }
-    /**
-     * <code>repeated .ItemParam drop_item_list = 9;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam getDropItemList(int index) {
-      return dropItemList_.get(index);
-    }
-    /**
-     * <code>repeated .ItemParam drop_item_list = 9;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder getDropItemListOrBuilder(
-        int index) {
-      return dropItemList_.get(index);
-    }
-
-    public static final int RETCODE_FIELD_NUMBER = 7;
-    private int retcode_;
-    /**
-     * <code>int32 retcode = 7;</code>
-     * @return The retcode.
-     */
-    @java.lang.Override
-    public int getRetcode() {
-      return retcode_;
-    }
-
-    public static final int NO_REWARD_REASON_FIELD_NUMBER = 14;
-    private int noRewardReason_;
-    /**
-     * <code>.FishBattleEndRsp.FishNoRewardReason no_reward_reason = 14;</code>
-     * @return The enum numeric value on the wire for noRewardReason.
-     */
-    @java.lang.Override public int getNoRewardReasonValue() {
-      return noRewardReason_;
-    }
-    /**
-     * <code>.FishBattleEndRsp.FishNoRewardReason no_reward_reason = 14;</code>
-     * @return The noRewardReason.
-     */
-    @java.lang.Override public emu.grasscutter.net.proto.FishBattleEndRspOuterClass.FishBattleEndRsp.FishNoRewardReason getNoRewardReason() {
-      @SuppressWarnings("deprecation")
-      emu.grasscutter.net.proto.FishBattleEndRspOuterClass.FishBattleEndRsp.FishNoRewardReason result = emu.grasscutter.net.proto.FishBattleEndRspOuterClass.FishBattleEndRsp.FishNoRewardReason.valueOf(noRewardReason_);
-      return result == null ? emu.grasscutter.net.proto.FishBattleEndRspOuterClass.FishBattleEndRsp.FishNoRewardReason.UNRECOGNIZED : result;
-    }
-
     public static final int BATTLE_RESULT_FIELD_NUMBER = 6;
     private int battleResult_;
     /**
@@ -577,6 +420,167 @@ public final class FishBattleEndRspOuterClass {
       return result == null ? emu.grasscutter.net.proto.FishBattleResultOuterClass.FishBattleResult.UNRECOGNIZED : result;
     }
 
+    public static final int NO_REWARD_REASON_FIELD_NUMBER = 2;
+    private int noRewardReason_;
+    /**
+     * <code>.FishBattleEndRsp.FishNoRewardReason no_reward_reason = 2;</code>
+     * @return The enum numeric value on the wire for noRewardReason.
+     */
+    @java.lang.Override public int getNoRewardReasonValue() {
+      return noRewardReason_;
+    }
+    /**
+     * <code>.FishBattleEndRsp.FishNoRewardReason no_reward_reason = 2;</code>
+     * @return The noRewardReason.
+     */
+    @java.lang.Override public emu.grasscutter.net.proto.FishBattleEndRspOuterClass.FishBattleEndRsp.FishNoRewardReason getNoRewardReason() {
+      @SuppressWarnings("deprecation")
+      emu.grasscutter.net.proto.FishBattleEndRspOuterClass.FishBattleEndRsp.FishNoRewardReason result = emu.grasscutter.net.proto.FishBattleEndRspOuterClass.FishBattleEndRsp.FishNoRewardReason.valueOf(noRewardReason_);
+      return result == null ? emu.grasscutter.net.proto.FishBattleEndRspOuterClass.FishBattleEndRsp.FishNoRewardReason.UNRECOGNIZED : result;
+    }
+
+    public static final int RETCODE_FIELD_NUMBER = 9;
+    private int retcode_;
+    /**
+     * <code>int32 retcode = 9;</code>
+     * @return The retcode.
+     */
+    @java.lang.Override
+    public int getRetcode() {
+      return retcode_;
+    }
+
+    public static final int UNK3300_ABBBGOBDJEC_FIELD_NUMBER = 12;
+    private java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> unk3300ABBBGOBDJEC_;
+    /**
+     * <code>repeated .ItemParam Unk3300_ABBBGOBDJEC = 12;</code>
+     */
+    @java.lang.Override
+    public java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> getUnk3300ABBBGOBDJECList() {
+      return unk3300ABBBGOBDJEC_;
+    }
+    /**
+     * <code>repeated .ItemParam Unk3300_ABBBGOBDJEC = 12;</code>
+     */
+    @java.lang.Override
+    public java.util.List<? extends emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder> 
+        getUnk3300ABBBGOBDJECOrBuilderList() {
+      return unk3300ABBBGOBDJEC_;
+    }
+    /**
+     * <code>repeated .ItemParam Unk3300_ABBBGOBDJEC = 12;</code>
+     */
+    @java.lang.Override
+    public int getUnk3300ABBBGOBDJECCount() {
+      return unk3300ABBBGOBDJEC_.size();
+    }
+    /**
+     * <code>repeated .ItemParam Unk3300_ABBBGOBDJEC = 12;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam getUnk3300ABBBGOBDJEC(int index) {
+      return unk3300ABBBGOBDJEC_.get(index);
+    }
+    /**
+     * <code>repeated .ItemParam Unk3300_ABBBGOBDJEC = 12;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder getUnk3300ABBBGOBDJECOrBuilder(
+        int index) {
+      return unk3300ABBBGOBDJEC_.get(index);
+    }
+
+    public static final int IS_GOT_REWARD_FIELD_NUMBER = 8;
+    private boolean isGotReward_;
+    /**
+     * <code>bool is_got_reward = 8;</code>
+     * @return The isGotReward.
+     */
+    @java.lang.Override
+    public boolean getIsGotReward() {
+      return isGotReward_;
+    }
+
+    public static final int UNK3300_MDCKKPGNKGL_FIELD_NUMBER = 1;
+    private java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> unk3300MDCKKPGNKGL_;
+    /**
+     * <code>repeated .ItemParam Unk3300_MDCKKPGNKGL = 1;</code>
+     */
+    @java.lang.Override
+    public java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> getUnk3300MDCKKPGNKGLList() {
+      return unk3300MDCKKPGNKGL_;
+    }
+    /**
+     * <code>repeated .ItemParam Unk3300_MDCKKPGNKGL = 1;</code>
+     */
+    @java.lang.Override
+    public java.util.List<? extends emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder> 
+        getUnk3300MDCKKPGNKGLOrBuilderList() {
+      return unk3300MDCKKPGNKGL_;
+    }
+    /**
+     * <code>repeated .ItemParam Unk3300_MDCKKPGNKGL = 1;</code>
+     */
+    @java.lang.Override
+    public int getUnk3300MDCKKPGNKGLCount() {
+      return unk3300MDCKKPGNKGL_.size();
+    }
+    /**
+     * <code>repeated .ItemParam Unk3300_MDCKKPGNKGL = 1;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam getUnk3300MDCKKPGNKGL(int index) {
+      return unk3300MDCKKPGNKGL_.get(index);
+    }
+    /**
+     * <code>repeated .ItemParam Unk3300_MDCKKPGNKGL = 1;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder getUnk3300MDCKKPGNKGLOrBuilder(
+        int index) {
+      return unk3300MDCKKPGNKGL_.get(index);
+    }
+
+    public static final int REWARD_ITEM_LIST_FIELD_NUMBER = 15;
+    private java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> rewardItemList_;
+    /**
+     * <code>repeated .ItemParam reward_item_list = 15;</code>
+     */
+    @java.lang.Override
+    public java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> getRewardItemListList() {
+      return rewardItemList_;
+    }
+    /**
+     * <code>repeated .ItemParam reward_item_list = 15;</code>
+     */
+    @java.lang.Override
+    public java.util.List<? extends emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder> 
+        getRewardItemListOrBuilderList() {
+      return rewardItemList_;
+    }
+    /**
+     * <code>repeated .ItemParam reward_item_list = 15;</code>
+     */
+    @java.lang.Override
+    public int getRewardItemListCount() {
+      return rewardItemList_.size();
+    }
+    /**
+     * <code>repeated .ItemParam reward_item_list = 15;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam getRewardItemList(int index) {
+      return rewardItemList_.get(index);
+    }
+    /**
+     * <code>repeated .ItemParam reward_item_list = 15;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder getRewardItemListOrBuilder(
+        int index) {
+      return rewardItemList_.get(index);
+    }
+
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
     public final boolean isInitialized() {
@@ -591,26 +595,26 @@ public final class FishBattleEndRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      for (int i = 0; i < unk3300MDCKKPGNKGL_.size(); i++) {
+        output.writeMessage(1, unk3300MDCKKPGNKGL_.get(i));
+      }
+      if (noRewardReason_ != emu.grasscutter.net.proto.FishBattleEndRspOuterClass.FishBattleEndRsp.FishNoRewardReason.FISH_NO_REWARD_REASON_NONE.getNumber()) {
+        output.writeEnum(2, noRewardReason_);
+      }
       if (battleResult_ != emu.grasscutter.net.proto.FishBattleResultOuterClass.FishBattleResult.FISH_BATTLE_RESULT_NONE.getNumber()) {
         output.writeEnum(6, battleResult_);
       }
-      if (retcode_ != 0) {
-        output.writeInt32(7, retcode_);
-      }
-      for (int i = 0; i < dropItemList_.size(); i++) {
-        output.writeMessage(9, dropItemList_.get(i));
-      }
       if (isGotReward_ != false) {
-        output.writeBool(10, isGotReward_);
+        output.writeBool(8, isGotReward_);
+      }
+      if (retcode_ != 0) {
+        output.writeInt32(9, retcode_);
+      }
+      for (int i = 0; i < unk3300ABBBGOBDJEC_.size(); i++) {
+        output.writeMessage(12, unk3300ABBBGOBDJEC_.get(i));
       }
       for (int i = 0; i < rewardItemList_.size(); i++) {
-        output.writeMessage(11, rewardItemList_.get(i));
-      }
-      for (int i = 0; i < talentItemList_.size(); i++) {
-        output.writeMessage(13, talentItemList_.get(i));
-      }
-      if (noRewardReason_ != emu.grasscutter.net.proto.FishBattleEndRspOuterClass.FishBattleEndRsp.FishNoRewardReason.FISH_NO_REWARD_REASON_NONE.getNumber()) {
-        output.writeEnum(14, noRewardReason_);
+        output.writeMessage(15, rewardItemList_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -621,33 +625,33 @@ public final class FishBattleEndRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      for (int i = 0; i < unk3300MDCKKPGNKGL_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(1, unk3300MDCKKPGNKGL_.get(i));
+      }
+      if (noRewardReason_ != emu.grasscutter.net.proto.FishBattleEndRspOuterClass.FishBattleEndRsp.FishNoRewardReason.FISH_NO_REWARD_REASON_NONE.getNumber()) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeEnumSize(2, noRewardReason_);
+      }
       if (battleResult_ != emu.grasscutter.net.proto.FishBattleResultOuterClass.FishBattleResult.FISH_BATTLE_RESULT_NONE.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
           .computeEnumSize(6, battleResult_);
       }
-      if (retcode_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(7, retcode_);
-      }
-      for (int i = 0; i < dropItemList_.size(); i++) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(9, dropItemList_.get(i));
-      }
       if (isGotReward_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(10, isGotReward_);
+          .computeBoolSize(8, isGotReward_);
+      }
+      if (retcode_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(9, retcode_);
+      }
+      for (int i = 0; i < unk3300ABBBGOBDJEC_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(12, unk3300ABBBGOBDJEC_.get(i));
       }
       for (int i = 0; i < rewardItemList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(11, rewardItemList_.get(i));
-      }
-      for (int i = 0; i < talentItemList_.size(); i++) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(13, talentItemList_.get(i));
-      }
-      if (noRewardReason_ != emu.grasscutter.net.proto.FishBattleEndRspOuterClass.FishBattleEndRsp.FishNoRewardReason.FISH_NO_REWARD_REASON_NONE.getNumber()) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(14, noRewardReason_);
+          .computeMessageSize(15, rewardItemList_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -664,18 +668,18 @@ public final class FishBattleEndRspOuterClass {
       }
       emu.grasscutter.net.proto.FishBattleEndRspOuterClass.FishBattleEndRsp other = (emu.grasscutter.net.proto.FishBattleEndRspOuterClass.FishBattleEndRsp) obj;
 
-      if (getIsGotReward()
-          != other.getIsGotReward()) return false;
-      if (!getRewardItemListList()
-          .equals(other.getRewardItemListList())) return false;
-      if (!getTalentItemListList()
-          .equals(other.getTalentItemListList())) return false;
-      if (!getDropItemListList()
-          .equals(other.getDropItemListList())) return false;
+      if (battleResult_ != other.battleResult_) return false;
+      if (noRewardReason_ != other.noRewardReason_) return false;
       if (getRetcode()
           != other.getRetcode()) return false;
-      if (noRewardReason_ != other.noRewardReason_) return false;
-      if (battleResult_ != other.battleResult_) return false;
+      if (!getUnk3300ABBBGOBDJECList()
+          .equals(other.getUnk3300ABBBGOBDJECList())) return false;
+      if (getIsGotReward()
+          != other.getIsGotReward()) return false;
+      if (!getUnk3300MDCKKPGNKGLList()
+          .equals(other.getUnk3300MDCKKPGNKGLList())) return false;
+      if (!getRewardItemListList()
+          .equals(other.getRewardItemListList())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -687,27 +691,27 @@ public final class FishBattleEndRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + BATTLE_RESULT_FIELD_NUMBER;
+      hash = (53 * hash) + battleResult_;
+      hash = (37 * hash) + NO_REWARD_REASON_FIELD_NUMBER;
+      hash = (53 * hash) + noRewardReason_;
+      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
+      hash = (53 * hash) + getRetcode();
+      if (getUnk3300ABBBGOBDJECCount() > 0) {
+        hash = (37 * hash) + UNK3300_ABBBGOBDJEC_FIELD_NUMBER;
+        hash = (53 * hash) + getUnk3300ABBBGOBDJECList().hashCode();
+      }
       hash = (37 * hash) + IS_GOT_REWARD_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsGotReward());
+      if (getUnk3300MDCKKPGNKGLCount() > 0) {
+        hash = (37 * hash) + UNK3300_MDCKKPGNKGL_FIELD_NUMBER;
+        hash = (53 * hash) + getUnk3300MDCKKPGNKGLList().hashCode();
+      }
       if (getRewardItemListCount() > 0) {
         hash = (37 * hash) + REWARD_ITEM_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getRewardItemListList().hashCode();
       }
-      if (getTalentItemListCount() > 0) {
-        hash = (37 * hash) + TALENT_ITEM_LIST_FIELD_NUMBER;
-        hash = (53 * hash) + getTalentItemListList().hashCode();
-      }
-      if (getDropItemListCount() > 0) {
-        hash = (37 * hash) + DROP_ITEM_LIST_FIELD_NUMBER;
-        hash = (53 * hash) + getDropItemListList().hashCode();
-      }
-      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
-      hash = (53 * hash) + getRetcode();
-      hash = (37 * hash) + NO_REWARD_REASON_FIELD_NUMBER;
-      hash = (53 * hash) + noRewardReason_;
-      hash = (37 * hash) + BATTLE_RESULT_FIELD_NUMBER;
-      hash = (53 * hash) + battleResult_;
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -805,9 +809,13 @@ public final class FishBattleEndRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 5842
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 5845;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code FishBattleEndRsp}
@@ -842,40 +850,40 @@ public final class FishBattleEndRspOuterClass {
       private void maybeForceBuilderInitialization() {
         if (com.google.protobuf.GeneratedMessageV3
                 .alwaysUseFieldBuilders) {
+          getUnk3300ABBBGOBDJECFieldBuilder();
+          getUnk3300MDCKKPGNKGLFieldBuilder();
           getRewardItemListFieldBuilder();
-          getTalentItemListFieldBuilder();
-          getDropItemListFieldBuilder();
         }
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        isGotReward_ = false;
-
-        if (rewardItemListBuilder_ == null) {
-          rewardItemList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000001);
-        } else {
-          rewardItemListBuilder_.clear();
-        }
-        if (talentItemListBuilder_ == null) {
-          talentItemList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000002);
-        } else {
-          talentItemListBuilder_.clear();
-        }
-        if (dropItemListBuilder_ == null) {
-          dropItemList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000004);
-        } else {
-          dropItemListBuilder_.clear();
-        }
-        retcode_ = 0;
+        battleResult_ = 0;
 
         noRewardReason_ = 0;
 
-        battleResult_ = 0;
+        retcode_ = 0;
 
+        if (unk3300ABBBGOBDJECBuilder_ == null) {
+          unk3300ABBBGOBDJEC_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000001);
+        } else {
+          unk3300ABBBGOBDJECBuilder_.clear();
+        }
+        isGotReward_ = false;
+
+        if (unk3300MDCKKPGNKGLBuilder_ == null) {
+          unk3300MDCKKPGNKGL_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000002);
+        } else {
+          unk3300MDCKKPGNKGLBuilder_.clear();
+        }
+        if (rewardItemListBuilder_ == null) {
+          rewardItemList_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000004);
+        } else {
+          rewardItemListBuilder_.clear();
+        }
         return this;
       }
 
@@ -903,37 +911,37 @@ public final class FishBattleEndRspOuterClass {
       public emu.grasscutter.net.proto.FishBattleEndRspOuterClass.FishBattleEndRsp buildPartial() {
         emu.grasscutter.net.proto.FishBattleEndRspOuterClass.FishBattleEndRsp result = new emu.grasscutter.net.proto.FishBattleEndRspOuterClass.FishBattleEndRsp(this);
         int from_bitField0_ = bitField0_;
-        result.isGotReward_ = isGotReward_;
-        if (rewardItemListBuilder_ == null) {
+        result.battleResult_ = battleResult_;
+        result.noRewardReason_ = noRewardReason_;
+        result.retcode_ = retcode_;
+        if (unk3300ABBBGOBDJECBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0)) {
-            rewardItemList_ = java.util.Collections.unmodifiableList(rewardItemList_);
+            unk3300ABBBGOBDJEC_ = java.util.Collections.unmodifiableList(unk3300ABBBGOBDJEC_);
             bitField0_ = (bitField0_ & ~0x00000001);
+          }
+          result.unk3300ABBBGOBDJEC_ = unk3300ABBBGOBDJEC_;
+        } else {
+          result.unk3300ABBBGOBDJEC_ = unk3300ABBBGOBDJECBuilder_.build();
+        }
+        result.isGotReward_ = isGotReward_;
+        if (unk3300MDCKKPGNKGLBuilder_ == null) {
+          if (((bitField0_ & 0x00000002) != 0)) {
+            unk3300MDCKKPGNKGL_ = java.util.Collections.unmodifiableList(unk3300MDCKKPGNKGL_);
+            bitField0_ = (bitField0_ & ~0x00000002);
+          }
+          result.unk3300MDCKKPGNKGL_ = unk3300MDCKKPGNKGL_;
+        } else {
+          result.unk3300MDCKKPGNKGL_ = unk3300MDCKKPGNKGLBuilder_.build();
+        }
+        if (rewardItemListBuilder_ == null) {
+          if (((bitField0_ & 0x00000004) != 0)) {
+            rewardItemList_ = java.util.Collections.unmodifiableList(rewardItemList_);
+            bitField0_ = (bitField0_ & ~0x00000004);
           }
           result.rewardItemList_ = rewardItemList_;
         } else {
           result.rewardItemList_ = rewardItemListBuilder_.build();
         }
-        if (talentItemListBuilder_ == null) {
-          if (((bitField0_ & 0x00000002) != 0)) {
-            talentItemList_ = java.util.Collections.unmodifiableList(talentItemList_);
-            bitField0_ = (bitField0_ & ~0x00000002);
-          }
-          result.talentItemList_ = talentItemList_;
-        } else {
-          result.talentItemList_ = talentItemListBuilder_.build();
-        }
-        if (dropItemListBuilder_ == null) {
-          if (((bitField0_ & 0x00000004) != 0)) {
-            dropItemList_ = java.util.Collections.unmodifiableList(dropItemList_);
-            bitField0_ = (bitField0_ & ~0x00000004);
-          }
-          result.dropItemList_ = dropItemList_;
-        } else {
-          result.dropItemList_ = dropItemListBuilder_.build();
-        }
-        result.retcode_ = retcode_;
-        result.noRewardReason_ = noRewardReason_;
-        result.battleResult_ = battleResult_;
         onBuilt();
         return result;
       }
@@ -982,14 +990,75 @@ public final class FishBattleEndRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.FishBattleEndRspOuterClass.FishBattleEndRsp other) {
         if (other == emu.grasscutter.net.proto.FishBattleEndRspOuterClass.FishBattleEndRsp.getDefaultInstance()) return this;
+        if (other.battleResult_ != 0) {
+          setBattleResultValue(other.getBattleResultValue());
+        }
+        if (other.noRewardReason_ != 0) {
+          setNoRewardReasonValue(other.getNoRewardReasonValue());
+        }
+        if (other.getRetcode() != 0) {
+          setRetcode(other.getRetcode());
+        }
+        if (unk3300ABBBGOBDJECBuilder_ == null) {
+          if (!other.unk3300ABBBGOBDJEC_.isEmpty()) {
+            if (unk3300ABBBGOBDJEC_.isEmpty()) {
+              unk3300ABBBGOBDJEC_ = other.unk3300ABBBGOBDJEC_;
+              bitField0_ = (bitField0_ & ~0x00000001);
+            } else {
+              ensureUnk3300ABBBGOBDJECIsMutable();
+              unk3300ABBBGOBDJEC_.addAll(other.unk3300ABBBGOBDJEC_);
+            }
+            onChanged();
+          }
+        } else {
+          if (!other.unk3300ABBBGOBDJEC_.isEmpty()) {
+            if (unk3300ABBBGOBDJECBuilder_.isEmpty()) {
+              unk3300ABBBGOBDJECBuilder_.dispose();
+              unk3300ABBBGOBDJECBuilder_ = null;
+              unk3300ABBBGOBDJEC_ = other.unk3300ABBBGOBDJEC_;
+              bitField0_ = (bitField0_ & ~0x00000001);
+              unk3300ABBBGOBDJECBuilder_ = 
+                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+                   getUnk3300ABBBGOBDJECFieldBuilder() : null;
+            } else {
+              unk3300ABBBGOBDJECBuilder_.addAllMessages(other.unk3300ABBBGOBDJEC_);
+            }
+          }
+        }
         if (other.getIsGotReward() != false) {
           setIsGotReward(other.getIsGotReward());
+        }
+        if (unk3300MDCKKPGNKGLBuilder_ == null) {
+          if (!other.unk3300MDCKKPGNKGL_.isEmpty()) {
+            if (unk3300MDCKKPGNKGL_.isEmpty()) {
+              unk3300MDCKKPGNKGL_ = other.unk3300MDCKKPGNKGL_;
+              bitField0_ = (bitField0_ & ~0x00000002);
+            } else {
+              ensureUnk3300MDCKKPGNKGLIsMutable();
+              unk3300MDCKKPGNKGL_.addAll(other.unk3300MDCKKPGNKGL_);
+            }
+            onChanged();
+          }
+        } else {
+          if (!other.unk3300MDCKKPGNKGL_.isEmpty()) {
+            if (unk3300MDCKKPGNKGLBuilder_.isEmpty()) {
+              unk3300MDCKKPGNKGLBuilder_.dispose();
+              unk3300MDCKKPGNKGLBuilder_ = null;
+              unk3300MDCKKPGNKGL_ = other.unk3300MDCKKPGNKGL_;
+              bitField0_ = (bitField0_ & ~0x00000002);
+              unk3300MDCKKPGNKGLBuilder_ = 
+                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+                   getUnk3300MDCKKPGNKGLFieldBuilder() : null;
+            } else {
+              unk3300MDCKKPGNKGLBuilder_.addAllMessages(other.unk3300MDCKKPGNKGL_);
+            }
+          }
         }
         if (rewardItemListBuilder_ == null) {
           if (!other.rewardItemList_.isEmpty()) {
             if (rewardItemList_.isEmpty()) {
               rewardItemList_ = other.rewardItemList_;
-              bitField0_ = (bitField0_ & ~0x00000001);
+              bitField0_ = (bitField0_ & ~0x00000004);
             } else {
               ensureRewardItemListIsMutable();
               rewardItemList_.addAll(other.rewardItemList_);
@@ -1002,7 +1071,7 @@ public final class FishBattleEndRspOuterClass {
               rewardItemListBuilder_.dispose();
               rewardItemListBuilder_ = null;
               rewardItemList_ = other.rewardItemList_;
-              bitField0_ = (bitField0_ & ~0x00000001);
+              bitField0_ = (bitField0_ & ~0x00000004);
               rewardItemListBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
                    getRewardItemListFieldBuilder() : null;
@@ -1010,67 +1079,6 @@ public final class FishBattleEndRspOuterClass {
               rewardItemListBuilder_.addAllMessages(other.rewardItemList_);
             }
           }
-        }
-        if (talentItemListBuilder_ == null) {
-          if (!other.talentItemList_.isEmpty()) {
-            if (talentItemList_.isEmpty()) {
-              talentItemList_ = other.talentItemList_;
-              bitField0_ = (bitField0_ & ~0x00000002);
-            } else {
-              ensureTalentItemListIsMutable();
-              talentItemList_.addAll(other.talentItemList_);
-            }
-            onChanged();
-          }
-        } else {
-          if (!other.talentItemList_.isEmpty()) {
-            if (talentItemListBuilder_.isEmpty()) {
-              talentItemListBuilder_.dispose();
-              talentItemListBuilder_ = null;
-              talentItemList_ = other.talentItemList_;
-              bitField0_ = (bitField0_ & ~0x00000002);
-              talentItemListBuilder_ = 
-                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
-                   getTalentItemListFieldBuilder() : null;
-            } else {
-              talentItemListBuilder_.addAllMessages(other.talentItemList_);
-            }
-          }
-        }
-        if (dropItemListBuilder_ == null) {
-          if (!other.dropItemList_.isEmpty()) {
-            if (dropItemList_.isEmpty()) {
-              dropItemList_ = other.dropItemList_;
-              bitField0_ = (bitField0_ & ~0x00000004);
-            } else {
-              ensureDropItemListIsMutable();
-              dropItemList_.addAll(other.dropItemList_);
-            }
-            onChanged();
-          }
-        } else {
-          if (!other.dropItemList_.isEmpty()) {
-            if (dropItemListBuilder_.isEmpty()) {
-              dropItemListBuilder_.dispose();
-              dropItemListBuilder_ = null;
-              dropItemList_ = other.dropItemList_;
-              bitField0_ = (bitField0_ & ~0x00000004);
-              dropItemListBuilder_ = 
-                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
-                   getDropItemListFieldBuilder() : null;
-            } else {
-              dropItemListBuilder_.addAllMessages(other.dropItemList_);
-            }
-          }
-        }
-        if (other.getRetcode() != 0) {
-          setRetcode(other.getRetcode());
-        }
-        if (other.noRewardReason_ != 0) {
-          setNoRewardReasonValue(other.getNoRewardReasonValue());
-        }
-        if (other.battleResult_ != 0) {
-          setBattleResultValue(other.getBattleResultValue());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -1101,842 +1109,6 @@ public final class FishBattleEndRspOuterClass {
         return this;
       }
       private int bitField0_;
-
-      private boolean isGotReward_ ;
-      /**
-       * <code>bool is_got_reward = 10;</code>
-       * @return The isGotReward.
-       */
-      @java.lang.Override
-      public boolean getIsGotReward() {
-        return isGotReward_;
-      }
-      /**
-       * <code>bool is_got_reward = 10;</code>
-       * @param value The isGotReward to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsGotReward(boolean value) {
-        
-        isGotReward_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_got_reward = 10;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsGotReward() {
-        
-        isGotReward_ = false;
-        onChanged();
-        return this;
-      }
-
-      private java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> rewardItemList_ =
-        java.util.Collections.emptyList();
-      private void ensureRewardItemListIsMutable() {
-        if (!((bitField0_ & 0x00000001) != 0)) {
-          rewardItemList_ = new java.util.ArrayList<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam>(rewardItemList_);
-          bitField0_ |= 0x00000001;
-         }
-      }
-
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder> rewardItemListBuilder_;
-
-      /**
-       * <code>repeated .ItemParam reward_item_list = 11;</code>
-       */
-      public java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> getRewardItemListList() {
-        if (rewardItemListBuilder_ == null) {
-          return java.util.Collections.unmodifiableList(rewardItemList_);
-        } else {
-          return rewardItemListBuilder_.getMessageList();
-        }
-      }
-      /**
-       * <code>repeated .ItemParam reward_item_list = 11;</code>
-       */
-      public int getRewardItemListCount() {
-        if (rewardItemListBuilder_ == null) {
-          return rewardItemList_.size();
-        } else {
-          return rewardItemListBuilder_.getCount();
-        }
-      }
-      /**
-       * <code>repeated .ItemParam reward_item_list = 11;</code>
-       */
-      public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam getRewardItemList(int index) {
-        if (rewardItemListBuilder_ == null) {
-          return rewardItemList_.get(index);
-        } else {
-          return rewardItemListBuilder_.getMessage(index);
-        }
-      }
-      /**
-       * <code>repeated .ItemParam reward_item_list = 11;</code>
-       */
-      public Builder setRewardItemList(
-          int index, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam value) {
-        if (rewardItemListBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureRewardItemListIsMutable();
-          rewardItemList_.set(index, value);
-          onChanged();
-        } else {
-          rewardItemListBuilder_.setMessage(index, value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .ItemParam reward_item_list = 11;</code>
-       */
-      public Builder setRewardItemList(
-          int index, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder builderForValue) {
-        if (rewardItemListBuilder_ == null) {
-          ensureRewardItemListIsMutable();
-          rewardItemList_.set(index, builderForValue.build());
-          onChanged();
-        } else {
-          rewardItemListBuilder_.setMessage(index, builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .ItemParam reward_item_list = 11;</code>
-       */
-      public Builder addRewardItemList(emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam value) {
-        if (rewardItemListBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureRewardItemListIsMutable();
-          rewardItemList_.add(value);
-          onChanged();
-        } else {
-          rewardItemListBuilder_.addMessage(value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .ItemParam reward_item_list = 11;</code>
-       */
-      public Builder addRewardItemList(
-          int index, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam value) {
-        if (rewardItemListBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureRewardItemListIsMutable();
-          rewardItemList_.add(index, value);
-          onChanged();
-        } else {
-          rewardItemListBuilder_.addMessage(index, value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .ItemParam reward_item_list = 11;</code>
-       */
-      public Builder addRewardItemList(
-          emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder builderForValue) {
-        if (rewardItemListBuilder_ == null) {
-          ensureRewardItemListIsMutable();
-          rewardItemList_.add(builderForValue.build());
-          onChanged();
-        } else {
-          rewardItemListBuilder_.addMessage(builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .ItemParam reward_item_list = 11;</code>
-       */
-      public Builder addRewardItemList(
-          int index, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder builderForValue) {
-        if (rewardItemListBuilder_ == null) {
-          ensureRewardItemListIsMutable();
-          rewardItemList_.add(index, builderForValue.build());
-          onChanged();
-        } else {
-          rewardItemListBuilder_.addMessage(index, builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .ItemParam reward_item_list = 11;</code>
-       */
-      public Builder addAllRewardItemList(
-          java.lang.Iterable<? extends emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> values) {
-        if (rewardItemListBuilder_ == null) {
-          ensureRewardItemListIsMutable();
-          com.google.protobuf.AbstractMessageLite.Builder.addAll(
-              values, rewardItemList_);
-          onChanged();
-        } else {
-          rewardItemListBuilder_.addAllMessages(values);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .ItemParam reward_item_list = 11;</code>
-       */
-      public Builder clearRewardItemList() {
-        if (rewardItemListBuilder_ == null) {
-          rewardItemList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000001);
-          onChanged();
-        } else {
-          rewardItemListBuilder_.clear();
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .ItemParam reward_item_list = 11;</code>
-       */
-      public Builder removeRewardItemList(int index) {
-        if (rewardItemListBuilder_ == null) {
-          ensureRewardItemListIsMutable();
-          rewardItemList_.remove(index);
-          onChanged();
-        } else {
-          rewardItemListBuilder_.remove(index);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .ItemParam reward_item_list = 11;</code>
-       */
-      public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder getRewardItemListBuilder(
-          int index) {
-        return getRewardItemListFieldBuilder().getBuilder(index);
-      }
-      /**
-       * <code>repeated .ItemParam reward_item_list = 11;</code>
-       */
-      public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder getRewardItemListOrBuilder(
-          int index) {
-        if (rewardItemListBuilder_ == null) {
-          return rewardItemList_.get(index);  } else {
-          return rewardItemListBuilder_.getMessageOrBuilder(index);
-        }
-      }
-      /**
-       * <code>repeated .ItemParam reward_item_list = 11;</code>
-       */
-      public java.util.List<? extends emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder> 
-           getRewardItemListOrBuilderList() {
-        if (rewardItemListBuilder_ != null) {
-          return rewardItemListBuilder_.getMessageOrBuilderList();
-        } else {
-          return java.util.Collections.unmodifiableList(rewardItemList_);
-        }
-      }
-      /**
-       * <code>repeated .ItemParam reward_item_list = 11;</code>
-       */
-      public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder addRewardItemListBuilder() {
-        return getRewardItemListFieldBuilder().addBuilder(
-            emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.getDefaultInstance());
-      }
-      /**
-       * <code>repeated .ItemParam reward_item_list = 11;</code>
-       */
-      public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder addRewardItemListBuilder(
-          int index) {
-        return getRewardItemListFieldBuilder().addBuilder(
-            index, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.getDefaultInstance());
-      }
-      /**
-       * <code>repeated .ItemParam reward_item_list = 11;</code>
-       */
-      public java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder> 
-           getRewardItemListBuilderList() {
-        return getRewardItemListFieldBuilder().getBuilderList();
-      }
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder> 
-          getRewardItemListFieldBuilder() {
-        if (rewardItemListBuilder_ == null) {
-          rewardItemListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder>(
-                  rewardItemList_,
-                  ((bitField0_ & 0x00000001) != 0),
-                  getParentForChildren(),
-                  isClean());
-          rewardItemList_ = null;
-        }
-        return rewardItemListBuilder_;
-      }
-
-      private java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> talentItemList_ =
-        java.util.Collections.emptyList();
-      private void ensureTalentItemListIsMutable() {
-        if (!((bitField0_ & 0x00000002) != 0)) {
-          talentItemList_ = new java.util.ArrayList<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam>(talentItemList_);
-          bitField0_ |= 0x00000002;
-         }
-      }
-
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder> talentItemListBuilder_;
-
-      /**
-       * <code>repeated .ItemParam talent_item_list = 13;</code>
-       */
-      public java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> getTalentItemListList() {
-        if (talentItemListBuilder_ == null) {
-          return java.util.Collections.unmodifiableList(talentItemList_);
-        } else {
-          return talentItemListBuilder_.getMessageList();
-        }
-      }
-      /**
-       * <code>repeated .ItemParam talent_item_list = 13;</code>
-       */
-      public int getTalentItemListCount() {
-        if (talentItemListBuilder_ == null) {
-          return talentItemList_.size();
-        } else {
-          return talentItemListBuilder_.getCount();
-        }
-      }
-      /**
-       * <code>repeated .ItemParam talent_item_list = 13;</code>
-       */
-      public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam getTalentItemList(int index) {
-        if (talentItemListBuilder_ == null) {
-          return talentItemList_.get(index);
-        } else {
-          return talentItemListBuilder_.getMessage(index);
-        }
-      }
-      /**
-       * <code>repeated .ItemParam talent_item_list = 13;</code>
-       */
-      public Builder setTalentItemList(
-          int index, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam value) {
-        if (talentItemListBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureTalentItemListIsMutable();
-          talentItemList_.set(index, value);
-          onChanged();
-        } else {
-          talentItemListBuilder_.setMessage(index, value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .ItemParam talent_item_list = 13;</code>
-       */
-      public Builder setTalentItemList(
-          int index, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder builderForValue) {
-        if (talentItemListBuilder_ == null) {
-          ensureTalentItemListIsMutable();
-          talentItemList_.set(index, builderForValue.build());
-          onChanged();
-        } else {
-          talentItemListBuilder_.setMessage(index, builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .ItemParam talent_item_list = 13;</code>
-       */
-      public Builder addTalentItemList(emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam value) {
-        if (talentItemListBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureTalentItemListIsMutable();
-          talentItemList_.add(value);
-          onChanged();
-        } else {
-          talentItemListBuilder_.addMessage(value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .ItemParam talent_item_list = 13;</code>
-       */
-      public Builder addTalentItemList(
-          int index, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam value) {
-        if (talentItemListBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureTalentItemListIsMutable();
-          talentItemList_.add(index, value);
-          onChanged();
-        } else {
-          talentItemListBuilder_.addMessage(index, value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .ItemParam talent_item_list = 13;</code>
-       */
-      public Builder addTalentItemList(
-          emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder builderForValue) {
-        if (talentItemListBuilder_ == null) {
-          ensureTalentItemListIsMutable();
-          talentItemList_.add(builderForValue.build());
-          onChanged();
-        } else {
-          talentItemListBuilder_.addMessage(builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .ItemParam talent_item_list = 13;</code>
-       */
-      public Builder addTalentItemList(
-          int index, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder builderForValue) {
-        if (talentItemListBuilder_ == null) {
-          ensureTalentItemListIsMutable();
-          talentItemList_.add(index, builderForValue.build());
-          onChanged();
-        } else {
-          talentItemListBuilder_.addMessage(index, builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .ItemParam talent_item_list = 13;</code>
-       */
-      public Builder addAllTalentItemList(
-          java.lang.Iterable<? extends emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> values) {
-        if (talentItemListBuilder_ == null) {
-          ensureTalentItemListIsMutable();
-          com.google.protobuf.AbstractMessageLite.Builder.addAll(
-              values, talentItemList_);
-          onChanged();
-        } else {
-          talentItemListBuilder_.addAllMessages(values);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .ItemParam talent_item_list = 13;</code>
-       */
-      public Builder clearTalentItemList() {
-        if (talentItemListBuilder_ == null) {
-          talentItemList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000002);
-          onChanged();
-        } else {
-          talentItemListBuilder_.clear();
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .ItemParam talent_item_list = 13;</code>
-       */
-      public Builder removeTalentItemList(int index) {
-        if (talentItemListBuilder_ == null) {
-          ensureTalentItemListIsMutable();
-          talentItemList_.remove(index);
-          onChanged();
-        } else {
-          talentItemListBuilder_.remove(index);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .ItemParam talent_item_list = 13;</code>
-       */
-      public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder getTalentItemListBuilder(
-          int index) {
-        return getTalentItemListFieldBuilder().getBuilder(index);
-      }
-      /**
-       * <code>repeated .ItemParam talent_item_list = 13;</code>
-       */
-      public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder getTalentItemListOrBuilder(
-          int index) {
-        if (talentItemListBuilder_ == null) {
-          return talentItemList_.get(index);  } else {
-          return talentItemListBuilder_.getMessageOrBuilder(index);
-        }
-      }
-      /**
-       * <code>repeated .ItemParam talent_item_list = 13;</code>
-       */
-      public java.util.List<? extends emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder> 
-           getTalentItemListOrBuilderList() {
-        if (talentItemListBuilder_ != null) {
-          return talentItemListBuilder_.getMessageOrBuilderList();
-        } else {
-          return java.util.Collections.unmodifiableList(talentItemList_);
-        }
-      }
-      /**
-       * <code>repeated .ItemParam talent_item_list = 13;</code>
-       */
-      public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder addTalentItemListBuilder() {
-        return getTalentItemListFieldBuilder().addBuilder(
-            emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.getDefaultInstance());
-      }
-      /**
-       * <code>repeated .ItemParam talent_item_list = 13;</code>
-       */
-      public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder addTalentItemListBuilder(
-          int index) {
-        return getTalentItemListFieldBuilder().addBuilder(
-            index, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.getDefaultInstance());
-      }
-      /**
-       * <code>repeated .ItemParam talent_item_list = 13;</code>
-       */
-      public java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder> 
-           getTalentItemListBuilderList() {
-        return getTalentItemListFieldBuilder().getBuilderList();
-      }
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder> 
-          getTalentItemListFieldBuilder() {
-        if (talentItemListBuilder_ == null) {
-          talentItemListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder>(
-                  talentItemList_,
-                  ((bitField0_ & 0x00000002) != 0),
-                  getParentForChildren(),
-                  isClean());
-          talentItemList_ = null;
-        }
-        return talentItemListBuilder_;
-      }
-
-      private java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> dropItemList_ =
-        java.util.Collections.emptyList();
-      private void ensureDropItemListIsMutable() {
-        if (!((bitField0_ & 0x00000004) != 0)) {
-          dropItemList_ = new java.util.ArrayList<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam>(dropItemList_);
-          bitField0_ |= 0x00000004;
-         }
-      }
-
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder> dropItemListBuilder_;
-
-      /**
-       * <code>repeated .ItemParam drop_item_list = 9;</code>
-       */
-      public java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> getDropItemListList() {
-        if (dropItemListBuilder_ == null) {
-          return java.util.Collections.unmodifiableList(dropItemList_);
-        } else {
-          return dropItemListBuilder_.getMessageList();
-        }
-      }
-      /**
-       * <code>repeated .ItemParam drop_item_list = 9;</code>
-       */
-      public int getDropItemListCount() {
-        if (dropItemListBuilder_ == null) {
-          return dropItemList_.size();
-        } else {
-          return dropItemListBuilder_.getCount();
-        }
-      }
-      /**
-       * <code>repeated .ItemParam drop_item_list = 9;</code>
-       */
-      public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam getDropItemList(int index) {
-        if (dropItemListBuilder_ == null) {
-          return dropItemList_.get(index);
-        } else {
-          return dropItemListBuilder_.getMessage(index);
-        }
-      }
-      /**
-       * <code>repeated .ItemParam drop_item_list = 9;</code>
-       */
-      public Builder setDropItemList(
-          int index, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam value) {
-        if (dropItemListBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureDropItemListIsMutable();
-          dropItemList_.set(index, value);
-          onChanged();
-        } else {
-          dropItemListBuilder_.setMessage(index, value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .ItemParam drop_item_list = 9;</code>
-       */
-      public Builder setDropItemList(
-          int index, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder builderForValue) {
-        if (dropItemListBuilder_ == null) {
-          ensureDropItemListIsMutable();
-          dropItemList_.set(index, builderForValue.build());
-          onChanged();
-        } else {
-          dropItemListBuilder_.setMessage(index, builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .ItemParam drop_item_list = 9;</code>
-       */
-      public Builder addDropItemList(emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam value) {
-        if (dropItemListBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureDropItemListIsMutable();
-          dropItemList_.add(value);
-          onChanged();
-        } else {
-          dropItemListBuilder_.addMessage(value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .ItemParam drop_item_list = 9;</code>
-       */
-      public Builder addDropItemList(
-          int index, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam value) {
-        if (dropItemListBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureDropItemListIsMutable();
-          dropItemList_.add(index, value);
-          onChanged();
-        } else {
-          dropItemListBuilder_.addMessage(index, value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .ItemParam drop_item_list = 9;</code>
-       */
-      public Builder addDropItemList(
-          emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder builderForValue) {
-        if (dropItemListBuilder_ == null) {
-          ensureDropItemListIsMutable();
-          dropItemList_.add(builderForValue.build());
-          onChanged();
-        } else {
-          dropItemListBuilder_.addMessage(builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .ItemParam drop_item_list = 9;</code>
-       */
-      public Builder addDropItemList(
-          int index, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder builderForValue) {
-        if (dropItemListBuilder_ == null) {
-          ensureDropItemListIsMutable();
-          dropItemList_.add(index, builderForValue.build());
-          onChanged();
-        } else {
-          dropItemListBuilder_.addMessage(index, builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .ItemParam drop_item_list = 9;</code>
-       */
-      public Builder addAllDropItemList(
-          java.lang.Iterable<? extends emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> values) {
-        if (dropItemListBuilder_ == null) {
-          ensureDropItemListIsMutable();
-          com.google.protobuf.AbstractMessageLite.Builder.addAll(
-              values, dropItemList_);
-          onChanged();
-        } else {
-          dropItemListBuilder_.addAllMessages(values);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .ItemParam drop_item_list = 9;</code>
-       */
-      public Builder clearDropItemList() {
-        if (dropItemListBuilder_ == null) {
-          dropItemList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000004);
-          onChanged();
-        } else {
-          dropItemListBuilder_.clear();
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .ItemParam drop_item_list = 9;</code>
-       */
-      public Builder removeDropItemList(int index) {
-        if (dropItemListBuilder_ == null) {
-          ensureDropItemListIsMutable();
-          dropItemList_.remove(index);
-          onChanged();
-        } else {
-          dropItemListBuilder_.remove(index);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .ItemParam drop_item_list = 9;</code>
-       */
-      public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder getDropItemListBuilder(
-          int index) {
-        return getDropItemListFieldBuilder().getBuilder(index);
-      }
-      /**
-       * <code>repeated .ItemParam drop_item_list = 9;</code>
-       */
-      public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder getDropItemListOrBuilder(
-          int index) {
-        if (dropItemListBuilder_ == null) {
-          return dropItemList_.get(index);  } else {
-          return dropItemListBuilder_.getMessageOrBuilder(index);
-        }
-      }
-      /**
-       * <code>repeated .ItemParam drop_item_list = 9;</code>
-       */
-      public java.util.List<? extends emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder> 
-           getDropItemListOrBuilderList() {
-        if (dropItemListBuilder_ != null) {
-          return dropItemListBuilder_.getMessageOrBuilderList();
-        } else {
-          return java.util.Collections.unmodifiableList(dropItemList_);
-        }
-      }
-      /**
-       * <code>repeated .ItemParam drop_item_list = 9;</code>
-       */
-      public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder addDropItemListBuilder() {
-        return getDropItemListFieldBuilder().addBuilder(
-            emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.getDefaultInstance());
-      }
-      /**
-       * <code>repeated .ItemParam drop_item_list = 9;</code>
-       */
-      public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder addDropItemListBuilder(
-          int index) {
-        return getDropItemListFieldBuilder().addBuilder(
-            index, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.getDefaultInstance());
-      }
-      /**
-       * <code>repeated .ItemParam drop_item_list = 9;</code>
-       */
-      public java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder> 
-           getDropItemListBuilderList() {
-        return getDropItemListFieldBuilder().getBuilderList();
-      }
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder> 
-          getDropItemListFieldBuilder() {
-        if (dropItemListBuilder_ == null) {
-          dropItemListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder>(
-                  dropItemList_,
-                  ((bitField0_ & 0x00000004) != 0),
-                  getParentForChildren(),
-                  isClean());
-          dropItemList_ = null;
-        }
-        return dropItemListBuilder_;
-      }
-
-      private int retcode_ ;
-      /**
-       * <code>int32 retcode = 7;</code>
-       * @return The retcode.
-       */
-      @java.lang.Override
-      public int getRetcode() {
-        return retcode_;
-      }
-      /**
-       * <code>int32 retcode = 7;</code>
-       * @param value The retcode to set.
-       * @return This builder for chaining.
-       */
-      public Builder setRetcode(int value) {
-        
-        retcode_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>int32 retcode = 7;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearRetcode() {
-        
-        retcode_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int noRewardReason_ = 0;
-      /**
-       * <code>.FishBattleEndRsp.FishNoRewardReason no_reward_reason = 14;</code>
-       * @return The enum numeric value on the wire for noRewardReason.
-       */
-      @java.lang.Override public int getNoRewardReasonValue() {
-        return noRewardReason_;
-      }
-      /**
-       * <code>.FishBattleEndRsp.FishNoRewardReason no_reward_reason = 14;</code>
-       * @param value The enum numeric value on the wire for noRewardReason to set.
-       * @return This builder for chaining.
-       */
-      public Builder setNoRewardReasonValue(int value) {
-        
-        noRewardReason_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>.FishBattleEndRsp.FishNoRewardReason no_reward_reason = 14;</code>
-       * @return The noRewardReason.
-       */
-      @java.lang.Override
-      public emu.grasscutter.net.proto.FishBattleEndRspOuterClass.FishBattleEndRsp.FishNoRewardReason getNoRewardReason() {
-        @SuppressWarnings("deprecation")
-        emu.grasscutter.net.proto.FishBattleEndRspOuterClass.FishBattleEndRsp.FishNoRewardReason result = emu.grasscutter.net.proto.FishBattleEndRspOuterClass.FishBattleEndRsp.FishNoRewardReason.valueOf(noRewardReason_);
-        return result == null ? emu.grasscutter.net.proto.FishBattleEndRspOuterClass.FishBattleEndRsp.FishNoRewardReason.UNRECOGNIZED : result;
-      }
-      /**
-       * <code>.FishBattleEndRsp.FishNoRewardReason no_reward_reason = 14;</code>
-       * @param value The noRewardReason to set.
-       * @return This builder for chaining.
-       */
-      public Builder setNoRewardReason(emu.grasscutter.net.proto.FishBattleEndRspOuterClass.FishBattleEndRsp.FishNoRewardReason value) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        
-        noRewardReason_ = value.getNumber();
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>.FishBattleEndRsp.FishNoRewardReason no_reward_reason = 14;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearNoRewardReason() {
-        
-        noRewardReason_ = 0;
-        onChanged();
-        return this;
-      }
 
       private int battleResult_ = 0;
       /**
@@ -1990,6 +1162,842 @@ public final class FishBattleEndRspOuterClass {
         battleResult_ = 0;
         onChanged();
         return this;
+      }
+
+      private int noRewardReason_ = 0;
+      /**
+       * <code>.FishBattleEndRsp.FishNoRewardReason no_reward_reason = 2;</code>
+       * @return The enum numeric value on the wire for noRewardReason.
+       */
+      @java.lang.Override public int getNoRewardReasonValue() {
+        return noRewardReason_;
+      }
+      /**
+       * <code>.FishBattleEndRsp.FishNoRewardReason no_reward_reason = 2;</code>
+       * @param value The enum numeric value on the wire for noRewardReason to set.
+       * @return This builder for chaining.
+       */
+      public Builder setNoRewardReasonValue(int value) {
+        
+        noRewardReason_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.FishBattleEndRsp.FishNoRewardReason no_reward_reason = 2;</code>
+       * @return The noRewardReason.
+       */
+      @java.lang.Override
+      public emu.grasscutter.net.proto.FishBattleEndRspOuterClass.FishBattleEndRsp.FishNoRewardReason getNoRewardReason() {
+        @SuppressWarnings("deprecation")
+        emu.grasscutter.net.proto.FishBattleEndRspOuterClass.FishBattleEndRsp.FishNoRewardReason result = emu.grasscutter.net.proto.FishBattleEndRspOuterClass.FishBattleEndRsp.FishNoRewardReason.valueOf(noRewardReason_);
+        return result == null ? emu.grasscutter.net.proto.FishBattleEndRspOuterClass.FishBattleEndRsp.FishNoRewardReason.UNRECOGNIZED : result;
+      }
+      /**
+       * <code>.FishBattleEndRsp.FishNoRewardReason no_reward_reason = 2;</code>
+       * @param value The noRewardReason to set.
+       * @return This builder for chaining.
+       */
+      public Builder setNoRewardReason(emu.grasscutter.net.proto.FishBattleEndRspOuterClass.FishBattleEndRsp.FishNoRewardReason value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        
+        noRewardReason_ = value.getNumber();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.FishBattleEndRsp.FishNoRewardReason no_reward_reason = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearNoRewardReason() {
+        
+        noRewardReason_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int retcode_ ;
+      /**
+       * <code>int32 retcode = 9;</code>
+       * @return The retcode.
+       */
+      @java.lang.Override
+      public int getRetcode() {
+        return retcode_;
+      }
+      /**
+       * <code>int32 retcode = 9;</code>
+       * @param value The retcode to set.
+       * @return This builder for chaining.
+       */
+      public Builder setRetcode(int value) {
+        
+        retcode_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 retcode = 9;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearRetcode() {
+        
+        retcode_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> unk3300ABBBGOBDJEC_ =
+        java.util.Collections.emptyList();
+      private void ensureUnk3300ABBBGOBDJECIsMutable() {
+        if (!((bitField0_ & 0x00000001) != 0)) {
+          unk3300ABBBGOBDJEC_ = new java.util.ArrayList<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam>(unk3300ABBBGOBDJEC_);
+          bitField0_ |= 0x00000001;
+         }
+      }
+
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder> unk3300ABBBGOBDJECBuilder_;
+
+      /**
+       * <code>repeated .ItemParam Unk3300_ABBBGOBDJEC = 12;</code>
+       */
+      public java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> getUnk3300ABBBGOBDJECList() {
+        if (unk3300ABBBGOBDJECBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(unk3300ABBBGOBDJEC_);
+        } else {
+          return unk3300ABBBGOBDJECBuilder_.getMessageList();
+        }
+      }
+      /**
+       * <code>repeated .ItemParam Unk3300_ABBBGOBDJEC = 12;</code>
+       */
+      public int getUnk3300ABBBGOBDJECCount() {
+        if (unk3300ABBBGOBDJECBuilder_ == null) {
+          return unk3300ABBBGOBDJEC_.size();
+        } else {
+          return unk3300ABBBGOBDJECBuilder_.getCount();
+        }
+      }
+      /**
+       * <code>repeated .ItemParam Unk3300_ABBBGOBDJEC = 12;</code>
+       */
+      public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam getUnk3300ABBBGOBDJEC(int index) {
+        if (unk3300ABBBGOBDJECBuilder_ == null) {
+          return unk3300ABBBGOBDJEC_.get(index);
+        } else {
+          return unk3300ABBBGOBDJECBuilder_.getMessage(index);
+        }
+      }
+      /**
+       * <code>repeated .ItemParam Unk3300_ABBBGOBDJEC = 12;</code>
+       */
+      public Builder setUnk3300ABBBGOBDJEC(
+          int index, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam value) {
+        if (unk3300ABBBGOBDJECBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureUnk3300ABBBGOBDJECIsMutable();
+          unk3300ABBBGOBDJEC_.set(index, value);
+          onChanged();
+        } else {
+          unk3300ABBBGOBDJECBuilder_.setMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .ItemParam Unk3300_ABBBGOBDJEC = 12;</code>
+       */
+      public Builder setUnk3300ABBBGOBDJEC(
+          int index, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder builderForValue) {
+        if (unk3300ABBBGOBDJECBuilder_ == null) {
+          ensureUnk3300ABBBGOBDJECIsMutable();
+          unk3300ABBBGOBDJEC_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          unk3300ABBBGOBDJECBuilder_.setMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .ItemParam Unk3300_ABBBGOBDJEC = 12;</code>
+       */
+      public Builder addUnk3300ABBBGOBDJEC(emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam value) {
+        if (unk3300ABBBGOBDJECBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureUnk3300ABBBGOBDJECIsMutable();
+          unk3300ABBBGOBDJEC_.add(value);
+          onChanged();
+        } else {
+          unk3300ABBBGOBDJECBuilder_.addMessage(value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .ItemParam Unk3300_ABBBGOBDJEC = 12;</code>
+       */
+      public Builder addUnk3300ABBBGOBDJEC(
+          int index, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam value) {
+        if (unk3300ABBBGOBDJECBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureUnk3300ABBBGOBDJECIsMutable();
+          unk3300ABBBGOBDJEC_.add(index, value);
+          onChanged();
+        } else {
+          unk3300ABBBGOBDJECBuilder_.addMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .ItemParam Unk3300_ABBBGOBDJEC = 12;</code>
+       */
+      public Builder addUnk3300ABBBGOBDJEC(
+          emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder builderForValue) {
+        if (unk3300ABBBGOBDJECBuilder_ == null) {
+          ensureUnk3300ABBBGOBDJECIsMutable();
+          unk3300ABBBGOBDJEC_.add(builderForValue.build());
+          onChanged();
+        } else {
+          unk3300ABBBGOBDJECBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .ItemParam Unk3300_ABBBGOBDJEC = 12;</code>
+       */
+      public Builder addUnk3300ABBBGOBDJEC(
+          int index, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder builderForValue) {
+        if (unk3300ABBBGOBDJECBuilder_ == null) {
+          ensureUnk3300ABBBGOBDJECIsMutable();
+          unk3300ABBBGOBDJEC_.add(index, builderForValue.build());
+          onChanged();
+        } else {
+          unk3300ABBBGOBDJECBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .ItemParam Unk3300_ABBBGOBDJEC = 12;</code>
+       */
+      public Builder addAllUnk3300ABBBGOBDJEC(
+          java.lang.Iterable<? extends emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> values) {
+        if (unk3300ABBBGOBDJECBuilder_ == null) {
+          ensureUnk3300ABBBGOBDJECIsMutable();
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, unk3300ABBBGOBDJEC_);
+          onChanged();
+        } else {
+          unk3300ABBBGOBDJECBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .ItemParam Unk3300_ABBBGOBDJEC = 12;</code>
+       */
+      public Builder clearUnk3300ABBBGOBDJEC() {
+        if (unk3300ABBBGOBDJECBuilder_ == null) {
+          unk3300ABBBGOBDJEC_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000001);
+          onChanged();
+        } else {
+          unk3300ABBBGOBDJECBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .ItemParam Unk3300_ABBBGOBDJEC = 12;</code>
+       */
+      public Builder removeUnk3300ABBBGOBDJEC(int index) {
+        if (unk3300ABBBGOBDJECBuilder_ == null) {
+          ensureUnk3300ABBBGOBDJECIsMutable();
+          unk3300ABBBGOBDJEC_.remove(index);
+          onChanged();
+        } else {
+          unk3300ABBBGOBDJECBuilder_.remove(index);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .ItemParam Unk3300_ABBBGOBDJEC = 12;</code>
+       */
+      public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder getUnk3300ABBBGOBDJECBuilder(
+          int index) {
+        return getUnk3300ABBBGOBDJECFieldBuilder().getBuilder(index);
+      }
+      /**
+       * <code>repeated .ItemParam Unk3300_ABBBGOBDJEC = 12;</code>
+       */
+      public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder getUnk3300ABBBGOBDJECOrBuilder(
+          int index) {
+        if (unk3300ABBBGOBDJECBuilder_ == null) {
+          return unk3300ABBBGOBDJEC_.get(index);  } else {
+          return unk3300ABBBGOBDJECBuilder_.getMessageOrBuilder(index);
+        }
+      }
+      /**
+       * <code>repeated .ItemParam Unk3300_ABBBGOBDJEC = 12;</code>
+       */
+      public java.util.List<? extends emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder> 
+           getUnk3300ABBBGOBDJECOrBuilderList() {
+        if (unk3300ABBBGOBDJECBuilder_ != null) {
+          return unk3300ABBBGOBDJECBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(unk3300ABBBGOBDJEC_);
+        }
+      }
+      /**
+       * <code>repeated .ItemParam Unk3300_ABBBGOBDJEC = 12;</code>
+       */
+      public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder addUnk3300ABBBGOBDJECBuilder() {
+        return getUnk3300ABBBGOBDJECFieldBuilder().addBuilder(
+            emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .ItemParam Unk3300_ABBBGOBDJEC = 12;</code>
+       */
+      public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder addUnk3300ABBBGOBDJECBuilder(
+          int index) {
+        return getUnk3300ABBBGOBDJECFieldBuilder().addBuilder(
+            index, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .ItemParam Unk3300_ABBBGOBDJEC = 12;</code>
+       */
+      public java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder> 
+           getUnk3300ABBBGOBDJECBuilderList() {
+        return getUnk3300ABBBGOBDJECFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder> 
+          getUnk3300ABBBGOBDJECFieldBuilder() {
+        if (unk3300ABBBGOBDJECBuilder_ == null) {
+          unk3300ABBBGOBDJECBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+              emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder>(
+                  unk3300ABBBGOBDJEC_,
+                  ((bitField0_ & 0x00000001) != 0),
+                  getParentForChildren(),
+                  isClean());
+          unk3300ABBBGOBDJEC_ = null;
+        }
+        return unk3300ABBBGOBDJECBuilder_;
+      }
+
+      private boolean isGotReward_ ;
+      /**
+       * <code>bool is_got_reward = 8;</code>
+       * @return The isGotReward.
+       */
+      @java.lang.Override
+      public boolean getIsGotReward() {
+        return isGotReward_;
+      }
+      /**
+       * <code>bool is_got_reward = 8;</code>
+       * @param value The isGotReward to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIsGotReward(boolean value) {
+        
+        isGotReward_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool is_got_reward = 8;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsGotReward() {
+        
+        isGotReward_ = false;
+        onChanged();
+        return this;
+      }
+
+      private java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> unk3300MDCKKPGNKGL_ =
+        java.util.Collections.emptyList();
+      private void ensureUnk3300MDCKKPGNKGLIsMutable() {
+        if (!((bitField0_ & 0x00000002) != 0)) {
+          unk3300MDCKKPGNKGL_ = new java.util.ArrayList<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam>(unk3300MDCKKPGNKGL_);
+          bitField0_ |= 0x00000002;
+         }
+      }
+
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder> unk3300MDCKKPGNKGLBuilder_;
+
+      /**
+       * <code>repeated .ItemParam Unk3300_MDCKKPGNKGL = 1;</code>
+       */
+      public java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> getUnk3300MDCKKPGNKGLList() {
+        if (unk3300MDCKKPGNKGLBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(unk3300MDCKKPGNKGL_);
+        } else {
+          return unk3300MDCKKPGNKGLBuilder_.getMessageList();
+        }
+      }
+      /**
+       * <code>repeated .ItemParam Unk3300_MDCKKPGNKGL = 1;</code>
+       */
+      public int getUnk3300MDCKKPGNKGLCount() {
+        if (unk3300MDCKKPGNKGLBuilder_ == null) {
+          return unk3300MDCKKPGNKGL_.size();
+        } else {
+          return unk3300MDCKKPGNKGLBuilder_.getCount();
+        }
+      }
+      /**
+       * <code>repeated .ItemParam Unk3300_MDCKKPGNKGL = 1;</code>
+       */
+      public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam getUnk3300MDCKKPGNKGL(int index) {
+        if (unk3300MDCKKPGNKGLBuilder_ == null) {
+          return unk3300MDCKKPGNKGL_.get(index);
+        } else {
+          return unk3300MDCKKPGNKGLBuilder_.getMessage(index);
+        }
+      }
+      /**
+       * <code>repeated .ItemParam Unk3300_MDCKKPGNKGL = 1;</code>
+       */
+      public Builder setUnk3300MDCKKPGNKGL(
+          int index, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam value) {
+        if (unk3300MDCKKPGNKGLBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureUnk3300MDCKKPGNKGLIsMutable();
+          unk3300MDCKKPGNKGL_.set(index, value);
+          onChanged();
+        } else {
+          unk3300MDCKKPGNKGLBuilder_.setMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .ItemParam Unk3300_MDCKKPGNKGL = 1;</code>
+       */
+      public Builder setUnk3300MDCKKPGNKGL(
+          int index, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder builderForValue) {
+        if (unk3300MDCKKPGNKGLBuilder_ == null) {
+          ensureUnk3300MDCKKPGNKGLIsMutable();
+          unk3300MDCKKPGNKGL_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          unk3300MDCKKPGNKGLBuilder_.setMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .ItemParam Unk3300_MDCKKPGNKGL = 1;</code>
+       */
+      public Builder addUnk3300MDCKKPGNKGL(emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam value) {
+        if (unk3300MDCKKPGNKGLBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureUnk3300MDCKKPGNKGLIsMutable();
+          unk3300MDCKKPGNKGL_.add(value);
+          onChanged();
+        } else {
+          unk3300MDCKKPGNKGLBuilder_.addMessage(value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .ItemParam Unk3300_MDCKKPGNKGL = 1;</code>
+       */
+      public Builder addUnk3300MDCKKPGNKGL(
+          int index, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam value) {
+        if (unk3300MDCKKPGNKGLBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureUnk3300MDCKKPGNKGLIsMutable();
+          unk3300MDCKKPGNKGL_.add(index, value);
+          onChanged();
+        } else {
+          unk3300MDCKKPGNKGLBuilder_.addMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .ItemParam Unk3300_MDCKKPGNKGL = 1;</code>
+       */
+      public Builder addUnk3300MDCKKPGNKGL(
+          emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder builderForValue) {
+        if (unk3300MDCKKPGNKGLBuilder_ == null) {
+          ensureUnk3300MDCKKPGNKGLIsMutable();
+          unk3300MDCKKPGNKGL_.add(builderForValue.build());
+          onChanged();
+        } else {
+          unk3300MDCKKPGNKGLBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .ItemParam Unk3300_MDCKKPGNKGL = 1;</code>
+       */
+      public Builder addUnk3300MDCKKPGNKGL(
+          int index, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder builderForValue) {
+        if (unk3300MDCKKPGNKGLBuilder_ == null) {
+          ensureUnk3300MDCKKPGNKGLIsMutable();
+          unk3300MDCKKPGNKGL_.add(index, builderForValue.build());
+          onChanged();
+        } else {
+          unk3300MDCKKPGNKGLBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .ItemParam Unk3300_MDCKKPGNKGL = 1;</code>
+       */
+      public Builder addAllUnk3300MDCKKPGNKGL(
+          java.lang.Iterable<? extends emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> values) {
+        if (unk3300MDCKKPGNKGLBuilder_ == null) {
+          ensureUnk3300MDCKKPGNKGLIsMutable();
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, unk3300MDCKKPGNKGL_);
+          onChanged();
+        } else {
+          unk3300MDCKKPGNKGLBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .ItemParam Unk3300_MDCKKPGNKGL = 1;</code>
+       */
+      public Builder clearUnk3300MDCKKPGNKGL() {
+        if (unk3300MDCKKPGNKGLBuilder_ == null) {
+          unk3300MDCKKPGNKGL_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000002);
+          onChanged();
+        } else {
+          unk3300MDCKKPGNKGLBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .ItemParam Unk3300_MDCKKPGNKGL = 1;</code>
+       */
+      public Builder removeUnk3300MDCKKPGNKGL(int index) {
+        if (unk3300MDCKKPGNKGLBuilder_ == null) {
+          ensureUnk3300MDCKKPGNKGLIsMutable();
+          unk3300MDCKKPGNKGL_.remove(index);
+          onChanged();
+        } else {
+          unk3300MDCKKPGNKGLBuilder_.remove(index);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .ItemParam Unk3300_MDCKKPGNKGL = 1;</code>
+       */
+      public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder getUnk3300MDCKKPGNKGLBuilder(
+          int index) {
+        return getUnk3300MDCKKPGNKGLFieldBuilder().getBuilder(index);
+      }
+      /**
+       * <code>repeated .ItemParam Unk3300_MDCKKPGNKGL = 1;</code>
+       */
+      public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder getUnk3300MDCKKPGNKGLOrBuilder(
+          int index) {
+        if (unk3300MDCKKPGNKGLBuilder_ == null) {
+          return unk3300MDCKKPGNKGL_.get(index);  } else {
+          return unk3300MDCKKPGNKGLBuilder_.getMessageOrBuilder(index);
+        }
+      }
+      /**
+       * <code>repeated .ItemParam Unk3300_MDCKKPGNKGL = 1;</code>
+       */
+      public java.util.List<? extends emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder> 
+           getUnk3300MDCKKPGNKGLOrBuilderList() {
+        if (unk3300MDCKKPGNKGLBuilder_ != null) {
+          return unk3300MDCKKPGNKGLBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(unk3300MDCKKPGNKGL_);
+        }
+      }
+      /**
+       * <code>repeated .ItemParam Unk3300_MDCKKPGNKGL = 1;</code>
+       */
+      public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder addUnk3300MDCKKPGNKGLBuilder() {
+        return getUnk3300MDCKKPGNKGLFieldBuilder().addBuilder(
+            emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .ItemParam Unk3300_MDCKKPGNKGL = 1;</code>
+       */
+      public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder addUnk3300MDCKKPGNKGLBuilder(
+          int index) {
+        return getUnk3300MDCKKPGNKGLFieldBuilder().addBuilder(
+            index, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .ItemParam Unk3300_MDCKKPGNKGL = 1;</code>
+       */
+      public java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder> 
+           getUnk3300MDCKKPGNKGLBuilderList() {
+        return getUnk3300MDCKKPGNKGLFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder> 
+          getUnk3300MDCKKPGNKGLFieldBuilder() {
+        if (unk3300MDCKKPGNKGLBuilder_ == null) {
+          unk3300MDCKKPGNKGLBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+              emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder>(
+                  unk3300MDCKKPGNKGL_,
+                  ((bitField0_ & 0x00000002) != 0),
+                  getParentForChildren(),
+                  isClean());
+          unk3300MDCKKPGNKGL_ = null;
+        }
+        return unk3300MDCKKPGNKGLBuilder_;
+      }
+
+      private java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> rewardItemList_ =
+        java.util.Collections.emptyList();
+      private void ensureRewardItemListIsMutable() {
+        if (!((bitField0_ & 0x00000004) != 0)) {
+          rewardItemList_ = new java.util.ArrayList<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam>(rewardItemList_);
+          bitField0_ |= 0x00000004;
+         }
+      }
+
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder> rewardItemListBuilder_;
+
+      /**
+       * <code>repeated .ItemParam reward_item_list = 15;</code>
+       */
+      public java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> getRewardItemListList() {
+        if (rewardItemListBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(rewardItemList_);
+        } else {
+          return rewardItemListBuilder_.getMessageList();
+        }
+      }
+      /**
+       * <code>repeated .ItemParam reward_item_list = 15;</code>
+       */
+      public int getRewardItemListCount() {
+        if (rewardItemListBuilder_ == null) {
+          return rewardItemList_.size();
+        } else {
+          return rewardItemListBuilder_.getCount();
+        }
+      }
+      /**
+       * <code>repeated .ItemParam reward_item_list = 15;</code>
+       */
+      public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam getRewardItemList(int index) {
+        if (rewardItemListBuilder_ == null) {
+          return rewardItemList_.get(index);
+        } else {
+          return rewardItemListBuilder_.getMessage(index);
+        }
+      }
+      /**
+       * <code>repeated .ItemParam reward_item_list = 15;</code>
+       */
+      public Builder setRewardItemList(
+          int index, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam value) {
+        if (rewardItemListBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureRewardItemListIsMutable();
+          rewardItemList_.set(index, value);
+          onChanged();
+        } else {
+          rewardItemListBuilder_.setMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .ItemParam reward_item_list = 15;</code>
+       */
+      public Builder setRewardItemList(
+          int index, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder builderForValue) {
+        if (rewardItemListBuilder_ == null) {
+          ensureRewardItemListIsMutable();
+          rewardItemList_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          rewardItemListBuilder_.setMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .ItemParam reward_item_list = 15;</code>
+       */
+      public Builder addRewardItemList(emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam value) {
+        if (rewardItemListBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureRewardItemListIsMutable();
+          rewardItemList_.add(value);
+          onChanged();
+        } else {
+          rewardItemListBuilder_.addMessage(value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .ItemParam reward_item_list = 15;</code>
+       */
+      public Builder addRewardItemList(
+          int index, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam value) {
+        if (rewardItemListBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureRewardItemListIsMutable();
+          rewardItemList_.add(index, value);
+          onChanged();
+        } else {
+          rewardItemListBuilder_.addMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .ItemParam reward_item_list = 15;</code>
+       */
+      public Builder addRewardItemList(
+          emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder builderForValue) {
+        if (rewardItemListBuilder_ == null) {
+          ensureRewardItemListIsMutable();
+          rewardItemList_.add(builderForValue.build());
+          onChanged();
+        } else {
+          rewardItemListBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .ItemParam reward_item_list = 15;</code>
+       */
+      public Builder addRewardItemList(
+          int index, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder builderForValue) {
+        if (rewardItemListBuilder_ == null) {
+          ensureRewardItemListIsMutable();
+          rewardItemList_.add(index, builderForValue.build());
+          onChanged();
+        } else {
+          rewardItemListBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .ItemParam reward_item_list = 15;</code>
+       */
+      public Builder addAllRewardItemList(
+          java.lang.Iterable<? extends emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> values) {
+        if (rewardItemListBuilder_ == null) {
+          ensureRewardItemListIsMutable();
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, rewardItemList_);
+          onChanged();
+        } else {
+          rewardItemListBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .ItemParam reward_item_list = 15;</code>
+       */
+      public Builder clearRewardItemList() {
+        if (rewardItemListBuilder_ == null) {
+          rewardItemList_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000004);
+          onChanged();
+        } else {
+          rewardItemListBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .ItemParam reward_item_list = 15;</code>
+       */
+      public Builder removeRewardItemList(int index) {
+        if (rewardItemListBuilder_ == null) {
+          ensureRewardItemListIsMutable();
+          rewardItemList_.remove(index);
+          onChanged();
+        } else {
+          rewardItemListBuilder_.remove(index);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .ItemParam reward_item_list = 15;</code>
+       */
+      public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder getRewardItemListBuilder(
+          int index) {
+        return getRewardItemListFieldBuilder().getBuilder(index);
+      }
+      /**
+       * <code>repeated .ItemParam reward_item_list = 15;</code>
+       */
+      public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder getRewardItemListOrBuilder(
+          int index) {
+        if (rewardItemListBuilder_ == null) {
+          return rewardItemList_.get(index);  } else {
+          return rewardItemListBuilder_.getMessageOrBuilder(index);
+        }
+      }
+      /**
+       * <code>repeated .ItemParam reward_item_list = 15;</code>
+       */
+      public java.util.List<? extends emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder> 
+           getRewardItemListOrBuilderList() {
+        if (rewardItemListBuilder_ != null) {
+          return rewardItemListBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(rewardItemList_);
+        }
+      }
+      /**
+       * <code>repeated .ItemParam reward_item_list = 15;</code>
+       */
+      public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder addRewardItemListBuilder() {
+        return getRewardItemListFieldBuilder().addBuilder(
+            emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .ItemParam reward_item_list = 15;</code>
+       */
+      public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder addRewardItemListBuilder(
+          int index) {
+        return getRewardItemListFieldBuilder().addBuilder(
+            index, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .ItemParam reward_item_list = 15;</code>
+       */
+      public java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder> 
+           getRewardItemListBuilderList() {
+        return getRewardItemListFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder> 
+          getRewardItemListFieldBuilder() {
+        if (rewardItemListBuilder_ == null) {
+          rewardItemListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+              emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder>(
+                  rewardItemList_,
+                  ((bitField0_ & 0x00000004) != 0),
+                  getParentForChildren(),
+                  isClean());
+          rewardItemList_ = null;
+        }
+        return rewardItemListBuilder_;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -2059,19 +2067,20 @@ public final class FishBattleEndRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\026FishBattleEndRsp.proto\032\026FishBattleResu" +
-      "lt.proto\032\017ItemParam.proto\"\300\003\n\020FishBattle" +
-      "EndRsp\022\025\n\ris_got_reward\030\n \001(\010\022$\n\020reward_" +
-      "item_list\030\013 \003(\0132\n.ItemParam\022$\n\020talent_it" +
-      "em_list\030\r \003(\0132\n.ItemParam\022\"\n\016drop_item_l" +
-      "ist\030\t \003(\0132\n.ItemParam\022\017\n\007retcode\030\007 \001(\005\022>" +
-      "\n\020no_reward_reason\030\016 \001(\0162$.FishBattleEnd" +
-      "Rsp.FishNoRewardReason\022(\n\rbattle_result\030" +
-      "\006 \001(\0162\021.FishBattleResult\"\251\001\n\022FishNoRewar" +
-      "dReason\022\036\n\032FISH_NO_REWARD_REASON_NONE\020\000\022" +
-      "(\n$FISH_NO_REWARD_REASON_ACTIVITY_LIMIT\020" +
-      "\001\022#\n\037FISH_NO_REWARD_REASON_BAG_LIMIT\020\002\022$" +
-      "\n FISH_NO_REWARD_REASON_POOL_LIMIT\020\003B\033\n\031" +
-      "emu.grasscutter.net.protob\006proto3"
+      "lt.proto\032\017ItemParam.proto\"\310\003\n\020FishBattle" +
+      "EndRsp\022(\n\rbattle_result\030\006 \001(\0162\021.FishBatt" +
+      "leResult\022>\n\020no_reward_reason\030\002 \001(\0162$.Fis" +
+      "hBattleEndRsp.FishNoRewardReason\022\017\n\007retc" +
+      "ode\030\t \001(\005\022\'\n\023Unk3300_ABBBGOBDJEC\030\014 \003(\0132\n" +
+      ".ItemParam\022\025\n\ris_got_reward\030\010 \001(\010\022\'\n\023Unk" +
+      "3300_MDCKKPGNKGL\030\001 \003(\0132\n.ItemParam\022$\n\020re" +
+      "ward_item_list\030\017 \003(\0132\n.ItemParam\"\251\001\n\022Fis" +
+      "hNoRewardReason\022\036\n\032FISH_NO_REWARD_REASON" +
+      "_NONE\020\000\022(\n$FISH_NO_REWARD_REASON_ACTIVIT" +
+      "Y_LIMIT\020\001\022#\n\037FISH_NO_REWARD_REASON_BAG_L" +
+      "IMIT\020\002\022$\n FISH_NO_REWARD_REASON_POOL_LIM" +
+      "IT\020\003B\033\n\031emu.grasscutter.net.protob\006proto" +
+      "3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -2084,7 +2093,7 @@ public final class FishBattleEndRspOuterClass {
     internal_static_FishBattleEndRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_FishBattleEndRsp_descriptor,
-        new java.lang.String[] { "IsGotReward", "RewardItemList", "TalentItemList", "DropItemList", "Retcode", "NoRewardReason", "BattleResult", });
+        new java.lang.String[] { "BattleResult", "NoRewardReason", "Retcode", "Unk3300ABBBGOBDJEC", "IsGotReward", "Unk3300MDCKKPGNKGL", "RewardItemList", });
     emu.grasscutter.net.proto.FishBattleResultOuterClass.getDescriptor();
     emu.grasscutter.net.proto.ItemParamOuterClass.getDescriptor();
   }

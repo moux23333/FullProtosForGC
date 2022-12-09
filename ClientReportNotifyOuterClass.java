@@ -19,35 +19,39 @@ public final class ClientReportNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>string report_type = 1;</code>
-     * @return The reportType.
+     * <code>string Unk3300_JHJDJEBAFCM = 15;</code>
+     * @return The unk3300JHJDJEBAFCM.
      */
-    java.lang.String getReportType();
+    java.lang.String getUnk3300JHJDJEBAFCM();
     /**
-     * <code>string report_type = 1;</code>
-     * @return The bytes for reportType.
+     * <code>string Unk3300_JHJDJEBAFCM = 15;</code>
+     * @return The bytes for unk3300JHJDJEBAFCM.
      */
     com.google.protobuf.ByteString
-        getReportTypeBytes();
+        getUnk3300JHJDJEBAFCMBytes();
 
     /**
-     * <code>string report_value = 4;</code>
-     * @return The reportValue.
+     * <code>string Unk3300_AMLEAJLJDFO = 10;</code>
+     * @return The unk3300AMLEAJLJDFO.
      */
-    java.lang.String getReportValue();
+    java.lang.String getUnk3300AMLEAJLJDFO();
     /**
-     * <code>string report_value = 4;</code>
-     * @return The bytes for reportValue.
+     * <code>string Unk3300_AMLEAJLJDFO = 10;</code>
+     * @return The bytes for unk3300AMLEAJLJDFO.
      */
     com.google.protobuf.ByteString
-        getReportValueBytes();
+        getUnk3300AMLEAJLJDFOBytes();
   }
   /**
    * <pre>
-   * CmdId: 81
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 25;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code ClientReportNotify}
@@ -62,8 +66,8 @@ public final class ClientReportNotifyOuterClass {
       super(builder);
     }
     private ClientReportNotify() {
-      reportType_ = "";
-      reportValue_ = "";
+      unk3300JHJDJEBAFCM_ = "";
+      unk3300AMLEAJLJDFO_ = "";
     }
 
     @java.lang.Override
@@ -96,16 +100,16 @@ public final class ClientReportNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 10: {
+            case 82: {
               java.lang.String s = input.readStringRequireUtf8();
 
-              reportType_ = s;
+              unk3300AMLEAJLJDFO_ = s;
               break;
             }
-            case 34: {
+            case 122: {
               java.lang.String s = input.readStringRequireUtf8();
 
-              reportValue_ = s;
+              unk3300JHJDJEBAFCM_ = s;
               break;
             }
             default: {
@@ -140,76 +144,76 @@ public final class ClientReportNotifyOuterClass {
               emu.grasscutter.net.proto.ClientReportNotifyOuterClass.ClientReportNotify.class, emu.grasscutter.net.proto.ClientReportNotifyOuterClass.ClientReportNotify.Builder.class);
     }
 
-    public static final int REPORT_TYPE_FIELD_NUMBER = 1;
-    private volatile java.lang.Object reportType_;
+    public static final int UNK3300_JHJDJEBAFCM_FIELD_NUMBER = 15;
+    private volatile java.lang.Object unk3300JHJDJEBAFCM_;
     /**
-     * <code>string report_type = 1;</code>
-     * @return The reportType.
+     * <code>string Unk3300_JHJDJEBAFCM = 15;</code>
+     * @return The unk3300JHJDJEBAFCM.
      */
     @java.lang.Override
-    public java.lang.String getReportType() {
-      java.lang.Object ref = reportType_;
+    public java.lang.String getUnk3300JHJDJEBAFCM() {
+      java.lang.Object ref = unk3300JHJDJEBAFCM_;
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
-        reportType_ = s;
+        unk3300JHJDJEBAFCM_ = s;
         return s;
       }
     }
     /**
-     * <code>string report_type = 1;</code>
-     * @return The bytes for reportType.
+     * <code>string Unk3300_JHJDJEBAFCM = 15;</code>
+     * @return The bytes for unk3300JHJDJEBAFCM.
      */
     @java.lang.Override
     public com.google.protobuf.ByteString
-        getReportTypeBytes() {
-      java.lang.Object ref = reportType_;
+        getUnk3300JHJDJEBAFCMBytes() {
+      java.lang.Object ref = unk3300JHJDJEBAFCM_;
       if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
-        reportType_ = b;
+        unk3300JHJDJEBAFCM_ = b;
         return b;
       } else {
         return (com.google.protobuf.ByteString) ref;
       }
     }
 
-    public static final int REPORT_VALUE_FIELD_NUMBER = 4;
-    private volatile java.lang.Object reportValue_;
+    public static final int UNK3300_AMLEAJLJDFO_FIELD_NUMBER = 10;
+    private volatile java.lang.Object unk3300AMLEAJLJDFO_;
     /**
-     * <code>string report_value = 4;</code>
-     * @return The reportValue.
+     * <code>string Unk3300_AMLEAJLJDFO = 10;</code>
+     * @return The unk3300AMLEAJLJDFO.
      */
     @java.lang.Override
-    public java.lang.String getReportValue() {
-      java.lang.Object ref = reportValue_;
+    public java.lang.String getUnk3300AMLEAJLJDFO() {
+      java.lang.Object ref = unk3300AMLEAJLJDFO_;
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
-        reportValue_ = s;
+        unk3300AMLEAJLJDFO_ = s;
         return s;
       }
     }
     /**
-     * <code>string report_value = 4;</code>
-     * @return The bytes for reportValue.
+     * <code>string Unk3300_AMLEAJLJDFO = 10;</code>
+     * @return The bytes for unk3300AMLEAJLJDFO.
      */
     @java.lang.Override
     public com.google.protobuf.ByteString
-        getReportValueBytes() {
-      java.lang.Object ref = reportValue_;
+        getUnk3300AMLEAJLJDFOBytes() {
+      java.lang.Object ref = unk3300AMLEAJLJDFO_;
       if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
-        reportValue_ = b;
+        unk3300AMLEAJLJDFO_ = b;
         return b;
       } else {
         return (com.google.protobuf.ByteString) ref;
@@ -230,11 +234,11 @@ public final class ClientReportNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(reportType_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 1, reportType_);
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(unk3300AMLEAJLJDFO_)) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 10, unk3300AMLEAJLJDFO_);
       }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(reportValue_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 4, reportValue_);
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(unk3300JHJDJEBAFCM_)) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 15, unk3300JHJDJEBAFCM_);
       }
       unknownFields.writeTo(output);
     }
@@ -245,11 +249,11 @@ public final class ClientReportNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(reportType_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, reportType_);
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(unk3300AMLEAJLJDFO_)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(10, unk3300AMLEAJLJDFO_);
       }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(reportValue_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(4, reportValue_);
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(unk3300JHJDJEBAFCM_)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(15, unk3300JHJDJEBAFCM_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -266,10 +270,10 @@ public final class ClientReportNotifyOuterClass {
       }
       emu.grasscutter.net.proto.ClientReportNotifyOuterClass.ClientReportNotify other = (emu.grasscutter.net.proto.ClientReportNotifyOuterClass.ClientReportNotify) obj;
 
-      if (!getReportType()
-          .equals(other.getReportType())) return false;
-      if (!getReportValue()
-          .equals(other.getReportValue())) return false;
+      if (!getUnk3300JHJDJEBAFCM()
+          .equals(other.getUnk3300JHJDJEBAFCM())) return false;
+      if (!getUnk3300AMLEAJLJDFO()
+          .equals(other.getUnk3300AMLEAJLJDFO())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -281,10 +285,10 @@ public final class ClientReportNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + REPORT_TYPE_FIELD_NUMBER;
-      hash = (53 * hash) + getReportType().hashCode();
-      hash = (37 * hash) + REPORT_VALUE_FIELD_NUMBER;
-      hash = (53 * hash) + getReportValue().hashCode();
+      hash = (37 * hash) + UNK3300_JHJDJEBAFCM_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300JHJDJEBAFCM().hashCode();
+      hash = (37 * hash) + UNK3300_AMLEAJLJDFO_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300AMLEAJLJDFO().hashCode();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -382,10 +386,14 @@ public final class ClientReportNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 81
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 25;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code ClientReportNotify}
@@ -425,9 +433,9 @@ public final class ClientReportNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        reportType_ = "";
+        unk3300JHJDJEBAFCM_ = "";
 
-        reportValue_ = "";
+        unk3300AMLEAJLJDFO_ = "";
 
         return this;
       }
@@ -455,8 +463,8 @@ public final class ClientReportNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.ClientReportNotifyOuterClass.ClientReportNotify buildPartial() {
         emu.grasscutter.net.proto.ClientReportNotifyOuterClass.ClientReportNotify result = new emu.grasscutter.net.proto.ClientReportNotifyOuterClass.ClientReportNotify(this);
-        result.reportType_ = reportType_;
-        result.reportValue_ = reportValue_;
+        result.unk3300JHJDJEBAFCM_ = unk3300JHJDJEBAFCM_;
+        result.unk3300AMLEAJLJDFO_ = unk3300AMLEAJLJDFO_;
         onBuilt();
         return result;
       }
@@ -505,12 +513,12 @@ public final class ClientReportNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.ClientReportNotifyOuterClass.ClientReportNotify other) {
         if (other == emu.grasscutter.net.proto.ClientReportNotifyOuterClass.ClientReportNotify.getDefaultInstance()) return this;
-        if (!other.getReportType().isEmpty()) {
-          reportType_ = other.reportType_;
+        if (!other.getUnk3300JHJDJEBAFCM().isEmpty()) {
+          unk3300JHJDJEBAFCM_ = other.unk3300JHJDJEBAFCM_;
           onChanged();
         }
-        if (!other.getReportValue().isEmpty()) {
-          reportValue_ = other.reportValue_;
+        if (!other.getUnk3300AMLEAJLJDFO().isEmpty()) {
+          unk3300AMLEAJLJDFO_ = other.unk3300AMLEAJLJDFO_;
           onChanged();
         }
         this.mergeUnknownFields(other.unknownFields);
@@ -542,154 +550,154 @@ public final class ClientReportNotifyOuterClass {
         return this;
       }
 
-      private java.lang.Object reportType_ = "";
+      private java.lang.Object unk3300JHJDJEBAFCM_ = "";
       /**
-       * <code>string report_type = 1;</code>
-       * @return The reportType.
+       * <code>string Unk3300_JHJDJEBAFCM = 15;</code>
+       * @return The unk3300JHJDJEBAFCM.
        */
-      public java.lang.String getReportType() {
-        java.lang.Object ref = reportType_;
+      public java.lang.String getUnk3300JHJDJEBAFCM() {
+        java.lang.Object ref = unk3300JHJDJEBAFCM_;
         if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
           java.lang.String s = bs.toStringUtf8();
-          reportType_ = s;
+          unk3300JHJDJEBAFCM_ = s;
           return s;
         } else {
           return (java.lang.String) ref;
         }
       }
       /**
-       * <code>string report_type = 1;</code>
-       * @return The bytes for reportType.
+       * <code>string Unk3300_JHJDJEBAFCM = 15;</code>
+       * @return The bytes for unk3300JHJDJEBAFCM.
        */
       public com.google.protobuf.ByteString
-          getReportTypeBytes() {
-        java.lang.Object ref = reportType_;
+          getUnk3300JHJDJEBAFCMBytes() {
+        java.lang.Object ref = unk3300JHJDJEBAFCM_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
                   (java.lang.String) ref);
-          reportType_ = b;
+          unk3300JHJDJEBAFCM_ = b;
           return b;
         } else {
           return (com.google.protobuf.ByteString) ref;
         }
       }
       /**
-       * <code>string report_type = 1;</code>
-       * @param value The reportType to set.
+       * <code>string Unk3300_JHJDJEBAFCM = 15;</code>
+       * @param value The unk3300JHJDJEBAFCM to set.
        * @return This builder for chaining.
        */
-      public Builder setReportType(
+      public Builder setUnk3300JHJDJEBAFCM(
           java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
   
-        reportType_ = value;
+        unk3300JHJDJEBAFCM_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>string report_type = 1;</code>
+       * <code>string Unk3300_JHJDJEBAFCM = 15;</code>
        * @return This builder for chaining.
        */
-      public Builder clearReportType() {
+      public Builder clearUnk3300JHJDJEBAFCM() {
         
-        reportType_ = getDefaultInstance().getReportType();
+        unk3300JHJDJEBAFCM_ = getDefaultInstance().getUnk3300JHJDJEBAFCM();
         onChanged();
         return this;
       }
       /**
-       * <code>string report_type = 1;</code>
-       * @param value The bytes for reportType to set.
+       * <code>string Unk3300_JHJDJEBAFCM = 15;</code>
+       * @param value The bytes for unk3300JHJDJEBAFCM to set.
        * @return This builder for chaining.
        */
-      public Builder setReportTypeBytes(
+      public Builder setUnk3300JHJDJEBAFCMBytes(
           com.google.protobuf.ByteString value) {
         if (value == null) {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
         
-        reportType_ = value;
+        unk3300JHJDJEBAFCM_ = value;
         onChanged();
         return this;
       }
 
-      private java.lang.Object reportValue_ = "";
+      private java.lang.Object unk3300AMLEAJLJDFO_ = "";
       /**
-       * <code>string report_value = 4;</code>
-       * @return The reportValue.
+       * <code>string Unk3300_AMLEAJLJDFO = 10;</code>
+       * @return The unk3300AMLEAJLJDFO.
        */
-      public java.lang.String getReportValue() {
-        java.lang.Object ref = reportValue_;
+      public java.lang.String getUnk3300AMLEAJLJDFO() {
+        java.lang.Object ref = unk3300AMLEAJLJDFO_;
         if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
           java.lang.String s = bs.toStringUtf8();
-          reportValue_ = s;
+          unk3300AMLEAJLJDFO_ = s;
           return s;
         } else {
           return (java.lang.String) ref;
         }
       }
       /**
-       * <code>string report_value = 4;</code>
-       * @return The bytes for reportValue.
+       * <code>string Unk3300_AMLEAJLJDFO = 10;</code>
+       * @return The bytes for unk3300AMLEAJLJDFO.
        */
       public com.google.protobuf.ByteString
-          getReportValueBytes() {
-        java.lang.Object ref = reportValue_;
+          getUnk3300AMLEAJLJDFOBytes() {
+        java.lang.Object ref = unk3300AMLEAJLJDFO_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
                   (java.lang.String) ref);
-          reportValue_ = b;
+          unk3300AMLEAJLJDFO_ = b;
           return b;
         } else {
           return (com.google.protobuf.ByteString) ref;
         }
       }
       /**
-       * <code>string report_value = 4;</code>
-       * @param value The reportValue to set.
+       * <code>string Unk3300_AMLEAJLJDFO = 10;</code>
+       * @param value The unk3300AMLEAJLJDFO to set.
        * @return This builder for chaining.
        */
-      public Builder setReportValue(
+      public Builder setUnk3300AMLEAJLJDFO(
           java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
   
-        reportValue_ = value;
+        unk3300AMLEAJLJDFO_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>string report_value = 4;</code>
+       * <code>string Unk3300_AMLEAJLJDFO = 10;</code>
        * @return This builder for chaining.
        */
-      public Builder clearReportValue() {
+      public Builder clearUnk3300AMLEAJLJDFO() {
         
-        reportValue_ = getDefaultInstance().getReportValue();
+        unk3300AMLEAJLJDFO_ = getDefaultInstance().getUnk3300AMLEAJLJDFO();
         onChanged();
         return this;
       }
       /**
-       * <code>string report_value = 4;</code>
-       * @param value The bytes for reportValue to set.
+       * <code>string Unk3300_AMLEAJLJDFO = 10;</code>
+       * @param value The bytes for unk3300AMLEAJLJDFO to set.
        * @return This builder for chaining.
        */
-      public Builder setReportValueBytes(
+      public Builder setUnk3300AMLEAJLJDFOBytes(
           com.google.protobuf.ByteString value) {
         if (value == null) {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
         
-        reportValue_ = value;
+        unk3300AMLEAJLJDFO_ = value;
         onChanged();
         return this;
       }
@@ -760,10 +768,10 @@ public final class ClientReportNotifyOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\030ClientReportNotify.proto\"?\n\022ClientRepo" +
-      "rtNotify\022\023\n\013report_type\030\001 \001(\t\022\024\n\014report_" +
-      "value\030\004 \001(\tB\033\n\031emu.grasscutter.net.proto" +
-      "b\006proto3"
+      "\n\030ClientReportNotify.proto\"N\n\022ClientRepo" +
+      "rtNotify\022\033\n\023Unk3300_JHJDJEBAFCM\030\017 \001(\t\022\033\n" +
+      "\023Unk3300_AMLEAJLJDFO\030\n \001(\tB\033\n\031emu.grassc" +
+      "utter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -774,7 +782,7 @@ public final class ClientReportNotifyOuterClass {
     internal_static_ClientReportNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ClientReportNotify_descriptor,
-        new java.lang.String[] { "ReportType", "ReportValue", });
+        new java.lang.String[] { "Unk3300JHJDJEBAFCM", "Unk3300AMLEAJLJDFO", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

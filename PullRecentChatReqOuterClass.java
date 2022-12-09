@@ -19,7 +19,7 @@ public final class PullRecentChatReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 pull_num = 6;</code>
+     * <code>uint32 pull_num = 3;</code>
      * @return The pullNum.
      */
     int getPullNum();
@@ -32,10 +32,14 @@ public final class PullRecentChatReqOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 5040
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 4997;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code PullRecentChatReq}
@@ -82,7 +86,7 @@ public final class PullRecentChatReqOuterClass {
             case 0:
               done = true;
               break;
-            case 48: {
+            case 24: {
 
               pullNum_ = input.readUInt32();
               break;
@@ -124,10 +128,10 @@ public final class PullRecentChatReqOuterClass {
               emu.grasscutter.net.proto.PullRecentChatReqOuterClass.PullRecentChatReq.class, emu.grasscutter.net.proto.PullRecentChatReqOuterClass.PullRecentChatReq.Builder.class);
     }
 
-    public static final int PULL_NUM_FIELD_NUMBER = 6;
+    public static final int PULL_NUM_FIELD_NUMBER = 3;
     private int pullNum_;
     /**
-     * <code>uint32 pull_num = 6;</code>
+     * <code>uint32 pull_num = 3;</code>
      * @return The pullNum.
      */
     @java.lang.Override
@@ -161,7 +165,7 @@ public final class PullRecentChatReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (pullNum_ != 0) {
-        output.writeUInt32(6, pullNum_);
+        output.writeUInt32(3, pullNum_);
       }
       if (beginSequence_ != 0) {
         output.writeUInt32(15, beginSequence_);
@@ -177,7 +181,7 @@ public final class PullRecentChatReqOuterClass {
       size = 0;
       if (pullNum_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, pullNum_);
+          .computeUInt32Size(3, pullNum_);
       }
       if (beginSequence_ != 0) {
         size += com.google.protobuf.CodedOutputStream
@@ -314,10 +318,14 @@ public final class PullRecentChatReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 5040
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 4997;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code PullRecentChatReq}
@@ -474,7 +482,7 @@ public final class PullRecentChatReqOuterClass {
 
       private int pullNum_ ;
       /**
-       * <code>uint32 pull_num = 6;</code>
+       * <code>uint32 pull_num = 3;</code>
        * @return The pullNum.
        */
       @java.lang.Override
@@ -482,7 +490,7 @@ public final class PullRecentChatReqOuterClass {
         return pullNum_;
       }
       /**
-       * <code>uint32 pull_num = 6;</code>
+       * <code>uint32 pull_num = 3;</code>
        * @param value The pullNum to set.
        * @return This builder for chaining.
        */
@@ -493,7 +501,7 @@ public final class PullRecentChatReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 pull_num = 6;</code>
+       * <code>uint32 pull_num = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearPullNum() {
@@ -601,7 +609,7 @@ public final class PullRecentChatReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\027PullRecentChatReq.proto\"=\n\021PullRecentC" +
-      "hatReq\022\020\n\010pull_num\030\006 \001(\r\022\026\n\016begin_sequen" +
+      "hatReq\022\020\n\010pull_num\030\003 \001(\r\022\026\n\016begin_sequen" +
       "ce\030\017 \001(\rB\033\n\031emu.grasscutter.net.protob\006p" +
       "roto3"
     };

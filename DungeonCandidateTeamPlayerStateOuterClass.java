@@ -24,9 +24,9 @@ public final class DungeonCandidateTeamPlayerStateOuterClass {
      */
     DUNGEON_CANDIDATE_TEAM_PLAYER_STATE_IDLE(0),
     /**
-     * <code>DUNGEON_CANDIDATE_TEAM_PLAYER_STATE_CHANGING_AVATAR = 1;</code>
+     * <code>DUNGEON_CANDIDATE_TEAM_PLAYER_STATE_CHANGING_AV_ATAR = 1;</code>
      */
-    DUNGEON_CANDIDATE_TEAM_PLAYER_STATE_CHANGING_AVATAR(1),
+    DUNGEON_CANDIDATE_TEAM_PLAYER_STATE_CHANGING_AV_ATAR(1),
     /**
      * <code>DUNGEON_CANDIDATE_TEAM_PLAYER_STATE_READY = 2;</code>
      */
@@ -39,9 +39,9 @@ public final class DungeonCandidateTeamPlayerStateOuterClass {
      */
     public static final int DUNGEON_CANDIDATE_TEAM_PLAYER_STATE_IDLE_VALUE = 0;
     /**
-     * <code>DUNGEON_CANDIDATE_TEAM_PLAYER_STATE_CHANGING_AVATAR = 1;</code>
+     * <code>DUNGEON_CANDIDATE_TEAM_PLAYER_STATE_CHANGING_AV_ATAR = 1;</code>
      */
-    public static final int DUNGEON_CANDIDATE_TEAM_PLAYER_STATE_CHANGING_AVATAR_VALUE = 1;
+    public static final int DUNGEON_CANDIDATE_TEAM_PLAYER_STATE_CHANGING_AV_ATAR_VALUE = 1;
     /**
      * <code>DUNGEON_CANDIDATE_TEAM_PLAYER_STATE_READY = 2;</code>
      */
@@ -73,7 +73,7 @@ public final class DungeonCandidateTeamPlayerStateOuterClass {
     public static DungeonCandidateTeamPlayerState forNumber(int value) {
       switch (value) {
         case 0: return DUNGEON_CANDIDATE_TEAM_PLAYER_STATE_IDLE;
-        case 1: return DUNGEON_CANDIDATE_TEAM_PLAYER_STATE_CHANGING_AVATAR;
+        case 1: return DUNGEON_CANDIDATE_TEAM_PLAYER_STATE_CHANGING_AV_ATAR;
         case 2: return DUNGEON_CANDIDATE_TEAM_PLAYER_STATE_READY;
         default: return null;
       }
@@ -141,12 +141,12 @@ public final class DungeonCandidateTeamPlayerStateOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n%DungeonCandidateTeamPlayerState.proto*" +
-      "\267\001\n\037DungeonCandidateTeamPlayerState\022,\n(D" +
+      "\270\001\n\037DungeonCandidateTeamPlayerState\022,\n(D" +
       "UNGEON_CANDIDATE_TEAM_PLAYER_STATE_IDLE\020" +
-      "\000\0227\n3DUNGEON_CANDIDATE_TEAM_PLAYER_STATE" +
-      "_CHANGING_AVATAR\020\001\022-\n)DUNGEON_CANDIDATE_" +
-      "TEAM_PLAYER_STATE_READY\020\002B\033\n\031emu.grasscu" +
-      "tter.net.protob\006proto3"
+      "\000\0228\n4DUNGEON_CANDIDATE_TEAM_PLAYER_STATE" +
+      "_CHANGING_AV_ATAR\020\001\022-\n)DUNGEON_CANDIDATE" +
+      "_TEAM_PLAYER_STATE_READY\020\002B\033\n\031emu.grassc" +
+      "utter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

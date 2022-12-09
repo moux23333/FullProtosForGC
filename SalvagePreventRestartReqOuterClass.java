@@ -19,17 +19,21 @@ public final class SalvagePreventRestartReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 gallery_id = 13;</code>
+     * <code>uint32 gallery_id = 7;</code>
      * @return The galleryId.
      */
     int getGalleryId();
   }
   /**
    * <pre>
-   * CmdId: 8367
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 8796;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code SalvagePreventRestartReq}
@@ -76,7 +80,7 @@ public final class SalvagePreventRestartReqOuterClass {
             case 0:
               done = true;
               break;
-            case 104: {
+            case 56: {
 
               galleryId_ = input.readUInt32();
               break;
@@ -113,10 +117,10 @@ public final class SalvagePreventRestartReqOuterClass {
               emu.grasscutter.net.proto.SalvagePreventRestartReqOuterClass.SalvagePreventRestartReq.class, emu.grasscutter.net.proto.SalvagePreventRestartReqOuterClass.SalvagePreventRestartReq.Builder.class);
     }
 
-    public static final int GALLERY_ID_FIELD_NUMBER = 13;
+    public static final int GALLERY_ID_FIELD_NUMBER = 7;
     private int galleryId_;
     /**
-     * <code>uint32 gallery_id = 13;</code>
+     * <code>uint32 gallery_id = 7;</code>
      * @return The galleryId.
      */
     @java.lang.Override
@@ -139,7 +143,7 @@ public final class SalvagePreventRestartReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (galleryId_ != 0) {
-        output.writeUInt32(13, galleryId_);
+        output.writeUInt32(7, galleryId_);
       }
       unknownFields.writeTo(output);
     }
@@ -152,7 +156,7 @@ public final class SalvagePreventRestartReqOuterClass {
       size = 0;
       if (galleryId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, galleryId_);
+          .computeUInt32Size(7, galleryId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -281,10 +285,14 @@ public final class SalvagePreventRestartReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 8367
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 8796;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code SalvagePreventRestartReq}
@@ -435,7 +443,7 @@ public final class SalvagePreventRestartReqOuterClass {
 
       private int galleryId_ ;
       /**
-       * <code>uint32 gallery_id = 13;</code>
+       * <code>uint32 gallery_id = 7;</code>
        * @return The galleryId.
        */
       @java.lang.Override
@@ -443,7 +451,7 @@ public final class SalvagePreventRestartReqOuterClass {
         return galleryId_;
       }
       /**
-       * <code>uint32 gallery_id = 13;</code>
+       * <code>uint32 gallery_id = 7;</code>
        * @param value The galleryId to set.
        * @return This builder for chaining.
        */
@@ -454,7 +462,7 @@ public final class SalvagePreventRestartReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 gallery_id = 13;</code>
+       * <code>uint32 gallery_id = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearGalleryId() {
@@ -531,7 +539,7 @@ public final class SalvagePreventRestartReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\036SalvagePreventRestartReq.proto\".\n\030Salv" +
-      "agePreventRestartReq\022\022\n\ngallery_id\030\r \001(\r" +
+      "agePreventRestartReq\022\022\n\ngallery_id\030\007 \001(\r" +
       "B\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

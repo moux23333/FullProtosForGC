@@ -19,16 +19,16 @@ public final class VintageHuntingThirdStageSettleInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 left_time = 13;</code>
-     * @return The leftTime.
-     */
-    int getLeftTime();
-
-    /**
-     * <code>bool is_success = 9;</code>
+     * <code>bool is_success = 2;</code>
      * @return The isSuccess.
      */
     boolean getIsSuccess();
+
+    /**
+     * <code>uint32 left_time = 3;</code>
+     * @return The leftTime.
+     */
+    int getLeftTime();
   }
   /**
    * Protobuf type {@code VintageHuntingThirdStageSettleInfo}
@@ -75,12 +75,12 @@ public final class VintageHuntingThirdStageSettleInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 72: {
+            case 16: {
 
               isSuccess_ = input.readBool();
               break;
             }
-            case 104: {
+            case 24: {
 
               leftTime_ = input.readUInt32();
               break;
@@ -117,26 +117,26 @@ public final class VintageHuntingThirdStageSettleInfoOuterClass {
               emu.grasscutter.net.proto.VintageHuntingThirdStageSettleInfoOuterClass.VintageHuntingThirdStageSettleInfo.class, emu.grasscutter.net.proto.VintageHuntingThirdStageSettleInfoOuterClass.VintageHuntingThirdStageSettleInfo.Builder.class);
     }
 
-    public static final int LEFT_TIME_FIELD_NUMBER = 13;
-    private int leftTime_;
-    /**
-     * <code>uint32 left_time = 13;</code>
-     * @return The leftTime.
-     */
-    @java.lang.Override
-    public int getLeftTime() {
-      return leftTime_;
-    }
-
-    public static final int IS_SUCCESS_FIELD_NUMBER = 9;
+    public static final int IS_SUCCESS_FIELD_NUMBER = 2;
     private boolean isSuccess_;
     /**
-     * <code>bool is_success = 9;</code>
+     * <code>bool is_success = 2;</code>
      * @return The isSuccess.
      */
     @java.lang.Override
     public boolean getIsSuccess() {
       return isSuccess_;
+    }
+
+    public static final int LEFT_TIME_FIELD_NUMBER = 3;
+    private int leftTime_;
+    /**
+     * <code>uint32 left_time = 3;</code>
+     * @return The leftTime.
+     */
+    @java.lang.Override
+    public int getLeftTime() {
+      return leftTime_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -154,10 +154,10 @@ public final class VintageHuntingThirdStageSettleInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (isSuccess_ != false) {
-        output.writeBool(9, isSuccess_);
+        output.writeBool(2, isSuccess_);
       }
       if (leftTime_ != 0) {
-        output.writeUInt32(13, leftTime_);
+        output.writeUInt32(3, leftTime_);
       }
       unknownFields.writeTo(output);
     }
@@ -170,11 +170,11 @@ public final class VintageHuntingThirdStageSettleInfoOuterClass {
       size = 0;
       if (isSuccess_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(9, isSuccess_);
+          .computeBoolSize(2, isSuccess_);
       }
       if (leftTime_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, leftTime_);
+          .computeUInt32Size(3, leftTime_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -191,10 +191,10 @@ public final class VintageHuntingThirdStageSettleInfoOuterClass {
       }
       emu.grasscutter.net.proto.VintageHuntingThirdStageSettleInfoOuterClass.VintageHuntingThirdStageSettleInfo other = (emu.grasscutter.net.proto.VintageHuntingThirdStageSettleInfoOuterClass.VintageHuntingThirdStageSettleInfo) obj;
 
-      if (getLeftTime()
-          != other.getLeftTime()) return false;
       if (getIsSuccess()
           != other.getIsSuccess()) return false;
+      if (getLeftTime()
+          != other.getLeftTime()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -206,11 +206,11 @@ public final class VintageHuntingThirdStageSettleInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + LEFT_TIME_FIELD_NUMBER;
-      hash = (53 * hash) + getLeftTime();
       hash = (37 * hash) + IS_SUCCESS_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsSuccess());
+      hash = (37 * hash) + LEFT_TIME_FIELD_NUMBER;
+      hash = (53 * hash) + getLeftTime();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -344,9 +344,9 @@ public final class VintageHuntingThirdStageSettleInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        leftTime_ = 0;
-
         isSuccess_ = false;
+
+        leftTime_ = 0;
 
         return this;
       }
@@ -374,8 +374,8 @@ public final class VintageHuntingThirdStageSettleInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.VintageHuntingThirdStageSettleInfoOuterClass.VintageHuntingThirdStageSettleInfo buildPartial() {
         emu.grasscutter.net.proto.VintageHuntingThirdStageSettleInfoOuterClass.VintageHuntingThirdStageSettleInfo result = new emu.grasscutter.net.proto.VintageHuntingThirdStageSettleInfoOuterClass.VintageHuntingThirdStageSettleInfo(this);
-        result.leftTime_ = leftTime_;
         result.isSuccess_ = isSuccess_;
+        result.leftTime_ = leftTime_;
         onBuilt();
         return result;
       }
@@ -424,11 +424,11 @@ public final class VintageHuntingThirdStageSettleInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.VintageHuntingThirdStageSettleInfoOuterClass.VintageHuntingThirdStageSettleInfo other) {
         if (other == emu.grasscutter.net.proto.VintageHuntingThirdStageSettleInfoOuterClass.VintageHuntingThirdStageSettleInfo.getDefaultInstance()) return this;
-        if (other.getLeftTime() != 0) {
-          setLeftTime(other.getLeftTime());
-        }
         if (other.getIsSuccess() != false) {
           setIsSuccess(other.getIsSuccess());
+        }
+        if (other.getLeftTime() != 0) {
+          setLeftTime(other.getLeftTime());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -459,40 +459,9 @@ public final class VintageHuntingThirdStageSettleInfoOuterClass {
         return this;
       }
 
-      private int leftTime_ ;
-      /**
-       * <code>uint32 left_time = 13;</code>
-       * @return The leftTime.
-       */
-      @java.lang.Override
-      public int getLeftTime() {
-        return leftTime_;
-      }
-      /**
-       * <code>uint32 left_time = 13;</code>
-       * @param value The leftTime to set.
-       * @return This builder for chaining.
-       */
-      public Builder setLeftTime(int value) {
-        
-        leftTime_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 left_time = 13;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearLeftTime() {
-        
-        leftTime_ = 0;
-        onChanged();
-        return this;
-      }
-
       private boolean isSuccess_ ;
       /**
-       * <code>bool is_success = 9;</code>
+       * <code>bool is_success = 2;</code>
        * @return The isSuccess.
        */
       @java.lang.Override
@@ -500,7 +469,7 @@ public final class VintageHuntingThirdStageSettleInfoOuterClass {
         return isSuccess_;
       }
       /**
-       * <code>bool is_success = 9;</code>
+       * <code>bool is_success = 2;</code>
        * @param value The isSuccess to set.
        * @return This builder for chaining.
        */
@@ -511,12 +480,43 @@ public final class VintageHuntingThirdStageSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>bool is_success = 9;</code>
+       * <code>bool is_success = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsSuccess() {
         
         isSuccess_ = false;
+        onChanged();
+        return this;
+      }
+
+      private int leftTime_ ;
+      /**
+       * <code>uint32 left_time = 3;</code>
+       * @return The leftTime.
+       */
+      @java.lang.Override
+      public int getLeftTime() {
+        return leftTime_;
+      }
+      /**
+       * <code>uint32 left_time = 3;</code>
+       * @param value The leftTime to set.
+       * @return This builder for chaining.
+       */
+      public Builder setLeftTime(int value) {
+        
+        leftTime_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 left_time = 3;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearLeftTime() {
+        
+        leftTime_ = 0;
         onChanged();
         return this;
       }
@@ -589,7 +589,7 @@ public final class VintageHuntingThirdStageSettleInfoOuterClass {
     java.lang.String[] descriptorData = {
       "\n(VintageHuntingThirdStageSettleInfo.pro" +
       "to\"K\n\"VintageHuntingThirdStageSettleInfo" +
-      "\022\021\n\tleft_time\030\r \001(\r\022\022\n\nis_success\030\t \001(\010B" +
+      "\022\022\n\nis_success\030\002 \001(\010\022\021\n\tleft_time\030\003 \001(\rB" +
       "\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -601,7 +601,7 @@ public final class VintageHuntingThirdStageSettleInfoOuterClass {
     internal_static_VintageHuntingThirdStageSettleInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_VintageHuntingThirdStageSettleInfo_descriptor,
-        new java.lang.String[] { "LeftTime", "IsSuccess", });
+        new java.lang.String[] { "IsSuccess", "LeftTime", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

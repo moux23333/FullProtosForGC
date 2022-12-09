@@ -19,34 +19,38 @@ public final class EvtFaceToEntityNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 face_entity_id = 5;</code>
-     * @return The faceEntityId.
+     * <code>uint32 entity_id = 10;</code>
+     * @return The entityId.
      */
-    int getFaceEntityId();
+    int getEntityId();
 
     /**
-     * <code>.ForwardType forward_type = 9;</code>
+     * <code>.ForwardType forward_type = 8;</code>
      * @return The enum numeric value on the wire for forwardType.
      */
     int getForwardTypeValue();
     /**
-     * <code>.ForwardType forward_type = 9;</code>
+     * <code>.ForwardType forward_type = 8;</code>
      * @return The forwardType.
      */
     emu.grasscutter.net.proto.ForwardTypeOuterClass.ForwardType getForwardType();
 
     /**
-     * <code>uint32 entity_id = 1;</code>
-     * @return The entityId.
+     * <code>uint32 face_entity_id = 4;</code>
+     * @return The faceEntityId.
      */
-    int getEntityId();
+    int getFaceEntityId();
   }
   /**
    * <pre>
-   * CmdId: 303
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 361;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code EvtFaceToEntityNotify}
@@ -94,20 +98,20 @@ public final class EvtFaceToEntityNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
-
-              entityId_ = input.readUInt32();
-              break;
-            }
-            case 40: {
+            case 32: {
 
               faceEntityId_ = input.readUInt32();
               break;
             }
-            case 72: {
+            case 64: {
               int rawValue = input.readEnum();
 
               forwardType_ = rawValue;
+              break;
+            }
+            case 80: {
+
+              entityId_ = input.readUInt32();
               break;
             }
             default: {
@@ -142,28 +146,28 @@ public final class EvtFaceToEntityNotifyOuterClass {
               emu.grasscutter.net.proto.EvtFaceToEntityNotifyOuterClass.EvtFaceToEntityNotify.class, emu.grasscutter.net.proto.EvtFaceToEntityNotifyOuterClass.EvtFaceToEntityNotify.Builder.class);
     }
 
-    public static final int FACE_ENTITY_ID_FIELD_NUMBER = 5;
-    private int faceEntityId_;
+    public static final int ENTITY_ID_FIELD_NUMBER = 10;
+    private int entityId_;
     /**
-     * <code>uint32 face_entity_id = 5;</code>
-     * @return The faceEntityId.
+     * <code>uint32 entity_id = 10;</code>
+     * @return The entityId.
      */
     @java.lang.Override
-    public int getFaceEntityId() {
-      return faceEntityId_;
+    public int getEntityId() {
+      return entityId_;
     }
 
-    public static final int FORWARD_TYPE_FIELD_NUMBER = 9;
+    public static final int FORWARD_TYPE_FIELD_NUMBER = 8;
     private int forwardType_;
     /**
-     * <code>.ForwardType forward_type = 9;</code>
+     * <code>.ForwardType forward_type = 8;</code>
      * @return The enum numeric value on the wire for forwardType.
      */
     @java.lang.Override public int getForwardTypeValue() {
       return forwardType_;
     }
     /**
-     * <code>.ForwardType forward_type = 9;</code>
+     * <code>.ForwardType forward_type = 8;</code>
      * @return The forwardType.
      */
     @java.lang.Override public emu.grasscutter.net.proto.ForwardTypeOuterClass.ForwardType getForwardType() {
@@ -172,15 +176,15 @@ public final class EvtFaceToEntityNotifyOuterClass {
       return result == null ? emu.grasscutter.net.proto.ForwardTypeOuterClass.ForwardType.UNRECOGNIZED : result;
     }
 
-    public static final int ENTITY_ID_FIELD_NUMBER = 1;
-    private int entityId_;
+    public static final int FACE_ENTITY_ID_FIELD_NUMBER = 4;
+    private int faceEntityId_;
     /**
-     * <code>uint32 entity_id = 1;</code>
-     * @return The entityId.
+     * <code>uint32 face_entity_id = 4;</code>
+     * @return The faceEntityId.
      */
     @java.lang.Override
-    public int getEntityId() {
-      return entityId_;
+    public int getFaceEntityId() {
+      return faceEntityId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -197,14 +201,14 @@ public final class EvtFaceToEntityNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (entityId_ != 0) {
-        output.writeUInt32(1, entityId_);
-      }
       if (faceEntityId_ != 0) {
-        output.writeUInt32(5, faceEntityId_);
+        output.writeUInt32(4, faceEntityId_);
       }
       if (forwardType_ != emu.grasscutter.net.proto.ForwardTypeOuterClass.ForwardType.FORWARD_TYPE_LOCAL.getNumber()) {
-        output.writeEnum(9, forwardType_);
+        output.writeEnum(8, forwardType_);
+      }
+      if (entityId_ != 0) {
+        output.writeUInt32(10, entityId_);
       }
       unknownFields.writeTo(output);
     }
@@ -215,17 +219,17 @@ public final class EvtFaceToEntityNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (entityId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, entityId_);
-      }
       if (faceEntityId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, faceEntityId_);
+          .computeUInt32Size(4, faceEntityId_);
       }
       if (forwardType_ != emu.grasscutter.net.proto.ForwardTypeOuterClass.ForwardType.FORWARD_TYPE_LOCAL.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(9, forwardType_);
+          .computeEnumSize(8, forwardType_);
+      }
+      if (entityId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(10, entityId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -242,11 +246,11 @@ public final class EvtFaceToEntityNotifyOuterClass {
       }
       emu.grasscutter.net.proto.EvtFaceToEntityNotifyOuterClass.EvtFaceToEntityNotify other = (emu.grasscutter.net.proto.EvtFaceToEntityNotifyOuterClass.EvtFaceToEntityNotify) obj;
 
-      if (getFaceEntityId()
-          != other.getFaceEntityId()) return false;
-      if (forwardType_ != other.forwardType_) return false;
       if (getEntityId()
           != other.getEntityId()) return false;
+      if (forwardType_ != other.forwardType_) return false;
+      if (getFaceEntityId()
+          != other.getFaceEntityId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -258,12 +262,12 @@ public final class EvtFaceToEntityNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + FACE_ENTITY_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getFaceEntityId();
-      hash = (37 * hash) + FORWARD_TYPE_FIELD_NUMBER;
-      hash = (53 * hash) + forwardType_;
       hash = (37 * hash) + ENTITY_ID_FIELD_NUMBER;
       hash = (53 * hash) + getEntityId();
+      hash = (37 * hash) + FORWARD_TYPE_FIELD_NUMBER;
+      hash = (53 * hash) + forwardType_;
+      hash = (37 * hash) + FACE_ENTITY_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getFaceEntityId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -361,10 +365,14 @@ public final class EvtFaceToEntityNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 303
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 361;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code EvtFaceToEntityNotify}
@@ -404,11 +412,11 @@ public final class EvtFaceToEntityNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        faceEntityId_ = 0;
+        entityId_ = 0;
 
         forwardType_ = 0;
 
-        entityId_ = 0;
+        faceEntityId_ = 0;
 
         return this;
       }
@@ -436,9 +444,9 @@ public final class EvtFaceToEntityNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.EvtFaceToEntityNotifyOuterClass.EvtFaceToEntityNotify buildPartial() {
         emu.grasscutter.net.proto.EvtFaceToEntityNotifyOuterClass.EvtFaceToEntityNotify result = new emu.grasscutter.net.proto.EvtFaceToEntityNotifyOuterClass.EvtFaceToEntityNotify(this);
-        result.faceEntityId_ = faceEntityId_;
-        result.forwardType_ = forwardType_;
         result.entityId_ = entityId_;
+        result.forwardType_ = forwardType_;
+        result.faceEntityId_ = faceEntityId_;
         onBuilt();
         return result;
       }
@@ -487,14 +495,14 @@ public final class EvtFaceToEntityNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.EvtFaceToEntityNotifyOuterClass.EvtFaceToEntityNotify other) {
         if (other == emu.grasscutter.net.proto.EvtFaceToEntityNotifyOuterClass.EvtFaceToEntityNotify.getDefaultInstance()) return this;
-        if (other.getFaceEntityId() != 0) {
-          setFaceEntityId(other.getFaceEntityId());
+        if (other.getEntityId() != 0) {
+          setEntityId(other.getEntityId());
         }
         if (other.forwardType_ != 0) {
           setForwardTypeValue(other.getForwardTypeValue());
         }
-        if (other.getEntityId() != 0) {
-          setEntityId(other.getEntityId());
+        if (other.getFaceEntityId() != 0) {
+          setFaceEntityId(other.getFaceEntityId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -525,47 +533,47 @@ public final class EvtFaceToEntityNotifyOuterClass {
         return this;
       }
 
-      private int faceEntityId_ ;
+      private int entityId_ ;
       /**
-       * <code>uint32 face_entity_id = 5;</code>
-       * @return The faceEntityId.
+       * <code>uint32 entity_id = 10;</code>
+       * @return The entityId.
        */
       @java.lang.Override
-      public int getFaceEntityId() {
-        return faceEntityId_;
+      public int getEntityId() {
+        return entityId_;
       }
       /**
-       * <code>uint32 face_entity_id = 5;</code>
-       * @param value The faceEntityId to set.
+       * <code>uint32 entity_id = 10;</code>
+       * @param value The entityId to set.
        * @return This builder for chaining.
        */
-      public Builder setFaceEntityId(int value) {
+      public Builder setEntityId(int value) {
         
-        faceEntityId_ = value;
+        entityId_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 face_entity_id = 5;</code>
+       * <code>uint32 entity_id = 10;</code>
        * @return This builder for chaining.
        */
-      public Builder clearFaceEntityId() {
+      public Builder clearEntityId() {
         
-        faceEntityId_ = 0;
+        entityId_ = 0;
         onChanged();
         return this;
       }
 
       private int forwardType_ = 0;
       /**
-       * <code>.ForwardType forward_type = 9;</code>
+       * <code>.ForwardType forward_type = 8;</code>
        * @return The enum numeric value on the wire for forwardType.
        */
       @java.lang.Override public int getForwardTypeValue() {
         return forwardType_;
       }
       /**
-       * <code>.ForwardType forward_type = 9;</code>
+       * <code>.ForwardType forward_type = 8;</code>
        * @param value The enum numeric value on the wire for forwardType to set.
        * @return This builder for chaining.
        */
@@ -576,7 +584,7 @@ public final class EvtFaceToEntityNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.ForwardType forward_type = 9;</code>
+       * <code>.ForwardType forward_type = 8;</code>
        * @return The forwardType.
        */
       @java.lang.Override
@@ -586,7 +594,7 @@ public final class EvtFaceToEntityNotifyOuterClass {
         return result == null ? emu.grasscutter.net.proto.ForwardTypeOuterClass.ForwardType.UNRECOGNIZED : result;
       }
       /**
-       * <code>.ForwardType forward_type = 9;</code>
+       * <code>.ForwardType forward_type = 8;</code>
        * @param value The forwardType to set.
        * @return This builder for chaining.
        */
@@ -600,7 +608,7 @@ public final class EvtFaceToEntityNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.ForwardType forward_type = 9;</code>
+       * <code>.ForwardType forward_type = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearForwardType() {
@@ -610,33 +618,33 @@ public final class EvtFaceToEntityNotifyOuterClass {
         return this;
       }
 
-      private int entityId_ ;
+      private int faceEntityId_ ;
       /**
-       * <code>uint32 entity_id = 1;</code>
-       * @return The entityId.
+       * <code>uint32 face_entity_id = 4;</code>
+       * @return The faceEntityId.
        */
       @java.lang.Override
-      public int getEntityId() {
-        return entityId_;
+      public int getFaceEntityId() {
+        return faceEntityId_;
       }
       /**
-       * <code>uint32 entity_id = 1;</code>
-       * @param value The entityId to set.
+       * <code>uint32 face_entity_id = 4;</code>
+       * @param value The faceEntityId to set.
        * @return This builder for chaining.
        */
-      public Builder setEntityId(int value) {
+      public Builder setFaceEntityId(int value) {
         
-        entityId_ = value;
+        faceEntityId_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 entity_id = 1;</code>
+       * <code>uint32 face_entity_id = 4;</code>
        * @return This builder for chaining.
        */
-      public Builder clearEntityId() {
+      public Builder clearFaceEntityId() {
         
-        entityId_ = 0;
+        faceEntityId_ = 0;
         onChanged();
         return this;
       }
@@ -708,9 +716,9 @@ public final class EvtFaceToEntityNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\033EvtFaceToEntityNotify.proto\032\021ForwardTy" +
-      "pe.proto\"f\n\025EvtFaceToEntityNotify\022\026\n\016fac" +
-      "e_entity_id\030\005 \001(\r\022\"\n\014forward_type\030\t \001(\0162" +
-      "\014.ForwardType\022\021\n\tentity_id\030\001 \001(\rB\033\n\031emu." +
+      "pe.proto\"f\n\025EvtFaceToEntityNotify\022\021\n\tent" +
+      "ity_id\030\n \001(\r\022\"\n\014forward_type\030\010 \001(\0162\014.For" +
+      "wardType\022\026\n\016face_entity_id\030\004 \001(\rB\033\n\031emu." +
       "grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -723,7 +731,7 @@ public final class EvtFaceToEntityNotifyOuterClass {
     internal_static_EvtFaceToEntityNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_EvtFaceToEntityNotify_descriptor,
-        new java.lang.String[] { "FaceEntityId", "ForwardType", "EntityId", });
+        new java.lang.String[] { "EntityId", "ForwardType", "FaceEntityId", });
     emu.grasscutter.net.proto.ForwardTypeOuterClass.getDescriptor();
   }
 

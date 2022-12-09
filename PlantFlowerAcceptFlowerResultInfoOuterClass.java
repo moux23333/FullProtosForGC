@@ -19,77 +19,77 @@ public final class PlantFlowerAcceptFlowerResultInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>map&lt;uint32, uint32&gt; unaccept_flower_num_map = 4;</code>
-     */
-    int getUnacceptFlowerNumMapCount();
-    /**
-     * <code>map&lt;uint32, uint32&gt; unaccept_flower_num_map = 4;</code>
-     */
-    boolean containsUnacceptFlowerNumMap(
-        int key);
-    /**
-     * Use {@link #getUnacceptFlowerNumMapMap()} instead.
-     */
-    @java.lang.Deprecated
-    java.util.Map<java.lang.Integer, java.lang.Integer>
-    getUnacceptFlowerNumMap();
-    /**
-     * <code>map&lt;uint32, uint32&gt; unaccept_flower_num_map = 4;</code>
-     */
-    java.util.Map<java.lang.Integer, java.lang.Integer>
-    getUnacceptFlowerNumMapMap();
-    /**
-     * <code>map&lt;uint32, uint32&gt; unaccept_flower_num_map = 4;</code>
-     */
-
-    int getUnacceptFlowerNumMapOrDefault(
-        int key,
-        int defaultValue);
-    /**
-     * <code>map&lt;uint32, uint32&gt; unaccept_flower_num_map = 4;</code>
-     */
-
-    int getUnacceptFlowerNumMapOrThrow(
-        int key);
-
-    /**
-     * <code>uint32 uid = 7;</code>
+     * <code>uint32 uid = 9;</code>
      * @return The uid.
      */
     int getUid();
 
     /**
-     * <code>map&lt;uint32, uint32&gt; accept_flower_num_map = 10;</code>
+     * <code>map&lt;uint32, uint32&gt; Unk3300_PALEJEDIAJP = 6;</code>
      */
-    int getAcceptFlowerNumMapCount();
+    int getUnk3300PALEJEDIAJPCount();
     /**
-     * <code>map&lt;uint32, uint32&gt; accept_flower_num_map = 10;</code>
+     * <code>map&lt;uint32, uint32&gt; Unk3300_PALEJEDIAJP = 6;</code>
      */
-    boolean containsAcceptFlowerNumMap(
+    boolean containsUnk3300PALEJEDIAJP(
         int key);
     /**
-     * Use {@link #getAcceptFlowerNumMapMap()} instead.
+     * Use {@link #getUnk3300PALEJEDIAJPMap()} instead.
      */
     @java.lang.Deprecated
     java.util.Map<java.lang.Integer, java.lang.Integer>
-    getAcceptFlowerNumMap();
+    getUnk3300PALEJEDIAJP();
     /**
-     * <code>map&lt;uint32, uint32&gt; accept_flower_num_map = 10;</code>
+     * <code>map&lt;uint32, uint32&gt; Unk3300_PALEJEDIAJP = 6;</code>
      */
     java.util.Map<java.lang.Integer, java.lang.Integer>
-    getAcceptFlowerNumMapMap();
+    getUnk3300PALEJEDIAJPMap();
     /**
-     * <code>map&lt;uint32, uint32&gt; accept_flower_num_map = 10;</code>
+     * <code>map&lt;uint32, uint32&gt; Unk3300_PALEJEDIAJP = 6;</code>
      */
 
-    int getAcceptFlowerNumMapOrDefault(
+    int getUnk3300PALEJEDIAJPOrDefault(
         int key,
         int defaultValue);
     /**
-     * <code>map&lt;uint32, uint32&gt; accept_flower_num_map = 10;</code>
+     * <code>map&lt;uint32, uint32&gt; Unk3300_PALEJEDIAJP = 6;</code>
      */
 
-    int getAcceptFlowerNumMapOrThrow(
+    int getUnk3300PALEJEDIAJPOrThrow(
+        int key);
+
+    /**
+     * <code>map&lt;uint32, uint32&gt; Unk3300_ILAADDCOPKE = 7;</code>
+     */
+    int getUnk3300ILAADDCOPKECount();
+    /**
+     * <code>map&lt;uint32, uint32&gt; Unk3300_ILAADDCOPKE = 7;</code>
+     */
+    boolean containsUnk3300ILAADDCOPKE(
+        int key);
+    /**
+     * Use {@link #getUnk3300ILAADDCOPKEMap()} instead.
+     */
+    @java.lang.Deprecated
+    java.util.Map<java.lang.Integer, java.lang.Integer>
+    getUnk3300ILAADDCOPKE();
+    /**
+     * <code>map&lt;uint32, uint32&gt; Unk3300_ILAADDCOPKE = 7;</code>
+     */
+    java.util.Map<java.lang.Integer, java.lang.Integer>
+    getUnk3300ILAADDCOPKEMap();
+    /**
+     * <code>map&lt;uint32, uint32&gt; Unk3300_ILAADDCOPKE = 7;</code>
+     */
+
+    int getUnk3300ILAADDCOPKEOrDefault(
+        int key,
+        int defaultValue);
+    /**
+     * <code>map&lt;uint32, uint32&gt; Unk3300_ILAADDCOPKE = 7;</code>
+     */
+
+    int getUnk3300ILAADDCOPKEOrThrow(
         int key);
   }
   /**
@@ -138,35 +138,35 @@ public final class PlantFlowerAcceptFlowerResultInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 34: {
+            case 50: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                unacceptFlowerNumMap_ = com.google.protobuf.MapField.newMapField(
-                    UnacceptFlowerNumMapDefaultEntryHolder.defaultEntry);
+                unk3300PALEJEDIAJP_ = com.google.protobuf.MapField.newMapField(
+                    Unk3300PALEJEDIAJPDefaultEntryHolder.defaultEntry);
                 mutable_bitField0_ |= 0x00000001;
               }
               com.google.protobuf.MapEntry<java.lang.Integer, java.lang.Integer>
-              unacceptFlowerNumMap__ = input.readMessage(
-                  UnacceptFlowerNumMapDefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
-              unacceptFlowerNumMap_.getMutableMap().put(
-                  unacceptFlowerNumMap__.getKey(), unacceptFlowerNumMap__.getValue());
+              unk3300PALEJEDIAJP__ = input.readMessage(
+                  Unk3300PALEJEDIAJPDefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
+              unk3300PALEJEDIAJP_.getMutableMap().put(
+                  unk3300PALEJEDIAJP__.getKey(), unk3300PALEJEDIAJP__.getValue());
               break;
             }
-            case 56: {
-
-              uid_ = input.readUInt32();
-              break;
-            }
-            case 82: {
+            case 58: {
               if (!((mutable_bitField0_ & 0x00000002) != 0)) {
-                acceptFlowerNumMap_ = com.google.protobuf.MapField.newMapField(
-                    AcceptFlowerNumMapDefaultEntryHolder.defaultEntry);
+                unk3300ILAADDCOPKE_ = com.google.protobuf.MapField.newMapField(
+                    Unk3300ILAADDCOPKEDefaultEntryHolder.defaultEntry);
                 mutable_bitField0_ |= 0x00000002;
               }
               com.google.protobuf.MapEntry<java.lang.Integer, java.lang.Integer>
-              acceptFlowerNumMap__ = input.readMessage(
-                  AcceptFlowerNumMapDefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
-              acceptFlowerNumMap_.getMutableMap().put(
-                  acceptFlowerNumMap__.getKey(), acceptFlowerNumMap__.getValue());
+              unk3300ILAADDCOPKE__ = input.readMessage(
+                  Unk3300ILAADDCOPKEDefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
+              unk3300ILAADDCOPKE_.getMutableMap().put(
+                  unk3300ILAADDCOPKE__.getKey(), unk3300ILAADDCOPKE__.getValue());
+              break;
+            }
+            case 72: {
+
+              uid_ = input.readUInt32();
               break;
             }
             default: {
@@ -198,10 +198,10 @@ public final class PlantFlowerAcceptFlowerResultInfoOuterClass {
     protected com.google.protobuf.MapField internalGetMapField(
         int number) {
       switch (number) {
-        case 4:
-          return internalGetUnacceptFlowerNumMap();
-        case 10:
-          return internalGetAcceptFlowerNumMap();
+        case 6:
+          return internalGetUnk3300PALEJEDIAJP();
+        case 7:
+          return internalGetUnk3300ILAADDCOPKE();
         default:
           throw new RuntimeException(
               "Invalid map field number: " + number);
@@ -215,91 +215,10 @@ public final class PlantFlowerAcceptFlowerResultInfoOuterClass {
               emu.grasscutter.net.proto.PlantFlowerAcceptFlowerResultInfoOuterClass.PlantFlowerAcceptFlowerResultInfo.class, emu.grasscutter.net.proto.PlantFlowerAcceptFlowerResultInfoOuterClass.PlantFlowerAcceptFlowerResultInfo.Builder.class);
     }
 
-    public static final int UNACCEPT_FLOWER_NUM_MAP_FIELD_NUMBER = 4;
-    private static final class UnacceptFlowerNumMapDefaultEntryHolder {
-      static final com.google.protobuf.MapEntry<
-          java.lang.Integer, java.lang.Integer> defaultEntry =
-              com.google.protobuf.MapEntry
-              .<java.lang.Integer, java.lang.Integer>newDefaultInstance(
-                  emu.grasscutter.net.proto.PlantFlowerAcceptFlowerResultInfoOuterClass.internal_static_PlantFlowerAcceptFlowerResultInfo_UnacceptFlowerNumMapEntry_descriptor, 
-                  com.google.protobuf.WireFormat.FieldType.UINT32,
-                  0,
-                  com.google.protobuf.WireFormat.FieldType.UINT32,
-                  0);
-    }
-    private com.google.protobuf.MapField<
-        java.lang.Integer, java.lang.Integer> unacceptFlowerNumMap_;
-    private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
-    internalGetUnacceptFlowerNumMap() {
-      if (unacceptFlowerNumMap_ == null) {
-        return com.google.protobuf.MapField.emptyMapField(
-            UnacceptFlowerNumMapDefaultEntryHolder.defaultEntry);
-      }
-      return unacceptFlowerNumMap_;
-    }
-
-    public int getUnacceptFlowerNumMapCount() {
-      return internalGetUnacceptFlowerNumMap().getMap().size();
-    }
-    /**
-     * <code>map&lt;uint32, uint32&gt; unaccept_flower_num_map = 4;</code>
-     */
-
-    @java.lang.Override
-    public boolean containsUnacceptFlowerNumMap(
-        int key) {
-      
-      return internalGetUnacceptFlowerNumMap().getMap().containsKey(key);
-    }
-    /**
-     * Use {@link #getUnacceptFlowerNumMapMap()} instead.
-     */
-    @java.lang.Override
-    @java.lang.Deprecated
-    public java.util.Map<java.lang.Integer, java.lang.Integer> getUnacceptFlowerNumMap() {
-      return getUnacceptFlowerNumMapMap();
-    }
-    /**
-     * <code>map&lt;uint32, uint32&gt; unaccept_flower_num_map = 4;</code>
-     */
-    @java.lang.Override
-
-    public java.util.Map<java.lang.Integer, java.lang.Integer> getUnacceptFlowerNumMapMap() {
-      return internalGetUnacceptFlowerNumMap().getMap();
-    }
-    /**
-     * <code>map&lt;uint32, uint32&gt; unaccept_flower_num_map = 4;</code>
-     */
-    @java.lang.Override
-
-    public int getUnacceptFlowerNumMapOrDefault(
-        int key,
-        int defaultValue) {
-      
-      java.util.Map<java.lang.Integer, java.lang.Integer> map =
-          internalGetUnacceptFlowerNumMap().getMap();
-      return map.containsKey(key) ? map.get(key) : defaultValue;
-    }
-    /**
-     * <code>map&lt;uint32, uint32&gt; unaccept_flower_num_map = 4;</code>
-     */
-    @java.lang.Override
-
-    public int getUnacceptFlowerNumMapOrThrow(
-        int key) {
-      
-      java.util.Map<java.lang.Integer, java.lang.Integer> map =
-          internalGetUnacceptFlowerNumMap().getMap();
-      if (!map.containsKey(key)) {
-        throw new java.lang.IllegalArgumentException();
-      }
-      return map.get(key);
-    }
-
-    public static final int UID_FIELD_NUMBER = 7;
+    public static final int UID_FIELD_NUMBER = 9;
     private int uid_;
     /**
-     * <code>uint32 uid = 7;</code>
+     * <code>uint32 uid = 9;</code>
      * @return The uid.
      */
     @java.lang.Override
@@ -307,81 +226,162 @@ public final class PlantFlowerAcceptFlowerResultInfoOuterClass {
       return uid_;
     }
 
-    public static final int ACCEPT_FLOWER_NUM_MAP_FIELD_NUMBER = 10;
-    private static final class AcceptFlowerNumMapDefaultEntryHolder {
+    public static final int UNK3300_PALEJEDIAJP_FIELD_NUMBER = 6;
+    private static final class Unk3300PALEJEDIAJPDefaultEntryHolder {
       static final com.google.protobuf.MapEntry<
           java.lang.Integer, java.lang.Integer> defaultEntry =
               com.google.protobuf.MapEntry
               .<java.lang.Integer, java.lang.Integer>newDefaultInstance(
-                  emu.grasscutter.net.proto.PlantFlowerAcceptFlowerResultInfoOuterClass.internal_static_PlantFlowerAcceptFlowerResultInfo_AcceptFlowerNumMapEntry_descriptor, 
+                  emu.grasscutter.net.proto.PlantFlowerAcceptFlowerResultInfoOuterClass.internal_static_PlantFlowerAcceptFlowerResultInfo_Unk3300PALEJEDIAJPEntry_descriptor, 
                   com.google.protobuf.WireFormat.FieldType.UINT32,
                   0,
                   com.google.protobuf.WireFormat.FieldType.UINT32,
                   0);
     }
     private com.google.protobuf.MapField<
-        java.lang.Integer, java.lang.Integer> acceptFlowerNumMap_;
+        java.lang.Integer, java.lang.Integer> unk3300PALEJEDIAJP_;
     private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
-    internalGetAcceptFlowerNumMap() {
-      if (acceptFlowerNumMap_ == null) {
+    internalGetUnk3300PALEJEDIAJP() {
+      if (unk3300PALEJEDIAJP_ == null) {
         return com.google.protobuf.MapField.emptyMapField(
-            AcceptFlowerNumMapDefaultEntryHolder.defaultEntry);
+            Unk3300PALEJEDIAJPDefaultEntryHolder.defaultEntry);
       }
-      return acceptFlowerNumMap_;
+      return unk3300PALEJEDIAJP_;
     }
 
-    public int getAcceptFlowerNumMapCount() {
-      return internalGetAcceptFlowerNumMap().getMap().size();
+    public int getUnk3300PALEJEDIAJPCount() {
+      return internalGetUnk3300PALEJEDIAJP().getMap().size();
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; accept_flower_num_map = 10;</code>
+     * <code>map&lt;uint32, uint32&gt; Unk3300_PALEJEDIAJP = 6;</code>
      */
 
     @java.lang.Override
-    public boolean containsAcceptFlowerNumMap(
+    public boolean containsUnk3300PALEJEDIAJP(
         int key) {
       
-      return internalGetAcceptFlowerNumMap().getMap().containsKey(key);
+      return internalGetUnk3300PALEJEDIAJP().getMap().containsKey(key);
     }
     /**
-     * Use {@link #getAcceptFlowerNumMapMap()} instead.
+     * Use {@link #getUnk3300PALEJEDIAJPMap()} instead.
      */
     @java.lang.Override
     @java.lang.Deprecated
-    public java.util.Map<java.lang.Integer, java.lang.Integer> getAcceptFlowerNumMap() {
-      return getAcceptFlowerNumMapMap();
+    public java.util.Map<java.lang.Integer, java.lang.Integer> getUnk3300PALEJEDIAJP() {
+      return getUnk3300PALEJEDIAJPMap();
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; accept_flower_num_map = 10;</code>
+     * <code>map&lt;uint32, uint32&gt; Unk3300_PALEJEDIAJP = 6;</code>
      */
     @java.lang.Override
 
-    public java.util.Map<java.lang.Integer, java.lang.Integer> getAcceptFlowerNumMapMap() {
-      return internalGetAcceptFlowerNumMap().getMap();
+    public java.util.Map<java.lang.Integer, java.lang.Integer> getUnk3300PALEJEDIAJPMap() {
+      return internalGetUnk3300PALEJEDIAJP().getMap();
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; accept_flower_num_map = 10;</code>
+     * <code>map&lt;uint32, uint32&gt; Unk3300_PALEJEDIAJP = 6;</code>
      */
     @java.lang.Override
 
-    public int getAcceptFlowerNumMapOrDefault(
+    public int getUnk3300PALEJEDIAJPOrDefault(
         int key,
         int defaultValue) {
       
       java.util.Map<java.lang.Integer, java.lang.Integer> map =
-          internalGetAcceptFlowerNumMap().getMap();
+          internalGetUnk3300PALEJEDIAJP().getMap();
       return map.containsKey(key) ? map.get(key) : defaultValue;
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; accept_flower_num_map = 10;</code>
+     * <code>map&lt;uint32, uint32&gt; Unk3300_PALEJEDIAJP = 6;</code>
      */
     @java.lang.Override
 
-    public int getAcceptFlowerNumMapOrThrow(
+    public int getUnk3300PALEJEDIAJPOrThrow(
         int key) {
       
       java.util.Map<java.lang.Integer, java.lang.Integer> map =
-          internalGetAcceptFlowerNumMap().getMap();
+          internalGetUnk3300PALEJEDIAJP().getMap();
+      if (!map.containsKey(key)) {
+        throw new java.lang.IllegalArgumentException();
+      }
+      return map.get(key);
+    }
+
+    public static final int UNK3300_ILAADDCOPKE_FIELD_NUMBER = 7;
+    private static final class Unk3300ILAADDCOPKEDefaultEntryHolder {
+      static final com.google.protobuf.MapEntry<
+          java.lang.Integer, java.lang.Integer> defaultEntry =
+              com.google.protobuf.MapEntry
+              .<java.lang.Integer, java.lang.Integer>newDefaultInstance(
+                  emu.grasscutter.net.proto.PlantFlowerAcceptFlowerResultInfoOuterClass.internal_static_PlantFlowerAcceptFlowerResultInfo_Unk3300ILAADDCOPKEEntry_descriptor, 
+                  com.google.protobuf.WireFormat.FieldType.UINT32,
+                  0,
+                  com.google.protobuf.WireFormat.FieldType.UINT32,
+                  0);
+    }
+    private com.google.protobuf.MapField<
+        java.lang.Integer, java.lang.Integer> unk3300ILAADDCOPKE_;
+    private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
+    internalGetUnk3300ILAADDCOPKE() {
+      if (unk3300ILAADDCOPKE_ == null) {
+        return com.google.protobuf.MapField.emptyMapField(
+            Unk3300ILAADDCOPKEDefaultEntryHolder.defaultEntry);
+      }
+      return unk3300ILAADDCOPKE_;
+    }
+
+    public int getUnk3300ILAADDCOPKECount() {
+      return internalGetUnk3300ILAADDCOPKE().getMap().size();
+    }
+    /**
+     * <code>map&lt;uint32, uint32&gt; Unk3300_ILAADDCOPKE = 7;</code>
+     */
+
+    @java.lang.Override
+    public boolean containsUnk3300ILAADDCOPKE(
+        int key) {
+      
+      return internalGetUnk3300ILAADDCOPKE().getMap().containsKey(key);
+    }
+    /**
+     * Use {@link #getUnk3300ILAADDCOPKEMap()} instead.
+     */
+    @java.lang.Override
+    @java.lang.Deprecated
+    public java.util.Map<java.lang.Integer, java.lang.Integer> getUnk3300ILAADDCOPKE() {
+      return getUnk3300ILAADDCOPKEMap();
+    }
+    /**
+     * <code>map&lt;uint32, uint32&gt; Unk3300_ILAADDCOPKE = 7;</code>
+     */
+    @java.lang.Override
+
+    public java.util.Map<java.lang.Integer, java.lang.Integer> getUnk3300ILAADDCOPKEMap() {
+      return internalGetUnk3300ILAADDCOPKE().getMap();
+    }
+    /**
+     * <code>map&lt;uint32, uint32&gt; Unk3300_ILAADDCOPKE = 7;</code>
+     */
+    @java.lang.Override
+
+    public int getUnk3300ILAADDCOPKEOrDefault(
+        int key,
+        int defaultValue) {
+      
+      java.util.Map<java.lang.Integer, java.lang.Integer> map =
+          internalGetUnk3300ILAADDCOPKE().getMap();
+      return map.containsKey(key) ? map.get(key) : defaultValue;
+    }
+    /**
+     * <code>map&lt;uint32, uint32&gt; Unk3300_ILAADDCOPKE = 7;</code>
+     */
+    @java.lang.Override
+
+    public int getUnk3300ILAADDCOPKEOrThrow(
+        int key) {
+      
+      java.util.Map<java.lang.Integer, java.lang.Integer> map =
+          internalGetUnk3300ILAADDCOPKE().getMap();
       if (!map.containsKey(key)) {
         throw new java.lang.IllegalArgumentException();
       }
@@ -405,18 +405,18 @@ public final class PlantFlowerAcceptFlowerResultInfoOuterClass {
       com.google.protobuf.GeneratedMessageV3
         .serializeIntegerMapTo(
           output,
-          internalGetUnacceptFlowerNumMap(),
-          UnacceptFlowerNumMapDefaultEntryHolder.defaultEntry,
-          4);
-      if (uid_ != 0) {
-        output.writeUInt32(7, uid_);
-      }
+          internalGetUnk3300PALEJEDIAJP(),
+          Unk3300PALEJEDIAJPDefaultEntryHolder.defaultEntry,
+          6);
       com.google.protobuf.GeneratedMessageV3
         .serializeIntegerMapTo(
           output,
-          internalGetAcceptFlowerNumMap(),
-          AcceptFlowerNumMapDefaultEntryHolder.defaultEntry,
-          10);
+          internalGetUnk3300ILAADDCOPKE(),
+          Unk3300ILAADDCOPKEDefaultEntryHolder.defaultEntry,
+          7);
+      if (uid_ != 0) {
+        output.writeUInt32(9, uid_);
+      }
       unknownFields.writeTo(output);
     }
 
@@ -427,28 +427,28 @@ public final class PlantFlowerAcceptFlowerResultInfoOuterClass {
 
       size = 0;
       for (java.util.Map.Entry<java.lang.Integer, java.lang.Integer> entry
-           : internalGetUnacceptFlowerNumMap().getMap().entrySet()) {
+           : internalGetUnk3300PALEJEDIAJP().getMap().entrySet()) {
         com.google.protobuf.MapEntry<java.lang.Integer, java.lang.Integer>
-        unacceptFlowerNumMap__ = UnacceptFlowerNumMapDefaultEntryHolder.defaultEntry.newBuilderForType()
+        unk3300PALEJEDIAJP__ = Unk3300PALEJEDIAJPDefaultEntryHolder.defaultEntry.newBuilderForType()
             .setKey(entry.getKey())
             .setValue(entry.getValue())
             .build();
         size += com.google.protobuf.CodedOutputStream
-            .computeMessageSize(4, unacceptFlowerNumMap__);
+            .computeMessageSize(6, unk3300PALEJEDIAJP__);
+      }
+      for (java.util.Map.Entry<java.lang.Integer, java.lang.Integer> entry
+           : internalGetUnk3300ILAADDCOPKE().getMap().entrySet()) {
+        com.google.protobuf.MapEntry<java.lang.Integer, java.lang.Integer>
+        unk3300ILAADDCOPKE__ = Unk3300ILAADDCOPKEDefaultEntryHolder.defaultEntry.newBuilderForType()
+            .setKey(entry.getKey())
+            .setValue(entry.getValue())
+            .build();
+        size += com.google.protobuf.CodedOutputStream
+            .computeMessageSize(7, unk3300ILAADDCOPKE__);
       }
       if (uid_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, uid_);
-      }
-      for (java.util.Map.Entry<java.lang.Integer, java.lang.Integer> entry
-           : internalGetAcceptFlowerNumMap().getMap().entrySet()) {
-        com.google.protobuf.MapEntry<java.lang.Integer, java.lang.Integer>
-        acceptFlowerNumMap__ = AcceptFlowerNumMapDefaultEntryHolder.defaultEntry.newBuilderForType()
-            .setKey(entry.getKey())
-            .setValue(entry.getValue())
-            .build();
-        size += com.google.protobuf.CodedOutputStream
-            .computeMessageSize(10, acceptFlowerNumMap__);
+          .computeUInt32Size(9, uid_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -465,12 +465,12 @@ public final class PlantFlowerAcceptFlowerResultInfoOuterClass {
       }
       emu.grasscutter.net.proto.PlantFlowerAcceptFlowerResultInfoOuterClass.PlantFlowerAcceptFlowerResultInfo other = (emu.grasscutter.net.proto.PlantFlowerAcceptFlowerResultInfoOuterClass.PlantFlowerAcceptFlowerResultInfo) obj;
 
-      if (!internalGetUnacceptFlowerNumMap().equals(
-          other.internalGetUnacceptFlowerNumMap())) return false;
       if (getUid()
           != other.getUid()) return false;
-      if (!internalGetAcceptFlowerNumMap().equals(
-          other.internalGetAcceptFlowerNumMap())) return false;
+      if (!internalGetUnk3300PALEJEDIAJP().equals(
+          other.internalGetUnk3300PALEJEDIAJP())) return false;
+      if (!internalGetUnk3300ILAADDCOPKE().equals(
+          other.internalGetUnk3300ILAADDCOPKE())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -482,15 +482,15 @@ public final class PlantFlowerAcceptFlowerResultInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (!internalGetUnacceptFlowerNumMap().getMap().isEmpty()) {
-        hash = (37 * hash) + UNACCEPT_FLOWER_NUM_MAP_FIELD_NUMBER;
-        hash = (53 * hash) + internalGetUnacceptFlowerNumMap().hashCode();
-      }
       hash = (37 * hash) + UID_FIELD_NUMBER;
       hash = (53 * hash) + getUid();
-      if (!internalGetAcceptFlowerNumMap().getMap().isEmpty()) {
-        hash = (37 * hash) + ACCEPT_FLOWER_NUM_MAP_FIELD_NUMBER;
-        hash = (53 * hash) + internalGetAcceptFlowerNumMap().hashCode();
+      if (!internalGetUnk3300PALEJEDIAJP().getMap().isEmpty()) {
+        hash = (37 * hash) + UNK3300_PALEJEDIAJP_FIELD_NUMBER;
+        hash = (53 * hash) + internalGetUnk3300PALEJEDIAJP().hashCode();
+      }
+      if (!internalGetUnk3300ILAADDCOPKE().getMap().isEmpty()) {
+        hash = (37 * hash) + UNK3300_ILAADDCOPKE_FIELD_NUMBER;
+        hash = (53 * hash) + internalGetUnk3300ILAADDCOPKE().hashCode();
       }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
@@ -603,10 +603,10 @@ public final class PlantFlowerAcceptFlowerResultInfoOuterClass {
       protected com.google.protobuf.MapField internalGetMapField(
           int number) {
         switch (number) {
-          case 4:
-            return internalGetUnacceptFlowerNumMap();
-          case 10:
-            return internalGetAcceptFlowerNumMap();
+          case 6:
+            return internalGetUnk3300PALEJEDIAJP();
+          case 7:
+            return internalGetUnk3300ILAADDCOPKE();
           default:
             throw new RuntimeException(
                 "Invalid map field number: " + number);
@@ -616,10 +616,10 @@ public final class PlantFlowerAcceptFlowerResultInfoOuterClass {
       protected com.google.protobuf.MapField internalGetMutableMapField(
           int number) {
         switch (number) {
-          case 4:
-            return internalGetMutableUnacceptFlowerNumMap();
-          case 10:
-            return internalGetMutableAcceptFlowerNumMap();
+          case 6:
+            return internalGetMutableUnk3300PALEJEDIAJP();
+          case 7:
+            return internalGetMutableUnk3300ILAADDCOPKE();
           default:
             throw new RuntimeException(
                 "Invalid map field number: " + number);
@@ -651,10 +651,10 @@ public final class PlantFlowerAcceptFlowerResultInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        internalGetMutableUnacceptFlowerNumMap().clear();
         uid_ = 0;
 
-        internalGetMutableAcceptFlowerNumMap().clear();
+        internalGetMutableUnk3300PALEJEDIAJP().clear();
+        internalGetMutableUnk3300ILAADDCOPKE().clear();
         return this;
       }
 
@@ -682,11 +682,11 @@ public final class PlantFlowerAcceptFlowerResultInfoOuterClass {
       public emu.grasscutter.net.proto.PlantFlowerAcceptFlowerResultInfoOuterClass.PlantFlowerAcceptFlowerResultInfo buildPartial() {
         emu.grasscutter.net.proto.PlantFlowerAcceptFlowerResultInfoOuterClass.PlantFlowerAcceptFlowerResultInfo result = new emu.grasscutter.net.proto.PlantFlowerAcceptFlowerResultInfoOuterClass.PlantFlowerAcceptFlowerResultInfo(this);
         int from_bitField0_ = bitField0_;
-        result.unacceptFlowerNumMap_ = internalGetUnacceptFlowerNumMap();
-        result.unacceptFlowerNumMap_.makeImmutable();
         result.uid_ = uid_;
-        result.acceptFlowerNumMap_ = internalGetAcceptFlowerNumMap();
-        result.acceptFlowerNumMap_.makeImmutable();
+        result.unk3300PALEJEDIAJP_ = internalGetUnk3300PALEJEDIAJP();
+        result.unk3300PALEJEDIAJP_.makeImmutable();
+        result.unk3300ILAADDCOPKE_ = internalGetUnk3300ILAADDCOPKE();
+        result.unk3300ILAADDCOPKE_.makeImmutable();
         onBuilt();
         return result;
       }
@@ -735,13 +735,13 @@ public final class PlantFlowerAcceptFlowerResultInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.PlantFlowerAcceptFlowerResultInfoOuterClass.PlantFlowerAcceptFlowerResultInfo other) {
         if (other == emu.grasscutter.net.proto.PlantFlowerAcceptFlowerResultInfoOuterClass.PlantFlowerAcceptFlowerResultInfo.getDefaultInstance()) return this;
-        internalGetMutableUnacceptFlowerNumMap().mergeFrom(
-            other.internalGetUnacceptFlowerNumMap());
         if (other.getUid() != 0) {
           setUid(other.getUid());
         }
-        internalGetMutableAcceptFlowerNumMap().mergeFrom(
-            other.internalGetAcceptFlowerNumMap());
+        internalGetMutableUnk3300PALEJEDIAJP().mergeFrom(
+            other.internalGetUnk3300PALEJEDIAJP());
+        internalGetMutableUnk3300ILAADDCOPKE().mergeFrom(
+            other.internalGetUnk3300ILAADDCOPKE());
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
         return this;
@@ -772,137 +772,9 @@ public final class PlantFlowerAcceptFlowerResultInfoOuterClass {
       }
       private int bitField0_;
 
-      private com.google.protobuf.MapField<
-          java.lang.Integer, java.lang.Integer> unacceptFlowerNumMap_;
-      private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
-      internalGetUnacceptFlowerNumMap() {
-        if (unacceptFlowerNumMap_ == null) {
-          return com.google.protobuf.MapField.emptyMapField(
-              UnacceptFlowerNumMapDefaultEntryHolder.defaultEntry);
-        }
-        return unacceptFlowerNumMap_;
-      }
-      private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
-      internalGetMutableUnacceptFlowerNumMap() {
-        onChanged();;
-        if (unacceptFlowerNumMap_ == null) {
-          unacceptFlowerNumMap_ = com.google.protobuf.MapField.newMapField(
-              UnacceptFlowerNumMapDefaultEntryHolder.defaultEntry);
-        }
-        if (!unacceptFlowerNumMap_.isMutable()) {
-          unacceptFlowerNumMap_ = unacceptFlowerNumMap_.copy();
-        }
-        return unacceptFlowerNumMap_;
-      }
-
-      public int getUnacceptFlowerNumMapCount() {
-        return internalGetUnacceptFlowerNumMap().getMap().size();
-      }
-      /**
-       * <code>map&lt;uint32, uint32&gt; unaccept_flower_num_map = 4;</code>
-       */
-
-      @java.lang.Override
-      public boolean containsUnacceptFlowerNumMap(
-          int key) {
-        
-        return internalGetUnacceptFlowerNumMap().getMap().containsKey(key);
-      }
-      /**
-       * Use {@link #getUnacceptFlowerNumMapMap()} instead.
-       */
-      @java.lang.Override
-      @java.lang.Deprecated
-      public java.util.Map<java.lang.Integer, java.lang.Integer> getUnacceptFlowerNumMap() {
-        return getUnacceptFlowerNumMapMap();
-      }
-      /**
-       * <code>map&lt;uint32, uint32&gt; unaccept_flower_num_map = 4;</code>
-       */
-      @java.lang.Override
-
-      public java.util.Map<java.lang.Integer, java.lang.Integer> getUnacceptFlowerNumMapMap() {
-        return internalGetUnacceptFlowerNumMap().getMap();
-      }
-      /**
-       * <code>map&lt;uint32, uint32&gt; unaccept_flower_num_map = 4;</code>
-       */
-      @java.lang.Override
-
-      public int getUnacceptFlowerNumMapOrDefault(
-          int key,
-          int defaultValue) {
-        
-        java.util.Map<java.lang.Integer, java.lang.Integer> map =
-            internalGetUnacceptFlowerNumMap().getMap();
-        return map.containsKey(key) ? map.get(key) : defaultValue;
-      }
-      /**
-       * <code>map&lt;uint32, uint32&gt; unaccept_flower_num_map = 4;</code>
-       */
-      @java.lang.Override
-
-      public int getUnacceptFlowerNumMapOrThrow(
-          int key) {
-        
-        java.util.Map<java.lang.Integer, java.lang.Integer> map =
-            internalGetUnacceptFlowerNumMap().getMap();
-        if (!map.containsKey(key)) {
-          throw new java.lang.IllegalArgumentException();
-        }
-        return map.get(key);
-      }
-
-      public Builder clearUnacceptFlowerNumMap() {
-        internalGetMutableUnacceptFlowerNumMap().getMutableMap()
-            .clear();
-        return this;
-      }
-      /**
-       * <code>map&lt;uint32, uint32&gt; unaccept_flower_num_map = 4;</code>
-       */
-
-      public Builder removeUnacceptFlowerNumMap(
-          int key) {
-        
-        internalGetMutableUnacceptFlowerNumMap().getMutableMap()
-            .remove(key);
-        return this;
-      }
-      /**
-       * Use alternate mutation accessors instead.
-       */
-      @java.lang.Deprecated
-      public java.util.Map<java.lang.Integer, java.lang.Integer>
-      getMutableUnacceptFlowerNumMap() {
-        return internalGetMutableUnacceptFlowerNumMap().getMutableMap();
-      }
-      /**
-       * <code>map&lt;uint32, uint32&gt; unaccept_flower_num_map = 4;</code>
-       */
-      public Builder putUnacceptFlowerNumMap(
-          int key,
-          int value) {
-        
-        
-        internalGetMutableUnacceptFlowerNumMap().getMutableMap()
-            .put(key, value);
-        return this;
-      }
-      /**
-       * <code>map&lt;uint32, uint32&gt; unaccept_flower_num_map = 4;</code>
-       */
-
-      public Builder putAllUnacceptFlowerNumMap(
-          java.util.Map<java.lang.Integer, java.lang.Integer> values) {
-        internalGetMutableUnacceptFlowerNumMap().getMutableMap()
-            .putAll(values);
-        return this;
-      }
-
       private int uid_ ;
       /**
-       * <code>uint32 uid = 7;</code>
+       * <code>uint32 uid = 9;</code>
        * @return The uid.
        */
       @java.lang.Override
@@ -910,7 +782,7 @@ public final class PlantFlowerAcceptFlowerResultInfoOuterClass {
         return uid_;
       }
       /**
-       * <code>uint32 uid = 7;</code>
+       * <code>uint32 uid = 9;</code>
        * @param value The uid to set.
        * @return This builder for chaining.
        */
@@ -921,7 +793,7 @@ public final class PlantFlowerAcceptFlowerResultInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 uid = 7;</code>
+       * <code>uint32 uid = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearUid() {
@@ -932,99 +804,99 @@ public final class PlantFlowerAcceptFlowerResultInfoOuterClass {
       }
 
       private com.google.protobuf.MapField<
-          java.lang.Integer, java.lang.Integer> acceptFlowerNumMap_;
+          java.lang.Integer, java.lang.Integer> unk3300PALEJEDIAJP_;
       private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
-      internalGetAcceptFlowerNumMap() {
-        if (acceptFlowerNumMap_ == null) {
+      internalGetUnk3300PALEJEDIAJP() {
+        if (unk3300PALEJEDIAJP_ == null) {
           return com.google.protobuf.MapField.emptyMapField(
-              AcceptFlowerNumMapDefaultEntryHolder.defaultEntry);
+              Unk3300PALEJEDIAJPDefaultEntryHolder.defaultEntry);
         }
-        return acceptFlowerNumMap_;
+        return unk3300PALEJEDIAJP_;
       }
       private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
-      internalGetMutableAcceptFlowerNumMap() {
+      internalGetMutableUnk3300PALEJEDIAJP() {
         onChanged();;
-        if (acceptFlowerNumMap_ == null) {
-          acceptFlowerNumMap_ = com.google.protobuf.MapField.newMapField(
-              AcceptFlowerNumMapDefaultEntryHolder.defaultEntry);
+        if (unk3300PALEJEDIAJP_ == null) {
+          unk3300PALEJEDIAJP_ = com.google.protobuf.MapField.newMapField(
+              Unk3300PALEJEDIAJPDefaultEntryHolder.defaultEntry);
         }
-        if (!acceptFlowerNumMap_.isMutable()) {
-          acceptFlowerNumMap_ = acceptFlowerNumMap_.copy();
+        if (!unk3300PALEJEDIAJP_.isMutable()) {
+          unk3300PALEJEDIAJP_ = unk3300PALEJEDIAJP_.copy();
         }
-        return acceptFlowerNumMap_;
+        return unk3300PALEJEDIAJP_;
       }
 
-      public int getAcceptFlowerNumMapCount() {
-        return internalGetAcceptFlowerNumMap().getMap().size();
+      public int getUnk3300PALEJEDIAJPCount() {
+        return internalGetUnk3300PALEJEDIAJP().getMap().size();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; accept_flower_num_map = 10;</code>
+       * <code>map&lt;uint32, uint32&gt; Unk3300_PALEJEDIAJP = 6;</code>
        */
 
       @java.lang.Override
-      public boolean containsAcceptFlowerNumMap(
+      public boolean containsUnk3300PALEJEDIAJP(
           int key) {
         
-        return internalGetAcceptFlowerNumMap().getMap().containsKey(key);
+        return internalGetUnk3300PALEJEDIAJP().getMap().containsKey(key);
       }
       /**
-       * Use {@link #getAcceptFlowerNumMapMap()} instead.
+       * Use {@link #getUnk3300PALEJEDIAJPMap()} instead.
        */
       @java.lang.Override
       @java.lang.Deprecated
-      public java.util.Map<java.lang.Integer, java.lang.Integer> getAcceptFlowerNumMap() {
-        return getAcceptFlowerNumMapMap();
+      public java.util.Map<java.lang.Integer, java.lang.Integer> getUnk3300PALEJEDIAJP() {
+        return getUnk3300PALEJEDIAJPMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; accept_flower_num_map = 10;</code>
+       * <code>map&lt;uint32, uint32&gt; Unk3300_PALEJEDIAJP = 6;</code>
        */
       @java.lang.Override
 
-      public java.util.Map<java.lang.Integer, java.lang.Integer> getAcceptFlowerNumMapMap() {
-        return internalGetAcceptFlowerNumMap().getMap();
+      public java.util.Map<java.lang.Integer, java.lang.Integer> getUnk3300PALEJEDIAJPMap() {
+        return internalGetUnk3300PALEJEDIAJP().getMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; accept_flower_num_map = 10;</code>
+       * <code>map&lt;uint32, uint32&gt; Unk3300_PALEJEDIAJP = 6;</code>
        */
       @java.lang.Override
 
-      public int getAcceptFlowerNumMapOrDefault(
+      public int getUnk3300PALEJEDIAJPOrDefault(
           int key,
           int defaultValue) {
         
         java.util.Map<java.lang.Integer, java.lang.Integer> map =
-            internalGetAcceptFlowerNumMap().getMap();
+            internalGetUnk3300PALEJEDIAJP().getMap();
         return map.containsKey(key) ? map.get(key) : defaultValue;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; accept_flower_num_map = 10;</code>
+       * <code>map&lt;uint32, uint32&gt; Unk3300_PALEJEDIAJP = 6;</code>
        */
       @java.lang.Override
 
-      public int getAcceptFlowerNumMapOrThrow(
+      public int getUnk3300PALEJEDIAJPOrThrow(
           int key) {
         
         java.util.Map<java.lang.Integer, java.lang.Integer> map =
-            internalGetAcceptFlowerNumMap().getMap();
+            internalGetUnk3300PALEJEDIAJP().getMap();
         if (!map.containsKey(key)) {
           throw new java.lang.IllegalArgumentException();
         }
         return map.get(key);
       }
 
-      public Builder clearAcceptFlowerNumMap() {
-        internalGetMutableAcceptFlowerNumMap().getMutableMap()
+      public Builder clearUnk3300PALEJEDIAJP() {
+        internalGetMutableUnk3300PALEJEDIAJP().getMutableMap()
             .clear();
         return this;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; accept_flower_num_map = 10;</code>
+       * <code>map&lt;uint32, uint32&gt; Unk3300_PALEJEDIAJP = 6;</code>
        */
 
-      public Builder removeAcceptFlowerNumMap(
+      public Builder removeUnk3300PALEJEDIAJP(
           int key) {
         
-        internalGetMutableAcceptFlowerNumMap().getMutableMap()
+        internalGetMutableUnk3300PALEJEDIAJP().getMutableMap()
             .remove(key);
         return this;
       }
@@ -1033,28 +905,156 @@ public final class PlantFlowerAcceptFlowerResultInfoOuterClass {
        */
       @java.lang.Deprecated
       public java.util.Map<java.lang.Integer, java.lang.Integer>
-      getMutableAcceptFlowerNumMap() {
-        return internalGetMutableAcceptFlowerNumMap().getMutableMap();
+      getMutableUnk3300PALEJEDIAJP() {
+        return internalGetMutableUnk3300PALEJEDIAJP().getMutableMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; accept_flower_num_map = 10;</code>
+       * <code>map&lt;uint32, uint32&gt; Unk3300_PALEJEDIAJP = 6;</code>
        */
-      public Builder putAcceptFlowerNumMap(
+      public Builder putUnk3300PALEJEDIAJP(
           int key,
           int value) {
         
         
-        internalGetMutableAcceptFlowerNumMap().getMutableMap()
+        internalGetMutableUnk3300PALEJEDIAJP().getMutableMap()
             .put(key, value);
         return this;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; accept_flower_num_map = 10;</code>
+       * <code>map&lt;uint32, uint32&gt; Unk3300_PALEJEDIAJP = 6;</code>
        */
 
-      public Builder putAllAcceptFlowerNumMap(
+      public Builder putAllUnk3300PALEJEDIAJP(
           java.util.Map<java.lang.Integer, java.lang.Integer> values) {
-        internalGetMutableAcceptFlowerNumMap().getMutableMap()
+        internalGetMutableUnk3300PALEJEDIAJP().getMutableMap()
+            .putAll(values);
+        return this;
+      }
+
+      private com.google.protobuf.MapField<
+          java.lang.Integer, java.lang.Integer> unk3300ILAADDCOPKE_;
+      private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
+      internalGetUnk3300ILAADDCOPKE() {
+        if (unk3300ILAADDCOPKE_ == null) {
+          return com.google.protobuf.MapField.emptyMapField(
+              Unk3300ILAADDCOPKEDefaultEntryHolder.defaultEntry);
+        }
+        return unk3300ILAADDCOPKE_;
+      }
+      private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
+      internalGetMutableUnk3300ILAADDCOPKE() {
+        onChanged();;
+        if (unk3300ILAADDCOPKE_ == null) {
+          unk3300ILAADDCOPKE_ = com.google.protobuf.MapField.newMapField(
+              Unk3300ILAADDCOPKEDefaultEntryHolder.defaultEntry);
+        }
+        if (!unk3300ILAADDCOPKE_.isMutable()) {
+          unk3300ILAADDCOPKE_ = unk3300ILAADDCOPKE_.copy();
+        }
+        return unk3300ILAADDCOPKE_;
+      }
+
+      public int getUnk3300ILAADDCOPKECount() {
+        return internalGetUnk3300ILAADDCOPKE().getMap().size();
+      }
+      /**
+       * <code>map&lt;uint32, uint32&gt; Unk3300_ILAADDCOPKE = 7;</code>
+       */
+
+      @java.lang.Override
+      public boolean containsUnk3300ILAADDCOPKE(
+          int key) {
+        
+        return internalGetUnk3300ILAADDCOPKE().getMap().containsKey(key);
+      }
+      /**
+       * Use {@link #getUnk3300ILAADDCOPKEMap()} instead.
+       */
+      @java.lang.Override
+      @java.lang.Deprecated
+      public java.util.Map<java.lang.Integer, java.lang.Integer> getUnk3300ILAADDCOPKE() {
+        return getUnk3300ILAADDCOPKEMap();
+      }
+      /**
+       * <code>map&lt;uint32, uint32&gt; Unk3300_ILAADDCOPKE = 7;</code>
+       */
+      @java.lang.Override
+
+      public java.util.Map<java.lang.Integer, java.lang.Integer> getUnk3300ILAADDCOPKEMap() {
+        return internalGetUnk3300ILAADDCOPKE().getMap();
+      }
+      /**
+       * <code>map&lt;uint32, uint32&gt; Unk3300_ILAADDCOPKE = 7;</code>
+       */
+      @java.lang.Override
+
+      public int getUnk3300ILAADDCOPKEOrDefault(
+          int key,
+          int defaultValue) {
+        
+        java.util.Map<java.lang.Integer, java.lang.Integer> map =
+            internalGetUnk3300ILAADDCOPKE().getMap();
+        return map.containsKey(key) ? map.get(key) : defaultValue;
+      }
+      /**
+       * <code>map&lt;uint32, uint32&gt; Unk3300_ILAADDCOPKE = 7;</code>
+       */
+      @java.lang.Override
+
+      public int getUnk3300ILAADDCOPKEOrThrow(
+          int key) {
+        
+        java.util.Map<java.lang.Integer, java.lang.Integer> map =
+            internalGetUnk3300ILAADDCOPKE().getMap();
+        if (!map.containsKey(key)) {
+          throw new java.lang.IllegalArgumentException();
+        }
+        return map.get(key);
+      }
+
+      public Builder clearUnk3300ILAADDCOPKE() {
+        internalGetMutableUnk3300ILAADDCOPKE().getMutableMap()
+            .clear();
+        return this;
+      }
+      /**
+       * <code>map&lt;uint32, uint32&gt; Unk3300_ILAADDCOPKE = 7;</code>
+       */
+
+      public Builder removeUnk3300ILAADDCOPKE(
+          int key) {
+        
+        internalGetMutableUnk3300ILAADDCOPKE().getMutableMap()
+            .remove(key);
+        return this;
+      }
+      /**
+       * Use alternate mutation accessors instead.
+       */
+      @java.lang.Deprecated
+      public java.util.Map<java.lang.Integer, java.lang.Integer>
+      getMutableUnk3300ILAADDCOPKE() {
+        return internalGetMutableUnk3300ILAADDCOPKE().getMutableMap();
+      }
+      /**
+       * <code>map&lt;uint32, uint32&gt; Unk3300_ILAADDCOPKE = 7;</code>
+       */
+      public Builder putUnk3300ILAADDCOPKE(
+          int key,
+          int value) {
+        
+        
+        internalGetMutableUnk3300ILAADDCOPKE().getMutableMap()
+            .put(key, value);
+        return this;
+      }
+      /**
+       * <code>map&lt;uint32, uint32&gt; Unk3300_ILAADDCOPKE = 7;</code>
+       */
+
+      public Builder putAllUnk3300ILAADDCOPKE(
+          java.util.Map<java.lang.Integer, java.lang.Integer> values) {
+        internalGetMutableUnk3300ILAADDCOPKE().getMutableMap()
             .putAll(values);
         return this;
       }
@@ -1117,15 +1117,15 @@ public final class PlantFlowerAcceptFlowerResultInfoOuterClass {
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_PlantFlowerAcceptFlowerResultInfo_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_PlantFlowerAcceptFlowerResultInfo_UnacceptFlowerNumMapEntry_descriptor;
+    internal_static_PlantFlowerAcceptFlowerResultInfo_Unk3300PALEJEDIAJPEntry_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_PlantFlowerAcceptFlowerResultInfo_UnacceptFlowerNumMapEntry_fieldAccessorTable;
+      internal_static_PlantFlowerAcceptFlowerResultInfo_Unk3300PALEJEDIAJPEntry_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_PlantFlowerAcceptFlowerResultInfo_AcceptFlowerNumMapEntry_descriptor;
+    internal_static_PlantFlowerAcceptFlowerResultInfo_Unk3300ILAADDCOPKEEntry_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_PlantFlowerAcceptFlowerResultInfo_AcceptFlowerNumMapEntry_fieldAccessorTable;
+      internal_static_PlantFlowerAcceptFlowerResultInfo_Unk3300ILAADDCOPKEEntry_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -1136,16 +1136,16 @@ public final class PlantFlowerAcceptFlowerResultInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\'PlantFlowerAcceptFlowerResultInfo.prot" +
-      "o\"\342\002\n!PlantFlowerAcceptFlowerResultInfo\022" +
-      "]\n\027unaccept_flower_num_map\030\004 \003(\0132<.Plant" +
-      "FlowerAcceptFlowerResultInfo.UnacceptFlo" +
-      "werNumMapEntry\022\013\n\003uid\030\007 \001(\r\022Y\n\025accept_fl" +
-      "ower_num_map\030\n \003(\0132:.PlantFlowerAcceptFl" +
-      "owerResultInfo.AcceptFlowerNumMapEntry\032;" +
-      "\n\031UnacceptFlowerNumMapEntry\022\013\n\003key\030\001 \001(\r" +
-      "\022\r\n\005value\030\002 \001(\r:\0028\001\0329\n\027AcceptFlowerNumMa" +
-      "pEntry\022\013\n\003key\030\001 \001(\r\022\r\n\005value\030\002 \001(\r:\0028\001B\033" +
-      "\n\031emu.grasscutter.net.protob\006proto3"
+      "o\"\330\002\n!PlantFlowerAcceptFlowerResultInfo\022" +
+      "\013\n\003uid\030\t \001(\r\022W\n\023Unk3300_PALEJEDIAJP\030\006 \003(" +
+      "\0132:.PlantFlowerAcceptFlowerResultInfo.Un" +
+      "k3300PALEJEDIAJPEntry\022W\n\023Unk3300_ILAADDC" +
+      "OPKE\030\007 \003(\0132:.PlantFlowerAcceptFlowerResu" +
+      "ltInfo.Unk3300ILAADDCOPKEEntry\0329\n\027Unk330" +
+      "0PALEJEDIAJPEntry\022\013\n\003key\030\001 \001(\r\022\r\n\005value\030" +
+      "\002 \001(\r:\0028\001\0329\n\027Unk3300ILAADDCOPKEEntry\022\013\n\003" +
+      "key\030\001 \001(\r\022\r\n\005value\030\002 \001(\r:\0028\001B\033\n\031emu.gras" +
+      "scutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -1156,18 +1156,18 @@ public final class PlantFlowerAcceptFlowerResultInfoOuterClass {
     internal_static_PlantFlowerAcceptFlowerResultInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_PlantFlowerAcceptFlowerResultInfo_descriptor,
-        new java.lang.String[] { "UnacceptFlowerNumMap", "Uid", "AcceptFlowerNumMap", });
-    internal_static_PlantFlowerAcceptFlowerResultInfo_UnacceptFlowerNumMapEntry_descriptor =
+        new java.lang.String[] { "Uid", "Unk3300PALEJEDIAJP", "Unk3300ILAADDCOPKE", });
+    internal_static_PlantFlowerAcceptFlowerResultInfo_Unk3300PALEJEDIAJPEntry_descriptor =
       internal_static_PlantFlowerAcceptFlowerResultInfo_descriptor.getNestedTypes().get(0);
-    internal_static_PlantFlowerAcceptFlowerResultInfo_UnacceptFlowerNumMapEntry_fieldAccessorTable = new
+    internal_static_PlantFlowerAcceptFlowerResultInfo_Unk3300PALEJEDIAJPEntry_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_PlantFlowerAcceptFlowerResultInfo_UnacceptFlowerNumMapEntry_descriptor,
+        internal_static_PlantFlowerAcceptFlowerResultInfo_Unk3300PALEJEDIAJPEntry_descriptor,
         new java.lang.String[] { "Key", "Value", });
-    internal_static_PlantFlowerAcceptFlowerResultInfo_AcceptFlowerNumMapEntry_descriptor =
+    internal_static_PlantFlowerAcceptFlowerResultInfo_Unk3300ILAADDCOPKEEntry_descriptor =
       internal_static_PlantFlowerAcceptFlowerResultInfo_descriptor.getNestedTypes().get(1);
-    internal_static_PlantFlowerAcceptFlowerResultInfo_AcceptFlowerNumMapEntry_fieldAccessorTable = new
+    internal_static_PlantFlowerAcceptFlowerResultInfo_Unk3300ILAADDCOPKEEntry_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_PlantFlowerAcceptFlowerResultInfo_AcceptFlowerNumMapEntry_descriptor,
+        internal_static_PlantFlowerAcceptFlowerResultInfo_Unk3300ILAADDCOPKEEntry_descriptor,
         new java.lang.String[] { "Key", "Value", });
   }
 

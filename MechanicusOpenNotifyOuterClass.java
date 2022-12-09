@@ -19,16 +19,20 @@ public final class MechanicusOpenNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 mechanicus_id = 2;</code>
+     * <code>uint32 mechanicus_id = 13;</code>
      * @return The mechanicusId.
      */
     int getMechanicusId();
   }
   /**
    * <pre>
-   * CmdId: 3907
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 4000;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code MechanicusOpenNotify}
@@ -75,7 +79,7 @@ public final class MechanicusOpenNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
+            case 104: {
 
               mechanicusId_ = input.readUInt32();
               break;
@@ -112,10 +116,10 @@ public final class MechanicusOpenNotifyOuterClass {
               emu.grasscutter.net.proto.MechanicusOpenNotifyOuterClass.MechanicusOpenNotify.class, emu.grasscutter.net.proto.MechanicusOpenNotifyOuterClass.MechanicusOpenNotify.Builder.class);
     }
 
-    public static final int MECHANICUS_ID_FIELD_NUMBER = 2;
+    public static final int MECHANICUS_ID_FIELD_NUMBER = 13;
     private int mechanicusId_;
     /**
-     * <code>uint32 mechanicus_id = 2;</code>
+     * <code>uint32 mechanicus_id = 13;</code>
      * @return The mechanicusId.
      */
     @java.lang.Override
@@ -138,7 +142,7 @@ public final class MechanicusOpenNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (mechanicusId_ != 0) {
-        output.writeUInt32(2, mechanicusId_);
+        output.writeUInt32(13, mechanicusId_);
       }
       unknownFields.writeTo(output);
     }
@@ -151,7 +155,7 @@ public final class MechanicusOpenNotifyOuterClass {
       size = 0;
       if (mechanicusId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, mechanicusId_);
+          .computeUInt32Size(13, mechanicusId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -280,9 +284,13 @@ public final class MechanicusOpenNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 3907
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 4000;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code MechanicusOpenNotify}
@@ -433,7 +441,7 @@ public final class MechanicusOpenNotifyOuterClass {
 
       private int mechanicusId_ ;
       /**
-       * <code>uint32 mechanicus_id = 2;</code>
+       * <code>uint32 mechanicus_id = 13;</code>
        * @return The mechanicusId.
        */
       @java.lang.Override
@@ -441,7 +449,7 @@ public final class MechanicusOpenNotifyOuterClass {
         return mechanicusId_;
       }
       /**
-       * <code>uint32 mechanicus_id = 2;</code>
+       * <code>uint32 mechanicus_id = 13;</code>
        * @param value The mechanicusId to set.
        * @return This builder for chaining.
        */
@@ -452,7 +460,7 @@ public final class MechanicusOpenNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 mechanicus_id = 2;</code>
+       * <code>uint32 mechanicus_id = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearMechanicusId() {
@@ -529,7 +537,7 @@ public final class MechanicusOpenNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\032MechanicusOpenNotify.proto\"-\n\024Mechanic" +
-      "usOpenNotify\022\025\n\rmechanicus_id\030\002 \001(\rB\033\n\031e" +
+      "usOpenNotify\022\025\n\rmechanicus_id\030\r \001(\rB\033\n\031e" +
       "mu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

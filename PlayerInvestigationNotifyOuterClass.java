@@ -19,34 +19,38 @@ public final class PlayerInvestigationNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .Investigation investigation_list = 1;</code>
+     * <code>repeated .Investigation investigation_list = 12;</code>
      */
     java.util.List<emu.grasscutter.net.proto.InvestigationOuterClass.Investigation> 
         getInvestigationListList();
     /**
-     * <code>repeated .Investigation investigation_list = 1;</code>
+     * <code>repeated .Investigation investigation_list = 12;</code>
      */
     emu.grasscutter.net.proto.InvestigationOuterClass.Investigation getInvestigationList(int index);
     /**
-     * <code>repeated .Investigation investigation_list = 1;</code>
+     * <code>repeated .Investigation investigation_list = 12;</code>
      */
     int getInvestigationListCount();
     /**
-     * <code>repeated .Investigation investigation_list = 1;</code>
+     * <code>repeated .Investigation investigation_list = 12;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.InvestigationOuterClass.InvestigationOrBuilder> 
         getInvestigationListOrBuilderList();
     /**
-     * <code>repeated .Investigation investigation_list = 1;</code>
+     * <code>repeated .Investigation investigation_list = 12;</code>
      */
     emu.grasscutter.net.proto.InvestigationOuterClass.InvestigationOrBuilder getInvestigationListOrBuilder(
         int index);
   }
   /**
    * <pre>
-   * CmdId: 1911
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 1915;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code PlayerInvestigationNotify}
@@ -95,7 +99,7 @@ public final class PlayerInvestigationNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 10: {
+            case 98: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 investigationList_ = new java.util.ArrayList<emu.grasscutter.net.proto.InvestigationOuterClass.Investigation>();
                 mutable_bitField0_ |= 0x00000001;
@@ -139,17 +143,17 @@ public final class PlayerInvestigationNotifyOuterClass {
               emu.grasscutter.net.proto.PlayerInvestigationNotifyOuterClass.PlayerInvestigationNotify.class, emu.grasscutter.net.proto.PlayerInvestigationNotifyOuterClass.PlayerInvestigationNotify.Builder.class);
     }
 
-    public static final int INVESTIGATION_LIST_FIELD_NUMBER = 1;
+    public static final int INVESTIGATION_LIST_FIELD_NUMBER = 12;
     private java.util.List<emu.grasscutter.net.proto.InvestigationOuterClass.Investigation> investigationList_;
     /**
-     * <code>repeated .Investigation investigation_list = 1;</code>
+     * <code>repeated .Investigation investigation_list = 12;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.InvestigationOuterClass.Investigation> getInvestigationListList() {
       return investigationList_;
     }
     /**
-     * <code>repeated .Investigation investigation_list = 1;</code>
+     * <code>repeated .Investigation investigation_list = 12;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.InvestigationOuterClass.InvestigationOrBuilder> 
@@ -157,21 +161,21 @@ public final class PlayerInvestigationNotifyOuterClass {
       return investigationList_;
     }
     /**
-     * <code>repeated .Investigation investigation_list = 1;</code>
+     * <code>repeated .Investigation investigation_list = 12;</code>
      */
     @java.lang.Override
     public int getInvestigationListCount() {
       return investigationList_.size();
     }
     /**
-     * <code>repeated .Investigation investigation_list = 1;</code>
+     * <code>repeated .Investigation investigation_list = 12;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.InvestigationOuterClass.Investigation getInvestigationList(int index) {
       return investigationList_.get(index);
     }
     /**
-     * <code>repeated .Investigation investigation_list = 1;</code>
+     * <code>repeated .Investigation investigation_list = 12;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.InvestigationOuterClass.InvestigationOrBuilder getInvestigationListOrBuilder(
@@ -194,7 +198,7 @@ public final class PlayerInvestigationNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       for (int i = 0; i < investigationList_.size(); i++) {
-        output.writeMessage(1, investigationList_.get(i));
+        output.writeMessage(12, investigationList_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -207,7 +211,7 @@ public final class PlayerInvestigationNotifyOuterClass {
       size = 0;
       for (int i = 0; i < investigationList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(1, investigationList_.get(i));
+          .computeMessageSize(12, investigationList_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -338,9 +342,13 @@ public final class PlayerInvestigationNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 1911
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 1915;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code PlayerInvestigationNotify}
@@ -540,7 +548,7 @@ public final class PlayerInvestigationNotifyOuterClass {
           emu.grasscutter.net.proto.InvestigationOuterClass.Investigation, emu.grasscutter.net.proto.InvestigationOuterClass.Investigation.Builder, emu.grasscutter.net.proto.InvestigationOuterClass.InvestigationOrBuilder> investigationListBuilder_;
 
       /**
-       * <code>repeated .Investigation investigation_list = 1;</code>
+       * <code>repeated .Investigation investigation_list = 12;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.InvestigationOuterClass.Investigation> getInvestigationListList() {
         if (investigationListBuilder_ == null) {
@@ -550,7 +558,7 @@ public final class PlayerInvestigationNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .Investigation investigation_list = 1;</code>
+       * <code>repeated .Investigation investigation_list = 12;</code>
        */
       public int getInvestigationListCount() {
         if (investigationListBuilder_ == null) {
@@ -560,7 +568,7 @@ public final class PlayerInvestigationNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .Investigation investigation_list = 1;</code>
+       * <code>repeated .Investigation investigation_list = 12;</code>
        */
       public emu.grasscutter.net.proto.InvestigationOuterClass.Investigation getInvestigationList(int index) {
         if (investigationListBuilder_ == null) {
@@ -570,7 +578,7 @@ public final class PlayerInvestigationNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .Investigation investigation_list = 1;</code>
+       * <code>repeated .Investigation investigation_list = 12;</code>
        */
       public Builder setInvestigationList(
           int index, emu.grasscutter.net.proto.InvestigationOuterClass.Investigation value) {
@@ -587,7 +595,7 @@ public final class PlayerInvestigationNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .Investigation investigation_list = 1;</code>
+       * <code>repeated .Investigation investigation_list = 12;</code>
        */
       public Builder setInvestigationList(
           int index, emu.grasscutter.net.proto.InvestigationOuterClass.Investigation.Builder builderForValue) {
@@ -601,7 +609,7 @@ public final class PlayerInvestigationNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .Investigation investigation_list = 1;</code>
+       * <code>repeated .Investigation investigation_list = 12;</code>
        */
       public Builder addInvestigationList(emu.grasscutter.net.proto.InvestigationOuterClass.Investigation value) {
         if (investigationListBuilder_ == null) {
@@ -617,7 +625,7 @@ public final class PlayerInvestigationNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .Investigation investigation_list = 1;</code>
+       * <code>repeated .Investigation investigation_list = 12;</code>
        */
       public Builder addInvestigationList(
           int index, emu.grasscutter.net.proto.InvestigationOuterClass.Investigation value) {
@@ -634,7 +642,7 @@ public final class PlayerInvestigationNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .Investigation investigation_list = 1;</code>
+       * <code>repeated .Investigation investigation_list = 12;</code>
        */
       public Builder addInvestigationList(
           emu.grasscutter.net.proto.InvestigationOuterClass.Investigation.Builder builderForValue) {
@@ -648,7 +656,7 @@ public final class PlayerInvestigationNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .Investigation investigation_list = 1;</code>
+       * <code>repeated .Investigation investigation_list = 12;</code>
        */
       public Builder addInvestigationList(
           int index, emu.grasscutter.net.proto.InvestigationOuterClass.Investigation.Builder builderForValue) {
@@ -662,7 +670,7 @@ public final class PlayerInvestigationNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .Investigation investigation_list = 1;</code>
+       * <code>repeated .Investigation investigation_list = 12;</code>
        */
       public Builder addAllInvestigationList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.InvestigationOuterClass.Investigation> values) {
@@ -677,7 +685,7 @@ public final class PlayerInvestigationNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .Investigation investigation_list = 1;</code>
+       * <code>repeated .Investigation investigation_list = 12;</code>
        */
       public Builder clearInvestigationList() {
         if (investigationListBuilder_ == null) {
@@ -690,7 +698,7 @@ public final class PlayerInvestigationNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .Investigation investigation_list = 1;</code>
+       * <code>repeated .Investigation investigation_list = 12;</code>
        */
       public Builder removeInvestigationList(int index) {
         if (investigationListBuilder_ == null) {
@@ -703,14 +711,14 @@ public final class PlayerInvestigationNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .Investigation investigation_list = 1;</code>
+       * <code>repeated .Investigation investigation_list = 12;</code>
        */
       public emu.grasscutter.net.proto.InvestigationOuterClass.Investigation.Builder getInvestigationListBuilder(
           int index) {
         return getInvestigationListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .Investigation investigation_list = 1;</code>
+       * <code>repeated .Investigation investigation_list = 12;</code>
        */
       public emu.grasscutter.net.proto.InvestigationOuterClass.InvestigationOrBuilder getInvestigationListOrBuilder(
           int index) {
@@ -720,7 +728,7 @@ public final class PlayerInvestigationNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .Investigation investigation_list = 1;</code>
+       * <code>repeated .Investigation investigation_list = 12;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.InvestigationOuterClass.InvestigationOrBuilder> 
            getInvestigationListOrBuilderList() {
@@ -731,14 +739,14 @@ public final class PlayerInvestigationNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .Investigation investigation_list = 1;</code>
+       * <code>repeated .Investigation investigation_list = 12;</code>
        */
       public emu.grasscutter.net.proto.InvestigationOuterClass.Investigation.Builder addInvestigationListBuilder() {
         return getInvestigationListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.InvestigationOuterClass.Investigation.getDefaultInstance());
       }
       /**
-       * <code>repeated .Investigation investigation_list = 1;</code>
+       * <code>repeated .Investigation investigation_list = 12;</code>
        */
       public emu.grasscutter.net.proto.InvestigationOuterClass.Investigation.Builder addInvestigationListBuilder(
           int index) {
@@ -746,7 +754,7 @@ public final class PlayerInvestigationNotifyOuterClass {
             index, emu.grasscutter.net.proto.InvestigationOuterClass.Investigation.getDefaultInstance());
       }
       /**
-       * <code>repeated .Investigation investigation_list = 1;</code>
+       * <code>repeated .Investigation investigation_list = 12;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.InvestigationOuterClass.Investigation.Builder> 
            getInvestigationListBuilderList() {
@@ -835,7 +843,7 @@ public final class PlayerInvestigationNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n\037PlayerInvestigationNotify.proto\032\023Inves" +
       "tigation.proto\"G\n\031PlayerInvestigationNot" +
-      "ify\022*\n\022investigation_list\030\001 \003(\0132\016.Invest" +
+      "ify\022*\n\022investigation_list\030\014 \003(\0132\016.Invest" +
       "igationB\033\n\031emu.grasscutter.net.protob\006pr" +
       "oto3"
     };

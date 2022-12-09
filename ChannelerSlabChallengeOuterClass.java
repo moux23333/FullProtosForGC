@@ -19,7 +19,7 @@ public final class ChannelerSlabChallengeOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 active_camp_index = 5;</code>
+     * <code>uint32 active_camp_index = 1;</code>
      * @return The activeCampIndex.
      */
     int getActiveCampIndex();
@@ -95,7 +95,7 @@ public final class ChannelerSlabChallengeOuterClass {
             case 0:
               done = true;
               break;
-            case 40: {
+            case 8: {
 
               activeCampIndex_ = input.readUInt32();
               break;
@@ -144,10 +144,10 @@ public final class ChannelerSlabChallengeOuterClass {
               emu.grasscutter.net.proto.ChannelerSlabChallengeOuterClass.ChannelerSlabChallenge.class, emu.grasscutter.net.proto.ChannelerSlabChallengeOuterClass.ChannelerSlabChallenge.Builder.class);
     }
 
-    public static final int ACTIVE_CAMP_INDEX_FIELD_NUMBER = 5;
+    public static final int ACTIVE_CAMP_INDEX_FIELD_NUMBER = 1;
     private int activeCampIndex_;
     /**
-     * <code>uint32 active_camp_index = 5;</code>
+     * <code>uint32 active_camp_index = 1;</code>
      * @return The activeCampIndex.
      */
     @java.lang.Override
@@ -210,7 +210,7 @@ public final class ChannelerSlabChallengeOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (activeCampIndex_ != 0) {
-        output.writeUInt32(5, activeCampIndex_);
+        output.writeUInt32(1, activeCampIndex_);
       }
       for (int i = 0; i < campList_.size(); i++) {
         output.writeMessage(14, campList_.get(i));
@@ -226,7 +226,7 @@ public final class ChannelerSlabChallengeOuterClass {
       size = 0;
       if (activeCampIndex_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, activeCampIndex_);
+          .computeUInt32Size(1, activeCampIndex_);
       }
       for (int i = 0; i < campList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
@@ -556,7 +556,7 @@ public final class ChannelerSlabChallengeOuterClass {
 
       private int activeCampIndex_ ;
       /**
-       * <code>uint32 active_camp_index = 5;</code>
+       * <code>uint32 active_camp_index = 1;</code>
        * @return The activeCampIndex.
        */
       @java.lang.Override
@@ -564,7 +564,7 @@ public final class ChannelerSlabChallengeOuterClass {
         return activeCampIndex_;
       }
       /**
-       * <code>uint32 active_camp_index = 5;</code>
+       * <code>uint32 active_camp_index = 1;</code>
        * @param value The activeCampIndex to set.
        * @return This builder for chaining.
        */
@@ -575,7 +575,7 @@ public final class ChannelerSlabChallengeOuterClass {
         return this;
       }
       /**
-       * <code>uint32 active_camp_index = 5;</code>
+       * <code>uint32 active_camp_index = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearActiveCampIndex() {
@@ -893,7 +893,7 @@ public final class ChannelerSlabChallengeOuterClass {
     java.lang.String[] descriptorData = {
       "\n\034ChannelerSlabChallenge.proto\032\027Channele" +
       "rSlabCamp.proto\"Z\n\026ChannelerSlabChalleng" +
-      "e\022\031\n\021active_camp_index\030\005 \001(\r\022%\n\tcamp_lis" +
+      "e\022\031\n\021active_camp_index\030\001 \001(\r\022%\n\tcamp_lis" +
       "t\030\016 \003(\0132\022.ChannelerSlabCampB\033\n\031emu.grass" +
       "cutter.net.protob\006proto3"
     };

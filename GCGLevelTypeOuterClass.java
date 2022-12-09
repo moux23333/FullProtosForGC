@@ -43,6 +43,18 @@ public final class GCGLevelTypeOuterClass {
      * <code>GCG_LEVEL_TYPE_CHARACTER = 5;</code>
      */
     GCG_LEVEL_TYPE_CHARACTER(5),
+    /**
+     * <code>GCG_LEVEL_TYPE_BREAK = 6;</code>
+     */
+    GCG_LEVEL_TYPE_BREAK(6),
+    /**
+     * <code>GCG_LEVEL_TYPE_QUEST = 7;</code>
+     */
+    GCG_LEVEL_TYPE_QUEST(7),
+    /**
+     * <code>GCG_LEVEL_TYPE_GUIDE_GROUP = 8;</code>
+     */
+    GCG_LEVEL_TYPE_GUIDE_GROUP(8),
     UNRECOGNIZED(-1),
     ;
 
@@ -70,6 +82,18 @@ public final class GCGLevelTypeOuterClass {
      * <code>GCG_LEVEL_TYPE_CHARACTER = 5;</code>
      */
     public static final int GCG_LEVEL_TYPE_CHARACTER_VALUE = 5;
+    /**
+     * <code>GCG_LEVEL_TYPE_BREAK = 6;</code>
+     */
+    public static final int GCG_LEVEL_TYPE_BREAK_VALUE = 6;
+    /**
+     * <code>GCG_LEVEL_TYPE_QUEST = 7;</code>
+     */
+    public static final int GCG_LEVEL_TYPE_QUEST_VALUE = 7;
+    /**
+     * <code>GCG_LEVEL_TYPE_GUIDE_GROUP = 8;</code>
+     */
+    public static final int GCG_LEVEL_TYPE_GUIDE_GROUP_VALUE = 8;
 
 
     public final int getNumber() {
@@ -102,6 +126,9 @@ public final class GCGLevelTypeOuterClass {
         case 3: return GCG_LEVEL_TYPE_WORLD;
         case 4: return GCG_LEVEL_TYPE_BOSS;
         case 5: return GCG_LEVEL_TYPE_CHARACTER;
+        case 6: return GCG_LEVEL_TYPE_BREAK;
+        case 7: return GCG_LEVEL_TYPE_QUEST;
+        case 8: return GCG_LEVEL_TYPE_GUIDE_GROUP;
         default: return null;
       }
     }
@@ -167,12 +194,14 @@ public final class GCGLevelTypeOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\022GCGLevelType.proto*\253\001\n\014GCGLevelType\022\027\n" +
+      "\n\022GCGLevelType.proto*\377\001\n\014GCGLevelType\022\027\n" +
       "\023GCG_LEVEL_TYPE_NONE\020\000\022\030\n\024GCG_LEVEL_TYPE" +
       "_CONST\020\001\022\027\n\023GCG_LEVEL_TYPE_WEEK\020\002\022\030\n\024GCG" +
       "_LEVEL_TYPE_WORLD\020\003\022\027\n\023GCG_LEVEL_TYPE_BO" +
-      "SS\020\004\022\034\n\030GCG_LEVEL_TYPE_CHARACTER\020\005B\033\n\031em" +
-      "u.grasscutter.net.protob\006proto3"
+      "SS\020\004\022\034\n\030GCG_LEVEL_TYPE_CHARACTER\020\005\022\030\n\024GC" +
+      "G_LEVEL_TYPE_BREAK\020\006\022\030\n\024GCG_LEVEL_TYPE_Q" +
+      "UEST\020\007\022\036\n\032GCG_LEVEL_TYPE_GUIDE_GROUP\020\010B\033" +
+      "\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

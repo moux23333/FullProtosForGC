@@ -19,23 +19,27 @@ public final class HomeAvatarTalkReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 talk_id = 12;</code>
+     * <code>uint32 talk_id = 10;</code>
      * @return The talkId.
      */
     int getTalkId();
 
     /**
-     * <code>uint32 avatar_id = 15;</code>
+     * <code>uint32 avatar_id = 5;</code>
      * @return The avatarId.
      */
     int getAvatarId();
   }
   /**
    * <pre>
-   * CmdId: 4688
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 4704;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code HomeAvatarTalkReq}
@@ -82,14 +86,14 @@ public final class HomeAvatarTalkReqOuterClass {
             case 0:
               done = true;
               break;
-            case 96: {
-
-              talkId_ = input.readUInt32();
-              break;
-            }
-            case 120: {
+            case 40: {
 
               avatarId_ = input.readUInt32();
+              break;
+            }
+            case 80: {
+
+              talkId_ = input.readUInt32();
               break;
             }
             default: {
@@ -124,10 +128,10 @@ public final class HomeAvatarTalkReqOuterClass {
               emu.grasscutter.net.proto.HomeAvatarTalkReqOuterClass.HomeAvatarTalkReq.class, emu.grasscutter.net.proto.HomeAvatarTalkReqOuterClass.HomeAvatarTalkReq.Builder.class);
     }
 
-    public static final int TALK_ID_FIELD_NUMBER = 12;
+    public static final int TALK_ID_FIELD_NUMBER = 10;
     private int talkId_;
     /**
-     * <code>uint32 talk_id = 12;</code>
+     * <code>uint32 talk_id = 10;</code>
      * @return The talkId.
      */
     @java.lang.Override
@@ -135,10 +139,10 @@ public final class HomeAvatarTalkReqOuterClass {
       return talkId_;
     }
 
-    public static final int AVATAR_ID_FIELD_NUMBER = 15;
+    public static final int AVATAR_ID_FIELD_NUMBER = 5;
     private int avatarId_;
     /**
-     * <code>uint32 avatar_id = 15;</code>
+     * <code>uint32 avatar_id = 5;</code>
      * @return The avatarId.
      */
     @java.lang.Override
@@ -160,11 +164,11 @@ public final class HomeAvatarTalkReqOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (talkId_ != 0) {
-        output.writeUInt32(12, talkId_);
-      }
       if (avatarId_ != 0) {
-        output.writeUInt32(15, avatarId_);
+        output.writeUInt32(5, avatarId_);
+      }
+      if (talkId_ != 0) {
+        output.writeUInt32(10, talkId_);
       }
       unknownFields.writeTo(output);
     }
@@ -175,13 +179,13 @@ public final class HomeAvatarTalkReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (talkId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, talkId_);
-      }
       if (avatarId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, avatarId_);
+          .computeUInt32Size(5, avatarId_);
+      }
+      if (talkId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(10, talkId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -314,10 +318,14 @@ public final class HomeAvatarTalkReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 4688
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 4704;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code HomeAvatarTalkReq}
@@ -474,7 +482,7 @@ public final class HomeAvatarTalkReqOuterClass {
 
       private int talkId_ ;
       /**
-       * <code>uint32 talk_id = 12;</code>
+       * <code>uint32 talk_id = 10;</code>
        * @return The talkId.
        */
       @java.lang.Override
@@ -482,7 +490,7 @@ public final class HomeAvatarTalkReqOuterClass {
         return talkId_;
       }
       /**
-       * <code>uint32 talk_id = 12;</code>
+       * <code>uint32 talk_id = 10;</code>
        * @param value The talkId to set.
        * @return This builder for chaining.
        */
@@ -493,7 +501,7 @@ public final class HomeAvatarTalkReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 talk_id = 12;</code>
+       * <code>uint32 talk_id = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearTalkId() {
@@ -505,7 +513,7 @@ public final class HomeAvatarTalkReqOuterClass {
 
       private int avatarId_ ;
       /**
-       * <code>uint32 avatar_id = 15;</code>
+       * <code>uint32 avatar_id = 5;</code>
        * @return The avatarId.
        */
       @java.lang.Override
@@ -513,7 +521,7 @@ public final class HomeAvatarTalkReqOuterClass {
         return avatarId_;
       }
       /**
-       * <code>uint32 avatar_id = 15;</code>
+       * <code>uint32 avatar_id = 5;</code>
        * @param value The avatarId to set.
        * @return This builder for chaining.
        */
@@ -524,7 +532,7 @@ public final class HomeAvatarTalkReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 avatar_id = 15;</code>
+       * <code>uint32 avatar_id = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearAvatarId() {
@@ -601,7 +609,7 @@ public final class HomeAvatarTalkReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\027HomeAvatarTalkReq.proto\"7\n\021HomeAvatarT" +
-      "alkReq\022\017\n\007talk_id\030\014 \001(\r\022\021\n\tavatar_id\030\017 \001" +
+      "alkReq\022\017\n\007talk_id\030\n \001(\r\022\021\n\tavatar_id\030\005 \001" +
       "(\rB\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

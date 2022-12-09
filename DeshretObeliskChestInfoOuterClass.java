@@ -19,37 +19,37 @@ public final class DeshretObeliskChestInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 scene_id = 5;</code>
-     * @return The sceneId.
-     */
-    int getSceneId();
-
-    /**
-     * <code>.Vector pos = 9;</code>
-     * @return Whether the pos field is set.
-     */
-    boolean hasPos();
-    /**
-     * <code>.Vector pos = 9;</code>
-     * @return The pos.
-     */
-    emu.grasscutter.net.proto.VectorOuterClass.Vector getPos();
-    /**
-     * <code>.Vector pos = 9;</code>
-     */
-    emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getPosOrBuilder();
-
-    /**
-     * <code>uint32 group_id = 7;</code>
+     * <code>uint32 group_id = 9;</code>
      * @return The groupId.
      */
     int getGroupId();
 
     /**
-     * <code>uint32 config_id = 3;</code>
+     * <code>uint32 config_id = 8;</code>
      * @return The configId.
      */
     int getConfigId();
+
+    /**
+     * <code>uint32 scene_id = 7;</code>
+     * @return The sceneId.
+     */
+    int getSceneId();
+
+    /**
+     * <code>.Vector pos = 3;</code>
+     * @return Whether the pos field is set.
+     */
+    boolean hasPos();
+    /**
+     * <code>.Vector pos = 3;</code>
+     * @return The pos.
+     */
+    emu.grasscutter.net.proto.VectorOuterClass.Vector getPos();
+    /**
+     * <code>.Vector pos = 3;</code>
+     */
+    emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getPosOrBuilder();
   }
   /**
    * Protobuf type {@code DeshretObeliskChestInfo}
@@ -96,22 +96,7 @@ public final class DeshretObeliskChestInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 24: {
-
-              configId_ = input.readUInt32();
-              break;
-            }
-            case 40: {
-
-              sceneId_ = input.readUInt32();
-              break;
-            }
-            case 56: {
-
-              groupId_ = input.readUInt32();
-              break;
-            }
-            case 74: {
+            case 26: {
               emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder subBuilder = null;
               if (pos_ != null) {
                 subBuilder = pos_.toBuilder();
@@ -122,6 +107,21 @@ public final class DeshretObeliskChestInfoOuterClass {
                 pos_ = subBuilder.buildPartial();
               }
 
+              break;
+            }
+            case 56: {
+
+              sceneId_ = input.readUInt32();
+              break;
+            }
+            case 64: {
+
+              configId_ = input.readUInt32();
+              break;
+            }
+            case 72: {
+
+              groupId_ = input.readUInt32();
               break;
             }
             default: {
@@ -156,47 +156,10 @@ public final class DeshretObeliskChestInfoOuterClass {
               emu.grasscutter.net.proto.DeshretObeliskChestInfoOuterClass.DeshretObeliskChestInfo.class, emu.grasscutter.net.proto.DeshretObeliskChestInfoOuterClass.DeshretObeliskChestInfo.Builder.class);
     }
 
-    public static final int SCENE_ID_FIELD_NUMBER = 5;
-    private int sceneId_;
-    /**
-     * <code>uint32 scene_id = 5;</code>
-     * @return The sceneId.
-     */
-    @java.lang.Override
-    public int getSceneId() {
-      return sceneId_;
-    }
-
-    public static final int POS_FIELD_NUMBER = 9;
-    private emu.grasscutter.net.proto.VectorOuterClass.Vector pos_;
-    /**
-     * <code>.Vector pos = 9;</code>
-     * @return Whether the pos field is set.
-     */
-    @java.lang.Override
-    public boolean hasPos() {
-      return pos_ != null;
-    }
-    /**
-     * <code>.Vector pos = 9;</code>
-     * @return The pos.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.VectorOuterClass.Vector getPos() {
-      return pos_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : pos_;
-    }
-    /**
-     * <code>.Vector pos = 9;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getPosOrBuilder() {
-      return getPos();
-    }
-
-    public static final int GROUP_ID_FIELD_NUMBER = 7;
+    public static final int GROUP_ID_FIELD_NUMBER = 9;
     private int groupId_;
     /**
-     * <code>uint32 group_id = 7;</code>
+     * <code>uint32 group_id = 9;</code>
      * @return The groupId.
      */
     @java.lang.Override
@@ -204,15 +167,52 @@ public final class DeshretObeliskChestInfoOuterClass {
       return groupId_;
     }
 
-    public static final int CONFIG_ID_FIELD_NUMBER = 3;
+    public static final int CONFIG_ID_FIELD_NUMBER = 8;
     private int configId_;
     /**
-     * <code>uint32 config_id = 3;</code>
+     * <code>uint32 config_id = 8;</code>
      * @return The configId.
      */
     @java.lang.Override
     public int getConfigId() {
       return configId_;
+    }
+
+    public static final int SCENE_ID_FIELD_NUMBER = 7;
+    private int sceneId_;
+    /**
+     * <code>uint32 scene_id = 7;</code>
+     * @return The sceneId.
+     */
+    @java.lang.Override
+    public int getSceneId() {
+      return sceneId_;
+    }
+
+    public static final int POS_FIELD_NUMBER = 3;
+    private emu.grasscutter.net.proto.VectorOuterClass.Vector pos_;
+    /**
+     * <code>.Vector pos = 3;</code>
+     * @return Whether the pos field is set.
+     */
+    @java.lang.Override
+    public boolean hasPos() {
+      return pos_ != null;
+    }
+    /**
+     * <code>.Vector pos = 3;</code>
+     * @return The pos.
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.VectorOuterClass.Vector getPos() {
+      return pos_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : pos_;
+    }
+    /**
+     * <code>.Vector pos = 3;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getPosOrBuilder() {
+      return getPos();
     }
 
     private byte memoizedIsInitialized = -1;
@@ -229,17 +229,17 @@ public final class DeshretObeliskChestInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (configId_ != 0) {
-        output.writeUInt32(3, configId_);
+      if (pos_ != null) {
+        output.writeMessage(3, getPos());
       }
       if (sceneId_ != 0) {
-        output.writeUInt32(5, sceneId_);
+        output.writeUInt32(7, sceneId_);
+      }
+      if (configId_ != 0) {
+        output.writeUInt32(8, configId_);
       }
       if (groupId_ != 0) {
-        output.writeUInt32(7, groupId_);
-      }
-      if (pos_ != null) {
-        output.writeMessage(9, getPos());
+        output.writeUInt32(9, groupId_);
       }
       unknownFields.writeTo(output);
     }
@@ -250,21 +250,21 @@ public final class DeshretObeliskChestInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (configId_ != 0) {
+      if (pos_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, configId_);
+          .computeMessageSize(3, getPos());
       }
       if (sceneId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, sceneId_);
+          .computeUInt32Size(7, sceneId_);
+      }
+      if (configId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(8, configId_);
       }
       if (groupId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, groupId_);
-      }
-      if (pos_ != null) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(9, getPos());
+          .computeUInt32Size(9, groupId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -281,6 +281,10 @@ public final class DeshretObeliskChestInfoOuterClass {
       }
       emu.grasscutter.net.proto.DeshretObeliskChestInfoOuterClass.DeshretObeliskChestInfo other = (emu.grasscutter.net.proto.DeshretObeliskChestInfoOuterClass.DeshretObeliskChestInfo) obj;
 
+      if (getGroupId()
+          != other.getGroupId()) return false;
+      if (getConfigId()
+          != other.getConfigId()) return false;
       if (getSceneId()
           != other.getSceneId()) return false;
       if (hasPos() != other.hasPos()) return false;
@@ -288,10 +292,6 @@ public final class DeshretObeliskChestInfoOuterClass {
         if (!getPos()
             .equals(other.getPos())) return false;
       }
-      if (getGroupId()
-          != other.getGroupId()) return false;
-      if (getConfigId()
-          != other.getConfigId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -303,16 +303,16 @@ public final class DeshretObeliskChestInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + GROUP_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getGroupId();
+      hash = (37 * hash) + CONFIG_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getConfigId();
       hash = (37 * hash) + SCENE_ID_FIELD_NUMBER;
       hash = (53 * hash) + getSceneId();
       if (hasPos()) {
         hash = (37 * hash) + POS_FIELD_NUMBER;
         hash = (53 * hash) + getPos().hashCode();
       }
-      hash = (37 * hash) + GROUP_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getGroupId();
-      hash = (37 * hash) + CONFIG_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getConfigId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -446,6 +446,10 @@ public final class DeshretObeliskChestInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        groupId_ = 0;
+
+        configId_ = 0;
+
         sceneId_ = 0;
 
         if (posBuilder_ == null) {
@@ -454,10 +458,6 @@ public final class DeshretObeliskChestInfoOuterClass {
           pos_ = null;
           posBuilder_ = null;
         }
-        groupId_ = 0;
-
-        configId_ = 0;
-
         return this;
       }
 
@@ -484,14 +484,14 @@ public final class DeshretObeliskChestInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.DeshretObeliskChestInfoOuterClass.DeshretObeliskChestInfo buildPartial() {
         emu.grasscutter.net.proto.DeshretObeliskChestInfoOuterClass.DeshretObeliskChestInfo result = new emu.grasscutter.net.proto.DeshretObeliskChestInfoOuterClass.DeshretObeliskChestInfo(this);
+        result.groupId_ = groupId_;
+        result.configId_ = configId_;
         result.sceneId_ = sceneId_;
         if (posBuilder_ == null) {
           result.pos_ = pos_;
         } else {
           result.pos_ = posBuilder_.build();
         }
-        result.groupId_ = groupId_;
-        result.configId_ = configId_;
         onBuilt();
         return result;
       }
@@ -540,17 +540,17 @@ public final class DeshretObeliskChestInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.DeshretObeliskChestInfoOuterClass.DeshretObeliskChestInfo other) {
         if (other == emu.grasscutter.net.proto.DeshretObeliskChestInfoOuterClass.DeshretObeliskChestInfo.getDefaultInstance()) return this;
-        if (other.getSceneId() != 0) {
-          setSceneId(other.getSceneId());
-        }
-        if (other.hasPos()) {
-          mergePos(other.getPos());
-        }
         if (other.getGroupId() != 0) {
           setGroupId(other.getGroupId());
         }
         if (other.getConfigId() != 0) {
           setConfigId(other.getConfigId());
+        }
+        if (other.getSceneId() != 0) {
+          setSceneId(other.getSceneId());
+        }
+        if (other.hasPos()) {
+          mergePos(other.getPos());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -581,9 +581,71 @@ public final class DeshretObeliskChestInfoOuterClass {
         return this;
       }
 
+      private int groupId_ ;
+      /**
+       * <code>uint32 group_id = 9;</code>
+       * @return The groupId.
+       */
+      @java.lang.Override
+      public int getGroupId() {
+        return groupId_;
+      }
+      /**
+       * <code>uint32 group_id = 9;</code>
+       * @param value The groupId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setGroupId(int value) {
+        
+        groupId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 group_id = 9;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearGroupId() {
+        
+        groupId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int configId_ ;
+      /**
+       * <code>uint32 config_id = 8;</code>
+       * @return The configId.
+       */
+      @java.lang.Override
+      public int getConfigId() {
+        return configId_;
+      }
+      /**
+       * <code>uint32 config_id = 8;</code>
+       * @param value The configId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setConfigId(int value) {
+        
+        configId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 config_id = 8;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearConfigId() {
+        
+        configId_ = 0;
+        onChanged();
+        return this;
+      }
+
       private int sceneId_ ;
       /**
-       * <code>uint32 scene_id = 5;</code>
+       * <code>uint32 scene_id = 7;</code>
        * @return The sceneId.
        */
       @java.lang.Override
@@ -591,7 +653,7 @@ public final class DeshretObeliskChestInfoOuterClass {
         return sceneId_;
       }
       /**
-       * <code>uint32 scene_id = 5;</code>
+       * <code>uint32 scene_id = 7;</code>
        * @param value The sceneId to set.
        * @return This builder for chaining.
        */
@@ -602,7 +664,7 @@ public final class DeshretObeliskChestInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 scene_id = 5;</code>
+       * <code>uint32 scene_id = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearSceneId() {
@@ -616,14 +678,14 @@ public final class DeshretObeliskChestInfoOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> posBuilder_;
       /**
-       * <code>.Vector pos = 9;</code>
+       * <code>.Vector pos = 3;</code>
        * @return Whether the pos field is set.
        */
       public boolean hasPos() {
         return posBuilder_ != null || pos_ != null;
       }
       /**
-       * <code>.Vector pos = 9;</code>
+       * <code>.Vector pos = 3;</code>
        * @return The pos.
        */
       public emu.grasscutter.net.proto.VectorOuterClass.Vector getPos() {
@@ -634,7 +696,7 @@ public final class DeshretObeliskChestInfoOuterClass {
         }
       }
       /**
-       * <code>.Vector pos = 9;</code>
+       * <code>.Vector pos = 3;</code>
        */
       public Builder setPos(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
         if (posBuilder_ == null) {
@@ -650,7 +712,7 @@ public final class DeshretObeliskChestInfoOuterClass {
         return this;
       }
       /**
-       * <code>.Vector pos = 9;</code>
+       * <code>.Vector pos = 3;</code>
        */
       public Builder setPos(
           emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder builderForValue) {
@@ -664,7 +726,7 @@ public final class DeshretObeliskChestInfoOuterClass {
         return this;
       }
       /**
-       * <code>.Vector pos = 9;</code>
+       * <code>.Vector pos = 3;</code>
        */
       public Builder mergePos(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
         if (posBuilder_ == null) {
@@ -682,7 +744,7 @@ public final class DeshretObeliskChestInfoOuterClass {
         return this;
       }
       /**
-       * <code>.Vector pos = 9;</code>
+       * <code>.Vector pos = 3;</code>
        */
       public Builder clearPos() {
         if (posBuilder_ == null) {
@@ -696,7 +758,7 @@ public final class DeshretObeliskChestInfoOuterClass {
         return this;
       }
       /**
-       * <code>.Vector pos = 9;</code>
+       * <code>.Vector pos = 3;</code>
        */
       public emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder getPosBuilder() {
         
@@ -704,7 +766,7 @@ public final class DeshretObeliskChestInfoOuterClass {
         return getPosFieldBuilder().getBuilder();
       }
       /**
-       * <code>.Vector pos = 9;</code>
+       * <code>.Vector pos = 3;</code>
        */
       public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getPosOrBuilder() {
         if (posBuilder_ != null) {
@@ -715,7 +777,7 @@ public final class DeshretObeliskChestInfoOuterClass {
         }
       }
       /**
-       * <code>.Vector pos = 9;</code>
+       * <code>.Vector pos = 3;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> 
@@ -729,68 +791,6 @@ public final class DeshretObeliskChestInfoOuterClass {
           pos_ = null;
         }
         return posBuilder_;
-      }
-
-      private int groupId_ ;
-      /**
-       * <code>uint32 group_id = 7;</code>
-       * @return The groupId.
-       */
-      @java.lang.Override
-      public int getGroupId() {
-        return groupId_;
-      }
-      /**
-       * <code>uint32 group_id = 7;</code>
-       * @param value The groupId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setGroupId(int value) {
-        
-        groupId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 group_id = 7;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearGroupId() {
-        
-        groupId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int configId_ ;
-      /**
-       * <code>uint32 config_id = 3;</code>
-       * @return The configId.
-       */
-      @java.lang.Override
-      public int getConfigId() {
-        return configId_;
-      }
-      /**
-       * <code>uint32 config_id = 3;</code>
-       * @param value The configId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setConfigId(int value) {
-        
-        configId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 config_id = 3;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearConfigId() {
-        
-        configId_ = 0;
-        onChanged();
-        return this;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -860,9 +860,9 @@ public final class DeshretObeliskChestInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\035DeshretObeliskChestInfo.proto\032\014Vector." +
-      "proto\"f\n\027DeshretObeliskChestInfo\022\020\n\010scen" +
-      "e_id\030\005 \001(\r\022\024\n\003pos\030\t \001(\0132\007.Vector\022\020\n\010grou" +
-      "p_id\030\007 \001(\r\022\021\n\tconfig_id\030\003 \001(\rB\033\n\031emu.gra" +
+      "proto\"f\n\027DeshretObeliskChestInfo\022\020\n\010grou" +
+      "p_id\030\t \001(\r\022\021\n\tconfig_id\030\010 \001(\r\022\020\n\010scene_i" +
+      "d\030\007 \001(\r\022\024\n\003pos\030\003 \001(\0132\007.VectorB\033\n\031emu.gra" +
       "sscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -875,7 +875,7 @@ public final class DeshretObeliskChestInfoOuterClass {
     internal_static_DeshretObeliskChestInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_DeshretObeliskChestInfo_descriptor,
-        new java.lang.String[] { "SceneId", "Pos", "GroupId", "ConfigId", });
+        new java.lang.String[] { "GroupId", "ConfigId", "SceneId", "Pos", });
     emu.grasscutter.net.proto.VectorOuterClass.getDescriptor();
   }
 

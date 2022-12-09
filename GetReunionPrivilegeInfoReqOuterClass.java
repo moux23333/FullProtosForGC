@@ -19,17 +19,21 @@ public final class GetReunionPrivilegeInfoReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 privilege_id = 10;</code>
+     * <code>uint32 privilege_id = 15;</code>
      * @return The privilegeId.
      */
     int getPrivilegeId();
   }
   /**
    * <pre>
-   * CmdId: 5097
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 5093;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code GetReunionPrivilegeInfoReq}
@@ -76,7 +80,7 @@ public final class GetReunionPrivilegeInfoReqOuterClass {
             case 0:
               done = true;
               break;
-            case 80: {
+            case 120: {
 
               privilegeId_ = input.readUInt32();
               break;
@@ -113,10 +117,10 @@ public final class GetReunionPrivilegeInfoReqOuterClass {
               emu.grasscutter.net.proto.GetReunionPrivilegeInfoReqOuterClass.GetReunionPrivilegeInfoReq.class, emu.grasscutter.net.proto.GetReunionPrivilegeInfoReqOuterClass.GetReunionPrivilegeInfoReq.Builder.class);
     }
 
-    public static final int PRIVILEGE_ID_FIELD_NUMBER = 10;
+    public static final int PRIVILEGE_ID_FIELD_NUMBER = 15;
     private int privilegeId_;
     /**
-     * <code>uint32 privilege_id = 10;</code>
+     * <code>uint32 privilege_id = 15;</code>
      * @return The privilegeId.
      */
     @java.lang.Override
@@ -139,7 +143,7 @@ public final class GetReunionPrivilegeInfoReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (privilegeId_ != 0) {
-        output.writeUInt32(10, privilegeId_);
+        output.writeUInt32(15, privilegeId_);
       }
       unknownFields.writeTo(output);
     }
@@ -152,7 +156,7 @@ public final class GetReunionPrivilegeInfoReqOuterClass {
       size = 0;
       if (privilegeId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, privilegeId_);
+          .computeUInt32Size(15, privilegeId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -281,10 +285,14 @@ public final class GetReunionPrivilegeInfoReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 5097
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 5093;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code GetReunionPrivilegeInfoReq}
@@ -435,7 +443,7 @@ public final class GetReunionPrivilegeInfoReqOuterClass {
 
       private int privilegeId_ ;
       /**
-       * <code>uint32 privilege_id = 10;</code>
+       * <code>uint32 privilege_id = 15;</code>
        * @return The privilegeId.
        */
       @java.lang.Override
@@ -443,7 +451,7 @@ public final class GetReunionPrivilegeInfoReqOuterClass {
         return privilegeId_;
       }
       /**
-       * <code>uint32 privilege_id = 10;</code>
+       * <code>uint32 privilege_id = 15;</code>
        * @param value The privilegeId to set.
        * @return This builder for chaining.
        */
@@ -454,7 +462,7 @@ public final class GetReunionPrivilegeInfoReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 privilege_id = 10;</code>
+       * <code>uint32 privilege_id = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearPrivilegeId() {
@@ -532,7 +540,7 @@ public final class GetReunionPrivilegeInfoReqOuterClass {
     java.lang.String[] descriptorData = {
       "\n GetReunionPrivilegeInfoReq.proto\"2\n\032Ge" +
       "tReunionPrivilegeInfoReq\022\024\n\014privilege_id" +
-      "\030\n \001(\rB\033\n\031emu.grasscutter.net.protob\006pro" +
+      "\030\017 \001(\rB\033\n\031emu.grasscutter.net.protob\006pro" +
       "to3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

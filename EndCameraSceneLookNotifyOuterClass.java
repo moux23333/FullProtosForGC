@@ -20,9 +20,13 @@ public final class EndCameraSceneLookNotifyOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 217
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 291;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code EndCameraSceneLookNotify}
@@ -247,9 +251,13 @@ public final class EndCameraSceneLookNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 217
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 291;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code EndCameraSceneLookNotify}

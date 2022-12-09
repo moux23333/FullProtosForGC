@@ -19,23 +19,27 @@ public final class MuqadasPotionCaptureWeaknessReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
+     * <code>uint32 level_id = 7;</code>
+     * @return The levelId.
+     */
+    int getLevelId();
+
+    /**
      * <code>uint32 capture_weakness_count = 10;</code>
      * @return The captureWeaknessCount.
      */
     int getCaptureWeaknessCount();
-
-    /**
-     * <code>uint32 level_id = 15;</code>
-     * @return The levelId.
-     */
-    int getLevelId();
   }
   /**
    * <pre>
-   * CmdId: 20011
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 24162;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code MuqadasPotionCaptureWeaknessReq}
@@ -82,14 +86,14 @@ public final class MuqadasPotionCaptureWeaknessReqOuterClass {
             case 0:
               done = true;
               break;
+            case 56: {
+
+              levelId_ = input.readUInt32();
+              break;
+            }
             case 80: {
 
               captureWeaknessCount_ = input.readUInt32();
-              break;
-            }
-            case 120: {
-
-              levelId_ = input.readUInt32();
               break;
             }
             default: {
@@ -124,6 +128,17 @@ public final class MuqadasPotionCaptureWeaknessReqOuterClass {
               emu.grasscutter.net.proto.MuqadasPotionCaptureWeaknessReqOuterClass.MuqadasPotionCaptureWeaknessReq.class, emu.grasscutter.net.proto.MuqadasPotionCaptureWeaknessReqOuterClass.MuqadasPotionCaptureWeaknessReq.Builder.class);
     }
 
+    public static final int LEVEL_ID_FIELD_NUMBER = 7;
+    private int levelId_;
+    /**
+     * <code>uint32 level_id = 7;</code>
+     * @return The levelId.
+     */
+    @java.lang.Override
+    public int getLevelId() {
+      return levelId_;
+    }
+
     public static final int CAPTURE_WEAKNESS_COUNT_FIELD_NUMBER = 10;
     private int captureWeaknessCount_;
     /**
@@ -133,17 +148,6 @@ public final class MuqadasPotionCaptureWeaknessReqOuterClass {
     @java.lang.Override
     public int getCaptureWeaknessCount() {
       return captureWeaknessCount_;
-    }
-
-    public static final int LEVEL_ID_FIELD_NUMBER = 15;
-    private int levelId_;
-    /**
-     * <code>uint32 level_id = 15;</code>
-     * @return The levelId.
-     */
-    @java.lang.Override
-    public int getLevelId() {
-      return levelId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -160,11 +164,11 @@ public final class MuqadasPotionCaptureWeaknessReqOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (levelId_ != 0) {
+        output.writeUInt32(7, levelId_);
+      }
       if (captureWeaknessCount_ != 0) {
         output.writeUInt32(10, captureWeaknessCount_);
-      }
-      if (levelId_ != 0) {
-        output.writeUInt32(15, levelId_);
       }
       unknownFields.writeTo(output);
     }
@@ -175,13 +179,13 @@ public final class MuqadasPotionCaptureWeaknessReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (levelId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(7, levelId_);
+      }
       if (captureWeaknessCount_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(10, captureWeaknessCount_);
-      }
-      if (levelId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, levelId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -198,10 +202,10 @@ public final class MuqadasPotionCaptureWeaknessReqOuterClass {
       }
       emu.grasscutter.net.proto.MuqadasPotionCaptureWeaknessReqOuterClass.MuqadasPotionCaptureWeaknessReq other = (emu.grasscutter.net.proto.MuqadasPotionCaptureWeaknessReqOuterClass.MuqadasPotionCaptureWeaknessReq) obj;
 
-      if (getCaptureWeaknessCount()
-          != other.getCaptureWeaknessCount()) return false;
       if (getLevelId()
           != other.getLevelId()) return false;
+      if (getCaptureWeaknessCount()
+          != other.getCaptureWeaknessCount()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -213,10 +217,10 @@ public final class MuqadasPotionCaptureWeaknessReqOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + CAPTURE_WEAKNESS_COUNT_FIELD_NUMBER;
-      hash = (53 * hash) + getCaptureWeaknessCount();
       hash = (37 * hash) + LEVEL_ID_FIELD_NUMBER;
       hash = (53 * hash) + getLevelId();
+      hash = (37 * hash) + CAPTURE_WEAKNESS_COUNT_FIELD_NUMBER;
+      hash = (53 * hash) + getCaptureWeaknessCount();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -314,10 +318,14 @@ public final class MuqadasPotionCaptureWeaknessReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 20011
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 24162;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code MuqadasPotionCaptureWeaknessReq}
@@ -357,9 +365,9 @@ public final class MuqadasPotionCaptureWeaknessReqOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        captureWeaknessCount_ = 0;
-
         levelId_ = 0;
+
+        captureWeaknessCount_ = 0;
 
         return this;
       }
@@ -387,8 +395,8 @@ public final class MuqadasPotionCaptureWeaknessReqOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.MuqadasPotionCaptureWeaknessReqOuterClass.MuqadasPotionCaptureWeaknessReq buildPartial() {
         emu.grasscutter.net.proto.MuqadasPotionCaptureWeaknessReqOuterClass.MuqadasPotionCaptureWeaknessReq result = new emu.grasscutter.net.proto.MuqadasPotionCaptureWeaknessReqOuterClass.MuqadasPotionCaptureWeaknessReq(this);
-        result.captureWeaknessCount_ = captureWeaknessCount_;
         result.levelId_ = levelId_;
+        result.captureWeaknessCount_ = captureWeaknessCount_;
         onBuilt();
         return result;
       }
@@ -437,11 +445,11 @@ public final class MuqadasPotionCaptureWeaknessReqOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.MuqadasPotionCaptureWeaknessReqOuterClass.MuqadasPotionCaptureWeaknessReq other) {
         if (other == emu.grasscutter.net.proto.MuqadasPotionCaptureWeaknessReqOuterClass.MuqadasPotionCaptureWeaknessReq.getDefaultInstance()) return this;
-        if (other.getCaptureWeaknessCount() != 0) {
-          setCaptureWeaknessCount(other.getCaptureWeaknessCount());
-        }
         if (other.getLevelId() != 0) {
           setLevelId(other.getLevelId());
+        }
+        if (other.getCaptureWeaknessCount() != 0) {
+          setCaptureWeaknessCount(other.getCaptureWeaknessCount());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -472,6 +480,37 @@ public final class MuqadasPotionCaptureWeaknessReqOuterClass {
         return this;
       }
 
+      private int levelId_ ;
+      /**
+       * <code>uint32 level_id = 7;</code>
+       * @return The levelId.
+       */
+      @java.lang.Override
+      public int getLevelId() {
+        return levelId_;
+      }
+      /**
+       * <code>uint32 level_id = 7;</code>
+       * @param value The levelId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setLevelId(int value) {
+        
+        levelId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 level_id = 7;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearLevelId() {
+        
+        levelId_ = 0;
+        onChanged();
+        return this;
+      }
+
       private int captureWeaknessCount_ ;
       /**
        * <code>uint32 capture_weakness_count = 10;</code>
@@ -499,37 +538,6 @@ public final class MuqadasPotionCaptureWeaknessReqOuterClass {
       public Builder clearCaptureWeaknessCount() {
         
         captureWeaknessCount_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int levelId_ ;
-      /**
-       * <code>uint32 level_id = 15;</code>
-       * @return The levelId.
-       */
-      @java.lang.Override
-      public int getLevelId() {
-        return levelId_;
-      }
-      /**
-       * <code>uint32 level_id = 15;</code>
-       * @param value The levelId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setLevelId(int value) {
-        
-        levelId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 level_id = 15;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearLevelId() {
-        
-        levelId_ = 0;
         onChanged();
         return this;
       }
@@ -601,8 +609,8 @@ public final class MuqadasPotionCaptureWeaknessReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n%MuqadasPotionCaptureWeaknessReq.proto\"" +
-      "S\n\037MuqadasPotionCaptureWeaknessReq\022\036\n\026ca" +
-      "pture_weakness_count\030\n \001(\r\022\020\n\010level_id\030\017" +
+      "S\n\037MuqadasPotionCaptureWeaknessReq\022\020\n\010le" +
+      "vel_id\030\007 \001(\r\022\036\n\026capture_weakness_count\030\n" +
       " \001(\rB\033\n\031emu.grasscutter.net.protob\006proto" +
       "3"
     };
@@ -615,7 +623,7 @@ public final class MuqadasPotionCaptureWeaknessReqOuterClass {
     internal_static_MuqadasPotionCaptureWeaknessReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_MuqadasPotionCaptureWeaknessReq_descriptor,
-        new java.lang.String[] { "CaptureWeaknessCount", "LevelId", });
+        new java.lang.String[] { "LevelId", "CaptureWeaknessCount", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

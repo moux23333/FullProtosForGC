@@ -19,33 +19,33 @@ public final class HomeScenePointFishFarmingInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 scene_id = 13;</code>
+     * <code>uint32 scene_id = 9;</code>
      * @return The sceneId.
      */
     int getSceneId();
 
     /**
-     * <code>repeated uint32 fish_id_list = 1;</code>
+     * <code>uint32 local_entity_id = 7;</code>
+     * @return The localEntityId.
+     */
+    int getLocalEntityId();
+
+    /**
+     * <code>repeated uint32 fish_id_list = 11;</code>
      * @return A list containing the fishIdList.
      */
     java.util.List<java.lang.Integer> getFishIdListList();
     /**
-     * <code>repeated uint32 fish_id_list = 1;</code>
+     * <code>repeated uint32 fish_id_list = 11;</code>
      * @return The count of fishIdList.
      */
     int getFishIdListCount();
     /**
-     * <code>repeated uint32 fish_id_list = 1;</code>
+     * <code>repeated uint32 fish_id_list = 11;</code>
      * @param index The index of the element to return.
      * @return The fishIdList at the given index.
      */
     int getFishIdList(int index);
-
-    /**
-     * <code>uint32 local_entity_id = 3;</code>
-     * @return The localEntityId.
-     */
-    int getLocalEntityId();
   }
   /**
    * Protobuf type {@code HomeScenePointFishFarmingInfo}
@@ -94,7 +94,17 @@ public final class HomeScenePointFishFarmingInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
+            case 56: {
+
+              localEntityId_ = input.readUInt32();
+              break;
+            }
+            case 72: {
+
+              sceneId_ = input.readUInt32();
+              break;
+            }
+            case 88: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 fishIdList_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
@@ -102,7 +112,7 @@ public final class HomeScenePointFishFarmingInfoOuterClass {
               fishIdList_.addInt(input.readUInt32());
               break;
             }
-            case 10: {
+            case 90: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -113,16 +123,6 @@ public final class HomeScenePointFishFarmingInfoOuterClass {
                 fishIdList_.addInt(input.readUInt32());
               }
               input.popLimit(limit);
-              break;
-            }
-            case 24: {
-
-              localEntityId_ = input.readUInt32();
-              break;
-            }
-            case 104: {
-
-              sceneId_ = input.readUInt32();
               break;
             }
             default: {
@@ -160,10 +160,10 @@ public final class HomeScenePointFishFarmingInfoOuterClass {
               emu.grasscutter.net.proto.HomeScenePointFishFarmingInfoOuterClass.HomeScenePointFishFarmingInfo.class, emu.grasscutter.net.proto.HomeScenePointFishFarmingInfoOuterClass.HomeScenePointFishFarmingInfo.Builder.class);
     }
 
-    public static final int SCENE_ID_FIELD_NUMBER = 13;
+    public static final int SCENE_ID_FIELD_NUMBER = 9;
     private int sceneId_;
     /**
-     * <code>uint32 scene_id = 13;</code>
+     * <code>uint32 scene_id = 9;</code>
      * @return The sceneId.
      */
     @java.lang.Override
@@ -171,10 +171,21 @@ public final class HomeScenePointFishFarmingInfoOuterClass {
       return sceneId_;
     }
 
-    public static final int FISH_ID_LIST_FIELD_NUMBER = 1;
+    public static final int LOCAL_ENTITY_ID_FIELD_NUMBER = 7;
+    private int localEntityId_;
+    /**
+     * <code>uint32 local_entity_id = 7;</code>
+     * @return The localEntityId.
+     */
+    @java.lang.Override
+    public int getLocalEntityId() {
+      return localEntityId_;
+    }
+
+    public static final int FISH_ID_LIST_FIELD_NUMBER = 11;
     private com.google.protobuf.Internal.IntList fishIdList_;
     /**
-     * <code>repeated uint32 fish_id_list = 1;</code>
+     * <code>repeated uint32 fish_id_list = 11;</code>
      * @return A list containing the fishIdList.
      */
     @java.lang.Override
@@ -183,14 +194,14 @@ public final class HomeScenePointFishFarmingInfoOuterClass {
       return fishIdList_;
     }
     /**
-     * <code>repeated uint32 fish_id_list = 1;</code>
+     * <code>repeated uint32 fish_id_list = 11;</code>
      * @return The count of fishIdList.
      */
     public int getFishIdListCount() {
       return fishIdList_.size();
     }
     /**
-     * <code>repeated uint32 fish_id_list = 1;</code>
+     * <code>repeated uint32 fish_id_list = 11;</code>
      * @param index The index of the element to return.
      * @return The fishIdList at the given index.
      */
@@ -198,17 +209,6 @@ public final class HomeScenePointFishFarmingInfoOuterClass {
       return fishIdList_.getInt(index);
     }
     private int fishIdListMemoizedSerializedSize = -1;
-
-    public static final int LOCAL_ENTITY_ID_FIELD_NUMBER = 3;
-    private int localEntityId_;
-    /**
-     * <code>uint32 local_entity_id = 3;</code>
-     * @return The localEntityId.
-     */
-    @java.lang.Override
-    public int getLocalEntityId() {
-      return localEntityId_;
-    }
 
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
@@ -225,18 +225,18 @@ public final class HomeScenePointFishFarmingInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
+      if (localEntityId_ != 0) {
+        output.writeUInt32(7, localEntityId_);
+      }
+      if (sceneId_ != 0) {
+        output.writeUInt32(9, sceneId_);
+      }
       if (getFishIdListList().size() > 0) {
-        output.writeUInt32NoTag(10);
+        output.writeUInt32NoTag(90);
         output.writeUInt32NoTag(fishIdListMemoizedSerializedSize);
       }
       for (int i = 0; i < fishIdList_.size(); i++) {
         output.writeUInt32NoTag(fishIdList_.getInt(i));
-      }
-      if (localEntityId_ != 0) {
-        output.writeUInt32(3, localEntityId_);
-      }
-      if (sceneId_ != 0) {
-        output.writeUInt32(13, sceneId_);
       }
       unknownFields.writeTo(output);
     }
@@ -247,6 +247,14 @@ public final class HomeScenePointFishFarmingInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (localEntityId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(7, localEntityId_);
+      }
+      if (sceneId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(9, sceneId_);
+      }
       {
         int dataSize = 0;
         for (int i = 0; i < fishIdList_.size(); i++) {
@@ -260,14 +268,6 @@ public final class HomeScenePointFishFarmingInfoOuterClass {
               .computeInt32SizeNoTag(dataSize);
         }
         fishIdListMemoizedSerializedSize = dataSize;
-      }
-      if (localEntityId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, localEntityId_);
-      }
-      if (sceneId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, sceneId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -286,10 +286,10 @@ public final class HomeScenePointFishFarmingInfoOuterClass {
 
       if (getSceneId()
           != other.getSceneId()) return false;
-      if (!getFishIdListList()
-          .equals(other.getFishIdListList())) return false;
       if (getLocalEntityId()
           != other.getLocalEntityId()) return false;
+      if (!getFishIdListList()
+          .equals(other.getFishIdListList())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -303,12 +303,12 @@ public final class HomeScenePointFishFarmingInfoOuterClass {
       hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + SCENE_ID_FIELD_NUMBER;
       hash = (53 * hash) + getSceneId();
+      hash = (37 * hash) + LOCAL_ENTITY_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getLocalEntityId();
       if (getFishIdListCount() > 0) {
         hash = (37 * hash) + FISH_ID_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getFishIdListList().hashCode();
       }
-      hash = (37 * hash) + LOCAL_ENTITY_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getLocalEntityId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -444,10 +444,10 @@ public final class HomeScenePointFishFarmingInfoOuterClass {
         super.clear();
         sceneId_ = 0;
 
-        fishIdList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000001);
         localEntityId_ = 0;
 
+        fishIdList_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000001);
         return this;
       }
 
@@ -476,12 +476,12 @@ public final class HomeScenePointFishFarmingInfoOuterClass {
         emu.grasscutter.net.proto.HomeScenePointFishFarmingInfoOuterClass.HomeScenePointFishFarmingInfo result = new emu.grasscutter.net.proto.HomeScenePointFishFarmingInfoOuterClass.HomeScenePointFishFarmingInfo(this);
         int from_bitField0_ = bitField0_;
         result.sceneId_ = sceneId_;
+        result.localEntityId_ = localEntityId_;
         if (((bitField0_ & 0x00000001) != 0)) {
           fishIdList_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000001);
         }
         result.fishIdList_ = fishIdList_;
-        result.localEntityId_ = localEntityId_;
         onBuilt();
         return result;
       }
@@ -533,6 +533,9 @@ public final class HomeScenePointFishFarmingInfoOuterClass {
         if (other.getSceneId() != 0) {
           setSceneId(other.getSceneId());
         }
+        if (other.getLocalEntityId() != 0) {
+          setLocalEntityId(other.getLocalEntityId());
+        }
         if (!other.fishIdList_.isEmpty()) {
           if (fishIdList_.isEmpty()) {
             fishIdList_ = other.fishIdList_;
@@ -542,9 +545,6 @@ public final class HomeScenePointFishFarmingInfoOuterClass {
             fishIdList_.addAll(other.fishIdList_);
           }
           onChanged();
-        }
-        if (other.getLocalEntityId() != 0) {
-          setLocalEntityId(other.getLocalEntityId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -578,7 +578,7 @@ public final class HomeScenePointFishFarmingInfoOuterClass {
 
       private int sceneId_ ;
       /**
-       * <code>uint32 scene_id = 13;</code>
+       * <code>uint32 scene_id = 9;</code>
        * @return The sceneId.
        */
       @java.lang.Override
@@ -586,7 +586,7 @@ public final class HomeScenePointFishFarmingInfoOuterClass {
         return sceneId_;
       }
       /**
-       * <code>uint32 scene_id = 13;</code>
+       * <code>uint32 scene_id = 9;</code>
        * @param value The sceneId to set.
        * @return This builder for chaining.
        */
@@ -597,12 +597,43 @@ public final class HomeScenePointFishFarmingInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 scene_id = 13;</code>
+       * <code>uint32 scene_id = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearSceneId() {
         
         sceneId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int localEntityId_ ;
+      /**
+       * <code>uint32 local_entity_id = 7;</code>
+       * @return The localEntityId.
+       */
+      @java.lang.Override
+      public int getLocalEntityId() {
+        return localEntityId_;
+      }
+      /**
+       * <code>uint32 local_entity_id = 7;</code>
+       * @param value The localEntityId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setLocalEntityId(int value) {
+        
+        localEntityId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 local_entity_id = 7;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearLocalEntityId() {
+        
+        localEntityId_ = 0;
         onChanged();
         return this;
       }
@@ -615,7 +646,7 @@ public final class HomeScenePointFishFarmingInfoOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 fish_id_list = 1;</code>
+       * <code>repeated uint32 fish_id_list = 11;</code>
        * @return A list containing the fishIdList.
        */
       public java.util.List<java.lang.Integer>
@@ -624,14 +655,14 @@ public final class HomeScenePointFishFarmingInfoOuterClass {
                  java.util.Collections.unmodifiableList(fishIdList_) : fishIdList_;
       }
       /**
-       * <code>repeated uint32 fish_id_list = 1;</code>
+       * <code>repeated uint32 fish_id_list = 11;</code>
        * @return The count of fishIdList.
        */
       public int getFishIdListCount() {
         return fishIdList_.size();
       }
       /**
-       * <code>repeated uint32 fish_id_list = 1;</code>
+       * <code>repeated uint32 fish_id_list = 11;</code>
        * @param index The index of the element to return.
        * @return The fishIdList at the given index.
        */
@@ -639,7 +670,7 @@ public final class HomeScenePointFishFarmingInfoOuterClass {
         return fishIdList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 fish_id_list = 1;</code>
+       * <code>repeated uint32 fish_id_list = 11;</code>
        * @param index The index to set the value at.
        * @param value The fishIdList to set.
        * @return This builder for chaining.
@@ -652,7 +683,7 @@ public final class HomeScenePointFishFarmingInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 fish_id_list = 1;</code>
+       * <code>repeated uint32 fish_id_list = 11;</code>
        * @param value The fishIdList to add.
        * @return This builder for chaining.
        */
@@ -663,7 +694,7 @@ public final class HomeScenePointFishFarmingInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 fish_id_list = 1;</code>
+       * <code>repeated uint32 fish_id_list = 11;</code>
        * @param values The fishIdList to add.
        * @return This builder for chaining.
        */
@@ -676,43 +707,12 @@ public final class HomeScenePointFishFarmingInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 fish_id_list = 1;</code>
+       * <code>repeated uint32 fish_id_list = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearFishIdList() {
         fishIdList_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
-        onChanged();
-        return this;
-      }
-
-      private int localEntityId_ ;
-      /**
-       * <code>uint32 local_entity_id = 3;</code>
-       * @return The localEntityId.
-       */
-      @java.lang.Override
-      public int getLocalEntityId() {
-        return localEntityId_;
-      }
-      /**
-       * <code>uint32 local_entity_id = 3;</code>
-       * @param value The localEntityId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setLocalEntityId(int value) {
-        
-        localEntityId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 local_entity_id = 3;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearLocalEntityId() {
-        
-        localEntityId_ = 0;
         onChanged();
         return this;
       }
@@ -785,8 +785,8 @@ public final class HomeScenePointFishFarmingInfoOuterClass {
     java.lang.String[] descriptorData = {
       "\n#HomeScenePointFishFarmingInfo.proto\"`\n" +
       "\035HomeScenePointFishFarmingInfo\022\020\n\010scene_" +
-      "id\030\r \001(\r\022\024\n\014fish_id_list\030\001 \003(\r\022\027\n\017local_" +
-      "entity_id\030\003 \001(\rB\033\n\031emu.grasscutter.net.p" +
+      "id\030\t \001(\r\022\027\n\017local_entity_id\030\007 \001(\r\022\024\n\014fis" +
+      "h_id_list\030\013 \003(\rB\033\n\031emu.grasscutter.net.p" +
       "rotob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -798,7 +798,7 @@ public final class HomeScenePointFishFarmingInfoOuterClass {
     internal_static_HomeScenePointFishFarmingInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_HomeScenePointFishFarmingInfo_descriptor,
-        new java.lang.String[] { "SceneId", "FishIdList", "LocalEntityId", });
+        new java.lang.String[] { "SceneId", "LocalEntityId", "FishIdList", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

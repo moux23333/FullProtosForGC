@@ -19,16 +19,20 @@ public final class VintagePresentFinishNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 present_id = 3;</code>
+     * <code>uint32 present_id = 2;</code>
      * @return The presentId.
      */
     int getPresentId();
   }
   /**
    * <pre>
-   * CmdId: 20086
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 20454;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code VintagePresentFinishNotify}
@@ -75,7 +79,7 @@ public final class VintagePresentFinishNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 24: {
+            case 16: {
 
               presentId_ = input.readUInt32();
               break;
@@ -112,10 +116,10 @@ public final class VintagePresentFinishNotifyOuterClass {
               emu.grasscutter.net.proto.VintagePresentFinishNotifyOuterClass.VintagePresentFinishNotify.class, emu.grasscutter.net.proto.VintagePresentFinishNotifyOuterClass.VintagePresentFinishNotify.Builder.class);
     }
 
-    public static final int PRESENT_ID_FIELD_NUMBER = 3;
+    public static final int PRESENT_ID_FIELD_NUMBER = 2;
     private int presentId_;
     /**
-     * <code>uint32 present_id = 3;</code>
+     * <code>uint32 present_id = 2;</code>
      * @return The presentId.
      */
     @java.lang.Override
@@ -138,7 +142,7 @@ public final class VintagePresentFinishNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (presentId_ != 0) {
-        output.writeUInt32(3, presentId_);
+        output.writeUInt32(2, presentId_);
       }
       unknownFields.writeTo(output);
     }
@@ -151,7 +155,7 @@ public final class VintagePresentFinishNotifyOuterClass {
       size = 0;
       if (presentId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, presentId_);
+          .computeUInt32Size(2, presentId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -280,9 +284,13 @@ public final class VintagePresentFinishNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 20086
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 20454;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code VintagePresentFinishNotify}
@@ -433,7 +441,7 @@ public final class VintagePresentFinishNotifyOuterClass {
 
       private int presentId_ ;
       /**
-       * <code>uint32 present_id = 3;</code>
+       * <code>uint32 present_id = 2;</code>
        * @return The presentId.
        */
       @java.lang.Override
@@ -441,7 +449,7 @@ public final class VintagePresentFinishNotifyOuterClass {
         return presentId_;
       }
       /**
-       * <code>uint32 present_id = 3;</code>
+       * <code>uint32 present_id = 2;</code>
        * @param value The presentId to set.
        * @return This builder for chaining.
        */
@@ -452,7 +460,7 @@ public final class VintagePresentFinishNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 present_id = 3;</code>
+       * <code>uint32 present_id = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearPresentId() {
@@ -529,7 +537,7 @@ public final class VintagePresentFinishNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n VintagePresentFinishNotify.proto\"0\n\032Vi" +
-      "ntagePresentFinishNotify\022\022\n\npresent_id\030\003" +
+      "ntagePresentFinishNotify\022\022\n\npresent_id\030\002" +
       " \001(\rB\033\n\031emu.grasscutter.net.protob\006proto" +
       "3"
     };

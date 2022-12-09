@@ -19,22 +19,26 @@ public final class EnterFungusFighterTrainingDungeonRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
+     * <code>uint32 dungeon_id = 12;</code>
+     * @return The dungeonId.
+     */
+    int getDungeonId();
+
+    /**
      * <code>int32 retcode = 7;</code>
      * @return The retcode.
      */
     int getRetcode();
-
-    /**
-     * <code>uint32 dungeon_id = 11;</code>
-     * @return The dungeonId.
-     */
-    int getDungeonId();
   }
   /**
    * <pre>
-   * CmdId: 21593
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 22876;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code EnterFungusFighterTrainingDungeonRsp}
@@ -86,7 +90,7 @@ public final class EnterFungusFighterTrainingDungeonRspOuterClass {
               retcode_ = input.readInt32();
               break;
             }
-            case 88: {
+            case 96: {
 
               dungeonId_ = input.readUInt32();
               break;
@@ -123,6 +127,17 @@ public final class EnterFungusFighterTrainingDungeonRspOuterClass {
               emu.grasscutter.net.proto.EnterFungusFighterTrainingDungeonRspOuterClass.EnterFungusFighterTrainingDungeonRsp.class, emu.grasscutter.net.proto.EnterFungusFighterTrainingDungeonRspOuterClass.EnterFungusFighterTrainingDungeonRsp.Builder.class);
     }
 
+    public static final int DUNGEON_ID_FIELD_NUMBER = 12;
+    private int dungeonId_;
+    /**
+     * <code>uint32 dungeon_id = 12;</code>
+     * @return The dungeonId.
+     */
+    @java.lang.Override
+    public int getDungeonId() {
+      return dungeonId_;
+    }
+
     public static final int RETCODE_FIELD_NUMBER = 7;
     private int retcode_;
     /**
@@ -132,17 +147,6 @@ public final class EnterFungusFighterTrainingDungeonRspOuterClass {
     @java.lang.Override
     public int getRetcode() {
       return retcode_;
-    }
-
-    public static final int DUNGEON_ID_FIELD_NUMBER = 11;
-    private int dungeonId_;
-    /**
-     * <code>uint32 dungeon_id = 11;</code>
-     * @return The dungeonId.
-     */
-    @java.lang.Override
-    public int getDungeonId() {
-      return dungeonId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -163,7 +167,7 @@ public final class EnterFungusFighterTrainingDungeonRspOuterClass {
         output.writeInt32(7, retcode_);
       }
       if (dungeonId_ != 0) {
-        output.writeUInt32(11, dungeonId_);
+        output.writeUInt32(12, dungeonId_);
       }
       unknownFields.writeTo(output);
     }
@@ -180,7 +184,7 @@ public final class EnterFungusFighterTrainingDungeonRspOuterClass {
       }
       if (dungeonId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, dungeonId_);
+          .computeUInt32Size(12, dungeonId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -197,10 +201,10 @@ public final class EnterFungusFighterTrainingDungeonRspOuterClass {
       }
       emu.grasscutter.net.proto.EnterFungusFighterTrainingDungeonRspOuterClass.EnterFungusFighterTrainingDungeonRsp other = (emu.grasscutter.net.proto.EnterFungusFighterTrainingDungeonRspOuterClass.EnterFungusFighterTrainingDungeonRsp) obj;
 
-      if (getRetcode()
-          != other.getRetcode()) return false;
       if (getDungeonId()
           != other.getDungeonId()) return false;
+      if (getRetcode()
+          != other.getRetcode()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -212,10 +216,10 @@ public final class EnterFungusFighterTrainingDungeonRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
-      hash = (53 * hash) + getRetcode();
       hash = (37 * hash) + DUNGEON_ID_FIELD_NUMBER;
       hash = (53 * hash) + getDungeonId();
+      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
+      hash = (53 * hash) + getRetcode();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -313,9 +317,13 @@ public final class EnterFungusFighterTrainingDungeonRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 21593
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 22876;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code EnterFungusFighterTrainingDungeonRsp}
@@ -355,9 +363,9 @@ public final class EnterFungusFighterTrainingDungeonRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        retcode_ = 0;
-
         dungeonId_ = 0;
+
+        retcode_ = 0;
 
         return this;
       }
@@ -385,8 +393,8 @@ public final class EnterFungusFighterTrainingDungeonRspOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.EnterFungusFighterTrainingDungeonRspOuterClass.EnterFungusFighterTrainingDungeonRsp buildPartial() {
         emu.grasscutter.net.proto.EnterFungusFighterTrainingDungeonRspOuterClass.EnterFungusFighterTrainingDungeonRsp result = new emu.grasscutter.net.proto.EnterFungusFighterTrainingDungeonRspOuterClass.EnterFungusFighterTrainingDungeonRsp(this);
-        result.retcode_ = retcode_;
         result.dungeonId_ = dungeonId_;
+        result.retcode_ = retcode_;
         onBuilt();
         return result;
       }
@@ -435,11 +443,11 @@ public final class EnterFungusFighterTrainingDungeonRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.EnterFungusFighterTrainingDungeonRspOuterClass.EnterFungusFighterTrainingDungeonRsp other) {
         if (other == emu.grasscutter.net.proto.EnterFungusFighterTrainingDungeonRspOuterClass.EnterFungusFighterTrainingDungeonRsp.getDefaultInstance()) return this;
-        if (other.getRetcode() != 0) {
-          setRetcode(other.getRetcode());
-        }
         if (other.getDungeonId() != 0) {
           setDungeonId(other.getDungeonId());
+        }
+        if (other.getRetcode() != 0) {
+          setRetcode(other.getRetcode());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -470,6 +478,37 @@ public final class EnterFungusFighterTrainingDungeonRspOuterClass {
         return this;
       }
 
+      private int dungeonId_ ;
+      /**
+       * <code>uint32 dungeon_id = 12;</code>
+       * @return The dungeonId.
+       */
+      @java.lang.Override
+      public int getDungeonId() {
+        return dungeonId_;
+      }
+      /**
+       * <code>uint32 dungeon_id = 12;</code>
+       * @param value The dungeonId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setDungeonId(int value) {
+        
+        dungeonId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 dungeon_id = 12;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearDungeonId() {
+        
+        dungeonId_ = 0;
+        onChanged();
+        return this;
+      }
+
       private int retcode_ ;
       /**
        * <code>int32 retcode = 7;</code>
@@ -497,37 +536,6 @@ public final class EnterFungusFighterTrainingDungeonRspOuterClass {
       public Builder clearRetcode() {
         
         retcode_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int dungeonId_ ;
-      /**
-       * <code>uint32 dungeon_id = 11;</code>
-       * @return The dungeonId.
-       */
-      @java.lang.Override
-      public int getDungeonId() {
-        return dungeonId_;
-      }
-      /**
-       * <code>uint32 dungeon_id = 11;</code>
-       * @param value The dungeonId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setDungeonId(int value) {
-        
-        dungeonId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 dungeon_id = 11;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearDungeonId() {
-        
-        dungeonId_ = 0;
         onChanged();
         return this;
       }
@@ -600,8 +608,8 @@ public final class EnterFungusFighterTrainingDungeonRspOuterClass {
     java.lang.String[] descriptorData = {
       "\n*EnterFungusFighterTrainingDungeonRsp.p" +
       "roto\"K\n$EnterFungusFighterTrainingDungeo" +
-      "nRsp\022\017\n\007retcode\030\007 \001(\005\022\022\n\ndungeon_id\030\013 \001(" +
-      "\rB\033\n\031emu.grasscutter.net.protob\006proto3"
+      "nRsp\022\022\n\ndungeon_id\030\014 \001(\r\022\017\n\007retcode\030\007 \001(" +
+      "\005B\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -612,7 +620,7 @@ public final class EnterFungusFighterTrainingDungeonRspOuterClass {
     internal_static_EnterFungusFighterTrainingDungeonRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_EnterFungusFighterTrainingDungeonRsp_descriptor,
-        new java.lang.String[] { "Retcode", "DungeonId", });
+        new java.lang.String[] { "DungeonId", "Retcode", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

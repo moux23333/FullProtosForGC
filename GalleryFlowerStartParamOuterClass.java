@@ -19,7 +19,7 @@ public final class GalleryFlowerStartParamOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 target_score = 5;</code>
+     * <code>uint32 target_score = 9;</code>
      * @return The targetScore.
      */
     int getTargetScore();
@@ -69,7 +69,7 @@ public final class GalleryFlowerStartParamOuterClass {
             case 0:
               done = true;
               break;
-            case 40: {
+            case 72: {
 
               targetScore_ = input.readUInt32();
               break;
@@ -106,10 +106,10 @@ public final class GalleryFlowerStartParamOuterClass {
               emu.grasscutter.net.proto.GalleryFlowerStartParamOuterClass.GalleryFlowerStartParam.class, emu.grasscutter.net.proto.GalleryFlowerStartParamOuterClass.GalleryFlowerStartParam.Builder.class);
     }
 
-    public static final int TARGET_SCORE_FIELD_NUMBER = 5;
+    public static final int TARGET_SCORE_FIELD_NUMBER = 9;
     private int targetScore_;
     /**
-     * <code>uint32 target_score = 5;</code>
+     * <code>uint32 target_score = 9;</code>
      * @return The targetScore.
      */
     @java.lang.Override
@@ -132,7 +132,7 @@ public final class GalleryFlowerStartParamOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (targetScore_ != 0) {
-        output.writeUInt32(5, targetScore_);
+        output.writeUInt32(9, targetScore_);
       }
       unknownFields.writeTo(output);
     }
@@ -145,7 +145,7 @@ public final class GalleryFlowerStartParamOuterClass {
       size = 0;
       if (targetScore_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, targetScore_);
+          .computeUInt32Size(9, targetScore_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -421,7 +421,7 @@ public final class GalleryFlowerStartParamOuterClass {
 
       private int targetScore_ ;
       /**
-       * <code>uint32 target_score = 5;</code>
+       * <code>uint32 target_score = 9;</code>
        * @return The targetScore.
        */
       @java.lang.Override
@@ -429,7 +429,7 @@ public final class GalleryFlowerStartParamOuterClass {
         return targetScore_;
       }
       /**
-       * <code>uint32 target_score = 5;</code>
+       * <code>uint32 target_score = 9;</code>
        * @param value The targetScore to set.
        * @return This builder for chaining.
        */
@@ -440,7 +440,7 @@ public final class GalleryFlowerStartParamOuterClass {
         return this;
       }
       /**
-       * <code>uint32 target_score = 5;</code>
+       * <code>uint32 target_score = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearTargetScore() {
@@ -517,7 +517,7 @@ public final class GalleryFlowerStartParamOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\035GalleryFlowerStartParam.proto\"/\n\027Galle" +
-      "ryFlowerStartParam\022\024\n\014target_score\030\005 \001(\r" +
+      "ryFlowerStartParam\022\024\n\014target_score\030\t \001(\r" +
       "B\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

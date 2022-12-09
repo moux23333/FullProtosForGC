@@ -19,18 +19,6 @@ public final class GetPlayerMpModeAvailabilityRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 mp_ret = 15;</code>
-     * @return The mpRet.
-     */
-    int getMpRet();
-
-    /**
-     * <code>int32 retcode = 2;</code>
-     * @return The retcode.
-     */
-    int getRetcode();
-
-    /**
      * <code>repeated uint32 param_list = 8;</code>
      * @return A list containing the paramList.
      */
@@ -46,12 +34,28 @@ public final class GetPlayerMpModeAvailabilityRspOuterClass {
      * @return The paramList at the given index.
      */
     int getParamList(int index);
+
+    /**
+     * <code>int32 mp_ret = 12;</code>
+     * @return The mpRet.
+     */
+    int getMpRet();
+
+    /**
+     * <code>int32 retcode = 3;</code>
+     * @return The retcode.
+     */
+    int getRetcode();
   }
   /**
    * <pre>
-   * CmdId: 1849
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 1834;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code GetPlayerMpModeAvailabilityRsp}
@@ -100,7 +104,7 @@ public final class GetPlayerMpModeAvailabilityRspOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
+            case 24: {
 
               retcode_ = input.readInt32();
               break;
@@ -126,7 +130,7 @@ public final class GetPlayerMpModeAvailabilityRspOuterClass {
               input.popLimit(limit);
               break;
             }
-            case 120: {
+            case 96: {
 
               mpRet_ = input.readInt32();
               break;
@@ -166,28 +170,6 @@ public final class GetPlayerMpModeAvailabilityRspOuterClass {
               emu.grasscutter.net.proto.GetPlayerMpModeAvailabilityRspOuterClass.GetPlayerMpModeAvailabilityRsp.class, emu.grasscutter.net.proto.GetPlayerMpModeAvailabilityRspOuterClass.GetPlayerMpModeAvailabilityRsp.Builder.class);
     }
 
-    public static final int MP_RET_FIELD_NUMBER = 15;
-    private int mpRet_;
-    /**
-     * <code>int32 mp_ret = 15;</code>
-     * @return The mpRet.
-     */
-    @java.lang.Override
-    public int getMpRet() {
-      return mpRet_;
-    }
-
-    public static final int RETCODE_FIELD_NUMBER = 2;
-    private int retcode_;
-    /**
-     * <code>int32 retcode = 2;</code>
-     * @return The retcode.
-     */
-    @java.lang.Override
-    public int getRetcode() {
-      return retcode_;
-    }
-
     public static final int PARAM_LIST_FIELD_NUMBER = 8;
     private com.google.protobuf.Internal.IntList paramList_;
     /**
@@ -216,6 +198,28 @@ public final class GetPlayerMpModeAvailabilityRspOuterClass {
     }
     private int paramListMemoizedSerializedSize = -1;
 
+    public static final int MP_RET_FIELD_NUMBER = 12;
+    private int mpRet_;
+    /**
+     * <code>int32 mp_ret = 12;</code>
+     * @return The mpRet.
+     */
+    @java.lang.Override
+    public int getMpRet() {
+      return mpRet_;
+    }
+
+    public static final int RETCODE_FIELD_NUMBER = 3;
+    private int retcode_;
+    /**
+     * <code>int32 retcode = 3;</code>
+     * @return The retcode.
+     */
+    @java.lang.Override
+    public int getRetcode() {
+      return retcode_;
+    }
+
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
     public final boolean isInitialized() {
@@ -232,7 +236,7 @@ public final class GetPlayerMpModeAvailabilityRspOuterClass {
                         throws java.io.IOException {
       getSerializedSize();
       if (retcode_ != 0) {
-        output.writeInt32(2, retcode_);
+        output.writeInt32(3, retcode_);
       }
       if (getParamListList().size() > 0) {
         output.writeUInt32NoTag(66);
@@ -242,7 +246,7 @@ public final class GetPlayerMpModeAvailabilityRspOuterClass {
         output.writeUInt32NoTag(paramList_.getInt(i));
       }
       if (mpRet_ != 0) {
-        output.writeInt32(15, mpRet_);
+        output.writeInt32(12, mpRet_);
       }
       unknownFields.writeTo(output);
     }
@@ -255,7 +259,7 @@ public final class GetPlayerMpModeAvailabilityRspOuterClass {
       size = 0;
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(2, retcode_);
+          .computeInt32Size(3, retcode_);
       }
       {
         int dataSize = 0;
@@ -273,7 +277,7 @@ public final class GetPlayerMpModeAvailabilityRspOuterClass {
       }
       if (mpRet_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(15, mpRet_);
+          .computeInt32Size(12, mpRet_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -290,12 +294,12 @@ public final class GetPlayerMpModeAvailabilityRspOuterClass {
       }
       emu.grasscutter.net.proto.GetPlayerMpModeAvailabilityRspOuterClass.GetPlayerMpModeAvailabilityRsp other = (emu.grasscutter.net.proto.GetPlayerMpModeAvailabilityRspOuterClass.GetPlayerMpModeAvailabilityRsp) obj;
 
+      if (!getParamListList()
+          .equals(other.getParamListList())) return false;
       if (getMpRet()
           != other.getMpRet()) return false;
       if (getRetcode()
           != other.getRetcode()) return false;
-      if (!getParamListList()
-          .equals(other.getParamListList())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -307,14 +311,14 @@ public final class GetPlayerMpModeAvailabilityRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + MP_RET_FIELD_NUMBER;
-      hash = (53 * hash) + getMpRet();
-      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
-      hash = (53 * hash) + getRetcode();
       if (getParamListCount() > 0) {
         hash = (37 * hash) + PARAM_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getParamListList().hashCode();
       }
+      hash = (37 * hash) + MP_RET_FIELD_NUMBER;
+      hash = (53 * hash) + getMpRet();
+      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
+      hash = (53 * hash) + getRetcode();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -412,9 +416,13 @@ public final class GetPlayerMpModeAvailabilityRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 1849
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 1834;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code GetPlayerMpModeAvailabilityRsp}
@@ -454,12 +462,12 @@ public final class GetPlayerMpModeAvailabilityRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        paramList_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000001);
         mpRet_ = 0;
 
         retcode_ = 0;
 
-        paramList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000001);
         return this;
       }
 
@@ -487,13 +495,13 @@ public final class GetPlayerMpModeAvailabilityRspOuterClass {
       public emu.grasscutter.net.proto.GetPlayerMpModeAvailabilityRspOuterClass.GetPlayerMpModeAvailabilityRsp buildPartial() {
         emu.grasscutter.net.proto.GetPlayerMpModeAvailabilityRspOuterClass.GetPlayerMpModeAvailabilityRsp result = new emu.grasscutter.net.proto.GetPlayerMpModeAvailabilityRspOuterClass.GetPlayerMpModeAvailabilityRsp(this);
         int from_bitField0_ = bitField0_;
-        result.mpRet_ = mpRet_;
-        result.retcode_ = retcode_;
         if (((bitField0_ & 0x00000001) != 0)) {
           paramList_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000001);
         }
         result.paramList_ = paramList_;
+        result.mpRet_ = mpRet_;
+        result.retcode_ = retcode_;
         onBuilt();
         return result;
       }
@@ -542,12 +550,6 @@ public final class GetPlayerMpModeAvailabilityRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.GetPlayerMpModeAvailabilityRspOuterClass.GetPlayerMpModeAvailabilityRsp other) {
         if (other == emu.grasscutter.net.proto.GetPlayerMpModeAvailabilityRspOuterClass.GetPlayerMpModeAvailabilityRsp.getDefaultInstance()) return this;
-        if (other.getMpRet() != 0) {
-          setMpRet(other.getMpRet());
-        }
-        if (other.getRetcode() != 0) {
-          setRetcode(other.getRetcode());
-        }
         if (!other.paramList_.isEmpty()) {
           if (paramList_.isEmpty()) {
             paramList_ = other.paramList_;
@@ -557,6 +559,12 @@ public final class GetPlayerMpModeAvailabilityRspOuterClass {
             paramList_.addAll(other.paramList_);
           }
           onChanged();
+        }
+        if (other.getMpRet() != 0) {
+          setMpRet(other.getMpRet());
+        }
+        if (other.getRetcode() != 0) {
+          setRetcode(other.getRetcode());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -587,68 +595,6 @@ public final class GetPlayerMpModeAvailabilityRspOuterClass {
         return this;
       }
       private int bitField0_;
-
-      private int mpRet_ ;
-      /**
-       * <code>int32 mp_ret = 15;</code>
-       * @return The mpRet.
-       */
-      @java.lang.Override
-      public int getMpRet() {
-        return mpRet_;
-      }
-      /**
-       * <code>int32 mp_ret = 15;</code>
-       * @param value The mpRet to set.
-       * @return This builder for chaining.
-       */
-      public Builder setMpRet(int value) {
-        
-        mpRet_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>int32 mp_ret = 15;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearMpRet() {
-        
-        mpRet_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int retcode_ ;
-      /**
-       * <code>int32 retcode = 2;</code>
-       * @return The retcode.
-       */
-      @java.lang.Override
-      public int getRetcode() {
-        return retcode_;
-      }
-      /**
-       * <code>int32 retcode = 2;</code>
-       * @param value The retcode to set.
-       * @return This builder for chaining.
-       */
-      public Builder setRetcode(int value) {
-        
-        retcode_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>int32 retcode = 2;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearRetcode() {
-        
-        retcode_ = 0;
-        onChanged();
-        return this;
-      }
 
       private com.google.protobuf.Internal.IntList paramList_ = emptyIntList();
       private void ensureParamListIsMutable() {
@@ -728,6 +674,68 @@ public final class GetPlayerMpModeAvailabilityRspOuterClass {
         onChanged();
         return this;
       }
+
+      private int mpRet_ ;
+      /**
+       * <code>int32 mp_ret = 12;</code>
+       * @return The mpRet.
+       */
+      @java.lang.Override
+      public int getMpRet() {
+        return mpRet_;
+      }
+      /**
+       * <code>int32 mp_ret = 12;</code>
+       * @param value The mpRet to set.
+       * @return This builder for chaining.
+       */
+      public Builder setMpRet(int value) {
+        
+        mpRet_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 mp_ret = 12;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearMpRet() {
+        
+        mpRet_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int retcode_ ;
+      /**
+       * <code>int32 retcode = 3;</code>
+       * @return The retcode.
+       */
+      @java.lang.Override
+      public int getRetcode() {
+        return retcode_;
+      }
+      /**
+       * <code>int32 retcode = 3;</code>
+       * @param value The retcode to set.
+       * @return This builder for chaining.
+       */
+      public Builder setRetcode(int value) {
+        
+        retcode_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 retcode = 3;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearRetcode() {
+        
+        retcode_ = 0;
+        onChanged();
+        return this;
+      }
       @java.lang.Override
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
@@ -796,9 +804,9 @@ public final class GetPlayerMpModeAvailabilityRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n$GetPlayerMpModeAvailabilityRsp.proto\"U" +
-      "\n\036GetPlayerMpModeAvailabilityRsp\022\016\n\006mp_r" +
-      "et\030\017 \001(\005\022\017\n\007retcode\030\002 \001(\005\022\022\n\nparam_list\030" +
-      "\010 \003(\rB\033\n\031emu.grasscutter.net.protob\006prot" +
+      "\n\036GetPlayerMpModeAvailabilityRsp\022\022\n\npara" +
+      "m_list\030\010 \003(\r\022\016\n\006mp_ret\030\014 \001(\005\022\017\n\007retcode\030" +
+      "\003 \001(\005B\033\n\031emu.grasscutter.net.protob\006prot" +
       "o3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -810,7 +818,7 @@ public final class GetPlayerMpModeAvailabilityRspOuterClass {
     internal_static_GetPlayerMpModeAvailabilityRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GetPlayerMpModeAvailabilityRsp_descriptor,
-        new java.lang.String[] { "MpRet", "Retcode", "ParamList", });
+        new java.lang.String[] { "ParamList", "MpRet", "Retcode", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

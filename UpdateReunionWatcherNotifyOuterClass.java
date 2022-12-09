@@ -19,31 +19,35 @@ public final class UpdateReunionWatcherNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 mission_id = 3;</code>
-     * @return The missionId.
-     */
-    int getMissionId();
-
-    /**
-     * <code>.ReunionWatcherInfo watcher_info = 10;</code>
+     * <code>.ReunionWatcherInfo watcher_info = 12;</code>
      * @return Whether the watcherInfo field is set.
      */
     boolean hasWatcherInfo();
     /**
-     * <code>.ReunionWatcherInfo watcher_info = 10;</code>
+     * <code>.ReunionWatcherInfo watcher_info = 12;</code>
      * @return The watcherInfo.
      */
     emu.grasscutter.net.proto.ReunionWatcherInfoOuterClass.ReunionWatcherInfo getWatcherInfo();
     /**
-     * <code>.ReunionWatcherInfo watcher_info = 10;</code>
+     * <code>.ReunionWatcherInfo watcher_info = 12;</code>
      */
     emu.grasscutter.net.proto.ReunionWatcherInfoOuterClass.ReunionWatcherInfoOrBuilder getWatcherInfoOrBuilder();
+
+    /**
+     * <code>uint32 mission_id = 14;</code>
+     * @return The missionId.
+     */
+    int getMissionId();
   }
   /**
    * <pre>
-   * CmdId: 5091
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 5058;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code UpdateReunionWatcherNotify}
@@ -90,12 +94,7 @@ public final class UpdateReunionWatcherNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 24: {
-
-              missionId_ = input.readUInt32();
-              break;
-            }
-            case 82: {
+            case 98: {
               emu.grasscutter.net.proto.ReunionWatcherInfoOuterClass.ReunionWatcherInfo.Builder subBuilder = null;
               if (watcherInfo_ != null) {
                 subBuilder = watcherInfo_.toBuilder();
@@ -106,6 +105,11 @@ public final class UpdateReunionWatcherNotifyOuterClass {
                 watcherInfo_ = subBuilder.buildPartial();
               }
 
+              break;
+            }
+            case 112: {
+
+              missionId_ = input.readUInt32();
               break;
             }
             default: {
@@ -140,21 +144,10 @@ public final class UpdateReunionWatcherNotifyOuterClass {
               emu.grasscutter.net.proto.UpdateReunionWatcherNotifyOuterClass.UpdateReunionWatcherNotify.class, emu.grasscutter.net.proto.UpdateReunionWatcherNotifyOuterClass.UpdateReunionWatcherNotify.Builder.class);
     }
 
-    public static final int MISSION_ID_FIELD_NUMBER = 3;
-    private int missionId_;
-    /**
-     * <code>uint32 mission_id = 3;</code>
-     * @return The missionId.
-     */
-    @java.lang.Override
-    public int getMissionId() {
-      return missionId_;
-    }
-
-    public static final int WATCHER_INFO_FIELD_NUMBER = 10;
+    public static final int WATCHER_INFO_FIELD_NUMBER = 12;
     private emu.grasscutter.net.proto.ReunionWatcherInfoOuterClass.ReunionWatcherInfo watcherInfo_;
     /**
-     * <code>.ReunionWatcherInfo watcher_info = 10;</code>
+     * <code>.ReunionWatcherInfo watcher_info = 12;</code>
      * @return Whether the watcherInfo field is set.
      */
     @java.lang.Override
@@ -162,7 +155,7 @@ public final class UpdateReunionWatcherNotifyOuterClass {
       return watcherInfo_ != null;
     }
     /**
-     * <code>.ReunionWatcherInfo watcher_info = 10;</code>
+     * <code>.ReunionWatcherInfo watcher_info = 12;</code>
      * @return The watcherInfo.
      */
     @java.lang.Override
@@ -170,11 +163,22 @@ public final class UpdateReunionWatcherNotifyOuterClass {
       return watcherInfo_ == null ? emu.grasscutter.net.proto.ReunionWatcherInfoOuterClass.ReunionWatcherInfo.getDefaultInstance() : watcherInfo_;
     }
     /**
-     * <code>.ReunionWatcherInfo watcher_info = 10;</code>
+     * <code>.ReunionWatcherInfo watcher_info = 12;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.ReunionWatcherInfoOuterClass.ReunionWatcherInfoOrBuilder getWatcherInfoOrBuilder() {
       return getWatcherInfo();
+    }
+
+    public static final int MISSION_ID_FIELD_NUMBER = 14;
+    private int missionId_;
+    /**
+     * <code>uint32 mission_id = 14;</code>
+     * @return The missionId.
+     */
+    @java.lang.Override
+    public int getMissionId() {
+      return missionId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -191,11 +195,11 @@ public final class UpdateReunionWatcherNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (missionId_ != 0) {
-        output.writeUInt32(3, missionId_);
-      }
       if (watcherInfo_ != null) {
-        output.writeMessage(10, getWatcherInfo());
+        output.writeMessage(12, getWatcherInfo());
+      }
+      if (missionId_ != 0) {
+        output.writeUInt32(14, missionId_);
       }
       unknownFields.writeTo(output);
     }
@@ -206,13 +210,13 @@ public final class UpdateReunionWatcherNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (missionId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, missionId_);
-      }
       if (watcherInfo_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(10, getWatcherInfo());
+          .computeMessageSize(12, getWatcherInfo());
+      }
+      if (missionId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(14, missionId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -229,13 +233,13 @@ public final class UpdateReunionWatcherNotifyOuterClass {
       }
       emu.grasscutter.net.proto.UpdateReunionWatcherNotifyOuterClass.UpdateReunionWatcherNotify other = (emu.grasscutter.net.proto.UpdateReunionWatcherNotifyOuterClass.UpdateReunionWatcherNotify) obj;
 
-      if (getMissionId()
-          != other.getMissionId()) return false;
       if (hasWatcherInfo() != other.hasWatcherInfo()) return false;
       if (hasWatcherInfo()) {
         if (!getWatcherInfo()
             .equals(other.getWatcherInfo())) return false;
       }
+      if (getMissionId()
+          != other.getMissionId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -247,12 +251,12 @@ public final class UpdateReunionWatcherNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + MISSION_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getMissionId();
       if (hasWatcherInfo()) {
         hash = (37 * hash) + WATCHER_INFO_FIELD_NUMBER;
         hash = (53 * hash) + getWatcherInfo().hashCode();
       }
+      hash = (37 * hash) + MISSION_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getMissionId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -350,9 +354,13 @@ public final class UpdateReunionWatcherNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 5091
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 5058;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code UpdateReunionWatcherNotify}
@@ -392,14 +400,14 @@ public final class UpdateReunionWatcherNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        missionId_ = 0;
-
         if (watcherInfoBuilder_ == null) {
           watcherInfo_ = null;
         } else {
           watcherInfo_ = null;
           watcherInfoBuilder_ = null;
         }
+        missionId_ = 0;
+
         return this;
       }
 
@@ -426,12 +434,12 @@ public final class UpdateReunionWatcherNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.UpdateReunionWatcherNotifyOuterClass.UpdateReunionWatcherNotify buildPartial() {
         emu.grasscutter.net.proto.UpdateReunionWatcherNotifyOuterClass.UpdateReunionWatcherNotify result = new emu.grasscutter.net.proto.UpdateReunionWatcherNotifyOuterClass.UpdateReunionWatcherNotify(this);
-        result.missionId_ = missionId_;
         if (watcherInfoBuilder_ == null) {
           result.watcherInfo_ = watcherInfo_;
         } else {
           result.watcherInfo_ = watcherInfoBuilder_.build();
         }
+        result.missionId_ = missionId_;
         onBuilt();
         return result;
       }
@@ -480,11 +488,11 @@ public final class UpdateReunionWatcherNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.UpdateReunionWatcherNotifyOuterClass.UpdateReunionWatcherNotify other) {
         if (other == emu.grasscutter.net.proto.UpdateReunionWatcherNotifyOuterClass.UpdateReunionWatcherNotify.getDefaultInstance()) return this;
-        if (other.getMissionId() != 0) {
-          setMissionId(other.getMissionId());
-        }
         if (other.hasWatcherInfo()) {
           mergeWatcherInfo(other.getWatcherInfo());
+        }
+        if (other.getMissionId() != 0) {
+          setMissionId(other.getMissionId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -515,49 +523,18 @@ public final class UpdateReunionWatcherNotifyOuterClass {
         return this;
       }
 
-      private int missionId_ ;
-      /**
-       * <code>uint32 mission_id = 3;</code>
-       * @return The missionId.
-       */
-      @java.lang.Override
-      public int getMissionId() {
-        return missionId_;
-      }
-      /**
-       * <code>uint32 mission_id = 3;</code>
-       * @param value The missionId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setMissionId(int value) {
-        
-        missionId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 mission_id = 3;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearMissionId() {
-        
-        missionId_ = 0;
-        onChanged();
-        return this;
-      }
-
       private emu.grasscutter.net.proto.ReunionWatcherInfoOuterClass.ReunionWatcherInfo watcherInfo_;
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.ReunionWatcherInfoOuterClass.ReunionWatcherInfo, emu.grasscutter.net.proto.ReunionWatcherInfoOuterClass.ReunionWatcherInfo.Builder, emu.grasscutter.net.proto.ReunionWatcherInfoOuterClass.ReunionWatcherInfoOrBuilder> watcherInfoBuilder_;
       /**
-       * <code>.ReunionWatcherInfo watcher_info = 10;</code>
+       * <code>.ReunionWatcherInfo watcher_info = 12;</code>
        * @return Whether the watcherInfo field is set.
        */
       public boolean hasWatcherInfo() {
         return watcherInfoBuilder_ != null || watcherInfo_ != null;
       }
       /**
-       * <code>.ReunionWatcherInfo watcher_info = 10;</code>
+       * <code>.ReunionWatcherInfo watcher_info = 12;</code>
        * @return The watcherInfo.
        */
       public emu.grasscutter.net.proto.ReunionWatcherInfoOuterClass.ReunionWatcherInfo getWatcherInfo() {
@@ -568,7 +545,7 @@ public final class UpdateReunionWatcherNotifyOuterClass {
         }
       }
       /**
-       * <code>.ReunionWatcherInfo watcher_info = 10;</code>
+       * <code>.ReunionWatcherInfo watcher_info = 12;</code>
        */
       public Builder setWatcherInfo(emu.grasscutter.net.proto.ReunionWatcherInfoOuterClass.ReunionWatcherInfo value) {
         if (watcherInfoBuilder_ == null) {
@@ -584,7 +561,7 @@ public final class UpdateReunionWatcherNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.ReunionWatcherInfo watcher_info = 10;</code>
+       * <code>.ReunionWatcherInfo watcher_info = 12;</code>
        */
       public Builder setWatcherInfo(
           emu.grasscutter.net.proto.ReunionWatcherInfoOuterClass.ReunionWatcherInfo.Builder builderForValue) {
@@ -598,7 +575,7 @@ public final class UpdateReunionWatcherNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.ReunionWatcherInfo watcher_info = 10;</code>
+       * <code>.ReunionWatcherInfo watcher_info = 12;</code>
        */
       public Builder mergeWatcherInfo(emu.grasscutter.net.proto.ReunionWatcherInfoOuterClass.ReunionWatcherInfo value) {
         if (watcherInfoBuilder_ == null) {
@@ -616,7 +593,7 @@ public final class UpdateReunionWatcherNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.ReunionWatcherInfo watcher_info = 10;</code>
+       * <code>.ReunionWatcherInfo watcher_info = 12;</code>
        */
       public Builder clearWatcherInfo() {
         if (watcherInfoBuilder_ == null) {
@@ -630,7 +607,7 @@ public final class UpdateReunionWatcherNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.ReunionWatcherInfo watcher_info = 10;</code>
+       * <code>.ReunionWatcherInfo watcher_info = 12;</code>
        */
       public emu.grasscutter.net.proto.ReunionWatcherInfoOuterClass.ReunionWatcherInfo.Builder getWatcherInfoBuilder() {
         
@@ -638,7 +615,7 @@ public final class UpdateReunionWatcherNotifyOuterClass {
         return getWatcherInfoFieldBuilder().getBuilder();
       }
       /**
-       * <code>.ReunionWatcherInfo watcher_info = 10;</code>
+       * <code>.ReunionWatcherInfo watcher_info = 12;</code>
        */
       public emu.grasscutter.net.proto.ReunionWatcherInfoOuterClass.ReunionWatcherInfoOrBuilder getWatcherInfoOrBuilder() {
         if (watcherInfoBuilder_ != null) {
@@ -649,7 +626,7 @@ public final class UpdateReunionWatcherNotifyOuterClass {
         }
       }
       /**
-       * <code>.ReunionWatcherInfo watcher_info = 10;</code>
+       * <code>.ReunionWatcherInfo watcher_info = 12;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.ReunionWatcherInfoOuterClass.ReunionWatcherInfo, emu.grasscutter.net.proto.ReunionWatcherInfoOuterClass.ReunionWatcherInfo.Builder, emu.grasscutter.net.proto.ReunionWatcherInfoOuterClass.ReunionWatcherInfoOrBuilder> 
@@ -663,6 +640,37 @@ public final class UpdateReunionWatcherNotifyOuterClass {
           watcherInfo_ = null;
         }
         return watcherInfoBuilder_;
+      }
+
+      private int missionId_ ;
+      /**
+       * <code>uint32 mission_id = 14;</code>
+       * @return The missionId.
+       */
+      @java.lang.Override
+      public int getMissionId() {
+        return missionId_;
+      }
+      /**
+       * <code>uint32 mission_id = 14;</code>
+       * @param value The missionId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setMissionId(int value) {
+        
+        missionId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 mission_id = 14;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearMissionId() {
+        
+        missionId_ = 0;
+        onChanged();
+        return this;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -733,8 +741,8 @@ public final class UpdateReunionWatcherNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n UpdateReunionWatcherNotify.proto\032\030Reun" +
       "ionWatcherInfo.proto\"[\n\032UpdateReunionWat" +
-      "cherNotify\022\022\n\nmission_id\030\003 \001(\r\022)\n\014watche" +
-      "r_info\030\n \001(\0132\023.ReunionWatcherInfoB\033\n\031emu" +
+      "cherNotify\022)\n\014watcher_info\030\014 \001(\0132\023.Reuni" +
+      "onWatcherInfo\022\022\n\nmission_id\030\016 \001(\rB\033\n\031emu" +
       ".grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -747,7 +755,7 @@ public final class UpdateReunionWatcherNotifyOuterClass {
     internal_static_UpdateReunionWatcherNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_UpdateReunionWatcherNotify_descriptor,
-        new java.lang.String[] { "MissionId", "WatcherInfo", });
+        new java.lang.String[] { "WatcherInfo", "MissionId", });
     emu.grasscutter.net.proto.ReunionWatcherInfoOuterClass.getDescriptor();
   }
 

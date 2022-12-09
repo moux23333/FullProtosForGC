@@ -19,17 +19,21 @@ public final class StopReminderNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 reminder_id = 15;</code>
+     * <code>uint32 reminder_id = 3;</code>
      * @return The reminderId.
      */
     int getReminderId();
   }
   /**
    * <pre>
-   * CmdId: 3004
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 3119;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code StopReminderNotify}
@@ -76,7 +80,7 @@ public final class StopReminderNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 120: {
+            case 24: {
 
               reminderId_ = input.readUInt32();
               break;
@@ -113,10 +117,10 @@ public final class StopReminderNotifyOuterClass {
               emu.grasscutter.net.proto.StopReminderNotifyOuterClass.StopReminderNotify.class, emu.grasscutter.net.proto.StopReminderNotifyOuterClass.StopReminderNotify.Builder.class);
     }
 
-    public static final int REMINDER_ID_FIELD_NUMBER = 15;
+    public static final int REMINDER_ID_FIELD_NUMBER = 3;
     private int reminderId_;
     /**
-     * <code>uint32 reminder_id = 15;</code>
+     * <code>uint32 reminder_id = 3;</code>
      * @return The reminderId.
      */
     @java.lang.Override
@@ -139,7 +143,7 @@ public final class StopReminderNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (reminderId_ != 0) {
-        output.writeUInt32(15, reminderId_);
+        output.writeUInt32(3, reminderId_);
       }
       unknownFields.writeTo(output);
     }
@@ -152,7 +156,7 @@ public final class StopReminderNotifyOuterClass {
       size = 0;
       if (reminderId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, reminderId_);
+          .computeUInt32Size(3, reminderId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -281,10 +285,14 @@ public final class StopReminderNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 3004
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 3119;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code StopReminderNotify}
@@ -435,7 +443,7 @@ public final class StopReminderNotifyOuterClass {
 
       private int reminderId_ ;
       /**
-       * <code>uint32 reminder_id = 15;</code>
+       * <code>uint32 reminder_id = 3;</code>
        * @return The reminderId.
        */
       @java.lang.Override
@@ -443,7 +451,7 @@ public final class StopReminderNotifyOuterClass {
         return reminderId_;
       }
       /**
-       * <code>uint32 reminder_id = 15;</code>
+       * <code>uint32 reminder_id = 3;</code>
        * @param value The reminderId to set.
        * @return This builder for chaining.
        */
@@ -454,7 +462,7 @@ public final class StopReminderNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 reminder_id = 15;</code>
+       * <code>uint32 reminder_id = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearReminderId() {
@@ -531,7 +539,7 @@ public final class StopReminderNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\030StopReminderNotify.proto\")\n\022StopRemind" +
-      "erNotify\022\023\n\013reminder_id\030\017 \001(\rB\033\n\031emu.gra" +
+      "erNotify\022\023\n\013reminder_id\030\003 \001(\rB\033\n\031emu.gra" +
       "sscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

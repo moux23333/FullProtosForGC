@@ -19,23 +19,27 @@ public final class StartFishingReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 rod_entity_id = 5;</code>
-     * @return The rodEntityId.
-     */
-    int getRodEntityId();
-
-    /**
-     * <code>uint32 fish_pool_id = 15;</code>
+     * <code>uint32 fish_pool_id = 2;</code>
      * @return The fishPoolId.
      */
     int getFishPoolId();
+
+    /**
+     * <code>uint32 rod_entity_id = 6;</code>
+     * @return The rodEntityId.
+     */
+    int getRodEntityId();
   }
   /**
    * <pre>
-   * CmdId: 5825
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 5822;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code StartFishingReq}
@@ -82,14 +86,14 @@ public final class StartFishingReqOuterClass {
             case 0:
               done = true;
               break;
-            case 40: {
-
-              rodEntityId_ = input.readUInt32();
-              break;
-            }
-            case 120: {
+            case 16: {
 
               fishPoolId_ = input.readUInt32();
+              break;
+            }
+            case 48: {
+
+              rodEntityId_ = input.readUInt32();
               break;
             }
             default: {
@@ -124,26 +128,26 @@ public final class StartFishingReqOuterClass {
               emu.grasscutter.net.proto.StartFishingReqOuterClass.StartFishingReq.class, emu.grasscutter.net.proto.StartFishingReqOuterClass.StartFishingReq.Builder.class);
     }
 
-    public static final int ROD_ENTITY_ID_FIELD_NUMBER = 5;
-    private int rodEntityId_;
-    /**
-     * <code>uint32 rod_entity_id = 5;</code>
-     * @return The rodEntityId.
-     */
-    @java.lang.Override
-    public int getRodEntityId() {
-      return rodEntityId_;
-    }
-
-    public static final int FISH_POOL_ID_FIELD_NUMBER = 15;
+    public static final int FISH_POOL_ID_FIELD_NUMBER = 2;
     private int fishPoolId_;
     /**
-     * <code>uint32 fish_pool_id = 15;</code>
+     * <code>uint32 fish_pool_id = 2;</code>
      * @return The fishPoolId.
      */
     @java.lang.Override
     public int getFishPoolId() {
       return fishPoolId_;
+    }
+
+    public static final int ROD_ENTITY_ID_FIELD_NUMBER = 6;
+    private int rodEntityId_;
+    /**
+     * <code>uint32 rod_entity_id = 6;</code>
+     * @return The rodEntityId.
+     */
+    @java.lang.Override
+    public int getRodEntityId() {
+      return rodEntityId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -160,11 +164,11 @@ public final class StartFishingReqOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (rodEntityId_ != 0) {
-        output.writeUInt32(5, rodEntityId_);
-      }
       if (fishPoolId_ != 0) {
-        output.writeUInt32(15, fishPoolId_);
+        output.writeUInt32(2, fishPoolId_);
+      }
+      if (rodEntityId_ != 0) {
+        output.writeUInt32(6, rodEntityId_);
       }
       unknownFields.writeTo(output);
     }
@@ -175,13 +179,13 @@ public final class StartFishingReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (rodEntityId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, rodEntityId_);
-      }
       if (fishPoolId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, fishPoolId_);
+          .computeUInt32Size(2, fishPoolId_);
+      }
+      if (rodEntityId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(6, rodEntityId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -198,10 +202,10 @@ public final class StartFishingReqOuterClass {
       }
       emu.grasscutter.net.proto.StartFishingReqOuterClass.StartFishingReq other = (emu.grasscutter.net.proto.StartFishingReqOuterClass.StartFishingReq) obj;
 
-      if (getRodEntityId()
-          != other.getRodEntityId()) return false;
       if (getFishPoolId()
           != other.getFishPoolId()) return false;
+      if (getRodEntityId()
+          != other.getRodEntityId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -213,10 +217,10 @@ public final class StartFishingReqOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + ROD_ENTITY_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getRodEntityId();
       hash = (37 * hash) + FISH_POOL_ID_FIELD_NUMBER;
       hash = (53 * hash) + getFishPoolId();
+      hash = (37 * hash) + ROD_ENTITY_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getRodEntityId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -314,10 +318,14 @@ public final class StartFishingReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 5825
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 5822;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code StartFishingReq}
@@ -357,9 +365,9 @@ public final class StartFishingReqOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        rodEntityId_ = 0;
-
         fishPoolId_ = 0;
+
+        rodEntityId_ = 0;
 
         return this;
       }
@@ -387,8 +395,8 @@ public final class StartFishingReqOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.StartFishingReqOuterClass.StartFishingReq buildPartial() {
         emu.grasscutter.net.proto.StartFishingReqOuterClass.StartFishingReq result = new emu.grasscutter.net.proto.StartFishingReqOuterClass.StartFishingReq(this);
-        result.rodEntityId_ = rodEntityId_;
         result.fishPoolId_ = fishPoolId_;
+        result.rodEntityId_ = rodEntityId_;
         onBuilt();
         return result;
       }
@@ -437,11 +445,11 @@ public final class StartFishingReqOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.StartFishingReqOuterClass.StartFishingReq other) {
         if (other == emu.grasscutter.net.proto.StartFishingReqOuterClass.StartFishingReq.getDefaultInstance()) return this;
-        if (other.getRodEntityId() != 0) {
-          setRodEntityId(other.getRodEntityId());
-        }
         if (other.getFishPoolId() != 0) {
           setFishPoolId(other.getFishPoolId());
+        }
+        if (other.getRodEntityId() != 0) {
+          setRodEntityId(other.getRodEntityId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -472,40 +480,9 @@ public final class StartFishingReqOuterClass {
         return this;
       }
 
-      private int rodEntityId_ ;
-      /**
-       * <code>uint32 rod_entity_id = 5;</code>
-       * @return The rodEntityId.
-       */
-      @java.lang.Override
-      public int getRodEntityId() {
-        return rodEntityId_;
-      }
-      /**
-       * <code>uint32 rod_entity_id = 5;</code>
-       * @param value The rodEntityId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setRodEntityId(int value) {
-        
-        rodEntityId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 rod_entity_id = 5;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearRodEntityId() {
-        
-        rodEntityId_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int fishPoolId_ ;
       /**
-       * <code>uint32 fish_pool_id = 15;</code>
+       * <code>uint32 fish_pool_id = 2;</code>
        * @return The fishPoolId.
        */
       @java.lang.Override
@@ -513,7 +490,7 @@ public final class StartFishingReqOuterClass {
         return fishPoolId_;
       }
       /**
-       * <code>uint32 fish_pool_id = 15;</code>
+       * <code>uint32 fish_pool_id = 2;</code>
        * @param value The fishPoolId to set.
        * @return This builder for chaining.
        */
@@ -524,12 +501,43 @@ public final class StartFishingReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 fish_pool_id = 15;</code>
+       * <code>uint32 fish_pool_id = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearFishPoolId() {
         
         fishPoolId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int rodEntityId_ ;
+      /**
+       * <code>uint32 rod_entity_id = 6;</code>
+       * @return The rodEntityId.
+       */
+      @java.lang.Override
+      public int getRodEntityId() {
+        return rodEntityId_;
+      }
+      /**
+       * <code>uint32 rod_entity_id = 6;</code>
+       * @param value The rodEntityId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setRodEntityId(int value) {
+        
+        rodEntityId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 rod_entity_id = 6;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearRodEntityId() {
+        
+        rodEntityId_ = 0;
         onChanged();
         return this;
       }
@@ -601,8 +609,8 @@ public final class StartFishingReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\025StartFishingReq.proto\">\n\017StartFishingR" +
-      "eq\022\025\n\rrod_entity_id\030\005 \001(\r\022\024\n\014fish_pool_i" +
-      "d\030\017 \001(\rB\033\n\031emu.grasscutter.net.protob\006pr" +
+      "eq\022\024\n\014fish_pool_id\030\002 \001(\r\022\025\n\rrod_entity_i" +
+      "d\030\006 \001(\rB\033\n\031emu.grasscutter.net.protob\006pr" +
       "oto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -614,7 +622,7 @@ public final class StartFishingReqOuterClass {
     internal_static_StartFishingReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_StartFishingReq_descriptor,
-        new java.lang.String[] { "RodEntityId", "FishPoolId", });
+        new java.lang.String[] { "FishPoolId", "RodEntityId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

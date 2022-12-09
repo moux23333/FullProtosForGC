@@ -19,16 +19,20 @@ public final class EchoShellUpdateNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 shell_id = 1;</code>
+     * <code>uint32 shell_id = 10;</code>
      * @return The shellId.
      */
     int getShellId();
   }
   /**
    * <pre>
-   * CmdId: 8150
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 8891;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code EchoShellUpdateNotify}
@@ -75,7 +79,7 @@ public final class EchoShellUpdateNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
+            case 80: {
 
               shellId_ = input.readUInt32();
               break;
@@ -112,10 +116,10 @@ public final class EchoShellUpdateNotifyOuterClass {
               emu.grasscutter.net.proto.EchoShellUpdateNotifyOuterClass.EchoShellUpdateNotify.class, emu.grasscutter.net.proto.EchoShellUpdateNotifyOuterClass.EchoShellUpdateNotify.Builder.class);
     }
 
-    public static final int SHELL_ID_FIELD_NUMBER = 1;
+    public static final int SHELL_ID_FIELD_NUMBER = 10;
     private int shellId_;
     /**
-     * <code>uint32 shell_id = 1;</code>
+     * <code>uint32 shell_id = 10;</code>
      * @return The shellId.
      */
     @java.lang.Override
@@ -138,7 +142,7 @@ public final class EchoShellUpdateNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (shellId_ != 0) {
-        output.writeUInt32(1, shellId_);
+        output.writeUInt32(10, shellId_);
       }
       unknownFields.writeTo(output);
     }
@@ -151,7 +155,7 @@ public final class EchoShellUpdateNotifyOuterClass {
       size = 0;
       if (shellId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, shellId_);
+          .computeUInt32Size(10, shellId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -280,9 +284,13 @@ public final class EchoShellUpdateNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 8150
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 8891;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code EchoShellUpdateNotify}
@@ -433,7 +441,7 @@ public final class EchoShellUpdateNotifyOuterClass {
 
       private int shellId_ ;
       /**
-       * <code>uint32 shell_id = 1;</code>
+       * <code>uint32 shell_id = 10;</code>
        * @return The shellId.
        */
       @java.lang.Override
@@ -441,7 +449,7 @@ public final class EchoShellUpdateNotifyOuterClass {
         return shellId_;
       }
       /**
-       * <code>uint32 shell_id = 1;</code>
+       * <code>uint32 shell_id = 10;</code>
        * @param value The shellId to set.
        * @return This builder for chaining.
        */
@@ -452,7 +460,7 @@ public final class EchoShellUpdateNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 shell_id = 1;</code>
+       * <code>uint32 shell_id = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearShellId() {
@@ -529,7 +537,7 @@ public final class EchoShellUpdateNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\033EchoShellUpdateNotify.proto\")\n\025EchoShe" +
-      "llUpdateNotify\022\020\n\010shell_id\030\001 \001(\rB\033\n\031emu." +
+      "llUpdateNotify\022\020\n\010shell_id\030\n \001(\rB\033\n\031emu." +
       "grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

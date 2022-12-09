@@ -19,23 +19,27 @@ public final class AdjustWorldLevelReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 expect_world_level = 8;</code>
-     * @return The expectWorldLevel.
+     * <code>uint32 Unk3300_DNLKIMGLBLP = 14;</code>
+     * @return The unk3300DNLKIMGLBLP.
      */
-    int getExpectWorldLevel();
+    int getUnk3300DNLKIMGLBLP();
 
     /**
-     * <code>uint32 cur_world_level = 9;</code>
-     * @return The curWorldLevel.
+     * <code>uint32 Unk3300_DJBKBPDCBFH = 3;</code>
+     * @return The unk3300DJBKBPDCBFH.
      */
-    int getCurWorldLevel();
+    int getUnk3300DJBKBPDCBFH();
   }
   /**
    * <pre>
-   * CmdId: 164
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 112;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code AdjustWorldLevelReq}
@@ -82,14 +86,14 @@ public final class AdjustWorldLevelReqOuterClass {
             case 0:
               done = true;
               break;
-            case 64: {
+            case 24: {
 
-              expectWorldLevel_ = input.readUInt32();
+              unk3300DJBKBPDCBFH_ = input.readUInt32();
               break;
             }
-            case 72: {
+            case 112: {
 
-              curWorldLevel_ = input.readUInt32();
+              unk3300DNLKIMGLBLP_ = input.readUInt32();
               break;
             }
             default: {
@@ -124,26 +128,26 @@ public final class AdjustWorldLevelReqOuterClass {
               emu.grasscutter.net.proto.AdjustWorldLevelReqOuterClass.AdjustWorldLevelReq.class, emu.grasscutter.net.proto.AdjustWorldLevelReqOuterClass.AdjustWorldLevelReq.Builder.class);
     }
 
-    public static final int EXPECT_WORLD_LEVEL_FIELD_NUMBER = 8;
-    private int expectWorldLevel_;
+    public static final int UNK3300_DNLKIMGLBLP_FIELD_NUMBER = 14;
+    private int unk3300DNLKIMGLBLP_;
     /**
-     * <code>uint32 expect_world_level = 8;</code>
-     * @return The expectWorldLevel.
+     * <code>uint32 Unk3300_DNLKIMGLBLP = 14;</code>
+     * @return The unk3300DNLKIMGLBLP.
      */
     @java.lang.Override
-    public int getExpectWorldLevel() {
-      return expectWorldLevel_;
+    public int getUnk3300DNLKIMGLBLP() {
+      return unk3300DNLKIMGLBLP_;
     }
 
-    public static final int CUR_WORLD_LEVEL_FIELD_NUMBER = 9;
-    private int curWorldLevel_;
+    public static final int UNK3300_DJBKBPDCBFH_FIELD_NUMBER = 3;
+    private int unk3300DJBKBPDCBFH_;
     /**
-     * <code>uint32 cur_world_level = 9;</code>
-     * @return The curWorldLevel.
+     * <code>uint32 Unk3300_DJBKBPDCBFH = 3;</code>
+     * @return The unk3300DJBKBPDCBFH.
      */
     @java.lang.Override
-    public int getCurWorldLevel() {
-      return curWorldLevel_;
+    public int getUnk3300DJBKBPDCBFH() {
+      return unk3300DJBKBPDCBFH_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -160,11 +164,11 @@ public final class AdjustWorldLevelReqOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (expectWorldLevel_ != 0) {
-        output.writeUInt32(8, expectWorldLevel_);
+      if (unk3300DJBKBPDCBFH_ != 0) {
+        output.writeUInt32(3, unk3300DJBKBPDCBFH_);
       }
-      if (curWorldLevel_ != 0) {
-        output.writeUInt32(9, curWorldLevel_);
+      if (unk3300DNLKIMGLBLP_ != 0) {
+        output.writeUInt32(14, unk3300DNLKIMGLBLP_);
       }
       unknownFields.writeTo(output);
     }
@@ -175,13 +179,13 @@ public final class AdjustWorldLevelReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (expectWorldLevel_ != 0) {
+      if (unk3300DJBKBPDCBFH_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, expectWorldLevel_);
+          .computeUInt32Size(3, unk3300DJBKBPDCBFH_);
       }
-      if (curWorldLevel_ != 0) {
+      if (unk3300DNLKIMGLBLP_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, curWorldLevel_);
+          .computeUInt32Size(14, unk3300DNLKIMGLBLP_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -198,10 +202,10 @@ public final class AdjustWorldLevelReqOuterClass {
       }
       emu.grasscutter.net.proto.AdjustWorldLevelReqOuterClass.AdjustWorldLevelReq other = (emu.grasscutter.net.proto.AdjustWorldLevelReqOuterClass.AdjustWorldLevelReq) obj;
 
-      if (getExpectWorldLevel()
-          != other.getExpectWorldLevel()) return false;
-      if (getCurWorldLevel()
-          != other.getCurWorldLevel()) return false;
+      if (getUnk3300DNLKIMGLBLP()
+          != other.getUnk3300DNLKIMGLBLP()) return false;
+      if (getUnk3300DJBKBPDCBFH()
+          != other.getUnk3300DJBKBPDCBFH()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -213,10 +217,10 @@ public final class AdjustWorldLevelReqOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + EXPECT_WORLD_LEVEL_FIELD_NUMBER;
-      hash = (53 * hash) + getExpectWorldLevel();
-      hash = (37 * hash) + CUR_WORLD_LEVEL_FIELD_NUMBER;
-      hash = (53 * hash) + getCurWorldLevel();
+      hash = (37 * hash) + UNK3300_DNLKIMGLBLP_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300DNLKIMGLBLP();
+      hash = (37 * hash) + UNK3300_DJBKBPDCBFH_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300DJBKBPDCBFH();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -314,10 +318,14 @@ public final class AdjustWorldLevelReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 164
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 112;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code AdjustWorldLevelReq}
@@ -357,9 +365,9 @@ public final class AdjustWorldLevelReqOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        expectWorldLevel_ = 0;
+        unk3300DNLKIMGLBLP_ = 0;
 
-        curWorldLevel_ = 0;
+        unk3300DJBKBPDCBFH_ = 0;
 
         return this;
       }
@@ -387,8 +395,8 @@ public final class AdjustWorldLevelReqOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.AdjustWorldLevelReqOuterClass.AdjustWorldLevelReq buildPartial() {
         emu.grasscutter.net.proto.AdjustWorldLevelReqOuterClass.AdjustWorldLevelReq result = new emu.grasscutter.net.proto.AdjustWorldLevelReqOuterClass.AdjustWorldLevelReq(this);
-        result.expectWorldLevel_ = expectWorldLevel_;
-        result.curWorldLevel_ = curWorldLevel_;
+        result.unk3300DNLKIMGLBLP_ = unk3300DNLKIMGLBLP_;
+        result.unk3300DJBKBPDCBFH_ = unk3300DJBKBPDCBFH_;
         onBuilt();
         return result;
       }
@@ -437,11 +445,11 @@ public final class AdjustWorldLevelReqOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.AdjustWorldLevelReqOuterClass.AdjustWorldLevelReq other) {
         if (other == emu.grasscutter.net.proto.AdjustWorldLevelReqOuterClass.AdjustWorldLevelReq.getDefaultInstance()) return this;
-        if (other.getExpectWorldLevel() != 0) {
-          setExpectWorldLevel(other.getExpectWorldLevel());
+        if (other.getUnk3300DNLKIMGLBLP() != 0) {
+          setUnk3300DNLKIMGLBLP(other.getUnk3300DNLKIMGLBLP());
         }
-        if (other.getCurWorldLevel() != 0) {
-          setCurWorldLevel(other.getCurWorldLevel());
+        if (other.getUnk3300DJBKBPDCBFH() != 0) {
+          setUnk3300DJBKBPDCBFH(other.getUnk3300DJBKBPDCBFH());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -472,64 +480,64 @@ public final class AdjustWorldLevelReqOuterClass {
         return this;
       }
 
-      private int expectWorldLevel_ ;
+      private int unk3300DNLKIMGLBLP_ ;
       /**
-       * <code>uint32 expect_world_level = 8;</code>
-       * @return The expectWorldLevel.
+       * <code>uint32 Unk3300_DNLKIMGLBLP = 14;</code>
+       * @return The unk3300DNLKIMGLBLP.
        */
       @java.lang.Override
-      public int getExpectWorldLevel() {
-        return expectWorldLevel_;
+      public int getUnk3300DNLKIMGLBLP() {
+        return unk3300DNLKIMGLBLP_;
       }
       /**
-       * <code>uint32 expect_world_level = 8;</code>
-       * @param value The expectWorldLevel to set.
+       * <code>uint32 Unk3300_DNLKIMGLBLP = 14;</code>
+       * @param value The unk3300DNLKIMGLBLP to set.
        * @return This builder for chaining.
        */
-      public Builder setExpectWorldLevel(int value) {
+      public Builder setUnk3300DNLKIMGLBLP(int value) {
         
-        expectWorldLevel_ = value;
+        unk3300DNLKIMGLBLP_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 expect_world_level = 8;</code>
+       * <code>uint32 Unk3300_DNLKIMGLBLP = 14;</code>
        * @return This builder for chaining.
        */
-      public Builder clearExpectWorldLevel() {
+      public Builder clearUnk3300DNLKIMGLBLP() {
         
-        expectWorldLevel_ = 0;
+        unk3300DNLKIMGLBLP_ = 0;
         onChanged();
         return this;
       }
 
-      private int curWorldLevel_ ;
+      private int unk3300DJBKBPDCBFH_ ;
       /**
-       * <code>uint32 cur_world_level = 9;</code>
-       * @return The curWorldLevel.
+       * <code>uint32 Unk3300_DJBKBPDCBFH = 3;</code>
+       * @return The unk3300DJBKBPDCBFH.
        */
       @java.lang.Override
-      public int getCurWorldLevel() {
-        return curWorldLevel_;
+      public int getUnk3300DJBKBPDCBFH() {
+        return unk3300DJBKBPDCBFH_;
       }
       /**
-       * <code>uint32 cur_world_level = 9;</code>
-       * @param value The curWorldLevel to set.
+       * <code>uint32 Unk3300_DJBKBPDCBFH = 3;</code>
+       * @param value The unk3300DJBKBPDCBFH to set.
        * @return This builder for chaining.
        */
-      public Builder setCurWorldLevel(int value) {
+      public Builder setUnk3300DJBKBPDCBFH(int value) {
         
-        curWorldLevel_ = value;
+        unk3300DJBKBPDCBFH_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 cur_world_level = 9;</code>
+       * <code>uint32 Unk3300_DJBKBPDCBFH = 3;</code>
        * @return This builder for chaining.
        */
-      public Builder clearCurWorldLevel() {
+      public Builder clearUnk3300DJBKBPDCBFH() {
         
-        curWorldLevel_ = 0;
+        unk3300DJBKBPDCBFH_ = 0;
         onChanged();
         return this;
       }
@@ -600,10 +608,10 @@ public final class AdjustWorldLevelReqOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\031AdjustWorldLevelReq.proto\"J\n\023AdjustWor" +
-      "ldLevelReq\022\032\n\022expect_world_level\030\010 \001(\r\022\027" +
-      "\n\017cur_world_level\030\t \001(\rB\033\n\031emu.grasscutt" +
-      "er.net.protob\006proto3"
+      "\n\031AdjustWorldLevelReq.proto\"O\n\023AdjustWor" +
+      "ldLevelReq\022\033\n\023Unk3300_DNLKIMGLBLP\030\016 \001(\r\022" +
+      "\033\n\023Unk3300_DJBKBPDCBFH\030\003 \001(\rB\033\n\031emu.gras" +
+      "scutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -614,7 +622,7 @@ public final class AdjustWorldLevelReqOuterClass {
     internal_static_AdjustWorldLevelReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_AdjustWorldLevelReq_descriptor,
-        new java.lang.String[] { "ExpectWorldLevel", "CurWorldLevel", });
+        new java.lang.String[] { "Unk3300DNLKIMGLBLP", "Unk3300DJBKBPDCBFH", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

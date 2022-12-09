@@ -19,22 +19,26 @@ public final class CoopProgressUpdateNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 cur_coop_point = 11;</code>
+     * <code>uint32 cur_coop_point = 4;</code>
      * @return The curCoopPoint.
      */
     int getCurCoopPoint();
 
     /**
-     * <code>bool is_have_progress = 12;</code>
+     * <code>bool is_have_progress = 8;</code>
      * @return The isHaveProgress.
      */
     boolean getIsHaveProgress();
   }
   /**
    * <pre>
-   * CmdId: 1998
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 1987;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code CoopProgressUpdateNotify}
@@ -81,12 +85,12 @@ public final class CoopProgressUpdateNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 88: {
+            case 32: {
 
               curCoopPoint_ = input.readUInt32();
               break;
             }
-            case 96: {
+            case 64: {
 
               isHaveProgress_ = input.readBool();
               break;
@@ -123,10 +127,10 @@ public final class CoopProgressUpdateNotifyOuterClass {
               emu.grasscutter.net.proto.CoopProgressUpdateNotifyOuterClass.CoopProgressUpdateNotify.class, emu.grasscutter.net.proto.CoopProgressUpdateNotifyOuterClass.CoopProgressUpdateNotify.Builder.class);
     }
 
-    public static final int CUR_COOP_POINT_FIELD_NUMBER = 11;
+    public static final int CUR_COOP_POINT_FIELD_NUMBER = 4;
     private int curCoopPoint_;
     /**
-     * <code>uint32 cur_coop_point = 11;</code>
+     * <code>uint32 cur_coop_point = 4;</code>
      * @return The curCoopPoint.
      */
     @java.lang.Override
@@ -134,10 +138,10 @@ public final class CoopProgressUpdateNotifyOuterClass {
       return curCoopPoint_;
     }
 
-    public static final int IS_HAVE_PROGRESS_FIELD_NUMBER = 12;
+    public static final int IS_HAVE_PROGRESS_FIELD_NUMBER = 8;
     private boolean isHaveProgress_;
     /**
-     * <code>bool is_have_progress = 12;</code>
+     * <code>bool is_have_progress = 8;</code>
      * @return The isHaveProgress.
      */
     @java.lang.Override
@@ -160,10 +164,10 @@ public final class CoopProgressUpdateNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (curCoopPoint_ != 0) {
-        output.writeUInt32(11, curCoopPoint_);
+        output.writeUInt32(4, curCoopPoint_);
       }
       if (isHaveProgress_ != false) {
-        output.writeBool(12, isHaveProgress_);
+        output.writeBool(8, isHaveProgress_);
       }
       unknownFields.writeTo(output);
     }
@@ -176,11 +180,11 @@ public final class CoopProgressUpdateNotifyOuterClass {
       size = 0;
       if (curCoopPoint_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, curCoopPoint_);
+          .computeUInt32Size(4, curCoopPoint_);
       }
       if (isHaveProgress_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(12, isHaveProgress_);
+          .computeBoolSize(8, isHaveProgress_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -314,9 +318,13 @@ public final class CoopProgressUpdateNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 1998
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 1987;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code CoopProgressUpdateNotify}
@@ -473,7 +481,7 @@ public final class CoopProgressUpdateNotifyOuterClass {
 
       private int curCoopPoint_ ;
       /**
-       * <code>uint32 cur_coop_point = 11;</code>
+       * <code>uint32 cur_coop_point = 4;</code>
        * @return The curCoopPoint.
        */
       @java.lang.Override
@@ -481,7 +489,7 @@ public final class CoopProgressUpdateNotifyOuterClass {
         return curCoopPoint_;
       }
       /**
-       * <code>uint32 cur_coop_point = 11;</code>
+       * <code>uint32 cur_coop_point = 4;</code>
        * @param value The curCoopPoint to set.
        * @return This builder for chaining.
        */
@@ -492,7 +500,7 @@ public final class CoopProgressUpdateNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 cur_coop_point = 11;</code>
+       * <code>uint32 cur_coop_point = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearCurCoopPoint() {
@@ -504,7 +512,7 @@ public final class CoopProgressUpdateNotifyOuterClass {
 
       private boolean isHaveProgress_ ;
       /**
-       * <code>bool is_have_progress = 12;</code>
+       * <code>bool is_have_progress = 8;</code>
        * @return The isHaveProgress.
        */
       @java.lang.Override
@@ -512,7 +520,7 @@ public final class CoopProgressUpdateNotifyOuterClass {
         return isHaveProgress_;
       }
       /**
-       * <code>bool is_have_progress = 12;</code>
+       * <code>bool is_have_progress = 8;</code>
        * @param value The isHaveProgress to set.
        * @return This builder for chaining.
        */
@@ -523,7 +531,7 @@ public final class CoopProgressUpdateNotifyOuterClass {
         return this;
       }
       /**
-       * <code>bool is_have_progress = 12;</code>
+       * <code>bool is_have_progress = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsHaveProgress() {
@@ -600,8 +608,8 @@ public final class CoopProgressUpdateNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\036CoopProgressUpdateNotify.proto\"L\n\030Coop" +
-      "ProgressUpdateNotify\022\026\n\016cur_coop_point\030\013" +
-      " \001(\r\022\030\n\020is_have_progress\030\014 \001(\010B\033\n\031emu.gr" +
+      "ProgressUpdateNotify\022\026\n\016cur_coop_point\030\004" +
+      " \001(\r\022\030\n\020is_have_progress\030\010 \001(\010B\033\n\031emu.gr" +
       "asscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

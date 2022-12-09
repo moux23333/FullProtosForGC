@@ -20,9 +20,13 @@ public final class KeepAliveNotifyOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 72
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 79;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code KeepAliveNotify}
@@ -247,9 +251,13 @@ public final class KeepAliveNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 72
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 79;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code KeepAliveNotify}

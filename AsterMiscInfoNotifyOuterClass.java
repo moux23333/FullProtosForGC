@@ -19,22 +19,26 @@ public final class AsterMiscInfoNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 aster_token = 2;</code>
-     * @return The asterToken.
+     * <code>uint32 Unk3300_DCHBFEJNBHP = 4;</code>
+     * @return The unk3300DCHBFEJNBHP.
      */
-    int getAsterToken();
+    int getUnk3300DCHBFEJNBHP();
 
     /**
-     * <code>uint32 aster_credit = 15;</code>
-     * @return The asterCredit.
+     * <code>uint32 Unk3300_KFDGFFPJGJC = 5;</code>
+     * @return The unk3300KFDGFFPJGJC.
      */
-    int getAsterCredit();
+    int getUnk3300KFDGFFPJGJC();
   }
   /**
    * <pre>
-   * CmdId: 2036
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 2140;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code AsterMiscInfoNotify}
@@ -81,14 +85,14 @@ public final class AsterMiscInfoNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
+            case 32: {
 
-              asterToken_ = input.readUInt32();
+              unk3300DCHBFEJNBHP_ = input.readUInt32();
               break;
             }
-            case 120: {
+            case 40: {
 
-              asterCredit_ = input.readUInt32();
+              unk3300KFDGFFPJGJC_ = input.readUInt32();
               break;
             }
             default: {
@@ -123,26 +127,26 @@ public final class AsterMiscInfoNotifyOuterClass {
               emu.grasscutter.net.proto.AsterMiscInfoNotifyOuterClass.AsterMiscInfoNotify.class, emu.grasscutter.net.proto.AsterMiscInfoNotifyOuterClass.AsterMiscInfoNotify.Builder.class);
     }
 
-    public static final int ASTER_TOKEN_FIELD_NUMBER = 2;
-    private int asterToken_;
+    public static final int UNK3300_DCHBFEJNBHP_FIELD_NUMBER = 4;
+    private int unk3300DCHBFEJNBHP_;
     /**
-     * <code>uint32 aster_token = 2;</code>
-     * @return The asterToken.
+     * <code>uint32 Unk3300_DCHBFEJNBHP = 4;</code>
+     * @return The unk3300DCHBFEJNBHP.
      */
     @java.lang.Override
-    public int getAsterToken() {
-      return asterToken_;
+    public int getUnk3300DCHBFEJNBHP() {
+      return unk3300DCHBFEJNBHP_;
     }
 
-    public static final int ASTER_CREDIT_FIELD_NUMBER = 15;
-    private int asterCredit_;
+    public static final int UNK3300_KFDGFFPJGJC_FIELD_NUMBER = 5;
+    private int unk3300KFDGFFPJGJC_;
     /**
-     * <code>uint32 aster_credit = 15;</code>
-     * @return The asterCredit.
+     * <code>uint32 Unk3300_KFDGFFPJGJC = 5;</code>
+     * @return The unk3300KFDGFFPJGJC.
      */
     @java.lang.Override
-    public int getAsterCredit() {
-      return asterCredit_;
+    public int getUnk3300KFDGFFPJGJC() {
+      return unk3300KFDGFFPJGJC_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -159,11 +163,11 @@ public final class AsterMiscInfoNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (asterToken_ != 0) {
-        output.writeUInt32(2, asterToken_);
+      if (unk3300DCHBFEJNBHP_ != 0) {
+        output.writeUInt32(4, unk3300DCHBFEJNBHP_);
       }
-      if (asterCredit_ != 0) {
-        output.writeUInt32(15, asterCredit_);
+      if (unk3300KFDGFFPJGJC_ != 0) {
+        output.writeUInt32(5, unk3300KFDGFFPJGJC_);
       }
       unknownFields.writeTo(output);
     }
@@ -174,13 +178,13 @@ public final class AsterMiscInfoNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (asterToken_ != 0) {
+      if (unk3300DCHBFEJNBHP_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, asterToken_);
+          .computeUInt32Size(4, unk3300DCHBFEJNBHP_);
       }
-      if (asterCredit_ != 0) {
+      if (unk3300KFDGFFPJGJC_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, asterCredit_);
+          .computeUInt32Size(5, unk3300KFDGFFPJGJC_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -197,10 +201,10 @@ public final class AsterMiscInfoNotifyOuterClass {
       }
       emu.grasscutter.net.proto.AsterMiscInfoNotifyOuterClass.AsterMiscInfoNotify other = (emu.grasscutter.net.proto.AsterMiscInfoNotifyOuterClass.AsterMiscInfoNotify) obj;
 
-      if (getAsterToken()
-          != other.getAsterToken()) return false;
-      if (getAsterCredit()
-          != other.getAsterCredit()) return false;
+      if (getUnk3300DCHBFEJNBHP()
+          != other.getUnk3300DCHBFEJNBHP()) return false;
+      if (getUnk3300KFDGFFPJGJC()
+          != other.getUnk3300KFDGFFPJGJC()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -212,10 +216,10 @@ public final class AsterMiscInfoNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + ASTER_TOKEN_FIELD_NUMBER;
-      hash = (53 * hash) + getAsterToken();
-      hash = (37 * hash) + ASTER_CREDIT_FIELD_NUMBER;
-      hash = (53 * hash) + getAsterCredit();
+      hash = (37 * hash) + UNK3300_DCHBFEJNBHP_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300DCHBFEJNBHP();
+      hash = (37 * hash) + UNK3300_KFDGFFPJGJC_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300KFDGFFPJGJC();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -313,9 +317,13 @@ public final class AsterMiscInfoNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 2036
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 2140;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code AsterMiscInfoNotify}
@@ -355,9 +363,9 @@ public final class AsterMiscInfoNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        asterToken_ = 0;
+        unk3300DCHBFEJNBHP_ = 0;
 
-        asterCredit_ = 0;
+        unk3300KFDGFFPJGJC_ = 0;
 
         return this;
       }
@@ -385,8 +393,8 @@ public final class AsterMiscInfoNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.AsterMiscInfoNotifyOuterClass.AsterMiscInfoNotify buildPartial() {
         emu.grasscutter.net.proto.AsterMiscInfoNotifyOuterClass.AsterMiscInfoNotify result = new emu.grasscutter.net.proto.AsterMiscInfoNotifyOuterClass.AsterMiscInfoNotify(this);
-        result.asterToken_ = asterToken_;
-        result.asterCredit_ = asterCredit_;
+        result.unk3300DCHBFEJNBHP_ = unk3300DCHBFEJNBHP_;
+        result.unk3300KFDGFFPJGJC_ = unk3300KFDGFFPJGJC_;
         onBuilt();
         return result;
       }
@@ -435,11 +443,11 @@ public final class AsterMiscInfoNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.AsterMiscInfoNotifyOuterClass.AsterMiscInfoNotify other) {
         if (other == emu.grasscutter.net.proto.AsterMiscInfoNotifyOuterClass.AsterMiscInfoNotify.getDefaultInstance()) return this;
-        if (other.getAsterToken() != 0) {
-          setAsterToken(other.getAsterToken());
+        if (other.getUnk3300DCHBFEJNBHP() != 0) {
+          setUnk3300DCHBFEJNBHP(other.getUnk3300DCHBFEJNBHP());
         }
-        if (other.getAsterCredit() != 0) {
-          setAsterCredit(other.getAsterCredit());
+        if (other.getUnk3300KFDGFFPJGJC() != 0) {
+          setUnk3300KFDGFFPJGJC(other.getUnk3300KFDGFFPJGJC());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -470,64 +478,64 @@ public final class AsterMiscInfoNotifyOuterClass {
         return this;
       }
 
-      private int asterToken_ ;
+      private int unk3300DCHBFEJNBHP_ ;
       /**
-       * <code>uint32 aster_token = 2;</code>
-       * @return The asterToken.
+       * <code>uint32 Unk3300_DCHBFEJNBHP = 4;</code>
+       * @return The unk3300DCHBFEJNBHP.
        */
       @java.lang.Override
-      public int getAsterToken() {
-        return asterToken_;
+      public int getUnk3300DCHBFEJNBHP() {
+        return unk3300DCHBFEJNBHP_;
       }
       /**
-       * <code>uint32 aster_token = 2;</code>
-       * @param value The asterToken to set.
+       * <code>uint32 Unk3300_DCHBFEJNBHP = 4;</code>
+       * @param value The unk3300DCHBFEJNBHP to set.
        * @return This builder for chaining.
        */
-      public Builder setAsterToken(int value) {
+      public Builder setUnk3300DCHBFEJNBHP(int value) {
         
-        asterToken_ = value;
+        unk3300DCHBFEJNBHP_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 aster_token = 2;</code>
+       * <code>uint32 Unk3300_DCHBFEJNBHP = 4;</code>
        * @return This builder for chaining.
        */
-      public Builder clearAsterToken() {
+      public Builder clearUnk3300DCHBFEJNBHP() {
         
-        asterToken_ = 0;
+        unk3300DCHBFEJNBHP_ = 0;
         onChanged();
         return this;
       }
 
-      private int asterCredit_ ;
+      private int unk3300KFDGFFPJGJC_ ;
       /**
-       * <code>uint32 aster_credit = 15;</code>
-       * @return The asterCredit.
+       * <code>uint32 Unk3300_KFDGFFPJGJC = 5;</code>
+       * @return The unk3300KFDGFFPJGJC.
        */
       @java.lang.Override
-      public int getAsterCredit() {
-        return asterCredit_;
+      public int getUnk3300KFDGFFPJGJC() {
+        return unk3300KFDGFFPJGJC_;
       }
       /**
-       * <code>uint32 aster_credit = 15;</code>
-       * @param value The asterCredit to set.
+       * <code>uint32 Unk3300_KFDGFFPJGJC = 5;</code>
+       * @param value The unk3300KFDGFFPJGJC to set.
        * @return This builder for chaining.
        */
-      public Builder setAsterCredit(int value) {
+      public Builder setUnk3300KFDGFFPJGJC(int value) {
         
-        asterCredit_ = value;
+        unk3300KFDGFFPJGJC_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 aster_credit = 15;</code>
+       * <code>uint32 Unk3300_KFDGFFPJGJC = 5;</code>
        * @return This builder for chaining.
        */
-      public Builder clearAsterCredit() {
+      public Builder clearUnk3300KFDGFFPJGJC() {
         
-        asterCredit_ = 0;
+        unk3300KFDGFFPJGJC_ = 0;
         onChanged();
         return this;
       }
@@ -598,10 +606,10 @@ public final class AsterMiscInfoNotifyOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\031AsterMiscInfoNotify.proto\"@\n\023AsterMisc" +
-      "InfoNotify\022\023\n\013aster_token\030\002 \001(\r\022\024\n\014aster" +
-      "_credit\030\017 \001(\rB\033\n\031emu.grasscutter.net.pro" +
-      "tob\006proto3"
+      "\n\031AsterMiscInfoNotify.proto\"O\n\023AsterMisc" +
+      "InfoNotify\022\033\n\023Unk3300_DCHBFEJNBHP\030\004 \001(\r\022" +
+      "\033\n\023Unk3300_KFDGFFPJGJC\030\005 \001(\rB\033\n\031emu.gras" +
+      "scutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -612,7 +620,7 @@ public final class AsterMiscInfoNotifyOuterClass {
     internal_static_AsterMiscInfoNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_AsterMiscInfoNotify_descriptor,
-        new java.lang.String[] { "AsterToken", "AsterCredit", });
+        new java.lang.String[] { "Unk3300DCHBFEJNBHP", "Unk3300KFDGFFPJGJC", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

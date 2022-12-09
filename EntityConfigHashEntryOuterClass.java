@@ -19,22 +19,22 @@ public final class EntityConfigHashEntryOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 job_id = 13;</code>
-     * @return The jobId.
+     * <code>uint32 entity_id = 4;</code>
+     * @return The entityId.
      */
-    int getJobId();
+    int getEntityId();
 
     /**
-     * <code>int32 hash_value = 6;</code>
+     * <code>int32 hash_value = 1;</code>
      * @return The hashValue.
      */
     int getHashValue();
 
     /**
-     * <code>uint32 entity_id = 11;</code>
-     * @return The entityId.
+     * <code>uint32 job_id = 6;</code>
+     * @return The jobId.
      */
-    int getEntityId();
+    int getJobId();
   }
   /**
    * Protobuf type {@code EntityConfigHashEntry}
@@ -81,17 +81,17 @@ public final class EntityConfigHashEntryOuterClass {
             case 0:
               done = true;
               break;
-            case 48: {
+            case 8: {
 
               hashValue_ = input.readInt32();
               break;
             }
-            case 88: {
+            case 32: {
 
               entityId_ = input.readUInt32();
               break;
             }
-            case 104: {
+            case 48: {
 
               jobId_ = input.readUInt32();
               break;
@@ -128,21 +128,21 @@ public final class EntityConfigHashEntryOuterClass {
               emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntry.class, emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntry.Builder.class);
     }
 
-    public static final int JOB_ID_FIELD_NUMBER = 13;
-    private int jobId_;
+    public static final int ENTITY_ID_FIELD_NUMBER = 4;
+    private int entityId_;
     /**
-     * <code>uint32 job_id = 13;</code>
-     * @return The jobId.
+     * <code>uint32 entity_id = 4;</code>
+     * @return The entityId.
      */
     @java.lang.Override
-    public int getJobId() {
-      return jobId_;
+    public int getEntityId() {
+      return entityId_;
     }
 
-    public static final int HASH_VALUE_FIELD_NUMBER = 6;
+    public static final int HASH_VALUE_FIELD_NUMBER = 1;
     private int hashValue_;
     /**
-     * <code>int32 hash_value = 6;</code>
+     * <code>int32 hash_value = 1;</code>
      * @return The hashValue.
      */
     @java.lang.Override
@@ -150,15 +150,15 @@ public final class EntityConfigHashEntryOuterClass {
       return hashValue_;
     }
 
-    public static final int ENTITY_ID_FIELD_NUMBER = 11;
-    private int entityId_;
+    public static final int JOB_ID_FIELD_NUMBER = 6;
+    private int jobId_;
     /**
-     * <code>uint32 entity_id = 11;</code>
-     * @return The entityId.
+     * <code>uint32 job_id = 6;</code>
+     * @return The jobId.
      */
     @java.lang.Override
-    public int getEntityId() {
-      return entityId_;
+    public int getJobId() {
+      return jobId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -176,13 +176,13 @@ public final class EntityConfigHashEntryOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (hashValue_ != 0) {
-        output.writeInt32(6, hashValue_);
+        output.writeInt32(1, hashValue_);
       }
       if (entityId_ != 0) {
-        output.writeUInt32(11, entityId_);
+        output.writeUInt32(4, entityId_);
       }
       if (jobId_ != 0) {
-        output.writeUInt32(13, jobId_);
+        output.writeUInt32(6, jobId_);
       }
       unknownFields.writeTo(output);
     }
@@ -195,15 +195,15 @@ public final class EntityConfigHashEntryOuterClass {
       size = 0;
       if (hashValue_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(6, hashValue_);
+          .computeInt32Size(1, hashValue_);
       }
       if (entityId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, entityId_);
+          .computeUInt32Size(4, entityId_);
       }
       if (jobId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, jobId_);
+          .computeUInt32Size(6, jobId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -220,12 +220,12 @@ public final class EntityConfigHashEntryOuterClass {
       }
       emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntry other = (emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntry) obj;
 
-      if (getJobId()
-          != other.getJobId()) return false;
-      if (getHashValue()
-          != other.getHashValue()) return false;
       if (getEntityId()
           != other.getEntityId()) return false;
+      if (getHashValue()
+          != other.getHashValue()) return false;
+      if (getJobId()
+          != other.getJobId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -237,12 +237,12 @@ public final class EntityConfigHashEntryOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + JOB_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getJobId();
-      hash = (37 * hash) + HASH_VALUE_FIELD_NUMBER;
-      hash = (53 * hash) + getHashValue();
       hash = (37 * hash) + ENTITY_ID_FIELD_NUMBER;
       hash = (53 * hash) + getEntityId();
+      hash = (37 * hash) + HASH_VALUE_FIELD_NUMBER;
+      hash = (53 * hash) + getHashValue();
+      hash = (37 * hash) + JOB_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getJobId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -376,11 +376,11 @@ public final class EntityConfigHashEntryOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        jobId_ = 0;
+        entityId_ = 0;
 
         hashValue_ = 0;
 
-        entityId_ = 0;
+        jobId_ = 0;
 
         return this;
       }
@@ -408,9 +408,9 @@ public final class EntityConfigHashEntryOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntry buildPartial() {
         emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntry result = new emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntry(this);
-        result.jobId_ = jobId_;
-        result.hashValue_ = hashValue_;
         result.entityId_ = entityId_;
+        result.hashValue_ = hashValue_;
+        result.jobId_ = jobId_;
         onBuilt();
         return result;
       }
@@ -459,14 +459,14 @@ public final class EntityConfigHashEntryOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntry other) {
         if (other == emu.grasscutter.net.proto.EntityConfigHashEntryOuterClass.EntityConfigHashEntry.getDefaultInstance()) return this;
-        if (other.getJobId() != 0) {
-          setJobId(other.getJobId());
+        if (other.getEntityId() != 0) {
+          setEntityId(other.getEntityId());
         }
         if (other.getHashValue() != 0) {
           setHashValue(other.getHashValue());
         }
-        if (other.getEntityId() != 0) {
-          setEntityId(other.getEntityId());
+        if (other.getJobId() != 0) {
+          setJobId(other.getJobId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -497,71 +497,9 @@ public final class EntityConfigHashEntryOuterClass {
         return this;
       }
 
-      private int jobId_ ;
-      /**
-       * <code>uint32 job_id = 13;</code>
-       * @return The jobId.
-       */
-      @java.lang.Override
-      public int getJobId() {
-        return jobId_;
-      }
-      /**
-       * <code>uint32 job_id = 13;</code>
-       * @param value The jobId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setJobId(int value) {
-        
-        jobId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 job_id = 13;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearJobId() {
-        
-        jobId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int hashValue_ ;
-      /**
-       * <code>int32 hash_value = 6;</code>
-       * @return The hashValue.
-       */
-      @java.lang.Override
-      public int getHashValue() {
-        return hashValue_;
-      }
-      /**
-       * <code>int32 hash_value = 6;</code>
-       * @param value The hashValue to set.
-       * @return This builder for chaining.
-       */
-      public Builder setHashValue(int value) {
-        
-        hashValue_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>int32 hash_value = 6;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearHashValue() {
-        
-        hashValue_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int entityId_ ;
       /**
-       * <code>uint32 entity_id = 11;</code>
+       * <code>uint32 entity_id = 4;</code>
        * @return The entityId.
        */
       @java.lang.Override
@@ -569,7 +507,7 @@ public final class EntityConfigHashEntryOuterClass {
         return entityId_;
       }
       /**
-       * <code>uint32 entity_id = 11;</code>
+       * <code>uint32 entity_id = 4;</code>
        * @param value The entityId to set.
        * @return This builder for chaining.
        */
@@ -580,12 +518,74 @@ public final class EntityConfigHashEntryOuterClass {
         return this;
       }
       /**
-       * <code>uint32 entity_id = 11;</code>
+       * <code>uint32 entity_id = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearEntityId() {
         
         entityId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int hashValue_ ;
+      /**
+       * <code>int32 hash_value = 1;</code>
+       * @return The hashValue.
+       */
+      @java.lang.Override
+      public int getHashValue() {
+        return hashValue_;
+      }
+      /**
+       * <code>int32 hash_value = 1;</code>
+       * @param value The hashValue to set.
+       * @return This builder for chaining.
+       */
+      public Builder setHashValue(int value) {
+        
+        hashValue_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 hash_value = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearHashValue() {
+        
+        hashValue_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int jobId_ ;
+      /**
+       * <code>uint32 job_id = 6;</code>
+       * @return The jobId.
+       */
+      @java.lang.Override
+      public int getJobId() {
+        return jobId_;
+      }
+      /**
+       * <code>uint32 job_id = 6;</code>
+       * @param value The jobId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setJobId(int value) {
+        
+        jobId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 job_id = 6;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearJobId() {
+        
+        jobId_ = 0;
         onChanged();
         return this;
       }
@@ -657,8 +657,8 @@ public final class EntityConfigHashEntryOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\033EntityConfigHashEntry.proto\"N\n\025EntityC" +
-      "onfigHashEntry\022\016\n\006job_id\030\r \001(\r\022\022\n\nhash_v" +
-      "alue\030\006 \001(\005\022\021\n\tentity_id\030\013 \001(\rB\033\n\031emu.gra" +
+      "onfigHashEntry\022\021\n\tentity_id\030\004 \001(\r\022\022\n\nhas" +
+      "h_value\030\001 \001(\005\022\016\n\006job_id\030\006 \001(\rB\033\n\031emu.gra" +
       "sscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -670,7 +670,7 @@ public final class EntityConfigHashEntryOuterClass {
     internal_static_EntityConfigHashEntry_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_EntityConfigHashEntry_descriptor,
-        new java.lang.String[] { "JobId", "HashValue", "EntityId", });
+        new java.lang.String[] { "EntityId", "HashValue", "JobId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

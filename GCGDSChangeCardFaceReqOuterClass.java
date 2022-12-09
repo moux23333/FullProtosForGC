@@ -19,23 +19,27 @@ public final class GCGDSChangeCardFaceReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 face_type = 6;</code>
-     * @return The faceType.
-     */
-    int getFaceType();
-
-    /**
-     * <code>uint32 card_id = 3;</code>
+     * <code>uint32 card_id = 9;</code>
      * @return The cardId.
      */
     int getCardId();
+
+    /**
+     * <code>uint32 face_type = 14;</code>
+     * @return The faceType.
+     */
+    int getFaceType();
   }
   /**
    * <pre>
-   * CmdId: 7169
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 7010;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code GCGDSChangeCardFaceReq}
@@ -82,12 +86,12 @@ public final class GCGDSChangeCardFaceReqOuterClass {
             case 0:
               done = true;
               break;
-            case 24: {
+            case 72: {
 
               cardId_ = input.readUInt32();
               break;
             }
-            case 48: {
+            case 112: {
 
               faceType_ = input.readUInt32();
               break;
@@ -124,26 +128,26 @@ public final class GCGDSChangeCardFaceReqOuterClass {
               emu.grasscutter.net.proto.GCGDSChangeCardFaceReqOuterClass.GCGDSChangeCardFaceReq.class, emu.grasscutter.net.proto.GCGDSChangeCardFaceReqOuterClass.GCGDSChangeCardFaceReq.Builder.class);
     }
 
-    public static final int FACE_TYPE_FIELD_NUMBER = 6;
-    private int faceType_;
-    /**
-     * <code>uint32 face_type = 6;</code>
-     * @return The faceType.
-     */
-    @java.lang.Override
-    public int getFaceType() {
-      return faceType_;
-    }
-
-    public static final int CARD_ID_FIELD_NUMBER = 3;
+    public static final int CARD_ID_FIELD_NUMBER = 9;
     private int cardId_;
     /**
-     * <code>uint32 card_id = 3;</code>
+     * <code>uint32 card_id = 9;</code>
      * @return The cardId.
      */
     @java.lang.Override
     public int getCardId() {
       return cardId_;
+    }
+
+    public static final int FACE_TYPE_FIELD_NUMBER = 14;
+    private int faceType_;
+    /**
+     * <code>uint32 face_type = 14;</code>
+     * @return The faceType.
+     */
+    @java.lang.Override
+    public int getFaceType() {
+      return faceType_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -161,10 +165,10 @@ public final class GCGDSChangeCardFaceReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (cardId_ != 0) {
-        output.writeUInt32(3, cardId_);
+        output.writeUInt32(9, cardId_);
       }
       if (faceType_ != 0) {
-        output.writeUInt32(6, faceType_);
+        output.writeUInt32(14, faceType_);
       }
       unknownFields.writeTo(output);
     }
@@ -177,11 +181,11 @@ public final class GCGDSChangeCardFaceReqOuterClass {
       size = 0;
       if (cardId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, cardId_);
+          .computeUInt32Size(9, cardId_);
       }
       if (faceType_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, faceType_);
+          .computeUInt32Size(14, faceType_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -198,10 +202,10 @@ public final class GCGDSChangeCardFaceReqOuterClass {
       }
       emu.grasscutter.net.proto.GCGDSChangeCardFaceReqOuterClass.GCGDSChangeCardFaceReq other = (emu.grasscutter.net.proto.GCGDSChangeCardFaceReqOuterClass.GCGDSChangeCardFaceReq) obj;
 
-      if (getFaceType()
-          != other.getFaceType()) return false;
       if (getCardId()
           != other.getCardId()) return false;
+      if (getFaceType()
+          != other.getFaceType()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -213,10 +217,10 @@ public final class GCGDSChangeCardFaceReqOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + FACE_TYPE_FIELD_NUMBER;
-      hash = (53 * hash) + getFaceType();
       hash = (37 * hash) + CARD_ID_FIELD_NUMBER;
       hash = (53 * hash) + getCardId();
+      hash = (37 * hash) + FACE_TYPE_FIELD_NUMBER;
+      hash = (53 * hash) + getFaceType();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -314,10 +318,14 @@ public final class GCGDSChangeCardFaceReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 7169
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 7010;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code GCGDSChangeCardFaceReq}
@@ -357,9 +365,9 @@ public final class GCGDSChangeCardFaceReqOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        faceType_ = 0;
-
         cardId_ = 0;
+
+        faceType_ = 0;
 
         return this;
       }
@@ -387,8 +395,8 @@ public final class GCGDSChangeCardFaceReqOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.GCGDSChangeCardFaceReqOuterClass.GCGDSChangeCardFaceReq buildPartial() {
         emu.grasscutter.net.proto.GCGDSChangeCardFaceReqOuterClass.GCGDSChangeCardFaceReq result = new emu.grasscutter.net.proto.GCGDSChangeCardFaceReqOuterClass.GCGDSChangeCardFaceReq(this);
-        result.faceType_ = faceType_;
         result.cardId_ = cardId_;
+        result.faceType_ = faceType_;
         onBuilt();
         return result;
       }
@@ -437,11 +445,11 @@ public final class GCGDSChangeCardFaceReqOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.GCGDSChangeCardFaceReqOuterClass.GCGDSChangeCardFaceReq other) {
         if (other == emu.grasscutter.net.proto.GCGDSChangeCardFaceReqOuterClass.GCGDSChangeCardFaceReq.getDefaultInstance()) return this;
-        if (other.getFaceType() != 0) {
-          setFaceType(other.getFaceType());
-        }
         if (other.getCardId() != 0) {
           setCardId(other.getCardId());
+        }
+        if (other.getFaceType() != 0) {
+          setFaceType(other.getFaceType());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -472,40 +480,9 @@ public final class GCGDSChangeCardFaceReqOuterClass {
         return this;
       }
 
-      private int faceType_ ;
-      /**
-       * <code>uint32 face_type = 6;</code>
-       * @return The faceType.
-       */
-      @java.lang.Override
-      public int getFaceType() {
-        return faceType_;
-      }
-      /**
-       * <code>uint32 face_type = 6;</code>
-       * @param value The faceType to set.
-       * @return This builder for chaining.
-       */
-      public Builder setFaceType(int value) {
-        
-        faceType_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 face_type = 6;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearFaceType() {
-        
-        faceType_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int cardId_ ;
       /**
-       * <code>uint32 card_id = 3;</code>
+       * <code>uint32 card_id = 9;</code>
        * @return The cardId.
        */
       @java.lang.Override
@@ -513,7 +490,7 @@ public final class GCGDSChangeCardFaceReqOuterClass {
         return cardId_;
       }
       /**
-       * <code>uint32 card_id = 3;</code>
+       * <code>uint32 card_id = 9;</code>
        * @param value The cardId to set.
        * @return This builder for chaining.
        */
@@ -524,12 +501,43 @@ public final class GCGDSChangeCardFaceReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 card_id = 3;</code>
+       * <code>uint32 card_id = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearCardId() {
         
         cardId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int faceType_ ;
+      /**
+       * <code>uint32 face_type = 14;</code>
+       * @return The faceType.
+       */
+      @java.lang.Override
+      public int getFaceType() {
+        return faceType_;
+      }
+      /**
+       * <code>uint32 face_type = 14;</code>
+       * @param value The faceType to set.
+       * @return This builder for chaining.
+       */
+      public Builder setFaceType(int value) {
+        
+        faceType_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 face_type = 14;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearFaceType() {
+        
+        faceType_ = 0;
         onChanged();
         return this;
       }
@@ -601,8 +609,8 @@ public final class GCGDSChangeCardFaceReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\034GCGDSChangeCardFaceReq.proto\"<\n\026GCGDSC" +
-      "hangeCardFaceReq\022\021\n\tface_type\030\006 \001(\r\022\017\n\007c" +
-      "ard_id\030\003 \001(\rB\033\n\031emu.grasscutter.net.prot" +
+      "hangeCardFaceReq\022\017\n\007card_id\030\t \001(\r\022\021\n\tfac" +
+      "e_type\030\016 \001(\rB\033\n\031emu.grasscutter.net.prot" +
       "ob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -614,7 +622,7 @@ public final class GCGDSChangeCardFaceReqOuterClass {
     internal_static_GCGDSChangeCardFaceReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GCGDSChangeCardFaceReq_descriptor,
-        new java.lang.String[] { "FaceType", "CardId", });
+        new java.lang.String[] { "CardId", "FaceType", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

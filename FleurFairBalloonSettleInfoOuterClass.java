@@ -19,22 +19,22 @@ public final class FleurFairBalloonSettleInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.BalloonSettleInfo settle_info = 10;</code>
+     * <code>.BalloonSettleInfo settle_info = 5;</code>
      * @return Whether the settleInfo field is set.
      */
     boolean hasSettleInfo();
     /**
-     * <code>.BalloonSettleInfo settle_info = 10;</code>
+     * <code>.BalloonSettleInfo settle_info = 5;</code>
      * @return The settleInfo.
      */
     emu.grasscutter.net.proto.BalloonSettleInfoOuterClass.BalloonSettleInfo getSettleInfo();
     /**
-     * <code>.BalloonSettleInfo settle_info = 10;</code>
+     * <code>.BalloonSettleInfo settle_info = 5;</code>
      */
     emu.grasscutter.net.proto.BalloonSettleInfoOuterClass.BalloonSettleInfoOrBuilder getSettleInfoOrBuilder();
 
     /**
-     * <code>bool is_new_record = 7;</code>
+     * <code>bool is_new_record = 15;</code>
      * @return The isNewRecord.
      */
     boolean getIsNewRecord();
@@ -84,12 +84,7 @@ public final class FleurFairBalloonSettleInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 56: {
-
-              isNewRecord_ = input.readBool();
-              break;
-            }
-            case 82: {
+            case 42: {
               emu.grasscutter.net.proto.BalloonSettleInfoOuterClass.BalloonSettleInfo.Builder subBuilder = null;
               if (settleInfo_ != null) {
                 subBuilder = settleInfo_.toBuilder();
@@ -100,6 +95,11 @@ public final class FleurFairBalloonSettleInfoOuterClass {
                 settleInfo_ = subBuilder.buildPartial();
               }
 
+              break;
+            }
+            case 120: {
+
+              isNewRecord_ = input.readBool();
               break;
             }
             default: {
@@ -134,10 +134,10 @@ public final class FleurFairBalloonSettleInfoOuterClass {
               emu.grasscutter.net.proto.FleurFairBalloonSettleInfoOuterClass.FleurFairBalloonSettleInfo.class, emu.grasscutter.net.proto.FleurFairBalloonSettleInfoOuterClass.FleurFairBalloonSettleInfo.Builder.class);
     }
 
-    public static final int SETTLE_INFO_FIELD_NUMBER = 10;
+    public static final int SETTLE_INFO_FIELD_NUMBER = 5;
     private emu.grasscutter.net.proto.BalloonSettleInfoOuterClass.BalloonSettleInfo settleInfo_;
     /**
-     * <code>.BalloonSettleInfo settle_info = 10;</code>
+     * <code>.BalloonSettleInfo settle_info = 5;</code>
      * @return Whether the settleInfo field is set.
      */
     @java.lang.Override
@@ -145,7 +145,7 @@ public final class FleurFairBalloonSettleInfoOuterClass {
       return settleInfo_ != null;
     }
     /**
-     * <code>.BalloonSettleInfo settle_info = 10;</code>
+     * <code>.BalloonSettleInfo settle_info = 5;</code>
      * @return The settleInfo.
      */
     @java.lang.Override
@@ -153,17 +153,17 @@ public final class FleurFairBalloonSettleInfoOuterClass {
       return settleInfo_ == null ? emu.grasscutter.net.proto.BalloonSettleInfoOuterClass.BalloonSettleInfo.getDefaultInstance() : settleInfo_;
     }
     /**
-     * <code>.BalloonSettleInfo settle_info = 10;</code>
+     * <code>.BalloonSettleInfo settle_info = 5;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.BalloonSettleInfoOuterClass.BalloonSettleInfoOrBuilder getSettleInfoOrBuilder() {
       return getSettleInfo();
     }
 
-    public static final int IS_NEW_RECORD_FIELD_NUMBER = 7;
+    public static final int IS_NEW_RECORD_FIELD_NUMBER = 15;
     private boolean isNewRecord_;
     /**
-     * <code>bool is_new_record = 7;</code>
+     * <code>bool is_new_record = 15;</code>
      * @return The isNewRecord.
      */
     @java.lang.Override
@@ -185,11 +185,11 @@ public final class FleurFairBalloonSettleInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (isNewRecord_ != false) {
-        output.writeBool(7, isNewRecord_);
-      }
       if (settleInfo_ != null) {
-        output.writeMessage(10, getSettleInfo());
+        output.writeMessage(5, getSettleInfo());
+      }
+      if (isNewRecord_ != false) {
+        output.writeBool(15, isNewRecord_);
       }
       unknownFields.writeTo(output);
     }
@@ -200,13 +200,13 @@ public final class FleurFairBalloonSettleInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (isNewRecord_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(7, isNewRecord_);
-      }
       if (settleInfo_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(10, getSettleInfo());
+          .computeMessageSize(5, getSettleInfo());
+      }
+      if (isNewRecord_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(15, isNewRecord_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -508,14 +508,14 @@ public final class FleurFairBalloonSettleInfoOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.BalloonSettleInfoOuterClass.BalloonSettleInfo, emu.grasscutter.net.proto.BalloonSettleInfoOuterClass.BalloonSettleInfo.Builder, emu.grasscutter.net.proto.BalloonSettleInfoOuterClass.BalloonSettleInfoOrBuilder> settleInfoBuilder_;
       /**
-       * <code>.BalloonSettleInfo settle_info = 10;</code>
+       * <code>.BalloonSettleInfo settle_info = 5;</code>
        * @return Whether the settleInfo field is set.
        */
       public boolean hasSettleInfo() {
         return settleInfoBuilder_ != null || settleInfo_ != null;
       }
       /**
-       * <code>.BalloonSettleInfo settle_info = 10;</code>
+       * <code>.BalloonSettleInfo settle_info = 5;</code>
        * @return The settleInfo.
        */
       public emu.grasscutter.net.proto.BalloonSettleInfoOuterClass.BalloonSettleInfo getSettleInfo() {
@@ -526,7 +526,7 @@ public final class FleurFairBalloonSettleInfoOuterClass {
         }
       }
       /**
-       * <code>.BalloonSettleInfo settle_info = 10;</code>
+       * <code>.BalloonSettleInfo settle_info = 5;</code>
        */
       public Builder setSettleInfo(emu.grasscutter.net.proto.BalloonSettleInfoOuterClass.BalloonSettleInfo value) {
         if (settleInfoBuilder_ == null) {
@@ -542,7 +542,7 @@ public final class FleurFairBalloonSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>.BalloonSettleInfo settle_info = 10;</code>
+       * <code>.BalloonSettleInfo settle_info = 5;</code>
        */
       public Builder setSettleInfo(
           emu.grasscutter.net.proto.BalloonSettleInfoOuterClass.BalloonSettleInfo.Builder builderForValue) {
@@ -556,7 +556,7 @@ public final class FleurFairBalloonSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>.BalloonSettleInfo settle_info = 10;</code>
+       * <code>.BalloonSettleInfo settle_info = 5;</code>
        */
       public Builder mergeSettleInfo(emu.grasscutter.net.proto.BalloonSettleInfoOuterClass.BalloonSettleInfo value) {
         if (settleInfoBuilder_ == null) {
@@ -574,7 +574,7 @@ public final class FleurFairBalloonSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>.BalloonSettleInfo settle_info = 10;</code>
+       * <code>.BalloonSettleInfo settle_info = 5;</code>
        */
       public Builder clearSettleInfo() {
         if (settleInfoBuilder_ == null) {
@@ -588,7 +588,7 @@ public final class FleurFairBalloonSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>.BalloonSettleInfo settle_info = 10;</code>
+       * <code>.BalloonSettleInfo settle_info = 5;</code>
        */
       public emu.grasscutter.net.proto.BalloonSettleInfoOuterClass.BalloonSettleInfo.Builder getSettleInfoBuilder() {
         
@@ -596,7 +596,7 @@ public final class FleurFairBalloonSettleInfoOuterClass {
         return getSettleInfoFieldBuilder().getBuilder();
       }
       /**
-       * <code>.BalloonSettleInfo settle_info = 10;</code>
+       * <code>.BalloonSettleInfo settle_info = 5;</code>
        */
       public emu.grasscutter.net.proto.BalloonSettleInfoOuterClass.BalloonSettleInfoOrBuilder getSettleInfoOrBuilder() {
         if (settleInfoBuilder_ != null) {
@@ -607,7 +607,7 @@ public final class FleurFairBalloonSettleInfoOuterClass {
         }
       }
       /**
-       * <code>.BalloonSettleInfo settle_info = 10;</code>
+       * <code>.BalloonSettleInfo settle_info = 5;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.BalloonSettleInfoOuterClass.BalloonSettleInfo, emu.grasscutter.net.proto.BalloonSettleInfoOuterClass.BalloonSettleInfo.Builder, emu.grasscutter.net.proto.BalloonSettleInfoOuterClass.BalloonSettleInfoOrBuilder> 
@@ -625,7 +625,7 @@ public final class FleurFairBalloonSettleInfoOuterClass {
 
       private boolean isNewRecord_ ;
       /**
-       * <code>bool is_new_record = 7;</code>
+       * <code>bool is_new_record = 15;</code>
        * @return The isNewRecord.
        */
       @java.lang.Override
@@ -633,7 +633,7 @@ public final class FleurFairBalloonSettleInfoOuterClass {
         return isNewRecord_;
       }
       /**
-       * <code>bool is_new_record = 7;</code>
+       * <code>bool is_new_record = 15;</code>
        * @param value The isNewRecord to set.
        * @return This builder for chaining.
        */
@@ -644,7 +644,7 @@ public final class FleurFairBalloonSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>bool is_new_record = 7;</code>
+       * <code>bool is_new_record = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsNewRecord() {
@@ -722,8 +722,8 @@ public final class FleurFairBalloonSettleInfoOuterClass {
     java.lang.String[] descriptorData = {
       "\n FleurFairBalloonSettleInfo.proto\032\027Ball" +
       "oonSettleInfo.proto\"\\\n\032FleurFairBalloonS" +
-      "ettleInfo\022\'\n\013settle_info\030\n \001(\0132\022.Balloon" +
-      "SettleInfo\022\025\n\ris_new_record\030\007 \001(\010B\033\n\031emu" +
+      "ettleInfo\022\'\n\013settle_info\030\005 \001(\0132\022.Balloon" +
+      "SettleInfo\022\025\n\ris_new_record\030\017 \001(\010B\033\n\031emu" +
       ".grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

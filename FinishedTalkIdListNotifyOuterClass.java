@@ -19,17 +19,17 @@ public final class FinishedTalkIdListNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated uint32 finished_talk_id_list = 1;</code>
+     * <code>repeated uint32 finished_talk_id_list = 13;</code>
      * @return A list containing the finishedTalkIdList.
      */
     java.util.List<java.lang.Integer> getFinishedTalkIdListList();
     /**
-     * <code>repeated uint32 finished_talk_id_list = 1;</code>
+     * <code>repeated uint32 finished_talk_id_list = 13;</code>
      * @return The count of finishedTalkIdList.
      */
     int getFinishedTalkIdListCount();
     /**
-     * <code>repeated uint32 finished_talk_id_list = 1;</code>
+     * <code>repeated uint32 finished_talk_id_list = 13;</code>
      * @param index The index of the element to return.
      * @return The finishedTalkIdList at the given index.
      */
@@ -37,9 +37,13 @@ public final class FinishedTalkIdListNotifyOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 573
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 578;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code FinishedTalkIdListNotify}
@@ -88,7 +92,7 @@ public final class FinishedTalkIdListNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
+            case 104: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 finishedTalkIdList_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
@@ -96,7 +100,7 @@ public final class FinishedTalkIdListNotifyOuterClass {
               finishedTalkIdList_.addInt(input.readUInt32());
               break;
             }
-            case 10: {
+            case 106: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -144,10 +148,10 @@ public final class FinishedTalkIdListNotifyOuterClass {
               emu.grasscutter.net.proto.FinishedTalkIdListNotifyOuterClass.FinishedTalkIdListNotify.class, emu.grasscutter.net.proto.FinishedTalkIdListNotifyOuterClass.FinishedTalkIdListNotify.Builder.class);
     }
 
-    public static final int FINISHED_TALK_ID_LIST_FIELD_NUMBER = 1;
+    public static final int FINISHED_TALK_ID_LIST_FIELD_NUMBER = 13;
     private com.google.protobuf.Internal.IntList finishedTalkIdList_;
     /**
-     * <code>repeated uint32 finished_talk_id_list = 1;</code>
+     * <code>repeated uint32 finished_talk_id_list = 13;</code>
      * @return A list containing the finishedTalkIdList.
      */
     @java.lang.Override
@@ -156,14 +160,14 @@ public final class FinishedTalkIdListNotifyOuterClass {
       return finishedTalkIdList_;
     }
     /**
-     * <code>repeated uint32 finished_talk_id_list = 1;</code>
+     * <code>repeated uint32 finished_talk_id_list = 13;</code>
      * @return The count of finishedTalkIdList.
      */
     public int getFinishedTalkIdListCount() {
       return finishedTalkIdList_.size();
     }
     /**
-     * <code>repeated uint32 finished_talk_id_list = 1;</code>
+     * <code>repeated uint32 finished_talk_id_list = 13;</code>
      * @param index The index of the element to return.
      * @return The finishedTalkIdList at the given index.
      */
@@ -188,7 +192,7 @@ public final class FinishedTalkIdListNotifyOuterClass {
                         throws java.io.IOException {
       getSerializedSize();
       if (getFinishedTalkIdListList().size() > 0) {
-        output.writeUInt32NoTag(10);
+        output.writeUInt32NoTag(106);
         output.writeUInt32NoTag(finishedTalkIdListMemoizedSerializedSize);
       }
       for (int i = 0; i < finishedTalkIdList_.size(); i++) {
@@ -346,9 +350,13 @@ public final class FinishedTalkIdListNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 573
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 578;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code FinishedTalkIdListNotify}
@@ -518,7 +526,7 @@ public final class FinishedTalkIdListNotifyOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 finished_talk_id_list = 1;</code>
+       * <code>repeated uint32 finished_talk_id_list = 13;</code>
        * @return A list containing the finishedTalkIdList.
        */
       public java.util.List<java.lang.Integer>
@@ -527,14 +535,14 @@ public final class FinishedTalkIdListNotifyOuterClass {
                  java.util.Collections.unmodifiableList(finishedTalkIdList_) : finishedTalkIdList_;
       }
       /**
-       * <code>repeated uint32 finished_talk_id_list = 1;</code>
+       * <code>repeated uint32 finished_talk_id_list = 13;</code>
        * @return The count of finishedTalkIdList.
        */
       public int getFinishedTalkIdListCount() {
         return finishedTalkIdList_.size();
       }
       /**
-       * <code>repeated uint32 finished_talk_id_list = 1;</code>
+       * <code>repeated uint32 finished_talk_id_list = 13;</code>
        * @param index The index of the element to return.
        * @return The finishedTalkIdList at the given index.
        */
@@ -542,7 +550,7 @@ public final class FinishedTalkIdListNotifyOuterClass {
         return finishedTalkIdList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 finished_talk_id_list = 1;</code>
+       * <code>repeated uint32 finished_talk_id_list = 13;</code>
        * @param index The index to set the value at.
        * @param value The finishedTalkIdList to set.
        * @return This builder for chaining.
@@ -555,7 +563,7 @@ public final class FinishedTalkIdListNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 finished_talk_id_list = 1;</code>
+       * <code>repeated uint32 finished_talk_id_list = 13;</code>
        * @param value The finishedTalkIdList to add.
        * @return This builder for chaining.
        */
@@ -566,7 +574,7 @@ public final class FinishedTalkIdListNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 finished_talk_id_list = 1;</code>
+       * <code>repeated uint32 finished_talk_id_list = 13;</code>
        * @param values The finishedTalkIdList to add.
        * @return This builder for chaining.
        */
@@ -579,7 +587,7 @@ public final class FinishedTalkIdListNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 finished_talk_id_list = 1;</code>
+       * <code>repeated uint32 finished_talk_id_list = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearFinishedTalkIdList() {
@@ -657,7 +665,7 @@ public final class FinishedTalkIdListNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n\036FinishedTalkIdListNotify.proto\"9\n\030Fini" +
       "shedTalkIdListNotify\022\035\n\025finished_talk_id" +
-      "_list\030\001 \003(\rB\033\n\031emu.grasscutter.net.proto" +
+      "_list\030\r \003(\rB\033\n\031emu.grasscutter.net.proto" +
       "b\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

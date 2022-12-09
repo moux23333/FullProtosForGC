@@ -19,17 +19,21 @@ public final class EnterMechanicusDungeonReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 difficult_level = 7;</code>
+     * <code>uint32 difficult_level = 5;</code>
      * @return The difficultLevel.
      */
     int getDifficultLevel();
   }
   /**
    * <pre>
-   * CmdId: 3931
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 3927;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code EnterMechanicusDungeonReq}
@@ -76,7 +80,7 @@ public final class EnterMechanicusDungeonReqOuterClass {
             case 0:
               done = true;
               break;
-            case 56: {
+            case 40: {
 
               difficultLevel_ = input.readUInt32();
               break;
@@ -113,10 +117,10 @@ public final class EnterMechanicusDungeonReqOuterClass {
               emu.grasscutter.net.proto.EnterMechanicusDungeonReqOuterClass.EnterMechanicusDungeonReq.class, emu.grasscutter.net.proto.EnterMechanicusDungeonReqOuterClass.EnterMechanicusDungeonReq.Builder.class);
     }
 
-    public static final int DIFFICULT_LEVEL_FIELD_NUMBER = 7;
+    public static final int DIFFICULT_LEVEL_FIELD_NUMBER = 5;
     private int difficultLevel_;
     /**
-     * <code>uint32 difficult_level = 7;</code>
+     * <code>uint32 difficult_level = 5;</code>
      * @return The difficultLevel.
      */
     @java.lang.Override
@@ -139,7 +143,7 @@ public final class EnterMechanicusDungeonReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (difficultLevel_ != 0) {
-        output.writeUInt32(7, difficultLevel_);
+        output.writeUInt32(5, difficultLevel_);
       }
       unknownFields.writeTo(output);
     }
@@ -152,7 +156,7 @@ public final class EnterMechanicusDungeonReqOuterClass {
       size = 0;
       if (difficultLevel_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, difficultLevel_);
+          .computeUInt32Size(5, difficultLevel_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -281,10 +285,14 @@ public final class EnterMechanicusDungeonReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 3931
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 3927;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code EnterMechanicusDungeonReq}
@@ -435,7 +443,7 @@ public final class EnterMechanicusDungeonReqOuterClass {
 
       private int difficultLevel_ ;
       /**
-       * <code>uint32 difficult_level = 7;</code>
+       * <code>uint32 difficult_level = 5;</code>
        * @return The difficultLevel.
        */
       @java.lang.Override
@@ -443,7 +451,7 @@ public final class EnterMechanicusDungeonReqOuterClass {
         return difficultLevel_;
       }
       /**
-       * <code>uint32 difficult_level = 7;</code>
+       * <code>uint32 difficult_level = 5;</code>
        * @param value The difficultLevel to set.
        * @return This builder for chaining.
        */
@@ -454,7 +462,7 @@ public final class EnterMechanicusDungeonReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 difficult_level = 7;</code>
+       * <code>uint32 difficult_level = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearDifficultLevel() {
@@ -532,7 +540,7 @@ public final class EnterMechanicusDungeonReqOuterClass {
     java.lang.String[] descriptorData = {
       "\n\037EnterMechanicusDungeonReq.proto\"4\n\031Ent" +
       "erMechanicusDungeonReq\022\027\n\017difficult_leve" +
-      "l\030\007 \001(\rB\033\n\031emu.grasscutter.net.protob\006pr" +
+      "l\030\005 \001(\rB\033\n\031emu.grasscutter.net.protob\006pr" +
       "oto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

@@ -19,13 +19,13 @@ public final class LanternRiteFireworksReformFactorInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 factor_value = 5;</code>
+     * <code>uint32 factor_value = 12;</code>
      * @return The factorValue.
      */
     int getFactorValue();
 
     /**
-     * <code>uint32 factor_id = 13;</code>
+     * <code>uint32 factor_id = 15;</code>
      * @return The factorId.
      */
     int getFactorId();
@@ -75,12 +75,12 @@ public final class LanternRiteFireworksReformFactorInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 40: {
+            case 96: {
 
               factorValue_ = input.readUInt32();
               break;
             }
-            case 104: {
+            case 120: {
 
               factorId_ = input.readUInt32();
               break;
@@ -117,10 +117,10 @@ public final class LanternRiteFireworksReformFactorInfoOuterClass {
               emu.grasscutter.net.proto.LanternRiteFireworksReformFactorInfoOuterClass.LanternRiteFireworksReformFactorInfo.class, emu.grasscutter.net.proto.LanternRiteFireworksReformFactorInfoOuterClass.LanternRiteFireworksReformFactorInfo.Builder.class);
     }
 
-    public static final int FACTOR_VALUE_FIELD_NUMBER = 5;
+    public static final int FACTOR_VALUE_FIELD_NUMBER = 12;
     private int factorValue_;
     /**
-     * <code>uint32 factor_value = 5;</code>
+     * <code>uint32 factor_value = 12;</code>
      * @return The factorValue.
      */
     @java.lang.Override
@@ -128,10 +128,10 @@ public final class LanternRiteFireworksReformFactorInfoOuterClass {
       return factorValue_;
     }
 
-    public static final int FACTOR_ID_FIELD_NUMBER = 13;
+    public static final int FACTOR_ID_FIELD_NUMBER = 15;
     private int factorId_;
     /**
-     * <code>uint32 factor_id = 13;</code>
+     * <code>uint32 factor_id = 15;</code>
      * @return The factorId.
      */
     @java.lang.Override
@@ -154,10 +154,10 @@ public final class LanternRiteFireworksReformFactorInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (factorValue_ != 0) {
-        output.writeUInt32(5, factorValue_);
+        output.writeUInt32(12, factorValue_);
       }
       if (factorId_ != 0) {
-        output.writeUInt32(13, factorId_);
+        output.writeUInt32(15, factorId_);
       }
       unknownFields.writeTo(output);
     }
@@ -170,11 +170,11 @@ public final class LanternRiteFireworksReformFactorInfoOuterClass {
       size = 0;
       if (factorValue_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, factorValue_);
+          .computeUInt32Size(12, factorValue_);
       }
       if (factorId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, factorId_);
+          .computeUInt32Size(15, factorId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -460,7 +460,7 @@ public final class LanternRiteFireworksReformFactorInfoOuterClass {
 
       private int factorValue_ ;
       /**
-       * <code>uint32 factor_value = 5;</code>
+       * <code>uint32 factor_value = 12;</code>
        * @return The factorValue.
        */
       @java.lang.Override
@@ -468,7 +468,7 @@ public final class LanternRiteFireworksReformFactorInfoOuterClass {
         return factorValue_;
       }
       /**
-       * <code>uint32 factor_value = 5;</code>
+       * <code>uint32 factor_value = 12;</code>
        * @param value The factorValue to set.
        * @return This builder for chaining.
        */
@@ -479,7 +479,7 @@ public final class LanternRiteFireworksReformFactorInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 factor_value = 5;</code>
+       * <code>uint32 factor_value = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearFactorValue() {
@@ -491,7 +491,7 @@ public final class LanternRiteFireworksReformFactorInfoOuterClass {
 
       private int factorId_ ;
       /**
-       * <code>uint32 factor_id = 13;</code>
+       * <code>uint32 factor_id = 15;</code>
        * @return The factorId.
        */
       @java.lang.Override
@@ -499,7 +499,7 @@ public final class LanternRiteFireworksReformFactorInfoOuterClass {
         return factorId_;
       }
       /**
-       * <code>uint32 factor_id = 13;</code>
+       * <code>uint32 factor_id = 15;</code>
        * @param value The factorId to set.
        * @return This builder for chaining.
        */
@@ -510,7 +510,7 @@ public final class LanternRiteFireworksReformFactorInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 factor_id = 13;</code>
+       * <code>uint32 factor_id = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearFactorId() {
@@ -588,8 +588,8 @@ public final class LanternRiteFireworksReformFactorInfoOuterClass {
     java.lang.String[] descriptorData = {
       "\n*LanternRiteFireworksReformFactorInfo.p" +
       "roto\"O\n$LanternRiteFireworksReformFactor" +
-      "Info\022\024\n\014factor_value\030\005 \001(\r\022\021\n\tfactor_id\030" +
-      "\r \001(\rB\033\n\031emu.grasscutter.net.protob\006prot" +
+      "Info\022\024\n\014factor_value\030\014 \001(\r\022\021\n\tfactor_id\030" +
+      "\017 \001(\rB\033\n\031emu.grasscutter.net.protob\006prot" +
       "o3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

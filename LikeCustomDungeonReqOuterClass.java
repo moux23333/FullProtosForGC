@@ -19,23 +19,27 @@ public final class LikeCustomDungeonReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_cancel_like = 5;</code>
+     * <code>bool is_cancel_like = 2;</code>
      * @return The isCancelLike.
      */
     boolean getIsCancelLike();
 
     /**
-     * <code>uint64 dungeon_guid = 10;</code>
+     * <code>uint64 dungeon_guid = 3;</code>
      * @return The dungeonGuid.
      */
     long getDungeonGuid();
   }
   /**
    * <pre>
-   * CmdId: 6210
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 6203;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code LikeCustomDungeonReq}
@@ -82,12 +86,12 @@ public final class LikeCustomDungeonReqOuterClass {
             case 0:
               done = true;
               break;
-            case 40: {
+            case 16: {
 
               isCancelLike_ = input.readBool();
               break;
             }
-            case 80: {
+            case 24: {
 
               dungeonGuid_ = input.readUInt64();
               break;
@@ -124,10 +128,10 @@ public final class LikeCustomDungeonReqOuterClass {
               emu.grasscutter.net.proto.LikeCustomDungeonReqOuterClass.LikeCustomDungeonReq.class, emu.grasscutter.net.proto.LikeCustomDungeonReqOuterClass.LikeCustomDungeonReq.Builder.class);
     }
 
-    public static final int IS_CANCEL_LIKE_FIELD_NUMBER = 5;
+    public static final int IS_CANCEL_LIKE_FIELD_NUMBER = 2;
     private boolean isCancelLike_;
     /**
-     * <code>bool is_cancel_like = 5;</code>
+     * <code>bool is_cancel_like = 2;</code>
      * @return The isCancelLike.
      */
     @java.lang.Override
@@ -135,10 +139,10 @@ public final class LikeCustomDungeonReqOuterClass {
       return isCancelLike_;
     }
 
-    public static final int DUNGEON_GUID_FIELD_NUMBER = 10;
+    public static final int DUNGEON_GUID_FIELD_NUMBER = 3;
     private long dungeonGuid_;
     /**
-     * <code>uint64 dungeon_guid = 10;</code>
+     * <code>uint64 dungeon_guid = 3;</code>
      * @return The dungeonGuid.
      */
     @java.lang.Override
@@ -161,10 +165,10 @@ public final class LikeCustomDungeonReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (isCancelLike_ != false) {
-        output.writeBool(5, isCancelLike_);
+        output.writeBool(2, isCancelLike_);
       }
       if (dungeonGuid_ != 0L) {
-        output.writeUInt64(10, dungeonGuid_);
+        output.writeUInt64(3, dungeonGuid_);
       }
       unknownFields.writeTo(output);
     }
@@ -177,11 +181,11 @@ public final class LikeCustomDungeonReqOuterClass {
       size = 0;
       if (isCancelLike_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(5, isCancelLike_);
+          .computeBoolSize(2, isCancelLike_);
       }
       if (dungeonGuid_ != 0L) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt64Size(10, dungeonGuid_);
+          .computeUInt64Size(3, dungeonGuid_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -316,10 +320,14 @@ public final class LikeCustomDungeonReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 6210
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 6203;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code LikeCustomDungeonReq}
@@ -476,7 +484,7 @@ public final class LikeCustomDungeonReqOuterClass {
 
       private boolean isCancelLike_ ;
       /**
-       * <code>bool is_cancel_like = 5;</code>
+       * <code>bool is_cancel_like = 2;</code>
        * @return The isCancelLike.
        */
       @java.lang.Override
@@ -484,7 +492,7 @@ public final class LikeCustomDungeonReqOuterClass {
         return isCancelLike_;
       }
       /**
-       * <code>bool is_cancel_like = 5;</code>
+       * <code>bool is_cancel_like = 2;</code>
        * @param value The isCancelLike to set.
        * @return This builder for chaining.
        */
@@ -495,7 +503,7 @@ public final class LikeCustomDungeonReqOuterClass {
         return this;
       }
       /**
-       * <code>bool is_cancel_like = 5;</code>
+       * <code>bool is_cancel_like = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsCancelLike() {
@@ -507,7 +515,7 @@ public final class LikeCustomDungeonReqOuterClass {
 
       private long dungeonGuid_ ;
       /**
-       * <code>uint64 dungeon_guid = 10;</code>
+       * <code>uint64 dungeon_guid = 3;</code>
        * @return The dungeonGuid.
        */
       @java.lang.Override
@@ -515,7 +523,7 @@ public final class LikeCustomDungeonReqOuterClass {
         return dungeonGuid_;
       }
       /**
-       * <code>uint64 dungeon_guid = 10;</code>
+       * <code>uint64 dungeon_guid = 3;</code>
        * @param value The dungeonGuid to set.
        * @return This builder for chaining.
        */
@@ -526,7 +534,7 @@ public final class LikeCustomDungeonReqOuterClass {
         return this;
       }
       /**
-       * <code>uint64 dungeon_guid = 10;</code>
+       * <code>uint64 dungeon_guid = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearDungeonGuid() {
@@ -603,8 +611,8 @@ public final class LikeCustomDungeonReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\032LikeCustomDungeonReq.proto\"D\n\024LikeCust" +
-      "omDungeonReq\022\026\n\016is_cancel_like\030\005 \001(\010\022\024\n\014" +
-      "dungeon_guid\030\n \001(\004B\033\n\031emu.grasscutter.ne" +
+      "omDungeonReq\022\026\n\016is_cancel_like\030\002 \001(\010\022\024\n\014" +
+      "dungeon_guid\030\003 \001(\004B\033\n\031emu.grasscutter.ne" +
       "t.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

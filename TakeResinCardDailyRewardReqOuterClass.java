@@ -19,17 +19,21 @@ public final class TakeResinCardDailyRewardReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 product_config_id = 14;</code>
+     * <code>uint32 product_config_id = 1;</code>
      * @return The productConfigId.
      */
     int getProductConfigId();
   }
   /**
    * <pre>
-   * CmdId: 4122
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 4117;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code TakeResinCardDailyRewardReq}
@@ -76,7 +80,7 @@ public final class TakeResinCardDailyRewardReqOuterClass {
             case 0:
               done = true;
               break;
-            case 112: {
+            case 8: {
 
               productConfigId_ = input.readUInt32();
               break;
@@ -113,10 +117,10 @@ public final class TakeResinCardDailyRewardReqOuterClass {
               emu.grasscutter.net.proto.TakeResinCardDailyRewardReqOuterClass.TakeResinCardDailyRewardReq.class, emu.grasscutter.net.proto.TakeResinCardDailyRewardReqOuterClass.TakeResinCardDailyRewardReq.Builder.class);
     }
 
-    public static final int PRODUCT_CONFIG_ID_FIELD_NUMBER = 14;
+    public static final int PRODUCT_CONFIG_ID_FIELD_NUMBER = 1;
     private int productConfigId_;
     /**
-     * <code>uint32 product_config_id = 14;</code>
+     * <code>uint32 product_config_id = 1;</code>
      * @return The productConfigId.
      */
     @java.lang.Override
@@ -139,7 +143,7 @@ public final class TakeResinCardDailyRewardReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (productConfigId_ != 0) {
-        output.writeUInt32(14, productConfigId_);
+        output.writeUInt32(1, productConfigId_);
       }
       unknownFields.writeTo(output);
     }
@@ -152,7 +156,7 @@ public final class TakeResinCardDailyRewardReqOuterClass {
       size = 0;
       if (productConfigId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, productConfigId_);
+          .computeUInt32Size(1, productConfigId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -281,10 +285,14 @@ public final class TakeResinCardDailyRewardReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 4122
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 4117;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code TakeResinCardDailyRewardReq}
@@ -435,7 +443,7 @@ public final class TakeResinCardDailyRewardReqOuterClass {
 
       private int productConfigId_ ;
       /**
-       * <code>uint32 product_config_id = 14;</code>
+       * <code>uint32 product_config_id = 1;</code>
        * @return The productConfigId.
        */
       @java.lang.Override
@@ -443,7 +451,7 @@ public final class TakeResinCardDailyRewardReqOuterClass {
         return productConfigId_;
       }
       /**
-       * <code>uint32 product_config_id = 14;</code>
+       * <code>uint32 product_config_id = 1;</code>
        * @param value The productConfigId to set.
        * @return This builder for chaining.
        */
@@ -454,7 +462,7 @@ public final class TakeResinCardDailyRewardReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 product_config_id = 14;</code>
+       * <code>uint32 product_config_id = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearProductConfigId() {
@@ -532,7 +540,7 @@ public final class TakeResinCardDailyRewardReqOuterClass {
     java.lang.String[] descriptorData = {
       "\n!TakeResinCardDailyRewardReq.proto\"8\n\033T" +
       "akeResinCardDailyRewardReq\022\031\n\021product_co" +
-      "nfig_id\030\016 \001(\rB\033\n\031emu.grasscutter.net.pro" +
+      "nfig_id\030\001 \001(\rB\033\n\031emu.grasscutter.net.pro" +
       "tob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

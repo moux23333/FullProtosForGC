@@ -19,40 +19,44 @@ public final class InstableSprayLevelFinishNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_need_switch_team = 11;</code>
-     * @return The isNeedSwitchTeam.
-     */
-    boolean getIsNeedSwitchTeam();
-
-    /**
-     * <code>bool is_skip_black_screen = 7;</code>
-     * @return The isSkipBlackScreen.
-     */
-    boolean getIsSkipBlackScreen();
-
-    /**
-     * <code>uint32 round = 15;</code>
+     * <code>uint32 round = 2;</code>
      * @return The round.
      */
     int getRound();
 
     /**
-     * <code>uint32 stage_id = 8;</code>
-     * @return The stageId.
-     */
-    int getStageId();
-
-    /**
-     * <code>uint32 level_id = 10;</code>
+     * <code>uint32 level_id = 15;</code>
      * @return The levelId.
      */
     int getLevelId();
+
+    /**
+     * <code>bool Unk3300_AMEBAPIPLGL = 3;</code>
+     * @return The unk3300AMEBAPIPLGL.
+     */
+    boolean getUnk3300AMEBAPIPLGL();
+
+    /**
+     * <code>bool Unk3300_DHKHBKLBIPA = 12;</code>
+     * @return The unk3300DHKHBKLBIPA.
+     */
+    boolean getUnk3300DHKHBKLBIPA();
+
+    /**
+     * <code>uint32 stage_id = 10;</code>
+     * @return The stageId.
+     */
+    int getStageId();
   }
   /**
    * <pre>
-   * CmdId: 21961
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 21512;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code InstableSprayLevelFinishNotify}
@@ -99,29 +103,29 @@ public final class InstableSprayLevelFinishNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 56: {
+            case 16: {
 
-              isSkipBlackScreen_ = input.readBool();
+              round_ = input.readUInt32();
               break;
             }
-            case 64: {
+            case 24: {
 
-              stageId_ = input.readUInt32();
+              unk3300AMEBAPIPLGL_ = input.readBool();
               break;
             }
             case 80: {
 
-              levelId_ = input.readUInt32();
+              stageId_ = input.readUInt32();
               break;
             }
-            case 88: {
+            case 96: {
 
-              isNeedSwitchTeam_ = input.readBool();
+              unk3300DHKHBKLBIPA_ = input.readBool();
               break;
             }
             case 120: {
 
-              round_ = input.readUInt32();
+              levelId_ = input.readUInt32();
               break;
             }
             default: {
@@ -156,32 +160,10 @@ public final class InstableSprayLevelFinishNotifyOuterClass {
               emu.grasscutter.net.proto.InstableSprayLevelFinishNotifyOuterClass.InstableSprayLevelFinishNotify.class, emu.grasscutter.net.proto.InstableSprayLevelFinishNotifyOuterClass.InstableSprayLevelFinishNotify.Builder.class);
     }
 
-    public static final int IS_NEED_SWITCH_TEAM_FIELD_NUMBER = 11;
-    private boolean isNeedSwitchTeam_;
-    /**
-     * <code>bool is_need_switch_team = 11;</code>
-     * @return The isNeedSwitchTeam.
-     */
-    @java.lang.Override
-    public boolean getIsNeedSwitchTeam() {
-      return isNeedSwitchTeam_;
-    }
-
-    public static final int IS_SKIP_BLACK_SCREEN_FIELD_NUMBER = 7;
-    private boolean isSkipBlackScreen_;
-    /**
-     * <code>bool is_skip_black_screen = 7;</code>
-     * @return The isSkipBlackScreen.
-     */
-    @java.lang.Override
-    public boolean getIsSkipBlackScreen() {
-      return isSkipBlackScreen_;
-    }
-
-    public static final int ROUND_FIELD_NUMBER = 15;
+    public static final int ROUND_FIELD_NUMBER = 2;
     private int round_;
     /**
-     * <code>uint32 round = 15;</code>
+     * <code>uint32 round = 2;</code>
      * @return The round.
      */
     @java.lang.Override
@@ -189,26 +171,48 @@ public final class InstableSprayLevelFinishNotifyOuterClass {
       return round_;
     }
 
-    public static final int STAGE_ID_FIELD_NUMBER = 8;
-    private int stageId_;
-    /**
-     * <code>uint32 stage_id = 8;</code>
-     * @return The stageId.
-     */
-    @java.lang.Override
-    public int getStageId() {
-      return stageId_;
-    }
-
-    public static final int LEVEL_ID_FIELD_NUMBER = 10;
+    public static final int LEVEL_ID_FIELD_NUMBER = 15;
     private int levelId_;
     /**
-     * <code>uint32 level_id = 10;</code>
+     * <code>uint32 level_id = 15;</code>
      * @return The levelId.
      */
     @java.lang.Override
     public int getLevelId() {
       return levelId_;
+    }
+
+    public static final int UNK3300_AMEBAPIPLGL_FIELD_NUMBER = 3;
+    private boolean unk3300AMEBAPIPLGL_;
+    /**
+     * <code>bool Unk3300_AMEBAPIPLGL = 3;</code>
+     * @return The unk3300AMEBAPIPLGL.
+     */
+    @java.lang.Override
+    public boolean getUnk3300AMEBAPIPLGL() {
+      return unk3300AMEBAPIPLGL_;
+    }
+
+    public static final int UNK3300_DHKHBKLBIPA_FIELD_NUMBER = 12;
+    private boolean unk3300DHKHBKLBIPA_;
+    /**
+     * <code>bool Unk3300_DHKHBKLBIPA = 12;</code>
+     * @return The unk3300DHKHBKLBIPA.
+     */
+    @java.lang.Override
+    public boolean getUnk3300DHKHBKLBIPA() {
+      return unk3300DHKHBKLBIPA_;
+    }
+
+    public static final int STAGE_ID_FIELD_NUMBER = 10;
+    private int stageId_;
+    /**
+     * <code>uint32 stage_id = 10;</code>
+     * @return The stageId.
+     */
+    @java.lang.Override
+    public int getStageId() {
+      return stageId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -225,20 +229,20 @@ public final class InstableSprayLevelFinishNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (isSkipBlackScreen_ != false) {
-        output.writeBool(7, isSkipBlackScreen_);
+      if (round_ != 0) {
+        output.writeUInt32(2, round_);
+      }
+      if (unk3300AMEBAPIPLGL_ != false) {
+        output.writeBool(3, unk3300AMEBAPIPLGL_);
       }
       if (stageId_ != 0) {
-        output.writeUInt32(8, stageId_);
+        output.writeUInt32(10, stageId_);
+      }
+      if (unk3300DHKHBKLBIPA_ != false) {
+        output.writeBool(12, unk3300DHKHBKLBIPA_);
       }
       if (levelId_ != 0) {
-        output.writeUInt32(10, levelId_);
-      }
-      if (isNeedSwitchTeam_ != false) {
-        output.writeBool(11, isNeedSwitchTeam_);
-      }
-      if (round_ != 0) {
-        output.writeUInt32(15, round_);
+        output.writeUInt32(15, levelId_);
       }
       unknownFields.writeTo(output);
     }
@@ -249,25 +253,25 @@ public final class InstableSprayLevelFinishNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (isSkipBlackScreen_ != false) {
+      if (round_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(7, isSkipBlackScreen_);
+          .computeUInt32Size(2, round_);
+      }
+      if (unk3300AMEBAPIPLGL_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(3, unk3300AMEBAPIPLGL_);
       }
       if (stageId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, stageId_);
+          .computeUInt32Size(10, stageId_);
+      }
+      if (unk3300DHKHBKLBIPA_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(12, unk3300DHKHBKLBIPA_);
       }
       if (levelId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, levelId_);
-      }
-      if (isNeedSwitchTeam_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(11, isNeedSwitchTeam_);
-      }
-      if (round_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, round_);
+          .computeUInt32Size(15, levelId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -284,16 +288,16 @@ public final class InstableSprayLevelFinishNotifyOuterClass {
       }
       emu.grasscutter.net.proto.InstableSprayLevelFinishNotifyOuterClass.InstableSprayLevelFinishNotify other = (emu.grasscutter.net.proto.InstableSprayLevelFinishNotifyOuterClass.InstableSprayLevelFinishNotify) obj;
 
-      if (getIsNeedSwitchTeam()
-          != other.getIsNeedSwitchTeam()) return false;
-      if (getIsSkipBlackScreen()
-          != other.getIsSkipBlackScreen()) return false;
       if (getRound()
           != other.getRound()) return false;
-      if (getStageId()
-          != other.getStageId()) return false;
       if (getLevelId()
           != other.getLevelId()) return false;
+      if (getUnk3300AMEBAPIPLGL()
+          != other.getUnk3300AMEBAPIPLGL()) return false;
+      if (getUnk3300DHKHBKLBIPA()
+          != other.getUnk3300DHKHBKLBIPA()) return false;
+      if (getStageId()
+          != other.getStageId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -305,18 +309,18 @@ public final class InstableSprayLevelFinishNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + IS_NEED_SWITCH_TEAM_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsNeedSwitchTeam());
-      hash = (37 * hash) + IS_SKIP_BLACK_SCREEN_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsSkipBlackScreen());
       hash = (37 * hash) + ROUND_FIELD_NUMBER;
       hash = (53 * hash) + getRound();
-      hash = (37 * hash) + STAGE_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getStageId();
       hash = (37 * hash) + LEVEL_ID_FIELD_NUMBER;
       hash = (53 * hash) + getLevelId();
+      hash = (37 * hash) + UNK3300_AMEBAPIPLGL_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getUnk3300AMEBAPIPLGL());
+      hash = (37 * hash) + UNK3300_DHKHBKLBIPA_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getUnk3300DHKHBKLBIPA());
+      hash = (37 * hash) + STAGE_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getStageId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -414,9 +418,13 @@ public final class InstableSprayLevelFinishNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 21961
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 21512;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code InstableSprayLevelFinishNotify}
@@ -456,15 +464,15 @@ public final class InstableSprayLevelFinishNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        isNeedSwitchTeam_ = false;
-
-        isSkipBlackScreen_ = false;
-
         round_ = 0;
 
-        stageId_ = 0;
-
         levelId_ = 0;
+
+        unk3300AMEBAPIPLGL_ = false;
+
+        unk3300DHKHBKLBIPA_ = false;
+
+        stageId_ = 0;
 
         return this;
       }
@@ -492,11 +500,11 @@ public final class InstableSprayLevelFinishNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.InstableSprayLevelFinishNotifyOuterClass.InstableSprayLevelFinishNotify buildPartial() {
         emu.grasscutter.net.proto.InstableSprayLevelFinishNotifyOuterClass.InstableSprayLevelFinishNotify result = new emu.grasscutter.net.proto.InstableSprayLevelFinishNotifyOuterClass.InstableSprayLevelFinishNotify(this);
-        result.isNeedSwitchTeam_ = isNeedSwitchTeam_;
-        result.isSkipBlackScreen_ = isSkipBlackScreen_;
         result.round_ = round_;
-        result.stageId_ = stageId_;
         result.levelId_ = levelId_;
+        result.unk3300AMEBAPIPLGL_ = unk3300AMEBAPIPLGL_;
+        result.unk3300DHKHBKLBIPA_ = unk3300DHKHBKLBIPA_;
+        result.stageId_ = stageId_;
         onBuilt();
         return result;
       }
@@ -545,20 +553,20 @@ public final class InstableSprayLevelFinishNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.InstableSprayLevelFinishNotifyOuterClass.InstableSprayLevelFinishNotify other) {
         if (other == emu.grasscutter.net.proto.InstableSprayLevelFinishNotifyOuterClass.InstableSprayLevelFinishNotify.getDefaultInstance()) return this;
-        if (other.getIsNeedSwitchTeam() != false) {
-          setIsNeedSwitchTeam(other.getIsNeedSwitchTeam());
-        }
-        if (other.getIsSkipBlackScreen() != false) {
-          setIsSkipBlackScreen(other.getIsSkipBlackScreen());
-        }
         if (other.getRound() != 0) {
           setRound(other.getRound());
         }
-        if (other.getStageId() != 0) {
-          setStageId(other.getStageId());
-        }
         if (other.getLevelId() != 0) {
           setLevelId(other.getLevelId());
+        }
+        if (other.getUnk3300AMEBAPIPLGL() != false) {
+          setUnk3300AMEBAPIPLGL(other.getUnk3300AMEBAPIPLGL());
+        }
+        if (other.getUnk3300DHKHBKLBIPA() != false) {
+          setUnk3300DHKHBKLBIPA(other.getUnk3300DHKHBKLBIPA());
+        }
+        if (other.getStageId() != 0) {
+          setStageId(other.getStageId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -589,71 +597,9 @@ public final class InstableSprayLevelFinishNotifyOuterClass {
         return this;
       }
 
-      private boolean isNeedSwitchTeam_ ;
-      /**
-       * <code>bool is_need_switch_team = 11;</code>
-       * @return The isNeedSwitchTeam.
-       */
-      @java.lang.Override
-      public boolean getIsNeedSwitchTeam() {
-        return isNeedSwitchTeam_;
-      }
-      /**
-       * <code>bool is_need_switch_team = 11;</code>
-       * @param value The isNeedSwitchTeam to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsNeedSwitchTeam(boolean value) {
-        
-        isNeedSwitchTeam_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_need_switch_team = 11;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsNeedSwitchTeam() {
-        
-        isNeedSwitchTeam_ = false;
-        onChanged();
-        return this;
-      }
-
-      private boolean isSkipBlackScreen_ ;
-      /**
-       * <code>bool is_skip_black_screen = 7;</code>
-       * @return The isSkipBlackScreen.
-       */
-      @java.lang.Override
-      public boolean getIsSkipBlackScreen() {
-        return isSkipBlackScreen_;
-      }
-      /**
-       * <code>bool is_skip_black_screen = 7;</code>
-       * @param value The isSkipBlackScreen to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsSkipBlackScreen(boolean value) {
-        
-        isSkipBlackScreen_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_skip_black_screen = 7;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsSkipBlackScreen() {
-        
-        isSkipBlackScreen_ = false;
-        onChanged();
-        return this;
-      }
-
       private int round_ ;
       /**
-       * <code>uint32 round = 15;</code>
+       * <code>uint32 round = 2;</code>
        * @return The round.
        */
       @java.lang.Override
@@ -661,7 +607,7 @@ public final class InstableSprayLevelFinishNotifyOuterClass {
         return round_;
       }
       /**
-       * <code>uint32 round = 15;</code>
+       * <code>uint32 round = 2;</code>
        * @param value The round to set.
        * @return This builder for chaining.
        */
@@ -672,7 +618,7 @@ public final class InstableSprayLevelFinishNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 round = 15;</code>
+       * <code>uint32 round = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearRound() {
@@ -682,40 +628,9 @@ public final class InstableSprayLevelFinishNotifyOuterClass {
         return this;
       }
 
-      private int stageId_ ;
-      /**
-       * <code>uint32 stage_id = 8;</code>
-       * @return The stageId.
-       */
-      @java.lang.Override
-      public int getStageId() {
-        return stageId_;
-      }
-      /**
-       * <code>uint32 stage_id = 8;</code>
-       * @param value The stageId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setStageId(int value) {
-        
-        stageId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 stage_id = 8;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearStageId() {
-        
-        stageId_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int levelId_ ;
       /**
-       * <code>uint32 level_id = 10;</code>
+       * <code>uint32 level_id = 15;</code>
        * @return The levelId.
        */
       @java.lang.Override
@@ -723,7 +638,7 @@ public final class InstableSprayLevelFinishNotifyOuterClass {
         return levelId_;
       }
       /**
-       * <code>uint32 level_id = 10;</code>
+       * <code>uint32 level_id = 15;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
        */
@@ -734,12 +649,105 @@ public final class InstableSprayLevelFinishNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 level_id = 10;</code>
+       * <code>uint32 level_id = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearLevelId() {
         
         levelId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private boolean unk3300AMEBAPIPLGL_ ;
+      /**
+       * <code>bool Unk3300_AMEBAPIPLGL = 3;</code>
+       * @return The unk3300AMEBAPIPLGL.
+       */
+      @java.lang.Override
+      public boolean getUnk3300AMEBAPIPLGL() {
+        return unk3300AMEBAPIPLGL_;
+      }
+      /**
+       * <code>bool Unk3300_AMEBAPIPLGL = 3;</code>
+       * @param value The unk3300AMEBAPIPLGL to set.
+       * @return This builder for chaining.
+       */
+      public Builder setUnk3300AMEBAPIPLGL(boolean value) {
+        
+        unk3300AMEBAPIPLGL_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool Unk3300_AMEBAPIPLGL = 3;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearUnk3300AMEBAPIPLGL() {
+        
+        unk3300AMEBAPIPLGL_ = false;
+        onChanged();
+        return this;
+      }
+
+      private boolean unk3300DHKHBKLBIPA_ ;
+      /**
+       * <code>bool Unk3300_DHKHBKLBIPA = 12;</code>
+       * @return The unk3300DHKHBKLBIPA.
+       */
+      @java.lang.Override
+      public boolean getUnk3300DHKHBKLBIPA() {
+        return unk3300DHKHBKLBIPA_;
+      }
+      /**
+       * <code>bool Unk3300_DHKHBKLBIPA = 12;</code>
+       * @param value The unk3300DHKHBKLBIPA to set.
+       * @return This builder for chaining.
+       */
+      public Builder setUnk3300DHKHBKLBIPA(boolean value) {
+        
+        unk3300DHKHBKLBIPA_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool Unk3300_DHKHBKLBIPA = 12;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearUnk3300DHKHBKLBIPA() {
+        
+        unk3300DHKHBKLBIPA_ = false;
+        onChanged();
+        return this;
+      }
+
+      private int stageId_ ;
+      /**
+       * <code>uint32 stage_id = 10;</code>
+       * @return The stageId.
+       */
+      @java.lang.Override
+      public int getStageId() {
+        return stageId_;
+      }
+      /**
+       * <code>uint32 stage_id = 10;</code>
+       * @param value The stageId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setStageId(int value) {
+        
+        stageId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 stage_id = 10;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearStageId() {
+        
+        stageId_ = 0;
         onChanged();
         return this;
       }
@@ -810,12 +818,12 @@ public final class InstableSprayLevelFinishNotifyOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n$InstableSprayLevelFinishNotify.proto\"\216" +
-      "\001\n\036InstableSprayLevelFinishNotify\022\033\n\023is_" +
-      "need_switch_team\030\013 \001(\010\022\034\n\024is_skip_black_" +
-      "screen\030\007 \001(\010\022\r\n\005round\030\017 \001(\r\022\020\n\010stage_id\030" +
-      "\010 \001(\r\022\020\n\010level_id\030\n \001(\rB\033\n\031emu.grasscutt" +
-      "er.net.protob\006proto3"
+      "\n$InstableSprayLevelFinishNotify.proto\"\215" +
+      "\001\n\036InstableSprayLevelFinishNotify\022\r\n\005rou" +
+      "nd\030\002 \001(\r\022\020\n\010level_id\030\017 \001(\r\022\033\n\023Unk3300_AM" +
+      "EBAPIPLGL\030\003 \001(\010\022\033\n\023Unk3300_DHKHBKLBIPA\030\014" +
+      " \001(\010\022\020\n\010stage_id\030\n \001(\rB\033\n\031emu.grasscutte" +
+      "r.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -826,7 +834,7 @@ public final class InstableSprayLevelFinishNotifyOuterClass {
     internal_static_InstableSprayLevelFinishNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_InstableSprayLevelFinishNotify_descriptor,
-        new java.lang.String[] { "IsNeedSwitchTeam", "IsSkipBlackScreen", "Round", "StageId", "LevelId", });
+        new java.lang.String[] { "Round", "LevelId", "Unk3300AMEBAPIPLGL", "Unk3300DHKHBKLBIPA", "StageId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

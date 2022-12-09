@@ -19,28 +19,32 @@ public final class SeaLampFlyLampRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
+     * <code>int32 retcode = 3;</code>
+     * @return The retcode.
+     */
+    int getRetcode();
+
+    /**
      * <code>uint32 item_num = 9;</code>
      * @return The itemNum.
      */
     int getItemNum();
 
     /**
-     * <code>uint32 item_id = 15;</code>
+     * <code>uint32 item_id = 10;</code>
      * @return The itemId.
      */
     int getItemId();
-
-    /**
-     * <code>int32 retcode = 14;</code>
-     * @return The retcode.
-     */
-    int getRetcode();
   }
   /**
    * <pre>
-   * CmdId: 2192
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 2161;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code SeaLampFlyLampRsp}
@@ -87,17 +91,17 @@ public final class SeaLampFlyLampRspOuterClass {
             case 0:
               done = true;
               break;
+            case 24: {
+
+              retcode_ = input.readInt32();
+              break;
+            }
             case 72: {
 
               itemNum_ = input.readUInt32();
               break;
             }
-            case 112: {
-
-              retcode_ = input.readInt32();
-              break;
-            }
-            case 120: {
+            case 80: {
 
               itemId_ = input.readUInt32();
               break;
@@ -134,6 +138,17 @@ public final class SeaLampFlyLampRspOuterClass {
               emu.grasscutter.net.proto.SeaLampFlyLampRspOuterClass.SeaLampFlyLampRsp.class, emu.grasscutter.net.proto.SeaLampFlyLampRspOuterClass.SeaLampFlyLampRsp.Builder.class);
     }
 
+    public static final int RETCODE_FIELD_NUMBER = 3;
+    private int retcode_;
+    /**
+     * <code>int32 retcode = 3;</code>
+     * @return The retcode.
+     */
+    @java.lang.Override
+    public int getRetcode() {
+      return retcode_;
+    }
+
     public static final int ITEM_NUM_FIELD_NUMBER = 9;
     private int itemNum_;
     /**
@@ -145,26 +160,15 @@ public final class SeaLampFlyLampRspOuterClass {
       return itemNum_;
     }
 
-    public static final int ITEM_ID_FIELD_NUMBER = 15;
+    public static final int ITEM_ID_FIELD_NUMBER = 10;
     private int itemId_;
     /**
-     * <code>uint32 item_id = 15;</code>
+     * <code>uint32 item_id = 10;</code>
      * @return The itemId.
      */
     @java.lang.Override
     public int getItemId() {
       return itemId_;
-    }
-
-    public static final int RETCODE_FIELD_NUMBER = 14;
-    private int retcode_;
-    /**
-     * <code>int32 retcode = 14;</code>
-     * @return The retcode.
-     */
-    @java.lang.Override
-    public int getRetcode() {
-      return retcode_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -181,14 +185,14 @@ public final class SeaLampFlyLampRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (retcode_ != 0) {
+        output.writeInt32(3, retcode_);
+      }
       if (itemNum_ != 0) {
         output.writeUInt32(9, itemNum_);
       }
-      if (retcode_ != 0) {
-        output.writeInt32(14, retcode_);
-      }
       if (itemId_ != 0) {
-        output.writeUInt32(15, itemId_);
+        output.writeUInt32(10, itemId_);
       }
       unknownFields.writeTo(output);
     }
@@ -199,17 +203,17 @@ public final class SeaLampFlyLampRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (retcode_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(3, retcode_);
+      }
       if (itemNum_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(9, itemNum_);
       }
-      if (retcode_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(14, retcode_);
-      }
       if (itemId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, itemId_);
+          .computeUInt32Size(10, itemId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -226,12 +230,12 @@ public final class SeaLampFlyLampRspOuterClass {
       }
       emu.grasscutter.net.proto.SeaLampFlyLampRspOuterClass.SeaLampFlyLampRsp other = (emu.grasscutter.net.proto.SeaLampFlyLampRspOuterClass.SeaLampFlyLampRsp) obj;
 
+      if (getRetcode()
+          != other.getRetcode()) return false;
       if (getItemNum()
           != other.getItemNum()) return false;
       if (getItemId()
           != other.getItemId()) return false;
-      if (getRetcode()
-          != other.getRetcode()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -243,12 +247,12 @@ public final class SeaLampFlyLampRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
+      hash = (53 * hash) + getRetcode();
       hash = (37 * hash) + ITEM_NUM_FIELD_NUMBER;
       hash = (53 * hash) + getItemNum();
       hash = (37 * hash) + ITEM_ID_FIELD_NUMBER;
       hash = (53 * hash) + getItemId();
-      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
-      hash = (53 * hash) + getRetcode();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -346,9 +350,13 @@ public final class SeaLampFlyLampRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 2192
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 2161;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code SeaLampFlyLampRsp}
@@ -388,11 +396,11 @@ public final class SeaLampFlyLampRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        retcode_ = 0;
+
         itemNum_ = 0;
 
         itemId_ = 0;
-
-        retcode_ = 0;
 
         return this;
       }
@@ -420,9 +428,9 @@ public final class SeaLampFlyLampRspOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.SeaLampFlyLampRspOuterClass.SeaLampFlyLampRsp buildPartial() {
         emu.grasscutter.net.proto.SeaLampFlyLampRspOuterClass.SeaLampFlyLampRsp result = new emu.grasscutter.net.proto.SeaLampFlyLampRspOuterClass.SeaLampFlyLampRsp(this);
+        result.retcode_ = retcode_;
         result.itemNum_ = itemNum_;
         result.itemId_ = itemId_;
-        result.retcode_ = retcode_;
         onBuilt();
         return result;
       }
@@ -471,14 +479,14 @@ public final class SeaLampFlyLampRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.SeaLampFlyLampRspOuterClass.SeaLampFlyLampRsp other) {
         if (other == emu.grasscutter.net.proto.SeaLampFlyLampRspOuterClass.SeaLampFlyLampRsp.getDefaultInstance()) return this;
+        if (other.getRetcode() != 0) {
+          setRetcode(other.getRetcode());
+        }
         if (other.getItemNum() != 0) {
           setItemNum(other.getItemNum());
         }
         if (other.getItemId() != 0) {
           setItemId(other.getItemId());
-        }
-        if (other.getRetcode() != 0) {
-          setRetcode(other.getRetcode());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -506,6 +514,37 @@ public final class SeaLampFlyLampRspOuterClass {
             mergeFrom(parsedMessage);
           }
         }
+        return this;
+      }
+
+      private int retcode_ ;
+      /**
+       * <code>int32 retcode = 3;</code>
+       * @return The retcode.
+       */
+      @java.lang.Override
+      public int getRetcode() {
+        return retcode_;
+      }
+      /**
+       * <code>int32 retcode = 3;</code>
+       * @param value The retcode to set.
+       * @return This builder for chaining.
+       */
+      public Builder setRetcode(int value) {
+        
+        retcode_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 retcode = 3;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearRetcode() {
+        
+        retcode_ = 0;
+        onChanged();
         return this;
       }
 
@@ -542,7 +581,7 @@ public final class SeaLampFlyLampRspOuterClass {
 
       private int itemId_ ;
       /**
-       * <code>uint32 item_id = 15;</code>
+       * <code>uint32 item_id = 10;</code>
        * @return The itemId.
        */
       @java.lang.Override
@@ -550,7 +589,7 @@ public final class SeaLampFlyLampRspOuterClass {
         return itemId_;
       }
       /**
-       * <code>uint32 item_id = 15;</code>
+       * <code>uint32 item_id = 10;</code>
        * @param value The itemId to set.
        * @return This builder for chaining.
        */
@@ -561,43 +600,12 @@ public final class SeaLampFlyLampRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 item_id = 15;</code>
+       * <code>uint32 item_id = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearItemId() {
         
         itemId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int retcode_ ;
-      /**
-       * <code>int32 retcode = 14;</code>
-       * @return The retcode.
-       */
-      @java.lang.Override
-      public int getRetcode() {
-        return retcode_;
-      }
-      /**
-       * <code>int32 retcode = 14;</code>
-       * @param value The retcode to set.
-       * @return This builder for chaining.
-       */
-      public Builder setRetcode(int value) {
-        
-        retcode_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>int32 retcode = 14;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearRetcode() {
-        
-        retcode_ = 0;
         onChanged();
         return this;
       }
@@ -669,8 +677,8 @@ public final class SeaLampFlyLampRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\027SeaLampFlyLampRsp.proto\"G\n\021SeaLampFlyL" +
-      "ampRsp\022\020\n\010item_num\030\t \001(\r\022\017\n\007item_id\030\017 \001(" +
-      "\r\022\017\n\007retcode\030\016 \001(\005B\033\n\031emu.grasscutter.ne" +
+      "ampRsp\022\017\n\007retcode\030\003 \001(\005\022\020\n\010item_num\030\t \001(" +
+      "\r\022\017\n\007item_id\030\n \001(\rB\033\n\031emu.grasscutter.ne" +
       "t.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -682,7 +690,7 @@ public final class SeaLampFlyLampRspOuterClass {
     internal_static_SeaLampFlyLampRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SeaLampFlyLampRsp_descriptor,
-        new java.lang.String[] { "ItemNum", "ItemId", "Retcode", });
+        new java.lang.String[] { "Retcode", "ItemNum", "ItemId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

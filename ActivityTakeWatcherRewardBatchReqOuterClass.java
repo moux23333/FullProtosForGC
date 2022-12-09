@@ -19,34 +19,38 @@ public final class ActivityTakeWatcherRewardBatchReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated uint32 watcher_id_list = 11;</code>
+     * <code>repeated uint32 watcher_id_list = 7;</code>
      * @return A list containing the watcherIdList.
      */
     java.util.List<java.lang.Integer> getWatcherIdListList();
     /**
-     * <code>repeated uint32 watcher_id_list = 11;</code>
+     * <code>repeated uint32 watcher_id_list = 7;</code>
      * @return The count of watcherIdList.
      */
     int getWatcherIdListCount();
     /**
-     * <code>repeated uint32 watcher_id_list = 11;</code>
+     * <code>repeated uint32 watcher_id_list = 7;</code>
      * @param index The index of the element to return.
      * @return The watcherIdList at the given index.
      */
     int getWatcherIdList(int index);
 
     /**
-     * <code>uint32 activity_id = 3;</code>
+     * <code>uint32 activity_id = 11;</code>
      * @return The activityId.
      */
     int getActivityId();
   }
   /**
    * <pre>
-   * CmdId: 2159
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 2184;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code ActivityTakeWatcherRewardBatchReq}
@@ -95,12 +99,7 @@ public final class ActivityTakeWatcherRewardBatchReqOuterClass {
             case 0:
               done = true;
               break;
-            case 24: {
-
-              activityId_ = input.readUInt32();
-              break;
-            }
-            case 88: {
+            case 56: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 watcherIdList_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
@@ -108,7 +107,7 @@ public final class ActivityTakeWatcherRewardBatchReqOuterClass {
               watcherIdList_.addInt(input.readUInt32());
               break;
             }
-            case 90: {
+            case 58: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -119,6 +118,11 @@ public final class ActivityTakeWatcherRewardBatchReqOuterClass {
                 watcherIdList_.addInt(input.readUInt32());
               }
               input.popLimit(limit);
+              break;
+            }
+            case 88: {
+
+              activityId_ = input.readUInt32();
               break;
             }
             default: {
@@ -156,10 +160,10 @@ public final class ActivityTakeWatcherRewardBatchReqOuterClass {
               emu.grasscutter.net.proto.ActivityTakeWatcherRewardBatchReqOuterClass.ActivityTakeWatcherRewardBatchReq.class, emu.grasscutter.net.proto.ActivityTakeWatcherRewardBatchReqOuterClass.ActivityTakeWatcherRewardBatchReq.Builder.class);
     }
 
-    public static final int WATCHER_ID_LIST_FIELD_NUMBER = 11;
+    public static final int WATCHER_ID_LIST_FIELD_NUMBER = 7;
     private com.google.protobuf.Internal.IntList watcherIdList_;
     /**
-     * <code>repeated uint32 watcher_id_list = 11;</code>
+     * <code>repeated uint32 watcher_id_list = 7;</code>
      * @return A list containing the watcherIdList.
      */
     @java.lang.Override
@@ -168,14 +172,14 @@ public final class ActivityTakeWatcherRewardBatchReqOuterClass {
       return watcherIdList_;
     }
     /**
-     * <code>repeated uint32 watcher_id_list = 11;</code>
+     * <code>repeated uint32 watcher_id_list = 7;</code>
      * @return The count of watcherIdList.
      */
     public int getWatcherIdListCount() {
       return watcherIdList_.size();
     }
     /**
-     * <code>repeated uint32 watcher_id_list = 11;</code>
+     * <code>repeated uint32 watcher_id_list = 7;</code>
      * @param index The index of the element to return.
      * @return The watcherIdList at the given index.
      */
@@ -184,10 +188,10 @@ public final class ActivityTakeWatcherRewardBatchReqOuterClass {
     }
     private int watcherIdListMemoizedSerializedSize = -1;
 
-    public static final int ACTIVITY_ID_FIELD_NUMBER = 3;
+    public static final int ACTIVITY_ID_FIELD_NUMBER = 11;
     private int activityId_;
     /**
-     * <code>uint32 activity_id = 3;</code>
+     * <code>uint32 activity_id = 11;</code>
      * @return The activityId.
      */
     @java.lang.Override
@@ -210,15 +214,15 @@ public final class ActivityTakeWatcherRewardBatchReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      if (activityId_ != 0) {
-        output.writeUInt32(3, activityId_);
-      }
       if (getWatcherIdListList().size() > 0) {
-        output.writeUInt32NoTag(90);
+        output.writeUInt32NoTag(58);
         output.writeUInt32NoTag(watcherIdListMemoizedSerializedSize);
       }
       for (int i = 0; i < watcherIdList_.size(); i++) {
         output.writeUInt32NoTag(watcherIdList_.getInt(i));
+      }
+      if (activityId_ != 0) {
+        output.writeUInt32(11, activityId_);
       }
       unknownFields.writeTo(output);
     }
@@ -229,10 +233,6 @@ public final class ActivityTakeWatcherRewardBatchReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (activityId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, activityId_);
-      }
       {
         int dataSize = 0;
         for (int i = 0; i < watcherIdList_.size(); i++) {
@@ -246,6 +246,10 @@ public final class ActivityTakeWatcherRewardBatchReqOuterClass {
               .computeInt32SizeNoTag(dataSize);
         }
         watcherIdListMemoizedSerializedSize = dataSize;
+      }
+      if (activityId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(11, activityId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -380,10 +384,14 @@ public final class ActivityTakeWatcherRewardBatchReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 2159
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 2184;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code ActivityTakeWatcherRewardBatchReq}
@@ -559,7 +567,7 @@ public final class ActivityTakeWatcherRewardBatchReqOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 watcher_id_list = 11;</code>
+       * <code>repeated uint32 watcher_id_list = 7;</code>
        * @return A list containing the watcherIdList.
        */
       public java.util.List<java.lang.Integer>
@@ -568,14 +576,14 @@ public final class ActivityTakeWatcherRewardBatchReqOuterClass {
                  java.util.Collections.unmodifiableList(watcherIdList_) : watcherIdList_;
       }
       /**
-       * <code>repeated uint32 watcher_id_list = 11;</code>
+       * <code>repeated uint32 watcher_id_list = 7;</code>
        * @return The count of watcherIdList.
        */
       public int getWatcherIdListCount() {
         return watcherIdList_.size();
       }
       /**
-       * <code>repeated uint32 watcher_id_list = 11;</code>
+       * <code>repeated uint32 watcher_id_list = 7;</code>
        * @param index The index of the element to return.
        * @return The watcherIdList at the given index.
        */
@@ -583,7 +591,7 @@ public final class ActivityTakeWatcherRewardBatchReqOuterClass {
         return watcherIdList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 watcher_id_list = 11;</code>
+       * <code>repeated uint32 watcher_id_list = 7;</code>
        * @param index The index to set the value at.
        * @param value The watcherIdList to set.
        * @return This builder for chaining.
@@ -596,7 +604,7 @@ public final class ActivityTakeWatcherRewardBatchReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 watcher_id_list = 11;</code>
+       * <code>repeated uint32 watcher_id_list = 7;</code>
        * @param value The watcherIdList to add.
        * @return This builder for chaining.
        */
@@ -607,7 +615,7 @@ public final class ActivityTakeWatcherRewardBatchReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 watcher_id_list = 11;</code>
+       * <code>repeated uint32 watcher_id_list = 7;</code>
        * @param values The watcherIdList to add.
        * @return This builder for chaining.
        */
@@ -620,7 +628,7 @@ public final class ActivityTakeWatcherRewardBatchReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 watcher_id_list = 11;</code>
+       * <code>repeated uint32 watcher_id_list = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearWatcherIdList() {
@@ -632,7 +640,7 @@ public final class ActivityTakeWatcherRewardBatchReqOuterClass {
 
       private int activityId_ ;
       /**
-       * <code>uint32 activity_id = 3;</code>
+       * <code>uint32 activity_id = 11;</code>
        * @return The activityId.
        */
       @java.lang.Override
@@ -640,7 +648,7 @@ public final class ActivityTakeWatcherRewardBatchReqOuterClass {
         return activityId_;
       }
       /**
-       * <code>uint32 activity_id = 3;</code>
+       * <code>uint32 activity_id = 11;</code>
        * @param value The activityId to set.
        * @return This builder for chaining.
        */
@@ -651,7 +659,7 @@ public final class ActivityTakeWatcherRewardBatchReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 activity_id = 3;</code>
+       * <code>uint32 activity_id = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearActivityId() {
@@ -729,7 +737,7 @@ public final class ActivityTakeWatcherRewardBatchReqOuterClass {
     java.lang.String[] descriptorData = {
       "\n\'ActivityTakeWatcherRewardBatchReq.prot" +
       "o\"Q\n!ActivityTakeWatcherRewardBatchReq\022\027" +
-      "\n\017watcher_id_list\030\013 \003(\r\022\023\n\013activity_id\030\003" +
+      "\n\017watcher_id_list\030\007 \003(\r\022\023\n\013activity_id\030\013" +
       " \001(\rB\033\n\031emu.grasscutter.net.protob\006proto" +
       "3"
     };

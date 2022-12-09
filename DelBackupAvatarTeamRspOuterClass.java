@@ -19,22 +19,26 @@ public final class DelBackupAvatarTeamRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 backup_avatar_team_id = 15;</code>
+     * <code>uint32 backup_avatar_team_id = 9;</code>
      * @return The backupAvatarTeamId.
      */
     int getBackupAvatarTeamId();
 
     /**
-     * <code>int32 retcode = 4;</code>
+     * <code>int32 retcode = 3;</code>
      * @return The retcode.
      */
     int getRetcode();
   }
   /**
    * <pre>
-   * CmdId: 1729
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 1666;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code DelBackupAvatarTeamRsp}
@@ -81,12 +85,12 @@ public final class DelBackupAvatarTeamRspOuterClass {
             case 0:
               done = true;
               break;
-            case 32: {
+            case 24: {
 
               retcode_ = input.readInt32();
               break;
             }
-            case 120: {
+            case 72: {
 
               backupAvatarTeamId_ = input.readUInt32();
               break;
@@ -123,10 +127,10 @@ public final class DelBackupAvatarTeamRspOuterClass {
               emu.grasscutter.net.proto.DelBackupAvatarTeamRspOuterClass.DelBackupAvatarTeamRsp.class, emu.grasscutter.net.proto.DelBackupAvatarTeamRspOuterClass.DelBackupAvatarTeamRsp.Builder.class);
     }
 
-    public static final int BACKUP_AVATAR_TEAM_ID_FIELD_NUMBER = 15;
+    public static final int BACKUP_AVATAR_TEAM_ID_FIELD_NUMBER = 9;
     private int backupAvatarTeamId_;
     /**
-     * <code>uint32 backup_avatar_team_id = 15;</code>
+     * <code>uint32 backup_avatar_team_id = 9;</code>
      * @return The backupAvatarTeamId.
      */
     @java.lang.Override
@@ -134,10 +138,10 @@ public final class DelBackupAvatarTeamRspOuterClass {
       return backupAvatarTeamId_;
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 4;
+    public static final int RETCODE_FIELD_NUMBER = 3;
     private int retcode_;
     /**
-     * <code>int32 retcode = 4;</code>
+     * <code>int32 retcode = 3;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -160,10 +164,10 @@ public final class DelBackupAvatarTeamRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (retcode_ != 0) {
-        output.writeInt32(4, retcode_);
+        output.writeInt32(3, retcode_);
       }
       if (backupAvatarTeamId_ != 0) {
-        output.writeUInt32(15, backupAvatarTeamId_);
+        output.writeUInt32(9, backupAvatarTeamId_);
       }
       unknownFields.writeTo(output);
     }
@@ -176,11 +180,11 @@ public final class DelBackupAvatarTeamRspOuterClass {
       size = 0;
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(4, retcode_);
+          .computeInt32Size(3, retcode_);
       }
       if (backupAvatarTeamId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, backupAvatarTeamId_);
+          .computeUInt32Size(9, backupAvatarTeamId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -313,9 +317,13 @@ public final class DelBackupAvatarTeamRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 1729
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 1666;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code DelBackupAvatarTeamRsp}
@@ -472,7 +480,7 @@ public final class DelBackupAvatarTeamRspOuterClass {
 
       private int backupAvatarTeamId_ ;
       /**
-       * <code>uint32 backup_avatar_team_id = 15;</code>
+       * <code>uint32 backup_avatar_team_id = 9;</code>
        * @return The backupAvatarTeamId.
        */
       @java.lang.Override
@@ -480,7 +488,7 @@ public final class DelBackupAvatarTeamRspOuterClass {
         return backupAvatarTeamId_;
       }
       /**
-       * <code>uint32 backup_avatar_team_id = 15;</code>
+       * <code>uint32 backup_avatar_team_id = 9;</code>
        * @param value The backupAvatarTeamId to set.
        * @return This builder for chaining.
        */
@@ -491,7 +499,7 @@ public final class DelBackupAvatarTeamRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 backup_avatar_team_id = 15;</code>
+       * <code>uint32 backup_avatar_team_id = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearBackupAvatarTeamId() {
@@ -503,7 +511,7 @@ public final class DelBackupAvatarTeamRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 4;</code>
+       * <code>int32 retcode = 3;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -511,7 +519,7 @@ public final class DelBackupAvatarTeamRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 4;</code>
+       * <code>int32 retcode = 3;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -522,7 +530,7 @@ public final class DelBackupAvatarTeamRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 4;</code>
+       * <code>int32 retcode = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -600,7 +608,7 @@ public final class DelBackupAvatarTeamRspOuterClass {
     java.lang.String[] descriptorData = {
       "\n\034DelBackupAvatarTeamRsp.proto\"H\n\026DelBac" +
       "kupAvatarTeamRsp\022\035\n\025backup_avatar_team_i" +
-      "d\030\017 \001(\r\022\017\n\007retcode\030\004 \001(\005B\033\n\031emu.grasscut" +
+      "d\030\t \001(\r\022\017\n\007retcode\030\003 \001(\005B\033\n\031emu.grasscut" +
       "ter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

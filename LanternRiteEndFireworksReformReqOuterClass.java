@@ -19,23 +19,27 @@ public final class LanternRiteEndFireworksReformReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 stage_id = 9;</code>
+     * <code>uint32 stage_id = 1;</code>
      * @return The stageId.
      */
     int getStageId();
 
     /**
-     * <code>uint32 challenge_id = 1;</code>
+     * <code>uint32 challenge_id = 15;</code>
      * @return The challengeId.
      */
     int getChallengeId();
   }
   /**
    * <pre>
-   * CmdId: 8277
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 8936;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code LanternRiteEndFireworksReformReq}
@@ -84,12 +88,12 @@ public final class LanternRiteEndFireworksReformReqOuterClass {
               break;
             case 8: {
 
-              challengeId_ = input.readUInt32();
+              stageId_ = input.readUInt32();
               break;
             }
-            case 72: {
+            case 120: {
 
-              stageId_ = input.readUInt32();
+              challengeId_ = input.readUInt32();
               break;
             }
             default: {
@@ -124,10 +128,10 @@ public final class LanternRiteEndFireworksReformReqOuterClass {
               emu.grasscutter.net.proto.LanternRiteEndFireworksReformReqOuterClass.LanternRiteEndFireworksReformReq.class, emu.grasscutter.net.proto.LanternRiteEndFireworksReformReqOuterClass.LanternRiteEndFireworksReformReq.Builder.class);
     }
 
-    public static final int STAGE_ID_FIELD_NUMBER = 9;
+    public static final int STAGE_ID_FIELD_NUMBER = 1;
     private int stageId_;
     /**
-     * <code>uint32 stage_id = 9;</code>
+     * <code>uint32 stage_id = 1;</code>
      * @return The stageId.
      */
     @java.lang.Override
@@ -135,10 +139,10 @@ public final class LanternRiteEndFireworksReformReqOuterClass {
       return stageId_;
     }
 
-    public static final int CHALLENGE_ID_FIELD_NUMBER = 1;
+    public static final int CHALLENGE_ID_FIELD_NUMBER = 15;
     private int challengeId_;
     /**
-     * <code>uint32 challenge_id = 1;</code>
+     * <code>uint32 challenge_id = 15;</code>
      * @return The challengeId.
      */
     @java.lang.Override
@@ -160,11 +164,11 @@ public final class LanternRiteEndFireworksReformReqOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (challengeId_ != 0) {
-        output.writeUInt32(1, challengeId_);
-      }
       if (stageId_ != 0) {
-        output.writeUInt32(9, stageId_);
+        output.writeUInt32(1, stageId_);
+      }
+      if (challengeId_ != 0) {
+        output.writeUInt32(15, challengeId_);
       }
       unknownFields.writeTo(output);
     }
@@ -175,13 +179,13 @@ public final class LanternRiteEndFireworksReformReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (challengeId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, challengeId_);
-      }
       if (stageId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, stageId_);
+          .computeUInt32Size(1, stageId_);
+      }
+      if (challengeId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(15, challengeId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -314,10 +318,14 @@ public final class LanternRiteEndFireworksReformReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 8277
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 8936;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code LanternRiteEndFireworksReformReq}
@@ -474,7 +482,7 @@ public final class LanternRiteEndFireworksReformReqOuterClass {
 
       private int stageId_ ;
       /**
-       * <code>uint32 stage_id = 9;</code>
+       * <code>uint32 stage_id = 1;</code>
        * @return The stageId.
        */
       @java.lang.Override
@@ -482,7 +490,7 @@ public final class LanternRiteEndFireworksReformReqOuterClass {
         return stageId_;
       }
       /**
-       * <code>uint32 stage_id = 9;</code>
+       * <code>uint32 stage_id = 1;</code>
        * @param value The stageId to set.
        * @return This builder for chaining.
        */
@@ -493,7 +501,7 @@ public final class LanternRiteEndFireworksReformReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 stage_id = 9;</code>
+       * <code>uint32 stage_id = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearStageId() {
@@ -505,7 +513,7 @@ public final class LanternRiteEndFireworksReformReqOuterClass {
 
       private int challengeId_ ;
       /**
-       * <code>uint32 challenge_id = 1;</code>
+       * <code>uint32 challenge_id = 15;</code>
        * @return The challengeId.
        */
       @java.lang.Override
@@ -513,7 +521,7 @@ public final class LanternRiteEndFireworksReformReqOuterClass {
         return challengeId_;
       }
       /**
-       * <code>uint32 challenge_id = 1;</code>
+       * <code>uint32 challenge_id = 15;</code>
        * @param value The challengeId to set.
        * @return This builder for chaining.
        */
@@ -524,7 +532,7 @@ public final class LanternRiteEndFireworksReformReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 challenge_id = 1;</code>
+       * <code>uint32 challenge_id = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearChallengeId() {
@@ -602,7 +610,7 @@ public final class LanternRiteEndFireworksReformReqOuterClass {
     java.lang.String[] descriptorData = {
       "\n&LanternRiteEndFireworksReformReq.proto" +
       "\"J\n LanternRiteEndFireworksReformReq\022\020\n\010" +
-      "stage_id\030\t \001(\r\022\024\n\014challenge_id\030\001 \001(\rB\033\n\031" +
+      "stage_id\030\001 \001(\r\022\024\n\014challenge_id\030\017 \001(\rB\033\n\031" +
       "emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

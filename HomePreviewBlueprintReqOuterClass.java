@@ -19,12 +19,12 @@ public final class HomePreviewBlueprintReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>string share_code = 7;</code>
+     * <code>string share_code = 10;</code>
      * @return The shareCode.
      */
     java.lang.String getShareCode();
     /**
-     * <code>string share_code = 7;</code>
+     * <code>string share_code = 10;</code>
      * @return The bytes for shareCode.
      */
     com.google.protobuf.ByteString
@@ -32,10 +32,14 @@ public final class HomePreviewBlueprintReqOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 4478
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 4745;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code HomePreviewBlueprintReq}
@@ -83,7 +87,7 @@ public final class HomePreviewBlueprintReqOuterClass {
             case 0:
               done = true;
               break;
-            case 58: {
+            case 82: {
               java.lang.String s = input.readStringRequireUtf8();
 
               shareCode_ = s;
@@ -121,10 +125,10 @@ public final class HomePreviewBlueprintReqOuterClass {
               emu.grasscutter.net.proto.HomePreviewBlueprintReqOuterClass.HomePreviewBlueprintReq.class, emu.grasscutter.net.proto.HomePreviewBlueprintReqOuterClass.HomePreviewBlueprintReq.Builder.class);
     }
 
-    public static final int SHARE_CODE_FIELD_NUMBER = 7;
+    public static final int SHARE_CODE_FIELD_NUMBER = 10;
     private volatile java.lang.Object shareCode_;
     /**
-     * <code>string share_code = 7;</code>
+     * <code>string share_code = 10;</code>
      * @return The shareCode.
      */
     @java.lang.Override
@@ -141,7 +145,7 @@ public final class HomePreviewBlueprintReqOuterClass {
       }
     }
     /**
-     * <code>string share_code = 7;</code>
+     * <code>string share_code = 10;</code>
      * @return The bytes for shareCode.
      */
     @java.lang.Override
@@ -174,7 +178,7 @@ public final class HomePreviewBlueprintReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(shareCode_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 7, shareCode_);
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 10, shareCode_);
       }
       unknownFields.writeTo(output);
     }
@@ -186,7 +190,7 @@ public final class HomePreviewBlueprintReqOuterClass {
 
       size = 0;
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(shareCode_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(7, shareCode_);
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(10, shareCode_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -315,10 +319,14 @@ public final class HomePreviewBlueprintReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 4478
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 4745;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code HomePreviewBlueprintReq}
@@ -470,7 +478,7 @@ public final class HomePreviewBlueprintReqOuterClass {
 
       private java.lang.Object shareCode_ = "";
       /**
-       * <code>string share_code = 7;</code>
+       * <code>string share_code = 10;</code>
        * @return The shareCode.
        */
       public java.lang.String getShareCode() {
@@ -486,7 +494,7 @@ public final class HomePreviewBlueprintReqOuterClass {
         }
       }
       /**
-       * <code>string share_code = 7;</code>
+       * <code>string share_code = 10;</code>
        * @return The bytes for shareCode.
        */
       public com.google.protobuf.ByteString
@@ -503,7 +511,7 @@ public final class HomePreviewBlueprintReqOuterClass {
         }
       }
       /**
-       * <code>string share_code = 7;</code>
+       * <code>string share_code = 10;</code>
        * @param value The shareCode to set.
        * @return This builder for chaining.
        */
@@ -518,7 +526,7 @@ public final class HomePreviewBlueprintReqOuterClass {
         return this;
       }
       /**
-       * <code>string share_code = 7;</code>
+       * <code>string share_code = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearShareCode() {
@@ -528,7 +536,7 @@ public final class HomePreviewBlueprintReqOuterClass {
         return this;
       }
       /**
-       * <code>string share_code = 7;</code>
+       * <code>string share_code = 10;</code>
        * @param value The bytes for shareCode to set.
        * @return This builder for chaining.
        */
@@ -611,7 +619,7 @@ public final class HomePreviewBlueprintReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\035HomePreviewBlueprintReq.proto\"-\n\027HomeP" +
-      "reviewBlueprintReq\022\022\n\nshare_code\030\007 \001(\tB\033" +
+      "reviewBlueprintReq\022\022\n\nshare_code\030\n \001(\tB\033" +
       "\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

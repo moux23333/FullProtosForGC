@@ -19,13 +19,13 @@ public final class SetCodexPushtipsReadRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 10;</code>
+     * <code>int32 retcode = 9;</code>
      * @return The retcode.
      */
     int getRetcode();
 
     /**
-     * <code>uint32 type_id = 5;</code>
+     * <code>uint32 type_id = 4;</code>
      * @return The typeId.
      */
     int getTypeId();
@@ -38,9 +38,13 @@ public final class SetCodexPushtipsReadRspOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 4206
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 4205;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code SetCodexPushtipsReadRsp}
@@ -87,12 +91,12 @@ public final class SetCodexPushtipsReadRspOuterClass {
             case 0:
               done = true;
               break;
-            case 40: {
+            case 32: {
 
               typeId_ = input.readUInt32();
               break;
             }
-            case 80: {
+            case 72: {
 
               retcode_ = input.readInt32();
               break;
@@ -134,10 +138,10 @@ public final class SetCodexPushtipsReadRspOuterClass {
               emu.grasscutter.net.proto.SetCodexPushtipsReadRspOuterClass.SetCodexPushtipsReadRsp.class, emu.grasscutter.net.proto.SetCodexPushtipsReadRspOuterClass.SetCodexPushtipsReadRsp.Builder.class);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 10;
+    public static final int RETCODE_FIELD_NUMBER = 9;
     private int retcode_;
     /**
-     * <code>int32 retcode = 10;</code>
+     * <code>int32 retcode = 9;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -145,10 +149,10 @@ public final class SetCodexPushtipsReadRspOuterClass {
       return retcode_;
     }
 
-    public static final int TYPE_ID_FIELD_NUMBER = 5;
+    public static final int TYPE_ID_FIELD_NUMBER = 4;
     private int typeId_;
     /**
-     * <code>uint32 type_id = 5;</code>
+     * <code>uint32 type_id = 4;</code>
      * @return The typeId.
      */
     @java.lang.Override
@@ -182,10 +186,10 @@ public final class SetCodexPushtipsReadRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (typeId_ != 0) {
-        output.writeUInt32(5, typeId_);
+        output.writeUInt32(4, typeId_);
       }
       if (retcode_ != 0) {
-        output.writeInt32(10, retcode_);
+        output.writeInt32(9, retcode_);
       }
       if (codexId_ != 0) {
         output.writeUInt32(14, codexId_);
@@ -201,11 +205,11 @@ public final class SetCodexPushtipsReadRspOuterClass {
       size = 0;
       if (typeId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, typeId_);
+          .computeUInt32Size(4, typeId_);
       }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(10, retcode_);
+          .computeInt32Size(9, retcode_);
       }
       if (codexId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
@@ -346,9 +350,13 @@ public final class SetCodexPushtipsReadRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 4206
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 4205;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code SetCodexPushtipsReadRsp}
@@ -511,7 +519,7 @@ public final class SetCodexPushtipsReadRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 10;</code>
+       * <code>int32 retcode = 9;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -519,7 +527,7 @@ public final class SetCodexPushtipsReadRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 10;</code>
+       * <code>int32 retcode = 9;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -530,7 +538,7 @@ public final class SetCodexPushtipsReadRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 10;</code>
+       * <code>int32 retcode = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -542,7 +550,7 @@ public final class SetCodexPushtipsReadRspOuterClass {
 
       private int typeId_ ;
       /**
-       * <code>uint32 type_id = 5;</code>
+       * <code>uint32 type_id = 4;</code>
        * @return The typeId.
        */
       @java.lang.Override
@@ -550,7 +558,7 @@ public final class SetCodexPushtipsReadRspOuterClass {
         return typeId_;
       }
       /**
-       * <code>uint32 type_id = 5;</code>
+       * <code>uint32 type_id = 4;</code>
        * @param value The typeId to set.
        * @return This builder for chaining.
        */
@@ -561,7 +569,7 @@ public final class SetCodexPushtipsReadRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 type_id = 5;</code>
+       * <code>uint32 type_id = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearTypeId() {
@@ -669,8 +677,8 @@ public final class SetCodexPushtipsReadRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\035SetCodexPushtipsReadRsp.proto\"M\n\027SetCo" +
-      "dexPushtipsReadRsp\022\017\n\007retcode\030\n \001(\005\022\017\n\007t" +
-      "ype_id\030\005 \001(\r\022\020\n\010codex_id\030\016 \001(\rB\033\n\031emu.gr" +
+      "dexPushtipsReadRsp\022\017\n\007retcode\030\t \001(\005\022\017\n\007t" +
+      "ype_id\030\004 \001(\r\022\020\n\010codex_id\030\016 \001(\rB\033\n\031emu.gr" +
       "asscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

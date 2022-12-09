@@ -19,34 +19,34 @@ public final class GearColumnInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 gear_column_index = 7;</code>
-     * @return The gearColumnIndex.
+     * <code>uint32 Unk3300_GHIBPOIAIGF = 6;</code>
+     * @return The unk3300GHIBPOIAIGF.
      */
-    int getGearColumnIndex();
+    int getUnk3300GHIBPOIAIGF();
 
     /**
-     * <code>bool is_overturn = 3;</code>
-     * @return The isOverturn.
+     * <code>bool Unk3300_KEEGLHMBAKM = 8;</code>
+     * @return The unk3300KEEGLHMBAKM.
      */
-    boolean getIsOverturn();
+    boolean getUnk3300KEEGLHMBAKM();
 
     /**
-     * <code>bool has_gear = 2;</code>
-     * @return The hasGear.
+     * <code>uint32 Unk3300_EDLLMBGNDEH = 2;</code>
+     * @return The unk3300EDLLMBGNDEH.
      */
-    boolean getHasGear();
+    int getUnk3300EDLLMBGNDEH();
 
     /**
-     * <code>uint32 gear_id = 11;</code>
+     * <code>uint32 gear_id = 7;</code>
      * @return The gearId.
      */
     int getGearId();
 
     /**
-     * <code>uint32 placement_layer = 6;</code>
-     * @return The placementLayer.
+     * <code>bool Unk3300_HGIKKDOBANK = 15;</code>
+     * @return The unk3300HGIKKDOBANK.
      */
-    int getPlacementLayer();
+    boolean getUnk3300HGIKKDOBANK();
   }
   /**
    * Protobuf type {@code GearColumnInfo}
@@ -95,27 +95,27 @@ public final class GearColumnInfoOuterClass {
               break;
             case 16: {
 
-              hasGear_ = input.readBool();
-              break;
-            }
-            case 24: {
-
-              isOverturn_ = input.readBool();
+              unk3300EDLLMBGNDEH_ = input.readUInt32();
               break;
             }
             case 48: {
 
-              placementLayer_ = input.readUInt32();
+              unk3300GHIBPOIAIGF_ = input.readUInt32();
               break;
             }
             case 56: {
 
-              gearColumnIndex_ = input.readUInt32();
+              gearId_ = input.readUInt32();
               break;
             }
-            case 88: {
+            case 64: {
 
-              gearId_ = input.readUInt32();
+              unk3300KEEGLHMBAKM_ = input.readBool();
+              break;
+            }
+            case 120: {
+
+              unk3300HGIKKDOBANK_ = input.readBool();
               break;
             }
             default: {
@@ -150,43 +150,43 @@ public final class GearColumnInfoOuterClass {
               emu.grasscutter.net.proto.GearColumnInfoOuterClass.GearColumnInfo.class, emu.grasscutter.net.proto.GearColumnInfoOuterClass.GearColumnInfo.Builder.class);
     }
 
-    public static final int GEAR_COLUMN_INDEX_FIELD_NUMBER = 7;
-    private int gearColumnIndex_;
+    public static final int UNK3300_GHIBPOIAIGF_FIELD_NUMBER = 6;
+    private int unk3300GHIBPOIAIGF_;
     /**
-     * <code>uint32 gear_column_index = 7;</code>
-     * @return The gearColumnIndex.
+     * <code>uint32 Unk3300_GHIBPOIAIGF = 6;</code>
+     * @return The unk3300GHIBPOIAIGF.
      */
     @java.lang.Override
-    public int getGearColumnIndex() {
-      return gearColumnIndex_;
+    public int getUnk3300GHIBPOIAIGF() {
+      return unk3300GHIBPOIAIGF_;
     }
 
-    public static final int IS_OVERTURN_FIELD_NUMBER = 3;
-    private boolean isOverturn_;
+    public static final int UNK3300_KEEGLHMBAKM_FIELD_NUMBER = 8;
+    private boolean unk3300KEEGLHMBAKM_;
     /**
-     * <code>bool is_overturn = 3;</code>
-     * @return The isOverturn.
+     * <code>bool Unk3300_KEEGLHMBAKM = 8;</code>
+     * @return The unk3300KEEGLHMBAKM.
      */
     @java.lang.Override
-    public boolean getIsOverturn() {
-      return isOverturn_;
+    public boolean getUnk3300KEEGLHMBAKM() {
+      return unk3300KEEGLHMBAKM_;
     }
 
-    public static final int HAS_GEAR_FIELD_NUMBER = 2;
-    private boolean hasGear_;
+    public static final int UNK3300_EDLLMBGNDEH_FIELD_NUMBER = 2;
+    private int unk3300EDLLMBGNDEH_;
     /**
-     * <code>bool has_gear = 2;</code>
-     * @return The hasGear.
+     * <code>uint32 Unk3300_EDLLMBGNDEH = 2;</code>
+     * @return The unk3300EDLLMBGNDEH.
      */
     @java.lang.Override
-    public boolean getHasGear() {
-      return hasGear_;
+    public int getUnk3300EDLLMBGNDEH() {
+      return unk3300EDLLMBGNDEH_;
     }
 
-    public static final int GEAR_ID_FIELD_NUMBER = 11;
+    public static final int GEAR_ID_FIELD_NUMBER = 7;
     private int gearId_;
     /**
-     * <code>uint32 gear_id = 11;</code>
+     * <code>uint32 gear_id = 7;</code>
      * @return The gearId.
      */
     @java.lang.Override
@@ -194,15 +194,15 @@ public final class GearColumnInfoOuterClass {
       return gearId_;
     }
 
-    public static final int PLACEMENT_LAYER_FIELD_NUMBER = 6;
-    private int placementLayer_;
+    public static final int UNK3300_HGIKKDOBANK_FIELD_NUMBER = 15;
+    private boolean unk3300HGIKKDOBANK_;
     /**
-     * <code>uint32 placement_layer = 6;</code>
-     * @return The placementLayer.
+     * <code>bool Unk3300_HGIKKDOBANK = 15;</code>
+     * @return The unk3300HGIKKDOBANK.
      */
     @java.lang.Override
-    public int getPlacementLayer() {
-      return placementLayer_;
+    public boolean getUnk3300HGIKKDOBANK() {
+      return unk3300HGIKKDOBANK_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -219,20 +219,20 @@ public final class GearColumnInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (hasGear_ != false) {
-        output.writeBool(2, hasGear_);
+      if (unk3300EDLLMBGNDEH_ != 0) {
+        output.writeUInt32(2, unk3300EDLLMBGNDEH_);
       }
-      if (isOverturn_ != false) {
-        output.writeBool(3, isOverturn_);
-      }
-      if (placementLayer_ != 0) {
-        output.writeUInt32(6, placementLayer_);
-      }
-      if (gearColumnIndex_ != 0) {
-        output.writeUInt32(7, gearColumnIndex_);
+      if (unk3300GHIBPOIAIGF_ != 0) {
+        output.writeUInt32(6, unk3300GHIBPOIAIGF_);
       }
       if (gearId_ != 0) {
-        output.writeUInt32(11, gearId_);
+        output.writeUInt32(7, gearId_);
+      }
+      if (unk3300KEEGLHMBAKM_ != false) {
+        output.writeBool(8, unk3300KEEGLHMBAKM_);
+      }
+      if (unk3300HGIKKDOBANK_ != false) {
+        output.writeBool(15, unk3300HGIKKDOBANK_);
       }
       unknownFields.writeTo(output);
     }
@@ -243,25 +243,25 @@ public final class GearColumnInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (hasGear_ != false) {
+      if (unk3300EDLLMBGNDEH_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(2, hasGear_);
+          .computeUInt32Size(2, unk3300EDLLMBGNDEH_);
       }
-      if (isOverturn_ != false) {
+      if (unk3300GHIBPOIAIGF_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(3, isOverturn_);
-      }
-      if (placementLayer_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, placementLayer_);
-      }
-      if (gearColumnIndex_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, gearColumnIndex_);
+          .computeUInt32Size(6, unk3300GHIBPOIAIGF_);
       }
       if (gearId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, gearId_);
+          .computeUInt32Size(7, gearId_);
+      }
+      if (unk3300KEEGLHMBAKM_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(8, unk3300KEEGLHMBAKM_);
+      }
+      if (unk3300HGIKKDOBANK_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(15, unk3300HGIKKDOBANK_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -278,16 +278,16 @@ public final class GearColumnInfoOuterClass {
       }
       emu.grasscutter.net.proto.GearColumnInfoOuterClass.GearColumnInfo other = (emu.grasscutter.net.proto.GearColumnInfoOuterClass.GearColumnInfo) obj;
 
-      if (getGearColumnIndex()
-          != other.getGearColumnIndex()) return false;
-      if (getIsOverturn()
-          != other.getIsOverturn()) return false;
-      if (getHasGear()
-          != other.getHasGear()) return false;
+      if (getUnk3300GHIBPOIAIGF()
+          != other.getUnk3300GHIBPOIAIGF()) return false;
+      if (getUnk3300KEEGLHMBAKM()
+          != other.getUnk3300KEEGLHMBAKM()) return false;
+      if (getUnk3300EDLLMBGNDEH()
+          != other.getUnk3300EDLLMBGNDEH()) return false;
       if (getGearId()
           != other.getGearId()) return false;
-      if (getPlacementLayer()
-          != other.getPlacementLayer()) return false;
+      if (getUnk3300HGIKKDOBANK()
+          != other.getUnk3300HGIKKDOBANK()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -299,18 +299,18 @@ public final class GearColumnInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + GEAR_COLUMN_INDEX_FIELD_NUMBER;
-      hash = (53 * hash) + getGearColumnIndex();
-      hash = (37 * hash) + IS_OVERTURN_FIELD_NUMBER;
+      hash = (37 * hash) + UNK3300_GHIBPOIAIGF_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300GHIBPOIAIGF();
+      hash = (37 * hash) + UNK3300_KEEGLHMBAKM_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsOverturn());
-      hash = (37 * hash) + HAS_GEAR_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getHasGear());
+          getUnk3300KEEGLHMBAKM());
+      hash = (37 * hash) + UNK3300_EDLLMBGNDEH_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300EDLLMBGNDEH();
       hash = (37 * hash) + GEAR_ID_FIELD_NUMBER;
       hash = (53 * hash) + getGearId();
-      hash = (37 * hash) + PLACEMENT_LAYER_FIELD_NUMBER;
-      hash = (53 * hash) + getPlacementLayer();
+      hash = (37 * hash) + UNK3300_HGIKKDOBANK_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getUnk3300HGIKKDOBANK());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -444,15 +444,15 @@ public final class GearColumnInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        gearColumnIndex_ = 0;
+        unk3300GHIBPOIAIGF_ = 0;
 
-        isOverturn_ = false;
+        unk3300KEEGLHMBAKM_ = false;
 
-        hasGear_ = false;
+        unk3300EDLLMBGNDEH_ = 0;
 
         gearId_ = 0;
 
-        placementLayer_ = 0;
+        unk3300HGIKKDOBANK_ = false;
 
         return this;
       }
@@ -480,11 +480,11 @@ public final class GearColumnInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.GearColumnInfoOuterClass.GearColumnInfo buildPartial() {
         emu.grasscutter.net.proto.GearColumnInfoOuterClass.GearColumnInfo result = new emu.grasscutter.net.proto.GearColumnInfoOuterClass.GearColumnInfo(this);
-        result.gearColumnIndex_ = gearColumnIndex_;
-        result.isOverturn_ = isOverturn_;
-        result.hasGear_ = hasGear_;
+        result.unk3300GHIBPOIAIGF_ = unk3300GHIBPOIAIGF_;
+        result.unk3300KEEGLHMBAKM_ = unk3300KEEGLHMBAKM_;
+        result.unk3300EDLLMBGNDEH_ = unk3300EDLLMBGNDEH_;
         result.gearId_ = gearId_;
-        result.placementLayer_ = placementLayer_;
+        result.unk3300HGIKKDOBANK_ = unk3300HGIKKDOBANK_;
         onBuilt();
         return result;
       }
@@ -533,20 +533,20 @@ public final class GearColumnInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.GearColumnInfoOuterClass.GearColumnInfo other) {
         if (other == emu.grasscutter.net.proto.GearColumnInfoOuterClass.GearColumnInfo.getDefaultInstance()) return this;
-        if (other.getGearColumnIndex() != 0) {
-          setGearColumnIndex(other.getGearColumnIndex());
+        if (other.getUnk3300GHIBPOIAIGF() != 0) {
+          setUnk3300GHIBPOIAIGF(other.getUnk3300GHIBPOIAIGF());
         }
-        if (other.getIsOverturn() != false) {
-          setIsOverturn(other.getIsOverturn());
+        if (other.getUnk3300KEEGLHMBAKM() != false) {
+          setUnk3300KEEGLHMBAKM(other.getUnk3300KEEGLHMBAKM());
         }
-        if (other.getHasGear() != false) {
-          setHasGear(other.getHasGear());
+        if (other.getUnk3300EDLLMBGNDEH() != 0) {
+          setUnk3300EDLLMBGNDEH(other.getUnk3300EDLLMBGNDEH());
         }
         if (other.getGearId() != 0) {
           setGearId(other.getGearId());
         }
-        if (other.getPlacementLayer() != 0) {
-          setPlacementLayer(other.getPlacementLayer());
+        if (other.getUnk3300HGIKKDOBANK() != false) {
+          setUnk3300HGIKKDOBANK(other.getUnk3300HGIKKDOBANK());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -577,102 +577,102 @@ public final class GearColumnInfoOuterClass {
         return this;
       }
 
-      private int gearColumnIndex_ ;
+      private int unk3300GHIBPOIAIGF_ ;
       /**
-       * <code>uint32 gear_column_index = 7;</code>
-       * @return The gearColumnIndex.
+       * <code>uint32 Unk3300_GHIBPOIAIGF = 6;</code>
+       * @return The unk3300GHIBPOIAIGF.
        */
       @java.lang.Override
-      public int getGearColumnIndex() {
-        return gearColumnIndex_;
+      public int getUnk3300GHIBPOIAIGF() {
+        return unk3300GHIBPOIAIGF_;
       }
       /**
-       * <code>uint32 gear_column_index = 7;</code>
-       * @param value The gearColumnIndex to set.
+       * <code>uint32 Unk3300_GHIBPOIAIGF = 6;</code>
+       * @param value The unk3300GHIBPOIAIGF to set.
        * @return This builder for chaining.
        */
-      public Builder setGearColumnIndex(int value) {
+      public Builder setUnk3300GHIBPOIAIGF(int value) {
         
-        gearColumnIndex_ = value;
+        unk3300GHIBPOIAIGF_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 gear_column_index = 7;</code>
+       * <code>uint32 Unk3300_GHIBPOIAIGF = 6;</code>
        * @return This builder for chaining.
        */
-      public Builder clearGearColumnIndex() {
+      public Builder clearUnk3300GHIBPOIAIGF() {
         
-        gearColumnIndex_ = 0;
+        unk3300GHIBPOIAIGF_ = 0;
         onChanged();
         return this;
       }
 
-      private boolean isOverturn_ ;
+      private boolean unk3300KEEGLHMBAKM_ ;
       /**
-       * <code>bool is_overturn = 3;</code>
-       * @return The isOverturn.
+       * <code>bool Unk3300_KEEGLHMBAKM = 8;</code>
+       * @return The unk3300KEEGLHMBAKM.
        */
       @java.lang.Override
-      public boolean getIsOverturn() {
-        return isOverturn_;
+      public boolean getUnk3300KEEGLHMBAKM() {
+        return unk3300KEEGLHMBAKM_;
       }
       /**
-       * <code>bool is_overturn = 3;</code>
-       * @param value The isOverturn to set.
+       * <code>bool Unk3300_KEEGLHMBAKM = 8;</code>
+       * @param value The unk3300KEEGLHMBAKM to set.
        * @return This builder for chaining.
        */
-      public Builder setIsOverturn(boolean value) {
+      public Builder setUnk3300KEEGLHMBAKM(boolean value) {
         
-        isOverturn_ = value;
+        unk3300KEEGLHMBAKM_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>bool is_overturn = 3;</code>
+       * <code>bool Unk3300_KEEGLHMBAKM = 8;</code>
        * @return This builder for chaining.
        */
-      public Builder clearIsOverturn() {
+      public Builder clearUnk3300KEEGLHMBAKM() {
         
-        isOverturn_ = false;
+        unk3300KEEGLHMBAKM_ = false;
         onChanged();
         return this;
       }
 
-      private boolean hasGear_ ;
+      private int unk3300EDLLMBGNDEH_ ;
       /**
-       * <code>bool has_gear = 2;</code>
-       * @return The hasGear.
+       * <code>uint32 Unk3300_EDLLMBGNDEH = 2;</code>
+       * @return The unk3300EDLLMBGNDEH.
        */
       @java.lang.Override
-      public boolean getHasGear() {
-        return hasGear_;
+      public int getUnk3300EDLLMBGNDEH() {
+        return unk3300EDLLMBGNDEH_;
       }
       /**
-       * <code>bool has_gear = 2;</code>
-       * @param value The hasGear to set.
+       * <code>uint32 Unk3300_EDLLMBGNDEH = 2;</code>
+       * @param value The unk3300EDLLMBGNDEH to set.
        * @return This builder for chaining.
        */
-      public Builder setHasGear(boolean value) {
+      public Builder setUnk3300EDLLMBGNDEH(int value) {
         
-        hasGear_ = value;
+        unk3300EDLLMBGNDEH_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>bool has_gear = 2;</code>
+       * <code>uint32 Unk3300_EDLLMBGNDEH = 2;</code>
        * @return This builder for chaining.
        */
-      public Builder clearHasGear() {
+      public Builder clearUnk3300EDLLMBGNDEH() {
         
-        hasGear_ = false;
+        unk3300EDLLMBGNDEH_ = 0;
         onChanged();
         return this;
       }
 
       private int gearId_ ;
       /**
-       * <code>uint32 gear_id = 11;</code>
+       * <code>uint32 gear_id = 7;</code>
        * @return The gearId.
        */
       @java.lang.Override
@@ -680,7 +680,7 @@ public final class GearColumnInfoOuterClass {
         return gearId_;
       }
       /**
-       * <code>uint32 gear_id = 11;</code>
+       * <code>uint32 gear_id = 7;</code>
        * @param value The gearId to set.
        * @return This builder for chaining.
        */
@@ -691,7 +691,7 @@ public final class GearColumnInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 gear_id = 11;</code>
+       * <code>uint32 gear_id = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearGearId() {
@@ -701,33 +701,33 @@ public final class GearColumnInfoOuterClass {
         return this;
       }
 
-      private int placementLayer_ ;
+      private boolean unk3300HGIKKDOBANK_ ;
       /**
-       * <code>uint32 placement_layer = 6;</code>
-       * @return The placementLayer.
+       * <code>bool Unk3300_HGIKKDOBANK = 15;</code>
+       * @return The unk3300HGIKKDOBANK.
        */
       @java.lang.Override
-      public int getPlacementLayer() {
-        return placementLayer_;
+      public boolean getUnk3300HGIKKDOBANK() {
+        return unk3300HGIKKDOBANK_;
       }
       /**
-       * <code>uint32 placement_layer = 6;</code>
-       * @param value The placementLayer to set.
+       * <code>bool Unk3300_HGIKKDOBANK = 15;</code>
+       * @param value The unk3300HGIKKDOBANK to set.
        * @return This builder for chaining.
        */
-      public Builder setPlacementLayer(int value) {
+      public Builder setUnk3300HGIKKDOBANK(boolean value) {
         
-        placementLayer_ = value;
+        unk3300HGIKKDOBANK_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 placement_layer = 6;</code>
+       * <code>bool Unk3300_HGIKKDOBANK = 15;</code>
        * @return This builder for chaining.
        */
-      public Builder clearPlacementLayer() {
+      public Builder clearUnk3300HGIKKDOBANK() {
         
-        placementLayer_ = 0;
+        unk3300HGIKKDOBANK_ = false;
         onChanged();
         return this;
       }
@@ -798,11 +798,12 @@ public final class GearColumnInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\024GearColumnInfo.proto\"|\n\016GearColumnInfo" +
-      "\022\031\n\021gear_column_index\030\007 \001(\r\022\023\n\013is_overtu" +
-      "rn\030\003 \001(\010\022\020\n\010has_gear\030\002 \001(\010\022\017\n\007gear_id\030\013 " +
-      "\001(\r\022\027\n\017placement_layer\030\006 \001(\rB\033\n\031emu.gras" +
-      "scutter.net.protob\006proto3"
+      "\n\024GearColumnInfo.proto\"\225\001\n\016GearColumnInf" +
+      "o\022\033\n\023Unk3300_GHIBPOIAIGF\030\006 \001(\r\022\033\n\023Unk330" +
+      "0_KEEGLHMBAKM\030\010 \001(\010\022\033\n\023Unk3300_EDLLMBGND" +
+      "EH\030\002 \001(\r\022\017\n\007gear_id\030\007 \001(\r\022\033\n\023Unk3300_HGI" +
+      "KKDOBANK\030\017 \001(\010B\033\n\031emu.grasscutter.net.pr" +
+      "otob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -813,7 +814,7 @@ public final class GearColumnInfoOuterClass {
     internal_static_GearColumnInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GearColumnInfo_descriptor,
-        new java.lang.String[] { "GearColumnIndex", "IsOverturn", "HasGear", "GearId", "PlacementLayer", });
+        new java.lang.String[] { "Unk3300GHIBPOIAIGF", "Unk3300KEEGLHMBAKM", "Unk3300EDLLMBGNDEH", "GearId", "Unk3300HGIKKDOBANK", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

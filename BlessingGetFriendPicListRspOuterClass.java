@@ -19,40 +19,44 @@ public final class BlessingGetFriendPicListRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 2;</code>
+     * <code>int32 retcode = 11;</code>
      * @return The retcode.
      */
     int getRetcode();
 
     /**
-     * <code>repeated .BlessingFriendPicData friend_pic_data_list = 6;</code>
+     * <code>repeated .BlessingFriendPicData friend_pic_data_list = 8;</code>
      */
     java.util.List<emu.grasscutter.net.proto.BlessingFriendPicDataOuterClass.BlessingFriendPicData> 
         getFriendPicDataListList();
     /**
-     * <code>repeated .BlessingFriendPicData friend_pic_data_list = 6;</code>
+     * <code>repeated .BlessingFriendPicData friend_pic_data_list = 8;</code>
      */
     emu.grasscutter.net.proto.BlessingFriendPicDataOuterClass.BlessingFriendPicData getFriendPicDataList(int index);
     /**
-     * <code>repeated .BlessingFriendPicData friend_pic_data_list = 6;</code>
+     * <code>repeated .BlessingFriendPicData friend_pic_data_list = 8;</code>
      */
     int getFriendPicDataListCount();
     /**
-     * <code>repeated .BlessingFriendPicData friend_pic_data_list = 6;</code>
+     * <code>repeated .BlessingFriendPicData friend_pic_data_list = 8;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.BlessingFriendPicDataOuterClass.BlessingFriendPicDataOrBuilder> 
         getFriendPicDataListOrBuilderList();
     /**
-     * <code>repeated .BlessingFriendPicData friend_pic_data_list = 6;</code>
+     * <code>repeated .BlessingFriendPicData friend_pic_data_list = 8;</code>
      */
     emu.grasscutter.net.proto.BlessingFriendPicDataOuterClass.BlessingFriendPicDataOrBuilder getFriendPicDataListOrBuilder(
         int index);
   }
   /**
    * <pre>
-   * CmdId: 2056
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 2076;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code BlessingGetFriendPicListRsp}
@@ -101,18 +105,18 @@ public final class BlessingGetFriendPicListRspOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
-
-              retcode_ = input.readInt32();
-              break;
-            }
-            case 50: {
+            case 66: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 friendPicDataList_ = new java.util.ArrayList<emu.grasscutter.net.proto.BlessingFriendPicDataOuterClass.BlessingFriendPicData>();
                 mutable_bitField0_ |= 0x00000001;
               }
               friendPicDataList_.add(
                   input.readMessage(emu.grasscutter.net.proto.BlessingFriendPicDataOuterClass.BlessingFriendPicData.parser(), extensionRegistry));
+              break;
+            }
+            case 88: {
+
+              retcode_ = input.readInt32();
               break;
             }
             default: {
@@ -150,10 +154,10 @@ public final class BlessingGetFriendPicListRspOuterClass {
               emu.grasscutter.net.proto.BlessingGetFriendPicListRspOuterClass.BlessingGetFriendPicListRsp.class, emu.grasscutter.net.proto.BlessingGetFriendPicListRspOuterClass.BlessingGetFriendPicListRsp.Builder.class);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 2;
+    public static final int RETCODE_FIELD_NUMBER = 11;
     private int retcode_;
     /**
-     * <code>int32 retcode = 2;</code>
+     * <code>int32 retcode = 11;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -161,17 +165,17 @@ public final class BlessingGetFriendPicListRspOuterClass {
       return retcode_;
     }
 
-    public static final int FRIEND_PIC_DATA_LIST_FIELD_NUMBER = 6;
+    public static final int FRIEND_PIC_DATA_LIST_FIELD_NUMBER = 8;
     private java.util.List<emu.grasscutter.net.proto.BlessingFriendPicDataOuterClass.BlessingFriendPicData> friendPicDataList_;
     /**
-     * <code>repeated .BlessingFriendPicData friend_pic_data_list = 6;</code>
+     * <code>repeated .BlessingFriendPicData friend_pic_data_list = 8;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.BlessingFriendPicDataOuterClass.BlessingFriendPicData> getFriendPicDataListList() {
       return friendPicDataList_;
     }
     /**
-     * <code>repeated .BlessingFriendPicData friend_pic_data_list = 6;</code>
+     * <code>repeated .BlessingFriendPicData friend_pic_data_list = 8;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.BlessingFriendPicDataOuterClass.BlessingFriendPicDataOrBuilder> 
@@ -179,21 +183,21 @@ public final class BlessingGetFriendPicListRspOuterClass {
       return friendPicDataList_;
     }
     /**
-     * <code>repeated .BlessingFriendPicData friend_pic_data_list = 6;</code>
+     * <code>repeated .BlessingFriendPicData friend_pic_data_list = 8;</code>
      */
     @java.lang.Override
     public int getFriendPicDataListCount() {
       return friendPicDataList_.size();
     }
     /**
-     * <code>repeated .BlessingFriendPicData friend_pic_data_list = 6;</code>
+     * <code>repeated .BlessingFriendPicData friend_pic_data_list = 8;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.BlessingFriendPicDataOuterClass.BlessingFriendPicData getFriendPicDataList(int index) {
       return friendPicDataList_.get(index);
     }
     /**
-     * <code>repeated .BlessingFriendPicData friend_pic_data_list = 6;</code>
+     * <code>repeated .BlessingFriendPicData friend_pic_data_list = 8;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.BlessingFriendPicDataOuterClass.BlessingFriendPicDataOrBuilder getFriendPicDataListOrBuilder(
@@ -215,11 +219,11 @@ public final class BlessingGetFriendPicListRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (retcode_ != 0) {
-        output.writeInt32(2, retcode_);
-      }
       for (int i = 0; i < friendPicDataList_.size(); i++) {
-        output.writeMessage(6, friendPicDataList_.get(i));
+        output.writeMessage(8, friendPicDataList_.get(i));
+      }
+      if (retcode_ != 0) {
+        output.writeInt32(11, retcode_);
       }
       unknownFields.writeTo(output);
     }
@@ -230,13 +234,13 @@ public final class BlessingGetFriendPicListRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (retcode_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(2, retcode_);
-      }
       for (int i = 0; i < friendPicDataList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(6, friendPicDataList_.get(i));
+          .computeMessageSize(8, friendPicDataList_.get(i));
+      }
+      if (retcode_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(11, retcode_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -371,9 +375,13 @@ public final class BlessingGetFriendPicListRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 2056
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 2076;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code BlessingGetFriendPicListRsp}
@@ -568,7 +576,7 @@ public final class BlessingGetFriendPicListRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 2;</code>
+       * <code>int32 retcode = 11;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -576,7 +584,7 @@ public final class BlessingGetFriendPicListRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 2;</code>
+       * <code>int32 retcode = 11;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -587,7 +595,7 @@ public final class BlessingGetFriendPicListRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 2;</code>
+       * <code>int32 retcode = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -610,7 +618,7 @@ public final class BlessingGetFriendPicListRspOuterClass {
           emu.grasscutter.net.proto.BlessingFriendPicDataOuterClass.BlessingFriendPicData, emu.grasscutter.net.proto.BlessingFriendPicDataOuterClass.BlessingFriendPicData.Builder, emu.grasscutter.net.proto.BlessingFriendPicDataOuterClass.BlessingFriendPicDataOrBuilder> friendPicDataListBuilder_;
 
       /**
-       * <code>repeated .BlessingFriendPicData friend_pic_data_list = 6;</code>
+       * <code>repeated .BlessingFriendPicData friend_pic_data_list = 8;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.BlessingFriendPicDataOuterClass.BlessingFriendPicData> getFriendPicDataListList() {
         if (friendPicDataListBuilder_ == null) {
@@ -620,7 +628,7 @@ public final class BlessingGetFriendPicListRspOuterClass {
         }
       }
       /**
-       * <code>repeated .BlessingFriendPicData friend_pic_data_list = 6;</code>
+       * <code>repeated .BlessingFriendPicData friend_pic_data_list = 8;</code>
        */
       public int getFriendPicDataListCount() {
         if (friendPicDataListBuilder_ == null) {
@@ -630,7 +638,7 @@ public final class BlessingGetFriendPicListRspOuterClass {
         }
       }
       /**
-       * <code>repeated .BlessingFriendPicData friend_pic_data_list = 6;</code>
+       * <code>repeated .BlessingFriendPicData friend_pic_data_list = 8;</code>
        */
       public emu.grasscutter.net.proto.BlessingFriendPicDataOuterClass.BlessingFriendPicData getFriendPicDataList(int index) {
         if (friendPicDataListBuilder_ == null) {
@@ -640,7 +648,7 @@ public final class BlessingGetFriendPicListRspOuterClass {
         }
       }
       /**
-       * <code>repeated .BlessingFriendPicData friend_pic_data_list = 6;</code>
+       * <code>repeated .BlessingFriendPicData friend_pic_data_list = 8;</code>
        */
       public Builder setFriendPicDataList(
           int index, emu.grasscutter.net.proto.BlessingFriendPicDataOuterClass.BlessingFriendPicData value) {
@@ -657,7 +665,7 @@ public final class BlessingGetFriendPicListRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .BlessingFriendPicData friend_pic_data_list = 6;</code>
+       * <code>repeated .BlessingFriendPicData friend_pic_data_list = 8;</code>
        */
       public Builder setFriendPicDataList(
           int index, emu.grasscutter.net.proto.BlessingFriendPicDataOuterClass.BlessingFriendPicData.Builder builderForValue) {
@@ -671,7 +679,7 @@ public final class BlessingGetFriendPicListRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .BlessingFriendPicData friend_pic_data_list = 6;</code>
+       * <code>repeated .BlessingFriendPicData friend_pic_data_list = 8;</code>
        */
       public Builder addFriendPicDataList(emu.grasscutter.net.proto.BlessingFriendPicDataOuterClass.BlessingFriendPicData value) {
         if (friendPicDataListBuilder_ == null) {
@@ -687,7 +695,7 @@ public final class BlessingGetFriendPicListRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .BlessingFriendPicData friend_pic_data_list = 6;</code>
+       * <code>repeated .BlessingFriendPicData friend_pic_data_list = 8;</code>
        */
       public Builder addFriendPicDataList(
           int index, emu.grasscutter.net.proto.BlessingFriendPicDataOuterClass.BlessingFriendPicData value) {
@@ -704,7 +712,7 @@ public final class BlessingGetFriendPicListRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .BlessingFriendPicData friend_pic_data_list = 6;</code>
+       * <code>repeated .BlessingFriendPicData friend_pic_data_list = 8;</code>
        */
       public Builder addFriendPicDataList(
           emu.grasscutter.net.proto.BlessingFriendPicDataOuterClass.BlessingFriendPicData.Builder builderForValue) {
@@ -718,7 +726,7 @@ public final class BlessingGetFriendPicListRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .BlessingFriendPicData friend_pic_data_list = 6;</code>
+       * <code>repeated .BlessingFriendPicData friend_pic_data_list = 8;</code>
        */
       public Builder addFriendPicDataList(
           int index, emu.grasscutter.net.proto.BlessingFriendPicDataOuterClass.BlessingFriendPicData.Builder builderForValue) {
@@ -732,7 +740,7 @@ public final class BlessingGetFriendPicListRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .BlessingFriendPicData friend_pic_data_list = 6;</code>
+       * <code>repeated .BlessingFriendPicData friend_pic_data_list = 8;</code>
        */
       public Builder addAllFriendPicDataList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.BlessingFriendPicDataOuterClass.BlessingFriendPicData> values) {
@@ -747,7 +755,7 @@ public final class BlessingGetFriendPicListRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .BlessingFriendPicData friend_pic_data_list = 6;</code>
+       * <code>repeated .BlessingFriendPicData friend_pic_data_list = 8;</code>
        */
       public Builder clearFriendPicDataList() {
         if (friendPicDataListBuilder_ == null) {
@@ -760,7 +768,7 @@ public final class BlessingGetFriendPicListRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .BlessingFriendPicData friend_pic_data_list = 6;</code>
+       * <code>repeated .BlessingFriendPicData friend_pic_data_list = 8;</code>
        */
       public Builder removeFriendPicDataList(int index) {
         if (friendPicDataListBuilder_ == null) {
@@ -773,14 +781,14 @@ public final class BlessingGetFriendPicListRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .BlessingFriendPicData friend_pic_data_list = 6;</code>
+       * <code>repeated .BlessingFriendPicData friend_pic_data_list = 8;</code>
        */
       public emu.grasscutter.net.proto.BlessingFriendPicDataOuterClass.BlessingFriendPicData.Builder getFriendPicDataListBuilder(
           int index) {
         return getFriendPicDataListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .BlessingFriendPicData friend_pic_data_list = 6;</code>
+       * <code>repeated .BlessingFriendPicData friend_pic_data_list = 8;</code>
        */
       public emu.grasscutter.net.proto.BlessingFriendPicDataOuterClass.BlessingFriendPicDataOrBuilder getFriendPicDataListOrBuilder(
           int index) {
@@ -790,7 +798,7 @@ public final class BlessingGetFriendPicListRspOuterClass {
         }
       }
       /**
-       * <code>repeated .BlessingFriendPicData friend_pic_data_list = 6;</code>
+       * <code>repeated .BlessingFriendPicData friend_pic_data_list = 8;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.BlessingFriendPicDataOuterClass.BlessingFriendPicDataOrBuilder> 
            getFriendPicDataListOrBuilderList() {
@@ -801,14 +809,14 @@ public final class BlessingGetFriendPicListRspOuterClass {
         }
       }
       /**
-       * <code>repeated .BlessingFriendPicData friend_pic_data_list = 6;</code>
+       * <code>repeated .BlessingFriendPicData friend_pic_data_list = 8;</code>
        */
       public emu.grasscutter.net.proto.BlessingFriendPicDataOuterClass.BlessingFriendPicData.Builder addFriendPicDataListBuilder() {
         return getFriendPicDataListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.BlessingFriendPicDataOuterClass.BlessingFriendPicData.getDefaultInstance());
       }
       /**
-       * <code>repeated .BlessingFriendPicData friend_pic_data_list = 6;</code>
+       * <code>repeated .BlessingFriendPicData friend_pic_data_list = 8;</code>
        */
       public emu.grasscutter.net.proto.BlessingFriendPicDataOuterClass.BlessingFriendPicData.Builder addFriendPicDataListBuilder(
           int index) {
@@ -816,7 +824,7 @@ public final class BlessingGetFriendPicListRspOuterClass {
             index, emu.grasscutter.net.proto.BlessingFriendPicDataOuterClass.BlessingFriendPicData.getDefaultInstance());
       }
       /**
-       * <code>repeated .BlessingFriendPicData friend_pic_data_list = 6;</code>
+       * <code>repeated .BlessingFriendPicData friend_pic_data_list = 8;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.BlessingFriendPicDataOuterClass.BlessingFriendPicData.Builder> 
            getFriendPicDataListBuilderList() {
@@ -905,8 +913,8 @@ public final class BlessingGetFriendPicListRspOuterClass {
     java.lang.String[] descriptorData = {
       "\n!BlessingGetFriendPicListRsp.proto\032\033Ble" +
       "ssingFriendPicData.proto\"d\n\033BlessingGetF" +
-      "riendPicListRsp\022\017\n\007retcode\030\002 \001(\005\0224\n\024frie" +
-      "nd_pic_data_list\030\006 \003(\0132\026.BlessingFriendP" +
+      "riendPicListRsp\022\017\n\007retcode\030\013 \001(\005\0224\n\024frie" +
+      "nd_pic_data_list\030\010 \003(\0132\026.BlessingFriendP" +
       "icDataB\033\n\031emu.grasscutter.net.protob\006pro" +
       "to3"
     };

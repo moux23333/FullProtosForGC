@@ -19,45 +19,45 @@ public final class PlayerOfferingDataOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 offering_id = 1;</code>
-     * @return The offeringId.
-     */
-    int getOfferingId();
-
-    /**
-     * <code>bool is_first_interact = 15;</code>
-     * @return The isFirstInteract.
-     */
-    boolean getIsFirstInteract();
-
-    /**
-     * <code>uint32 level = 12;</code>
+     * <code>uint32 level = 8;</code>
      * @return The level.
      */
     int getLevel();
 
     /**
-     * <code>repeated uint32 taken_level_reward_list = 8;</code>
+     * <code>uint32 offering_id = 3;</code>
+     * @return The offeringId.
+     */
+    int getOfferingId();
+
+    /**
+     * <code>bool is_new_max_level = 14;</code>
+     * @return The isNewMaxLevel.
+     */
+    boolean getIsNewMaxLevel();
+
+    /**
+     * <code>bool is_first_interact = 9;</code>
+     * @return The isFirstInteract.
+     */
+    boolean getIsFirstInteract();
+
+    /**
+     * <code>repeated uint32 taken_level_reward_list = 2;</code>
      * @return A list containing the takenLevelRewardList.
      */
     java.util.List<java.lang.Integer> getTakenLevelRewardListList();
     /**
-     * <code>repeated uint32 taken_level_reward_list = 8;</code>
+     * <code>repeated uint32 taken_level_reward_list = 2;</code>
      * @return The count of takenLevelRewardList.
      */
     int getTakenLevelRewardListCount();
     /**
-     * <code>repeated uint32 taken_level_reward_list = 8;</code>
+     * <code>repeated uint32 taken_level_reward_list = 2;</code>
      * @param index The index of the element to return.
      * @return The takenLevelRewardList at the given index.
      */
     int getTakenLevelRewardList(int index);
-
-    /**
-     * <code>bool is_new_max_level = 6;</code>
-     * @return The isNewMaxLevel.
-     */
-    boolean getIsNewMaxLevel();
   }
   /**
    * Protobuf type {@code PlayerOfferingData}
@@ -106,17 +106,7 @@ public final class PlayerOfferingDataOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
-
-              offeringId_ = input.readUInt32();
-              break;
-            }
-            case 48: {
-
-              isNewMaxLevel_ = input.readBool();
-              break;
-            }
-            case 64: {
+            case 16: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 takenLevelRewardList_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
@@ -124,7 +114,7 @@ public final class PlayerOfferingDataOuterClass {
               takenLevelRewardList_.addInt(input.readUInt32());
               break;
             }
-            case 66: {
+            case 18: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -137,14 +127,24 @@ public final class PlayerOfferingDataOuterClass {
               input.popLimit(limit);
               break;
             }
-            case 96: {
+            case 24: {
+
+              offeringId_ = input.readUInt32();
+              break;
+            }
+            case 64: {
 
               level_ = input.readUInt32();
               break;
             }
-            case 120: {
+            case 72: {
 
               isFirstInteract_ = input.readBool();
+              break;
+            }
+            case 112: {
+
+              isNewMaxLevel_ = input.readBool();
               break;
             }
             default: {
@@ -182,32 +182,10 @@ public final class PlayerOfferingDataOuterClass {
               emu.grasscutter.net.proto.PlayerOfferingDataOuterClass.PlayerOfferingData.class, emu.grasscutter.net.proto.PlayerOfferingDataOuterClass.PlayerOfferingData.Builder.class);
     }
 
-    public static final int OFFERING_ID_FIELD_NUMBER = 1;
-    private int offeringId_;
-    /**
-     * <code>uint32 offering_id = 1;</code>
-     * @return The offeringId.
-     */
-    @java.lang.Override
-    public int getOfferingId() {
-      return offeringId_;
-    }
-
-    public static final int IS_FIRST_INTERACT_FIELD_NUMBER = 15;
-    private boolean isFirstInteract_;
-    /**
-     * <code>bool is_first_interact = 15;</code>
-     * @return The isFirstInteract.
-     */
-    @java.lang.Override
-    public boolean getIsFirstInteract() {
-      return isFirstInteract_;
-    }
-
-    public static final int LEVEL_FIELD_NUMBER = 12;
+    public static final int LEVEL_FIELD_NUMBER = 8;
     private int level_;
     /**
-     * <code>uint32 level = 12;</code>
+     * <code>uint32 level = 8;</code>
      * @return The level.
      */
     @java.lang.Override
@@ -215,10 +193,43 @@ public final class PlayerOfferingDataOuterClass {
       return level_;
     }
 
-    public static final int TAKEN_LEVEL_REWARD_LIST_FIELD_NUMBER = 8;
+    public static final int OFFERING_ID_FIELD_NUMBER = 3;
+    private int offeringId_;
+    /**
+     * <code>uint32 offering_id = 3;</code>
+     * @return The offeringId.
+     */
+    @java.lang.Override
+    public int getOfferingId() {
+      return offeringId_;
+    }
+
+    public static final int IS_NEW_MAX_LEVEL_FIELD_NUMBER = 14;
+    private boolean isNewMaxLevel_;
+    /**
+     * <code>bool is_new_max_level = 14;</code>
+     * @return The isNewMaxLevel.
+     */
+    @java.lang.Override
+    public boolean getIsNewMaxLevel() {
+      return isNewMaxLevel_;
+    }
+
+    public static final int IS_FIRST_INTERACT_FIELD_NUMBER = 9;
+    private boolean isFirstInteract_;
+    /**
+     * <code>bool is_first_interact = 9;</code>
+     * @return The isFirstInteract.
+     */
+    @java.lang.Override
+    public boolean getIsFirstInteract() {
+      return isFirstInteract_;
+    }
+
+    public static final int TAKEN_LEVEL_REWARD_LIST_FIELD_NUMBER = 2;
     private com.google.protobuf.Internal.IntList takenLevelRewardList_;
     /**
-     * <code>repeated uint32 taken_level_reward_list = 8;</code>
+     * <code>repeated uint32 taken_level_reward_list = 2;</code>
      * @return A list containing the takenLevelRewardList.
      */
     @java.lang.Override
@@ -227,14 +238,14 @@ public final class PlayerOfferingDataOuterClass {
       return takenLevelRewardList_;
     }
     /**
-     * <code>repeated uint32 taken_level_reward_list = 8;</code>
+     * <code>repeated uint32 taken_level_reward_list = 2;</code>
      * @return The count of takenLevelRewardList.
      */
     public int getTakenLevelRewardListCount() {
       return takenLevelRewardList_.size();
     }
     /**
-     * <code>repeated uint32 taken_level_reward_list = 8;</code>
+     * <code>repeated uint32 taken_level_reward_list = 2;</code>
      * @param index The index of the element to return.
      * @return The takenLevelRewardList at the given index.
      */
@@ -242,17 +253,6 @@ public final class PlayerOfferingDataOuterClass {
       return takenLevelRewardList_.getInt(index);
     }
     private int takenLevelRewardListMemoizedSerializedSize = -1;
-
-    public static final int IS_NEW_MAX_LEVEL_FIELD_NUMBER = 6;
-    private boolean isNewMaxLevel_;
-    /**
-     * <code>bool is_new_max_level = 6;</code>
-     * @return The isNewMaxLevel.
-     */
-    @java.lang.Override
-    public boolean getIsNewMaxLevel() {
-      return isNewMaxLevel_;
-    }
 
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
@@ -269,24 +269,24 @@ public final class PlayerOfferingDataOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      if (offeringId_ != 0) {
-        output.writeUInt32(1, offeringId_);
-      }
-      if (isNewMaxLevel_ != false) {
-        output.writeBool(6, isNewMaxLevel_);
-      }
       if (getTakenLevelRewardListList().size() > 0) {
-        output.writeUInt32NoTag(66);
+        output.writeUInt32NoTag(18);
         output.writeUInt32NoTag(takenLevelRewardListMemoizedSerializedSize);
       }
       for (int i = 0; i < takenLevelRewardList_.size(); i++) {
         output.writeUInt32NoTag(takenLevelRewardList_.getInt(i));
       }
+      if (offeringId_ != 0) {
+        output.writeUInt32(3, offeringId_);
+      }
       if (level_ != 0) {
-        output.writeUInt32(12, level_);
+        output.writeUInt32(8, level_);
       }
       if (isFirstInteract_ != false) {
-        output.writeBool(15, isFirstInteract_);
+        output.writeBool(9, isFirstInteract_);
+      }
+      if (isNewMaxLevel_ != false) {
+        output.writeBool(14, isNewMaxLevel_);
       }
       unknownFields.writeTo(output);
     }
@@ -297,14 +297,6 @@ public final class PlayerOfferingDataOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (offeringId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, offeringId_);
-      }
-      if (isNewMaxLevel_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(6, isNewMaxLevel_);
-      }
       {
         int dataSize = 0;
         for (int i = 0; i < takenLevelRewardList_.size(); i++) {
@@ -319,13 +311,21 @@ public final class PlayerOfferingDataOuterClass {
         }
         takenLevelRewardListMemoizedSerializedSize = dataSize;
       }
+      if (offeringId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(3, offeringId_);
+      }
       if (level_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, level_);
+          .computeUInt32Size(8, level_);
       }
       if (isFirstInteract_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(15, isFirstInteract_);
+          .computeBoolSize(9, isFirstInteract_);
+      }
+      if (isNewMaxLevel_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(14, isNewMaxLevel_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -342,16 +342,16 @@ public final class PlayerOfferingDataOuterClass {
       }
       emu.grasscutter.net.proto.PlayerOfferingDataOuterClass.PlayerOfferingData other = (emu.grasscutter.net.proto.PlayerOfferingDataOuterClass.PlayerOfferingData) obj;
 
-      if (getOfferingId()
-          != other.getOfferingId()) return false;
-      if (getIsFirstInteract()
-          != other.getIsFirstInteract()) return false;
       if (getLevel()
           != other.getLevel()) return false;
-      if (!getTakenLevelRewardListList()
-          .equals(other.getTakenLevelRewardListList())) return false;
+      if (getOfferingId()
+          != other.getOfferingId()) return false;
       if (getIsNewMaxLevel()
           != other.getIsNewMaxLevel()) return false;
+      if (getIsFirstInteract()
+          != other.getIsFirstInteract()) return false;
+      if (!getTakenLevelRewardListList()
+          .equals(other.getTakenLevelRewardListList())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -363,20 +363,20 @@ public final class PlayerOfferingDataOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + LEVEL_FIELD_NUMBER;
+      hash = (53 * hash) + getLevel();
       hash = (37 * hash) + OFFERING_ID_FIELD_NUMBER;
       hash = (53 * hash) + getOfferingId();
+      hash = (37 * hash) + IS_NEW_MAX_LEVEL_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getIsNewMaxLevel());
       hash = (37 * hash) + IS_FIRST_INTERACT_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsFirstInteract());
-      hash = (37 * hash) + LEVEL_FIELD_NUMBER;
-      hash = (53 * hash) + getLevel();
       if (getTakenLevelRewardListCount() > 0) {
         hash = (37 * hash) + TAKEN_LEVEL_REWARD_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getTakenLevelRewardListList().hashCode();
       }
-      hash = (37 * hash) + IS_NEW_MAX_LEVEL_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsNewMaxLevel());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -510,16 +510,16 @@ public final class PlayerOfferingDataOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        level_ = 0;
+
         offeringId_ = 0;
+
+        isNewMaxLevel_ = false;
 
         isFirstInteract_ = false;
 
-        level_ = 0;
-
         takenLevelRewardList_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
-        isNewMaxLevel_ = false;
-
         return this;
       }
 
@@ -547,15 +547,15 @@ public final class PlayerOfferingDataOuterClass {
       public emu.grasscutter.net.proto.PlayerOfferingDataOuterClass.PlayerOfferingData buildPartial() {
         emu.grasscutter.net.proto.PlayerOfferingDataOuterClass.PlayerOfferingData result = new emu.grasscutter.net.proto.PlayerOfferingDataOuterClass.PlayerOfferingData(this);
         int from_bitField0_ = bitField0_;
-        result.offeringId_ = offeringId_;
-        result.isFirstInteract_ = isFirstInteract_;
         result.level_ = level_;
+        result.offeringId_ = offeringId_;
+        result.isNewMaxLevel_ = isNewMaxLevel_;
+        result.isFirstInteract_ = isFirstInteract_;
         if (((bitField0_ & 0x00000001) != 0)) {
           takenLevelRewardList_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000001);
         }
         result.takenLevelRewardList_ = takenLevelRewardList_;
-        result.isNewMaxLevel_ = isNewMaxLevel_;
         onBuilt();
         return result;
       }
@@ -604,14 +604,17 @@ public final class PlayerOfferingDataOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.PlayerOfferingDataOuterClass.PlayerOfferingData other) {
         if (other == emu.grasscutter.net.proto.PlayerOfferingDataOuterClass.PlayerOfferingData.getDefaultInstance()) return this;
+        if (other.getLevel() != 0) {
+          setLevel(other.getLevel());
+        }
         if (other.getOfferingId() != 0) {
           setOfferingId(other.getOfferingId());
         }
+        if (other.getIsNewMaxLevel() != false) {
+          setIsNewMaxLevel(other.getIsNewMaxLevel());
+        }
         if (other.getIsFirstInteract() != false) {
           setIsFirstInteract(other.getIsFirstInteract());
-        }
-        if (other.getLevel() != 0) {
-          setLevel(other.getLevel());
         }
         if (!other.takenLevelRewardList_.isEmpty()) {
           if (takenLevelRewardList_.isEmpty()) {
@@ -622,9 +625,6 @@ public final class PlayerOfferingDataOuterClass {
             takenLevelRewardList_.addAll(other.takenLevelRewardList_);
           }
           onChanged();
-        }
-        if (other.getIsNewMaxLevel() != false) {
-          setIsNewMaxLevel(other.getIsNewMaxLevel());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -656,71 +656,9 @@ public final class PlayerOfferingDataOuterClass {
       }
       private int bitField0_;
 
-      private int offeringId_ ;
-      /**
-       * <code>uint32 offering_id = 1;</code>
-       * @return The offeringId.
-       */
-      @java.lang.Override
-      public int getOfferingId() {
-        return offeringId_;
-      }
-      /**
-       * <code>uint32 offering_id = 1;</code>
-       * @param value The offeringId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setOfferingId(int value) {
-        
-        offeringId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 offering_id = 1;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearOfferingId() {
-        
-        offeringId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private boolean isFirstInteract_ ;
-      /**
-       * <code>bool is_first_interact = 15;</code>
-       * @return The isFirstInteract.
-       */
-      @java.lang.Override
-      public boolean getIsFirstInteract() {
-        return isFirstInteract_;
-      }
-      /**
-       * <code>bool is_first_interact = 15;</code>
-       * @param value The isFirstInteract to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsFirstInteract(boolean value) {
-        
-        isFirstInteract_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_first_interact = 15;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsFirstInteract() {
-        
-        isFirstInteract_ = false;
-        onChanged();
-        return this;
-      }
-
       private int level_ ;
       /**
-       * <code>uint32 level = 12;</code>
+       * <code>uint32 level = 8;</code>
        * @return The level.
        */
       @java.lang.Override
@@ -728,7 +666,7 @@ public final class PlayerOfferingDataOuterClass {
         return level_;
       }
       /**
-       * <code>uint32 level = 12;</code>
+       * <code>uint32 level = 8;</code>
        * @param value The level to set.
        * @return This builder for chaining.
        */
@@ -739,12 +677,105 @@ public final class PlayerOfferingDataOuterClass {
         return this;
       }
       /**
-       * <code>uint32 level = 12;</code>
+       * <code>uint32 level = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearLevel() {
         
         level_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int offeringId_ ;
+      /**
+       * <code>uint32 offering_id = 3;</code>
+       * @return The offeringId.
+       */
+      @java.lang.Override
+      public int getOfferingId() {
+        return offeringId_;
+      }
+      /**
+       * <code>uint32 offering_id = 3;</code>
+       * @param value The offeringId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setOfferingId(int value) {
+        
+        offeringId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 offering_id = 3;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearOfferingId() {
+        
+        offeringId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private boolean isNewMaxLevel_ ;
+      /**
+       * <code>bool is_new_max_level = 14;</code>
+       * @return The isNewMaxLevel.
+       */
+      @java.lang.Override
+      public boolean getIsNewMaxLevel() {
+        return isNewMaxLevel_;
+      }
+      /**
+       * <code>bool is_new_max_level = 14;</code>
+       * @param value The isNewMaxLevel to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIsNewMaxLevel(boolean value) {
+        
+        isNewMaxLevel_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool is_new_max_level = 14;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsNewMaxLevel() {
+        
+        isNewMaxLevel_ = false;
+        onChanged();
+        return this;
+      }
+
+      private boolean isFirstInteract_ ;
+      /**
+       * <code>bool is_first_interact = 9;</code>
+       * @return The isFirstInteract.
+       */
+      @java.lang.Override
+      public boolean getIsFirstInteract() {
+        return isFirstInteract_;
+      }
+      /**
+       * <code>bool is_first_interact = 9;</code>
+       * @param value The isFirstInteract to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIsFirstInteract(boolean value) {
+        
+        isFirstInteract_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool is_first_interact = 9;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsFirstInteract() {
+        
+        isFirstInteract_ = false;
         onChanged();
         return this;
       }
@@ -757,7 +788,7 @@ public final class PlayerOfferingDataOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 taken_level_reward_list = 8;</code>
+       * <code>repeated uint32 taken_level_reward_list = 2;</code>
        * @return A list containing the takenLevelRewardList.
        */
       public java.util.List<java.lang.Integer>
@@ -766,14 +797,14 @@ public final class PlayerOfferingDataOuterClass {
                  java.util.Collections.unmodifiableList(takenLevelRewardList_) : takenLevelRewardList_;
       }
       /**
-       * <code>repeated uint32 taken_level_reward_list = 8;</code>
+       * <code>repeated uint32 taken_level_reward_list = 2;</code>
        * @return The count of takenLevelRewardList.
        */
       public int getTakenLevelRewardListCount() {
         return takenLevelRewardList_.size();
       }
       /**
-       * <code>repeated uint32 taken_level_reward_list = 8;</code>
+       * <code>repeated uint32 taken_level_reward_list = 2;</code>
        * @param index The index of the element to return.
        * @return The takenLevelRewardList at the given index.
        */
@@ -781,7 +812,7 @@ public final class PlayerOfferingDataOuterClass {
         return takenLevelRewardList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 taken_level_reward_list = 8;</code>
+       * <code>repeated uint32 taken_level_reward_list = 2;</code>
        * @param index The index to set the value at.
        * @param value The takenLevelRewardList to set.
        * @return This builder for chaining.
@@ -794,7 +825,7 @@ public final class PlayerOfferingDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 taken_level_reward_list = 8;</code>
+       * <code>repeated uint32 taken_level_reward_list = 2;</code>
        * @param value The takenLevelRewardList to add.
        * @return This builder for chaining.
        */
@@ -805,7 +836,7 @@ public final class PlayerOfferingDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 taken_level_reward_list = 8;</code>
+       * <code>repeated uint32 taken_level_reward_list = 2;</code>
        * @param values The takenLevelRewardList to add.
        * @return This builder for chaining.
        */
@@ -818,43 +849,12 @@ public final class PlayerOfferingDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 taken_level_reward_list = 8;</code>
+       * <code>repeated uint32 taken_level_reward_list = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearTakenLevelRewardList() {
         takenLevelRewardList_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
-        onChanged();
-        return this;
-      }
-
-      private boolean isNewMaxLevel_ ;
-      /**
-       * <code>bool is_new_max_level = 6;</code>
-       * @return The isNewMaxLevel.
-       */
-      @java.lang.Override
-      public boolean getIsNewMaxLevel() {
-        return isNewMaxLevel_;
-      }
-      /**
-       * <code>bool is_new_max_level = 6;</code>
-       * @param value The isNewMaxLevel to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsNewMaxLevel(boolean value) {
-        
-        isNewMaxLevel_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_new_max_level = 6;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsNewMaxLevel() {
-        
-        isNewMaxLevel_ = false;
         onChanged();
         return this;
       }
@@ -926,10 +926,10 @@ public final class PlayerOfferingDataOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\030PlayerOfferingData.proto\"\216\001\n\022PlayerOff" +
-      "eringData\022\023\n\013offering_id\030\001 \001(\r\022\031\n\021is_fir" +
-      "st_interact\030\017 \001(\010\022\r\n\005level\030\014 \001(\r\022\037\n\027take" +
-      "n_level_reward_list\030\010 \003(\r\022\030\n\020is_new_max_" +
-      "level\030\006 \001(\010B\033\n\031emu.grasscutter.net.proto" +
+      "eringData\022\r\n\005level\030\010 \001(\r\022\023\n\013offering_id\030" +
+      "\003 \001(\r\022\030\n\020is_new_max_level\030\016 \001(\010\022\031\n\021is_fi" +
+      "rst_interact\030\t \001(\010\022\037\n\027taken_level_reward" +
+      "_list\030\002 \003(\rB\033\n\031emu.grasscutter.net.proto" +
       "b\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -941,7 +941,7 @@ public final class PlayerOfferingDataOuterClass {
     internal_static_PlayerOfferingData_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_PlayerOfferingData_descriptor,
-        new java.lang.String[] { "OfferingId", "IsFirstInteract", "Level", "TakenLevelRewardList", "IsNewMaxLevel", });
+        new java.lang.String[] { "Level", "OfferingId", "IsNewMaxLevel", "IsFirstInteract", "TakenLevelRewardList", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

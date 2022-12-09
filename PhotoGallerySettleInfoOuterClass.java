@@ -19,12 +19,12 @@ public final class PhotoGallerySettleInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.GalleryStopReason reason = 7;</code>
+     * <code>.GalleryStopReason reason = 13;</code>
      * @return The enum numeric value on the wire for reason.
      */
     int getReasonValue();
     /**
-     * <code>.GalleryStopReason reason = 7;</code>
+     * <code>.GalleryStopReason reason = 13;</code>
      * @return The reason.
      */
     emu.grasscutter.net.proto.GalleryStopReasonOuterClass.GalleryStopReason getReason();
@@ -75,7 +75,7 @@ public final class PhotoGallerySettleInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 56: {
+            case 104: {
               int rawValue = input.readEnum();
 
               reason_ = rawValue;
@@ -113,17 +113,17 @@ public final class PhotoGallerySettleInfoOuterClass {
               emu.grasscutter.net.proto.PhotoGallerySettleInfoOuterClass.PhotoGallerySettleInfo.class, emu.grasscutter.net.proto.PhotoGallerySettleInfoOuterClass.PhotoGallerySettleInfo.Builder.class);
     }
 
-    public static final int REASON_FIELD_NUMBER = 7;
+    public static final int REASON_FIELD_NUMBER = 13;
     private int reason_;
     /**
-     * <code>.GalleryStopReason reason = 7;</code>
+     * <code>.GalleryStopReason reason = 13;</code>
      * @return The enum numeric value on the wire for reason.
      */
     @java.lang.Override public int getReasonValue() {
       return reason_;
     }
     /**
-     * <code>.GalleryStopReason reason = 7;</code>
+     * <code>.GalleryStopReason reason = 13;</code>
      * @return The reason.
      */
     @java.lang.Override public emu.grasscutter.net.proto.GalleryStopReasonOuterClass.GalleryStopReason getReason() {
@@ -147,7 +147,7 @@ public final class PhotoGallerySettleInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (reason_ != emu.grasscutter.net.proto.GalleryStopReasonOuterClass.GalleryStopReason.GALLERY_STOP_REASON_NONE.getNumber()) {
-        output.writeEnum(7, reason_);
+        output.writeEnum(13, reason_);
       }
       unknownFields.writeTo(output);
     }
@@ -160,7 +160,7 @@ public final class PhotoGallerySettleInfoOuterClass {
       size = 0;
       if (reason_ != emu.grasscutter.net.proto.GalleryStopReasonOuterClass.GalleryStopReason.GALLERY_STOP_REASON_NONE.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(7, reason_);
+          .computeEnumSize(13, reason_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -435,14 +435,14 @@ public final class PhotoGallerySettleInfoOuterClass {
 
       private int reason_ = 0;
       /**
-       * <code>.GalleryStopReason reason = 7;</code>
+       * <code>.GalleryStopReason reason = 13;</code>
        * @return The enum numeric value on the wire for reason.
        */
       @java.lang.Override public int getReasonValue() {
         return reason_;
       }
       /**
-       * <code>.GalleryStopReason reason = 7;</code>
+       * <code>.GalleryStopReason reason = 13;</code>
        * @param value The enum numeric value on the wire for reason to set.
        * @return This builder for chaining.
        */
@@ -453,7 +453,7 @@ public final class PhotoGallerySettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>.GalleryStopReason reason = 7;</code>
+       * <code>.GalleryStopReason reason = 13;</code>
        * @return The reason.
        */
       @java.lang.Override
@@ -463,7 +463,7 @@ public final class PhotoGallerySettleInfoOuterClass {
         return result == null ? emu.grasscutter.net.proto.GalleryStopReasonOuterClass.GalleryStopReason.UNRECOGNIZED : result;
       }
       /**
-       * <code>.GalleryStopReason reason = 7;</code>
+       * <code>.GalleryStopReason reason = 13;</code>
        * @param value The reason to set.
        * @return This builder for chaining.
        */
@@ -477,7 +477,7 @@ public final class PhotoGallerySettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>.GalleryStopReason reason = 7;</code>
+       * <code>.GalleryStopReason reason = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearReason() {
@@ -555,7 +555,7 @@ public final class PhotoGallerySettleInfoOuterClass {
     java.lang.String[] descriptorData = {
       "\n\034PhotoGallerySettleInfo.proto\032\027GalleryS" +
       "topReason.proto\"<\n\026PhotoGallerySettleInf" +
-      "o\022\"\n\006reason\030\007 \001(\0162\022.GalleryStopReasonB\033\n" +
+      "o\022\"\n\006reason\030\r \001(\0162\022.GalleryStopReasonB\033\n" +
       "\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

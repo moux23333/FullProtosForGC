@@ -19,23 +19,27 @@ public final class ActivityBannerClearReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 schedule_id = 15;</code>
-     * @return The scheduleId.
-     */
-    int getScheduleId();
-
-    /**
-     * <code>uint32 activity_id = 12;</code>
+     * <code>uint32 activity_id = 14;</code>
      * @return The activityId.
      */
     int getActivityId();
+
+    /**
+     * <code>uint32 schedule_id = 7;</code>
+     * @return The scheduleId.
+     */
+    int getScheduleId();
   }
   /**
    * <pre>
-   * CmdId: 2009
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 2147;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code ActivityBannerClearReq}
@@ -82,14 +86,14 @@ public final class ActivityBannerClearReqOuterClass {
             case 0:
               done = true;
               break;
-            case 96: {
-
-              activityId_ = input.readUInt32();
-              break;
-            }
-            case 120: {
+            case 56: {
 
               scheduleId_ = input.readUInt32();
+              break;
+            }
+            case 112: {
+
+              activityId_ = input.readUInt32();
               break;
             }
             default: {
@@ -124,26 +128,26 @@ public final class ActivityBannerClearReqOuterClass {
               emu.grasscutter.net.proto.ActivityBannerClearReqOuterClass.ActivityBannerClearReq.class, emu.grasscutter.net.proto.ActivityBannerClearReqOuterClass.ActivityBannerClearReq.Builder.class);
     }
 
-    public static final int SCHEDULE_ID_FIELD_NUMBER = 15;
-    private int scheduleId_;
-    /**
-     * <code>uint32 schedule_id = 15;</code>
-     * @return The scheduleId.
-     */
-    @java.lang.Override
-    public int getScheduleId() {
-      return scheduleId_;
-    }
-
-    public static final int ACTIVITY_ID_FIELD_NUMBER = 12;
+    public static final int ACTIVITY_ID_FIELD_NUMBER = 14;
     private int activityId_;
     /**
-     * <code>uint32 activity_id = 12;</code>
+     * <code>uint32 activity_id = 14;</code>
      * @return The activityId.
      */
     @java.lang.Override
     public int getActivityId() {
       return activityId_;
+    }
+
+    public static final int SCHEDULE_ID_FIELD_NUMBER = 7;
+    private int scheduleId_;
+    /**
+     * <code>uint32 schedule_id = 7;</code>
+     * @return The scheduleId.
+     */
+    @java.lang.Override
+    public int getScheduleId() {
+      return scheduleId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -160,11 +164,11 @@ public final class ActivityBannerClearReqOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (activityId_ != 0) {
-        output.writeUInt32(12, activityId_);
-      }
       if (scheduleId_ != 0) {
-        output.writeUInt32(15, scheduleId_);
+        output.writeUInt32(7, scheduleId_);
+      }
+      if (activityId_ != 0) {
+        output.writeUInt32(14, activityId_);
       }
       unknownFields.writeTo(output);
     }
@@ -175,13 +179,13 @@ public final class ActivityBannerClearReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (activityId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, activityId_);
-      }
       if (scheduleId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, scheduleId_);
+          .computeUInt32Size(7, scheduleId_);
+      }
+      if (activityId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(14, activityId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -198,10 +202,10 @@ public final class ActivityBannerClearReqOuterClass {
       }
       emu.grasscutter.net.proto.ActivityBannerClearReqOuterClass.ActivityBannerClearReq other = (emu.grasscutter.net.proto.ActivityBannerClearReqOuterClass.ActivityBannerClearReq) obj;
 
-      if (getScheduleId()
-          != other.getScheduleId()) return false;
       if (getActivityId()
           != other.getActivityId()) return false;
+      if (getScheduleId()
+          != other.getScheduleId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -213,10 +217,10 @@ public final class ActivityBannerClearReqOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + SCHEDULE_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getScheduleId();
       hash = (37 * hash) + ACTIVITY_ID_FIELD_NUMBER;
       hash = (53 * hash) + getActivityId();
+      hash = (37 * hash) + SCHEDULE_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getScheduleId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -314,10 +318,14 @@ public final class ActivityBannerClearReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 2009
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 2147;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code ActivityBannerClearReq}
@@ -357,9 +365,9 @@ public final class ActivityBannerClearReqOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        scheduleId_ = 0;
-
         activityId_ = 0;
+
+        scheduleId_ = 0;
 
         return this;
       }
@@ -387,8 +395,8 @@ public final class ActivityBannerClearReqOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.ActivityBannerClearReqOuterClass.ActivityBannerClearReq buildPartial() {
         emu.grasscutter.net.proto.ActivityBannerClearReqOuterClass.ActivityBannerClearReq result = new emu.grasscutter.net.proto.ActivityBannerClearReqOuterClass.ActivityBannerClearReq(this);
-        result.scheduleId_ = scheduleId_;
         result.activityId_ = activityId_;
+        result.scheduleId_ = scheduleId_;
         onBuilt();
         return result;
       }
@@ -437,11 +445,11 @@ public final class ActivityBannerClearReqOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.ActivityBannerClearReqOuterClass.ActivityBannerClearReq other) {
         if (other == emu.grasscutter.net.proto.ActivityBannerClearReqOuterClass.ActivityBannerClearReq.getDefaultInstance()) return this;
-        if (other.getScheduleId() != 0) {
-          setScheduleId(other.getScheduleId());
-        }
         if (other.getActivityId() != 0) {
           setActivityId(other.getActivityId());
+        }
+        if (other.getScheduleId() != 0) {
+          setScheduleId(other.getScheduleId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -472,40 +480,9 @@ public final class ActivityBannerClearReqOuterClass {
         return this;
       }
 
-      private int scheduleId_ ;
-      /**
-       * <code>uint32 schedule_id = 15;</code>
-       * @return The scheduleId.
-       */
-      @java.lang.Override
-      public int getScheduleId() {
-        return scheduleId_;
-      }
-      /**
-       * <code>uint32 schedule_id = 15;</code>
-       * @param value The scheduleId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setScheduleId(int value) {
-        
-        scheduleId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 schedule_id = 15;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearScheduleId() {
-        
-        scheduleId_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int activityId_ ;
       /**
-       * <code>uint32 activity_id = 12;</code>
+       * <code>uint32 activity_id = 14;</code>
        * @return The activityId.
        */
       @java.lang.Override
@@ -513,7 +490,7 @@ public final class ActivityBannerClearReqOuterClass {
         return activityId_;
       }
       /**
-       * <code>uint32 activity_id = 12;</code>
+       * <code>uint32 activity_id = 14;</code>
        * @param value The activityId to set.
        * @return This builder for chaining.
        */
@@ -524,12 +501,43 @@ public final class ActivityBannerClearReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 activity_id = 12;</code>
+       * <code>uint32 activity_id = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearActivityId() {
         
         activityId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int scheduleId_ ;
+      /**
+       * <code>uint32 schedule_id = 7;</code>
+       * @return The scheduleId.
+       */
+      @java.lang.Override
+      public int getScheduleId() {
+        return scheduleId_;
+      }
+      /**
+       * <code>uint32 schedule_id = 7;</code>
+       * @param value The scheduleId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setScheduleId(int value) {
+        
+        scheduleId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 schedule_id = 7;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearScheduleId() {
+        
+        scheduleId_ = 0;
         onChanged();
         return this;
       }
@@ -601,8 +609,8 @@ public final class ActivityBannerClearReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\034ActivityBannerClearReq.proto\"B\n\026Activi" +
-      "tyBannerClearReq\022\023\n\013schedule_id\030\017 \001(\r\022\023\n" +
-      "\013activity_id\030\014 \001(\rB\033\n\031emu.grasscutter.ne" +
+      "tyBannerClearReq\022\023\n\013activity_id\030\016 \001(\r\022\023\n" +
+      "\013schedule_id\030\007 \001(\rB\033\n\031emu.grasscutter.ne" +
       "t.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -614,7 +622,7 @@ public final class ActivityBannerClearReqOuterClass {
     internal_static_ActivityBannerClearReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ActivityBannerClearReq_descriptor,
-        new java.lang.String[] { "ScheduleId", "ActivityId", });
+        new java.lang.String[] { "ActivityId", "ScheduleId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

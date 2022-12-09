@@ -19,16 +19,20 @@ public final class EvtLocalGadgetOwnerLeaveSceneNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 entity_id = 10;</code>
+     * <code>uint32 entity_id = 1;</code>
      * @return The entityId.
      */
     int getEntityId();
   }
   /**
    * <pre>
-   * CmdId: 384
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 352;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code EvtLocalGadgetOwnerLeaveSceneNotify}
@@ -75,7 +79,7 @@ public final class EvtLocalGadgetOwnerLeaveSceneNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 80: {
+            case 8: {
 
               entityId_ = input.readUInt32();
               break;
@@ -112,10 +116,10 @@ public final class EvtLocalGadgetOwnerLeaveSceneNotifyOuterClass {
               emu.grasscutter.net.proto.EvtLocalGadgetOwnerLeaveSceneNotifyOuterClass.EvtLocalGadgetOwnerLeaveSceneNotify.class, emu.grasscutter.net.proto.EvtLocalGadgetOwnerLeaveSceneNotifyOuterClass.EvtLocalGadgetOwnerLeaveSceneNotify.Builder.class);
     }
 
-    public static final int ENTITY_ID_FIELD_NUMBER = 10;
+    public static final int ENTITY_ID_FIELD_NUMBER = 1;
     private int entityId_;
     /**
-     * <code>uint32 entity_id = 10;</code>
+     * <code>uint32 entity_id = 1;</code>
      * @return The entityId.
      */
     @java.lang.Override
@@ -138,7 +142,7 @@ public final class EvtLocalGadgetOwnerLeaveSceneNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (entityId_ != 0) {
-        output.writeUInt32(10, entityId_);
+        output.writeUInt32(1, entityId_);
       }
       unknownFields.writeTo(output);
     }
@@ -151,7 +155,7 @@ public final class EvtLocalGadgetOwnerLeaveSceneNotifyOuterClass {
       size = 0;
       if (entityId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, entityId_);
+          .computeUInt32Size(1, entityId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -280,9 +284,13 @@ public final class EvtLocalGadgetOwnerLeaveSceneNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 384
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 352;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code EvtLocalGadgetOwnerLeaveSceneNotify}
@@ -433,7 +441,7 @@ public final class EvtLocalGadgetOwnerLeaveSceneNotifyOuterClass {
 
       private int entityId_ ;
       /**
-       * <code>uint32 entity_id = 10;</code>
+       * <code>uint32 entity_id = 1;</code>
        * @return The entityId.
        */
       @java.lang.Override
@@ -441,7 +449,7 @@ public final class EvtLocalGadgetOwnerLeaveSceneNotifyOuterClass {
         return entityId_;
       }
       /**
-       * <code>uint32 entity_id = 10;</code>
+       * <code>uint32 entity_id = 1;</code>
        * @param value The entityId to set.
        * @return This builder for chaining.
        */
@@ -452,7 +460,7 @@ public final class EvtLocalGadgetOwnerLeaveSceneNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 entity_id = 10;</code>
+       * <code>uint32 entity_id = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearEntityId() {
@@ -530,7 +538,7 @@ public final class EvtLocalGadgetOwnerLeaveSceneNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n)EvtLocalGadgetOwnerLeaveSceneNotify.pr" +
       "oto\"8\n#EvtLocalGadgetOwnerLeaveSceneNoti" +
-      "fy\022\021\n\tentity_id\030\n \001(\rB\033\n\031emu.grasscutter" +
+      "fy\022\021\n\tentity_id\030\001 \001(\rB\033\n\031emu.grasscutter" +
       ".net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

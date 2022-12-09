@@ -19,25 +19,25 @@ public final class ChessEntranceDetailInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .ChessEntranceInfo info_list = 4;</code>
+     * <code>repeated .ChessEntranceInfo info_list = 9;</code>
      */
     java.util.List<emu.grasscutter.net.proto.ChessEntranceInfoOuterClass.ChessEntranceInfo> 
         getInfoListList();
     /**
-     * <code>repeated .ChessEntranceInfo info_list = 4;</code>
+     * <code>repeated .ChessEntranceInfo info_list = 9;</code>
      */
     emu.grasscutter.net.proto.ChessEntranceInfoOuterClass.ChessEntranceInfo getInfoList(int index);
     /**
-     * <code>repeated .ChessEntranceInfo info_list = 4;</code>
+     * <code>repeated .ChessEntranceInfo info_list = 9;</code>
      */
     int getInfoListCount();
     /**
-     * <code>repeated .ChessEntranceInfo info_list = 4;</code>
+     * <code>repeated .ChessEntranceInfo info_list = 9;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.ChessEntranceInfoOuterClass.ChessEntranceInfoOrBuilder> 
         getInfoListOrBuilderList();
     /**
-     * <code>repeated .ChessEntranceInfo info_list = 4;</code>
+     * <code>repeated .ChessEntranceInfo info_list = 9;</code>
      */
     emu.grasscutter.net.proto.ChessEntranceInfoOuterClass.ChessEntranceInfoOrBuilder getInfoListOrBuilder(
         int index);
@@ -89,7 +89,7 @@ public final class ChessEntranceDetailInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 34: {
+            case 74: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 infoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.ChessEntranceInfoOuterClass.ChessEntranceInfo>();
                 mutable_bitField0_ |= 0x00000001;
@@ -133,17 +133,17 @@ public final class ChessEntranceDetailInfoOuterClass {
               emu.grasscutter.net.proto.ChessEntranceDetailInfoOuterClass.ChessEntranceDetailInfo.class, emu.grasscutter.net.proto.ChessEntranceDetailInfoOuterClass.ChessEntranceDetailInfo.Builder.class);
     }
 
-    public static final int INFO_LIST_FIELD_NUMBER = 4;
+    public static final int INFO_LIST_FIELD_NUMBER = 9;
     private java.util.List<emu.grasscutter.net.proto.ChessEntranceInfoOuterClass.ChessEntranceInfo> infoList_;
     /**
-     * <code>repeated .ChessEntranceInfo info_list = 4;</code>
+     * <code>repeated .ChessEntranceInfo info_list = 9;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.ChessEntranceInfoOuterClass.ChessEntranceInfo> getInfoListList() {
       return infoList_;
     }
     /**
-     * <code>repeated .ChessEntranceInfo info_list = 4;</code>
+     * <code>repeated .ChessEntranceInfo info_list = 9;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.ChessEntranceInfoOuterClass.ChessEntranceInfoOrBuilder> 
@@ -151,21 +151,21 @@ public final class ChessEntranceDetailInfoOuterClass {
       return infoList_;
     }
     /**
-     * <code>repeated .ChessEntranceInfo info_list = 4;</code>
+     * <code>repeated .ChessEntranceInfo info_list = 9;</code>
      */
     @java.lang.Override
     public int getInfoListCount() {
       return infoList_.size();
     }
     /**
-     * <code>repeated .ChessEntranceInfo info_list = 4;</code>
+     * <code>repeated .ChessEntranceInfo info_list = 9;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.ChessEntranceInfoOuterClass.ChessEntranceInfo getInfoList(int index) {
       return infoList_.get(index);
     }
     /**
-     * <code>repeated .ChessEntranceInfo info_list = 4;</code>
+     * <code>repeated .ChessEntranceInfo info_list = 9;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.ChessEntranceInfoOuterClass.ChessEntranceInfoOrBuilder getInfoListOrBuilder(
@@ -188,7 +188,7 @@ public final class ChessEntranceDetailInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       for (int i = 0; i < infoList_.size(); i++) {
-        output.writeMessage(4, infoList_.get(i));
+        output.writeMessage(9, infoList_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -201,7 +201,7 @@ public final class ChessEntranceDetailInfoOuterClass {
       size = 0;
       for (int i = 0; i < infoList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(4, infoList_.get(i));
+          .computeMessageSize(9, infoList_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -528,7 +528,7 @@ public final class ChessEntranceDetailInfoOuterClass {
           emu.grasscutter.net.proto.ChessEntranceInfoOuterClass.ChessEntranceInfo, emu.grasscutter.net.proto.ChessEntranceInfoOuterClass.ChessEntranceInfo.Builder, emu.grasscutter.net.proto.ChessEntranceInfoOuterClass.ChessEntranceInfoOrBuilder> infoListBuilder_;
 
       /**
-       * <code>repeated .ChessEntranceInfo info_list = 4;</code>
+       * <code>repeated .ChessEntranceInfo info_list = 9;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.ChessEntranceInfoOuterClass.ChessEntranceInfo> getInfoListList() {
         if (infoListBuilder_ == null) {
@@ -538,7 +538,7 @@ public final class ChessEntranceDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .ChessEntranceInfo info_list = 4;</code>
+       * <code>repeated .ChessEntranceInfo info_list = 9;</code>
        */
       public int getInfoListCount() {
         if (infoListBuilder_ == null) {
@@ -548,7 +548,7 @@ public final class ChessEntranceDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .ChessEntranceInfo info_list = 4;</code>
+       * <code>repeated .ChessEntranceInfo info_list = 9;</code>
        */
       public emu.grasscutter.net.proto.ChessEntranceInfoOuterClass.ChessEntranceInfo getInfoList(int index) {
         if (infoListBuilder_ == null) {
@@ -558,7 +558,7 @@ public final class ChessEntranceDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .ChessEntranceInfo info_list = 4;</code>
+       * <code>repeated .ChessEntranceInfo info_list = 9;</code>
        */
       public Builder setInfoList(
           int index, emu.grasscutter.net.proto.ChessEntranceInfoOuterClass.ChessEntranceInfo value) {
@@ -575,7 +575,7 @@ public final class ChessEntranceDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ChessEntranceInfo info_list = 4;</code>
+       * <code>repeated .ChessEntranceInfo info_list = 9;</code>
        */
       public Builder setInfoList(
           int index, emu.grasscutter.net.proto.ChessEntranceInfoOuterClass.ChessEntranceInfo.Builder builderForValue) {
@@ -589,7 +589,7 @@ public final class ChessEntranceDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ChessEntranceInfo info_list = 4;</code>
+       * <code>repeated .ChessEntranceInfo info_list = 9;</code>
        */
       public Builder addInfoList(emu.grasscutter.net.proto.ChessEntranceInfoOuterClass.ChessEntranceInfo value) {
         if (infoListBuilder_ == null) {
@@ -605,7 +605,7 @@ public final class ChessEntranceDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ChessEntranceInfo info_list = 4;</code>
+       * <code>repeated .ChessEntranceInfo info_list = 9;</code>
        */
       public Builder addInfoList(
           int index, emu.grasscutter.net.proto.ChessEntranceInfoOuterClass.ChessEntranceInfo value) {
@@ -622,7 +622,7 @@ public final class ChessEntranceDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ChessEntranceInfo info_list = 4;</code>
+       * <code>repeated .ChessEntranceInfo info_list = 9;</code>
        */
       public Builder addInfoList(
           emu.grasscutter.net.proto.ChessEntranceInfoOuterClass.ChessEntranceInfo.Builder builderForValue) {
@@ -636,7 +636,7 @@ public final class ChessEntranceDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ChessEntranceInfo info_list = 4;</code>
+       * <code>repeated .ChessEntranceInfo info_list = 9;</code>
        */
       public Builder addInfoList(
           int index, emu.grasscutter.net.proto.ChessEntranceInfoOuterClass.ChessEntranceInfo.Builder builderForValue) {
@@ -650,7 +650,7 @@ public final class ChessEntranceDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ChessEntranceInfo info_list = 4;</code>
+       * <code>repeated .ChessEntranceInfo info_list = 9;</code>
        */
       public Builder addAllInfoList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.ChessEntranceInfoOuterClass.ChessEntranceInfo> values) {
@@ -665,7 +665,7 @@ public final class ChessEntranceDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ChessEntranceInfo info_list = 4;</code>
+       * <code>repeated .ChessEntranceInfo info_list = 9;</code>
        */
       public Builder clearInfoList() {
         if (infoListBuilder_ == null) {
@@ -678,7 +678,7 @@ public final class ChessEntranceDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ChessEntranceInfo info_list = 4;</code>
+       * <code>repeated .ChessEntranceInfo info_list = 9;</code>
        */
       public Builder removeInfoList(int index) {
         if (infoListBuilder_ == null) {
@@ -691,14 +691,14 @@ public final class ChessEntranceDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ChessEntranceInfo info_list = 4;</code>
+       * <code>repeated .ChessEntranceInfo info_list = 9;</code>
        */
       public emu.grasscutter.net.proto.ChessEntranceInfoOuterClass.ChessEntranceInfo.Builder getInfoListBuilder(
           int index) {
         return getInfoListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .ChessEntranceInfo info_list = 4;</code>
+       * <code>repeated .ChessEntranceInfo info_list = 9;</code>
        */
       public emu.grasscutter.net.proto.ChessEntranceInfoOuterClass.ChessEntranceInfoOrBuilder getInfoListOrBuilder(
           int index) {
@@ -708,7 +708,7 @@ public final class ChessEntranceDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .ChessEntranceInfo info_list = 4;</code>
+       * <code>repeated .ChessEntranceInfo info_list = 9;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.ChessEntranceInfoOuterClass.ChessEntranceInfoOrBuilder> 
            getInfoListOrBuilderList() {
@@ -719,14 +719,14 @@ public final class ChessEntranceDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .ChessEntranceInfo info_list = 4;</code>
+       * <code>repeated .ChessEntranceInfo info_list = 9;</code>
        */
       public emu.grasscutter.net.proto.ChessEntranceInfoOuterClass.ChessEntranceInfo.Builder addInfoListBuilder() {
         return getInfoListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.ChessEntranceInfoOuterClass.ChessEntranceInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .ChessEntranceInfo info_list = 4;</code>
+       * <code>repeated .ChessEntranceInfo info_list = 9;</code>
        */
       public emu.grasscutter.net.proto.ChessEntranceInfoOuterClass.ChessEntranceInfo.Builder addInfoListBuilder(
           int index) {
@@ -734,7 +734,7 @@ public final class ChessEntranceDetailInfoOuterClass {
             index, emu.grasscutter.net.proto.ChessEntranceInfoOuterClass.ChessEntranceInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .ChessEntranceInfo info_list = 4;</code>
+       * <code>repeated .ChessEntranceInfo info_list = 9;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.ChessEntranceInfoOuterClass.ChessEntranceInfo.Builder> 
            getInfoListBuilderList() {
@@ -823,7 +823,7 @@ public final class ChessEntranceDetailInfoOuterClass {
     java.lang.String[] descriptorData = {
       "\n\035ChessEntranceDetailInfo.proto\032\027ChessEn" +
       "tranceInfo.proto\"@\n\027ChessEntranceDetailI" +
-      "nfo\022%\n\tinfo_list\030\004 \003(\0132\022.ChessEntranceIn" +
+      "nfo\022%\n\tinfo_list\030\t \003(\0132\022.ChessEntranceIn" +
       "foB\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

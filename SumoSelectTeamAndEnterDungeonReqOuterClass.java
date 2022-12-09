@@ -19,53 +19,57 @@ public final class SumoSelectTeamAndEnterDungeonReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
+     * <code>repeated .SumoTeamData team_list = 15;</code>
+     */
+    java.util.List<emu.grasscutter.net.proto.SumoTeamDataOuterClass.SumoTeamData> 
+        getTeamListList();
+    /**
+     * <code>repeated .SumoTeamData team_list = 15;</code>
+     */
+    emu.grasscutter.net.proto.SumoTeamDataOuterClass.SumoTeamData getTeamList(int index);
+    /**
+     * <code>repeated .SumoTeamData team_list = 15;</code>
+     */
+    int getTeamListCount();
+    /**
+     * <code>repeated .SumoTeamData team_list = 15;</code>
+     */
+    java.util.List<? extends emu.grasscutter.net.proto.SumoTeamDataOuterClass.SumoTeamDataOrBuilder> 
+        getTeamListOrBuilderList();
+    /**
+     * <code>repeated .SumoTeamData team_list = 15;</code>
+     */
+    emu.grasscutter.net.proto.SumoTeamDataOuterClass.SumoTeamDataOrBuilder getTeamListOrBuilder(
+        int index);
+
+    /**
      * <code>uint32 activity_id = 1;</code>
      * @return The activityId.
      */
     int getActivityId();
 
     /**
-     * <code>uint32 stage_id = 7;</code>
-     * @return The stageId.
-     */
-    int getStageId();
-
-    /**
-     * <code>uint32 difficulty_id = 4;</code>
+     * <code>uint32 difficulty_id = 5;</code>
      * @return The difficultyId.
      */
     int getDifficultyId();
 
     /**
-     * <code>repeated .SumoTeamData team_list = 10;</code>
+     * <code>uint32 stage_id = 7;</code>
+     * @return The stageId.
      */
-    java.util.List<emu.grasscutter.net.proto.SumoTeamDataOuterClass.SumoTeamData> 
-        getTeamListList();
-    /**
-     * <code>repeated .SumoTeamData team_list = 10;</code>
-     */
-    emu.grasscutter.net.proto.SumoTeamDataOuterClass.SumoTeamData getTeamList(int index);
-    /**
-     * <code>repeated .SumoTeamData team_list = 10;</code>
-     */
-    int getTeamListCount();
-    /**
-     * <code>repeated .SumoTeamData team_list = 10;</code>
-     */
-    java.util.List<? extends emu.grasscutter.net.proto.SumoTeamDataOuterClass.SumoTeamDataOrBuilder> 
-        getTeamListOrBuilderList();
-    /**
-     * <code>repeated .SumoTeamData team_list = 10;</code>
-     */
-    emu.grasscutter.net.proto.SumoTeamDataOuterClass.SumoTeamDataOrBuilder getTeamListOrBuilder(
-        int index);
+    int getStageId();
   }
   /**
    * <pre>
-   * CmdId: 8215
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 8978;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code SumoSelectTeamAndEnterDungeonReq}
@@ -119,7 +123,7 @@ public final class SumoSelectTeamAndEnterDungeonReqOuterClass {
               activityId_ = input.readUInt32();
               break;
             }
-            case 32: {
+            case 40: {
 
               difficultyId_ = input.readUInt32();
               break;
@@ -129,7 +133,7 @@ public final class SumoSelectTeamAndEnterDungeonReqOuterClass {
               stageId_ = input.readUInt32();
               break;
             }
-            case 82: {
+            case 122: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 teamList_ = new java.util.ArrayList<emu.grasscutter.net.proto.SumoTeamDataOuterClass.SumoTeamData>();
                 mutable_bitField0_ |= 0x00000001;
@@ -173,6 +177,46 @@ public final class SumoSelectTeamAndEnterDungeonReqOuterClass {
               emu.grasscutter.net.proto.SumoSelectTeamAndEnterDungeonReqOuterClass.SumoSelectTeamAndEnterDungeonReq.class, emu.grasscutter.net.proto.SumoSelectTeamAndEnterDungeonReqOuterClass.SumoSelectTeamAndEnterDungeonReq.Builder.class);
     }
 
+    public static final int TEAM_LIST_FIELD_NUMBER = 15;
+    private java.util.List<emu.grasscutter.net.proto.SumoTeamDataOuterClass.SumoTeamData> teamList_;
+    /**
+     * <code>repeated .SumoTeamData team_list = 15;</code>
+     */
+    @java.lang.Override
+    public java.util.List<emu.grasscutter.net.proto.SumoTeamDataOuterClass.SumoTeamData> getTeamListList() {
+      return teamList_;
+    }
+    /**
+     * <code>repeated .SumoTeamData team_list = 15;</code>
+     */
+    @java.lang.Override
+    public java.util.List<? extends emu.grasscutter.net.proto.SumoTeamDataOuterClass.SumoTeamDataOrBuilder> 
+        getTeamListOrBuilderList() {
+      return teamList_;
+    }
+    /**
+     * <code>repeated .SumoTeamData team_list = 15;</code>
+     */
+    @java.lang.Override
+    public int getTeamListCount() {
+      return teamList_.size();
+    }
+    /**
+     * <code>repeated .SumoTeamData team_list = 15;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.SumoTeamDataOuterClass.SumoTeamData getTeamList(int index) {
+      return teamList_.get(index);
+    }
+    /**
+     * <code>repeated .SumoTeamData team_list = 15;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.SumoTeamDataOuterClass.SumoTeamDataOrBuilder getTeamListOrBuilder(
+        int index) {
+      return teamList_.get(index);
+    }
+
     public static final int ACTIVITY_ID_FIELD_NUMBER = 1;
     private int activityId_;
     /**
@@ -184,6 +228,17 @@ public final class SumoSelectTeamAndEnterDungeonReqOuterClass {
       return activityId_;
     }
 
+    public static final int DIFFICULTY_ID_FIELD_NUMBER = 5;
+    private int difficultyId_;
+    /**
+     * <code>uint32 difficulty_id = 5;</code>
+     * @return The difficultyId.
+     */
+    @java.lang.Override
+    public int getDifficultyId() {
+      return difficultyId_;
+    }
+
     public static final int STAGE_ID_FIELD_NUMBER = 7;
     private int stageId_;
     /**
@@ -193,57 +248,6 @@ public final class SumoSelectTeamAndEnterDungeonReqOuterClass {
     @java.lang.Override
     public int getStageId() {
       return stageId_;
-    }
-
-    public static final int DIFFICULTY_ID_FIELD_NUMBER = 4;
-    private int difficultyId_;
-    /**
-     * <code>uint32 difficulty_id = 4;</code>
-     * @return The difficultyId.
-     */
-    @java.lang.Override
-    public int getDifficultyId() {
-      return difficultyId_;
-    }
-
-    public static final int TEAM_LIST_FIELD_NUMBER = 10;
-    private java.util.List<emu.grasscutter.net.proto.SumoTeamDataOuterClass.SumoTeamData> teamList_;
-    /**
-     * <code>repeated .SumoTeamData team_list = 10;</code>
-     */
-    @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.SumoTeamDataOuterClass.SumoTeamData> getTeamListList() {
-      return teamList_;
-    }
-    /**
-     * <code>repeated .SumoTeamData team_list = 10;</code>
-     */
-    @java.lang.Override
-    public java.util.List<? extends emu.grasscutter.net.proto.SumoTeamDataOuterClass.SumoTeamDataOrBuilder> 
-        getTeamListOrBuilderList() {
-      return teamList_;
-    }
-    /**
-     * <code>repeated .SumoTeamData team_list = 10;</code>
-     */
-    @java.lang.Override
-    public int getTeamListCount() {
-      return teamList_.size();
-    }
-    /**
-     * <code>repeated .SumoTeamData team_list = 10;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.SumoTeamDataOuterClass.SumoTeamData getTeamList(int index) {
-      return teamList_.get(index);
-    }
-    /**
-     * <code>repeated .SumoTeamData team_list = 10;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.SumoTeamDataOuterClass.SumoTeamDataOrBuilder getTeamListOrBuilder(
-        int index) {
-      return teamList_.get(index);
     }
 
     private byte memoizedIsInitialized = -1;
@@ -264,13 +268,13 @@ public final class SumoSelectTeamAndEnterDungeonReqOuterClass {
         output.writeUInt32(1, activityId_);
       }
       if (difficultyId_ != 0) {
-        output.writeUInt32(4, difficultyId_);
+        output.writeUInt32(5, difficultyId_);
       }
       if (stageId_ != 0) {
         output.writeUInt32(7, stageId_);
       }
       for (int i = 0; i < teamList_.size(); i++) {
-        output.writeMessage(10, teamList_.get(i));
+        output.writeMessage(15, teamList_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -287,7 +291,7 @@ public final class SumoSelectTeamAndEnterDungeonReqOuterClass {
       }
       if (difficultyId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, difficultyId_);
+          .computeUInt32Size(5, difficultyId_);
       }
       if (stageId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
@@ -295,7 +299,7 @@ public final class SumoSelectTeamAndEnterDungeonReqOuterClass {
       }
       for (int i = 0; i < teamList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(10, teamList_.get(i));
+          .computeMessageSize(15, teamList_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -312,14 +316,14 @@ public final class SumoSelectTeamAndEnterDungeonReqOuterClass {
       }
       emu.grasscutter.net.proto.SumoSelectTeamAndEnterDungeonReqOuterClass.SumoSelectTeamAndEnterDungeonReq other = (emu.grasscutter.net.proto.SumoSelectTeamAndEnterDungeonReqOuterClass.SumoSelectTeamAndEnterDungeonReq) obj;
 
-      if (getActivityId()
-          != other.getActivityId()) return false;
-      if (getStageId()
-          != other.getStageId()) return false;
-      if (getDifficultyId()
-          != other.getDifficultyId()) return false;
       if (!getTeamListList()
           .equals(other.getTeamListList())) return false;
+      if (getActivityId()
+          != other.getActivityId()) return false;
+      if (getDifficultyId()
+          != other.getDifficultyId()) return false;
+      if (getStageId()
+          != other.getStageId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -331,16 +335,16 @@ public final class SumoSelectTeamAndEnterDungeonReqOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + ACTIVITY_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getActivityId();
-      hash = (37 * hash) + STAGE_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getStageId();
-      hash = (37 * hash) + DIFFICULTY_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getDifficultyId();
       if (getTeamListCount() > 0) {
         hash = (37 * hash) + TEAM_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getTeamListList().hashCode();
       }
+      hash = (37 * hash) + ACTIVITY_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getActivityId();
+      hash = (37 * hash) + DIFFICULTY_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getDifficultyId();
+      hash = (37 * hash) + STAGE_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getStageId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -438,10 +442,14 @@ public final class SumoSelectTeamAndEnterDungeonReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 8215
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 8978;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code SumoSelectTeamAndEnterDungeonReq}
@@ -482,18 +490,18 @@ public final class SumoSelectTeamAndEnterDungeonReqOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        activityId_ = 0;
-
-        stageId_ = 0;
-
-        difficultyId_ = 0;
-
         if (teamListBuilder_ == null) {
           teamList_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000001);
         } else {
           teamListBuilder_.clear();
         }
+        activityId_ = 0;
+
+        difficultyId_ = 0;
+
+        stageId_ = 0;
+
         return this;
       }
 
@@ -521,9 +529,6 @@ public final class SumoSelectTeamAndEnterDungeonReqOuterClass {
       public emu.grasscutter.net.proto.SumoSelectTeamAndEnterDungeonReqOuterClass.SumoSelectTeamAndEnterDungeonReq buildPartial() {
         emu.grasscutter.net.proto.SumoSelectTeamAndEnterDungeonReqOuterClass.SumoSelectTeamAndEnterDungeonReq result = new emu.grasscutter.net.proto.SumoSelectTeamAndEnterDungeonReqOuterClass.SumoSelectTeamAndEnterDungeonReq(this);
         int from_bitField0_ = bitField0_;
-        result.activityId_ = activityId_;
-        result.stageId_ = stageId_;
-        result.difficultyId_ = difficultyId_;
         if (teamListBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0)) {
             teamList_ = java.util.Collections.unmodifiableList(teamList_);
@@ -533,6 +538,9 @@ public final class SumoSelectTeamAndEnterDungeonReqOuterClass {
         } else {
           result.teamList_ = teamListBuilder_.build();
         }
+        result.activityId_ = activityId_;
+        result.difficultyId_ = difficultyId_;
+        result.stageId_ = stageId_;
         onBuilt();
         return result;
       }
@@ -581,15 +589,6 @@ public final class SumoSelectTeamAndEnterDungeonReqOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.SumoSelectTeamAndEnterDungeonReqOuterClass.SumoSelectTeamAndEnterDungeonReq other) {
         if (other == emu.grasscutter.net.proto.SumoSelectTeamAndEnterDungeonReqOuterClass.SumoSelectTeamAndEnterDungeonReq.getDefaultInstance()) return this;
-        if (other.getActivityId() != 0) {
-          setActivityId(other.getActivityId());
-        }
-        if (other.getStageId() != 0) {
-          setStageId(other.getStageId());
-        }
-        if (other.getDifficultyId() != 0) {
-          setDifficultyId(other.getDifficultyId());
-        }
         if (teamListBuilder_ == null) {
           if (!other.teamList_.isEmpty()) {
             if (teamList_.isEmpty()) {
@@ -615,6 +614,15 @@ public final class SumoSelectTeamAndEnterDungeonReqOuterClass {
               teamListBuilder_.addAllMessages(other.teamList_);
             }
           }
+        }
+        if (other.getActivityId() != 0) {
+          setActivityId(other.getActivityId());
+        }
+        if (other.getDifficultyId() != 0) {
+          setDifficultyId(other.getDifficultyId());
+        }
+        if (other.getStageId() != 0) {
+          setStageId(other.getStageId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -646,6 +654,246 @@ public final class SumoSelectTeamAndEnterDungeonReqOuterClass {
       }
       private int bitField0_;
 
+      private java.util.List<emu.grasscutter.net.proto.SumoTeamDataOuterClass.SumoTeamData> teamList_ =
+        java.util.Collections.emptyList();
+      private void ensureTeamListIsMutable() {
+        if (!((bitField0_ & 0x00000001) != 0)) {
+          teamList_ = new java.util.ArrayList<emu.grasscutter.net.proto.SumoTeamDataOuterClass.SumoTeamData>(teamList_);
+          bitField0_ |= 0x00000001;
+         }
+      }
+
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          emu.grasscutter.net.proto.SumoTeamDataOuterClass.SumoTeamData, emu.grasscutter.net.proto.SumoTeamDataOuterClass.SumoTeamData.Builder, emu.grasscutter.net.proto.SumoTeamDataOuterClass.SumoTeamDataOrBuilder> teamListBuilder_;
+
+      /**
+       * <code>repeated .SumoTeamData team_list = 15;</code>
+       */
+      public java.util.List<emu.grasscutter.net.proto.SumoTeamDataOuterClass.SumoTeamData> getTeamListList() {
+        if (teamListBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(teamList_);
+        } else {
+          return teamListBuilder_.getMessageList();
+        }
+      }
+      /**
+       * <code>repeated .SumoTeamData team_list = 15;</code>
+       */
+      public int getTeamListCount() {
+        if (teamListBuilder_ == null) {
+          return teamList_.size();
+        } else {
+          return teamListBuilder_.getCount();
+        }
+      }
+      /**
+       * <code>repeated .SumoTeamData team_list = 15;</code>
+       */
+      public emu.grasscutter.net.proto.SumoTeamDataOuterClass.SumoTeamData getTeamList(int index) {
+        if (teamListBuilder_ == null) {
+          return teamList_.get(index);
+        } else {
+          return teamListBuilder_.getMessage(index);
+        }
+      }
+      /**
+       * <code>repeated .SumoTeamData team_list = 15;</code>
+       */
+      public Builder setTeamList(
+          int index, emu.grasscutter.net.proto.SumoTeamDataOuterClass.SumoTeamData value) {
+        if (teamListBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureTeamListIsMutable();
+          teamList_.set(index, value);
+          onChanged();
+        } else {
+          teamListBuilder_.setMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .SumoTeamData team_list = 15;</code>
+       */
+      public Builder setTeamList(
+          int index, emu.grasscutter.net.proto.SumoTeamDataOuterClass.SumoTeamData.Builder builderForValue) {
+        if (teamListBuilder_ == null) {
+          ensureTeamListIsMutable();
+          teamList_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          teamListBuilder_.setMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .SumoTeamData team_list = 15;</code>
+       */
+      public Builder addTeamList(emu.grasscutter.net.proto.SumoTeamDataOuterClass.SumoTeamData value) {
+        if (teamListBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureTeamListIsMutable();
+          teamList_.add(value);
+          onChanged();
+        } else {
+          teamListBuilder_.addMessage(value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .SumoTeamData team_list = 15;</code>
+       */
+      public Builder addTeamList(
+          int index, emu.grasscutter.net.proto.SumoTeamDataOuterClass.SumoTeamData value) {
+        if (teamListBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureTeamListIsMutable();
+          teamList_.add(index, value);
+          onChanged();
+        } else {
+          teamListBuilder_.addMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .SumoTeamData team_list = 15;</code>
+       */
+      public Builder addTeamList(
+          emu.grasscutter.net.proto.SumoTeamDataOuterClass.SumoTeamData.Builder builderForValue) {
+        if (teamListBuilder_ == null) {
+          ensureTeamListIsMutable();
+          teamList_.add(builderForValue.build());
+          onChanged();
+        } else {
+          teamListBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .SumoTeamData team_list = 15;</code>
+       */
+      public Builder addTeamList(
+          int index, emu.grasscutter.net.proto.SumoTeamDataOuterClass.SumoTeamData.Builder builderForValue) {
+        if (teamListBuilder_ == null) {
+          ensureTeamListIsMutable();
+          teamList_.add(index, builderForValue.build());
+          onChanged();
+        } else {
+          teamListBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .SumoTeamData team_list = 15;</code>
+       */
+      public Builder addAllTeamList(
+          java.lang.Iterable<? extends emu.grasscutter.net.proto.SumoTeamDataOuterClass.SumoTeamData> values) {
+        if (teamListBuilder_ == null) {
+          ensureTeamListIsMutable();
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, teamList_);
+          onChanged();
+        } else {
+          teamListBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .SumoTeamData team_list = 15;</code>
+       */
+      public Builder clearTeamList() {
+        if (teamListBuilder_ == null) {
+          teamList_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000001);
+          onChanged();
+        } else {
+          teamListBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .SumoTeamData team_list = 15;</code>
+       */
+      public Builder removeTeamList(int index) {
+        if (teamListBuilder_ == null) {
+          ensureTeamListIsMutable();
+          teamList_.remove(index);
+          onChanged();
+        } else {
+          teamListBuilder_.remove(index);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .SumoTeamData team_list = 15;</code>
+       */
+      public emu.grasscutter.net.proto.SumoTeamDataOuterClass.SumoTeamData.Builder getTeamListBuilder(
+          int index) {
+        return getTeamListFieldBuilder().getBuilder(index);
+      }
+      /**
+       * <code>repeated .SumoTeamData team_list = 15;</code>
+       */
+      public emu.grasscutter.net.proto.SumoTeamDataOuterClass.SumoTeamDataOrBuilder getTeamListOrBuilder(
+          int index) {
+        if (teamListBuilder_ == null) {
+          return teamList_.get(index);  } else {
+          return teamListBuilder_.getMessageOrBuilder(index);
+        }
+      }
+      /**
+       * <code>repeated .SumoTeamData team_list = 15;</code>
+       */
+      public java.util.List<? extends emu.grasscutter.net.proto.SumoTeamDataOuterClass.SumoTeamDataOrBuilder> 
+           getTeamListOrBuilderList() {
+        if (teamListBuilder_ != null) {
+          return teamListBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(teamList_);
+        }
+      }
+      /**
+       * <code>repeated .SumoTeamData team_list = 15;</code>
+       */
+      public emu.grasscutter.net.proto.SumoTeamDataOuterClass.SumoTeamData.Builder addTeamListBuilder() {
+        return getTeamListFieldBuilder().addBuilder(
+            emu.grasscutter.net.proto.SumoTeamDataOuterClass.SumoTeamData.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .SumoTeamData team_list = 15;</code>
+       */
+      public emu.grasscutter.net.proto.SumoTeamDataOuterClass.SumoTeamData.Builder addTeamListBuilder(
+          int index) {
+        return getTeamListFieldBuilder().addBuilder(
+            index, emu.grasscutter.net.proto.SumoTeamDataOuterClass.SumoTeamData.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .SumoTeamData team_list = 15;</code>
+       */
+      public java.util.List<emu.grasscutter.net.proto.SumoTeamDataOuterClass.SumoTeamData.Builder> 
+           getTeamListBuilderList() {
+        return getTeamListFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          emu.grasscutter.net.proto.SumoTeamDataOuterClass.SumoTeamData, emu.grasscutter.net.proto.SumoTeamDataOuterClass.SumoTeamData.Builder, emu.grasscutter.net.proto.SumoTeamDataOuterClass.SumoTeamDataOrBuilder> 
+          getTeamListFieldBuilder() {
+        if (teamListBuilder_ == null) {
+          teamListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+              emu.grasscutter.net.proto.SumoTeamDataOuterClass.SumoTeamData, emu.grasscutter.net.proto.SumoTeamDataOuterClass.SumoTeamData.Builder, emu.grasscutter.net.proto.SumoTeamDataOuterClass.SumoTeamDataOrBuilder>(
+                  teamList_,
+                  ((bitField0_ & 0x00000001) != 0),
+                  getParentForChildren(),
+                  isClean());
+          teamList_ = null;
+        }
+        return teamListBuilder_;
+      }
+
       private int activityId_ ;
       /**
        * <code>uint32 activity_id = 1;</code>
@@ -673,6 +921,37 @@ public final class SumoSelectTeamAndEnterDungeonReqOuterClass {
       public Builder clearActivityId() {
         
         activityId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int difficultyId_ ;
+      /**
+       * <code>uint32 difficulty_id = 5;</code>
+       * @return The difficultyId.
+       */
+      @java.lang.Override
+      public int getDifficultyId() {
+        return difficultyId_;
+      }
+      /**
+       * <code>uint32 difficulty_id = 5;</code>
+       * @param value The difficultyId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setDifficultyId(int value) {
+        
+        difficultyId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 difficulty_id = 5;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearDifficultyId() {
+        
+        difficultyId_ = 0;
         onChanged();
         return this;
       }
@@ -706,277 +985,6 @@ public final class SumoSelectTeamAndEnterDungeonReqOuterClass {
         stageId_ = 0;
         onChanged();
         return this;
-      }
-
-      private int difficultyId_ ;
-      /**
-       * <code>uint32 difficulty_id = 4;</code>
-       * @return The difficultyId.
-       */
-      @java.lang.Override
-      public int getDifficultyId() {
-        return difficultyId_;
-      }
-      /**
-       * <code>uint32 difficulty_id = 4;</code>
-       * @param value The difficultyId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setDifficultyId(int value) {
-        
-        difficultyId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 difficulty_id = 4;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearDifficultyId() {
-        
-        difficultyId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private java.util.List<emu.grasscutter.net.proto.SumoTeamDataOuterClass.SumoTeamData> teamList_ =
-        java.util.Collections.emptyList();
-      private void ensureTeamListIsMutable() {
-        if (!((bitField0_ & 0x00000001) != 0)) {
-          teamList_ = new java.util.ArrayList<emu.grasscutter.net.proto.SumoTeamDataOuterClass.SumoTeamData>(teamList_);
-          bitField0_ |= 0x00000001;
-         }
-      }
-
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.SumoTeamDataOuterClass.SumoTeamData, emu.grasscutter.net.proto.SumoTeamDataOuterClass.SumoTeamData.Builder, emu.grasscutter.net.proto.SumoTeamDataOuterClass.SumoTeamDataOrBuilder> teamListBuilder_;
-
-      /**
-       * <code>repeated .SumoTeamData team_list = 10;</code>
-       */
-      public java.util.List<emu.grasscutter.net.proto.SumoTeamDataOuterClass.SumoTeamData> getTeamListList() {
-        if (teamListBuilder_ == null) {
-          return java.util.Collections.unmodifiableList(teamList_);
-        } else {
-          return teamListBuilder_.getMessageList();
-        }
-      }
-      /**
-       * <code>repeated .SumoTeamData team_list = 10;</code>
-       */
-      public int getTeamListCount() {
-        if (teamListBuilder_ == null) {
-          return teamList_.size();
-        } else {
-          return teamListBuilder_.getCount();
-        }
-      }
-      /**
-       * <code>repeated .SumoTeamData team_list = 10;</code>
-       */
-      public emu.grasscutter.net.proto.SumoTeamDataOuterClass.SumoTeamData getTeamList(int index) {
-        if (teamListBuilder_ == null) {
-          return teamList_.get(index);
-        } else {
-          return teamListBuilder_.getMessage(index);
-        }
-      }
-      /**
-       * <code>repeated .SumoTeamData team_list = 10;</code>
-       */
-      public Builder setTeamList(
-          int index, emu.grasscutter.net.proto.SumoTeamDataOuterClass.SumoTeamData value) {
-        if (teamListBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureTeamListIsMutable();
-          teamList_.set(index, value);
-          onChanged();
-        } else {
-          teamListBuilder_.setMessage(index, value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .SumoTeamData team_list = 10;</code>
-       */
-      public Builder setTeamList(
-          int index, emu.grasscutter.net.proto.SumoTeamDataOuterClass.SumoTeamData.Builder builderForValue) {
-        if (teamListBuilder_ == null) {
-          ensureTeamListIsMutable();
-          teamList_.set(index, builderForValue.build());
-          onChanged();
-        } else {
-          teamListBuilder_.setMessage(index, builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .SumoTeamData team_list = 10;</code>
-       */
-      public Builder addTeamList(emu.grasscutter.net.proto.SumoTeamDataOuterClass.SumoTeamData value) {
-        if (teamListBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureTeamListIsMutable();
-          teamList_.add(value);
-          onChanged();
-        } else {
-          teamListBuilder_.addMessage(value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .SumoTeamData team_list = 10;</code>
-       */
-      public Builder addTeamList(
-          int index, emu.grasscutter.net.proto.SumoTeamDataOuterClass.SumoTeamData value) {
-        if (teamListBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureTeamListIsMutable();
-          teamList_.add(index, value);
-          onChanged();
-        } else {
-          teamListBuilder_.addMessage(index, value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .SumoTeamData team_list = 10;</code>
-       */
-      public Builder addTeamList(
-          emu.grasscutter.net.proto.SumoTeamDataOuterClass.SumoTeamData.Builder builderForValue) {
-        if (teamListBuilder_ == null) {
-          ensureTeamListIsMutable();
-          teamList_.add(builderForValue.build());
-          onChanged();
-        } else {
-          teamListBuilder_.addMessage(builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .SumoTeamData team_list = 10;</code>
-       */
-      public Builder addTeamList(
-          int index, emu.grasscutter.net.proto.SumoTeamDataOuterClass.SumoTeamData.Builder builderForValue) {
-        if (teamListBuilder_ == null) {
-          ensureTeamListIsMutable();
-          teamList_.add(index, builderForValue.build());
-          onChanged();
-        } else {
-          teamListBuilder_.addMessage(index, builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .SumoTeamData team_list = 10;</code>
-       */
-      public Builder addAllTeamList(
-          java.lang.Iterable<? extends emu.grasscutter.net.proto.SumoTeamDataOuterClass.SumoTeamData> values) {
-        if (teamListBuilder_ == null) {
-          ensureTeamListIsMutable();
-          com.google.protobuf.AbstractMessageLite.Builder.addAll(
-              values, teamList_);
-          onChanged();
-        } else {
-          teamListBuilder_.addAllMessages(values);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .SumoTeamData team_list = 10;</code>
-       */
-      public Builder clearTeamList() {
-        if (teamListBuilder_ == null) {
-          teamList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000001);
-          onChanged();
-        } else {
-          teamListBuilder_.clear();
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .SumoTeamData team_list = 10;</code>
-       */
-      public Builder removeTeamList(int index) {
-        if (teamListBuilder_ == null) {
-          ensureTeamListIsMutable();
-          teamList_.remove(index);
-          onChanged();
-        } else {
-          teamListBuilder_.remove(index);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .SumoTeamData team_list = 10;</code>
-       */
-      public emu.grasscutter.net.proto.SumoTeamDataOuterClass.SumoTeamData.Builder getTeamListBuilder(
-          int index) {
-        return getTeamListFieldBuilder().getBuilder(index);
-      }
-      /**
-       * <code>repeated .SumoTeamData team_list = 10;</code>
-       */
-      public emu.grasscutter.net.proto.SumoTeamDataOuterClass.SumoTeamDataOrBuilder getTeamListOrBuilder(
-          int index) {
-        if (teamListBuilder_ == null) {
-          return teamList_.get(index);  } else {
-          return teamListBuilder_.getMessageOrBuilder(index);
-        }
-      }
-      /**
-       * <code>repeated .SumoTeamData team_list = 10;</code>
-       */
-      public java.util.List<? extends emu.grasscutter.net.proto.SumoTeamDataOuterClass.SumoTeamDataOrBuilder> 
-           getTeamListOrBuilderList() {
-        if (teamListBuilder_ != null) {
-          return teamListBuilder_.getMessageOrBuilderList();
-        } else {
-          return java.util.Collections.unmodifiableList(teamList_);
-        }
-      }
-      /**
-       * <code>repeated .SumoTeamData team_list = 10;</code>
-       */
-      public emu.grasscutter.net.proto.SumoTeamDataOuterClass.SumoTeamData.Builder addTeamListBuilder() {
-        return getTeamListFieldBuilder().addBuilder(
-            emu.grasscutter.net.proto.SumoTeamDataOuterClass.SumoTeamData.getDefaultInstance());
-      }
-      /**
-       * <code>repeated .SumoTeamData team_list = 10;</code>
-       */
-      public emu.grasscutter.net.proto.SumoTeamDataOuterClass.SumoTeamData.Builder addTeamListBuilder(
-          int index) {
-        return getTeamListFieldBuilder().addBuilder(
-            index, emu.grasscutter.net.proto.SumoTeamDataOuterClass.SumoTeamData.getDefaultInstance());
-      }
-      /**
-       * <code>repeated .SumoTeamData team_list = 10;</code>
-       */
-      public java.util.List<emu.grasscutter.net.proto.SumoTeamDataOuterClass.SumoTeamData.Builder> 
-           getTeamListBuilderList() {
-        return getTeamListFieldBuilder().getBuilderList();
-      }
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.SumoTeamDataOuterClass.SumoTeamData, emu.grasscutter.net.proto.SumoTeamDataOuterClass.SumoTeamData.Builder, emu.grasscutter.net.proto.SumoTeamDataOuterClass.SumoTeamDataOrBuilder> 
-          getTeamListFieldBuilder() {
-        if (teamListBuilder_ == null) {
-          teamListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              emu.grasscutter.net.proto.SumoTeamDataOuterClass.SumoTeamData, emu.grasscutter.net.proto.SumoTeamDataOuterClass.SumoTeamData.Builder, emu.grasscutter.net.proto.SumoTeamDataOuterClass.SumoTeamDataOrBuilder>(
-                  teamList_,
-                  ((bitField0_ & 0x00000001) != 0),
-                  getParentForChildren(),
-                  isClean());
-          teamList_ = null;
-        }
-        return teamListBuilder_;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -1047,9 +1055,9 @@ public final class SumoSelectTeamAndEnterDungeonReqOuterClass {
     java.lang.String[] descriptorData = {
       "\n&SumoSelectTeamAndEnterDungeonReq.proto" +
       "\032\022SumoTeamData.proto\"\202\001\n SumoSelectTeamA" +
-      "ndEnterDungeonReq\022\023\n\013activity_id\030\001 \001(\r\022\020" +
-      "\n\010stage_id\030\007 \001(\r\022\025\n\rdifficulty_id\030\004 \001(\r\022" +
-      " \n\tteam_list\030\n \003(\0132\r.SumoTeamDataB\033\n\031emu" +
+      "ndEnterDungeonReq\022 \n\tteam_list\030\017 \003(\0132\r.S" +
+      "umoTeamData\022\023\n\013activity_id\030\001 \001(\r\022\025\n\rdiff" +
+      "iculty_id\030\005 \001(\r\022\020\n\010stage_id\030\007 \001(\rB\033\n\031emu" +
       ".grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -1062,7 +1070,7 @@ public final class SumoSelectTeamAndEnterDungeonReqOuterClass {
     internal_static_SumoSelectTeamAndEnterDungeonReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SumoSelectTeamAndEnterDungeonReq_descriptor,
-        new java.lang.String[] { "ActivityId", "StageId", "DifficultyId", "TeamList", });
+        new java.lang.String[] { "TeamList", "ActivityId", "DifficultyId", "StageId", });
     emu.grasscutter.net.proto.SumoTeamDataOuterClass.getDescriptor();
   }
 

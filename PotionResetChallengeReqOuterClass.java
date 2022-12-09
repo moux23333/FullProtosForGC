@@ -19,17 +19,21 @@ public final class PotionResetChallengeReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 stage_id = 1;</code>
+     * <code>uint32 stage_id = 4;</code>
      * @return The stageId.
      */
     int getStageId();
   }
   /**
    * <pre>
-   * CmdId: 8377
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 8331;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code PotionResetChallengeReq}
@@ -76,7 +80,7 @@ public final class PotionResetChallengeReqOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
+            case 32: {
 
               stageId_ = input.readUInt32();
               break;
@@ -113,10 +117,10 @@ public final class PotionResetChallengeReqOuterClass {
               emu.grasscutter.net.proto.PotionResetChallengeReqOuterClass.PotionResetChallengeReq.class, emu.grasscutter.net.proto.PotionResetChallengeReqOuterClass.PotionResetChallengeReq.Builder.class);
     }
 
-    public static final int STAGE_ID_FIELD_NUMBER = 1;
+    public static final int STAGE_ID_FIELD_NUMBER = 4;
     private int stageId_;
     /**
-     * <code>uint32 stage_id = 1;</code>
+     * <code>uint32 stage_id = 4;</code>
      * @return The stageId.
      */
     @java.lang.Override
@@ -139,7 +143,7 @@ public final class PotionResetChallengeReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (stageId_ != 0) {
-        output.writeUInt32(1, stageId_);
+        output.writeUInt32(4, stageId_);
       }
       unknownFields.writeTo(output);
     }
@@ -152,7 +156,7 @@ public final class PotionResetChallengeReqOuterClass {
       size = 0;
       if (stageId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, stageId_);
+          .computeUInt32Size(4, stageId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -281,10 +285,14 @@ public final class PotionResetChallengeReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 8377
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 8331;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code PotionResetChallengeReq}
@@ -435,7 +443,7 @@ public final class PotionResetChallengeReqOuterClass {
 
       private int stageId_ ;
       /**
-       * <code>uint32 stage_id = 1;</code>
+       * <code>uint32 stage_id = 4;</code>
        * @return The stageId.
        */
       @java.lang.Override
@@ -443,7 +451,7 @@ public final class PotionResetChallengeReqOuterClass {
         return stageId_;
       }
       /**
-       * <code>uint32 stage_id = 1;</code>
+       * <code>uint32 stage_id = 4;</code>
        * @param value The stageId to set.
        * @return This builder for chaining.
        */
@@ -454,7 +462,7 @@ public final class PotionResetChallengeReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 stage_id = 1;</code>
+       * <code>uint32 stage_id = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearStageId() {
@@ -531,7 +539,7 @@ public final class PotionResetChallengeReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\035PotionResetChallengeReq.proto\"+\n\027Potio" +
-      "nResetChallengeReq\022\020\n\010stage_id\030\001 \001(\rB\033\n\031" +
+      "nResetChallengeReq\022\020\n\010stage_id\030\004 \001(\rB\033\n\031" +
       "emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

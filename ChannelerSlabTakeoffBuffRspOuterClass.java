@@ -19,34 +19,38 @@ public final class ChannelerSlabTakeoffBuffRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 3;</code>
+     * <code>uint32 slot_id = 2;</code>
+     * @return The slotId.
+     */
+    int getSlotId();
+
+    /**
+     * <code>int32 retcode = 8;</code>
      * @return The retcode.
      */
     int getRetcode();
 
     /**
-     * <code>bool is_mp = 13;</code>
-     * @return The isMp.
-     */
-    boolean getIsMp();
-
-    /**
-     * <code>uint32 buff_id = 14;</code>
+     * <code>uint32 buff_id = 12;</code>
      * @return The buffId.
      */
     int getBuffId();
 
     /**
-     * <code>uint32 slot_id = 8;</code>
-     * @return The slotId.
+     * <code>bool is_mp = 10;</code>
+     * @return The isMp.
      */
-    int getSlotId();
+    boolean getIsMp();
   }
   /**
    * <pre>
-   * CmdId: 8237
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 8034;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code ChannelerSlabTakeoffBuffRsp}
@@ -93,22 +97,22 @@ public final class ChannelerSlabTakeoffBuffRspOuterClass {
             case 0:
               done = true;
               break;
-            case 24: {
-
-              retcode_ = input.readInt32();
-              break;
-            }
-            case 64: {
+            case 16: {
 
               slotId_ = input.readUInt32();
               break;
             }
-            case 104: {
+            case 64: {
+
+              retcode_ = input.readInt32();
+              break;
+            }
+            case 80: {
 
               isMp_ = input.readBool();
               break;
             }
-            case 112: {
+            case 96: {
 
               buffId_ = input.readUInt32();
               break;
@@ -145,10 +149,21 @@ public final class ChannelerSlabTakeoffBuffRspOuterClass {
               emu.grasscutter.net.proto.ChannelerSlabTakeoffBuffRspOuterClass.ChannelerSlabTakeoffBuffRsp.class, emu.grasscutter.net.proto.ChannelerSlabTakeoffBuffRspOuterClass.ChannelerSlabTakeoffBuffRsp.Builder.class);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 3;
+    public static final int SLOT_ID_FIELD_NUMBER = 2;
+    private int slotId_;
+    /**
+     * <code>uint32 slot_id = 2;</code>
+     * @return The slotId.
+     */
+    @java.lang.Override
+    public int getSlotId() {
+      return slotId_;
+    }
+
+    public static final int RETCODE_FIELD_NUMBER = 8;
     private int retcode_;
     /**
-     * <code>int32 retcode = 3;</code>
+     * <code>int32 retcode = 8;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -156,21 +171,10 @@ public final class ChannelerSlabTakeoffBuffRspOuterClass {
       return retcode_;
     }
 
-    public static final int IS_MP_FIELD_NUMBER = 13;
-    private boolean isMp_;
-    /**
-     * <code>bool is_mp = 13;</code>
-     * @return The isMp.
-     */
-    @java.lang.Override
-    public boolean getIsMp() {
-      return isMp_;
-    }
-
-    public static final int BUFF_ID_FIELD_NUMBER = 14;
+    public static final int BUFF_ID_FIELD_NUMBER = 12;
     private int buffId_;
     /**
-     * <code>uint32 buff_id = 14;</code>
+     * <code>uint32 buff_id = 12;</code>
      * @return The buffId.
      */
     @java.lang.Override
@@ -178,15 +182,15 @@ public final class ChannelerSlabTakeoffBuffRspOuterClass {
       return buffId_;
     }
 
-    public static final int SLOT_ID_FIELD_NUMBER = 8;
-    private int slotId_;
+    public static final int IS_MP_FIELD_NUMBER = 10;
+    private boolean isMp_;
     /**
-     * <code>uint32 slot_id = 8;</code>
-     * @return The slotId.
+     * <code>bool is_mp = 10;</code>
+     * @return The isMp.
      */
     @java.lang.Override
-    public int getSlotId() {
-      return slotId_;
+    public boolean getIsMp() {
+      return isMp_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -203,17 +207,17 @@ public final class ChannelerSlabTakeoffBuffRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (retcode_ != 0) {
-        output.writeInt32(3, retcode_);
-      }
       if (slotId_ != 0) {
-        output.writeUInt32(8, slotId_);
+        output.writeUInt32(2, slotId_);
+      }
+      if (retcode_ != 0) {
+        output.writeInt32(8, retcode_);
       }
       if (isMp_ != false) {
-        output.writeBool(13, isMp_);
+        output.writeBool(10, isMp_);
       }
       if (buffId_ != 0) {
-        output.writeUInt32(14, buffId_);
+        output.writeUInt32(12, buffId_);
       }
       unknownFields.writeTo(output);
     }
@@ -224,21 +228,21 @@ public final class ChannelerSlabTakeoffBuffRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (retcode_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(3, retcode_);
-      }
       if (slotId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, slotId_);
+          .computeUInt32Size(2, slotId_);
+      }
+      if (retcode_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(8, retcode_);
       }
       if (isMp_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(13, isMp_);
+          .computeBoolSize(10, isMp_);
       }
       if (buffId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, buffId_);
+          .computeUInt32Size(12, buffId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -255,14 +259,14 @@ public final class ChannelerSlabTakeoffBuffRspOuterClass {
       }
       emu.grasscutter.net.proto.ChannelerSlabTakeoffBuffRspOuterClass.ChannelerSlabTakeoffBuffRsp other = (emu.grasscutter.net.proto.ChannelerSlabTakeoffBuffRspOuterClass.ChannelerSlabTakeoffBuffRsp) obj;
 
-      if (getRetcode()
-          != other.getRetcode()) return false;
-      if (getIsMp()
-          != other.getIsMp()) return false;
-      if (getBuffId()
-          != other.getBuffId()) return false;
       if (getSlotId()
           != other.getSlotId()) return false;
+      if (getRetcode()
+          != other.getRetcode()) return false;
+      if (getBuffId()
+          != other.getBuffId()) return false;
+      if (getIsMp()
+          != other.getIsMp()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -274,15 +278,15 @@ public final class ChannelerSlabTakeoffBuffRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + SLOT_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getSlotId();
       hash = (37 * hash) + RETCODE_FIELD_NUMBER;
       hash = (53 * hash) + getRetcode();
+      hash = (37 * hash) + BUFF_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getBuffId();
       hash = (37 * hash) + IS_MP_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsMp());
-      hash = (37 * hash) + BUFF_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getBuffId();
-      hash = (37 * hash) + SLOT_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getSlotId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -380,9 +384,13 @@ public final class ChannelerSlabTakeoffBuffRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 8237
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 8034;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code ChannelerSlabTakeoffBuffRsp}
@@ -422,13 +430,13 @@ public final class ChannelerSlabTakeoffBuffRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        retcode_ = 0;
+        slotId_ = 0;
 
-        isMp_ = false;
+        retcode_ = 0;
 
         buffId_ = 0;
 
-        slotId_ = 0;
+        isMp_ = false;
 
         return this;
       }
@@ -456,10 +464,10 @@ public final class ChannelerSlabTakeoffBuffRspOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.ChannelerSlabTakeoffBuffRspOuterClass.ChannelerSlabTakeoffBuffRsp buildPartial() {
         emu.grasscutter.net.proto.ChannelerSlabTakeoffBuffRspOuterClass.ChannelerSlabTakeoffBuffRsp result = new emu.grasscutter.net.proto.ChannelerSlabTakeoffBuffRspOuterClass.ChannelerSlabTakeoffBuffRsp(this);
-        result.retcode_ = retcode_;
-        result.isMp_ = isMp_;
-        result.buffId_ = buffId_;
         result.slotId_ = slotId_;
+        result.retcode_ = retcode_;
+        result.buffId_ = buffId_;
+        result.isMp_ = isMp_;
         onBuilt();
         return result;
       }
@@ -508,17 +516,17 @@ public final class ChannelerSlabTakeoffBuffRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.ChannelerSlabTakeoffBuffRspOuterClass.ChannelerSlabTakeoffBuffRsp other) {
         if (other == emu.grasscutter.net.proto.ChannelerSlabTakeoffBuffRspOuterClass.ChannelerSlabTakeoffBuffRsp.getDefaultInstance()) return this;
+        if (other.getSlotId() != 0) {
+          setSlotId(other.getSlotId());
+        }
         if (other.getRetcode() != 0) {
           setRetcode(other.getRetcode());
-        }
-        if (other.getIsMp() != false) {
-          setIsMp(other.getIsMp());
         }
         if (other.getBuffId() != 0) {
           setBuffId(other.getBuffId());
         }
-        if (other.getSlotId() != 0) {
-          setSlotId(other.getSlotId());
+        if (other.getIsMp() != false) {
+          setIsMp(other.getIsMp());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -549,102 +557,9 @@ public final class ChannelerSlabTakeoffBuffRspOuterClass {
         return this;
       }
 
-      private int retcode_ ;
-      /**
-       * <code>int32 retcode = 3;</code>
-       * @return The retcode.
-       */
-      @java.lang.Override
-      public int getRetcode() {
-        return retcode_;
-      }
-      /**
-       * <code>int32 retcode = 3;</code>
-       * @param value The retcode to set.
-       * @return This builder for chaining.
-       */
-      public Builder setRetcode(int value) {
-        
-        retcode_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>int32 retcode = 3;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearRetcode() {
-        
-        retcode_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private boolean isMp_ ;
-      /**
-       * <code>bool is_mp = 13;</code>
-       * @return The isMp.
-       */
-      @java.lang.Override
-      public boolean getIsMp() {
-        return isMp_;
-      }
-      /**
-       * <code>bool is_mp = 13;</code>
-       * @param value The isMp to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsMp(boolean value) {
-        
-        isMp_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_mp = 13;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsMp() {
-        
-        isMp_ = false;
-        onChanged();
-        return this;
-      }
-
-      private int buffId_ ;
-      /**
-       * <code>uint32 buff_id = 14;</code>
-       * @return The buffId.
-       */
-      @java.lang.Override
-      public int getBuffId() {
-        return buffId_;
-      }
-      /**
-       * <code>uint32 buff_id = 14;</code>
-       * @param value The buffId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setBuffId(int value) {
-        
-        buffId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 buff_id = 14;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearBuffId() {
-        
-        buffId_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int slotId_ ;
       /**
-       * <code>uint32 slot_id = 8;</code>
+       * <code>uint32 slot_id = 2;</code>
        * @return The slotId.
        */
       @java.lang.Override
@@ -652,7 +567,7 @@ public final class ChannelerSlabTakeoffBuffRspOuterClass {
         return slotId_;
       }
       /**
-       * <code>uint32 slot_id = 8;</code>
+       * <code>uint32 slot_id = 2;</code>
        * @param value The slotId to set.
        * @return This builder for chaining.
        */
@@ -663,12 +578,105 @@ public final class ChannelerSlabTakeoffBuffRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 slot_id = 8;</code>
+       * <code>uint32 slot_id = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearSlotId() {
         
         slotId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int retcode_ ;
+      /**
+       * <code>int32 retcode = 8;</code>
+       * @return The retcode.
+       */
+      @java.lang.Override
+      public int getRetcode() {
+        return retcode_;
+      }
+      /**
+       * <code>int32 retcode = 8;</code>
+       * @param value The retcode to set.
+       * @return This builder for chaining.
+       */
+      public Builder setRetcode(int value) {
+        
+        retcode_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 retcode = 8;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearRetcode() {
+        
+        retcode_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int buffId_ ;
+      /**
+       * <code>uint32 buff_id = 12;</code>
+       * @return The buffId.
+       */
+      @java.lang.Override
+      public int getBuffId() {
+        return buffId_;
+      }
+      /**
+       * <code>uint32 buff_id = 12;</code>
+       * @param value The buffId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setBuffId(int value) {
+        
+        buffId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 buff_id = 12;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearBuffId() {
+        
+        buffId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private boolean isMp_ ;
+      /**
+       * <code>bool is_mp = 10;</code>
+       * @return The isMp.
+       */
+      @java.lang.Override
+      public boolean getIsMp() {
+        return isMp_;
+      }
+      /**
+       * <code>bool is_mp = 10;</code>
+       * @param value The isMp to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIsMp(boolean value) {
+        
+        isMp_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool is_mp = 10;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsMp() {
+        
+        isMp_ = false;
         onChanged();
         return this;
       }
@@ -740,9 +748,9 @@ public final class ChannelerSlabTakeoffBuffRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n!ChannelerSlabTakeoffBuffRsp.proto\"_\n\033C" +
-      "hannelerSlabTakeoffBuffRsp\022\017\n\007retcode\030\003 " +
-      "\001(\005\022\r\n\005is_mp\030\r \001(\010\022\017\n\007buff_id\030\016 \001(\r\022\017\n\007s" +
-      "lot_id\030\010 \001(\rB\033\n\031emu.grasscutter.net.prot" +
+      "hannelerSlabTakeoffBuffRsp\022\017\n\007slot_id\030\002 " +
+      "\001(\r\022\017\n\007retcode\030\010 \001(\005\022\017\n\007buff_id\030\014 \001(\r\022\r\n" +
+      "\005is_mp\030\n \001(\010B\033\n\031emu.grasscutter.net.prot" +
       "ob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -754,7 +762,7 @@ public final class ChannelerSlabTakeoffBuffRspOuterClass {
     internal_static_ChannelerSlabTakeoffBuffRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ChannelerSlabTakeoffBuffRsp_descriptor,
-        new java.lang.String[] { "Retcode", "IsMp", "BuffId", "SlotId", });
+        new java.lang.String[] { "SlotId", "Retcode", "BuffId", "IsMp", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

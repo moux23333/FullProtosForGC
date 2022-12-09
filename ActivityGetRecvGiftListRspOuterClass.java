@@ -19,46 +19,50 @@ public final class ActivityGetRecvGiftListRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 15;</code>
+     * <code>uint32 schedule_id = 7;</code>
+     * @return The scheduleId.
+     */
+    int getScheduleId();
+
+    /**
+     * <code>int32 retcode = 9;</code>
      * @return The retcode.
      */
     int getRetcode();
 
     /**
-     * <code>repeated .ActivityRecvGiftData recv_gift_list = 11;</code>
+     * <code>repeated .ActivityRecvGiftData recv_gift_list = 10;</code>
      */
     java.util.List<emu.grasscutter.net.proto.ActivityRecvGiftDataOuterClass.ActivityRecvGiftData> 
         getRecvGiftListList();
     /**
-     * <code>repeated .ActivityRecvGiftData recv_gift_list = 11;</code>
+     * <code>repeated .ActivityRecvGiftData recv_gift_list = 10;</code>
      */
     emu.grasscutter.net.proto.ActivityRecvGiftDataOuterClass.ActivityRecvGiftData getRecvGiftList(int index);
     /**
-     * <code>repeated .ActivityRecvGiftData recv_gift_list = 11;</code>
+     * <code>repeated .ActivityRecvGiftData recv_gift_list = 10;</code>
      */
     int getRecvGiftListCount();
     /**
-     * <code>repeated .ActivityRecvGiftData recv_gift_list = 11;</code>
+     * <code>repeated .ActivityRecvGiftData recv_gift_list = 10;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.ActivityRecvGiftDataOuterClass.ActivityRecvGiftDataOrBuilder> 
         getRecvGiftListOrBuilderList();
     /**
-     * <code>repeated .ActivityRecvGiftData recv_gift_list = 11;</code>
+     * <code>repeated .ActivityRecvGiftData recv_gift_list = 10;</code>
      */
     emu.grasscutter.net.proto.ActivityRecvGiftDataOuterClass.ActivityRecvGiftDataOrBuilder getRecvGiftListOrBuilder(
         int index);
-
-    /**
-     * <code>uint32 schedule_id = 6;</code>
-     * @return The scheduleId.
-     */
-    int getScheduleId();
   }
   /**
    * <pre>
-   * CmdId: 8120
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 8844;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code ActivityGetRecvGiftListRsp}
@@ -107,23 +111,23 @@ public final class ActivityGetRecvGiftListRspOuterClass {
             case 0:
               done = true;
               break;
-            case 48: {
+            case 56: {
 
               scheduleId_ = input.readUInt32();
               break;
             }
-            case 90: {
+            case 72: {
+
+              retcode_ = input.readInt32();
+              break;
+            }
+            case 82: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 recvGiftList_ = new java.util.ArrayList<emu.grasscutter.net.proto.ActivityRecvGiftDataOuterClass.ActivityRecvGiftData>();
                 mutable_bitField0_ |= 0x00000001;
               }
               recvGiftList_.add(
                   input.readMessage(emu.grasscutter.net.proto.ActivityRecvGiftDataOuterClass.ActivityRecvGiftData.parser(), extensionRegistry));
-              break;
-            }
-            case 120: {
-
-              retcode_ = input.readInt32();
               break;
             }
             default: {
@@ -161,10 +165,21 @@ public final class ActivityGetRecvGiftListRspOuterClass {
               emu.grasscutter.net.proto.ActivityGetRecvGiftListRspOuterClass.ActivityGetRecvGiftListRsp.class, emu.grasscutter.net.proto.ActivityGetRecvGiftListRspOuterClass.ActivityGetRecvGiftListRsp.Builder.class);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 15;
+    public static final int SCHEDULE_ID_FIELD_NUMBER = 7;
+    private int scheduleId_;
+    /**
+     * <code>uint32 schedule_id = 7;</code>
+     * @return The scheduleId.
+     */
+    @java.lang.Override
+    public int getScheduleId() {
+      return scheduleId_;
+    }
+
+    public static final int RETCODE_FIELD_NUMBER = 9;
     private int retcode_;
     /**
-     * <code>int32 retcode = 15;</code>
+     * <code>int32 retcode = 9;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -172,17 +187,17 @@ public final class ActivityGetRecvGiftListRspOuterClass {
       return retcode_;
     }
 
-    public static final int RECV_GIFT_LIST_FIELD_NUMBER = 11;
+    public static final int RECV_GIFT_LIST_FIELD_NUMBER = 10;
     private java.util.List<emu.grasscutter.net.proto.ActivityRecvGiftDataOuterClass.ActivityRecvGiftData> recvGiftList_;
     /**
-     * <code>repeated .ActivityRecvGiftData recv_gift_list = 11;</code>
+     * <code>repeated .ActivityRecvGiftData recv_gift_list = 10;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.ActivityRecvGiftDataOuterClass.ActivityRecvGiftData> getRecvGiftListList() {
       return recvGiftList_;
     }
     /**
-     * <code>repeated .ActivityRecvGiftData recv_gift_list = 11;</code>
+     * <code>repeated .ActivityRecvGiftData recv_gift_list = 10;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.ActivityRecvGiftDataOuterClass.ActivityRecvGiftDataOrBuilder> 
@@ -190,37 +205,26 @@ public final class ActivityGetRecvGiftListRspOuterClass {
       return recvGiftList_;
     }
     /**
-     * <code>repeated .ActivityRecvGiftData recv_gift_list = 11;</code>
+     * <code>repeated .ActivityRecvGiftData recv_gift_list = 10;</code>
      */
     @java.lang.Override
     public int getRecvGiftListCount() {
       return recvGiftList_.size();
     }
     /**
-     * <code>repeated .ActivityRecvGiftData recv_gift_list = 11;</code>
+     * <code>repeated .ActivityRecvGiftData recv_gift_list = 10;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.ActivityRecvGiftDataOuterClass.ActivityRecvGiftData getRecvGiftList(int index) {
       return recvGiftList_.get(index);
     }
     /**
-     * <code>repeated .ActivityRecvGiftData recv_gift_list = 11;</code>
+     * <code>repeated .ActivityRecvGiftData recv_gift_list = 10;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.ActivityRecvGiftDataOuterClass.ActivityRecvGiftDataOrBuilder getRecvGiftListOrBuilder(
         int index) {
       return recvGiftList_.get(index);
-    }
-
-    public static final int SCHEDULE_ID_FIELD_NUMBER = 6;
-    private int scheduleId_;
-    /**
-     * <code>uint32 schedule_id = 6;</code>
-     * @return The scheduleId.
-     */
-    @java.lang.Override
-    public int getScheduleId() {
-      return scheduleId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -238,13 +242,13 @@ public final class ActivityGetRecvGiftListRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (scheduleId_ != 0) {
-        output.writeUInt32(6, scheduleId_);
-      }
-      for (int i = 0; i < recvGiftList_.size(); i++) {
-        output.writeMessage(11, recvGiftList_.get(i));
+        output.writeUInt32(7, scheduleId_);
       }
       if (retcode_ != 0) {
-        output.writeInt32(15, retcode_);
+        output.writeInt32(9, retcode_);
+      }
+      for (int i = 0; i < recvGiftList_.size(); i++) {
+        output.writeMessage(10, recvGiftList_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -257,15 +261,15 @@ public final class ActivityGetRecvGiftListRspOuterClass {
       size = 0;
       if (scheduleId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, scheduleId_);
-      }
-      for (int i = 0; i < recvGiftList_.size(); i++) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(11, recvGiftList_.get(i));
+          .computeUInt32Size(7, scheduleId_);
       }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(15, retcode_);
+          .computeInt32Size(9, retcode_);
+      }
+      for (int i = 0; i < recvGiftList_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(10, recvGiftList_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -282,12 +286,12 @@ public final class ActivityGetRecvGiftListRspOuterClass {
       }
       emu.grasscutter.net.proto.ActivityGetRecvGiftListRspOuterClass.ActivityGetRecvGiftListRsp other = (emu.grasscutter.net.proto.ActivityGetRecvGiftListRspOuterClass.ActivityGetRecvGiftListRsp) obj;
 
+      if (getScheduleId()
+          != other.getScheduleId()) return false;
       if (getRetcode()
           != other.getRetcode()) return false;
       if (!getRecvGiftListList()
           .equals(other.getRecvGiftListList())) return false;
-      if (getScheduleId()
-          != other.getScheduleId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -299,14 +303,14 @@ public final class ActivityGetRecvGiftListRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + SCHEDULE_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getScheduleId();
       hash = (37 * hash) + RETCODE_FIELD_NUMBER;
       hash = (53 * hash) + getRetcode();
       if (getRecvGiftListCount() > 0) {
         hash = (37 * hash) + RECV_GIFT_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getRecvGiftListList().hashCode();
       }
-      hash = (37 * hash) + SCHEDULE_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getScheduleId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -404,9 +408,13 @@ public final class ActivityGetRecvGiftListRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 8120
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 8844;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code ActivityGetRecvGiftListRsp}
@@ -447,6 +455,8 @@ public final class ActivityGetRecvGiftListRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        scheduleId_ = 0;
+
         retcode_ = 0;
 
         if (recvGiftListBuilder_ == null) {
@@ -455,8 +465,6 @@ public final class ActivityGetRecvGiftListRspOuterClass {
         } else {
           recvGiftListBuilder_.clear();
         }
-        scheduleId_ = 0;
-
         return this;
       }
 
@@ -484,6 +492,7 @@ public final class ActivityGetRecvGiftListRspOuterClass {
       public emu.grasscutter.net.proto.ActivityGetRecvGiftListRspOuterClass.ActivityGetRecvGiftListRsp buildPartial() {
         emu.grasscutter.net.proto.ActivityGetRecvGiftListRspOuterClass.ActivityGetRecvGiftListRsp result = new emu.grasscutter.net.proto.ActivityGetRecvGiftListRspOuterClass.ActivityGetRecvGiftListRsp(this);
         int from_bitField0_ = bitField0_;
+        result.scheduleId_ = scheduleId_;
         result.retcode_ = retcode_;
         if (recvGiftListBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0)) {
@@ -494,7 +503,6 @@ public final class ActivityGetRecvGiftListRspOuterClass {
         } else {
           result.recvGiftList_ = recvGiftListBuilder_.build();
         }
-        result.scheduleId_ = scheduleId_;
         onBuilt();
         return result;
       }
@@ -543,6 +551,9 @@ public final class ActivityGetRecvGiftListRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.ActivityGetRecvGiftListRspOuterClass.ActivityGetRecvGiftListRsp other) {
         if (other == emu.grasscutter.net.proto.ActivityGetRecvGiftListRspOuterClass.ActivityGetRecvGiftListRsp.getDefaultInstance()) return this;
+        if (other.getScheduleId() != 0) {
+          setScheduleId(other.getScheduleId());
+        }
         if (other.getRetcode() != 0) {
           setRetcode(other.getRetcode());
         }
@@ -571,9 +582,6 @@ public final class ActivityGetRecvGiftListRspOuterClass {
               recvGiftListBuilder_.addAllMessages(other.recvGiftList_);
             }
           }
-        }
-        if (other.getScheduleId() != 0) {
-          setScheduleId(other.getScheduleId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -605,9 +613,40 @@ public final class ActivityGetRecvGiftListRspOuterClass {
       }
       private int bitField0_;
 
+      private int scheduleId_ ;
+      /**
+       * <code>uint32 schedule_id = 7;</code>
+       * @return The scheduleId.
+       */
+      @java.lang.Override
+      public int getScheduleId() {
+        return scheduleId_;
+      }
+      /**
+       * <code>uint32 schedule_id = 7;</code>
+       * @param value The scheduleId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setScheduleId(int value) {
+        
+        scheduleId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 schedule_id = 7;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearScheduleId() {
+        
+        scheduleId_ = 0;
+        onChanged();
+        return this;
+      }
+
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 15;</code>
+       * <code>int32 retcode = 9;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -615,7 +654,7 @@ public final class ActivityGetRecvGiftListRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 15;</code>
+       * <code>int32 retcode = 9;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -626,7 +665,7 @@ public final class ActivityGetRecvGiftListRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 15;</code>
+       * <code>int32 retcode = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -649,7 +688,7 @@ public final class ActivityGetRecvGiftListRspOuterClass {
           emu.grasscutter.net.proto.ActivityRecvGiftDataOuterClass.ActivityRecvGiftData, emu.grasscutter.net.proto.ActivityRecvGiftDataOuterClass.ActivityRecvGiftData.Builder, emu.grasscutter.net.proto.ActivityRecvGiftDataOuterClass.ActivityRecvGiftDataOrBuilder> recvGiftListBuilder_;
 
       /**
-       * <code>repeated .ActivityRecvGiftData recv_gift_list = 11;</code>
+       * <code>repeated .ActivityRecvGiftData recv_gift_list = 10;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.ActivityRecvGiftDataOuterClass.ActivityRecvGiftData> getRecvGiftListList() {
         if (recvGiftListBuilder_ == null) {
@@ -659,7 +698,7 @@ public final class ActivityGetRecvGiftListRspOuterClass {
         }
       }
       /**
-       * <code>repeated .ActivityRecvGiftData recv_gift_list = 11;</code>
+       * <code>repeated .ActivityRecvGiftData recv_gift_list = 10;</code>
        */
       public int getRecvGiftListCount() {
         if (recvGiftListBuilder_ == null) {
@@ -669,7 +708,7 @@ public final class ActivityGetRecvGiftListRspOuterClass {
         }
       }
       /**
-       * <code>repeated .ActivityRecvGiftData recv_gift_list = 11;</code>
+       * <code>repeated .ActivityRecvGiftData recv_gift_list = 10;</code>
        */
       public emu.grasscutter.net.proto.ActivityRecvGiftDataOuterClass.ActivityRecvGiftData getRecvGiftList(int index) {
         if (recvGiftListBuilder_ == null) {
@@ -679,7 +718,7 @@ public final class ActivityGetRecvGiftListRspOuterClass {
         }
       }
       /**
-       * <code>repeated .ActivityRecvGiftData recv_gift_list = 11;</code>
+       * <code>repeated .ActivityRecvGiftData recv_gift_list = 10;</code>
        */
       public Builder setRecvGiftList(
           int index, emu.grasscutter.net.proto.ActivityRecvGiftDataOuterClass.ActivityRecvGiftData value) {
@@ -696,7 +735,7 @@ public final class ActivityGetRecvGiftListRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ActivityRecvGiftData recv_gift_list = 11;</code>
+       * <code>repeated .ActivityRecvGiftData recv_gift_list = 10;</code>
        */
       public Builder setRecvGiftList(
           int index, emu.grasscutter.net.proto.ActivityRecvGiftDataOuterClass.ActivityRecvGiftData.Builder builderForValue) {
@@ -710,7 +749,7 @@ public final class ActivityGetRecvGiftListRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ActivityRecvGiftData recv_gift_list = 11;</code>
+       * <code>repeated .ActivityRecvGiftData recv_gift_list = 10;</code>
        */
       public Builder addRecvGiftList(emu.grasscutter.net.proto.ActivityRecvGiftDataOuterClass.ActivityRecvGiftData value) {
         if (recvGiftListBuilder_ == null) {
@@ -726,7 +765,7 @@ public final class ActivityGetRecvGiftListRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ActivityRecvGiftData recv_gift_list = 11;</code>
+       * <code>repeated .ActivityRecvGiftData recv_gift_list = 10;</code>
        */
       public Builder addRecvGiftList(
           int index, emu.grasscutter.net.proto.ActivityRecvGiftDataOuterClass.ActivityRecvGiftData value) {
@@ -743,7 +782,7 @@ public final class ActivityGetRecvGiftListRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ActivityRecvGiftData recv_gift_list = 11;</code>
+       * <code>repeated .ActivityRecvGiftData recv_gift_list = 10;</code>
        */
       public Builder addRecvGiftList(
           emu.grasscutter.net.proto.ActivityRecvGiftDataOuterClass.ActivityRecvGiftData.Builder builderForValue) {
@@ -757,7 +796,7 @@ public final class ActivityGetRecvGiftListRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ActivityRecvGiftData recv_gift_list = 11;</code>
+       * <code>repeated .ActivityRecvGiftData recv_gift_list = 10;</code>
        */
       public Builder addRecvGiftList(
           int index, emu.grasscutter.net.proto.ActivityRecvGiftDataOuterClass.ActivityRecvGiftData.Builder builderForValue) {
@@ -771,7 +810,7 @@ public final class ActivityGetRecvGiftListRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ActivityRecvGiftData recv_gift_list = 11;</code>
+       * <code>repeated .ActivityRecvGiftData recv_gift_list = 10;</code>
        */
       public Builder addAllRecvGiftList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.ActivityRecvGiftDataOuterClass.ActivityRecvGiftData> values) {
@@ -786,7 +825,7 @@ public final class ActivityGetRecvGiftListRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ActivityRecvGiftData recv_gift_list = 11;</code>
+       * <code>repeated .ActivityRecvGiftData recv_gift_list = 10;</code>
        */
       public Builder clearRecvGiftList() {
         if (recvGiftListBuilder_ == null) {
@@ -799,7 +838,7 @@ public final class ActivityGetRecvGiftListRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ActivityRecvGiftData recv_gift_list = 11;</code>
+       * <code>repeated .ActivityRecvGiftData recv_gift_list = 10;</code>
        */
       public Builder removeRecvGiftList(int index) {
         if (recvGiftListBuilder_ == null) {
@@ -812,14 +851,14 @@ public final class ActivityGetRecvGiftListRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ActivityRecvGiftData recv_gift_list = 11;</code>
+       * <code>repeated .ActivityRecvGiftData recv_gift_list = 10;</code>
        */
       public emu.grasscutter.net.proto.ActivityRecvGiftDataOuterClass.ActivityRecvGiftData.Builder getRecvGiftListBuilder(
           int index) {
         return getRecvGiftListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .ActivityRecvGiftData recv_gift_list = 11;</code>
+       * <code>repeated .ActivityRecvGiftData recv_gift_list = 10;</code>
        */
       public emu.grasscutter.net.proto.ActivityRecvGiftDataOuterClass.ActivityRecvGiftDataOrBuilder getRecvGiftListOrBuilder(
           int index) {
@@ -829,7 +868,7 @@ public final class ActivityGetRecvGiftListRspOuterClass {
         }
       }
       /**
-       * <code>repeated .ActivityRecvGiftData recv_gift_list = 11;</code>
+       * <code>repeated .ActivityRecvGiftData recv_gift_list = 10;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.ActivityRecvGiftDataOuterClass.ActivityRecvGiftDataOrBuilder> 
            getRecvGiftListOrBuilderList() {
@@ -840,14 +879,14 @@ public final class ActivityGetRecvGiftListRspOuterClass {
         }
       }
       /**
-       * <code>repeated .ActivityRecvGiftData recv_gift_list = 11;</code>
+       * <code>repeated .ActivityRecvGiftData recv_gift_list = 10;</code>
        */
       public emu.grasscutter.net.proto.ActivityRecvGiftDataOuterClass.ActivityRecvGiftData.Builder addRecvGiftListBuilder() {
         return getRecvGiftListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.ActivityRecvGiftDataOuterClass.ActivityRecvGiftData.getDefaultInstance());
       }
       /**
-       * <code>repeated .ActivityRecvGiftData recv_gift_list = 11;</code>
+       * <code>repeated .ActivityRecvGiftData recv_gift_list = 10;</code>
        */
       public emu.grasscutter.net.proto.ActivityRecvGiftDataOuterClass.ActivityRecvGiftData.Builder addRecvGiftListBuilder(
           int index) {
@@ -855,7 +894,7 @@ public final class ActivityGetRecvGiftListRspOuterClass {
             index, emu.grasscutter.net.proto.ActivityRecvGiftDataOuterClass.ActivityRecvGiftData.getDefaultInstance());
       }
       /**
-       * <code>repeated .ActivityRecvGiftData recv_gift_list = 11;</code>
+       * <code>repeated .ActivityRecvGiftData recv_gift_list = 10;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.ActivityRecvGiftDataOuterClass.ActivityRecvGiftData.Builder> 
            getRecvGiftListBuilderList() {
@@ -874,37 +913,6 @@ public final class ActivityGetRecvGiftListRspOuterClass {
           recvGiftList_ = null;
         }
         return recvGiftListBuilder_;
-      }
-
-      private int scheduleId_ ;
-      /**
-       * <code>uint32 schedule_id = 6;</code>
-       * @return The scheduleId.
-       */
-      @java.lang.Override
-      public int getScheduleId() {
-        return scheduleId_;
-      }
-      /**
-       * <code>uint32 schedule_id = 6;</code>
-       * @param value The scheduleId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setScheduleId(int value) {
-        
-        scheduleId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 schedule_id = 6;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearScheduleId() {
-        
-        scheduleId_ = 0;
-        onChanged();
-        return this;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -975,9 +983,9 @@ public final class ActivityGetRecvGiftListRspOuterClass {
     java.lang.String[] descriptorData = {
       "\n ActivityGetRecvGiftListRsp.proto\032\032Acti" +
       "vityRecvGiftData.proto\"q\n\032ActivityGetRec" +
-      "vGiftListRsp\022\017\n\007retcode\030\017 \001(\005\022-\n\016recv_gi" +
-      "ft_list\030\013 \003(\0132\025.ActivityRecvGiftData\022\023\n\013" +
-      "schedule_id\030\006 \001(\rB\033\n\031emu.grasscutter.net" +
+      "vGiftListRsp\022\023\n\013schedule_id\030\007 \001(\r\022\017\n\007ret" +
+      "code\030\t \001(\005\022-\n\016recv_gift_list\030\n \003(\0132\025.Act" +
+      "ivityRecvGiftDataB\033\n\031emu.grasscutter.net" +
       ".protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -990,7 +998,7 @@ public final class ActivityGetRecvGiftListRspOuterClass {
     internal_static_ActivityGetRecvGiftListRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ActivityGetRecvGiftListRsp_descriptor,
-        new java.lang.String[] { "Retcode", "RecvGiftList", "ScheduleId", });
+        new java.lang.String[] { "ScheduleId", "Retcode", "RecvGiftList", });
     emu.grasscutter.net.proto.ActivityRecvGiftDataOuterClass.getDescriptor();
   }
 

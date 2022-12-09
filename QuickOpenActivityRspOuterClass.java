@@ -19,22 +19,26 @@ public final class QuickOpenActivityRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 2;</code>
+     * <code>int32 retcode = 12;</code>
      * @return The retcode.
      */
     int getRetcode();
 
     /**
-     * <code>uint32 activity_id = 4;</code>
+     * <code>uint32 activity_id = 9;</code>
      * @return The activityId.
      */
     int getActivityId();
   }
   /**
    * <pre>
-   * CmdId: 8882
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 8677;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code QuickOpenActivityRsp}
@@ -81,14 +85,14 @@ public final class QuickOpenActivityRspOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
-
-              retcode_ = input.readInt32();
-              break;
-            }
-            case 32: {
+            case 72: {
 
               activityId_ = input.readUInt32();
+              break;
+            }
+            case 96: {
+
+              retcode_ = input.readInt32();
               break;
             }
             default: {
@@ -123,10 +127,10 @@ public final class QuickOpenActivityRspOuterClass {
               emu.grasscutter.net.proto.QuickOpenActivityRspOuterClass.QuickOpenActivityRsp.class, emu.grasscutter.net.proto.QuickOpenActivityRspOuterClass.QuickOpenActivityRsp.Builder.class);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 2;
+    public static final int RETCODE_FIELD_NUMBER = 12;
     private int retcode_;
     /**
-     * <code>int32 retcode = 2;</code>
+     * <code>int32 retcode = 12;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -134,10 +138,10 @@ public final class QuickOpenActivityRspOuterClass {
       return retcode_;
     }
 
-    public static final int ACTIVITY_ID_FIELD_NUMBER = 4;
+    public static final int ACTIVITY_ID_FIELD_NUMBER = 9;
     private int activityId_;
     /**
-     * <code>uint32 activity_id = 4;</code>
+     * <code>uint32 activity_id = 9;</code>
      * @return The activityId.
      */
     @java.lang.Override
@@ -159,11 +163,11 @@ public final class QuickOpenActivityRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (retcode_ != 0) {
-        output.writeInt32(2, retcode_);
-      }
       if (activityId_ != 0) {
-        output.writeUInt32(4, activityId_);
+        output.writeUInt32(9, activityId_);
+      }
+      if (retcode_ != 0) {
+        output.writeInt32(12, retcode_);
       }
       unknownFields.writeTo(output);
     }
@@ -174,13 +178,13 @@ public final class QuickOpenActivityRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (retcode_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(2, retcode_);
-      }
       if (activityId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, activityId_);
+          .computeUInt32Size(9, activityId_);
+      }
+      if (retcode_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(12, retcode_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -313,9 +317,13 @@ public final class QuickOpenActivityRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 8882
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 8677;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code QuickOpenActivityRsp}
@@ -472,7 +480,7 @@ public final class QuickOpenActivityRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 2;</code>
+       * <code>int32 retcode = 12;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -480,7 +488,7 @@ public final class QuickOpenActivityRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 2;</code>
+       * <code>int32 retcode = 12;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -491,7 +499,7 @@ public final class QuickOpenActivityRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 2;</code>
+       * <code>int32 retcode = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -503,7 +511,7 @@ public final class QuickOpenActivityRspOuterClass {
 
       private int activityId_ ;
       /**
-       * <code>uint32 activity_id = 4;</code>
+       * <code>uint32 activity_id = 9;</code>
        * @return The activityId.
        */
       @java.lang.Override
@@ -511,7 +519,7 @@ public final class QuickOpenActivityRspOuterClass {
         return activityId_;
       }
       /**
-       * <code>uint32 activity_id = 4;</code>
+       * <code>uint32 activity_id = 9;</code>
        * @param value The activityId to set.
        * @return This builder for chaining.
        */
@@ -522,7 +530,7 @@ public final class QuickOpenActivityRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 activity_id = 4;</code>
+       * <code>uint32 activity_id = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearActivityId() {
@@ -599,8 +607,8 @@ public final class QuickOpenActivityRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\032QuickOpenActivityRsp.proto\"<\n\024QuickOpe" +
-      "nActivityRsp\022\017\n\007retcode\030\002 \001(\005\022\023\n\013activit" +
-      "y_id\030\004 \001(\rB\033\n\031emu.grasscutter.net.protob" +
+      "nActivityRsp\022\017\n\007retcode\030\014 \001(\005\022\023\n\013activit" +
+      "y_id\030\t \001(\rB\033\n\031emu.grasscutter.net.protob" +
       "\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

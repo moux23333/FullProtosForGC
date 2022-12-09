@@ -19,34 +19,34 @@ public final class SummerTimeDungeonInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 taken_chest_count = 15;</code>
-     * @return The takenChestCount.
-     */
-    int getTakenChestCount();
-
-    /**
-     * <code>uint32 total_chest_count = 12;</code>
-     * @return The totalChestCount.
-     */
-    int getTotalChestCount();
-
-    /**
-     * <code>uint32 taken_shell_count = 14;</code>
-     * @return The takenShellCount.
-     */
-    int getTakenShellCount();
-
-    /**
-     * <code>uint32 dungeon_id = 4;</code>
+     * <code>uint32 dungeon_id = 9;</code>
      * @return The dungeonId.
      */
     int getDungeonId();
 
     /**
-     * <code>uint32 total_shell_count = 13;</code>
-     * @return The totalShellCount.
+     * <code>uint32 Unk3300_GMKMNHIBPEP = 1;</code>
+     * @return The unk3300GMKMNHIBPEP.
      */
-    int getTotalShellCount();
+    int getUnk3300GMKMNHIBPEP();
+
+    /**
+     * <code>uint32 Unk3300_HJHODMOIMKG = 8;</code>
+     * @return The unk3300HJHODMOIMKG.
+     */
+    int getUnk3300HJHODMOIMKG();
+
+    /**
+     * <code>uint32 Unk3300_GALEDJLAIPM = 5;</code>
+     * @return The unk3300GALEDJLAIPM.
+     */
+    int getUnk3300GALEDJLAIPM();
+
+    /**
+     * <code>uint32 Unk3300_EGGFJCICOBD = 12;</code>
+     * @return The unk3300EGGFJCICOBD.
+     */
+    int getUnk3300EGGFJCICOBD();
   }
   /**
    * Protobuf type {@code SummerTimeDungeonInfo}
@@ -93,29 +93,29 @@ public final class SummerTimeDungeonInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 32: {
+            case 8: {
+
+              unk3300GMKMNHIBPEP_ = input.readUInt32();
+              break;
+            }
+            case 40: {
+
+              unk3300GALEDJLAIPM_ = input.readUInt32();
+              break;
+            }
+            case 64: {
+
+              unk3300HJHODMOIMKG_ = input.readUInt32();
+              break;
+            }
+            case 72: {
 
               dungeonId_ = input.readUInt32();
               break;
             }
             case 96: {
 
-              totalChestCount_ = input.readUInt32();
-              break;
-            }
-            case 104: {
-
-              totalShellCount_ = input.readUInt32();
-              break;
-            }
-            case 112: {
-
-              takenShellCount_ = input.readUInt32();
-              break;
-            }
-            case 120: {
-
-              takenChestCount_ = input.readUInt32();
+              unk3300EGGFJCICOBD_ = input.readUInt32();
               break;
             }
             default: {
@@ -150,43 +150,10 @@ public final class SummerTimeDungeonInfoOuterClass {
               emu.grasscutter.net.proto.SummerTimeDungeonInfoOuterClass.SummerTimeDungeonInfo.class, emu.grasscutter.net.proto.SummerTimeDungeonInfoOuterClass.SummerTimeDungeonInfo.Builder.class);
     }
 
-    public static final int TAKEN_CHEST_COUNT_FIELD_NUMBER = 15;
-    private int takenChestCount_;
-    /**
-     * <code>uint32 taken_chest_count = 15;</code>
-     * @return The takenChestCount.
-     */
-    @java.lang.Override
-    public int getTakenChestCount() {
-      return takenChestCount_;
-    }
-
-    public static final int TOTAL_CHEST_COUNT_FIELD_NUMBER = 12;
-    private int totalChestCount_;
-    /**
-     * <code>uint32 total_chest_count = 12;</code>
-     * @return The totalChestCount.
-     */
-    @java.lang.Override
-    public int getTotalChestCount() {
-      return totalChestCount_;
-    }
-
-    public static final int TAKEN_SHELL_COUNT_FIELD_NUMBER = 14;
-    private int takenShellCount_;
-    /**
-     * <code>uint32 taken_shell_count = 14;</code>
-     * @return The takenShellCount.
-     */
-    @java.lang.Override
-    public int getTakenShellCount() {
-      return takenShellCount_;
-    }
-
-    public static final int DUNGEON_ID_FIELD_NUMBER = 4;
+    public static final int DUNGEON_ID_FIELD_NUMBER = 9;
     private int dungeonId_;
     /**
-     * <code>uint32 dungeon_id = 4;</code>
+     * <code>uint32 dungeon_id = 9;</code>
      * @return The dungeonId.
      */
     @java.lang.Override
@@ -194,15 +161,48 @@ public final class SummerTimeDungeonInfoOuterClass {
       return dungeonId_;
     }
 
-    public static final int TOTAL_SHELL_COUNT_FIELD_NUMBER = 13;
-    private int totalShellCount_;
+    public static final int UNK3300_GMKMNHIBPEP_FIELD_NUMBER = 1;
+    private int unk3300GMKMNHIBPEP_;
     /**
-     * <code>uint32 total_shell_count = 13;</code>
-     * @return The totalShellCount.
+     * <code>uint32 Unk3300_GMKMNHIBPEP = 1;</code>
+     * @return The unk3300GMKMNHIBPEP.
      */
     @java.lang.Override
-    public int getTotalShellCount() {
-      return totalShellCount_;
+    public int getUnk3300GMKMNHIBPEP() {
+      return unk3300GMKMNHIBPEP_;
+    }
+
+    public static final int UNK3300_HJHODMOIMKG_FIELD_NUMBER = 8;
+    private int unk3300HJHODMOIMKG_;
+    /**
+     * <code>uint32 Unk3300_HJHODMOIMKG = 8;</code>
+     * @return The unk3300HJHODMOIMKG.
+     */
+    @java.lang.Override
+    public int getUnk3300HJHODMOIMKG() {
+      return unk3300HJHODMOIMKG_;
+    }
+
+    public static final int UNK3300_GALEDJLAIPM_FIELD_NUMBER = 5;
+    private int unk3300GALEDJLAIPM_;
+    /**
+     * <code>uint32 Unk3300_GALEDJLAIPM = 5;</code>
+     * @return The unk3300GALEDJLAIPM.
+     */
+    @java.lang.Override
+    public int getUnk3300GALEDJLAIPM() {
+      return unk3300GALEDJLAIPM_;
+    }
+
+    public static final int UNK3300_EGGFJCICOBD_FIELD_NUMBER = 12;
+    private int unk3300EGGFJCICOBD_;
+    /**
+     * <code>uint32 Unk3300_EGGFJCICOBD = 12;</code>
+     * @return The unk3300EGGFJCICOBD.
+     */
+    @java.lang.Override
+    public int getUnk3300EGGFJCICOBD() {
+      return unk3300EGGFJCICOBD_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -219,20 +219,20 @@ public final class SummerTimeDungeonInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (unk3300GMKMNHIBPEP_ != 0) {
+        output.writeUInt32(1, unk3300GMKMNHIBPEP_);
+      }
+      if (unk3300GALEDJLAIPM_ != 0) {
+        output.writeUInt32(5, unk3300GALEDJLAIPM_);
+      }
+      if (unk3300HJHODMOIMKG_ != 0) {
+        output.writeUInt32(8, unk3300HJHODMOIMKG_);
+      }
       if (dungeonId_ != 0) {
-        output.writeUInt32(4, dungeonId_);
+        output.writeUInt32(9, dungeonId_);
       }
-      if (totalChestCount_ != 0) {
-        output.writeUInt32(12, totalChestCount_);
-      }
-      if (totalShellCount_ != 0) {
-        output.writeUInt32(13, totalShellCount_);
-      }
-      if (takenShellCount_ != 0) {
-        output.writeUInt32(14, takenShellCount_);
-      }
-      if (takenChestCount_ != 0) {
-        output.writeUInt32(15, takenChestCount_);
+      if (unk3300EGGFJCICOBD_ != 0) {
+        output.writeUInt32(12, unk3300EGGFJCICOBD_);
       }
       unknownFields.writeTo(output);
     }
@@ -243,25 +243,25 @@ public final class SummerTimeDungeonInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (unk3300GMKMNHIBPEP_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(1, unk3300GMKMNHIBPEP_);
+      }
+      if (unk3300GALEDJLAIPM_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(5, unk3300GALEDJLAIPM_);
+      }
+      if (unk3300HJHODMOIMKG_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(8, unk3300HJHODMOIMKG_);
+      }
       if (dungeonId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, dungeonId_);
+          .computeUInt32Size(9, dungeonId_);
       }
-      if (totalChestCount_ != 0) {
+      if (unk3300EGGFJCICOBD_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, totalChestCount_);
-      }
-      if (totalShellCount_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, totalShellCount_);
-      }
-      if (takenShellCount_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, takenShellCount_);
-      }
-      if (takenChestCount_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, takenChestCount_);
+          .computeUInt32Size(12, unk3300EGGFJCICOBD_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -278,16 +278,16 @@ public final class SummerTimeDungeonInfoOuterClass {
       }
       emu.grasscutter.net.proto.SummerTimeDungeonInfoOuterClass.SummerTimeDungeonInfo other = (emu.grasscutter.net.proto.SummerTimeDungeonInfoOuterClass.SummerTimeDungeonInfo) obj;
 
-      if (getTakenChestCount()
-          != other.getTakenChestCount()) return false;
-      if (getTotalChestCount()
-          != other.getTotalChestCount()) return false;
-      if (getTakenShellCount()
-          != other.getTakenShellCount()) return false;
       if (getDungeonId()
           != other.getDungeonId()) return false;
-      if (getTotalShellCount()
-          != other.getTotalShellCount()) return false;
+      if (getUnk3300GMKMNHIBPEP()
+          != other.getUnk3300GMKMNHIBPEP()) return false;
+      if (getUnk3300HJHODMOIMKG()
+          != other.getUnk3300HJHODMOIMKG()) return false;
+      if (getUnk3300GALEDJLAIPM()
+          != other.getUnk3300GALEDJLAIPM()) return false;
+      if (getUnk3300EGGFJCICOBD()
+          != other.getUnk3300EGGFJCICOBD()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -299,16 +299,16 @@ public final class SummerTimeDungeonInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + TAKEN_CHEST_COUNT_FIELD_NUMBER;
-      hash = (53 * hash) + getTakenChestCount();
-      hash = (37 * hash) + TOTAL_CHEST_COUNT_FIELD_NUMBER;
-      hash = (53 * hash) + getTotalChestCount();
-      hash = (37 * hash) + TAKEN_SHELL_COUNT_FIELD_NUMBER;
-      hash = (53 * hash) + getTakenShellCount();
       hash = (37 * hash) + DUNGEON_ID_FIELD_NUMBER;
       hash = (53 * hash) + getDungeonId();
-      hash = (37 * hash) + TOTAL_SHELL_COUNT_FIELD_NUMBER;
-      hash = (53 * hash) + getTotalShellCount();
+      hash = (37 * hash) + UNK3300_GMKMNHIBPEP_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300GMKMNHIBPEP();
+      hash = (37 * hash) + UNK3300_HJHODMOIMKG_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300HJHODMOIMKG();
+      hash = (37 * hash) + UNK3300_GALEDJLAIPM_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300GALEDJLAIPM();
+      hash = (37 * hash) + UNK3300_EGGFJCICOBD_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300EGGFJCICOBD();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -442,15 +442,15 @@ public final class SummerTimeDungeonInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        takenChestCount_ = 0;
-
-        totalChestCount_ = 0;
-
-        takenShellCount_ = 0;
-
         dungeonId_ = 0;
 
-        totalShellCount_ = 0;
+        unk3300GMKMNHIBPEP_ = 0;
+
+        unk3300HJHODMOIMKG_ = 0;
+
+        unk3300GALEDJLAIPM_ = 0;
+
+        unk3300EGGFJCICOBD_ = 0;
 
         return this;
       }
@@ -478,11 +478,11 @@ public final class SummerTimeDungeonInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.SummerTimeDungeonInfoOuterClass.SummerTimeDungeonInfo buildPartial() {
         emu.grasscutter.net.proto.SummerTimeDungeonInfoOuterClass.SummerTimeDungeonInfo result = new emu.grasscutter.net.proto.SummerTimeDungeonInfoOuterClass.SummerTimeDungeonInfo(this);
-        result.takenChestCount_ = takenChestCount_;
-        result.totalChestCount_ = totalChestCount_;
-        result.takenShellCount_ = takenShellCount_;
         result.dungeonId_ = dungeonId_;
-        result.totalShellCount_ = totalShellCount_;
+        result.unk3300GMKMNHIBPEP_ = unk3300GMKMNHIBPEP_;
+        result.unk3300HJHODMOIMKG_ = unk3300HJHODMOIMKG_;
+        result.unk3300GALEDJLAIPM_ = unk3300GALEDJLAIPM_;
+        result.unk3300EGGFJCICOBD_ = unk3300EGGFJCICOBD_;
         onBuilt();
         return result;
       }
@@ -531,20 +531,20 @@ public final class SummerTimeDungeonInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.SummerTimeDungeonInfoOuterClass.SummerTimeDungeonInfo other) {
         if (other == emu.grasscutter.net.proto.SummerTimeDungeonInfoOuterClass.SummerTimeDungeonInfo.getDefaultInstance()) return this;
-        if (other.getTakenChestCount() != 0) {
-          setTakenChestCount(other.getTakenChestCount());
-        }
-        if (other.getTotalChestCount() != 0) {
-          setTotalChestCount(other.getTotalChestCount());
-        }
-        if (other.getTakenShellCount() != 0) {
-          setTakenShellCount(other.getTakenShellCount());
-        }
         if (other.getDungeonId() != 0) {
           setDungeonId(other.getDungeonId());
         }
-        if (other.getTotalShellCount() != 0) {
-          setTotalShellCount(other.getTotalShellCount());
+        if (other.getUnk3300GMKMNHIBPEP() != 0) {
+          setUnk3300GMKMNHIBPEP(other.getUnk3300GMKMNHIBPEP());
+        }
+        if (other.getUnk3300HJHODMOIMKG() != 0) {
+          setUnk3300HJHODMOIMKG(other.getUnk3300HJHODMOIMKG());
+        }
+        if (other.getUnk3300GALEDJLAIPM() != 0) {
+          setUnk3300GALEDJLAIPM(other.getUnk3300GALEDJLAIPM());
+        }
+        if (other.getUnk3300EGGFJCICOBD() != 0) {
+          setUnk3300EGGFJCICOBD(other.getUnk3300EGGFJCICOBD());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -575,102 +575,9 @@ public final class SummerTimeDungeonInfoOuterClass {
         return this;
       }
 
-      private int takenChestCount_ ;
-      /**
-       * <code>uint32 taken_chest_count = 15;</code>
-       * @return The takenChestCount.
-       */
-      @java.lang.Override
-      public int getTakenChestCount() {
-        return takenChestCount_;
-      }
-      /**
-       * <code>uint32 taken_chest_count = 15;</code>
-       * @param value The takenChestCount to set.
-       * @return This builder for chaining.
-       */
-      public Builder setTakenChestCount(int value) {
-        
-        takenChestCount_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 taken_chest_count = 15;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearTakenChestCount() {
-        
-        takenChestCount_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int totalChestCount_ ;
-      /**
-       * <code>uint32 total_chest_count = 12;</code>
-       * @return The totalChestCount.
-       */
-      @java.lang.Override
-      public int getTotalChestCount() {
-        return totalChestCount_;
-      }
-      /**
-       * <code>uint32 total_chest_count = 12;</code>
-       * @param value The totalChestCount to set.
-       * @return This builder for chaining.
-       */
-      public Builder setTotalChestCount(int value) {
-        
-        totalChestCount_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 total_chest_count = 12;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearTotalChestCount() {
-        
-        totalChestCount_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int takenShellCount_ ;
-      /**
-       * <code>uint32 taken_shell_count = 14;</code>
-       * @return The takenShellCount.
-       */
-      @java.lang.Override
-      public int getTakenShellCount() {
-        return takenShellCount_;
-      }
-      /**
-       * <code>uint32 taken_shell_count = 14;</code>
-       * @param value The takenShellCount to set.
-       * @return This builder for chaining.
-       */
-      public Builder setTakenShellCount(int value) {
-        
-        takenShellCount_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 taken_shell_count = 14;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearTakenShellCount() {
-        
-        takenShellCount_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int dungeonId_ ;
       /**
-       * <code>uint32 dungeon_id = 4;</code>
+       * <code>uint32 dungeon_id = 9;</code>
        * @return The dungeonId.
        */
       @java.lang.Override
@@ -678,7 +585,7 @@ public final class SummerTimeDungeonInfoOuterClass {
         return dungeonId_;
       }
       /**
-       * <code>uint32 dungeon_id = 4;</code>
+       * <code>uint32 dungeon_id = 9;</code>
        * @param value The dungeonId to set.
        * @return This builder for chaining.
        */
@@ -689,7 +596,7 @@ public final class SummerTimeDungeonInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 dungeon_id = 4;</code>
+       * <code>uint32 dungeon_id = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearDungeonId() {
@@ -699,33 +606,126 @@ public final class SummerTimeDungeonInfoOuterClass {
         return this;
       }
 
-      private int totalShellCount_ ;
+      private int unk3300GMKMNHIBPEP_ ;
       /**
-       * <code>uint32 total_shell_count = 13;</code>
-       * @return The totalShellCount.
+       * <code>uint32 Unk3300_GMKMNHIBPEP = 1;</code>
+       * @return The unk3300GMKMNHIBPEP.
        */
       @java.lang.Override
-      public int getTotalShellCount() {
-        return totalShellCount_;
+      public int getUnk3300GMKMNHIBPEP() {
+        return unk3300GMKMNHIBPEP_;
       }
       /**
-       * <code>uint32 total_shell_count = 13;</code>
-       * @param value The totalShellCount to set.
+       * <code>uint32 Unk3300_GMKMNHIBPEP = 1;</code>
+       * @param value The unk3300GMKMNHIBPEP to set.
        * @return This builder for chaining.
        */
-      public Builder setTotalShellCount(int value) {
+      public Builder setUnk3300GMKMNHIBPEP(int value) {
         
-        totalShellCount_ = value;
+        unk3300GMKMNHIBPEP_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 total_shell_count = 13;</code>
+       * <code>uint32 Unk3300_GMKMNHIBPEP = 1;</code>
        * @return This builder for chaining.
        */
-      public Builder clearTotalShellCount() {
+      public Builder clearUnk3300GMKMNHIBPEP() {
         
-        totalShellCount_ = 0;
+        unk3300GMKMNHIBPEP_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int unk3300HJHODMOIMKG_ ;
+      /**
+       * <code>uint32 Unk3300_HJHODMOIMKG = 8;</code>
+       * @return The unk3300HJHODMOIMKG.
+       */
+      @java.lang.Override
+      public int getUnk3300HJHODMOIMKG() {
+        return unk3300HJHODMOIMKG_;
+      }
+      /**
+       * <code>uint32 Unk3300_HJHODMOIMKG = 8;</code>
+       * @param value The unk3300HJHODMOIMKG to set.
+       * @return This builder for chaining.
+       */
+      public Builder setUnk3300HJHODMOIMKG(int value) {
+        
+        unk3300HJHODMOIMKG_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 Unk3300_HJHODMOIMKG = 8;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearUnk3300HJHODMOIMKG() {
+        
+        unk3300HJHODMOIMKG_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int unk3300GALEDJLAIPM_ ;
+      /**
+       * <code>uint32 Unk3300_GALEDJLAIPM = 5;</code>
+       * @return The unk3300GALEDJLAIPM.
+       */
+      @java.lang.Override
+      public int getUnk3300GALEDJLAIPM() {
+        return unk3300GALEDJLAIPM_;
+      }
+      /**
+       * <code>uint32 Unk3300_GALEDJLAIPM = 5;</code>
+       * @param value The unk3300GALEDJLAIPM to set.
+       * @return This builder for chaining.
+       */
+      public Builder setUnk3300GALEDJLAIPM(int value) {
+        
+        unk3300GALEDJLAIPM_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 Unk3300_GALEDJLAIPM = 5;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearUnk3300GALEDJLAIPM() {
+        
+        unk3300GALEDJLAIPM_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int unk3300EGGFJCICOBD_ ;
+      /**
+       * <code>uint32 Unk3300_EGGFJCICOBD = 12;</code>
+       * @return The unk3300EGGFJCICOBD.
+       */
+      @java.lang.Override
+      public int getUnk3300EGGFJCICOBD() {
+        return unk3300EGGFJCICOBD_;
+      }
+      /**
+       * <code>uint32 Unk3300_EGGFJCICOBD = 12;</code>
+       * @param value The unk3300EGGFJCICOBD to set.
+       * @return This builder for chaining.
+       */
+      public Builder setUnk3300EGGFJCICOBD(int value) {
+        
+        unk3300EGGFJCICOBD_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 Unk3300_EGGFJCICOBD = 12;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearUnk3300EGGFJCICOBD() {
+        
+        unk3300EGGFJCICOBD_ = 0;
         onChanged();
         return this;
       }
@@ -796,12 +796,12 @@ public final class SummerTimeDungeonInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\033SummerTimeDungeonInfo.proto\"\227\001\n\025Summer" +
-      "TimeDungeonInfo\022\031\n\021taken_chest_count\030\017 \001" +
-      "(\r\022\031\n\021total_chest_count\030\014 \001(\r\022\031\n\021taken_s" +
-      "hell_count\030\016 \001(\r\022\022\n\ndungeon_id\030\004 \001(\r\022\031\n\021" +
-      "total_shell_count\030\r \001(\rB\033\n\031emu.grasscutt" +
-      "er.net.protob\006proto3"
+      "\n\033SummerTimeDungeonInfo.proto\"\237\001\n\025Summer" +
+      "TimeDungeonInfo\022\022\n\ndungeon_id\030\t \001(\r\022\033\n\023U" +
+      "nk3300_GMKMNHIBPEP\030\001 \001(\r\022\033\n\023Unk3300_HJHO" +
+      "DMOIMKG\030\010 \001(\r\022\033\n\023Unk3300_GALEDJLAIPM\030\005 \001" +
+      "(\r\022\033\n\023Unk3300_EGGFJCICOBD\030\014 \001(\rB\033\n\031emu.g" +
+      "rasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -812,7 +812,7 @@ public final class SummerTimeDungeonInfoOuterClass {
     internal_static_SummerTimeDungeonInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SummerTimeDungeonInfo_descriptor,
-        new java.lang.String[] { "TakenChestCount", "TotalChestCount", "TakenShellCount", "DungeonId", "TotalShellCount", });
+        new java.lang.String[] { "DungeonId", "Unk3300GMKMNHIBPEP", "Unk3300HJHODMOIMKG", "Unk3300GALEDJLAIPM", "Unk3300EGGFJCICOBD", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

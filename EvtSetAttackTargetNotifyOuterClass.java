@@ -19,37 +19,41 @@ public final class EvtSetAttackTargetNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.ForwardType forward_type = 1;</code>
-     * @return The enum numeric value on the wire for forwardType.
-     */
-    int getForwardTypeValue();
-    /**
-     * <code>.ForwardType forward_type = 1;</code>
-     * @return The forwardType.
-     */
-    emu.grasscutter.net.proto.ForwardTypeOuterClass.ForwardType getForwardType();
-
-    /**
-     * <code>.EvtSetAttackTargetInfo evt_set_attack_target_info = 11;</code>
+     * <code>.EvtSetAttackTargetInfo evt_set_attack_target_info = 13;</code>
      * @return Whether the evtSetAttackTargetInfo field is set.
      */
     boolean hasEvtSetAttackTargetInfo();
     /**
-     * <code>.EvtSetAttackTargetInfo evt_set_attack_target_info = 11;</code>
+     * <code>.EvtSetAttackTargetInfo evt_set_attack_target_info = 13;</code>
      * @return The evtSetAttackTargetInfo.
      */
     emu.grasscutter.net.proto.EvtSetAttackTargetInfoOuterClass.EvtSetAttackTargetInfo getEvtSetAttackTargetInfo();
     /**
-     * <code>.EvtSetAttackTargetInfo evt_set_attack_target_info = 11;</code>
+     * <code>.EvtSetAttackTargetInfo evt_set_attack_target_info = 13;</code>
      */
     emu.grasscutter.net.proto.EvtSetAttackTargetInfoOuterClass.EvtSetAttackTargetInfoOrBuilder getEvtSetAttackTargetInfoOrBuilder();
+
+    /**
+     * <code>.ForwardType forward_type = 6;</code>
+     * @return The enum numeric value on the wire for forwardType.
+     */
+    int getForwardTypeValue();
+    /**
+     * <code>.ForwardType forward_type = 6;</code>
+     * @return The forwardType.
+     */
+    emu.grasscutter.net.proto.ForwardTypeOuterClass.ForwardType getForwardType();
   }
   /**
    * <pre>
-   * CmdId: 399
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 357;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code EvtSetAttackTargetNotify}
@@ -97,13 +101,13 @@ public final class EvtSetAttackTargetNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
+            case 48: {
               int rawValue = input.readEnum();
 
               forwardType_ = rawValue;
               break;
             }
-            case 90: {
+            case 106: {
               emu.grasscutter.net.proto.EvtSetAttackTargetInfoOuterClass.EvtSetAttackTargetInfo.Builder subBuilder = null;
               if (evtSetAttackTargetInfo_ != null) {
                 subBuilder = evtSetAttackTargetInfo_.toBuilder();
@@ -148,29 +152,10 @@ public final class EvtSetAttackTargetNotifyOuterClass {
               emu.grasscutter.net.proto.EvtSetAttackTargetNotifyOuterClass.EvtSetAttackTargetNotify.class, emu.grasscutter.net.proto.EvtSetAttackTargetNotifyOuterClass.EvtSetAttackTargetNotify.Builder.class);
     }
 
-    public static final int FORWARD_TYPE_FIELD_NUMBER = 1;
-    private int forwardType_;
-    /**
-     * <code>.ForwardType forward_type = 1;</code>
-     * @return The enum numeric value on the wire for forwardType.
-     */
-    @java.lang.Override public int getForwardTypeValue() {
-      return forwardType_;
-    }
-    /**
-     * <code>.ForwardType forward_type = 1;</code>
-     * @return The forwardType.
-     */
-    @java.lang.Override public emu.grasscutter.net.proto.ForwardTypeOuterClass.ForwardType getForwardType() {
-      @SuppressWarnings("deprecation")
-      emu.grasscutter.net.proto.ForwardTypeOuterClass.ForwardType result = emu.grasscutter.net.proto.ForwardTypeOuterClass.ForwardType.valueOf(forwardType_);
-      return result == null ? emu.grasscutter.net.proto.ForwardTypeOuterClass.ForwardType.UNRECOGNIZED : result;
-    }
-
-    public static final int EVT_SET_ATTACK_TARGET_INFO_FIELD_NUMBER = 11;
+    public static final int EVT_SET_ATTACK_TARGET_INFO_FIELD_NUMBER = 13;
     private emu.grasscutter.net.proto.EvtSetAttackTargetInfoOuterClass.EvtSetAttackTargetInfo evtSetAttackTargetInfo_;
     /**
-     * <code>.EvtSetAttackTargetInfo evt_set_attack_target_info = 11;</code>
+     * <code>.EvtSetAttackTargetInfo evt_set_attack_target_info = 13;</code>
      * @return Whether the evtSetAttackTargetInfo field is set.
      */
     @java.lang.Override
@@ -178,7 +163,7 @@ public final class EvtSetAttackTargetNotifyOuterClass {
       return evtSetAttackTargetInfo_ != null;
     }
     /**
-     * <code>.EvtSetAttackTargetInfo evt_set_attack_target_info = 11;</code>
+     * <code>.EvtSetAttackTargetInfo evt_set_attack_target_info = 13;</code>
      * @return The evtSetAttackTargetInfo.
      */
     @java.lang.Override
@@ -186,11 +171,30 @@ public final class EvtSetAttackTargetNotifyOuterClass {
       return evtSetAttackTargetInfo_ == null ? emu.grasscutter.net.proto.EvtSetAttackTargetInfoOuterClass.EvtSetAttackTargetInfo.getDefaultInstance() : evtSetAttackTargetInfo_;
     }
     /**
-     * <code>.EvtSetAttackTargetInfo evt_set_attack_target_info = 11;</code>
+     * <code>.EvtSetAttackTargetInfo evt_set_attack_target_info = 13;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.EvtSetAttackTargetInfoOuterClass.EvtSetAttackTargetInfoOrBuilder getEvtSetAttackTargetInfoOrBuilder() {
       return getEvtSetAttackTargetInfo();
+    }
+
+    public static final int FORWARD_TYPE_FIELD_NUMBER = 6;
+    private int forwardType_;
+    /**
+     * <code>.ForwardType forward_type = 6;</code>
+     * @return The enum numeric value on the wire for forwardType.
+     */
+    @java.lang.Override public int getForwardTypeValue() {
+      return forwardType_;
+    }
+    /**
+     * <code>.ForwardType forward_type = 6;</code>
+     * @return The forwardType.
+     */
+    @java.lang.Override public emu.grasscutter.net.proto.ForwardTypeOuterClass.ForwardType getForwardType() {
+      @SuppressWarnings("deprecation")
+      emu.grasscutter.net.proto.ForwardTypeOuterClass.ForwardType result = emu.grasscutter.net.proto.ForwardTypeOuterClass.ForwardType.valueOf(forwardType_);
+      return result == null ? emu.grasscutter.net.proto.ForwardTypeOuterClass.ForwardType.UNRECOGNIZED : result;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -208,10 +212,10 @@ public final class EvtSetAttackTargetNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (forwardType_ != emu.grasscutter.net.proto.ForwardTypeOuterClass.ForwardType.FORWARD_TYPE_LOCAL.getNumber()) {
-        output.writeEnum(1, forwardType_);
+        output.writeEnum(6, forwardType_);
       }
       if (evtSetAttackTargetInfo_ != null) {
-        output.writeMessage(11, getEvtSetAttackTargetInfo());
+        output.writeMessage(13, getEvtSetAttackTargetInfo());
       }
       unknownFields.writeTo(output);
     }
@@ -224,11 +228,11 @@ public final class EvtSetAttackTargetNotifyOuterClass {
       size = 0;
       if (forwardType_ != emu.grasscutter.net.proto.ForwardTypeOuterClass.ForwardType.FORWARD_TYPE_LOCAL.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(1, forwardType_);
+          .computeEnumSize(6, forwardType_);
       }
       if (evtSetAttackTargetInfo_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(11, getEvtSetAttackTargetInfo());
+          .computeMessageSize(13, getEvtSetAttackTargetInfo());
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -245,12 +249,12 @@ public final class EvtSetAttackTargetNotifyOuterClass {
       }
       emu.grasscutter.net.proto.EvtSetAttackTargetNotifyOuterClass.EvtSetAttackTargetNotify other = (emu.grasscutter.net.proto.EvtSetAttackTargetNotifyOuterClass.EvtSetAttackTargetNotify) obj;
 
-      if (forwardType_ != other.forwardType_) return false;
       if (hasEvtSetAttackTargetInfo() != other.hasEvtSetAttackTargetInfo()) return false;
       if (hasEvtSetAttackTargetInfo()) {
         if (!getEvtSetAttackTargetInfo()
             .equals(other.getEvtSetAttackTargetInfo())) return false;
       }
+      if (forwardType_ != other.forwardType_) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -262,12 +266,12 @@ public final class EvtSetAttackTargetNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + FORWARD_TYPE_FIELD_NUMBER;
-      hash = (53 * hash) + forwardType_;
       if (hasEvtSetAttackTargetInfo()) {
         hash = (37 * hash) + EVT_SET_ATTACK_TARGET_INFO_FIELD_NUMBER;
         hash = (53 * hash) + getEvtSetAttackTargetInfo().hashCode();
       }
+      hash = (37 * hash) + FORWARD_TYPE_FIELD_NUMBER;
+      hash = (53 * hash) + forwardType_;
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -365,10 +369,14 @@ public final class EvtSetAttackTargetNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 399
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 357;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code EvtSetAttackTargetNotify}
@@ -408,14 +416,14 @@ public final class EvtSetAttackTargetNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        forwardType_ = 0;
-
         if (evtSetAttackTargetInfoBuilder_ == null) {
           evtSetAttackTargetInfo_ = null;
         } else {
           evtSetAttackTargetInfo_ = null;
           evtSetAttackTargetInfoBuilder_ = null;
         }
+        forwardType_ = 0;
+
         return this;
       }
 
@@ -442,12 +450,12 @@ public final class EvtSetAttackTargetNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.EvtSetAttackTargetNotifyOuterClass.EvtSetAttackTargetNotify buildPartial() {
         emu.grasscutter.net.proto.EvtSetAttackTargetNotifyOuterClass.EvtSetAttackTargetNotify result = new emu.grasscutter.net.proto.EvtSetAttackTargetNotifyOuterClass.EvtSetAttackTargetNotify(this);
-        result.forwardType_ = forwardType_;
         if (evtSetAttackTargetInfoBuilder_ == null) {
           result.evtSetAttackTargetInfo_ = evtSetAttackTargetInfo_;
         } else {
           result.evtSetAttackTargetInfo_ = evtSetAttackTargetInfoBuilder_.build();
         }
+        result.forwardType_ = forwardType_;
         onBuilt();
         return result;
       }
@@ -496,11 +504,11 @@ public final class EvtSetAttackTargetNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.EvtSetAttackTargetNotifyOuterClass.EvtSetAttackTargetNotify other) {
         if (other == emu.grasscutter.net.proto.EvtSetAttackTargetNotifyOuterClass.EvtSetAttackTargetNotify.getDefaultInstance()) return this;
-        if (other.forwardType_ != 0) {
-          setForwardTypeValue(other.getForwardTypeValue());
-        }
         if (other.hasEvtSetAttackTargetInfo()) {
           mergeEvtSetAttackTargetInfo(other.getEvtSetAttackTargetInfo());
+        }
+        if (other.forwardType_ != 0) {
+          setForwardTypeValue(other.getForwardTypeValue());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -531,72 +539,18 @@ public final class EvtSetAttackTargetNotifyOuterClass {
         return this;
       }
 
-      private int forwardType_ = 0;
-      /**
-       * <code>.ForwardType forward_type = 1;</code>
-       * @return The enum numeric value on the wire for forwardType.
-       */
-      @java.lang.Override public int getForwardTypeValue() {
-        return forwardType_;
-      }
-      /**
-       * <code>.ForwardType forward_type = 1;</code>
-       * @param value The enum numeric value on the wire for forwardType to set.
-       * @return This builder for chaining.
-       */
-      public Builder setForwardTypeValue(int value) {
-        
-        forwardType_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>.ForwardType forward_type = 1;</code>
-       * @return The forwardType.
-       */
-      @java.lang.Override
-      public emu.grasscutter.net.proto.ForwardTypeOuterClass.ForwardType getForwardType() {
-        @SuppressWarnings("deprecation")
-        emu.grasscutter.net.proto.ForwardTypeOuterClass.ForwardType result = emu.grasscutter.net.proto.ForwardTypeOuterClass.ForwardType.valueOf(forwardType_);
-        return result == null ? emu.grasscutter.net.proto.ForwardTypeOuterClass.ForwardType.UNRECOGNIZED : result;
-      }
-      /**
-       * <code>.ForwardType forward_type = 1;</code>
-       * @param value The forwardType to set.
-       * @return This builder for chaining.
-       */
-      public Builder setForwardType(emu.grasscutter.net.proto.ForwardTypeOuterClass.ForwardType value) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        
-        forwardType_ = value.getNumber();
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>.ForwardType forward_type = 1;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearForwardType() {
-        
-        forwardType_ = 0;
-        onChanged();
-        return this;
-      }
-
       private emu.grasscutter.net.proto.EvtSetAttackTargetInfoOuterClass.EvtSetAttackTargetInfo evtSetAttackTargetInfo_;
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.EvtSetAttackTargetInfoOuterClass.EvtSetAttackTargetInfo, emu.grasscutter.net.proto.EvtSetAttackTargetInfoOuterClass.EvtSetAttackTargetInfo.Builder, emu.grasscutter.net.proto.EvtSetAttackTargetInfoOuterClass.EvtSetAttackTargetInfoOrBuilder> evtSetAttackTargetInfoBuilder_;
       /**
-       * <code>.EvtSetAttackTargetInfo evt_set_attack_target_info = 11;</code>
+       * <code>.EvtSetAttackTargetInfo evt_set_attack_target_info = 13;</code>
        * @return Whether the evtSetAttackTargetInfo field is set.
        */
       public boolean hasEvtSetAttackTargetInfo() {
         return evtSetAttackTargetInfoBuilder_ != null || evtSetAttackTargetInfo_ != null;
       }
       /**
-       * <code>.EvtSetAttackTargetInfo evt_set_attack_target_info = 11;</code>
+       * <code>.EvtSetAttackTargetInfo evt_set_attack_target_info = 13;</code>
        * @return The evtSetAttackTargetInfo.
        */
       public emu.grasscutter.net.proto.EvtSetAttackTargetInfoOuterClass.EvtSetAttackTargetInfo getEvtSetAttackTargetInfo() {
@@ -607,7 +561,7 @@ public final class EvtSetAttackTargetNotifyOuterClass {
         }
       }
       /**
-       * <code>.EvtSetAttackTargetInfo evt_set_attack_target_info = 11;</code>
+       * <code>.EvtSetAttackTargetInfo evt_set_attack_target_info = 13;</code>
        */
       public Builder setEvtSetAttackTargetInfo(emu.grasscutter.net.proto.EvtSetAttackTargetInfoOuterClass.EvtSetAttackTargetInfo value) {
         if (evtSetAttackTargetInfoBuilder_ == null) {
@@ -623,7 +577,7 @@ public final class EvtSetAttackTargetNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.EvtSetAttackTargetInfo evt_set_attack_target_info = 11;</code>
+       * <code>.EvtSetAttackTargetInfo evt_set_attack_target_info = 13;</code>
        */
       public Builder setEvtSetAttackTargetInfo(
           emu.grasscutter.net.proto.EvtSetAttackTargetInfoOuterClass.EvtSetAttackTargetInfo.Builder builderForValue) {
@@ -637,7 +591,7 @@ public final class EvtSetAttackTargetNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.EvtSetAttackTargetInfo evt_set_attack_target_info = 11;</code>
+       * <code>.EvtSetAttackTargetInfo evt_set_attack_target_info = 13;</code>
        */
       public Builder mergeEvtSetAttackTargetInfo(emu.grasscutter.net.proto.EvtSetAttackTargetInfoOuterClass.EvtSetAttackTargetInfo value) {
         if (evtSetAttackTargetInfoBuilder_ == null) {
@@ -655,7 +609,7 @@ public final class EvtSetAttackTargetNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.EvtSetAttackTargetInfo evt_set_attack_target_info = 11;</code>
+       * <code>.EvtSetAttackTargetInfo evt_set_attack_target_info = 13;</code>
        */
       public Builder clearEvtSetAttackTargetInfo() {
         if (evtSetAttackTargetInfoBuilder_ == null) {
@@ -669,7 +623,7 @@ public final class EvtSetAttackTargetNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.EvtSetAttackTargetInfo evt_set_attack_target_info = 11;</code>
+       * <code>.EvtSetAttackTargetInfo evt_set_attack_target_info = 13;</code>
        */
       public emu.grasscutter.net.proto.EvtSetAttackTargetInfoOuterClass.EvtSetAttackTargetInfo.Builder getEvtSetAttackTargetInfoBuilder() {
         
@@ -677,7 +631,7 @@ public final class EvtSetAttackTargetNotifyOuterClass {
         return getEvtSetAttackTargetInfoFieldBuilder().getBuilder();
       }
       /**
-       * <code>.EvtSetAttackTargetInfo evt_set_attack_target_info = 11;</code>
+       * <code>.EvtSetAttackTargetInfo evt_set_attack_target_info = 13;</code>
        */
       public emu.grasscutter.net.proto.EvtSetAttackTargetInfoOuterClass.EvtSetAttackTargetInfoOrBuilder getEvtSetAttackTargetInfoOrBuilder() {
         if (evtSetAttackTargetInfoBuilder_ != null) {
@@ -688,7 +642,7 @@ public final class EvtSetAttackTargetNotifyOuterClass {
         }
       }
       /**
-       * <code>.EvtSetAttackTargetInfo evt_set_attack_target_info = 11;</code>
+       * <code>.EvtSetAttackTargetInfo evt_set_attack_target_info = 13;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.EvtSetAttackTargetInfoOuterClass.EvtSetAttackTargetInfo, emu.grasscutter.net.proto.EvtSetAttackTargetInfoOuterClass.EvtSetAttackTargetInfo.Builder, emu.grasscutter.net.proto.EvtSetAttackTargetInfoOuterClass.EvtSetAttackTargetInfoOrBuilder> 
@@ -702,6 +656,60 @@ public final class EvtSetAttackTargetNotifyOuterClass {
           evtSetAttackTargetInfo_ = null;
         }
         return evtSetAttackTargetInfoBuilder_;
+      }
+
+      private int forwardType_ = 0;
+      /**
+       * <code>.ForwardType forward_type = 6;</code>
+       * @return The enum numeric value on the wire for forwardType.
+       */
+      @java.lang.Override public int getForwardTypeValue() {
+        return forwardType_;
+      }
+      /**
+       * <code>.ForwardType forward_type = 6;</code>
+       * @param value The enum numeric value on the wire for forwardType to set.
+       * @return This builder for chaining.
+       */
+      public Builder setForwardTypeValue(int value) {
+        
+        forwardType_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.ForwardType forward_type = 6;</code>
+       * @return The forwardType.
+       */
+      @java.lang.Override
+      public emu.grasscutter.net.proto.ForwardTypeOuterClass.ForwardType getForwardType() {
+        @SuppressWarnings("deprecation")
+        emu.grasscutter.net.proto.ForwardTypeOuterClass.ForwardType result = emu.grasscutter.net.proto.ForwardTypeOuterClass.ForwardType.valueOf(forwardType_);
+        return result == null ? emu.grasscutter.net.proto.ForwardTypeOuterClass.ForwardType.UNRECOGNIZED : result;
+      }
+      /**
+       * <code>.ForwardType forward_type = 6;</code>
+       * @param value The forwardType to set.
+       * @return This builder for chaining.
+       */
+      public Builder setForwardType(emu.grasscutter.net.proto.ForwardTypeOuterClass.ForwardType value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        
+        forwardType_ = value.getNumber();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.ForwardType forward_type = 6;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearForwardType() {
+        
+        forwardType_ = 0;
+        onChanged();
+        return this;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -772,10 +780,10 @@ public final class EvtSetAttackTargetNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n\036EvtSetAttackTargetNotify.proto\032\034EvtSet" +
       "AttackTargetInfo.proto\032\021ForwardType.prot" +
-      "o\"{\n\030EvtSetAttackTargetNotify\022\"\n\014forward" +
-      "_type\030\001 \001(\0162\014.ForwardType\022;\n\032evt_set_att" +
-      "ack_target_info\030\013 \001(\0132\027.EvtSetAttackTarg" +
-      "etInfoB\033\n\031emu.grasscutter.net.protob\006pro" +
+      "o\"{\n\030EvtSetAttackTargetNotify\022;\n\032evt_set" +
+      "_attack_target_info\030\r \001(\0132\027.EvtSetAttack" +
+      "TargetInfo\022\"\n\014forward_type\030\006 \001(\0162\014.Forwa" +
+      "rdTypeB\033\n\031emu.grasscutter.net.protob\006pro" +
       "to3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -789,7 +797,7 @@ public final class EvtSetAttackTargetNotifyOuterClass {
     internal_static_EvtSetAttackTargetNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_EvtSetAttackTargetNotify_descriptor,
-        new java.lang.String[] { "ForwardType", "EvtSetAttackTargetInfo", });
+        new java.lang.String[] { "EvtSetAttackTargetInfo", "ForwardType", });
     emu.grasscutter.net.proto.EvtSetAttackTargetInfoOuterClass.getDescriptor();
     emu.grasscutter.net.proto.ForwardTypeOuterClass.getDescriptor();
   }

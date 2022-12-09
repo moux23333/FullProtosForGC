@@ -19,58 +19,62 @@ public final class SummerTimeSprintBoatSettleNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 total_num = 13;</code>
-     * @return The totalNum.
-     */
-    int getTotalNum();
-
-    /**
-     * <code>uint32 group_id = 12;</code>
-     * @return The groupId.
-     */
-    int getGroupId();
-
-    /**
-     * <code>bool is_success = 15;</code>
-     * @return The isSuccess.
-     */
-    boolean getIsSuccess();
-
-    /**
-     * <code>uint32 collect_num = 6;</code>
-     * @return The collectNum.
-     */
-    int getCollectNum();
-
-    /**
-     * <code>uint32 left_time = 8;</code>
-     * @return The leftTime.
-     */
-    int getLeftTime();
-
-    /**
-     * <code>uint32 medal_level = 2;</code>
-     * @return The medalLevel.
-     */
-    int getMedalLevel();
-
-    /**
-     * <code>uint32 score = 10;</code>
+     * <code>uint32 score = 6;</code>
      * @return The score.
      */
     int getScore();
 
     /**
-     * <code>bool is_new_record = 7;</code>
+     * <code>uint32 left_time = 2;</code>
+     * @return The leftTime.
+     */
+    int getLeftTime();
+
+    /**
+     * <code>bool is_success = 4;</code>
+     * @return The isSuccess.
+     */
+    boolean getIsSuccess();
+
+    /**
+     * <code>uint32 group_id = 5;</code>
+     * @return The groupId.
+     */
+    int getGroupId();
+
+    /**
+     * <code>uint32 Unk3300_PLFMJPNPPLI = 12;</code>
+     * @return The unk3300PLFMJPNPPLI.
+     */
+    int getUnk3300PLFMJPNPPLI();
+
+    /**
+     * <code>uint32 total_num = 10;</code>
+     * @return The totalNum.
+     */
+    int getTotalNum();
+
+    /**
+     * <code>bool is_new_record = 15;</code>
      * @return The isNewRecord.
      */
     boolean getIsNewRecord();
+
+    /**
+     * <code>uint32 Unk3300_MEEKFJJIOKE = 14;</code>
+     * @return The unk3300MEEKFJJIOKE.
+     */
+    int getUnk3300MEEKFJJIOKE();
   }
   /**
    * <pre>
-   * CmdId: 8651
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 8451;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code SummerTimeSprintBoatSettleNotify}
@@ -119,42 +123,42 @@ public final class SummerTimeSprintBoatSettleNotifyOuterClass {
               break;
             case 16: {
 
-              medalLevel_ = input.readUInt32();
-              break;
-            }
-            case 48: {
-
-              collectNum_ = input.readUInt32();
-              break;
-            }
-            case 56: {
-
-              isNewRecord_ = input.readBool();
-              break;
-            }
-            case 64: {
-
               leftTime_ = input.readUInt32();
               break;
             }
-            case 80: {
+            case 32: {
 
-              score_ = input.readUInt32();
+              isSuccess_ = input.readBool();
               break;
             }
-            case 96: {
+            case 40: {
 
               groupId_ = input.readUInt32();
               break;
             }
-            case 104: {
+            case 48: {
+
+              score_ = input.readUInt32();
+              break;
+            }
+            case 80: {
 
               totalNum_ = input.readUInt32();
               break;
             }
+            case 96: {
+
+              unk3300PLFMJPNPPLI_ = input.readUInt32();
+              break;
+            }
+            case 112: {
+
+              unk3300MEEKFJJIOKE_ = input.readUInt32();
+              break;
+            }
             case 120: {
 
-              isSuccess_ = input.readBool();
+              isNewRecord_ = input.readBool();
               break;
             }
             default: {
@@ -189,76 +193,10 @@ public final class SummerTimeSprintBoatSettleNotifyOuterClass {
               emu.grasscutter.net.proto.SummerTimeSprintBoatSettleNotifyOuterClass.SummerTimeSprintBoatSettleNotify.class, emu.grasscutter.net.proto.SummerTimeSprintBoatSettleNotifyOuterClass.SummerTimeSprintBoatSettleNotify.Builder.class);
     }
 
-    public static final int TOTAL_NUM_FIELD_NUMBER = 13;
-    private int totalNum_;
-    /**
-     * <code>uint32 total_num = 13;</code>
-     * @return The totalNum.
-     */
-    @java.lang.Override
-    public int getTotalNum() {
-      return totalNum_;
-    }
-
-    public static final int GROUP_ID_FIELD_NUMBER = 12;
-    private int groupId_;
-    /**
-     * <code>uint32 group_id = 12;</code>
-     * @return The groupId.
-     */
-    @java.lang.Override
-    public int getGroupId() {
-      return groupId_;
-    }
-
-    public static final int IS_SUCCESS_FIELD_NUMBER = 15;
-    private boolean isSuccess_;
-    /**
-     * <code>bool is_success = 15;</code>
-     * @return The isSuccess.
-     */
-    @java.lang.Override
-    public boolean getIsSuccess() {
-      return isSuccess_;
-    }
-
-    public static final int COLLECT_NUM_FIELD_NUMBER = 6;
-    private int collectNum_;
-    /**
-     * <code>uint32 collect_num = 6;</code>
-     * @return The collectNum.
-     */
-    @java.lang.Override
-    public int getCollectNum() {
-      return collectNum_;
-    }
-
-    public static final int LEFT_TIME_FIELD_NUMBER = 8;
-    private int leftTime_;
-    /**
-     * <code>uint32 left_time = 8;</code>
-     * @return The leftTime.
-     */
-    @java.lang.Override
-    public int getLeftTime() {
-      return leftTime_;
-    }
-
-    public static final int MEDAL_LEVEL_FIELD_NUMBER = 2;
-    private int medalLevel_;
-    /**
-     * <code>uint32 medal_level = 2;</code>
-     * @return The medalLevel.
-     */
-    @java.lang.Override
-    public int getMedalLevel() {
-      return medalLevel_;
-    }
-
-    public static final int SCORE_FIELD_NUMBER = 10;
+    public static final int SCORE_FIELD_NUMBER = 6;
     private int score_;
     /**
-     * <code>uint32 score = 10;</code>
+     * <code>uint32 score = 6;</code>
      * @return The score.
      */
     @java.lang.Override
@@ -266,15 +204,81 @@ public final class SummerTimeSprintBoatSettleNotifyOuterClass {
       return score_;
     }
 
-    public static final int IS_NEW_RECORD_FIELD_NUMBER = 7;
+    public static final int LEFT_TIME_FIELD_NUMBER = 2;
+    private int leftTime_;
+    /**
+     * <code>uint32 left_time = 2;</code>
+     * @return The leftTime.
+     */
+    @java.lang.Override
+    public int getLeftTime() {
+      return leftTime_;
+    }
+
+    public static final int IS_SUCCESS_FIELD_NUMBER = 4;
+    private boolean isSuccess_;
+    /**
+     * <code>bool is_success = 4;</code>
+     * @return The isSuccess.
+     */
+    @java.lang.Override
+    public boolean getIsSuccess() {
+      return isSuccess_;
+    }
+
+    public static final int GROUP_ID_FIELD_NUMBER = 5;
+    private int groupId_;
+    /**
+     * <code>uint32 group_id = 5;</code>
+     * @return The groupId.
+     */
+    @java.lang.Override
+    public int getGroupId() {
+      return groupId_;
+    }
+
+    public static final int UNK3300_PLFMJPNPPLI_FIELD_NUMBER = 12;
+    private int unk3300PLFMJPNPPLI_;
+    /**
+     * <code>uint32 Unk3300_PLFMJPNPPLI = 12;</code>
+     * @return The unk3300PLFMJPNPPLI.
+     */
+    @java.lang.Override
+    public int getUnk3300PLFMJPNPPLI() {
+      return unk3300PLFMJPNPPLI_;
+    }
+
+    public static final int TOTAL_NUM_FIELD_NUMBER = 10;
+    private int totalNum_;
+    /**
+     * <code>uint32 total_num = 10;</code>
+     * @return The totalNum.
+     */
+    @java.lang.Override
+    public int getTotalNum() {
+      return totalNum_;
+    }
+
+    public static final int IS_NEW_RECORD_FIELD_NUMBER = 15;
     private boolean isNewRecord_;
     /**
-     * <code>bool is_new_record = 7;</code>
+     * <code>bool is_new_record = 15;</code>
      * @return The isNewRecord.
      */
     @java.lang.Override
     public boolean getIsNewRecord() {
       return isNewRecord_;
+    }
+
+    public static final int UNK3300_MEEKFJJIOKE_FIELD_NUMBER = 14;
+    private int unk3300MEEKFJJIOKE_;
+    /**
+     * <code>uint32 Unk3300_MEEKFJJIOKE = 14;</code>
+     * @return The unk3300MEEKFJJIOKE.
+     */
+    @java.lang.Override
+    public int getUnk3300MEEKFJJIOKE() {
+      return unk3300MEEKFJJIOKE_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -291,29 +295,29 @@ public final class SummerTimeSprintBoatSettleNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (medalLevel_ != 0) {
-        output.writeUInt32(2, medalLevel_);
-      }
-      if (collectNum_ != 0) {
-        output.writeUInt32(6, collectNum_);
-      }
-      if (isNewRecord_ != false) {
-        output.writeBool(7, isNewRecord_);
-      }
       if (leftTime_ != 0) {
-        output.writeUInt32(8, leftTime_);
-      }
-      if (score_ != 0) {
-        output.writeUInt32(10, score_);
-      }
-      if (groupId_ != 0) {
-        output.writeUInt32(12, groupId_);
-      }
-      if (totalNum_ != 0) {
-        output.writeUInt32(13, totalNum_);
+        output.writeUInt32(2, leftTime_);
       }
       if (isSuccess_ != false) {
-        output.writeBool(15, isSuccess_);
+        output.writeBool(4, isSuccess_);
+      }
+      if (groupId_ != 0) {
+        output.writeUInt32(5, groupId_);
+      }
+      if (score_ != 0) {
+        output.writeUInt32(6, score_);
+      }
+      if (totalNum_ != 0) {
+        output.writeUInt32(10, totalNum_);
+      }
+      if (unk3300PLFMJPNPPLI_ != 0) {
+        output.writeUInt32(12, unk3300PLFMJPNPPLI_);
+      }
+      if (unk3300MEEKFJJIOKE_ != 0) {
+        output.writeUInt32(14, unk3300MEEKFJJIOKE_);
+      }
+      if (isNewRecord_ != false) {
+        output.writeBool(15, isNewRecord_);
       }
       unknownFields.writeTo(output);
     }
@@ -324,37 +328,37 @@ public final class SummerTimeSprintBoatSettleNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (medalLevel_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, medalLevel_);
-      }
-      if (collectNum_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, collectNum_);
-      }
-      if (isNewRecord_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(7, isNewRecord_);
-      }
       if (leftTime_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, leftTime_);
-      }
-      if (score_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, score_);
-      }
-      if (groupId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, groupId_);
-      }
-      if (totalNum_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, totalNum_);
+          .computeUInt32Size(2, leftTime_);
       }
       if (isSuccess_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(15, isSuccess_);
+          .computeBoolSize(4, isSuccess_);
+      }
+      if (groupId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(5, groupId_);
+      }
+      if (score_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(6, score_);
+      }
+      if (totalNum_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(10, totalNum_);
+      }
+      if (unk3300PLFMJPNPPLI_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(12, unk3300PLFMJPNPPLI_);
+      }
+      if (unk3300MEEKFJJIOKE_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(14, unk3300MEEKFJJIOKE_);
+      }
+      if (isNewRecord_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(15, isNewRecord_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -371,22 +375,22 @@ public final class SummerTimeSprintBoatSettleNotifyOuterClass {
       }
       emu.grasscutter.net.proto.SummerTimeSprintBoatSettleNotifyOuterClass.SummerTimeSprintBoatSettleNotify other = (emu.grasscutter.net.proto.SummerTimeSprintBoatSettleNotifyOuterClass.SummerTimeSprintBoatSettleNotify) obj;
 
-      if (getTotalNum()
-          != other.getTotalNum()) return false;
-      if (getGroupId()
-          != other.getGroupId()) return false;
-      if (getIsSuccess()
-          != other.getIsSuccess()) return false;
-      if (getCollectNum()
-          != other.getCollectNum()) return false;
-      if (getLeftTime()
-          != other.getLeftTime()) return false;
-      if (getMedalLevel()
-          != other.getMedalLevel()) return false;
       if (getScore()
           != other.getScore()) return false;
+      if (getLeftTime()
+          != other.getLeftTime()) return false;
+      if (getIsSuccess()
+          != other.getIsSuccess()) return false;
+      if (getGroupId()
+          != other.getGroupId()) return false;
+      if (getUnk3300PLFMJPNPPLI()
+          != other.getUnk3300PLFMJPNPPLI()) return false;
+      if (getTotalNum()
+          != other.getTotalNum()) return false;
       if (getIsNewRecord()
           != other.getIsNewRecord()) return false;
+      if (getUnk3300MEEKFJJIOKE()
+          != other.getUnk3300MEEKFJJIOKE()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -398,24 +402,24 @@ public final class SummerTimeSprintBoatSettleNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + TOTAL_NUM_FIELD_NUMBER;
-      hash = (53 * hash) + getTotalNum();
-      hash = (37 * hash) + GROUP_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getGroupId();
+      hash = (37 * hash) + SCORE_FIELD_NUMBER;
+      hash = (53 * hash) + getScore();
+      hash = (37 * hash) + LEFT_TIME_FIELD_NUMBER;
+      hash = (53 * hash) + getLeftTime();
       hash = (37 * hash) + IS_SUCCESS_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsSuccess());
-      hash = (37 * hash) + COLLECT_NUM_FIELD_NUMBER;
-      hash = (53 * hash) + getCollectNum();
-      hash = (37 * hash) + LEFT_TIME_FIELD_NUMBER;
-      hash = (53 * hash) + getLeftTime();
-      hash = (37 * hash) + MEDAL_LEVEL_FIELD_NUMBER;
-      hash = (53 * hash) + getMedalLevel();
-      hash = (37 * hash) + SCORE_FIELD_NUMBER;
-      hash = (53 * hash) + getScore();
+      hash = (37 * hash) + GROUP_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getGroupId();
+      hash = (37 * hash) + UNK3300_PLFMJPNPPLI_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300PLFMJPNPPLI();
+      hash = (37 * hash) + TOTAL_NUM_FIELD_NUMBER;
+      hash = (53 * hash) + getTotalNum();
       hash = (37 * hash) + IS_NEW_RECORD_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsNewRecord());
+      hash = (37 * hash) + UNK3300_MEEKFJJIOKE_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300MEEKFJJIOKE();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -513,9 +517,13 @@ public final class SummerTimeSprintBoatSettleNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 8651
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 8451;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code SummerTimeSprintBoatSettleNotify}
@@ -555,21 +563,21 @@ public final class SummerTimeSprintBoatSettleNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        totalNum_ = 0;
-
-        groupId_ = 0;
-
-        isSuccess_ = false;
-
-        collectNum_ = 0;
+        score_ = 0;
 
         leftTime_ = 0;
 
-        medalLevel_ = 0;
+        isSuccess_ = false;
 
-        score_ = 0;
+        groupId_ = 0;
+
+        unk3300PLFMJPNPPLI_ = 0;
+
+        totalNum_ = 0;
 
         isNewRecord_ = false;
+
+        unk3300MEEKFJJIOKE_ = 0;
 
         return this;
       }
@@ -597,14 +605,14 @@ public final class SummerTimeSprintBoatSettleNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.SummerTimeSprintBoatSettleNotifyOuterClass.SummerTimeSprintBoatSettleNotify buildPartial() {
         emu.grasscutter.net.proto.SummerTimeSprintBoatSettleNotifyOuterClass.SummerTimeSprintBoatSettleNotify result = new emu.grasscutter.net.proto.SummerTimeSprintBoatSettleNotifyOuterClass.SummerTimeSprintBoatSettleNotify(this);
-        result.totalNum_ = totalNum_;
-        result.groupId_ = groupId_;
-        result.isSuccess_ = isSuccess_;
-        result.collectNum_ = collectNum_;
-        result.leftTime_ = leftTime_;
-        result.medalLevel_ = medalLevel_;
         result.score_ = score_;
+        result.leftTime_ = leftTime_;
+        result.isSuccess_ = isSuccess_;
+        result.groupId_ = groupId_;
+        result.unk3300PLFMJPNPPLI_ = unk3300PLFMJPNPPLI_;
+        result.totalNum_ = totalNum_;
         result.isNewRecord_ = isNewRecord_;
+        result.unk3300MEEKFJJIOKE_ = unk3300MEEKFJJIOKE_;
         onBuilt();
         return result;
       }
@@ -653,29 +661,29 @@ public final class SummerTimeSprintBoatSettleNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.SummerTimeSprintBoatSettleNotifyOuterClass.SummerTimeSprintBoatSettleNotify other) {
         if (other == emu.grasscutter.net.proto.SummerTimeSprintBoatSettleNotifyOuterClass.SummerTimeSprintBoatSettleNotify.getDefaultInstance()) return this;
-        if (other.getTotalNum() != 0) {
-          setTotalNum(other.getTotalNum());
-        }
-        if (other.getGroupId() != 0) {
-          setGroupId(other.getGroupId());
-        }
-        if (other.getIsSuccess() != false) {
-          setIsSuccess(other.getIsSuccess());
-        }
-        if (other.getCollectNum() != 0) {
-          setCollectNum(other.getCollectNum());
+        if (other.getScore() != 0) {
+          setScore(other.getScore());
         }
         if (other.getLeftTime() != 0) {
           setLeftTime(other.getLeftTime());
         }
-        if (other.getMedalLevel() != 0) {
-          setMedalLevel(other.getMedalLevel());
+        if (other.getIsSuccess() != false) {
+          setIsSuccess(other.getIsSuccess());
         }
-        if (other.getScore() != 0) {
-          setScore(other.getScore());
+        if (other.getGroupId() != 0) {
+          setGroupId(other.getGroupId());
+        }
+        if (other.getUnk3300PLFMJPNPPLI() != 0) {
+          setUnk3300PLFMJPNPPLI(other.getUnk3300PLFMJPNPPLI());
+        }
+        if (other.getTotalNum() != 0) {
+          setTotalNum(other.getTotalNum());
         }
         if (other.getIsNewRecord() != false) {
           setIsNewRecord(other.getIsNewRecord());
+        }
+        if (other.getUnk3300MEEKFJJIOKE() != 0) {
+          setUnk3300MEEKFJJIOKE(other.getUnk3300MEEKFJJIOKE());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -706,195 +714,9 @@ public final class SummerTimeSprintBoatSettleNotifyOuterClass {
         return this;
       }
 
-      private int totalNum_ ;
-      /**
-       * <code>uint32 total_num = 13;</code>
-       * @return The totalNum.
-       */
-      @java.lang.Override
-      public int getTotalNum() {
-        return totalNum_;
-      }
-      /**
-       * <code>uint32 total_num = 13;</code>
-       * @param value The totalNum to set.
-       * @return This builder for chaining.
-       */
-      public Builder setTotalNum(int value) {
-        
-        totalNum_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 total_num = 13;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearTotalNum() {
-        
-        totalNum_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int groupId_ ;
-      /**
-       * <code>uint32 group_id = 12;</code>
-       * @return The groupId.
-       */
-      @java.lang.Override
-      public int getGroupId() {
-        return groupId_;
-      }
-      /**
-       * <code>uint32 group_id = 12;</code>
-       * @param value The groupId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setGroupId(int value) {
-        
-        groupId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 group_id = 12;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearGroupId() {
-        
-        groupId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private boolean isSuccess_ ;
-      /**
-       * <code>bool is_success = 15;</code>
-       * @return The isSuccess.
-       */
-      @java.lang.Override
-      public boolean getIsSuccess() {
-        return isSuccess_;
-      }
-      /**
-       * <code>bool is_success = 15;</code>
-       * @param value The isSuccess to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsSuccess(boolean value) {
-        
-        isSuccess_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_success = 15;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsSuccess() {
-        
-        isSuccess_ = false;
-        onChanged();
-        return this;
-      }
-
-      private int collectNum_ ;
-      /**
-       * <code>uint32 collect_num = 6;</code>
-       * @return The collectNum.
-       */
-      @java.lang.Override
-      public int getCollectNum() {
-        return collectNum_;
-      }
-      /**
-       * <code>uint32 collect_num = 6;</code>
-       * @param value The collectNum to set.
-       * @return This builder for chaining.
-       */
-      public Builder setCollectNum(int value) {
-        
-        collectNum_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 collect_num = 6;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearCollectNum() {
-        
-        collectNum_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int leftTime_ ;
-      /**
-       * <code>uint32 left_time = 8;</code>
-       * @return The leftTime.
-       */
-      @java.lang.Override
-      public int getLeftTime() {
-        return leftTime_;
-      }
-      /**
-       * <code>uint32 left_time = 8;</code>
-       * @param value The leftTime to set.
-       * @return This builder for chaining.
-       */
-      public Builder setLeftTime(int value) {
-        
-        leftTime_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 left_time = 8;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearLeftTime() {
-        
-        leftTime_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int medalLevel_ ;
-      /**
-       * <code>uint32 medal_level = 2;</code>
-       * @return The medalLevel.
-       */
-      @java.lang.Override
-      public int getMedalLevel() {
-        return medalLevel_;
-      }
-      /**
-       * <code>uint32 medal_level = 2;</code>
-       * @param value The medalLevel to set.
-       * @return This builder for chaining.
-       */
-      public Builder setMedalLevel(int value) {
-        
-        medalLevel_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 medal_level = 2;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearMedalLevel() {
-        
-        medalLevel_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int score_ ;
       /**
-       * <code>uint32 score = 10;</code>
+       * <code>uint32 score = 6;</code>
        * @return The score.
        */
       @java.lang.Override
@@ -902,7 +724,7 @@ public final class SummerTimeSprintBoatSettleNotifyOuterClass {
         return score_;
       }
       /**
-       * <code>uint32 score = 10;</code>
+       * <code>uint32 score = 6;</code>
        * @param value The score to set.
        * @return This builder for chaining.
        */
@@ -913,7 +735,7 @@ public final class SummerTimeSprintBoatSettleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 score = 10;</code>
+       * <code>uint32 score = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearScore() {
@@ -923,9 +745,164 @@ public final class SummerTimeSprintBoatSettleNotifyOuterClass {
         return this;
       }
 
+      private int leftTime_ ;
+      /**
+       * <code>uint32 left_time = 2;</code>
+       * @return The leftTime.
+       */
+      @java.lang.Override
+      public int getLeftTime() {
+        return leftTime_;
+      }
+      /**
+       * <code>uint32 left_time = 2;</code>
+       * @param value The leftTime to set.
+       * @return This builder for chaining.
+       */
+      public Builder setLeftTime(int value) {
+        
+        leftTime_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 left_time = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearLeftTime() {
+        
+        leftTime_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private boolean isSuccess_ ;
+      /**
+       * <code>bool is_success = 4;</code>
+       * @return The isSuccess.
+       */
+      @java.lang.Override
+      public boolean getIsSuccess() {
+        return isSuccess_;
+      }
+      /**
+       * <code>bool is_success = 4;</code>
+       * @param value The isSuccess to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIsSuccess(boolean value) {
+        
+        isSuccess_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool is_success = 4;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsSuccess() {
+        
+        isSuccess_ = false;
+        onChanged();
+        return this;
+      }
+
+      private int groupId_ ;
+      /**
+       * <code>uint32 group_id = 5;</code>
+       * @return The groupId.
+       */
+      @java.lang.Override
+      public int getGroupId() {
+        return groupId_;
+      }
+      /**
+       * <code>uint32 group_id = 5;</code>
+       * @param value The groupId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setGroupId(int value) {
+        
+        groupId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 group_id = 5;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearGroupId() {
+        
+        groupId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int unk3300PLFMJPNPPLI_ ;
+      /**
+       * <code>uint32 Unk3300_PLFMJPNPPLI = 12;</code>
+       * @return The unk3300PLFMJPNPPLI.
+       */
+      @java.lang.Override
+      public int getUnk3300PLFMJPNPPLI() {
+        return unk3300PLFMJPNPPLI_;
+      }
+      /**
+       * <code>uint32 Unk3300_PLFMJPNPPLI = 12;</code>
+       * @param value The unk3300PLFMJPNPPLI to set.
+       * @return This builder for chaining.
+       */
+      public Builder setUnk3300PLFMJPNPPLI(int value) {
+        
+        unk3300PLFMJPNPPLI_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 Unk3300_PLFMJPNPPLI = 12;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearUnk3300PLFMJPNPPLI() {
+        
+        unk3300PLFMJPNPPLI_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int totalNum_ ;
+      /**
+       * <code>uint32 total_num = 10;</code>
+       * @return The totalNum.
+       */
+      @java.lang.Override
+      public int getTotalNum() {
+        return totalNum_;
+      }
+      /**
+       * <code>uint32 total_num = 10;</code>
+       * @param value The totalNum to set.
+       * @return This builder for chaining.
+       */
+      public Builder setTotalNum(int value) {
+        
+        totalNum_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 total_num = 10;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearTotalNum() {
+        
+        totalNum_ = 0;
+        onChanged();
+        return this;
+      }
+
       private boolean isNewRecord_ ;
       /**
-       * <code>bool is_new_record = 7;</code>
+       * <code>bool is_new_record = 15;</code>
        * @return The isNewRecord.
        */
       @java.lang.Override
@@ -933,7 +910,7 @@ public final class SummerTimeSprintBoatSettleNotifyOuterClass {
         return isNewRecord_;
       }
       /**
-       * <code>bool is_new_record = 7;</code>
+       * <code>bool is_new_record = 15;</code>
        * @param value The isNewRecord to set.
        * @return This builder for chaining.
        */
@@ -944,12 +921,43 @@ public final class SummerTimeSprintBoatSettleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>bool is_new_record = 7;</code>
+       * <code>bool is_new_record = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsNewRecord() {
         
         isNewRecord_ = false;
+        onChanged();
+        return this;
+      }
+
+      private int unk3300MEEKFJJIOKE_ ;
+      /**
+       * <code>uint32 Unk3300_MEEKFJJIOKE = 14;</code>
+       * @return The unk3300MEEKFJJIOKE.
+       */
+      @java.lang.Override
+      public int getUnk3300MEEKFJJIOKE() {
+        return unk3300MEEKFJJIOKE_;
+      }
+      /**
+       * <code>uint32 Unk3300_MEEKFJJIOKE = 14;</code>
+       * @param value The unk3300MEEKFJJIOKE to set.
+       * @return This builder for chaining.
+       */
+      public Builder setUnk3300MEEKFJJIOKE(int value) {
+        
+        unk3300MEEKFJJIOKE_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 Unk3300_MEEKFJJIOKE = 14;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearUnk3300MEEKFJJIOKE() {
+        
+        unk3300MEEKFJJIOKE_ = 0;
         onChanged();
         return this;
       }
@@ -1021,12 +1029,13 @@ public final class SummerTimeSprintBoatSettleNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n&SummerTimeSprintBoatSettleNotify.proto" +
-      "\"\276\001\n SummerTimeSprintBoatSettleNotify\022\021\n" +
-      "\ttotal_num\030\r \001(\r\022\020\n\010group_id\030\014 \001(\r\022\022\n\nis" +
-      "_success\030\017 \001(\010\022\023\n\013collect_num\030\006 \001(\r\022\021\n\tl" +
-      "eft_time\030\010 \001(\r\022\023\n\013medal_level\030\002 \001(\r\022\r\n\005s" +
-      "core\030\n \001(\r\022\025\n\ris_new_record\030\007 \001(\010B\033\n\031emu" +
-      ".grasscutter.net.protob\006proto3"
+      "\"\316\001\n SummerTimeSprintBoatSettleNotify\022\r\n" +
+      "\005score\030\006 \001(\r\022\021\n\tleft_time\030\002 \001(\r\022\022\n\nis_su" +
+      "ccess\030\004 \001(\010\022\020\n\010group_id\030\005 \001(\r\022\033\n\023Unk3300" +
+      "_PLFMJPNPPLI\030\014 \001(\r\022\021\n\ttotal_num\030\n \001(\r\022\025\n" +
+      "\ris_new_record\030\017 \001(\010\022\033\n\023Unk3300_MEEKFJJI" +
+      "OKE\030\016 \001(\rB\033\n\031emu.grasscutter.net.protob\006" +
+      "proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -1037,7 +1046,7 @@ public final class SummerTimeSprintBoatSettleNotifyOuterClass {
     internal_static_SummerTimeSprintBoatSettleNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SummerTimeSprintBoatSettleNotify_descriptor,
-        new java.lang.String[] { "TotalNum", "GroupId", "IsSuccess", "CollectNum", "LeftTime", "MedalLevel", "Score", "IsNewRecord", });
+        new java.lang.String[] { "Score", "LeftTime", "IsSuccess", "GroupId", "Unk3300PLFMJPNPPLI", "TotalNum", "IsNewRecord", "Unk3300MEEKFJJIOKE", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

@@ -19,22 +19,22 @@ public final class BartenderLevelInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_finish = 7;</code>
+     * <code>uint32 id = 12;</code>
+     * @return The id.
+     */
+    int getId();
+
+    /**
+     * <code>bool is_finish = 3;</code>
      * @return The isFinish.
      */
     boolean getIsFinish();
 
     /**
-     * <code>uint32 max_score = 9;</code>
+     * <code>uint32 max_score = 2;</code>
      * @return The maxScore.
      */
     int getMaxScore();
-
-    /**
-     * <code>uint32 id = 4;</code>
-     * @return The id.
-     */
-    int getId();
   }
   /**
    * Protobuf type {@code BartenderLevelInfo}
@@ -81,19 +81,19 @@ public final class BartenderLevelInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 32: {
+            case 16: {
 
-              id_ = input.readUInt32();
+              maxScore_ = input.readUInt32();
               break;
             }
-            case 56: {
+            case 24: {
 
               isFinish_ = input.readBool();
               break;
             }
-            case 72: {
+            case 96: {
 
-              maxScore_ = input.readUInt32();
+              id_ = input.readUInt32();
               break;
             }
             default: {
@@ -128,10 +128,21 @@ public final class BartenderLevelInfoOuterClass {
               emu.grasscutter.net.proto.BartenderLevelInfoOuterClass.BartenderLevelInfo.class, emu.grasscutter.net.proto.BartenderLevelInfoOuterClass.BartenderLevelInfo.Builder.class);
     }
 
-    public static final int IS_FINISH_FIELD_NUMBER = 7;
+    public static final int ID_FIELD_NUMBER = 12;
+    private int id_;
+    /**
+     * <code>uint32 id = 12;</code>
+     * @return The id.
+     */
+    @java.lang.Override
+    public int getId() {
+      return id_;
+    }
+
+    public static final int IS_FINISH_FIELD_NUMBER = 3;
     private boolean isFinish_;
     /**
-     * <code>bool is_finish = 7;</code>
+     * <code>bool is_finish = 3;</code>
      * @return The isFinish.
      */
     @java.lang.Override
@@ -139,26 +150,15 @@ public final class BartenderLevelInfoOuterClass {
       return isFinish_;
     }
 
-    public static final int MAX_SCORE_FIELD_NUMBER = 9;
+    public static final int MAX_SCORE_FIELD_NUMBER = 2;
     private int maxScore_;
     /**
-     * <code>uint32 max_score = 9;</code>
+     * <code>uint32 max_score = 2;</code>
      * @return The maxScore.
      */
     @java.lang.Override
     public int getMaxScore() {
       return maxScore_;
-    }
-
-    public static final int ID_FIELD_NUMBER = 4;
-    private int id_;
-    /**
-     * <code>uint32 id = 4;</code>
-     * @return The id.
-     */
-    @java.lang.Override
-    public int getId() {
-      return id_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -175,14 +175,14 @@ public final class BartenderLevelInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (id_ != 0) {
-        output.writeUInt32(4, id_);
+      if (maxScore_ != 0) {
+        output.writeUInt32(2, maxScore_);
       }
       if (isFinish_ != false) {
-        output.writeBool(7, isFinish_);
+        output.writeBool(3, isFinish_);
       }
-      if (maxScore_ != 0) {
-        output.writeUInt32(9, maxScore_);
+      if (id_ != 0) {
+        output.writeUInt32(12, id_);
       }
       unknownFields.writeTo(output);
     }
@@ -193,17 +193,17 @@ public final class BartenderLevelInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (id_ != 0) {
+      if (maxScore_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, id_);
+          .computeUInt32Size(2, maxScore_);
       }
       if (isFinish_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(7, isFinish_);
+          .computeBoolSize(3, isFinish_);
       }
-      if (maxScore_ != 0) {
+      if (id_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, maxScore_);
+          .computeUInt32Size(12, id_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -220,12 +220,12 @@ public final class BartenderLevelInfoOuterClass {
       }
       emu.grasscutter.net.proto.BartenderLevelInfoOuterClass.BartenderLevelInfo other = (emu.grasscutter.net.proto.BartenderLevelInfoOuterClass.BartenderLevelInfo) obj;
 
+      if (getId()
+          != other.getId()) return false;
       if (getIsFinish()
           != other.getIsFinish()) return false;
       if (getMaxScore()
           != other.getMaxScore()) return false;
-      if (getId()
-          != other.getId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -237,13 +237,13 @@ public final class BartenderLevelInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + ID_FIELD_NUMBER;
+      hash = (53 * hash) + getId();
       hash = (37 * hash) + IS_FINISH_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsFinish());
       hash = (37 * hash) + MAX_SCORE_FIELD_NUMBER;
       hash = (53 * hash) + getMaxScore();
-      hash = (37 * hash) + ID_FIELD_NUMBER;
-      hash = (53 * hash) + getId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -377,11 +377,11 @@ public final class BartenderLevelInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        id_ = 0;
+
         isFinish_ = false;
 
         maxScore_ = 0;
-
-        id_ = 0;
 
         return this;
       }
@@ -409,9 +409,9 @@ public final class BartenderLevelInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.BartenderLevelInfoOuterClass.BartenderLevelInfo buildPartial() {
         emu.grasscutter.net.proto.BartenderLevelInfoOuterClass.BartenderLevelInfo result = new emu.grasscutter.net.proto.BartenderLevelInfoOuterClass.BartenderLevelInfo(this);
+        result.id_ = id_;
         result.isFinish_ = isFinish_;
         result.maxScore_ = maxScore_;
-        result.id_ = id_;
         onBuilt();
         return result;
       }
@@ -460,14 +460,14 @@ public final class BartenderLevelInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.BartenderLevelInfoOuterClass.BartenderLevelInfo other) {
         if (other == emu.grasscutter.net.proto.BartenderLevelInfoOuterClass.BartenderLevelInfo.getDefaultInstance()) return this;
+        if (other.getId() != 0) {
+          setId(other.getId());
+        }
         if (other.getIsFinish() != false) {
           setIsFinish(other.getIsFinish());
         }
         if (other.getMaxScore() != 0) {
           setMaxScore(other.getMaxScore());
-        }
-        if (other.getId() != 0) {
-          setId(other.getId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -498,9 +498,40 @@ public final class BartenderLevelInfoOuterClass {
         return this;
       }
 
+      private int id_ ;
+      /**
+       * <code>uint32 id = 12;</code>
+       * @return The id.
+       */
+      @java.lang.Override
+      public int getId() {
+        return id_;
+      }
+      /**
+       * <code>uint32 id = 12;</code>
+       * @param value The id to set.
+       * @return This builder for chaining.
+       */
+      public Builder setId(int value) {
+        
+        id_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 id = 12;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearId() {
+        
+        id_ = 0;
+        onChanged();
+        return this;
+      }
+
       private boolean isFinish_ ;
       /**
-       * <code>bool is_finish = 7;</code>
+       * <code>bool is_finish = 3;</code>
        * @return The isFinish.
        */
       @java.lang.Override
@@ -508,7 +539,7 @@ public final class BartenderLevelInfoOuterClass {
         return isFinish_;
       }
       /**
-       * <code>bool is_finish = 7;</code>
+       * <code>bool is_finish = 3;</code>
        * @param value The isFinish to set.
        * @return This builder for chaining.
        */
@@ -519,7 +550,7 @@ public final class BartenderLevelInfoOuterClass {
         return this;
       }
       /**
-       * <code>bool is_finish = 7;</code>
+       * <code>bool is_finish = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsFinish() {
@@ -531,7 +562,7 @@ public final class BartenderLevelInfoOuterClass {
 
       private int maxScore_ ;
       /**
-       * <code>uint32 max_score = 9;</code>
+       * <code>uint32 max_score = 2;</code>
        * @return The maxScore.
        */
       @java.lang.Override
@@ -539,7 +570,7 @@ public final class BartenderLevelInfoOuterClass {
         return maxScore_;
       }
       /**
-       * <code>uint32 max_score = 9;</code>
+       * <code>uint32 max_score = 2;</code>
        * @param value The maxScore to set.
        * @return This builder for chaining.
        */
@@ -550,43 +581,12 @@ public final class BartenderLevelInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 max_score = 9;</code>
+       * <code>uint32 max_score = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearMaxScore() {
         
         maxScore_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int id_ ;
-      /**
-       * <code>uint32 id = 4;</code>
-       * @return The id.
-       */
-      @java.lang.Override
-      public int getId() {
-        return id_;
-      }
-      /**
-       * <code>uint32 id = 4;</code>
-       * @param value The id to set.
-       * @return This builder for chaining.
-       */
-      public Builder setId(int value) {
-        
-        id_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 id = 4;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearId() {
-        
-        id_ = 0;
         onChanged();
         return this;
       }
@@ -658,8 +658,8 @@ public final class BartenderLevelInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\030BartenderLevelInfo.proto\"F\n\022BartenderL" +
-      "evelInfo\022\021\n\tis_finish\030\007 \001(\010\022\021\n\tmax_score" +
-      "\030\t \001(\r\022\n\n\002id\030\004 \001(\rB\033\n\031emu.grasscutter.ne" +
+      "evelInfo\022\n\n\002id\030\014 \001(\r\022\021\n\tis_finish\030\003 \001(\010\022" +
+      "\021\n\tmax_score\030\002 \001(\rB\033\n\031emu.grasscutter.ne" +
       "t.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -671,7 +671,7 @@ public final class BartenderLevelInfoOuterClass {
     internal_static_BartenderLevelInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_BartenderLevelInfo_descriptor,
-        new java.lang.String[] { "IsFinish", "MaxScore", "Id", });
+        new java.lang.String[] { "Id", "IsFinish", "MaxScore", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

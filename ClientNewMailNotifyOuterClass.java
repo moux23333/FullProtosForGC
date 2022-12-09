@@ -19,22 +19,26 @@ public final class ClientNewMailNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 not_read_num = 7;</code>
-     * @return The notReadNum.
+     * <code>uint32 Unk3300_FBDGCFAALFN = 13;</code>
+     * @return The unk3300FBDGCFAALFN.
      */
-    int getNotReadNum();
+    int getUnk3300FBDGCFAALFN();
 
     /**
-     * <code>uint32 not_got_attachment_num = 2;</code>
-     * @return The notGotAttachmentNum.
+     * <code>uint32 Unk3300_MANJMCPELLJ = 2;</code>
+     * @return The unk3300MANJMCPELLJ.
      */
-    int getNotGotAttachmentNum();
+    int getUnk3300MANJMCPELLJ();
   }
   /**
    * <pre>
-   * CmdId: 1499
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 1457;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code ClientNewMailNotify}
@@ -83,12 +87,12 @@ public final class ClientNewMailNotifyOuterClass {
               break;
             case 16: {
 
-              notGotAttachmentNum_ = input.readUInt32();
+              unk3300MANJMCPELLJ_ = input.readUInt32();
               break;
             }
-            case 56: {
+            case 104: {
 
-              notReadNum_ = input.readUInt32();
+              unk3300FBDGCFAALFN_ = input.readUInt32();
               break;
             }
             default: {
@@ -123,26 +127,26 @@ public final class ClientNewMailNotifyOuterClass {
               emu.grasscutter.net.proto.ClientNewMailNotifyOuterClass.ClientNewMailNotify.class, emu.grasscutter.net.proto.ClientNewMailNotifyOuterClass.ClientNewMailNotify.Builder.class);
     }
 
-    public static final int NOT_READ_NUM_FIELD_NUMBER = 7;
-    private int notReadNum_;
+    public static final int UNK3300_FBDGCFAALFN_FIELD_NUMBER = 13;
+    private int unk3300FBDGCFAALFN_;
     /**
-     * <code>uint32 not_read_num = 7;</code>
-     * @return The notReadNum.
+     * <code>uint32 Unk3300_FBDGCFAALFN = 13;</code>
+     * @return The unk3300FBDGCFAALFN.
      */
     @java.lang.Override
-    public int getNotReadNum() {
-      return notReadNum_;
+    public int getUnk3300FBDGCFAALFN() {
+      return unk3300FBDGCFAALFN_;
     }
 
-    public static final int NOT_GOT_ATTACHMENT_NUM_FIELD_NUMBER = 2;
-    private int notGotAttachmentNum_;
+    public static final int UNK3300_MANJMCPELLJ_FIELD_NUMBER = 2;
+    private int unk3300MANJMCPELLJ_;
     /**
-     * <code>uint32 not_got_attachment_num = 2;</code>
-     * @return The notGotAttachmentNum.
+     * <code>uint32 Unk3300_MANJMCPELLJ = 2;</code>
+     * @return The unk3300MANJMCPELLJ.
      */
     @java.lang.Override
-    public int getNotGotAttachmentNum() {
-      return notGotAttachmentNum_;
+    public int getUnk3300MANJMCPELLJ() {
+      return unk3300MANJMCPELLJ_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -159,11 +163,11 @@ public final class ClientNewMailNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (notGotAttachmentNum_ != 0) {
-        output.writeUInt32(2, notGotAttachmentNum_);
+      if (unk3300MANJMCPELLJ_ != 0) {
+        output.writeUInt32(2, unk3300MANJMCPELLJ_);
       }
-      if (notReadNum_ != 0) {
-        output.writeUInt32(7, notReadNum_);
+      if (unk3300FBDGCFAALFN_ != 0) {
+        output.writeUInt32(13, unk3300FBDGCFAALFN_);
       }
       unknownFields.writeTo(output);
     }
@@ -174,13 +178,13 @@ public final class ClientNewMailNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (notGotAttachmentNum_ != 0) {
+      if (unk3300MANJMCPELLJ_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, notGotAttachmentNum_);
+          .computeUInt32Size(2, unk3300MANJMCPELLJ_);
       }
-      if (notReadNum_ != 0) {
+      if (unk3300FBDGCFAALFN_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, notReadNum_);
+          .computeUInt32Size(13, unk3300FBDGCFAALFN_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -197,10 +201,10 @@ public final class ClientNewMailNotifyOuterClass {
       }
       emu.grasscutter.net.proto.ClientNewMailNotifyOuterClass.ClientNewMailNotify other = (emu.grasscutter.net.proto.ClientNewMailNotifyOuterClass.ClientNewMailNotify) obj;
 
-      if (getNotReadNum()
-          != other.getNotReadNum()) return false;
-      if (getNotGotAttachmentNum()
-          != other.getNotGotAttachmentNum()) return false;
+      if (getUnk3300FBDGCFAALFN()
+          != other.getUnk3300FBDGCFAALFN()) return false;
+      if (getUnk3300MANJMCPELLJ()
+          != other.getUnk3300MANJMCPELLJ()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -212,10 +216,10 @@ public final class ClientNewMailNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + NOT_READ_NUM_FIELD_NUMBER;
-      hash = (53 * hash) + getNotReadNum();
-      hash = (37 * hash) + NOT_GOT_ATTACHMENT_NUM_FIELD_NUMBER;
-      hash = (53 * hash) + getNotGotAttachmentNum();
+      hash = (37 * hash) + UNK3300_FBDGCFAALFN_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300FBDGCFAALFN();
+      hash = (37 * hash) + UNK3300_MANJMCPELLJ_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300MANJMCPELLJ();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -313,9 +317,13 @@ public final class ClientNewMailNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 1499
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 1457;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code ClientNewMailNotify}
@@ -355,9 +363,9 @@ public final class ClientNewMailNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        notReadNum_ = 0;
+        unk3300FBDGCFAALFN_ = 0;
 
-        notGotAttachmentNum_ = 0;
+        unk3300MANJMCPELLJ_ = 0;
 
         return this;
       }
@@ -385,8 +393,8 @@ public final class ClientNewMailNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.ClientNewMailNotifyOuterClass.ClientNewMailNotify buildPartial() {
         emu.grasscutter.net.proto.ClientNewMailNotifyOuterClass.ClientNewMailNotify result = new emu.grasscutter.net.proto.ClientNewMailNotifyOuterClass.ClientNewMailNotify(this);
-        result.notReadNum_ = notReadNum_;
-        result.notGotAttachmentNum_ = notGotAttachmentNum_;
+        result.unk3300FBDGCFAALFN_ = unk3300FBDGCFAALFN_;
+        result.unk3300MANJMCPELLJ_ = unk3300MANJMCPELLJ_;
         onBuilt();
         return result;
       }
@@ -435,11 +443,11 @@ public final class ClientNewMailNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.ClientNewMailNotifyOuterClass.ClientNewMailNotify other) {
         if (other == emu.grasscutter.net.proto.ClientNewMailNotifyOuterClass.ClientNewMailNotify.getDefaultInstance()) return this;
-        if (other.getNotReadNum() != 0) {
-          setNotReadNum(other.getNotReadNum());
+        if (other.getUnk3300FBDGCFAALFN() != 0) {
+          setUnk3300FBDGCFAALFN(other.getUnk3300FBDGCFAALFN());
         }
-        if (other.getNotGotAttachmentNum() != 0) {
-          setNotGotAttachmentNum(other.getNotGotAttachmentNum());
+        if (other.getUnk3300MANJMCPELLJ() != 0) {
+          setUnk3300MANJMCPELLJ(other.getUnk3300MANJMCPELLJ());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -470,64 +478,64 @@ public final class ClientNewMailNotifyOuterClass {
         return this;
       }
 
-      private int notReadNum_ ;
+      private int unk3300FBDGCFAALFN_ ;
       /**
-       * <code>uint32 not_read_num = 7;</code>
-       * @return The notReadNum.
+       * <code>uint32 Unk3300_FBDGCFAALFN = 13;</code>
+       * @return The unk3300FBDGCFAALFN.
        */
       @java.lang.Override
-      public int getNotReadNum() {
-        return notReadNum_;
+      public int getUnk3300FBDGCFAALFN() {
+        return unk3300FBDGCFAALFN_;
       }
       /**
-       * <code>uint32 not_read_num = 7;</code>
-       * @param value The notReadNum to set.
+       * <code>uint32 Unk3300_FBDGCFAALFN = 13;</code>
+       * @param value The unk3300FBDGCFAALFN to set.
        * @return This builder for chaining.
        */
-      public Builder setNotReadNum(int value) {
+      public Builder setUnk3300FBDGCFAALFN(int value) {
         
-        notReadNum_ = value;
+        unk3300FBDGCFAALFN_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 not_read_num = 7;</code>
+       * <code>uint32 Unk3300_FBDGCFAALFN = 13;</code>
        * @return This builder for chaining.
        */
-      public Builder clearNotReadNum() {
+      public Builder clearUnk3300FBDGCFAALFN() {
         
-        notReadNum_ = 0;
+        unk3300FBDGCFAALFN_ = 0;
         onChanged();
         return this;
       }
 
-      private int notGotAttachmentNum_ ;
+      private int unk3300MANJMCPELLJ_ ;
       /**
-       * <code>uint32 not_got_attachment_num = 2;</code>
-       * @return The notGotAttachmentNum.
+       * <code>uint32 Unk3300_MANJMCPELLJ = 2;</code>
+       * @return The unk3300MANJMCPELLJ.
        */
       @java.lang.Override
-      public int getNotGotAttachmentNum() {
-        return notGotAttachmentNum_;
+      public int getUnk3300MANJMCPELLJ() {
+        return unk3300MANJMCPELLJ_;
       }
       /**
-       * <code>uint32 not_got_attachment_num = 2;</code>
-       * @param value The notGotAttachmentNum to set.
+       * <code>uint32 Unk3300_MANJMCPELLJ = 2;</code>
+       * @param value The unk3300MANJMCPELLJ to set.
        * @return This builder for chaining.
        */
-      public Builder setNotGotAttachmentNum(int value) {
+      public Builder setUnk3300MANJMCPELLJ(int value) {
         
-        notGotAttachmentNum_ = value;
+        unk3300MANJMCPELLJ_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 not_got_attachment_num = 2;</code>
+       * <code>uint32 Unk3300_MANJMCPELLJ = 2;</code>
        * @return This builder for chaining.
        */
-      public Builder clearNotGotAttachmentNum() {
+      public Builder clearUnk3300MANJMCPELLJ() {
         
-        notGotAttachmentNum_ = 0;
+        unk3300MANJMCPELLJ_ = 0;
         onChanged();
         return this;
       }
@@ -598,10 +606,10 @@ public final class ClientNewMailNotifyOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\031ClientNewMailNotify.proto\"K\n\023ClientNew" +
-      "MailNotify\022\024\n\014not_read_num\030\007 \001(\r\022\036\n\026not_" +
-      "got_attachment_num\030\002 \001(\rB\033\n\031emu.grasscut" +
-      "ter.net.protob\006proto3"
+      "\n\031ClientNewMailNotify.proto\"O\n\023ClientNew" +
+      "MailNotify\022\033\n\023Unk3300_FBDGCFAALFN\030\r \001(\r\022" +
+      "\033\n\023Unk3300_MANJMCPELLJ\030\002 \001(\rB\033\n\031emu.gras" +
+      "scutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -612,7 +620,7 @@ public final class ClientNewMailNotifyOuterClass {
     internal_static_ClientNewMailNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ClientNewMailNotify_descriptor,
-        new java.lang.String[] { "NotReadNum", "NotGotAttachmentNum", });
+        new java.lang.String[] { "Unk3300FBDGCFAALFN", "Unk3300MANJMCPELLJ", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

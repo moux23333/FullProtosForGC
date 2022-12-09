@@ -19,25 +19,29 @@ public final class GCGTCTavernChallengeUpdateNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.GCGTCTavernChallengeData tavern_challenge = 5;</code>
+     * <code>.GCGTCTavernChallengeData tavern_challenge = 12;</code>
      * @return Whether the tavernChallenge field is set.
      */
     boolean hasTavernChallenge();
     /**
-     * <code>.GCGTCTavernChallengeData tavern_challenge = 5;</code>
+     * <code>.GCGTCTavernChallengeData tavern_challenge = 12;</code>
      * @return The tavernChallenge.
      */
     emu.grasscutter.net.proto.GCGTCTavernChallengeDataOuterClass.GCGTCTavernChallengeData getTavernChallenge();
     /**
-     * <code>.GCGTCTavernChallengeData tavern_challenge = 5;</code>
+     * <code>.GCGTCTavernChallengeData tavern_challenge = 12;</code>
      */
     emu.grasscutter.net.proto.GCGTCTavernChallengeDataOuterClass.GCGTCTavernChallengeDataOrBuilder getTavernChallengeOrBuilder();
   }
   /**
    * <pre>
-   * CmdId: 7184
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 7907;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code GCGTCTavernChallengeUpdateNotify}
@@ -84,7 +88,7 @@ public final class GCGTCTavernChallengeUpdateNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 42: {
+            case 98: {
               emu.grasscutter.net.proto.GCGTCTavernChallengeDataOuterClass.GCGTCTavernChallengeData.Builder subBuilder = null;
               if (tavernChallenge_ != null) {
                 subBuilder = tavernChallenge_.toBuilder();
@@ -129,10 +133,10 @@ public final class GCGTCTavernChallengeUpdateNotifyOuterClass {
               emu.grasscutter.net.proto.GCGTCTavernChallengeUpdateNotifyOuterClass.GCGTCTavernChallengeUpdateNotify.class, emu.grasscutter.net.proto.GCGTCTavernChallengeUpdateNotifyOuterClass.GCGTCTavernChallengeUpdateNotify.Builder.class);
     }
 
-    public static final int TAVERN_CHALLENGE_FIELD_NUMBER = 5;
+    public static final int TAVERN_CHALLENGE_FIELD_NUMBER = 12;
     private emu.grasscutter.net.proto.GCGTCTavernChallengeDataOuterClass.GCGTCTavernChallengeData tavernChallenge_;
     /**
-     * <code>.GCGTCTavernChallengeData tavern_challenge = 5;</code>
+     * <code>.GCGTCTavernChallengeData tavern_challenge = 12;</code>
      * @return Whether the tavernChallenge field is set.
      */
     @java.lang.Override
@@ -140,7 +144,7 @@ public final class GCGTCTavernChallengeUpdateNotifyOuterClass {
       return tavernChallenge_ != null;
     }
     /**
-     * <code>.GCGTCTavernChallengeData tavern_challenge = 5;</code>
+     * <code>.GCGTCTavernChallengeData tavern_challenge = 12;</code>
      * @return The tavernChallenge.
      */
     @java.lang.Override
@@ -148,7 +152,7 @@ public final class GCGTCTavernChallengeUpdateNotifyOuterClass {
       return tavernChallenge_ == null ? emu.grasscutter.net.proto.GCGTCTavernChallengeDataOuterClass.GCGTCTavernChallengeData.getDefaultInstance() : tavernChallenge_;
     }
     /**
-     * <code>.GCGTCTavernChallengeData tavern_challenge = 5;</code>
+     * <code>.GCGTCTavernChallengeData tavern_challenge = 12;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.GCGTCTavernChallengeDataOuterClass.GCGTCTavernChallengeDataOrBuilder getTavernChallengeOrBuilder() {
@@ -170,7 +174,7 @@ public final class GCGTCTavernChallengeUpdateNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (tavernChallenge_ != null) {
-        output.writeMessage(5, getTavernChallenge());
+        output.writeMessage(12, getTavernChallenge());
       }
       unknownFields.writeTo(output);
     }
@@ -183,7 +187,7 @@ public final class GCGTCTavernChallengeUpdateNotifyOuterClass {
       size = 0;
       if (tavernChallenge_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(5, getTavernChallenge());
+          .computeMessageSize(12, getTavernChallenge());
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -317,9 +321,13 @@ public final class GCGTCTavernChallengeUpdateNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 7184
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 7907;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code GCGTCTavernChallengeUpdateNotify}
@@ -480,14 +488,14 @@ public final class GCGTCTavernChallengeUpdateNotifyOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.GCGTCTavernChallengeDataOuterClass.GCGTCTavernChallengeData, emu.grasscutter.net.proto.GCGTCTavernChallengeDataOuterClass.GCGTCTavernChallengeData.Builder, emu.grasscutter.net.proto.GCGTCTavernChallengeDataOuterClass.GCGTCTavernChallengeDataOrBuilder> tavernChallengeBuilder_;
       /**
-       * <code>.GCGTCTavernChallengeData tavern_challenge = 5;</code>
+       * <code>.GCGTCTavernChallengeData tavern_challenge = 12;</code>
        * @return Whether the tavernChallenge field is set.
        */
       public boolean hasTavernChallenge() {
         return tavernChallengeBuilder_ != null || tavernChallenge_ != null;
       }
       /**
-       * <code>.GCGTCTavernChallengeData tavern_challenge = 5;</code>
+       * <code>.GCGTCTavernChallengeData tavern_challenge = 12;</code>
        * @return The tavernChallenge.
        */
       public emu.grasscutter.net.proto.GCGTCTavernChallengeDataOuterClass.GCGTCTavernChallengeData getTavernChallenge() {
@@ -498,7 +506,7 @@ public final class GCGTCTavernChallengeUpdateNotifyOuterClass {
         }
       }
       /**
-       * <code>.GCGTCTavernChallengeData tavern_challenge = 5;</code>
+       * <code>.GCGTCTavernChallengeData tavern_challenge = 12;</code>
        */
       public Builder setTavernChallenge(emu.grasscutter.net.proto.GCGTCTavernChallengeDataOuterClass.GCGTCTavernChallengeData value) {
         if (tavernChallengeBuilder_ == null) {
@@ -514,7 +522,7 @@ public final class GCGTCTavernChallengeUpdateNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.GCGTCTavernChallengeData tavern_challenge = 5;</code>
+       * <code>.GCGTCTavernChallengeData tavern_challenge = 12;</code>
        */
       public Builder setTavernChallenge(
           emu.grasscutter.net.proto.GCGTCTavernChallengeDataOuterClass.GCGTCTavernChallengeData.Builder builderForValue) {
@@ -528,7 +536,7 @@ public final class GCGTCTavernChallengeUpdateNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.GCGTCTavernChallengeData tavern_challenge = 5;</code>
+       * <code>.GCGTCTavernChallengeData tavern_challenge = 12;</code>
        */
       public Builder mergeTavernChallenge(emu.grasscutter.net.proto.GCGTCTavernChallengeDataOuterClass.GCGTCTavernChallengeData value) {
         if (tavernChallengeBuilder_ == null) {
@@ -546,7 +554,7 @@ public final class GCGTCTavernChallengeUpdateNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.GCGTCTavernChallengeData tavern_challenge = 5;</code>
+       * <code>.GCGTCTavernChallengeData tavern_challenge = 12;</code>
        */
       public Builder clearTavernChallenge() {
         if (tavernChallengeBuilder_ == null) {
@@ -560,7 +568,7 @@ public final class GCGTCTavernChallengeUpdateNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.GCGTCTavernChallengeData tavern_challenge = 5;</code>
+       * <code>.GCGTCTavernChallengeData tavern_challenge = 12;</code>
        */
       public emu.grasscutter.net.proto.GCGTCTavernChallengeDataOuterClass.GCGTCTavernChallengeData.Builder getTavernChallengeBuilder() {
         
@@ -568,7 +576,7 @@ public final class GCGTCTavernChallengeUpdateNotifyOuterClass {
         return getTavernChallengeFieldBuilder().getBuilder();
       }
       /**
-       * <code>.GCGTCTavernChallengeData tavern_challenge = 5;</code>
+       * <code>.GCGTCTavernChallengeData tavern_challenge = 12;</code>
        */
       public emu.grasscutter.net.proto.GCGTCTavernChallengeDataOuterClass.GCGTCTavernChallengeDataOrBuilder getTavernChallengeOrBuilder() {
         if (tavernChallengeBuilder_ != null) {
@@ -579,7 +587,7 @@ public final class GCGTCTavernChallengeUpdateNotifyOuterClass {
         }
       }
       /**
-       * <code>.GCGTCTavernChallengeData tavern_challenge = 5;</code>
+       * <code>.GCGTCTavernChallengeData tavern_challenge = 12;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.GCGTCTavernChallengeDataOuterClass.GCGTCTavernChallengeData, emu.grasscutter.net.proto.GCGTCTavernChallengeDataOuterClass.GCGTCTavernChallengeData.Builder, emu.grasscutter.net.proto.GCGTCTavernChallengeDataOuterClass.GCGTCTavernChallengeDataOrBuilder> 
@@ -664,7 +672,7 @@ public final class GCGTCTavernChallengeUpdateNotifyOuterClass {
       "\n&GCGTCTavernChallengeUpdateNotify.proto" +
       "\032\036GCGTCTavernChallengeData.proto\"W\n GCGT" +
       "CTavernChallengeUpdateNotify\0223\n\020tavern_c" +
-      "hallenge\030\005 \001(\0132\031.GCGTCTavernChallengeDat" +
+      "hallenge\030\014 \001(\0132\031.GCGTCTavernChallengeDat" +
       "aB\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

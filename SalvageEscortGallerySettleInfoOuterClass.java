@@ -19,18 +19,18 @@ public final class SalvageEscortGallerySettleInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 time_remain = 14;</code>
+     * <code>uint32 time_remain = 15;</code>
      * @return The timeRemain.
      */
     int getTimeRemain();
 
     /**
-     * <code>.SalvageEscortStopReason reason = 7;</code>
+     * <code>.SalvageEscortStopReason reason = 11;</code>
      * @return The enum numeric value on the wire for reason.
      */
     int getReasonValue();
     /**
-     * <code>.SalvageEscortStopReason reason = 7;</code>
+     * <code>.SalvageEscortStopReason reason = 11;</code>
      * @return The reason.
      */
     emu.grasscutter.net.proto.SalvageEscortStopReasonOuterClass.SalvageEscortStopReason getReason();
@@ -81,13 +81,13 @@ public final class SalvageEscortGallerySettleInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 56: {
+            case 88: {
               int rawValue = input.readEnum();
 
               reason_ = rawValue;
               break;
             }
-            case 112: {
+            case 120: {
 
               timeRemain_ = input.readUInt32();
               break;
@@ -124,10 +124,10 @@ public final class SalvageEscortGallerySettleInfoOuterClass {
               emu.grasscutter.net.proto.SalvageEscortGallerySettleInfoOuterClass.SalvageEscortGallerySettleInfo.class, emu.grasscutter.net.proto.SalvageEscortGallerySettleInfoOuterClass.SalvageEscortGallerySettleInfo.Builder.class);
     }
 
-    public static final int TIME_REMAIN_FIELD_NUMBER = 14;
+    public static final int TIME_REMAIN_FIELD_NUMBER = 15;
     private int timeRemain_;
     /**
-     * <code>uint32 time_remain = 14;</code>
+     * <code>uint32 time_remain = 15;</code>
      * @return The timeRemain.
      */
     @java.lang.Override
@@ -135,17 +135,17 @@ public final class SalvageEscortGallerySettleInfoOuterClass {
       return timeRemain_;
     }
 
-    public static final int REASON_FIELD_NUMBER = 7;
+    public static final int REASON_FIELD_NUMBER = 11;
     private int reason_;
     /**
-     * <code>.SalvageEscortStopReason reason = 7;</code>
+     * <code>.SalvageEscortStopReason reason = 11;</code>
      * @return The enum numeric value on the wire for reason.
      */
     @java.lang.Override public int getReasonValue() {
       return reason_;
     }
     /**
-     * <code>.SalvageEscortStopReason reason = 7;</code>
+     * <code>.SalvageEscortStopReason reason = 11;</code>
      * @return The reason.
      */
     @java.lang.Override public emu.grasscutter.net.proto.SalvageEscortStopReasonOuterClass.SalvageEscortStopReason getReason() {
@@ -169,10 +169,10 @@ public final class SalvageEscortGallerySettleInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (reason_ != emu.grasscutter.net.proto.SalvageEscortStopReasonOuterClass.SalvageEscortStopReason.SALVAGE_ESCORT_STOP_REASON_NONE.getNumber()) {
-        output.writeEnum(7, reason_);
+        output.writeEnum(11, reason_);
       }
       if (timeRemain_ != 0) {
-        output.writeUInt32(14, timeRemain_);
+        output.writeUInt32(15, timeRemain_);
       }
       unknownFields.writeTo(output);
     }
@@ -185,11 +185,11 @@ public final class SalvageEscortGallerySettleInfoOuterClass {
       size = 0;
       if (reason_ != emu.grasscutter.net.proto.SalvageEscortStopReasonOuterClass.SalvageEscortStopReason.SALVAGE_ESCORT_STOP_REASON_NONE.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(7, reason_);
+          .computeEnumSize(11, reason_);
       }
       if (timeRemain_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, timeRemain_);
+          .computeUInt32Size(15, timeRemain_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -474,7 +474,7 @@ public final class SalvageEscortGallerySettleInfoOuterClass {
 
       private int timeRemain_ ;
       /**
-       * <code>uint32 time_remain = 14;</code>
+       * <code>uint32 time_remain = 15;</code>
        * @return The timeRemain.
        */
       @java.lang.Override
@@ -482,7 +482,7 @@ public final class SalvageEscortGallerySettleInfoOuterClass {
         return timeRemain_;
       }
       /**
-       * <code>uint32 time_remain = 14;</code>
+       * <code>uint32 time_remain = 15;</code>
        * @param value The timeRemain to set.
        * @return This builder for chaining.
        */
@@ -493,7 +493,7 @@ public final class SalvageEscortGallerySettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 time_remain = 14;</code>
+       * <code>uint32 time_remain = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearTimeRemain() {
@@ -505,14 +505,14 @@ public final class SalvageEscortGallerySettleInfoOuterClass {
 
       private int reason_ = 0;
       /**
-       * <code>.SalvageEscortStopReason reason = 7;</code>
+       * <code>.SalvageEscortStopReason reason = 11;</code>
        * @return The enum numeric value on the wire for reason.
        */
       @java.lang.Override public int getReasonValue() {
         return reason_;
       }
       /**
-       * <code>.SalvageEscortStopReason reason = 7;</code>
+       * <code>.SalvageEscortStopReason reason = 11;</code>
        * @param value The enum numeric value on the wire for reason to set.
        * @return This builder for chaining.
        */
@@ -523,7 +523,7 @@ public final class SalvageEscortGallerySettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>.SalvageEscortStopReason reason = 7;</code>
+       * <code>.SalvageEscortStopReason reason = 11;</code>
        * @return The reason.
        */
       @java.lang.Override
@@ -533,7 +533,7 @@ public final class SalvageEscortGallerySettleInfoOuterClass {
         return result == null ? emu.grasscutter.net.proto.SalvageEscortStopReasonOuterClass.SalvageEscortStopReason.UNRECOGNIZED : result;
       }
       /**
-       * <code>.SalvageEscortStopReason reason = 7;</code>
+       * <code>.SalvageEscortStopReason reason = 11;</code>
        * @param value The reason to set.
        * @return This builder for chaining.
        */
@@ -547,7 +547,7 @@ public final class SalvageEscortGallerySettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>.SalvageEscortStopReason reason = 7;</code>
+       * <code>.SalvageEscortStopReason reason = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearReason() {
@@ -625,8 +625,8 @@ public final class SalvageEscortGallerySettleInfoOuterClass {
     java.lang.String[] descriptorData = {
       "\n$SalvageEscortGallerySettleInfo.proto\032\035" +
       "SalvageEscortStopReason.proto\"_\n\036Salvage" +
-      "EscortGallerySettleInfo\022\023\n\013time_remain\030\016" +
-      " \001(\r\022(\n\006reason\030\007 \001(\0162\030.SalvageEscortStop" +
+      "EscortGallerySettleInfo\022\023\n\013time_remain\030\017" +
+      " \001(\r\022(\n\006reason\030\013 \001(\0162\030.SalvageEscortStop" +
       "ReasonB\033\n\031emu.grasscutter.net.protob\006pro" +
       "to3"
     };

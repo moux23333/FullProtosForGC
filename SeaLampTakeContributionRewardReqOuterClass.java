@@ -19,23 +19,27 @@ public final class SeaLampTakeContributionRewardReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 activity_id = 4;</code>
-     * @return The activityId.
-     */
-    int getActivityId();
-
-    /**
-     * <code>uint32 config_id = 10;</code>
+     * <code>uint32 config_id = 15;</code>
      * @return The configId.
      */
     int getConfigId();
+
+    /**
+     * <code>uint32 activity_id = 14;</code>
+     * @return The activityId.
+     */
+    int getActivityId();
   }
   /**
    * <pre>
-   * CmdId: 2019
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 2199;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code SeaLampTakeContributionRewardReq}
@@ -82,12 +86,12 @@ public final class SeaLampTakeContributionRewardReqOuterClass {
             case 0:
               done = true;
               break;
-            case 32: {
+            case 112: {
 
               activityId_ = input.readUInt32();
               break;
             }
-            case 80: {
+            case 120: {
 
               configId_ = input.readUInt32();
               break;
@@ -124,26 +128,26 @@ public final class SeaLampTakeContributionRewardReqOuterClass {
               emu.grasscutter.net.proto.SeaLampTakeContributionRewardReqOuterClass.SeaLampTakeContributionRewardReq.class, emu.grasscutter.net.proto.SeaLampTakeContributionRewardReqOuterClass.SeaLampTakeContributionRewardReq.Builder.class);
     }
 
-    public static final int ACTIVITY_ID_FIELD_NUMBER = 4;
-    private int activityId_;
-    /**
-     * <code>uint32 activity_id = 4;</code>
-     * @return The activityId.
-     */
-    @java.lang.Override
-    public int getActivityId() {
-      return activityId_;
-    }
-
-    public static final int CONFIG_ID_FIELD_NUMBER = 10;
+    public static final int CONFIG_ID_FIELD_NUMBER = 15;
     private int configId_;
     /**
-     * <code>uint32 config_id = 10;</code>
+     * <code>uint32 config_id = 15;</code>
      * @return The configId.
      */
     @java.lang.Override
     public int getConfigId() {
       return configId_;
+    }
+
+    public static final int ACTIVITY_ID_FIELD_NUMBER = 14;
+    private int activityId_;
+    /**
+     * <code>uint32 activity_id = 14;</code>
+     * @return The activityId.
+     */
+    @java.lang.Override
+    public int getActivityId() {
+      return activityId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -161,10 +165,10 @@ public final class SeaLampTakeContributionRewardReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (activityId_ != 0) {
-        output.writeUInt32(4, activityId_);
+        output.writeUInt32(14, activityId_);
       }
       if (configId_ != 0) {
-        output.writeUInt32(10, configId_);
+        output.writeUInt32(15, configId_);
       }
       unknownFields.writeTo(output);
     }
@@ -177,11 +181,11 @@ public final class SeaLampTakeContributionRewardReqOuterClass {
       size = 0;
       if (activityId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, activityId_);
+          .computeUInt32Size(14, activityId_);
       }
       if (configId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, configId_);
+          .computeUInt32Size(15, configId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -198,10 +202,10 @@ public final class SeaLampTakeContributionRewardReqOuterClass {
       }
       emu.grasscutter.net.proto.SeaLampTakeContributionRewardReqOuterClass.SeaLampTakeContributionRewardReq other = (emu.grasscutter.net.proto.SeaLampTakeContributionRewardReqOuterClass.SeaLampTakeContributionRewardReq) obj;
 
-      if (getActivityId()
-          != other.getActivityId()) return false;
       if (getConfigId()
           != other.getConfigId()) return false;
+      if (getActivityId()
+          != other.getActivityId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -213,10 +217,10 @@ public final class SeaLampTakeContributionRewardReqOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + ACTIVITY_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getActivityId();
       hash = (37 * hash) + CONFIG_ID_FIELD_NUMBER;
       hash = (53 * hash) + getConfigId();
+      hash = (37 * hash) + ACTIVITY_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getActivityId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -314,10 +318,14 @@ public final class SeaLampTakeContributionRewardReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 2019
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 2199;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code SeaLampTakeContributionRewardReq}
@@ -357,9 +365,9 @@ public final class SeaLampTakeContributionRewardReqOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        activityId_ = 0;
-
         configId_ = 0;
+
+        activityId_ = 0;
 
         return this;
       }
@@ -387,8 +395,8 @@ public final class SeaLampTakeContributionRewardReqOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.SeaLampTakeContributionRewardReqOuterClass.SeaLampTakeContributionRewardReq buildPartial() {
         emu.grasscutter.net.proto.SeaLampTakeContributionRewardReqOuterClass.SeaLampTakeContributionRewardReq result = new emu.grasscutter.net.proto.SeaLampTakeContributionRewardReqOuterClass.SeaLampTakeContributionRewardReq(this);
-        result.activityId_ = activityId_;
         result.configId_ = configId_;
+        result.activityId_ = activityId_;
         onBuilt();
         return result;
       }
@@ -437,11 +445,11 @@ public final class SeaLampTakeContributionRewardReqOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.SeaLampTakeContributionRewardReqOuterClass.SeaLampTakeContributionRewardReq other) {
         if (other == emu.grasscutter.net.proto.SeaLampTakeContributionRewardReqOuterClass.SeaLampTakeContributionRewardReq.getDefaultInstance()) return this;
-        if (other.getActivityId() != 0) {
-          setActivityId(other.getActivityId());
-        }
         if (other.getConfigId() != 0) {
           setConfigId(other.getConfigId());
+        }
+        if (other.getActivityId() != 0) {
+          setActivityId(other.getActivityId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -472,40 +480,9 @@ public final class SeaLampTakeContributionRewardReqOuterClass {
         return this;
       }
 
-      private int activityId_ ;
-      /**
-       * <code>uint32 activity_id = 4;</code>
-       * @return The activityId.
-       */
-      @java.lang.Override
-      public int getActivityId() {
-        return activityId_;
-      }
-      /**
-       * <code>uint32 activity_id = 4;</code>
-       * @param value The activityId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setActivityId(int value) {
-        
-        activityId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 activity_id = 4;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearActivityId() {
-        
-        activityId_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int configId_ ;
       /**
-       * <code>uint32 config_id = 10;</code>
+       * <code>uint32 config_id = 15;</code>
        * @return The configId.
        */
       @java.lang.Override
@@ -513,7 +490,7 @@ public final class SeaLampTakeContributionRewardReqOuterClass {
         return configId_;
       }
       /**
-       * <code>uint32 config_id = 10;</code>
+       * <code>uint32 config_id = 15;</code>
        * @param value The configId to set.
        * @return This builder for chaining.
        */
@@ -524,12 +501,43 @@ public final class SeaLampTakeContributionRewardReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 config_id = 10;</code>
+       * <code>uint32 config_id = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearConfigId() {
         
         configId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int activityId_ ;
+      /**
+       * <code>uint32 activity_id = 14;</code>
+       * @return The activityId.
+       */
+      @java.lang.Override
+      public int getActivityId() {
+        return activityId_;
+      }
+      /**
+       * <code>uint32 activity_id = 14;</code>
+       * @param value The activityId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setActivityId(int value) {
+        
+        activityId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 activity_id = 14;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearActivityId() {
+        
+        activityId_ = 0;
         onChanged();
         return this;
       }
@@ -601,8 +609,8 @@ public final class SeaLampTakeContributionRewardReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n&SeaLampTakeContributionRewardReq.proto" +
-      "\"J\n SeaLampTakeContributionRewardReq\022\023\n\013" +
-      "activity_id\030\004 \001(\r\022\021\n\tconfig_id\030\n \001(\rB\033\n\031" +
+      "\"J\n SeaLampTakeContributionRewardReq\022\021\n\t" +
+      "config_id\030\017 \001(\r\022\023\n\013activity_id\030\016 \001(\rB\033\n\031" +
       "emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -614,7 +622,7 @@ public final class SeaLampTakeContributionRewardReqOuterClass {
     internal_static_SeaLampTakeContributionRewardReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SeaLampTakeContributionRewardReq_descriptor,
-        new java.lang.String[] { "ActivityId", "ConfigId", });
+        new java.lang.String[] { "ConfigId", "ActivityId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

@@ -19,23 +19,27 @@ public final class SalesmanTakeRewardReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 position = 8;</code>
+     * <code>uint32 position = 15;</code>
      * @return The position.
      */
     int getPosition();
 
     /**
-     * <code>uint32 schedule_id = 7;</code>
+     * <code>uint32 schedule_id = 14;</code>
      * @return The scheduleId.
      */
     int getScheduleId();
   }
   /**
    * <pre>
-   * CmdId: 2191
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 2069;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code SalesmanTakeRewardReq}
@@ -82,12 +86,12 @@ public final class SalesmanTakeRewardReqOuterClass {
             case 0:
               done = true;
               break;
-            case 56: {
+            case 112: {
 
               scheduleId_ = input.readUInt32();
               break;
             }
-            case 64: {
+            case 120: {
 
               position_ = input.readUInt32();
               break;
@@ -124,10 +128,10 @@ public final class SalesmanTakeRewardReqOuterClass {
               emu.grasscutter.net.proto.SalesmanTakeRewardReqOuterClass.SalesmanTakeRewardReq.class, emu.grasscutter.net.proto.SalesmanTakeRewardReqOuterClass.SalesmanTakeRewardReq.Builder.class);
     }
 
-    public static final int POSITION_FIELD_NUMBER = 8;
+    public static final int POSITION_FIELD_NUMBER = 15;
     private int position_;
     /**
-     * <code>uint32 position = 8;</code>
+     * <code>uint32 position = 15;</code>
      * @return The position.
      */
     @java.lang.Override
@@ -135,10 +139,10 @@ public final class SalesmanTakeRewardReqOuterClass {
       return position_;
     }
 
-    public static final int SCHEDULE_ID_FIELD_NUMBER = 7;
+    public static final int SCHEDULE_ID_FIELD_NUMBER = 14;
     private int scheduleId_;
     /**
-     * <code>uint32 schedule_id = 7;</code>
+     * <code>uint32 schedule_id = 14;</code>
      * @return The scheduleId.
      */
     @java.lang.Override
@@ -161,10 +165,10 @@ public final class SalesmanTakeRewardReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (scheduleId_ != 0) {
-        output.writeUInt32(7, scheduleId_);
+        output.writeUInt32(14, scheduleId_);
       }
       if (position_ != 0) {
-        output.writeUInt32(8, position_);
+        output.writeUInt32(15, position_);
       }
       unknownFields.writeTo(output);
     }
@@ -177,11 +181,11 @@ public final class SalesmanTakeRewardReqOuterClass {
       size = 0;
       if (scheduleId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, scheduleId_);
+          .computeUInt32Size(14, scheduleId_);
       }
       if (position_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, position_);
+          .computeUInt32Size(15, position_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -314,10 +318,14 @@ public final class SalesmanTakeRewardReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 2191
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 2069;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code SalesmanTakeRewardReq}
@@ -474,7 +482,7 @@ public final class SalesmanTakeRewardReqOuterClass {
 
       private int position_ ;
       /**
-       * <code>uint32 position = 8;</code>
+       * <code>uint32 position = 15;</code>
        * @return The position.
        */
       @java.lang.Override
@@ -482,7 +490,7 @@ public final class SalesmanTakeRewardReqOuterClass {
         return position_;
       }
       /**
-       * <code>uint32 position = 8;</code>
+       * <code>uint32 position = 15;</code>
        * @param value The position to set.
        * @return This builder for chaining.
        */
@@ -493,7 +501,7 @@ public final class SalesmanTakeRewardReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 position = 8;</code>
+       * <code>uint32 position = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearPosition() {
@@ -505,7 +513,7 @@ public final class SalesmanTakeRewardReqOuterClass {
 
       private int scheduleId_ ;
       /**
-       * <code>uint32 schedule_id = 7;</code>
+       * <code>uint32 schedule_id = 14;</code>
        * @return The scheduleId.
        */
       @java.lang.Override
@@ -513,7 +521,7 @@ public final class SalesmanTakeRewardReqOuterClass {
         return scheduleId_;
       }
       /**
-       * <code>uint32 schedule_id = 7;</code>
+       * <code>uint32 schedule_id = 14;</code>
        * @param value The scheduleId to set.
        * @return This builder for chaining.
        */
@@ -524,7 +532,7 @@ public final class SalesmanTakeRewardReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 schedule_id = 7;</code>
+       * <code>uint32 schedule_id = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearScheduleId() {
@@ -601,8 +609,8 @@ public final class SalesmanTakeRewardReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\033SalesmanTakeRewardReq.proto\">\n\025Salesma" +
-      "nTakeRewardReq\022\020\n\010position\030\010 \001(\r\022\023\n\013sche" +
-      "dule_id\030\007 \001(\rB\033\n\031emu.grasscutter.net.pro" +
+      "nTakeRewardReq\022\020\n\010position\030\017 \001(\r\022\023\n\013sche" +
+      "dule_id\030\016 \001(\rB\033\n\031emu.grasscutter.net.pro" +
       "tob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

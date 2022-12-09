@@ -19,22 +19,26 @@ public final class MpPlayGuestReplyInviteRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 4;</code>
-     * @return The retcode.
-     */
-    int getRetcode();
-
-    /**
-     * <code>uint32 mp_play_id = 10;</code>
+     * <code>uint32 mp_play_id = 7;</code>
      * @return The mpPlayId.
      */
     int getMpPlayId();
+
+    /**
+     * <code>int32 retcode = 2;</code>
+     * @return The retcode.
+     */
+    int getRetcode();
   }
   /**
    * <pre>
-   * CmdId: 1850
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 1804;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code MpPlayGuestReplyInviteRsp}
@@ -81,12 +85,12 @@ public final class MpPlayGuestReplyInviteRspOuterClass {
             case 0:
               done = true;
               break;
-            case 32: {
+            case 16: {
 
               retcode_ = input.readInt32();
               break;
             }
-            case 80: {
+            case 56: {
 
               mpPlayId_ = input.readUInt32();
               break;
@@ -123,26 +127,26 @@ public final class MpPlayGuestReplyInviteRspOuterClass {
               emu.grasscutter.net.proto.MpPlayGuestReplyInviteRspOuterClass.MpPlayGuestReplyInviteRsp.class, emu.grasscutter.net.proto.MpPlayGuestReplyInviteRspOuterClass.MpPlayGuestReplyInviteRsp.Builder.class);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 4;
-    private int retcode_;
-    /**
-     * <code>int32 retcode = 4;</code>
-     * @return The retcode.
-     */
-    @java.lang.Override
-    public int getRetcode() {
-      return retcode_;
-    }
-
-    public static final int MP_PLAY_ID_FIELD_NUMBER = 10;
+    public static final int MP_PLAY_ID_FIELD_NUMBER = 7;
     private int mpPlayId_;
     /**
-     * <code>uint32 mp_play_id = 10;</code>
+     * <code>uint32 mp_play_id = 7;</code>
      * @return The mpPlayId.
      */
     @java.lang.Override
     public int getMpPlayId() {
       return mpPlayId_;
+    }
+
+    public static final int RETCODE_FIELD_NUMBER = 2;
+    private int retcode_;
+    /**
+     * <code>int32 retcode = 2;</code>
+     * @return The retcode.
+     */
+    @java.lang.Override
+    public int getRetcode() {
+      return retcode_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -160,10 +164,10 @@ public final class MpPlayGuestReplyInviteRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (retcode_ != 0) {
-        output.writeInt32(4, retcode_);
+        output.writeInt32(2, retcode_);
       }
       if (mpPlayId_ != 0) {
-        output.writeUInt32(10, mpPlayId_);
+        output.writeUInt32(7, mpPlayId_);
       }
       unknownFields.writeTo(output);
     }
@@ -176,11 +180,11 @@ public final class MpPlayGuestReplyInviteRspOuterClass {
       size = 0;
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(4, retcode_);
+          .computeInt32Size(2, retcode_);
       }
       if (mpPlayId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, mpPlayId_);
+          .computeUInt32Size(7, mpPlayId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -197,10 +201,10 @@ public final class MpPlayGuestReplyInviteRspOuterClass {
       }
       emu.grasscutter.net.proto.MpPlayGuestReplyInviteRspOuterClass.MpPlayGuestReplyInviteRsp other = (emu.grasscutter.net.proto.MpPlayGuestReplyInviteRspOuterClass.MpPlayGuestReplyInviteRsp) obj;
 
-      if (getRetcode()
-          != other.getRetcode()) return false;
       if (getMpPlayId()
           != other.getMpPlayId()) return false;
+      if (getRetcode()
+          != other.getRetcode()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -212,10 +216,10 @@ public final class MpPlayGuestReplyInviteRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
-      hash = (53 * hash) + getRetcode();
       hash = (37 * hash) + MP_PLAY_ID_FIELD_NUMBER;
       hash = (53 * hash) + getMpPlayId();
+      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
+      hash = (53 * hash) + getRetcode();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -313,9 +317,13 @@ public final class MpPlayGuestReplyInviteRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 1850
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 1804;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code MpPlayGuestReplyInviteRsp}
@@ -355,9 +363,9 @@ public final class MpPlayGuestReplyInviteRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        retcode_ = 0;
-
         mpPlayId_ = 0;
+
+        retcode_ = 0;
 
         return this;
       }
@@ -385,8 +393,8 @@ public final class MpPlayGuestReplyInviteRspOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.MpPlayGuestReplyInviteRspOuterClass.MpPlayGuestReplyInviteRsp buildPartial() {
         emu.grasscutter.net.proto.MpPlayGuestReplyInviteRspOuterClass.MpPlayGuestReplyInviteRsp result = new emu.grasscutter.net.proto.MpPlayGuestReplyInviteRspOuterClass.MpPlayGuestReplyInviteRsp(this);
-        result.retcode_ = retcode_;
         result.mpPlayId_ = mpPlayId_;
+        result.retcode_ = retcode_;
         onBuilt();
         return result;
       }
@@ -435,11 +443,11 @@ public final class MpPlayGuestReplyInviteRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.MpPlayGuestReplyInviteRspOuterClass.MpPlayGuestReplyInviteRsp other) {
         if (other == emu.grasscutter.net.proto.MpPlayGuestReplyInviteRspOuterClass.MpPlayGuestReplyInviteRsp.getDefaultInstance()) return this;
-        if (other.getRetcode() != 0) {
-          setRetcode(other.getRetcode());
-        }
         if (other.getMpPlayId() != 0) {
           setMpPlayId(other.getMpPlayId());
+        }
+        if (other.getRetcode() != 0) {
+          setRetcode(other.getRetcode());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -470,40 +478,9 @@ public final class MpPlayGuestReplyInviteRspOuterClass {
         return this;
       }
 
-      private int retcode_ ;
-      /**
-       * <code>int32 retcode = 4;</code>
-       * @return The retcode.
-       */
-      @java.lang.Override
-      public int getRetcode() {
-        return retcode_;
-      }
-      /**
-       * <code>int32 retcode = 4;</code>
-       * @param value The retcode to set.
-       * @return This builder for chaining.
-       */
-      public Builder setRetcode(int value) {
-        
-        retcode_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>int32 retcode = 4;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearRetcode() {
-        
-        retcode_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int mpPlayId_ ;
       /**
-       * <code>uint32 mp_play_id = 10;</code>
+       * <code>uint32 mp_play_id = 7;</code>
        * @return The mpPlayId.
        */
       @java.lang.Override
@@ -511,7 +488,7 @@ public final class MpPlayGuestReplyInviteRspOuterClass {
         return mpPlayId_;
       }
       /**
-       * <code>uint32 mp_play_id = 10;</code>
+       * <code>uint32 mp_play_id = 7;</code>
        * @param value The mpPlayId to set.
        * @return This builder for chaining.
        */
@@ -522,12 +499,43 @@ public final class MpPlayGuestReplyInviteRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 mp_play_id = 10;</code>
+       * <code>uint32 mp_play_id = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearMpPlayId() {
         
         mpPlayId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int retcode_ ;
+      /**
+       * <code>int32 retcode = 2;</code>
+       * @return The retcode.
+       */
+      @java.lang.Override
+      public int getRetcode() {
+        return retcode_;
+      }
+      /**
+       * <code>int32 retcode = 2;</code>
+       * @param value The retcode to set.
+       * @return This builder for chaining.
+       */
+      public Builder setRetcode(int value) {
+        
+        retcode_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 retcode = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearRetcode() {
+        
+        retcode_ = 0;
         onChanged();
         return this;
       }
@@ -599,8 +607,8 @@ public final class MpPlayGuestReplyInviteRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\037MpPlayGuestReplyInviteRsp.proto\"@\n\031MpP" +
-      "layGuestReplyInviteRsp\022\017\n\007retcode\030\004 \001(\005\022" +
-      "\022\n\nmp_play_id\030\n \001(\rB\033\n\031emu.grasscutter.n" +
+      "layGuestReplyInviteRsp\022\022\n\nmp_play_id\030\007 \001" +
+      "(\r\022\017\n\007retcode\030\002 \001(\005B\033\n\031emu.grasscutter.n" +
       "et.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -612,7 +620,7 @@ public final class MpPlayGuestReplyInviteRspOuterClass {
     internal_static_MpPlayGuestReplyInviteRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_MpPlayGuestReplyInviteRsp_descriptor,
-        new java.lang.String[] { "Retcode", "MpPlayId", });
+        new java.lang.String[] { "MpPlayId", "Retcode", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

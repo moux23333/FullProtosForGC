@@ -19,17 +19,21 @@ public final class GetReunionSignInInfoReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 sign_in_config_id = 10;</code>
+     * <code>uint32 sign_in_config_id = 3;</code>
      * @return The signInConfigId.
      */
     int getSignInConfigId();
   }
   /**
    * <pre>
-   * CmdId: 5052
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 5077;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code GetReunionSignInInfoReq}
@@ -76,7 +80,7 @@ public final class GetReunionSignInInfoReqOuterClass {
             case 0:
               done = true;
               break;
-            case 80: {
+            case 24: {
 
               signInConfigId_ = input.readUInt32();
               break;
@@ -113,10 +117,10 @@ public final class GetReunionSignInInfoReqOuterClass {
               emu.grasscutter.net.proto.GetReunionSignInInfoReqOuterClass.GetReunionSignInInfoReq.class, emu.grasscutter.net.proto.GetReunionSignInInfoReqOuterClass.GetReunionSignInInfoReq.Builder.class);
     }
 
-    public static final int SIGN_IN_CONFIG_ID_FIELD_NUMBER = 10;
+    public static final int SIGN_IN_CONFIG_ID_FIELD_NUMBER = 3;
     private int signInConfigId_;
     /**
-     * <code>uint32 sign_in_config_id = 10;</code>
+     * <code>uint32 sign_in_config_id = 3;</code>
      * @return The signInConfigId.
      */
     @java.lang.Override
@@ -139,7 +143,7 @@ public final class GetReunionSignInInfoReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (signInConfigId_ != 0) {
-        output.writeUInt32(10, signInConfigId_);
+        output.writeUInt32(3, signInConfigId_);
       }
       unknownFields.writeTo(output);
     }
@@ -152,7 +156,7 @@ public final class GetReunionSignInInfoReqOuterClass {
       size = 0;
       if (signInConfigId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, signInConfigId_);
+          .computeUInt32Size(3, signInConfigId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -281,10 +285,14 @@ public final class GetReunionSignInInfoReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 5052
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 5077;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code GetReunionSignInInfoReq}
@@ -435,7 +443,7 @@ public final class GetReunionSignInInfoReqOuterClass {
 
       private int signInConfigId_ ;
       /**
-       * <code>uint32 sign_in_config_id = 10;</code>
+       * <code>uint32 sign_in_config_id = 3;</code>
        * @return The signInConfigId.
        */
       @java.lang.Override
@@ -443,7 +451,7 @@ public final class GetReunionSignInInfoReqOuterClass {
         return signInConfigId_;
       }
       /**
-       * <code>uint32 sign_in_config_id = 10;</code>
+       * <code>uint32 sign_in_config_id = 3;</code>
        * @param value The signInConfigId to set.
        * @return This builder for chaining.
        */
@@ -454,7 +462,7 @@ public final class GetReunionSignInInfoReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 sign_in_config_id = 10;</code>
+       * <code>uint32 sign_in_config_id = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearSignInConfigId() {
@@ -532,7 +540,7 @@ public final class GetReunionSignInInfoReqOuterClass {
     java.lang.String[] descriptorData = {
       "\n\035GetReunionSignInInfoReq.proto\"4\n\027GetRe" +
       "unionSignInInfoReq\022\031\n\021sign_in_config_id\030" +
-      "\n \001(\rB\033\n\031emu.grasscutter.net.protob\006prot" +
+      "\003 \001(\rB\033\n\031emu.grasscutter.net.protob\006prot" +
       "o3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

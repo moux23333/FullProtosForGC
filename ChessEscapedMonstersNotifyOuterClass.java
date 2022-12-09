@@ -26,9 +26,13 @@ public final class ChessEscapedMonstersNotifyOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 5314
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 5341;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code ChessEscapedMonstersNotify}
@@ -280,9 +284,13 @@ public final class ChessEscapedMonstersNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 5314
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 5341;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code ChessEscapedMonstersNotify}

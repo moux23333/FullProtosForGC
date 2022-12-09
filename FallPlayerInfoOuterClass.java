@@ -19,23 +19,23 @@ public final class FallPlayerInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 time_cost = 11;</code>
-     * @return The timeCost.
+     * <code>uint32 cur_score = 3;</code>
+     * @return The curScore.
      */
-    int getTimeCost();
+    int getCurScore();
 
     /**
-     * <code>uint32 uid = 9;</code>
-     * @return The uid.
+     * <code>bool is_ground = 11;</code>
+     * @return The isGround.
      */
-    int getUid();
+    boolean getIsGround();
 
     /**
-     * <code>map&lt;uint32, uint32&gt; ball_catch_count_map = 6;</code>
+     * <code>map&lt;uint32, uint32&gt; ball_catch_count_map = 1;</code>
      */
     int getBallCatchCountMapCount();
     /**
-     * <code>map&lt;uint32, uint32&gt; ball_catch_count_map = 6;</code>
+     * <code>map&lt;uint32, uint32&gt; ball_catch_count_map = 1;</code>
      */
     boolean containsBallCatchCountMap(
         int key);
@@ -46,35 +46,35 @@ public final class FallPlayerInfoOuterClass {
     java.util.Map<java.lang.Integer, java.lang.Integer>
     getBallCatchCountMap();
     /**
-     * <code>map&lt;uint32, uint32&gt; ball_catch_count_map = 6;</code>
+     * <code>map&lt;uint32, uint32&gt; ball_catch_count_map = 1;</code>
      */
     java.util.Map<java.lang.Integer, java.lang.Integer>
     getBallCatchCountMapMap();
     /**
-     * <code>map&lt;uint32, uint32&gt; ball_catch_count_map = 6;</code>
+     * <code>map&lt;uint32, uint32&gt; ball_catch_count_map = 1;</code>
      */
 
     int getBallCatchCountMapOrDefault(
         int key,
         int defaultValue);
     /**
-     * <code>map&lt;uint32, uint32&gt; ball_catch_count_map = 6;</code>
+     * <code>map&lt;uint32, uint32&gt; ball_catch_count_map = 1;</code>
      */
 
     int getBallCatchCountMapOrThrow(
         int key);
 
     /**
-     * <code>uint32 cur_score = 7;</code>
-     * @return The curScore.
+     * <code>uint32 uid = 5;</code>
+     * @return The uid.
      */
-    int getCurScore();
+    int getUid();
 
     /**
-     * <code>bool is_ground = 15;</code>
-     * @return The isGround.
+     * <code>uint32 time_cost = 8;</code>
+     * @return The timeCost.
      */
-    boolean getIsGround();
+    int getTimeCost();
   }
   /**
    * Protobuf type {@code FallPlayerInfo}
@@ -122,7 +122,7 @@ public final class FallPlayerInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 50: {
+            case 10: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 ballCatchCountMap_ = com.google.protobuf.MapField.newMapField(
                     BallCatchCountMapDefaultEntryHolder.defaultEntry);
@@ -135,22 +135,22 @@ public final class FallPlayerInfoOuterClass {
                   ballCatchCountMap__.getKey(), ballCatchCountMap__.getValue());
               break;
             }
-            case 56: {
+            case 24: {
 
               curScore_ = input.readUInt32();
               break;
             }
-            case 72: {
+            case 40: {
 
               uid_ = input.readUInt32();
               break;
             }
-            case 88: {
+            case 64: {
 
               timeCost_ = input.readUInt32();
               break;
             }
-            case 120: {
+            case 88: {
 
               isGround_ = input.readBool();
               break;
@@ -184,7 +184,7 @@ public final class FallPlayerInfoOuterClass {
     protected com.google.protobuf.MapField internalGetMapField(
         int number) {
       switch (number) {
-        case 6:
+        case 1:
           return internalGetBallCatchCountMap();
         default:
           throw new RuntimeException(
@@ -199,29 +199,29 @@ public final class FallPlayerInfoOuterClass {
               emu.grasscutter.net.proto.FallPlayerInfoOuterClass.FallPlayerInfo.class, emu.grasscutter.net.proto.FallPlayerInfoOuterClass.FallPlayerInfo.Builder.class);
     }
 
-    public static final int TIME_COST_FIELD_NUMBER = 11;
-    private int timeCost_;
+    public static final int CUR_SCORE_FIELD_NUMBER = 3;
+    private int curScore_;
     /**
-     * <code>uint32 time_cost = 11;</code>
-     * @return The timeCost.
+     * <code>uint32 cur_score = 3;</code>
+     * @return The curScore.
      */
     @java.lang.Override
-    public int getTimeCost() {
-      return timeCost_;
+    public int getCurScore() {
+      return curScore_;
     }
 
-    public static final int UID_FIELD_NUMBER = 9;
-    private int uid_;
+    public static final int IS_GROUND_FIELD_NUMBER = 11;
+    private boolean isGround_;
     /**
-     * <code>uint32 uid = 9;</code>
-     * @return The uid.
+     * <code>bool is_ground = 11;</code>
+     * @return The isGround.
      */
     @java.lang.Override
-    public int getUid() {
-      return uid_;
+    public boolean getIsGround() {
+      return isGround_;
     }
 
-    public static final int BALL_CATCH_COUNT_MAP_FIELD_NUMBER = 6;
+    public static final int BALL_CATCH_COUNT_MAP_FIELD_NUMBER = 1;
     private static final class BallCatchCountMapDefaultEntryHolder {
       static final com.google.protobuf.MapEntry<
           java.lang.Integer, java.lang.Integer> defaultEntry =
@@ -248,7 +248,7 @@ public final class FallPlayerInfoOuterClass {
       return internalGetBallCatchCountMap().getMap().size();
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; ball_catch_count_map = 6;</code>
+     * <code>map&lt;uint32, uint32&gt; ball_catch_count_map = 1;</code>
      */
 
     @java.lang.Override
@@ -266,7 +266,7 @@ public final class FallPlayerInfoOuterClass {
       return getBallCatchCountMapMap();
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; ball_catch_count_map = 6;</code>
+     * <code>map&lt;uint32, uint32&gt; ball_catch_count_map = 1;</code>
      */
     @java.lang.Override
 
@@ -274,7 +274,7 @@ public final class FallPlayerInfoOuterClass {
       return internalGetBallCatchCountMap().getMap();
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; ball_catch_count_map = 6;</code>
+     * <code>map&lt;uint32, uint32&gt; ball_catch_count_map = 1;</code>
      */
     @java.lang.Override
 
@@ -287,7 +287,7 @@ public final class FallPlayerInfoOuterClass {
       return map.containsKey(key) ? map.get(key) : defaultValue;
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; ball_catch_count_map = 6;</code>
+     * <code>map&lt;uint32, uint32&gt; ball_catch_count_map = 1;</code>
      */
     @java.lang.Override
 
@@ -302,26 +302,26 @@ public final class FallPlayerInfoOuterClass {
       return map.get(key);
     }
 
-    public static final int CUR_SCORE_FIELD_NUMBER = 7;
-    private int curScore_;
+    public static final int UID_FIELD_NUMBER = 5;
+    private int uid_;
     /**
-     * <code>uint32 cur_score = 7;</code>
-     * @return The curScore.
+     * <code>uint32 uid = 5;</code>
+     * @return The uid.
      */
     @java.lang.Override
-    public int getCurScore() {
-      return curScore_;
+    public int getUid() {
+      return uid_;
     }
 
-    public static final int IS_GROUND_FIELD_NUMBER = 15;
-    private boolean isGround_;
+    public static final int TIME_COST_FIELD_NUMBER = 8;
+    private int timeCost_;
     /**
-     * <code>bool is_ground = 15;</code>
-     * @return The isGround.
+     * <code>uint32 time_cost = 8;</code>
+     * @return The timeCost.
      */
     @java.lang.Override
-    public boolean getIsGround() {
-      return isGround_;
+    public int getTimeCost() {
+      return timeCost_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -343,18 +343,18 @@ public final class FallPlayerInfoOuterClass {
           output,
           internalGetBallCatchCountMap(),
           BallCatchCountMapDefaultEntryHolder.defaultEntry,
-          6);
+          1);
       if (curScore_ != 0) {
-        output.writeUInt32(7, curScore_);
+        output.writeUInt32(3, curScore_);
       }
       if (uid_ != 0) {
-        output.writeUInt32(9, uid_);
+        output.writeUInt32(5, uid_);
       }
       if (timeCost_ != 0) {
-        output.writeUInt32(11, timeCost_);
+        output.writeUInt32(8, timeCost_);
       }
       if (isGround_ != false) {
-        output.writeBool(15, isGround_);
+        output.writeBool(11, isGround_);
       }
       unknownFields.writeTo(output);
     }
@@ -373,23 +373,23 @@ public final class FallPlayerInfoOuterClass {
             .setValue(entry.getValue())
             .build();
         size += com.google.protobuf.CodedOutputStream
-            .computeMessageSize(6, ballCatchCountMap__);
+            .computeMessageSize(1, ballCatchCountMap__);
       }
       if (curScore_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, curScore_);
+          .computeUInt32Size(3, curScore_);
       }
       if (uid_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, uid_);
+          .computeUInt32Size(5, uid_);
       }
       if (timeCost_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, timeCost_);
+          .computeUInt32Size(8, timeCost_);
       }
       if (isGround_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(15, isGround_);
+          .computeBoolSize(11, isGround_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -406,16 +406,16 @@ public final class FallPlayerInfoOuterClass {
       }
       emu.grasscutter.net.proto.FallPlayerInfoOuterClass.FallPlayerInfo other = (emu.grasscutter.net.proto.FallPlayerInfoOuterClass.FallPlayerInfo) obj;
 
-      if (getTimeCost()
-          != other.getTimeCost()) return false;
-      if (getUid()
-          != other.getUid()) return false;
-      if (!internalGetBallCatchCountMap().equals(
-          other.internalGetBallCatchCountMap())) return false;
       if (getCurScore()
           != other.getCurScore()) return false;
       if (getIsGround()
           != other.getIsGround()) return false;
+      if (!internalGetBallCatchCountMap().equals(
+          other.internalGetBallCatchCountMap())) return false;
+      if (getUid()
+          != other.getUid()) return false;
+      if (getTimeCost()
+          != other.getTimeCost()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -427,19 +427,19 @@ public final class FallPlayerInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + TIME_COST_FIELD_NUMBER;
-      hash = (53 * hash) + getTimeCost();
-      hash = (37 * hash) + UID_FIELD_NUMBER;
-      hash = (53 * hash) + getUid();
-      if (!internalGetBallCatchCountMap().getMap().isEmpty()) {
-        hash = (37 * hash) + BALL_CATCH_COUNT_MAP_FIELD_NUMBER;
-        hash = (53 * hash) + internalGetBallCatchCountMap().hashCode();
-      }
       hash = (37 * hash) + CUR_SCORE_FIELD_NUMBER;
       hash = (53 * hash) + getCurScore();
       hash = (37 * hash) + IS_GROUND_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsGround());
+      if (!internalGetBallCatchCountMap().getMap().isEmpty()) {
+        hash = (37 * hash) + BALL_CATCH_COUNT_MAP_FIELD_NUMBER;
+        hash = (53 * hash) + internalGetBallCatchCountMap().hashCode();
+      }
+      hash = (37 * hash) + UID_FIELD_NUMBER;
+      hash = (53 * hash) + getUid();
+      hash = (37 * hash) + TIME_COST_FIELD_NUMBER;
+      hash = (53 * hash) + getTimeCost();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -551,7 +551,7 @@ public final class FallPlayerInfoOuterClass {
       protected com.google.protobuf.MapField internalGetMapField(
           int number) {
         switch (number) {
-          case 6:
+          case 1:
             return internalGetBallCatchCountMap();
           default:
             throw new RuntimeException(
@@ -562,7 +562,7 @@ public final class FallPlayerInfoOuterClass {
       protected com.google.protobuf.MapField internalGetMutableMapField(
           int number) {
         switch (number) {
-          case 6:
+          case 1:
             return internalGetMutableBallCatchCountMap();
           default:
             throw new RuntimeException(
@@ -595,14 +595,14 @@ public final class FallPlayerInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        timeCost_ = 0;
-
-        uid_ = 0;
-
-        internalGetMutableBallCatchCountMap().clear();
         curScore_ = 0;
 
         isGround_ = false;
+
+        internalGetMutableBallCatchCountMap().clear();
+        uid_ = 0;
+
+        timeCost_ = 0;
 
         return this;
       }
@@ -631,12 +631,12 @@ public final class FallPlayerInfoOuterClass {
       public emu.grasscutter.net.proto.FallPlayerInfoOuterClass.FallPlayerInfo buildPartial() {
         emu.grasscutter.net.proto.FallPlayerInfoOuterClass.FallPlayerInfo result = new emu.grasscutter.net.proto.FallPlayerInfoOuterClass.FallPlayerInfo(this);
         int from_bitField0_ = bitField0_;
-        result.timeCost_ = timeCost_;
-        result.uid_ = uid_;
-        result.ballCatchCountMap_ = internalGetBallCatchCountMap();
-        result.ballCatchCountMap_.makeImmutable();
         result.curScore_ = curScore_;
         result.isGround_ = isGround_;
+        result.ballCatchCountMap_ = internalGetBallCatchCountMap();
+        result.ballCatchCountMap_.makeImmutable();
+        result.uid_ = uid_;
+        result.timeCost_ = timeCost_;
         onBuilt();
         return result;
       }
@@ -685,19 +685,19 @@ public final class FallPlayerInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.FallPlayerInfoOuterClass.FallPlayerInfo other) {
         if (other == emu.grasscutter.net.proto.FallPlayerInfoOuterClass.FallPlayerInfo.getDefaultInstance()) return this;
-        if (other.getTimeCost() != 0) {
-          setTimeCost(other.getTimeCost());
-        }
-        if (other.getUid() != 0) {
-          setUid(other.getUid());
-        }
-        internalGetMutableBallCatchCountMap().mergeFrom(
-            other.internalGetBallCatchCountMap());
         if (other.getCurScore() != 0) {
           setCurScore(other.getCurScore());
         }
         if (other.getIsGround() != false) {
           setIsGround(other.getIsGround());
+        }
+        internalGetMutableBallCatchCountMap().mergeFrom(
+            other.internalGetBallCatchCountMap());
+        if (other.getUid() != 0) {
+          setUid(other.getUid());
+        }
+        if (other.getTimeCost() != 0) {
+          setTimeCost(other.getTimeCost());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -729,64 +729,64 @@ public final class FallPlayerInfoOuterClass {
       }
       private int bitField0_;
 
-      private int timeCost_ ;
+      private int curScore_ ;
       /**
-       * <code>uint32 time_cost = 11;</code>
-       * @return The timeCost.
+       * <code>uint32 cur_score = 3;</code>
+       * @return The curScore.
        */
       @java.lang.Override
-      public int getTimeCost() {
-        return timeCost_;
+      public int getCurScore() {
+        return curScore_;
       }
       /**
-       * <code>uint32 time_cost = 11;</code>
-       * @param value The timeCost to set.
+       * <code>uint32 cur_score = 3;</code>
+       * @param value The curScore to set.
        * @return This builder for chaining.
        */
-      public Builder setTimeCost(int value) {
+      public Builder setCurScore(int value) {
         
-        timeCost_ = value;
+        curScore_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 time_cost = 11;</code>
+       * <code>uint32 cur_score = 3;</code>
        * @return This builder for chaining.
        */
-      public Builder clearTimeCost() {
+      public Builder clearCurScore() {
         
-        timeCost_ = 0;
+        curScore_ = 0;
         onChanged();
         return this;
       }
 
-      private int uid_ ;
+      private boolean isGround_ ;
       /**
-       * <code>uint32 uid = 9;</code>
-       * @return The uid.
+       * <code>bool is_ground = 11;</code>
+       * @return The isGround.
        */
       @java.lang.Override
-      public int getUid() {
-        return uid_;
+      public boolean getIsGround() {
+        return isGround_;
       }
       /**
-       * <code>uint32 uid = 9;</code>
-       * @param value The uid to set.
+       * <code>bool is_ground = 11;</code>
+       * @param value The isGround to set.
        * @return This builder for chaining.
        */
-      public Builder setUid(int value) {
+      public Builder setIsGround(boolean value) {
         
-        uid_ = value;
+        isGround_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 uid = 9;</code>
+       * <code>bool is_ground = 11;</code>
        * @return This builder for chaining.
        */
-      public Builder clearUid() {
+      public Builder clearIsGround() {
         
-        uid_ = 0;
+        isGround_ = false;
         onChanged();
         return this;
       }
@@ -818,7 +818,7 @@ public final class FallPlayerInfoOuterClass {
         return internalGetBallCatchCountMap().getMap().size();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; ball_catch_count_map = 6;</code>
+       * <code>map&lt;uint32, uint32&gt; ball_catch_count_map = 1;</code>
        */
 
       @java.lang.Override
@@ -836,7 +836,7 @@ public final class FallPlayerInfoOuterClass {
         return getBallCatchCountMapMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; ball_catch_count_map = 6;</code>
+       * <code>map&lt;uint32, uint32&gt; ball_catch_count_map = 1;</code>
        */
       @java.lang.Override
 
@@ -844,7 +844,7 @@ public final class FallPlayerInfoOuterClass {
         return internalGetBallCatchCountMap().getMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; ball_catch_count_map = 6;</code>
+       * <code>map&lt;uint32, uint32&gt; ball_catch_count_map = 1;</code>
        */
       @java.lang.Override
 
@@ -857,7 +857,7 @@ public final class FallPlayerInfoOuterClass {
         return map.containsKey(key) ? map.get(key) : defaultValue;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; ball_catch_count_map = 6;</code>
+       * <code>map&lt;uint32, uint32&gt; ball_catch_count_map = 1;</code>
        */
       @java.lang.Override
 
@@ -878,7 +878,7 @@ public final class FallPlayerInfoOuterClass {
         return this;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; ball_catch_count_map = 6;</code>
+       * <code>map&lt;uint32, uint32&gt; ball_catch_count_map = 1;</code>
        */
 
       public Builder removeBallCatchCountMap(
@@ -897,7 +897,7 @@ public final class FallPlayerInfoOuterClass {
         return internalGetMutableBallCatchCountMap().getMutableMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; ball_catch_count_map = 6;</code>
+       * <code>map&lt;uint32, uint32&gt; ball_catch_count_map = 1;</code>
        */
       public Builder putBallCatchCountMap(
           int key,
@@ -909,7 +909,7 @@ public final class FallPlayerInfoOuterClass {
         return this;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; ball_catch_count_map = 6;</code>
+       * <code>map&lt;uint32, uint32&gt; ball_catch_count_map = 1;</code>
        */
 
       public Builder putAllBallCatchCountMap(
@@ -919,64 +919,64 @@ public final class FallPlayerInfoOuterClass {
         return this;
       }
 
-      private int curScore_ ;
+      private int uid_ ;
       /**
-       * <code>uint32 cur_score = 7;</code>
-       * @return The curScore.
+       * <code>uint32 uid = 5;</code>
+       * @return The uid.
        */
       @java.lang.Override
-      public int getCurScore() {
-        return curScore_;
+      public int getUid() {
+        return uid_;
       }
       /**
-       * <code>uint32 cur_score = 7;</code>
-       * @param value The curScore to set.
+       * <code>uint32 uid = 5;</code>
+       * @param value The uid to set.
        * @return This builder for chaining.
        */
-      public Builder setCurScore(int value) {
+      public Builder setUid(int value) {
         
-        curScore_ = value;
+        uid_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 cur_score = 7;</code>
+       * <code>uint32 uid = 5;</code>
        * @return This builder for chaining.
        */
-      public Builder clearCurScore() {
+      public Builder clearUid() {
         
-        curScore_ = 0;
+        uid_ = 0;
         onChanged();
         return this;
       }
 
-      private boolean isGround_ ;
+      private int timeCost_ ;
       /**
-       * <code>bool is_ground = 15;</code>
-       * @return The isGround.
+       * <code>uint32 time_cost = 8;</code>
+       * @return The timeCost.
        */
       @java.lang.Override
-      public boolean getIsGround() {
-        return isGround_;
+      public int getTimeCost() {
+        return timeCost_;
       }
       /**
-       * <code>bool is_ground = 15;</code>
-       * @param value The isGround to set.
+       * <code>uint32 time_cost = 8;</code>
+       * @param value The timeCost to set.
        * @return This builder for chaining.
        */
-      public Builder setIsGround(boolean value) {
+      public Builder setTimeCost(int value) {
         
-        isGround_ = value;
+        timeCost_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>bool is_ground = 15;</code>
+       * <code>uint32 time_cost = 8;</code>
        * @return This builder for chaining.
        */
-      public Builder clearIsGround() {
+      public Builder clearTimeCost() {
         
-        isGround_ = false;
+        timeCost_ = 0;
         onChanged();
         return this;
       }
@@ -1053,10 +1053,10 @@ public final class FallPlayerInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\024FallPlayerInfo.proto\"\326\001\n\016FallPlayerInf" +
-      "o\022\021\n\ttime_cost\030\013 \001(\r\022\013\n\003uid\030\t \001(\r\022D\n\024bal" +
-      "l_catch_count_map\030\006 \003(\0132&.FallPlayerInfo" +
-      ".BallCatchCountMapEntry\022\021\n\tcur_score\030\007 \001" +
-      "(\r\022\021\n\tis_ground\030\017 \001(\010\0328\n\026BallCatchCountM" +
+      "o\022\021\n\tcur_score\030\003 \001(\r\022\021\n\tis_ground\030\013 \001(\010\022" +
+      "D\n\024ball_catch_count_map\030\001 \003(\0132&.FallPlay" +
+      "erInfo.BallCatchCountMapEntry\022\013\n\003uid\030\005 \001" +
+      "(\r\022\021\n\ttime_cost\030\010 \001(\r\0328\n\026BallCatchCountM" +
       "apEntry\022\013\n\003key\030\001 \001(\r\022\r\n\005value\030\002 \001(\r:\0028\001B" +
       "\033\n\031emu.grasscutter.net.protob\006proto3"
     };
@@ -1069,7 +1069,7 @@ public final class FallPlayerInfoOuterClass {
     internal_static_FallPlayerInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_FallPlayerInfo_descriptor,
-        new java.lang.String[] { "TimeCost", "Uid", "BallCatchCountMap", "CurScore", "IsGround", });
+        new java.lang.String[] { "CurScore", "IsGround", "BallCatchCountMap", "Uid", "TimeCost", });
     internal_static_FallPlayerInfo_BallCatchCountMapEntry_descriptor =
       internal_static_FallPlayerInfo_descriptor.getNestedTypes().get(0);
     internal_static_FallPlayerInfo_BallCatchCountMapEntry_fieldAccessorTable = new

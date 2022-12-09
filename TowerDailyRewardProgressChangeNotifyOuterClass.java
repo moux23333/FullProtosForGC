@@ -19,22 +19,26 @@ public final class TowerDailyRewardProgressChangeNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 daily_floor_id = 15;</code>
-     * @return The dailyFloorId.
+     * <code>uint32 Unk3300_OHCHCJGJIDK = 8;</code>
+     * @return The unk3300OHCHCJGJIDK.
      */
-    int getDailyFloorId();
+    int getUnk3300OHCHCJGJIDK();
 
     /**
-     * <code>uint32 daily_level_index = 9;</code>
-     * @return The dailyLevelIndex.
+     * <code>uint32 Unk3300_JBACKENDHDG = 6;</code>
+     * @return The unk3300JBACKENDHDG.
      */
-    int getDailyLevelIndex();
+    int getUnk3300JBACKENDHDG();
   }
   /**
    * <pre>
-   * CmdId: 2435
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 2419;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code TowerDailyRewardProgressChangeNotify}
@@ -81,14 +85,14 @@ public final class TowerDailyRewardProgressChangeNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 72: {
+            case 48: {
 
-              dailyLevelIndex_ = input.readUInt32();
+              unk3300JBACKENDHDG_ = input.readUInt32();
               break;
             }
-            case 120: {
+            case 64: {
 
-              dailyFloorId_ = input.readUInt32();
+              unk3300OHCHCJGJIDK_ = input.readUInt32();
               break;
             }
             default: {
@@ -123,26 +127,26 @@ public final class TowerDailyRewardProgressChangeNotifyOuterClass {
               emu.grasscutter.net.proto.TowerDailyRewardProgressChangeNotifyOuterClass.TowerDailyRewardProgressChangeNotify.class, emu.grasscutter.net.proto.TowerDailyRewardProgressChangeNotifyOuterClass.TowerDailyRewardProgressChangeNotify.Builder.class);
     }
 
-    public static final int DAILY_FLOOR_ID_FIELD_NUMBER = 15;
-    private int dailyFloorId_;
+    public static final int UNK3300_OHCHCJGJIDK_FIELD_NUMBER = 8;
+    private int unk3300OHCHCJGJIDK_;
     /**
-     * <code>uint32 daily_floor_id = 15;</code>
-     * @return The dailyFloorId.
+     * <code>uint32 Unk3300_OHCHCJGJIDK = 8;</code>
+     * @return The unk3300OHCHCJGJIDK.
      */
     @java.lang.Override
-    public int getDailyFloorId() {
-      return dailyFloorId_;
+    public int getUnk3300OHCHCJGJIDK() {
+      return unk3300OHCHCJGJIDK_;
     }
 
-    public static final int DAILY_LEVEL_INDEX_FIELD_NUMBER = 9;
-    private int dailyLevelIndex_;
+    public static final int UNK3300_JBACKENDHDG_FIELD_NUMBER = 6;
+    private int unk3300JBACKENDHDG_;
     /**
-     * <code>uint32 daily_level_index = 9;</code>
-     * @return The dailyLevelIndex.
+     * <code>uint32 Unk3300_JBACKENDHDG = 6;</code>
+     * @return The unk3300JBACKENDHDG.
      */
     @java.lang.Override
-    public int getDailyLevelIndex() {
-      return dailyLevelIndex_;
+    public int getUnk3300JBACKENDHDG() {
+      return unk3300JBACKENDHDG_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -159,11 +163,11 @@ public final class TowerDailyRewardProgressChangeNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (dailyLevelIndex_ != 0) {
-        output.writeUInt32(9, dailyLevelIndex_);
+      if (unk3300JBACKENDHDG_ != 0) {
+        output.writeUInt32(6, unk3300JBACKENDHDG_);
       }
-      if (dailyFloorId_ != 0) {
-        output.writeUInt32(15, dailyFloorId_);
+      if (unk3300OHCHCJGJIDK_ != 0) {
+        output.writeUInt32(8, unk3300OHCHCJGJIDK_);
       }
       unknownFields.writeTo(output);
     }
@@ -174,13 +178,13 @@ public final class TowerDailyRewardProgressChangeNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (dailyLevelIndex_ != 0) {
+      if (unk3300JBACKENDHDG_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, dailyLevelIndex_);
+          .computeUInt32Size(6, unk3300JBACKENDHDG_);
       }
-      if (dailyFloorId_ != 0) {
+      if (unk3300OHCHCJGJIDK_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, dailyFloorId_);
+          .computeUInt32Size(8, unk3300OHCHCJGJIDK_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -197,10 +201,10 @@ public final class TowerDailyRewardProgressChangeNotifyOuterClass {
       }
       emu.grasscutter.net.proto.TowerDailyRewardProgressChangeNotifyOuterClass.TowerDailyRewardProgressChangeNotify other = (emu.grasscutter.net.proto.TowerDailyRewardProgressChangeNotifyOuterClass.TowerDailyRewardProgressChangeNotify) obj;
 
-      if (getDailyFloorId()
-          != other.getDailyFloorId()) return false;
-      if (getDailyLevelIndex()
-          != other.getDailyLevelIndex()) return false;
+      if (getUnk3300OHCHCJGJIDK()
+          != other.getUnk3300OHCHCJGJIDK()) return false;
+      if (getUnk3300JBACKENDHDG()
+          != other.getUnk3300JBACKENDHDG()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -212,10 +216,10 @@ public final class TowerDailyRewardProgressChangeNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + DAILY_FLOOR_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getDailyFloorId();
-      hash = (37 * hash) + DAILY_LEVEL_INDEX_FIELD_NUMBER;
-      hash = (53 * hash) + getDailyLevelIndex();
+      hash = (37 * hash) + UNK3300_OHCHCJGJIDK_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300OHCHCJGJIDK();
+      hash = (37 * hash) + UNK3300_JBACKENDHDG_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300JBACKENDHDG();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -313,9 +317,13 @@ public final class TowerDailyRewardProgressChangeNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 2435
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 2419;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code TowerDailyRewardProgressChangeNotify}
@@ -355,9 +363,9 @@ public final class TowerDailyRewardProgressChangeNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        dailyFloorId_ = 0;
+        unk3300OHCHCJGJIDK_ = 0;
 
-        dailyLevelIndex_ = 0;
+        unk3300JBACKENDHDG_ = 0;
 
         return this;
       }
@@ -385,8 +393,8 @@ public final class TowerDailyRewardProgressChangeNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.TowerDailyRewardProgressChangeNotifyOuterClass.TowerDailyRewardProgressChangeNotify buildPartial() {
         emu.grasscutter.net.proto.TowerDailyRewardProgressChangeNotifyOuterClass.TowerDailyRewardProgressChangeNotify result = new emu.grasscutter.net.proto.TowerDailyRewardProgressChangeNotifyOuterClass.TowerDailyRewardProgressChangeNotify(this);
-        result.dailyFloorId_ = dailyFloorId_;
-        result.dailyLevelIndex_ = dailyLevelIndex_;
+        result.unk3300OHCHCJGJIDK_ = unk3300OHCHCJGJIDK_;
+        result.unk3300JBACKENDHDG_ = unk3300JBACKENDHDG_;
         onBuilt();
         return result;
       }
@@ -435,11 +443,11 @@ public final class TowerDailyRewardProgressChangeNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.TowerDailyRewardProgressChangeNotifyOuterClass.TowerDailyRewardProgressChangeNotify other) {
         if (other == emu.grasscutter.net.proto.TowerDailyRewardProgressChangeNotifyOuterClass.TowerDailyRewardProgressChangeNotify.getDefaultInstance()) return this;
-        if (other.getDailyFloorId() != 0) {
-          setDailyFloorId(other.getDailyFloorId());
+        if (other.getUnk3300OHCHCJGJIDK() != 0) {
+          setUnk3300OHCHCJGJIDK(other.getUnk3300OHCHCJGJIDK());
         }
-        if (other.getDailyLevelIndex() != 0) {
-          setDailyLevelIndex(other.getDailyLevelIndex());
+        if (other.getUnk3300JBACKENDHDG() != 0) {
+          setUnk3300JBACKENDHDG(other.getUnk3300JBACKENDHDG());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -470,64 +478,64 @@ public final class TowerDailyRewardProgressChangeNotifyOuterClass {
         return this;
       }
 
-      private int dailyFloorId_ ;
+      private int unk3300OHCHCJGJIDK_ ;
       /**
-       * <code>uint32 daily_floor_id = 15;</code>
-       * @return The dailyFloorId.
+       * <code>uint32 Unk3300_OHCHCJGJIDK = 8;</code>
+       * @return The unk3300OHCHCJGJIDK.
        */
       @java.lang.Override
-      public int getDailyFloorId() {
-        return dailyFloorId_;
+      public int getUnk3300OHCHCJGJIDK() {
+        return unk3300OHCHCJGJIDK_;
       }
       /**
-       * <code>uint32 daily_floor_id = 15;</code>
-       * @param value The dailyFloorId to set.
+       * <code>uint32 Unk3300_OHCHCJGJIDK = 8;</code>
+       * @param value The unk3300OHCHCJGJIDK to set.
        * @return This builder for chaining.
        */
-      public Builder setDailyFloorId(int value) {
+      public Builder setUnk3300OHCHCJGJIDK(int value) {
         
-        dailyFloorId_ = value;
+        unk3300OHCHCJGJIDK_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 daily_floor_id = 15;</code>
+       * <code>uint32 Unk3300_OHCHCJGJIDK = 8;</code>
        * @return This builder for chaining.
        */
-      public Builder clearDailyFloorId() {
+      public Builder clearUnk3300OHCHCJGJIDK() {
         
-        dailyFloorId_ = 0;
+        unk3300OHCHCJGJIDK_ = 0;
         onChanged();
         return this;
       }
 
-      private int dailyLevelIndex_ ;
+      private int unk3300JBACKENDHDG_ ;
       /**
-       * <code>uint32 daily_level_index = 9;</code>
-       * @return The dailyLevelIndex.
+       * <code>uint32 Unk3300_JBACKENDHDG = 6;</code>
+       * @return The unk3300JBACKENDHDG.
        */
       @java.lang.Override
-      public int getDailyLevelIndex() {
-        return dailyLevelIndex_;
+      public int getUnk3300JBACKENDHDG() {
+        return unk3300JBACKENDHDG_;
       }
       /**
-       * <code>uint32 daily_level_index = 9;</code>
-       * @param value The dailyLevelIndex to set.
+       * <code>uint32 Unk3300_JBACKENDHDG = 6;</code>
+       * @param value The unk3300JBACKENDHDG to set.
        * @return This builder for chaining.
        */
-      public Builder setDailyLevelIndex(int value) {
+      public Builder setUnk3300JBACKENDHDG(int value) {
         
-        dailyLevelIndex_ = value;
+        unk3300JBACKENDHDG_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 daily_level_index = 9;</code>
+       * <code>uint32 Unk3300_JBACKENDHDG = 6;</code>
        * @return This builder for chaining.
        */
-      public Builder clearDailyLevelIndex() {
+      public Builder clearUnk3300JBACKENDHDG() {
         
-        dailyLevelIndex_ = 0;
+        unk3300JBACKENDHDG_ = 0;
         onChanged();
         return this;
       }
@@ -599,10 +607,10 @@ public final class TowerDailyRewardProgressChangeNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n*TowerDailyRewardProgressChangeNotify.p" +
-      "roto\"Y\n$TowerDailyRewardProgressChangeNo" +
-      "tify\022\026\n\016daily_floor_id\030\017 \001(\r\022\031\n\021daily_le" +
-      "vel_index\030\t \001(\rB\033\n\031emu.grasscutter.net.p" +
-      "rotob\006proto3"
+      "roto\"`\n$TowerDailyRewardProgressChangeNo" +
+      "tify\022\033\n\023Unk3300_OHCHCJGJIDK\030\010 \001(\r\022\033\n\023Unk" +
+      "3300_JBACKENDHDG\030\006 \001(\rB\033\n\031emu.grasscutte" +
+      "r.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -613,7 +621,7 @@ public final class TowerDailyRewardProgressChangeNotifyOuterClass {
     internal_static_TowerDailyRewardProgressChangeNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_TowerDailyRewardProgressChangeNotify_descriptor,
-        new java.lang.String[] { "DailyFloorId", "DailyLevelIndex", });
+        new java.lang.String[] { "Unk3300OHCHCJGJIDK", "Unk3300JBACKENDHDG", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

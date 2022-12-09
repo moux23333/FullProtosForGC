@@ -19,16 +19,20 @@ public final class WorldRoutineTypeCloseNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 routine_type = 7;</code>
+     * <code>uint32 routine_type = 10;</code>
      * @return The routineType.
      */
     int getRoutineType();
   }
   /**
    * <pre>
-   * CmdId: 3502
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 3527;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code WorldRoutineTypeCloseNotify}
@@ -75,7 +79,7 @@ public final class WorldRoutineTypeCloseNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 56: {
+            case 80: {
 
               routineType_ = input.readUInt32();
               break;
@@ -112,10 +116,10 @@ public final class WorldRoutineTypeCloseNotifyOuterClass {
               emu.grasscutter.net.proto.WorldRoutineTypeCloseNotifyOuterClass.WorldRoutineTypeCloseNotify.class, emu.grasscutter.net.proto.WorldRoutineTypeCloseNotifyOuterClass.WorldRoutineTypeCloseNotify.Builder.class);
     }
 
-    public static final int ROUTINE_TYPE_FIELD_NUMBER = 7;
+    public static final int ROUTINE_TYPE_FIELD_NUMBER = 10;
     private int routineType_;
     /**
-     * <code>uint32 routine_type = 7;</code>
+     * <code>uint32 routine_type = 10;</code>
      * @return The routineType.
      */
     @java.lang.Override
@@ -138,7 +142,7 @@ public final class WorldRoutineTypeCloseNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (routineType_ != 0) {
-        output.writeUInt32(7, routineType_);
+        output.writeUInt32(10, routineType_);
       }
       unknownFields.writeTo(output);
     }
@@ -151,7 +155,7 @@ public final class WorldRoutineTypeCloseNotifyOuterClass {
       size = 0;
       if (routineType_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, routineType_);
+          .computeUInt32Size(10, routineType_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -280,9 +284,13 @@ public final class WorldRoutineTypeCloseNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 3502
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 3527;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code WorldRoutineTypeCloseNotify}
@@ -433,7 +441,7 @@ public final class WorldRoutineTypeCloseNotifyOuterClass {
 
       private int routineType_ ;
       /**
-       * <code>uint32 routine_type = 7;</code>
+       * <code>uint32 routine_type = 10;</code>
        * @return The routineType.
        */
       @java.lang.Override
@@ -441,7 +449,7 @@ public final class WorldRoutineTypeCloseNotifyOuterClass {
         return routineType_;
       }
       /**
-       * <code>uint32 routine_type = 7;</code>
+       * <code>uint32 routine_type = 10;</code>
        * @param value The routineType to set.
        * @return This builder for chaining.
        */
@@ -452,7 +460,7 @@ public final class WorldRoutineTypeCloseNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 routine_type = 7;</code>
+       * <code>uint32 routine_type = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearRoutineType() {
@@ -530,7 +538,7 @@ public final class WorldRoutineTypeCloseNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n!WorldRoutineTypeCloseNotify.proto\"3\n\033W" +
       "orldRoutineTypeCloseNotify\022\024\n\014routine_ty" +
-      "pe\030\007 \001(\rB\033\n\031emu.grasscutter.net.protob\006p" +
+      "pe\030\n \001(\rB\033\n\031emu.grasscutter.net.protob\006p" +
       "roto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

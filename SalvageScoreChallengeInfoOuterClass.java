@@ -19,16 +19,16 @@ public final class SalvageScoreChallengeInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 salvage_challenge_id = 13;</code>
-     * @return The salvageChallengeId.
-     */
-    int getSalvageChallengeId();
-
-    /**
-     * <code>uint32 max_score = 7;</code>
+     * <code>uint32 max_score = 8;</code>
      * @return The maxScore.
      */
     int getMaxScore();
+
+    /**
+     * <code>uint32 salvage_challenge_id = 10;</code>
+     * @return The salvageChallengeId.
+     */
+    int getSalvageChallengeId();
   }
   /**
    * Protobuf type {@code SalvageScoreChallengeInfo}
@@ -75,12 +75,12 @@ public final class SalvageScoreChallengeInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 56: {
+            case 64: {
 
               maxScore_ = input.readUInt32();
               break;
             }
-            case 104: {
+            case 80: {
 
               salvageChallengeId_ = input.readUInt32();
               break;
@@ -117,26 +117,26 @@ public final class SalvageScoreChallengeInfoOuterClass {
               emu.grasscutter.net.proto.SalvageScoreChallengeInfoOuterClass.SalvageScoreChallengeInfo.class, emu.grasscutter.net.proto.SalvageScoreChallengeInfoOuterClass.SalvageScoreChallengeInfo.Builder.class);
     }
 
-    public static final int SALVAGE_CHALLENGE_ID_FIELD_NUMBER = 13;
-    private int salvageChallengeId_;
-    /**
-     * <code>uint32 salvage_challenge_id = 13;</code>
-     * @return The salvageChallengeId.
-     */
-    @java.lang.Override
-    public int getSalvageChallengeId() {
-      return salvageChallengeId_;
-    }
-
-    public static final int MAX_SCORE_FIELD_NUMBER = 7;
+    public static final int MAX_SCORE_FIELD_NUMBER = 8;
     private int maxScore_;
     /**
-     * <code>uint32 max_score = 7;</code>
+     * <code>uint32 max_score = 8;</code>
      * @return The maxScore.
      */
     @java.lang.Override
     public int getMaxScore() {
       return maxScore_;
+    }
+
+    public static final int SALVAGE_CHALLENGE_ID_FIELD_NUMBER = 10;
+    private int salvageChallengeId_;
+    /**
+     * <code>uint32 salvage_challenge_id = 10;</code>
+     * @return The salvageChallengeId.
+     */
+    @java.lang.Override
+    public int getSalvageChallengeId() {
+      return salvageChallengeId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -154,10 +154,10 @@ public final class SalvageScoreChallengeInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (maxScore_ != 0) {
-        output.writeUInt32(7, maxScore_);
+        output.writeUInt32(8, maxScore_);
       }
       if (salvageChallengeId_ != 0) {
-        output.writeUInt32(13, salvageChallengeId_);
+        output.writeUInt32(10, salvageChallengeId_);
       }
       unknownFields.writeTo(output);
     }
@@ -170,11 +170,11 @@ public final class SalvageScoreChallengeInfoOuterClass {
       size = 0;
       if (maxScore_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, maxScore_);
+          .computeUInt32Size(8, maxScore_);
       }
       if (salvageChallengeId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, salvageChallengeId_);
+          .computeUInt32Size(10, salvageChallengeId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -191,10 +191,10 @@ public final class SalvageScoreChallengeInfoOuterClass {
       }
       emu.grasscutter.net.proto.SalvageScoreChallengeInfoOuterClass.SalvageScoreChallengeInfo other = (emu.grasscutter.net.proto.SalvageScoreChallengeInfoOuterClass.SalvageScoreChallengeInfo) obj;
 
-      if (getSalvageChallengeId()
-          != other.getSalvageChallengeId()) return false;
       if (getMaxScore()
           != other.getMaxScore()) return false;
+      if (getSalvageChallengeId()
+          != other.getSalvageChallengeId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -206,10 +206,10 @@ public final class SalvageScoreChallengeInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + SALVAGE_CHALLENGE_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getSalvageChallengeId();
       hash = (37 * hash) + MAX_SCORE_FIELD_NUMBER;
       hash = (53 * hash) + getMaxScore();
+      hash = (37 * hash) + SALVAGE_CHALLENGE_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getSalvageChallengeId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -343,9 +343,9 @@ public final class SalvageScoreChallengeInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        salvageChallengeId_ = 0;
-
         maxScore_ = 0;
+
+        salvageChallengeId_ = 0;
 
         return this;
       }
@@ -373,8 +373,8 @@ public final class SalvageScoreChallengeInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.SalvageScoreChallengeInfoOuterClass.SalvageScoreChallengeInfo buildPartial() {
         emu.grasscutter.net.proto.SalvageScoreChallengeInfoOuterClass.SalvageScoreChallengeInfo result = new emu.grasscutter.net.proto.SalvageScoreChallengeInfoOuterClass.SalvageScoreChallengeInfo(this);
-        result.salvageChallengeId_ = salvageChallengeId_;
         result.maxScore_ = maxScore_;
+        result.salvageChallengeId_ = salvageChallengeId_;
         onBuilt();
         return result;
       }
@@ -423,11 +423,11 @@ public final class SalvageScoreChallengeInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.SalvageScoreChallengeInfoOuterClass.SalvageScoreChallengeInfo other) {
         if (other == emu.grasscutter.net.proto.SalvageScoreChallengeInfoOuterClass.SalvageScoreChallengeInfo.getDefaultInstance()) return this;
-        if (other.getSalvageChallengeId() != 0) {
-          setSalvageChallengeId(other.getSalvageChallengeId());
-        }
         if (other.getMaxScore() != 0) {
           setMaxScore(other.getMaxScore());
+        }
+        if (other.getSalvageChallengeId() != 0) {
+          setSalvageChallengeId(other.getSalvageChallengeId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -458,40 +458,9 @@ public final class SalvageScoreChallengeInfoOuterClass {
         return this;
       }
 
-      private int salvageChallengeId_ ;
-      /**
-       * <code>uint32 salvage_challenge_id = 13;</code>
-       * @return The salvageChallengeId.
-       */
-      @java.lang.Override
-      public int getSalvageChallengeId() {
-        return salvageChallengeId_;
-      }
-      /**
-       * <code>uint32 salvage_challenge_id = 13;</code>
-       * @param value The salvageChallengeId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setSalvageChallengeId(int value) {
-        
-        salvageChallengeId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 salvage_challenge_id = 13;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearSalvageChallengeId() {
-        
-        salvageChallengeId_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int maxScore_ ;
       /**
-       * <code>uint32 max_score = 7;</code>
+       * <code>uint32 max_score = 8;</code>
        * @return The maxScore.
        */
       @java.lang.Override
@@ -499,7 +468,7 @@ public final class SalvageScoreChallengeInfoOuterClass {
         return maxScore_;
       }
       /**
-       * <code>uint32 max_score = 7;</code>
+       * <code>uint32 max_score = 8;</code>
        * @param value The maxScore to set.
        * @return This builder for chaining.
        */
@@ -510,12 +479,43 @@ public final class SalvageScoreChallengeInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 max_score = 7;</code>
+       * <code>uint32 max_score = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearMaxScore() {
         
         maxScore_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int salvageChallengeId_ ;
+      /**
+       * <code>uint32 salvage_challenge_id = 10;</code>
+       * @return The salvageChallengeId.
+       */
+      @java.lang.Override
+      public int getSalvageChallengeId() {
+        return salvageChallengeId_;
+      }
+      /**
+       * <code>uint32 salvage_challenge_id = 10;</code>
+       * @param value The salvageChallengeId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setSalvageChallengeId(int value) {
+        
+        salvageChallengeId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 salvage_challenge_id = 10;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearSalvageChallengeId() {
+        
+        salvageChallengeId_ = 0;
         onChanged();
         return this;
       }
@@ -587,8 +587,8 @@ public final class SalvageScoreChallengeInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\037SalvageScoreChallengeInfo.proto\"L\n\031Sal" +
-      "vageScoreChallengeInfo\022\034\n\024salvage_challe" +
-      "nge_id\030\r \001(\r\022\021\n\tmax_score\030\007 \001(\rB\033\n\031emu.g" +
+      "vageScoreChallengeInfo\022\021\n\tmax_score\030\010 \001(" +
+      "\r\022\034\n\024salvage_challenge_id\030\n \001(\rB\033\n\031emu.g" +
       "rasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -600,7 +600,7 @@ public final class SalvageScoreChallengeInfoOuterClass {
     internal_static_SalvageScoreChallengeInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SalvageScoreChallengeInfo_descriptor,
-        new java.lang.String[] { "SalvageChallengeId", "MaxScore", });
+        new java.lang.String[] { "MaxScore", "SalvageChallengeId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

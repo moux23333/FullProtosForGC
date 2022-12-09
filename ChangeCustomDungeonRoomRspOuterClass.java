@@ -19,22 +19,26 @@ public final class ChangeCustomDungeonRoomRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 1;</code>
-     * @return The retcode.
-     */
-    int getRetcode();
-
-    /**
-     * <code>uint32 room_id = 13;</code>
+     * <code>uint32 room_id = 8;</code>
      * @return The roomId.
      */
     int getRoomId();
+
+    /**
+     * <code>int32 retcode = 14;</code>
+     * @return The retcode.
+     */
+    int getRetcode();
   }
   /**
    * <pre>
-   * CmdId: 6244
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 6212;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code ChangeCustomDungeonRoomRsp}
@@ -81,14 +85,14 @@ public final class ChangeCustomDungeonRoomRspOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
-
-              retcode_ = input.readInt32();
-              break;
-            }
-            case 104: {
+            case 64: {
 
               roomId_ = input.readUInt32();
+              break;
+            }
+            case 112: {
+
+              retcode_ = input.readInt32();
               break;
             }
             default: {
@@ -123,26 +127,26 @@ public final class ChangeCustomDungeonRoomRspOuterClass {
               emu.grasscutter.net.proto.ChangeCustomDungeonRoomRspOuterClass.ChangeCustomDungeonRoomRsp.class, emu.grasscutter.net.proto.ChangeCustomDungeonRoomRspOuterClass.ChangeCustomDungeonRoomRsp.Builder.class);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 1;
-    private int retcode_;
-    /**
-     * <code>int32 retcode = 1;</code>
-     * @return The retcode.
-     */
-    @java.lang.Override
-    public int getRetcode() {
-      return retcode_;
-    }
-
-    public static final int ROOM_ID_FIELD_NUMBER = 13;
+    public static final int ROOM_ID_FIELD_NUMBER = 8;
     private int roomId_;
     /**
-     * <code>uint32 room_id = 13;</code>
+     * <code>uint32 room_id = 8;</code>
      * @return The roomId.
      */
     @java.lang.Override
     public int getRoomId() {
       return roomId_;
+    }
+
+    public static final int RETCODE_FIELD_NUMBER = 14;
+    private int retcode_;
+    /**
+     * <code>int32 retcode = 14;</code>
+     * @return The retcode.
+     */
+    @java.lang.Override
+    public int getRetcode() {
+      return retcode_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -159,11 +163,11 @@ public final class ChangeCustomDungeonRoomRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (retcode_ != 0) {
-        output.writeInt32(1, retcode_);
-      }
       if (roomId_ != 0) {
-        output.writeUInt32(13, roomId_);
+        output.writeUInt32(8, roomId_);
+      }
+      if (retcode_ != 0) {
+        output.writeInt32(14, retcode_);
       }
       unknownFields.writeTo(output);
     }
@@ -174,13 +178,13 @@ public final class ChangeCustomDungeonRoomRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (retcode_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(1, retcode_);
-      }
       if (roomId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, roomId_);
+          .computeUInt32Size(8, roomId_);
+      }
+      if (retcode_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(14, retcode_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -197,10 +201,10 @@ public final class ChangeCustomDungeonRoomRspOuterClass {
       }
       emu.grasscutter.net.proto.ChangeCustomDungeonRoomRspOuterClass.ChangeCustomDungeonRoomRsp other = (emu.grasscutter.net.proto.ChangeCustomDungeonRoomRspOuterClass.ChangeCustomDungeonRoomRsp) obj;
 
-      if (getRetcode()
-          != other.getRetcode()) return false;
       if (getRoomId()
           != other.getRoomId()) return false;
+      if (getRetcode()
+          != other.getRetcode()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -212,10 +216,10 @@ public final class ChangeCustomDungeonRoomRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
-      hash = (53 * hash) + getRetcode();
       hash = (37 * hash) + ROOM_ID_FIELD_NUMBER;
       hash = (53 * hash) + getRoomId();
+      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
+      hash = (53 * hash) + getRetcode();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -313,9 +317,13 @@ public final class ChangeCustomDungeonRoomRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 6244
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 6212;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code ChangeCustomDungeonRoomRsp}
@@ -355,9 +363,9 @@ public final class ChangeCustomDungeonRoomRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        retcode_ = 0;
-
         roomId_ = 0;
+
+        retcode_ = 0;
 
         return this;
       }
@@ -385,8 +393,8 @@ public final class ChangeCustomDungeonRoomRspOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.ChangeCustomDungeonRoomRspOuterClass.ChangeCustomDungeonRoomRsp buildPartial() {
         emu.grasscutter.net.proto.ChangeCustomDungeonRoomRspOuterClass.ChangeCustomDungeonRoomRsp result = new emu.grasscutter.net.proto.ChangeCustomDungeonRoomRspOuterClass.ChangeCustomDungeonRoomRsp(this);
-        result.retcode_ = retcode_;
         result.roomId_ = roomId_;
+        result.retcode_ = retcode_;
         onBuilt();
         return result;
       }
@@ -435,11 +443,11 @@ public final class ChangeCustomDungeonRoomRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.ChangeCustomDungeonRoomRspOuterClass.ChangeCustomDungeonRoomRsp other) {
         if (other == emu.grasscutter.net.proto.ChangeCustomDungeonRoomRspOuterClass.ChangeCustomDungeonRoomRsp.getDefaultInstance()) return this;
-        if (other.getRetcode() != 0) {
-          setRetcode(other.getRetcode());
-        }
         if (other.getRoomId() != 0) {
           setRoomId(other.getRoomId());
+        }
+        if (other.getRetcode() != 0) {
+          setRetcode(other.getRetcode());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -470,40 +478,9 @@ public final class ChangeCustomDungeonRoomRspOuterClass {
         return this;
       }
 
-      private int retcode_ ;
-      /**
-       * <code>int32 retcode = 1;</code>
-       * @return The retcode.
-       */
-      @java.lang.Override
-      public int getRetcode() {
-        return retcode_;
-      }
-      /**
-       * <code>int32 retcode = 1;</code>
-       * @param value The retcode to set.
-       * @return This builder for chaining.
-       */
-      public Builder setRetcode(int value) {
-        
-        retcode_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>int32 retcode = 1;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearRetcode() {
-        
-        retcode_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int roomId_ ;
       /**
-       * <code>uint32 room_id = 13;</code>
+       * <code>uint32 room_id = 8;</code>
        * @return The roomId.
        */
       @java.lang.Override
@@ -511,7 +488,7 @@ public final class ChangeCustomDungeonRoomRspOuterClass {
         return roomId_;
       }
       /**
-       * <code>uint32 room_id = 13;</code>
+       * <code>uint32 room_id = 8;</code>
        * @param value The roomId to set.
        * @return This builder for chaining.
        */
@@ -522,12 +499,43 @@ public final class ChangeCustomDungeonRoomRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 room_id = 13;</code>
+       * <code>uint32 room_id = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearRoomId() {
         
         roomId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int retcode_ ;
+      /**
+       * <code>int32 retcode = 14;</code>
+       * @return The retcode.
+       */
+      @java.lang.Override
+      public int getRetcode() {
+        return retcode_;
+      }
+      /**
+       * <code>int32 retcode = 14;</code>
+       * @param value The retcode to set.
+       * @return This builder for chaining.
+       */
+      public Builder setRetcode(int value) {
+        
+        retcode_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 retcode = 14;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearRetcode() {
+        
+        retcode_ = 0;
         onChanged();
         return this;
       }
@@ -599,8 +607,8 @@ public final class ChangeCustomDungeonRoomRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n ChangeCustomDungeonRoomRsp.proto\">\n\032Ch" +
-      "angeCustomDungeonRoomRsp\022\017\n\007retcode\030\001 \001(" +
-      "\005\022\017\n\007room_id\030\r \001(\rB\033\n\031emu.grasscutter.ne" +
+      "angeCustomDungeonRoomRsp\022\017\n\007room_id\030\010 \001(" +
+      "\r\022\017\n\007retcode\030\016 \001(\005B\033\n\031emu.grasscutter.ne" +
       "t.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -612,7 +620,7 @@ public final class ChangeCustomDungeonRoomRspOuterClass {
     internal_static_ChangeCustomDungeonRoomRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ChangeCustomDungeonRoomRsp_descriptor,
-        new java.lang.String[] { "Retcode", "RoomId", });
+        new java.lang.String[] { "RoomId", "Retcode", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

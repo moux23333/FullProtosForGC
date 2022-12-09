@@ -19,17 +19,21 @@ public final class OrderDisplayNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 order_id = 1;</code>
+     * <code>uint32 order_id = 5;</code>
      * @return The orderId.
      */
     int getOrderId();
   }
   /**
    * <pre>
-   * CmdId: 4131
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 4131;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code OrderDisplayNotify}
@@ -76,7 +80,7 @@ public final class OrderDisplayNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
+            case 40: {
 
               orderId_ = input.readUInt32();
               break;
@@ -113,10 +117,10 @@ public final class OrderDisplayNotifyOuterClass {
               emu.grasscutter.net.proto.OrderDisplayNotifyOuterClass.OrderDisplayNotify.class, emu.grasscutter.net.proto.OrderDisplayNotifyOuterClass.OrderDisplayNotify.Builder.class);
     }
 
-    public static final int ORDER_ID_FIELD_NUMBER = 1;
+    public static final int ORDER_ID_FIELD_NUMBER = 5;
     private int orderId_;
     /**
-     * <code>uint32 order_id = 1;</code>
+     * <code>uint32 order_id = 5;</code>
      * @return The orderId.
      */
     @java.lang.Override
@@ -139,7 +143,7 @@ public final class OrderDisplayNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (orderId_ != 0) {
-        output.writeUInt32(1, orderId_);
+        output.writeUInt32(5, orderId_);
       }
       unknownFields.writeTo(output);
     }
@@ -152,7 +156,7 @@ public final class OrderDisplayNotifyOuterClass {
       size = 0;
       if (orderId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, orderId_);
+          .computeUInt32Size(5, orderId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -281,10 +285,14 @@ public final class OrderDisplayNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 4131
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 4131;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code OrderDisplayNotify}
@@ -435,7 +443,7 @@ public final class OrderDisplayNotifyOuterClass {
 
       private int orderId_ ;
       /**
-       * <code>uint32 order_id = 1;</code>
+       * <code>uint32 order_id = 5;</code>
        * @return The orderId.
        */
       @java.lang.Override
@@ -443,7 +451,7 @@ public final class OrderDisplayNotifyOuterClass {
         return orderId_;
       }
       /**
-       * <code>uint32 order_id = 1;</code>
+       * <code>uint32 order_id = 5;</code>
        * @param value The orderId to set.
        * @return This builder for chaining.
        */
@@ -454,7 +462,7 @@ public final class OrderDisplayNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 order_id = 1;</code>
+       * <code>uint32 order_id = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearOrderId() {
@@ -531,7 +539,7 @@ public final class OrderDisplayNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\030OrderDisplayNotify.proto\"&\n\022OrderDispl" +
-      "ayNotify\022\020\n\010order_id\030\001 \001(\rB\033\n\031emu.grassc" +
+      "ayNotify\022\020\n\010order_id\030\005 \001(\rB\033\n\031emu.grassc" +
       "utter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

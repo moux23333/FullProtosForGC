@@ -19,23 +19,27 @@ public final class LanternRiteStartFireworksReformReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 stage_id = 2;</code>
-     * @return The stageId.
-     */
-    int getStageId();
-
-    /**
-     * <code>uint32 challenge_id = 7;</code>
+     * <code>uint32 challenge_id = 2;</code>
      * @return The challengeId.
      */
     int getChallengeId();
+
+    /**
+     * <code>uint32 stage_id = 1;</code>
+     * @return The stageId.
+     */
+    int getStageId();
   }
   /**
    * <pre>
-   * CmdId: 8518
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 8200;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code LanternRiteStartFireworksReformReq}
@@ -82,12 +86,12 @@ public final class LanternRiteStartFireworksReformReqOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
+            case 8: {
 
               stageId_ = input.readUInt32();
               break;
             }
-            case 56: {
+            case 16: {
 
               challengeId_ = input.readUInt32();
               break;
@@ -124,26 +128,26 @@ public final class LanternRiteStartFireworksReformReqOuterClass {
               emu.grasscutter.net.proto.LanternRiteStartFireworksReformReqOuterClass.LanternRiteStartFireworksReformReq.class, emu.grasscutter.net.proto.LanternRiteStartFireworksReformReqOuterClass.LanternRiteStartFireworksReformReq.Builder.class);
     }
 
-    public static final int STAGE_ID_FIELD_NUMBER = 2;
-    private int stageId_;
-    /**
-     * <code>uint32 stage_id = 2;</code>
-     * @return The stageId.
-     */
-    @java.lang.Override
-    public int getStageId() {
-      return stageId_;
-    }
-
-    public static final int CHALLENGE_ID_FIELD_NUMBER = 7;
+    public static final int CHALLENGE_ID_FIELD_NUMBER = 2;
     private int challengeId_;
     /**
-     * <code>uint32 challenge_id = 7;</code>
+     * <code>uint32 challenge_id = 2;</code>
      * @return The challengeId.
      */
     @java.lang.Override
     public int getChallengeId() {
       return challengeId_;
+    }
+
+    public static final int STAGE_ID_FIELD_NUMBER = 1;
+    private int stageId_;
+    /**
+     * <code>uint32 stage_id = 1;</code>
+     * @return The stageId.
+     */
+    @java.lang.Override
+    public int getStageId() {
+      return stageId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -161,10 +165,10 @@ public final class LanternRiteStartFireworksReformReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (stageId_ != 0) {
-        output.writeUInt32(2, stageId_);
+        output.writeUInt32(1, stageId_);
       }
       if (challengeId_ != 0) {
-        output.writeUInt32(7, challengeId_);
+        output.writeUInt32(2, challengeId_);
       }
       unknownFields.writeTo(output);
     }
@@ -177,11 +181,11 @@ public final class LanternRiteStartFireworksReformReqOuterClass {
       size = 0;
       if (stageId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, stageId_);
+          .computeUInt32Size(1, stageId_);
       }
       if (challengeId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, challengeId_);
+          .computeUInt32Size(2, challengeId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -198,10 +202,10 @@ public final class LanternRiteStartFireworksReformReqOuterClass {
       }
       emu.grasscutter.net.proto.LanternRiteStartFireworksReformReqOuterClass.LanternRiteStartFireworksReformReq other = (emu.grasscutter.net.proto.LanternRiteStartFireworksReformReqOuterClass.LanternRiteStartFireworksReformReq) obj;
 
-      if (getStageId()
-          != other.getStageId()) return false;
       if (getChallengeId()
           != other.getChallengeId()) return false;
+      if (getStageId()
+          != other.getStageId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -213,10 +217,10 @@ public final class LanternRiteStartFireworksReformReqOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + STAGE_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getStageId();
       hash = (37 * hash) + CHALLENGE_ID_FIELD_NUMBER;
       hash = (53 * hash) + getChallengeId();
+      hash = (37 * hash) + STAGE_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getStageId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -314,10 +318,14 @@ public final class LanternRiteStartFireworksReformReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 8518
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 8200;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code LanternRiteStartFireworksReformReq}
@@ -357,9 +365,9 @@ public final class LanternRiteStartFireworksReformReqOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        stageId_ = 0;
-
         challengeId_ = 0;
+
+        stageId_ = 0;
 
         return this;
       }
@@ -387,8 +395,8 @@ public final class LanternRiteStartFireworksReformReqOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.LanternRiteStartFireworksReformReqOuterClass.LanternRiteStartFireworksReformReq buildPartial() {
         emu.grasscutter.net.proto.LanternRiteStartFireworksReformReqOuterClass.LanternRiteStartFireworksReformReq result = new emu.grasscutter.net.proto.LanternRiteStartFireworksReformReqOuterClass.LanternRiteStartFireworksReformReq(this);
-        result.stageId_ = stageId_;
         result.challengeId_ = challengeId_;
+        result.stageId_ = stageId_;
         onBuilt();
         return result;
       }
@@ -437,11 +445,11 @@ public final class LanternRiteStartFireworksReformReqOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.LanternRiteStartFireworksReformReqOuterClass.LanternRiteStartFireworksReformReq other) {
         if (other == emu.grasscutter.net.proto.LanternRiteStartFireworksReformReqOuterClass.LanternRiteStartFireworksReformReq.getDefaultInstance()) return this;
-        if (other.getStageId() != 0) {
-          setStageId(other.getStageId());
-        }
         if (other.getChallengeId() != 0) {
           setChallengeId(other.getChallengeId());
+        }
+        if (other.getStageId() != 0) {
+          setStageId(other.getStageId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -472,40 +480,9 @@ public final class LanternRiteStartFireworksReformReqOuterClass {
         return this;
       }
 
-      private int stageId_ ;
-      /**
-       * <code>uint32 stage_id = 2;</code>
-       * @return The stageId.
-       */
-      @java.lang.Override
-      public int getStageId() {
-        return stageId_;
-      }
-      /**
-       * <code>uint32 stage_id = 2;</code>
-       * @param value The stageId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setStageId(int value) {
-        
-        stageId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 stage_id = 2;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearStageId() {
-        
-        stageId_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int challengeId_ ;
       /**
-       * <code>uint32 challenge_id = 7;</code>
+       * <code>uint32 challenge_id = 2;</code>
        * @return The challengeId.
        */
       @java.lang.Override
@@ -513,7 +490,7 @@ public final class LanternRiteStartFireworksReformReqOuterClass {
         return challengeId_;
       }
       /**
-       * <code>uint32 challenge_id = 7;</code>
+       * <code>uint32 challenge_id = 2;</code>
        * @param value The challengeId to set.
        * @return This builder for chaining.
        */
@@ -524,12 +501,43 @@ public final class LanternRiteStartFireworksReformReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 challenge_id = 7;</code>
+       * <code>uint32 challenge_id = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearChallengeId() {
         
         challengeId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int stageId_ ;
+      /**
+       * <code>uint32 stage_id = 1;</code>
+       * @return The stageId.
+       */
+      @java.lang.Override
+      public int getStageId() {
+        return stageId_;
+      }
+      /**
+       * <code>uint32 stage_id = 1;</code>
+       * @param value The stageId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setStageId(int value) {
+        
+        stageId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 stage_id = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearStageId() {
+        
+        stageId_ = 0;
         onChanged();
         return this;
       }
@@ -602,7 +610,7 @@ public final class LanternRiteStartFireworksReformReqOuterClass {
     java.lang.String[] descriptorData = {
       "\n(LanternRiteStartFireworksReformReq.pro" +
       "to\"L\n\"LanternRiteStartFireworksReformReq" +
-      "\022\020\n\010stage_id\030\002 \001(\r\022\024\n\014challenge_id\030\007 \001(\r" +
+      "\022\024\n\014challenge_id\030\002 \001(\r\022\020\n\010stage_id\030\001 \001(\r" +
       "B\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -614,7 +622,7 @@ public final class LanternRiteStartFireworksReformReqOuterClass {
     internal_static_LanternRiteStartFireworksReformReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_LanternRiteStartFireworksReformReq_descriptor,
-        new java.lang.String[] { "StageId", "ChallengeId", });
+        new java.lang.String[] { "ChallengeId", "StageId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

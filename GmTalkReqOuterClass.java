@@ -19,12 +19,12 @@ public final class GmTalkReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>string msg = 13;</code>
+     * <code>string msg = 7;</code>
      * @return The msg.
      */
     java.lang.String getMsg();
     /**
-     * <code>string msg = 13;</code>
+     * <code>string msg = 7;</code>
      * @return The bytes for msg.
      */
     com.google.protobuf.ByteString
@@ -32,10 +32,14 @@ public final class GmTalkReqOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 98
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 30;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code GmTalkReq}
@@ -83,7 +87,7 @@ public final class GmTalkReqOuterClass {
             case 0:
               done = true;
               break;
-            case 106: {
+            case 58: {
               java.lang.String s = input.readStringRequireUtf8();
 
               msg_ = s;
@@ -121,10 +125,10 @@ public final class GmTalkReqOuterClass {
               emu.grasscutter.net.proto.GmTalkReqOuterClass.GmTalkReq.class, emu.grasscutter.net.proto.GmTalkReqOuterClass.GmTalkReq.Builder.class);
     }
 
-    public static final int MSG_FIELD_NUMBER = 13;
+    public static final int MSG_FIELD_NUMBER = 7;
     private volatile java.lang.Object msg_;
     /**
-     * <code>string msg = 13;</code>
+     * <code>string msg = 7;</code>
      * @return The msg.
      */
     @java.lang.Override
@@ -141,7 +145,7 @@ public final class GmTalkReqOuterClass {
       }
     }
     /**
-     * <code>string msg = 13;</code>
+     * <code>string msg = 7;</code>
      * @return The bytes for msg.
      */
     @java.lang.Override
@@ -174,7 +178,7 @@ public final class GmTalkReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(msg_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 13, msg_);
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 7, msg_);
       }
       unknownFields.writeTo(output);
     }
@@ -186,7 +190,7 @@ public final class GmTalkReqOuterClass {
 
       size = 0;
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(msg_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(13, msg_);
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(7, msg_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -315,10 +319,14 @@ public final class GmTalkReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 98
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 30;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code GmTalkReq}
@@ -470,7 +478,7 @@ public final class GmTalkReqOuterClass {
 
       private java.lang.Object msg_ = "";
       /**
-       * <code>string msg = 13;</code>
+       * <code>string msg = 7;</code>
        * @return The msg.
        */
       public java.lang.String getMsg() {
@@ -486,7 +494,7 @@ public final class GmTalkReqOuterClass {
         }
       }
       /**
-       * <code>string msg = 13;</code>
+       * <code>string msg = 7;</code>
        * @return The bytes for msg.
        */
       public com.google.protobuf.ByteString
@@ -503,7 +511,7 @@ public final class GmTalkReqOuterClass {
         }
       }
       /**
-       * <code>string msg = 13;</code>
+       * <code>string msg = 7;</code>
        * @param value The msg to set.
        * @return This builder for chaining.
        */
@@ -518,7 +526,7 @@ public final class GmTalkReqOuterClass {
         return this;
       }
       /**
-       * <code>string msg = 13;</code>
+       * <code>string msg = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearMsg() {
@@ -528,7 +536,7 @@ public final class GmTalkReqOuterClass {
         return this;
       }
       /**
-       * <code>string msg = 13;</code>
+       * <code>string msg = 7;</code>
        * @param value The bytes for msg to set.
        * @return This builder for chaining.
        */
@@ -610,7 +618,7 @@ public final class GmTalkReqOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\017GmTalkReq.proto\"\030\n\tGmTalkReq\022\013\n\003msg\030\r " +
+      "\n\017GmTalkReq.proto\"\030\n\tGmTalkReq\022\013\n\003msg\030\007 " +
       "\001(\tB\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

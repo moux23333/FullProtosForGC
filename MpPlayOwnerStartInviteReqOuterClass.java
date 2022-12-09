@@ -19,23 +19,27 @@ public final class MpPlayOwnerStartInviteReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 mp_play_id = 3;</code>
-     * @return The mpPlayId.
-     */
-    int getMpPlayId();
-
-    /**
-     * <code>bool is_skip_match = 6;</code>
+     * <code>bool is_skip_match = 9;</code>
      * @return The isSkipMatch.
      */
     boolean getIsSkipMatch();
+
+    /**
+     * <code>uint32 mp_play_id = 10;</code>
+     * @return The mpPlayId.
+     */
+    int getMpPlayId();
   }
   /**
    * <pre>
-   * CmdId: 1837
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 1809;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code MpPlayOwnerStartInviteReq}
@@ -82,14 +86,14 @@ public final class MpPlayOwnerStartInviteReqOuterClass {
             case 0:
               done = true;
               break;
-            case 24: {
-
-              mpPlayId_ = input.readUInt32();
-              break;
-            }
-            case 48: {
+            case 72: {
 
               isSkipMatch_ = input.readBool();
+              break;
+            }
+            case 80: {
+
+              mpPlayId_ = input.readUInt32();
               break;
             }
             default: {
@@ -124,26 +128,26 @@ public final class MpPlayOwnerStartInviteReqOuterClass {
               emu.grasscutter.net.proto.MpPlayOwnerStartInviteReqOuterClass.MpPlayOwnerStartInviteReq.class, emu.grasscutter.net.proto.MpPlayOwnerStartInviteReqOuterClass.MpPlayOwnerStartInviteReq.Builder.class);
     }
 
-    public static final int MP_PLAY_ID_FIELD_NUMBER = 3;
-    private int mpPlayId_;
-    /**
-     * <code>uint32 mp_play_id = 3;</code>
-     * @return The mpPlayId.
-     */
-    @java.lang.Override
-    public int getMpPlayId() {
-      return mpPlayId_;
-    }
-
-    public static final int IS_SKIP_MATCH_FIELD_NUMBER = 6;
+    public static final int IS_SKIP_MATCH_FIELD_NUMBER = 9;
     private boolean isSkipMatch_;
     /**
-     * <code>bool is_skip_match = 6;</code>
+     * <code>bool is_skip_match = 9;</code>
      * @return The isSkipMatch.
      */
     @java.lang.Override
     public boolean getIsSkipMatch() {
       return isSkipMatch_;
+    }
+
+    public static final int MP_PLAY_ID_FIELD_NUMBER = 10;
+    private int mpPlayId_;
+    /**
+     * <code>uint32 mp_play_id = 10;</code>
+     * @return The mpPlayId.
+     */
+    @java.lang.Override
+    public int getMpPlayId() {
+      return mpPlayId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -160,11 +164,11 @@ public final class MpPlayOwnerStartInviteReqOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (mpPlayId_ != 0) {
-        output.writeUInt32(3, mpPlayId_);
-      }
       if (isSkipMatch_ != false) {
-        output.writeBool(6, isSkipMatch_);
+        output.writeBool(9, isSkipMatch_);
+      }
+      if (mpPlayId_ != 0) {
+        output.writeUInt32(10, mpPlayId_);
       }
       unknownFields.writeTo(output);
     }
@@ -175,13 +179,13 @@ public final class MpPlayOwnerStartInviteReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (mpPlayId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, mpPlayId_);
-      }
       if (isSkipMatch_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(6, isSkipMatch_);
+          .computeBoolSize(9, isSkipMatch_);
+      }
+      if (mpPlayId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(10, mpPlayId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -198,10 +202,10 @@ public final class MpPlayOwnerStartInviteReqOuterClass {
       }
       emu.grasscutter.net.proto.MpPlayOwnerStartInviteReqOuterClass.MpPlayOwnerStartInviteReq other = (emu.grasscutter.net.proto.MpPlayOwnerStartInviteReqOuterClass.MpPlayOwnerStartInviteReq) obj;
 
-      if (getMpPlayId()
-          != other.getMpPlayId()) return false;
       if (getIsSkipMatch()
           != other.getIsSkipMatch()) return false;
+      if (getMpPlayId()
+          != other.getMpPlayId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -213,11 +217,11 @@ public final class MpPlayOwnerStartInviteReqOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + MP_PLAY_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getMpPlayId();
       hash = (37 * hash) + IS_SKIP_MATCH_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsSkipMatch());
+      hash = (37 * hash) + MP_PLAY_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getMpPlayId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -315,10 +319,14 @@ public final class MpPlayOwnerStartInviteReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 1837
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 1809;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code MpPlayOwnerStartInviteReq}
@@ -358,9 +366,9 @@ public final class MpPlayOwnerStartInviteReqOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        mpPlayId_ = 0;
-
         isSkipMatch_ = false;
+
+        mpPlayId_ = 0;
 
         return this;
       }
@@ -388,8 +396,8 @@ public final class MpPlayOwnerStartInviteReqOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.MpPlayOwnerStartInviteReqOuterClass.MpPlayOwnerStartInviteReq buildPartial() {
         emu.grasscutter.net.proto.MpPlayOwnerStartInviteReqOuterClass.MpPlayOwnerStartInviteReq result = new emu.grasscutter.net.proto.MpPlayOwnerStartInviteReqOuterClass.MpPlayOwnerStartInviteReq(this);
-        result.mpPlayId_ = mpPlayId_;
         result.isSkipMatch_ = isSkipMatch_;
+        result.mpPlayId_ = mpPlayId_;
         onBuilt();
         return result;
       }
@@ -438,11 +446,11 @@ public final class MpPlayOwnerStartInviteReqOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.MpPlayOwnerStartInviteReqOuterClass.MpPlayOwnerStartInviteReq other) {
         if (other == emu.grasscutter.net.proto.MpPlayOwnerStartInviteReqOuterClass.MpPlayOwnerStartInviteReq.getDefaultInstance()) return this;
-        if (other.getMpPlayId() != 0) {
-          setMpPlayId(other.getMpPlayId());
-        }
         if (other.getIsSkipMatch() != false) {
           setIsSkipMatch(other.getIsSkipMatch());
+        }
+        if (other.getMpPlayId() != 0) {
+          setMpPlayId(other.getMpPlayId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -473,40 +481,9 @@ public final class MpPlayOwnerStartInviteReqOuterClass {
         return this;
       }
 
-      private int mpPlayId_ ;
-      /**
-       * <code>uint32 mp_play_id = 3;</code>
-       * @return The mpPlayId.
-       */
-      @java.lang.Override
-      public int getMpPlayId() {
-        return mpPlayId_;
-      }
-      /**
-       * <code>uint32 mp_play_id = 3;</code>
-       * @param value The mpPlayId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setMpPlayId(int value) {
-        
-        mpPlayId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 mp_play_id = 3;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearMpPlayId() {
-        
-        mpPlayId_ = 0;
-        onChanged();
-        return this;
-      }
-
       private boolean isSkipMatch_ ;
       /**
-       * <code>bool is_skip_match = 6;</code>
+       * <code>bool is_skip_match = 9;</code>
        * @return The isSkipMatch.
        */
       @java.lang.Override
@@ -514,7 +491,7 @@ public final class MpPlayOwnerStartInviteReqOuterClass {
         return isSkipMatch_;
       }
       /**
-       * <code>bool is_skip_match = 6;</code>
+       * <code>bool is_skip_match = 9;</code>
        * @param value The isSkipMatch to set.
        * @return This builder for chaining.
        */
@@ -525,12 +502,43 @@ public final class MpPlayOwnerStartInviteReqOuterClass {
         return this;
       }
       /**
-       * <code>bool is_skip_match = 6;</code>
+       * <code>bool is_skip_match = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsSkipMatch() {
         
         isSkipMatch_ = false;
+        onChanged();
+        return this;
+      }
+
+      private int mpPlayId_ ;
+      /**
+       * <code>uint32 mp_play_id = 10;</code>
+       * @return The mpPlayId.
+       */
+      @java.lang.Override
+      public int getMpPlayId() {
+        return mpPlayId_;
+      }
+      /**
+       * <code>uint32 mp_play_id = 10;</code>
+       * @param value The mpPlayId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setMpPlayId(int value) {
+        
+        mpPlayId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 mp_play_id = 10;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearMpPlayId() {
+        
+        mpPlayId_ = 0;
         onChanged();
         return this;
       }
@@ -602,8 +610,8 @@ public final class MpPlayOwnerStartInviteReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\037MpPlayOwnerStartInviteReq.proto\"F\n\031MpP" +
-      "layOwnerStartInviteReq\022\022\n\nmp_play_id\030\003 \001" +
-      "(\r\022\025\n\ris_skip_match\030\006 \001(\010B\033\n\031emu.grasscu" +
+      "layOwnerStartInviteReq\022\025\n\ris_skip_match\030" +
+      "\t \001(\010\022\022\n\nmp_play_id\030\n \001(\rB\033\n\031emu.grasscu" +
       "tter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -615,7 +623,7 @@ public final class MpPlayOwnerStartInviteReqOuterClass {
     internal_static_MpPlayOwnerStartInviteReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_MpPlayOwnerStartInviteReq_descriptor,
-        new java.lang.String[] { "MpPlayId", "IsSkipMatch", });
+        new java.lang.String[] { "IsSkipMatch", "MpPlayId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

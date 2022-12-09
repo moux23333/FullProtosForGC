@@ -19,23 +19,27 @@ public final class ProjectorOptionReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 op_type = 7;</code>
+     * <code>uint32 op_type = 2;</code>
      * @return The opType.
      */
     int getOpType();
 
     /**
-     * <code>uint32 entity_id = 10;</code>
+     * <code>uint32 entity_id = 8;</code>
      * @return The entityId.
      */
     int getEntityId();
   }
   /**
    * <pre>
-   * CmdId: 863
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 803;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code ProjectorOptionReq}
@@ -82,12 +86,12 @@ public final class ProjectorOptionReqOuterClass {
             case 0:
               done = true;
               break;
-            case 56: {
+            case 16: {
 
               opType_ = input.readUInt32();
               break;
             }
-            case 80: {
+            case 64: {
 
               entityId_ = input.readUInt32();
               break;
@@ -241,10 +245,10 @@ public final class ProjectorOptionReqOuterClass {
       // @@protoc_insertion_point(enum_scope:ProjectorOptionReq.ProjectorOpType)
     }
 
-    public static final int OP_TYPE_FIELD_NUMBER = 7;
+    public static final int OP_TYPE_FIELD_NUMBER = 2;
     private int opType_;
     /**
-     * <code>uint32 op_type = 7;</code>
+     * <code>uint32 op_type = 2;</code>
      * @return The opType.
      */
     @java.lang.Override
@@ -252,10 +256,10 @@ public final class ProjectorOptionReqOuterClass {
       return opType_;
     }
 
-    public static final int ENTITY_ID_FIELD_NUMBER = 10;
+    public static final int ENTITY_ID_FIELD_NUMBER = 8;
     private int entityId_;
     /**
-     * <code>uint32 entity_id = 10;</code>
+     * <code>uint32 entity_id = 8;</code>
      * @return The entityId.
      */
     @java.lang.Override
@@ -278,10 +282,10 @@ public final class ProjectorOptionReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (opType_ != 0) {
-        output.writeUInt32(7, opType_);
+        output.writeUInt32(2, opType_);
       }
       if (entityId_ != 0) {
-        output.writeUInt32(10, entityId_);
+        output.writeUInt32(8, entityId_);
       }
       unknownFields.writeTo(output);
     }
@@ -294,11 +298,11 @@ public final class ProjectorOptionReqOuterClass {
       size = 0;
       if (opType_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, opType_);
+          .computeUInt32Size(2, opType_);
       }
       if (entityId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, entityId_);
+          .computeUInt32Size(8, entityId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -431,10 +435,14 @@ public final class ProjectorOptionReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 863
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 803;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code ProjectorOptionReq}
@@ -591,7 +599,7 @@ public final class ProjectorOptionReqOuterClass {
 
       private int opType_ ;
       /**
-       * <code>uint32 op_type = 7;</code>
+       * <code>uint32 op_type = 2;</code>
        * @return The opType.
        */
       @java.lang.Override
@@ -599,7 +607,7 @@ public final class ProjectorOptionReqOuterClass {
         return opType_;
       }
       /**
-       * <code>uint32 op_type = 7;</code>
+       * <code>uint32 op_type = 2;</code>
        * @param value The opType to set.
        * @return This builder for chaining.
        */
@@ -610,7 +618,7 @@ public final class ProjectorOptionReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 op_type = 7;</code>
+       * <code>uint32 op_type = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearOpType() {
@@ -622,7 +630,7 @@ public final class ProjectorOptionReqOuterClass {
 
       private int entityId_ ;
       /**
-       * <code>uint32 entity_id = 10;</code>
+       * <code>uint32 entity_id = 8;</code>
        * @return The entityId.
        */
       @java.lang.Override
@@ -630,7 +638,7 @@ public final class ProjectorOptionReqOuterClass {
         return entityId_;
       }
       /**
-       * <code>uint32 entity_id = 10;</code>
+       * <code>uint32 entity_id = 8;</code>
        * @param value The entityId to set.
        * @return This builder for chaining.
        */
@@ -641,7 +649,7 @@ public final class ProjectorOptionReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 entity_id = 10;</code>
+       * <code>uint32 entity_id = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearEntityId() {
@@ -718,8 +726,8 @@ public final class ProjectorOptionReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\030ProjectorOptionReq.proto\"\244\001\n\022Projector" +
-      "OptionReq\022\017\n\007op_type\030\007 \001(\r\022\021\n\tentity_id\030" +
-      "\n \001(\r\"j\n\017ProjectorOpType\022\032\n\026PROJECTOR_OP" +
+      "OptionReq\022\017\n\007op_type\030\002 \001(\r\022\021\n\tentity_id\030" +
+      "\010 \001(\r\"j\n\017ProjectorOpType\022\032\n\026PROJECTOR_OP" +
       "_TYPE_NONE\020\000\022\034\n\030PROJECTOR_OP_TYPE_CREATE" +
       "\020\001\022\035\n\031PROJECTOR_OP_TYPE_DESTROY\020\002B\033\n\031emu" +
       ".grasscutter.net.protob\006proto3"

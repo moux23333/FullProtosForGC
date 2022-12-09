@@ -19,17 +19,21 @@ public final class BackRebornGalleryReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 gallery_id = 15;</code>
+     * <code>uint32 gallery_id = 14;</code>
      * @return The galleryId.
      */
     int getGalleryId();
   }
   /**
    * <pre>
-   * CmdId: 5593
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 5507;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code BackRebornGalleryReq}
@@ -76,7 +80,7 @@ public final class BackRebornGalleryReqOuterClass {
             case 0:
               done = true;
               break;
-            case 120: {
+            case 112: {
 
               galleryId_ = input.readUInt32();
               break;
@@ -113,10 +117,10 @@ public final class BackRebornGalleryReqOuterClass {
               emu.grasscutter.net.proto.BackRebornGalleryReqOuterClass.BackRebornGalleryReq.class, emu.grasscutter.net.proto.BackRebornGalleryReqOuterClass.BackRebornGalleryReq.Builder.class);
     }
 
-    public static final int GALLERY_ID_FIELD_NUMBER = 15;
+    public static final int GALLERY_ID_FIELD_NUMBER = 14;
     private int galleryId_;
     /**
-     * <code>uint32 gallery_id = 15;</code>
+     * <code>uint32 gallery_id = 14;</code>
      * @return The galleryId.
      */
     @java.lang.Override
@@ -139,7 +143,7 @@ public final class BackRebornGalleryReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (galleryId_ != 0) {
-        output.writeUInt32(15, galleryId_);
+        output.writeUInt32(14, galleryId_);
       }
       unknownFields.writeTo(output);
     }
@@ -152,7 +156,7 @@ public final class BackRebornGalleryReqOuterClass {
       size = 0;
       if (galleryId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, galleryId_);
+          .computeUInt32Size(14, galleryId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -281,10 +285,14 @@ public final class BackRebornGalleryReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 5593
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 5507;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code BackRebornGalleryReq}
@@ -435,7 +443,7 @@ public final class BackRebornGalleryReqOuterClass {
 
       private int galleryId_ ;
       /**
-       * <code>uint32 gallery_id = 15;</code>
+       * <code>uint32 gallery_id = 14;</code>
        * @return The galleryId.
        */
       @java.lang.Override
@@ -443,7 +451,7 @@ public final class BackRebornGalleryReqOuterClass {
         return galleryId_;
       }
       /**
-       * <code>uint32 gallery_id = 15;</code>
+       * <code>uint32 gallery_id = 14;</code>
        * @param value The galleryId to set.
        * @return This builder for chaining.
        */
@@ -454,7 +462,7 @@ public final class BackRebornGalleryReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 gallery_id = 15;</code>
+       * <code>uint32 gallery_id = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearGalleryId() {
@@ -531,7 +539,7 @@ public final class BackRebornGalleryReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\032BackRebornGalleryReq.proto\"*\n\024BackRebo" +
-      "rnGalleryReq\022\022\n\ngallery_id\030\017 \001(\rB\033\n\031emu." +
+      "rnGalleryReq\022\022\n\ngallery_id\030\016 \001(\rB\033\n\031emu." +
       "grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

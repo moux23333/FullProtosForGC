@@ -19,22 +19,26 @@ public final class GCGDSCardNumChangeNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 card_id = 4;</code>
-     * @return The cardId.
-     */
-    int getCardId();
-
-    /**
-     * <code>uint32 num = 10;</code>
+     * <code>uint32 num = 1;</code>
      * @return The num.
      */
     int getNum();
+
+    /**
+     * <code>uint32 card_id = 15;</code>
+     * @return The cardId.
+     */
+    int getCardId();
   }
   /**
    * <pre>
-   * CmdId: 7358
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 7244;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code GCGDSCardNumChangeNotify}
@@ -81,14 +85,14 @@ public final class GCGDSCardNumChangeNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 32: {
-
-              cardId_ = input.readUInt32();
-              break;
-            }
-            case 80: {
+            case 8: {
 
               num_ = input.readUInt32();
+              break;
+            }
+            case 120: {
+
+              cardId_ = input.readUInt32();
               break;
             }
             default: {
@@ -123,26 +127,26 @@ public final class GCGDSCardNumChangeNotifyOuterClass {
               emu.grasscutter.net.proto.GCGDSCardNumChangeNotifyOuterClass.GCGDSCardNumChangeNotify.class, emu.grasscutter.net.proto.GCGDSCardNumChangeNotifyOuterClass.GCGDSCardNumChangeNotify.Builder.class);
     }
 
-    public static final int CARD_ID_FIELD_NUMBER = 4;
-    private int cardId_;
-    /**
-     * <code>uint32 card_id = 4;</code>
-     * @return The cardId.
-     */
-    @java.lang.Override
-    public int getCardId() {
-      return cardId_;
-    }
-
-    public static final int NUM_FIELD_NUMBER = 10;
+    public static final int NUM_FIELD_NUMBER = 1;
     private int num_;
     /**
-     * <code>uint32 num = 10;</code>
+     * <code>uint32 num = 1;</code>
      * @return The num.
      */
     @java.lang.Override
     public int getNum() {
       return num_;
+    }
+
+    public static final int CARD_ID_FIELD_NUMBER = 15;
+    private int cardId_;
+    /**
+     * <code>uint32 card_id = 15;</code>
+     * @return The cardId.
+     */
+    @java.lang.Override
+    public int getCardId() {
+      return cardId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -159,11 +163,11 @@ public final class GCGDSCardNumChangeNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (cardId_ != 0) {
-        output.writeUInt32(4, cardId_);
-      }
       if (num_ != 0) {
-        output.writeUInt32(10, num_);
+        output.writeUInt32(1, num_);
+      }
+      if (cardId_ != 0) {
+        output.writeUInt32(15, cardId_);
       }
       unknownFields.writeTo(output);
     }
@@ -174,13 +178,13 @@ public final class GCGDSCardNumChangeNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (cardId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, cardId_);
-      }
       if (num_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, num_);
+          .computeUInt32Size(1, num_);
+      }
+      if (cardId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(15, cardId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -197,10 +201,10 @@ public final class GCGDSCardNumChangeNotifyOuterClass {
       }
       emu.grasscutter.net.proto.GCGDSCardNumChangeNotifyOuterClass.GCGDSCardNumChangeNotify other = (emu.grasscutter.net.proto.GCGDSCardNumChangeNotifyOuterClass.GCGDSCardNumChangeNotify) obj;
 
-      if (getCardId()
-          != other.getCardId()) return false;
       if (getNum()
           != other.getNum()) return false;
+      if (getCardId()
+          != other.getCardId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -212,10 +216,10 @@ public final class GCGDSCardNumChangeNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + CARD_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getCardId();
       hash = (37 * hash) + NUM_FIELD_NUMBER;
       hash = (53 * hash) + getNum();
+      hash = (37 * hash) + CARD_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getCardId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -313,9 +317,13 @@ public final class GCGDSCardNumChangeNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 7358
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 7244;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code GCGDSCardNumChangeNotify}
@@ -355,9 +363,9 @@ public final class GCGDSCardNumChangeNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        cardId_ = 0;
-
         num_ = 0;
+
+        cardId_ = 0;
 
         return this;
       }
@@ -385,8 +393,8 @@ public final class GCGDSCardNumChangeNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.GCGDSCardNumChangeNotifyOuterClass.GCGDSCardNumChangeNotify buildPartial() {
         emu.grasscutter.net.proto.GCGDSCardNumChangeNotifyOuterClass.GCGDSCardNumChangeNotify result = new emu.grasscutter.net.proto.GCGDSCardNumChangeNotifyOuterClass.GCGDSCardNumChangeNotify(this);
-        result.cardId_ = cardId_;
         result.num_ = num_;
+        result.cardId_ = cardId_;
         onBuilt();
         return result;
       }
@@ -435,11 +443,11 @@ public final class GCGDSCardNumChangeNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.GCGDSCardNumChangeNotifyOuterClass.GCGDSCardNumChangeNotify other) {
         if (other == emu.grasscutter.net.proto.GCGDSCardNumChangeNotifyOuterClass.GCGDSCardNumChangeNotify.getDefaultInstance()) return this;
-        if (other.getCardId() != 0) {
-          setCardId(other.getCardId());
-        }
         if (other.getNum() != 0) {
           setNum(other.getNum());
+        }
+        if (other.getCardId() != 0) {
+          setCardId(other.getCardId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -470,40 +478,9 @@ public final class GCGDSCardNumChangeNotifyOuterClass {
         return this;
       }
 
-      private int cardId_ ;
-      /**
-       * <code>uint32 card_id = 4;</code>
-       * @return The cardId.
-       */
-      @java.lang.Override
-      public int getCardId() {
-        return cardId_;
-      }
-      /**
-       * <code>uint32 card_id = 4;</code>
-       * @param value The cardId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setCardId(int value) {
-        
-        cardId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 card_id = 4;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearCardId() {
-        
-        cardId_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int num_ ;
       /**
-       * <code>uint32 num = 10;</code>
+       * <code>uint32 num = 1;</code>
        * @return The num.
        */
       @java.lang.Override
@@ -511,7 +488,7 @@ public final class GCGDSCardNumChangeNotifyOuterClass {
         return num_;
       }
       /**
-       * <code>uint32 num = 10;</code>
+       * <code>uint32 num = 1;</code>
        * @param value The num to set.
        * @return This builder for chaining.
        */
@@ -522,12 +499,43 @@ public final class GCGDSCardNumChangeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 num = 10;</code>
+       * <code>uint32 num = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearNum() {
         
         num_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int cardId_ ;
+      /**
+       * <code>uint32 card_id = 15;</code>
+       * @return The cardId.
+       */
+      @java.lang.Override
+      public int getCardId() {
+        return cardId_;
+      }
+      /**
+       * <code>uint32 card_id = 15;</code>
+       * @param value The cardId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setCardId(int value) {
+        
+        cardId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 card_id = 15;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearCardId() {
+        
+        cardId_ = 0;
         onChanged();
         return this;
       }
@@ -599,8 +607,8 @@ public final class GCGDSCardNumChangeNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\036GCGDSCardNumChangeNotify.proto\"8\n\030GCGD" +
-      "SCardNumChangeNotify\022\017\n\007card_id\030\004 \001(\r\022\013\n" +
-      "\003num\030\n \001(\rB\033\n\031emu.grasscutter.net.protob" +
+      "SCardNumChangeNotify\022\013\n\003num\030\001 \001(\r\022\017\n\007car" +
+      "d_id\030\017 \001(\rB\033\n\031emu.grasscutter.net.protob" +
       "\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -612,7 +620,7 @@ public final class GCGDSCardNumChangeNotifyOuterClass {
     internal_static_GCGDSCardNumChangeNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GCGDSCardNumChangeNotify_descriptor,
-        new java.lang.String[] { "CardId", "Num", });
+        new java.lang.String[] { "Num", "CardId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

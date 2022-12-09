@@ -19,10 +19,16 @@ public final class HomeBalloonGallerySettleNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 gallery_id = 1;</code>
+     * <code>uint32 gallery_id = 8;</code>
      * @return The galleryId.
      */
     int getGalleryId();
+
+    /**
+     * <code>uint32 rank = 13;</code>
+     * @return The rank.
+     */
+    int getRank();
 
     /**
      * <code>.BalloonGallerySettleInfo settle_info = 5;</code>
@@ -40,22 +46,20 @@ public final class HomeBalloonGallerySettleNotifyOuterClass {
     emu.grasscutter.net.proto.BalloonGallerySettleInfoOuterClass.BalloonGallerySettleInfoOrBuilder getSettleInfoOrBuilder();
 
     /**
-     * <code>uint32 rank = 6;</code>
-     * @return The rank.
-     */
-    int getRank();
-
-    /**
-     * <code>bool is_new_record = 4;</code>
+     * <code>bool is_new_record = 9;</code>
      * @return The isNewRecord.
      */
     boolean getIsNewRecord();
   }
   /**
    * <pre>
-   * CmdId: 4811
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 4604;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code HomeBalloonGallerySettleNotify}
@@ -102,16 +106,6 @@ public final class HomeBalloonGallerySettleNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
-
-              galleryId_ = input.readUInt32();
-              break;
-            }
-            case 32: {
-
-              isNewRecord_ = input.readBool();
-              break;
-            }
             case 42: {
               emu.grasscutter.net.proto.BalloonGallerySettleInfoOuterClass.BalloonGallerySettleInfo.Builder subBuilder = null;
               if (settleInfo_ != null) {
@@ -125,7 +119,17 @@ public final class HomeBalloonGallerySettleNotifyOuterClass {
 
               break;
             }
-            case 48: {
+            case 64: {
+
+              galleryId_ = input.readUInt32();
+              break;
+            }
+            case 72: {
+
+              isNewRecord_ = input.readBool();
+              break;
+            }
+            case 104: {
 
               rank_ = input.readUInt32();
               break;
@@ -162,15 +166,26 @@ public final class HomeBalloonGallerySettleNotifyOuterClass {
               emu.grasscutter.net.proto.HomeBalloonGallerySettleNotifyOuterClass.HomeBalloonGallerySettleNotify.class, emu.grasscutter.net.proto.HomeBalloonGallerySettleNotifyOuterClass.HomeBalloonGallerySettleNotify.Builder.class);
     }
 
-    public static final int GALLERY_ID_FIELD_NUMBER = 1;
+    public static final int GALLERY_ID_FIELD_NUMBER = 8;
     private int galleryId_;
     /**
-     * <code>uint32 gallery_id = 1;</code>
+     * <code>uint32 gallery_id = 8;</code>
      * @return The galleryId.
      */
     @java.lang.Override
     public int getGalleryId() {
       return galleryId_;
+    }
+
+    public static final int RANK_FIELD_NUMBER = 13;
+    private int rank_;
+    /**
+     * <code>uint32 rank = 13;</code>
+     * @return The rank.
+     */
+    @java.lang.Override
+    public int getRank() {
+      return rank_;
     }
 
     public static final int SETTLE_INFO_FIELD_NUMBER = 5;
@@ -199,21 +214,10 @@ public final class HomeBalloonGallerySettleNotifyOuterClass {
       return getSettleInfo();
     }
 
-    public static final int RANK_FIELD_NUMBER = 6;
-    private int rank_;
-    /**
-     * <code>uint32 rank = 6;</code>
-     * @return The rank.
-     */
-    @java.lang.Override
-    public int getRank() {
-      return rank_;
-    }
-
-    public static final int IS_NEW_RECORD_FIELD_NUMBER = 4;
+    public static final int IS_NEW_RECORD_FIELD_NUMBER = 9;
     private boolean isNewRecord_;
     /**
-     * <code>bool is_new_record = 4;</code>
+     * <code>bool is_new_record = 9;</code>
      * @return The isNewRecord.
      */
     @java.lang.Override
@@ -235,17 +239,17 @@ public final class HomeBalloonGallerySettleNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (galleryId_ != 0) {
-        output.writeUInt32(1, galleryId_);
-      }
-      if (isNewRecord_ != false) {
-        output.writeBool(4, isNewRecord_);
-      }
       if (settleInfo_ != null) {
         output.writeMessage(5, getSettleInfo());
       }
+      if (galleryId_ != 0) {
+        output.writeUInt32(8, galleryId_);
+      }
+      if (isNewRecord_ != false) {
+        output.writeBool(9, isNewRecord_);
+      }
       if (rank_ != 0) {
-        output.writeUInt32(6, rank_);
+        output.writeUInt32(13, rank_);
       }
       unknownFields.writeTo(output);
     }
@@ -256,21 +260,21 @@ public final class HomeBalloonGallerySettleNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (galleryId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, galleryId_);
-      }
-      if (isNewRecord_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(4, isNewRecord_);
-      }
       if (settleInfo_ != null) {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(5, getSettleInfo());
       }
+      if (galleryId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(8, galleryId_);
+      }
+      if (isNewRecord_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(9, isNewRecord_);
+      }
       if (rank_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, rank_);
+          .computeUInt32Size(13, rank_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -289,13 +293,13 @@ public final class HomeBalloonGallerySettleNotifyOuterClass {
 
       if (getGalleryId()
           != other.getGalleryId()) return false;
+      if (getRank()
+          != other.getRank()) return false;
       if (hasSettleInfo() != other.hasSettleInfo()) return false;
       if (hasSettleInfo()) {
         if (!getSettleInfo()
             .equals(other.getSettleInfo())) return false;
       }
-      if (getRank()
-          != other.getRank()) return false;
       if (getIsNewRecord()
           != other.getIsNewRecord()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
@@ -311,12 +315,12 @@ public final class HomeBalloonGallerySettleNotifyOuterClass {
       hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + GALLERY_ID_FIELD_NUMBER;
       hash = (53 * hash) + getGalleryId();
+      hash = (37 * hash) + RANK_FIELD_NUMBER;
+      hash = (53 * hash) + getRank();
       if (hasSettleInfo()) {
         hash = (37 * hash) + SETTLE_INFO_FIELD_NUMBER;
         hash = (53 * hash) + getSettleInfo().hashCode();
       }
-      hash = (37 * hash) + RANK_FIELD_NUMBER;
-      hash = (53 * hash) + getRank();
       hash = (37 * hash) + IS_NEW_RECORD_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsNewRecord());
@@ -417,9 +421,13 @@ public final class HomeBalloonGallerySettleNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 4811
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 4604;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code HomeBalloonGallerySettleNotify}
@@ -461,14 +469,14 @@ public final class HomeBalloonGallerySettleNotifyOuterClass {
         super.clear();
         galleryId_ = 0;
 
+        rank_ = 0;
+
         if (settleInfoBuilder_ == null) {
           settleInfo_ = null;
         } else {
           settleInfo_ = null;
           settleInfoBuilder_ = null;
         }
-        rank_ = 0;
-
         isNewRecord_ = false;
 
         return this;
@@ -498,12 +506,12 @@ public final class HomeBalloonGallerySettleNotifyOuterClass {
       public emu.grasscutter.net.proto.HomeBalloonGallerySettleNotifyOuterClass.HomeBalloonGallerySettleNotify buildPartial() {
         emu.grasscutter.net.proto.HomeBalloonGallerySettleNotifyOuterClass.HomeBalloonGallerySettleNotify result = new emu.grasscutter.net.proto.HomeBalloonGallerySettleNotifyOuterClass.HomeBalloonGallerySettleNotify(this);
         result.galleryId_ = galleryId_;
+        result.rank_ = rank_;
         if (settleInfoBuilder_ == null) {
           result.settleInfo_ = settleInfo_;
         } else {
           result.settleInfo_ = settleInfoBuilder_.build();
         }
-        result.rank_ = rank_;
         result.isNewRecord_ = isNewRecord_;
         onBuilt();
         return result;
@@ -556,11 +564,11 @@ public final class HomeBalloonGallerySettleNotifyOuterClass {
         if (other.getGalleryId() != 0) {
           setGalleryId(other.getGalleryId());
         }
-        if (other.hasSettleInfo()) {
-          mergeSettleInfo(other.getSettleInfo());
-        }
         if (other.getRank() != 0) {
           setRank(other.getRank());
+        }
+        if (other.hasSettleInfo()) {
+          mergeSettleInfo(other.getSettleInfo());
         }
         if (other.getIsNewRecord() != false) {
           setIsNewRecord(other.getIsNewRecord());
@@ -596,7 +604,7 @@ public final class HomeBalloonGallerySettleNotifyOuterClass {
 
       private int galleryId_ ;
       /**
-       * <code>uint32 gallery_id = 1;</code>
+       * <code>uint32 gallery_id = 8;</code>
        * @return The galleryId.
        */
       @java.lang.Override
@@ -604,7 +612,7 @@ public final class HomeBalloonGallerySettleNotifyOuterClass {
         return galleryId_;
       }
       /**
-       * <code>uint32 gallery_id = 1;</code>
+       * <code>uint32 gallery_id = 8;</code>
        * @param value The galleryId to set.
        * @return This builder for chaining.
        */
@@ -615,12 +623,43 @@ public final class HomeBalloonGallerySettleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 gallery_id = 1;</code>
+       * <code>uint32 gallery_id = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearGalleryId() {
         
         galleryId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int rank_ ;
+      /**
+       * <code>uint32 rank = 13;</code>
+       * @return The rank.
+       */
+      @java.lang.Override
+      public int getRank() {
+        return rank_;
+      }
+      /**
+       * <code>uint32 rank = 13;</code>
+       * @param value The rank to set.
+       * @return This builder for chaining.
+       */
+      public Builder setRank(int value) {
+        
+        rank_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 rank = 13;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearRank() {
+        
+        rank_ = 0;
         onChanged();
         return this;
       }
@@ -744,40 +783,9 @@ public final class HomeBalloonGallerySettleNotifyOuterClass {
         return settleInfoBuilder_;
       }
 
-      private int rank_ ;
-      /**
-       * <code>uint32 rank = 6;</code>
-       * @return The rank.
-       */
-      @java.lang.Override
-      public int getRank() {
-        return rank_;
-      }
-      /**
-       * <code>uint32 rank = 6;</code>
-       * @param value The rank to set.
-       * @return This builder for chaining.
-       */
-      public Builder setRank(int value) {
-        
-        rank_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 rank = 6;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearRank() {
-        
-        rank_ = 0;
-        onChanged();
-        return this;
-      }
-
       private boolean isNewRecord_ ;
       /**
-       * <code>bool is_new_record = 4;</code>
+       * <code>bool is_new_record = 9;</code>
        * @return The isNewRecord.
        */
       @java.lang.Override
@@ -785,7 +793,7 @@ public final class HomeBalloonGallerySettleNotifyOuterClass {
         return isNewRecord_;
       }
       /**
-       * <code>bool is_new_record = 4;</code>
+       * <code>bool is_new_record = 9;</code>
        * @param value The isNewRecord to set.
        * @return This builder for chaining.
        */
@@ -796,7 +804,7 @@ public final class HomeBalloonGallerySettleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>bool is_new_record = 4;</code>
+       * <code>bool is_new_record = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsNewRecord() {
@@ -875,9 +883,9 @@ public final class HomeBalloonGallerySettleNotifyOuterClass {
       "\n$HomeBalloonGallerySettleNotify.proto\032\036" +
       "BalloonGallerySettleInfo.proto\"\211\001\n\036HomeB" +
       "alloonGallerySettleNotify\022\022\n\ngallery_id\030" +
-      "\001 \001(\r\022.\n\013settle_info\030\005 \001(\0132\031.BalloonGall" +
-      "erySettleInfo\022\014\n\004rank\030\006 \001(\r\022\025\n\ris_new_re" +
-      "cord\030\004 \001(\010B\033\n\031emu.grasscutter.net.protob" +
+      "\010 \001(\r\022\014\n\004rank\030\r \001(\r\022.\n\013settle_info\030\005 \001(\013" +
+      "2\031.BalloonGallerySettleInfo\022\025\n\ris_new_re" +
+      "cord\030\t \001(\010B\033\n\031emu.grasscutter.net.protob" +
       "\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -890,7 +898,7 @@ public final class HomeBalloonGallerySettleNotifyOuterClass {
     internal_static_HomeBalloonGallerySettleNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_HomeBalloonGallerySettleNotify_descriptor,
-        new java.lang.String[] { "GalleryId", "SettleInfo", "Rank", "IsNewRecord", });
+        new java.lang.String[] { "GalleryId", "Rank", "SettleInfo", "IsNewRecord", });
     emu.grasscutter.net.proto.BalloonGallerySettleInfoOuterClass.getDescriptor();
   }
 

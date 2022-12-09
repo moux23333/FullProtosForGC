@@ -19,16 +19,10 @@ public final class ArenaChallengeChildChallengeInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 challenge_id = 12;</code>
+     * <code>uint32 challenge_id = 11;</code>
      * @return The challengeId.
      */
     int getChallengeId();
-
-    /**
-     * <code>uint32 challenge_type = 5;</code>
-     * @return The challengeType.
-     */
-    int getChallengeType();
 
     /**
      * <code>uint32 challenge_index = 4;</code>
@@ -37,16 +31,22 @@ public final class ArenaChallengeChildChallengeInfoOuterClass {
     int getChallengeIndex();
 
     /**
-     * <code>bool is_success = 7;</code>
-     * @return The isSuccess.
+     * <code>uint32 challenge_type = 12;</code>
+     * @return The challengeType.
      */
-    boolean getIsSuccess();
+    int getChallengeType();
 
     /**
-     * <code>bool is_settled = 11;</code>
+     * <code>bool is_settled = 2;</code>
      * @return The isSettled.
      */
     boolean getIsSettled();
+
+    /**
+     * <code>bool is_success = 14;</code>
+     * @return The isSuccess.
+     */
+    boolean getIsSuccess();
   }
   /**
    * Protobuf type {@code ArenaChallengeChildChallengeInfo}
@@ -93,29 +93,29 @@ public final class ArenaChallengeChildChallengeInfoOuterClass {
             case 0:
               done = true;
               break;
+            case 16: {
+
+              isSettled_ = input.readBool();
+              break;
+            }
             case 32: {
 
               challengeIndex_ = input.readUInt32();
               break;
             }
-            case 40: {
-
-              challengeType_ = input.readUInt32();
-              break;
-            }
-            case 56: {
-
-              isSuccess_ = input.readBool();
-              break;
-            }
             case 88: {
 
-              isSettled_ = input.readBool();
+              challengeId_ = input.readUInt32();
               break;
             }
             case 96: {
 
-              challengeId_ = input.readUInt32();
+              challengeType_ = input.readUInt32();
+              break;
+            }
+            case 112: {
+
+              isSuccess_ = input.readBool();
               break;
             }
             default: {
@@ -150,26 +150,15 @@ public final class ArenaChallengeChildChallengeInfoOuterClass {
               emu.grasscutter.net.proto.ArenaChallengeChildChallengeInfoOuterClass.ArenaChallengeChildChallengeInfo.class, emu.grasscutter.net.proto.ArenaChallengeChildChallengeInfoOuterClass.ArenaChallengeChildChallengeInfo.Builder.class);
     }
 
-    public static final int CHALLENGE_ID_FIELD_NUMBER = 12;
+    public static final int CHALLENGE_ID_FIELD_NUMBER = 11;
     private int challengeId_;
     /**
-     * <code>uint32 challenge_id = 12;</code>
+     * <code>uint32 challenge_id = 11;</code>
      * @return The challengeId.
      */
     @java.lang.Override
     public int getChallengeId() {
       return challengeId_;
-    }
-
-    public static final int CHALLENGE_TYPE_FIELD_NUMBER = 5;
-    private int challengeType_;
-    /**
-     * <code>uint32 challenge_type = 5;</code>
-     * @return The challengeType.
-     */
-    @java.lang.Override
-    public int getChallengeType() {
-      return challengeType_;
     }
 
     public static final int CHALLENGE_INDEX_FIELD_NUMBER = 4;
@@ -183,26 +172,37 @@ public final class ArenaChallengeChildChallengeInfoOuterClass {
       return challengeIndex_;
     }
 
-    public static final int IS_SUCCESS_FIELD_NUMBER = 7;
-    private boolean isSuccess_;
+    public static final int CHALLENGE_TYPE_FIELD_NUMBER = 12;
+    private int challengeType_;
     /**
-     * <code>bool is_success = 7;</code>
-     * @return The isSuccess.
+     * <code>uint32 challenge_type = 12;</code>
+     * @return The challengeType.
      */
     @java.lang.Override
-    public boolean getIsSuccess() {
-      return isSuccess_;
+    public int getChallengeType() {
+      return challengeType_;
     }
 
-    public static final int IS_SETTLED_FIELD_NUMBER = 11;
+    public static final int IS_SETTLED_FIELD_NUMBER = 2;
     private boolean isSettled_;
     /**
-     * <code>bool is_settled = 11;</code>
+     * <code>bool is_settled = 2;</code>
      * @return The isSettled.
      */
     @java.lang.Override
     public boolean getIsSettled() {
       return isSettled_;
+    }
+
+    public static final int IS_SUCCESS_FIELD_NUMBER = 14;
+    private boolean isSuccess_;
+    /**
+     * <code>bool is_success = 14;</code>
+     * @return The isSuccess.
+     */
+    @java.lang.Override
+    public boolean getIsSuccess() {
+      return isSuccess_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -219,20 +219,20 @@ public final class ArenaChallengeChildChallengeInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (isSettled_ != false) {
+        output.writeBool(2, isSettled_);
+      }
       if (challengeIndex_ != 0) {
         output.writeUInt32(4, challengeIndex_);
       }
+      if (challengeId_ != 0) {
+        output.writeUInt32(11, challengeId_);
+      }
       if (challengeType_ != 0) {
-        output.writeUInt32(5, challengeType_);
+        output.writeUInt32(12, challengeType_);
       }
       if (isSuccess_ != false) {
-        output.writeBool(7, isSuccess_);
-      }
-      if (isSettled_ != false) {
-        output.writeBool(11, isSettled_);
-      }
-      if (challengeId_ != 0) {
-        output.writeUInt32(12, challengeId_);
+        output.writeBool(14, isSuccess_);
       }
       unknownFields.writeTo(output);
     }
@@ -243,25 +243,25 @@ public final class ArenaChallengeChildChallengeInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (isSettled_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(2, isSettled_);
+      }
       if (challengeIndex_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(4, challengeIndex_);
       }
+      if (challengeId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(11, challengeId_);
+      }
       if (challengeType_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, challengeType_);
+          .computeUInt32Size(12, challengeType_);
       }
       if (isSuccess_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(7, isSuccess_);
-      }
-      if (isSettled_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(11, isSettled_);
-      }
-      if (challengeId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, challengeId_);
+          .computeBoolSize(14, isSuccess_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -280,14 +280,14 @@ public final class ArenaChallengeChildChallengeInfoOuterClass {
 
       if (getChallengeId()
           != other.getChallengeId()) return false;
-      if (getChallengeType()
-          != other.getChallengeType()) return false;
       if (getChallengeIndex()
           != other.getChallengeIndex()) return false;
-      if (getIsSuccess()
-          != other.getIsSuccess()) return false;
+      if (getChallengeType()
+          != other.getChallengeType()) return false;
       if (getIsSettled()
           != other.getIsSettled()) return false;
+      if (getIsSuccess()
+          != other.getIsSuccess()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -301,16 +301,16 @@ public final class ArenaChallengeChildChallengeInfoOuterClass {
       hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + CHALLENGE_ID_FIELD_NUMBER;
       hash = (53 * hash) + getChallengeId();
-      hash = (37 * hash) + CHALLENGE_TYPE_FIELD_NUMBER;
-      hash = (53 * hash) + getChallengeType();
       hash = (37 * hash) + CHALLENGE_INDEX_FIELD_NUMBER;
       hash = (53 * hash) + getChallengeIndex();
-      hash = (37 * hash) + IS_SUCCESS_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsSuccess());
+      hash = (37 * hash) + CHALLENGE_TYPE_FIELD_NUMBER;
+      hash = (53 * hash) + getChallengeType();
       hash = (37 * hash) + IS_SETTLED_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsSettled());
+      hash = (37 * hash) + IS_SUCCESS_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getIsSuccess());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -446,13 +446,13 @@ public final class ArenaChallengeChildChallengeInfoOuterClass {
         super.clear();
         challengeId_ = 0;
 
-        challengeType_ = 0;
-
         challengeIndex_ = 0;
 
-        isSuccess_ = false;
+        challengeType_ = 0;
 
         isSettled_ = false;
+
+        isSuccess_ = false;
 
         return this;
       }
@@ -481,10 +481,10 @@ public final class ArenaChallengeChildChallengeInfoOuterClass {
       public emu.grasscutter.net.proto.ArenaChallengeChildChallengeInfoOuterClass.ArenaChallengeChildChallengeInfo buildPartial() {
         emu.grasscutter.net.proto.ArenaChallengeChildChallengeInfoOuterClass.ArenaChallengeChildChallengeInfo result = new emu.grasscutter.net.proto.ArenaChallengeChildChallengeInfoOuterClass.ArenaChallengeChildChallengeInfo(this);
         result.challengeId_ = challengeId_;
-        result.challengeType_ = challengeType_;
         result.challengeIndex_ = challengeIndex_;
-        result.isSuccess_ = isSuccess_;
+        result.challengeType_ = challengeType_;
         result.isSettled_ = isSettled_;
+        result.isSuccess_ = isSuccess_;
         onBuilt();
         return result;
       }
@@ -536,17 +536,17 @@ public final class ArenaChallengeChildChallengeInfoOuterClass {
         if (other.getChallengeId() != 0) {
           setChallengeId(other.getChallengeId());
         }
-        if (other.getChallengeType() != 0) {
-          setChallengeType(other.getChallengeType());
-        }
         if (other.getChallengeIndex() != 0) {
           setChallengeIndex(other.getChallengeIndex());
         }
-        if (other.getIsSuccess() != false) {
-          setIsSuccess(other.getIsSuccess());
+        if (other.getChallengeType() != 0) {
+          setChallengeType(other.getChallengeType());
         }
         if (other.getIsSettled() != false) {
           setIsSettled(other.getIsSettled());
+        }
+        if (other.getIsSuccess() != false) {
+          setIsSuccess(other.getIsSuccess());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -579,7 +579,7 @@ public final class ArenaChallengeChildChallengeInfoOuterClass {
 
       private int challengeId_ ;
       /**
-       * <code>uint32 challenge_id = 12;</code>
+       * <code>uint32 challenge_id = 11;</code>
        * @return The challengeId.
        */
       @java.lang.Override
@@ -587,7 +587,7 @@ public final class ArenaChallengeChildChallengeInfoOuterClass {
         return challengeId_;
       }
       /**
-       * <code>uint32 challenge_id = 12;</code>
+       * <code>uint32 challenge_id = 11;</code>
        * @param value The challengeId to set.
        * @return This builder for chaining.
        */
@@ -598,43 +598,12 @@ public final class ArenaChallengeChildChallengeInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 challenge_id = 12;</code>
+       * <code>uint32 challenge_id = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearChallengeId() {
         
         challengeId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int challengeType_ ;
-      /**
-       * <code>uint32 challenge_type = 5;</code>
-       * @return The challengeType.
-       */
-      @java.lang.Override
-      public int getChallengeType() {
-        return challengeType_;
-      }
-      /**
-       * <code>uint32 challenge_type = 5;</code>
-       * @param value The challengeType to set.
-       * @return This builder for chaining.
-       */
-      public Builder setChallengeType(int value) {
-        
-        challengeType_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 challenge_type = 5;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearChallengeType() {
-        
-        challengeType_ = 0;
         onChanged();
         return this;
       }
@@ -670,40 +639,40 @@ public final class ArenaChallengeChildChallengeInfoOuterClass {
         return this;
       }
 
-      private boolean isSuccess_ ;
+      private int challengeType_ ;
       /**
-       * <code>bool is_success = 7;</code>
-       * @return The isSuccess.
+       * <code>uint32 challenge_type = 12;</code>
+       * @return The challengeType.
        */
       @java.lang.Override
-      public boolean getIsSuccess() {
-        return isSuccess_;
+      public int getChallengeType() {
+        return challengeType_;
       }
       /**
-       * <code>bool is_success = 7;</code>
-       * @param value The isSuccess to set.
+       * <code>uint32 challenge_type = 12;</code>
+       * @param value The challengeType to set.
        * @return This builder for chaining.
        */
-      public Builder setIsSuccess(boolean value) {
+      public Builder setChallengeType(int value) {
         
-        isSuccess_ = value;
+        challengeType_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>bool is_success = 7;</code>
+       * <code>uint32 challenge_type = 12;</code>
        * @return This builder for chaining.
        */
-      public Builder clearIsSuccess() {
+      public Builder clearChallengeType() {
         
-        isSuccess_ = false;
+        challengeType_ = 0;
         onChanged();
         return this;
       }
 
       private boolean isSettled_ ;
       /**
-       * <code>bool is_settled = 11;</code>
+       * <code>bool is_settled = 2;</code>
        * @return The isSettled.
        */
       @java.lang.Override
@@ -711,7 +680,7 @@ public final class ArenaChallengeChildChallengeInfoOuterClass {
         return isSettled_;
       }
       /**
-       * <code>bool is_settled = 11;</code>
+       * <code>bool is_settled = 2;</code>
        * @param value The isSettled to set.
        * @return This builder for chaining.
        */
@@ -722,12 +691,43 @@ public final class ArenaChallengeChildChallengeInfoOuterClass {
         return this;
       }
       /**
-       * <code>bool is_settled = 11;</code>
+       * <code>bool is_settled = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsSettled() {
         
         isSettled_ = false;
+        onChanged();
+        return this;
+      }
+
+      private boolean isSuccess_ ;
+      /**
+       * <code>bool is_success = 14;</code>
+       * @return The isSuccess.
+       */
+      @java.lang.Override
+      public boolean getIsSuccess() {
+        return isSuccess_;
+      }
+      /**
+       * <code>bool is_success = 14;</code>
+       * @param value The isSuccess to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIsSuccess(boolean value) {
+        
+        isSuccess_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool is_success = 14;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsSuccess() {
+        
+        isSuccess_ = false;
         onChanged();
         return this;
       }
@@ -800,9 +800,9 @@ public final class ArenaChallengeChildChallengeInfoOuterClass {
     java.lang.String[] descriptorData = {
       "\n&ArenaChallengeChildChallengeInfo.proto" +
       "\"\221\001\n ArenaChallengeChildChallengeInfo\022\024\n" +
-      "\014challenge_id\030\014 \001(\r\022\026\n\016challenge_type\030\005 " +
-      "\001(\r\022\027\n\017challenge_index\030\004 \001(\r\022\022\n\nis_succe" +
-      "ss\030\007 \001(\010\022\022\n\nis_settled\030\013 \001(\010B\033\n\031emu.gras" +
+      "\014challenge_id\030\013 \001(\r\022\027\n\017challenge_index\030\004" +
+      " \001(\r\022\026\n\016challenge_type\030\014 \001(\r\022\022\n\nis_settl" +
+      "ed\030\002 \001(\010\022\022\n\nis_success\030\016 \001(\010B\033\n\031emu.gras" +
       "scutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -814,7 +814,7 @@ public final class ArenaChallengeChildChallengeInfoOuterClass {
     internal_static_ArenaChallengeChildChallengeInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ArenaChallengeChildChallengeInfo_descriptor,
-        new java.lang.String[] { "ChallengeId", "ChallengeType", "ChallengeIndex", "IsSuccess", "IsSettled", });
+        new java.lang.String[] { "ChallengeId", "ChallengeIndex", "ChallengeType", "IsSettled", "IsSuccess", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

@@ -19,33 +19,37 @@ public final class BossChestActivateNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated uint32 qualify_uid_list = 1;</code>
+     * <code>uint32 entity_id = 15;</code>
+     * @return The entityId.
+     */
+    int getEntityId();
+
+    /**
+     * <code>repeated uint32 qualify_uid_list = 7;</code>
      * @return A list containing the qualifyUidList.
      */
     java.util.List<java.lang.Integer> getQualifyUidListList();
     /**
-     * <code>repeated uint32 qualify_uid_list = 1;</code>
+     * <code>repeated uint32 qualify_uid_list = 7;</code>
      * @return The count of qualifyUidList.
      */
     int getQualifyUidListCount();
     /**
-     * <code>repeated uint32 qualify_uid_list = 1;</code>
+     * <code>repeated uint32 qualify_uid_list = 7;</code>
      * @param index The index of the element to return.
      * @return The qualifyUidList at the given index.
      */
     int getQualifyUidList(int index);
-
-    /**
-     * <code>uint32 entity_id = 12;</code>
-     * @return The entityId.
-     */
-    int getEntityId();
   }
   /**
    * <pre>
-   * CmdId: 803
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 861;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code BossChestActivateNotify}
@@ -94,7 +98,7 @@ public final class BossChestActivateNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
+            case 56: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 qualifyUidList_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
@@ -102,7 +106,7 @@ public final class BossChestActivateNotifyOuterClass {
               qualifyUidList_.addInt(input.readUInt32());
               break;
             }
-            case 10: {
+            case 58: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -115,7 +119,7 @@ public final class BossChestActivateNotifyOuterClass {
               input.popLimit(limit);
               break;
             }
-            case 96: {
+            case 120: {
 
               entityId_ = input.readUInt32();
               break;
@@ -155,10 +159,21 @@ public final class BossChestActivateNotifyOuterClass {
               emu.grasscutter.net.proto.BossChestActivateNotifyOuterClass.BossChestActivateNotify.class, emu.grasscutter.net.proto.BossChestActivateNotifyOuterClass.BossChestActivateNotify.Builder.class);
     }
 
-    public static final int QUALIFY_UID_LIST_FIELD_NUMBER = 1;
+    public static final int ENTITY_ID_FIELD_NUMBER = 15;
+    private int entityId_;
+    /**
+     * <code>uint32 entity_id = 15;</code>
+     * @return The entityId.
+     */
+    @java.lang.Override
+    public int getEntityId() {
+      return entityId_;
+    }
+
+    public static final int QUALIFY_UID_LIST_FIELD_NUMBER = 7;
     private com.google.protobuf.Internal.IntList qualifyUidList_;
     /**
-     * <code>repeated uint32 qualify_uid_list = 1;</code>
+     * <code>repeated uint32 qualify_uid_list = 7;</code>
      * @return A list containing the qualifyUidList.
      */
     @java.lang.Override
@@ -167,14 +182,14 @@ public final class BossChestActivateNotifyOuterClass {
       return qualifyUidList_;
     }
     /**
-     * <code>repeated uint32 qualify_uid_list = 1;</code>
+     * <code>repeated uint32 qualify_uid_list = 7;</code>
      * @return The count of qualifyUidList.
      */
     public int getQualifyUidListCount() {
       return qualifyUidList_.size();
     }
     /**
-     * <code>repeated uint32 qualify_uid_list = 1;</code>
+     * <code>repeated uint32 qualify_uid_list = 7;</code>
      * @param index The index of the element to return.
      * @return The qualifyUidList at the given index.
      */
@@ -182,17 +197,6 @@ public final class BossChestActivateNotifyOuterClass {
       return qualifyUidList_.getInt(index);
     }
     private int qualifyUidListMemoizedSerializedSize = -1;
-
-    public static final int ENTITY_ID_FIELD_NUMBER = 12;
-    private int entityId_;
-    /**
-     * <code>uint32 entity_id = 12;</code>
-     * @return The entityId.
-     */
-    @java.lang.Override
-    public int getEntityId() {
-      return entityId_;
-    }
 
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
@@ -210,14 +214,14 @@ public final class BossChestActivateNotifyOuterClass {
                         throws java.io.IOException {
       getSerializedSize();
       if (getQualifyUidListList().size() > 0) {
-        output.writeUInt32NoTag(10);
+        output.writeUInt32NoTag(58);
         output.writeUInt32NoTag(qualifyUidListMemoizedSerializedSize);
       }
       for (int i = 0; i < qualifyUidList_.size(); i++) {
         output.writeUInt32NoTag(qualifyUidList_.getInt(i));
       }
       if (entityId_ != 0) {
-        output.writeUInt32(12, entityId_);
+        output.writeUInt32(15, entityId_);
       }
       unknownFields.writeTo(output);
     }
@@ -244,7 +248,7 @@ public final class BossChestActivateNotifyOuterClass {
       }
       if (entityId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, entityId_);
+          .computeUInt32Size(15, entityId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -261,10 +265,10 @@ public final class BossChestActivateNotifyOuterClass {
       }
       emu.grasscutter.net.proto.BossChestActivateNotifyOuterClass.BossChestActivateNotify other = (emu.grasscutter.net.proto.BossChestActivateNotifyOuterClass.BossChestActivateNotify) obj;
 
-      if (!getQualifyUidListList()
-          .equals(other.getQualifyUidListList())) return false;
       if (getEntityId()
           != other.getEntityId()) return false;
+      if (!getQualifyUidListList()
+          .equals(other.getQualifyUidListList())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -276,12 +280,12 @@ public final class BossChestActivateNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + ENTITY_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getEntityId();
       if (getQualifyUidListCount() > 0) {
         hash = (37 * hash) + QUALIFY_UID_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getQualifyUidListList().hashCode();
       }
-      hash = (37 * hash) + ENTITY_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getEntityId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -379,9 +383,13 @@ public final class BossChestActivateNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 803
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 861;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code BossChestActivateNotify}
@@ -421,10 +429,10 @@ public final class BossChestActivateNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        qualifyUidList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000001);
         entityId_ = 0;
 
+        qualifyUidList_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000001);
         return this;
       }
 
@@ -452,12 +460,12 @@ public final class BossChestActivateNotifyOuterClass {
       public emu.grasscutter.net.proto.BossChestActivateNotifyOuterClass.BossChestActivateNotify buildPartial() {
         emu.grasscutter.net.proto.BossChestActivateNotifyOuterClass.BossChestActivateNotify result = new emu.grasscutter.net.proto.BossChestActivateNotifyOuterClass.BossChestActivateNotify(this);
         int from_bitField0_ = bitField0_;
+        result.entityId_ = entityId_;
         if (((bitField0_ & 0x00000001) != 0)) {
           qualifyUidList_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000001);
         }
         result.qualifyUidList_ = qualifyUidList_;
-        result.entityId_ = entityId_;
         onBuilt();
         return result;
       }
@@ -506,6 +514,9 @@ public final class BossChestActivateNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.BossChestActivateNotifyOuterClass.BossChestActivateNotify other) {
         if (other == emu.grasscutter.net.proto.BossChestActivateNotifyOuterClass.BossChestActivateNotify.getDefaultInstance()) return this;
+        if (other.getEntityId() != 0) {
+          setEntityId(other.getEntityId());
+        }
         if (!other.qualifyUidList_.isEmpty()) {
           if (qualifyUidList_.isEmpty()) {
             qualifyUidList_ = other.qualifyUidList_;
@@ -515,9 +526,6 @@ public final class BossChestActivateNotifyOuterClass {
             qualifyUidList_.addAll(other.qualifyUidList_);
           }
           onChanged();
-        }
-        if (other.getEntityId() != 0) {
-          setEntityId(other.getEntityId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -549,6 +557,37 @@ public final class BossChestActivateNotifyOuterClass {
       }
       private int bitField0_;
 
+      private int entityId_ ;
+      /**
+       * <code>uint32 entity_id = 15;</code>
+       * @return The entityId.
+       */
+      @java.lang.Override
+      public int getEntityId() {
+        return entityId_;
+      }
+      /**
+       * <code>uint32 entity_id = 15;</code>
+       * @param value The entityId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setEntityId(int value) {
+        
+        entityId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 entity_id = 15;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearEntityId() {
+        
+        entityId_ = 0;
+        onChanged();
+        return this;
+      }
+
       private com.google.protobuf.Internal.IntList qualifyUidList_ = emptyIntList();
       private void ensureQualifyUidListIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
@@ -557,7 +596,7 @@ public final class BossChestActivateNotifyOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 qualify_uid_list = 1;</code>
+       * <code>repeated uint32 qualify_uid_list = 7;</code>
        * @return A list containing the qualifyUidList.
        */
       public java.util.List<java.lang.Integer>
@@ -566,14 +605,14 @@ public final class BossChestActivateNotifyOuterClass {
                  java.util.Collections.unmodifiableList(qualifyUidList_) : qualifyUidList_;
       }
       /**
-       * <code>repeated uint32 qualify_uid_list = 1;</code>
+       * <code>repeated uint32 qualify_uid_list = 7;</code>
        * @return The count of qualifyUidList.
        */
       public int getQualifyUidListCount() {
         return qualifyUidList_.size();
       }
       /**
-       * <code>repeated uint32 qualify_uid_list = 1;</code>
+       * <code>repeated uint32 qualify_uid_list = 7;</code>
        * @param index The index of the element to return.
        * @return The qualifyUidList at the given index.
        */
@@ -581,7 +620,7 @@ public final class BossChestActivateNotifyOuterClass {
         return qualifyUidList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 qualify_uid_list = 1;</code>
+       * <code>repeated uint32 qualify_uid_list = 7;</code>
        * @param index The index to set the value at.
        * @param value The qualifyUidList to set.
        * @return This builder for chaining.
@@ -594,7 +633,7 @@ public final class BossChestActivateNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 qualify_uid_list = 1;</code>
+       * <code>repeated uint32 qualify_uid_list = 7;</code>
        * @param value The qualifyUidList to add.
        * @return This builder for chaining.
        */
@@ -605,7 +644,7 @@ public final class BossChestActivateNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 qualify_uid_list = 1;</code>
+       * <code>repeated uint32 qualify_uid_list = 7;</code>
        * @param values The qualifyUidList to add.
        * @return This builder for chaining.
        */
@@ -618,43 +657,12 @@ public final class BossChestActivateNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 qualify_uid_list = 1;</code>
+       * <code>repeated uint32 qualify_uid_list = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearQualifyUidList() {
         qualifyUidList_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
-        onChanged();
-        return this;
-      }
-
-      private int entityId_ ;
-      /**
-       * <code>uint32 entity_id = 12;</code>
-       * @return The entityId.
-       */
-      @java.lang.Override
-      public int getEntityId() {
-        return entityId_;
-      }
-      /**
-       * <code>uint32 entity_id = 12;</code>
-       * @param value The entityId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setEntityId(int value) {
-        
-        entityId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 entity_id = 12;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearEntityId() {
-        
-        entityId_ = 0;
         onChanged();
         return this;
       }
@@ -726,8 +734,8 @@ public final class BossChestActivateNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\035BossChestActivateNotify.proto\"F\n\027BossC" +
-      "hestActivateNotify\022\030\n\020qualify_uid_list\030\001" +
-      " \003(\r\022\021\n\tentity_id\030\014 \001(\rB\033\n\031emu.grasscutt" +
+      "hestActivateNotify\022\021\n\tentity_id\030\017 \001(\r\022\030\n" +
+      "\020qualify_uid_list\030\007 \003(\rB\033\n\031emu.grasscutt" +
       "er.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -739,7 +747,7 @@ public final class BossChestActivateNotifyOuterClass {
     internal_static_BossChestActivateNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_BossChestActivateNotify_descriptor,
-        new java.lang.String[] { "QualifyUidList", "EntityId", });
+        new java.lang.String[] { "EntityId", "QualifyUidList", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

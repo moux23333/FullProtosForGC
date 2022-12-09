@@ -19,26 +19,30 @@ public final class HomeUpdateFishFarmingInfoReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.HomeFishFarmingInfo fish_farming_info = 5;</code>
+     * <code>.HomeFishFarmingInfo fish_farming_info = 3;</code>
      * @return Whether the fishFarmingInfo field is set.
      */
     boolean hasFishFarmingInfo();
     /**
-     * <code>.HomeFishFarmingInfo fish_farming_info = 5;</code>
+     * <code>.HomeFishFarmingInfo fish_farming_info = 3;</code>
      * @return The fishFarmingInfo.
      */
     emu.grasscutter.net.proto.HomeFishFarmingInfoOuterClass.HomeFishFarmingInfo getFishFarmingInfo();
     /**
-     * <code>.HomeFishFarmingInfo fish_farming_info = 5;</code>
+     * <code>.HomeFishFarmingInfo fish_farming_info = 3;</code>
      */
     emu.grasscutter.net.proto.HomeFishFarmingInfoOuterClass.HomeFishFarmingInfoOrBuilder getFishFarmingInfoOrBuilder();
   }
   /**
    * <pre>
-   * CmdId: 4544
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 4767;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code HomeUpdateFishFarmingInfoReq}
@@ -85,7 +89,7 @@ public final class HomeUpdateFishFarmingInfoReqOuterClass {
             case 0:
               done = true;
               break;
-            case 42: {
+            case 26: {
               emu.grasscutter.net.proto.HomeFishFarmingInfoOuterClass.HomeFishFarmingInfo.Builder subBuilder = null;
               if (fishFarmingInfo_ != null) {
                 subBuilder = fishFarmingInfo_.toBuilder();
@@ -130,10 +134,10 @@ public final class HomeUpdateFishFarmingInfoReqOuterClass {
               emu.grasscutter.net.proto.HomeUpdateFishFarmingInfoReqOuterClass.HomeUpdateFishFarmingInfoReq.class, emu.grasscutter.net.proto.HomeUpdateFishFarmingInfoReqOuterClass.HomeUpdateFishFarmingInfoReq.Builder.class);
     }
 
-    public static final int FISH_FARMING_INFO_FIELD_NUMBER = 5;
+    public static final int FISH_FARMING_INFO_FIELD_NUMBER = 3;
     private emu.grasscutter.net.proto.HomeFishFarmingInfoOuterClass.HomeFishFarmingInfo fishFarmingInfo_;
     /**
-     * <code>.HomeFishFarmingInfo fish_farming_info = 5;</code>
+     * <code>.HomeFishFarmingInfo fish_farming_info = 3;</code>
      * @return Whether the fishFarmingInfo field is set.
      */
     @java.lang.Override
@@ -141,7 +145,7 @@ public final class HomeUpdateFishFarmingInfoReqOuterClass {
       return fishFarmingInfo_ != null;
     }
     /**
-     * <code>.HomeFishFarmingInfo fish_farming_info = 5;</code>
+     * <code>.HomeFishFarmingInfo fish_farming_info = 3;</code>
      * @return The fishFarmingInfo.
      */
     @java.lang.Override
@@ -149,7 +153,7 @@ public final class HomeUpdateFishFarmingInfoReqOuterClass {
       return fishFarmingInfo_ == null ? emu.grasscutter.net.proto.HomeFishFarmingInfoOuterClass.HomeFishFarmingInfo.getDefaultInstance() : fishFarmingInfo_;
     }
     /**
-     * <code>.HomeFishFarmingInfo fish_farming_info = 5;</code>
+     * <code>.HomeFishFarmingInfo fish_farming_info = 3;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.HomeFishFarmingInfoOuterClass.HomeFishFarmingInfoOrBuilder getFishFarmingInfoOrBuilder() {
@@ -171,7 +175,7 @@ public final class HomeUpdateFishFarmingInfoReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (fishFarmingInfo_ != null) {
-        output.writeMessage(5, getFishFarmingInfo());
+        output.writeMessage(3, getFishFarmingInfo());
       }
       unknownFields.writeTo(output);
     }
@@ -184,7 +188,7 @@ public final class HomeUpdateFishFarmingInfoReqOuterClass {
       size = 0;
       if (fishFarmingInfo_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(5, getFishFarmingInfo());
+          .computeMessageSize(3, getFishFarmingInfo());
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -318,10 +322,14 @@ public final class HomeUpdateFishFarmingInfoReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 4544
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 4767;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code HomeUpdateFishFarmingInfoReq}
@@ -482,14 +490,14 @@ public final class HomeUpdateFishFarmingInfoReqOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.HomeFishFarmingInfoOuterClass.HomeFishFarmingInfo, emu.grasscutter.net.proto.HomeFishFarmingInfoOuterClass.HomeFishFarmingInfo.Builder, emu.grasscutter.net.proto.HomeFishFarmingInfoOuterClass.HomeFishFarmingInfoOrBuilder> fishFarmingInfoBuilder_;
       /**
-       * <code>.HomeFishFarmingInfo fish_farming_info = 5;</code>
+       * <code>.HomeFishFarmingInfo fish_farming_info = 3;</code>
        * @return Whether the fishFarmingInfo field is set.
        */
       public boolean hasFishFarmingInfo() {
         return fishFarmingInfoBuilder_ != null || fishFarmingInfo_ != null;
       }
       /**
-       * <code>.HomeFishFarmingInfo fish_farming_info = 5;</code>
+       * <code>.HomeFishFarmingInfo fish_farming_info = 3;</code>
        * @return The fishFarmingInfo.
        */
       public emu.grasscutter.net.proto.HomeFishFarmingInfoOuterClass.HomeFishFarmingInfo getFishFarmingInfo() {
@@ -500,7 +508,7 @@ public final class HomeUpdateFishFarmingInfoReqOuterClass {
         }
       }
       /**
-       * <code>.HomeFishFarmingInfo fish_farming_info = 5;</code>
+       * <code>.HomeFishFarmingInfo fish_farming_info = 3;</code>
        */
       public Builder setFishFarmingInfo(emu.grasscutter.net.proto.HomeFishFarmingInfoOuterClass.HomeFishFarmingInfo value) {
         if (fishFarmingInfoBuilder_ == null) {
@@ -516,7 +524,7 @@ public final class HomeUpdateFishFarmingInfoReqOuterClass {
         return this;
       }
       /**
-       * <code>.HomeFishFarmingInfo fish_farming_info = 5;</code>
+       * <code>.HomeFishFarmingInfo fish_farming_info = 3;</code>
        */
       public Builder setFishFarmingInfo(
           emu.grasscutter.net.proto.HomeFishFarmingInfoOuterClass.HomeFishFarmingInfo.Builder builderForValue) {
@@ -530,7 +538,7 @@ public final class HomeUpdateFishFarmingInfoReqOuterClass {
         return this;
       }
       /**
-       * <code>.HomeFishFarmingInfo fish_farming_info = 5;</code>
+       * <code>.HomeFishFarmingInfo fish_farming_info = 3;</code>
        */
       public Builder mergeFishFarmingInfo(emu.grasscutter.net.proto.HomeFishFarmingInfoOuterClass.HomeFishFarmingInfo value) {
         if (fishFarmingInfoBuilder_ == null) {
@@ -548,7 +556,7 @@ public final class HomeUpdateFishFarmingInfoReqOuterClass {
         return this;
       }
       /**
-       * <code>.HomeFishFarmingInfo fish_farming_info = 5;</code>
+       * <code>.HomeFishFarmingInfo fish_farming_info = 3;</code>
        */
       public Builder clearFishFarmingInfo() {
         if (fishFarmingInfoBuilder_ == null) {
@@ -562,7 +570,7 @@ public final class HomeUpdateFishFarmingInfoReqOuterClass {
         return this;
       }
       /**
-       * <code>.HomeFishFarmingInfo fish_farming_info = 5;</code>
+       * <code>.HomeFishFarmingInfo fish_farming_info = 3;</code>
        */
       public emu.grasscutter.net.proto.HomeFishFarmingInfoOuterClass.HomeFishFarmingInfo.Builder getFishFarmingInfoBuilder() {
         
@@ -570,7 +578,7 @@ public final class HomeUpdateFishFarmingInfoReqOuterClass {
         return getFishFarmingInfoFieldBuilder().getBuilder();
       }
       /**
-       * <code>.HomeFishFarmingInfo fish_farming_info = 5;</code>
+       * <code>.HomeFishFarmingInfo fish_farming_info = 3;</code>
        */
       public emu.grasscutter.net.proto.HomeFishFarmingInfoOuterClass.HomeFishFarmingInfoOrBuilder getFishFarmingInfoOrBuilder() {
         if (fishFarmingInfoBuilder_ != null) {
@@ -581,7 +589,7 @@ public final class HomeUpdateFishFarmingInfoReqOuterClass {
         }
       }
       /**
-       * <code>.HomeFishFarmingInfo fish_farming_info = 5;</code>
+       * <code>.HomeFishFarmingInfo fish_farming_info = 3;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.HomeFishFarmingInfoOuterClass.HomeFishFarmingInfo, emu.grasscutter.net.proto.HomeFishFarmingInfoOuterClass.HomeFishFarmingInfo.Builder, emu.grasscutter.net.proto.HomeFishFarmingInfoOuterClass.HomeFishFarmingInfoOrBuilder> 
@@ -665,7 +673,7 @@ public final class HomeUpdateFishFarmingInfoReqOuterClass {
     java.lang.String[] descriptorData = {
       "\n\"HomeUpdateFishFarmingInfoReq.proto\032\031Ho" +
       "meFishFarmingInfo.proto\"O\n\034HomeUpdateFis" +
-      "hFarmingInfoReq\022/\n\021fish_farming_info\030\005 \001" +
+      "hFarmingInfoReq\022/\n\021fish_farming_info\030\003 \001" +
       "(\0132\024.HomeFishFarmingInfoB\033\n\031emu.grasscut" +
       "ter.net.protob\006proto3"
     };

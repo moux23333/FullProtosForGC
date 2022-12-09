@@ -19,23 +19,27 @@ public final class LunaRiteSacrificeReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 area_id = 15;</code>
-     * @return The areaId.
-     */
-    int getAreaId();
-
-    /**
-     * <code>uint32 index = 14;</code>
+     * <code>uint32 index = 2;</code>
      * @return The index.
      */
     int getIndex();
+
+    /**
+     * <code>uint32 area_id = 14;</code>
+     * @return The areaId.
+     */
+    int getAreaId();
   }
   /**
    * <pre>
-   * CmdId: 8805
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 8717;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code LunaRiteSacrificeReq}
@@ -82,12 +86,12 @@ public final class LunaRiteSacrificeReqOuterClass {
             case 0:
               done = true;
               break;
-            case 112: {
+            case 16: {
 
               index_ = input.readUInt32();
               break;
             }
-            case 120: {
+            case 112: {
 
               areaId_ = input.readUInt32();
               break;
@@ -124,26 +128,26 @@ public final class LunaRiteSacrificeReqOuterClass {
               emu.grasscutter.net.proto.LunaRiteSacrificeReqOuterClass.LunaRiteSacrificeReq.class, emu.grasscutter.net.proto.LunaRiteSacrificeReqOuterClass.LunaRiteSacrificeReq.Builder.class);
     }
 
-    public static final int AREA_ID_FIELD_NUMBER = 15;
-    private int areaId_;
-    /**
-     * <code>uint32 area_id = 15;</code>
-     * @return The areaId.
-     */
-    @java.lang.Override
-    public int getAreaId() {
-      return areaId_;
-    }
-
-    public static final int INDEX_FIELD_NUMBER = 14;
+    public static final int INDEX_FIELD_NUMBER = 2;
     private int index_;
     /**
-     * <code>uint32 index = 14;</code>
+     * <code>uint32 index = 2;</code>
      * @return The index.
      */
     @java.lang.Override
     public int getIndex() {
       return index_;
+    }
+
+    public static final int AREA_ID_FIELD_NUMBER = 14;
+    private int areaId_;
+    /**
+     * <code>uint32 area_id = 14;</code>
+     * @return The areaId.
+     */
+    @java.lang.Override
+    public int getAreaId() {
+      return areaId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -161,10 +165,10 @@ public final class LunaRiteSacrificeReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (index_ != 0) {
-        output.writeUInt32(14, index_);
+        output.writeUInt32(2, index_);
       }
       if (areaId_ != 0) {
-        output.writeUInt32(15, areaId_);
+        output.writeUInt32(14, areaId_);
       }
       unknownFields.writeTo(output);
     }
@@ -177,11 +181,11 @@ public final class LunaRiteSacrificeReqOuterClass {
       size = 0;
       if (index_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, index_);
+          .computeUInt32Size(2, index_);
       }
       if (areaId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, areaId_);
+          .computeUInt32Size(14, areaId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -198,10 +202,10 @@ public final class LunaRiteSacrificeReqOuterClass {
       }
       emu.grasscutter.net.proto.LunaRiteSacrificeReqOuterClass.LunaRiteSacrificeReq other = (emu.grasscutter.net.proto.LunaRiteSacrificeReqOuterClass.LunaRiteSacrificeReq) obj;
 
-      if (getAreaId()
-          != other.getAreaId()) return false;
       if (getIndex()
           != other.getIndex()) return false;
+      if (getAreaId()
+          != other.getAreaId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -213,10 +217,10 @@ public final class LunaRiteSacrificeReqOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + AREA_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getAreaId();
       hash = (37 * hash) + INDEX_FIELD_NUMBER;
       hash = (53 * hash) + getIndex();
+      hash = (37 * hash) + AREA_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getAreaId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -314,10 +318,14 @@ public final class LunaRiteSacrificeReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 8805
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 8717;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code LunaRiteSacrificeReq}
@@ -357,9 +365,9 @@ public final class LunaRiteSacrificeReqOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        areaId_ = 0;
-
         index_ = 0;
+
+        areaId_ = 0;
 
         return this;
       }
@@ -387,8 +395,8 @@ public final class LunaRiteSacrificeReqOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.LunaRiteSacrificeReqOuterClass.LunaRiteSacrificeReq buildPartial() {
         emu.grasscutter.net.proto.LunaRiteSacrificeReqOuterClass.LunaRiteSacrificeReq result = new emu.grasscutter.net.proto.LunaRiteSacrificeReqOuterClass.LunaRiteSacrificeReq(this);
-        result.areaId_ = areaId_;
         result.index_ = index_;
+        result.areaId_ = areaId_;
         onBuilt();
         return result;
       }
@@ -437,11 +445,11 @@ public final class LunaRiteSacrificeReqOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.LunaRiteSacrificeReqOuterClass.LunaRiteSacrificeReq other) {
         if (other == emu.grasscutter.net.proto.LunaRiteSacrificeReqOuterClass.LunaRiteSacrificeReq.getDefaultInstance()) return this;
-        if (other.getAreaId() != 0) {
-          setAreaId(other.getAreaId());
-        }
         if (other.getIndex() != 0) {
           setIndex(other.getIndex());
+        }
+        if (other.getAreaId() != 0) {
+          setAreaId(other.getAreaId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -472,40 +480,9 @@ public final class LunaRiteSacrificeReqOuterClass {
         return this;
       }
 
-      private int areaId_ ;
-      /**
-       * <code>uint32 area_id = 15;</code>
-       * @return The areaId.
-       */
-      @java.lang.Override
-      public int getAreaId() {
-        return areaId_;
-      }
-      /**
-       * <code>uint32 area_id = 15;</code>
-       * @param value The areaId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setAreaId(int value) {
-        
-        areaId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 area_id = 15;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearAreaId() {
-        
-        areaId_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int index_ ;
       /**
-       * <code>uint32 index = 14;</code>
+       * <code>uint32 index = 2;</code>
        * @return The index.
        */
       @java.lang.Override
@@ -513,7 +490,7 @@ public final class LunaRiteSacrificeReqOuterClass {
         return index_;
       }
       /**
-       * <code>uint32 index = 14;</code>
+       * <code>uint32 index = 2;</code>
        * @param value The index to set.
        * @return This builder for chaining.
        */
@@ -524,12 +501,43 @@ public final class LunaRiteSacrificeReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 index = 14;</code>
+       * <code>uint32 index = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearIndex() {
         
         index_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int areaId_ ;
+      /**
+       * <code>uint32 area_id = 14;</code>
+       * @return The areaId.
+       */
+      @java.lang.Override
+      public int getAreaId() {
+        return areaId_;
+      }
+      /**
+       * <code>uint32 area_id = 14;</code>
+       * @param value The areaId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setAreaId(int value) {
+        
+        areaId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 area_id = 14;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearAreaId() {
+        
+        areaId_ = 0;
         onChanged();
         return this;
       }
@@ -601,7 +609,7 @@ public final class LunaRiteSacrificeReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\032LunaRiteSacrificeReq.proto\"6\n\024LunaRite" +
-      "SacrificeReq\022\017\n\007area_id\030\017 \001(\r\022\r\n\005index\030\016" +
+      "SacrificeReq\022\r\n\005index\030\002 \001(\r\022\017\n\007area_id\030\016" +
       " \001(\rB\033\n\031emu.grasscutter.net.protob\006proto" +
       "3"
     };
@@ -614,7 +622,7 @@ public final class LunaRiteSacrificeReqOuterClass {
     internal_static_LunaRiteSacrificeReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_LunaRiteSacrificeReq_descriptor,
-        new java.lang.String[] { "AreaId", "Index", });
+        new java.lang.String[] { "Index", "AreaId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

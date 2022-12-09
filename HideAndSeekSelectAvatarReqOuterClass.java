@@ -19,17 +19,21 @@ public final class HideAndSeekSelectAvatarReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 avatar_id = 8;</code>
+     * <code>uint32 avatar_id = 10;</code>
      * @return The avatarId.
      */
     int getAvatarId();
   }
   /**
    * <pre>
-   * CmdId: 5330
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 5350;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code HideAndSeekSelectAvatarReq}
@@ -76,7 +80,7 @@ public final class HideAndSeekSelectAvatarReqOuterClass {
             case 0:
               done = true;
               break;
-            case 64: {
+            case 80: {
 
               avatarId_ = input.readUInt32();
               break;
@@ -113,10 +117,10 @@ public final class HideAndSeekSelectAvatarReqOuterClass {
               emu.grasscutter.net.proto.HideAndSeekSelectAvatarReqOuterClass.HideAndSeekSelectAvatarReq.class, emu.grasscutter.net.proto.HideAndSeekSelectAvatarReqOuterClass.HideAndSeekSelectAvatarReq.Builder.class);
     }
 
-    public static final int AVATAR_ID_FIELD_NUMBER = 8;
+    public static final int AVATAR_ID_FIELD_NUMBER = 10;
     private int avatarId_;
     /**
-     * <code>uint32 avatar_id = 8;</code>
+     * <code>uint32 avatar_id = 10;</code>
      * @return The avatarId.
      */
     @java.lang.Override
@@ -139,7 +143,7 @@ public final class HideAndSeekSelectAvatarReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (avatarId_ != 0) {
-        output.writeUInt32(8, avatarId_);
+        output.writeUInt32(10, avatarId_);
       }
       unknownFields.writeTo(output);
     }
@@ -152,7 +156,7 @@ public final class HideAndSeekSelectAvatarReqOuterClass {
       size = 0;
       if (avatarId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, avatarId_);
+          .computeUInt32Size(10, avatarId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -281,10 +285,14 @@ public final class HideAndSeekSelectAvatarReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 5330
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 5350;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code HideAndSeekSelectAvatarReq}
@@ -435,7 +443,7 @@ public final class HideAndSeekSelectAvatarReqOuterClass {
 
       private int avatarId_ ;
       /**
-       * <code>uint32 avatar_id = 8;</code>
+       * <code>uint32 avatar_id = 10;</code>
        * @return The avatarId.
        */
       @java.lang.Override
@@ -443,7 +451,7 @@ public final class HideAndSeekSelectAvatarReqOuterClass {
         return avatarId_;
       }
       /**
-       * <code>uint32 avatar_id = 8;</code>
+       * <code>uint32 avatar_id = 10;</code>
        * @param value The avatarId to set.
        * @return This builder for chaining.
        */
@@ -454,7 +462,7 @@ public final class HideAndSeekSelectAvatarReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 avatar_id = 8;</code>
+       * <code>uint32 avatar_id = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearAvatarId() {
@@ -531,7 +539,7 @@ public final class HideAndSeekSelectAvatarReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n HideAndSeekSelectAvatarReq.proto\"/\n\032Hi" +
-      "deAndSeekSelectAvatarReq\022\021\n\tavatar_id\030\010 " +
+      "deAndSeekSelectAvatarReq\022\021\n\tavatar_id\030\n " +
       "\001(\rB\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

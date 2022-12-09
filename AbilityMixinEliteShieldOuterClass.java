@@ -19,7 +19,7 @@ public final class AbilityMixinEliteShieldOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>float sub_shield = 2;</code>
+     * <code>float sub_shield = 9;</code>
      * @return The subShield.
      */
     float getSubShield();
@@ -69,7 +69,7 @@ public final class AbilityMixinEliteShieldOuterClass {
             case 0:
               done = true;
               break;
-            case 21: {
+            case 77: {
 
               subShield_ = input.readFloat();
               break;
@@ -106,10 +106,10 @@ public final class AbilityMixinEliteShieldOuterClass {
               emu.grasscutter.net.proto.AbilityMixinEliteShieldOuterClass.AbilityMixinEliteShield.class, emu.grasscutter.net.proto.AbilityMixinEliteShieldOuterClass.AbilityMixinEliteShield.Builder.class);
     }
 
-    public static final int SUB_SHIELD_FIELD_NUMBER = 2;
+    public static final int SUB_SHIELD_FIELD_NUMBER = 9;
     private float subShield_;
     /**
-     * <code>float sub_shield = 2;</code>
+     * <code>float sub_shield = 9;</code>
      * @return The subShield.
      */
     @java.lang.Override
@@ -132,7 +132,7 @@ public final class AbilityMixinEliteShieldOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (subShield_ != 0F) {
-        output.writeFloat(2, subShield_);
+        output.writeFloat(9, subShield_);
       }
       unknownFields.writeTo(output);
     }
@@ -145,7 +145,7 @@ public final class AbilityMixinEliteShieldOuterClass {
       size = 0;
       if (subShield_ != 0F) {
         size += com.google.protobuf.CodedOutputStream
-          .computeFloatSize(2, subShield_);
+          .computeFloatSize(9, subShield_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -423,7 +423,7 @@ public final class AbilityMixinEliteShieldOuterClass {
 
       private float subShield_ ;
       /**
-       * <code>float sub_shield = 2;</code>
+       * <code>float sub_shield = 9;</code>
        * @return The subShield.
        */
       @java.lang.Override
@@ -431,7 +431,7 @@ public final class AbilityMixinEliteShieldOuterClass {
         return subShield_;
       }
       /**
-       * <code>float sub_shield = 2;</code>
+       * <code>float sub_shield = 9;</code>
        * @param value The subShield to set.
        * @return This builder for chaining.
        */
@@ -442,7 +442,7 @@ public final class AbilityMixinEliteShieldOuterClass {
         return this;
       }
       /**
-       * <code>float sub_shield = 2;</code>
+       * <code>float sub_shield = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearSubShield() {
@@ -519,7 +519,7 @@ public final class AbilityMixinEliteShieldOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\035AbilityMixinEliteShield.proto\"-\n\027Abili" +
-      "tyMixinEliteShield\022\022\n\nsub_shield\030\002 \001(\002B\033" +
+      "tyMixinEliteShield\022\022\n\nsub_shield\030\t \001(\002B\033" +
       "\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

@@ -19,35 +19,39 @@ public final class WidgetQuickHitTreeReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .HitTreeInfo hit_tree_info_list = 5;</code>
+     * <code>repeated .HitTreeInfo hit_tree_info_list = 4;</code>
      */
     java.util.List<emu.grasscutter.net.proto.HitTreeInfoOuterClass.HitTreeInfo> 
         getHitTreeInfoListList();
     /**
-     * <code>repeated .HitTreeInfo hit_tree_info_list = 5;</code>
+     * <code>repeated .HitTreeInfo hit_tree_info_list = 4;</code>
      */
     emu.grasscutter.net.proto.HitTreeInfoOuterClass.HitTreeInfo getHitTreeInfoList(int index);
     /**
-     * <code>repeated .HitTreeInfo hit_tree_info_list = 5;</code>
+     * <code>repeated .HitTreeInfo hit_tree_info_list = 4;</code>
      */
     int getHitTreeInfoListCount();
     /**
-     * <code>repeated .HitTreeInfo hit_tree_info_list = 5;</code>
+     * <code>repeated .HitTreeInfo hit_tree_info_list = 4;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.HitTreeInfoOuterClass.HitTreeInfoOrBuilder> 
         getHitTreeInfoListOrBuilderList();
     /**
-     * <code>repeated .HitTreeInfo hit_tree_info_list = 5;</code>
+     * <code>repeated .HitTreeInfo hit_tree_info_list = 4;</code>
      */
     emu.grasscutter.net.proto.HitTreeInfoOuterClass.HitTreeInfoOrBuilder getHitTreeInfoListOrBuilder(
         int index);
   }
   /**
    * <pre>
-   * CmdId: 3345
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 3068;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code WidgetQuickHitTreeReq}
@@ -96,7 +100,7 @@ public final class WidgetQuickHitTreeReqOuterClass {
             case 0:
               done = true;
               break;
-            case 42: {
+            case 34: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 hitTreeInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.HitTreeInfoOuterClass.HitTreeInfo>();
                 mutable_bitField0_ |= 0x00000001;
@@ -140,17 +144,17 @@ public final class WidgetQuickHitTreeReqOuterClass {
               emu.grasscutter.net.proto.WidgetQuickHitTreeReqOuterClass.WidgetQuickHitTreeReq.class, emu.grasscutter.net.proto.WidgetQuickHitTreeReqOuterClass.WidgetQuickHitTreeReq.Builder.class);
     }
 
-    public static final int HIT_TREE_INFO_LIST_FIELD_NUMBER = 5;
+    public static final int HIT_TREE_INFO_LIST_FIELD_NUMBER = 4;
     private java.util.List<emu.grasscutter.net.proto.HitTreeInfoOuterClass.HitTreeInfo> hitTreeInfoList_;
     /**
-     * <code>repeated .HitTreeInfo hit_tree_info_list = 5;</code>
+     * <code>repeated .HitTreeInfo hit_tree_info_list = 4;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.HitTreeInfoOuterClass.HitTreeInfo> getHitTreeInfoListList() {
       return hitTreeInfoList_;
     }
     /**
-     * <code>repeated .HitTreeInfo hit_tree_info_list = 5;</code>
+     * <code>repeated .HitTreeInfo hit_tree_info_list = 4;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.HitTreeInfoOuterClass.HitTreeInfoOrBuilder> 
@@ -158,21 +162,21 @@ public final class WidgetQuickHitTreeReqOuterClass {
       return hitTreeInfoList_;
     }
     /**
-     * <code>repeated .HitTreeInfo hit_tree_info_list = 5;</code>
+     * <code>repeated .HitTreeInfo hit_tree_info_list = 4;</code>
      */
     @java.lang.Override
     public int getHitTreeInfoListCount() {
       return hitTreeInfoList_.size();
     }
     /**
-     * <code>repeated .HitTreeInfo hit_tree_info_list = 5;</code>
+     * <code>repeated .HitTreeInfo hit_tree_info_list = 4;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.HitTreeInfoOuterClass.HitTreeInfo getHitTreeInfoList(int index) {
       return hitTreeInfoList_.get(index);
     }
     /**
-     * <code>repeated .HitTreeInfo hit_tree_info_list = 5;</code>
+     * <code>repeated .HitTreeInfo hit_tree_info_list = 4;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.HitTreeInfoOuterClass.HitTreeInfoOrBuilder getHitTreeInfoListOrBuilder(
@@ -195,7 +199,7 @@ public final class WidgetQuickHitTreeReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       for (int i = 0; i < hitTreeInfoList_.size(); i++) {
-        output.writeMessage(5, hitTreeInfoList_.get(i));
+        output.writeMessage(4, hitTreeInfoList_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -208,7 +212,7 @@ public final class WidgetQuickHitTreeReqOuterClass {
       size = 0;
       for (int i = 0; i < hitTreeInfoList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(5, hitTreeInfoList_.get(i));
+          .computeMessageSize(4, hitTreeInfoList_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -339,10 +343,14 @@ public final class WidgetQuickHitTreeReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 3345
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 3068;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code WidgetQuickHitTreeReq}
@@ -542,7 +550,7 @@ public final class WidgetQuickHitTreeReqOuterClass {
           emu.grasscutter.net.proto.HitTreeInfoOuterClass.HitTreeInfo, emu.grasscutter.net.proto.HitTreeInfoOuterClass.HitTreeInfo.Builder, emu.grasscutter.net.proto.HitTreeInfoOuterClass.HitTreeInfoOrBuilder> hitTreeInfoListBuilder_;
 
       /**
-       * <code>repeated .HitTreeInfo hit_tree_info_list = 5;</code>
+       * <code>repeated .HitTreeInfo hit_tree_info_list = 4;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.HitTreeInfoOuterClass.HitTreeInfo> getHitTreeInfoListList() {
         if (hitTreeInfoListBuilder_ == null) {
@@ -552,7 +560,7 @@ public final class WidgetQuickHitTreeReqOuterClass {
         }
       }
       /**
-       * <code>repeated .HitTreeInfo hit_tree_info_list = 5;</code>
+       * <code>repeated .HitTreeInfo hit_tree_info_list = 4;</code>
        */
       public int getHitTreeInfoListCount() {
         if (hitTreeInfoListBuilder_ == null) {
@@ -562,7 +570,7 @@ public final class WidgetQuickHitTreeReqOuterClass {
         }
       }
       /**
-       * <code>repeated .HitTreeInfo hit_tree_info_list = 5;</code>
+       * <code>repeated .HitTreeInfo hit_tree_info_list = 4;</code>
        */
       public emu.grasscutter.net.proto.HitTreeInfoOuterClass.HitTreeInfo getHitTreeInfoList(int index) {
         if (hitTreeInfoListBuilder_ == null) {
@@ -572,7 +580,7 @@ public final class WidgetQuickHitTreeReqOuterClass {
         }
       }
       /**
-       * <code>repeated .HitTreeInfo hit_tree_info_list = 5;</code>
+       * <code>repeated .HitTreeInfo hit_tree_info_list = 4;</code>
        */
       public Builder setHitTreeInfoList(
           int index, emu.grasscutter.net.proto.HitTreeInfoOuterClass.HitTreeInfo value) {
@@ -589,7 +597,7 @@ public final class WidgetQuickHitTreeReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated .HitTreeInfo hit_tree_info_list = 5;</code>
+       * <code>repeated .HitTreeInfo hit_tree_info_list = 4;</code>
        */
       public Builder setHitTreeInfoList(
           int index, emu.grasscutter.net.proto.HitTreeInfoOuterClass.HitTreeInfo.Builder builderForValue) {
@@ -603,7 +611,7 @@ public final class WidgetQuickHitTreeReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated .HitTreeInfo hit_tree_info_list = 5;</code>
+       * <code>repeated .HitTreeInfo hit_tree_info_list = 4;</code>
        */
       public Builder addHitTreeInfoList(emu.grasscutter.net.proto.HitTreeInfoOuterClass.HitTreeInfo value) {
         if (hitTreeInfoListBuilder_ == null) {
@@ -619,7 +627,7 @@ public final class WidgetQuickHitTreeReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated .HitTreeInfo hit_tree_info_list = 5;</code>
+       * <code>repeated .HitTreeInfo hit_tree_info_list = 4;</code>
        */
       public Builder addHitTreeInfoList(
           int index, emu.grasscutter.net.proto.HitTreeInfoOuterClass.HitTreeInfo value) {
@@ -636,7 +644,7 @@ public final class WidgetQuickHitTreeReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated .HitTreeInfo hit_tree_info_list = 5;</code>
+       * <code>repeated .HitTreeInfo hit_tree_info_list = 4;</code>
        */
       public Builder addHitTreeInfoList(
           emu.grasscutter.net.proto.HitTreeInfoOuterClass.HitTreeInfo.Builder builderForValue) {
@@ -650,7 +658,7 @@ public final class WidgetQuickHitTreeReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated .HitTreeInfo hit_tree_info_list = 5;</code>
+       * <code>repeated .HitTreeInfo hit_tree_info_list = 4;</code>
        */
       public Builder addHitTreeInfoList(
           int index, emu.grasscutter.net.proto.HitTreeInfoOuterClass.HitTreeInfo.Builder builderForValue) {
@@ -664,7 +672,7 @@ public final class WidgetQuickHitTreeReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated .HitTreeInfo hit_tree_info_list = 5;</code>
+       * <code>repeated .HitTreeInfo hit_tree_info_list = 4;</code>
        */
       public Builder addAllHitTreeInfoList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.HitTreeInfoOuterClass.HitTreeInfo> values) {
@@ -679,7 +687,7 @@ public final class WidgetQuickHitTreeReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated .HitTreeInfo hit_tree_info_list = 5;</code>
+       * <code>repeated .HitTreeInfo hit_tree_info_list = 4;</code>
        */
       public Builder clearHitTreeInfoList() {
         if (hitTreeInfoListBuilder_ == null) {
@@ -692,7 +700,7 @@ public final class WidgetQuickHitTreeReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated .HitTreeInfo hit_tree_info_list = 5;</code>
+       * <code>repeated .HitTreeInfo hit_tree_info_list = 4;</code>
        */
       public Builder removeHitTreeInfoList(int index) {
         if (hitTreeInfoListBuilder_ == null) {
@@ -705,14 +713,14 @@ public final class WidgetQuickHitTreeReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated .HitTreeInfo hit_tree_info_list = 5;</code>
+       * <code>repeated .HitTreeInfo hit_tree_info_list = 4;</code>
        */
       public emu.grasscutter.net.proto.HitTreeInfoOuterClass.HitTreeInfo.Builder getHitTreeInfoListBuilder(
           int index) {
         return getHitTreeInfoListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .HitTreeInfo hit_tree_info_list = 5;</code>
+       * <code>repeated .HitTreeInfo hit_tree_info_list = 4;</code>
        */
       public emu.grasscutter.net.proto.HitTreeInfoOuterClass.HitTreeInfoOrBuilder getHitTreeInfoListOrBuilder(
           int index) {
@@ -722,7 +730,7 @@ public final class WidgetQuickHitTreeReqOuterClass {
         }
       }
       /**
-       * <code>repeated .HitTreeInfo hit_tree_info_list = 5;</code>
+       * <code>repeated .HitTreeInfo hit_tree_info_list = 4;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.HitTreeInfoOuterClass.HitTreeInfoOrBuilder> 
            getHitTreeInfoListOrBuilderList() {
@@ -733,14 +741,14 @@ public final class WidgetQuickHitTreeReqOuterClass {
         }
       }
       /**
-       * <code>repeated .HitTreeInfo hit_tree_info_list = 5;</code>
+       * <code>repeated .HitTreeInfo hit_tree_info_list = 4;</code>
        */
       public emu.grasscutter.net.proto.HitTreeInfoOuterClass.HitTreeInfo.Builder addHitTreeInfoListBuilder() {
         return getHitTreeInfoListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.HitTreeInfoOuterClass.HitTreeInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .HitTreeInfo hit_tree_info_list = 5;</code>
+       * <code>repeated .HitTreeInfo hit_tree_info_list = 4;</code>
        */
       public emu.grasscutter.net.proto.HitTreeInfoOuterClass.HitTreeInfo.Builder addHitTreeInfoListBuilder(
           int index) {
@@ -748,7 +756,7 @@ public final class WidgetQuickHitTreeReqOuterClass {
             index, emu.grasscutter.net.proto.HitTreeInfoOuterClass.HitTreeInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .HitTreeInfo hit_tree_info_list = 5;</code>
+       * <code>repeated .HitTreeInfo hit_tree_info_list = 4;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.HitTreeInfoOuterClass.HitTreeInfo.Builder> 
            getHitTreeInfoListBuilderList() {
@@ -837,7 +845,7 @@ public final class WidgetQuickHitTreeReqOuterClass {
     java.lang.String[] descriptorData = {
       "\n\033WidgetQuickHitTreeReq.proto\032\021HitTreeIn" +
       "fo.proto\"A\n\025WidgetQuickHitTreeReq\022(\n\022hit" +
-      "_tree_info_list\030\005 \003(\0132\014.HitTreeInfoB\033\n\031e" +
+      "_tree_info_list\030\004 \003(\0132\014.HitTreeInfoB\033\n\031e" +
       "mu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

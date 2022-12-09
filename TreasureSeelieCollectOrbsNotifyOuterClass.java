@@ -19,22 +19,26 @@ public final class TreasureSeelieCollectOrbsNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 current_num = 11;</code>
+     * <code>uint32 current_num = 12;</code>
      * @return The currentNum.
      */
     int getCurrentNum();
 
     /**
-     * <code>uint32 total_num = 5;</code>
+     * <code>uint32 total_num = 2;</code>
      * @return The totalNum.
      */
     int getTotalNum();
   }
   /**
    * <pre>
-   * CmdId: 20754
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 20380;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code TreasureSeelieCollectOrbsNotify}
@@ -81,12 +85,12 @@ public final class TreasureSeelieCollectOrbsNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 40: {
+            case 16: {
 
               totalNum_ = input.readUInt32();
               break;
             }
-            case 88: {
+            case 96: {
 
               currentNum_ = input.readUInt32();
               break;
@@ -123,10 +127,10 @@ public final class TreasureSeelieCollectOrbsNotifyOuterClass {
               emu.grasscutter.net.proto.TreasureSeelieCollectOrbsNotifyOuterClass.TreasureSeelieCollectOrbsNotify.class, emu.grasscutter.net.proto.TreasureSeelieCollectOrbsNotifyOuterClass.TreasureSeelieCollectOrbsNotify.Builder.class);
     }
 
-    public static final int CURRENT_NUM_FIELD_NUMBER = 11;
+    public static final int CURRENT_NUM_FIELD_NUMBER = 12;
     private int currentNum_;
     /**
-     * <code>uint32 current_num = 11;</code>
+     * <code>uint32 current_num = 12;</code>
      * @return The currentNum.
      */
     @java.lang.Override
@@ -134,10 +138,10 @@ public final class TreasureSeelieCollectOrbsNotifyOuterClass {
       return currentNum_;
     }
 
-    public static final int TOTAL_NUM_FIELD_NUMBER = 5;
+    public static final int TOTAL_NUM_FIELD_NUMBER = 2;
     private int totalNum_;
     /**
-     * <code>uint32 total_num = 5;</code>
+     * <code>uint32 total_num = 2;</code>
      * @return The totalNum.
      */
     @java.lang.Override
@@ -160,10 +164,10 @@ public final class TreasureSeelieCollectOrbsNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (totalNum_ != 0) {
-        output.writeUInt32(5, totalNum_);
+        output.writeUInt32(2, totalNum_);
       }
       if (currentNum_ != 0) {
-        output.writeUInt32(11, currentNum_);
+        output.writeUInt32(12, currentNum_);
       }
       unknownFields.writeTo(output);
     }
@@ -176,11 +180,11 @@ public final class TreasureSeelieCollectOrbsNotifyOuterClass {
       size = 0;
       if (totalNum_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, totalNum_);
+          .computeUInt32Size(2, totalNum_);
       }
       if (currentNum_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, currentNum_);
+          .computeUInt32Size(12, currentNum_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -313,9 +317,13 @@ public final class TreasureSeelieCollectOrbsNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 20754
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 20380;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code TreasureSeelieCollectOrbsNotify}
@@ -472,7 +480,7 @@ public final class TreasureSeelieCollectOrbsNotifyOuterClass {
 
       private int currentNum_ ;
       /**
-       * <code>uint32 current_num = 11;</code>
+       * <code>uint32 current_num = 12;</code>
        * @return The currentNum.
        */
       @java.lang.Override
@@ -480,7 +488,7 @@ public final class TreasureSeelieCollectOrbsNotifyOuterClass {
         return currentNum_;
       }
       /**
-       * <code>uint32 current_num = 11;</code>
+       * <code>uint32 current_num = 12;</code>
        * @param value The currentNum to set.
        * @return This builder for chaining.
        */
@@ -491,7 +499,7 @@ public final class TreasureSeelieCollectOrbsNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 current_num = 11;</code>
+       * <code>uint32 current_num = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearCurrentNum() {
@@ -503,7 +511,7 @@ public final class TreasureSeelieCollectOrbsNotifyOuterClass {
 
       private int totalNum_ ;
       /**
-       * <code>uint32 total_num = 5;</code>
+       * <code>uint32 total_num = 2;</code>
        * @return The totalNum.
        */
       @java.lang.Override
@@ -511,7 +519,7 @@ public final class TreasureSeelieCollectOrbsNotifyOuterClass {
         return totalNum_;
       }
       /**
-       * <code>uint32 total_num = 5;</code>
+       * <code>uint32 total_num = 2;</code>
        * @param value The totalNum to set.
        * @return This builder for chaining.
        */
@@ -522,7 +530,7 @@ public final class TreasureSeelieCollectOrbsNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 total_num = 5;</code>
+       * <code>uint32 total_num = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearTotalNum() {
@@ -600,7 +608,7 @@ public final class TreasureSeelieCollectOrbsNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n%TreasureSeelieCollectOrbsNotify.proto\"" +
       "I\n\037TreasureSeelieCollectOrbsNotify\022\023\n\013cu" +
-      "rrent_num\030\013 \001(\r\022\021\n\ttotal_num\030\005 \001(\rB\033\n\031em" +
+      "rrent_num\030\014 \001(\r\022\021\n\ttotal_num\030\002 \001(\rB\033\n\031em" +
       "u.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

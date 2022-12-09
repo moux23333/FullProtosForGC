@@ -19,25 +19,29 @@ public final class GroupLinkChangeNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.GroupLinkBundle bundle = 8;</code>
+     * <code>.GroupLinkBundle bundle = 5;</code>
      * @return Whether the bundle field is set.
      */
     boolean hasBundle();
     /**
-     * <code>.GroupLinkBundle bundle = 8;</code>
+     * <code>.GroupLinkBundle bundle = 5;</code>
      * @return The bundle.
      */
     emu.grasscutter.net.proto.GroupLinkBundleOuterClass.GroupLinkBundle getBundle();
     /**
-     * <code>.GroupLinkBundle bundle = 8;</code>
+     * <code>.GroupLinkBundle bundle = 5;</code>
      */
     emu.grasscutter.net.proto.GroupLinkBundleOuterClass.GroupLinkBundleOrBuilder getBundleOrBuilder();
   }
   /**
    * <pre>
-   * CmdId: 5768
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 5791;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code GroupLinkChangeNotify}
@@ -84,7 +88,7 @@ public final class GroupLinkChangeNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 66: {
+            case 42: {
               emu.grasscutter.net.proto.GroupLinkBundleOuterClass.GroupLinkBundle.Builder subBuilder = null;
               if (bundle_ != null) {
                 subBuilder = bundle_.toBuilder();
@@ -129,10 +133,10 @@ public final class GroupLinkChangeNotifyOuterClass {
               emu.grasscutter.net.proto.GroupLinkChangeNotifyOuterClass.GroupLinkChangeNotify.class, emu.grasscutter.net.proto.GroupLinkChangeNotifyOuterClass.GroupLinkChangeNotify.Builder.class);
     }
 
-    public static final int BUNDLE_FIELD_NUMBER = 8;
+    public static final int BUNDLE_FIELD_NUMBER = 5;
     private emu.grasscutter.net.proto.GroupLinkBundleOuterClass.GroupLinkBundle bundle_;
     /**
-     * <code>.GroupLinkBundle bundle = 8;</code>
+     * <code>.GroupLinkBundle bundle = 5;</code>
      * @return Whether the bundle field is set.
      */
     @java.lang.Override
@@ -140,7 +144,7 @@ public final class GroupLinkChangeNotifyOuterClass {
       return bundle_ != null;
     }
     /**
-     * <code>.GroupLinkBundle bundle = 8;</code>
+     * <code>.GroupLinkBundle bundle = 5;</code>
      * @return The bundle.
      */
     @java.lang.Override
@@ -148,7 +152,7 @@ public final class GroupLinkChangeNotifyOuterClass {
       return bundle_ == null ? emu.grasscutter.net.proto.GroupLinkBundleOuterClass.GroupLinkBundle.getDefaultInstance() : bundle_;
     }
     /**
-     * <code>.GroupLinkBundle bundle = 8;</code>
+     * <code>.GroupLinkBundle bundle = 5;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.GroupLinkBundleOuterClass.GroupLinkBundleOrBuilder getBundleOrBuilder() {
@@ -170,7 +174,7 @@ public final class GroupLinkChangeNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (bundle_ != null) {
-        output.writeMessage(8, getBundle());
+        output.writeMessage(5, getBundle());
       }
       unknownFields.writeTo(output);
     }
@@ -183,7 +187,7 @@ public final class GroupLinkChangeNotifyOuterClass {
       size = 0;
       if (bundle_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(8, getBundle());
+          .computeMessageSize(5, getBundle());
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -317,9 +321,13 @@ public final class GroupLinkChangeNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 5768
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 5791;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code GroupLinkChangeNotify}
@@ -480,14 +488,14 @@ public final class GroupLinkChangeNotifyOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.GroupLinkBundleOuterClass.GroupLinkBundle, emu.grasscutter.net.proto.GroupLinkBundleOuterClass.GroupLinkBundle.Builder, emu.grasscutter.net.proto.GroupLinkBundleOuterClass.GroupLinkBundleOrBuilder> bundleBuilder_;
       /**
-       * <code>.GroupLinkBundle bundle = 8;</code>
+       * <code>.GroupLinkBundle bundle = 5;</code>
        * @return Whether the bundle field is set.
        */
       public boolean hasBundle() {
         return bundleBuilder_ != null || bundle_ != null;
       }
       /**
-       * <code>.GroupLinkBundle bundle = 8;</code>
+       * <code>.GroupLinkBundle bundle = 5;</code>
        * @return The bundle.
        */
       public emu.grasscutter.net.proto.GroupLinkBundleOuterClass.GroupLinkBundle getBundle() {
@@ -498,7 +506,7 @@ public final class GroupLinkChangeNotifyOuterClass {
         }
       }
       /**
-       * <code>.GroupLinkBundle bundle = 8;</code>
+       * <code>.GroupLinkBundle bundle = 5;</code>
        */
       public Builder setBundle(emu.grasscutter.net.proto.GroupLinkBundleOuterClass.GroupLinkBundle value) {
         if (bundleBuilder_ == null) {
@@ -514,7 +522,7 @@ public final class GroupLinkChangeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.GroupLinkBundle bundle = 8;</code>
+       * <code>.GroupLinkBundle bundle = 5;</code>
        */
       public Builder setBundle(
           emu.grasscutter.net.proto.GroupLinkBundleOuterClass.GroupLinkBundle.Builder builderForValue) {
@@ -528,7 +536,7 @@ public final class GroupLinkChangeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.GroupLinkBundle bundle = 8;</code>
+       * <code>.GroupLinkBundle bundle = 5;</code>
        */
       public Builder mergeBundle(emu.grasscutter.net.proto.GroupLinkBundleOuterClass.GroupLinkBundle value) {
         if (bundleBuilder_ == null) {
@@ -546,7 +554,7 @@ public final class GroupLinkChangeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.GroupLinkBundle bundle = 8;</code>
+       * <code>.GroupLinkBundle bundle = 5;</code>
        */
       public Builder clearBundle() {
         if (bundleBuilder_ == null) {
@@ -560,7 +568,7 @@ public final class GroupLinkChangeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.GroupLinkBundle bundle = 8;</code>
+       * <code>.GroupLinkBundle bundle = 5;</code>
        */
       public emu.grasscutter.net.proto.GroupLinkBundleOuterClass.GroupLinkBundle.Builder getBundleBuilder() {
         
@@ -568,7 +576,7 @@ public final class GroupLinkChangeNotifyOuterClass {
         return getBundleFieldBuilder().getBuilder();
       }
       /**
-       * <code>.GroupLinkBundle bundle = 8;</code>
+       * <code>.GroupLinkBundle bundle = 5;</code>
        */
       public emu.grasscutter.net.proto.GroupLinkBundleOuterClass.GroupLinkBundleOrBuilder getBundleOrBuilder() {
         if (bundleBuilder_ != null) {
@@ -579,7 +587,7 @@ public final class GroupLinkChangeNotifyOuterClass {
         }
       }
       /**
-       * <code>.GroupLinkBundle bundle = 8;</code>
+       * <code>.GroupLinkBundle bundle = 5;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.GroupLinkBundleOuterClass.GroupLinkBundle, emu.grasscutter.net.proto.GroupLinkBundleOuterClass.GroupLinkBundle.Builder, emu.grasscutter.net.proto.GroupLinkBundleOuterClass.GroupLinkBundleOrBuilder> 
@@ -663,7 +671,7 @@ public final class GroupLinkChangeNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n\033GroupLinkChangeNotify.proto\032\025GroupLink" +
       "Bundle.proto\"9\n\025GroupLinkChangeNotify\022 \n" +
-      "\006bundle\030\010 \001(\0132\020.GroupLinkBundleB\033\n\031emu.g" +
+      "\006bundle\030\005 \001(\0132\020.GroupLinkBundleB\033\n\031emu.g" +
       "rasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

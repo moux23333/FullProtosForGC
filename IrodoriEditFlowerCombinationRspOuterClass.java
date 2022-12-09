@@ -19,28 +19,32 @@ public final class IrodoriEditFlowerCombinationRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_already_finished = 4;</code>
-     * @return The isAlreadyFinished.
-     */
-    boolean getIsAlreadyFinished();
-
-    /**
-     * <code>bool is_can_take_reward = 3;</code>
-     * @return The isCanTakeReward.
-     */
-    boolean getIsCanTakeReward();
-
-    /**
-     * <code>int32 retcode = 1;</code>
+     * <code>int32 retcode = 2;</code>
      * @return The retcode.
      */
     int getRetcode();
+
+    /**
+     * <code>bool Unk3300_IAPLHBKJLBF = 8;</code>
+     * @return The unk3300IAPLHBKJLBF.
+     */
+    boolean getUnk3300IAPLHBKJLBF();
+
+    /**
+     * <code>bool Unk3300_DBBGPOMDKPK = 9;</code>
+     * @return The unk3300DBBGPOMDKPK.
+     */
+    boolean getUnk3300DBBGPOMDKPK();
   }
   /**
    * <pre>
-   * CmdId: 8833
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 8454;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code IrodoriEditFlowerCombinationRsp}
@@ -87,19 +91,19 @@ public final class IrodoriEditFlowerCombinationRspOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
+            case 16: {
 
               retcode_ = input.readInt32();
               break;
             }
-            case 24: {
+            case 64: {
 
-              isCanTakeReward_ = input.readBool();
+              unk3300IAPLHBKJLBF_ = input.readBool();
               break;
             }
-            case 32: {
+            case 72: {
 
-              isAlreadyFinished_ = input.readBool();
+              unk3300DBBGPOMDKPK_ = input.readBool();
               break;
             }
             default: {
@@ -134,37 +138,37 @@ public final class IrodoriEditFlowerCombinationRspOuterClass {
               emu.grasscutter.net.proto.IrodoriEditFlowerCombinationRspOuterClass.IrodoriEditFlowerCombinationRsp.class, emu.grasscutter.net.proto.IrodoriEditFlowerCombinationRspOuterClass.IrodoriEditFlowerCombinationRsp.Builder.class);
     }
 
-    public static final int IS_ALREADY_FINISHED_FIELD_NUMBER = 4;
-    private boolean isAlreadyFinished_;
-    /**
-     * <code>bool is_already_finished = 4;</code>
-     * @return The isAlreadyFinished.
-     */
-    @java.lang.Override
-    public boolean getIsAlreadyFinished() {
-      return isAlreadyFinished_;
-    }
-
-    public static final int IS_CAN_TAKE_REWARD_FIELD_NUMBER = 3;
-    private boolean isCanTakeReward_;
-    /**
-     * <code>bool is_can_take_reward = 3;</code>
-     * @return The isCanTakeReward.
-     */
-    @java.lang.Override
-    public boolean getIsCanTakeReward() {
-      return isCanTakeReward_;
-    }
-
-    public static final int RETCODE_FIELD_NUMBER = 1;
+    public static final int RETCODE_FIELD_NUMBER = 2;
     private int retcode_;
     /**
-     * <code>int32 retcode = 1;</code>
+     * <code>int32 retcode = 2;</code>
      * @return The retcode.
      */
     @java.lang.Override
     public int getRetcode() {
       return retcode_;
+    }
+
+    public static final int UNK3300_IAPLHBKJLBF_FIELD_NUMBER = 8;
+    private boolean unk3300IAPLHBKJLBF_;
+    /**
+     * <code>bool Unk3300_IAPLHBKJLBF = 8;</code>
+     * @return The unk3300IAPLHBKJLBF.
+     */
+    @java.lang.Override
+    public boolean getUnk3300IAPLHBKJLBF() {
+      return unk3300IAPLHBKJLBF_;
+    }
+
+    public static final int UNK3300_DBBGPOMDKPK_FIELD_NUMBER = 9;
+    private boolean unk3300DBBGPOMDKPK_;
+    /**
+     * <code>bool Unk3300_DBBGPOMDKPK = 9;</code>
+     * @return The unk3300DBBGPOMDKPK.
+     */
+    @java.lang.Override
+    public boolean getUnk3300DBBGPOMDKPK() {
+      return unk3300DBBGPOMDKPK_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -182,13 +186,13 @@ public final class IrodoriEditFlowerCombinationRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (retcode_ != 0) {
-        output.writeInt32(1, retcode_);
+        output.writeInt32(2, retcode_);
       }
-      if (isCanTakeReward_ != false) {
-        output.writeBool(3, isCanTakeReward_);
+      if (unk3300IAPLHBKJLBF_ != false) {
+        output.writeBool(8, unk3300IAPLHBKJLBF_);
       }
-      if (isAlreadyFinished_ != false) {
-        output.writeBool(4, isAlreadyFinished_);
+      if (unk3300DBBGPOMDKPK_ != false) {
+        output.writeBool(9, unk3300DBBGPOMDKPK_);
       }
       unknownFields.writeTo(output);
     }
@@ -201,15 +205,15 @@ public final class IrodoriEditFlowerCombinationRspOuterClass {
       size = 0;
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(1, retcode_);
+          .computeInt32Size(2, retcode_);
       }
-      if (isCanTakeReward_ != false) {
+      if (unk3300IAPLHBKJLBF_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(3, isCanTakeReward_);
+          .computeBoolSize(8, unk3300IAPLHBKJLBF_);
       }
-      if (isAlreadyFinished_ != false) {
+      if (unk3300DBBGPOMDKPK_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(4, isAlreadyFinished_);
+          .computeBoolSize(9, unk3300DBBGPOMDKPK_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -226,12 +230,12 @@ public final class IrodoriEditFlowerCombinationRspOuterClass {
       }
       emu.grasscutter.net.proto.IrodoriEditFlowerCombinationRspOuterClass.IrodoriEditFlowerCombinationRsp other = (emu.grasscutter.net.proto.IrodoriEditFlowerCombinationRspOuterClass.IrodoriEditFlowerCombinationRsp) obj;
 
-      if (getIsAlreadyFinished()
-          != other.getIsAlreadyFinished()) return false;
-      if (getIsCanTakeReward()
-          != other.getIsCanTakeReward()) return false;
       if (getRetcode()
           != other.getRetcode()) return false;
+      if (getUnk3300IAPLHBKJLBF()
+          != other.getUnk3300IAPLHBKJLBF()) return false;
+      if (getUnk3300DBBGPOMDKPK()
+          != other.getUnk3300DBBGPOMDKPK()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -243,14 +247,14 @@ public final class IrodoriEditFlowerCombinationRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + IS_ALREADY_FINISHED_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsAlreadyFinished());
-      hash = (37 * hash) + IS_CAN_TAKE_REWARD_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsCanTakeReward());
       hash = (37 * hash) + RETCODE_FIELD_NUMBER;
       hash = (53 * hash) + getRetcode();
+      hash = (37 * hash) + UNK3300_IAPLHBKJLBF_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getUnk3300IAPLHBKJLBF());
+      hash = (37 * hash) + UNK3300_DBBGPOMDKPK_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getUnk3300DBBGPOMDKPK());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -348,9 +352,13 @@ public final class IrodoriEditFlowerCombinationRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 8833
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 8454;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code IrodoriEditFlowerCombinationRsp}
@@ -390,11 +398,11 @@ public final class IrodoriEditFlowerCombinationRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        isAlreadyFinished_ = false;
-
-        isCanTakeReward_ = false;
-
         retcode_ = 0;
+
+        unk3300IAPLHBKJLBF_ = false;
+
+        unk3300DBBGPOMDKPK_ = false;
 
         return this;
       }
@@ -422,9 +430,9 @@ public final class IrodoriEditFlowerCombinationRspOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.IrodoriEditFlowerCombinationRspOuterClass.IrodoriEditFlowerCombinationRsp buildPartial() {
         emu.grasscutter.net.proto.IrodoriEditFlowerCombinationRspOuterClass.IrodoriEditFlowerCombinationRsp result = new emu.grasscutter.net.proto.IrodoriEditFlowerCombinationRspOuterClass.IrodoriEditFlowerCombinationRsp(this);
-        result.isAlreadyFinished_ = isAlreadyFinished_;
-        result.isCanTakeReward_ = isCanTakeReward_;
         result.retcode_ = retcode_;
+        result.unk3300IAPLHBKJLBF_ = unk3300IAPLHBKJLBF_;
+        result.unk3300DBBGPOMDKPK_ = unk3300DBBGPOMDKPK_;
         onBuilt();
         return result;
       }
@@ -473,14 +481,14 @@ public final class IrodoriEditFlowerCombinationRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.IrodoriEditFlowerCombinationRspOuterClass.IrodoriEditFlowerCombinationRsp other) {
         if (other == emu.grasscutter.net.proto.IrodoriEditFlowerCombinationRspOuterClass.IrodoriEditFlowerCombinationRsp.getDefaultInstance()) return this;
-        if (other.getIsAlreadyFinished() != false) {
-          setIsAlreadyFinished(other.getIsAlreadyFinished());
-        }
-        if (other.getIsCanTakeReward() != false) {
-          setIsCanTakeReward(other.getIsCanTakeReward());
-        }
         if (other.getRetcode() != 0) {
           setRetcode(other.getRetcode());
+        }
+        if (other.getUnk3300IAPLHBKJLBF() != false) {
+          setUnk3300IAPLHBKJLBF(other.getUnk3300IAPLHBKJLBF());
+        }
+        if (other.getUnk3300DBBGPOMDKPK() != false) {
+          setUnk3300DBBGPOMDKPK(other.getUnk3300DBBGPOMDKPK());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -511,71 +519,9 @@ public final class IrodoriEditFlowerCombinationRspOuterClass {
         return this;
       }
 
-      private boolean isAlreadyFinished_ ;
-      /**
-       * <code>bool is_already_finished = 4;</code>
-       * @return The isAlreadyFinished.
-       */
-      @java.lang.Override
-      public boolean getIsAlreadyFinished() {
-        return isAlreadyFinished_;
-      }
-      /**
-       * <code>bool is_already_finished = 4;</code>
-       * @param value The isAlreadyFinished to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsAlreadyFinished(boolean value) {
-        
-        isAlreadyFinished_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_already_finished = 4;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsAlreadyFinished() {
-        
-        isAlreadyFinished_ = false;
-        onChanged();
-        return this;
-      }
-
-      private boolean isCanTakeReward_ ;
-      /**
-       * <code>bool is_can_take_reward = 3;</code>
-       * @return The isCanTakeReward.
-       */
-      @java.lang.Override
-      public boolean getIsCanTakeReward() {
-        return isCanTakeReward_;
-      }
-      /**
-       * <code>bool is_can_take_reward = 3;</code>
-       * @param value The isCanTakeReward to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsCanTakeReward(boolean value) {
-        
-        isCanTakeReward_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_can_take_reward = 3;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsCanTakeReward() {
-        
-        isCanTakeReward_ = false;
-        onChanged();
-        return this;
-      }
-
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 1;</code>
+       * <code>int32 retcode = 2;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -583,7 +529,7 @@ public final class IrodoriEditFlowerCombinationRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 1;</code>
+       * <code>int32 retcode = 2;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -594,12 +540,74 @@ public final class IrodoriEditFlowerCombinationRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 1;</code>
+       * <code>int32 retcode = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
         
         retcode_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private boolean unk3300IAPLHBKJLBF_ ;
+      /**
+       * <code>bool Unk3300_IAPLHBKJLBF = 8;</code>
+       * @return The unk3300IAPLHBKJLBF.
+       */
+      @java.lang.Override
+      public boolean getUnk3300IAPLHBKJLBF() {
+        return unk3300IAPLHBKJLBF_;
+      }
+      /**
+       * <code>bool Unk3300_IAPLHBKJLBF = 8;</code>
+       * @param value The unk3300IAPLHBKJLBF to set.
+       * @return This builder for chaining.
+       */
+      public Builder setUnk3300IAPLHBKJLBF(boolean value) {
+        
+        unk3300IAPLHBKJLBF_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool Unk3300_IAPLHBKJLBF = 8;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearUnk3300IAPLHBKJLBF() {
+        
+        unk3300IAPLHBKJLBF_ = false;
+        onChanged();
+        return this;
+      }
+
+      private boolean unk3300DBBGPOMDKPK_ ;
+      /**
+       * <code>bool Unk3300_DBBGPOMDKPK = 9;</code>
+       * @return The unk3300DBBGPOMDKPK.
+       */
+      @java.lang.Override
+      public boolean getUnk3300DBBGPOMDKPK() {
+        return unk3300DBBGPOMDKPK_;
+      }
+      /**
+       * <code>bool Unk3300_DBBGPOMDKPK = 9;</code>
+       * @param value The unk3300DBBGPOMDKPK to set.
+       * @return This builder for chaining.
+       */
+      public Builder setUnk3300DBBGPOMDKPK(boolean value) {
+        
+        unk3300DBBGPOMDKPK_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool Unk3300_DBBGPOMDKPK = 9;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearUnk3300DBBGPOMDKPK() {
+        
+        unk3300DBBGPOMDKPK_ = false;
         onChanged();
         return this;
       }
@@ -671,10 +679,10 @@ public final class IrodoriEditFlowerCombinationRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n%IrodoriEditFlowerCombinationRsp.proto\"" +
-      "k\n\037IrodoriEditFlowerCombinationRsp\022\033\n\023is" +
-      "_already_finished\030\004 \001(\010\022\032\n\022is_can_take_r" +
-      "eward\030\003 \001(\010\022\017\n\007retcode\030\001 \001(\005B\033\n\031emu.gras" +
-      "scutter.net.protob\006proto3"
+      "l\n\037IrodoriEditFlowerCombinationRsp\022\017\n\007re" +
+      "tcode\030\002 \001(\005\022\033\n\023Unk3300_IAPLHBKJLBF\030\010 \001(\010" +
+      "\022\033\n\023Unk3300_DBBGPOMDKPK\030\t \001(\010B\033\n\031emu.gra" +
+      "sscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -685,7 +693,7 @@ public final class IrodoriEditFlowerCombinationRspOuterClass {
     internal_static_IrodoriEditFlowerCombinationRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_IrodoriEditFlowerCombinationRsp_descriptor,
-        new java.lang.String[] { "IsAlreadyFinished", "IsCanTakeReward", "Retcode", });
+        new java.lang.String[] { "Retcode", "Unk3300IAPLHBKJLBF", "Unk3300DBBGPOMDKPK", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

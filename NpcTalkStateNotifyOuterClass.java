@@ -19,16 +19,20 @@ public final class NpcTalkStateNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_ban = 5;</code>
+     * <code>bool is_ban = 2;</code>
      * @return The isBan.
      */
     boolean getIsBan();
   }
   /**
    * <pre>
-   * CmdId: 430
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 450;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code NpcTalkStateNotify}
@@ -75,7 +79,7 @@ public final class NpcTalkStateNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 40: {
+            case 16: {
 
               isBan_ = input.readBool();
               break;
@@ -112,10 +116,10 @@ public final class NpcTalkStateNotifyOuterClass {
               emu.grasscutter.net.proto.NpcTalkStateNotifyOuterClass.NpcTalkStateNotify.class, emu.grasscutter.net.proto.NpcTalkStateNotifyOuterClass.NpcTalkStateNotify.Builder.class);
     }
 
-    public static final int IS_BAN_FIELD_NUMBER = 5;
+    public static final int IS_BAN_FIELD_NUMBER = 2;
     private boolean isBan_;
     /**
-     * <code>bool is_ban = 5;</code>
+     * <code>bool is_ban = 2;</code>
      * @return The isBan.
      */
     @java.lang.Override
@@ -138,7 +142,7 @@ public final class NpcTalkStateNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (isBan_ != false) {
-        output.writeBool(5, isBan_);
+        output.writeBool(2, isBan_);
       }
       unknownFields.writeTo(output);
     }
@@ -151,7 +155,7 @@ public final class NpcTalkStateNotifyOuterClass {
       size = 0;
       if (isBan_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(5, isBan_);
+          .computeBoolSize(2, isBan_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -281,9 +285,13 @@ public final class NpcTalkStateNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 430
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 450;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code NpcTalkStateNotify}
@@ -434,7 +442,7 @@ public final class NpcTalkStateNotifyOuterClass {
 
       private boolean isBan_ ;
       /**
-       * <code>bool is_ban = 5;</code>
+       * <code>bool is_ban = 2;</code>
        * @return The isBan.
        */
       @java.lang.Override
@@ -442,7 +450,7 @@ public final class NpcTalkStateNotifyOuterClass {
         return isBan_;
       }
       /**
-       * <code>bool is_ban = 5;</code>
+       * <code>bool is_ban = 2;</code>
        * @param value The isBan to set.
        * @return This builder for chaining.
        */
@@ -453,7 +461,7 @@ public final class NpcTalkStateNotifyOuterClass {
         return this;
       }
       /**
-       * <code>bool is_ban = 5;</code>
+       * <code>bool is_ban = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsBan() {
@@ -530,7 +538,7 @@ public final class NpcTalkStateNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\030NpcTalkStateNotify.proto\"$\n\022NpcTalkSta" +
-      "teNotify\022\016\n\006is_ban\030\005 \001(\010B\033\n\031emu.grasscut" +
+      "teNotify\022\016\n\006is_ban\030\002 \001(\010B\033\n\031emu.grasscut" +
       "ter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

@@ -19,17 +19,21 @@ public final class SalvageEscortRestartReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 gallery_id = 4;</code>
+     * <code>uint32 gallery_id = 1;</code>
      * @return The galleryId.
      */
     int getGalleryId();
   }
   /**
    * <pre>
-   * CmdId: 8396
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 8520;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code SalvageEscortRestartReq}
@@ -76,7 +80,7 @@ public final class SalvageEscortRestartReqOuterClass {
             case 0:
               done = true;
               break;
-            case 32: {
+            case 8: {
 
               galleryId_ = input.readUInt32();
               break;
@@ -113,10 +117,10 @@ public final class SalvageEscortRestartReqOuterClass {
               emu.grasscutter.net.proto.SalvageEscortRestartReqOuterClass.SalvageEscortRestartReq.class, emu.grasscutter.net.proto.SalvageEscortRestartReqOuterClass.SalvageEscortRestartReq.Builder.class);
     }
 
-    public static final int GALLERY_ID_FIELD_NUMBER = 4;
+    public static final int GALLERY_ID_FIELD_NUMBER = 1;
     private int galleryId_;
     /**
-     * <code>uint32 gallery_id = 4;</code>
+     * <code>uint32 gallery_id = 1;</code>
      * @return The galleryId.
      */
     @java.lang.Override
@@ -139,7 +143,7 @@ public final class SalvageEscortRestartReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (galleryId_ != 0) {
-        output.writeUInt32(4, galleryId_);
+        output.writeUInt32(1, galleryId_);
       }
       unknownFields.writeTo(output);
     }
@@ -152,7 +156,7 @@ public final class SalvageEscortRestartReqOuterClass {
       size = 0;
       if (galleryId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, galleryId_);
+          .computeUInt32Size(1, galleryId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -281,10 +285,14 @@ public final class SalvageEscortRestartReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 8396
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 8520;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code SalvageEscortRestartReq}
@@ -435,7 +443,7 @@ public final class SalvageEscortRestartReqOuterClass {
 
       private int galleryId_ ;
       /**
-       * <code>uint32 gallery_id = 4;</code>
+       * <code>uint32 gallery_id = 1;</code>
        * @return The galleryId.
        */
       @java.lang.Override
@@ -443,7 +451,7 @@ public final class SalvageEscortRestartReqOuterClass {
         return galleryId_;
       }
       /**
-       * <code>uint32 gallery_id = 4;</code>
+       * <code>uint32 gallery_id = 1;</code>
        * @param value The galleryId to set.
        * @return This builder for chaining.
        */
@@ -454,7 +462,7 @@ public final class SalvageEscortRestartReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 gallery_id = 4;</code>
+       * <code>uint32 gallery_id = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearGalleryId() {
@@ -531,7 +539,7 @@ public final class SalvageEscortRestartReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\035SalvageEscortRestartReq.proto\"-\n\027Salva" +
-      "geEscortRestartReq\022\022\n\ngallery_id\030\004 \001(\rB\033" +
+      "geEscortRestartReq\022\022\n\ngallery_id\030\001 \001(\rB\033" +
       "\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

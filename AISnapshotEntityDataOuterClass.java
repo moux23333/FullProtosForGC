@@ -19,77 +19,89 @@ public final class AISnapshotEntityDataOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>float tick_time = 5;</code>
-     * @return The tickTime.
-     */
-    float getTickTime();
-
-    /**
-     * <code>uint32 tactic = 2;</code>
-     * @return The tactic.
-     */
-    int getTactic();
-
-    /**
-     * <code>repeated .AISnapshotEntitySkillCycle finished_skill_cycles = 9;</code>
+     * <code>repeated .AISnapshotEntitySkillCycle finished_skill_cycles = 14;</code>
      */
     java.util.List<emu.grasscutter.net.proto.AISnapshotEntitySkillCycleOuterClass.AISnapshotEntitySkillCycle> 
         getFinishedSkillCyclesList();
     /**
-     * <code>repeated .AISnapshotEntitySkillCycle finished_skill_cycles = 9;</code>
+     * <code>repeated .AISnapshotEntitySkillCycle finished_skill_cycles = 14;</code>
      */
     emu.grasscutter.net.proto.AISnapshotEntitySkillCycleOuterClass.AISnapshotEntitySkillCycle getFinishedSkillCycles(int index);
     /**
-     * <code>repeated .AISnapshotEntitySkillCycle finished_skill_cycles = 9;</code>
+     * <code>repeated .AISnapshotEntitySkillCycle finished_skill_cycles = 14;</code>
      */
     int getFinishedSkillCyclesCount();
     /**
-     * <code>repeated .AISnapshotEntitySkillCycle finished_skill_cycles = 9;</code>
+     * <code>repeated .AISnapshotEntitySkillCycle finished_skill_cycles = 14;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.AISnapshotEntitySkillCycleOuterClass.AISnapshotEntitySkillCycleOrBuilder> 
         getFinishedSkillCyclesOrBuilderList();
     /**
-     * <code>repeated .AISnapshotEntitySkillCycle finished_skill_cycles = 9;</code>
+     * <code>repeated .AISnapshotEntitySkillCycle finished_skill_cycles = 14;</code>
      */
     emu.grasscutter.net.proto.AISnapshotEntitySkillCycleOuterClass.AISnapshotEntitySkillCycleOrBuilder getFinishedSkillCyclesOrBuilder(
         int index);
 
     /**
-     * <code>float moved_distance = 4;</code>
-     * @return The movedDistance.
+     * <code>uint32 attack_target_id = 2;</code>
+     * @return The attackTargetId.
      */
-    float getMovedDistance();
+    int getAttackTargetId();
 
     /**
-     * <code>uint32 ai_target_id = 13;</code>
-     * @return The aiTargetId.
-     */
-    int getAiTargetId();
-
-    /**
-     * <code>uint32 threat_target_id = 3;</code>
-     * @return The threatTargetId.
-     */
-    int getThreatTargetId();
-
-    /**
-     * <code>uint32 threat_list_size = 1;</code>
-     * @return The threatListSize.
-     */
-    int getThreatListSize();
-
-    /**
-     * <code>uint32 entity_id = 15;</code>
+     * <code>uint32 entity_id = 6;</code>
      * @return The entityId.
      */
     int getEntityId();
 
     /**
-     * <code>map&lt;uint32, uint32&gt; hitting_avatars = 7;</code>
+     * <code>float Unk3300_ALBMEMMJEJA = 13;</code>
+     * @return The unk3300ALBMEMMJEJA.
+     */
+    float getUnk3300ALBMEMMJEJA();
+
+    /**
+     * <code>uint32 Unk3300_IADJCDJOKND = 5;</code>
+     * @return The unk3300IADJCDJOKND.
+     */
+    int getUnk3300IADJCDJOKND();
+
+    /**
+     * <code>uint32 Unk3300_FNCIDLDKANO = 7;</code>
+     * @return The unk3300FNCIDLDKANO.
+     */
+    int getUnk3300FNCIDLDKANO();
+
+    /**
+     * <code>float Unk3300_GPCFOCIFHCD = 15;</code>
+     * @return The unk3300GPCFOCIFHCD.
+     */
+    float getUnk3300GPCFOCIFHCD();
+
+    /**
+     * <code>float Unk3300_FMBBEIHCCJO = 12;</code>
+     * @return The unk3300FMBBEIHCCJO.
+     */
+    float getUnk3300FMBBEIHCCJO();
+
+    /**
+     * <code>float Unk3300_LIJIDJOLLEB = 11;</code>
+     * @return The unk3300LIJIDJOLLEB.
+     */
+    float getUnk3300LIJIDJOLLEB();
+
+    /**
+     * <code>uint32 Unk3300_GNBOAJHMNJO = 9;</code>
+     * @return The unk3300GNBOAJHMNJO.
+     */
+    int getUnk3300GNBOAJHMNJO();
+
+    /**
+     * <code>map&lt;uint32, uint32&gt; hitting_avatars = 4;</code>
      */
     int getHittingAvatarsCount();
     /**
-     * <code>map&lt;uint32, uint32&gt; hitting_avatars = 7;</code>
+     * <code>map&lt;uint32, uint32&gt; hitting_avatars = 4;</code>
      */
     boolean containsHittingAvatars(
         int key);
@@ -100,41 +112,29 @@ public final class AISnapshotEntityDataOuterClass {
     java.util.Map<java.lang.Integer, java.lang.Integer>
     getHittingAvatars();
     /**
-     * <code>map&lt;uint32, uint32&gt; hitting_avatars = 7;</code>
+     * <code>map&lt;uint32, uint32&gt; hitting_avatars = 4;</code>
      */
     java.util.Map<java.lang.Integer, java.lang.Integer>
     getHittingAvatarsMap();
     /**
-     * <code>map&lt;uint32, uint32&gt; hitting_avatars = 7;</code>
+     * <code>map&lt;uint32, uint32&gt; hitting_avatars = 4;</code>
      */
 
     int getHittingAvatarsOrDefault(
         int key,
         int defaultValue);
     /**
-     * <code>map&lt;uint32, uint32&gt; hitting_avatars = 7;</code>
+     * <code>map&lt;uint32, uint32&gt; hitting_avatars = 4;</code>
      */
 
     int getHittingAvatarsOrThrow(
         int key);
 
     /**
-     * <code>float distance_to_player = 11;</code>
-     * @return The distanceToPlayer.
+     * <code>uint32 Unk3300_FIKEAEPLOHJ = 3;</code>
+     * @return The unk3300FIKEAEPLOHJ.
      */
-    float getDistanceToPlayer();
-
-    /**
-     * <code>uint32 attack_target_id = 10;</code>
-     * @return The attackTargetId.
-     */
-    int getAttackTargetId();
-
-    /**
-     * <code>float real_time = 14;</code>
-     * @return The realTime.
-     */
-    float getRealTime();
+    int getUnk3300FIKEAEPLOHJ();
   }
   /**
    * Protobuf type {@code AISnapshotEntityData}
@@ -183,32 +183,17 @@ public final class AISnapshotEntityDataOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
-
-              threatListSize_ = input.readUInt32();
-              break;
-            }
             case 16: {
 
-              tactic_ = input.readUInt32();
+              attackTargetId_ = input.readUInt32();
               break;
             }
             case 24: {
 
-              threatTargetId_ = input.readUInt32();
+              unk3300FIKEAEPLOHJ_ = input.readUInt32();
               break;
             }
-            case 37: {
-
-              movedDistance_ = input.readFloat();
-              break;
-            }
-            case 45: {
-
-              tickTime_ = input.readFloat();
-              break;
-            }
-            case 58: {
+            case 34: {
               if (!((mutable_bitField0_ & 0x00000002) != 0)) {
                 hittingAvatars_ = com.google.protobuf.MapField.newMapField(
                     HittingAvatarsDefaultEntryHolder.defaultEntry);
@@ -221,7 +206,42 @@ public final class AISnapshotEntityDataOuterClass {
                   hittingAvatars__.getKey(), hittingAvatars__.getValue());
               break;
             }
-            case 74: {
+            case 40: {
+
+              unk3300IADJCDJOKND_ = input.readUInt32();
+              break;
+            }
+            case 48: {
+
+              entityId_ = input.readUInt32();
+              break;
+            }
+            case 56: {
+
+              unk3300FNCIDLDKANO_ = input.readUInt32();
+              break;
+            }
+            case 72: {
+
+              unk3300GNBOAJHMNJO_ = input.readUInt32();
+              break;
+            }
+            case 93: {
+
+              unk3300LIJIDJOLLEB_ = input.readFloat();
+              break;
+            }
+            case 101: {
+
+              unk3300FMBBEIHCCJO_ = input.readFloat();
+              break;
+            }
+            case 109: {
+
+              unk3300ALBMEMMJEJA_ = input.readFloat();
+              break;
+            }
+            case 114: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 finishedSkillCycles_ = new java.util.ArrayList<emu.grasscutter.net.proto.AISnapshotEntitySkillCycleOuterClass.AISnapshotEntitySkillCycle>();
                 mutable_bitField0_ |= 0x00000001;
@@ -230,29 +250,9 @@ public final class AISnapshotEntityDataOuterClass {
                   input.readMessage(emu.grasscutter.net.proto.AISnapshotEntitySkillCycleOuterClass.AISnapshotEntitySkillCycle.parser(), extensionRegistry));
               break;
             }
-            case 80: {
+            case 125: {
 
-              attackTargetId_ = input.readUInt32();
-              break;
-            }
-            case 93: {
-
-              distanceToPlayer_ = input.readFloat();
-              break;
-            }
-            case 104: {
-
-              aiTargetId_ = input.readUInt32();
-              break;
-            }
-            case 117: {
-
-              realTime_ = input.readFloat();
-              break;
-            }
-            case 120: {
-
-              entityId_ = input.readUInt32();
+              unk3300GPCFOCIFHCD_ = input.readFloat();
               break;
             }
             default: {
@@ -287,7 +287,7 @@ public final class AISnapshotEntityDataOuterClass {
     protected com.google.protobuf.MapField internalGetMapField(
         int number) {
       switch (number) {
-        case 7:
+        case 4:
           return internalGetHittingAvatars();
         default:
           throw new RuntimeException(
@@ -302,39 +302,17 @@ public final class AISnapshotEntityDataOuterClass {
               emu.grasscutter.net.proto.AISnapshotEntityDataOuterClass.AISnapshotEntityData.class, emu.grasscutter.net.proto.AISnapshotEntityDataOuterClass.AISnapshotEntityData.Builder.class);
     }
 
-    public static final int TICK_TIME_FIELD_NUMBER = 5;
-    private float tickTime_;
-    /**
-     * <code>float tick_time = 5;</code>
-     * @return The tickTime.
-     */
-    @java.lang.Override
-    public float getTickTime() {
-      return tickTime_;
-    }
-
-    public static final int TACTIC_FIELD_NUMBER = 2;
-    private int tactic_;
-    /**
-     * <code>uint32 tactic = 2;</code>
-     * @return The tactic.
-     */
-    @java.lang.Override
-    public int getTactic() {
-      return tactic_;
-    }
-
-    public static final int FINISHED_SKILL_CYCLES_FIELD_NUMBER = 9;
+    public static final int FINISHED_SKILL_CYCLES_FIELD_NUMBER = 14;
     private java.util.List<emu.grasscutter.net.proto.AISnapshotEntitySkillCycleOuterClass.AISnapshotEntitySkillCycle> finishedSkillCycles_;
     /**
-     * <code>repeated .AISnapshotEntitySkillCycle finished_skill_cycles = 9;</code>
+     * <code>repeated .AISnapshotEntitySkillCycle finished_skill_cycles = 14;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.AISnapshotEntitySkillCycleOuterClass.AISnapshotEntitySkillCycle> getFinishedSkillCyclesList() {
       return finishedSkillCycles_;
     }
     /**
-     * <code>repeated .AISnapshotEntitySkillCycle finished_skill_cycles = 9;</code>
+     * <code>repeated .AISnapshotEntitySkillCycle finished_skill_cycles = 14;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.AISnapshotEntitySkillCycleOuterClass.AISnapshotEntitySkillCycleOrBuilder> 
@@ -342,21 +320,21 @@ public final class AISnapshotEntityDataOuterClass {
       return finishedSkillCycles_;
     }
     /**
-     * <code>repeated .AISnapshotEntitySkillCycle finished_skill_cycles = 9;</code>
+     * <code>repeated .AISnapshotEntitySkillCycle finished_skill_cycles = 14;</code>
      */
     @java.lang.Override
     public int getFinishedSkillCyclesCount() {
       return finishedSkillCycles_.size();
     }
     /**
-     * <code>repeated .AISnapshotEntitySkillCycle finished_skill_cycles = 9;</code>
+     * <code>repeated .AISnapshotEntitySkillCycle finished_skill_cycles = 14;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.AISnapshotEntitySkillCycleOuterClass.AISnapshotEntitySkillCycle getFinishedSkillCycles(int index) {
       return finishedSkillCycles_.get(index);
     }
     /**
-     * <code>repeated .AISnapshotEntitySkillCycle finished_skill_cycles = 9;</code>
+     * <code>repeated .AISnapshotEntitySkillCycle finished_skill_cycles = 14;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.AISnapshotEntitySkillCycleOuterClass.AISnapshotEntitySkillCycleOrBuilder getFinishedSkillCyclesOrBuilder(
@@ -364,54 +342,21 @@ public final class AISnapshotEntityDataOuterClass {
       return finishedSkillCycles_.get(index);
     }
 
-    public static final int MOVED_DISTANCE_FIELD_NUMBER = 4;
-    private float movedDistance_;
+    public static final int ATTACK_TARGET_ID_FIELD_NUMBER = 2;
+    private int attackTargetId_;
     /**
-     * <code>float moved_distance = 4;</code>
-     * @return The movedDistance.
+     * <code>uint32 attack_target_id = 2;</code>
+     * @return The attackTargetId.
      */
     @java.lang.Override
-    public float getMovedDistance() {
-      return movedDistance_;
+    public int getAttackTargetId() {
+      return attackTargetId_;
     }
 
-    public static final int AI_TARGET_ID_FIELD_NUMBER = 13;
-    private int aiTargetId_;
-    /**
-     * <code>uint32 ai_target_id = 13;</code>
-     * @return The aiTargetId.
-     */
-    @java.lang.Override
-    public int getAiTargetId() {
-      return aiTargetId_;
-    }
-
-    public static final int THREAT_TARGET_ID_FIELD_NUMBER = 3;
-    private int threatTargetId_;
-    /**
-     * <code>uint32 threat_target_id = 3;</code>
-     * @return The threatTargetId.
-     */
-    @java.lang.Override
-    public int getThreatTargetId() {
-      return threatTargetId_;
-    }
-
-    public static final int THREAT_LIST_SIZE_FIELD_NUMBER = 1;
-    private int threatListSize_;
-    /**
-     * <code>uint32 threat_list_size = 1;</code>
-     * @return The threatListSize.
-     */
-    @java.lang.Override
-    public int getThreatListSize() {
-      return threatListSize_;
-    }
-
-    public static final int ENTITY_ID_FIELD_NUMBER = 15;
+    public static final int ENTITY_ID_FIELD_NUMBER = 6;
     private int entityId_;
     /**
-     * <code>uint32 entity_id = 15;</code>
+     * <code>uint32 entity_id = 6;</code>
      * @return The entityId.
      */
     @java.lang.Override
@@ -419,7 +364,84 @@ public final class AISnapshotEntityDataOuterClass {
       return entityId_;
     }
 
-    public static final int HITTING_AVATARS_FIELD_NUMBER = 7;
+    public static final int UNK3300_ALBMEMMJEJA_FIELD_NUMBER = 13;
+    private float unk3300ALBMEMMJEJA_;
+    /**
+     * <code>float Unk3300_ALBMEMMJEJA = 13;</code>
+     * @return The unk3300ALBMEMMJEJA.
+     */
+    @java.lang.Override
+    public float getUnk3300ALBMEMMJEJA() {
+      return unk3300ALBMEMMJEJA_;
+    }
+
+    public static final int UNK3300_IADJCDJOKND_FIELD_NUMBER = 5;
+    private int unk3300IADJCDJOKND_;
+    /**
+     * <code>uint32 Unk3300_IADJCDJOKND = 5;</code>
+     * @return The unk3300IADJCDJOKND.
+     */
+    @java.lang.Override
+    public int getUnk3300IADJCDJOKND() {
+      return unk3300IADJCDJOKND_;
+    }
+
+    public static final int UNK3300_FNCIDLDKANO_FIELD_NUMBER = 7;
+    private int unk3300FNCIDLDKANO_;
+    /**
+     * <code>uint32 Unk3300_FNCIDLDKANO = 7;</code>
+     * @return The unk3300FNCIDLDKANO.
+     */
+    @java.lang.Override
+    public int getUnk3300FNCIDLDKANO() {
+      return unk3300FNCIDLDKANO_;
+    }
+
+    public static final int UNK3300_GPCFOCIFHCD_FIELD_NUMBER = 15;
+    private float unk3300GPCFOCIFHCD_;
+    /**
+     * <code>float Unk3300_GPCFOCIFHCD = 15;</code>
+     * @return The unk3300GPCFOCIFHCD.
+     */
+    @java.lang.Override
+    public float getUnk3300GPCFOCIFHCD() {
+      return unk3300GPCFOCIFHCD_;
+    }
+
+    public static final int UNK3300_FMBBEIHCCJO_FIELD_NUMBER = 12;
+    private float unk3300FMBBEIHCCJO_;
+    /**
+     * <code>float Unk3300_FMBBEIHCCJO = 12;</code>
+     * @return The unk3300FMBBEIHCCJO.
+     */
+    @java.lang.Override
+    public float getUnk3300FMBBEIHCCJO() {
+      return unk3300FMBBEIHCCJO_;
+    }
+
+    public static final int UNK3300_LIJIDJOLLEB_FIELD_NUMBER = 11;
+    private float unk3300LIJIDJOLLEB_;
+    /**
+     * <code>float Unk3300_LIJIDJOLLEB = 11;</code>
+     * @return The unk3300LIJIDJOLLEB.
+     */
+    @java.lang.Override
+    public float getUnk3300LIJIDJOLLEB() {
+      return unk3300LIJIDJOLLEB_;
+    }
+
+    public static final int UNK3300_GNBOAJHMNJO_FIELD_NUMBER = 9;
+    private int unk3300GNBOAJHMNJO_;
+    /**
+     * <code>uint32 Unk3300_GNBOAJHMNJO = 9;</code>
+     * @return The unk3300GNBOAJHMNJO.
+     */
+    @java.lang.Override
+    public int getUnk3300GNBOAJHMNJO() {
+      return unk3300GNBOAJHMNJO_;
+    }
+
+    public static final int HITTING_AVATARS_FIELD_NUMBER = 4;
     private static final class HittingAvatarsDefaultEntryHolder {
       static final com.google.protobuf.MapEntry<
           java.lang.Integer, java.lang.Integer> defaultEntry =
@@ -446,7 +468,7 @@ public final class AISnapshotEntityDataOuterClass {
       return internalGetHittingAvatars().getMap().size();
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; hitting_avatars = 7;</code>
+     * <code>map&lt;uint32, uint32&gt; hitting_avatars = 4;</code>
      */
 
     @java.lang.Override
@@ -464,7 +486,7 @@ public final class AISnapshotEntityDataOuterClass {
       return getHittingAvatarsMap();
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; hitting_avatars = 7;</code>
+     * <code>map&lt;uint32, uint32&gt; hitting_avatars = 4;</code>
      */
     @java.lang.Override
 
@@ -472,7 +494,7 @@ public final class AISnapshotEntityDataOuterClass {
       return internalGetHittingAvatars().getMap();
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; hitting_avatars = 7;</code>
+     * <code>map&lt;uint32, uint32&gt; hitting_avatars = 4;</code>
      */
     @java.lang.Override
 
@@ -485,7 +507,7 @@ public final class AISnapshotEntityDataOuterClass {
       return map.containsKey(key) ? map.get(key) : defaultValue;
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; hitting_avatars = 7;</code>
+     * <code>map&lt;uint32, uint32&gt; hitting_avatars = 4;</code>
      */
     @java.lang.Override
 
@@ -500,37 +522,15 @@ public final class AISnapshotEntityDataOuterClass {
       return map.get(key);
     }
 
-    public static final int DISTANCE_TO_PLAYER_FIELD_NUMBER = 11;
-    private float distanceToPlayer_;
+    public static final int UNK3300_FIKEAEPLOHJ_FIELD_NUMBER = 3;
+    private int unk3300FIKEAEPLOHJ_;
     /**
-     * <code>float distance_to_player = 11;</code>
-     * @return The distanceToPlayer.
+     * <code>uint32 Unk3300_FIKEAEPLOHJ = 3;</code>
+     * @return The unk3300FIKEAEPLOHJ.
      */
     @java.lang.Override
-    public float getDistanceToPlayer() {
-      return distanceToPlayer_;
-    }
-
-    public static final int ATTACK_TARGET_ID_FIELD_NUMBER = 10;
-    private int attackTargetId_;
-    /**
-     * <code>uint32 attack_target_id = 10;</code>
-     * @return The attackTargetId.
-     */
-    @java.lang.Override
-    public int getAttackTargetId() {
-      return attackTargetId_;
-    }
-
-    public static final int REAL_TIME_FIELD_NUMBER = 14;
-    private float realTime_;
-    /**
-     * <code>float real_time = 14;</code>
-     * @return The realTime.
-     */
-    @java.lang.Override
-    public float getRealTime() {
-      return realTime_;
+    public int getUnk3300FIKEAEPLOHJ() {
+      return unk3300FIKEAEPLOHJ_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -547,44 +547,44 @@ public final class AISnapshotEntityDataOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (threatListSize_ != 0) {
-        output.writeUInt32(1, threatListSize_);
+      if (attackTargetId_ != 0) {
+        output.writeUInt32(2, attackTargetId_);
       }
-      if (tactic_ != 0) {
-        output.writeUInt32(2, tactic_);
-      }
-      if (threatTargetId_ != 0) {
-        output.writeUInt32(3, threatTargetId_);
-      }
-      if (movedDistance_ != 0F) {
-        output.writeFloat(4, movedDistance_);
-      }
-      if (tickTime_ != 0F) {
-        output.writeFloat(5, tickTime_);
+      if (unk3300FIKEAEPLOHJ_ != 0) {
+        output.writeUInt32(3, unk3300FIKEAEPLOHJ_);
       }
       com.google.protobuf.GeneratedMessageV3
         .serializeIntegerMapTo(
           output,
           internalGetHittingAvatars(),
           HittingAvatarsDefaultEntryHolder.defaultEntry,
-          7);
-      for (int i = 0; i < finishedSkillCycles_.size(); i++) {
-        output.writeMessage(9, finishedSkillCycles_.get(i));
-      }
-      if (attackTargetId_ != 0) {
-        output.writeUInt32(10, attackTargetId_);
-      }
-      if (distanceToPlayer_ != 0F) {
-        output.writeFloat(11, distanceToPlayer_);
-      }
-      if (aiTargetId_ != 0) {
-        output.writeUInt32(13, aiTargetId_);
-      }
-      if (realTime_ != 0F) {
-        output.writeFloat(14, realTime_);
+          4);
+      if (unk3300IADJCDJOKND_ != 0) {
+        output.writeUInt32(5, unk3300IADJCDJOKND_);
       }
       if (entityId_ != 0) {
-        output.writeUInt32(15, entityId_);
+        output.writeUInt32(6, entityId_);
+      }
+      if (unk3300FNCIDLDKANO_ != 0) {
+        output.writeUInt32(7, unk3300FNCIDLDKANO_);
+      }
+      if (unk3300GNBOAJHMNJO_ != 0) {
+        output.writeUInt32(9, unk3300GNBOAJHMNJO_);
+      }
+      if (unk3300LIJIDJOLLEB_ != 0F) {
+        output.writeFloat(11, unk3300LIJIDJOLLEB_);
+      }
+      if (unk3300FMBBEIHCCJO_ != 0F) {
+        output.writeFloat(12, unk3300FMBBEIHCCJO_);
+      }
+      if (unk3300ALBMEMMJEJA_ != 0F) {
+        output.writeFloat(13, unk3300ALBMEMMJEJA_);
+      }
+      for (int i = 0; i < finishedSkillCycles_.size(); i++) {
+        output.writeMessage(14, finishedSkillCycles_.get(i));
+      }
+      if (unk3300GPCFOCIFHCD_ != 0F) {
+        output.writeFloat(15, unk3300GPCFOCIFHCD_);
       }
       unknownFields.writeTo(output);
     }
@@ -595,25 +595,13 @@ public final class AISnapshotEntityDataOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (threatListSize_ != 0) {
+      if (attackTargetId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, threatListSize_);
+          .computeUInt32Size(2, attackTargetId_);
       }
-      if (tactic_ != 0) {
+      if (unk3300FIKEAEPLOHJ_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, tactic_);
-      }
-      if (threatTargetId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, threatTargetId_);
-      }
-      if (movedDistance_ != 0F) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeFloatSize(4, movedDistance_);
-      }
-      if (tickTime_ != 0F) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeFloatSize(5, tickTime_);
+          .computeUInt32Size(3, unk3300FIKEAEPLOHJ_);
       }
       for (java.util.Map.Entry<java.lang.Integer, java.lang.Integer> entry
            : internalGetHittingAvatars().getMap().entrySet()) {
@@ -623,31 +611,43 @@ public final class AISnapshotEntityDataOuterClass {
             .setValue(entry.getValue())
             .build();
         size += com.google.protobuf.CodedOutputStream
-            .computeMessageSize(7, hittingAvatars__);
+            .computeMessageSize(4, hittingAvatars__);
       }
-      for (int i = 0; i < finishedSkillCycles_.size(); i++) {
+      if (unk3300IADJCDJOKND_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(9, finishedSkillCycles_.get(i));
-      }
-      if (attackTargetId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, attackTargetId_);
-      }
-      if (distanceToPlayer_ != 0F) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeFloatSize(11, distanceToPlayer_);
-      }
-      if (aiTargetId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, aiTargetId_);
-      }
-      if (realTime_ != 0F) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeFloatSize(14, realTime_);
+          .computeUInt32Size(5, unk3300IADJCDJOKND_);
       }
       if (entityId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, entityId_);
+          .computeUInt32Size(6, entityId_);
+      }
+      if (unk3300FNCIDLDKANO_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(7, unk3300FNCIDLDKANO_);
+      }
+      if (unk3300GNBOAJHMNJO_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(9, unk3300GNBOAJHMNJO_);
+      }
+      if (unk3300LIJIDJOLLEB_ != 0F) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeFloatSize(11, unk3300LIJIDJOLLEB_);
+      }
+      if (unk3300FMBBEIHCCJO_ != 0F) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeFloatSize(12, unk3300FMBBEIHCCJO_);
+      }
+      if (unk3300ALBMEMMJEJA_ != 0F) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeFloatSize(13, unk3300ALBMEMMJEJA_);
+      }
+      for (int i = 0; i < finishedSkillCycles_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(14, finishedSkillCycles_.get(i));
+      }
+      if (unk3300GPCFOCIFHCD_ != 0F) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeFloatSize(15, unk3300GPCFOCIFHCD_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -664,34 +664,34 @@ public final class AISnapshotEntityDataOuterClass {
       }
       emu.grasscutter.net.proto.AISnapshotEntityDataOuterClass.AISnapshotEntityData other = (emu.grasscutter.net.proto.AISnapshotEntityDataOuterClass.AISnapshotEntityData) obj;
 
-      if (java.lang.Float.floatToIntBits(getTickTime())
-          != java.lang.Float.floatToIntBits(
-              other.getTickTime())) return false;
-      if (getTactic()
-          != other.getTactic()) return false;
       if (!getFinishedSkillCyclesList()
           .equals(other.getFinishedSkillCyclesList())) return false;
-      if (java.lang.Float.floatToIntBits(getMovedDistance())
-          != java.lang.Float.floatToIntBits(
-              other.getMovedDistance())) return false;
-      if (getAiTargetId()
-          != other.getAiTargetId()) return false;
-      if (getThreatTargetId()
-          != other.getThreatTargetId()) return false;
-      if (getThreatListSize()
-          != other.getThreatListSize()) return false;
-      if (getEntityId()
-          != other.getEntityId()) return false;
-      if (!internalGetHittingAvatars().equals(
-          other.internalGetHittingAvatars())) return false;
-      if (java.lang.Float.floatToIntBits(getDistanceToPlayer())
-          != java.lang.Float.floatToIntBits(
-              other.getDistanceToPlayer())) return false;
       if (getAttackTargetId()
           != other.getAttackTargetId()) return false;
-      if (java.lang.Float.floatToIntBits(getRealTime())
+      if (getEntityId()
+          != other.getEntityId()) return false;
+      if (java.lang.Float.floatToIntBits(getUnk3300ALBMEMMJEJA())
           != java.lang.Float.floatToIntBits(
-              other.getRealTime())) return false;
+              other.getUnk3300ALBMEMMJEJA())) return false;
+      if (getUnk3300IADJCDJOKND()
+          != other.getUnk3300IADJCDJOKND()) return false;
+      if (getUnk3300FNCIDLDKANO()
+          != other.getUnk3300FNCIDLDKANO()) return false;
+      if (java.lang.Float.floatToIntBits(getUnk3300GPCFOCIFHCD())
+          != java.lang.Float.floatToIntBits(
+              other.getUnk3300GPCFOCIFHCD())) return false;
+      if (java.lang.Float.floatToIntBits(getUnk3300FMBBEIHCCJO())
+          != java.lang.Float.floatToIntBits(
+              other.getUnk3300FMBBEIHCCJO())) return false;
+      if (java.lang.Float.floatToIntBits(getUnk3300LIJIDJOLLEB())
+          != java.lang.Float.floatToIntBits(
+              other.getUnk3300LIJIDJOLLEB())) return false;
+      if (getUnk3300GNBOAJHMNJO()
+          != other.getUnk3300GNBOAJHMNJO()) return false;
+      if (!internalGetHittingAvatars().equals(
+          other.internalGetHittingAvatars())) return false;
+      if (getUnk3300FIKEAEPLOHJ()
+          != other.getUnk3300FIKEAEPLOHJ()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -703,38 +703,38 @@ public final class AISnapshotEntityDataOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + TICK_TIME_FIELD_NUMBER;
-      hash = (53 * hash) + java.lang.Float.floatToIntBits(
-          getTickTime());
-      hash = (37 * hash) + TACTIC_FIELD_NUMBER;
-      hash = (53 * hash) + getTactic();
       if (getFinishedSkillCyclesCount() > 0) {
         hash = (37 * hash) + FINISHED_SKILL_CYCLES_FIELD_NUMBER;
         hash = (53 * hash) + getFinishedSkillCyclesList().hashCode();
       }
-      hash = (37 * hash) + MOVED_DISTANCE_FIELD_NUMBER;
-      hash = (53 * hash) + java.lang.Float.floatToIntBits(
-          getMovedDistance());
-      hash = (37 * hash) + AI_TARGET_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getAiTargetId();
-      hash = (37 * hash) + THREAT_TARGET_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getThreatTargetId();
-      hash = (37 * hash) + THREAT_LIST_SIZE_FIELD_NUMBER;
-      hash = (53 * hash) + getThreatListSize();
+      hash = (37 * hash) + ATTACK_TARGET_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getAttackTargetId();
       hash = (37 * hash) + ENTITY_ID_FIELD_NUMBER;
       hash = (53 * hash) + getEntityId();
+      hash = (37 * hash) + UNK3300_ALBMEMMJEJA_FIELD_NUMBER;
+      hash = (53 * hash) + java.lang.Float.floatToIntBits(
+          getUnk3300ALBMEMMJEJA());
+      hash = (37 * hash) + UNK3300_IADJCDJOKND_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300IADJCDJOKND();
+      hash = (37 * hash) + UNK3300_FNCIDLDKANO_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300FNCIDLDKANO();
+      hash = (37 * hash) + UNK3300_GPCFOCIFHCD_FIELD_NUMBER;
+      hash = (53 * hash) + java.lang.Float.floatToIntBits(
+          getUnk3300GPCFOCIFHCD());
+      hash = (37 * hash) + UNK3300_FMBBEIHCCJO_FIELD_NUMBER;
+      hash = (53 * hash) + java.lang.Float.floatToIntBits(
+          getUnk3300FMBBEIHCCJO());
+      hash = (37 * hash) + UNK3300_LIJIDJOLLEB_FIELD_NUMBER;
+      hash = (53 * hash) + java.lang.Float.floatToIntBits(
+          getUnk3300LIJIDJOLLEB());
+      hash = (37 * hash) + UNK3300_GNBOAJHMNJO_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300GNBOAJHMNJO();
       if (!internalGetHittingAvatars().getMap().isEmpty()) {
         hash = (37 * hash) + HITTING_AVATARS_FIELD_NUMBER;
         hash = (53 * hash) + internalGetHittingAvatars().hashCode();
       }
-      hash = (37 * hash) + DISTANCE_TO_PLAYER_FIELD_NUMBER;
-      hash = (53 * hash) + java.lang.Float.floatToIntBits(
-          getDistanceToPlayer());
-      hash = (37 * hash) + ATTACK_TARGET_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getAttackTargetId();
-      hash = (37 * hash) + REAL_TIME_FIELD_NUMBER;
-      hash = (53 * hash) + java.lang.Float.floatToIntBits(
-          getRealTime());
+      hash = (37 * hash) + UNK3300_FIKEAEPLOHJ_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300FIKEAEPLOHJ();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -846,7 +846,7 @@ public final class AISnapshotEntityDataOuterClass {
       protected com.google.protobuf.MapField internalGetMapField(
           int number) {
         switch (number) {
-          case 7:
+          case 4:
             return internalGetHittingAvatars();
           default:
             throw new RuntimeException(
@@ -857,7 +857,7 @@ public final class AISnapshotEntityDataOuterClass {
       protected com.google.protobuf.MapField internalGetMutableMapField(
           int number) {
         switch (number) {
-          case 7:
+          case 4:
             return internalGetMutableHittingAvatars();
           default:
             throw new RuntimeException(
@@ -891,32 +891,32 @@ public final class AISnapshotEntityDataOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        tickTime_ = 0F;
-
-        tactic_ = 0;
-
         if (finishedSkillCyclesBuilder_ == null) {
           finishedSkillCycles_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000001);
         } else {
           finishedSkillCyclesBuilder_.clear();
         }
-        movedDistance_ = 0F;
-
-        aiTargetId_ = 0;
-
-        threatTargetId_ = 0;
-
-        threatListSize_ = 0;
+        attackTargetId_ = 0;
 
         entityId_ = 0;
 
+        unk3300ALBMEMMJEJA_ = 0F;
+
+        unk3300IADJCDJOKND_ = 0;
+
+        unk3300FNCIDLDKANO_ = 0;
+
+        unk3300GPCFOCIFHCD_ = 0F;
+
+        unk3300FMBBEIHCCJO_ = 0F;
+
+        unk3300LIJIDJOLLEB_ = 0F;
+
+        unk3300GNBOAJHMNJO_ = 0;
+
         internalGetMutableHittingAvatars().clear();
-        distanceToPlayer_ = 0F;
-
-        attackTargetId_ = 0;
-
-        realTime_ = 0F;
+        unk3300FIKEAEPLOHJ_ = 0;
 
         return this;
       }
@@ -945,8 +945,6 @@ public final class AISnapshotEntityDataOuterClass {
       public emu.grasscutter.net.proto.AISnapshotEntityDataOuterClass.AISnapshotEntityData buildPartial() {
         emu.grasscutter.net.proto.AISnapshotEntityDataOuterClass.AISnapshotEntityData result = new emu.grasscutter.net.proto.AISnapshotEntityDataOuterClass.AISnapshotEntityData(this);
         int from_bitField0_ = bitField0_;
-        result.tickTime_ = tickTime_;
-        result.tactic_ = tactic_;
         if (finishedSkillCyclesBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0)) {
             finishedSkillCycles_ = java.util.Collections.unmodifiableList(finishedSkillCycles_);
@@ -956,16 +954,18 @@ public final class AISnapshotEntityDataOuterClass {
         } else {
           result.finishedSkillCycles_ = finishedSkillCyclesBuilder_.build();
         }
-        result.movedDistance_ = movedDistance_;
-        result.aiTargetId_ = aiTargetId_;
-        result.threatTargetId_ = threatTargetId_;
-        result.threatListSize_ = threatListSize_;
+        result.attackTargetId_ = attackTargetId_;
         result.entityId_ = entityId_;
+        result.unk3300ALBMEMMJEJA_ = unk3300ALBMEMMJEJA_;
+        result.unk3300IADJCDJOKND_ = unk3300IADJCDJOKND_;
+        result.unk3300FNCIDLDKANO_ = unk3300FNCIDLDKANO_;
+        result.unk3300GPCFOCIFHCD_ = unk3300GPCFOCIFHCD_;
+        result.unk3300FMBBEIHCCJO_ = unk3300FMBBEIHCCJO_;
+        result.unk3300LIJIDJOLLEB_ = unk3300LIJIDJOLLEB_;
+        result.unk3300GNBOAJHMNJO_ = unk3300GNBOAJHMNJO_;
         result.hittingAvatars_ = internalGetHittingAvatars();
         result.hittingAvatars_.makeImmutable();
-        result.distanceToPlayer_ = distanceToPlayer_;
-        result.attackTargetId_ = attackTargetId_;
-        result.realTime_ = realTime_;
+        result.unk3300FIKEAEPLOHJ_ = unk3300FIKEAEPLOHJ_;
         onBuilt();
         return result;
       }
@@ -1014,12 +1014,6 @@ public final class AISnapshotEntityDataOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.AISnapshotEntityDataOuterClass.AISnapshotEntityData other) {
         if (other == emu.grasscutter.net.proto.AISnapshotEntityDataOuterClass.AISnapshotEntityData.getDefaultInstance()) return this;
-        if (other.getTickTime() != 0F) {
-          setTickTime(other.getTickTime());
-        }
-        if (other.getTactic() != 0) {
-          setTactic(other.getTactic());
-        }
         if (finishedSkillCyclesBuilder_ == null) {
           if (!other.finishedSkillCycles_.isEmpty()) {
             if (finishedSkillCycles_.isEmpty()) {
@@ -1046,31 +1040,37 @@ public final class AISnapshotEntityDataOuterClass {
             }
           }
         }
-        if (other.getMovedDistance() != 0F) {
-          setMovedDistance(other.getMovedDistance());
-        }
-        if (other.getAiTargetId() != 0) {
-          setAiTargetId(other.getAiTargetId());
-        }
-        if (other.getThreatTargetId() != 0) {
-          setThreatTargetId(other.getThreatTargetId());
-        }
-        if (other.getThreatListSize() != 0) {
-          setThreatListSize(other.getThreatListSize());
+        if (other.getAttackTargetId() != 0) {
+          setAttackTargetId(other.getAttackTargetId());
         }
         if (other.getEntityId() != 0) {
           setEntityId(other.getEntityId());
         }
+        if (other.getUnk3300ALBMEMMJEJA() != 0F) {
+          setUnk3300ALBMEMMJEJA(other.getUnk3300ALBMEMMJEJA());
+        }
+        if (other.getUnk3300IADJCDJOKND() != 0) {
+          setUnk3300IADJCDJOKND(other.getUnk3300IADJCDJOKND());
+        }
+        if (other.getUnk3300FNCIDLDKANO() != 0) {
+          setUnk3300FNCIDLDKANO(other.getUnk3300FNCIDLDKANO());
+        }
+        if (other.getUnk3300GPCFOCIFHCD() != 0F) {
+          setUnk3300GPCFOCIFHCD(other.getUnk3300GPCFOCIFHCD());
+        }
+        if (other.getUnk3300FMBBEIHCCJO() != 0F) {
+          setUnk3300FMBBEIHCCJO(other.getUnk3300FMBBEIHCCJO());
+        }
+        if (other.getUnk3300LIJIDJOLLEB() != 0F) {
+          setUnk3300LIJIDJOLLEB(other.getUnk3300LIJIDJOLLEB());
+        }
+        if (other.getUnk3300GNBOAJHMNJO() != 0) {
+          setUnk3300GNBOAJHMNJO(other.getUnk3300GNBOAJHMNJO());
+        }
         internalGetMutableHittingAvatars().mergeFrom(
             other.internalGetHittingAvatars());
-        if (other.getDistanceToPlayer() != 0F) {
-          setDistanceToPlayer(other.getDistanceToPlayer());
-        }
-        if (other.getAttackTargetId() != 0) {
-          setAttackTargetId(other.getAttackTargetId());
-        }
-        if (other.getRealTime() != 0F) {
-          setRealTime(other.getRealTime());
+        if (other.getUnk3300FIKEAEPLOHJ() != 0) {
+          setUnk3300FIKEAEPLOHJ(other.getUnk3300FIKEAEPLOHJ());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -1102,68 +1102,6 @@ public final class AISnapshotEntityDataOuterClass {
       }
       private int bitField0_;
 
-      private float tickTime_ ;
-      /**
-       * <code>float tick_time = 5;</code>
-       * @return The tickTime.
-       */
-      @java.lang.Override
-      public float getTickTime() {
-        return tickTime_;
-      }
-      /**
-       * <code>float tick_time = 5;</code>
-       * @param value The tickTime to set.
-       * @return This builder for chaining.
-       */
-      public Builder setTickTime(float value) {
-        
-        tickTime_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>float tick_time = 5;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearTickTime() {
-        
-        tickTime_ = 0F;
-        onChanged();
-        return this;
-      }
-
-      private int tactic_ ;
-      /**
-       * <code>uint32 tactic = 2;</code>
-       * @return The tactic.
-       */
-      @java.lang.Override
-      public int getTactic() {
-        return tactic_;
-      }
-      /**
-       * <code>uint32 tactic = 2;</code>
-       * @param value The tactic to set.
-       * @return This builder for chaining.
-       */
-      public Builder setTactic(int value) {
-        
-        tactic_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 tactic = 2;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearTactic() {
-        
-        tactic_ = 0;
-        onChanged();
-        return this;
-      }
-
       private java.util.List<emu.grasscutter.net.proto.AISnapshotEntitySkillCycleOuterClass.AISnapshotEntitySkillCycle> finishedSkillCycles_ =
         java.util.Collections.emptyList();
       private void ensureFinishedSkillCyclesIsMutable() {
@@ -1177,7 +1115,7 @@ public final class AISnapshotEntityDataOuterClass {
           emu.grasscutter.net.proto.AISnapshotEntitySkillCycleOuterClass.AISnapshotEntitySkillCycle, emu.grasscutter.net.proto.AISnapshotEntitySkillCycleOuterClass.AISnapshotEntitySkillCycle.Builder, emu.grasscutter.net.proto.AISnapshotEntitySkillCycleOuterClass.AISnapshotEntitySkillCycleOrBuilder> finishedSkillCyclesBuilder_;
 
       /**
-       * <code>repeated .AISnapshotEntitySkillCycle finished_skill_cycles = 9;</code>
+       * <code>repeated .AISnapshotEntitySkillCycle finished_skill_cycles = 14;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.AISnapshotEntitySkillCycleOuterClass.AISnapshotEntitySkillCycle> getFinishedSkillCyclesList() {
         if (finishedSkillCyclesBuilder_ == null) {
@@ -1187,7 +1125,7 @@ public final class AISnapshotEntityDataOuterClass {
         }
       }
       /**
-       * <code>repeated .AISnapshotEntitySkillCycle finished_skill_cycles = 9;</code>
+       * <code>repeated .AISnapshotEntitySkillCycle finished_skill_cycles = 14;</code>
        */
       public int getFinishedSkillCyclesCount() {
         if (finishedSkillCyclesBuilder_ == null) {
@@ -1197,7 +1135,7 @@ public final class AISnapshotEntityDataOuterClass {
         }
       }
       /**
-       * <code>repeated .AISnapshotEntitySkillCycle finished_skill_cycles = 9;</code>
+       * <code>repeated .AISnapshotEntitySkillCycle finished_skill_cycles = 14;</code>
        */
       public emu.grasscutter.net.proto.AISnapshotEntitySkillCycleOuterClass.AISnapshotEntitySkillCycle getFinishedSkillCycles(int index) {
         if (finishedSkillCyclesBuilder_ == null) {
@@ -1207,7 +1145,7 @@ public final class AISnapshotEntityDataOuterClass {
         }
       }
       /**
-       * <code>repeated .AISnapshotEntitySkillCycle finished_skill_cycles = 9;</code>
+       * <code>repeated .AISnapshotEntitySkillCycle finished_skill_cycles = 14;</code>
        */
       public Builder setFinishedSkillCycles(
           int index, emu.grasscutter.net.proto.AISnapshotEntitySkillCycleOuterClass.AISnapshotEntitySkillCycle value) {
@@ -1224,7 +1162,7 @@ public final class AISnapshotEntityDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated .AISnapshotEntitySkillCycle finished_skill_cycles = 9;</code>
+       * <code>repeated .AISnapshotEntitySkillCycle finished_skill_cycles = 14;</code>
        */
       public Builder setFinishedSkillCycles(
           int index, emu.grasscutter.net.proto.AISnapshotEntitySkillCycleOuterClass.AISnapshotEntitySkillCycle.Builder builderForValue) {
@@ -1238,7 +1176,7 @@ public final class AISnapshotEntityDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated .AISnapshotEntitySkillCycle finished_skill_cycles = 9;</code>
+       * <code>repeated .AISnapshotEntitySkillCycle finished_skill_cycles = 14;</code>
        */
       public Builder addFinishedSkillCycles(emu.grasscutter.net.proto.AISnapshotEntitySkillCycleOuterClass.AISnapshotEntitySkillCycle value) {
         if (finishedSkillCyclesBuilder_ == null) {
@@ -1254,7 +1192,7 @@ public final class AISnapshotEntityDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated .AISnapshotEntitySkillCycle finished_skill_cycles = 9;</code>
+       * <code>repeated .AISnapshotEntitySkillCycle finished_skill_cycles = 14;</code>
        */
       public Builder addFinishedSkillCycles(
           int index, emu.grasscutter.net.proto.AISnapshotEntitySkillCycleOuterClass.AISnapshotEntitySkillCycle value) {
@@ -1271,7 +1209,7 @@ public final class AISnapshotEntityDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated .AISnapshotEntitySkillCycle finished_skill_cycles = 9;</code>
+       * <code>repeated .AISnapshotEntitySkillCycle finished_skill_cycles = 14;</code>
        */
       public Builder addFinishedSkillCycles(
           emu.grasscutter.net.proto.AISnapshotEntitySkillCycleOuterClass.AISnapshotEntitySkillCycle.Builder builderForValue) {
@@ -1285,7 +1223,7 @@ public final class AISnapshotEntityDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated .AISnapshotEntitySkillCycle finished_skill_cycles = 9;</code>
+       * <code>repeated .AISnapshotEntitySkillCycle finished_skill_cycles = 14;</code>
        */
       public Builder addFinishedSkillCycles(
           int index, emu.grasscutter.net.proto.AISnapshotEntitySkillCycleOuterClass.AISnapshotEntitySkillCycle.Builder builderForValue) {
@@ -1299,7 +1237,7 @@ public final class AISnapshotEntityDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated .AISnapshotEntitySkillCycle finished_skill_cycles = 9;</code>
+       * <code>repeated .AISnapshotEntitySkillCycle finished_skill_cycles = 14;</code>
        */
       public Builder addAllFinishedSkillCycles(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.AISnapshotEntitySkillCycleOuterClass.AISnapshotEntitySkillCycle> values) {
@@ -1314,7 +1252,7 @@ public final class AISnapshotEntityDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated .AISnapshotEntitySkillCycle finished_skill_cycles = 9;</code>
+       * <code>repeated .AISnapshotEntitySkillCycle finished_skill_cycles = 14;</code>
        */
       public Builder clearFinishedSkillCycles() {
         if (finishedSkillCyclesBuilder_ == null) {
@@ -1327,7 +1265,7 @@ public final class AISnapshotEntityDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated .AISnapshotEntitySkillCycle finished_skill_cycles = 9;</code>
+       * <code>repeated .AISnapshotEntitySkillCycle finished_skill_cycles = 14;</code>
        */
       public Builder removeFinishedSkillCycles(int index) {
         if (finishedSkillCyclesBuilder_ == null) {
@@ -1340,14 +1278,14 @@ public final class AISnapshotEntityDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated .AISnapshotEntitySkillCycle finished_skill_cycles = 9;</code>
+       * <code>repeated .AISnapshotEntitySkillCycle finished_skill_cycles = 14;</code>
        */
       public emu.grasscutter.net.proto.AISnapshotEntitySkillCycleOuterClass.AISnapshotEntitySkillCycle.Builder getFinishedSkillCyclesBuilder(
           int index) {
         return getFinishedSkillCyclesFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .AISnapshotEntitySkillCycle finished_skill_cycles = 9;</code>
+       * <code>repeated .AISnapshotEntitySkillCycle finished_skill_cycles = 14;</code>
        */
       public emu.grasscutter.net.proto.AISnapshotEntitySkillCycleOuterClass.AISnapshotEntitySkillCycleOrBuilder getFinishedSkillCyclesOrBuilder(
           int index) {
@@ -1357,7 +1295,7 @@ public final class AISnapshotEntityDataOuterClass {
         }
       }
       /**
-       * <code>repeated .AISnapshotEntitySkillCycle finished_skill_cycles = 9;</code>
+       * <code>repeated .AISnapshotEntitySkillCycle finished_skill_cycles = 14;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.AISnapshotEntitySkillCycleOuterClass.AISnapshotEntitySkillCycleOrBuilder> 
            getFinishedSkillCyclesOrBuilderList() {
@@ -1368,14 +1306,14 @@ public final class AISnapshotEntityDataOuterClass {
         }
       }
       /**
-       * <code>repeated .AISnapshotEntitySkillCycle finished_skill_cycles = 9;</code>
+       * <code>repeated .AISnapshotEntitySkillCycle finished_skill_cycles = 14;</code>
        */
       public emu.grasscutter.net.proto.AISnapshotEntitySkillCycleOuterClass.AISnapshotEntitySkillCycle.Builder addFinishedSkillCyclesBuilder() {
         return getFinishedSkillCyclesFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.AISnapshotEntitySkillCycleOuterClass.AISnapshotEntitySkillCycle.getDefaultInstance());
       }
       /**
-       * <code>repeated .AISnapshotEntitySkillCycle finished_skill_cycles = 9;</code>
+       * <code>repeated .AISnapshotEntitySkillCycle finished_skill_cycles = 14;</code>
        */
       public emu.grasscutter.net.proto.AISnapshotEntitySkillCycleOuterClass.AISnapshotEntitySkillCycle.Builder addFinishedSkillCyclesBuilder(
           int index) {
@@ -1383,7 +1321,7 @@ public final class AISnapshotEntityDataOuterClass {
             index, emu.grasscutter.net.proto.AISnapshotEntitySkillCycleOuterClass.AISnapshotEntitySkillCycle.getDefaultInstance());
       }
       /**
-       * <code>repeated .AISnapshotEntitySkillCycle finished_skill_cycles = 9;</code>
+       * <code>repeated .AISnapshotEntitySkillCycle finished_skill_cycles = 14;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.AISnapshotEntitySkillCycleOuterClass.AISnapshotEntitySkillCycle.Builder> 
            getFinishedSkillCyclesBuilderList() {
@@ -1404,133 +1342,40 @@ public final class AISnapshotEntityDataOuterClass {
         return finishedSkillCyclesBuilder_;
       }
 
-      private float movedDistance_ ;
+      private int attackTargetId_ ;
       /**
-       * <code>float moved_distance = 4;</code>
-       * @return The movedDistance.
+       * <code>uint32 attack_target_id = 2;</code>
+       * @return The attackTargetId.
        */
       @java.lang.Override
-      public float getMovedDistance() {
-        return movedDistance_;
+      public int getAttackTargetId() {
+        return attackTargetId_;
       }
       /**
-       * <code>float moved_distance = 4;</code>
-       * @param value The movedDistance to set.
+       * <code>uint32 attack_target_id = 2;</code>
+       * @param value The attackTargetId to set.
        * @return This builder for chaining.
        */
-      public Builder setMovedDistance(float value) {
+      public Builder setAttackTargetId(int value) {
         
-        movedDistance_ = value;
+        attackTargetId_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>float moved_distance = 4;</code>
+       * <code>uint32 attack_target_id = 2;</code>
        * @return This builder for chaining.
        */
-      public Builder clearMovedDistance() {
+      public Builder clearAttackTargetId() {
         
-        movedDistance_ = 0F;
-        onChanged();
-        return this;
-      }
-
-      private int aiTargetId_ ;
-      /**
-       * <code>uint32 ai_target_id = 13;</code>
-       * @return The aiTargetId.
-       */
-      @java.lang.Override
-      public int getAiTargetId() {
-        return aiTargetId_;
-      }
-      /**
-       * <code>uint32 ai_target_id = 13;</code>
-       * @param value The aiTargetId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setAiTargetId(int value) {
-        
-        aiTargetId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 ai_target_id = 13;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearAiTargetId() {
-        
-        aiTargetId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int threatTargetId_ ;
-      /**
-       * <code>uint32 threat_target_id = 3;</code>
-       * @return The threatTargetId.
-       */
-      @java.lang.Override
-      public int getThreatTargetId() {
-        return threatTargetId_;
-      }
-      /**
-       * <code>uint32 threat_target_id = 3;</code>
-       * @param value The threatTargetId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setThreatTargetId(int value) {
-        
-        threatTargetId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 threat_target_id = 3;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearThreatTargetId() {
-        
-        threatTargetId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int threatListSize_ ;
-      /**
-       * <code>uint32 threat_list_size = 1;</code>
-       * @return The threatListSize.
-       */
-      @java.lang.Override
-      public int getThreatListSize() {
-        return threatListSize_;
-      }
-      /**
-       * <code>uint32 threat_list_size = 1;</code>
-       * @param value The threatListSize to set.
-       * @return This builder for chaining.
-       */
-      public Builder setThreatListSize(int value) {
-        
-        threatListSize_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 threat_list_size = 1;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearThreatListSize() {
-        
-        threatListSize_ = 0;
+        attackTargetId_ = 0;
         onChanged();
         return this;
       }
 
       private int entityId_ ;
       /**
-       * <code>uint32 entity_id = 15;</code>
+       * <code>uint32 entity_id = 6;</code>
        * @return The entityId.
        */
       @java.lang.Override
@@ -1538,7 +1383,7 @@ public final class AISnapshotEntityDataOuterClass {
         return entityId_;
       }
       /**
-       * <code>uint32 entity_id = 15;</code>
+       * <code>uint32 entity_id = 6;</code>
        * @param value The entityId to set.
        * @return This builder for chaining.
        */
@@ -1549,12 +1394,229 @@ public final class AISnapshotEntityDataOuterClass {
         return this;
       }
       /**
-       * <code>uint32 entity_id = 15;</code>
+       * <code>uint32 entity_id = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearEntityId() {
         
         entityId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private float unk3300ALBMEMMJEJA_ ;
+      /**
+       * <code>float Unk3300_ALBMEMMJEJA = 13;</code>
+       * @return The unk3300ALBMEMMJEJA.
+       */
+      @java.lang.Override
+      public float getUnk3300ALBMEMMJEJA() {
+        return unk3300ALBMEMMJEJA_;
+      }
+      /**
+       * <code>float Unk3300_ALBMEMMJEJA = 13;</code>
+       * @param value The unk3300ALBMEMMJEJA to set.
+       * @return This builder for chaining.
+       */
+      public Builder setUnk3300ALBMEMMJEJA(float value) {
+        
+        unk3300ALBMEMMJEJA_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>float Unk3300_ALBMEMMJEJA = 13;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearUnk3300ALBMEMMJEJA() {
+        
+        unk3300ALBMEMMJEJA_ = 0F;
+        onChanged();
+        return this;
+      }
+
+      private int unk3300IADJCDJOKND_ ;
+      /**
+       * <code>uint32 Unk3300_IADJCDJOKND = 5;</code>
+       * @return The unk3300IADJCDJOKND.
+       */
+      @java.lang.Override
+      public int getUnk3300IADJCDJOKND() {
+        return unk3300IADJCDJOKND_;
+      }
+      /**
+       * <code>uint32 Unk3300_IADJCDJOKND = 5;</code>
+       * @param value The unk3300IADJCDJOKND to set.
+       * @return This builder for chaining.
+       */
+      public Builder setUnk3300IADJCDJOKND(int value) {
+        
+        unk3300IADJCDJOKND_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 Unk3300_IADJCDJOKND = 5;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearUnk3300IADJCDJOKND() {
+        
+        unk3300IADJCDJOKND_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int unk3300FNCIDLDKANO_ ;
+      /**
+       * <code>uint32 Unk3300_FNCIDLDKANO = 7;</code>
+       * @return The unk3300FNCIDLDKANO.
+       */
+      @java.lang.Override
+      public int getUnk3300FNCIDLDKANO() {
+        return unk3300FNCIDLDKANO_;
+      }
+      /**
+       * <code>uint32 Unk3300_FNCIDLDKANO = 7;</code>
+       * @param value The unk3300FNCIDLDKANO to set.
+       * @return This builder for chaining.
+       */
+      public Builder setUnk3300FNCIDLDKANO(int value) {
+        
+        unk3300FNCIDLDKANO_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 Unk3300_FNCIDLDKANO = 7;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearUnk3300FNCIDLDKANO() {
+        
+        unk3300FNCIDLDKANO_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private float unk3300GPCFOCIFHCD_ ;
+      /**
+       * <code>float Unk3300_GPCFOCIFHCD = 15;</code>
+       * @return The unk3300GPCFOCIFHCD.
+       */
+      @java.lang.Override
+      public float getUnk3300GPCFOCIFHCD() {
+        return unk3300GPCFOCIFHCD_;
+      }
+      /**
+       * <code>float Unk3300_GPCFOCIFHCD = 15;</code>
+       * @param value The unk3300GPCFOCIFHCD to set.
+       * @return This builder for chaining.
+       */
+      public Builder setUnk3300GPCFOCIFHCD(float value) {
+        
+        unk3300GPCFOCIFHCD_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>float Unk3300_GPCFOCIFHCD = 15;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearUnk3300GPCFOCIFHCD() {
+        
+        unk3300GPCFOCIFHCD_ = 0F;
+        onChanged();
+        return this;
+      }
+
+      private float unk3300FMBBEIHCCJO_ ;
+      /**
+       * <code>float Unk3300_FMBBEIHCCJO = 12;</code>
+       * @return The unk3300FMBBEIHCCJO.
+       */
+      @java.lang.Override
+      public float getUnk3300FMBBEIHCCJO() {
+        return unk3300FMBBEIHCCJO_;
+      }
+      /**
+       * <code>float Unk3300_FMBBEIHCCJO = 12;</code>
+       * @param value The unk3300FMBBEIHCCJO to set.
+       * @return This builder for chaining.
+       */
+      public Builder setUnk3300FMBBEIHCCJO(float value) {
+        
+        unk3300FMBBEIHCCJO_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>float Unk3300_FMBBEIHCCJO = 12;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearUnk3300FMBBEIHCCJO() {
+        
+        unk3300FMBBEIHCCJO_ = 0F;
+        onChanged();
+        return this;
+      }
+
+      private float unk3300LIJIDJOLLEB_ ;
+      /**
+       * <code>float Unk3300_LIJIDJOLLEB = 11;</code>
+       * @return The unk3300LIJIDJOLLEB.
+       */
+      @java.lang.Override
+      public float getUnk3300LIJIDJOLLEB() {
+        return unk3300LIJIDJOLLEB_;
+      }
+      /**
+       * <code>float Unk3300_LIJIDJOLLEB = 11;</code>
+       * @param value The unk3300LIJIDJOLLEB to set.
+       * @return This builder for chaining.
+       */
+      public Builder setUnk3300LIJIDJOLLEB(float value) {
+        
+        unk3300LIJIDJOLLEB_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>float Unk3300_LIJIDJOLLEB = 11;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearUnk3300LIJIDJOLLEB() {
+        
+        unk3300LIJIDJOLLEB_ = 0F;
+        onChanged();
+        return this;
+      }
+
+      private int unk3300GNBOAJHMNJO_ ;
+      /**
+       * <code>uint32 Unk3300_GNBOAJHMNJO = 9;</code>
+       * @return The unk3300GNBOAJHMNJO.
+       */
+      @java.lang.Override
+      public int getUnk3300GNBOAJHMNJO() {
+        return unk3300GNBOAJHMNJO_;
+      }
+      /**
+       * <code>uint32 Unk3300_GNBOAJHMNJO = 9;</code>
+       * @param value The unk3300GNBOAJHMNJO to set.
+       * @return This builder for chaining.
+       */
+      public Builder setUnk3300GNBOAJHMNJO(int value) {
+        
+        unk3300GNBOAJHMNJO_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 Unk3300_GNBOAJHMNJO = 9;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearUnk3300GNBOAJHMNJO() {
+        
+        unk3300GNBOAJHMNJO_ = 0;
         onChanged();
         return this;
       }
@@ -1586,7 +1648,7 @@ public final class AISnapshotEntityDataOuterClass {
         return internalGetHittingAvatars().getMap().size();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; hitting_avatars = 7;</code>
+       * <code>map&lt;uint32, uint32&gt; hitting_avatars = 4;</code>
        */
 
       @java.lang.Override
@@ -1604,7 +1666,7 @@ public final class AISnapshotEntityDataOuterClass {
         return getHittingAvatarsMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; hitting_avatars = 7;</code>
+       * <code>map&lt;uint32, uint32&gt; hitting_avatars = 4;</code>
        */
       @java.lang.Override
 
@@ -1612,7 +1674,7 @@ public final class AISnapshotEntityDataOuterClass {
         return internalGetHittingAvatars().getMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; hitting_avatars = 7;</code>
+       * <code>map&lt;uint32, uint32&gt; hitting_avatars = 4;</code>
        */
       @java.lang.Override
 
@@ -1625,7 +1687,7 @@ public final class AISnapshotEntityDataOuterClass {
         return map.containsKey(key) ? map.get(key) : defaultValue;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; hitting_avatars = 7;</code>
+       * <code>map&lt;uint32, uint32&gt; hitting_avatars = 4;</code>
        */
       @java.lang.Override
 
@@ -1646,7 +1708,7 @@ public final class AISnapshotEntityDataOuterClass {
         return this;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; hitting_avatars = 7;</code>
+       * <code>map&lt;uint32, uint32&gt; hitting_avatars = 4;</code>
        */
 
       public Builder removeHittingAvatars(
@@ -1665,7 +1727,7 @@ public final class AISnapshotEntityDataOuterClass {
         return internalGetMutableHittingAvatars().getMutableMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; hitting_avatars = 7;</code>
+       * <code>map&lt;uint32, uint32&gt; hitting_avatars = 4;</code>
        */
       public Builder putHittingAvatars(
           int key,
@@ -1677,7 +1739,7 @@ public final class AISnapshotEntityDataOuterClass {
         return this;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; hitting_avatars = 7;</code>
+       * <code>map&lt;uint32, uint32&gt; hitting_avatars = 4;</code>
        */
 
       public Builder putAllHittingAvatars(
@@ -1687,95 +1749,33 @@ public final class AISnapshotEntityDataOuterClass {
         return this;
       }
 
-      private float distanceToPlayer_ ;
+      private int unk3300FIKEAEPLOHJ_ ;
       /**
-       * <code>float distance_to_player = 11;</code>
-       * @return The distanceToPlayer.
+       * <code>uint32 Unk3300_FIKEAEPLOHJ = 3;</code>
+       * @return The unk3300FIKEAEPLOHJ.
        */
       @java.lang.Override
-      public float getDistanceToPlayer() {
-        return distanceToPlayer_;
+      public int getUnk3300FIKEAEPLOHJ() {
+        return unk3300FIKEAEPLOHJ_;
       }
       /**
-       * <code>float distance_to_player = 11;</code>
-       * @param value The distanceToPlayer to set.
+       * <code>uint32 Unk3300_FIKEAEPLOHJ = 3;</code>
+       * @param value The unk3300FIKEAEPLOHJ to set.
        * @return This builder for chaining.
        */
-      public Builder setDistanceToPlayer(float value) {
+      public Builder setUnk3300FIKEAEPLOHJ(int value) {
         
-        distanceToPlayer_ = value;
+        unk3300FIKEAEPLOHJ_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>float distance_to_player = 11;</code>
+       * <code>uint32 Unk3300_FIKEAEPLOHJ = 3;</code>
        * @return This builder for chaining.
        */
-      public Builder clearDistanceToPlayer() {
+      public Builder clearUnk3300FIKEAEPLOHJ() {
         
-        distanceToPlayer_ = 0F;
-        onChanged();
-        return this;
-      }
-
-      private int attackTargetId_ ;
-      /**
-       * <code>uint32 attack_target_id = 10;</code>
-       * @return The attackTargetId.
-       */
-      @java.lang.Override
-      public int getAttackTargetId() {
-        return attackTargetId_;
-      }
-      /**
-       * <code>uint32 attack_target_id = 10;</code>
-       * @param value The attackTargetId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setAttackTargetId(int value) {
-        
-        attackTargetId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 attack_target_id = 10;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearAttackTargetId() {
-        
-        attackTargetId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private float realTime_ ;
-      /**
-       * <code>float real_time = 14;</code>
-       * @return The realTime.
-       */
-      @java.lang.Override
-      public float getRealTime() {
-        return realTime_;
-      }
-      /**
-       * <code>float real_time = 14;</code>
-       * @param value The realTime to set.
-       * @return This builder for chaining.
-       */
-      public Builder setRealTime(float value) {
-        
-        realTime_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>float real_time = 14;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearRealTime() {
-        
-        realTime_ = 0F;
+        unk3300FIKEAEPLOHJ_ = 0;
         onChanged();
         return this;
       }
@@ -1852,19 +1852,20 @@ public final class AISnapshotEntityDataOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\032AISnapshotEntityData.proto\032 AISnapshot" +
-      "EntitySkillCycle.proto\"\256\003\n\024AISnapshotEnt" +
-      "ityData\022\021\n\ttick_time\030\005 \001(\002\022\016\n\006tactic\030\002 \001" +
-      "(\r\022:\n\025finished_skill_cycles\030\t \003(\0132\033.AISn" +
-      "apshotEntitySkillCycle\022\026\n\016moved_distance" +
-      "\030\004 \001(\002\022\024\n\014ai_target_id\030\r \001(\r\022\030\n\020threat_t" +
-      "arget_id\030\003 \001(\r\022\030\n\020threat_list_size\030\001 \001(\r" +
-      "\022\021\n\tentity_id\030\017 \001(\r\022B\n\017hitting_avatars\030\007" +
-      " \003(\0132).AISnapshotEntityData.HittingAvata" +
-      "rsEntry\022\032\n\022distance_to_player\030\013 \001(\002\022\030\n\020a" +
-      "ttack_target_id\030\n \001(\r\022\021\n\treal_time\030\016 \001(\002" +
-      "\0325\n\023HittingAvatarsEntry\022\013\n\003key\030\001 \001(\r\022\r\n\005" +
-      "value\030\002 \001(\r:\0028\001B\033\n\031emu.grasscutter.net.p" +
-      "rotob\006proto3"
+      "EntitySkillCycle.proto\"\342\003\n\024AISnapshotEnt" +
+      "ityData\022:\n\025finished_skill_cycles\030\016 \003(\0132\033" +
+      ".AISnapshotEntitySkillCycle\022\030\n\020attack_ta" +
+      "rget_id\030\002 \001(\r\022\021\n\tentity_id\030\006 \001(\r\022\033\n\023Unk3" +
+      "300_ALBMEMMJEJA\030\r \001(\002\022\033\n\023Unk3300_IADJCDJ" +
+      "OKND\030\005 \001(\r\022\033\n\023Unk3300_FNCIDLDKANO\030\007 \001(\r\022" +
+      "\033\n\023Unk3300_GPCFOCIFHCD\030\017 \001(\002\022\033\n\023Unk3300_" +
+      "FMBBEIHCCJO\030\014 \001(\002\022\033\n\023Unk3300_LIJIDJOLLEB" +
+      "\030\013 \001(\002\022\033\n\023Unk3300_GNBOAJHMNJO\030\t \001(\r\022B\n\017h" +
+      "itting_avatars\030\004 \003(\0132).AISnapshotEntityD" +
+      "ata.HittingAvatarsEntry\022\033\n\023Unk3300_FIKEA" +
+      "EPLOHJ\030\003 \001(\r\0325\n\023HittingAvatarsEntry\022\013\n\003k" +
+      "ey\030\001 \001(\r\022\r\n\005value\030\002 \001(\r:\0028\001B\033\n\031emu.grass" +
+      "cutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -1876,7 +1877,7 @@ public final class AISnapshotEntityDataOuterClass {
     internal_static_AISnapshotEntityData_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_AISnapshotEntityData_descriptor,
-        new java.lang.String[] { "TickTime", "Tactic", "FinishedSkillCycles", "MovedDistance", "AiTargetId", "ThreatTargetId", "ThreatListSize", "EntityId", "HittingAvatars", "DistanceToPlayer", "AttackTargetId", "RealTime", });
+        new java.lang.String[] { "FinishedSkillCycles", "AttackTargetId", "EntityId", "Unk3300ALBMEMMJEJA", "Unk3300IADJCDJOKND", "Unk3300FNCIDLDKANO", "Unk3300GPCFOCIFHCD", "Unk3300FMBBEIHCCJO", "Unk3300LIJIDJOLLEB", "Unk3300GNBOAJHMNJO", "HittingAvatars", "Unk3300FIKEAEPLOHJ", });
     internal_static_AISnapshotEntityData_HittingAvatarsEntry_descriptor =
       internal_static_AISnapshotEntityData_descriptor.getNestedTypes().get(0);
     internal_static_AISnapshotEntityData_HittingAvatarsEntry_fieldAccessorTable = new

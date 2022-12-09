@@ -19,59 +19,63 @@ public final class FungusCultivateReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 cultivate_id = 8;</code>
+     * <code>uint32 Unk3300_IOANLJBMBAI = 1;</code>
+     * @return The unk3300IOANLJBMBAI.
+     */
+    int getUnk3300IOANLJBMBAI();
+
+    /**
+     * <code>uint32 Unk3300_DJEGJDACDEF = 6;</code>
+     * @return The unk3300DJEGJDACDEF.
+     */
+    int getUnk3300DJEGJDACDEF();
+
+    /**
+     * <code>uint32 Unk3300_IMEGFNOLDCE = 2;</code>
+     * @return The unk3300IMEGFNOLDCE.
+     */
+    int getUnk3300IMEGFNOLDCE();
+
+    /**
+     * <code>uint32 Unk3300_PGJKEICFKLL = 5;</code>
+     * @return The unk3300PGJKEICFKLL.
+     */
+    int getUnk3300PGJKEICFKLL();
+
+    /**
+     * <code>uint32 Unk3300_MBPLICBFAGL = 7;</code>
+     * @return The unk3300MBPLICBFAGL.
+     */
+    int getUnk3300MBPLICBFAGL();
+
+    /**
+     * <code>uint32 cultivate_id = 12;</code>
      * @return The cultivateId.
      */
     int getCultivateId();
 
     /**
-     * <code>uint32 copy_step = 7;</code>
-     * @return The copyStep.
-     */
-    int getCopyStep();
-
-    /**
-     * <code>uint32 exchange_step = 11;</code>
-     * @return The exchangeStep.
-     */
-    int getExchangeStep();
-
-    /**
-     * <code>uint32 cultivate_step = 13;</code>
-     * @return The cultivateStep.
-     */
-    int getCultivateStep();
-
-    /**
-     * <code>uint32 rotate_step = 15;</code>
-     * @return The rotateStep.
-     */
-    int getRotateStep();
-
-    /**
-     * <code>uint32 undo_step = 6;</code>
-     * @return The undoStep.
-     */
-    int getUndoStep();
-
-    /**
-     * <code>uint32 time = 2;</code>
+     * <code>uint32 time = 15;</code>
      * @return The time.
      */
     int getTime();
 
     /**
-     * <code>uint32 place_step = 10;</code>
-     * @return The placeStep.
+     * <code>uint32 Unk3300_AEGCNHLOPEP = 8;</code>
+     * @return The unk3300AEGCNHLOPEP.
      */
-    int getPlaceStep();
+    int getUnk3300AEGCNHLOPEP();
   }
   /**
    * <pre>
-   * CmdId: 21749
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 23545;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code FungusCultivateReq}
@@ -118,44 +122,44 @@ public final class FungusCultivateReqOuterClass {
             case 0:
               done = true;
               break;
+            case 8: {
+
+              unk3300IOANLJBMBAI_ = input.readUInt32();
+              break;
+            }
             case 16: {
 
-              time_ = input.readUInt32();
+              unk3300IMEGFNOLDCE_ = input.readUInt32();
+              break;
+            }
+            case 40: {
+
+              unk3300PGJKEICFKLL_ = input.readUInt32();
               break;
             }
             case 48: {
 
-              undoStep_ = input.readUInt32();
+              unk3300DJEGJDACDEF_ = input.readUInt32();
               break;
             }
             case 56: {
 
-              copyStep_ = input.readUInt32();
+              unk3300MBPLICBFAGL_ = input.readUInt32();
               break;
             }
             case 64: {
 
+              unk3300AEGCNHLOPEP_ = input.readUInt32();
+              break;
+            }
+            case 96: {
+
               cultivateId_ = input.readUInt32();
-              break;
-            }
-            case 80: {
-
-              placeStep_ = input.readUInt32();
-              break;
-            }
-            case 88: {
-
-              exchangeStep_ = input.readUInt32();
-              break;
-            }
-            case 104: {
-
-              cultivateStep_ = input.readUInt32();
               break;
             }
             case 120: {
 
-              rotateStep_ = input.readUInt32();
+              time_ = input.readUInt32();
               break;
             }
             default: {
@@ -190,10 +194,65 @@ public final class FungusCultivateReqOuterClass {
               emu.grasscutter.net.proto.FungusCultivateReqOuterClass.FungusCultivateReq.class, emu.grasscutter.net.proto.FungusCultivateReqOuterClass.FungusCultivateReq.Builder.class);
     }
 
-    public static final int CULTIVATE_ID_FIELD_NUMBER = 8;
+    public static final int UNK3300_IOANLJBMBAI_FIELD_NUMBER = 1;
+    private int unk3300IOANLJBMBAI_;
+    /**
+     * <code>uint32 Unk3300_IOANLJBMBAI = 1;</code>
+     * @return The unk3300IOANLJBMBAI.
+     */
+    @java.lang.Override
+    public int getUnk3300IOANLJBMBAI() {
+      return unk3300IOANLJBMBAI_;
+    }
+
+    public static final int UNK3300_DJEGJDACDEF_FIELD_NUMBER = 6;
+    private int unk3300DJEGJDACDEF_;
+    /**
+     * <code>uint32 Unk3300_DJEGJDACDEF = 6;</code>
+     * @return The unk3300DJEGJDACDEF.
+     */
+    @java.lang.Override
+    public int getUnk3300DJEGJDACDEF() {
+      return unk3300DJEGJDACDEF_;
+    }
+
+    public static final int UNK3300_IMEGFNOLDCE_FIELD_NUMBER = 2;
+    private int unk3300IMEGFNOLDCE_;
+    /**
+     * <code>uint32 Unk3300_IMEGFNOLDCE = 2;</code>
+     * @return The unk3300IMEGFNOLDCE.
+     */
+    @java.lang.Override
+    public int getUnk3300IMEGFNOLDCE() {
+      return unk3300IMEGFNOLDCE_;
+    }
+
+    public static final int UNK3300_PGJKEICFKLL_FIELD_NUMBER = 5;
+    private int unk3300PGJKEICFKLL_;
+    /**
+     * <code>uint32 Unk3300_PGJKEICFKLL = 5;</code>
+     * @return The unk3300PGJKEICFKLL.
+     */
+    @java.lang.Override
+    public int getUnk3300PGJKEICFKLL() {
+      return unk3300PGJKEICFKLL_;
+    }
+
+    public static final int UNK3300_MBPLICBFAGL_FIELD_NUMBER = 7;
+    private int unk3300MBPLICBFAGL_;
+    /**
+     * <code>uint32 Unk3300_MBPLICBFAGL = 7;</code>
+     * @return The unk3300MBPLICBFAGL.
+     */
+    @java.lang.Override
+    public int getUnk3300MBPLICBFAGL() {
+      return unk3300MBPLICBFAGL_;
+    }
+
+    public static final int CULTIVATE_ID_FIELD_NUMBER = 12;
     private int cultivateId_;
     /**
-     * <code>uint32 cultivate_id = 8;</code>
+     * <code>uint32 cultivate_id = 12;</code>
      * @return The cultivateId.
      */
     @java.lang.Override
@@ -201,65 +260,10 @@ public final class FungusCultivateReqOuterClass {
       return cultivateId_;
     }
 
-    public static final int COPY_STEP_FIELD_NUMBER = 7;
-    private int copyStep_;
-    /**
-     * <code>uint32 copy_step = 7;</code>
-     * @return The copyStep.
-     */
-    @java.lang.Override
-    public int getCopyStep() {
-      return copyStep_;
-    }
-
-    public static final int EXCHANGE_STEP_FIELD_NUMBER = 11;
-    private int exchangeStep_;
-    /**
-     * <code>uint32 exchange_step = 11;</code>
-     * @return The exchangeStep.
-     */
-    @java.lang.Override
-    public int getExchangeStep() {
-      return exchangeStep_;
-    }
-
-    public static final int CULTIVATE_STEP_FIELD_NUMBER = 13;
-    private int cultivateStep_;
-    /**
-     * <code>uint32 cultivate_step = 13;</code>
-     * @return The cultivateStep.
-     */
-    @java.lang.Override
-    public int getCultivateStep() {
-      return cultivateStep_;
-    }
-
-    public static final int ROTATE_STEP_FIELD_NUMBER = 15;
-    private int rotateStep_;
-    /**
-     * <code>uint32 rotate_step = 15;</code>
-     * @return The rotateStep.
-     */
-    @java.lang.Override
-    public int getRotateStep() {
-      return rotateStep_;
-    }
-
-    public static final int UNDO_STEP_FIELD_NUMBER = 6;
-    private int undoStep_;
-    /**
-     * <code>uint32 undo_step = 6;</code>
-     * @return The undoStep.
-     */
-    @java.lang.Override
-    public int getUndoStep() {
-      return undoStep_;
-    }
-
-    public static final int TIME_FIELD_NUMBER = 2;
+    public static final int TIME_FIELD_NUMBER = 15;
     private int time_;
     /**
-     * <code>uint32 time = 2;</code>
+     * <code>uint32 time = 15;</code>
      * @return The time.
      */
     @java.lang.Override
@@ -267,15 +271,15 @@ public final class FungusCultivateReqOuterClass {
       return time_;
     }
 
-    public static final int PLACE_STEP_FIELD_NUMBER = 10;
-    private int placeStep_;
+    public static final int UNK3300_AEGCNHLOPEP_FIELD_NUMBER = 8;
+    private int unk3300AEGCNHLOPEP_;
     /**
-     * <code>uint32 place_step = 10;</code>
-     * @return The placeStep.
+     * <code>uint32 Unk3300_AEGCNHLOPEP = 8;</code>
+     * @return The unk3300AEGCNHLOPEP.
      */
     @java.lang.Override
-    public int getPlaceStep() {
-      return placeStep_;
+    public int getUnk3300AEGCNHLOPEP() {
+      return unk3300AEGCNHLOPEP_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -292,29 +296,29 @@ public final class FungusCultivateReqOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (time_ != 0) {
-        output.writeUInt32(2, time_);
+      if (unk3300IOANLJBMBAI_ != 0) {
+        output.writeUInt32(1, unk3300IOANLJBMBAI_);
       }
-      if (undoStep_ != 0) {
-        output.writeUInt32(6, undoStep_);
+      if (unk3300IMEGFNOLDCE_ != 0) {
+        output.writeUInt32(2, unk3300IMEGFNOLDCE_);
       }
-      if (copyStep_ != 0) {
-        output.writeUInt32(7, copyStep_);
+      if (unk3300PGJKEICFKLL_ != 0) {
+        output.writeUInt32(5, unk3300PGJKEICFKLL_);
+      }
+      if (unk3300DJEGJDACDEF_ != 0) {
+        output.writeUInt32(6, unk3300DJEGJDACDEF_);
+      }
+      if (unk3300MBPLICBFAGL_ != 0) {
+        output.writeUInt32(7, unk3300MBPLICBFAGL_);
+      }
+      if (unk3300AEGCNHLOPEP_ != 0) {
+        output.writeUInt32(8, unk3300AEGCNHLOPEP_);
       }
       if (cultivateId_ != 0) {
-        output.writeUInt32(8, cultivateId_);
+        output.writeUInt32(12, cultivateId_);
       }
-      if (placeStep_ != 0) {
-        output.writeUInt32(10, placeStep_);
-      }
-      if (exchangeStep_ != 0) {
-        output.writeUInt32(11, exchangeStep_);
-      }
-      if (cultivateStep_ != 0) {
-        output.writeUInt32(13, cultivateStep_);
-      }
-      if (rotateStep_ != 0) {
-        output.writeUInt32(15, rotateStep_);
+      if (time_ != 0) {
+        output.writeUInt32(15, time_);
       }
       unknownFields.writeTo(output);
     }
@@ -325,37 +329,37 @@ public final class FungusCultivateReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (time_ != 0) {
+      if (unk3300IOANLJBMBAI_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, time_);
+          .computeUInt32Size(1, unk3300IOANLJBMBAI_);
       }
-      if (undoStep_ != 0) {
+      if (unk3300IMEGFNOLDCE_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, undoStep_);
+          .computeUInt32Size(2, unk3300IMEGFNOLDCE_);
       }
-      if (copyStep_ != 0) {
+      if (unk3300PGJKEICFKLL_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, copyStep_);
+          .computeUInt32Size(5, unk3300PGJKEICFKLL_);
+      }
+      if (unk3300DJEGJDACDEF_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(6, unk3300DJEGJDACDEF_);
+      }
+      if (unk3300MBPLICBFAGL_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(7, unk3300MBPLICBFAGL_);
+      }
+      if (unk3300AEGCNHLOPEP_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(8, unk3300AEGCNHLOPEP_);
       }
       if (cultivateId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, cultivateId_);
+          .computeUInt32Size(12, cultivateId_);
       }
-      if (placeStep_ != 0) {
+      if (time_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, placeStep_);
-      }
-      if (exchangeStep_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, exchangeStep_);
-      }
-      if (cultivateStep_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, cultivateStep_);
-      }
-      if (rotateStep_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, rotateStep_);
+          .computeUInt32Size(15, time_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -372,22 +376,22 @@ public final class FungusCultivateReqOuterClass {
       }
       emu.grasscutter.net.proto.FungusCultivateReqOuterClass.FungusCultivateReq other = (emu.grasscutter.net.proto.FungusCultivateReqOuterClass.FungusCultivateReq) obj;
 
+      if (getUnk3300IOANLJBMBAI()
+          != other.getUnk3300IOANLJBMBAI()) return false;
+      if (getUnk3300DJEGJDACDEF()
+          != other.getUnk3300DJEGJDACDEF()) return false;
+      if (getUnk3300IMEGFNOLDCE()
+          != other.getUnk3300IMEGFNOLDCE()) return false;
+      if (getUnk3300PGJKEICFKLL()
+          != other.getUnk3300PGJKEICFKLL()) return false;
+      if (getUnk3300MBPLICBFAGL()
+          != other.getUnk3300MBPLICBFAGL()) return false;
       if (getCultivateId()
           != other.getCultivateId()) return false;
-      if (getCopyStep()
-          != other.getCopyStep()) return false;
-      if (getExchangeStep()
-          != other.getExchangeStep()) return false;
-      if (getCultivateStep()
-          != other.getCultivateStep()) return false;
-      if (getRotateStep()
-          != other.getRotateStep()) return false;
-      if (getUndoStep()
-          != other.getUndoStep()) return false;
       if (getTime()
           != other.getTime()) return false;
-      if (getPlaceStep()
-          != other.getPlaceStep()) return false;
+      if (getUnk3300AEGCNHLOPEP()
+          != other.getUnk3300AEGCNHLOPEP()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -399,22 +403,22 @@ public final class FungusCultivateReqOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + UNK3300_IOANLJBMBAI_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300IOANLJBMBAI();
+      hash = (37 * hash) + UNK3300_DJEGJDACDEF_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300DJEGJDACDEF();
+      hash = (37 * hash) + UNK3300_IMEGFNOLDCE_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300IMEGFNOLDCE();
+      hash = (37 * hash) + UNK3300_PGJKEICFKLL_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300PGJKEICFKLL();
+      hash = (37 * hash) + UNK3300_MBPLICBFAGL_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300MBPLICBFAGL();
       hash = (37 * hash) + CULTIVATE_ID_FIELD_NUMBER;
       hash = (53 * hash) + getCultivateId();
-      hash = (37 * hash) + COPY_STEP_FIELD_NUMBER;
-      hash = (53 * hash) + getCopyStep();
-      hash = (37 * hash) + EXCHANGE_STEP_FIELD_NUMBER;
-      hash = (53 * hash) + getExchangeStep();
-      hash = (37 * hash) + CULTIVATE_STEP_FIELD_NUMBER;
-      hash = (53 * hash) + getCultivateStep();
-      hash = (37 * hash) + ROTATE_STEP_FIELD_NUMBER;
-      hash = (53 * hash) + getRotateStep();
-      hash = (37 * hash) + UNDO_STEP_FIELD_NUMBER;
-      hash = (53 * hash) + getUndoStep();
       hash = (37 * hash) + TIME_FIELD_NUMBER;
       hash = (53 * hash) + getTime();
-      hash = (37 * hash) + PLACE_STEP_FIELD_NUMBER;
-      hash = (53 * hash) + getPlaceStep();
+      hash = (37 * hash) + UNK3300_AEGCNHLOPEP_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300AEGCNHLOPEP();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -512,10 +516,14 @@ public final class FungusCultivateReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 21749
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 23545;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code FungusCultivateReq}
@@ -555,21 +563,21 @@ public final class FungusCultivateReqOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        unk3300IOANLJBMBAI_ = 0;
+
+        unk3300DJEGJDACDEF_ = 0;
+
+        unk3300IMEGFNOLDCE_ = 0;
+
+        unk3300PGJKEICFKLL_ = 0;
+
+        unk3300MBPLICBFAGL_ = 0;
+
         cultivateId_ = 0;
-
-        copyStep_ = 0;
-
-        exchangeStep_ = 0;
-
-        cultivateStep_ = 0;
-
-        rotateStep_ = 0;
-
-        undoStep_ = 0;
 
         time_ = 0;
 
-        placeStep_ = 0;
+        unk3300AEGCNHLOPEP_ = 0;
 
         return this;
       }
@@ -597,14 +605,14 @@ public final class FungusCultivateReqOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.FungusCultivateReqOuterClass.FungusCultivateReq buildPartial() {
         emu.grasscutter.net.proto.FungusCultivateReqOuterClass.FungusCultivateReq result = new emu.grasscutter.net.proto.FungusCultivateReqOuterClass.FungusCultivateReq(this);
+        result.unk3300IOANLJBMBAI_ = unk3300IOANLJBMBAI_;
+        result.unk3300DJEGJDACDEF_ = unk3300DJEGJDACDEF_;
+        result.unk3300IMEGFNOLDCE_ = unk3300IMEGFNOLDCE_;
+        result.unk3300PGJKEICFKLL_ = unk3300PGJKEICFKLL_;
+        result.unk3300MBPLICBFAGL_ = unk3300MBPLICBFAGL_;
         result.cultivateId_ = cultivateId_;
-        result.copyStep_ = copyStep_;
-        result.exchangeStep_ = exchangeStep_;
-        result.cultivateStep_ = cultivateStep_;
-        result.rotateStep_ = rotateStep_;
-        result.undoStep_ = undoStep_;
         result.time_ = time_;
-        result.placeStep_ = placeStep_;
+        result.unk3300AEGCNHLOPEP_ = unk3300AEGCNHLOPEP_;
         onBuilt();
         return result;
       }
@@ -653,29 +661,29 @@ public final class FungusCultivateReqOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.FungusCultivateReqOuterClass.FungusCultivateReq other) {
         if (other == emu.grasscutter.net.proto.FungusCultivateReqOuterClass.FungusCultivateReq.getDefaultInstance()) return this;
+        if (other.getUnk3300IOANLJBMBAI() != 0) {
+          setUnk3300IOANLJBMBAI(other.getUnk3300IOANLJBMBAI());
+        }
+        if (other.getUnk3300DJEGJDACDEF() != 0) {
+          setUnk3300DJEGJDACDEF(other.getUnk3300DJEGJDACDEF());
+        }
+        if (other.getUnk3300IMEGFNOLDCE() != 0) {
+          setUnk3300IMEGFNOLDCE(other.getUnk3300IMEGFNOLDCE());
+        }
+        if (other.getUnk3300PGJKEICFKLL() != 0) {
+          setUnk3300PGJKEICFKLL(other.getUnk3300PGJKEICFKLL());
+        }
+        if (other.getUnk3300MBPLICBFAGL() != 0) {
+          setUnk3300MBPLICBFAGL(other.getUnk3300MBPLICBFAGL());
+        }
         if (other.getCultivateId() != 0) {
           setCultivateId(other.getCultivateId());
-        }
-        if (other.getCopyStep() != 0) {
-          setCopyStep(other.getCopyStep());
-        }
-        if (other.getExchangeStep() != 0) {
-          setExchangeStep(other.getExchangeStep());
-        }
-        if (other.getCultivateStep() != 0) {
-          setCultivateStep(other.getCultivateStep());
-        }
-        if (other.getRotateStep() != 0) {
-          setRotateStep(other.getRotateStep());
-        }
-        if (other.getUndoStep() != 0) {
-          setUndoStep(other.getUndoStep());
         }
         if (other.getTime() != 0) {
           setTime(other.getTime());
         }
-        if (other.getPlaceStep() != 0) {
-          setPlaceStep(other.getPlaceStep());
+        if (other.getUnk3300AEGCNHLOPEP() != 0) {
+          setUnk3300AEGCNHLOPEP(other.getUnk3300AEGCNHLOPEP());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -706,9 +714,164 @@ public final class FungusCultivateReqOuterClass {
         return this;
       }
 
+      private int unk3300IOANLJBMBAI_ ;
+      /**
+       * <code>uint32 Unk3300_IOANLJBMBAI = 1;</code>
+       * @return The unk3300IOANLJBMBAI.
+       */
+      @java.lang.Override
+      public int getUnk3300IOANLJBMBAI() {
+        return unk3300IOANLJBMBAI_;
+      }
+      /**
+       * <code>uint32 Unk3300_IOANLJBMBAI = 1;</code>
+       * @param value The unk3300IOANLJBMBAI to set.
+       * @return This builder for chaining.
+       */
+      public Builder setUnk3300IOANLJBMBAI(int value) {
+        
+        unk3300IOANLJBMBAI_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 Unk3300_IOANLJBMBAI = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearUnk3300IOANLJBMBAI() {
+        
+        unk3300IOANLJBMBAI_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int unk3300DJEGJDACDEF_ ;
+      /**
+       * <code>uint32 Unk3300_DJEGJDACDEF = 6;</code>
+       * @return The unk3300DJEGJDACDEF.
+       */
+      @java.lang.Override
+      public int getUnk3300DJEGJDACDEF() {
+        return unk3300DJEGJDACDEF_;
+      }
+      /**
+       * <code>uint32 Unk3300_DJEGJDACDEF = 6;</code>
+       * @param value The unk3300DJEGJDACDEF to set.
+       * @return This builder for chaining.
+       */
+      public Builder setUnk3300DJEGJDACDEF(int value) {
+        
+        unk3300DJEGJDACDEF_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 Unk3300_DJEGJDACDEF = 6;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearUnk3300DJEGJDACDEF() {
+        
+        unk3300DJEGJDACDEF_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int unk3300IMEGFNOLDCE_ ;
+      /**
+       * <code>uint32 Unk3300_IMEGFNOLDCE = 2;</code>
+       * @return The unk3300IMEGFNOLDCE.
+       */
+      @java.lang.Override
+      public int getUnk3300IMEGFNOLDCE() {
+        return unk3300IMEGFNOLDCE_;
+      }
+      /**
+       * <code>uint32 Unk3300_IMEGFNOLDCE = 2;</code>
+       * @param value The unk3300IMEGFNOLDCE to set.
+       * @return This builder for chaining.
+       */
+      public Builder setUnk3300IMEGFNOLDCE(int value) {
+        
+        unk3300IMEGFNOLDCE_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 Unk3300_IMEGFNOLDCE = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearUnk3300IMEGFNOLDCE() {
+        
+        unk3300IMEGFNOLDCE_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int unk3300PGJKEICFKLL_ ;
+      /**
+       * <code>uint32 Unk3300_PGJKEICFKLL = 5;</code>
+       * @return The unk3300PGJKEICFKLL.
+       */
+      @java.lang.Override
+      public int getUnk3300PGJKEICFKLL() {
+        return unk3300PGJKEICFKLL_;
+      }
+      /**
+       * <code>uint32 Unk3300_PGJKEICFKLL = 5;</code>
+       * @param value The unk3300PGJKEICFKLL to set.
+       * @return This builder for chaining.
+       */
+      public Builder setUnk3300PGJKEICFKLL(int value) {
+        
+        unk3300PGJKEICFKLL_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 Unk3300_PGJKEICFKLL = 5;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearUnk3300PGJKEICFKLL() {
+        
+        unk3300PGJKEICFKLL_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int unk3300MBPLICBFAGL_ ;
+      /**
+       * <code>uint32 Unk3300_MBPLICBFAGL = 7;</code>
+       * @return The unk3300MBPLICBFAGL.
+       */
+      @java.lang.Override
+      public int getUnk3300MBPLICBFAGL() {
+        return unk3300MBPLICBFAGL_;
+      }
+      /**
+       * <code>uint32 Unk3300_MBPLICBFAGL = 7;</code>
+       * @param value The unk3300MBPLICBFAGL to set.
+       * @return This builder for chaining.
+       */
+      public Builder setUnk3300MBPLICBFAGL(int value) {
+        
+        unk3300MBPLICBFAGL_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 Unk3300_MBPLICBFAGL = 7;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearUnk3300MBPLICBFAGL() {
+        
+        unk3300MBPLICBFAGL_ = 0;
+        onChanged();
+        return this;
+      }
+
       private int cultivateId_ ;
       /**
-       * <code>uint32 cultivate_id = 8;</code>
+       * <code>uint32 cultivate_id = 12;</code>
        * @return The cultivateId.
        */
       @java.lang.Override
@@ -716,7 +879,7 @@ public final class FungusCultivateReqOuterClass {
         return cultivateId_;
       }
       /**
-       * <code>uint32 cultivate_id = 8;</code>
+       * <code>uint32 cultivate_id = 12;</code>
        * @param value The cultivateId to set.
        * @return This builder for chaining.
        */
@@ -727,7 +890,7 @@ public final class FungusCultivateReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 cultivate_id = 8;</code>
+       * <code>uint32 cultivate_id = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearCultivateId() {
@@ -737,164 +900,9 @@ public final class FungusCultivateReqOuterClass {
         return this;
       }
 
-      private int copyStep_ ;
-      /**
-       * <code>uint32 copy_step = 7;</code>
-       * @return The copyStep.
-       */
-      @java.lang.Override
-      public int getCopyStep() {
-        return copyStep_;
-      }
-      /**
-       * <code>uint32 copy_step = 7;</code>
-       * @param value The copyStep to set.
-       * @return This builder for chaining.
-       */
-      public Builder setCopyStep(int value) {
-        
-        copyStep_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 copy_step = 7;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearCopyStep() {
-        
-        copyStep_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int exchangeStep_ ;
-      /**
-       * <code>uint32 exchange_step = 11;</code>
-       * @return The exchangeStep.
-       */
-      @java.lang.Override
-      public int getExchangeStep() {
-        return exchangeStep_;
-      }
-      /**
-       * <code>uint32 exchange_step = 11;</code>
-       * @param value The exchangeStep to set.
-       * @return This builder for chaining.
-       */
-      public Builder setExchangeStep(int value) {
-        
-        exchangeStep_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 exchange_step = 11;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearExchangeStep() {
-        
-        exchangeStep_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int cultivateStep_ ;
-      /**
-       * <code>uint32 cultivate_step = 13;</code>
-       * @return The cultivateStep.
-       */
-      @java.lang.Override
-      public int getCultivateStep() {
-        return cultivateStep_;
-      }
-      /**
-       * <code>uint32 cultivate_step = 13;</code>
-       * @param value The cultivateStep to set.
-       * @return This builder for chaining.
-       */
-      public Builder setCultivateStep(int value) {
-        
-        cultivateStep_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 cultivate_step = 13;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearCultivateStep() {
-        
-        cultivateStep_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int rotateStep_ ;
-      /**
-       * <code>uint32 rotate_step = 15;</code>
-       * @return The rotateStep.
-       */
-      @java.lang.Override
-      public int getRotateStep() {
-        return rotateStep_;
-      }
-      /**
-       * <code>uint32 rotate_step = 15;</code>
-       * @param value The rotateStep to set.
-       * @return This builder for chaining.
-       */
-      public Builder setRotateStep(int value) {
-        
-        rotateStep_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 rotate_step = 15;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearRotateStep() {
-        
-        rotateStep_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int undoStep_ ;
-      /**
-       * <code>uint32 undo_step = 6;</code>
-       * @return The undoStep.
-       */
-      @java.lang.Override
-      public int getUndoStep() {
-        return undoStep_;
-      }
-      /**
-       * <code>uint32 undo_step = 6;</code>
-       * @param value The undoStep to set.
-       * @return This builder for chaining.
-       */
-      public Builder setUndoStep(int value) {
-        
-        undoStep_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 undo_step = 6;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearUndoStep() {
-        
-        undoStep_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int time_ ;
       /**
-       * <code>uint32 time = 2;</code>
+       * <code>uint32 time = 15;</code>
        * @return The time.
        */
       @java.lang.Override
@@ -902,7 +910,7 @@ public final class FungusCultivateReqOuterClass {
         return time_;
       }
       /**
-       * <code>uint32 time = 2;</code>
+       * <code>uint32 time = 15;</code>
        * @param value The time to set.
        * @return This builder for chaining.
        */
@@ -913,7 +921,7 @@ public final class FungusCultivateReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 time = 2;</code>
+       * <code>uint32 time = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearTime() {
@@ -923,33 +931,33 @@ public final class FungusCultivateReqOuterClass {
         return this;
       }
 
-      private int placeStep_ ;
+      private int unk3300AEGCNHLOPEP_ ;
       /**
-       * <code>uint32 place_step = 10;</code>
-       * @return The placeStep.
+       * <code>uint32 Unk3300_AEGCNHLOPEP = 8;</code>
+       * @return The unk3300AEGCNHLOPEP.
        */
       @java.lang.Override
-      public int getPlaceStep() {
-        return placeStep_;
+      public int getUnk3300AEGCNHLOPEP() {
+        return unk3300AEGCNHLOPEP_;
       }
       /**
-       * <code>uint32 place_step = 10;</code>
-       * @param value The placeStep to set.
+       * <code>uint32 Unk3300_AEGCNHLOPEP = 8;</code>
+       * @param value The unk3300AEGCNHLOPEP to set.
        * @return This builder for chaining.
        */
-      public Builder setPlaceStep(int value) {
+      public Builder setUnk3300AEGCNHLOPEP(int value) {
         
-        placeStep_ = value;
+        unk3300AEGCNHLOPEP_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 place_step = 10;</code>
+       * <code>uint32 Unk3300_AEGCNHLOPEP = 8;</code>
        * @return This builder for chaining.
        */
-      public Builder clearPlaceStep() {
+      public Builder clearUnk3300AEGCNHLOPEP() {
         
-        placeStep_ = 0;
+        unk3300AEGCNHLOPEP_ = 0;
         onChanged();
         return this;
       }
@@ -1020,13 +1028,14 @@ public final class FungusCultivateReqOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\030FungusCultivateReq.proto\"\266\001\n\022FungusCul" +
-      "tivateReq\022\024\n\014cultivate_id\030\010 \001(\r\022\021\n\tcopy_" +
-      "step\030\007 \001(\r\022\025\n\rexchange_step\030\013 \001(\r\022\026\n\016cul" +
-      "tivate_step\030\r \001(\r\022\023\n\013rotate_step\030\017 \001(\r\022\021" +
-      "\n\tundo_step\030\006 \001(\r\022\014\n\004time\030\002 \001(\r\022\022\n\nplace" +
-      "_step\030\n \001(\rB\033\n\031emu.grasscutter.net.proto" +
-      "b\006proto3"
+      "\n\030FungusCultivateReq.proto\"\346\001\n\022FungusCul" +
+      "tivateReq\022\033\n\023Unk3300_IOANLJBMBAI\030\001 \001(\r\022\033" +
+      "\n\023Unk3300_DJEGJDACDEF\030\006 \001(\r\022\033\n\023Unk3300_I" +
+      "MEGFNOLDCE\030\002 \001(\r\022\033\n\023Unk3300_PGJKEICFKLL\030" +
+      "\005 \001(\r\022\033\n\023Unk3300_MBPLICBFAGL\030\007 \001(\r\022\024\n\014cu" +
+      "ltivate_id\030\014 \001(\r\022\014\n\004time\030\017 \001(\r\022\033\n\023Unk330" +
+      "0_AEGCNHLOPEP\030\010 \001(\rB\033\n\031emu.grasscutter.n" +
+      "et.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -1037,7 +1046,7 @@ public final class FungusCultivateReqOuterClass {
     internal_static_FungusCultivateReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_FungusCultivateReq_descriptor,
-        new java.lang.String[] { "CultivateId", "CopyStep", "ExchangeStep", "CultivateStep", "RotateStep", "UndoStep", "Time", "PlaceStep", });
+        new java.lang.String[] { "Unk3300IOANLJBMBAI", "Unk3300DJEGJDACDEF", "Unk3300IMEGFNOLDCE", "Unk3300PGJKEICFKLL", "Unk3300MBPLICBFAGL", "CultivateId", "Time", "Unk3300AEGCNHLOPEP", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

@@ -19,23 +19,27 @@ public final class MpPlayGuestReplyInviteReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 mp_play_id = 3;</code>
+     * <code>uint32 mp_play_id = 13;</code>
      * @return The mpPlayId.
      */
     int getMpPlayId();
 
     /**
-     * <code>bool is_agree = 15;</code>
+     * <code>bool is_agree = 12;</code>
      * @return The isAgree.
      */
     boolean getIsAgree();
   }
   /**
    * <pre>
-   * CmdId: 1848
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 1837;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code MpPlayGuestReplyInviteReq}
@@ -82,14 +86,14 @@ public final class MpPlayGuestReplyInviteReqOuterClass {
             case 0:
               done = true;
               break;
-            case 24: {
-
-              mpPlayId_ = input.readUInt32();
-              break;
-            }
-            case 120: {
+            case 96: {
 
               isAgree_ = input.readBool();
+              break;
+            }
+            case 104: {
+
+              mpPlayId_ = input.readUInt32();
               break;
             }
             default: {
@@ -124,10 +128,10 @@ public final class MpPlayGuestReplyInviteReqOuterClass {
               emu.grasscutter.net.proto.MpPlayGuestReplyInviteReqOuterClass.MpPlayGuestReplyInviteReq.class, emu.grasscutter.net.proto.MpPlayGuestReplyInviteReqOuterClass.MpPlayGuestReplyInviteReq.Builder.class);
     }
 
-    public static final int MP_PLAY_ID_FIELD_NUMBER = 3;
+    public static final int MP_PLAY_ID_FIELD_NUMBER = 13;
     private int mpPlayId_;
     /**
-     * <code>uint32 mp_play_id = 3;</code>
+     * <code>uint32 mp_play_id = 13;</code>
      * @return The mpPlayId.
      */
     @java.lang.Override
@@ -135,10 +139,10 @@ public final class MpPlayGuestReplyInviteReqOuterClass {
       return mpPlayId_;
     }
 
-    public static final int IS_AGREE_FIELD_NUMBER = 15;
+    public static final int IS_AGREE_FIELD_NUMBER = 12;
     private boolean isAgree_;
     /**
-     * <code>bool is_agree = 15;</code>
+     * <code>bool is_agree = 12;</code>
      * @return The isAgree.
      */
     @java.lang.Override
@@ -160,11 +164,11 @@ public final class MpPlayGuestReplyInviteReqOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (mpPlayId_ != 0) {
-        output.writeUInt32(3, mpPlayId_);
-      }
       if (isAgree_ != false) {
-        output.writeBool(15, isAgree_);
+        output.writeBool(12, isAgree_);
+      }
+      if (mpPlayId_ != 0) {
+        output.writeUInt32(13, mpPlayId_);
       }
       unknownFields.writeTo(output);
     }
@@ -175,13 +179,13 @@ public final class MpPlayGuestReplyInviteReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (mpPlayId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, mpPlayId_);
-      }
       if (isAgree_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(15, isAgree_);
+          .computeBoolSize(12, isAgree_);
+      }
+      if (mpPlayId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(13, mpPlayId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -315,10 +319,14 @@ public final class MpPlayGuestReplyInviteReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 1848
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 1837;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code MpPlayGuestReplyInviteReq}
@@ -475,7 +483,7 @@ public final class MpPlayGuestReplyInviteReqOuterClass {
 
       private int mpPlayId_ ;
       /**
-       * <code>uint32 mp_play_id = 3;</code>
+       * <code>uint32 mp_play_id = 13;</code>
        * @return The mpPlayId.
        */
       @java.lang.Override
@@ -483,7 +491,7 @@ public final class MpPlayGuestReplyInviteReqOuterClass {
         return mpPlayId_;
       }
       /**
-       * <code>uint32 mp_play_id = 3;</code>
+       * <code>uint32 mp_play_id = 13;</code>
        * @param value The mpPlayId to set.
        * @return This builder for chaining.
        */
@@ -494,7 +502,7 @@ public final class MpPlayGuestReplyInviteReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 mp_play_id = 3;</code>
+       * <code>uint32 mp_play_id = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearMpPlayId() {
@@ -506,7 +514,7 @@ public final class MpPlayGuestReplyInviteReqOuterClass {
 
       private boolean isAgree_ ;
       /**
-       * <code>bool is_agree = 15;</code>
+       * <code>bool is_agree = 12;</code>
        * @return The isAgree.
        */
       @java.lang.Override
@@ -514,7 +522,7 @@ public final class MpPlayGuestReplyInviteReqOuterClass {
         return isAgree_;
       }
       /**
-       * <code>bool is_agree = 15;</code>
+       * <code>bool is_agree = 12;</code>
        * @param value The isAgree to set.
        * @return This builder for chaining.
        */
@@ -525,7 +533,7 @@ public final class MpPlayGuestReplyInviteReqOuterClass {
         return this;
       }
       /**
-       * <code>bool is_agree = 15;</code>
+       * <code>bool is_agree = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsAgree() {
@@ -602,8 +610,8 @@ public final class MpPlayGuestReplyInviteReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\037MpPlayGuestReplyInviteReq.proto\"A\n\031MpP" +
-      "layGuestReplyInviteReq\022\022\n\nmp_play_id\030\003 \001" +
-      "(\r\022\020\n\010is_agree\030\017 \001(\010B\033\n\031emu.grasscutter." +
+      "layGuestReplyInviteReq\022\022\n\nmp_play_id\030\r \001" +
+      "(\r\022\020\n\010is_agree\030\014 \001(\010B\033\n\031emu.grasscutter." +
       "net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

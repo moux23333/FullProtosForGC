@@ -19,23 +19,27 @@ public final class BlessingAcceptGivePicReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
+     * <code>uint32 uid = 3;</code>
+     * @return The uid.
+     */
+    int getUid();
+
+    /**
      * <code>uint32 index = 9;</code>
      * @return The index.
      */
     int getIndex();
-
-    /**
-     * <code>uint32 uid = 1;</code>
-     * @return The uid.
-     */
-    int getUid();
   }
   /**
    * <pre>
-   * CmdId: 2006
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 2153;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code BlessingAcceptGivePicReq}
@@ -82,7 +86,7 @@ public final class BlessingAcceptGivePicReqOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
+            case 24: {
 
               uid_ = input.readUInt32();
               break;
@@ -124,6 +128,17 @@ public final class BlessingAcceptGivePicReqOuterClass {
               emu.grasscutter.net.proto.BlessingAcceptGivePicReqOuterClass.BlessingAcceptGivePicReq.class, emu.grasscutter.net.proto.BlessingAcceptGivePicReqOuterClass.BlessingAcceptGivePicReq.Builder.class);
     }
 
+    public static final int UID_FIELD_NUMBER = 3;
+    private int uid_;
+    /**
+     * <code>uint32 uid = 3;</code>
+     * @return The uid.
+     */
+    @java.lang.Override
+    public int getUid() {
+      return uid_;
+    }
+
     public static final int INDEX_FIELD_NUMBER = 9;
     private int index_;
     /**
@@ -133,17 +148,6 @@ public final class BlessingAcceptGivePicReqOuterClass {
     @java.lang.Override
     public int getIndex() {
       return index_;
-    }
-
-    public static final int UID_FIELD_NUMBER = 1;
-    private int uid_;
-    /**
-     * <code>uint32 uid = 1;</code>
-     * @return The uid.
-     */
-    @java.lang.Override
-    public int getUid() {
-      return uid_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -161,7 +165,7 @@ public final class BlessingAcceptGivePicReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (uid_ != 0) {
-        output.writeUInt32(1, uid_);
+        output.writeUInt32(3, uid_);
       }
       if (index_ != 0) {
         output.writeUInt32(9, index_);
@@ -177,7 +181,7 @@ public final class BlessingAcceptGivePicReqOuterClass {
       size = 0;
       if (uid_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, uid_);
+          .computeUInt32Size(3, uid_);
       }
       if (index_ != 0) {
         size += com.google.protobuf.CodedOutputStream
@@ -198,10 +202,10 @@ public final class BlessingAcceptGivePicReqOuterClass {
       }
       emu.grasscutter.net.proto.BlessingAcceptGivePicReqOuterClass.BlessingAcceptGivePicReq other = (emu.grasscutter.net.proto.BlessingAcceptGivePicReqOuterClass.BlessingAcceptGivePicReq) obj;
 
-      if (getIndex()
-          != other.getIndex()) return false;
       if (getUid()
           != other.getUid()) return false;
+      if (getIndex()
+          != other.getIndex()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -213,10 +217,10 @@ public final class BlessingAcceptGivePicReqOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + INDEX_FIELD_NUMBER;
-      hash = (53 * hash) + getIndex();
       hash = (37 * hash) + UID_FIELD_NUMBER;
       hash = (53 * hash) + getUid();
+      hash = (37 * hash) + INDEX_FIELD_NUMBER;
+      hash = (53 * hash) + getIndex();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -314,10 +318,14 @@ public final class BlessingAcceptGivePicReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 2006
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 2153;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code BlessingAcceptGivePicReq}
@@ -357,9 +365,9 @@ public final class BlessingAcceptGivePicReqOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        index_ = 0;
-
         uid_ = 0;
+
+        index_ = 0;
 
         return this;
       }
@@ -387,8 +395,8 @@ public final class BlessingAcceptGivePicReqOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.BlessingAcceptGivePicReqOuterClass.BlessingAcceptGivePicReq buildPartial() {
         emu.grasscutter.net.proto.BlessingAcceptGivePicReqOuterClass.BlessingAcceptGivePicReq result = new emu.grasscutter.net.proto.BlessingAcceptGivePicReqOuterClass.BlessingAcceptGivePicReq(this);
-        result.index_ = index_;
         result.uid_ = uid_;
+        result.index_ = index_;
         onBuilt();
         return result;
       }
@@ -437,11 +445,11 @@ public final class BlessingAcceptGivePicReqOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.BlessingAcceptGivePicReqOuterClass.BlessingAcceptGivePicReq other) {
         if (other == emu.grasscutter.net.proto.BlessingAcceptGivePicReqOuterClass.BlessingAcceptGivePicReq.getDefaultInstance()) return this;
-        if (other.getIndex() != 0) {
-          setIndex(other.getIndex());
-        }
         if (other.getUid() != 0) {
           setUid(other.getUid());
+        }
+        if (other.getIndex() != 0) {
+          setIndex(other.getIndex());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -472,6 +480,37 @@ public final class BlessingAcceptGivePicReqOuterClass {
         return this;
       }
 
+      private int uid_ ;
+      /**
+       * <code>uint32 uid = 3;</code>
+       * @return The uid.
+       */
+      @java.lang.Override
+      public int getUid() {
+        return uid_;
+      }
+      /**
+       * <code>uint32 uid = 3;</code>
+       * @param value The uid to set.
+       * @return This builder for chaining.
+       */
+      public Builder setUid(int value) {
+        
+        uid_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 uid = 3;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearUid() {
+        
+        uid_ = 0;
+        onChanged();
+        return this;
+      }
+
       private int index_ ;
       /**
        * <code>uint32 index = 9;</code>
@@ -499,37 +538,6 @@ public final class BlessingAcceptGivePicReqOuterClass {
       public Builder clearIndex() {
         
         index_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int uid_ ;
-      /**
-       * <code>uint32 uid = 1;</code>
-       * @return The uid.
-       */
-      @java.lang.Override
-      public int getUid() {
-        return uid_;
-      }
-      /**
-       * <code>uint32 uid = 1;</code>
-       * @param value The uid to set.
-       * @return This builder for chaining.
-       */
-      public Builder setUid(int value) {
-        
-        uid_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 uid = 1;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearUid() {
-        
-        uid_ = 0;
         onChanged();
         return this;
       }
@@ -601,8 +609,8 @@ public final class BlessingAcceptGivePicReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\036BlessingAcceptGivePicReq.proto\"6\n\030Bles" +
-      "singAcceptGivePicReq\022\r\n\005index\030\t \001(\r\022\013\n\003u" +
-      "id\030\001 \001(\rB\033\n\031emu.grasscutter.net.protob\006p" +
+      "singAcceptGivePicReq\022\013\n\003uid\030\003 \001(\r\022\r\n\005ind" +
+      "ex\030\t \001(\rB\033\n\031emu.grasscutter.net.protob\006p" +
       "roto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -614,7 +622,7 @@ public final class BlessingAcceptGivePicReqOuterClass {
     internal_static_BlessingAcceptGivePicReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_BlessingAcceptGivePicReq_descriptor,
-        new java.lang.String[] { "Index", "Uid", });
+        new java.lang.String[] { "Uid", "Index", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

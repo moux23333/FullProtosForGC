@@ -19,32 +19,35 @@ public final class GCGChallengeUpdateNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 server_seq = 12;</code>
+     * <code>uint32 server_seq = 15;</code>
      * @return The serverSeq.
      */
     int getServerSeq();
 
     /**
-     * <code>.GCGDuelChallenge challenge = 13;</code>
+     * <code>.GCGDuelChallenge challenge = 1;</code>
      * @return Whether the challenge field is set.
      */
     boolean hasChallenge();
     /**
-     * <code>.GCGDuelChallenge challenge = 13;</code>
+     * <code>.GCGDuelChallenge challenge = 1;</code>
      * @return The challenge.
      */
     emu.grasscutter.net.proto.GCGDuelChallengeOuterClass.GCGDuelChallenge getChallenge();
     /**
-     * <code>.GCGDuelChallenge challenge = 13;</code>
+     * <code>.GCGDuelChallenge challenge = 1;</code>
      */
     emu.grasscutter.net.proto.GCGDuelChallengeOuterClass.GCGDuelChallengeOrBuilder getChallengeOrBuilder();
   }
   /**
    * <pre>
-   * CmdId: 7268
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 7270;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code GCGChallengeUpdateNotify}
@@ -91,12 +94,7 @@ public final class GCGChallengeUpdateNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 96: {
-
-              serverSeq_ = input.readUInt32();
-              break;
-            }
-            case 106: {
+            case 10: {
               emu.grasscutter.net.proto.GCGDuelChallengeOuterClass.GCGDuelChallenge.Builder subBuilder = null;
               if (challenge_ != null) {
                 subBuilder = challenge_.toBuilder();
@@ -107,6 +105,11 @@ public final class GCGChallengeUpdateNotifyOuterClass {
                 challenge_ = subBuilder.buildPartial();
               }
 
+              break;
+            }
+            case 120: {
+
+              serverSeq_ = input.readUInt32();
               break;
             }
             default: {
@@ -141,10 +144,10 @@ public final class GCGChallengeUpdateNotifyOuterClass {
               emu.grasscutter.net.proto.GCGChallengeUpdateNotifyOuterClass.GCGChallengeUpdateNotify.class, emu.grasscutter.net.proto.GCGChallengeUpdateNotifyOuterClass.GCGChallengeUpdateNotify.Builder.class);
     }
 
-    public static final int SERVER_SEQ_FIELD_NUMBER = 12;
+    public static final int SERVER_SEQ_FIELD_NUMBER = 15;
     private int serverSeq_;
     /**
-     * <code>uint32 server_seq = 12;</code>
+     * <code>uint32 server_seq = 15;</code>
      * @return The serverSeq.
      */
     @java.lang.Override
@@ -152,10 +155,10 @@ public final class GCGChallengeUpdateNotifyOuterClass {
       return serverSeq_;
     }
 
-    public static final int CHALLENGE_FIELD_NUMBER = 13;
+    public static final int CHALLENGE_FIELD_NUMBER = 1;
     private emu.grasscutter.net.proto.GCGDuelChallengeOuterClass.GCGDuelChallenge challenge_;
     /**
-     * <code>.GCGDuelChallenge challenge = 13;</code>
+     * <code>.GCGDuelChallenge challenge = 1;</code>
      * @return Whether the challenge field is set.
      */
     @java.lang.Override
@@ -163,7 +166,7 @@ public final class GCGChallengeUpdateNotifyOuterClass {
       return challenge_ != null;
     }
     /**
-     * <code>.GCGDuelChallenge challenge = 13;</code>
+     * <code>.GCGDuelChallenge challenge = 1;</code>
      * @return The challenge.
      */
     @java.lang.Override
@@ -171,7 +174,7 @@ public final class GCGChallengeUpdateNotifyOuterClass {
       return challenge_ == null ? emu.grasscutter.net.proto.GCGDuelChallengeOuterClass.GCGDuelChallenge.getDefaultInstance() : challenge_;
     }
     /**
-     * <code>.GCGDuelChallenge challenge = 13;</code>
+     * <code>.GCGDuelChallenge challenge = 1;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.GCGDuelChallengeOuterClass.GCGDuelChallengeOrBuilder getChallengeOrBuilder() {
@@ -192,11 +195,11 @@ public final class GCGChallengeUpdateNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (serverSeq_ != 0) {
-        output.writeUInt32(12, serverSeq_);
-      }
       if (challenge_ != null) {
-        output.writeMessage(13, getChallenge());
+        output.writeMessage(1, getChallenge());
+      }
+      if (serverSeq_ != 0) {
+        output.writeUInt32(15, serverSeq_);
       }
       unknownFields.writeTo(output);
     }
@@ -207,13 +210,13 @@ public final class GCGChallengeUpdateNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (serverSeq_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, serverSeq_);
-      }
       if (challenge_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(13, getChallenge());
+          .computeMessageSize(1, getChallenge());
+      }
+      if (serverSeq_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(15, serverSeq_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -351,10 +354,13 @@ public final class GCGChallengeUpdateNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 7268
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 7270;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code GCGChallengeUpdateNotify}
@@ -519,7 +525,7 @@ public final class GCGChallengeUpdateNotifyOuterClass {
 
       private int serverSeq_ ;
       /**
-       * <code>uint32 server_seq = 12;</code>
+       * <code>uint32 server_seq = 15;</code>
        * @return The serverSeq.
        */
       @java.lang.Override
@@ -527,7 +533,7 @@ public final class GCGChallengeUpdateNotifyOuterClass {
         return serverSeq_;
       }
       /**
-       * <code>uint32 server_seq = 12;</code>
+       * <code>uint32 server_seq = 15;</code>
        * @param value The serverSeq to set.
        * @return This builder for chaining.
        */
@@ -538,7 +544,7 @@ public final class GCGChallengeUpdateNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 server_seq = 12;</code>
+       * <code>uint32 server_seq = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearServerSeq() {
@@ -552,14 +558,14 @@ public final class GCGChallengeUpdateNotifyOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.GCGDuelChallengeOuterClass.GCGDuelChallenge, emu.grasscutter.net.proto.GCGDuelChallengeOuterClass.GCGDuelChallenge.Builder, emu.grasscutter.net.proto.GCGDuelChallengeOuterClass.GCGDuelChallengeOrBuilder> challengeBuilder_;
       /**
-       * <code>.GCGDuelChallenge challenge = 13;</code>
+       * <code>.GCGDuelChallenge challenge = 1;</code>
        * @return Whether the challenge field is set.
        */
       public boolean hasChallenge() {
         return challengeBuilder_ != null || challenge_ != null;
       }
       /**
-       * <code>.GCGDuelChallenge challenge = 13;</code>
+       * <code>.GCGDuelChallenge challenge = 1;</code>
        * @return The challenge.
        */
       public emu.grasscutter.net.proto.GCGDuelChallengeOuterClass.GCGDuelChallenge getChallenge() {
@@ -570,7 +576,7 @@ public final class GCGChallengeUpdateNotifyOuterClass {
         }
       }
       /**
-       * <code>.GCGDuelChallenge challenge = 13;</code>
+       * <code>.GCGDuelChallenge challenge = 1;</code>
        */
       public Builder setChallenge(emu.grasscutter.net.proto.GCGDuelChallengeOuterClass.GCGDuelChallenge value) {
         if (challengeBuilder_ == null) {
@@ -586,7 +592,7 @@ public final class GCGChallengeUpdateNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.GCGDuelChallenge challenge = 13;</code>
+       * <code>.GCGDuelChallenge challenge = 1;</code>
        */
       public Builder setChallenge(
           emu.grasscutter.net.proto.GCGDuelChallengeOuterClass.GCGDuelChallenge.Builder builderForValue) {
@@ -600,7 +606,7 @@ public final class GCGChallengeUpdateNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.GCGDuelChallenge challenge = 13;</code>
+       * <code>.GCGDuelChallenge challenge = 1;</code>
        */
       public Builder mergeChallenge(emu.grasscutter.net.proto.GCGDuelChallengeOuterClass.GCGDuelChallenge value) {
         if (challengeBuilder_ == null) {
@@ -618,7 +624,7 @@ public final class GCGChallengeUpdateNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.GCGDuelChallenge challenge = 13;</code>
+       * <code>.GCGDuelChallenge challenge = 1;</code>
        */
       public Builder clearChallenge() {
         if (challengeBuilder_ == null) {
@@ -632,7 +638,7 @@ public final class GCGChallengeUpdateNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.GCGDuelChallenge challenge = 13;</code>
+       * <code>.GCGDuelChallenge challenge = 1;</code>
        */
       public emu.grasscutter.net.proto.GCGDuelChallengeOuterClass.GCGDuelChallenge.Builder getChallengeBuilder() {
         
@@ -640,7 +646,7 @@ public final class GCGChallengeUpdateNotifyOuterClass {
         return getChallengeFieldBuilder().getBuilder();
       }
       /**
-       * <code>.GCGDuelChallenge challenge = 13;</code>
+       * <code>.GCGDuelChallenge challenge = 1;</code>
        */
       public emu.grasscutter.net.proto.GCGDuelChallengeOuterClass.GCGDuelChallengeOrBuilder getChallengeOrBuilder() {
         if (challengeBuilder_ != null) {
@@ -651,7 +657,7 @@ public final class GCGChallengeUpdateNotifyOuterClass {
         }
       }
       /**
-       * <code>.GCGDuelChallenge challenge = 13;</code>
+       * <code>.GCGDuelChallenge challenge = 1;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.GCGDuelChallengeOuterClass.GCGDuelChallenge, emu.grasscutter.net.proto.GCGDuelChallengeOuterClass.GCGDuelChallenge.Builder, emu.grasscutter.net.proto.GCGDuelChallengeOuterClass.GCGDuelChallengeOrBuilder> 
@@ -735,7 +741,7 @@ public final class GCGChallengeUpdateNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n\036GCGChallengeUpdateNotify.proto\032\026GCGDue" +
       "lChallenge.proto\"T\n\030GCGChallengeUpdateNo" +
-      "tify\022\022\n\nserver_seq\030\014 \001(\r\022$\n\tchallenge\030\r " +
+      "tify\022\022\n\nserver_seq\030\017 \001(\r\022$\n\tchallenge\030\001 " +
       "\001(\0132\021.GCGDuelChallengeB\033\n\031emu.grasscutte" +
       "r.net.protob\006proto3"
     };

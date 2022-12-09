@@ -39,6 +39,30 @@ public final class GCGEndReasonOuterClass {
      * <code>GCG_END_REASON_ROUND_LIMIT = 4;</code>
      */
     GCG_END_REASON_ROUND_LIMIT(4),
+    /**
+     * <code>GCG_END_REASON_GM = 5;</code>
+     */
+    GCG_END_REASON_GM(5),
+    /**
+     * <code>GCG_END_REASON_NO_PLAYER = 6;</code>
+     */
+    GCG_END_REASON_NO_PLAYER(6),
+    /**
+     * <code>GCG_END_REASON_GIVE_UP = 7;</code>
+     */
+    GCG_END_REASON_GIVE_UP(7),
+    /**
+     * <code>GCG_END_REASON_INIT_TIMEOUT = 8;</code>
+     */
+    GCG_END_REASON_INIT_TIMEOUT(8),
+    /**
+     * <code>GCG_END_REASON_EFFECT = 9;</code>
+     */
+    GCG_END_REASON_EFFECT(9),
+    /**
+     * <code>GCG_END_REASON_Unk3300_INAPHKAKKHF = 10;</code>
+     */
+    GCG_END_REASON_Unk3300_INAPHKAKKHF(10),
     UNRECOGNIZED(-1),
     ;
 
@@ -62,6 +86,30 @@ public final class GCGEndReasonOuterClass {
      * <code>GCG_END_REASON_ROUND_LIMIT = 4;</code>
      */
     public static final int GCG_END_REASON_ROUND_LIMIT_VALUE = 4;
+    /**
+     * <code>GCG_END_REASON_GM = 5;</code>
+     */
+    public static final int GCG_END_REASON_GM_VALUE = 5;
+    /**
+     * <code>GCG_END_REASON_NO_PLAYER = 6;</code>
+     */
+    public static final int GCG_END_REASON_NO_PLAYER_VALUE = 6;
+    /**
+     * <code>GCG_END_REASON_GIVE_UP = 7;</code>
+     */
+    public static final int GCG_END_REASON_GIVE_UP_VALUE = 7;
+    /**
+     * <code>GCG_END_REASON_INIT_TIMEOUT = 8;</code>
+     */
+    public static final int GCG_END_REASON_INIT_TIMEOUT_VALUE = 8;
+    /**
+     * <code>GCG_END_REASON_EFFECT = 9;</code>
+     */
+    public static final int GCG_END_REASON_EFFECT_VALUE = 9;
+    /**
+     * <code>GCG_END_REASON_Unk3300_INAPHKAKKHF = 10;</code>
+     */
+    public static final int GCG_END_REASON_Unk3300_INAPHKAKKHF_VALUE = 10;
 
 
     public final int getNumber() {
@@ -93,6 +141,12 @@ public final class GCGEndReasonOuterClass {
         case 2: return GCG_END_REASON_SURRENDER;
         case 3: return GCG_END_REASON_DISCONNECTED;
         case 4: return GCG_END_REASON_ROUND_LIMIT;
+        case 5: return GCG_END_REASON_GM;
+        case 6: return GCG_END_REASON_NO_PLAYER;
+        case 7: return GCG_END_REASON_GIVE_UP;
+        case 8: return GCG_END_REASON_INIT_TIMEOUT;
+        case 9: return GCG_END_REASON_EFFECT;
+        case 10: return GCG_END_REASON_Unk3300_INAPHKAKKHF;
         default: return null;
       }
     }
@@ -158,12 +212,17 @@ public final class GCGEndReasonOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\022GCGEndReason.proto*\241\001\n\014GCGEndReason\022\032\n" +
+      "\n\022GCGEndReason.proto*\326\002\n\014GCGEndReason\022\032\n" +
       "\026GCG_END_REASON_DEFAULT\020\000\022\026\n\022GCG_END_REA" +
       "SON_DIE\020\001\022\034\n\030GCG_END_REASON_SURRENDER\020\002\022" +
       "\037\n\033GCG_END_REASON_DISCONNECTED\020\003\022\036\n\032GCG_" +
-      "END_REASON_ROUND_LIMIT\020\004B\033\n\031emu.grasscut" +
-      "ter.net.protob\006proto3"
+      "END_REASON_ROUND_LIMIT\020\004\022\025\n\021GCG_END_REAS" +
+      "ON_GM\020\005\022\034\n\030GCG_END_REASON_NO_PLAYER\020\006\022\032\n" +
+      "\026GCG_END_REASON_GIVE_UP\020\007\022\037\n\033GCG_END_REA" +
+      "SON_INIT_TIMEOUT\020\010\022\031\n\025GCG_END_REASON_EFF" +
+      "ECT\020\t\022&\n\"GCG_END_REASON_Unk3300_INAPHKAK" +
+      "KHF\020\nB\033\n\031emu.grasscutter.net.protob\006prot" +
+      "o3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

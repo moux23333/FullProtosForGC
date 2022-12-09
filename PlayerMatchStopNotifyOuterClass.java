@@ -19,27 +19,31 @@ public final class PlayerMatchStopNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.MatchReason reason = 1;</code>
+     * <code>.MatchReason reason = 10;</code>
      * @return The enum numeric value on the wire for reason.
      */
     int getReasonValue();
     /**
-     * <code>.MatchReason reason = 1;</code>
+     * <code>.MatchReason reason = 10;</code>
      * @return The reason.
      */
     emu.grasscutter.net.proto.MatchReasonOuterClass.MatchReason getReason();
 
     /**
-     * <code>uint32 host_uid = 12;</code>
+     * <code>uint32 host_uid = 8;</code>
      * @return The hostUid.
      */
     int getHostUid();
   }
   /**
    * <pre>
-   * CmdId: 4181
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 4181;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code PlayerMatchStopNotify}
@@ -87,15 +91,15 @@ public final class PlayerMatchStopNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
+            case 64: {
+
+              hostUid_ = input.readUInt32();
+              break;
+            }
+            case 80: {
               int rawValue = input.readEnum();
 
               reason_ = rawValue;
-              break;
-            }
-            case 96: {
-
-              hostUid_ = input.readUInt32();
               break;
             }
             default: {
@@ -130,17 +134,17 @@ public final class PlayerMatchStopNotifyOuterClass {
               emu.grasscutter.net.proto.PlayerMatchStopNotifyOuterClass.PlayerMatchStopNotify.class, emu.grasscutter.net.proto.PlayerMatchStopNotifyOuterClass.PlayerMatchStopNotify.Builder.class);
     }
 
-    public static final int REASON_FIELD_NUMBER = 1;
+    public static final int REASON_FIELD_NUMBER = 10;
     private int reason_;
     /**
-     * <code>.MatchReason reason = 1;</code>
+     * <code>.MatchReason reason = 10;</code>
      * @return The enum numeric value on the wire for reason.
      */
     @java.lang.Override public int getReasonValue() {
       return reason_;
     }
     /**
-     * <code>.MatchReason reason = 1;</code>
+     * <code>.MatchReason reason = 10;</code>
      * @return The reason.
      */
     @java.lang.Override public emu.grasscutter.net.proto.MatchReasonOuterClass.MatchReason getReason() {
@@ -149,10 +153,10 @@ public final class PlayerMatchStopNotifyOuterClass {
       return result == null ? emu.grasscutter.net.proto.MatchReasonOuterClass.MatchReason.UNRECOGNIZED : result;
     }
 
-    public static final int HOST_UID_FIELD_NUMBER = 12;
+    public static final int HOST_UID_FIELD_NUMBER = 8;
     private int hostUid_;
     /**
-     * <code>uint32 host_uid = 12;</code>
+     * <code>uint32 host_uid = 8;</code>
      * @return The hostUid.
      */
     @java.lang.Override
@@ -174,11 +178,11 @@ public final class PlayerMatchStopNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (reason_ != emu.grasscutter.net.proto.MatchReasonOuterClass.MatchReason.MATCH_REASON_NONE.getNumber()) {
-        output.writeEnum(1, reason_);
-      }
       if (hostUid_ != 0) {
-        output.writeUInt32(12, hostUid_);
+        output.writeUInt32(8, hostUid_);
+      }
+      if (reason_ != emu.grasscutter.net.proto.MatchReasonOuterClass.MatchReason.MATCH_REASON_NONE.getNumber()) {
+        output.writeEnum(10, reason_);
       }
       unknownFields.writeTo(output);
     }
@@ -189,13 +193,13 @@ public final class PlayerMatchStopNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (reason_ != emu.grasscutter.net.proto.MatchReasonOuterClass.MatchReason.MATCH_REASON_NONE.getNumber()) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(1, reason_);
-      }
       if (hostUid_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, hostUid_);
+          .computeUInt32Size(8, hostUid_);
+      }
+      if (reason_ != emu.grasscutter.net.proto.MatchReasonOuterClass.MatchReason.MATCH_REASON_NONE.getNumber()) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeEnumSize(10, reason_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -327,9 +331,13 @@ public final class PlayerMatchStopNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 4181
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 4181;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code PlayerMatchStopNotify}
@@ -486,14 +494,14 @@ public final class PlayerMatchStopNotifyOuterClass {
 
       private int reason_ = 0;
       /**
-       * <code>.MatchReason reason = 1;</code>
+       * <code>.MatchReason reason = 10;</code>
        * @return The enum numeric value on the wire for reason.
        */
       @java.lang.Override public int getReasonValue() {
         return reason_;
       }
       /**
-       * <code>.MatchReason reason = 1;</code>
+       * <code>.MatchReason reason = 10;</code>
        * @param value The enum numeric value on the wire for reason to set.
        * @return This builder for chaining.
        */
@@ -504,7 +512,7 @@ public final class PlayerMatchStopNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.MatchReason reason = 1;</code>
+       * <code>.MatchReason reason = 10;</code>
        * @return The reason.
        */
       @java.lang.Override
@@ -514,7 +522,7 @@ public final class PlayerMatchStopNotifyOuterClass {
         return result == null ? emu.grasscutter.net.proto.MatchReasonOuterClass.MatchReason.UNRECOGNIZED : result;
       }
       /**
-       * <code>.MatchReason reason = 1;</code>
+       * <code>.MatchReason reason = 10;</code>
        * @param value The reason to set.
        * @return This builder for chaining.
        */
@@ -528,7 +536,7 @@ public final class PlayerMatchStopNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.MatchReason reason = 1;</code>
+       * <code>.MatchReason reason = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearReason() {
@@ -540,7 +548,7 @@ public final class PlayerMatchStopNotifyOuterClass {
 
       private int hostUid_ ;
       /**
-       * <code>uint32 host_uid = 12;</code>
+       * <code>uint32 host_uid = 8;</code>
        * @return The hostUid.
        */
       @java.lang.Override
@@ -548,7 +556,7 @@ public final class PlayerMatchStopNotifyOuterClass {
         return hostUid_;
       }
       /**
-       * <code>uint32 host_uid = 12;</code>
+       * <code>uint32 host_uid = 8;</code>
        * @param value The hostUid to set.
        * @return This builder for chaining.
        */
@@ -559,7 +567,7 @@ public final class PlayerMatchStopNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 host_uid = 12;</code>
+       * <code>uint32 host_uid = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearHostUid() {
@@ -637,7 +645,7 @@ public final class PlayerMatchStopNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n\033PlayerMatchStopNotify.proto\032\021MatchReas" +
       "on.proto\"G\n\025PlayerMatchStopNotify\022\034\n\006rea" +
-      "son\030\001 \001(\0162\014.MatchReason\022\020\n\010host_uid\030\014 \001(" +
+      "son\030\n \001(\0162\014.MatchReason\022\020\n\010host_uid\030\010 \001(" +
       "\rB\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

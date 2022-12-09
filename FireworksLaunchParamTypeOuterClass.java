@@ -28,17 +28,17 @@ public final class FireworksLaunchParamTypeOuterClass {
      */
     FIREWORKS_LAUNCH_PARAM_TYPE_REPEAT(1),
     /**
-     * <code>FIREWORKS_LAUNCH_PARAM_TYPE_INTEVAL = 2;</code>
+     * <code>FIREWORKS_LAUNCH_PARAM_TYPE_INTERVAL = 2;</code>
      */
-    FIREWORKS_LAUNCH_PARAM_TYPE_INTEVAL(2),
+    FIREWORKS_LAUNCH_PARAM_TYPE_INTERVAL(2),
     /**
      * <code>FIREWORKS_LAUNCH_PARAM_TYPE_DELAY = 3;</code>
      */
     FIREWORKS_LAUNCH_PARAM_TYPE_DELAY(3),
     /**
-     * <code>FIREWORKS_LAUNCH_PARAM_TYPE_ROUND_INTEVAL = 4;</code>
+     * <code>FIREWORKS_LAUNCH_PARAM_TYPE_ROUND_INTERVAL = 4;</code>
      */
-    FIREWORKS_LAUNCH_PARAM_TYPE_ROUND_INTEVAL(4),
+    FIREWORKS_LAUNCH_PARAM_TYPE_ROUND_INTERVAL(4),
     /**
      * <code>FIREWORKS_LAUNCH_PARAM_TYPE_MAX = 5;</code>
      */
@@ -55,17 +55,17 @@ public final class FireworksLaunchParamTypeOuterClass {
      */
     public static final int FIREWORKS_LAUNCH_PARAM_TYPE_REPEAT_VALUE = 1;
     /**
-     * <code>FIREWORKS_LAUNCH_PARAM_TYPE_INTEVAL = 2;</code>
+     * <code>FIREWORKS_LAUNCH_PARAM_TYPE_INTERVAL = 2;</code>
      */
-    public static final int FIREWORKS_LAUNCH_PARAM_TYPE_INTEVAL_VALUE = 2;
+    public static final int FIREWORKS_LAUNCH_PARAM_TYPE_INTERVAL_VALUE = 2;
     /**
      * <code>FIREWORKS_LAUNCH_PARAM_TYPE_DELAY = 3;</code>
      */
     public static final int FIREWORKS_LAUNCH_PARAM_TYPE_DELAY_VALUE = 3;
     /**
-     * <code>FIREWORKS_LAUNCH_PARAM_TYPE_ROUND_INTEVAL = 4;</code>
+     * <code>FIREWORKS_LAUNCH_PARAM_TYPE_ROUND_INTERVAL = 4;</code>
      */
-    public static final int FIREWORKS_LAUNCH_PARAM_TYPE_ROUND_INTEVAL_VALUE = 4;
+    public static final int FIREWORKS_LAUNCH_PARAM_TYPE_ROUND_INTERVAL_VALUE = 4;
     /**
      * <code>FIREWORKS_LAUNCH_PARAM_TYPE_MAX = 5;</code>
      */
@@ -98,9 +98,9 @@ public final class FireworksLaunchParamTypeOuterClass {
       switch (value) {
         case 0: return FIREWORKS_LAUNCH_PARAM_TYPE_NONE;
         case 1: return FIREWORKS_LAUNCH_PARAM_TYPE_REPEAT;
-        case 2: return FIREWORKS_LAUNCH_PARAM_TYPE_INTEVAL;
+        case 2: return FIREWORKS_LAUNCH_PARAM_TYPE_INTERVAL;
         case 3: return FIREWORKS_LAUNCH_PARAM_TYPE_DELAY;
-        case 4: return FIREWORKS_LAUNCH_PARAM_TYPE_ROUND_INTEVAL;
+        case 4: return FIREWORKS_LAUNCH_PARAM_TYPE_ROUND_INTERVAL;
         case 5: return FIREWORKS_LAUNCH_PARAM_TYPE_MAX;
         default: return null;
       }
@@ -167,15 +167,15 @@ public final class FireworksLaunchParamTypeOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\036FireworksLaunchParamType.proto*\214\002\n\030Fir" +
+      "\n\036FireworksLaunchParamType.proto*\216\002\n\030Fir" +
       "eworksLaunchParamType\022$\n FIREWORKS_LAUNC" +
       "H_PARAM_TYPE_NONE\020\000\022&\n\"FIREWORKS_LAUNCH_" +
-      "PARAM_TYPE_REPEAT\020\001\022\'\n#FIREWORKS_LAUNCH_" +
-      "PARAM_TYPE_INTEVAL\020\002\022%\n!FIREWORKS_LAUNCH" +
-      "_PARAM_TYPE_DELAY\020\003\022-\n)FIREWORKS_LAUNCH_" +
-      "PARAM_TYPE_ROUND_INTEVAL\020\004\022#\n\037FIREWORKS_" +
-      "LAUNCH_PARAM_TYPE_MAX\020\005B\033\n\031emu.grasscutt" +
-      "er.net.protob\006proto3"
+      "PARAM_TYPE_REPEAT\020\001\022(\n$FIREWORKS_LAUNCH_" +
+      "PARAM_TYPE_INTERVAL\020\002\022%\n!FIREWORKS_LAUNC" +
+      "H_PARAM_TYPE_DELAY\020\003\022.\n*FIREWORKS_LAUNCH" +
+      "_PARAM_TYPE_ROUND_INTERVAL\020\004\022#\n\037FIREWORK" +
+      "S_LAUNCH_PARAM_TYPE_MAX\020\005B\033\n\031emu.grasscu" +
+      "tter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

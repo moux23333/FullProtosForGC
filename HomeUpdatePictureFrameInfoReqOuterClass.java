@@ -19,26 +19,30 @@ public final class HomeUpdatePictureFrameInfoReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.HomePictureFrameInfo picture_frame_info = 1;</code>
+     * <code>.HomePictureFrameInfo picture_frame_info = 13;</code>
      * @return Whether the pictureFrameInfo field is set.
      */
     boolean hasPictureFrameInfo();
     /**
-     * <code>.HomePictureFrameInfo picture_frame_info = 1;</code>
+     * <code>.HomePictureFrameInfo picture_frame_info = 13;</code>
      * @return The pictureFrameInfo.
      */
     emu.grasscutter.net.proto.HomePictureFrameInfoOuterClass.HomePictureFrameInfo getPictureFrameInfo();
     /**
-     * <code>.HomePictureFrameInfo picture_frame_info = 1;</code>
+     * <code>.HomePictureFrameInfo picture_frame_info = 13;</code>
      */
     emu.grasscutter.net.proto.HomePictureFrameInfoOuterClass.HomePictureFrameInfoOrBuilder getPictureFrameInfoOrBuilder();
   }
   /**
    * <pre>
-   * CmdId: 4486
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 4764;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code HomeUpdatePictureFrameInfoReq}
@@ -85,7 +89,7 @@ public final class HomeUpdatePictureFrameInfoReqOuterClass {
             case 0:
               done = true;
               break;
-            case 10: {
+            case 106: {
               emu.grasscutter.net.proto.HomePictureFrameInfoOuterClass.HomePictureFrameInfo.Builder subBuilder = null;
               if (pictureFrameInfo_ != null) {
                 subBuilder = pictureFrameInfo_.toBuilder();
@@ -130,10 +134,10 @@ public final class HomeUpdatePictureFrameInfoReqOuterClass {
               emu.grasscutter.net.proto.HomeUpdatePictureFrameInfoReqOuterClass.HomeUpdatePictureFrameInfoReq.class, emu.grasscutter.net.proto.HomeUpdatePictureFrameInfoReqOuterClass.HomeUpdatePictureFrameInfoReq.Builder.class);
     }
 
-    public static final int PICTURE_FRAME_INFO_FIELD_NUMBER = 1;
+    public static final int PICTURE_FRAME_INFO_FIELD_NUMBER = 13;
     private emu.grasscutter.net.proto.HomePictureFrameInfoOuterClass.HomePictureFrameInfo pictureFrameInfo_;
     /**
-     * <code>.HomePictureFrameInfo picture_frame_info = 1;</code>
+     * <code>.HomePictureFrameInfo picture_frame_info = 13;</code>
      * @return Whether the pictureFrameInfo field is set.
      */
     @java.lang.Override
@@ -141,7 +145,7 @@ public final class HomeUpdatePictureFrameInfoReqOuterClass {
       return pictureFrameInfo_ != null;
     }
     /**
-     * <code>.HomePictureFrameInfo picture_frame_info = 1;</code>
+     * <code>.HomePictureFrameInfo picture_frame_info = 13;</code>
      * @return The pictureFrameInfo.
      */
     @java.lang.Override
@@ -149,7 +153,7 @@ public final class HomeUpdatePictureFrameInfoReqOuterClass {
       return pictureFrameInfo_ == null ? emu.grasscutter.net.proto.HomePictureFrameInfoOuterClass.HomePictureFrameInfo.getDefaultInstance() : pictureFrameInfo_;
     }
     /**
-     * <code>.HomePictureFrameInfo picture_frame_info = 1;</code>
+     * <code>.HomePictureFrameInfo picture_frame_info = 13;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.HomePictureFrameInfoOuterClass.HomePictureFrameInfoOrBuilder getPictureFrameInfoOrBuilder() {
@@ -171,7 +175,7 @@ public final class HomeUpdatePictureFrameInfoReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (pictureFrameInfo_ != null) {
-        output.writeMessage(1, getPictureFrameInfo());
+        output.writeMessage(13, getPictureFrameInfo());
       }
       unknownFields.writeTo(output);
     }
@@ -184,7 +188,7 @@ public final class HomeUpdatePictureFrameInfoReqOuterClass {
       size = 0;
       if (pictureFrameInfo_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(1, getPictureFrameInfo());
+          .computeMessageSize(13, getPictureFrameInfo());
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -318,10 +322,14 @@ public final class HomeUpdatePictureFrameInfoReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 4486
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 4764;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code HomeUpdatePictureFrameInfoReq}
@@ -482,14 +490,14 @@ public final class HomeUpdatePictureFrameInfoReqOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.HomePictureFrameInfoOuterClass.HomePictureFrameInfo, emu.grasscutter.net.proto.HomePictureFrameInfoOuterClass.HomePictureFrameInfo.Builder, emu.grasscutter.net.proto.HomePictureFrameInfoOuterClass.HomePictureFrameInfoOrBuilder> pictureFrameInfoBuilder_;
       /**
-       * <code>.HomePictureFrameInfo picture_frame_info = 1;</code>
+       * <code>.HomePictureFrameInfo picture_frame_info = 13;</code>
        * @return Whether the pictureFrameInfo field is set.
        */
       public boolean hasPictureFrameInfo() {
         return pictureFrameInfoBuilder_ != null || pictureFrameInfo_ != null;
       }
       /**
-       * <code>.HomePictureFrameInfo picture_frame_info = 1;</code>
+       * <code>.HomePictureFrameInfo picture_frame_info = 13;</code>
        * @return The pictureFrameInfo.
        */
       public emu.grasscutter.net.proto.HomePictureFrameInfoOuterClass.HomePictureFrameInfo getPictureFrameInfo() {
@@ -500,7 +508,7 @@ public final class HomeUpdatePictureFrameInfoReqOuterClass {
         }
       }
       /**
-       * <code>.HomePictureFrameInfo picture_frame_info = 1;</code>
+       * <code>.HomePictureFrameInfo picture_frame_info = 13;</code>
        */
       public Builder setPictureFrameInfo(emu.grasscutter.net.proto.HomePictureFrameInfoOuterClass.HomePictureFrameInfo value) {
         if (pictureFrameInfoBuilder_ == null) {
@@ -516,7 +524,7 @@ public final class HomeUpdatePictureFrameInfoReqOuterClass {
         return this;
       }
       /**
-       * <code>.HomePictureFrameInfo picture_frame_info = 1;</code>
+       * <code>.HomePictureFrameInfo picture_frame_info = 13;</code>
        */
       public Builder setPictureFrameInfo(
           emu.grasscutter.net.proto.HomePictureFrameInfoOuterClass.HomePictureFrameInfo.Builder builderForValue) {
@@ -530,7 +538,7 @@ public final class HomeUpdatePictureFrameInfoReqOuterClass {
         return this;
       }
       /**
-       * <code>.HomePictureFrameInfo picture_frame_info = 1;</code>
+       * <code>.HomePictureFrameInfo picture_frame_info = 13;</code>
        */
       public Builder mergePictureFrameInfo(emu.grasscutter.net.proto.HomePictureFrameInfoOuterClass.HomePictureFrameInfo value) {
         if (pictureFrameInfoBuilder_ == null) {
@@ -548,7 +556,7 @@ public final class HomeUpdatePictureFrameInfoReqOuterClass {
         return this;
       }
       /**
-       * <code>.HomePictureFrameInfo picture_frame_info = 1;</code>
+       * <code>.HomePictureFrameInfo picture_frame_info = 13;</code>
        */
       public Builder clearPictureFrameInfo() {
         if (pictureFrameInfoBuilder_ == null) {
@@ -562,7 +570,7 @@ public final class HomeUpdatePictureFrameInfoReqOuterClass {
         return this;
       }
       /**
-       * <code>.HomePictureFrameInfo picture_frame_info = 1;</code>
+       * <code>.HomePictureFrameInfo picture_frame_info = 13;</code>
        */
       public emu.grasscutter.net.proto.HomePictureFrameInfoOuterClass.HomePictureFrameInfo.Builder getPictureFrameInfoBuilder() {
         
@@ -570,7 +578,7 @@ public final class HomeUpdatePictureFrameInfoReqOuterClass {
         return getPictureFrameInfoFieldBuilder().getBuilder();
       }
       /**
-       * <code>.HomePictureFrameInfo picture_frame_info = 1;</code>
+       * <code>.HomePictureFrameInfo picture_frame_info = 13;</code>
        */
       public emu.grasscutter.net.proto.HomePictureFrameInfoOuterClass.HomePictureFrameInfoOrBuilder getPictureFrameInfoOrBuilder() {
         if (pictureFrameInfoBuilder_ != null) {
@@ -581,7 +589,7 @@ public final class HomeUpdatePictureFrameInfoReqOuterClass {
         }
       }
       /**
-       * <code>.HomePictureFrameInfo picture_frame_info = 1;</code>
+       * <code>.HomePictureFrameInfo picture_frame_info = 13;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.HomePictureFrameInfoOuterClass.HomePictureFrameInfo, emu.grasscutter.net.proto.HomePictureFrameInfoOuterClass.HomePictureFrameInfo.Builder, emu.grasscutter.net.proto.HomePictureFrameInfoOuterClass.HomePictureFrameInfoOrBuilder> 
@@ -666,7 +674,7 @@ public final class HomeUpdatePictureFrameInfoReqOuterClass {
       "\n#HomeUpdatePictureFrameInfoReq.proto\032\032H" +
       "omePictureFrameInfo.proto\"R\n\035HomeUpdateP" +
       "ictureFrameInfoReq\0221\n\022picture_frame_info" +
-      "\030\001 \001(\0132\025.HomePictureFrameInfoB\033\n\031emu.gra" +
+      "\030\r \001(\0132\025.HomePictureFrameInfoB\033\n\031emu.gra" +
       "sscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

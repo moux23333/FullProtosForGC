@@ -19,16 +19,28 @@ public final class GCGSkillPreviewCardInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 controller_id = 3;</code>
+     * <code>uint32 card_guid = 10;</code>
+     * @return The cardGuid.
+     */
+    int getCardGuid();
+
+    /**
+     * <code>uint32 face_type = 2;</code>
+     * @return The faceType.
+     */
+    int getFaceType();
+
+    /**
+     * <code>uint32 controller_id = 11;</code>
      * @return The controllerId.
      */
     int getControllerId();
 
     /**
-     * <code>uint32 owner_card_guid = 11;</code>
-     * @return The ownerCardGuid.
+     * <code>uint32 card_id = 8;</code>
+     * @return The cardId.
      */
-    int getOwnerCardGuid();
+    int getCardId();
 
     /**
      * <code>.GCGZoneType zone_type = 14;</code>
@@ -42,16 +54,10 @@ public final class GCGSkillPreviewCardInfoOuterClass {
     emu.grasscutter.net.proto.GCGZoneTypeOuterClass.GCGZoneType getZoneType();
 
     /**
-     * <code>uint32 card_id = 13;</code>
-     * @return The cardId.
+     * <code>uint32 owner_card_guid = 3;</code>
+     * @return The ownerCardGuid.
      */
-    int getCardId();
-
-    /**
-     * <code>uint32 card_guid = 6;</code>
-     * @return The cardGuid.
-     */
-    int getCardGuid();
+    int getOwnerCardGuid();
   }
   /**
    * Protobuf type {@code GCGSkillPreviewCardInfo}
@@ -99,24 +105,29 @@ public final class GCGSkillPreviewCardInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 24: {
+            case 16: {
 
-              controllerId_ = input.readUInt32();
+              faceType_ = input.readUInt32();
               break;
             }
-            case 48: {
+            case 24: {
+
+              ownerCardGuid_ = input.readUInt32();
+              break;
+            }
+            case 64: {
+
+              cardId_ = input.readUInt32();
+              break;
+            }
+            case 80: {
 
               cardGuid_ = input.readUInt32();
               break;
             }
             case 88: {
 
-              ownerCardGuid_ = input.readUInt32();
-              break;
-            }
-            case 104: {
-
-              cardId_ = input.readUInt32();
+              controllerId_ = input.readUInt32();
               break;
             }
             case 112: {
@@ -157,10 +168,32 @@ public final class GCGSkillPreviewCardInfoOuterClass {
               emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo.class, emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo.Builder.class);
     }
 
-    public static final int CONTROLLER_ID_FIELD_NUMBER = 3;
+    public static final int CARD_GUID_FIELD_NUMBER = 10;
+    private int cardGuid_;
+    /**
+     * <code>uint32 card_guid = 10;</code>
+     * @return The cardGuid.
+     */
+    @java.lang.Override
+    public int getCardGuid() {
+      return cardGuid_;
+    }
+
+    public static final int FACE_TYPE_FIELD_NUMBER = 2;
+    private int faceType_;
+    /**
+     * <code>uint32 face_type = 2;</code>
+     * @return The faceType.
+     */
+    @java.lang.Override
+    public int getFaceType() {
+      return faceType_;
+    }
+
+    public static final int CONTROLLER_ID_FIELD_NUMBER = 11;
     private int controllerId_;
     /**
-     * <code>uint32 controller_id = 3;</code>
+     * <code>uint32 controller_id = 11;</code>
      * @return The controllerId.
      */
     @java.lang.Override
@@ -168,15 +201,15 @@ public final class GCGSkillPreviewCardInfoOuterClass {
       return controllerId_;
     }
 
-    public static final int OWNER_CARD_GUID_FIELD_NUMBER = 11;
-    private int ownerCardGuid_;
+    public static final int CARD_ID_FIELD_NUMBER = 8;
+    private int cardId_;
     /**
-     * <code>uint32 owner_card_guid = 11;</code>
-     * @return The ownerCardGuid.
+     * <code>uint32 card_id = 8;</code>
+     * @return The cardId.
      */
     @java.lang.Override
-    public int getOwnerCardGuid() {
-      return ownerCardGuid_;
+    public int getCardId() {
+      return cardId_;
     }
 
     public static final int ZONE_TYPE_FIELD_NUMBER = 14;
@@ -198,26 +231,15 @@ public final class GCGSkillPreviewCardInfoOuterClass {
       return result == null ? emu.grasscutter.net.proto.GCGZoneTypeOuterClass.GCGZoneType.UNRECOGNIZED : result;
     }
 
-    public static final int CARD_ID_FIELD_NUMBER = 13;
-    private int cardId_;
+    public static final int OWNER_CARD_GUID_FIELD_NUMBER = 3;
+    private int ownerCardGuid_;
     /**
-     * <code>uint32 card_id = 13;</code>
-     * @return The cardId.
+     * <code>uint32 owner_card_guid = 3;</code>
+     * @return The ownerCardGuid.
      */
     @java.lang.Override
-    public int getCardId() {
-      return cardId_;
-    }
-
-    public static final int CARD_GUID_FIELD_NUMBER = 6;
-    private int cardGuid_;
-    /**
-     * <code>uint32 card_guid = 6;</code>
-     * @return The cardGuid.
-     */
-    @java.lang.Override
-    public int getCardGuid() {
-      return cardGuid_;
+    public int getOwnerCardGuid() {
+      return ownerCardGuid_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -234,17 +256,20 @@ public final class GCGSkillPreviewCardInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (controllerId_ != 0) {
-        output.writeUInt32(3, controllerId_);
-      }
-      if (cardGuid_ != 0) {
-        output.writeUInt32(6, cardGuid_);
+      if (faceType_ != 0) {
+        output.writeUInt32(2, faceType_);
       }
       if (ownerCardGuid_ != 0) {
-        output.writeUInt32(11, ownerCardGuid_);
+        output.writeUInt32(3, ownerCardGuid_);
       }
       if (cardId_ != 0) {
-        output.writeUInt32(13, cardId_);
+        output.writeUInt32(8, cardId_);
+      }
+      if (cardGuid_ != 0) {
+        output.writeUInt32(10, cardGuid_);
+      }
+      if (controllerId_ != 0) {
+        output.writeUInt32(11, controllerId_);
       }
       if (zoneType_ != emu.grasscutter.net.proto.GCGZoneTypeOuterClass.GCGZoneType.GCG_ZONE_TYPE_INVALID.getNumber()) {
         output.writeEnum(14, zoneType_);
@@ -258,21 +283,25 @@ public final class GCGSkillPreviewCardInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (controllerId_ != 0) {
+      if (faceType_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, controllerId_);
-      }
-      if (cardGuid_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, cardGuid_);
+          .computeUInt32Size(2, faceType_);
       }
       if (ownerCardGuid_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, ownerCardGuid_);
+          .computeUInt32Size(3, ownerCardGuid_);
       }
       if (cardId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, cardId_);
+          .computeUInt32Size(8, cardId_);
+      }
+      if (cardGuid_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(10, cardGuid_);
+      }
+      if (controllerId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(11, controllerId_);
       }
       if (zoneType_ != emu.grasscutter.net.proto.GCGZoneTypeOuterClass.GCGZoneType.GCG_ZONE_TYPE_INVALID.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
@@ -293,15 +322,17 @@ public final class GCGSkillPreviewCardInfoOuterClass {
       }
       emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo other = (emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo) obj;
 
-      if (getControllerId()
-          != other.getControllerId()) return false;
-      if (getOwnerCardGuid()
-          != other.getOwnerCardGuid()) return false;
-      if (zoneType_ != other.zoneType_) return false;
-      if (getCardId()
-          != other.getCardId()) return false;
       if (getCardGuid()
           != other.getCardGuid()) return false;
+      if (getFaceType()
+          != other.getFaceType()) return false;
+      if (getControllerId()
+          != other.getControllerId()) return false;
+      if (getCardId()
+          != other.getCardId()) return false;
+      if (zoneType_ != other.zoneType_) return false;
+      if (getOwnerCardGuid()
+          != other.getOwnerCardGuid()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -313,16 +344,18 @@ public final class GCGSkillPreviewCardInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + CONTROLLER_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getControllerId();
-      hash = (37 * hash) + OWNER_CARD_GUID_FIELD_NUMBER;
-      hash = (53 * hash) + getOwnerCardGuid();
-      hash = (37 * hash) + ZONE_TYPE_FIELD_NUMBER;
-      hash = (53 * hash) + zoneType_;
-      hash = (37 * hash) + CARD_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getCardId();
       hash = (37 * hash) + CARD_GUID_FIELD_NUMBER;
       hash = (53 * hash) + getCardGuid();
+      hash = (37 * hash) + FACE_TYPE_FIELD_NUMBER;
+      hash = (53 * hash) + getFaceType();
+      hash = (37 * hash) + CONTROLLER_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getControllerId();
+      hash = (37 * hash) + CARD_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getCardId();
+      hash = (37 * hash) + ZONE_TYPE_FIELD_NUMBER;
+      hash = (53 * hash) + zoneType_;
+      hash = (37 * hash) + OWNER_CARD_GUID_FIELD_NUMBER;
+      hash = (53 * hash) + getOwnerCardGuid();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -456,15 +489,17 @@ public final class GCGSkillPreviewCardInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        cardGuid_ = 0;
+
+        faceType_ = 0;
+
         controllerId_ = 0;
-
-        ownerCardGuid_ = 0;
-
-        zoneType_ = 0;
 
         cardId_ = 0;
 
-        cardGuid_ = 0;
+        zoneType_ = 0;
+
+        ownerCardGuid_ = 0;
 
         return this;
       }
@@ -492,11 +527,12 @@ public final class GCGSkillPreviewCardInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo buildPartial() {
         emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo result = new emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo(this);
-        result.controllerId_ = controllerId_;
-        result.ownerCardGuid_ = ownerCardGuid_;
-        result.zoneType_ = zoneType_;
-        result.cardId_ = cardId_;
         result.cardGuid_ = cardGuid_;
+        result.faceType_ = faceType_;
+        result.controllerId_ = controllerId_;
+        result.cardId_ = cardId_;
+        result.zoneType_ = zoneType_;
+        result.ownerCardGuid_ = ownerCardGuid_;
         onBuilt();
         return result;
       }
@@ -545,20 +581,23 @@ public final class GCGSkillPreviewCardInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo other) {
         if (other == emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo.getDefaultInstance()) return this;
+        if (other.getCardGuid() != 0) {
+          setCardGuid(other.getCardGuid());
+        }
+        if (other.getFaceType() != 0) {
+          setFaceType(other.getFaceType());
+        }
         if (other.getControllerId() != 0) {
           setControllerId(other.getControllerId());
-        }
-        if (other.getOwnerCardGuid() != 0) {
-          setOwnerCardGuid(other.getOwnerCardGuid());
-        }
-        if (other.zoneType_ != 0) {
-          setZoneTypeValue(other.getZoneTypeValue());
         }
         if (other.getCardId() != 0) {
           setCardId(other.getCardId());
         }
-        if (other.getCardGuid() != 0) {
-          setCardGuid(other.getCardGuid());
+        if (other.zoneType_ != 0) {
+          setZoneTypeValue(other.getZoneTypeValue());
+        }
+        if (other.getOwnerCardGuid() != 0) {
+          setOwnerCardGuid(other.getOwnerCardGuid());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -589,9 +628,71 @@ public final class GCGSkillPreviewCardInfoOuterClass {
         return this;
       }
 
+      private int cardGuid_ ;
+      /**
+       * <code>uint32 card_guid = 10;</code>
+       * @return The cardGuid.
+       */
+      @java.lang.Override
+      public int getCardGuid() {
+        return cardGuid_;
+      }
+      /**
+       * <code>uint32 card_guid = 10;</code>
+       * @param value The cardGuid to set.
+       * @return This builder for chaining.
+       */
+      public Builder setCardGuid(int value) {
+        
+        cardGuid_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 card_guid = 10;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearCardGuid() {
+        
+        cardGuid_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int faceType_ ;
+      /**
+       * <code>uint32 face_type = 2;</code>
+       * @return The faceType.
+       */
+      @java.lang.Override
+      public int getFaceType() {
+        return faceType_;
+      }
+      /**
+       * <code>uint32 face_type = 2;</code>
+       * @param value The faceType to set.
+       * @return This builder for chaining.
+       */
+      public Builder setFaceType(int value) {
+        
+        faceType_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 face_type = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearFaceType() {
+        
+        faceType_ = 0;
+        onChanged();
+        return this;
+      }
+
       private int controllerId_ ;
       /**
-       * <code>uint32 controller_id = 3;</code>
+       * <code>uint32 controller_id = 11;</code>
        * @return The controllerId.
        */
       @java.lang.Override
@@ -599,7 +700,7 @@ public final class GCGSkillPreviewCardInfoOuterClass {
         return controllerId_;
       }
       /**
-       * <code>uint32 controller_id = 3;</code>
+       * <code>uint32 controller_id = 11;</code>
        * @param value The controllerId to set.
        * @return This builder for chaining.
        */
@@ -610,7 +711,7 @@ public final class GCGSkillPreviewCardInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 controller_id = 3;</code>
+       * <code>uint32 controller_id = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearControllerId() {
@@ -620,33 +721,33 @@ public final class GCGSkillPreviewCardInfoOuterClass {
         return this;
       }
 
-      private int ownerCardGuid_ ;
+      private int cardId_ ;
       /**
-       * <code>uint32 owner_card_guid = 11;</code>
-       * @return The ownerCardGuid.
+       * <code>uint32 card_id = 8;</code>
+       * @return The cardId.
        */
       @java.lang.Override
-      public int getOwnerCardGuid() {
-        return ownerCardGuid_;
+      public int getCardId() {
+        return cardId_;
       }
       /**
-       * <code>uint32 owner_card_guid = 11;</code>
-       * @param value The ownerCardGuid to set.
+       * <code>uint32 card_id = 8;</code>
+       * @param value The cardId to set.
        * @return This builder for chaining.
        */
-      public Builder setOwnerCardGuid(int value) {
+      public Builder setCardId(int value) {
         
-        ownerCardGuid_ = value;
+        cardId_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 owner_card_guid = 11;</code>
+       * <code>uint32 card_id = 8;</code>
        * @return This builder for chaining.
        */
-      public Builder clearOwnerCardGuid() {
+      public Builder clearCardId() {
         
-        ownerCardGuid_ = 0;
+        cardId_ = 0;
         onChanged();
         return this;
       }
@@ -705,64 +806,33 @@ public final class GCGSkillPreviewCardInfoOuterClass {
         return this;
       }
 
-      private int cardId_ ;
+      private int ownerCardGuid_ ;
       /**
-       * <code>uint32 card_id = 13;</code>
-       * @return The cardId.
+       * <code>uint32 owner_card_guid = 3;</code>
+       * @return The ownerCardGuid.
        */
       @java.lang.Override
-      public int getCardId() {
-        return cardId_;
+      public int getOwnerCardGuid() {
+        return ownerCardGuid_;
       }
       /**
-       * <code>uint32 card_id = 13;</code>
-       * @param value The cardId to set.
+       * <code>uint32 owner_card_guid = 3;</code>
+       * @param value The ownerCardGuid to set.
        * @return This builder for chaining.
        */
-      public Builder setCardId(int value) {
+      public Builder setOwnerCardGuid(int value) {
         
-        cardId_ = value;
+        ownerCardGuid_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 card_id = 13;</code>
+       * <code>uint32 owner_card_guid = 3;</code>
        * @return This builder for chaining.
        */
-      public Builder clearCardId() {
+      public Builder clearOwnerCardGuid() {
         
-        cardId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int cardGuid_ ;
-      /**
-       * <code>uint32 card_guid = 6;</code>
-       * @return The cardGuid.
-       */
-      @java.lang.Override
-      public int getCardGuid() {
-        return cardGuid_;
-      }
-      /**
-       * <code>uint32 card_guid = 6;</code>
-       * @param value The cardGuid to set.
-       * @return This builder for chaining.
-       */
-      public Builder setCardGuid(int value) {
-        
-        cardGuid_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 card_guid = 6;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearCardGuid() {
-        
-        cardGuid_ = 0;
+        ownerCardGuid_ = 0;
         onChanged();
         return this;
       }
@@ -834,11 +904,12 @@ public final class GCGSkillPreviewCardInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\035GCGSkillPreviewCardInfo.proto\032\021GCGZone" +
-      "Type.proto\"\216\001\n\027GCGSkillPreviewCardInfo\022\025" +
-      "\n\rcontroller_id\030\003 \001(\r\022\027\n\017owner_card_guid" +
-      "\030\013 \001(\r\022\037\n\tzone_type\030\016 \001(\0162\014.GCGZoneType\022" +
-      "\017\n\007card_id\030\r \001(\r\022\021\n\tcard_guid\030\006 \001(\rB\033\n\031e" +
-      "mu.grasscutter.net.protob\006proto3"
+      "Type.proto\"\241\001\n\027GCGSkillPreviewCardInfo\022\021" +
+      "\n\tcard_guid\030\n \001(\r\022\021\n\tface_type\030\002 \001(\r\022\025\n\r" +
+      "controller_id\030\013 \001(\r\022\017\n\007card_id\030\010 \001(\r\022\037\n\t" +
+      "zone_type\030\016 \001(\0162\014.GCGZoneType\022\027\n\017owner_c" +
+      "ard_guid\030\003 \001(\rB\033\n\031emu.grasscutter.net.pr" +
+      "otob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -850,7 +921,7 @@ public final class GCGSkillPreviewCardInfoOuterClass {
     internal_static_GCGSkillPreviewCardInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GCGSkillPreviewCardInfo_descriptor,
-        new java.lang.String[] { "ControllerId", "OwnerCardGuid", "ZoneType", "CardId", "CardGuid", });
+        new java.lang.String[] { "CardGuid", "FaceType", "ControllerId", "CardId", "ZoneType", "OwnerCardGuid", });
     emu.grasscutter.net.proto.GCGZoneTypeOuterClass.getDescriptor();
   }
 

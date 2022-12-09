@@ -19,60 +19,60 @@ public final class RogueDiaryAvatarOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.ActivityDungeonAvatar avatar = 2;</code>
-     * @return Whether the avatar field is set.
-     */
-    boolean hasAvatar();
-    /**
-     * <code>.ActivityDungeonAvatar avatar = 2;</code>
-     * @return The avatar.
-     */
-    emu.grasscutter.net.proto.ActivityDungeonAvatarOuterClass.ActivityDungeonAvatar getAvatar();
-    /**
-     * <code>.ActivityDungeonAvatar avatar = 2;</code>
-     */
-    emu.grasscutter.net.proto.ActivityDungeonAvatarOuterClass.ActivityDungeonAvatarOrBuilder getAvatarOrBuilder();
-
-    /**
-     * <code>uint32 level = 14;</code>
+     * <code>uint32 level = 10;</code>
      * @return The level.
      */
     int getLevel();
 
     /**
-     * <code>uint32 tired_round = 13;</code>
-     * @return The tiredRound.
-     */
-    int getTiredRound();
-
-    /**
-     * <code>repeated .RogueDiaryAvatarDisableStatus disable_status_list = 9;</code>
+     * <code>repeated .RogueDiaryAvatarDisableStatus disable_status_list = 7;</code>
      * @return A list containing the disableStatusList.
      */
     java.util.List<emu.grasscutter.net.proto.RogueDiaryAvatarDisableStatusOuterClass.RogueDiaryAvatarDisableStatus> getDisableStatusListList();
     /**
-     * <code>repeated .RogueDiaryAvatarDisableStatus disable_status_list = 9;</code>
+     * <code>repeated .RogueDiaryAvatarDisableStatus disable_status_list = 7;</code>
      * @return The count of disableStatusList.
      */
     int getDisableStatusListCount();
     /**
-     * <code>repeated .RogueDiaryAvatarDisableStatus disable_status_list = 9;</code>
+     * <code>repeated .RogueDiaryAvatarDisableStatus disable_status_list = 7;</code>
      * @param index The index of the element to return.
      * @return The disableStatusList at the given index.
      */
     emu.grasscutter.net.proto.RogueDiaryAvatarDisableStatusOuterClass.RogueDiaryAvatarDisableStatus getDisableStatusList(int index);
     /**
-     * <code>repeated .RogueDiaryAvatarDisableStatus disable_status_list = 9;</code>
+     * <code>repeated .RogueDiaryAvatarDisableStatus disable_status_list = 7;</code>
      * @return A list containing the enum numeric values on the wire for disableStatusList.
      */
     java.util.List<java.lang.Integer>
     getDisableStatusListValueList();
     /**
-     * <code>repeated .RogueDiaryAvatarDisableStatus disable_status_list = 9;</code>
+     * <code>repeated .RogueDiaryAvatarDisableStatus disable_status_list = 7;</code>
      * @param index The index of the value to return.
      * @return The enum numeric value on the wire of disableStatusList at the given index.
      */
     int getDisableStatusListValue(int index);
+
+    /**
+     * <code>uint32 tired_round = 2;</code>
+     * @return The tiredRound.
+     */
+    int getTiredRound();
+
+    /**
+     * <code>.ActivityDungeonAvatar avatar = 14;</code>
+     * @return Whether the avatar field is set.
+     */
+    boolean hasAvatar();
+    /**
+     * <code>.ActivityDungeonAvatar avatar = 14;</code>
+     * @return The avatar.
+     */
+    emu.grasscutter.net.proto.ActivityDungeonAvatarOuterClass.ActivityDungeonAvatar getAvatar();
+    /**
+     * <code>.ActivityDungeonAvatar avatar = 14;</code>
+     */
+    emu.grasscutter.net.proto.ActivityDungeonAvatarOuterClass.ActivityDungeonAvatarOrBuilder getAvatarOrBuilder();
   }
   /**
    * Protobuf type {@code RogueDiaryAvatar}
@@ -121,20 +121,12 @@ public final class RogueDiaryAvatarOuterClass {
             case 0:
               done = true;
               break;
-            case 18: {
-              emu.grasscutter.net.proto.ActivityDungeonAvatarOuterClass.ActivityDungeonAvatar.Builder subBuilder = null;
-              if (avatar_ != null) {
-                subBuilder = avatar_.toBuilder();
-              }
-              avatar_ = input.readMessage(emu.grasscutter.net.proto.ActivityDungeonAvatarOuterClass.ActivityDungeonAvatar.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom(avatar_);
-                avatar_ = subBuilder.buildPartial();
-              }
+            case 16: {
 
+              tiredRound_ = input.readUInt32();
               break;
             }
-            case 72: {
+            case 56: {
               int rawValue = input.readEnum();
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 disableStatusList_ = new java.util.ArrayList<java.lang.Integer>();
@@ -143,7 +135,7 @@ public final class RogueDiaryAvatarOuterClass {
               disableStatusList_.add(rawValue);
               break;
             }
-            case 74: {
+            case 58: {
               int length = input.readRawVarint32();
               int oldLimit = input.pushLimit(length);
               while(input.getBytesUntilLimit() > 0) {
@@ -157,14 +149,22 @@ public final class RogueDiaryAvatarOuterClass {
               input.popLimit(oldLimit);
               break;
             }
-            case 104: {
-
-              tiredRound_ = input.readUInt32();
-              break;
-            }
-            case 112: {
+            case 80: {
 
               level_ = input.readUInt32();
+              break;
+            }
+            case 114: {
+              emu.grasscutter.net.proto.ActivityDungeonAvatarOuterClass.ActivityDungeonAvatar.Builder subBuilder = null;
+              if (avatar_ != null) {
+                subBuilder = avatar_.toBuilder();
+              }
+              avatar_ = input.readMessage(emu.grasscutter.net.proto.ActivityDungeonAvatarOuterClass.ActivityDungeonAvatar.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(avatar_);
+                avatar_ = subBuilder.buildPartial();
+              }
+
               break;
             }
             default: {
@@ -202,36 +202,10 @@ public final class RogueDiaryAvatarOuterClass {
               emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatar.class, emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatar.Builder.class);
     }
 
-    public static final int AVATAR_FIELD_NUMBER = 2;
-    private emu.grasscutter.net.proto.ActivityDungeonAvatarOuterClass.ActivityDungeonAvatar avatar_;
-    /**
-     * <code>.ActivityDungeonAvatar avatar = 2;</code>
-     * @return Whether the avatar field is set.
-     */
-    @java.lang.Override
-    public boolean hasAvatar() {
-      return avatar_ != null;
-    }
-    /**
-     * <code>.ActivityDungeonAvatar avatar = 2;</code>
-     * @return The avatar.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.ActivityDungeonAvatarOuterClass.ActivityDungeonAvatar getAvatar() {
-      return avatar_ == null ? emu.grasscutter.net.proto.ActivityDungeonAvatarOuterClass.ActivityDungeonAvatar.getDefaultInstance() : avatar_;
-    }
-    /**
-     * <code>.ActivityDungeonAvatar avatar = 2;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.ActivityDungeonAvatarOuterClass.ActivityDungeonAvatarOrBuilder getAvatarOrBuilder() {
-      return getAvatar();
-    }
-
-    public static final int LEVEL_FIELD_NUMBER = 14;
+    public static final int LEVEL_FIELD_NUMBER = 10;
     private int level_;
     /**
-     * <code>uint32 level = 14;</code>
+     * <code>uint32 level = 10;</code>
      * @return The level.
      */
     @java.lang.Override
@@ -239,18 +213,7 @@ public final class RogueDiaryAvatarOuterClass {
       return level_;
     }
 
-    public static final int TIRED_ROUND_FIELD_NUMBER = 13;
-    private int tiredRound_;
-    /**
-     * <code>uint32 tired_round = 13;</code>
-     * @return The tiredRound.
-     */
-    @java.lang.Override
-    public int getTiredRound() {
-      return tiredRound_;
-    }
-
-    public static final int DISABLE_STATUS_LIST_FIELD_NUMBER = 9;
+    public static final int DISABLE_STATUS_LIST_FIELD_NUMBER = 7;
     private java.util.List<java.lang.Integer> disableStatusList_;
     private static final com.google.protobuf.Internal.ListAdapter.Converter<
         java.lang.Integer, emu.grasscutter.net.proto.RogueDiaryAvatarDisableStatusOuterClass.RogueDiaryAvatarDisableStatus> disableStatusList_converter_ =
@@ -263,7 +226,7 @@ public final class RogueDiaryAvatarOuterClass {
               }
             };
     /**
-     * <code>repeated .RogueDiaryAvatarDisableStatus disable_status_list = 9;</code>
+     * <code>repeated .RogueDiaryAvatarDisableStatus disable_status_list = 7;</code>
      * @return A list containing the disableStatusList.
      */
     @java.lang.Override
@@ -272,7 +235,7 @@ public final class RogueDiaryAvatarOuterClass {
           java.lang.Integer, emu.grasscutter.net.proto.RogueDiaryAvatarDisableStatusOuterClass.RogueDiaryAvatarDisableStatus>(disableStatusList_, disableStatusList_converter_);
     }
     /**
-     * <code>repeated .RogueDiaryAvatarDisableStatus disable_status_list = 9;</code>
+     * <code>repeated .RogueDiaryAvatarDisableStatus disable_status_list = 7;</code>
      * @return The count of disableStatusList.
      */
     @java.lang.Override
@@ -280,7 +243,7 @@ public final class RogueDiaryAvatarOuterClass {
       return disableStatusList_.size();
     }
     /**
-     * <code>repeated .RogueDiaryAvatarDisableStatus disable_status_list = 9;</code>
+     * <code>repeated .RogueDiaryAvatarDisableStatus disable_status_list = 7;</code>
      * @param index The index of the element to return.
      * @return The disableStatusList at the given index.
      */
@@ -289,7 +252,7 @@ public final class RogueDiaryAvatarOuterClass {
       return disableStatusList_converter_.convert(disableStatusList_.get(index));
     }
     /**
-     * <code>repeated .RogueDiaryAvatarDisableStatus disable_status_list = 9;</code>
+     * <code>repeated .RogueDiaryAvatarDisableStatus disable_status_list = 7;</code>
      * @return A list containing the enum numeric values on the wire for disableStatusList.
      */
     @java.lang.Override
@@ -298,7 +261,7 @@ public final class RogueDiaryAvatarOuterClass {
       return disableStatusList_;
     }
     /**
-     * <code>repeated .RogueDiaryAvatarDisableStatus disable_status_list = 9;</code>
+     * <code>repeated .RogueDiaryAvatarDisableStatus disable_status_list = 7;</code>
      * @param index The index of the value to return.
      * @return The enum numeric value on the wire of disableStatusList at the given index.
      */
@@ -307,6 +270,43 @@ public final class RogueDiaryAvatarOuterClass {
       return disableStatusList_.get(index);
     }
     private int disableStatusListMemoizedSerializedSize;
+
+    public static final int TIRED_ROUND_FIELD_NUMBER = 2;
+    private int tiredRound_;
+    /**
+     * <code>uint32 tired_round = 2;</code>
+     * @return The tiredRound.
+     */
+    @java.lang.Override
+    public int getTiredRound() {
+      return tiredRound_;
+    }
+
+    public static final int AVATAR_FIELD_NUMBER = 14;
+    private emu.grasscutter.net.proto.ActivityDungeonAvatarOuterClass.ActivityDungeonAvatar avatar_;
+    /**
+     * <code>.ActivityDungeonAvatar avatar = 14;</code>
+     * @return Whether the avatar field is set.
+     */
+    @java.lang.Override
+    public boolean hasAvatar() {
+      return avatar_ != null;
+    }
+    /**
+     * <code>.ActivityDungeonAvatar avatar = 14;</code>
+     * @return The avatar.
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.ActivityDungeonAvatarOuterClass.ActivityDungeonAvatar getAvatar() {
+      return avatar_ == null ? emu.grasscutter.net.proto.ActivityDungeonAvatarOuterClass.ActivityDungeonAvatar.getDefaultInstance() : avatar_;
+    }
+    /**
+     * <code>.ActivityDungeonAvatar avatar = 14;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.ActivityDungeonAvatarOuterClass.ActivityDungeonAvatarOrBuilder getAvatarOrBuilder() {
+      return getAvatar();
+    }
 
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
@@ -323,21 +323,21 @@ public final class RogueDiaryAvatarOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      if (avatar_ != null) {
-        output.writeMessage(2, getAvatar());
+      if (tiredRound_ != 0) {
+        output.writeUInt32(2, tiredRound_);
       }
       if (getDisableStatusListList().size() > 0) {
-        output.writeUInt32NoTag(74);
+        output.writeUInt32NoTag(58);
         output.writeUInt32NoTag(disableStatusListMemoizedSerializedSize);
       }
       for (int i = 0; i < disableStatusList_.size(); i++) {
         output.writeEnumNoTag(disableStatusList_.get(i));
       }
-      if (tiredRound_ != 0) {
-        output.writeUInt32(13, tiredRound_);
-      }
       if (level_ != 0) {
-        output.writeUInt32(14, level_);
+        output.writeUInt32(10, level_);
+      }
+      if (avatar_ != null) {
+        output.writeMessage(14, getAvatar());
       }
       unknownFields.writeTo(output);
     }
@@ -348,9 +348,9 @@ public final class RogueDiaryAvatarOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (avatar_ != null) {
+      if (tiredRound_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(2, getAvatar());
+          .computeUInt32Size(2, tiredRound_);
       }
       {
         int dataSize = 0;
@@ -364,13 +364,13 @@ public final class RogueDiaryAvatarOuterClass {
             .computeUInt32SizeNoTag(dataSize);
         }disableStatusListMemoizedSerializedSize = dataSize;
       }
-      if (tiredRound_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, tiredRound_);
-      }
       if (level_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, level_);
+          .computeUInt32Size(10, level_);
+      }
+      if (avatar_ != null) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(14, getAvatar());
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -387,16 +387,16 @@ public final class RogueDiaryAvatarOuterClass {
       }
       emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatar other = (emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatar) obj;
 
+      if (getLevel()
+          != other.getLevel()) return false;
+      if (!disableStatusList_.equals(other.disableStatusList_)) return false;
+      if (getTiredRound()
+          != other.getTiredRound()) return false;
       if (hasAvatar() != other.hasAvatar()) return false;
       if (hasAvatar()) {
         if (!getAvatar()
             .equals(other.getAvatar())) return false;
       }
-      if (getLevel()
-          != other.getLevel()) return false;
-      if (getTiredRound()
-          != other.getTiredRound()) return false;
-      if (!disableStatusList_.equals(other.disableStatusList_)) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -408,17 +408,17 @@ public final class RogueDiaryAvatarOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (hasAvatar()) {
-        hash = (37 * hash) + AVATAR_FIELD_NUMBER;
-        hash = (53 * hash) + getAvatar().hashCode();
-      }
       hash = (37 * hash) + LEVEL_FIELD_NUMBER;
       hash = (53 * hash) + getLevel();
-      hash = (37 * hash) + TIRED_ROUND_FIELD_NUMBER;
-      hash = (53 * hash) + getTiredRound();
       if (getDisableStatusListCount() > 0) {
         hash = (37 * hash) + DISABLE_STATUS_LIST_FIELD_NUMBER;
         hash = (53 * hash) + disableStatusList_.hashCode();
+      }
+      hash = (37 * hash) + TIRED_ROUND_FIELD_NUMBER;
+      hash = (53 * hash) + getTiredRound();
+      if (hasAvatar()) {
+        hash = (37 * hash) + AVATAR_FIELD_NUMBER;
+        hash = (53 * hash) + getAvatar().hashCode();
       }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
@@ -553,18 +553,18 @@ public final class RogueDiaryAvatarOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        level_ = 0;
+
+        disableStatusList_ = java.util.Collections.emptyList();
+        bitField0_ = (bitField0_ & ~0x00000001);
+        tiredRound_ = 0;
+
         if (avatarBuilder_ == null) {
           avatar_ = null;
         } else {
           avatar_ = null;
           avatarBuilder_ = null;
         }
-        level_ = 0;
-
-        tiredRound_ = 0;
-
-        disableStatusList_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x00000001);
         return this;
       }
 
@@ -592,18 +592,18 @@ public final class RogueDiaryAvatarOuterClass {
       public emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatar buildPartial() {
         emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatar result = new emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatar(this);
         int from_bitField0_ = bitField0_;
-        if (avatarBuilder_ == null) {
-          result.avatar_ = avatar_;
-        } else {
-          result.avatar_ = avatarBuilder_.build();
-        }
         result.level_ = level_;
-        result.tiredRound_ = tiredRound_;
         if (((bitField0_ & 0x00000001) != 0)) {
           disableStatusList_ = java.util.Collections.unmodifiableList(disableStatusList_);
           bitField0_ = (bitField0_ & ~0x00000001);
         }
         result.disableStatusList_ = disableStatusList_;
+        result.tiredRound_ = tiredRound_;
+        if (avatarBuilder_ == null) {
+          result.avatar_ = avatar_;
+        } else {
+          result.avatar_ = avatarBuilder_.build();
+        }
         onBuilt();
         return result;
       }
@@ -652,14 +652,8 @@ public final class RogueDiaryAvatarOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatar other) {
         if (other == emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatar.getDefaultInstance()) return this;
-        if (other.hasAvatar()) {
-          mergeAvatar(other.getAvatar());
-        }
         if (other.getLevel() != 0) {
           setLevel(other.getLevel());
-        }
-        if (other.getTiredRound() != 0) {
-          setTiredRound(other.getTiredRound());
         }
         if (!other.disableStatusList_.isEmpty()) {
           if (disableStatusList_.isEmpty()) {
@@ -670,6 +664,12 @@ public final class RogueDiaryAvatarOuterClass {
             disableStatusList_.addAll(other.disableStatusList_);
           }
           onChanged();
+        }
+        if (other.getTiredRound() != 0) {
+          setTiredRound(other.getTiredRound());
+        }
+        if (other.hasAvatar()) {
+          mergeAvatar(other.getAvatar());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -701,18 +701,220 @@ public final class RogueDiaryAvatarOuterClass {
       }
       private int bitField0_;
 
+      private int level_ ;
+      /**
+       * <code>uint32 level = 10;</code>
+       * @return The level.
+       */
+      @java.lang.Override
+      public int getLevel() {
+        return level_;
+      }
+      /**
+       * <code>uint32 level = 10;</code>
+       * @param value The level to set.
+       * @return This builder for chaining.
+       */
+      public Builder setLevel(int value) {
+        
+        level_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 level = 10;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearLevel() {
+        
+        level_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private java.util.List<java.lang.Integer> disableStatusList_ =
+        java.util.Collections.emptyList();
+      private void ensureDisableStatusListIsMutable() {
+        if (!((bitField0_ & 0x00000001) != 0)) {
+          disableStatusList_ = new java.util.ArrayList<java.lang.Integer>(disableStatusList_);
+          bitField0_ |= 0x00000001;
+        }
+      }
+      /**
+       * <code>repeated .RogueDiaryAvatarDisableStatus disable_status_list = 7;</code>
+       * @return A list containing the disableStatusList.
+       */
+      public java.util.List<emu.grasscutter.net.proto.RogueDiaryAvatarDisableStatusOuterClass.RogueDiaryAvatarDisableStatus> getDisableStatusListList() {
+        return new com.google.protobuf.Internal.ListAdapter<
+            java.lang.Integer, emu.grasscutter.net.proto.RogueDiaryAvatarDisableStatusOuterClass.RogueDiaryAvatarDisableStatus>(disableStatusList_, disableStatusList_converter_);
+      }
+      /**
+       * <code>repeated .RogueDiaryAvatarDisableStatus disable_status_list = 7;</code>
+       * @return The count of disableStatusList.
+       */
+      public int getDisableStatusListCount() {
+        return disableStatusList_.size();
+      }
+      /**
+       * <code>repeated .RogueDiaryAvatarDisableStatus disable_status_list = 7;</code>
+       * @param index The index of the element to return.
+       * @return The disableStatusList at the given index.
+       */
+      public emu.grasscutter.net.proto.RogueDiaryAvatarDisableStatusOuterClass.RogueDiaryAvatarDisableStatus getDisableStatusList(int index) {
+        return disableStatusList_converter_.convert(disableStatusList_.get(index));
+      }
+      /**
+       * <code>repeated .RogueDiaryAvatarDisableStatus disable_status_list = 7;</code>
+       * @param index The index to set the value at.
+       * @param value The disableStatusList to set.
+       * @return This builder for chaining.
+       */
+      public Builder setDisableStatusList(
+          int index, emu.grasscutter.net.proto.RogueDiaryAvatarDisableStatusOuterClass.RogueDiaryAvatarDisableStatus value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        ensureDisableStatusListIsMutable();
+        disableStatusList_.set(index, value.getNumber());
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated .RogueDiaryAvatarDisableStatus disable_status_list = 7;</code>
+       * @param value The disableStatusList to add.
+       * @return This builder for chaining.
+       */
+      public Builder addDisableStatusList(emu.grasscutter.net.proto.RogueDiaryAvatarDisableStatusOuterClass.RogueDiaryAvatarDisableStatus value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        ensureDisableStatusListIsMutable();
+        disableStatusList_.add(value.getNumber());
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated .RogueDiaryAvatarDisableStatus disable_status_list = 7;</code>
+       * @param values The disableStatusList to add.
+       * @return This builder for chaining.
+       */
+      public Builder addAllDisableStatusList(
+          java.lang.Iterable<? extends emu.grasscutter.net.proto.RogueDiaryAvatarDisableStatusOuterClass.RogueDiaryAvatarDisableStatus> values) {
+        ensureDisableStatusListIsMutable();
+        for (emu.grasscutter.net.proto.RogueDiaryAvatarDisableStatusOuterClass.RogueDiaryAvatarDisableStatus value : values) {
+          disableStatusList_.add(value.getNumber());
+        }
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated .RogueDiaryAvatarDisableStatus disable_status_list = 7;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearDisableStatusList() {
+        disableStatusList_ = java.util.Collections.emptyList();
+        bitField0_ = (bitField0_ & ~0x00000001);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated .RogueDiaryAvatarDisableStatus disable_status_list = 7;</code>
+       * @return A list containing the enum numeric values on the wire for disableStatusList.
+       */
+      public java.util.List<java.lang.Integer>
+      getDisableStatusListValueList() {
+        return java.util.Collections.unmodifiableList(disableStatusList_);
+      }
+      /**
+       * <code>repeated .RogueDiaryAvatarDisableStatus disable_status_list = 7;</code>
+       * @param index The index of the value to return.
+       * @return The enum numeric value on the wire of disableStatusList at the given index.
+       */
+      public int getDisableStatusListValue(int index) {
+        return disableStatusList_.get(index);
+      }
+      /**
+       * <code>repeated .RogueDiaryAvatarDisableStatus disable_status_list = 7;</code>
+       * @param index The index of the value to return.
+       * @return The enum numeric value on the wire of disableStatusList at the given index.
+       * @return This builder for chaining.
+       */
+      public Builder setDisableStatusListValue(
+          int index, int value) {
+        ensureDisableStatusListIsMutable();
+        disableStatusList_.set(index, value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated .RogueDiaryAvatarDisableStatus disable_status_list = 7;</code>
+       * @param value The enum numeric value on the wire for disableStatusList to add.
+       * @return This builder for chaining.
+       */
+      public Builder addDisableStatusListValue(int value) {
+        ensureDisableStatusListIsMutable();
+        disableStatusList_.add(value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated .RogueDiaryAvatarDisableStatus disable_status_list = 7;</code>
+       * @param values The enum numeric values on the wire for disableStatusList to add.
+       * @return This builder for chaining.
+       */
+      public Builder addAllDisableStatusListValue(
+          java.lang.Iterable<java.lang.Integer> values) {
+        ensureDisableStatusListIsMutable();
+        for (int value : values) {
+          disableStatusList_.add(value);
+        }
+        onChanged();
+        return this;
+      }
+
+      private int tiredRound_ ;
+      /**
+       * <code>uint32 tired_round = 2;</code>
+       * @return The tiredRound.
+       */
+      @java.lang.Override
+      public int getTiredRound() {
+        return tiredRound_;
+      }
+      /**
+       * <code>uint32 tired_round = 2;</code>
+       * @param value The tiredRound to set.
+       * @return This builder for chaining.
+       */
+      public Builder setTiredRound(int value) {
+        
+        tiredRound_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 tired_round = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearTiredRound() {
+        
+        tiredRound_ = 0;
+        onChanged();
+        return this;
+      }
+
       private emu.grasscutter.net.proto.ActivityDungeonAvatarOuterClass.ActivityDungeonAvatar avatar_;
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.ActivityDungeonAvatarOuterClass.ActivityDungeonAvatar, emu.grasscutter.net.proto.ActivityDungeonAvatarOuterClass.ActivityDungeonAvatar.Builder, emu.grasscutter.net.proto.ActivityDungeonAvatarOuterClass.ActivityDungeonAvatarOrBuilder> avatarBuilder_;
       /**
-       * <code>.ActivityDungeonAvatar avatar = 2;</code>
+       * <code>.ActivityDungeonAvatar avatar = 14;</code>
        * @return Whether the avatar field is set.
        */
       public boolean hasAvatar() {
         return avatarBuilder_ != null || avatar_ != null;
       }
       /**
-       * <code>.ActivityDungeonAvatar avatar = 2;</code>
+       * <code>.ActivityDungeonAvatar avatar = 14;</code>
        * @return The avatar.
        */
       public emu.grasscutter.net.proto.ActivityDungeonAvatarOuterClass.ActivityDungeonAvatar getAvatar() {
@@ -723,7 +925,7 @@ public final class RogueDiaryAvatarOuterClass {
         }
       }
       /**
-       * <code>.ActivityDungeonAvatar avatar = 2;</code>
+       * <code>.ActivityDungeonAvatar avatar = 14;</code>
        */
       public Builder setAvatar(emu.grasscutter.net.proto.ActivityDungeonAvatarOuterClass.ActivityDungeonAvatar value) {
         if (avatarBuilder_ == null) {
@@ -739,7 +941,7 @@ public final class RogueDiaryAvatarOuterClass {
         return this;
       }
       /**
-       * <code>.ActivityDungeonAvatar avatar = 2;</code>
+       * <code>.ActivityDungeonAvatar avatar = 14;</code>
        */
       public Builder setAvatar(
           emu.grasscutter.net.proto.ActivityDungeonAvatarOuterClass.ActivityDungeonAvatar.Builder builderForValue) {
@@ -753,7 +955,7 @@ public final class RogueDiaryAvatarOuterClass {
         return this;
       }
       /**
-       * <code>.ActivityDungeonAvatar avatar = 2;</code>
+       * <code>.ActivityDungeonAvatar avatar = 14;</code>
        */
       public Builder mergeAvatar(emu.grasscutter.net.proto.ActivityDungeonAvatarOuterClass.ActivityDungeonAvatar value) {
         if (avatarBuilder_ == null) {
@@ -771,7 +973,7 @@ public final class RogueDiaryAvatarOuterClass {
         return this;
       }
       /**
-       * <code>.ActivityDungeonAvatar avatar = 2;</code>
+       * <code>.ActivityDungeonAvatar avatar = 14;</code>
        */
       public Builder clearAvatar() {
         if (avatarBuilder_ == null) {
@@ -785,7 +987,7 @@ public final class RogueDiaryAvatarOuterClass {
         return this;
       }
       /**
-       * <code>.ActivityDungeonAvatar avatar = 2;</code>
+       * <code>.ActivityDungeonAvatar avatar = 14;</code>
        */
       public emu.grasscutter.net.proto.ActivityDungeonAvatarOuterClass.ActivityDungeonAvatar.Builder getAvatarBuilder() {
         
@@ -793,7 +995,7 @@ public final class RogueDiaryAvatarOuterClass {
         return getAvatarFieldBuilder().getBuilder();
       }
       /**
-       * <code>.ActivityDungeonAvatar avatar = 2;</code>
+       * <code>.ActivityDungeonAvatar avatar = 14;</code>
        */
       public emu.grasscutter.net.proto.ActivityDungeonAvatarOuterClass.ActivityDungeonAvatarOrBuilder getAvatarOrBuilder() {
         if (avatarBuilder_ != null) {
@@ -804,7 +1006,7 @@ public final class RogueDiaryAvatarOuterClass {
         }
       }
       /**
-       * <code>.ActivityDungeonAvatar avatar = 2;</code>
+       * <code>.ActivityDungeonAvatar avatar = 14;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.ActivityDungeonAvatarOuterClass.ActivityDungeonAvatar, emu.grasscutter.net.proto.ActivityDungeonAvatarOuterClass.ActivityDungeonAvatar.Builder, emu.grasscutter.net.proto.ActivityDungeonAvatarOuterClass.ActivityDungeonAvatarOrBuilder> 
@@ -818,208 +1020,6 @@ public final class RogueDiaryAvatarOuterClass {
           avatar_ = null;
         }
         return avatarBuilder_;
-      }
-
-      private int level_ ;
-      /**
-       * <code>uint32 level = 14;</code>
-       * @return The level.
-       */
-      @java.lang.Override
-      public int getLevel() {
-        return level_;
-      }
-      /**
-       * <code>uint32 level = 14;</code>
-       * @param value The level to set.
-       * @return This builder for chaining.
-       */
-      public Builder setLevel(int value) {
-        
-        level_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 level = 14;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearLevel() {
-        
-        level_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int tiredRound_ ;
-      /**
-       * <code>uint32 tired_round = 13;</code>
-       * @return The tiredRound.
-       */
-      @java.lang.Override
-      public int getTiredRound() {
-        return tiredRound_;
-      }
-      /**
-       * <code>uint32 tired_round = 13;</code>
-       * @param value The tiredRound to set.
-       * @return This builder for chaining.
-       */
-      public Builder setTiredRound(int value) {
-        
-        tiredRound_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 tired_round = 13;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearTiredRound() {
-        
-        tiredRound_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private java.util.List<java.lang.Integer> disableStatusList_ =
-        java.util.Collections.emptyList();
-      private void ensureDisableStatusListIsMutable() {
-        if (!((bitField0_ & 0x00000001) != 0)) {
-          disableStatusList_ = new java.util.ArrayList<java.lang.Integer>(disableStatusList_);
-          bitField0_ |= 0x00000001;
-        }
-      }
-      /**
-       * <code>repeated .RogueDiaryAvatarDisableStatus disable_status_list = 9;</code>
-       * @return A list containing the disableStatusList.
-       */
-      public java.util.List<emu.grasscutter.net.proto.RogueDiaryAvatarDisableStatusOuterClass.RogueDiaryAvatarDisableStatus> getDisableStatusListList() {
-        return new com.google.protobuf.Internal.ListAdapter<
-            java.lang.Integer, emu.grasscutter.net.proto.RogueDiaryAvatarDisableStatusOuterClass.RogueDiaryAvatarDisableStatus>(disableStatusList_, disableStatusList_converter_);
-      }
-      /**
-       * <code>repeated .RogueDiaryAvatarDisableStatus disable_status_list = 9;</code>
-       * @return The count of disableStatusList.
-       */
-      public int getDisableStatusListCount() {
-        return disableStatusList_.size();
-      }
-      /**
-       * <code>repeated .RogueDiaryAvatarDisableStatus disable_status_list = 9;</code>
-       * @param index The index of the element to return.
-       * @return The disableStatusList at the given index.
-       */
-      public emu.grasscutter.net.proto.RogueDiaryAvatarDisableStatusOuterClass.RogueDiaryAvatarDisableStatus getDisableStatusList(int index) {
-        return disableStatusList_converter_.convert(disableStatusList_.get(index));
-      }
-      /**
-       * <code>repeated .RogueDiaryAvatarDisableStatus disable_status_list = 9;</code>
-       * @param index The index to set the value at.
-       * @param value The disableStatusList to set.
-       * @return This builder for chaining.
-       */
-      public Builder setDisableStatusList(
-          int index, emu.grasscutter.net.proto.RogueDiaryAvatarDisableStatusOuterClass.RogueDiaryAvatarDisableStatus value) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        ensureDisableStatusListIsMutable();
-        disableStatusList_.set(index, value.getNumber());
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated .RogueDiaryAvatarDisableStatus disable_status_list = 9;</code>
-       * @param value The disableStatusList to add.
-       * @return This builder for chaining.
-       */
-      public Builder addDisableStatusList(emu.grasscutter.net.proto.RogueDiaryAvatarDisableStatusOuterClass.RogueDiaryAvatarDisableStatus value) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        ensureDisableStatusListIsMutable();
-        disableStatusList_.add(value.getNumber());
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated .RogueDiaryAvatarDisableStatus disable_status_list = 9;</code>
-       * @param values The disableStatusList to add.
-       * @return This builder for chaining.
-       */
-      public Builder addAllDisableStatusList(
-          java.lang.Iterable<? extends emu.grasscutter.net.proto.RogueDiaryAvatarDisableStatusOuterClass.RogueDiaryAvatarDisableStatus> values) {
-        ensureDisableStatusListIsMutable();
-        for (emu.grasscutter.net.proto.RogueDiaryAvatarDisableStatusOuterClass.RogueDiaryAvatarDisableStatus value : values) {
-          disableStatusList_.add(value.getNumber());
-        }
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated .RogueDiaryAvatarDisableStatus disable_status_list = 9;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearDisableStatusList() {
-        disableStatusList_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x00000001);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated .RogueDiaryAvatarDisableStatus disable_status_list = 9;</code>
-       * @return A list containing the enum numeric values on the wire for disableStatusList.
-       */
-      public java.util.List<java.lang.Integer>
-      getDisableStatusListValueList() {
-        return java.util.Collections.unmodifiableList(disableStatusList_);
-      }
-      /**
-       * <code>repeated .RogueDiaryAvatarDisableStatus disable_status_list = 9;</code>
-       * @param index The index of the value to return.
-       * @return The enum numeric value on the wire of disableStatusList at the given index.
-       */
-      public int getDisableStatusListValue(int index) {
-        return disableStatusList_.get(index);
-      }
-      /**
-       * <code>repeated .RogueDiaryAvatarDisableStatus disable_status_list = 9;</code>
-       * @param index The index of the value to return.
-       * @return The enum numeric value on the wire of disableStatusList at the given index.
-       * @return This builder for chaining.
-       */
-      public Builder setDisableStatusListValue(
-          int index, int value) {
-        ensureDisableStatusListIsMutable();
-        disableStatusList_.set(index, value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated .RogueDiaryAvatarDisableStatus disable_status_list = 9;</code>
-       * @param value The enum numeric value on the wire for disableStatusList to add.
-       * @return This builder for chaining.
-       */
-      public Builder addDisableStatusListValue(int value) {
-        ensureDisableStatusListIsMutable();
-        disableStatusList_.add(value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated .RogueDiaryAvatarDisableStatus disable_status_list = 9;</code>
-       * @param values The enum numeric values on the wire for disableStatusList to add.
-       * @return This builder for chaining.
-       */
-      public Builder addAllDisableStatusListValue(
-          java.lang.Iterable<java.lang.Integer> values) {
-        ensureDisableStatusListIsMutable();
-        for (int value : values) {
-          disableStatusList_.add(value);
-        }
-        onChanged();
-        return this;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -1090,11 +1090,11 @@ public final class RogueDiaryAvatarOuterClass {
     java.lang.String[] descriptorData = {
       "\n\026RogueDiaryAvatar.proto\032\033ActivityDungeo" +
       "nAvatar.proto\032#RogueDiaryAvatarDisableSt" +
-      "atus.proto\"\233\001\n\020RogueDiaryAvatar\022&\n\006avata" +
-      "r\030\002 \001(\0132\026.ActivityDungeonAvatar\022\r\n\005level" +
-      "\030\016 \001(\r\022\023\n\013tired_round\030\r \001(\r\022;\n\023disable_s" +
-      "tatus_list\030\t \003(\0162\036.RogueDiaryAvatarDisab" +
-      "leStatusB\033\n\031emu.grasscutter.net.protob\006p" +
+      "atus.proto\"\233\001\n\020RogueDiaryAvatar\022\r\n\005level" +
+      "\030\n \001(\r\022;\n\023disable_status_list\030\007 \003(\0162\036.Ro" +
+      "gueDiaryAvatarDisableStatus\022\023\n\013tired_rou" +
+      "nd\030\002 \001(\r\022&\n\006avatar\030\016 \001(\0132\026.ActivityDunge" +
+      "onAvatarB\033\n\031emu.grasscutter.net.protob\006p" +
       "roto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -1108,7 +1108,7 @@ public final class RogueDiaryAvatarOuterClass {
     internal_static_RogueDiaryAvatar_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_RogueDiaryAvatar_descriptor,
-        new java.lang.String[] { "Avatar", "Level", "TiredRound", "DisableStatusList", });
+        new java.lang.String[] { "Level", "DisableStatusList", "TiredRound", "Avatar", });
     emu.grasscutter.net.proto.ActivityDungeonAvatarOuterClass.getDescriptor();
     emu.grasscutter.net.proto.RogueDiaryAvatarDisableStatusOuterClass.getDescriptor();
   }

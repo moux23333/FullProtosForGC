@@ -19,7 +19,7 @@ public final class HomeLimitedShopGoodsListRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 6;</code>
+     * <code>int32 retcode = 1;</code>
      * @return The retcode.
      */
     int getRetcode();
@@ -41,9 +41,13 @@ public final class HomeLimitedShopGoodsListRspOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 4546
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 4492;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code HomeLimitedShopGoodsListRsp}
@@ -90,7 +94,7 @@ public final class HomeLimitedShopGoodsListRspOuterClass {
             case 0:
               done = true;
               break;
-            case 48: {
+            case 8: {
 
               retcode_ = input.readInt32();
               break;
@@ -140,10 +144,10 @@ public final class HomeLimitedShopGoodsListRspOuterClass {
               emu.grasscutter.net.proto.HomeLimitedShopGoodsListRspOuterClass.HomeLimitedShopGoodsListRsp.class, emu.grasscutter.net.proto.HomeLimitedShopGoodsListRspOuterClass.HomeLimitedShopGoodsListRsp.Builder.class);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 6;
+    public static final int RETCODE_FIELD_NUMBER = 1;
     private int retcode_;
     /**
-     * <code>int32 retcode = 6;</code>
+     * <code>int32 retcode = 1;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -192,7 +196,7 @@ public final class HomeLimitedShopGoodsListRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (retcode_ != 0) {
-        output.writeInt32(6, retcode_);
+        output.writeInt32(1, retcode_);
       }
       if (shop_ != null) {
         output.writeMessage(12, getShop());
@@ -208,7 +212,7 @@ public final class HomeLimitedShopGoodsListRspOuterClass {
       size = 0;
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(6, retcode_);
+          .computeInt32Size(1, retcode_);
       }
       if (shop_ != null) {
         size += com.google.protobuf.CodedOutputStream
@@ -350,9 +354,13 @@ public final class HomeLimitedShopGoodsListRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 4546
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 4492;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code HomeLimitedShopGoodsListRsp}
@@ -517,7 +525,7 @@ public final class HomeLimitedShopGoodsListRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 6;</code>
+       * <code>int32 retcode = 1;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -525,7 +533,7 @@ public final class HomeLimitedShopGoodsListRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 6;</code>
+       * <code>int32 retcode = 1;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -536,7 +544,7 @@ public final class HomeLimitedShopGoodsListRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 6;</code>
+       * <code>int32 retcode = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -733,7 +741,7 @@ public final class HomeLimitedShopGoodsListRspOuterClass {
     java.lang.String[] descriptorData = {
       "\n!HomeLimitedShopGoodsListRsp.proto\032\025Hom" +
       "eLimitedShop.proto\"N\n\033HomeLimitedShopGoo" +
-      "dsListRsp\022\017\n\007retcode\030\006 \001(\005\022\036\n\004shop\030\014 \001(\013" +
+      "dsListRsp\022\017\n\007retcode\030\001 \001(\005\022\036\n\004shop\030\014 \001(\013" +
       "2\020.HomeLimitedShopB\033\n\031emu.grasscutter.ne" +
       "t.protob\006proto3"
     };

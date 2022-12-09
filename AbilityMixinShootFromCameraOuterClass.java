@@ -19,34 +19,34 @@ public final class AbilityMixinShootFromCameraOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.Vector init_pos = 13;</code>
-     * @return Whether the initPos field is set.
-     */
-    boolean hasInitPos();
-    /**
-     * <code>.Vector init_pos = 13;</code>
-     * @return The initPos.
-     */
-    emu.grasscutter.net.proto.VectorOuterClass.Vector getInitPos();
-    /**
-     * <code>.Vector init_pos = 13;</code>
-     */
-    emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getInitPosOrBuilder();
-
-    /**
-     * <code>.Vector forward = 2;</code>
+     * <code>.Vector forward = 13;</code>
      * @return Whether the forward field is set.
      */
     boolean hasForward();
     /**
-     * <code>.Vector forward = 2;</code>
+     * <code>.Vector forward = 13;</code>
      * @return The forward.
      */
     emu.grasscutter.net.proto.VectorOuterClass.Vector getForward();
     /**
-     * <code>.Vector forward = 2;</code>
+     * <code>.Vector forward = 13;</code>
      */
     emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getForwardOrBuilder();
+
+    /**
+     * <code>.Vector init_pos = 9;</code>
+     * @return Whether the initPos field is set.
+     */
+    boolean hasInitPos();
+    /**
+     * <code>.Vector init_pos = 9;</code>
+     * @return The initPos.
+     */
+    emu.grasscutter.net.proto.VectorOuterClass.Vector getInitPos();
+    /**
+     * <code>.Vector init_pos = 9;</code>
+     */
+    emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getInitPosOrBuilder();
   }
   /**
    * Protobuf type {@code AbilityMixinShootFromCamera}
@@ -93,20 +93,7 @@ public final class AbilityMixinShootFromCameraOuterClass {
             case 0:
               done = true;
               break;
-            case 18: {
-              emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder subBuilder = null;
-              if (forward_ != null) {
-                subBuilder = forward_.toBuilder();
-              }
-              forward_ = input.readMessage(emu.grasscutter.net.proto.VectorOuterClass.Vector.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom(forward_);
-                forward_ = subBuilder.buildPartial();
-              }
-
-              break;
-            }
-            case 106: {
+            case 74: {
               emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder subBuilder = null;
               if (initPos_ != null) {
                 subBuilder = initPos_.toBuilder();
@@ -115,6 +102,19 @@ public final class AbilityMixinShootFromCameraOuterClass {
               if (subBuilder != null) {
                 subBuilder.mergeFrom(initPos_);
                 initPos_ = subBuilder.buildPartial();
+              }
+
+              break;
+            }
+            case 106: {
+              emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder subBuilder = null;
+              if (forward_ != null) {
+                subBuilder = forward_.toBuilder();
+              }
+              forward_ = input.readMessage(emu.grasscutter.net.proto.VectorOuterClass.Vector.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(forward_);
+                forward_ = subBuilder.buildPartial();
               }
 
               break;
@@ -151,36 +151,10 @@ public final class AbilityMixinShootFromCameraOuterClass {
               emu.grasscutter.net.proto.AbilityMixinShootFromCameraOuterClass.AbilityMixinShootFromCamera.class, emu.grasscutter.net.proto.AbilityMixinShootFromCameraOuterClass.AbilityMixinShootFromCamera.Builder.class);
     }
 
-    public static final int INIT_POS_FIELD_NUMBER = 13;
-    private emu.grasscutter.net.proto.VectorOuterClass.Vector initPos_;
-    /**
-     * <code>.Vector init_pos = 13;</code>
-     * @return Whether the initPos field is set.
-     */
-    @java.lang.Override
-    public boolean hasInitPos() {
-      return initPos_ != null;
-    }
-    /**
-     * <code>.Vector init_pos = 13;</code>
-     * @return The initPos.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.VectorOuterClass.Vector getInitPos() {
-      return initPos_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : initPos_;
-    }
-    /**
-     * <code>.Vector init_pos = 13;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getInitPosOrBuilder() {
-      return getInitPos();
-    }
-
-    public static final int FORWARD_FIELD_NUMBER = 2;
+    public static final int FORWARD_FIELD_NUMBER = 13;
     private emu.grasscutter.net.proto.VectorOuterClass.Vector forward_;
     /**
-     * <code>.Vector forward = 2;</code>
+     * <code>.Vector forward = 13;</code>
      * @return Whether the forward field is set.
      */
     @java.lang.Override
@@ -188,7 +162,7 @@ public final class AbilityMixinShootFromCameraOuterClass {
       return forward_ != null;
     }
     /**
-     * <code>.Vector forward = 2;</code>
+     * <code>.Vector forward = 13;</code>
      * @return The forward.
      */
     @java.lang.Override
@@ -196,11 +170,37 @@ public final class AbilityMixinShootFromCameraOuterClass {
       return forward_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : forward_;
     }
     /**
-     * <code>.Vector forward = 2;</code>
+     * <code>.Vector forward = 13;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getForwardOrBuilder() {
       return getForward();
+    }
+
+    public static final int INIT_POS_FIELD_NUMBER = 9;
+    private emu.grasscutter.net.proto.VectorOuterClass.Vector initPos_;
+    /**
+     * <code>.Vector init_pos = 9;</code>
+     * @return Whether the initPos field is set.
+     */
+    @java.lang.Override
+    public boolean hasInitPos() {
+      return initPos_ != null;
+    }
+    /**
+     * <code>.Vector init_pos = 9;</code>
+     * @return The initPos.
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.VectorOuterClass.Vector getInitPos() {
+      return initPos_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : initPos_;
+    }
+    /**
+     * <code>.Vector init_pos = 9;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getInitPosOrBuilder() {
+      return getInitPos();
     }
 
     private byte memoizedIsInitialized = -1;
@@ -217,11 +217,11 @@ public final class AbilityMixinShootFromCameraOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (forward_ != null) {
-        output.writeMessage(2, getForward());
-      }
       if (initPos_ != null) {
-        output.writeMessage(13, getInitPos());
+        output.writeMessage(9, getInitPos());
+      }
+      if (forward_ != null) {
+        output.writeMessage(13, getForward());
       }
       unknownFields.writeTo(output);
     }
@@ -232,13 +232,13 @@ public final class AbilityMixinShootFromCameraOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (forward_ != null) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(2, getForward());
-      }
       if (initPos_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(13, getInitPos());
+          .computeMessageSize(9, getInitPos());
+      }
+      if (forward_ != null) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(13, getForward());
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -255,15 +255,15 @@ public final class AbilityMixinShootFromCameraOuterClass {
       }
       emu.grasscutter.net.proto.AbilityMixinShootFromCameraOuterClass.AbilityMixinShootFromCamera other = (emu.grasscutter.net.proto.AbilityMixinShootFromCameraOuterClass.AbilityMixinShootFromCamera) obj;
 
-      if (hasInitPos() != other.hasInitPos()) return false;
-      if (hasInitPos()) {
-        if (!getInitPos()
-            .equals(other.getInitPos())) return false;
-      }
       if (hasForward() != other.hasForward()) return false;
       if (hasForward()) {
         if (!getForward()
             .equals(other.getForward())) return false;
+      }
+      if (hasInitPos() != other.hasInitPos()) return false;
+      if (hasInitPos()) {
+        if (!getInitPos()
+            .equals(other.getInitPos())) return false;
       }
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
@@ -276,13 +276,13 @@ public final class AbilityMixinShootFromCameraOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (hasInitPos()) {
-        hash = (37 * hash) + INIT_POS_FIELD_NUMBER;
-        hash = (53 * hash) + getInitPos().hashCode();
-      }
       if (hasForward()) {
         hash = (37 * hash) + FORWARD_FIELD_NUMBER;
         hash = (53 * hash) + getForward().hashCode();
+      }
+      if (hasInitPos()) {
+        hash = (37 * hash) + INIT_POS_FIELD_NUMBER;
+        hash = (53 * hash) + getInitPos().hashCode();
       }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
@@ -417,17 +417,17 @@ public final class AbilityMixinShootFromCameraOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        if (initPosBuilder_ == null) {
-          initPos_ = null;
-        } else {
-          initPos_ = null;
-          initPosBuilder_ = null;
-        }
         if (forwardBuilder_ == null) {
           forward_ = null;
         } else {
           forward_ = null;
           forwardBuilder_ = null;
+        }
+        if (initPosBuilder_ == null) {
+          initPos_ = null;
+        } else {
+          initPos_ = null;
+          initPosBuilder_ = null;
         }
         return this;
       }
@@ -455,15 +455,15 @@ public final class AbilityMixinShootFromCameraOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.AbilityMixinShootFromCameraOuterClass.AbilityMixinShootFromCamera buildPartial() {
         emu.grasscutter.net.proto.AbilityMixinShootFromCameraOuterClass.AbilityMixinShootFromCamera result = new emu.grasscutter.net.proto.AbilityMixinShootFromCameraOuterClass.AbilityMixinShootFromCamera(this);
-        if (initPosBuilder_ == null) {
-          result.initPos_ = initPos_;
-        } else {
-          result.initPos_ = initPosBuilder_.build();
-        }
         if (forwardBuilder_ == null) {
           result.forward_ = forward_;
         } else {
           result.forward_ = forwardBuilder_.build();
+        }
+        if (initPosBuilder_ == null) {
+          result.initPos_ = initPos_;
+        } else {
+          result.initPos_ = initPosBuilder_.build();
         }
         onBuilt();
         return result;
@@ -513,11 +513,11 @@ public final class AbilityMixinShootFromCameraOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.AbilityMixinShootFromCameraOuterClass.AbilityMixinShootFromCamera other) {
         if (other == emu.grasscutter.net.proto.AbilityMixinShootFromCameraOuterClass.AbilityMixinShootFromCamera.getDefaultInstance()) return this;
-        if (other.hasInitPos()) {
-          mergeInitPos(other.getInitPos());
-        }
         if (other.hasForward()) {
           mergeForward(other.getForward());
+        }
+        if (other.hasInitPos()) {
+          mergeInitPos(other.getInitPos());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -548,137 +548,18 @@ public final class AbilityMixinShootFromCameraOuterClass {
         return this;
       }
 
-      private emu.grasscutter.net.proto.VectorOuterClass.Vector initPos_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> initPosBuilder_;
-      /**
-       * <code>.Vector init_pos = 13;</code>
-       * @return Whether the initPos field is set.
-       */
-      public boolean hasInitPos() {
-        return initPosBuilder_ != null || initPos_ != null;
-      }
-      /**
-       * <code>.Vector init_pos = 13;</code>
-       * @return The initPos.
-       */
-      public emu.grasscutter.net.proto.VectorOuterClass.Vector getInitPos() {
-        if (initPosBuilder_ == null) {
-          return initPos_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : initPos_;
-        } else {
-          return initPosBuilder_.getMessage();
-        }
-      }
-      /**
-       * <code>.Vector init_pos = 13;</code>
-       */
-      public Builder setInitPos(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
-        if (initPosBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          initPos_ = value;
-          onChanged();
-        } else {
-          initPosBuilder_.setMessage(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.Vector init_pos = 13;</code>
-       */
-      public Builder setInitPos(
-          emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder builderForValue) {
-        if (initPosBuilder_ == null) {
-          initPos_ = builderForValue.build();
-          onChanged();
-        } else {
-          initPosBuilder_.setMessage(builderForValue.build());
-        }
-
-        return this;
-      }
-      /**
-       * <code>.Vector init_pos = 13;</code>
-       */
-      public Builder mergeInitPos(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
-        if (initPosBuilder_ == null) {
-          if (initPos_ != null) {
-            initPos_ =
-              emu.grasscutter.net.proto.VectorOuterClass.Vector.newBuilder(initPos_).mergeFrom(value).buildPartial();
-          } else {
-            initPos_ = value;
-          }
-          onChanged();
-        } else {
-          initPosBuilder_.mergeFrom(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.Vector init_pos = 13;</code>
-       */
-      public Builder clearInitPos() {
-        if (initPosBuilder_ == null) {
-          initPos_ = null;
-          onChanged();
-        } else {
-          initPos_ = null;
-          initPosBuilder_ = null;
-        }
-
-        return this;
-      }
-      /**
-       * <code>.Vector init_pos = 13;</code>
-       */
-      public emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder getInitPosBuilder() {
-        
-        onChanged();
-        return getInitPosFieldBuilder().getBuilder();
-      }
-      /**
-       * <code>.Vector init_pos = 13;</code>
-       */
-      public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getInitPosOrBuilder() {
-        if (initPosBuilder_ != null) {
-          return initPosBuilder_.getMessageOrBuilder();
-        } else {
-          return initPos_ == null ?
-              emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : initPos_;
-        }
-      }
-      /**
-       * <code>.Vector init_pos = 13;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> 
-          getInitPosFieldBuilder() {
-        if (initPosBuilder_ == null) {
-          initPosBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder>(
-                  getInitPos(),
-                  getParentForChildren(),
-                  isClean());
-          initPos_ = null;
-        }
-        return initPosBuilder_;
-      }
-
       private emu.grasscutter.net.proto.VectorOuterClass.Vector forward_;
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> forwardBuilder_;
       /**
-       * <code>.Vector forward = 2;</code>
+       * <code>.Vector forward = 13;</code>
        * @return Whether the forward field is set.
        */
       public boolean hasForward() {
         return forwardBuilder_ != null || forward_ != null;
       }
       /**
-       * <code>.Vector forward = 2;</code>
+       * <code>.Vector forward = 13;</code>
        * @return The forward.
        */
       public emu.grasscutter.net.proto.VectorOuterClass.Vector getForward() {
@@ -689,7 +570,7 @@ public final class AbilityMixinShootFromCameraOuterClass {
         }
       }
       /**
-       * <code>.Vector forward = 2;</code>
+       * <code>.Vector forward = 13;</code>
        */
       public Builder setForward(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
         if (forwardBuilder_ == null) {
@@ -705,7 +586,7 @@ public final class AbilityMixinShootFromCameraOuterClass {
         return this;
       }
       /**
-       * <code>.Vector forward = 2;</code>
+       * <code>.Vector forward = 13;</code>
        */
       public Builder setForward(
           emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder builderForValue) {
@@ -719,7 +600,7 @@ public final class AbilityMixinShootFromCameraOuterClass {
         return this;
       }
       /**
-       * <code>.Vector forward = 2;</code>
+       * <code>.Vector forward = 13;</code>
        */
       public Builder mergeForward(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
         if (forwardBuilder_ == null) {
@@ -737,7 +618,7 @@ public final class AbilityMixinShootFromCameraOuterClass {
         return this;
       }
       /**
-       * <code>.Vector forward = 2;</code>
+       * <code>.Vector forward = 13;</code>
        */
       public Builder clearForward() {
         if (forwardBuilder_ == null) {
@@ -751,7 +632,7 @@ public final class AbilityMixinShootFromCameraOuterClass {
         return this;
       }
       /**
-       * <code>.Vector forward = 2;</code>
+       * <code>.Vector forward = 13;</code>
        */
       public emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder getForwardBuilder() {
         
@@ -759,7 +640,7 @@ public final class AbilityMixinShootFromCameraOuterClass {
         return getForwardFieldBuilder().getBuilder();
       }
       /**
-       * <code>.Vector forward = 2;</code>
+       * <code>.Vector forward = 13;</code>
        */
       public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getForwardOrBuilder() {
         if (forwardBuilder_ != null) {
@@ -770,7 +651,7 @@ public final class AbilityMixinShootFromCameraOuterClass {
         }
       }
       /**
-       * <code>.Vector forward = 2;</code>
+       * <code>.Vector forward = 13;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> 
@@ -784,6 +665,125 @@ public final class AbilityMixinShootFromCameraOuterClass {
           forward_ = null;
         }
         return forwardBuilder_;
+      }
+
+      private emu.grasscutter.net.proto.VectorOuterClass.Vector initPos_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> initPosBuilder_;
+      /**
+       * <code>.Vector init_pos = 9;</code>
+       * @return Whether the initPos field is set.
+       */
+      public boolean hasInitPos() {
+        return initPosBuilder_ != null || initPos_ != null;
+      }
+      /**
+       * <code>.Vector init_pos = 9;</code>
+       * @return The initPos.
+       */
+      public emu.grasscutter.net.proto.VectorOuterClass.Vector getInitPos() {
+        if (initPosBuilder_ == null) {
+          return initPos_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : initPos_;
+        } else {
+          return initPosBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>.Vector init_pos = 9;</code>
+       */
+      public Builder setInitPos(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
+        if (initPosBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          initPos_ = value;
+          onChanged();
+        } else {
+          initPosBuilder_.setMessage(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.Vector init_pos = 9;</code>
+       */
+      public Builder setInitPos(
+          emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder builderForValue) {
+        if (initPosBuilder_ == null) {
+          initPos_ = builderForValue.build();
+          onChanged();
+        } else {
+          initPosBuilder_.setMessage(builderForValue.build());
+        }
+
+        return this;
+      }
+      /**
+       * <code>.Vector init_pos = 9;</code>
+       */
+      public Builder mergeInitPos(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
+        if (initPosBuilder_ == null) {
+          if (initPos_ != null) {
+            initPos_ =
+              emu.grasscutter.net.proto.VectorOuterClass.Vector.newBuilder(initPos_).mergeFrom(value).buildPartial();
+          } else {
+            initPos_ = value;
+          }
+          onChanged();
+        } else {
+          initPosBuilder_.mergeFrom(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.Vector init_pos = 9;</code>
+       */
+      public Builder clearInitPos() {
+        if (initPosBuilder_ == null) {
+          initPos_ = null;
+          onChanged();
+        } else {
+          initPos_ = null;
+          initPosBuilder_ = null;
+        }
+
+        return this;
+      }
+      /**
+       * <code>.Vector init_pos = 9;</code>
+       */
+      public emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder getInitPosBuilder() {
+        
+        onChanged();
+        return getInitPosFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.Vector init_pos = 9;</code>
+       */
+      public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getInitPosOrBuilder() {
+        if (initPosBuilder_ != null) {
+          return initPosBuilder_.getMessageOrBuilder();
+        } else {
+          return initPos_ == null ?
+              emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : initPos_;
+        }
+      }
+      /**
+       * <code>.Vector init_pos = 9;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> 
+          getInitPosFieldBuilder() {
+        if (initPosBuilder_ == null) {
+          initPosBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder>(
+                  getInitPos(),
+                  getParentForChildren(),
+                  isClean());
+          initPos_ = null;
+        }
+        return initPosBuilder_;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -854,7 +854,7 @@ public final class AbilityMixinShootFromCameraOuterClass {
     java.lang.String[] descriptorData = {
       "\n!AbilityMixinShootFromCamera.proto\032\014Vec" +
       "tor.proto\"R\n\033AbilityMixinShootFromCamera" +
-      "\022\031\n\010init_pos\030\r \001(\0132\007.Vector\022\030\n\007forward\030\002" +
+      "\022\030\n\007forward\030\r \001(\0132\007.Vector\022\031\n\010init_pos\030\t" +
       " \001(\0132\007.VectorB\033\n\031emu.grasscutter.net.pro" +
       "tob\006proto3"
     };
@@ -868,7 +868,7 @@ public final class AbilityMixinShootFromCameraOuterClass {
     internal_static_AbilityMixinShootFromCamera_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_AbilityMixinShootFromCamera_descriptor,
-        new java.lang.String[] { "InitPos", "Forward", });
+        new java.lang.String[] { "Forward", "InitPos", });
     emu.grasscutter.net.proto.VectorOuterClass.getDescriptor();
   }
 

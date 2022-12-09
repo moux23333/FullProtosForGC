@@ -19,40 +19,44 @@ public final class TriggerCreateGadgetToEquipPartNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 gadget_id = 1;</code>
-     * @return The gadgetId.
+     * <code>uint32 gadget_entity_id = 1;</code>
+     * @return The gadgetEntityId.
      */
-    int getGadgetId();
+    int getGadgetEntityId();
 
     /**
-     * <code>uint32 entity_id = 13;</code>
-     * @return The entityId.
-     */
-    int getEntityId();
-
-    /**
-     * <code>string equip_part = 14;</code>
+     * <code>string equip_part = 12;</code>
      * @return The equipPart.
      */
     java.lang.String getEquipPart();
     /**
-     * <code>string equip_part = 14;</code>
+     * <code>string equip_part = 12;</code>
      * @return The bytes for equipPart.
      */
     com.google.protobuf.ByteString
         getEquipPartBytes();
 
     /**
-     * <code>uint32 gadget_entity_id = 10;</code>
-     * @return The gadgetEntityId.
+     * <code>uint32 entity_id = 6;</code>
+     * @return The entityId.
      */
-    int getGadgetEntityId();
+    int getEntityId();
+
+    /**
+     * <code>uint32 gadget_id = 11;</code>
+     * @return The gadgetId.
+     */
+    int getGadgetId();
   }
   /**
    * <pre>
-   * CmdId: 350
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 346;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code TriggerCreateGadgetToEquipPartNotify}
@@ -102,20 +106,20 @@ public final class TriggerCreateGadgetToEquipPartNotifyOuterClass {
               break;
             case 8: {
 
-              gadgetId_ = input.readUInt32();
-              break;
-            }
-            case 80: {
-
               gadgetEntityId_ = input.readUInt32();
               break;
             }
-            case 104: {
+            case 48: {
 
               entityId_ = input.readUInt32();
               break;
             }
-            case 114: {
+            case 88: {
+
+              gadgetId_ = input.readUInt32();
+              break;
+            }
+            case 98: {
               java.lang.String s = input.readStringRequireUtf8();
 
               equipPart_ = s;
@@ -153,32 +157,21 @@ public final class TriggerCreateGadgetToEquipPartNotifyOuterClass {
               emu.grasscutter.net.proto.TriggerCreateGadgetToEquipPartNotifyOuterClass.TriggerCreateGadgetToEquipPartNotify.class, emu.grasscutter.net.proto.TriggerCreateGadgetToEquipPartNotifyOuterClass.TriggerCreateGadgetToEquipPartNotify.Builder.class);
     }
 
-    public static final int GADGET_ID_FIELD_NUMBER = 1;
-    private int gadgetId_;
+    public static final int GADGET_ENTITY_ID_FIELD_NUMBER = 1;
+    private int gadgetEntityId_;
     /**
-     * <code>uint32 gadget_id = 1;</code>
-     * @return The gadgetId.
+     * <code>uint32 gadget_entity_id = 1;</code>
+     * @return The gadgetEntityId.
      */
     @java.lang.Override
-    public int getGadgetId() {
-      return gadgetId_;
+    public int getGadgetEntityId() {
+      return gadgetEntityId_;
     }
 
-    public static final int ENTITY_ID_FIELD_NUMBER = 13;
-    private int entityId_;
-    /**
-     * <code>uint32 entity_id = 13;</code>
-     * @return The entityId.
-     */
-    @java.lang.Override
-    public int getEntityId() {
-      return entityId_;
-    }
-
-    public static final int EQUIP_PART_FIELD_NUMBER = 14;
+    public static final int EQUIP_PART_FIELD_NUMBER = 12;
     private volatile java.lang.Object equipPart_;
     /**
-     * <code>string equip_part = 14;</code>
+     * <code>string equip_part = 12;</code>
      * @return The equipPart.
      */
     @java.lang.Override
@@ -195,7 +188,7 @@ public final class TriggerCreateGadgetToEquipPartNotifyOuterClass {
       }
     }
     /**
-     * <code>string equip_part = 14;</code>
+     * <code>string equip_part = 12;</code>
      * @return The bytes for equipPart.
      */
     @java.lang.Override
@@ -213,15 +206,26 @@ public final class TriggerCreateGadgetToEquipPartNotifyOuterClass {
       }
     }
 
-    public static final int GADGET_ENTITY_ID_FIELD_NUMBER = 10;
-    private int gadgetEntityId_;
+    public static final int ENTITY_ID_FIELD_NUMBER = 6;
+    private int entityId_;
     /**
-     * <code>uint32 gadget_entity_id = 10;</code>
-     * @return The gadgetEntityId.
+     * <code>uint32 entity_id = 6;</code>
+     * @return The entityId.
      */
     @java.lang.Override
-    public int getGadgetEntityId() {
-      return gadgetEntityId_;
+    public int getEntityId() {
+      return entityId_;
+    }
+
+    public static final int GADGET_ID_FIELD_NUMBER = 11;
+    private int gadgetId_;
+    /**
+     * <code>uint32 gadget_id = 11;</code>
+     * @return The gadgetId.
+     */
+    @java.lang.Override
+    public int getGadgetId() {
+      return gadgetId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -238,17 +242,17 @@ public final class TriggerCreateGadgetToEquipPartNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (gadgetId_ != 0) {
-        output.writeUInt32(1, gadgetId_);
-      }
       if (gadgetEntityId_ != 0) {
-        output.writeUInt32(10, gadgetEntityId_);
+        output.writeUInt32(1, gadgetEntityId_);
       }
       if (entityId_ != 0) {
-        output.writeUInt32(13, entityId_);
+        output.writeUInt32(6, entityId_);
+      }
+      if (gadgetId_ != 0) {
+        output.writeUInt32(11, gadgetId_);
       }
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(equipPart_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 14, equipPart_);
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 12, equipPart_);
       }
       unknownFields.writeTo(output);
     }
@@ -259,20 +263,20 @@ public final class TriggerCreateGadgetToEquipPartNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (gadgetId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, gadgetId_);
-      }
       if (gadgetEntityId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, gadgetEntityId_);
+          .computeUInt32Size(1, gadgetEntityId_);
       }
       if (entityId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, entityId_);
+          .computeUInt32Size(6, entityId_);
+      }
+      if (gadgetId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(11, gadgetId_);
       }
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(equipPart_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(14, equipPart_);
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(12, equipPart_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -289,14 +293,14 @@ public final class TriggerCreateGadgetToEquipPartNotifyOuterClass {
       }
       emu.grasscutter.net.proto.TriggerCreateGadgetToEquipPartNotifyOuterClass.TriggerCreateGadgetToEquipPartNotify other = (emu.grasscutter.net.proto.TriggerCreateGadgetToEquipPartNotifyOuterClass.TriggerCreateGadgetToEquipPartNotify) obj;
 
-      if (getGadgetId()
-          != other.getGadgetId()) return false;
-      if (getEntityId()
-          != other.getEntityId()) return false;
-      if (!getEquipPart()
-          .equals(other.getEquipPart())) return false;
       if (getGadgetEntityId()
           != other.getGadgetEntityId()) return false;
+      if (!getEquipPart()
+          .equals(other.getEquipPart())) return false;
+      if (getEntityId()
+          != other.getEntityId()) return false;
+      if (getGadgetId()
+          != other.getGadgetId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -308,14 +312,14 @@ public final class TriggerCreateGadgetToEquipPartNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + GADGET_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getGadgetId();
-      hash = (37 * hash) + ENTITY_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getEntityId();
-      hash = (37 * hash) + EQUIP_PART_FIELD_NUMBER;
-      hash = (53 * hash) + getEquipPart().hashCode();
       hash = (37 * hash) + GADGET_ENTITY_ID_FIELD_NUMBER;
       hash = (53 * hash) + getGadgetEntityId();
+      hash = (37 * hash) + EQUIP_PART_FIELD_NUMBER;
+      hash = (53 * hash) + getEquipPart().hashCode();
+      hash = (37 * hash) + ENTITY_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getEntityId();
+      hash = (37 * hash) + GADGET_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getGadgetId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -413,9 +417,13 @@ public final class TriggerCreateGadgetToEquipPartNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 350
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 346;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code TriggerCreateGadgetToEquipPartNotify}
@@ -455,13 +463,13 @@ public final class TriggerCreateGadgetToEquipPartNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        gadgetId_ = 0;
-
-        entityId_ = 0;
+        gadgetEntityId_ = 0;
 
         equipPart_ = "";
 
-        gadgetEntityId_ = 0;
+        entityId_ = 0;
+
+        gadgetId_ = 0;
 
         return this;
       }
@@ -489,10 +497,10 @@ public final class TriggerCreateGadgetToEquipPartNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.TriggerCreateGadgetToEquipPartNotifyOuterClass.TriggerCreateGadgetToEquipPartNotify buildPartial() {
         emu.grasscutter.net.proto.TriggerCreateGadgetToEquipPartNotifyOuterClass.TriggerCreateGadgetToEquipPartNotify result = new emu.grasscutter.net.proto.TriggerCreateGadgetToEquipPartNotifyOuterClass.TriggerCreateGadgetToEquipPartNotify(this);
-        result.gadgetId_ = gadgetId_;
-        result.entityId_ = entityId_;
-        result.equipPart_ = equipPart_;
         result.gadgetEntityId_ = gadgetEntityId_;
+        result.equipPart_ = equipPart_;
+        result.entityId_ = entityId_;
+        result.gadgetId_ = gadgetId_;
         onBuilt();
         return result;
       }
@@ -541,18 +549,18 @@ public final class TriggerCreateGadgetToEquipPartNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.TriggerCreateGadgetToEquipPartNotifyOuterClass.TriggerCreateGadgetToEquipPartNotify other) {
         if (other == emu.grasscutter.net.proto.TriggerCreateGadgetToEquipPartNotifyOuterClass.TriggerCreateGadgetToEquipPartNotify.getDefaultInstance()) return this;
-        if (other.getGadgetId() != 0) {
-          setGadgetId(other.getGadgetId());
-        }
-        if (other.getEntityId() != 0) {
-          setEntityId(other.getEntityId());
+        if (other.getGadgetEntityId() != 0) {
+          setGadgetEntityId(other.getGadgetEntityId());
         }
         if (!other.getEquipPart().isEmpty()) {
           equipPart_ = other.equipPart_;
           onChanged();
         }
-        if (other.getGadgetEntityId() != 0) {
-          setGadgetEntityId(other.getGadgetEntityId());
+        if (other.getEntityId() != 0) {
+          setEntityId(other.getEntityId());
+        }
+        if (other.getGadgetId() != 0) {
+          setGadgetId(other.getGadgetId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -583,71 +591,40 @@ public final class TriggerCreateGadgetToEquipPartNotifyOuterClass {
         return this;
       }
 
-      private int gadgetId_ ;
+      private int gadgetEntityId_ ;
       /**
-       * <code>uint32 gadget_id = 1;</code>
-       * @return The gadgetId.
+       * <code>uint32 gadget_entity_id = 1;</code>
+       * @return The gadgetEntityId.
        */
       @java.lang.Override
-      public int getGadgetId() {
-        return gadgetId_;
+      public int getGadgetEntityId() {
+        return gadgetEntityId_;
       }
       /**
-       * <code>uint32 gadget_id = 1;</code>
-       * @param value The gadgetId to set.
+       * <code>uint32 gadget_entity_id = 1;</code>
+       * @param value The gadgetEntityId to set.
        * @return This builder for chaining.
        */
-      public Builder setGadgetId(int value) {
+      public Builder setGadgetEntityId(int value) {
         
-        gadgetId_ = value;
+        gadgetEntityId_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 gadget_id = 1;</code>
+       * <code>uint32 gadget_entity_id = 1;</code>
        * @return This builder for chaining.
        */
-      public Builder clearGadgetId() {
+      public Builder clearGadgetEntityId() {
         
-        gadgetId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int entityId_ ;
-      /**
-       * <code>uint32 entity_id = 13;</code>
-       * @return The entityId.
-       */
-      @java.lang.Override
-      public int getEntityId() {
-        return entityId_;
-      }
-      /**
-       * <code>uint32 entity_id = 13;</code>
-       * @param value The entityId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setEntityId(int value) {
-        
-        entityId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 entity_id = 13;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearEntityId() {
-        
-        entityId_ = 0;
+        gadgetEntityId_ = 0;
         onChanged();
         return this;
       }
 
       private java.lang.Object equipPart_ = "";
       /**
-       * <code>string equip_part = 14;</code>
+       * <code>string equip_part = 12;</code>
        * @return The equipPart.
        */
       public java.lang.String getEquipPart() {
@@ -663,7 +640,7 @@ public final class TriggerCreateGadgetToEquipPartNotifyOuterClass {
         }
       }
       /**
-       * <code>string equip_part = 14;</code>
+       * <code>string equip_part = 12;</code>
        * @return The bytes for equipPart.
        */
       public com.google.protobuf.ByteString
@@ -680,7 +657,7 @@ public final class TriggerCreateGadgetToEquipPartNotifyOuterClass {
         }
       }
       /**
-       * <code>string equip_part = 14;</code>
+       * <code>string equip_part = 12;</code>
        * @param value The equipPart to set.
        * @return This builder for chaining.
        */
@@ -695,7 +672,7 @@ public final class TriggerCreateGadgetToEquipPartNotifyOuterClass {
         return this;
       }
       /**
-       * <code>string equip_part = 14;</code>
+       * <code>string equip_part = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearEquipPart() {
@@ -705,7 +682,7 @@ public final class TriggerCreateGadgetToEquipPartNotifyOuterClass {
         return this;
       }
       /**
-       * <code>string equip_part = 14;</code>
+       * <code>string equip_part = 12;</code>
        * @param value The bytes for equipPart to set.
        * @return This builder for chaining.
        */
@@ -721,33 +698,64 @@ public final class TriggerCreateGadgetToEquipPartNotifyOuterClass {
         return this;
       }
 
-      private int gadgetEntityId_ ;
+      private int entityId_ ;
       /**
-       * <code>uint32 gadget_entity_id = 10;</code>
-       * @return The gadgetEntityId.
+       * <code>uint32 entity_id = 6;</code>
+       * @return The entityId.
        */
       @java.lang.Override
-      public int getGadgetEntityId() {
-        return gadgetEntityId_;
+      public int getEntityId() {
+        return entityId_;
       }
       /**
-       * <code>uint32 gadget_entity_id = 10;</code>
-       * @param value The gadgetEntityId to set.
+       * <code>uint32 entity_id = 6;</code>
+       * @param value The entityId to set.
        * @return This builder for chaining.
        */
-      public Builder setGadgetEntityId(int value) {
+      public Builder setEntityId(int value) {
         
-        gadgetEntityId_ = value;
+        entityId_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 gadget_entity_id = 10;</code>
+       * <code>uint32 entity_id = 6;</code>
        * @return This builder for chaining.
        */
-      public Builder clearGadgetEntityId() {
+      public Builder clearEntityId() {
         
-        gadgetEntityId_ = 0;
+        entityId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int gadgetId_ ;
+      /**
+       * <code>uint32 gadget_id = 11;</code>
+       * @return The gadgetId.
+       */
+      @java.lang.Override
+      public int getGadgetId() {
+        return gadgetId_;
+      }
+      /**
+       * <code>uint32 gadget_id = 11;</code>
+       * @param value The gadgetId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setGadgetId(int value) {
+        
+        gadgetId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 gadget_id = 11;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearGadgetId() {
+        
+        gadgetId_ = 0;
         onChanged();
         return this;
       }
@@ -820,9 +828,9 @@ public final class TriggerCreateGadgetToEquipPartNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n*TriggerCreateGadgetToEquipPartNotify.p" +
       "roto\"z\n$TriggerCreateGadgetToEquipPartNo" +
-      "tify\022\021\n\tgadget_id\030\001 \001(\r\022\021\n\tentity_id\030\r \001" +
-      "(\r\022\022\n\nequip_part\030\016 \001(\t\022\030\n\020gadget_entity_" +
-      "id\030\n \001(\rB\033\n\031emu.grasscutter.net.protob\006p" +
+      "tify\022\030\n\020gadget_entity_id\030\001 \001(\r\022\022\n\nequip_" +
+      "part\030\014 \001(\t\022\021\n\tentity_id\030\006 \001(\r\022\021\n\tgadget_" +
+      "id\030\013 \001(\rB\033\n\031emu.grasscutter.net.protob\006p" +
       "roto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -834,7 +842,7 @@ public final class TriggerCreateGadgetToEquipPartNotifyOuterClass {
     internal_static_TriggerCreateGadgetToEquipPartNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_TriggerCreateGadgetToEquipPartNotify_descriptor,
-        new java.lang.String[] { "GadgetId", "EntityId", "EquipPart", "GadgetEntityId", });
+        new java.lang.String[] { "GadgetEntityId", "EquipPart", "EntityId", "GadgetId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

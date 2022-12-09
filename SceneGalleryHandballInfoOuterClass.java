@@ -19,22 +19,22 @@ public final class SceneGalleryHandballInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.PlaceInfo ball_place_info = 9;</code>
+     * <code>.PlaceInfo ball_place_info = 6;</code>
      * @return Whether the ballPlaceInfo field is set.
      */
     boolean hasBallPlaceInfo();
     /**
-     * <code>.PlaceInfo ball_place_info = 9;</code>
+     * <code>.PlaceInfo ball_place_info = 6;</code>
      * @return The ballPlaceInfo.
      */
     emu.grasscutter.net.proto.PlaceInfoOuterClass.PlaceInfo getBallPlaceInfo();
     /**
-     * <code>.PlaceInfo ball_place_info = 9;</code>
+     * <code>.PlaceInfo ball_place_info = 6;</code>
      */
     emu.grasscutter.net.proto.PlaceInfoOuterClass.PlaceInfoOrBuilder getBallPlaceInfoOrBuilder();
 
     /**
-     * <code>bool is_have_ball = 15;</code>
+     * <code>bool is_have_ball = 11;</code>
      * @return The isHaveBall.
      */
     boolean getIsHaveBall();
@@ -84,7 +84,7 @@ public final class SceneGalleryHandballInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 74: {
+            case 50: {
               emu.grasscutter.net.proto.PlaceInfoOuterClass.PlaceInfo.Builder subBuilder = null;
               if (ballPlaceInfo_ != null) {
                 subBuilder = ballPlaceInfo_.toBuilder();
@@ -97,7 +97,7 @@ public final class SceneGalleryHandballInfoOuterClass {
 
               break;
             }
-            case 120: {
+            case 88: {
 
               isHaveBall_ = input.readBool();
               break;
@@ -134,10 +134,10 @@ public final class SceneGalleryHandballInfoOuterClass {
               emu.grasscutter.net.proto.SceneGalleryHandballInfoOuterClass.SceneGalleryHandballInfo.class, emu.grasscutter.net.proto.SceneGalleryHandballInfoOuterClass.SceneGalleryHandballInfo.Builder.class);
     }
 
-    public static final int BALL_PLACE_INFO_FIELD_NUMBER = 9;
+    public static final int BALL_PLACE_INFO_FIELD_NUMBER = 6;
     private emu.grasscutter.net.proto.PlaceInfoOuterClass.PlaceInfo ballPlaceInfo_;
     /**
-     * <code>.PlaceInfo ball_place_info = 9;</code>
+     * <code>.PlaceInfo ball_place_info = 6;</code>
      * @return Whether the ballPlaceInfo field is set.
      */
     @java.lang.Override
@@ -145,7 +145,7 @@ public final class SceneGalleryHandballInfoOuterClass {
       return ballPlaceInfo_ != null;
     }
     /**
-     * <code>.PlaceInfo ball_place_info = 9;</code>
+     * <code>.PlaceInfo ball_place_info = 6;</code>
      * @return The ballPlaceInfo.
      */
     @java.lang.Override
@@ -153,17 +153,17 @@ public final class SceneGalleryHandballInfoOuterClass {
       return ballPlaceInfo_ == null ? emu.grasscutter.net.proto.PlaceInfoOuterClass.PlaceInfo.getDefaultInstance() : ballPlaceInfo_;
     }
     /**
-     * <code>.PlaceInfo ball_place_info = 9;</code>
+     * <code>.PlaceInfo ball_place_info = 6;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.PlaceInfoOuterClass.PlaceInfoOrBuilder getBallPlaceInfoOrBuilder() {
       return getBallPlaceInfo();
     }
 
-    public static final int IS_HAVE_BALL_FIELD_NUMBER = 15;
+    public static final int IS_HAVE_BALL_FIELD_NUMBER = 11;
     private boolean isHaveBall_;
     /**
-     * <code>bool is_have_ball = 15;</code>
+     * <code>bool is_have_ball = 11;</code>
      * @return The isHaveBall.
      */
     @java.lang.Override
@@ -186,10 +186,10 @@ public final class SceneGalleryHandballInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (ballPlaceInfo_ != null) {
-        output.writeMessage(9, getBallPlaceInfo());
+        output.writeMessage(6, getBallPlaceInfo());
       }
       if (isHaveBall_ != false) {
-        output.writeBool(15, isHaveBall_);
+        output.writeBool(11, isHaveBall_);
       }
       unknownFields.writeTo(output);
     }
@@ -202,11 +202,11 @@ public final class SceneGalleryHandballInfoOuterClass {
       size = 0;
       if (ballPlaceInfo_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(9, getBallPlaceInfo());
+          .computeMessageSize(6, getBallPlaceInfo());
       }
       if (isHaveBall_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(15, isHaveBall_);
+          .computeBoolSize(11, isHaveBall_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -508,14 +508,14 @@ public final class SceneGalleryHandballInfoOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.PlaceInfoOuterClass.PlaceInfo, emu.grasscutter.net.proto.PlaceInfoOuterClass.PlaceInfo.Builder, emu.grasscutter.net.proto.PlaceInfoOuterClass.PlaceInfoOrBuilder> ballPlaceInfoBuilder_;
       /**
-       * <code>.PlaceInfo ball_place_info = 9;</code>
+       * <code>.PlaceInfo ball_place_info = 6;</code>
        * @return Whether the ballPlaceInfo field is set.
        */
       public boolean hasBallPlaceInfo() {
         return ballPlaceInfoBuilder_ != null || ballPlaceInfo_ != null;
       }
       /**
-       * <code>.PlaceInfo ball_place_info = 9;</code>
+       * <code>.PlaceInfo ball_place_info = 6;</code>
        * @return The ballPlaceInfo.
        */
       public emu.grasscutter.net.proto.PlaceInfoOuterClass.PlaceInfo getBallPlaceInfo() {
@@ -526,7 +526,7 @@ public final class SceneGalleryHandballInfoOuterClass {
         }
       }
       /**
-       * <code>.PlaceInfo ball_place_info = 9;</code>
+       * <code>.PlaceInfo ball_place_info = 6;</code>
        */
       public Builder setBallPlaceInfo(emu.grasscutter.net.proto.PlaceInfoOuterClass.PlaceInfo value) {
         if (ballPlaceInfoBuilder_ == null) {
@@ -542,7 +542,7 @@ public final class SceneGalleryHandballInfoOuterClass {
         return this;
       }
       /**
-       * <code>.PlaceInfo ball_place_info = 9;</code>
+       * <code>.PlaceInfo ball_place_info = 6;</code>
        */
       public Builder setBallPlaceInfo(
           emu.grasscutter.net.proto.PlaceInfoOuterClass.PlaceInfo.Builder builderForValue) {
@@ -556,7 +556,7 @@ public final class SceneGalleryHandballInfoOuterClass {
         return this;
       }
       /**
-       * <code>.PlaceInfo ball_place_info = 9;</code>
+       * <code>.PlaceInfo ball_place_info = 6;</code>
        */
       public Builder mergeBallPlaceInfo(emu.grasscutter.net.proto.PlaceInfoOuterClass.PlaceInfo value) {
         if (ballPlaceInfoBuilder_ == null) {
@@ -574,7 +574,7 @@ public final class SceneGalleryHandballInfoOuterClass {
         return this;
       }
       /**
-       * <code>.PlaceInfo ball_place_info = 9;</code>
+       * <code>.PlaceInfo ball_place_info = 6;</code>
        */
       public Builder clearBallPlaceInfo() {
         if (ballPlaceInfoBuilder_ == null) {
@@ -588,7 +588,7 @@ public final class SceneGalleryHandballInfoOuterClass {
         return this;
       }
       /**
-       * <code>.PlaceInfo ball_place_info = 9;</code>
+       * <code>.PlaceInfo ball_place_info = 6;</code>
        */
       public emu.grasscutter.net.proto.PlaceInfoOuterClass.PlaceInfo.Builder getBallPlaceInfoBuilder() {
         
@@ -596,7 +596,7 @@ public final class SceneGalleryHandballInfoOuterClass {
         return getBallPlaceInfoFieldBuilder().getBuilder();
       }
       /**
-       * <code>.PlaceInfo ball_place_info = 9;</code>
+       * <code>.PlaceInfo ball_place_info = 6;</code>
        */
       public emu.grasscutter.net.proto.PlaceInfoOuterClass.PlaceInfoOrBuilder getBallPlaceInfoOrBuilder() {
         if (ballPlaceInfoBuilder_ != null) {
@@ -607,7 +607,7 @@ public final class SceneGalleryHandballInfoOuterClass {
         }
       }
       /**
-       * <code>.PlaceInfo ball_place_info = 9;</code>
+       * <code>.PlaceInfo ball_place_info = 6;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.PlaceInfoOuterClass.PlaceInfo, emu.grasscutter.net.proto.PlaceInfoOuterClass.PlaceInfo.Builder, emu.grasscutter.net.proto.PlaceInfoOuterClass.PlaceInfoOrBuilder> 
@@ -625,7 +625,7 @@ public final class SceneGalleryHandballInfoOuterClass {
 
       private boolean isHaveBall_ ;
       /**
-       * <code>bool is_have_ball = 15;</code>
+       * <code>bool is_have_ball = 11;</code>
        * @return The isHaveBall.
        */
       @java.lang.Override
@@ -633,7 +633,7 @@ public final class SceneGalleryHandballInfoOuterClass {
         return isHaveBall_;
       }
       /**
-       * <code>bool is_have_ball = 15;</code>
+       * <code>bool is_have_ball = 11;</code>
        * @param value The isHaveBall to set.
        * @return This builder for chaining.
        */
@@ -644,7 +644,7 @@ public final class SceneGalleryHandballInfoOuterClass {
         return this;
       }
       /**
-       * <code>bool is_have_ball = 15;</code>
+       * <code>bool is_have_ball = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsHaveBall() {
@@ -722,8 +722,8 @@ public final class SceneGalleryHandballInfoOuterClass {
     java.lang.String[] descriptorData = {
       "\n\036SceneGalleryHandballInfo.proto\032\017PlaceI" +
       "nfo.proto\"U\n\030SceneGalleryHandballInfo\022#\n" +
-      "\017ball_place_info\030\t \001(\0132\n.PlaceInfo\022\024\n\014is" +
-      "_have_ball\030\017 \001(\010B\033\n\031emu.grasscutter.net." +
+      "\017ball_place_info\030\006 \001(\0132\n.PlaceInfo\022\024\n\014is" +
+      "_have_ball\030\013 \001(\010B\033\n\031emu.grasscutter.net." +
       "protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

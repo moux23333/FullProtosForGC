@@ -19,16 +19,20 @@ public final class GCGDSFieldUnlockNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 field_id = 1;</code>
+     * <code>uint32 field_id = 12;</code>
      * @return The fieldId.
      */
     int getFieldId();
   }
   /**
    * <pre>
-   * CmdId: 7333
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 7860;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code GCGDSFieldUnlockNotify}
@@ -75,7 +79,7 @@ public final class GCGDSFieldUnlockNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
+            case 96: {
 
               fieldId_ = input.readUInt32();
               break;
@@ -112,10 +116,10 @@ public final class GCGDSFieldUnlockNotifyOuterClass {
               emu.grasscutter.net.proto.GCGDSFieldUnlockNotifyOuterClass.GCGDSFieldUnlockNotify.class, emu.grasscutter.net.proto.GCGDSFieldUnlockNotifyOuterClass.GCGDSFieldUnlockNotify.Builder.class);
     }
 
-    public static final int FIELD_ID_FIELD_NUMBER = 1;
+    public static final int FIELD_ID_FIELD_NUMBER = 12;
     private int fieldId_;
     /**
-     * <code>uint32 field_id = 1;</code>
+     * <code>uint32 field_id = 12;</code>
      * @return The fieldId.
      */
     @java.lang.Override
@@ -138,7 +142,7 @@ public final class GCGDSFieldUnlockNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (fieldId_ != 0) {
-        output.writeUInt32(1, fieldId_);
+        output.writeUInt32(12, fieldId_);
       }
       unknownFields.writeTo(output);
     }
@@ -151,7 +155,7 @@ public final class GCGDSFieldUnlockNotifyOuterClass {
       size = 0;
       if (fieldId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, fieldId_);
+          .computeUInt32Size(12, fieldId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -280,9 +284,13 @@ public final class GCGDSFieldUnlockNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 7333
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 7860;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code GCGDSFieldUnlockNotify}
@@ -433,7 +441,7 @@ public final class GCGDSFieldUnlockNotifyOuterClass {
 
       private int fieldId_ ;
       /**
-       * <code>uint32 field_id = 1;</code>
+       * <code>uint32 field_id = 12;</code>
        * @return The fieldId.
        */
       @java.lang.Override
@@ -441,7 +449,7 @@ public final class GCGDSFieldUnlockNotifyOuterClass {
         return fieldId_;
       }
       /**
-       * <code>uint32 field_id = 1;</code>
+       * <code>uint32 field_id = 12;</code>
        * @param value The fieldId to set.
        * @return This builder for chaining.
        */
@@ -452,7 +460,7 @@ public final class GCGDSFieldUnlockNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 field_id = 1;</code>
+       * <code>uint32 field_id = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearFieldId() {
@@ -529,7 +537,7 @@ public final class GCGDSFieldUnlockNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\034GCGDSFieldUnlockNotify.proto\"*\n\026GCGDSF" +
-      "ieldUnlockNotify\022\020\n\010field_id\030\001 \001(\rB\033\n\031em" +
+      "ieldUnlockNotify\022\020\n\010field_id\030\014 \001(\rB\033\n\031em" +
       "u.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

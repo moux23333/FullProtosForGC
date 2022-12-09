@@ -19,60 +19,50 @@ public final class GCGMsgPhaseChangeOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>map&lt;uint32, uint32&gt; allow_controller_map = 15;</code>
+     * <code>.GCGPhaseType Unk3300_JDPADLFFFDK = 15;</code>
+     * @return The enum numeric value on the wire for unk3300JDPADLFFFDK.
+     */
+    int getUnk3300JDPADLFFFDKValue();
+    /**
+     * <code>.GCGPhaseType Unk3300_JDPADLFFFDK = 15;</code>
+     * @return The unk3300JDPADLFFFDK.
+     */
+    emu.grasscutter.net.proto.GCGPhaseTypeOuterClass.GCGPhaseType getUnk3300JDPADLFFFDK();
+
+    /**
+     * <code>.GCGPhaseType Unk3300_GNAIDDMDEBN = 3;</code>
+     * @return The enum numeric value on the wire for unk3300GNAIDDMDEBN.
+     */
+    int getUnk3300GNAIDDMDEBNValue();
+    /**
+     * <code>.GCGPhaseType Unk3300_GNAIDDMDEBN = 3;</code>
+     * @return The unk3300GNAIDDMDEBN.
+     */
+    emu.grasscutter.net.proto.GCGPhaseTypeOuterClass.GCGPhaseType getUnk3300GNAIDDMDEBN();
+
+    /**
+     * <code>repeated .Uint32Pair allow_controller_map = 11;</code>
+     */
+    java.util.List<emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair> 
+        getAllowControllerMapList();
+    /**
+     * <code>repeated .Uint32Pair allow_controller_map = 11;</code>
+     */
+    emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair getAllowControllerMap(int index);
+    /**
+     * <code>repeated .Uint32Pair allow_controller_map = 11;</code>
      */
     int getAllowControllerMapCount();
     /**
-     * <code>map&lt;uint32, uint32&gt; allow_controller_map = 15;</code>
+     * <code>repeated .Uint32Pair allow_controller_map = 11;</code>
      */
-    boolean containsAllowControllerMap(
-        int key);
+    java.util.List<? extends emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32PairOrBuilder> 
+        getAllowControllerMapOrBuilderList();
     /**
-     * Use {@link #getAllowControllerMapMap()} instead.
+     * <code>repeated .Uint32Pair allow_controller_map = 11;</code>
      */
-    @java.lang.Deprecated
-    java.util.Map<java.lang.Integer, java.lang.Integer>
-    getAllowControllerMap();
-    /**
-     * <code>map&lt;uint32, uint32&gt; allow_controller_map = 15;</code>
-     */
-    java.util.Map<java.lang.Integer, java.lang.Integer>
-    getAllowControllerMapMap();
-    /**
-     * <code>map&lt;uint32, uint32&gt; allow_controller_map = 15;</code>
-     */
-
-    int getAllowControllerMapOrDefault(
-        int key,
-        int defaultValue);
-    /**
-     * <code>map&lt;uint32, uint32&gt; allow_controller_map = 15;</code>
-     */
-
-    int getAllowControllerMapOrThrow(
-        int key);
-
-    /**
-     * <code>.GCGPhaseType before_phase = 12;</code>
-     * @return The enum numeric value on the wire for beforePhase.
-     */
-    int getBeforePhaseValue();
-    /**
-     * <code>.GCGPhaseType before_phase = 12;</code>
-     * @return The beforePhase.
-     */
-    emu.grasscutter.net.proto.GCGPhaseTypeOuterClass.GCGPhaseType getBeforePhase();
-
-    /**
-     * <code>.GCGPhaseType after_phase = 5;</code>
-     * @return The enum numeric value on the wire for afterPhase.
-     */
-    int getAfterPhaseValue();
-    /**
-     * <code>.GCGPhaseType after_phase = 5;</code>
-     * @return The afterPhase.
-     */
-    emu.grasscutter.net.proto.GCGPhaseTypeOuterClass.GCGPhaseType getAfterPhase();
+    emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32PairOrBuilder getAllowControllerMapOrBuilder(
+        int index);
   }
   /**
    * Protobuf type {@code GCGMsgPhaseChange}
@@ -87,8 +77,9 @@ public final class GCGMsgPhaseChangeOuterClass {
       super(builder);
     }
     private GCGMsgPhaseChange() {
-      beforePhase_ = 0;
-      afterPhase_ = 0;
+      unk3300JDPADLFFFDK_ = 0;
+      unk3300GNAIDDMDEBN_ = 0;
+      allowControllerMap_ = java.util.Collections.emptyList();
     }
 
     @java.lang.Override
@@ -122,29 +113,25 @@ public final class GCGMsgPhaseChangeOuterClass {
             case 0:
               done = true;
               break;
-            case 40: {
+            case 24: {
               int rawValue = input.readEnum();
 
-              afterPhase_ = rawValue;
+              unk3300GNAIDDMDEBN_ = rawValue;
               break;
             }
-            case 96: {
-              int rawValue = input.readEnum();
-
-              beforePhase_ = rawValue;
-              break;
-            }
-            case 122: {
+            case 90: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                allowControllerMap_ = com.google.protobuf.MapField.newMapField(
-                    AllowControllerMapDefaultEntryHolder.defaultEntry);
+                allowControllerMap_ = new java.util.ArrayList<emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair>();
                 mutable_bitField0_ |= 0x00000001;
               }
-              com.google.protobuf.MapEntry<java.lang.Integer, java.lang.Integer>
-              allowControllerMap__ = input.readMessage(
-                  AllowControllerMapDefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
-              allowControllerMap_.getMutableMap().put(
-                  allowControllerMap__.getKey(), allowControllerMap__.getValue());
+              allowControllerMap_.add(
+                  input.readMessage(emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.parser(), extensionRegistry));
+              break;
+            }
+            case 120: {
+              int rawValue = input.readEnum();
+
+              unk3300JDPADLFFFDK_ = rawValue;
               break;
             }
             default: {
@@ -162,6 +149,9 @@ public final class GCGMsgPhaseChangeOuterClass {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
       } finally {
+        if (((mutable_bitField0_ & 0x00000001) != 0)) {
+          allowControllerMap_ = java.util.Collections.unmodifiableList(allowControllerMap_);
+        }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
       }
@@ -171,18 +161,6 @@ public final class GCGMsgPhaseChangeOuterClass {
       return emu.grasscutter.net.proto.GCGMsgPhaseChangeOuterClass.internal_static_GCGMsgPhaseChange_descriptor;
     }
 
-    @SuppressWarnings({"rawtypes"})
-    @java.lang.Override
-    protected com.google.protobuf.MapField internalGetMapField(
-        int number) {
-      switch (number) {
-        case 15:
-          return internalGetAllowControllerMap();
-        default:
-          throw new RuntimeException(
-              "Invalid map field number: " + number);
-      }
-    }
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
@@ -191,123 +169,82 @@ public final class GCGMsgPhaseChangeOuterClass {
               emu.grasscutter.net.proto.GCGMsgPhaseChangeOuterClass.GCGMsgPhaseChange.class, emu.grasscutter.net.proto.GCGMsgPhaseChangeOuterClass.GCGMsgPhaseChange.Builder.class);
     }
 
-    public static final int ALLOW_CONTROLLER_MAP_FIELD_NUMBER = 15;
-    private static final class AllowControllerMapDefaultEntryHolder {
-      static final com.google.protobuf.MapEntry<
-          java.lang.Integer, java.lang.Integer> defaultEntry =
-              com.google.protobuf.MapEntry
-              .<java.lang.Integer, java.lang.Integer>newDefaultInstance(
-                  emu.grasscutter.net.proto.GCGMsgPhaseChangeOuterClass.internal_static_GCGMsgPhaseChange_AllowControllerMapEntry_descriptor, 
-                  com.google.protobuf.WireFormat.FieldType.UINT32,
-                  0,
-                  com.google.protobuf.WireFormat.FieldType.UINT32,
-                  0);
+    public static final int UNK3300_JDPADLFFFDK_FIELD_NUMBER = 15;
+    private int unk3300JDPADLFFFDK_;
+    /**
+     * <code>.GCGPhaseType Unk3300_JDPADLFFFDK = 15;</code>
+     * @return The enum numeric value on the wire for unk3300JDPADLFFFDK.
+     */
+    @java.lang.Override public int getUnk3300JDPADLFFFDKValue() {
+      return unk3300JDPADLFFFDK_;
     }
-    private com.google.protobuf.MapField<
-        java.lang.Integer, java.lang.Integer> allowControllerMap_;
-    private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
-    internalGetAllowControllerMap() {
-      if (allowControllerMap_ == null) {
-        return com.google.protobuf.MapField.emptyMapField(
-            AllowControllerMapDefaultEntryHolder.defaultEntry);
-      }
+    /**
+     * <code>.GCGPhaseType Unk3300_JDPADLFFFDK = 15;</code>
+     * @return The unk3300JDPADLFFFDK.
+     */
+    @java.lang.Override public emu.grasscutter.net.proto.GCGPhaseTypeOuterClass.GCGPhaseType getUnk3300JDPADLFFFDK() {
+      @SuppressWarnings("deprecation")
+      emu.grasscutter.net.proto.GCGPhaseTypeOuterClass.GCGPhaseType result = emu.grasscutter.net.proto.GCGPhaseTypeOuterClass.GCGPhaseType.valueOf(unk3300JDPADLFFFDK_);
+      return result == null ? emu.grasscutter.net.proto.GCGPhaseTypeOuterClass.GCGPhaseType.UNRECOGNIZED : result;
+    }
+
+    public static final int UNK3300_GNAIDDMDEBN_FIELD_NUMBER = 3;
+    private int unk3300GNAIDDMDEBN_;
+    /**
+     * <code>.GCGPhaseType Unk3300_GNAIDDMDEBN = 3;</code>
+     * @return The enum numeric value on the wire for unk3300GNAIDDMDEBN.
+     */
+    @java.lang.Override public int getUnk3300GNAIDDMDEBNValue() {
+      return unk3300GNAIDDMDEBN_;
+    }
+    /**
+     * <code>.GCGPhaseType Unk3300_GNAIDDMDEBN = 3;</code>
+     * @return The unk3300GNAIDDMDEBN.
+     */
+    @java.lang.Override public emu.grasscutter.net.proto.GCGPhaseTypeOuterClass.GCGPhaseType getUnk3300GNAIDDMDEBN() {
+      @SuppressWarnings("deprecation")
+      emu.grasscutter.net.proto.GCGPhaseTypeOuterClass.GCGPhaseType result = emu.grasscutter.net.proto.GCGPhaseTypeOuterClass.GCGPhaseType.valueOf(unk3300GNAIDDMDEBN_);
+      return result == null ? emu.grasscutter.net.proto.GCGPhaseTypeOuterClass.GCGPhaseType.UNRECOGNIZED : result;
+    }
+
+    public static final int ALLOW_CONTROLLER_MAP_FIELD_NUMBER = 11;
+    private java.util.List<emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair> allowControllerMap_;
+    /**
+     * <code>repeated .Uint32Pair allow_controller_map = 11;</code>
+     */
+    @java.lang.Override
+    public java.util.List<emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair> getAllowControllerMapList() {
       return allowControllerMap_;
     }
-
+    /**
+     * <code>repeated .Uint32Pair allow_controller_map = 11;</code>
+     */
+    @java.lang.Override
+    public java.util.List<? extends emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32PairOrBuilder> 
+        getAllowControllerMapOrBuilderList() {
+      return allowControllerMap_;
+    }
+    /**
+     * <code>repeated .Uint32Pair allow_controller_map = 11;</code>
+     */
+    @java.lang.Override
     public int getAllowControllerMapCount() {
-      return internalGetAllowControllerMap().getMap().size();
+      return allowControllerMap_.size();
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; allow_controller_map = 15;</code>
-     */
-
-    @java.lang.Override
-    public boolean containsAllowControllerMap(
-        int key) {
-      
-      return internalGetAllowControllerMap().getMap().containsKey(key);
-    }
-    /**
-     * Use {@link #getAllowControllerMapMap()} instead.
+     * <code>repeated .Uint32Pair allow_controller_map = 11;</code>
      */
     @java.lang.Override
-    @java.lang.Deprecated
-    public java.util.Map<java.lang.Integer, java.lang.Integer> getAllowControllerMap() {
-      return getAllowControllerMapMap();
+    public emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair getAllowControllerMap(int index) {
+      return allowControllerMap_.get(index);
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; allow_controller_map = 15;</code>
+     * <code>repeated .Uint32Pair allow_controller_map = 11;</code>
      */
     @java.lang.Override
-
-    public java.util.Map<java.lang.Integer, java.lang.Integer> getAllowControllerMapMap() {
-      return internalGetAllowControllerMap().getMap();
-    }
-    /**
-     * <code>map&lt;uint32, uint32&gt; allow_controller_map = 15;</code>
-     */
-    @java.lang.Override
-
-    public int getAllowControllerMapOrDefault(
-        int key,
-        int defaultValue) {
-      
-      java.util.Map<java.lang.Integer, java.lang.Integer> map =
-          internalGetAllowControllerMap().getMap();
-      return map.containsKey(key) ? map.get(key) : defaultValue;
-    }
-    /**
-     * <code>map&lt;uint32, uint32&gt; allow_controller_map = 15;</code>
-     */
-    @java.lang.Override
-
-    public int getAllowControllerMapOrThrow(
-        int key) {
-      
-      java.util.Map<java.lang.Integer, java.lang.Integer> map =
-          internalGetAllowControllerMap().getMap();
-      if (!map.containsKey(key)) {
-        throw new java.lang.IllegalArgumentException();
-      }
-      return map.get(key);
-    }
-
-    public static final int BEFORE_PHASE_FIELD_NUMBER = 12;
-    private int beforePhase_;
-    /**
-     * <code>.GCGPhaseType before_phase = 12;</code>
-     * @return The enum numeric value on the wire for beforePhase.
-     */
-    @java.lang.Override public int getBeforePhaseValue() {
-      return beforePhase_;
-    }
-    /**
-     * <code>.GCGPhaseType before_phase = 12;</code>
-     * @return The beforePhase.
-     */
-    @java.lang.Override public emu.grasscutter.net.proto.GCGPhaseTypeOuterClass.GCGPhaseType getBeforePhase() {
-      @SuppressWarnings("deprecation")
-      emu.grasscutter.net.proto.GCGPhaseTypeOuterClass.GCGPhaseType result = emu.grasscutter.net.proto.GCGPhaseTypeOuterClass.GCGPhaseType.valueOf(beforePhase_);
-      return result == null ? emu.grasscutter.net.proto.GCGPhaseTypeOuterClass.GCGPhaseType.UNRECOGNIZED : result;
-    }
-
-    public static final int AFTER_PHASE_FIELD_NUMBER = 5;
-    private int afterPhase_;
-    /**
-     * <code>.GCGPhaseType after_phase = 5;</code>
-     * @return The enum numeric value on the wire for afterPhase.
-     */
-    @java.lang.Override public int getAfterPhaseValue() {
-      return afterPhase_;
-    }
-    /**
-     * <code>.GCGPhaseType after_phase = 5;</code>
-     * @return The afterPhase.
-     */
-    @java.lang.Override public emu.grasscutter.net.proto.GCGPhaseTypeOuterClass.GCGPhaseType getAfterPhase() {
-      @SuppressWarnings("deprecation")
-      emu.grasscutter.net.proto.GCGPhaseTypeOuterClass.GCGPhaseType result = emu.grasscutter.net.proto.GCGPhaseTypeOuterClass.GCGPhaseType.valueOf(afterPhase_);
-      return result == null ? emu.grasscutter.net.proto.GCGPhaseTypeOuterClass.GCGPhaseType.UNRECOGNIZED : result;
+    public emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32PairOrBuilder getAllowControllerMapOrBuilder(
+        int index) {
+      return allowControllerMap_.get(index);
     }
 
     private byte memoizedIsInitialized = -1;
@@ -324,18 +261,15 @@ public final class GCGMsgPhaseChangeOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (afterPhase_ != emu.grasscutter.net.proto.GCGPhaseTypeOuterClass.GCGPhaseType.GCG_PHASE_TYPE_INVALID.getNumber()) {
-        output.writeEnum(5, afterPhase_);
+      if (unk3300GNAIDDMDEBN_ != emu.grasscutter.net.proto.GCGPhaseTypeOuterClass.GCGPhaseType.GCG_PHASE_TYPE_INVALID.getNumber()) {
+        output.writeEnum(3, unk3300GNAIDDMDEBN_);
       }
-      if (beforePhase_ != emu.grasscutter.net.proto.GCGPhaseTypeOuterClass.GCGPhaseType.GCG_PHASE_TYPE_INVALID.getNumber()) {
-        output.writeEnum(12, beforePhase_);
+      for (int i = 0; i < allowControllerMap_.size(); i++) {
+        output.writeMessage(11, allowControllerMap_.get(i));
       }
-      com.google.protobuf.GeneratedMessageV3
-        .serializeIntegerMapTo(
-          output,
-          internalGetAllowControllerMap(),
-          AllowControllerMapDefaultEntryHolder.defaultEntry,
-          15);
+      if (unk3300JDPADLFFFDK_ != emu.grasscutter.net.proto.GCGPhaseTypeOuterClass.GCGPhaseType.GCG_PHASE_TYPE_INVALID.getNumber()) {
+        output.writeEnum(15, unk3300JDPADLFFFDK_);
+      }
       unknownFields.writeTo(output);
     }
 
@@ -345,23 +279,17 @@ public final class GCGMsgPhaseChangeOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (afterPhase_ != emu.grasscutter.net.proto.GCGPhaseTypeOuterClass.GCGPhaseType.GCG_PHASE_TYPE_INVALID.getNumber()) {
+      if (unk3300GNAIDDMDEBN_ != emu.grasscutter.net.proto.GCGPhaseTypeOuterClass.GCGPhaseType.GCG_PHASE_TYPE_INVALID.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(5, afterPhase_);
+          .computeEnumSize(3, unk3300GNAIDDMDEBN_);
       }
-      if (beforePhase_ != emu.grasscutter.net.proto.GCGPhaseTypeOuterClass.GCGPhaseType.GCG_PHASE_TYPE_INVALID.getNumber()) {
+      for (int i = 0; i < allowControllerMap_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(12, beforePhase_);
+          .computeMessageSize(11, allowControllerMap_.get(i));
       }
-      for (java.util.Map.Entry<java.lang.Integer, java.lang.Integer> entry
-           : internalGetAllowControllerMap().getMap().entrySet()) {
-        com.google.protobuf.MapEntry<java.lang.Integer, java.lang.Integer>
-        allowControllerMap__ = AllowControllerMapDefaultEntryHolder.defaultEntry.newBuilderForType()
-            .setKey(entry.getKey())
-            .setValue(entry.getValue())
-            .build();
+      if (unk3300JDPADLFFFDK_ != emu.grasscutter.net.proto.GCGPhaseTypeOuterClass.GCGPhaseType.GCG_PHASE_TYPE_INVALID.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
-            .computeMessageSize(15, allowControllerMap__);
+          .computeEnumSize(15, unk3300JDPADLFFFDK_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -378,10 +306,10 @@ public final class GCGMsgPhaseChangeOuterClass {
       }
       emu.grasscutter.net.proto.GCGMsgPhaseChangeOuterClass.GCGMsgPhaseChange other = (emu.grasscutter.net.proto.GCGMsgPhaseChangeOuterClass.GCGMsgPhaseChange) obj;
 
-      if (!internalGetAllowControllerMap().equals(
-          other.internalGetAllowControllerMap())) return false;
-      if (beforePhase_ != other.beforePhase_) return false;
-      if (afterPhase_ != other.afterPhase_) return false;
+      if (unk3300JDPADLFFFDK_ != other.unk3300JDPADLFFFDK_) return false;
+      if (unk3300GNAIDDMDEBN_ != other.unk3300GNAIDDMDEBN_) return false;
+      if (!getAllowControllerMapList()
+          .equals(other.getAllowControllerMapList())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -393,14 +321,14 @@ public final class GCGMsgPhaseChangeOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (!internalGetAllowControllerMap().getMap().isEmpty()) {
+      hash = (37 * hash) + UNK3300_JDPADLFFFDK_FIELD_NUMBER;
+      hash = (53 * hash) + unk3300JDPADLFFFDK_;
+      hash = (37 * hash) + UNK3300_GNAIDDMDEBN_FIELD_NUMBER;
+      hash = (53 * hash) + unk3300GNAIDDMDEBN_;
+      if (getAllowControllerMapCount() > 0) {
         hash = (37 * hash) + ALLOW_CONTROLLER_MAP_FIELD_NUMBER;
-        hash = (53 * hash) + internalGetAllowControllerMap().hashCode();
+        hash = (53 * hash) + getAllowControllerMapList().hashCode();
       }
-      hash = (37 * hash) + BEFORE_PHASE_FIELD_NUMBER;
-      hash = (53 * hash) + beforePhase_;
-      hash = (37 * hash) + AFTER_PHASE_FIELD_NUMBER;
-      hash = (53 * hash) + afterPhase_;
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -508,28 +436,6 @@ public final class GCGMsgPhaseChangeOuterClass {
         return emu.grasscutter.net.proto.GCGMsgPhaseChangeOuterClass.internal_static_GCGMsgPhaseChange_descriptor;
       }
 
-      @SuppressWarnings({"rawtypes"})
-      protected com.google.protobuf.MapField internalGetMapField(
-          int number) {
-        switch (number) {
-          case 15:
-            return internalGetAllowControllerMap();
-          default:
-            throw new RuntimeException(
-                "Invalid map field number: " + number);
-        }
-      }
-      @SuppressWarnings({"rawtypes"})
-      protected com.google.protobuf.MapField internalGetMutableMapField(
-          int number) {
-        switch (number) {
-          case 15:
-            return internalGetMutableAllowControllerMap();
-          default:
-            throw new RuntimeException(
-                "Invalid map field number: " + number);
-        }
-      }
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
@@ -551,16 +457,22 @@ public final class GCGMsgPhaseChangeOuterClass {
       private void maybeForceBuilderInitialization() {
         if (com.google.protobuf.GeneratedMessageV3
                 .alwaysUseFieldBuilders) {
+          getAllowControllerMapFieldBuilder();
         }
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        internalGetMutableAllowControllerMap().clear();
-        beforePhase_ = 0;
+        unk3300JDPADLFFFDK_ = 0;
 
-        afterPhase_ = 0;
+        unk3300GNAIDDMDEBN_ = 0;
 
+        if (allowControllerMapBuilder_ == null) {
+          allowControllerMap_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000001);
+        } else {
+          allowControllerMapBuilder_.clear();
+        }
         return this;
       }
 
@@ -588,10 +500,17 @@ public final class GCGMsgPhaseChangeOuterClass {
       public emu.grasscutter.net.proto.GCGMsgPhaseChangeOuterClass.GCGMsgPhaseChange buildPartial() {
         emu.grasscutter.net.proto.GCGMsgPhaseChangeOuterClass.GCGMsgPhaseChange result = new emu.grasscutter.net.proto.GCGMsgPhaseChangeOuterClass.GCGMsgPhaseChange(this);
         int from_bitField0_ = bitField0_;
-        result.allowControllerMap_ = internalGetAllowControllerMap();
-        result.allowControllerMap_.makeImmutable();
-        result.beforePhase_ = beforePhase_;
-        result.afterPhase_ = afterPhase_;
+        result.unk3300JDPADLFFFDK_ = unk3300JDPADLFFFDK_;
+        result.unk3300GNAIDDMDEBN_ = unk3300GNAIDDMDEBN_;
+        if (allowControllerMapBuilder_ == null) {
+          if (((bitField0_ & 0x00000001) != 0)) {
+            allowControllerMap_ = java.util.Collections.unmodifiableList(allowControllerMap_);
+            bitField0_ = (bitField0_ & ~0x00000001);
+          }
+          result.allowControllerMap_ = allowControllerMap_;
+        } else {
+          result.allowControllerMap_ = allowControllerMapBuilder_.build();
+        }
         onBuilt();
         return result;
       }
@@ -640,13 +559,37 @@ public final class GCGMsgPhaseChangeOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.GCGMsgPhaseChangeOuterClass.GCGMsgPhaseChange other) {
         if (other == emu.grasscutter.net.proto.GCGMsgPhaseChangeOuterClass.GCGMsgPhaseChange.getDefaultInstance()) return this;
-        internalGetMutableAllowControllerMap().mergeFrom(
-            other.internalGetAllowControllerMap());
-        if (other.beforePhase_ != 0) {
-          setBeforePhaseValue(other.getBeforePhaseValue());
+        if (other.unk3300JDPADLFFFDK_ != 0) {
+          setUnk3300JDPADLFFFDKValue(other.getUnk3300JDPADLFFFDKValue());
         }
-        if (other.afterPhase_ != 0) {
-          setAfterPhaseValue(other.getAfterPhaseValue());
+        if (other.unk3300GNAIDDMDEBN_ != 0) {
+          setUnk3300GNAIDDMDEBNValue(other.getUnk3300GNAIDDMDEBNValue());
+        }
+        if (allowControllerMapBuilder_ == null) {
+          if (!other.allowControllerMap_.isEmpty()) {
+            if (allowControllerMap_.isEmpty()) {
+              allowControllerMap_ = other.allowControllerMap_;
+              bitField0_ = (bitField0_ & ~0x00000001);
+            } else {
+              ensureAllowControllerMapIsMutable();
+              allowControllerMap_.addAll(other.allowControllerMap_);
+            }
+            onChanged();
+          }
+        } else {
+          if (!other.allowControllerMap_.isEmpty()) {
+            if (allowControllerMapBuilder_.isEmpty()) {
+              allowControllerMapBuilder_.dispose();
+              allowControllerMapBuilder_ = null;
+              allowControllerMap_ = other.allowControllerMap_;
+              bitField0_ = (bitField0_ & ~0x00000001);
+              allowControllerMapBuilder_ = 
+                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+                   getAllowControllerMapFieldBuilder() : null;
+            } else {
+              allowControllerMapBuilder_.addAllMessages(other.allowControllerMap_);
+            }
+          }
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -678,240 +621,352 @@ public final class GCGMsgPhaseChangeOuterClass {
       }
       private int bitField0_;
 
-      private com.google.protobuf.MapField<
-          java.lang.Integer, java.lang.Integer> allowControllerMap_;
-      private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
-      internalGetAllowControllerMap() {
-        if (allowControllerMap_ == null) {
-          return com.google.protobuf.MapField.emptyMapField(
-              AllowControllerMapDefaultEntryHolder.defaultEntry);
-        }
-        return allowControllerMap_;
+      private int unk3300JDPADLFFFDK_ = 0;
+      /**
+       * <code>.GCGPhaseType Unk3300_JDPADLFFFDK = 15;</code>
+       * @return The enum numeric value on the wire for unk3300JDPADLFFFDK.
+       */
+      @java.lang.Override public int getUnk3300JDPADLFFFDKValue() {
+        return unk3300JDPADLFFFDK_;
       }
-      private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
-      internalGetMutableAllowControllerMap() {
-        onChanged();;
-        if (allowControllerMap_ == null) {
-          allowControllerMap_ = com.google.protobuf.MapField.newMapField(
-              AllowControllerMapDefaultEntryHolder.defaultEntry);
+      /**
+       * <code>.GCGPhaseType Unk3300_JDPADLFFFDK = 15;</code>
+       * @param value The enum numeric value on the wire for unk3300JDPADLFFFDK to set.
+       * @return This builder for chaining.
+       */
+      public Builder setUnk3300JDPADLFFFDKValue(int value) {
+        
+        unk3300JDPADLFFFDK_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.GCGPhaseType Unk3300_JDPADLFFFDK = 15;</code>
+       * @return The unk3300JDPADLFFFDK.
+       */
+      @java.lang.Override
+      public emu.grasscutter.net.proto.GCGPhaseTypeOuterClass.GCGPhaseType getUnk3300JDPADLFFFDK() {
+        @SuppressWarnings("deprecation")
+        emu.grasscutter.net.proto.GCGPhaseTypeOuterClass.GCGPhaseType result = emu.grasscutter.net.proto.GCGPhaseTypeOuterClass.GCGPhaseType.valueOf(unk3300JDPADLFFFDK_);
+        return result == null ? emu.grasscutter.net.proto.GCGPhaseTypeOuterClass.GCGPhaseType.UNRECOGNIZED : result;
+      }
+      /**
+       * <code>.GCGPhaseType Unk3300_JDPADLFFFDK = 15;</code>
+       * @param value The unk3300JDPADLFFFDK to set.
+       * @return This builder for chaining.
+       */
+      public Builder setUnk3300JDPADLFFFDK(emu.grasscutter.net.proto.GCGPhaseTypeOuterClass.GCGPhaseType value) {
+        if (value == null) {
+          throw new NullPointerException();
         }
-        if (!allowControllerMap_.isMutable()) {
-          allowControllerMap_ = allowControllerMap_.copy();
-        }
-        return allowControllerMap_;
+        
+        unk3300JDPADLFFFDK_ = value.getNumber();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.GCGPhaseType Unk3300_JDPADLFFFDK = 15;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearUnk3300JDPADLFFFDK() {
+        
+        unk3300JDPADLFFFDK_ = 0;
+        onChanged();
+        return this;
       }
 
+      private int unk3300GNAIDDMDEBN_ = 0;
+      /**
+       * <code>.GCGPhaseType Unk3300_GNAIDDMDEBN = 3;</code>
+       * @return The enum numeric value on the wire for unk3300GNAIDDMDEBN.
+       */
+      @java.lang.Override public int getUnk3300GNAIDDMDEBNValue() {
+        return unk3300GNAIDDMDEBN_;
+      }
+      /**
+       * <code>.GCGPhaseType Unk3300_GNAIDDMDEBN = 3;</code>
+       * @param value The enum numeric value on the wire for unk3300GNAIDDMDEBN to set.
+       * @return This builder for chaining.
+       */
+      public Builder setUnk3300GNAIDDMDEBNValue(int value) {
+        
+        unk3300GNAIDDMDEBN_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.GCGPhaseType Unk3300_GNAIDDMDEBN = 3;</code>
+       * @return The unk3300GNAIDDMDEBN.
+       */
+      @java.lang.Override
+      public emu.grasscutter.net.proto.GCGPhaseTypeOuterClass.GCGPhaseType getUnk3300GNAIDDMDEBN() {
+        @SuppressWarnings("deprecation")
+        emu.grasscutter.net.proto.GCGPhaseTypeOuterClass.GCGPhaseType result = emu.grasscutter.net.proto.GCGPhaseTypeOuterClass.GCGPhaseType.valueOf(unk3300GNAIDDMDEBN_);
+        return result == null ? emu.grasscutter.net.proto.GCGPhaseTypeOuterClass.GCGPhaseType.UNRECOGNIZED : result;
+      }
+      /**
+       * <code>.GCGPhaseType Unk3300_GNAIDDMDEBN = 3;</code>
+       * @param value The unk3300GNAIDDMDEBN to set.
+       * @return This builder for chaining.
+       */
+      public Builder setUnk3300GNAIDDMDEBN(emu.grasscutter.net.proto.GCGPhaseTypeOuterClass.GCGPhaseType value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        
+        unk3300GNAIDDMDEBN_ = value.getNumber();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.GCGPhaseType Unk3300_GNAIDDMDEBN = 3;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearUnk3300GNAIDDMDEBN() {
+        
+        unk3300GNAIDDMDEBN_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private java.util.List<emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair> allowControllerMap_ =
+        java.util.Collections.emptyList();
+      private void ensureAllowControllerMapIsMutable() {
+        if (!((bitField0_ & 0x00000001) != 0)) {
+          allowControllerMap_ = new java.util.ArrayList<emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair>(allowControllerMap_);
+          bitField0_ |= 0x00000001;
+         }
+      }
+
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair, emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.Builder, emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32PairOrBuilder> allowControllerMapBuilder_;
+
+      /**
+       * <code>repeated .Uint32Pair allow_controller_map = 11;</code>
+       */
+      public java.util.List<emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair> getAllowControllerMapList() {
+        if (allowControllerMapBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(allowControllerMap_);
+        } else {
+          return allowControllerMapBuilder_.getMessageList();
+        }
+      }
+      /**
+       * <code>repeated .Uint32Pair allow_controller_map = 11;</code>
+       */
       public int getAllowControllerMapCount() {
-        return internalGetAllowControllerMap().getMap().size();
-      }
-      /**
-       * <code>map&lt;uint32, uint32&gt; allow_controller_map = 15;</code>
-       */
-
-      @java.lang.Override
-      public boolean containsAllowControllerMap(
-          int key) {
-        
-        return internalGetAllowControllerMap().getMap().containsKey(key);
-      }
-      /**
-       * Use {@link #getAllowControllerMapMap()} instead.
-       */
-      @java.lang.Override
-      @java.lang.Deprecated
-      public java.util.Map<java.lang.Integer, java.lang.Integer> getAllowControllerMap() {
-        return getAllowControllerMapMap();
-      }
-      /**
-       * <code>map&lt;uint32, uint32&gt; allow_controller_map = 15;</code>
-       */
-      @java.lang.Override
-
-      public java.util.Map<java.lang.Integer, java.lang.Integer> getAllowControllerMapMap() {
-        return internalGetAllowControllerMap().getMap();
-      }
-      /**
-       * <code>map&lt;uint32, uint32&gt; allow_controller_map = 15;</code>
-       */
-      @java.lang.Override
-
-      public int getAllowControllerMapOrDefault(
-          int key,
-          int defaultValue) {
-        
-        java.util.Map<java.lang.Integer, java.lang.Integer> map =
-            internalGetAllowControllerMap().getMap();
-        return map.containsKey(key) ? map.get(key) : defaultValue;
-      }
-      /**
-       * <code>map&lt;uint32, uint32&gt; allow_controller_map = 15;</code>
-       */
-      @java.lang.Override
-
-      public int getAllowControllerMapOrThrow(
-          int key) {
-        
-        java.util.Map<java.lang.Integer, java.lang.Integer> map =
-            internalGetAllowControllerMap().getMap();
-        if (!map.containsKey(key)) {
-          throw new java.lang.IllegalArgumentException();
+        if (allowControllerMapBuilder_ == null) {
+          return allowControllerMap_.size();
+        } else {
+          return allowControllerMapBuilder_.getCount();
         }
-        return map.get(key);
       }
-
+      /**
+       * <code>repeated .Uint32Pair allow_controller_map = 11;</code>
+       */
+      public emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair getAllowControllerMap(int index) {
+        if (allowControllerMapBuilder_ == null) {
+          return allowControllerMap_.get(index);
+        } else {
+          return allowControllerMapBuilder_.getMessage(index);
+        }
+      }
+      /**
+       * <code>repeated .Uint32Pair allow_controller_map = 11;</code>
+       */
+      public Builder setAllowControllerMap(
+          int index, emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair value) {
+        if (allowControllerMapBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureAllowControllerMapIsMutable();
+          allowControllerMap_.set(index, value);
+          onChanged();
+        } else {
+          allowControllerMapBuilder_.setMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .Uint32Pair allow_controller_map = 11;</code>
+       */
+      public Builder setAllowControllerMap(
+          int index, emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.Builder builderForValue) {
+        if (allowControllerMapBuilder_ == null) {
+          ensureAllowControllerMapIsMutable();
+          allowControllerMap_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          allowControllerMapBuilder_.setMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .Uint32Pair allow_controller_map = 11;</code>
+       */
+      public Builder addAllowControllerMap(emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair value) {
+        if (allowControllerMapBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureAllowControllerMapIsMutable();
+          allowControllerMap_.add(value);
+          onChanged();
+        } else {
+          allowControllerMapBuilder_.addMessage(value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .Uint32Pair allow_controller_map = 11;</code>
+       */
+      public Builder addAllowControllerMap(
+          int index, emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair value) {
+        if (allowControllerMapBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureAllowControllerMapIsMutable();
+          allowControllerMap_.add(index, value);
+          onChanged();
+        } else {
+          allowControllerMapBuilder_.addMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .Uint32Pair allow_controller_map = 11;</code>
+       */
+      public Builder addAllowControllerMap(
+          emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.Builder builderForValue) {
+        if (allowControllerMapBuilder_ == null) {
+          ensureAllowControllerMapIsMutable();
+          allowControllerMap_.add(builderForValue.build());
+          onChanged();
+        } else {
+          allowControllerMapBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .Uint32Pair allow_controller_map = 11;</code>
+       */
+      public Builder addAllowControllerMap(
+          int index, emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.Builder builderForValue) {
+        if (allowControllerMapBuilder_ == null) {
+          ensureAllowControllerMapIsMutable();
+          allowControllerMap_.add(index, builderForValue.build());
+          onChanged();
+        } else {
+          allowControllerMapBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .Uint32Pair allow_controller_map = 11;</code>
+       */
+      public Builder addAllAllowControllerMap(
+          java.lang.Iterable<? extends emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair> values) {
+        if (allowControllerMapBuilder_ == null) {
+          ensureAllowControllerMapIsMutable();
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, allowControllerMap_);
+          onChanged();
+        } else {
+          allowControllerMapBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .Uint32Pair allow_controller_map = 11;</code>
+       */
       public Builder clearAllowControllerMap() {
-        internalGetMutableAllowControllerMap().getMutableMap()
-            .clear();
-        return this;
-      }
-      /**
-       * <code>map&lt;uint32, uint32&gt; allow_controller_map = 15;</code>
-       */
-
-      public Builder removeAllowControllerMap(
-          int key) {
-        
-        internalGetMutableAllowControllerMap().getMutableMap()
-            .remove(key);
-        return this;
-      }
-      /**
-       * Use alternate mutation accessors instead.
-       */
-      @java.lang.Deprecated
-      public java.util.Map<java.lang.Integer, java.lang.Integer>
-      getMutableAllowControllerMap() {
-        return internalGetMutableAllowControllerMap().getMutableMap();
-      }
-      /**
-       * <code>map&lt;uint32, uint32&gt; allow_controller_map = 15;</code>
-       */
-      public Builder putAllowControllerMap(
-          int key,
-          int value) {
-        
-        
-        internalGetMutableAllowControllerMap().getMutableMap()
-            .put(key, value);
-        return this;
-      }
-      /**
-       * <code>map&lt;uint32, uint32&gt; allow_controller_map = 15;</code>
-       */
-
-      public Builder putAllAllowControllerMap(
-          java.util.Map<java.lang.Integer, java.lang.Integer> values) {
-        internalGetMutableAllowControllerMap().getMutableMap()
-            .putAll(values);
-        return this;
-      }
-
-      private int beforePhase_ = 0;
-      /**
-       * <code>.GCGPhaseType before_phase = 12;</code>
-       * @return The enum numeric value on the wire for beforePhase.
-       */
-      @java.lang.Override public int getBeforePhaseValue() {
-        return beforePhase_;
-      }
-      /**
-       * <code>.GCGPhaseType before_phase = 12;</code>
-       * @param value The enum numeric value on the wire for beforePhase to set.
-       * @return This builder for chaining.
-       */
-      public Builder setBeforePhaseValue(int value) {
-        
-        beforePhase_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>.GCGPhaseType before_phase = 12;</code>
-       * @return The beforePhase.
-       */
-      @java.lang.Override
-      public emu.grasscutter.net.proto.GCGPhaseTypeOuterClass.GCGPhaseType getBeforePhase() {
-        @SuppressWarnings("deprecation")
-        emu.grasscutter.net.proto.GCGPhaseTypeOuterClass.GCGPhaseType result = emu.grasscutter.net.proto.GCGPhaseTypeOuterClass.GCGPhaseType.valueOf(beforePhase_);
-        return result == null ? emu.grasscutter.net.proto.GCGPhaseTypeOuterClass.GCGPhaseType.UNRECOGNIZED : result;
-      }
-      /**
-       * <code>.GCGPhaseType before_phase = 12;</code>
-       * @param value The beforePhase to set.
-       * @return This builder for chaining.
-       */
-      public Builder setBeforePhase(emu.grasscutter.net.proto.GCGPhaseTypeOuterClass.GCGPhaseType value) {
-        if (value == null) {
-          throw new NullPointerException();
+        if (allowControllerMapBuilder_ == null) {
+          allowControllerMap_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000001);
+          onChanged();
+        } else {
+          allowControllerMapBuilder_.clear();
         }
-        
-        beforePhase_ = value.getNumber();
-        onChanged();
         return this;
       }
       /**
-       * <code>.GCGPhaseType before_phase = 12;</code>
-       * @return This builder for chaining.
+       * <code>repeated .Uint32Pair allow_controller_map = 11;</code>
        */
-      public Builder clearBeforePhase() {
-        
-        beforePhase_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int afterPhase_ = 0;
-      /**
-       * <code>.GCGPhaseType after_phase = 5;</code>
-       * @return The enum numeric value on the wire for afterPhase.
-       */
-      @java.lang.Override public int getAfterPhaseValue() {
-        return afterPhase_;
-      }
-      /**
-       * <code>.GCGPhaseType after_phase = 5;</code>
-       * @param value The enum numeric value on the wire for afterPhase to set.
-       * @return This builder for chaining.
-       */
-      public Builder setAfterPhaseValue(int value) {
-        
-        afterPhase_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>.GCGPhaseType after_phase = 5;</code>
-       * @return The afterPhase.
-       */
-      @java.lang.Override
-      public emu.grasscutter.net.proto.GCGPhaseTypeOuterClass.GCGPhaseType getAfterPhase() {
-        @SuppressWarnings("deprecation")
-        emu.grasscutter.net.proto.GCGPhaseTypeOuterClass.GCGPhaseType result = emu.grasscutter.net.proto.GCGPhaseTypeOuterClass.GCGPhaseType.valueOf(afterPhase_);
-        return result == null ? emu.grasscutter.net.proto.GCGPhaseTypeOuterClass.GCGPhaseType.UNRECOGNIZED : result;
-      }
-      /**
-       * <code>.GCGPhaseType after_phase = 5;</code>
-       * @param value The afterPhase to set.
-       * @return This builder for chaining.
-       */
-      public Builder setAfterPhase(emu.grasscutter.net.proto.GCGPhaseTypeOuterClass.GCGPhaseType value) {
-        if (value == null) {
-          throw new NullPointerException();
+      public Builder removeAllowControllerMap(int index) {
+        if (allowControllerMapBuilder_ == null) {
+          ensureAllowControllerMapIsMutable();
+          allowControllerMap_.remove(index);
+          onChanged();
+        } else {
+          allowControllerMapBuilder_.remove(index);
         }
-        
-        afterPhase_ = value.getNumber();
-        onChanged();
         return this;
       }
       /**
-       * <code>.GCGPhaseType after_phase = 5;</code>
-       * @return This builder for chaining.
+       * <code>repeated .Uint32Pair allow_controller_map = 11;</code>
        */
-      public Builder clearAfterPhase() {
-        
-        afterPhase_ = 0;
-        onChanged();
-        return this;
+      public emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.Builder getAllowControllerMapBuilder(
+          int index) {
+        return getAllowControllerMapFieldBuilder().getBuilder(index);
+      }
+      /**
+       * <code>repeated .Uint32Pair allow_controller_map = 11;</code>
+       */
+      public emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32PairOrBuilder getAllowControllerMapOrBuilder(
+          int index) {
+        if (allowControllerMapBuilder_ == null) {
+          return allowControllerMap_.get(index);  } else {
+          return allowControllerMapBuilder_.getMessageOrBuilder(index);
+        }
+      }
+      /**
+       * <code>repeated .Uint32Pair allow_controller_map = 11;</code>
+       */
+      public java.util.List<? extends emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32PairOrBuilder> 
+           getAllowControllerMapOrBuilderList() {
+        if (allowControllerMapBuilder_ != null) {
+          return allowControllerMapBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(allowControllerMap_);
+        }
+      }
+      /**
+       * <code>repeated .Uint32Pair allow_controller_map = 11;</code>
+       */
+      public emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.Builder addAllowControllerMapBuilder() {
+        return getAllowControllerMapFieldBuilder().addBuilder(
+            emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .Uint32Pair allow_controller_map = 11;</code>
+       */
+      public emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.Builder addAllowControllerMapBuilder(
+          int index) {
+        return getAllowControllerMapFieldBuilder().addBuilder(
+            index, emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .Uint32Pair allow_controller_map = 11;</code>
+       */
+      public java.util.List<emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.Builder> 
+           getAllowControllerMapBuilderList() {
+        return getAllowControllerMapFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair, emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.Builder, emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32PairOrBuilder> 
+          getAllowControllerMapFieldBuilder() {
+        if (allowControllerMapBuilder_ == null) {
+          allowControllerMapBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+              emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair, emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.Builder, emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32PairOrBuilder>(
+                  allowControllerMap_,
+                  ((bitField0_ & 0x00000001) != 0),
+                  getParentForChildren(),
+                  isClean());
+          allowControllerMap_ = null;
+        }
+        return allowControllerMapBuilder_;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -971,11 +1026,6 @@ public final class GCGMsgPhaseChangeOuterClass {
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_GCGMsgPhaseChange_fieldAccessorTable;
-  private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_GCGMsgPhaseChange_AllowControllerMapEntry_descriptor;
-  private static final 
-    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_GCGMsgPhaseChange_AllowControllerMapEntry_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -986,32 +1036,27 @@ public final class GCGMsgPhaseChangeOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\027GCGMsgPhaseChange.proto\032\022GCGPhaseType." +
-      "proto\"\341\001\n\021GCGMsgPhaseChange\022H\n\024allow_con" +
-      "troller_map\030\017 \003(\0132*.GCGMsgPhaseChange.Al" +
-      "lowControllerMapEntry\022#\n\014before_phase\030\014 " +
-      "\001(\0162\r.GCGPhaseType\022\"\n\013after_phase\030\005 \001(\0162" +
-      "\r.GCGPhaseType\0329\n\027AllowControllerMapEntr" +
-      "y\022\013\n\003key\030\001 \001(\r\022\r\n\005value\030\002 \001(\r:\0028\001B\033\n\031emu" +
-      ".grasscutter.net.protob\006proto3"
+      "proto\032\020Uint32Pair.proto\"\226\001\n\021GCGMsgPhaseC" +
+      "hange\022*\n\023Unk3300_JDPADLFFFDK\030\017 \001(\0162\r.GCG" +
+      "PhaseType\022*\n\023Unk3300_GNAIDDMDEBN\030\003 \001(\0162\r" +
+      ".GCGPhaseType\022)\n\024allow_controller_map\030\013 " +
+      "\003(\0132\013.Uint32PairB\033\n\031emu.grasscutter.net." +
+      "protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
           emu.grasscutter.net.proto.GCGPhaseTypeOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.Uint32PairOuterClass.getDescriptor(),
         });
     internal_static_GCGMsgPhaseChange_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_GCGMsgPhaseChange_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GCGMsgPhaseChange_descriptor,
-        new java.lang.String[] { "AllowControllerMap", "BeforePhase", "AfterPhase", });
-    internal_static_GCGMsgPhaseChange_AllowControllerMapEntry_descriptor =
-      internal_static_GCGMsgPhaseChange_descriptor.getNestedTypes().get(0);
-    internal_static_GCGMsgPhaseChange_AllowControllerMapEntry_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_GCGMsgPhaseChange_AllowControllerMapEntry_descriptor,
-        new java.lang.String[] { "Key", "Value", });
+        new java.lang.String[] { "Unk3300JDPADLFFFDK", "Unk3300GNAIDDMDEBN", "AllowControllerMap", });
     emu.grasscutter.net.proto.GCGPhaseTypeOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.Uint32PairOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

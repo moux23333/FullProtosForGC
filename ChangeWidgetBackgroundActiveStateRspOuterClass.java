@@ -19,22 +19,26 @@ public final class ChangeWidgetBackgroundActiveStateRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 8;</code>
-     * @return The retcode.
-     */
-    int getRetcode();
-
-    /**
-     * <code>uint32 material_id = 6;</code>
+     * <code>uint32 material_id = 7;</code>
      * @return The materialId.
      */
     int getMaterialId();
+
+    /**
+     * <code>int32 retcode = 1;</code>
+     * @return The retcode.
+     */
+    int getRetcode();
   }
   /**
    * <pre>
-   * CmdId: 6060
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 5955;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code ChangeWidgetBackgroundActiveStateRsp}
@@ -81,14 +85,14 @@ public final class ChangeWidgetBackgroundActiveStateRspOuterClass {
             case 0:
               done = true;
               break;
-            case 48: {
-
-              materialId_ = input.readUInt32();
-              break;
-            }
-            case 64: {
+            case 8: {
 
               retcode_ = input.readInt32();
+              break;
+            }
+            case 56: {
+
+              materialId_ = input.readUInt32();
               break;
             }
             default: {
@@ -123,26 +127,26 @@ public final class ChangeWidgetBackgroundActiveStateRspOuterClass {
               emu.grasscutter.net.proto.ChangeWidgetBackgroundActiveStateRspOuterClass.ChangeWidgetBackgroundActiveStateRsp.class, emu.grasscutter.net.proto.ChangeWidgetBackgroundActiveStateRspOuterClass.ChangeWidgetBackgroundActiveStateRsp.Builder.class);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 8;
-    private int retcode_;
-    /**
-     * <code>int32 retcode = 8;</code>
-     * @return The retcode.
-     */
-    @java.lang.Override
-    public int getRetcode() {
-      return retcode_;
-    }
-
-    public static final int MATERIAL_ID_FIELD_NUMBER = 6;
+    public static final int MATERIAL_ID_FIELD_NUMBER = 7;
     private int materialId_;
     /**
-     * <code>uint32 material_id = 6;</code>
+     * <code>uint32 material_id = 7;</code>
      * @return The materialId.
      */
     @java.lang.Override
     public int getMaterialId() {
       return materialId_;
+    }
+
+    public static final int RETCODE_FIELD_NUMBER = 1;
+    private int retcode_;
+    /**
+     * <code>int32 retcode = 1;</code>
+     * @return The retcode.
+     */
+    @java.lang.Override
+    public int getRetcode() {
+      return retcode_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -159,11 +163,11 @@ public final class ChangeWidgetBackgroundActiveStateRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (materialId_ != 0) {
-        output.writeUInt32(6, materialId_);
-      }
       if (retcode_ != 0) {
-        output.writeInt32(8, retcode_);
+        output.writeInt32(1, retcode_);
+      }
+      if (materialId_ != 0) {
+        output.writeUInt32(7, materialId_);
       }
       unknownFields.writeTo(output);
     }
@@ -174,13 +178,13 @@ public final class ChangeWidgetBackgroundActiveStateRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (materialId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, materialId_);
-      }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(8, retcode_);
+          .computeInt32Size(1, retcode_);
+      }
+      if (materialId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(7, materialId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -197,10 +201,10 @@ public final class ChangeWidgetBackgroundActiveStateRspOuterClass {
       }
       emu.grasscutter.net.proto.ChangeWidgetBackgroundActiveStateRspOuterClass.ChangeWidgetBackgroundActiveStateRsp other = (emu.grasscutter.net.proto.ChangeWidgetBackgroundActiveStateRspOuterClass.ChangeWidgetBackgroundActiveStateRsp) obj;
 
-      if (getRetcode()
-          != other.getRetcode()) return false;
       if (getMaterialId()
           != other.getMaterialId()) return false;
+      if (getRetcode()
+          != other.getRetcode()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -212,10 +216,10 @@ public final class ChangeWidgetBackgroundActiveStateRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
-      hash = (53 * hash) + getRetcode();
       hash = (37 * hash) + MATERIAL_ID_FIELD_NUMBER;
       hash = (53 * hash) + getMaterialId();
+      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
+      hash = (53 * hash) + getRetcode();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -313,9 +317,13 @@ public final class ChangeWidgetBackgroundActiveStateRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 6060
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 5955;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code ChangeWidgetBackgroundActiveStateRsp}
@@ -355,9 +363,9 @@ public final class ChangeWidgetBackgroundActiveStateRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        retcode_ = 0;
-
         materialId_ = 0;
+
+        retcode_ = 0;
 
         return this;
       }
@@ -385,8 +393,8 @@ public final class ChangeWidgetBackgroundActiveStateRspOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.ChangeWidgetBackgroundActiveStateRspOuterClass.ChangeWidgetBackgroundActiveStateRsp buildPartial() {
         emu.grasscutter.net.proto.ChangeWidgetBackgroundActiveStateRspOuterClass.ChangeWidgetBackgroundActiveStateRsp result = new emu.grasscutter.net.proto.ChangeWidgetBackgroundActiveStateRspOuterClass.ChangeWidgetBackgroundActiveStateRsp(this);
-        result.retcode_ = retcode_;
         result.materialId_ = materialId_;
+        result.retcode_ = retcode_;
         onBuilt();
         return result;
       }
@@ -435,11 +443,11 @@ public final class ChangeWidgetBackgroundActiveStateRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.ChangeWidgetBackgroundActiveStateRspOuterClass.ChangeWidgetBackgroundActiveStateRsp other) {
         if (other == emu.grasscutter.net.proto.ChangeWidgetBackgroundActiveStateRspOuterClass.ChangeWidgetBackgroundActiveStateRsp.getDefaultInstance()) return this;
-        if (other.getRetcode() != 0) {
-          setRetcode(other.getRetcode());
-        }
         if (other.getMaterialId() != 0) {
           setMaterialId(other.getMaterialId());
+        }
+        if (other.getRetcode() != 0) {
+          setRetcode(other.getRetcode());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -470,40 +478,9 @@ public final class ChangeWidgetBackgroundActiveStateRspOuterClass {
         return this;
       }
 
-      private int retcode_ ;
-      /**
-       * <code>int32 retcode = 8;</code>
-       * @return The retcode.
-       */
-      @java.lang.Override
-      public int getRetcode() {
-        return retcode_;
-      }
-      /**
-       * <code>int32 retcode = 8;</code>
-       * @param value The retcode to set.
-       * @return This builder for chaining.
-       */
-      public Builder setRetcode(int value) {
-        
-        retcode_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>int32 retcode = 8;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearRetcode() {
-        
-        retcode_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int materialId_ ;
       /**
-       * <code>uint32 material_id = 6;</code>
+       * <code>uint32 material_id = 7;</code>
        * @return The materialId.
        */
       @java.lang.Override
@@ -511,7 +488,7 @@ public final class ChangeWidgetBackgroundActiveStateRspOuterClass {
         return materialId_;
       }
       /**
-       * <code>uint32 material_id = 6;</code>
+       * <code>uint32 material_id = 7;</code>
        * @param value The materialId to set.
        * @return This builder for chaining.
        */
@@ -522,12 +499,43 @@ public final class ChangeWidgetBackgroundActiveStateRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 material_id = 6;</code>
+       * <code>uint32 material_id = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearMaterialId() {
         
         materialId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int retcode_ ;
+      /**
+       * <code>int32 retcode = 1;</code>
+       * @return The retcode.
+       */
+      @java.lang.Override
+      public int getRetcode() {
+        return retcode_;
+      }
+      /**
+       * <code>int32 retcode = 1;</code>
+       * @param value The retcode to set.
+       * @return This builder for chaining.
+       */
+      public Builder setRetcode(int value) {
+        
+        retcode_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 retcode = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearRetcode() {
+        
+        retcode_ = 0;
         onChanged();
         return this;
       }
@@ -600,8 +608,8 @@ public final class ChangeWidgetBackgroundActiveStateRspOuterClass {
     java.lang.String[] descriptorData = {
       "\n*ChangeWidgetBackgroundActiveStateRsp.p" +
       "roto\"L\n$ChangeWidgetBackgroundActiveStat" +
-      "eRsp\022\017\n\007retcode\030\010 \001(\005\022\023\n\013material_id\030\006 \001" +
-      "(\rB\033\n\031emu.grasscutter.net.protob\006proto3"
+      "eRsp\022\023\n\013material_id\030\007 \001(\r\022\017\n\007retcode\030\001 \001" +
+      "(\005B\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -612,7 +620,7 @@ public final class ChangeWidgetBackgroundActiveStateRspOuterClass {
     internal_static_ChangeWidgetBackgroundActiveStateRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ChangeWidgetBackgroundActiveStateRsp_descriptor,
-        new java.lang.String[] { "Retcode", "MaterialId", });
+        new java.lang.String[] { "MaterialId", "Retcode", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

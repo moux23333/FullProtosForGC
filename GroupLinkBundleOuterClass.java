@@ -19,46 +19,46 @@ public final class GroupLinkBundleOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.Vector center = 4;</code>
-     * @return Whether the center field is set.
-     */
-    boolean hasCenter();
-    /**
-     * <code>.Vector center = 4;</code>
-     * @return The center.
-     */
-    emu.grasscutter.net.proto.VectorOuterClass.Vector getCenter();
-    /**
-     * <code>.Vector center = 4;</code>
-     */
-    emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getCenterOrBuilder();
-
-    /**
-     * <code>bool is_activated = 12;</code>
-     * @return The isActivated.
-     */
-    boolean getIsActivated();
-
-    /**
-     * <code>uint32 bundle_id = 3;</code>
+     * <code>uint32 bundle_id = 1;</code>
      * @return The bundleId.
      */
     int getBundleId();
 
     /**
-     * <code>bool is_show_mark = 14;</code>
+     * <code>.Vector center = 12;</code>
+     * @return Whether the center field is set.
+     */
+    boolean hasCenter();
+    /**
+     * <code>.Vector center = 12;</code>
+     * @return The center.
+     */
+    emu.grasscutter.net.proto.VectorOuterClass.Vector getCenter();
+    /**
+     * <code>.Vector center = 12;</code>
+     */
+    emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getCenterOrBuilder();
+
+    /**
+     * <code>bool is_show_mark = 11;</code>
      * @return The isShowMark.
      */
     boolean getIsShowMark();
 
     /**
-     * <code>uint32 scene_id = 5;</code>
+     * <code>uint32 scene_id = 2;</code>
      * @return The sceneId.
      */
     int getSceneId();
 
     /**
-     * <code>uint32 radius = 1;</code>
+     * <code>bool is_activated = 10;</code>
+     * @return The isActivated.
+     */
+    boolean getIsActivated();
+
+    /**
+     * <code>uint32 radius = 4;</code>
      * @return The radius.
      */
     int getRadius();
@@ -110,15 +110,30 @@ public final class GroupLinkBundleOuterClass {
               break;
             case 8: {
 
-              radius_ = input.readUInt32();
-              break;
-            }
-            case 24: {
-
               bundleId_ = input.readUInt32();
               break;
             }
-            case 34: {
+            case 16: {
+
+              sceneId_ = input.readUInt32();
+              break;
+            }
+            case 32: {
+
+              radius_ = input.readUInt32();
+              break;
+            }
+            case 80: {
+
+              isActivated_ = input.readBool();
+              break;
+            }
+            case 88: {
+
+              isShowMark_ = input.readBool();
+              break;
+            }
+            case 98: {
               emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder subBuilder = null;
               if (center_ != null) {
                 subBuilder = center_.toBuilder();
@@ -129,21 +144,6 @@ public final class GroupLinkBundleOuterClass {
                 center_ = subBuilder.buildPartial();
               }
 
-              break;
-            }
-            case 40: {
-
-              sceneId_ = input.readUInt32();
-              break;
-            }
-            case 96: {
-
-              isActivated_ = input.readBool();
-              break;
-            }
-            case 112: {
-
-              isShowMark_ = input.readBool();
               break;
             }
             default: {
@@ -178,47 +178,10 @@ public final class GroupLinkBundleOuterClass {
               emu.grasscutter.net.proto.GroupLinkBundleOuterClass.GroupLinkBundle.class, emu.grasscutter.net.proto.GroupLinkBundleOuterClass.GroupLinkBundle.Builder.class);
     }
 
-    public static final int CENTER_FIELD_NUMBER = 4;
-    private emu.grasscutter.net.proto.VectorOuterClass.Vector center_;
-    /**
-     * <code>.Vector center = 4;</code>
-     * @return Whether the center field is set.
-     */
-    @java.lang.Override
-    public boolean hasCenter() {
-      return center_ != null;
-    }
-    /**
-     * <code>.Vector center = 4;</code>
-     * @return The center.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.VectorOuterClass.Vector getCenter() {
-      return center_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : center_;
-    }
-    /**
-     * <code>.Vector center = 4;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getCenterOrBuilder() {
-      return getCenter();
-    }
-
-    public static final int IS_ACTIVATED_FIELD_NUMBER = 12;
-    private boolean isActivated_;
-    /**
-     * <code>bool is_activated = 12;</code>
-     * @return The isActivated.
-     */
-    @java.lang.Override
-    public boolean getIsActivated() {
-      return isActivated_;
-    }
-
-    public static final int BUNDLE_ID_FIELD_NUMBER = 3;
+    public static final int BUNDLE_ID_FIELD_NUMBER = 1;
     private int bundleId_;
     /**
-     * <code>uint32 bundle_id = 3;</code>
+     * <code>uint32 bundle_id = 1;</code>
      * @return The bundleId.
      */
     @java.lang.Override
@@ -226,10 +189,36 @@ public final class GroupLinkBundleOuterClass {
       return bundleId_;
     }
 
-    public static final int IS_SHOW_MARK_FIELD_NUMBER = 14;
+    public static final int CENTER_FIELD_NUMBER = 12;
+    private emu.grasscutter.net.proto.VectorOuterClass.Vector center_;
+    /**
+     * <code>.Vector center = 12;</code>
+     * @return Whether the center field is set.
+     */
+    @java.lang.Override
+    public boolean hasCenter() {
+      return center_ != null;
+    }
+    /**
+     * <code>.Vector center = 12;</code>
+     * @return The center.
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.VectorOuterClass.Vector getCenter() {
+      return center_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : center_;
+    }
+    /**
+     * <code>.Vector center = 12;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getCenterOrBuilder() {
+      return getCenter();
+    }
+
+    public static final int IS_SHOW_MARK_FIELD_NUMBER = 11;
     private boolean isShowMark_;
     /**
-     * <code>bool is_show_mark = 14;</code>
+     * <code>bool is_show_mark = 11;</code>
      * @return The isShowMark.
      */
     @java.lang.Override
@@ -237,10 +226,10 @@ public final class GroupLinkBundleOuterClass {
       return isShowMark_;
     }
 
-    public static final int SCENE_ID_FIELD_NUMBER = 5;
+    public static final int SCENE_ID_FIELD_NUMBER = 2;
     private int sceneId_;
     /**
-     * <code>uint32 scene_id = 5;</code>
+     * <code>uint32 scene_id = 2;</code>
      * @return The sceneId.
      */
     @java.lang.Override
@@ -248,10 +237,21 @@ public final class GroupLinkBundleOuterClass {
       return sceneId_;
     }
 
-    public static final int RADIUS_FIELD_NUMBER = 1;
+    public static final int IS_ACTIVATED_FIELD_NUMBER = 10;
+    private boolean isActivated_;
+    /**
+     * <code>bool is_activated = 10;</code>
+     * @return The isActivated.
+     */
+    @java.lang.Override
+    public boolean getIsActivated() {
+      return isActivated_;
+    }
+
+    public static final int RADIUS_FIELD_NUMBER = 4;
     private int radius_;
     /**
-     * <code>uint32 radius = 1;</code>
+     * <code>uint32 radius = 4;</code>
      * @return The radius.
      */
     @java.lang.Override
@@ -273,23 +273,23 @@ public final class GroupLinkBundleOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (radius_ != 0) {
-        output.writeUInt32(1, radius_);
-      }
       if (bundleId_ != 0) {
-        output.writeUInt32(3, bundleId_);
-      }
-      if (center_ != null) {
-        output.writeMessage(4, getCenter());
+        output.writeUInt32(1, bundleId_);
       }
       if (sceneId_ != 0) {
-        output.writeUInt32(5, sceneId_);
+        output.writeUInt32(2, sceneId_);
+      }
+      if (radius_ != 0) {
+        output.writeUInt32(4, radius_);
       }
       if (isActivated_ != false) {
-        output.writeBool(12, isActivated_);
+        output.writeBool(10, isActivated_);
       }
       if (isShowMark_ != false) {
-        output.writeBool(14, isShowMark_);
+        output.writeBool(11, isShowMark_);
+      }
+      if (center_ != null) {
+        output.writeMessage(12, getCenter());
       }
       unknownFields.writeTo(output);
     }
@@ -300,29 +300,29 @@ public final class GroupLinkBundleOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (radius_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, radius_);
-      }
       if (bundleId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, bundleId_);
-      }
-      if (center_ != null) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(4, getCenter());
+          .computeUInt32Size(1, bundleId_);
       }
       if (sceneId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, sceneId_);
+          .computeUInt32Size(2, sceneId_);
+      }
+      if (radius_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(4, radius_);
       }
       if (isActivated_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(12, isActivated_);
+          .computeBoolSize(10, isActivated_);
       }
       if (isShowMark_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(14, isShowMark_);
+          .computeBoolSize(11, isShowMark_);
+      }
+      if (center_ != null) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(12, getCenter());
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -339,19 +339,19 @@ public final class GroupLinkBundleOuterClass {
       }
       emu.grasscutter.net.proto.GroupLinkBundleOuterClass.GroupLinkBundle other = (emu.grasscutter.net.proto.GroupLinkBundleOuterClass.GroupLinkBundle) obj;
 
+      if (getBundleId()
+          != other.getBundleId()) return false;
       if (hasCenter() != other.hasCenter()) return false;
       if (hasCenter()) {
         if (!getCenter()
             .equals(other.getCenter())) return false;
       }
-      if (getIsActivated()
-          != other.getIsActivated()) return false;
-      if (getBundleId()
-          != other.getBundleId()) return false;
       if (getIsShowMark()
           != other.getIsShowMark()) return false;
       if (getSceneId()
           != other.getSceneId()) return false;
+      if (getIsActivated()
+          != other.getIsActivated()) return false;
       if (getRadius()
           != other.getRadius()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
@@ -365,20 +365,20 @@ public final class GroupLinkBundleOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + BUNDLE_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getBundleId();
       if (hasCenter()) {
         hash = (37 * hash) + CENTER_FIELD_NUMBER;
         hash = (53 * hash) + getCenter().hashCode();
       }
-      hash = (37 * hash) + IS_ACTIVATED_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsActivated());
-      hash = (37 * hash) + BUNDLE_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getBundleId();
       hash = (37 * hash) + IS_SHOW_MARK_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsShowMark());
       hash = (37 * hash) + SCENE_ID_FIELD_NUMBER;
       hash = (53 * hash) + getSceneId();
+      hash = (37 * hash) + IS_ACTIVATED_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getIsActivated());
       hash = (37 * hash) + RADIUS_FIELD_NUMBER;
       hash = (53 * hash) + getRadius();
       hash = (29 * hash) + unknownFields.hashCode();
@@ -514,19 +514,19 @@ public final class GroupLinkBundleOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        bundleId_ = 0;
+
         if (centerBuilder_ == null) {
           center_ = null;
         } else {
           center_ = null;
           centerBuilder_ = null;
         }
-        isActivated_ = false;
-
-        bundleId_ = 0;
-
         isShowMark_ = false;
 
         sceneId_ = 0;
+
+        isActivated_ = false;
 
         radius_ = 0;
 
@@ -556,15 +556,15 @@ public final class GroupLinkBundleOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.GroupLinkBundleOuterClass.GroupLinkBundle buildPartial() {
         emu.grasscutter.net.proto.GroupLinkBundleOuterClass.GroupLinkBundle result = new emu.grasscutter.net.proto.GroupLinkBundleOuterClass.GroupLinkBundle(this);
+        result.bundleId_ = bundleId_;
         if (centerBuilder_ == null) {
           result.center_ = center_;
         } else {
           result.center_ = centerBuilder_.build();
         }
-        result.isActivated_ = isActivated_;
-        result.bundleId_ = bundleId_;
         result.isShowMark_ = isShowMark_;
         result.sceneId_ = sceneId_;
+        result.isActivated_ = isActivated_;
         result.radius_ = radius_;
         onBuilt();
         return result;
@@ -614,20 +614,20 @@ public final class GroupLinkBundleOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.GroupLinkBundleOuterClass.GroupLinkBundle other) {
         if (other == emu.grasscutter.net.proto.GroupLinkBundleOuterClass.GroupLinkBundle.getDefaultInstance()) return this;
-        if (other.hasCenter()) {
-          mergeCenter(other.getCenter());
-        }
-        if (other.getIsActivated() != false) {
-          setIsActivated(other.getIsActivated());
-        }
         if (other.getBundleId() != 0) {
           setBundleId(other.getBundleId());
+        }
+        if (other.hasCenter()) {
+          mergeCenter(other.getCenter());
         }
         if (other.getIsShowMark() != false) {
           setIsShowMark(other.getIsShowMark());
         }
         if (other.getSceneId() != 0) {
           setSceneId(other.getSceneId());
+        }
+        if (other.getIsActivated() != false) {
+          setIsActivated(other.getIsActivated());
         }
         if (other.getRadius() != 0) {
           setRadius(other.getRadius());
@@ -661,18 +661,49 @@ public final class GroupLinkBundleOuterClass {
         return this;
       }
 
+      private int bundleId_ ;
+      /**
+       * <code>uint32 bundle_id = 1;</code>
+       * @return The bundleId.
+       */
+      @java.lang.Override
+      public int getBundleId() {
+        return bundleId_;
+      }
+      /**
+       * <code>uint32 bundle_id = 1;</code>
+       * @param value The bundleId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setBundleId(int value) {
+        
+        bundleId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 bundle_id = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearBundleId() {
+        
+        bundleId_ = 0;
+        onChanged();
+        return this;
+      }
+
       private emu.grasscutter.net.proto.VectorOuterClass.Vector center_;
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> centerBuilder_;
       /**
-       * <code>.Vector center = 4;</code>
+       * <code>.Vector center = 12;</code>
        * @return Whether the center field is set.
        */
       public boolean hasCenter() {
         return centerBuilder_ != null || center_ != null;
       }
       /**
-       * <code>.Vector center = 4;</code>
+       * <code>.Vector center = 12;</code>
        * @return The center.
        */
       public emu.grasscutter.net.proto.VectorOuterClass.Vector getCenter() {
@@ -683,7 +714,7 @@ public final class GroupLinkBundleOuterClass {
         }
       }
       /**
-       * <code>.Vector center = 4;</code>
+       * <code>.Vector center = 12;</code>
        */
       public Builder setCenter(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
         if (centerBuilder_ == null) {
@@ -699,7 +730,7 @@ public final class GroupLinkBundleOuterClass {
         return this;
       }
       /**
-       * <code>.Vector center = 4;</code>
+       * <code>.Vector center = 12;</code>
        */
       public Builder setCenter(
           emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder builderForValue) {
@@ -713,7 +744,7 @@ public final class GroupLinkBundleOuterClass {
         return this;
       }
       /**
-       * <code>.Vector center = 4;</code>
+       * <code>.Vector center = 12;</code>
        */
       public Builder mergeCenter(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
         if (centerBuilder_ == null) {
@@ -731,7 +762,7 @@ public final class GroupLinkBundleOuterClass {
         return this;
       }
       /**
-       * <code>.Vector center = 4;</code>
+       * <code>.Vector center = 12;</code>
        */
       public Builder clearCenter() {
         if (centerBuilder_ == null) {
@@ -745,7 +776,7 @@ public final class GroupLinkBundleOuterClass {
         return this;
       }
       /**
-       * <code>.Vector center = 4;</code>
+       * <code>.Vector center = 12;</code>
        */
       public emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder getCenterBuilder() {
         
@@ -753,7 +784,7 @@ public final class GroupLinkBundleOuterClass {
         return getCenterFieldBuilder().getBuilder();
       }
       /**
-       * <code>.Vector center = 4;</code>
+       * <code>.Vector center = 12;</code>
        */
       public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getCenterOrBuilder() {
         if (centerBuilder_ != null) {
@@ -764,7 +795,7 @@ public final class GroupLinkBundleOuterClass {
         }
       }
       /**
-       * <code>.Vector center = 4;</code>
+       * <code>.Vector center = 12;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> 
@@ -780,71 +811,9 @@ public final class GroupLinkBundleOuterClass {
         return centerBuilder_;
       }
 
-      private boolean isActivated_ ;
-      /**
-       * <code>bool is_activated = 12;</code>
-       * @return The isActivated.
-       */
-      @java.lang.Override
-      public boolean getIsActivated() {
-        return isActivated_;
-      }
-      /**
-       * <code>bool is_activated = 12;</code>
-       * @param value The isActivated to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsActivated(boolean value) {
-        
-        isActivated_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_activated = 12;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsActivated() {
-        
-        isActivated_ = false;
-        onChanged();
-        return this;
-      }
-
-      private int bundleId_ ;
-      /**
-       * <code>uint32 bundle_id = 3;</code>
-       * @return The bundleId.
-       */
-      @java.lang.Override
-      public int getBundleId() {
-        return bundleId_;
-      }
-      /**
-       * <code>uint32 bundle_id = 3;</code>
-       * @param value The bundleId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setBundleId(int value) {
-        
-        bundleId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 bundle_id = 3;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearBundleId() {
-        
-        bundleId_ = 0;
-        onChanged();
-        return this;
-      }
-
       private boolean isShowMark_ ;
       /**
-       * <code>bool is_show_mark = 14;</code>
+       * <code>bool is_show_mark = 11;</code>
        * @return The isShowMark.
        */
       @java.lang.Override
@@ -852,7 +821,7 @@ public final class GroupLinkBundleOuterClass {
         return isShowMark_;
       }
       /**
-       * <code>bool is_show_mark = 14;</code>
+       * <code>bool is_show_mark = 11;</code>
        * @param value The isShowMark to set.
        * @return This builder for chaining.
        */
@@ -863,7 +832,7 @@ public final class GroupLinkBundleOuterClass {
         return this;
       }
       /**
-       * <code>bool is_show_mark = 14;</code>
+       * <code>bool is_show_mark = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsShowMark() {
@@ -875,7 +844,7 @@ public final class GroupLinkBundleOuterClass {
 
       private int sceneId_ ;
       /**
-       * <code>uint32 scene_id = 5;</code>
+       * <code>uint32 scene_id = 2;</code>
        * @return The sceneId.
        */
       @java.lang.Override
@@ -883,7 +852,7 @@ public final class GroupLinkBundleOuterClass {
         return sceneId_;
       }
       /**
-       * <code>uint32 scene_id = 5;</code>
+       * <code>uint32 scene_id = 2;</code>
        * @param value The sceneId to set.
        * @return This builder for chaining.
        */
@@ -894,7 +863,7 @@ public final class GroupLinkBundleOuterClass {
         return this;
       }
       /**
-       * <code>uint32 scene_id = 5;</code>
+       * <code>uint32 scene_id = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearSceneId() {
@@ -904,9 +873,40 @@ public final class GroupLinkBundleOuterClass {
         return this;
       }
 
+      private boolean isActivated_ ;
+      /**
+       * <code>bool is_activated = 10;</code>
+       * @return The isActivated.
+       */
+      @java.lang.Override
+      public boolean getIsActivated() {
+        return isActivated_;
+      }
+      /**
+       * <code>bool is_activated = 10;</code>
+       * @param value The isActivated to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIsActivated(boolean value) {
+        
+        isActivated_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool is_activated = 10;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsActivated() {
+        
+        isActivated_ = false;
+        onChanged();
+        return this;
+      }
+
       private int radius_ ;
       /**
-       * <code>uint32 radius = 1;</code>
+       * <code>uint32 radius = 4;</code>
        * @return The radius.
        */
       @java.lang.Override
@@ -914,7 +914,7 @@ public final class GroupLinkBundleOuterClass {
         return radius_;
       }
       /**
-       * <code>uint32 radius = 1;</code>
+       * <code>uint32 radius = 4;</code>
        * @param value The radius to set.
        * @return This builder for chaining.
        */
@@ -925,7 +925,7 @@ public final class GroupLinkBundleOuterClass {
         return this;
       }
       /**
-       * <code>uint32 radius = 1;</code>
+       * <code>uint32 radius = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearRadius() {
@@ -1002,10 +1002,10 @@ public final class GroupLinkBundleOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\025GroupLinkBundle.proto\032\014Vector.proto\"\213\001" +
-      "\n\017GroupLinkBundle\022\027\n\006center\030\004 \001(\0132\007.Vect" +
-      "or\022\024\n\014is_activated\030\014 \001(\010\022\021\n\tbundle_id\030\003 " +
-      "\001(\r\022\024\n\014is_show_mark\030\016 \001(\010\022\020\n\010scene_id\030\005 " +
-      "\001(\r\022\016\n\006radius\030\001 \001(\rB\033\n\031emu.grasscutter.n" +
+      "\n\017GroupLinkBundle\022\021\n\tbundle_id\030\001 \001(\r\022\027\n\006" +
+      "center\030\014 \001(\0132\007.Vector\022\024\n\014is_show_mark\030\013 " +
+      "\001(\010\022\020\n\010scene_id\030\002 \001(\r\022\024\n\014is_activated\030\n " +
+      "\001(\010\022\016\n\006radius\030\004 \001(\rB\033\n\031emu.grasscutter.n" +
       "et.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -1018,7 +1018,7 @@ public final class GroupLinkBundleOuterClass {
     internal_static_GroupLinkBundle_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GroupLinkBundle_descriptor,
-        new java.lang.String[] { "Center", "IsActivated", "BundleId", "IsShowMark", "SceneId", "Radius", });
+        new java.lang.String[] { "BundleId", "Center", "IsShowMark", "SceneId", "IsActivated", "Radius", });
     emu.grasscutter.net.proto.VectorOuterClass.getDescriptor();
   }
 

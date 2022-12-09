@@ -25,17 +25,21 @@ public final class MultistagePlayFinishStageReqOuterClass {
     int getGroupId();
 
     /**
-     * <code>uint32 play_index = 15;</code>
+     * <code>uint32 play_index = 7;</code>
      * @return The playIndex.
      */
     int getPlayIndex();
   }
   /**
    * <pre>
-   * CmdId: 5398
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 5330;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code MultistagePlayFinishStageReq}
@@ -82,14 +86,14 @@ public final class MultistagePlayFinishStageReqOuterClass {
             case 0:
               done = true;
               break;
+            case 56: {
+
+              playIndex_ = input.readUInt32();
+              break;
+            }
             case 96: {
 
               groupId_ = input.readUInt32();
-              break;
-            }
-            case 120: {
-
-              playIndex_ = input.readUInt32();
               break;
             }
             default: {
@@ -135,10 +139,10 @@ public final class MultistagePlayFinishStageReqOuterClass {
       return groupId_;
     }
 
-    public static final int PLAY_INDEX_FIELD_NUMBER = 15;
+    public static final int PLAY_INDEX_FIELD_NUMBER = 7;
     private int playIndex_;
     /**
-     * <code>uint32 play_index = 15;</code>
+     * <code>uint32 play_index = 7;</code>
      * @return The playIndex.
      */
     @java.lang.Override
@@ -160,11 +164,11 @@ public final class MultistagePlayFinishStageReqOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (playIndex_ != 0) {
+        output.writeUInt32(7, playIndex_);
+      }
       if (groupId_ != 0) {
         output.writeUInt32(12, groupId_);
-      }
-      if (playIndex_ != 0) {
-        output.writeUInt32(15, playIndex_);
       }
       unknownFields.writeTo(output);
     }
@@ -175,13 +179,13 @@ public final class MultistagePlayFinishStageReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (playIndex_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(7, playIndex_);
+      }
       if (groupId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(12, groupId_);
-      }
-      if (playIndex_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, playIndex_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -314,10 +318,14 @@ public final class MultistagePlayFinishStageReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 5398
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 5330;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code MultistagePlayFinishStageReq}
@@ -505,7 +513,7 @@ public final class MultistagePlayFinishStageReqOuterClass {
 
       private int playIndex_ ;
       /**
-       * <code>uint32 play_index = 15;</code>
+       * <code>uint32 play_index = 7;</code>
        * @return The playIndex.
        */
       @java.lang.Override
@@ -513,7 +521,7 @@ public final class MultistagePlayFinishStageReqOuterClass {
         return playIndex_;
       }
       /**
-       * <code>uint32 play_index = 15;</code>
+       * <code>uint32 play_index = 7;</code>
        * @param value The playIndex to set.
        * @return This builder for chaining.
        */
@@ -524,7 +532,7 @@ public final class MultistagePlayFinishStageReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 play_index = 15;</code>
+       * <code>uint32 play_index = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearPlayIndex() {
@@ -602,7 +610,7 @@ public final class MultistagePlayFinishStageReqOuterClass {
     java.lang.String[] descriptorData = {
       "\n\"MultistagePlayFinishStageReq.proto\"D\n\034" +
       "MultistagePlayFinishStageReq\022\020\n\010group_id" +
-      "\030\014 \001(\r\022\022\n\nplay_index\030\017 \001(\rB\033\n\031emu.grassc" +
+      "\030\014 \001(\r\022\022\n\nplay_index\030\007 \001(\rB\033\n\031emu.grassc" +
       "utter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

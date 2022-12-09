@@ -19,34 +19,38 @@ public final class SeaLampContributeItemRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 add_contribution = 7;</code>
-     * @return The addContribution.
+     * <code>int32 retcode = 4;</code>
+     * @return The retcode.
      */
-    int getAddContribution();
+    int getRetcode();
 
     /**
-     * <code>uint32 add_progress = 1;</code>
+     * <code>uint32 Unk3300_AIINHBHNHOI = 11;</code>
+     * @return The unk3300AIINHBHNHOI.
+     */
+    int getUnk3300AIINHBHNHOI();
+
+    /**
+     * <code>uint32 add_progress = 5;</code>
      * @return The addProgress.
      */
     int getAddProgress();
 
     /**
-     * <code>uint32 total_contribution = 14;</code>
-     * @return The totalContribution.
+     * <code>uint32 Unk3300_LPHALOGLGAL = 9;</code>
+     * @return The unk3300LPHALOGLGAL.
      */
-    int getTotalContribution();
-
-    /**
-     * <code>int32 retcode = 6;</code>
-     * @return The retcode.
-     */
-    int getRetcode();
+    int getUnk3300LPHALOGLGAL();
   }
   /**
    * <pre>
-   * CmdId: 2139
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 2116;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code SeaLampContributeItemRsp}
@@ -93,24 +97,24 @@ public final class SeaLampContributeItemRspOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
-
-              addProgress_ = input.readUInt32();
-              break;
-            }
-            case 48: {
+            case 32: {
 
               retcode_ = input.readInt32();
               break;
             }
-            case 56: {
+            case 40: {
 
-              addContribution_ = input.readUInt32();
+              addProgress_ = input.readUInt32();
               break;
             }
-            case 112: {
+            case 72: {
 
-              totalContribution_ = input.readUInt32();
+              unk3300LPHALOGLGAL_ = input.readUInt32();
+              break;
+            }
+            case 88: {
+
+              unk3300AIINHBHNHOI_ = input.readUInt32();
               break;
             }
             default: {
@@ -145,21 +149,32 @@ public final class SeaLampContributeItemRspOuterClass {
               emu.grasscutter.net.proto.SeaLampContributeItemRspOuterClass.SeaLampContributeItemRsp.class, emu.grasscutter.net.proto.SeaLampContributeItemRspOuterClass.SeaLampContributeItemRsp.Builder.class);
     }
 
-    public static final int ADD_CONTRIBUTION_FIELD_NUMBER = 7;
-    private int addContribution_;
+    public static final int RETCODE_FIELD_NUMBER = 4;
+    private int retcode_;
     /**
-     * <code>uint32 add_contribution = 7;</code>
-     * @return The addContribution.
+     * <code>int32 retcode = 4;</code>
+     * @return The retcode.
      */
     @java.lang.Override
-    public int getAddContribution() {
-      return addContribution_;
+    public int getRetcode() {
+      return retcode_;
     }
 
-    public static final int ADD_PROGRESS_FIELD_NUMBER = 1;
+    public static final int UNK3300_AIINHBHNHOI_FIELD_NUMBER = 11;
+    private int unk3300AIINHBHNHOI_;
+    /**
+     * <code>uint32 Unk3300_AIINHBHNHOI = 11;</code>
+     * @return The unk3300AIINHBHNHOI.
+     */
+    @java.lang.Override
+    public int getUnk3300AIINHBHNHOI() {
+      return unk3300AIINHBHNHOI_;
+    }
+
+    public static final int ADD_PROGRESS_FIELD_NUMBER = 5;
     private int addProgress_;
     /**
-     * <code>uint32 add_progress = 1;</code>
+     * <code>uint32 add_progress = 5;</code>
      * @return The addProgress.
      */
     @java.lang.Override
@@ -167,26 +182,15 @@ public final class SeaLampContributeItemRspOuterClass {
       return addProgress_;
     }
 
-    public static final int TOTAL_CONTRIBUTION_FIELD_NUMBER = 14;
-    private int totalContribution_;
+    public static final int UNK3300_LPHALOGLGAL_FIELD_NUMBER = 9;
+    private int unk3300LPHALOGLGAL_;
     /**
-     * <code>uint32 total_contribution = 14;</code>
-     * @return The totalContribution.
+     * <code>uint32 Unk3300_LPHALOGLGAL = 9;</code>
+     * @return The unk3300LPHALOGLGAL.
      */
     @java.lang.Override
-    public int getTotalContribution() {
-      return totalContribution_;
-    }
-
-    public static final int RETCODE_FIELD_NUMBER = 6;
-    private int retcode_;
-    /**
-     * <code>int32 retcode = 6;</code>
-     * @return The retcode.
-     */
-    @java.lang.Override
-    public int getRetcode() {
-      return retcode_;
+    public int getUnk3300LPHALOGLGAL() {
+      return unk3300LPHALOGLGAL_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -203,17 +207,17 @@ public final class SeaLampContributeItemRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (addProgress_ != 0) {
-        output.writeUInt32(1, addProgress_);
-      }
       if (retcode_ != 0) {
-        output.writeInt32(6, retcode_);
+        output.writeInt32(4, retcode_);
       }
-      if (addContribution_ != 0) {
-        output.writeUInt32(7, addContribution_);
+      if (addProgress_ != 0) {
+        output.writeUInt32(5, addProgress_);
       }
-      if (totalContribution_ != 0) {
-        output.writeUInt32(14, totalContribution_);
+      if (unk3300LPHALOGLGAL_ != 0) {
+        output.writeUInt32(9, unk3300LPHALOGLGAL_);
+      }
+      if (unk3300AIINHBHNHOI_ != 0) {
+        output.writeUInt32(11, unk3300AIINHBHNHOI_);
       }
       unknownFields.writeTo(output);
     }
@@ -224,21 +228,21 @@ public final class SeaLampContributeItemRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (addProgress_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, addProgress_);
-      }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(6, retcode_);
+          .computeInt32Size(4, retcode_);
       }
-      if (addContribution_ != 0) {
+      if (addProgress_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, addContribution_);
+          .computeUInt32Size(5, addProgress_);
       }
-      if (totalContribution_ != 0) {
+      if (unk3300LPHALOGLGAL_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, totalContribution_);
+          .computeUInt32Size(9, unk3300LPHALOGLGAL_);
+      }
+      if (unk3300AIINHBHNHOI_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(11, unk3300AIINHBHNHOI_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -255,14 +259,14 @@ public final class SeaLampContributeItemRspOuterClass {
       }
       emu.grasscutter.net.proto.SeaLampContributeItemRspOuterClass.SeaLampContributeItemRsp other = (emu.grasscutter.net.proto.SeaLampContributeItemRspOuterClass.SeaLampContributeItemRsp) obj;
 
-      if (getAddContribution()
-          != other.getAddContribution()) return false;
-      if (getAddProgress()
-          != other.getAddProgress()) return false;
-      if (getTotalContribution()
-          != other.getTotalContribution()) return false;
       if (getRetcode()
           != other.getRetcode()) return false;
+      if (getUnk3300AIINHBHNHOI()
+          != other.getUnk3300AIINHBHNHOI()) return false;
+      if (getAddProgress()
+          != other.getAddProgress()) return false;
+      if (getUnk3300LPHALOGLGAL()
+          != other.getUnk3300LPHALOGLGAL()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -274,14 +278,14 @@ public final class SeaLampContributeItemRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + ADD_CONTRIBUTION_FIELD_NUMBER;
-      hash = (53 * hash) + getAddContribution();
-      hash = (37 * hash) + ADD_PROGRESS_FIELD_NUMBER;
-      hash = (53 * hash) + getAddProgress();
-      hash = (37 * hash) + TOTAL_CONTRIBUTION_FIELD_NUMBER;
-      hash = (53 * hash) + getTotalContribution();
       hash = (37 * hash) + RETCODE_FIELD_NUMBER;
       hash = (53 * hash) + getRetcode();
+      hash = (37 * hash) + UNK3300_AIINHBHNHOI_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300AIINHBHNHOI();
+      hash = (37 * hash) + ADD_PROGRESS_FIELD_NUMBER;
+      hash = (53 * hash) + getAddProgress();
+      hash = (37 * hash) + UNK3300_LPHALOGLGAL_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300LPHALOGLGAL();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -379,9 +383,13 @@ public final class SeaLampContributeItemRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 2139
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 2116;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code SeaLampContributeItemRsp}
@@ -421,13 +429,13 @@ public final class SeaLampContributeItemRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        addContribution_ = 0;
+        retcode_ = 0;
+
+        unk3300AIINHBHNHOI_ = 0;
 
         addProgress_ = 0;
 
-        totalContribution_ = 0;
-
-        retcode_ = 0;
+        unk3300LPHALOGLGAL_ = 0;
 
         return this;
       }
@@ -455,10 +463,10 @@ public final class SeaLampContributeItemRspOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.SeaLampContributeItemRspOuterClass.SeaLampContributeItemRsp buildPartial() {
         emu.grasscutter.net.proto.SeaLampContributeItemRspOuterClass.SeaLampContributeItemRsp result = new emu.grasscutter.net.proto.SeaLampContributeItemRspOuterClass.SeaLampContributeItemRsp(this);
-        result.addContribution_ = addContribution_;
-        result.addProgress_ = addProgress_;
-        result.totalContribution_ = totalContribution_;
         result.retcode_ = retcode_;
+        result.unk3300AIINHBHNHOI_ = unk3300AIINHBHNHOI_;
+        result.addProgress_ = addProgress_;
+        result.unk3300LPHALOGLGAL_ = unk3300LPHALOGLGAL_;
         onBuilt();
         return result;
       }
@@ -507,17 +515,17 @@ public final class SeaLampContributeItemRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.SeaLampContributeItemRspOuterClass.SeaLampContributeItemRsp other) {
         if (other == emu.grasscutter.net.proto.SeaLampContributeItemRspOuterClass.SeaLampContributeItemRsp.getDefaultInstance()) return this;
-        if (other.getAddContribution() != 0) {
-          setAddContribution(other.getAddContribution());
+        if (other.getRetcode() != 0) {
+          setRetcode(other.getRetcode());
+        }
+        if (other.getUnk3300AIINHBHNHOI() != 0) {
+          setUnk3300AIINHBHNHOI(other.getUnk3300AIINHBHNHOI());
         }
         if (other.getAddProgress() != 0) {
           setAddProgress(other.getAddProgress());
         }
-        if (other.getTotalContribution() != 0) {
-          setTotalContribution(other.getTotalContribution());
-        }
-        if (other.getRetcode() != 0) {
-          setRetcode(other.getRetcode());
+        if (other.getUnk3300LPHALOGLGAL() != 0) {
+          setUnk3300LPHALOGLGAL(other.getUnk3300LPHALOGLGAL());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -548,102 +556,9 @@ public final class SeaLampContributeItemRspOuterClass {
         return this;
       }
 
-      private int addContribution_ ;
-      /**
-       * <code>uint32 add_contribution = 7;</code>
-       * @return The addContribution.
-       */
-      @java.lang.Override
-      public int getAddContribution() {
-        return addContribution_;
-      }
-      /**
-       * <code>uint32 add_contribution = 7;</code>
-       * @param value The addContribution to set.
-       * @return This builder for chaining.
-       */
-      public Builder setAddContribution(int value) {
-        
-        addContribution_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 add_contribution = 7;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearAddContribution() {
-        
-        addContribution_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int addProgress_ ;
-      /**
-       * <code>uint32 add_progress = 1;</code>
-       * @return The addProgress.
-       */
-      @java.lang.Override
-      public int getAddProgress() {
-        return addProgress_;
-      }
-      /**
-       * <code>uint32 add_progress = 1;</code>
-       * @param value The addProgress to set.
-       * @return This builder for chaining.
-       */
-      public Builder setAddProgress(int value) {
-        
-        addProgress_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 add_progress = 1;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearAddProgress() {
-        
-        addProgress_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int totalContribution_ ;
-      /**
-       * <code>uint32 total_contribution = 14;</code>
-       * @return The totalContribution.
-       */
-      @java.lang.Override
-      public int getTotalContribution() {
-        return totalContribution_;
-      }
-      /**
-       * <code>uint32 total_contribution = 14;</code>
-       * @param value The totalContribution to set.
-       * @return This builder for chaining.
-       */
-      public Builder setTotalContribution(int value) {
-        
-        totalContribution_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 total_contribution = 14;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearTotalContribution() {
-        
-        totalContribution_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 6;</code>
+       * <code>int32 retcode = 4;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -651,7 +566,7 @@ public final class SeaLampContributeItemRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 6;</code>
+       * <code>int32 retcode = 4;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -662,12 +577,105 @@ public final class SeaLampContributeItemRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 6;</code>
+       * <code>int32 retcode = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
         
         retcode_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int unk3300AIINHBHNHOI_ ;
+      /**
+       * <code>uint32 Unk3300_AIINHBHNHOI = 11;</code>
+       * @return The unk3300AIINHBHNHOI.
+       */
+      @java.lang.Override
+      public int getUnk3300AIINHBHNHOI() {
+        return unk3300AIINHBHNHOI_;
+      }
+      /**
+       * <code>uint32 Unk3300_AIINHBHNHOI = 11;</code>
+       * @param value The unk3300AIINHBHNHOI to set.
+       * @return This builder for chaining.
+       */
+      public Builder setUnk3300AIINHBHNHOI(int value) {
+        
+        unk3300AIINHBHNHOI_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 Unk3300_AIINHBHNHOI = 11;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearUnk3300AIINHBHNHOI() {
+        
+        unk3300AIINHBHNHOI_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int addProgress_ ;
+      /**
+       * <code>uint32 add_progress = 5;</code>
+       * @return The addProgress.
+       */
+      @java.lang.Override
+      public int getAddProgress() {
+        return addProgress_;
+      }
+      /**
+       * <code>uint32 add_progress = 5;</code>
+       * @param value The addProgress to set.
+       * @return This builder for chaining.
+       */
+      public Builder setAddProgress(int value) {
+        
+        addProgress_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 add_progress = 5;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearAddProgress() {
+        
+        addProgress_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int unk3300LPHALOGLGAL_ ;
+      /**
+       * <code>uint32 Unk3300_LPHALOGLGAL = 9;</code>
+       * @return The unk3300LPHALOGLGAL.
+       */
+      @java.lang.Override
+      public int getUnk3300LPHALOGLGAL() {
+        return unk3300LPHALOGLGAL_;
+      }
+      /**
+       * <code>uint32 Unk3300_LPHALOGLGAL = 9;</code>
+       * @param value The unk3300LPHALOGLGAL to set.
+       * @return This builder for chaining.
+       */
+      public Builder setUnk3300LPHALOGLGAL(int value) {
+        
+        unk3300LPHALOGLGAL_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 Unk3300_LPHALOGLGAL = 9;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearUnk3300LPHALOGLGAL() {
+        
+        unk3300LPHALOGLGAL_ = 0;
         onChanged();
         return this;
       }
@@ -738,11 +746,11 @@ public final class SeaLampContributeItemRspOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\036SeaLampContributeItemRsp.proto\"w\n\030SeaL" +
-      "ampContributeItemRsp\022\030\n\020add_contribution" +
-      "\030\007 \001(\r\022\024\n\014add_progress\030\001 \001(\r\022\032\n\022total_co" +
-      "ntribution\030\016 \001(\r\022\017\n\007retcode\030\006 \001(\005B\033\n\031emu" +
-      ".grasscutter.net.protob\006proto3"
+      "\n\036SeaLampContributeItemRsp.proto\"{\n\030SeaL" +
+      "ampContributeItemRsp\022\017\n\007retcode\030\004 \001(\005\022\033\n" +
+      "\023Unk3300_AIINHBHNHOI\030\013 \001(\r\022\024\n\014add_progre" +
+      "ss\030\005 \001(\r\022\033\n\023Unk3300_LPHALOGLGAL\030\t \001(\rB\033\n" +
+      "\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -753,7 +761,7 @@ public final class SeaLampContributeItemRspOuterClass {
     internal_static_SeaLampContributeItemRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SeaLampContributeItemRsp_descriptor,
-        new java.lang.String[] { "AddContribution", "AddProgress", "TotalContribution", "Retcode", });
+        new java.lang.String[] { "Retcode", "Unk3300AIINHBHNHOI", "AddProgress", "Unk3300LPHALOGLGAL", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

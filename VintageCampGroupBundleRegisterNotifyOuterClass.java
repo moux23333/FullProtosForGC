@@ -19,16 +19,20 @@ public final class VintageCampGroupBundleRegisterNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 group_bundle_id = 10;</code>
+     * <code>uint32 group_bundle_id = 7;</code>
      * @return The groupBundleId.
      */
     int getGroupBundleId();
   }
   /**
    * <pre>
-   * CmdId: 24244
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 24329;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code VintageCampGroupBundleRegisterNotify}
@@ -75,7 +79,7 @@ public final class VintageCampGroupBundleRegisterNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 80: {
+            case 56: {
 
               groupBundleId_ = input.readUInt32();
               break;
@@ -112,10 +116,10 @@ public final class VintageCampGroupBundleRegisterNotifyOuterClass {
               emu.grasscutter.net.proto.VintageCampGroupBundleRegisterNotifyOuterClass.VintageCampGroupBundleRegisterNotify.class, emu.grasscutter.net.proto.VintageCampGroupBundleRegisterNotifyOuterClass.VintageCampGroupBundleRegisterNotify.Builder.class);
     }
 
-    public static final int GROUP_BUNDLE_ID_FIELD_NUMBER = 10;
+    public static final int GROUP_BUNDLE_ID_FIELD_NUMBER = 7;
     private int groupBundleId_;
     /**
-     * <code>uint32 group_bundle_id = 10;</code>
+     * <code>uint32 group_bundle_id = 7;</code>
      * @return The groupBundleId.
      */
     @java.lang.Override
@@ -138,7 +142,7 @@ public final class VintageCampGroupBundleRegisterNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (groupBundleId_ != 0) {
-        output.writeUInt32(10, groupBundleId_);
+        output.writeUInt32(7, groupBundleId_);
       }
       unknownFields.writeTo(output);
     }
@@ -151,7 +155,7 @@ public final class VintageCampGroupBundleRegisterNotifyOuterClass {
       size = 0;
       if (groupBundleId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, groupBundleId_);
+          .computeUInt32Size(7, groupBundleId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -280,9 +284,13 @@ public final class VintageCampGroupBundleRegisterNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 24244
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 24329;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code VintageCampGroupBundleRegisterNotify}
@@ -433,7 +441,7 @@ public final class VintageCampGroupBundleRegisterNotifyOuterClass {
 
       private int groupBundleId_ ;
       /**
-       * <code>uint32 group_bundle_id = 10;</code>
+       * <code>uint32 group_bundle_id = 7;</code>
        * @return The groupBundleId.
        */
       @java.lang.Override
@@ -441,7 +449,7 @@ public final class VintageCampGroupBundleRegisterNotifyOuterClass {
         return groupBundleId_;
       }
       /**
-       * <code>uint32 group_bundle_id = 10;</code>
+       * <code>uint32 group_bundle_id = 7;</code>
        * @param value The groupBundleId to set.
        * @return This builder for chaining.
        */
@@ -452,7 +460,7 @@ public final class VintageCampGroupBundleRegisterNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 group_bundle_id = 10;</code>
+       * <code>uint32 group_bundle_id = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearGroupBundleId() {
@@ -530,7 +538,7 @@ public final class VintageCampGroupBundleRegisterNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n*VintageCampGroupBundleRegisterNotify.p" +
       "roto\"?\n$VintageCampGroupBundleRegisterNo" +
-      "tify\022\027\n\017group_bundle_id\030\n \001(\rB\033\n\031emu.gra" +
+      "tify\022\027\n\017group_bundle_id\030\007 \001(\rB\033\n\031emu.gra" +
       "sscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

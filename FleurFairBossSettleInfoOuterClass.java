@@ -19,52 +19,52 @@ public final class FleurFairBossSettleInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 reward_token_num = 15;</code>
-     * @return The rewardTokenNum.
+     * <code>uint32 cost_time = 14;</code>
+     * @return The costTime.
      */
-    int getRewardTokenNum();
+    int getCostTime();
 
     /**
-     * <code>repeated .FleurFairPlayerStatInfo stat_info_list = 1;</code>
+     * <code>repeated .FleurFairPlayerStatInfo stat_info_list = 11;</code>
      */
     java.util.List<emu.grasscutter.net.proto.FleurFairPlayerStatInfoOuterClass.FleurFairPlayerStatInfo> 
         getStatInfoListList();
     /**
-     * <code>repeated .FleurFairPlayerStatInfo stat_info_list = 1;</code>
+     * <code>repeated .FleurFairPlayerStatInfo stat_info_list = 11;</code>
      */
     emu.grasscutter.net.proto.FleurFairPlayerStatInfoOuterClass.FleurFairPlayerStatInfo getStatInfoList(int index);
     /**
-     * <code>repeated .FleurFairPlayerStatInfo stat_info_list = 1;</code>
+     * <code>repeated .FleurFairPlayerStatInfo stat_info_list = 11;</code>
      */
     int getStatInfoListCount();
     /**
-     * <code>repeated .FleurFairPlayerStatInfo stat_info_list = 1;</code>
+     * <code>repeated .FleurFairPlayerStatInfo stat_info_list = 11;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.FleurFairPlayerStatInfoOuterClass.FleurFairPlayerStatInfoOrBuilder> 
         getStatInfoListOrBuilderList();
     /**
-     * <code>repeated .FleurFairPlayerStatInfo stat_info_list = 1;</code>
+     * <code>repeated .FleurFairPlayerStatInfo stat_info_list = 11;</code>
      */
     emu.grasscutter.net.proto.FleurFairPlayerStatInfoOuterClass.FleurFairPlayerStatInfoOrBuilder getStatInfoListOrBuilder(
         int index);
 
     /**
-     * <code>bool is_success = 10;</code>
-     * @return The isSuccess.
-     */
-    boolean getIsSuccess();
-
-    /**
-     * <code>uint32 energy = 12;</code>
+     * <code>uint32 energy = 4;</code>
      * @return The energy.
      */
     int getEnergy();
 
     /**
-     * <code>uint32 cost_time = 8;</code>
-     * @return The costTime.
+     * <code>bool is_success = 2;</code>
+     * @return The isSuccess.
      */
-    int getCostTime();
+    boolean getIsSuccess();
+
+    /**
+     * <code>uint32 reward_token_num = 15;</code>
+     * @return The rewardTokenNum.
+     */
+    int getRewardTokenNum();
   }
   /**
    * Protobuf type {@code FleurFairBossSettleInfo}
@@ -113,7 +113,17 @@ public final class FleurFairBossSettleInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 10: {
+            case 16: {
+
+              isSuccess_ = input.readBool();
+              break;
+            }
+            case 32: {
+
+              energy_ = input.readUInt32();
+              break;
+            }
+            case 90: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 statInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.FleurFairPlayerStatInfoOuterClass.FleurFairPlayerStatInfo>();
                 mutable_bitField0_ |= 0x00000001;
@@ -122,19 +132,9 @@ public final class FleurFairBossSettleInfoOuterClass {
                   input.readMessage(emu.grasscutter.net.proto.FleurFairPlayerStatInfoOuterClass.FleurFairPlayerStatInfo.parser(), extensionRegistry));
               break;
             }
-            case 64: {
+            case 112: {
 
               costTime_ = input.readUInt32();
-              break;
-            }
-            case 80: {
-
-              isSuccess_ = input.readBool();
-              break;
-            }
-            case 96: {
-
-              energy_ = input.readUInt32();
               break;
             }
             case 120: {
@@ -177,6 +177,79 @@ public final class FleurFairBossSettleInfoOuterClass {
               emu.grasscutter.net.proto.FleurFairBossSettleInfoOuterClass.FleurFairBossSettleInfo.class, emu.grasscutter.net.proto.FleurFairBossSettleInfoOuterClass.FleurFairBossSettleInfo.Builder.class);
     }
 
+    public static final int COST_TIME_FIELD_NUMBER = 14;
+    private int costTime_;
+    /**
+     * <code>uint32 cost_time = 14;</code>
+     * @return The costTime.
+     */
+    @java.lang.Override
+    public int getCostTime() {
+      return costTime_;
+    }
+
+    public static final int STAT_INFO_LIST_FIELD_NUMBER = 11;
+    private java.util.List<emu.grasscutter.net.proto.FleurFairPlayerStatInfoOuterClass.FleurFairPlayerStatInfo> statInfoList_;
+    /**
+     * <code>repeated .FleurFairPlayerStatInfo stat_info_list = 11;</code>
+     */
+    @java.lang.Override
+    public java.util.List<emu.grasscutter.net.proto.FleurFairPlayerStatInfoOuterClass.FleurFairPlayerStatInfo> getStatInfoListList() {
+      return statInfoList_;
+    }
+    /**
+     * <code>repeated .FleurFairPlayerStatInfo stat_info_list = 11;</code>
+     */
+    @java.lang.Override
+    public java.util.List<? extends emu.grasscutter.net.proto.FleurFairPlayerStatInfoOuterClass.FleurFairPlayerStatInfoOrBuilder> 
+        getStatInfoListOrBuilderList() {
+      return statInfoList_;
+    }
+    /**
+     * <code>repeated .FleurFairPlayerStatInfo stat_info_list = 11;</code>
+     */
+    @java.lang.Override
+    public int getStatInfoListCount() {
+      return statInfoList_.size();
+    }
+    /**
+     * <code>repeated .FleurFairPlayerStatInfo stat_info_list = 11;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.FleurFairPlayerStatInfoOuterClass.FleurFairPlayerStatInfo getStatInfoList(int index) {
+      return statInfoList_.get(index);
+    }
+    /**
+     * <code>repeated .FleurFairPlayerStatInfo stat_info_list = 11;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.FleurFairPlayerStatInfoOuterClass.FleurFairPlayerStatInfoOrBuilder getStatInfoListOrBuilder(
+        int index) {
+      return statInfoList_.get(index);
+    }
+
+    public static final int ENERGY_FIELD_NUMBER = 4;
+    private int energy_;
+    /**
+     * <code>uint32 energy = 4;</code>
+     * @return The energy.
+     */
+    @java.lang.Override
+    public int getEnergy() {
+      return energy_;
+    }
+
+    public static final int IS_SUCCESS_FIELD_NUMBER = 2;
+    private boolean isSuccess_;
+    /**
+     * <code>bool is_success = 2;</code>
+     * @return The isSuccess.
+     */
+    @java.lang.Override
+    public boolean getIsSuccess() {
+      return isSuccess_;
+    }
+
     public static final int REWARD_TOKEN_NUM_FIELD_NUMBER = 15;
     private int rewardTokenNum_;
     /**
@@ -186,79 +259,6 @@ public final class FleurFairBossSettleInfoOuterClass {
     @java.lang.Override
     public int getRewardTokenNum() {
       return rewardTokenNum_;
-    }
-
-    public static final int STAT_INFO_LIST_FIELD_NUMBER = 1;
-    private java.util.List<emu.grasscutter.net.proto.FleurFairPlayerStatInfoOuterClass.FleurFairPlayerStatInfo> statInfoList_;
-    /**
-     * <code>repeated .FleurFairPlayerStatInfo stat_info_list = 1;</code>
-     */
-    @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.FleurFairPlayerStatInfoOuterClass.FleurFairPlayerStatInfo> getStatInfoListList() {
-      return statInfoList_;
-    }
-    /**
-     * <code>repeated .FleurFairPlayerStatInfo stat_info_list = 1;</code>
-     */
-    @java.lang.Override
-    public java.util.List<? extends emu.grasscutter.net.proto.FleurFairPlayerStatInfoOuterClass.FleurFairPlayerStatInfoOrBuilder> 
-        getStatInfoListOrBuilderList() {
-      return statInfoList_;
-    }
-    /**
-     * <code>repeated .FleurFairPlayerStatInfo stat_info_list = 1;</code>
-     */
-    @java.lang.Override
-    public int getStatInfoListCount() {
-      return statInfoList_.size();
-    }
-    /**
-     * <code>repeated .FleurFairPlayerStatInfo stat_info_list = 1;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.FleurFairPlayerStatInfoOuterClass.FleurFairPlayerStatInfo getStatInfoList(int index) {
-      return statInfoList_.get(index);
-    }
-    /**
-     * <code>repeated .FleurFairPlayerStatInfo stat_info_list = 1;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.FleurFairPlayerStatInfoOuterClass.FleurFairPlayerStatInfoOrBuilder getStatInfoListOrBuilder(
-        int index) {
-      return statInfoList_.get(index);
-    }
-
-    public static final int IS_SUCCESS_FIELD_NUMBER = 10;
-    private boolean isSuccess_;
-    /**
-     * <code>bool is_success = 10;</code>
-     * @return The isSuccess.
-     */
-    @java.lang.Override
-    public boolean getIsSuccess() {
-      return isSuccess_;
-    }
-
-    public static final int ENERGY_FIELD_NUMBER = 12;
-    private int energy_;
-    /**
-     * <code>uint32 energy = 12;</code>
-     * @return The energy.
-     */
-    @java.lang.Override
-    public int getEnergy() {
-      return energy_;
-    }
-
-    public static final int COST_TIME_FIELD_NUMBER = 8;
-    private int costTime_;
-    /**
-     * <code>uint32 cost_time = 8;</code>
-     * @return The costTime.
-     */
-    @java.lang.Override
-    public int getCostTime() {
-      return costTime_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -275,17 +275,17 @@ public final class FleurFairBossSettleInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      for (int i = 0; i < statInfoList_.size(); i++) {
-        output.writeMessage(1, statInfoList_.get(i));
-      }
-      if (costTime_ != 0) {
-        output.writeUInt32(8, costTime_);
-      }
       if (isSuccess_ != false) {
-        output.writeBool(10, isSuccess_);
+        output.writeBool(2, isSuccess_);
       }
       if (energy_ != 0) {
-        output.writeUInt32(12, energy_);
+        output.writeUInt32(4, energy_);
+      }
+      for (int i = 0; i < statInfoList_.size(); i++) {
+        output.writeMessage(11, statInfoList_.get(i));
+      }
+      if (costTime_ != 0) {
+        output.writeUInt32(14, costTime_);
       }
       if (rewardTokenNum_ != 0) {
         output.writeUInt32(15, rewardTokenNum_);
@@ -299,21 +299,21 @@ public final class FleurFairBossSettleInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      for (int i = 0; i < statInfoList_.size(); i++) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(1, statInfoList_.get(i));
-      }
-      if (costTime_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, costTime_);
-      }
       if (isSuccess_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(10, isSuccess_);
+          .computeBoolSize(2, isSuccess_);
       }
       if (energy_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, energy_);
+          .computeUInt32Size(4, energy_);
+      }
+      for (int i = 0; i < statInfoList_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(11, statInfoList_.get(i));
+      }
+      if (costTime_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(14, costTime_);
       }
       if (rewardTokenNum_ != 0) {
         size += com.google.protobuf.CodedOutputStream
@@ -334,16 +334,16 @@ public final class FleurFairBossSettleInfoOuterClass {
       }
       emu.grasscutter.net.proto.FleurFairBossSettleInfoOuterClass.FleurFairBossSettleInfo other = (emu.grasscutter.net.proto.FleurFairBossSettleInfoOuterClass.FleurFairBossSettleInfo) obj;
 
-      if (getRewardTokenNum()
-          != other.getRewardTokenNum()) return false;
-      if (!getStatInfoListList()
-          .equals(other.getStatInfoListList())) return false;
-      if (getIsSuccess()
-          != other.getIsSuccess()) return false;
-      if (getEnergy()
-          != other.getEnergy()) return false;
       if (getCostTime()
           != other.getCostTime()) return false;
+      if (!getStatInfoListList()
+          .equals(other.getStatInfoListList())) return false;
+      if (getEnergy()
+          != other.getEnergy()) return false;
+      if (getIsSuccess()
+          != other.getIsSuccess()) return false;
+      if (getRewardTokenNum()
+          != other.getRewardTokenNum()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -355,19 +355,19 @@ public final class FleurFairBossSettleInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + REWARD_TOKEN_NUM_FIELD_NUMBER;
-      hash = (53 * hash) + getRewardTokenNum();
+      hash = (37 * hash) + COST_TIME_FIELD_NUMBER;
+      hash = (53 * hash) + getCostTime();
       if (getStatInfoListCount() > 0) {
         hash = (37 * hash) + STAT_INFO_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getStatInfoListList().hashCode();
       }
+      hash = (37 * hash) + ENERGY_FIELD_NUMBER;
+      hash = (53 * hash) + getEnergy();
       hash = (37 * hash) + IS_SUCCESS_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsSuccess());
-      hash = (37 * hash) + ENERGY_FIELD_NUMBER;
-      hash = (53 * hash) + getEnergy();
-      hash = (37 * hash) + COST_TIME_FIELD_NUMBER;
-      hash = (53 * hash) + getCostTime();
+      hash = (37 * hash) + REWARD_TOKEN_NUM_FIELD_NUMBER;
+      hash = (53 * hash) + getRewardTokenNum();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -502,7 +502,7 @@ public final class FleurFairBossSettleInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        rewardTokenNum_ = 0;
+        costTime_ = 0;
 
         if (statInfoListBuilder_ == null) {
           statInfoList_ = java.util.Collections.emptyList();
@@ -510,11 +510,11 @@ public final class FleurFairBossSettleInfoOuterClass {
         } else {
           statInfoListBuilder_.clear();
         }
-        isSuccess_ = false;
-
         energy_ = 0;
 
-        costTime_ = 0;
+        isSuccess_ = false;
+
+        rewardTokenNum_ = 0;
 
         return this;
       }
@@ -543,7 +543,7 @@ public final class FleurFairBossSettleInfoOuterClass {
       public emu.grasscutter.net.proto.FleurFairBossSettleInfoOuterClass.FleurFairBossSettleInfo buildPartial() {
         emu.grasscutter.net.proto.FleurFairBossSettleInfoOuterClass.FleurFairBossSettleInfo result = new emu.grasscutter.net.proto.FleurFairBossSettleInfoOuterClass.FleurFairBossSettleInfo(this);
         int from_bitField0_ = bitField0_;
-        result.rewardTokenNum_ = rewardTokenNum_;
+        result.costTime_ = costTime_;
         if (statInfoListBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0)) {
             statInfoList_ = java.util.Collections.unmodifiableList(statInfoList_);
@@ -553,9 +553,9 @@ public final class FleurFairBossSettleInfoOuterClass {
         } else {
           result.statInfoList_ = statInfoListBuilder_.build();
         }
-        result.isSuccess_ = isSuccess_;
         result.energy_ = energy_;
-        result.costTime_ = costTime_;
+        result.isSuccess_ = isSuccess_;
+        result.rewardTokenNum_ = rewardTokenNum_;
         onBuilt();
         return result;
       }
@@ -604,8 +604,8 @@ public final class FleurFairBossSettleInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.FleurFairBossSettleInfoOuterClass.FleurFairBossSettleInfo other) {
         if (other == emu.grasscutter.net.proto.FleurFairBossSettleInfoOuterClass.FleurFairBossSettleInfo.getDefaultInstance()) return this;
-        if (other.getRewardTokenNum() != 0) {
-          setRewardTokenNum(other.getRewardTokenNum());
+        if (other.getCostTime() != 0) {
+          setCostTime(other.getCostTime());
         }
         if (statInfoListBuilder_ == null) {
           if (!other.statInfoList_.isEmpty()) {
@@ -633,14 +633,14 @@ public final class FleurFairBossSettleInfoOuterClass {
             }
           }
         }
-        if (other.getIsSuccess() != false) {
-          setIsSuccess(other.getIsSuccess());
-        }
         if (other.getEnergy() != 0) {
           setEnergy(other.getEnergy());
         }
-        if (other.getCostTime() != 0) {
-          setCostTime(other.getCostTime());
+        if (other.getIsSuccess() != false) {
+          setIsSuccess(other.getIsSuccess());
+        }
+        if (other.getRewardTokenNum() != 0) {
+          setRewardTokenNum(other.getRewardTokenNum());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -672,6 +672,339 @@ public final class FleurFairBossSettleInfoOuterClass {
       }
       private int bitField0_;
 
+      private int costTime_ ;
+      /**
+       * <code>uint32 cost_time = 14;</code>
+       * @return The costTime.
+       */
+      @java.lang.Override
+      public int getCostTime() {
+        return costTime_;
+      }
+      /**
+       * <code>uint32 cost_time = 14;</code>
+       * @param value The costTime to set.
+       * @return This builder for chaining.
+       */
+      public Builder setCostTime(int value) {
+        
+        costTime_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 cost_time = 14;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearCostTime() {
+        
+        costTime_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private java.util.List<emu.grasscutter.net.proto.FleurFairPlayerStatInfoOuterClass.FleurFairPlayerStatInfo> statInfoList_ =
+        java.util.Collections.emptyList();
+      private void ensureStatInfoListIsMutable() {
+        if (!((bitField0_ & 0x00000001) != 0)) {
+          statInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.FleurFairPlayerStatInfoOuterClass.FleurFairPlayerStatInfo>(statInfoList_);
+          bitField0_ |= 0x00000001;
+         }
+      }
+
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          emu.grasscutter.net.proto.FleurFairPlayerStatInfoOuterClass.FleurFairPlayerStatInfo, emu.grasscutter.net.proto.FleurFairPlayerStatInfoOuterClass.FleurFairPlayerStatInfo.Builder, emu.grasscutter.net.proto.FleurFairPlayerStatInfoOuterClass.FleurFairPlayerStatInfoOrBuilder> statInfoListBuilder_;
+
+      /**
+       * <code>repeated .FleurFairPlayerStatInfo stat_info_list = 11;</code>
+       */
+      public java.util.List<emu.grasscutter.net.proto.FleurFairPlayerStatInfoOuterClass.FleurFairPlayerStatInfo> getStatInfoListList() {
+        if (statInfoListBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(statInfoList_);
+        } else {
+          return statInfoListBuilder_.getMessageList();
+        }
+      }
+      /**
+       * <code>repeated .FleurFairPlayerStatInfo stat_info_list = 11;</code>
+       */
+      public int getStatInfoListCount() {
+        if (statInfoListBuilder_ == null) {
+          return statInfoList_.size();
+        } else {
+          return statInfoListBuilder_.getCount();
+        }
+      }
+      /**
+       * <code>repeated .FleurFairPlayerStatInfo stat_info_list = 11;</code>
+       */
+      public emu.grasscutter.net.proto.FleurFairPlayerStatInfoOuterClass.FleurFairPlayerStatInfo getStatInfoList(int index) {
+        if (statInfoListBuilder_ == null) {
+          return statInfoList_.get(index);
+        } else {
+          return statInfoListBuilder_.getMessage(index);
+        }
+      }
+      /**
+       * <code>repeated .FleurFairPlayerStatInfo stat_info_list = 11;</code>
+       */
+      public Builder setStatInfoList(
+          int index, emu.grasscutter.net.proto.FleurFairPlayerStatInfoOuterClass.FleurFairPlayerStatInfo value) {
+        if (statInfoListBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureStatInfoListIsMutable();
+          statInfoList_.set(index, value);
+          onChanged();
+        } else {
+          statInfoListBuilder_.setMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .FleurFairPlayerStatInfo stat_info_list = 11;</code>
+       */
+      public Builder setStatInfoList(
+          int index, emu.grasscutter.net.proto.FleurFairPlayerStatInfoOuterClass.FleurFairPlayerStatInfo.Builder builderForValue) {
+        if (statInfoListBuilder_ == null) {
+          ensureStatInfoListIsMutable();
+          statInfoList_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          statInfoListBuilder_.setMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .FleurFairPlayerStatInfo stat_info_list = 11;</code>
+       */
+      public Builder addStatInfoList(emu.grasscutter.net.proto.FleurFairPlayerStatInfoOuterClass.FleurFairPlayerStatInfo value) {
+        if (statInfoListBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureStatInfoListIsMutable();
+          statInfoList_.add(value);
+          onChanged();
+        } else {
+          statInfoListBuilder_.addMessage(value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .FleurFairPlayerStatInfo stat_info_list = 11;</code>
+       */
+      public Builder addStatInfoList(
+          int index, emu.grasscutter.net.proto.FleurFairPlayerStatInfoOuterClass.FleurFairPlayerStatInfo value) {
+        if (statInfoListBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureStatInfoListIsMutable();
+          statInfoList_.add(index, value);
+          onChanged();
+        } else {
+          statInfoListBuilder_.addMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .FleurFairPlayerStatInfo stat_info_list = 11;</code>
+       */
+      public Builder addStatInfoList(
+          emu.grasscutter.net.proto.FleurFairPlayerStatInfoOuterClass.FleurFairPlayerStatInfo.Builder builderForValue) {
+        if (statInfoListBuilder_ == null) {
+          ensureStatInfoListIsMutable();
+          statInfoList_.add(builderForValue.build());
+          onChanged();
+        } else {
+          statInfoListBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .FleurFairPlayerStatInfo stat_info_list = 11;</code>
+       */
+      public Builder addStatInfoList(
+          int index, emu.grasscutter.net.proto.FleurFairPlayerStatInfoOuterClass.FleurFairPlayerStatInfo.Builder builderForValue) {
+        if (statInfoListBuilder_ == null) {
+          ensureStatInfoListIsMutable();
+          statInfoList_.add(index, builderForValue.build());
+          onChanged();
+        } else {
+          statInfoListBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .FleurFairPlayerStatInfo stat_info_list = 11;</code>
+       */
+      public Builder addAllStatInfoList(
+          java.lang.Iterable<? extends emu.grasscutter.net.proto.FleurFairPlayerStatInfoOuterClass.FleurFairPlayerStatInfo> values) {
+        if (statInfoListBuilder_ == null) {
+          ensureStatInfoListIsMutable();
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, statInfoList_);
+          onChanged();
+        } else {
+          statInfoListBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .FleurFairPlayerStatInfo stat_info_list = 11;</code>
+       */
+      public Builder clearStatInfoList() {
+        if (statInfoListBuilder_ == null) {
+          statInfoList_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000001);
+          onChanged();
+        } else {
+          statInfoListBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .FleurFairPlayerStatInfo stat_info_list = 11;</code>
+       */
+      public Builder removeStatInfoList(int index) {
+        if (statInfoListBuilder_ == null) {
+          ensureStatInfoListIsMutable();
+          statInfoList_.remove(index);
+          onChanged();
+        } else {
+          statInfoListBuilder_.remove(index);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .FleurFairPlayerStatInfo stat_info_list = 11;</code>
+       */
+      public emu.grasscutter.net.proto.FleurFairPlayerStatInfoOuterClass.FleurFairPlayerStatInfo.Builder getStatInfoListBuilder(
+          int index) {
+        return getStatInfoListFieldBuilder().getBuilder(index);
+      }
+      /**
+       * <code>repeated .FleurFairPlayerStatInfo stat_info_list = 11;</code>
+       */
+      public emu.grasscutter.net.proto.FleurFairPlayerStatInfoOuterClass.FleurFairPlayerStatInfoOrBuilder getStatInfoListOrBuilder(
+          int index) {
+        if (statInfoListBuilder_ == null) {
+          return statInfoList_.get(index);  } else {
+          return statInfoListBuilder_.getMessageOrBuilder(index);
+        }
+      }
+      /**
+       * <code>repeated .FleurFairPlayerStatInfo stat_info_list = 11;</code>
+       */
+      public java.util.List<? extends emu.grasscutter.net.proto.FleurFairPlayerStatInfoOuterClass.FleurFairPlayerStatInfoOrBuilder> 
+           getStatInfoListOrBuilderList() {
+        if (statInfoListBuilder_ != null) {
+          return statInfoListBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(statInfoList_);
+        }
+      }
+      /**
+       * <code>repeated .FleurFairPlayerStatInfo stat_info_list = 11;</code>
+       */
+      public emu.grasscutter.net.proto.FleurFairPlayerStatInfoOuterClass.FleurFairPlayerStatInfo.Builder addStatInfoListBuilder() {
+        return getStatInfoListFieldBuilder().addBuilder(
+            emu.grasscutter.net.proto.FleurFairPlayerStatInfoOuterClass.FleurFairPlayerStatInfo.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .FleurFairPlayerStatInfo stat_info_list = 11;</code>
+       */
+      public emu.grasscutter.net.proto.FleurFairPlayerStatInfoOuterClass.FleurFairPlayerStatInfo.Builder addStatInfoListBuilder(
+          int index) {
+        return getStatInfoListFieldBuilder().addBuilder(
+            index, emu.grasscutter.net.proto.FleurFairPlayerStatInfoOuterClass.FleurFairPlayerStatInfo.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .FleurFairPlayerStatInfo stat_info_list = 11;</code>
+       */
+      public java.util.List<emu.grasscutter.net.proto.FleurFairPlayerStatInfoOuterClass.FleurFairPlayerStatInfo.Builder> 
+           getStatInfoListBuilderList() {
+        return getStatInfoListFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          emu.grasscutter.net.proto.FleurFairPlayerStatInfoOuterClass.FleurFairPlayerStatInfo, emu.grasscutter.net.proto.FleurFairPlayerStatInfoOuterClass.FleurFairPlayerStatInfo.Builder, emu.grasscutter.net.proto.FleurFairPlayerStatInfoOuterClass.FleurFairPlayerStatInfoOrBuilder> 
+          getStatInfoListFieldBuilder() {
+        if (statInfoListBuilder_ == null) {
+          statInfoListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+              emu.grasscutter.net.proto.FleurFairPlayerStatInfoOuterClass.FleurFairPlayerStatInfo, emu.grasscutter.net.proto.FleurFairPlayerStatInfoOuterClass.FleurFairPlayerStatInfo.Builder, emu.grasscutter.net.proto.FleurFairPlayerStatInfoOuterClass.FleurFairPlayerStatInfoOrBuilder>(
+                  statInfoList_,
+                  ((bitField0_ & 0x00000001) != 0),
+                  getParentForChildren(),
+                  isClean());
+          statInfoList_ = null;
+        }
+        return statInfoListBuilder_;
+      }
+
+      private int energy_ ;
+      /**
+       * <code>uint32 energy = 4;</code>
+       * @return The energy.
+       */
+      @java.lang.Override
+      public int getEnergy() {
+        return energy_;
+      }
+      /**
+       * <code>uint32 energy = 4;</code>
+       * @param value The energy to set.
+       * @return This builder for chaining.
+       */
+      public Builder setEnergy(int value) {
+        
+        energy_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 energy = 4;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearEnergy() {
+        
+        energy_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private boolean isSuccess_ ;
+      /**
+       * <code>bool is_success = 2;</code>
+       * @return The isSuccess.
+       */
+      @java.lang.Override
+      public boolean getIsSuccess() {
+        return isSuccess_;
+      }
+      /**
+       * <code>bool is_success = 2;</code>
+       * @param value The isSuccess to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIsSuccess(boolean value) {
+        
+        isSuccess_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool is_success = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsSuccess() {
+        
+        isSuccess_ = false;
+        onChanged();
+        return this;
+      }
+
       private int rewardTokenNum_ ;
       /**
        * <code>uint32 reward_token_num = 15;</code>
@@ -699,339 +1032,6 @@ public final class FleurFairBossSettleInfoOuterClass {
       public Builder clearRewardTokenNum() {
         
         rewardTokenNum_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private java.util.List<emu.grasscutter.net.proto.FleurFairPlayerStatInfoOuterClass.FleurFairPlayerStatInfo> statInfoList_ =
-        java.util.Collections.emptyList();
-      private void ensureStatInfoListIsMutable() {
-        if (!((bitField0_ & 0x00000001) != 0)) {
-          statInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.FleurFairPlayerStatInfoOuterClass.FleurFairPlayerStatInfo>(statInfoList_);
-          bitField0_ |= 0x00000001;
-         }
-      }
-
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.FleurFairPlayerStatInfoOuterClass.FleurFairPlayerStatInfo, emu.grasscutter.net.proto.FleurFairPlayerStatInfoOuterClass.FleurFairPlayerStatInfo.Builder, emu.grasscutter.net.proto.FleurFairPlayerStatInfoOuterClass.FleurFairPlayerStatInfoOrBuilder> statInfoListBuilder_;
-
-      /**
-       * <code>repeated .FleurFairPlayerStatInfo stat_info_list = 1;</code>
-       */
-      public java.util.List<emu.grasscutter.net.proto.FleurFairPlayerStatInfoOuterClass.FleurFairPlayerStatInfo> getStatInfoListList() {
-        if (statInfoListBuilder_ == null) {
-          return java.util.Collections.unmodifiableList(statInfoList_);
-        } else {
-          return statInfoListBuilder_.getMessageList();
-        }
-      }
-      /**
-       * <code>repeated .FleurFairPlayerStatInfo stat_info_list = 1;</code>
-       */
-      public int getStatInfoListCount() {
-        if (statInfoListBuilder_ == null) {
-          return statInfoList_.size();
-        } else {
-          return statInfoListBuilder_.getCount();
-        }
-      }
-      /**
-       * <code>repeated .FleurFairPlayerStatInfo stat_info_list = 1;</code>
-       */
-      public emu.grasscutter.net.proto.FleurFairPlayerStatInfoOuterClass.FleurFairPlayerStatInfo getStatInfoList(int index) {
-        if (statInfoListBuilder_ == null) {
-          return statInfoList_.get(index);
-        } else {
-          return statInfoListBuilder_.getMessage(index);
-        }
-      }
-      /**
-       * <code>repeated .FleurFairPlayerStatInfo stat_info_list = 1;</code>
-       */
-      public Builder setStatInfoList(
-          int index, emu.grasscutter.net.proto.FleurFairPlayerStatInfoOuterClass.FleurFairPlayerStatInfo value) {
-        if (statInfoListBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureStatInfoListIsMutable();
-          statInfoList_.set(index, value);
-          onChanged();
-        } else {
-          statInfoListBuilder_.setMessage(index, value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .FleurFairPlayerStatInfo stat_info_list = 1;</code>
-       */
-      public Builder setStatInfoList(
-          int index, emu.grasscutter.net.proto.FleurFairPlayerStatInfoOuterClass.FleurFairPlayerStatInfo.Builder builderForValue) {
-        if (statInfoListBuilder_ == null) {
-          ensureStatInfoListIsMutable();
-          statInfoList_.set(index, builderForValue.build());
-          onChanged();
-        } else {
-          statInfoListBuilder_.setMessage(index, builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .FleurFairPlayerStatInfo stat_info_list = 1;</code>
-       */
-      public Builder addStatInfoList(emu.grasscutter.net.proto.FleurFairPlayerStatInfoOuterClass.FleurFairPlayerStatInfo value) {
-        if (statInfoListBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureStatInfoListIsMutable();
-          statInfoList_.add(value);
-          onChanged();
-        } else {
-          statInfoListBuilder_.addMessage(value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .FleurFairPlayerStatInfo stat_info_list = 1;</code>
-       */
-      public Builder addStatInfoList(
-          int index, emu.grasscutter.net.proto.FleurFairPlayerStatInfoOuterClass.FleurFairPlayerStatInfo value) {
-        if (statInfoListBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureStatInfoListIsMutable();
-          statInfoList_.add(index, value);
-          onChanged();
-        } else {
-          statInfoListBuilder_.addMessage(index, value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .FleurFairPlayerStatInfo stat_info_list = 1;</code>
-       */
-      public Builder addStatInfoList(
-          emu.grasscutter.net.proto.FleurFairPlayerStatInfoOuterClass.FleurFairPlayerStatInfo.Builder builderForValue) {
-        if (statInfoListBuilder_ == null) {
-          ensureStatInfoListIsMutable();
-          statInfoList_.add(builderForValue.build());
-          onChanged();
-        } else {
-          statInfoListBuilder_.addMessage(builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .FleurFairPlayerStatInfo stat_info_list = 1;</code>
-       */
-      public Builder addStatInfoList(
-          int index, emu.grasscutter.net.proto.FleurFairPlayerStatInfoOuterClass.FleurFairPlayerStatInfo.Builder builderForValue) {
-        if (statInfoListBuilder_ == null) {
-          ensureStatInfoListIsMutable();
-          statInfoList_.add(index, builderForValue.build());
-          onChanged();
-        } else {
-          statInfoListBuilder_.addMessage(index, builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .FleurFairPlayerStatInfo stat_info_list = 1;</code>
-       */
-      public Builder addAllStatInfoList(
-          java.lang.Iterable<? extends emu.grasscutter.net.proto.FleurFairPlayerStatInfoOuterClass.FleurFairPlayerStatInfo> values) {
-        if (statInfoListBuilder_ == null) {
-          ensureStatInfoListIsMutable();
-          com.google.protobuf.AbstractMessageLite.Builder.addAll(
-              values, statInfoList_);
-          onChanged();
-        } else {
-          statInfoListBuilder_.addAllMessages(values);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .FleurFairPlayerStatInfo stat_info_list = 1;</code>
-       */
-      public Builder clearStatInfoList() {
-        if (statInfoListBuilder_ == null) {
-          statInfoList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000001);
-          onChanged();
-        } else {
-          statInfoListBuilder_.clear();
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .FleurFairPlayerStatInfo stat_info_list = 1;</code>
-       */
-      public Builder removeStatInfoList(int index) {
-        if (statInfoListBuilder_ == null) {
-          ensureStatInfoListIsMutable();
-          statInfoList_.remove(index);
-          onChanged();
-        } else {
-          statInfoListBuilder_.remove(index);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .FleurFairPlayerStatInfo stat_info_list = 1;</code>
-       */
-      public emu.grasscutter.net.proto.FleurFairPlayerStatInfoOuterClass.FleurFairPlayerStatInfo.Builder getStatInfoListBuilder(
-          int index) {
-        return getStatInfoListFieldBuilder().getBuilder(index);
-      }
-      /**
-       * <code>repeated .FleurFairPlayerStatInfo stat_info_list = 1;</code>
-       */
-      public emu.grasscutter.net.proto.FleurFairPlayerStatInfoOuterClass.FleurFairPlayerStatInfoOrBuilder getStatInfoListOrBuilder(
-          int index) {
-        if (statInfoListBuilder_ == null) {
-          return statInfoList_.get(index);  } else {
-          return statInfoListBuilder_.getMessageOrBuilder(index);
-        }
-      }
-      /**
-       * <code>repeated .FleurFairPlayerStatInfo stat_info_list = 1;</code>
-       */
-      public java.util.List<? extends emu.grasscutter.net.proto.FleurFairPlayerStatInfoOuterClass.FleurFairPlayerStatInfoOrBuilder> 
-           getStatInfoListOrBuilderList() {
-        if (statInfoListBuilder_ != null) {
-          return statInfoListBuilder_.getMessageOrBuilderList();
-        } else {
-          return java.util.Collections.unmodifiableList(statInfoList_);
-        }
-      }
-      /**
-       * <code>repeated .FleurFairPlayerStatInfo stat_info_list = 1;</code>
-       */
-      public emu.grasscutter.net.proto.FleurFairPlayerStatInfoOuterClass.FleurFairPlayerStatInfo.Builder addStatInfoListBuilder() {
-        return getStatInfoListFieldBuilder().addBuilder(
-            emu.grasscutter.net.proto.FleurFairPlayerStatInfoOuterClass.FleurFairPlayerStatInfo.getDefaultInstance());
-      }
-      /**
-       * <code>repeated .FleurFairPlayerStatInfo stat_info_list = 1;</code>
-       */
-      public emu.grasscutter.net.proto.FleurFairPlayerStatInfoOuterClass.FleurFairPlayerStatInfo.Builder addStatInfoListBuilder(
-          int index) {
-        return getStatInfoListFieldBuilder().addBuilder(
-            index, emu.grasscutter.net.proto.FleurFairPlayerStatInfoOuterClass.FleurFairPlayerStatInfo.getDefaultInstance());
-      }
-      /**
-       * <code>repeated .FleurFairPlayerStatInfo stat_info_list = 1;</code>
-       */
-      public java.util.List<emu.grasscutter.net.proto.FleurFairPlayerStatInfoOuterClass.FleurFairPlayerStatInfo.Builder> 
-           getStatInfoListBuilderList() {
-        return getStatInfoListFieldBuilder().getBuilderList();
-      }
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.FleurFairPlayerStatInfoOuterClass.FleurFairPlayerStatInfo, emu.grasscutter.net.proto.FleurFairPlayerStatInfoOuterClass.FleurFairPlayerStatInfo.Builder, emu.grasscutter.net.proto.FleurFairPlayerStatInfoOuterClass.FleurFairPlayerStatInfoOrBuilder> 
-          getStatInfoListFieldBuilder() {
-        if (statInfoListBuilder_ == null) {
-          statInfoListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              emu.grasscutter.net.proto.FleurFairPlayerStatInfoOuterClass.FleurFairPlayerStatInfo, emu.grasscutter.net.proto.FleurFairPlayerStatInfoOuterClass.FleurFairPlayerStatInfo.Builder, emu.grasscutter.net.proto.FleurFairPlayerStatInfoOuterClass.FleurFairPlayerStatInfoOrBuilder>(
-                  statInfoList_,
-                  ((bitField0_ & 0x00000001) != 0),
-                  getParentForChildren(),
-                  isClean());
-          statInfoList_ = null;
-        }
-        return statInfoListBuilder_;
-      }
-
-      private boolean isSuccess_ ;
-      /**
-       * <code>bool is_success = 10;</code>
-       * @return The isSuccess.
-       */
-      @java.lang.Override
-      public boolean getIsSuccess() {
-        return isSuccess_;
-      }
-      /**
-       * <code>bool is_success = 10;</code>
-       * @param value The isSuccess to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsSuccess(boolean value) {
-        
-        isSuccess_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_success = 10;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsSuccess() {
-        
-        isSuccess_ = false;
-        onChanged();
-        return this;
-      }
-
-      private int energy_ ;
-      /**
-       * <code>uint32 energy = 12;</code>
-       * @return The energy.
-       */
-      @java.lang.Override
-      public int getEnergy() {
-        return energy_;
-      }
-      /**
-       * <code>uint32 energy = 12;</code>
-       * @param value The energy to set.
-       * @return This builder for chaining.
-       */
-      public Builder setEnergy(int value) {
-        
-        energy_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 energy = 12;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearEnergy() {
-        
-        energy_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int costTime_ ;
-      /**
-       * <code>uint32 cost_time = 8;</code>
-       * @return The costTime.
-       */
-      @java.lang.Override
-      public int getCostTime() {
-        return costTime_;
-      }
-      /**
-       * <code>uint32 cost_time = 8;</code>
-       * @param value The costTime to set.
-       * @return This builder for chaining.
-       */
-      public Builder setCostTime(int value) {
-        
-        costTime_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 cost_time = 8;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearCostTime() {
-        
-        costTime_ = 0;
         onChanged();
         return this;
       }
@@ -1104,10 +1104,10 @@ public final class FleurFairBossSettleInfoOuterClass {
     java.lang.String[] descriptorData = {
       "\n\035FleurFairBossSettleInfo.proto\032\035FleurFa" +
       "irPlayerStatInfo.proto\"\234\001\n\027FleurFairBoss" +
-      "SettleInfo\022\030\n\020reward_token_num\030\017 \001(\r\0220\n\016" +
-      "stat_info_list\030\001 \003(\0132\030.FleurFairPlayerSt" +
-      "atInfo\022\022\n\nis_success\030\n \001(\010\022\016\n\006energy\030\014 \001" +
-      "(\r\022\021\n\tcost_time\030\010 \001(\rB\033\n\031emu.grasscutter" +
+      "SettleInfo\022\021\n\tcost_time\030\016 \001(\r\0220\n\016stat_in" +
+      "fo_list\030\013 \003(\0132\030.FleurFairPlayerStatInfo\022" +
+      "\016\n\006energy\030\004 \001(\r\022\022\n\nis_success\030\002 \001(\010\022\030\n\020r" +
+      "eward_token_num\030\017 \001(\rB\033\n\031emu.grasscutter" +
       ".net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -1120,7 +1120,7 @@ public final class FleurFairBossSettleInfoOuterClass {
     internal_static_FleurFairBossSettleInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_FleurFairBossSettleInfo_descriptor,
-        new java.lang.String[] { "RewardTokenNum", "StatInfoList", "IsSuccess", "Energy", "CostTime", });
+        new java.lang.String[] { "CostTime", "StatInfoList", "Energy", "IsSuccess", "RewardTokenNum", });
     emu.grasscutter.net.proto.FleurFairPlayerStatInfoOuterClass.getDescriptor();
   }
 

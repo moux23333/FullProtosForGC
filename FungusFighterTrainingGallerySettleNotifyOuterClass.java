@@ -19,63 +19,67 @@ public final class FungusFighterTrainingGallerySettleNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_new_record = 14;</code>
-     * @return The isNewRecord.
-     */
-    boolean getIsNewRecord();
-
-    /**
-     * <code>uint32 total_used_time = 4;</code>
-     * @return The totalUsedTime.
-     */
-    int getTotalUsedTime();
-
-    /**
-     * <code>.GalleryStopReason reason = 5;</code>
+     * <code>.GalleryStopReason reason = 3;</code>
      * @return The enum numeric value on the wire for reason.
      */
     int getReasonValue();
     /**
-     * <code>.GalleryStopReason reason = 5;</code>
+     * <code>.GalleryStopReason reason = 3;</code>
      * @return The reason.
      */
     emu.grasscutter.net.proto.GalleryStopReasonOuterClass.GalleryStopReason getReason();
 
     /**
-     * <code>uint32 dead_fungus_num = 1;</code>
-     * @return The deadFungusNum.
-     */
-    int getDeadFungusNum();
-
-    /**
-     * <code>uint32 settle_round = 15;</code>
-     * @return The settleRound.
-     */
-    int getSettleRound();
-
-    /**
-     * <code>bool is_final_settle = 10;</code>
+     * <code>bool is_final_settle = 2;</code>
      * @return The isFinalSettle.
      */
     boolean getIsFinalSettle();
 
     /**
-     * <code>uint32 gadget_life_percentage = 11;</code>
-     * @return The gadgetLifePercentage.
+     * <code>uint32 total_used_time = 14;</code>
+     * @return The totalUsedTime.
      */
-    int getGadgetLifePercentage();
+    int getTotalUsedTime();
 
     /**
-     * <code>uint32 final_score = 9;</code>
+     * <code>bool is_new_record = 11;</code>
+     * @return The isNewRecord.
+     */
+    boolean getIsNewRecord();
+
+    /**
+     * <code>uint32 Unk3300_KKFBMHLOLFC = 10;</code>
+     * @return The unk3300KKFBMHLOLFC.
+     */
+    int getUnk3300KKFBMHLOLFC();
+
+    /**
+     * <code>uint32 Unk3300_BHOMHPHLOHL = 13;</code>
+     * @return The unk3300BHOMHPHLOHL.
+     */
+    int getUnk3300BHOMHPHLOHL();
+
+    /**
+     * <code>uint32 Unk3300_POCDEGBHJEA = 15;</code>
+     * @return The unk3300POCDEGBHJEA.
+     */
+    int getUnk3300POCDEGBHJEA();
+
+    /**
+     * <code>uint32 final_score = 5;</code>
      * @return The finalScore.
      */
     int getFinalScore();
   }
   /**
    * <pre>
-   * CmdId: 23931
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 23475;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code FungusFighterTrainingGallerySettleNotify}
@@ -123,45 +127,45 @@ public final class FungusFighterTrainingGallerySettleNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
+            case 16: {
 
-              deadFungusNum_ = input.readUInt32();
+              isFinalSettle_ = input.readBool();
               break;
             }
-            case 32: {
-
-              totalUsedTime_ = input.readUInt32();
-              break;
-            }
-            case 40: {
+            case 24: {
               int rawValue = input.readEnum();
 
               reason_ = rawValue;
               break;
             }
-            case 72: {
+            case 40: {
 
               finalScore_ = input.readUInt32();
               break;
             }
             case 80: {
 
-              isFinalSettle_ = input.readBool();
+              unk3300KKFBMHLOLFC_ = input.readUInt32();
               break;
             }
             case 88: {
 
-              gadgetLifePercentage_ = input.readUInt32();
+              isNewRecord_ = input.readBool();
+              break;
+            }
+            case 104: {
+
+              unk3300BHOMHPHLOHL_ = input.readUInt32();
               break;
             }
             case 112: {
 
-              isNewRecord_ = input.readBool();
+              totalUsedTime_ = input.readUInt32();
               break;
             }
             case 120: {
 
-              settleRound_ = input.readUInt32();
+              unk3300POCDEGBHJEA_ = input.readUInt32();
               break;
             }
             default: {
@@ -196,39 +200,17 @@ public final class FungusFighterTrainingGallerySettleNotifyOuterClass {
               emu.grasscutter.net.proto.FungusFighterTrainingGallerySettleNotifyOuterClass.FungusFighterTrainingGallerySettleNotify.class, emu.grasscutter.net.proto.FungusFighterTrainingGallerySettleNotifyOuterClass.FungusFighterTrainingGallerySettleNotify.Builder.class);
     }
 
-    public static final int IS_NEW_RECORD_FIELD_NUMBER = 14;
-    private boolean isNewRecord_;
-    /**
-     * <code>bool is_new_record = 14;</code>
-     * @return The isNewRecord.
-     */
-    @java.lang.Override
-    public boolean getIsNewRecord() {
-      return isNewRecord_;
-    }
-
-    public static final int TOTAL_USED_TIME_FIELD_NUMBER = 4;
-    private int totalUsedTime_;
-    /**
-     * <code>uint32 total_used_time = 4;</code>
-     * @return The totalUsedTime.
-     */
-    @java.lang.Override
-    public int getTotalUsedTime() {
-      return totalUsedTime_;
-    }
-
-    public static final int REASON_FIELD_NUMBER = 5;
+    public static final int REASON_FIELD_NUMBER = 3;
     private int reason_;
     /**
-     * <code>.GalleryStopReason reason = 5;</code>
+     * <code>.GalleryStopReason reason = 3;</code>
      * @return The enum numeric value on the wire for reason.
      */
     @java.lang.Override public int getReasonValue() {
       return reason_;
     }
     /**
-     * <code>.GalleryStopReason reason = 5;</code>
+     * <code>.GalleryStopReason reason = 3;</code>
      * @return The reason.
      */
     @java.lang.Override public emu.grasscutter.net.proto.GalleryStopReasonOuterClass.GalleryStopReason getReason() {
@@ -237,32 +219,10 @@ public final class FungusFighterTrainingGallerySettleNotifyOuterClass {
       return result == null ? emu.grasscutter.net.proto.GalleryStopReasonOuterClass.GalleryStopReason.UNRECOGNIZED : result;
     }
 
-    public static final int DEAD_FUNGUS_NUM_FIELD_NUMBER = 1;
-    private int deadFungusNum_;
-    /**
-     * <code>uint32 dead_fungus_num = 1;</code>
-     * @return The deadFungusNum.
-     */
-    @java.lang.Override
-    public int getDeadFungusNum() {
-      return deadFungusNum_;
-    }
-
-    public static final int SETTLE_ROUND_FIELD_NUMBER = 15;
-    private int settleRound_;
-    /**
-     * <code>uint32 settle_round = 15;</code>
-     * @return The settleRound.
-     */
-    @java.lang.Override
-    public int getSettleRound() {
-      return settleRound_;
-    }
-
-    public static final int IS_FINAL_SETTLE_FIELD_NUMBER = 10;
+    public static final int IS_FINAL_SETTLE_FIELD_NUMBER = 2;
     private boolean isFinalSettle_;
     /**
-     * <code>bool is_final_settle = 10;</code>
+     * <code>bool is_final_settle = 2;</code>
      * @return The isFinalSettle.
      */
     @java.lang.Override
@@ -270,21 +230,65 @@ public final class FungusFighterTrainingGallerySettleNotifyOuterClass {
       return isFinalSettle_;
     }
 
-    public static final int GADGET_LIFE_PERCENTAGE_FIELD_NUMBER = 11;
-    private int gadgetLifePercentage_;
+    public static final int TOTAL_USED_TIME_FIELD_NUMBER = 14;
+    private int totalUsedTime_;
     /**
-     * <code>uint32 gadget_life_percentage = 11;</code>
-     * @return The gadgetLifePercentage.
+     * <code>uint32 total_used_time = 14;</code>
+     * @return The totalUsedTime.
      */
     @java.lang.Override
-    public int getGadgetLifePercentage() {
-      return gadgetLifePercentage_;
+    public int getTotalUsedTime() {
+      return totalUsedTime_;
     }
 
-    public static final int FINAL_SCORE_FIELD_NUMBER = 9;
+    public static final int IS_NEW_RECORD_FIELD_NUMBER = 11;
+    private boolean isNewRecord_;
+    /**
+     * <code>bool is_new_record = 11;</code>
+     * @return The isNewRecord.
+     */
+    @java.lang.Override
+    public boolean getIsNewRecord() {
+      return isNewRecord_;
+    }
+
+    public static final int UNK3300_KKFBMHLOLFC_FIELD_NUMBER = 10;
+    private int unk3300KKFBMHLOLFC_;
+    /**
+     * <code>uint32 Unk3300_KKFBMHLOLFC = 10;</code>
+     * @return The unk3300KKFBMHLOLFC.
+     */
+    @java.lang.Override
+    public int getUnk3300KKFBMHLOLFC() {
+      return unk3300KKFBMHLOLFC_;
+    }
+
+    public static final int UNK3300_BHOMHPHLOHL_FIELD_NUMBER = 13;
+    private int unk3300BHOMHPHLOHL_;
+    /**
+     * <code>uint32 Unk3300_BHOMHPHLOHL = 13;</code>
+     * @return The unk3300BHOMHPHLOHL.
+     */
+    @java.lang.Override
+    public int getUnk3300BHOMHPHLOHL() {
+      return unk3300BHOMHPHLOHL_;
+    }
+
+    public static final int UNK3300_POCDEGBHJEA_FIELD_NUMBER = 15;
+    private int unk3300POCDEGBHJEA_;
+    /**
+     * <code>uint32 Unk3300_POCDEGBHJEA = 15;</code>
+     * @return The unk3300POCDEGBHJEA.
+     */
+    @java.lang.Override
+    public int getUnk3300POCDEGBHJEA() {
+      return unk3300POCDEGBHJEA_;
+    }
+
+    public static final int FINAL_SCORE_FIELD_NUMBER = 5;
     private int finalScore_;
     /**
-     * <code>uint32 final_score = 9;</code>
+     * <code>uint32 final_score = 5;</code>
      * @return The finalScore.
      */
     @java.lang.Override
@@ -306,29 +310,29 @@ public final class FungusFighterTrainingGallerySettleNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (deadFungusNum_ != 0) {
-        output.writeUInt32(1, deadFungusNum_);
-      }
-      if (totalUsedTime_ != 0) {
-        output.writeUInt32(4, totalUsedTime_);
+      if (isFinalSettle_ != false) {
+        output.writeBool(2, isFinalSettle_);
       }
       if (reason_ != emu.grasscutter.net.proto.GalleryStopReasonOuterClass.GalleryStopReason.GALLERY_STOP_REASON_NONE.getNumber()) {
-        output.writeEnum(5, reason_);
+        output.writeEnum(3, reason_);
       }
       if (finalScore_ != 0) {
-        output.writeUInt32(9, finalScore_);
+        output.writeUInt32(5, finalScore_);
       }
-      if (isFinalSettle_ != false) {
-        output.writeBool(10, isFinalSettle_);
-      }
-      if (gadgetLifePercentage_ != 0) {
-        output.writeUInt32(11, gadgetLifePercentage_);
+      if (unk3300KKFBMHLOLFC_ != 0) {
+        output.writeUInt32(10, unk3300KKFBMHLOLFC_);
       }
       if (isNewRecord_ != false) {
-        output.writeBool(14, isNewRecord_);
+        output.writeBool(11, isNewRecord_);
       }
-      if (settleRound_ != 0) {
-        output.writeUInt32(15, settleRound_);
+      if (unk3300BHOMHPHLOHL_ != 0) {
+        output.writeUInt32(13, unk3300BHOMHPHLOHL_);
+      }
+      if (totalUsedTime_ != 0) {
+        output.writeUInt32(14, totalUsedTime_);
+      }
+      if (unk3300POCDEGBHJEA_ != 0) {
+        output.writeUInt32(15, unk3300POCDEGBHJEA_);
       }
       unknownFields.writeTo(output);
     }
@@ -339,37 +343,37 @@ public final class FungusFighterTrainingGallerySettleNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (deadFungusNum_ != 0) {
+      if (isFinalSettle_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, deadFungusNum_);
-      }
-      if (totalUsedTime_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, totalUsedTime_);
+          .computeBoolSize(2, isFinalSettle_);
       }
       if (reason_ != emu.grasscutter.net.proto.GalleryStopReasonOuterClass.GalleryStopReason.GALLERY_STOP_REASON_NONE.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(5, reason_);
+          .computeEnumSize(3, reason_);
       }
       if (finalScore_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, finalScore_);
+          .computeUInt32Size(5, finalScore_);
       }
-      if (isFinalSettle_ != false) {
+      if (unk3300KKFBMHLOLFC_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(10, isFinalSettle_);
-      }
-      if (gadgetLifePercentage_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, gadgetLifePercentage_);
+          .computeUInt32Size(10, unk3300KKFBMHLOLFC_);
       }
       if (isNewRecord_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(14, isNewRecord_);
+          .computeBoolSize(11, isNewRecord_);
       }
-      if (settleRound_ != 0) {
+      if (unk3300BHOMHPHLOHL_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, settleRound_);
+          .computeUInt32Size(13, unk3300BHOMHPHLOHL_);
+      }
+      if (totalUsedTime_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(14, totalUsedTime_);
+      }
+      if (unk3300POCDEGBHJEA_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(15, unk3300POCDEGBHJEA_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -386,19 +390,19 @@ public final class FungusFighterTrainingGallerySettleNotifyOuterClass {
       }
       emu.grasscutter.net.proto.FungusFighterTrainingGallerySettleNotifyOuterClass.FungusFighterTrainingGallerySettleNotify other = (emu.grasscutter.net.proto.FungusFighterTrainingGallerySettleNotifyOuterClass.FungusFighterTrainingGallerySettleNotify) obj;
 
-      if (getIsNewRecord()
-          != other.getIsNewRecord()) return false;
-      if (getTotalUsedTime()
-          != other.getTotalUsedTime()) return false;
       if (reason_ != other.reason_) return false;
-      if (getDeadFungusNum()
-          != other.getDeadFungusNum()) return false;
-      if (getSettleRound()
-          != other.getSettleRound()) return false;
       if (getIsFinalSettle()
           != other.getIsFinalSettle()) return false;
-      if (getGadgetLifePercentage()
-          != other.getGadgetLifePercentage()) return false;
+      if (getTotalUsedTime()
+          != other.getTotalUsedTime()) return false;
+      if (getIsNewRecord()
+          != other.getIsNewRecord()) return false;
+      if (getUnk3300KKFBMHLOLFC()
+          != other.getUnk3300KKFBMHLOLFC()) return false;
+      if (getUnk3300BHOMHPHLOHL()
+          != other.getUnk3300BHOMHPHLOHL()) return false;
+      if (getUnk3300POCDEGBHJEA()
+          != other.getUnk3300POCDEGBHJEA()) return false;
       if (getFinalScore()
           != other.getFinalScore()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
@@ -412,22 +416,22 @@ public final class FungusFighterTrainingGallerySettleNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + IS_NEW_RECORD_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsNewRecord());
-      hash = (37 * hash) + TOTAL_USED_TIME_FIELD_NUMBER;
-      hash = (53 * hash) + getTotalUsedTime();
       hash = (37 * hash) + REASON_FIELD_NUMBER;
       hash = (53 * hash) + reason_;
-      hash = (37 * hash) + DEAD_FUNGUS_NUM_FIELD_NUMBER;
-      hash = (53 * hash) + getDeadFungusNum();
-      hash = (37 * hash) + SETTLE_ROUND_FIELD_NUMBER;
-      hash = (53 * hash) + getSettleRound();
       hash = (37 * hash) + IS_FINAL_SETTLE_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsFinalSettle());
-      hash = (37 * hash) + GADGET_LIFE_PERCENTAGE_FIELD_NUMBER;
-      hash = (53 * hash) + getGadgetLifePercentage();
+      hash = (37 * hash) + TOTAL_USED_TIME_FIELD_NUMBER;
+      hash = (53 * hash) + getTotalUsedTime();
+      hash = (37 * hash) + IS_NEW_RECORD_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getIsNewRecord());
+      hash = (37 * hash) + UNK3300_KKFBMHLOLFC_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300KKFBMHLOLFC();
+      hash = (37 * hash) + UNK3300_BHOMHPHLOHL_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300BHOMHPHLOHL();
+      hash = (37 * hash) + UNK3300_POCDEGBHJEA_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300POCDEGBHJEA();
       hash = (37 * hash) + FINAL_SCORE_FIELD_NUMBER;
       hash = (53 * hash) + getFinalScore();
       hash = (29 * hash) + unknownFields.hashCode();
@@ -527,9 +531,13 @@ public final class FungusFighterTrainingGallerySettleNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 23931
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 23475;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code FungusFighterTrainingGallerySettleNotify}
@@ -569,19 +577,19 @@ public final class FungusFighterTrainingGallerySettleNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        isNewRecord_ = false;
-
-        totalUsedTime_ = 0;
-
         reason_ = 0;
-
-        deadFungusNum_ = 0;
-
-        settleRound_ = 0;
 
         isFinalSettle_ = false;
 
-        gadgetLifePercentage_ = 0;
+        totalUsedTime_ = 0;
+
+        isNewRecord_ = false;
+
+        unk3300KKFBMHLOLFC_ = 0;
+
+        unk3300BHOMHPHLOHL_ = 0;
+
+        unk3300POCDEGBHJEA_ = 0;
 
         finalScore_ = 0;
 
@@ -611,13 +619,13 @@ public final class FungusFighterTrainingGallerySettleNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.FungusFighterTrainingGallerySettleNotifyOuterClass.FungusFighterTrainingGallerySettleNotify buildPartial() {
         emu.grasscutter.net.proto.FungusFighterTrainingGallerySettleNotifyOuterClass.FungusFighterTrainingGallerySettleNotify result = new emu.grasscutter.net.proto.FungusFighterTrainingGallerySettleNotifyOuterClass.FungusFighterTrainingGallerySettleNotify(this);
-        result.isNewRecord_ = isNewRecord_;
-        result.totalUsedTime_ = totalUsedTime_;
         result.reason_ = reason_;
-        result.deadFungusNum_ = deadFungusNum_;
-        result.settleRound_ = settleRound_;
         result.isFinalSettle_ = isFinalSettle_;
-        result.gadgetLifePercentage_ = gadgetLifePercentage_;
+        result.totalUsedTime_ = totalUsedTime_;
+        result.isNewRecord_ = isNewRecord_;
+        result.unk3300KKFBMHLOLFC_ = unk3300KKFBMHLOLFC_;
+        result.unk3300BHOMHPHLOHL_ = unk3300BHOMHPHLOHL_;
+        result.unk3300POCDEGBHJEA_ = unk3300POCDEGBHJEA_;
         result.finalScore_ = finalScore_;
         onBuilt();
         return result;
@@ -667,26 +675,26 @@ public final class FungusFighterTrainingGallerySettleNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.FungusFighterTrainingGallerySettleNotifyOuterClass.FungusFighterTrainingGallerySettleNotify other) {
         if (other == emu.grasscutter.net.proto.FungusFighterTrainingGallerySettleNotifyOuterClass.FungusFighterTrainingGallerySettleNotify.getDefaultInstance()) return this;
-        if (other.getIsNewRecord() != false) {
-          setIsNewRecord(other.getIsNewRecord());
-        }
-        if (other.getTotalUsedTime() != 0) {
-          setTotalUsedTime(other.getTotalUsedTime());
-        }
         if (other.reason_ != 0) {
           setReasonValue(other.getReasonValue());
-        }
-        if (other.getDeadFungusNum() != 0) {
-          setDeadFungusNum(other.getDeadFungusNum());
-        }
-        if (other.getSettleRound() != 0) {
-          setSettleRound(other.getSettleRound());
         }
         if (other.getIsFinalSettle() != false) {
           setIsFinalSettle(other.getIsFinalSettle());
         }
-        if (other.getGadgetLifePercentage() != 0) {
-          setGadgetLifePercentage(other.getGadgetLifePercentage());
+        if (other.getTotalUsedTime() != 0) {
+          setTotalUsedTime(other.getTotalUsedTime());
+        }
+        if (other.getIsNewRecord() != false) {
+          setIsNewRecord(other.getIsNewRecord());
+        }
+        if (other.getUnk3300KKFBMHLOLFC() != 0) {
+          setUnk3300KKFBMHLOLFC(other.getUnk3300KKFBMHLOLFC());
+        }
+        if (other.getUnk3300BHOMHPHLOHL() != 0) {
+          setUnk3300BHOMHPHLOHL(other.getUnk3300BHOMHPHLOHL());
+        }
+        if (other.getUnk3300POCDEGBHJEA() != 0) {
+          setUnk3300POCDEGBHJEA(other.getUnk3300POCDEGBHJEA());
         }
         if (other.getFinalScore() != 0) {
           setFinalScore(other.getFinalScore());
@@ -720,78 +728,16 @@ public final class FungusFighterTrainingGallerySettleNotifyOuterClass {
         return this;
       }
 
-      private boolean isNewRecord_ ;
-      /**
-       * <code>bool is_new_record = 14;</code>
-       * @return The isNewRecord.
-       */
-      @java.lang.Override
-      public boolean getIsNewRecord() {
-        return isNewRecord_;
-      }
-      /**
-       * <code>bool is_new_record = 14;</code>
-       * @param value The isNewRecord to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsNewRecord(boolean value) {
-        
-        isNewRecord_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_new_record = 14;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsNewRecord() {
-        
-        isNewRecord_ = false;
-        onChanged();
-        return this;
-      }
-
-      private int totalUsedTime_ ;
-      /**
-       * <code>uint32 total_used_time = 4;</code>
-       * @return The totalUsedTime.
-       */
-      @java.lang.Override
-      public int getTotalUsedTime() {
-        return totalUsedTime_;
-      }
-      /**
-       * <code>uint32 total_used_time = 4;</code>
-       * @param value The totalUsedTime to set.
-       * @return This builder for chaining.
-       */
-      public Builder setTotalUsedTime(int value) {
-        
-        totalUsedTime_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 total_used_time = 4;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearTotalUsedTime() {
-        
-        totalUsedTime_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int reason_ = 0;
       /**
-       * <code>.GalleryStopReason reason = 5;</code>
+       * <code>.GalleryStopReason reason = 3;</code>
        * @return The enum numeric value on the wire for reason.
        */
       @java.lang.Override public int getReasonValue() {
         return reason_;
       }
       /**
-       * <code>.GalleryStopReason reason = 5;</code>
+       * <code>.GalleryStopReason reason = 3;</code>
        * @param value The enum numeric value on the wire for reason to set.
        * @return This builder for chaining.
        */
@@ -802,7 +748,7 @@ public final class FungusFighterTrainingGallerySettleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.GalleryStopReason reason = 5;</code>
+       * <code>.GalleryStopReason reason = 3;</code>
        * @return The reason.
        */
       @java.lang.Override
@@ -812,7 +758,7 @@ public final class FungusFighterTrainingGallerySettleNotifyOuterClass {
         return result == null ? emu.grasscutter.net.proto.GalleryStopReasonOuterClass.GalleryStopReason.UNRECOGNIZED : result;
       }
       /**
-       * <code>.GalleryStopReason reason = 5;</code>
+       * <code>.GalleryStopReason reason = 3;</code>
        * @param value The reason to set.
        * @return This builder for chaining.
        */
@@ -826,7 +772,7 @@ public final class FungusFighterTrainingGallerySettleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.GalleryStopReason reason = 5;</code>
+       * <code>.GalleryStopReason reason = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearReason() {
@@ -836,71 +782,9 @@ public final class FungusFighterTrainingGallerySettleNotifyOuterClass {
         return this;
       }
 
-      private int deadFungusNum_ ;
-      /**
-       * <code>uint32 dead_fungus_num = 1;</code>
-       * @return The deadFungusNum.
-       */
-      @java.lang.Override
-      public int getDeadFungusNum() {
-        return deadFungusNum_;
-      }
-      /**
-       * <code>uint32 dead_fungus_num = 1;</code>
-       * @param value The deadFungusNum to set.
-       * @return This builder for chaining.
-       */
-      public Builder setDeadFungusNum(int value) {
-        
-        deadFungusNum_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 dead_fungus_num = 1;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearDeadFungusNum() {
-        
-        deadFungusNum_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int settleRound_ ;
-      /**
-       * <code>uint32 settle_round = 15;</code>
-       * @return The settleRound.
-       */
-      @java.lang.Override
-      public int getSettleRound() {
-        return settleRound_;
-      }
-      /**
-       * <code>uint32 settle_round = 15;</code>
-       * @param value The settleRound to set.
-       * @return This builder for chaining.
-       */
-      public Builder setSettleRound(int value) {
-        
-        settleRound_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 settle_round = 15;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearSettleRound() {
-        
-        settleRound_ = 0;
-        onChanged();
-        return this;
-      }
-
       private boolean isFinalSettle_ ;
       /**
-       * <code>bool is_final_settle = 10;</code>
+       * <code>bool is_final_settle = 2;</code>
        * @return The isFinalSettle.
        */
       @java.lang.Override
@@ -908,7 +792,7 @@ public final class FungusFighterTrainingGallerySettleNotifyOuterClass {
         return isFinalSettle_;
       }
       /**
-       * <code>bool is_final_settle = 10;</code>
+       * <code>bool is_final_settle = 2;</code>
        * @param value The isFinalSettle to set.
        * @return This builder for chaining.
        */
@@ -919,7 +803,7 @@ public final class FungusFighterTrainingGallerySettleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>bool is_final_settle = 10;</code>
+       * <code>bool is_final_settle = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsFinalSettle() {
@@ -929,40 +813,164 @@ public final class FungusFighterTrainingGallerySettleNotifyOuterClass {
         return this;
       }
 
-      private int gadgetLifePercentage_ ;
+      private int totalUsedTime_ ;
       /**
-       * <code>uint32 gadget_life_percentage = 11;</code>
-       * @return The gadgetLifePercentage.
+       * <code>uint32 total_used_time = 14;</code>
+       * @return The totalUsedTime.
        */
       @java.lang.Override
-      public int getGadgetLifePercentage() {
-        return gadgetLifePercentage_;
+      public int getTotalUsedTime() {
+        return totalUsedTime_;
       }
       /**
-       * <code>uint32 gadget_life_percentage = 11;</code>
-       * @param value The gadgetLifePercentage to set.
+       * <code>uint32 total_used_time = 14;</code>
+       * @param value The totalUsedTime to set.
        * @return This builder for chaining.
        */
-      public Builder setGadgetLifePercentage(int value) {
+      public Builder setTotalUsedTime(int value) {
         
-        gadgetLifePercentage_ = value;
+        totalUsedTime_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 gadget_life_percentage = 11;</code>
+       * <code>uint32 total_used_time = 14;</code>
        * @return This builder for chaining.
        */
-      public Builder clearGadgetLifePercentage() {
+      public Builder clearTotalUsedTime() {
         
-        gadgetLifePercentage_ = 0;
+        totalUsedTime_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private boolean isNewRecord_ ;
+      /**
+       * <code>bool is_new_record = 11;</code>
+       * @return The isNewRecord.
+       */
+      @java.lang.Override
+      public boolean getIsNewRecord() {
+        return isNewRecord_;
+      }
+      /**
+       * <code>bool is_new_record = 11;</code>
+       * @param value The isNewRecord to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIsNewRecord(boolean value) {
+        
+        isNewRecord_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool is_new_record = 11;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsNewRecord() {
+        
+        isNewRecord_ = false;
+        onChanged();
+        return this;
+      }
+
+      private int unk3300KKFBMHLOLFC_ ;
+      /**
+       * <code>uint32 Unk3300_KKFBMHLOLFC = 10;</code>
+       * @return The unk3300KKFBMHLOLFC.
+       */
+      @java.lang.Override
+      public int getUnk3300KKFBMHLOLFC() {
+        return unk3300KKFBMHLOLFC_;
+      }
+      /**
+       * <code>uint32 Unk3300_KKFBMHLOLFC = 10;</code>
+       * @param value The unk3300KKFBMHLOLFC to set.
+       * @return This builder for chaining.
+       */
+      public Builder setUnk3300KKFBMHLOLFC(int value) {
+        
+        unk3300KKFBMHLOLFC_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 Unk3300_KKFBMHLOLFC = 10;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearUnk3300KKFBMHLOLFC() {
+        
+        unk3300KKFBMHLOLFC_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int unk3300BHOMHPHLOHL_ ;
+      /**
+       * <code>uint32 Unk3300_BHOMHPHLOHL = 13;</code>
+       * @return The unk3300BHOMHPHLOHL.
+       */
+      @java.lang.Override
+      public int getUnk3300BHOMHPHLOHL() {
+        return unk3300BHOMHPHLOHL_;
+      }
+      /**
+       * <code>uint32 Unk3300_BHOMHPHLOHL = 13;</code>
+       * @param value The unk3300BHOMHPHLOHL to set.
+       * @return This builder for chaining.
+       */
+      public Builder setUnk3300BHOMHPHLOHL(int value) {
+        
+        unk3300BHOMHPHLOHL_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 Unk3300_BHOMHPHLOHL = 13;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearUnk3300BHOMHPHLOHL() {
+        
+        unk3300BHOMHPHLOHL_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int unk3300POCDEGBHJEA_ ;
+      /**
+       * <code>uint32 Unk3300_POCDEGBHJEA = 15;</code>
+       * @return The unk3300POCDEGBHJEA.
+       */
+      @java.lang.Override
+      public int getUnk3300POCDEGBHJEA() {
+        return unk3300POCDEGBHJEA_;
+      }
+      /**
+       * <code>uint32 Unk3300_POCDEGBHJEA = 15;</code>
+       * @param value The unk3300POCDEGBHJEA to set.
+       * @return This builder for chaining.
+       */
+      public Builder setUnk3300POCDEGBHJEA(int value) {
+        
+        unk3300POCDEGBHJEA_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 Unk3300_POCDEGBHJEA = 15;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearUnk3300POCDEGBHJEA() {
+        
+        unk3300POCDEGBHJEA_ = 0;
         onChanged();
         return this;
       }
 
       private int finalScore_ ;
       /**
-       * <code>uint32 final_score = 9;</code>
+       * <code>uint32 final_score = 5;</code>
        * @return The finalScore.
        */
       @java.lang.Override
@@ -970,7 +978,7 @@ public final class FungusFighterTrainingGallerySettleNotifyOuterClass {
         return finalScore_;
       }
       /**
-       * <code>uint32 final_score = 9;</code>
+       * <code>uint32 final_score = 5;</code>
        * @param value The finalScore to set.
        * @return This builder for chaining.
        */
@@ -981,7 +989,7 @@ public final class FungusFighterTrainingGallerySettleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 final_score = 9;</code>
+       * <code>uint32 final_score = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearFinalScore() {
@@ -1058,15 +1066,15 @@ public final class FungusFighterTrainingGallerySettleNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n.FungusFighterTrainingGallerySettleNoti" +
-      "fy.proto\032\027GalleryStopReason.proto\"\373\001\n(Fu" +
-      "ngusFighterTrainingGallerySettleNotify\022\025" +
-      "\n\ris_new_record\030\016 \001(\010\022\027\n\017total_used_time" +
-      "\030\004 \001(\r\022\"\n\006reason\030\005 \001(\0162\022.GalleryStopReas" +
-      "on\022\027\n\017dead_fungus_num\030\001 \001(\r\022\024\n\014settle_ro" +
-      "und\030\017 \001(\r\022\027\n\017is_final_settle\030\n \001(\010\022\036\n\026ga" +
-      "dget_life_percentage\030\013 \001(\r\022\023\n\013final_scor" +
-      "e\030\t \001(\rB\033\n\031emu.grasscutter.net.protob\006pr" +
-      "oto3"
+      "fy.proto\032\027GalleryStopReason.proto\"\203\002\n(Fu" +
+      "ngusFighterTrainingGallerySettleNotify\022\"" +
+      "\n\006reason\030\003 \001(\0162\022.GalleryStopReason\022\027\n\017is" +
+      "_final_settle\030\002 \001(\010\022\027\n\017total_used_time\030\016" +
+      " \001(\r\022\025\n\ris_new_record\030\013 \001(\010\022\033\n\023Unk3300_K" +
+      "KFBMHLOLFC\030\n \001(\r\022\033\n\023Unk3300_BHOMHPHLOHL\030" +
+      "\r \001(\r\022\033\n\023Unk3300_POCDEGBHJEA\030\017 \001(\r\022\023\n\013fi" +
+      "nal_score\030\005 \001(\rB\033\n\031emu.grasscutter.net.p" +
+      "rotob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -1078,7 +1086,7 @@ public final class FungusFighterTrainingGallerySettleNotifyOuterClass {
     internal_static_FungusFighterTrainingGallerySettleNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_FungusFighterTrainingGallerySettleNotify_descriptor,
-        new java.lang.String[] { "IsNewRecord", "TotalUsedTime", "Reason", "DeadFungusNum", "SettleRound", "IsFinalSettle", "GadgetLifePercentage", "FinalScore", });
+        new java.lang.String[] { "Reason", "IsFinalSettle", "TotalUsedTime", "IsNewRecord", "Unk3300KKFBMHLOLFC", "Unk3300BHOMHPHLOHL", "Unk3300POCDEGBHJEA", "FinalScore", });
     emu.grasscutter.net.proto.GalleryStopReasonOuterClass.getDescriptor();
   }
 

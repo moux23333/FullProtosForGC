@@ -19,17 +19,21 @@ public final class RemoveBlacklistReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 target_uid = 13;</code>
+     * <code>uint32 target_uid = 4;</code>
      * @return The targetUid.
      */
     int getTargetUid();
   }
   /**
    * <pre>
-   * CmdId: 4063
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 4003;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code RemoveBlacklistReq}
@@ -76,7 +80,7 @@ public final class RemoveBlacklistReqOuterClass {
             case 0:
               done = true;
               break;
-            case 104: {
+            case 32: {
 
               targetUid_ = input.readUInt32();
               break;
@@ -113,10 +117,10 @@ public final class RemoveBlacklistReqOuterClass {
               emu.grasscutter.net.proto.RemoveBlacklistReqOuterClass.RemoveBlacklistReq.class, emu.grasscutter.net.proto.RemoveBlacklistReqOuterClass.RemoveBlacklistReq.Builder.class);
     }
 
-    public static final int TARGET_UID_FIELD_NUMBER = 13;
+    public static final int TARGET_UID_FIELD_NUMBER = 4;
     private int targetUid_;
     /**
-     * <code>uint32 target_uid = 13;</code>
+     * <code>uint32 target_uid = 4;</code>
      * @return The targetUid.
      */
     @java.lang.Override
@@ -139,7 +143,7 @@ public final class RemoveBlacklistReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (targetUid_ != 0) {
-        output.writeUInt32(13, targetUid_);
+        output.writeUInt32(4, targetUid_);
       }
       unknownFields.writeTo(output);
     }
@@ -152,7 +156,7 @@ public final class RemoveBlacklistReqOuterClass {
       size = 0;
       if (targetUid_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, targetUid_);
+          .computeUInt32Size(4, targetUid_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -281,10 +285,14 @@ public final class RemoveBlacklistReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 4063
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 4003;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code RemoveBlacklistReq}
@@ -435,7 +443,7 @@ public final class RemoveBlacklistReqOuterClass {
 
       private int targetUid_ ;
       /**
-       * <code>uint32 target_uid = 13;</code>
+       * <code>uint32 target_uid = 4;</code>
        * @return The targetUid.
        */
       @java.lang.Override
@@ -443,7 +451,7 @@ public final class RemoveBlacklistReqOuterClass {
         return targetUid_;
       }
       /**
-       * <code>uint32 target_uid = 13;</code>
+       * <code>uint32 target_uid = 4;</code>
        * @param value The targetUid to set.
        * @return This builder for chaining.
        */
@@ -454,7 +462,7 @@ public final class RemoveBlacklistReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 target_uid = 13;</code>
+       * <code>uint32 target_uid = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearTargetUid() {
@@ -531,7 +539,7 @@ public final class RemoveBlacklistReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\030RemoveBlacklistReq.proto\"(\n\022RemoveBlac" +
-      "klistReq\022\022\n\ntarget_uid\030\r \001(\rB\033\n\031emu.gras" +
+      "klistReq\022\022\n\ntarget_uid\030\004 \001(\rB\033\n\031emu.gras" +
       "scutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

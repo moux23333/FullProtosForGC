@@ -19,7 +19,13 @@ public final class AvatarCardChangeReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 item_id = 6;</code>
+     * <code>uint32 count = 11;</code>
+     * @return The count.
+     */
+    int getCount();
+
+    /**
+     * <code>uint32 item_id = 4;</code>
      * @return The itemId.
      */
     int getItemId();
@@ -29,19 +35,17 @@ public final class AvatarCardChangeReqOuterClass {
      * @return The avatarGuid.
      */
     long getAvatarGuid();
-
-    /**
-     * <code>uint32 count = 7;</code>
-     * @return The count.
-     */
-    int getCount();
   }
   /**
    * <pre>
-   * CmdId: 688
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 694;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code AvatarCardChangeReq}
@@ -88,12 +92,12 @@ public final class AvatarCardChangeReqOuterClass {
             case 0:
               done = true;
               break;
-            case 48: {
+            case 32: {
 
               itemId_ = input.readUInt32();
               break;
             }
-            case 56: {
+            case 88: {
 
               count_ = input.readUInt32();
               break;
@@ -135,10 +139,21 @@ public final class AvatarCardChangeReqOuterClass {
               emu.grasscutter.net.proto.AvatarCardChangeReqOuterClass.AvatarCardChangeReq.class, emu.grasscutter.net.proto.AvatarCardChangeReqOuterClass.AvatarCardChangeReq.Builder.class);
     }
 
-    public static final int ITEM_ID_FIELD_NUMBER = 6;
+    public static final int COUNT_FIELD_NUMBER = 11;
+    private int count_;
+    /**
+     * <code>uint32 count = 11;</code>
+     * @return The count.
+     */
+    @java.lang.Override
+    public int getCount() {
+      return count_;
+    }
+
+    public static final int ITEM_ID_FIELD_NUMBER = 4;
     private int itemId_;
     /**
-     * <code>uint32 item_id = 6;</code>
+     * <code>uint32 item_id = 4;</code>
      * @return The itemId.
      */
     @java.lang.Override
@@ -157,17 +172,6 @@ public final class AvatarCardChangeReqOuterClass {
       return avatarGuid_;
     }
 
-    public static final int COUNT_FIELD_NUMBER = 7;
-    private int count_;
-    /**
-     * <code>uint32 count = 7;</code>
-     * @return The count.
-     */
-    @java.lang.Override
-    public int getCount() {
-      return count_;
-    }
-
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
     public final boolean isInitialized() {
@@ -183,10 +187,10 @@ public final class AvatarCardChangeReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (itemId_ != 0) {
-        output.writeUInt32(6, itemId_);
+        output.writeUInt32(4, itemId_);
       }
       if (count_ != 0) {
-        output.writeUInt32(7, count_);
+        output.writeUInt32(11, count_);
       }
       if (avatarGuid_ != 0L) {
         output.writeUInt64(14, avatarGuid_);
@@ -202,11 +206,11 @@ public final class AvatarCardChangeReqOuterClass {
       size = 0;
       if (itemId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, itemId_);
+          .computeUInt32Size(4, itemId_);
       }
       if (count_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, count_);
+          .computeUInt32Size(11, count_);
       }
       if (avatarGuid_ != 0L) {
         size += com.google.protobuf.CodedOutputStream
@@ -227,12 +231,12 @@ public final class AvatarCardChangeReqOuterClass {
       }
       emu.grasscutter.net.proto.AvatarCardChangeReqOuterClass.AvatarCardChangeReq other = (emu.grasscutter.net.proto.AvatarCardChangeReqOuterClass.AvatarCardChangeReq) obj;
 
+      if (getCount()
+          != other.getCount()) return false;
       if (getItemId()
           != other.getItemId()) return false;
       if (getAvatarGuid()
           != other.getAvatarGuid()) return false;
-      if (getCount()
-          != other.getCount()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -244,13 +248,13 @@ public final class AvatarCardChangeReqOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + COUNT_FIELD_NUMBER;
+      hash = (53 * hash) + getCount();
       hash = (37 * hash) + ITEM_ID_FIELD_NUMBER;
       hash = (53 * hash) + getItemId();
       hash = (37 * hash) + AVATAR_GUID_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
           getAvatarGuid());
-      hash = (37 * hash) + COUNT_FIELD_NUMBER;
-      hash = (53 * hash) + getCount();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -348,10 +352,14 @@ public final class AvatarCardChangeReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 688
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 694;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code AvatarCardChangeReq}
@@ -391,11 +399,11 @@ public final class AvatarCardChangeReqOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        count_ = 0;
+
         itemId_ = 0;
 
         avatarGuid_ = 0L;
-
-        count_ = 0;
 
         return this;
       }
@@ -423,9 +431,9 @@ public final class AvatarCardChangeReqOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.AvatarCardChangeReqOuterClass.AvatarCardChangeReq buildPartial() {
         emu.grasscutter.net.proto.AvatarCardChangeReqOuterClass.AvatarCardChangeReq result = new emu.grasscutter.net.proto.AvatarCardChangeReqOuterClass.AvatarCardChangeReq(this);
+        result.count_ = count_;
         result.itemId_ = itemId_;
         result.avatarGuid_ = avatarGuid_;
-        result.count_ = count_;
         onBuilt();
         return result;
       }
@@ -474,14 +482,14 @@ public final class AvatarCardChangeReqOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.AvatarCardChangeReqOuterClass.AvatarCardChangeReq other) {
         if (other == emu.grasscutter.net.proto.AvatarCardChangeReqOuterClass.AvatarCardChangeReq.getDefaultInstance()) return this;
+        if (other.getCount() != 0) {
+          setCount(other.getCount());
+        }
         if (other.getItemId() != 0) {
           setItemId(other.getItemId());
         }
         if (other.getAvatarGuid() != 0L) {
           setAvatarGuid(other.getAvatarGuid());
-        }
-        if (other.getCount() != 0) {
-          setCount(other.getCount());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -512,9 +520,40 @@ public final class AvatarCardChangeReqOuterClass {
         return this;
       }
 
+      private int count_ ;
+      /**
+       * <code>uint32 count = 11;</code>
+       * @return The count.
+       */
+      @java.lang.Override
+      public int getCount() {
+        return count_;
+      }
+      /**
+       * <code>uint32 count = 11;</code>
+       * @param value The count to set.
+       * @return This builder for chaining.
+       */
+      public Builder setCount(int value) {
+        
+        count_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 count = 11;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearCount() {
+        
+        count_ = 0;
+        onChanged();
+        return this;
+      }
+
       private int itemId_ ;
       /**
-       * <code>uint32 item_id = 6;</code>
+       * <code>uint32 item_id = 4;</code>
        * @return The itemId.
        */
       @java.lang.Override
@@ -522,7 +561,7 @@ public final class AvatarCardChangeReqOuterClass {
         return itemId_;
       }
       /**
-       * <code>uint32 item_id = 6;</code>
+       * <code>uint32 item_id = 4;</code>
        * @param value The itemId to set.
        * @return This builder for chaining.
        */
@@ -533,7 +572,7 @@ public final class AvatarCardChangeReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 item_id = 6;</code>
+       * <code>uint32 item_id = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearItemId() {
@@ -570,37 +609,6 @@ public final class AvatarCardChangeReqOuterClass {
       public Builder clearAvatarGuid() {
         
         avatarGuid_ = 0L;
-        onChanged();
-        return this;
-      }
-
-      private int count_ ;
-      /**
-       * <code>uint32 count = 7;</code>
-       * @return The count.
-       */
-      @java.lang.Override
-      public int getCount() {
-        return count_;
-      }
-      /**
-       * <code>uint32 count = 7;</code>
-       * @param value The count to set.
-       * @return This builder for chaining.
-       */
-      public Builder setCount(int value) {
-        
-        count_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 count = 7;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearCount() {
-        
-        count_ = 0;
         onChanged();
         return this;
       }
@@ -672,8 +680,8 @@ public final class AvatarCardChangeReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\031AvatarCardChangeReq.proto\"J\n\023AvatarCar" +
-      "dChangeReq\022\017\n\007item_id\030\006 \001(\r\022\023\n\013avatar_gu" +
-      "id\030\016 \001(\004\022\r\n\005count\030\007 \001(\rB\033\n\031emu.grasscutt" +
+      "dChangeReq\022\r\n\005count\030\013 \001(\r\022\017\n\007item_id\030\004 \001" +
+      "(\r\022\023\n\013avatar_guid\030\016 \001(\004B\033\n\031emu.grasscutt" +
       "er.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -685,7 +693,7 @@ public final class AvatarCardChangeReqOuterClass {
     internal_static_AvatarCardChangeReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_AvatarCardChangeReq_descriptor,
-        new java.lang.String[] { "ItemId", "AvatarGuid", "Count", });
+        new java.lang.String[] { "Count", "ItemId", "AvatarGuid", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

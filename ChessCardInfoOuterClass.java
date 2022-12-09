@@ -19,16 +19,16 @@ public final class ChessCardInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 effect_stack = 12;</code>
-     * @return The effectStack.
-     */
-    int getEffectStack();
-
-    /**
-     * <code>uint32 card_id = 11;</code>
+     * <code>uint32 card_id = 12;</code>
      * @return The cardId.
      */
     int getCardId();
+
+    /**
+     * <code>uint32 effect_stack = 8;</code>
+     * @return The effectStack.
+     */
+    int getEffectStack();
   }
   /**
    * Protobuf type {@code ChessCardInfo}
@@ -75,14 +75,14 @@ public final class ChessCardInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 88: {
+            case 64: {
 
-              cardId_ = input.readUInt32();
+              effectStack_ = input.readUInt32();
               break;
             }
             case 96: {
 
-              effectStack_ = input.readUInt32();
+              cardId_ = input.readUInt32();
               break;
             }
             default: {
@@ -117,26 +117,26 @@ public final class ChessCardInfoOuterClass {
               emu.grasscutter.net.proto.ChessCardInfoOuterClass.ChessCardInfo.class, emu.grasscutter.net.proto.ChessCardInfoOuterClass.ChessCardInfo.Builder.class);
     }
 
-    public static final int EFFECT_STACK_FIELD_NUMBER = 12;
-    private int effectStack_;
-    /**
-     * <code>uint32 effect_stack = 12;</code>
-     * @return The effectStack.
-     */
-    @java.lang.Override
-    public int getEffectStack() {
-      return effectStack_;
-    }
-
-    public static final int CARD_ID_FIELD_NUMBER = 11;
+    public static final int CARD_ID_FIELD_NUMBER = 12;
     private int cardId_;
     /**
-     * <code>uint32 card_id = 11;</code>
+     * <code>uint32 card_id = 12;</code>
      * @return The cardId.
      */
     @java.lang.Override
     public int getCardId() {
       return cardId_;
+    }
+
+    public static final int EFFECT_STACK_FIELD_NUMBER = 8;
+    private int effectStack_;
+    /**
+     * <code>uint32 effect_stack = 8;</code>
+     * @return The effectStack.
+     */
+    @java.lang.Override
+    public int getEffectStack() {
+      return effectStack_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -153,11 +153,11 @@ public final class ChessCardInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (cardId_ != 0) {
-        output.writeUInt32(11, cardId_);
-      }
       if (effectStack_ != 0) {
-        output.writeUInt32(12, effectStack_);
+        output.writeUInt32(8, effectStack_);
+      }
+      if (cardId_ != 0) {
+        output.writeUInt32(12, cardId_);
       }
       unknownFields.writeTo(output);
     }
@@ -168,13 +168,13 @@ public final class ChessCardInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (cardId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, cardId_);
-      }
       if (effectStack_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, effectStack_);
+          .computeUInt32Size(8, effectStack_);
+      }
+      if (cardId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(12, cardId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -191,10 +191,10 @@ public final class ChessCardInfoOuterClass {
       }
       emu.grasscutter.net.proto.ChessCardInfoOuterClass.ChessCardInfo other = (emu.grasscutter.net.proto.ChessCardInfoOuterClass.ChessCardInfo) obj;
 
-      if (getEffectStack()
-          != other.getEffectStack()) return false;
       if (getCardId()
           != other.getCardId()) return false;
+      if (getEffectStack()
+          != other.getEffectStack()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -206,10 +206,10 @@ public final class ChessCardInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + EFFECT_STACK_FIELD_NUMBER;
-      hash = (53 * hash) + getEffectStack();
       hash = (37 * hash) + CARD_ID_FIELD_NUMBER;
       hash = (53 * hash) + getCardId();
+      hash = (37 * hash) + EFFECT_STACK_FIELD_NUMBER;
+      hash = (53 * hash) + getEffectStack();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -343,9 +343,9 @@ public final class ChessCardInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        effectStack_ = 0;
-
         cardId_ = 0;
+
+        effectStack_ = 0;
 
         return this;
       }
@@ -373,8 +373,8 @@ public final class ChessCardInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.ChessCardInfoOuterClass.ChessCardInfo buildPartial() {
         emu.grasscutter.net.proto.ChessCardInfoOuterClass.ChessCardInfo result = new emu.grasscutter.net.proto.ChessCardInfoOuterClass.ChessCardInfo(this);
-        result.effectStack_ = effectStack_;
         result.cardId_ = cardId_;
+        result.effectStack_ = effectStack_;
         onBuilt();
         return result;
       }
@@ -423,11 +423,11 @@ public final class ChessCardInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.ChessCardInfoOuterClass.ChessCardInfo other) {
         if (other == emu.grasscutter.net.proto.ChessCardInfoOuterClass.ChessCardInfo.getDefaultInstance()) return this;
-        if (other.getEffectStack() != 0) {
-          setEffectStack(other.getEffectStack());
-        }
         if (other.getCardId() != 0) {
           setCardId(other.getCardId());
+        }
+        if (other.getEffectStack() != 0) {
+          setEffectStack(other.getEffectStack());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -458,40 +458,9 @@ public final class ChessCardInfoOuterClass {
         return this;
       }
 
-      private int effectStack_ ;
-      /**
-       * <code>uint32 effect_stack = 12;</code>
-       * @return The effectStack.
-       */
-      @java.lang.Override
-      public int getEffectStack() {
-        return effectStack_;
-      }
-      /**
-       * <code>uint32 effect_stack = 12;</code>
-       * @param value The effectStack to set.
-       * @return This builder for chaining.
-       */
-      public Builder setEffectStack(int value) {
-        
-        effectStack_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 effect_stack = 12;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearEffectStack() {
-        
-        effectStack_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int cardId_ ;
       /**
-       * <code>uint32 card_id = 11;</code>
+       * <code>uint32 card_id = 12;</code>
        * @return The cardId.
        */
       @java.lang.Override
@@ -499,7 +468,7 @@ public final class ChessCardInfoOuterClass {
         return cardId_;
       }
       /**
-       * <code>uint32 card_id = 11;</code>
+       * <code>uint32 card_id = 12;</code>
        * @param value The cardId to set.
        * @return This builder for chaining.
        */
@@ -510,12 +479,43 @@ public final class ChessCardInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 card_id = 11;</code>
+       * <code>uint32 card_id = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearCardId() {
         
         cardId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int effectStack_ ;
+      /**
+       * <code>uint32 effect_stack = 8;</code>
+       * @return The effectStack.
+       */
+      @java.lang.Override
+      public int getEffectStack() {
+        return effectStack_;
+      }
+      /**
+       * <code>uint32 effect_stack = 8;</code>
+       * @param value The effectStack to set.
+       * @return This builder for chaining.
+       */
+      public Builder setEffectStack(int value) {
+        
+        effectStack_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 effect_stack = 8;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearEffectStack() {
+        
+        effectStack_ = 0;
         onChanged();
         return this;
       }
@@ -586,8 +586,8 @@ public final class ChessCardInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\023ChessCardInfo.proto\"6\n\rChessCardInfo\022\024" +
-      "\n\014effect_stack\030\014 \001(\r\022\017\n\007card_id\030\013 \001(\rB\033\n" +
+      "\n\023ChessCardInfo.proto\"6\n\rChessCardInfo\022\017" +
+      "\n\007card_id\030\014 \001(\r\022\024\n\014effect_stack\030\010 \001(\rB\033\n" +
       "\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -599,7 +599,7 @@ public final class ChessCardInfoOuterClass {
     internal_static_ChessCardInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ChessCardInfo_descriptor,
-        new java.lang.String[] { "EffectStack", "CardId", });
+        new java.lang.String[] { "CardId", "EffectStack", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

@@ -19,17 +19,21 @@ public final class EnterSceneReadyReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 enter_scene_token = 9;</code>
+     * <code>uint32 enter_scene_token = 12;</code>
      * @return The enterSceneToken.
      */
     int getEnterSceneToken();
   }
   /**
    * <pre>
-   * CmdId: 208
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 262;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code EnterSceneReadyReq}
@@ -76,7 +80,7 @@ public final class EnterSceneReadyReqOuterClass {
             case 0:
               done = true;
               break;
-            case 72: {
+            case 96: {
 
               enterSceneToken_ = input.readUInt32();
               break;
@@ -113,10 +117,10 @@ public final class EnterSceneReadyReqOuterClass {
               emu.grasscutter.net.proto.EnterSceneReadyReqOuterClass.EnterSceneReadyReq.class, emu.grasscutter.net.proto.EnterSceneReadyReqOuterClass.EnterSceneReadyReq.Builder.class);
     }
 
-    public static final int ENTER_SCENE_TOKEN_FIELD_NUMBER = 9;
+    public static final int ENTER_SCENE_TOKEN_FIELD_NUMBER = 12;
     private int enterSceneToken_;
     /**
-     * <code>uint32 enter_scene_token = 9;</code>
+     * <code>uint32 enter_scene_token = 12;</code>
      * @return The enterSceneToken.
      */
     @java.lang.Override
@@ -139,7 +143,7 @@ public final class EnterSceneReadyReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (enterSceneToken_ != 0) {
-        output.writeUInt32(9, enterSceneToken_);
+        output.writeUInt32(12, enterSceneToken_);
       }
       unknownFields.writeTo(output);
     }
@@ -152,7 +156,7 @@ public final class EnterSceneReadyReqOuterClass {
       size = 0;
       if (enterSceneToken_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, enterSceneToken_);
+          .computeUInt32Size(12, enterSceneToken_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -281,10 +285,14 @@ public final class EnterSceneReadyReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 208
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 262;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code EnterSceneReadyReq}
@@ -435,7 +443,7 @@ public final class EnterSceneReadyReqOuterClass {
 
       private int enterSceneToken_ ;
       /**
-       * <code>uint32 enter_scene_token = 9;</code>
+       * <code>uint32 enter_scene_token = 12;</code>
        * @return The enterSceneToken.
        */
       @java.lang.Override
@@ -443,7 +451,7 @@ public final class EnterSceneReadyReqOuterClass {
         return enterSceneToken_;
       }
       /**
-       * <code>uint32 enter_scene_token = 9;</code>
+       * <code>uint32 enter_scene_token = 12;</code>
        * @param value The enterSceneToken to set.
        * @return This builder for chaining.
        */
@@ -454,7 +462,7 @@ public final class EnterSceneReadyReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 enter_scene_token = 9;</code>
+       * <code>uint32 enter_scene_token = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearEnterSceneToken() {
@@ -531,7 +539,7 @@ public final class EnterSceneReadyReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\030EnterSceneReadyReq.proto\"/\n\022EnterScene" +
-      "ReadyReq\022\031\n\021enter_scene_token\030\t \001(\rB\033\n\031e" +
+      "ReadyReq\022\031\n\021enter_scene_token\030\014 \001(\rB\033\n\031e" +
       "mu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

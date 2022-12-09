@@ -19,17 +19,21 @@ public final class MichiaeMatsuriInteractStatueReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 statue_entity_id = 7;</code>
+     * <code>uint32 statue_entity_id = 9;</code>
      * @return The statueEntityId.
      */
     int getStatueEntityId();
   }
   /**
    * <pre>
-   * CmdId: 8718
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 8008;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   *   IS_ALLOW_CLIENT = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code MichiaeMatsuriInteractStatueReq}
@@ -76,7 +80,7 @@ public final class MichiaeMatsuriInteractStatueReqOuterClass {
             case 0:
               done = true;
               break;
-            case 56: {
+            case 72: {
 
               statueEntityId_ = input.readUInt32();
               break;
@@ -113,10 +117,10 @@ public final class MichiaeMatsuriInteractStatueReqOuterClass {
               emu.grasscutter.net.proto.MichiaeMatsuriInteractStatueReqOuterClass.MichiaeMatsuriInteractStatueReq.class, emu.grasscutter.net.proto.MichiaeMatsuriInteractStatueReqOuterClass.MichiaeMatsuriInteractStatueReq.Builder.class);
     }
 
-    public static final int STATUE_ENTITY_ID_FIELD_NUMBER = 7;
+    public static final int STATUE_ENTITY_ID_FIELD_NUMBER = 9;
     private int statueEntityId_;
     /**
-     * <code>uint32 statue_entity_id = 7;</code>
+     * <code>uint32 statue_entity_id = 9;</code>
      * @return The statueEntityId.
      */
     @java.lang.Override
@@ -139,7 +143,7 @@ public final class MichiaeMatsuriInteractStatueReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (statueEntityId_ != 0) {
-        output.writeUInt32(7, statueEntityId_);
+        output.writeUInt32(9, statueEntityId_);
       }
       unknownFields.writeTo(output);
     }
@@ -152,7 +156,7 @@ public final class MichiaeMatsuriInteractStatueReqOuterClass {
       size = 0;
       if (statueEntityId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, statueEntityId_);
+          .computeUInt32Size(9, statueEntityId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -281,10 +285,14 @@ public final class MichiaeMatsuriInteractStatueReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 8718
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 8008;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     *   IS_ALLOW_CLIENT = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code MichiaeMatsuriInteractStatueReq}
@@ -435,7 +443,7 @@ public final class MichiaeMatsuriInteractStatueReqOuterClass {
 
       private int statueEntityId_ ;
       /**
-       * <code>uint32 statue_entity_id = 7;</code>
+       * <code>uint32 statue_entity_id = 9;</code>
        * @return The statueEntityId.
        */
       @java.lang.Override
@@ -443,7 +451,7 @@ public final class MichiaeMatsuriInteractStatueReqOuterClass {
         return statueEntityId_;
       }
       /**
-       * <code>uint32 statue_entity_id = 7;</code>
+       * <code>uint32 statue_entity_id = 9;</code>
        * @param value The statueEntityId to set.
        * @return This builder for chaining.
        */
@@ -454,7 +462,7 @@ public final class MichiaeMatsuriInteractStatueReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 statue_entity_id = 7;</code>
+       * <code>uint32 statue_entity_id = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearStatueEntityId() {
@@ -532,7 +540,7 @@ public final class MichiaeMatsuriInteractStatueReqOuterClass {
     java.lang.String[] descriptorData = {
       "\n%MichiaeMatsuriInteractStatueReq.proto\"" +
       ";\n\037MichiaeMatsuriInteractStatueReq\022\030\n\020st" +
-      "atue_entity_id\030\007 \001(\rB\033\n\031emu.grasscutter." +
+      "atue_entity_id\030\t \001(\rB\033\n\031emu.grasscutter." +
       "net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

@@ -19,28 +19,19 @@ public final class HomeVerifyDataOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>string aid = 7;</code>
-     * @return The aid.
+     * <code>.HomeVerifySceneData home_info = 4;</code>
+     * @return Whether the homeInfo field is set.
      */
-    java.lang.String getAid();
+    boolean hasHomeInfo();
     /**
-     * <code>string aid = 7;</code>
-     * @return The bytes for aid.
+     * <code>.HomeVerifySceneData home_info = 4;</code>
+     * @return The homeInfo.
      */
-    com.google.protobuf.ByteString
-        getAidBytes();
-
+    emu.grasscutter.net.proto.HomeVerifySceneDataOuterClass.HomeVerifySceneData getHomeInfo();
     /**
-     * <code>fixed32 timestamp = 15;</code>
-     * @return The timestamp.
+     * <code>.HomeVerifySceneData home_info = 4;</code>
      */
-    int getTimestamp();
-
-    /**
-     * <code>uint32 uid = 5;</code>
-     * @return The uid.
-     */
-    int getUid();
+    emu.grasscutter.net.proto.HomeVerifySceneDataOuterClass.HomeVerifySceneDataOrBuilder getHomeInfoOrBuilder();
 
     /**
      * <code>.HomeSceneArrangementMuipData arrangement_data = 9;</code>
@@ -58,16 +49,10 @@ public final class HomeVerifyDataOuterClass {
     emu.grasscutter.net.proto.HomeSceneArrangementMuipDataOuterClass.HomeSceneArrangementMuipDataOrBuilder getArrangementDataOrBuilder();
 
     /**
-     * <code>string region = 3;</code>
-     * @return The region.
+     * <code>fixed32 timestamp = 11;</code>
+     * @return The timestamp.
      */
-    java.lang.String getRegion();
-    /**
-     * <code>string region = 3;</code>
-     * @return The bytes for region.
-     */
-    com.google.protobuf.ByteString
-        getRegionBytes();
+    int getTimestamp();
 
     /**
      * <code>string token = 1;</code>
@@ -82,30 +67,45 @@ public final class HomeVerifyDataOuterClass {
         getTokenBytes();
 
     /**
-     * <code>.HomeVerifySceneData home_info = 6;</code>
-     * @return Whether the homeInfo field is set.
+     * <code>string aid = 10;</code>
+     * @return The aid.
      */
-    boolean hasHomeInfo();
+    java.lang.String getAid();
     /**
-     * <code>.HomeVerifySceneData home_info = 6;</code>
-     * @return The homeInfo.
+     * <code>string aid = 10;</code>
+     * @return The bytes for aid.
      */
-    emu.grasscutter.net.proto.HomeVerifySceneDataOuterClass.HomeVerifySceneData getHomeInfo();
-    /**
-     * <code>.HomeVerifySceneData home_info = 6;</code>
-     */
-    emu.grasscutter.net.proto.HomeVerifySceneDataOuterClass.HomeVerifySceneDataOrBuilder getHomeInfoOrBuilder();
+    com.google.protobuf.ByteString
+        getAidBytes();
 
     /**
-     * <code>.LanguageType lang = 8;</code>
+     * <code>.LanguageType lang = 6;</code>
      * @return The enum numeric value on the wire for lang.
      */
     int getLangValue();
     /**
-     * <code>.LanguageType lang = 8;</code>
+     * <code>.LanguageType lang = 6;</code>
      * @return The lang.
      */
     emu.grasscutter.net.proto.LanguageTypeOuterClass.LanguageType getLang();
+
+    /**
+     * <code>uint32 uid = 2;</code>
+     * @return The uid.
+     */
+    int getUid();
+
+    /**
+     * <code>string region = 7;</code>
+     * @return The region.
+     */
+    java.lang.String getRegion();
+    /**
+     * <code>string region = 7;</code>
+     * @return The bytes for region.
+     */
+    com.google.protobuf.ByteString
+        getRegionBytes();
   }
   /**
    * Protobuf type {@code HomeVerifyData}
@@ -120,10 +120,10 @@ public final class HomeVerifyDataOuterClass {
       super(builder);
     }
     private HomeVerifyData() {
-      aid_ = "";
-      region_ = "";
       token_ = "";
+      aid_ = "";
       lang_ = 0;
+      region_ = "";
     }
 
     @java.lang.Override
@@ -162,18 +162,12 @@ public final class HomeVerifyDataOuterClass {
               token_ = s;
               break;
             }
-            case 26: {
-              java.lang.String s = input.readStringRequireUtf8();
-
-              region_ = s;
-              break;
-            }
-            case 40: {
+            case 16: {
 
               uid_ = input.readUInt32();
               break;
             }
-            case 50: {
+            case 34: {
               emu.grasscutter.net.proto.HomeVerifySceneDataOuterClass.HomeVerifySceneData.Builder subBuilder = null;
               if (homeInfo_ != null) {
                 subBuilder = homeInfo_.toBuilder();
@@ -186,16 +180,16 @@ public final class HomeVerifyDataOuterClass {
 
               break;
             }
-            case 58: {
-              java.lang.String s = input.readStringRequireUtf8();
-
-              aid_ = s;
-              break;
-            }
-            case 64: {
+            case 48: {
               int rawValue = input.readEnum();
 
               lang_ = rawValue;
+              break;
+            }
+            case 58: {
+              java.lang.String s = input.readStringRequireUtf8();
+
+              region_ = s;
               break;
             }
             case 74: {
@@ -211,7 +205,13 @@ public final class HomeVerifyDataOuterClass {
 
               break;
             }
-            case 125: {
+            case 82: {
+              java.lang.String s = input.readStringRequireUtf8();
+
+              aid_ = s;
+              break;
+            }
+            case 93: {
 
               timestamp_ = input.readFixed32();
               break;
@@ -248,64 +248,30 @@ public final class HomeVerifyDataOuterClass {
               emu.grasscutter.net.proto.HomeVerifyDataOuterClass.HomeVerifyData.class, emu.grasscutter.net.proto.HomeVerifyDataOuterClass.HomeVerifyData.Builder.class);
     }
 
-    public static final int AID_FIELD_NUMBER = 7;
-    private volatile java.lang.Object aid_;
+    public static final int HOME_INFO_FIELD_NUMBER = 4;
+    private emu.grasscutter.net.proto.HomeVerifySceneDataOuterClass.HomeVerifySceneData homeInfo_;
     /**
-     * <code>string aid = 7;</code>
-     * @return The aid.
+     * <code>.HomeVerifySceneData home_info = 4;</code>
+     * @return Whether the homeInfo field is set.
      */
     @java.lang.Override
-    public java.lang.String getAid() {
-      java.lang.Object ref = aid_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        aid_ = s;
-        return s;
-      }
+    public boolean hasHomeInfo() {
+      return homeInfo_ != null;
     }
     /**
-     * <code>string aid = 7;</code>
-     * @return The bytes for aid.
+     * <code>.HomeVerifySceneData home_info = 4;</code>
+     * @return The homeInfo.
      */
     @java.lang.Override
-    public com.google.protobuf.ByteString
-        getAidBytes() {
-      java.lang.Object ref = aid_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        aid_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
+    public emu.grasscutter.net.proto.HomeVerifySceneDataOuterClass.HomeVerifySceneData getHomeInfo() {
+      return homeInfo_ == null ? emu.grasscutter.net.proto.HomeVerifySceneDataOuterClass.HomeVerifySceneData.getDefaultInstance() : homeInfo_;
     }
-
-    public static final int TIMESTAMP_FIELD_NUMBER = 15;
-    private int timestamp_;
     /**
-     * <code>fixed32 timestamp = 15;</code>
-     * @return The timestamp.
+     * <code>.HomeVerifySceneData home_info = 4;</code>
      */
     @java.lang.Override
-    public int getTimestamp() {
-      return timestamp_;
-    }
-
-    public static final int UID_FIELD_NUMBER = 5;
-    private int uid_;
-    /**
-     * <code>uint32 uid = 5;</code>
-     * @return The uid.
-     */
-    @java.lang.Override
-    public int getUid() {
-      return uid_;
+    public emu.grasscutter.net.proto.HomeVerifySceneDataOuterClass.HomeVerifySceneDataOrBuilder getHomeInfoOrBuilder() {
+      return getHomeInfo();
     }
 
     public static final int ARRANGEMENT_DATA_FIELD_NUMBER = 9;
@@ -334,42 +300,15 @@ public final class HomeVerifyDataOuterClass {
       return getArrangementData();
     }
 
-    public static final int REGION_FIELD_NUMBER = 3;
-    private volatile java.lang.Object region_;
+    public static final int TIMESTAMP_FIELD_NUMBER = 11;
+    private int timestamp_;
     /**
-     * <code>string region = 3;</code>
-     * @return The region.
+     * <code>fixed32 timestamp = 11;</code>
+     * @return The timestamp.
      */
     @java.lang.Override
-    public java.lang.String getRegion() {
-      java.lang.Object ref = region_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        region_ = s;
-        return s;
-      }
-    }
-    /**
-     * <code>string region = 3;</code>
-     * @return The bytes for region.
-     */
-    @java.lang.Override
-    public com.google.protobuf.ByteString
-        getRegionBytes() {
-      java.lang.Object ref = region_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        region_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
+    public int getTimestamp() {
+      return timestamp_;
     }
 
     public static final int TOKEN_FIELD_NUMBER = 1;
@@ -410,49 +349,110 @@ public final class HomeVerifyDataOuterClass {
       }
     }
 
-    public static final int HOME_INFO_FIELD_NUMBER = 6;
-    private emu.grasscutter.net.proto.HomeVerifySceneDataOuterClass.HomeVerifySceneData homeInfo_;
+    public static final int AID_FIELD_NUMBER = 10;
+    private volatile java.lang.Object aid_;
     /**
-     * <code>.HomeVerifySceneData home_info = 6;</code>
-     * @return Whether the homeInfo field is set.
+     * <code>string aid = 10;</code>
+     * @return The aid.
      */
     @java.lang.Override
-    public boolean hasHomeInfo() {
-      return homeInfo_ != null;
+    public java.lang.String getAid() {
+      java.lang.Object ref = aid_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        aid_ = s;
+        return s;
+      }
     }
     /**
-     * <code>.HomeVerifySceneData home_info = 6;</code>
-     * @return The homeInfo.
+     * <code>string aid = 10;</code>
+     * @return The bytes for aid.
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.HomeVerifySceneDataOuterClass.HomeVerifySceneData getHomeInfo() {
-      return homeInfo_ == null ? emu.grasscutter.net.proto.HomeVerifySceneDataOuterClass.HomeVerifySceneData.getDefaultInstance() : homeInfo_;
-    }
-    /**
-     * <code>.HomeVerifySceneData home_info = 6;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.HomeVerifySceneDataOuterClass.HomeVerifySceneDataOrBuilder getHomeInfoOrBuilder() {
-      return getHomeInfo();
+    public com.google.protobuf.ByteString
+        getAidBytes() {
+      java.lang.Object ref = aid_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        aid_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
     }
 
-    public static final int LANG_FIELD_NUMBER = 8;
+    public static final int LANG_FIELD_NUMBER = 6;
     private int lang_;
     /**
-     * <code>.LanguageType lang = 8;</code>
+     * <code>.LanguageType lang = 6;</code>
      * @return The enum numeric value on the wire for lang.
      */
     @java.lang.Override public int getLangValue() {
       return lang_;
     }
     /**
-     * <code>.LanguageType lang = 8;</code>
+     * <code>.LanguageType lang = 6;</code>
      * @return The lang.
      */
     @java.lang.Override public emu.grasscutter.net.proto.LanguageTypeOuterClass.LanguageType getLang() {
       @SuppressWarnings("deprecation")
       emu.grasscutter.net.proto.LanguageTypeOuterClass.LanguageType result = emu.grasscutter.net.proto.LanguageTypeOuterClass.LanguageType.valueOf(lang_);
       return result == null ? emu.grasscutter.net.proto.LanguageTypeOuterClass.LanguageType.UNRECOGNIZED : result;
+    }
+
+    public static final int UID_FIELD_NUMBER = 2;
+    private int uid_;
+    /**
+     * <code>uint32 uid = 2;</code>
+     * @return The uid.
+     */
+    @java.lang.Override
+    public int getUid() {
+      return uid_;
+    }
+
+    public static final int REGION_FIELD_NUMBER = 7;
+    private volatile java.lang.Object region_;
+    /**
+     * <code>string region = 7;</code>
+     * @return The region.
+     */
+    @java.lang.Override
+    public java.lang.String getRegion() {
+      java.lang.Object ref = region_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        region_ = s;
+        return s;
+      }
+    }
+    /**
+     * <code>string region = 7;</code>
+     * @return The bytes for region.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString
+        getRegionBytes() {
+      java.lang.Object ref = region_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        region_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
     }
 
     private byte memoizedIsInitialized = -1;
@@ -472,26 +472,26 @@ public final class HomeVerifyDataOuterClass {
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(token_)) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 1, token_);
       }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(region_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 3, region_);
-      }
       if (uid_ != 0) {
-        output.writeUInt32(5, uid_);
+        output.writeUInt32(2, uid_);
       }
       if (homeInfo_ != null) {
-        output.writeMessage(6, getHomeInfo());
-      }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(aid_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 7, aid_);
+        output.writeMessage(4, getHomeInfo());
       }
       if (lang_ != emu.grasscutter.net.proto.LanguageTypeOuterClass.LanguageType.LANGUAGE_TYPE_NONE.getNumber()) {
-        output.writeEnum(8, lang_);
+        output.writeEnum(6, lang_);
+      }
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(region_)) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 7, region_);
       }
       if (arrangementData_ != null) {
         output.writeMessage(9, getArrangementData());
       }
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(aid_)) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 10, aid_);
+      }
       if (timestamp_ != 0) {
-        output.writeFixed32(15, timestamp_);
+        output.writeFixed32(11, timestamp_);
       }
       unknownFields.writeTo(output);
     }
@@ -505,31 +505,31 @@ public final class HomeVerifyDataOuterClass {
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(token_)) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, token_);
       }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(region_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, region_);
-      }
       if (uid_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, uid_);
+          .computeUInt32Size(2, uid_);
       }
       if (homeInfo_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(6, getHomeInfo());
-      }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(aid_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(7, aid_);
+          .computeMessageSize(4, getHomeInfo());
       }
       if (lang_ != emu.grasscutter.net.proto.LanguageTypeOuterClass.LanguageType.LANGUAGE_TYPE_NONE.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(8, lang_);
+          .computeEnumSize(6, lang_);
+      }
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(region_)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(7, region_);
       }
       if (arrangementData_ != null) {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(9, getArrangementData());
       }
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(aid_)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(10, aid_);
+      }
       if (timestamp_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeFixed32Size(15, timestamp_);
+          .computeFixed32Size(11, timestamp_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -546,27 +546,27 @@ public final class HomeVerifyDataOuterClass {
       }
       emu.grasscutter.net.proto.HomeVerifyDataOuterClass.HomeVerifyData other = (emu.grasscutter.net.proto.HomeVerifyDataOuterClass.HomeVerifyData) obj;
 
-      if (!getAid()
-          .equals(other.getAid())) return false;
-      if (getTimestamp()
-          != other.getTimestamp()) return false;
-      if (getUid()
-          != other.getUid()) return false;
-      if (hasArrangementData() != other.hasArrangementData()) return false;
-      if (hasArrangementData()) {
-        if (!getArrangementData()
-            .equals(other.getArrangementData())) return false;
-      }
-      if (!getRegion()
-          .equals(other.getRegion())) return false;
-      if (!getToken()
-          .equals(other.getToken())) return false;
       if (hasHomeInfo() != other.hasHomeInfo()) return false;
       if (hasHomeInfo()) {
         if (!getHomeInfo()
             .equals(other.getHomeInfo())) return false;
       }
+      if (hasArrangementData() != other.hasArrangementData()) return false;
+      if (hasArrangementData()) {
+        if (!getArrangementData()
+            .equals(other.getArrangementData())) return false;
+      }
+      if (getTimestamp()
+          != other.getTimestamp()) return false;
+      if (!getToken()
+          .equals(other.getToken())) return false;
+      if (!getAid()
+          .equals(other.getAid())) return false;
       if (lang_ != other.lang_) return false;
+      if (getUid()
+          != other.getUid()) return false;
+      if (!getRegion()
+          .equals(other.getRegion())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -578,26 +578,26 @@ public final class HomeVerifyDataOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + AID_FIELD_NUMBER;
-      hash = (53 * hash) + getAid().hashCode();
-      hash = (37 * hash) + TIMESTAMP_FIELD_NUMBER;
-      hash = (53 * hash) + getTimestamp();
-      hash = (37 * hash) + UID_FIELD_NUMBER;
-      hash = (53 * hash) + getUid();
-      if (hasArrangementData()) {
-        hash = (37 * hash) + ARRANGEMENT_DATA_FIELD_NUMBER;
-        hash = (53 * hash) + getArrangementData().hashCode();
-      }
-      hash = (37 * hash) + REGION_FIELD_NUMBER;
-      hash = (53 * hash) + getRegion().hashCode();
-      hash = (37 * hash) + TOKEN_FIELD_NUMBER;
-      hash = (53 * hash) + getToken().hashCode();
       if (hasHomeInfo()) {
         hash = (37 * hash) + HOME_INFO_FIELD_NUMBER;
         hash = (53 * hash) + getHomeInfo().hashCode();
       }
+      if (hasArrangementData()) {
+        hash = (37 * hash) + ARRANGEMENT_DATA_FIELD_NUMBER;
+        hash = (53 * hash) + getArrangementData().hashCode();
+      }
+      hash = (37 * hash) + TIMESTAMP_FIELD_NUMBER;
+      hash = (53 * hash) + getTimestamp();
+      hash = (37 * hash) + TOKEN_FIELD_NUMBER;
+      hash = (53 * hash) + getToken().hashCode();
+      hash = (37 * hash) + AID_FIELD_NUMBER;
+      hash = (53 * hash) + getAid().hashCode();
       hash = (37 * hash) + LANG_FIELD_NUMBER;
       hash = (53 * hash) + lang_;
+      hash = (37 * hash) + UID_FIELD_NUMBER;
+      hash = (53 * hash) + getUid();
+      hash = (37 * hash) + REGION_FIELD_NUMBER;
+      hash = (53 * hash) + getRegion().hashCode();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -731,29 +731,29 @@ public final class HomeVerifyDataOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        aid_ = "";
-
-        timestamp_ = 0;
-
-        uid_ = 0;
-
-        if (arrangementDataBuilder_ == null) {
-          arrangementData_ = null;
-        } else {
-          arrangementData_ = null;
-          arrangementDataBuilder_ = null;
-        }
-        region_ = "";
-
-        token_ = "";
-
         if (homeInfoBuilder_ == null) {
           homeInfo_ = null;
         } else {
           homeInfo_ = null;
           homeInfoBuilder_ = null;
         }
+        if (arrangementDataBuilder_ == null) {
+          arrangementData_ = null;
+        } else {
+          arrangementData_ = null;
+          arrangementDataBuilder_ = null;
+        }
+        timestamp_ = 0;
+
+        token_ = "";
+
+        aid_ = "";
+
         lang_ = 0;
+
+        uid_ = 0;
+
+        region_ = "";
 
         return this;
       }
@@ -781,22 +781,22 @@ public final class HomeVerifyDataOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.HomeVerifyDataOuterClass.HomeVerifyData buildPartial() {
         emu.grasscutter.net.proto.HomeVerifyDataOuterClass.HomeVerifyData result = new emu.grasscutter.net.proto.HomeVerifyDataOuterClass.HomeVerifyData(this);
-        result.aid_ = aid_;
-        result.timestamp_ = timestamp_;
-        result.uid_ = uid_;
-        if (arrangementDataBuilder_ == null) {
-          result.arrangementData_ = arrangementData_;
-        } else {
-          result.arrangementData_ = arrangementDataBuilder_.build();
-        }
-        result.region_ = region_;
-        result.token_ = token_;
         if (homeInfoBuilder_ == null) {
           result.homeInfo_ = homeInfo_;
         } else {
           result.homeInfo_ = homeInfoBuilder_.build();
         }
+        if (arrangementDataBuilder_ == null) {
+          result.arrangementData_ = arrangementData_;
+        } else {
+          result.arrangementData_ = arrangementDataBuilder_.build();
+        }
+        result.timestamp_ = timestamp_;
+        result.token_ = token_;
+        result.aid_ = aid_;
         result.lang_ = lang_;
+        result.uid_ = uid_;
+        result.region_ = region_;
         onBuilt();
         return result;
       }
@@ -845,32 +845,32 @@ public final class HomeVerifyDataOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.HomeVerifyDataOuterClass.HomeVerifyData other) {
         if (other == emu.grasscutter.net.proto.HomeVerifyDataOuterClass.HomeVerifyData.getDefaultInstance()) return this;
-        if (!other.getAid().isEmpty()) {
-          aid_ = other.aid_;
-          onChanged();
-        }
-        if (other.getTimestamp() != 0) {
-          setTimestamp(other.getTimestamp());
-        }
-        if (other.getUid() != 0) {
-          setUid(other.getUid());
+        if (other.hasHomeInfo()) {
+          mergeHomeInfo(other.getHomeInfo());
         }
         if (other.hasArrangementData()) {
           mergeArrangementData(other.getArrangementData());
         }
-        if (!other.getRegion().isEmpty()) {
-          region_ = other.region_;
-          onChanged();
+        if (other.getTimestamp() != 0) {
+          setTimestamp(other.getTimestamp());
         }
         if (!other.getToken().isEmpty()) {
           token_ = other.token_;
           onChanged();
         }
-        if (other.hasHomeInfo()) {
-          mergeHomeInfo(other.getHomeInfo());
+        if (!other.getAid().isEmpty()) {
+          aid_ = other.aid_;
+          onChanged();
         }
         if (other.lang_ != 0) {
           setLangValue(other.getLangValue());
+        }
+        if (other.getUid() != 0) {
+          setUid(other.getUid());
+        }
+        if (!other.getRegion().isEmpty()) {
+          region_ = other.region_;
+          onChanged();
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -901,142 +901,123 @@ public final class HomeVerifyDataOuterClass {
         return this;
       }
 
-      private java.lang.Object aid_ = "";
+      private emu.grasscutter.net.proto.HomeVerifySceneDataOuterClass.HomeVerifySceneData homeInfo_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.HomeVerifySceneDataOuterClass.HomeVerifySceneData, emu.grasscutter.net.proto.HomeVerifySceneDataOuterClass.HomeVerifySceneData.Builder, emu.grasscutter.net.proto.HomeVerifySceneDataOuterClass.HomeVerifySceneDataOrBuilder> homeInfoBuilder_;
       /**
-       * <code>string aid = 7;</code>
-       * @return The aid.
+       * <code>.HomeVerifySceneData home_info = 4;</code>
+       * @return Whether the homeInfo field is set.
        */
-      public java.lang.String getAid() {
-        java.lang.Object ref = aid_;
-        if (!(ref instanceof java.lang.String)) {
-          com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
-          aid_ = s;
-          return s;
+      public boolean hasHomeInfo() {
+        return homeInfoBuilder_ != null || homeInfo_ != null;
+      }
+      /**
+       * <code>.HomeVerifySceneData home_info = 4;</code>
+       * @return The homeInfo.
+       */
+      public emu.grasscutter.net.proto.HomeVerifySceneDataOuterClass.HomeVerifySceneData getHomeInfo() {
+        if (homeInfoBuilder_ == null) {
+          return homeInfo_ == null ? emu.grasscutter.net.proto.HomeVerifySceneDataOuterClass.HomeVerifySceneData.getDefaultInstance() : homeInfo_;
         } else {
-          return (java.lang.String) ref;
+          return homeInfoBuilder_.getMessage();
         }
       }
       /**
-       * <code>string aid = 7;</code>
-       * @return The bytes for aid.
+       * <code>.HomeVerifySceneData home_info = 4;</code>
        */
-      public com.google.protobuf.ByteString
-          getAidBytes() {
-        java.lang.Object ref = aid_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          aid_ = b;
-          return b;
+      public Builder setHomeInfo(emu.grasscutter.net.proto.HomeVerifySceneDataOuterClass.HomeVerifySceneData value) {
+        if (homeInfoBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          homeInfo_ = value;
+          onChanged();
         } else {
-          return (com.google.protobuf.ByteString) ref;
+          homeInfoBuilder_.setMessage(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.HomeVerifySceneData home_info = 4;</code>
+       */
+      public Builder setHomeInfo(
+          emu.grasscutter.net.proto.HomeVerifySceneDataOuterClass.HomeVerifySceneData.Builder builderForValue) {
+        if (homeInfoBuilder_ == null) {
+          homeInfo_ = builderForValue.build();
+          onChanged();
+        } else {
+          homeInfoBuilder_.setMessage(builderForValue.build());
+        }
+
+        return this;
+      }
+      /**
+       * <code>.HomeVerifySceneData home_info = 4;</code>
+       */
+      public Builder mergeHomeInfo(emu.grasscutter.net.proto.HomeVerifySceneDataOuterClass.HomeVerifySceneData value) {
+        if (homeInfoBuilder_ == null) {
+          if (homeInfo_ != null) {
+            homeInfo_ =
+              emu.grasscutter.net.proto.HomeVerifySceneDataOuterClass.HomeVerifySceneData.newBuilder(homeInfo_).mergeFrom(value).buildPartial();
+          } else {
+            homeInfo_ = value;
+          }
+          onChanged();
+        } else {
+          homeInfoBuilder_.mergeFrom(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.HomeVerifySceneData home_info = 4;</code>
+       */
+      public Builder clearHomeInfo() {
+        if (homeInfoBuilder_ == null) {
+          homeInfo_ = null;
+          onChanged();
+        } else {
+          homeInfo_ = null;
+          homeInfoBuilder_ = null;
+        }
+
+        return this;
+      }
+      /**
+       * <code>.HomeVerifySceneData home_info = 4;</code>
+       */
+      public emu.grasscutter.net.proto.HomeVerifySceneDataOuterClass.HomeVerifySceneData.Builder getHomeInfoBuilder() {
+        
+        onChanged();
+        return getHomeInfoFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.HomeVerifySceneData home_info = 4;</code>
+       */
+      public emu.grasscutter.net.proto.HomeVerifySceneDataOuterClass.HomeVerifySceneDataOrBuilder getHomeInfoOrBuilder() {
+        if (homeInfoBuilder_ != null) {
+          return homeInfoBuilder_.getMessageOrBuilder();
+        } else {
+          return homeInfo_ == null ?
+              emu.grasscutter.net.proto.HomeVerifySceneDataOuterClass.HomeVerifySceneData.getDefaultInstance() : homeInfo_;
         }
       }
       /**
-       * <code>string aid = 7;</code>
-       * @param value The aid to set.
-       * @return This builder for chaining.
+       * <code>.HomeVerifySceneData home_info = 4;</code>
        */
-      public Builder setAid(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  
-        aid_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string aid = 7;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearAid() {
-        
-        aid_ = getDefaultInstance().getAid();
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string aid = 7;</code>
-       * @param value The bytes for aid to set.
-       * @return This builder for chaining.
-       */
-      public Builder setAidBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-        
-        aid_ = value;
-        onChanged();
-        return this;
-      }
-
-      private int timestamp_ ;
-      /**
-       * <code>fixed32 timestamp = 15;</code>
-       * @return The timestamp.
-       */
-      @java.lang.Override
-      public int getTimestamp() {
-        return timestamp_;
-      }
-      /**
-       * <code>fixed32 timestamp = 15;</code>
-       * @param value The timestamp to set.
-       * @return This builder for chaining.
-       */
-      public Builder setTimestamp(int value) {
-        
-        timestamp_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>fixed32 timestamp = 15;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearTimestamp() {
-        
-        timestamp_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int uid_ ;
-      /**
-       * <code>uint32 uid = 5;</code>
-       * @return The uid.
-       */
-      @java.lang.Override
-      public int getUid() {
-        return uid_;
-      }
-      /**
-       * <code>uint32 uid = 5;</code>
-       * @param value The uid to set.
-       * @return This builder for chaining.
-       */
-      public Builder setUid(int value) {
-        
-        uid_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 uid = 5;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearUid() {
-        
-        uid_ = 0;
-        onChanged();
-        return this;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.HomeVerifySceneDataOuterClass.HomeVerifySceneData, emu.grasscutter.net.proto.HomeVerifySceneDataOuterClass.HomeVerifySceneData.Builder, emu.grasscutter.net.proto.HomeVerifySceneDataOuterClass.HomeVerifySceneDataOrBuilder> 
+          getHomeInfoFieldBuilder() {
+        if (homeInfoBuilder_ == null) {
+          homeInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              emu.grasscutter.net.proto.HomeVerifySceneDataOuterClass.HomeVerifySceneData, emu.grasscutter.net.proto.HomeVerifySceneDataOuterClass.HomeVerifySceneData.Builder, emu.grasscutter.net.proto.HomeVerifySceneDataOuterClass.HomeVerifySceneDataOrBuilder>(
+                  getHomeInfo(),
+                  getParentForChildren(),
+                  isClean());
+          homeInfo_ = null;
+        }
+        return homeInfoBuilder_;
       }
 
       private emu.grasscutter.net.proto.HomeSceneArrangementMuipDataOuterClass.HomeSceneArrangementMuipData arrangementData_;
@@ -1158,78 +1139,33 @@ public final class HomeVerifyDataOuterClass {
         return arrangementDataBuilder_;
       }
 
-      private java.lang.Object region_ = "";
+      private int timestamp_ ;
       /**
-       * <code>string region = 3;</code>
-       * @return The region.
+       * <code>fixed32 timestamp = 11;</code>
+       * @return The timestamp.
        */
-      public java.lang.String getRegion() {
-        java.lang.Object ref = region_;
-        if (!(ref instanceof java.lang.String)) {
-          com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
-          region_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
+      @java.lang.Override
+      public int getTimestamp() {
+        return timestamp_;
       }
       /**
-       * <code>string region = 3;</code>
-       * @return The bytes for region.
-       */
-      public com.google.protobuf.ByteString
-          getRegionBytes() {
-        java.lang.Object ref = region_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          region_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <code>string region = 3;</code>
-       * @param value The region to set.
+       * <code>fixed32 timestamp = 11;</code>
+       * @param value The timestamp to set.
        * @return This builder for chaining.
        */
-      public Builder setRegion(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  
-        region_ = value;
+      public Builder setTimestamp(int value) {
+        
+        timestamp_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>string region = 3;</code>
+       * <code>fixed32 timestamp = 11;</code>
        * @return This builder for chaining.
        */
-      public Builder clearRegion() {
+      public Builder clearTimestamp() {
         
-        region_ = getDefaultInstance().getRegion();
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string region = 3;</code>
-       * @param value The bytes for region to set.
-       * @return This builder for chaining.
-       */
-      public Builder setRegionBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-        
-        region_ = value;
+        timestamp_ = 0;
         onChanged();
         return this;
       }
@@ -1310,135 +1246,92 @@ public final class HomeVerifyDataOuterClass {
         return this;
       }
 
-      private emu.grasscutter.net.proto.HomeVerifySceneDataOuterClass.HomeVerifySceneData homeInfo_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.HomeVerifySceneDataOuterClass.HomeVerifySceneData, emu.grasscutter.net.proto.HomeVerifySceneDataOuterClass.HomeVerifySceneData.Builder, emu.grasscutter.net.proto.HomeVerifySceneDataOuterClass.HomeVerifySceneDataOrBuilder> homeInfoBuilder_;
+      private java.lang.Object aid_ = "";
       /**
-       * <code>.HomeVerifySceneData home_info = 6;</code>
-       * @return Whether the homeInfo field is set.
+       * <code>string aid = 10;</code>
+       * @return The aid.
        */
-      public boolean hasHomeInfo() {
-        return homeInfoBuilder_ != null || homeInfo_ != null;
-      }
-      /**
-       * <code>.HomeVerifySceneData home_info = 6;</code>
-       * @return The homeInfo.
-       */
-      public emu.grasscutter.net.proto.HomeVerifySceneDataOuterClass.HomeVerifySceneData getHomeInfo() {
-        if (homeInfoBuilder_ == null) {
-          return homeInfo_ == null ? emu.grasscutter.net.proto.HomeVerifySceneDataOuterClass.HomeVerifySceneData.getDefaultInstance() : homeInfo_;
+      public java.lang.String getAid() {
+        java.lang.Object ref = aid_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          aid_ = s;
+          return s;
         } else {
-          return homeInfoBuilder_.getMessage();
+          return (java.lang.String) ref;
         }
       }
       /**
-       * <code>.HomeVerifySceneData home_info = 6;</code>
+       * <code>string aid = 10;</code>
+       * @return The bytes for aid.
        */
-      public Builder setHomeInfo(emu.grasscutter.net.proto.HomeVerifySceneDataOuterClass.HomeVerifySceneData value) {
-        if (homeInfoBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          homeInfo_ = value;
-          onChanged();
+      public com.google.protobuf.ByteString
+          getAidBytes() {
+        java.lang.Object ref = aid_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          aid_ = b;
+          return b;
         } else {
-          homeInfoBuilder_.setMessage(value);
+          return (com.google.protobuf.ByteString) ref;
         }
-
-        return this;
       }
       /**
-       * <code>.HomeVerifySceneData home_info = 6;</code>
+       * <code>string aid = 10;</code>
+       * @param value The aid to set.
+       * @return This builder for chaining.
        */
-      public Builder setHomeInfo(
-          emu.grasscutter.net.proto.HomeVerifySceneDataOuterClass.HomeVerifySceneData.Builder builderForValue) {
-        if (homeInfoBuilder_ == null) {
-          homeInfo_ = builderForValue.build();
-          onChanged();
-        } else {
-          homeInfoBuilder_.setMessage(builderForValue.build());
-        }
-
-        return this;
-      }
-      /**
-       * <code>.HomeVerifySceneData home_info = 6;</code>
-       */
-      public Builder mergeHomeInfo(emu.grasscutter.net.proto.HomeVerifySceneDataOuterClass.HomeVerifySceneData value) {
-        if (homeInfoBuilder_ == null) {
-          if (homeInfo_ != null) {
-            homeInfo_ =
-              emu.grasscutter.net.proto.HomeVerifySceneDataOuterClass.HomeVerifySceneData.newBuilder(homeInfo_).mergeFrom(value).buildPartial();
-          } else {
-            homeInfo_ = value;
-          }
-          onChanged();
-        } else {
-          homeInfoBuilder_.mergeFrom(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.HomeVerifySceneData home_info = 6;</code>
-       */
-      public Builder clearHomeInfo() {
-        if (homeInfoBuilder_ == null) {
-          homeInfo_ = null;
-          onChanged();
-        } else {
-          homeInfo_ = null;
-          homeInfoBuilder_ = null;
-        }
-
-        return this;
-      }
-      /**
-       * <code>.HomeVerifySceneData home_info = 6;</code>
-       */
-      public emu.grasscutter.net.proto.HomeVerifySceneDataOuterClass.HomeVerifySceneData.Builder getHomeInfoBuilder() {
-        
+      public Builder setAid(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        aid_ = value;
         onChanged();
-        return getHomeInfoFieldBuilder().getBuilder();
+        return this;
       }
       /**
-       * <code>.HomeVerifySceneData home_info = 6;</code>
+       * <code>string aid = 10;</code>
+       * @return This builder for chaining.
        */
-      public emu.grasscutter.net.proto.HomeVerifySceneDataOuterClass.HomeVerifySceneDataOrBuilder getHomeInfoOrBuilder() {
-        if (homeInfoBuilder_ != null) {
-          return homeInfoBuilder_.getMessageOrBuilder();
-        } else {
-          return homeInfo_ == null ?
-              emu.grasscutter.net.proto.HomeVerifySceneDataOuterClass.HomeVerifySceneData.getDefaultInstance() : homeInfo_;
-        }
+      public Builder clearAid() {
+        
+        aid_ = getDefaultInstance().getAid();
+        onChanged();
+        return this;
       }
       /**
-       * <code>.HomeVerifySceneData home_info = 6;</code>
+       * <code>string aid = 10;</code>
+       * @param value The bytes for aid to set.
+       * @return This builder for chaining.
        */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.HomeVerifySceneDataOuterClass.HomeVerifySceneData, emu.grasscutter.net.proto.HomeVerifySceneDataOuterClass.HomeVerifySceneData.Builder, emu.grasscutter.net.proto.HomeVerifySceneDataOuterClass.HomeVerifySceneDataOrBuilder> 
-          getHomeInfoFieldBuilder() {
-        if (homeInfoBuilder_ == null) {
-          homeInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.HomeVerifySceneDataOuterClass.HomeVerifySceneData, emu.grasscutter.net.proto.HomeVerifySceneDataOuterClass.HomeVerifySceneData.Builder, emu.grasscutter.net.proto.HomeVerifySceneDataOuterClass.HomeVerifySceneDataOrBuilder>(
-                  getHomeInfo(),
-                  getParentForChildren(),
-                  isClean());
-          homeInfo_ = null;
-        }
-        return homeInfoBuilder_;
+      public Builder setAidBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
+        aid_ = value;
+        onChanged();
+        return this;
       }
 
       private int lang_ = 0;
       /**
-       * <code>.LanguageType lang = 8;</code>
+       * <code>.LanguageType lang = 6;</code>
        * @return The enum numeric value on the wire for lang.
        */
       @java.lang.Override public int getLangValue() {
         return lang_;
       }
       /**
-       * <code>.LanguageType lang = 8;</code>
+       * <code>.LanguageType lang = 6;</code>
        * @param value The enum numeric value on the wire for lang to set.
        * @return This builder for chaining.
        */
@@ -1449,7 +1342,7 @@ public final class HomeVerifyDataOuterClass {
         return this;
       }
       /**
-       * <code>.LanguageType lang = 8;</code>
+       * <code>.LanguageType lang = 6;</code>
        * @return The lang.
        */
       @java.lang.Override
@@ -1459,7 +1352,7 @@ public final class HomeVerifyDataOuterClass {
         return result == null ? emu.grasscutter.net.proto.LanguageTypeOuterClass.LanguageType.UNRECOGNIZED : result;
       }
       /**
-       * <code>.LanguageType lang = 8;</code>
+       * <code>.LanguageType lang = 6;</code>
        * @param value The lang to set.
        * @return This builder for chaining.
        */
@@ -1473,12 +1366,119 @@ public final class HomeVerifyDataOuterClass {
         return this;
       }
       /**
-       * <code>.LanguageType lang = 8;</code>
+       * <code>.LanguageType lang = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearLang() {
         
         lang_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int uid_ ;
+      /**
+       * <code>uint32 uid = 2;</code>
+       * @return The uid.
+       */
+      @java.lang.Override
+      public int getUid() {
+        return uid_;
+      }
+      /**
+       * <code>uint32 uid = 2;</code>
+       * @param value The uid to set.
+       * @return This builder for chaining.
+       */
+      public Builder setUid(int value) {
+        
+        uid_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 uid = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearUid() {
+        
+        uid_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private java.lang.Object region_ = "";
+      /**
+       * <code>string region = 7;</code>
+       * @return The region.
+       */
+      public java.lang.String getRegion() {
+        java.lang.Object ref = region_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          region_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>string region = 7;</code>
+       * @return The bytes for region.
+       */
+      public com.google.protobuf.ByteString
+          getRegionBytes() {
+        java.lang.Object ref = region_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          region_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>string region = 7;</code>
+       * @param value The region to set.
+       * @return This builder for chaining.
+       */
+      public Builder setRegion(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        region_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string region = 7;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearRegion() {
+        
+        region_ = getDefaultInstance().getRegion();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string region = 7;</code>
+       * @param value The bytes for region to set.
+       * @return This builder for chaining.
+       */
+      public Builder setRegionBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
+        region_ = value;
         onChanged();
         return this;
       }
@@ -1552,12 +1552,12 @@ public final class HomeVerifyDataOuterClass {
       "\n\024HomeVerifyData.proto\032\"HomeSceneArrange" +
       "mentMuipData.proto\032\031HomeVerifySceneData." +
       "proto\032\022LanguageType.proto\"\333\001\n\016HomeVerify" +
-      "Data\022\013\n\003aid\030\007 \001(\t\022\021\n\ttimestamp\030\017 \001(\007\022\013\n\003" +
-      "uid\030\005 \001(\r\0227\n\020arrangement_data\030\t \001(\0132\035.Ho" +
-      "meSceneArrangementMuipData\022\016\n\006region\030\003 \001" +
-      "(\t\022\r\n\005token\030\001 \001(\t\022\'\n\thome_info\030\006 \001(\0132\024.H" +
-      "omeVerifySceneData\022\033\n\004lang\030\010 \001(\0162\r.Langu" +
-      "ageTypeB\033\n\031emu.grasscutter.net.protob\006pr" +
+      "Data\022\'\n\thome_info\030\004 \001(\0132\024.HomeVerifyScen" +
+      "eData\0227\n\020arrangement_data\030\t \001(\0132\035.HomeSc" +
+      "eneArrangementMuipData\022\021\n\ttimestamp\030\013 \001(" +
+      "\007\022\r\n\005token\030\001 \001(\t\022\013\n\003aid\030\n \001(\t\022\033\n\004lang\030\006 " +
+      "\001(\0162\r.LanguageType\022\013\n\003uid\030\002 \001(\r\022\016\n\006regio" +
+      "n\030\007 \001(\tB\033\n\031emu.grasscutter.net.protob\006pr" +
       "oto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -1572,7 +1572,7 @@ public final class HomeVerifyDataOuterClass {
     internal_static_HomeVerifyData_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_HomeVerifyData_descriptor,
-        new java.lang.String[] { "Aid", "Timestamp", "Uid", "ArrangementData", "Region", "Token", "HomeInfo", "Lang", });
+        new java.lang.String[] { "HomeInfo", "ArrangementData", "Timestamp", "Token", "Aid", "Lang", "Uid", "Region", });
     emu.grasscutter.net.proto.HomeSceneArrangementMuipDataOuterClass.getDescriptor();
     emu.grasscutter.net.proto.HomeVerifySceneDataOuterClass.getDescriptor();
     emu.grasscutter.net.proto.LanguageTypeOuterClass.getDescriptor();

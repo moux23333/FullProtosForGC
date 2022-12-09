@@ -19,22 +19,26 @@ public final class SummerTimeV2RestartBoatGalleryRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 gallery_id = 13;</code>
+     * <code>uint32 gallery_id = 10;</code>
      * @return The galleryId.
      */
     int getGalleryId();
 
     /**
-     * <code>int32 retcode = 8;</code>
+     * <code>int32 retcode = 12;</code>
      * @return The retcode.
      */
     int getRetcode();
   }
   /**
    * <pre>
-   * CmdId: 8004
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 8225;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code SummerTimeV2RestartBoatGalleryRsp}
@@ -81,14 +85,14 @@ public final class SummerTimeV2RestartBoatGalleryRspOuterClass {
             case 0:
               done = true;
               break;
-            case 64: {
-
-              retcode_ = input.readInt32();
-              break;
-            }
-            case 104: {
+            case 80: {
 
               galleryId_ = input.readUInt32();
+              break;
+            }
+            case 96: {
+
+              retcode_ = input.readInt32();
               break;
             }
             default: {
@@ -123,10 +127,10 @@ public final class SummerTimeV2RestartBoatGalleryRspOuterClass {
               emu.grasscutter.net.proto.SummerTimeV2RestartBoatGalleryRspOuterClass.SummerTimeV2RestartBoatGalleryRsp.class, emu.grasscutter.net.proto.SummerTimeV2RestartBoatGalleryRspOuterClass.SummerTimeV2RestartBoatGalleryRsp.Builder.class);
     }
 
-    public static final int GALLERY_ID_FIELD_NUMBER = 13;
+    public static final int GALLERY_ID_FIELD_NUMBER = 10;
     private int galleryId_;
     /**
-     * <code>uint32 gallery_id = 13;</code>
+     * <code>uint32 gallery_id = 10;</code>
      * @return The galleryId.
      */
     @java.lang.Override
@@ -134,10 +138,10 @@ public final class SummerTimeV2RestartBoatGalleryRspOuterClass {
       return galleryId_;
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 8;
+    public static final int RETCODE_FIELD_NUMBER = 12;
     private int retcode_;
     /**
-     * <code>int32 retcode = 8;</code>
+     * <code>int32 retcode = 12;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -159,11 +163,11 @@ public final class SummerTimeV2RestartBoatGalleryRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (retcode_ != 0) {
-        output.writeInt32(8, retcode_);
-      }
       if (galleryId_ != 0) {
-        output.writeUInt32(13, galleryId_);
+        output.writeUInt32(10, galleryId_);
+      }
+      if (retcode_ != 0) {
+        output.writeInt32(12, retcode_);
       }
       unknownFields.writeTo(output);
     }
@@ -174,13 +178,13 @@ public final class SummerTimeV2RestartBoatGalleryRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (retcode_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(8, retcode_);
-      }
       if (galleryId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, galleryId_);
+          .computeUInt32Size(10, galleryId_);
+      }
+      if (retcode_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(12, retcode_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -313,9 +317,13 @@ public final class SummerTimeV2RestartBoatGalleryRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 8004
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 8225;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code SummerTimeV2RestartBoatGalleryRsp}
@@ -472,7 +480,7 @@ public final class SummerTimeV2RestartBoatGalleryRspOuterClass {
 
       private int galleryId_ ;
       /**
-       * <code>uint32 gallery_id = 13;</code>
+       * <code>uint32 gallery_id = 10;</code>
        * @return The galleryId.
        */
       @java.lang.Override
@@ -480,7 +488,7 @@ public final class SummerTimeV2RestartBoatGalleryRspOuterClass {
         return galleryId_;
       }
       /**
-       * <code>uint32 gallery_id = 13;</code>
+       * <code>uint32 gallery_id = 10;</code>
        * @param value The galleryId to set.
        * @return This builder for chaining.
        */
@@ -491,7 +499,7 @@ public final class SummerTimeV2RestartBoatGalleryRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 gallery_id = 13;</code>
+       * <code>uint32 gallery_id = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearGalleryId() {
@@ -503,7 +511,7 @@ public final class SummerTimeV2RestartBoatGalleryRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 8;</code>
+       * <code>int32 retcode = 12;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -511,7 +519,7 @@ public final class SummerTimeV2RestartBoatGalleryRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 8;</code>
+       * <code>int32 retcode = 12;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -522,7 +530,7 @@ public final class SummerTimeV2RestartBoatGalleryRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 8;</code>
+       * <code>int32 retcode = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -600,7 +608,7 @@ public final class SummerTimeV2RestartBoatGalleryRspOuterClass {
     java.lang.String[] descriptorData = {
       "\n\'SummerTimeV2RestartBoatGalleryRsp.prot" +
       "o\"H\n!SummerTimeV2RestartBoatGalleryRsp\022\022" +
-      "\n\ngallery_id\030\r \001(\r\022\017\n\007retcode\030\010 \001(\005B\033\n\031e" +
+      "\n\ngallery_id\030\n \001(\r\022\017\n\007retcode\030\014 \001(\005B\033\n\031e" +
       "mu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

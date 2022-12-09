@@ -19,25 +19,29 @@ public final class RogueCellUpdateNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.RogueCellInfo cell_info = 7;</code>
+     * <code>.RogueCellInfo cell_info = 5;</code>
      * @return Whether the cellInfo field is set.
      */
     boolean hasCellInfo();
     /**
-     * <code>.RogueCellInfo cell_info = 7;</code>
+     * <code>.RogueCellInfo cell_info = 5;</code>
      * @return The cellInfo.
      */
     emu.grasscutter.net.proto.RogueCellInfoOuterClass.RogueCellInfo getCellInfo();
     /**
-     * <code>.RogueCellInfo cell_info = 7;</code>
+     * <code>.RogueCellInfo cell_info = 5;</code>
      */
     emu.grasscutter.net.proto.RogueCellInfoOuterClass.RogueCellInfoOrBuilder getCellInfoOrBuilder();
   }
   /**
    * <pre>
-   * CmdId: 8642
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 8851;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code RogueCellUpdateNotify}
@@ -84,7 +88,7 @@ public final class RogueCellUpdateNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 58: {
+            case 42: {
               emu.grasscutter.net.proto.RogueCellInfoOuterClass.RogueCellInfo.Builder subBuilder = null;
               if (cellInfo_ != null) {
                 subBuilder = cellInfo_.toBuilder();
@@ -129,10 +133,10 @@ public final class RogueCellUpdateNotifyOuterClass {
               emu.grasscutter.net.proto.RogueCellUpdateNotifyOuterClass.RogueCellUpdateNotify.class, emu.grasscutter.net.proto.RogueCellUpdateNotifyOuterClass.RogueCellUpdateNotify.Builder.class);
     }
 
-    public static final int CELL_INFO_FIELD_NUMBER = 7;
+    public static final int CELL_INFO_FIELD_NUMBER = 5;
     private emu.grasscutter.net.proto.RogueCellInfoOuterClass.RogueCellInfo cellInfo_;
     /**
-     * <code>.RogueCellInfo cell_info = 7;</code>
+     * <code>.RogueCellInfo cell_info = 5;</code>
      * @return Whether the cellInfo field is set.
      */
     @java.lang.Override
@@ -140,7 +144,7 @@ public final class RogueCellUpdateNotifyOuterClass {
       return cellInfo_ != null;
     }
     /**
-     * <code>.RogueCellInfo cell_info = 7;</code>
+     * <code>.RogueCellInfo cell_info = 5;</code>
      * @return The cellInfo.
      */
     @java.lang.Override
@@ -148,7 +152,7 @@ public final class RogueCellUpdateNotifyOuterClass {
       return cellInfo_ == null ? emu.grasscutter.net.proto.RogueCellInfoOuterClass.RogueCellInfo.getDefaultInstance() : cellInfo_;
     }
     /**
-     * <code>.RogueCellInfo cell_info = 7;</code>
+     * <code>.RogueCellInfo cell_info = 5;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.RogueCellInfoOuterClass.RogueCellInfoOrBuilder getCellInfoOrBuilder() {
@@ -170,7 +174,7 @@ public final class RogueCellUpdateNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (cellInfo_ != null) {
-        output.writeMessage(7, getCellInfo());
+        output.writeMessage(5, getCellInfo());
       }
       unknownFields.writeTo(output);
     }
@@ -183,7 +187,7 @@ public final class RogueCellUpdateNotifyOuterClass {
       size = 0;
       if (cellInfo_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(7, getCellInfo());
+          .computeMessageSize(5, getCellInfo());
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -317,9 +321,13 @@ public final class RogueCellUpdateNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 8642
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 8851;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code RogueCellUpdateNotify}
@@ -480,14 +488,14 @@ public final class RogueCellUpdateNotifyOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.RogueCellInfoOuterClass.RogueCellInfo, emu.grasscutter.net.proto.RogueCellInfoOuterClass.RogueCellInfo.Builder, emu.grasscutter.net.proto.RogueCellInfoOuterClass.RogueCellInfoOrBuilder> cellInfoBuilder_;
       /**
-       * <code>.RogueCellInfo cell_info = 7;</code>
+       * <code>.RogueCellInfo cell_info = 5;</code>
        * @return Whether the cellInfo field is set.
        */
       public boolean hasCellInfo() {
         return cellInfoBuilder_ != null || cellInfo_ != null;
       }
       /**
-       * <code>.RogueCellInfo cell_info = 7;</code>
+       * <code>.RogueCellInfo cell_info = 5;</code>
        * @return The cellInfo.
        */
       public emu.grasscutter.net.proto.RogueCellInfoOuterClass.RogueCellInfo getCellInfo() {
@@ -498,7 +506,7 @@ public final class RogueCellUpdateNotifyOuterClass {
         }
       }
       /**
-       * <code>.RogueCellInfo cell_info = 7;</code>
+       * <code>.RogueCellInfo cell_info = 5;</code>
        */
       public Builder setCellInfo(emu.grasscutter.net.proto.RogueCellInfoOuterClass.RogueCellInfo value) {
         if (cellInfoBuilder_ == null) {
@@ -514,7 +522,7 @@ public final class RogueCellUpdateNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.RogueCellInfo cell_info = 7;</code>
+       * <code>.RogueCellInfo cell_info = 5;</code>
        */
       public Builder setCellInfo(
           emu.grasscutter.net.proto.RogueCellInfoOuterClass.RogueCellInfo.Builder builderForValue) {
@@ -528,7 +536,7 @@ public final class RogueCellUpdateNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.RogueCellInfo cell_info = 7;</code>
+       * <code>.RogueCellInfo cell_info = 5;</code>
        */
       public Builder mergeCellInfo(emu.grasscutter.net.proto.RogueCellInfoOuterClass.RogueCellInfo value) {
         if (cellInfoBuilder_ == null) {
@@ -546,7 +554,7 @@ public final class RogueCellUpdateNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.RogueCellInfo cell_info = 7;</code>
+       * <code>.RogueCellInfo cell_info = 5;</code>
        */
       public Builder clearCellInfo() {
         if (cellInfoBuilder_ == null) {
@@ -560,7 +568,7 @@ public final class RogueCellUpdateNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.RogueCellInfo cell_info = 7;</code>
+       * <code>.RogueCellInfo cell_info = 5;</code>
        */
       public emu.grasscutter.net.proto.RogueCellInfoOuterClass.RogueCellInfo.Builder getCellInfoBuilder() {
         
@@ -568,7 +576,7 @@ public final class RogueCellUpdateNotifyOuterClass {
         return getCellInfoFieldBuilder().getBuilder();
       }
       /**
-       * <code>.RogueCellInfo cell_info = 7;</code>
+       * <code>.RogueCellInfo cell_info = 5;</code>
        */
       public emu.grasscutter.net.proto.RogueCellInfoOuterClass.RogueCellInfoOrBuilder getCellInfoOrBuilder() {
         if (cellInfoBuilder_ != null) {
@@ -579,7 +587,7 @@ public final class RogueCellUpdateNotifyOuterClass {
         }
       }
       /**
-       * <code>.RogueCellInfo cell_info = 7;</code>
+       * <code>.RogueCellInfo cell_info = 5;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.RogueCellInfoOuterClass.RogueCellInfo, emu.grasscutter.net.proto.RogueCellInfoOuterClass.RogueCellInfo.Builder, emu.grasscutter.net.proto.RogueCellInfoOuterClass.RogueCellInfoOrBuilder> 
@@ -663,7 +671,7 @@ public final class RogueCellUpdateNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n\033RogueCellUpdateNotify.proto\032\023RogueCell" +
       "Info.proto\":\n\025RogueCellUpdateNotify\022!\n\tc" +
-      "ell_info\030\007 \001(\0132\016.RogueCellInfoB\033\n\031emu.gr" +
+      "ell_info\030\005 \001(\0132\016.RogueCellInfoB\033\n\031emu.gr" +
       "asscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

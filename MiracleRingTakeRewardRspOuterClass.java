@@ -19,16 +19,20 @@ public final class MiracleRingTakeRewardRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 14;</code>
+     * <code>int32 retcode = 10;</code>
      * @return The retcode.
      */
     int getRetcode();
   }
   /**
    * <pre>
-   * CmdId: 5202
-   * EnetChannelId: 0
-   * EnetIsReliable: true
+   * enum CmdId {
+   *   option allow_alias = true;
+   *   NONE = 0;
+   *   CMD_ID = 5227;
+   *   ENET_CHANNEL_ID = 0;
+   *   ENET_IS_RELIABLE = 1;
+   * }
    * </pre>
    *
    * Protobuf type {@code MiracleRingTakeRewardRsp}
@@ -75,7 +79,7 @@ public final class MiracleRingTakeRewardRspOuterClass {
             case 0:
               done = true;
               break;
-            case 112: {
+            case 80: {
 
               retcode_ = input.readInt32();
               break;
@@ -112,10 +116,10 @@ public final class MiracleRingTakeRewardRspOuterClass {
               emu.grasscutter.net.proto.MiracleRingTakeRewardRspOuterClass.MiracleRingTakeRewardRsp.class, emu.grasscutter.net.proto.MiracleRingTakeRewardRspOuterClass.MiracleRingTakeRewardRsp.Builder.class);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 14;
+    public static final int RETCODE_FIELD_NUMBER = 10;
     private int retcode_;
     /**
-     * <code>int32 retcode = 14;</code>
+     * <code>int32 retcode = 10;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -138,7 +142,7 @@ public final class MiracleRingTakeRewardRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (retcode_ != 0) {
-        output.writeInt32(14, retcode_);
+        output.writeInt32(10, retcode_);
       }
       unknownFields.writeTo(output);
     }
@@ -151,7 +155,7 @@ public final class MiracleRingTakeRewardRspOuterClass {
       size = 0;
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(14, retcode_);
+          .computeInt32Size(10, retcode_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -280,9 +284,13 @@ public final class MiracleRingTakeRewardRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 5202
-     * EnetChannelId: 0
-     * EnetIsReliable: true
+     * enum CmdId {
+     *   option allow_alias = true;
+     *   NONE = 0;
+     *   CMD_ID = 5227;
+     *   ENET_CHANNEL_ID = 0;
+     *   ENET_IS_RELIABLE = 1;
+     * }
      * </pre>
      *
      * Protobuf type {@code MiracleRingTakeRewardRsp}
@@ -433,7 +441,7 @@ public final class MiracleRingTakeRewardRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 14;</code>
+       * <code>int32 retcode = 10;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -441,7 +449,7 @@ public final class MiracleRingTakeRewardRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 14;</code>
+       * <code>int32 retcode = 10;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -452,7 +460,7 @@ public final class MiracleRingTakeRewardRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 14;</code>
+       * <code>int32 retcode = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -529,7 +537,7 @@ public final class MiracleRingTakeRewardRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\036MiracleRingTakeRewardRsp.proto\"+\n\030Mira" +
-      "cleRingTakeRewardRsp\022\017\n\007retcode\030\016 \001(\005B\033\n" +
+      "cleRingTakeRewardRsp\022\017\n\007retcode\030\n \001(\005B\033\n" +
       "\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

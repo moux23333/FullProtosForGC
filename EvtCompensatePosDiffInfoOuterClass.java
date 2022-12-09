@@ -19,43 +19,43 @@ public final class EvtCompensatePosDiffInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.Vector cur_pos = 14;</code>
-     * @return Whether the curPos field is set.
-     */
-    boolean hasCurPos();
-    /**
-     * <code>.Vector cur_pos = 14;</code>
-     * @return The curPos.
-     */
-    emu.grasscutter.net.proto.VectorOuterClass.Vector getCurPos();
-    /**
-     * <code>.Vector cur_pos = 14;</code>
-     */
-    emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getCurPosOrBuilder();
-
-    /**
-     * <code>uint32 entity_id = 11;</code>
+     * <code>uint32 entity_id = 12;</code>
      * @return The entityId.
      */
     int getEntityId();
 
     /**
-     * <code>int32 face_angle_compact = 10;</code>
-     * @return The faceAngleCompact.
+     * <code>uint32 normalized_time_compact = 5;</code>
+     * @return The normalizedTimeCompact.
      */
-    int getFaceAngleCompact();
+    int getNormalizedTimeCompact();
 
     /**
-     * <code>uint32 cur_hash = 4;</code>
+     * <code>uint32 cur_hash = 7;</code>
      * @return The curHash.
      */
     int getCurHash();
 
     /**
-     * <code>uint32 normalized_time_compact = 3;</code>
-     * @return The normalizedTimeCompact.
+     * <code>int32 face_angle_compact = 11;</code>
+     * @return The faceAngleCompact.
      */
-    int getNormalizedTimeCompact();
+    int getFaceAngleCompact();
+
+    /**
+     * <code>.Vector cur_pos = 6;</code>
+     * @return Whether the curPos field is set.
+     */
+    boolean hasCurPos();
+    /**
+     * <code>.Vector cur_pos = 6;</code>
+     * @return The curPos.
+     */
+    emu.grasscutter.net.proto.VectorOuterClass.Vector getCurPos();
+    /**
+     * <code>.Vector cur_pos = 6;</code>
+     */
+    emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getCurPosOrBuilder();
   }
   /**
    * Protobuf type {@code EvtCompensatePosDiffInfo}
@@ -102,27 +102,12 @@ public final class EvtCompensatePosDiffInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 24: {
+            case 40: {
 
               normalizedTimeCompact_ = input.readUInt32();
               break;
             }
-            case 32: {
-
-              curHash_ = input.readUInt32();
-              break;
-            }
-            case 80: {
-
-              faceAngleCompact_ = input.readInt32();
-              break;
-            }
-            case 88: {
-
-              entityId_ = input.readUInt32();
-              break;
-            }
-            case 114: {
+            case 50: {
               emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder subBuilder = null;
               if (curPos_ != null) {
                 subBuilder = curPos_.toBuilder();
@@ -133,6 +118,21 @@ public final class EvtCompensatePosDiffInfoOuterClass {
                 curPos_ = subBuilder.buildPartial();
               }
 
+              break;
+            }
+            case 56: {
+
+              curHash_ = input.readUInt32();
+              break;
+            }
+            case 88: {
+
+              faceAngleCompact_ = input.readInt32();
+              break;
+            }
+            case 96: {
+
+              entityId_ = input.readUInt32();
               break;
             }
             default: {
@@ -167,36 +167,10 @@ public final class EvtCompensatePosDiffInfoOuterClass {
               emu.grasscutter.net.proto.EvtCompensatePosDiffInfoOuterClass.EvtCompensatePosDiffInfo.class, emu.grasscutter.net.proto.EvtCompensatePosDiffInfoOuterClass.EvtCompensatePosDiffInfo.Builder.class);
     }
 
-    public static final int CUR_POS_FIELD_NUMBER = 14;
-    private emu.grasscutter.net.proto.VectorOuterClass.Vector curPos_;
-    /**
-     * <code>.Vector cur_pos = 14;</code>
-     * @return Whether the curPos field is set.
-     */
-    @java.lang.Override
-    public boolean hasCurPos() {
-      return curPos_ != null;
-    }
-    /**
-     * <code>.Vector cur_pos = 14;</code>
-     * @return The curPos.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.VectorOuterClass.Vector getCurPos() {
-      return curPos_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : curPos_;
-    }
-    /**
-     * <code>.Vector cur_pos = 14;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getCurPosOrBuilder() {
-      return getCurPos();
-    }
-
-    public static final int ENTITY_ID_FIELD_NUMBER = 11;
+    public static final int ENTITY_ID_FIELD_NUMBER = 12;
     private int entityId_;
     /**
-     * <code>uint32 entity_id = 11;</code>
+     * <code>uint32 entity_id = 12;</code>
      * @return The entityId.
      */
     @java.lang.Override
@@ -204,21 +178,21 @@ public final class EvtCompensatePosDiffInfoOuterClass {
       return entityId_;
     }
 
-    public static final int FACE_ANGLE_COMPACT_FIELD_NUMBER = 10;
-    private int faceAngleCompact_;
+    public static final int NORMALIZED_TIME_COMPACT_FIELD_NUMBER = 5;
+    private int normalizedTimeCompact_;
     /**
-     * <code>int32 face_angle_compact = 10;</code>
-     * @return The faceAngleCompact.
+     * <code>uint32 normalized_time_compact = 5;</code>
+     * @return The normalizedTimeCompact.
      */
     @java.lang.Override
-    public int getFaceAngleCompact() {
-      return faceAngleCompact_;
+    public int getNormalizedTimeCompact() {
+      return normalizedTimeCompact_;
     }
 
-    public static final int CUR_HASH_FIELD_NUMBER = 4;
+    public static final int CUR_HASH_FIELD_NUMBER = 7;
     private int curHash_;
     /**
-     * <code>uint32 cur_hash = 4;</code>
+     * <code>uint32 cur_hash = 7;</code>
      * @return The curHash.
      */
     @java.lang.Override
@@ -226,15 +200,41 @@ public final class EvtCompensatePosDiffInfoOuterClass {
       return curHash_;
     }
 
-    public static final int NORMALIZED_TIME_COMPACT_FIELD_NUMBER = 3;
-    private int normalizedTimeCompact_;
+    public static final int FACE_ANGLE_COMPACT_FIELD_NUMBER = 11;
+    private int faceAngleCompact_;
     /**
-     * <code>uint32 normalized_time_compact = 3;</code>
-     * @return The normalizedTimeCompact.
+     * <code>int32 face_angle_compact = 11;</code>
+     * @return The faceAngleCompact.
      */
     @java.lang.Override
-    public int getNormalizedTimeCompact() {
-      return normalizedTimeCompact_;
+    public int getFaceAngleCompact() {
+      return faceAngleCompact_;
+    }
+
+    public static final int CUR_POS_FIELD_NUMBER = 6;
+    private emu.grasscutter.net.proto.VectorOuterClass.Vector curPos_;
+    /**
+     * <code>.Vector cur_pos = 6;</code>
+     * @return Whether the curPos field is set.
+     */
+    @java.lang.Override
+    public boolean hasCurPos() {
+      return curPos_ != null;
+    }
+    /**
+     * <code>.Vector cur_pos = 6;</code>
+     * @return The curPos.
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.VectorOuterClass.Vector getCurPos() {
+      return curPos_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : curPos_;
+    }
+    /**
+     * <code>.Vector cur_pos = 6;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getCurPosOrBuilder() {
+      return getCurPos();
     }
 
     private byte memoizedIsInitialized = -1;
@@ -252,19 +252,19 @@ public final class EvtCompensatePosDiffInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (normalizedTimeCompact_ != 0) {
-        output.writeUInt32(3, normalizedTimeCompact_);
-      }
-      if (curHash_ != 0) {
-        output.writeUInt32(4, curHash_);
-      }
-      if (faceAngleCompact_ != 0) {
-        output.writeInt32(10, faceAngleCompact_);
-      }
-      if (entityId_ != 0) {
-        output.writeUInt32(11, entityId_);
+        output.writeUInt32(5, normalizedTimeCompact_);
       }
       if (curPos_ != null) {
-        output.writeMessage(14, getCurPos());
+        output.writeMessage(6, getCurPos());
+      }
+      if (curHash_ != 0) {
+        output.writeUInt32(7, curHash_);
+      }
+      if (faceAngleCompact_ != 0) {
+        output.writeInt32(11, faceAngleCompact_);
+      }
+      if (entityId_ != 0) {
+        output.writeUInt32(12, entityId_);
       }
       unknownFields.writeTo(output);
     }
@@ -277,23 +277,23 @@ public final class EvtCompensatePosDiffInfoOuterClass {
       size = 0;
       if (normalizedTimeCompact_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, normalizedTimeCompact_);
-      }
-      if (curHash_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, curHash_);
-      }
-      if (faceAngleCompact_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(10, faceAngleCompact_);
-      }
-      if (entityId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, entityId_);
+          .computeUInt32Size(5, normalizedTimeCompact_);
       }
       if (curPos_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(14, getCurPos());
+          .computeMessageSize(6, getCurPos());
+      }
+      if (curHash_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(7, curHash_);
+      }
+      if (faceAngleCompact_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(11, faceAngleCompact_);
+      }
+      if (entityId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(12, entityId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -310,19 +310,19 @@ public final class EvtCompensatePosDiffInfoOuterClass {
       }
       emu.grasscutter.net.proto.EvtCompensatePosDiffInfoOuterClass.EvtCompensatePosDiffInfo other = (emu.grasscutter.net.proto.EvtCompensatePosDiffInfoOuterClass.EvtCompensatePosDiffInfo) obj;
 
+      if (getEntityId()
+          != other.getEntityId()) return false;
+      if (getNormalizedTimeCompact()
+          != other.getNormalizedTimeCompact()) return false;
+      if (getCurHash()
+          != other.getCurHash()) return false;
+      if (getFaceAngleCompact()
+          != other.getFaceAngleCompact()) return false;
       if (hasCurPos() != other.hasCurPos()) return false;
       if (hasCurPos()) {
         if (!getCurPos()
             .equals(other.getCurPos())) return false;
       }
-      if (getEntityId()
-          != other.getEntityId()) return false;
-      if (getFaceAngleCompact()
-          != other.getFaceAngleCompact()) return false;
-      if (getCurHash()
-          != other.getCurHash()) return false;
-      if (getNormalizedTimeCompact()
-          != other.getNormalizedTimeCompact()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -334,18 +334,18 @@ public final class EvtCompensatePosDiffInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + ENTITY_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getEntityId();
+      hash = (37 * hash) + NORMALIZED_TIME_COMPACT_FIELD_NUMBER;
+      hash = (53 * hash) + getNormalizedTimeCompact();
+      hash = (37 * hash) + CUR_HASH_FIELD_NUMBER;
+      hash = (53 * hash) + getCurHash();
+      hash = (37 * hash) + FACE_ANGLE_COMPACT_FIELD_NUMBER;
+      hash = (53 * hash) + getFaceAngleCompact();
       if (hasCurPos()) {
         hash = (37 * hash) + CUR_POS_FIELD_NUMBER;
         hash = (53 * hash) + getCurPos().hashCode();
       }
-      hash = (37 * hash) + ENTITY_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getEntityId();
-      hash = (37 * hash) + FACE_ANGLE_COMPACT_FIELD_NUMBER;
-      hash = (53 * hash) + getFaceAngleCompact();
-      hash = (37 * hash) + CUR_HASH_FIELD_NUMBER;
-      hash = (53 * hash) + getCurHash();
-      hash = (37 * hash) + NORMALIZED_TIME_COMPACT_FIELD_NUMBER;
-      hash = (53 * hash) + getNormalizedTimeCompact();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -479,20 +479,20 @@ public final class EvtCompensatePosDiffInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        entityId_ = 0;
+
+        normalizedTimeCompact_ = 0;
+
+        curHash_ = 0;
+
+        faceAngleCompact_ = 0;
+
         if (curPosBuilder_ == null) {
           curPos_ = null;
         } else {
           curPos_ = null;
           curPosBuilder_ = null;
         }
-        entityId_ = 0;
-
-        faceAngleCompact_ = 0;
-
-        curHash_ = 0;
-
-        normalizedTimeCompact_ = 0;
-
         return this;
       }
 
@@ -519,15 +519,15 @@ public final class EvtCompensatePosDiffInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.EvtCompensatePosDiffInfoOuterClass.EvtCompensatePosDiffInfo buildPartial() {
         emu.grasscutter.net.proto.EvtCompensatePosDiffInfoOuterClass.EvtCompensatePosDiffInfo result = new emu.grasscutter.net.proto.EvtCompensatePosDiffInfoOuterClass.EvtCompensatePosDiffInfo(this);
+        result.entityId_ = entityId_;
+        result.normalizedTimeCompact_ = normalizedTimeCompact_;
+        result.curHash_ = curHash_;
+        result.faceAngleCompact_ = faceAngleCompact_;
         if (curPosBuilder_ == null) {
           result.curPos_ = curPos_;
         } else {
           result.curPos_ = curPosBuilder_.build();
         }
-        result.entityId_ = entityId_;
-        result.faceAngleCompact_ = faceAngleCompact_;
-        result.curHash_ = curHash_;
-        result.normalizedTimeCompact_ = normalizedTimeCompact_;
         onBuilt();
         return result;
       }
@@ -576,20 +576,20 @@ public final class EvtCompensatePosDiffInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.EvtCompensatePosDiffInfoOuterClass.EvtCompensatePosDiffInfo other) {
         if (other == emu.grasscutter.net.proto.EvtCompensatePosDiffInfoOuterClass.EvtCompensatePosDiffInfo.getDefaultInstance()) return this;
-        if (other.hasCurPos()) {
-          mergeCurPos(other.getCurPos());
-        }
         if (other.getEntityId() != 0) {
           setEntityId(other.getEntityId());
         }
-        if (other.getFaceAngleCompact() != 0) {
-          setFaceAngleCompact(other.getFaceAngleCompact());
+        if (other.getNormalizedTimeCompact() != 0) {
+          setNormalizedTimeCompact(other.getNormalizedTimeCompact());
         }
         if (other.getCurHash() != 0) {
           setCurHash(other.getCurHash());
         }
-        if (other.getNormalizedTimeCompact() != 0) {
-          setNormalizedTimeCompact(other.getNormalizedTimeCompact());
+        if (other.getFaceAngleCompact() != 0) {
+          setFaceAngleCompact(other.getFaceAngleCompact());
+        }
+        if (other.hasCurPos()) {
+          mergeCurPos(other.getCurPos());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -620,18 +620,142 @@ public final class EvtCompensatePosDiffInfoOuterClass {
         return this;
       }
 
+      private int entityId_ ;
+      /**
+       * <code>uint32 entity_id = 12;</code>
+       * @return The entityId.
+       */
+      @java.lang.Override
+      public int getEntityId() {
+        return entityId_;
+      }
+      /**
+       * <code>uint32 entity_id = 12;</code>
+       * @param value The entityId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setEntityId(int value) {
+        
+        entityId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 entity_id = 12;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearEntityId() {
+        
+        entityId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int normalizedTimeCompact_ ;
+      /**
+       * <code>uint32 normalized_time_compact = 5;</code>
+       * @return The normalizedTimeCompact.
+       */
+      @java.lang.Override
+      public int getNormalizedTimeCompact() {
+        return normalizedTimeCompact_;
+      }
+      /**
+       * <code>uint32 normalized_time_compact = 5;</code>
+       * @param value The normalizedTimeCompact to set.
+       * @return This builder for chaining.
+       */
+      public Builder setNormalizedTimeCompact(int value) {
+        
+        normalizedTimeCompact_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 normalized_time_compact = 5;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearNormalizedTimeCompact() {
+        
+        normalizedTimeCompact_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int curHash_ ;
+      /**
+       * <code>uint32 cur_hash = 7;</code>
+       * @return The curHash.
+       */
+      @java.lang.Override
+      public int getCurHash() {
+        return curHash_;
+      }
+      /**
+       * <code>uint32 cur_hash = 7;</code>
+       * @param value The curHash to set.
+       * @return This builder for chaining.
+       */
+      public Builder setCurHash(int value) {
+        
+        curHash_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 cur_hash = 7;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearCurHash() {
+        
+        curHash_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int faceAngleCompact_ ;
+      /**
+       * <code>int32 face_angle_compact = 11;</code>
+       * @return The faceAngleCompact.
+       */
+      @java.lang.Override
+      public int getFaceAngleCompact() {
+        return faceAngleCompact_;
+      }
+      /**
+       * <code>int32 face_angle_compact = 11;</code>
+       * @param value The faceAngleCompact to set.
+       * @return This builder for chaining.
+       */
+      public Builder setFaceAngleCompact(int value) {
+        
+        faceAngleCompact_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 face_angle_compact = 11;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearFaceAngleCompact() {
+        
+        faceAngleCompact_ = 0;
+        onChanged();
+        return this;
+      }
+
       private emu.grasscutter.net.proto.VectorOuterClass.Vector curPos_;
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> curPosBuilder_;
       /**
-       * <code>.Vector cur_pos = 14;</code>
+       * <code>.Vector cur_pos = 6;</code>
        * @return Whether the curPos field is set.
        */
       public boolean hasCurPos() {
         return curPosBuilder_ != null || curPos_ != null;
       }
       /**
-       * <code>.Vector cur_pos = 14;</code>
+       * <code>.Vector cur_pos = 6;</code>
        * @return The curPos.
        */
       public emu.grasscutter.net.proto.VectorOuterClass.Vector getCurPos() {
@@ -642,7 +766,7 @@ public final class EvtCompensatePosDiffInfoOuterClass {
         }
       }
       /**
-       * <code>.Vector cur_pos = 14;</code>
+       * <code>.Vector cur_pos = 6;</code>
        */
       public Builder setCurPos(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
         if (curPosBuilder_ == null) {
@@ -658,7 +782,7 @@ public final class EvtCompensatePosDiffInfoOuterClass {
         return this;
       }
       /**
-       * <code>.Vector cur_pos = 14;</code>
+       * <code>.Vector cur_pos = 6;</code>
        */
       public Builder setCurPos(
           emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder builderForValue) {
@@ -672,7 +796,7 @@ public final class EvtCompensatePosDiffInfoOuterClass {
         return this;
       }
       /**
-       * <code>.Vector cur_pos = 14;</code>
+       * <code>.Vector cur_pos = 6;</code>
        */
       public Builder mergeCurPos(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
         if (curPosBuilder_ == null) {
@@ -690,7 +814,7 @@ public final class EvtCompensatePosDiffInfoOuterClass {
         return this;
       }
       /**
-       * <code>.Vector cur_pos = 14;</code>
+       * <code>.Vector cur_pos = 6;</code>
        */
       public Builder clearCurPos() {
         if (curPosBuilder_ == null) {
@@ -704,7 +828,7 @@ public final class EvtCompensatePosDiffInfoOuterClass {
         return this;
       }
       /**
-       * <code>.Vector cur_pos = 14;</code>
+       * <code>.Vector cur_pos = 6;</code>
        */
       public emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder getCurPosBuilder() {
         
@@ -712,7 +836,7 @@ public final class EvtCompensatePosDiffInfoOuterClass {
         return getCurPosFieldBuilder().getBuilder();
       }
       /**
-       * <code>.Vector cur_pos = 14;</code>
+       * <code>.Vector cur_pos = 6;</code>
        */
       public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getCurPosOrBuilder() {
         if (curPosBuilder_ != null) {
@@ -723,7 +847,7 @@ public final class EvtCompensatePosDiffInfoOuterClass {
         }
       }
       /**
-       * <code>.Vector cur_pos = 14;</code>
+       * <code>.Vector cur_pos = 6;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> 
@@ -737,130 +861,6 @@ public final class EvtCompensatePosDiffInfoOuterClass {
           curPos_ = null;
         }
         return curPosBuilder_;
-      }
-
-      private int entityId_ ;
-      /**
-       * <code>uint32 entity_id = 11;</code>
-       * @return The entityId.
-       */
-      @java.lang.Override
-      public int getEntityId() {
-        return entityId_;
-      }
-      /**
-       * <code>uint32 entity_id = 11;</code>
-       * @param value The entityId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setEntityId(int value) {
-        
-        entityId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 entity_id = 11;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearEntityId() {
-        
-        entityId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int faceAngleCompact_ ;
-      /**
-       * <code>int32 face_angle_compact = 10;</code>
-       * @return The faceAngleCompact.
-       */
-      @java.lang.Override
-      public int getFaceAngleCompact() {
-        return faceAngleCompact_;
-      }
-      /**
-       * <code>int32 face_angle_compact = 10;</code>
-       * @param value The faceAngleCompact to set.
-       * @return This builder for chaining.
-       */
-      public Builder setFaceAngleCompact(int value) {
-        
-        faceAngleCompact_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>int32 face_angle_compact = 10;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearFaceAngleCompact() {
-        
-        faceAngleCompact_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int curHash_ ;
-      /**
-       * <code>uint32 cur_hash = 4;</code>
-       * @return The curHash.
-       */
-      @java.lang.Override
-      public int getCurHash() {
-        return curHash_;
-      }
-      /**
-       * <code>uint32 cur_hash = 4;</code>
-       * @param value The curHash to set.
-       * @return This builder for chaining.
-       */
-      public Builder setCurHash(int value) {
-        
-        curHash_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 cur_hash = 4;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearCurHash() {
-        
-        curHash_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int normalizedTimeCompact_ ;
-      /**
-       * <code>uint32 normalized_time_compact = 3;</code>
-       * @return The normalizedTimeCompact.
-       */
-      @java.lang.Override
-      public int getNormalizedTimeCompact() {
-        return normalizedTimeCompact_;
-      }
-      /**
-       * <code>uint32 normalized_time_compact = 3;</code>
-       * @param value The normalizedTimeCompact to set.
-       * @return This builder for chaining.
-       */
-      public Builder setNormalizedTimeCompact(int value) {
-        
-        normalizedTimeCompact_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 normalized_time_compact = 3;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearNormalizedTimeCompact() {
-        
-        normalizedTimeCompact_ = 0;
-        onChanged();
-        return this;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -930,10 +930,10 @@ public final class EvtCompensatePosDiffInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\036EvtCompensatePosDiffInfo.proto\032\014Vector" +
-      ".proto\"\226\001\n\030EvtCompensatePosDiffInfo\022\030\n\007c" +
-      "ur_pos\030\016 \001(\0132\007.Vector\022\021\n\tentity_id\030\013 \001(\r" +
-      "\022\032\n\022face_angle_compact\030\n \001(\005\022\020\n\010cur_hash" +
-      "\030\004 \001(\r\022\037\n\027normalized_time_compact\030\003 \001(\rB" +
+      ".proto\"\226\001\n\030EvtCompensatePosDiffInfo\022\021\n\te" +
+      "ntity_id\030\014 \001(\r\022\037\n\027normalized_time_compac" +
+      "t\030\005 \001(\r\022\020\n\010cur_hash\030\007 \001(\r\022\032\n\022face_angle_" +
+      "compact\030\013 \001(\005\022\030\n\007cur_pos\030\006 \001(\0132\007.VectorB" +
       "\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -946,7 +946,7 @@ public final class EvtCompensatePosDiffInfoOuterClass {
     internal_static_EvtCompensatePosDiffInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_EvtCompensatePosDiffInfo_descriptor,
-        new java.lang.String[] { "CurPos", "EntityId", "FaceAngleCompact", "CurHash", "NormalizedTimeCompact", });
+        new java.lang.String[] { "EntityId", "NormalizedTimeCompact", "CurHash", "FaceAngleCompact", "CurPos", });
     emu.grasscutter.net.proto.VectorOuterClass.getDescriptor();
   }
 

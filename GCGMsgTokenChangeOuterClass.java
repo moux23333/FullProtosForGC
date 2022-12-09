@@ -19,39 +19,39 @@ public final class GCGMsgTokenChangeOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 before = 13;</code>
-     * @return The before.
-     */
-    int getBefore();
-
-    /**
-     * <code>uint32 token_type = 4;</code>
+     * <code>uint32 token_type = 7;</code>
      * @return The tokenType.
      */
     int getTokenType();
 
     /**
-     * <code>uint32 card_guid = 2;</code>
-     * @return The cardGuid.
+     * <code>uint32 Unk3300_LLGHGEALDDI = 10;</code>
+     * @return The unk3300LLGHGEALDDI.
      */
-    int getCardGuid();
+    int getUnk3300LLGHGEALDDI();
 
     /**
-     * <code>uint32 after = 11;</code>
-     * @return The after.
-     */
-    int getAfter();
-
-    /**
-     * <code>.GCGReason reason = 7;</code>
+     * <code>.GCGReason reason = 3;</code>
      * @return The enum numeric value on the wire for reason.
      */
     int getReasonValue();
     /**
-     * <code>.GCGReason reason = 7;</code>
+     * <code>.GCGReason reason = 3;</code>
      * @return The reason.
      */
     emu.grasscutter.net.proto.GCGReasonOuterClass.GCGReason getReason();
+
+    /**
+     * <code>uint32 Unk3300_LCNKBFBJDFM = 12;</code>
+     * @return The unk3300LCNKBFBJDFM.
+     */
+    int getUnk3300LCNKBFBJDFM();
+
+    /**
+     * <code>uint32 card_guid = 13;</code>
+     * @return The cardGuid.
+     */
+    int getCardGuid();
   }
   /**
    * Protobuf type {@code GCGMsgTokenChange}
@@ -99,30 +99,30 @@ public final class GCGMsgTokenChangeOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
-
-              cardGuid_ = input.readUInt32();
-              break;
-            }
-            case 32: {
-
-              tokenType_ = input.readUInt32();
-              break;
-            }
-            case 56: {
+            case 24: {
               int rawValue = input.readEnum();
 
               reason_ = rawValue;
               break;
             }
-            case 88: {
+            case 56: {
 
-              after_ = input.readUInt32();
+              tokenType_ = input.readUInt32();
+              break;
+            }
+            case 80: {
+
+              unk3300LLGHGEALDDI_ = input.readUInt32();
+              break;
+            }
+            case 96: {
+
+              unk3300LCNKBFBJDFM_ = input.readUInt32();
               break;
             }
             case 104: {
 
-              before_ = input.readUInt32();
+              cardGuid_ = input.readUInt32();
               break;
             }
             default: {
@@ -157,21 +157,10 @@ public final class GCGMsgTokenChangeOuterClass {
               emu.grasscutter.net.proto.GCGMsgTokenChangeOuterClass.GCGMsgTokenChange.class, emu.grasscutter.net.proto.GCGMsgTokenChangeOuterClass.GCGMsgTokenChange.Builder.class);
     }
 
-    public static final int BEFORE_FIELD_NUMBER = 13;
-    private int before_;
-    /**
-     * <code>uint32 before = 13;</code>
-     * @return The before.
-     */
-    @java.lang.Override
-    public int getBefore() {
-      return before_;
-    }
-
-    public static final int TOKEN_TYPE_FIELD_NUMBER = 4;
+    public static final int TOKEN_TYPE_FIELD_NUMBER = 7;
     private int tokenType_;
     /**
-     * <code>uint32 token_type = 4;</code>
+     * <code>uint32 token_type = 7;</code>
      * @return The tokenType.
      */
     @java.lang.Override
@@ -179,45 +168,56 @@ public final class GCGMsgTokenChangeOuterClass {
       return tokenType_;
     }
 
-    public static final int CARD_GUID_FIELD_NUMBER = 2;
-    private int cardGuid_;
+    public static final int UNK3300_LLGHGEALDDI_FIELD_NUMBER = 10;
+    private int unk3300LLGHGEALDDI_;
     /**
-     * <code>uint32 card_guid = 2;</code>
-     * @return The cardGuid.
+     * <code>uint32 Unk3300_LLGHGEALDDI = 10;</code>
+     * @return The unk3300LLGHGEALDDI.
      */
     @java.lang.Override
-    public int getCardGuid() {
-      return cardGuid_;
+    public int getUnk3300LLGHGEALDDI() {
+      return unk3300LLGHGEALDDI_;
     }
 
-    public static final int AFTER_FIELD_NUMBER = 11;
-    private int after_;
-    /**
-     * <code>uint32 after = 11;</code>
-     * @return The after.
-     */
-    @java.lang.Override
-    public int getAfter() {
-      return after_;
-    }
-
-    public static final int REASON_FIELD_NUMBER = 7;
+    public static final int REASON_FIELD_NUMBER = 3;
     private int reason_;
     /**
-     * <code>.GCGReason reason = 7;</code>
+     * <code>.GCGReason reason = 3;</code>
      * @return The enum numeric value on the wire for reason.
      */
     @java.lang.Override public int getReasonValue() {
       return reason_;
     }
     /**
-     * <code>.GCGReason reason = 7;</code>
+     * <code>.GCGReason reason = 3;</code>
      * @return The reason.
      */
     @java.lang.Override public emu.grasscutter.net.proto.GCGReasonOuterClass.GCGReason getReason() {
       @SuppressWarnings("deprecation")
       emu.grasscutter.net.proto.GCGReasonOuterClass.GCGReason result = emu.grasscutter.net.proto.GCGReasonOuterClass.GCGReason.valueOf(reason_);
       return result == null ? emu.grasscutter.net.proto.GCGReasonOuterClass.GCGReason.UNRECOGNIZED : result;
+    }
+
+    public static final int UNK3300_LCNKBFBJDFM_FIELD_NUMBER = 12;
+    private int unk3300LCNKBFBJDFM_;
+    /**
+     * <code>uint32 Unk3300_LCNKBFBJDFM = 12;</code>
+     * @return The unk3300LCNKBFBJDFM.
+     */
+    @java.lang.Override
+    public int getUnk3300LCNKBFBJDFM() {
+      return unk3300LCNKBFBJDFM_;
+    }
+
+    public static final int CARD_GUID_FIELD_NUMBER = 13;
+    private int cardGuid_;
+    /**
+     * <code>uint32 card_guid = 13;</code>
+     * @return The cardGuid.
+     */
+    @java.lang.Override
+    public int getCardGuid() {
+      return cardGuid_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -234,20 +234,20 @@ public final class GCGMsgTokenChangeOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (cardGuid_ != 0) {
-        output.writeUInt32(2, cardGuid_);
+      if (reason_ != emu.grasscutter.net.proto.GCGReasonOuterClass.GCGReason.GCG_REASON_DEFAULT.getNumber()) {
+        output.writeEnum(3, reason_);
       }
       if (tokenType_ != 0) {
-        output.writeUInt32(4, tokenType_);
+        output.writeUInt32(7, tokenType_);
       }
-      if (reason_ != emu.grasscutter.net.proto.GCGReasonOuterClass.GCGReason.GCG_REASON_DEFAULT.getNumber()) {
-        output.writeEnum(7, reason_);
+      if (unk3300LLGHGEALDDI_ != 0) {
+        output.writeUInt32(10, unk3300LLGHGEALDDI_);
       }
-      if (after_ != 0) {
-        output.writeUInt32(11, after_);
+      if (unk3300LCNKBFBJDFM_ != 0) {
+        output.writeUInt32(12, unk3300LCNKBFBJDFM_);
       }
-      if (before_ != 0) {
-        output.writeUInt32(13, before_);
+      if (cardGuid_ != 0) {
+        output.writeUInt32(13, cardGuid_);
       }
       unknownFields.writeTo(output);
     }
@@ -258,25 +258,25 @@ public final class GCGMsgTokenChangeOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (cardGuid_ != 0) {
+      if (reason_ != emu.grasscutter.net.proto.GCGReasonOuterClass.GCGReason.GCG_REASON_DEFAULT.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, cardGuid_);
+          .computeEnumSize(3, reason_);
       }
       if (tokenType_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, tokenType_);
+          .computeUInt32Size(7, tokenType_);
       }
-      if (reason_ != emu.grasscutter.net.proto.GCGReasonOuterClass.GCGReason.GCG_REASON_DEFAULT.getNumber()) {
+      if (unk3300LLGHGEALDDI_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(7, reason_);
+          .computeUInt32Size(10, unk3300LLGHGEALDDI_);
       }
-      if (after_ != 0) {
+      if (unk3300LCNKBFBJDFM_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, after_);
+          .computeUInt32Size(12, unk3300LCNKBFBJDFM_);
       }
-      if (before_ != 0) {
+      if (cardGuid_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, before_);
+          .computeUInt32Size(13, cardGuid_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -293,15 +293,15 @@ public final class GCGMsgTokenChangeOuterClass {
       }
       emu.grasscutter.net.proto.GCGMsgTokenChangeOuterClass.GCGMsgTokenChange other = (emu.grasscutter.net.proto.GCGMsgTokenChangeOuterClass.GCGMsgTokenChange) obj;
 
-      if (getBefore()
-          != other.getBefore()) return false;
       if (getTokenType()
           != other.getTokenType()) return false;
+      if (getUnk3300LLGHGEALDDI()
+          != other.getUnk3300LLGHGEALDDI()) return false;
+      if (reason_ != other.reason_) return false;
+      if (getUnk3300LCNKBFBJDFM()
+          != other.getUnk3300LCNKBFBJDFM()) return false;
       if (getCardGuid()
           != other.getCardGuid()) return false;
-      if (getAfter()
-          != other.getAfter()) return false;
-      if (reason_ != other.reason_) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -313,16 +313,16 @@ public final class GCGMsgTokenChangeOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + BEFORE_FIELD_NUMBER;
-      hash = (53 * hash) + getBefore();
       hash = (37 * hash) + TOKEN_TYPE_FIELD_NUMBER;
       hash = (53 * hash) + getTokenType();
-      hash = (37 * hash) + CARD_GUID_FIELD_NUMBER;
-      hash = (53 * hash) + getCardGuid();
-      hash = (37 * hash) + AFTER_FIELD_NUMBER;
-      hash = (53 * hash) + getAfter();
+      hash = (37 * hash) + UNK3300_LLGHGEALDDI_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300LLGHGEALDDI();
       hash = (37 * hash) + REASON_FIELD_NUMBER;
       hash = (53 * hash) + reason_;
+      hash = (37 * hash) + UNK3300_LCNKBFBJDFM_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300LCNKBFBJDFM();
+      hash = (37 * hash) + CARD_GUID_FIELD_NUMBER;
+      hash = (53 * hash) + getCardGuid();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -456,15 +456,15 @@ public final class GCGMsgTokenChangeOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        before_ = 0;
-
         tokenType_ = 0;
 
-        cardGuid_ = 0;
-
-        after_ = 0;
+        unk3300LLGHGEALDDI_ = 0;
 
         reason_ = 0;
+
+        unk3300LCNKBFBJDFM_ = 0;
+
+        cardGuid_ = 0;
 
         return this;
       }
@@ -492,11 +492,11 @@ public final class GCGMsgTokenChangeOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.GCGMsgTokenChangeOuterClass.GCGMsgTokenChange buildPartial() {
         emu.grasscutter.net.proto.GCGMsgTokenChangeOuterClass.GCGMsgTokenChange result = new emu.grasscutter.net.proto.GCGMsgTokenChangeOuterClass.GCGMsgTokenChange(this);
-        result.before_ = before_;
         result.tokenType_ = tokenType_;
-        result.cardGuid_ = cardGuid_;
-        result.after_ = after_;
+        result.unk3300LLGHGEALDDI_ = unk3300LLGHGEALDDI_;
         result.reason_ = reason_;
+        result.unk3300LCNKBFBJDFM_ = unk3300LCNKBFBJDFM_;
+        result.cardGuid_ = cardGuid_;
         onBuilt();
         return result;
       }
@@ -545,20 +545,20 @@ public final class GCGMsgTokenChangeOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.GCGMsgTokenChangeOuterClass.GCGMsgTokenChange other) {
         if (other == emu.grasscutter.net.proto.GCGMsgTokenChangeOuterClass.GCGMsgTokenChange.getDefaultInstance()) return this;
-        if (other.getBefore() != 0) {
-          setBefore(other.getBefore());
-        }
         if (other.getTokenType() != 0) {
           setTokenType(other.getTokenType());
         }
-        if (other.getCardGuid() != 0) {
-          setCardGuid(other.getCardGuid());
-        }
-        if (other.getAfter() != 0) {
-          setAfter(other.getAfter());
+        if (other.getUnk3300LLGHGEALDDI() != 0) {
+          setUnk3300LLGHGEALDDI(other.getUnk3300LLGHGEALDDI());
         }
         if (other.reason_ != 0) {
           setReasonValue(other.getReasonValue());
+        }
+        if (other.getUnk3300LCNKBFBJDFM() != 0) {
+          setUnk3300LCNKBFBJDFM(other.getUnk3300LCNKBFBJDFM());
+        }
+        if (other.getCardGuid() != 0) {
+          setCardGuid(other.getCardGuid());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -589,40 +589,9 @@ public final class GCGMsgTokenChangeOuterClass {
         return this;
       }
 
-      private int before_ ;
-      /**
-       * <code>uint32 before = 13;</code>
-       * @return The before.
-       */
-      @java.lang.Override
-      public int getBefore() {
-        return before_;
-      }
-      /**
-       * <code>uint32 before = 13;</code>
-       * @param value The before to set.
-       * @return This builder for chaining.
-       */
-      public Builder setBefore(int value) {
-        
-        before_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 before = 13;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearBefore() {
-        
-        before_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int tokenType_ ;
       /**
-       * <code>uint32 token_type = 4;</code>
+       * <code>uint32 token_type = 7;</code>
        * @return The tokenType.
        */
       @java.lang.Override
@@ -630,7 +599,7 @@ public final class GCGMsgTokenChangeOuterClass {
         return tokenType_;
       }
       /**
-       * <code>uint32 token_type = 4;</code>
+       * <code>uint32 token_type = 7;</code>
        * @param value The tokenType to set.
        * @return This builder for chaining.
        */
@@ -641,7 +610,7 @@ public final class GCGMsgTokenChangeOuterClass {
         return this;
       }
       /**
-       * <code>uint32 token_type = 4;</code>
+       * <code>uint32 token_type = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearTokenType() {
@@ -651,78 +620,47 @@ public final class GCGMsgTokenChangeOuterClass {
         return this;
       }
 
-      private int cardGuid_ ;
+      private int unk3300LLGHGEALDDI_ ;
       /**
-       * <code>uint32 card_guid = 2;</code>
-       * @return The cardGuid.
+       * <code>uint32 Unk3300_LLGHGEALDDI = 10;</code>
+       * @return The unk3300LLGHGEALDDI.
        */
       @java.lang.Override
-      public int getCardGuid() {
-        return cardGuid_;
+      public int getUnk3300LLGHGEALDDI() {
+        return unk3300LLGHGEALDDI_;
       }
       /**
-       * <code>uint32 card_guid = 2;</code>
-       * @param value The cardGuid to set.
+       * <code>uint32 Unk3300_LLGHGEALDDI = 10;</code>
+       * @param value The unk3300LLGHGEALDDI to set.
        * @return This builder for chaining.
        */
-      public Builder setCardGuid(int value) {
+      public Builder setUnk3300LLGHGEALDDI(int value) {
         
-        cardGuid_ = value;
+        unk3300LLGHGEALDDI_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 card_guid = 2;</code>
+       * <code>uint32 Unk3300_LLGHGEALDDI = 10;</code>
        * @return This builder for chaining.
        */
-      public Builder clearCardGuid() {
+      public Builder clearUnk3300LLGHGEALDDI() {
         
-        cardGuid_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int after_ ;
-      /**
-       * <code>uint32 after = 11;</code>
-       * @return The after.
-       */
-      @java.lang.Override
-      public int getAfter() {
-        return after_;
-      }
-      /**
-       * <code>uint32 after = 11;</code>
-       * @param value The after to set.
-       * @return This builder for chaining.
-       */
-      public Builder setAfter(int value) {
-        
-        after_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 after = 11;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearAfter() {
-        
-        after_ = 0;
+        unk3300LLGHGEALDDI_ = 0;
         onChanged();
         return this;
       }
 
       private int reason_ = 0;
       /**
-       * <code>.GCGReason reason = 7;</code>
+       * <code>.GCGReason reason = 3;</code>
        * @return The enum numeric value on the wire for reason.
        */
       @java.lang.Override public int getReasonValue() {
         return reason_;
       }
       /**
-       * <code>.GCGReason reason = 7;</code>
+       * <code>.GCGReason reason = 3;</code>
        * @param value The enum numeric value on the wire for reason to set.
        * @return This builder for chaining.
        */
@@ -733,7 +671,7 @@ public final class GCGMsgTokenChangeOuterClass {
         return this;
       }
       /**
-       * <code>.GCGReason reason = 7;</code>
+       * <code>.GCGReason reason = 3;</code>
        * @return The reason.
        */
       @java.lang.Override
@@ -743,7 +681,7 @@ public final class GCGMsgTokenChangeOuterClass {
         return result == null ? emu.grasscutter.net.proto.GCGReasonOuterClass.GCGReason.UNRECOGNIZED : result;
       }
       /**
-       * <code>.GCGReason reason = 7;</code>
+       * <code>.GCGReason reason = 3;</code>
        * @param value The reason to set.
        * @return This builder for chaining.
        */
@@ -757,12 +695,74 @@ public final class GCGMsgTokenChangeOuterClass {
         return this;
       }
       /**
-       * <code>.GCGReason reason = 7;</code>
+       * <code>.GCGReason reason = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearReason() {
         
         reason_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int unk3300LCNKBFBJDFM_ ;
+      /**
+       * <code>uint32 Unk3300_LCNKBFBJDFM = 12;</code>
+       * @return The unk3300LCNKBFBJDFM.
+       */
+      @java.lang.Override
+      public int getUnk3300LCNKBFBJDFM() {
+        return unk3300LCNKBFBJDFM_;
+      }
+      /**
+       * <code>uint32 Unk3300_LCNKBFBJDFM = 12;</code>
+       * @param value The unk3300LCNKBFBJDFM to set.
+       * @return This builder for chaining.
+       */
+      public Builder setUnk3300LCNKBFBJDFM(int value) {
+        
+        unk3300LCNKBFBJDFM_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 Unk3300_LCNKBFBJDFM = 12;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearUnk3300LCNKBFBJDFM() {
+        
+        unk3300LCNKBFBJDFM_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int cardGuid_ ;
+      /**
+       * <code>uint32 card_guid = 13;</code>
+       * @return The cardGuid.
+       */
+      @java.lang.Override
+      public int getCardGuid() {
+        return cardGuid_;
+      }
+      /**
+       * <code>uint32 card_guid = 13;</code>
+       * @param value The cardGuid to set.
+       * @return This builder for chaining.
+       */
+      public Builder setCardGuid(int value) {
+        
+        cardGuid_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 card_guid = 13;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearCardGuid() {
+        
+        cardGuid_ = 0;
         onChanged();
         return this;
       }
@@ -834,10 +834,11 @@ public final class GCGMsgTokenChangeOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\027GCGMsgTokenChange.proto\032\017GCGReason.pro" +
-      "to\"u\n\021GCGMsgTokenChange\022\016\n\006before\030\r \001(\r\022" +
-      "\022\n\ntoken_type\030\004 \001(\r\022\021\n\tcard_guid\030\002 \001(\r\022\r" +
-      "\n\005after\030\013 \001(\r\022\032\n\006reason\030\007 \001(\0162\n.GCGReaso" +
-      "nB\033\n\031emu.grasscutter.net.protob\006proto3"
+      "to\"\220\001\n\021GCGMsgTokenChange\022\022\n\ntoken_type\030\007" +
+      " \001(\r\022\033\n\023Unk3300_LLGHGEALDDI\030\n \001(\r\022\032\n\006rea" +
+      "son\030\003 \001(\0162\n.GCGReason\022\033\n\023Unk3300_LCNKBFB" +
+      "JDFM\030\014 \001(\r\022\021\n\tcard_guid\030\r \001(\rB\033\n\031emu.gra" +
+      "sscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -849,7 +850,7 @@ public final class GCGMsgTokenChangeOuterClass {
     internal_static_GCGMsgTokenChange_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GCGMsgTokenChange_descriptor,
-        new java.lang.String[] { "Before", "TokenType", "CardGuid", "After", "Reason", });
+        new java.lang.String[] { "TokenType", "Unk3300LLGHGEALDDI", "Reason", "Unk3300LCNKBFBJDFM", "CardGuid", });
     emu.grasscutter.net.proto.GCGReasonOuterClass.getDescriptor();
   }
 
